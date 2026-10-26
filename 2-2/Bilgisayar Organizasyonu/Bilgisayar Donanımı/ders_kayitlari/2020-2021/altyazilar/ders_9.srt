@@ -1,0 +1,3267 @@
+1
+00:06:48,500 --> 00:06:49,720
+Günaydın arkadaşlar.
+
+2
+00:06:52,940 --> 00:06:54,179
+Günaydınlar hocam.
+
+3
+00:06:56,000 --> 00:06:57,559
+Günaydın Mehmet Ali.
+
+4
+00:06:58,159 --> 00:06:59,960
+Bir tek cevap senden geldi.
+
+5
+00:07:00,899 --> 00:07:01,559
+Günaydın hocam.
+
+6
+00:07:01,579 --> 00:07:03,199
+Yazıyorlar hocam. Onlar da burada.
+
+7
+00:07:03,899 --> 00:07:06,279
+Evet. Cihat İslam.
+
+8
+00:07:07,279 --> 00:07:08,039
+Günaydın.
+
+9
+00:07:09,459 --> 00:07:10,659
+Günaydın hocam.
+
+10
+00:07:13,439 --> 00:07:14,299
+Özkan.
+
+11
+00:07:15,139 --> 00:07:17,119
+Tuğçe. Günaydın arkadaşlar.
+
+12
+00:07:18,500 --> 00:07:20,779
+Ya sesinizi özledim arkadaşlar.
+
+13
+00:07:21,139 --> 00:07:23,299
+Şöyle arada bir ses gelsin lütfen.
+
+14
+00:07:23,919 --> 00:07:24,680
+Günaydın hocam.
+
+15
+00:07:25,299 --> 00:07:25,819
+Evet.
+
+16
+00:07:26,919 --> 00:07:29,059
+Günaydın Muhammed Hakan.
+
+17
+00:07:29,919 --> 00:07:32,159
+Güneş sizin sesinizle başlamak çok güzel oluyor hocam.
+
+18
+00:07:33,059 --> 00:07:34,259
+Teşekkür ederim.
+
+19
+00:07:34,680 --> 00:07:36,520
+Bugün çok enerjiyim arkadaşlar.
+
+20
+00:07:36,760 --> 00:07:38,819
+Çok güzel bir ders yapacağız inanıyorum.
+
+21
+00:07:40,040 --> 00:07:41,760
+Çok güzel söylüyorum hocam.
+
+22
+00:07:41,840 --> 00:07:43,720
+Birçok arkadaş da bu görüşü paylaşıyor.
+
+23
+00:07:43,900 --> 00:07:47,059
+Daha sonra da sizin arkanızdan konuşurken bu şekilde konuşuyoruz yani.
+
+24
+00:07:47,059 --> 00:08:00,659
+Teşekkür ederim. Evet bugün dediğim gibi çok enerjiyiz. Çünkü çok güzel bir konuya başlıyorum. Bu hafta dokuzuncu hafta aslında diyeceksiniz ki geç değil mi bu güzel konuya başlamak için.
+
+25
+00:08:00,659 --> 00:08:18,839
+Bu güzel konu aslında bilgisayarın artık işlemci tasarımı kısmına geçiyoruz. Şu ana kadar anlattığımız her şey aslında buna bir hazırlıktı. O yüzden bu noktada daha böyle ilginizi çekecek eğlenceli konular geliyor diyebilirim.
+
+26
+00:08:18,839 --> 00:08:37,779
+Ama dikkatli dinlemeniz gerekiyor. Hep söylediğim gibi sadece ders notlarıyla çalışmaya kalkarsanız çok yorulursunuz, çok vakit kaybedersiniz. Dersi derste öğrenirseniz inanın çok daha hızlı ilerleyebiliriz.
+
+27
+00:08:37,779 --> 00:08:42,900
+Bu benim çok üstünde durarak hep söylediğim bir şey.
+
+28
+00:08:42,899 --> 00:09:11,819
+Bu hafta ve bundan sonraki haftalarda anlatacağımız konular işlemci tasarımı ve işlemciyi hızlandırmak için kullanılan teknolojiler, pipeline processing, cache memory ve benzeri konular, virtual memory gibi konular sizin aslında mesleğinizin temelini oluşturan konular.
+
+29
+00:09:11,819 --> 00:09:28,779
+O yüzden bence çok önemli ve keyifli. Manon'un kitabında tüm bu kavramlar genel olarak anlatılmış. Belli bir işlemciye yönelik spesifik bir anlatım söz konusu değil.
+
+30
+00:09:28,779 --> 00:09:44,660
+O yüzden bunlar böyle beynel minel kavramlar. Bu kavramları öğrenirseniz A işlemcisi nasıl çalışıyor, B işlemcisi daha farklı nasıl çalışıyor bunları çok hızlı bir şekilde kavrayabilirsiniz.
+
+31
+00:09:44,660 --> 00:09:56,759
+O nedenle bu Manon'un kitabında anlatılan şekliyle yapıları öğrenmek, birbirinden farklı yapıları da çünkü anlatıyor, bence çok kolay olacak.
+
+32
+00:09:56,759 --> 00:10:20,360
+Evet bakıyorum şu an saat 9'u 4 geçiyor. Efendim bugün 7 Mayıs. Bahar'a da girdik. Bakıyorum yine dersimde kaç öğrencim olmuş. Şu an 29 kişi var. Galiba bu yıl içi sınavından sonra bir rehavet geldi sizlere. Öyle mi?
+
+33
+00:10:20,360 --> 00:10:23,979
+Bayağı da bir korku sardı ya.
+
+34
+00:10:24,080 --> 00:10:27,720
+Ben bir taraftan korkuyorum final çok kötü yaparsınız diye.
+
+35
+00:10:29,119 --> 00:10:31,100
+Haa o da iyiydi.
+
+36
+00:10:31,779 --> 00:10:37,479
+Evet yani test sınavının avantajlarını kullandınız.
+
+37
+00:10:37,479 --> 00:10:44,520
+Öyle söyleyeyim az soru vardı ama dikkatli çözüm yapmanız gerekiyordu.
+
+38
+00:10:45,460 --> 00:11:08,800
+Dikkat çok önemli. Bakın ben de bir tane soruda iki tane doğru şık koymuşum mesela. Öyle bir şey gördüm sorularda. Sonra tabii bütün öğrencilerin hangi şıklara cevap verdiği de tutuluyor. O diğer doğru şıkka cevap veren 14 kişi vardı listemde. Onlara da 10'ar puan verdim. Böylece düzenledik.
+
+39
+00:11:08,800 --> 00:11:19,119
+Yani test sınavları kolay oluyor tabii sizin açınızdan ama her zaman test sınavı yapmıyoruz tabii.
+
+40
+00:11:20,739 --> 00:11:26,079
+Kuyuzleriniz klasik olacak. Final sınavı için henüz karar vermedik. Nasıl yapacağımıza bakacağız.
+
+41
+00:11:27,379 --> 00:11:29,019
+Bir tane mi kuyuz kaldı hocam?
+
+42
+00:11:29,019 --> 00:11:38,640
+Evet bir kuyuziniz daha var. Zaten önümüzde bu haftadan sonra dört hafta ders süresi kalıyor.
+
+43
+00:11:38,800 --> 00:11:43,000
+Malum haftaya bayram haftası
+
+44
+00:11:43,000 --> 00:11:53,799
+Şimdi hazırsanız sevgili arkadaşlar başlayacağım 34 kişi olmuş derse bağlanan
+
+45
+00:11:54,500 --> 00:11:57,799
+Derste interaktif ders yapmaya çalışıyorum
+
+46
+00:11:58,379 --> 00:12:04,339
+Lütfen takip edip siz de cevap verirseniz çok mutlu olurum
+
+47
+00:12:04,339 --> 00:12:19,339
+Yoksa inanın böyle hani duvarla konuşuyor havasına giriyor çok benim canım sıkılıyor o zaman sizden ses geldiği zaman inanın ben de daha keyifli ders anlatıyorum onu da söylemiş olayım.
+
+48
+00:12:22,964 --> 00:12:41,224
+Bugün işlemci tasarımına geçiyoruz dedik. Şöyle bir ekran paylaşımı yapayım. Tablet üzerinden yazarak, çizerek gitmek daha kolay. Önce
+
+49
+00:12:46,932 --> 00:12:50,811
+Şöyle bir whiteboard açalım, kenarda dursun.
+
+50
+00:12:54,311 --> 00:12:58,511
+Bu hafta işlemci tasarımı konusuna başlıyoruz dedik.
+
+51
+00:12:59,571 --> 00:13:12,411
+Aslında bir merkezi işlem biriminin, CPU'nun içerisinde iki tane temel blok yer alıyor.
+
+52
+00:13:12,411 --> 00:13:30,991
+Bunlardan en önemlisi ve bu hafta üzerinde çalışacağımız blok Data Path Unit dediğimiz birim. Diğer birimin adı Control Unit.
+
+53
+00:13:35,412 --> 00:13:49,832
+Bunu önceki haftalarda temel böyle kavramsal olarak üstünden geçmiştik. Artık tasarımına başlıyoruz. Control unit dediğimiz birim datapath unit'e comment gönderiyor.
+
+54
+00:13:49,832 --> 00:14:12,831
+Daha sonra datapath unit bu komutları, gelen komutları işleyerek bir sonuç üretiyor ve durum bilgisini control unit'e gönderiyor ve temel olarak yapı bu iletişim sinyalleriyle gerçekleşiyor.
+
+55
+00:14:12,831 --> 00:14:19,291
+Merkezi işlem birimi dediğimiz birimin
+
+56
+00:14:22,323 --> 00:14:31,323
+Şöyle kabaca çizmek gerekirse bu bir entegre. Şuradan bir sayfa daha ekleyip ona çizelim hemen.
+
+57
+00:14:37,427 --> 00:14:43,567
+CPU dediğimiz merkezi işlem biriminin çift yönlü
+
+58
+00:14:45,627 --> 00:14:48,687
+Data Bus dediğimiz veri yolu
+
+59
+00:14:49,967 --> 00:14:53,807
+CPU'dan dışarıya doğru yönlendirilmiş bir
+
+60
+00:14:54,827 --> 00:14:56,887
+Adres yolu
+
+61
+00:14:57,907 --> 00:15:00,467
+Ve
+
+62
+00:15:02,768 --> 00:15:05,848
+Control Bus dediğimiz
+
+63
+00:15:10,035 --> 00:15:38,915
+bir bası bulunuyor. İşlemcinin veri yolu genişliği çok önemli. Kaç bitlik bir işlemci olduğunu gösteriyor bize. Adres yolu keza öyle. Burası mesela mbit address bus, mbit data bus dediğimiz temel çok önemli.
+
+64
+00:15:38,915 --> 00:15:54,396
+ve 2 bus yapısı var. Control bus dediğimiz yapı içerisinde ise işlemcinin çevre birimleriyle iletişimde kontrol için kullandığı işaretler yer alıyor.
+
+65
+00:15:54,396 --> 00:16:08,296
+Memory Read, Memory Write, IORit, IORit gibi işaretler ya da işte Direct Memory Access için kullandığı kontrol işaretleri.
+
+66
+00:16:08,296 --> 00:16:17,815
+İlerleyen haftalarda bunları detaylı olarak göreceğiz. Bu haftaki konu başlığımız aslında temel olarak buradaki Data Path Unity tasarlamak olacak.
+
+67
+00:16:22,772 --> 00:16:29,772
+Datapath unitin içinde
+
+68
+00:16:35,347 --> 00:16:58,987
+datapath unit'in içerisinde bizim amacımız bu hafta bunu tasarlamak. Bunun içerisinde neler var kabaca üzerinden şöyle bir geçelim. Bu birimin iç yapısında register file dediğimiz, tabii ki dosya değil ama hani register kümesi anlamında kullanılıyor.
+
+69
+00:16:58,987 --> 00:17:14,327
+Bir register grubu var. Bu işlemciden işlemciye değişiyor. Sayı olarak isimleri vs. değişiyor. Bunun içerisinde bir aritmetik, lojik unit var.
+
+70
+00:17:22,900 --> 00:17:33,139
+ve yine bu birimin içerisinde arkadaşlar bir shift unit var.
+
+71
+00:17:33,715 --> 00:17:48,056
+Bu da işte shift işlemlerini, rotate işlemlerini gerçekleştiren blok. Bizim bu haftaki amacımız bu datapath unit dediğimiz birimi tasarlamak olacak.
+
+72
+00:17:48,056 --> 00:17:51,896
+Şimdi bu başlık altında
+
+73
+00:17:54,455 --> 00:17:58,075
+devam edebiliriz.
+
+74
+00:18:01,748 --> 00:18:21,787
+Kitabın 9. chapter'ının ilk şekli hemen bir örnek bir datapath unit ile başlıyor. Bu örnek aslında oldukça kapsamlı. İlk etapta biraz size karışık görünebilir ama inanın çok kolay.
+
+75
+00:18:21,787 --> 00:18:31,607
+Şöyle bir 15 dakika sonra ne basit bir devreymiş diyeceksiniz ve ben de size bununla ilgili sorular sormaya başlayacağım.
+
+76
+00:18:31,748 --> 00:18:35,387
+Şimdi arkadaşlar yapıda
+
+77
+00:18:42,324 --> 00:19:00,324
+Az önce bahsettiğim gibi bir register kümesi var. Burada siz de görüyorsunuz. R0 register'ı var, R1 register'ı var, R2 var, R3 var.
+
+78
+00:19:03,155 --> 00:19:07,136
+Örnek yapı içerisinde ilk etapta dört tane register koymuş.
+
+79
+00:19:07,556 --> 00:19:27,515
+Bu registerlardan aldığımız content yani içeriği bir aritmetik işlem bloğuna göndererek toplama, çıkarma, çarpma, bölme neyse bu işlemleri gerçekleştirmek istiyorum.
+
+80
+00:19:27,515 --> 00:19:43,715
+Ama önce bu register grubu içerisinden hangi registerlerin işleme alınacağını, hangi registerler arasında toplama işlemi yapılacağını veya çıkarma işlemi yapılacağını seçebilmem gerekir.
+
+81
+00:19:44,196 --> 00:19:51,635
+Onun için bu seçme işlemini yapan iki tane multiplexer var devrede gördüğünüz gibi.
+
+82
+00:19:51,635 --> 00:20:11,096
+Bu multiplexer'ler dörtten bire çünkü dört tane internal register var. Bu register'ler arasında seçim yapacak ve ürettiği output'u burada görüyorsunuz aritmetik devreye gönderecek.
+
+83
+00:20:11,095 --> 00:20:17,915
+Diğer multiplexer, iki tane operanda ihtiyacımız var işleme katılacak sayı olarak.
+
+84
+00:20:17,915 --> 00:20:25,915
+Diğer multiplexer ise yine bu dört tane kaynak arasından, dört tane register arasından birini seçecek.
+
+85
+00:20:26,995 --> 00:20:40,195
+Dörtten bire multiplexer kullanılıyor çünkü bu devrede çıkışını doğrudan aritmetik devreye göndermek yerine bir ikinci multiplexera gönderecek.
+
+86
+00:20:40,196 --> 00:20:59,995
+Peki bu multiplexerler nasıl çalışıyordu? Burada gördüğümüz multiplexerler 4'ten 1'e multiplexer. 4 tane kaynaktan birini seçecek ama bu seçme işlemini yapmak için neye ihtiyacımız var? Select uçlarına ihtiyacımız var.
+
+87
+00:20:59,995 --> 00:21:02,515
+2 bit. Bakın burada gördüğünüz gibi
+
+88
+00:21:02,515 --> 00:21:03,755
+4'ten 1'e
+
+89
+00:21:03,755 --> 00:21:04,735
+multiplexer'ın
+
+90
+00:21:04,735 --> 00:21:07,655
+2 tane select ucu var.
+
+91
+00:21:07,775 --> 00:21:10,075
+Buna B select demiş. Diğerine de
+
+92
+00:21:10,075 --> 00:21:11,816
+A select demiş. Yani
+
+93
+00:21:11,816 --> 00:21:14,075
+biri A bası diye isimlendiriliyor.
+
+94
+00:21:14,635 --> 00:21:15,775
+Burada A data
+
+95
+00:21:15,775 --> 00:21:17,475
+demiş. Diğeri ise
+
+96
+00:21:17,475 --> 00:21:19,715
+B data dediği bölümü
+
+97
+00:21:19,715 --> 00:21:20,835
+oluşturuyor.
+
+98
+00:21:24,096 --> 00:21:25,516
+Register'ların sayısı
+
+99
+00:21:25,516 --> 00:21:27,915
+4 olduğu için 4'ten 1'e
+
+100
+00:21:27,915 --> 00:21:29,736
+multiplexer kullanıldı. Eğer
+
+101
+00:21:29,736 --> 00:21:36,736
+Eğer buradaki register sayısı 8 olsaydı 8'den bire multiplexer kullanacaktı.
+
+102
+00:21:37,855 --> 00:21:42,596
+Yani işte devrenin ihtiyacına göre verilmiş bir karar bu.
+
+103
+00:21:44,795 --> 00:21:50,995
+B bası üzerinde oluşturduğumuz B datası ikinci bir multiplexer'a giriyor dedik.
+
+104
+00:21:50,995 --> 00:22:08,115
+Bu ikinci multiplexer'ın görevi ben aritmetik işlemde tüm işlemleri registerler arasında yapmayabilirim. Dışarıdan sabit bir sayı girişi söz konusu olabilir.
+
+105
+00:22:08,115 --> 00:22:19,835
+Mesela şunu yapmak isteyebilirim. R3 registerine sabit bir sayı 3 ekle ve işlem sonucunu R4'e yaz diyebilirim mesela.
+
+106
+00:22:20,475 --> 00:22:30,535
+Burada sözü edilen operant constant in dediğimiz sabit sayı girişi üzerinden yapılabilir.
+
+107
+00:22:30,535 --> 00:22:37,875
+Ve bu seçimi yapabileceğimiz MUX B dediğimiz burada bir B-Multiplex sıra var.
+
+108
+00:22:38,435 --> 00:22:40,295
+Onunla gerçekleştirilecek.
+
+109
+00:22:41,095 --> 00:22:45,195
+B-Multiplex sıra iki tane kaynak arasında seçme işlemi yapıyor.
+
+110
+00:22:45,335 --> 00:22:52,655
+En bitlik iki tane sayıdan yani bu biri register olabilir, diğeri sabit sayı olabilir.
+
+111
+00:22:52,895 --> 00:22:58,715
+En bitlik iki tane sayıdan hangisinin aritmetik işleme katılacağını seçen bir.
+
+112
+00:22:59,508 --> 00:23:06,627
+B-multiplexer var. Bu B-multiplexer'ın size'ı 2'den 1'e multiplexer.
+
+113
+00:23:09,627 --> 00:23:20,867
+2'den 1'e multiplexer. Dolayısıyla bu multiplexer'ın bir tane select ucu var. MB select dediğimiz uç var orada.
+
+114
+00:23:26,099 --> 00:23:48,879
+Evet, bir sayıya girişinin ne işe yaradığını da anladık herhalde. Şimdi devam edelim. Aşağıya doğru baktığımız zaman devrede. Şimdi aritmetik işleme katılacak olan A sayısı, yani A bası, A data dediğimiz buradaki giriş, şurada gördüğümüz devrenin girişine geldi.
+
+115
+00:23:48,879 --> 00:23:54,939
+MUPS, B'nin çıkışı da benzer şekilde aşağıdaki devrenin girişine geldi.
+
+116
+00:23:54,939 --> 00:24:01,719
+Buraya B diyor, buraya A diyor. A ve B bası dediğimiz bas üzerinden iki tane operandı.
+
+117
+00:24:02,759 --> 00:24:06,359
+Aşağıda gördüğümüz aritmetik bloğa.
+
+118
+00:24:10,324 --> 00:24:29,824
+Aritmetik Lojik Unit dediğimiz birime gönderdik. Şurada Aritmetik Lojik Unit'i görebilirsiniz. Bu bloğun dört tane select ucu olsun demiş.
+
+119
+00:24:29,824 --> 00:24:41,483
+4 tane select ucu ile ben içeride 16 tane farklı operation seçebilirim. Bunlar logic veya aritmetik işlemler olabilir.
+
+120
+00:24:42,763 --> 00:24:50,164
+Bununla ilgili zaten biz tablo hazırlayacağız ve buradaki aritmetik logic unitin iç yapısını tasarlayacağız.
+
+121
+00:24:50,164 --> 00:25:02,504
+Yani şunun dizaynını bizim yapmamız gerekiyor. Bu tasarımı yapmak için ilerleyen kısımlarda değişik örnekler göreceksiniz.
+
+122
+00:25:02,743 --> 00:25:18,324
+Aritmetik, lojik, unit dediğimiz birim girişlerine gelen A ve B sayıları n bitlik iki tane sayı üzerinde G select dediğimiz dört bitlik select ucu ile değişik aritmetik, lojik işlemler gerçekleştirecek.
+
+123
+00:25:18,324 --> 00:25:24,324
+ve bu işlemin sonucu aşağıda gördüğümüz N-bitlik outputta oluşturulacak.
+
+124
+00:25:28,372 --> 00:25:41,431
+Sol tarafta gördüğümüz aritmetik lojik unit'e ek olarak burada gördüğümüz fonksiyon unit dediğimiz mavi renklendirilmiş bloğun içerisinde bir de shifter dediğimiz bir devre var.
+
+125
+00:25:41,431 --> 00:25:47,091
+Yani aritmetik işlemler bir tarafta yapılıyor, shift işlemleri diğer tarafta yapılıyor.
+
+126
+00:25:47,091 --> 00:26:00,451
+Shift işlemlerinin yapıldığı bloğa sadece B bası üzerinden en bitlik bir input aktarılmış arkadaşlar.
+
+127
+00:26:00,951 --> 00:26:04,831
+Bu ne demek? Zaten shift işlemleri için tek operanda ihtiyacım var.
+
+128
+00:26:04,831 --> 00:26:13,232
+İşte seçtiğim bir register'ı sağa ya da sola shift edebilirim, rotate edebilirim.
+
+129
+00:26:13,611 --> 00:26:15,831
+Değişik işlemleri burada gerçekleştirebilirim.
+
+130
+00:26:15,831 --> 00:26:22,291
+Burada sözüne ettilen Shifter unit'in B bası üzerinden input aldığını görüyoruz.
+
+131
+00:26:23,131 --> 00:26:27,851
+Shifter bloğunun H select dediğimiz iki bitlik ucu var.
+
+132
+00:26:28,291 --> 00:26:35,831
+Bunun üzerinden dört farklı shift operation'ı seçebilirim.
+
+133
+00:26:37,211 --> 00:26:40,631
+Shift işlemlerinde bir de dikkatinizi çekmek istediğim nokta.
+
+134
+00:26:40,632 --> 00:27:01,092
+Shift işlemlerinin yönüne göre sola shift yapıyorsanız burada gördüğümüz gibi soldan bir sıfır girişi sağa doğru shift yapıyorsanız bu tarafta görüyoruz yine bir sıfır serial input girişi söz konusu.
+
+135
+00:27:01,092 --> 00:27:13,372
+Shifter bloğunun çıkışı, H dediğimiz çıkış, aşağıda bir yine multiplexer ile çıkışa aktarılmış.
+
+136
+00:27:13,992 --> 00:27:25,052
+F multiplexer'ının görevi, buradaki F multiplexer'ı 2'den 1'e multiplexer.
+
+137
+00:27:25,052 --> 00:27:29,492
+Ama n bitlik 2 sayı arasında seçme işlemi yapıyor.
+
+138
+00:27:29,491 --> 00:27:37,611
+Ve bu multiplexer aritmetik lojik unitten mi shift unitten mi çıkış alacağına karar veriyor.
+
+139
+00:27:38,011 --> 00:27:44,431
+Bu iki giriş arasında hangisi çıkışa aktarılacaksa bunun seçimi yapılıyor.
+
+140
+00:27:44,611 --> 00:27:55,191
+İki tane kaynak arasında seçme işlemi yapmak için bir tane mfselect dediğim f multiplexer'ının select ucuna ihtiyacım var.
+
+141
+00:27:55,611 --> 00:27:58,011
+Sadece bir bitlik bir select ucu bu.
+
+142
+00:27:58,011 --> 00:28:04,232
+F multiplexer'ının çıkışı arkadaşlar görüyorsunuz en bitlik bir çıkışı var.
+
+143
+00:28:05,011 --> 00:28:14,392
+En bitlik çıkış biz hangi bloktan almak istiyorsak işlem sonucunu bunu bize gösteriyor.
+
+144
+00:28:15,011 --> 00:28:18,972
+Ve son katmanda bir tane daha multiplexer görüyorsunuz.
+
+145
+00:28:19,271 --> 00:28:23,051
+D multiplexer'ı bu da yine ikiden bire multiplexer.
+
+146
+00:28:23,051 --> 00:28:39,511
+Bu multiplexer'ın görevi ise deymaltplexer'ın çıkışına ben fonksiyon unitten gelen bir alt tutu aktarabilirim veya data in kanalıyla gelen bir veriyi aktarabilirim.
+
+147
+00:28:39,511 --> 00:28:52,691
+Data in kanalıyla gelen veri nereden gelebilir? Bu verinin kaynağı memory olabilir. Yani memoryden bir veriyi bir internal register'a aktarmak isteyebilirim.
+
+148
+00:28:53,051 --> 00:28:56,811
+Memory'den gelebilir veya bir I.O. device'den gelebilir.
+
+149
+00:28:58,811 --> 00:28:59,071
+Tamam.
+
+150
+00:28:59,731 --> 00:29:07,391
+Bu şekilde gelen dışarıdan gelen bir veriyi de bir internal register'a aktarmak için
+
+151
+00:29:07,391 --> 00:29:14,391
+burada gördüğümüz gibi bir D-Multiplexer üzerinden bunu gerçekleştirebiliyoruz.
+
+152
+00:29:15,151 --> 00:29:21,031
+D-Multiplexer'ı n-bit'lik iki sayı arasında seçme işlemi yapıyor.
+
+153
+00:29:21,031 --> 00:29:27,031
+Ve D multiplexer'ının çıkışı, bakın burada görüyorsunuz, çıkışı.
+
+154
+00:29:28,468 --> 00:29:32,387
+Yukarıya doğru dönmüş. Nereye gidiyor? Bakıyoruz.
+
+155
+00:29:35,887 --> 00:29:42,127
+Bu output tüm registerlerin data in girişine bağlanmış.
+
+156
+00:29:42,127 --> 00:29:46,968
+Bütün registerlerin data in girişine bağlanmış.
+
+157
+00:29:47,827 --> 00:29:58,007
+Ama hangisine yükleme yapılacağına karar veren yukarıda load enable ucu.
+
+158
+00:29:58,468 --> 00:30:05,648
+ve destination select decoder dediğimiz decoder ile karar veriliyor.
+
+159
+00:30:07,688 --> 00:30:19,328
+Destination select uçları eğer 0, 0 ise bakın 2 bitlik girişi var 0, 0 ise decoder'ın 0 numaralı çıkışı aktif olur.
+
+160
+00:30:19,968 --> 00:30:23,828
+Yani 1 olur. Diğerleri 0 olur.
+
+161
+00:30:23,828 --> 00:30:35,908
+Böylece şurada gördüğümüz AND kapılarının çıkışı her bir register'ın load enable işaretini oluşturur.
+
+162
+00:30:35,908 --> 00:30:48,008
+Ben destination select ucuna 00 verirsem eğer bu durumda decoder'ın 0 no'lu çıkışı aktif olacak dedik.
+
+163
+00:30:48,008 --> 00:30:54,968
+Sadece yukarıdaki AND kapısının çıkışı 1 olacak ve R0 registerine yükleme yapılacak.
+
+164
+00:30:55,527 --> 00:31:03,247
+Diğer AND kapılarının girişleri hep 0 olduğu için load işareti 0 olacak.
+
+165
+00:31:03,787 --> 00:31:06,008
+O registerlere yükleme yapılmayacak.
+
+166
+00:31:06,008 --> 00:31:31,268
+Yani benim amacım sadece R0 registerine işte R3 artı 3 yazmaksa ya da R3 artı 4 yazmaksa bu işlemi ben source register olarak R3'ü seçerek sabit bir sayı girişi seçerek destination register olarak da R0'ı seçerek gerçekleştirebilirim.
+
+167
+00:31:31,267 --> 00:31:45,447
+Tabi toplama işlemi içinde fonksiyon unit dediğimiz birimde işlemlerin toplama işlemi şeklinde seçilmesi gerekir.
+
+168
+00:31:46,067 --> 00:31:48,267
+Şimdi biraz şeklinin üstünü temizleyelim.
+
+169
+00:31:51,267 --> 00:31:53,147
+Çok karaladık.
+
+170
+00:32:10,675 --> 00:32:22,935
+Evet, şekilde değinmediğimiz noktalar neresi diye bakıyorum. Belki sadece aritmetik devrenin durum bitlerine hiç değinmedik. Biraz ondan bahsedebiliriz.
+
+171
+00:32:22,935 --> 00:32:39,155
+Şöyle bakalım. Kullandığımız aritmetik lojik unit şurada görüyorsunuz. Aritmetik lojik unitin durum bitleri.
+
+172
+00:32:39,155 --> 00:32:50,536
+yaptığımız aritmetik işleme göre toplama, çıkarma, arttırma, eksiltme işlemleri gibi işlemlerin sonucunda ya da lojik işlemler sonucunda
+
+173
+00:32:50,536 --> 00:33:00,536
+overflow, carry, negate ve zero bitlerinin, durum bitlerinin güncellenmesi gerekir.
+
+174
+00:33:00,536 --> 00:33:04,635
+Bu bloğun çıkışında bunu görebiliyorsunuz.
+
+175
+00:33:04,635 --> 00:33:15,116
+Zero Flame çalışma mantığı işlem sonucu, en bitlik işlem sonucu eğer sıfırsa Z biti bir oluyordu biliyorsunuz.
+
+176
+00:33:15,116 --> 00:33:25,055
+Bunu sağlayacak devre şurada bir Zero Detect devresi. Zero Detect devresi sizce nasıl oluşturulmalı?
+
+177
+00:33:25,155 --> 00:33:30,075
+Bütün bitleri sıfırsa çıkışı bir olacak. Bir kapı söyleyin bana.
+
+178
+00:33:36,531 --> 00:33:58,531
+Orp kapısı hocam. Pardon. Evet, Orp kapısı, aynen. Olmaz. Hepsi sıfır olacak dedim. Başka? Pardon. Not Or olabilir mi? Bir daha söyle. Not Or. Tek kapı dedim ama. Şimdi bir daha düşünün.
+
+179
+00:34:02,067 --> 00:34:18,367
+Tüm girişler sıfır olunca çıkış sıfır oluyor değil mi? Bir olacak. Çıkış bir olacak. Nor olmuyor mu o zaman? Ama o zaman içinde bir tane bir varsa ne yapar? Sıfır olur.
+
+180
+00:34:18,367 --> 00:34:21,367
+Hı hı.
+
+181
+00:34:24,467 --> 00:34:27,787
+Sadece 0, 0 olduğunda mı 1 olmasını istiyoruz hocam?
+
+182
+00:34:28,227 --> 00:34:38,027
+Evet, bütün n tane bitin tamamı 0 ise eğer ne olacak? Tekrar söyle. Mehmet Ali sanki vardı bir şey sende. Bir daha söyle.
+
+183
+00:34:38,287 --> 00:34:39,587
+Nor demiştim hocam ben.
+
+184
+00:34:39,827 --> 00:34:41,507
+Nor dedin değil mi? Tamam.
+
+185
+00:34:41,648 --> 00:34:42,107
+Evet hocam.
+
+186
+00:34:42,908 --> 00:34:51,947
+Bütün girişleri 0 iken or olsaydı 0 verirdin, nor olduğu zaman 1 veriyorsun. Doğru, güzel.
+
+187
+00:34:51,947 --> 00:34:58,207
+Zero Detection işleminin bu şekilde yapılması gerekiyor.
+
+188
+00:34:58,547 --> 00:35:00,547
+Hocam bu arada ben küçük bir şey sorabilir miyim?
+
+189
+00:35:00,887 --> 00:35:01,967
+Buyurun tabii ki.
+
+190
+00:35:01,967 --> 00:35:08,067
+Hocam şimdi biz veri bu Function Unit'e sokarken bir Multiplexer kullanmadık.
+
+191
+00:35:08,188 --> 00:35:13,267
+O zaman her halükarda gönderdiğimiz veri hem Shifter'dan hem aritmetik logikten geçiyor mu?
+
+192
+00:35:13,467 --> 00:35:16,107
+Ondan sonra Multiplexer'dan hangisi olduğuna karar veriyoruz değil mi?
+
+193
+00:35:16,227 --> 00:35:18,467
+Evet çok güzel bir noktaya değindiniz.
+
+194
+00:35:18,707 --> 00:35:19,127
+Güzel.
+
+195
+00:35:20,027 --> 00:35:20,667
+Doğru.
+
+196
+00:35:20,667 --> 00:35:26,627
+Bu iki blok birbirine paralel aynı anda işlem sonucu üretiyor.
+
+197
+00:35:27,727 --> 00:35:30,307
+Aynı anda işlem sonucu üretiyor.
+
+198
+00:35:30,547 --> 00:35:34,447
+Burada chatte cevap yazan varmış. Teşekkürler Tuğba.
+
+199
+00:35:36,667 --> 00:35:37,167
+Evet.
+
+200
+00:35:38,987 --> 00:35:41,527
+İki blok aynı anda sonuç üretiyor.
+
+201
+00:35:41,847 --> 00:35:49,427
+Fakat biz bunlardan birinin seçimini F-Multiplexer ile yapıyoruz.
+
+202
+00:35:49,427 --> 00:36:09,787
+Paralelde ikisi de sonuç üretiyor. Burada şifter, şurayı fonksiyon unit dediği blok mavi ile renklendirilmiş gördüğünüz gibi. Yukarıda bir de register file dediği mavi ile renklendirdiği ayrı bir blok daha var.
+
+203
+00:36:09,787 --> 00:36:22,268
+Register file bloğunda source operantları seçiliyor. Yani işleme katılacak olan kaynak seçimi yapılıyor.
+
+204
+00:36:23,487 --> 00:36:34,068
+Funksiyon unitte ise bu seçilmiş register content için bir aritmetik, lojik ya da shift işlemi gerçekleştiriliyor.
+
+205
+00:36:34,067 --> 00:36:46,567
+Bu arada yer alan bir A bası üzerinden bir çıkış alınmış ve address out yazılmış.
+
+206
+00:36:47,167 --> 00:36:55,707
+Bir de B bası üzerinden bir çıkış alınmış ve data out şeklinde yazılmış.
+
+207
+00:36:55,707 --> 00:37:08,387
+Burada şu üç bileşen çevre birimleriyle ve memoriyle haberleşmek için kullanılan uçlar aslında.
+
+208
+00:37:08,387 --> 00:37:28,147
+Adres out ile ben memoryde herhangi bir adrese bir veriyi yazabilirim veya seçtiğim adresteki bir memory gözünden herhangi bir veriyi okuyup internal bir registre'a taşımak isteyebilirim.
+
+209
+00:37:28,147 --> 00:37:39,707
+Bu amaçla kullanılan kontrol uçları bunlar. Address out, data out ve data in uçlarına da burada dikkatinizi çekmek isterim.
+
+210
+00:37:39,707 --> 00:37:50,187
+Evet, bakayım kaç dakika olmuş? Evet, yaklaşık 20 dakikada bu devreyi ben size anlatmış oldum.
+
+211
+00:37:50,188 --> 00:38:03,648
+temel yapısını ve nasıl işlediğini, Source ve Destination seçimlerinin nasıl yapıldığını burada görmüş olduk.
+
+212
+00:38:03,928 --> 00:38:05,247
+Buraya kadar sorunuz var mı?
+
+213
+00:38:10,483 --> 00:38:27,223
+Yok galiba. Peki o zaman şimdi bizim dersimizin amacı arkadaşlar ilk etapta bu fonksiyon unit içerisinde gördüğümüz aritmetik lojik uniti tasarlamak. Yukarıdaki bu bloğu tasarlamak.
+
+214
+00:38:27,223 --> 00:38:43,903
+Tabi tasarımda ne yapacağız? Biz kendi tanımladığımız aritmetik işlemleri yapabilen devreyi oluşturmaya çalışacağız. O nedenle n bitlik bir aritmetik lojik unit oluşturmayı hedefliyoruz.
+
+215
+00:38:43,903 --> 00:39:03,343
+Bu ne demek? N bitlik A sayısı ile N bitlik bir B sayısı bunlar data input A, data input B dediğim iki tane N bitlik sayı arasında şu bölümde tanımladığım işlemleri gerçekleştirecek.
+
+216
+00:39:03,344 --> 00:39:25,463
+Operation Select ve Mode Select uçları var. Bir de Carry In girişi var. Bu işaretlerle ben içeride hangi işlemin yapılacağını seçeceğim ve işlem sonucu, N-bit'lik işlem sonucu Data Output G dediğim çıkışta görülecek.
+
+217
+00:39:25,463 --> 00:39:31,923
+ve tabi bu aritmetik işlemin bir de carry out ucu olacak.
+
+218
+00:39:32,603 --> 00:39:39,243
+Bu yapıyı tasarlamak için toplayıcı devreden faydalanacağız.
+
+219
+00:39:40,183 --> 00:39:42,083
+N bit bir paralel adder'ımız var.
+
+220
+00:39:42,323 --> 00:39:43,583
+N bit paralel adder.
+
+221
+00:39:44,203 --> 00:39:46,783
+Daha önce N bit paralel adder'ı tasarladık.
+
+222
+00:39:46,863 --> 00:39:49,103
+Full adder'lerle oluşturulmuş bir yapı.
+
+223
+00:39:49,103 --> 00:40:07,543
+mesela 4 bitlik bir paralel adder oluşturmak için 4 tane full adder kullanıyorum. Bunların her biri birer tam toplayıcı. Tam toplayıcı ne demek? 3 bitlik sayıyı toplayabilen yani elde bitiyle beraber.
+
+224
+00:40:07,543 --> 00:40:11,183
+Varsayalım ki şurası SAM 0'ı oluşturuyor.
+
+225
+00:40:11,183 --> 00:40:12,763
+A 0 ile
+
+226
+00:40:17,588 --> 00:40:39,787
+A0 ile B0'ı toplayacak ve belki burada yine dışarıdan gelen bir elde biti var, carry-in girişi. Bunun çıkışında sum 0 oluşacak. Bunun çıkışında oluşan carry, bir yüksek anlamlı full adder'ın carry-in girişine bağlanacak.
+
+227
+00:40:39,787 --> 00:40:58,367
+Burası A1 ile B1'i toplayacak ve bir SAM 1 biti oluşturacak. Bunun oluşturduğu kere yandaki bite girecek. Bu nedir? Paralel adder dediğim yapıyı ben size burada anlatmaya çalışıyorum şu anda.
+
+228
+00:40:58,367 --> 00:41:13,487
+Bu tam toplayıcı yapıdan faydalanarak bu tasarımı, paralel eder dediğimiz özür dilerim yapıyı kullanarak biz bir aritmetik devre oluşturmaya çalışacağız.
+
+229
+00:41:13,487 --> 00:41:19,147
+En bitlik bir paralel eder var yukarıda anlattığım şekilde tasarlanmış.
+
+230
+00:41:19,147 --> 00:41:39,107
+Bunu ben A ve B girişlerine, şurada gördüğümüz A ve B girişlerine farklı kombinasyonlar uygulayarak devrenin çalışma şeklini değiştireceğim.
+
+231
+00:41:39,107 --> 00:41:58,107
+Mesela n bitlik paralel adder'ın x girişi dediğim girişine n bitlik a sayısını doğrudan verirken n bitlik b sayısını bir lojik bloktan geçireceğim.
+
+232
+00:41:58,107 --> 00:42:22,448
+Bu B input logic dediğim bloğun iki tane select ucu var. Burada örnek olarak iki verdik. Bu bir olabilir, üç olabilir, daha az, daha çok olabilir. Bu iki tane select ucu ile B inputunun değişik kombinasyonlarını bu bloğa uygulayacağım ve toplama katılan sayıyı B sayısını değiştireceğim.
+
+233
+00:42:22,448 --> 00:42:40,427
+Mesela ne olabilir bu? B'yi doğrudan verebilirim, B'nin komplementini verebilirim toplama işlemine katmak üzere veya B'yi hiç göndermem sıfır verebilirim gibi bu şekilde değişik kombinasyonlar vererek
+
+234
+00:42:40,427 --> 00:42:55,427
+N-bit'lik paralel adder'ın çıkışında şuradaki Y'yi oluşturan B input lojiyi değiştirerek farklı fonksiyonlar gerçekleştirebilirim.
+
+235
+00:42:56,367 --> 00:43:02,067
+Donanım olarak bunu nasıl tasarlayacağımızı göreceksiniz şimdi.
+
+236
+00:43:02,067 --> 00:43:08,588
+Tabi bu N-bit paralel adder'ın burada gördüğümüz carry-in girişi de bu toplama eklenmiş.
+
+237
+00:43:08,588 --> 00:43:17,427
+yani X artı Y artı carry in şeklinde bir output üretmesi gerekiyor. Bu n-bit paralel adder'ın.
+
+238
+00:43:19,808 --> 00:43:30,308
+Şimdi dedik ki biz kendi tanımladığımız fonksiyonları gerçekleştirecek bir devre oluşturmak istiyoruz.
+
+239
+00:43:30,308 --> 00:43:31,227
+O zaman
+
+240
+00:43:37,811 --> 00:44:00,492
+Şekilde gördüğünüz gibi bir tablo verilmiş olsun bize. Bu tablo bana ne diyor? 8 tane farklı aritmetik işlem tanımladım. Bu tanımladığım işlemler G çıkışında A'yı transfer edebilirim.
+
+241
+00:44:00,492 --> 00:44:24,492
+A artı B yazabilirim yani bir toplama işlemi yapabilirim. A artı B komplement veya A eksi bir veya A artı bir bakın sekiz tane farklı aritmetik işlemi ya da fonksiyonu gerçekleştirecek devreyi tasarlamak istiyorum.
+
+242
+00:44:24,492 --> 00:44:36,372
+Bu benim seçtiğim bir tablo. Bu işlemleri gerçekleştirmek istiyorum diyorum. Ve bu işlemleri gerçekleştirirken select input'ların ne olması gerektiğini de tanımlamışım.
+
+243
+00:44:36,372 --> 00:44:49,931
+Select input'u 0, 0 iken, carry in 0 iken, G çıkışında sadece A'yı transfer edeyim demişim.
+
+244
+00:44:49,931 --> 00:45:00,811
+Select ucu 0, 1 olduğunda, carry in ucu 0 olduğunda A artı B'yi gerçekleştirmek istiyorum demişim.
+
+245
+00:45:00,811 --> 00:45:14,851
+Bu şekilde bir tablo hazırlıyoruz başta ve G çıkışı dediğimiz çıkış şurada PDF oluştururken semboller bozulmuş.
+
+246
+00:45:14,852 --> 00:45:22,051
+A artı Y artı carry in işlemini gerçekleştirmeyi hedefliyoruz.
+
+247
+00:45:22,051 --> 00:45:29,131
+Şimdi yukarıdaki tasarımda sizde gördüğünüz bir paralel adder'ımız vardı.
+
+248
+00:45:29,131 --> 00:45:53,332
+Bu arada n bit paralel adder. Bu paralel adder'a biz A input'unu yani X girişine n bit'lik A sayısını doğrudan uyguladık. B sayısını ise bir B input lojikten geçirip öyle toplama verdik.
+
+249
+00:45:53,332 --> 00:45:56,132
+Bir de bunun carry in girişi var.
+
+250
+00:45:57,832 --> 00:46:00,272
+Ve bu devrenin bir G çıkışı var.
+
+251
+00:46:01,712 --> 00:46:11,032
+Şimdi bizim amacımız bu B input lojiyi tasarlamak.
+
+252
+00:46:11,032 --> 00:46:25,912
+ve B input lojiyi ben bu B input lojiyin iki tane de select ucu S0 ve S1 dediğim select uçları ile şurada tabloda gördüğüm select uçları bunlar.
+
+253
+00:46:28,912 --> 00:46:40,231
+N bitlik paralel adder'ın Y girişine yani şuraya B input lojiyin ne aktarması gerektiğini seçeceğim.
+
+254
+00:46:40,231 --> 00:46:41,192
+Şimdi
+
+255
+00:46:49,876 --> 00:46:51,876
+Lütfen burayı dikkatli dinleyin.
+
+256
+00:46:53,655 --> 00:47:04,955
+0-0, select uçları 0-0 olduğunda diyor ki aritmetik devre G çıkışında A'yı göstersin.
+
+257
+00:47:05,115 --> 00:47:12,195
+Yani B sayısı hiç paralel adder'a ulaşmasın. Yani 0 olarak gelsin.
+
+258
+00:47:12,195 --> 00:47:31,515
+Carry in 1 olduğunda ise bu iki case için tabii gerçekleştiriyoruz bunu. Carry in 0 ve carry in 1 durumları için. Carry in dediğimde şu yukarıdaki giriş. Carry in 1 olduğunda ise G çıkışı A artı 1 işlemini gerçekleştirsin diyor.
+
+259
+00:47:31,515 --> 00:47:50,995
+A artı bir işlemindeki bir sayısı zaten carry in'den geliyor arkadaşlar. Demek ki B sayısı burada da sıfır olacak. O yüzden Y girişine tam toplayıcının ya da paralel toplayıcının Y girişine B input lojikten tümüyle sıfır gelmesi gerekiyor.
+
+260
+00:47:50,995 --> 00:48:18,876
+Tamam. Benim amacım şuranın ne olacağını bulmak. Neye göre? Sağ tarafta verilmiş olan fonksiyonlara göre. Bu fonksiyonlara göre acaba şurası ne olmalıdır? Ben bunu bulacağım. Daha sonra buna göre bir karnomep ile indirgenmiş B input logic dediğim devreyi tasarlayacağım. Amaç burada bu.
+
+261
+00:48:18,876 --> 00:48:37,896
+Evet bir küçük ara vereceğim ders arasını biraz erken yapalım 10 dakika ara ondan sonra bunu detaylı olarak anlatacağım bölünmesini istiyorum çünkü konu o yüzden şöyle yapalım sorunuz varsa aradan sonra lütfen sorun
+
+262
+01:00:32,692 --> 01:00:40,011
+Evet, başlıyorum arkadaşlar. Bilgisayarınızın başında mısınız acaba? Göreyim bakayım ellerinizi.
+
+263
+01:00:40,451 --> 01:00:41,171
+Buradayız hocam.
+
+264
+01:00:42,911 --> 01:00:51,591
+Evet, güzel. Şu an derse katılan 56 kişi var görünüyor. 50 kaldıran öğrenci sayısı.
+
+265
+01:00:55,476 --> 01:01:20,236
+28, 29, iyi, çok güzel, yarıyı geçtik. 30, 31, evet. 32 kişi buradayım dedi. Teşekkür ediyorum. Diğerleri uyumaya gitti herhalde. Ama siz benim söylediklerimi hatırlıyorsunuz. Uyuyanlar değil, bilgisayarın başında olanlar kazanacak. Emin olun.
+
+266
+01:01:20,236 --> 01:01:29,575
+Şimdi sevgili arkadaşlar az önce başladığımız örneğin çözümüne geçelim.
+
+267
+01:01:37,748 --> 01:01:48,927
+Evet, şimdi bize verilmiş olan aritmetik işlemleri gerçekleştirecek aritmetik devreyi tasarlamak istiyoruz. Amacımız bu.
+
+268
+01:01:48,927 --> 01:02:01,928
+Az önce belirttiğim gibi bu çözümde bize fonksiyon tablosu verilen devrenin, aritmetik devrenin tasarımını istiyordu.
+
+269
+01:02:01,928 --> 01:02:25,227
+Paralel Adder kullanarak yapacağız dedik. Yukarıda görüyorsunuz N-bit bir paralel Adder var. Paralel Adder'ın X girişine N-bit'lik A sayısı, Y girişine ise B sayısı bir B input lojikten geçirilerek N-bit olarak uygulanıyor.
+
+270
+01:02:25,227 --> 01:02:39,387
+Bu paralel toplayıcı devre Cary-in girişiyle birlikte X ve Y'yi topluyor. Devrenin çıkışında G dediğimiz output'u işlem sonucunu oluşturuyor.
+
+271
+01:02:39,387 --> 01:03:03,748
+Bu tasarımı yaparken bize şu fonksiyonlar verilecek aşağıda tabloda gördüğümüz fonksiyonlar verilecek G output'u A'yı göstersin ya da G output'u A artı B'yi göstersin gibi bu fonksiyonları gerçekleştiren devrenin B input lojiyini tasarlamamız gerekiyor dedik.
+
+272
+01:03:03,748 --> 01:03:20,387
+B input lojinin de Y çıkışında ne ürettiğini bulmamız gerekiyor. O yüzden tabloda Y girişi, paralel ederin Y girişini ne değer alması gerektiğine karar vermemiz gerekiyor.
+
+273
+01:03:20,387 --> 01:03:31,188
+Az önce başladık. Dedik ki ilk olarak şeyi yine biraz temizleyelim. Çok karalanınca kafa karıştırıyor.
+
+274
+01:03:31,187 --> 01:03:52,547
+Evet. Select uçları 0, 0 olduğunda G output'unda A'yı, carry in 0 için A'yı görmek istiyorum ya da carry in 1 olduğunda A artı 1 yani inkrement işlemini görmek istiyorum diyorsak eğer
+
+275
+01:03:52,548 --> 01:04:05,348
+Paralel Eder'ın Y girişine N bitlik sayı olarak all zeros diyor. Yani N adet sıfır giriş uygulanmalıdır diyor.
+
+276
+01:04:06,227 --> 01:04:19,027
+Neden? Çünkü görüyorsunuz işlemlerde B sayısı hiç yok. A'yı ve A artı biri görüyoruz G çıkışında. Bunu sağlamak için B input lojiyunun sıfır vermesi gerekiyor.
+
+277
+01:04:19,027 --> 01:04:27,787
+İkinci sırada 0, 1 olduğunda ise hangi işlemi görmek istiyoruz?
+
+278
+01:04:28,787 --> 01:04:41,087
+G output'unda A artı B toplama işlemini veya carry in 1 olduğunda ise A artı B artı 1'i görmek istiyoruz.
+
+279
+01:04:41,087 --> 01:04:45,867
+Zaten buradaki 1 az önce konuştuğumuz gibi carry in'den geliyor.
+
+280
+01:04:46,447 --> 01:04:48,328
+Buradaki 1 carry in'den geliyor.
+
+281
+01:04:48,328 --> 01:05:06,387
+Dolayısıyla aslında benim toplayacağım sayılar A ve B sayıları. Sol taraftaki yarı sıfır olduğunda da A ve B'yi topluyorum. Dolayısıyla demek ki B input lojiyi ne üretmesi gerekiyor? B'yi üretmesi gerekiyor ki toplamda A artı B'yi görebilelim.
+
+282
+01:05:06,387 --> 01:05:13,727
+3. sırada select uçları 1-0 olduğunda sağ tarafta işlemlere bakıyorum.
+
+283
+01:05:13,727 --> 01:05:16,688
+Sağ taraftaki işlemler bana diyor ki
+
+284
+01:05:22,483 --> 01:05:46,023
+Cary'in sıfır olduğunda göreceğimiz işlem A artı B değil olacak. Cary'in bir olduğunda ise A artı B değil artı bir yani A eksi B çıkarma işlemine karşı geliyor bu. Bunu göreceğiz.
+
+285
+01:05:46,023 --> 01:05:58,483
+Peki buradaki bir tekrar söylüyorum carry in'den geldiğine göre benim paralel adder'ın y girişine ne uygulamam gerekir?
+
+286
+01:05:58,483 --> 01:06:03,903
+B komplement uygulamam gerekir ki bu sonucu alabilelim.
+
+287
+01:06:05,103 --> 01:06:12,643
+Ve select uçları 1-1 olduğunda diyor ki A-1 işlemi yapmak istiyorum.
+
+288
+01:06:13,603 --> 01:06:15,423
+Burası biraz karışık buna dikkat.
+
+289
+01:06:16,023 --> 01:06:29,263
+A-1 işlemi carry in 0 olduğunda A'yı 1 eksilteceğim. Carry in 1 olduğunda ise A'yı transfer edeceğim. Bunu nasıl gerçekleştirebilirim?
+
+290
+01:06:29,263 --> 01:06:42,423
+Bu fonksiyonu gerçekleştirmek için arkadaşlar paralelader'ın y girişine all ones dediğimiz bütün bitlerin 1 olduğu kombinasyonu uygulamalıyız.
+
+291
+01:06:42,423 --> 01:06:58,223
+Bütün bitlerin bir olduğu kombinasyon, varsayalım ki bu 8 bitlik bir kombinasyon olsun. Bütün bitlerin bir olması demek.
+
+292
+01:07:02,452 --> 01:07:21,872
+eksi bir sayısı demek onun tabanına göre. Bütün bitlerin bir olması demek. Ve ben A artı eksi bir işlemini yaparsam elde edeceğim sonuç A eksi bir yani bir eksiltme işlemi olacak.
+
+293
+01:07:21,872 --> 01:07:35,271
+Sağ tarafta ise kere in 1 olduğu için eksi 1 artı 1 toplamı 0 olacak. Sadece G eşittir A, alt tutta bu fonksiyon görülecek.
+
+294
+01:07:36,871 --> 01:07:45,231
+Dediğim gibi burada sizin için belki en bilmediğiniz veya dikkatli olmanız gereken nokta bu.
+
+295
+01:07:45,231 --> 01:07:57,691
+A-1 işlemini yapabilmek için kere in sıfırken A-1 işlemini yapabilmek için B kanalından eksi 1 sayısının gelmesi gerekiyor.
+
+296
+01:07:57,691 --> 01:08:09,672
+Eksi 1 sayısı da az önce söylediğim gibi bütün bitlerin tuz komplement mantığında bütün bitlerin 1 olması demek bu sayının eksi 1 olması demek.
+
+297
+01:08:09,672 --> 01:08:33,032
+Bakın bu TUS komplement mantığında zaten işaret bitti sayının negatif olduğunu gösteriyor. Daha sonra sayının 10 tabanındaki karşılığını bulabilmek için bunun ikiye tümleyenini alıp baktığınızda bunun eksi 1 olduğunu görebilirsiniz.
+
+298
+01:08:33,031 --> 01:08:40,031
+Bu şekilde A-1 işlemini yani dikriment işlemini gerçekleştirebiliyoruz.
+
+299
+01:08:41,491 --> 01:08:56,031
+Daha sonra biz bu tabloyu oluşturduktan sonra ve şurada gördüğümüz Y'nin alacağı değerleri belirledikten sonra B input lojiyunu artık tasarlayabiliriz.
+
+300
+01:08:57,231 --> 01:09:00,031
+B input lojiyunu buna göre tasarlayabiliriz.
+
+301
+01:09:07,220 --> 01:09:15,899
+neydi? All zeros, B değil ve all ones. Şimdi slide'dan yine devam ediyorum.
+
+302
+01:09:16,600 --> 01:09:31,900
+Az önce tabloya koyduğumuz değerleri select ucu 0 iken all zeros'tu. Select ucu 0 1 olduğunda B olacak demiştik.
+
+303
+01:09:31,900 --> 01:09:57,339
+demiştik. Y çıkışı burası B'nin komplementi ve 1-1 olduğunda ise all ones demiştik. Şimdi B'yi de doğruluk tablosuna koyarak Y çıkışının alması gereken değeri burada doğruluk tablosuna yerleştirmiş.
+
+304
+01:09:57,339 --> 01:10:15,999
+Select uçları 0, 0 iken all zeros olacağı için Y çıkışı 0 oldu. Select uçları 0, 1 olduğunda YBI değerini alacak demiştik.
+
+305
+01:10:15,999 --> 01:10:28,800
+B'nin aldığı değer ne ise? Y'ye O yazıldı. 1, 0 olduğu durumda B'nin komplementi Y çıkışına yazıldı.
+
+306
+01:10:28,800 --> 01:10:37,920
+ve select uçları 1-1 olduğunda ise çıkış all ones olacak demiştik.
+
+307
+01:10:37,920 --> 01:10:48,279
+B girişi 0'da olsa 1'de olsa Y çıkışının 1 değer aldığını gösterdik doğruluk tablosunda.
+
+308
+01:10:48,639 --> 01:10:56,139
+Bu doğruluk tablosundaki değerleri az önce yukaraki tabloda yazdığımız değerlere göre oluşturduk.
+
+309
+01:10:56,139 --> 01:11:02,999
+Daha sonra amacımız B input lojiğini tasarlamak olduğuna göre bunu karno MEP'e yerleştireceğim.
+
+310
+01:11:02,999 --> 01:11:13,400
+S1, S0, BI dediğim girişler için Y çıkışını karno MEP'e taşıyoruz.
+
+311
+01:11:13,400 --> 01:11:28,660
+0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1 değerlerini karnomepe koyduk.
+
+312
+01:11:28,660 --> 01:11:35,800
+Daha sonra karnomepte indirgenmiş ifadeyi yazmak için birileri grupluyorum.
+
+313
+01:11:35,800 --> 01:11:44,359
+oluşturabildiğim en büyük grubu ve en az sayıda grubu oluşturmak hedefleniyor.
+
+314
+01:11:44,359 --> 01:12:08,040
+Dolayısıyla buradan şurası bana S0B'yi şu ikili grup ise bana S1B değili gösteriyor.
+
+315
+01:12:08,039 --> 01:12:24,519
+Böylece Y'nin yani B input logic dediğimiz devrenin indirgenmiş fonksiyonunu buradan oluşturmuş oluyoruz.
+
+316
+01:12:24,519 --> 01:12:29,679
+Daha sonra bu devrenin çizimini yapmış.
+
+317
+01:12:31,419 --> 01:12:37,379
+En düşük anlamlı bitleri toplayan bir tam toplayıcı var.
+
+318
+01:12:38,039 --> 01:12:44,199
+Bu tam toplayıcının G0 çıkışı var. En düşük anlamlı işlem sonucu.
+
+319
+01:12:45,279 --> 01:12:52,899
+Şurada gördüğümüz blok, logic blok, B input logic dediğimiz
+
+320
+01:12:58,676 --> 01:13:20,055
+bloğu gösteriyor. Az önce CarnoMap'te indirgenmiş fonksiyonunu oluşturmuştuk. Her bit için bunu tüm full adderlerin önüne yerleştiriyor. B input logic bu B0 için olanı, altta B1 için olanı görüyorsunuz.
+
+321
+01:13:20,055 --> 01:13:28,095
+ve tüm bloklarda carry in toplamı en düşük anlamlı bite elde bite olarak giriyor.
+
+322
+01:13:29,115 --> 01:13:37,135
+En düşük anlamlı bitin oluşturduğu carry out bir yüksek anlamlı bite carry in girişi olarak bağlanıyor.
+
+323
+01:13:38,655 --> 01:13:47,475
+Sonraki full adder A1 ile B1'i toplayacak ama B1 bir B input logicten geçirilecek aynı mantıkla.
+
+324
+01:13:50,055 --> 01:13:55,235
+ve G1 çıkışını üretecek.
+
+325
+01:13:55,975 --> 01:14:00,855
+Gördüğünüz gibi yapı aslında kolay.
+
+326
+01:14:03,555 --> 01:14:07,896
+Burada B input lojiyi tasarlamamız gerekiyor.
+
+327
+01:14:08,015 --> 01:14:11,655
+Bize verilen aritmetik işlemlere göre.
+
+328
+01:14:12,495 --> 01:14:16,835
+Sonra lojik bloğa geçmiş şeyde, slidelerde.
+
+329
+01:14:16,835 --> 01:14:25,935
+Bu noktada bana sorunuz var mı? Önce onu sorayım. Sonra biraz bunlarla ilgili egzersiz yapalım.
+
+330
+01:14:28,015 --> 01:14:29,435
+Soru var mı acaba?
+
+331
+01:14:34,804 --> 01:14:36,804
+Herhangi bir soru göremiyorum.
+
+332
+01:14:36,804 --> 01:14:38,804
+Pekala.
+
+333
+01:14:42,163 --> 01:14:46,663
+Şimdi kitabın arkasındaki sorulardan ben biraz çektim.
+
+334
+01:14:51,347 --> 01:14:53,808
+Aklımızı şöyle düzenleyelim.
+
+335
+01:15:02,163 --> 01:15:02,923
+Evet.
+
+336
+01:15:11,796 --> 01:15:18,595
+Evet, görüyorsunuz değil mi? Örnek problemler sayfasını açtım.
+
+337
+01:15:19,095 --> 01:15:20,075
+Evet hocam, görüyoruz.
+
+338
+01:15:20,075 --> 01:15:32,575
+Tamam, güzel. Şimdi biraz egzersiz yapalım dediğim gibi. Kitabın arkasındaki sorulardan iki tane buraya koydum. Birlikte çözelim diye.
+
+339
+01:15:32,575 --> 01:15:34,995
+Diyor ki soruda
+
+340
+01:15:34,995 --> 01:15:37,815
+Design and arithmetic
+
+341
+01:15:37,815 --> 01:15:43,615
+Design and arithmetic circuit with two selection variable
+
+342
+01:15:43,615 --> 01:15:46,395
+Şuradan
+
+343
+01:15:53,235 --> 01:16:12,215
+boyadığım zaman kötü mü görünüyor acaba? Görebiliyorsunuz değil mi? Design an aritmetik circuit with two select selection variables, S1 and S0, and two n-bit data inputs, A and B.
+
+344
+01:16:12,215 --> 01:16:22,256
+The circuit generates the following eight aritmetik operations in conjunction with carry in.
+
+345
+01:16:22,256 --> 01:16:23,175
+Carry in.
+
+346
+01:16:27,175 --> 01:16:31,355
+Tabloda bize iki tane select inputu verilmiş.
+
+347
+01:16:33,115 --> 01:16:35,295
+İki tane select inputu verilmiş.
+
+348
+01:16:40,787 --> 01:17:06,708
+S1 and S0. Cary'in ucu da az önceki örnekte de gördüğümüz gibi 0 ve 1 olması durumuna göre bir fonksiyon seçme ucu gibi davranıyor. O yüzden iki tane select ucunun yanında bir de Cary'in eklediğimizde üç tane select ucu varmış gibi davranıyor ve sekiz farklı aritmetik işlem tanımlayabiliyoruz.
+
+349
+01:17:06,708 --> 01:17:14,988
+Bu aritmetik işlemleri bize vermiş ve bunu gerçekleştiren devreyi tasarlayın demiş.
+
+350
+01:17:16,988 --> 01:17:30,587
+Cary'in sıfır için A artı B, A'nın komplementi artı B, A eksi bir, A komplement gibi sonuçlar istiyor.
+
+351
+01:17:30,587 --> 01:17:38,587
+Cary'in 1 olduğunda ise A artı B komplement artı 1 demiş buna A eksi B diyebilirim.
+
+352
+01:17:40,727 --> 01:17:51,747
+İkinci satırda A komplement artı B artı 1 demiş buna B eksi A subtract ama ters çıkarma işlemi gibi düşünebilirim.
+
+353
+01:17:52,468 --> 01:17:58,947
+A artı 1 veya A'nın komplement artı 1 şeklinde bir output üretmesi isteniyor.
+
+354
+01:17:58,947 --> 01:18:15,067
+Şimdi önce bir kere bu tabloya baktığımız zaman bir önceki tasarıma göre nasıl bir farklılık olduğunu görüyorsunuz ya da seziyorsunuz diye sorsam.
+
+355
+01:18:19,091 --> 01:18:22,131
+Burada galiba A'nın önünde de bir lojik devreye ihtiyacımız var hocam.
+
+356
+01:18:22,851 --> 01:18:36,331
+Evet, kesinlikle. A'nın önünde de bir lojik devreye ihtiyacımız var. Çünkü görüyorsunuz tabloda A komplement diye bir durum söz konusu.
+
+357
+01:18:36,331 --> 01:18:43,051
+Bunu nasıl gerçekleştirebilirim? Ancak A'nın önüne de bir lojik devre yerleştirerek yapabilirim.
+
+358
+01:18:43,051 --> 01:18:54,171
+Yani hem B'de hem A'da bir input logic olacak. O zaman şöyle düşünelim. Bizim tasarlayacağımız blok.
+
+359
+01:19:02,131 --> 01:19:10,131
+Şurada bir N bit paralel adder'ımız var.
+
+360
+01:19:12,884 --> 01:19:37,203
+Bu paralel adder'ın önünde n bitlik A sayısını bağlayacağım bir A input lojik olacak. Bu bana paralel adder'ın X girişini oluşturacak n bit. Benzer şekilde bir B input lojiyim olacak.
+
+361
+01:19:37,203 --> 01:19:47,703
+Bu da N bitlik B sayısını alacak ve paralel edirin Y girişine bağlayacağız.
+
+362
+01:19:47,703 --> 01:20:07,964
+Bu A input logic, B input logic dediğim blokların iki tane select ucu olacak. Aynı önceki tasarımda olduğu gibi aynı select uçları burada bunları kontrol edecek.
+
+363
+01:20:07,963 --> 01:20:11,723
+Peki bir de şu analizi yapmamız gerekiyor arkadaşlar.
+
+364
+01:20:14,523 --> 01:20:24,823
+Cary in ucu 0 veya 1 olduğunda acaba bir önceki kombinasyonu etkileyen bir durum söz konusu mu?
+
+365
+01:20:24,823 --> 01:20:37,523
+Yani şunu söylemek istiyorum. Mesela select ucu 0, 0 iken A artı B toplama işlemini yaparken Cary in 1 olduğunda bu B değişmiş gördünüz mü?
+
+366
+01:20:37,523 --> 01:21:03,123
+B komplement olmuş. Yani sadece buraya bir artı bir ekleme fonksiyonunu gerçekleştirmemiş bir de B'yi değiştirmiş. O zaman buradan şu çıkıyor B input lojiyin bir tane daha kontrol ucu olmalı. Carry in kontrol ucu bunun kombinasyonlarını değiştirecek gibi görünüyor. Görebildiniz mi ne demek istediğimi?
+
+367
+01:21:03,123 --> 01:21:07,903
+Şurası gözükmüyor mu acaba ekranınızda görünüyor mu?
+
+368
+01:21:12,884 --> 01:21:27,163
+B input loji'nin, Cary'in 0 ve 1 olduğu durumda değiştiğini görüyoruz. O yüzden burada böyle bir ekleme yapma ihtiyacı duyduk.
+
+369
+01:21:31,163 --> 01:21:36,064
+Bunu başka yerlerde görebiliyor muyum bakalım.
+
+370
+01:21:36,064 --> 01:21:54,943
+Evet yani A input loji içinde böyle bir carry in kontrolcuna ihtiyaç var mı diye baktığımda olmadığını görüyorum. Sadece B input lojiyin önünde böyle bir kontrol işareti yeterli olacak.
+
+371
+01:21:54,943 --> 01:22:13,943
+Peki şimdi bu devre için bir çözüm yapalım ve verdiğimiz tabloyu önce...
+
+372
+01:22:22,131 --> 01:22:25,451
+tarafayı kaydırmak istemiştim. Şuradan kaydırabiliyoruz.
+
+373
+01:22:36,692 --> 01:23:00,471
+Şimdi ben şöyle bir tablo hazırlayacağım. Az önceki çözümde gördüğümüz gibi select uçlarının ve X, Y, Y girişlerinin durumlarını gösteren bir tablo hazırlayacağım. Bunun üzerinden Carnomep'e geçmek daha kolay olacak. Beraber hazırlayalım sözünü ettiğimiz tabloyu.
+
+374
+01:23:00,471 --> 01:23:03,511
+S1
+
+375
+01:23:11,507 --> 01:23:29,507
+S1, S0, carry in eşit 0 ve carry in eşit 1 için bir tablo oluşturacağım.
+
+376
+01:23:31,091 --> 01:23:34,091
+tabloda
+
+377
+01:23:35,475 --> 01:23:55,675
+Bir de XI, YI ve burada F demişiz az önce G dediğimiz F output'unu yazacağım. XI, YI ve F output'unu yazacağım.
+
+378
+01:23:55,675 --> 01:24:04,815
+Select uçları 0, 0, 0, 1, 1, 0, 1, 1 olabilir.
+
+379
+01:24:04,815 --> 01:24:13,375
+Buna göre bu tabloyu birlikte dolduracağız.
+
+380
+01:24:13,495 --> 01:24:18,955
+Zaten yukarıda tanımlanan işlemleri gerçekleştirmek amacımız.
+
+381
+01:24:18,955 --> 01:24:20,516
+Bu yüzden
+
+382
+01:24:26,003 --> 01:24:42,403
+Şöyle yapalım. Önce select uçları 0, 0 olduğunda, cary'in 0 olduğunda A artı B işlemini gerçekleştirmek istiyorum. Dolayısıyla buraya X, Y, Y girişlerine A, Y ve B, Y girişleri gelecek diyorum.
+
+383
+01:24:42,403 --> 01:24:51,743
+Ve F çıkışı, F çıkışı dediğim çıkış A artı B'yi gösterecek. Toplama işlemi yapacağım.
+
+384
+01:24:51,743 --> 01:25:03,344
+Kereğin 1 olduğunda ise Xİ girişinden AI gelirken Yİ girişinden B'nin komplementi gelmeli diyorum.
+
+385
+01:25:04,743 --> 01:25:13,823
+Ve F çıkışı bu durumda AI artı yani tabii İ kullanmama gerek yok burada.
+
+386
+01:25:24,659 --> 01:25:30,719
+A artı B komplement artı 1 diyeceğim.
+
+387
+01:25:32,779 --> 01:25:49,959
+Select uçları 0, 1 olduğunda, 0, 1 olduğunda, yukarıdaki tabloda 0, 1 kombinasyonu için A komplement artı B işlemini yapsın istiyoruz.
+
+388
+01:25:49,959 --> 01:26:05,380
+Keri'nin sıfır iken o zaman buraya Aİ'nin komplementi Bİ diyorum ve işlem A komplement
+
+389
+01:26:44,787 --> 01:27:05,227
+A komplement artı B işlemi yapılacak. Cere in bir olduğunda ise hemen sağ tarafta görüyorum. A in'in komplementi B gelecek.
+
+390
+01:27:05,227 --> 01:27:19,567
+işlem olarak A komplement artı B artı 1 işlemi gerçekleşecek. Artı 1 işlemi tekrar söylüyorum kereğinin 1 olmasından geliyor.
+
+391
+01:27:21,007 --> 01:27:25,227
+Sonra 1 sıfır kombinasyonuna geçiyorum.
+
+392
+01:27:29,524 --> 01:27:31,524
+1,0 kombinasyonunda
+
+393
+01:27:38,387 --> 01:27:39,287
+IF EŞİT
+
+394
+01:27:44,243 --> 01:27:58,983
+A-1 işlemini yapmasını istiyorum. O zaman X-İ girişine A sayısı uygulanacak, A-İ girişi gelecek. Çıkarma işlemi için ne olması gerekiyordu?
+
+395
+01:28:00,664 --> 01:28:09,843
+Eksi 1 demek, Eksi 1 demek, B sayısını ne yaparsam Eksi 1 ile toplamış olurum.
+
+396
+01:28:09,843 --> 01:28:13,503
+Tuz komplement aldığımızda
+
+397
+01:28:13,503 --> 01:28:14,443
+Evet
+
+398
+01:28:14,443 --> 01:28:17,963
+Ama eksi bir olsun istiyorum
+
+399
+01:28:17,963 --> 01:28:19,143
+A eksi bir
+
+400
+01:28:19,143 --> 01:28:24,043
+Eksi bir sayısının hani Tuz komplementte nasıl ifade ediliyordu?
+
+401
+01:28:25,424 --> 01:28:27,223
+Ne demiştik? All ones
+
+402
+01:28:27,223 --> 01:28:29,083
+Hatırladık mı?
+
+403
+01:28:29,083 --> 01:28:33,503
+Bütün bitlerinin bir olması B kanalından gelen sayının
+
+404
+01:28:33,503 --> 01:28:34,883
+Eksi bir demek
+
+405
+01:28:34,883 --> 01:28:43,784
+Bunu da yaptığımda A-1 işlemini gerçekleştirmiş oluyorum.
+
+406
+01:28:45,503 --> 01:28:47,983
+Sağ tarafta peki ne diyeceğim?
+
+407
+01:28:50,743 --> 01:28:52,723
+A sayısı artı 1 diyor.
+
+408
+01:28:58,484 --> 01:29:20,423
+A artı bir işlemi için Yİ girişi ne olmalı? Buradan da sıfır gelmeli hocam tamamen. Tamamen sıfır gelmeli ki A artı bir olsun. Buradaki bir nereden geliyor? Cary'inden geliyor. Evet çok güzel teşekkür ederim.
+
+409
+01:29:20,423 --> 01:29:23,463
+ve son satıra geldim.
+
+410
+01:29:23,743 --> 01:29:31,243
+1-1 için A'nın komplementi işlemini sonuçta görmek istiyorum diyorum.
+
+411
+01:29:31,243 --> 01:29:34,823
+O zaman buraya A'yı komplement diyeceğim.
+
+412
+01:29:35,223 --> 01:29:36,723
+B kanalına ne diyeceğim?
+
+413
+01:29:37,223 --> 01:29:37,664
+Sıfır.
+
+414
+01:29:37,963 --> 01:29:40,503
+Çünkü sadece A'yı görmek istiyorum.
+
+415
+01:29:41,083 --> 01:29:45,783
+Toplama işlemin sonucu o zaman A komplementi verir.
+
+416
+01:29:45,783 --> 01:29:57,844
+Cary'in 1 olduğunda ise yine A komplement ile 0'ı toplayarak A artı 1 elde edebilirim.
+
+417
+01:29:57,844 --> 01:30:02,063
+Çünkü Cary'in 1 olduğu için.
+
+418
+01:30:02,643 --> 01:30:10,183
+Bu tabloyu bu şekilde oluşturduktan sonra bizim bunları bir KarnoMap'e taşımamız gerekir.
+
+419
+01:30:10,183 --> 01:30:29,863
+KarnoMap'de hem XI hem de YI loji için aslında sadece bir dakika sadece B input lojikte carry'inin bir parametre olduğunu biliyoruz.
+
+420
+01:30:29,863 --> 01:30:34,363
+O zaman şeye taşımamıza gerek yok aslında XI girişine.
+
+421
+01:30:34,363 --> 01:30:43,543
+İndirgenmiş fonksiyonları bulacağız. Bunu beraber yapalım mı yoksa siz yapar mısınız bundan sonrasını?
+
+422
+01:30:45,344 --> 01:30:45,903
+Çözümün.
+
+423
+01:30:48,903 --> 01:30:50,383
+Yapsak iyi olur bence hocam.
+
+424
+01:30:51,163 --> 01:30:58,484
+Yapalım mı? Peki. O zaman şöyle şuradan biraz yer açalım kendimize.
+
+425
+01:30:58,863 --> 01:31:02,844
+Hepsini yapmamıza gerek yok. En azından bir iki tanesini yapsak sonrasında biz devam ettiririz.
+
+426
+01:31:02,844 --> 01:31:14,523
+Bir iki tanesi zaten iki tane karno map çizeceğiz beraber onu da görelim. Şuraya bir space açmak istiyorum.
+
+427
+01:31:33,524 --> 01:31:34,923
+bizim için yeterli.
+
+428
+01:31:38,387 --> 01:31:45,868
+Bunları bir tabloya, karnamepe taşıyacağız.
+
+429
+01:31:48,948 --> 01:31:50,487
+Kalemi aldık.
+
+430
+01:31:54,195 --> 01:31:55,795
+A input logic için
+
+431
+01:32:07,891 --> 01:32:37,871
+A input logic için bir tablo oluşturalım. S1, S0 ve Aİ bitlerini gösteren. Buna carry in'i katmadım. Tekrar söylüyorum. Aslında B input logic de
+
+432
+01:32:37,555 --> 01:32:52,315
+CERİ'in S1, S0 ve BI'yi 4 değişken için YI çıkışını oluşturmam gerekiyor. Burada XI'yi 3 değişkenle yapacağım.
+
+433
+01:32:55,896 --> 01:33:02,355
+YI'yi ise 4 değişkenli oluşturmam gerekiyor. Şimdi yazalım değerlerimizi.
+
+434
+01:33:29,971 --> 01:33:39,432
+Select uçlarının 0-0 olması durumunda, şimdi şöyle birazcık yukarıya çıkıp az önce oluşturduğumuz tabloya bakacağız.
+
+435
+01:33:43,988 --> 01:34:11,567
+Select uçlarının 0, 0 olduğu durumda X, İ girişi için ne demiştik? A, İ olmalıdır demiştik. O zaman yani X, İ, A neyse o olacak, 0 olacak, 1 ise 1 olacak demek. Select uçlarının 0, 0 olduğu kombinasyonda. Select uçlarının 0, 1 olduğu kombinasyon için ise yine yukarıya çıkıyorum, bakıyorum.
+
+436
+01:34:11,567 --> 01:34:36,828
+Ne diyor bana? X, İ girişi A, İ'nin komplementi olmalı diyor. Hem sol tarafta kereğin 0 iken hem de sağ tarafta kereğin 1 iken. Tamam. O yüzden aynı şekilde ne dedik? A'nın komplementini alacağız. A sıfırsa 1 olacak. X, İ bir ise 0 olacak. Komplementini yazdık.
+
+437
+01:34:36,828 --> 01:34:44,727
+1, 0 olduğunda select uçları X, Y girişi A, Y olmalıdır diyor.
+
+438
+01:34:49,460 --> 01:35:17,300
+1, 0 olduğunda A neyse X, I, O olacak ve 1, 1 olduğu kombinasyonda çok karalamışım göremiyorsunuz hemen siliyorum. Pardon, eraser. Şurası şeyi de sildik altındakini de sildik.
+
+439
+01:35:27,283 --> 01:35:39,363
+A'nın komplementi orası. Bir daha andu yaparsam sanıyorum çok sildiğim için alttaki kaybolmuş. Şurası komplementiydi.
+
+440
+01:35:43,315 --> 01:35:44,115
+Evet.
+
+441
+01:35:49,043 --> 01:36:02,543
+hem Cary'in 0 olduğunda hem de Cary'in 1 olduğunda A'nın komplementini X, Y girişinde ya da çıkışında görmem gerekiyor.
+
+442
+01:36:03,163 --> 01:36:12,724
+1, 0 şeklinde tabloyu dolduruyorum. Daha sonra bunun için bir Carnot Map oluşturacağım.
+
+443
+01:36:12,724 --> 01:36:15,724
+Hemen alta çizelim Carnot Map'i de.
+
+444
+01:36:15,724 --> 01:36:22,483
+S1, S0, A, İ için
+
+445
+01:36:35,636 --> 01:36:41,235
+oluşturduğum doğruluk tablosundaki değerleri Karnomep'e taşıyacağım.
+
+446
+01:36:44,916 --> 01:36:52,927
+0110
+
+447
+01:36:57,140 --> 01:37:10,600
+İki tane terim çıkacak. X, i'yi yazarken. Evet siz söyleyin, nedir bunlar?
+
+448
+01:37:24,435 --> 01:37:26,215
+Evet, dinliyor musunuz?
+
+449
+01:37:26,955 --> 01:37:32,856
+Evet, chat'e yazmışlar. Bir dakika, chat'imi hemen görmem lazım.
+
+450
+01:37:36,195 --> 01:37:41,655
+Evet, XOR'u görmüşsünüz. Tebrik ederim. Peki, o zaman önce açık şeklini yazayım.
+
+451
+01:37:41,655 --> 01:37:59,355
+S0 değil AI artı S0 AI değil sonuçta bunları bunun bir XOR olduğunu görmüşsünüz.
+
+452
+01:37:59,355 --> 01:38:05,675
+Güzel. S0, XOR, Aİ şeklinde yazabiliriz.
+
+453
+01:38:07,175 --> 01:38:19,535
+Güzel. Bu X, İ girişi içinde benzer bir işlemi Y için de, Y, İ için de yapmamız gerekiyor. Yani B input logic için.
+
+454
+01:38:19,535 --> 01:38:38,535
+B-input logic'te de az önce konuştuğumuz gibi carry-in bir değişken olarak yer alıyor. Onu sağlayabilmek için de burada doğruluk tablosunu oluştururken dört tane değişkenli yazmanız gerekiyor.
+
+455
+01:38:38,535 --> 01:38:56,055
+Bunu sadece isterseniz sonucunu yazayım. Biraz uzunmuş, çok böyle sadeleşmiş bir ifade çıkmıyor ama siz de bunu doldurup işlem sonucunu böyle bulabiliyor musunuz diye kontrol edersiniz. Benzer mantık da yapacaksınız.
+
+456
+01:38:56,055 --> 01:39:00,295
+Yi çıkışı şöyle olacakmış.
+
+457
+01:39:00,295 --> 01:39:24,215
+Carry in complement S1 complement Bİ artı carry in complement S1, S0 complement artı
+
+458
+01:39:26,055 --> 01:39:48,415
+S1, complement S0, BI ve carry in S1 değil, BI değil şeklinde bulmuşum.
+
+459
+01:39:48,415 --> 01:39:55,415
+Bakalım siz de bunu bulabiliyor musunuz? Yukarıdaki tablodan önce doğruluk tablosunu yazmanız gerekiyor.
+
+460
+01:39:56,055 --> 01:40:05,615
+Arkasından da bu indirgenmiş fonksiyonu karnomet üzerinden bulmanızı bekliyorum.
+
+461
+01:40:06,615 --> 01:40:12,475
+Peki bu bir egzersiz. Bunu beraber belli bir noktaya kadar çözdük.
+
+462
+01:40:12,475 --> 01:40:15,115
+Şimdi burada bir başka örnek var.
+
+463
+01:40:17,495 --> 01:40:21,376
+Bu örnekte yine benzer formda aslına bakarsanız.
+
+464
+01:40:21,376 --> 01:40:32,355
+Design a 4-bit aritmetik circuit with two selection variables, S1 and S0, that generates the aritmetik operations in the following table.
+
+465
+01:40:33,415 --> 01:40:42,995
+Burada bir deney vermiş, draw the logic diagram for a typical single bit stage and the least significant bit stage.
+
+466
+01:40:42,995 --> 01:40:51,855
+En düşük anlamlı bit için bu yapının bir lojik diagramını çizin diyor.
+
+467
+01:40:52,316 --> 01:40:58,135
+Çünkü orada önemli bir nokta var dikkatinizi çekmek istediğimiz.
+
+468
+01:40:58,135 --> 01:41:13,915
+Şimdi az önce yaptığımız analize göre N-bit paralel adder'ın A ve B girişlerinin bağlı olduğu bloklarda acaba
+
+469
+01:41:14,452 --> 01:41:25,792
+A input logic, B input logic hangisine gerek var? Bu blokların kontrol işaretleri neler olmalıdır? Biraz bunu görmeye çalışalım.
+
+470
+01:41:28,792 --> 01:41:31,751
+Evet, ne diyorsunuz?
+
+471
+01:41:36,467 --> 01:41:41,687
+A input logic, B input logic iki tanesi de gerekiyor mu? İlk soru bu.
+
+472
+01:41:46,323 --> 01:42:09,323
+Cary in 0 ve Cary in 1 olduğunda A ve B'nin formlarında değişiklik oluyor. Mesela burada A var, burada A var. İkisi de aynı mı? Aynı. Burada A var, burada A var. Ama üçüncü satırda mesela A yok. Demek ki A input lojiye ihtiyacım olacak.
+
+473
+01:42:09,323 --> 01:42:12,604
+Buradan hemen bu sonucu elde ediyorum.
+
+474
+01:42:13,303 --> 01:42:18,544
+Peki birbirinden farklılaşıyor mu diye bakacak olursak?
+
+475
+01:42:18,544 --> 01:42:31,623
+Yani Kerry'in bir değişken olarak etkili oluyor mu A'nın ve B'nin değişik formlarında?
+
+476
+01:42:33,323 --> 01:42:34,203
+Hayır hocam.
+
+477
+01:42:34,563 --> 01:42:36,763
+Etkili olmuyor değil mi? Evet güzel.
+
+478
+01:42:39,323 --> 01:43:01,103
+Çünkü nedir? Yani burada A varsa orada da A var. B varsa B var. İşte efendim burada A var. Aynı A orada da var. Burada B sıfır. Burada da B sıfır. Üçüncü satıra bakıyorum. A sıfır olacak. Sağ tarafta da A sıfır olacak. Ve B, B komplement aynı şekilde işleme katılmış.
+
+479
+01:43:01,103 --> 01:43:19,083
+A input logic'te her iki tarafta da A var ve herhangi bir değişim yok. İki tarafta da B komplement var. O yüzden Kerry'nin burada bir şeyi değiştirmediğini gösteriyor bize.
+
+480
+01:43:19,083 --> 01:43:37,523
+Bu da daha basit hale getiriyor. Bunu yapabilirsiniz. Daha kolay çünkü. Çizimi zaten biliyorsunuz. Burada bir örnek daha var. Bu örneğin ise farklılığı şu. Bu örnekte sorunun veriliş şekli değişmiş arkadaşlar.
+
+481
+01:43:37,523 --> 01:43:54,984
+diyor ki, inputs XI and YI of each full adder in arithmetic circuit have digital logic specified by the boolean functions
+
+482
+01:43:54,984 --> 01:44:08,004
+where S is a selection variable, carry in is the input carry and AI, BI are input data for stage E demiş.
+
+483
+01:44:08,924 --> 01:44:22,404
+Soruda bize paralel header'ın önünde yer alan A input logic ve B input logic'in fonksiyonları verilmiş.
+
+484
+01:44:22,404 --> 01:44:33,103
+ve bu fonksiyonlara göre bu defa tersine bu fonksiyonlardan faydalanarak devrenin ne yaptığını bulun diyor bize.
+
+485
+01:44:34,204 --> 01:44:37,243
+Devrenin ne yaptığını bulun diyor. Hadi bakalım.
+
+486
+01:44:38,924 --> 01:44:48,644
+Ben şimdi bir tablo oluşturayım. Ona göre bu select input'u ve carry'in'in durumuna göre hangi işlemleri yaptığını yazalım.
+
+487
+01:44:48,643 --> 01:45:00,283
+B şıkkında ise şöyle bir şey sormuş. Determined the arithmetic operation performed for each of the four combinations of S and carry-in.
+
+488
+01:45:05,684 --> 01:45:27,563
+Zaten onu yazacağız. Öbüründe çizimini istiyormuş. Başka da bir şey yok bu soruda. Ben Kerry'ini yine az önce yaptığımız gibi yukarıya da yazabilirim. Ama bir select input'u gibi de yazabilirim. Tek bir tane select input'u var.
+
+489
+01:45:27,563 --> 01:45:34,383
+Kafanızı karıştırmayacaktır umuyorum. Cary in'i de bir değişken gibi şuraya yazayım dedim.
+
+490
+01:45:34,383 --> 01:45:49,203
+Buna göre X in'in ve Y in'in alacağı değerleri daha sonra da işte F çıkışı dediğimiz çıkış zaten ne yapacak? X in artı Y in artı Cary in yapacak.
+
+491
+01:45:49,204 --> 01:46:04,044
+Bunu yazalım beraber. Bu tabloya sol tarafta kombinasyonları yerleştiriyorum. Bu kombinasyonlara göre X, Y'nin alacağı değerleri yazmam gerekiyor.
+
+492
+01:46:04,043 --> 01:46:19,623
+X, Y girişi için demiş ki A, Y'dir demiş. Doğrudan zaten tüm şeylerde bu A, Y olacak diyor.
+
+493
+01:46:21,663 --> 01:46:32,623
+Sadece Y girişi select ve carry in'e bağlı olarak değişiyor ve bunun aldığı değerleri bizim buraya yazmamız gerekiyor.
+
+494
+01:46:32,623 --> 01:46:54,103
+Hadi bakalım o zaman bana söyler misiniz? Yİ, select ucu 0, carry in 0 iken yukarıdaki fonksiyonda bu değerleri yerine yazarak select 0, carry in 0 ise eğer, carry in'in komplementini aldım. 1 oldu. Ne gelecekmiş buraya arkadaşlar?
+
+495
+01:46:55,363 --> 01:46:55,823
+Bİ
+
+496
+01:46:55,823 --> 01:46:57,703
+Bİ, güzel.
+
+497
+01:47:01,427 --> 01:47:20,547
+ve çıkışta ben ne göreceğim o zaman? F çıkışı A artı B diyeceğim. Peki geçtik bir sonraki satıra. Select ucu 0, carry in 1 iken burası ne olur?
+
+498
+01:47:22,739 --> 01:47:23,939
+Yİ ne olur?
+
+499
+01:47:25,700 --> 01:47:27,499
+Selekt ucu sıfır.
+
+500
+01:47:28,799 --> 01:47:30,379
+Evet sıfır olur. Güzel.
+
+501
+01:47:30,739 --> 01:47:32,019
+F fonksiyonu ne olur?
+
+502
+01:47:35,475 --> 01:47:39,196
+A artı B. Pardon, A artı 1.
+
+503
+01:47:39,815 --> 01:47:57,015
+Süper. Unutmadınız. Aferin size. Cary'in'in 1 olduğunu biliyorsunuz. Bu toplamı yazarken Cary'ini mutlaka oraya yazmam gerekiyor. Güzel, bravo. Devam edelim. Select ucu 1 iken Cary'in ucu 0 ise?
+
+504
+01:48:03,636 --> 01:48:04,355
+Ne olur?
+
+505
+01:48:12,307 --> 01:48:20,627
+Select ucu 1, CERI'in ucu 0'sa ne olur? Duyamadım.
+
+506
+01:48:20,967 --> 01:48:23,847
+BI'nin değdi artı BI'den 1.
+
+507
+01:48:24,667 --> 01:48:39,527
+Evet, süper. Çok teşekkür ediyorum. Güzel. 1 geldi. Neden? Çünkü BI komplement artı B işleminin sonucu 1'dir. Güzel.
+
+508
+01:48:39,527 --> 01:48:50,668
+Peki Y girişinde hani all ones varsa ne demekti? Şimdi onu düşünün all ones dediğimiz durumda ne işlem yapıyordu devre?
+
+509
+01:48:51,187 --> 01:48:52,168
+Çıkartma işlemi
+
+510
+01:48:52,168 --> 01:49:09,367
+Çıkartma yani A-1, A-1 demekti o zaman burası A-1 olacak. B kanalından A-1 sayısı gelmiş ve toplama işlemine koyarsam bu B sayısını A-1 olur yaptığım
+
+511
+01:49:09,367 --> 01:49:11,387
+aritmetik işlem.
+
+512
+01:49:12,927 --> 01:49:14,527
+Şimdi son satırdayız.
+
+513
+01:49:14,527 --> 01:49:19,267
+Selektucu bir kere in birken ne yapar diye bakıyoruz.
+
+514
+01:49:21,967 --> 01:49:22,887
+B in'in değil.
+
+515
+01:49:26,771 --> 01:49:44,771
+Burası B değil gelecek. Peki F fonksiyonu için ne diyeceğim? A artı B değil artı 1 yani nedir? A eksi B işlemi, çıkarma işlemi gerçekleştiriyorum diyebilirim.
+
+516
+01:49:44,771 --> 01:50:01,331
+Evet bir de tersine mühendislik dediğimiz işlemi görmüş olduk. Bize fonksiyon verildi. Biz buradan tabloyu ve hangi fonksiyonları gerçekleştirdiğini yazmış olduk. Peki.
+
+517
+01:50:10,131 --> 01:50:17,351
+Evet, örneklerim bu kadar bu bölümle ilgili. Bana sormak istediğiniz herhangi bir şey var mı?
+
+518
+01:50:19,751 --> 01:50:31,152
+Evet, bu örnekler konuyu anlamak açısından yeterlidir diye düşünüyorum. Bir tanesini de zaten size bıraktım. Çözeceksiniz onu. Daha kolay.
+
+519
+01:50:31,152 --> 01:50:33,451
+Evet.
+
+520
+01:50:36,659 --> 01:50:51,759
+Şu ilk çözdüğümüz blue'un aslında bir çizimini yapmanızı istesem. Burada o noktayı atladık. Birinci çözdüğümüz soru da arkadaşlar.
+
+521
+01:50:55,340 --> 01:51:00,299
+En bir paralel eder kullanacağımızı söylemiştik. Kalem rengi şöyle olsun.
+
+522
+01:51:00,299 --> 01:51:10,880
+ve B input lojiğinin olduğu bölümde carry in ucunun bir değişken olarak B input lojiğine bağlanacağını söyledik.
+
+523
+01:51:10,880 --> 01:51:30,139
+Buradaki carry in, acaba nasıl söylesek, nereden geliyor? Her blok için ayrı full header'dan mı alınacak? Oradaki yapıyı biraz açıklamam gerektiğini düşünüyorum.
+
+524
+01:51:30,299 --> 01:51:34,759
+Onunla ilgili şuraya küçük bir çizim yapalım
+
+525
+01:51:38,292 --> 01:51:40,292
+Ve
+
+526
+01:51:55,731 --> 01:51:57,131
+Biraz yer açtım.
+
+527
+01:52:06,515 --> 01:52:16,335
+Şimdi biz bu toplayıcı devreyi, paralel adder'ı full adder'larla oluşturuyoruz biliyorsunuz.
+
+528
+01:52:17,375 --> 01:52:24,196
+Çizdiğim full adder en düşük anlamlı bitten başlayarak çizilmiş olsun.
+
+529
+01:52:24,196 --> 01:52:30,356
+Ve full adder'ların X, Y, Y, X0, Y0 girişi var.
+
+530
+01:52:30,356 --> 01:52:36,915
+Bunların önüne yerleştirilmiş A input logic ve B input logic var.
+
+531
+01:52:48,180 --> 01:52:57,480
+Şimdi bunlar her biri işte bir şey pardon en olmaz burada yanlış yazdık.
+
+532
+01:53:00,916 --> 01:53:10,916
+bir bitlik sayı üzerinden geliyor. Şurası bir
+
+533
+01:53:16,435 --> 01:53:38,435
+A0 sayısı. Buradan B0 geldi. Bunu kontrol eden, B input lojiyi kontrol eden select 0, select 1 ucu var. Bir de, bir de bu bloğun, şöyle çizelim, carry in girişi var dedik. Carry in de bir kontrol işareti olarak kullanılacak dedik.
+
+534
+01:53:38,435 --> 01:53:55,715
+Aynı S0 ve S1 bitleri yukarıda da A input logic için kontrol ucu ama bu carry in ucu sadece B input logic'te var. Şurada gördüğümüz carry in. Nasıl bir carry in yazdıysak okunmuyor.
+
+535
+01:53:55,715 --> 01:54:04,695
+Evet şimdi bu carry in en düşük anlamlı bite dışarıdan bağlanan carry in girişi aslında.
+
+536
+01:54:04,695 --> 01:54:10,296
+Yani bunu biz şu bloğa gelen carry in'den alıyoruz.
+
+537
+01:54:13,055 --> 01:54:19,515
+Ve tüm B input logiklerin önüne kontrol işareti olarak kullanıyoruz.
+
+538
+01:54:19,955 --> 01:54:25,516
+Bunun ürettiği carry out diğer bloğun carry in girişine bağlanıyor.
+
+539
+01:54:25,715 --> 01:54:50,055
+Ama bunlar kontrol için kullanılmıyor. Yani benim F1 çıkışını üreten Full Adder'ımın önünde de iki tane kontrol devresi var. A ve B input logic için. B input logic için kullanılan carry in kontrol işareti en düşük anlamlı bite dışarıdan gelen carry in girişi.
+
+540
+01:54:50,055 --> 01:55:15,535
+Yani şuradaki kereğinle karışmasın ona dikkat bu A1 sayısını bu B1 sayısını giriş olarak alıyor A1, B1 bunların kontrol girişleri S0 ve S1 yine yukarıda kullandığım kontrol işaretleri ve bunlar aşağıdaki blok içinde kontrol girişi olarak kullanılıyor.
+
+541
+01:55:15,535 --> 01:55:31,615
+Vurgulamak istediğim nokta B input logic'te kullanılan carry-in şu gördüğümüz carry-in arkadaşlar en düşük anlamlı bite dışarıdan bağlanan carry-in girişi.
+
+542
+01:55:31,615 --> 01:55:38,995
+Bunun devrenin içerisinde yer alan elde bitleriyle hiçbir ilgisi yok.
+
+543
+01:55:39,475 --> 01:55:48,695
+Devrenin içinde oluşan elde bitleri klasik uygulamada olduğu gibi birinin carry out'u diğerinin carry in'ine bağlanıyor.
+
+544
+01:55:48,695 --> 01:55:59,495
+Ve sistem bu şekilde bir zincir yapı içerisinde en düşük anlamlı bitten en yüksek anlamlı bite doğru çalışıyor.
+
+545
+01:55:59,495 --> 01:56:12,755
+Evet bu bölüm aritmetik devre tasarımı kısmını bitirdim. Bir 10 dakika ara vereceğim ondan sonra logic blog tasarımına geçeceğiz.
+
+546
+01:56:12,755 --> 01:56:20,236
+Logic blog ile ilgili ve shift blog ile ilgili çalışma mantığını anlatacağım.
+
+547
+01:56:21,736 --> 01:56:22,915
+Evet 10 dakika ara.
+
+548
+02:09:02,868 --> 02:09:07,567
+Evet, merhaba arkadaşlar. Derse başlıyorum. Hazır mıyız?
+
+549
+02:09:08,707 --> 02:09:10,067
+Merhabalar hocam. Hazırız.
+
+550
+02:09:11,047 --> 02:09:16,687
+Evet, kimler hazır bakayım? Şu an 54 kişiye düşmüş sınıf mevcudu. Kaç kişi bilgisayarın başında?
+
+551
+02:09:19,587 --> 02:09:22,907
+O bilgisayarın başında olmayan arkadaşlara çok kızıyorum.
+
+552
+02:09:22,907 --> 02:09:45,427
+Evet güzel şu an yarıyı geçtik çok iyi sevgili arkadaşlar şimdi aritmetik devre tasarımını yaptık geldik lojik blogun tasarımına
+
+553
+02:09:45,427 --> 02:09:49,467
+Logic Block tasarımı için
+
+554
+02:09:53,747 --> 02:10:07,967
+Slide'dan biraz konuşalım. Çok kolay, logic block tasarımı. Az önce gördüğümüz kontrol işaretleri burada da var. İşlem, operation select diyelim bunlara.
+
+555
+02:10:14,707 --> 02:10:28,707
+İşlem seçme uçları tabloda gördüğümüz şekliyle AND, OR, EXOR ve NOT lojik işlemlerini seçmek için kullanılıyor.
+
+556
+02:10:28,707 --> 02:10:40,787
+Bu işlemi gerçekleştirmek için dörtten bire MUX ve ilgili lojik işlem blokları yeterli.
+
+557
+02:10:40,787 --> 02:10:48,428
+Yani iki girişli bir AND kapısı A0, B0 bitleri arasında mesela işlem yapacak.
+
+558
+02:10:49,248 --> 02:10:59,587
+İki girişli bir OR kapısı, bir XOR ve NAT işlemi sadece A inputu üzerinde gerçekleştiriliyor.
+
+559
+02:10:59,587 --> 02:11:08,947
+Ve G çıkışında burada gördüğümüz şekliyle tanımlı lojik işlemler gerçekleştiriliyor.
+
+560
+02:11:08,947 --> 02:11:22,068
+Eğer ben 8 bitlik bir yapı tasarlayacaksam neye ihtiyacım olacak o zaman? Kaç tane multiplexer kullanmalıyım?
+
+561
+02:11:27,188 --> 02:11:33,847
+8 bitlik 2 sayı arasında işlem yapıyorsam
+
+562
+02:11:39,699 --> 02:11:45,819
+Bilgisayarın başında olan arkadaşlarım. Dört tane mi oluyor hocam? Sekiz bit dedim.
+
+563
+02:11:54,707 --> 02:12:16,308
+4'den 1'e multiplexer, 8 bit için 8 çıkış olacak. 8 tane MUX olması lazım. Ve her bir MUX'un önünde de bu gördüğümüz kapılardan olması gerekir değil mi? 8 bit, 2 8 bitlik sayı arasında işlem yapıyorsam bunların sayısı 8 olacak.
+
+564
+02:12:16,308 --> 02:12:24,287
+Peki, şimdi biz aritmetik devreyi tasarladık, logic bloğu tasarladık, şimdi bunları birleştirmeye geldi sıra
+
+565
+02:12:24,287 --> 02:12:30,548
+One stage of arithmetic circuit demiş, bu ne demek?
+
+566
+02:12:32,127 --> 02:12:40,568
+A sayısının i'ninci biti ile B sayısının i'ninci biti için işlem yapan blok demek
+
+567
+02:12:40,568 --> 02:13:00,008
+ve one stage of logic circuit demiş. Bu da yine bir bit için, aynı ilgili bitler için burada gördüğümüz şekliyle Aİ ve Bİ girişlerini input olarak almış.
+
+568
+02:13:00,007 --> 02:13:19,167
+Yukarıdaki aritmetik devrenin iki tane select ucu var. Aritmetik işlemleri seçmek için ve bir de carry in girişi var. Bu üç girişle sekiz farklı aritmetik işlem tanımlayabiliyoruz demiştik.
+
+569
+02:13:19,167 --> 02:13:39,527
+Lojik işlem bloğunun kontrol girişleri olan Operation Select uçları S0, S1'i sırasıyla şeyden almış, yukarıdaki S0 ve carry in'den almış ve böylece bir lojik blok oluşturmuş.
+
+570
+02:13:39,527 --> 02:13:59,648
+Her iki bloğun sonucu yani aritmetik sörküt için üretilen output ile lojik operasyonları yapan bloğun outputu 2'den 1'e multiplexer ile hangisinin seçileceğine karar verilen bir yapıda kullanılmış.
+
+571
+02:13:59,647 --> 02:14:08,648
+Burada selection işlemi S2 dediğimiz uç ile mod select diyelim buna.
+
+572
+02:14:10,787 --> 02:14:20,648
+Aritmetik devreden mi, lojik devreden mi çıkış alınacağına karar veren bir yüksek anlamlı select ucu kullanılmış.
+
+573
+02:14:20,648 --> 02:14:33,008
+ve böylece aritmetik, lojik, unit dediğimiz ALU devresi oluşturulmuş.
+
+574
+02:14:33,668 --> 02:14:37,187
+Aritmetik blok ayrı çalışıyor, lojik blok ayrı çalışıyor.
+
+575
+02:14:37,288 --> 02:14:49,987
+Her ikisi de bir paralel aynı anda gelen A ve B sayılar için sonuç üretiyor ama ben modselect ucuna göre bunlardan hangisinin output'u oluşturacağına karar veriyorum.
+
+576
+02:14:50,648 --> 02:15:05,468
+Ve buna göre bir tablo oluşturmuş burada. İşte bizim ilk select 2 yüksek anlamlı mod select ucunun sıfır olduğu durumda aritmetik işlemlerimiz yer alıyordu.
+
+577
+02:15:05,468 --> 02:15:19,468
+Bu aritmetik işlemler 8 tane farklı aritmetik işlem var. Carry-in de bu operation'ları seçen bir uç olarak burada operation select ucu olarak kullanılmış.
+
+578
+02:15:20,648 --> 02:15:42,028
+Tablonun alt tarafında S2 mod select ucu 1 olduğunda ise lojik işlemler için S0 ve carry in'i sadece kullanarak and or, x or ve not işlemlerinin seçimi gerçekleşecek demiş.
+
+579
+02:15:42,027 --> 02:15:54,047
+Bu tasarladığımız ya da tasarlamak istediğimiz aritmetik lojik unitin bloğunu ya da işte fonksiyonlarını gösteriyor bize.
+
+580
+02:15:56,051 --> 02:16:12,091
+Şimdi geldik shift unit'e. Yani aritmetik, lojik işlemler tamam ama bizim bir de shift operation'ları için bir devreye ihtiyacımız var.
+
+581
+02:16:12,091 --> 02:16:22,951
+Shift işlemleri için bir kere biz daha önce bir Shift Register oluşturduk.
+
+582
+02:16:22,951 --> 02:16:34,232
+İşte bir DTP flip-flop kullanarak birinin output'u diğerinin input'una gelecek şekilde senkron bir Shift Register oluşturduk.
+
+583
+02:16:34,311 --> 02:16:40,851
+Ama bizim burada yapmak istediğimiz işlemler kombinasyonel devre ile tasarlamak istiyoruz.
+
+584
+02:16:40,851 --> 02:16:42,711
+Yani tasarım
+
+585
+02:16:47,156 --> 02:16:49,156
+COMBINATIONAL CIRCUIT ile
+
+586
+02:16:55,443 --> 02:17:04,023
+Bu kombinasyonel devre ile bunu tasarlamak demek hiç fliflop kullanmayacağız anlamına geliyor.
+
+587
+02:17:04,023 --> 02:17:10,983
+Ve tasarımı kombinasyonel devre elemanlarıyla gerçekleştirirken lütfen dikkat.
+
+588
+02:17:11,043 --> 02:17:19,343
+Aslında yapmak istediğimiz şey şu. Bir bas var yukarıda. B bası olsun.
+
+589
+02:17:19,343 --> 02:17:32,063
+Bu B bası 4 bitlik bir bas yapısı. Basın üzerine yerleştireceğim bir shift unit ile bu işlemleri gerçekleştirmek istiyorum.
+
+590
+02:17:32,203 --> 02:17:40,463
+Ve en basit hali ile bir multiplexer benim yapmak istediğim işi gerçekleştirebilir.
+
+591
+02:17:40,464 --> 02:17:56,683
+Burada 4'den 1'e multiplexer kullanılmış fakat 4'den 1'e multiplexer'ın sadece 3 tane girişi gösterilmiş ve input olarak kullanılmış.
+
+592
+02:17:56,683 --> 02:18:12,283
+Kullandığımız multiplexerlar için tekrar söylüyorum nedir bunlar? 4'den 1'e MUX. 2 tane select ucu var hepsinin ve aynı kontrol uçlarıyla kontrol ediliyor.
+
+593
+02:18:12,283 --> 02:18:34,883
+Bu select uçları, select uçları 0, 0 olduğunda ne yapıyor devre? H çıkışı, multiplexerların çıkışlarında ne görürsünüz? Girişte ne varsa onu görürsünüz değil mi? No change.
+
+594
+02:18:40,051 --> 02:18:53,512
+0-1 olduğunda, 0-1 olduğunda, yüksek anlamlı yani şey 1'i seçtiğimizde 1 numaralı girişlerine bakacağız. 1 numaralı girişler bize ne diyor?
+
+595
+02:18:54,972 --> 02:19:01,972
+Mesela H2 çıkışını oluşturan girişe bakıyorum. Diyor ki bu B3'den input al diyor.
+
+596
+02:19:01,972 --> 02:19:11,551
+O zaman B3'ü aslında H2'ye doğru ne yapıyorum? Sağa doğru shift ediyorum değil mi?
+
+597
+02:19:13,831 --> 02:19:15,531
+Sağa doğru shift işlemi var.
+
+598
+02:19:16,952 --> 02:19:24,751
+Yüksek anlamlı bit B3, B2, B1, B0.
+
+599
+02:19:24,752 --> 02:19:42,211
+Bunu ne yapıyor? B3'ü H2'ye göndermek demek. Sağa doğru bir bit shift etmek anlamına geliyor. Mesela H1'e bakıyorum. H1 bunun bir numaralı girişi nereden gelmiş? B2'den gelmiş.
+
+600
+02:19:42,211 --> 02:19:49,191
+Buradan bunun bir sağ shift işlemi olduğunu söyleyebiliyorum.
+
+601
+02:19:50,191 --> 02:19:54,712
+Select uçları 1.0 olduğunda ne yapar diye bakacak olursak.
+
+602
+02:19:55,712 --> 02:19:59,772
+1.0 olduğunda 2 numaralı girişlere bakacağız bu defa.
+
+603
+02:19:59,772 --> 02:20:13,732
+2 numaralı girişlerde H3 bitini oluşturan 2 numaralı giriş B2'den geliyor.
+
+604
+02:20:18,111 --> 02:20:22,151
+H2'yi oluşturan 2 numaralı giriş B1'den geliyor.
+
+605
+02:20:22,151 --> 02:20:35,251
+Dolayısıyla yön nedir? Sola doğru bir shift işlemi olduğunu söylüyor bize.
+
+606
+02:20:35,251 --> 02:20:51,152
+Zaten multiplexer'lerin 3 girişi kullanılmıştı. No change, shift right ve shift left şeklinde 3 farklı işlem yapabildiğini görüyoruz.
+
+607
+02:20:51,151 --> 02:21:14,971
+Bu shift unit'in burada verilmiş olan shift operation'larını gerçekleştiren bir kombinasyonel devre gördük. Yani clock'la bağımlı çalışmayan lojik kapılarla doğrudan kapılarla oluşturulmuş bir blok tasarımı görmüş olduk.
+
+608
+02:21:14,971 --> 02:21:15,791
+Hocam.
+
+609
+02:21:16,451 --> 02:21:17,031
+Buyurun.
+
+610
+02:21:17,031 --> 02:21:25,912
+Bu shift register sadece bir tane mi kaydırabiliyor? Bir seferde üç sefer kaydırmasını isteyebiliyor muyuz? Şu anki yapıda herhalde olmuyor.
+
+611
+02:21:26,171 --> 02:21:37,011
+Hayır, bunda olmuyor. Ne yapman gerekir? Arka arkaya birkaç defa bu bluğu tekrar tekrar çalıştırarak yapabilirsiniz. Bu tasarlanan yapı sadece bir bit kaydırabiliyor.
+
+612
+02:21:37,011 --> 02:21:38,831
+Böyle mi oluyor bu?
+
+613
+02:21:38,831 --> 02:21:50,891
+Hayır şimdi bir başka örnek görelim. Bakın bir sonraki tablo bize 4 bit barrel shifter dediğimiz bir yapı gösteriyor.
+
+614
+02:21:50,891 --> 02:22:08,331
+İki tane select inputumuz var. Bu select inputları 0-0 iken yine no rotation or no change dediğimiz işlem. Y3'de D3'ü görüyoruz. Y2'de D2'yi görüyoruz gibi.
+
+615
+02:22:10,036 --> 02:22:29,636
+Fakat diğer kombinasyonlarında, select uçlarının diğer kombinasyonlarında 0, 1, 1, 0, 1, 1 gibi değerler aldığında sırasıyla rotate one position, rotate two position and three position şeklinde bir rotate işlemi tanımlamış.
+
+616
+02:22:29,636 --> 02:22:48,036
+Şöyle görelim D3, D2, D1, D0. Rotate one position dediğinde D3'ün yerine D2'yi almış bir bit. Şu şekilde bir kaydırma ya da rotate işlemi gerçekleştirmiş.
+
+617
+02:22:48,036 --> 02:23:03,155
+Yani D3'ün yerine D2 geliyor ya da Y3'e D2 geliyor ve Y0'a dikkat en düşük anlamlı output'a Y0'a D3 geliyor rotate işleminden dolayı
+
+618
+02:23:03,155 --> 02:23:19,915
+Rotate left one position. Rotate left two position dediği durumda ikiyi kaydırıyor. İki bit kaydırıyor veya rotate left three position dediğinde üç bit kaydırıyor.
+
+619
+02:23:19,915 --> 02:23:43,295
+Zaten 4 bit kaydırsa aynı şeyi no rotation olmuş olacak. Bu tablo 4 bit için yeterli görünüyor. Bunun adı barrel shifter diye geçiyor. Neden? İşte birden fazla kaydırma işlemini yaptığı için az önce arkadaşımızın sorduğu işlem gibi.
+
+620
+02:23:43,295 --> 02:23:48,255
+Bu da shift unit'in farklı çözümlerini bize gösteriyor.
+
+621
+02:23:48,355 --> 02:23:53,275
+Barrel shifter'ın yine multiplexer ile nasıl çözüldüğünü burada görebilirsiniz.
+
+622
+02:23:53,875 --> 02:24:05,355
+Yani şu tabloyu oluşturduktan sonra arkadaşlar outputta hangi inputun bağlanacağını gösteriyor bu.
+
+623
+02:24:05,355 --> 02:24:10,495
+Bunu oluşturduktan sonra bunu multiplexer'larla tasarlamak çok kolay değil mi?
+
+624
+02:24:10,495 --> 02:24:20,595
+Burada gördüğümüz multiplexer'lar 4'den 1'e multiplexer bunların hepsi.
+
+625
+02:24:20,595 --> 02:24:28,495
+4 tane input'u var, 2 tane select ucu var ve 1 tane output'u var gördüğünüz üzere.
+
+626
+02:24:30,196 --> 02:24:39,616
+Bu 4 bitlik barrel shifter dediğimiz yapıyı oluşturmak için bu devre elemanından faydalanıp bunu tasarlayabilirsiniz.
+
+627
+02:24:40,495 --> 02:24:42,975
+Evet
+
+628
+02:24:42,975 --> 02:24:51,195
+Bu rotate işlemi olduğu için herhangi bir serial input kanalı yok bunun
+
+629
+02:24:51,195 --> 02:24:53,675
+Şimdi geldik
+
+630
+02:24:53,675 --> 02:25:00,555
+Genel bir devre şeması burada verilmiş
+
+631
+02:25:00,555 --> 02:25:03,255
+Şöyle küçültelim bir ekrana sığsın
+
+632
+02:25:03,255 --> 02:25:04,135
+Evet
+
+633
+02:25:04,135 --> 02:25:09,775
+Şimdi biz bu haftaki dersin ilk giriş slide'ında
+
+634
+02:25:09,775 --> 02:25:26,635
+Burada bir yapı tanımladık. Bir register filemız var. Bir de fonksiyon unitimiz var. Bu yapının genel kombinasyonuna diyelim. Ne dedik? Data path unit dedik.
+
+635
+02:25:32,371 --> 02:25:38,871
+Amacımız, bu haftaki amacımız bu yapıyı tasarlamak, datapath uniti oluşturmak.
+
+636
+02:25:40,851 --> 02:25:56,231
+Fakat çok genelleştirilmiş bir formda gösteriyor. Çünkü register file için demiş ki bu register file'ın içerisinde 2 üzeri m çarpı n register var diyor.
+
+637
+02:25:56,231 --> 02:26:08,111
+Yani bunun içerisinde eğer 8 tane register varsa 2 üzeri 3 çarpı ve her biri 16 bitlik registerlerse şöyle yazacak
+
+638
+02:26:08,111 --> 02:26:11,931
+Bu ne demek? Böyle bir register file var diyor mesela
+
+639
+02:26:11,931 --> 02:26:18,671
+Bu ne demek? İçerisinde 8 tane register var
+
+640
+02:26:18,671 --> 02:26:23,371
+Her biri 16 bitlik registerler demek
+
+641
+02:26:23,371 --> 02:26:49,831
+Tamam. Ve buradaki M dediğimiz işte şuradaki örnek için bakacak olursak 3'ü gösteriyor bize. Bunu neden böyle gösteriyor? Çünkü diyor ki eğer bunun içerisinde 8 tane register varsa benim 3 tane address select yani register select ucum vardır diyor.
+
+642
+02:26:49,831 --> 02:27:06,331
+ve bu üç tane hani multiplexer üzerinden hangi register'ın işleme katılacağını seçiyorduk ya bu multiplexer'ların select uçlarının sayısının 3 bit ya da M bit olduğunu söylüyor bize.
+
+643
+02:27:06,331 --> 02:27:20,272
+Register file'da biz ilgili A adresi ve B adresini seçtiğimizde A data ve B data dediğimiz data bas üzerinde oluşuyor.
+
+644
+02:27:21,711 --> 02:27:26,331
+Seçtiğimiz ilgili register'ın kontenti bu basa aktarılıyor.
+
+645
+02:27:26,331 --> 02:27:30,232
+N bit yani nedir varsayalım ki 16 bit.
+
+646
+02:27:30,232 --> 02:27:40,791
+ve B bası yine daha önce konuştuğumuz gibi sabit bir sayı ile register arasında seçme işlemi yapıyor.
+
+647
+02:27:40,791 --> 02:27:46,011
+Bu 2'den 1'e MUX.
+
+648
+02:27:48,051 --> 02:27:52,172
+B select dediğim MUX bir bitlik bir select ucu.
+
+649
+02:27:52,592 --> 02:27:57,592
+Bu multiplexer'ın iki kanal arasında birini seçmesini sağlıyor.
+
+650
+02:27:57,592 --> 02:28:14,491
+Yani B datası register'dan mı alınacak yoksa sabit sayı girişi mi yapılacak bunu belirliyor ve output'u aşağıda gördüğümüz fonksiyon unit dediğimiz birime input olarak bağlanıyor.
+
+651
+02:28:14,491 --> 02:28:29,171
+Fonksiyon unit dediğimiz blok bizim az önce tasarladığımız aritmetik, lojik, unit ve shift unit dediğimiz birimlerden oluşuyor.
+
+652
+02:28:29,172 --> 02:28:50,112
+ve seçtiğim A ve B sayısı arasında n bitlik iki sayı arasında belirlediğim fonksiyon select ile belirlediğim aritmetik, lojik ya da shift işlemini gerçekleştiriyor ve bir F output'u üretiyor bana n bitlik bir sonuç üretiyor.
+
+653
+02:28:50,111 --> 02:29:07,871
+ve tabii aynı anda durum bitlerini de güncelliyor yani oluşturuyor. Taşma var mı? Carry var mı? İşlem sonucu sıfır mı? İşlem sonucu negatif mi? Bunların hepsini bu bitler bize gösteriyor. Neye göre? F outputuna göre.
+
+654
+02:29:07,871 --> 02:29:22,871
+ve fonksiyon unitin işlem sonucu yine en aşağıda gördüğümüz bir D-multiplexer'ı bu da yine 2'den 1'e multiplexer.
+
+655
+02:29:22,871 --> 02:29:26,732
+fonksiyon unit ile
+
+656
+02:29:27,188 --> 02:29:55,847
+Data in arasında seçme işlemi yapıyor. İki kanal arasında seçme işlemi yapmak için bir bitlik bir select ucu yeterli. Bu işlemin sonucu, multiplexer D'nin çıkışı. Şekilde gördüğümüz gibi yukarıya bloom, bu tasarlanan devrenin register file'ına input olarak bağlanıyor.
+
+657
+02:29:55,847 --> 02:30:21,088
+Nerede? Görelim. Şurada gördüğümüz uç. D-data dediği destination data demek. Bütün registerlerin inputuna bağlanıyor ama hangi register'a işlem sonucunun yazılacağı destination address, D-address dediğim adres ile seçiliyor.
+
+658
+02:30:21,087 --> 02:30:36,247
+ve bu adres seçme ucu Mbit'den oluşuyor. Az önce konuştuğumuz gibi internal register'ların sayısıyla ilişkili bir kontrol ucu sayısına ihtiyacımız var. O da Mbit olacak.
+
+659
+02:30:36,247 --> 02:30:50,027
+Bu çok genelleştirilmiş formda bu yapıyı işte Mbit, Nbit üzerinden anlatmış. Aşağıda bunun özelleşmiş bir formunu göreceğiz.
+
+660
+02:30:50,027 --> 02:31:08,607
+diyor ki register file'ım 8 tane register'dan oluşsun. Her biri n-bit olsun. Bu durumda yapıyı çizecek olursak 3 tane A adres select ucuna ihtiyacım var.
+
+661
+02:31:08,607 --> 02:31:22,768
+3 tane B adres yani 2 tane operanda ihtiyacım var. Bu operandları işleme katılacak olan sayıları bu 3 bit ile seçiyorum.
+
+662
+02:31:22,767 --> 02:31:29,147
+ve bunları bir control word dediğim
+
+663
+02:31:33,652 --> 02:31:48,931
+Control word dediğim bir control word'ün ilgili bitlerine yerleştiriyorum. Bakın burada destination adresi seçmek için kullanılan 3 bit, control word'ün en yüksek anlamlı 3 biti.
+
+664
+02:31:49,771 --> 02:32:02,891
+Destination adres, 3 bit. 15, 14, 13 numaralı bitler diyor. Sonra A adres, 3 bit.
+
+665
+02:32:03,652 --> 02:32:10,911
+Sonra yani onlarda 12, 11, 10 numaralı bitleri control world'ün
+
+666
+02:32:10,911 --> 02:32:15,771
+19, 8, 7, B adresini oluşturuyor diyor
+
+667
+02:32:15,771 --> 02:32:19,052
+9, 8, 7, B adresini oluşturuyor diyor
+
+668
+02:32:19,052 --> 02:32:20,951
+B adres
+
+669
+02:32:20,951 --> 02:32:23,652
+3 bit
+
+670
+02:32:23,652 --> 02:32:28,512
+Evet sonra
+
+671
+02:32:28,512 --> 02:32:31,311
+7, 6
+
+672
+02:32:31,311 --> 02:32:33,152
+M, B biti
+
+673
+02:32:33,152 --> 02:32:51,152
+MB, 1 bit, B multiplexer'ının select ucu, B multiplexer'ının select ucu, bunun şarjı bitiyor, özür diliyorum, şunu bir kontrol edelim.
+
+674
+02:32:54,739 --> 02:32:55,319
+Tış.
+
+675
+02:33:02,004 --> 02:33:02,564
+Evet
+
+676
+02:33:07,476 --> 02:33:25,476
+kabloların arasında kaybolduk. Şimdi BM6 Plexer'ının select ucunu da yazdık. 6 numaralı bit dedik. 7, 6. Şimdi devam ediyorum. Diğer kontrol uçlarına bakacak olursak.
+
+677
+02:33:25,476 --> 02:33:32,195
+5, 4, 3, 2, function select için kullanılacak diyor.
+
+678
+02:33:32,195 --> 02:33:35,336
+Function select için 4 bit.
+
+679
+02:33:37,356 --> 02:33:46,196
+Ne yaptı? 9, 10, 14 bit, 15, 16, control word, 16 bitlik bir control word oluşturuyoruz.
+
+680
+02:33:47,736 --> 02:33:51,455
+2 bit kaldı. Bunlar da aşağıda.
+
+681
+02:33:51,455 --> 02:34:17,255
+D-Multiplexer'ın select ucu, MD dediğim bir bit select ucu, D-Multiplexer'ın select ucu ve bir de yukarıda register write işlemini gösteren en düşük anlamlı bit olacak şekilde register write bir bit baya uzun oldu.
+
+682
+02:34:17,255 --> 02:34:46,516
+16 bitlik bir control word oluşturmuş olduk arkadaşlar. Bu kontrol işaretlerini yani register file'dan aritmetik, lojik veya shift işlemine katılacak olan operantları seçmek, ilgili fonksiyonu seçmek ve işlem sonucunun nereye yazılacağını seçmek için kullandığım tüm control bitlerini arka arkaya sıralayarak 16 bitlik bir control word elde ettim.
+
+683
+02:34:46,516 --> 02:35:10,435
+ve artık bu 16 bitlik control word benim burada gördüğümüz gibi destination adres, A adres, B adres, multiplexer B, fonksiyon select, multiplexer D ve register write operationlarını gösteren 16 bitlik bir control word oluşturdum.
+
+684
+02:35:10,435 --> 02:35:26,035
+Bu tasarıma özgü içerisinde 8 tane register olan bir aritmetik, lojik, shift unit yani data path unit için tanımlanmış bir control world oldu bu.
+
+685
+02:35:26,035 --> 02:35:33,435
+Artık ben yapmak istediğim bütün operationları bu control world üzerinden ifade edebilirim.
+
+686
+02:35:33,435 --> 02:35:45,395
+Bu kontrol word'ün enkodingini yani ne iş yaptığını nasıl çalıştığını gösteren bir tablo hazırlamış.
+
+687
+02:35:46,755 --> 02:35:52,055
+Datapath unit içerisinde yer alan kontrol word'ün enkodingini gösteriyor.
+
+688
+02:35:52,135 --> 02:35:59,675
+Diyor ki destination adres, A adres, B adres dediğimiz adresler register file içerisindeki register'ları seçiyordu.
+
+689
+02:35:59,675 --> 02:36:17,495
+Bakın bunun işlemleri ben bu 3 biti 0, 0, 0 verirsem register 0'ı seçerim. İşte efendim 1, 0, 0 verirsem register 4'ü seçerim. Çok açık ve kolay akılda kalacak şekilde.
+
+690
+02:36:17,495 --> 02:36:47,275
+B-Multiplexer'ı için bakalım şekle ezbere bilmemiz gerekmiyor bunları şekle bakıyoruz B-Multiplexer'ının select ucu sıfırsa eğer register'dan birse sabit sayı girişinden giriş yapılacağını söylüyor bana şekilde bakın bu çok açık görünüyor aşağıdaki encoding'e de bunu yerleştirmiş diyor ki
+
+691
+02:36:47,495 --> 02:36:56,655
+B-Multiplexer'ın select ucu 0 olursa veri register file'dan gelir, 1 olursa sabit sayı girişinden gelir diyor.
+
+692
+02:37:00,659 --> 02:37:15,779
+Sonra fonksiyon select işlemine geçiyorum. Fonksiyon select için 4 bit ayrılmıştı. Kodu 4 bitlik. Zaten bunu biz tasarlarken tablosunu oluşturduk. Oradaki tablodan çekilmiş.
+
+693
+02:37:15,779 --> 02:37:30,779
+İşte görüyorsunuz ilk 8 tanesi aritmetik işlemler, sonraki 4 tanesi lojik işlemler, onun altında yer alan 3 tanesi de shift işlemlerini gösteriyor.
+
+694
+02:37:36,691 --> 02:37:48,051
+Burası da aritmetik. Bunları ezbere bilmemiz gerekmiyor. Bu tablolar önümüzde oluyor her zaman ve bu tablolardan faydalanarak işlem yapıyoruz.
+
+695
+02:37:48,051 --> 02:38:01,052
+Fonksiyon aşağıda bulunan D-Multiplexer'ı görevi D-Multiplexer'ı şurada görüyorsunuz.
+
+696
+02:38:01,751 --> 02:38:06,971
+Görevi data in ve fonksiyon yünite arasında seçme işlemi yapmak.
+
+697
+02:38:06,971 --> 02:38:13,732
+Sıfır ise eğer aritmetik lojik işlem bloğundan bir input alacak.
+
+698
+02:38:13,732 --> 02:38:20,831
+1 ise eğer external bir data inputu olacak dışarıdan bir data girişi olacak anlamına geliyor.
+
+699
+02:38:22,291 --> 02:38:29,851
+0 ise eğer fonksiyon unitten 1 ise eğer data in kanalından giriş yapacağını gösteriyor.
+
+700
+02:38:30,712 --> 02:38:41,751
+Register right 0 ise no right 1 ise işlem sonucu register'a yazılacak anlamına geliyor.
+
+701
+02:38:41,751 --> 02:38:47,751
+Her işlem sonucu registra yazılmak mecburiyetinde değil.
+
+702
+02:38:48,552 --> 02:38:53,011
+Dediğim gibi bu tablo önünüzde olacak. Önemli olan bu tabloyu okuyabilmeniz.
+
+703
+02:38:55,071 --> 02:38:56,872
+Burada bazı örnekler var.
+
+704
+02:38:59,131 --> 02:39:02,431
+Ders bitmeden bunları da hemen şöyle hızlıca göstereyim.
+
+705
+02:39:03,431 --> 02:39:07,351
+Mesela ben bir mikro operation tanımladım.
+
+706
+02:39:07,351 --> 02:39:21,931
+R2'den R3'ü çıkarmak ve işlem sonucunu R1'e yazmak istiyorum. Bu durumda tanımlamış olduğum bu 16 bitlik control word'ün ne değer alması gerektiğini belirleyeceğim.
+
+707
+02:39:21,931 --> 02:39:46,731
+Tabloya ne koydum? Destination adres, A adres, B adres, B multiplexer'ının neyi seçeceği, hangi aritmetik işlemin yapılacağı ya da lojik işlemin yapılacağı, D multiplexer'ının ne seçtiği ve registra yazma olup olmayacağı gibi alanları buraya kodlamam gerekiyor
+
+708
+02:39:46,731 --> 02:39:54,631
+Buna using symbolic notation diyoruz. Sembolik notation da register isimlerini yazacağım.
+
+709
+02:39:56,331 --> 02:40:01,531
+Destination adresim nedir? R1. O zaman D adrese R1 diyeceğim.
+
+710
+02:40:02,851 --> 02:40:08,211
+A basına R2 registerini, B basına R3'ü koyacağım.
+
+711
+02:40:10,251 --> 02:40:14,091
+B multiplexer'ı sabit sayı değil register'dan okuma yapacak.
+
+712
+02:40:14,091 --> 02:40:17,711
+yani register'dan aldığı değeri kullanacak.
+
+713
+02:40:18,471 --> 02:40:24,071
+Function select işleminde çıkarma işlemine karşılık gelen bir işlem seçmeliyim.
+
+714
+02:40:24,071 --> 02:40:29,771
+Çünkü burada bana verilen micro operation bir çıkarma işlemi gösteriyor.
+
+715
+02:40:30,191 --> 02:40:34,331
+O yüzden A artı B değil artı 1 işlemini seçtim.
+
+716
+02:40:35,751 --> 02:40:41,791
+Bunu tabi tabloda eğer binary kodunu yaz deselerdi bana tabloda gidip bakacaktım.
+
+717
+02:40:41,791 --> 02:41:02,631
+A artı B değil artı bir işleminin kodu 0101'miş. Eğer kodunu da yazmam gerekirsek yenelde biz koduyla beraber kullanıyoruz bunu ve şuraya mesela 0101 diye kodunu da yazıyoruz.
+
+718
+02:41:02,632 --> 02:41:20,732
+Sonra işte efendim D-Maltplexer'ı nereden seçim yapacak? Aritmetik bloktan mı alacak işlem sonucunu yoksa dışarıdan bir data girişi mi var?
+
+719
+02:41:20,732 --> 02:41:26,772
+Benim yaptığım işlem çıkarma işlemi olduğuna göre fonksiyon unitten gelecek. O yüzden
+
+720
+02:41:26,772 --> 02:41:26,891
+7.
+
+721
+02:41:27,763 --> 02:41:40,703
+Function unit'i seçiyorum ve işlem sonucu R1 register'ına yazılacağı için write enable ediyorum. Write işlemini enable ediyorum. Yani bunun 1 olması gerekiyor.
+
+722
+02:41:40,703 --> 02:41:48,563
+Write işlemi için 1'di değil mi? Write da 1, no write da 0. Bunun 1 olması gerekiyor diyorum.
+
+723
+02:41:48,563 --> 02:42:01,624
+Gördüğünüz gibi aslında önce datapath uniti tasarlamak sonra da bunun üzerinde istediğimiz mikro operationları gerçekleştirmek mümkün.
+
+724
+02:42:04,263 --> 02:42:11,124
+İkinci satırdaki işleme bakacak olursam bir iki tanesini göstereceğim. Hepsini uzun uzun anlatmayacağım.
+
+725
+02:42:12,304 --> 02:42:15,203
+İkinci satırda bir shift operation var.
+
+726
+02:42:18,675 --> 02:42:41,975
+Shift operation'da Shift left R6 demiş. Dikkatinizi çekmek istediğim nokta şu. Shift left işlemine gidip bakarsanız tabloda sadece B operandı üzerinde yapıldığını görüyorsunuz. Kodu da buymuş.
+
+727
+02:42:41,975 --> 02:42:59,896
+B operandı üzerinde yapılıyor demek B bası üzerinde yapılıyor demek. O yüzden ben bu işlemi yaparken destination R4, source operandını ise B basından B adresi üzerinden R6 olarak seçmeliyim.
+
+728
+02:42:59,895 --> 02:43:23,195
+Register'dan gelen veri üzerinde fonksiyon unitte shift left B işlemini seçmeliyim. Bunun da kodu 1110'dı. Bu fonksiyon unitten gelen bir outputtur ve işlem sonucu R4'de yazılacağı için write enable edilmelidir diyorum.
+
+729
+02:43:27,028 --> 02:43:30,627
+Hocam bir şey sorabilir miyim burada?
+
+730
+02:43:31,147 --> 02:43:31,547
+Buyurun.
+
+731
+02:43:31,547 --> 02:43:40,607
+Bu ikinci yaptığınız örnekte control ve ördü yazarken A adrese herhangi bir şey yazılmasında bir sakınca yok değil mi? Orada ne yazdığının bir önemi yok artık.
+
+732
+02:43:40,787 --> 02:43:50,087
+Hiç önemi yok. Biz orayı şeyle geçiyoruz, böyle tireyle geçiyoruz. Ama bir şey yazmanız gerekiyorsa 0, 0, 0 yazmanızı tercih ediyoruz.
+
+733
+02:43:50,087 --> 02:43:59,748
+Don't care'dir. Yani don't care'dir. Mutlaka oraya bir şey yazmanız gerekiyor. Sıfırda yazsanız, birde yazsanız hiçbir önemi yok aslında. Don't care'dir.
+
+734
+02:44:00,407 --> 02:44:01,248
+Teşekkürler hocam.
+
+735
+02:44:02,147 --> 02:44:18,347
+Güzel soru. Ben teşekkür ederim. Mesela şuradaki işleme bakalım. Burada R1 register'ına R0 artı 2 yazalım demiş. Bunu nasıl yapabiliriz?
+
+736
+02:44:22,963 --> 02:44:23,563
+Yorum
+
+737
+02:44:31,540 --> 02:44:33,540
+Aslında çözümde de gözüküyor.
+
+738
+02:44:37,876 --> 02:44:54,095
+ne yapmış? Sabit sayı girişini kullanmış. Constant in dediği sabit sayı girişini kullanmış. Çünkü bir immediate operant var orada. Komutun içerisinde verilmiş bir operant var. Bunu ancak nereden alabilirsiniz? Sabit sayı girişinden alabilirsiniz.
+
+739
+02:44:55,216 --> 02:44:57,136
+Mesela yine ilginç bir örnek.
+
+740
+02:45:05,012 --> 02:45:07,012
+5. satırda
+
+741
+02:45:09,780 --> 02:45:29,040
+5. satırda data alt R3 demiş. R3 register contentini data alt ile dışarıya yani belki bir memoriye yazma ya da porta yazma işlemi var. Yukarıya çıkalım bakalım.
+
+742
+02:45:30,579 --> 02:45:35,659
+Data out işlemi arkadaşlar B bası üzerinden gerçekleşiyor.
+
+743
+02:45:38,020 --> 02:45:52,239
+A basından adres gönderiliyor ama şu anda adres bilgisini göndermemiz istenmemiş yani. O yüzden bu işlemi yaparken destination adres yok.
+
+744
+02:45:52,239 --> 02:46:06,999
+Çünkü register'a kaydetmiyorum. A bası kullanılmıyor. Sadece B bası üzerinden R3 register'ını seçiyorum. Ve yine dikkat, no right diyorum.
+
+745
+02:46:08,279 --> 02:46:19,120
+Function Select Block'ında hiçbir şey yok. D-Multiplexer'ında hiçbir şey yok. Çünkü işlemler de sonlandı. Data Out işleminin yapıldığı şu alanda sonlandı.
+
+746
+02:46:19,119 --> 02:46:47,199
+Benim amacım sadece data out'ı oluşturmak. Aşağıdaki blokların hiçbirini kullanmıyorum. Ne fonksiyon unit'i ne D-Multiplexer'ını. Hiçbirini kullanmıyorum. O yüzden bu işlemde gördüğünüz gibi fonksiyon select ve D-Multiplexer'ın select ucu tire ile geçilmiş, boş geçilmiş ve register write işlemi no write olarak işaretlenmiş.
+
+747
+02:46:49,120 --> 02:47:02,700
+Son olarak bu tabloda bir sonraki satıra da bakalım. R4 register'ına data in girişinden aldığımız bir sayıyı yazalım diyor. Bu da güzel bir örnek.
+
+748
+02:47:02,700 --> 02:47:16,120
+Yine hep aklınıza şu devre şeması gelmeli. Devre şemasını biz sınavda hep veriyoruz arkadaşlar. Yani önünüzde şu şema olacak. Bu gördüğünüz blok şema olacak.
+
+749
+02:47:16,120 --> 02:47:26,380
+Ayrıca şu tablo da olacak.
+
+750
+02:47:28,319 --> 02:47:37,139
+Sınavlarda biz yardımcı olması açısından bu konuyla ilgili soru sorduğumuzda bu tabloyu ve devre şemasını veriyoruz.
+
+751
+02:47:37,139 --> 02:47:40,380
+Devre şemasında benim amacım nedir?
+
+752
+02:47:42,339 --> 02:47:45,979
+Data in'den gelen bir veriyi bir registra yazmak.
+
+753
+02:47:46,119 --> 02:48:07,119
+Böyle bir örnek vardı. Şurada. Bu örnekte data in'den gelen veri D-Multiplexer'ından geliyor zaten. Orada sadece D-Multiplexer'ı benim için önemli. D-Multiplexer'ın data in seçmesi lazım. Register write operation'ın enable olması lazım.
+
+754
+02:48:07,119 --> 02:48:17,479
+işlem sonucunun R4 registerine destination adresi olarak R4 registerinin işaret edilmesi ve oraya yazılması gerekiyor.
+
+755
+02:48:18,559 --> 02:48:22,139
+Bu satırda benim girmem gereken değerler.
+
+756
+02:48:22,139 --> 02:48:35,300
+Diğer alanlar kullanılmadığı için yani A adresi, B adresi, B multiplexer'ı ya da fonksiyon bu işlemde kullanılmayan bloklar.
+
+757
+02:48:35,300 --> 02:48:42,419
+O yüzden bunları yine bir tire ile boş geçiyorum. Bir kod yazmam gerekiyorsa sıfır yazıyorum.
+
+758
+02:48:43,479 --> 02:49:00,279
+Son satırda R5 register'ını resetlemekten bahsediliyor. Bir register'ı resetlemek demek farklı şekillerde yapılabilir ama en uygun şekli bir XOR işlemiyle.
+
+759
+02:49:00,279 --> 02:49:15,759
+Yani bir register'ı kendi kendisiyle XOR'layarak R5 register'ına yazdığınızda bu register'ı resetleyebilirsiniz.
+
+760
+02:49:15,759 --> 02:49:22,880
+Farklı şekillerde yapılabilir bu XOR bir örneği sadece.
+
+761
+02:49:23,740 --> 02:49:29,440
+Clock cycle olarak XOR oluyordu sanırım hocam geçen dönemde öyle yapıyordu.
+
+762
+02:49:30,260 --> 02:49:51,860
+Bizim tasarımımızda ama siz de gördünüz, zaten logic blog'ın bütün elemanları, işlemleri aynı. Ama tabii ki mesela aritmetik işlemle yapmaya göre, lojik işlemle yapmak kesinlikle daha kısa. O konuda haklısınız aritmetik blog'la kıyasladığımızda.
+
+763
+02:49:51,860 --> 02:50:01,680
+Bakın aynı tablonun bu defa binary kodları yazılarak oluşturulmuş hali
+
+764
+02:50:01,680 --> 02:50:05,980
+Destination'ı R1 register seçilmiş
+
+765
+02:50:05,980 --> 02:50:10,600
+A basında R2 register seçilmiş
+
+766
+02:50:10,600 --> 02:50:13,660
+Burada R3 register seçilmiş
+
+767
+02:50:13,659 --> 02:50:26,819
+Fonksiyon select çıkarma işlemi için yani A artı B değil artı bir operation için hangi kodu kullanıyormuş? 0, 1, 0, 1 kullanıyormuş.
+
+768
+02:50:27,459 --> 02:50:31,739
+DMaltplexer'ı 0 olmalı, register write 1 olmalı gibi.
+
+769
+02:50:31,739 --> 02:50:34,559
+Biz iki şekilde de sorabiliyoruz soruyu.
+
+770
+02:50:35,159 --> 02:50:39,739
+Yani bu şekilde binary kodlarını yazmanızı da isteyebiliriz.
+
+771
+02:50:39,739 --> 02:50:50,959
+ya da efendim yukarıda gördüğümüz gibi sembolik notasyon kullanmanızı da isteyebiliriz. İkisini de kullanabilirsiniz.
+
+772
+02:50:53,459 --> 02:51:02,139
+Burada yine biraz egzersiz vereceğim. Size hazırladığım egzersizler de bununla ilgili.
+
+773
+02:51:07,667 --> 02:51:09,007
+Şurada.
+
+774
+02:51:13,007 --> 02:51:14,367
+Exercise 4.
+
+775
+02:51:16,468 --> 02:51:26,108
+Specify the 16-bit control word that must be applied to the data path of figure 11 to implement each of the following microoperations.
+
+776
+02:51:26,108 --> 02:51:47,467
+Bu figür 11'de de bizim az önce gördüğümüz 8 tane register'ın olduğu devre şeması. Bunun üzerinde aşağıda verilen işlemleri gerçekleştirmek için gerekli mikro operation'ları yazın diyor.
+
+777
+02:51:47,467 --> 02:52:08,667
+Zaten pek çoğunun örneğini yaptık. Mesela bir register'ı sıfırlama işlemi yaptık. Shift operation'ı yaptık. Burada shift right var bir de. Kolay. Shift operation'larında unutmamanız gereken şey B bası üzerinden
+
+778
+02:52:08,667 --> 02:52:12,947
+İçin olacaksınız.
+
+779
+02:52:12,947 --> 02:52:17,587
+Dolayısıyla, EBS'in de oluşturmanı gerekiyor.
+
+780
+02:52:18,907 --> 02:52:23,288
+Efendim, burada bir isopre işini eklemiş.
+
+781
+02:52:25,108 --> 02:52:28,348
+Olacak olay bunu yapabileceğinizi düşünüyorum.
+
+782
+02:52:30,428 --> 02:52:33,428
+Tarih Kuşa, ben bu hafta anlatıyorum bu kadar.
+
+783
+02:52:33,767 --> 02:52:35,407
+Aslında bu konu bitmedi.
+
+784
+02:52:35,407 --> 02:52:43,667
+Şimdi biz datapath unit'i tasarladık ama dersin başında söylediğim control unit devresini bir de oluşturmamız gerekiyor.
+
+785
+02:52:46,888 --> 02:52:52,028
+Internet connection not stable dedi. Duyabiliyor musunuz bilmiyorum.
+
+786
+02:52:52,667 --> 02:52:54,407
+M&M kesildi ama şu an geliyor hocam.
+
+787
+02:52:55,147 --> 02:52:55,707
+Tamam.
+
+788
+02:52:55,727 --> 02:52:56,407
+Değil miyedir hocam.
+
+789
+02:52:56,947 --> 02:52:58,267
+Şu an duyabiliyorsunuz tamam.
+
+790
+02:52:59,267 --> 02:53:04,487
+Evet dediğim gibi bu konu henüz bitmedi.
+
+791
+02:53:04,487 --> 02:53:15,507
+yani bir aritmetik, lojik, unit tasarımını öğrendik ama CPU'nun içerisinde yer alan kontrol devresini ve bunların etkileşimini henüz görmedik.
+
+792
+02:53:15,968 --> 02:53:24,667
+Önümüzdeki hafta kontrol devresiyle datapath unitin nasıl bir entegrasyon içinde olduğunu anlatacağım.
+
+793
+02:53:25,447 --> 02:53:28,108
+Dediğim gibi bu haftalık bu kadar.
+
+794
+02:53:28,108 --> 02:53:32,328
+Sormak istediğiniz bir şey var mı? Bu egzersizleri sizlerle paylaşacağım.
+
+795
+02:53:32,328 --> 02:53:40,388
+Çözdük birçoğunu ama siz de çözmeye çalışın istiyorum. Sayfadan bunu paylaşacağım sizinle.
+
+796
+02:53:42,268 --> 02:53:48,227
+Hocam yine quizde elli dakika verip bir işlemci tasarlamamızı istemezsiniz değil mi?
+
+797
+02:53:48,227 --> 02:54:01,787
+Elli dakikada bir işlemci. Yok altmış dakika verebiliriz ama. Evet quiz klasik olacak. Öyle yapmak daha uygun görünüyor.
+
+798
+02:54:01,787 --> 02:54:07,127
+süre konusunda biraz daha geniş olmaya çalışacağız.
+
+799
+02:54:08,307 --> 02:54:13,767
+Sanırım teste daha kısa vermem gerekiyordu ama değil mi? Yani 60 dakika çok oldu teste.
+
+800
+02:54:14,487 --> 02:54:16,407
+Hayır hocam ya ben zar zor yetiştirdim.
+
+801
+02:54:17,028 --> 02:54:21,507
+Öyle mi? Ama çok yani sanki çok kopya olmuş gibi geldi bana.
+
+802
+02:54:22,388 --> 02:54:26,347
+Olmuştur hocam biz klasikte de kopya çekiyoruz yani çok onun bir ilgisi olmuyor.
+
+803
+02:54:27,647 --> 02:54:29,667
+Ama ben gerçekten zor yetiştirdim çiçeğin.
+
+804
+02:54:29,667 --> 02:54:36,628
+Ödev yapılamaz mı? En azından süre biraz daha uzun tutulup
+
+805
+02:54:36,628 --> 02:54:47,147
+Ödevde de çok kopya oluyor. Biz de onun için verdiğimiz kısıtlı sürede olursa belki kendi kendinize bir şeyler yaparsınız diye ümit ediyoruz
+
+806
+02:54:47,147 --> 02:54:49,127
+Sonra ortalama 10 geliyor
+
+807
+02:54:49,127 --> 02:54:57,927
+Önceki senelerde çünkü ödev konusunda çok birebir aynı şeyi hatta bazı fotokopisini alıp göndermişti
+
+808
+02:54:57,927 --> 02:55:07,247
+çok üzücü şeyler gördük. O yüzden quiz gene iyi ama süreyi daha makul tutmaya çalışacağız. Merak etmeyin. Tamam.
+
+809
+02:55:08,275 --> 02:55:10,195
+Teşekkür ederim hocam. İyi günler.
+
+810
+02:55:10,595 --> 02:55:30,495
+Evet. İyi günler arkadaşlar. Hepinize iyi bayramlar diliyorum. Bayramda görüşemeyeceğiz. Evlerdeyiz ama olsun. Sağlıklı olmak en önemlisi. Çok yakında bu günler de geçecek. Ben ümitliyim. Eylül'de okulda olacağız hep birlikte.
+
+811
+02:55:31,935 --> 02:55:33,995
+İnşallah hocam. Hayırlı bayramlar.
+
+812
+02:55:33,995 --> 02:55:35,975
+Size de iyi bayramlar.
+
+813
+02:55:36,075 --> 02:55:36,815
+İyi bayramlar.
+
+814
+02:55:38,275 --> 02:55:40,275
+Güle güle
+
+815
+02:56:24,564 --> 02:56:40,083
+Evet, şu an 21 kişi ekranda bağlı gözüküyor ama bilgisayarın başında yok. Lütfen arkadaşlar, böyle derse devam olmaz. Çok rica ediyorum, bilgisayarınızın başında olun.
+
+816
+02:56:40,083 --> 02:57:03,924
+Kim var? Burak Erhandi, Ahmet Emre, Buğra Uşak, Fatih Yılmaz, Ali Emre, Mehmet İvriz, Burak Erdilli, Hakan Aktaş, Ürfet Mücahit, İhsan, Berke, Yavuz Selim, Talha, Mücahit, Zeynep, Ahmet Zahid
+
+817
+02:57:03,924 --> 02:57:10,784
+Evet, isimlerini okuduğum arkadaşlar lütfen derse katılın. Sizin yararınıza.

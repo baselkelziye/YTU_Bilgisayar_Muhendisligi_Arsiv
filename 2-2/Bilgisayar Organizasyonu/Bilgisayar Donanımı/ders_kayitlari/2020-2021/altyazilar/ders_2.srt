@@ -1,0 +1,3251 @@
+1
+00:06:20,788 --> 00:06:39,827
+Günaydın arkadaşlar. Evet, bugün dönemin ikinci haftası bilgisayar donanımı dersinin lojik konuları tekrarı ile devam edeceğiz. Geçen hafta zaten başlamıştık bu konulara.
+
+2
+00:06:44,276 --> 00:06:55,776
+Evet, nasılsınız bakalım? Umarım iyisinizdir. Herkes sağlıklıdır. Bir sıkıntı yoktur. Fazla normalleşmeyin. Risk almayın.
+
+3
+00:07:06,771 --> 00:07:23,771
+Profil fotoğraflarıyla ilgili az önce chatte de yazdım. Sınıfın yarısı eklemiş. Teşekkür ederim ekleyen arkadaşlara. Diğer arkadaşların da bir profil fotoğrafı hazırlayıp eklemesini istiyorum, bekliyorum.
+
+4
+00:07:23,771 --> 00:07:31,372
+Yani böyle bir siyah ekranda sadece isminizi görmek yerine yüzünüzü de az çok görmek iyi oluyor.
+
+5
+00:07:31,591 --> 00:07:37,491
+Tabii canlı görmek gibi olmuyor muhakkak ama şimdilik bununla idare edeceğiz.
+
+6
+00:07:48,115 --> 00:08:06,315
+Şimdi teşekkür ediyorum. Ben de iyiyim bu arada soran arkadaşlara. Çok şükür henüz böyle bir virüs almadan yaşamayı başardık ama aşı gelene kadar umarım almayız.
+
+7
+00:08:09,315 --> 00:08:16,435
+Böyle sabahları biraz sesim kötü oluyor ama arada su içerek falan düzelteceğiz.
+
+8
+00:08:18,115 --> 00:08:25,316
+Şimdi biraz tabletten gidelim.
+
+9
+00:08:30,836 --> 00:08:36,195
+Daha çok yazarak anlatacağım için şöyle bir yol izleyeceğim.
+
+10
+00:08:40,244 --> 00:08:59,623
+Evet, geçen hafta Burien Algebra dediğimiz ikili sayı sisteminde kullanılan ANDOR işlemleri ve bunların türevlerini gördük.
+
+11
+00:08:59,623 --> 00:09:15,523
+ve logik kapıları şöyle bir hatırlattım. Demorgan kuralı nedir, nasıl kullanılır bunu gördük ve bilgisayar donanımında çok kullanacağımız yapı taşı dediğimiz bazı devre elemanları var.
+
+12
+00:09:15,523 --> 00:09:28,703
+Decoder, Multiplexer, Demultiplexer, Encoder gibi onlarla ilgili biraz bilgi verip örnek problemler çözmüştük beraber.
+
+13
+00:09:28,703 --> 00:09:36,643
+Bu hafta kombinasyonel lojik devreler konusuna devam edeceğiz.
+
+14
+00:09:36,643 --> 00:09:58,683
+Çünkü orada işte burada gördüğünüz ekranda gördüğünüz half-adder, full-adder gibi toplama devreleri var. Yine bunlar da aslında bizim için birer yapı taşı. Çünkü bunları bir araya getirerek CPU içerisinde yer alan aritmetik devreyi oluşturacağız.
+
+15
+00:09:58,683 --> 00:10:13,003
+O nedenle tüm bu yapı taşlarını başta iyi öğrenirsek bunları birbirine entegre ederek oluşturduğumuz daha kompleks çözümleri kolay anlayabilirsiniz.
+
+16
+00:10:14,003 --> 00:10:26,043
+Yapı taşlarımız neler? Aslında tabii en basit haliyle bir yarım toplayıcı ve tam toplayıcı dediğimiz devre elemanlarımız var.
+
+17
+00:10:26,043 --> 00:10:39,163
+Bunlar arasındaki farklara bakacak olursak bunları dediğim gibi lojik devrelerde öğrendiğinizi kabul ediyorum. Benim bu dersteki amacım hızlı bir tekrar ve hatırlatma.
+
+18
+00:10:39,823 --> 00:10:46,423
+Konu başlığımız half-edder yani yarım toplayıcı konusu.
+
+19
+00:10:46,424 --> 00:11:08,523
+Yarım toplayıcılar için şurada kısa bir özet bilgi var. Diyor ki iki bit binary sayıyı toplar. A ve B gibi girişleri olsun. Bunların her birliği birer bit. Yarım toplayıcı iki binary değer arasında toplama işlemi yapıyor.
+
+20
+00:11:08,523 --> 00:11:30,943
+Bir SAM üretiyor bir de carry out dediğimiz çıkış üretiyor. Fakat bunun problemi nedir? Neden yeterli değil bizim için? Çünkü iki bit giriş aldığı için ben bunu genişleterek daha kompleks devreleri oluşturamıyorum.
+
+21
+00:11:30,943 --> 00:11:39,583
+Benim amacım sadece bir bitlik iki sayıyı toplamak değil mesela dört bitlik iki sayıyı toplamak o zaman neye ihtiyacım olacak?
+
+22
+00:11:40,283 --> 00:11:58,083
+Toplama işleminde bir elde taşıma işi vardı elde biti keri biti dediğimiz bit var bunun aktarılması gerekiyor o nedenle yarım toplayıcı dediğimiz devre bizim için çok da yeterli bir çözüm değil o zaman alternatifimiz nedir?
+
+23
+00:11:58,083 --> 00:12:26,703
+full adder yani tam toplayıcı. Tam toplayıcı ne işi yapıyordu hatırlayalım. 3 bit binary toplama işlemi yapıyordu. A ve B gibi iki tane bir bitlik girişin yanı sıra bir de carry in girişi vardı. O nedenle 3 bit ve bu 3 bitin toplamı sonucunda bize sum ve carry out dediğimiz 2 bit sonuç üretiyor.
+
+24
+00:12:26,703 --> 00:12:32,703
+ve ben bir full adder yapısını çoklayarak...
+
+25
+00:12:34,292 --> 00:12:52,552
+Mesela mbit için çoklayarak ne yapabiliyorum? Mbit'lik bir toplayıcı devre oluşturabiliyorum. Bu mbit 8 bit olabilir, 16 bit olabilir. Bunları yan yana getirerek daha büyük sayıları toplayabiliyorum.
+
+26
+00:12:52,552 --> 00:13:05,251
+Bu tür devrelere yani tam toplayıcı ile oluşturulan M-bit'lik bir adder devresine ripple carry adder diyoruz.
+
+27
+00:13:05,251 --> 00:13:21,451
+Çünkü ne yapıyor? En düşük anlamlı bitte oluşan elde bitini bir önceki bite carry in olarak taşıyor ve böylece toplama işlemini M-bit için gerçekleştirebiliyor.
+
+28
+00:13:25,364 --> 00:13:39,083
+Burada single bit adders için doğruluk tablosu ve devre şeması verilmiş. İlk etapta half adder için görüyorsunuz bir doğruluk tablosu var.
+
+29
+00:13:39,083 --> 00:13:50,303
+Doğruluk tablosunda A ve B iki binary input. Bu iki binary input için bir sum ve bir de carry out elde edilmiş.
+
+30
+00:13:50,303 --> 00:14:04,864
+1 olan durumlara bakacak olursak işte ne görüyoruz? A ve B girişlerinden biri 1 olduğunda 1 olmuş toplama sonucu.
+
+31
+00:14:06,003 --> 00:14:15,003
+Carry biti ise her iki bitin de 1 olduğu durumda toplam 0, elde biti 1 olacak şekilde çalışıyor.
+
+32
+00:14:15,003 --> 00:14:27,823
+Bu doğruluk tablosuna baktığımızda oluşturulan devre şemasında SAM çıkışının bir İGZOR ile gerçekleştirildiğini görüyoruz.
+
+33
+00:14:28,544 --> 00:14:38,724
+Geçen hafta derste size bahsetmiştim İGZOR kapısının bir cümle ile nasıl çalıştığını özetleyebiliriz demiştim.
+
+34
+00:14:38,724 --> 00:14:50,743
+Hatırlıyor musunuz ne demiştik? XOR için. Sadece iki girişli XOR diye düşünmeyin. Üç girişli olabilir, dört girişli olabilir.
+
+35
+00:14:52,503 --> 00:14:53,584
+Tek sayıda çift.
+
+36
+00:14:53,584 --> 00:14:56,404
+Tek sayıda.
+
+37
+00:14:59,860 --> 00:15:01,499
+Bir daha tekrarlar mısınız?
+
+38
+00:15:02,619 --> 00:15:05,800
+Hocam yanlış olduğunu fark ettim. O yüzden şey yapmadım.
+
+39
+00:15:05,939 --> 00:15:11,639
+Hava geçtim. Peki. Evet, tek sayıda doğru bir ifade gibi geliyordu.
+
+40
+00:15:11,639 --> 00:15:22,339
+Tek sayıda girişlerindeki birlerin sayısı tekse sonuç bir oluyordu.
+
+41
+00:15:22,339 --> 00:15:41,419
+Buna göre bakacak olursak burada da gördüğümüz gibi SAM çıkışının bir olduğu iki durum içeride tek sayıda bir olduğu durum gösteriyor ve SAM çıkışını iki girişli bir idzor ile oluşturmamış.
+
+42
+00:15:41,419 --> 00:15:52,639
+Hemen altındaki bölümde bu defa full adder için bir truth table ve devre şeması verilmiş.
+
+43
+00:15:53,559 --> 00:16:01,099
+Doğruluk tablosunda A ve B gibi iki binary girişin yanında bir de carry-in girişini görüyoruz.
+
+44
+00:16:01,099 --> 00:16:19,239
+Ne oldu? 3 bit giriş oldu. 3 bit giriş için SAM çıkışına bakacak olursak işte 001 için, 010 için toplam sonucu 1 olmuş.
+
+45
+00:16:19,239 --> 00:16:33,139
+1-0-0 için toplam sonucu 1 olmuş. Şuradaki bir önceki kombinasyonda 0-1-1 için toplam sonucu 0 elde bitti 1 olmuş.
+
+46
+00:16:33,139 --> 00:16:42,039
+Yani bu doğruluk tablosunu bir tam toplayıcının çalışma mantığını biliyorsanız eğer rahatlıkla oluşturabilirsiniz.
+
+47
+00:16:42,040 --> 00:16:50,199
+Şurada SAM çıkışı 3'ünün de 1 olduğu durumda 1 olmuş ve 1 elde biti oluşmuş.
+
+48
+00:16:50,199 --> 00:16:57,800
+Bu şekilde önce devrenin doğruluk tablosunu oluşturmamız gerekiyor.
+
+49
+00:16:58,260 --> 00:17:05,599
+Daha sonra doğruluk tablosunu oluşturduğumuz devre için sadeleştirilmiş fonksiyonu bulmak için bir karnomep oluşturuyoruz.
+
+50
+00:17:06,179 --> 00:17:11,740
+Eğer gözle görebiliyorsak da zaten doğrudan da çizebiliyoruz.
+
+51
+00:17:11,739 --> 00:17:25,019
+Burada SAM çıkışı için yine devre şemasına baktığımızda ben bunun karnım epey taşımayacağım doğrudan devre şeması üzerinden size şöyle bir sonuç gösterebilirim.
+
+52
+00:17:25,019 --> 00:17:34,999
+SAM çıkışı için aslında iki tane XOR kapısıyla gerçekleştirilmiş. Bunu üç girişli bir XOR'la da yapabilirdim.
+
+53
+00:17:34,999 --> 00:17:44,619
+Burada iki girişli XOR'la doğruluk tablosuna baktığımız zaman zaten SAM çıkışı hangi case'de, hangi durumda bir olmuş.
+
+54
+00:17:45,720 --> 00:17:50,580
+Girişlerindeki birilerin sayısının tek olduğu durumda sadece bir olmuş.
+
+55
+00:17:50,740 --> 00:18:03,660
+Dolayısıyla bunun Karno ve YP'de taşısanız indirgeyemeyecektiniz ve böyle bir XOR ile oluşturulması gerektiğini rahatlıkla zaten görebiliyoruz.
+
+56
+00:18:03,660 --> 00:18:04,600
+Şimdi
+
+57
+00:18:08,211 --> 00:18:20,052
+Burada bir başka küçük egzersiz var. İki tane yarım toplayıcı ile bir tam toplayıcı yapma. Bunları dediğim gibi lojikte zaten yaptığınızı düşünüyorum.
+
+58
+00:18:20,052 --> 00:18:35,071
+Ben bundan sonraki çözümlerde hep benim elimde bir hazır tam toplayıcı olduğunu varsayacağım ve bu tam toplayıcı ile aritmetik devre tasarımı gerçekleştireceğim.
+
+59
+00:18:35,071 --> 00:18:37,431
+Soru var galiba. Buyurun.
+
+60
+00:18:39,091 --> 00:18:47,411
+Hocam mikrofonunuz sanırım elbisenize değiyor da hafif yükseltseniz olur mu? Şırt o. Oradan kayıttan izleyen arkadaşlar için de rahatsız edici olacaktır.
+
+61
+00:18:47,411 --> 00:18:53,911
+Tamam. Teşekkür ederim. Evet. Mikrofonu şöyle biraz yukarı çektim. Şimdi iyi mi?
+
+62
+00:18:55,791 --> 00:18:56,451
+İyi hocam.
+
+63
+00:18:56,451 --> 00:19:12,091
+Tamam peki. Evet bir tam toplayıcının yapısını inceledikten sonra burada multi bit, combinational logic building blocks diye bir şey var, slide var. Ne diyor?
+
+64
+00:19:12,091 --> 00:19:29,251
+Amacımız çok bitli yapıları kurgulamak. Çünkü işlemcinin içinde biz aritmetik işlemleri yaparken 8 bit, 16 bit, 32 bitlik sayılarla işlem yapıyor olacağız.
+
+65
+00:19:29,252 --> 00:19:37,711
+Bir bas genişliğinden bahsettiğimiz zaman yani veri yolu genişliğinden bahsettiğimizde 32 bit veri yolu diyoruz.
+
+66
+00:19:37,832 --> 00:19:42,271
+Demek ki hep çok bitli yapılara ihtiyacımız olacak.
+
+67
+00:19:42,271 --> 00:19:58,271
+O nedenle şu ana kadar öğrendiğimiz bütün yapıt taşlarını yani nedir multiplexer, decoder gibi devre elemanlarından toplayıcılara kadar bunların tamamını çok bit için genişletmemiz gerekiyor.
+
+68
+00:19:59,252 --> 00:20:11,951
+16 bitlik, 32 bitlik çözümleri nasıl olur kurgulamamız gerekiyor. Bununla ilgili kısa biraz bilgi vereceğim. Daha önceki hafta bir multiplexer'ın nasıl çalıştığını görmüştük.
+
+69
+00:20:11,951 --> 00:20:25,032
+Burada multi bit, 4 to 1 multiplexer demiş. 4'ten 1'e bir multiplexer'ı aslında tarif edeceğiz. Ama bunu çok bit için kurgulayacağız.
+
+70
+00:20:25,031 --> 00:20:39,211
+ve çok bitten kavramımız, şey kastımız nedir bakacak olursak grafik sembolde her bir girişin şurada görüyoruz 8 bit olduğu ifade edilmiş.
+
+71
+00:20:39,211 --> 00:20:53,511
+Yani W0'dan W3'e kadar 4 tane giriş var. Bu girişlerin her biri şu kenardaki çizgiden de görüyoruz 8 bittir diyor.
+
+72
+00:20:53,512 --> 00:21:00,672
+ve devrenin çıkışı için yine bakacak olursak 8 bit olduğu ifade edilmiş şurada.
+
+73
+00:21:01,612 --> 00:21:16,232
+Dolayısıyla yapıyı daha önce öğrendiğimiz 4'ten bire multiplexer yapısını 8 tane sayı arasında seçme yapıp bu seçme işini de yukarıda gördüğümüz selection inputu ile yapacağız.
+
+74
+00:21:16,231 --> 00:21:34,751
+Bu Selection input ile 0, 0 olduğunda W0'ı yani bu 8 bitlik sayıyı seçecek veya işte 1, 1 olduğunda W3'i seçecek F çıkışı için
+
+75
+00:21:34,751 --> 00:21:44,391
+4'ten 1'e multiplexer'ın çalışma mantığı fakat 1 bit yerine bunu 8 bit için gerçekleştireceğiz
+
+76
+00:21:44,391 --> 00:21:55,391
+Peki nasıl olacak bu? Bakacak olursak içerideki yapı nedir? Nasıl oluşturulabilir? Bakın burada…
+
+77
+00:21:56,500 --> 00:22:13,319
+4'den 1'e multiplexer'ı 8 bit olan modelin eş değerini vermiş sağ tarafta gördüğümüz çizimde. Yapılan şey nedir? Baktığınızda anlayabiliyor musunuz? Bana bir yorum yapabilir misiniz?
+
+78
+00:22:19,059 --> 00:22:25,659
+HDR çözümde 8 tane multiplexer kullanılmış. Evet, buyurun.
+
+79
+00:22:26,619 --> 00:22:33,839
+Sanırım gelen bütün bitler için aynı şekilde S0 ve S1 bağlanıp en sonunda yine bütün çıkışlar birleştirilmiş.
+
+80
+00:22:33,839 --> 00:22:47,599
+Evet ama her bir multiplexerin girişinde ne görüyoruz? Aynı ağırlığa sahip bitler giriş olarak kullanılmış, doğru mu?
+
+81
+00:22:47,599 --> 00:22:52,600
+Evet, evet, 5 öncelikli olanları birlikte gruplandırmışlar
+
+82
+00:22:53,339 --> 00:22:58,839
+Evet, yani elimizde 4 tane sayı vardı W0'dan W3'e kadar
+
+83
+00:22:58,839 --> 00:23:02,079
+Bunların en düşük anlamlı bitini önce alıyor
+
+84
+00:23:02,079 --> 00:23:06,459
+Burada F0 dediğimiz en düşük anlamlı çıkışı oluşturuyor
+
+85
+00:23:06,459 --> 00:23:10,799
+Evet, bütün multiplexer'ların selection uçları aynı
+
+86
+00:23:10,799 --> 00:23:31,039
+Tek yaptığımız şey burada kullandığımız 8 tane ayrı multiplexer'ın girişlerinde 0 ağırlığa sahip bit, 6 ağırlıklı, 7 ağırlıklı dediğimiz en yüksek anlamlı biti oluşturacak şekilde inputlar bağlanmış.
+
+87
+00:23:31,039 --> 00:23:45,819
+Tüm sayıların yani bu dört tane sayının en yüksek anlamlı bitini seçen multiplexer en üstte, en altta ise en düşük anlamlı bitler arasında seçme işini yapan multiplexer yer alıyor.
+
+88
+00:23:45,819 --> 00:24:00,139
+Yani arka tarafta baktığımız zaman sekiz tane multiplexer var ama ben bu devreyi sembolize etmek için şu sol tarafta gördüğümüz grafik sembolü kullanacağım.
+
+89
+00:24:04,531 --> 00:24:16,492
+Evet, az önce öğrendiğimiz toplayıcı devre içinde benzer bir çok bit için işlem sonucunu görelim.
+
+90
+00:24:18,571 --> 00:24:26,611
+İşlemci içerisindeki aritmetik devrenin oluşturulmasında tam toplayıcı dediğimiz devrelerden faydalanıyoruz.
+
+91
+00:24:26,611 --> 00:24:40,612
+Burada 16 bitlik iki sayı arasında toplama işlemi yapan bir blok şema verilmiş. 16 bit unsigned header diyor. İşaretsiz toplama devresi.
+
+92
+00:24:40,611 --> 00:24:59,011
+X girişi 16 bit, Y girişi 16 bit ve bir carry in girişi var. Bu kaskat bağlanarak 16 bitlik yapıyı 32 bite taşımak istersek eğer kullanabileceğimiz bir input olacaktır.
+
+93
+00:24:59,011 --> 00:25:18,392
+Bu devrenin 16 bit sum çıkışı ve 1 bit carry out çıkışı burada bize verilmiş. Nedir bu devre? Bir 16 bitlik toplayıcı bloğunu temsil ediyor.
+
+94
+00:25:18,392 --> 00:25:31,612
+İç yapısına bakacak olursak buna biz multi-bit toplayıcı için ripple carry adder adını veriyoruz demiştik.
+
+95
+00:25:32,731 --> 00:25:42,451
+Elimizde full adder tam toplayıcı blokları var. Şurada gördüğümüz blokların her biri bir full adder bloğu.
+
+96
+00:25:42,451 --> 00:25:44,951
+Tam toplayıcı bloklar
+
+97
+00:25:44,951 --> 00:26:02,811
+Sağ tarafta en düşük anlamlı biti toplayan A0, B0 girişlerini toplayan ve SAM çıkışında result en düşük anlamlı sonuç bitini oluşturan toplama bloğu var.
+
+98
+00:26:02,811 --> 00:26:12,931
+Bunun carry in girişi sıfıra bağlanmış ve bu bloğun carry out çıkışı bir yüksek anlamlı bit için carry in girişine bağlanmış.
+
+99
+00:26:13,931 --> 00:26:24,951
+Bir yüksek anlamlı bit dediğim A1B1 girişlerinin olduğu bit ve bu iki biti toplayan carry in ile birlikte toplayan bir full adder devresi var.
+
+100
+00:26:24,951 --> 00:26:41,231
+Bunun çıkışında bir R1 oluşturuluyor. Sonuçta aslında bu devrenin bir stavl bir sonuç vermesi yani doğru bir sonuç vermesi için en düşük anlamlı bitten en yüksek anlamlı bite doğru bir carry taşınması gerekiyor.
+
+101
+00:26:42,811 --> 00:26:46,211
+Toplama işleminin gerçekleştirilmesi için.
+
+102
+00:26:51,251 --> 00:27:07,231
+Adder Subtractor Unit örneği verilmiş. Yine bir toplama devresi. Bakın toplama devresinin grafik sembolüne lütfen dikkat edin. Bunu farklı kaynaklarda da bu şekilde görebilirsiniz.
+
+103
+00:27:07,231 --> 00:27:25,432
+Toplama katılacak olan N bitlik bir X girişi var. N bitlik de bir Y girişi var. Bu devreyi hem toplama hem de çıkartma işlemleri için çalışacak hale getirmek amacıyla
+
+104
+00:27:25,432 --> 00:27:38,171
+Burada Y girişi için bir XOR ile kontrol edilebilen bir giriş tasarlanmış.
+
+105
+00:27:38,171 --> 00:27:47,851
+Bu devrenin toplama işlemi yapabilmesi için şurada gördüğümüz bir kontrol girişi var.
+
+106
+00:27:47,851 --> 00:28:05,531
+Bu kontrol girişi sıfır olduğu zaman toplama işlemi yapıyor. Bir olduğu zaman ise çıkartma işlemi gerçekleştiriyor devre.
+
+107
+00:28:05,531 --> 00:28:14,972
+Ve bir olduğu zaman nasıl çalışıyor, sıfır olduğu zaman nasıl çalışıyor bir bakalım. Bir XOR ile kontrol ediliyor.
+
+108
+00:28:14,972 --> 00:28:28,311
+XOR'un iki girişi 1, 0 ve 1, 1 için 0, 1, 1, 0 sonucunu üretiyor.
+
+109
+00:28:28,311 --> 00:28:38,692
+Burada yaptığımız şey şu, diyoruz ki XOR'un bir girişini 0 veya 1 şeklinde tuttuğum zaman devrenin çıkışı ne oluyor?
+
+110
+00:28:38,691 --> 00:28:46,571
+Onunla bakıyorum. XOR kapısının bir girişi 0 ise eğer çıkış diğer girişle aynı oluyor.
+
+111
+00:28:47,691 --> 00:28:50,011
+Şurada gördüğümüz diğer girişle aynı oluyor.
+
+112
+00:28:50,931 --> 00:28:59,551
+XOR kapısının bir girişini 1 yaptığım zaman ise devrenin çıkışı diğer girişin komplementi oluyor.
+
+113
+00:28:59,552 --> 00:29:17,652
+Bu mantıkla ben şuradaki girişi 0 seçtiğimde XOR'un bir girişini 0 yaptığım için Y girişi toplama devresine doğrudan aktarılacak.
+
+114
+00:29:17,651 --> 00:29:26,131
+Bir yaptığımda ise Y girişinin komplementi bu toplama devresine gönderecek.
+
+115
+00:29:26,131 --> 00:29:34,831
+Aynı zamanda bu kontrol ucu gördüğünüz gibi carry-in girişine de bağlanmış.
+
+116
+00:29:35,371 --> 00:29:40,911
+O nedenle yaptığımız işlem aslında çıkartma işlemi olmuş oluyor.
+
+117
+00:29:41,031 --> 00:29:43,271
+Çıkartma işlemini nasıl gerçekleştiriyor?
+
+118
+00:29:43,271 --> 00:29:52,891
+X artı tuz komplement of bir y şeklinde gerçekleştiriyor.
+
+119
+00:29:52,891 --> 00:30:02,131
+X ile y'nin ikiye tümleyenini topladığımız zaman yaptığımız işlem x eksi y işlemi olmuş oluyor.
+
+120
+00:30:03,091 --> 00:30:10,771
+Ve bu devre ile ben toplama ya da çıkartma işlemleri arasında seçim yapabiliyorum.
+
+121
+00:30:10,771 --> 00:30:16,051
+Bunu lojikten hatırlıyorsunuz değil mi arkadaşlar? Öğrendiğinizi tahmin ediyorum.
+
+122
+00:30:22,003 --> 00:30:24,423
+Chat'ten yazabilirsiniz. Evet.
+
+123
+00:30:28,531 --> 00:30:43,931
+Şekil yeni ama konsepti gördük. Tamam. Şekil, buradaki toplama devresinin belki şekli farklı olabilir. Her bir full header'ı ayrı ayrı çizmiyoruz da and bit full header diyoruz.
+
+124
+00:30:43,931 --> 00:30:54,851
+NBitful Adder'ın bir girişini sol tarafa diğer girişi sağ tarafa veriyoruz ve aşağıda da devrenin toplama sonucunu gösteriyoruz.
+
+125
+00:30:54,851 --> 00:31:06,392
+Yani bu şekil farklı kaynaklarda özellikle işlemci tasarımına doğru gittiğimizde göreceğimiz bir devre şeması.
+
+126
+00:31:07,231 --> 00:31:13,031
+Peki bunu da hatırlattıktan sonra şimdi komperatör devresine bakalım.
+
+127
+00:31:13,931 --> 00:31:28,511
+Komparatör karşılaştırma yapıyor ve en bittik iki tane sayıyı karşılaştırıyor ve bunun sonucunda bir flag üretiyor.
+
+128
+00:31:31,571 --> 00:31:43,351
+Amaç nedir? Mesela iki tane sayıyı karşılaştırıyoruz. Sayılar A ve B sayıları olsun. A sayısı B sayısından büyük müdür?
+
+129
+00:31:43,932 --> 00:32:07,272
+kontrolü yapabilirim. Bu A sayısı M bitlik bir sayı, B sayısı yine M bitlik bir sayı işlemin sonucunda eğer AB'den büyükse bu devrenin çıkışını bir yap, küçük veya eşitse sıfır yap şeklinde bir karşılaştırma devresi oluşturabiliriz.
+
+130
+00:32:07,271 --> 00:32:21,271
+Şimdi ben bunu 3 bit 2 sayı arasında yapıyor olsam ya da 2 bitlik 2 sayı arasında yapıyor olsam bir doğruluk tablosuna yerleştiririm ve oradan bulabilirim.
+
+131
+00:32:21,271 --> 00:32:37,151
+Ama mbit dediğimiz zaman işte 8 bit 16 bit gibi sayılar için böyle bir şeyi doğruluk tablosuna koyup yapamazsınız. O zaman böyle bir karşılaştırma işlemini nasıl gerçekleştirebiliriz?
+
+132
+00:32:37,271 --> 00:32:43,111
+Ne dersiniz? Biraz düşünün bakalım.
+
+133
+00:32:45,211 --> 00:32:47,051
+Hocam fikrimi söyleyeyim mi?
+
+134
+00:32:47,391 --> 00:32:47,771
+Buyurun.
+
+135
+00:32:49,051 --> 00:32:55,831
+Bence en önemli bite bakarız. Oradan aşağı doğru inebiliriz. En önemli bit büyükse zaten büyüktür.
+
+136
+00:32:57,691 --> 00:33:03,971
+Ama yani bunu ne kadar şey yapacaksın? Sonraki bitlerde farklılaşacak falan.
+
+137
+00:33:03,972 --> 00:33:13,671
+Yani işte şey bitmedikçe hani en önemli bit zaten en önemliden en önemsize doğru ilk büyükte artık büyüktür yani.
+
+138
+00:33:15,031 --> 00:33:17,192
+İlk küçükte de küçüktür sayı.
+
+139
+00:33:18,151 --> 00:33:19,712
+Eşit geldi diyelim.
+
+140
+00:33:19,892 --> 00:33:21,112
+Sonrakine geçtin.
+
+141
+00:33:21,552 --> 00:33:23,031
+Ondan sonrakine baktın.
+
+142
+00:33:24,112 --> 00:33:25,132
+Evet yani.
+
+143
+00:33:25,192 --> 00:33:26,431
+Ben buna kadar giderim yani böyle.
+
+144
+00:33:26,431 --> 00:33:50,431
+Doğru oradan çözebiliriz ama alternatif çözüm çıkarma işleminin sonucuna bakarak gitmek de bir yol güzel varmak istediğim nokta biraz oraydı aslında bir aritmetik işlem üzerinden bunu yaptığımızda bu daha tercih ettiğimiz bir çözüm aslına bakarsanız
+
+145
+00:33:50,431 --> 00:34:10,971
+Çünkü elimizde hazır bir modül var. Zaten aritmetik işlemleri yaparken kullandığımız. Dolayısıyla aslında bu modül üzerinden giderek bir çıkarma işlemiyle A sayısının B sayısından büyük olup olmadığını bulabiliriz. Bu da bir yol.
+
+146
+00:34:10,972 --> 00:34:12,572
+Şimdi o zaman
+
+147
+00:34:13,588 --> 00:34:29,548
+Biraz buna doğru gideceğim. Burada bir başka şey eşitlik kontrolü yapmayla ilgili bir devre verilmiş. 4 bitlik bir komparatör A sayısı B sayısını eşit midir kontrol ediyor. Bu tabii ki daha kolay bir çözüm gördüğünüz gibi.
+
+148
+00:34:29,548 --> 00:34:40,287
+Hani ayrı ayrı her bir bit üzerinde bunların eşit olup olmadığını kontrol etmek. Bu kontrol işlemini de bir XOR ile yapmak mümkün.
+
+149
+00:34:40,287 --> 00:34:48,107
+XOR kapısının çıkışında 0 varsa eğer bu iki bit birbirine eşittir.
+
+150
+00:34:48,107 --> 00:34:57,507
+Ve bunların hepsinin çıkışı 0 ise eğer buradaki OR kapısı olsaydı çıkışı 0 olurdu.
+
+151
+00:34:57,607 --> 00:35:00,827
+NOR kapısı kullandığı için çıkışı 1 olacak.
+
+152
+00:35:01,367 --> 00:35:05,487
+0 olması neyi gösteriyordu XOR kapısında?
+
+153
+00:35:06,047 --> 00:35:09,768
+İkisi birbiriyle aynı, iki giriş birbiriyle aynıyi gösteriyor.
+
+154
+00:35:09,768 --> 00:35:21,848
+Bu dört tane XOR çıkışından bir tanesi bile bir olsa bu eşitlik bozulacak. Dolayısıyla AB'ye eşit değildir sonucu çıkacak.
+
+155
+00:35:21,848 --> 00:35:35,427
+Şimdi biraz A büyük B midir karşılaştırması gibi işlemleri yaparken kullandığımız binary işlemlere ben geçeceğim.
+
+156
+00:35:45,427 --> 00:36:00,427
+Şöyle bir egzersiz hazırlamıştım. Burada görünüyor herhalde. Aritmetik operation with tools complement aritmetik dedim. Tools complement işlemlerini kullanarak...
+
+157
+00:36:01,427 --> 00:36:12,047
+Nerede açmışım ben bunu? Neyle mi açmışım? Pardon. Şuradan açacağım.
+
+158
+00:36:12,047 --> 00:36:30,307
+Evet burada X ve Y diye iki tane sayımız var binary sayılar bunlar ve varsayalım ki benim yapmak istediğim işlem X-Y işlemi
+
+159
+00:36:34,835 --> 00:36:43,676
+x-x-y işleminin sonucunu bulmak istiyorum. Bana verilmiş olan binary sayılar iki tabanında burada belirtilmiş.
+
+160
+00:36:43,676 --> 00:36:56,756
+2, 4, 6, 7 bitlik iki tane sayı var elimde. Bu iki sayı arasında çıkarma işlemi gerçekleştirmek istiyorum.
+
+161
+00:36:56,756 --> 00:37:08,196
+Çıkartma işlemini gerçekleştirirken X-Y işlemini yapabilmek için aslında toplama işleminden faydalanıyoruz.
+
+162
+00:37:08,196 --> 00:37:15,475
+Ve işlemi nasıl çözüyoruz? X artı TOOS komplement.
+
+163
+00:37:19,475 --> 00:37:22,416
+Niye Y yazıyorsam? Bir saniye.
+
+164
+00:37:33,012 --> 00:37:33,572
+Şöyle
+
+165
+00:37:40,115 --> 00:37:47,475
+Y sayısının ikiye tümleyenini alıp X ile topladığımda ne buluyorum? X eksi Y işlemini gerçekleştirmiş oluyorum.
+
+166
+00:37:47,475 --> 00:37:55,475
+O zaman Y sayısının ikiye tümleyenini bir yazalım.
+
+167
+00:37:56,615 --> 00:37:57,556
+Tooth complement
+
+168
+00:38:01,748 --> 00:38:18,008
+Y. Bununla ilgili Y sayısının komplementini alıp bir ekleyerek bulabilirim. Veya daha kestirme bir yolu var siz biliyorsunuzdur.
+
+169
+00:38:18,008 --> 00:38:25,147
+Y ne yapıyorduk? Hatırlayın. Bir sayının ikiye tümleyenini bulmak için.
+
+170
+00:38:29,460 --> 00:38:31,719
+Ersin'i çevirip başına bir mi ekliyoruz hocam?
+
+171
+00:38:32,759 --> 00:38:33,079
+Hayır.
+
+172
+00:38:34,940 --> 00:38:38,300
+Aman aman. En tehlikeli, en yanlış çözüm. Sakın.
+
+173
+00:38:40,800 --> 00:38:43,219
+Büyük sayıdan çıkartabiliriz. Değil mi?
+
+174
+00:38:45,439 --> 00:38:54,519
+En sağdan, biri görene kadar aynı. Biri gördükten sonra diğer bölümün komplementini alıyoruz.
+
+175
+00:38:54,519 --> 00:39:00,359
+Şimdi o zaman ben önce uzun yolu göstereyim ondan sonra kısa yolu göstereyim.
+
+176
+00:39:00,359 --> 00:39:03,860
+Y sayısının tuz komplementini bulmak istiyorum.
+
+177
+00:39:06,099 --> 00:39:09,180
+Y'nin ikiye tümleyenini bulmak istiyorum.
+
+178
+00:39:11,360 --> 00:39:14,299
+Y'nin komplementini alacağız dedik.
+
+179
+00:39:15,299 --> 00:39:17,839
+En baştaki biti birdi sıfır oldu.
+
+180
+00:39:17,839 --> 00:39:37,659
+1, 1, 1, 1, 2, 3 tane. Bir dakika. 1, 2, 3, 4 tane. Ondan sonra 0, 0. Bu ne oldu? Once komplement oldu. Yani komplementini aldım. Sonra 1 ekledim.
+
+181
+00:39:38,719 --> 00:39:40,479
+Ben de bunu söyledim hocam.
+
+182
+00:39:40,479 --> 00:39:45,799
+0, 1, 1, 1. 1 eklemek, başına 1 eklemek ne demek?
+
+183
+00:39:45,799 --> 00:39:47,799
+Hayır, hayır. Pardon, özür diliyorum.
+
+184
+00:39:47,839 --> 00:39:52,979
+Başına bir ekliyorum dediğin zaman en yüksek anlamlı biti anlaşılıyor.
+
+185
+00:39:52,999 --> 00:39:56,960
+Çok özür diliyorum hocam ben. Dersini çevirip bir ekliyoruz yani. Tamam tamam.
+
+186
+00:39:57,299 --> 00:40:02,639
+Başına bir ekliyorum dediğin zaman durdum yani. Orası yanlış geldi.
+
+187
+00:40:03,019 --> 00:40:04,539
+Yok yok yanlış söyledim hocam.
+
+188
+00:40:04,680 --> 00:40:10,579
+Evet. İkiye tümleyenini almış oldum. Şimdi ikiye tümleyeni almanın kestirme yolu da şu.
+
+189
+00:40:10,579 --> 00:40:31,339
+Y sayısını bakın buraya ikiye tümleyenini taşıyacağım. En düşük anlamlı bir bitte biri görene kadar aynı gidiyoruz demiştik. Burada biri gördük. Aynı. Ondan sonraki kısmın komplementini alıyorum. 0, 1, 1, 1, 1, 0. Bu da kestirme yolu.
+
+190
+00:40:31,339 --> 00:40:50,340
+Y sayısının ikiye tümleyenini bulmuş oldum. Daha sonra X artı tuz komplement Y dediğim zaman X eksi Y işlemini gerçekleştirmiş olacağım. O zaman şimdi X'i yazalım buraya. X bir sıfır, bir sıfır, bir sıfır, sıfır.
+
+191
+00:40:50,339 --> 00:41:02,759
+Tuz komplement Y ise şimdi bulduk 0, 1, 1, 1, 1, 0, 1.
+
+192
+00:41:02,759 --> 00:41:09,819
+Bu iki sayıyı topluyorum ve x-y işlemini yapıyorum.
+
+193
+00:41:10,699 --> 00:41:11,539
+1, 0.
+
+194
+00:41:19,923 --> 00:41:31,603
+Bu şekilde işlemi gerçekleştirdim. İşlem sonucu 7 bitti. Şurada gördüğümüz sonuç.
+
+195
+00:41:32,224 --> 00:41:38,703
+Şimdi sayının değerine bakacak olursam bu sayının değeri 10 tabanında 17'dir.
+
+196
+00:41:40,983 --> 00:41:46,104
+Bizim elimizdeki sayıların 10 tabanında karşılığı nedir? Bir de ona bakalım.
+
+197
+00:41:46,104 --> 00:42:06,144
+X sayısı 64 artı 16 artı 4'tür. Buradan ne çıkıyor sonuç? 84. Bu 84 10 tabanına göre.
+
+198
+00:42:06,143 --> 00:42:16,283
+Y sayısı ise 64 artı 3, 67, 10 tabanına göre.
+
+199
+00:42:19,063 --> 00:42:26,763
+84'den biz 67'yi çıkarmışız demek ki 10 tabanında bakacak olursak ve işlem sonucu 17 çıktı.
+
+200
+00:42:27,763 --> 00:42:35,863
+Şimdi şey şu, bu işlemin sonucu 17 çıktı fakat bir C biti yani keri biti çıktı.
+
+201
+00:42:36,144 --> 00:42:49,224
+Demek ki burada benim bu toplama işlem ya da çıkarma işleminde elimdeki sayılarda X büyük Y durumu vardı.
+
+202
+00:42:49,223 --> 00:42:53,463
+X büyük Y için çıkarma işleminin sonucu pardon
+
+203
+00:42:57,844 --> 00:43:12,804
+çıkarma işleminin sonucunda bir C biti çıktı. Bu C biti, bu işlemin sonucunda elde ettiğim C biti birse eğer, çok ilginç bir şey var burada bunu tarif eden aslında, borrow biti,
+
+204
+00:43:12,804 --> 00:43:18,883
+borrow biti, carry bitinin komplementi.
+
+205
+00:43:18,883 --> 00:43:24,683
+ve ben bu işlemin sonunda borrow bitini 0 buluyorum.
+
+206
+00:43:24,683 --> 00:43:42,683
+Yani X'i Y'den çıkarmak için herhangi bir borç almama gerek yok diyor bu bana ve o zaman B bitinin 0 çıkması, diğer bir deyişle carry bitinin 1 çıkması A sayısının B sayısından büyük olduğunu ya da X'in Y'den büyük olduğunun bir göstergesidir.
+
+207
+00:43:43,643 --> 00:43:48,043
+Biz burada aynı zamanda ne yapmış oluyoruz? Bir komparatör yapmış oluyoruz.
+
+208
+00:43:48,044 --> 00:44:01,803
+Bu örneği o yüzden göstermek istedim. Yani bir komparatör devresini bir aritmetik devre yardımı ile de oluşturabiliyoruz.
+
+209
+00:44:02,744 --> 00:44:04,323
+Buraya kadar sorunuz var mıdır?
+
+210
+00:44:07,827 --> 00:44:10,867
+yok. Güzel. O zaman bir de
+
+211
+00:44:15,155 --> 00:44:22,096
+Şurası unsigned değil, signed olacak. İkinci örneğimiz de bir işaretli sayılarla işlem yapma üzerine.
+
+212
+00:44:25,036 --> 00:44:35,395
+Add operation with signed numbers diyelim. İkinci örnekle ilgili. İkinci örnekte, şunları biraz temizlersek burayı kullanabiliriz.
+
+213
+00:44:45,844 --> 00:44:55,043
+Bunları not alıyorsunuzdur diye ümit ediyorum. Yani böyle çalışırken geri sonradan elinizde bir şeyler olması iyi olacaktır.
+
+214
+00:45:00,820 --> 00:45:12,939
+Şurayı signed yapacağız. İşaretli sayılarla işlem yapıyoruz. Bu defa bize iki tane sayı verilmiş yine ve sayılarımız işaret bitiyle birlikte verilmiş.
+
+215
+00:45:12,939 --> 00:45:34,879
+X sayısı artı 6'dır diyor, Y sayısı artı 13'dür diyor ve tuz komplement kullanarak 8 bitlik bir formda bu sayıları yazmamız ve aritmetik işlemleri gerçekleştirmemiz isteniyor.
+
+216
+00:45:34,879 --> 00:45:43,139
+Şimdi X sayısı artı altı, sekiz bit de yazacağım ben bunu.
+
+217
+00:45:43,139 --> 00:45:53,439
+0, 0, 0, 0, 01, 1, 0, 4, 5, 6 oldu. Bu iki tabanında verdim.
+
+218
+00:45:53,439 --> 00:46:12,079
+Y sayısı ise 13, 00, 00, 9, şu 12, yok 8 artı 4 mü? Evet 12, 13.
+
+219
+00:46:12,080 --> 00:46:25,940
+Bu şekilde iki tane 8 bitlik binary sayı var elimde. Bu sayılarla x-y işlemini yapmak istiyorum.
+
+220
+00:46:25,940 --> 00:46:38,420
+Y'nin ne yapacağız? Tuz komplementini alacağız. X artı tuz komplement y diyerek bu işlemi yapacağım.
+
+221
+00:46:38,419 --> 00:46:42,599
+X sayısını yazayım.
+
+222
+00:46:46,452 --> 00:46:58,591
+Y'nin ikiye tümleyenini alıp yazacağım. Sağ taraftaki bitkene bir geldi. İlginç bir şekilde. Hani biraz daha ötede olsaydı daha iyiydi ama neyse.
+
+223
+00:46:58,591 --> 00:47:14,011
+İlk biri gördükten sonra komplementini alıp yazıyoruz dedik. Bir, sıfır, sıfır, bir, bir, bir, bir. Bu da nedir? Y sayısının tuz komplementi.
+
+224
+00:47:17,556 --> 00:47:19,815
+Bu nedir? Burası x.
+
+225
+00:47:20,315 --> 00:47:21,996
+Bu iki sayıyı topluyorum.
+
+226
+00:47:23,996 --> 00:47:27,436
+1, 1 artı 1, 2, 1.
+
+227
+00:47:30,315 --> 00:47:32,436
+1, 1, 1, 1.
+
+228
+00:47:33,355 --> 00:47:37,755
+Bu şekilde bir işlem sonucu çıktı.
+
+229
+00:47:40,556 --> 00:47:42,175
+Ben ne yaptım?
+
+230
+00:47:43,175 --> 00:47:45,715
+Çıkartma işlemini yaptım şu anda değil mi?
+
+231
+00:47:45,855 --> 00:47:46,015
+Tamam.
+
+232
+00:47:47,556 --> 00:47:52,616
+çıkarma işlemini gerçekleştirdik.
+
+233
+00:47:52,736 --> 00:47:52,956
+Tamam.
+
+234
+00:47:53,495 --> 00:47:55,875
+Burada şuna dikkat edeceğiz.
+
+235
+00:47:58,096 --> 00:48:00,936
+İşaretli sayılarla işlem yaparken
+
+236
+00:48:00,936 --> 00:48:02,396
+overflow
+
+237
+00:48:02,396 --> 00:48:06,396
+taşma biti
+
+238
+00:48:06,396 --> 00:48:08,875
+bizim için önem kazanıyor.
+
+239
+00:48:09,816 --> 00:48:13,475
+Taşma biti nasıl hesaplanır konusu var.
+
+240
+00:48:17,556 --> 00:48:23,316
+Burada da şu önemli. İki tane pozitif sayı var elimde.
+
+241
+00:48:24,456 --> 00:48:29,316
+Fakat ne yaptım? Ben x-y işlemi yaptım.
+
+242
+00:48:29,316 --> 00:48:49,115
+Bu toplama işleminin sonunda işaret bitine gelen elde ile işaret bitinden çıkan elde bitleri arasında bir XOR işlemi yapılarak bulunuyor bu taşma biti.
+
+243
+00:48:49,956 --> 00:48:54,676
+Ve toplama işlemi sırasında oluşuyor.
+
+244
+00:48:54,816 --> 00:48:57,136
+Çıkarma işleminde overflow oluşmaz.
+
+245
+00:48:57,136 --> 00:48:58,576
+Bu da önemli bir konu.
+
+246
+00:48:58,575 --> 00:49:11,355
+O yüzden belki burada taşma olup olmadığının kontrolünü bu çıkarma işlemi için yapmayalım da bu iki sayıyı topladığımızda taşma var mıdır görmek için yapalım.
+
+247
+00:49:12,035 --> 00:49:19,515
+Tabii ki aslında olmayacak çünkü iki sayı da oldukça küçük ve 8 bitlik bir alana sığabilecek bir sayı.
+
+248
+00:49:19,515 --> 00:49:28,515
+Dolayısıyla burada toplama işlemini x artı y'yi yapmak istiyorsam eğer toplama işleminin sonucunu aşağıya yazalım.
+
+249
+00:49:28,576 --> 00:49:37,656
+1, 1, 0, 0, 1, 0, 0, 0.
+
+250
+00:49:38,456 --> 00:49:41,496
+Bu toplama işleminin sonucunu gösteriyor.
+
+251
+00:49:41,695 --> 00:49:45,695
+16 artı 3, 19 yapıyor.
+
+252
+00:49:46,776 --> 00:49:51,656
+Ve bu işlemin sonunda taşma var mıdır diye kontrol etmek istiyorum.
+
+253
+00:49:52,256 --> 00:49:55,115
+Taşma işlemini şöyle bunun üzerinden anlatalım.
+
+254
+00:49:55,115 --> 00:50:03,856
+İşaret bitine gelen elde ile işaret bitinden çıkan elde arasında bir XOR işlemi yapılıyor.
+
+255
+00:50:03,936 --> 00:50:11,975
+İkisi birbirinden farklı ise taşma var, ikisi aynı ise taşma yok şeklinde yorumlanıyor.
+
+256
+00:50:12,455 --> 00:50:23,235
+Şimdi bu yaptığımız işlemde işaret bitine gelen elde, ben bu toplama işlemini yaparken işaret bitine gelen elde sıfırdır.
+
+257
+00:50:23,235 --> 00:50:44,275
+İşaret bitinden dışarıya doğru da herhangi bir elde biti çıkmamıştır. O yüzden overflow biti bu iki sıfır işlemin sonucunda no overflow diyor bize. Taşma olmadığını söylüyor.
+
+258
+00:50:44,276 --> 00:50:51,556
+Bu işlemi biraz daha büyük iki sayı arasında gerçekleştirebiliriz.
+
+259
+00:50:51,895 --> 00:50:54,276
+Taşma olan bir örnek görmek istiyorsak.
+
+260
+00:50:55,416 --> 00:51:00,436
+Bununla ilgili ben size bir sayı örneği vereyim.
+
+261
+00:51:01,216 --> 00:51:03,035
+Onu da birlikte yapalım.
+
+262
+00:51:04,695 --> 00:51:09,235
+Şurada bir işaretli sayılarla ilgili bir açıklama var.
+
+263
+00:51:09,335 --> 00:51:11,455
+Önce onu isterseniz konuşalım.
+
+264
+00:51:15,092 --> 00:51:21,072
+Sign-Tools komplement yapısını, işaretli sayıları temsil etmek için kullanıyoruz.
+
+265
+00:51:22,351 --> 00:51:29,611
+Bütün bilgisayar ve işlemci yapısı içerisinde bu yapı kullanılıyor işaretli sayılar için.
+
+266
+00:51:30,512 --> 00:51:35,631
+Pozitif sayılar ve aşağıda gördüğümüz negatif sayılar var.
+
+267
+00:51:36,631 --> 00:51:42,711
+Bu Sign-Tools komplement de artı sıfır ya da eksi sıfır diye bir ayrım söz konusu değil.
+
+268
+00:51:42,711 --> 00:51:45,351
+O yüzden bu satır bizim için geçerli değil.
+
+269
+00:51:46,771 --> 00:51:48,711
+Pozitif sayılarda...
+
+270
+00:51:53,780 --> 00:52:00,240
+Pozitif sayılarda gördüğünüz gibi en yüksek anlamlı bit işaret biti ve sıfır.
+
+271
+00:52:01,419 --> 00:52:15,719
+Aşağıda tablonun alt tarafında gördüğünüz, eksi birden eksi sekize kadar olan bölümde ise işaret biti negatif sayıları temsil etmek için bir olmuş.
+
+272
+00:52:15,719 --> 00:52:24,799
+Pozitif sayılarda sıfır, negatif sayılarda bir olduğunu görüyorsunuz.
+
+273
+00:52:24,799 --> 00:52:40,739
+Şimdi burada şu önemli sıfırdan yediye kadar olan sayıları bu şekilde işaretlediğimizde gördüğünüz gibi sıfırın işareti de pozitif sayı gibi görünüyor.
+
+274
+00:52:40,739 --> 00:52:58,220
+O nedenle pozitif sayılarda bir toplamda 8 kombinasyon var ama bu kombinasyonlardan bir tanesi 0 için ayrıldığından gösterebildiğimiz en büyük pozitif sayı 7 oluyor.
+
+275
+00:52:58,219 --> 00:53:09,639
+Negatif sayılarda ise eksi birden eksi sekize kadar fakat şuna dikkat etmem gerekiyor.
+
+276
+00:53:09,639 --> 00:53:17,219
+Eksi bir sayısını ifade etmek için sıfır sıfır sıfır bir nedir? Artı birdir.
+
+277
+00:53:17,219 --> 00:53:33,019
+Bunun önce komplementini almam lazım. 1, 1, 1, 0'dır ve buna 1 ilave edersem eğer tüm bitlerin 1 olduğunu görebilirsiniz. Bu nedir? Eksi 1'dir.
+
+278
+00:53:33,019 --> 00:53:44,819
+Eksi 1 bu da aklınızda kalsın önemli bir konu. Yine işlemci içerisindeki aritmetik uniti tasarlarken çok karşımıza çıkacak.
+
+279
+00:53:44,820 --> 00:53:55,900
+eksi bir sayısının tuz komplement binary gösteriminde bütün bitler bir olmuş oluyor.
+
+280
+00:53:56,640 --> 00:54:04,320
+Ve eksi sekiz burada gördüğümüz gibi bir sıfır sıfır sıfır oluyor.
+
+281
+00:54:04,839 --> 00:54:08,080
+Pozitif ve negatif sayıları bu şekilde ayırabiliriz.
+
+282
+00:54:08,080 --> 00:54:27,000
+Şimdi elimizde 4 bit vardı. Benim bu 4 bit ile negatif tarafta gösterebildiğim en küçük sayı eksi 8 iken pozitif tarafta gösterebildiğim en büyük sayı artı 7 oluyor.
+
+283
+00:54:27,619 --> 00:54:37,720
+Ne dedik? Bu pozitif tarafta sıfırda pozitif sayı gibi göründüğü için bu 8 kombinasyon yerine 7'ye düşüyor.
+
+284
+00:54:38,080 --> 00:55:00,080
+pozitif taraf. Bunu 4 bit için bu şekilde yazdık. 8 bitlik bir registerda düşünecek olursak o zaman normalde 8 bitte ben 256 farklı kombinasyon gösteriyorum ama bunun yarısı pozitif yarısı negatif olacağı için 128 kaldı.
+
+285
+00:55:00,080 --> 00:55:16,260
+eksi 128'den artı 127'ye kadar bütün kombinasyonları gösterebiliyorum. 8 bitlik bir sayı şeyinde, register yapısı içerisinde.
+
+286
+00:55:16,260 --> 00:55:20,740
+Şimdi bu overflowla ilgili bir örnek daha göstereceğim demiştim.
+
+287
+00:55:20,739 --> 00:55:38,699
+Signed numbers işaretli sayılarla çalışıyorum ve işaretli sayılarda bir overflow üreten bir örnek verelim dedik.
+
+288
+00:55:38,699 --> 00:55:45,699
+Örneğim şu, artı 70 ve artı 80 gibi iki tane
+
+289
+00:55:47,891 --> 00:55:54,151
+10 tabanında 2 sayı verdim. Bu 2 sayıyı toplamak istiyorum.
+
+290
+00:55:57,876 --> 00:56:24,255
+Ama binary olarak yapacağız tabii işlemleri. Ben bu iki sayıyı 8 bitle ifade edeceğim. O zaman 8 bitle ifade ediyorsam sayının 8 bitlik bir rejistere sığmaması demektir overflow. Ve overflow var mı yok mu bunu tespit etmek istiyorum.
+
+291
+00:56:24,255 --> 00:56:27,815
+Bu örneği bitirelim ara vereceğim arkadaşlar.
+
+292
+00:56:27,815 --> 00:56:41,596
+Artı 70 sayısının binary karşılığı 0, 1, 0, 0, 1, 1, 0.
+
+293
+00:56:41,596 --> 00:56:48,315
+Artı 80 ise 0, 1, 0, 1.
+
+294
+00:56:54,255 --> 00:56:59,255
+01010000
+
+295
+00:56:59,255 --> 00:57:04,315
+Bu iki sayıyı topluyorum.
+
+296
+00:57:06,135 --> 00:57:07,236
+Binary olarak.
+
+297
+00:57:14,036 --> 00:57:37,876
+Şimdi bunu yorumlayalım. Oluşan sonuca baktığımız zaman ben bunu 8 bitlik bir registerda ifade edebiliyorum ama lütfen şuna dikkat edelim. Ben iki tane pozitif sayıyı topladım. İşlem sonucu negatif gibi görünüyor. Neden? Çünkü toplama işleminin sonucunda oluşan işaret biti dışarı taştı.
+
+298
+00:57:37,876 --> 00:57:46,596
+ve artık 8 bite sığmıyor bir 9. bite ihtiyacım var benim bu toplama işleminin sonucunu ifade edebilmem için.
+
+299
+00:57:46,596 --> 00:57:56,116
+Ama benim kullandığım register 8 bitlik bir register o zaman ne oluyor bu sayı negatif bir sayı gibi görünüyor.
+
+300
+00:57:56,936 --> 00:57:59,756
+Ve bu duruma biz taşma diyoruz.
+
+301
+00:58:00,095 --> 00:58:04,595
+Overflow oluşmuş demektir.
+
+302
+00:58:04,595 --> 00:58:17,115
+Peki overflow oluştuğunu nasıl tespit edebiliriz bu aritmetik işlemi sonucunda? İşlemci bunu nasıl anlayacak? Şimdi ona bakalım.
+
+303
+00:58:18,795 --> 00:58:30,075
+Toplama işlemini yaparken işaret bitine gelen elde bitine, eldeye bakacağım. 1 artı 1 dedim. 2 işlem sonucu 0, elde biti 1.
+
+304
+00:58:30,076 --> 00:58:58,515
+1'i buradaki toplama kattım. 0 artı 0 artı 1 dedim. İşlem sonucunu 1 yazdım. Buradan dışarıya doğru herhangi bir elde çıkışı olmadı. 0 yani. Bu iki elde biti arasında XOR işlemi yapacağım. 0 XOR 1 işleminin sonucu 1 çıktığı için bu bana diyor ki toplama devresinde kullandığım bir XOR kapısı var.
+
+305
+00:58:58,515 --> 00:59:13,075
+Bunun çıkışı 1 olduğunda bana bu işlemin sonunda overflow occurred diyor. Bir overflow oluşmuştur diyor. Ve bunu sinyalini üretmiş oluyorum.
+
+306
+00:59:13,915 --> 00:59:24,075
+Evet bu işaretli sayılarla zaten assembly dersinde de görmüşsünüzdür. Çalışıyoruz.
+
+307
+00:59:24,075 --> 00:59:44,695
+İşaretli sayılarla işlem yaparken taşma biti, overflow biti, zero biti ve negate dediğimiz işaret biti anlamlı oluyor.
+
+308
+00:59:44,696 --> 01:00:11,095
+Bu üç bite odaklanıyoruz işaretli sayılarla çalışırken ama çalıştığımız işlem yaptığımız sayılar işaretsiz ise unsigned bir sayı üzerinde işlem yapılmışsa kesinlikle overflow biti kullanılmıyor.
+
+309
+01:00:11,095 --> 01:00:24,495
+sadece carry bitine bakılıyor. Sadece carry biti önem kazanıyor. Unsigned işaretsiz sayılarla işlem yaptığımızda.
+
+310
+01:00:24,495 --> 01:00:40,095
+Az önce yapmış olduğumuz işlemde 70 ile 80'i toplamıştık. 150 çıktı işlem sonucu. Bu tarafta ben bu işlemi 10 tabanında yapacak olursam.
+
+311
+01:00:40,095 --> 01:00:50,635
+ve şunu biliyoruz 8 bitlik bir registerda benim gösterebileceğim işaretli sayı burada pozitif bir sayıdan bahsediyoruz.
+
+312
+01:00:51,295 --> 01:00:59,015
+İşaretli sayılarda 8 bitlik bir registerda az önce belirttiğim gibi eksi 128'den
+
+313
+01:00:59,603 --> 01:01:18,183
+artı 127'ye kadarlık bir aralıkta sayıları ifade edebiliyorum ve tutabiliyorum. Bu işlem sonucu 150 çıktığı için bu aralığın dışında ve 8 bit de ifade edilemiyor. O nedenle overflow oluşuyor.
+
+314
+01:01:18,183 --> 01:01:30,543
+Ama biz bu işlemleri tabii ki işlemci içerisinde binary olarak yapıp bir devre elemanı ile bu taşma bitini oluşturmamız gerekiyor.
+
+315
+01:01:30,543 --> 01:01:37,483
+O nedenle overflow için bir XOR kapısının kullanılması gerektiğini söylüyoruz.
+
+316
+01:01:38,383 --> 01:01:46,743
+Evet sevgili arkadaşlar sorunuz yoksa eğer 10 dakika ara veriyorum. Var mı soru?
+
+317
+01:01:48,183 --> 01:01:55,103
+Varsa arada yazın chatten ders dönüşü bakarız.
+
+318
+01:01:57,103 --> 01:01:58,863
+10 dakika ara.
+
+319
+01:16:22,612 --> 01:16:37,711
+Evet, merhaba arkadaşlar. Derse kaldığımız yerden devam edeceğim. Şu an derste 76 kişi var görünüyor. Bakayım burada mısınız? Bir el kaldırın. Raise your hand please. Kaç kişi elini kaldırıyor? Bir göreyim bakayım.
+
+320
+01:16:37,711 --> 01:17:00,812
+Bir kontrol yapalım. 29 kişi, evet 35 kişi şu an. 38 oldu. 41 participant raise diyor. Evet 30 kişi yok ortada yalnız. Hadi bakalım.
+
+321
+01:17:00,812 --> 01:17:18,891
+Evet, el kaldırmayı bulamadınız. Eğer uygulamayı kurmadıysanız çıkmayabiliyor. Önce kurmuş olmanız gerekiyor. Yani browserdan açtığınızda sadece çıkmayabilir.
+
+322
+01:17:24,435 --> 01:17:30,815
+Peki, teşekkür ediyorum. Çoğunluğum burada olması mutlu etti beni.
+
+323
+01:17:45,043 --> 01:17:50,043
+En son konuştuğumuz konu...
+
+324
+01:17:53,844 --> 01:18:15,783
+Evet, bir N-bit adder, subtractor devresi var ve çıkarma işlemi yaptık. Çıkarma işleminin sonucuna göre bir taşma olmadığını tespit etmek istiyorsak eğer kullanmamız gereken yapı, devre şeması burada gösterilmiş.
+
+325
+01:18:15,783 --> 01:18:36,983
+Burada sözünü ettiğimiz overflow biti işaretli sayılarla tekrar söylüyorum signed numbers için geçerli.
+
+326
+01:18:36,983 --> 01:18:52,143
+Eğer işaretli sayılarla işlem yapıyorsak değerlendirmemiz gereken taşma, V biti, bir Z biti ve bir de N biti var dedik.
+
+327
+01:18:52,143 --> 01:19:05,204
+Aslında işlemci bu bitlerin hepsini, bu flaglerin hepsini bir devre elemanıyla generate ediyor, üretiyor.
+
+328
+01:19:05,524 --> 01:19:11,303
+Ama biz değerlendirmede hangilerini dikkate alacağımıza biz karar veriyoruz.
+
+329
+01:19:11,763 --> 01:19:17,323
+Neye göre? İşaretli mi, işaretsiz mi sayı ona bakıyoruz ve ona göre karar veriyoruz.
+
+330
+01:19:17,323 --> 01:19:32,683
+Burada gördüğünüz gibi taşma biti toplama devresinin ürettiği taşma biti yani elde biti işaret bitinden çıkan elde Cn diye gösterilmiş.
+
+331
+01:19:32,863 --> 01:19:37,523
+İşaret bitine gelen elde biti Cn-1 diye gösterilmiş.
+
+332
+01:19:37,523 --> 01:19:40,343
+Bu iki bit XOR'lanarak oluşturuluyor.
+
+333
+01:19:40,344 --> 01:19:52,803
+Zaten toplayıcı devrenin çıkışında gördüğümüz carry alt ucu burada gördüğümüz J-bitini oluşturuyor. Ama J-bitini ne zaman dikkate alıyorum? Unsigned.
+
+334
+01:20:00,851 --> 01:20:13,091
+İşaretsiz sayılarla işlem yaparken C bitini dikkate alıyorum. İşaretli sayılarla işlem yaparken V bitini yani overflow bitini dikkate alıyoruz.
+
+335
+01:20:15,591 --> 01:20:25,911
+Peki, şimdi slide'a geri dönelim. Bunlar biraz egzersizdi. Biraz egzersiz yaparak ilerleyelim istedik.
+
+336
+01:20:25,911 --> 01:20:33,731
+Ardışıl devre tasarımına geçeceğiz.
+
+337
+01:20:33,872 --> 01:20:37,631
+Squential logic konusuna geçeceğiz.
+
+338
+01:20:37,631 --> 01:20:41,372
+Ondan önce burada bir three state buffer konusu var.
+
+339
+01:20:41,851 --> 01:20:47,631
+Three state bufferler özellikle...
+
+340
+01:20:51,315 --> 01:21:01,895
+işlemci içerisinde veri yolu, adres yolu gibi bas yapılarını oluştururken kullandığımız bir devre elemanı.
+
+341
+01:21:02,535 --> 01:21:04,895
+Lojikte öğrenmemiş olabilirsiniz.
+
+342
+01:21:06,276 --> 01:21:13,435
+Tristate Buffer ile ilgili en temel formu aslında buffer ne demek?
+
+343
+01:21:13,435 --> 01:21:19,255
+Yani bir yerden bir yere bu işareti taşıyan, geçiren bir devre elemanı.
+
+344
+01:21:19,255 --> 01:21:35,856
+Yani X girişini F çıkışına aktarıyor. Ama X girişini F çıkışına aktarırken kontrol eden bir E-enable ucu var. Ve bunu da kontrol ediyoruz. Ne yapıyor enable ucu?
+
+345
+01:21:35,855 --> 01:21:49,695
+Enable ucu sıfır olduğunda F çıkışında High Z dediğimiz yüksek direnç, yüksek empedanslı çıkışı üretiyor.
+
+346
+01:21:51,855 --> 01:22:00,335
+E ucu, Enable ucu bir olduğunda sadece girişindeki işaret neyse bunu çıkışına aktarıyor.
+
+347
+01:22:00,335 --> 01:22:09,555
+Three state buffer dediğimiz buradaki three state'de yani üç tane state'imiz var aslında.
+
+348
+01:22:10,315 --> 01:22:21,775
+Sıfır bir veya high Z dediğimiz yüksek empedanslı yüksek direnç gösteren çıkış demek.
+
+349
+01:22:21,775 --> 01:22:36,975
+Yüksek dirençli bir çıkış üretmek demek bu output'u iki devrenin çıkışını birbirine bağlayabilme özgürlüğü veriyor bize. Böyle bir avantajı var.
+
+350
+01:22:36,975 --> 01:22:49,095
+Normalde mesela bir AND kapısı ve bir burada varsayalım ki bir OR kapısı olsun, bir üçüncü AND kapısı olsun hiç önemli değil.
+
+351
+01:22:49,175 --> 01:22:53,335
+Biz bunların çıkışlarını bu şekilde bağlayamayız.
+
+352
+01:22:54,415 --> 01:22:55,575
+Neden bağlayamayız?
+
+353
+01:22:55,575 --> 01:23:13,095
+Çünkü gördüğünüz end kapısının çıkışı 1 ise diğerinin çıkışı 0 ise burası 5 volt demek 5 volttan 0 volta doğru bir akım akması söz konusu olur ve altta gördüğümüz or kapısından dumanlar çıkar.
+
+354
+01:23:14,135 --> 01:23:23,756
+Böyle bir bağlantıyı yapamayız normal koşullar altında böyle bir bağlantı yani iki devre elemanı lojik devre elemanının çıkışını birbiriyle bağlayamazsınız.
+
+355
+01:23:23,756 --> 01:23:39,655
+Bu yasak. Bu şekilde bir bağlantı kullanmak mümkün değil. Ama eğer three state buffer gibi bir devre elemanı varsa elinizde bunların çıkışlarını birbirine bağlayabiliyorsunuz.
+
+356
+01:23:39,655 --> 01:23:48,116
+Bize böyle bir özgürlük sunuyor bu devre elemanı. Neden? Çünkü birinin çıkışını her zaman high set olacak.
+
+357
+01:23:48,116 --> 01:24:08,116
+sadece bir tanesinden çıkış üreteceğim diğerlerinin HIZET olacağını garanti edeceğim derseniz eğer bu Tristate Buffer'ı bunun Enable ucu var. Burada bir başka Tristate Buffer var. Bu ikisini birbiriyle çıkışlarını bağlayabiliyorsunuz.
+
+358
+01:24:08,116 --> 01:24:28,435
+Ama hangi koşul altında? Bunun enable ucu birken öbürünün sıfır olmasını garantilemeniz gerekiyor. Şöyle bir inverterdan geçirip öbürünün enable ucunu bağlarsak eğer bu durumda bu iki three state bufferı birbiriyle kısa devre edebiliyoruz.
+
+359
+01:24:28,435 --> 01:24:33,355
+Çünkü enable ucu sıfırken yukarıdaki
+
+360
+01:24:35,091 --> 01:24:46,671
+Three-State Buffer'ın çıkışı high-z olacak. Yüksek empedanslı olacak. Alttakinin enable ucu 1 olacak ve varsayalım ki bunun girişinde de 1 vardı, çıkışında 1 oldu.
+
+361
+01:24:47,231 --> 01:24:58,571
+1 olsa bile bu artı 5 volttan bu tarafa doğru akım akmıyor. Neden? Çünkü çok yüksek bir direnç var ve bu yüksek direnç sebebiyle aslında şöyle yorumlanıyor.
+
+362
+01:24:58,571 --> 01:25:05,951
+Burada hayzet olması demek bu hattın kopuk olduğu gibi algılanıyor.
+
+363
+01:25:06,071 --> 01:25:08,751
+Bunda bir renk ayarı bir şey vardı sanki.
+
+364
+01:25:08,751 --> 01:25:11,992
+Bir saniye bir yerlerde ama bulacağım onu.
+
+365
+01:25:13,391 --> 01:25:14,651
+Şuradan yapıyorduk.
+
+366
+01:25:18,751 --> 01:25:28,051
+Buranın hayzet olması demek şu hattın kopukmuş gibi yani hiç devreye bağlı değilmiş gibi algılanmasına sebep oluyor.
+
+367
+01:25:28,051 --> 01:25:39,812
+ve içeriye doğru bir akım akmıyor ve bu üstteki tristate buffer'ın yanması, üstünden dumanlar çıkması diye bir durum söz konusu olmamış oluyor.
+
+368
+01:25:40,331 --> 01:25:46,991
+Tristate buffer'ın genel olarak kullanım amacını bu şekilde özetlemiş oldum.
+
+369
+01:25:46,992 --> 01:26:00,472
+Akım mı düşürüyor? Biliyorsunuz akım hep direncin düşük olduğu kola doğru akar ve voltajın düşük olduğu kola doğru akar. Doğru mu?
+
+370
+01:26:00,472 --> 01:26:09,791
+Burada ne yapıyoruz? Yüksek direnç olduğu için tekrar söylüyorum aşağıdaki three state buffer'ın çıkışında bir 1 vardı.
+
+371
+01:26:09,791 --> 01:26:31,791
+Lojik 1 yani artı 5 volt var. Bunun çıkışından gelen akım buradan içeriye doğru üstteki bufferın içine doğru akamıyor. Neden? Çünkü yüksek direnç gösteriyor. O yüzden yani aslında akım var ama o yönde akamadığı için üstteki tristate bufferı korumaya almış oluyorsunuz.
+
+372
+01:26:31,791 --> 01:26:50,331
+Hi-Z çıkış üreterek çıkışında. Ama tri-state bufferları tekrar söylüyorum burada iki tanesini bir arada bağladım. Bunu sekiz tanesini bir arada da bağlayabilirim. Neyi garantilemem gerekiyor? Sekiz taneden sadece bir tanesi enable olacak diğerlerinin hepsi disable olacak.
+
+373
+01:26:50,331 --> 01:27:03,211
+Bunu garantiliyorsanız eğer 8 tane buffer'ın çıkışını birbiriyle kısa devre edip tek bir çıkış olarak devre oluşturabiliyorsunuz.
+
+374
+01:27:04,491 --> 01:27:06,291
+Burayla ilgili sorunuz var mı?
+
+375
+01:27:09,811 --> 01:27:24,051
+Anlaşıldı galiba. Burada three state buffer'ın çeşitleri gösterilmiş. Four types of three state buffers demiş. Bu gördüğümüz, az önce benim anlattığım formu.
+
+376
+01:27:24,051 --> 01:27:45,652
+Bunun değişik formları nedir? Mesela sağ taraftakinde girişin tersini alan var. Bu tristate buffer, F çıkışı, enable ucu 1 olduğunda X'in komplementini çıkışta gösteriyor. Böyle bir farklı yapı var.
+
+377
+01:27:45,652 --> 01:28:04,392
+Mesela yukarıda enable ucu birken çalışıyordu. Bu enable ucu birken aktifti bu üstteki. Altta bunun değişik bir formunu göstermiş. Nedir bu yapıda? Enable ucu logic sıfırdayken enable oluyor. Birdeyken disable oluyor gibi.
+
+378
+01:28:04,391 --> 01:28:10,211
+ve bunun bir dördüncü kombinasyonu en sağda gördüğümüz şekliyle.
+
+379
+01:28:12,891 --> 01:28:16,291
+Three-State Buffer'ı anlamadım diye yazmış arkadaşlar.
+
+380
+01:28:16,291 --> 01:28:24,651
+Three-State Buffer, girişteki işareti çıkışa aktaran sadece bir buffer ileten bir kanal gibi düşünün.
+
+381
+01:28:24,992 --> 01:28:33,191
+Ama bu kanalın ne zaman açık, ne zaman kapalı olduğuna karar veren bir enable ucu var.
+
+382
+01:28:33,191 --> 01:28:44,711
+Bu enable ucu sıfırken çıkışa high Z yüksek direnç gösteren bir çıkış oluyor.
+
+383
+01:28:45,711 --> 01:28:51,371
+Enable ucu bir olduğunda ise kanal açılıyor ve girişteki işaret neyse çıkışa aktarılıyor.
+
+384
+01:28:52,611 --> 01:28:54,032
+Bu şekilde çalışıyor dedik.
+
+385
+01:28:54,032 --> 01:29:00,511
+High Z'in anlamı ise yüksek direnç, buradaki Z dediğimiz yüksek direnci gösteriyor.
+
+386
+01:29:00,511 --> 01:29:15,411
+ve bu yüksek dirençten dolayı aslında iki tane tree state buffer'ı burada gördüğümüz gibi iki tane tree state buffer'ı şu verdiğim çizimde.
+
+387
+01:29:16,751 --> 01:29:25,331
+İki tane tree state buffer'ın çıkışını birbiriyle bağlayabiliyoruz dedik. Bu çok önemli bir özellik. Bunu normal kapılarda yapamıyoruz.
+
+388
+01:29:25,332 --> 01:29:31,432
+Bakın bir AND kapısıyla bir OR kapısının çıkışını şu şekilde kısa devre edemiyorum.
+
+389
+01:29:31,932 --> 01:29:36,871
+Sadece ne yapabiliyorum? İkisinin çıkışını alıp bir başka devre elemanına giriş olarak verebiliyorum.
+
+390
+01:29:37,731 --> 01:29:54,412
+O nedenle bu devre elemanı birden fazla three state buffer'ı çıkışını burada gördüğüm gibi kısa devre ederek bir çıkış üretmemi sağlıyor.
+
+391
+01:29:54,411 --> 01:30:00,531
+Bilgisayar donanımı içerisinde nerede kullanılıyor diye sormuş Muhammed Hakan.
+
+392
+01:30:01,411 --> 01:30:13,051
+Bas yapısını oluşturmak için yani veri yolu, data bus dediğimiz bas yapısını işlemcinin veri yolunu oluşturmak için kullanıyoruz three state bufferı.
+
+393
+01:30:13,051 --> 01:30:33,171
+Mesela 8 bitlik veri yolu diyoruz. 8 bitlik veri yolunu oluşturmak için 8 tane 3-state bufferı burada farklı kanallardan gelen, registerlardan gelen bir sayıyı göstermek için o yapıda bu 3-state bufferları kullanacağız.
+
+394
+01:30:33,171 --> 01:30:39,171
+Zaten onları yeri geldiğinde anlatacağım. Burada sadece malzemeyi anlatmak istedim.
+
+395
+01:30:39,172 --> 01:30:49,612
+Bası oluştururken nasıl kullanıldığı ile ilgili örnekler ilerleyen haftalarda anlatacağım.
+
+396
+01:30:49,612 --> 01:30:59,071
+Değişik formları var dedik. Bunları gördüğümüz zaman nasıl çalıştığını bize doğruluk tablosu verilmese bile tahmin edebilmelisiniz.
+
+397
+01:30:59,211 --> 01:31:07,871
+Çünkü buradaki standart grafik sembolde kullanılan işaretler bize bir ip ucu veriyor.
+
+398
+01:31:09,140 --> 01:31:26,580
+Burası, üstte işte enable ucu birken çalışır, bu sıfırken enable olur. Bunun çıkışında bir not kapısı var gibi yorumları yapabiliyor olmanız lazım. Bu standart grafik işaretler bize bunu gösteriyor.
+
+399
+01:31:28,980 --> 01:31:37,159
+Peki, dersimizin, bu haftaki dersimizin ikinci bölümü kombinasyoneli bitirdik.
+
+400
+01:31:37,159 --> 01:31:45,919
+sequential circuit design kısmı, artificial devre elemanı olarak flip-flopları kullanıyoruz.
+
+401
+01:31:45,919 --> 01:31:53,099
+Bu kullandığımız flip-flopları, şimdi burada biraz özetleyeceğim size.
+
+402
+01:32:04,979 --> 01:32:27,279
+Yani şurada belki bunun üzerinden kısaca geçebiliriz. Ardışıl devre dediğimiz zaman bir kombinasyonel lojik bloğumuz var. Burada gördüğümüz gibi. Bir de state holding element dediğimiz flip-floplarımız var. Bu flip-flopların bir clock işaretiyle çalıştığını biliyoruz.
+
+403
+01:32:27,279 --> 01:32:41,939
+Clock işareti bir kare dalga ve bu kare dalganın her bir periyodu, işte burası t, t artı bir, t artı iki periyotları diyelim.
+
+404
+01:32:42,419 --> 01:32:49,099
+Bu periyotların her biri birer state olarak geçiyor ve bir state'den bir sonraki state'e geçiyor.
+
+405
+01:32:49,099 --> 01:33:11,060
+Burada present state ifade etmek için ST'yi gösterirken ST artı bir bir sonraki periyotta ne olacağını bize gösteriyor. Bu clock işareti periyotlarıyla ilişkilendiriyoruz ve sonuçta biz bu iki bloğu kombinasyonel lojik ve flip-flopları bir arada kullanarak devre tasarımı yapıyoruz.
+
+406
+01:33:11,060 --> 01:33:34,179
+Bu ardışıl devre tasarımında leç ve filiflop dediğimiz iki ayrı yapı var. Şimdi leçlerle filifloplar arasındaki fark nedir'i burada anlatıyor. Bunlar tabi lojik devrelerde muhakkak gördünüz. Kısaca anlatacağım aralarındaki farkı. Leç ve filiflop arasındaki farkı.
+
+407
+01:33:34,179 --> 01:33:59,799
+Önce burada leç konusu anlatılmış. İki tane önemli devre elemanı diyelim. Biri SR leç, bir de D tipi leç, D type leç verilmiş.
+
+408
+01:33:59,799 --> 01:34:22,360
+SR latch'in baktığımız zaman clock işareti sıfırken SR girişleri ne olursa olsun QT artı bir dediğimiz next state için QT demiş yani no change bir önceki state'de ne varsa o görünür diyor.
+
+409
+01:34:22,359 --> 01:34:33,199
+Clock işareti 1 olduğunda SR girişleri yani clock işareti 1 iken bu enable oluyor ve SR girişlerine bakılıyor.
+
+410
+01:34:33,199 --> 01:34:39,079
+0-0, 0-1, 1-0 ve 1-1 olması durumuna göre buradaki kombinasyonları görüyoruz.
+
+411
+01:34:39,479 --> 01:34:41,939
+Fakat SR ile için şöyle bir özelliği var.
+
+412
+01:34:41,939 --> 01:34:53,259
+S ve RG girişlerinin her ikisi de birse eğer burada bizim undefined dediğimiz bir durum söz konusu oluyor.
+
+413
+01:34:53,259 --> 01:35:07,199
+Ama diğer CASE'ler için bunu kullanabiliyoruz. Mesela 0-0 ise SR girişleri. Yine next state'de no change. Bir değişiklik yok diyor.
+
+414
+01:35:07,200 --> 01:35:18,300
+SR girişlerinin ismi set ve resetten geliyor. S ve R kısaltmaları. Burada hangisinin aktif olduğuna bakıyorum.
+
+415
+01:35:18,300 --> 01:35:35,920
+0-1 olduğunda reset aktif demek ki çıkış reset olacak. Burada set aktif demek ki çıkış set olacak. Hem set hem reset ucu aktif olduğunda undefined dediğimiz durumu gösteriyor bu SR-leç.
+
+416
+01:35:35,920 --> 01:36:03,080
+SR Lech'in blok şamasını burada vermiş mi? Vermiş. Şurada görüyorsunuz. Standart grafik sembolüne baktığımız zaman clock girişinin, şuradaki clock girişinin seviye ile clock işaretinin şöyle diyelim pozitif bölümünde sadece işlem yapar anlamına geliyor bu.
+
+417
+01:36:03,859 --> 01:36:11,279
+Birken, clock girişinde bir gördüğü süre boyunca işlem yapar anlamına geliyor.
+
+418
+01:36:11,899 --> 01:36:17,099
+Benzer bir devre elemanı bu sefer burada D-type için verilmiş.
+
+419
+01:36:17,099 --> 01:36:28,280
+D-type, leç için verilmiş ve clock işareti lütfen dikkat yine lojik birdeyken işlem yapar diyor.
+
+420
+01:36:28,280 --> 01:36:44,479
+Şimdi bu bir latch. Bu latch'in clock girişinde 0 varsa, D girişi ne olursa olsun, next state'i present state olur diyor. Mevcutta ne varsa onu tutuyor.
+
+421
+01:36:44,479 --> 01:37:01,679
+Clock girişi 1 olduğunda ise D girişinde ne varsa çıkışta da onu görüyoruz. Next state de de onu görüyoruz. Şimdi bunu time diagramda çok güzel anlatmış bence. Lütfen buna dikkat edin.
+
+422
+01:37:01,679 --> 01:37:22,720
+Clock işaretinin sadece pozitif yani bir olduğu durumlarda şurada işlem yapıyor demiştim. Clock işareti birken işlem yapacak. D girişinde eğer bakın D girişinde eğer bu şeyde bir varsa Q çıkışı bir olmuş.
+
+423
+01:37:22,720 --> 01:37:33,699
+CLOB'un 1 olduğu durumda D girişinde 0 varsa çıkış 0 olmuş.
+
+424
+01:37:38,040 --> 01:37:46,260
+Bakın şurada D girişi 0'a düşmüş ama ne zaman 0'a düşmüş?
+
+425
+01:37:46,380 --> 01:37:47,739
+CLOB sıfırken düşmüş.
+
+426
+01:37:47,839 --> 01:37:50,319
+O yüzden bu durumu değiştirmemiş.
+
+427
+01:37:50,319 --> 01:37:56,540
+Clock çıkışı sıfırda olduğu için Q çıkışı
+
+428
+01:38:00,627 --> 01:38:06,347
+mevcut durum neyse onu göstermeye devam edecek diyoruz.
+
+429
+01:38:08,807 --> 01:38:16,347
+Burada clock işareti sadece birken bu değişimleri çıkışa aktarıyor.
+
+430
+01:38:16,548 --> 01:38:20,947
+Yani D girişindeki değişiklikleri çıkışta ne zaman görebiliriz?
+
+431
+01:38:21,027 --> 01:38:23,287
+Sadece clock işareti birken görebiliriz.
+
+432
+01:38:23,287 --> 01:38:43,247
+Bakın burada clock işareti sıfıra düştüğünde D ucu değişmiş, 1 olmuş ama Q çıkışı değişmemiş. Bu nedir? Tekrar söylüyorum. Clone sadece 1 olduğu durumda işlem yapan bir devre elemanı. O yüzden buna leç diyoruz.
+
+433
+01:38:43,247 --> 01:38:48,287
+Biz ama daha çok ne kullanacağız?
+
+434
+01:38:48,447 --> 01:38:54,827
+Aslında işlemci içerisinde, ardışıl devre tasarımında kullandığımız devre elemanı flip-floplar bizim.
+
+435
+01:38:56,087 --> 01:39:00,107
+Bakın burada da güzel bir tane daha bir sayfa açıklama var.
+
+436
+01:39:00,907 --> 01:39:05,527
+D-type latch ile D-type flip-flop arasındaki farkı anlatıyor.
+
+437
+01:39:06,947 --> 01:39:09,607
+Yukarıda ilk sırada verdiği bir latch.
+
+438
+01:39:09,848 --> 01:39:10,068
+Neden?
+
+439
+01:39:10,067 --> 01:39:19,487
+Çünkü clock girişi sadece clock işaretinin bir olduğu bölgede işlem yapıyor.
+
+440
+01:39:20,447 --> 01:39:21,747
+Nereden anlıyorum bunu?
+
+441
+01:39:23,547 --> 01:39:28,227
+Yan tarafta verilmiş olan time diagrama bakıyorum.
+
+442
+01:39:29,127 --> 01:39:33,947
+Time diagram diyor ki bir D girişim var, data girişi var.
+
+443
+01:39:34,167 --> 01:39:36,847
+Data girişinde böyle bir işaret gönderdim.
+
+444
+01:39:36,847 --> 01:39:38,907
+Bir de clock işareti var.
+
+445
+01:39:38,907 --> 01:39:52,907
+Clock işaretinin sadece 1 olduğu bölümde işlem yapıyor demiştik. Yani şu bölgede işlem yapacak. Onun dışında Q çıkışı hiç durumunu değiştirmeyecek.
+
+446
+01:39:52,907 --> 01:40:08,907
+Peki Q çıkışında 0 var. Ne zaman durum değişiyor? Bakın clock girişi 1'deyken D girişinde ne olduğuna bakılıyor ve ona göre çıkış 1 yapılıyor.
+
+447
+01:40:09,947 --> 01:40:22,367
+Nereye kadar? Bakıyorum clock girişi 1'deyken D girişi 0'a düştüğü zaman bu tekrar 0'a düştü. D ile paralellik gösteriyor. Yani D'deki değişimlerin hepsini Q'da görebiliyorum.
+
+448
+01:40:22,367 --> 01:40:47,387
+Ama bu sırada clock işaretinin 1'de olması gerekiyor. Bakın burada da yine D girişi 1 olmuş, Q çıkışı 1 olmuş ama clock girişi 0'a düştüğü anda artık leçin çıkışında bir önceki durumda ne varsa hep onu görmeye devam ediyoruz.
+
+449
+01:40:47,387 --> 01:41:04,348
+Şimdi gelelim bu bir latch örneğiydi. Flipflop'a gelelim. Bu bir D-type flipflop. Peki D-type flipflop'un farkı nedir?
+
+450
+01:41:04,348 --> 01:41:17,988
+Fliplop'ta bakın clock işaretinin şekli değişti. Girişte gösterdiğimiz clock işareti grafik sembolde, standart grafik sembolde bir değişiklik gösterdi.
+
+451
+01:41:17,988 --> 01:41:28,788
+Bu şu demek arkadaşlar, benim bu clock işareti içerisinde pozitif edge trigger'ı gösteriyor bu. Pozitif kenar tetiklemeli demek bu.
+
+452
+01:41:28,787 --> 01:41:51,727
+Pozitif kenar ne demek? Sıfırdan bire çıkmak demek. Bütün sıfırdan bire geçiş anları. Yani şu işaretlediğim zaman da sadece değişim gösteriyor.
+
+453
+01:41:51,727 --> 01:41:56,947
+Ve lütfen dikkat şimdi time diagrama bakacak olursak.
+
+454
+01:41:57,684 --> 01:42:19,583
+Clock işaretinin positive edge olduğu anda D girişinde ne varsa Q çıkışı onu gösteriyor. Ne var? Orada bir anlık bir şey var gibi göstermiş. O değişimi ifade edebilmek için bu şekilde çizilmiş.
+
+455
+01:42:19,583 --> 01:42:29,223
+Clone pozitif kenarını görecek. D'de ne olduğuna bakacak. Q çıkışı D'de gördüğümüz değeri çıkışa aktaracak. Bu da fil filop.
+
+456
+01:42:29,223 --> 01:42:42,364
+Yani latch ile arasındaki fark bu. Yukarıda gördüğümüz bir D-type latch'ti. Bu, clone bir olduğu süre boyunca işlem yapabiliyordu.
+
+457
+01:42:42,783 --> 01:42:48,763
+Ama bizim devre tasarımında kullandığımız fil filoplar yani alttaki model olacak.
+
+458
+01:42:48,763 --> 01:43:10,623
+Sadece positive edge trigger yapı değil, negative edge'li olanlar da var. Bu ise clock girişinde şu şekilde ifade ediliyor. Bunun önüne bir de şunu koyuyoruz. Bu da negative edge triggered bir clock işareti anlamına geliyor.
+
+459
+01:43:13,203 --> 01:43:15,003
+Peki soru var mı?
+
+460
+01:43:18,644 --> 01:43:20,844
+Çete bakıyorum herhangi bir soru göremedim.
+
+461
+01:43:22,503 --> 01:43:26,183
+Şimdi flip-flopların clock girişlerini anladık herhalde.
+
+462
+01:43:27,723 --> 01:43:34,904
+Şu işaret clock girişinde positive edge trigger olduğunu gösteriyordu.
+
+463
+01:43:35,584 --> 01:43:38,963
+D girişi var, Q çıkışı var, Q-NAP çıkışı var.
+
+464
+01:43:38,963 --> 01:43:48,564
+Şimdi burada flip-flopların ayrıca asenkron use preset and clear input dediğimiz iki tane girişi var.
+
+465
+01:43:48,644 --> 01:43:54,923
+Burada preset ve clear olarak gösterilmiş.
+
+466
+01:43:55,263 --> 01:43:58,443
+Bunun asenkron olması ne anlama geliyor?
+
+467
+01:43:58,684 --> 01:44:00,103
+Bu çok önemli.
+
+468
+01:44:02,184 --> 01:44:04,904
+Bunu mutlaka dile getirmemiz gerekiyor.
+
+469
+01:44:06,283 --> 01:44:09,364
+Preset öncelikli set etme demek.
+
+470
+01:44:09,583 --> 01:44:12,044
+Clear da temizlemek demek.
+
+471
+01:44:12,203 --> 01:44:13,463
+Yani sıfırlamak demek.
+
+472
+01:44:13,463 --> 01:44:18,463
+Burada çalışma mantığı özetlenmiş.
+
+473
+01:44:19,583 --> 01:44:24,463
+Diyor ki preset ucu sıfırsa bakın sıfır aktif seviyesi.
+
+474
+01:44:25,544 --> 01:44:28,864
+Sıfırsa eğer işlem yapacak. Ne yapacak? Set yapacak diyor.
+
+475
+01:44:29,523 --> 01:44:33,224
+Preset işlemi gerçekleştiği için Q çıkışı 1 olacak.
+
+476
+01:44:34,843 --> 01:44:42,883
+Preset girişi 1 ise eğer bu preset girişinin disable olduğunu gösteriyor.
+
+477
+01:44:43,463 --> 01:44:46,584
+Herhangi bir set işlemi yapmayacak.
+
+478
+01:44:46,724 --> 01:44:48,584
+Normal çalışma modunda çalışacak.
+
+479
+01:44:49,123 --> 01:45:00,423
+Eğer bu öncelikli temizleme ucu dediğimiz clear ucu sıfır ise aktif seviyesinin sıfır olduğunu görüyoruz.
+
+480
+01:45:00,843 --> 01:45:02,843
+Sıfır da işlem yapacak demek bu.
+
+481
+01:45:03,324 --> 01:45:05,883
+Ve çıkışını clear etmiş.
+
+482
+01:45:06,023 --> 01:45:07,804
+Yani Q çıkışını sıfır yapmış.
+
+483
+01:45:07,803 --> 01:45:15,243
+Clear input'u birse bu herhangi bir işlem yapmayacak anlamına gelir diyor.
+
+484
+01:45:15,963 --> 01:45:20,223
+Peki bunun asenkron olması ne demek?
+
+485
+01:45:20,583 --> 01:45:24,603
+Yani şuradaki asenkron kavramını bir tarif edelim.
+
+486
+01:45:25,163 --> 01:45:29,343
+Asenkron olması demek clock'tan bağımsız çalışması demek.
+
+487
+01:45:29,343 --> 01:45:41,263
+Yani kloğun burada bir pozitif kenar göstermesine, pozitif kenarda değişim yapması şeyi vardı flip floplarda.
+
+488
+01:45:41,983 --> 01:45:46,483
+Sadece bu pozitif kenarda çalışan bir flip floptu.
+
+489
+01:45:46,483 --> 01:45:53,423
+Ama asenkron preset and clear input dediğimiz zaman clone pozitif kenarını beklemiyor.
+
+490
+01:45:54,224 --> 01:46:02,923
+Geldiği anda preset ve clear inputuna aktif bir işaret geldiği anda bu değişim gerçekleşiyor.
+
+491
+01:46:03,224 --> 01:46:08,423
+Set edecekse set, reset edecekse reset ediyor.
+
+492
+01:46:10,963 --> 01:46:13,903
+Bununla ilgili time diagramlar verilmiş.
+
+493
+01:46:13,903 --> 01:46:15,403
+Burada da görüyorsunuz.
+
+494
+01:46:15,403 --> 01:46:22,583
+Diyor ki clear inputu sıfır olmuş.
+
+495
+01:46:22,883 --> 01:46:26,063
+Yani şurada işlem yapması ve sıfırlaması lazım.
+
+496
+01:46:26,623 --> 01:46:29,403
+Ama clone pozitif kenarı şurada ve şurada var.
+
+497
+01:46:29,523 --> 01:46:30,683
+Bunları beklemiyor diyor.
+
+498
+01:46:30,823 --> 01:46:32,563
+Q çıkışı ne olmuş bakın.
+
+499
+01:46:33,063 --> 01:46:39,263
+Q çıkışı hemen bu işaretle birlikte aşağıda görüyorsunuz sıfırlanmış.
+
+500
+01:46:39,683 --> 01:46:42,883
+Çünkü asinkronus clear ucu var diyor.
+
+501
+01:46:42,883 --> 01:46:52,223
+Eğer bu bir senkron clear ucu olsaydı, senkron clear ucu bakın burada üretilmiş, bu sinkron clear işlemi yapıyor.
+
+502
+01:46:57,011 --> 01:47:13,011
+Çünkü devrenin D girişi üzerinden bir clear işlemi yapılmış. Asynchronous clear işlemi için bakacak olursak, şurada gördüğümüz clear girişi,
+
+503
+01:47:15,011 --> 01:47:17,011
+şurada gördüğümüz clear girişi,
+
+504
+01:47:20,787 --> 01:47:34,547
+Pardon, o clock işareti, clear girişi, aynı clear işaretini almış. Bunun pozitif kenarında sadece değişim gösterir diyor. Şurayı temizleyelim, yanlış çizdik onu.
+
+505
+01:47:38,247 --> 01:47:42,227
+Senkronla asenkron arasındaki fark anlaşıldı mı acaba?
+
+506
+01:47:47,507 --> 01:48:06,387
+Evet, o soru güzel. Aynı anda hem preset hem clear enable olursa, ikisi de aynı anda sıfır gelirse düzgün çalışmayacaktır. Aynı şeyde olduğu gibi, SR-Latch'de olduğu gibi o kombinasyonu vermememiz gerekiyor.
+
+507
+01:48:06,387 --> 01:48:16,727
+Yani preset ve clear'ın aynı anda sıfır olma durumunu yaratmamamız gerekiyor. O zaman düzgün çalışmayacaktır çünkü.
+
+508
+01:48:17,507 --> 01:48:23,848
+Senkron ile asenkron clear işlemleri anlaşıldı mı? Tekrar sorayım.
+
+509
+01:48:25,927 --> 01:48:32,947
+Asenkron olduğunda clock'dan bağımsız çalışıyor. Senkron olduğunda clock bağımlı çalışıyor.
+
+510
+01:48:32,947 --> 01:48:37,827
+Kısaca bu şekilde özetleyebiliriz. Buyurun.
+
+511
+01:48:37,827 --> 01:48:48,588
+Bu senkron olayındayken aynı zamanda biz bir de reset miydi? Onu nasıl bağlamamız gerekir o zaman?
+
+512
+01:48:49,667 --> 01:48:59,487
+Onu zaten şuraya bağlanıyor. Bakın bunun pardon kalem neredeydi? Şuradan. Onu zaten burada var bu clear girişi.
+
+513
+01:49:00,767 --> 01:49:06,487
+Yani buradan verebilirim clear işlemini ya da şuradaki gördüğüm bloktan verebilirim.
+
+514
+01:49:06,487 --> 01:49:14,107
+Buradan verdiğim zaman senkron oluyor. Şu aşağıdakini kullandığım zaman asenkron oluyor.
+
+515
+01:49:20,532 --> 01:49:24,731
+Anlaşıldı mı ne demek istediğim? İkisini de kullanabilirim. Buyurun.
+
+516
+01:49:25,472 --> 01:49:26,992
+Üst slide'ı çıkar mısınız?
+
+517
+01:49:29,171 --> 01:49:29,671
+Burası mı?
+
+518
+01:49:30,431 --> 01:49:35,391
+Evet. Ben PCSet ile Clear aynı anda senkron yapmayı kastetmiştim yani.
+
+519
+01:49:36,171 --> 01:49:46,831
+Aynı anda ikisinin sıfır olması durumunu engellememiz gerekiyor. O durumda düzgün çalışmayacaktır onu sorduysanız eğer.
+
+520
+01:49:46,831 --> 01:49:53,171
+Yok hocam ya hani D ile beraber entleyip verdiğimiz zaman D'ye bu senkron oluyor ya
+
+521
+01:49:56,532 --> 01:50:10,891
+Aşağıdaki slide'da mesela D girişiyle clear'ı endleyip D'ye verdiğimiz zaman senkron oluyor clock ile çalışıyor. Biz preset'i de mesela clear ile aynı anda ikisini de senkron yapmak istersek dedim.
+
+522
+01:50:10,891 --> 01:50:23,291
+Ya bakın burada kastettiğimiz şey şu yalnız yani preset ve clear uçları fiziksel olarak bu DT tipi flip flop'un şeyinde var.
+
+523
+01:50:23,291 --> 01:50:37,232
+Üretilmiş olan malzemenin üzerinde bu girişler var. Ben istersem bunu asenkron olarak kullanabilirim ya da senkron çalışan bir clear mekanizması üretmek istiyorsam
+
+524
+01:50:37,232 --> 01:50:49,292
+O durumda böyle bir end kapısıyla bir clear ucunu D tipi flip-flop'a bağlayabilirim diyorum. Anlatabildim mi?
+
+525
+01:50:50,112 --> 01:50:51,991
+Anladım hocam. Teşekkürler.
+
+526
+01:50:51,991 --> 01:50:53,271
+Rica ederim.
+
+527
+01:50:53,271 --> 01:51:13,451
+Evet geldik ardışık, ardışıl lojik devrelere. Burada registerler vesaire diye gidiyor ama ben register konusuna girmeden, register konusuna girmeden flip-floplarla biraz daha işlem yapmamız gerektiğini düşünmüyorum.
+
+528
+01:51:13,451 --> 01:51:22,671
+O yüzden size birkaç tane uygulama örnek göstereceğim.
+
+529
+01:51:23,271 --> 01:51:24,271
+Ne yapalım?
+
+530
+01:51:59,091 --> 01:52:14,671
+Şimdi hatırlatma amaçlı size filiflopların karakteristik tablolarını vereceğim. Yaygın kullandığımız filiflopların karakteristik tablolarını vereceğim.
+
+531
+01:52:24,275 --> 01:52:25,636
+Kalem, kalem.
+
+532
+01:52:33,652 --> 01:52:36,451
+Çok güzel bir uygulama bu whiteboard uygulaması.
+
+533
+01:52:39,671 --> 01:52:42,131
+Flip-flop karakteristik tabloları diyelim.
+
+534
+01:52:46,579 --> 01:53:00,899
+Ben tabi biraz zor yazıyorum. Şu tabletin üstünde elim değmemesi gerekiyor ekrana. Flip flop. Bugün değdiğim zaman çünkü çiziyor. Flip flop.
+
+535
+01:53:06,452 --> 01:53:33,251
+Karakteristik fonksiyonları ve tabloları kullandığımız bütün filiflopları yazacağım. D-type, filiflop diye başlayalım. D-tipi filiflop da az önce zaten gördünüz ama bütün filiflopları bu şekilde kullanabilir olmamız gerekiyor.
+
+536
+01:53:33,251 --> 01:53:42,992
+Bir D girişi var, clock girişi var, C diyelim ve bir de Q, Q, NAT çıkışları var.
+
+537
+01:53:42,992 --> 01:54:04,411
+D filifilobun QT artı 1 dediğimiz next state için D girişi 0 ve 1 olma durumuna göre 0 ise 0, 1 ise 1 çıkış üretiyor.
+
+538
+01:54:04,411 --> 01:54:14,532
+Reset ve Set diye isimlendiriliyor. Tabi bu değişimi clone, bu çizime göre positive edge olduğunu görüyorsunuz.
+
+539
+01:54:14,532 --> 01:54:29,471
+Şimdi ikinci bir tane SR latch yok SR flip flop var. Çok yaygın kullanmıyoruz ama onu da yazalım.
+
+540
+01:54:34,411 --> 01:54:37,111
+Burada verdiğimiz leçmiş, leç örneğiymiş.
+
+541
+01:54:44,467 --> 01:54:59,527
+Çünkü clock işaretinin önünde şimdi sembolden anlayacaksınız. S girişi var, R girişi var ve clock girişi var. Q çıkışı var.
+
+542
+01:54:59,527 --> 01:55:03,607
+S, R, L, E, CISC için
+
+543
+01:55:03,607 --> 01:55:10,047
+00, 01, 10 ve 11 için
+
+544
+01:55:10,047 --> 01:55:14,127
+QT
+
+545
+01:55:14,127 --> 01:55:16,207
+No change
+
+546
+01:55:20,467 --> 01:55:27,487
+01, reset yaptyyo, 01 ve undefined.
+
+547
+01:55:33,011 --> 01:55:34,471
+durumlarını yazdık.
+
+548
+01:55:42,931 --> 01:55:48,611
+JK filflop var. Bu çok kullanacağımız filfloplardan biri.
+
+549
+01:55:52,819 --> 01:55:55,499
+J.K. Philippe Lopic'in
+
+550
+01:55:58,644 --> 01:56:00,644
+J ve K girişleri var.
+
+551
+01:56:05,427 --> 01:56:10,627
+Bunu içeri yazmam gerekiyordu. Bir saniye.
+
+552
+01:56:27,796 --> 01:56:50,415
+J ve K girişleri. Bir de clock işareti girişi var. Şurada bir üçgen yapıyor clock işareti. Kalemi de bayağı incelttik. Q ve QNAT çıkışları var. Bunun için J, K girişlerine bağlı olarak,
+
+553
+01:56:50,415 --> 01:57:12,435
+Mesela bu şeyleri ezbere yazabiliyor olmanız gerekiyor. QT artı bir çıkışı ne olur? 00001, 1011 için. 00 için JK filiflop da neydi? Hatırlıyor musunuz? Geçen dönemden.
+
+554
+01:57:19,475 --> 01:57:32,235
+Yukarkini mi şey yazmışım? Bir uyarı geldi bakayım. Evet, 0, 1, 1, 0, 1, 1 olacak. Evet, düzelttik.
+
+555
+01:57:32,235 --> 01:57:51,095
+Çete bakıyorum. Evet. JK için 0-0 olduğunda ne oluyordu? Next state, present state'in aynı oluyordu. Evet. QT.
+
+556
+01:57:51,095 --> 01:58:06,735
+0, 1 için 0, 1, 0 için 1 ve 1, 1 için de QT'nin komplementi oluyordu.
+
+557
+01:58:08,315 --> 01:58:15,735
+Bu J.K. Filflop ve bunun karakteristik tablosu.
+
+558
+01:58:16,516 --> 01:58:20,535
+Bu karakteristik tabloyu tekrar söylüyorum bilmeniz gerekiyor.
+
+559
+01:58:21,095 --> 01:58:29,595
+Çünkü ardışlı devre tasarımında sadece bu değil, bundan bir de bir geçiş tablosu dediğimiz tabloyu üretmeniz gerekecek.
+
+560
+01:58:30,255 --> 01:58:38,095
+Geçiş tablosu dediğimde şöyle bir şey, QT'yi biliyorsunuz, QT artı 1'i biliyorsunuz.
+
+561
+01:58:41,095 --> 01:58:44,056
+Benim bunu şarja takmam gerekiyormuş.
+
+562
+01:58:44,975 --> 01:58:46,075
+Birazdan takarız.
+
+563
+01:58:46,075 --> 01:58:56,336
+0, 0, 0, 1, 1, 0 ve 1, 1 kombinasyonlarına göre JK girişleri ne oluru yazabilmemiz gerekiyor.
+
+564
+01:58:56,455 --> 01:58:59,416
+Buna da geçiş tablosu diyoruz.
+
+565
+01:59:00,156 --> 01:59:02,916
+Geçiş tablosu.
+
+566
+01:59:03,735 --> 01:59:09,855
+Bu tabloyu oluşturabilmek için şu yukarıdaki karakteristik tabloyu biliyor olmanız lazım.
+
+567
+01:59:09,975 --> 01:59:13,855
+Bunu biliyorsanız eğer geçiş tablosunu zaten üretebiliyorsunuz.
+
+568
+01:59:13,855 --> 01:59:41,175
+Onu anlatacağım. Devre tasarımı sırasında kullanacağız çünkü. Ondan bahsedeceğim. JK filiflop'tan sonra bir de T tipi filiflop var. T-type filiflop var. Bir de ondan bahsedelim. T tipi filiflop'un bir T girişi ve bir clock girişi var yine.
+
+569
+01:59:43,855 --> 01:59:48,475
+Q ve Q not çıkışları.
+
+570
+01:59:49,255 --> 01:59:58,975
+Bunun tablosu da T girişine bağlı olarak QT artı 1'i yazacağım.
+
+571
+01:59:58,975 --> 02:00:01,135
+0 ve 1 olması durumda.
+
+572
+02:00:01,255 --> 02:00:13,155
+0 ise eğer QT artı 1, QT'ye eşit, no change yani QT'nin komplementi oluyor.
+
+573
+02:00:13,855 --> 02:00:37,315
+T tipi filiflop. Bunları lojikte öğrendiniz. İşte ne yapabiliyorsunuz? Lojikte öğrendiniz JK'dan, bir JK filifloptan nasıl T tipi filiflop üretirim veya D tipi filiflop üretirim gibi bolca egzersiz yaptığınızı tahmin ediyorum.
+
+574
+02:00:37,315 --> 02:00:54,375
+Böyle flip-floplarla kısa bir giriş yaptıktan sonra iki tane örnek yapacağım ama önce ara vereceğim. Aradan sonra iki tane ardışıl devre tasarım örneği inceleyeceğiz.
+
+575
+02:00:54,375 --> 02:01:10,415
+ve bu haftaki konuyu bitireceğiz. Önümüzdeki hafta artık bu Ardışıl Devre Tasarımında sayıcıların ve registerlerin nasıl oluşturulduğu konusunu tekrar edeceğiz.
+
+576
+02:01:12,415 --> 02:01:16,015
+Soru var mıdır? Bakıyorum.
+
+577
+02:01:20,180 --> 02:01:25,419
+Peki soru varsa eğer chatten yazarsanız aradan sonra cevaplayabilirim.
+
+578
+02:01:25,419 --> 02:01:25,640
+Hicam.
+
+579
+02:01:26,279 --> 02:01:26,699
+Buyurun.
+
+580
+02:01:27,319 --> 02:01:28,839
+Bu şeyi push edebilir misiniz?
+
+581
+02:01:28,980 --> 02:01:29,819
+Whiteboard'ta yazdık.
+
+582
+02:01:29,819 --> 02:01:30,919
+Yaptım az önce.
+
+583
+02:01:31,680 --> 02:01:32,619
+Yeni mi bağlandınız?
+
+584
+02:01:33,680 --> 02:01:36,159
+Yok deminden beri bağladım aslında bana gelmedi.
+
+585
+02:01:37,159 --> 02:01:40,600
+Pushing whiteboard publish diye yazdım.
+
+586
+02:01:41,059 --> 02:01:42,399
+Evet şimdi oldu.
+
+587
+02:01:42,619 --> 02:01:43,079
+Geldi mi?
+
+588
+02:01:43,399 --> 02:01:43,619
+Tamam.
+
+589
+02:01:43,619 --> 02:01:45,600
+Peki.
+
+590
+02:01:46,860 --> 02:01:50,020
+Aradan sonra 10 dakika aradan sonra görüşüyoruz.
+
+591
+02:03:14,484 --> 02:03:15,523
+Aynı, vallahi himpi.
+
+592
+02:14:31,956 --> 02:14:40,395
+Evet, ara bitti. Şimdi tekrar devam edeceğiz. Sıfırdan herkes bir ellerini kaldırsın. Bakalım kimler burada?
+
+593
+02:14:44,724 --> 02:14:52,563
+Evet, bilgisayarın başında beni dinleyen kaç kişi var acaba? Uyumaya giden kaç kişi var? Bir de onu merak ediyorum.
+
+594
+02:14:56,627 --> 02:14:58,848
+Evet, 40'ı geçtik.
+
+595
+02:15:01,187 --> 02:15:06,687
+45, 44, 44 kişi, 45 kişi el kaldırdı.
+
+596
+02:15:07,588 --> 02:15:10,707
+30 kişi yok yine ortada. Çok üzüldüm.
+
+597
+02:15:12,207 --> 02:15:19,367
+Neyse, katılan arkadaşlara çok teşekkür ediyorum. El kaldırıp buradayız diyen tüm arkadaşlara teşekkür ediyorum.
+
+598
+02:15:19,367 --> 02:15:20,787
+47 oldu bu arada.
+
+599
+02:15:20,787 --> 02:15:43,327
+Peki yani sizi çok böyle hani 30 kişi de çok sorun değil. Evet sizi konu tekrar yaptığım için çok böyle hızlı hızlı gidiyorum gibi geliyor belki ama örneklerle de açıklamaya çalışıyorum.
+
+600
+02:15:43,328 --> 02:15:57,528
+Bu konularda eksiği olan arkadaşlara tavsiyem mutlaka lojik konularını hızlı bir tekrarını yapsınlar. Özellikle aramızda bilimsel hazırlık öğrencileri var 15 kişi kadar.
+
+601
+02:15:57,527 --> 02:16:09,387
+Bilimsel hazırlıktaki arkadaşların eğer bu konularda bir lojik devre, background yoksa mutlaka çalışması gerektiğini düşünüyorum.
+
+602
+02:16:09,607 --> 02:16:18,447
+Zor konular değil aslında. Sadece şöyle bir oturup bir hafta üstünden geçseniz hızlıca öğrenebilirsiniz diye düşünüyorum.
+
+603
+02:16:19,567 --> 02:16:23,067
+Hocam çok özür diliyorum. Mustafa Şentürk ben.
+
+604
+02:16:23,067 --> 02:16:25,867
+Evet görüyorum ekranda. Merhaba Mustafa.
+
+605
+02:16:26,247 --> 02:16:27,067
+Merhaba hocam.
+
+606
+02:16:27,528 --> 02:16:42,608
+Lojik konusunda ben şimdi geçen sene lojiyi aldım güzel de öğrenmeye de çalıştım elimden geldiğince hatta şeylerin tablolar, mavlolar hepsini ama 45-50 ile zor geçtim yani DC ile şartlı geçtim herhalde DC şartlı oluyor.
+
+607
+02:16:43,428 --> 02:16:43,608
+Evet.
+
+608
+02:16:44,868 --> 02:16:49,168
+O kadar yani bir de geçen sene bu seneye çok fazla kafamda bir şey kalmadı.
+
+609
+02:16:49,168 --> 02:17:03,447
+Aklınızda var mıdır? Mustafa şöyle bir kitap var Türkçe. Şunu al da en azından o kapılar mantığını sana bir lise mantığıyla böyle bir öğretebileceği bir kitap türü bir şey var mıdır?
+
+610
+02:17:03,447 --> 02:17:15,448
+Yani çok fazla çünkü Lojik benim bildiğim kitabı da var bende o İngilizce kitabı. Evet. Büyük bir kitap yani. Ama Mano'nun değil mi? Maurice Mano'nun kitabını diyorsun. Evet o büyük kitap. Evet.
+
+611
+02:17:15,447 --> 02:17:39,447
+Bunu şimdi tekrar baştan almaya çalışmak benim çok zamanımı alır. Ama daha böyle basit kapılar açısından, gerçi YouTube'dan da bakacağım kendimi Türkçe videolara falan. Anlatıyorsunuz, şimdi D tipi, JK tipi 3 aşağı 5 yukarı kafamda ama hala da ben işte Filip Filip'un tam böyle aç kapa mantığını tam çözebilmiş değilim.
+
+612
+02:17:39,447 --> 02:17:57,907
+Şimdi siz bilgisayar öğrencisi olduğunuz için devre düzeyinde bu kapıların ya da fil filopların nasıl çalıştığını devre düzeyinde anlamasanız da ben elinizde böyle bir malzeme var diyorum ve doğruluk tablosu da budur diyorum.
+
+613
+02:17:57,907 --> 02:18:18,288
+Bu malzemeyle tasarım yapabiliyor olmanızı bekliyorum. Yani bu derste benim beklediğim bu. Ve bu tasarımları yapabilmeniz için de aslında bolca örnek yapacağım. Ama sizin de mümkünse Mano'nun kitabının dili oldukça güzel ve çok da örnek var içinde.
+
+614
+02:18:18,288 --> 02:18:26,568
+Mano'nun bu kitabının Türkçesi var bildiğim kadarıyla. Türkçe kitap olarak da aynı içerek sadece Türkçeleştirmişler.
+
+615
+02:18:26,568 --> 02:18:33,568
+Onu kullanabilirsiniz. Bir de benim bu ders için verdiğim Fundamentals
+
+616
+02:18:35,476 --> 02:18:54,915
+Fundamentals, Logic and Computer Design Fundamentals kitabı. Masanın üstünde hemen adına baktım. Bu kitap zaten o lojik konularını çok özetliyor. Yani başlamak için bu kitap yeterli. İlk 6 çepteri bunun. Lojiğin tekrarı çünkü. Bu kitaptan gidebilirsiniz.
+
+617
+02:18:54,915 --> 02:19:05,055
+Bilimsel hazırlıktaki arkadaşlar da Morris Manon'un bu söylediğim ders kitabı olarak da yazmış olduğum, ders tanıtım formunda yazdığım kitabını kullanın.
+
+618
+02:19:05,476 --> 02:19:15,376
+İlk 5-6 bölüm sadece lojik anlatıyor. Oradan hızlıca bir okursanız eğer bunları kavrayabilirsiniz diye düşünüyorum.
+
+619
+02:19:15,376 --> 02:19:23,816
+Ama dersin ilk 2-3 haftasında bunu bitirin ki ilerleyen kısımlarda anlattığım her şeyi anlayabilin.
+
+620
+02:19:23,935 --> 02:19:28,236
+Yani bu tekrar olabildiğince erken yapmalısınız.
+
+621
+02:19:28,656 --> 02:19:29,615
+Doğru, doğru hocam.
+
+622
+02:19:29,615 --> 02:19:39,675
+Doğru. Yani ben aslında çok detaylı anlatmaya çalışıyorum ama bir background'unuzun olması gerekiyor mutlaka.
+
+623
+02:19:39,675 --> 02:19:45,636
+Yok anlattıklarınızdan geçen hafta bu hafta bildiğimiz lojiyi hani böyle.
+
+624
+02:19:45,735 --> 02:19:53,876
+Bunları anladıysanız hiç sorun yok. Yani benim için filip filo bu iç yapısı ve nasıl tasarlandığı kısmıyla ben bu dersi hiç iyi bilmem.
+
+625
+02:19:53,876 --> 02:19:57,895
+Arkadaşlar var gerçekten elektronik konusunda baya iyiler.
+
+626
+02:19:58,476 --> 02:19:59,136
+Hani diyorum acaba.
+
+627
+02:19:59,136 --> 02:20:00,856
+Herkesin merakı.
+
+628
+02:20:00,856 --> 02:20:04,996
+Ölmek lazım yani standardı mı o diye de benim canım sıkılıyor bu sefer.
+
+629
+02:20:06,276 --> 02:20:13,156
+Yok canınızı sıkmayın. Burada yeni bir şeyler ekleyeceğiz bunların üzerine. Bu tarafa odaklanın oldu mu?
+
+630
+02:20:13,255 --> 02:20:15,156
+Tamamdır hocam. Tamamdır hocam. Teşekkür ederim.
+
+631
+02:20:15,156 --> 02:20:17,175
+Peki. Şimdi
+
+632
+02:20:17,175 --> 02:20:28,755
+Fli Floplarla Devlet Tasarımı bölümünde yine Manu'nun kitabından güzel bir örnek var onu aldım.
+
+633
+02:20:28,755 --> 02:20:34,175
+Buna diyor ki reverse engineering yani biz bir tersine mühendislik yapmak istiyoruz.
+
+634
+02:20:34,435 --> 02:20:40,175
+Tersine mühendislikte yapacağımız şey şu bize problem verilmemiş.
+
+635
+02:20:40,175 --> 02:21:01,735
+Bu problemi birileri almış, incelemiş, nasıl çözüleceğini düşünmüş ve buna uygun bir devre tasarlamış. Bizim önümüze koymuşlar bu devre hazır. Biz şimdi reverse engineering yapacağız, tersine mühendislik yapacağız.
+
+636
+02:21:01,735 --> 02:21:09,515
+ve problemden çözüme gitmek yerine çözümden yapılan işi anlamaya çalışacağız.
+
+637
+02:21:10,135 --> 02:21:13,875
+Konu tekrarı olduğu için böyle yapabiliriz diye düşünüyorum.
+
+638
+02:21:15,015 --> 02:21:19,935
+Bu devreye baktığım zaman ben iki tane D tipi filiflop kullanıldığını görüyorum.
+
+639
+02:21:19,935 --> 02:21:26,895
+Şimdi bu iki tane neyse şarj kablosu yetmedi buraya.
+
+640
+02:21:29,015 --> 02:21:31,095
+Şöyle çekersek olacak herhalde.
+
+641
+02:21:35,443 --> 02:21:39,763
+Yok, yetmiyormuş. Buradan alsak.
+
+642
+02:21:45,620 --> 02:21:54,620
+tahtamız olmayınca tabletin üstünde şey yaptık. Evet, şimdi...
+
+643
+02:21:56,051 --> 02:22:07,031
+Şöyle chat'i de aşağıya çekeyim, göreyim sizin yazdıklarınızı. Bu verilen devre şemasının ne yaptığını bulmamız isteniyor.
+
+644
+02:22:07,991 --> 02:22:19,551
+Reverse engineering yaparken nasıl gidebiliriz? Az önce söylediğim gibi burada verilen çözümde iki tane D tipi flip-flop var.
+
+645
+02:22:19,551 --> 02:22:40,671
+Birine DA diyelim, öbürüne DB diyelim. Bu iki tane flip-flop'un önünde bir takım kombinasyonel devreler var. Bu devrenin bir tane X inputu var. Ve bu devrenin bir Y outputu var.
+
+646
+02:22:44,435 --> 02:23:03,435
+Biz bu devrenin ne yaptığını bulmaya çalışacağız dediğim gibi. Reverse Engineering'de önce ne yapabilirim? Ne dersiniz? Bu devre şemasına bakarak ben ne yapabilirim? İlk yapabileceğim şey nedir?
+
+647
+02:23:04,819 --> 02:23:19,079
+Çıkışlardan başlayalım. Yani çıkışlardan başlamak demek ben kullandığım her bir flip-flop için ve Y çıkışı için bir fonksiyon yazacağım o zaman.
+
+648
+02:23:19,079 --> 02:23:29,879
+Yani bu devredeki DA girişini, DB girişini, flip-flopların inputlarını bir bulayım.
+
+649
+02:23:29,879 --> 02:23:51,079
+Bir de bu şeyin verilen devrenin Y output'unun fonksiyonunu yazarsam eğer buna bağlı olarak bu fonksiyonlardan giderek bir doğruluk tablosu çizebilirim, oluşturabilirim.
+
+650
+02:23:51,079 --> 02:24:01,039
+Güzel Yavuz ve doğruluk tablosundan faydalanarak da bir state diagram oluşturabilirim.
+
+651
+02:24:01,039 --> 02:24:04,339
+Bir state table ve state diagram oluşturabilirim.
+
+652
+02:24:04,539 --> 02:24:13,119
+Tamam. Peki şimdi o zaman bana lütfen hepiniz düşünün.
+
+653
+02:24:13,119 --> 02:24:31,039
+DA girişini, D flip-flop'un A girişini, işte X ve devre girişlerine bağlı olarak A ve B dedik.
+
+654
+02:24:31,039 --> 02:24:42,119
+Bunlara bağlı olarak DA girişini, DB girişini ve Y çıkışını fonksiyonunu yazmanızı isteyeceğim.
+
+655
+02:24:46,420 --> 02:25:09,719
+Bekliyorum. Biraz siz önce yazın. Daha sonra hatta chatte bunu ifade etmeniz biraz zor mu? Yok, yazılabilir. Değili göstermek için tırnak kullanarak bana belki bunu chatte de bulan arkadaşlar fonksiyonları yazabilir mi acaba? Zor değil. Kolay bir şey istediğim.
+
+656
+02:25:20,788 --> 02:25:22,788
+Devreyi şöyle tekrar açayım.
+
+657
+02:25:23,987 --> 02:25:24,987
+Evet.
+
+658
+02:25:30,260 --> 02:25:41,060
+DA girişi, yani şu girişi yazmak istiyorum. DA girişi. Ne var? X, AND, A var. Değil mi?
+
+659
+02:25:43,939 --> 02:25:54,619
+Ondan sonra ikinci AND kapısıyla XL neyi AND'lemiş? B'yi AND'lemiş. Sonra bunları bir OR kapısıyla toplamış. Doğru mu?
+
+660
+02:25:54,619 --> 02:26:02,819
+DA eşittir deyip bana bu fonksiyonu yazabilir misiniz chatten? DA eşittir.
+
+661
+02:26:10,484 --> 02:26:27,343
+DA eşittir. Evet. AX artı BX. Değil mi? AX artı BX. Evet. Muhammed Hakan, teşekkürler. Teşekkürler Erkan. Doğru.
+
+662
+02:26:27,343 --> 02:26:46,183
+Peki şimdi DB'yi yazmak istiyorum yani şurayı yazmak istiyorum DB girişini yazmak istiyorum onun girişte bir end kapısıyla bir işlem yapılmış
+
+663
+02:26:46,184 --> 02:27:01,244
+A değil ile neyi almış? A değil ile end kapısında db eşittir deyip yazabilir misiniz? Chatten bekliyorum. db eşittir. Ne olacak?
+
+664
+02:27:06,515 --> 02:27:08,775
+A değil L neyi endlemiş?
+
+665
+02:27:13,396 --> 02:27:14,775
+Şuradaki AND kapısı
+
+666
+02:27:14,775 --> 02:27:19,075
+DB eşittir.
+
+667
+02:27:19,635 --> 02:27:22,835
+A değil
+
+668
+02:27:22,835 --> 02:27:23,795
+X
+
+669
+02:27:23,795 --> 02:27:28,735
+Güzel. Bir de Y çıkışı var.
+
+670
+02:27:29,276 --> 02:27:29,356
+Evet.
+
+671
+02:27:30,576 --> 02:27:33,355
+Y çıkışı, devrenin Y çıkışı.
+
+672
+02:27:33,795 --> 02:27:35,396
+Şurayı yazmak istiyorum.
+
+673
+02:27:36,515 --> 02:27:42,775
+Bir AND kapısıyla toplamış ama yukarıda bir OR ve bir D şey var.
+
+674
+02:27:42,775 --> 02:27:53,195
+Bir or kapısı ve bir not kapısı var gördüğünüz gibi. O zaman Y çıkışını nasıl yazarız? Y eşittir.
+
+675
+02:27:53,195 --> 02:28:01,195
+Y eşittir. Bekliyorum. Bakalım.
+
+676
+02:28:01,195 --> 02:28:23,296
+Or kapısı neleri orlamış? B ile neyi orlamış? A'yı orlamış. Daha sonra bunu çıkışına A artı B or kapısı.
+
+677
+02:28:23,296 --> 02:28:42,656
+Bunu neyle endlemiş? X'in değiliyle. Evet. X değiliyle endlemiş. Güzel. Ne yaptık? Fonksiyonları yazdık. Bu fonksiyonlara göre bir state table.
+
+678
+02:28:42,655 --> 02:28:49,895
+Yani eğer bu bir kombinasyonel devre olsaydı, truth table diyecektim doğruluk tablosu.
+
+679
+02:28:49,975 --> 02:28:57,595
+Ama bu bir ardışıl devre olduğu için ve fil filoplar olduğu için state table olacak.
+
+680
+02:28:57,595 --> 02:29:02,595
+Ve oluşturacağım state table da, pardon, aşağıya çekelim.
+
+681
+02:29:06,675 --> 02:29:09,995
+Penden çıkmam gerekiyor
+
+682
+02:29:25,716 --> 02:29:29,555
+Şuraya bir state table oluşturacağım.
+
+683
+02:29:35,636 --> 02:29:42,096
+State table, present states,
+
+684
+02:29:50,100 --> 02:29:53,100
+INPUT
+
+685
+02:29:57,299 --> 02:30:00,000
+Next state ve output'u gösterecek.
+
+686
+02:30:08,659 --> 02:30:11,380
+State değişkenlerim A ve B.
+
+687
+02:30:13,799 --> 02:30:15,459
+Input'umuz ise X.
+
+688
+02:30:16,859 --> 02:30:22,219
+Next state'i göstermek için yine A ve B state değişkenlerimiz var.
+
+689
+02:30:22,399 --> 02:30:24,439
+Output'umuz ise Y olacak.
+
+690
+02:30:26,059 --> 02:30:32,439
+3 giriş için 8 farklı kombinasyon yazacağız.
+
+691
+02:30:32,439 --> 02:30:55,659
+0 0 0 0 1 0 şöyle biraz bölersem tabloyu takip etmesi daha kolay olacak 10 10 10 10 11 11 11
+
+692
+02:31:01,268 --> 02:31:09,927
+Peki, şimdi buna göre tablonun sağ tarafını beraber dolduracağız.
+
+693
+02:31:14,268 --> 02:31:25,547
+Present state'leri biliyorum. X girişini biliyorum. Fonksiyonu da biliyorum. Yukarıda DA, DB fonksiyonlarını yazdık.
+
+694
+02:31:25,547 --> 02:31:40,307
+Buna göre A ve B present state'de 0, 0 iken X'de 0 ise acaba next state'de A ne olur?
+
+695
+02:31:40,307 --> 02:31:46,927
+Yani şuna bakarak, fonksiyona bakarak bunu söyleyebiliriz. Ne olur?
+
+696
+02:31:49,007 --> 02:31:55,308
+X girişi zaten 0 ise doğrudan iki tane terimde ne oluyor? 0 oluyor.
+
+697
+02:31:55,547 --> 02:32:10,128
+Dolayısıyla next state de A'nın sıfır olduğunu B'nin de sıfır olduğunu şöyle yaparsak ikisini bir arada görebiliriz.
+
+698
+02:32:11,747 --> 02:32:15,488
+0, 0 diye yazacağım.
+
+699
+02:32:16,287 --> 02:32:22,467
+Output ise present state ve X girişine bağlı olarak output'u yazacağım.
+
+700
+02:32:22,467 --> 02:32:26,347
+Y çıkışı ne olur bu durumda arkadaşlar?
+
+701
+02:32:29,287 --> 02:32:36,207
+X'in değili 1 olacak ama A ve B 0 olduğu için duyamadım.
+
+702
+02:32:37,947 --> 02:32:38,307
+0.
+
+703
+02:32:38,847 --> 02:32:43,768
+0, güzel. Peki, bir alt satıra geçtim.
+
+704
+02:32:43,768 --> 02:32:53,208
+Fonksiyonda değerleri yerine yazarak next state'i ve output'u yazmaya çalışıyorum.
+
+705
+02:32:53,208 --> 02:33:04,407
+X1 oldu ama A ve B 0, 0 olduğu için yine next state'de A, B, pardon B için söyleyemem.
+
+706
+02:33:04,507 --> 02:33:08,387
+B yanlış oldu ama A 0'dır.
+
+707
+02:33:09,307 --> 02:33:13,027
+B ise nedir B?
+
+708
+02:33:13,768 --> 02:33:35,988
+Next state de B. 1. Evet. 1 oldu. Peki. Y output'u nedir? Y output'u X'in tersini aldığı için 0 olacak zaten. Böyle devam edeceğim ve bu state table'ı dolduracağız.
+
+709
+02:33:35,988 --> 02:33:44,107
+AB girişlerinde 0, 1 varken X girişi 0 iken bu yine 0 olacak.
+
+710
+02:33:49,108 --> 02:33:53,627
+B yine sıfır olacak. Y çıkışı ne olacak acaba?
+
+711
+02:33:56,887 --> 02:34:03,488
+A artı B, and x değil olduğuna göre y çıkışı burada bir olacak.
+
+712
+02:34:04,568 --> 02:34:12,267
+Güzel. Yani bu işi uzatmak istemiyorum. Yapabildiğinizi tahmin ediyorum.
+
+713
+02:34:12,267 --> 02:34:23,288
+Elimizde bir fonksiyon varsa present state ve inputlara göre ben next state ve output'u yazabilmenizi bekliyorum.
+
+714
+02:34:23,288 --> 02:34:36,868
+Dördüncü satırda 1, 1, 0 olacak. Ondan sonra 0, 0, 1 olacak. 1, 0, 0 olacak.
+
+715
+02:34:42,291 --> 02:34:44,291
+devam edersek.
+
+716
+02:34:45,791 --> 02:34:51,791
+0, 0, 1, 1, 0, 0 olacak.
+
+717
+02:34:52,491 --> 02:34:58,791
+Evet, yani ne yaptık? State table'ı oluşturmuş olduk. Reverse engineering yapıyoruz.
+
+718
+02:35:00,091 --> 02:35:01,091
+Sonra,
+
+719
+02:35:05,268 --> 02:35:09,107
+Artık şeye geçmem gerekiyor.
+
+720
+02:35:10,387 --> 02:35:16,148
+Boşluk açalım. Biraz daha boşluk iyi olacak.
+
+721
+02:35:18,100 --> 02:35:27,100
+Elimde artık bir state table var. Bu state table'dan faydalanarak bir state diagram oluşturmak istiyorum.
+
+722
+02:35:27,100 --> 02:35:50,519
+0 state'leri yazacağım. Daha sonra bu state'leri 0, 0, 0, 1, 1, 1, 0. Gelişi güzel yazdım. Çok önemli değil.
+
+723
+02:35:50,519 --> 02:36:06,699
+state'lerimiz bunlar. X'e göre hangi state'den hangi state'e geçiyorum ve tabloya bakarak ve Y çıkışı ne oluyor bunu yazmam gerekiyor.
+
+724
+02:36:06,699 --> 02:36:13,039
+İlk satırdan başladım. Diyor ki bana ilk satır. Efendim şöyle yapalım.
+
+725
+02:36:16,628 --> 02:36:25,628
+0, 0 state'indeyim. X girişinden 0 gelirse 0, 0 state'inde kalacağım. Y çıkışım 0 olacak diyor.
+
+726
+02:36:28,407 --> 02:36:32,628
+0 geldiğinde Y çıkışı 0 olacak. Aynı state'de kalacakmışım.
+
+727
+02:36:33,847 --> 02:36:39,808
+0, 0 state'indeyken 1 gelirse 0, 1 state'ine geç diyor. Y çıkışı.
+
+728
+02:36:39,808 --> 02:36:48,727
+X girişinden 1 geldiğinde 0, 1 state'ine geç. Y çıkışı 0'dı.
+
+729
+02:36:51,587 --> 02:36:59,107
+Peki ilk iki satıra göre bu state diagramda gerekli çizimi yaptım.
+
+730
+02:36:59,107 --> 02:37:10,267
+Şimdi 0, 1 state'indeyim. X girişinden 0 gelirse 0, 0 state'ine geç ve çıkışı 1 yap diyor.
+
+731
+02:37:20,915 --> 02:37:31,415
+0, 1 state'indeyken X girişinden 1 gelirse 1, 1 state'ine geç ve çıkışı 0 yap diyor.
+
+732
+02:37:34,355 --> 02:37:41,015
+Bu şekilde state diagramı çiziyorum. 1,0 state'inde iken
+
+733
+02:37:42,035 --> 02:37:44,855
+0 gelirse 0,0'a geçecekmişim.
+
+734
+02:37:44,855 --> 02:37:52,056
+0, 0, 0, 1, 1, 1, 1, 0 yapacaktım. Silinmiş galiba.
+
+735
+02:37:54,056 --> 02:38:01,415
+1, 0 state'indeyken 0 gelirse 0, 0'a geç çıkışı 1 yap diyor.
+
+736
+02:38:11,827 --> 02:38:23,168
+çıkış 1 olacak. Yani bu çizimde ilk yazdığım x'i gösteriyor, slash'dan sonra yazdığım y'yi gösteriyor. Buna göre diagramı dolduruyorum.
+
+737
+02:38:23,168 --> 02:38:30,607
+1, 0 state'indeyken 1 gelirse, 1, 0 state'inde kalacak.
+
+738
+02:38:30,607 --> 02:38:36,047
+Y çıkışı 0 olacak.
+
+739
+02:38:38,527 --> 02:38:46,527
+1-1 state'indeyken 0 gelirse 0-0 state'ine geç diyor.
+
+740
+02:38:47,127 --> 02:38:48,548
+Çıkış 1 olacak diyor.
+
+741
+02:38:48,548 --> 02:38:54,747
+1-1'deyken X girişinden 1 gelirse 1-0'a geç diyor.
+
+742
+02:38:56,207 --> 02:38:59,747
+Ve 1 geldiğinde çıkış 0 olacak diyor.
+
+743
+02:38:59,747 --> 02:39:09,527
+Bu şekilde ne yaptık? State diagram dediğimiz diagramı oluşturmuş olduk.
+
+744
+02:39:10,707 --> 02:39:19,527
+Neden buna biz reverse engineering dedik? Çünkü bize başta problem verilmiş olsaydı önce state diagramı oluşturacaktık.
+
+745
+02:39:19,527 --> 02:39:29,408
+Sonra state diagramdan state table'a geçecektik. Oradan da fonksiyonları bulup devreyi çizecektik.
+
+746
+02:39:29,408 --> 02:39:41,948
+Burada bize tersine iş yaptırdı ve bir devre şeması verildi. Bu devre şemasına göre önce fonksiyonları yazdık. Daha sonra state table oluşturduk. Tamamen tersine bir yol izlemiş olduk.
+
+747
+02:39:44,008 --> 02:39:55,268
+Şimdi bu bölümde şunu söyleyelim. Oluşturduğumuz devrenin y çıkışıyla ilgili bir yorum yapacağım.
+
+748
+02:40:05,396 --> 02:40:07,396
+Y çıkışı
+
+749
+02:40:10,100 --> 02:40:23,799
+Eğer y çıkış fonksiyonunun içerisinde x input'u yer alıyor ise bu devreye mili model devre deniliyor.
+
+750
+02:40:34,772 --> 02:40:48,391
+Nereden vardık bu kanıya? Tekrar söylüyorum. Y çıkışının içerisinde, Y çıkış fonksiyonunun içerisinde X giriş değişkeni yer alıyor ise bu devre mili model devre oluyor.
+
+751
+02:40:48,391 --> 02:41:07,132
+ve devrenin çıkışı X girişine bağlı olduğu için state diagramı çizerken burada gördüğümüz gibi X girişine bağlı olarak Y çıkışı ne oluru yazıyoruz.
+
+752
+02:41:07,132 --> 02:41:19,231
+Bütün geçişlerde böyle bir formda bir çizim gerçekleştiriyoruz.
+
+753
+02:41:19,231 --> 02:41:27,652
+Bu devrenin adı Mili model devre. Şimdi geldik Moore model devreye bir ikinci örnek devre.
+
+754
+02:41:28,331 --> 02:41:32,992
+Bakın bu defa bize devre fonksiyonu verilmiş.
+
+755
+02:41:32,991 --> 02:41:35,171
+Moore model devre için
+
+756
+02:41:35,171 --> 02:41:38,851
+bunu zoom yapabiliyor muyduk?
+
+757
+02:41:38,952 --> 02:41:39,851
+Omda mı vardı?
+
+758
+02:41:40,791 --> 02:41:42,132
+Şuradan yapabilirim.
+
+759
+02:41:46,324 --> 02:42:05,164
+Moore model devrede, as an example of Moore model circuit, suppose we want to obtain the logic diagram and state table of a sequential circuit that is specified by the Fli-Flop input equation demiş. Bize verilen
+
+760
+02:42:08,244 --> 02:42:12,883
+Bir flip flop ile verilmiş bir devre var.
+
+761
+02:42:13,003 --> 02:42:15,503
+Flip flop inputu tanımlanmış.
+
+762
+02:42:17,624 --> 02:42:19,463
+Bir tane D tipi flip flop var.
+
+763
+02:42:20,723 --> 02:42:23,503
+Devrenin bir Z çıkışı var.
+
+764
+02:42:24,963 --> 02:42:30,103
+Ve devrenin iki tane girişi var.
+
+765
+02:42:30,103 --> 02:42:36,183
+X ve Y inputları var bu devrede.
+
+766
+02:42:36,183 --> 02:42:42,443
+Bir tane D-type filiflop kullanılmış.
+
+767
+02:42:44,483 --> 02:42:48,443
+D-tipi filiflop'un giriş fonksiyonu verilmiş.
+
+768
+02:42:48,583 --> 02:42:49,723
+Z çıkışı verilmiş.
+
+769
+02:42:50,383 --> 02:42:54,203
+Devrenin modeline karar verirken Z çıkışına bakıyoruz demiştik.
+
+770
+02:42:54,303 --> 02:43:01,443
+Z çıkışının sadece state değişkeni ile oluşturulduğunu görüyoruz.
+
+771
+02:43:02,123 --> 02:43:03,623
+Output equation'ı.
+
+772
+02:43:04,483 --> 02:43:07,703
+Dolayısıyla bu devre bir Moore model devredir.
+
+773
+02:43:07,823 --> 02:43:15,744
+Neden? Çünkü z çıkışı, z çıkış fonksiyonunun içerisinde x ve y inputları yer almıyor.
+
+774
+02:43:16,343 --> 02:43:20,723
+O nedenle bu tür devrelere Moore model devre adı veriliyor.
+
+775
+02:43:20,723 --> 02:43:31,723
+Moore model devrede, şimdi bakın bu devrenin fonksiyonu verildikten sonra aşağıda bize bir de state table'ı verilmiş.
+
+776
+02:43:31,723 --> 02:43:41,483
+sol tarafta present state ve input yer alıyor sağ tarafta next state ve output yer alıyor
+
+777
+02:43:41,483 --> 02:43:47,083
+bu tabloyu neye göre doldurdum yukarıda bana verilmiş olan fonksiyona göre doldurdum
+
+778
+02:43:47,083 --> 02:43:55,723
+girişteki bu 8 tane kombinasyon için devrede yer alan
+
+779
+02:43:55,723 --> 02:44:08,723
+A filip lobun yani D tipi filip lobun next state'ini ve devrenin Z çıkışını gösterdik.
+
+780
+02:44:08,723 --> 02:44:13,163
+Daha sonra bunun yukarıda devre şeması verilmiş.
+
+781
+02:44:13,303 --> 02:44:16,663
+Zaten devre şeması yukarıda da görüyoruz.
+
+782
+02:44:16,663 --> 02:44:34,703
+D tipi flip-flop'un 3 girişli bir XOR ile oluşturulduğunu ve devrenin Z çıkışının flip-flop'un A çıkışı olduğunu bize yukarıda fonksiyon olarak vermişti.
+
+783
+02:44:35,104 --> 02:44:39,663
+Şimdi bu devrenin bir Moore model devre olduğunu söyledik.
+
+784
+02:44:39,663 --> 02:44:51,904
+Sebep çünkü burada görüyorum Moore model devrede devrenin çıkışı sadece state'lere bağlı olarak değişiyor.
+
+785
+02:44:52,423 --> 02:44:53,663
+Girişlerden bağımsız.
+
+786
+02:44:54,863 --> 02:45:07,904
+Bunun için oluşturacağım state diagram ise bakın burada verilmiş state diagram.
+
+787
+02:45:11,347 --> 02:45:31,307
+Bir tane D tipi flip-flop olduğu için iki tane state yer alıyor. State 0 ve state 1. Ve state'lerin içerisinde sadece present state'ler yer almıyor. Slash demiş devrenin çıkışını yazmış.
+
+788
+02:45:31,307 --> 02:45:51,568
+Yani burada gördüğümüz her bir state'in içerisinde present state ve output yer alıyor. Output'u state'in içerisine yerleştiriyor.
+
+789
+02:45:51,567 --> 02:46:09,847
+Moore model devrede çünkü devrenin çıkışı sadece state'e bağlı olarak değişiyor. Girişlerden etkilenmiyor. O nedenle böyle bir state diagram yapısına sahip oluyor.
+
+790
+02:46:09,847 --> 02:46:31,307
+Evet, ardışıl devrelerle ilgili bunları söyledik. Bir soru var. Mili model için çıkış fonksiyonunda bütün inputların olması gerekiyor mu? Hayır. Sadece bir tanesinin olması bile bunu bir mili model devre haline getiriyor. İkisinin de olması gerekmiyor.
+
+791
+02:46:31,307 --> 02:46:39,428
+Moore model devre için ise içinde hiçbir giriş değişkeni olmayacak.
+
+792
+02:46:39,627 --> 02:46:48,587
+Sadece state değişkenlerine bağlı ise bu durumda Moore model devre yapısı olmuş oluyor.
+
+793
+02:46:48,587 --> 02:47:03,627
+ve state diagramı bakın farklılaştı. Yukarıda çizdiğimiz state diagram ile burada çizdiğimiz Moore model devrinin state diagramı birbirinden farklılaştı.
+
+794
+02:47:04,427 --> 02:47:12,627
+Bu gördüğümüz inputları gösteriyor ama bir output bu okun üzerinde yer almıyor.
+
+795
+02:47:12,627 --> 02:47:17,387
+Output nerede verilmiş? Output state'in içerisinde bakın burada yer alıyor.
+
+796
+02:47:18,587 --> 02:47:34,447
+Evet, böylece ardışıl devrelere de bir giriş yapmış olduk. Bu bölümde size bir tane soru vereceğim. Ders duvarında paylaşırım bunu.
+
+797
+02:47:34,447 --> 02:47:45,907
+Bu problemi ben tarif edeceğim. Bu probleme göre sizden bu devreyi tasarlamanızı isteyeceğim.
+
+798
+02:47:45,907 --> 02:48:14,247
+Eğer çözümde zorlanırsanız haftaya bana söyleyin derste de bu soruyu çözelim hatta bir değil iki tane soru vereyim güzel bir hatırlatma olsun size de ardışıl devrelerle ilgili nasıl tasarım yaptığınızı hatırlatmak amaçlı size iki tane problem vereceğim evde çözmeniz için
+
+799
+02:48:14,247 --> 02:48:21,967
+Buraya kadar sorunuz var mı? Dersi bitireceğim. Süremiz doldu. Soru varsa soruları alayım.
+
+800
+02:48:32,051 --> 02:48:50,091
+Evet, chatte de yazmıyorsunuz. Demek ki soru yok. Peki, dediğim gibi iki tane egzersiz soru örneği paylaşacağım. Sizinle çözümleri yok. Sadece sorular olacak. O soruları çözmenizi rica edeceğim. Haftaya derse gelene kadar.
+
+801
+02:48:50,091 --> 02:49:05,491
+Peki dersi bitireceğim. Önce ne yapıyoruz? Bakayım bana kim el sallayıp çıkıyor. Kimler uyumaya gitmiş derste değil göreyim bir. El sallayıp çıkabilirsiniz. Güle güle.
+
+802
+02:49:05,871 --> 02:49:07,451
+İyi günler hocam. Kendinize iyi bakın.
+
+803
+02:49:08,031 --> 02:49:10,291
+Hocam çok teşekkür ediyoruz. Ağzınıza sağlık.
+
+804
+02:49:10,871 --> 02:49:11,811
+Siz de sağlık.
+
+805
+02:49:11,811 --> 02:49:19,551
+İyi günler arkadaşlar, haftaya görüşmek üzere
+
+806
+02:49:19,551 --> 02:49:21,631
+İyi günler hocam, teşekkür ederim
+
+807
+02:49:21,631 --> 02:49:23,311
+Eksersizleri mutlaka yapın
+
+808
+02:49:23,311 --> 02:49:25,791
+Ben de el sallayayım size
+
+809
+02:49:25,791 --> 02:49:28,131
+Hoşçakalın
+
+810
+02:49:39,252 --> 02:49:47,131
+Evet, şu anda derste baye sallayıp çıkanlar dışında kimler kalmış bakalım.
+
+811
+02:49:51,219 --> 02:50:11,999
+Ekranı açık. Bilgisayarın başında olmayan 19 kişi var galiba. Yani bu güzel bir durum değil. Lütfen önümüzdeki hafta bu arkadaşları da derste görmeyi ümit ediyorum. Aktif olarak derste katılmanızı bekliyorum arkadaşlar.
+
+812
+02:50:11,999 --> 02:50:19,999
+Sadece böyle açıp gitmeyin. Dersi derste dinlerseniz daha rahat edersiniz.
+
+813
+02:50:21,219 --> 02:50:23,339
+Hoşçakalın.

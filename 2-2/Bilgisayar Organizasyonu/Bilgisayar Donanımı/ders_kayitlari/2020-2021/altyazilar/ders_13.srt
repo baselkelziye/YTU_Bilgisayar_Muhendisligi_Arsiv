@@ -1,0 +1,2491 @@
+1
+00:06:49,843 --> 00:06:51,103
+Günaydın arkadaşlar.
+
+2
+00:06:52,223 --> 00:06:58,363
+Günaydın hocam.
+
+3
+00:06:58,443 --> 00:07:00,843
+Günaydın Furkan, Mehmet Ali.
+
+4
+00:07:01,783 --> 00:07:05,243
+Günaydın arkadaşlar. Bakıyorum şu an kaç kişiyiz?
+
+5
+00:07:07,604 --> 00:07:09,403
+Günaydın Mehmet Turan.
+
+6
+00:07:10,184 --> 00:07:11,303
+18 kişiyiz.
+
+7
+00:07:12,944 --> 00:07:14,203
+Evet, günaydın İhsan.
+
+8
+00:07:14,203 --> 00:07:23,524
+Bu dersi kaç kişi alıyor? Neden bu kadar az öğrenci var?
+
+9
+00:07:25,563 --> 00:07:28,503
+Tam ilkokul havası hala. Son hafta kimse gelmiyor.
+
+10
+00:07:29,204 --> 00:07:35,863
+Belki de bahar havası. Yaz geldi aslında. Baharı da bitirdik. Yaza geçtik.
+
+11
+00:07:38,204 --> 00:07:40,343
+Evet. Günaydın Tuba.
+
+12
+00:07:40,343 --> 00:07:44,443
+Kaldırıp dışarı bakamıyoruz ki. Laz mı geldi, kış mı geldi anlayalım.
+
+13
+00:07:45,024 --> 00:07:53,783
+Az kaldı. İki hafta sonra özgürsünüz. Finaller bitti mi tatil sizin.
+
+14
+00:07:57,004 --> 00:08:04,623
+Evet. Mutlu son. Dersleri temizlersek mutlu son.
+
+15
+00:08:04,623 --> 00:08:26,763
+Şimdi sevgili arkadaşlar bu hafta virtual memory konusuna başlayacağız. Gerçekten son haftalar en önemli haftalar diyorum. Ama öyle sizin mesleğiniz açısından belli kavramları öğrenmeniz açısından çok önemli.
+
+16
+00:08:26,763 --> 00:08:51,543
+O nedenle virtual memory konusunu olabildiğince örneklerle açıklamaya çalışacağım. Bu konu işletim sistemleri dersiyle de bağlantılı bir konu. Henüz işletim sistemleri almadığınızı biliyorum. Sanıyorum önümüzdeki dönem alacaksınız. Üçün biri mi oluyor acaba? Olabilir.
+
+17
+00:08:51,543 --> 00:09:10,644
+Orada bu kavramları daha iyi pekiştireceğinize inanıyorum. Hardware altyapısını bildikten sonra bu kavramları işletim sistemlerinde bağlamanız ve birleştirmeniz daha kolay olacaktır.
+
+18
+00:09:10,644 --> 00:09:22,784
+Olabildiğince açık anlatmaya çalışacağım ama bu haftaki dersi iyi anlayabilmek için aslında cache memory konusunu yani ön bellek konusunu iyi anlamış olmanız gerekiyor.
+
+19
+00:09:22,784 --> 00:09:32,463
+Nasıl kullanılıyor, neden ihtiyaç duyuluyor, neden hit rate bu kadar yüksek oluyor bu sistemin, sebebi nedir?
+
+20
+00:09:32,463 --> 00:09:41,643
+Bunları eğer kavrayabildiysek üstüne bu yeni bir kavram olan virtual memory konusunu eklemeniz daha kolay olacaktır.
+
+21
+00:09:49,043 --> 00:09:54,123
+Şimdi yine tablet üzerinden gidelim.
+
+22
+00:10:11,059 --> 00:10:35,439
+Peki, şimdi 8 geçiyor. Şuradan şeyi tekrar bir kontrol edeyim. Henüz 19 kişiyiz. Kalan sağlar bizimdir. 19 öğrencimle ben bu konuyu güzel bir anlatayım size. Bolda örnekle yine bir örnek hazırladım. Onunla da kapanışı yaparız.
+
+23
+00:10:35,439 --> 00:10:48,859
+Bugün mazeret sınavına girecek bir öğrenci vardı eğer derste ise şu anda listeyi göremiyorum.
+
+24
+00:10:48,859 --> 00:10:50,459
+Bakayım.
+
+25
+00:10:53,499 --> 00:10:56,939
+Saat 11'de başlayacak.
+
+26
+00:10:58,359 --> 00:10:59,399
+Yok derste.
+
+27
+00:11:01,179 --> 00:11:02,659
+Sınavı onun hazır.
+
+28
+00:11:06,292 --> 00:11:07,051
+Pekala.
+
+29
+00:11:12,179 --> 00:11:35,179
+Geçen hafta, hatta son iki hafta, cache memory konusunu anlattık. Cache için burada küçük bir review görüyorsunuz. Cache'in mutlaka kullanılması gereken zorunlu bir yapı olmadığını biliyoruz.
+
+30
+00:11:35,179 --> 00:11:56,879
+Kullanım amacı sistemin hızını arttırmak aslında. Bu yapı içerisinde olmazsa olmaz birimler, bir işlemci yani bir bilgisayar yapısı içerisinde bir işlemciye ihtiyacımız var. Neden? Çünkü aritmetik işlemleri yapacak olan birimdir bu.
+
+31
+00:11:56,880 --> 00:12:08,339
+içerisinde registerleriyle vesaire. Ve yine bir bilgisayar sisteminde memory olmazsa olmaz parçalardan biridir.
+
+32
+00:12:08,520 --> 00:12:15,319
+Çünkü verinin saklanması ihtiyacı var. Bütün veriyi registerlerde tutamayız.
+
+33
+00:12:15,319 --> 00:12:25,819
+Bu yapı içerisinde kullandığımız cache ise diyor ki esas amacı işlemleri daha hızlı yapmak.
+
+34
+00:12:25,819 --> 00:12:48,959
+Çünkü bir main memory'den yani dinamik RAM'den veriyi registra taşımak erişim süresi açısından çok yavaş olduğu için biz bu işlemleri hızlandırmak istedik ve main memory ile işlemci arasına bir cache memory yerleştirdik.
+
+35
+00:12:48,959 --> 00:13:05,779
+Cache memory, main memory'de tutulan verinin içerisinden küçük bir parçayı, sık erişilen bir bölgeyi sadece tutuyor ve işlemci bu veriye ihtiyaç duyduğunda daha hızlı erişmesini sağlıyor.
+
+36
+00:13:05,779 --> 00:13:20,499
+Böyle bir faydası var ve zorunlu kullanılması gereken bir yapı taşı değil tabii ki. Ama amacımız daha hızlı işlemciler, bilgisayarlar üretmek.
+
+37
+00:13:24,459 --> 00:13:28,799
+Hocam, keşf ile ilgili bir şey soracaktım.
+
+38
+00:13:28,799 --> 00:13:39,120
+Biz şimdi bu main memory'den veriyi keşe alırkenki politikayı işletim sistemleri tarafında belirliyoruz değil mi? Bunun donanımsal bir şeyi var mı?
+
+39
+00:13:39,120 --> 00:13:57,499
+Hayır, donanım ile belirliyoruz. İşlemci üretildiğinde bu mapping tekniklerinden bahsetmiştik. Fully associative ya da direct mapped cache gibi. O donanım olarak hangisi tasarlanmış ve üretilmişse, üzerinde varsa onu kullanıyoruz.
+
+40
+00:13:57,499 --> 00:14:04,279
+Yani işlemcinin içerisinde mesela yazar 4-way set associative cache memory
+
+41
+00:14:04,692 --> 00:14:06,091
+şu kadar kapasite vardır.
+
+42
+00:14:06,091 --> 00:14:12,992
+Yani kastettiğim şey hocam, yani hangi verinin, yani bizzat hangi verinin oraya kaydedileceğiyle ilgili işlemler?
+
+43
+00:14:13,492 --> 00:14:15,271
+Hani sık kullananlar dedik ya.
+
+44
+00:14:15,271 --> 00:14:25,811
+Tabii tabii, onlar aslında işletim sistemi main memori'de eriştiğimiz bir adres varsa hemen onun etrafındaki bloğu alıp taşıyor.
+
+45
+00:14:25,811 --> 00:14:35,711
+Yani dolayısıyla biz istesek aslında hani işletim sistemini pas geçebilsek kendimiz de istediğimiz bazı verileri teşe kaydedip oradan erişip işlem yapabiliriz
+
+46
+00:14:35,711 --> 00:14:48,671
+Yapabilirsiniz doğru ama yani tabii ki ihtiyacı öngörme açısından orada iyi bir algoritma çalışıyor zaten yani hani siz ama bunu yapabilir misiniz?
+
+47
+00:14:48,671 --> 00:14:54,232
+Yapabilirsiniz tabii öyle bir tasarım yapsanız özel bir tasarım kullanabilirsiniz
+
+48
+00:14:54,231 --> 00:14:57,271
+Yani dedim sistemine girmeden.
+
+49
+00:14:58,311 --> 00:15:10,711
+Şimdi şu ana kadar öğrendiğimiz tüm memory hiyerarşisi içerisinde öğrendiğimiz her seviyeyle ilgili diyor ki burada bu çok güzel bir cümle bence.
+
+50
+00:15:10,711 --> 00:15:16,631
+Each level of memory hiyerarşi is just a subset of next higher level.
+
+51
+00:15:16,631 --> 00:15:31,991
+Bakın, memory hiyerarşisi içerisinde her seviye aslında bir üst seviyedeki belleğin bir alt kopyasını, bir alt kümesini muhafaza ediyor, içinde saklıyor diyor.
+
+52
+00:15:31,991 --> 00:15:41,691
+Az önce konuştuğumuz gibi cache memory ne dedik? Main memory'nin içerisinde sadece küçük bir parçayı, bir adres bölgesini tutabiliyor dedik.
+
+53
+00:15:41,692 --> 00:15:51,632
+Aynı şey aslında disk ile main memory arasında da var. Yani hard diskte bulunan verinin tamamını biz main memory'e taşımıyoruz.
+
+54
+00:15:51,632 --> 00:16:02,352
+Sadece erişmek istediğimiz dosya, erişmek istediğimiz bir program, çalıştıracağımız bir programı adreslediğimizde o zaman ne oluyor?
+
+55
+00:16:02,351 --> 00:16:23,852
+DİSC'ten bu program main memory'e taşınıyor. Yani yine DİSK'teki büyük bir veri bloğunun program veya işte kod bloğunun siz küçük bir alt kümesini sadece bir sonraki seviyeye, bir alt seviyeye taşımış oluyorsunuz.
+
+56
+00:16:23,852 --> 00:16:38,672
+benzer yapının orada da olduğunu söylüyor. Cache'in bu kadar hızlı çalışmasının yani Cache'te hızlandırma söz konusu dedik ama bu hızlandırma işini nasıl başarıyor?
+
+57
+00:16:38,671 --> 00:16:55,371
+Bu kavramları lütfen mutlaka öğrenin. Hani bu ders bittikten sonra biz üstünden belki 5-10 sene geçtiğinde bile aklınızda kalması gereken kavram bence temporal lokalite, spatial lokalite gibi kavramlar.
+
+58
+00:16:55,371 --> 00:17:09,591
+Mesela bu kavramları yüksek lisans mülakatlarında çokça sorulur. Bir sorduğumuz sorulardan biri de standart sapmadır. Hep söylerim veri madenciliğinde söylüyorum öğrencilerime.
+
+59
+00:17:09,591 --> 00:17:18,471
+Yani standart sapmayı bir mühendisin çok iyi tarif edebilmesi lazım. Çok önemli bir parametre, istatistiksel parametre.
+
+60
+00:17:18,471 --> 00:17:29,591
+Bu da donanım açısından baktığımızda işte cache memory'nin bu kadar hit rate'inin yüksek olması nasıl mümkün olabiliyor?
+
+61
+00:17:30,071 --> 00:17:34,251
+Temporal lokalite ve spatial lokalite'den dolayı.
+
+62
+00:17:34,251 --> 00:17:42,212
+Temporal Lokaliti ne diyordu? Referans verdiğimiz bir adrese yakın gelecekte tekrar referans verilebilir.
+
+63
+00:17:42,212 --> 00:17:50,611
+Yani eriştiğiniz bir adrese 3-5 satır kod çalıştırdıktan sonra tekrar çağırma ihtimaliniz çok yüksek diyor.
+
+64
+00:17:50,751 --> 00:17:55,912
+Ve bunu öngördüğü için eriştiğiniz adresi cache taşıyor.
+
+65
+00:17:56,931 --> 00:18:00,671
+Diğeri de neydi? Eriştiğimiz adrese komşu.
+
+66
+00:18:00,788 --> 00:18:17,968
+bunun bir üstündeki satır olur, bir altındaki satır olur. Yani ne yapıyoruz o zaman? Memoride eriştiğimiz bir adrese komşu olan bölgeyi blok olarak cache'e taşıyoruz. Böylece cache memory'de hit rate'imiz bu kadar yüksek oluyor.
+
+67
+00:18:17,968 --> 00:18:34,968
+Yani block size'ı birden büyük, bir word'den büyük seçip block olarak veriyi cache'e taşımak spatial locality'yi destekliyor ve böylece aradığımız veriyi cache'te bulma şansımızı arttırmış oluyoruz.
+
+68
+00:18:34,968 --> 00:18:55,048
+Cache Design Choices demiş. Yine bu slide'da cache'in bir tekrarını yapıyor çünkü. Cache'te nelere dikkat ediyorduk? Ne tür parametrelerimiz vardı? Size of cache demiş. İlk verdiği cache'in kapasitesi.
+
+69
+00:18:55,047 --> 00:19:13,047
+Yani cache kapasitesini ne kadar arttırırsak o kadar hızlı çalışır bu sistem ama cache'in statik RAM ile üretiliyor olması bunun maliyetini çok arttırıyor.
+
+70
+00:19:13,047 --> 00:19:20,508
+O yüzden kapasiteyi çok fazla arttıramıyoruz maliyeti arttırma problemi yüzünden.
+
+71
+00:19:20,788 --> 00:19:23,927
+Hocam yeni nesil işlemcilere baktım onlarda bile 12 megabyte.
+
+72
+00:19:23,927 --> 00:19:40,987
+Yani işte maalesef o yüzden işte level 1, level 2 kullanılıyor vesaireyi ama yine maliyet çok önemli bir unsur burada bu yapıyı daha fazla büyütemiyoruz.
+
+73
+00:19:42,807 --> 00:19:52,067
+Cache tasarımında direct mapped cache ve associative cache yapılarını gördük hatta set associative yapıları gördük.
+
+74
+00:19:53,927 --> 00:20:15,047
+Cache de N-Way set associative diyor. Hani birden fazla set kullanmak. İki set, dört set gibi. Burada N'in kaç seçileceğine karar vermek. Yani bu yine bir design choices olarak bizim karşımıza çıkıyor.
+
+75
+00:20:15,047 --> 00:20:35,047
+Block replacement policy, cache'te bir diyelim ki dört tane setten oluşan bir yapı var. Dört setin dördü de dolu. Siz yine indekse aynı olan bir başka adres taşıyacaksınız. Bu setlerden hangisine yerleştireceksiniz?
+
+76
+00:20:35,047 --> 00:20:58,247
+İşte burada kullanılan replacement policy için değişik algoritmalar var. Usage-based olan, least recently used ya da random replacement gibi değişik algoritmalar var burada kullanılan. İşletim sistemlerinde de bunları bolca konuşacaksınız. Hazır olun. Güzel konular ama.
+
+77
+00:20:58,247 --> 00:21:11,827
+Second Level Cache demiş. Evet yani Level 1, Level 2 Cache kavramları ve yazma işleminde Write True ve Write Back kavramlarını konuştuk hatırlarsanız.
+
+78
+00:21:13,667 --> 00:21:23,527
+Şimdi bu hafta ise Virtual Memory konusundan bahsedeceğiz.
+
+79
+00:21:23,527 --> 00:21:38,207
+Burada generalized caching kavramından biraz bahsediyor. Yani cache yapısı madem bu kadar güzel bir teknoloji başka nerelerde kullanılabilir? Bunlardan bahsedeceğiz.
+
+80
+00:21:39,127 --> 00:21:50,887
+Virtual memory dediğimiz zaman virtual adresten fiziksel adrese dönüşüm yani address translation kavramından bahsedeceğiz.
+
+81
+00:21:50,887 --> 00:21:54,207
+Virtual Memory
+
+82
+00:21:54,655 --> 00:22:03,536
+Physical memory adres dönüşümünü gerçekleştirmek için kullandığımız page table yapısından bahsedeceğiz.
+
+83
+00:22:03,536 --> 00:22:13,615
+Biz bu page table yapısını çok genel olarak vereceğiz. Çok büyük bir tabloda işte bu yapılar nasıl tutulur bunlardan bahsedeceğiz.
+
+84
+00:22:13,615 --> 00:22:26,375
+İşletim sistemleri dersinde ise bu page table'ları işte bölerek kullanma, hiyerarşik tablolar kullanma gibi değişik teknikler göreceksiniz.
+
+85
+00:22:27,295 --> 00:22:35,775
+Page table aslında yapı olarak çok büyük bir tablo ve bunun da yine bir main memory'de tutulması söz konusu.
+
+86
+00:22:35,775 --> 00:22:44,255
+Main memory'de tutmak demek sürekli memory access ve bu işin çok yavaş olması anlamına gelecek.
+
+87
+00:22:44,255 --> 00:22:58,635
+O yüzden yine bu işi hızlandırmak adına TLB dediğimiz Translation Look-A-Site Buffer özel bir cache tablosu kullanacağız.
+
+88
+00:22:59,115 --> 00:23:03,115
+Page table'ı tutmak için bu teknolojiden bahsedeceğim.
+
+89
+00:23:03,115 --> 00:23:12,435
+ve yine tabi bu konunun da olmazsa olmazı aynı cache'te olduğu gibi page replacement policy var.
+
+90
+00:23:13,075 --> 00:23:16,035
+Orada cache'te cache replacement policy vardı.
+
+91
+00:23:16,035 --> 00:23:29,376
+Burada da page replacement yani dolu ise bunu ben nasıl seçerek kullanmalıyım gibi page replacement policy'den bahsedeceğiz.
+
+92
+00:23:29,376 --> 00:23:46,836
+ve multi-level page tables işte bu kavram yani page table'ın yapı olarak çok büyük bir tablo olduğunu bunu multi-level bölerek kullanma tekniğinden işletim sistemleri dersinde bahsedilecek demiştim.
+
+93
+00:23:46,836 --> 00:24:00,575
+Şimdi generalized caching dediğimiz bölümde biz cache memory'nin hızlı erişim anlamında bize nasıl avantajlar sağladığını gördük.
+
+94
+00:24:00,575 --> 00:24:13,956
+O zaman bilgisayar yapısı içerisinde yani bilgisayar sistemi içerisinde bunun bu tekniğin kullanıldığı başka alanlar da zaman içerisinde ortaya çıkmış.
+
+95
+00:24:13,956 --> 00:24:28,396
+File System Cache, Web Page Cache, Software Memorization gibi alanlarda aslında cache yapısının kullanıldığından bahsedebiliriz.
+
+96
+00:24:28,836 --> 00:24:41,836
+Genel mantık nedir? Burada diyor ki, if something is expensive but we want to do it repeatedly, just do it once and cache the results demiş.
+
+97
+00:24:41,835 --> 00:24:59,715
+Son derece güzel bir tanım olmuş aslında. Sonuçta biz cache'ini için kullanıyorduk. Main memory'den veriyi getirirken bu işin çok yavaş olduğunu ve bizim için maliyetli olduğunu söyledik.
+
+98
+00:24:59,715 --> 00:25:09,715
+Bunun yerine ne yaptık? Bu işi tekrar tekrar yapmak yerine bir defa da bunu cache'e taşıdık ve daha hızlı erişim sağlar hale geldik.
+
+99
+00:25:13,556 --> 00:25:18,976
+Bu average access time ile ilgili geçen hafta örnek yapmıştım hatırlıyorsunuz herhalde.
+
+100
+00:25:19,295 --> 00:25:25,755
+Ortalama erişim süresini hesaplarken hit rate çarpı hit time demiş.
+
+101
+00:25:27,075 --> 00:25:29,516
+Artı miss rate çarpı miss time.
+
+102
+00:25:29,935 --> 00:25:33,755
+Buradaki miss time ve hit time'ı biliyorsunuz.
+
+103
+00:25:34,576 --> 00:25:39,835
+Biri cache'e getirme süresi ya da cache'ten okuma süresi diyelim.
+
+104
+00:25:39,835 --> 00:25:48,035
+öbürü ise cache'e bakıp bulamadığında gidip main memory'den getirme süresi gibi düşünüyoruz.
+
+105
+00:25:48,035 --> 00:25:52,916
+Dolayısıyla bununla ilgili geçen hafta güzel iki tane örnek yapmıştık.
+
+106
+00:25:53,335 --> 00:25:56,315
+Oradaki çözümleri hatırladığınızı sanıyorum.
+
+107
+00:25:56,955 --> 00:26:01,955
+Hit time tabii miss time'a göre çok küçük.
+
+108
+00:26:01,955 --> 00:26:10,795
+O yüzden bu sistem bu kadar performansı arttıran bir sistem olarak karşımıza çıkıyor.
+
+109
+00:26:12,055 --> 00:26:27,595
+Ve hit time'ın bu kadar küçük olmasının sebebi nedir diye baktığımızda cache size'ı bunu etkileyen parametrelerden biri cache kapasitesinin büyük olması olabildiğince
+
+110
+00:26:27,596 --> 00:26:40,515
+Layout Policy, burada bahsettiği şey mapping teknikleri, işte fully associative, direct map gibi ve Replacement Policy kavramları.
+
+111
+00:26:42,375 --> 00:26:55,576
+Ve yine bir memory hiyerarşiden bahsedeceğiz. Bu memory hiyerarşide piramidin tepesi CPU'ya en yakın olan bölge.
+
+112
+00:26:55,575 --> 00:27:08,575
+CPU içerisinde yer alan mesela şunu bir blok olarak çizebiliriz. Bu CPU içerisinde yer alan internal registerlar ve level 1 cache yapısı.
+
+113
+00:27:08,575 --> 00:27:28,075
+Bunun altında level 2 cache yapısı var ve biz şu ana kadar main memory ile cache arasında bu verinin bloklar halinde nasıl taşındığını görmüş olduk.
+
+114
+00:27:28,076 --> 00:27:55,536
+Bundan sonraki bölüm ise dersin kalan bölümü ise artık main memory ile disk arasındaki veri transferinden bahsedecek ve burada dikkat edin diskten main memory'e yani virtual memory'den physical memory'e veri transferi sağlarken page dediğimiz yapılar ile taşınıyor.
+
+115
+00:27:55,535 --> 00:28:15,895
+Bu yapı cache'te block adını alıyordu. Virtual memory tarafında ise artık sayfa adını verdiğimiz page'ler, fixed size, bakın bunlar sabit uzunluklu sayfalar var ve bu sayfaları biz diskten memory'e taşıyoruz.
+
+116
+00:28:15,895 --> 00:28:30,615
+Yine bu memory hiyerarşide aşağısı piramidin alt tarafı lower level'ı gösteriyor ve daha geniş piramidin tabanını oluşturuyor.
+
+117
+00:28:30,615 --> 00:28:34,515
+Daha büyük kapasiteli bellek birimlerinden bahsediyoruz.
+
+118
+00:28:34,515 --> 00:28:46,715
+Yukarı seviyelerde upper level için ise ne diyebiliriz? Daha küçük kapasite ve daha hızlı çalışan birimler söz konusu.
+
+119
+00:28:53,523 --> 00:29:03,103
+Evet, memory hiyerarşi requirements demiş ve virtual memory kavramına geçebiliriz.
+
+120
+00:29:03,683 --> 00:29:18,803
+Şimdi bu haftaki konu başlığımız dersin ilk yarım saati bitti ama genel olarak şu ana kadar ne yaptık, ne yapacağız bunu konuşmuş olduk ve virtual memory konusuna şimdi giriş yapabiliriz.
+
+121
+00:29:18,803 --> 00:29:45,483
+İşlemci tüm bu yapı içerisinde yer alan diskte bulunan bir dosyaya, bir programa erişmek istediğinde bu virtual adres olarak adresleyebildiği alanda tutulan bu bilgiyi, bu veriyi ya da programı önce physical memory'e dönüştürmesi gerekiyor.
+
+122
+00:29:45,483 --> 00:29:49,103
+Physical memory dediğimiz alan main memory alanı.
+
+123
+00:29:49,864 --> 00:29:59,424
+Ve bu işlemi yaparken virtual adresten fiziksel adrese, physical adrese bir dönüşüm yapması gerekiyor.
+
+124
+00:30:00,643 --> 00:30:11,423
+Bu dönüşüm işlemini yaparken kullandığımız bir page table'ımız var ve tüm bu işlemleri bu page table üzerinden gerçekleştireceğiz.
+
+125
+00:30:21,364 --> 00:30:40,364
+Burada size of information blocks that are transferred from secondary to main storage dediği M harfini main storage yani main memory ifade etmek için kullanıyor.
+
+126
+00:30:40,364 --> 00:31:00,463
+ve veriyi diskten main memory'e bloklar halinde yani sabit uzunluklu page adını verdiğimiz bloklar halinde taşımamız gerekiyor.
+
+127
+00:31:00,463 --> 00:31:06,063
+Bunların main memory'e yerleştirilmesi işlemine placement policy deniyor.
+
+128
+00:31:06,064 --> 00:31:26,224
+Eğer erişmek istediğimiz tüm physical memory alanı dolu iken virtual memory'den physical memory'e bir transfer yapmamız gerekiyorsa tüm main memory alanı yani physical memory alanı dolu ise
+
+129
+00:31:26,224 --> 00:31:42,423
+Burada dolu olan gözlerden bir tanesini çıkartıp onun yerine bir yeni page yerleştirmemiz gerekiyor. Bu işlemede replacement policy deniyor.
+
+130
+00:31:42,423 --> 00:31:57,683
+Bu işlemi yaparken bir swap işlemi yapıyoruz aslında. Main memory'de tutulan page'i virtual memory'e aktarıyoruz. Virtual memory'deki yeni bir page'i de physical memory'e aktarıyoruz.
+
+131
+00:31:59,864 --> 00:32:06,663
+Temel olarak bu replacement ve placement policy kavramlarını anlatmak için verilmiş bir slide.
+
+132
+00:32:11,251 --> 00:32:19,011
+Şimdi Virtual to Physical Address Translation için burada bir slide verilmiş.
+
+133
+00:32:19,011 --> 00:32:26,511
+Diyor ki, sol taraftaki blokta Program operates in its virtual address space.
+
+134
+00:32:27,631 --> 00:32:37,311
+Yani biz virtual address dediğimiz diskte bulunan bir dosyanın erişimine ihtiyaç duyduk.
+
+135
+00:32:37,311 --> 00:32:54,711
+Bu durumda erişmek istediğimiz virtual adres burada gördüğümüz hardware mapping dediği bir bloktan geçiriliyor ve bu blokun görevi virtual adresi physical adrese dönüştürmek.
+
+136
+00:32:54,711 --> 00:33:09,251
+ve bu physical address ile de physical memory dediğimiz main memory dediğimiz alanda bu veriyi okumak, bu alandan okumak aslında amaç bu.
+
+137
+00:33:09,251 --> 00:33:16,411
+Burada inceleyeceğimiz yapı, burada verilmiş olan hardware mapping dediği blog.
+
+138
+00:33:16,411 --> 00:33:25,531
+Hardware mapping dediği bloğun görevi virtual adresi physical adrese dönüştürmek.
+
+139
+00:33:26,571 --> 00:33:29,831
+Virtual to physical mapping işlemini yapacak.
+
+140
+00:33:29,991 --> 00:33:32,411
+Çok kolay aslında, zor bir şey yok burada.
+
+141
+00:33:32,411 --> 00:33:46,851
+Bu main memoriye taşınan bu peycilerin yerleştirilmesi sırasında karşılaşılan bazı problemlerden bahsediyor bu slide'da.
+
+142
+00:33:46,851 --> 00:33:56,571
+Söylediği şu, farklı kullanıcılar ya da farklı programlar için siz ne yaparsınız?
+
+143
+00:33:56,571 --> 00:34:14,731
+Virtual Memory'den Physical Memory'ye pageleri taşıdığınızda burada gördüğünüz gibi User A için yerleştirilmiş bir pagelerin yerleştirildiği bir alan var. User B için yerleştirildiği alan var. User A için var.
+
+144
+00:34:14,731 --> 00:34:30,091
+Fakat bu alanların arasında kalan boşluklardan bahsediyor. Bu boşluklar aslında bir page'in yerleştirilemeyeceği kadar küçük ama bir araya getirildiğinde de oldukça büyük alanlar oluşturuyor diyor.
+
+145
+00:34:30,091 --> 00:34:53,531
+Buna fragmentation problem adı veriliyor. Bunu da yine işletim sistemleri dersinde göreceksiniz. Zaman zaman diskte kullandığımız defragmentation işlemleri, bu boşlukları bir araya getirip kullanmamızı sağlayan uygulamalar.
+
+146
+00:34:53,531 --> 00:35:01,511
+Şimdi bu bizim konumuz değil biz daha çok donanım açısından bakacağız ve bu kavramları yerleştirmeye çalışacağız.
+
+147
+00:35:01,511 --> 00:35:18,272
+Şimdi lütfen dikkatli dinleyin. Bakın bu güzel bir örnek. Bu örnekte sağ tarafta virtual memory verilmiş. Şurası virtual memory alanı.
+
+148
+00:35:18,271 --> 00:35:39,291
+Sol tarafta ise Physical Memory alanı verilmiş. Şu arada gördüğümüz ise bu dönüştürme işleminin yapıldığı address translation işleminin yapıldığı bölümü gösteriyor.
+
+149
+00:35:39,291 --> 00:35:46,671
+Hep başından beri ne söylüyoruz? Virtual memory çok büyük bir alan, physical memory buna göre daha küçük bir alan.
+
+150
+00:35:47,031 --> 00:35:54,471
+Ve biz ne yapıyoruz? Higher level dediğimiz yüksek seviyede bulunan virtual memory'de daha büyük kapasitede bir veri var.
+
+151
+00:35:54,871 --> 00:35:58,831
+Bunun belli bir kopyasını sadece physical memory'e aktarıyoruz.
+
+152
+00:35:58,831 --> 00:36:07,051
+Burada örneği kolaylaştırmak için şöyle yapmış. Diyor ki sabit uzunluklu pejelerimiz vardı.
+
+153
+00:36:07,051 --> 00:36:08,251
+Page Size'ı
+
+154
+00:36:09,300 --> 00:36:37,519
+Page size'ı 1 kilobyte seçiyor. Ve gördüğünüz gibi her 1 kilobyte'lık yapıya page'lere numaralar vermiş. Page sıfırdan başlıyor. 31'e kadar toplam 32 kilobyte'lık işte hani ölçeklenebilir, kağıt üzerinde gösterilebilir olsun diye az sayıda şey koymuş buraya, page'leri yerleştirmiş virtual memory'e.
+
+155
+00:36:37,519 --> 00:36:52,640
+Sol tarafta ise physical memory de sadece 8 kilobyte tutabiliyor. Yani 8 tane page'i aynı anda saklayabiliyor. Sağ tarafta virtual memory de ise 32 tane page tutabiliyordu.
+
+156
+00:36:52,640 --> 00:37:17,700
+O zaman ne yapacağız? İşlemci de yürütülmekte olan komut bu pagelerden birini çağırdığında işte bu bir kod parçası olabilir page 1'de bunu sol tarafta gördüğümüz physical memory de bu 8 tane pageden birinin üstüne yazacak.
+
+157
+00:37:17,700 --> 00:37:31,499
+Ama bunların hangi virtual page, hangi physical adreste tutuluyor bunu bilebilmem için bunu bir tabloda tutmam gerekiyor arkadaşlar.
+
+158
+00:37:31,499 --> 00:37:40,119
+Page table dediğimiz tablonun burada yer alan page table dediğimiz tablonun görevi bu. Çok basit bir iş yapıyor aslında.
+
+159
+00:37:40,119 --> 00:38:01,439
+Bakalım önce elimizdeki adresi bize verilmiş olan page size'a göre az önce bir kilobaytlık sabit uzunluklu page'lerimiz var demiştik.
+
+160
+00:38:01,439 --> 00:38:05,859
+Page size'a göre bir offset alanı belirlememiz gerekiyor.
+
+161
+00:38:05,999 --> 00:38:08,179
+Yine az önceki örnekten yola çıkıyorum.
+
+162
+00:38:08,179 --> 00:38:24,259
+Az önceki örnekte her bir page 1 kilobyttı. O yüzden burada da eğer page size 1 kilobyte kabul edersek buradaki offset alanının 10 bit olması lazım.
+
+163
+00:38:24,619 --> 00:38:35,619
+Burada sağ tarafı adres bloğunun düşük anlamlı 10 bitini page size olarak yani page offset olarak kullanıyorum.
+
+164
+00:38:35,619 --> 00:38:40,939
+Geriye kalan bitleri ise page number olarak isimlendiriyorum.
+
+165
+00:38:42,679 --> 00:38:49,959
+Bunu hem virtual address için hem physical address için yapacağım.
+
+166
+00:38:50,519 --> 00:39:00,019
+Yani düşük anlamlı 10 bit page size kadar, page size'ın ihtiyaç duyduğu kadar bir alanı offset olarak ayıracağım.
+
+167
+00:39:00,019 --> 00:39:04,819
+Geriye kalan alan ise page number olarak isimlendirilecek.
+
+168
+00:39:04,819 --> 00:39:19,319
+O zaman bakın tablo aslında şöyle bir yapıya dönüşüyor. Burada adres mapping işlemini anlatacağım. Bize bir page table verilmiş. Page table'ın yapısında ne görmeyi bekliyorum?
+
+169
+00:39:19,319 --> 00:39:41,959
+Bir kere bu tablonun görevi virtual adresten physical adrese dönüşüm yapmak. O zaman işlemciden bana bir virtual adres geliyor. Bu virtual adresin düşük anlamlı bitlerini offset için ayırıyorum.
+
+170
+00:39:41,959 --> 00:39:57,559
+Bu page size ile tanımlanmış bir miktar olacak. Geriye kalan ise page number olacak. Bu page number, lütfen dikkat aşağıya doğru ne yapmış? Bu tabloyu indekslemek için kullanıyor.
+
+171
+00:39:57,559 --> 00:40:05,660
+Yani virtual adresin yüksek anlamlı page number bölümü
+
+172
+00:40:06,068 --> 00:40:18,747
+bana bu tablonun hangi satırına gideceğimi söylüyor. İşte bu page number bölümü diyelim ki 15 gösteriyorsa gidiyorum bu tablonun 15. satırına bakıyorum.
+
+173
+00:40:18,747 --> 00:40:30,068
+Ve diyorum ki bu seçtiğim adres valid biti nedir? Valid biti neyi gösteriyor?
+
+174
+00:40:30,068 --> 00:40:39,248
+Erişmek istediğiniz virtual adres physical memory'de var mı yok mu bunu gösteriyor. Aynı cache'te olduğu gibi hatırlarsanız.
+
+175
+00:40:39,248 --> 00:40:51,887
+Hani aradığınız adres cache'te var mı diye bakıyordunuz. Burada da aradığınız page physical memory'e taşınmış mı daha önce? Bunu gösteriyor valid biti.
+
+176
+00:40:51,887 --> 00:40:59,968
+Valid biti 1 ise eğer bu erişmek istediğiniz page'in virtual memory'de mevcut olduğunu söylüyor bize.
+
+177
+00:40:59,968 --> 00:41:09,027
+Ve arkasından access rights geliyor. Erişim hakları, çünkü işletim sistemlerinde bu biliyorsunuz önemli bir kavram.
+
+178
+00:41:09,027 --> 00:41:25,248
+Bu page'e sadece okuma amaçlı erişebilirsiniz, okuma ya da yazma amaçlı erişebilirsiniz gibi şeyleri var, hakları var, erişim hakları var
+
+179
+00:41:25,248 --> 00:41:31,868
+Bunları gösteren bitler yer alacak orada, birkaç bit, en az iki bit olması lazım
+
+180
+00:41:31,868 --> 00:41:35,387
+Ve arkasından da physical address gelecek
+
+181
+00:41:35,387 --> 00:41:50,428
+Eriştiğim virtual adresin physical memory'deki physical page number'ının tutulduğu bölüm burası.
+
+182
+00:41:50,428 --> 00:41:56,368
+Bakın bununla az önce ayırdığımız offset'i concatenate ederek.
+
+183
+00:41:57,167 --> 00:41:58,228
+Çünkü ne yapıyoruz?
+
+184
+00:41:58,347 --> 00:42:05,327
+Buradan ben bir physical page number alıyorum.
+
+185
+00:42:05,387 --> 00:42:06,707
+Şuradan bir
+
+186
+00:42:12,403 --> 00:42:22,704
+Physical page number geliyor. Bunun arkasına offset'i concatenate ederek bir physical address oluşturuyorum.
+
+187
+00:42:23,164 --> 00:42:30,303
+Buradaki toplama işlemi, toplama sembolünün görevi ikisini birbirine eklemek anlamında.
+
+188
+00:42:31,303 --> 00:42:36,483
+Physical page number buradan geliyor. Offset buradan geliyor.
+
+189
+00:42:36,483 --> 00:42:43,283
+Bu iki bölüm birbirine eklenerek physical address oluşturulmuş oluyor.
+
+190
+00:42:44,104 --> 00:42:58,783
+Sonuçta biz bu virtual adresten physical adrese dönüşüm işlemini bu page table adını verdiğimiz tablo üzerinde tutuyoruz ve bununla gerçekleştiriyoruz.
+
+191
+00:43:05,139 --> 00:43:07,819
+Page Table'dan bahsettik.
+
+192
+00:43:16,179 --> 00:43:42,100
+Evet. Şimdi bu page table'ı burada tekrar örneğini görüyorsunuz. Page table entry format demiş. Page table'da tutulan her bir satır page table entry diye geçiyor arkadaşlar.
+
+193
+00:43:46,179 --> 00:43:50,040
+Valid Biting görevini burada az önce bahsetmiştim.
+
+194
+00:43:51,099 --> 00:44:08,260
+Tablonun birinci sütununda işte erişmek istediğiniz satırdaki virtual adresin page table'da daha önceden getirilmiş mi getirilmemiş mi bunu gösteriyor.
+
+195
+00:44:08,260 --> 00:44:14,139
+Access rights'ı ve arkasından da physical page number'ı tuttuğunu söylemiştik.
+
+196
+00:44:14,139 --> 00:44:23,499
+Bu tablonun her bir satırına physical page table entry adı veriliyor.
+
+197
+00:44:24,299 --> 00:44:27,139
+Access rights için yine az önce konuşmuştuk.
+
+198
+00:44:27,419 --> 00:44:33,919
+Read only, read write ya da executable şeklinde farklı erişim hakları var.
+
+199
+00:44:34,040 --> 00:44:37,400
+Bunları işletim sistemlerinde detaylı göreceksiniz.
+
+200
+00:44:38,819 --> 00:44:40,579
+Burada güzel bir örnek daha var.
+
+201
+00:44:40,579 --> 00:44:42,239
+Bu akışı gösteriyor.
+
+202
+00:44:44,139 --> 00:44:48,599
+Ben şunu şöyle bir tamamlayayım üstünden size anlatayım
+
+203
+00:44:48,599 --> 00:45:02,519
+Şimdi bu slide'da arkadaşlar şunu söylüyor bize ve dediğimiz bir küme var diyor ve bize virtual adresi gösteriyor
+
+204
+00:45:02,519 --> 00:45:11,939
+Ve varsayalım ki virtual adreste n tane page tutuyorsunuz virtual adres space'i vermiş
+
+205
+00:45:11,939 --> 00:45:31,779
+M ise physical memory gösteriyor. Bunda ise M tane adres tutulabiliyor. Ve yapıda N büyük M hatta çok çok büyük anlamında söylenebilir.
+
+206
+00:45:31,779 --> 00:45:41,339
+ve bizim amacımız virtual memory adresini bir physical memory adresine dönüştürmek.
+
+207
+00:45:42,679 --> 00:45:54,219
+Hani hep virtual memory adresini physical memory adresine translate etmek gibi geçiyor bu kavram.
+
+208
+00:45:54,219 --> 00:46:09,239
+Bu işlemi şekilde şöyle anlatmış. Burada bir işlemci var diyor. Ve bu işlemci bir virtual address space'inde bir A adresine erişmek istediğini varsayalım.
+
+209
+00:46:09,239 --> 00:46:31,239
+Ne yapıyor? Bu A adresine erişmek istediğinde bir adres dönüşüm mekanizması var ve bu mekanizma bize ne diyor? Bu A adresi physical memory'de A üstü adresindedir diyor veya bir sıfır döndürüyor.
+
+210
+00:46:31,239 --> 00:46:50,120
+Sıfırın anlamı neydi? Aradığımız adres physical memory'de yok. Buna page fault deniyor. Yani erişmek istediğimiz virtual page physical memory'e taşınmamış daha önce. Page fault oldu.
+
+211
+00:46:50,120 --> 00:47:06,060
+O zaman operating system'in page fault handler mekanizması devreye giriyor ve diskten bu veriyi main memory'e aktarıyor.
+
+212
+00:47:09,300 --> 00:47:24,139
+Eğer aradığımız virtual adres, main memory'e daha önceden taşınmışsa, physical adresi vardır, A üssü adresidir. Bunu zaten main memory'den gidip okuyabilirsiniz diyor.
+
+213
+00:47:34,068 --> 00:47:42,328
+ve bu noktada güzel bir karşılaştırma yapılmış. Comparing the two levels of hiyerarşi demiş.
+
+214
+00:47:42,328 --> 00:47:59,607
+Buradaki hiyerarşik yapı aslında cache ile main memory arasındaki ilişkinin main memory ile disk arasındaki ilişki ile karşılaştırılması yapılmış.
+
+215
+00:47:59,607 --> 00:48:07,367
+Sol tarafta cache version, sağ tarafta ise virtual memory version yer alıyor.
+
+216
+00:48:08,587 --> 00:48:19,207
+Cache'de biz main memory'den veriyi block ya da line adını verdiğimiz veri blokları halinde getiriyorduk.
+
+217
+00:48:19,827 --> 00:48:25,167
+Virtual memory'de ise page adını verdiğimiz bloklar halinde taşıyoruz diyor.
+
+218
+00:48:25,167 --> 00:48:38,367
+Verinin cache'te bulunamaması miss olarak isimlendiriliyordu. Verinin physical memory'de bulunamaması durumu page fault olarak isimlendiriliyor. Kavramları da böylece eşleştirmiş oluyoruz.
+
+219
+00:48:41,167 --> 00:48:52,367
+Cache'te block size'dan bahsediyorduk. Virtual memory'de ise page size'dan bahsediyoruz.
+
+220
+00:48:56,467 --> 00:49:09,907
+Ve cache'te placement için kullanılan, yani cache'e veriyi yerleştirmek için kullanılan teknikler, direct mapped yani mapping tekniklerinden bahsediyoruz.
+
+221
+00:49:10,467 --> 00:49:18,767
+Direct mapped ya da N-way set associative varken, virtual memory tarafında ise sadece fully associative yapı var.
+
+222
+00:49:18,767 --> 00:49:27,727
+Yani bir page table üzerinden bu mekanizmayı yürütüyoruz.
+
+223
+00:49:29,987 --> 00:49:39,607
+Replacement tarafında cache'te bütün setler doluysa eğer LRU veya random kullanıyorduk diyor.
+
+224
+00:49:39,727 --> 00:49:44,167
+Bu tarafta ise LISC recently used kullanılıyor.
+
+225
+00:49:44,168 --> 00:49:54,467
+Yazma işlemi cache'te write through ya da write back şeklinde yapılırken virtual memory'de sadece write back yapılıyor.
+
+226
+00:49:54,467 --> 00:50:04,988
+Çünkü page dediğimiz yapı çok büyük bir yapı. Bir kilobaytlık yapı içerisinde bütün güncellemeler physical memory'de, RAM'de yapılıyor.
+
+227
+00:50:04,987 --> 00:50:14,887
+O page, swap edileceği zaman ya da işte üzerine yeni bir page overwrite edileceği zaman ne yapıyoruz?
+
+228
+00:50:14,887 --> 00:50:22,887
+Write back, önce götürüyoruz onu, diske yazıyoruz, sonra onun üzerine yeni bir veri getirip yerleştirebiliyoruz.
+
+229
+00:50:23,527 --> 00:50:26,527
+Write back yapısı çalışıyor diyebiliriz.
+
+230
+00:50:29,347 --> 00:50:33,007
+Evet, şimdi bir ara verelim.
+
+231
+00:50:33,008 --> 00:50:46,607
+Bunlar da temel kavramları anlatıyor. TLB tablosunu aradan sonra anlatacağım. Sonra size iki tane güzel örnek yapacağım. Sorunuz var mı şu ana kadar anlattığım bölümlerle ilgili?
+
+232
+00:50:51,635 --> 00:51:18,375
+Hocam ben kaçırdım mı bilmiyorum. SWEP, SPACE ile alakalı bir şey söylediniz mi? Bir önceki slide'da. Hayır, hayır. SWEP işlemini henüz daha detaylı anlatmadım. Bir önceki slide'da vardı da gördüm öyle. Yok, yok. Konuya çok girmedim. Örneklerde biraz daha detaylandıracağız onu. Tamamdır hocam, teşekkürler. Rica ederim.
+
+233
+00:51:18,375 --> 00:51:25,935
+Evet o zaman bir 10 dakika ara verelim size ben de örnekleri hemen hazırlayayım.
+
+234
+01:05:10,195 --> 01:05:11,155
+Merhaba arkadaşlar.
+
+235
+01:05:16,083 --> 01:05:17,283
+Merhaba hocam.
+
+236
+01:05:19,623 --> 01:05:26,723
+Evet. 37 kişi var derste. Bir göreyim bakayım. Kimler bilgisayarının başında acaba? Bizi dinliyor.
+
+237
+01:05:26,723 --> 01:05:29,483
+Evet.
+
+238
+01:05:36,947 --> 01:05:41,308
+20 kişi. Evet, yarıyı geçtik.
+
+239
+01:05:44,247 --> 01:05:45,288
+21
+
+240
+01:05:50,132 --> 01:06:00,771
+Yani şimdi dinlemeyen sonra dinleyecek. Çünkü örnekleri başka türlü görmesine imkan yok. Dersi derste dinlerseniz faydalı olur bence.
+
+241
+01:06:04,351 --> 01:06:11,771
+Şimdi önce slide'da kaldığımız yerden devam edelim. Sonra örneği, çözümlü örneği açacağım.
+
+242
+01:06:16,052 --> 01:06:20,291
+Evet, Sercan gördüm, el kaldıramıyorsun ama selam veriyorsun. Peki.
+
+243
+01:06:24,532 --> 01:06:25,152
+Evet
+
+244
+01:06:32,628 --> 01:06:53,507
+Şimdi en son virtual adres, physical adres spaceleri yani alanları var. Bu alanların adresleyen virtual adres ve physical adresler var. Bu ikisi arasında dönüşüm için bir page table'a ihtiyacımız olduğundan bahsettik.
+
+245
+01:06:53,507 --> 01:07:06,168
+Fakat bu page table'ın main memory'de tutuluyor olması ve buna erişimin yine bir main memory erişim maliyeti getirdiğinden bahsettik.
+
+246
+01:07:06,168 --> 01:07:29,988
+Bu tabloyu main memory'de tutulan bu tablonun belli bir parçasını TLB adını verdiğimiz Translation Look Asite Buffer dediğimiz bir alt parçasını cache yapısı üzerinde tutuyoruz.
+
+247
+01:07:29,988 --> 01:07:34,008
+Ve bu dönüşümü daha hızlı yapmamızı sağlıyor.
+
+248
+01:07:36,167 --> 01:07:38,867
+Burada
+
+249
+01:07:44,052 --> 01:07:54,411
+A way to speed up virtual memory translation is to use a special cache of recently used page table entries.
+
+250
+01:07:54,411 --> 01:08:02,812
+This has many names but most frequently used is translation look-asite buffer or TLB.
+
+251
+01:08:02,812 --> 01:08:27,251
+Bu tablo bize adres yani page table'ın bir alt parçasını burada tutmamızı sağlıyor dedik. O zaman normalde biz page table'a virtual page number ile indeks yapıp hangi satırına gideceğimize karar veriyorduk.
+
+252
+01:08:27,252 --> 01:08:44,211
+Dolayısıyla bu tabloda aslında aynı cache memory yapısında olduğu gibi neyi tutmam gerekiyor? Virtual adresi de tutmam gerekiyor ki page table'ın hangi satırları bu tabloya taşınmış?
+
+253
+01:08:44,211 --> 01:08:58,352
+Çünkü hepsini taşıyamıyorum. Hangi satırlarının taşındığını işaretleyebilmek için bir virtual adres alanı bulunması gerekir bu tablo içerisinde.
+
+254
+01:08:58,351 --> 01:09:22,971
+aradığınız virtual adres eğer TLB tablosundaki değer ile eşleşiyor ise TLB tablosu hit olmuştur ve TLB tablosundan gerekli physical adresi access right gibi alanları bulabilirsiniz.
+
+255
+01:09:22,971 --> 01:09:49,251
+Tabi ki bu tabloda bir valid biti vardı, access write vardı. Yine daha önce cache memory'de kullandığımız, cache memory'de şey demeyelim de burada kullandığımız bir dirty bitimiz var. Bu alanlar da yine page table'a özgü alanlar.
+
+256
+01:09:49,251 --> 01:10:03,132
+Şimdi bu tablo az önce söylediğim gibi ana tablonun main memori'de bulunan page table'ın küçük bir parçasını sadece barındırıyor içinde.
+
+257
+01:10:03,791 --> 01:10:14,272
+Fakat yine son zamanlarda sık erişilen adresler buraya taşındığı için bu tablonun hit rate'i oldukça yüksek.
+
+258
+01:10:14,632 --> 01:10:19,011
+Bu dönüşüm işini de ol bildiğince hızlı yapmamızı sağlıyor.
+
+259
+01:10:19,251 --> 01:10:36,231
+Şimdi tüm yapıyı burada özetle gösteriyor. Diyor ki burada bir işlemci var. En sağda gördüğümüz main memory var ve normalde page table bunun içerisinde biliyorsunuz.
+
+260
+01:10:36,231 --> 01:10:54,131
+Şimdi burada diyor ki bir address translation işlemi gerçekleştirmek istiyorum TLB kullanarak. Ne yapıyor? İşlemci virtual adresi önce TLB tablosunda kontrol ediyor.
+
+261
+01:10:54,132 --> 01:11:07,072
+Eğer TLB tablosu hit olmuşsa buradan bir physical address okuyabiliyor ve okuduğu physical address artık main memory address.
+
+262
+01:11:07,072 --> 01:11:15,451
+Bu adresi tabii ki ne yapıyoruz? Klasik cache ve main memory birlikte kullanırken ki yapımız.
+
+263
+01:11:15,451 --> 01:11:28,111
+önce cache'te kontrol ediyoruz var mı diye eğer cache'te bulabilmişse veriyi buradan okuyor ve bunu buradan getirmenin maliyeti işte 1 bölü 2 T olmuş oluyor diyor.
+
+264
+01:11:29,331 --> 01:11:41,991
+Eğer cache'te bulamamışsa veriyi mis olmuştur ne yapacak gidecek main memory'den okuyacak main memory'den getirmenin maliyeti de T'dir diyor.
+
+265
+01:11:43,444 --> 01:11:59,743
+varsayımla böyle bir şey yapmış, değerlendirme yapıyor kademeli olarak. Peki, erişmek istediğimiz virtual address, TLB tablosunda hit değil, miss olmuşsa ne yapmamız gerekiyor?
+
+266
+01:12:00,263 --> 01:12:07,183
+Translation işlemi için main memory'e gitmemiz gerekiyor. Main memory'e gitmenin maliyeti 20T.
+
+267
+01:12:07,183 --> 01:12:29,524
+Ve main memory'e gidip ne yapıyorsunuz? Main memory'den physical address okuyorsunuz. Dolayısıyla bu işlemi aslında hızlandırmak için sisteme günbegün yeni teknolojiler, yeni teknikler ekleniyor.
+
+268
+01:12:29,523 --> 01:12:37,843
+ve veriyi memoriden okuma işlemini olabildiğince hızlı yapmak hedefleniyor.
+
+269
+01:12:39,363 --> 01:12:41,843
+Burada küçük bir örnek var.
+
+270
+01:12:42,963 --> 01:12:50,823
+Bu örnekte diyor ki bir virtual memory sistemimiz var ve uses 4 kilobyte pages.
+
+271
+01:12:52,063 --> 01:12:54,423
+Bu page size'ı bize veriyor.
+
+272
+01:12:54,423 --> 01:13:10,183
+Her bir Word 64 bit yani veri yolunun 64 bit olduğunu söylüyor ve 48 bit virtual adres 48 bit virtual adresimiz var diyor.
+
+273
+01:13:10,183 --> 01:13:20,664
+A particular program and its data require 4395 pages.
+
+274
+01:13:23,863 --> 01:13:31,623
+A şıkkında what is the minimum number of page tables required diye sormuş.
+
+275
+01:13:31,624 --> 01:13:48,503
+yapmamız gereken burada bize bir başta page size verilmiş. Page size 4 kilobyte şurada vermiş.
+
+276
+01:13:52,564 --> 01:14:02,923
+Eğer page size 4 kilobyte ise, page offset için
+
+277
+01:14:04,435 --> 01:14:06,056
+Kaç biteğe ihtiyacım var?
+
+278
+01:14:12,979 --> 01:14:22,379
+4 kilobayt adreslemek için kaç bit kullanırız? 1 kilobayt 10 bit olduğuna göre 4 kilobayt için 12 bit. Peki.
+
+279
+01:14:26,452 --> 01:14:35,712
+Buna göre aslında yapmamız gereken şey şu. Bizim bir virtual adresimiz var.
+
+280
+01:14:44,692 --> 01:14:59,692
+Bu virtual adres 48 bit olarak verilmiş. Ben bunun düşük anlamlı bölümünü page offset...
+
+281
+01:15:01,395 --> 01:15:06,776
+Yüksek anlamlı kısmını ise virtual page number için ayıracağım.
+
+282
+01:15:18,131 --> 01:15:37,052
+Toplamda bu 48 bit ve page offset'i eğer 12 bitse geriye kalan bölüm 36 bit, virtual page number, page offset 12 bit olduğu için dedik.
+
+283
+01:15:37,052 --> 01:15:59,051
+Dolayısıyla burada minimum number of page tables required dediği kullanacağı page table'ın size'ını soruyor. Kaç satırdan oluşması gerekir? Kaç tane entry tutacak bir yapıda olması gerekir? Virtual page number ile bu indeksleniyordu biliyorsunuz.
+
+284
+01:15:59,051 --> 01:16:21,171
+Şuraya page table diyelim. Bu page table'ın satır sayısı oraya yazamıyorum. Satır sayısı sıfırdan başlayacak 2 üzeri 36-1'e kadar satırlardan oluşacak.
+
+285
+01:16:21,171 --> 01:16:30,271
+Page table'ın size'ı 2 üzeri 36 satırlık bir tablo olması gerekir diyoruz.
+
+286
+01:16:30,271 --> 01:16:42,471
+Ve bunun içerisinde bu particular program and its data requires dediği bunun içerisinde şu kadarlık bir page kullanılıyormuş.
+
+287
+01:16:45,371 --> 01:16:50,051
+Yani bunun dönüşümünün bu tabloda olması bekleniyor.
+
+288
+01:16:51,172 --> 01:16:59,852
+Daha detaylı bir örneğimiz var. Bu güzel bir örnek.
+
+289
+01:17:01,852 --> 01:17:04,051
+Diyor ki soruda
+
+290
+01:17:04,051 --> 01:17:20,852
+A small TLB has the following entries for a virtual page number of length 20 bits, a physical page number of 12 bits and a page offset is 12 bits.
+
+291
+01:17:21,172 --> 01:17:27,812
+Bu şekilde bize aslında yapıyı özetlemiş.
+
+292
+01:17:30,311 --> 01:17:36,172
+Physical page number 12 bit, page offset 12 bit.
+
+293
+01:17:37,111 --> 01:17:42,131
+Demek ki virtual page number ise 20 bit olarak verilmiş.
+
+294
+01:17:42,551 --> 01:17:44,512
+Şöyle düşünün, virtual address.
+
+295
+01:17:48,243 --> 01:18:01,003
+Virtual address, page offset ve virtual page number'dan oluşuyor.
+
+296
+01:18:02,003 --> 01:18:05,123
+Page offset burada 12 bit olarak verilmiş.
+
+297
+01:18:08,243 --> 01:18:12,123
+Virtual page number length 20 bit olarak verilmiş.
+
+298
+01:18:12,123 --> 01:18:22,284
+Yani bunun toplamı virtual adres için toplam 32 bit olduğunu görebiliyoruz.
+
+299
+01:18:24,403 --> 01:18:28,003
+Bunun physical adres tarafı ise
+
+300
+01:18:28,003 --> 01:18:30,603
+Fizikul adres tarafı ise
+
+301
+01:18:35,252 --> 01:18:40,252
+Yine Page Offset
+
+302
+01:18:41,971 --> 01:18:54,191
+ve physical page number dediğimiz iki alandan oluşuyor. Page offset 12 bit her iki tarafta da aynıdır zaten. Sağdaki yapıyla bu tarafta.
+
+303
+01:18:54,191 --> 01:19:13,471
+Physical page number ise yine 12 bit olarak verilmiş. Yani bizim physical adresimiz toplam 24 bit physical adresimiz.
+
+304
+01:19:17,939 --> 01:19:28,559
+Şimdi aşağıdaki tablo, a small TLB has the following entries for a blah blah system demiş.
+
+305
+01:19:28,559 --> 01:19:34,939
+Şimdi TLB tablosu dediği tablonun içerisindeki yapı bu.
+
+306
+01:19:34,939 --> 01:19:48,079
+Valid biti ayırılmış, verilmiş, dirty biti verilmiş, virtual page number verilmiş ve physical page number verilmiş.
+
+307
+01:19:48,079 --> 01:19:51,640
+Soru da aşağıda diyor ki
+
+308
+01:19:51,640 --> 01:19:54,800
+The page number and offset are hexadecimal.
+
+309
+01:19:55,859 --> 01:20:06,840
+For each of the virtual addresses listed, indicate a hit occurs and if it does, give the physical address.
+
+310
+01:20:06,840 --> 01:20:08,939
+Bize şu adresleri veriyor.
+
+311
+01:20:10,239 --> 01:20:13,340
+Bunların her biri virtual adresler.
+
+312
+01:20:13,339 --> 01:20:23,219
+Bu adreslerin bu TLB'de olup olmadığını indicate a hit occurs or not bunu söyleyeceğiz.
+
+313
+01:20:23,599 --> 01:20:27,279
+If it does give the physical address diye vermiş.
+
+314
+01:20:28,219 --> 01:20:37,339
+Şimdi bu adresleri tek tek benim incelemem gerekiyor.
+
+315
+01:20:37,340 --> 01:20:52,960
+gerekiyor. Verilmiş olan virtual adresleri page offset ve virtual page number şeklinde alanlara bölmem gerekiyor. Bakın page offset 12 bit. 12 bit kaç hexadecimal dijit yapar arkadaşlar?
+
+316
+01:20:52,959 --> 01:21:09,300
+3. O zaman düşük anlamlı 3 biti page offset olarak ayıracağım. Yüksek anlamlı kısmı ise virtual page number olarak ayıracağım.
+
+317
+01:21:09,300 --> 01:21:20,319
+Yüksek anlamlı kısmı physical page number 02BB4 olan bir satır var mı burada diye bakacağım.
+
+318
+01:21:20,319 --> 01:21:44,219
+0.2BB4 var. Peki bunun valid bitine bakıyorum. Valid biti 1. Bu ne demek? Bu adres şeyde var. Physical memory'e daha önceden bu page taşınmış demek. Yani page fault olmadı. Değil mi? Page'i physical memory alanında olduğunu söylüyor.
+
+319
+01:21:44,219 --> 01:21:53,219
+ve bunun DirtyBity 0 şu demek bu page içerisindeki hiçbir adresde update yapılmamış.
+
+320
+01:21:53,880 --> 01:22:06,479
+Yani page içerisinde physical memory'de tuttuğum page'in içerisindeki veri bütünlüğü ile diskdeki page birbiriyle eşleşiyor.
+
+321
+01:22:06,619 --> 01:22:08,540
+Hiçbir değişiklik yok aralarında.
+
+322
+01:22:08,839 --> 01:22:10,479
+Write işlemi yapılmamış diyor.
+
+323
+01:22:11,199 --> 01:22:13,020
+Anlamı bu DirtyBity'nin.
+
+324
+01:22:13,020 --> 01:22:21,579
+Bu satırda bana bir tane veriyor tabii ki physical page number'ı veriyor. Bu da ne? 45C imiş.
+
+325
+01:22:21,579 --> 01:22:34,139
+Ben şimdi yukarıda az önce beraber şey yaptık, işaretledik physical page number'ı 12 bit yani 3 hexadecimal dijit.
+
+326
+01:22:34,520 --> 01:22:42,460
+Şu değer imiş. Bunun yanına, arkasına page offset'i de ekleyeceğim ve physical adresi bulacağım.
+
+327
+01:22:43,020 --> 01:22:47,480
+Physical page number 45C
+
+328
+01:22:47,480 --> 01:22:51,600
+Bunun arkasına concatenate edeceğiz demiştik
+
+329
+01:22:51,600 --> 01:22:53,059
+A65
+
+330
+01:22:53,059 --> 01:22:57,279
+Page offset'i concatenate ettik
+
+331
+01:22:57,279 --> 01:23:02,359
+6 hexadecimal digit, 6 kere 4, 24 bit yapar
+
+332
+01:23:02,359 --> 01:23:05,639
+Physical address oluşturmuş oldum
+
+333
+01:23:05,639 --> 01:23:08,639
+Şu bulmuş olduğum yeşille yazdığım nedir?
+
+334
+01:23:08,999 --> 01:23:10,180
+Physical address'tir
+
+335
+01:23:10,180 --> 01:23:12,779
+Physical address
+
+336
+01:23:12,779 --> 01:23:17,160
+dönüşümünü TLB tablosunu kullanarak yapmış oldum.
+
+337
+01:23:18,100 --> 01:23:22,339
+Şimdi bir sonraki adres örneğine geçelim.
+
+338
+01:23:26,963 --> 01:23:32,483
+düşük anlamlı 3 dijit yani 12 bit page offset
+
+339
+01:23:37,492 --> 01:23:40,571
+Yüksek anlamlı virtual page number.
+
+340
+01:23:42,251 --> 01:23:43,111
+2, 4, 5.
+
+341
+01:23:43,251 --> 01:23:44,432
+E, 0, 3.
+
+342
+01:23:45,351 --> 01:23:46,771
+B, 32 mi yapıyor hocam?
+
+343
+01:23:47,111 --> 01:23:49,051
+0, E, 45, F.
+
+344
+01:23:50,271 --> 01:23:50,912
+Bu.
+
+345
+01:23:51,492 --> 01:23:53,452
+Ama bir şeyi gözden kaçırdınız.
+
+346
+01:23:56,191 --> 01:23:58,012
+Physical address de yok hocam bu.
+
+347
+01:23:58,371 --> 01:23:59,412
+Sıfır olduğu için.
+
+348
+01:23:59,691 --> 01:24:00,451
+Evet.
+
+349
+01:24:00,771 --> 01:24:01,011
+Tamam.
+
+350
+01:24:01,252 --> 01:24:03,191
+Bak o dikkatinizden kaçtı.
+
+351
+01:24:03,992 --> 01:24:05,371
+Yani bu ne demek?
+
+352
+01:24:05,371 --> 01:24:07,111
+Page fault oldu demek.
+
+353
+01:24:07,492 --> 01:24:25,231
+PageFault oldu demek. Bu durumda ne yapacak? Yani bunu diskten physical memory'e taşıyacak ve bununla ilgili physical memory adresini de hem PageTable'a hem de TLB tablosuna yazacak.
+
+354
+01:24:26,231 --> 01:24:29,992
+Buna ne dedik? PageFault yazalım.
+
+355
+01:24:37,716 --> 01:24:39,716
+C'ye geçtim.
+
+356
+01:24:42,836 --> 01:24:57,515
+C'deki örnekte 0D var mı? Yok. Bu da yok. Not in TLB. Bu not in TLB.
+
+357
+01:25:02,644 --> 01:25:16,783
+O zaman TLB'de yoksa ne yapacağım? TLB'de yoksa page table'a gidip bakacağım. Page table'da olabilir. Çünkü TLB'ye taşınmamış olabilir bununla ilgili bilgi.
+
+358
+01:25:18,003 --> 01:25:28,883
+Peki, son D'deki örneğe geçtim. D'de de verilen adresi düşük anlamlı 3D page offset ayırdım.
+
+359
+01:25:28,883 --> 01:25:53,004
+Sonra yüksek anlamlıya baktım. 03CA0 var ama valid biti 0 diyor. Yine bir page fault oldu. Bu dirty biti 1 görünüyor ama yani bu şu an erişmek istediğimiz page ile ilişkili değil.
+
+360
+01:25:53,004 --> 01:25:59,584
+Çünkü bunun valid biti 0 gördüğünüz üzere yine bir page vault olmuş oldu.
+
+361
+01:26:03,028 --> 01:26:06,447
+Evet, bu da yine slide'da güzel bir örnekti.
+
+362
+01:26:13,363 --> 01:26:32,763
+Burada page selection policy ve page replacement policy kavramlarından bahsediliyor. Random, FIFO, optimal, least recently used gibi değişik tekniklerle pageler memoriye taşınıyor.
+
+363
+01:26:32,763 --> 01:26:39,143
+Şimdi physical memoriye taşınıyor. Burada mesela şöyle bir örnek vermiş. Bu örneği kısaca anlatayım.
+
+364
+01:26:39,143 --> 01:26:56,123
+FIFA page replacement demiş. Diyor ki memory system with three pages. Yani memory sadece üç tane page tutabiliyor physical memory alanında.
+
+365
+01:26:56,123 --> 01:27:07,423
+ve biz arka arkaya işte burada ABC falan diye isimlendirdiği page'leri erişmek istiyoruz.
+
+366
+01:27:07,423 --> 01:27:20,123
+Buna göre diyor ki ben bunları first in first out page replacement ile yerleştirmek istersem eğer.
+
+367
+01:27:20,124 --> 01:27:42,124
+Bakın ilk eriştiği A getirdi, frame 1'e yerleştirdi, sonra B'yi frame 2'ye yerleştirdi, C'yi frame 3'e yerleştirdi. Ondan sonra tekrar A'ya erişmek istediğinde A zaten physical memory'de vardı. O yüzden ona erişim gerçekleştirdi.
+
+368
+01:27:42,123 --> 01:27:52,983
+sonra B'ye erişim gerçekleştirdi sonra D'ye erişim gerçekleştirmek istiyor ama D physical memory'e taşınmamış bir page.
+
+369
+01:27:52,983 --> 01:28:06,823
+Bunu neyin yerine koyabilirim? First in first out mekanizmasında bakın LRU değil bu eğer LRU olsaydı least recently used olsaydı C'nin yerine yazardı.
+
+370
+01:28:06,823 --> 01:28:15,863
+First in, first out mekanizmasını kullandığı için D'yi frame bire yani A'nın üzerine yazdı.
+
+371
+01:28:16,823 --> 01:28:23,903
+Çünkü ilk getirilen A'ydı. Ondan sonra dikkat A'ya tekrar erişim gerçekleştirmek istiyor.
+
+372
+01:28:24,003 --> 01:28:28,063
+A'ya tekrar erişim gerçekleştirmek istediğinde bunu B'nin yerine yazıyor.
+
+373
+01:28:28,863 --> 01:28:33,183
+Sonra D'yi aradığını da bulabiliyor physical memory alanında.
+
+374
+01:28:33,183 --> 01:28:40,083
+B'ye erişmek istiyor ama B yok. B'yi ne yapacak? C'nin yerine yazacak gibi.
+
+375
+01:28:40,083 --> 01:28:52,083
+Bakın diyor ki ben işte şu 2, 4, 6, 8, 10, 11 page'lik bir erişim yapıyorum diyor arka arkaya farklı page'lere.
+
+376
+01:28:52,483 --> 01:28:59,363
+Bu durumda FIFO kullandığımda 7 page fault durumuyla karşılaşıyorum.
+
+377
+01:28:59,363 --> 01:29:12,584
+PageFault durumu işte bir şurada, iki, üç, dört, tabii bir de ilk yerleştirmeyi sayıyor herhalde.
+
+378
+01:29:12,804 --> 01:29:19,444
+Dört, üç, yedi. O şekilde yedi tane PageFault durumu yaşadığını söylüyor.
+
+379
+01:29:19,444 --> 01:29:34,143
+Tamam. Sonra optimal page replacement algoritmasını ve bir de LRU'yu veriyor. LRU burada güzel bir örnek.
+
+380
+01:29:35,143 --> 01:29:47,904
+Aynı diziye erişimde LRU kullandığında 5 tane page vault durumuyla karşılaşıyormuş. Bu optimal page replacement bunları çok detayına girmiyorum.
+
+381
+01:29:47,903 --> 01:29:58,663
+Bunları dediğim gibi zaten işletim sistemlerinde öğreneceksiniz. Temel olarak işte FIFO'yu, LRU'yu bilmeniz benim için yeterlidir.
+
+382
+01:29:59,863 --> 01:30:09,943
+Bir başka örnek, bunları lütfen şu örnekler, slide'da yazan örnekleri sizde bir önceki şeye benzer şekilde yapmaya çalışın.
+
+383
+01:30:13,300 --> 01:30:20,719
+Şimdi ben size ekstra örnek göstereceğim demiştim.
+
+384
+01:30:24,659 --> 01:30:30,040
+Evet, ekstra örneğimiz birinci örnek şu. Açamadık, böyle olmuyormuş.
+
+385
+01:30:35,444 --> 01:30:36,544
+Neydi açtı?
+
+386
+01:30:48,404 --> 01:30:51,124
+Büyütmek istedim. Büyütemedim.
+
+387
+01:30:58,836 --> 01:31:03,655
+kapatalım. Şurada çıkıyormuş.
+
+388
+01:31:13,363 --> 01:31:29,863
+Önceki senelerin bir sınav sorusuymuş. O bayağı eskiymiş, 2010. Ama kavramlar aynı nasıl olsa. Şimdi soru şu. Bir virtual memory yapısı vermiş.
+
+389
+01:31:29,863 --> 01:31:41,284
+Suppose that a virtual memory system has the following properties. Virtual address 32 bit olarak verilmiş. Kalem.
+
+390
+01:31:46,228 --> 01:31:48,367
+Böyle yapınca küçülüyor.
+
+391
+01:31:49,228 --> 01:31:49,968
+Sevmedik onu.
+
+392
+01:32:07,636 --> 01:32:19,195
+32 bit virtual adres verilmiş. Virtual page number 24 bit olarak verilmiş. Physical page number 32 bit olarak verilmiş.
+
+393
+01:32:19,195 --> 01:32:28,915
+TLB için two-way set associative bir yapıdan bahsediyor.
+
+394
+01:32:28,915 --> 01:32:42,915
+Ve two-way set associative containing a total 512 satırdan oluşan bir TLB tablosu olduğunu söylüyor.
+
+395
+01:32:42,915 --> 01:33:06,575
+söylüyor. Bu verilenlere göre, bu verilenlere göre, şimdi baktığımızda virtual address, yani burada aslında tabii bir kötü bir örnek bu bence. Neden biliyor musunuz? Neden kötü bir örnek? Virtual address space, physical address space'den daha küçük görünüyor. Ama hani matematiksel olarak yapar mıyız? Yaparız bir örnek olması için.
+
+396
+01:33:14,676 --> 01:33:18,396
+Şimdi ben bunun üzerinde yine yazı yazamayınca olmuyor işte.
+
+397
+01:33:33,587 --> 01:33:55,008
+platformla mı alakalı? Çiz deyince böyle oldu. Hocam, ekran görüntüsü alıp onun üzerinden yazsanız nasıl olur? Ekran görüntüsü mü alayım? Yok, ben bunu ne yapayım biliyor musunuz? Word'e atıp yapıyordum, öyle yapmam gerekiyor. Word'e atarsam üzerinde yazıp çizebiliyorum.
+
+398
+01:33:55,008 --> 01:34:16,007
+Küçük bir şey isteyeceğim sizden hemen. Şunları indirip bilgisayarıma. Ben bunları bir Word dokümanının içine atayım. Daha önce öyle çözmüştük çünkü bunu hatırlıyorum.
+
+399
+01:34:50,836 --> 01:34:52,795
+Evet, gayet güzel oldu böyle.
+
+400
+01:34:54,836 --> 01:34:59,796
+Sıralama hatası olmuş sadece. Şunları yer değiştirirsek olacak.
+
+401
+01:37:25,492 --> 01:37:26,911
+PPT dosyası.
+
+402
+01:37:53,876 --> 01:37:56,856
+Şimdi burada daha rahat yazıp çizebileceğiz.
+
+403
+01:38:04,372 --> 01:38:08,611
+Görebiliyorsunuz değil mi arkadaşlar? Tekrar Word'de açtım örneği. Peki.
+
+404
+01:38:12,551 --> 01:38:19,131
+Virtual memory için, şuradan kalemi seçelim.
+
+405
+01:38:20,372 --> 01:38:29,771
+Virtual adres 32 bit verilmiş. Dolayısıyla şu virtual adresi burada 32 bit olarak görüyorsunuz.
+
+406
+01:38:29,771 --> 01:38:36,971
+Virtual page number 24 bit verilmiş.
+
+407
+01:38:37,151 --> 01:38:40,491
+Geriye kalan 8 bit demek ki page offsettir diyoruz.
+
+408
+01:38:45,912 --> 01:38:47,331
+32 bit.
+
+409
+01:38:47,751 --> 01:38:51,671
+Page offset physical adreste de aynı biliyorsunuz.
+
+410
+01:38:51,751 --> 01:38:58,191
+Page offset yukarıda 8 bitse physical adreste de 8 bit olmalı.
+
+411
+01:38:58,191 --> 01:39:05,031
+Physical page number 32 bit verilmiş, 32 bit verilmiş, bu ikisinin toplamı 40 bit yapıyor.
+
+412
+01:39:05,031 --> 01:39:09,711
+Buradan da physical adresi buluyoruz, toplam uzunluğunu.
+
+413
+01:39:10,092 --> 01:39:12,592
+Zaten sorunun devamı da bunlarla ilgili.
+
+414
+01:39:13,791 --> 01:39:21,552
+Please fill in the following blanks by giving a bit range such as 0 to 15.
+
+415
+01:39:21,552 --> 01:39:39,392
+Virtual Page Offset için Virtual Page Offset of a virtual address contains of bits 0 to 7 of the virtual address.
+
+416
+01:39:39,392 --> 01:39:50,751
+Bu alanları doldurmamız bekleniyor. Virtual Page Number için 8'den 31'e kadar olan adres aralığıdır diyoruz.
+
+417
+01:39:51,552 --> 01:39:58,052
+Physical page offset, physical adresin 0'dan 7'ye kadar olan bitleridir diyoruz.
+
+418
+01:39:58,052 --> 01:40:04,651
+Physical page number 8'den 39'a kadar olan bölgesidir diyoruz, physical adresin.
+
+419
+01:40:05,471 --> 01:40:07,452
+Geldik TLB tarafına.
+
+420
+01:40:07,912 --> 01:40:16,771
+TLB için, TLB tablosu için bize 512 satır olduğunu söylüyordu.
+
+421
+01:40:16,771 --> 01:40:41,592
+Ama TLB tablosu two-way set associative bir yapı. İki setten oluşuyor. Dolayısıyla 512 bölü 2, 256. O da 2 üzeri 8. Yani ben virtual page number'ı, yani az önce bu TLB tablosunun two-way set associative bir tablo.
+
+422
+01:40:41,592 --> 01:41:07,312
+Şunu TLB tablosu iki tane set var. Set 0, set 1. Toplam 512 satırdı. Set 0 ve 1 toplamı. Bunu ikiye böldüm. 256 buldum. Yani bu 0'dan 255. satıra kadar değer alıyor.
+
+423
+01:41:07,312 --> 01:41:24,632
+satır numaraları, satırı indekslemek için 8 bit kullanıyorum. Dolayısıyla biz virtual page number için ayrılmış olan 24 biti TLB tag ve TLB index diye iki alana bölmek zorundayız.
+
+424
+01:41:24,631 --> 01:41:40,631
+Az önce slide'da yaptığım örnek bir fully asosyatif bir yapıydı. Burada ise two-way set asosyatif bir yapı verilmiş TLB için.
+
+425
+01:41:40,631 --> 01:41:50,571
+TLB tablosunun bu yapısı sebebiyle biz TLB index ve TLB tag diye iki alana bölmemiz gerekiyor virtual adresi yani 24 biti.
+
+426
+01:41:50,571 --> 01:42:02,271
+İndeks için 8 bit kullanmamız gerektiğine karar verdik. Çünkü satır sayısı bunu belirleyen şey. Geriye kalan 16 bit ise TLB tag olarak şurada
+
+427
+01:42:02,931 --> 01:42:30,471
+TLB tagi olarak, cache'in bir alanında bu tag bilgisinin tutulması gerekecek. Ondan sonra işte valid bit gelecek, işte dirty biti gelecek. Ondan sonra valid bit, dirty vesaire. Ondan sonra da ne gelecek? Physical page number gelecek. Bu tablo bize bunu söyleyecek.
+
+428
+01:42:30,471 --> 01:42:48,511
+Aynı şey diğer set içinde geçer. Diğer sette de burada bir TLB tagi olacak, burada bir valid biti olacak, burada physical page number olacak. TLB tablosu cache tasarımında kullanılan tüm teknikleri kullanabiliyor.
+
+429
+01:42:48,511 --> 01:42:57,931
+Yani fully associative olabilir, direct mapped olabilir ya da set associative yapı da olabilir.
+
+430
+01:42:57,931 --> 01:43:11,251
+O yüzden yapıyı böyle kurguladıktan sonra soru da bize şunu soruyor TLB indeksi virtual page number'ın hangi bitlerinden oluşur diyor.
+
+431
+01:43:11,711 --> 01:43:17,871
+Virtual page number'ın düşük anlamlı 8 bitinden oluşuyor. 0'dan 7'ye kadar olan bitlerinden oluşuyor.
+
+432
+01:43:18,512 --> 01:43:36,172
+TLB tagi ise virtual page number'ın 8'den 23'e kadar olan bitlerinden oluşacak diyoruz.
+
+433
+01:43:37,071 --> 01:43:46,592
+Tasarımda buna bu verilenlere göre her bir alanın kaç bit olduğunu bu tabloya işlememiz gerekiyordu.
+
+434
+01:43:46,591 --> 01:44:01,171
+Aynı sorunun devamında bir şık verilmiş. O da diyor ki a part of TLB relevant to the next two questions is shown.
+
+435
+01:44:02,831 --> 01:44:11,171
+Yukariki örnekte tanımladığımız yapının TLB contentini vermiş, içinde nelerin olduğunu vermiş.
+
+436
+01:44:11,171 --> 01:44:28,111
+vermiş. Bakın TLB tablosunda bir valid bit var, bir tag alanı var. Entry dediği şey ise Entry dediği Physical Page Number ve bu iki set olarak verilmiş.
+
+437
+01:44:28,111 --> 01:44:40,191
+İşte burası set 1, burası set 0 olabilir numaralandırmak gerekirse. Setleri birbirinden ayırmak için şu şeyi kullanıyorum.
+
+438
+01:44:40,191 --> 01:44:44,531
+Sol tarafı, sağ tarafı ayrı bir set, sol tarafı ayrı bir set.
+
+439
+01:44:45,511 --> 01:44:47,451
+Ve bunların işte indeksleri var.
+
+440
+01:44:48,011 --> 01:44:52,131
+Az önce yaptığımız şeyde indeks için 8 bit kullanılıyordu.
+
+441
+01:44:52,792 --> 01:44:58,851
+Bu 8 bit 2 hexadezimal dijit olarak burada gösterilmiş.
+
+442
+01:44:58,971 --> 01:45:03,152
+Yani küçük bir parçası yine TLB'nin gösteriliyor.
+
+443
+01:45:03,152 --> 01:45:12,472
+Buna göre sorunun aşağıdaki bölümünde diyor ki assume the virtual address is.
+
+444
+01:45:12,472 --> 01:45:15,512
+Bir virtual address vermiş.
+
+445
+01:45:17,191 --> 01:45:20,872
+Fill in the following table in hexadecimal notation.
+
+446
+01:45:22,092 --> 01:45:26,771
+Write you for any value that is unknown.
+
+447
+01:45:26,771 --> 01:45:33,751
+That is not determined from the parameters and the table above.
+
+448
+01:45:36,311 --> 01:45:39,351
+Erişmek istediğimiz virtual adres bize verilmiş.
+
+449
+01:45:39,451 --> 01:45:42,391
+Virtual adresin, virtual adres 32 bit.
+
+450
+01:45:43,152 --> 01:45:49,131
+Bu virtual adresin düşük anlamlı 8 biti virtual page offset için ayrılmıştı.
+
+451
+01:45:49,131 --> 01:45:52,891
+Dolayısıyla burası page offset 2 biti ayrılmış, görüyorsunuz.
+
+452
+01:45:52,891 --> 01:45:58,851
+Yüksek anlamlı kısmı ise virtual page number.
+
+453
+01:45:58,851 --> 01:46:00,571
+Virtual page number.
+
+454
+01:46:01,291 --> 01:46:01,931
+Şurası.
+
+455
+01:46:04,115 --> 01:46:17,475
+Bu virtual page number'ı biz az önce yukarıda isterseniz orayı tekrar açayım. Bir fotoğrafını alın. Şunun hangi alan kaç bitti bunu görmek için.
+
+456
+01:46:24,532 --> 01:46:33,271
+Bir fotoğrafını, bir screenshotını alın. Çünkü kullanacağız.
+
+457
+01:46:36,271 --> 01:46:37,111
+Aşağıda.
+
+458
+01:46:40,291 --> 01:46:53,331
+Şimdi verilen adresin, virtual adresin, virtual page numberını TLB tag ve TLB index şeklinde parçalara ayıracağım.
+
+459
+01:46:53,331 --> 01:47:00,851
+0833F3E
+
+460
+01:47:00,851 --> 01:47:08,572
+Bunun düşük anlamlı bu virtual page number.
+
+461
+01:47:08,572 --> 01:47:10,611
+Virtual page number.
+
+462
+01:47:10,611 --> 01:47:23,571
+Şurası TLB index ve 16 bit de TLB tag alanı.
+
+463
+01:47:25,011 --> 01:47:31,091
+Şimdi tabloda bu adresin virtual page number'ı nedir diye soruyor.
+
+464
+01:47:31,091 --> 01:47:33,091
+Virtual page number budur.
+
+465
+01:47:33,091 --> 01:47:47,311
+Yani yüksek anlamlı 2, 4, 6 dijit egzadesimal olarak ya da binary olarak 24 bit virtual page number veriyordu
+
+466
+01:47:47,311 --> 01:47:54,291
+Virtual page offset nedir? Ayırdığımız düşük anlamlı 8 bit yani 9A
+
+467
+01:47:54,291 --> 01:48:00,171
+TLB indeksi ne soruyor? 3E
+
+468
+01:48:00,171 --> 01:48:12,892
+TLB tagi 08 3F yüksek anlamlı 4 dijit TLB tagi TLB hit midir diye soruyor.
+
+469
+01:48:12,892 --> 01:48:23,811
+Bakın TLB hit midir diye soruyor. Ne yapacağım? İndeksi 3E olan satırda 08 3F var mı diye bakacağım.
+
+470
+01:48:23,811 --> 01:48:43,451
+3E indeksi 3E olan satırda iki tane set var. İki seti de karşılaştıracağım. 08 3F var mı? Tag'i 08 3F olan var. Valid mi? Valid. TLB hit midir diye soruyordu.
+
+471
+01:48:43,451 --> 01:48:47,491
+TLB, pardon yukarıdaki örnekteydik karıştırmayalım.
+
+472
+01:48:47,972 --> 01:48:49,052
+Hittir diyoruz.
+
+473
+01:48:50,211 --> 01:48:54,151
+Bunun physical page number'ı nedir diye soruyor.
+
+474
+01:48:54,591 --> 01:48:56,972
+Physical page number'ı burada bakın şu.
+
+475
+01:49:00,692 --> 01:49:30,131
+0118ED falan diye giden. Nerede o? Pardon, bunu yanlış yazmış. Şurası doğru olan. Şurayı düzeltelim. Doğru olan bu. Bu physical page number'ı. Bunun arkasına page offset'i de eklediğimizde physical adresi bulmuş oluyoruz.
+
+476
+01:49:30,692 --> 01:49:35,791
+Tamam mıyız? Örnek anlaşıldı mı?
+
+477
+01:49:45,908 --> 01:49:47,587
+Evet hocam. Örnek daha var mı?
+
+478
+01:49:48,267 --> 01:49:55,067
+Evet, evet. Altta bir aynı örneğin devamında bir başka adres daha verilmiş. Şimdi onu da yapacağım.
+
+479
+01:49:55,687 --> 01:49:57,387
+O zaman ona geçersek daha iyi olur hocam.
+
+480
+01:49:57,387 --> 01:50:10,088
+Tamam. Şimdi bir başka adres vermiş. Yine bir virtual adres veriyor ve diyor ki adresimiz işte şurada verildiği gibi olsun.
+
+481
+01:50:10,088 --> 01:50:30,227
+Bu kaç hexadesimal digit? 2, 4, 6, 8. 4 kere 8, 32. Yani 32 bitlik bir virtual adres verilmiş. Bu 32 bitlik virtual adresin biz partitioning'ini yapmıştık. Düşük anlamlı 8 biti, page offset yine.
+
+482
+01:50:34,131 --> 01:50:48,092
+Yüksek anlamlı kısmı ise virtual page number veriyor. Yüksek anlamlı 6 dijit, 24 bit. Yani yukarıda bunları bulduk.
+
+483
+01:50:52,180 --> 01:50:57,399
+Şurada Virtual Page Number yüksek anlamlı 24 bit.
+
+484
+01:51:03,155 --> 01:51:28,655
+Virtual Page Number. Page Offset ile bunları ayırdık. Daha sonra Virtual Page Number'ımız 08 3e 40 çıktı. Bunu TLB Index ve TLB Tag alanlarına ayırıyoruz.
+
+485
+01:51:28,655 --> 01:51:38,016
+TLB index, TLB tag alanlarına ayırıyoruz.
+
+486
+01:51:39,755 --> 01:51:42,635
+Sorunun tabloda doldurun demiş.
+
+487
+01:51:43,115 --> 01:51:48,996
+Bu verdiği virtual adres için virtual page number nedir diye soruyor.
+
+488
+01:51:48,996 --> 01:51:55,996
+Virtual page number 08 3E 40 hex değeridir.
+
+489
+01:51:55,996 --> 01:51:59,236
+Virtual Page Offset
+
+490
+01:51:59,236 --> 01:52:04,655
+Şurada ayırdığımız 9B'dir
+
+491
+01:52:04,655 --> 01:52:08,516
+TLB Index
+
+492
+01:52:08,516 --> 01:52:14,535
+Virtual Page Number'ın düşük anlamlı 8 bitidir yani 40x'dir
+
+493
+01:52:14,535 --> 01:52:21,655
+TLB Tag'i 083E'dir
+
+494
+01:52:25,395 --> 01:52:50,635
+Şimdi TLB hitmi, missmi bunu soruyor yine. TLB tablosunun 40. satırına gidip bakacağım. 40. satırda 08 3E var mı? 40. satırda 08 3E var. Ama valid biti 0. Valid biti 0. Burada bir de 08 3E bu tarafta da var.
+
+495
+01:52:50,635 --> 01:53:04,555
+Bak bak bak. Soruda bir numara var. İkinci sete de bakmanız gerekiyor. İkinci taraftaki geçerli. Ve buradan ben bir physical page number okuyorum.
+
+496
+01:53:06,455 --> 01:53:20,175
+0918ED24. 0918ED24 benim TLB tablosundan okuduğum physical page number'ım. TLB ne oldu? Hit oldu.
+
+497
+01:53:20,635 --> 01:53:45,635
+Eğer öbür sete bakmasaydık bak hata yapacaktık. Lütfen dikkat. Ve bu physical page number'ın sonuna page offset'i birleştirdik. Physical address dediğimiz 40 bitlik adresi oluşturmuş olduk. Örneğimiz böyleydi.
+
+498
+01:53:45,635 --> 01:53:55,936
+Evet, nasılsınız? Anladık mı soruyu, çözümü? Bayağı detaylı, güzel bir örnekti bu.
+
+499
+01:53:56,936 --> 01:53:58,195
+Bence anlaşıldı hocam.
+
+500
+01:53:59,275 --> 01:54:05,495
+Tamam. Soru var mı? Tekrar chatten de soruyorum, bakıyorum.
+
+501
+01:54:09,684 --> 01:54:12,664
+Bu arada ben kaybolmuşum aşağıda.
+
+502
+01:54:18,387 --> 01:54:40,267
+Peki, soru yok diyorsunuz. O zaman bir ara verelim. Size bir örnek daha ama bu daha daha bir kapsamlı bir örnek. Daha fotoğrafını çekip paylaşayım ve üzerinde birlikte çözüm yapalım. Peki, 10 dakika ara arkadaşlar.
+
+503
+02:05:21,395 --> 02:05:31,995
+Evet, tekrar merhaba arkadaşlar. Ben bilgisayarımın başındayım. Acaba siz neredesiniz? Bakayım, göreyim elleri.
+
+504
+02:05:33,495 --> 02:05:34,455
+Biz de buradayız hocam.
+
+505
+02:05:35,795 --> 02:05:36,795
+Teşekkürler.
+
+506
+02:05:39,855 --> 02:05:47,576
+Yirmi beş kişi. Yirmi yedi kişi. Evet, kırk üç kişi var. Dersi alan. Peki.
+
+507
+02:05:47,576 --> 02:06:05,656
+Şimdi size bir örnek daha hazırladım. Virtual memory ile ilgili bir örnek daha vereceğim. Ayrıca sayfaya, ders duvarına yani dersin duvarına şey koyacağım.
+
+508
+02:06:05,655 --> 02:06:21,715
+Bir tane de cache ile ilgili böyle detaylı bir örnek koyacağım. Ona da lütfen bakarsınız. Çalışma egzersiz için faydalı olabilir. Bu arada şarj bitiyor. Şarja takalım.
+
+509
+02:06:33,747 --> 02:06:34,567
+Bütün anda.
+
+510
+02:07:02,771 --> 02:07:04,171
+İkinci örneğimiz
+
+511
+02:07:31,155 --> 02:07:32,735
+Ekranımız hazır.
+
+512
+02:07:50,387 --> 02:07:51,207
+Gini bir örnek.
+
+513
+02:07:56,564 --> 02:08:11,564
+Biraz bulanık çıkmış ama okunuyor herhalde. Virtual memory ve TLB ile ilgili yine. Virtual address 20 bit olarak verilmiş kalem.
+
+514
+02:08:17,140 --> 02:08:40,640
+Virtual address 20 bit olarak verilmiş. Physical address ise 18 bit olarak verilmiş. 20 bit ise eğer 1 megabyte'lık bir alandır diyor virtual memory'e. Physical memory 18 bit verilmiş. 256 kilobyte.
+
+515
+02:08:42,131 --> 02:09:04,972
+Şimdi soru da page size 1 kilobyte olarak verilmiş. Page size 1 kilobyte olarak verilmiş. Yine bir TLB tablosu two-way set asosiyatif bir yapıda tasarlanmış ve toplamda 16 tane entry tutuyormuş TLB tablosu.
+
+516
+02:09:04,972 --> 02:09:20,051
+Aşağıda TLB tablosunu set 0 ve set 1 için toplam 16 ise 8 satır olacak.
+
+517
+02:09:20,431 --> 02:09:28,852
+İndeksi 0'dan 7'ye kadar gördüğünüz gibi 0'dan 7'ye kadar 8 satırdan oluşuyor.
+
+518
+02:09:28,851 --> 02:09:37,471
+8.8 toplam 16 tane entry'i TLB tablosunda hızlı olarak dönüştürebiliyoruz.
+
+519
+02:09:37,671 --> 02:09:40,391
+Fiziksel adresini bulabiliyoruz.
+
+520
+02:09:40,391 --> 02:09:46,391
+Şimdi verdiklerinin ışığında virtual adresi.
+
+521
+02:09:55,764 --> 02:10:10,963
+Virtual Page Number ve Page Offset diye iki alanı ayırıyoruz. Virtual Adres 20 bitti. Page Size 1 kilobyte olduğu için 10 bit ayrılacak. Demek ki Virtual Page Number 10 bit olacak diyoruz.
+
+522
+02:10:12,303 --> 02:10:16,303
+Benzer bir işlemi Physical Adres için de yapıyoruz. Burada görüyorsunuz.
+
+523
+02:10:16,303 --> 02:10:31,363
+Physical address'te toplam 18 bit de soru da öyle verilmiş. Page size'ı 1 kilobyte olduğu için page offset 10 bit olacak. Geriye kalan 8 bit physical page number olacak.
+
+524
+02:10:33,043 --> 02:10:40,484
+Şimdi soru da bize aslında hem TLB tablosu hem de page table verilmiş.
+
+525
+02:10:40,483 --> 02:10:48,723
+Yani aslında TLB tablosu biliyorsunuz page table'ın bir alt uzayı, alt kümesi
+
+526
+02:10:48,723 --> 02:10:54,123
+Burada belli kısaltmalar verilmiş
+
+527
+02:10:54,123 --> 02:11:05,863
+TLB, TLB index, TLB tag, physical page number, physical page offset, virtual page number, virtual page offset
+
+528
+02:11:05,863 --> 02:11:13,844
+Bu kısaltmaları zaten dersin başından beri kullanmaya çalışıyorum. Yerleştiğini ümit ediyorum.
+
+529
+02:11:16,543 --> 02:11:21,743
+Bize bu verilenler sayfası. Soru ise sonraki sayfada.
+
+530
+02:11:24,803 --> 02:11:26,683
+Birinci soru.
+
+531
+02:11:27,583 --> 02:11:33,704
+Show the number of bits used for the virtual page number and virtual page offset.
+
+532
+02:11:37,171 --> 02:11:45,051
+Az önce zaten yapmıştık biz bunu. 20 bit virtual adresimiz var.
+
+533
+02:11:53,108 --> 02:12:03,608
+Bunun 10 biti virtual page offset için, geriye kalan 10 bit de virtual page number için kullanılacak demektir.
+
+534
+02:12:06,608 --> 02:12:13,948
+B şıkkında show the number of bits used for TLB tag and TLB index demiş.
+
+535
+02:12:16,767 --> 02:12:20,487
+TLB'yi az önce gördünüz 8 satırdan oluşuyordu.
+
+536
+02:12:20,487 --> 02:12:26,427
+8 satırı indekslemek için TLB indeksinin 3 biti olması gerekir.
+
+537
+02:12:27,968 --> 02:12:31,867
+Virtual page number 10 bit bunun tamamı.
+
+538
+02:12:33,087 --> 02:12:37,527
+Virtual page number ve bu 10 bit.
+
+539
+02:12:39,527 --> 02:12:46,247
+Bunun 3 biti eğer indeks için kullanılıyorsa geriye kalan 7 biti TLB tagi olacaktır.
+
+540
+02:12:51,028 --> 02:12:57,387
+ve benzer bir partitioning işlemini physical page number için soruyor.
+
+541
+02:12:57,387 --> 02:13:03,387
+Physical adresi, az önce...
+
+542
+02:13:05,395 --> 02:13:26,816
+Gördük. Toplamda 18 bit. Bunun düşük anlamlı 10 biti Page Offset. Geriye kalan 8 bit ise Physical Page Number olacak. Sorunun esas bölümü aşağıda.
+
+543
+02:13:30,547 --> 02:13:38,547
+For the given virtual address, indicate TLB entry, which TLB entry is accessed.
+
+544
+02:13:44,819 --> 02:14:01,859
+The physical address which is formed, whether the TLB access was a hit or miss, whether a page fault occurs, the physical page number. Bunları bulmamızı istiyor.
+
+545
+02:14:01,859 --> 02:14:13,139
+Bize verdiği virtual adres şurada gördüğünüz gibi 1, 2, 3, 4, 5 hexadesimal dijit 20 bit yapar.
+
+546
+02:14:13,719 --> 02:14:16,239
+Bu 20 biti binary'i açmak zorundayız.
+
+547
+02:14:16,399 --> 02:14:26,819
+Çünkü az önceki örnekte olduğu gibi kolay hexadesimal sayı üzerinden bölünemeyeceği için binary'i açmak zorundayım.
+
+548
+02:14:26,819 --> 02:14:48,439
+0, 4, AA, 4 hexadecimal sayısını binary olarak yazıp bunun düşük anlamlı 10 bitini virtual page offset olarak ayırıyoruz.
+
+549
+02:14:48,439 --> 02:14:56,279
+Yüksek anlamlı 10 bitini ise virtual page number olarak ayırıyoruz.
+
+550
+02:14:56,819 --> 02:15:11,599
+Daha sonra aşağıda ne soruyor bize? Virtual page number'ı soruyor. Virtual page number'ı tekrar bu ayırdığımız 8 biti hexadesima, pardon.
+
+551
+02:15:19,188 --> 02:15:35,507
+18, yok kaçtı? 20, 10 bitti değil mi? 10 biti şey yazmamız gerekiyor. Hexadesmal olarak yazmamız gerekiyor. Yani yeniden dörtlü gruplamanız gerekiyor. Yeniden dörtlü grupladığınızda şöyle gruplayabilirsiniz.
+
+552
+02:15:35,507 --> 02:15:41,847
+0, 1, 2
+
+553
+02:15:41,847 --> 02:15:52,188
+çünkü yüksek anlamda 2 bit şurada bir hexadecimal dijit oluşturacak ondan sonraki dörtlü 1 ondan sonraki dörtlü de 2 var.
+
+554
+02:15:53,567 --> 02:15:58,487
+Bu tabloyu hexadecimal olarak yazmamız gerekiyor çünkü bulduğumuz değerleri.
+
+555
+02:15:58,487 --> 02:16:02,427
+Virtual page number 0, 12 çıktı.
+
+556
+02:16:02,427 --> 02:16:15,287
+Bunu TLB index ve TLB tag diye alanlara ayıracağız. Düşük anlamlı 3 biti TLB indexini gösteriyor.
+
+557
+02:16:18,707 --> 02:16:28,688
+10 bitin 3 biti TLB tag, geriye kalan 7 bit TLB index 3 bit TLB tag 7 bit.
+
+558
+02:16:33,716 --> 02:16:51,736
+Bunu da bölümlere ayırdığımızda 0, 2 çıkıyor. Şimdi benim TLB tablosunda, TLB tablosunun ikinci satırında tagi 0, 2 olan bir adres var mıdır diye bakmam gerekiyor.
+
+559
+02:16:51,736 --> 02:17:11,416
+İndeksi 2 olacak, tagi de 2 olacak. Yukarıya çıkıyorum. İkinci satırında tagi 2 olan valid bir adres varmış. Bunun physical page number'ı, pardon.
+
+560
+02:17:19,028 --> 02:17:47,547
+Physical page number'ı ben bir 68 okuyorum ama biraz bulanık çekmişim fotoğrafı. Şeyden bakayım, dokümandan bakayım. 68. Evet. Bakayım tekrar. İkinci satırında 68'mış arkadaşlar. Şey de kötü, tablo da kötü, fotoğraftan değil, elimdeki kağıtta da bulanıkmış.
+
+561
+02:17:47,547 --> 02:17:48,807
+Şurası 68
+
+562
+02:17:48,807 --> 02:17:58,647
+Dolayısıyla physical page number 68 olarak aşağıya taşıyacağız
+
+563
+02:18:03,700 --> 02:18:30,479
+Physical page number 68 TLB hit oldu. Page fault oluştu mu? Hayır oluşmadı. TLB valid çünkü. Ve bu TLB'den okuduğumuz physical page number'ın sonuna ayırdığımız 10 biti de ekleyerek bir physical address oluşturmamız gerekiyor.
+
+564
+02:18:30,479 --> 02:18:57,659
+Fizikal adresi oluştururken lütfen dikkat 68 yazdı bakın buraya şurada 6 burada 8 var 68 sonuna ayırdığımız 10 biti ekledik yukarıda ayırdığımız 10 biti ekledik buraya şuraya bu 10 biti dörtlü dörtlü gruplayarak hexadecimal sayıya dönüştürmem gerekiyor
+
+565
+02:18:57,659 --> 02:19:09,859
+Şöyle alacağım. 2'yi şuradan alacağım. Buradan gelen değer 1A.
+
+566
+02:19:13,332 --> 02:19:31,012
+2A4 olacak. 1A2A4 dediği physical address. Bu adresi oluşturmuş olduk. TLB'den çekerek oluşturmuş olduk.
+
+567
+02:19:31,012 --> 02:19:38,211
+Aşağıda verdiği ikinci bir örnekte ise, aşağıda verdiği ikinci bir örnekte ise,
+
+568
+02:19:42,772 --> 02:19:54,152
+Bir başka virtual adres veriyor. Bu virtual adres için burada TLB tablosu mis oluyor. O yüzden o örneği de göstermek istiyorum.
+
+569
+02:19:54,152 --> 02:20:05,591
+Bu adresi binary'e açtık. Binary'e açtık. Düşük anlamlı 10 biti ve yüksek anlamlı 10 biti ayırdık.
+
+570
+02:20:05,591 --> 02:20:28,291
+Yüksek anlamlı 10 biti virtual page number'ı okuduk. Dörtlü dörtlü gruplarsanız eğer bunları. Burası 2, 2, şurası 1, C, E oluyor bu. 1E oluyor virtual page number'ı.
+
+571
+02:20:28,292 --> 02:20:50,452
+Sonra bu 1E'yi düşük anlamlı 3 bit, 1, 1, 0 yani 6 bunun TLB indeksi TLB tagi de 3'müş TLB tablosunun 6. satırında tagi 3 olan bir adres var mı diye bakıyorum
+
+572
+02:20:50,452 --> 02:21:11,871
+TLB tablosunun 6. satırında tagi 3 olan yok. O yüzden TLB miss oldu. Bu durumda ne yapmam gerekiyor? Virtual page number'ı page table'da aramam gerekiyor.
+
+573
+02:21:11,871 --> 02:21:15,531
+Neydi virtual page numberımız? 1E
+
+574
+02:21:15,531 --> 02:21:23,871
+Şimdi gidiyorum page table büyük tabloda. Büyük tabloda sağ tarafta verilmiş görüyorsunuz.
+
+575
+02:21:25,871 --> 02:21:33,051
+Bunun 1E 1E idi değil mi?
+
+576
+02:21:33,051 --> 02:21:35,891
+Bir daha bakalım.
+
+577
+02:21:38,251 --> 02:21:44,231
+Evet 1E, virtual page number'ı 1E olan satıra gidiyorum.
+
+578
+02:21:51,156 --> 02:21:58,735
+Şurası. Valid mi? Valid. Page number ne? 57. Physical page number 57 imiş.
+
+579
+02:21:59,315 --> 02:22:03,235
+Hocam, burada da bulamamız durumunda main memory'e mi gidiyor aramak için?
+
+580
+02:22:05,315 --> 02:22:15,515
+Yani o satırı aslında orada olur da valid biti 0 olabilir. Valid biti 0 ise eğer page fault'tur, evet şey yapması gerekir.
+
+581
+02:22:15,515 --> 02:22:22,875
+Physical memory'de dolu olan bir şeyin üzerine yeniden yazma, replacement yapması gerekir.
+
+582
+02:22:22,875 --> 02:22:28,875
+Replacement yaparken de o dolu olan gözdeki page'i önce diske yazıyorsunuz.
+
+583
+02:22:30,415 --> 02:22:34,135
+Diskteki yeni page'i physical memory'e taşıyorsunuz.
+
+584
+02:22:34,215 --> 02:22:36,875
+Swept dediğimiz yerde değiştirme işlemini yapmış oluyorsunuz.
+
+585
+02:22:36,875 --> 02:22:50,695
+Ama eğer o page üzerinde herhangi bir güncelleme yapılmamışsa aslında main memory yazmanıza gerek bile kalmıyor. Dörtü bitine bakıyoruz orada.
+
+586
+02:22:50,695 --> 02:23:13,535
+Bir E'ye gittik 57 dedi. 57 bizim physical page numberımız. Physical page number'ın 57 bunu şeye açıyoruz. Yine binary olarak yazıyoruz. Şurada görüyorsunuz 57.
+
+587
+02:23:13,535 --> 02:23:37,795
+Bunun arkasına ayırdığımız 10 biti ekliyoruz. Yukarıda ayırdığımız 10 bit şurası. Page offset'i şuraya ekliyoruz. Ve physical adresi oluşturuyoruz.
+
+588
+02:23:37,795 --> 02:23:48,556
+Physical address'ı yine 44 gruplayarak, binary ifadede 44 gruplayarak bunları yazmamız gerekiyor.
+
+589
+02:23:48,556 --> 02:23:53,075
+4, 4, şuradaki 2'nin yanına şuradan 2 ilave edeceğim.
+
+590
+02:23:54,215 --> 02:24:00,495
+Burası C olacak, önündeki 1, 0, 1, 5 olacak.
+
+591
+02:24:00,495 --> 02:24:10,055
+1, 5, C, E, 6 şeklinde bir fizik adresi hexadesimal olarak bu tabloya yazacağım.
+
+592
+02:24:11,016 --> 02:24:20,435
+Evet böyle zevkli bir şey iş aslında basit tekniği anlarsanız gayet de güzel çözebilirsiniz bu örnekleri.
+
+593
+02:24:23,175 --> 02:24:25,955
+Sorunuz var mı? Önce onu soralım.
+
+594
+02:24:31,636 --> 02:24:53,875
+Sorunuz yok. Peki, o zaman benim çözeceğim örnekler bu kadar arkadaşlar. Size ekstra bir tane cache ile ilgili, bir tane de virtual memory ile ilgili çözümlü örnek paylaşacağım ders duvarında.
+
+595
+02:24:53,875 --> 02:25:01,275
+Bu örneklerin öğrendiklerinizi pekiştireceğini düşünüyorum.
+
+596
+02:25:02,275 --> 02:25:05,216
+Ve dönemi böylece kapatıyorum.
+
+597
+02:25:06,996 --> 02:25:12,515
+14 hafta yazıyla kışıyla oturduğumuz yerden ders yaptık.
+
+598
+02:25:15,015 --> 02:25:19,795
+Umarım bir şeyler kalmıştır aklınızda.
+
+599
+02:25:20,375 --> 02:25:22,915
+Final sınavında hepinize başarılar diliyorum.
+
+600
+02:25:23,875 --> 02:25:36,475
+Lütfen kendi bildiklerinizle kendinizi sınayın ve sınavlarda iş birliğine gitmeyin.
+
+601
+02:25:38,316 --> 02:25:40,515
+Bunu söyleyeceğim sadece.
+
+602
+02:25:43,235 --> 02:25:47,735
+Lütfen kendi bildiğinizle bir şeyler yapmaya gayret edin.
+
+603
+02:25:48,216 --> 02:25:51,875
+Bu sizin neyi öğrendiğinizi, neyi öğrenmediğinizi de gösterecek.
+
+604
+02:25:51,875 --> 02:25:55,915
+Tekrar başarılar diliyorum sınavda hepinize
+
+605
+02:25:55,915 --> 02:25:58,235
+Çok teşekkür ederiz hocam
+
+606
+02:25:58,235 --> 02:26:02,856
+Dersleriniz çok zevkliydi öncelikle onu söyleyeyim hem zevkli hem öğreticiydi çok teşekkür ediyoruz
+
+607
+02:26:02,856 --> 02:26:10,295
+Rica ederim görevimiz olabildiğince örneklerle size konuları anlatmaya çalıştım
+
+608
+02:26:10,295 --> 02:26:15,535
+Başarılar diliyorum belki önümüzdeki dönem başka derslerde görüşürüz
+
+609
+02:26:15,535 --> 02:26:19,895
+Veri madenciliği işte ara proje bitirme projesi gibi
+
+610
+02:26:19,895 --> 02:26:31,535
+Hepinize başarılar diliyorum. Önümüzdeki dönem yüz yüze sizleri görmeyi çok istiyorum. Fotoğraflarınızı görmek yerine sizi görmeyi tercih ederim.
+
+611
+02:26:31,535 --> 02:26:43,115
+Biz de aynı. Sınav test mi olacaktı? Şu anki düşüncemiz test olması yönünde. Bizim de temennimiz o yönde.
+
+612
+02:26:43,115 --> 02:26:47,975
+Evet, teşekkür ediyorum arkadaşlar. Çok teşekkürler hocam her şey için.
+
+613
+02:26:47,975 --> 02:27:00,796
+Ercan, Erkan, Vatan yazmış, Buğra yazmış, Cihat İslam, Tuğçeşen, Alp Yüzbaşıoğlu hepinize ben de teşekkür ediyorum.
+
+614
+02:27:00,796 --> 02:27:13,316
+İsmail Avcı, Furkan Sancak, Mehmet Turan, Said Eroğlu, Lola, Tuğba. Evet ben teşekkür ediyorum.
+
+615
+02:27:13,475 --> 02:27:15,176
+Görüşmek üzere hocam kendinize iyi bakın.
+
+616
+02:27:15,176 --> 02:27:29,915
+Görüşürüz arkadaşlar. Soner, Burak, Öner teşekkürler. Güzel mesajlarınız için. İhsan, Ahmet Emre Boyacı. Benim oğlumun adı Ahmet Emre. İlker Bahar.
+
+617
+02:27:30,795 --> 02:27:41,935
+Doğa gün doğdu. Evet, Mehmet, hepinize başarılar diliyorum arkadaşlar. Seray, hoşçakal.
+
+618
+02:27:45,332 --> 02:27:47,111
+Evet, Tuğrul, hoşçakalın.
+
+619
+02:27:48,731 --> 02:27:53,571
+Hocam, finalin mazereti oluyor mu? Ondan diye oluyor gibi bir şey gördüm ben.
+
+620
+02:27:53,991 --> 02:28:07,592
+Bütünleme var. Bütünleme sınavı olduğu için. Yani sadece teknik aksaklık durumunda böyle bir hak veriliyor ama bütünleme sınavı hakkınızın olduğunu da unutmayın. Hani öyle bir hak var zaten.
+
+621
+02:28:08,531 --> 02:28:09,411
+Tamam, teşekkür ederim.
+
+622
+02:28:10,051 --> 02:28:10,771
+Rica ederim.
+
+623
+02:28:14,391 --> 02:28:15,051
+Hoşçakalın.

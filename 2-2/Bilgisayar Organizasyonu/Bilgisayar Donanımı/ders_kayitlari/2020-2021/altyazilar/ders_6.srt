@@ -1,0 +1,3415 @@
+1
+00:07:08,531 --> 00:07:09,731
+Günaydın arkadaşlar.
+
+2
+00:07:13,971 --> 00:07:14,431
+Günaydın.
+
+3
+00:07:14,431 --> 00:07:15,011
+Günaydın hocam.
+
+4
+00:07:20,468 --> 00:07:33,308
+Nasılsınız? Keyifler nasıl bakalım? Bu hafta altıncı haftayı bitiriyoruz. Evet, altı hafta geçmiş.
+
+5
+00:07:38,420 --> 00:07:53,420
+Bu dönem bilgisayar donanımı dersinin bir talihsizliği diyeceğim. Cuma günü önümüzdeki hafta dersi olmayacak. 23 Nisan var. O yüzden biraz sıkışıyor program.
+
+6
+00:07:57,331 --> 00:08:00,851
+Ama konuları zaten ona göre planlamıştık.
+
+7
+00:08:02,752 --> 00:08:05,851
+Ve bu şekilde devam edeceğiz.
+
+8
+00:08:06,651 --> 00:08:08,292
+31 hafta, evet.
+
+9
+00:08:09,611 --> 00:08:13,252
+Önümüzdeki hafta 23 Nisan tatil.
+
+10
+00:08:13,352 --> 00:08:19,771
+Ondan sonraki hafta programa göre bizim bir vize haftamız var.
+
+11
+00:08:19,771 --> 00:08:25,592
+O arada sizlerle görüşemeyeceğiz.
+
+12
+00:08:25,592 --> 00:08:28,592
+Şöyle programa tekrar bakıyorum.
+
+13
+00:08:31,251 --> 00:08:31,552
+Evet.
+
+14
+00:08:32,151 --> 00:08:33,311
+Bugün 16 Nisan.
+
+15
+00:08:33,872 --> 00:08:42,071
+Size saklayıcı yani registerler üzerinde transfer işlemlerini ve ortak veri yolu oluşturma konusunu anlatacağım.
+
+16
+00:08:42,071 --> 00:08:44,552
+Bir de komut yapısı ve adresleme yöntemleri.
+
+17
+00:08:45,151 --> 00:08:46,012
+Bu ikinci bölüm.
+
+18
+00:08:47,092 --> 00:08:52,031
+Komut yapısı ve adresleme yöntemleri kısmen SML dersinde zaten bildiğiniz konular.
+
+19
+00:08:53,012 --> 00:08:54,531
+Bu haftaki konu başlığımız böyle.
+
+20
+00:08:54,531 --> 00:09:17,551
+Önümüzdeki hafta resmi tatil dersi yok. 30 Nisan'da bir akademik takvime göre 8. haftada ortak bir vize haftamız var. Sonra 9. hafta artık bu dersin ana konusu biraz geç olmakla birlikte tatil girmesi tabii burada etkili oluyor.
+
+21
+00:09:17,552 --> 00:09:33,531
+Merkezi işlem birimi yani CPU tasarımı konusuna geçeceğiz. Pipeline veri işleme konusu yine aynı hafta biraz zor tabii bunun yetişmesi ama ona göre planlamaya çalışıyoruz.
+
+22
+00:09:33,531 --> 00:09:41,272
+Dediğim gibi bu dönem biraz iki hafta tatile gitmesi bizi biraz zorlayacak gibi görünüyor.
+
+23
+00:09:41,271 --> 00:10:09,311
+Evet plan program böyle umarım sizler iyisinizdir çünkü malum Türkiye'de her gün açıklanan vaka sayıları artarak devam ediyor yükseliş bu tabi üzücü bir şey umarım en kısa zamanda önü alınır ve bu yükseliş durur ve aşılama işlemleri bir an önce
+
+24
+00:10:09,311 --> 00:10:24,772
+tamamlanır diyeceğim. Bu tabii zor herkese böyle kısa bir sürede aşı yetiştirmek ama umuyorum bu süreci de hızlı tamamlarız.
+
+25
+00:10:26,772 --> 00:10:39,171
+Evet bu hafta registerlar arasında veri transferi nasıl yapılır bu konuya gireceğiz ama amacımız ne ondan biraz bahsedeyim.
+
+26
+00:10:39,311 --> 00:10:51,131
+Biz bu derste hep bir işlemci tasarımına odaklandık ve bunun için gerekli altyapıyı oluşturmaya çalışıyoruz şu anda sizlerle.
+
+27
+00:10:52,131 --> 00:11:07,451
+Bir merkezi işlem biriminde CPU içerisinde registerler arasında veri transferi mesela move AX, BX dediğinizde iki register arasında nasıl bir veri transferi yapıyorsunuz?
+
+28
+00:11:07,451 --> 00:11:20,571
+Bu işlem gerçekleşirken işlemci içerisindeki bas yapısı, internal bas dediğimiz bir bas yapısı var. Bu ortak bir bas yapısı, tüm rejistirlerin bağlı olduğu bir bas yapısı.
+
+29
+00:11:20,571 --> 00:11:31,571
+Bu internal bas yapısının nasıl tasarlandığını en ilkel versiyonundan işte günümüzde kullanılan şekline kadar tartışmalı olarak değerlendireceğiz.
+
+30
+00:11:31,571 --> 00:11:51,011
+Yani işte birkaç model göstereceğim. Avantajları neyi, dezavantajları ne? Bunları konuşacağız. Şuradan gidelim. Böyle daha kolay olacak. Tablet üzerinde hem yazıp çizebiliyoruz.
+
+31
+00:11:54,707 --> 00:12:10,128
+Şimdi bu konuyla ilgili sizlerle paylaştığım slide'da Manon'un kitabında bu kullandığımız dördüncü versiyon olabilir. Yedinci bölümdeydi.
+
+32
+00:12:11,128 --> 00:12:22,587
+Oradaki slide'ları kullanıyorum. Yani aslına bakarsanız kitap üzerindeki tüm şekillerin olduğu bir pdf hazırlamış yayın evi. Onu kullanıyorum.
+
+33
+00:12:22,587 --> 00:12:40,967
+Burada kullandığımız 7. hafta ile ilgili dokümanda register transfer işlemleri ile başlıyor ama hatırlarsanız biz bu konuyu register ve counter tasarımları sırasında konuşmuştuk.
+
+34
+00:12:40,967 --> 00:12:58,807
+Bir registra yükleme yapmak istiyorsak bu yükleme işlemini şurada gördüğümüz gibi clock girişinin önüne yerleştirilen bir yapıda olmaması gerektiğini konuşmuştuk.
+
+35
+00:12:58,807 --> 00:13:12,907
+Bu yapıyı tasarlarken birden fazla birimi senkron çalıştırma amacımız var. O nedenle bu tür tasarımlar yapamayız demiştik. Bu slide'lara başlamıştık.
+
+36
+00:13:12,907 --> 00:13:29,227
+ve sonraki bölümde bir registra yeni değer yükleme işlemi yapmak istiyorsak eğer bunu içeride bulunan D tipi flip-flop'un D girişi önüne yerleştirdiğimiz bir devreyle yapabiliriz.
+
+37
+00:13:29,227 --> 00:13:40,527
+Yeni değer yükleme işini kesinlikle CLOCK'la organize ettiğimiz bir yapıda kullanmamalıyız demiştik ve tasarımı ona göre değiştirmiştik.
+
+38
+00:13:40,527 --> 00:14:03,687
+Dolayısıyla bu slide'lar daha önce kullandığımız ve üzerinde konuştuğumuz slide'lar. Ama şurada bir durmak istiyorum. Bizim amacımız bu derste şu iki bloğu içine alan merkezi işlem birimi tasarımı olacak ve bundan sonraki kısımlarda bunun üzerine çok konuşacağız.
+
+39
+00:14:03,687 --> 00:14:33,327
+Vizeden sonraki hafta datapath unit dediğimiz birimi tasarlayacağız ve bu unitin içerisinde bir aritmetik lojik unit var, bir shift unit var ve bunun içerisinde register file dediğimiz internal registerları tutan bir yapı var ve tabii bunlar arasında transferin gerçekleştirildiği internal bus dediğimiz bus yapısı var.
+
+40
+00:14:33,687 --> 00:14:47,267
+Sonuçta aslında datapath unit dediğimiz birim veriyi işleyen ve bu veriyi registerler üzerinde tutan birim ama bunu kontrol eden sol tarafta gördüğümüz bir kontrol bloğu var.
+
+41
+00:14:48,187 --> 00:14:55,247
+Bunu da işte dönemin son haftalarına doğru aritmetik lojik unit tasarımından sonra konuşacağız.
+
+42
+00:14:55,247 --> 00:15:08,847
+Control unit dediğimiz birim aritmetik lojik ünite hangi işi yaptırmak istiyorsa işte o anda yürütülecek işlem hangisiyse bununla ilgili kontrol işaretlerini gönderiyor.
+
+43
+00:15:09,407 --> 00:15:18,807
+Toplama mı yapılacak, veri mi transfer edilecek, bir arttırma eksiltme işlemi mi yapılacak bununla ilgili kontrol işaretlerini gönderiyor.
+
+44
+00:15:18,807 --> 00:15:31,647
+Sağ tarafta gördüğümüz datapath unit bu işlemi gerçekleştirdikten sonra durum bitleri ile mevcut durumu kontrol ünite bildiriyor.
+
+45
+00:15:31,647 --> 00:15:42,607
+Yani bu nedir? Yaptığı işlemin sonunda bizim durum bitleri diye isimlendirdiğimiz, assembly'de de bildiğiniz overflow, zero, negate.
+
+46
+00:15:43,508 --> 00:16:02,348
+ya da CERI gibi durum bitlerimiz var. Bu durum bitlerini ve başka kontrol için kullanılan bitleri mevcut durumu bildirmek için kontrol ünite gönderiyor ve kontrol ünite buna göre bir sonraki işlem adımına karar veriyor.
+
+47
+00:16:02,348 --> 00:16:14,147
+Biz bu sistemi tasarlamayı hedefliyoruz. O yüzden bu haftaki dersimizde datapath unit içerisindeki registerların internal bus yapısının nasıl olması gerektiğini konuşacağız.
+
+48
+00:16:15,287 --> 00:16:30,667
+Daha sonra bu dersin işte birinci yıl içi sınavından sonra da şu birimleri aritmetik lojik unit tasarımını, shift unit tasarımlarını konuşacağız.
+
+49
+00:16:30,667 --> 00:16:44,667
+Şimdi slidelerde bu bölümde daha önceki haftalarda üzerinde durduğumuz register tasarımları ve counter tasarımlarıyla ilgili olan bölümü o yüzden atlıyorum arkadaşlar.
+
+50
+00:16:47,147 --> 00:16:52,987
+Transfer işlemlerine kadar ki olan bölümü zaten dediğim gibi daha önce konuşmuştuk.
+
+51
+00:17:03,635 --> 00:17:05,635
+Counter tasarımları
+
+52
+00:17:23,955 --> 00:17:32,155
+Evet buraya kadar ki olan bölümü üzerinden geçmiş. Şimdi bizim konu başlığımız burada.
+
+53
+00:17:34,836 --> 00:17:43,695
+Registerler ile bir internal bus yapısı oluşturmak ve registerler arasında veri transferi yapmak istiyoruz.
+
+54
+00:17:43,695 --> 00:17:51,995
+Tabi bu transfer işlemini az önce dediğim gibi bir bus yapısı üzerinden gerçekleştirmek istiyoruz.
+
+55
+00:17:51,995 --> 00:18:04,275
+Şimdi en temel şekliyle aklımıza gelen yapı aslında bakarsanız burada Dedicated Multiplacer dediği sol taraftaki çözüm.
+
+56
+00:18:06,275 --> 00:18:07,996
+Yapıyı şöyle özetleyeceğim.
+
+57
+00:18:10,755 --> 00:18:17,455
+Anlatım kolay olsun diye registerlarımızın toplam sayısını 3 kabul edelim.
+
+58
+00:18:17,455 --> 00:18:25,716
+Burada R0, R1 ve R2 dediği üç tane toplamda register olan bir yapı var elimizde.
+
+59
+00:18:26,195 --> 00:18:31,195
+Ve biz bu registerlerle, üç tane registerimiz var.
+
+60
+00:18:31,655 --> 00:18:35,155
+Bu registerler arasında veri transferi gerçekleştirmek istiyoruz.
+
+61
+00:18:35,835 --> 00:18:41,116
+Bunu sağlamak için sistemde bulunan üç tane register var.
+
+62
+00:18:41,115 --> 00:18:47,715
+Mesela R0 registerine diyebilirim ki R1 ve R2'den veri transferi gerçekleşir.
+
+63
+00:18:48,395 --> 00:18:51,555
+Yani iki tane farklı kaynaktan veri aktarılabilir.
+
+64
+00:18:52,075 --> 00:18:57,755
+Veya R1 registeri için diyebilirim ki kendisi dışındaki kaynaklar ne olabilir?
+
+65
+00:18:57,895 --> 00:19:00,415
+R0 olabilir ya da R2 olabilir.
+
+66
+00:19:00,575 --> 00:19:03,675
+İki farklı kaynaktan veri aktarılabilir.
+
+67
+00:19:03,676 --> 00:19:12,336
+O zaman tüm registerlerin önüne burada gördüğümüz gibi 2'den 1'e multiplexer yerleştirmişiz.
+
+68
+00:19:12,915 --> 00:19:22,036
+2'den 1'e multiplexer bu register'a yükleme yapacak olan kaynaklar arasında seçim işlemi yapıyor.
+
+69
+00:19:22,515 --> 00:19:32,375
+Mesela R0 register'ına az önce konuştuğumuz gibi nereden transfer gerçekleştirilebilirse bu alternatifler bu multiplexerin girişine bağlanıyor.
+
+70
+00:19:32,375 --> 00:19:40,515
+Yani nedir? R1'in çıkışı burada gördüğümüz gibi bu multiplexer'in bir numaralı girişine bağlanmış.
+
+71
+00:19:40,976 --> 00:19:49,176
+R2 rejister'inin çıkışı ise R0'ın önündeki multiplexer'in 0'ın oğlu girişine bağlanmış.
+
+72
+00:19:49,176 --> 00:20:03,176
+Böylece burada gördüğümüz ikiden bire multiplexer'ın seçim ucuna şuradakine S0 select ucu diyoruz.
+
+73
+00:20:03,836 --> 00:20:06,215
+Bu multiplexer'ın bir tane select ucu var.
+
+74
+00:20:06,375 --> 00:20:08,176
+Bu iki kaynaktan birini seçiyor.
+
+75
+00:20:08,295 --> 00:20:15,735
+Sıfırsa sıfır numaralı girişi, select ucu birse bir numaralı girişi çıkışa aktarıyor sonuç olarak.
+
+76
+00:20:15,735 --> 00:20:28,135
+Burada 3 tane multiplexer olduğu için bunların her birinin select ucunu burada gördüğümüz gibi sıralamış ve toplamda 3 tane register'ın önünde 3 tane multiplexer var.
+
+77
+00:20:31,284 --> 00:20:58,443
+seçim uçları yani source register'ını seçmek için kullanılan select uçları bize sunulmuş. Diğer taraftan bu register'lardan hangilerine yükleme işlemi yapılacağını seçen load enable uçları var. Yani ben sadece bir tane register'ı o anda transfer yapmak isteyebilirim veya ikisine aynı anda transfer işlemi yapmak isteyebilirim.
+
+78
+00:20:58,443 --> 00:21:18,523
+bu şekilde değişik çözümler oluşturabilirim. Bu yöntemin adı dedicated multiplexer. Ne demek dedicated multiplexer? Her register'ın önüne ona ait olan sadece o register'ı ilgilendiren bir multiplexer yerleştirilmiş.
+
+79
+00:21:18,523 --> 00:21:31,243
+Şimdi bu çizdiğimiz yapıda aslında bakarsanız sadece 3 tane register ile bir yapı tasarladığımda 3 tane multiplexer kullanmak size çok maliyetli görünmeyebilir.
+
+80
+00:21:31,243 --> 00:21:49,464
+Ama şöyle düşünün, internal registerların sayısı 3 değil de 15-20 tane olsaydı, buradaki her bir register'ın önüne bir multiplexer koymamız gerekirdi ve bu multiplexerların boyutları çok daha büyük olması gerekirdi.
+
+81
+00:21:49,464 --> 00:22:09,923
+işte 16'dan bire ya da 32'den bire gibi boyutlarda multiplexer kullanmamız gerekirdi. O nedenle bu yöntem çok maliyetli bir yöntem olduğu için tercih edilmiyor. Bir çözüm sunuyor mu? Evet sunuyor ama tercih edilmiyor.
+
+82
+00:22:09,923 --> 00:22:32,004
+Alternatifimiz nedir? Hemen ona bakalım. Yanda görüyorsunuz single bus diye bir yapı vermiş. Single bus yapısında yine üç tane register'ımız var. Bu üç tane register'ın önüne ortak bir tane multiplexer yerleştirmiş ve bu üçten bire multiplexer demiş.
+
+83
+00:22:32,003 --> 00:22:48,504
+Tabi bu 3'den 1'e standart bir ölçü değil aslına bakarsanız. Bu nedir? 4'den 1'e multiplexer. 2 tane select ucu var, 4 tane inputu var ama 1 tane inputu kullanılmıyor. Burada 3 numaralı giriş kullanılmıyor gibi düşünebilirsiniz.
+
+84
+00:22:48,504 --> 00:23:17,343
+Ve bu üç tane giriş sistemde bulunan her bir register için. Burada gördüğümüz registerlerin her biri bu multiplexer için bir giriş. Ama lütfen şuna dikkat edin. Her bir register N-bitlik registerler. Dolayısıyla burada gördüğünüz gibi registerlerin çıkışları bu multiplexer girişine. Az önceki yapı da öyleydi ama dikkat etmedik. Ben şimdi burada hatırlatmak istiyorum.
+
+85
+00:23:18,504 --> 00:23:26,364
+N-bit'lik 4 tane sayı arasında seçme yapabiliyor. 4'ten 1'e multiplexer. Burada kullanılan yapı.
+
+86
+00:23:29,299 --> 00:23:47,740
+ve bu dörtten bire multiplexer yapısı için iki tane select ucuna ihtiyacım var. Bu multiplexer'ın seçtiği output yani hangi inputu seçtiyse bunu oluşturduğu output tüm register'ların data in girişine bağlanmış.
+
+87
+00:23:47,740 --> 00:23:50,939
+Nbit'lik data in girişlerine bağlanmış.
+
+88
+00:23:51,619 --> 00:23:54,900
+Böylece aslında işte şunu yapabiliyorum.
+
+89
+00:23:54,900 --> 00:24:08,359
+Ben hangi kaynağı seçtiysem source register olarak bu register seçilen register bus yapısı üzerinden single bus dediğimiz yapı üzerinden tüm registerlerin inputuna gidiyor.
+
+90
+00:24:08,779 --> 00:24:11,420
+Ama hangisine yükleme işlemi gerçekleştiriliyor?
+
+91
+00:24:11,419 --> 00:24:18,999
+Hangisinin load enable ucu birse o register'a yükleme işlemi gerçekleştiriliyor.
+
+92
+00:24:18,999 --> 00:24:24,219
+Şimdi bu yapıyı burada şöyle mesela örnekleyebiliriz.
+
+93
+00:24:24,739 --> 00:24:28,859
+Biz bir register transfer işlemi yapmak istiyoruz.
+
+94
+00:24:29,299 --> 00:24:29,859
+Ne yapalım?
+
+95
+00:24:30,020 --> 00:24:37,119
+R0 register'ına, R2 register'ından bir transfer işlemi gerçekleştirmek isteyelim.
+
+96
+00:24:37,119 --> 00:24:52,039
+Destination adresim R0, source registerim ise R2. O zaman R2 registerini seçmek için burada select uçlarında hangi değer olmalıdır bunu yazmak istiyorum.
+
+97
+00:24:52,039 --> 00:25:06,859
+S1, S0 dediğim select uçlarında iki numaralı registeri kaynak olarak seçmek istiyorsam eğer 1, 0 olmalı ki R2 registeri seçilsin select uçlarında.
+
+98
+00:25:07,119 --> 00:25:20,160
+Bu seçildikten sonra bir de ne olacak? Load işlemi gerçekleştirilecek. Hangi register'a bu transferi gerçekleştiriyorum?
+
+99
+00:25:20,160 --> 00:25:36,539
+Bunu kontrol eden load ucu, load 2, load 1 ve load 0 dediğim 3 tane load ucu var. Bu load uçları yükleme işlemini kontrol eden uçlardan hangisine transfer işlemi gerçekleştireceğim?
+
+100
+00:25:36,539 --> 00:25:52,460
+R0 registerine o zaman sadece L0'ın bir yerlerinin 0 olması gerekir ki ben bu transfer işlemini R2'den R0'a bu transfer işlemini gerçekleştireyim.
+
+101
+00:25:53,819 --> 00:25:58,600
+Şimdi bir başka örnek yapalım.
+
+102
+00:25:58,600 --> 00:26:09,100
+Şöyle düşünün biz bu defa bir değil iki transfer işlemi gerçekleştirmek istiyoruz ve
+
+103
+00:26:09,748 --> 00:26:31,588
+Bu işlemleri de şöyle yazayım. Mesela R0 registerine az önce olduğu gibi bir transfer gerçekleştireceğim. R1'den transfer gerçekleştireceğim. Bir de R2 registerine yine R1'den transfer gerçekleştireceğim.
+
+104
+00:26:31,588 --> 00:26:47,148
+Bu işlemi nasıl yaparım? Buna bakalım. Şimdi burada single bus yapısı kullandığım için ve source register olarak aynı register'ı seçtiğim için bu işlem yapılabilir. Peki nasıl yapacağız?
+
+105
+00:26:47,147 --> 00:27:05,527
+S1, S0 dediğimiz select uçlarında R1 registerini seçmem gerekiyor. Yani yüksek anlamlı select ucu 0, düşük anlamlı 1 olacak. Böylece single bus dediğim ortak veri yolunda R1 registeri oluşmuş olacak.
+
+106
+00:27:05,527 --> 00:27:35,507
+Tamam peki bir de control için kullandım load uçlarına bakalım L2, L1 ve L0 dediğim 3 tane load enable ucum vardı burada da hangi registerlere transfer gerçekleşecek R2 registerine ve R0 registerine transfer gerçekleştirecek o zaman 1, 0, 1 yazıyorum buraya böylece 2 tane registera transfer gerçekleşecek
+
+107
+00:27:35,527 --> 00:27:36,807
+gerçekleşmiş oluyor.
+
+108
+00:27:38,968 --> 00:27:43,587
+Şimdi bir başka örnek daha yapacağım.
+
+109
+00:27:45,087 --> 00:27:51,867
+Burada ise yine bir aynı anda bir transfer işleminden bahsediyorum.
+
+110
+00:27:52,587 --> 00:27:53,987
+Bunu yorumlayalım.
+
+111
+00:27:57,428 --> 00:28:14,428
+Mesela yapmak istediğim transfer işlemi R0 registerine, R1 registerinden transfer gerçekleşecek. R1'e de R0'dan transfer gerçekleştirmek istiyorum.
+
+112
+00:28:14,428 --> 00:28:20,428
+Evet, ne dersiniz? Single bus yapısı için.
+
+113
+00:28:28,147 --> 00:28:29,628
+Orada mısınız arkadaşlar?
+
+114
+00:28:31,628 --> 00:28:35,447
+Buradayız hocam da. Sadece hayranlıkla izliyoruz.
+
+115
+00:28:36,707 --> 00:28:37,647
+Anlaşılmadı mı?
+
+116
+00:28:38,667 --> 00:28:43,967
+Ya ben şeyi kaçırdım biraz o ilk bağlantı konusunu sonra şu an toparlayamıyorum.
+
+117
+00:28:45,047 --> 00:28:48,587
+Çok hafif üstten geçebilirseniz ben çok memnun olurum. Diğer arkadaşları bilmiyorum.
+
+118
+00:28:49,467 --> 00:28:50,467
+Hangisini dediniz?
+
+119
+00:28:50,467 --> 00:28:59,828
+Verileri aktarırken hocam zaman olayını yani önce oradan alıp şu yukarıda kaybolan bölümdeki o lot bölümleri
+
+120
+00:28:59,828 --> 00:29:08,627
+Sol taraftaki dediketive multiplexer yapısını anladınız mı?
+
+121
+00:29:11,147 --> 00:29:15,147
+Anladığım kadarıyla oradan register'ları seçiyoruz hocam orada bir şey
+
+122
+00:29:15,147 --> 00:29:18,048
+Evet, evet
+
+123
+00:29:18,047 --> 00:29:26,747
+Sol taraftaki yapıda her register'ın önünde bir tane multiplexer kullanmıştık. Daha esnek bir çözüm sunuyordu.
+
+124
+00:29:26,747 --> 00:29:38,847
+Sağ taraftaki yapıda ise tek bir tane multiplexer koyduk sistemde. Tüm register'ların output'larını bunun birer input'u olarak aldık.
+
+125
+00:29:38,847 --> 00:29:49,407
+R0 register'ı 0 numaralı girişe, R1 bu multiplexer'ın 1 numaralı girişine, R2 de 2 numaralı girişine bağlandı.
+
+126
+00:29:49,407 --> 00:29:58,887
+Ve bu multiplexer'ın görevi bu 3 tane kaynaktan birini seçmek. Nasıl seçecek? Select input'una verilen girişlerle seçecek.
+
+127
+00:29:58,887 --> 00:30:21,247
+Buna göre ben seçtiğim kaynığı işte mesela R1 register'ını seçtim diyelim bunu hangi register'a yüklemek istiyorsam onun load enable uçlarını burada gördüğümüz load enable uçlarını aktif ederek bu yükleme işlemini gerçekleştiriyoruz.
+
+128
+00:30:21,247 --> 00:30:43,728
+Ama verdiğim üçüncü örnekte, verdiğim üçüncü örnekte source register, R1 ve R0 aynı anda tek bir veri yolu varsa iki farklı kaynaktan veri transferi yapamazsınız single bus yapısında.
+
+129
+00:30:43,728 --> 00:30:50,287
+Neden? Çünkü benim buradaki bus yapım tek bir single bus yapısından oluşuyor.
+
+130
+00:30:50,287 --> 00:31:05,647
+Enbitlik bir tane register'ın içeriğini ben orada taşıyabiliyorum. Bu nedenle burada yazmış olduğumuz işlem single bus yapısı içerisinde gerçekleştirmek mümkün değil.
+
+131
+00:31:07,008 --> 00:31:16,627
+Ama sol taraftaki dedicated multiplexer yapısını kullanarak ben bunu yapabilirdim. Dedicated multiplexer daha esnek bir çözüm sunuyor.
+
+132
+00:31:16,627 --> 00:31:30,747
+O yüzden aynı anda iki farklı kaynaktan biri R1, biri R0 olacak şekilde bunu kullanabiliyordum ama sağ taraftaki yapıda bunu kullanamadığımızı gördük.
+
+133
+00:31:32,588 --> 00:31:38,687
+Hocam şey olsa mesela bir clock olsa bir sonraki döngüde ama yapabiliriz değil mi?
+
+134
+00:31:38,687 --> 00:32:03,567
+Tabii ki ama burada şimdi aynı anda yapmaktan bahsediyoruz. Yani bu işlemi aynı anda bu transferi gerçekleştiremediğimizden bahsettik. Dediğiniz gibi bunu bir sonraki periyodda ikinci işlemi tabii ki yapabiliriz. Yani single bus yapısı o yüzden işlemleri arka arkaya yapmayı gerektiriyor. Dedicated multiplexer yapısına göre bir dezavantaj gibi düşünebiliriz bunu.
+
+135
+00:32:03,567 --> 00:32:12,368
+Şimdi burada, evet burada aynı anlattığımız örneklerin tablo üzerindeki değerlerini görüyorsunuz.
+
+136
+00:32:12,368 --> 00:32:21,147
+Daha önce öğrendiğimiz bir devre elemanı, tri-state buffer kullanarak
+
+137
+00:32:24,211 --> 00:32:45,371
+Tri-State bus yapısı oluşturmayı hedefliyoruz. Bunun için size önce kısaca tekrar şeyi hatırlatacağım. Tri-State buffer neydi ve ben bunu bu yapıda nasıl kullanabilirim? Bundan bahsetmek istiyorum.
+
+138
+00:32:45,371 --> 00:33:01,932
+Ama arada sorduğum sorulara lütfen cevap verin. Sesinizi duymak istiyorum. Yoksa böyle duvara ders anlatıyor gibi olmayalım. Lütfen.
+
+139
+00:33:04,991 --> 00:33:08,831
+Tristate buffer yapısından bahsedeceğiz dedik.
+
+140
+00:33:20,852 --> 00:33:49,331
+Three State Buffer'ı daha önce lojik kapıları ve devre elemanlarını anlatırken kısaca üstünden geçmiştim. Burada sadece bir tip yapı üzerinden gideceğim. Şurada bir input'u var, burada output'u var. Bu bildiğiniz buffer. Ama bunu kontrol eden, şurada bir enable ucu var bu buffer'ın, bu Three State Buffer'ın.
+
+141
+00:33:49,331 --> 00:33:52,511
+3-State Buffer'ın bu lojik sembolü.
+
+142
+00:33:58,387 --> 00:34:06,387
+ve bu tri-state buffer'ın bir doğruluk tablosunu da vereceğim size.
+
+143
+00:34:09,748 --> 00:34:23,067
+Doğruluk tablosunda enable ucu input'u ve output'una yazacağım.
+
+144
+00:34:23,067 --> 00:34:32,647
+Enable ucu 0 ise eğer giriş ne olursa olsun, HZ dediğimiz durumu gösteriyor.
+
+145
+00:34:33,267 --> 00:34:39,467
+Enable ucu 1 olduğunda buffer görevi görüyor. Yani girişinde ne varsa çıkışına aktarıyor.
+
+146
+00:34:39,748 --> 00:34:52,328
+1 olduğunda enable ucu. Girişte ne varsa çıkışa 10'a aktarıyor. Buradaki önemli nokta şuradaki Hi-Zed dediğimiz 3.
+
+147
+00:34:56,596 --> 00:35:24,936
+durum. Zaten Tristate 3 durum şeyi de buradan geliyor. Yüksek direnç ne demek? İşte bu çıkışta çok yüksek direnç varsa eğer devrenin o kolu şudan sanki kopartılmış gibi dışarıdan baktığınızda böyle bir davranış sergiliyor. Yüksek direnç.
+
+148
+00:35:26,596 --> 00:35:47,856
+Şimdi biz bu devre elemanını şöyle bir örnekte kullanacağız. Size güzel, ilginç bir örnek vereceğim. İki tane 3-State buffer'ı kırmızıyla çizmeyeceğim.
+
+149
+00:36:05,588 --> 00:36:07,588
+İki tane tristate bufferı
+
+150
+00:36:13,811 --> 00:36:15,411
+Uçlarını
+
+151
+00:36:28,244 --> 00:36:44,963
+Buna input 0 diyorum. Buna da input 1 diyorum. Bu da yukarıdakinin enable 0 ucu ve enable 1 ucu olsun.
+
+152
+00:36:46,783 --> 00:36:52,963
+Şimdi size ilginç bir bağlantı şekli göstereceğim. Bu şu açıdan önemli.
+
+153
+00:36:52,963 --> 00:37:04,323
+Normalde bir lojik kapıyı, mesela bir end kapısı var burada. Burada bir or kapısı var. Hiç önemli değil hangi kapı olduğu.
+
+154
+00:37:05,543 --> 00:37:12,424
+Lojik kapıların ikisinin çıkışını birbiriyle böyle kısa devre edemezsiniz. Bu şekilde bağlayamazsınız.
+
+155
+00:37:12,424 --> 00:37:24,824
+Nasıl bağlayabilirsiniz? Böyle bir bağlantı gerekiyorsa eğer birinin çıkışını diğerinin çıkışıyla yeni bir kapıda birleştirebilirsiniz.
+
+156
+00:37:24,824 --> 00:37:31,824
+Ama şurada gördüğümüz gibi bir bağlantı kesinlikle yapılamaz.
+
+157
+00:37:32,383 --> 00:37:39,604
+Neden? Çünkü şöyle düşünün işte bunun AB girişleri var, bunun CD girişleri var.
+
+158
+00:37:39,604 --> 00:38:06,264
+Şunun çıkışında burada bir lojik bir output üretmişse yani artı 5 volt vermişse şurası ama diğer tarafta aşağıdaki or kapısının çıkışı ise lojik 0 gösteriyor ise artı 5 volttan 0'a doğru bir akım akıyor ve şuradaki or kapısının üstünden dumanlar çıkıyor yanıyor.
+
+159
+00:38:06,263 --> 00:38:12,203
+içeriye doğru bir akım aktığı için ve o nedenle böyle bir bağlantı yapılamaz.
+
+160
+00:38:12,203 --> 00:38:26,104
+Ama şimdi çok ilginç bir örnek göreceksiniz ama benim sol tarafta verdiğim Tristate bufferları kullandığımda böyle bir bağlantı yapabildiğimi göreceksiniz.
+
+161
+00:38:26,244 --> 00:38:33,203
+Peki bunu nasıl başarıyoruz? Yani nasıl oluyor da devreye zarar vermeden ben bunu bu şekilde bağlayabiliyorum?
+
+162
+00:38:33,203 --> 00:38:59,244
+Bunu şöyle özetleyeyim. İki tane bufferın enable 1 ve enable 0 uçları, input 1 ve input 0 uçları ve bir de output olsun burası da.
+
+163
+00:39:03,956 --> 00:39:24,876
+Şimdi case'leri alalım. Eğer her iki buffer'ın da inay bulucu 0 ise zaten Tristate buffer'ın girişi inay bulucu 0 ise high Z gösteriyordu. High Z olması demek bunun şuradan sanki böyle kopartılmış anlamına geliyor.
+
+164
+00:39:24,876 --> 00:39:41,356
+Dolayısıyla bu iki bölüm birbirinden izole edildiğini gösteriyor demiştik. Dolayısıyla inputta ne olursa olsun çıkışa baktığımız zaman high set göreceğiz. Yüksek direnç göreceğiz.
+
+165
+00:39:41,355 --> 00:39:45,435
+Şimdi eğer
+
+166
+00:39:45,435 --> 00:39:46,355
+eğer
+
+167
+00:39:46,355 --> 00:39:47,355
+eee
+
+168
+00:39:51,603 --> 00:39:52,603
+Eğer
+
+169
+00:39:57,652 --> 00:40:13,851
+üstteki bufferın enable ucu 1 iken alttaki bufferın enable ucu 0 ise bu durumda üstteki bufferın girişinde ne varsa
+
+170
+00:40:16,115 --> 00:40:22,635
+çıkışa o aktarılır. Pardon, 0, 1 ise 1 aktarılır. Veya
+
+171
+00:40:26,132 --> 00:40:37,891
+alttaki buffer'ın girişinde yani enable girişinde 1 varsa üstteki enable uçları 0 ise bu durumda
+
+172
+00:40:41,811 --> 00:40:45,251
+Bu durumda input 1'in ne olduğu önem kazanır.
+
+173
+00:40:49,748 --> 00:41:15,487
+ve girişinde 0 varsa 0, 1 varsa 1 şeklinde çıkış alır. Tamam. Buraya kadar her şey normal. Peki bu noktadan sonra ben eğer şöyle bir uygulama yaparsam, tamam, şey de bitti burada. Şöyle bir uygulama yaparsam, şuraya taşıyacağım tablonun alt tarafını.
+
+174
+00:41:23,731 --> 00:41:27,811
+Enable 1, Enable 0
+
+175
+00:41:31,284 --> 00:41:36,483
+input 1, input 0 ve output.
+
+176
+00:41:40,164 --> 00:41:56,204
+Eğer aynı anda ikisi birden 1 olursa, ikisi birden enable olursa bu bufferların, bu durumda her iki girişte de 0 varsa çıkışta 0 görürüm.
+
+177
+00:41:56,204 --> 00:42:02,583
+Yani ikisi birbiriyle aynı ise outputların, bufferlarının çıkışı sorunsuz çalışır.
+
+178
+00:42:02,583 --> 00:42:22,583
+Ama az önce verdiğimiz örnekte olduğu gibi bufferlardan birinin girişinde bir varken diğerinin girişinde sıfır varsa bu durumda şu bağlantı şekli de yine az önce söylediğimiz problemi doğurur.
+
+179
+00:42:22,583 --> 00:42:46,383
+doğurur ve enable 0 dediğimiz şu şeyde enable 0 olan üst taraftaki şuradan şuraya doğru yüksek bir akım akacağı için buradaki bufferın üstünden dumanlar çıkar ve bir devreyi yakmış oluruz.
+
+180
+00:42:46,383 --> 00:43:01,123
+Peki, three state buffer'ın burada bize sunduğu avantaj aynı anda sadece bir tanesinin enable olmasına izin verirsek eğer ben bu bağlantı şeklini kullanabiliyorum.
+
+181
+00:43:01,123 --> 00:43:06,964
+Ama sadece tablonun bu bölgesinde gösterdiğim şekliyle kullanırsam kullanabiliyorum.
+
+182
+00:43:06,964 --> 00:43:19,184
+Sağ taraftaki verdiğim yapıda yani aynı anda her ikisinin de enable edilmesi durumunda yine devreye zarar vermiş oluyorum.
+
+183
+00:43:19,184 --> 00:43:32,403
+O zaman neyi garantilemem gerekiyor? Aynı anda ikisinin birden enable olmaması durumunu sağlayacağım. Böylece bu bağlantıyı kurgulayabileceğim.
+
+184
+00:43:32,403 --> 00:43:38,003
+Şimdi bunu register tasarımında nasıl kullanıyoruz ona bakalım.
+
+185
+00:43:40,203 --> 00:43:47,443
+Yani daha doğrusu register için bir single bus yapısı oluştururken nasıl kullanıyoruz onu görelim.
+
+186
+00:43:48,023 --> 00:43:53,683
+Register with be directional input, output, lines and symbol demiş burada.
+
+187
+00:43:53,683 --> 00:44:08,123
+yapıyı kurgularken register'ın şurada gördüğümüz her bir register'ın enbitlik register bunlar enbitlik çıkışına three state buffer yerleştiriyoruz burada gördüğümüz gibi.
+
+188
+00:44:08,123 --> 00:44:17,623
+Ve bu three state buffer'ın enable ucu ile aynı anda sadece bir tanesinin enable olmasına izin veriyorum.
+
+189
+00:44:17,863 --> 00:44:22,963
+Bu three state buffer yapısını kullanarak.
+
+190
+00:44:23,683 --> 00:44:43,583
+ve bu three state buffer'ın çıkışı artık tüm register yapısının inputuna bağlanıyor ve şu yönde baktığım zaman aslında bu bus yapısı bir directional çift yönlü olmuş oluyor.
+
+191
+00:44:43,583 --> 00:44:48,963
+Nasıl çift yönlü oluyor biliyor musunuz? Lütfen burayı çok iyi dinleyin. Lütfen çok iyi dinleyin.
+
+192
+00:44:48,963 --> 00:44:57,743
+Eğer bu çizmiş olduğum register'ın enable ucu bir ise buradaki three state buffer bir output üretiyor.
+
+193
+00:44:57,743 --> 00:45:12,703
+Yani register'ın içerisindeki sayıyı çıkışa gönderiyor. O nedenle bu bus üzerinde bir output işlemi yani dışarıya doğru bir çıkış işareti, çıkış yönünde bir veri akışı olduğunu gösteriyor bana.
+
+194
+00:45:12,703 --> 00:45:16,403
+Ama ben bu yapıyı ben bu yapıyı
+
+195
+00:45:17,268 --> 00:45:35,268
+birden fazla register'ı bir araya getirerek bağladığımda bu output diğer three state output'u olan register'lar için bir input oluyor. Neden? Çünkü şurada görüyorsunuz.
+
+196
+00:45:35,268 --> 00:45:46,108
+Şurada three state bus using registers with directional lines demiş.
+
+197
+00:45:46,108 --> 00:45:50,087
+Bu yapıyı lütfen şöyle düşünün.
+
+198
+00:45:50,087 --> 00:46:05,407
+Mesela R0 register'ının enable ucu E0'dır ve bu register yapısı üzerinde veriyi gönderecek olan register R0 olarak düşünülmüş olsun.
+
+199
+00:46:05,407 --> 00:46:08,967
+O zaman bunun enable 0 ucunun 1 olması lazım.
+
+200
+00:46:08,967 --> 00:46:26,607
+Enable 0 1 ise eğer R0 registerinin output'undaki three state buffer çıkış yönünde yolu açıyor ve R0'ın içerisindeki data bu basa bırakılıyor.
+
+201
+00:46:26,607 --> 00:46:43,187
+Peki R0'dan output yoluyla gönderilen bu veri tüm registerlerin bas üzerinde şurada gördüğümüz yapı üzerinde inputlarına da gidiyor. Doğru mu?
+
+202
+00:46:43,187 --> 00:46:55,807
+Ve hangi register'ın load ucu enable edilmişse bu veri o register'a yükleniyor.
+
+203
+00:46:56,607 --> 00:47:05,387
+Burada görmüş olduğumuz bir direction çift yönlü demek yani hem giriş hem çıkış yönünde çalışıyor demek.
+
+204
+00:47:06,287 --> 00:47:17,607
+Çizmiş olduğumuz register'ın enable ucu birse eğer buradan output üretiyor ama bu ürettiğimiz output aynı zamanda bu register'ın inputuna da bağlı.
+
+205
+00:47:17,607 --> 00:47:25,947
+Ama bunun yüklemenin yapılıp yapılmayacağına karar veren uç ise bunun load ucu gördüğünüz gibi.
+
+206
+00:47:25,947 --> 00:47:36,447
+Dolayısıyla oluşturduğumuz bu bir directional input output lines dediğimiz yapıyı three state buffer kullanarak yapabiliyoruz.
+
+207
+00:47:36,447 --> 00:47:54,547
+Ve şunu garantilememiz gerekiyor. Buradaki enable uçlarından sadece bir tanesinin enable edilmesi, basa o ilgili register'ın bir output üretmesi mümkün oluyor.
+
+208
+00:47:54,547 --> 00:48:03,008
+ve bir directional bas yapısını tarif ederken şurada gördüğümüz üçgen sembolünü kullanıyoruz.
+
+209
+00:48:03,508 --> 00:48:07,747
+Bunun anlamı daha önce memory tasarımında da görmüştük bunu.
+
+210
+00:48:08,547 --> 00:48:17,788
+Three-state output'u gösteriyor ve three-state output olması demek bunların şurada gördüğümüz gibi birbiriyle bağlanabilir olmasını sağlıyor.
+
+211
+00:48:17,787 --> 00:48:30,227
+Bu yapı ile bir tri-state bus yapısının nasıl oluşturulduğunu görmüş olduk.
+
+212
+00:48:30,227 --> 00:48:39,107
+Yani burada bir decoder yardımıyla şuradaki enable uçlarından sadece bir tanesinin seçilmesini sağlayacağız.
+
+213
+00:48:39,107 --> 00:48:48,947
+ve o seçtiğimiz register basa veri gönderen register olmuş olacak.
+
+214
+00:48:48,947 --> 00:49:02,907
+Şimdi buradaki multiplexer bas yapısından sonra üçüncü öğrendiğimiz yapı multiplexer'ı devreden çıkartıp three state buffer'lar kullanarak
+
+215
+00:49:02,907 --> 00:49:10,667
+Ama bu yapıda da şuradaki enable uçlarını kontrol etmek için bir dekodra ihtiyacımız olacak. Onu bu yapı içerisinde çizmedik.
+
+216
+00:49:11,039 --> 00:49:18,339
+aynı anda sadece bir tanesinin enable olmasını garantilemem gerekiyor yoksa bu yapı çöker.
+
+217
+00:49:18,339 --> 00:49:33,220
+Aynı anda BAS'a iki tane register birden veri aktarmak isterse, birinin aktardığı değer logic 1 iken öbürünün aktardığı logic 0 ise yine bir problem olacak ve devreye zarar verecek anlamına geliyor.
+
+218
+00:49:33,220 --> 00:49:43,319
+Bunun önüne geçmek için burada gördüğümüz enable uçlarından sadece birinin bir olmasını garantilememiz gerekiyor kullanım sırasında.
+
+219
+00:49:45,400 --> 00:49:54,699
+Evet burası özellikle Tristate bus yapısını oluşturma anlamında önemli bir konu. Anlaşıldı mı acaba?
+
+220
+00:49:56,819 --> 00:49:58,380
+Hocam bir soru sorabilir miyim?
+
+221
+00:49:58,739 --> 00:49:59,380
+Tabii buyurun.
+
+222
+00:49:59,380 --> 00:50:07,159
+Bir register'ın enable'ucu 1 olduğu zaman kendi load'ucunun da açık olması gerekiyor mu o değeri tutmak için?
+
+223
+00:50:07,499 --> 00:50:08,560
+Hayır, gerekmiyor.
+
+224
+00:50:08,900 --> 00:50:10,099
+Saklamaya devam ediyor mu?
+
+225
+00:50:10,519 --> 00:50:11,859
+Tabii ki, tabii ki.
+
+226
+00:50:11,859 --> 00:50:25,300
+Yani biz register tasarımını yaparken, hatırlayın yaptığımız register'da yani D tipi flip-floplar kullandıysanız D tipi flip-flopların Q çıkışı register'ın output'u demek.
+
+227
+00:50:25,300 --> 00:50:31,139
+Ben o Q çıkışlarının peşine hemen bir 3-state buffer koydum sadece
+
+228
+00:50:31,139 --> 00:50:33,640
+Anladım hocam
+
+229
+00:50:33,640 --> 00:50:38,980
+Bu output'u dışarıya aktarıp aktarmayacağımı seçiyor oradaki 3-state buffer
+
+230
+00:50:38,980 --> 00:50:48,080
+Ama 3-state buffer'ın çıkışı şekilde de gördüğünüz gibi aynı zamanda hem kendisine hem de diğer register'lara input olarak da gidiyor
+
+231
+00:50:48,080 --> 00:50:52,359
+Ama sadece hangi durumda load olabilir?
+
+232
+00:50:52,359 --> 00:50:58,999
+Yani eğer o register'ın low-denable ucu bir yapılmışsa kendi üstüne yeni değer yükleyebilir.
+
+233
+00:50:59,699 --> 00:51:02,139
+Ama zaten yüklediğimiz değer de aynı değer olacak.
+
+234
+00:51:02,599 --> 00:51:11,019
+Aynı değer olacak. Bir de bunlar clock ile synchronic ya sonuçta bunlar register. Her gelen clock pile'siyle yeni değeri yüklüyor. Doğru mu?
+
+235
+00:51:11,480 --> 00:51:11,760
+Evet.
+
+236
+00:51:11,759 --> 00:51:20,619
+Yani bir önceki state'de var olan değeri eğer aynı register'ın kendi üzerine yükleme durumundan bahsediyorum.
+
+237
+00:51:21,499 --> 00:51:29,859
+D-tipi flip-flopların çıkışındaki Q çıkışındaki değer bir sonraki state'de kendi üzerine tekrar yüklenmiş olur.
+
+238
+00:51:30,419 --> 00:51:34,939
+Eğer bas yapısı üzerinden aynı register'ı destination olarak seçersem.
+
+239
+00:51:35,939 --> 00:51:36,899
+Tamamdır hocam sağ olun.
+
+240
+00:51:37,979 --> 00:51:38,619
+Rica ederim.
+
+241
+00:51:38,619 --> 00:51:40,619
+Evet sorun var mı acaba?
+
+242
+00:51:44,532 --> 00:52:05,532
+Bu konu önemli. Bunu anlamanızı özellikle istiyorum. Dediğim gibi bundan sonraki amacımız hep bir CPU tasarımı olacak. Bu işlemci tasarımında da sağ tarafta gördüğünüz 3-State bus yapısı özellikle kullandığımız yapılardan biri.
+
+243
+00:52:05,532 --> 00:52:15,011
+Peki, chat'e de bakıyorum soru var mı diye. Bir soru var. L0 ve E0 aynı anda 1 olursa ne olur?
+
+244
+00:52:16,091 --> 00:52:28,651
+Evet, aynı soru. Yani register 0'ı bir output olarak basa veriyorsunuz. Aynı register'a tekrar yükleme yapmak istiyorsunuz.
+
+245
+00:52:28,651 --> 00:52:44,111
+Az önce açıkladığım durum yapılabilir. Diğer registerlara da yükleyebilirsiniz. Kendi üstüne de yükleyebilirsiniz. Ama tüm yapı clock ile senkron çalışıyor. Clone bir sonraki periyodunda bu yükleme işlemi sonucunu görürsünüz.
+
+246
+00:52:52,692 --> 00:53:14,311
+C'deki input ve output'lar B'deki gibi aynı değil mi? Evet ama multiplexer yok arada. C ile B arasındaki en büyük fark o değil mi? Multiplexer'a ihtiyacımız yok şu anda.
+
+247
+00:53:19,956 --> 00:53:34,235
+Farkındaysanız burada bir enable yani hangi kaynağın source olarak seçileceğine enable inputlarına koyacağımız değere göre karar veriyoruz.
+
+248
+00:53:34,235 --> 00:53:46,475
+Bu daha çok şeye benziyor. Multiplexer aradan çıkmış. Multiplexer'ın select uçları yerine sanki burada enable uçları gelmiş ama multiplexer yok gördüğünüz gibi.
+
+249
+00:53:50,387 --> 00:53:52,387
+Evet, soru var mı başka?
+
+250
+00:53:56,436 --> 00:54:07,795
+Peki, o zaman bir ara verelim. Aklınıza soru gelirse lütfen chatten yazın veya aradan sonra sorabilirsiniz. Bir 10 dakika ara.
+
+251
+01:07:30,867 --> 01:07:32,867
+Merhaba arkadaşlar.
+
+252
+01:07:36,148 --> 01:07:39,148
+Soru gördüm. Bir saniye chatten bakıyorum.
+
+253
+01:07:58,003 --> 01:08:03,663
+Sercan, bir bana mail atın olur mu?
+
+254
+01:08:17,716 --> 01:08:25,995
+Peki. Şimdi adresleme modları...
+
+255
+01:08:29,524 --> 01:08:39,524
+ve komut seti, Instruction Set Architecture konularına bakacağız.
+
+256
+01:08:39,380 --> 01:08:45,380
+Kimler burada? Şu an 68 kişi derste var gibi. Ellerinizi göreyim bakayım.
+
+257
+01:08:49,811 --> 01:09:13,652
+Evet. Yarıyı bulduk şu anda. 35 kişi el kaldırdı. Yarıyı iki geçtik, üç geçtik. Evet. Peki. Peki arkadaşlar, teşekkür ediyorum. Bizimle olanlara teşekkür ediyorum.
+
+258
+01:09:13,652 --> 01:09:30,471
+Şimdi dersin ikinci bölümünde programımıza göre komut yapısı ve adresleme yöntemlerine bakacağız.
+
+259
+01:09:30,471 --> 01:09:34,532
+Bu slide'ları zaten sizlerle paylaşmıştım.
+
+260
+01:09:36,252 --> 01:09:42,131
+Yine ben şöyle yazıp çizerek gitmek adına şuradan devam edeceğim.
+
+261
+01:09:43,652 --> 01:09:55,551
+Tabi önce sizinle paylaşmam gerekiyor bunu değil mi? Şu anda paylaşım yapmamışım. Onu fark ettim. Evet.
+
+262
+01:09:59,604 --> 01:10:14,463
+Şimdi Instruction Set Architecture diye bir bölüm üzerinden gideceğiz. Burada hem komut seti hem de adresleme yöntemlerini konuşacağız.
+
+263
+01:10:14,463 --> 01:10:21,823
+Bu bölüm kısmen size tanıdık gelebilir. Bazı şeylere aşina olduğunuzu tahmin ediyorum.
+
+264
+01:10:21,823 --> 01:10:33,803
+Çünkü assembly dersinde büyük ölçüde bir 8086 mimarisi için komut setini öğrendiniz.
+
+265
+01:10:33,803 --> 01:10:40,183
+Orada assembly kodu yazabiliyorsunuz.
+
+266
+01:10:40,183 --> 01:10:53,023
+Ama bilgisayar donanımı dersinin amacı tek bir mimariye göre, tek bir işlemciye göre değil, genel olarak tüm yapıyı anlatmak.
+
+267
+01:10:53,023 --> 01:11:06,763
+Yani farklı işlemcilerle de karşılaşabilirsiniz. Birbirlerine göre bu geliştirilmiş olan yapıların ne avantajları var? Bunları görmek açısından önemli.
+
+268
+01:11:06,763 --> 01:11:10,663
+dediğim gibi bazıları size tabii tanıdık gelebilir.
+
+269
+01:11:13,163 --> 01:11:27,283
+Önce Computer Architecture Operant Addressing yani bir işlemde kullandığımız operandın nasıl adreslendiği
+
+270
+01:11:27,284 --> 01:11:47,883
+ve elementary instructions dediğimiz temel komutlarda veri transferi için data transfer instructions, data manipulation instructions, program control instructions diye başlıklarımız olacak. Bunların üzerinde konuşacağız.
+
+271
+01:11:47,883 --> 01:12:13,643
+Burada bir overview vermiş aslında iyi. Şöyle hepimiz biliyoruz high level programming language yüksek seviyeli diller ve bunlarla ilgili compiler'lar var. Bu compiler yazdığımız kodu assembly diline çeviriyor. Daha sonra bir assembler bunu bir makine koduna çeviriyor.
+
+272
+01:12:13,643 --> 01:12:40,083
+Bu makine, ISA bunu makine koduna çeviriyor ve daha sonra bu makine kodunu elimizdeki işlemci anlayabiliyor ve buna göre gerekli kontrol işaretlerini bu makine dilindeki sıfır ve birlerden oluşan ifadede gerekli kontrol işaretlerini alıp ilgili işlemi gerçekleştirebiliyor.
+
+273
+01:12:40,083 --> 01:12:58,544
+Computer Architecture dediğimizde biz bir mimari için aslında en başta bir komut seti oluşturuyoruz. Daha sonra bu komut setini gerçekleştirebilecek mimari yapıyı oluşturmaya çalışıyoruz.
+
+274
+01:12:58,544 --> 01:13:19,883
+Şimdi temel olarak iki tane yapıdan bahsedilebilir burada. Instruction set architectures başlıyor altında. RISC ve CISC yapılar. CISC dediğimiz yapı kompleks instruction set computer'den geliyor.
+
+275
+01:13:19,883 --> 01:13:27,984
+ve kullandığımız işte öğrendiğiniz 80-86 işlemci bu mimari altında yer alıyor.
+
+276
+01:13:27,984 --> 01:13:43,264
+Kompleks komut seti demek işte içerisinde çarpma, bölme gibi kompleks komutların da olduğu bir işlemci yapısından bahsediyoruz.
+
+277
+01:13:43,263 --> 01:13:46,423
+ve bunun en önemli özelliği
+
+278
+01:13:47,520 --> 01:14:00,839
+bir software kontrol devresinin olması. İkinci farklı yapı, mimari yapı, risk işlemci dediğimiz reduced instruction set kompütürden geliyor.
+
+279
+01:14:01,639 --> 01:14:11,520
+Daha az sayıda komut, daha basit komutlar, içerisinde çarpma bölme komutları yok ama daha basit komutlarla siz bunları yazabiliyorsunuz.
+
+280
+01:14:11,520 --> 01:14:27,040
+Kendi de iç yapısına baktığımız zaman kontrol devresi hardwired olarak oluşturulmuş oluyor ve daha az sayıda internal register'ı olan bir yapıdan bahsediyoruz.
+
+281
+01:14:27,040 --> 01:14:45,040
+daha hızlı çalışıyor ama nedir? Daha basit komutlar olduğu için içinde bu kompleks işlemleri yapmak için siz sonuçta arda arda bunları bir araya getirerek bir program yardımıyla bunu gerçekleştiriyorsunuz.
+
+282
+01:14:45,520 --> 01:14:51,140
+Sonuçta orada da yine bir işlem sayısı artmış oluyor tabii.
+
+283
+01:14:52,140 --> 01:14:52,979
+Hocam.
+
+284
+01:14:53,520 --> 01:14:53,960
+Buyurun.
+
+285
+01:14:53,959 --> 01:15:04,179
+Hocam ben şeyi gibi anladım acaba doğru mu anlıyorum yani CISC komutlar sanki böyle daha uzun yazılıp içinde başka başka işlemler tek bir komutun içinde
+
+286
+01:15:04,179 --> 01:15:12,979
+Evet doğru onlarla ilgili örnekler vereceğim birazdan karşılaştırmalı bir tablo orada göreceğiz zaten yine bahsedeceğim
+
+287
+01:15:12,979 --> 01:15:26,159
+Dediğiniz gibi aynen daha uzun, komut kodu da daha uzun ve değişik özellikleri var. Birazdan onları konuşacağız.
+
+288
+01:15:26,159 --> 01:15:43,659
+Şimdi instruction yapısına bakacak olursak bir komutu bir komutu bir işte diyelim ki 2 byte'dan oluşan 3 byte'dan oluşan bir komut uzunluğu olsun.
+
+289
+01:15:43,659 --> 01:15:52,460
+Bu komutun içerisinde belli bölümler olması gerekiyor. Birincisi opcode dediğimiz bir bölüm var. Bu operation code diye geçiyor.
+
+290
+01:15:52,459 --> 01:16:09,499
+ve yürütülecek olan komutun ne olduğunu söylüyor. Bu bir move instructionı mıdır? Yani bir transfer işlemi midir? Toplama işlemi midir? Arttırma, eksiltme işlemi midir? Bununla ilgili bilgiyi operation code dediğimiz bölümde saklıyoruz.
+
+291
+01:16:09,499 --> 01:16:35,139
+Daha sonra bir address field var. Address field bu işlem için kullanılacak operandın adresini gösteriyor. Bu address field birden fazla olabilir. Yani iki tane address field olabilir. Bazı yapılarda üç address field, destination, source, bir, source, iki şeklinde iki tane address field olan komut yapıları da var.
+
+292
+01:16:35,139 --> 01:16:52,999
+ModField dediğimiz bir alan var. Bu şeyin, opcode'un adresleme moduyla ilgili bilgiyi içinde tutan bir alanı var.
+
+293
+01:16:52,999 --> 01:17:02,079
+ve eğer ihtiyaç olursa Other Field dediğimiz bir alanımız daha var. Other Field dediğimiz bölümde.
+
+294
+01:17:03,699 --> 01:17:11,259
+Bunları dediğim gibi Instruction Set Architecture altında zaten başta biz bir yapıyı kurgulayacağız.
+
+295
+01:17:11,259 --> 01:17:15,159
+Buna göre tasarımımızı gerçekleştireceğiz.
+
+296
+01:17:15,159 --> 01:17:26,139
+ve yine genel bir bilgi bir instruction'ın bir komutun komut çevrimi dediğimiz çevriminden bahsedelim.
+
+297
+01:17:28,579 --> 01:17:30,380
+Özür dilerim.
+
+298
+01:17:33,199 --> 01:17:38,659
+Bir komutun tamamlanması için burada operation cycle diye isimlendirmiş.
+
+299
+01:17:39,559 --> 01:17:42,939
+Arka arkaya gerçekleştirilmesi gereken işlem adımları var.
+
+300
+01:17:43,559 --> 01:17:44,059
+Nedir o?
+
+301
+01:17:44,059 --> 01:17:46,520
+Birincisi instruction fetch.
+
+302
+01:17:47,475 --> 01:18:10,995
+Kısaca IF diyoruz. Instruction fetch işlemi, bu komut, yürütülecek olan komut aslında memori'de duruyor. Veya memoriden bunun nereye getirilmesi gerekiyor? Instruction register dediğimiz komut register'ına getirilmesi gerekiyor. Bu işleme instruction fetch işlemi diyoruz.
+
+303
+01:18:10,995 --> 01:18:27,735
+İkinci adım instruction decode işlemi. Bu decode işlemi komutun çözümlenmesi işlemi. Yani az önce komutun bölümlerinden bahsetmiştik.
+
+304
+01:18:27,735 --> 01:18:37,955
+Opcode fieldına bakacak. Bu komut neyle ilgili? Toplama mı yapacak? Çıkarma mı yapacak? Hangi adresleme modunu kullanıyor? Bunları çözümleyecek.
+
+305
+01:18:37,955 --> 01:18:52,236
+Ondan sonra üçüncü aşama. Burada ikinci aşamada kodu çözdük. Hangi adresleme modu olduğunu çözdük.
+
+306
+01:18:52,236 --> 01:18:58,895
+Buna göre, ilgili adresleme moduna göre operandın nereden alınacağına karar verdik.
+
+307
+01:18:58,895 --> 01:19:20,895
+ve operand fetch işlemi eğer işte işleme katılacak olan sayı memory'den getirilecekse işte AX register'ı, memory'de bir adresi gösteriyorsa oradan gidiyorsunuz ilgili operandı işleme katılacak olan operandı operand fetch işlemiyle getiriyorsunuz.
+
+308
+01:19:20,895 --> 01:19:38,535
+Daha sonra buna O, F diyoruz, operand, F. Execution fazı var, EX diye gösteriyoruz. Operandımız hazır, hangi işlemi yapacağımızı biliyoruz. İşte bu bir aritmetik işlemse veya bir transfer işlemi ise bunu yürütüyoruz.
+
+309
+01:19:38,535 --> 01:19:52,735
+Execution fazı dediğimiz faz ve mesela bir aritmetik işlem yaptığımızı varsayalım. Bu işlemin sonucunun belli bir registre kaydedilmesi veya memoriye kaydedilmesi gerekir.
+
+310
+01:19:52,735 --> 01:20:16,895
+Buna da genelde writeback deniyor. WB ile gösteriliyor. Result store demiş burada. Ve son aşama artık çevrim tamamlandı. Bir sonraki komutu gösteren pointerı ayarlıyorsunuz ve burada çevrim başa dönüyor.
+
+311
+01:20:16,895 --> 01:20:20,955
+ve bir sonraki komut için aynı işlemler tekrarlanıyor.
+
+312
+01:20:20,955 --> 01:20:31,675
+Bu operation cycle dediğimiz bir komutun yürütülmesi için gerekli aşamalar bizim için önemli.
+
+313
+01:20:31,856 --> 01:20:42,295
+Çünkü biz bu yapıyı daha sonra bu işlemi paralelleştirmek adına pipeline processing bölümünde detaylı olarak kullanacağız.
+
+314
+01:20:42,295 --> 01:20:46,515
+O yüzden bu aşamaları bilmemizde fayda var.
+
+315
+01:20:46,895 --> 01:21:00,615
+Şimdi biz bu ders kapsamında basit bir mimari tasarlamaya çalışıyoruz ve diyor ki bu tasarlayacağımız yapı içerisinde bir register setimiz var.
+
+316
+01:21:00,615 --> 01:21:14,576
+Bu register setin normalde içerisinde 16 tane register var ama biz R0'dan R7'ye kadar olanlara programmer accessible registers diyeceğiz.
+
+317
+01:21:14,575 --> 01:21:18,995
+Programcılar tarafından erişilebilir registerler olacak bunlar.
+
+318
+01:21:21,055 --> 01:21:35,955
+Ve diğerleri, diğer registerler, R8'den R15'e kadar olan registerler sadece içeride bizim mikro operationlar için, mikro programlar için kullanacağımız registerler olacak diyor.
+
+319
+01:21:36,555 --> 01:21:40,475
+Instruction register dediğimiz bir komut registerimiz var.
+
+320
+01:21:40,895 --> 01:21:54,935
+Program Counter'ımız var. Instruction Register, az önce söylediğimiz Instruction Fetch, memory'den getirdiğimiz komutu yazdığımız register. Ve Instruction Register'da bulunan register decode işlemine katılıyor.
+
+321
+01:21:54,935 --> 01:22:07,256
+Program Counter yürütülecek olan komutun memori'de hangi adreste tutulduğunu işaret eden register.
+
+322
+01:22:07,256 --> 01:22:14,756
+Bu program counter bir tabi ki burada register seti içerisinde geçiyor yine.
+
+323
+01:22:14,756 --> 01:22:25,096
+ve sizin bir programınız var, bir kod parçası, işte birinci satırdaki kodu aldık, işliyoruz.
+
+324
+01:22:25,195 --> 01:22:28,015
+Bu işlem tamamlanınca program counter ne yapıyor?
+
+325
+01:22:28,355 --> 01:22:32,436
+Bir arttırılıyor ve bir sonraki satırdaki komutu yürütüyor.
+
+326
+01:22:32,535 --> 01:22:34,455
+O yüzden buna counter denmiş.
+
+327
+01:22:34,815 --> 01:22:36,695
+Yani bir sayma özelliği var.
+
+328
+01:22:36,695 --> 01:22:46,696
+Çünkü ne yapıyoruz? Komutu gösterdiğimiz adrese bir arttırmamız gerekiyor o yüzden
+
+329
+01:22:46,696 --> 01:22:54,616
+Pipeline registers dediğimiz registerlarımız var bunlardan bahsedeceğiz
+
+330
+01:22:54,616 --> 01:22:59,035
+Durum bitlerinin tutulduğu status registers var
+
+331
+01:22:59,035 --> 01:23:13,315
+Daha önce konuştuğumuz carry, overflow, negate ve zero gibi flaglerin durum biti olarak tutulduğu bir register var.
+
+332
+01:23:13,675 --> 01:23:17,455
+Ve bir de stack pointer dediğimiz pointerımız var.
+
+333
+01:23:17,875 --> 01:23:21,696
+Stack operationlarını yaparken kullandığımız.
+
+334
+01:23:21,695 --> 01:23:31,315
+Operant adreslemede explicit ve implicit adres diye bir kavram var.
+
+335
+01:23:31,315 --> 01:23:36,055
+Bakın size bu bölümün başında şunu söylemiştim.
+
+336
+01:23:36,135 --> 01:23:39,675
+Bu ders 80-86 assembly dersi değil.
+
+337
+01:23:40,115 --> 01:23:44,735
+Bu computer architecture yapılarını öğrettiğimiz bir ders.
+
+338
+01:23:45,095 --> 01:23:48,375
+Dolayısıyla çok farklı mimariler göreceksiniz.
+
+339
+01:23:48,375 --> 01:24:05,795
+ve genel kavramları bilirseniz eğer bugün bu 80-86 işlemciyle iş yaparken yarın bir başka işlemciyle çalışmaya başladığınızda zorlanmazsınız.
+
+340
+01:24:05,795 --> 01:24:12,455
+Çünkü temel kavramları biliyor olduğunuz için bunları çok hızlı kavrayabilirsiniz.
+
+341
+01:24:12,455 --> 01:24:20,455
+O yüzden tek bir pencereden bakmayacağız, daha geniş bir pencereden bakacağız ve değişik çözümleri inceleyeceğiz.
+
+342
+01:24:21,235 --> 01:24:30,476
+Operant adresleme işlemlerinde bir explicit address, bir de implied address diye bir kavram var.
+
+343
+01:24:31,915 --> 01:24:37,196
+Explicit address demek address field in instruction.
+
+344
+01:24:37,196 --> 01:24:42,296
+Az önce size yazmıştım. Bir opcode var dedik.
+
+345
+01:24:44,948 --> 01:25:02,427
+arkasından bir address field var dedik. Bu address field ne için kullanılıyor? Address field burada söylediğimiz operanda adreslemek için kullanılıyor. Bu şekilde komutun bir parçası olarak adres bilgisi verilmişse buna explicit address deniyor.
+
+346
+01:25:02,427 --> 01:25:12,907
+Implied address ise the location of operand is specified by the opcode or operand address diyor.
+
+347
+01:25:12,907 --> 01:25:18,227
+Burada opcode fieldının içerisinde gizlenmiş olabilir diyor.
+
+348
+01:25:18,308 --> 01:25:25,767
+Ama bu şekilde verilmiş olan operand sadece akümülatör register'ının olduğu durumlarda kullanılır.
+
+349
+01:25:26,267 --> 01:25:31,267
+Yani işte load to accumulator diye bir komut var mesela.
+
+350
+01:25:31,267 --> 01:25:39,968
+Load to Accumulator bu opcode içerisinde gizlenmiş akümülatör üzerinde sadece bu işlemin yapılacağını bize söylüyor.
+
+351
+01:25:40,648 --> 01:25:46,227
+O şekilde bir implied address yapısından bahsedebiliriz.
+
+352
+01:25:46,227 --> 01:26:02,327
+Bir de şimdi bahsedeceğimiz farklı mimarilerde 3 tane adres field'ı olan 2 adres field'ı olan yapılar var dedim.
+
+353
+01:26:02,327 --> 01:26:23,187
+Şimdi bunlara örnek gösteriyor. Diyor ki operant adreslemek için şurada bahsettiğimiz explicit adres yapısını, adres field'ını 3 tane adresi birden tutan, destination, source 1, source 2 şeklinde 3 tane adresi birden tutan yapılar mevcut.
+
+354
+01:26:23,187 --> 01:26:26,387
+Buna three address instructions deniyor.
+
+355
+01:26:26,887 --> 01:26:30,308
+Üç adresli komutlar deniyor.
+
+356
+01:26:30,308 --> 01:26:34,628
+Bu yapıları tarif etmek için başta da bir tane problem veriyor.
+
+357
+01:26:34,767 --> 01:26:43,587
+Diyor ki biz bu değişik mimarilerde şöyle bir işlemin nasıl yapıldığını inceleyelim.
+
+358
+01:26:44,087 --> 01:26:44,507
+Nedir?
+
+359
+01:26:44,847 --> 01:26:48,747
+Memoride yer alan ABCD sayıları var.
+
+360
+01:26:48,747 --> 01:27:05,547
+Bu memori'de yer alan A, B, C, D sayıları ile ben işte A artı B ve C artı D işlemlerini yapıp bu işlem sonuçlarını çarpacağım ve bir X adresinde memori'de bir X adresinde bunu saklayacağım.
+
+361
+01:27:05,547 --> 01:27:15,487
+Böyle bir komut, böyle bir işlemi gerçekleştirmek için eğer tree address instruction kullanıyorsam bunu nasıl yaparım?
+
+362
+01:27:15,487 --> 01:27:31,627
+Onu mesela burada göstermiş. Tree address instructions'da dikkat edin add demiş bir toplama işlemi için destination address, source 1, source 2 adresi.
+
+363
+01:27:31,627 --> 01:27:35,627
+Hepsi memory üzerinde sağ taraftaki açıklamada da görüyorsunuz.
+
+364
+01:27:36,107 --> 01:27:44,307
+Memory'de A ve memory'de B gözlerinde tutulan veriyi alıyor, topluyor.
+
+365
+01:27:44,587 --> 01:27:51,487
+Toplama işlemi sonucunu temporary dediğimiz geçici bir T1 adresine yazıyor.
+
+366
+01:27:51,487 --> 01:28:02,027
+Daha sonra ikinci toplama işlemi C ve D adreslerindeki değerleri alıyor, topluyor ve bunu da bir temporary alanda tutuyor.
+
+367
+01:28:02,027 --> 01:28:15,487
+Daha sonra geçici olarak tuttuğu bu memory alanlarındaki değerleri birbiriyle çarpıyor ve bunu memoryde bir X adresine yazıyor.
+
+368
+01:28:15,487 --> 01:28:21,727
+3 satırda bitti işlem. Neden? Çünkü tree address instructions dediğimiz bir yapıyı kullandık.
+
+369
+01:28:23,315 --> 01:28:35,595
+Burada registerlarla da yapılabilir diye bir başka şekilde de bunu yine göstermiş. Yani register üzerinde tutarak da yapılabilirdi.
+
+370
+01:28:35,595 --> 01:28:48,055
+Bu tür mimarilerin avantajları nedir? Yani three address instructions olmasının avantajı nedir? Avantajı short program. Daha kısa program yazıyoruz.
+
+371
+01:28:48,055 --> 01:28:51,156
+Ama instructionlarımız daha uzun bu arada.
+
+372
+01:28:51,996 --> 01:28:58,496
+Fakat komut satır sayısı olarak baktığımızda 3 satırda işlemi gerçekleştirmiş oluyoruz.
+
+373
+01:29:00,536 --> 01:29:10,255
+İkinci de negatif olan tarafları, eksi tarafları ise binary coded instruction require more bits to specify three address.
+
+374
+01:29:10,475 --> 01:29:14,055
+Komut uzunluğunun daha fazla olması gerektiğini söyledik.
+
+375
+01:29:14,775 --> 01:29:17,795
+Two address instructions için bakıyorum.
+
+376
+01:29:18,055 --> 01:29:26,575
+Bu arada chat'i arada kontrol ediyorum. Bir şey var mı? Yazdınız mı diye. Şurayı açalım. Kenarda dursun.
+
+377
+01:29:32,115 --> 01:29:55,055
+Two address instructions'da burada iki tane adres ve field var. Bunun için bu adres field'larından biri hem source hem destination olabiliyor. Böyle bir yapı söz konusu.
+
+378
+01:29:55,055 --> 01:29:59,235
+Mesela burada aynı işlemi nasıl yapmış bakıyoruz.
+
+379
+01:30:01,395 --> 01:30:12,275
+Önce memory'den memory A'daki A gözündeki değeri T1'e almış.
+
+380
+01:30:12,275 --> 01:30:25,875
+Daha sonra bunu T1'e aldıktan sonra ikinci satırda T1'deki değer ile memoryde B adresinde tutulan değeri toplamış. Toplama sonucunu T1'e yazmış.
+
+381
+01:30:27,255 --> 01:30:29,215
+Şurada destination görüyorsunuz.
+
+382
+01:30:29,215 --> 01:30:48,315
+Daha sonra benzer işlemi C ve D için yapıyor ve ondan sonra nihai durumda burada gördüğümüz MX ile X adresindeki ve T1 adresindeki değerleri çarparak işlem sonucunu MX'e yazıyor.
+
+383
+01:30:50,815 --> 01:30:58,175
+Burada size bir soru soracağım. Birinci satırda memori de A adresindeki değeri neden T1'e taşıdı?
+
+384
+01:31:04,532 --> 01:31:06,131
+Bakayım dinliyor musunuz?
+
+385
+01:31:08,571 --> 01:31:16,651
+Böyle bir işleme gerek var mıydı? Yani normalde hani ikinci satırda görüyorsunuz iki memori gözü arasında zaten toplama işlemi yapabiliyor.
+
+386
+01:31:18,372 --> 01:31:25,851
+Ne yapmak istiyorduk? Biz memori A gözü ile memori B gözünü toplamak istiyorduk.
+
+387
+01:31:25,851 --> 01:31:36,411
+Bu işlemi iki memori gözü arasında zaten yapabiliyor. Neden memori de A gözündeki değeri T1'e, memori T1 gözüne almış?
+
+388
+01:31:38,991 --> 01:31:42,191
+Lütfen bir ışık görmek istiyorum sizden ya.
+
+389
+01:31:44,311 --> 01:31:52,411
+Ahmet Zahit çok teşekkür ederim. Memori A'nın değerini bozmamak için. Harika, güzel. Ses duyduğuma sevindim.
+
+390
+01:31:52,411 --> 01:31:56,191
+Yani sessiz de olsa yazdığınız için teşekkür ederim.
+
+391
+01:31:56,191 --> 01:32:03,631
+Şimdi burada one address instructions diye bir çözüm, bir mimari yapıdan bahsedebiliriz.
+
+392
+01:32:03,991 --> 01:32:08,791
+Bunda da bakın implied address dediğimiz yapı devreye giriyor.
+
+393
+01:32:09,851 --> 01:32:17,431
+Ve implied address de akümülatör adını verdiğimiz özel bir register var.
+
+394
+01:32:17,971 --> 01:32:21,111
+Ve işlemler hep bunun üzerinden dönüyor.
+
+395
+01:32:21,112 --> 01:32:30,192
+Bu komutun opcode field'ında belirtiliyor ama yani burada akümülatör üzerinden işlem yapacağı
+
+396
+01:32:30,192 --> 01:32:37,772
+Mesela şurada birinci satırda memuride A gözündeki değeri akümülatöre yüklüyor
+
+397
+01:32:37,772 --> 01:32:45,432
+Load accumulator from A, memurideki A gözünden akümülatöre veri transferi yaptı
+
+398
+01:32:45,432 --> 01:33:03,552
+İkinci satırda ADD işlemi yapıyor. Bu toplama işleminde de akümülatör ile memuride B gözü arasında bir toplama işlemi yaptı. Daha sonra oluşan toplamı bir geçici alanda, MX dediği bir alanda bu toplama sonucunu depoladı.
+
+399
+01:33:03,551 --> 01:33:24,871
+Sonra C gözündeki, memoride C gözündeki sayı ile D gözündeki sayıyı topladı. Bu işlemin sonucu artık akümülatörde. Bununla az önce memoride X adresine kaydettiği A artı B işlem sonucunu çarpma işlemine kattı.
+
+400
+01:33:24,871 --> 01:33:31,811
+ve akümülatörde oluşan sonucu MX dediğimiz bir memory adresine kaydettik.
+
+401
+01:33:32,131 --> 01:33:39,051
+Burada gördüğümüz işlemde one address instruction diyor ve hep akümülatör üzerinde işlem yapılıyor.
+
+402
+01:33:39,851 --> 01:33:51,871
+Operantlardan biri akümülatör, destination gene akümülatör ve baktığımız zaman komut uzunluğu daha kısa
+
+403
+01:33:51,871 --> 01:34:10,991
+Ama kullanmamız gereken komut sayısı ki 4, 6, 7 tane instruction ile bunu gerçekleştiriyor. Bu da böyle bir mimari. Daha ilginci zero address instructions diye bir şey var. Yok artık diyeceksiniz. Nasıl yani? Zero address instruction.
+
+404
+01:34:10,991 --> 01:34:22,171
+Bunu da siteyi kullanarak gerçekleştiriyor. Her şeyi siteye kaydediyor. Ve sonra sitek üzerinde bu işlemleri gerçekleştiriyor.
+
+405
+01:34:24,671 --> 01:34:29,471
+Aşağıda işlem adımlarını burada göstermiş.
+
+406
+01:34:29,472 --> 01:34:32,011
+Memory D.
+
+407
+01:34:33,140 --> 01:34:58,299
+Push A dediği instruction ile memory'de A gözünden aldığı sayıyı staya kaydediyor. Stack diyebiliyorsunuz assembly'de. Stack memory dediğimiz bir özel alan var. Bu alan tanımlı bir adres. Başladığı nokta belli ve bunu gösteren bir pointer'ımız var.
+
+408
+01:34:58,299 --> 01:35:10,599
+Top of stack dediğimiz, burada toste ile göstermiş, siteyin adresini tutan, biz normalde stack pointer diyoruz.
+
+409
+01:35:10,680 --> 01:35:19,360
+Burada top of stack diye isimlendirmiş. Böyle bir pointer ile bu memoriye erişim gerçekleşiyor.
+
+410
+01:35:19,360 --> 01:35:26,980
+Push A dediği instruction ile memori'de A gözünden aldığı değeri siteye yerleştiriyor.
+
+411
+01:35:26,980 --> 01:35:55,400
+Ondan sonra tabi bu pointer bir artıyor push işleminden sonra bir üst gözü gösteriyor B'yi aynı şekilde stay yazıyor daha sonra add dediği zaman stack üzerinde stack pointer'ın gösterdiği değerle bunun bir altındaki gözdeki değerleri topluyor yine stay yazıyor
+
+412
+01:35:55,399 --> 01:36:01,399
+ve gördüğünüz gibi işlemleri aslında Zero Address Instructions dediğimiz formatta da yapabiliyoruz.
+
+413
+01:36:01,479 --> 01:36:05,879
+Yani bunlar bize mimari çözümlerin neler olabileceğini gösteriyor.
+
+414
+01:36:05,879 --> 01:36:07,879
+Evet.
+
+415
+01:36:11,667 --> 01:36:28,747
+Burada stack instrakşınlarına şöyle bir bakalım. Bakın buradaki stack operationları da yine mimariye göre ufak bazı farklılıklar gösterebilir. Bütün stack operationlarında push ve pop dediğimiz işlemler var.
+
+416
+01:36:28,747 --> 01:36:37,368
+Push demek, site'e belli bir register'daki sayıyı site'e depolamak, itmek demek.
+
+417
+01:36:37,967 --> 01:36:43,547
+POP ise stekten site'e kaydedilmiş bu veriyi geri çekmek, okumak demek.
+
+418
+01:36:44,028 --> 01:36:46,147
+Peki nasıl yapıyor işlemleri?
+
+419
+01:36:46,147 --> 01:36:52,508
+Bakın bu yapı bir teorik bir model diyelim burada.
+
+420
+01:36:53,028 --> 01:36:56,147
+80-86 ile farklılıklar gösterebilir.
+
+421
+01:36:56,147 --> 01:37:11,047
+Bütün mimarilerde standart tek tip bir yapı çalışmıyor tabii. Ama hepsinde bir pointer yapısı var. Burada bir stack pointer görüyorsunuz. Diyor ki stack pointer 101 adresini gösteriyor olsun.
+
+422
+01:37:11,047 --> 01:37:24,888
+Ve adreslerin burada yönüne lütfen dikkat edin. Dolu olan göz 102, 103, 104 aşağıya doğru. Boş olan gözler ise 100 diye yukarıya doğru çizilmiş adres yapısı çizilirken.
+
+423
+01:37:24,888 --> 01:37:53,688
+Diyor ki bu gösterdiğim modelde stack pointer hep dolu olan gözü gösteriyor yani şu anki gördüğümüz yapıda ve ben bir push işlemi yapmak istiyorsam yani siteye yeni bir değer yüklemek istiyorsam kaydetmek istiyorsam önce stack pointerı bir eksiltiyorum 101'di 100 oldu bir eksiltince ve bu adrese 100 adresine R1 register'ını yazıyorum diyor.
+
+424
+01:37:53,687 --> 01:38:04,847
+Yani push operation'ı bu şekilde çalışıyor ve push operation'ın sonunda stack pointer yüzü gösteriyor artık. Dolu olan yüzü gösteriyor az önce söylediğim gibi.
+
+425
+01:38:04,848 --> 01:38:19,047
+Evet, pop operation'larına bakacak olursak, bu defa şey, stack'den veri çekmekten bahsediyoruz.
+
+426
+01:38:19,047 --> 01:38:27,188
+Stack'den bir veriyi çekmek demek, stack pointer'ın gösterdiği gözden veriyi R1 register'ına alıyor.
+
+427
+01:38:27,688 --> 01:38:31,947
+Ama hep stack pointer neydi? Dolu olan gözü işaret etmeliydi.
+
+428
+01:38:31,947 --> 01:38:43,647
+O yüzden stack pointer'ı burada bir arttırıyor ki bir alttaki en son kaydedilen bir alttaki veriyi göstersin.
+
+429
+01:38:43,647 --> 01:38:56,188
+Bu şekilde bir çalışma mantığı var. Stack pointer'ın push ve pop operation'larını tanımlı bu yapıya göre çözebilirsiniz.
+
+430
+01:38:56,187 --> 01:39:21,327
+Sanıyorum bu tür işlemleri stack architecture'ını kullanarak bir reverse policy notation dediğimiz formda verilmiş olan bir aritmetik işlemi stack'te nasıl gerçekleştiririz gösteren bir notasyon bu.
+
+431
+01:39:21,327 --> 01:39:35,147
+Bunları diskret matematikte görmüş olabilirsiniz, data yapıları dersinde görmüş olabilirsiniz. Bu sadece siteyin kullanımına bir örnek olarak burada verilmiş.
+
+432
+01:39:35,147 --> 01:39:46,967
+ve burada addressing architecture'a geldiğimizde adresleme modlarına devam edeceğim.
+
+433
+01:39:46,967 --> 01:40:00,027
+Adresleme modlarında, dediğim gibi siz zaten 8086 SM'li dersinde Intel Mimarisi
+
+434
+01:40:00,000 --> 01:40:13,399
+sunduğu değişik çözümleri gördünüz. Burada tüm mimari yapılar içerisinde görülebilecek temel yöntemler, adresleme yöntemleri nelerdir? Biraz bunları konuşacağız.
+
+435
+01:40:14,859 --> 01:40:29,399
+Implied Addressing Mod var. Immediate Mod, bunlarla ilgili örnekler de vereceğim. Register, Register Indirect, Direct Indirect, Program Counter Relative Addressing Modu ve Indexed Addressing Modu.
+
+436
+01:40:30,000 --> 01:40:53,340
+Mod dediğimiz değişik adresleme modları var. Bunların nasıl çalıştığını görmek için şu örnekle devam edeceğim ben. Güzel bir örnek bu, basit bir örnek. Diyor ki, henüz assembly görmemiş arkadaşlar da olabilir aranızda, bilimsel hazırlıkta olan arkadaşlar da var, onlar için söylüyorum.
+
+437
+01:40:53,340 --> 01:41:08,940
+Çok basit bir örnekle tüm adresleme modlarını burada anlatmak amaçlanıyor. Sağ tarafta bir memory yapısı verilmiş. Bu bizim komutlarımızın durduğu bellek alanı.
+
+438
+01:41:08,939 --> 01:41:15,279
+250 adresinde, 250-251 adresinde şöyle düşünün.
+
+439
+01:41:15,279 --> 01:41:21,259
+Mesela burada 1 byte, burada 250 adresinde 1 byte, 251 adresinde 1 byte.
+
+440
+01:41:21,719 --> 01:41:24,759
+Toplamda 2 byte uzunluğunda bir instruction var.
+
+441
+01:41:27,999 --> 01:41:35,319
+Komutun az önce çizdiğimiz gibi bir opcode field'ı var, mod alanı var ve adres alanı var.
+
+442
+01:41:35,319 --> 01:41:56,400
+Yani şu iki satırda toplamda 16 bitle verilmiş bir komut var. Bu komutu opcode field'ını çözdüğümüzde bunları zaten derste yapacağız örneklerini ama burada diyor ki bunun opcode field'ını çözdüğümde bunun load to accumulator komutu olduğunu gördüm diyor.
+
+443
+01:41:56,399 --> 01:42:12,079
+Yani akümülatöre yükleme yapacağız. Ama neyi yükleyeceğiz? O kullandığımız adresleme moduna göre ilgili alandan çekilecek.
+
+444
+01:42:12,080 --> 01:42:27,759
+Mod field'ı eğer direct address mod ise diyor direct address mod ise ve adres alanında 500 varsa yani şu göze 500 yazılmışsa
+
+445
+01:42:30,240 --> 01:42:35,720
+Demek ki bu şey 8 bit değil o daha büyük 16 bit olabilir.
+
+446
+01:42:35,720 --> 01:42:56,339
+Adres alanında 500 sayısı varsa bu şu anlama geliyor. Direct addressing modda bizim bu 500 adresi ile bu memoride 500 adresine gidiyorum ve operanda ulaşıyorum.
+
+447
+01:42:56,339 --> 01:43:06,300
+Operandum 800 yani akümülatöre yüklenecek olan sayı işlem sonucunda akümülatöre yüklenecek olan sayı 800 oluyor.
+
+448
+01:43:07,839 --> 01:43:15,059
+Direct Addressing Mode kullandım. Bu basit bir örnek sadece Direct Addressing Mode'u gösteriyor.
+
+449
+01:43:15,059 --> 01:43:32,660
+Yapmış olduğumuz örnek. Ama işte bu tabloda op kodun hangi kod olduğunun çözümlenmesi, hangi adresleme modunun kullanıldığının çözümlenmesi bunlarla ilgili değişik örnekler yapacağız.
+
+450
+01:43:32,659 --> 01:43:53,319
+Adres field'ında bize doğrudan adres verilmiş bu operandın bulunduğu adresi gösteriyor. Gidiyoruz o adresten operandı yani 800 sayısını alıyoruz ve bunu akümülatöre, akümülatör dediğimiz bir registra yüklüyoruz.
+
+451
+01:43:56,275 --> 01:44:07,076
+Şimdi bu örneği biraz genişletmiş ve farklı adresleme modunda bu komut nasıl çalışır bunu burada listelemiş.
+
+452
+01:44:08,415 --> 01:44:15,296
+Çok uzatmak istemiyorum çünkü kolay bir konu. Hızlıca anlatacağım o yüzden.
+
+453
+01:44:15,296 --> 01:44:25,075
+Burada 2, 4, 6, 7 tane farklı adresleme modunda bakın burada adresleme modlarının isimleri verilmiş.
+
+454
+01:44:25,075 --> 01:44:33,816
+Sembolik Convention dediği işlemi göstermiş ama en açık olanı Register Transfer Formu.
+
+455
+01:44:33,816 --> 01:44:48,796
+ve her adresleme modu için operandın hangi adresten alındığı ve işlem sonunda akümülatöre hangi değerin kaydedildiğini bu alanlarda özetlemiş.
+
+456
+01:44:49,296 --> 01:45:01,055
+Aynı örnekle devam ediyorum. Yani load to accumulator instruction'ını farklı adresleme modlarında nasıl çalıştığını göstermek burada amaç.
+
+457
+01:45:01,055 --> 01:45:07,115
+İlk olarak direct addressing mode zaten az önce yaptığımız çözüm.
+
+458
+01:45:07,115 --> 01:45:18,735
+Direct addressing mode'da address field'ında bakın burada address field dediğimiz field'da veya address or number demiş.
+
+459
+01:45:18,935 --> 01:45:25,115
+Yani ben bu alanı adresleme moduna göre farklı şekilde isimlendirebilirim.
+
+460
+01:45:25,935 --> 01:45:28,115
+Bu gözde tutulan sayı 500'dü.
+
+461
+01:45:28,115 --> 01:45:35,795
+ve direct addressing mode zaten register transfer ifadesine baktığımızda da görünüyor.
+
+462
+01:45:35,795 --> 01:45:43,675
+Diyor ki memory'de adres değerinin olduğu memory gözüne git yani 500 adresine git.
+
+463
+01:45:44,155 --> 01:45:49,675
+500 adresindeki okuduğun değeri akümülatöre yüklediyor.
+
+464
+01:45:50,335 --> 01:45:56,995
+Operandın bulunduğu adres 500, akümülatöre yüklenen değer 800 olmuş oluyor.
+
+465
+01:45:58,115 --> 01:46:11,815
+Direct Addressing Mod'da. İkinci adresleme modumuz Immediate Addressing Mod. Immediate Addressing Mod'da load to accumulator diyez number demiş.
+
+466
+01:46:12,955 --> 01:46:20,815
+Ve register transfer ifadesine bakarsanız eğer akümülatöre sayının yüklenmesi gerektiğini söylüyor.
+
+467
+01:46:20,815 --> 01:46:40,475
+Number dediği şey nedir? 500'dür. Akümülatöre 500 yüklenecek. Ve peki bu sayıyı ben hangi adresten çekiyorum? 251 adresinden çekiyorum. Çünkü görüyorsunuz 250, 251. Yani bunların memori'deki adresleri bu şekilde verilmişti.
+
+468
+01:46:40,475 --> 01:47:08,015
+Evet bu immediate adres. Direct'den sonra indirect var. Bakın dikkat bu baya ilginç. Indirect addressing modda adı üstünde dolaylı diyor yani. Az önce direct'te yaptığımız işi yani memory'den memory'de adres gözüne gitmiştik. 800 sayısını bulmuştuk. 800 sayısı yine bir memory adresini gösteriyor diyor.
+
+469
+01:47:08,015 --> 01:47:16,855
+800 memory adresi, 800 adresinden çektiğim sayı 300, 300 de benim akümulatöre yüklediğim değerdir diyor.
+
+470
+01:47:17,235 --> 01:47:19,855
+Indirect addressing mod için bu.
+
+471
+01:47:20,635 --> 01:47:21,355
+Geçerli.
+
+472
+01:47:22,355 --> 01:47:30,655
+Relative addressing modda, bu relative to program counter diye geçiyor.
+
+473
+01:47:30,655 --> 01:47:33,755
+Yani hangi bir registre bağımlı iş yapıyorsunuz orada?
+
+474
+01:47:33,755 --> 01:47:39,435
+Program Counter'a bağlı olarak bir Relative Addressing işlemi var.
+
+475
+01:47:40,916 --> 01:48:02,916
+ve operandın getirildiği adrese lütfen dikkat edin. Adres artı program counter'ın gösterdiği değer. Yani biz adres field'ından 500 okumuştuk. Buna program counter'ın o anki değerini de ekliyoruz ve operandın adresini buluyoruz.
+
+476
+01:48:02,916 --> 01:48:29,735
+Şimdi şu soru sorulabilir. Adres fieldında 500 var. Program counter ne gösteriyor? Ben eğer bu komutu yürütmek için instruction'ı fetch etmişsem, instruction'ı okumuşsam artık instruction pointer bir sonraki adresi gösterir. Bu next address.
+
+477
+01:48:32,916 --> 01:48:47,996
+Instruction fetch işlemi tamamlanmıştır bu komutu yürüttüğüme göre bir sonraki adresin yani 252 adresinin orada program counter'ın gösterdiği değer olması gerekiyor.
+
+478
+01:48:47,996 --> 01:48:58,335
+Dolayısıyla efektif adres 752 olmuş oradan gitmiş akümülatörü yüklenecek olan sayıyı okumuş.
+
+479
+01:48:58,335 --> 01:49:27,815
+Evet bir sonraki adresleme modu indexed addressing mod. Indexed addressing mod şeyde assemblyde işte bir örnek verin ne olabilir? CX register üzerinden olabilir. Yok bir de DX üzerinden yapılan vardı galiba. Neyse bu şekilde
+
+480
+01:49:28,335 --> 01:49:34,355
+Bir adresleme işleminde bir index register dediğimiz register'e ihtiyaç var.
+
+481
+01:49:35,255 --> 01:49:39,695
+Address field ile yani adres değeri ile bu register toplanıyor.
+
+482
+01:49:39,855 --> 01:49:46,735
+Bu verdiği örnekte bir register'ın başlangıç değeri, initial değeri 400 olduğu için
+
+483
+01:49:46,735 --> 01:49:52,115
+address field'ı da 500'dü, operandın adresi 900 oldu.
+
+484
+01:49:52,115 --> 01:50:02,375
+ve akümülatöre yüklenen değer 900 adresinden okuduğu 200 sayısı olmuş oldu.
+
+485
+01:50:02,735 --> 01:50:11,535
+Sonra bir register adresleme modu verilmiş. Akümülatöre R1 register'ından yükleme yapılabilir diyor.
+
+486
+01:50:11,615 --> 01:50:19,255
+Bu durumda bir memory adresi yoktu. Oradan register'dan yükleme yapılmış. Akümülatöre yüklenen değer 400 oluyor.
+
+487
+01:50:19,255 --> 01:50:41,655
+ve bir de register indirect dediğimiz bir mod var. Register'ın kontenti bir memory adresini gösteriyor. Dolayısıyla memory adresi 400, 400 adresinden okuduğu operant da 700 olmuş oluyor. Bu akümülatöre yüklenen sayıyı gösteriyor.
+
+488
+01:50:41,655 --> 01:50:58,795
+Burada kısaca size adresleme modlarını özetlemek istedim. Yani 80-86 bilen arkadaşlar için zaten oldukça herhalde kolay görünen basit bir örnektir. Soru var mı acaba?
+
+489
+01:51:01,015 --> 01:51:05,575
+Hocam bütün güncel işlemciler bu adresleme modlarını destekliyor mu?
+
+490
+01:51:07,095 --> 01:51:11,335
+Valla fazlası yok. Fazlası var, eksiği yok öyle söyleyeyim.
+
+491
+01:51:11,655 --> 01:51:28,615
+Ama tabii hepsi aynı işlemcinin içinde olmak mecburiyetinde de değil. Bunlar alternatif çözümleri gösteriyor bize. Ama %90 bunları kapsıyor diyebilirim.
+
+492
+01:51:31,355 --> 01:51:32,275
+Peki.
+
+493
+01:51:33,555 --> 01:51:43,755
+Başka sorusu olan var mı bu bölümle ilgili? Özellikle bilimsel hazırlıktaki arkadaşlar bu konulara biraz sizin ekstra çalışmanız gerekir.
+
+494
+01:51:44,195 --> 01:51:58,656
+Lisansdaki öğrencilerimiz assembly bildikleri için bunları çok kullandılar. Belli bir işlemciye özgü çözümleri biliyorlar. Ama siz ilk kez tanışıyor olabilirsiniz bu kavramlarla.
+
+495
+01:51:58,656 --> 01:52:06,215
+Pekala. Şimdi şu karşılaştırmayı da yapayım ara vereceğim.
+
+496
+01:52:08,215 --> 01:52:20,256
+Instruction Set Architecture'da biz az önce RISC ve CISC'e karşılaştırması ya da iki mimariden bahsetmiştik.
+
+497
+01:52:20,256 --> 01:52:38,096
+Bu iki mimarinin en önemli farkları kompleks KISC olan mimari işte 80-86 işlemcide kullandığımız yapıda adresleme modlarının sayısı oldukça fazla.
+
+498
+01:52:39,555 --> 01:52:46,395
+Ve instruction length'i yani bir komutun uzunluğu değişik uzunluklarda olabiliyor.
+
+499
+01:52:46,395 --> 01:52:57,135
+Yani işte çok basit komutlar var. 1 byte da tutulabiliyor. Daha kompleks komutlar 2 byte ya da daha uzun olabiliyor gibi.
+
+500
+01:52:58,635 --> 01:53:10,535
+Fakat CISC tarafına baktığımız zaman adresleme modlarının sayısı sınırlı ve komut uzunlukları sabit. Hepsi aynı uzunlukta.
+
+501
+01:53:10,535 --> 01:53:18,195
+Çünkü çok böyle kompleks instrakşınlar yok, çok temel işlemler var demiştik. O yüzden bu şekilde.
+
+502
+01:53:19,015 --> 01:53:27,535
+Memory Access için RISC mimari de memoriye erişim sadece load ve store komutlarıyla sınırlandırılmış.
+
+503
+01:53:28,215 --> 01:53:34,815
+Yani ben bir add operation'ı, bir toplama işleminin operantlarından birini memoriden alamıyorum.
+
+504
+01:53:34,815 --> 01:53:59,175
+Önce onu load işlemiyle bir internal register'a taşıyıp ondan sonra işleme katabiliyorum. Ama CISC'de böyle değil. Biliyorsunuz 8086'da memori'deki bir sayı ile bir işlem doğrudan yapabiliyorsunuz. Yani bunu illa internal register'a getirme mecburiyetimiz yok işleme katmadan önce.
+
+505
+01:53:59,175 --> 01:54:08,735
+RISC işlemcilerde perform elementary operation, perform both elementary and complex operation demiş.
+
+506
+01:54:08,735 --> 01:54:14,515
+Bir de kontrol devresinin tasarımı açısından karşılaştırmak gerekir.
+
+507
+01:54:14,935 --> 01:54:19,895
+Burada hardwired bir kontrol yapısı var RISC işlemcilerde.
+
+508
+01:54:20,395 --> 01:54:24,755
+CISC'te ise micro-programmed control dediğimiz bir yapı var.
+
+509
+01:54:24,755 --> 01:54:38,776
+KISC işlemci bir mikro program yapıyla kontrol edildiği için daha esnek, daha üzerinde oynanabilir ama hardwired yapı da böyle değil.
+
+510
+01:54:38,776 --> 01:54:52,535
+Ama avantajı ne? Daha hızlı çalışması tabii ki. Fast execution demiş burada. Mikro programlı olan yapı o açıdan baktığınızda daha yavaş çalışan bir mimari yapı.
+
+511
+01:54:52,535 --> 01:55:01,155
+Yani avantajları var, dezavantajları var burada gördüğünüz gibi. Bu karşılaştırma güzel bir karşılaştırma aslında.
+
+512
+01:55:03,515 --> 01:55:09,195
+Peki sorunuz var mıdır şu ana kadar anlattıklarımla ilgili?
+
+513
+01:55:13,492 --> 01:55:24,711
+Peki, 10 dakika ara veriyorum. Sorunuz olursa arada chatte yazın lütfen. Derse başlarken sorular üzerinde konuşabiliriz.
+
+514
+02:05:06,739 --> 02:05:12,339
+Evet sevgili arkadaşlar, 10 dakika ara bitti. Nasılsınız?
+
+515
+02:05:23,539 --> 02:05:29,419
+Ahmet Zahit, sen olmasan kimse benden konuşmuyor. Teşekkür ederim.
+
+516
+02:05:31,459 --> 02:05:34,179
+Evet, Serhat da teşekkürler Serhat.
+
+517
+02:05:35,539 --> 02:05:39,479
+Lütfen sesinizi duyayım. Mikrofonu da açabilirsiniz.
+
+518
+02:05:39,800 --> 02:05:43,179
+Tuğba, teşekkür ederim cevabın için.
+
+519
+02:05:45,419 --> 02:05:49,139
+Evet, kimler bilgisayarının başında acaba?
+
+520
+02:05:52,819 --> 02:06:00,699
+Bakayım. İlk yarı hala burada mı yoksa dağıldık mı? Yarıya bulamadık hala.
+
+521
+02:06:05,555 --> 02:06:27,375
+36. Evet. Evet, çok teşekkür ediyorum. İlk yarı hala burada demek ki. Güzel. Ellerinizi kaldırdığınıza göre bir reaksiyon var. Her ne kadar benimle konuşmasanız da. Evet. Peki arkadaşlar.
+
+522
+02:06:27,375 --> 02:06:33,055
+Şimdi
+
+523
+02:06:41,427 --> 02:06:47,627
+Yine şeyden devam edelim. Şuradan. Evet.
+
+524
+02:06:50,527 --> 02:07:04,787
+İki farklı mimariden bahsettik. Instruction set architecture altında kurguyu kompleks instruction üzerine yapabiliriz. 8086 mimarisinde olduğu gibi.
+
+525
+02:07:04,787 --> 02:07:13,187
+ama onun kontrol devresi mikro program kontrol devresi olması gerekiyor dedik ve biraz daha yavaş çalışıyor.
+
+526
+02:07:13,187 --> 02:07:25,667
+RISC'te daha basit komutlar oluyor. Hardwired bir kontrol devresi var dedik. Hardwired kontrol devresi daha hızlı çalışıyor dedik.
+
+527
+02:07:25,667 --> 02:07:34,467
+Şimdi bu mimariler altında oluşturabileceğimiz komutları hızlıca geçeceğim.
+
+528
+02:07:34,788 --> 02:07:49,247
+Yine aslında assembly alan arkadaşlar biliyorlar ama bilmediğiniz komutlar da olabilir içlerinde o yüzden dikkatli dinlemenizi yine tavsiye edeceğim.
+
+529
+02:07:49,247 --> 02:08:17,347
+Veri transfer komutlarında, data transfer operationsda işlemlere baktığımızda bu transfer işlemleri memory ile bir register arasında olabilir veya prosesör registerleri ile input output device arasında bir transfer olabilir.
+
+530
+02:08:17,347 --> 02:08:33,587
+O nedenle burada data transfer instrakşınlarına baktığımız zaman load ve store instrakşınları load to register yani bir internal register'a transferden bahsediyoruz.
+
+531
+02:08:33,587 --> 02:08:41,447
+Store dediğimiz zaman veriyi depolamak yani bir rejisterdeki bir içeriği memoriye aktarmak anlamına geliyor.
+
+532
+02:08:41,447 --> 02:08:57,148
+Move instruction'ı 8086'da olan komut bu. Exchange diye bir komutumuz var. Mesela iki register arasında bir içerik değişikliği yapmak isteyebiliriz.
+
+533
+02:08:57,148 --> 02:09:11,728
+Tabi bu az önce konuştuğumuz gibi bir exchange işlemi yani işte bir R1 registry ile R2 registry arasında bir transfer gerçekleşecekse bu tek bir komutta gerçekleşmiyor
+
+534
+02:09:11,728 --> 02:09:17,868
+Bu arka tarafta nasıl yapılıyor? Bu bir mikro program çalıştırılıyor arkada
+
+535
+02:09:17,868 --> 02:09:22,668
+Önce işte R1'in içeriği bir yere temporary bir alana kaydediliyor
+
+536
+02:09:22,667 --> 02:09:35,047
+Ondan sonra R2, R1'e kaydediliyor. O geçici alana koyduğumuz veriyi R2'ye koyuyoruz. Yani arkada bunun çalışma iş şekli tek bir instruction da gerçekleşmiyor.
+
+537
+02:09:35,047 --> 02:09:46,187
+Push ve pop operation'larından bahsetmiştik. Stack üzerinde yapılan işlemler diye ve bu nasıl yürütüldüğünü de az önce konuştuk.
+
+538
+02:09:46,187 --> 02:10:00,788
+Burada yeni olan belki sizin için in ve out instructionları yani memori şeyde IO portlarına erişim için kullanılan in ve out instructionlarından bahsedilebilir.
+
+539
+02:10:02,067 --> 02:10:07,967
+Şimdi in out operationları için burada bir ayrı slide verilmiş.
+
+540
+02:10:11,347 --> 02:10:19,747
+Input and output instructions transfer data between processor registers and IO devices ports.
+
+541
+02:10:21,127 --> 02:10:38,028
+Bu giriş çıkış IO device dediğimiz device'leri hepiniz biliyorsunuz işte klavye bir input device ya da işte bir mouse input device ya da ne bileyim printer bir output device gibi.
+
+542
+02:10:38,028 --> 02:10:56,608
+Bu deviceler ile ilgili, çevre birimleri ile ilgili bir haberleşme ihtiyaç var ve işlemci registerlarıyla bu sözünü ettiğimiz cihazların portları arasında bir vira alışverişi gerçekleşiyor.
+
+543
+02:10:56,607 --> 02:11:01,207
+Bunları in ve out komutlarını kullanarak gerçekleştiriyoruz.
+
+544
+02:11:01,987 --> 02:11:10,727
+Farklı mimarilerde iki farklı şekilde bu IO işlemleri oluşturulabiliyor.
+
+545
+02:11:10,727 --> 02:11:26,227
+Birincisi independent IO veya isolated IO dediğimiz ikinci adı isolated IO dediğimiz işlemler şeklinde oluyor.
+
+546
+02:11:26,607 --> 02:11:29,767
+Ne demek bu? Nasıl çalışıyor independent IOSystem?
+
+547
+02:11:31,387 --> 02:11:37,987
+Address range assigned to memory and IOPorts are independent from each other.
+
+548
+02:11:39,487 --> 02:11:47,907
+Memory için ve IOPortları için tanımlı birbirinden bağımsız alanlar, adres bölgeleri söz konusu.
+
+549
+02:11:47,907 --> 02:11:54,807
+Bu 8086'da Intel'in 8086 işlemcisi böyle çalışıyor.
+
+550
+02:11:54,807 --> 02:12:18,467
+İkinci yapı memory mapped IO diye geçiyor. Memory mapped IO için burada assign a sub range of memory addresses for addressing IO ports demiş. İki kavramı birbirinden şöyle biraz ayıralım. Yani birinci yapıyı özetlemek gerekirse nedir? Independent IO için.
+
+551
+02:12:24,532 --> 02:12:33,551
+Şunu söyleyebilirim. Burada yer var mı? Var sayılır. Independent I.O. için az önce yaptığımız tanımı şöyle açalım.
+
+552
+02:12:35,231 --> 02:12:49,391
+Bir memory dediğimiz bir memory space'imiz var. Bu bizim işlemcimizin adres basıyla adresleyebildiğimiz bir range'de oluyor.
+
+553
+02:12:49,391 --> 02:13:05,491
+İşte efendim yine 8086 örneğini verecek olursak 8086'da adres uçlarının sayısı 20 bit dolayısıyla memory space'imiz bizim 1 megabyte
+
+554
+02:13:05,491 --> 02:13:20,392
+Bu memory space ayrı bir fiziksel alan bir de efendim IOSpace dediğimiz bir alan var ayrı bir fiziksel alan.
+
+555
+02:13:20,392 --> 02:13:28,111
+Ama bu IOSpace öyle hani memory space gibi RAM entegreleri dizilerek oluşturulmuş bir yapı değil.
+
+556
+02:13:28,111 --> 02:13:42,011
+Bu IOSpace dediğimiz alan adres bitlerinin bu alana erişmek için önce onu söyleyelim bu alana erişmek için in ve out instructionlarını kullanıyoruz.
+
+557
+02:13:45,555 --> 02:13:52,235
+8086'da ama memory space'e erişim için move instruction'unu kullanıyoruz.
+
+558
+02:13:53,735 --> 02:14:04,076
+IOSpace dediğimiz alana adres uçlarını iki şekilde kullanarak erişim söz konusu.
+
+559
+02:14:04,076 --> 02:14:26,375
+Mesela in AX, AX demeyeceğim, AL, diyez port number yazacak olursam port numarasını vererek doğrudan AL register'ına ilgili porttan bir okuma yapabiliyorum.
+
+560
+02:14:26,375 --> 02:14:46,236
+Burada port number diye verdiğim sayı 8 bitle sınırlı. Dolayısıyla benim bu 8 bitle bunu sınırlandırdığım zaman IOSpace'im ne oluyor? 256 satır oluyor. 256 byte oluyor yani.
+
+561
+02:14:46,236 --> 02:14:58,015
+Ama bu komutu ben şu şekilde de yazabiliyorum hatırlarsanız in al virgül dx diyerek dx üzerinden adresleyebiliyorum
+
+562
+02:14:58,015 --> 02:15:03,795
+Şimdi hemen dx 16 bit al 8 bit hocam ne yaptınız demeyin
+
+563
+02:15:03,795 --> 02:15:09,736
+Çünkü burada yaptığımız veri transferi 8 bitlik bir veri transferi
+
+564
+02:15:09,736 --> 02:15:27,515
+Yani okuduğum veri 8 bit ama adreslemek için, IOSpace'i adreslemek için kullandığım register 16 bit olduğu için bu IOSpace dediğim alan 2 üzeri 16 byte'dan oluşmuş oluyor.
+
+565
+02:15:27,515 --> 02:15:33,456
+Yani bu IOSpace alanını ben bu şekilde büyütmüş oluyorum.
+
+566
+02:15:33,455 --> 02:15:46,935
+ve burada tanımladığım alan 64 kilobyte olmuş oluyor eğer DX ile bunu adreslersem.
+
+567
+02:15:47,855 --> 02:15:57,295
+Benim DX ile gösterdiğim sadece burada ilgili bir adres ve bu gösterdiği adresten yine okuduğum veri 8 bitlik bir veri olmuş oluyor.
+
+568
+02:15:57,295 --> 02:16:07,435
+Neyi anlattım ben? Independent IO ya da isolated IO dediğim yapıyı anlattım. 8086 mimarisinin kullandığı çözüm bu.
+
+569
+02:16:08,215 --> 02:16:22,875
+Gördüğünüz gibi iki ayrı space tanımladık. Memory space ve IO space diye iki ayrı fiziksel alan dedik. Bunlar birbirinden independent, birbirinden bağımsız iki ayrı bölge.
+
+570
+02:16:22,875 --> 02:16:34,555
+Fakat bu bölge motherboard üzerinde yani kartla gösterebileceğim şu entegre bu alanı tutuyor diyemem.
+
+571
+02:16:34,715 --> 02:16:39,735
+Sadece bu alanda belli adresleri çözümleyen adres çözümleme devreleri var.
+
+572
+02:16:40,155 --> 02:16:44,675
+Onları bir anakart üzerinde görebilirsiniz.
+
+573
+02:16:44,675 --> 02:16:51,675
+Bu çözümleri mikro işlemciler dersinde detaylı olarak göreceğiz.
+
+574
+02:16:51,675 --> 02:17:00,675
+göreceğiz, IO portları üzerinde işlem yapacağız. Şimdilik sadece bu kadar söyleyeceğim. Independent IO nedir'i anlattım.
+
+575
+02:17:01,075 --> 02:17:18,056
+İkinci çözüm Memory Mapped IO çözümü. Memory Mapped IO'da ise böyle bir ayrı alan yok. Tek bir space var. Hem memory için hem de IO işlemleri için aynı alan içerisinde belli bölgeleri
+
+576
+02:17:18,056 --> 02:17:25,936
+bu amaçla belli adres alanlarını I.O. için belli bir adres bölgesini memory için kullanıyor.
+
+577
+02:17:27,216 --> 02:17:30,856
+Memory mapped I.O. dediğimiz yapıda.
+
+578
+02:17:33,175 --> 02:17:42,895
+Evet, I.O. portları ve portlar üzerinde okuma işlemleri nasıl yapılırı böylece kısaca özetlemiş olduk.
+
+579
+02:17:44,340 --> 02:17:56,379
+Instruction sette data transfer instructionlerinden sonra ikinci başlığımız data manipulation instructions, veri üzerinde işlem yapma.
+
+580
+02:17:56,379 --> 02:18:11,639
+Ne işlemleri yapabiliyoruz? Arttırma, eksiltme, toplama, çıkartma, çarpma, bölme, her mimari de olmayabilir. Özellikle multiplication ve division işlemleri için söylüyorum.
+
+581
+02:18:11,639 --> 02:18:22,099
+Add with carry, subtract with borrow veya subtract reverse yani A-B değil B-A yap gibi.
+
+582
+02:18:23,439 --> 02:18:27,939
+Negate, negatifini alma işlemi.
+
+583
+02:18:27,939 --> 02:18:30,439
+Bunlar aritmetik işlemler.
+
+584
+02:18:30,619 --> 02:18:34,840
+Lojik işlemler tarafında neler var bakalım.
+
+585
+02:18:34,840 --> 02:18:51,719
+Clear, set, complement, clear, set, complement, and, or, xor, clear carry, set carry, complement carry gibi lojik işlemler mevcut.
+
+586
+02:18:51,719 --> 02:19:03,500
+Shift instruction'larına baktığımızda ise shift işlemleri, burası şöyle gruplandıralım.
+
+587
+02:19:03,499 --> 02:19:17,959
+Lojik shift işlemleri, aritmetik shift işlemleri ve rotate işlemleri, rotate with carry, carry ile birlikte rotate işlemleri şeklinde dört gruba ayırabiliriz.
+
+588
+02:19:17,959 --> 02:19:25,779
+Bunlar içerisinde genel bir açıklama yapmak gerekirse, var aşağıdaki tabloda güzel.
+
+589
+02:19:25,779 --> 02:19:42,019
+Bu aşağıdaki şeyde typical shift instructions'da lojik işlemleri, aritmetik işlemleri, rotate, rotate with carry işlemlerini vermiş.
+
+590
+02:19:42,020 --> 02:19:45,179
+Burada dikkatinizi çekmek istediğim bir nokta şu.
+
+591
+02:19:45,820 --> 02:19:58,200
+Lojik shift demek sağa ya da sola shift işleminde serial input yoluyla gelen verinin sıfır olması anlamına geliyor.
+
+592
+02:19:58,660 --> 02:19:59,959
+Lojik shift işlemlerinde.
+
+593
+02:20:00,759 --> 02:20:04,560
+Shift right demiş sağa doğru shift işlemi yapıyoruz.
+
+594
+02:20:04,560 --> 02:20:06,739
+Ok sağa yönlenmiş.
+
+595
+02:20:07,119 --> 02:20:11,679
+O zaman ne olacak? Sayının yüksek anlamlı kısmına dışarıdan bir giriş olacak.
+
+596
+02:20:12,019 --> 02:20:19,979
+Bu serial input dediğimiz inputun sıfır olması gerekiyor.
+
+597
+02:20:20,059 --> 02:20:22,659
+Lojik işlemlerde, lojik shift işlemlerinde.
+
+598
+02:20:23,459 --> 02:20:39,219
+Lojik shift left dediği işlemde ise sola shift işlemi yaparken de yine burada serial inputun sıfır olması gerekiyor.
+
+599
+02:20:39,219 --> 02:20:42,599
+Buna bu kalsın aklınızda.
+
+600
+02:20:42,679 --> 02:20:47,399
+Lojik shift işlemlerinde seri yolla gelen veri hep sıfır olur.
+
+601
+02:20:47,959 --> 02:20:49,799
+Tabii attığı veriyi de ne yapıyor?
+
+602
+02:20:49,919 --> 02:20:50,719
+Carry'e koyuyor.
+
+603
+02:20:50,859 --> 02:20:52,499
+Yani bu şey standart.
+
+604
+02:20:53,519 --> 02:20:59,799
+Bir de lojik bu shift işlemlerinin şöyle bir yorumunu yapmamız gerekiyor.
+
+605
+02:20:59,799 --> 02:21:14,379
+Eğer ben sayıyı shift right deyip sağa doğru shift ediyorsam bu işlemin anlamı ne arkadaşlar?
+
+606
+02:21:14,539 --> 02:21:17,759
+Bir bit sayıyı sağa kaydırmak ne anlama gelir?
+
+607
+02:21:17,919 --> 02:21:22,859
+Hani bir sayının değeri üzerindeki etkisi nedir?
+
+608
+02:21:23,572 --> 02:21:25,031
+İkiye bölmek hocam.
+
+609
+02:21:25,411 --> 02:21:26,891
+Süper, teşekkür ediyorum.
+
+610
+02:21:26,911 --> 02:21:27,932
+İkiye bölmek ve aşağıya yuvarlama.
+
+611
+02:21:28,431 --> 02:21:30,572
+İkiye bölmek, evet aşağıya yuvarlama.
+
+612
+02:21:30,671 --> 02:21:35,591
+Çünkü ne yapıyorsunuz? O son biti dışarı attığınız için şey gidiyor oradan.
+
+613
+02:21:38,032 --> 02:21:40,651
+Yuvarlama dediğinizde onu kastediyorsunuz.
+
+614
+02:21:41,012 --> 02:21:44,811
+Shift-right işlemi demek, sayıyı ikiye bölmek demek.
+
+615
+02:21:47,051 --> 02:21:47,851
+Güzel.
+
+616
+02:21:49,371 --> 02:21:52,531
+Peki, shift-left işlemi ise,
+
+617
+02:21:53,572 --> 02:22:02,891
+Şimdi burada şu yön göstereyim yine hani oku neyi anlama geliyor gibi yanlış yorumlanmasın.
+
+618
+02:22:02,891 --> 02:22:07,531
+Sola shift işlemi yapmak demek de 2 ile çarpmak demek.
+
+619
+02:22:09,671 --> 02:22:19,252
+Güzel. Şimdi burada özellikle aritmetik işlemler yaparken bu önem kazanıyor. Neden biliyor musunuz?
+
+620
+02:22:19,252 --> 02:22:46,911
+Çünkü benim işaretli sayılarım var ve bu işaretli sayı mesela sağa doğru shift ederken buradaki örnekte arithmetic shift right operation'da sağa doğru shift ederken en yüksek anlamlı bitte yer alan işaret biti sayıyı sağa doğru bir bit shift ettiğimde ikiye bölmüş oluyorum.
+
+621
+02:22:46,911 --> 02:23:02,011
+Sayının işaret bitinin değişmemesi gerekir. Sayı sadece ikiye küçülecek. İkiye bölünecek ve küçülecek. Yani burada bir işaret değişimin olmaması gerekir. O yüzden arithmetic shift right operation'da dikkat.
+
+622
+02:23:02,011 --> 02:23:10,311
+Sine biti alınmış, tekrar kendi üzerine load edilmiş, yüklenmiş görüyorsunuz. Ki işareti bozulmasın diye.
+
+623
+02:23:10,311 --> 02:23:19,612
+Peki sola shift işleminde, arithmetic shift left operation'da, burası işte sıkıntılı nokta burası
+
+624
+02:23:19,612 --> 02:23:31,011
+Eğer elinizde işaretli bir sayı varsa ve sayıyı sola doğru arithmetic shift işlemine alırsanız eğer
+
+625
+02:23:31,011 --> 02:23:50,151
+sayının işaret bitinin dışarı taşması ihtimali oluyor ve sayının elimizdeki register mesela 8 bitlik register ise 8 bitlik register da artık ifade edilememesi problemiyle karşı karşıya oluyor.
+
+626
+02:23:50,151 --> 02:23:57,711
+O yüzden arithmetic shift left operation'da taşma var mı kontrolü yapmamız gerekiyor.
+
+627
+02:23:57,711 --> 02:24:06,012
+Yani şu durumda bir overflow işleminin check edilmesi gerekiyor.
+
+628
+02:24:08,191 --> 02:24:11,211
+Taşma olup olmadığını nasıl test ediyoruz?
+
+629
+02:24:11,471 --> 02:24:16,191
+Hemen onu anlatayım. Var mı? Burada örnek koymamışız onunla ilgili.
+
+630
+02:24:21,191 --> 02:24:24,031
+Taşma işlemini nasıl kontrol ederiz?
+
+631
+02:24:24,131 --> 02:24:25,172
+Şöyle söyleyelim.
+
+632
+02:24:25,171 --> 02:24:44,371
+8 bitlik bir register'ınız var. En yüksek anlamlı bit işareti tutuyor dedik. Bu sign biti bizim işte burası eğer sıfırıncı bitse, şurası sıfırsa burası 7. bit, 8 bitle ifade ettiğimi varsayayım.
+
+633
+02:24:44,372 --> 02:25:08,092
+Register'ın 7. biti. Şunu yapıyorsunuz. Sola doğru shift ettiğinizde 6. bit 7. bitin yerine geliyor. Eğer bu ikisi birbiriyle aynı ise taşma olmaz. Birbirinden farklı ise taşma olur.
+
+634
+02:25:08,091 --> 02:25:13,591
+O zaman bunu hangi kapı ile ifade edebilirim acaba?
+
+635
+02:25:13,591 --> 02:25:21,591
+Register'ın 7 numaralı biti ile 6 numaralı biti birbiriyle aynı ise...
+
+636
+02:25:27,156 --> 02:25:36,996
+ikisi birbiriyle aynı ise taşma olmayacak, birbirinden farklı ise taşma olacak. Yani XOR ile ben bu overflow işlemini ifade edebilirim.
+
+637
+02:25:36,996 --> 02:25:51,195
+Shift işleminden önce, bakın sola doğru aritmetik shift işlemini yapmadan önce, register'ın 7 numaralı biti ile 6 numaralı biti birbirinden farklı ise,
+
+638
+02:25:51,195 --> 02:26:01,595
+bu işlemin sonunda taşma oluşabilir ve bu taşmanın olup olmadığını kontrol etmek için buradaki işlemi yapmam gerekir.
+
+639
+02:26:01,675 --> 02:26:08,415
+R7 ve R6 arasında bir XOR işlemiyle bunu kontrol etmem gerekir.
+
+640
+02:26:10,435 --> 02:26:17,615
+Çünkü sola doğru kaydırmak demek, 2 ile çarpmak demek, sayı büyüyor.
+
+641
+02:26:17,615 --> 02:26:23,496
+Artık o registerda bu sayıyı ifade edemiyorum anlamına geliyor.
+
+642
+02:26:24,855 --> 02:26:28,975
+Rotate işleminde fazla bir şey yok.
+
+643
+02:26:29,355 --> 02:26:43,075
+Biliyorsunuz rotate işleminde sağa doğru bir rotate işleminden bahsediyorsak en düşük anlamlı bitten atılan değer en yüksek anlamlı bite geri yükleniyor.
+
+644
+02:26:43,075 --> 02:26:51,175
+veya burada sola doğru olabilir. En yüksek anlamlı bit, en düşük anlamlı bitin yerine geliyor.
+
+645
+02:26:51,935 --> 02:26:58,236
+Rotate with carry dediğimiz zaman bu zinciri carry'i katarak yapıyoruz.
+
+646
+02:26:58,236 --> 02:27:10,715
+Sağa doğru bir rotate with carry işleminde en düşük anlamlı biti C'ye, C'nin değerini register'ın en yüksek anlamlı bitine yerleştiriyoruz.
+
+647
+02:27:10,715 --> 02:27:29,635
+Bu yapıyı böyle gözünüzün önüne getirmenizi tavsiye ederim ve aritmetik shift operationlarında sadece sola öteleme sırasında bir taşma kontrolüne ihtiyaç vardır. Bunu bilmenizi istiyorum.
+
+648
+02:27:29,635 --> 02:27:43,415
+Program kontrol komutlarında branch, jump, call, return, from procedure, compare ve test gibi komutlar yer alıyor.
+
+649
+02:27:43,415 --> 02:27:54,955
+Bunlar program kontrol instruction dediğimiz komutlarda koşullu ya da koşulsuz bu dallanma işlemleri var.
+
+650
+02:27:54,956 --> 02:28:17,075
+jump işlemleri bir adresten başka bir adrese program counter'ı taşıyabiliyorsunuz. Bir alt programı çağırabiliyorsunuz. O alt program tamamlandığında buradan geri dönüş için alt programın en son satırına bir return koymanız gerekiyor.
+
+651
+02:28:17,075 --> 02:28:25,415
+ve yine program akışını kontrol eden ve bunu kontrol etmek için kullanılan compare ve test instruksiyonları var.
+
+652
+02:28:25,415 --> 02:28:31,036
+Compare instruksiyonu iki register kontentini karşılaştırıyor.
+
+653
+02:28:31,475 --> 02:28:38,575
+Mesela compare R1, R2 dediğiniz zaman bu işlemi R1'den R2'yi çıkararak yapıyor.
+
+654
+02:28:38,575 --> 02:28:53,335
+R1-R2 işlemini yapıyor ama işlem sonucunu herhangi bir register'a aktarmadığı için bir register içeriğinde değişiklik olmuyor.
+
+655
+02:28:53,335 --> 02:28:58,935
+Sadece Update Status
+
+656
+02:29:00,020 --> 02:29:23,899
+registers. Yani durum bitlerini güncelliyor bu compare işlemi sırasında. Test işlemi de benzer şekilde. Test R1, R2 dediğimizde R1 ve R2 arasında bir end işlemi yapıyor. End işleminin sonucunu herhangi bir register'a yazmıyor. Sadece durum bitlerini güncelliyor.
+
+657
+02:29:23,899 --> 02:29:32,999
+Mesela R1 ve R2 register'ının endlediğimizde bütün bitler sıfır çıkıyorsa Z biti bir oluyor gibi.
+
+658
+02:29:37,556 --> 02:30:04,595
+Geldik Conditional Branch Instructions'a. En önemli konu en sona kaldı ama koşullu dallanma komutlarında burada kullandığımız Branch if zero, Branch if not zero. Branch if zero demek zero flag set olmuşsa eğer burada bir dallanma gerçekleşecek demek Z1 mi diye kontrol ediliyor.
+
+659
+02:30:04,595 --> 02:30:15,695
+Branch if no zero, not zero. Branch if carry, carry biti birse bir dallanma işlemi gerçekleşiyor.
+
+660
+02:30:15,695 --> 02:30:33,695
+Burada branch if minus sayı negatifse bir dallanma işlemi gerçekleşiyor ve overflow biti birse şeklinde bir conditional branch instructionlarını bu şekilde sıralayabiliriz.
+
+661
+02:30:34,595 --> 02:30:50,435
+Şimdi burada iki tane önemli tablo var. Bunların üzerinde çok duracağım. İkisiyle ilgili de örnek vereceğim size. Bu örnekleri birazdan dersin duvarına yükleyeceğim. Mutlaka çözümlerine şöyle bir bakmanızı rica edeceğim.
+
+662
+02:30:50,435 --> 02:31:09,795
+Arkadaşlar conditional branch instruction'larında eğer işaretsiz sayılarla çalışıyorsak ne biti yani işareti gösteren bir bit diye bir bite ihtiyacımız yok.
+
+663
+02:31:10,575 --> 02:31:17,335
+Overflow diye bir taşma problemimiz yok işaretsiz sayılarla çalışıyorsak.
+
+664
+02:31:17,335 --> 02:31:31,335
+Bu durumda şöyle düşünün unsigned numbers dediğim 8 bitlik bir register var. Bu 8 bitlik registerda ben işaret biti yok. 0'dan 255'e kadar bütün değerleri tutabiliyorum.
+
+665
+02:31:32,615 --> 02:31:41,655
+Signed numbersda 8 bitlik bir registerdan bahsediyorum. En yüksek anlamlı bit işaret biti oluyordu hatırlayın.
+
+666
+02:31:41,655 --> 02:31:46,556
+Eksi 128 ile artı 127'ye kadar değer alıyor.
+
+667
+02:31:47,436 --> 02:31:57,115
+Sıfır sanki işareti pozitifmiş gibi göründüğünden pozitif sayılar 128'e kadar değil 127'ye kadar değer alıyor.
+
+668
+02:31:57,115 --> 02:32:11,716
+ve işaretli sayılarla işlem yaparken N biti yani işaret biti önemli, taşma önemli, Z biti önemli bizim için.
+
+669
+02:32:12,335 --> 02:32:21,436
+İşaretsiz sayılarla işlem yaparken ise sadece carry biti ve Z biti, zero bit kullanılıyor.
+
+670
+02:32:21,435 --> 02:32:35,875
+Şimdi buradaki işlemlere bakacak olursak her işlem için mesela branch if above yani A büyük B midir karşılaştırmasını yapıyoruz.
+
+671
+02:32:35,875 --> 02:32:42,735
+Burada hemen onu da söyleyeyim şu tablonun en altında bir deep note var bakın deep nota dikkat.
+
+672
+02:32:43,115 --> 02:32:51,375
+Bu tabloda diyor C diye gördüğünüz değerler aslında borrow bitini gösterir diyor ve borrow biti carry bitinin komplementidir.
+
+673
+02:32:51,435 --> 02:33:01,535
+Bakın, C-Bitinin komplementidir. O yüzden buradaki C-Bitini değerlendirirken ona göre değerlendirmeniz gerekiyor.
+
+674
+02:33:01,535 --> 02:33:15,795
+A-B-B kontrolünü yaparken borç bitinin sıfır olması, Z-Bitinin sıfır olması durumunda bu sıfır çıkar gibi.
+
+675
+02:33:15,795 --> 02:33:26,715
+Bu tabloda her bir koşullu dallanmada hangi durum bitinin ne olduğu nasıl kontrol ediliyor check edilen durumu gösteriyor.
+
+676
+02:33:27,155 --> 02:33:34,795
+Yani C or Z dediği işlemin sonucu sıfır mı diye bakacak. Eğer sıfırsa A büyük B'dir diyecek.
+
+677
+02:33:35,572 --> 02:33:44,471
+Cary biti eğer sıfırsa A büyük eşit B diyecek. Ama bu Cary dediğim aslında Barrow biti. Ona da dikkat.
+
+678
+02:33:46,211 --> 02:34:02,291
+Evet, bu şekilde bir tablomuz var ve buna göre benim işlemleri, conditional branch instructionlarını kontrol etmem, kullanmam gerekiyor.
+
+679
+02:34:02,291 --> 02:34:20,131
+Burada tabloda bir değerlendirme yapmak istiyorum. Özellikle signed işaretli sayılarda A büyük B kontrolünü yaparken burada negateli overflow bitleriyle ilgili şöyle bir işlem vermiş.
+
+680
+02:34:20,131 --> 02:34:28,991
+Negateli overflow bitlerinin XOR işlemin sonucu sıfır çıkmalı. Bu durumda A büyük B'dir diyebiliyorum.
+
+681
+02:34:28,991 --> 02:34:36,851
+Şimdi bunu size biraz anlatmak istiyorum. Neden bu şekilde yorumladığımızı? Negate ve overflow bitlerini
+
+682
+02:34:42,868 --> 02:34:58,888
+Şimdi bu işaretli sayılarda bu işlem yapılmadan önce A ve B önce bir karşılaştırılıyor. Yani compare A virgül B diyorsunuz. Ondan sonra branch if greater BG dediğim instruction'ı yazıyorsunuz.
+
+683
+02:34:58,888 --> 02:35:10,887
+Dolayısıyla aslında şurada gördüğümüz durum bitleri N, V ve Z dediğim durum bitleri bir önceki komutta çalıştırdığım compare instruction ile update edilmiş.
+
+684
+02:35:10,887 --> 02:35:24,607
+Yani A-B işlemi yapılarak güncellenmiş. Ve A-B işleminin sonucu eğer pozitif çıkıyorsa AB'den büyüktür. Doğru mu?
+
+685
+02:35:24,607 --> 02:35:53,368
+Tabi bu arada şuna dikkat etmem gerekiyor. Taşma var mı? Kontrolünü yapmam gerekiyor. Bu XOR işleminde eğer işlemin sonucu pozitif çıkmış ve taşma yoksa A büyük B'dir. Şuradaki işlemin sonucu sıfır çıkar.
+
+686
+02:35:53,368 --> 02:36:01,348
+Eğer N biti sıfırsa ama overflow varsa bu şu demek oluyor.
+
+687
+02:36:02,908 --> 02:36:15,787
+İşlemin sonucu pozitif gibi görünüyor ama işaret biti aslında dışarı taştı ve gördüğün işaret biti gerçek işaret biti değil yani sıfır değil aslında bu birdir diyor.
+
+688
+02:36:15,787 --> 02:36:26,207
+ve bu durumda aslında A küçük B'dir. Şurada A büyük B'yi söylemiştik. Bunda A küçük B'yi o yüzden söyleyebiliyoruz.
+
+689
+02:36:26,987 --> 02:36:44,147
+Sonra negate biti 1 ise yani işlem sonucu negatif çıkıyorsa, overflow biti de 0 ise yani işlemde bir taşma olmadığını söylüyorsa bize bu durumda yine A küçük B'dir.
+
+690
+02:36:44,147 --> 02:36:54,147
+Neden? İşte işlem sonucu negatif çıkıyor çünkü. Ancak ne zaman olur bu? AB'den küçükse A-B işleminin sonucu o zaman negatif çıkar.
+
+691
+02:36:54,147 --> 02:37:05,507
+Ve son satıra bakın. Negate biti 1 yani işlem sonucunun size negatif olduğunu söylüyor ama bir tarafta da taşma biti 1 çıkmış.
+
+692
+02:37:05,507 --> 02:37:19,787
+Bu da diyor ki o gördüğünüz işaret biti doğru değil gerçek işaret biti dışarı taştı sayı aslında pozitif. Dolayısıyla burada biz A büyük B'yi söyleyebiliyoruz.
+
+693
+02:37:19,787 --> 02:37:36,607
+N ve V bitleri arasındaki XOR işleminin sonucunun sıfır çıkması durumunda. Z biti de sıfırsa A büyük B'yi söyleyebiliyoruz demiştik. Bu tablo ile ben size kısaca bunu özetlemek istemiştim aslında.
+
+694
+02:37:36,607 --> 02:37:54,027
+Bu tablonun tabii ki karşınızda olacağını biliyorsunuz sınavda. Evet kullanacaksınız ama tablo bize ne anlatıyor, bu tablo nasıl oluşturulmuş biraz bunu özetlemek de amacım.
+
+695
+02:37:54,027 --> 02:37:59,367
+Şimdi şeyleri indirmemişiz.
+
+696
+02:38:18,899 --> 02:38:21,100
+Şimdi 43, 03.
+
+697
+02:38:23,439 --> 02:38:24,779
+Aynı değil bunlar, tamam.
+
+698
+02:38:27,979 --> 02:38:36,679
+İki tane örneğimiz var. Bu örnek, unsigned numbers. Güzel. İşaretsiz sayılarla ilgili olan örnek. Görebiliyorsunuz değil mi?
+
+699
+02:38:38,519 --> 02:38:39,679
+Evet hocam.
+
+700
+02:38:43,160 --> 02:38:47,619
+Peki. Kitabın arkasındaki problemlerden biri bu.
+
+701
+02:38:47,619 --> 02:39:00,599
+Diyor ki, the program in a computer compares two unsigned numbers A and B by performing a subtraction A minus B and updating the status bits.
+
+702
+02:39:01,659 --> 02:39:09,719
+Bize burada A ve B sayıları için iki tane sayı vermiş. Burada kalem işe yaramadı, çalışmadı.
+
+703
+02:39:10,659 --> 02:39:17,019
+A ve B sayıları verilmiş. 8 bit de ifade ediliyor. Binary karşılıkları verilmiş.
+
+704
+02:39:17,619 --> 02:39:22,339
+A şıkkında diyor ki evaluate the difference and interpret the binary result demiş.
+
+705
+02:39:23,299 --> 02:39:28,039
+Şimdi A'dan B'yi çıkartacağım.
+
+706
+02:39:28,199 --> 02:39:29,779
+Evaluate the difference dedi.
+
+707
+02:39:30,019 --> 02:39:34,699
+And interpret the binary result işlemin sonucunu yorumla diyor.
+
+708
+02:39:35,039 --> 02:39:43,260
+Binary olarak A'dan B'yi çıkartmak demek A artı tools complement of B değil mi?
+
+709
+02:39:43,559 --> 02:39:44,679
+Yani ne yapıyoruz?
+
+710
+02:39:44,779 --> 02:39:46,819
+B sayısının ikiye tümleyenini alıyoruz.
+
+711
+02:39:46,819 --> 02:39:53,080
+A ile B'yi topluyoruz ve işlem sonucunda A-B işlemini yapmış oluyorum.
+
+712
+02:39:53,080 --> 02:39:58,080
+Burada gördüğümüz aşağıda gördüğümüz işlemde ben önce A sayısını yazdım.
+
+713
+02:39:58,599 --> 02:40:01,699
+Mouse'u hareket ettirince görebileceğiz mi bakayım?
+
+714
+02:40:02,019 --> 02:40:04,179
+Mouse'u hareket ettirerek göstereyim.
+
+715
+02:40:04,580 --> 02:40:07,679
+A sayısını yazdım, yukarıda bize verilen A sayısını.
+
+716
+02:40:08,099 --> 02:40:11,279
+Daha sonra B sayısının ikiye tümleyenini aldım yazdım.
+
+717
+02:40:11,939 --> 02:40:15,059
+İkiye tümleyenini kestirme yoldan nasıl yapıyorduk?
+
+718
+02:40:15,059 --> 02:40:22,439
+sağdan başlıyoruz. İlk biri görene kadar aynı. İlk biri gördükten sonra gördüğüm sayıların komplementini alıyorum.
+
+719
+02:40:22,539 --> 02:40:34,239
+Kestirme yoldan böyle de yapabilirsiniz. Sonra bu iki sayıyı topluyorum. Toplama işlemi sonucu bir çıkmış ve bir, carry biti de bir çıkmış gördüğünüz gibi.
+
+720
+02:40:34,239 --> 02:40:39,459
+Burada C bitinin bir olması demek, barobitinin sıfır olması demek. Tamam.
+
+721
+02:40:39,459 --> 02:40:53,659
+C bit yani baro biti keri bitinin komplementi çünkü. Dolayısıyla sıfır çıktı. Ne demek bu? Ben A-B işlemini yaparken borç almam gerekmedi demek.
+
+722
+02:40:53,859 --> 02:41:07,579
+Sonra bunun sağlamasını yapmak için ben verilen A ve B sayılarının desimal karşılıklarını da hesapladım. Sağ tarafa yazdım. A sayısı 93, B sayısı 92'ymiş.
+
+723
+02:41:07,579 --> 02:41:13,679
+Bu iki sayının farkını aldığımda A-B işlemini yaptığımda sonuç 1 çıkıyor.
+
+724
+02:41:15,219 --> 02:41:23,739
+Buradan zaten hani şeyi de kıyaslamış oluyorum işlem sonucu 1 mi çıktı? Evet 1 çıktı.
+
+725
+02:41:24,639 --> 02:41:27,479
+Baro var mı? Borç alındı mı? Hayır alınmadı.
+
+726
+02:41:30,479 --> 02:41:34,159
+Sonra sorunun B şıkkında diyor ki
+
+727
+02:41:34,159 --> 02:41:50,739
+Determine the values of status bits. Zaten yukarıda yazdık borrow bitini ve z bitini. Z biti ne zaman 1 oluyordu? İşlem sonunda bütün bitler 0 olsaydı z biti 1 olacaktı. Ama burada böyle bir durum yok.
+
+728
+02:41:50,739 --> 02:42:06,219
+C şıkkında ise diyor ki list the conditional branch instruction from table 11.9 az önce beraber gördüğümüz tablo that will have a true condition.
+
+729
+02:42:06,219 --> 02:42:13,699
+Burada o tabloda gördüğümüz işte A büyük B işlemi için şu
+
+730
+02:42:14,100 --> 02:42:36,419
+kontrolü yap diyordu bana. C artı Z eşit sıfır mı? Bunu eğer sağlıyorsa A büyük B için true diyeceğim. Bakıyorum carry biti, tabii buradaki carry here is borrow bit demiş. Bu tabloda gördüğümüz bütün C bitlerini B biti olarak kullanacağım.
+
+731
+02:42:36,419 --> 02:43:01,680
+B ile Z'yi orladığımda sıfır çıkıyor mu? Çıkıyor. O zaman A büyük B koşulu doğrudur diyorum. Sonra ikinci kontrolü yapıyorum. Branch if higher or equal. Bunun için sadece şeye bakıyor. C biti sıfır mı diye bakıyorum. Yani B biti sıfır mı diye. Evet sıfır. O zaman bu koşul da sağlanıyor. True diyorum.
+
+732
+02:43:01,679 --> 02:43:12,779
+Üçüncü satırda branch if lower instruction'ında A küçük B ise kontrolü yapılacak.
+
+733
+02:43:12,939 --> 02:43:14,459
+Buna göre dallanma yapacak.
+
+734
+02:43:14,619 --> 02:43:16,179
+Bu koşul gerçekleşiyor mu?
+
+735
+02:43:16,239 --> 02:43:17,559
+A B'den küçük mü?
+
+736
+02:43:17,559 --> 02:43:20,960
+Bunu kontrol eden şey C eşit 1 mi kontrolü?
+
+737
+02:43:20,999 --> 02:43:22,519
+C eşit 1 mi diye bakıyorum.
+
+738
+02:43:23,119 --> 02:43:24,639
+Yani B eşit 1 mi demek.
+
+739
+02:43:25,180 --> 02:43:26,159
+B eşit 1 mi?
+
+740
+02:43:26,399 --> 02:43:27,079
+Hayır değil.
+
+741
+02:43:27,279 --> 02:43:28,419
+Bu koşul yanlış.
+
+742
+02:43:28,419 --> 02:43:40,780
+false dediğim koşul sağlanmıyor anlamına geliyor. Sağ tarafta yazdıklarımız bizim elimizdeki durum bitlerinden bulduğumuz sonucu gösteriyor.
+
+743
+02:43:41,379 --> 02:43:50,540
+Branch if lower or equal sağlıyor mu? Hayır. Branch if equal koşulunu sağlıyor mu? Hayır. Sağlamıyor. Bu koşullar için false üretiyorum.
+
+744
+02:43:50,539 --> 02:44:04,279
+Üst satırdaki iki tanesi için true sonuç üretiyorum. Bu koşullar sağlandı, bu koşullar sağlanmadı. Bu kontrolü yaptığımda bunun sağlanıp sağlanmadığını görebiliyorum.
+
+745
+02:44:23,507 --> 02:44:25,047
+Aynı şeymiş.
+
+746
+02:44:38,004 --> 02:44:52,643
+Burada ise bir başka örnek var. Bu örnek biraz daha geniş hem de şeyi de kapsıyor içine. İki şık var bu problemde. Bu bir sınav sorusuymuş. Eski sınav sorularından biri.
+
+747
+02:44:52,643 --> 02:44:58,403
+Diyor ki, instruction set architecture ile ilgili A şıkkında,
+
+748
+02:44:58,403 --> 02:45:10,063
+Convert the following decimal numbers to signed binary with 8 bits each. Perform the arithmetic shift left and right operations and indicate the overflow bit.
+
+749
+02:45:10,583 --> 02:45:25,843
+Bize iki tane sayı verilmiş bu sayılar için. Biri 62 işaretli sayı, öbürü eksi 75. Bu sayılar için arithmetic shift left operation'ı,
+
+750
+02:45:25,844 --> 02:45:32,564
+Aritmetik shift left operation'ı 2 ile çarpmak demek sayı büyüyebilir ve taşma oluşabilir demiştik.
+
+751
+02:45:33,163 --> 02:45:38,103
+62'yi önce binary, 8 bit binary bir sayı olarak yazıyorum.
+
+752
+02:45:38,103 --> 02:45:41,463
+Daha sonra aritmetik shift left operation'ı yapıyorum.
+
+753
+02:45:42,143 --> 02:45:54,024
+Ve bu işlem yapılmadan önce bakın şurada işaret biti ile yanındaki biti kontrol ediyorum.
+
+754
+02:45:54,023 --> 02:46:09,703
+İkisi birbiriyle aynı ise shift işlemi sonunda işareti değişmez. Az önce bir XOR işlemiyle bunu kontrol ettiğimizi söylemiştik. Bu iki bit birbiriyle aynı ise overflow sıfır çıkar. Burada bulduğumuz gibi.
+
+755
+02:46:09,703 --> 02:46:30,963
+Burada aritmetik şifte left and right operation hem de right'ı da yapmış. Right'da zaten taşma olmaz. Bunun kontrolüne bile gerek yok. İkiye bölüyorsunuz. Böldüğünüz sayı küçülür sadece. Büyümez. Dolayısıyla böyle bir risk zaten yok. Sadece sola ötelemede böyle bir risk olabilir.
+
+756
+02:46:30,963 --> 02:46:35,023
+Ama 75 için eksi 75'i yazıyoruz.
+
+757
+02:46:35,623 --> 02:46:38,523
+Önce burada çok hata yapılıyor.
+
+758
+02:46:38,663 --> 02:46:43,203
+O yüzden mutlaka bunu tekrar söyleyeceğim.
+
+759
+02:46:43,923 --> 02:46:47,024
+Önce 75 sayısını binary olarak yazarız.
+
+760
+02:46:47,164 --> 02:46:51,683
+Daha sonra bunun tuz komplementini alarak eksi 75'i buluruz arkadaşlar.
+
+761
+02:46:52,343 --> 02:46:52,823
+Tamam mı?
+
+762
+02:46:53,224 --> 02:46:56,524
+Bakın burada yazdığım, yukarıda yazdığım artı 75.
+
+763
+02:46:56,524 --> 02:47:01,224
+Bunu bulduktan sonra bunun tuz komplementini bulmak istiyorum.
+
+764
+02:47:01,464 --> 02:47:05,104
+Yani komplementini alıp bir eklediğimde eksi yetmiş beşi yazarım.
+
+765
+02:47:05,104 --> 02:47:09,843
+Çok yapılan hatalardan biri şu. Çok gördüğüm hatalardan biri.
+
+766
+02:47:10,444 --> 02:47:16,824
+Yüksek anlamlı biti sadece bir yaparak bu sayıyı eksi yetmiş beş yaptığını sanıyor arkadaşlar.
+
+767
+02:47:17,104 --> 02:47:18,984
+Böyle olmuyor. Lütfen dikkat.
+
+768
+02:47:18,983 --> 02:47:40,084
+Gördüğünüz gibi eksi yetmiş beş işaret biti bir negatif olduğunu gösteriyor. Bu sayı negatifse eğer ben bunun değerini hesaplamak için yine aynı mantıkla tuz komplementini alıyorum ve ondan sonra sayı değerini bulup bu sayı eksi yetmiş beştir diyorum.
+
+769
+02:47:40,084 --> 02:47:57,903
+Peki benim yapacağım işlem önce bir shift left operation yapacağım. Öteleme işlemi yapmadan önce register'ın en yüksek anlamlı bitiyle yanındaki biti XOR işlemine alıyorum. İkisi birbirinden farklı ise burada bir taşma oluşur diyorum.
+
+770
+02:47:57,903 --> 02:48:10,183
+Ve gördüğünüz gibi mesela shift işlemini gerçekleştirdiğimizde sola shift işlemini aritmetik shift'te ne oluyor?
+
+771
+02:48:11,083 --> 02:48:19,903
+Buradaki sıfır en yüksek anlamlı bite geliyor ve sayının işareti pozitif gibi görünüyor.
+
+772
+02:48:21,299 --> 02:48:36,419
+Ama ben eksi 75 sayısını shift ettiğimde demek ki artık bu aritmetik işlem olarak bir anlam ifade etmiyor. Bir taşma var. Bunu da taşma oluştu şeklinde V bitini bir yaparak gösteriyorum.
+
+773
+02:48:37,799 --> 02:48:49,419
+Eksi 75 sayısını sağa doğru shift ederken aritmetik shift right yaptığımda neye dikkat ediyorduk arkadaşlar? İşaret bitinin korunması gerekiyordu.
+
+774
+02:48:49,419 --> 02:49:02,619
+Kendi üzerine tekrar yüklüyorsunuz işaret bitini en yüksek anlamlı bit için ve zaten taşma oluşmaz sadece işaret bitini korumanız gerekir buna dikkat edin.
+
+775
+02:49:02,619 --> 02:49:07,299
+İki tane sayıyla bunun için bir örnek böylece vermiş olduk.
+
+776
+02:49:08,259 --> 02:49:12,079
+Sorunun B şıkkında ise
+
+777
+02:49:12,079 --> 02:49:27,200
+The program in a computer compares two signed tools complement numbers A and B by performing subtraction A minus B and updating the status bits demiş.
+
+778
+02:49:28,020 --> 02:49:34,999
+Bu defa elimizde işaretli iki tane sayı var A ve B sayısı ve bunları compare ediyoruz.
+
+779
+02:49:35,199 --> 02:49:38,179
+Compare etmek demek A eksi B işlemi yapmak demek.
+
+780
+02:49:38,179 --> 02:49:44,319
+Bu işlemin sonucu herhangi bir yere yazılmıyor, durum bitleri güncelleniyor.
+
+781
+02:49:45,459 --> 02:49:51,699
+Buna göre, E dediği şıkta diyor ki, evaluate the difference and interpret the binary result.
+
+782
+02:49:53,319 --> 02:49:59,559
+İşlemi yapacağız, çıkarma işlemini ve çıkan sonucu yorumlayın diyor.
+
+783
+02:49:59,559 --> 02:50:08,559
+Bize iki tane sayı verilmiş A ve B sayısı ve biri burada, biri burada, iki tane sütunda bunları görebiliyorsunuz.
+
+784
+02:50:12,559 --> 02:50:15,559
+İşlemleri aşağıda görüyorsunuz.
+
+785
+02:50:16,579 --> 02:50:19,559
+A-B işlemi için ben önce A sayısını yazdım.
+
+786
+02:50:21,999 --> 02:50:27,179
+Sonra A sayısı nedir? Bir negatif sayıdır. En yüksek anlamlı bit bir.
+
+787
+02:50:27,179 --> 02:50:38,799
+ve bunun karşılığı eksi 34. Sonra B sayısı A eksi B yapacağım için B'nin tuz komplementini alıp buraya yazdım. Sonra bu ikisini topladım.
+
+788
+02:50:38,799 --> 02:50:56,899
+Toplama işlemi sırasında 1 artı 1, 1 var elde, 1 var elde, şurada 1 var elde, 1 artı 1, 0 yazdım. 1 var elde, işaret bitine bir elde taşıdım.
+
+789
+02:50:56,899 --> 02:51:06,219
+Elde 1 var. 1, 1, 1. Dolayısıyla 3 tane 1 var. Toplam 1 oldu. Yine elde biti 1 oldu.
+
+790
+02:51:06,959 --> 02:51:16,539
+İşaret bitine gelen elde 1, işaret bitinden çıkan elde 1. Bu ikisi birbiriyle aynı olduğunda taşma oluşmaz.
+
+791
+02:51:16,539 --> 02:51:25,339
+Taşma işlemin sonucu V biti 1xor 1, 0 diye verilmiş. Bu işlemde taşma oluşmaz diyor.
+
+792
+02:51:25,339 --> 02:51:27,599
+Şimdi işleme bakalım
+
+793
+02:51:27,599 --> 02:51:35,819
+Sayılar bu şekilde verilmiş
+
+794
+02:51:35,819 --> 02:51:41,299
+Eksi 34 ve B sayısı pozitif bir sayı 94
+
+795
+02:51:41,299 --> 02:51:44,599
+Ama A eksi B yapıyorum
+
+796
+02:51:44,599 --> 02:51:46,439
+Dolayısıyla bu da eksi oluyor
+
+797
+02:51:46,439 --> 02:51:51,259
+90, 128 çıkıyor işlem sonucu
+
+798
+02:51:51,259 --> 02:51:53,799
+Eksi 128
+
+799
+02:51:53,799 --> 02:52:00,919
+benim 8 bitte gösterebileceğim sayı sınırı içerisindedir. Dolayısıyla burada taşma oluşmaz.
+
+800
+02:52:01,380 --> 02:52:17,799
+Şimdi overflow bitinin 0 olduğunu söyledik. Bu işlem sonunda Z bitinin 0 olduğunu, işlem sonucu negatif olduğu için, negatif bir sayı olduğu için N bitinin 1 olduğunu, durum bitlerini buraya yazdık.
+
+801
+02:52:18,227 --> 02:52:38,207
+Aynı işlemi sağ tarafta verilen diğer iki sayı içinde yapalım. A sayısının değeri 82'ymiş, sayı pozitif. B sayısı ise, yukarıda verilen B sayısı en yüksek anlamlı bir olduğu için negatif olduğunu görüyoruz. 46'ymış karşılığı.
+
+802
+02:52:38,207 --> 02:53:01,687
+Şimdi ben A-B yaptığımda eksi 46 artı 46 olacak ve bu iki sayıyı toplayacağım. 80, 128 çıkacak oradaki sonuç. 128 artı 128. Benim 8 bitte bir registerda ifade edemeyeceğim bir sayı.
+
+803
+02:53:01,687 --> 02:53:07,447
+O yüzden bu sınırları özellikle göstermek için verilmiş bir örnek.
+
+804
+02:53:08,568 --> 02:53:15,908
+A sayısıyla B'nin tuz komplementini topladığımda toplama işleminde bir taşma oluşuyor.
+
+805
+02:53:16,027 --> 02:53:17,588
+Overflow biti 1 oluyor.
+
+806
+02:53:17,967 --> 02:53:18,207
+Neden?
+
+807
+02:53:18,207 --> 02:53:19,827
+Şimdi şöyle bakın.
+
+808
+02:53:21,727 --> 02:53:22,528
+Topladım.
+
+809
+02:53:22,787 --> 02:53:27,668
+2, 2, 2, 2, 2, 2.
+
+810
+02:53:27,967 --> 02:53:28,987
+Elde 1 var.
+
+811
+02:53:28,988 --> 02:53:47,088
+İşaret bitine 1 geldi ama işaret bitinden dışarıya bir elde çıkışı olmadı. O yüzden 0, XOR, 1 işleminin sonucu 1 çıktı. İşaret bitine gelen elde 1, işaret bitinden dışarıya çıkan elde biti 0.
+
+812
+02:53:47,088 --> 02:54:05,408
+Bu elde bitleri arasında XOR yapıyorum. XOR işleminin sonucu 1 çıkıyor. Bu da bana bu işlem sonucu 8 bitlik bir registerda ifade edilemez anlamında overflow bitini set ediyor. Taşma oluştu diyor.
+
+813
+02:54:05,867 --> 02:54:11,028
+Z biti 0 işlem sonucunda n biti 1 çıkıyor.
+
+814
+02:54:11,027 --> 02:54:34,088
+N biti 1 çıkıyor. Neden? Çünkü burada ilginç bir durum var. Bakın iki tane pozitif sayıyı topluyorsunuz. İşlem sonucu negatif görünüyor. Çünkü taştı. İşaret biti bu 8 bitlik registerde tutulamıyor. Dışarıya taştığı için bir taşma oluştu. Flayn'i set etmemiz gerekiyor.
+
+815
+02:54:34,088 --> 02:54:52,748
+Bu durum bitlerini bulduktan sonra şurada gördüğümüz branch if greater, branch if less gibi işlemlerde hangi durum bitlerinin kontrol edilmesi gerektiğini az önceki tabloda vermiştim.
+
+816
+02:54:52,747 --> 02:55:06,447
+şu işlemi yapacağız. N ve overflow biti arasında XOR yapacağım. Bunu Z bitiyle orlayacağım. İşlem sonucu 0 çıkıyorsa eğer A büyük B koşulu sağlanıyor demektir.
+
+817
+02:55:06,447 --> 02:55:21,127
+Bu soru işareti bu kuralı check et demek. Ve elimdeki durum bitlerini yerine koyduğumda A büyük B işleminin sonucu false çıkmış.
+
+818
+02:55:21,127 --> 02:55:31,448
+Çünkü A-34, B-94. A B'den büyük değil. O yüzden bu koşul sağlanamadı. False yazıyorum buraya.
+
+819
+02:55:31,448 --> 02:55:50,448
+Evet, temel olarak bu koşulları burada verdiğim test işlemini yaparak sağlanıp sağlanmadığını ve A büyük B, A küçük B karşılaştırmalarında hangi...
+
+820
+02:55:53,043 --> 02:56:02,363
+branch işlemi için true, hangileri için false üretir bu sayılar. Bunları böylece hesaplayabiliyoruz.
+
+821
+02:56:03,223 --> 02:56:13,123
+Evet, sevgili arkadaşlar, uzunca bir ders oldu. Süreyi açtık farkındayım. Bu çözümlü iki örneği ders duvarında paylaşacağım birazdan.
+
+822
+02:56:13,783 --> 02:56:17,003
+Daha sizin için faydalı olur diye düşünüyorum.
+
+823
+02:56:17,343 --> 02:56:21,923
+Kitabı, geçen hafta PDF'ini paylaşmıştım sizlerle.
+
+824
+02:56:23,043 --> 02:56:42,463
+Bu kitapta Instruction Set Architecture'ın sonunda buna benzer başka sorular var. Onları çözebilirsiniz. Biraz egzersiz yapmak size de iyi gelecektir diye düşünüyorum. Peki, sormak istediğiniz herhangi bir şey var mı?
+
+825
+02:56:48,915 --> 02:56:58,195
+Yok, peki. Hepinize iyi hafta sonları diliyorum arkadaşlar. Sağlıkla kalın, kendinize iyi bakın. Bana el sallayıp çıkın ama.
+
+826
+02:56:59,495 --> 02:57:01,095
+İyi günler hocam, görüşmek üzere.
+
+827
+02:57:01,235 --> 02:57:02,855
+Görüşürüz, hoşçakalın.
+
+828
+02:57:03,055 --> 02:57:03,876
+İyi günler hocam.
+
+829
+02:57:04,475 --> 02:57:06,075
+İyi günler, hoşçakalın.
+
+830
+02:57:14,195 --> 02:57:17,176
+İyi haftalar, Serhat, Öner.
+
+831
+02:57:17,955 --> 02:57:19,136
+Görüşürüz hocam.
+
+832
+02:57:19,475 --> 02:57:19,855
+Görüşürüz.
+
+833
+02:57:19,855 --> 02:57:23,195
+Hocam, bir şey beklerken ben bir soru sorayım mı öyle şey?
+
+834
+02:57:24,036 --> 02:57:24,475
+Buyurun.
+
+835
+02:57:25,395 --> 02:57:33,975
+Hocam, aslında bu ikiye tamamlama dediğimiz olay, mesela ondalık tabanda falan da mantık aynı değil mi?
+
+836
+02:57:33,975 --> 02:57:41,735
+Bir üst tabana tamamlayıp, toplayıp, mesela örneğin ondalık tabanda dörtten ikiyi çıkarmaya çalışıyorum.
+
+837
+02:57:41,735 --> 02:57:46,995
+2'nin komplementi ondalık tabanda 8 oluyor.
+
+838
+02:57:48,415 --> 02:57:54,056
+Sonra 4 ile 8'i topluyorum 12 oluyor. Yani 2 taşmış oldum. Sonuç 2.
+
+839
+02:57:54,056 --> 02:58:00,715
+Öyle düşünebilirsin. Yani farklı şekillerde mantığınıza bunu yerleştirmeniz gerekiyor.
+
+840
+02:58:02,195 --> 02:58:07,475
+Çünkü 7 bitte düşününce 256'ye tamamladım.
+
+841
+02:58:08,015 --> 02:58:10,155
+Siz matematikçi miydiniz?
+
+842
+02:58:10,155 --> 02:58:12,036
+Yok hocam matematik işleyelim
+
+843
+02:58:12,036 --> 02:58:13,575
+Senin branşın neydi?
+
+844
+02:58:14,595 --> 02:58:17,855
+Ben çok alakasız bir branştan geliyorum hocam acil yardım ve afet
+
+845
+02:58:17,855 --> 02:58:21,435
+Aaa çok ilginç evet güzel
+
+846
+02:58:21,435 --> 02:58:30,215
+Umarım tamamlayabilirsiniz bu dersleri biraz zor çünkü farkındayım sizin için
+
+847
+02:58:30,215 --> 02:58:32,996
+Yok hocam baya iyi gidiyor benim için şu an baya iyi gidiyor
+
+848
+02:58:32,996 --> 02:58:34,155
+Çok iyi çok güzel
+
+849
+02:58:34,155 --> 02:58:38,535
+Siz de çok çok güzel anlatıyorsunuz gerçekten çok teşekkür ediyorum hocam
+
+850
+02:58:38,535 --> 02:58:39,155
+Rica ederim
+
+851
+02:58:39,155 --> 02:58:46,535
+Görevimiz yani elimizden geldiğince anlatmaya gayret ediyoruz. Üç saati dolu dolu yaptık.
+
+852
+02:58:47,975 --> 02:58:49,056
+Çok teşekkür ederim.
+
+853
+02:58:49,876 --> 02:58:58,835
+Rica ederim. Hepinize başarılar arkadaşlar. Bu yirmi kişi şu anda ekranda açık görünenler neredeler acaba?
+
+854
+02:59:00,736 --> 02:59:04,835
+Sevgili arkadaşlar haftaya derse görmek istiyorum sizi.
