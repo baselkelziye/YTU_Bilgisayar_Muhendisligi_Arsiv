@@ -1,0 +1,3479 @@
+1
+00:05:49,843 --> 00:06:18,203
+Merhaba arkadaşlar. Merhaba hocam, iyi akşamlar. Nasılsınız? İyi akşamlar. Nasılsınız? İyisiniz? Merhaba hocam. İyi, teşekkürler. Nasılsınız? Ben de iyiyim. Akşama ettik. Kimin ruhu karardı iyi akşamlar dedi ilk başta. Doğru, yanlış olduk. Daha çok işimiz var. Evet, bugün sizin için uzun, doğru. Dokuzdan dokuza benim hocam. Aynen.
+
+2
+00:06:18,203 --> 00:06:29,583
+Benim de 9 öğle arasında bile bir yerde derse katılıyorum. Neyse. Şimdi arkadaşlar.
+
+3
+00:06:30,303 --> 00:06:43,823
+Hocam başlamadan bir şey sorabilir miyim ben? Labda gibi. Bu UML falan çalıştık. Baktık birkaç tane programa falan. Ben en son NetBeans'de Easy UML'i bir şekilde çalıştırdım son versiyonunda. Ama bazen üretemiyor falan.
+
+4
+00:06:43,823 --> 00:06:48,503
+Bu akşam labda UML üreteceksek ders sırasında uğraşayım diyorum.
+
+5
+00:06:48,643 --> 00:06:48,724
+Yok.
+
+6
+00:06:48,724 --> 00:06:49,123
+Tamam.
+
+7
+00:06:49,403 --> 00:06:49,623
+Yok.
+
+8
+00:06:50,403 --> 00:06:56,244
+Yani tasarımdan ziyade UML'i anlayıp biraz analiz edip kodlama sorusu gelecek.
+
+9
+00:06:56,903 --> 00:06:57,244
+Tamam.
+
+10
+00:06:57,884 --> 00:06:59,823
+Yapla alakalı şimdi.
+
+11
+00:07:02,683 --> 00:07:03,784
+Onu da halledeyim de.
+
+12
+00:07:06,004 --> 00:07:07,363
+Size bir şey göstereceğim.
+
+13
+00:07:10,363 --> 00:07:11,784
+Nereden bulabilirim?
+
+14
+00:07:11,784 --> 00:07:12,583
+Şimdi ona bakıyorum.
+
+15
+00:07:22,516 --> 00:07:27,476
+palaces sayfaları niye görünmüyor? Şuradan bakalım.
+
+16
+00:07:53,524 --> 00:07:57,703
+Bir şey indirmeye çalışıyorum. 605 kilobaytı. İnternet çok yavaşladı nedense.
+
+17
+00:08:01,076 --> 00:08:27,375
+Avesiz'e bir daha girelim. Şimdi Toprak hocamız ve diğer asistan hocalarımız Avesiz sayfasında bir şey paylaşmışlar. Import, Export ile alakalı. Onu ben kısacası bir üzerinden geçeyim. Çünkü laboratuvarda süresi içerisinde bir yükleme yapacaksınız. O yüklemeyi yaparken doğru bir şeyi yüklemeniz gerekiyor.
+
+18
+00:08:27,375 --> 00:08:45,835
+Şimdiye kadar da oradan kaynak kodu diğer C derslerinde paylaşılın ama burada bazen isimden dolayı bir karışıklık oluyor. Şu ana kadar tabii kod yazanlar bu problemi çok yaşamazlar da ilk defa yazacakları varsa aramızda problem yaşayabiliriz.
+
+19
+00:08:46,936 --> 00:08:56,895
+Şimdi başlayayım arkada. Ben bunun linkini Toprak Hocanız'ın sayfasını linkini tekrar sizinle paylaşırım. Şu an nedense Avesiste açılmadı.
+
+20
+00:08:57,375 --> 00:09:01,096
+Ben girdim hocam, chat'e atıyorum isterseniz.
+
+21
+00:09:01,235 --> 00:09:02,635
+Abisiste, Toprak Ocağı'nın şeyi.
+
+22
+00:09:02,675 --> 00:09:05,035
+Olur. Sayfasının linkini atarsan.
+
+23
+00:09:05,516 --> 00:09:06,535
+Aynen, açıklamış zaten.
+
+24
+00:09:08,976 --> 00:09:13,895
+Onu şeye de ekleyeceğim, bu ödevin ilan kısmında şey var, oraya da ekleyeceğim.
+
+25
+00:09:14,616 --> 00:09:15,796
+Linki bir şey yaparsan.
+
+26
+00:09:17,195 --> 00:09:21,656
+Şimdi arkadaşlar, herhangi bir projeyi import ve export etmek ne demek?
+
+27
+00:09:22,215 --> 00:09:26,656
+Bir kod yazdınız, işte NetBeast de olabilir, Eclipse de olabilir, IntelliJ de olabilir.
+
+28
+00:09:27,375 --> 00:09:39,255
+Yazdığınız kod bir proje formatında çalışıyor. Doğrudan C'deki bir tek bir kod değil. Çünkü bunun konfigürasyon dosyaları var. İşte şuradaki library'ler falan bakılırsa JDK ile alakalı bir sürü şey var.
+
+29
+00:09:41,395 --> 00:09:54,955
+Ve sonuç olarak bunu başka bir yere taşımak istiyorsunuz. En azından ödev teslimi yapacaksınız. Bunun import ve eksport işlemlerini bilmek gerekiyor. Bizim tarafımızdan sizin ödevleriniz bize import, sizin tarafınızdan eksport olacak.
+
+30
+00:09:54,955 --> 00:10:24,236
+Şöyle tıkladığınızda net bir site olması lazım yoksa şuradan file export proje diyeceğiz to zip diyoruz. Hangisini seçmek istiyorsun onu şey yapıyor işte burada açık olan projeler var veya herhangi bir direktörden proje seçiyorsunuz. İşte hafta dördü diyorum export diyorum. Nereye export ederim? Browse. Bu üç aşağı beş yukarı diğerlerinde de böyledir.
+
+31
+00:10:24,955 --> 00:10:45,655
+Hani ben bunu kullandığım için bunu söyleyebilirim. Niye olmadı? İlla bir isim vereceğiz. Neyse şöyle bir yere application.bultzip üretiyormuş. Aslında bu da bir problem yani niye masaüstüne? Gerçi isim yazalım bir de öyle deneyelim. İşte ödev diyelim mesela.
+
+32
+00:10:45,656 --> 00:10:57,775
+Bu şeyde export et dediğimde şu an onunla uğraşıyor ve bir şey export edecek zip formatında
+
+33
+00:11:01,524 --> 00:11:20,743
+ama zip formatında tanınmadı. Şuraya getireyim. Veya tam daha export işlemi tamamlanmadı. Bu dosyayı biz aldıktan sonra import edeceğiz ve dosyadaki kodlarımızı çalıştıracağız.
+
+34
+00:11:20,743 --> 00:11:45,803
+Tabi NetBeans'ten Eclipse'e, Eclipse'e NetBeans'e veya InterC'den Cross Platform program olabilir. Gerçi burada import Eclipse projesi import edilebiliyor. Hatta gelin bunu bir de import edelim önce. Oluşturduğumuz zip file'ını bir desktop'tan bulalım. Hala onu yapamadı muhtemelen. Onun için daha görmüyor.
+
+35
+00:11:45,803 --> 00:12:01,283
+Neyse ben o arada bu hallolurken veya arada başka bir şey vardı ben attım şuradan birazcık özetleyeyim. Bu net şey Eclipse üzerinde yapılan bir dokümentasyon.
+
+36
+00:12:01,283 --> 00:12:09,963
+Import menüsüne geldiğinizde bir dosyayı import ederken dosyanın yolunu gösteriyorsunuz.
+
+37
+00:12:09,963 --> 00:12:18,803
+Dosyanın içerisinde kaç tane proje varsa onlar görülüyor. Finish diyorsunuz. Size şey açılabiliyor.
+
+38
+00:12:18,923 --> 00:12:24,683
+Yoksa bunu yapmazsanız ne olur? Yani gidersiniz bütün Java dosyalarını yeni bir proje oluştursunuz.
+
+39
+00:12:24,763 --> 00:12:28,063
+Java dosyalarının içerisini kopyalarsınız veya dosyaları copy paste yaparsınız.
+
+40
+00:12:28,064 --> 00:12:46,223
+Ondan sonra şeyleri, kütüphane, libraryleri pek problem olmaz da şu an için library pek kullanmayacağız. Namespace'leri birazcık düzeltmemiz gerekiyor. O problem olabilir. Pardon, pek işleri. Burada namespace yoktu. Aynı şey ama farklı isimlendirmeler.
+
+41
+00:12:46,223 --> 00:13:03,043
+Bazen işte encoding'den kaynaklı olarak karşı tarafa gönderdiğiniz kodda problemler oluyor. Bunun için import işlemi yaparken UTF-8'e göre enkod etmeniz lazım. Şu dokumentasyonunu takip ederseniz çok sıkıntı olmaz.
+
+42
+00:13:03,043 --> 00:13:29,723
+Bunu nerede bulabiliriz diye genellikle projem nerede dediği bazen arkadaşlar bulamıyorlar. Projenize sağ tıkladınız, properties dediniz. Eclipse'de bakın burada bir Eclipse workspace'in altında klasör. NetBeans'teki de genellikle eğer Windows kullanılıyorsa şeydedir, document klasörü var ya belgelerim meşhur. NetBeans projenin altında burada doğrudan bulunabiliyor.
+
+43
+00:13:29,723 --> 00:13:54,543
+Net bir soru açıdan biraz daha kolay. Aktarma için de arkadaşlar export ederken de export'u seçiyorsunuz. Nasıl işte arşiv fail olarak yani zip fail olarak olması gerektiğini söylemeniz lazım. En kolay format budur. Ondan sonra yukarıdaki hangi dosyalar hepsini aktarmak isterseniz hepsini yapacaksınız.
+
+44
+00:13:54,543 --> 00:14:22,963
+Bir de burada UTF-8'e göre export etme seçeneği falan var burada bazı seçenekler. Şeyden şeye değişiyor. IDE'den IDE'ye de değişiyor böyle şeyler. Ama zor değil. Bunu ne için anlattım? Laboratuvarda 3 veya 4 tane Java klası var. 3 klas var bildiğim kadarıyla. Bir de main 4. Yazdığınız kodu gönderirken dikkat edin arkadaşlar.
+
+45
+00:14:22,964 --> 00:14:34,964
+Yani kod dosyasını gönderdiğinizden emin olmanız lazım. Bu şunun için bu uyarıyı yapıyorum. Mesela hafta 2'de biz source package'larımız varmış.
+
+46
+00:14:39,923 --> 00:15:09,123
+Bir dakika. Şöyle bir başka yerden bir ses geldi. Hafta ikinin altında böyle pekışlar var. Şimdi test pekışları ve library'ler dediğimiz burada başka şeyler var. Buradaki şu dosyalarımızın birebir aynaları başka yerde de var. Ona bir bakalım. Eğer direkt klasörden kopyalı yapıştırı yapacak olursanız o biraz problem oluyor. Mesela hafta ikinin altına geldik.
+
+47
+00:15:09,923 --> 00:15:19,583
+Build'ın altında class'lar var bakın arkadaşlar. Hafta 2 class'ın altında kitap.class, kütüphane.class, test.class, yazar.class.
+
+48
+00:15:20,663 --> 00:15:27,364
+Genellikle hata yapan arkadaşlar bunu gönderiyorlar. Yani çok kişi hata yapmıyor da az da olsa var.
+
+49
+00:15:27,364 --> 00:15:37,883
+Onun için uyarmakta fayda var. Bunları biz açamayız. Açmak mümkün. Decompiler'larla açılıyor ama onunla uğraşacak şeyimiz yok.
+
+50
+00:15:37,883 --> 00:15:56,923
+Bir de tam decompile edilemiyor. Normalde bu değerlenmiş bir bytecode dediğimiz, objectcode dediğimiz bir şey. Onun için biz bunu değerlendiremeyiz. Hiçbir şekilde olmaz. İlla ki kod göndereceğim, işim garanti olsun, CE'ye çok alıştım derseniz, src klasörün altına giriyorsunuz. Bu Ektis'te de buna benzeridir.
+
+51
+00:15:56,923 --> 00:16:13,543
+Buradaki işte şu hafta 2 klasörü dediğimiz şey şuradaki pek için hafta 2'si. İsterseniz bunu böylece RAR yapıp numaranızı falan yazıp yükleyin. İsterseniz içeriye girip yani bunların hepsini tek bir RAR dosyası yapıp yükleyin. Hepsi olur.
+
+52
+00:16:14,923 --> 00:16:21,883
+Evet bu kadar kelamın şeyi buydu kıssadan hisse diyeceğimiz şeyler bunlar. Burada anlaşılmayan bir şey var mı?
+
+53
+00:16:21,883 --> 00:16:36,443
+Ben çok küçük dersten daha fazla zaman almayayım da bir de şeyi sorabilir miyim hocam? Siz kodları yüklemiştiniz de şey. Evet. Nereden indirdim hatırlamıyorum. Google Docs'a mı yüklemiştiniz? Onları da bu importla importlayamadım ben. Aynı yöntemle mi yapacağız?
+
+54
+00:16:36,443 --> 00:16:50,304
+Yok ben direkt şey ben oraya şöyle yapıyorum. Sürükleyip koyacağız değil mi? Ben oraya şöyle kopyaladım. Şu şekilde hani direkt klasörlü hani şöyle söyleyeyim daha açıklayıcı olsun.
+
+55
+00:16:50,303 --> 00:16:55,503
+Dokuments'ın altına giriyorum NetBeans projelerden bunları olduğu gibi kopyalık oraya yapıştırıyorum.
+
+56
+00:16:55,503 --> 00:16:56,283
+Okey, tamam.
+
+57
+00:16:56,283 --> 00:16:57,943
+Bir import-export'u yapmıyorum.
+
+58
+00:16:58,343 --> 00:16:59,383
+Tamamdır, bunu sonuçta.
+
+59
+00:16:59,383 --> 00:17:05,523
+Yani o doğrudan SRC'yi bulabilin diye öyle bir şey yapıyorum. Bana daha kolay geliyor çünkü o.
+
+60
+00:17:06,823 --> 00:17:11,663
+Neyse, yani şimdi bir de arkadaşlar online yıldız üzerinden bu iş yapılacak.
+
+61
+00:17:12,563 --> 00:17:16,523
+Hiçbir şekilde biz zaman süre zaten ona uygun olarak verildi.
+
+62
+00:17:16,623 --> 00:17:20,123
+Bakar eğer hocanız uygun görürse şey yapabilir.
+
+63
+00:17:20,303 --> 00:17:27,463
+Ne derler? Ekstra süre belki verebilir ama ben verilmemesi taraftarıyım çünkü yeterli bir süredir.
+
+64
+00:17:28,903 --> 00:17:37,963
+Diyelim şimdi şuradan bir şey daha halledeyim ondan sonra derse geçeceğim. Varsa bu arada sorunuz alabiliriz.
+
+65
+00:17:37,963 --> 00:17:44,623
+Hocam direkt ödev olarak mı tanımlanacak yoksa yine biz derse girecek biz lab dersine açıklama yapılacak mı hocam?
+
+66
+00:17:44,623 --> 00:18:05,383
+LAP saatinde hocanız toprak hoca gelecek. Hatta belki ben de gelirim. 5-10 dakika bir açıklama. Varsa sorularınız normal laboratuvarda olduğu gibi sorularınızı alacağız. Ondan sonra biz çıkacağız. Yani isterseniz siz de çıkacaksınız zaten. Biz çıkınca siz de çıkmanız gerekiyor gerçi. Ondan sonra normal bir sınav yükleme usulüyle yükleyeceksiniz.
+
+67
+00:18:06,043 --> 00:18:09,923
+Tamamdır hocam. Peki sürenin ne kadar olacağı belli mi şu an söyleyebiliyor musunuz?
+
+68
+00:18:10,063 --> 00:18:11,304
+Bir saat, bir saat.
+
+69
+00:18:11,883 --> 00:18:13,004
+Tamamdır sağ olun hocam.
+
+70
+00:18:13,004 --> 00:18:30,744
+Yani burada ideleri istediğiniz gibi kullanabildiğiniz için şey yok. Yani geçen derste mesela hocanız anlattı. Sağ tıklıyordunuz mesela add code diyorsunuz. Insert code diyorsunuz. Çok rahat. Gerçi bir class oluşturmadık şimdi ama.
+
+71
+00:18:32,123 --> 00:18:37,584
+Constructor oluşuyor. Ondan sonra set get metodları oluşuyor. Aynısı IntelliJ'de falan da var.
+
+72
+00:18:37,971 --> 00:18:47,432
+Bunlar sizin çok hızlı kod yazmanızı sağlayan şeyler. Önemli olan neyi, nerede yapmanız gerektiğini bilmenize dayalı bir laboratuvar olduğu için biraz onlara dikkat etmek yeterli olur.
+
+73
+00:18:48,812 --> 00:18:56,171
+Şimdi en son geçen hafta nesnelerle alakalı bazı şeyler bir de Yerjeva'nın temel kurallarından konuştuk.
+
+74
+00:18:57,551 --> 00:19:04,071
+Bugün diğer grupların hocalarıyla görüşmemde onlardan hemen hemen yani Yunus Hoca'nın grubundan ilerideyiz buraya.
+
+75
+00:19:04,071 --> 00:19:30,411
+Çok da biz hızlı gitmeyelim diye biraz hem dersi kısa bitireceğim. Belki iki saat yaparız. Hem de birazcık geçen dersin tekrarına bakalım istiyorum. Onunla alakalı bazı şeyler hazırladım. Dersin ana dökümanlarının dışında bazı şeyler olacak bunlar. Sizden başka soru var mı? Merak ettiğiniz. Ders nasıl gidiyor? Memnun musunuz? Yani her şey iyidir inşallah.
+
+76
+00:19:30,411 --> 00:19:33,271
+İyi hocam galiba.
+
+77
+00:19:33,271 --> 00:19:33,812
+Anlaşılmıyor.
+
+78
+00:19:34,931 --> 00:19:41,631
+İyi. Yani bu dersi öte noktaya daha nasıl taşıyabilir mi düşünüyorum.
+
+79
+00:19:41,631 --> 00:19:47,671
+Benim sonunda dizayn patenler, ondan sonra grafik arayüz falan öyle şeyler olacak.
+
+80
+00:19:48,671 --> 00:19:54,311
+Biraz bu işin temelini şimdilerde iyi atarsak oradaki konularda çok fazla sıkıntı yaşamayacağız.
+
+81
+00:19:55,931 --> 00:19:59,591
+Ama bu hani böyle iki üç tane dersin kesişimi noktası.
+
+82
+00:19:59,591 --> 00:20:19,331
+Bir yandan veritabanı dersi, bir yandan yazılım mühendisliği, belki bu dönem sistem analizi tasarımı size yardımcı olacak. Bunların hepsini bir araya getirdiğinde zaten yazılım uzmanı diyorlar ya, böyle titular var şeyde, LinkedIn'da falan. O etiketlere bu şeyler sayesinde sahip oluyorsunuz.
+
+83
+00:20:19,332 --> 00:20:31,012
+İşte web programcılığı da buradan geçiyor. Bir anlamda şey de buradan geçiyor. Mobil de buradan geçiyor. Şimdi Bora link de paylaşmış. Bu linkteki şu dokümanı incelerseniz arkadaşlar bence yeterli olur.
+
+84
+00:20:32,391 --> 00:20:43,732
+Diyelim şimdi son derste biz şu tostring'i falan anlattık da bir anlatmadığım şey kalmış. Copy constructor kalmış. Bu hangisi? Kitap.java.
+
+85
+00:20:43,731 --> 00:20:49,451
+Şimdi copy constructor'ı da anlatayım ondan sonra biraz bazı farklı örneklere bakalım istiyorum.
+
+86
+00:20:50,791 --> 00:20:56,692
+Şimdi şu şeye geldiğimizde bizim yazarlarımızı oluşturduk, kitaplar oluşturduk.
+
+87
+00:20:56,692 --> 00:21:00,351
+Diğer şeyde mesela araba örneğinden gidiyor slide'larda onlara da bakabilirsiniz.
+
+88
+00:21:00,571 --> 00:21:02,211
+Yani aynı mevzu orada da geçerli.
+
+89
+00:21:02,832 --> 00:21:08,692
+Bir kitap oluşturulduğunda biz constructor'a şöyle parametreler veriyorduk.
+
+90
+00:21:08,692 --> 00:21:19,171
+İstersek ekstra bir constructor overloading yaparak bir kitabı diğer kitabı klonlayabiliyoruz.
+
+91
+00:21:19,652 --> 00:21:24,852
+Mesela K5 dedim, eşittir, near, kitap diyorum.
+
+92
+00:21:24,932 --> 00:21:27,871
+Burası şey olduğu için İngilizce yazmayacağım, anlatmayacağım.
+
+93
+00:21:28,651 --> 00:21:31,111
+Örneğin K kitabını kopyalayalım.
+
+94
+00:21:32,212 --> 00:21:32,751
+Bunu istiyoruz.
+
+95
+00:21:32,992 --> 00:21:38,012
+Şimdi bunu göndermemiz için bir kere constructor tarafında bir tanımlama yapmamız gerekiyor.
+
+96
+00:21:38,011 --> 00:21:55,011
+Bu olmadan hata verir. Değerleme zamanı hatası alırız. Peki, işte bu diğerlerinden ne farkı var? Bunun isimlendirmesi birazcık farklı arkadaşlar. Özellikle aslında bu copy constructor doğrudan şey de yok. Hani Java'da olan bir kavram değil de C++'da var. Birazdan onun koduna da bakacağız.
+
+97
+00:21:56,371 --> 00:22:07,711
+Gönderdiğiniz parametre kendi türünden bir nesneyse yani bir nesneyi bir nesney kolonlamak gibi bir şey oluyor. Kopyasını almak gibi bir şey. Peki gelin önce bunu bir tanımlayalım. Bu bütün sınıflarda olabilecek bir şey.
+
+98
+00:22:08,011 --> 00:22:26,011
+Kitaba geldik. Bu bir normal ID ve ad alan constructor idi. ID, ad ve yazar alan bir constructor idi. Hatta bu ID ve adı alıp ne yapıyordu? Yukarıdakine gönderiyordu. Üçüncü bir constructor. Bu işlemin adına ne diyorduk?
+
+99
+00:22:29,011 --> 00:22:35,211
+Overload. Evet güzel. Constructor, overload diyorduk. Constructor'ı bir daha overload edeceğiz.
+
+100
+00:22:36,788 --> 00:23:01,227
+kitap türünden bir nesne aldık. Şimdi burada gelen kitabın yazarı olabilir veya olmayabilir. Bu konuda emin değiliz. O zaman kitabın yazarı olsa da olmasa da ne yapalım? Mesela şunu çağırmaya çalışalım. Şöyle bir şey yapalım. Şunu kullanabiliriz. Bunu kullanmak ne demek?
+
+101
+00:23:01,227 --> 00:23:15,687
+DİS diyorum. Şu constructora git. K'nın ID'sini gönder. Çünkü bu artık spesifik bir şey. Virgül K'nın nesini gönder? Adını gönder.
+
+102
+00:23:19,539 --> 00:23:26,679
+Şimdi buradaki veriler ID ve ad değişince acaba yeni nesnede de bu şeyler değişecek mi? Buna bakacağız.
+
+103
+00:23:28,559 --> 00:23:29,679
+Public olmaz.
+
+104
+00:23:31,139 --> 00:23:36,179
+Peki, kalan şeyimiz ne var? Dis.yazar. Şimdi yazarımız var mı yok mu bilmiyoruz.
+
+105
+00:23:37,419 --> 00:23:41,560
+Önceki nesnede oluşturulmuş nesnede bir yazar var mı yok mu bilmiyoruz.
+
+106
+00:23:41,560 --> 00:23:57,159
+Ama şunu biliyoruz bir nesne oluşturulduğunda bir şey atanmamışsa referans tipli verilerde null atanıyordu. O zaman hani çok fazla zorlamaya hatta şurada da yapabiliriz onu hani gerek yok gerek kalmadı.
+
+107
+00:23:57,159 --> 00:24:22,599
+K.yazar diyorum. Şunu çağır. Yani doğrudan bu çağırsın. Eğer nesne oluşturulduğunda bir yazar atanmışsa eski nesne yani şuradaki test sınıfında şunda bir yazar atanmışsa atanmıştır. Atanmamışsa zaten naldır. Bu atanan nal değeri ne olacak? Burada K5'e de yansıtılacak. Dolayısıyla ne yaptım? Bu copy constructor ile bu işi yaptık.
+
+108
+00:24:26,612 --> 00:24:47,872
+Şimdi şöyle yapalım. K.kitap tanıtı açalım. K2. değil de artık K5.kitap tanıtı açıyorum. Önce bir görelim ne var ne yok. Sonra şuradakileri de şöyle silelim. Böyle değil şöyle yapacağız.
+
+109
+00:24:47,872 --> 00:24:53,812
+Ondan sonra diyorum ki K5.
+
+110
+00:24:56,251 --> 00:25:02,492
+Tabi bunun get ve set metotları var mıydı yoktu.
+
+111
+00:25:02,751 --> 00:25:05,472
+O zaman bir tane get ve set metodu atamamız lazım.
+
+112
+00:25:05,891 --> 00:25:06,811
+Çünkü bunlar private.
+
+113
+00:25:08,292 --> 00:25:15,052
+Evet doğrudan set ID yapmışız ama şeyler yok.
+
+114
+00:25:18,836 --> 00:25:23,716
+Insert code, setter, ad için ve
+
+115
+00:25:23,716 --> 00:25:27,375
+ID için vardı ama hadi bunu da yapalım.
+
+116
+00:25:28,756 --> 00:25:29,875
+Yazar için de olsun.
+
+117
+00:25:31,095 --> 00:25:32,615
+Encapsulate fields diyelim.
+
+118
+00:25:36,564 --> 00:25:39,004
+static vote. Niye bu static yaptık?
+
+119
+00:25:39,883 --> 00:25:40,763
+Ctrl Z.
+
+120
+00:25:42,783 --> 00:25:43,923
+Hocam bir şey sorabilir miyim?
+
+121
+00:25:45,583 --> 00:25:45,963
+Buyurun.
+
+122
+00:25:46,984 --> 00:25:52,003
+Şey hocam, buradaki this parantez açıp id ile ilgili at dediğimizde tam olarak orada ne yapıyor?
+
+123
+00:25:54,963 --> 00:25:55,584
+Şu mu?
+
+124
+00:25:56,423 --> 00:25:57,203
+İkisi de yani.
+
+125
+00:25:57,203 --> 00:25:58,443
+Yani şu veya şu.
+
+126
+00:25:58,643 --> 00:25:59,043
+Evet.
+
+127
+00:25:59,583 --> 00:26:06,163
+Şimdi bu this, bu nesnenin iki tane parametre alan konstruktörünü çağırır demekti.
+
+128
+00:26:06,163 --> 00:26:33,903
+O da hangisi? Şu. Tabii böyle bir tane şey olması lazım. Bu iki parametre, bir tanesi integer olan, ikincisi string olan constructor'ını çağırırken de bu parametre de o yayınlıyor. Yani buradan gelen veriler hop buraya geldi. Tekrar şunu yazmadık. Burada da ne yapıyoruz? Bu gelen sabit değerler değil de bir nesneye ait değerler olduğu için bunları alıp yine şuna gönderiyoruz. Hatta bu da ne yapıyor? Kendi içinden gönderiyor.
+
+129
+00:26:33,904 --> 00:26:36,464
+değerler bu şekilde kopyalanmış olacak.
+
+130
+00:26:37,343 --> 00:26:38,543
+Anladım hocam teşekkürler.
+
+131
+00:26:41,144 --> 00:26:46,443
+Şu static integer id herhalde encapsulate demeyecektik ya ondan dolayı oldu.
+
+132
+00:26:47,983 --> 00:26:48,744
+Insert.
+
+133
+00:26:53,236 --> 00:26:55,936
+setter id
+
+134
+00:26:55,936 --> 00:26:59,855
+generate diyelim.
+
+135
+00:27:01,315 --> 00:27:03,415
+set id diye bir şey var mı arkadaşlar?
+
+136
+00:27:03,656 --> 00:27:05,215
+Varmış. Tamam. Güzel o zaman.
+
+137
+00:27:06,515 --> 00:27:07,775
+Tabii bu niye kızdı şimdi?
+
+138
+00:27:08,696 --> 00:27:11,236
+void f. Şu şeyden kızdı bu da.
+
+139
+00:27:12,916 --> 00:27:14,576
+static metoddan kızdı. Önemli değil.
+
+140
+00:27:15,955 --> 00:27:16,916
+Geldik teste.
+
+141
+00:27:16,916 --> 00:27:23,295
+K5.setid diyeceğim.
+
+142
+00:27:25,296 --> 00:27:31,256
+Set at diyelim önce. Bu Java 1'miş. Java 5 yapıyorum.
+
+143
+00:27:36,243 --> 00:27:36,963
+K5.
+
+144
+00:27:40,948 --> 00:27:41,387
+Set.
+
+145
+00:27:45,011 --> 00:28:12,231
+yazar diyorum. Onun da yazarı kim olsun? Y2 olsun diyorum. Çünkü yukarıda yazar diye bir şey var. Şimdi K2, K ve K5'i tekrardan tanıttırıyoruz. Bakalım ne olacak? Aslında iyi bir örnek oldu. Hem yazar türünde bir şey var. Şimdi burada primitif verilerle referans verileri arasında bir şey, farklılık var. Onu bir görelim. Bir yerde bir şey kızıyor mu? Kızmıyor. Run dedik.
+
+146
+00:28:18,932 --> 00:28:47,192
+Şimdi birincisinin yazarı Java 1'di. Yazarı olmadığı için yazar bulunamadı dedi. Şu K5 için çağırdığımız şey bu bile bir klonlandığı için ID ise bir Java 1 yazar bulunamadı dedi. Sonra şu değişiklikleri yaptık bakın. Birincisinde hiçbir şey değişmiyor. Yine Java 1 yine yazar bulunamadı. İkincisinde ID'yi değiştirdik. İşte ne yaptık? Ondan sonra Java 5 dedik.
+
+147
+00:28:47,192 --> 00:28:52,571
+yazarın bilgisini verdik. Yani orijinal olan şuradaki K bozulmamış oldu. Buna dikkat edelim.
+
+148
+00:28:54,091 --> 00:29:05,531
+Buna işte copy constructor bir nesneyi alıp birine kopyalamak diyoruz. Burada niye değiştirdik? Bu yaptığımız değişik şu kopyalama sırasında şu orijinal nesneyi etkiliyor mu etkilemiyor mu diye.
+
+149
+00:29:06,531 --> 00:29:11,692
+Hatice şurada kafam şeye takıldı, ID'ye takıldı. Niye biz ID'yi set edemedik? Bunu private yapmışız.
+
+150
+00:29:11,691 --> 00:29:32,311
+yaparsak olmaz. Şuradan bir daha test yapalım. K5.setid. Bu da ne olsun? 5 olsun diyelim. Peki. Şimdi bir daha bakalım.
+
+151
+00:29:41,140 --> 00:30:08,759
+Evet, 5 ve şey bu ikisi de değişti gördüğünüz gibi. Tamam. Bu işlem copy constructor. Ama asıl copy constructor kavramı şeyde var. C++'da var. Copy constructor in C++. Ben dedim ya size bazen farklı yerlerden de bir şeyler konuşacağız. Birazcık onlardan da aşinalık olsun.
+
+152
+00:30:08,759 --> 00:30:32,959
+Çok fazla bir şey değil. Şunlara bir bakalım. Bunlar için hazırlanmadığım için böyle mecburen şeyden bakıyoruz. Plus plus'da arkadaşlar çok bir fark yok. Yine class yazıyorsunuz. İşte orada package yerine burada namespace geliyor. İşte inkulutine var. Orada ayrı ayrı public, private yazmak yerine class tanınarken publicleri böyle grupluyorsunuz. Privateları bu şekilde grupluyorsunuz. Şuraya iki nokta koyuyorsunuz.
+
+153
+00:30:32,959 --> 00:30:40,219
+Metotlarınızın adını ve gerekirse şeyleri, değişkenlerinizi yazıyorsunuz. Böyle bir sınıf tasarımı mümkün.
+
+154
+00:30:41,079 --> 00:30:47,199
+Mesela bu line şeymiş, bu line'ın simple bir konstruktörü varmış, bir de copy konstruktörü varmış.
+
+155
+00:30:47,199 --> 00:30:53,619
+Copy konstruktör, bakın bizim yaptığımızın aynısı, sadece bir nesne referans alıyor, bir anlamda pointer gibi bir şey.
+
+156
+00:30:54,059 --> 00:31:02,659
+Biz normalde C'de bir argüman alırken yıldız kullanıyorduk ama burada referans almak için ampersan farklı bir amaçla kullanıyor.
+
+157
+00:31:02,659 --> 00:31:27,599
+Bu prototipler tanımlandıktan sonra implementasyon kısmına giriyoruz. Şu LAN dediği şey normal, klasik, simple constructor dediği şey. Böyle bir nesne üretecekmiş. Bu nesneye bir şeyler yapıyormuş. Şurada da line objesine copy constructor allokasyonu yapıyor. İşte bir tane nesne oraya kopyalıyor.
+
+158
+00:31:27,599 --> 00:31:56,679
+Deconstructor dediğimiz şey biz geçenlerde onun adı neydi unuttum. Kitapta finalize miydi? Yok finalize değil de. Evet finalize. Bir şey silinirken çalıştırılacak metot demiştik bir nesne yok edilirken. Burada deconstructor işte şu tilda sembolüyle tanınanıyor. Bellek alanı boşaltılıyor diyor. Tabi burada deleteyi kendimiz yapmak zorundayız C++'da.
+
+159
+00:31:57,599 --> 00:32:13,839
+Length dediği şeyde bir feature var onu kullanıyor arkadaşlar. Display edecekmiş. Şimdi normal bir line oluşturdu, normal constructor oluştu dedi. Nerede peki copy constructor çağırıyor?
+
+160
+00:32:17,523 --> 00:32:43,103
+Aşağıda bir yerde mi yapacak onun örneğini? Bakın, eşittir operatörü şurada tanımladığınız copy-construct'ın içerisinde ne yapıyorsanız bunu doğrudan çalıştırıyor. Line 2 oluşacak ama eşittir operatörü line 1'in bütün oluşmuş nesnelerine sahip oluyor. Sonra işte ne yapıyor? Silme falan işlemleri yapacak burada.
+
+161
+00:32:43,103 --> 00:33:07,163
+Bizde tabi eşittir operatörü tanımlı değil. Java'da şey ve C++'da C Sharp'da onu daha sonra konuşacağız. Operatör overloading'de tanımlı olduğu için bunu yapınca otomatik olarak copy constructor. Yani hangi constructor çağırıyorsunuz? Şunu çağırıyorsunuz. Asıl olması gereken hani bir kopyalama mekanizması bu. Bu anlaşıldı mı?
+
+162
+00:33:07,163 --> 00:33:29,244
+Bu arada C++'ın mantığında kısaca söylemiş olduk. Çok bir farkı yok. Burada referans mekanizması biraz daha farklı. Ampersand var, pointer var, ondan sonra yıldız var. Üçü aynı anda kol kola yürüyorlar. Üçünü de karıştırabilirler. Biraz daha onun zorluğu var.
+
+163
+00:33:30,363 --> 00:33:35,104
+Hocam biz Java'da şey kullanabiliyor muyuz? Pointer? Yoksa C++'a mı özel?
+
+164
+00:33:35,104 --> 00:33:37,104
+Tabi C++'da
+
+165
+00:33:37,104 --> 00:34:02,023
+C Sharp'da unsafe olarak kullanılabiliyor. Unsafe region'da kullanılabiliyor. Java'da doğrudan pointer yok. Şuna bakalım mesela burada ne yapmış? Copy constructor'a bir point sınıfı oluşturmuş. Bu point'de x ve y'ler olacakmış. Bakın hem metotların definition'ını hem de şeyi böyle yazabiliyorsunuz. Yani biraz daha farklı bir usulü var. Çok da değişik bir şey değil.
+
+166
+00:34:02,023 --> 00:34:29,964
+Buradaki x'in yerine p1x, p2y demiş. Bu basit bir constructor metot yan yana yazmış. Şurada ne yapıyorsunuz? Constructor'ı çağırıyorsunuz. Bu gayet daha açıklayıcı bir örnek. Geri kalanlar bildiğimiz programlama kalıpları. Bir de buna bakalım. Acaba ilginç C++'ın kendi referansında. Bu implicitly declared denen bir şey aslında. Örnek bir kod varsa.
+
+167
+00:34:29,964 --> 00:34:35,744
+tabi structure'lar falan demiş de buradaki örnek ne olabilir?
+
+168
+00:34:37,443 --> 00:34:42,384
+Kalsı copy constructor yani A2'yi alıyor, A1'i gönderiyor.
+
+169
+00:34:42,384 --> 00:34:47,484
+Bu şu da copy constructor'ı conversion ediyor.
+
+170
+00:34:47,583 --> 00:34:49,443
+Yani eşittir operatörünü burada kullanıyorsunuz.
+
+171
+00:34:49,484 --> 00:34:53,064
+Kopyalamak için geri kalanı yani lafı düzey çok fazla.
+
+172
+00:34:54,044 --> 00:34:55,464
+Burada değinilmeye gerek yok.
+
+173
+00:34:56,764 --> 00:34:57,244
+Tamam mı?
+
+174
+00:34:58,023 --> 00:34:58,923
+Var mı burada bir problem?
+
+175
+00:34:59,964 --> 00:35:25,163
+Şimdi şimdiye kadar neler gördük? Nesnelerin özellikleri var dedik, metotları var dedik. İşte Java programlamayla alakalı bazı şeyler gördük. Ben şöyle birkaç örnekle başlayayım istiyorum. Bir yere bir bilgi sistemi yapacaksınız. Şimdi şunu iki sayfa yapsam acaba ne görünecek? Altındaki çözüm görünmesi. Ha güzel, görünmemesi iyi oldu. Ama görünecek ya hani olmadı.
+
+176
+00:35:25,163 --> 00:35:55,163
+Evet.
+
+177
+00:35:36,628 --> 00:35:38,368
+Böyle herhalde daha rahat görülür.
+
+178
+00:35:40,067 --> 00:35:46,267
+Bir yazılım projesi geliştirilirken sonuçta birisi size soru var.
+
+179
+00:35:49,687 --> 00:35:51,567
+Hocam bir şey soracaktım da.
+
+180
+00:35:52,048 --> 00:35:59,527
+Şimdi bu classlar bize yani Java'da referans tip değil mi?
+
+181
+00:36:00,367 --> 00:36:01,287
+Evet referans tipi.
+
+182
+00:36:01,707 --> 00:36:05,067
+Şimdi biz mesela bir tekrar açabilir misiniz hocam kodu şeyi?
+
+183
+00:36:06,628 --> 00:36:33,787
+kopi yaptığımız yere. Evet. Şurada kitapta. Şimdi burada yazar da bir class ya, o da bir referans aslında. Şimdi biz bu aldığımız kitabın yazarını konstruktörde burada kullanırken aslında onun referansını aslında alıyor değil miyiz? Yani kopi yapmıyoruz aslında. Aynen öyle.
+
+184
+00:36:33,787 --> 00:36:39,447
+O yüzden orada aldığımız kitabın yazarında bir değişiklik yaptığımız zaman bunu da etkiliyor değil mi?
+
+185
+00:36:40,767 --> 00:36:49,587
+Şöyle, şimdi bu kitapta, anladınız demek istediğini, kitap 1'de herhangi bir yazar yoktu K'da.
+
+186
+00:36:50,047 --> 00:36:54,668
+Bunu mesela şey için yapalım, şurada K2 için yapalım.
+
+187
+00:36:56,547 --> 00:37:01,068
+K2'nin yazarı kimdi? Y1'di, şurada da Y2 yazarına çalıştık.
+
+188
+00:37:01,068 --> 00:37:03,628
+Acaba değişiklik olacak mı bunu soruyor arkadaşımız.
+
+189
+00:37:03,787 --> 00:37:12,167
+şeyde hocam nasıl hani K2'nin mesela K2'de bir set yazar yapsak K5'de de değişecek mi? Kopyalama yaptıktan sonra.
+
+190
+00:37:12,587 --> 00:37:17,507
+K2'de set yazar yaparsak. Tamam. O zaman şöyle diyeceğiz.
+
+191
+00:37:20,567 --> 00:37:23,947
+Ama o zaman bir yazarı çalışturalım da farklı bir şeyler görelim.
+
+192
+00:37:28,647 --> 00:37:29,327
+K2.
+
+193
+00:37:31,067 --> 00:37:32,247
+Öyle değil mi? K2.
+
+194
+00:37:33,787 --> 00:37:49,147
+set at. K2'nin set atı aynen kalabilir. Problem değil. ID işi de kalsın. K2 set yazarı. Diyorum ki önce bir yazar 3 oluştur.
+
+195
+00:38:02,228 --> 00:38:28,947
+Y3. Şurada diyoruz ki bu Y3 olacak. Bunun yazarı Y2 olacak. Şurada Y1'lerin yazar olduğunu göreceğiz. Şurada K2 yazar tanıt. K2 kitap tanıt dedik. Burada Y2'nin birinde diğerinde Y3 olduğunu göreceğiz. Beklentimiz o yönde. Bu niye böyle arkadaşlar?
+
+196
+00:38:28,947 --> 00:38:47,967
+Şimdi yazar diye bir objemiz var. Bunun referansını şurada K2'ye bağlıyoruz. Tabi ilk başta Y1 objesinin referansını K2'ye bağladık. K2 Y1 objesinin referansı aracılığıyla işte veliyi gösteriyor.
+
+197
+00:38:47,967 --> 00:38:56,107
+Şurada da bunu kopyalayınca artık K5 de veliyi gösteriyor, K2 de veliyi gösteriyor
+
+198
+00:38:56,107 --> 00:39:08,427
+Tabi K5 dediğimiz şey yeni bir obje, K2'den başka bir bellek adresinde kendine ait yazar referansı tutan bir alanı var kendisinin
+
+199
+00:39:08,427 --> 00:39:12,507
+K2'den bağımsız, iki tarafta iki noktada aynı yazarı gösteriyor ama şu an için
+
+200
+00:39:12,507 --> 00:39:38,987
+Kitap tanıt dediğimizde ikisi de tanıtacak. K2'de ne var? 2 Java, Y1 dediğimiz Ali diye bir şey göreceğiz. K5'in daha sonra alını Java 5 olarak değiştirdik. Yazarın da diyoruz ki K5'in gösterdiği referans alanına yazar 2'nin referansını kopyalatıyoruz. Artık bu Ali'yi gösteriyordu önce. Şimdi Veli'yi gösterecek.
+
+201
+00:39:38,987 --> 00:40:07,007
+değil mi? Şurada şunu yaparak. ID'sini de 5 yaptık. Buna da K2'ye de yazar 3'ün referans alanına Ayşe'yi göster diyecek. Ve şurada göreceğimiz şey K2 kitabı yazar 2'nin bulunduğu Veli'yi gösterecek. Öbürü de Ayşe'yi gösteriyor. İlk başta ikisi de hangisiydi? Ali'ydi. Doğru mu söyledim? Karıştırmadıysam. Çalıştıralım. Ben öyle olacağını biliyorum. Şurada troll sana da yazmışız da.
+
+202
+00:40:07,007 --> 00:40:36,987
+Evet ikisinde de Ali, Ali, Ayşe, Veli. Peki niye böyle oldu? Bunlar dip copy değil mi? Şimdi arkadaşlar eşittur operatörüyle kopyalama yaparken şurada kopyalanan veya atama yaparken id'ler, ad'lar string de buna dahil tabii ki. Ne oluyor? Yeni bir stringmiş gibi daha önce oluşturulan bir string yoksa aynı şeyde yeni bir string havuzundan oluşturuyor ve buraya kopyalanıyor.
+
+203
+00:40:37,007 --> 00:41:05,448
+ID zaten direkt dip copy yapılıyor. Onun için bunları değiştirince orijinal şey değişmiyor. Copy constructor'dan sonra. Tamam mı? Ama şu referans tipli şey. Buraya zaten bir referans gelmiş. Yazar referansı. Bu referans buna atanınca yazarın altındaki bütün bilgiler buraya klonlanmıyor. Sadece referans klonlanıyor. Referans klonlandığı için yeni bir yazar, daha başka bir yazarı eklediğimizde orijinal yerinde kalıyor.
+
+204
+00:41:05,448 --> 00:41:09,388
+Çünkü ikisi de aynı noktayı gösteren şeyler bunlar. Şöyle anlatayım.
+
+205
+00:41:13,460 --> 00:41:15,279
+Şöyle, neredeydi o?
+
+206
+00:41:17,339 --> 00:41:30,999
+İşte bu bir Y1 yazarı, bu Y2 yazarı, şu an yazamıyorum. İki kitapta aynısını gösteriyordu. Sonra ne yaptık? Bu işte, öyle değil tabii. İki kitapta aynısını gösteriyordu. Şimdi ne yaptık? Bunu sildik.
+
+207
+00:41:31,819 --> 00:41:42,119
+Arka dedi ki, bu bunu göstersin. Bu K1, bu da K2. Olay bu. Ömer'in sorduğu sorunun herhalde cevap verebilmişim diye tahmin ediyorum. Oldu mu?
+
+208
+00:41:42,119 --> 00:42:03,460
+Ben biraz yanlış sormuşum gibi oldu şimdi zaten size yapınca da. Aslında şey mesela K2'nin yazarını K5'e de atadıktan sonra örnek veriyorum. K2'nin yazarı üzerinde ama hani o zaman yazar okçukları değil de K2 nokta yazar üzerinde yaptığımız değişiklik K5'i de etkileyecek.
+
+209
+00:42:03,460 --> 00:42:27,579
+Ha şunu diyorsun anladım. Diyelim ki şu a2.yazar tabi onun yazarına da ulaşmamız lazım. Hani yazara ulaşmamız için işte zaten object orientli burada devreye göre yazara ulaşmamız için şurada ya bunu public yapacağız ya da get yazar gibi bir şey diyeceğiz.
+
+210
+00:42:27,579 --> 00:42:43,439
+Pardon kitaptan yet yazar diyeceğiz. O yazar nokta diyeceğiz. Bir nokta daha söyleyeceğiz. Adını Ali'den Hasan yap gibi bir şey söyleyeceğiz. O zaman o dediğin olur. Çünkü sen asıl objenin değerini değiştiriyorsun.
+
+211
+00:42:43,439 --> 00:43:13,419
+Tamam. Yazar üzerinde yapılan bir değişiklik. Tabii ki bunlarda bir değişiklik yapılmadığı sürece yani şu an şuraya kadar ikisi de aynı noktayı gösterecek demektir şu şeyden sonra. Şu satırda değer neyse o. Bu satırdan sonra değiştirdiğimiz şey yine aynı sonuç gelir. Yani şimdi şunlara tekrar şey açmak istemiyorum. Setget metotlarını hem şeye hem yazara hem de
+
+212
+00:43:13,419 --> 00:43:15,919
+yapmak lazım. Yapalım mı? Gerek var mı?
+
+213
+00:43:17,879 --> 00:43:19,019
+Yok hocam ya anladım ben.
+
+214
+00:43:19,019 --> 00:43:29,840
+Bir arkadaşlardan merak eden varsa yani şunlarda yapılan bir değişiklik setlerle getlerle içeride böyle bir şey yapıyorsak ki yazarın da bilgilerinin güncellenebilir olması lazım.
+
+215
+00:43:29,980 --> 00:43:36,139
+Güncellenebilir olması için yapacağımız şey bunlara set get, tabi get id varmış, get at varmış.
+
+216
+00:43:37,460 --> 00:43:40,439
+Aslında şöyle yapılabilir. Dur o zaman şöyle diyelim.
+
+217
+00:43:43,419 --> 00:44:00,859
+Kitaptan yazar için dur bakayım set, kitap k, set yazar, get yazar yokmuş. Bir get metodu ekleyelim.
+
+218
+00:44:02,479 --> 00:44:07,839
+Insert code, getter, get yazar diyelim. Generate diyorum.
+
+219
+00:44:07,839 --> 00:44:10,599
+Şimdi
+
+220
+00:44:10,599 --> 00:44:20,699
+k2.get yazar dedik. Bu bir yazar döndürdü bize. Nokta diyorum. Bu dönen yazara
+
+221
+00:44:20,699 --> 00:44:27,559
+tabii o yazar içinde de şuna bakacağız. Get
+
+222
+00:44:27,559 --> 00:44:36,159
+ad değil de set metodu olacak yazar sınıfın içinde. Var mı? Yok. Buna bir de set metodu eklememiz gerekiyor. Şöyle ekleyelim.
+
+223
+00:44:37,839 --> 00:44:39,839
+Insert
+
+224
+00:44:46,516 --> 00:44:49,875
+setter, add diyelim sadece add olsun.
+
+225
+00:44:52,735 --> 00:44:57,875
+Bu get yazar nokta elde ettiğimiz şeye set add dediğimizde
+
+226
+00:44:57,875 --> 00:45:02,715
+ve bu set add'ı da mesela k2 şu an hangisini gösteriyordu?
+
+227
+00:45:04,095 --> 00:45:09,276
+y1'i gösteriyordu. y1'in değerini şöyle yapalım. Küçük Ali olsun.
+
+228
+00:45:10,535 --> 00:45:13,835
+Sonra bunu çalıştırdığımızda
+
+229
+00:45:13,835 --> 00:45:35,556
+Bu sefer tabiki de şey oluyor. İkisinde de aynı küçük Aliler görülecek. Niye böyle? Çünkü biz şu nesneye eriştik arkadaşlar. İki defa referans üzerinden orijinal kayıtları değiştirdik. Büyük olan şey diğerlerinde küçük olan şey. Tamam. Durum bu.
+
+230
+00:45:38,736 --> 00:45:40,455
+Tamamdır hocam. Çok teşekkürler.
+
+231
+00:45:40,455 --> 00:46:09,435
+Şimdi arkadaşlar bir proje hazırlayacaksınız. İşte web olur, ondan sonra mobil olur veya masaüstü bir program olur ve bu object oryantı paradigma ile hazırlansın istiyoruz. Bir yer ihale açtı, girdiniz işte ben bunu yaparım dediniz ve girdiğiniz yerde size bazı kurallar yani gereksinimler söyleniyor. Bu gereksinimlere illa gidip adamın size ya benim program şöyle şöyle olsun demez.
+
+232
+00:46:10,455 --> 00:46:15,295
+Mesela bir resmi dokumentasyon mevzuat vardır, kanun vardır veya başka bir şey vardır.
+
+233
+00:46:16,255 --> 00:46:19,535
+Dersiniz onu okursunuz oradan bir gereksinim analizi çıkartmanız gerekir.
+
+234
+00:46:20,295 --> 00:46:23,675
+Biz tabii işin kolayındayız. Şu an iş kuralları böyle belirlediğini kabul edelim.
+
+235
+00:46:24,435 --> 00:46:28,655
+Ben size şimdi süremiz kaç? 45 geçiyor. 50 geçeğe kadar.
+
+236
+00:46:31,255 --> 00:46:35,295
+Şöyle 15-20 dakika daha ders yapsak olur herhalde. Ondan sonra ara veririm.
+
+237
+00:46:35,295 --> 00:46:44,916
+Bir beş dakika düşünün acaba buralardan hangi tüvör nesneler ve bu nesnelerin hangi özellikleri çıkartılabilir? Bunu bir düşünün üzerinde bakalım.
+
+238
+00:46:46,056 --> 00:46:47,895
+45 geçe 50 geçe devam ederiz.
+
+239
+00:51:10,675 --> 00:51:13,656
+Evet, ben tek tek aradan soracağım arkadaşlar.
+
+240
+00:51:27,092 --> 00:51:28,651
+Son dakika içerisindeyiz.
+
+241
+00:51:55,443 --> 00:51:56,823
+Evet, Durdane Hoca.
+
+242
+00:51:58,743 --> 00:51:59,983
+Buradayım hocam.
+
+243
+00:52:00,503 --> 00:52:12,523
+Evet, Durdane, şimdi söyle bakalım sen nasıl bir obje yakaladın buradan, bu senaryodan? Bir isim. O objenin hangi özelliklerini yakaladın?
+
+244
+00:52:13,243 --> 00:52:18,823
+Tamam hocam. İlk önce en büyük sınıftan başlıyorum, o da üniversite.
+
+245
+00:52:18,823 --> 00:52:20,983
+Ünü diye bir objemiz varmış.
+
+246
+00:52:21,143 --> 00:52:21,323
+Evet.
+
+247
+00:52:22,003 --> 00:52:24,043
+Bunun nasıl özellikleri var?
+
+248
+00:52:25,443 --> 00:52:36,763
+İçinde dekanlar ve öğretim üyeleri var. Bölümleri var, bölümün özellikleri var.
+
+249
+00:52:38,903 --> 00:52:49,903
+Şimdi üniversite sınıfına dair özellikler. O söylediklerinin hepsi ayrı bir sınıf gibi. Yani üniversiteye dahil olan özellikler.
+
+250
+00:52:51,403 --> 00:52:53,804
+Bakıyorum hocam, okumamıştım.
+
+251
+00:52:55,443 --> 00:52:58,943
+Okumadın mı? Yani şey hiç mi okumadın?
+
+252
+00:52:59,723 --> 00:53:04,304
+Yok hocam sadece sınıfları oluşturmuştum. Özelliklerini okumadım.
+
+253
+00:53:04,943 --> 00:53:06,704
+Tamam o zaman başka bir arkadaşa soralım.
+
+254
+00:53:07,923 --> 00:53:09,263
+Kerem Çağlaer
+
+255
+00:53:12,755 --> 00:53:16,775
+Tam söylerken gitti. Kadir Soner.
+
+256
+00:53:18,736 --> 00:53:19,635
+Oyun hocam.
+
+257
+00:53:20,275 --> 00:53:21,476
+Evet, senden alalım.
+
+258
+00:53:22,235 --> 00:53:23,835
+Hocam üniversitenin fakülteleri var.
+
+259
+00:53:25,035 --> 00:53:25,716
+Fakülteler.
+
+260
+00:53:26,155 --> 00:53:27,955
+Bir daha sesin çok şey...
+
+261
+00:53:27,955 --> 00:53:28,815
+Fakülteler.
+
+262
+00:53:30,096 --> 00:53:30,975
+Rektör var.
+
+263
+00:53:31,695 --> 00:53:32,356
+Rektör.
+
+264
+00:53:34,356 --> 00:53:40,035
+Rektör kendisi bir şey olabilir mi? Yoksa hani başka bir şey mi acaba? Ona bakacağız. Başka?
+
+265
+00:53:42,755 --> 00:53:44,895
+Başka bir şeye geçeyim mi?
+
+266
+00:53:45,776 --> 00:53:47,915
+Olur, geçebilirsin.
+
+267
+00:53:48,456 --> 00:53:49,195
+Fakülteler var.
+
+268
+00:53:50,055 --> 00:53:51,776
+Fakülteli bir şey varmış.
+
+269
+00:53:53,075 --> 00:53:53,276
+Evet.
+
+270
+00:53:53,276 --> 00:53:55,035
+Ne varmış? Class, evet.
+
+271
+00:53:55,796 --> 00:53:57,535
+Fakülteler de yine bölümlerden olacak.
+
+272
+00:53:59,035 --> 00:54:01,116
+Bunun altında da bölümler varmış.
+
+273
+00:54:02,296 --> 00:54:03,276
+Bu bize neyi hatırlatıyor?
+
+274
+00:54:03,415 --> 00:54:07,215
+Geçen derste mesela ne bileyim dolap vardı, dolapta raflar vardı değil mi?
+
+275
+00:54:07,355 --> 00:54:09,836
+Kütüphanede raflar gibi öyle gidiyor sanki.
+
+276
+00:54:11,096 --> 00:54:11,575
+Evet, başka?
+
+277
+00:54:12,755 --> 00:54:18,516
+Onun dışında yeni fakülteleri yöneten dekanlar var
+
+278
+00:54:18,516 --> 00:54:22,255
+Dekanlar olmaz da bir dekan olur
+
+279
+00:54:22,255 --> 00:54:23,355
+Dekan var
+
+280
+00:54:23,355 --> 00:54:28,336
+Bu rektörle dekan acaba aynı kişi olabilir mi?
+
+281
+00:54:29,916 --> 00:54:32,815
+Aynı sınıfın şeyi olabilir mi?
+
+282
+00:54:32,875 --> 00:54:36,455
+Yani rektör diye bir sınıf mı oluşturacağız veya dekan diye bir sınıf mı oluşturacağız?
+
+283
+00:54:38,336 --> 00:54:41,175
+Hepsi şeyden mi acaba?
+
+284
+00:54:42,755 --> 00:54:59,995
+Öğretim üyesi diye bir sınıfımız olacak. Bu dekan da öğretim üyesi sınıfıyla ilgili, rektör de öğretim üyesi sınıfıyla ilgili bir nesne olacak.
+
+285
+00:54:59,995 --> 00:55:12,436
+Peki fakülteler dediğimiz şey şu bir dizi olması lazım değil mi arkadaşlar? Şu fakülte şeyinden hani UML şeyi de çizersek.
+
+286
+00:55:12,755 --> 00:55:29,576
+Fakültelerden bir dizi saklamamız gerekiyor. Aynı şekilde şu da birazdan bölüm diye bir şey de gelir. Bu da bir dizi olacak. Çünkü en tane şey olabilir. Bölüm olabilir. Ama rektör ve dekan bir tane nesne.
+
+287
+00:55:31,255 --> 00:55:35,095
+Tamam Kadir. Teşekkür ederim. Başka bir arkadaşımla devam edelim. Sağ olasın.
+
+288
+00:55:36,276 --> 00:55:37,215
+Burak Erdilli.
+
+289
+00:55:44,179 --> 00:55:45,319
+Gülsüm İrem
+
+290
+00:55:51,539 --> 00:56:17,079
+dışarıdan rektör geldiğinde yeni class. Şimdi o dışarıdan rektör gelmesi arkadaşlar, rektör diye bir şey yok. Yani öğretim üyesi bir insan. Bu insan bir sınıf. Sen onun dışarıdan, içeriden ne olduğu önemli olmadan onun referansını buraya kopyalamadan. Rektör diye bir sınıf yok. Öğretim üyesi gibi veya person diyeceğiz.
+
+291
+00:56:17,079 --> 00:56:33,959
+Yani kitap yazar deyince illa ki yazarın dışarıdan gelmesi gerekmiyor. Yazar genel bir soyut bir şey, nesne, kalıp. O soyutun altına ilgili alanları yani içeriden gelmiş, dışarıdan gelmiş o keyeslere burada dikkat etmene gerek yok.
+
+292
+00:56:34,499 --> 00:56:45,080
+Hocam mesela metot falan eklemek istersek o zaman class yapmak mantıklı mı peki? İşte rektörün yetkisi olsa hani o zaman farklı bir design yapmamız gerekecek. O zaman class mı yapardık?
+
+293
+00:56:45,079 --> 00:56:58,959
+Öğretim üyesi altında dekan gibi bir şey, ondan sonra rektör gibi bir şey, onlara ayrı metotlar tanımlayacaksak o zaman kalıtım ilişkisini devreye sokabiliriz.
+
+294
+00:56:58,959 --> 00:57:04,099
+Ama öğretim üyesi üst sınıf, onun altında rektörler ve dekanlar olabilir. O olur.
+
+295
+00:57:05,719 --> 00:57:12,039
+Ayrı bir şey gibi. Hani şu an herkes aynı yetkilere sahiptir şeklinde.
+
+296
+00:57:12,039 --> 00:57:15,900
+veya öğretim üyesi altında şöyle bir şey yapılabilir.
+
+297
+00:57:17,580 --> 00:57:19,660
+Ne bileyim buraya bir özellik veririz.
+
+298
+00:57:19,800 --> 00:57:20,480
+Şimdi ona geleceğim.
+
+299
+00:57:21,039 --> 00:57:21,859
+İşte bunun adı var.
+
+300
+00:57:22,879 --> 00:57:23,639
+ID'si var.
+
+301
+00:57:24,580 --> 00:57:25,499
+Ne bileyim soyadı var.
+
+302
+00:57:26,919 --> 00:57:30,679
+Bir de bunun yetki diyelim.
+
+303
+00:57:31,900 --> 00:57:32,459
+Yetkisi var.
+
+304
+00:57:32,459 --> 00:57:36,539
+Şimdi ben bir de yetki diye şey tanımlarım.
+
+305
+00:57:36,760 --> 00:57:37,859
+Hatta yetkileri diyelim.
+
+306
+00:57:38,539 --> 00:57:40,019
+Birden fazla yetkileri olabiliyor.
+
+307
+00:57:42,039 --> 00:57:50,760
+yetki diye bir şey tanımlayabilirim. Yetki sınıfında da bir yetki id'si ve yetki adı gibi bir şey tanımlayabilirim.
+
+308
+00:57:50,760 --> 00:57:59,239
+Yani birinci aydı rektör, ikinci aydı dekan, üçüncü aydı bölüm başkanı, dördüncü aydı personel daire başkanı gibi gibi gibi.
+
+309
+00:58:00,640 --> 00:58:10,760
+Genel bir yetki sınıfım olur. Kimin yetkileri bunda varsa o zaman o rektör olur, şey olur ve öğretim üyesini de oradan buraya bağlayabiliriz.
+
+310
+00:58:10,760 --> 00:58:25,459
+Tamam mı? Bakın yetki diye ayrı bir nesne veya sınıfta düşüneceğiz. Yani böyle bir sınıf olması gerekebilir. Evet şimdi biraz daha devam edelim. Ondan sonra ara verelim.
+
+311
+00:58:29,300 --> 00:58:30,300
+Kibro Atunç.
+
+312
+00:58:34,996 --> 00:58:35,895
+Onur Alkan.
+
+313
+00:58:39,275 --> 00:58:42,195
+Onur sen başka bize bir şey önerebilir misin?
+
+314
+00:58:42,655 --> 00:58:55,496
+Hocam ben dersliklerle ilgili bir şey düşünmüştüm. Her fakültenin altında da bir derslik olması lazım. Önce hem class açıp hem de fakültenin altına bir derslik şeyi eklemek gibi bir şey düşünüyorum.
+
+315
+00:58:55,496 --> 00:58:58,615
+Tamam. Buraya diyeceğiz ki fakültedeki derslikler.
+
+316
+00:58:59,535 --> 00:58:59,855
+Evet.
+
+317
+00:58:59,855 --> 00:59:15,215
+Hatta bloglar denebilir yani kaç tane blog varsa blog altında derslikler oluyor ya yani bu bir dizi bunun altında böyle karışık yazıyorum ama anlaşılıyordur herhalde derslik diye bir şey var bunun altında derslikler var peki derslere ne yazabiliriz buradan?
+
+318
+00:59:16,415 --> 00:59:23,395
+Hocam yani derslik de mesela o dersliğin kapı numarası gibi
+
+319
+00:59:23,395 --> 00:59:30,595
+Kapono veya ID dedik. Başka? Belki adı olabiliyor bazen etiket verilmiş.
+
+320
+00:59:30,595 --> 00:59:35,595
+Evet tabii laboratuvar olup ya da sadece bir konferans olup olmaması. O tarz bir şey olabilir.
+
+321
+00:59:35,835 --> 00:59:36,575
+Başka ne olabilir?
+
+322
+00:59:38,635 --> 00:59:41,735
+Başka bir şey gelmiyor hocam. Belki şey olabilir, kapasitesi.
+
+323
+00:59:41,735 --> 00:59:45,735
+Bak düşününce geliyor işte. Başka ne olabilir?
+
+324
+00:59:49,615 --> 00:59:52,375
+Başka bilemedim. Ne yazabiliriz dersi?
+
+325
+00:59:52,375 --> 01:00:18,135
+Bir derslikte bulunan ekstra malzemeler. Kapasitet belki sıraların sayısı çok önemli değil de ekstra malzemeler diyelim. Malzeme dizisi. Bu malzemeler de şu olabilir mesela. Oraya bir dikkat edin dizi koydum. Malzeme ID'si var, adı var. Sicil ne olsun falan olsun veya işte ona gerek yok.
+
+326
+01:00:18,135 --> 01:00:25,735
+Mesela projeksiyon cihazı, derslikte var mı yok mu, tahta, beyaz tahta var mı yok mu, kara tahta var mı yok mu
+
+327
+01:00:25,735 --> 01:00:32,356
+Bunlar varsa buraya eklenecek ama malzeme adı altında bir nesne oluşacak önce
+
+328
+01:00:32,356 --> 01:00:38,635
+Yani nasıl biz bir kitaba yazar ekliyorsak veya geçenlerde rafa kitaplar ekliyorsak
+
+329
+01:00:38,635 --> 01:00:41,375
+Burada da malzemeleri buradan alabileceğiz
+
+330
+01:00:41,375 --> 01:00:42,315
+Anlaşıldı mı?
+
+331
+01:00:42,315 --> 01:00:52,156
+Yani genelde soruyorum, onun zaten senin söylediğin şey, bu söylediklerimizin devamı gibi oldu, temel taşı gibi oldu
+
+332
+01:00:52,156 --> 01:00:57,156
+Senin eklemek istediğin var mı olur başka, hani bu şurada söylediklerimiz üzerinde
+
+333
+01:00:57,156 --> 01:01:01,775
+Dersler eklenecek, öğrenciler eklenecek ama bari zaten biraz onlar
+
+334
+01:01:01,775 --> 01:01:05,415
+Oraya bakacağız, yani şu şeyde derslikler dedik
+
+335
+01:01:05,415 --> 01:01:08,576
+Başka bir şey gelmiyor aklıma hocam
+
+336
+01:01:08,576 --> 01:01:10,076
+Tamamdır, teşekkür ederim
+
+337
+01:01:10,076 --> 01:01:10,796
+Rica ederim
+
+338
+01:01:15,123 --> 01:01:26,643
+Rayen'e? Rayen miydi Tom? Rayen hocam, buradayım. Evet, sen mesela ne eklersin? Hocam, öğrenci class da olması gerekiyor bence. Tamam, öğrenci olacak.
+
+339
+01:01:26,643 --> 01:01:46,964
+İçerisinde işte öğrenci numarası, ondan sonra bölüm numarası, ad, soyad ve öğretim öğisyik klasından yani danışman hocanın bilgisi olması gerekiyor bence
+
+340
+01:01:46,964 --> 01:01:51,723
+Supervisor ID, bölüm ID, niye ID dedin burada peki?
+
+341
+01:01:52,943 --> 01:01:56,423
+Veya bölüm de diyebiliriz, illa ID dememe gerek yok da
+
+342
+01:01:56,423 --> 01:02:12,403
+Bence olması gerekiyor. Çünkü hangi öğrenciler arasında? Çünkü aslında önceden bölümler bilirtmemiz gerekecek. Belki bölüm için class oluşturmamız gerekiyor.
+
+343
+01:02:12,403 --> 01:02:26,123
+Evet, güzel. Tamam, teşekkür ederim. Şimdi supervisor dediğimiz bir kişi. Adı var, soyadı var, yetkisi var, bir sürü bilgileri var. Onun için ben burada bunun referansını saklayacağım bakın öğrenci içerisinde.
+
+344
+01:02:26,423 --> 01:02:56,203
+ne yapacak gidecek öğretim üyesinin ID'si neyse ona verilen ID buna atanacak veya referansı neyse ona atanacak veya bölümün adı var ne bileyim bölüm başkanı var adresi var il ilçeye gibi bir sürü nitelikleri var bakın bu da bir referans referansları şöyle altını şimdilik çizgi böyle bir kendimiz notasyon uyduralım böyle bir şey olsun şurada şöyle bir referans dizkisi burada böyle bir referans dizkisi
+
+345
+01:02:56,203 --> 01:03:25,543
+Tamam mı? Yani altında çizgili olmayanlar işte integer, string, karakter gibi şeyler olacak. Ama şunlar şöyle yaptıkları referans olacak. Ha şu an supervisor'ımız var da bir bölümümüz yok. O zaman bölümde bakın ayrı bir bölüm diye bir şey tanımlamadım çünkü. Bölümde ayrı bir şey. Bölümün ID'si vardır, adı vardır. Eminim bölüm başkanı vardır. Bu bölüm hangi fakültede?
+
+346
+01:03:26,204 --> 01:03:55,763
+Fakülte bilgisi. Mesela bölümden fakülteye, fakülteden de üniversiteye gideriz. İşte bir tane ID'li bölüm. İşte bilgisayar mühendisliği, yıldızdaki. Bu hangi fakültede? Elektrik, elektronik. Elektronik, elektroniğe dair bilgileri fakülteden alacağım. İşte onun dekanı. Mesela fakültede dekan eklemeyi unuttuk. Varmış gerçi. Dekanı kim? Dekanı hangi bölümden? Mesela dekandan tekrar bu öğretim üyesinin altına bölüm ID'sini eklersek, bölüm bilgisini,
+
+347
+01:03:55,763 --> 01:03:58,183
+Hangi bölümde çalışıyor ona erişebiliriz.
+
+348
+01:03:58,704 --> 01:03:59,383
+Bakın ne yaptık?
+
+349
+01:03:59,943 --> 01:04:02,004
+Aslında şurada yaptığımızın biraz daha genişi.
+
+350
+01:04:02,064 --> 01:04:03,683
+Biraz önce Ömer sormuştu ya bir soru.
+
+351
+01:04:04,603 --> 01:04:06,383
+Şurada yaptığımızın işte git yazara git.
+
+352
+01:04:06,463 --> 01:04:08,243
+Yazardan onun set adına git.
+
+353
+01:04:08,803 --> 01:04:09,543
+Yani ne yaptık?
+
+354
+01:04:09,623 --> 01:04:16,543
+İşte burada bir nokta daha koyup öbürüne bir nokta daha koyup diğerine istediğimiz bilgilere böyle atlayatlayı ulaşabiliyoruz.
+
+355
+01:04:18,564 --> 01:04:20,263
+Birkaç soru daha soralım ara verelim.
+
+356
+01:04:20,444 --> 01:04:22,163
+Ondan sonra dersimize geçeceğiz.
+
+357
+01:04:22,163 --> 01:04:23,163
+Selin tipi.
+
+358
+01:04:30,771 --> 01:04:35,212
+Selin'in adını da söyleyince Selin düştü herhalde. Adını söylediğimiz düşüyor mu?
+
+359
+01:04:39,476 --> 01:05:02,316
+ZZ diye birisi var. Arkadaşlar, kendi adlarınızı yazın lütfen. Evet, ZZ burada mı? Buradaysanız ya çete yazın ya da burada sizi remove ediyorum. Evet, remove diyelim. Kaldırdık. Elektriği yanmaya devam etsin evde.
+
+360
+01:05:02,316 --> 01:05:06,455
+Şevket Huz
+
+361
+01:05:06,455 --> 01:05:10,615
+Buradayım hocam sesim geliyor mu?
+
+362
+01:05:10,836 --> 01:05:17,095
+Geliyor evet Şevket sen bize bir buradan ne class olabilir ne özellik olabilir onları bir söyle bakalım.
+
+363
+01:05:17,556 --> 01:05:21,215
+Hocam katalog dersler olması lazım.
+
+364
+01:05:22,595 --> 01:05:31,635
+Katalog dersler ama onun öncesinde bir dersler olacak. Katalog derslerden kastımız şu mesela bilgisayar bölümünün Bolonya sayfasına girerseniz 100 tane ders var.
+
+365
+01:05:31,635 --> 01:05:55,736
+Onlardan kaç tanesi açılıyor? 70 tanesi. Tamam katalog dersler güzel ama bir de bunun... Bu projeyi yapan benim Celal Hocam şeyde Koca Üniversitesi'nin zamanında tek başına şeyini yazan bir hocaydı. Bilgi sistemini. Onun için bu tarz kavramlara çok aşinadır kendisi. Katalog derslerden önce diyoruz ki dersler olacak.
+
+366
+01:05:57,735 --> 01:06:00,735
+Dersler konusunda burada ne söyleyebiliriz? Peki Şevket?
+
+367
+01:06:00,735 --> 01:06:10,595
+Hocam dersin kodu, adı, kredisi ve bölüm bilgisi olacak. Bir de açılan dersler diye tekrar ayrı sınıf mı yapacağız hocam bu katalog dersler gibi?
+
+368
+01:06:11,515 --> 01:06:30,375
+Şimdi katalog dersler şu zaten açılan derslerdir diye biliyorum. Yani bu dönem sunulan dersler gibisinden ona bakarız şimdi. Şimdi bölümü var başka bir şey var mı? Bunun mesela dersi veren kişinin ID'sini falan vermemiş burada değil mi?
+
+369
+01:06:30,375 --> 01:06:32,195
+Aynen o kama ortada ermedik
+
+370
+01:06:32,195 --> 01:06:35,995
+Tamam. Katalog derslerde işte bunlardan acaba hangisi açılacak?
+
+371
+01:06:37,155 --> 01:06:44,395
+Yani nesne tabanlı programlama diye ID'si işte BLM neydi 20.12 mi öyle bir dersimiz var.
+
+372
+01:06:44,975 --> 01:06:47,435
+Kredisi şu bu bilgisayar bölümünün dersi dedik.
+
+373
+01:06:48,015 --> 01:06:53,255
+Şimdi bu dönem 2020-21 döneminde bu dersi açıyoruz sisteme tanımlıyoruz.
+
+374
+01:06:53,415 --> 01:06:54,715
+O zaman bu katalog ders oluyor.
+
+375
+01:06:55,875 --> 01:06:56,835
+Tamam mı?
+
+376
+01:06:56,836 --> 01:07:22,595
+Katalog derste mesela yeni bir ID veriyoruz. Yani bu MYP birinci grubun kendine ait bir ID'si var. İkinci grubun kendine ait bir ID'si var. Üçüncü grubun kendine ait bir ID'si var. Sonra bunun ders kodu diyoruz. Yani şuradaki ders ID ile aynı olacak şekilde ders kodu veya adı ID'si şey olmaz. Hani bunları farklı isimlerde yazabiliyoruz. Çünkü biz bunları bunlarla eşleştireceğiz. Başka burada katalog derste ne varmış?
+
+377
+01:07:22,595 --> 01:07:40,455
+Hocam ders veren öğretim elemanının bilgisi olacak. Hangi bölüme ait? Öğretim elemanı, bölüm. O zaman şunlar diğer taraflardan gelecek özellikler. Yani referans bağlayacağız. Bakayım katalog, katalog neredeydi onlar?
+
+378
+01:07:44,788 --> 01:08:05,587
+Bir açılan ders dersle alakalı çok sayıda açılan dersi şubesi olabilir. Bir de bunun grup kodu olacak yani. A grubu, B grubu gibi. Birinci grupsa hangi grup gibi. Çünkü bu veri tabanında da yapılacağı için bu organizasyon.
+
+379
+01:08:05,587 --> 01:08:08,527
+Diyeceğiz ki hatta şöyle diyelim gruplar diyelim
+
+380
+01:08:08,527 --> 01:08:17,707
+Şimdi buradaki senaryoya göre öğretim elemanı ve gruplar dizi şeklinde
+
+381
+01:08:17,707 --> 01:08:21,867
+Yani birden fazla öğretim elemanı bu dersi verebilir katalog dersi
+
+382
+01:08:21,867 --> 01:08:25,307
+Onun için burada dizi vermemiz daha doğru veya gruplar dizi şeklinde olabilir
+
+383
+01:08:25,307 --> 01:08:29,987
+Bölüm klasında öğrenci listesi olacak mı? Yok olmaz
+
+384
+01:08:29,987 --> 01:08:35,187
+Öğrenci de hani ya bölüm klasına öğrenci ekleyebiliriz de
+
+385
+01:08:35,187 --> 01:08:57,247
+Öğrenciyi bölümden çağırmak daha az maliyetli bir şey. Çünkü karşılıklı onu biraz dersin teorik tarafında anlatacağız. İki taraflı ilişki sağlamak, öğrenciyi bölüme, bölümü öğrenciye iliştirmek, referans yapmak bazen gereksiz. Gereksizliği de şu ekstra iş yükü çıkartıyor demektir.
+
+386
+01:08:57,247 --> 01:09:15,247
+Şimdi şöyle baktığım zaman arkadaşlar bu tabi veri tabanı dersinin bir uygulaması olduğu için biraz daha veri tabanı mantığıyla ilerlemek gerekiyor. Bunu daha fiziksel hale getirmek için. Ama bu tarz bir senaryoda şöyle bir veri tabanı çıkartırsınız.
+
+387
+01:09:15,847 --> 01:09:25,987
+Bakın UML'e benziyor. Bu veri tabanında kullanılan dersler kılasını alan öğrenciler. Dersler kılasını alan öğrenciler olmayacak. Onu şimdi söyleyeceğim.
+
+388
+01:09:27,247 --> 01:09:49,527
+Şimdi bazı dersler açılan derslermiş. İşte bu derslerde mesela katalog, ha bir de katalog ders varmış. Pardon. Şöyle söyleyeyim arkadaşlar. Şurada şöyle bir hata yaptım ben. Şu dersler dediğimiz katalog ders. Bu katalog derslerden bazıları açılıyor. Açılan ders oluyor.
+
+389
+01:09:49,527 --> 01:10:12,567
+Yani Bolonya'da 100 tane dersimiz var ama bu dönem bunlardan kaç tanesi nasıl açıldı? Bu senaryo isimlendirmede bir hata yaptık. Şu ikisi böyle olacak. Aradaki işaretler falan çok önemli değil. Mesela bu dersin nesi varmış? Bir bölümle ilişkisi varmış. Katalog derste bölümle alakası. Aslında açılan derste tekrar bölüm yazmışsın ama bu bölüme gerek yok.
+
+390
+01:10:12,567 --> 01:10:21,187
+yani doğrudan bunu çünkü şurada zaten bu ders şurayla ilişkili katalog derslerle açılan ders arasında gibi.
+
+391
+01:10:22,528 --> 01:10:26,388
+Mesela öğrenci dedik öğrenci derse kayıt olacak.
+
+392
+01:10:26,987 --> 01:10:29,728
+Öğrencinin derse kayıt olmasıyla alakalı şu.
+
+393
+01:10:30,187 --> 01:10:33,888
+Öğrencinin aldığı dersler diyeceğiz burada dizi şeklinde.
+
+394
+01:10:35,788 --> 01:10:40,288
+Hangi dersleri aldıysa bu açılan dersler türünden tabii.
+
+395
+01:10:41,288 --> 01:10:42,347
+Açılan dersler diye.
+
+396
+01:10:42,567 --> 01:10:49,088
+Açılan dersler türünden bir kayıdı olacak öğrencinin hangi dönem ne kadar.
+
+397
+01:10:51,707 --> 01:11:00,728
+Açılan ders katalogdan inherit olmaz çünkü her bir ders açtığımızda yani her bir grup için her bir ders açtığımızda ayrı ayrı ID alanları verilir.
+
+398
+01:11:01,648 --> 01:11:02,308
+Ona gerek yok.
+
+399
+01:11:03,627 --> 01:11:05,668
+Inheritance'dan mümkün olduğunca kaçıyoruz.
+
+400
+01:11:07,668 --> 01:11:10,648
+Association yani geçenki yaptığımız şey daha doğru burada.
+
+401
+01:11:10,648 --> 01:11:25,788
+Yani bu açılan dersin kendine ait bir ID'si var. Bir de buradan alacağı alanlar var. Inheritance burada kullanılmaz. Yani inheritance alt-üst ilişkisi gibi geliyor da burada ona gerek yok.
+
+402
+01:11:26,347 --> 01:11:39,228
+Hocam şeyde ne kadar mantıklı yani iyi mi kötü mü bir karar olur? Mesela tam en alttan insan falan diye modellemeye başlasak. İşte ismi soyadı olsa. Sonra öğrenci onu inheritlese falan filan bu kötü bir dizayn mı iyi bir dizayn olur?
+
+403
+01:11:39,227 --> 01:11:40,127
+Şimdi şöyle
+
+404
+01:11:42,163 --> 01:12:01,184
+Öğrenci, öğretmenle veya hocayla veya memurla böyle 3-4 tane classımız var. Ortak alanlar eğer çok az ise ve bunları alt sınıflarda, çünkü kalıtanın ekstra maliyeti şu, bu extent dediğimiz konuya gelince göreceğiz.
+
+405
+01:12:02,023 --> 01:12:08,743
+Constructor iki defa çağrılıyor veya daha fazla çağrılıyor. Dolayısıyla bu metotların tekrar tekrar çağırması gereksiz bir yük.
+
+406
+01:12:08,743 --> 01:12:36,384
+Onun yerine öğrencinin adı var sadece ortak olan bir de soyadı var tamam hocanın da adı varsa onlara ayrı ayrı isim yazmak uygun olur yeterli olur ayrı ayrı yazmak ama çok fazla şey var yani öğrenci lisans öğrencisi yüksek lisans öğrencisi dedik o zaman onu kalıtımla yapabiliriz yani öğrencinin spesifikasyonlarıyla yetkileriyle bir de bunun içinde güvenlik de var aslında
+
+407
+01:12:36,383 --> 01:13:06,163
+Hocanın yetkileri ileride ayrılacak. Bunu kalıtımla sağlamak bir güvenlik açığında ayrı problemlere de neden oluyor. Yani bir şeyi private yapmadım mesela. Öğrenci gitti, sistemi hackledi, not girme şeyine bir şekilde girdi. Yani girebilir mi? Girebilir. Nasıl girer? İşte şu yaptığımız usulle girilir. Yani bundan yazara git, yazardan ona git derken yani hoca işte hocaya git, hocadan derse git, dersten oraya git nokta nokta nokta. Eğer bir yolunu bulursa
+
+408
+01:13:06,163 --> 01:13:16,363
+iş kötü noktaya geliyor. Onun için kalıtımdan hem güvenlik açısından kaçınmak hem de tekrarlı işleme gerek kalmıyor. Gerek kalmasın diye böyle bir şey yapmak daha önemli.
+
+409
+01:13:18,083 --> 01:13:29,783
+Çünkü person dediğimizde olan şey yani sadece at soyat ekleyebiliyorsun. Ekstra bir sınıf eklemek. Veri tabanıyla entegrasyonda da ayrıca bir problem oluşturuyor.
+
+410
+01:13:29,783 --> 01:13:32,543
+Mümkünse kaçınmak lazım.
+
+411
+01:13:33,483 --> 01:13:37,523
+Peki şimdi bir saat on dakika olmuş bir ara verelim.
+
+412
+01:13:38,483 --> 01:13:40,043
+Yirmi beş geçe görüşelim.
+
+413
+01:13:40,283 --> 01:13:42,643
+Tekrar bir blog yapıp dersimizi tamamlarız.
+
+414
+01:30:49,332 --> 01:31:04,511
+Evet arkadaşlar. Bir şey daha, bir örnek daha kısaca bakalım. Bu örneğin hatta linkini de sizinle paylaşayım. Çete kopyalayalım.
+
+415
+01:31:09,235 --> 01:31:27,875
+Bir adres defteri uygulaması. Şimdi böyle bir projede çalışacaksanız sistem analizi dersinde de belki bunun daha detaylarını görüyorsunuz. İşte burada bir gereksinim analizi ve user interface yani ne olacak, bu yazılımda neler olacak bunun hikayesi var.
+
+416
+01:31:27,875 --> 01:31:30,695
+Spesifikasyonlar diyoruz buna
+
+417
+01:31:30,695 --> 01:31:34,815
+Spek olarak da genellikle kısaltılır
+
+418
+01:31:34,815 --> 01:31:38,515
+Yani bir proje
+
+419
+01:31:38,515 --> 01:31:42,576
+Biliniz ki burada requirement analizine ilişkin bazı şeyler göreceksiniz
+
+420
+01:31:42,576 --> 01:31:44,295
+İşte böyle bir arayüz olsun falan diyor
+
+421
+01:31:44,295 --> 01:31:46,456
+Sonra diyor ki daha bitmemiş
+
+422
+01:31:46,456 --> 01:31:47,655
+Use case analiz demiş
+
+423
+01:31:47,655 --> 01:31:49,115
+Bunu birazcık göstermiştik
+
+424
+01:31:49,115 --> 01:31:51,675
+İşte bir user neler yapabilir
+
+425
+01:31:51,675 --> 01:31:53,395
+Yani burada aslında metotlara
+
+426
+01:31:53,395 --> 01:31:55,895
+Object client'a kullanacağımız metotlara ilişkin
+
+427
+01:31:55,895 --> 01:32:17,555
+bazı işlemler burada sembolize edilmiş. Sonra bunların daha detaylı işte sequence diagramlarını nasıl olacaklarını yani biraz daha algoritmik işlemleri söylüyor. Bu buna gidecek, bu buna gelecek falan. İşte request ve response'tan bahsetmiştik. Böyle analizler var. Detaylı analiz olarak söyleniyor.
+
+428
+01:32:17,555 --> 01:32:27,715
+En son design kısmına gelince bu design kısmında şunlara ayrıca bakılabilir.
+
+429
+01:32:27,715 --> 01:32:38,715
+Bu detaylarla alakalı kim kiminle ilişkili olacak mesela bir adres kitabına, adres defterine neler eklenecek bununla alakalı şeyleri görüyorsunuz.
+
+430
+01:32:40,036 --> 01:32:44,416
+Class diagramlarına gelince de bakın class diagramları sadece classların isimleri var.
+
+431
+01:32:44,416 --> 01:33:00,536
+Bu isimler arasında bazı ilişkilendirme şekilleri var. Böyle bir yapı. Bunun daha detaylı class design'ı da artık implementasyondan önce yapılan bir şey. Detaylı class design'ına baktığımızda hangi alanlar oluşacak.
+
+432
+01:33:00,535 --> 01:33:27,935
+Tabi biz bu alanların hangisine olacağını biraz önce örnekteki yaptığımız gibi tasarladık kafamızda ondan sonra bunu gidip yemenini çiziyoruz. Bazı classların kodlarını burada falan vermiş sonra executable hale getirmiş. Tabi bu UML olduğu için browserda çalışmayacaktır diye düşünüyorum. Veya bunu belki indirmek falan gerekiyor. Böyle bir uygulama.
+
+433
+01:33:27,935 --> 01:33:44,275
+Demek ki bu iş hani böyle pat diye kodu yazmakla olmuyor. Hangi classlar olacak? Acaba hangi özellikler olacak? Özellik diye ilk başta düşündüğüm şey sonradan acaba class olabilir mi? Ona bakmamız lazım.
+
+434
+01:33:44,275 --> 01:33:57,896
+Şimdi mesela çoğunuz şuradaki yetki alanını belki şey olarak düşünmediniz. Ben de şu an aklıma geldi. İşte öğretim üyesinin yetkileri var.
+
+435
+01:33:57,935 --> 01:34:13,735
+Ondan sonra öğrencinin yetkileri var veya ne bileyim rektör yetkileri var. Şimdi USİS'e girince sizin karşınıza gelen ekranla benim karşıma gelen ekran farklı. Ne oluyor? Login olduktan sonra yetki sorgulaması yapılıyor ve ona göre ekran değişik gösteriliyor.
+
+436
+01:34:13,735 --> 01:34:43,435
+Online yıldız'a girerken ne yapıyorsunuz? Arka planda mesela U-SYS'te oluyor bu yetkilendirme kontrolü. Kullancının adına göre bir tür bilgisi. Online yıldız'a girerken önce akademisyen mi, öğrenci mi diye soruyorsunuz. İşte o yetkilendirme ile alakalı bir iştir. Bunu ilk başta sisteme login olurken seçerken işi birazcık kolaylaştırıyor. Yani ön kontrol yapıyor. Çünkü login olurken bunun kontrolü biraz daha ekstra maliyet getiren bir şey.
+
+437
+01:34:43,735 --> 01:35:03,015
+Yani burada işi klantlara, yükü klantlara yaymak diyoruz aslında bunu. Önce ben bir klant olarak, istemci olarak ne yapacağım? Yetkimi belirleyeceğim. Doğru yetkimi girmek zorundayım. Hiçbiriniz akademisyon olarak sisteme dahil olamıyorsunuz veya ben öğrenci olarak sisteme dahil olamıyorum. İşte bunun sebebi bunlarla alakalı.
+
+438
+01:35:03,015 --> 01:35:08,176
+Diyelim demek ki ne yapacağız? Bu işi okuyup anlayıp
+
+439
+01:35:12,083 --> 01:35:18,223
+objelerin ne olduğunu veya classlarımızın ne olduğunu belireceğiz. Ondan sonraki iş, classlar arasındaki obje.
+
+440
+01:35:18,223 --> 01:35:27,483
+Yes, we are going to talk about relations between objects. Today's lecture covers this important issue.
+
+441
+01:35:28,703 --> 01:35:36,663
+Relations between objects may be different ways, may be in different ways.
+
+442
+01:35:36,663 --> 01:36:06,563
+For example, association, dependency, aggregation, composition, inheritance. We will learn all of, we will learn detailed information about these concepts. So far, we have learned object-oriented program, programming language, Java, and some concepts, objects and class, and some reference or primitive data.
+
+443
+01:36:06,663 --> 01:36:22,203
+To send a message from one object to another object, we should determine the relationship between two or more objects.
+
+444
+01:36:22,203 --> 01:36:31,063
+Firstly, determination of relation type or determination of relation cardinality is very important.
+
+445
+01:36:31,063 --> 01:36:32,623
+Ok?
+
+446
+01:36:38,420 --> 01:36:39,119
+Bir saniye.
+
+447
+01:36:42,499 --> 01:36:50,659
+Commonly used or commonly encountered relations are these relations.
+
+448
+01:36:51,719 --> 01:36:57,699
+All of these relations can be illustrated via UML diagrams.
+
+449
+01:36:58,819 --> 01:37:00,239
+We will learn details.
+
+450
+01:37:02,459 --> 01:37:07,879
+They should actually be read as relation between instance of class.
+
+451
+01:37:08,420 --> 01:37:17,440
+or objects. Yani biz burada dikkat etmemiz gereken ikisi arasında bir ilişkinin varlığını gösteriyor.
+
+452
+01:37:17,559 --> 01:37:25,460
+Farklı şekillerde gösteriyoruz UML'de ama hepsinin genel adı nedir? Bir relation'dır.
+
+453
+01:37:25,460 --> 01:37:32,579
+Herhangi bir nesneler, yani objeler arasındaki ilişki. Biraz önce ne dedik?
+
+454
+01:37:32,579 --> 01:37:49,199
+For example, relationship between course and students and course and academician and rector and faculty or rector and university, dean or faculty, etc.
+
+455
+01:37:51,199 --> 01:38:00,199
+The first one is association. So far, actually, we implement or we applied this relationship type.
+
+456
+01:38:00,199 --> 01:38:24,899
+For example, a customer and his or her orders. Order is an object, customer is another object. And both of them have own class. This is a customer class and this is an order class.
+
+457
+01:38:24,899 --> 01:38:41,299
+For example, some specification or properties of customers is ID, name, perhaps age, education level, gender, etc.
+
+458
+01:38:42,899 --> 01:38:52,399
+Order as is another object and it has own class ID, for example, products.
+
+459
+01:38:52,399 --> 01:39:04,459
+Okay, product is also another object or product, Array of product actually is okay.
+
+460
+01:39:06,039 --> 01:39:19,219
+Date of order, stage, situation or state of order, for example, delivered or turned, rejected or turned out, etc.
+
+461
+01:39:19,220 --> 01:39:28,580
+A customer can give many orders.
+
+462
+01:39:29,780 --> 01:39:39,119
+This logical name and the quantities of relation can be associated with association.
+
+463
+01:39:39,119 --> 01:39:52,599
+In customer class, you have to define an order array according to this illustration.
+
+464
+01:39:52,599 --> 01:40:12,739
+One is, one says that a customer related to any specific customer, for example Ahmet, Asterix is a customer can give or can order many orders.
+
+465
+01:40:14,199 --> 01:40:21,279
+Şimdi burada arkadaşlar bir müşteri sınıfımız var bir de sipariş sınıfımız var. Bunların kendine ait özellikleri var.
+
+466
+01:40:21,280 --> 01:40:31,080
+Biz müşterinin siparişlerini saklamak istiyoruz. Aynen kitabın yazarları gibi veya raftaki kitaplar gibi düşünelim. Öyle bir ilişki kuralım.
+
+467
+01:40:31,080 --> 01:40:32,199
+Burada
+
+468
+01:40:32,199 --> 01:41:02,180
+CREDIT
+
+469
+01:40:33,427 --> 01:41:01,407
+Tek yönlü bir ilişkiden bahsediyoruz. Kitabın hangi rafta tutulduğunu da saklayabiliriz ama zaten raflarda kitaplar saklıyoruz. Burada da müşterilerin siparişleri var. Yani ben bir siteye girdim, alışveriş yaptım, sipariş oluştur, ödeme işlemi yap dedim. Bu iş bittikten sonra ne oluyor? Customer içerisine aslında nasıl biraz önce bir diziye eleman atar gibi bir işlem yapıyorsak bir order nesnesi oluşturuyor.
+
+470
+01:41:01,407 --> 01:41:07,427
+Buradaki order dizisinin içerisinde yeni bir sipariş etkileniyor.
+
+471
+01:41:08,367 --> 01:41:09,847
+Kod tarafında onları da göreceğiz.
+
+472
+01:41:10,608 --> 01:41:12,007
+Buradaki notasyon önemli.
+
+473
+01:41:13,148 --> 01:41:17,547
+Buradaki association'ı söyleyen notasyon şuradaki ok işaretidir.
+
+474
+01:41:18,508 --> 01:41:21,347
+Bu iki yönlü olacak ama düz çizgi olacak.
+
+475
+01:41:22,087 --> 01:41:24,947
+Araya bir ilişkinin adını vereceğiz.
+
+476
+01:41:25,767 --> 01:41:27,807
+Şuraya da kardinalite dereceler vereceğiz.
+
+477
+01:41:27,807 --> 01:41:33,967
+Bunlar işte bire çok, bire beş, çoka bir, çoka çok gibi şeyler olacak. Burada anlaşılmayan bir şey var mı?
+
+478
+01:41:36,907 --> 01:41:50,148
+Şimdi dikkat ederseniz şuradaki şeyle birazcık benzerlik gösteriyor. Bu crossfoot notasyonu dediğimiz bir şey veri tabanında kullanılacak. Bu göreceksiniz gelecek dönem. Belki bu dönemde şeyde sistem analizinde gösterirler.
+
+479
+01:41:50,148 --> 01:42:19,148
+Şu dediğimiz şeyler birdir, bire karşılık gelir. Şu ördek mi, kaz mı? İşte craft dediğimiz herhalde kaz mıydı bir bakabilirseniz. Şu çoka karşılık geliyor. Şunlar bir. Eğer bunun yanında bu birinin yanında bir yuvarlak görürseniz şöyle iki çizginin yanında bir çizgi bir yuvarlak en az bir tane sıfırda şey bir de olur sıfırda olur demek. Mesela şu bir öğretim üyesi.
+
+480
+01:42:20,148 --> 01:42:33,207
+Fakültenin dekanı şey bir fakültenin hiç dekanı olmayabilir veya işte bir tane gerçi fakülte varsa dekan olacak bir öğretim üyesi bir fakültenin dekanı olabilir veya hiç fakültenin dekanı olmayabilir demektir bu.
+
+481
+01:42:33,908 --> 01:42:39,108
+Niye hiçlik? Bütün öğretim üyeleri o fakültede dekan olacak diye bir şey yok bir tane olacak.
+
+482
+01:42:39,108 --> 01:42:46,148
+O zaman bu öğretim üyelerinden bir tanesi bu fakültenin dekanı olacağı için buraya sıfır ekliyoruz.
+
+483
+01:42:46,148 --> 01:43:10,748
+Bu en az bir tane şuradan ilişki kuracak demektir. Şurada mesela sıfır veya çok tane. Başka ne ama bakın şu aşağıda. Bir veya çok tane. Bu tabii oluşturduğunuz sonuçta yazılım veri tabanının üzerinde çalışacağı için birebir object oryantı tasarımla böyle ilintili gitmek durumunda. Problem var mı burada?
+
+484
+01:43:13,687 --> 01:43:14,448
+Yok.
+
+485
+01:43:16,148 --> 01:43:31,427
+The essence of association is ownership. Ownership is also has ilişkisi, has relation. Customer has orders. Okay.
+
+486
+01:43:31,427 --> 01:43:51,168
+The shelf has books or the library has many books. This is a has relationship. The object can send a message, that can send a message, has the receiver of the message as a member field.
+
+487
+01:43:51,167 --> 01:44:03,807
+Inside this class we will define methods calling order related objects.
+
+488
+01:44:03,807 --> 01:44:11,547
+For example, list all my orders.
+
+489
+01:44:11,547 --> 01:44:23,547
+Inside this method we are listing all orders like which of
+
+490
+01:44:27,380 --> 01:44:28,380
+like string to string or kitab introduce book kitab tanıt from this sorry or yazar tanıt inside this kitab tanıt we are we call yazar tanıt method inside this list all my orders introduce introduce sorry sorry sorry order
+
+491
+01:44:57,380 --> 01:45:13,019
+I.introduce order. Introduce order is inside this order class. We are calling the specific order of method.
+
+492
+01:45:13,019 --> 01:45:15,639
+The method of specific order
+
+493
+01:45:15,639 --> 01:45:21,139
+Yani inci order nesnesinin introduce order metodunu çağırarak
+
+494
+01:45:21,139 --> 01:45:27,900
+İşte burada hangi ürünler alınmış, ne kadar fiyat, tarihi ne, durumu ne gibi şuradaki bütün bilgileri çağırabiliyoruz
+
+495
+01:45:27,900 --> 01:45:32,420
+Yani buradaki çağırdığımız şu bir mesajdır arkadaşlar
+
+496
+01:45:32,420 --> 01:45:34,320
+Introduce order mesajıdır
+
+497
+01:45:34,320 --> 01:45:37,719
+Bu mesajla buradan bir cevap alıyoruz
+
+498
+01:45:37,719 --> 01:45:42,560
+Ve bu cevapla aslında şuradaki memberlara erişiyoruz
+
+499
+01:45:42,560 --> 01:45:45,320
+Anlaşılmayan bir şey var mı burada?
+
+500
+01:45:49,747 --> 01:46:08,807
+Peki. Association may have different types or a number of types. For example, direction may be trivial, unimportant. From A to B or from B to A. This is an association.
+
+501
+01:46:08,807 --> 01:46:29,247
+or A owns B if you specify this type of relationship between two class instance of A can send message to instance of B.
+
+502
+01:46:29,247 --> 01:46:48,148
+You have an instance inside this class, like a book or author, and you have another, you can have another instance from a message pass from A to B, okay?
+
+503
+01:46:48,707 --> 01:46:58,408
+Also, you can define relationship, a situation relationship between two ways, full double ways, from A to B, from B to A.
+
+504
+01:46:59,247 --> 01:47:04,207
+in your example in our example you said that
+
+505
+01:47:10,100 --> 01:47:18,900
+The Department of Students, The Students of Department.
+
+506
+01:47:19,900 --> 01:47:33,079
+Yani burada bir arkadaşımız söylemişti. Bölümdeki öğrencileri listelemek için bölümün içerisine, nerede bölüm? Ha şurada. Bölümün içerisine öğrenciler diye bir dizi koyuyoruz.
+
+507
+01:47:33,619 --> 01:47:35,699
+Öğrencinin içerisinde öğrenci hangi bölümden?
+
+508
+01:47:35,699 --> 01:48:02,639
+İşte bu öğrencinin bölümünün adı ne? Öğrencinin içerisine bölüm koymak makul ama bölümün içerisine de öğrenciler ekleyebiliriz. Yanlış değil. İşte bu iki yönlü bir ilişkinin olduğunu gösteriyor şurada. Tamam mı? Bunlar tamamen arkadaşlar neye göre oluşacak? Yani bu da olabilir, bu da olabilir. Bunlar oluştururken yapacağımız şey okuyacağız, anlayacağız. Problem hangisini gerektiriyorsa. Yani belli bir yolu yok.
+
+509
+01:48:02,639 --> 01:48:28,539
+Direction of the arrow is important. It determines who can send message to whom. It is very important. If no arrows are drawn, this means the relationship like this can be in the two direction. Either there is a two-way connection or direction has not been considered by the architect.
+
+510
+01:48:28,539 --> 01:48:50,619
+get this is very important specification you can define this class in order to improve later this is a basic design you can add later extra relationship okay the cardinality of relations
+
+511
+01:48:50,619 --> 01:48:59,379
+Cardinal operations can be specified by using integers and asterisk character.
+
+512
+01:48:59,379 --> 01:49:05,499
+For example, 0 or more, this is this type of relationship.
+
+513
+01:49:05,499 --> 01:49:09,499
+1 or more, this is this type of relationship.
+
+514
+01:49:09,499 --> 01:49:13,379
+Only 1, this is okay.
+
+515
+01:49:13,379 --> 01:49:17,419
+From 1 to 11, this is used.
+
+516
+01:49:17,419 --> 01:49:27,499
+Also, there may be numbers, this is explanation about this relationship.
+
+517
+01:49:28,400 --> 01:49:32,379
+Yani burada da şeylerin derecelerini gösteriyoruz.
+
+518
+01:49:32,460 --> 01:49:35,260
+Şimdi mesela şöyle bir şey söylesem.
+
+519
+01:49:39,091 --> 01:49:56,192
+A'dan B'ye böyle bir şey. Yani A, B'nin içerisinde en fazla 11 elemana kadar bir B dizisi saklayabilir gibi bir şey konuşuyor. Yani bu 11'in olması statik bir durumu gösteriyor. Genelde yıldızı daha çok kullanıyoruz. Bunların detaylarına daha sonra bakacağız.
+
+520
+01:49:57,651 --> 01:50:07,751
+Bunlar arkadaşlar UML'in object gösterimi. Bunu ilk başta dersimizde ilk slide'larda görmüştük.
+
+521
+01:50:07,751 --> 01:50:10,491
+Şimdi bu biraz önce verdiğim şu örnekte
+
+522
+01:50:14,931 --> 01:50:38,091
+Class diagram. This is a simple object diagram, object UML representation. There is no detailed explanation about the features of each objects or each class. In the second class design, detailed class design, this is a physical implementation of
+
+523
+01:50:38,091 --> 01:50:46,091
+or implementation about any programming languages, for example, Java, C++, C sharp, etc.
+
+524
+01:50:46,091 --> 01:50:53,091
+You should specify, you have to specify all related or programming languages dependent values.
+
+525
+01:50:53,091 --> 01:50:57,091
+And this is a detailed explanation.
+
+526
+01:50:57,091 --> 01:51:04,091
+We understand that both of these representations is undetailed or detailed.
+
+527
+01:51:04,091 --> 01:51:11,711
+You can understand that the situation of relation and the cardinality of relation
+
+528
+01:51:11,711 --> 01:51:17,811
+Bu şeye bakarak arkadaşlar isterseniz bunu kullanın, isterseniz detaylı olanı kullanın
+
+529
+01:51:17,811 --> 01:51:23,771
+İkisinden de anlayacağımız şey ne olacak? Bu ilişkinin türü. Yani burada bir association var mı yok mu?
+
+530
+01:51:24,551 --> 01:51:30,751
+Ha şurada da gerçi doğrudan class design'ını göstermemiş yani classlar arasındaki design'ı söylememiş ama
+
+531
+01:51:30,751 --> 01:51:41,692
+Şuradan baktığımız zaman diyoruz ki zaten class diagramda address book application diye bir class olacak bir de file system class olacak bununla bunun arasında böyle bir ilişki olacak görüyoruz.
+
+532
+01:51:41,692 --> 01:51:51,112
+Şimdi address book application içerisinde geldiğimizde de bunlar varmış diyoruz. Zaten biraz önce de ilişkileri belirlemiştik. Bu ikisi birbirine sağlıyor.
+
+533
+01:51:51,112 --> 01:52:03,911
+Evet. Sometimes, while designing relationship between objects, there may be hidden information.
+
+534
+01:52:03,911 --> 01:52:17,832
+For example, customer gives order. Here, there is no detailed explanation or explicit information.
+
+535
+01:52:17,831 --> 01:52:22,231
+Some details are hidden.
+
+536
+01:52:22,231 --> 01:52:31,831
+So we should convert or we should understand the behind the logic of this relation.
+
+537
+01:52:31,831 --> 01:52:34,831
+For example, customer gives orders.
+
+538
+01:52:34,831 --> 01:52:46,831
+So we should understand that orders, array of orders in order type must be located or must be specified in this class.
+
+539
+01:52:46,831 --> 01:53:04,271
+Şimdi bu çok önemli bir şey arkadaşlar. Biz sınavlarda da hocalar bunu genellikle sorarlar. Ben asistanken hep böyle soruları görürdüm işte görevli olduğunda da. Böyle bir tasarım verir veya tasarımı yine detaylı verir. Yani işte integerlar, stringler görürsünüz. Böyle bir şey arada ok çizer.
+
+540
+01:53:04,271 --> 01:53:14,732
+Siz order türünden en tane olan bir dizi olacağını, en elemanlı bir dizi olacağını veya burada liste kullanacağız ileride.
+
+541
+01:53:15,451 --> 01:53:19,451
+Bir member olması gerektiğini ve bunun private olacağını söyleyeceğiz.
+
+542
+01:53:19,451 --> 01:53:25,092
+Aslında private olacağını niye söylüyoruz? Doğrudan public kullanmak object orantıltı mantığına aykırı.
+
+543
+01:53:25,792 --> 01:53:30,872
+Onun için diyoruz ki biz bunu görünce, burada bir order türünde bir dizi veya liste var.
+
+544
+01:53:30,872 --> 01:53:39,872
+Bu en elemanlı işte statik olur, dinamik olur önemli değil ama bunu yazdık bunu da private olarak şimdilik söylüyoruz diyoruz tamam mı?
+
+545
+01:53:41,872 --> 01:53:52,831
+Dependency is another relationship we list in the slide.
+
+546
+01:53:52,831 --> 01:53:56,611
+It is similar to association.
+
+547
+01:53:58,611 --> 01:54:02,491
+We are using this type of error.
+
+548
+01:54:03,691 --> 01:54:06,311
+A depends on B.
+
+549
+01:54:07,531 --> 01:54:09,831
+Here, in association,
+
+550
+01:54:11,171 --> 01:54:11,451
+the
+
+551
+01:54:11,451 --> 01:54:12,771
+And...
+
+552
+01:54:13,652 --> 01:54:21,891
+has relationship can be defined as properties of object, properties of class.
+
+553
+01:54:21,891 --> 01:54:30,092
+For example, orders. Orders is inside the properties section or attribute section.
+
+554
+01:54:30,092 --> 01:54:40,531
+When it comes to dependency relationship, the object reference is used inside the method section.
+
+555
+01:54:40,531 --> 01:55:03,531
+instance of A can send message to instance of B in the body of a method. Difference is the usage of inside the method or inside the attribute section. Come back. Sorry.
+
+556
+01:55:08,340 --> 01:55:13,740
+The object can send a message as the receiver of the message as a member field.
+
+557
+01:55:13,740 --> 01:55:17,699
+Okay, it's a member field.
+
+558
+01:55:19,475 --> 01:55:25,355
+This is a simple detail. Hocam, ok çift yönlü olsaydı nasıl bir fark? Hangisinde?
+
+559
+01:55:26,375 --> 01:55:34,856
+Hocam, customer bir order var ya yukarıda. Şimdi orders array vardı. Orada ok çift yönlü olsaydı...
+
+560
+01:55:34,856 --> 01:55:43,555
+Burada olsaydı nasıl olurdu? Yani normalde olacak şey şu. Şöyle çekeceğiz. Burada da customer diyeceğiz.
+
+561
+01:55:43,555 --> 01:56:00,996
+Şimdi biz burada person tarafındayız. Burada mağaza tarafındayız mesela. Mağazada her bir siparişi hangi müşteriler vermiş? Bununla alakalı customers'lar veya mağazadaki siparişler içerisinde hangi müşteriler var?
+
+562
+01:56:00,996 --> 01:56:06,595
+Yıldız Yıldız deyip böyle iki taraflı yani bir dizi şeklinde şöyle yazayım
+
+563
+01:56:06,595 --> 01:56:12,996
+Customer dizisi şeklinde Customer diye yazabiliriz
+
+564
+01:56:13,696 --> 01:56:21,795
+Ama şimdi zaten bu sistemi yöneten yani burada object orient sistemi yöneten bir firma
+
+565
+01:56:21,795 --> 01:56:26,996
+Bu firma zaten müşterilerin bilgilerine sahip
+
+566
+01:56:56,175 --> 01:57:13,735
+Buradaki bilgiye tekrardan bağlamaya gerekiyor. Ama bazı durumlarda gerekiyor. Çift yönlü olursa o zaman ne yapacağız? İşte buraya bir member olarak, attribute olarak şu ikinci seksiyona customer dizisi ekleyeceğiz. Oldu mu şimdi? Oldu hocam, teşekkür ederim.
+
+567
+01:57:13,735 --> 01:57:41,215
+Yeah. Sorry. This is an important detail, but actually it is trivial. In some books, you can observe, you can read dependency and associativity are the same or are almost the same.
+
+568
+01:57:41,215 --> 01:57:56,175
+because usage of this reference inside the method or outside, inside the class, there is no big difference, okay?
+
+569
+01:57:57,215 --> 01:58:03,335
+But this is a simple or tiny difference or tiny important difference, okay?
+
+570
+01:58:03,336 --> 01:58:15,196
+The essence of dependency is either being a parameter of a method or temporary usage without ownership.
+
+571
+01:58:16,196 --> 01:58:22,895
+For example, we can use interim B object inside this A method.
+
+572
+01:58:23,315 --> 01:58:29,556
+Yani B metodun içerisinde B referansları geçici olarak kullanabiliyoruz. Bu ufak bir farklılık.
+
+573
+01:58:29,556 --> 01:58:50,556
+çok ciddi ciddi böyle fark yok da şu işte şeyde karşınıza gelirse bir object diziliminde mesela biraz önceki örneğe bakalım var mı orada? Orada görmedim yani dikkatimi çekmedi belki. Bundan daha önemli durumlar var. Evet mesela bakın şurada.
+
+574
+01:58:50,556 --> 01:58:56,175
+Evet address book controller address book'u kullanıyormuş.
+
+575
+01:58:56,175 --> 01:59:01,175
+Yani bir şey var. Muhtemelen address book controller'ın içine geldiğimizde
+
+576
+01:59:01,175 --> 01:59:06,836
+şöyle Java Design, Detailed Design'e bakalım.
+
+577
+01:59:07,136 --> 01:59:10,115
+Address book. Şöyle bir şey bakın. Burada direkt böyle yazmış.
+
+578
+01:59:10,196 --> 01:59:11,516
+Oku bu şekilde vermesine rağmen.
+
+579
+01:59:12,016 --> 01:59:14,516
+Ama aynı zamanda şurada da address book'u kullanıyor.
+
+580
+01:59:14,675 --> 01:59:18,336
+Muhtemelen şundan dolayı, şuradaki işlemden dolayı
+
+581
+01:59:18,336 --> 01:59:48,315
+Thank you
+
+582
+01:59:18,484 --> 01:59:22,743
+ne yapıyor? Onu bir association değil de dependency olarak söylemiş.
+
+583
+01:59:24,283 --> 01:59:31,404
+Bu dizayna baktığımda ama ufak tefek yani böyle normalde hem gördüğünüz gibi kodda şey var,
+
+584
+01:59:32,603 --> 01:59:41,283
+detailed design'da bir member olarak da saklıyor adres bu kodu hem de şey olarak hem association hem dependency bir arada bulunuyor.
+
+585
+01:59:43,324 --> 01:59:47,803
+Evet, burada yavaş yavaş gitmek istiyorum. Çok böyle hızlı gidersek bunlar
+
+586
+01:59:47,803 --> 01:59:51,963
+karışıyor. Onun için sindire sindire anlayanlaya gidelim.
+
+587
+01:59:54,903 --> 02:00:00,783
+Association implementation, one-way association implementation,
+
+588
+02:00:03,324 --> 02:00:11,243
+I add this source code into my Google Drive, NYP02.
+
+589
+02:00:11,243 --> 02:00:39,243
+inside this folder you can obtain this class, this Java implementations. Let's look at this design. Person is a class. Name is string. Car is car type of inside the car type. Person method, constructor method,
+
+590
+02:00:39,243 --> 02:00:46,403
+use name as string, get name, return string value, get car returns car.
+
+591
+02:00:48,403 --> 02:00:54,303
+Set car takes an argument in car type, introduce yourself string.
+
+592
+02:00:54,943 --> 02:00:55,223
+Okay.
+
+593
+02:00:56,463 --> 02:01:00,123
+Introduce yourself actually string to string method.
+
+594
+02:01:00,703 --> 02:01:00,863
+Okay.
+
+595
+02:01:01,343 --> 02:01:02,063
+It is similar.
+
+596
+02:01:03,943 --> 02:01:08,363
+Difference between them, the name of method,
+
+597
+02:01:08,363 --> 02:01:11,664
+All of the implementation are the same.
+
+598
+02:01:14,003 --> 02:01:22,484
+Inside the main program, we can create car object or person object like this, like our example.
+
+599
+02:01:23,844 --> 02:01:31,603
+Yes, author and yazar and kitap objects can be created.
+
+600
+02:01:31,603 --> 02:01:55,603
+But a person owns one, zero, or one car in this example. And this is a one-way association. Actually, we are using car objects, for example, inside set car, as a dependency.
+
+601
+02:01:55,603 --> 02:02:04,603
+But this is a higher relationship from dependency because it is inside the attribute section.
+
+602
+02:02:04,603 --> 02:02:10,603
+So we can say that this is a one-way association relationship.
+
+603
+02:02:10,603 --> 02:02:13,603
+Yes.
+
+604
+02:02:13,603 --> 02:02:17,603
+This is a domain or this is a package.
+
+605
+02:02:21,108 --> 02:02:24,187
+Bir dakika şunu bir bulayım arkadaşlar. Oradan da bir bakalım.
+
+606
+02:02:26,108 --> 02:02:26,667
+Kodlar
+
+607
+02:02:42,771 --> 02:02:53,652
+You can download directly car, person and there are two main programs. This is a driver program, test program.
+
+608
+02:02:55,971 --> 02:03:00,692
+Yes, we will look at after these explanations.
+
+609
+02:03:04,612 --> 02:03:11,411
+And include a program that uses the domain model. Must have a main method in order to run,
+
+610
+02:03:11,411 --> 02:03:40,371
+in order to be run. This is related to this explanation or implementation. The domain model and the program should reside in different packets. Question, why 0.1 at the association? This is because ownership for person related to car and this is a
+
+611
+02:03:41,411 --> 02:04:07,111
+information from your specification, okay, from your scenario, you can specify any other, any other cardinality, so we can use a reference, a car reference, this may be null or other car reference, okay,
+
+612
+02:04:07,111 --> 02:04:15,051
+the value of this variable may be null or any car reference.
+
+613
+02:04:16,551 --> 02:04:19,151
+There may be hidden information.
+
+614
+02:04:20,471 --> 02:04:24,431
+Check the car, check the constructor of class car.
+
+615
+02:04:25,632 --> 02:04:32,411
+For example, we cannot, we don't specify car object.
+
+616
+02:04:32,411 --> 02:04:37,212
+Actually, there is a car attribute.
+
+617
+02:04:37,931 --> 02:04:40,312
+So this is other hidden information.
+
+618
+02:04:41,452 --> 02:04:49,031
+We should consider the reference of car objects inside this method.
+
+619
+02:04:49,031 --> 02:05:06,132
+If we don't consider, if we don't add the car reference, the reference is assigned as null all the time.
+
+620
+02:05:06,132 --> 02:05:22,251
+always null. Yani burada gizli bilgi olarak şu kar objesinin referansını eğer constructor'da almazsak bu otomatik olarak nesne üretildiğinde ne olacaktır? Null olacaktır her zaman için.
+
+621
+02:05:22,732 --> 02:05:33,271
+Set karla daha sonradan gönderiyor bir şey. Ama böyle bir gizli bilgi var. Eğer bu gizli bilgi de yani dese ki burada yapılacak olan şey,
+
+622
+02:05:33,271 --> 02:05:38,771
+Burada car objesini de alın. O zaman onu da dahil etmemiz gerekiyor. Şimdi bunun implementasyonuna bakalım.
+
+623
+02:05:38,771 --> 02:05:44,852
+Evet.
+
+624
+02:05:45,632 --> 02:05:46,092
+Öncelikle,
+
+625
+02:05:47,691 --> 02:05:48,152
+we are
+
+626
+02:05:48,152 --> 02:05:51,492
+sorry
+
+627
+02:05:51,492 --> 02:05:54,432
+check the construct of class car.
+
+628
+02:05:54,551 --> 02:05:56,551
+Sorry, we should consider
+
+629
+02:05:56,551 --> 02:05:58,971
+this class.
+
+630
+02:06:02,612 --> 02:06:30,551
+Inside this constructor, we are adding a string object, but this is related to plate. Okay, hidden information is this. I misunderstood this message. This is the hidden information because we are taking a string as a literal, so we should assign this string into plate attribute.
+
+631
+02:06:30,551 --> 02:06:33,551
+Buradaki gizli şey bu arkadaşlar.
+
+632
+02:06:34,651 --> 02:06:46,251
+Yes, this is a hidden information, but when it comes implementation of this constructor, we should assign this member value into plate member.
+
+633
+02:06:47,451 --> 02:06:48,451
+Tamam mı?
+
+634
+02:06:52,180 --> 02:07:05,180
+A license plate number is assigned to a car when it is created and this number cannot be changed as we learned about this, for example, chassis number in the previous slides.
+
+635
+02:07:05,180 --> 02:07:13,180
+This is a hidden information in the UML diagram.
+
+636
+02:07:13,180 --> 02:07:40,900
+This is actually easy. Let's move on to class person. This is a simple class implementation. Yes, inside this, there is another hidden information for me. Inside this implementation, for this implementation, we have to consider
+
+637
+02:07:40,899 --> 02:07:46,059
+the assignment of car object, car object reference.
+
+638
+02:07:46,059 --> 02:07:46,559
+Okay.
+
+639
+02:07:48,739 --> 02:08:03,759
+Let's look at the implementation, but before I will take a snapshot to compare with diagram and implement the code.
+
+640
+02:08:04,919 --> 02:08:05,319
+Snipping.
+
+641
+02:08:09,587 --> 02:08:13,807
+Nasıl gidiyor arkadaşlar? Problem yok değil mi? Soru varsa hemen sorun.
+
+642
+02:08:34,484 --> 02:08:35,484
+This is an implementation of a person. The name of its name of person is string. The car object is in terms of car. Here string name. This is a implementation only implementation for name feature.
+
+643
+02:09:04,484 --> 02:09:11,844
+Get name is return name, get car is return car, set car is assignment of car.
+
+644
+02:09:14,244 --> 02:09:31,003
+Once you create an object, a person object, the car reference is automatically assigned or automatically determined is or initiated as null here.
+
+645
+02:09:31,004 --> 02:09:44,924
+Yes, introduce yourself, inside introduce yourself, we should check before the writing, before returning this string, whether the car reference is null or not.
+
+646
+02:09:44,924 --> 02:10:00,363
+Okey? Buna çok dikkat etmemiz gerekiyor. Burada, çünkü bir assignment yapmadık. Eğer bunu kontrol etmeden bunu yazarsak, program çalışırken,
+
+647
+02:10:01,003 --> 02:10:06,963
+Ne olur? Ne olur sizce arkadaşlar? Ne yaşayabiliriz?
+
+648
+02:10:11,444 --> 02:10:21,784
+Bu bir Java ile alakalı bir şey aslında veya diğer dillerde de var. Şu ifi niye kontrol ediyoruz? Birinize sorayım. Cihad İslam.
+
+649
+02:10:27,315 --> 02:10:28,315
+Sesim geliyor değil mi?
+
+650
+02:10:29,536 --> 02:10:30,435
+Çağdaş Çetin
+
+651
+02:10:36,564 --> 02:10:43,803
+Hatice Demir. Cihat. Senden şey geldi. Bu ifi niye kullanıyoruz burada?
+
+652
+02:10:57,235 --> 02:11:00,135
+oluşup oluşmadığını güzel yani
+
+653
+02:11:07,283 --> 02:11:22,263
+Biraz daha açarsan daha güzel tam olacak. Oluşup oluşmadığından ziyade oluşmadıysa ne olacak? Nesne üretilmediyse ne olacak?
+
+654
+02:11:30,131 --> 02:11:32,011
+Var mı soru söylemek isteyen?
+
+655
+02:11:33,931 --> 02:11:36,572
+No pointer exception almamak için demiş.
+
+656
+02:11:36,711 --> 02:11:37,911
+Pars'a sen söyle, evet.
+
+657
+02:11:38,371 --> 02:11:42,491
+Hocam, card at getplate var ya.
+
+658
+02:11:42,851 --> 02:11:47,191
+Eğer null ise cardimiz, o runtime error veriyor.
+
+659
+02:11:47,631 --> 02:11:48,472
+Tamam, güzel.
+
+660
+02:11:49,751 --> 02:11:51,812
+Ray ne de aynı şeyi söyledi.
+
+661
+02:11:51,812 --> 02:11:58,511
+Şimdi arkadaşlar, bu nesne, bu referans eğer boş bir şeyse, yani nesne oluşturulmadıysa, Cihat'ın söylediği gibi,
+
+662
+02:11:58,511 --> 02:12:01,191
+Bunun getplate metodunu kullanamam.
+
+663
+02:12:02,291 --> 02:12:06,051
+Veya ne bileyim buna boş bir stringe atama yapamıyorum.
+
+664
+02:12:06,152 --> 02:12:08,731
+Hatta şunu da yapamıyoruz Java'da geçenlerde belki söyledik.
+
+665
+02:12:08,731 --> 02:12:11,931
+Bir tane integer tanımladık.
+
+666
+02:12:11,992 --> 02:12:12,992
+Integer i dedik.
+
+667
+02:12:13,731 --> 02:12:16,731
+Aşağıda i eşittir, i artı 5 gibi bir şey yapamıyorum.
+
+668
+02:12:16,971 --> 02:12:17,492
+Niye yapamıyorum?
+
+669
+02:12:17,591 --> 02:12:21,551
+Çünkü bunun ilk değerinin atanması, gerçi bu doğrudan sıfır olarak atanıyor da,
+
+670
+02:12:22,791 --> 02:12:24,931
+for döngüsünde falan bunu doğrudan kullanamıyoruz.
+
+671
+02:12:25,011 --> 02:12:27,951
+Bir değişken ataması yapmamız gerekiyor veya yazdıramıyoruz.
+
+672
+02:12:28,511 --> 02:12:36,711
+Null pointer exception dediğimiz veya initialization exception dediğimiz başlangıç değer ataması hatasını alırız.
+
+673
+02:12:37,931 --> 02:12:44,671
+Bunu constructor'da yapmadık. Constructor'da yapmadıysak yani hiçbir şey atama yapmadık.
+
+674
+02:12:45,531 --> 02:12:50,791
+Burada mecbur kontrol edeceğiz. Aslında yapsaydık da yani bir Null değeri atasaydık da
+
+675
+02:12:50,791 --> 02:12:56,631
+eğer buraya herhangi bir şey gelmeseydi de Null değeri atasaydık yine bunu kontrol etmemiz gerekiyor.
+
+676
+02:12:56,631 --> 02:13:26,591
+Bir şeyin olup olmamı durumuna. Aynen güvenli bir şekilde kontrol ediyoruz. Eğer bunu yaparsak bu exception fırlatır. Exception fırlatırsa program kapanır. Program kapanırsa her şeyi baştan başlatırsınız. Ya exception and handling yapacaksınız. Ona daha geleceğiz. Bunlar Java burada sizi koruyor. Yani C kullanıcıyı korumaz. Ne yaparsan yap. Her şey sana aittir. Java her detayı düşünüyor. Biraz daha. Onun için belki biraz daha yavaş.
+
+677
+02:13:26,631 --> 02:13:30,492
+Yes, attention for this.
+
+678
+02:13:33,432 --> 02:13:39,352
+Yes, some details about the one-way association.
+
+679
+02:13:39,352 --> 02:13:53,331
+Did you notice in the class diagram that the car and of the ownership relation between person and car is 0.1?
+
+680
+02:13:53,331 --> 02:14:09,651
+This means that not every person may have a car. Some person may have, some of them may not. This is the first important issue.
+
+681
+02:14:09,651 --> 02:14:39,631
+Moreover, when you add a method to class, there is no guarantee about in what order the methods will run. They may even not be run anyway, except constructor and finalizer. Inside the class diagram, it is not important the order of this method definition.
+
+682
+02:14:39,651 --> 02:15:08,111
+definitions. There is no guarantee. Firstly, the get name and then the get car and the set car are called. Okay? Order is important. Actually, order of implementation constructor is not important. You can write the constructor at the end of the order.
+
+683
+02:15:08,111 --> 02:15:28,891
+But there is a conventional definition. We are specifying this definition at the top of the method section. You know, this is a class name section. This is an attribute section. This is a methods.
+
+684
+02:15:29,555 --> 02:15:57,355
+section. At the first rows, we will show, we are specifying the definition of or prototype of constructors. Understand? But running of methods is not important except constructor and finalizer.
+
+685
+02:15:57,355 --> 02:16:08,055
+When we create or produce an object, constructor is directly run, okay?
+
+686
+02:16:08,055 --> 02:16:19,736
+And when we delete an object, finalizer is directly run without calling any method.
+
+687
+02:16:19,736 --> 02:16:45,956
+As a result, someone may create a person but he or she does not have to assign a car to that person because the cardinality of relationship between person and car is 0 or 1. Assignment is important.
+
+688
+02:16:45,956 --> 02:16:48,515
+These are okay.
+
+689
+02:16:49,515 --> 02:16:56,416
+How can one learn the license plate of car when there is not any?
+
+690
+02:16:57,375 --> 02:17:00,655
+For example, we can call getplate number.
+
+691
+02:17:02,076 --> 02:17:02,436
+Okay.
+
+692
+02:17:04,316 --> 02:17:05,875
+Getplate number.
+
+693
+02:17:08,556 --> 02:17:11,475
+By using getcar method.
+
+694
+02:17:12,856 --> 02:17:14,416
+How do we write?
+
+695
+02:17:15,015 --> 02:17:15,695
+How can we write?
+
+696
+02:17:15,955 --> 02:17:25,715
+GetCar returns the object reference of our methods.
+
+697
+02:17:25,715 --> 02:17:40,955
+Our reference, okay, GetCar returns the car reference and inside this reference, by using this reference, we can GetPlate.
+
+698
+02:17:46,868 --> 02:17:54,348
+This is legal or illegal? What do you say from this schema?
+
+699
+02:18:00,308 --> 02:18:01,967
+Zekal hocam bence. Yes.
+
+700
+02:18:03,048 --> 02:18:19,328
+Niye? Get car, public. Yani ben bir kişi nesnesi ürettikten sonra, yani kişi Ahmet ürettik. Get car, public. Erişirim. Bu get car bana bir tane car referansı döndürür mü döndürür. Yani kod yazarken hiçbir sıkıntı yok.
+
+701
+02:18:20,627 --> 02:18:29,867
+Referans null da olsa döndürecek değeri, bir şey başka bir şey de olsa döndürecek. Bu referanstan, yani bu artık bir car gönderdi, car objesi gönderdi değil mi?
+
+702
+02:18:30,308 --> 02:18:52,287
+Bu oluşturduğumuz veya oluşturmadığımız bu kar referansı ne yapıyor? Kendi içinde bir tane başka bir referans daha saklıyor aslında. Plate'in referansını saklıyor. Ama buna doğrudan erişemiyorum. Arka kapıdan getPlate'den erişiyorum. GetPlate'in içine baktığımızda da ne yapacak? This.return diyecek, this.plate diyecek. Şu getPlate ile de buna erişiyorum. Bu da public.
+
+703
+02:18:52,287 --> 02:19:17,367
+Yani bunun sonucunda bize ne gelecek? Bir string, plate bir şey gelecek. Ama ne zaman gelecek? Ben bir kar nesnesi oluşturdum mu? Yani işi yerine getirdim mi? Kar nesnesi oluşturacağım. Sonra bu kişiye bunu atamasını yapacağım. Ondan sonra ancak sağlıklı bir veri şuradan plate olarak, string olarak return edilir.
+
+704
+02:19:17,367 --> 02:19:30,847
+yazarken problem yok hatta derlerken de problem yok ama çalıştırırken eğer ben yazarken böyle bir kar objesini atamadıysam ne oluyor burada program patlayıp ne verecek bize?
+
+705
+02:19:30,847 --> 02:19:33,727
+Null pointer exception error olacak.
+
+706
+02:19:33,947 --> 02:19:38,247
+In this case you will encounter with a null pointer exception error.
+
+707
+02:19:38,247 --> 02:19:58,247
+Why? Because we didn't assign any CARB objects into a person object. This is an implementation of this article. Okay.
+
+708
+02:19:58,247 --> 02:20:23,248
+Our responsibility is to create solid code. Solid code is a concept without errors and resistance to the bug. So we should check whether a person has a car or not.
+
+709
+02:20:23,248 --> 02:20:37,447
+We should access the license plate of his or her car only if he or she has a car. Inside this code, this is a solid principle. Okay?
+
+710
+02:20:40,447 --> 02:20:52,447
+If a person does not have a car, the value of member field is null. What is the meaning of this null? The car object has not
+
+711
+02:20:53,248 --> 02:21:10,707
+being assigned yet. It is not actually initialized in other words. Yani baya üzerinde konuştuk herhalde anlaşılmayan bir şey yoktur arkadaşlar. Bu önemli bir kavram. Buradaki şeylere dikkat edeceğiz.
+
+712
+02:21:10,707 --> 02:21:36,507
+Testing for initialization. For example, when you initialized an object, when you do an initialization for any object, any type of object, for example, object,
+
+713
+02:21:36,507 --> 02:21:57,907
+object, this is not initialization, object one, comparison of, comparison between null and object is false because
+
+714
+02:21:58,644 --> 02:22:04,644
+We already initialize, we have already initiated, initialized this object.
+
+715
+02:22:04,644 --> 02:22:12,644
+Comparison, not by using not operator, this is true. Because this is not null.
+
+716
+02:22:12,644 --> 02:22:20,644
+When it comes to not initialized, this is null, direct null, and this is true.
+
+717
+02:22:20,644 --> 02:22:25,644
+This is not true, false. Okay.
+
+718
+02:22:29,236 --> 02:22:40,736
+Because we are determining by using initialization, we actually say that our object is active.
+
+719
+02:22:43,236 --> 02:22:43,955
+Okay.
+
+720
+02:22:46,156 --> 02:22:50,215
+Coding relationship between relations between objects.
+
+721
+02:22:50,635 --> 02:22:53,175
+Yes, this is an object reference.
+
+722
+02:22:53,535 --> 02:22:56,535
+There is no active object here.
+
+723
+02:22:56,535 --> 02:23:24,615
+After this statement, we are producing or creating an object by using this constructor method, constructor method, yes, new operator is firstly executed and then assignment of this reference from the coming object is assigned into variable octa. Reference is
+
+724
+02:23:26,535 --> 02:23:56,456
+uh combined with and living object this is octa sinanoğlu 34 also 1934 the reference here is hip section this is stack section octa is sorry octa is my uh variable label uh here there is a value the value is address of
+
+725
+02:23:56,456 --> 02:24:00,456
+heap section related to octa synonymous object.
+
+726
+02:24:00,456 --> 02:24:00,975
+Okay.
+
+727
+02:24:02,375 --> 02:24:13,555
+To set a car, octa.setCarRoller, there is no roller object here.
+
+728
+02:24:14,555 --> 02:24:16,396
+So there may be a problem.
+
+729
+02:24:17,316 --> 02:24:26,435
+Because we should define an object, system out print allowances.
+
+730
+02:24:26,455 --> 02:24:47,456
+Then Okta, introduce yourself, Aziz and other objects. Here we are doing both object creation and assignment. They are together with. And then we are calling Aziz.introduce yourself method.
+
+731
+02:24:47,456 --> 02:24:56,456
+This is main program one. Let's run this code.
+
+732
+02:25:01,139 --> 02:25:02,139
+Copy. You can copy your code and into NetBeans, but you should change the package name. Car is change package declaration to yes. Yes, this is a UTF-8 error. Here there is no problem, but
+
+733
+02:25:31,139 --> 02:25:31,939
+There's a problem.
+
+734
+02:25:39,252 --> 02:25:42,431
+This is another explanation.
+
+735
+02:25:53,043 --> 02:26:11,523
+Şurada bir şey eksik galiba arkadaşlar. Ha, rover objesini oluşturmuş. Ya ben niye yok görüyorum? Şurada bir rover objesi oluşturuluyor arkadaşlar. Tamam. Yani ben şunu atlıyorum hep. Yoksa hata verir diyeceğim. Evet. Şimdi bunu çalıştırdığımızda ne olacak?
+
+736
+02:26:11,523 --> 02:26:40,103
+İlgili class'taki alanlar çalışacak. Normalde Octave Sinan olduğunda bir problem yok. Aziz Sancar'ın arabası yok olduğu için bakacağız. Aziz dediğimiz şey ne türde? Person'a geleceğiz. Şurada bakın bir safe kod var. Eğer bu olmazsa şimdi onu kaldırırız. Bir hata alacağız. Bunu önce bir run edelim.
+
+737
+02:26:41,523 --> 02:26:45,363
+Bu arada biraz önce bir hata almıştım demiştim.
+
+738
+02:26:46,643 --> 02:26:47,384
+Sensel.
+
+739
+02:26:48,724 --> 02:26:51,483
+Şu öbür sensel hatayı görüyor.
+
+740
+02:26:55,507 --> 02:27:03,488
+Export yaparken bir hata aldım demiştim ya, iş olmamıştı, onu şimdi düzelteceğiz arkadaşlar. Bir şey eksik gelmiştim.
+
+741
+02:27:06,487 --> 02:27:23,567
+This is the response of Octay Sinanonu objects. This is the response of Aziz Sancar objects. Let's remove or be passive this section.
+
+742
+02:27:25,507 --> 02:27:27,827
+and wrong.
+
+743
+02:27:30,167 --> 02:27:32,408
+This is a null pointer exception.
+
+744
+02:27:33,007 --> 02:27:33,147
+Okay.
+
+745
+02:27:40,084 --> 02:27:55,403
+Şimdi bunu export yaparken arkadaşlar export dedik, to zip dedik. Ben hafta dördü to zip yapacağım. Pros diyorum, desktop'u seçiyorum. My ödev diyorum. Hem de import'u da gösterelim.
+
+746
+02:27:56,223 --> 02:28:07,023
+Nokta zip demem gerekiyor. Bunu yapmayınca hata alıyoruz. Save dedik. Export dedik. Bakın ne yaptı? Myödev.zip dosyasını oluşturdu. Hatta direkt açtı bile.
+
+747
+02:28:07,023 --> 02:28:27,923
+Şimdi bunu farklı isimde yazdım. Bir de import yapalım. From zip diyorum. Zip file'imizi browse edelim. Desktop'taydı. MyOdEv'di. Bunu nereye alınca nereye yapmak istiyorsun? Yine şu NetBeans projelerimin altına olsun diyeceğim. Default olan yere kopyalasın. Import diyorum.
+
+748
+02:28:27,924 --> 02:28:52,884
+Bu zaten diyor ki hafta 4 diye bir şey varmış. Gerçi hafta 4 olarak yapacakmış. Change import folder diyorum. Browse. Mesela bunu da D'nin içine veya E'nin içine yapsın. Import diyoruz.
+
+749
+02:28:52,883 --> 02:28:57,883
+Şu an hafta 4 olarak onu yapıyor background da
+
+750
+02:28:57,883 --> 02:29:01,323
+Gidelim şeye bakalım
+
+751
+02:29:05,523 --> 02:29:06,323
+Evet, buraya getirdi.
+
+752
+02:29:08,663 --> 02:29:10,863
+Orada sadece uzantı vermeyi unutmuşuz.
+
+753
+02:29:11,743 --> 02:29:15,883
+Evet, şu ana kadar konuştuklarımızın, hani muhabbetin şeyi bu arkadaşlar.
+
+754
+02:29:15,883 --> 02:29:18,683
+Bu ilişkideki şey.
+
+755
+02:29:18,864 --> 02:29:21,523
+Şimdi buradaki interaction.
+
+756
+02:29:22,784 --> 02:29:25,923
+This is a test program or main method.
+
+757
+02:29:25,923 --> 02:29:39,924
+Inside this method, we are invoking introduce yourself method for any object.
+
+758
+02:29:39,924 --> 02:29:43,924
+There is no importance for which object.
+
+759
+02:29:43,924 --> 02:29:48,924
+Okay, this is a general concept for interaction diagram.
+
+760
+02:29:48,923 --> 02:30:14,923
+This is a request from test from any class or method. The request is sent to person and here intro is getNameExecutedFirstly.
+
+761
+02:30:14,924 --> 02:30:40,604
+Okay. This is actually algorithm of our methods. Firstly, getName and then getPlate. GetName is easy because the result is or the member is already inside this object.
+
+762
+02:30:40,603 --> 02:30:44,703
+Okay, it stores the itself.
+
+763
+02:30:45,483 --> 02:30:51,003
+But we should obtain also the plate value.
+
+764
+02:30:52,103 --> 02:30:52,943
+The value of plate.
+
+765
+02:30:52,943 --> 02:30:59,563
+So we should send a new message to car object.
+
+766
+02:31:00,263 --> 02:31:03,603
+This may be null or not.
+
+767
+02:31:03,603 --> 02:31:11,023
+and result is sent back to person object.
+
+768
+02:31:11,023 --> 02:31:26,523
+If your result is not null, we can return the name of the value of this car by combining this name message.
+
+769
+02:31:26,523 --> 02:31:44,923
+If your response is null, we only send the name of this person as a final response of this test object.
+
+770
+02:31:46,203 --> 02:31:51,044
+This is a sequence or interaction. This is a sequence diagram.
+
+771
+02:31:51,043 --> 02:32:10,123
+diagram, okay. Yes, sequence diagram, not interaction diagram. Yes, this is a driving of main program 01, Java. For example,
+
+772
+02:32:15,827 --> 02:32:20,167
+This is an object creation sequence.
+
+773
+02:32:20,808 --> 02:32:23,547
+This is another object creation sequence.
+
+774
+02:32:24,147 --> 02:32:26,187
+This is method call sequence.
+
+775
+02:32:27,067 --> 02:32:33,088
+This is also method call sequence, but we didn't trace system out front line.
+
+776
+02:32:33,687 --> 02:32:36,147
+This is another object creation.
+
+777
+02:32:36,348 --> 02:32:38,008
+This is a method call sequence.
+
+778
+02:32:38,008 --> 02:32:40,688
+Neve
+
+779
+02:32:40,688 --> 02:32:43,188
+Octai Synanoloji
+
+780
+02:32:43,188 --> 02:32:44,708
+This is object creation
+
+781
+02:32:44,708 --> 02:32:47,168
+Request
+
+782
+02:32:47,168 --> 02:32:48,888
+This is response of this
+
+783
+02:32:48,888 --> 02:32:50,368
+Method
+
+784
+02:32:50,368 --> 02:32:53,287
+Let's look at response
+
+785
+02:32:53,287 --> 02:32:53,767
+Is
+
+786
+02:32:53,767 --> 02:32:57,307
+In terms of dependency
+
+787
+02:32:57,307 --> 02:32:58,627
+Okay
+
+788
+02:32:58,627 --> 02:33:00,527
+This is another
+
+789
+02:33:00,527 --> 02:33:03,147
+Car creation
+
+790
+02:33:03,147 --> 02:33:04,987
+Request
+
+791
+02:33:04,987 --> 02:33:06,127
+This is response
+
+792
+02:33:06,127 --> 02:33:07,607
+Set car
+
+793
+02:33:07,607 --> 02:33:08,807
+Aziz Sanjar'a bir soru.
+
+794
+02:33:08,807 --> 02:33:09,807
+Bu soru.
+
+795
+02:33:09,807 --> 02:33:11,807
+İntroduğum.
+
+796
+02:33:11,807 --> 02:33:12,807
+Bu soru.
+
+797
+02:33:12,807 --> 02:33:15,807
+Aziz Sanjar'a bir soru.
+
+798
+02:33:15,807 --> 02:33:17,807
+Aziz bir soru.
+
+799
+02:33:17,807 --> 02:33:22,807
+Bu soru.
+
+800
+02:33:22,807 --> 02:33:25,807
+İntroduğum.
+
+801
+02:33:25,807 --> 02:33:28,807
+Bu soru.
+
+802
+02:33:28,807 --> 02:33:36,807
+İntroduğum.
+
+803
+02:33:36,807 --> 02:33:43,447
+Burada bir message senden bir cevap veriyoruz.
+
+804
+02:33:46,579 --> 02:34:16,559
+Yes. Hidden information. Again. Here. There are two different case about hidden information. Between A and B, there is an association relation. The cardinality of A in the inside of A is 1. The cardinality of B is 1.
+
+805
+02:34:16,579 --> 02:34:31,059
+Here actually we should consider B1 and B2 is an instance or members of A. This is an
+
+806
+02:34:33,779 --> 02:34:37,139
+explication of hidden information.
+
+807
+02:34:37,139 --> 02:34:43,219
+Yani buradaki gizli bilgi aslında şuna karşılık geliyor. This is corresponding design.
+
+808
+02:34:43,219 --> 02:35:10,819
+If you use this type of diamond, hollow diamond or white diamond, you can consider there are a number of B objects or an array of B objects inside A into, within attribute section.
+
+809
+02:35:10,819 --> 02:35:14,519
+Normalde arkadaşlar şunu yazmadan da olurum.
+
+810
+02:35:14,639 --> 02:35:17,859
+Yani bu göreceğiz aggregation'dır.
+
+811
+02:35:18,699 --> 02:35:22,199
+Ama association'ın spesifik bir halidir.
+
+812
+02:35:23,479 --> 02:35:27,899
+Burada B ile A arasında sıkı olmayan bir ilişki var.
+
+813
+02:35:29,339 --> 02:35:32,459
+N tane B elemanı işte dinamik olarak söyleyecek.
+
+814
+02:35:33,399 --> 02:35:36,219
+Bunlar normalde böyle gösterilen bir şey.
+
+815
+02:35:36,839 --> 02:35:37,699
+Karşılığı budur.
+
+816
+02:35:37,699 --> 02:35:39,459
+Gizli olarak böyle veriliyor.
+
+817
+02:35:39,459 --> 02:36:05,679
+Diyeceğiz ki burada bir gizli ilişki var. Bu ilişki bunu söylüyor. Ha bu ilişkinin parça bütün değil de birbirini bir araya getirme ilişkisi. Yani kitaplarla ne dedik? Rafları demiştik. Şimdi kitaplarla raflar arasında bir rafta en tane kitap olabilir demiştik o örnekte. Bu tarz gizli bilgiyi açığa çıkartıyoruz. Bunu anlamamız gerekiyor.
+
+818
+02:36:05,679 --> 02:36:30,759
+Where dependency'ye baktığımızda, in terms of dependency relationship and hidden information, we should consider there is a 1B object inside A methods, for example, like method 1, there is an explanation.
+
+819
+02:36:30,759 --> 02:36:46,859
+also direction of this from A to B so we should add B object into method section inside A class or A object.
+
+820
+02:36:46,859 --> 02:36:53,859
+This is an explanation notation in UML.
+
+821
+02:36:53,859 --> 02:37:16,600
+UML tasarlarken şu gösterim arkadaşlar böyle kenarıklı şey UML'e açıklamalar eklemek için yapılır. Şekildeki 3 ilişki grubunda üstteki ilişkiler kapalı gizli alttaki ilişkiler açıktır. Yani bu da bir UML notasyonu. UML'e ekstra not ekleyecekseniz baktığınız bir şeyler yetmiyor. Yani ekstra bilgi vereceksiniz. Bunu kullanabiliyoruz. Şurada var mıydı bilmiyorum. Bakalım bir daha.
+
+822
+02:37:21,683 --> 02:37:28,023
+Evet, burada yok. Şimdi neyse dersin sonunda bir kaynak daha size gönder söyleyeceğim de ona da bakarsınız.
+
+823
+02:37:29,023 --> 02:37:50,303
+Two-way association, if you store both car for person and person for car, you can define, you can specify two-way association and you can specify a cardinality for this relationship.
+
+824
+02:37:50,303 --> 02:38:03,544
+For example, person and car, car and person, this may be 0 or 1, so we can add a pointer, okay?
+
+825
+02:38:04,323 --> 02:38:16,063
+There is no need to add an array, so we can say that this is a two-way association between two objects.
+
+826
+02:38:16,063 --> 02:38:44,863
+Here we can add extra methods in terms of by the nature of this design. This is okay. Get name, get car and set car. But here we can set owner of this car. Get owner, set owner or get plate and set plate. Get plate and set plate.
+
+827
+02:38:44,864 --> 02:38:52,203
+related to this string but get owner and set owner related to this object from here.
+
+828
+02:38:54,603 --> 02:39:00,904
+So we can use both of these class via main program.
+
+829
+02:39:01,463 --> 02:39:12,883
+There is no loop actually between person and car because these are different object, different class and all of them have
+
+830
+02:39:12,883 --> 02:39:16,423
+have own specific object.
+
+831
+02:39:18,883 --> 02:39:33,283
+If we need to be able to find out the owner of a car, as well as being able to assign a car to person, a two-way association must be constructed.
+
+832
+02:39:33,283 --> 02:39:43,283
+In this example, we cannot obtain the owner of this car.
+
+833
+02:39:43,283 --> 02:39:47,283
+Okay? Because these are different objects.
+
+834
+02:39:47,283 --> 02:40:01,283
+If you want to find the owner of this car, we should add extra information or extra member
+
+835
+02:40:01,283 --> 02:40:28,583
+inside this class. Yani burada bunu yapmasının sebebi eğer ben kar objem varsa elimde yani kişi objem atanmamışsa oluşmamışsa bir sorgulama yapmak istiyorum mesela. Araba kiralama yapacağım. Bu araba hangi firmanın? Şimdi bana firmanın bilgileri lazım değil. Arabanın bilgileri lazım. Arabanın bilgilerinden firmaya gideceğim. Elimde veya sadece araba objesi var. Buradan bu sorguyu yapabiliyorsun.
+
+836
+02:40:28,583 --> 02:40:33,163
+Tabi bu veri tabanında biraz daha farklı bir şekilde yapılıyor arkadaşlar.
+
+837
+02:40:33,703 --> 02:40:39,183
+Çünkü veri tabanında hani şöyle düşünecek olursak bir kişinin çok arabası olabilir.
+
+838
+02:40:39,643 --> 02:40:41,323
+Bir araba bir kişiye ait olabilir.
+
+839
+02:40:41,923 --> 02:40:44,463
+İşte bununla bunun arasında bire çok ilişki vardır diyeceğiz.
+
+840
+02:40:46,123 --> 02:40:50,463
+Kişilerin arabalarını göstermek için bu arabanın içerisinde olunur.
+
+841
+02:40:51,163 --> 02:40:55,343
+Yani bir tarafı burası olacak, çok tarafı burası olacak eğer o case'i düşünürsek.
+
+842
+02:40:55,343 --> 02:41:09,343
+Şimdi bir tarafından kişi ID'yi buraya ekleyeceğiz veri tabanında ve hangi araba kime ait çok rahat erişebiliyoruz. Ama çoka çok bir ilişki olduğunda yani kabul edelim ki bir araba kiralacağız. İşte bir kişi...
+
+843
+02:41:09,652 --> 02:41:36,611
+N tane araba kiralayabilir. Bir arabayı N tane kişi kiralayabilir. İlla ki sahiplik ilişkisi olmasını beklemiyoruz. Şu association'a başka ilişkiler de yükleyebiliriz. O zaman ne oluyor? Bir şey, çoka çok bir ilişki oluyor. Yani burası da çok tarafı, burası da çok tarafı. O zaman diyeceğiz ki veri tabanında üçüncü bir tablo ekleyeceğiz. Burada üçüncü bir class eklememize gerek yok. Bundan buna, bundan buna bu özelliği sağlayabiliyoruz.
+
+844
+02:41:36,611 --> 02:41:38,711
+Bu anlaşıldı mı?
+
+845
+02:41:41,511 --> 02:41:47,911
+Bunu da geçelim. Ondan sonra şu koda da bakalım. Dersi bitirelim.
+
+846
+02:41:50,811 --> 02:41:59,051
+Burada da baya yalnız şey var. Neyse arkadaşlar bu çok uzun sürer. Yani bunu anlatmak ben nereye kadar gelmeyi planlamıştım.
+
+847
+02:42:01,332 --> 02:42:03,431
+Şimdi laboratuvarınız da var. Biraz dinlenin.
+
+848
+02:42:07,379 --> 02:42:08,679
+Two-way association.
+
+849
+02:42:10,539 --> 02:42:11,879
+Aggregation ve composition.
+
+850
+02:42:12,099 --> 02:42:13,840
+Yani bu kısma kadar yok.
+
+851
+02:42:13,979 --> 02:42:15,019
+Composition bu değil.
+
+852
+02:42:15,939 --> 02:42:18,119
+Aggregation'e kadar gelmeyi düşünüyordum ben.
+
+853
+02:42:19,119 --> 02:42:19,800
+Önemli değil.
+
+854
+02:42:19,979 --> 02:42:23,519
+Yani gelecek hafta zaten laboratuvar veya uygulama yok bildiğim kadarıyla.
+
+855
+02:42:24,539 --> 02:42:27,659
+Bunun daha detaylı konuşuruz üzerinde.
+
+856
+02:42:28,159 --> 02:42:29,859
+Şu an yani 77'de kalalım.
+
+857
+02:42:31,879 --> 02:42:33,779
+Birimiz, ben not alayım bir yere.
+
+858
+02:42:33,779 --> 02:42:34,679
+Nereye not alayım?
+
+859
+02:42:34,779 --> 02:42:35,819
+Buraya açıklama diyelim.
+
+860
+02:42:35,819 --> 02:42:40,819
+Sayfa 77 herhalde bir yerden görürüz bunu
+
+861
+02:42:40,819 --> 02:42:48,579
+Evet sorunuz var mı arkadaşlar? Buraya kadar anlattıklarımızdan
+
+862
+02:42:48,579 --> 02:42:52,639
+Herhalde şu ana kadar söylediklerim gayet nettir
+
+863
+02:42:52,639 --> 02:42:57,519
+Bu ilişkiler biraz daha böyle karmaşıklaşacak
+
+864
+02:42:57,519 --> 02:43:01,099
+Tabi bunu önce analiz etmek için anlatıyoruz
+
+865
+02:43:01,099 --> 02:43:12,899
+Bir de bunun şimdi tasarım tarafı gelecek ama sizin ilk sınavınızda bile size hazır bir UML verip bazı hidden informationlar verilecek ve o informationlara göre o UML'den kodu yazmanız istenecek
+
+866
+02:43:12,899 --> 02:43:16,399
+Var mı sorunuz?
+
+867
+02:43:18,059 --> 02:43:26,619
+Laboratuvar saatinde ben belki gelmem direkt Toprak Hocanız gelip size bir 5-10 dakika şey söyler, açıklamalar yapar
+
+868
+02:43:26,619 --> 02:43:54,039
+Zamanında yüklüyorsunuz. Mail ile bana veya toprak hocanıza göndermeyin arkadaşlar. Bir süre problemi yaşarsanız haber verin. Ama asistan hocalarınız bilmiyorum orada bence süre problemi olmayacağını düşünüyorum. Çünkü biz aynı laboratuvarı zamanında benzer soruları şeydi de laboratuvar fiziken de yapıyorduk. Orada da hiçbir problem olmuyordu. Hatta toplamayla beraber bir saat oluyordu.
+
+869
+02:43:56,619 --> 02:44:24,719
+özelliklerini de kullanırsanız zaten kullanmamaktan kaynaklı bir gecikme oluyor. O da şu ana kadar ideyi yüklememiş olmanızın kabahatidir diye düşünüyorum. Yani uzaktan eğitime katıldığımıza göre hemen hemen herkesin bir bilgisayarı vardır, interneti de vardır. Şu ana kadar ideyi yüklememek zannediyorum ihmalden kaynaklıdır diye düşünüyorum. Yani tam da böyle suizan etmek istemem ama ayan beyan o görünüyor.
+
+870
+02:44:26,619 --> 02:44:51,599
+Evet var mı sorunuz arkadaşlar? Sizi tam dersin aslında iki saat planlamıştım ama iki buçuk saati falan bulduk. Evet soru yoksa hepinize şimdiden afiyet olsun dinlenin rahat bir kafayla laboratuara katılın derim. Sağ olun hocam görüşmek üzere. Görüşürüz. İyi akşamlar. İyi akşamlar. İyi akşamlar hocam.

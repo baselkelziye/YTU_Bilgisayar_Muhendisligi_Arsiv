@@ -1,0 +1,3579 @@
+1
+00:00:42,643 --> 00:00:45,963
+Arkadaşlar, merhaba. Ozan, teşekkür ederim. Merhaba, nasılsın?
+
+2
+00:00:55,539 --> 00:00:56,900
+Dertli bir şey gibi.
+
+3
+00:00:57,679 --> 00:00:58,739
+Öyle bir giriş yaptım.
+
+4
+00:01:04,180 --> 00:01:13,299
+Sağlık saat yerinde olsun ve her şey hallolur inşallah. Belki ben öyle anladım. Nasıl gidiyor arkadaşlar?
+
+5
+00:01:18,323 --> 00:01:26,264
+Var mı tekrar aranızda hastalıkları yakalanan hastalığın artışı söz konusu yine maalesef?
+
+6
+00:01:34,420 --> 00:01:38,239
+İyi aman olmasın cevap yok. En iyisi olmadı.
+
+7
+00:01:42,004 --> 00:02:06,344
+Evet, Intelij'e inceledim. Güzel kullanabilirsiniz. Hatta Toygar'la o konuda bir görüştük. Toygar burada. Şimdi UML açısından ayrı tutalım. UML dışında gayet güzel kullanabilirsiniz. Hani ben de belki ileride düşünebilirim. Eğer NetBeans'e göre daha light bir şeyse ki öyle görünüyor.
+
+8
+00:02:06,344 --> 00:02:33,224
+kullanabilirim. Fakat bu UML'de şeydeki kadar, NetBeans'teki kadar rahat bir UML çizme imkanı yok veya kod reverse etme imkanı yok. Birazdan ben size ders içerisinde NetBeans'teki şeyi, Easy UML'i biraz tanıtacağım. Geçenlerde biraz baktık ama o açıdan NetBeans biraz daha öne çıkıyor.
+
+9
+00:02:33,223 --> 00:03:01,563
+Eclipse'de mesela hiç kullanmadım o sebepten dolayı şimdiye kadar. Ama kullanılabilir. Easy UML kurarken mi sıkıntı çıkıyor? Yani o dosyaların hepsini ben geçenlerde işte uygulama saatinde bilmiyorum sen var mıydın şey yapmıştık. Bir klasörü aldım önce masa üstüne. Oradan Easy UML'i önce indirdim tabii ondan sonra yapmıştım. Hiçbir sıkıntı yaşamadım ama.
+
+10
+00:03:01,563 --> 00:03:03,843
+Yok benim açımdan problem yok
+
+11
+00:03:03,843 --> 00:03:09,623
+Ders ve lap saatlerinde bir değişiklik yapamıyormuşuz arkadaşlar
+
+12
+00:03:09,623 --> 00:03:15,803
+Yani dönem başında olsaydı belki sizlerden şey olsaydı aslında belki bana onu değiştirebilirdim ama
+
+13
+00:03:15,803 --> 00:03:21,983
+Şu an için bir şey yapamıyoruz çünkü sistem zoom oturumlarını ona göre tanımlıyor
+
+14
+00:03:21,983 --> 00:03:27,123
+Tekrardan onun için bir aksiyon yapamayız dediler
+
+15
+00:03:27,123 --> 00:03:29,343
+Öyle bir durum var
+
+16
+00:03:31,563 --> 00:03:57,283
+Bir diğer mevzu dersi tekrar almak için daptı onları vizelere dahil. Yok dersi tekrar alanlarda şöyle bir durum var. Eğer ki geçen seneki notunuz F0 dışındaysa dağılım biraz farklı oluyor. Yani vize, final, ödev, proje gibi diğer kalemleri düşünün. Ödev yok gerçi. Size dağılım biraz daha farklı olacak. Eğer notunuz F0 ise laboratuvarlara katılmanız gerekiyor.
+
+17
+00:04:00,692 --> 00:04:22,831
+kapanmadan Java girdiğim için FF düştü sanırım. Yani bilmiyorum iyi mi kötü mü? Bazıdığına göre iyi. Mesela çalışan birisi için laboratuvara katılmamak iyi bir şey. Ama hani katılmak isteyenler var. Dersi girip dinleyip veya oradaki soruları çözmek konusunda sıkıntı yok arkadaşlar. Hem uygulamalara hem de laboratuvarlara katılın. Bugün de mesela ben yine uygulamada ben olacağım.
+
+18
+00:04:22,831 --> 00:04:48,192
+ne kadar çok tecrübe olursa o kadar iyi. Bu ders biraz öyle ilerliyor. Bugün ben diğer hocalara laboratuvar programını hazırladım, gönderdim. Asistan hocamız belli. Zaten şu an kendisi şey grubunda var. Kabul etti telegram grubuna girmeye. O kabul ettiği için ben de onu onun için telegram grubu açtım bu derse. Toprak Keskin hocamız bizden mezun.
+
+19
+00:04:48,192 --> 00:05:07,831
+uygulamalarda ve laboratuvarlarda kendisi yardımcı olacak. Kendisi de tekrar size duyurular yapar da. Şu takvim belli olsun size zaten ayrıca duyuracağım. Bu hafta da yani laboratuvarda ben varım yine. Evet başka soru var mı? Başlamadan böyle bir muhabbet edelim istedim.
+
+20
+00:05:12,339 --> 00:05:20,859
+Hocam, herhangi bir gelişmeden mailler aracılığıyla yine bilgi sahibi olabiliriz değil mi? Telegram grubuna girmemize gerek yok yani.
+
+21
+00:05:21,999 --> 00:05:40,439
+Yani şey yapacağım arkadaşlar, size U-Sist'ten genel böyle çok önemli gördüğüm şeyleri zaten bildiririm. Zaten haber bir şekilde yayılıyor. Birinde bir şey olsa yayılıyor da ben ayrıca hani en küçük olasılığı bile göz ardı etmeyip şey yapıyorum, size gönderiyorum.
+
+22
+00:05:40,439 --> 00:06:09,439
+Şu ana kadar herhangi bir şey duyurmadım. Sadece şunu söyleyeyim derse katılanlara. Belki Telegram'dan takip edenler görmüştür. Size bir şey paylaştım. Ders duvarında bir link var. O linki tıkladığınızda herhalde şuydu. Şu an için burada şunu görüyor olmanız lazım. Şu olabilir veya başka bir klasör müydü ya? Neyse ona birazdan bakarız.
+
+23
+00:06:10,439 --> 00:06:24,479
+Others'ın içerisine mi attım acaba? Şu olabilir. Ha evet. Burada şu pdf'imiz var, kodlar var. Bir de faydalı linkler diye şimdilik bir şey aldım. Bunları siz görüyor olmanız lazım. Bu niye iki tane olmuş?
+
+24
+00:06:26,579 --> 00:06:28,380
+Kodlar klasörü boş yazıyor ama.
+
+25
+00:06:29,219 --> 00:06:37,759
+Kodlar klasörü boş. Şu ana kadar kod yazmadık ya. Yani yazdıkça oraya düzenli olarak şey yapacağım. Bu niye iki tane olmuş?
+
+26
+00:06:40,439 --> 00:06:56,920
+Derse eklenme, silme işlemleri tamamlandı galiba. Var mı? Hiçbir derslerinizde değişiklik olan? Yani ben şu ders eklendim bu konuda değil de. Bugün bana haber geldi. O USİS'teki durumlarınızı takip edin diğer derslerinizle alakalı.
+
+27
+00:06:58,280 --> 00:07:09,920
+Online yılında da tanımlama bir iki gün içerisinde oluyormuş. Hemen olmuyormuş belki ama. Evet. Var mı sormak istediniz? Şimdi bugün ilk iki buçuk saat kadar bir ders yapacağız.
+
+28
+00:07:10,439 --> 00:07:30,500
+İlerleyebildiğimiz kadar ilerleyeceğiz. Uygulama saatinde de yaptığımız dersle alakalı bugünkü konuları kapsayan bir kod yazacağım. Bu şekilde bugün de tamamlayacağız inşallah. Teorik kısımda İngilizce anlatıyorum. Uygulama kısımda Türkçe anlatacağım. Kod yazacağımız için orada İngilizce anlatmaya pek gerek yok.
+
+29
+00:07:30,500 --> 00:07:47,820
+Yabancı, Uyruplu arkadaş var mı burada? Hani Türkçe bilmeyen herhalde yoktur. Hani %30 İngilizce olan bir bölümün %70'i Türkçe. Ondan dolayı Türkçe bilmiyordur diye düşünüyorum. Hani uygulamada da, laboratuvarda da İngilizce anlatmak zorunda kalmayalım.
+
+30
+00:07:49,759 --> 00:08:00,259
+Evet, bir de görüntü rahat gelsin diye şu an kameramı kapattım arkadaşlar. Zaten sizin de kapalı. Aranızda beni görseniz tanımayacak olan da yoktur artık. Yeter kadar görmüşsünüzdür.
+
+31
+00:08:00,500 --> 00:08:06,500
+Let's continue in English. First I show slide.
+
+32
+00:08:15,411 --> 00:08:20,411
+Objects, class, objects, and their members.
+
+33
+00:08:20,411 --> 00:08:28,411
+Yes. Object-oriented programming based on objects and class concepts.
+
+34
+00:08:28,411 --> 00:08:34,412
+There are two basic, two important concepts related to object-oriented programming.
+
+35
+00:08:34,412 --> 00:08:38,412
+The object is the main programming element.
+
+36
+00:08:38,412 --> 00:08:43,412
+Object is a concrete,
+
+37
+00:08:50,227 --> 00:08:59,207
+Object ise concrete structure element of object-oriented concepts. Class is abstract.
+
+38
+00:09:01,367 --> 00:09:05,127
+Hocam ekran paylaşılmadı. Aynen ben el kaldırmıştım ama onu söyledik.
+
+39
+00:09:07,267 --> 00:09:13,068
+Ben o zaman size şeyi gösterdim. Şunu da görmediniz.
+
+40
+00:09:13,068 --> 00:09:24,867
+Şöyle bir klasör var. Bu klasörün altında yani siz bunu link üzerinden görüyorsunuz. Burada paylaşacağım. Şu an 3 tane şey görüyor olmanız lazım orada.
+
+41
+00:09:31,572 --> 00:09:46,532
+Arada Türkçe izahlarda da bulunacağım arkadaşlar. Benim İngilizcem çok akılç, plont değil de. Mecburen şartları sağlıyoruz dil açısından, puan açısından. Bir de dersin bir de İngilizce yazıyormuş. Onun için İngilizce vermek durumundayız. Öyle uyarı geldi.
+
+42
+00:09:46,532 --> 00:09:55,412
+Yes, object is a concrete element of object-oriented programming concept.
+
+43
+00:09:57,832 --> 00:10:03,972
+Object holds attributes and tasks of any object.
+
+44
+00:10:04,972 --> 00:10:10,651
+Attribute is a feature or characteristic of any object.
+
+45
+00:10:10,651 --> 00:10:30,572
+for example, the color of something, the height of or the length of something, etc. Task is some physical activity like run or print all books in your library, etc.
+
+46
+00:10:30,572 --> 00:10:39,932
+This is a real world entity because it is concrete.
+
+47
+00:10:41,491 --> 00:10:57,512
+It is similar to variable we studied in structural or procedural programming, but it is a bit different because this contains tasks or methods.
+
+48
+00:10:57,511 --> 00:11:23,751
+In structural programming we used struct elements. All of them have only features, for example, size or real part or imaginary part for complex structural variable. But in this scope, objects have also some methods.
+
+49
+00:11:23,752 --> 00:11:51,512
+Attributes of an object, it is data. This data can be adjusted in two ways. By using reference type or value type. Value type are primitives like integer, float, etc.
+
+50
+00:11:51,512 --> 00:11:55,512
+reference type are defined new types.
+
+51
+00:11:55,512 --> 00:11:59,512
+For example, book on author, etc.
+
+52
+00:12:01,512 --> 00:12:03,512
+This is the first part of object.
+
+53
+00:12:03,512 --> 00:12:11,512
+The second part of object, the second important aspect of object is task or actions, methods.
+
+54
+00:12:11,512 --> 00:12:18,512
+Maybe you can use functions, but functions is different in terms of object-oriented concepts.
+
+55
+00:12:18,512 --> 00:12:29,512
+This is similar to functions but each function can access any attribute of object.
+
+56
+00:12:29,512 --> 00:12:39,512
+These functions or these methods can obtain or can access any attribute.
+
+57
+00:12:39,512 --> 00:13:08,512
+For example, int is x is first property, y is other. These are our functions. In procedural programming, we can access these variables if and only if in global scope. But in object-oriented programming, we can directly access these elements.
+
+58
+00:13:09,512 --> 00:13:31,112
+if these are defined in class variables. If they are defined in function variable, we cannot access again. For example, these can be located in f function, for example, int x and int y.
+
+59
+00:13:31,539 --> 00:13:32,539
+we cannot access directly. But these are attributes of our classes. For example, book is an object. It can be defined by any class. We can, these are, this contains some attributes. For example, integer id, float price,
+
+60
+00:14:01,539 --> 00:14:27,940
+etc. List is a method for this class. We can directly access these features, these attributes of any object, an object or any object. We will use to access directly also this keyword VNext, VStudyNext.
+
+61
+00:14:27,939 --> 00:14:44,019
+Yes, each function can access any given parameter, but there are many rules. These rules, there are many rules, for example, this or other keywords.
+
+62
+00:14:44,019 --> 00:15:08,299
+Our purpose is to master these rules. Our first purpose is modeling, is to model any real part object, living or non-living object, and then we will create concrete objects.
+
+63
+00:15:08,299 --> 00:15:23,739
+Okay, the abstract object, the abstract concept is class, the concrete one is objects, and member is their features and methods.
+
+64
+00:15:23,739 --> 00:15:52,339
+All objects can be simulated in like this diagram. Data is attributes of any class, any objects. We can use for this scope class and objects because they are same. But when it comes to specialization about class and objects, we will say different things about each other.
+
+65
+00:15:52,340 --> 00:16:03,720
+Yes, encapsulation is an important concept about object-oriented programming and object-oriented concepts.
+
+66
+00:16:04,760 --> 00:16:09,400
+Data and methods of an object cannot be separated.
+
+67
+00:16:10,700 --> 00:16:18,080
+So, book is a class and their feature is like this and their methods.
+
+68
+00:16:18,080 --> 00:16:20,120
+This is an encapsulation.
+
+69
+00:16:20,120 --> 00:16:25,539
+Information hiding is another important aspect of encapsulation.
+
+70
+00:16:26,539 --> 00:16:36,800
+So we can access attributes or methods through methods.
+
+71
+00:16:36,800 --> 00:16:47,200
+For example, to list any features of object, we will use list method.
+
+72
+00:16:47,199 --> 00:17:03,579
+Şimdi arkadaşlar nesne tabanlı programlarda nesneler ve sınıflar var. Sınıf dediğimiz şey daha genel, soyut bir kavramdır. Doğrudan herhangi bir şey anlam ifade etmiyor. Sadece modelleme aracı bizim için.
+
+73
+00:17:03,579 --> 00:17:09,019
+İşte bir kitap var şeklinde bir şey oluşturacaksak bu kitapların içinde
+
+74
+00:17:09,652 --> 00:17:30,091
+bazı memberlar tanımlayacağız, üye değişkenler ve bir metotlar tanımlayacağız. Bu metotlar üye değişkenlere doğrudan erişecek. İşte ne olur? Günlük hayatta bir senaryo verilecek önümüze. İşte kitabın şu şu özellikleri vardır. Mesela ID'si vardır, kitabın fiyatı vardır. Şeyde ben bunun örneğini uygulamada yapacağım zaten daha detaylı olarak.
+
+75
+00:17:30,091 --> 00:17:35,751
+veya sadece bu özellikleri olmak zorunda değil.
+
+76
+00:17:35,851 --> 00:17:39,451
+Stratürlarda olduğu gibi referans tipli nesneler de saklıyoruz.
+
+77
+00:17:39,591 --> 00:17:41,311
+Kitabın yazarı vardır diyeceğiz.
+
+78
+00:17:41,411 --> 00:17:44,652
+Bu yazar belki başka bir class'a ait bir şey.
+
+79
+00:17:45,051 --> 00:17:46,411
+Sadece yazarın adı soyadı yok.
+
+80
+00:17:46,512 --> 00:17:47,332
+Bir sürü bilgileri var.
+
+81
+00:17:48,591 --> 00:17:50,411
+Bunlar feature'ları özellikleri oluyor.
+
+82
+00:17:51,012 --> 00:17:52,071
+Bunlar da metotları oluyor.
+
+83
+00:17:52,071 --> 00:18:02,511
+ve biz bu şekilde bir kapsülleme, encapsulation ile verileri ve metotları birbirinden ayırt etmeden bir model oluşturuyoruz.
+
+84
+00:18:02,511 --> 00:18:11,591
+Object oriented model. Structural programmingten farklı ekstra şeyler tanımlayabilmemiz, metotlar tanımlayabilmemiz.
+
+85
+00:18:11,771 --> 00:18:18,872
+Bir de bu klaslar arası veya nesneler arası ilişkileri tanımlayabilmemiz.
+
+86
+00:18:18,872 --> 00:18:37,272
+Another important factor is defining relationship between two objects or class. This is very important. For example, one to one, one to many, like in database concepts, you will use in this class.
+
+87
+00:18:37,271 --> 00:18:51,271
+For example, this is a basic class definition in Java or other programming languages. You can see similar concepts in C++ and C Sharp.
+
+88
+00:18:51,271 --> 00:19:04,271
+A class is only a template defining an object. We will define object variable through the class by using some keywords.
+
+89
+00:19:04,271 --> 00:19:32,271
+The program is coded as class. This is an important keyword. The first keyword we see in this lecture. But the real work is done by object. This is an abstract part. This abstract keyword is different from abstract keyword in object-oriented programming language. This is my definition.
+
+90
+00:19:32,271 --> 00:19:52,391
+We will use abstract keyword in Java. The real work is definition or creating any variable from class. You may think a class as a cookie cutter and think object as cookies. This is a cookie cutter, object is cookies.
+
+91
+00:19:52,391 --> 00:20:13,951
+For example, car is a general concept. There are many different car types. Inside this car, automobile or truck, production of any concrete object from car, this is an object.
+
+92
+00:20:13,952 --> 00:20:30,972
+Yani bu söylediğimiz şeyi class keyword'ü ile tanımlayıp aynı değişken ismi kurallarında olduğu gibi isim veriyoruz ve süslü parantezler arasında program kodu yazıyoruz. Class'ın tanımını yapıyoruz. Bunu yaptığımız zaman class'ımız oluşmuş oluyor. Şu an içinde herhangi bir şey yok.
+
+93
+00:20:30,971 --> 00:20:34,371
+başka burada
+
+94
+00:20:34,371 --> 00:20:37,951
+bunun gerçek hayatta kullanılması için
+
+95
+00:20:37,951 --> 00:20:43,571
+yani araba ne yapıyorsunuz? Gidiyorsunuz satın alıyorsunuz. Burada da tanımlama yapacağız.
+
+96
+00:20:44,111 --> 00:20:47,311
+Aslında bu şey için de geçerli.
+
+97
+00:20:47,411 --> 00:20:51,171
+Real primitive veritipleri için de geçerli.
+
+98
+00:20:51,611 --> 00:20:55,411
+Integer diye bir kavram var. Biz oradan değişken üretmeden
+
+99
+00:20:55,411 --> 00:20:59,111
+integer hiçbir işimize yaramıyor. Bunun gibi düşüneceksiniz arkadaşlar.
+
+100
+00:20:59,111 --> 00:21:05,731
+Nasıl ki bir integer değişkeni oluşturuyorsak, değişken oluşturuyorsak burada da aynı şeyi yapacağız.
+
+101
+00:21:05,731 --> 00:21:09,731
+Ha, difference is between...
+
+102
+00:21:09,587 --> 00:21:12,787
+Reference type and primitive data type.
+
+103
+00:21:13,988 --> 00:21:21,428
+Like pointer, the reference of, the reference and value of any object.
+
+104
+00:21:22,428 --> 00:21:34,387
+This holds or this access value of this variable. Reference type access can be access reference memory location.
+
+105
+00:21:34,387 --> 00:22:01,387
+Yes, objects and class examples. A particular car. This is an object. This is not car. Car is a class, a particular object. For example, attributes of a particular class, a particular car, model, license plate number, color, etc.
+
+106
+00:22:01,387 --> 00:22:18,948
+These are features or member variables. Usually, one of the attributes of an object is determined as it is logical, unique identifier. For example, ID, car ID, etc.
+
+107
+00:22:18,948 --> 00:22:28,748
+such as the plate number of a car, for example, citizenship identity number or student identity number.
+
+108
+00:22:28,988 --> 00:22:39,988
+These are attributes. These are static elements of object.
+
+109
+00:22:41,047 --> 00:22:46,427
+But dynamic elements of object is actions, for example, methods.
+
+110
+00:22:46,427 --> 00:22:58,507
+Query a car about its descent plate number, for example, to sell this car, etc. To run, to turn back. These are actions.
+
+111
+00:22:59,787 --> 00:23:08,907
+Yes, about this object, we will define and use all of them.
+
+112
+00:23:08,907 --> 00:23:35,408
+An example class is an automobile. This is a concrete. This is abstract. This is concrete. A program code. This is a code actually which defines the attributes and methods of car. This is an actual definition of any object or definition of limitation or characteristic of any object.
+
+113
+00:23:35,407 --> 00:23:49,267
+Yani bir şeyi arkadaşlar burada tanımlama yapıyoruz aslında. Ben bundan sonra araba diye bir şey tanımladım. Bu arabadan oluşacak bütün nesneler bu özelliklere ve bu metotlara sahip olacaktır diyoruz.
+
+114
+00:23:51,267 --> 00:23:53,787
+Ve bu bir genel bir konsept oluyor.
+
+115
+00:23:53,787 --> 00:24:00,307
+You can create any number of class from any different class within an object-oriented programming.
+
+116
+00:24:00,308 --> 00:24:14,067
+Namely, or in other words, we can create or we can define any number of variables or class.
+
+117
+00:24:14,067 --> 00:24:19,188
+For example, car, automobile is a general class.
+
+118
+00:24:21,188 --> 00:24:23,468
+A1, A2, and etc.
+
+119
+00:24:23,628 --> 00:24:26,188
+These are reference definitions.
+
+120
+00:24:26,187 --> 00:24:39,327
+we can define any number of object. Also we can define any number of class inside or outside of any object-oriented programming.
+
+121
+00:24:39,327 --> 00:24:53,087
+Attributes of an object can be divided into two important groups.
+
+122
+00:24:53,087 --> 00:24:57,087
+This is the primitives and non-primitives.
+
+123
+00:24:57,087 --> 00:25:04,367
+Please remember, object structural programming course we used
+
+124
+00:25:04,367 --> 00:25:34,348
+Thank you
+
+125
+00:25:05,299 --> 00:25:30,299
+than mostly primitive data types. For example, int, float, car, etc. Combination of these primitives can be found in any object, but we can add non-primitive data types in any object.
+
+126
+00:25:30,299 --> 00:25:43,340
+Okay. Any number of objects from any number of classes. Inside a book object, we can add id as integer.
+
+127
+00:25:43,340 --> 00:26:00,240
+author string. But instead of using author as string, we can define author as story.
+
+128
+00:26:04,435 --> 00:26:05,435
+in author type. This is not suitable for this concept object oriented concept because we have to design our classes according to aspects or rules of object oriented concepts. Price is another important number of book. Number of page
+
+129
+00:26:38,708 --> 00:26:47,747
+integer. Combination of all features and their methods make up the book class. Okay.
+
+130
+00:26:50,787 --> 00:27:04,628
+Yes. To represent class and objects in a visual diagram, we are using UML representation. Recall the flowchart notation.
+
+131
+00:27:04,628 --> 00:27:24,627
+We used it to define or to specify your algorithms. For example, mathematical expression, conditional expression, loops, and their different expressions can be specified via flowchart.
+
+132
+00:27:24,627 --> 00:27:35,727
+When it comes to object-oriented modeling or object-oriented programming, we are using notation, we are using UML notation as a means.
+
+133
+00:27:37,027 --> 00:27:49,568
+This is a class shown, okay, class diagram. This is an object sequence diagram. These are different.
+
+134
+00:27:49,568 --> 00:28:13,208
+Car is, you know, abstract. So this is an empty class currently, but we will add extra information in this diagram. This is an object of car, object diagram, for example, kit.
+
+135
+00:28:13,208 --> 00:28:23,127
+Important Object Oriented Terminology, N-Y-P, önemli N-Y-P kavramları.
+
+136
+00:28:23,127 --> 00:28:39,327
+Data, member filed, field attribute, also feature, characteristic, and maybe aspects.
+
+137
+00:28:39,327 --> 00:28:46,327
+These are important about object-oriented members.
+
+138
+00:28:46,327 --> 00:28:54,327
+State. Set of values of all attributes of an object.
+
+139
+00:28:54,327 --> 00:29:00,327
+For example, the number of page from 0 to n.
+
+140
+00:29:00,327 --> 00:29:26,847
+task, action, function, method, and member method. These are similar to function. Members of a class or object can be, consist methods and fields. Class is a type like integer, like a float. Our class is also a type.
+
+141
+00:29:26,847 --> 00:29:37,527
+If O is an object of a class C, we can also say that O is an instance of C
+
+142
+00:29:37,527 --> 00:29:42,247
+Şimdi burada şunları artık defalarca söyledik.
+
+143
+00:29:42,247 --> 00:29:48,948
+Nesnenin durumu var. Burada değerlerin atanması gibi, set edilmesi gibi şeyler. Burada görevleri var.
+
+144
+00:29:48,947 --> 00:30:00,027
+Bir sınıfın üyeleri dediğimizde buna karşılık olarak sınıfın şurada söylediğimiz fieldları ve metotları aklımıza gelecek.
+
+145
+00:30:00,947 --> 00:30:03,427
+Sınıf dediğimiz şey aslında bir yeni veri tipi tanımlamaktır.
+
+146
+00:30:04,347 --> 00:30:13,507
+Eğer C sınıfından bir obje üretiliyorsa bu obje O objesi ise O objesi C sınıfının bir örneğidir.
+
+147
+00:30:14,367 --> 00:30:16,607
+Şimdi örneği kelimesi önemli arkadaşlar.
+
+148
+00:30:16,607 --> 00:30:38,307
+Bu şekilde soyut bir şeyi nesline üreterek somut hale getiriyorsunuz ondan bir örneklemi yapıyorsunuz ve bu bellekte şöyle çizelim bir yer tutuyor aynı Structure'lar gibi ama biraz daha farklı şimdi böyle bir book objesi oluşturduk
+
+149
+00:30:38,932 --> 00:31:07,071
+Bu book'un ID'si var. Yani tanımladık diyelim. Ondan sonra author bilgisi var. Price var. Number of page var. Şöyle kısa yazayım. Buradan bir nesne ürettiğimizde bu book'tan örneğin bir nesne üretelim. Java 1.0. 1.1 diye bir şey ID'si. 1, 2, 3, 4 olsun.
+
+150
+00:31:07,071 --> 00:31:20,691
+Autor, data, price, 100 TL olsun, number of page, 500 olsun.
+
+151
+00:31:21,071 --> 00:31:30,591
+Bu artık üretildikten sonra bu bellekte, bu nesne bir yer tutuyor ve bu yer içerisinde erişebileceğimiz şu an için işte 4 tane alan var.
+
+152
+00:31:30,591 --> 00:31:34,891
+Aynı structure'larda olduğu gibi dot operatörüyle ne yapacağız bu alanlara erişeceğiz.
+
+153
+00:31:34,992 --> 00:31:41,391
+Ve bellekte bunlar fiziki olarak belleğin hip bölgesinde tutulacaklar nesneler.
+
+154
+00:31:41,391 --> 00:31:49,612
+Ama bize neyi lazım? Hip bölgesindeki adresin stack bölgesinde oluşturulan nesneye referans bilgisi lazım.
+
+155
+00:31:50,571 --> 00:31:54,391
+Onun için diyeceğiz ki bunlar referans tipli verilerdir nesneler.
+
+156
+00:31:54,391 --> 00:32:03,531
+nesneler. Hatta daha böyle kısa yoldan bir kodlama yapmak gerekirse, new ile oluşturulan, Java'da new ile oluşturulan her şey referans tiplidir.
+
+157
+00:32:03,531 --> 00:32:11,472
+Hip bölgesinde fiziki olarak saklanır. O adresin değeri stack bölgesinde bizim kullandığımız değişkene atılır.
+
+158
+00:32:11,472 --> 00:32:19,512
+For example, book B is like this object. B is a new book.
+
+159
+00:32:19,511 --> 00:32:49,251
+Okay. There is no equation. This is the object creating. So features and their values of object, book object P. This is located in hip section in your memory. The reference of this book can be stored or stored is stored in
+
+160
+00:32:49,251 --> 00:33:16,611
+in stack segment, for example, B. Actually, B is located into stack segment. The object, the real object is located in heap segment. This is a reference mechanism. So we can say that this is not object creation. Okay.
+
+161
+00:33:16,611 --> 00:33:40,611
+In order to create an object we have to use new keyword. New is an operator. So what do you say about this object creation? How many operators are executed, are used in the scope?
+
+162
+00:33:40,611 --> 00:33:44,671
+Kaç tane operatör kullanıldı burada arkadaşlar?
+
+163
+00:33:45,711 --> 00:33:47,091
+Ve hangi sırayla kullanıldı?
+
+164
+00:33:54,836 --> 00:33:57,556
+Şu işlemi yaparken kaç tane operatör kullandık?
+
+165
+00:33:58,755 --> 00:33:59,575
+2 mi hocam?
+
+166
+00:34:00,475 --> 00:34:01,336
+2. Hangileri?
+
+167
+00:34:01,975 --> 00:34:03,355
+Nive bir daha atama.
+
+168
+00:34:04,075 --> 00:34:08,415
+Evet. Nive ile arkadaşlar biz bir nesneyi fiziki olarak üreteceğiz.
+
+169
+00:34:09,495 --> 00:34:14,596
+O ürettiğimiz nesne havada kalmasın diyeceğiz. Onu da bir yerde saklayalım.
+
+170
+00:34:14,596 --> 00:34:21,635
+İşte B nesnesiyle erişeceğiz. Ne bileyim içerisine değerler yazacağız, değerler okuyacağız, bir sürü iş yapacağız.
+
+171
+00:34:21,635 --> 00:34:34,615
+Dolayısıyla bunu da B ile saklıyoruz. B ile saklamamız için de bu new'in bir görevi var. Bu bir şey return ediyor. Return ettiği şey oluşan nesnenin referansıdır. Bu referansı da B'ye atıyoruz.
+
+172
+00:34:34,615 --> 00:34:50,415
+Yani firstly object creation is implemented or is executed and then the reference of new objects is assigned into B. This is the second step.
+
+173
+00:34:50,415 --> 00:35:20,395
+This is very important. I can ask sometimes a question, for example, f function, new book. Definition of f function in Java, for example, void f book b. The object is created and created firstly and then the reference
+
+174
+00:35:20,395 --> 00:35:23,855
+of new objects is passed into a function.
+
+175
+00:35:25,155 --> 00:35:27,755
+Burada da mesela ne oluyor?
+
+176
+00:35:27,855 --> 00:35:30,016
+Önce obje oluşturuyor tabii şöyle olacak.
+
+177
+00:35:30,696 --> 00:35:34,556
+Obje oluşturulduktan sonra bunun referansı fonksiyona aktarılacak.
+
+178
+00:35:34,735 --> 00:35:35,295
+Hep aynı şey.
+
+179
+00:35:36,336 --> 00:35:37,556
+Bu sıralama bizim için önemli.
+
+180
+00:35:37,675 --> 00:35:39,315
+Ha şuralara bir şeyler ekleyeceğiz mi?
+
+181
+00:35:39,475 --> 00:35:40,595
+Onlara da geleceğiz.
+
+182
+00:35:41,895 --> 00:35:42,735
+Yavaş yavaş gidelim.
+
+183
+00:35:44,155 --> 00:35:45,056
+Anlaşılıyor mu arkadaşlar?
+
+184
+00:35:45,196 --> 00:35:45,735
+Var mı sıkıntı?
+
+185
+00:35:51,059 --> 00:35:51,499
+Peki
+
+186
+00:35:57,043 --> 00:36:13,304
+Şimdi UML dediğimiz şey genel bir konsepttir arkadaşlar. Bunun altında yanlış hatırlamıyorsam 12-13 çeşit UML sınıfları var. Yanlış hatırlamayayım ya şuradan bir bakalım.
+
+187
+00:36:14,783 --> 00:36:16,823
+Hocam UML demişken bir şey sorabilir miyim?
+
+188
+00:36:16,823 --> 00:36:36,923
+Biz UML için NetBeans'i kullanalım dedik ya bu slide'ın başında birkaç tane UML şey önermişti bir tanesi Violet's UML sanırım. Mesela o tarz uygulamaları kullanıp yan şey olarak yine aynı işi göremez miyiz yoksa farklı bir amacımız var?
+
+189
+00:36:36,923 --> 00:36:44,803
+Yani benim burada size kazandırmak istediğim şey biraz daha bu işin yazılım mühendisliği tarafına kaymanız.
+
+190
+00:36:44,803 --> 00:36:51,003
+Şimdi o VyLot.UML'de sadece çiziyorsun. Yani onu çizmek için VyLot.UML'e gerek yok.
+
+191
+00:36:58,463 --> 00:37:01,083
+Pek tavsiye etmiyorum ama kullanmak isteyen tabii ki kullanılabilir.
+
+192
+00:37:01,084 --> 00:37:13,963
+Benim amacım sizin bir problem verildiğinde UML şemasını çizip code generate dediğinizde istediğinizde code iskeletinin çıkıp ondan sonra o içerideki fonksiyonları yazabilmeniz.
+
+193
+00:37:14,764 --> 00:37:25,164
+Diğer hocalar başka türlü yapıyordur onu bilemem de ben size tavsiye ederim. Önemli olan nesnelerin ne olduğu ve bu nesneler arasındaki ilişkinin nasıl olacağını kafanızda çözmeniz.
+
+194
+00:37:25,163 --> 00:37:41,243
+Bu ders zaten bunun için aslında var. Ondan sonra iş zaten kodlamaya geçmeden eğer sen UML'i kafanda oluşturup bir çizersen kod generate etmek basit bir iş. Onun için hani bir kod generator'lı UML daha hoş olur diye düşünüyorum.
+
+195
+00:37:42,703 --> 00:37:43,343
+Anlatılacak.
+
+196
+00:37:43,343 --> 00:38:02,543
+Şu açıdan söyleyeyim. Yazın ben Teknopark'taki birkaç bir firma ile özellikle şey yapıyoruz. Staj programı yapıyoruz. Onların istekleri şey ya hocam öğrenciler iyi de işte dizayn, patern bilmiyor, objekt oriyan tasarımdan yoksunlar. Yani bu dersin amacı Java dili öğrenmek değil arkadaşlar.
+
+197
+00:38:02,543 --> 00:38:11,844
+Bunun yerine sizin daha böyle verilen bir problemi alıp nesnesel düşünüp o nesnelerin modellerini oluşturmanız.
+
+198
+00:38:11,844 --> 00:38:18,424
+Bunu ne kadar iyi geliştirsek o kadar iyi. Tabi bu ders bunun için yeterli değil. Bunun üzerine şey lazım.
+
+199
+00:38:20,463 --> 00:38:25,844
+Design pattern dersi veya nesne önemli analiz tasarım dersi lazım.
+
+200
+00:38:25,844 --> 00:38:53,963
+Şimdi şöyle bakalım. Yemel destekli tasarım. Yemelin temelisi bulmuş. Case diagramları. Şimdi bunların bir kısmını şeyde de göreceksiniz. Bu dönem sistem analizi tasarımı dersi var ya. Orada da göreceksiniz. Ben burada niye bulamadım? Şuradan bakayım bir de. Mesela class diagramıdır bu gösterdiğim şey. Class diagramı dışında başka şey, diagramlar da var.
+
+201
+00:38:53,963 --> 00:39:09,043
+Mesela ne diyebilirim? Sequence diagramı, interaction diagramlar gibi şeyler var. Ama bunu da bir de şu kitaba bakayım son olarak.
+
+202
+00:39:09,043 --> 00:39:37,904
+Bir de Deytel'in kitabında şey var arkadaşlar. ATM Case Study diye. Ben onu size imkan olursa PDF anlatacağım. Yani bir ATM makinesinin baştan aşağıya tasarlanmasıyla alakalı. Tabii şey olarak çok görsellik başta yok da. Onun tasarlanmasıyla alakalı bir örnek vardır. Bütün Deytel kitaplarında o örneği bulabilirsiniz. Onun için okuyayım diyorum.
+
+203
+00:39:39,043 --> 00:39:49,043
+Orada ilk başta bütün bir hikaye veriyor size projenin hikayesi. Buradan requirement analiz yapıyorsunuz. Sonra bu classların ne olacağını tespit edip
+
+204
+00:39:49,715 --> 00:40:17,695
+Aynı bir veri tabanı tasarlar gibi nesne tabanı tasarımı yapıyorsunuz. Şimdi UML arkadaşlar bakın, object diagram, composite, structure diagram, component diagram, package diagram, deployment diagram. Mesela deployment bir şeyin kurulumuyla alakalı bir proje yaptığınız deployment ile alakalı yapılacak işlemlerin diagramı. Bunlara yapısal diagramlar deniyor bu saydıklarım. Davranışsal diagramlar bölümü var. Use case, activity diagram, state machine diagram.
+
+205
+00:40:17,695 --> 00:40:33,875
+Mesela biz use case'i çok kullanıyoruz. Özellikle projelerinizde kullanacaksınız. Bu şu demek, işte bir doktor var, doktor o programda hangi yetkilere sahip olacak? Veya doktor işte şu bir metodu çalıştırdığında ne olacak? Bunların bir diagram haline getirilmesi.
+
+206
+00:40:34,775 --> 00:40:42,835
+Sonra etkileşim diagramları olarak, communication diagram, sequence diagram, timing diagram demiş ve interaction overbury diagram.
+
+207
+00:40:42,835 --> 00:40:57,355
+Biz tabi burada bu dersin kapsamında daha çok nesne ve proje, class diagramlar üzerinde duracağız ama yeri gelirse diğerlerine de bakarız. Bir kısmında şeyde anlatıyorlar. Sistem analizinde hatta bir kısmında yazılım mühendisinde anlatıyorlar.
+
+208
+00:40:58,955 --> 00:41:05,275
+Bu ders biraz daha şey bunun class üzerinden gerçeklenmesi üzerine olduğu için biz bir yerde duracağız.
+
+209
+00:41:07,275 --> 00:41:12,595
+Onun için böyle biraz daha profesyonel bir araç kullanmanızı tavsiye ederim. Bayağı lak ettik bunun üzerine.
+
+210
+00:41:12,835 --> 00:41:30,715
+Bir de UML'in tabi versiyonları var. Bildiğin kadarıyla şu an 2.0 mı 2.1 mi öyle bir versiyonda. Bu versiyonun en sonuna bakarsanız zaten oradan daha rahat öğrencisiniz. Bu Distilled UML kitabı güzeldir ama.
+
+211
+00:41:32,155 --> 00:41:35,715
+There are two kinds of UML interaction diagrams.
+
+212
+00:41:37,815 --> 00:41:40,015
+Sequence and collaboration diagram.
+
+213
+00:41:40,015 --> 00:41:56,015
+Bu in this course we will draw sequence diagram. The name interaction reflects the nature of this diagram so that I may use interaction and sequence intertially.
+
+214
+00:41:56,015 --> 00:42:00,415
+Yani bunları birbiriyle farklı bir şekilde kullanabiliriz demişler.
+
+215
+00:42:04,307 --> 00:42:08,307
+Each object is a different individual.
+
+216
+00:42:10,307 --> 00:42:15,307
+This can be in the same type.
+
+217
+00:42:16,307 --> 00:42:17,307
+Consider two objects.
+
+218
+00:42:18,307 --> 00:42:21,307
+Both have the same attributes.
+
+219
+00:42:22,307 --> 00:42:23,307
+Yes.
+
+220
+00:42:23,307 --> 00:42:29,307
+The values of this class, these objects can be different.
+
+221
+00:42:29,307 --> 00:42:51,107
+Also may not be different. It is not important. The state of these objects will be different or may not be different. Maybe it's the same. But these objects are different individuals.
+
+222
+00:42:51,107 --> 00:43:16,367
+Yani iki tane sınıfı, iki tane nesnemiz var. Bu nesnelerin ikisi farklı farklı nesnelerdir arkadaşlar. Çünkü bellekte tuttukları, oturdukları yerler başka. İsterseniz içerisindeki değerleri birebir aynı yapın. Bunlar işte state'leri başka olabilir. Ama hepsinin aynı özelliği, gerekirse aynı değerleri, yani burada different demiş ama aynı olsa bile farklı oluyor.
+
+223
+00:43:16,367 --> 00:43:22,327
+Bunlar farklılıklar. Şimdi belli ki farklı yerlerde oturdukları için. Biraz daha pointer mantığıyla düşünün burada.
+
+224
+00:43:24,147 --> 00:43:33,087
+Even if you create two objects having the same states, these two objects will be represented in different areas of memory. Bu benim söylediğim şey.
+
+225
+00:43:34,047 --> 00:43:39,767
+Java, the GVM creates a unique identifier for this purpose. This is a reference.
+
+226
+00:43:40,827 --> 00:43:45,887
+This process, as well as the other memory processes, are transparent to programmer.
+
+227
+00:43:46,367 --> 00:44:16,347
+So transparent that you cannot interfere with like pointer. In procedural program we can change the reference of any variable or we can access some aspects of variables. So this in this scope we cannot interfere. For example, malloc in C creates an array in your memory.
+
+228
+00:44:16,367 --> 00:44:43,267
+After completed your task, you should release your memory by using a free operation. But in Java, there is no need for free or delayed. Java Virtual Machine can, your virtual machine directly delete your memory location in order to use other, by other process.
+
+229
+00:44:43,267 --> 00:44:58,807
+Any two cars cruising in the street, for example, attributes, model, color, license and plate, these may be the same for attributes.
+
+230
+00:44:59,347 --> 00:45:05,487
+The models and colors of these cars will be different, but may be the same.
+
+231
+00:45:05,487 --> 00:45:19,587
+Even if you see the same yellow Anadol, their license plates will be different. For example, this is ID of or reference of these variables are different.
+
+232
+00:45:21,427 --> 00:45:29,827
+Even if there is a counterpaiting in effect so that their license plates are the same, their drives will be different.
+
+233
+00:45:29,827 --> 00:45:40,967
+Burada biraz şey yapmış yani bir şey aynı olsa öbürü farklı olabilir ama böyle bir ki hepsi aynı olsun bütün özellikleri bütün her şeyi bir kere berlekte oturdukları yerler farklı.
+
+234
+00:45:48,851 --> 00:46:09,631
+Burada da dediği şey arkadaşlar bir mesaja farklı cevaplar verecektir. Eğer bunların tipi aynı olsa bile böyle olacaktır. Çünkü bunların davranışları, stateleri, durumları farklı olabilir. Bunlara mesela farklı parametreler verebiliriz.
+
+235
+00:46:13,427 --> 00:46:13,907
+Şimdi
+
+236
+00:46:13,907 --> 00:46:21,368
+Bir objeye mesaj gönderme. Sending message to any object.
+
+237
+00:46:23,487 --> 00:46:28,427
+What is our purpose for this scope?
+
+238
+00:46:29,367 --> 00:46:32,448
+In order to have this object to do something.
+
+239
+00:46:32,848 --> 00:46:39,647
+For example, print books or print list library.
+
+240
+00:46:39,647 --> 00:46:50,527
+Okay, this is an imperative declare print book.
+
+241
+00:46:50,527 --> 00:46:54,527
+For example, calculate price.
+
+242
+00:46:55,887 --> 00:46:58,567
+This is a signal, this is a message.
+
+243
+00:47:00,067 --> 00:47:08,387
+Also, we may want to achieve any member of an object.
+
+244
+00:47:08,387 --> 00:47:17,688
+For example, get ID or set ID or get name of the book or set name of the book.
+
+245
+00:47:17,688 --> 00:47:29,267
+For example, we may want to change the name of any book.
+
+246
+00:47:29,608 --> 00:47:34,167
+So we have to access the features or the members of this object.
+
+247
+00:47:34,167 --> 00:48:00,807
+Remember access, for example, setting and getting is two important methods, general methods. These are known as setter and getter. Set blah blah, get blah blah. There are two basic operations. For example, set author, get author.
+
+248
+00:48:00,807 --> 00:48:14,407
+In integrated development environments like NetBeans or others, we can directly produce these methods. There is no need for writing.
+
+249
+00:48:14,407 --> 00:48:33,788
+Bunları yazmaya gerek yok arkadaşlar. Set ve get metotlarını belki birkaç defa yazarız ama doğrudan oluşturacağız. Önemli olan bizim bu sınıfımızın veya objemizin hangi feature'lere, hangi özelliklere sahip olacağını söylememiz lazım.
+
+250
+00:48:33,788 --> 00:48:59,187
+This is an access of member field. Access of member method. There are some basic purpose. For example, running a method like calculate price, etc. Optionally with some parameters. For example, print book or print library.
+
+251
+00:48:59,187 --> 00:49:08,187
+We can send a parameters or an argument to this function.
+
+252
+00:49:08,187 --> 00:49:23,187
+Calling a method is similar to C programming language, but remember, a method of an object works with the members of this object, unless otherwise.
+
+253
+00:49:23,187 --> 00:49:31,067
+How come otherwise? Wait until you learn the different kinds of relationship between objects.
+
+254
+00:49:32,387 --> 00:49:44,607
+Şimdi burada gönderilen parametrelerin nasıl C'de, integer'a integer veya tip dönüşümü olabilen şeyler gönderiyorsak, burada da göndereceğimiz parametre uyumlu olacak.
+
+255
+00:49:44,607 --> 00:49:50,607
+Ama bu uyum illaki aynı obje türünde olması gerektiğini bize söylemeyecek. Bunun otherwise'ı bu.
+
+256
+00:49:50,607 --> 00:49:56,887
+Alt-üst ilişkisi gibi farklı ilişkiler tanımlayacağız. Bu ilişkileri burada kullanacağız.
+
+257
+00:49:57,607 --> 00:50:07,647
+Access'teki amacımız arkadaşlar nokta operatörüyle veya başka yollarla bir sınıfın üye değişkenlerine ve üye metotlarına erişmek.
+
+258
+00:50:07,647 --> 00:50:11,647
+Yes, this is a terminology of...
+
+259
+00:50:13,268 --> 00:50:30,708
+object-oriented terminology. An object access a member of another object by sending a message to that other object. For example, client is an object, kit is another object.
+
+260
+00:50:30,708 --> 00:50:42,468
+GetPlate is a message to access a method in car class or kit object.
+
+261
+00:50:42,468 --> 00:50:50,788
+This is a get method to obtain any information from this class.
+
+262
+00:50:50,788 --> 00:50:57,547
+A response of, this is a response, this is a reply.
+
+263
+00:50:58,207 --> 00:51:05,067
+Reply of this accessing or method call is a type.
+
+264
+00:51:05,187 --> 00:51:10,668
+For example, string or integer or any other class type or object type.
+
+265
+00:51:10,668 --> 00:51:15,388
+Yani burada client şöyle bir talepte bulunuyor.
+
+266
+00:51:15,507 --> 00:51:18,007
+İşte bunun plaka numarasını öğrenmek istiyorum diyecek.
+
+267
+00:51:18,268 --> 00:51:20,227
+Bu normal bir fonksiyon çağrısı gibi.
+
+268
+00:51:20,787 --> 00:51:31,367
+Öğrenmek istiyorum dediğinde buna bir cevap verecek bu nesneye. Bu cevap işte bir void olabilir veya void dışında bir şey olabilir.
+
+269
+00:51:31,967 --> 00:51:37,547
+İşte bu olacak şeyler de integer olur. Integer dizisi olur. Mesela C'de dizi olmuyordu ama burada olabiliyor.
+
+270
+00:51:39,527 --> 00:51:47,527
+String olur, string dizisi olur veya özel bir tip olur. Yani araba tipinde veya plaka tipinde bir şey döndürebiliriz. Bu tamamen tasarıma bağlı olacak.
+
+271
+00:51:47,527 --> 00:52:05,687
+An object-oriented program executes as passive messages between objects. Yani buradaki mantıkla çalışıyor. Bu UML representation, this UML representation is equivalent of this Java instruction.
+
+272
+00:52:05,687 --> 00:52:17,087
+Okay. Kit is an object. Dot is an operator. GetPlate is a method in your car class.
+
+273
+00:52:20,467 --> 00:52:43,847
+Meaning of this figure, there is an object named client. The class of the client is irrelevant. Okay. It is irrelevant. There is an object named kit. Car is the class of the object kit. Okay. This is a class. This is a kit. This is an object.
+
+274
+00:52:43,847 --> 00:52:50,407
+This punctuation is obligatory for this UML representation.
+
+275
+00:52:50,407 --> 00:53:08,807
+The class car has a method named getPlate. We understand that if we call this method, this method is defined in this car class.
+
+276
+00:53:08,808 --> 00:53:38,008
+The client sends the message getPlate to the object kit. This is a reply or answer of this response. The object kit returns its license plates as the answer to the message. But this type of this reply can be different types. String or plate or other type or integer.
+
+277
+00:53:38,807 --> 00:54:08,087
+Yes, another important UML representation is packages. Sometimes we can divide our projects into some logical packages or logical partitions. For example, class A, class B is a package, package one, is in package one,
+
+278
+00:54:08,087 --> 00:54:34,767
+and class C is also in package 2. Our purpose is to separate our design, to separate logically our design. For example, in class C, there may be any other, any type, value type. Also in class A, there may be a type.
+
+279
+00:54:34,768 --> 00:54:46,027
+In order to distinguish these types to block any conflict between data types, we can use package.
+
+280
+00:54:46,027 --> 00:54:49,967
+Şimdi paket kullanmamızın sebebi şu arkadaşlar.
+
+281
+00:54:51,087 --> 00:54:54,788
+Projemizde aynı isimde classlar veya aynısında memberlar olabilir.
+
+282
+00:54:55,288 --> 00:54:57,027
+Ama bunların işlevleri farklıdır.
+
+283
+00:54:58,228 --> 00:55:01,728
+Şimdi doktor diyelim, bir de ne diyelim, muhasebeci diyelim.
+
+284
+00:55:01,727 --> 00:55:14,067
+Bunların kendine ait bir classları olsun. İşte bilgi görüntüleme, bilgi listeleme. Bu bir class olacak. Yani ileride bunun niye böyle olduğunu konuşuruz.
+
+285
+00:55:14,067 --> 00:55:21,767
+Şimdi doktorun bilgi listelemesiyle, muhasebecinin bilgi listelemesini bir tasarımda ayırmak istiyorsak bunları paketlerle ayırabiliriz.
+
+286
+00:55:22,427 --> 00:55:29,867
+Yani bazı yerlerde kullanılıyor, bazı yerlerde kullanılmıyor. Fakat bundan daha ziyade şu daha güzel bir örnek.
+
+287
+00:55:29,867 --> 00:55:31,767
+İşte bir yazılım tasarladınız.
+
+288
+00:55:32,067 --> 00:55:36,647
+İşte muhasebe departmanının ilgili olduğu package'lar başka yerde olur.
+
+289
+00:55:37,627 --> 00:55:43,947
+Ondan sonra ne bileyim doktorların işte hastalarıyla olan işleriyle alakalı şeyler başka bir pakette olur.
+
+290
+00:55:44,627 --> 00:55:48,607
+Dolayısıyla ben bir paketten diğer pakete doğrudan erişemem.
+
+291
+00:55:48,607 --> 00:55:51,067
+Bu da bir anlamda güvenliği arttıran bir şey.
+
+292
+00:55:51,067 --> 00:56:14,387
+Java equivalent of this UML representation is import package1.classA. In order to include like in C, like C, we are using import keyword. Import all class in package1, we are using asterisk operator.
+
+293
+00:56:14,867 --> 00:56:32,587
+In order to import specific class in a specific package in a package, we are using the path of this package, package 2 inside the package 1, like this all class in this package 2.
+
+294
+00:56:33,587 --> 00:56:37,487
+Different class in different packages may have the same name.
+
+295
+00:56:37,727 --> 00:56:42,487
+For example, java.io file comfile.file.
+
+296
+00:56:42,487 --> 00:57:05,887
+In order to distinguish this class, we are using packages. Yani buradaki şeyi mantıksal olarak ayırmak. Sonuçta hepsi ne olacak? Sıfır ve birlerden yazılacak. Onu diyoruz ama program yazarken package 1'in altındaki yani IO'daki file klasıyla file klasını karıştırmamamız gerekiyor.
+
+297
+00:57:05,888 --> 00:57:19,787
+These are abstract containers. Yani buradaki bunu ifade eden şey abstract containers. Bunları gruplamak. Aynı zamanda yetkilendirmeyi de sağlıyor.
+
+298
+00:57:25,139 --> 00:57:32,939
+Mesela burada işte buradaki bir fail dosyası ile buradaki şeyin hiyerarşisini göstermiş örnek olarak.
+
+299
+00:57:37,268 --> 00:57:52,148
+Class of package 2 are not included when package 1 is important. Yani burada package 1'ı import ettiğinizde ne yapıyorsunuz? Buradaki classları alıyorsunuz sadece. Ama package 2'nin içindeki class şey eklenmiyor şu durumda.
+
+300
+00:57:53,407 --> 00:58:02,987
+Onu ayrıca eklemek gerekiyor. Bunu yapmak için de şununla beraber yani şunu da eklemek gerekiyor. Bu da önemli bir kavram. Özellikle bunları şeyde kullanacağız. GUI'lerde kullanacağız arkadaşlar.
+
+301
+00:58:02,987 --> 00:58:17,608
+Şimdi saatimiz gelmiş. Hatta geçmiş 5-6 dakika. Nasıl gidiyor? Hangileri uygulamada yapacağız? Buraya kadar anlattıklarım mı?
+
+302
+00:58:23,059 --> 00:58:33,139
+Nasıl? Sorun var mı arkadaşlar? Bunları uygulamada şöyle. Şuraya kadar anlattıklarımı ve bundan sonra anlattıklarımı uygulama saatinde bir örnek üzerinden kodlayacağım arkadaşlar.
+
+303
+00:58:34,339 --> 00:58:40,839
+Aydın, mikrofonun bir açılıyor bir kapanıyor sürekli bir hareket oluyor sende. Aydın Kağan. Var mı arkadaşlar bir sorun?
+
+304
+00:58:42,499 --> 00:58:49,839
+Şimdi bundan sonraki dersimizi biraz uzun yapalım. Onun için şimdi saat 55 geçiyor.
+
+305
+00:58:49,839 --> 00:59:07,519
+20 geçe kadar, şey 20 geçe fazla olur ya, 15 geçe kadar bir ara verelim. 20 dakika aramız olsun. Geldiğimizde biraz daha uzun çalışalım. Ondan sonra dersi bitiririz. Sonra herkes akşam yemeğe zamanı giriyor zaten. Geldiğimizde uygulamasını yapacağız bunları.
+
+306
+00:59:09,359 --> 00:59:17,319
+Eğer ben o hafta uygulama yapmayacaksam dersin içerisinde bu konuların uygulamasını yapacağım. Evet saat, şuraya yazayım.
+
+307
+00:59:17,319 --> 00:59:19,799
+16.15
+
+308
+00:59:19,799 --> 00:59:22,539
+Ders başlangıcı.
+
+309
+00:59:27,284 --> 00:59:28,764
+Yine oraya yazıyorum. Şöyle yazayım.
+
+310
+00:59:55,923 --> 00:59:56,484
+Görüşürüz.
+
+311
+01:12:20,180 --> 01:12:27,599
+Benim diğer saatim herhalde biraz ileri onun için erken geldim yine. Neyse sorun değil.
+
+312
+01:12:36,724 --> 01:12:41,023
+Diğer dersler nasıl arkadaşlar? Veri yapıları nasıl gidiyor? Hesaplama, kurama, donanım.
+
+313
+01:12:52,467 --> 01:12:53,667
+Kimse kurtatı liderat.
+
+314
+01:12:58,868 --> 01:13:01,368
+Şimdilik iyi gidiyor hocam. Pek bir sıkıntı yok.
+
+315
+01:13:04,567 --> 01:13:07,607
+Ödevler yakın zamanda gelmeye başlar.
+
+316
+01:13:08,487 --> 01:13:09,907
+Bilmiyorum veri yapıları verecek de.
+
+317
+01:13:12,347 --> 01:13:14,027
+Okul kapanalı iki ay oldu.
+
+318
+01:13:14,248 --> 01:13:17,187
+Geçen dönem İngilizce, diskret, matematik anlattım başka yerde.
+
+319
+01:13:17,327 --> 01:13:18,747
+Şimdi anlatırken zorlandım.
+
+320
+01:13:18,747 --> 01:13:23,007
+Demek ki konuşmaya konuşmaya dil bir anda çok geliriyor.
+
+321
+01:13:23,527 --> 01:13:28,407
+Bir anda bir çare bulmak lazım buna.
+
+322
+01:13:28,868 --> 01:13:33,868
+Çare Cambly falan diyorum şimdi arada reklam gibi
+
+323
+01:13:33,868 --> 01:13:43,408
+Hocam pratik yapabileceğiniz biri varsa çok faydalı oluyor bir kişi bile olsa
+
+324
+01:13:43,408 --> 01:13:46,067
+Efendim?
+
+325
+01:13:46,768 --> 01:13:48,388
+Sponsor aldık galiba diyorum hocam
+
+326
+01:13:48,388 --> 01:13:48,868
+Yok
+
+327
+01:13:48,868 --> 01:13:56,667
+Pratik yapabilecek bir iki arkadaşım var da sonuçta onlar da yani şey herkes kendi işinde gücünde
+
+328
+01:13:56,667 --> 01:14:15,088
+Böyle bazı uygulamalar falan varmış ama ben çok hani şey language exchange uygulamaları. Ben hep böyle kendim okuyarak Discord'da güzel sunuyor. Nasıl oluyor ben onu bilmiyorum hiç Discord'u. Yani karşıdan buyur Bilal.
+
+329
+01:14:15,088 --> 01:14:25,088
+İlgilendiğiniz bir alan varsa işte mesela Discord'da filan mesela İngiltere'de FRP oyunu mesela oynayacağınız insanlar edinip oynayabilirsiniz.
+
+330
+01:14:25,088 --> 01:14:35,707
+Yani ilgilendiğiniz oyunlarla falan ilgili değilim de mesela ne bileyim tarih olabilir veya başka hususi bir konu İngilizce konuşmak için grup açıyorlar. Bir bakayım.
+
+331
+01:14:37,827 --> 01:14:43,647
+Yani Discord sadece böyle şey genel muhabbet amaçlı zannediyordum ama öyle bir imkan varsa bir bakayım.
+
+332
+01:14:45,088 --> 01:14:48,187
+2-3 arkadaşım var yani yurt dışından.
+
+333
+01:14:50,048 --> 01:14:52,548
+Güzel, direkt exchange.
+
+334
+01:14:52,808 --> 01:14:56,668
+Mesela bir arkadaşım Amerika'dan Harvard Linguistic mezunu.
+
+335
+01:14:56,728 --> 01:14:57,827
+O da Türkçe öğrenmek istiyor.
+
+336
+01:14:57,888 --> 01:14:58,567
+Onunla tanıştık.
+
+337
+01:14:59,607 --> 01:15:04,048
+Bayağı da görüşüyoruz ama haftada 3-4 defa görüşecek kadar da değil.
+
+338
+01:15:04,868 --> 01:15:06,827
+En fazla haftada bir yarım saat konuşuyoruz.
+
+339
+01:15:06,948 --> 01:15:07,487
+O da Türkçe'ye.
+
+340
+01:15:07,507 --> 01:15:08,468
+Ben ona Türkçe öğretiyorum.
+
+341
+01:15:10,047 --> 01:15:11,728
+Ben aynı zamanda pratik yapıyorum.
+
+342
+01:15:12,868 --> 01:15:14,067
+Ama zor ya.
+
+343
+01:15:15,088 --> 01:15:24,888
+Hep ben bir de şey, discord, böyle bir şey geldi. Bu ne? Ömer? Language exchange.
+
+344
+01:15:24,888 --> 01:15:34,847
+Aynı redditte keşfetmiştim de. Ben de pastandığını fark edip biraz pratik oldum diye ararken buldum.
+
+345
+01:15:34,847 --> 01:15:40,667
+Böyle farklı alanlarda oyunu da var, filmi de var vs.
+
+346
+01:15:42,107 --> 01:15:48,728
+İnsanların farklı ülkelerden insanların farklı ana dillerden insanların bir araya gelip farklı diller yine.
+
+347
+01:15:49,507 --> 01:15:52,987
+Sadece İngilizce değil, İspanyolcası, Fransızcası, Çincesi vs. de var.
+
+348
+01:15:53,787 --> 01:15:55,627
+Farklı kanallarda buluşup konuştukları bir yer.
+
+349
+01:15:56,327 --> 01:16:00,247
+Tamam teşekkür ederim. Ekledim ben şimdi bunu şeyime, Bookmark'lara.
+
+350
+01:16:01,528 --> 01:16:03,067
+Dersten sonra bir ara bakayım inşallah.
+
+351
+01:16:04,847 --> 01:16:31,947
+Hakikaten şey oluyor yani geçen dönem 3 tane mi 2 tane mi İngilizce verdiğim ders vardı. Tabi size hiç vermiyorduk da birisi kontrolde birisi elektrolikte miydi birisi biyomedik halde. O ilerledikçe güzel oluyor. Hatta dersin başıyla sonu arasında akıcılık çok değişiyor. Ama 2 aydır neredeyse ders vermediğim için hiç şey çok zorlanıyorum şu an. Kendimi nasıl sıkıyorum bilemezsiniz.
+
+352
+01:16:31,948 --> 01:16:42,608
+Evet 15 geçiyor. Devam edelim arkadaşlar. Şimdi ekran paylaşacağız.
+
+353
+01:16:48,051 --> 01:17:04,472
+Sizden böyle öneriler, sizde daha çok vardır artık, siz gençler bu konulara daha şeyler, yatkınlar. Arada böyle tavsiyeler olursa alabiliriz, yani tavsiyelere açığız. Böyle YouTube'da bir şeyler arıyorsun, aradan bir şey çıkıyor, Cambly diye reklam çıkıyor falan.
+
+354
+01:17:04,472 --> 01:17:20,211
+Şimdi arkadaşlar şurada UML ile alakalı bakın bir nesnenin diagramıyla class'ın diagramı birbirinden farklı.
+
+355
+01:17:20,732 --> 01:17:31,191
+Altı çizili olacak. Bunu belki üzerine söylemeyi unuttum. Önce nesnenin adını yazacağız. Sonra class'ın adını yazacağız. Araya iki nokta koyacağız.
+
+356
+01:17:31,191 --> 01:17:34,432
+Bundan sonra bir başka class olacak.
+
+357
+01:17:35,252 --> 01:17:38,252
+Bu class ile o class arasında bazı çizgiler tasarlayacağız.
+
+358
+01:17:38,331 --> 01:17:40,651
+Onlar ilişkiler ama o ilişkilerin de farklı türleri var.
+
+359
+01:17:41,851 --> 01:17:48,232
+Şimdilik bu gördüğümüz kısımda nesne nasıl yazılıyor, class nasıl oluşturuluyor.
+
+360
+01:17:49,211 --> 01:17:50,611
+Bunları dikkat edelim.
+
+361
+01:17:51,151 --> 01:17:52,732
+Bunlar şeyde soruluyor size.
+
+362
+01:17:53,791 --> 01:17:56,092
+Sınavda UML çizmenizi isteyeceğiz belki.
+
+363
+01:17:56,431 --> 01:18:00,592
+Veya çizilmiş bir UML verip onun içerisinde bazı yerleri doldurmanızı isteyeceğiz.
+
+364
+01:18:01,191 --> 01:18:02,511
+Bunlara dikkat.
+
+365
+01:18:04,452 --> 01:18:08,092
+Tabi bu UML class diagramı ve obje diagramı.
+
+366
+01:18:09,732 --> 01:18:10,831
+Neredeydi?
+
+367
+01:18:13,051 --> 01:18:24,831
+Nesneler arasındaki hareketi gösteren şeyde bu işte interaction dediğimiz farklı bir diagram.
+
+368
+01:18:24,831 --> 01:18:29,452
+İşte bir nesne diğerinden servis alıyor, işlem alıyor, işlem yapıyor.
+
+369
+01:18:31,191 --> 01:18:35,191
+Bunlar da package'larla alakalı diyagramlar.
+
+370
+01:18:35,191 --> 01:18:39,191
+NetBeans'te şöyle örnek göstereyim.
+
+371
+01:18:41,191 --> 01:18:43,191
+Bu da bu oyunu çalıştırıyormuş.
+
+372
+01:18:47,731 --> 01:18:50,472
+New class, yet non-dita.
+
+373
+01:18:57,203 --> 01:19:11,603
+Burada baktığımız zaman işte bir class oluşturma, interface oluşturma, enumeration oluşturma ve bunların arasındaki ilişkileri oluşturma bunlara bakacağız. Hatta burada package, package de vardı ama son durumunu bilmiyorum.
+
+374
+01:19:11,603 --> 01:19:16,603
+Class ekleyelim bakalım mesela nasıl olacak.
+
+375
+01:19:19,283 --> 01:19:27,143
+Add class, added interface, add relationship, arrange diagram, color, tüm ah.
+
+376
+01:19:28,023 --> 01:19:30,823
+Pepeche'ı eklememişler. Mesela bazılarında pepeche'lar da var.
+
+377
+01:19:32,303 --> 01:19:35,503
+Önce bir pepeche ekliyorsunuz, sonra onun içine class'ları ekliyorsunuz.
+
+378
+01:19:35,804 --> 01:19:39,163
+İlişkileri tanımlıyorsunuz. Bunlar ilişkilerin ne olduklarını falan göreceğiz.
+
+379
+01:19:40,163 --> 01:19:41,263
+Burada şey azdır.
+
+380
+01:19:42,443 --> 01:19:45,443
+Yani terminolojide çok fazla bir şekil yok.
+
+381
+01:19:45,443 --> 01:19:47,083
+Ama zorluk şurada.
+
+382
+01:19:47,083 --> 01:20:09,684
+Bir senaryoyu anlayıp o senaryodan tasarımı yapabilmek güç oluyor. Özellikle biraz ileri yönünü düşünmek gerekiyor. Yani ben şimdilik yazarın adını, soyadını kitabın içine gömerim. Ama yazarın iki gün sonra başka bir bilgisi gelirse orada patlıyorsun. Onu önceden düşünüp yazarı ayrı bir obje olarak düşünmek gerekiyor.
+
+383
+01:20:09,683 --> 01:20:31,983
+As going on in English. Visibility rules or information hiding. These are important concepts about object-oriented programming. In real life, we are using a lot of objects like computer, monitor, mobile phone, etc.
+
+384
+01:20:31,983 --> 01:20:40,243
+All of these objects consist of their properties and their functions.
+
+385
+01:20:40,243 --> 01:20:47,003
+But we are using some of their objects and some of their functions.
+
+386
+01:20:48,004 --> 01:20:52,483
+Not all of their objects, not all their properties.
+
+387
+01:20:52,483 --> 01:21:19,183
+For example, in monitor, LCD tube or reflection in color or mixing of color is a method, but we don't use directly it. We indirectly use. In order to open your monitor, we are using a button on them,
+
+388
+01:21:19,183 --> 01:21:35,383
+but we don't use directly or we don't access directly their functions or their properties. Actually, there is no need to access these functions or properties.
+
+389
+01:21:35,383 --> 01:21:44,803
+Moreover, it is also prohibited, it must be prohibited from users.
+
+390
+01:21:44,803 --> 01:21:58,123
+Because if any user access these properties or methods, they can easily impair their functionality, their functions, their attributes.
+
+391
+01:21:58,123 --> 01:22:06,843
+Şimdi günlük hayatta nesnelerimizin özelliklerini hepsini doğrudan görmüyoruz veya doğrudan kullanmıyoruz veya nesnelerin fonksiyonlarını doğrudan kullanmıyoruz.
+
+392
+01:22:07,983 --> 01:22:12,724
+Yani evde bir lambayı açarken yaptığımız şey bu örnekler hep kitaplarında olan örneklerdir.
+
+393
+01:22:12,864 --> 01:22:23,323
+Lambayı açarken yaptığımız şey elektrik kablolarını birbirine dokundurmak aslında arka planda ama gidip elimizi dokundurmaya çalışırsak her şeyi berfait ederiz kendimize dağar veririz.
+
+394
+01:22:23,323 --> 01:22:28,603
+Onun yerine biz diğer bir fonksiyona başka bir nesneden faydalanıyoruz
+
+395
+01:22:28,603 --> 01:22:34,803
+Amaç işte lambayı yakmak, işte elektrik bir nesne, işte lamba bir nesne, aradaki devreyi tamamlamak
+
+396
+01:22:34,803 --> 01:22:37,423
+Ama arada bir anahtar nesnesi var görev görev
+
+397
+01:22:37,423 --> 01:22:45,423
+Şimdi bu düşünceden yola çıkarak nesnelerin her türlü özelliklerine, arka plandaki her türlü nesneye erişmemiz gerekmiyor
+
+398
+01:22:45,423 --> 01:22:48,043
+Ve gerekmemesi gerekiyor, hatta yasaklanması gerekiyor
+
+399
+01:22:48,043 --> 01:22:53,743
+Aynı şekilde bu diğer bütün nesnelerde de olacak bir şey.
+
+400
+01:22:53,743 --> 01:22:57,504
+Mesela şimdi Windows'un bir sürü uygulaması var.
+
+401
+01:22:57,623 --> 01:23:01,403
+İçerisinde nesneler çalışıyor anladığında birbiriyle iletişim halinde.
+
+402
+01:23:02,043 --> 01:23:08,063
+Biz herhangi bir nesneye erişip onun fonksiyonunu değiştirsek veya değerini değiştirsek işletim sistemine zarar verebiliyoruz.
+
+403
+01:23:08,063 --> 01:23:19,203
+An object can access all of its members and methods belonging to the same class.
+
+404
+01:23:19,231 --> 01:23:45,691
+type. If your objects in the same class access all methods or all members, this is a specific object derived from any class. For example, book is a class. Java is an object.
+
+405
+01:23:45,691 --> 01:23:51,451
+Java can directly access print all methods.
+
+406
+01:23:51,451 --> 01:23:57,531
+For example, getID, getName, etc.
+
+407
+01:23:59,772 --> 01:24:11,871
+But we can hide, this is an optional, we can hide some members of an object and some methods of an object
+
+408
+01:24:11,871 --> 01:24:18,351
+so that they cannot be accessed from objects of different types.
+
+409
+01:24:20,871 --> 01:24:23,791
+Information hiding or visible tools is this.
+
+410
+01:24:24,632 --> 01:24:25,571
+This is optional.
+
+411
+01:24:26,611 --> 01:24:33,592
+But in accordance with design rules, object-oriented design rules,
+
+412
+01:24:33,592 --> 01:24:41,172
+we have to use this property, this property of object-oriented concepts.
+
+413
+01:24:41,871 --> 01:24:51,632
+The principle is we hide the members that are related to the inner workings of an object from objects of different types.
+
+414
+01:24:52,672 --> 01:25:02,191
+Yani farklı veri tiplerinden birbirleriyle çalışan farklı veri tipler arasındaki ilişkilerde memberları gizleyebiliriz.
+
+415
+01:25:02,191 --> 01:25:07,231
+Yani bir kitap doğrudan yazarın bilgilerine erişmeyecek.
+
+416
+01:25:07,231 --> 01:25:12,132
+yazanın referansına sahip ama yazarın adına, soyadına vesaire erişmeyecek. Bunu engeliyoruz.
+
+417
+01:25:15,011 --> 01:25:25,571
+So that an object does not need to know the internal details of another object in order to use that other object.
+
+418
+01:25:26,191 --> 01:25:29,092
+Does not need to know the internal details.
+
+419
+01:25:29,952 --> 01:25:31,752
+These are important aspects.
+
+420
+01:25:31,752 --> 01:25:33,752
+For example
+
+421
+01:25:33,752 --> 01:25:46,092
+It is sufficient to know the universal signs of power, volume and channel switching case on their remote in order to watch TV
+
+422
+01:25:46,092 --> 01:25:49,291
+Arkadan bir matkap sesi geliyor arkadaşlar
+
+423
+01:25:49,291 --> 01:25:51,272
+Ben bir bakayım bir saniye nereden geliyor
+
+424
+01:26:56,340 --> 01:27:03,739
+Evin içindeki insanlar yetmiyor. Bir de dışarıdakiler yetmiyor. Bir de evin içindekiler. Yanlış söyledim. Ders doldum, unutmuşlar.
+
+425
+01:27:05,739 --> 01:27:12,440
+Yes. An object does need to know the internal details of another object.
+
+426
+01:27:14,379 --> 01:27:26,279
+For example, from author class, there is no need to access directly the members or properties of book class.
+
+427
+01:27:26,340 --> 01:27:39,700
+For remote controller, it is sufficient to know universal signs of power, volume, and channel switching keys.
+
+428
+01:27:40,420 --> 01:27:47,799
+But you don't need to know that this TV has a device named cathode tube in it.
+
+429
+01:27:47,799 --> 01:28:00,099
+Moreover, the users need not to be re-educated for using TVs built with new technologies such as LCD plasma etc. There is no need for these details.
+
+430
+01:28:02,039 --> 01:28:12,479
+For example, your friend wants to lend some money from you. You either open your purse and give him or that money or not.
+
+431
+01:28:12,479 --> 01:28:19,039
+You don't have to tell anything about your salary on your pin number to your friend.
+
+432
+01:28:19,039 --> 01:28:20,079
+Yani o kadar da değil.
+
+433
+01:28:21,259 --> 01:28:26,079
+Yani tamam borç vereceksek, borç alacaksak bu kadar detaya gerek yok.
+
+434
+01:28:27,100 --> 01:28:31,679
+Şimdi bu nesnelerin arkadaşlar modellenmesi açısından önemli bir şey.
+
+435
+01:28:31,799 --> 01:28:32,759
+Information hiding.
+
+436
+01:28:35,179 --> 01:28:42,359
+Gerekli alanları private, public gibi farklı keywordlerle diğer tarafa dış dünyaya kapatacağız.
+
+437
+01:28:42,479 --> 01:28:44,799
+Bununla alakalı UML
+
+438
+01:28:44,799 --> 01:28:52,479
+Şimdi biz class name'inde biraz önce gördük ki sadece bir boş class oluşturduk.
+
+439
+01:28:53,479 --> 01:28:55,079
+İçinde başka bir şey yoktu.
+
+440
+01:28:55,299 --> 01:28:59,399
+Şimdi buraya iki tane daha parça geldi.
+
+441
+01:29:01,079 --> 01:29:01,799
+Birinci parça
+
+442
+01:29:01,799 --> 01:29:07,340
+The first part is related to your properties.
+
+443
+01:29:07,780 --> 01:29:12,239
+The second part is related to methods for your class.
+
+444
+01:29:12,479 --> 01:29:35,280
+These are important indicators showing your information hiding concepts. Minus is private keyword in Java plus is public keyword.
+
+445
+01:29:35,280 --> 01:29:53,259
+These are methods. We understand this from this parentheses. If your methods return void value, it is prohibited to add return type. No need.
+
+446
+01:29:53,259 --> 01:30:05,299
+If your methods returns any type of value, you have to use functions, double that, and return type.
+
+447
+01:30:05,299 --> 01:30:09,599
+For example, int, book, class name, etc.
+
+448
+01:30:10,539 --> 01:30:21,459
+If your methods takes a parameter from user or lots of parameters, the name of your parameters
+
+449
+01:30:21,459 --> 01:30:25,979
+and punctuation and the parameter type.
+
+450
+01:30:25,979 --> 01:30:42,539
+For example, x int, y float, z book, etc.
+
+451
+01:30:43,340 --> 01:30:45,759
+These are public or private.
+
+452
+01:30:46,719 --> 01:30:49,119
+These are name of your method.
+
+453
+01:30:49,119 --> 01:30:53,940
+Return type if necessary, definition of return type.
+
+454
+01:30:55,988 --> 01:31:12,707
+Please mind that this is not in accordance with Java or C. In C we are using int x, but in UML we are using reverse definition.
+
+455
+01:31:14,787 --> 01:31:22,828
+Public and private currently, but then we will add protected and package property.
+
+456
+01:31:25,988 --> 01:31:29,947
+Şunun adı diyez de bunun İngilizcesi neydi ya? Unuttum şimdi.
+
+457
+01:31:30,947 --> 01:31:38,767
+This is used for protected keyword. Used for inheritance in Java.
+
+458
+01:31:40,348 --> 01:31:48,427
+These are general concepts. Class name is at the top of this rectangle.
+
+459
+01:31:48,427 --> 01:32:18,407
+In the second block we are adding properties of class. In the third section we add or we write all methods. Sometimes we will add extra notation. For example, underline and some keywords like abstract.
+
+460
+01:32:18,427 --> 01:32:36,827
+These are extra definitions about your class. For example, if you add abstract keyword, this is abstract class. We will see the details for the next weeks. And underline is a static keyword.
+
+461
+01:32:36,827 --> 01:32:51,267
+We will add abstract keyword for methods. We are using only abstract but if you add a static method, the underline is added.
+
+462
+01:32:52,087 --> 01:32:53,848
+The name of is underlined.
+
+463
+01:32:53,848 --> 01:32:58,488
+Yani buradaki kullanılan her bir sembolün, her bir şeyin anlamı var.
+
+464
+01:32:59,627 --> 01:33:05,327
+Genellikle ben önceki yıllardan hatırlıyorum Yunus Hoca ve Mehmet Hoca'nın sınavlarında, ki bu dönemde öyle olur.
+
+465
+01:33:05,327 --> 01:33:24,648
+Bir, size class verilecek bu şekilde. Bunu kodlayın diyecek. Tabi birçok class var. O classlar içerisinde işte şu class'ı kodlayın diyecek. O zaman anlayacağız ki biz bu class name'i public class name diye bir şeye karşılık geliyor. Biraz önce gördük bunu. Bu class name'i yazınca ne oluyordu? İşte şöyle parantez açıyorduk. Boş.
+
+466
+01:33:24,648 --> 01:33:49,907
+Diyeceğiz ki burada bir private bir şey var. Ondan sonra bu bittikten sonra bunlar da metotlar. Metotların içeriğini doldurun dersek içerisinde ne olacak? O metodun içeriği neyse öyle bir şey yazacağız. Yani ona uygun bir algoritma. Zaten object oriented programlama structural programlamayı kapsıyor.
+
+467
+01:33:49,907 --> 01:34:15,187
+İşte bu structural programın aslında şu metotların içeriğinin her birinin tanımlanması. Geri kalan şeyler object orantıta giriyor. Bakalım o kadar çizdik. Şimdi bu sınıfta bu derste hani protected'tan sorumlu değilsin demiş ama onu daha göreceğiz. Bir de package var. Tilda sembolüyle.
+
+468
+01:34:15,187 --> 01:34:28,007
+Hangi pakette olduğunu gösteren bir işaretçimiz var. Onu da daha sonra göreceğiz. Default rule, bu Java'da default olarak geliyor.
+
+469
+01:34:34,676 --> 01:34:39,676
+In practice, the information hiding principle cannot be applied in a perfect way.
+
+470
+01:34:41,676 --> 01:34:49,676
+A change in code of a class, not only FX state class, but other classes are the tweet class as well.
+
+471
+01:34:49,676 --> 01:34:55,676
+Any change in your code triggers other your other codes.
+
+472
+01:34:55,676 --> 01:35:03,676
+If you change from public to private, you will encounter a compile time error or vice versa.
+
+473
+01:35:04,676 --> 01:35:24,295
+The further you comply with this principle, if your code is, if your member or methods is described or defined in private, you should obey this rule.
+
+474
+01:35:24,835 --> 01:35:32,076
+The easier your coding overhead becomes for completing this change as the number of affected class will reduce.
+
+475
+01:35:32,075 --> 01:36:00,575
+We have to reduce the affected class from this change. In order to comply with information hiding principle, member fields are defined as private. For the next stage of your project, you should contemplate these consequences before.
+
+476
+01:36:00,576 --> 01:36:06,976
+So we have to use or we should use our fields as private.
+
+477
+01:36:06,976 --> 01:36:20,875
+And then necessary access methods are defined as public. Access method is auxiliary methods to access our private members or private teachers.
+
+478
+01:36:24,564 --> 01:36:48,623
+At least 5.4 ish. Burada da en azından 5 puan gider diyor. Yani burada biraz sınava yönelik bir şey söylemişler. Şimdi arkadaşlar, biz genellikle sizlerden, tabii bunu bugün uygulamada da yapacağız. Bir şey istediğimizde, bir kod yazması istemediğimizde eğer UML de verilmediyse o sınıfın memberlarını private olarak düzenlemek gerekiyor.
+
+479
+01:36:48,623 --> 01:37:06,123
+Bunu yapmayınca ileride birçok şey değişiyor. Baştan bunu private yapmak en güzeli. Ha private yapınca o değişkene erişemeyeceğiz diye bir şey yok. Doğrudan erişimi kapatıyoruz. Bunun farklı faydaları var. Bunu set ve get metotlarıyla en azından erişebilmek mümkün olacak.
+
+480
+01:37:06,123 --> 01:37:12,323
+Bu set ve get metotları da işte setter ve getter dediğimiz
+
+481
+01:37:12,323 --> 01:37:18,503
+For example, getMember, setMember, setName, getName, etc.
+
+482
+01:37:19,883 --> 01:37:24,523
+Setter is used to change the value of any member.
+
+483
+01:37:25,403 --> 01:37:30,163
+Getter is used to obtain a value of an object.
+
+484
+01:37:30,163 --> 01:37:53,244
+Yes, this is a general example for car. This is a class name. This is a feature or attribute of class car. The name of it is plate. The type of it is string.
+
+485
+01:37:53,244 --> 01:38:02,244
+I think the access determiner is private.
+
+486
+01:38:04,244 --> 01:38:11,244
+GetPlate and SetPlate, these are methods or public methods.
+
+487
+01:38:11,244 --> 01:38:33,504
+As you understand from their names, this is used to get used to obtain a value of plate, value, plate variable, set plate is used to assign any string value into plate variable.
+
+488
+01:38:33,504 --> 01:38:37,963
+Yani buradan bunları anlıyoruz, sınıfın bize söylediği bunlardır.
+
+489
+01:38:37,963 --> 01:39:06,064
+Buradaki şeyleri çok rahat değiştirebiliriz. Buradaki metotlara erişimi kısıtlamak istiyorsak setplate metodunu koddan kaldırabiliriz veya setplate'i ne yapabiliriz? Visibility'sini değiştirip bunu private yaparız. Erişimi doğrudan kapatmış oluruz. Yani silmek her zaman çok makul bir çözüm değil. Accessibility şeyleri kullanacağız.
+
+490
+01:39:09,716 --> 01:39:17,915
+Şimdi memberlar için bazı special case'ler var. Bunlara bakalım. Hani bunu ilk birkaç slide önce söyledim ama burada biraz daha detaylı.
+
+491
+01:39:18,615 --> 01:39:28,655
+Static member fields. The state of each object, even though they are of the same class, is different.
+
+492
+01:39:28,655 --> 01:39:41,415
+For example, book is a class and B1 and B2, sorry, sorry, B1 is new book.
+
+493
+01:39:46,996 --> 01:40:10,475
+and B2 is new book. Assume that these are contains lots of variables related to book concepts. The state of B1 and B2 is different. These are the same class variables but the state is different.
+
+494
+01:40:10,475 --> 01:40:19,275
+In some cases, you may need to have all objects of a particle type to share a common member field.
+
+495
+01:40:20,075 --> 01:40:37,095
+For example, in B1 and B2, we can use a member field, but the same value, or to share other values.
+
+496
+01:40:37,095 --> 01:40:55,395
+For example, in your canteen, in our canteen or a queue of bank, we see that number of customers or the number of customers, okay.
+
+497
+01:40:56,395 --> 01:41:05,395
+This is a commonly shared information for all users, but all of users are different users.
+
+498
+01:41:05,396 --> 01:41:14,756
+So in order to share a common member field in your class, we are using static keyword.
+
+499
+01:41:14,756 --> 01:41:19,996
+So we should use our fields in static.
+
+500
+01:41:20,635 --> 01:41:34,236
+For example, static int number of customers in your bank or
+
+501
+01:41:34,235 --> 01:42:03,035
+other facility. Static members has all extra features in object oriented programming and Java. The first one is static members are accessed via the class name like this. Class name dot member name, for example, book dot member name.
+
+502
+01:42:04,235 --> 01:42:31,715
+Normally we are using objects, object variables in order to access members. For example, b1.name, b1.id, etc. But in static keywords, in static fields, we are using book class name.memberName.
+
+503
+01:42:31,716 --> 01:42:45,415
+We can also use objects, variables. For example, b.b1.membername. It is possible, but we prefer this.
+
+504
+01:42:47,016 --> 01:42:58,796
+Şimdi static keyword'ü ortak bir şeyler paylaşırken, yani bütün her şey nesneler arasında bilgi paylaşmak istiyorsunuz. Ortak bir bilgi var. Ben bunu şöyle örnek veriyorum.
+
+505
+01:42:58,796 --> 01:43:13,516
+İşte bir kantine girdiniz. Kantinde mesela çalışan kişiler var. Herkesin tabaklarını toplayıp götürüyor. O gün kantin bin kişiye hizmet sunacak. Bininci müşteriden sonrasını kabul etmeyecek.
+
+506
+01:43:13,695 --> 01:43:28,376
+Şimdi bininci müşteriyi alan kişi mesela şey olsun yani alan görevli bir flag var. Son müşteri geldi diye. Son müşteri geldiği işte True'dan Force'a çevirince diğer görevliler de onu görecek.
+
+507
+01:43:28,795 --> 01:43:45,235
+ve diyecek ki tamam son müşteri gelmiş artık biz işi paydos edebiliriz. Örnek anlaşıldı mı? Yani ortak bir şey var. Çünkü bunlar hepsi birbirinden başka başka nesneler. Bu nesnelerin bu ortak alana bakarak bir karar vermem, bir başka bir iş yapması gerekiyor.
+
+508
+01:43:45,971 --> 01:44:11,411
+veya işte bir numaratör var, statik bir numaratör. O numaratör herkese göre aynı. Biz bunu C'de statik keywordlü, statik değişkenlerde ne yapıyorduk? Bir fonksiyonda değişken tanımlanınca, o fonksiyonu tekrar tekrar çağırınca kaldığı yerden devam ediyordu hatırlarsanız. Bu da onun gibi birbirinden bağımsız nesneler, çünkü nesne dediğimiz şey B1 bir nesne, B2 bir başka nesne.
+
+509
+01:44:11,411 --> 01:44:36,131
+Bunlar işte bu static keyword'e baktığında hepsi aynı şeyi görecekler. Yani kendilerine özgü bir şey yok. Halbuki B1'in adı farklı, B1'in ID'si farklı, bellekteki yerleri farklı. Ama static keyword hepsinde aynı oluyor. Çünkü static olunca bu sınıfın bir nesnesi oluyor, sınıfın bir üyesi oluyor. Öbür türlü static olmazsa nesnenin bir üyesi oluyor.
+
+510
+01:44:36,131 --> 01:45:06,111
+Bu örneğin
+
+511
+01:45:06,131 --> 01:45:33,371
+O zaman diyeceksin ki sistemi kapatacaksın, sistem bugünlük kapandı diyeceksin. O da basit bir şey. Yani yeni ekleme diye bir fonksiyon var. Öğrencinin gelmesinden sen ekleme diye fonksiyondan bahsediyorsun. Diyecek ki o bayrağa bakacak, yani bininci öğrenci geldi. Geldiyse tamam sistem kapandı diyecek, yeni öğrenci kabul etmeyecek. Yani ekleme yapmadan önce bir ifle bunu kolaylıkla kontrol edebilirsin.
+
+512
+01:45:33,371 --> 01:45:39,251
+Yani bu sadece görevliler klasına ait olmayabilir mi?
+
+513
+01:45:39,251 --> 01:45:58,291
+Tabii tabii yani sen oradan mesela gidip o kantinin veya ne bileyim kuruluşun hangi müşteride olduğuna dair bir şey yaparsın. Ama zaten öğrenci ekle veya yeni gelen müşteri ekle işi bu kantin tarafında yapılır. Yani öğrenci kendi kendini sisteme ekleyemez.
+
+514
+01:45:58,291 --> 01:46:23,991
+Şimdi sen şunu demek istiyorsun. Öğrenci var bir class. İşte kantin var veya banka var bir başka class. Kantinde de işte ne bileyim çalışanlar var. O da bir başka class. Üç tane class birbiriyle haberleşecek. Şimdi ben öğrenci eklemeyi öğrenciye mi yazmam lazım? Öğrenci işleme metodunu. Kantine mi yazmam lazım? Yoksa oradaki çalışanların içerisinde mi yazmam lazım?
+
+515
+01:46:23,991 --> 01:46:25,551
+Kantine
+
+516
+01:46:25,551 --> 01:46:53,971
+İşte o kantine yazacağım için zaten bu kantinde böyle bir değişken statik olarak tutulur ve görevliler o şeyi set eder hatta öğrenciler o değişkeni set edemezler onlara gizlenir bir şekilde onlara erişime engellenir mesela böyle bir şey yapacağız ilerleyen zamanlarda thread anlatınca böyle bir güzel bir örneğim vardı onu inşallah kodlarım zamanı gelince bu arkadaşlar common yani bilinen her şeyde olması gereken özellikler mesela her otorga
+
+517
+01:46:53,991 --> 01:46:56,511
+Otomobilin 4 tane tekerleği vardır.
+
+518
+01:46:57,411 --> 01:47:01,411
+Yani otomobil diyoruz ama bakın araç demiyoruz ne bileyim daha büyük araçlar demiyoruz.
+
+519
+01:47:02,211 --> 01:47:03,391
+Bu statik bir özelliktir.
+
+520
+01:47:04,291 --> 01:47:05,931
+Yani şimdiye kadar 5 tane olan olmadı.
+
+521
+01:47:06,631 --> 01:47:12,451
+Veya işte böyle herkese ortak bilgi paylaşımı gerektiren bir durum olursa o zaman kullanan bir şey.
+
+522
+01:47:15,451 --> 01:47:18,031
+Bir de statik member metotlar var.
+
+523
+01:47:18,131 --> 01:47:19,751
+Bu statik field'lar dedik.
+
+524
+01:47:37,363 --> 01:48:07,343
+Two different objects of the same type answer the same message differently. Two different objects answer the same message differently. However, in some cases, you may need to have all objects of a particular type to share a common behavior. For example, print methods in Java, println, system outprintln.
+
+525
+01:48:07,363 --> 01:48:15,803
+This is commonly used and we can use for different purposes.
+
+526
+01:48:15,803 --> 01:48:20,363
+In this case, you define this member method with static keyword.
+
+527
+01:48:20,363 --> 01:48:27,363
+Static keyword are used, keyword is used for static members and static methods.
+
+528
+01:48:27,363 --> 01:48:34,363
+You may only use static members of an object within a static method of this object.
+
+529
+01:48:34,363 --> 01:48:43,764
+Okay, they are accessed via the class name, class name dot method. There is no need object creation.
+
+530
+01:48:45,563 --> 01:49:00,764
+Inside static method, static inside, sorry, static members of an object are used in static method.
+
+531
+01:49:00,764 --> 01:49:12,823
+If you use your static members non-static method, there may be any compile-time error you can encounter.
+
+532
+01:49:16,756 --> 01:49:46,035
+and final members and final, final is another keyword, final members and final methods. You may need the value of a number to stay constant. It is similar to const declaration. In this case, you define this member with final keyword in Java, in UML. Okay, there are two basic uses.
+
+533
+01:49:46,756 --> 01:49:50,956
+You might assign a value to a final number of an object only once.
+
+534
+01:49:52,256 --> 01:49:57,855
+This assignment is usually done when the object is created.
+
+535
+01:49:57,855 --> 01:50:14,555
+If you create an object like this, book, B is new book, assignment behind this object creation is directly executed.
+
+536
+01:50:14,555 --> 01:50:33,616
+Chasis number of a car is etched onto it when it is produced in the factory. Şase numarası ne oluyor? Üzerine yükleniyor. Yani kazanıyor mu diyorlar artık neyse. Ve bu daha sonradan değiştirilemiyor.
+
+537
+01:50:33,616 --> 01:50:36,995
+Final member methods.
+
+538
+01:50:37,535 --> 01:50:51,235
+This is also used in order to inhibit, in order to block, override operation or derivation operation.
+
+539
+01:50:51,235 --> 01:50:53,656
+It cannot be overriding.
+
+540
+01:50:54,656 --> 01:50:59,016
+It is related to inheritance, but we will see the details later.
+
+541
+01:50:59,015 --> 01:51:14,495
+Yani final keyword'ünü de kullanarak member'ları sabit hale getiriyoruz. Metotları da kalıtımla türetilemez hale getiriyoruz. Overwrite edilemez hale getiriyoruz.
+
+542
+01:51:14,495 --> 01:51:44,476
+We can use both static and final in a method or field declaration or definition. For example, public static final list book. This is a simple method declaration. Both static and final.
+
+543
+01:51:44,495 --> 01:51:53,615
+And finally, we cannot overwrite, we can directly access our class name. There is no need for object creation.
+
+544
+01:51:58,228 --> 01:51:59,307
+Yes.
+
+545
+01:52:02,387 --> 01:52:11,507
+Final only use only once. This is related to definition. Static is shared usage.
+
+546
+01:52:13,507 --> 01:52:29,507
+In UML class schema, a member and type is specified with final and static. Static is also specified with underline.
+
+547
+01:52:31,347 --> 01:52:55,827
+Yes. During the object creation, there is an operation, there is an event related object oriented concepts. This is a construction. A constructor method, spatial purpose method, is executed. This is a method, but a spatial purpose method.
+
+548
+01:52:55,827 --> 01:53:09,827
+The special characteristic of this method is it has the same name with class.
+
+549
+01:53:09,827 --> 01:53:16,568
+For example, public class book.
+
+550
+01:53:17,847 --> 01:53:21,827
+Your constructor method is book.
+
+551
+01:53:21,827 --> 01:53:25,028
+There is no return type or void.
+
+552
+01:53:25,827 --> 01:53:34,708
+You can add your parameters but the return type is not used.
+
+553
+01:53:36,507 --> 01:53:43,508
+The method is executed explicitly by the programming when an object is to be created.
+
+554
+01:53:44,068 --> 01:53:47,307
+This is explicitly executed.
+
+555
+01:53:47,307 --> 01:54:01,267
+If you don't write this constructor method in your program or your class, there is an implicit object constructor.
+
+556
+01:54:02,267 --> 01:54:02,928
+Okay.
+
+557
+01:54:04,528 --> 01:54:10,487
+Constructors are used for assigning the initial values of members, especially members.
+
+558
+01:54:10,487 --> 01:54:26,687
+For example, when you create an object, when you create a book object, the title, the price, and the number of pages is assigned into this object.
+
+559
+01:54:26,687 --> 01:54:39,648
+For example, book, B is new book, we are at id, for example, one, java,
+
+560
+01:54:43,155 --> 01:55:03,215
+This is assignment of, these arguments are used assignment for assignment inside the constructor method to convey these values into the members of book class.
+
+561
+01:55:03,215 --> 01:55:23,995
+Yani bir book class'ındaki şeyde bir objelerim, şeylerim var, memberlarım var. Ben book class'ından bir nesne ürettiğimde nesne üretir üretmez bu değişkenlerin oraya aktarılmasını istiyorsam burada constructor kullanıyorum. Ve bu sayede setter getter metotlara gerek duymuyoruz. Eğer constructorla bu işi yapacaksak.
+
+562
+01:55:23,996 --> 01:55:49,035
+Burada bunların sıraları önemli. Bu sıraları değiştikçe başka bir şey oluyor. Onlara birazdan geleceğiz. Demek ki constructor metot bir nesne oluşturulduğunda arka planda oluşacak olayları tanımlamamızı sağlıyor. Nesneyi tanımladık. Bu nesne ilk üretildiğinde neler olsun? Onları kendimiz tanımlıyoruz.
+
+563
+01:55:49,035 --> 01:55:57,675
+Eğer tanımlamazsak arka planda default constructor tanımlanmış oluyor değerleyiciler tarafından veya cevabı düşünme işin tarafından.
+
+564
+01:55:57,675 --> 01:56:01,175
+Peki default constructor ne yapar?
+
+565
+01:56:02,376 --> 01:56:14,315
+Default constructor assigns default value of your members in their labels.
+
+566
+01:56:14,315 --> 01:56:43,015
+For example, bookMyClass, classBook, integer ID, integer number of page, float price, string name, and author, author.
+
+567
+01:56:43,016 --> 01:56:58,016
+These are members. You can add extra methods in this book class. So when you create an object,
+
+568
+01:57:01,555 --> 01:57:29,396
+There is an implicit object constructor and it is executed. And default value of these variables are assigned. Okay. For example, default value of integer is zero. This is zero. This is zero dot zero. This is null. This is also null.
+
+569
+01:57:29,396 --> 01:57:58,355
+How can we discriminate or distinguish between null or other variables? If your members is in value type, this is the default value related to it changes according to their type. For example, integer zero, boolean false, character is null, character is like zero.
+
+570
+01:57:59,396 --> 01:58:10,816
+But when it comes to reference type, in your reference type it is almost, it is usually null.
+
+571
+01:58:12,035 --> 01:58:12,276
+Ok.
+
+572
+01:58:13,615 --> 01:58:19,475
+Bütün ilk değerlendirmeler nesne üretildiğinde name, author hepsi null olarak atanıyor.
+
+573
+01:58:19,475 --> 01:58:25,956
+Eğer referansla. Değer tipindeyse tipine göre değişiyor. Integer ise 0, flow ise 0.0 oluyor.
+
+574
+01:58:27,155 --> 01:58:28,076
+Buraya kadar anlaşıldı mı?
+
+575
+01:58:32,051 --> 01:58:34,211
+Şimdi bakalım burada ne var.
+
+576
+01:58:36,311 --> 01:58:42,751
+When you create an object, constructor is executed.
+
+577
+01:58:43,512 --> 01:58:45,131
+Implicitly or explicitly.
+
+578
+01:58:46,031 --> 01:58:50,711
+If you define constructor, it's explicitly executed.
+
+579
+01:58:50,911 --> 01:58:54,571
+If you don't define, it's implicitly executed.
+
+580
+01:58:55,611 --> 01:58:59,291
+But, like in C,
+
+581
+01:58:59,291 --> 01:59:23,811
+We have to release this object from our memory. To do this or to express some operations or to do some operations once your object is destroyed, finalizing method is used.
+
+582
+01:59:23,811 --> 01:59:32,051
+This is implicitly executed by GeoHurchialMachine when an object is to be destroyed.
+
+583
+01:59:32,051 --> 01:59:41,331
+But C++ or C-sharp, you should add finalize method in your own code.
+
+584
+01:59:41,331 --> 01:59:43,811
+You can explicitly add.
+
+585
+01:59:43,812 --> 01:59:56,212
+This is the name is finalize. And it takes no parameters and it does not return anything directly finalize. We will use later.
+
+586
+01:59:58,212 --> 02:00:11,011
+Inside this function, you can write whatever you want. There is no important. For example, object destroyed. There's a message system dot out dot printed and object destroyed.
+
+587
+02:00:11,011 --> 02:00:14,511
+program is exiting, program is closing.
+
+588
+02:00:14,891 --> 02:00:16,531
+For example, this message is okay.
+
+589
+02:00:17,831 --> 02:00:23,452
+For example, cloning some objects while destroying.
+
+590
+02:00:23,912 --> 02:00:26,912
+These are possible implementation scenario.
+
+591
+02:00:27,531 --> 02:00:35,412
+Unlike C or C++, Java programmers mostly need not to handle memory management.
+
+592
+02:00:35,412 --> 02:00:41,171
+What do you understand from this sentence?
+
+593
+02:00:46,163 --> 02:00:48,443
+Handling Memory Management. What is this?
+
+594
+02:00:49,884 --> 02:00:50,943
+Buradan ne anlıyoruz?
+
+595
+02:00:51,803 --> 02:00:53,323
+Bu free olayı değil mi hocam?
+
+596
+02:00:54,624 --> 02:00:56,343
+Free olayı. Yani?
+
+597
+02:00:59,063 --> 02:01:01,463
+Hocam ben C, C plus dersi falan görmedim.
+
+598
+02:01:02,463 --> 02:01:05,163
+Buradan birinci denemim de.
+
+599
+02:01:05,584 --> 02:01:08,184
+Öncelikle anlattığınız şey üzerinden söylüyorum.
+
+600
+02:01:08,243 --> 02:01:10,543
+Dynamic Memory Allocation mi hocam genel olarak?
+
+601
+02:01:11,424 --> 02:01:11,883
+Evet.
+
+602
+02:01:12,203 --> 02:01:13,924
+Kalloklar, malloklar, freeler.
+
+603
+02:01:13,924 --> 02:01:15,504
+Aynen. Güzel.
+
+604
+02:01:16,163 --> 02:01:33,344
+Şimdi bu Utkan'ın söylediği de doğru. Arkadaşların hepinin söylediği doğru. Şimdi bir bellekten yer ayrıldığında ya stack bölgesinden ayrılıyor ya da derden ayrılıyor dedik. HIP bölgesinden ayrılıyor.
+
+605
+02:01:33,344 --> 02:01:58,884
+Şimdi bu hip bölgesinde yapılan bellek tahsisatı işletim sistemiyle yapılan özel izinler gibi düşünün yani öyle herkes oraya giremiyor. Çünkü ekstra bir dinamik bir alan içeriyor aslında. Şimdi bu dinamik alandaki bir nesna yok olduğunda biz C'de ne yapıyorduk? Belleyi çok fazla yormasın diye hemen free ediyorduk. Öyle değil mi? C++'da da zannediyorum bunun adı delete.
+
+606
+02:01:58,884 --> 02:02:22,443
+Java diyor ki bir obje başıboş bir şekilde dolaşıyorsa yani bir referansa atanmamışsa veya bir yerde kullanılmıyorsa Java Virtual Machine'in Garbage Collector'u zaman zaman gidiyor belli aratı onu temizliyor veya bu Garbage Collector zaman zaman tetikleniyor bellekteki kullanılmayan objelerin yerlerini kullanılabilir hale getiriyor.
+
+607
+02:02:22,443 --> 02:02:24,483
+Yani objekt kullanılmıyorsa diyoruz.
+
+608
+02:02:25,024 --> 02:02:26,763
+Mesela şöyle bir şey yaptık.
+
+609
+02:02:28,704 --> 02:02:31,723
+Book, B eşittir, new book dedik.
+
+610
+02:02:32,884 --> 02:02:36,503
+Şu an bir nesne var ve bu nesneyi B ile kullanıyoruz.
+
+611
+02:02:36,723 --> 02:02:38,704
+İşte B nokta bir şeyler yaptık yaptık geldik.
+
+612
+02:02:39,643 --> 02:02:42,143
+Sonra dedik ki B eşittir, new book dedik.
+
+613
+02:02:43,803 --> 02:02:46,583
+Şimdi burada oluşan yeni nesne geldi B'ye atandı.
+
+614
+02:02:46,583 --> 02:02:50,063
+Artık bu nesne yani bu bellekte şöyle bir yerde duruyor.
+
+615
+02:02:50,063 --> 02:03:16,803
+Birisi burada eski nesne diyelim New Book. Şuraya bir diyelim. Birincisi burada. İşte B'de buradan burayı gösteriyor. İkincisi de burada. Şimdi artık şu işlemi yaptıktan sonra şu herhangi bir referans tanımından kullanılmayan başıboş bir nesne gibi. İşte Virtual Machine diyor ki ben bunu ne yapabilirim? Bir ek kendim silerim. Java Virtual Machine bu temizleme işini yapıyor.
+
+616
+02:03:20,063 --> 02:03:25,603
+As a result we will not study finalizer methods anymore in this class.
+
+617
+02:03:25,603 --> 02:03:37,843
+Yani bu klassta en fazla anlatacağımız şey şu olur. Finalizer metodu kendimiz elde çalıştırıp garbage collector'ı tetikleyebiliriz. Bu bazen gerekli olabiliyor. Özellikle C-Shark'ta ben kullanıyordum.
+
+618
+02:03:38,643 --> 02:03:47,743
+Çünkü görüntü işlemi uygulaması yaptığım zamanlarda hani garbage collector'a çalışana kadar zaman geçiyor. O zamanda da işte şey bilgisayar çok fazla kasılıyordu.
+
+619
+02:03:47,744 --> 02:04:16,443
+Onun yerine mesela bir algoritmam var. O algoritmam tamamlanır tamamlanmaz. Garbage kolektörü tetikliyordum. Finalizer metot ile bunu şey yapıyorduk. Bunun örneğine bakarız daha sonra. Bir nesne yok edildiğine, nesnenin yok edilmesi de tabii ayrı bir konu. Şu işlem yapıldıktan sonra, şu işlemden şuraya geçildikten sonra bir finalizer metodu çağırabiliriz veya bir şeyi yaptırabiliriz.
+
+620
+02:04:17,744 --> 02:04:33,744
+Bu içinde kodlanan bir şey, destructor, deconstructor deniyor şeyde C++'ta. O finalizer metodun içinde garbaş korrektörü çağırırsak ne olur bu başıboşmesine bellekten silinebilir hızlıca.
+
+621
+02:04:33,744 --> 02:04:41,124
+Yes. Rules for constructor methods, they are public.
+
+622
+02:04:44,307 --> 02:04:53,907
+because we have to access this method in order to define, in order to create a new object.
+
+623
+02:04:55,108 --> 02:04:58,188
+Their name is the same with the class I said before.
+
+624
+02:04:59,667 --> 02:05:12,427
+Although they are used to create an object, you do not issue a return comment within constructor body and you do not give a return type to the constructor method.
+
+625
+02:05:12,427 --> 02:05:39,027
+This create an object, but we do not add return command or return type in this method. Directly public car in this example. This is a constructor. If you need extra add extra parameters in your method, you can add. Okay, you can define.
+
+626
+02:05:39,027 --> 02:05:58,467
+It is the best place to assign values to final member fields. If your class has fields with final member, you can assign these values inside constructor.
+
+627
+02:05:58,467 --> 02:06:07,467
+They are used with the new keyword also we are triggered this constructor new keyword.
+
+628
+02:06:07,467 --> 02:06:12,467
+New directly triggers this method.
+
+629
+02:06:12,467 --> 02:06:18,467
+Yes, this is our example.
+
+630
+02:06:18,467 --> 02:06:31,727
+Instantiation, instantiate, örnekleme yani örnek alma işlemi. Burada constructor'ın execute edilmesinde kullanılan bir şey.
+
+631
+02:06:33,567 --> 02:06:41,227
+Defining an object is not enough to use it. You need to instantiate it by executing its constructor.
+
+632
+02:06:41,227 --> 02:07:06,608
+What is this? This is defining an object, okay, but there is no concrete object here. If you write a new keyword, it triggers constructor method and then the object is realized, okay?
+
+633
+02:07:06,608 --> 02:07:23,848
+Okay. For example, kit is a car or new method. The constructor is executed and the reply or response is executed.
+
+634
+02:07:29,268 --> 02:07:30,268
+Yes.
+
+635
+02:07:32,268 --> 02:07:56,268
+In this example, another class, some method. After this operation, the constructor is executed and kit is the reference of variable, new variable or object is assigned into kit variable. This is inside to which part of your memory?
+
+636
+02:07:57,867 --> 02:07:59,047
+What do you say?
+
+637
+02:08:06,515 --> 02:08:22,675
+Which part? Hip or stack? Stack part. Bu kit stack part'ta. Şuradan gelen nesne ama hip part'ta. Tamam mı? Bu bunun aslında referansını tutuyor arkadaşlar. Biz ileride de bunu göreceğiz tekrar.
+
+638
+02:08:22,675 --> 02:08:29,555
+This is UML representation, code representation as a member file.
+
+639
+02:08:30,276 --> 02:08:30,436
+Okay.
+
+640
+02:08:31,216 --> 02:08:35,696
+This is a member of a class, a class.
+
+641
+02:08:36,495 --> 02:08:36,635
+Okay.
+
+642
+02:08:37,395 --> 02:08:42,755
+This is a member of this method or variable of this method.
+
+643
+02:08:43,615 --> 02:08:48,696
+There is no member or object, temporary object.
+
+644
+02:08:48,696 --> 02:09:01,576
+Both of them are executing the constructor method. İkisi de constructor methodu çağırıyor.
+
+645
+02:09:02,576 --> 02:09:11,935
+In Java, there is a default constructor. If you don't define your constructor, constructor is explicitly defined.
+
+646
+02:09:11,935 --> 02:09:31,376
+The feature of this, there is no parameter in this scope, implicitly and automatically defines this. If you add extra parameters in your constructor, constructor with parameters are used.
+
+647
+02:09:31,376 --> 02:09:45,295
+When you create an object via new operator, your arguments are assigned into these parameters in constructor definition.
+
+648
+02:09:46,655 --> 02:09:56,636
+If the programmer explicitly called a constructor with parameters, the default constructor is not automatically created by Java Virtual Machine.
+
+649
+02:09:56,635 --> 02:10:16,395
+Okay. Default constructor is abolished, is canceled. This is up to your command or up to your design. You can use whatever you want, default constructor or not.
+
+650
+02:10:16,395 --> 02:10:42,915
+However, here, business logic is important concepts. If your problems needs a constructor with parameters, you should define its constructor with parameters. If it is not necessary, you don't need to write. Also, there's a new concepts overloading.
+
+651
+02:10:42,915 --> 02:10:56,435
+We can use overloading methods of a class, constructor methods in Java.
+
+652
+02:10:56,435 --> 02:11:05,135
+Also something we will talk about later.
+
+653
+02:11:05,135 --> 02:11:25,015
+If your constructors have different signature or different prototype, you can define several constructors in your class.
+
+654
+02:11:25,015 --> 02:11:43,935
+For example, car integer parameter i, car string parameter s, public car, sorry, public car, car int and string.
+
+655
+02:11:45,616 --> 02:11:50,515
+This is an overload, overloading of your construct, constructor.
+
+656
+02:11:50,515 --> 02:12:05,515
+We can also use overloading for our methods. For example, calculate area of circle, calculating area of rectangle.
+
+657
+02:12:05,908 --> 02:12:06,908
+calculating area of square. All of these objects can be said as calculating area of shape. But implementation is different. If you send parameters, for example, calculate area only integer int r,
+
+658
+02:12:35,908 --> 02:12:50,167
+You can define this function in order to calculate the area of square and you can define another function, another method int x and y.
+
+659
+02:12:50,167 --> 02:13:07,187
+You can call this method in order to calculate the area of rectangle. These are the same function name, the same method name, but prototypes are different.
+
+660
+02:13:07,187 --> 02:13:16,227
+Şimdi overloading arkadaşlar çok kullandığımız bir kavram ve genellikle şeyden de karıştırılıyor, overriding ile karıştırılıyor.
+
+661
+02:13:16,227 --> 02:13:24,628
+Bir metodun bir sınıf içinde veya bir constructorın bir sınıf içinde farklı tipte imzalara sahip olması demek.
+
+662
+02:13:25,387 --> 02:13:28,908
+Bu sınıf içerisindeki farklı tipli imzalar da şöyle oluyor.
+
+663
+02:13:29,047 --> 02:13:35,507
+Şimdi mesela int yazdık, bir metot yazdık, method name yazdık, buraya da parametreler yazdık.
+
+664
+02:13:36,027 --> 02:13:38,827
+Şu method name'den sonrasının farklı olması önemli.
+
+665
+02:13:38,988 --> 02:13:43,027
+Bundan öncesi yani aynı şeyi yazdınız, bunu int bulup float yazdınız, o olmuyor.
+
+666
+02:13:43,027 --> 02:14:00,067
+Yani bunun içeriği farklı olacak burası farklı olacak sadece aynı isimde birden fazla metot tanımlayabiliyorsunuz. Bu farklılık nasıl sağlanabilir? Söyleyin bakalım şu parametrelerin farklılığı nasıl sağlanabilir?
+
+667
+02:14:04,564 --> 02:14:08,503
+Parametri'de hocam işte float, int, string değişebilir.
+
+668
+02:14:09,103 --> 02:14:12,004
+Sırasını değiştirebiliriz. Başka?
+
+669
+02:14:12,524 --> 02:14:14,043
+Tiplerini değiştirebiliriz herhalde.
+
+670
+02:14:14,203 --> 02:14:22,203
+Tiplerini değiştirebiliriz. Yani şöyle söyleyeyim. Integer, float, bir tane de string yazdık. Bu üçünü kendi içinde değiştirirsek overload edebiliyoruz.
+
+671
+02:14:23,643 --> 02:14:31,484
+Ondan sonra bu yetmiyor. Sayısını değiştirebiliriz. Yani sadece bir tane parametre alır veya birisi iki parametre alır. O zaman o da değişiyor.
+
+672
+02:14:31,484 --> 02:14:35,324
+Veya aynı parametre farklı tiplerde şeyler geliyor.
+
+673
+02:14:35,463 --> 02:14:39,284
+Şimdi mesela şuradan bir Java class açalım.
+
+674
+02:14:41,924 --> 02:14:45,904
+Şu system.out şeyi görmek için go to source diyorum.
+
+675
+02:14:47,123 --> 02:14:47,644
+Diyemedim.
+
+676
+02:14:49,784 --> 02:14:52,004
+Go to declaration mı diyeceğiz.
+
+677
+02:14:57,876 --> 02:15:07,876
+Şimdi açılacak. Ben bu sistem out'u kullanırken print elan diye görelim. Burada bir yerde var. Gerçi out'a gideceğiz.
+
+678
+02:15:16,372 --> 02:15:19,832
+Şimdi bu final kısmına daha geleceğiz arkadaşlar. O ayrı bir şey.
+
+679
+02:15:21,711 --> 02:15:25,951
+Bakın printelen. Bu da printelen, bu da printelen. Şuradaki her şey aynı.
+
+680
+02:15:26,851 --> 02:15:35,231
+İşte bu overloading işleminin sonucudur. Bakın bu hangi neymiş? Neymiş bu? Printstream. Yani işletim sistemiyle haberleşen bir sınıf bu aslında.
+
+681
+02:15:36,731 --> 02:15:38,411
+Yazdıracağınız şeyi buraya yazıyorsunuz.
+
+682
+02:15:40,011 --> 02:15:44,231
+Yapılacak bu print ve printelenlerin hepsinde farklı parametreler var.
+
+683
+02:15:44,231 --> 02:16:07,691
+İşte char dizisi yazıyor. Olası bütün durumları hemen hemen yazmış. En son bir de obje koymuş. Obje çünkü hepsini kapsayan bir şey. İşte bu overloading oluyor. Aynısını burada metotlara yapabildiğimiz gibi print stream demiş bakın. Burada private olarak bir şey var. Bunu private tanımlaması engel değil. Yani bu da bir constructor. Constructor'ı da overload etmiş bakın.
+
+684
+02:16:07,691 --> 02:16:11,611
+Şurada olduğu gibi.
+
+685
+02:16:12,892 --> 02:16:14,351
+Hatta bayağı da bir uğurlu otetmiş.
+
+686
+02:16:14,351 --> 02:16:16,011
+Bunu biz nasıl göreceğiz?
+
+687
+02:16:16,952 --> 02:16:18,691
+Yani nasıl şey yapabiliriz?
+
+688
+02:16:20,151 --> 02:16:24,071
+İdeler burada bize çok kolaylıklar sunuyor.
+
+689
+02:16:24,592 --> 02:16:25,351
+Şimdi geldik.
+
+690
+02:16:26,471 --> 02:16:32,351
+System.out.println
+
+691
+02:16:32,351 --> 02:16:36,351
+Println
+
+692
+02:16:36,351 --> 02:16:49,351
+Visual Studio'da bakın bunların bu kadar fazla çıkmasının sebebi işte overloading sonucu. Siz kendi sınıf planınızda da bu kadar fazla sınıf yazdığınızda ne yapacak bu ide gidiyor o sınıftaki print elenle başlayan her şeyi sıralıyor.
+
+693
+02:16:49,351 --> 02:16:53,311
+Tamam mı? Peki.
+
+694
+02:16:55,411 --> 02:17:00,651
+What is the third part of overloading? What is this?
+
+695
+02:17:02,031 --> 02:17:02,931
+It's a question.
+
+696
+02:17:09,299 --> 02:17:10,179
+What do you say?
+
+697
+02:17:16,500 --> 02:17:20,699
+Yes. Başka neyi overload edebiliriz?
+
+698
+02:17:24,435 --> 02:17:28,115
+Hocam, operatörleri overload yapabilir misiniz?
+
+699
+02:17:28,876 --> 02:17:30,755
+Sen demek ki biliyorsun konuyu.
+
+700
+02:17:32,175 --> 02:17:37,396
+Evet, operatörler de overload edilebilir, operators.
+
+701
+02:17:38,776 --> 02:17:40,055
+Fakat Java da edilemiyor.
+
+702
+02:17:41,456 --> 02:17:43,395
+Except from Java diyelim.
+
+703
+02:17:43,395 --> 02:17:44,015
+Tamam mı?
+
+704
+02:17:45,055 --> 02:17:46,955
+Ben bunun örneğini göstereceğim.
+
+705
+02:17:47,295 --> 02:17:50,696
+İşte C Sharp'ta veya C++'ta operator overloading mümkün.
+
+706
+02:17:50,696 --> 02:18:16,235
+Şimdi bunu tabi Java'da yok diye bilmememiz gerekmiyor. Aslında bilmemiz gerekiyor tam tersine. Bunu bilmeyince farklı bir hata yapıyoruz. O da şu. O da şu. Book nesnesi oluşturduk. Bunun örneklerini ayrıca yapacağım da bugüne kadar gördüğümüz şeyden.
+
+707
+02:18:16,235 --> 02:18:18,235
+New, book dedik
+
+708
+02:18:18,235 --> 02:18:21,555
+1
+
+709
+02:18:21,555 --> 02:18:24,675
+Java 1
+
+710
+02:18:24,675 --> 02:18:27,995
+Bu, 2 tane field olsun
+
+711
+02:18:27,995 --> 02:18:31,575
+Bir başka book nesnesi B1 eşittir
+
+712
+02:18:31,575 --> 02:18:31,876
+New
+
+713
+02:18:38,708 --> 02:19:01,407
+Bu sizlerden çok yapılıyor. Şimdi arkadaşım böyle iki tane nesne oluşturmuş. Güzel. Aşağıda bir sürü program yazmış, yazmış, yazmış. Ben diyorum ki işte kitaplar birbirine, bu nesneler birbirine eşit mi değil mi? Buna bakacaksın diyorum. Diyor ki ifi de biliyoruz artık. B eşittir, B1 eşit eşittir, B1 diyoruz.
+
+714
+02:19:01,407 --> 02:19:21,367
+Burada system outprinted falan bir şeyler yazdı. Else dediği işte başka bir system outprinted yazdı. Senaryo böyle. Şimdi bu doğru bir senaryo mu yanlış bir senaryo mu? Yani şu if true mu olur false mu olur şuradaki satır? Ne dersiniz?
+
+715
+02:19:21,367 --> 02:19:38,788
+Utkan dedi ki false. False ise niye false? True ise niye true? Hatta şunu da şöyle yapalım arkadaşlar. Bunlar da şöyle kafanız karışmasın. Bir yapalım. Şöyle olsun. İkisi de birebir aynı.
+
+716
+02:19:40,307 --> 02:19:48,527
+Hocam bu B ve B bir pointer gibi düşünebilir miyiz? Yani adres gibi falan mı? Bu sonuçta bir işlem olarak karşılaştıramayız çünkü.
+
+717
+02:19:48,527 --> 02:20:03,947
+Tamam. Şu başa dönelim. Bunlar neredeydi? Bellekten nerede saklanıyordu? Hip bölgesinde. Stake bölgesinde. Şuradan gelen hip bölgesinden gelen şeyi ne yapıyor? Stake bölgesinde saklıyor. Şimdi bu stake bölgesinde neyi saklayacak? Bunun adresini saklayacak.
+
+718
+02:20:05,428 --> 02:20:06,508
+Adresi aynı değil.
+
+719
+02:20:06,508 --> 02:20:18,008
+Adresi saklayacağı için bunlar bir kere farklı nesneler. Farklı nesneler olacağı için bunların referansları farklı. Tuttukları şeyler farklı. Birazdan deneyeceğiz bunu. B eşit eşit. B1 yazdığımızda sürekli false çıkacak burada.
+
+720
+02:20:18,527 --> 02:20:37,748
+Hiç istisnaz yok. İçeriği isterse %100 aynı olsun. Çünkü bunlar bellekte farklı adreslerde oturan nesnelerin referanslarını tutuyorlar. Bunu yaptığım zaman sürekli false gelecek. Yani şurası çalışacak. Peki biz gerçek anlamda bunların field'larını nasıl kıyaslayacağız?
+
+721
+02:20:37,748 --> 02:20:59,788
+Bunu yapan bir mekanizmaya ihtiyaç var. Eşit eşit sınıf kontrolü yapıyor demiş. True değil arkadaşlar. Şevket ve Toybar. Utkan doğru söyledi. Integer ve String veriyor. İkisinde de aynı metot kullanılıyor. Yani neyi veriyor Toybar? Integer ve String de eşit eşit çalışıyor mu?
+
+722
+02:21:04,884 --> 02:21:24,123
+int ve şey farklı da o integer ve string bunlar wrapper classlar. Onlara ayrıca bakacağız. Şimdi burada b eşit eşit b1 çalışmayacak. Çünkü bunun sebebini söyledik. Peki bunu ben kıyaslamak istiyorum arkadaş. Bunların id'lerini ondan sonra isimlerini kıyaslamak istiyorum. Ne yapacağım?
+
+723
+02:21:28,755 --> 02:21:31,935
+Tek tek ilişip karşılaştırıyoruz hocam.
+
+724
+02:21:32,496 --> 02:21:34,875
+B.id
+
+725
+02:21:34,875 --> 02:21:46,915
+Tamam. O zaman bunu bir fonksiyonunu yazmam lazım değil mi? Yani kitap kıyasla diye bir fonksiyonunu yazmam gerekiyor. Bunu yapmamışlar. Buna gerek yok demişler.
+
+726
+02:21:46,915 --> 02:21:49,516
+Buna gerek yok demişler.
+
+727
+02:21:50,655 --> 02:21:56,715
+İşte B.equals dediğimizde Java'da bir metot var.
+
+728
+02:21:56,715 --> 02:22:23,735
+B1'i gönderiyorsun. Mesela böyleydi zannediyorum. Daha sonra buna bakacağız. B eşit mi B1'e diye şey oluyor. Ama bu da yetmiyor. Hani bunu kullanmak da yetmiyor. Bunun içeriğini kendi amacıma göre tanımlayacağım. Çünkü bu equals durduk yere nereden geldi? Ben bu konu içerisinde equals diye bir şey tanımlamadım. Bu kalıtımla gelen bir özellik. Çünkü Java'da bütün nesneler obje sınıfından türü. En yukarıda bir obje vardır.
+
+729
+02:22:23,735 --> 02:22:26,855
+oluşturduğum her şey otomatik olarak objeden tülüyor.
+
+730
+02:22:27,055 --> 02:22:28,296
+Ecos bu işi yapabilir.
+
+731
+02:22:29,156 --> 02:22:29,956
+Ama nasıl yapacak?
+
+732
+02:22:30,695 --> 02:22:32,436
+Ben nasıl tanımlarsam ona göre yapacak.
+
+733
+02:22:34,196 --> 02:22:37,535
+Peki eşittir eşittir ile yapabilir miyim bunu?
+
+734
+02:22:38,476 --> 02:22:39,895
+Yani bu şekilde yapabilir miyim?
+
+735
+02:22:41,735 --> 02:22:50,675
+Bu operatör eğer referans tipli verilere bu şekilde referans tipli verilere tanımlanmış olsaydı yapabilirdim.
+
+736
+02:22:50,755 --> 02:22:51,895
+Ama Java'da böyle bir şey yok.
+
+737
+02:22:51,895 --> 02:22:54,915
+Bu operatörü yeniden tanımlamam gerekiyor benim
+
+738
+02:22:54,915 --> 02:22:58,016
+İşte buna operator overloading diyoruz
+
+739
+02:22:58,016 --> 02:23:00,556
+Operatör overloading
+
+740
+02:23:00,556 --> 02:23:07,955
+Ben dedim bununla alakalı bugün yetişmez de gelecek haftaya C++'dan veya C++'dan bir örnek yaparız
+
+741
+02:23:07,955 --> 02:23:10,075
+O zaman ha bu muymuş dersiniz
+
+742
+02:23:10,075 --> 02:23:11,715
+Şimdi bunu bilmek lazım
+
+743
+02:23:11,715 --> 02:23:15,156
+Niye bileceğiz? Operatör overloading Java'da yok
+
+744
+02:23:15,156 --> 02:23:16,635
+Bir, bunun için bileceğiz
+
+745
+02:23:16,635 --> 02:23:43,696
+İki, onu bildiğimiz için de gidip böyle bir nesneyi böyle eşittir eşittir ile karşılaştırmayacağız. Karşılaştırsak ne olur? Sonuç sürekli false olur ve hata yaparız. Hocam ondan sonra sonuç yanlış geliyor. Yani sonucun yanlış gelmesinin en büyük sebebi bu. O zaman bunun yerine şu şeyi biz kendimiz tanımlayacağız. Nasıl tanımlayacağımızı da göreceğiz daha. O kalıtımla alakalı konulara falan girince orada konuşacağımız bir şey olacak. Şimdilik ona bir şey yapmıyoruz.
+
+746
+02:23:43,696 --> 02:23:49,875
+Çünkü override diye bir şey var kısımlar orada. Şuraya kadar anlattıklarım anlaşıldı mı?
+
+747
+02:23:54,164 --> 02:24:20,243
+Var mı bir sorunuz? Her şey açık mı arkadaşlar? Nasıl gidiyor? Varsa bir sorun söyleyin. Hocam şurası olmadı. İngilizce hızlı geçtiniz. Bir de Türkçe üzerinden şu kısımda varsa söyleyin, halledelim. Çünkü bunlar hep taş taş üzerine konur gibi. Mesela ben size uzun uzun for, while bilmem ne anlatmayacağım. Çünkü onlar aynı. Geçen hafta zaten kısaca özetledik. Burada daha çok bu işin mantığıyla gideceğiz.
+
+748
+02:24:20,243 --> 02:24:22,643
+Şimdi control flow
+
+749
+02:24:22,643 --> 02:24:25,963
+bu ifler falan değil de şimdilik
+
+750
+02:24:25,963 --> 02:24:27,963
+bir objenin
+
+751
+02:24:27,963 --> 02:24:32,844
+tabi tabi tek tek karşılaştıracağız ama
+
+752
+02:24:32,844 --> 02:24:37,863
+şurada equals'un içinde onu biz tanımayacağız. Yani o equals'un içerisine geleceğiz.
+
+753
+02:24:38,963 --> 02:24:44,083
+Ne bileyim bu void mesela equals nasıl bir metottur? Herhalde boolean değer döndürüyordur.
+
+754
+02:24:44,543 --> 02:24:47,424
+Veya integer değer döndürsün. Biz c biliyoruz şimdi.
+
+755
+02:24:47,423 --> 02:25:15,183
+İQS diye bir metot var. Çok basit bir şey aslında bu. Diyecek ki bu bir tane kitap türünde bir şey alacakmış. İşte o zaman diyeceğiz ki book türünde bir B nesnesi al. Sonra diyeceğiz ki işte buradaki tanımda şey olacak. If this diye bir keyword var. Onu göreceğiz arkadaşlar. This nokta id eşittir eşittir B nokta id ise. Bu yetmeyecek. Tekrar hatta içine ant yazabiliriz. Şöyle yetmedi de ant yazadım.
+
+756
+02:25:15,183 --> 02:25:16,623
+and this tabi şöyle yazacağız.
+
+757
+02:25:17,443 --> 02:25:22,183
+This nokta name eşittir eşittir b nokta name diyeceğiz.
+
+758
+02:25:22,183 --> 02:25:26,063
+Bu şartların hepsi sağlanıyorsa return 1 gönder.
+
+759
+02:25:26,164 --> 02:25:29,183
+Yoksa en az bir tanesi bozuksa return 0 gönder diyeceğiz.
+
+760
+02:25:29,863 --> 02:25:34,903
+Şu metodu equals'u biz kendimiz kendi çıkarlarımız doğrultusunda kullanacağız.
+
+761
+02:25:35,003 --> 02:25:36,283
+Onu kendimiz tanımlayacağız.
+
+762
+02:25:36,463 --> 02:25:37,164
+Ona geleceğim daha.
+
+763
+02:25:39,243 --> 02:25:42,803
+Yoksa equals olmasaydı biz kendimiz bir tane metot yapacağız.
+
+764
+02:25:42,923 --> 02:25:44,543
+Eşit mi diye bir metot tanımlayacaktık.
+
+765
+02:25:44,543 --> 02:26:02,223
+Çünkü sınıf tasarlıyorsam o sınıfta istediğim gibi istediğim kadar metot yazabiliyorum. Ama demiş ki Java equals zaten bu çok kullanılan bir şey. Başka şeyler de var onlara da geleceğiz. Bu çok kullanılan şeyi sen kendi çıkarına göre değiştir, kullan demiş. Bu kadar açık ve net.
+
+766
+02:26:02,223 --> 02:26:11,143
+Evet, şimdi gelelim. Şimdi control flow is the order of execution of program codes.
+
+767
+02:26:11,143 --> 02:26:17,983
+But when it comes to object-oriented programming, execution is different from structural programming.
+
+768
+02:26:17,983 --> 02:26:36,423
+because in structural programming we can directly start at the first line and then we are going from the first line to the last line.
+
+769
+02:26:36,423 --> 02:26:36,943
+Okay.
+
+770
+02:26:37,923 --> 02:26:43,843
+But there is no different classes in the structural programming.
+
+771
+02:26:43,843 --> 02:27:00,103
+perhaps we can go to another function and return them and we can go on wherever we stay and till the end of the program the flow is executed.
+
+772
+02:27:00,103 --> 02:27:13,103
+But in Java or other object-oriented languages we may encounter while executing any program some object creation.
+
+773
+02:27:13,843 --> 02:27:16,903
+or object method call.
+
+774
+02:27:17,683 --> 02:27:24,903
+For example, system.outprint is the method call.
+
+775
+02:27:25,203 --> 02:27:25,363
+Okay.
+
+776
+02:27:26,543 --> 02:27:30,863
+Object creation book B is new book.
+
+777
+02:27:31,383 --> 02:27:35,183
+So we have to create an object.
+
+778
+02:27:35,183 --> 02:27:47,723
+and before, after object creation, we have to go object constructor and return the address of reference and go on program execution.
+
+779
+02:27:48,723 --> 02:27:52,683
+Low level, a program consists of various commands.
+
+780
+02:27:53,556 --> 02:28:06,556
+For example, if or compare, add some move. The order that these comments are written and the order that they are executed are not necessarily in the same.
+
+781
+02:28:07,556 --> 02:28:17,556
+Especially in object-oriented, these two ordinings are almost always quite different than each other, structural programming.
+
+782
+02:28:17,556 --> 02:28:27,515
+Yani komutların yazıldığı sırayla bir kere komutların execute edilmesinin sırası farklı.
+
+783
+02:28:28,396 --> 02:28:43,115
+Şimdi ben bir book tanımladığımda, class da şöyle diyelim, class, bunun variable'larını illaki gidip en tepeye yazacağım diye bir şey yok.
+
+784
+02:28:43,115 --> 02:29:05,695
+İşte metotları yukarı yazarım, x ve y'yi aşağıya yazabiliyorum. Bu mümkün. Constructor'ı en yukarı yazacağım diye bir şey yok. Aşağılarda bir yer. Okunulabilirlik açısından structured program ve önce değişkenler, sonra constructor, sonra diğer metotlar. Yani UML'e uygun yazmak en güzeli. Ama bu illa ki böyle bir şey olacak diye bir şey yok.
+
+785
+02:29:05,695 --> 02:29:12,655
+The starting point of this control flow is easier to determine.
+
+786
+02:29:12,655 --> 02:29:14,875
+Yani bunu anlamak çok zor değil.
+
+787
+02:29:15,816 --> 02:29:18,456
+Yes, beginning of control flow.
+
+788
+02:29:20,475 --> 02:29:27,375
+In our projects, we can define lots of class and lots of objects.
+
+789
+02:29:28,335 --> 02:29:35,075
+But our projects must include a test class, including main method.
+
+790
+02:29:35,695 --> 02:29:50,615
+The main method is also static method. The purpose of using static method there is no need to object creation from test class.
+
+791
+02:29:50,615 --> 02:30:11,575
+Şimdi bir tane test class'ımız olacak. Bütün projemizdeki sınıfları kullanabilmek için bu web programlamada da böyle yani nasıl C'de main metodundan başlıyorsa object oryantıda main metodu bulunan bir class'ımız olacak. Buna test, driver bu isimleri veriyoruz. Sürücü, driver, test.
+
+792
+02:30:11,576 --> 02:30:34,195
+Ve bu statik olarak tanımlanıyor. Statik olarak tanımlanan metotlarda ne vardı? Nesne üretmeye gerek yoktu. Doğrudan adıyla çağırıyorduk. Yoksa programı compile edip çalıştırırken, execute ederken bu test sınıfından bir nesne üretmemiz gerekiyor. Ama program çalışmadı ki nesne üretebilirim. Onun için ne oluyor? Doğrudan programı adıyla çağırabiliyoruz.
+
+793
+02:30:34,195 --> 02:30:44,595
+Bunu çağırdıktan sonra buna default olarak argümanları içeren string büyükse ile argüman string ekliyoruz.
+
+794
+02:30:44,595 --> 02:30:53,175
+Şimdi dizileri görünce bunun detaylarına bakacağız da Java'da nasıldı bu argüman eklersek ne ekliyorduk buraya?
+
+795
+02:31:01,108 --> 02:31:04,427
+Java'da ne ekliyorduk? Şey, C'de ne ekliyorduk arkadaşlar? Java'da diyorum ya.
+
+796
+02:31:06,287 --> 02:31:07,807
+Hocam aynı şekilde bu
+
+797
+02:31:07,807 --> 02:31:10,988
+tab, Array, Array, Array ve bir de
+
+798
+02:31:10,988 --> 02:31:14,967
+bunun numaz, sayısı.
+
+799
+02:31:16,307 --> 02:31:19,067
+Evet. Argümen, counter ve argümen, vector.
+
+800
+02:31:19,208 --> 02:31:22,887
+RGC ve RGV vardı. Şimdi bu ne yapıyordu? Kaç tane
+
+801
+02:31:22,887 --> 02:31:26,907
+argüman eklendiğini çağrıldığını, kaç tane argümanların
+
+802
+02:31:26,907 --> 02:31:27,667
+değerleri neyse
+
+803
+02:31:27,667 --> 02:31:30,407
+onları bize söylüyordu.
+
+804
+02:31:31,108 --> 02:31:49,587
+Fakat Java'da böyle bir şey yok. Doğrudan argümanları ekliyor. Çünkü Java dizileri referans tipinde saklıyor. Referans tipinde sakladığı için içinde otomatik olarak burada kaç tane eleman varsa bu argüman stringe gelen onların sayısını da biliyor yani.
+
+805
+02:31:50,067 --> 02:32:00,427
+Args.length diyeceğiz. Kaç tane dizide eleman varsa bu sadece string için değil, integer dizileri için de geçerli olacak. Kaç tane element varsa onların sayısını da buradan elde edebileceğiz.
+
+806
+02:32:01,108 --> 02:32:07,387
+The argument string is used for passing initial parameters to the program.
+
+807
+02:32:08,008 --> 02:32:15,468
+Static, it cannot be otherwise because no object is created at the beginning of the program.
+
+808
+02:32:15,468 --> 02:32:18,788
+There is no need.
+
+809
+02:32:20,227 --> 02:32:24,288
+Eğer bu olmasaydı programı bir nesne üretecektik.
+
+810
+02:32:24,347 --> 02:32:26,727
+Nesne üretemeyeceğimiz için program çalışmayacak.
+
+811
+02:32:26,807 --> 02:32:27,887
+Onun için statik tanınıyor.
+
+812
+02:32:27,887 --> 02:32:36,767
+The task of the main method is to create the initial objects and to begin the execution of program.
+
+813
+02:32:36,767 --> 02:32:43,087
+Bu main çalıştıktan sonra istersen bir satır yaz, istersen bin satır yaz programın çalışmaya devam ediyor.
+
+814
+02:32:43,427 --> 02:32:48,767
+İşte ürettiğin nesneler, işten içe nesnelerin içinde ürettiğin nesneler böyle devam edip gidiyor.
+
+815
+02:32:51,648 --> 02:32:56,407
+Burada mesaj geçişlerinin içerdiğini hatırlayalım.
+
+816
+02:32:56,407 --> 02:33:08,687
+Yani ne oluyordu? Bir nesne üretildiğinde constructor çağırılıyor, constructordan geri geliyoruz, bir metot çağırıyoruz, metot çağırmak ne oluyor? Bir message pass oluyor gibi şey olacak.
+
+817
+02:33:08,687 --> 02:33:27,687
+Main metodun varlığı bir sınıfta şunu ifade etmiyor arkadaşlar. Bu metot, this metot illaki kullanılacak diye bir şey yok. Çünkü test klası hangisi ise test klasındakini genelde çalıştırırız ve o şekilde program yürür.
+
+818
+02:33:27,688 --> 02:33:57,208
+Block and body used with curly brackets says that a piece of code having multiple instruction in if instruction loops or methods or you can use whatever you want in way or anonymous anonymous purpose you can use for this anonymous scope.
+
+819
+02:33:57,688 --> 02:34:25,688
+we will discuss later. Yes, this is an example related to subject we studied today. After this example, we will finish. This is a car class, public class car. Definition of private variable, private string plate.
+
+820
+02:34:25,688 --> 02:34:38,887
+Okay, this is a constructor because there is no return type or void. The argument or parameter of this constructor is string plate number.
+
+821
+02:34:40,387 --> 02:34:53,648
+The initialization of plate number is executed in this constructor. Get plate is a method returning a string type value.
+
+822
+02:34:53,647 --> 02:34:58,347
+Public, it is because, plus, it is because, plus.
+
+823
+02:35:00,659 --> 02:35:25,500
+public string getPlate, returnPlate. Plate is directly accessible variable for this, for all methods in this class. Okay, there is no inhibition or barrier about accessing. SetPlate is another method to set any value into this class feature.
+
+824
+02:35:25,500 --> 02:35:45,819
+Introduce yourself. Introduce self. This is a general purpose and mostly used terminology in object-oriented programming. Introduce self. For example, writing all information about these features. For example, plate, name, etc.
+
+825
+02:35:45,819 --> 02:36:14,299
+MyPlate is equal to plus getPlate. GetPlate is called this function. We can also add instead of getPlate, directly plate. But due to the modular approach, we should use getPlate to indirect. Okay. Maybe there are some
+
+826
+02:36:15,819 --> 02:36:40,459
+duration problem because we have we should firstly execute this one and then this one we can directly add but due to the readability or understandable program we are using like this. This is a main function so this is a test class using itself.
+
+827
+02:36:40,459 --> 02:36:54,179
+It is very important. The name of class is car. Car in the main function, we are defining a reference and we are creating an object from itself.
+
+828
+02:36:54,959 --> 02:37:08,319
+Kendi kendinden bir nesne üretiyoruz. Bu mümkün mü? Tabii ki mümkün. Ne yapacak? Bu new car dediğinde bellekte bir yer açacak. Bu car'ın kaç tane özelliği varmış arkadaşlar? Bir tane özelliği varmış. O zaman sadece bir string tutacak.
+
+829
+02:37:08,319 --> 02:37:22,559
+Platte diye. Bu Platte özelliğine işte şurada constructorla sonra bu değer atınacak. Sonra ne yapıyor? Burada da değişkenin referansını tutuyor. Bu referans üzerinden bunun bir referansı var.
+
+830
+02:37:22,559 --> 02:37:38,559
+A car that introduces yourself is executed. During execution, getPlate is also called and the result is the plate number of the car.
+
+831
+02:37:38,559 --> 02:37:55,439
+Yes, this is a human representation, main calls inside the car object, inside the car class, and a car object is created via new.
+
+832
+02:37:55,999 --> 02:38:03,839
+The reference of this section is executed or returned.
+
+833
+02:38:03,839 --> 02:38:26,839
+The object is also called introduce yourself function and the function is also called get plate function from its inside and return of introduce yourself is sent to user and the result is shown in this in output.
+
+834
+02:38:35,252 --> 02:38:50,151
+Başka bir class'tan, evet şimdi bu kendi class'ı olduğu için kendi class'ı olduğu için aslında şurada yani bu örnek hem class'ı tanımlayalım hem de test edelim diye bakın main olarak bunu söylemiş hem de test edelim diye yazılmış.
+
+835
+02:38:50,151 --> 02:39:03,631
+Aslında ben doğrudan ekar.plate yazabilirim ama eğer bir başka class'ım olsaydı ki bizim uygulama saatimizde ör yapacağız o class'ta buna doğrudan erişemeyecektik.
+
+836
+02:39:03,631 --> 02:39:32,131
+ya constructorla ya set get metotlarıyla ilişkik. Toygar senin sorduğun soru bu. Doğrudan bastıramayız normalde. Şu çok fazla yapılan bir hata oluyor. Anlaşılmıyor ilk başlarda sizler tarafından. Ya işte main'in içerisinde kendi kendine nasıl bir şey olur? Burada bir rekürsif bir durum olmaz mı? Hayır arkadaşlar bu bir sınıf. Şuraya kadarki metotları normal sınıfın metotları. Bu da bu sınıfı kendinden yürütmeni sağlayan bir şey.
+
+837
+02:39:32,131 --> 02:39:45,491
+Yani bu şuradaki kısım bir defa çalışınca üretiliyor bir nesne için. Buraya değerler atanıyor. Introduce your search deyince bu kendisi çağırıyor. Bir recursive durum gibi bir şey anlaşılmasın. Bu çok fazla söylenen bir şey.
+
+838
+02:39:46,551 --> 02:39:54,371
+Şimdi böyle bir durumda, size bir problem verildiğinde bunun öncelikle class şeması yapılır.
+
+839
+02:39:54,371 --> 02:39:58,291
+ve bu class şemasını kodlarız.
+
+840
+02:39:59,311 --> 02:40:03,131
+Sonra tabii kodladığımız şey arkadaşlar belki şu içerikler boş olacak.
+
+841
+02:40:03,131 --> 02:40:04,591
+Yani introduce yourself olacak.
+
+842
+02:40:04,711 --> 02:40:11,331
+Bunu çizdiğinizde ve code generate dediğinizde şeyde UML generatorlarda bunu üretirsiniz.
+
+843
+02:40:11,491 --> 02:40:17,191
+Aynı şekilde reverse engineering toolslarda da bunu kodu verip şeyi elde edebilirsiniz.
+
+844
+02:40:17,351 --> 02:40:18,111
+Hemen bitiriyorum.
+
+845
+02:40:18,231 --> 02:40:19,391
+Çok fazla bekletmeyeceğim sizi.
+
+846
+02:40:19,391 --> 02:40:35,391
+Sonra bu diagram, interaction yapan bu diagram, interaction diagramı diyoruz buna. Bir tip interaction diagramıdır. Hangi metot hangi metodu çağıracak ve ne değerler gelecek, nasıl gelecek?
+
+847
+02:40:35,391 --> 02:40:44,972
+İşte bu şuradaki kısımların içeriğinin doldurulması. Yani yapısal programlama gibi burada algoritma. Şimdi introduce yourself yapınca ne olur benim algoritmam?
+
+848
+02:40:44,972 --> 02:40:49,252
+plaka adını veya başka bilgilerini yazdırmak demektir. Onları yapıyoruz.
+
+849
+02:40:52,819 --> 02:41:19,240
+Bir başka versiyon demiş. Bunu da yapalım. Bundan sonra bitiyordu herhalde. Şimdi önce bu elimizde var. Bunu ben bir şekilde bana verilen senaryodan okudum, anladım. Bunu çizdim. Bu aslında eğer çok ekipli bir proje değilse olması gereken bir şey. Siz de bir UML verilir. UML üzerinden projeyi kodlarsınız. Çünkü değişken isimlerinin birbiriyle tutarlı olması lazım. Herkes her sınıfı kodlayacak diye bir şey yok.
+
+850
+02:41:19,240 --> 02:41:42,080
+İşte private iki tane değişken, bir tane constructor var, iki tane parametre alıyor. Sonra işte getler setler var, getplate, setplate, işte get şasi numarası demiş. Mesela şasi numarası set edilemiyor. Belki bir defa yapılacak. Sadece gety yapılmış. Bunun herhangi bir gördüğünüz gibi main metodu yok.
+
+851
+02:41:42,079 --> 02:42:11,919
+So we cannot run and test this class alone. We have to write a test class except from this class, for example, public class test. Inside the test function, we have to write a main function. Inside the main function to test this class, we have to define a car variable, car C is
+
+852
+02:42:11,919 --> 02:42:22,000
+new car. And then we have to test other methods of this class, for example, get plate, set plate, get chasse number, etc.
+
+853
+02:42:25,652 --> 02:42:36,091
+To pay attention to this constructor, in real world, every car must have a license plate and chasse number.
+
+854
+02:42:36,091 --> 02:42:46,211
+So, both files, these files, must be initialized in the same constructor, having two parameters.
+
+855
+02:42:46,211 --> 02:42:53,412
+The code at the left is right, but the code at the right is wrong.
+
+856
+02:42:53,412 --> 02:43:06,732
+Why? In order to initiate these parameters, we have to use for this code only constructor if you don't write any setter getter methods.
+
+857
+02:43:08,872 --> 02:43:17,351
+Because once the car is created or produced, we have to assign chassis and plate number.
+
+858
+02:43:17,351 --> 02:43:40,351
+We cannot add, we cannot change later. So to do this, organization of or implementation of your constructor method is very important for this example. When it comes to the second example, we can change later this.
+
+859
+02:43:40,351 --> 02:43:55,351
+This is not correct because the overload does not work here.
+
+860
+02:43:55,351 --> 02:44:09,351
+Because all of prototypes, both of prototypes are the same. Execution error, there may be, there is an execution error, compile time error here.
+
+861
+02:44:09,351 --> 02:44:25,231
+The code at the right does not compile. If it has, its logic will be wrong. Because constructor overloading is not correctly defined.
+
+862
+02:44:26,012 --> 02:44:30,831
+Burada constructor overloading doğru bir şekilde tanımlanmamış. Bunların en azından bir tanesinin farklı olması lazım.
+
+863
+02:44:30,831 --> 02:44:38,271
+Şu doğru, yani burada şunu diyebilirdik arkadaşlar. Arabanın şase numarası daha sonra değişmeyecek.
+
+864
+02:44:38,271 --> 02:45:01,171
+Yani sizin bir defaya mahsus nesne üretildikten sonra değişmemesini istediğiniz bir feature'ınız varsa bir kere şunu private yapacağız. Şase numarası private olacak. Sonra buna açık bir kapı da bırakmayacağız. Nasıl açık kapı bırakırız? Set get metodu yazarak işte set, chasen number, get, chasen number. Gerçi en azından get yapabiliriz de set yapmayacağız.
+
+865
+02:45:01,171 --> 02:45:26,431
+Niye yapmayacağız? Çünkü ileride bunu değiştirebiliriz. Değişmesini istemiyoruz. O zaman sadece tek kapı Constructor'la bunu yapmak. Constructor'la bunu yapınca Constructor'ın tekrar çağrılması gibi bir şey söz konusu değil. Constructor tek bir defa çağırlıyor. Dolayısıyla bu örnekte olduğu gibi bu kasım doğru yani bu tasarım doğru bu tasarım yanlış. Velev ki şöyle olsaydı.
+
+866
+02:45:26,431 --> 02:45:49,252
+Velev ki şöyle olsaydı. Şunu silmiş olalım. Tek bir parametre aldık. Bu compile edilebilir bir şey. Yani şu sadece plate number'u compile ediyorsun. Ama tasarım açısından yanlış bir şey olurdu. Şu an hem compile edilemiyor hem de tasarım açısından yanlış oluyor. Mantıksal bir baktır.
+
+867
+02:45:49,251 --> 02:45:49,751
+Evet.
+
+868
+02:45:50,491 --> 02:45:54,951
+Compile edilseydi şasi numarası null mı olacaktı?
+
+869
+02:45:55,791 --> 02:46:00,091
+Evet şasi numarası string olduğu için null olacaktı çünkü referans tiplidir string.
+
+870
+02:46:00,091 --> 02:46:07,871
+New ile üretilen her şey Java'da null tipinde veya diğer dillerde de öyle C++, C++ da öyle.
+
+871
+02:46:08,771 --> 02:46:12,471
+Evet arkadaşlar bir 15 dakika geç oldu ama sizi daha fazla yormayayım.
+
+872
+02:46:14,011 --> 02:46:18,431
+Saat uygulama saatinde bugünkü zaten göreceğimiz kısmı buraya kadardı.
+
+873
+02:46:19,251 --> 02:46:20,391
+bayağı da geldik.
+
+874
+02:46:20,884 --> 02:46:44,043
+Bu gördüklerimizle alakalı daha kapsamlı bir örnek yapacağım. Kodlayarak yapacağız. Direkt Java'da kod yazacağız. Belki biraz da UML falan çizeriz. Ama ben önce kodlama yapmak istiyorum. UML'in tasarımı biraz daha farklı bir şey. Ona da iyi geleceğiz. İşte object, şey, operator overloading gibi konular var. Yetişirsen ondan da bir örnek yaparız. Var mı soru?
+
+875
+02:46:44,823 --> 02:46:48,403
+Hocam ben bir şey soracaktım. Bir iki slide geriye gidebilir misiniz acaba?
+
+876
+02:46:48,403 --> 02:46:49,083
+Gelelim.
+
+877
+02:46:49,083 --> 02:47:02,463
+Hocam burada ben kaçırdım büyük ihtimalle ama public karın içinde plate ve kasis tanımlarken neden this nokta kasis olarak tanımlıyoruz farkını?
+
+878
+02:47:03,143 --> 02:47:10,663
+Şimdi o constructorlarda ve metotlarda olan bir şey istersen örnekte de yaparız da şimdi mesela şuna gelelim.
+
+879
+02:47:11,783 --> 02:47:17,283
+Şu değişkenin adını plate dedik. Şuraya da plate olarak bir şey gelsin istiyorum.
+
+880
+02:47:17,283 --> 02:47:39,943
+Yapabilir miyim? Yapabilirim. Engel değil. Şimdi burada plate eşittir plate demem lazım. Buradaki plate ile şuradaki plate bir kere birbirine karışabilir. Bunun önüne geçmek için bir kere diyoruz ki this. This ne yapıyor? Globaldeki değişkene erişmeni sağlıyor veya globaldeki bir metoda erişmeni sağlıyor. Bu bir. Bir de this ne demek?
+
+881
+02:47:39,943 --> 02:48:08,123
+Şimdi ben bir kar sınıfından kar diye bir nesne oluşturdum. Fiziksel bir nesne var. C ile neyi çağıracağım? Getplate'i çağıracağım. Bu C'nin içerisinde ne var? Şimdi plate ve kasis numarası var ya bellekte. Diyor ki bu nesneye ait plate'i getir diyerek dis diyorum. Yani şu C'nin bu içerideki kullanımı dis'tir.
+
+882
+02:48:08,123 --> 02:48:21,183
+Çünkü ben içeride mesela bunu başka bir class'tan çağırıyorum şu C'yi. Ama içeride C diye bir şey yok. Bu benim kendi verdiğim bir değişken ismi. İçeride olacak şey bu C yerine bunu dis olarak kullanıyoruz.
+
+883
+02:48:21,983 --> 02:48:30,863
+Kendi nesnesinden, bu nesne üzerinden git plate alanına eriş veya kas numarasına eriş gibi bir şey yapıyoruz.
+
+884
+02:48:30,863 --> 02:48:48,143
+şu D's'i kullanmamızın bir diğer avantajı da burada şu karışıklığın önüne geçmek. Ben şuradakine birebir mesela hatta burada kullanılmış, burada kullanılmamış. Şu karışıklık olurdu eğer bunu da aynı isimde yazsaydı. Bu açıdan bu önemli.
+
+885
+02:48:48,744 --> 02:48:50,244
+Tamam hocam anladım, teşekkür ederim.
+
+886
+02:48:50,244 --> 02:49:05,283
+DİS deyince bilin ki hem globale değişecek o erişim ikinci şey bu sınıfı şu an için kullanan fiziksel nesnenin değişkenleri veya fiziksel nesnenin metotlarına erişeceğim demektir.
+
+887
+02:49:06,563 --> 02:49:10,223
+Oluşturulan, üretilen bir nesne var onun üzerinde işlem yapıyorum demektir.
+
+888
+02:49:11,544 --> 02:49:12,663
+Tamamdır hocam sağ olun.
+
+889
+02:49:12,663 --> 02:49:19,223
+Evet tekrar görüşmek üzere arkadaşlar bir sorunuz yoksa hepiniz kendinize iyi bakın afiyet olsun diyelim şimdiden.
+
+890
+02:49:20,244 --> 02:49:22,104
+Hocam kaçta görüşüyoruz?
+
+891
+02:49:23,003 --> 02:49:25,443
+Saat 7'deyse 7'de herhalde ben öyle biliyorum.
+
+892
+02:49:25,443 --> 02:49:28,324
+7'de tamam ben 6'dan yaptım da korktum bir an ya.
+
+893
+02:49:28,363 --> 02:49:30,324
+Yok 6'daysa ara vermem zaten.
+
+894
+02:49:32,063 --> 02:49:33,984
+Eyvallah hocam hadi kolay gelsin.
+
+895
+02:49:34,063 --> 02:49:34,783
+Görüşmek üzere.

@@ -1,0 +1,343 @@
+1
+00:00:07,764 --> 00:00:10,823
+Yeniden merhaba arkadaşlar. Görüşmeyeli bayağı oldu.
+
+2
+00:00:12,463 --> 00:00:13,204
+Merhaba hocam.
+
+3
+00:00:13,983 --> 00:00:19,983
+Şey görebiliyor musunuz? Online Yıldız'da laboratuvar 1 diye.
+
+4
+00:00:19,983 --> 00:00:21,663
+Gözüküyor hocam şu an ben oradan.
+
+5
+00:00:21,963 --> 00:00:24,204
+Tamam. Toprak hocamız da şimdi katılacak.
+
+6
+00:00:28,203 --> 00:00:28,843
+Açıklayacaktır.
+
+7
+00:00:31,987 --> 00:00:33,987
+Şu an burda değil herhalde.
+
+8
+00:01:16,563 --> 00:01:22,203
+Toprak Hoca'da Ahmet Elbir olarak ya. Tam iki tane Ahmet Elbir var. Hocam hoş geldiniz.
+
+9
+00:01:23,363 --> 00:01:25,364
+Hoş bulduk hocam. Böyle atamışık kendini.
+
+10
+00:01:26,723 --> 00:01:31,963
+Gerçi yukarıdan belki değiştirilir. Rename yapabilir. Önemli değil ya. Problem değil. İki tane olsun ne olacak.
+
+11
+00:01:33,683 --> 00:01:38,143
+İsterseniz hocam buyurun. Siz çocuklara, arkadaşlara soruyu izah edebilirsiniz.
+
+12
+00:01:39,963 --> 00:01:44,563
+Arkadaşlar biraz formattan bahsedeyim. Bir tane yemen veriyoruz size.
+
+13
+00:01:44,563 --> 00:02:03,883
+Bunun get reset olmayan metodlarını açıklıyoruz. Bir de test sınıfını komple veriyoruz. Yazılı olarak test sınıfı var. Bunun çıkkılarını veriyoruz. Sisteme outlayıp bir şey araya duruyorduk. O çıkkılarını da veriyoruz. Siz diğer 3 sınıfı doldurup bu çıkkıları üretmeye çalışıyorsunuz. Oradan kontrol edelim.
+
+14
+00:02:04,063 --> 00:02:06,523
+Kesiyorum ama ekran paylaşabilirsiniz isterseniz.
+
+15
+00:02:08,123 --> 00:02:14,483
+Arkadaşlar size paylaştığımız, göreceğiniz o dosya içerisinde main var. Main'i de oradan kopyalı yapıştır yapıp kullanabilirsiniz.
+
+16
+00:02:14,563 --> 00:02:23,063
+Yani kullanın da zaten. Orada soruyu da şimdiden gösterebiliriz hocam. Soruyu da gösterebiliriz.
+
+17
+00:02:23,063 --> 00:02:33,063
+Bu şekilde zaten hani yaptığımız uygulamaya da benziyor. Hani aynı yapı neredeyse. Burada açıklıyoruz metotları, şeyleri.
+
+18
+00:02:33,063 --> 00:02:57,063
+Burada en mantık gerektiren şey şu metod. Bunu stratejinize göre önce veya sonra yapabilirsiniz. Onun haricinde main metodun açıkları bu şekilde. Hatta main metodu da bu şekilde yazılmış durumda.
+
+19
+00:02:57,063 --> 00:03:18,343
+Bir de yüklerken şöyle export deyip projenizi işte onu yapıp o RAR dosyasına numaranızı yazıp onu yüklersiniz. Başka diyelim olmadı şunu hani yapamadınız ya da başka bir şey de yapıyorsunuz orada çıkmıyor. Bu Java nokta Java dosyalarını işte RAR'layıp zikleyip onları yüklersiniz.
+
+20
+00:03:18,343 --> 00:03:37,043
+Arkadaşlar, laptop muaf olanlar göndermiyor. Gönderirse sadece değerlendirilir ama puan girilmeyecek. Onun için yapabilirseniz yapın ama göndermeniz durumunda değerlendirilmeyecek. Onu söyleyeyim.
+
+21
+00:03:37,043 --> 00:03:41,664
+Hocam size iş olması dışında kendimizi test etmek için yapabilir miyiz?
+
+22
+00:03:41,823 --> 00:03:42,743
+Tabii tabii yapın.
+
+23
+00:03:43,123 --> 00:03:45,144
+Gönderelim mi? Anlamayalım mı? Siz nasıl istiyorsunuz?
+
+24
+00:03:45,144 --> 00:03:51,823
+Bence göndermeyin. Karışıklık olmasın. Ama anlamadığınız bir şey vardır. Onu daha sonra sorabilirsiniz.
+
+25
+00:03:52,263 --> 00:03:52,963
+Tamamdır.
+
+26
+00:03:53,843 --> 00:03:54,444
+Evet Selim.
+
+27
+00:03:56,763 --> 00:04:08,164
+Soruyu bir okuyun. Biz 10 dakika daha buradayız. Yani sistem açık. Selim Alper sorabilirsin. Bir sorunuz varsa hocam da burada, ben de burada cevaplarız.
+
+28
+00:04:09,804 --> 00:04:12,203
+Selim elinin havada kaldı. Kolun ağrıyacak.
+
+29
+00:04:13,284 --> 00:04:14,804
+Hocam ben bir şey sorabilir miyim?
+
+30
+00:04:15,144 --> 00:04:15,584
+Evet.
+
+31
+00:04:16,063 --> 00:04:24,543
+Şey hocam, export yaparken sadece SRC'deki alt dosyaları mı yoksa bütün hepsini mi yollamamız gerekiyordu? Onu ben kaçırdım da biraz geç geldim hocam.
+
+32
+00:04:24,823 --> 00:04:25,763
+Bütün projenizi.
+
+33
+00:04:25,924 --> 00:04:26,903
+Bütün proje.
+
+34
+00:04:28,123 --> 00:04:28,763
+Anladım.
+
+35
+00:04:30,144 --> 00:04:30,784
+Tamam.
+
+36
+00:04:30,784 --> 00:04:33,924
+Hangi dosyayı? Mevlana?
+
+37
+00:04:36,824 --> 00:04:38,543
+Bu numaramız olacak değil mi hocam?
+
+38
+00:04:39,343 --> 00:04:44,183
+Evet. Numarız. Aynen. Numarız nokta işte neyse zip dosyası doğru.
+
+39
+00:04:44,183 --> 00:05:14,163
+Tamamdır hocam teşekkür ederim.
+
+40
+00:05:14,183 --> 00:05:15,784
+zamanınız gitmesin.
+
+41
+00:05:16,115 --> 00:05:18,415
+anlamadığınız bir şey varsa o arada sorabilirsiniz.
+
+42
+00:05:24,115 --> 00:05:26,035
+Tekrar edelim yeni katılanlar için.
+
+43
+00:05:27,475 --> 00:05:28,795
+Şeye gerek yok.
+
+44
+00:05:29,175 --> 00:05:31,576
+Main sınıfını kendiniz tekrardan yazmayın.
+
+45
+00:05:31,695 --> 00:05:35,815
+Kopyalı yapıştır yapıp aşağıdaki çıktığı elde etmeniz gerekiyor.
+
+46
+00:05:38,475 --> 00:05:46,536
+Kısıtlara, söylenenlere dikkat ederseniz çok basit bir dosya.
+
+47
+00:06:24,627 --> 00:06:36,527
+Main şeyde arkadaşlar, online yıldız'a girince yani o ödev dosyasını açacaksınız. Ne RAR dosyasıydı? Lab1.RAR dosyası. Onun içerisinde göreceksiniz.
+
+48
+00:06:49,524 --> 00:06:52,863
+Süre ertelenmiyor. Bilginiz olsun.
+
+49
+00:06:54,563 --> 00:07:05,683
+Yani NetBeans'in veya hangi ideyi kullanıyorsanız, işte auto-generate, string to string mi veya setter, getter neyse onları hızlı kullanınız gerekiyor arkadaşlar.
+
+50
+00:07:08,643 --> 00:07:18,743
+Sekizi beş geç oldu diyelim. O anda o beş dakika sürenizi yüklemek için. O anda eksport edip şey yapın. Sadece ürün sınıfını yazsanız bile onu yükleyin ki not alabilirim.
+
+51
+00:07:19,524 --> 00:07:42,483
+Ve bütün gruplar için bu geçerli. Diğer hocaların grupları da şey. Bunda bir istisna yok. Biz süre arttırırsak onlar arttıramayacaklar. Çünkü hocalar bunu kontrol ediyor. Asistan hocalarımızın şu an hesapları süre arttırmaya uygun değil zannediyorum. Bunun için herhangi bir istisnai durum çok böyle acil bir şey olmadıkça kabul değil.
+
+52
+00:07:49,139 --> 00:07:51,079
+Hocam Zoom'dan çıkabilir miyiz diye bir soru var.
+
+53
+00:07:51,079 --> 00:07:59,279
+Yani sorunuz yoksa, sorunuz olmayacaksa çıkabilirsiniz. Biz de yani bir 10 dakika içinde kapatacağız veya 5 dakika içinde kapatacağız. Sorusu olmayan çıkabilir tabii ki.
+
+54
+00:08:17,747 --> 00:08:19,387
+Gerişebildi mi herkes?
+
+55
+00:08:22,728 --> 00:08:29,027
+Herhalde alıp indirebildiniz arkadaşlar. İyi akşamlar çıkmak isteyenlere görüşürüz.
+
+56
+00:08:29,267 --> 00:08:30,168
+Aynen iyi akşamlar.
+
+57
+00:08:54,035 --> 00:08:59,095
+Toprak hocam şimdi bir girebilir misin? Ben mesela bitiş tarihini değiştir diye ekran geliyor bana.
+
+58
+00:08:59,895 --> 00:09:01,335
+Bir şunu durdurayım hocam gireyim.
+
+59
+00:09:01,575 --> 00:09:01,815
+Tamam.
+
+60
+00:09:10,067 --> 00:09:13,747
+Yok hocam, görünmüyor. Arkadaşlar, archip koltuk.
+
+61
+00:09:16,755 --> 00:09:18,555
+Biz onu da bir sorarız olmazsa.
+
+62
+00:09:20,216 --> 00:09:21,615
+Sercan'la bir konuşayım da.
+
+63
+00:11:33,331 --> 00:11:48,011
+Sorunuz var mı arkadaşlar? 19 kişi kalmışız. Burak, Doğa, Enes. Ondan sonra aşağıya indiremedim. Hüseyin, Kübra, Halit, Taha, Ömer, Faruk, Selim.
+
+64
+00:11:56,083 --> 00:11:57,603
+İsim sayınca herkes kaçtı.
+
+65
+00:12:00,723 --> 00:12:03,243
+Sanki zorla çıkın gidin dermiş gibi bu.
+
+66
+00:12:12,083 --> 00:12:13,863
+Gitmemizi istiyorsanız gidelim hocam.
+
+67
+00:12:14,063 --> 00:12:14,443
+Yok.
+
+68
+00:12:16,123 --> 00:12:27,964
+Yani gitmekden maksat değil. İşinize bakarken bir taraftan bu açık olmasın. Yani biz de diğer taraftan kontrol yapalım gelen şeylere. Normalde kapatacağız yani biz de.
+
+69
+00:12:29,264 --> 00:12:31,023
+Tamamdır hocam. Yakşamlar o zaman görüşürüz.
+
+70
+00:12:31,023 --> 00:12:35,023
+Yani bakın eğer sorunuz varsa aklınıza takılan şey yaparız.
+
+71
+00:12:36,924 --> 00:12:39,123
+Yok. Yani zaten açık yeteneceğim.
+
+72
+00:12:39,563 --> 00:12:41,943
+Bir problem olursa şeyden de ulaşabilirsiniz.
+
+73
+00:12:42,083 --> 00:13:12,003
+Telegram'dan bana. Tamam. Peki. İyi akşamlar. İyi akşamlar. Kolay gelsin. Hocam şu an yapacak bir şey hani online yıldızdan muhtemelen hani ben görüyorum ama sen göremiyorsan indirip sana şey yaparım ben pas ederim gelen dosyaları. Şimdi Sercan'a yazdım. O muhtemelen o konularda bir tecrübesi vardır.
+
+74
+00:13:12,083 --> 00:13:13,343
+geçen dönemden kullandılar.
+
+75
+00:13:14,624 --> 00:13:15,924
+Veya olmasa da ne yapacağız?
+
+76
+00:13:16,043 --> 00:13:16,783
+Şimdi ben indireceğim.
+
+77
+00:13:17,844 --> 00:13:19,384
+Bugün zaten biter bitmez indiririm.
+
+78
+00:13:19,583 --> 00:13:21,643
+Google Drive'dan paylaşırım.
+
+79
+00:13:23,083 --> 00:13:23,984
+Tamam hocam.
+
+80
+00:13:25,863 --> 00:13:26,143
+Öyle.
+
+81
+00:13:26,543 --> 00:13:26,804
+Tamam.
+
+82
+00:13:27,083 --> 00:13:27,823
+Çok sağ olun.
+
+83
+00:13:27,884 --> 00:13:28,563
+Emelinize sağlık.
+
+84
+00:13:28,664 --> 00:13:29,563
+Yine haberleşiriz.
+
+85
+00:13:29,563 --> 00:13:31,043
+Kafa tamam.
+
+86
+00:13:31,143 --> 00:13:32,683
+Hoşçakalın.

@@ -1,0 +1,3819 @@
+1
+00:03:16,020 --> 00:03:17,120
+Merhabalar arkadaşlar.
+
+2
+00:03:22,451 --> 00:03:23,072
+Nasılsınız?
+
+3
+00:03:30,515 --> 00:03:31,715
+İyiyiz hocam. Siz nasılsınız?
+
+4
+00:03:32,555 --> 00:03:34,355
+Teşekkür ederim. Ben de iyiyim. Çok sağ olun.
+
+5
+00:03:37,695 --> 00:03:44,735
+Önce sınav sorularının çözümlerini göstererek derse başlayacağım. Ondan sonra konumuza geçeceğiz.
+
+6
+00:03:45,455 --> 00:03:47,375
+Bu hafta uygulama görünüyor değil mi arkadaşlar?
+
+7
+00:03:59,348 --> 00:04:03,607
+Bilmiyorum. Şimdi size bir program yayınlamıştık orada. Bir bakayım bir saniye.
+
+8
+00:04:11,508 --> 00:04:15,387
+Cihat sesin gelmiyor şey konuşuyorsun galiba ama şey mikrofonu kapalı galiba.
+
+9
+00:04:15,387 --> 00:04:18,387
+Hocam online yıldızlı gözüküyor. Söylemiş mi sesin geldi?
+
+10
+00:04:19,508 --> 00:04:28,448
+Tamam. Saat yedi. Yani iftar saati olduğu için bilmiyorum nasıl yapılsa.
+
+11
+00:04:28,448 --> 00:04:45,427
+Bir bu problem bir genel hafta idari izinden dolayı bütün dersler pazartesinden cuma gününe kadar iptal edilmiş yapılmayacak. Dolayısıyla laboratuvar da yapamayacağız.
+
+12
+00:04:45,427 --> 00:05:01,008
+laboratuvara erteleriz de bugünkü uygulamanın saatini bir konuşalım. Eğer 6 sizin için uygunsa 6'da başlayıp 7 bıçaklar belki yapılabilir ama orada da ayrıca oturma girmek gerekiyor.
+
+13
+00:05:01,967 --> 00:05:10,967
+Asistan arkadaşlar o konuda bize daha bir geri bildirimde bulunmadılar. Normal saatinde başlayacakmış gibi düşünün. Ben bir arada konuşurum. Bir bilgi alabilirsem size iletirim.
+
+14
+00:05:10,967 --> 00:05:18,487
+bir değişiklik olmadı. Çünkü onu diğer arkadaşlar organize ediyorlar. Ben müdahale etmek istemiyorum.
+
+15
+00:05:20,207 --> 00:05:23,868
+Diyelim. Bu fastı kapatalım. Şimdi sınava gelelim.
+
+16
+00:05:27,127 --> 00:05:34,407
+Sınavla alakalı genel olarak ortalama fena değil arkadaşlar. Zaten notlarınızı detaylı paylaştım. Şöyle bir bakayım.
+
+17
+00:05:36,287 --> 00:05:37,887
+Ortalamayı tekrar bir hatırlayalım.
+
+18
+00:05:37,887 --> 00:06:02,827
+67 fena olmayan bu ortalama. İlginç olan yaklaşık 5-6 kişi sınava girmemiş görünüyor. Niye Mustafa Bey giremeyeceğini ifade etmişti. Diğer arkadaşlardan giremeyenler var. Bu bana biraz ilginç bir şey. Var mı burada sınava girmeyen aranızda?
+
+19
+00:06:02,827 --> 00:06:07,768
+Furkan Necati Hatice Demir
+
+20
+00:06:12,244 --> 00:06:14,043
+Fatih Mete Özrek
+
+21
+00:06:21,204 --> 00:06:32,004
+Diğer derste de sınavda bir katılım azlığı vardı. Neyse, bu süreçte böyle şeyler de görüyoruz. İnşallah sağlık sıkıntısı falan yoktur. Neyse.
+
+22
+00:06:36,276 --> 00:07:01,376
+Şimdi hızlıca soruların çözümünü göstereceğim arkadaşlar. Genel olarak sorulardaki sıkıntı, beşinci soruda bir puan, yani çözüm ortalaması beşinci sorunun düşüktü. Diğer sorularda çok problem yoktu. Bir de dördüncü sorunun bir kısmında, yani puan kaybedenler dördüncü soruda genellikle oradan kaybettiler. Genel olarak böyle şeyler söyleyebilirim. Onları da şimdi açıklayacağım.
+
+23
+00:07:01,376 --> 00:07:06,776
+Birinci soruda Person sınıfının yazılmasını istiyorduk.
+
+24
+00:07:06,776 --> 00:07:10,836
+Şimdi Person sınıfı abstract olarak UML'de ifade edilmiş.
+
+25
+00:07:12,656 --> 00:07:14,776
+Şuradan soruyu açabilirsek.
+
+26
+00:07:19,507 --> 00:07:40,867
+Bu sınıfta arkadaşlar bazı kodlarda toString metodunun eklendiğini gördüm. Oradan puan kırıldı. Yani hidden information olarak metot eksikliği olmaz. Hidden information memberlar üzerinde olur. Yani bir metot gizlenerek yani information gizlenmesi yapılmıyor.
+
+27
+00:07:40,867 --> 00:07:49,527
+Onun için tusundik metodunu ekleyenler bu sınıfta, bu sınıfta veya diğer sınıflarda arkadaşlar öne gelen her yerde tusundik metodu eklemiş.
+
+28
+00:07:50,127 --> 00:07:52,327
+Onun için puan kırılmış olabilir ona dikkat edin.
+
+29
+00:07:52,887 --> 00:07:56,047
+Birinci sorunun sınıfının öyle olacak.
+
+30
+00:07:57,307 --> 00:08:01,327
+Person bir constructor, get name'de bir get metodu.
+
+31
+00:08:02,048 --> 00:08:07,207
+Interface metodunda, interface sorusunda 3 tane metod var.
+
+32
+00:08:07,208 --> 00:08:15,147
+Bazı arkadaşlar burada interfazinin içerisinde bir şey yazmaya çalışmış. Interfazinin içerisinde bir metot yazılmıyor. Buna dikkat edelim.
+
+33
+00:08:16,388 --> 00:08:17,607
+Üçüncü sorumuz neydi?
+
+34
+00:08:19,948 --> 00:08:23,567
+Movie sınıfının oluşturulması ve şu şekilde bir şey.
+
+35
+00:08:24,228 --> 00:08:29,067
+Movie sınıfı da act sınıfından elements yapıyordu.
+
+36
+00:08:30,067 --> 00:08:36,247
+Constructor var. Get ve set metotları imdb score için bu metotlar.
+
+37
+00:08:36,247 --> 00:08:54,447
+getName için bir metot, getMoreInfo'da şöyle bir metot döndürecekti. Bu sınıfta da string metodu eklenmişse puan kırılıyor. UML'in dışına çıkılmaması gerekiyor. Eğer hidden information varsa o bir member'dır gibi düşüneceksiniz.
+
+38
+00:08:54,447 --> 00:09:08,607
+Şimdi aktör sınıfı en zor diyebileceğim benzerini kitaplığa kitap ekledik ne bileyim başka şeyler üzerinden yaptık gayet kolay bir sınavdı.
+
+39
+00:09:08,607 --> 00:09:21,507
+Şimdi sınıfta bir stage name var bu bir dizi bu dizi referanslar tutuyor bakın akt türünde bir interface türünde referans tutuyor bu mümkün müdür? Evet mümkündür.
+
+40
+00:09:21,508 --> 00:09:48,467
+işte movie'yi bunlara ekleyebiliyoruz. Şimdi burada maksimum yazmışız ama bu olmak zorunda değil. Yani bunu içeride şurada da tanımlayabilirdiniz. Statik olması gerekmiyor. Bir counter tutmak gerekiyor çünkü burada değil de başka şekilde yapınları da kabul ettim. İlla böyle olması gerekmiyor. Ama dizinin allokasyonunu şurada yapıp puan kırdık.
+
+41
+00:09:48,467 --> 00:10:12,087
+Yani burada new kullanılmayacak. Burada bir nesne oluşturulduğunda sınıfa ait değil nesneye ait bir dizi saklayacaksınız. Onun için dizinin oluşturulması anında bu işlemlerin yapılması gerekiyordu. Süper yazmayanlar var. Buradan belli bir miktar puan kırılıyor. Şunu da şurada yazanlar bu satırda yazanlardan belli bir miktar puan kırılmıştır.
+
+42
+00:10:12,088 --> 00:10:14,088
+Şimdi diğer
+
+43
+00:10:18,644 --> 00:10:19,903
+Shedde bir şeyler var.
+
+44
+00:10:23,572 --> 00:10:39,551
+Abstract metotta to think method, UML'de böyle bir şey yok. Yani görüyor musunuz? Burada to think method yok. Onun için yazmayacaksınız. Hidden information da değil o. Yani hidden method diye bir şey söylemedik zaten. Olsa olsa hidden information olur. Onun için yazılmayacak.
+
+45
+00:10:39,551 --> 00:10:50,971
+Tamam bir şey soru, biliyor musun? Peki bu person içinde hangi şey abstract olacak? Eğer hiçbir şey yoksa error vermiyor?
+
+46
+00:10:50,971 --> 00:11:04,331
+Şimdi bunu ifade etmiştim. Bir sınıf abstract olursa abstract metot içermek zorunda değil. Ama abstract metot içeriyorsa abstract olmak zorunda. Bunu birkaç defa vurguladım.
+
+47
+00:11:05,092 --> 00:11:10,972
+Şey benim idem intellijce şey error veriyordu hep. Ondan dolayı.
+
+48
+00:11:12,652 --> 00:11:18,051
+Yani bir yanlışınız vardır muhtemelen. Sınıf abstract olursa abstract metot içermek zorunda değil.
+
+49
+00:11:19,252 --> 00:11:19,551
+Teşekkürler.
+
+50
+00:11:19,551 --> 00:11:26,752
+Yani muhtemelen o kodu bir bakarsınız. Ama abstract metodunuz varsa en azından bir tane ulaşmak zorundasınız.
+
+51
+00:11:29,231 --> 00:11:47,372
+Şimdi add-act metodunda birazcık genelde problem gördüm. Bu da şudur. Öncelikle bu aktör, eklenecek şahıs daha önceden böyle bir nesne eklenmiş mi? Bunu bir kontrol etmek gerekiyor.
+
+52
+00:11:47,371 --> 00:11:53,171
+Bunu kontrol ederken de isimler üzerinden değil nesneler üzerinden kontrol edeceğiz arkadaşlar.
+
+53
+00:11:54,071 --> 00:11:59,251
+Yani burada bir for döngüsüyle baştan aktör sayısına kadar tek tek kontrol edilmiş.
+
+54
+00:11:59,331 --> 00:12:01,871
+Böyle bir şey varsa ekleme çık diye şu return.
+
+55
+00:12:02,691 --> 00:12:08,651
+Şimdi isim üzerinden bunu yapanlardan belli miktar puan kırdım.
+
+56
+00:12:08,711 --> 00:12:10,691
+Çünkü isim primitif bir veridir.
+
+57
+00:12:10,871 --> 00:12:11,971
+Nesneyi temsil etmez.
+
+58
+00:12:12,691 --> 00:12:15,491
+Aynı isimde işte Ahmet diye iki tane şey olabilir.
+
+59
+00:12:15,491 --> 00:12:20,451
+Bunun için isim üzerinden bir uniklik yapmaya çalışanlardan belli bir puan kırıldı.
+
+60
+00:12:21,311 --> 00:12:24,771
+İsim ve soy isim de olsa buna dikkat edeceksiniz.
+
+61
+00:12:24,932 --> 00:12:29,112
+Yani doğrudan şu tarz bir karşılaştırma yapılmasını bekliyoruz.
+
+62
+00:12:29,911 --> 00:12:30,792
+Nesneser tarla.
+
+63
+00:12:30,891 --> 00:12:35,851
+Eğer böyle bir şey yoksa ilgili kısma bu eklenecek.
+
+64
+00:12:35,851 --> 00:12:41,391
+Şimdi burada öyle kodlar gördüm ki sanki hiç daha önceden programlama dersi almamış.
+
+65
+00:12:41,531 --> 00:12:43,211
+Ne bileyim BBG dersleri almamış.
+
+66
+00:12:43,211 --> 00:13:10,072
+Yani iki tane iç içe for döngüsüyle ekleme yapan podlar vardı. Oradan da belli bir miktar puan kırıldı. Yani object oriented diye tamamen algoritmik yoksunluk istemiyoruz. Bu yapılabilen bir şey. Bir diziye eleman ekleyeceksin. Yani diziyi iki defa gezmenin bir anlamı yok. İç içe iki defa gezmek çok kötü bir algoritma. Algoritmik açıdan da değerlendirdik. Buna da itirazı olanlar bu konuyu da dikkate alsınlar.
+
+67
+00:13:10,072 --> 00:13:37,531
+ToStick metodu genel olarak tam puan alanlar çoğunluktaydı. Sadece aktörlerin bilgileri için burada aktörün işte get here bilgisi, get name bilgisi, get more info bilgilerinin yazılması için ekstra metotlar yazanlar vardı. Onları da kabul ettim. Hani puan kırmadım. Burada bu işi yapmak yerine ekstra bir metot yardımcı metot private olarak eklenmiş. O da kabul olabilir.
+
+68
+00:13:37,531 --> 00:13:44,511
+Ama bu tarz durumlarda mümkün oldukça şeyi ihlal etmeyin arkadaşlar. UML'i ihlal etmemeye çalışın.
+
+69
+00:13:45,871 --> 00:13:53,611
+Şimdi sekans diagramı dediğimiz şey to string metodunun test sekansı. Yani şu metot nasıl çalışacak?
+
+70
+00:13:54,331 --> 00:14:03,871
+Bu metodu kim çağrılsa çağırsın buraya boş bir şey yazacağız. Kimin çağırdığı önemli değil. Bu istek kime gidecek? Aktör sınıfına gidecek.
+
+71
+00:14:03,871 --> 00:14:18,591
+Aksör sınıfı içinde mesela öncelikle bir getname işlemi yapılacak info değişkeni üzerine. Bu getname hangi sınıf içinde bu sınıfın içerisinde olan bir şey diyoruz.
+
+72
+00:14:18,964 --> 00:14:47,224
+Çünkü bu her ne kadar person'dan alsa da yani bu sınıfın içerisinde gibi düşüneceğiz. Onun için üst sınıfa gitmeye gerek yok. Info'nun içerisinde get name bilgisi alındı. Sonra bazı bilgiler işte şurada yazılıyor. Tekrar bir get stage name diye bir bilgi alınıyor. Burada tabii doğrudan değişken olarak yazılmış ama get stage name değişkeniyle bu bilgi info değişkenine ekleniyor.
+
+73
+00:14:47,224 --> 00:14:50,863
+Sonra cihat soruna bakacağım
+
+74
+00:14:50,863 --> 00:14:53,283
+GetName alanı
+
+75
+00:14:53,283 --> 00:14:57,423
+Aktörün GetName alanı isteniyor
+
+76
+00:14:57,423 --> 00:15:00,324
+Bunun için Act kısmına gidiyoruz
+
+77
+00:15:00,324 --> 00:15:05,224
+Ve bu buradan bir istekle geri döndürülüyor
+
+78
+00:15:05,224 --> 00:15:08,203
+Sonra GetYear aynı şekilde istekle geri gönderiliyor
+
+79
+00:15:08,203 --> 00:15:10,224
+GetMoreInfo istekle geri gönderiliyor
+
+80
+00:15:10,224 --> 00:15:11,504
+Ve bu işlem tamamlanıyor
+
+81
+00:15:11,504 --> 00:15:16,004
+Tamamlandıktan sonra bu toString metodunu çağıran
+
+82
+00:15:16,003 --> 00:15:38,283
+yer kimse oraya bu request'e reply olarak info geri döndürmüş oluyor. Genel olarak bunun çiziminde birazcık hatalar vardı. Yani burası ha deyince info hemen oluşmuyor. Bakın bir sürü arada işler var. İşte burada get metotları var. Bunları kullanıyoruz. Buna uygun olarak yazılmasını bekliyorduk.
+
+83
+00:15:38,283 --> 00:15:42,103
+Main'de de genel olarak çok bir problem yoktu.
+
+84
+00:15:42,343 --> 00:15:47,084
+İşte iki tane, üç tane değişken nesne üretip toString metodunu çağırmak.
+
+85
+00:15:47,184 --> 00:15:50,703
+Şu şekilde çağıranlar vardı. Onu da kabul ettik. Oradan da puan kırılmadı.
+
+86
+00:15:51,423 --> 00:15:53,943
+Sadece Keanu'u çağırmak da toString'i çağırıyordu.
+
+87
+00:16:01,235 --> 00:16:08,735
+Aynı isim de olsa yani şu isimden kastın orada şey sadece zaten isim tutulmuyor mu? Bir dakika.
+
+88
+00:16:12,244 --> 00:16:20,983
+Evet. Aynı isimleri, yani başka bir ekstra bilgi yok. Onun için isimler üzerinden değil, nesneler üzerinden bunu karşılaştırmak gerekiyor.
+
+89
+00:16:23,124 --> 00:16:35,584
+Nesneleri direkt eşittir eşittir operatörüyle karşılaştırabilirsiniz. Bellekteki yer farklı değildir. Eğer bir nesne daha önceden, çünkü sen eklemeye çalışıyorsan,
+
+90
+00:16:35,584 --> 00:16:45,424
+Add-Eck metoduna bir aktör göndermeye çalışıyorsan o da neredeydi? Mesela main'den bir aktör oluşturduk.
+
+91
+00:16:46,303 --> 00:16:58,943
+Film 1 dedik. Ondan sonra şurada bir Add-Eck daha var. Film 2 var. Şunları daha önce oluşturduğu için bunlar referansıyla gider ve eşittir eşittir operatörle karşılaştırabilsin. Sonuçta referansları karşılaştırılacak.
+
+92
+00:16:58,944 --> 00:17:25,004
+Onun için eşittir eşittir kullanılır. Ama içerisindeki bilgileri karşılaştır dersen o zaman eşittir eşittir kullanılmaz. İsimler için ancak ne yapacaksın? Film bir nokta aktördeki şu alanlar, memberlar, stage name gibi şeyler kullanılır. Tamam mı? Stringler integerlığı ancak bu şekilde.
+
+93
+00:17:25,004 --> 00:17:34,523
+Şurada yapılan karşılaştırma işlemi daha önceden bu nesne eklenmiş mi? O nesne neyi söylüyor bize? Sadece bu isimde birisi var mı yok mu?
+
+94
+00:17:35,203 --> 00:17:52,883
+Eğer iki tane değişken olsaydı siz çözümünüzde şunu yapmanız gerekirdi. O da kötü bir çözüm. Primitifler üzerinden isimleri veya diğer değişken neyse onları tek tek hepsini karşılaştırmanız gerekiyordu. Bu da iyi bir şey değil. Nesne unique olacak.
+
+95
+00:17:55,003 --> 00:17:57,063
+Evet var mı Eran Yusuf'umuz?
+
+96
+00:18:01,587 --> 00:18:18,867
+Sınav kağıdının kontrolüyle alakalı bir isteğiniz, talebiniz varsa dersin sonunda size bir link paylaşacağım. O linkten katılırsınız. Sınav kağıdınız üzerinden değerlendirmemizi görüşürüz. Tamam mı? Dersin sonunu beklemek gerekiyor o iş için.
+
+97
+00:18:18,867 --> 00:18:22,147
+Evet, sınav pastalını kapatıyoruz burada.
+
+98
+00:18:23,467 --> 00:18:29,407
+Şimdi biz en son collectionlarla alakalı kısma bakmıştık.
+
+99
+00:18:29,407 --> 00:18:33,347
+Slide'ımızda sadece bunun bir map kısmı var anlatmadığımız.
+
+100
+00:18:33,707 --> 00:18:43,927
+Şimdi onu hızlıca bir gösterip sonra ders notlarında olmayan ama benim önemli gördüğüm collectionlarla alakalı bir kısma bakacağız.
+
+101
+00:18:44,107 --> 00:18:47,927
+Ondan sonra exception'ları anlatacağım bugün ve dersi tamamlayacağız.
+
+102
+00:18:52,819 --> 00:18:54,419
+Şu kameramızı da kapatalım.
+
+103
+00:19:02,195 --> 00:19:28,195
+Last week we will study, we studied some collections like ArrayList and LinkedList. This is the hierarchy of generic class regarding collections. Today we will study map.
+
+104
+00:19:42,612 --> 00:19:48,612
+Yes, this is page about map.
+
+105
+00:19:50,612 --> 00:19:56,612
+You know in data structure course hashing.
+
+106
+00:19:57,612 --> 00:20:04,612
+Have you seen, have you studied hashing in data structure?
+
+107
+00:20:08,980 --> 00:20:10,419
+Data structure'da hash.
+
+108
+00:20:12,220 --> 00:20:13,799
+He? Anlamadım?
+
+109
+00:20:14,460 --> 00:20:15,659
+Henüz görmedik.
+
+110
+00:20:16,339 --> 00:20:19,360
+Tamam. O zaman kısaca onu bir ifade edelim.
+
+111
+00:20:21,480 --> 00:20:22,400
+Okay.
+
+112
+00:20:23,459 --> 00:20:38,359
+In order to access an element within an array in non-polynomial time, in constant time, like O1 or O2,
+
+113
+00:20:38,980 --> 00:21:04,980
+We can use hash data structure. It uses a hash function in order to access in a constant time. And then we can use the find or delete or create an element operation.
+
+114
+00:21:04,980 --> 00:21:12,980
+This is an array, an integer array. For example, we have
+
+115
+00:21:19,316 --> 00:21:20,316
+We have seven elements. Okay. To add an element we can use mod function, modulation. For example, 17 mod 7 equal to 3. We can directly add this into this position.
+
+116
+00:21:49,316 --> 00:22:05,316
+and then 16, 18, 4 and then 5.
+
+117
+00:22:13,076 --> 00:22:35,756
+Insertion is implemented via modulation operation. Size of array is used to modulation, base of modulation, okay? 5 and 17 and 18 are added like this illustration.
+
+118
+00:22:35,756 --> 00:22:58,976
+In order to search an element, for example, 5, we again use the modulation function to find the position of our element. 5 modulation 7 is equal to 5, so we can easily find this element.
+
+119
+00:22:58,975 --> 00:23:03,735
+Sometimes there may be a collision, for example,
+
+120
+00:23:08,723 --> 00:23:37,623
+12. In order to add 12 into my array, there is a collision. It's a problem for this hashing. In order to overcome this problem, we can add this element to the next position. For example, if this is not empty, we can add this element into the next position.
+
+121
+00:23:37,623 --> 00:24:06,463
+for example. If it is, if you want to add 13, this array, this is full, this is not empty, so we can add this is next position, but this is the border or border of this array, so we can add or we can consider this array like a circular array. 13 is added here.
+
+122
+00:24:07,623 --> 00:24:37,503
+While searching these elements like 12, firstly we should implement a modulation operation. This is the result of this 5. 5 is not equal to 12. So we can pass the next element 12. 12 is found. So we can easily find this element.
+
+123
+00:24:37,624 --> 00:25:04,363
+Okay. These are basic operation regarding hashing. In Java, we can store our objects via key and objects, value or unique identifier methods. Value and unique identifier methods are used for hashing terminology, hashing methodology.
+
+124
+00:25:04,363 --> 00:25:17,683
+All type of elements, all type of objects can be easily stored via unique identifier or key.
+
+125
+00:25:17,683 --> 00:25:25,524
+Getting or put remove values in order to list all elements in your collection.
+
+126
+00:25:26,363 --> 00:25:30,863
+There are some useful methods. We will see the details of this.
+
+127
+00:25:30,863 --> 00:25:59,343
+This is a looking up methods between one and key. This is implemented via map interface. Map interface used by abstract mat and abstract mat inherited by is inherited by hash map. This is threat unsafe.
+
+128
+00:25:59,343 --> 00:26:08,223
+collection. So, race condition or mutual exclusion may be is possible.
+
+129
+00:26:09,603 --> 00:26:18,603
+Hesh table is traits. Multi-threading will be covered in the future chapters. We will see details.
+
+130
+00:26:18,603 --> 00:26:30,603
+These details are regarding to implementation of mutual exclusion or race condition problem.
+
+131
+00:26:30,603 --> 00:26:39,603
+In HashMap, there is a generic definition about key and value.
+
+132
+00:26:39,603 --> 00:26:50,603
+We can easily determine or specify some keys and values regarding of or corresponding of these keys.
+
+133
+00:26:50,603 --> 00:27:04,603
+For example, keys are the index of your values and values may be books or any other objects.
+
+134
+00:27:05,395 --> 00:27:21,095
+Yani burada söylenen şey arkadaşlar, k-hash veri yapısından esinlenerek verileri bir anahtar değer ve objeler olarak saklıyoruz. Anahtar değere ulaştığımız zaman objeyi de ulaşmış oluyoruz. Bir anlamda veri tabanı gibi düşünün.
+
+135
+00:27:21,916 --> 00:27:32,615
+Şimdi veri tabanında bir sorgulama yaptığınızda işte ne yapıyorsunuz? Öğrencinin numarasını girince diğer bilgileri, unique olan bir numarası var veya kimlik numarası var. Diğer bilgileri sorgulanıyor.
+
+136
+00:27:32,615 --> 00:27:48,215
+Burada da o mantıktan yola çıkarak bir değer ile anahtar eşleştirmesi yapılacak. Bu eşleştirme sayesinde daha hızlı yani Big O cinsinden düşünürsek Big O 1'e kadar ulaşabilen şeyler karşımıza geliyor.
+
+137
+00:27:48,215 --> 00:27:56,695
+Tabi veri tabanından ziyade bunun arka planında veri yapılarında göreceğiniz hash veri yapısı anlatılır.
+
+138
+00:27:57,175 --> 00:28:02,695
+Hash veri yapısında burada söylediğim gibi bazı kollizyonlar, çakışmalar olabilir.
+
+139
+00:28:03,275 --> 00:28:06,335
+Bu çakışmaların üstesinden gelebilmek için bazı teknikler var.
+
+140
+00:28:07,055 --> 00:28:08,215
+Bunları ben tabi burada anlatmıyorum.
+
+141
+00:28:08,315 --> 00:28:10,395
+Onlar veri yapılarının ve algoritma analizinin konusu.
+
+142
+00:28:10,515 --> 00:28:14,836
+Biz burada sadece bu koleksiyonu kullanmak için neler yapıyoruz onlara bakacağız.
+
+143
+00:28:14,835 --> 00:28:33,475
+About map implementation, we have to add a hash map class into your program. These are key represents, k represents the key, v represents the value.
+
+144
+00:28:33,476 --> 00:28:57,955
+Some methods or functions get method in order to obtain some objects into in your hash map you can use the return type of is accord is changed according to your value type. For example, book integer string boolean, etc.
+
+145
+00:28:57,955 --> 00:29:26,155
+This is the specified k related. Put is related to insertion operation. Associates the specified value with the specified k in this map. Key value relationship is inserted here. This is a suggestion.
+
+146
+00:29:27,955 --> 00:29:43,955
+For example, it is a usage of identify is very important in order to keep away from collisions. Okay.
+
+147
+00:29:43,955 --> 00:29:52,955
+A value is already exists in the data structure. The old value is delayed and returned.
+
+148
+00:29:52,955 --> 00:30:22,116
+returned, but the new value is inserted into collection. There's an important detail about this method. Values of collection, this is a listing operation, a list of all values stored in this table, which can easily traverse by using for each loop. Actually, this is used for each loop, but this is a
+
+149
+00:30:22,955 --> 00:30:26,556
+useful methods about this.
+
+150
+00:30:32,084 --> 00:30:33,084
+Knowing of specification generic collection interface is not necessary. This is an important detail about this concept. Yes, implementation of HashMap. In HashMap, there's a definition of HashMap about students. Students is represented by a string,
+
+151
+00:31:02,084 --> 00:31:06,084
+This is a key, this is a value, okay?
+
+152
+00:31:08,084 --> 00:31:12,084
+This is a reference of this HashMap.
+
+153
+00:31:12,084 --> 00:31:18,084
+In this course class, there is a course code, course name and course capacity.
+
+154
+00:31:18,084 --> 00:31:20,084
+These are private members.
+
+155
+00:31:20,084 --> 00:31:30,084
+When we started or when we created an object, the constructor method is executed
+
+156
+00:31:30,084 --> 00:31:55,823
+and HashMap is initiated. GetCode, GetName, GetCapacity, these are some useful methods. GetStudentCount is related to HashMap function, student's size. This is given by HashMap class.
+
+157
+00:31:55,823 --> 00:32:03,343
+Okay, this is the member method of HashMap class in order to obtain the size of our HashMap.
+
+158
+00:32:04,483 --> 00:32:08,723
+Add student into your HashMap.
+
+159
+00:32:09,783 --> 00:32:11,543
+There is a simple algorithm.
+
+160
+00:32:12,063 --> 00:32:13,523
+Get student count firstly.
+
+161
+00:32:14,243 --> 00:32:16,363
+This is related to this method.
+
+162
+00:32:16,363 --> 00:32:39,843
+If you're able to get student count or find student, there is a check whether there exists any student before, any student added before the list.
+
+163
+00:32:39,843 --> 00:33:02,584
+There's a check. If this rules violates, return false. If it does not, add these students into the list. While adding, firstly, student number is given as a parameter for key parameter.
+
+164
+00:33:02,584 --> 00:33:10,024
+Secondly, the second parameter is given for value parameter.
+
+165
+00:33:10,024 --> 00:33:16,684
+And this is the successful completion and return true.
+
+166
+00:33:17,723 --> 00:33:19,843
+Bakın ekleme arkadaşlar bu şekilde.
+
+167
+00:33:20,104 --> 00:33:21,964
+Yani burada hayati olan nokta şu.
+
+168
+00:33:22,884 --> 00:33:27,843
+HashMap'in tanımlanması, HashMap'in initialize edilmesi, HashMap'in size'ının getirilmesi.
+
+169
+00:33:27,843 --> 00:33:54,423
+Eğer şuradaki şartlara takılmadıysak yani öğrenci sayımız yeterli işte yerimiz varsa daha önceden de bu öğrenci eklenmemişse öğrencinin numarasını anahtar olarak niye anahtar olarak veriyoruz? Çünkü unik bir şeydir. İlla ki burada hani mod kullanılacak değil. Mod biraz önce söylediğim basit bir operasyon. Mod yerine başka şeyler de kullanılır ama arka planda ne olduğunu biz tam bilmiyoruz. Muhtemelen orada da modun farklı bir şekli var. Bu kullanılıyor.
+
+170
+00:33:54,423 --> 00:34:06,804
+değer olarak da bir öğrenci nesnesini yüklüyoruz. Bu öğrenci nesnesi de buraya bakın bir parametre olarak geliyor. Demek ki bir nesne üreteceğiz ve bu buraya gelecek. Burada anlaşılmayan bir şey.
+
+171
+00:34:17,876 --> 00:34:29,135
+Dersleri kontrol ederken bayağı soruyorum anlaşılmayan bir şey var mı var mı diye hiç soru gelmiyor. Nedense sınavdan sonra sorular geliyor. Neyse gelsin problem değil soru gelsin de ne zaman gelirse gelsin.
+
+172
+00:34:29,135 --> 00:34:43,995
+Find student method is related to get method. While doing this operation we have to use the key of our objects. This is number.
+
+173
+00:34:43,995 --> 00:34:56,995
+This result, this can be, this method may give a student object or null reference.
+
+174
+00:34:56,995 --> 00:34:57,995
+Okay.
+
+175
+00:34:57,995 --> 00:35:00,995
+This is related to reference.
+
+176
+00:35:03,923 --> 00:35:31,764
+return. It may be null or not or any other object reference. Increase capacity. We can. This is related to course class. Okay. This is related. It is not related to HashMap because HashMap is different. Show class list.
+
+177
+00:35:31,764 --> 00:35:43,764
+This is not related to this method, values method
+
+178
+00:35:47,764 --> 00:36:06,764
+This is a course list, sorry, class list. Get number and get name of this is the printing of or writing of some member values, member variables in your student objects.
+
+179
+00:36:06,764 --> 00:36:34,944
+Student values is a list. All elements of list is derived from or created from student. This is a foreach definition. A student is a temporary variable in order to accomplish this body of foreach statement. Inside the foreach, number of student and name of student are written.
+
+180
+00:36:36,764 --> 00:36:37,764
+Ok?
+
+181
+00:36:46,547 --> 00:36:47,547
+Yes, this is the testing of this not about this class. This is UCS. This is a course definition. It's a student. If student is not added this list or per course or object, there is a pro if it is not added,
+
+182
+00:37:16,547 --> 00:37:25,268
+we can add if it is at before there's a problem regarding a message.
+
+183
+00:37:28,228 --> 00:37:33,908
+These are some problems. This is another
+
+184
+00:37:36,547 --> 00:37:45,027
+student object, the addition of student. This is another objects. These are another objects.
+
+185
+00:37:46,547 --> 00:38:04,687
+Yes, add student, Cemal Nur, find student, for example, this is the operation of this, sorry, operation of finding these objects in your list.
+
+186
+00:38:04,687 --> 00:38:24,848
+This is equal to Fatih object or not because this gives, this method gives a reference of object. We can easily compare this object. This is true. So result is problem four. This is end of test.
+
+187
+00:38:24,847 --> 00:38:31,747
+Evet, hashmap gibi bir şey.
+
+188
+00:38:31,747 --> 00:38:49,887
+Bu konu önemli arkadaşlar.
+
+189
+00:38:49,887 --> 00:38:54,927
+Çünkü bir veri tapanı tarzında bir uygulama gerçekleştirmek için
+
+190
+00:38:54,927 --> 00:38:56,747
+Ne olacak?
+
+191
+00:38:57,027 --> 00:39:00,887
+Geçen dönem yapısal programlamada gördük, o projede de yaptınız
+
+192
+00:39:00,887 --> 00:39:06,467
+Bir kayıt eklerken bir unique identifier oluyor ve kayda ait diğer bilgiler saklanıyor
+
+193
+00:39:06,467 --> 00:39:09,527
+İşte bunu hash map ile çok rahat bir şekilde yapabiliyoruz
+
+194
+00:39:09,527 --> 00:39:11,887
+Arkada tabii hash veri yapısı var
+
+195
+00:39:11,887 --> 00:39:24,887
+Another useful class in collections linked list in Java we are using double linked list is used.
+
+196
+00:39:24,887 --> 00:39:26,887
+Okay.
+
+197
+00:39:26,887 --> 00:39:28,887
+Default.
+
+198
+00:39:28,887 --> 00:39:36,887
+So you can traverse backwards and upwards.
+
+199
+00:39:36,887 --> 00:39:55,667
+ArrayList is another useful list, vectors, hash map and hash table, these are some details, summary of details, some data structures.
+
+200
+00:39:55,667 --> 00:39:57,387
+Şimdi
+
+201
+00:39:57,387 --> 00:40:02,867
+exception handling'e gelmeden önce
+
+202
+00:40:02,867 --> 00:40:04,467
+burada bazı görmediğimiz
+
+203
+00:40:04,467 --> 00:40:07,167
+yani benim önemli gördüğüm bazı şeyler var
+
+204
+00:40:07,167 --> 00:40:07,947
+bunlara bir bakalım
+
+205
+00:40:07,947 --> 00:40:10,488
+Şimdi collection arkadaşlar
+
+206
+00:40:10,488 --> 00:40:12,667
+class şeyi
+
+207
+00:40:12,667 --> 00:40:13,887
+burayı birçokça anlatayım
+
+208
+00:40:13,887 --> 00:40:17,607
+ne sağlıyor, nereden yani ne işimize yarayacak
+
+209
+00:40:17,607 --> 00:40:20,227
+bu veri yapılarında gördüğünüz
+
+210
+00:40:20,227 --> 00:40:22,967
+algoritmaları ve veri yapılarını
+
+211
+00:40:22,967 --> 00:40:24,988
+böyle bir paket halinde kullanmayı sağlayan
+
+212
+00:40:24,988 --> 00:40:43,128
+Hani C'de böyle bir şey yok. C'de kendiniz mantığını öğrenmek için yazıyorsunuz. Onun için veri yapıları dersi o açıdan çok değerli. Burada da herhangi bir büyük projede o yazdığın, öğrendiğiniz şeyleri tekrar tekrar kullanmayın yani yazmayın diye C++'da Java'da
+
+213
+00:40:43,188 --> 00:41:06,207
+bunların tanımları var. Bunlar nasıl oluşuyor? Object-oriented paradigmaya göre kodlanmış şeyler. Yani Java içerisinde veya C++ içerisinde bunlar gelişigüler. Hadi bir stack sınıfı yazalım diye yazılmamış veya bir linked list yazalım diye oluşturmamış. Belli bir hiyerarşi içerisinde object-oriented düşünceye bağlı kalarak oluşturulan şeyler. Bunun içerisinde
+
+214
+00:41:06,207 --> 00:41:13,127
+İterfazler var. Bunların implementasyonları var. Bununla alakalı bazı classlar var ve bazı algoritmalar var.
+
+215
+00:41:14,287 --> 00:41:21,627
+Algoritmalardan kastımız mesela sıralama algoritmaları olabilir. Arama algoritmaları olabilir. Bu Java Collection Framework'un içerisinde.
+
+216
+00:41:22,548 --> 00:41:29,087
+Buraya baktığımız zaman şöyle bir hiyerarşisi var arkadaşlar. Sarılar, interface, kırmızılar, class olarak söyleniyor.
+
+217
+00:41:29,087 --> 00:41:52,887
+iterable class interfazimiz var. Yani bu iterable bazı standartları bize söylüyor. Collection interfazimiz var. Onun altında da list, queue ve set kümeler var. Şimdi setin özelliği diğerlerinden farklı olarak nedir? Kümeler konusunu biliyorsunuz. Bunun farkı ne olabilir? Listeyle set arasında nasıl bir fark vardır?
+
+218
+00:42:03,572 --> 00:42:08,851
+Birazcık matematik gören. Yani bunu biraz ortaokul seviyesinde bir soru arkadaşlar.
+
+219
+00:42:18,452 --> 00:42:46,271
+Yani sıralanmamıştan kastımız aynı elemanı iki defa kümeye ekleyemiyoruz değil mi? Ama bir listeyi ekleyebiliyoruz. Set burada biraz farklı tasarlanmış. Yani aynı bunun burada olduğu gibi aynı elemanı birden fazla eklememek için yapılan bir şey, farklılık var. Yoksa bir listeyle de hani bir kümenin elemanlarını saklayabiliriz ama set burada ikinci bir elemanı eklememeyi sağlıyor.
+
+220
+00:42:48,452 --> 00:43:17,852
+Some useful methods for collection interface. Adding, add all. Adding is an element is added. Add all. A specified collection is added into another collection. Is that different? Parsa, you asked this in the first class about adding books in your array.
+
+221
+00:43:18,452 --> 00:43:48,212
+so this is very useful methods a combination or combination of two arrays or a combination of two lists is very useful about this. Remove is a dilating related to the element into your collection in your collection. Remove all elements as specified collection or condition related to.
+
+222
+00:43:48,452 --> 00:44:04,892
+Retain is used to delay all elements of invoking collection, specified collection. These are a bit different about to remove all.
+
+223
+00:44:07,831 --> 00:44:10,071
+This is the inverse, okay?
+
+224
+00:44:11,911 --> 00:44:17,271
+For example, 1, 2, and 3, sorry.
+
+225
+00:44:26,547 --> 00:44:26,867
+Şurada.
+
+226
+00:44:46,387 --> 00:44:48,387
+For example, in your list
+
+227
+00:44:51,699 --> 00:44:54,959
+When you say remove all
+
+228
+00:45:01,619 --> 00:45:03,499
+1, 2, and 3.
+
+229
+00:45:05,059 --> 00:45:06,459
+These are removed.
+
+230
+00:45:07,739 --> 00:45:08,580
+Retain all.
+
+231
+00:45:13,204 --> 00:45:16,743
+Keep this and remove others.
+
+232
+00:45:16,743 --> 00:45:18,803
+OK, these are difference.
+
+233
+00:45:20,103 --> 00:45:26,204
+Size and clear are very simple and easy methods.
+
+234
+00:45:27,003 --> 00:45:29,863
+Contains to check search element.
+
+235
+00:45:31,204 --> 00:45:38,863
+Contains all in order to check all elements into list in your another in another list.
+
+236
+00:45:38,863 --> 00:45:48,523
+İterator is a iteration in order to traverse all elements in your list or in your map.
+
+237
+00:45:50,523 --> 00:46:03,123
+Conversion of array to array method is used from any type of list into object array.
+
+238
+00:46:03,123 --> 00:46:10,603
+from students list into object array from integer list into object array
+
+239
+00:46:10,603 --> 00:46:20,963
+empty is another methods equals is used in order to check
+
+240
+00:46:20,963 --> 00:46:26,784
+matching of two collection is equals or not
+
+241
+00:46:26,784 --> 00:46:28,784
+hashing.
+
+242
+00:46:28,784 --> 00:46:31,784
+Hatchcode, the hashcode number of,
+
+243
+00:46:31,784 --> 00:46:33,784
+returns to hashcode number of
+
+244
+00:46:33,784 --> 00:46:34,784
+correlation,
+
+245
+00:46:34,784 --> 00:46:37,784
+which is related to hashing.
+
+246
+00:46:37,784 --> 00:46:40,784
+Yes, iterator interface is another
+
+247
+00:46:40,784 --> 00:46:42,784
+interface, is useful interface for
+
+248
+00:46:42,784 --> 00:46:44,784
+this scope.
+
+249
+00:46:44,784 --> 00:46:48,784
+In order to traverse all element
+
+250
+00:46:48,784 --> 00:46:50,784
+in your list,
+
+251
+00:46:50,784 --> 00:46:52,784
+we can use hasNext method.
+
+252
+00:46:52,784 --> 00:46:54,784
+If you have
+
+253
+00:46:54,783 --> 00:47:11,783
+If you have new values in your list, we can show, we can read this current member and we can pass the next one.
+
+254
+00:47:11,783 --> 00:47:15,783
+This is a useful method in order to traverse.
+
+255
+00:47:15,783 --> 00:47:23,783
+Next is simple about traversing of a corridor in your elements.
+
+256
+00:47:23,784 --> 00:47:53,784
+İterator.
+
+257
+00:47:53,784 --> 00:47:54,784
+ArrayList'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir araylist'in bir arayl
+
+258
+00:48:23,784 --> 00:48:31,263
+Bu, old or non-generic definition of ArrayLists.
+
+259
+00:48:32,463 --> 00:48:37,784
+This is also old depreciated or obsolete version.
+
+260
+00:48:37,784 --> 00:48:45,504
+New version of VIA by using generic examples, generic definition.
+
+261
+00:48:46,524 --> 00:48:52,004
+We can use greater than and lower than symbol.
+
+262
+00:48:52,003 --> 00:48:57,723
+We can specify any type string or any type of object.
+
+263
+00:48:59,163 --> 00:49:08,323
+Some methods, some extra methods in addition to collection interface.
+
+264
+00:49:09,443 --> 00:49:13,003
+For example, add is a...
+
+265
+00:49:13,268 --> 00:49:33,807
+Collection interface method, implementation of add method is inserted into ArrayList method. Bakın, niçin kullanılıyor bu add method? Yani burada implement etmek zorundayız, tamamlamak zorundayız.
+
+266
+00:49:37,972 --> 00:49:51,551
+Every time we run a for each loop or is it using iterator? Actually, it is vice versa, parsa. When you use iterator, it uses for each loop.
+
+267
+00:49:54,711 --> 00:49:56,131
+Anladım, teşekkür ederim.
+
+268
+00:49:56,131 --> 00:50:01,892
+Tamam. Yani arka planında for each loop çalışıyor. Ben cümlemden öyle anladım. Bunun bir tanesi tersi.
+
+269
+00:50:01,892 --> 00:50:29,431
+Yes, some extra methods, for example, last index of any object, there may be some multiple elements in your list, for example, with the same value, for example, integers, one, two, one, three, one, one, the last occurrence of your values is returned by this method.
+
+270
+00:50:29,431 --> 00:50:53,431
+This is the sum methods. Index of objects. This is the first occurrence specified element. Okay. Trim to size. It is used to shrink the capacity of ArrayList.
+
+271
+00:50:53,431 --> 00:51:01,431
+Yes, some examples. Let me show you this example.
+
+272
+00:51:07,027 --> 00:51:08,327
+collections.
+
+273
+00:51:23,731 --> 00:51:53,471
+Yes, this is the relation, this is the implementation of ArrayList operation, ArrayList definition, adding element. Iterator is another interface. This is string, this is also string. In order to traverse all elements, we can use for each loop
+
+274
+00:51:53,471 --> 00:52:18,831
+or we can use iterator. Iterator is used type independent approach. You can specify any type. So there is no need in order to specify any type. There is no need to specify any type like string or book.
+
+275
+00:52:18,831 --> 00:52:41,812
+in 4EatLook we have to specify the basic type of object. Tamam. Bu şekilde. Diğerine bakalım. Diğeri neymiş? Burada bakın bir öğrenci. Bakın burada string var. Burada bir öğrenci oluşturmuştuk. Burada bir öğrenci şeyimiz var. Öğrencinin bilgileri var.
+
+276
+00:52:41,812 --> 00:53:00,371
+Öğrencileri bakın ekliyoruz. Öğrencileri eklerken öğrenci tipinde oluşacak diyoruz. Sonra bir başka öğrenci daha eklenmiş burada. Sonra diyoruz ki bu öğrenci iki listesini al, şu listeye tamamen ekle. Bu ikili listeye birleştiriliyor.
+
+277
+00:53:00,371 --> 00:53:07,691
+liste göster diye bir şey varmış. Bu liste göster de bakın bir iterator tarafından öğrenci şeyi oluşturacak diyoruz.
+
+278
+00:53:07,691 --> 00:53:19,772
+Bu öğrencilerin her birinin bilgisini tabii iteratorın her bir objesi öğrenci tribünde olduğu için ve öğrenci içerisinde biz to string metodunu yazmadığımız için yazsaydık ona da gerek yoktu.
+
+279
+00:53:20,231 --> 00:53:27,412
+Şuradaki memberlara tek tek erişip ekrana bastırıyoruz. Her bir iterator next ettiğinde bize bir öğrenci objesi döndürüyor.
+
+280
+00:53:27,412 --> 00:53:48,452
+Bu öğrenci öbürisini burada yazdırıyoruz. Aslında şunu burada yazmamak lazım. Bunu nerede? Şurada bir to-sting metodunda yazmak lazım. Bu ne olur? Şuradaki işlemi kurtarmış oluruz. Ve o zamanda ne oluyor? Direkt sistemi alt print alan iterator next deyip şu içerideki kısımları yazıyoruz. Has next de neydi? Hala obje varsa dönmeye devam et demekti.
+
+281
+00:53:51,291 --> 00:53:55,151
+Evet. Başka ne varmış? Başka burada yok.
+
+282
+00:53:59,155 --> 00:54:00,135
+students
+
+283
+00:54:00,135 --> 00:54:03,435
+remove all
+
+284
+00:54:03,435 --> 00:54:06,975
+some
+
+285
+00:54:06,975 --> 00:54:08,916
+burada bazı
+
+286
+00:54:08,916 --> 00:54:09,255
+işte
+
+287
+00:54:09,255 --> 00:54:10,795
+retain nedir?
+
+288
+00:54:11,076 --> 00:54:11,195
+Hani
+
+289
+00:54:11,195 --> 00:54:13,255
+remove all nedir?
+
+290
+00:54:13,475 --> 00:54:14,536
+Retain yaparken
+
+291
+00:54:14,536 --> 00:54:16,756
+işte diyor ki color list var
+
+292
+00:54:16,756 --> 00:54:19,076
+green'i
+
+293
+00:54:19,076 --> 00:54:20,395
+buraya verince
+
+294
+00:54:20,395 --> 00:54:23,256
+green verildikten sonra green dışındakilerin
+
+295
+00:54:23,256 --> 00:54:24,496
+işte green kalacak
+
+296
+00:54:24,496 --> 00:54:26,435
+diğerleri sinirlecek ama onları söylüyor.
+
+297
+00:54:27,435 --> 00:54:28,655
+Yes, linked lists
+
+298
+00:54:28,655 --> 00:54:55,475
+implementation. In Java, we are using double linked lists behind the implementation of this class. Also, you can reap the benefit of linked list class in order to construct stack or queue.
+
+299
+00:54:55,475 --> 00:55:08,035
+StakeUno has two operations, pop or push, Q and Q and DQ.
+
+300
+00:55:09,416 --> 00:55:23,316
+By adding or by removing the last position or the next, the first position in your linked list, we can construct some useful data structures.
+
+301
+00:55:23,315 --> 00:55:34,995
+also we can specify this we can use this via generic definition like any type of object.
+
+302
+00:55:38,195 --> 00:55:49,475
+Yes some methods at first, at last, last or remove first index of last index of remove contains
+
+303
+00:55:49,475 --> 00:56:02,755
+at the end of the list. Get first, get last. These are another useful methods.
+
+304
+00:56:04,895 --> 00:56:05,675
+Test collection.
+
+305
+00:56:06,475 --> 00:56:13,655
+Buradaki örneklerin bazıları silinmiş. Neyse, bakarız onlara artık.
+
+306
+00:56:23,507 --> 00:56:37,067
+Yes, this is the LinkedList. LinkedList addition. This is the traverse of iterator via iterator interface.
+
+307
+00:56:39,468 --> 00:56:52,848
+LinkedList'in işlemleri kolay. Bu örneklerin bazılarını ben ekstra eklerim. Burada her biri nedense yok. Şurada mıydı acaba?
+
+308
+00:56:53,507 --> 00:56:58,208
+Bunlar da jenerikle alakalı şeyler.
+
+309
+00:56:59,307 --> 00:57:01,947
+Jeneriği size anlattım. Öyle hatırlıyorum.
+
+310
+00:57:03,268 --> 00:57:10,548
+Jenerik bir sınıf nasıl tanımlanır? Jenerik metot nasıl yazılır? Yani bunların örneklerini yaptık.
+
+311
+00:57:11,908 --> 00:57:19,548
+Mesela birden fazla jenerik yazacaksanız, yani birkaç şekilde işte ne yapıyorsunuz? Birden işte farklı semboller kullanıyorsunuz.
+
+312
+00:57:20,607 --> 00:57:23,327
+T ve U şeklinde burada bunun örnekleri de var.
+
+313
+00:57:23,507 --> 00:57:27,248
+Şuraya bir daha bakayım burada
+
+314
+00:57:32,820 --> 00:57:36,879
+Bunlar normalde yok da, yani olmaması da pek iyi değil.
+
+315
+00:57:49,108 --> 00:57:51,007
+Şu örneği sizin yaptık diye hatırlıyorum.
+
+316
+00:57:54,835 --> 00:58:24,395
+Bir kitabımız vardı. Bir database'imiz de bunlar. Bu örneği yaptıysak arkadaşlar, yani interface kısmında yaptık diye hatırlıyorum. Mesela ekleme ve silme yapacak database'e kesinlikle. MySQL de olsa bu şartı sağlayacak. Ondan sonra diğer MSSQL de olsa bu şartı sağlayacak.
+
+317
+00:58:24,835 --> 00:58:38,475
+Biz kütüphanemizden hangi veri tabanını kullanacaksak ona ilişkin kullanırız. Diğer her şey aynı oluyor. Ben maya sükeri, MSL sükeri yaparsam sadece şurayı değiştirmem gerekiyor. Bu örneği yapmıştık değil mi arkadaşlar?
+
+318
+00:58:41,196 --> 00:58:41,395
+Evet.
+
+319
+00:58:43,395 --> 00:58:44,435
+Tamam, güzel o zaman.
+
+320
+00:58:47,236 --> 00:58:50,335
+Bunlar ders notlarında yok, atlamayalım.
+
+321
+00:58:53,972 --> 00:59:00,231
+Evet. Differences between ArrayList and LinkedList.
+
+322
+00:59:03,347 --> 00:59:12,648
+These are used dynamic array via dynamic memory allocation like malloc in C.
+
+323
+00:59:12,648 --> 00:59:25,747
+It is not used dynamic memory allocation. This is used reference or binding of reference between them.
+
+324
+00:59:25,747 --> 00:59:36,748
+Manipulation, like adding or removing in your list is slow because shift operation is required.
+
+325
+00:59:37,748 --> 00:59:49,748
+Required. Manipulation with linked is faster than ArrayList because there is no need for shifting operation.
+
+326
+00:59:49,747 --> 01:00:05,627
+ArrayList class can act as a list only because it implements lists only because implementation of lists is used.
+
+327
+01:00:05,627 --> 01:00:11,087
+class, X is a list and queue.
+
+328
+01:00:13,147 --> 01:00:26,648
+Class hierarchy, list and queue is in the upper level of linked list.
+
+329
+01:00:28,388 --> 01:00:32,127
+ArrayList is better for storing and accessing.
+
+330
+01:00:32,607 --> 01:00:34,288
+This is better for manipulating.
+
+331
+01:00:35,627 --> 01:00:42,987
+this is related to data structure course yes list is a writer it is not important hash map
+
+332
+01:00:46,028 --> 01:00:56,507
+for this source links at another source you can find other examples about hash map
+
+333
+01:01:06,260 --> 01:01:07,979
+There's an example.
+
+334
+01:01:26,420 --> 01:01:56,119
+This is an integer key, value of this string. Okay, it is possible. Also, you can specify a list for value. For example, list, for example, not string student. And this is the key of. This is value, this is list.
+
+335
+01:01:56,420 --> 01:02:16,239
+Şimdi bakın burada anahtar ve değer eşleştirmesi yaparken anahtar alanına bir unique bir şey yapmamız lazım ama değer için burada bir list saklayabilirsiniz. Yani burada sadece biraz önceki de stringler vardı. Bu listede mesela biraz önce bir ArrayList oluşturdunuz.
+
+336
+01:02:16,239 --> 01:02:41,659
+Mesela diyeceksiniz ki her bir dersi alan öğrencilerin listesi. Dersin kodu dersi alan öğrencilerin listesi. Böyle bir şey hash map'te saklanabilir. Anlaşıldı mı arkadaşlar? Bu yapı aslında şöyle görsel olarak çizelim. Önemli bir şey. Burada niyeyse derste anlatılmıyor bunlar ama bence önemli.
+
+337
+01:02:47,315 --> 01:03:15,315
+This is the list for students. All elements of this list consist the formation for student program students 0 student 1 etc. This includes the name of student survey for example age, birthday etc.
+
+338
+01:03:15,315 --> 01:03:31,915
+By combining this list through the key into HashMap, you can design a simple database.
+
+339
+01:03:33,915 --> 01:03:36,915
+Basit bir veri tabanı burada tasarlanabilir.
+
+340
+01:03:37,076 --> 01:03:42,455
+Yani bir course code like this.
+
+341
+01:03:42,455 --> 01:03:49,715
+Daha önceki yıllar ben laboratuvar aslanıyken bununla alakalı bir soru sormuştum.
+
+342
+01:03:50,915 --> 01:03:53,055
+Yani her bir değeri liste saklıyordu.
+
+343
+01:03:53,055 --> 01:03:55,915
+Daha sonra gerekirse onunla alakalı bir örnek yaparız.
+
+344
+01:03:56,076 --> 01:04:00,435
+Bu hafta bir uygulama yapın da sonrasına bakalım.
+
+345
+01:04:03,315 --> 01:04:03,996
+Evet.
+
+346
+01:04:04,955 --> 01:04:07,775
+Şimdiye kadar ki kısım şeyle alakalıydı.
+
+347
+01:04:08,315 --> 01:04:09,116
+Şimdi bir ara verelim.
+
+348
+01:04:10,155 --> 01:04:12,335
+Dönüşte şey yapalım arkadaşlar.
+
+349
+01:04:12,455 --> 01:04:15,735
+Collection konusu bitti.
+
+350
+01:04:16,155 --> 01:04:20,475
+Exception konusunu slide'ımızdan ve buradaki örneklerden çalışırız.
+
+351
+01:04:25,780 --> 01:04:27,899
+Saat 16.10'da görüşmek üzere.
+
+352
+01:12:58,515 --> 01:12:59,355
+Evet arkadaşlar.
+
+353
+01:13:03,123 --> 01:13:04,224
+Saatimiz gelmiş.
+
+354
+01:13:16,659 --> 01:13:19,079
+Şuradan bir slide daha vardı. Onu da açalım.
+
+355
+01:13:44,916 --> 01:13:45,416
+Thanks.
+
+356
+01:14:10,387 --> 01:14:17,127
+Şimdi bu kısım yine ders notlarında az bir şeyle anlatılmış ama burada bazı detaylar var. Bunları bilmek gerekiyor.
+
+357
+01:14:19,228 --> 01:14:20,827
+Şimdi exception nedir?
+
+358
+01:14:25,395 --> 01:14:39,015
+İşte diyor ki, bir hata yapma şeyi varsa o onu yapacaktır. Yani bir adamda bir bug'ı varsa onu yapacaktır diyor.
+
+359
+01:14:40,395 --> 01:14:48,095
+Şimdi program yazarken arkadaşlar her şeyi, her detayı gözden dikkate almak biraz zor.
+
+360
+01:14:48,095 --> 01:15:01,295
+Bu zorluğun sonucu olarak hatalar mıydana giriyor ve hataların sonucu olarak programımız crash ediyor. Bunun önüne geçmek için exception handling mekanizmaları kullanılmış.
+
+361
+01:15:01,295 --> 01:15:10,555
+Yani burada bu işin hikayesi anlatılıyor. Mesela exception handling bize neyi sağlıyor?
+
+362
+01:15:10,555 --> 01:15:25,076
+Hatadan kaçınmak değil de hata olduğunda hatayla baş etmeye çalışmak. Hatadan kaçınmaya örnek olarak kod yazarken ne verebilirsiniz?
+
+363
+01:15:28,979 --> 01:15:39,159
+Avoidance of exception. Buna örnek olarak ne söylersiniz? Mesela arada soralım. Mustafa Onur Kılıç.
+
+364
+01:15:44,404 --> 01:15:45,504
+Burdayım hocam.
+
+365
+01:15:45,783 --> 01:15:51,263
+Şimdi Mustafa bir kod yazıyorsun hatadan kaçınmak için. Kodun içerisinde neler eklemen gerekir?
+
+366
+01:15:55,412 --> 01:16:04,511
+Mesela biz sayı gireceğiz. Sıfır ile yüz arasında sayı gireceğiz. Hatadan kaçınmak istiyoruz. Avoid etmek istiyoruz.
+
+367
+01:16:06,792 --> 01:16:17,071
+O zaman bir if koyardım herhalde. Girden sayı sıfırdan küçük veya yüzden büyükse kabul etmezdi girden sayı.
+
+368
+01:16:17,151 --> 01:16:24,791
+Güzel. Bakın bu bir hatadan kaçınma için şey. Peki böyle bir detay bizim senaryomuzda varsa bunu akledersek yazarız.
+
+369
+01:16:25,412 --> 01:16:31,691
+Kullanıcı yani sıfırdan küçük değer, yüzden büyük değer giremez Mustafa'nın bahsettiği şekilde.
+
+370
+01:16:32,371 --> 01:16:36,792
+Eğer tekrar değer girmesini istersek işte bir do while veya while döngüsüyle bunu yaparız.
+
+371
+01:16:37,592 --> 01:16:48,812
+Bunlar tamamen önceden düşünüp hata olması durumunda işte programın işleyişini tekrar başlatmak veya tekrar veri girişi yapmak için kullanılan şeyler.
+
+372
+01:16:48,812 --> 01:16:52,071
+Fakat exception handling başka bir şey.
+
+373
+01:16:52,071 --> 01:17:11,011
+Hata olmuş, exception olmuş bitmiş yani iş işten geçmiş durumdayız. Artık bundan sonrasına bakacağız. Yani bu konu bununla alakalı. Bundan öncesi avoidance if'lerle for'larla düzgün bir algoritma geliştirmeyle alakalı. Şuradaki hikaye bunu anlatıyor.
+
+374
+01:17:11,011 --> 01:17:39,051
+C'de normalde böyle bir şey var ama çok kullanmıyoruz. Program kapanırken crash olduğunda ufak bir metot tanımlanabiliyor ama çok fazla kullanmıyoruz biz. Java'da bu trouble ile başlayan error ve exception ile devam eden bir sınıf yararçısı var. Bu sınıf yararçısı içerisinde IO exception ve runtime exceptionlar böyle bir sınıf yararçısı tanımlanmış.
+
+375
+01:17:39,051 --> 01:17:47,651
+Biz bu sınıfları kullanarak meydana gelecek bazı hatalara çözümler üretebiliyoruz.
+
+376
+01:17:47,712 --> 01:17:55,072
+Bakın hata olacak, iş işten geçecek ama programımızın kapanmaması için biz bir şeyler yapacağız.
+
+377
+01:17:55,651 --> 01:17:56,092
+Mevzu bu.
+
+378
+01:17:56,852 --> 01:17:58,751
+Peki bu hatalar ne olabilir?
+
+379
+01:18:00,632 --> 01:18:05,772
+Şimdi Java Lang Error içerisinde bazı problemler var.
+
+380
+01:18:05,772 --> 01:18:24,232
+Mesela sistem kaynaklarının aşırı tüketimi, Java Virtual Machine'in alakalı bug'lar, sonra desteklenmeyen sınıf versiyonları gibi şeyler. Bunlar bir exception handling içerisinde fırlatabilen, ortaya çıkabilen hatalar.
+
+381
+01:18:24,891 --> 01:18:35,512
+Daha sonra runtime'da arkadaşlar, runtime tarafına bakacak olursak, şu class üzerinden diyoruz. Runtime'a bakacak olursak, mesela null pointer exception.
+
+382
+01:18:35,772 --> 01:19:01,492
+Şimdi bir dizi var. Birazdan bunun kodlarını yazacağım. Bu dizinin bir elemanına değer atayacaksınız. 10 elemanlı dizi. Ben kullanıcıdan işte bir 11 gireceğim. 11. elemana yazmaya çalışacağım. Program çalışırken C'de belki bunun hatasını almıyoruz ama burada bu hatayı alacağız.
+
+383
+01:19:01,492 --> 01:19:04,432
+Önce bir yeni proje oluşturalım
+
+384
+01:19:09,524 --> 01:19:10,583
+Başka örnek
+
+385
+01:19:10,583 --> 01:19:18,503
+Null pointer mesela şey pardon bu söylediğim index out of bounds exception. Null pointer şudur.
+
+386
+01:19:20,083 --> 01:19:27,883
+Hani çok fazla öğrencilerinde yaptığı işte bir sınıf içerisinde bir kitap referansı tuttunuz.
+
+387
+01:19:29,503 --> 01:19:33,524
+Bu tuttuğunuz sınıf bu referansa bir şey atamadınız.
+
+388
+01:19:34,524 --> 01:19:38,383
+Nesne atamadınız. Onu mesela ekrana bastırmaya çalışıyorsunuz.
+
+389
+01:19:39,524 --> 01:20:08,983
+Tamam mı? Bu da bir şeydir. Exception'dır. IO exception'lar var. Mesela bir dosyaya erişmeye çalışıyorsunuz. Ama dosyanın adını yanlış yazdınız. Bu bir şeydir. Sonra runtime'da Hasan'ın söylediği gibi bir şeyi bir şeye bölmeye çalışıyorsunuz. A bölü B yani 3'ü bir sayıya böleceksiniz. Kullanıcıdan iki sayı aldınız. Kullanıcı ikinci sayı bir sıfır girdi. Ne olacak? Division by zero şey olacak.
+
+390
+01:20:08,983 --> 01:20:18,123
+İşte bunların ele alınıp bunlara çözüm üretilmesi, exception handling kavramlarının içerisine giren şeyler.
+
+391
+01:20:18,924 --> 01:20:25,643
+Burada biz ayrıca kendimiz exception da tanımlayabileceğiz. Bugünkü dersimizde bunu da göreceğiz.
+
+392
+01:20:26,604 --> 01:20:30,923
+Yani diyeceğiz ki adı Ahmet olan bu dersi seçemez. Böyle bir exception tanımlasak.
+
+393
+01:20:30,924 --> 01:21:00,064
+Öğrenci dersi seçmeye çalıştığında ne yapacak? Ders eklenmeye çalışırken oldu da bir şey oldu. Ahmet diye birisi dersi eklemeye çalıştı. Ne yapacak? Sistem yöneticisine bir uyarı gönderecek. Mesela diyecek ki böyle birisi dersi eklemeye çalışıyor. Doğrudan eklenmesini engelleyebiliriz. Oldu da ekledi. Yani bir şekilde sağından geldi, altından geldi, üstünden çıktı, ekledi. Ne olacak? Burada bir koruma mekanizması sağlayıp
+
+394
+01:21:00,923 --> 01:21:07,443
+Yaşı 18'den küçükler mesela uygun değiller. Mesela böyle şey söylüyoruz ya. Bunun gibi exception'lar tanımlayabileceğiz.
+
+395
+01:21:07,443 --> 01:21:17,363
+Bununla alakalı aslında şu class hiyerarşisini iyi bilmek, nerede neyin olduğunu, bir de bazı keyword'lara onu iyi bilmek gerekiyor.
+
+396
+01:21:17,363 --> 01:21:44,783
+Bunlardan bir tanesi try, catch, finally blow şeyleri. Ondan sonra throws ve throw. 5 tane keyword var. Onları bildik mi hiçbir sıkıntı yaşamayız. Genel olarak zaten bu slide kapsamında çok fazla bir şey yok da bizim diğer slide'da birazcık detaylarına gireceğiz. Şimdi arkadaşlar önce şuna bakalım.
+
+397
+01:21:57,684 --> 01:21:59,143
+System.out.println
+
+398
+01:21:59,143 --> 01:22:03,723
+5 bölü 0 diyorum.
+
+399
+01:22:05,723 --> 01:22:06,524
+Ve bunu
+
+400
+01:22:06,524 --> 01:22:09,043
+run etmeye çalışıyorum.
+
+401
+01:22:10,703 --> 01:22:11,463
+Bakın program
+
+402
+01:22:11,463 --> 01:22:13,803
+derleme aşamasında
+
+403
+01:22:13,803 --> 01:22:16,143
+herhangi bir sorun
+
+404
+01:22:16,143 --> 01:22:17,243
+oluşturmadı.
+
+405
+01:22:17,923 --> 01:22:19,104
+Build Successful dedi.
+
+406
+01:22:23,104 --> 01:22:24,104
+Ve
+
+407
+01:22:26,868 --> 01:22:29,667
+Niye şey yapmadı bunu çalıştırmadık.
+
+408
+01:22:31,067 --> 01:22:32,587
+Run file diyelim.
+
+409
+01:22:37,619 --> 01:22:40,879
+Bir exception vermesini bekliyorum da bir dakika şöyle yapalım.
+
+410
+01:22:58,963 --> 01:23:00,643
+Niye output göremiyoruz?
+
+411
+01:23:22,323 --> 01:23:23,804
+Başka bir sıkıntı var bunda.
+
+412
+01:23:38,100 --> 01:23:50,100
+Bunları kapatayım arkadaşlar. Bir problem var. Close other diyelim. Rundan clean and build diyelim.
+
+413
+01:24:21,939 --> 01:24:51,919
+Bakın, aritmetik exception sınıfında bir division by zero şeyi aldık. Çalıştırmada bir problem var. Ne oluyor? Programın çalışması esnasında bu iş oluyor. Değerlenirken herhangi bir şey yok. Tamam mı? Burada sadece uyarı veriyor. Yani bu değişkeni hiç kullanmadın diyor. Hatta şuraya x'in değerini yazalım. Bununla alakalı bazı şeyle göreceğiz. Başka exception ne olabilir? İşte dizinin dışındaki bir elemana ulaşmaya çalışmalıyız.
+
+414
+01:24:51,939 --> 01:24:55,180
+integer a dedik. 10 diyelim.
+
+415
+01:24:59,719 --> 01:25:01,539
+Pardon, 10'u şuraya yazacağız.
+
+416
+01:25:17,171 --> 01:25:20,611
+A'nın 11. elemanına veya 10. elemanına
+
+417
+01:25:31,699 --> 01:25:38,759
+Tabi şu an ilk şeyde takıldığımız için ikinciye geçemedik. Şöyle yapalım.
+
+418
+01:25:44,404 --> 01:25:44,964
+Error var.
+
+419
+01:25:56,851 --> 01:26:21,631
+Bakın, index, out of bounds, exception, on. Siz eğer programınıza gittiniz, kurdunuz ve program çalıştı, yani executable hale getirdiniz, çalıştıktan sonra bu ekseki şeyi alırsanız şu işletim sistemine, şu hata işletim sistemine fırlatılıyor. İşletim sistemi size buna benzer bir şey, yani programınızdan böyle bir şey geldi diye size belirtiyor.
+
+420
+01:26:21,631 --> 01:26:24,071
+Genel olarak konu bu şekilde
+
+421
+01:26:24,071 --> 01:26:27,631
+Peki bunu exceptionlar bunlar
+
+422
+01:26:27,631 --> 01:26:32,631
+Yani dosyanın adının yanlış yazılması bir sürü farklı farklı exceptionlar var
+
+423
+01:26:32,631 --> 01:26:34,291
+Bu ortaya gelince ne yapacağız?
+
+424
+01:26:35,571 --> 01:26:38,631
+Şimdi arkadaşlar önemli tarafı burası bunun
+
+425
+01:26:40,011 --> 01:26:46,111
+Bir blog içerisinde try blogu içerisinde ve cache blogu içerisinde bu ikisini birbirinden ayıramayız
+
+426
+01:26:46,111 --> 01:26:52,931
+Hataya meyilli olan yani hata olma olasılığı olan kısmı yazıyoruz.
+
+427
+01:26:54,131 --> 01:26:58,091
+Dosyanın mesela bölme işlemi yapmayı denediyor aslında burada.
+
+428
+01:26:59,291 --> 01:27:05,131
+Burada olduğu da bir şey hata olursa otomatik olarak catch bloğuna düşüyor sistem.
+
+429
+01:27:06,171 --> 01:27:07,871
+Ve bundan sonraki satırlar işlenmiyor.
+
+430
+01:27:07,871 --> 01:27:08,991
+Mesela burada 10 satır var.
+
+431
+01:27:09,091 --> 01:27:10,712
+Üçüncü satırda bir exception oldu.
+
+432
+01:27:11,391 --> 01:27:12,072
+Şuradan devam ediyor.
+
+433
+01:27:12,131 --> 01:27:13,171
+Ve programımız kapanmıyor.
+
+434
+01:27:13,171 --> 01:27:19,831
+kapanmadığı için aşağıdan, keçten sonra işlem devam edip gidecek. Önce bunu bir görelim.
+
+435
+01:27:24,948 --> 01:27:25,787
+Rheinlik.
+
+436
+01:27:29,395 --> 01:27:31,295
+Bunun otomatik şeyi de vardı da.
+
+437
+01:27:32,856 --> 01:27:41,115
+Şimdi catch kısmında nasıl bir exception geldiğini görmek için exception sınıfından bir e referansıyla bunu almak gerekiyor.
+
+438
+01:27:41,776 --> 01:27:42,935
+Şurada da south diyorum.
+
+439
+01:27:43,335 --> 01:27:44,735
+e.toString diyelim.
+
+440
+01:27:52,595 --> 01:27:54,255
+hatamızı görmeye çalışalım.
+
+441
+01:27:59,091 --> 01:28:27,591
+Peki burada yapacağımız şey ne olacak? İşte hata olması durumunda olma olasılığı olan şey x eşittir. 5 bölü 0 diyorum. Şimdi şurada dikkat edin. South. Önce dedim. South. Sonra dedim. Buradan çıkıyorum. South. Program bitti diyorum.
+
+442
+01:28:29,091 --> 01:28:48,071
+Normalde şu hata olunca biraz önce ne oldu? Program tamamen kapandı. Şöyle bir mesaj gördük. Ama burada öyle bir şey olacak ki önceyi göreceğim. Şunu görünce şuraya geleceğim. Şu kısımdan bir hata, garip garip mesajlar alacağım. Şunlara benzer. Sonra program bitti göreceğim. Sonrayı hiç görmeyeceğim.
+
+443
+01:29:03,828 --> 01:29:17,607
+Önce dedi, böyle bir hata aldı dedi ve program bitti dedi. Try ve catch. Try'ı yazayım, catch'ı yazmayayım olur mu? Olmaz. Bunlar birbirinden ayırılmıyor. Tamam mı? İyi kısım bununla alakalıydı.
+
+444
+01:29:18,987 --> 01:29:29,707
+Şimdi siz bir metodun, yani diyor ki a program may opt to not handle a checked exception.
+
+445
+01:29:29,707 --> 01:29:40,188
+Yani bir programcı bir eksepşini, kontrollü bir eksepşini handle etmek isteyebilir.
+
+446
+01:29:41,807 --> 01:29:45,828
+Bu ama bunu sonunda yapmak zorunda.
+
+447
+01:29:46,067 --> 01:29:48,347
+Yani bunu illaki yapmak durumundayız.
+
+448
+01:29:50,008 --> 01:29:57,907
+Bir metodun içerisine throws yazdığımızda ve buna bir eksepşin belirttiğimizde
+
+449
+01:29:57,907 --> 01:30:01,867
+İşte bu metot IOException fırlatabilir.
+
+450
+01:30:02,047 --> 01:30:04,507
+İşte boundaryException fırlatabilir.
+
+451
+01:30:04,667 --> 01:30:06,267
+Böyle bir sınıf bilgisi yazacağız.
+
+452
+01:30:07,387 --> 01:30:10,467
+Ve buraya ilgili metotlarımızı yazacağız.
+
+453
+01:30:10,548 --> 01:30:11,508
+Birazdan örnekleri var.
+
+454
+01:30:12,567 --> 01:30:21,467
+Bu durumda bu kişi bunu A metodunu çağırdığında ne yapacak?
+
+455
+01:30:21,548 --> 01:30:23,567
+Bunu try içerisinde kullanması gerekecek.
+
+456
+01:30:24,587 --> 01:30:25,847
+Handle etmek istemesi bile.
+
+457
+01:30:25,847 --> 01:30:28,167
+örneklerine bakacağız.
+
+458
+01:30:30,247 --> 01:30:40,447
+Eğer ki birden fazla exception olma olasılığı varsa şurada ne bileyim yani birinden kurtuldunuz öbürü exception olabilir.
+
+459
+01:30:40,447 --> 01:30:42,287
+Mesela burayı 5 bölü 1 yapalım.
+
+460
+01:30:44,767 --> 01:30:47,247
+Şurada da bir dizi oluşturalım.
+
+461
+01:30:59,028 --> 01:31:01,067
+Şurada sonra bir diyelim.
+
+462
+01:31:05,363 --> 01:31:09,563
+A'nın 5. elemanını 9 yapalım.
+
+463
+01:31:13,043 --> 01:31:38,163
+Şimdi bu exceptionları birden fazla şekilde hiyerarşik bir şekilde aşağıya doğru yazabilirsiniz. Şimdi bu bir exception, genel bir türde. İstersek buraya IO exception dediğimiz daha alt türde olan herhalde şuydu şeyini unuttum.
+
+464
+01:31:38,163 --> 01:31:41,363
+An exception demiş.
+
+465
+01:31:44,363 --> 01:31:45,683
+Şöyle olacak.
+
+466
+01:31:47,943 --> 01:31:49,363
+Hayır exception olacak herhalde.
+
+467
+01:31:49,463 --> 01:31:50,303
+Ya da neymiş bakalım.
+
+468
+01:31:54,931 --> 01:31:56,371
+Great class.
+
+469
+01:32:02,260 --> 01:32:05,179
+Mr. Schneider, uh, we saw ya.
+
+470
+01:32:10,963 --> 01:32:18,404
+IO, exception. Gerçi bu RAM tabi exception olduğu için bunu kapsıyor. Ondan dolayı da izin vermiyor.
+
+471
+01:32:21,503 --> 01:32:28,943
+Böyle bir şey de yapabiliriz. Şimdi birazdan başka örnekler üzerinde de bakacağım. Şuraya bir başka exception ismi verirsek orada da onu yazabiliriz.
+
+472
+01:32:29,823 --> 01:32:40,103
+Bunu geçtim. Şöyle bir şey yazdığımızda bundan kurtuldu. Buna geldi. Yine bu genel bir exception olduğu için, üst sınıf olduğu için burada da bu çalışır.
+
+473
+01:32:40,103 --> 01:32:42,043
+Ama gelen mesaj farklı olacak.
+
+474
+01:32:42,663 --> 01:32:44,063
+Bakın aritmetik bir dakika.
+
+475
+01:32:44,203 --> 01:32:46,083
+Tabi tekrar bunu şey yapacağız.
+
+476
+01:32:48,103 --> 01:32:49,623
+Clean and build diyelim.
+
+477
+01:32:50,583 --> 01:32:52,523
+Niyeyse benim eğitimde bir sıkıntı oldu.
+
+478
+01:32:52,923 --> 01:32:54,523
+Bunu çözemedim bir türlü.
+
+479
+01:33:09,908 --> 01:33:19,927
+Bakın, index out of bounds exception oldu. Yani sonra birden geçti, burayı kurtardık. Sonra ikiye geçemedik, program bitti dedi.
+
+480
+01:33:23,220 --> 01:33:27,620
+Ona bir kırsatsam birazdan daha detaylı
+
+481
+01:33:36,916 --> 01:33:56,936
+Şimdi bu ne için kullanılıyor? Mesela her işlem için ayrı ayrı bir try bloğu değil de eğer böyle bir kısa bir algoritmanız var, o algoritma içerisinde olası iki tane durum var. O olası iki durum için ayrı ayrı ayrı try yazmak yerine bir tane try, iki tane catch yazıp diğer hatalarla uğraşabiliyorsunuz.
+
+482
+01:34:04,595 --> 01:34:23,036
+Şimdi burada e.printstacktrace metoduna eklersek bu şeyler, exceptionlar hangi sırayla olmuş? İç içe bir sürü exception olabilir. Bunları loglayabiliyorsunuz şunu yazarak. Bu çok önemli değil aslında ama neyse yani bazı yerlerde kullanılıyor.
+
+483
+01:34:23,036 --> 01:34:45,456
+Mesela exception oldu. Listeniz var ve programınızı kapatmanız gerekecek. Yani şurada olduğu gibi program bitecek. Biz burada diyebiliriz ki şu kaynakların release edilmesi yani değişkenlerin garbage collector'ün çağrılmasını söyleyebiliriz.
+
+484
+01:34:45,456 --> 01:34:50,936
+Veri tabanına bağlantınız var. Veri tabanı bağlantısını kapatırsınız burada.
+
+485
+01:34:51,415 --> 01:34:56,415
+Ben ne bileyim şey kapatırsınız. Dosyaya eriştiniz. Dosyaya erişimi kapatabilirsiniz.
+
+486
+01:34:56,656 --> 01:35:01,735
+Bu tarz işlemler keçiş içerisinde yapılabilir. Ama bundan daha güzeli bir de buna final eklemek.
+
+487
+01:35:03,195 --> 01:35:04,776
+Hata olsun veya olmasın.
+
+488
+01:35:08,948 --> 01:35:20,167
+Ben bütün program kapanınca, bakın hata olsa da olmasa da, bütün bir programla alakalı işlemlerim bitince yapacağım işlemleri buraya yazabiliyorum.
+
+489
+01:35:21,007 --> 01:35:24,567
+Mesela burada dosyaya erişimi kapatmak isteyebiliriz.
+
+490
+01:35:25,727 --> 01:35:27,548
+Close, file, access.
+
+491
+01:35:29,067 --> 01:35:31,868
+Veri tabanına erişimi kapatmak isteyebiliriz.
+
+492
+01:35:31,967 --> 01:35:35,907
+Ve ne bileyim, şuradaki dizi üzerindeki yaptığımız işlemi düzeltmek isteyebiliriz.
+
+493
+01:35:35,907 --> 01:36:01,727
+Hata olsaydı zaten şurada dosyayı kapatacaktım. Hata olmasaydı yine burada dosyayı kapatacaktım. Yani program cache bitecekti, program bitti diye gelecektim. Onun yerine hata olsa da olmasa da diyoruz ki dosyaya erişimleri kapat gibi şeyler kalır. Finalı böyle bu işi yapabiliyoruz. Bakın 3 tane keyword oldu. Try, cache, finalı. Şimdi bunlara bir de diğer kısımlar gelecek.
+
+494
+01:36:01,727 --> 01:36:07,007
+Birkaç tane de keyword ekleyeceğiz.
+
+495
+01:36:10,644 --> 01:36:13,483
+Önce şuradaki örneğe bir bakalım.
+
+496
+01:36:14,683 --> 01:36:18,203
+IO exception. Biz biraz önce bu IO exception'ı niye yakalayamadık?
+
+497
+01:36:21,587 --> 01:36:27,387
+Neyse, birazdan bakarsınız. Bu örnekten yola çıkarak şuradaki slide bitirelim, öbürüne geçeriz.
+
+498
+01:36:28,907 --> 01:36:33,707
+Şimdi, parseMyCatFile diye bir metot varmış.
+
+499
+01:36:35,548 --> 01:36:39,987
+Bir dosya ismi alıyor, dosya isminin içe dosyayı açıyor.
+
+500
+01:36:40,487 --> 01:36:45,247
+Dosya içinden resimler varmış. Resimleri bir diziye alacak.
+
+501
+01:36:46,188 --> 01:36:49,747
+Sonra resimleri, drawfigür dediği bir şey yapacak.
+
+502
+01:36:49,747 --> 01:37:19,567
+Böyle bir kurgu var burada. Dosyayı kapatacak. Oldu da şurada bir hata oldu. Mesela bin tane resim açacaksınız. Tabi burada resim açma uygulaması yok da sadece bir kurgu bu. Resimlerin dosya isimlerinden bir tanesi yanlış yazılmış. Çünkü burada bir liste yani file name gibi bir şey var. O zaman ne olacak? Buradaki bir dosya açılamayacak. Açılamayınca dosya okunamayacak. İşte şunlardan birinde bir yerde hata olacak. Onun için bu blog try altında.
+
+503
+01:37:19,747 --> 01:37:45,427
+Bu bir I.O. olduğu için ve bu I.O. ısnasında oluşan bir hatadan dolayı ne yapıyoruz? Programı burada kapanmasın diye getiriyoruz buraya çalıştırıyoruz ve sitem alt print alan işte dosyadı şu dosya açılamadı işte okunurken veya açılırken gibi bir hata yazdık. Bu hatayı da hata oluşma listesine siteye ekliyoruz.
+
+504
+01:37:45,427 --> 01:38:10,507
+Bu multi-thread sistemin exit olması, kapatılmasını sağlıyor. Mesela sistemi kapat diyoruz. Bu işlem yapılırken mesela release resource dediğimiz yani böyle bir metot var. Ne bileyim bu bir sürü resim dosyası açıldı. Bellekte bir sürü yer kaplıyor. Belleyi fazla şişirmemek için kaynakları bırak dediniz veya dosyayı kapat dediniz. Bir işlemi final'da yapabiliyorsunuz.
+
+505
+01:38:10,507 --> 01:38:24,808
+Tamam mı? Bu basit bir exception örneği de. Biz ayrıca arkadaşlar kendimiz bir exception klası oluşturup kendi exception'ımızı tanımlayabileceğiz.
+
+506
+01:38:24,987 --> 01:38:39,808
+Bunun için IO exception'dan veya başka bir sınıftan kalıtım alarak, kalıtım almak durumundayız. Kendi klasımızı oluşturuyoruz. Bunun bir constructor var. Constructor'ını süper yazıyoruz ki üst sınıfın
+
+507
+01:38:39,808 --> 01:39:04,688
+şeylerini kullanabilelim. Sonra diyoruz ki bir tane metodumuz var. MyFileFormatException. Bu bir error mesajı alacak. Bu format exception'e göre bir süper sınıfında bir error mesaj şeyi yazacak. Burada istediğimiz şeyleri yazıp böyle bir kendimiz class tanınayabiliriz. Birazdan örnekleriyle daha iyi anlaşılır.
+
+508
+01:39:04,687 --> 01:39:31,607
+Mesela bir program process file diye bir şey var. Şimdi burada ben önce exception'ımın türünü oluşturdum. Bu exception'ımı artık tanımlayacağım. Nasıl ki şurada IA exception olabilir dedik. Burada da diyoruz ki throws kelimesiyle benim programımın altında bir metodum var. Bu metot şu tarzda bir şey fırlatabilir, oluşturabilir.
+
+509
+01:39:31,607 --> 01:39:54,647
+İşte some statement'lar yazdınız. Burada mutlaka bir if. Hani biraz önce Mustafa dedi ya hatadan kaçınmak için if. İşte burada da yine bir if kullanıyoruz. Beklenmeyen bir durum olursa yeni bir keyword, bu keyword ile şu tarzdan bir exception meydana geldi. İşte bula bula meydana geldi. Bunu yazacağız.
+
+510
+01:39:54,647 --> 01:39:58,727
+Bakın, throws, metodun tanımında kullanılan bir şey
+
+511
+01:39:58,727 --> 01:40:03,888
+Throw, if ile beraber hatayı üretmek ve new ile beraber kullanılıyor
+
+512
+01:40:03,888 --> 01:40:05,787
+Böyle bir nesne üreten bir şey
+
+513
+01:40:05,787 --> 01:40:08,248
+Genel yazılım bu şekilde
+
+514
+01:40:08,248 --> 01:40:12,888
+Burada mesela
+
+515
+01:40:13,619 --> 01:40:37,239
+hepsini, buradaki gördüğümüz her şeyi bir örnek üzerinde yapalım demişiz. Şimdi bir classımız var. Impossible info dediğimiz IO exception varmış. Bu IO exception'a bir hata mesajı alacak ve bunu üst sınıftan yani impossible info IO exception'a gönderecek böyle bir hata olduğunda. Bu benim kendi hata türü.
+
+516
+01:40:37,239 --> 01:40:40,879
+Geldik şuraya.
+
+517
+01:40:41,219 --> 01:40:43,659
+İşte bir kişi bilgimiz var.
+
+518
+01:40:43,859 --> 01:40:46,119
+İşte şunlar klasik kişiye ait şeyler.
+
+519
+01:40:46,539 --> 01:40:49,059
+Yaş bilgisi set edeceğiz.
+
+520
+01:40:49,059 --> 01:40:54,480
+Ama diyoruz ki bu impossible info türünden bir şey olabilir.
+
+521
+01:40:55,660 --> 01:40:56,859
+Bunu söylüyoruz.
+
+522
+01:40:57,499 --> 01:41:01,359
+Ve içeride de diyoruz ki eğer yaş sıfırdan küçükse, 150'den büyükse
+
+523
+01:41:01,359 --> 01:41:27,840
+Throw new impossible info yani şu san bir hata fırlat ve orada nesne üretirken bakın constructor'ını çağırmaktır bu aslında. Şu mesaj nereye geliyor? Şuradaki constructor'a kopyalanıyor. Bu nereye gidiyor? IO exception'a gidiyor. Bu normal bir mesajdan farklı olarak biraz önce yazıldığı şekilde kırmızı yazılıyor. Yani bir hata yazılıyor.
+
+524
+01:41:27,840 --> 01:41:37,480
+ve bu metodun nerede kullanılırsa kullanılsın try içerisinde kullanılması hata olduğu durumda keçe düşmesi gerekiyor.
+
+525
+01:41:37,800 --> 01:41:38,520
+Şimdi ona geleceğiz.
+
+526
+01:41:39,579 --> 01:41:40,380
+Bakın ne yapmış?
+
+527
+01:41:41,060 --> 01:41:47,380
+İşte main içerisinde ben şu metodu kullanacağım set age'i kullanacağım set age'i kullanırken bunu try içerisinde kullanır.
+
+528
+01:41:47,439 --> 01:41:49,259
+Artık çünkü burada ne var?
+
+529
+01:41:49,360 --> 01:41:50,920
+Bir exception olma ihtimali var.
+
+530
+01:41:52,179 --> 01:41:53,200
+Bunu yazdı.
+
+531
+01:41:53,199 --> 01:42:07,919
+Eğer bir hata olduysa bu hatanın türü impossible info. Yani bizim şurada tanımladığımız sınıf türünden olacak dedik. Bunu işte Prince Take Trace'e yazmış ve daha sonra inputu close yapmış.
+
+532
+01:42:07,919 --> 01:42:23,359
+input dediğimiz yani klavyeden veri girmeyle alakalı inputu close yapıyor. Final de şey yapmıyor. Hata olmazsa problem yok. Hata olursa şurada bizim yazdığımız şu mesaj impossible age işte yaşı kaç girdiyse o age bilgisi buraya kopyalanıyor.
+
+533
+01:42:23,359 --> 01:42:25,739
+Burada ne varmış?
+
+534
+01:42:29,332 --> 01:42:37,191
+Bu zamanımız var. Hocanın kendi notuymuş. Biz ayrıca genel işleyiş bu şekilde. Burada anlaşılmayan bir şey var mı?
+
+535
+01:42:38,832 --> 01:42:50,092
+Gelelim biz şuradan diğer slide'dan kapatayım. Burada da nereye geldik? Typecasting'e geldik. 173 diye...
+
+536
+01:42:56,435 --> 01:42:57,635
+173
+
+537
+01:43:01,108 --> 01:43:02,228
+Typecast
+
+538
+01:43:02,228 --> 01:43:07,068
+Akte ya da dersimiz olmayacağı için bugün bu konuyu bitirmemiz gerekiyor.
+
+539
+01:43:08,347 --> 01:43:09,227
+Şimdi
+
+540
+01:43:09,227 --> 01:43:13,147
+Konu şu
+
+541
+01:43:13,147 --> 01:43:16,307
+İfadeler arda arda geliyor
+
+542
+01:43:16,307 --> 01:43:21,708
+Statement 5'e geldiğimizde oldu da bir hata oldu.
+
+543
+01:43:22,407 --> 01:43:24,007
+Yani böyle bir şey oldu.
+
+544
+01:43:24,247 --> 01:43:25,147
+Şimdi bu koda göre
+
+545
+01:43:25,147 --> 01:43:27,847
+Program devam eder mi?
+
+546
+01:43:27,927 --> 01:43:29,788
+6, 7, 8 devam eder mi arkadaşlar?
+
+547
+01:43:31,108 --> 01:43:34,168
+Hayır etmez
+
+548
+01:43:34,168 --> 01:43:35,508
+Etmez
+
+549
+01:43:35,508 --> 01:43:38,008
+Ama biz devam etmesini istiyoruz
+
+550
+01:43:38,008 --> 01:43:44,847
+Peki bu statement 5 dediğimiz yerde neler olabilir?
+
+551
+01:43:45,308 --> 01:43:47,227
+Şöyle bir aritmetik exception olabilir
+
+552
+01:43:47,227 --> 01:43:50,128
+Null pointer exception dediğiniz bakın çok güzel
+
+553
+01:43:50,128 --> 01:43:51,667
+Bir string değişkenimiz var
+
+554
+01:43:51,667 --> 01:43:54,608
+Bunun uzunluğunu ekrana bastırmaya çalışıyoruz
+
+555
+01:43:54,608 --> 01:43:56,987
+Öyle bir string olmadığı için buradan hata alırız
+
+556
+01:43:56,987 --> 01:44:02,707
+Başka işte biraz önce number format exception dediğimiz bir hata olabilir.
+
+557
+01:44:02,967 --> 01:44:05,687
+İşte abc dedik bunu integer'a dönüştürmeye çalışıyoruz.
+
+558
+01:44:06,547 --> 01:44:10,207
+İşte 5. elemana 10. elemana dizinin dışına erişmeye çalışıyoruz.
+
+559
+01:44:11,007 --> 01:44:17,347
+Bunlar şu 5. satırda yazılmış olsaydı 6, 7, 8'i göremeden programı kapatacaktık.
+
+560
+01:44:17,347 --> 01:44:25,087
+Bunun yerine exception'ı handle edersek şuradaki keywordları kullanarak ne yapabiliriz?
+
+561
+01:44:25,087 --> 01:44:32,687
+Hatamızı bir şekilde üstesinden gelip 6, 7, 8. blokları görmemizi sağlayabiliriz.
+
+562
+01:44:34,107 --> 01:44:39,427
+Try burada try keyword'ü hata olması durumları sağlamak içindi.
+
+563
+01:44:40,087 --> 01:44:40,627
+Burada ne yapıyor?
+
+564
+01:44:42,767 --> 01:44:46,267
+Programı çalıştırdığımızda rest of the code kısmı çalışmayacak.
+
+565
+01:44:46,267 --> 01:44:49,067
+Çünkü şuradan bir hata olduğu için buradan böylece kalacağız.
+
+566
+01:44:49,187 --> 01:44:50,247
+Bunlar basit olduğu için yazmıyorum.
+
+567
+01:44:50,247 --> 01:44:57,947
+Ama ben biraz önce yazdığımız gibi böyle bir şey olduğunda kodun devamını görmek istiyorsam ne yaptı?
+
+568
+01:44:58,048 --> 01:45:01,067
+Cache kısmında bir hatayı yakaladı.
+
+569
+01:45:01,788 --> 01:45:06,548
+Cache'ten sonra da sistem out printlerine geri kalan şeyi yazdı, bitti.
+
+570
+01:45:07,328 --> 01:45:08,887
+Bunlar biraz önce gördüklerimizin aynısı.
+
+571
+01:45:09,747 --> 01:45:15,887
+Eğer ki multi-cache kullanacaksak, yani burada hata olması durumları neler var?
+
+572
+01:45:16,247 --> 01:45:18,307
+Şuradan bir dizi tanımlanıyor.
+
+573
+01:45:18,307 --> 01:45:20,447
+Tamam bu dizide pek bir hata olmaz.
+
+574
+01:45:21,447 --> 01:45:22,987
+Ama şurada 30 bölü 0 var.
+
+575
+01:45:23,087 --> 01:45:26,707
+Şimdi 30 bölü 0 önce yapılacak sonra Array'in 5'ine atılacak.
+
+576
+01:45:27,727 --> 01:45:31,408
+Burada 30 bölü 0 yapılırken bir exception fırlatılıyor.
+
+577
+01:45:31,507 --> 01:45:32,968
+O exception bizi nereye götürüyor?
+
+578
+01:45:33,688 --> 01:45:36,647
+Aritmetik hepsi exception'a, task 1 completed'a götürüyor.
+
+579
+01:45:36,727 --> 01:45:37,747
+Yani şunu görüyoruz.
+
+580
+01:45:38,667 --> 01:45:43,447
+Bu yapılmadığı için, bakın bu tamamlanmadığı için atama işlemi yapılmıyor.
+
+581
+01:45:43,447 --> 01:46:11,127
+ve program kapanmadan yani bunun ataması bir kere olmayacak hani o kesin ama program tamamlanma diğer cache'lere de girmiyor çünkü diğer cache'ler burada işi yok diğer exception'lardan biri oluşmadı. Rest of the code'u görüyoruz. Eğer 30 bölü 1 yazsaydım ne olacaktı? İkinci şeye düşecektik şu exception'a düşecektik ve ikinci exception'a düştükten sonra rest of the code'u görecektik.
+
+582
+01:46:11,127 --> 01:46:23,127
+Burada yapılacak olan şey biraz önce belki yanlış yazdım. Özelden genele doğru yazmak gerekiyor diye biliyorum. Burada da öyledir.
+
+583
+01:46:25,867 --> 01:46:39,907
+Most, from most specific to general. Yani şu exception'ı yazdığımızda, ondan sonra aritmetik exception yazdığımızda, biraz önce şurada aldığımız hata tam tersten yazmamız.
+
+584
+01:46:39,907 --> 01:46:44,947
+sketch, IO exception,
+
+585
+01:46:49,235 --> 01:46:52,895
+Bunu alıp mesela şuraya yazarsak
+
+586
+01:47:00,467 --> 01:47:02,328
+cannot find Sambole.
+
+587
+01:47:05,844 --> 01:47:07,483
+Şunu import edeceğiz.
+
+588
+01:47:12,692 --> 01:47:29,511
+Şimdi body of. Ha tabi burada IO ile alakalı bazı şeyler yazmamız gerekiyor. O da ayrı mezun. Yani onu yazmak gerektiğini söylüyor. Şurada öyle bir şeyin olması gerektiğini ifade ediyor. Veya burada aritmetik diyelim.
+
+589
+01:47:36,532 --> 01:47:51,691
+Bunu bu şekilde yazınca sıkıntı yok. Ama şöyle alırsak ne olacak? Bu ifade zaten diyor ki şunun içerisinde var. Bu bunu kapsıyor. Onun için gereksizliyor. Yani bunu özelden genele yazmak zorundayız.
+
+590
+01:47:54,071 --> 01:48:02,391
+Buraya kadar herhalde sıkıntı yoktur. Şimdi gelelim iç içe try işlemin yapılmasına.
+
+591
+01:48:02,391 --> 01:48:17,571
+Yani bir try'in içerisinde bir başka try yapabilir miyiz? Bununla alakalı bir şeylere bakalım. Şu kodu burada kopyalayayım. Exception 1 Java. Neredeydi bu örnek?
+
+592
+01:48:51,091 --> 01:48:55,191
+burada çok şey yok aslında neyse şöyle kopyalayalım.
+
+593
+01:48:56,211 --> 01:49:00,052
+Bunu kopyalıyorum işte bunu direkt aynısını yazdığım için tekrar şey yapmayacağım.
+
+594
+01:49:03,631 --> 01:49:06,071
+Şunları düzeltelim. Change.
+
+595
+01:49:12,083 --> 01:49:16,203
+Bakın burada arkadaşlar dışarıda bir catch, try işlemi var.
+
+596
+01:49:16,643 --> 01:49:17,443
+Exception olarak.
+
+597
+01:49:18,163 --> 01:49:21,623
+İçeride işte bir bölme işlemi yapılacaktır diyor.
+
+598
+01:49:22,583 --> 01:49:23,603
+Bunu yapmaya çalışıyor.
+
+599
+01:49:23,703 --> 01:49:27,203
+Buradan bu yapılmayınca gidiyor bunu şuraya diyor.
+
+600
+01:49:28,243 --> 01:49:31,483
+Bu yazıldıktan sonra program buradan devam ediyor.
+
+601
+01:49:31,684 --> 01:49:32,604
+Bu işlem olmayacak.
+
+602
+01:49:34,023 --> 01:49:34,983
+Bir dizi oluşturdu.
+
+603
+01:49:35,203 --> 01:49:37,103
+Burada bound hatası aldı.
+
+604
+01:49:37,103 --> 01:49:38,803
+Bu hatadan dolayı gitti.
+
+605
+01:49:38,924 --> 01:49:39,583
+Bunu yazdı.
+
+606
+01:49:40,203 --> 01:49:42,023
+Sonra other statement dedi.
+
+607
+01:49:42,083 --> 01:49:57,984
+Sonra cache exception bir hata olsaydı handled şu kısma bakacaktı. Sonra da normal yoldan devam edeceğiz. Bunu bir önce clean and debug diyelim.
+
+608
+01:50:04,564 --> 01:50:33,763
+Java, class, object,
+
+609
+01:50:09,587 --> 01:50:34,348
+bölmeye gitti. Arithmetic, exception, divide by zero, bound exception aldı. Other statement dedi. Handled demedi. Yani şurada arada başka bir yerde şey olmadı mesela şuradaki işlemlerde. Onun için şuradaki exception'a düşmedi ve normal akışına program devam etti. Program normal bir şekilde tamamlanmış oldu. Bu şekilde try bloklarını iç içe de kullanabiliyoruz.
+
+610
+01:50:34,348 --> 01:50:41,028
+Ama şu şekilde yazdığımızda eğer birden fazla catch yazacaksak ArrayList'e dikkat etmemiz lazım.
+
+611
+01:50:47,923 --> 01:50:51,644
+Finally de işte bu konuştuğumuz şey sürekli yapılacak şeyler.
+
+612
+01:50:58,355 --> 01:51:17,696
+Şimdi neymiş case? Okuyalım. Bir exception'ın olmadığı durumda. Ne olacak? Bu finally broke tasarlanacak. Exception'ın olduğu durumda ve exception olursa ve handle edilmezse.
+
+613
+01:51:18,696 --> 01:51:26,915
+Şimdi exception oldu ama handle edilmedi. Ne demek bu? Demek ki yanlış bir exception handling yazıldı.
+
+614
+01:51:26,915 --> 01:51:50,135
+Mesela burada oluşacak exception nedir? Divide by zero. Burada yazılacak handle kod ne? Null pointer. Yani bunun şeyini bulacak bir cache bloğu yok. Cache bloğu olmadığı için final block çalışacak ama ondan sonra ne yapılacak arkadaşlar? Şöyle bir exception olup programın çalışması sonlandırılacak. Rest of the code'u görmeyeceğiz.
+
+615
+01:51:50,135 --> 01:52:16,296
+Yani böyle bir durum var. İlgili exception yazmak zorundayız. Ya genel bir exception yazacağız. Yani exception yazarsanız olur. Ama spesifik yazdığınızda buna dikkat etmek gerekiyor. Bir üçüncü durumda exception oldu ve handle edildi. Yani aritmetik exception yazdık, doğrusunu yazdık. O zaman final'dan sonra rest of the code çalışacak ve program tamamlanacak.
+
+616
+01:52:16,295 --> 01:52:30,655
+Şimdi gelelim troll keywordüne. Onun için şuradaki test troll kolunu yazalım. Bunu sıfırdan yazacağım.
+
+617
+01:52:34,836 --> 01:52:38,275
+test row one.
+
+618
+01:52:41,971 --> 01:52:53,251
+Şimdi burada hani todu kendimiz yazalım. Main'i de içerisinde olsun. Uzun uzun şey yapmayalım. Bir static metot yazıyorum. Validate diye.
+
+619
+01:52:54,151 --> 01:53:00,711
+Oraya bir yaş bilgisi alacağım arkadaşlar. Bakın throw, throw değil. Dikkat edelim burada.
+
+620
+01:53:00,711 --> 01:53:24,251
+Throws çünkü bir eylem belirtiyor. Geniş zamanla eylem belirtiyor. Yani yapar. Throws emir bildiriyor. Fırlat demek istiyor. Yani hata üret. Diyoruz ki burada if. Mutlaka bir if gibi bir şey kullanmak gerekiyor. Mantıki olarak. Yani bir şeyin istisna olup olmadığını kontrol ederken.
+
+621
+01:53:24,251 --> 01:53:26,591
+yazamadık.
+
+622
+01:53:27,431 --> 01:53:28,631
+age küçük 18
+
+623
+01:53:28,631 --> 01:53:31,591
+diyoruz ki
+
+624
+01:53:31,591 --> 01:53:32,251
+throw
+
+625
+01:53:32,251 --> 01:53:34,451
+new
+
+626
+01:53:34,451 --> 01:53:37,091
+arithmetic
+
+627
+01:53:44,595 --> 01:54:06,356
+ve de ki buna not valid diyelim. Geçersiz. Değilse mesela welcome oylamaya hoş geldiniz. Yani oy kullanabilirsiniz veya kullanamazsınız. O zamanlar seçim vardı herhalde. Bu örneği öyle bir şey için yapmıştım.
+
+628
+01:54:06,356 --> 01:54:15,856
+Evet, validate metodumuzun yaptığı şey bu.
+
+629
+01:54:15,856 --> 01:54:31,636
+Şimdi geldik, main metodumuzu yazalım buraya, public, yani bunu hemen test etmek için, static, weight, main diyorum, string, argument, string.
+
+630
+01:54:36,659 --> 01:54:51,959
+Diyorum ki Validate 13'ü test et. Şurada da rest of the code. Şimdi program nasıl çalışacak birinize soralım bakalım. Çağdaş Çetin.
+
+631
+01:54:56,340 --> 01:54:57,739
+Çağdaş Çetin.
+
+632
+01:54:59,239 --> 01:55:00,740
+Emre Urcu.
+
+633
+01:55:06,355 --> 01:55:07,716
+Oğuzhan Ercan
+
+634
+01:55:11,380 --> 01:55:13,820
+16 olduk. Semih yazıcı.
+
+635
+01:55:15,679 --> 01:55:17,759
+Buradayım hocam.
+
+636
+01:55:17,939 --> 01:55:18,279
+Semih.
+
+637
+01:55:18,820 --> 01:55:24,619
+Validate fonksiyonunu 13'e yolladığımız zaman age 18'en küçük olduğu için exception'ı üretecek.
+
+638
+01:55:25,539 --> 01:55:26,699
+Buraya girecek.
+
+639
+01:55:26,979 --> 01:55:27,739
+Exception'la
+
+640
+01:55:27,739 --> 01:55:32,140
+Stegm'i ürettikten sonra herhalde exception ürettiği için
+
+641
+01:55:32,140 --> 01:55:33,679
+Sistem altı da gösterecek.
+
+642
+01:55:33,779 --> 01:55:35,220
+Yani rest altı kodu da gösterecek.
+
+643
+01:55:36,019 --> 01:55:37,859
+Bir dakika. Exception'ı handle ettik mi?
+
+644
+01:55:39,819 --> 01:55:40,499
+Doğru.
+
+645
+01:55:41,380 --> 01:56:06,420
+Etmedik değil mi? Exception ürettik. Etmediğimiz için program patlayacak yani tabiri caizse. Ve ne olacak? Biraz önce gördüğümüz mesajlara benzer. Aritmetik exception not valid diye bir hata göreceğiz. Çünkü bunu try içerisinde yazmadım. Öyle değil mi? Anlaşıldı mı şimdi? Evet hocam anlaşıldı.
+
+646
+01:56:06,420 --> 01:56:09,100
+Şimdi çalıştıralım.
+
+647
+01:56:16,372 --> 01:56:18,291
+Tabii niye bunu görüyoruz? Şunu göreceğiz.
+
+648
+01:56:19,511 --> 01:56:20,331
+Round file.
+
+649
+01:56:21,252 --> 01:56:29,731
+Bakın ne oldu? Direkt aritmetik exception not weighted mesajıyla karşılaştık ve program devam etmedi. Halbuki ben şöyle yapsaydım.
+
+650
+01:56:31,311 --> 01:56:34,171
+Birazdan konuşan. Yani bunu bir try içerisine alsaydım.
+
+651
+01:56:36,011 --> 01:56:37,632
+Ona göre valid et deseydim.
+
+652
+01:56:39,632 --> 01:56:43,171
+Try'i kullanınca keçi mutlaka kullanmak zorunda olduğumu da biliyorum.
+
+653
+01:56:43,171 --> 01:56:49,571
+Keçin de burada şunu bilsem ki hangi tür exception üretecek?
+
+654
+01:56:52,392 --> 01:56:54,031
+Şimdilik e diyelim de
+
+655
+01:56:54,031 --> 01:56:56,372
+start
+
+656
+01:57:02,579 --> 01:57:13,679
+e.toString diyelim. Bunu yapalım, bir ara vereceğiz. Bu exception'ı ekran yazdırsaydım o zaman işler daha güzel olacaktı.
+
+657
+01:57:26,195 --> 01:57:36,036
+Evet, not valid, rest to code. Şu ne peki? E.printstack.race. Şimdi onu da bir görelim.
+
+658
+01:57:48,692 --> 01:58:04,271
+Bakın ne yapıyor? Oluşan hataları program çalıştıktan sonra bu programın çalışması esnasında bazı hatalar oldu. Bunları logladım. Ama programın doğru bir şekilde tamamlandı. Yani rest of the world bir şey çalıştı.
+
+659
+01:58:04,271 --> 01:58:20,692
+İşte 7. satırda ki şundan dolayı 14. satırdaki bu işlemden kaynaklı olarak bize gelen bu şeyler aslında şu şeyden kaynaklı.
+
+660
+01:58:21,431 --> 01:58:26,372
+Evet saat 55 geçiyor. 5 geçiye kadar bir ara verelim. Gelince devam.
+
+661
+02:06:53,140 --> 02:07:10,339
+Evet arkadaşlar, devam edelim. Şimdi Toprak Hoca ile konuştum. Saat 19'da uygulamayı yaparız hocam dedi. İsteyenler daha sonra zaten kayıtları izleyebiliyormuş. Benim açımdan sıkıntı yok dedi. Herhalde bir saat falan sürer o da.
+
+662
+02:07:14,323 --> 02:07:34,563
+Evet şimdi geldik troll demek ki böyle bir şey ne yapıyor? Exception oluşturmayı sağlıyor. Peki trolls ney? Şimdi trolls arkadaşlar bir deklarasyon yapıyor. Ben şuradaki try ve cash kısmını sileceğim.
+
+663
+02:07:45,235 --> 02:07:45,555
+Nunda.
+
+664
+02:07:57,332 --> 02:07:59,451
+olsak. Neyse yeterli.
+
+665
+02:08:00,091 --> 02:08:01,511
+Şimdi biraz önce bu kodumuz
+
+666
+02:08:01,511 --> 02:08:05,951
+kodumuzun değerlendiğini gördük.
+
+667
+02:08:06,571 --> 02:08:07,611
+Semih'le konuşmuştuk.
+
+668
+02:08:08,511 --> 02:08:09,351
+Ama çalıştı mı?
+
+669
+02:08:09,891 --> 02:08:10,391
+Çalışmadı.
+
+670
+02:08:11,712 --> 02:08:13,411
+Niye çalışmadı? Çünkü exception oldu.
+
+671
+02:08:13,491 --> 02:08:16,711
+Programın çalışması. Yani çalıştı ama bir yerden sonra çalışması kesildi.
+
+672
+02:08:18,352 --> 02:08:19,951
+Debug, tekrar bir
+
+673
+02:08:19,951 --> 02:08:21,271
+claim and build diyelim.
+
+674
+02:08:21,271 --> 02:08:23,271
+Evet.
+
+675
+02:08:28,948 --> 02:08:29,787
+run diyorum.
+
+676
+02:08:31,448 --> 02:08:32,168
+Bunu görüyoruz.
+
+677
+02:08:33,107 --> 02:08:33,908
+Bir metoda
+
+678
+02:08:33,908 --> 02:08:40,807
+throws yazıyorsanız ve throws'un ne olduğunu burada belirtmemiz gerekiyor.
+
+679
+02:08:40,927 --> 02:08:41,788
+İşte ne olacak?
+
+680
+02:08:42,667 --> 02:08:45,007
+Aritmetik exception türünde.
+
+681
+02:08:45,868 --> 02:08:50,507
+İstersek burada kendi yazdığımız türde bir exception'ı da, sınıfı da yazabiliyorduk.
+
+682
+02:08:50,548 --> 02:08:51,727
+Biraz önce bir örnekte gördük.
+
+683
+02:08:51,727 --> 02:08:57,047
+Bu aritmetik exception türünde bir throw yapacak diyorsak
+
+684
+02:08:57,047 --> 02:09:02,527
+Şimdi bir debug edelim, şey, build edelim.
+
+685
+02:09:07,252 --> 02:09:10,311
+Herhangi bir derleme zamanı hatası almadım. Ama
+
+686
+02:09:10,311 --> 02:09:14,712
+Aritmetik exception değil de
+
+687
+02:09:14,712 --> 02:09:17,212
+Herhalde bir exception'da
+
+688
+02:09:17,212 --> 02:09:21,411
+Sadece exception dersem
+
+689
+02:09:21,411 --> 02:09:24,291
+Bakın diyor ki burada hata veriyor.
+
+690
+02:09:26,172 --> 02:09:27,451
+Unreported exception
+
+691
+02:09:27,451 --> 02:09:28,451
+Yani buradaki
+
+692
+02:09:28,451 --> 02:09:29,791
+Tabi şunu da
+
+693
+02:09:29,791 --> 02:09:31,571
+Bakın exception türetecek ama
+
+694
+02:09:31,571 --> 02:09:33,471
+Şunu da exception yapalım yine
+
+695
+02:09:33,471 --> 02:09:34,631
+Problem değil
+
+696
+02:09:34,631 --> 02:10:01,631
+farkı yok. Bu aritmetik exception'a değiştirdim de burada hata almaya başladım. Bu hata diyor ki bu metodu kullanmak için burayı try-catch ile çalıştırmak zorundasın. Niye aritmetik exception'da oldu da olmadı da exception'da oldu? Onun açıklaması aslında şey biraz önceki slide'ımızda
+
+697
+02:10:01,631 --> 02:10:04,511
+Neredeydi o?
+
+698
+02:10:06,391 --> 02:10:10,751
+Check it ve Uncheck it diye iki tane açıklama vardı dikkat ederseniz.
+
+699
+02:10:11,791 --> 02:10:21,972
+Bazı exception'lar tanımı gereği try ile çevrelenmesi gereken exception'lardır.
+
+700
+02:10:21,972 --> 02:10:31,972
+RuntimeExceptionUnchecked, IOUnchecked, ErrorUnchecked, şu exception'lardan bazıları checked, bazıları unchecked.
+
+701
+02:10:31,972 --> 02:10:36,652
+İşte bu mesela RuntimeException olarak yazalım.
+
+702
+02:10:36,652 --> 02:10:47,012
+RuntimeException ve bunu da şurada RuntimeException diyelim.
+
+703
+02:10:48,451 --> 02:10:50,932
+Şeye bakın, şunu da şey yapıyorum.
+
+704
+02:10:51,972 --> 02:11:14,152
+Herhangi bir şekilde bize uyarı vermiyor unchecked olduğu için. Bunların listelerine bakabilirsiniz. Bunların özellikleri var. Eğer bunu normal check it bir exception ile yazacaksak, böyle bir şey diyecek. Bunu try catch içerisinde yazmak zorundayız.
+
+705
+02:11:14,151 --> 02:11:21,351
+Throws demek ki exception fırlatılacağını uyarı olarak söyleyen bir keyword.
+
+706
+02:11:21,851 --> 02:11:23,151
+Throws'dan farklı olarak.
+
+707
+02:11:23,891 --> 02:11:30,551
+Eğer bu unchecked veya checked olarak ayırılıyorsa ona göre try-catch'in içerisine koymak durumundayız.
+
+708
+02:11:31,351 --> 02:11:32,091
+Burayı anladık mı?
+
+709
+02:11:32,491 --> 02:11:34,271
+Anlaşılmayan bir şey varsa söyleyin lütfen.
+
+710
+02:11:39,091 --> 02:11:40,832
+Clean and Build diyelim.
+
+711
+02:11:50,707 --> 02:12:04,707
+Ne oluyor? 13 çağrılıyor. 13 çağrılınca bu bir exception. Bu exception şurada tekrar...
+
+712
+02:12:07,028 --> 02:12:31,028
+not valid dedi. Tamam, biraz önce diğerini çalıştırdı. Not valid dedikten sonra exception'ı fırlattı, rest of the code yazdı. İşte şurada printstack trace yazdığı için şunları da burada logladı program. Ama program başarılı bir şekilde bitti. Demek ki trust da bize bunu sağlıyormuş. Şimdi biraz daha ilerleyelim.
+
+713
+02:12:35,444 --> 02:12:36,303
+Evet.
+
+714
+02:12:40,948 --> 02:12:59,727
+Eğer ki bu hata olursa veya olmadığında, yani bunlar şey basit örnekler. İşte burada bir metot test edilecek, try edilecek. Bir hata olursa, burada IO exception varmış. IO exception'de bir hata olursa olacak, olmazsa normal flow'a devam edecek.
+
+715
+02:12:59,727 --> 02:13:29,707
+exception handle edilmiş. Muhtemelen bu m.metot çalıştırılınca evet doğrudan buna geliyor. Bu kendisi bakın şartsız, koşulsuz, direkt yani if olmadığı için doğrudan bir exception fırlatıyor. Ne oluyor? İşte bu device error exception'i fırlatılacak ama bu herhangi bir yerden alınmıyor. Doğrudan ekrana şu basılıyor. Yani bu exception e mesajı yazılsaydı e.toString deseydik onu yakaladık.
+
+716
+02:13:29,727 --> 02:13:48,067
+kalardık. Exception handle edildi dedi ve normal flow'a devam ettik. Şimdi bir şeyi, exception'e deklare ettiğimizde, exception oluşmazsa kod sorunsuz çalışıyor.
+
+717
+02:13:48,067 --> 02:14:03,347
+exception oluşursa çalışma zamanında exception fırlatacak çünkü bu trows, şuradaki şey herhangi bir şekilde handle edilmedi.
+
+718
+02:14:03,767 --> 02:14:11,347
+Bakın burada herhangi bir trows yazdık ama pardon burada herhangi bir trow metodu, trow fonksiyonu yazmadık.
+
+719
+02:14:11,827 --> 02:14:15,547
+Burada da herhangi bir program sıkıntısı olmayacak.
+
+720
+02:14:15,547 --> 02:14:41,347
+Bakın bu main IO-exception fırlatıyor. Şuradaki metot da IO-exception fırlatıyor. Görmüş olarak. IO-exception zorunlu olmadığı için try-bloo içerisinde yazmaya gerek yok. Ama şurada herhangi bir throw yazmadığımız için herhangi bir program exception fırlatmayacak ve normal akışına devam edip gidecek.
+
+721
+02:14:41,347 --> 02:15:10,327
+Devices, operation, performance, buradaki işlem yapıldı sonra normal akışı dedi. Bu da bir diğer case. Eğer ki bir hata olursa ki burada yaptığımızda buraya hiçbir şekilde try-blow'una almadık. Burada bu metot kesin kez çalışacak ve kesin kez exception da üretecek. Bu ürettiği için programın akışı kesilecek. Device error dahi yazamadan kesilecek. Çünkü onu herhangi bir yere yakalamıyoruz. Runtime exception'ı göreceğiz.
+
+722
+02:15:11,347 --> 02:15:18,948
+ve program bu şekilde devam edecek. Runtime, exception gördüğümüz şey olacak. En son normal bir şey olacak.
+
+723
+02:15:18,948 --> 02:15:34,948
+Throw ve throws arasındaki farklar nelerdir? Bu açık bir şekilde throw istisna fırlatmak için kullanılıyor.
+
+724
+02:15:34,948 --> 02:15:56,108
+Bu check edilir sadece işte throw ile yapılan işler. Bir örnek üretilmesi gerekir. Yani bir new ile kullanılır. Bir metot içinde kullanılır. Bunu multiple exception throw edemiyorsunuz. Burada öyle bir şey var.
+
+725
+02:15:56,107 --> 02:16:00,607
+Trowse'a baktığımızda bu tanımlama için kullanılıyor, ifade etmek için.
+
+726
+02:16:03,567 --> 02:16:08,987
+Bu Trowse'lar check-it exception olarak yapılabiliyor, dağılabiliyor.
+
+727
+02:16:09,907 --> 02:16:13,227
+Bir sınıf tarafından yazılıyor.
+
+728
+02:16:14,147 --> 02:16:16,347
+Bir metot imzası olarak ekleniyor.
+
+729
+02:16:17,107 --> 02:16:19,487
+Multiple exception yazabiliyorsunuz.
+
+730
+02:16:19,487 --> 02:16:24,647
+Yani Trowse bir metot, I exception de fırlatabilir, SQL exception de fırlatabilir diyorsunuz.
+
+731
+02:16:24,647 --> 02:16:39,147
+Bunlar örnekleri ikisini bir arada kullanmak yani biraz önce yaptığımız örneği açıklıyor. Gelelim final, finally ve finalize. Bunlar da çok karıştırılan iki kavram. Final demek
+
+732
+02:16:40,244 --> 02:16:44,383
+bir değişkenin değerini sabitlemek için kullanılır. Const yapmaktır.
+
+733
+02:16:45,463 --> 02:16:48,504
+Yani niye böyle bir şey anlatıyorsunuz diyeceksiniz. Bunlar bazen karışıyor.
+
+734
+02:16:48,664 --> 02:16:52,563
+Finally dediğimiz try-cash ile exception-handling ile alakalı bir kavramdır.
+
+735
+02:16:54,084 --> 02:17:01,023
+Bu da neydi? İşte kod hatalı çalışsın veya çalışmasın illa çalıştırılacak bölümü söylüyordu.
+
+736
+02:17:01,023 --> 02:17:13,283
+Finalize'da bir işin tamamlandığında garbaş kollektörün çalıştırılmasıyla alakalı bir mekanizm var. Bunlar birbirinden farklı şeyler. Bunlara dikkat edelim.
+
+737
+02:17:14,083 --> 02:17:31,003
+Bakın ne yapıyor? Finalize example'da şöyle bir şey koymuşum. Bir sınıftan bir şey ürettik. Bir nesne ürettik. Bu nesneyi ürettiğimizde F1.0, F2.0 bunlardan bir nesne üretip daha sonra nol yaptık.
+
+738
+02:17:31,023 --> 02:17:45,244
+ve sistem garbage collector'ü çalıştırdığımızda finalize metodunun çağrıldığını, yani şu metodun çağrıldığını ve bu metodun nesnelerin silinmesi, süpürülmesi esnasında çağrıldığını görmüş oluyoruz.
+
+739
+02:17:45,803 --> 02:17:49,924
+Bunlar herhangi bir şekilde bu metot çağrılmadı, garbage collector silerken çağırdı.
+
+740
+02:17:50,523 --> 02:18:00,324
+Şimdi metotların override edilmesi, biliyorsunuz kalıtımda vardı, exception'ler de kalıtımla kullanıldığı için,
+
+741
+02:18:01,023 --> 02:18:14,063
+Metotların overrides'ı burada söz konusumuz var. Ben üst sınıftan kalıtım alınca burada farklı case'ler var. Şimdi bunlara bakacağız.
+
+742
+02:18:14,824 --> 02:18:21,784
+Eğer ki üst sınıf herhangi bir exception tanımlamazsa, yani burada herhangi bir exception yok. Alt sınıfta bir exception var.
+
+743
+02:18:21,784 --> 02:18:29,703
+subclass'ın overwrite edilmiş metodu.
+
+744
+02:18:29,703 --> 02:18:31,023
+Bunu
+
+745
+02:18:36,659 --> 02:18:44,779
+ekledim. Burada çekip eksek için yazamıyoruz. Ayı eksek için çekip olmadığı için yazar.
+
+746
+02:18:44,779 --> 02:18:52,959
+Açlar yılın şu.
+
+747
+02:18:52,959 --> 02:18:56,219
+Önce.
+
+748
+02:19:09,587 --> 02:19:20,747
+Bakın bu bir exception türünde yani unchecked exception. Bunu IO yaparsak
+
+749
+02:19:27,443 --> 02:19:53,864
+şey mi diyor bunu? Ioyu. Bunu overwrite edemiyoruz. Hani bunu onun için söylediğim şunu şöyle yapalım. Çünkü burada böyle bir şey yok. O nedenle bunu bu şekilde yazamıyoruz. Bu ilk senaryo bize bunu söylüyordu. Ioyu exception yerine başka bir exception yasak belki hani check it olmayan onları yazabiliriz. Başka ne vardı mesela? Şuradan bir bakalım.
+
+750
+02:19:53,864 --> 02:19:58,384
+Runtime exception desek
+
+751
+02:20:05,396 --> 02:20:12,935
+Bakın bunda bir sıkıntı yok. Bu ancak olduğu için. Şimdi bunu çalıştırabiliriz. Bakalım test row.
+
+752
+02:20:16,788 --> 02:20:20,647
+Debug'dan önce clean and build diyelim.
+
+753
+02:20:30,868 --> 02:20:32,747
+Bu aşağıdaki şey nereden çıktı ya?
+
+754
+02:20:43,540 --> 02:21:11,659
+Test, exception, child nesnesi oluşturulacak. Bu nesne oluşturulurken gelecek bunun constructorını çağıracak. Bunun constructorından önce yukarıdakinin constructorı çağıracak. Ama yukarıdakinin de constructorı boş. Bu da boş. Sonra mesaj kısmı çağırıyor. Bu bir runtime exception üretebilir diyor ama bunu unchecked olduğu için herhangi şekilde try-case içerisinde yazmadık.
+
+755
+02:21:11,659 --> 02:21:14,179
+ki zaten runtime şeyde üretmedi.
+
+756
+02:21:14,359 --> 02:21:18,279
+Eğer deseydim ki burada throw runtime
+
+757
+02:21:24,084 --> 02:21:28,064
+exception deseydim şurada bu işten sonra hani koşulsuz olarak
+
+758
+02:21:28,064 --> 02:21:33,803
+runtime exception burada bir şey mi yazmak gerekiyor acaba?
+
+759
+02:21:33,943 --> 02:21:38,103
+Tabii bunun kullanımını bilmiyorum. Runtime exception'ın metodu imzasına da bakmak lazım.
+
+760
+02:21:38,803 --> 02:21:39,863
+Onu şimdi ilk boş bir kere.
+
+761
+02:21:40,524 --> 02:21:41,283
+Ne olacaktır?
+
+762
+02:21:41,703 --> 02:21:47,684
+Exception burada fırlatılacaktı ve şu pmsh bu metodun şuranın çalışması yarım kalacaktı.
+
+763
+02:21:47,684 --> 02:21:48,963
+Tamam mı?
+
+764
+02:21:48,963 --> 02:21:56,283
+Eğer burada ben exception tanımlasaydım biraz önce olduğu gibi
+
+765
+02:21:56,283 --> 02:22:05,323
+bu cannot be override dediğimiz bir duruma düşüyorduk.
+
+766
+02:22:05,323 --> 02:22:08,304
+Buna önem veriyoruz.
+
+767
+02:22:08,563 --> 02:22:09,683
+İkinci kuralımız şu.
+
+768
+02:22:11,143 --> 02:22:14,343
+Üç sınıf yine herhangi bir exception tanımlamıyor.
+
+769
+02:22:14,343 --> 02:22:16,343
+Alt sınıf
+
+770
+02:22:16,343 --> 02:22:20,063
+Check it exception'lar
+
+771
+02:22:20,063 --> 02:22:21,843
+Tanınıyor ama
+
+772
+02:22:21,843 --> 02:22:23,843
+Uncheck it yapabiliyor. Bakın burada da aritmetik
+
+773
+02:22:23,843 --> 02:22:26,103
+Exception üzerinden aynı örneği şey yapmış
+
+774
+02:22:26,103 --> 02:22:29,203
+Gelelim bunu aritmetik Exception yapalım şimdi
+
+775
+02:22:37,780 --> 02:22:39,780
+ve burada da bir throw diyelim.
+
+776
+02:22:41,599 --> 02:22:43,979
+Biraz önce yapamadığımız şeyi bu case'de yapacağız.
+
+777
+02:22:56,084 --> 02:23:01,044
+Önce tabii bunu şey yapmak için arkadaşlar, gerçekten bunu eklememiz gerekiyor.
+
+778
+02:23:05,523 --> 02:23:09,904
+Aritmetik, exception, bu niye olmadı? Bir saniye. Şuradan bir şeye bakayım.
+
+779
+02:23:17,172 --> 02:23:18,611
+aritmetik exception
+
+780
+02:23:18,611 --> 02:23:23,191
+ha bir dakika
+
+781
+02:23:23,191 --> 02:23:24,811
+throw new diyeceğiz arkadaşlar
+
+782
+02:23:24,811 --> 02:23:27,711
+yani onu unutuyoruz hep
+
+783
+02:23:27,711 --> 02:23:31,491
+şimdi bunu çalıştırdığımda
+
+784
+02:23:31,491 --> 02:23:33,251
+şuraya da bir salt yazalım
+
+785
+02:23:33,251 --> 02:23:36,852
+rest of the
+
+786
+02:23:36,852 --> 02:23:39,092
+msg
+
+787
+02:23:39,092 --> 02:23:41,491
+diyelim
+
+788
+02:23:41,491 --> 02:23:44,432
+enrichable
+
+789
+02:23:44,432 --> 02:23:45,791
+hiçbir şekilde diyor ki
+
+790
+02:23:45,791 --> 02:23:51,491
+bakın bu andre çıbıl niye anlayı çıbıl Çünkü hiçbir zaman buraya gelemez ne bakın burada hata
+
+791
+02:23:51,491 --> 02:24:01,991
+veriyordu orada Mesela diyelim if bir eşit eşit bir seh bakalım o zaman ne diyecek şimdi bakın
+
+792
+02:24:01,991 --> 02:24:12,431
+Andrei çıbul olmaktan Hani böyle bir kaçış yoluyla kurtulduk bunu bir önce çalıştıralım bakalım göreceğiz
+
+793
+02:24:18,548 --> 02:24:45,507
+Test exception çalıştı. Bu aritmetik exception geldi. Program devam etmeden bitti. İkinci caseimiz de bu. Üçüncü caseimiz eğer diyor ki üst sınıf bir exception tanımlarsa alt sınıf alt sınıftaki override metot yani override edilmiş metot aynısını tanımlayabilir.
+
+794
+02:24:45,507 --> 02:24:53,548
+Alt sınıf exception'ları veya no exception'ı fakat cannot declare parent exception.
+
+795
+02:24:53,667 --> 02:24:55,507
+Alttan üstte bir şey yapamıyoruz.
+
+796
+02:24:56,007 --> 02:24:57,908
+Üsttekini ne yapıyoruz tanımlayabiliyoruz.
+
+797
+02:24:58,027 --> 02:25:00,107
+Şimdi test exception child 2'ymiş bu da.
+
+798
+02:25:00,908 --> 02:25:01,427
+Şunu alalım.
+
+799
+02:25:14,644 --> 02:25:15,443
+Teşekkürler.
+
+800
+02:25:20,180 --> 02:25:32,879
+Compile Time Error dediğimiz şey bu. Buradaki exception tanımlaması, arithmetic exception diyor ki bu
+
+801
+02:25:34,079 --> 02:25:39,579
+All right methods does not draw exception. Bunun aynısını şey yapmak zorunda.
+
+802
+02:25:40,079 --> 02:25:49,699
+Exception tanımlayamıyoruz. İçerisinde de ne var? Hiçbir şey yok. Sadece child yazmış, bırakmış. Bu case de bununla alakalıydı.
+
+803
+02:25:52,724 --> 02:26:17,883
+Şimdi bunu exception, exception yaptığımızda ne oldu? Bakın ikisi de aynı şeyi sağlamış olacak. Yani aritmetik exception'ı bunu da aritmetik exception yapalım veya ikisini de exception yapabiliriz. Ne olduğu önemli değil. Yani içerisinde de herhangi bir şey tanımlamadık. Ne yapıyor? Bu sefer tabii try yazdık ama şunu try için, şunun için var.
+
+804
+02:26:17,883 --> 02:26:20,603
+exception olduğu için var bunlar.
+
+805
+02:26:22,443 --> 02:26:23,724
+Aynı seviyeden.
+
+806
+02:26:25,564 --> 02:26:27,843
+Şunu bir run diyelim bakalım çalışacak mı?
+
+807
+02:26:29,424 --> 02:26:30,363
+Could not find.
+
+808
+02:26:44,020 --> 02:26:45,719
+Tabii şu text
+
+809
+02:26:45,719 --> 02:26:49,119
+True 1
+
+810
+02:26:49,119 --> 02:26:55,199
+Şunun adını şöyle değiştirmemiz lazım. Aynı isimde olması lazım.
+
+811
+02:27:01,523 --> 02:27:03,563
+Neyse, onu yanlış yaptık ama
+
+812
+02:27:12,275 --> 02:27:13,636
+değiştirelim yeniden.
+
+813
+02:27:15,375 --> 02:27:17,075
+İkisi beraber çalışabiliyoruz.
+
+814
+02:27:17,355 --> 02:27:17,716
+Test.
+
+815
+02:27:19,075 --> 02:27:19,475
+Row.
+
+816
+02:27:19,955 --> 02:27:20,275
+1.
+
+817
+02:27:26,548 --> 02:27:47,267
+Şimdi tekrar doğrudan child'un çalıştığını görüyoruz. Daha üst sınıf zaten kendisi override edildiği için üst sınıfa gelmedik. Üst sınıfa gitmek için ne yapacağız? Onu da bize Batuhan Ahmet söylesin. Batuhan, üst sınıftaki parent'ı da görmek için ne yapmamız lazım? Eski bilgilerimizi hatırlayalım.
+
+818
+02:27:51,092 --> 02:27:54,191
+Buradan Buradan Yıkma çok koptum biraz da.
+
+819
+02:27:55,871 --> 02:28:01,092
+Süper sınıfına gidip süperdeki mesajı çağırsak.
+
+820
+02:28:03,092 --> 02:28:14,092
+Şimdi aslında bu ne yapar? Bu overwrite'tır. Yani mesajı geçersiz kılar. Ama ikisinin de çalışmasını istiyorsak ne yapacağız? Burada süper yazarız.
+
+821
+02:28:16,092 --> 02:28:20,391
+Hem yukarıdaki çalışır hem de aşağıdaki çalışır.
+
+822
+02:28:21,092 --> 02:28:25,952
+Şu warningler şey, override annotation ile alakalı onları çok takmayın.
+
+823
+02:28:28,952 --> 02:28:35,891
+Önce parent, sonra chat. Peki superi şurada yazabilir miyim? Onu da kime soralım? Bahadır Cüneyt'e soralım.
+
+824
+02:28:42,291 --> 02:28:43,271
+Çağdaş Çetin
+
+825
+02:28:48,691 --> 02:28:49,751
+Oğuzhan Ercan
+
+826
+02:28:49,751 --> 02:28:55,311
+Mustafa Muhammed Taha Gökçen
+
+827
+02:28:58,708 --> 02:28:59,887
+Şurada yazabiliyor muyuz?
+
+828
+02:29:00,287 --> 02:29:01,148
+Yazamayız.
+
+829
+02:29:05,287 --> 02:29:11,027
+Constructor olsa olmuyor ama.
+
+830
+02:29:11,027 --> 02:29:12,548
+Şimdi burada bunu yazınca ne olacak?
+
+831
+02:29:12,987 --> 02:29:14,767
+Bu Super'deki mesajı çağırmak değil.
+
+832
+02:29:14,847 --> 02:29:17,167
+Bir mesaj çağırı, fonksiyon çağırısı.
+
+833
+02:29:17,907 --> 02:29:19,048
+Önce Child yazacak.
+
+834
+02:29:19,628 --> 02:29:20,167
+Sonra gidecek.
+
+835
+02:29:20,247 --> 02:29:20,708
+Bunu yazacak.
+
+836
+02:29:20,827 --> 02:29:24,427
+Yani bunlar arasında artık bir alt üst ilişkisi yok.
+
+837
+02:29:24,567 --> 02:29:26,287
+Yani bu tamamen geçersiz bir şey.
+
+838
+02:29:27,208 --> 02:29:27,647
+Neye göre?
+
+839
+02:29:27,647 --> 02:29:35,927
+şu sınıfa göre. Eğer ben bu sınıftan bir nesiller ötesiydim o ayrı olurdu. Peki şöyle yapalım. Bunu da çalıştıralım.
+
+840
+02:29:40,531 --> 02:29:53,051
+Bakın önce geç bir şey yine ya bu şeyi düzeltmem lazım gerekirse tekrar kaldırıp yükleyeceğim. Bir yerden bir ayar bozuldu da ne oldu bilmiyorum. Her defasında böyle
+
+841
+02:29:55,667 --> 02:30:11,207
+Önce chart, sonra süperdeki şeyi çalıştırmak, constructor olsa onu birinci sınıf şeyde sata da yazmak zorundayız. Burada öyle bir şey yok. Evet, gelelim son bir iki slide'ımız var. Onlara bakalım.
+
+842
+02:30:21,203 --> 02:30:32,763
+aynı isimde olursa biraz önceki gibi. Eğer ki farklı yukarıdaki exception, aşağıdaki aritmetik exception olursa ne olur? Buna bir bakalım.
+
+843
+02:30:43,796 --> 02:31:09,175
+Diyor ki bakma burada bunu yapacaksan önce yap. Pardon önce bu şeyi fırlatıyor. Onun için bunu çağıramıyoruz zaten. Süper kullanamıyoruz. Çünkü bu şeyler arasında bir bağlantı var. Ama şey çalışıyor. Yani derlemede bir problem yok. Yani child önce çalışacak. Farklı olması.
+
+844
+02:31:09,175 --> 02:31:14,075
+Herhangi bir şey yazmazsak ne olur?
+
+845
+02:31:14,075 --> 02:31:21,075
+Şuna üst sınıftaki çalışır, alt sınıftaki herhangi bir şey üretmiyor da oradan bunu da çalıştırabiliriz.
+
+846
+02:31:22,016 --> 02:31:31,476
+Peki şu custom example ile alakalı bakalım test custom example neymiş?
+
+847
+02:31:32,735 --> 02:31:33,855
+Invalid age.
+
+848
+02:31:35,755 --> 02:31:38,336
+Biraz önce invalid age'i yazmıştık zaten.
+
+849
+02:31:39,175 --> 02:31:50,355
+şu test custom example'ı bunu kalıtımla yapalım demişiz. Şöyle bir sınıf alıyorum.
+
+850
+02:31:55,283 --> 02:31:56,404
+yazalım bunu da.
+
+851
+02:31:58,823 --> 02:31:59,623
+Yani bu
+
+852
+02:31:59,623 --> 02:32:01,843
+invalid age'i biraz önce
+
+853
+02:32:01,843 --> 02:32:03,823
+metot seviyesinde yazdık ama bir class olarak
+
+854
+02:32:03,823 --> 02:32:04,244
+yazalım.
+
+855
+02:32:05,204 --> 02:32:06,704
+invalid age
+
+856
+02:32:06,704 --> 02:32:09,543
+exception
+
+857
+02:32:09,543 --> 02:32:12,843
+böyle bir sınıfım olsun.
+
+858
+02:32:13,843 --> 02:32:14,723
+ve bu sınıfım diyorum ki
+
+859
+02:32:14,723 --> 02:32:15,443
+extends
+
+860
+02:32:15,443 --> 02:32:19,443
+exception üzerinden tanısın.
+
+861
+02:32:22,083 --> 02:32:23,783
+bunun içerisinde bir
+
+862
+02:32:23,783 --> 02:32:27,124
+Constructor tanımlayacağım.
+
+863
+02:32:27,124 --> 02:32:28,263
+Public
+
+864
+02:32:32,275 --> 02:32:53,975
+EdgeExaction. Buraya bir bu sınıfdan bir şey, throw ile üretildiğinde bir mesaj gelecek ve bu mesajı da oradan süpere göndereceğim. Genellikle şeyler bu şekilde kullanılıyor arkadaşlar. Yani kendi sınıfınızı tasarladığınızda constructor tanımlanır ve üst sınıfa gönderilir.
+
+865
+02:32:53,975 --> 02:32:59,295
+Zaten şu bizim dersteki slide'deki örnekte de bakarsanız
+
+866
+02:32:59,295 --> 02:33:02,655
+Neredeydi o arkadaş?
+
+867
+02:33:04,816 --> 02:33:09,215
+Bakın impossible info extends
+
+868
+02:33:09,215 --> 02:33:15,735
+Warningleri suppress yani warningleri kaldırmak için şöyle bir şey tanımlanabilir. Çok önemli değil.
+
+869
+02:33:17,095 --> 02:33:18,456
+Bunu yazdık.
+
+870
+02:33:18,456 --> 02:33:22,375
+Şimdi biz bunu kullanmak istiyoruz.
+
+871
+02:33:22,375 --> 02:33:27,995
+Yani bu sınıfı kullanmak istiyoruz. Şu örneği bir bulayım.
+
+872
+02:33:33,268 --> 02:33:38,708
+Hangisiymiş adı? TestCustomExampleException1
+
+873
+02:33:46,675 --> 02:33:50,255
+Gerçi hepsini burada yazdığımız için
+
+874
+02:33:50,255 --> 02:33:53,596
+Validate
+
+875
+02:34:03,987 --> 02:34:07,987
+Biraz önce bunu yazmış mıydık acaba? Neyse bir daha yazalım. Problem değil.
+
+876
+02:34:09,187 --> 02:34:11,587
+Main içerisinde bir
+
+877
+02:34:12,987 --> 02:34:16,527
+Validate fonksiyonumuz olacak. Çağıracağız.
+
+878
+02:34:23,763 --> 02:34:35,064
+Bu validate fonksiyonu da birazdan şurada tekrar yazacağım. Şunları silebiliriz. O kadar silmeyelim. Şuraya kadar silelim.
+
+879
+02:34:44,884 --> 02:35:03,384
+Biraz önceki yani age üzerinden yaptığımız işin aynısı. Ama fırlatacağımız hata biraz önce aritmetik şey demiştim ama burada invaded age exception türünde bir şey fırlatacaksın diyorum. Yani şu sınıfın nesnesi olacak.
+
+880
+02:35:03,384 --> 02:35:27,464
+if age küçüktür 18 diyorum ki throw new invalid age exception şöyle yapalım not valid diyelim
+
+881
+02:35:41,587 --> 02:35:42,828
+Biraz önceki şey buydu.
+
+882
+02:35:46,355 --> 02:35:54,435
+Şimdi bu hatayı almamız iyi bir şey. Zaten onu almamızı bekliyoruz. Şimdi şu validate'i yazalım. 13 demiştik.
+
+883
+02:35:59,924 --> 02:36:00,983
+try'i bir siliyorum.
+
+884
+02:36:03,583 --> 02:36:05,583
+Şurada da salt diyelim.
+
+885
+02:36:07,643 --> 02:36:09,063
+Rest of the code.
+
+886
+02:36:10,063 --> 02:36:11,963
+Diyor ki arkadaşlar, şurada
+
+887
+02:36:11,963 --> 02:36:14,163
+bunun
+
+888
+02:36:14,163 --> 02:36:17,444
+unreported exception, yani
+
+889
+02:36:17,444 --> 02:36:21,264
+bunu sen try cache içerisinde yazmak zorundasın.
+
+890
+02:36:22,344 --> 02:36:25,583
+Nereden çıktı bu? Yani niye böyle bir zorunluluk var? Eğer ben
+
+891
+02:36:25,583 --> 02:36:26,723
+kendim bir
+
+892
+02:36:26,723 --> 02:36:29,764
+şey tanımlıyorsam, custom exception
+
+893
+02:36:29,764 --> 02:36:38,363
+tanımlıyorsam bunları try-case içerisinde yazmak zorundayız. Onun için burayı try dedik. Şuraya alıyoruz.
+
+894
+02:36:41,324 --> 02:36:49,684
+Edge. Türümüz ne? Invalid. EdgeException türünde bir exception var. E dedik.
+
+895
+02:36:53,299 --> 02:37:02,499
+Veya e.printstack, trace diyelim. Bakın bunu da south'u sonradan yazıyorum.
+
+896
+02:37:04,439 --> 02:37:17,779
+e.toString dedik. Başka bir şey yok. Bakın ben burada önce kendim bir sınıf tanımladım. Şunu da kaldıralım.
+
+897
+02:37:22,963 --> 02:37:30,803
+Bunu diyor kaldırabilirsiniz diyor. Yani çok önemli değil. Şimdi bunu değerliyoruz. Arkadaşlar son örneğimiz bu.
+
+898
+02:37:37,716 --> 02:37:38,475
+ferhan ediyoruz.
+
+899
+02:37:40,716 --> 02:37:46,016
+Şunun not valid olduğunu söyledi. Bakın bir kere derleme başarılı.
+
+900
+02:37:48,375 --> 02:37:56,675
+Şu not valid'i gönderip throw etti. Buraya geldin. Buraya gelince bu exception sınıfına gidiyor.
+
+901
+02:37:56,795 --> 02:38:00,255
+Exception sınıfı içerisinden constructor çağırılıyor.
+
+902
+02:38:00,255 --> 02:38:26,735
+Tamam mı? Sonra şuraya geldiğimizde şu işte burada ekrana yazdırılacak. Önce printstakes trace şunu da yazdırıyor. Hatta nerede olduğunu da şey yapıyor. Sonra rest of the code deyip devam ediyor. Eğer ben şunu yazıyorsam yani kendim bir custom exception sınıfı yazıyorsam bunu try get içerisinde kullanmam gerekiyor.
+
+903
+02:38:32,244 --> 02:38:35,244
+Var mı başka soru? Burada merak ettiğiniz bir şey.
+
+904
+02:38:35,343 --> 02:38:38,184
+Orada e.30'sın geldik ya.
+
+905
+02:38:38,823 --> 02:38:40,943
+Bunun nerede gördük?
+
+906
+02:38:43,164 --> 02:38:43,883
+Şurada.
+
+907
+02:38:48,051 --> 02:38:48,672
+Tamam anladım.
+
+908
+02:38:51,512 --> 02:39:13,071
+Siyah olanlar, system out print alan çıktısı, kırmızı olanlar hata açık. Hatta şey var arkadaşlar, onu da söyleyeyim belki unuttuk onu. System.error print dediğimizde veya print alan merhaba diyelim.
+
+909
+02:39:13,071 --> 02:39:19,751
+Error olarak bunu stream'e gönderiyor, IO stream'ine gönderiyor.
+
+910
+02:39:19,891 --> 02:39:22,771
+IO'ları da yani file'larda da göreceğiz de.
+
+911
+02:39:25,491 --> 02:39:26,291
+Run diyelim.
+
+912
+02:39:28,571 --> 02:39:37,691
+Şu nerede merhabaya bakın hata yani orada yazılan şu kırmızıyla gelen şeyler aslında sistem error print veya print elenle yazılan ifadelerdir.
+
+913
+02:39:40,111 --> 02:39:41,351
+Anladın o yazı.
+
+914
+02:39:41,351 --> 02:40:07,492
+Evet. Var mı sorusu olan? Bu konu yani şeyde ders unutunda bu kadar ama biz biraz daha üzerinde ben durmak istedim. Şimdi gelecek hafta ders yok. Ondan sonraki hafta 19 Mayıs. Sizinle iki hafta daha görüşemeyeceğiz. Sonra işte fail konusu var. Fail konusu bittikten sonra inner classlar falan var. Onlara bakacağız. Threadler var.
+
+915
+02:40:07,491 --> 02:40:29,231
+Yani object oriented ile alakalı kısımlar aslında hemen hemen buraya kadar. Filedir, thread'dir, object oriented olmayan dillerde de var. Belki typecasting'ı burada birazcık vaktimiz olsaydı. Şu an çok yormak istemiyorum daha fazla. 3-4 slide'lık onun bir konusu var ama onu bir sonraki derste hallederiz.
+
+916
+02:40:29,232 --> 02:40:35,232
+Bundan sonraki şeyler biraz daha object koyandıktan uzak kısımlar.
+
+917
+02:40:35,232 --> 02:40:36,151
+Böyle söyleyeyim.
+
+918
+02:40:36,992 --> 02:40:38,772
+Buna daha sonra bakarız. Çok önemli değil.
+
+919
+02:40:41,632 --> 02:40:47,232
+Şimdi sınava ilişkin sorusu olan varsa, şöyle bir link paylaşayım mühesef.
+
+920
+02:40:51,352 --> 02:40:53,632
+Kağıdınızla alakalı veya şeyle alakalı.
+
+921
+02:40:54,551 --> 02:40:55,891
+Copy imitation diyelim.
+
+922
+02:40:57,311 --> 02:40:58,311
+Hemen bunu kapatacağım.
+
+923
+02:40:58,311 --> 02:41:25,311
+10 dakika boyunca bekleyeceğim. Oradan gelip sorularınızı sorabilirsiniz. Ama mümkünse arkadaşlar açıkladığım cevaplara ilişkin, ben de hocam aynı cevabınıza benzer yaptım, onun için puanım kesildi derseniz biraz daha hızlı olalım. Linkten kapattıktan sonra bağlanabilirsiniz. Bir sorunuz varsa buradan alayım.
+
+924
+02:41:25,311 --> 02:41:28,011
+genel bir soruysa.
+
+925
+02:41:28,011 --> 02:41:28,632
+Hocam sözleri paylaşır mısın?
+
+926
+02:41:29,471 --> 02:41:32,151
+Şu slide'ları mı? Bunları.
+
+927
+02:41:32,631 --> 02:41:35,031
+O exception slide'ı. Evet evet.
+
+928
+02:41:35,051 --> 02:41:39,791
+Tabii bunu ve collection ve exception'ı şey yapacağım. Aslında ben bunları şuradan aldım daha çok.
+
+929
+02:41:40,272 --> 02:41:45,791
+Javapoint. Bunların kodlarını ve şeylerini klasörün içerisinde bugün yarın paylaşmış olurum.
+
+930
+02:41:47,791 --> 02:41:49,291
+Tamam mı? Teşekkürler.
+
+931
+02:41:50,631 --> 02:41:52,011
+Biraz detaylı.
+
+932
+02:41:52,011 --> 02:41:56,371
+Bu akşam uygulama olacak mı?
+
+933
+02:41:56,371 --> 02:42:05,631
+Evet saat 7'de uygulama var. Toprak Hoca ile konuştuk. Saat 7'de yapacak. Zaten sistemi açar. Siz devam edersiniz.
+
+934
+02:42:07,151 --> 02:42:09,011
+2 saat mi sürecek hocam?
+
+935
+02:42:09,011 --> 02:42:13,051
+Bilemiyorum yani sorunun yoğunluğuna göre
+
+936
+02:42:13,051 --> 02:42:17,931
+İşte iftar saatine denk gelmesin diye ben 9'da falan da başlayabilirsiniz dedim ama
+
+937
+02:42:17,931 --> 02:42:21,811
+Bilmiyorum yani onlar 7'de başlayabiliriz dediler
+
+938
+02:42:21,811 --> 02:42:23,371
+Ben de yani onlara karışamam
+
+939
+02:42:23,371 --> 02:42:24,451
+Ne yapıyorsa
+
+940
+02:42:24,451 --> 02:42:27,391
+Bildikleri gibi aslında
+
+941
+02:42:27,391 --> 02:42:30,971
+Gerekirse daha sonradan izlersiniz hani iftar saatinize denk geliyorsa
+
+942
+02:42:30,971 --> 02:42:38,051
+Şimdi sonraki labımız gelecek hafta laboratuvar işte Arife'den dolayı yapılmayacaksa
+
+943
+02:42:38,051 --> 02:43:08,032
+Thank you.
+
+944
+02:42:38,164 --> 02:42:54,443
+Biz şey yapacağız arkadaşlar. Salı günü akşam veya ne bileyim cumartesi günü bir lap günü belirleyeceğiz veya bir hafta erteleyebiliyorsak erteleeriz. Çünkü ondan sonraki hafta da şey yok. Şöyle laboratuvar programına bir bakayım hemen hızlıca tekrardan.
+
+945
+02:42:54,443 --> 02:43:13,704
+4 laboratuvar yapacağımız için 26 Mayıs 9 Haziran demişiz ondan sonraki şeyleri için. Yani biz 12 Mayıs'ta yapamadığımız uygulamayı ve 19 Mayıs'ın şeyini telafisini lab 3'ü normalde gelecek hafta yapmamız gerekiyordu. Onu bir cumartesi günü falan yaparız.
+
+946
+02:43:14,883 --> 02:43:22,863
+Duyururum. Herkes için uygun olan herhalde cumartesi uygundur. Kimse zaten o saatte o günlerde dışarı çıkamıyor. Tabii bu cumartesi değil.
+
+947
+02:43:22,864 --> 02:43:39,184
+Gelecek hafta cumartesi olur. O şekilde ayarlarız. Gerçi bayramın kaçıncı günü oluyor? Perşembe birinci gün, cuma, belki pazar günü yaparız. Gerçi bayram da olsa fark etmiyor. Herkes evinde kimse bayram gezmesine gitmeyecek.
+
+948
+02:43:39,184 --> 02:43:47,884
+Eğer sınıf için bir sorun teşkil etmeyecekse gelecek hafta 12 Mayıs'ta bunu yapabilir.
+
+949
+02:43:48,024 --> 02:43:49,664
+Yani şey laboratuvar yapılabilir.
+
+950
+02:43:50,324 --> 02:43:53,664
+Onu biz bir hocalarımızla gerekirse bir konuşalım size bir karar bildiririz.
+
+951
+02:43:55,303 --> 02:44:02,604
+Hani 12 Mayıs'ta yapmak resmi açıdan problem oluşturur derlerse illaki onu bir cumartesi veya pazara almak zorundayız.
+
+952
+02:44:03,043 --> 02:44:06,884
+Yani bizim irademizde konulan bir tatil değil.
+
+953
+02:44:06,884 --> 02:44:32,623
+Cumhurbaşkanlığı kanadıyla bütün memurlara, kamuya gelen bir tatil. Onu override edemiyoruz. Durum böyle. Var mı sorunuz? Hepinize şimdiden iyi bayramlar. Baya bir belki uzun süre, iki haftadır görüşemiyorduk. Yine belli bir süre ara kalacak.
+
+954
+02:44:32,623 --> 02:44:48,363
+Derse karşı bir ilgisizlik var. Gerçi sınav programları çok kötü değil. Bu tamamen sizin kendi tercihinizle alakalı bir şey diyemem. Kendinize iyi bakın. Şimdi sistemi kapatıp diğer şeyi açacağım. Görüşmek üzere diyelim.
+
+955
+02:44:48,363 --> 02:44:50,964
+İyi akşamlar hocam. İyi akşamlar.

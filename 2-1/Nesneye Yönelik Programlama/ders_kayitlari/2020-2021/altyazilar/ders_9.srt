@@ -1,0 +1,3215 @@
+1
+00:05:44,115 --> 00:05:45,395
+Merhabalar arkadaşlar.
+
+2
+00:05:51,764 --> 00:05:52,463
+Sesim geliyor.
+
+3
+00:05:52,884 --> 00:05:53,663
+Evet, hocam geliyor.
+
+4
+00:05:54,783 --> 00:05:55,623
+Tamamdır.
+
+5
+00:06:04,500 --> 00:06:06,680
+Hayırdır? Kimse daha girememiş.
+
+6
+00:06:18,036 --> 00:06:29,916
+Dünkü attığım mesajı yanlış mı anlaşıldı diye ilk başta tereddüt ettim. Uygulama saatinde de ders yapacağım diye. O ikinci D'yi anlamayanlar mı oldu diye biraz tereddüt ettim de neyse.
+
+7
+00:06:33,055 --> 00:06:36,376
+Bir başka ders sınav falan var şimdilerde.
+
+8
+00:06:42,355 --> 00:06:47,455
+Hocam şu an yok. Bundan bir saat kadar önce bitmişti. Son sınav.
+
+9
+00:06:48,135 --> 00:06:50,995
+Tamam. Daha herkes toparlanamadı demek.
+
+10
+00:06:52,935 --> 00:06:53,615
+Evet.
+
+11
+00:06:55,955 --> 00:07:00,055
+Şimdi neyse biz bir iki dakika daha bekleyelim. Böyle başlarız.
+
+12
+00:07:03,215 --> 00:07:11,395
+Normalde bugün konuyu yetiştirirsem uygulama saatinde ders yapmayacağım. Yetiştiremezsem uygulama saatinde işte bir saat ara verip ders yapacağız.
+
+13
+00:07:12,355 --> 00:07:23,756
+Çünkü gelecek hafta ben laboratuvar var zannediyorum gelecek hafta uygulama varmış gelecek haftaki konumuzla beraber yetişir diye tahmin ediyorum
+
+14
+00:07:31,475 --> 00:07:33,015
+Ekranımızı paylaşalım.
+
+15
+00:07:47,187 --> 00:07:49,227
+Sayfa 77'de kalmışız.
+
+16
+00:07:59,028 --> 00:08:23,887
+Var mı sorusu olan? Geçen haftaki konulardan anlamadığınız bana mail gönderen birisi var mı? Diğer derslerden bir kişi mail gönderdi diye hatırlıyorum da ona cevapladım. Burada derste kavramlarla alakalı anlaşılmayan, merak ettiğiniz, kafanıza takılan herhangi bir şey varsa sorun arkadaşlar. Derse başlamadan önce oradaki soruları halledelim. O arada da herkes gelmiş olur.
+
+17
+00:08:30,579 --> 00:08:52,659
+Laboratuvar sonuçlarınız açıklanmış. Sadece geri bildirim olarak birkaç kişiden hocam süre biraz yetersizdi falan diye bir geri bildirim aldım. Aslında hani içerik derste yaptıklarımız uygulamada yapılan şeyle hemen hemen eş değer yani eş değer olmasa bile denk diyebileceğimiz bir içerik.
+
+18
+00:08:52,659 --> 00:08:55,799
+Buradaki sıkıntı şu
+
+19
+00:08:55,799 --> 00:09:06,679
+Eğer sadece izleyerek object oryantılık konusunda bir şeyler öğreneceğini zannediyorsanız orada yanılıyorsunuz biraz kod yazmak gerekiyor
+
+20
+00:09:06,679 --> 00:09:13,660
+Onun dışında bir arkadaşımız bana gerçi isminde mail'i attı da
+
+21
+00:09:13,659 --> 00:09:34,079
+boş dosyayı değiştirdiğini ismini şu an hatırlamadım. Mailine de bakamıyorum. Onunla alakalı hocayla görüşeceğiz diğer gruplarla. Eğer kabul edilirse edilecek, edilmezse laboratuvarı geçerse sayılacak.
+
+22
+00:09:34,079 --> 00:09:50,419
+Yani bana sonradan mail ile gelen şeyler, laboratuvarlar geçer değil ki ben de okumuyorum. Bizde Toprak Hoca okuyor. Notlarla alakalı itirazlarınızı kendisine yapmanız gerekiyor arkadaşlar.
+
+23
+00:09:50,419 --> 00:10:02,159
+süre konusunda hani bundan sonraki laboratuarlarda içerik daha da böyle yoğunlaşacağı için biraz daha ek bir süre verilebilir.
+
+24
+00:10:04,099 --> 00:10:08,919
+O konuda bir iyileştirme veya bir güncelleme yapabiliriz.
+
+25
+00:10:08,919 --> 00:10:15,459
+Yani 75 dakika idigan zannediyorum. 75 dakikaysa ne bileyim 90 dakikaya falan çıkartılabilir.
+
+26
+00:10:16,339 --> 00:10:17,779
+10-15 dakika ek süre verilir.
+
+27
+00:10:17,779 --> 00:10:33,079
+Ama burada tavsiyem o set get metotları, onun sonuna constructorlar veya to string metotları gibi şeylerin otomatik oluşturulmasına yani ideyi kullanacaksınız arkadaşlar.
+
+28
+00:10:34,259 --> 00:10:35,599
+Biraz C gibi değil bu.
+
+29
+00:10:41,011 --> 00:10:56,591
+Evet, nedense bugün bir katılımda eksiklik var. Bir yerde bir yarışma falan bir şey mi var diyeceğim de yani herkes evinde 5 geçiyor. Ben dersime başlıyorum arkadaşlar.
+
+30
+00:10:57,971 --> 00:11:06,131
+Sohar, we have studied relationship between objects. There are 5 different object types.
+
+31
+00:11:06,131 --> 00:11:31,731
+The first fourth one is related to objects. The last one inheritance is related to class. The level or the degree of relation is related relation for maybe class or object.
+
+32
+00:11:31,731 --> 00:11:47,732
+Association, dependency, aggregation, and composition. These are object-based or object-degree relations. Inheritance is class-level relation.
+
+33
+00:11:47,732 --> 00:12:13,511
+And we have studied association and their types. Association has the ownership relationship. It also has relationship. A owns B. Degree or direction is important for this type relation.
+
+34
+00:12:13,511 --> 00:12:32,272
+The arrow shows the direction of relation and we can also add some cardinality between relation, for example, one or many or asterisk, zero or more, etc.
+
+35
+00:12:35,331 --> 00:12:43,011
+There may be hidden information about association relation.
+
+36
+00:12:43,511 --> 00:12:48,672
+We should extract the essence of this relationship.
+
+37
+00:12:50,112 --> 00:12:56,071
+Also we should, we have to infer about this representation.
+
+38
+00:12:57,071 --> 00:13:00,571
+Dependency is another type of relation.
+
+39
+00:13:00,571 --> 00:13:10,812
+There is a bit difference between difference from association.
+
+40
+00:13:10,812 --> 00:13:37,791
+In association, we are using a member, a class variable as a member. When it comes to dependency, we are using an object inside a method, a specific method. Okay? It is not a member variable for any class. Dependency or depends on something, depends on another. Okay?
+
+41
+00:13:37,791 --> 00:13:40,752
+Any question about these relations?
+
+42
+00:13:44,596 --> 00:13:50,596
+These are the previous lectures slides.
+
+43
+00:13:50,596 --> 00:13:55,596
+We studied this example.
+
+44
+00:13:55,596 --> 00:14:03,596
+One-way relationship and initialization of relations.
+
+45
+00:14:03,596 --> 00:14:11,596
+Sequence diagram is very important.
+
+46
+00:14:10,676 --> 00:14:19,795
+We may ask a question about a sequence diagram, draw a sequence diagram from this scenario.
+
+47
+00:14:20,575 --> 00:14:25,096
+So you should learn about this representation.
+
+48
+00:14:26,096 --> 00:14:32,276
+For example, main request, a Java YouTube machine request main method.
+
+49
+00:14:32,276 --> 00:15:00,275
+inside main method we are generating an object from person class the name of who it is octi this is a request inside this request the constructor is executed and the response of this constructor is a reference from any object.
+
+50
+00:15:00,275 --> 00:15:26,975
+SetCar is another request. IntroduceSelf is another request. It is method call, simple. Another object generation, new Aziz Sancar from person class. This is a request and the response of this request from main. IntroduceSelf for Aziz or person object is another request.
+
+51
+00:15:26,975 --> 00:15:33,975
+This is a sequence diagram of main program 01.
+
+52
+00:15:33,975 --> 00:15:44,975
+Hidden information we studied, yes, so far we studied this.
+
+53
+00:15:44,975 --> 00:15:55,975
+As of for this class, we will study the other type of relations between objects.
+
+54
+00:15:55,975 --> 00:16:00,535
+This is two-way association.
+
+55
+00:16:02,535 --> 00:16:08,855
+I guess we state for this slide.
+
+56
+00:16:10,475 --> 00:16:22,855
+Inside two-way association, all class may store or may have reference of other objects.
+
+57
+00:16:22,855 --> 00:16:40,855
+objects. For example, inside person class, we are storing car objects and inside car class we are storing owner object. This is a two-way relationship between two objects.
+
+58
+00:16:40,855 --> 00:17:10,355
+Sometimes we may use all of reference between inside these objects. This is a useful method. From a personal perspective, you can list or you can get the information about car from any specific person.
+
+59
+00:17:10,855 --> 00:17:17,975
+Also from car perspective you can get person information.
+
+60
+00:17:18,975 --> 00:17:26,935
+Şimdi bu iki yönlü ilişkide arkadaşlar yapılan şey her bir sınıfın referansı birbirini saklayabiliyor.
+
+61
+00:17:27,615 --> 00:17:28,855
+Birbirine refera edebiliyor.
+
+62
+00:17:28,855 --> 00:17:34,235
+Bu özellikle veri tabanı gibi uygulamalarda çok yapılan bir şeydir.
+
+63
+00:17:34,235 --> 00:17:59,595
+Bunu object oriented programlama seviyesinde birbirinin referanslarını böyle göstererek yapıyoruz. Hatta burada bakın bir dependency de var. Şu dependency buradaki person bunu kullanıyor. Ama şu bir neyi gösteriyor bize bu ikisinin olması? Two way association gösteriyor.
+
+64
+00:17:59,595 --> 00:18:06,935
+Association'da dikkat etmeniz gereken en önemli şeylerden bir tanesi bir kişinin
+
+65
+00:18:07,604 --> 00:18:24,364
+arabası olmayabilir. Onun için sıfır veya bir yazıyoruz. Veya bir arabanın il sahibi olmayabilir. Onun için sıfır veya bir yazıyoruz. Birazdan association'dan daha güçlü, biraz daha farklı bir ilişki modeli göreceğiz. Orada diyeceğiz ki sıfır olamaz. Yani il ya en az bir olur diyeceğiz.
+
+66
+00:18:26,543 --> 00:18:27,604
+Evet, size
+
+67
+00:18:27,604 --> 00:18:29,944
+different
+
+68
+00:18:29,944 --> 00:18:30,784
+Und...
+
+69
+00:18:34,675 --> 00:18:57,175
+Have you noticed the differences between one and one way and two way association in the perspective class schema? We had to change the car class because we had to add a new reference. The class person stayed the same. Let's look at the difference.
+
+70
+00:18:57,175 --> 00:19:27,076
+One-way association. This is a person class. This is a car object reference. But there is no any person object. When we look at the two-way association, we had to change the car class.
+
+71
+00:19:27,175 --> 00:19:33,775
+We have put a new example into a different package as the class car needed to be changed.
+
+72
+00:19:35,175 --> 00:19:45,175
+From the person perspective, a car object can be created without any owner in current design.
+
+73
+00:19:47,175 --> 00:19:56,175
+0 and 1, 0 or 1 on person side means that 0 or more person can be associated with a car.
+
+74
+00:19:56,175 --> 00:20:19,936
+Yani bir arabanın birden fazla sahibi olabilir mi? Olabilir diyoruz. Pardon birden fazla diyorum. Hiç sahibi olmayabilir veya en az bir tane sahibi olabilir dedik. Bu ilişkili bunda kurduk. Yapılacak olan şey dediğimiz gibi burada kar içerisinde böyle bir şey sağlamak. Şimdi karın içerisinde bunu ekleyince introduce yourself metodunda bir değişiklik yapmamız gerekiyor.
+
+75
+00:20:19,935 --> 00:20:48,275
+Çünkü bu arabanın herhangi bir sahibi varsa o sahibinin bilgisine gidecek owner.getname'den mesela çağıracak diğer sınıfta veya owner.introduyser.metodunu çağıracak oradaki şeyleri alacak ama yoksa işte şu kontrolü yapmamız gerekiyor yoksa ne alıyorduk bir hata alıyorduk burada ne hatasıydı yazın bakalım
+
+76
+00:20:48,275 --> 00:20:50,315
+Geçen derste görmüştük.
+
+77
+00:20:56,531 --> 00:21:22,671
+Geçen ders bir hata alın. Evet, null pointer exception. Teşekkür ederim Mutkan. Null pointer exception. Niye? Çünkü bunu buraya yazarak nesne üretmiş olmuyoruz. Nesne ancak nim ile üretilip referans birbirine atandıktan sonra oluyor. Dikkat edin burada, constructor içerisinde de karın içine bir nesne geliyor. Nesnenin referansı geliyor aslında. Bu nesneyi ne yapıyoruz? Buradaki şeyle ilişkilendiriyoruz.
+
+78
+00:21:27,443 --> 00:21:35,603
+Bunu yapmamızın sebebi niye bunu kırmızıyla uyguladık? Çünkü diyor şeyden kaçınmamız gerekiyor. Evet burada
+
+79
+00:21:35,603 --> 00:21:44,243
+Look at this example. A person object, a car object
+
+80
+00:21:44,243 --> 00:21:55,683
+A car is assigned into octa reference. Okey, octa object.
+
+81
+00:21:55,683 --> 00:22:19,903
+Also, vice versa, rover object is assigned into octa object. This is a two-way association, implementation. Introduce self octa, rover introduce self. Here, Aziz object, Honda is another object. We are setting all of them.
+
+82
+00:22:19,903 --> 00:22:25,743
+we are writing this introduce yourself method.
+
+83
+00:22:33,491 --> 00:22:35,672
+Bu kodu çalıştırırsınız arkadaşlar.
+
+84
+00:22:38,611 --> 00:22:39,311
+Şuradaki kodu.
+
+85
+00:22:44,884 --> 00:22:56,963
+Burada bir problem var mı? Niye bu 6. ve 7. satırları yazmak zorunda kaldık?
+
+86
+00:22:58,771 --> 00:23:01,492
+Sizce? Niye böyle bir şey yaptık?
+
+87
+00:23:09,236 --> 00:23:20,395
+Evet. Yani şu ana kadar set get metotlarını genelde set id, get id gibi şeylerde kullanıyoruz. Peki niye burada böyle bir şey yaptık? Birinize soralım.
+
+88
+00:23:25,460 --> 00:23:26,419
+Tolga sağlam.
+
+89
+00:23:34,132 --> 00:23:35,191
+Şevket Uğuz
+
+90
+00:23:35,191 --> 00:23:38,831
+Buradayım hocam, buyurun.
+
+91
+00:23:39,612 --> 00:23:41,052
+Niye böyle bir şey yaptık burada?
+
+92
+00:23:41,951 --> 00:23:46,111
+Hocam bunlar private olduğu için atamak için kullanmış olabilir miyiz?
+
+93
+00:23:46,472 --> 00:23:55,271
+Yani diğer değişkenlerde de private oluyordu. Yani bunu yapmamızın sebebi private'dan ziyade hani şu ana kadar gördüğümüz ilişkiler arasında.
+
+94
+00:23:57,491 --> 00:23:58,931
+Hani neyi karşılıyor bu?
+
+95
+00:24:00,972 --> 00:24:03,132
+Valla hocam tam bir şey çıkaramadım.
+
+96
+00:24:03,132 --> 00:24:14,812
+Şimdi araba dediğimiz bir nesne, Oktay diye bir nesnemiz var. Bu Oktay'ın sınıf tanımına bakarsak, Şevket, bakalım.
+
+97
+00:24:20,180 --> 00:24:47,339
+şey aynı. Bunun sınıf tanımına baktığımızda burada ne objesi tutması gerekiyor? Kar objesi tutması gerekiyor. Bir referans. Aynı şekilde kar da bir kişi objesi tutması gerekiyor. Eğer bunları atama yapmazsam ne olur? Zaten segmenter için null pointer exception alırız. Onun için ne yapmamız lazım? Burada kodda şu atamaları yapmamız gerekiyor. Yani bunun şeyi bu. Çünkü two-way association
+
+98
+00:24:47,339 --> 00:25:01,180
+R
+
+99
+00:24:50,804 --> 00:24:54,463
+Ancak bu şekilde sağlanır. Aynısı burada da var bakın.
+
+100
+00:24:57,703 --> 00:25:17,984
+Bu sayede şu plakası verilen bir kişinin, bir arabanın adını, soyadını veya ne bileyim diğer bilgilerine erişebilirim veya bu isme ait kişinin arabasının bilgileri veya diğer verilerine de ulaşabilme imkanım olacak.
+
+101
+00:25:23,604 --> 00:25:26,643
+Bu satırları unutsak ne olurdu? Yazmasak ne olurdu?
+
+102
+00:25:27,223 --> 00:25:29,323
+No pointer, Utkan'ın söylediği hatayı alırdık.
+
+103
+00:25:34,036 --> 00:25:46,996
+Peki, şurada Octave Rover ve Aziz Honda yanlışlıkla böyle bir crossover yapsak nasıl olur?
+
+104
+00:25:54,867 --> 00:25:55,307
+Evet
+
+105
+00:26:02,420 --> 00:26:08,599
+Hocam sorunun dediğini biraz açıklayabilir misiniz? Ben anlayamadım da sorunun dediği zaman.
+
+106
+00:26:08,699 --> 00:26:31,799
+Oktay bir kişi, person, P1 diyelim. Bu C1. Bu P2. Bu C2. P1'e C2'yi atasak, ondan sonra C1'i P2'yi atasak veya ne bileyim P1'e P2'yi zaten atayamayız. Bunlar set get metodlarıyla yapılan işte araba veya kişi tanımları.
+
+107
+00:26:31,799 --> 00:26:51,499
+P1'e C2 arabasını tanımlasak, aynı zamanda P2'ye de C2'yi tanımlasak ne oluyor? Yani bir C2 objesi var, P1 de bunu refere edecek, P2 de refere edecek olabilir mi?
+
+108
+00:26:51,499 --> 00:27:02,339
+Yani bu araba şey olarak bir nesne sonuçta hani Unique A arabasını hani özel bir arabaya göstermediğini düşünürsek bence olabilir hocam
+
+109
+00:27:02,339 --> 00:27:07,219
+Göstereyim gösteriyor yani C1 dediğimiz şurada işte plakası olan Unique bir araba
+
+110
+00:27:10,740 --> 00:27:29,500
+Evet, şimdi bu kodu çalıştıracaksınız arkadaşlar. Bakarsınız laboratuvar seansında birinize sonra. Many to many gibi bir şey oluyor. Doğru. Yani ona ne olacağına bakacağız. Yani ben P1 ile P2'nin işte C2 arabasını atamasını yapabilir miyim? Yapabilirim. Hiçbir sıkıntı yok.
+
+111
+00:27:29,500 --> 00:27:42,639
+C2'den C2.set, işte person, set, owner metodunu bir kere tek parametre ile çağırabiliyoruz öyle değil mi? Şuradaki koda bir daha bakalım.
+
+112
+00:27:45,920 --> 00:27:49,740
+SetOwner tek bir parametre. Dolayısıyla burada iki tane bir şey atamam mümkün değil.
+
+113
+00:27:49,740 --> 00:28:05,519
+Ama bu arabayı yani bir C2 arabasını sabit bir arabayı set owner yaparken en fazla bir objeyi atayabilirim. Yani P1 objesine.
+
+114
+00:28:05,939 --> 00:28:11,059
+P1 objesine atama yaptıktan sonra tekrar set owner yapınca ne olur?
+
+115
+00:28:11,059 --> 00:28:41,019
+şunu yapınca önce mesela C2.setOwner dedik P1 sonra C2.setOwner dedik P2 yaptık ne olur burada? Hocam araba el değiştirmiş gibi olmaz mı? Hah güzel şey yapacağımız şey bu arkadaşlar. Şunu olan bağıntısı gidiyor araba başka bir şeyi gösteriyor. C1 de bu arada C1 arabası
+
+116
+00:28:41,019 --> 00:28:42,019
+Bu arabanın da bu arabanın da sahibi P2 kişisi olabiliyor. Bunlar farklı arabalar olacağı için bu kişinin birden fazla arabası olacakmış gibi oluyor. Problem değil. Tamam mı? Buna bir bakın. Yani o kodu...
+
+117
+00:29:11,019 --> 00:29:15,619
+O zaman bu şey ilk kullanıcının artık şeyin nal mı gözükecek arabası?
+
+118
+00:29:16,659 --> 00:29:19,519
+Yani o yine nal gözükmeyecek.
+
+119
+00:29:19,519 --> 00:29:20,059
+Şimdi şöyle.
+
+120
+00:29:23,100 --> 00:29:23,980
+P1 var.
+
+121
+00:29:25,219 --> 00:29:25,939
+P2 var.
+
+122
+00:29:26,260 --> 00:29:27,879
+Sen diyorsun ki C1 ve C2.
+
+123
+00:29:28,019 --> 00:29:29,659
+C1'i P1'e gösterdik.
+
+124
+00:29:30,979 --> 00:29:32,499
+P1'de C1'i gösteriyor.
+
+125
+00:29:33,299 --> 00:29:34,059
+Bu bunu gösteriyor.
+
+126
+00:29:34,180 --> 00:29:34,960
+Bu da bunu gösteriyor.
+
+127
+00:29:35,040 --> 00:29:36,100
+İlk durumda böyleyiz.
+
+128
+00:29:37,680 --> 00:29:38,439
+Şimdi ne yapacağız?
+
+129
+00:29:39,639 --> 00:29:40,359
+Senin dediğin de.
+
+130
+00:29:41,019 --> 00:29:56,919
+Hocam şey C2 çok önemli. C1 önce P1'i gösteriyordu. Sonra P2'yi gösteriyor ya. O şey bağlantısı kopmuş olacak. C1 ile P1 arasındaki bağlantı kopmuş olacak. O durumda ne olacak?
+
+131
+00:29:56,919 --> 00:30:22,039
+Bu gidince P2'nin üzerinde bulunan araba C2 olarak hala görünür. Ama C1'in de sahibi P2 görünüyor, C2'nin de sahibi P2 görünüyor. Olur. Çünkü ben burada P2 üzerinde bir şeyi atama yapmadım. P2'nin içerisinde zaten person diye bir şey yok. Bu kişi kendisi zaten bir kişi.
+
+132
+00:30:22,040 --> 00:30:49,900
+Ama C2, C1'in altındaki owner alanında bunu atadım. C1 de bunu atadım. C2 de buraya gösteriyordu. İkisi de aynı sahibi gösterecek. Tamam mı? Anladım hocam. Teşekkürler. Şununla olan bağlantı kopuyor. Bu kişi hala ama C1 hala C1 arabasına sahip olarak kalıyor.
+
+133
+00:30:54,867 --> 00:31:19,767
+Bütün bu kusurlar, sıkıntılar, hatalar, two-way association'ı daha kuvvetli yaparak geliştirilebilir. Programın bazı kısımlarında hata yapacağız. Mesela şey, kontrol yapacağız. Diyeceğiz ki, bu arabanın işte kaç tane şeyi var? Buna bakacağız daha sonra.
+
+134
+00:31:19,767 --> 00:31:46,588
+Mesela diyeceğiz ki en basit örnek şu. This dediğimiz şey neydi? Nesnenin kendisi. Yani o sınıfı, o metodu çağıran, o şeyi çağıran bir nesne. Mesela diyebiliriz ki şu. Bir set car yaparken kime? Bir kişiye. Bu kişinin get owner, bu arabanın, şu arabanın get owner'ını getir.
+
+135
+00:31:46,587 --> 00:31:54,867
+getirdikten sonra yani önce bu sınıfın sahip olduğu bir arabayı getiriyoruz.
+
+136
+00:31:56,607 --> 00:32:02,687
+Bunu ne yapıyoruz daha sonra pardon bu sınıfın sahip olduğu arabayı getiriyoruz.
+
+137
+00:32:02,687 --> 00:32:03,228
+Diskar.
+
+138
+00:32:04,547 --> 00:32:12,927
+Diyoruz ki bu gelen karın sahibi buna eşit değilse atayabilirsin.
+
+139
+00:32:13,827 --> 00:32:14,767
+Mesela bu bir yöntem.
+
+140
+00:32:14,768 --> 00:32:23,408
+Aynısını şey tarafında, kar tarafında, owner.getcar, buna eşit değilse bu gelen şeyi ata.
+
+141
+00:32:24,187 --> 00:32:26,528
+This dediğimiz şeyi bakın burada çok güzel kullanamıyoruz.
+
+142
+00:32:26,668 --> 00:32:29,668
+This neydi? Nesnenin kendi referansıydı arkadaşlar.
+
+143
+00:32:30,187 --> 00:32:33,448
+Hani this nokta ne diyorduk? Biz işte bir id'ye ulaş.
+
+144
+00:32:33,448 --> 00:32:41,528
+Aslında bu nesnenin bu fiziksel olan, atanmış, assign edilmiş bu nesnenin id alanına eriştirmekti bu.
+
+145
+00:32:41,527 --> 00:32:48,247
+Böyle bir modifikasyonla ne yapabiliriz? Bunu sağlayabiliriz arkadaşlar.
+
+146
+00:32:50,747 --> 00:32:52,467
+Bakın ne yapmış burada?
+
+147
+00:32:54,207 --> 00:33:01,087
+Bir nesne oluşturulurken, constructor'ın da plaka numarasını doğrudan oluşturuyor.
+
+148
+00:33:02,907 --> 00:33:10,167
+Constructor'a atanan yani parametre olarak gönderilen kişi sahip nesnesini set owner'a gönderiyor.
+
+149
+00:33:10,168 --> 00:33:28,768
+Set, owner'dan ne yapıyor? Biraz önce bahsettiğimiz şekilde bunu doğrudan bu nesneye geleceği için nesne üretirken dolaylı yoldan atama yapmış oluyor. Bakın bu da güzel bir çözüm. İlla ki gidip de burada dis.owner eşittir,owner demeye gerek yok. Bu şekilde de yapılabilir.
+
+150
+00:33:34,228 --> 00:33:34,707
+Evet
+
+151
+00:33:39,955 --> 00:33:56,775
+Şimdi baktığımızda Oktay var. Oktay'ın arabası var. Bu Oktay'ın kişi bilgisi burada. Oktay introduce yourself dediğinde bakın burada herhangi bir şey gönderilmemiş. Bunun arabası yok.
+
+152
+00:33:56,775 --> 00:34:11,316
+Ama araba kısmında Oktay'a Oktay nesnesi referans olarak veriliyor. Oktay kendini introduce ettiğinde veya Rover kendini introduce ettiğinde göreceğimiz sonuç birbirlerini çok rahat göreceklerdir.
+
+153
+00:34:22,835 --> 00:34:41,615
+Şimdi burada tabii iki yönlü ilişkide bu objelerin birbirini referans etmesi aslında kolaylık gibi. Fakat oluşacak exceptional hallerde buna dikkat etmek gerekiyor. Ekstra gerekli kontroller yapmak gerekiyor. İşte burada bunu söylüyoruz.
+
+154
+00:34:41,615 --> 00:34:56,555
+Yoksa tek yönlü bir ilişkide çok fazla bunların karışması söz konusu değil. Yani tek yönlü ilişki şöyle person 1 diyelim ancak kar 1 objesinden referans olacak.
+
+155
+00:34:56,715 --> 00:35:10,355
+Burada yapılan şey sadece bu karan ait bir referans tuttuğu için karşı taraftan karışma olası da yok. Hele bir de bunu 0 veya 1 yaparsak ikinci bir obje atama imkanı da olmayacak.
+
+156
+00:35:10,356 --> 00:35:12,516
+Dolayısıyla daha güvenli olacak.
+
+157
+00:35:14,556 --> 00:35:15,876
+Şimdi geldik.
+
+158
+00:35:16,276 --> 00:35:16,795
+Aggregation.
+
+159
+00:35:17,216 --> 00:35:20,236
+This is another type of relation between objects.
+
+160
+00:35:20,516 --> 00:35:21,115
+Aggregation.
+
+161
+00:35:22,255 --> 00:35:27,516
+Aggregation is a part relation.
+
+162
+00:35:28,856 --> 00:35:30,715
+Integrity and part relation.
+
+163
+00:35:32,715 --> 00:35:35,715
+Whole part relationship also you can say.
+
+164
+00:35:35,715 --> 00:35:47,715
+For example, in a bus route, there may be one, at least one and more stop.
+
+165
+00:35:48,915 --> 00:35:49,155
+Okay.
+
+166
+00:35:49,795 --> 00:35:55,415
+So in this type relation between objects, we are using a concept.
+
+167
+00:35:55,615 --> 00:35:57,335
+We are using aggregation concepts.
+
+168
+00:35:57,335 --> 00:36:01,855
+It is different association and dependency.
+
+169
+00:36:01,855 --> 00:36:15,135
+Here at least one object must be kept inside this class. Maybe another class one.
+
+170
+00:36:21,172 --> 00:36:45,012
+Agregation sometimes implies that one, the number of reference one, sometimes you cannot, you don't see cardinality here. This is an implication of one. It's a hidden, a bit hidden.
+
+171
+00:36:45,012 --> 00:36:52,112
+To show multiplicity, we are using asterisk character.
+
+172
+00:36:52,112 --> 00:36:59,951
+It is stronger than association, but it is only conceptually stronger.
+
+173
+00:37:00,651 --> 00:37:07,311
+In terms of implementation, there is no strong difference.
+
+174
+00:37:07,831 --> 00:37:08,791
+This is very important.
+
+175
+00:37:08,791 --> 00:37:19,591
+This is explanation about between bus route, route and stop.
+
+176
+00:37:19,591 --> 00:37:24,551
+Şimdi arkadaşlar aggregation bütün parça ilişkilerini gösteriyor.
+
+177
+00:37:24,712 --> 00:37:28,431
+Tabi bütünlük ve parçalık arasında burada biraz daha detaylanacak.
+
+178
+00:37:29,231 --> 00:37:35,112
+Şeyden biraz daha kuvvetli, konseptsel, kavramsal olarak association'dan biraz daha kuvvetli.
+
+179
+00:37:35,831 --> 00:37:36,511
+Burada ne yapılıyor?
+
+180
+00:37:36,511 --> 00:37:57,691
+bas rotası, bir işte otobüs, yol birden fazla durak içerir. En az bir tane içermek zorundadır. Bakın biraz önce dediğimizde bir kişinin bir tane arabası olmak zorunda değil veya bir arabanın bir tane sahibi olmak zorunda değil. Sıfırda olabilir demiştik. Burada olmak zorunda işte. O bir şuna karşılık geliyor. Buna dikkat edelim.
+
+181
+00:38:01,940 --> 00:38:17,900
+This is a explanation of relation. A instance has multiple B instances. A is a whole, B is a part.
+
+182
+00:38:17,900 --> 00:38:43,579
+Within this whole part relationship there is no strict relation. This is a flexible. Namely, or in other words, bus route and stop objects can live simultaneously, can live concurrently.
+
+183
+00:38:43,579 --> 00:38:49,480
+Even if we delay the relationship between themselves.
+
+184
+00:38:49,480 --> 00:38:50,039
+Okay.
+
+185
+00:38:51,099 --> 00:38:58,599
+If we delay the relation between two objects, each of them can leave.
+
+186
+00:38:59,759 --> 00:38:59,999
+Okay.
+
+187
+00:39:00,759 --> 00:39:11,520
+Yani burada parça bütün ilişkisinde arkadaşlar, aggregation'da, içerisi boş olan diamond'da, bunlar birbirinden bağımsız olarak yaşayabilen objelerdir.
+
+188
+00:39:13,579 --> 00:39:32,419
+Geçen zaten Toprak Hoca bu konuda örnek yaptı size. Öyle objeler olacak ki ikisi arasında birisini silersek, mesela burada bus route'u silersek duraklar yaşamaya devam etmesi lazım. Bunu biz nereden çıkaracağız? Senaryodan çıkaracağız. Düşünün Mecidiyeköy'den.
+
+189
+00:39:36,532 --> 00:39:38,471
+41AT ile kampüse geliyoruz.
+
+190
+00:39:40,032 --> 00:39:40,751
+YTV'ye.
+
+191
+00:39:42,911 --> 00:39:45,452
+Arada şurada Eyüp durağı var.
+
+192
+00:39:47,311 --> 00:39:49,872
+Eğer ben 41AT'yi silersem,
+
+193
+00:39:51,571 --> 00:39:56,411
+aradaki bütün durakları da, yani 41AT'ye bağlı olan bütün durakları da silmem gerekir.
+
+194
+00:39:56,411 --> 00:39:57,991
+Eğer güçlü bir ilişki olsaydı.
+
+195
+00:39:58,151 --> 00:40:00,651
+Bunu silince, buradan başka otobüsler de geçiyor.
+
+196
+00:40:01,231 --> 00:40:03,311
+Cevizli Bağ'dan bir sürü otobüs geçiyor.
+
+197
+00:40:03,431 --> 00:40:05,011
+Onu sonra Eyüp'ten başka otobüsler geçiyor.
+
+198
+00:40:05,011 --> 00:40:13,691
+O zaman bundan şunlar da etkilenir. Diğer hatlar da etkilenir. Diğer hatlar da etkileneğince diğer hat üzerinde eyüp durağı görünmez.
+
+199
+00:40:14,411 --> 00:40:23,371
+Hani o aradaki durak gider veya başka şeyler, sıkıntılar olur. İşte bu tarz bir senaryo karşınıza gelirse bu tamamen okuyup anlayıp,
+
+200
+00:40:23,971 --> 00:40:28,551
+geçen hafta ben size bir veritabanı örneği yapmıştım ya, aynı onun gibi düşüneceksiniz.
+
+201
+00:40:28,552 --> 00:40:38,851
+Mesela öğrenci kursa derse kaydoldu. Öğrenci en az bir derse kaydoldu veya işte beş derse kaydoldu en fazla diyelim. Bir ila beş diyeceğiz.
+
+202
+00:40:41,231 --> 00:40:46,152
+Şimdi sıfır derse kaydoldu. En az bir tanesinin zorunda diyelim.
+
+203
+00:40:47,532 --> 00:40:57,951
+Şimdi öğrenci derse kayıt olma ilişkisini tamamladığında, sildiğinde veya ne bileyim siz dersten çekiliyorsunuz, dropout yapıyorsunuz. Ders silinmemesi gerekir değil mi arkadaşlar?
+
+204
+00:40:58,551 --> 00:41:01,511
+İşte bu ilişki aggregation ile sağlayabiliriz.
+
+205
+00:41:02,591 --> 00:41:09,211
+Composition is a strict whole part relation between two objects.
+
+206
+00:41:10,451 --> 00:41:16,131
+Also, there may be no cardinality number.
+
+207
+00:41:16,991 --> 00:41:25,631
+If we don't see any number, we will imply or infer one.
+
+208
+00:41:25,631 --> 00:41:48,311
+Other side may be asterisk. Team consists of a number of players. This is a strict relationship. But in terms of this scenario, this may not be strict because team and player can live concurrently.
+
+209
+00:41:48,311 --> 00:42:05,532
+Yani burada takımla oyuncular arasında bu verilen örnek pek güzel olmamış. Yani oyuncu transfer olabilir. Yani burada takım ve oyuncu arasında bilmiyorum belki farklı bir oyun düşünüldü. Takımı sildiğiniz zaman bu anlayışta oyuncular da yok oluyor.
+
+210
+00:42:05,532 --> 00:42:19,791
+Çünkü şimdi şöyle diyelim class team yaptığınızda bu class team'in içerisinde new player oluşturuyorsunuz. İşte constructor'da falan. Tamam mı?
+
+211
+00:42:21,972 --> 00:42:30,472
+Bunun constructor'ında new player oluşuyor. Bunun constructor'ında new player oluşunca bu nesne silinince constructor'ında oluşan nesneler de siliniyor.
+
+212
+00:42:30,472 --> 00:42:50,951
+Ama şurada Constructor'da stop nesnesi oluşturulmuyor. Stop nesnesi ayrı oluşturuluyor. Bus route ayrı oluşturuluyor. Aynı araba örneğinde olduğu gibi bu ikisi birbirine daha sonradan set ediliyor. Veya Constructor yardımıyla dışarıdan atanıyor.
+
+213
+00:42:50,951 --> 00:43:02,631
+Nive içerisinde, Nive'i şurada, burada kullandığımız gibi aggregation'da kullanmıyoruz. Nive ile nesne oluşturma burada kullanılmıyor. Buna dikkat edelim.
+
+214
+00:43:04,011 --> 00:43:07,612
+This is a stronger whole part relation between two objects.
+
+215
+00:43:11,188 --> 00:43:23,827
+Strength of composition over aggregation is that in composition the part can only be blank belong to one whole at the same time same time.
+
+216
+00:43:25,507 --> 00:43:30,868
+For example, player is directly related to this team.
+
+217
+00:43:30,868 --> 00:43:43,028
+You cannot assign this player other team because we are defining player objects inside team class.
+
+218
+00:43:43,028 --> 00:43:52,908
+Şimdi bu niye böyle? Burada bu açıklamayı vermiş. Çünkü biz bunu, bu player'ı team sınıfının içerisinde kodluyoruz. Onun için böyle bir durum var.
+
+219
+00:43:54,487 --> 00:43:57,908
+Comparison between association, aggregation and composition.
+
+220
+00:43:57,907 --> 00:44:10,907
+implementation is for this similar. In order to implement multiplicity, we will use arrays or data structures.
+
+221
+00:44:11,567 --> 00:44:19,707
+You are taking data structure course. Inside the object-oriented course, we are using the same structures.
+
+222
+00:44:19,707 --> 00:44:42,507
+for example, lists, queue, stack, linked list, tree, graph, heap, or array, you know. We will use the same data structures. To do this, in the next or two weeks later, we will study about these concepts.
+
+223
+00:44:42,507 --> 00:44:57,507
+We will begin with Arrays as using object arrays. Actually we are using or we studied object arrays, for example, Kitaplar or Yazarlar, right?
+
+224
+00:44:57,507 --> 00:45:04,507
+This is similar to float array or integer array.
+
+225
+00:45:04,507 --> 00:45:10,167
+Yes, this is a composition example.
+
+226
+00:45:10,747 --> 00:45:16,167
+Create a gallery class associated with multiple class to be solved.
+
+227
+00:45:18,647 --> 00:45:22,667
+Here we will use the car class for composition.
+
+228
+00:45:23,628 --> 00:45:25,747
+Okay, this is a composite relationship.
+
+229
+00:45:27,107 --> 00:45:33,288
+You may want to add a constructor with having only the lessons played as parameter.
+
+230
+00:45:34,507 --> 00:45:50,507
+However, I opt for not doing this. We can assign the gallery an owner. A person instance as some kind of temporary owner. Okay. We will see the code.
+
+231
+00:45:50,507 --> 00:45:58,627
+I opted for representing the relation between the gallery and cars with the composition relation.
+
+232
+00:46:00,347 --> 00:46:05,627
+You can choose to show this relation, one and asterisk association, it does not matter.
+
+233
+00:46:06,507 --> 00:46:09,967
+This example shows the arrays and the four loop.
+
+234
+00:46:10,727 --> 00:46:13,767
+Yani bu bizim yaptığımız kitap şey örneğine benziyor arkadaşlar.
+
+235
+00:46:13,947 --> 00:46:14,767
+Şimdi bunu inceleyelim.
+
+236
+00:46:14,768 --> 00:46:31,008
+yes this is a person and this is a car and between person and car there is a association relation with two way
+
+237
+00:46:31,008 --> 00:46:40,148
+between person and gallery there is a composite relationship composition relationship
+
+238
+00:46:40,147 --> 00:46:45,307
+Inside gallery there may be a number of cars.
+
+239
+00:46:46,747 --> 00:46:46,887
+Okay.
+
+240
+00:46:47,767 --> 00:46:50,727
+So we are using this.
+
+241
+00:46:52,187 --> 00:46:58,787
+We are using an array to supply this relationship.
+
+242
+00:47:00,767 --> 00:47:02,227
+Array is important.
+
+243
+00:47:02,227 --> 00:47:09,067
+Inside the gallery we have to specify the number of cars.
+
+244
+00:47:10,708 --> 00:47:33,907
+Gallery owner is another person. This is another relationship between gallery and car. This is a... Which type of relation? What do you say? What is the type?
+
+245
+00:47:34,708 --> 00:47:41,367
+Composition olabilir mi canım? Yani onun olmasına bağlı ya parçası olarak düşünürsek.
+
+246
+00:47:44,048 --> 00:47:51,027
+Şimdi şurası, ben şunu yanlış söyledim. Burası nedir arkadaşlar? Miracettin. Bu Composition dedi.
+
+247
+00:47:52,228 --> 00:47:55,208
+Yani onun parçası olacak diye düşündüm.
+
+248
+00:47:55,687 --> 00:47:57,947
+Galeride arabalar bir parçası.
+
+249
+00:47:57,947 --> 00:48:08,208
+Ha şimdi implementasyonda yani şu görünüşle baktığımızda bu composition da olabilir, parsanın sözü de aggregation da olabilir.
+
+250
+00:48:10,388 --> 00:48:19,327
+Ben şeyden anlıyorum ki galeride birçok araba olacak, galeriyi yok ettiğinde arabalar da yok olacaksa o zaman bu composition daha ağır basıyor burada.
+
+251
+00:48:20,548 --> 00:48:25,367
+Yani aggregation ile işte composition'ın o küçücük farkı burada ortaya çıkıyor.
+
+252
+00:48:25,367 --> 00:48:28,167
+Toprak Hoca'yla yaptığımız derste örnek vermiştik.
+
+253
+00:48:28,367 --> 00:48:30,447
+İnsan vefat edince kafası da yok oluyor.
+
+254
+00:48:30,447 --> 00:48:33,327
+Ne bileyim veya diğer organları da yok oluyor.
+
+255
+00:48:34,088 --> 00:48:40,508
+Veya bir kütüphaneyi yok ettiğinizde kitaplar yok olacak diye bir şey değil.
+
+256
+00:48:41,008 --> 00:48:44,947
+Veya bir kütüphaneyi yok ettiğinizde raflar yok olabilir ama kitaplar yok olmak zorunda değil.
+
+257
+00:48:45,108 --> 00:48:47,087
+İşte bu ilişkiyi düşüneceğiz burada.
+
+258
+00:48:47,767 --> 00:48:52,047
+Peki şuradaki, what is the relationship between this?
+
+259
+00:48:53,987 --> 00:48:54,547
+What type?
+
+260
+00:49:01,139 --> 00:49:01,639
+Evet.
+
+261
+00:49:09,331 --> 00:49:25,331
+Through the gallery owner member field, we used, we construct a relation between person and gallery. What is the name of this relation or type of this relation?
+
+262
+00:49:28,019 --> 00:49:29,019
+Evet arkadaşlar.
+
+263
+00:49:30,419 --> 00:49:32,179
+Niye bugün herkes çok mu yorgun ya?
+
+264
+00:49:35,119 --> 00:49:36,039
+Çağdaş Çetin.
+
+265
+00:49:41,619 --> 00:49:43,039
+Enes Altın Gemi
+
+266
+00:49:47,860 --> 00:49:48,879
+Kadir Soner
+
+267
+00:49:48,879 --> 00:49:52,479
+Bugün hocam
+
+268
+00:49:52,479 --> 00:49:55,099
+Burada nasıl bir ilişki olabilir Kadir?
+
+269
+00:49:55,860 --> 00:50:00,419
+Şimdi galeriyi yok edince person yok olmaz gibi düşündüm ben o yüzden
+
+270
+00:50:00,419 --> 00:50:10,499
+Tamam kompozisyonu eledik. Peki galeriyle person arasında bir parça bütün ilişkisi var mı ki kompozisyona veya aggregation'a gidelim?
+
+271
+00:50:14,499 --> 00:50:15,540
+Evet
+
+272
+00:50:14,164 --> 00:50:30,403
+Yani kişi galerinin bir parçası mı? Galeride insan satmıyoruz yani. Parça bütün ilişkisi olmadığı için zaten aggregation veya kompozisyona gitmemiz gerekmiyor. O zaman ne olabilir?
+
+273
+00:50:34,804 --> 00:50:50,343
+Başka hangi ilişkilerimiz vardı? Onları da say istersen. Zaten beş tane. Ben tam hatırlamıyorum ya. Tamam. Başka birine soralım. Muhammed Taha Gökçen.
+
+274
+00:50:54,324 --> 00:50:57,683
+Hocam, association olabilir mi?
+
+275
+00:50:58,023 --> 00:50:58,423
+Efendim?
+
+276
+00:50:59,083 --> 00:51:00,103
+One way association.
+
+277
+00:51:01,304 --> 00:51:02,943
+Association olabilir mi dedik.
+
+278
+00:51:05,084 --> 00:51:09,003
+One way mi? Evet, bakın one way oldu zaten okun yönden mi? Güzel.
+
+279
+00:51:09,803 --> 00:51:19,443
+Niye association? Çünkü arkadaşlar galeriyle person arasında hani burada galeride hani bir insan ticareti yapılmıyor, araba ticareti yapılıyor.
+
+280
+00:51:19,443 --> 00:51:31,043
+Bununla alakalı bir parça bütün ilişkisi yok. Bu yönetme ilişkisi gibi bir şey yani galerinin bir tane sahibi olacak. Onun için burada association olacak bu.
+
+281
+00:51:32,443 --> 00:51:43,103
+Kişiyle araba bu kişinin kendine ait bir arabası olabilir mi? Elbette olabilir. O zaman bu da kişinin arabasını gösteren veya bu arabanın sahibini gösteren bir ilişki.
+
+282
+00:51:43,103 --> 00:51:53,043
+Bu şuraya ne diyeceğiz? Şimdi onu da birinize soralım. Kadir teşekkür ederim. Toygar sana soralım onu da.
+
+283
+00:51:57,748 --> 00:51:58,407
+Toygar
+
+284
+00:52:01,972 --> 00:52:03,011
+Mustafa Onur.
+
+285
+00:52:06,932 --> 00:52:08,091
+Buradayım hocam.
+
+286
+00:52:08,751 --> 00:52:11,691
+Evet, buradaki ilişki nasıl olabilir Onur?
+
+287
+00:52:13,551 --> 00:52:15,352
+Person ile kar arasında.
+
+288
+00:52:16,651 --> 00:52:17,171
+Adı nedir?
+
+289
+00:52:19,171 --> 00:52:23,472
+Aggregation ve composition olmaz. Bir parça bütün ilişkisi yok.
+
+290
+00:52:23,472 --> 00:52:24,072
+Evet.
+
+291
+00:52:24,072 --> 00:52:34,852
+association olur gibi geliyor bana ama bir dependency falan olduğunu da sanmıyorum çünkü bir tür bağımlılık değildir.
+
+292
+00:52:34,852 --> 00:52:47,492
+Niye? Çünkü burada bunun kar objesine sahipliği var. Burada da bunun kişi objesine sahipliği var. O zaman association olacak. Güzel. Peki nasıl bir association? Hangi yönlere bakımından ne dersin?
+
+293
+00:52:49,232 --> 00:52:51,891
+Çift yönlü olur hocam. Two-way association.
+
+294
+00:52:51,891 --> 00:53:21,431
+2-way association. Tamam teşekkür ederim. Evet demek ki böyle bir senaryo varmış. Şimdi şu sınıflara baktığımızda arkadaşlar set ve get metotlarını görüyoruz. Memberlarla alakalı. Bakın burada get set. Searchlere daha sonra bakacağız. Arabanın satılmasıyla alakalı bir şeyler var. Şunlar bildiğimiz set get metotları. İşte burada da set get metotları var. Bir tane introduce yourself var. Şimdi galeriye araba ekleme.
+
+295
+00:53:21,891 --> 00:53:42,391
+Şimdi kütüphanedeki kitapla, rafa, kitap ekleme gibi bir şey olur bu. Aynı onun gibi bir tane kar objesi geliyor. Buradaki kar listesine eleman ekliyor. Daha Parsa'nın birkaç ders önce söylediği bir diziye birden fazla dizi ekleme, yani bir başka diziyi mörç etme o da gelecek.
+
+296
+00:53:42,391 --> 00:54:01,931
+Galide'de araba arama. Yani ne yapacağız? Bir kar objesi burada gelecek. Bu araba acaba var mı? Bunu kar objesiyle aramış. Bir de plaka numarası ile aramış. Bakın iki türlü arama yapacağız. Demek ki şu dizi içerisinde, şurada bahsedilen dizi içerisinde bir arama yapacağız.
+
+297
+00:54:01,931 --> 00:54:28,311
+Bir arabayı silme. Muhtemelen burada silinecek arabanın plakasını alıyoruz. Veya bir arabayı satış. Diyeceğiz ki şu plakadaki arabayı ne yap? Şu kişiye sat. Şimdi arabanın oraya satışı ne yapacağız? İşte buradaki bu arabanın şu person değerini ne yapacağız? Değiştireceğiz. Böyle bir şey olacak.
+
+298
+00:54:28,311 --> 00:54:57,451
+İşte introdusiyorsayta galeride ne kadar araba var, işte arabaların bilgileri neler, galerinin sahibi kim gibi işte galerinin adı ne bu tarz bilgilerin ekrana yazılması olacak. Bakın bu analizi yapamamız lazım. Müyemel class diagramında. Bunu yaptıktan sonra kodlaması yani çok kolay olacak. Yani nerede ne ilişki var? Şimdi ben bu ilişkilerin türünü görmeden körlemesine yazarsam olmaz. Şimdi bakalım. Galeri dediğimiz şey. Galeride ne vardı arkadaşlar?
+
+299
+00:54:57,451 --> 00:55:07,931
+Galerinin adı vardı, arabalar dizisi vardı, bir tane integer değer, bir tane de Galerinin owner vardı. Bakın bu alanlar getirildi, buraya yazıldı.
+
+300
+00:55:07,931 --> 00:55:16,632
+Bunu yazdığımız zaman, diyoruz ki Galeride nesne üretildiğinde bunun constructorını yazalım.
+
+301
+00:55:17,031 --> 00:55:25,811
+Şimdi constructorında bir kere ne olacak? Galerinin adını assign edebiliriz, galerinin sahibini assign edebiliriz.
+
+302
+00:55:25,811 --> 00:55:31,671
+Araba sayısının şu an için mesela belli bir değer verilmemiş sıfırdan başlatalım demiş.
+
+303
+00:55:31,791 --> 00:55:37,731
+Bu zaman kaç tane araba tutulduğunu söylüyor ve burada statik bir dizi oluşturulmuş.
+
+304
+00:55:37,791 --> 00:55:39,912
+Bakın burada new oluşturulması bakın burada.
+
+305
+00:55:41,291 --> 00:55:42,832
+O zaman bu işte kompozisyon oluyor.
+
+306
+00:55:44,912 --> 00:55:47,491
+Bu ilişkiden dolayı bu kompozisyon oluyor.
+
+307
+00:55:49,511 --> 00:55:52,632
+This is a memory allocation dediğimiz şey.
+
+308
+00:55:52,631 --> 00:56:00,731
+Yani burada en fazla 30 tane arabanın nesi tutulur? Referansı tutulacak. Bundan sonra
+
+309
+00:56:01,331 --> 00:56:05,931
+bu referanslara atamaları yapabileceğiz. Zaten o birazdan gelecek.
+
+310
+00:56:09,531 --> 00:56:15,891
+Galerinin adının get edilmesi, galerinin adının set edilmesi, daha sonra galerinin bilgilerinin yazılması var.
+
+311
+00:56:15,891 --> 00:56:21,311
+Şu bir string mesaj, bu string mesaja bir sürü değerler getiriliyor, yazılıyor.
+
+312
+00:56:22,672 --> 00:56:24,411
+Diğer bakın şey sınıflarımız aynı.
+
+313
+00:56:24,411 --> 00:56:29,692
+Sonra galeriye bir araba eklemek istediğimizde
+
+314
+00:56:29,692 --> 00:56:36,311
+Diyoruz ki önce bu arabayı bir kontrol edelim. Burada var mı? Eğer yoksa ekleyelim.
+
+315
+00:56:37,771 --> 00:56:41,192
+Demek ki aç kar diye bir metodumuz olacak. Ve galerimiz dolu mu?
+
+316
+00:56:42,951 --> 00:56:48,951
+Şu cars.langtinin ne olduğunu sizinle konuşmuştuk. Galerinin dolu olup olmadığını bize söylemişti.
+
+317
+00:56:48,951 --> 00:57:01,391
+Eğer bu şartlar sağlıyorsa yeni gelen şu arabamızı galeriye ekliyoruz ve car count'ımızı bir arttırıyoruz. Bu galeride bir tane de fazladan şey olur. Bakın kitap örneğinin aynısı neredeyse.
+
+318
+00:57:02,111 --> 00:57:11,151
+Ve bu işlem başarılı bir şekilde gerçekleştiği için buradan true dönüyoruz. Eğer şurada bir şart hatası varsa false değerini döndürüyoruz ve bu iş bitiyor.
+
+319
+00:57:11,151 --> 00:57:26,891
+You can learn the size of the array this way by this way, cars.length, but not the element count of the array. This is a limit or maximum number.
+
+320
+00:57:26,891 --> 00:57:33,631
+Therefore, we don't need a variable such as maximum car, maximum number of cars.
+
+321
+00:57:33,631 --> 00:57:40,571
+For example, like C define max, we are using a preprocessor.
+
+322
+00:57:40,751 --> 00:57:46,631
+There is no need to obtain the maximum number of elements.
+
+323
+00:57:47,251 --> 00:57:55,731
+But we need a variable, the active car numbers, for example, car count.
+
+324
+00:57:55,731 --> 00:58:24,411
+This is a bit useful implementation about the limits. Public final static int max car is equals to 30. This cannot be changed and all methods, all car objects
+
+325
+00:58:24,412 --> 00:58:31,912
+can see this as 30. This is a car count object.
+
+326
+00:58:38,643 --> 00:58:59,744
+In order to implement this method, we should before implement search car method. Inside this search car method, we have to traverse all cars inside array by using for each loop.
+
+327
+00:58:59,744 --> 00:59:25,623
+This is a cars, our member variable. By using for each loop, we are traveling all members, all variables. If our car is equal to any of them, return true, it is not return false.
+
+328
+00:59:25,623 --> 00:59:37,623
+This is a search card implementation, the result of it, true or not. Another search type is by using plate.
+
+329
+00:59:37,623 --> 00:59:49,623
+So from the zero, from the first element to end element, by using for loop, from zero to car count,
+
+330
+00:59:49,623 --> 00:59:57,443
+We have to get the plate number and compare these strings by using compareTo method.
+
+331
+00:59:58,063 --> 01:00:08,783
+If the result is equals to zero, we should return this object and it is not true, we should return null.
+
+332
+01:00:09,443 --> 01:00:13,943
+Yani burada yaptığımız şey bir kar objesini doğrudan obje olarak aramak.
+
+333
+01:00:13,943 --> 01:00:15,343
+Niye böyle arıyoruz?
+
+334
+01:00:15,483 --> 01:00:18,503
+Çünkü arkadaşlar bir tane kar objesi bir yerde oluşturuldu.
+
+335
+01:00:18,504 --> 01:00:35,383
+Biz bu galeriye bunun referansını atadık. Buraya gelen bu objenin var mı yok mu diye gelen şu şey de bunun referansı. Yani adresi. Bu gelen şey eğer bu adres bu içeride varsa burada daha önceden eklenmişse true döndürüyor yoksa false döndürüyor.
+
+336
+01:00:35,383 --> 01:00:40,364
+veya şurada plaka üzerinden böyle bir araba var mı diye member üzerinden arayacaksak
+
+337
+01:00:40,364 --> 01:00:44,743
+i.in.car'ın plate bilgisini getiriyoruz. Bu bir string'tir.
+
+338
+01:00:44,743 --> 01:00:49,423
+String operasyonları üzerinde comparito metodu vardı. Geçenlerde kısaca söylemiştik.
+
+339
+01:00:49,983 --> 01:00:54,263
+Bunu gelen şu string ile karşılaştırır ve sonuç 0 ise return.
+
+340
+01:00:54,843 --> 01:00:59,783
+Bu objenin kendisini return et diyoruz. Objemiz car türünde.
+
+341
+01:00:59,783 --> 01:01:09,143
+This is a method overloading.
+
+342
+01:01:12,143 --> 01:01:18,084
+Namely, the name of these methods are the same.
+
+343
+01:01:20,084 --> 01:01:27,724
+But the parameters, the methods parameters are different.
+
+344
+01:01:27,724 --> 01:01:37,643
+and the return type are different but it is actually important thing is related to method overloading.
+
+345
+01:01:37,643 --> 01:01:43,143
+The arguments or parameters should be different.
+
+346
+01:01:43,584 --> 01:01:50,703
+Yani burada overload etmek için metotların içerisindeki aldığı parametreleri farklı yazmak gerekiyor.
+
+347
+01:01:50,804 --> 01:01:53,084
+Şunları farklı yazarsak olmaz.
+
+348
+01:01:54,164 --> 01:01:55,623
+O zaman hata alırız.
+
+349
+01:01:55,623 --> 01:01:57,703
+Saatimiz gelmiş
+
+350
+01:01:57,703 --> 01:02:04,843
+10 dakika sonra 16.05'de kaldığımız yerden devam edelim arkadaşlar
+
+351
+01:02:04,843 --> 01:02:05,663
+Görüşmek üzere
+
+352
+01:02:05,663 --> 01:02:10,263
+Bir çay falan için veya kahve için kendinizi toparlayın
+
+353
+01:12:31,060 --> 01:12:32,180
+Evet arkadaşlar.
+
+354
+01:12:36,692 --> 01:12:46,971
+Bugün hayırdır? Bir önemli bir şey mi var benim bilmediğim? Niye? Hem katılım az hem katılanların da enerjisi düşük gibi. Yorgun musunuz? Hayırdır?
+
+355
+01:12:46,971 --> 01:12:52,051
+Veri yapılarında kötü anlar geçirmiş olabilirler arkadaşlar. Ben kendi adıma böyle diyebilirim.
+
+356
+01:12:52,171 --> 01:12:55,851
+Hocam iki saatlik quizimiz vardı da daha doğrusu ödebildiğim bir şey.
+
+357
+01:12:58,351 --> 01:13:04,771
+Yani var bir şeyler çünkü. Geçen haftaya nazaran birazcık bir performansta şey var.
+
+358
+01:13:04,771 --> 01:13:15,392
+Ben çok geri bildim bunu ya bu sefer bana da yansıyor yani her ne kadar yüz yüze olmasak da hani bir şekilde hisler birbirine şey yapıyor etkiliyor
+
+359
+01:13:15,392 --> 01:13:19,912
+Evet hocam sayımız çok az onu ne yapabiliriz bilmiyorum ama 22 kişi kalmış
+
+360
+01:13:19,912 --> 01:13:21,791
+Şu an o laboratuvar devam ediyor mu?
+
+361
+01:13:22,791 --> 01:13:26,831
+Yok 2 de değil o sadece moral bozukluğuna belki şeydir diye söyledim
+
+362
+01:13:26,831 --> 01:13:32,111
+Tamam zaten demişler yorul biraz uyuyalım falan diyenler olmuş olabilir
+
+363
+01:13:32,111 --> 01:13:33,532
+Evet onu yapmak üzereydim
+
+364
+01:13:33,532 --> 01:13:33,872
+Neyse
+
+365
+01:13:33,872 --> 01:13:57,232
+Bugün de ama bu dönemin en önemli konularından bir tanesi. Gerçi bu konuyu haftaya, şimdi teorini anlatıyorum haftaya bir örnek yapacağım. Bugün yetişmezse. Orada da bir tekrar ederiz ama bu object oriented ile alakalı en önemli kısımlardan bir tanesi arkadaşlar. Katılmayanlar çok şey kaçırıyor diyebilirim.
+
+366
+01:13:57,232 --> 01:14:25,791
+Evet, implementation of removeCard method to delete any object from a list, from list, firstly we should search and if we find this object we can delete, after deletion we have to shift operation because this is a static array like similar to
+
+367
+01:14:27,232 --> 01:14:38,032
+similar to C implementation. If we used linked this in this example, there is no need, there will no need.
+
+368
+01:14:40,592 --> 01:14:54,831
+Okay, from zero to car count, firstly, we have to get the plate and then we have to compare these plate numbers, whether or not these are equal.
+
+369
+01:14:54,831 --> 01:14:55,831
+if these are equal the return value is zero and then car i is stored into the temporary variable and the other cars shifted okay and then car count is decreased the last value is duplicated to
+
+370
+01:15:24,831 --> 01:15:30,852
+overcome this duplication, duplicate problem, we will notify the last object.
+
+371
+01:15:31,212 --> 01:15:32,811
+Okay. Car count is decreased.
+
+372
+01:15:33,712 --> 01:15:41,331
+The removed car returned in order to show information or in order to supply information for user.
+
+373
+01:15:41,852 --> 01:15:46,992
+If it is not found, we are returning null variable.
+
+374
+01:15:46,992 --> 01:15:55,072
+SelCar is removing a car from a gallery.
+
+375
+01:15:56,552 --> 01:16:08,052
+Person and plate, plate and person is our, plate and person are with arguments or parameters.
+
+376
+01:16:09,352 --> 01:16:13,672
+Actually here it is parameters, argument is used method call.
+
+377
+01:16:13,671 --> 01:16:34,151
+Firstly, we will try remove car. If this car is inside our array, this is a successful removing. And this is a sold car. Okay. The return is actually related to this sold operation.
+
+378
+01:16:35,007 --> 01:16:57,207
+The result is not null. We should set the new owner from this car and then we will return a value true value. If it is not sold, we will return false value.
+
+379
+01:16:57,587 --> 01:17:04,348
+Evet, burada anlaşılmayan bir şey var mı? Basit bir aslında algoritma ama objeler üzerinde işlem yapıyoruz.
+
+380
+01:17:05,007 --> 01:17:13,107
+Hani C'de bir diziyi silince diğer objeleri nasıl diziden kaydırıyorsak, shift işlemi yapıyorsak burada da bir shift işlemi yaptık.
+
+381
+01:17:13,787 --> 01:17:16,267
+Tabi sildiğimiz bir obje burada yaşayan bir obje.
+
+382
+01:17:17,447 --> 01:17:22,807
+Yani bir kar objesi. Bu cars dizisi neyi saklıyor? Objelerin adreslerini saklıyor.
+
+383
+01:17:23,427 --> 01:17:26,627
+Dolayısıyla şurada bir duplicate veri sorunu var.
+
+384
+01:17:26,807 --> 01:17:29,487
+Çünkü ne kadar shift etsek de en sondaki veri kalıyor.
+
+385
+01:17:29,487 --> 01:17:33,987
+En son noktayı nal yapıyoruz ve car counter'ımızı bir azaltıyoruz.
+
+386
+01:17:33,987 --> 01:17:43,927
+Bunlar tekrarlı olmasın diye yapılan şeyler, güzel kontroller. Benzer şekilde biz bunu ödev olarak şeyde laboratuvarda da yapmıştık sizinle.
+
+387
+01:17:44,927 --> 01:18:01,787
+This is the test class for this gallery example. Cars for you. New person is a method call, constructor call. This is a gallery.
+
+388
+01:18:01,787 --> 01:18:13,647
+Şimdi bakın arkadaşlar bu güzel bir implementasyon. Bazen arkadaşlar şaşırıyor hocam new kullanmış ama eşittir yok. Eşittir kullanmak zorunda değil. Galerinin constructorına gelirsek.
+
+389
+01:18:18,260 --> 01:18:33,479
+ne oluyor? Buraya bir person türünde bir şey gelecek. Nesne gelecek. O nesnenin illaki bir referansıyla gelmesi yani atanmış bir referanstan gelmesi gerekmiyor. Ne yaptı? Burada bir önce kişi oluşturdu. Oluşturulan bu kişiyi bu galeri sınıfına gönderdi.
+
+390
+01:18:33,479 --> 01:18:45,399
+and then we are creating a car object. It is null. Second parameter is null. We are creating another car object. It is null.
+
+391
+01:18:47,399 --> 01:19:03,399
+We are adding these cars into gallery while using gallery object. We are adding firstly BMW, adding operation succeed if it is accomplished.
+
+392
+01:19:03,479 --> 01:19:32,839
+If it is not accomplished, accomplished or finished, it is a fail. Add another car. Actually, we should have controlled this operation because the same situation is similar to this situation because these are the same method names.
+
+393
+01:19:33,480 --> 01:19:46,380
+Cars for you introduce self, BMW introduce self. These are different methodical or different class, different objects.
+
+394
+01:19:46,379 --> 01:20:08,479
+searching a car in the gallery, BMW is searching, and then remove a car, Audi get plate is equal to Audi, remove car.
+
+395
+01:20:08,480 --> 01:20:38,260
+What is the, sorry, Audi get plate is, plate number is fetch, get fetched, firstly, and then remove car method is called, and the return value of remove car method is compared with Audi object, okay, because this returns an object.
+
+396
+01:20:38,480 --> 01:20:54,920
+Remove operation succeeded or failed is printed. Search card is another test operation. Audi searching. It is fail or not controls.
+
+397
+01:20:54,920 --> 01:21:14,039
+Any problem for this type relations? Herhangi bir sorunuz var mı arkadaşlar? Ne gördük? Association gördük, dependency gördük, başka aggregation gördük ve composition gördük.
+
+398
+01:21:14,039 --> 01:21:26,239
+Şu sıradan şu üçü daha strik katı olandan daha az katı olana doğru bir sıralama dependisi bundan biraz daha farklı.
+
+399
+01:21:27,719 --> 01:21:34,480
+Bunlar dediğim gibi nesne seviyesinde yani bir nesne üretince nesneler arası ilişki.
+
+400
+01:21:36,299 --> 01:21:43,480
+Bu nesneler seviyesindeki ilişkiyi inheritance ile sınıf seviyesinde tanımlayabiliyoruz.
+
+401
+01:21:44,039 --> 01:21:45,760
+Şimdi buna bakacağız.
+
+402
+01:21:47,640 --> 01:21:55,480
+Inheritance shows with diamond what triangle, hollow triangle or white triangle.
+
+403
+01:21:56,480 --> 01:22:00,599
+This is a terminology about inheritance.
+
+404
+01:22:00,819 --> 01:22:05,760
+A is parent class, super class and base class.
+
+405
+01:22:06,780 --> 01:22:09,819
+All of these terms are used.
+
+406
+01:22:09,819 --> 01:22:16,879
+B is child class, subclass or derived class. These are used.
+
+407
+01:22:18,868 --> 01:22:32,868
+In real world, a child inherits genetic properties from his or her parents. This is an implementation or realization of object-oriented concepts.
+
+408
+01:22:33,868 --> 01:22:42,868
+A means of creating a new class from an existing class in a way that is similar to the real world.
+
+409
+01:22:42,868 --> 01:23:02,067
+This is a class level relation, okay? Not object. Representation of this. Direction of the arrow is important. B is child. A is parent.
+
+410
+01:23:02,068 --> 01:23:12,068
+Some properties of A inherited by B. This is very important.
+
+411
+01:23:12,068 --> 01:23:21,287
+Not all properties or not all methods inherited. Okay? Some.
+
+412
+01:23:23,168 --> 01:23:31,567
+These inherits must be defined with protected keyword.
+
+413
+01:23:32,067 --> 01:24:02,047
+Thank you
+
+414
+01:23:35,412 --> 01:24:01,092
+By using inheritance relation, we should define our methods or properties or member variables by using protected keyword. If we use a public keyword, there is no need for inheritance because public is open for all classes.
+
+415
+01:24:01,092 --> 01:24:15,092
+But if you want to hide some information, all class except for inheritance class, we should use protected keywords
+
+416
+01:24:15,092 --> 01:24:44,952
+All members, it is not actually true, some of fields and methods, because, yes, however, is explanation about my ISAT, except for private members or private methods, we can access all members,
+
+417
+01:24:45,092 --> 01:25:04,791
+and all methods. Yani bir de böyle söyleyelim. Private memberler dışında her şeye erişebiliyoruz. Tabii erişmenin burada kalıtımla sağlanmasının makul bir yolu, hani bunun kalıtımla sağlandığını göstermek için private yerine, public yerine protected yazmamız gerekiyor.
+
+418
+01:25:04,791 --> 01:25:09,031
+This is a protected members and inheritance
+
+419
+01:25:09,031 --> 01:25:16,891
+Those members can be accessed by children but they are inaccessible for other class
+
+420
+01:25:16,891 --> 01:25:26,132
+Yani protected yazdığınız şey eğer kalıtım yoksa işte burada A ve B arasında A'da protected yazılanlar B'de görülebiliyor
+
+421
+01:25:26,132 --> 01:25:39,292
+Ama ben C'den bir association ile veya ne bileyim bir aggregation ile veya bir composition ile bir ilişki kurarsam yine o protectedlara erişemeyeceğim.
+
+422
+01:25:40,172 --> 01:25:43,172
+Grandchildler erişemez mi? Utkan şunu sormak istiyorsun.
+
+423
+01:25:43,172 --> 01:25:46,432
+Yani burada bir şey daha kullandık.
+
+424
+01:25:47,512 --> 01:25:49,712
+Şunu demek istiyorsun. İçi boş olacak tabii ki.
+
+425
+01:25:53,140 --> 01:25:56,759
+C, grand chart da buradaki protectedlara erişir.
+
+426
+01:25:58,699 --> 01:26:08,919
+Şimdi dikkat ederseniz biz obje türettiğimizde, şuradan net birisi açayım, bazı metotlara erişiyorduk.
+
+427
+01:26:17,235 --> 01:26:19,436
+Mesela roller.
+
+428
+01:26:21,955 --> 01:26:24,855
+İşte şuradaki get class, get plate.
+
+429
+01:26:25,555 --> 01:26:26,996
+Gerçi get plate'ı biz söyledik.
+
+430
+01:26:27,775 --> 01:26:30,015
+Bakın arkadaşlar, bunlar public olduğu için.
+
+431
+01:26:31,335 --> 01:26:33,615
+Bakalım var mıymış burada protected dönen?
+
+432
+01:26:33,695 --> 01:26:36,695
+Yani şuradaki mouse'un olduğu yerdeki yerlere dikkat edin.
+
+433
+01:26:38,615 --> 01:26:40,435
+Hepsi public tanımlandığı için.
+
+434
+01:26:40,435 --> 01:26:48,075
+Aslında to string metodu obje sınıfından tanımlanmış bir şey açabilecek miyiz bilmiyorum.
+
+435
+01:26:48,755 --> 01:26:59,935
+Obje sınıfına baktığımızda yani bunu bir kalıtımla almamız çünkü obje sınıfından bütün sınıflar direkt olarak bir kalıtım alıyorlar.
+
+436
+01:27:02,935 --> 01:27:05,235
+Sınıfların şekilde erişim sağlanabiliyor.
+
+437
+01:27:05,235 --> 01:27:13,436
+Ama dediğim gibi buradaki D sınıfı kesinlikle buradaki protected'lara erişemez.
+
+438
+01:27:13,436 --> 01:27:24,075
+Yes, this is a diagram for inheritance mechanism and some important rules.
+
+439
+01:27:24,615 --> 01:27:31,136
+Subclasses cannot reject a member from the superclass.
+
+440
+01:27:31,136 --> 01:27:36,416
+This cannot reject or different a member.
+
+441
+01:27:37,416 --> 01:27:42,695
+However, bodies of inherited methods can be changed.
+
+442
+01:27:44,536 --> 01:27:55,916
+Members cannot be changed, but methods can be changed in the inheritance.
+
+443
+01:27:55,916 --> 01:28:15,715
+This is called as overriding. Overload is related to multiple definitions for methods. This is redefinition of methods.
+
+444
+01:28:15,715 --> 01:28:25,895
+So, the last defined methods are executed, the previous ones is abolished or is cancelled.
+
+445
+01:28:26,795 --> 01:28:28,575
+This is overriding.
+
+446
+01:28:28,575 --> 01:28:36,295
+If you add final keywords for your methods, these methods cannot be overriding.
+
+447
+01:28:37,515 --> 01:28:38,316
+This is important.
+
+448
+01:28:39,115 --> 01:28:45,176
+For example, person, introduce yourself.
+
+449
+01:28:45,715 --> 01:28:47,355
+inside person.
+
+450
+01:28:49,195 --> 01:28:56,676
+And you have written system out print event ben insanım.
+
+451
+01:28:56,676 --> 01:28:59,035
+Ben insanım diyebiliriz.
+
+452
+01:28:59,035 --> 01:29:05,935
+This is the implementation of this introduced words of method inside person.
+
+453
+01:29:05,935 --> 01:29:18,735
+However, you can override or you can suppress by using the same method.
+
+454
+01:29:18,735 --> 01:29:36,075
+For example, inside retired class, introduce yourself, name, the prototype of this method are the same.
+
+455
+01:29:36,075 --> 01:29:36,575
+Okay.
+
+456
+01:29:37,915 --> 01:29:44,295
+Introduce yourself, system, out, print, and ben emekliyim.
+
+457
+01:29:44,295 --> 01:30:00,036
+For this member, this is cancelled, this method is cancelled for person, inside introduce yourself is executed.
+
+458
+01:30:00,035 --> 01:30:15,755
+However, employee, student, director, or part-time are going on using introduce yourself method inside person class.
+
+459
+01:30:16,372 --> 01:30:30,332
+Burayı anladık mı? Yani burada söylediğimiz şu, son söylediğim cümle herhalde anlatıyordur bunu. Şuradaki introduce yourself buradakini geçersiz kılıyor. Diğerlerinde herhangi bir şey yazmazsam yukarıdakini kullanmaya devam ediyor.
+
+460
+01:30:31,792 --> 01:30:40,091
+Şimdi buna şöyle bir örnek verelim. Şimdi herkesin akbili var İstanbul kartı. Belki aranızda hala İstanbul'a gelmeyenler olabilir geçen seneden bu zamana.
+
+461
+01:30:40,091 --> 01:30:58,491
+Gittiniz İstanbul Kart'a öğrenci olduğunuzu kaydettiniz. İstanbul Kart öğrenci hesabı üzerinden, tarifesi üzerinden miktar düşüyor değil mi? Ama herhangi bir şey yapmadınız. Öğrenci olduğunuzu beyan etmediniz. Gittiniz kart aldınız.
+
+462
+01:30:58,491 --> 01:31:06,471
+Default olarak kullanıcı neyse işte normal kullanıcı sizden o paraya düşecek.
+
+463
+01:31:06,471 --> 01:31:11,751
+İşte bunun öğretmeni var, emeklisi var, şusu var, busu var gibi farklı kategoriler var.
+
+464
+01:31:12,271 --> 01:31:17,951
+Herkes bir person ama bu person'ın farklı davranışları olabilir.
+
+465
+01:31:17,951 --> 01:31:32,052
+İşte biz bazı özellikleri bu kalıtım yoluyla üst sınıftan alıp bazı ek özellikleri kendimiz alt sınıflarda tanımlıyoruz. İşte buna kalıtım ilişkisi diyoruz.
+
+466
+01:31:32,052 --> 01:31:44,431
+Üst sınıftaki tanımlı bir şeyi, alt sınıfta özellikle tanımlı bir metodu, çünkü memberları şey yapamayız, yok sayamayız. Yukarıda ne özellik varsa hepsi bunu sağlamak zorunda.
+
+467
+01:31:44,431 --> 01:31:49,991
+Üst sınıftaki bir metodu alt sınıfta geçersiz kılıp yeniden tanımlamak override oluyor.
+
+468
+01:31:51,232 --> 01:31:51,951
+Overrida.
+
+469
+01:31:52,751 --> 01:31:53,851
+Bazen şunu görüyorum.
+
+470
+01:31:53,851 --> 01:31:55,592
+Hani bu yazılıyor.
+
+471
+01:31:55,711 --> 01:31:59,191
+Override deyince herhalde override bu değil arkadaşlar.
+
+472
+01:31:59,311 --> 01:31:59,811
+Override.
+
+473
+01:32:02,031 --> 01:32:05,851
+New members can be added to subclasses.
+
+474
+01:32:05,851 --> 01:32:18,571
+Yanni, if you want to add a new member inside person, this member can be directly inherited from other members.
+
+475
+01:32:19,691 --> 01:32:34,812
+A subclass can be the parent of other classes, for example, employee. This is a subclass for person. It is actually a parent class for director and part-time.
+
+476
+01:32:35,851 --> 01:32:46,631
+The tree structure created by this way is called S-inheritance hierarchy or inheritance tree.
+
+477
+01:32:46,631 --> 01:32:58,691
+This is a multi-level, multi-level inheritance hierarchy or multi-level inheritance tree.
+
+478
+01:32:59,071 --> 01:33:03,551
+This is not multi-inheritance.
+
+479
+01:33:03,551 --> 01:33:07,971
+Okay? Multiple, this is not multiple inheritance.
+
+480
+01:33:08,431 --> 01:33:09,711
+Çoklu kalıtım değil arkadaşlar.
+
+481
+01:33:09,991 --> 01:33:15,411
+Çok seviyeli, çok dereceli bir kalıtım şekli.
+
+482
+01:33:27,315 --> 01:33:31,716
+Some rules again do not make the tree too deep.
+
+483
+01:33:32,776 --> 01:33:50,656
+If you add lots of degree, there may be a superclass problem and management of this design may lead to problems.
+
+484
+01:33:50,656 --> 01:33:52,875
+For example, changing problems.
+
+485
+01:33:52,875 --> 01:34:16,515
+When you change the utmost superclass, this change will affect all other subclasses. So your deep class schema or your deep class design may be negatively affected by this changing. Okay. This is similar to a tree.
+
+486
+01:34:16,516 --> 01:34:25,876
+This is a root and these are leaves or some middle notes.
+
+487
+01:34:30,579 --> 01:34:33,820
+It can easily collapse with the wind.
+
+488
+01:34:33,820 --> 01:34:40,840
+Yani kanattan bir şey çökebilir eğer diyor. Neyse.
+
+489
+01:34:43,719 --> 01:34:50,439
+Effects of inheritance. This is a class level relation. Do not forget, please.
+
+490
+01:34:51,939 --> 01:35:00,559
+Inheritance is a is relationship actually. Car is, sorry, jeep is a car.
+
+491
+01:35:00,579 --> 01:35:21,219
+Racing is a car, Lazar is a printer. Okay. Has relationship in association we said. Whole part, composition and aggregation. This is a is relationship. This is a generalization and specialization relation type.
+
+492
+01:35:21,219 --> 01:35:36,660
+As a result of inheritance, some concepts are derived. For example, polymorphism.
+
+493
+01:35:36,660 --> 01:36:06,639
+Do you see about detail? Polymorphism is doing something by different ways inside subclass. For example, dot matrix prints a document in some way. Lazar is different. Inkshed is another way. So this is called as polymorphism.
+
+494
+01:36:06,659 --> 01:36:35,659
+polymorphism. The generalization and specialization. Printing any document is a general concept, but it is not actually not always the same or the physical implementation. This is a general concept. Print. How can we print? There is no definition about printing, but
+
+495
+01:36:36,659 --> 01:36:51,659
+Inside the child class, we have to define the actual or the definition, we have to define the definition of methods, dot matrix, laser and inkjet.
+
+496
+01:36:53,219 --> 01:37:01,159
+Parent is a generalized version of its children with less capability. This has less capability.
+
+497
+01:37:01,160 --> 01:37:05,499
+These are less capability.
+
+498
+01:37:06,260 --> 01:37:17,040
+All of conceptual methods or members are stored into parent class.
+
+499
+01:37:20,320 --> 01:37:27,380
+Child is specialized and more capable version of its parent.
+
+500
+01:37:27,380 --> 01:37:34,240
+Yani arkadaşlar burada lazer ile alakalı bir yazdırma işini printer bilmez.
+
+501
+01:37:34,460 --> 01:37:37,699
+Printer bir şeyin yazılması gerektiğini söyler.
+
+502
+01:37:37,980 --> 01:37:39,320
+Void print der mesela.
+
+503
+01:37:41,340 --> 01:37:41,880
+Tamam mı?
+
+504
+01:37:42,199 --> 01:37:46,520
+Nasıl yazılacağı nerede bunların içerisinde belirtilir.
+
+505
+01:37:47,040 --> 01:37:50,219
+Ama biliyoruz ki bu da bir yazıcı, bu da bir yazıcı, bu da bir yazıcı.
+
+506
+01:37:50,219 --> 01:37:53,680
+O zaman hepsinde illaki yazdır bir şekilde olacak.
+
+507
+01:37:53,679 --> 01:37:57,679
+İşte bu yapıyı kurmak kalıtımın bir özelliği.
+
+508
+01:38:01,679 --> 01:38:05,019
+Substitability. Çok zor bir söz söylemek için.
+
+509
+01:38:06,719 --> 01:38:10,659
+Child can be used wherever the parent is expected.
+
+510
+01:38:11,599 --> 01:38:13,339
+We can use child.
+
+511
+01:38:14,179 --> 01:38:19,159
+Therefore, inheritance is also called as is a relationship.
+
+512
+01:38:19,160 --> 01:38:30,160
+We can use laser for printer or inkjet for printer or Jeep for car, racing for car.
+
+513
+01:38:30,612 --> 01:38:32,112
+İzmir'in relationship.
+
+514
+01:38:36,692 --> 01:38:37,131
+Şimdi
+
+515
+01:38:43,731 --> 01:38:49,011
+Some misusing of inheritance
+
+516
+01:38:50,739 --> 01:38:51,379
+Nerede?
+
+517
+01:38:54,868 --> 01:39:01,727
+Yani şurada bir fark göremedim. Buna niye misusing demişler ki bunu incorrect use.
+
+518
+01:39:03,668 --> 01:39:06,328
+We button is a general concept.
+
+519
+01:39:08,427 --> 01:39:09,307
+Ha, ok.
+
+520
+01:39:11,447 --> 01:39:15,067
+We button may have some colors.
+
+521
+01:39:15,487 --> 01:39:17,788
+Colors of we button can be different.
+
+522
+01:39:19,587 --> 01:39:21,527
+Red, yellow and purple.
+
+523
+01:39:21,527 --> 01:39:43,408
+This is not correct because purple is not a gooey button. Purple is a color. Yellow is a color. Red is a color. Is a relationship is not correct for this representation. Do you understand this?
+
+524
+01:39:43,407 --> 01:40:13,387
+We cannot always, we cannot directly inherit for all class. Okay. There is a logic behind this. What we can use GUI button is a class. Color is a properties of this class GUI button and RGB is another class. Red, green and blue.
+
+525
+01:40:13,408 --> 01:40:19,168
+The properties of the RGB. This is a, what is the type of relation?
+
+526
+01:40:21,327 --> 01:40:22,927
+What do you say this relation?
+
+527
+01:40:27,155 --> 01:40:37,315
+Association, aggregation, composition or dependency Mehmet Celal
+
+528
+01:40:42,131 --> 01:40:43,252
+Hasan Yunus
+
+529
+01:40:43,252 --> 01:40:53,851
+Mehmet Celal Association dedim. Niye? Aggregation veya Composition niye olmadı?
+
+530
+01:41:05,427 --> 01:41:07,207
+Hasan sen söyle niye olmadığını.
+
+531
+01:41:08,487 --> 01:41:09,467
+Association doğru.
+
+532
+01:41:15,444 --> 01:41:16,523
+Oğuzhan Ercan
+
+533
+01:41:20,212 --> 01:41:21,332
+Ozan Kukol
+
+534
+01:41:21,332 --> 01:41:25,092
+Allah Allah
+
+535
+01:41:25,092 --> 01:41:28,131
+Boşluğa ders anlatıyorum şimdi
+
+536
+01:41:28,131 --> 01:41:30,911
+Selim Alper
+
+537
+01:41:39,859 --> 01:42:09,179
+Bora, Yankı. Merhaba hocam neler oluyor ben anlamadım. Sorunuza cevap vermek gerekirse one-sided association değil mi? Evet. Niye peki association, aggregation veya composition olamaz mı? Yani aslında şey diye düşününce işte button is red gibi düşününce is olabiliyor. Hayır yani şey olamaz mı? Yani lazer yazıcı yazıcıdır ama yani renk dediğimiz... Ha doğru is değil o zaman doğru has gibi oluyor.
+
+538
+01:42:09,179 --> 01:42:17,179
+Ama ben şunu soruyorum. Ne aggregation veya composition değil de association dedik veya dependency demedik.
+
+539
+01:42:20,080 --> 01:42:23,919
+Yani has diye düşünüp aggregation dedim ama şey association dedim.
+
+540
+01:42:25,319 --> 01:42:27,620
+Bunlar da has. O da doğru.
+
+541
+01:42:27,620 --> 01:42:31,239
+O arada bir fark vardı. O fark neydi?
+
+542
+01:42:36,787 --> 01:43:02,347
+parça bütünü değil mi? Yani şu ikisinde parça bütünü vardı. Yani aggregation ve composition bir şeyin bir şeyle parça bütün ilişkisi. Yani durak ve şey düşün, bir rota, otobüs rotasını düşün. Otobüs rotası duraklardan oluşmak zorunda. Ama GUI buton renklerden oluşmak zorunda diye öyle bir mantıksal ilişki kuramıyoruz değil mi?
+
+543
+01:43:02,347 --> 01:43:18,508
+GuiButton renk özelliğine sahiptir. Onun için has tamam. İşte bu sahiplik ilişkisi parça bütünlük açısından bir sahiplik değil. Ancak onu kullanabilme yani association açısından bir sahiplik.
+
+544
+01:43:18,507 --> 01:43:47,567
+Parça bütün olsa diyeceğiz ki yani GUI butonun rengi olmayabilir onun için oradan da mesela çıkarım yapabiliriz ama parça bütün olsa GUI butonun renk diye bir şeyi sahip olacak dememiz gerekirdi. Tamam. Ha burada birebir demiş en az bir tane rengi olacak demiş oradan belki birazcık aggregation'ı sağlayabilir. Yani o da tam yani kompozisyon demeyelim de
+
+545
+01:43:47,567 --> 01:43:56,368
+aggregation'ı sadece ama aslında burada bir association var. Tamam mı? Evet.
+
+546
+01:43:59,368 --> 01:44:10,907
+Evolution of inheritance relationship. You should consider polymorphism concepts or object-oriented programming and concepts.
+
+547
+01:44:10,907 --> 01:44:14,627
+It is a result of inheritance relation.
+
+548
+01:44:15,667 --> 01:44:15,767
+Ok?
+
+549
+01:44:16,547 --> 01:44:18,187
+The natural result.
+
+550
+01:44:19,867 --> 01:44:24,707
+Yani insanın, insana benzeyen işte maymun vesaire şeyleri düşünün.
+
+551
+01:44:26,087 --> 01:44:27,247
+Üst kılasını düşünün.
+
+552
+01:44:29,067 --> 01:44:38,647
+İşte maymunda bazı şeyler farklıdır, bizde bazı şeyler farklıdır veya ne bileyim birbirine işte kedi, kaplan, aslan mı kedi onlar var ya o aile.
+
+553
+01:44:38,648 --> 01:44:57,067
+üst sınıflarında bir ortak özellikleri var. Alt sınıflardaki davranışlarda farklılıklar var. İşte bu ortak özellikler inheritance'dan alttaki spesifik davranışların farklılığı da polymorphismden, kalıtımın sonucu olarak gelen bir şey.
+
+554
+01:44:57,067 --> 01:45:05,627
+This is a class-level relationship that cannot be changed during runtime.
+
+555
+01:45:05,627 --> 01:45:20,808
+You cannot add any new methods or you cannot add any new properties in super class or base class.
+
+556
+01:45:20,807 --> 01:45:38,647
+Experienced object-oriented modelers choose inheritance only if there is a clear gen-specific, general-specific relationship, gen-spec.
+
+557
+01:45:38,647 --> 01:45:43,527
+This is an important keyword.
+
+558
+01:45:43,527 --> 01:46:01,307
+If you are sure a relation between two objects about gen-spec relationship, you can use inheritance.
+
+559
+01:46:02,587 --> 01:46:11,127
+Sometimes, at first, you will confuse this relationship between association or composition.
+
+560
+01:46:11,127 --> 01:46:22,107
+You will directly establish an inheritance relation between two objects. Please make sure.
+
+561
+01:46:22,107 --> 01:46:30,687
+Yani bu hatayı çok yapacaksınız ilk başlarda. Önünüze gelen her şeye kalıtım ilişkisi bulacaksınız.
+
+562
+01:46:30,827 --> 01:46:34,868
+Çünkü oluyor mu? Oluyor. Is a ilişkisidir.
+
+563
+01:46:37,140 --> 01:46:56,459
+genellik, özellik vardır. Alt sınıf, üst sınıf vardır. Yani person, person'dan öğrenci, nominasyoneli bir öğretmen tamam orada kalıtım olur. Ama bakın şurada olduğu gibi GUI button tamam bu bir obje yani şu görsel programlamadaki buttonlar.
+
+564
+01:46:56,459 --> 01:47:08,340
+Bunun işte rengi var. Tamam rengi bir özellik ama bunlar renkler kendi içerisinde bir class değil. Yani renk ile bunun arasında bir hiyerarşik bir ilişki yok.
+
+565
+01:47:09,719 --> 01:47:17,480
+Yes. Otherwise, association, composition or aggregation, object, relationship is used.
+
+566
+01:47:17,480 --> 01:47:28,680
+Usage of association, composition or aggregation is more common compared to inheritance.
+
+567
+01:47:29,680 --> 01:47:37,919
+Çünkü birçok ilişkide yani object oriental tasarımda biz daha çok kalıtımı daha az göreceğiz.
+
+568
+01:47:37,919 --> 01:48:07,519
+interface. Interface implementation, we will see interface can also be used for multiple inheritance. For example, student and employee. These are person.
+
+569
+01:48:12,627 --> 01:48:13,627
+and inheritance can be used. But especially in Java, you cannot inherit multiple inheritance, multiple class. For example, this is a person. Let's say there's another class like worker. You cannot inherit
+
+570
+01:48:42,627 --> 01:48:52,227
+Okay. Some of them, one of them should be cancelled or should be deleted.
+
+571
+01:48:53,328 --> 01:49:08,668
+Correct use of inheritance is an important part of every design pattern as subject that must be studied by people who want to be software professional after complete study of object-oriented.
+
+572
+01:49:08,667 --> 01:49:23,847
+Şimdi object oriented'dan sonra iyi bir nesne yönelimine analiz tasarım, object oriented analysis and design konusuna yöneleceksiniz.
+
+573
+01:49:24,707 --> 01:49:29,387
+Burada kalıtımın doğru kullanımı önemli bir faktördür arkadaşlar.
+
+574
+01:49:29,667 --> 01:49:33,307
+Yani her önünüze geldiği yerde dediğim gibi kullanmayacaksınız.
+
+575
+01:49:34,027 --> 01:49:35,988
+Diğer ilişkiler burada daha çok karşımıza gelecek.
+
+576
+01:49:35,988 --> 01:49:44,467
+ve burada nerede kalıtım kullanılıp kullanılmayacağına dair yaşayan bir proje, yaşayan bir yazılım üretmek istiyorsanız bu da şu demek.
+
+577
+01:49:44,608 --> 01:49:46,627
+Yani yazılımda bir şeyi değiştirmeye çalıştınız.
+
+578
+01:49:47,547 --> 01:49:52,827
+Haydi hep baş sıfırdan yazmak daha kolay geliyorsa demek ki kötü bir tasarım yapılmış demektir.
+
+579
+01:49:53,327 --> 01:49:54,727
+Buna dikkat etmek gerekiyor.
+
+580
+01:49:55,788 --> 01:50:01,607
+Yes, polymorphism and overriding, spatial topics for inheritance.
+
+581
+01:50:01,607 --> 01:50:25,247
+This is a person class, student class, employee class, and retired class. This is an inheritance theory. Introduce self method is overridden in the subclasses. This may be empty implementation for methods. For example, you write, sorry, no wait,
+
+582
+01:50:25,247 --> 01:50:33,848
+string, introduce yourself, implementation is empty.
+
+583
+01:50:33,848 --> 01:50:41,367
+Inside this method, you can implement extra lines, extra codes.
+
+584
+01:50:42,147 --> 01:50:42,787
+This is okay.
+
+585
+01:50:43,247 --> 01:50:45,227
+This is an overwrite mechanism.
+
+586
+01:50:47,967 --> 01:50:51,267
+Consider an array of type person.
+
+587
+01:50:51,267 --> 01:51:17,327
+you can define a person array for example P new person 10 P0 you should say is new student or P1 is new retired
+
+588
+01:51:17,327 --> 01:51:35,587
+No, no, this is only parentheses. This is a student object, this is a retired object, and these objects are assigned into corresponding indices for this person array. Okay.
+
+589
+01:51:35,587 --> 01:51:44,867
+Having mixed instance of all class above, this is an example called implementation.
+
+590
+01:51:45,667 --> 01:51:55,347
+What happens if we run the introduce self methods for all members in the array? Let's say P0.introduce yourself.
+
+591
+01:51:56,467 --> 01:52:02,707
+This is directly executed. And P1 is introduce yourself.
+
+592
+01:52:02,708 --> 01:52:07,308
+This is directly executed.
+
+593
+01:52:08,208 --> 01:52:11,708
+Let's say P2 is...
+
+594
+01:52:11,220 --> 01:52:14,819
+class from employee. This is executed.
+
+595
+01:52:16,919 --> 01:52:24,319
+The correct version of the Introduce-SELF method is executed in runtime. This is a dynamic binding.
+
+596
+01:52:24,319 --> 01:52:26,019
+Or this is a...
+
+597
+01:52:26,019 --> 01:52:38,019
+This is executed by or thanks to dynamic binding. This mechanism of is called as polymorphism.
+
+598
+01:52:38,019 --> 01:52:44,060
+Yani böyle bir şey yazdınız, yukarıdaki iptal oldu.
+
+599
+01:52:44,879 --> 01:52:46,779
+İşte öğrencinin kendisini tanıtması farklı.
+
+600
+01:52:46,940 --> 01:52:49,599
+İşte öğrenci numaranızı, kaçıncı sınıf olduğunuzu tanıtıyorsunuz.
+
+601
+01:52:49,659 --> 01:52:53,220
+İşçinin kendini tanıtması farklı, emeklinin kendini tanıtması farklı.
+
+602
+01:52:53,319 --> 01:52:54,199
+Bunlar farklı şeyler.
+
+603
+01:52:54,959 --> 01:52:58,199
+Aşağıda olan bu farklılıklar işte polymorphism olarak adlanılıyor.
+
+604
+01:52:58,199 --> 01:53:04,599
+Eğer person sınıfından, üst sınıftan bir nesne ürettiniz ve alt sınıf yani nesne dizisi ürettiniz.
+
+605
+01:53:04,599 --> 01:53:18,999
+Her bir nesnenin referansına da altta farklı nesneler bağladıysanız bunun runtime tarafında execute edilmesi, ilgili metotların çalıştırılması da dynamic binding aracılığıyla oluyor özellikle Java'da.
+
+606
+01:53:18,999 --> 01:53:30,499
+What should we do if we need to access an overriding method's previous version as it is called in the superclass?
+
+607
+01:53:30,499 --> 01:53:48,499
+We can access that particular method via the super pointer. Inside this method, we can call the previous declaration to the previous method definition via super pointer.
+
+608
+01:53:48,499 --> 01:53:50,499
+We will see...
+
+609
+01:53:50,499 --> 01:53:52,499
+...proxy...
+
+610
+01:54:02,292 --> 01:54:17,651
+If you want to block or inhibit method override mechanism, you should add final keywords inside this method.
+
+611
+01:54:18,091 --> 01:54:27,292
+Public string final introduce self or protected final string.
+
+612
+01:54:27,292 --> 01:54:36,292
+I think order is I don't remember the order final is added into this method definition.
+
+613
+01:54:36,292 --> 01:54:37,292
+Okay.
+
+614
+01:54:44,020 --> 01:55:13,999
+Yes. Polymorphism and overriding. UML class schema of an example which consists of an inheritance tree, person, employee and manager and a class using them company. Company is a test class or driver class. Okay. This is this use employee objects and manager objects.
+
+615
+01:55:14,020 --> 01:55:22,579
+because these are directly accessible, directly used objects.
+
+616
+01:55:25,139 --> 01:55:32,179
+Person is a general object, general class for these objects.
+
+617
+01:55:32,740 --> 01:55:38,860
+Name of employee and manager are common feature.
+
+618
+01:55:38,860 --> 01:55:53,859
+GetName is a common method for this member field. Person is a constructor to assign a string.
+
+619
+01:55:53,859 --> 01:56:07,859
+We can create any objects in person type. We can also drive or produce employee or manager types.
+
+620
+01:56:07,859 --> 01:56:32,859
+But consider that salary is used for employee or manager. It is not used for person. This is an extra information. Also for manager bonus is extra information. Get salary at set salary,
+
+621
+01:56:32,859 --> 01:57:00,419
+especially set sorry get salary are different implementation this is an overriding mechanism set bonus is special for manager constructor for manager are similar to constructor for employee.
+
+622
+01:57:00,419 --> 01:57:28,659
+Şimdi bu yapıdan baktığımızda kişinin adı var, işçinin ayrıca maaşı var, yöneticinin ayrıca bonus bilgileri var. Bunların konstruktörlerine baktığımda ikisi isim ve maaş alıyorlar. Tamam. Ama bu isimler nerede atanacak arkadaşlar? Bunun içerisinde değil. Şuradaki atanan şeyde yani bir süperden atanacak. Bu implementasyona bakacağız. Bunların kalıtım olduklarını zaten şuradan anlıyoruz. Bu kalıtımla oluşturulan şu objeleri de test sınıfında kullanacakmışız.
+
+623
+01:57:28,659 --> 01:57:55,299
+Yes. Person is firstly implemented string name and string name. This name is a constructor method. Get name is return name method. In order to implement inheritance relationship, we should specify extents keywords.
+
+624
+01:57:55,299 --> 01:58:23,299
+We should specify the name of base class via extents keyword. This shows that employee inherits from person class. Okay. This is extra information. Please mind that this is a private, but this is public.
+
+625
+01:58:23,299 --> 01:58:36,499
+So we can access this constructor and this getName function, but we cannot directly access name. This is indirectly accessing for name variable.
+
+626
+01:58:38,068 --> 01:58:57,147
+Yes, from employee constructor, we are sending the name string into super or base class for this line. Okay. The salary is assigned into from this argument or parameter.
+
+627
+01:58:57,147 --> 01:59:16,487
+This is an important role of super method call. We cannot write method call for the second or the following lines. We have to write the super method call for the first line.
+
+628
+01:59:16,487 --> 01:59:42,487
+Burada süper çağrısını yazacaksak birinci satırda yazmak zorundayız. Bu bir. Hiçbir şey yazmazsak default olan constructor çağrılır. Default constructor mesela bunun nedir? Boş olan bir constructor'dır. O şu an görünmüyor burada. Gider o çalışır. Yani ne olursa olsun böyle bir constructor çalışır arkadaşlar. Herhangi bir parametre sonu yani şu boş bir süper çalışır.
+
+629
+01:59:42,487 --> 01:59:53,227
+Biz de onu burada tanımlamadığımız için kendi kendine boş olarak çalışır. Önce o çalışır sonra buraya geri gelir. Burada biz ne yapacağız? Tanımladığımız şeyi çağırıyoruz.
+
+630
+01:59:53,227 --> 02:00:12,367
+Get salary and set salary. This is a specific method declarations for this class, employee class. This is a manager extends from employee implementation. This is a bonus for specific for
+
+631
+02:00:12,367 --> 02:00:13,367
+manager or manager this is a method constructor operation inside this constructor we are calling the super class constructor this is similar to this is correspondence to super class for this line okay this is a
+
+632
+02:00:42,367 --> 02:01:12,347
+Authenticated, bonus is assigned into zero, set bonus and get salary. To get salary of manager, we cannot access this member, but we can indirectly access via get salary methods. By using super nokta get salary methods, we can obtain the value and bonus is added for this get salary method.
+
+633
+02:01:12,368 --> 02:01:35,828
+Don't cause an error by writing super name super salary. If you write this or this by using this or this you can encounter an error because there is no this type of constructor definition.
+
+634
+02:01:35,827 --> 02:01:43,788
+Şimdi burada böyle bir tanım olmadığı için burada eğer böyle bir şey yazarsanız hata olur.
+
+635
+02:01:46,007 --> 02:01:51,767
+Şimdi burada olduğu gibi de şurada canımız istediği gibi doğrudan get salary veya salary yazamıyoruz.
+
+636
+02:01:51,907 --> 02:01:52,827
+Niye salary yazamıyoruz?
+
+637
+02:01:52,947 --> 02:01:57,827
+Çünkü yukarıda bu arkadaşımızda integer şey private tanımlanmış.
+
+638
+02:01:57,827 --> 02:01:58,407
+Ne yapacağız?
+
+639
+02:01:58,407 --> 02:02:06,907
+Süper'deki get salary ile bunu dolaylı yoldan alıp bonusu ekleyip bu metodu çağıran get salary'i kullanacağız.
+
+640
+02:02:09,648 --> 02:02:12,167
+Süper'i ilk başta kullanmak gerekiyor.
+
+641
+02:02:12,247 --> 02:02:19,627
+İlk satırda eğer alt satırlarda kullanacaksanız bu hata verir.
+
+642
+02:02:20,487 --> 02:02:22,387
+Süper nokta süper diye bir şey yazamıyoruz.
+
+643
+02:02:24,487 --> 02:02:27,148
+Her bir şey de ilk satırda olacaktır.
+
+644
+02:02:27,148 --> 02:02:32,148
+Yani burada ha bir de süperi tek bir defa kullanamıyor. Yani bir süper yazlık
+
+645
+02:02:33,652 --> 02:02:39,511
+O superden döndü, öbür super'e git diye bir şey yapamıyoruz. Tek bir super yazılıyor. Bunu da söylemiş olalım.
+
+646
+02:02:40,851 --> 02:02:57,851
+Evet, bakın bir main class. Employee is an array of reference for step. It consists of three different employee object reference.
+
+647
+02:02:57,851 --> 02:03:18,111
+Manager, boss is a new manager, Cemal Nur Sargut and 8000. This is an object. Boss nokta set bonus is 2500. The first, the zero element, the first element of stuff is boss.
+
+648
+02:03:18,111 --> 02:03:37,832
+The second element is an object. There is no need assigning a reference. We can directly assign this new object's reference, new employee. Staff 2 is new employee.
+
+649
+02:03:37,832 --> 02:04:02,152
+Okay. Here, there are one, there is one manager, there are two employee for this array. Let's get this, get information about this objects. Employee is author from staff, this is an array.
+
+650
+02:04:02,152 --> 02:04:10,872
+Author getName plus Author getSelery are printed into screen.
+
+651
+02:04:12,952 --> 02:04:19,192
+Please notice that the syntax of for loop is a for each loop.
+
+652
+02:04:21,192 --> 02:04:26,152
+This is a sequence diagram of main method.
+
+653
+02:04:26,152 --> 02:04:33,971
+Draw the encompassing rectangle version of the for loop tool.
+
+654
+02:04:35,431 --> 02:04:36,351
+Sorry.
+
+655
+02:04:37,232 --> 02:04:39,372
+This is a new object generation.
+
+656
+02:04:40,071 --> 02:04:44,972
+You can add this, for example,
+
+657
+02:04:44,971 --> 02:05:14,891
+going on and as I continue you can add the for loop for example this is you can add this is a homework for you this is a related to first object this is related to second object this is related to third object okay
+
+658
+02:05:14,971 --> 02:05:23,231
+GetName and GetSully is the implementation of the lines in sequence diagram.
+
+659
+02:05:25,511 --> 02:05:34,131
+Sometimes our students or all people may confuse overleading and overriding.
+
+660
+02:05:35,751 --> 02:05:41,711
+Overriding is closely related with inheritance.
+
+661
+02:05:41,711 --> 02:05:54,111
+It is nullifying of any defined method by redefining a new method with same name.
+
+662
+02:05:54,111 --> 02:05:59,851
+Yani bir metodu yeniden aynı isimle tekrardan tanımlamak alt sınıflarda.
+
+663
+02:06:00,271 --> 02:06:04,032
+O zaman bu overwrite oluyor ve sadece inheritance da karşımıza gelir.
+
+664
+02:06:04,031 --> 02:06:21,151
+Yani association'da, dependency'da, aggregation'da ve kompozition'da overriding yoktur. Overloading bunlarda vardır, overriding kalıtımda vardır. Böyle söyleyebiliriz.
+
+665
+02:06:23,291 --> 02:06:32,991
+Overload is a multiple method definition with the same names but with different parameters. This is not related to inheritance.
+
+666
+02:06:34,387 --> 02:06:52,587
+Some, one of them is related to inheritance. It is overriding. The overloading is related to association or aggregation or composition. This is related to class definition.
+
+667
+02:06:54,087 --> 02:07:04,387
+Overriding example, the get salary method in class manager. Overloading example, let's overload the constructor of the class manager by adding following constructor method.
+
+668
+02:07:04,387 --> 02:07:07,387
+This is a manager constructor
+
+669
+02:07:10,739 --> 02:07:25,419
+Ok. Name and salary. You can add extra information via a new constructor method. Bizde over voting. Şunu da bitireceğim arkadaşlar. Ders tamamlayacağız.
+
+670
+02:07:31,539 --> 02:07:34,379
+The class manager has two constructors.
+
+671
+02:07:36,460 --> 02:07:42,380
+Private methods of a super class can be overridden in its subclass.
+
+672
+02:07:44,099 --> 02:07:54,699
+However, the child class cannot access the original version of the method in any way, such as by using super keyword.
+
+673
+02:07:54,699 --> 02:08:22,499
+we cannot access. A class declared as final cannot be used as a super class. While during class definition, if you write public final person, public final class person, sorry.
+
+674
+02:08:27,572 --> 02:08:54,931
+This is not inherited. This is not derived. Because this is a final. In C-Sharp, you can use sealed keyword instead of final. Seal, do you know seal? Damgalanmış, mühürlenmiş demektir. Kalıtım yapılamaz. Eğer klasa final yazarsanız kalıtım yapamıyoruz. Metoda final yazarsak onu da ne yapıyoruz? Overwrite edemiyoruz. Dikkat edelim.
+
+675
+02:08:57,572 --> 02:09:07,491
+Yes, this is a an expert from requirements documentation. This is a simple application.
+
+676
+02:09:09,092 --> 02:09:11,491
+Bir dakika, şuna bir bakayım arkadaşlar.
+
+677
+02:09:23,283 --> 02:09:47,563
+Şunu da bitirelim. Ondan sonra yani 10 dakikaya falan biter, 10-12 dakikaya ondan sonra dersimizi bitiririz. Aslında bugünkü konumuz abstract classlara şey yapalım, bugün abstract classlarla alakalı konuya geçmeyiz. Uygulamada bir saat kadar bugünkü gördüğümüz kalıtım ve diğer şeylerle alakalı bir uygulama yaparız.
+
+678
+02:09:47,563 --> 02:10:13,303
+We should keep track of the patient's name, Turkish citizen ID number, birthdays, and cell numbers. This is related to patient's name. Patient is a class. The variables of patient is name, Turkish citizen ID, cell number, these are strings, birth date.
+
+679
+02:10:13,304 --> 02:10:19,103
+Okay, this information should be stored for doctors too.
+
+680
+02:10:20,383 --> 02:10:22,283
+Hmm, patient and doctors.
+
+681
+02:10:23,283 --> 02:10:35,184
+Sorry, as a result, doctor can inherit, doctor can also be sick or illness.
+
+682
+02:10:35,184 --> 02:10:48,843
+These are firstly, in the first impression, we can say that these can be inherited by doctor.
+
+683
+02:10:49,964 --> 02:10:55,123
+Fakat, but we don't say doctor is not patient.
+
+684
+02:10:55,123 --> 02:10:56,783
+This is a relationship.
+
+685
+02:10:57,343 --> 02:11:00,563
+So this is an incorrect modeling.
+
+686
+02:11:00,563 --> 02:11:10,103
+From the first sentence we can understand this relationship.
+
+687
+02:11:11,203 --> 02:11:19,623
+But from the essence of inheritance relationship we cannot design this relationship.
+
+688
+02:11:19,623 --> 02:11:25,943
+Şimdi ilk cümleyi, iki cümleyi okuduk. Tamam aklımıza bir hasta var. Doktor da onun aynı alanlarına sahip olacak.
+
+689
+02:11:25,943 --> 02:11:33,203
+İne de işte bir de doktorun diploma numarasını şu üçüncü cümleyi de okuduk tamam aklımıza şöyle bir tasarım geldi.
+
+690
+02:11:33,963 --> 02:11:38,763
+Diyebiliriz ki burada hani tamam doktorun bu bilgileri var ama iki tane sınıf yazmayalım.
+
+691
+02:11:39,724 --> 02:11:42,004
+Onun yerine ne yapalım işte bir hasta yazarız.
+
+692
+02:11:42,963 --> 02:11:47,303
+Hastanın bütün bilgileri zaten doktorda var doktorda bir de ayrıca numara var diyebiliriz.
+
+693
+02:11:47,304 --> 02:11:56,104
+Şu üç cümleyi söyleyince yani devamını okumadan şuradan itibaren okumadan veya daha devamını okumadan bu aklımıza gelebiliyor.
+
+694
+02:11:57,724 --> 02:12:02,563
+We should keep records of treatments applied to patient tool.
+
+695
+02:12:02,563 --> 02:12:11,283
+Şimdi kişilerin neyini tutacağız? Hastaların, hastalar yapılan tedavileri tutacağız.
+
+696
+02:12:11,364 --> 02:12:15,004
+Şimdi hastalara yapılan tedavileri de burada tutacaksak treatment diye bir şey olacak.
+
+697
+02:12:15,004 --> 02:12:44,364
+İyi de hastaya yapılan tedavi doktora yapılmıyor ki. Doktor tedavi ediyor. Zaten buradan da işin sakat olduğu görülüyor. Her böyle ortak olunan noktada işte alt sınıf budur, üst sınıftıdır demek gerekmiyor, demek yanlış oluyor. Bakacağız bu sınıfın adı patient. Bunun özellikleri bunlar. Bu sınıfın adı doktor. Doktor bir hasta mıdır? Değildir. Isarılayışı şık burada olmadı. Has de olmaz mesela burada.
+
+698
+02:12:45,004 --> 02:12:59,804
+Hani bazen şeyle karıştırılıyor. Hocam iz olmazsa hez olur mu? Yani doktor hastayı tedavi eder. Bu yapılabilir ama burada şu bilgiler üzerinde bir hez ilişkisi kurmakta makul değil şimdik.
+
+699
+02:13:00,703 --> 02:13:08,864
+Evet burada ne yapacağız? Bütün kişilerde diyeceğiz ki genel bir kavram ortaya atalım. This is a general concept, person concept.
+
+700
+02:13:08,864 --> 02:13:15,063
+name, id, cell number, or birthday is a common variable.
+
+701
+02:13:16,063 --> 02:13:18,664
+These are specific variables.
+
+702
+02:13:19,507 --> 02:13:41,507
+There may be another specific method for doctor and patient. Treatment is another class. One patient can have multiple treatments. Okay. This is another class. This is not related to doctor.
+
+703
+02:13:41,507 --> 02:13:49,728
+Doctor, patient, and treatments have a relationship between each other.
+
+704
+02:13:49,728 --> 02:13:57,908
+For example, this is an association or aggregation relationship.
+
+705
+02:13:58,048 --> 02:14:00,348
+Sorry, this is an association relationship.
+
+706
+02:14:00,348 --> 02:14:16,228
+By seeing one, this cardinality, we can also say that aggregation, but there is no whole part relationship, so it is an association relation.
+
+707
+02:14:16,227 --> 02:14:25,647
+In the treatment class, we may use doctors or other functions of doctor class.
+
+708
+02:14:25,647 --> 02:14:30,767
+So this may be, there may be any other relationship.
+
+709
+02:14:30,967 --> 02:14:31,747
+This is a dependency.
+
+710
+02:14:32,307 --> 02:14:32,447
+Okay.
+
+711
+02:14:33,187 --> 02:14:38,368
+Treatment depends on doctor.
+
+712
+02:14:39,607 --> 02:14:40,327
+We can say.
+
+713
+02:14:40,327 --> 02:14:46,228
+This is a semi-correct model, not exact correct.
+
+714
+02:14:47,228 --> 02:14:52,188
+Çünkü burada diyeceğimiz şey, yani bunun devamının gelmesi lazım.
+
+715
+02:14:52,327 --> 02:14:53,487
+Küçük bir alıntı burada.
+
+716
+02:14:55,347 --> 02:14:56,908
+Şuna dikkat edeceğiz arkadaşlar.
+
+717
+02:14:57,107 --> 02:14:58,827
+En çok hata genelde buradan yapılıyor.
+
+718
+02:14:59,228 --> 02:15:01,808
+Hani doktorun kendine ait bu alanları var.
+
+719
+02:15:02,408 --> 02:15:03,927
+Hastanın bu alanları var.
+
+720
+02:15:04,048 --> 02:15:08,688
+O zaman bunlar birbirine ortak deyip böyle bir model yaparsanız çok yanlış yapış olsun.
+
+721
+02:15:08,688 --> 02:15:21,747
+Yani en kolayı is a relationship'i kalıtımda bir check etmek. Eğer buradan bir check alıyorsanız veya check alamıyorsanız ona göre ilerleyin. Eğer biz buradan check alamadık onun için ne yaptık? Buraya gittik buradan check aldık.
+
+722
+02:15:25,427 --> 02:15:35,848
+Patients should have treatments, not the doctors. In the correct case, the treatments array is transferred to doctors because of the inheritance relation.
+
+723
+02:15:36,848 --> 02:15:48,447
+Yani burada treatment'ı person'a da söylemek çok doğru olmuyor. Çünkü hasta olan kişiler için yapılacak bir şey.
+
+724
+02:15:48,447 --> 02:15:53,348
+Çünkü person'a yaparsak bu person doktoru da etkileyecektir. Onu da burada söylemiş olalım.
+
+725
+02:15:53,348 --> 02:16:07,268
+Cosmic superclass in Java. I will give an example about this concepts in the laboratory section.
+
+726
+02:16:09,587 --> 02:16:17,268
+The class Java, Lung and Object is the implicit superclass of all class.
+
+727
+02:16:17,268 --> 02:16:47,027
+as I said before you can override some method of this class in your classes by adding annotation at override in Java. There is no restriction. Okay. It is not obligatory but in order to show or in order to express this is an override method we are using override
+
+728
+02:16:47,027 --> 02:17:13,527
+and notation. For example, string to string. We studied or we caught this method by using for books or other types. This returns a string from this method. We cannot change return type, but we can redefine inside this function.
+
+729
+02:17:13,527 --> 02:17:43,508
+Just as you have done in, this is similar to introduce yourself method. In the introduce yourself method, we are returning string variable. For example, this nokta get plate plus quotation plus this nokta get yeat.
+
+730
+02:17:43,527 --> 02:18:08,367
+This is a return type of introduced self. This is simple, similarly used to siting method. The advantage of overriding to siting is that you can print the instance directly. Doğrudan yazabiliyoruz. Şimdi abstract classlar kaldı.
+
+731
+02:18:08,368 --> 02:18:11,067
+112
+
+732
+02:18:11,067 --> 02:18:12,808
+Buraya kadar bir sorunuz var mı?
+
+733
+02:18:12,888 --> 02:18:14,008
+112 not ederim.
+
+734
+02:18:16,468 --> 02:18:18,508
+77'den 112'ye baya iyi geldik.
+
+735
+02:18:19,347 --> 02:18:22,847
+Biraz hızlı geldim çünkü sizden çok bir şey yok arkadaşlar.
+
+736
+02:18:24,688 --> 02:18:33,827
+Buraya kadar gördüğümüz konularla alakalı uygulama saatimizde saat 7'de uygulama yapacağız.
+
+737
+02:18:34,627 --> 02:18:37,327
+Gelecek haftaki konumuz buradan biraz daha önemli.
+
+738
+02:18:37,327 --> 02:18:56,227
+Kalınımı da işin içine dahil ediyoruz. Abstract classları göreceğiz. Multiple inheritance'ın olup olamayacağını tartışacağız ve buradan interfazlere bir geçiş yapacağız. Yani abstractla olmuyor veya doğrudan inheritance da olmuyor ama şeyle, interfazde bunu nasıl yaparızı konuşacağız.
+
+739
+02:18:56,227 --> 02:19:13,287
+Sonra enumeration denen bir şey var. Yani 134'e kadar geliriz. Ondan sonra bizim data structure konumuza geleceğiz. Veri yapılarında gördüğünüz algoritmaların, işte temel veri yapılarının burada Java'daki karşılığını konuşacağız.
+
+740
+02:19:14,907 --> 02:19:16,487
+Evet, bugün neler söyledik?
+
+741
+02:19:16,487 --> 02:19:20,947
+Çok pardon. Lütfen devam edin. Ben bitirici sandım.
+
+742
+02:19:21,332 --> 02:19:47,931
+Bugün neler söyledik? Hemen anlatıksız. Nesnelere giriş yaptık arkadaşlar. Dersin başından bu yana, dönemin başından bu yana. Nesnelerin özellikleri var dedik. Nesnelerin metotları var dedik. C'dekinden farklı olarak. Bu nesneler veya classlar kendi aralarında bazı ilişkilerde ilişkileri oluyor dedik. Bu ilişkilere baktığımızda toplamda beş farklı ilişki türü olduğunu konuştuk.
+
+743
+02:19:47,931 --> 02:20:05,832
+Geçen hafta ve bu hafta bunun üzerinde bayağı bir şey söylemiş olduk. Bunları hani tanımları, tasarımları, özellikleri, association bunların özellikleri, aggregation, composition, dependence ve inheritance bunların ne olduğuna baktık.
+
+744
+02:20:05,832 --> 02:20:14,411
+Kısaca böyle ufak tefek kodlarla göstermeye çalıştım. Şimdi burada çok fazla bir keyword yok. Sadece extend'i şu ana kadar bilmiyordunuz.
+
+745
+02:20:14,411 --> 02:20:41,692
+Extend'i öğrenmiş olduk. Bir de süper diye bir şey karşımıza çıktı. Overwrite diye bir konsept olduğunu gördük. Overwrite hiçbir yerde annotation olarak yazıyoruz. Polymorphism kavramı çıktı karşımıza kalıtımdan bir sonuç olarak. Parça bütün ilişkisi dedik, ise ilişkisi dedik, has ilişkileri dedik. Bunlar iki haftadır konuştuğumuz şeylerin genel kavramları.
+
+746
+02:20:41,692 --> 02:20:51,912
+Sizde paylaştığım linklerde bunlarla alakalı dersi tekrar etmek adına isterseniz video kayıtlarından isterseniz o kaynaklardan tekrar etmeniz gerekir.
+
+747
+02:20:52,512 --> 02:20:56,571
+Çünkü burada söylenen bir şey çok rahat unutuluyor. Bu kavramda dediğim gibi adınız gibi bilmeniz lazım.
+
+748
+02:20:57,332 --> 02:21:01,492
+Size bir geçen haftaki bir case study verildiğinde ne yapacaksınız?
+
+749
+02:21:01,492 --> 02:21:07,732
+İşte burada şu classlar var, bu classlar arasında şöyle ilişkiler var deyip ondan sonra kodlamaya başlıyorsunuz.
+
+750
+02:21:07,731 --> 02:21:19,931
+Eğer doğrudan kodlama yapılırsa sıkıntı çok büyük oluyor. Bir de laboratuvarda birkaç arkadaşınızda bir sıkıntı olmuş. Yankıt söz vereceğim. Sözünü unutmadık ben.
+
+751
+02:21:19,931 --> 02:21:34,091
+Yoksa arkadaşlar kodunuzu derleye derleye gidin. Yoksa birkaç arkadaşınız kodunuzu en son derlemeye çalışmış ve şöyle bir sıkıntıyla karşılaştılar.
+
+752
+02:21:34,091 --> 02:21:41,311
+Bize gönderdikleri kodlar boş geldi. Çünkü sadece sınıfların boş metotları vardı.
+
+753
+02:21:41,711 --> 02:21:49,311
+Buradan mağdur olmasınlar diye birkaç arkadaşın süre 2-3 dakika içinde geldiği için onları kabul ettik.
+
+754
+02:21:49,631 --> 02:21:56,651
+Böyle bir problem var. Onun için derleye derleye gidin. Bu normal bir algoritma değersi değil.
+
+755
+02:21:57,671 --> 02:22:03,731
+Object Oriented'ın kendine has bir jargonu vardır. O jargona hakim olarak burada iş yapmak gerekiyor.
+
+756
+02:22:04,091 --> 02:22:30,491
+Tabii işin algoritmik derinliğine çok fazla girmiyoruz. Yani bir introduce yourself metodunu yazmak kolay. Gördüğünüz gibi kolay metodlar yazıyoruz veya beklesil kolay geliyor. Hani gidip de bir algoritma dersinde işte stack nasıl yazılır, gelin bunu Java'da yazın demeyeceğiz size. Onun haricinde object oriented mantığı, o iskeleti ortaya çıkarabilmeniz lazım diyelim. Evet, Yankır, şimdi seni dinliyorum.
+
+757
+02:22:30,491 --> 02:22:34,351
+Ben çok küçük sadece saat 7'de siz mi anlatacaksınız diye soracaktım
+
+758
+02:22:34,351 --> 02:22:36,211
+Tabi tabi bu hafta ben varım
+
+759
+02:22:36,211 --> 02:22:37,231
+Bu hafta ben varım
+
+760
+02:22:37,231 --> 02:22:40,191
+Gelecek hafta uygulama koymuşuz
+
+761
+02:22:40,191 --> 02:22:42,491
+Gelecek hafta Toprak hocamız gelecek
+
+762
+02:22:42,491 --> 02:22:48,951
+Ben bu hafta konuyu yetiştiremem diye bir şey düşündüm
+
+763
+02:22:48,951 --> 02:22:54,151
+Yani gelmem gereken yere yaklaşık saat 18'den önce geldik
+
+764
+02:22:54,151 --> 02:22:57,391
+Örnek mi çöreceğiz?
+
+765
+02:22:57,391 --> 02:23:14,611
+Evet bu anlattığım kısmın alakalı bir basit bir örnek yapalım. O örnek üzerinden biraz daha bazı şeyler daha rahat oturur diye düşünüyorum. Biraz da işte kod yazınca sizden de bazı geri bildirimler geliyor. Özellikle kalıltımı ve
+
+766
+02:23:15,188 --> 02:23:27,827
+polymorphismi, method overloadingi içeren böyle bir saatlik bir örnek yaparsak hem de pekiştirmiş oluruz. Gelecek haftada abstract classlara gezdiği düşünüyorum. Şimdi şeye bir daha bakayım.
+
+767
+02:23:27,827 --> 02:23:51,868
+şu inheritance, abstract, class, polymorphism, override, overload. Yani bir abstract, class kalmış anlatmadığımız. Onu belki şeyde uygulama saatinde biraz denilirim ama daha çok abstractı gelecek hafta anlatırsam gelecek haftada uygulamayı işte hocanız yapacak. Ondan sonraki laboratuvara yani abstractla alakalı bir eksiğimiz kalmaz.
+
+768
+02:23:51,868 --> 02:23:59,388
+Önce şu gördüğümüz kısımları bugün halledelim. Biraz daha örnek yapalım. İnşallah bir eksiğiniz kalmaz diye düşünüyorum. Var mı sorunuz?
+
+769
+02:24:00,908 --> 02:24:02,228
+Hocam sesin geliyor mu?
+
+770
+02:24:02,948 --> 02:24:03,248
+Evet.
+
+771
+02:24:03,728 --> 02:24:12,368
+Bu ayrıca bir kısmına soru sorduğunuz hocam, eğer ismi söylediyseniz o sırada kulaklıkla ilgili bir sorun yaşadığım için duyamadım da yani kusura bakmayın söylediyseniz.
+
+772
+02:24:12,728 --> 02:24:14,387
+Yok yok bu sorun değil. Yani...
+
+773
+02:24:18,739 --> 02:24:40,299
+Şimdi gönderip, yani bize kod boş gelmişse derlenmemiş hatalı bir koddur. Yani derlenmemesinin sebebi şudur. Compile time hatası alırsanız kod derlenmemişse derlenmemiş hali kaydetmiyor o proje dosyasını. Export ettiğiniz dosyada boş bir dosya geliyor.
+
+774
+02:24:40,299 --> 02:24:42,660
+Hocanız notlarınızı açıklamış.
+
+775
+02:24:42,959 --> 02:24:44,080
+Yani buna dikkat edin.
+
+776
+02:24:45,399 --> 02:24:47,119
+Bu da neden kaynaklı?
+
+777
+02:24:47,319 --> 02:24:50,159
+Kod yazmadığınızdan, alıştırma yapmadığınızdan kaynaklı.
+
+778
+02:24:50,159 --> 02:24:55,179
+Süre belki 5-10 dakika geç kalmış olabilir ama, yetmemiş olabilir ama
+
+779
+02:24:55,179 --> 02:25:00,320
+kod yazmayan birisi laboratuvar esnasında ilk defa kod yazacaksa zorlanır ve
+
+780
+02:25:00,320 --> 02:25:03,100
+afallayıp el ayağı birbirine dolaşabilir.
+
+781
+02:25:03,179 --> 02:25:04,059
+Bunlar normal şeyler.
+
+782
+02:25:04,979 --> 02:25:09,960
+Benim orada ekstra sonradan kodu gönder bakalım diye 3 gün sonra 5 gün sonra yapacak bir şeyim yok.
+
+783
+02:25:10,299 --> 02:25:32,299
+Son 1-2 dakika içerisinde bir arkadaş fark etti. Onlardan hemen kodlarını aldık. Ama dediğim gibi arkadaşlar bu sizin tecrübe etmenizle alakalı bir şey. Ben hani izleyeyim bunu izleyerek kendi kafamda hallederim derseniz farklı bir senaryoyla karşılaştığınızda çok zorlanabilirsiniz. Onun için bol bol kod yazın.
+
+784
+02:25:32,299 --> 02:25:41,199
+Yeteri kadar şey paylaştığımı düşünüyorum, dokumentasyon paylaştığımı düşünüyorum, onlar sizin belli bir seviyeye gelmeniz açısından yeterli olur.
+
+785
+02:25:44,199 --> 02:25:50,479
+Size bir şey paylaştılar diyebiliyorum, paylaşmadılar mı? Bir link.
+
+786
+02:25:52,100 --> 02:25:53,839
+Ben paylaşayım buraya atıyorum şimdi.
+
+787
+02:25:53,839 --> 02:26:16,519
+2021 Bahar OOP diye. Oraya girdiğinizde benim grubum, 3. sayfada benim grubumun listesini görürsünüz. Lab ve uygulama takviminde de hangi hafta, hangi konulardan laboratuvar ve uygulama olacak. İşte önemli gün ve tarihler. Genel laboratuvar takvimi orada bulabilirsiniz.
+
+788
+02:26:16,519 --> 02:26:30,299
+Şimdi arkadaşlar genellikle bu tarz şeyler hocam ben duymadım görmedimden hani kurallarla alakalı kimseyi eleştirmek için söylemiyorum. Linkte paylaşıldı.
+
+789
+02:26:34,059 --> 02:26:45,460
+Kurallarla alakalı şöyle bir problem var. Biz size kuralları yani en fazla mail ile veya derste ifade edebiliriz veya işte ders duvarını kullanıyoruz.
+
+790
+02:26:45,460 --> 02:27:11,159
+Hani benim duymadım, görmedim, bunları kayıtlara geçsin diye söylüyorum. Buradaki arkadaşlar derste alakalı oldukları için bunlara size tekrar bunu söylemek çok doğru değil ama kayıtlarda bulunsun diye ifade edeyim. Söylediğimiz kurallar burada söylenir ve bunu öğrenci duymak zorunda. En fazla mail atıyorum. Hani ben şahsi olarak ayrıca bir de Telegram grubundan bilgi yayıyorum. Daha ne yapabilirim onu bilmiyorum yani.
+
+791
+02:27:11,159 --> 02:27:19,879
+Herhalde her birinizin evine gelip kapısına böyle bir duyurum var diyecek diye böyle bir mantıksız bir şey yapacak değiliz.
+
+792
+02:27:20,620 --> 02:27:23,059
+Olması imkansız olan bir şey olmuyor.
+
+793
+02:27:23,600 --> 02:27:25,079
+Aklın apaçıklık ilkesi var.
+
+794
+02:27:25,299 --> 02:27:27,979
+Öğrenci sorumluluğunu bilecek.
+
+795
+02:27:27,979 --> 02:27:33,519
+Hoca olarak ben kendi sorumluluğunu bilmek adına fazlasını yaptığımı düşünüyorum.
+
+796
+02:27:35,479 --> 02:27:38,299
+Yani burada iş birazcık öğrenciye kalıyor.
+
+797
+02:27:38,299 --> 02:27:54,759
+Onun için gerekli duyuruları takip etmek sizin sorunuza. Takip etmediğinizde müeyyidesine, yaptırımlarına katlanmak da sizin bunun bir doğal sonucu.
+
+798
+02:27:54,759 --> 02:28:02,620
+Yani öğrenci ödevini zamanında teslim etmemişse, laboratuvarda kurallarına uymamışsa bunu biz zamanında ifade etmişizdir.
+
+799
+02:28:02,619 --> 02:28:10,459
+müeyyidesi tekrar dönüp dolaşıp size geliyor. Siz madrı oluyorsunuz. Biz zamanında her şeyi söylemiş oluyoruz.
+
+800
+02:28:11,079 --> 02:28:17,239
+Evet herhangi bir sorunuz, isteğiniz yoksa arkadaşlar bir dinlenelim, ara verelim. Bir buçuk saat sonra tekrar görüşeceğiz.
+
+801
+02:28:18,451 --> 02:28:19,271
+var mı sorunuz?
+
+802
+02:28:22,231 --> 02:28:23,591
+Görüşmek üzere hocam.
+
+803
+02:28:24,011 --> 02:28:25,191
+Görüşürüz hocam saat yedide.
+
+804
+02:28:25,392 --> 02:28:26,432
+Görüşürüz. İyi günler.

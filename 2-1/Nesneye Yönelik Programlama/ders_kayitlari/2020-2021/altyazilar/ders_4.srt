@@ -1,0 +1,3175 @@
+1
+00:02:07,028 --> 00:02:11,107
+Hocam. Merhaba, Töyber.
+
+2
+00:02:12,207 --> 00:02:13,167
+Merhaba, Töyber.
+
+3
+00:02:14,167 --> 00:02:24,288
+Hocam, ben bu şeyde yazdığım, interc'de yazdığım projeyi geçirmeye çalıştım da net bir insan.
+
+4
+00:02:24,747 --> 00:02:27,167
+Galiba ikisi arasında bir bağlantı yok ki, geçirilmiyor.
+
+5
+00:02:28,087 --> 00:02:34,247
+Şöyle, onun şimdi maven, ant, bir tane de konfigürasyon dosyası var net bir insanın.
+
+6
+00:02:34,247 --> 00:02:41,627
+Eğer onlar uyumsuzsa şey yapamıyorsun paket olarak geçiremiyorsun ancak source kodlarını taşıman gerekiyor.
+
+7
+00:02:41,787 --> 00:02:44,187
+File olarak açabiliyor ama projel olarak açamıyor.
+
+8
+00:02:44,827 --> 00:02:48,627
+Yani o dosyaları açma şeyleri konfigürasyon dosyaları farklıdır.
+
+9
+00:02:49,368 --> 00:02:56,647
+NetBeans'ten mesela Eclipse açılabiliyor bildiğim kadarıyla veya Eclipse'ten NetBeans ama IntelliJ'yi tanımıyordur o dosya formatını.
+
+10
+00:02:56,647 --> 00:03:24,568
+Çünkü o bir paket. Yani WinRAR dosyasını WinAMP dosyasını da açmaya şey, MediaPlay'i de açmaya çalışmaktan farkı olmuyor. Şey için ondan dolayı. Dosyanın formatını tanımadığı için. En basit yolu source kodların src dosyasının altındaki Java uzantılı dosyaları alıp net bir insite proje oluşturup o projenin altına kod kopyalamak. O tarz bir durumda.
+
+11
+00:03:26,647 --> 00:03:33,327
+Zaten sizlerden biz kod istediğimizde sadece Java dosyalarına source kodları göndermenizi isteriz.
+
+12
+00:03:33,327 --> 00:03:40,867
+Veya Eclipse'de veya NetBeans'te proje faillerini yazın deriz.
+
+13
+00:03:40,907 --> 00:03:42,387
+Ben daha çok şeyi tercih ediyorum.
+
+14
+00:03:43,607 --> 00:03:44,827
+Java source kodlarını.
+
+15
+00:03:47,927 --> 00:03:48,527
+Oldu mu?
+
+16
+00:03:50,087 --> 00:03:52,247
+Yani o şeyden kaynaklı.
+
+17
+00:03:52,947 --> 00:03:56,607
+Şimdi açarken 3 farklı konfigürasyon soracak bize.
+
+18
+00:03:56,647 --> 00:04:23,107
+NetBeans'te. Şu an gerçek ekran görünüyor. Bak görünüyor. Şurada File, New Project dediğimizde Gradle, Maven ve End. Biz antık kullanıyoruz. Basit olduğu için. Ondan dolayı açmıyordur. O formatlar desteklemiyordur. Ha bir de ayrıca bakarım. Belki şu Maven veya Gradle destekliyor olabilir. Onu şöyle denemek gerekebilir bir de. Bilmiyorum denediğim ne.
+
+19
+00:04:23,108 --> 00:04:35,348
+import mesela Eclipse projede misli ip demiş ama hani Intelijen'in formatı farklıysa onlandır o
+
+20
+00:04:38,740 --> 00:04:54,299
+Bana biraz önce Discord gönderen arkadaş burada mı? Ömer galiba. Bu nasıl kullanılacak ben hiç bilmiyorum. Daha önce hiç tecrüben olmadı. Konuşma yok herhalde burada değil mi arkadaşlar?
+
+21
+00:04:57,119 --> 00:04:58,459
+Hangi Discord'u gönderdi hocam?
+
+22
+00:04:59,599 --> 00:05:04,399
+Valla neydi bu? Language Exchange diye bir şey. Bir kanal gönderdi arkadaşınız.
+
+23
+00:05:04,399 --> 00:05:17,499
+Hocam benim çok sık kullandığım düz İngiliz diskodu var. Borda kaç kişi? Baya 100 binden fazla insan var. Çok fazla aktif kullanılıyor.
+
+24
+00:05:17,499 --> 00:05:29,259
+Vaaah. Ben hiç bilmiyorum. Daha önce bir geçen dönem sınav esnasında sizlerle konuşmak için diskord açalım diye birisi bir teklifte bulunmuştu. Sadece orada karşılaştım.
+
+25
+00:05:29,260 --> 00:05:36,940
+Ben Türk görüntü yapacağım, Türkler çok bozuyor şeyi de ben genelde yapancılığın yolunda atlıyorum
+
+26
+00:05:36,940 --> 00:05:40,460
+Peki burada şey mi?
+
+27
+00:05:40,460 --> 00:05:45,019
+Ben sizi şeyde gördüm, language exchange'i gördüm
+
+28
+00:05:45,019 --> 00:05:54,680
+Şöyle bir rol almanız lazım, sonra o size göre o diller açık olacak
+
+29
+00:05:54,680 --> 00:05:56,500
+Bir dakika
+
+30
+00:05:56,500 --> 00:05:58,879
+Bunu okumanız lazım sanırım
+
+31
+00:05:58,879 --> 00:06:01,759
+Ben de emin değilim ama bazen şöyle oluyor
+
+32
+00:06:01,759 --> 00:06:03,659
+Bir dakika mesela
+
+33
+00:06:03,659 --> 00:06:07,680
+Ne oldu bir şeyler
+
+34
+00:06:07,680 --> 00:06:13,420
+Sen bir şey mi yazdın acaba ya başkası mı yazdın
+
+35
+00:06:13,420 --> 00:06:17,219
+Şimdi ben mesela bu Ömer'in gönderdiği sen beni burada görmüşsün
+
+36
+00:06:17,219 --> 00:06:19,140
+Evet
+
+37
+00:06:19,140 --> 00:06:22,399
+Hocam şu an mesela bu
+
+38
+00:06:22,399 --> 00:06:26,219
+Native Fluent Learning kanalları var ya
+
+39
+00:06:26,219 --> 00:06:30,219
+Solda
+
+40
+00:06:30,219 --> 00:06:32,899
+Şunu kapattın
+
+41
+00:06:32,899 --> 00:06:33,519
+Evet aynen
+
+42
+00:06:33,519 --> 00:06:37,839
+Bunları native olan dilinizi seçmeniz lazım
+
+43
+00:06:37,839 --> 00:06:40,819
+Mesela Türkçe şey
+
+44
+00:06:40,819 --> 00:06:43,139
+Şunlardan mı seçiyoruz?
+
+45
+00:06:43,279 --> 00:06:44,479
+Mesela native Türkçe diyor
+
+46
+00:06:44,479 --> 00:06:45,279
+Aynen
+
+47
+00:06:45,279 --> 00:06:46,879
+Bunu react edin
+
+48
+00:06:46,879 --> 00:06:48,839
+Yani o emojiye basın
+
+49
+00:06:48,839 --> 00:06:49,999
+Şuna basıyoruz
+
+50
+00:06:49,999 --> 00:06:52,339
+Hayır şu
+
+51
+00:06:52,339 --> 00:06:55,279
+Aşağının şeyi
+
+52
+00:06:55,279 --> 00:06:56,879
+Aynen aynen
+
+53
+00:06:56,879 --> 00:06:59,579
+Native'im
+
+54
+00:06:59,579 --> 00:07:01,019
+Bir de learner var
+
+55
+00:07:01,019 --> 00:07:02,039
+Learning
+
+56
+00:07:02,039 --> 00:07:02,399
+Aynen
+
+57
+00:07:02,399 --> 00:07:11,219
+Şurada tabi bunu tıklayınca
+
+58
+00:07:11,219 --> 00:07:15,379
+O mesajın aşağısında şey var
+
+59
+00:07:15,379 --> 00:07:19,099
+Herkes
+
+60
+00:07:19,099 --> 00:07:20,479
+Vietnam
+
+61
+00:07:20,479 --> 00:07:23,240
+Anladım o tarz bir şey olacak
+
+62
+00:07:23,240 --> 00:07:24,859
+Şu an Türk
+
+63
+00:07:24,859 --> 00:07:28,499
+Bunda da direkt Rolls'ün üstünde hocam
+
+64
+00:07:28,499 --> 00:07:33,540
+Şeyim açı yok
+
+65
+00:07:33,540 --> 00:07:37,799
+Peki burada millet yazışıyor mu yoksa birbiriyle konuşuyor mu?
+
+66
+00:07:38,219 --> 00:07:38,859
+Diğerinde
+
+67
+00:07:38,859 --> 00:07:41,480
+Hocam bu Rolls'ün yukarısına çıkar mısınız?
+
+68
+00:07:42,320 --> 00:07:42,939
+Rolls'ün
+
+69
+00:07:42,939 --> 00:07:44,620
+Aynı ekranda aynı
+
+70
+00:07:44,620 --> 00:07:45,620
+Ekran içerisinde
+
+71
+00:07:45,620 --> 00:07:47,620
+Bir dakika
+
+72
+00:07:47,620 --> 00:07:48,419
+Şu
+
+73
+00:07:48,419 --> 00:07:51,060
+Normal ekranın ortasında yukarı kaydışına çıkar mı?
+
+74
+00:07:51,059 --> 00:08:02,059
+Evet şu an en üst değil. Sadece mesela şey tıklasanız açılır zaten hepsi. Mesela advanced misiniz? Föret misiniz? Ya da hangisiniz?
+
+75
+00:08:02,059 --> 00:08:05,059
+Intermediate. Aşağıdaki ikonlardan birine tıklamanız gerekiyor.
+
+76
+00:08:11,572 --> 00:08:19,171
+Sport öğreniyoruz. Herhalde bu. Yalnız bir şey, engel var. Engel var galiba.
+
+77
+00:08:23,251 --> 00:08:40,151
+Böyle bir şey. Hocam hesabınız en olduğu için izin vermiyor. Şu aşağıda bir tane pop-up var ya oradan bir kompleyte bassanız. Neyse sonra bakalım olmazsa. Telefon varız filan girmeniz lazım. Aynen büyük ben de verifleşim istiyor. Neyse sonra bakarız çok. Ders için bir şey yapmıyorum.
+
+78
+00:08:40,151 --> 00:08:44,811
+Tamam. Ama burada baya baya insanlar yazışıyor mu konuşuyor mu ben onu merak ettim.
+
+79
+00:08:44,851 --> 00:08:48,991
+Konuşuyoruz hocam. Yani o ekranı gösterebilir misiniz? Çok fazla kanal var zaten.
+
+80
+00:08:50,432 --> 00:08:58,131
+Tamam o zaman ders bitsin şey yapalım. 5 dakika bakabiliriz. Şimdi sizin de vaktinizi almak istemem.
+
+81
+00:08:59,051 --> 00:09:08,511
+Şimdi arkadaşlar saat 5 geçiyor. Yeni bir proje oluşturacağım. Ben NetBeans kullanıyorum ama istediğiniz IDE'yi kullanabilirsiniz.
+
+82
+00:09:08,511 --> 00:09:16,512
+Hocam, pardon başlamadan sorayım dedim. Sizin tavsiyeniz yanda bizde aynısını yazalım mı? Ya da bekleyip geçirelim.
+
+83
+00:09:16,512 --> 00:09:27,311
+Yok bence şey yani ben paylaşacağım ama şöyle yapabiliriz. Bu kısımlarda hani senkron gitmeye gerek yok. İzlemeniz yeterli. Anlamadığınız bir şey varsa onu sorabilirsiniz.
+
+84
+00:09:27,311 --> 00:09:42,831
+Çünkü buradaki anlatacağım şey çok böyle karmaşık şeyler olmayacak hani tanımlamalar herhangi bir algoritmik bir şey de olmayacağı için nispeten takip edebilirsiniz diye düşünüyorum baktığınız edemeyeceksiniz bir soru şey yapın hemen müdahale edelim konuşalım
+
+85
+00:09:42,831 --> 00:09:57,011
+Şimdi arkadaşlar şöyle bir şey isteyeceğim ben bilgisayar kitaplar ve yazarlar nesnelerim olsun istiyorum işte kitabın idsi adı bir de yazar bilgisi
+
+86
+00:09:57,011 --> 00:10:08,971
+Şu an için bir kitabın bir yazarı olsun kabulüm olacak. Bununla alakalı temel tanımlamaları ve metot gerçekleştirilirini yapalım diyoruz.
+
+87
+00:10:09,351 --> 00:10:22,051
+Şimdi default olarak burada bir test klası açılıyor. İşte Java Application 7 diyor. Ben bunu refactor edeceğim. Test diyelim mesela veya driver diyebiliriz.
+
+88
+00:10:29,940 --> 00:10:54,239
+Burada yeni bir class oluşturacağım önce. Şimdi şey yok. Bu tek bir dosyada class deyip Java'da bunu yapamıyorsunuz. Benim bildiğim olmuyor. Onun için şurada yeni bir class dosyası oluşturuyorum. Java class diyorum. Bu ne olsun? Kitap olsun mesela. Bunu yapınca aynı paket içerisinde olduğumuz için aynı paketten olduğumuzu söyledi bize. Public class kitap oluşturdu.
+
+89
+00:10:54,239 --> 00:10:57,799
+Şimdi ben bu kitapta neler olsun?
+
+90
+00:10:57,799 --> 00:11:01,719
+Hocam kameranızı kapatabilir misin? Yayın biraz takılıyor gibi de.
+
+91
+00:11:01,819 --> 00:11:02,099
+Tamam.
+
+92
+00:11:02,099 --> 00:11:03,940
+Ben de sıkıntı olurum.
+
+93
+00:11:04,839 --> 00:11:05,099
+Tamam.
+
+94
+00:11:06,160 --> 00:11:11,599
+Kitap classı altında bir de bu virtual background bile yoruyormuş şeyi.
+
+95
+00:11:11,959 --> 00:11:13,379
+Hani zavaşlatıyormuş.
+
+96
+00:11:14,660 --> 00:11:16,879
+Onu bile kullanmamak gerekir diyorlar.
+
+97
+00:11:17,719 --> 00:11:20,259
+Şimdi kitap altında kitabın id'sini tutalım.
+
+98
+00:11:20,259 --> 00:11:47,440
+string olarak bir kitap ad tutalım. Burada string büyük s ile arkadaşlar küçük s yok. Bazı dillerde hem küçük s hem büyük s var. Zoran ediyorum c şart'taydı. Bir de yazar isminde bir nesnem olacak. Burada da tek bir yazarın olduğunu göreceğiz. Şu an için yazar nesnem olmadığından dolayı burada hata alıyoruz.
+
+99
+00:11:47,440 --> 00:12:07,460
+Şimdi bu bağımlılığı gösteriyor aslında. Yani ben kitap oluşturacaksam sonuçta bir gerçek hayatta bir kitabın yazılması için bir yazarın varlığına ihtiyaç var. O zaman önce bir yazar tanımlıyor. Bakın böyle bir ilk problem çözmek için bir karşımıza böyle bir tecrübe geldi. Demek ki senaryoyu kurgularken hangi obje daha öncelikle onu kullanmak, onu bilmek daha önemli.
+
+100
+00:12:07,459 --> 00:12:33,999
+yazar diyorum. Geldim yazarın içerisinde de birkaç tane alan, basit alan ekleyelim. Şu an ilişkilerin yönleri, dereceleri hakkında herhangi bir şey yapmayacağız. Sadece iki nesne arasında ilişki kurucu arkadaşlar. Bunun da bir tane id'si olsun. Ondan sonra string ad olsun. Tamam. Başka bir şeyine gerek var mı? Tamam. Başka da bir şeye gerek yok.
+
+101
+00:12:33,999 --> 00:12:38,779
+Uzatırsak çünkü kurgulamalar test işlemleri uzun sürer.
+
+102
+00:12:39,380 --> 00:12:44,119
+Şimdi bakın yazar oluşturduğumda şu hemen kalkmıyor. Bu düzeldi.
+
+103
+00:12:45,579 --> 00:12:50,399
+Gelelim. Ben kitabım var, yazarım var. Test sınıfına geliyorum.
+
+104
+00:12:51,520 --> 00:12:55,419
+Bu kitapla yazar mesneleri arasında bir ilişki kuracağım.
+
+105
+00:12:55,880 --> 00:12:58,979
+Şimdi diyorum ki önce bir yazar oluşturmam gerekiyor.
+
+106
+00:12:58,979 --> 00:13:28,799
+yazar, Y1 eşittir, new yazar dedim. Bakın bu new yapmadan yazarı oluşturmaz. Nesne ancak şu işlem önce olacak dedik. Ondan sonra bunun referansı Y1'e atanacak. Hatta gelin south diyelim. Sistem out printerine hızlıca south yazıp taba basarsanız çıkar. Y1 nesnesini yaz diyorum. Bunu yaz deyince otomatik olarak bana ekrana bastırılacak
+
+107
+00:13:28,800 --> 00:13:42,699
+olan şey y1 nesnesinin referansını yazar. Çünkü y1 dediğimiz şey integer gibi string gibi primitif şeylerden oluşmuyor. Değişik alanlardan oluşuyor. Bu sebeple bana referansını yazacak. Çalıştıralım.
+
+108
+00:13:48,692 --> 00:14:02,511
+Java application 7'deki yazar sınıfının altında böyle bir referans olduğunu söylüyor. Halbuki bu yazar nesnesini oluşturunca ben otomatik olarak nelerim var? İki tane memberim var. ID'si ve adı var. Ama bunları yazmıyor daha.
+
+109
+00:14:03,671 --> 00:14:14,791
+Şimdi bunu çalıştırınca constructor metodu, onları daha sonradan gördük de şu an için onları bilmediğimizi kabul edelim. Ben bunların alanlarına değişkenler atacağım.
+
+110
+00:14:14,791 --> 00:14:16,611
+y1.id eşittir bir
+
+111
+00:14:16,611 --> 00:14:19,931
+y2.
+
+112
+00:14:20,931 --> 00:14:23,991
+şey y1.ad eşittir
+
+113
+00:14:23,991 --> 00:14:26,251
+işte Ahmet dedik
+
+114
+00:14:26,251 --> 00:14:28,251
+aslında burada
+
+115
+00:14:28,251 --> 00:14:32,811
+bir string nesnesi oluşturup o string nesnesini de atayabiliyoruz
+
+116
+00:14:32,811 --> 00:14:34,791
+yani new string
+
+117
+00:14:34,791 --> 00:14:36,351
+o da olur
+
+118
+00:14:36,351 --> 00:14:41,591
+ama şu an için hani biraz önceki de yeterli
+
+119
+00:14:41,591 --> 00:14:42,451
+buna ne diyor mesela
+
+120
+00:14:42,451 --> 00:14:52,091
+String Construction Invocation diyor. Buna gerek yok aslında şimdilik. Çünkü böyle bir alan tutmayacağız. Doğrudan bu değişkeni atalım. Şimdi çalıştırdığım zaman ne göreceğim?
+
+121
+00:14:57,748 --> 00:14:58,667
+Ne görürüz?
+
+122
+00:15:01,867 --> 00:15:03,047
+Aynı çıktığı görmüştünüz.
+
+123
+00:15:03,047 --> 00:15:09,527
+Aynı çıktığı. Herhangi bir şey, yani Y1'i yazmış olman bir anlam ifade etmiyor. Hatta şöyle bir şey yapalım.
+
+124
+00:15:12,527 --> 00:15:13,907
+Y2 yazarı oluşturayım.
+
+125
+00:15:19,475 --> 00:15:25,995
+GIF, Y1 eşittir, Y2 diyelim. Bakın ikisi de 1, 1, Ahmet.
+
+126
+00:15:30,419 --> 00:15:31,259
+Ctrl C
+
+127
+00:15:31,259 --> 00:15:33,859
+Yani yapıyoruz.
+
+128
+00:15:35,300 --> 00:15:36,059
+Nesneler
+
+129
+00:15:36,059 --> 00:15:37,179
+Aynı
+
+130
+00:15:42,355 --> 00:15:43,755
+şurada da else yapacağım.
+
+131
+00:15:46,756 --> 00:15:48,855
+Y1 ve Y2'nin referanslarını yazdıracağım.
+
+132
+00:15:56,532 --> 00:16:10,931
+Devamlı bu eşittir operatörü böyle bir karşılaştırmaya tanımlı olmadığı için referansları karşılaştıracak. Hiçbir zaman nesneler aynı gelmeyecek. Bakın bunlar bellekte farklı alanlarda tutulan iki tane nesne. İçerikleri aynı olmasına rağmen.
+
+133
+00:16:10,931 --> 00:16:15,431
+Peki bir tane de kitap nesnesi oluşturalım arkadaşlar
+
+134
+00:16:15,431 --> 00:16:18,631
+Kitap eşittir K1 diyelim
+
+135
+00:16:18,631 --> 00:16:20,392
+Mim kitap
+
+136
+00:16:20,392 --> 00:16:25,251
+A1.id eşittir 1
+
+137
+00:16:25,251 --> 00:16:29,171
+A1.ad eşittir
+
+138
+00:16:29,171 --> 00:16:31,112
+Java 1
+
+139
+00:16:31,112 --> 00:16:36,811
+A1.yazar eşittir
+
+140
+00:16:36,811 --> 00:16:58,191
+Şimdi kitap kendi içerisinde yazar isminde bir referans tutuyor. O zaman benim buraya bir referans atama imkanım var. Çünkü eşittir operatörünü C'den de biliyoruz ki birbiriyle aynı olan veya dönüştürülebilir tipleri atama yapıyordu. O zaman ben bu kitap bir nokta yazar alanına Y1 yazarına atasam. Olur mu? Olur.
+
+141
+00:16:58,191 --> 00:17:08,231
+Şimdi ne oluyor? Şöyle bazı değişkenleri ekrana yazmaya başlayalım. Sonra diyeceğiz ki burası çok kötü oldu, burayı biraz düzeltelim diyeceğiz arkadaşlar.
+
+142
+00:17:10,051 --> 00:17:13,231
+K1 nesnesini yazdırıyorum. Şimdi ne görürüm sizce?
+
+143
+00:17:17,460 --> 00:17:18,940
+Hocam tekrar adresi.
+
+144
+00:17:19,859 --> 00:17:21,579
+Aynen, yine adres göreceğim.
+
+145
+00:17:22,139 --> 00:17:23,940
+Sonra diyelim ki şöyle bir şey yapalım.
+
+146
+00:17:24,139 --> 00:17:25,259
+Biraz formatlı yazalım.
+
+147
+00:17:26,460 --> 00:17:28,199
+Ben artı diyorum.
+
+148
+00:17:28,340 --> 00:17:29,279
+K1 nokta
+
+149
+00:17:29,279 --> 00:17:31,899
+ID
+
+150
+00:17:31,899 --> 00:17:33,819
+artı
+
+151
+00:17:33,819 --> 00:17:35,880
+tık tık
+
+152
+00:17:35,880 --> 00:17:38,899
+artı
+
+153
+00:17:38,899 --> 00:17:40,779
+K1 nokta
+
+154
+00:17:40,779 --> 00:17:42,159
+ad
+
+155
+00:17:42,159 --> 00:17:44,079
+artı
+
+156
+00:17:44,079 --> 00:17:49,079
+Aynı bir nested struct gibi burada bir yapı var aslında. Artı.
+
+157
+00:17:52,079 --> 00:17:59,099
+Şuna gerek yok. K1 nokta. Şimdi K1 nokta yazar yazarsam ne göreceğim? Önce ona bir bakalım.
+
+158
+00:18:03,443 --> 00:18:25,624
+şöyle diyorum. Bir yerde bir artı eksi bir şey hatamız var. Artı K1 adı artı şurada. Ne oluyor? İşte bir köşeli parantez açacağım. Öncesinde bunun referansını yazacağını göreceğiz. Sonra işte K1'in ID'sini, K1'in adını, K1'in yazarını yazacak. Acaba?
+
+159
+00:18:25,624 --> 00:18:30,804
+adres tekrar
+
+160
+00:18:30,804 --> 00:18:35,743
+1, Java 1, daha sonra bunun referansını yazdı.
+
+161
+00:18:36,784 --> 00:18:39,524
+Çünkü bu zaten bir referans tipli değişken.
+
+162
+00:18:39,644 --> 00:18:44,484
+Bütün new ile oluşturanların, oluşturulan değişkenlerin referans tipli olduğunu
+
+163
+00:18:44,484 --> 00:18:51,384
+ve bu şekilde eğer bir class nesnesiyse bu değerleri yazacağımızı unutmayalım arkadaşlar.
+
+164
+00:18:51,383 --> 00:19:20,223
+Şimdi mesela aynı şeyi şöyle bir şurada yapayım. Şimdi ben bunu yapınca ne çalışacak demiştim. Constructor çalışacak. Constructor tanımlamadığım için default Java Virtual Machine kendi constructorını if çalıştırıyor. O constructor'ın da bu kitap içerisinde tanımlanmış alanların değişkenlerin ilk değerleri neyse işte integersa 0, floatsa 0.0 gibi değerler atayacak.
+
+165
+00:19:20,223 --> 00:19:22,243
+Genel olarak bunu böyle söyleyebiliriz.
+
+166
+00:19:22,304 --> 00:19:24,423
+Eğer referans tipi ise null değerini atacağız.
+
+167
+00:19:24,563 --> 00:19:25,943
+Şimdi bu sonucu bir görelim.
+
+168
+00:19:30,708 --> 00:19:59,447
+ne oldu? İşte şurada 0, 0, 0 diye bir şey yazdı. ID'nin integer olduğu için ilk değeri 0, ad ve diğer yazar referans tipli olduğu için değerleri 0. Bu şekilde devam edip gidiyor. Peki. Şimdi burada aynısını mesela tabii şu an diyoruz ki bir kitabın birden fazla yazarı olmayacak. Tek bir yazar olacak. Kısıtımız o.
+
+169
+00:19:59,447 --> 00:20:02,208
+Burada anlaşılmayan bir şey var mı ilk kısımda?
+
+170
+00:20:03,728 --> 00:20:04,428
+Hakip edemediğiniz
+
+171
+00:20:04,428 --> 00:20:05,287
+Bocam ben bir şey sorayım
+
+172
+00:20:05,287 --> 00:20:19,307
+System out print ln şeyde metodunda int artı string yaptık. Int artı string şey mi? String mi?
+
+173
+00:20:19,307 --> 00:20:24,987
+String. Aynen string oluyor. Güzel. Sorduğun iyi oldu. Normalde bunu type conversion'de anlatacağız ama söyleyelim.
+
+174
+00:20:24,987 --> 00:20:30,708
+Şimdi arkadaşlar tiplerin birbirine gizli bir şekilde dönüşümü Java'da var C'de olduğu gibi.
+
+175
+00:20:31,467 --> 00:20:34,447
+Genellikle büyük veri tipleri yanındaki küçük tipleri yutuyor.
+
+176
+00:20:34,447 --> 00:20:40,187
+Yani string'in yanına bir şey eklersek integer gibi, flowat gibi ne oluyor onu yutabiliyor.
+
+177
+00:20:40,388 --> 00:20:41,648
+Mesela şöyle bir şey yapalım.
+
+178
+00:20:42,607 --> 00:20:44,947
+String gelin.
+
+179
+00:20:46,527 --> 00:20:47,888
+X eşittir.
+
+180
+00:20:47,967 --> 00:20:52,748
+Bu arada hani string'i falan burada arada tanımlamamız mümkün.
+
+181
+00:20:52,867 --> 00:20:54,568
+Yani illa yukarıda tanımlayacağız diye bir şey yok.
+
+182
+00:20:54,987 --> 00:20:57,947
+A A A A diyorum, artı 3 diyorum.
+
+183
+00:21:03,476 --> 00:21:18,175
+X. Ne yapıyor? Bu artı operatörü string concatenation'dan dolayı ve ikisinin birbirine dönüşebilir, yani şu ifade string'e dönüşebileceği için bu ifadeyi ne yapıyor? Tamamen string'e dönüştürüyor ve bunu bu şekilde AAA3 diye göreceğiz.
+
+184
+00:21:21,175 --> 00:21:22,175
+Anladım. Teşekkür ederim.
+
+185
+00:21:22,175 --> 00:21:29,555
+Peki, burada şöyle bir şey olsaydı ne olurdu? Bu double AAA'ya 3.0 olarak eklenecekti.
+
+186
+00:21:29,555 --> 00:21:34,295
+ve göreceğimiz şey AAA 3.0
+
+187
+00:21:34,295 --> 00:21:36,556
+Biraz daha ilginç bir şey göstereyim.
+
+188
+00:21:37,395 --> 00:21:44,976
+x eşittir, BBB diyelim, hatta şöyle artı diyelim, artı eşittir diyelim.
+
+189
+00:21:46,836 --> 00:21:50,816
+BBB artı, Java'da bir tane değerimiz var, null.
+
+190
+00:21:51,435 --> 00:21:56,976
+Referans tipli değişkenlere ilk değer ataması yaparken null değişkenini kullanabiliriz.
+
+191
+00:21:56,976 --> 00:21:58,615
+Çünkü sıfır diye bir şey kullanamıyoruz.
+
+192
+00:21:58,615 --> 00:22:00,996
+Mesela ben şurada bir yazar tanımlayayım.
+
+193
+00:22:01,115 --> 00:22:03,235
+Yazar, ye diyeyim.
+
+194
+00:22:04,016 --> 00:22:09,815
+Bunu böyle yazdığımda south, ye dediğimde şurada bir hata verecek.
+
+195
+00:22:09,916 --> 00:22:12,535
+Diyecek ki buna ilk değer atanmamış olabilir.
+
+196
+00:22:12,736 --> 00:22:14,556
+May not have been initialized.
+
+197
+00:22:15,215 --> 00:22:18,755
+İlla ilk değer atayacaksam ve bir şeyler yazmam gerekiyorsa buraya null yazarım.
+
+198
+00:22:19,336 --> 00:22:20,696
+Orada null değerini görürüm.
+
+199
+00:22:20,696 --> 00:22:26,035
+Şimdi aynı şekilde burada null değerini bir stringin yanına eklersen şuradan bir string elde ettim.
+
+200
+00:22:26,516 --> 00:22:28,315
+Getirdim buna bir string daha ekledim.
+
+201
+00:22:28,615 --> 00:22:30,715
+Sonra buna null-dust string yapıyorum.
+
+202
+00:22:31,736 --> 00:22:32,836
+Göreceğim şey ne olacak?
+
+203
+00:22:34,516 --> 00:22:38,095
+Bunlarla alakalı çok detaylı bir slide'ım var ama Almanca.
+
+204
+00:22:38,976 --> 00:22:40,755
+İsterseniz onu bir ara sizinle paylaştırın.
+
+205
+00:22:40,795 --> 00:22:41,795
+Çok güzel hazırlanmış.
+
+206
+00:22:42,495 --> 00:22:44,715
+Bir hocadan almıştık bir arkadaş için.
+
+207
+00:22:45,995 --> 00:22:46,476
+Bakın ne yaptı?
+
+208
+00:22:46,535 --> 00:22:48,115
+Hepsini null haline getirdi.
+
+209
+00:22:48,776 --> 00:22:50,815
+Ama burada şuna dikkat etmek gerekiyor.
+
+210
+00:22:50,815 --> 00:22:52,675
+Operatör önceliği de önemli.
+
+211
+00:22:52,675 --> 00:23:09,155
+mesela null ile şundan önceki ifade mevcut olan ifade string olduğu için arayanlar yine null'u ekler ama şöyle bir şey olmuyor dikkat edelim nasıl bir şey mesela salt diyelim
+
+212
+00:23:15,796 --> 00:23:17,915
+Nasıl diye onun bir değişken şeyi vardı.
+
+213
+00:23:20,355 --> 00:23:23,296
+i artı bir desek olmaz.
+
+214
+00:23:31,092 --> 00:23:36,131
+iyi demeyelim de şurada bir x değişkeni tanımlayalım. Integer x eşittir sıfır.
+
+215
+00:23:41,652 --> 00:24:05,871
+Gerçi bu yine ne olacak? Şurada şeye dönüşecek. Bunun bir tane örnek vardı ya. Yani sağ tarafında yapılan bir işlem. Nasıl da hatırlayabilsem. Yani yine burada olacak şey önce x'i bir artıracak. Yani bir yapacak buradan. Biri yanına bir rr diye ekleyecek. Bu şekilde sonuç alacağız. Şurada x'i şey yaptığı için buna x'i y diyelim. Şöyle yapalım.
+
+216
+00:24:05,871 --> 00:24:10,031
+hepsinde string bunları yutuyor.
+
+217
+00:24:10,611 --> 00:24:14,431
+Mesela double ile integer'ı toplamaya çalıştığınızda sonuç otomatik double oluyor.
+
+218
+00:24:14,571 --> 00:24:16,992
+Veya işte çarpmaya çalıştığınızda sonuç otomatik double oluyor.
+
+219
+00:24:17,492 --> 00:24:21,091
+Genellikle kısaca söylemek gerekirse büyük tipler küçük tipleri yutuyor.
+
+220
+00:24:21,091 --> 00:24:22,951
+Ona daha sonra tekrar bakarız.
+
+221
+00:24:23,631 --> 00:24:27,931
+Şimdi şurada şu object oriented tarafla alakalı anlaşılmayan bir şey var mı?
+
+222
+00:24:30,951 --> 00:24:33,271
+Çoğunuz yani şu nula şaşırabilir.
+
+223
+00:24:33,271 --> 00:24:39,711
+Hatta bazı yerlerde mülakat sorusu olarak soruyorlar. Null ile bir string toplarsanız onu string'e dönüştürüyor.
+
+224
+00:24:41,871 --> 00:24:52,311
+Peki, şimdi ben arkadaşlar, object-oriented'dan kastımız neydi? Yapılacak işlerin önemli olan soyutlanması. Mümkün oldukça soyutlanması.
+
+225
+00:24:52,311 --> 00:24:59,411
+Şimdi benim burada bu yazarın veya kitabın ID ile bilgilerine kullanıcı olarak erişmem doğru değil.
+
+226
+00:24:59,411 --> 00:25:04,371
+Yani ben bir kullanıcıyım, bir program yaptınız, sattınız, hepsi burada üzerinde bir program bu mesela
+
+227
+00:25:04,371 --> 00:25:10,251
+Gidip de orada bir kitabın yazarın adını değiştiremiyoruz veya ID'sini değiştiremiyoruz
+
+228
+00:25:10,251 --> 00:25:14,571
+Onun için ne olması lazım? Bu bilgilerin burada erişilemez olması lazım
+
+229
+00:25:14,571 --> 00:25:19,711
+Bu erişilemezliği sağlamak için ne yapacağım? Gideceğim önce yazardan bunu bir private yapalım diyeceğim
+
+230
+00:25:19,711 --> 00:25:24,631
+Ondan sonra isim alanında private yapalım diyeceğim, bu kadar
+
+231
+00:25:24,631 --> 00:25:26,931
+Aynı şeyleri kitapta da yapıyorum
+
+232
+00:25:26,931 --> 00:25:50,172
+Tamam nesne oluşturduk ama nesne yönelimli mantığa uygun iş yapmıyoruz. Tamam güzel her şey yani referanslar geliyor gidiyor ama şurada yapılan test sınıfında yapılan bu işlemler nesne yönelimli metodolojiye aykırı şeyler. Ve bakın hepsi ne oldu? Şurada hepsi gitti. Boşa gitti anlamda. O zaman ne yapacağım? Şunların hepsini sileceğim.
+
+233
+00:25:50,172 --> 00:25:54,312
+Bunları da sileceğim.
+
+234
+00:25:56,071 --> 00:26:04,211
+Çünkü şu ana kadar yaptığım şey sadece nesne oluşturup nesne ürünü programlamaya aykırı hareket etmekten öteye geçmiyor.
+
+235
+00:26:04,912 --> 00:26:13,052
+Şimdi ben bir yazar oluşturduğunda bu yazarın id bilgilerini ne yapmam lazım?
+
+236
+00:26:13,172 --> 00:26:14,431
+Burada bir defa girebilirim.
+
+237
+00:26:15,312 --> 00:26:17,291
+Daha sonra gerekirse get yapabilirim.
+
+238
+00:26:17,352 --> 00:26:18,271
+Hani set bile yapmam.
+
+239
+00:26:18,271 --> 00:26:39,391
+Onun için bir constructor yazmak şu an için mantıklı geliyor. Daha sonradan yazarın bilgilerine erişmem gerekebilir. Adını, soyadını, bir şeyini yazmam gerekebilir ama belki ona da gerek kalmayacak. Onun için ne yaptım? Bir constructor yazmam gerektiğini düşünüyorum. Yazara bir constructor yazalım. Bakın bunu burada aşağıda yazmakla yukarıda yazmak arasında hiçbir fark yok. Public yazar diyorum.
+
+240
+00:26:42,996 --> 00:27:04,815
+Şimdi bu yazara iki tane değişken gelsin bu constructora. Bir tanesi integer id, diğeri de string at. Şimdi bu arada ben diyeceğim ki id eşittir id. Şimdi hangi id'yi hangi id'yi atacağımı burada karıştırıyor kafası. Diyor ki şurada bir problem var. Yani bu tam makul bir şey değil.
+
+241
+00:27:04,815 --> 00:27:33,635
+Onun için bu sınıfa ait oluşturulan nesnenin ID alanına erişmem gerekiyor. O da şu. Yani şuna erişeceğim. Bu sınıfın hangi nesnesiyse o nesnesi üzerinden olacak bu iş. Onun için disk yardını kullanıyorum. Dise baktığım zaman şurada benim oluşturduğum şeyler var. Bir de fazladan hiç daha önce karşılaşmadığımız ve yazmadığımız bir sürü şey var. Bunların daha sonra ne olduğuna bakarız. Çünkü bunlar çoğu obje sınıfından gelen kalıtımla gelen şeyler. Gizli bir kalıtım var.
+
+242
+00:27:33,635 --> 00:28:03,615
+This.id eşittir id, This.add eşittir add dedim. Buraya gelen parametreler neyse onlar. Buraya tıkladığımızda bunların herhangi bir şekilde kullanılmadığını söylüyor. Hani genelde yukarıya yazmak iyidir de burada da olabilir. Biz birazdan bunları kullanacağız. Mesela diyeceğiz ki yazar kendini tanıtsın. Yazarın bilgileri nedir? O zaman şöyle bir metot yazalım. Şimdi bunun void olması iyi olur. Öyle değil mi? Yani system out printler ile şuradaki değerleri yazalım.
+
+243
+00:28:03,635 --> 00:28:12,095
+O zaman bu bir public method olabilir. Void olsun diyorum. Kendini tanıt diyelim veya yazar tanıt diyelim.
+
+244
+00:28:14,155 --> 00:28:21,015
+Yazar tanıt. Yazar tanıtı ben doğrudan çalıştıracağım. Herhangi bir parametre almayacak.
+
+245
+00:28:21,015 --> 00:28:47,115
+Diyeceğim ki, south şöyle bir şey yapalım, bir de şunu yazalım, artı dis.id artı, şöyle tık tık, artı dis.at, gerek yok şurada,
+
+246
+00:28:47,115 --> 00:29:14,996
+Artı şöyle. Şuraya da tabi bir ID yazalım arkadaşlar. ID 2.2. Şöyle bir şey gelsin. Bir de bana yazarın daha sonra ID ve ad alanları gerekebilir. Hani elde etmek gerekebilir. O zaman şimdi bunları private yaptığım için bunlara bir şekilde erişemem.
+
+247
+00:29:14,996 --> 00:29:17,255
+Şimdi constructor'dan sadece atama yapabiliyorum.
+
+248
+00:29:17,975 --> 00:29:20,615
+Erişebilmek için ne yapacağım? Bunların set get metotlarını yaratacağım.
+
+249
+00:29:20,716 --> 00:29:23,275
+Şimdi bu get metodu bizim işimize yarayabilir.
+
+250
+00:29:23,275 --> 00:29:27,596
+O zaman şöyle public get yapacağım bir şey ne türde burada?
+
+251
+00:29:28,535 --> 00:29:31,395
+Integer türde. Integer get id diyorum.
+
+252
+00:29:31,775 --> 00:29:33,356
+Otomatik yazacağım. Parantez.
+
+253
+00:29:35,695 --> 00:29:39,835
+Return this nokta id diyoruz.
+
+254
+00:29:44,243 --> 00:30:12,283
+Bunu böyle yapabildiğimiz gibi şu alanları seçip sağ tıkladınız NetPins'te de var, IntelliJet'de de vardır muhtemelen. Refactor dediğimizde, evet refactor'daydı galiba. Encapsulate fields. Bunu seçtiğimizde set ve get metodlarını oluşturuyor. Ben setleri oluşturmayacağım. Bunların field visibility'leri private, accessor visibility'leri public olsun diyorum.
+
+255
+00:30:12,283 --> 00:30:33,123
+Refactor dediğim zaman bana get adı oluşturdu. Get ID halihazırda olduğu için ne yaptı böyle kaldı. Ama şurada dikkat edin doğrudan erişebildiği için direkt return ad dedi. Yanlış değil ama this.at dediğimizde class'ın değişkenine erişmesi gerektiğini söylememiz en güzel.
+
+256
+00:30:33,123 --> 00:30:39,483
+Şimdi get add, get id var. Şunları şöyle aşağıya alalım da biraz daha sistematik görünsün.
+
+257
+00:30:39,483 --> 00:30:51,763
+Ha ne yaptı bakın dikkat ederseniz bu da refaktör yapınca benim içerisinde eriştiğim şu metottaki şeyleri bütün alanları yani add ve id alanlarını this.get id ile elde etti.
+
+258
+00:30:52,403 --> 00:31:00,823
+Ne yapıyor bu sınıf içindeki bu nesnenin get id metodunu çağır diyor. O nesnenin get id metodu ne yapıyor? Gidiyor o memberı size geri gönderiyor.
+
+259
+00:31:00,824 --> 00:31:22,604
+Şimdi gelelim test sınıfından bir yazar oluşturacağız. Yazar oluşturmak kuralı değişti artık. Şöyle bakın tıkladığımızda bu kuralı bana söylüyor. Bir tane ID ver bir tane ad ver diyor. Eğer yukarıda bir yorum yazsaydım o yorumu da burada şurada documentation olarak söylerdi. İşte bir ne oldu yazar? Ali dedik kaldık.
+
+260
+00:31:22,604 --> 00:31:31,504
+Şimdi Y1 artık benim bir nesnem ve bu nesne üretildiğinde constructor çağırılıyor ve benim yazar tanıt metodum artık aktif hale geldi.
+
+261
+00:31:31,504 --> 00:31:41,864
+Şimdi ben bir kullanıcıysam yazarın bilgilerine erişebilmem mümkün olabilir. Yani isteyebilirim. Hiç kitaplarla uğraşmayacağım. Doğrudan yazarlara göre bir kayıt aratacağım.
+
+262
+00:31:41,964 --> 00:31:46,504
+Onun için burada yazar tanıt metodunu çağırmam doğru bir şey mi? Doğru bir şey. Çalıştıralım.
+
+263
+00:31:46,503 --> 00:32:01,363
+Bakalım sonucumuz nasıl görünüyor. Evet ID1, at Ali dedi bitirdi. Şunu biraz da şöyle afilli hale getirelim. Burada anlaşılmayan bir şey var mı arkadaşlar sormak istediğiniz?
+
+264
+00:32:05,107 --> 00:32:32,687
+Hı? Yok. Şu warninglere çok dikkat etmeyin. Bazıları makuldür, bazıları hani gereksizdir. Diyor ki bunları diyor final yapabilirsin. Final yaparsan değiştiremezsin. Bizim işimize yaramaz burada. Peki. Aynı şeyi kitap için de yapacağım. Constructor yazalım. Public kitap. Şimdi kitapta şöyle constructor'ı overload edeceğim. Bir kitabın yazarını bilmeyebilirim. O zaman yani null olabilir.
+
+265
+00:32:32,687 --> 00:32:50,288
+Diyorum ki buraya birinci durumda integer id string ad gelsin birinci durumda. İkinci durumda da şu gelsin. Id ise adı yazarı üçü birden gelsin.
+
+266
+00:32:55,635 --> 00:32:56,835
+yazar yazar diyelim.
+
+267
+00:32:57,335 --> 00:33:00,655
+Hocam bu constructor için interge de şey de var.
+
+268
+00:33:01,335 --> 00:33:04,195
+Generate var. Direkt constructor seçim.
+
+269
+00:33:05,715 --> 00:33:10,035
+Mesela şey, istediğin parametrelerden istediğin şekilde constructor mı dizayn ediyor?
+
+270
+00:33:10,775 --> 00:33:16,896
+Hocam, constructor get set equal to string, override, delegate, abstract, etc.
+
+271
+00:33:16,896 --> 00:33:20,816
+Güzel, çok iyiymiş. Yani belki şunlarda da vardır da hiç böyle ben
+
+272
+00:33:20,816 --> 00:33:24,595
+encapsulate dediğimizde başka neler üretiyor?
+
+273
+00:33:24,595 --> 00:33:36,635
+Gerçi set get'ler var. Onu da inceleyebilirim. Bir ara bakayım. Mesela delegate'leri falan ileride kullanacağız kısmen. Bu derste belki çok yok da ben başka yerde anlatacağım bu GUI tarafından.
+
+274
+00:33:36,635 --> 00:33:46,176
+Şimdi constructor oluşturduğunda id'sini veya kitabın adını girebilirim veya istersen yazarını da girebilirim. Şimdi ben şunun üzerinden önce yazalım.
+
+275
+00:33:46,175 --> 00:33:58,215
+this.id eşittir, id olsun, this.at eşittir, ad olsun diyorum. Tamam bu burada kalacak.
+
+276
+00:33:58,375 --> 00:34:04,195
+Yazar alanına herhangi bir şey üretmeyeceğim. Yazmadığım içinde ne olacak? Bu defolt olarak null yapılacak.
+
+277
+00:34:04,755 --> 00:34:09,935
+Şimdi şurada da id'ye yine id'ye, adı yine ada, yazarı da yazara atacağım.
+
+278
+00:34:09,935 --> 00:34:14,415
+Fakat ben şurada zaten aynısını yaptım. O zaman diyorum ki this.
+
+279
+00:34:14,415 --> 00:34:16,895
+This.
+
+280
+00:34:16,895 --> 00:34:18,775
+Kitap.
+
+281
+00:34:20,735 --> 00:34:21,335
+Yok.
+
+282
+00:34:23,735 --> 00:34:24,795
+Hangi neydi bu ya?
+
+283
+00:34:24,895 --> 00:34:25,095
+This.
+
+284
+00:34:25,095 --> 00:34:30,175
+This'i çağırarak mıydı acaba?
+
+285
+00:34:32,115 --> 00:34:34,035
+ID virgül yok. O da değil.
+
+286
+00:34:35,315 --> 00:34:36,195
+Tabii çakışı.
+
+287
+00:34:36,195 --> 00:34:37,055
+This fonksiyon gibi.
+
+288
+00:34:37,655 --> 00:34:37,975
+Efendim?
+
+289
+00:34:37,975 --> 00:34:41,155
+Arkadaş farklı bir şey diyordu o söylesin mi?
+
+290
+00:34:42,655 --> 00:34:45,675
+This eşittir new kitap olabilir mi?
+
+291
+00:34:46,375 --> 00:34:49,915
+Yok. Şu metoda göndereceğim. Bir dakika ben bunu biliyordum.
+
+292
+00:34:49,935 --> 00:34:53,015
+Direkt fonksiyon gibi yazsak kitap parantez öyle olur mu?
+
+293
+00:34:54,855 --> 00:34:58,996
+Yok öyle değil. Bir dakika. Bunun çalışmaması şu an.
+
+294
+00:35:00,215 --> 00:35:05,915
+This dedik. Burada id'yi gönder, adı gönder. Şu şekilde.
+
+295
+00:35:05,915 --> 00:35:28,076
+Bu zaten doğrudan bunu çağıracak. Bu nesnenin tekrardan buraya aktarılmasını sağlıyor. Diyorum ki this nokta yazar, eşittir yazar. Şu şey doğrudan çalışmayınca ilk başta görünmüyor. Ne oluyor? Şuradaki kod tekrarının önüne geçmiş oluyorum. Eğer bu şekilde nesne üretirsem bu olacak.
+
+296
+00:35:28,076 --> 00:35:46,496
+Şimdi gelin bir de kitap tanıt diyelim. Public void kitap tanıt. Bunda da herhangi bir şey yok. Şimdi şunun yazardakinin aynısını alacağım ama burada ekstra bir şey ekleyeceğiz.
+
+297
+00:35:50,675 --> 00:35:52,115
+diyorum ki if
+
+298
+00:35:52,115 --> 00:35:54,815
+this nokta
+
+299
+00:35:54,815 --> 00:35:56,715
+yazar. Yani bu
+
+300
+00:35:56,715 --> 00:35:58,435
+nesnenin bir yazarı var mı?
+
+301
+00:35:59,556 --> 00:36:01,075
+Eğer noldan farklıysa
+
+302
+00:36:01,075 --> 00:36:04,575
+nesneyi yazarıyla beraber yazsın. Yani
+
+303
+00:36:04,575 --> 00:36:05,455
+this nokta
+
+304
+00:36:05,455 --> 00:36:06,975
+diyeceğim ki
+
+305
+00:36:06,975 --> 00:36:09,135
+id
+
+306
+00:36:09,135 --> 00:36:12,856
+15. satırı hemen açıklıyorum.
+
+307
+00:36:12,856 --> 00:36:13,516
+bir dakika
+
+308
+00:36:13,516 --> 00:36:15,356
+this nokta
+
+309
+00:36:15,356 --> 00:36:16,715
+add
+
+310
+00:36:16,715 --> 00:36:20,715
+VEGENCIA
+
+311
+00:36:23,059 --> 00:36:28,879
+yazar null değilse veya null ise diyelim.
+
+312
+00:36:31,139 --> 00:36:32,719
+Null değilse diyelim.
+
+313
+00:36:35,440 --> 00:36:36,679
+Bunu yap.
+
+314
+00:36:40,052 --> 00:36:41,991
+tek satırda yazabilir miyim diye
+
+315
+00:36:41,991 --> 00:36:45,512
+şuraya alacağım arkadaşlar.
+
+316
+00:36:47,911 --> 00:36:48,411
+Out
+
+317
+00:36:48,411 --> 00:36:49,991
+null değilse
+
+318
+00:36:49,991 --> 00:36:52,851
+şuradan itibaren alıyorum.
+
+319
+00:36:57,043 --> 00:36:58,103
+buraya ekliyorum.
+
+320
+00:36:59,224 --> 00:37:01,623
+Şurada da diyorum ki this nokta yazar.
+
+321
+00:37:02,783 --> 00:37:04,343
+Şimdi bunda bir düzeltme yapacağız.
+
+322
+00:37:04,343 --> 00:37:06,384
+Yazar null değilse this nokta yazar.
+
+323
+00:37:06,523 --> 00:37:14,863
+Else, out, double print diyelim.
+
+324
+00:37:16,144 --> 00:37:18,603
+Ne yaptığımı şimdi özetleyeceğim arkadaşlar.
+
+325
+00:37:20,623 --> 00:37:21,843
+Yazar bulunamadı.
+
+326
+00:37:24,083 --> 00:37:25,884
+Ama şurada bir sıkıntımız var.
+
+327
+00:37:25,943 --> 00:37:26,523
+Onu çözeceğiz.
+
+328
+00:37:27,043 --> 00:37:28,484
+15. satır
+
+329
+00:37:28,484 --> 00:37:30,163
+Cihat
+
+330
+00:37:30,163 --> 00:37:33,863
+Ben kitap nesnemi kaç farklı şekilde üretebilirim şu testte?
+
+331
+00:37:35,384 --> 00:37:35,823
+Kitap
+
+332
+00:37:35,823 --> 00:37:37,304
+K eşittir
+
+333
+00:37:37,304 --> 00:37:37,764
+Niv
+
+334
+00:37:37,764 --> 00:37:39,303
+Kitap dediğimde
+
+335
+00:37:39,303 --> 00:37:40,724
+Şöyle tıkladığımda
+
+336
+00:37:40,724 --> 00:37:42,503
+Bana iki farklı opsiyon sunuyor
+
+337
+00:37:42,503 --> 00:37:43,863
+Bir ID veya ad
+
+338
+00:37:43,863 --> 00:37:46,643
+ID, ad ve yazar
+
+339
+00:37:46,643 --> 00:37:49,224
+Önce birincisinde bir ne oldu kitap?
+
+340
+00:37:50,923 --> 00:37:52,703
+Java 1 diyelim
+
+341
+00:37:52,703 --> 00:37:56,124
+Bu şekilde bir kitap üretiyorum
+
+342
+00:37:56,124 --> 00:37:56,703
+Ne olacak?
+
+343
+00:37:56,703 --> 00:38:08,643
+şu yukarıdaki constructor çağıracak. İkincisinde ve bunun yazar alanı otomatik olarak null atanacak. Çünkü bu değişken üretildiğinde ne oluyor? Bunları başta null yapıyordu.
+
+344
+00:38:09,883 --> 00:38:17,804
+With yazar gibi mi oluyor ikincisi? Yani with yazarı buna dahil ediyoruz. Ekstra bir şey var. Şimdi şu şeyi de söyleyeyim.
+
+345
+00:38:17,803 --> 00:38:19,043
+Kitap
+
+346
+00:38:19,043 --> 00:38:23,523
+A2 eşittir, mi kitap
+
+347
+00:38:23,523 --> 00:38:26,283
+Dedim ki 2 ne oldu kitap olsun
+
+348
+00:38:26,283 --> 00:38:31,483
+Java 2 olsun
+
+349
+00:38:31,483 --> 00:38:34,623
+Virgül şuradaki yazar, Y1 yazarım olsun
+
+350
+00:38:41,331 --> 00:39:11,071
+Y1 yazarını bunu gönderdiğinde otomatik olarak hangi constructora çalışacak? Kitapta şuraya gelecek. Şimdi buraya gelince ben şurada disk.at, disk.id'yi burada kopyalayıp yapıştırıp tekrar yazmadım. Kod tekrar yapmadım. Diyor ki id ile adı şuna gönder, şuraya gönder. Bunları burada ata. Oradan geri dön işini bitir. Yazarı da burada ata diyor.
+
+351
+00:39:11,331 --> 00:39:15,512
+Tamam mı? Mevzu bu.
+
+352
+00:39:17,012 --> 00:39:25,771
+Peki. Burada sadece şu kaldı arkadaşlar. Kitabı tanıtırken id'sini dis.id'den alır. Adını dis.ad'dan alır.
+
+353
+00:39:26,172 --> 00:39:35,512
+Fakat yazar bilgisi boş değilse dis.yazarı yazmaya çalıştığında eğer null ise yani boş değilse bir yazar var.
+
+354
+00:39:35,512 --> 00:39:43,491
+Şimdi o yazarın referansı var ama burada. Referansını yazdırmamak için benim gidip yazarın id'sine ve adına ulaşmam gerekiyor.
+
+355
+00:39:44,291 --> 00:39:50,092
+Onun için diyeceğim ki yazar tanıt diye bir metodum vardı. Hatta şuna da yazar id diyelim.
+
+356
+00:39:51,732 --> 00:39:52,471
+Yazar id.
+
+357
+00:39:55,611 --> 00:39:58,692
+Hali hazırda çalışan o metodumu buradan kullanmam gerekiyor.
+
+358
+00:39:59,311 --> 00:40:03,132
+Çünkü zaten yazmışım. Bir daha bunu yapmama gerekiyor.
+
+359
+00:40:03,131 --> 00:40:25,411
+O zaman diyorum ki this.yazar benim nesnemin referansı. Bunun nokta yazar tanıt metoduna git diyorum. Yalnız bunun gitmesi için ne olacak? O bir sistem out print elendi. O zaman ne yapacağım? Şunu şöyle yazacağım. Herhangi bir şey olmayacak. O kendi içinde sistem out print elenini yazacak. Tamam mı?
+
+360
+00:40:25,411 --> 00:40:39,431
+Eğer yazar varsa yazar tanıttı. Bu yazar kimse artık. Onun tanıtım şeyi şuradan çağrıldı. Buradan çağırılınca işte bu da ne yapıyor? ID'sini, adını bilmem nesini yazıyor ve tamamlıyor.
+
+361
+00:40:39,611 --> 00:40:55,111
+Şimdi geldik buraya. Eğer yazar yoksa bunları yazdı. Sonra hatta şuna da elen diyelim de kafa karıştırmasın. Yazar bulunamadı dedi. Şöyle de ne bileyim bir işaret koyalım. Bu şekilde tamamladı.
+
+362
+00:40:55,412 --> 00:41:03,331
+Şimdi benim artık nasıl buradan yazar tanıtabiliyorsam işte yazara göre arama yapacağım veya başka bilgi yapacağım.
+
+363
+00:41:03,872 --> 00:41:08,932
+K nokta kitap tanıt dediğimde K kitabını tanıt dediğimde olacak bir şey var.
+
+364
+00:41:09,512 --> 00:41:13,671
+K iki nokta kitap tanıt dediğimde olacak bir şey var.
+
+365
+00:41:13,671 --> 00:41:16,751
+Şimdi bunun yazar bilgisi yok. O zaman ne yapacak?
+
+366
+00:41:17,311 --> 00:41:21,132
+Yazar bilgisi bulunamadı gibi bir şey yazacak. Bu kitap tanıtın yazar bilgisi var.
+
+367
+00:41:21,611 --> 00:41:25,011
+O yazar bilgisi de şuradaki atadığım bilgiler bunlar yazılacak.
+
+368
+00:41:25,412 --> 00:41:29,072
+Şimdi çalıştırıyorum. Onun öncesinde burada anlaşılmayan bir şey var mı?
+
+369
+00:41:33,684 --> 00:41:51,883
+Ne yaptık? Constructor'ı overload ettik. Ondan sonra information hiding yaptık. Information hiding'i ne için yaptık? Yani dedik ki yazarın bilgisi burada bir defa yazar oluştururken atanır. Artık başka kullanılmaz. Hatta bu uygulamada, test uygulaması da yazar bilgisi atamaması lazım.
+
+370
+00:41:51,883 --> 00:42:19,823
+Yani düşünün burası hepsi buradanın uygulaması. Bunun gibi bir tane daha uygulama olacak. İşte o da user olacak. User gidecek. Hepsi buradan bir servis alacak. Hepsi burada gidecek. İşte oradaki kitapları, yazarları, işte şeyleri diğerlerine göre sorgulama işlemleri yapacak. Bir üst sınıf daha orada hani bir ekstra sınıf daha yazılabilirim ama şu an için gerek yok. Şimdi ekrana bunu çalıştırdığımda ekrana gelecek sonuç. Bakalım nasıl bir format edilir.
+
+371
+00:42:19,823 --> 00:42:21,663
+Birincisi yazar ID 1
+
+372
+00:42:21,663 --> 00:42:22,783
+O şuydu
+
+373
+00:42:22,783 --> 00:42:24,384
+ID 1
+
+374
+00:42:24,384 --> 00:42:25,063
+Ad Java
+
+375
+00:42:25,063 --> 00:42:26,503
+Bunun yazarı bulunamadı dedi
+
+376
+00:42:26,503 --> 00:42:26,884
+Tamam
+
+377
+00:42:26,884 --> 00:42:28,584
+Sonra ID 2
+
+378
+00:42:28,584 --> 00:42:29,783
+İşte Java 2
+
+379
+00:42:29,783 --> 00:42:31,224
+Yazar ID'si 1'miş
+
+380
+00:42:31,224 --> 00:42:32,103
+Adı Ali'miş
+
+381
+00:42:32,103 --> 00:42:33,643
+Bu bilgileri buradan getiriyor
+
+382
+00:42:33,643 --> 00:42:34,623
+Tabi şurada birazcık
+
+383
+00:42:34,623 --> 00:42:36,883
+Kitapta şöyle bir şey yapalım
+
+384
+00:42:36,883 --> 00:42:38,544
+Şunu da ekleyelim de
+
+385
+00:42:38,544 --> 00:42:40,684
+Sonra bir alt satıra geçsin
+
+386
+00:42:47,956 --> 00:43:09,695
+overload etmeden tek fonksiyonda yapabilir miydik? Şunu diyorsun herhalde Utkan. Şimdi her zaman kitabın yazar bilgisine sahip olmayabiliriz. Şimdi ben buraya bir yazar verirsem, yazar yazarsam işte Y gibi. O zaman diyeceğim ki şurada null diye bir şey göndermem gerekiyor. Parametre olarak.
+
+387
+00:43:09,695 --> 00:43:35,935
+En azından null göndereceğim. Null gidecek ki orada olsun. Ama buraya bir insan null yazacağını unutamaz. Unutabilir. Yani hatırlayamaz. O zaman ne olur? Bu bize sorun oluşturur. Zaten overloading bu tarz durumların üstesinden gelmek için kullanılan bir mekanizma. Var olan mevcut alanları yazıyor. Olmayanları diğerlerinden null atayarak oluşturuyor.
+
+388
+00:43:39,380 --> 00:44:02,579
+Şunu da yapabilir miydik? Mesela kitaptan yazarı tanıtırken this.yazar tanıt yerine this.yazar.get.id'yi çekip sistem out printl'ın içerisinde yapabilir miydik? Yapabilirdik. Ama zaten bir yazar tanıt metodum var. Ne yapıyor? Gidiyor o, onu çağırıyor. Yani kitap tanıt buradan diğerini çağırıyor.
+
+389
+00:44:02,579 --> 00:44:11,699
+Fonksiyon tanımlarına default değer tanımlayamıyor muyuz hocam cevada? Fonksiyon tanımlarına default değer derken onu anlamadım.
+
+390
+00:44:13,319 --> 00:44:26,119
+Sesi anlatabilir misiniz hocam? Swift kullanıyorum ben şu anda normalde. Swift'te şöyle bir şey var. Fonksiyon tanımlarına mesela id int eşittir.
+
+391
+00:44:26,119 --> 00:44:35,559
+2 dediğimiz zaman oraya 2 verse şey oraya bir değer vermediğimiz zaman aynen o şekilde bir şey oluyor default değer tanımlayabiliyor.
+
+392
+00:44:36,599 --> 00:44:37,119
+Tamam tamam.
+
+393
+00:44:37,119 --> 00:44:42,119
+Ve şeyde fonksiyonu çağırırken o kısmı o default maysı onu atıyor.
+
+394
+00:44:42,639 --> 00:44:44,799
+Aynen yani çağırmamıza gerek kalmıyor.
+
+395
+00:44:45,439 --> 00:44:52,479
+O C sharp'ta var da burada dur bakayım java default parameter function parameter.
+
+396
+00:44:52,499 --> 00:44:54,219
+Swift dediğin C sharp mı hocam?
+
+397
+00:44:54,219 --> 00:44:59,479
+Swift başka, C Sharp başka, Ömer Faruk Swift dedi, benimki C Sharp
+
+398
+00:44:59,479 --> 00:45:03,399
+Bazı cevap, support, deport, parameter, values
+
+399
+00:45:03,399 --> 00:45:04,759
+Şuna bakalım
+
+400
+00:45:04,759 --> 00:45:07,739
+C Sharp'ta var, eşittir yazınca direkt oluyor
+
+401
+00:45:13,076 --> 00:45:14,895
+Swift kullanıyorum dediği nedir?
+
+402
+00:45:15,816 --> 00:45:16,715
+O da bir başka dil.
+
+403
+00:45:17,775 --> 00:45:19,095
+IOS yazılım.
+
+404
+00:45:19,095 --> 00:45:19,635
+Evet.
+
+405
+00:45:21,435 --> 00:45:23,435
+Şimdi görebiliyor musunuz?
+
+406
+00:45:24,675 --> 00:45:28,456
+Şurada bir parametre de yok herhalde ama şunlarda...
+
+407
+00:45:28,456 --> 00:45:32,455
+Metal overloading yaparak buna benzetebiliriz diyor ama C Sharp'taki gibi yok zaman.
+
+408
+00:45:32,455 --> 00:45:33,155
+Evet.
+
+409
+00:45:33,756 --> 00:45:38,675
+Yani C Sharp, default, method, parameters.
+
+410
+00:45:40,256 --> 00:45:42,555
+Dediğimizde eşittir yazılıyor genelde.
+
+411
+00:45:42,555 --> 00:46:09,576
+eşittirle o default değer yazıyor. Evet. Python'da da var. Nerede? Bakın mesela şu. Ben bu metodu çağıracağım. Eğer hiçbir şey göndermesem country alanına Norway yazıyor. Eşittirle atıyor. Bunu gönderdiğimde üzerine overwrite edecek, üzerine yazacak. Şurada direkt Norway olarak yazacak. Bu kadar. Bu şey yok. Olsaydı mesela tek bir constructorla bu işi halledebilirdik.
+
+412
+00:46:09,576 --> 00:46:37,455
+Ama constructor'ın overload edilebildiğini burada söylemiş olalım. Peki. Şimdi yazar tarafı tamam. Yazar tamam oldu. Çok özür diliyorum hocam. Bu normal Java'nın bu iOS, MacOS onlara programlar için kullanılan dil o değil mi? Aynen aynen. Onlara muadil bir programlama dedi. Daha çok iOS platformu için ve belki başka platformlarda da kullanılıyordur.
+
+413
+00:46:37,455 --> 00:46:43,215
+Yok çoğunluk iOS diye biliyorum ben de oraya bu mobil uygulamaları tamam okey
+
+414
+00:46:43,215 --> 00:46:46,895
+Şu anda sadece iOS, iPadOS ve MacOS'ta yazılabiliyor
+
+415
+00:46:46,895 --> 00:46:47,975
+Tamam
+
+416
+00:46:47,975 --> 00:46:49,895
+Ben de öyle biliyorum
+
+417
+00:46:49,895 --> 00:46:54,595
+Objective C vardı bir ara onun yerine şey oldu daha kullanılır oldu galiba
+
+418
+00:46:54,595 --> 00:46:56,395
+Aman aman hocam söylemeyin onu
+
+419
+00:46:56,395 --> 00:47:00,755
+C'nin biraz daha şey versiyonu böyle hard versiyonu
+
+420
+00:47:00,755 --> 00:47:06,555
+Naçsani tavsiye o sortamı bitiyor haberiniz olsun
+
+421
+00:47:06,555 --> 00:47:10,635
+3-5 seviye daha öyle bir ortam kalmayacak diye biliyorum. Bilginiz olsun sadece.
+
+422
+00:47:12,235 --> 00:47:20,395
+Teşekkür ederiz. Şimdi arkadaşlar burada başka slide'dan anlattığımız ne vardı? Bir de ona bir hızlıca bakayım.
+
+423
+00:47:24,980 --> 00:47:41,859
+Şimdi, static metot niye tanımlanır? Tanımlamak gerekebiliyor bazen. İşte mesela her bir sınıfta olmazsa olmaz yani nesne çağırmaya gerek kalmayan sürekli kullanılan bir metot.
+
+424
+00:47:41,859 --> 00:47:48,499
+Yani gerçi bu kitap örneği için çok uygun değil de. Olduğunu kabul edelim.
+
+425
+00:47:48,499 --> 00:48:04,160
+public, static, void, ne bileyim, f fonksiyonu olsun. Şu an için herhangi bir şey söylemiyorum. System, south diyelim.
+
+426
+00:48:06,160 --> 00:48:17,719
+Şimdi bu metodu ben bir şeyle çağırabilirim. Nesne üzerinden çağırabilirim. Biraz önce yani kitap nokta, kitap bir nokta f dediğimde çalışır.
+
+427
+00:48:18,500 --> 00:48:29,500
+Tabi şuradaki şey ne şimdi biz kitapta bir değişiklik yaptığımız için mi acaba yok değişiklik yapmadık
+
+428
+00:48:29,500 --> 00:48:35,140
+bu intersans biraz geç kendine geliyor onun için k1.
+
+429
+00:48:35,140 --> 00:48:39,500
+k1 yok k.
+
+430
+00:48:39,499 --> 00:48:45,480
+Bakın bu doğrudan göstermedi bilerek göstermiyor F
+
+431
+00:48:45,480 --> 00:48:48,819
+K.F dediğimde bu çalışacak yine
+
+432
+00:48:53,907 --> 00:49:16,807
+işte deneme diye bir şey. Tabii biz bunu bu şekilde çok fazla kullanmıyoruz. Daha çok sınıf üzerinden kullanıyoruz. Kitap nokta, bakın F de direkt. Eğer bir sınıfa dair çok böyle sürekli kullanılan şeyler varsa, bir metotlar gerekiyorsa bunları statik tanımlamak nesne üretmeden bu işi yapmayı sağlıyor.
+
+433
+00:49:16,807 --> 00:49:21,588
+Şimdi biz System Outprint Elen metodunu kullandığımızda
+
+434
+00:49:21,588 --> 00:49:22,588
+Şöyle yazalım
+
+435
+00:49:27,219 --> 00:49:37,199
+Buradan herhangi bir nesne ürettik mi bir sınıftan, oradan buradan? Bir şey üretmedik değil mi arkadaşlar? Ne sistem sınıfından bir şey ürettik, ne out'dan, out ile alakalı bir şey yaptık.
+
+436
+00:49:37,659 --> 00:49:44,259
+İşte bu sistem içerisinde out diye bir şey var. Bunu şimdi gidelim go to source'una. Kısmen de olsa görüyoruz.
+
+437
+00:49:44,839 --> 00:49:53,079
+Bu işletim sistemiyle output, print stream üzerinden out nesnesiyle ve statik olan bir şeyle, bir referansla çağrılıyor.
+
+438
+00:49:53,079 --> 00:50:05,359
+Şimdi bunun içeriğine gidelim. Çünkü biz buradan da bir nesne üretmedik. Yani printstream'den de bir nesne üretmedik. Bunun go-out sorusuna gidiyorum. Şimdi println.
+
+439
+00:50:08,959 --> 00:50:22,619
+Println. Gerçi bunlar nesne burada üretiyor bu. Pardon. Out üzerinden ürettiği için biz de oradan şey yapıyoruz. Bu out'tan gidip println'e ulaşıyor.
+
+440
+00:50:23,080 --> 00:50:25,879
+Ama mesela bunun başka statik metotları var.
+
+441
+00:50:26,879 --> 00:50:29,699
+Ve şuna bakalım. Şuradan daha rahat buluruz. Niye buna giriyoruz ki?
+
+442
+00:50:30,580 --> 00:50:30,839
+Math.
+
+443
+00:50:33,279 --> 00:50:35,059
+Mesela absolute value.
+
+444
+00:50:35,679 --> 00:50:37,020
+3.4
+
+445
+00:50:37,020 --> 00:50:39,600
+Şuraya gelelim.
+
+446
+00:50:39,959 --> 00:50:41,740
+Bu bir değer döndürüyor ama önemli değil.
+
+447
+00:50:41,840 --> 00:50:43,219
+Bunun source'una gidiyorum.
+
+448
+00:50:44,059 --> 00:50:44,580
+Gidemiyorum.
+
+449
+00:50:47,120 --> 00:50:48,499
+Code source diyelim.
+
+450
+00:50:49,359 --> 00:50:51,039
+Math.absolute value.
+
+451
+00:50:51,319 --> 00:50:53,020
+Ben bunu hiç değişken üretmedim.
+
+452
+00:50:53,080 --> 00:50:54,859
+Bakın statik olarak tanımlanmış bir şey.
+
+453
+00:50:55,459 --> 00:50:57,919
+Ve bunun farklı şeyleri de var.
+
+454
+00:50:58,560 --> 00:50:59,900
+Overload metotları da var.
+
+455
+00:50:59,999 --> 00:51:00,499
+Dikkat edin.
+
+456
+00:51:00,900 --> 00:51:03,160
+İşte int için, float için, double için çalışıyorum.
+
+457
+00:51:03,520 --> 00:51:04,580
+Diğer şeyler için.
+
+458
+00:51:05,279 --> 00:51:05,539
+Ne oluyor?
+
+459
+00:51:05,639 --> 00:51:08,559
+Bu değişken üretmeden bu değerlere ulaşabilmemi sağlayalım.
+
+460
+00:51:08,639 --> 00:51:09,499
+Matematik sınıfında.
+
+461
+00:51:09,679 --> 00:51:11,859
+Tabii bunlar compiled olduğu için doğrudan göremiyoruz.
+
+462
+00:51:12,880 --> 00:51:18,219
+Hatta burada final olan, double olan ve statik olan e ve p değişkenleri var.
+
+463
+00:51:18,219 --> 00:51:22,900
+Doğrudan mat.e, mat.p diye yazdığımda bu değerlere ulaşıyorum.
+
+464
+00:51:22,900 --> 00:51:25,059
+hem de bunları değiştiremiyorum final olduğu için.
+
+465
+00:51:26,120 --> 00:51:27,239
+Static bunun için kullanılıyor.
+
+466
+00:51:27,239 --> 00:51:35,139
+Eğer bir static metot içinde bir değişken kullanacaksam mesela id diyelim.
+
+467
+00:51:36,100 --> 00:51:38,240
+Id yazdıralım hatta.
+
+468
+00:51:41,907 --> 00:51:43,768
+diyor ki şöyle bir hata alacağız.
+
+469
+00:51:44,527 --> 00:51:48,127
+Non-static variable cannot be referenced from static context.
+
+470
+00:51:48,207 --> 00:51:51,227
+Static bir context içerisinde bunu yapamazsınız diyor.
+
+471
+00:51:51,227 --> 00:51:56,127
+O zaman ya şu değişkeni statik yapacaksın diyor ya da bu metodu statik yapmayacaksın.
+
+472
+00:51:57,087 --> 00:51:59,047
+Veya buradan bir statik metot tanımlayalım.
+
+473
+00:52:00,348 --> 00:52:01,367
+Şey değişken tanımlayalım.
+
+474
+00:52:01,447 --> 00:52:03,727
+Static integer id diyorum.
+
+475
+00:52:04,588 --> 00:52:05,547
+Eşittir bir diyorum.
+
+476
+00:52:06,588 --> 00:52:09,287
+Şu metodu çağırdım da burada da id'yi yazalım.
+
+477
+00:52:10,847 --> 00:52:11,227
+Ne oldu?
+
+478
+00:52:11,227 --> 00:52:13,347
+illegal start of expression.
+
+479
+00:52:14,347 --> 00:52:15,647
+Niye ill level?
+
+480
+00:52:21,556 --> 00:52:22,635
+ints.
+
+481
+00:52:26,132 --> 00:52:39,771
+şöyle yapacağım. Bunu global'e taşıyalım. ID diyorum. ID plus plus diyeceğim. Şimdilik öyle olsun da onun neden olduğuna bir bakayım. Daha sonra bilmiyorum çünkü onu hatırlamıyorum.
+
+482
+00:52:39,771 --> 00:52:51,691
+Şimdi bu metodu her çağırdığımda arkadaşlar ID birden başlamıştı. Gidip birden başlatıp da şey yapmıyor yani bunu sürekli 2, 2, 2 diye yazmayacak.
+
+483
+00:52:51,691 --> 00:53:13,712
+İşte ilk değeri 1'de hatta 0'dan başlatalım. Önce 0 yazacak sonra 1 yapacak. Bir daha çağırırsam 2 yapacak. Bu şekilde devam edip gidecek. Şimdi şöyle kitap nokta f fonksiyonu dedim. Tekrar bir kitap nokta f diyorum ve run diyorum.
+
+484
+00:53:17,427 --> 00:53:35,688
+0, 1, 2, 3 diye gidiyor. Bunun zaten C'den de aynısını biliyorduk. Burada da aynı şekilde var. Bunu da nerede kullanıyoruz? Statik, yani şu sisteme alt gibi veya başka bir durumlarda gerekli bir şey olursa, hani böyle bir ihtiyaç olursa hiç nesne üretmeye gerek kalmadan bunları kullanabiliyoruz.
+
+485
+00:53:35,688 --> 00:53:54,128
+Başka ne konuştuk? Hızlıca şunu bir gözden geçireyim arkadaşlar. Unuttuğumuz bir şey olmasın. Süreyi de çok fazla aşmak istemiyorum. Burada zaten şeyler var. Yani bir yandan UML'le teorisini anlatıp bir yandan koda giriyoruz. Package'lara daha sonra bakacağız. Şu an package'lar pek önemli değil.
+
+486
+00:53:54,128 --> 00:54:10,207
+mesela şurada ben set id diye bir şey yazabilirim. Ama bunu şey olarak yazmak istiyorum.
+
+487
+00:54:10,207 --> 00:54:18,868
+private void set id. Buna bir integer id gibi bir şey alacağım.
+
+488
+00:54:18,867 --> 00:54:23,247
+This.id eşittirid
+
+489
+00:54:23,247 --> 00:54:47,727
+Şimdi bu ne için kullanılır? Bir kere buna dışarıdan erişemem. Hiçbir şekilde ne yazardan ne testten erişmem mümkün değil. Bu sınıf içinde bir id'ye değer atamak söz konusu olursa, setid yani böyle bir metot çağırmak söz konusu olursa bunu burada kullanabilirim. Aslında aynı şeyi this.id ile de yapabilirim ama setget metotlarını işte böyle private yapabiliyoruz.
+
+490
+00:54:47,727 --> 00:55:12,047
+Özellikle dışarıdan erişime yani bu arabanın şase numarası örneğinde olduğu gibi nesne oluşturulur oluşturulmaz bir değer atanacak ondan sonra o değer kesinlikle değiştirilemeyecek diyorsak bunun kullanmanın tek yolu o değer atamasını constructorla yapmak set verigetleri de dışarıya kapatmaktır. Set verigetler dışarıya açık olursa işte arka kapıdan dolaşmak gibi bir şey oluyor. Hiçbir zaman atayamıyoruz.
+
+491
+00:55:12,047 --> 00:55:16,947
+Bunlara konuştuk, baktık.
+
+492
+00:55:18,227 --> 00:55:22,707
+Static, constructor dedik.
+
+493
+00:55:25,427 --> 00:55:27,907
+Şimdi bir de finalize metodu var.
+
+494
+00:55:29,487 --> 00:55:31,047
+Bunun yazılımına bakalım hemen.
+
+495
+00:55:45,619 --> 00:55:56,380
+Public void finalize şu olacak. Evet. Mesela bir kitap oluşturuldu. Bunun içerisinde bu kitap nesnesini yok edeceğim ben mesela.
+
+496
+00:55:57,519 --> 00:56:14,339
+Public void finalize. Şöyleydi herhalde. Bakın diyor ki burada bir notasyon var. Bunu diyor overwrite edin.
+
+497
+00:56:14,339 --> 00:56:41,459
+Çünkü bu finalize üst sınıflardan gelen bir şey. Muhtemelen object sınıfından geliyor. Bu nesnenin yok edilmesi yani işinin bitmesi sırasında yazılacak bir şeyi yapabiliriz. Mesela south şöyle diyelim this.id artı noğlu kitap silindi diyelim mesela. Başka şeyler de yapabiliriz.
+
+498
+00:56:41,460 --> 00:57:09,160
+Şimdi geliyorum. Tabi bu hemen olabilecek bir şey de değil. Çünkü garbuş kolektör ne zaman çalışır onu silmeye başlarsa bu çalışacak. Test Java'ya geliyorum. Diyorum ki K. şey K objem bunu gösteriyordu. Artık diyorum ki K. K2 K'yı göstersin. Yani K'da şunu gösterecek. K2'de. Şu başıboş kaldı.
+
+499
+00:57:09,160 --> 00:57:34,819
+Bu yani zombi gibi kalan başıboş kalan eleman bir müddet sonra silinecek. Silinirken çağırılacak olan şey yazar sınıfındaki şey kitap sınıfındaki finalize metodu çağırılacak. Şimdi şöyle çalıştıralım. Bakalım sonucu görebilecek miyiz? Şu an çalışmadı program bitti yani ona yetişemedik. Belki bir slip gibi bir şey yazabiliriz.
+
+500
+00:57:39,315 --> 00:57:41,315
+Diyelim ki şurada
+
+501
+00:57:41,315 --> 00:57:43,115
+Sleep
+
+502
+00:57:43,115 --> 00:57:47,736
+Yok muydu abi? Öyle miydi?
+
+503
+00:57:50,076 --> 00:57:55,395
+Hocam orada mı sleepleyeceğiz? Aşağıda sleeplesek damat değil mi? Boşta kaldıktan sonra.
+
+504
+00:57:55,395 --> 00:57:56,455
+Aynen öyle.
+
+505
+00:57:57,795 --> 00:57:58,815
+Şunu diyelim.
+
+506
+00:58:01,515 --> 00:58:03,335
+Bu exception fırlatıyormuş.
+
+507
+00:58:03,416 --> 00:58:07,615
+Exception fırlattığı için şuraya onu yazalım diyor. Problem değil o.
+
+508
+00:58:09,315 --> 00:58:13,516
+Yalnız 5 saniyede silinecek bir şey de olmayabilir.
+
+509
+00:58:16,036 --> 00:58:17,216
+Şimdi şunu aratacağım.
+
+510
+00:58:18,176 --> 00:58:19,996
+Bakalım silindi dedi mi diyemedi.
+
+511
+00:58:22,216 --> 00:58:27,356
+Java trigger garbage collector.
+
+512
+00:58:29,875 --> 00:58:32,996
+Outforce garbage collector şu olabilir.
+
+513
+00:58:33,176 --> 00:58:34,935
+Sistem.gc'miş herhalde.
+
+514
+00:58:34,935 --> 00:58:52,036
+sistem.gc var mı? Var. Ne yapıyormuş? Açıklamasına da bakalım. Diyor ki runs the garbage collector. Garbage collector'ı çalıştırır. Tamam çalıştırsın bakalım nasıl çalıştıracak.
+
+515
+00:58:52,036 --> 00:59:07,756
+Evet bir noll kitap silinmiş bakın arkadaşlar. Bu çalıştırır çalışmaz. Ne oluyor? O nesne yok olduğu için diğer metot çağırılıyor ve onun yok olduğunu görüyoruz. Burada herhangi bir problem var mı?
+
+516
+00:59:14,963 --> 00:59:32,863
+override neden ekledik? Şimdi şu metot aslında eklemek zorunda değiliz. Bu bir annotation. Önceden gerekliydi, zorunluydu. Şimdi kaldırıldı yeni versiyonu. Şimdi şu finalize, object sınıfında oluşturulmuş bir metottur. Bunun sorsuna gidebilir miyiz bilmiyorum.
+
+517
+00:59:32,863 --> 00:59:43,263
+tekrar işine de gidemiyoruz. Hatta şöyle yapayım bir dakika. Object.
+
+518
+00:59:53,972 --> 00:59:55,571
+New object diyelim.
+
+519
+00:59:57,111 --> 00:59:59,571
+Belki şuradan ulaşabiliriz.
+
+520
+00:59:59,731 --> 01:00:01,412
+Code, source diyorum. Yok, ulaşmıyor.
+
+521
+01:00:01,771 --> 01:00:05,611
+Objenin altında, muhtemelen orada olması lazım.
+
+522
+01:00:06,352 --> 01:00:08,451
+Bu, finalize metodu tanımlanmış.
+
+523
+01:00:09,371 --> 01:00:11,072
+Ve onun kendine göre bir tanımı var.
+
+524
+01:00:11,912 --> 01:00:13,992
+Ben o tanımı kendime göre değiştiriyorum.
+
+525
+01:00:15,051 --> 01:00:20,312
+Bu değiştirdiğimi ifade etmek için bunun override olduğunu burada söylemem eskiden zorunluydu, şimdi zorunlu değil.
+
+526
+01:00:20,312 --> 01:00:22,251
+Bu yeni versiyonlarda.
+
+527
+01:00:22,251 --> 01:00:31,791
+ne oluyor? Oradaki metot geçersiz kalıyor. Bu geçerli hale geliyor. Yani bunu çalıştırıyor, oradakini çalıştırmayacak anlamda bir anlamda. Tamam mı?
+
+528
+01:00:33,491 --> 01:00:46,711
+Şimdi arkadaşlar soruyu biraz daha öteye taşıyacağım. Şimdi bir kullanıcı olarak kitap oluştururum, yazar oluştururum, kitapları tanıtırım. Bunlar yaptığımız şeyler. Ben bir tane de class ekliyorum.
+
+529
+01:00:46,711 --> 01:01:12,371
+Bu da kütüphane olsun. Ben bu kütüphane içerisinde kitaplar saklayacağım. Her bir kitabın da yazarı olacak. 3 sınıf iç içe. Şimdi kütüphanede kitaplar olacak. Bir de bunun kapasitesini şimdilik belirleyelim. Mesela diyelim ki integer kapasitesi olsun.
+
+530
+01:01:12,372 --> 01:01:14,111
+Kapasite
+
+531
+01:01:14,111 --> 01:01:18,492
+Ve bu kapasitede sınırlı bir sayı olsun
+
+532
+01:01:18,492 --> 01:01:21,852
+Onun için ben kitaplardan bir dizi oluşturuyorum
+
+533
+01:01:21,852 --> 01:01:23,071
+Dizi bu şekilde oluşturuyor
+
+534
+01:01:23,071 --> 01:01:25,391
+Şu şekilde bir referans tutacağım
+
+535
+01:01:25,391 --> 01:01:27,171
+Tamam mı?
+
+536
+01:01:27,692 --> 01:01:30,931
+Bu referansı tuttuktan sonra buraya kitaplar ekleyebileceğiz
+
+537
+01:01:30,931 --> 01:01:36,632
+Ve bu kütüphaneye kitap ekle şeklinde bir değişkenim olacak
+
+538
+01:01:36,632 --> 01:01:38,832
+Bir de mevcut kitap sayısını tutalım
+
+539
+01:01:38,832 --> 01:01:53,632
+Çünkü bu kitap kapasite alanı sürekli güncellenecek. Kitap sayısı diyelim. Buna bir constructor yazıyorum. Public kütüphane.
+
+540
+01:02:00,179 --> 01:02:19,079
+Buraya bir kapasite değeri alalım. Integer kapasite. Bir tane kitaplar, kitap cinsinden bir kitaplar dizisi alalım. Veya kitaplar dizisi alalım mı? Almayalım. Gerek yok. Sadece kapasite alsak yeterli.
+
+541
+01:02:19,079 --> 01:02:21,119
+Tamam.
+
+542
+01:02:22,360 --> 01:02:25,299
+Çünkü kitaplar şeyi kadar değer oluşturulmuş.
+
+543
+01:02:25,299 --> 01:02:31,439
+Şimdi öncelikle kütüphane oluşturulduğunda kitap sayısı sıfır olsun diyorum.
+
+544
+01:02:31,559 --> 01:02:32,299
+Hiçbir kitap yok.
+
+545
+01:02:33,979 --> 01:02:38,599
+Kapasite, diz nokta kapasite eşittir buraya gelen kapasite kadar olsun.
+
+546
+01:02:40,439 --> 01:02:44,679
+Ve bu kapasite kadar kitaplar dizisi oluştursun.
+
+547
+01:02:44,760 --> 01:02:46,099
+Kitaplar eşittir.
+
+548
+01:02:46,099 --> 01:02:52,019
+New kitap türünde şöyle dizayn ediyorum kapasit ediyoruz.
+
+549
+01:02:53,879 --> 01:02:54,939
+Başka bir şey yok.
+
+550
+01:02:55,019 --> 01:02:56,999
+Yani bu kadar dizilik bir yer açtık.
+
+551
+01:02:57,179 --> 01:02:59,819
+Tabi referans tutacak bunların hepsi.
+
+552
+01:03:00,839 --> 01:03:07,459
+Burada işte kaç tane kitap olacaksa şey kütüphane ilk oluşturulduğunda da 0 tane kitap olduğunu söyleyeceğiz.
+
+553
+01:03:08,199 --> 01:03:11,379
+Sonra diyeceğim ki arkadaşlar ben bu kütüphaneye kitaplar ekleyeceğim.
+
+554
+01:03:11,779 --> 01:03:12,579
+Yeni yeni kitaplar.
+
+555
+01:03:12,739 --> 01:03:14,799
+Bunlar da şuradaki nesnelerim olacak.
+
+556
+01:03:14,959 --> 01:03:15,900
+Oluşturduğum nesneler.
+
+557
+01:03:16,099 --> 01:03:18,979
+ve daha sonra bu kütüphanedeki kitapları listelemek istiyorum.
+
+558
+01:03:19,659 --> 01:03:28,360
+O zaman public başarılı olup olmadığını göstermek için Boolean türünde bir şey yazıyorum.
+
+559
+01:03:28,720 --> 01:03:29,279
+Mantıksal.
+
+560
+01:03:30,119 --> 01:03:31,319
+Kitap ekle dedim.
+
+561
+01:03:33,159 --> 01:03:34,760
+Public Boolean kitap ekle.
+
+562
+01:03:34,819 --> 01:03:36,219
+Buraya bir kitap nesnesi gelir.
+
+563
+01:03:37,339 --> 01:03:38,159
+K diyelim.
+
+564
+01:03:38,699 --> 01:03:40,019
+Bu buraya eklenmeye çalışır.
+
+565
+01:03:41,299 --> 01:03:43,299
+Önce kontrol yapmam gerekiyor.
+
+566
+01:03:43,299 --> 01:03:53,699
+if dis.kitap sayısı küçüktür kapasiteden dis.kapasiteden
+
+567
+01:03:53,699 --> 01:04:00,679
+biraz böyle irtica ile yazdığım için önümde yazılı bir şey yok böyle biraz arada düşünmem gerekebiliyor
+
+568
+01:04:00,679 --> 01:04:04,739
+küçükse ekleme yapabiliriz arkadaşlar
+
+569
+01:04:04,739 --> 01:04:10,159
+o zaman diyorum ki kitaplar kısmına bu bakın statik bir dizi
+
+570
+01:04:10,159 --> 01:04:23,540
+Kitapların kitap sayısı değişkeni indisinde bulunan değişkenine benim şu gelen kanesine mi ekle?
+
+571
+01:04:24,139 --> 01:04:25,479
+Ve kitap sayısını bir artır.
+
+572
+01:04:28,947 --> 01:04:30,867
+Açık mı burası? Anlaşıldı herhalde.
+
+573
+01:04:33,348 --> 01:04:43,427
+Tabi burada bu işlem yapıldıysa. Şimdi bu ölümlü olarak göndereceğim şey. Yani burada bir kitap ekleyebildim. O zaman diyorum ki return true diye bir değer gönder.
+
+574
+01:04:44,227 --> 01:04:50,548
+Eğer bu şart sağlamıyorsa burada demek ki bir problem oldu. Yani yeteri kadar şey yok. Return false gönder diyorum.
+
+575
+01:04:50,548 --> 01:04:53,908
+Tamam mı?
+
+576
+01:04:55,247 --> 01:04:56,208
+Bir kitabı ekledik.
+
+577
+01:04:57,288 --> 01:04:59,527
+Niye dis.kitap sayısını plus plus yapmadık?
+
+578
+01:04:59,587 --> 01:05:00,227
+Yapabilirdik.
+
+579
+01:05:00,227 --> 01:05:02,968
+Yani o ikisi de aynı şey.
+
+580
+01:05:03,227 --> 01:05:07,648
+Yani dis yazmış olmak bunu götürür ama burada başka kitap sayısı isminde bir değişken olmadığı için olabilir.
+
+581
+01:05:07,747 --> 01:05:11,348
+Ben bazen hızlı yazarken dis'i unutuyorum ama yapabilirdik.
+
+582
+01:05:12,568 --> 01:05:15,808
+Şimdi arkadaşlar bir de kitapları listeleyelim.
+
+583
+01:05:15,808 --> 01:05:19,328
+O zaman diyelim ki public
+
+584
+01:05:19,328 --> 01:05:22,688
+Bu çok kolay bir şey olacak aslında
+
+585
+01:05:22,688 --> 01:05:23,447
+Void
+
+586
+01:05:23,447 --> 01:05:25,688
+Kütüphane
+
+587
+01:05:25,688 --> 01:05:30,547
+Kütüphane veya kitapları listele
+
+588
+01:05:30,547 --> 01:05:33,328
+Bir kere benim
+
+589
+01:05:33,328 --> 01:05:36,647
+integer i eşittir sıfırdan
+
+590
+01:05:36,647 --> 01:05:40,068
+i küçüktür, eşittir, küçüktür diyelim
+
+591
+01:05:40,068 --> 01:05:44,988
+Kitap sayısına kadar, kapasiteye kadar dersen boş alanlarda olabilir
+
+592
+01:05:44,988 --> 01:05:57,828
+Kaç tane kitap varsa kitap sayısına kadar i artı artı bu kadar fazla kitap yazdıracağım diyorum.
+
+593
+01:05:58,907 --> 01:06:00,528
+Yazdıracağım bu kitaplar ne olacak?
+
+594
+01:06:02,528 --> 01:06:11,287
+This nokta kitaplar kitapların i incisine git.
+
+595
+01:06:11,287 --> 01:06:14,447
+Bu i incisinin kitap tanıt objesi şeyi vardı.
+
+596
+01:06:14,988 --> 01:06:20,128
+Bunu getir yaz. Bu iyinci kitabın kitap tanıtından. O da neredeydi arkadaşlar? Kitap içerisindeydi.
+
+597
+01:06:21,687 --> 01:06:28,168
+Kitapta kendi yazarını nereden tanıtacak? O da gidecek. Yazar tanıtından tanıtacak ve bu değer bana gelecek.
+
+598
+01:06:28,348 --> 01:06:37,287
+Tabii ben bu kitap tanıtı çağırarak ne yapmış oluyorum burada? Kitap tanıtı çağırarak kitaba geldiğimize şurada neredeydi?
+
+599
+01:06:37,287 --> 01:06:41,608
+Bir sistem alt printelende bir şey yazıyorum. Sistem alt printelende de yazar tanıt geliyordu.
+
+600
+01:06:41,608 --> 01:07:01,787
+yazar da kendi içinde bir şey yazıyordu. O bir şeyler iç içe geliyor ve yazılıp gidiyor. O zaman gelin şurada bir şey oluşturalım. Kütüphane oluşturalım. Kitaplarım var. Az da olsa yazarım var. Burada da devam edelim. Şunu şey yapayım mı? Aşağıya alalım. Comment yapalım onu.
+
+601
+01:07:09,331 --> 01:07:17,391
+Kütüphane eşittir.
+
+602
+01:07:20,500 --> 01:07:20,979
+Kutupane.
+
+603
+01:07:28,052 --> 01:07:35,251
+Kütüphaneyi nasıl tanımladık arkadaşlar? Kapasiteyle tanımladık. O zaman ne yapacağız? Bu kapasiteye bir ne bileyim 3 kitaplık bir şey olsun diyorum.
+
+604
+01:07:37,591 --> 01:07:41,411
+Cannot find symbol. Niye bulamadı? Ha, new yazacaktık.
+
+605
+01:07:44,191 --> 01:07:44,851
+New kütüphane.
+
+606
+01:07:46,691 --> 01:07:51,732
+Kütüphane'mizi oluşturttuktan sonra kütüphane nokta. Diyorum ki kitap ekle.
+
+607
+01:07:51,732 --> 01:07:57,611
+Bir kitap ekleyelim. Eklediğimiz bu kitap ne olsun? K kitabı olsun.
+
+608
+01:07:58,052 --> 01:08:03,351
+Aynı şekilde tekrar bir kitap ekle diyorum.
+
+609
+01:08:05,552 --> 01:08:13,611
+K2 kitabı olsun. Şuradan bir K3 kitabı daha oluşturacağım. Hatta K4 de oluşturalım.
+
+610
+01:08:15,592 --> 01:08:23,431
+Hocam bunlar şimdi sonuna eklemeyecek mi? Yani ilk 3 elemanı boş sonra bizim elemanlar gibi olmayacak mı? Sanırım fonksiyon öyle yazdık.
+
+611
+01:08:23,431 --> 01:08:28,091
+10'una eklemek derken şöyle şimdi K kitabı kitap ekleye geliyor buraya.
+
+612
+01:08:28,611 --> 01:08:31,911
+Birinci elemanım olacak yoksa sonuna mı ekleyecek ondan sonra?
+
+613
+01:08:32,311 --> 01:08:44,451
+Yok baştan ekleyecek. Şimdi mesela kapasitemiz ilk başta 0. Bu K nesnesi buraya geldi. Kapasite şey kitap sayısı başta 0 kapasitede işte 3-5 ne verdiysek. Bundan küçük mü? Evet.
+
+614
+01:08:45,051 --> 01:08:50,471
+Diz nokta kitap sayısı alanına gidiyor yani 0. indisine gidecek. Gelen bu nesnenin de 0'dan başlıyor.
+
+615
+01:08:50,471 --> 01:09:08,251
+Sonra bunu bir yapıyoruz. Bunu bir yapınca bu kütüphanenin bakın kitap sayısı değişkeni. Yani kitapların içerisinde belli bir değişken yok. Ne oluyor? Bu kütüphanenin şu an bir tane kitabı varmış gibi görünüyor. Sonra bir daha ekleyince bunu arttırıp gidiyoruz. Sadece kontrolü bakıyoruz.
+
+616
+01:09:08,251 --> 01:09:14,171
+K2, K3, K4. Şunları alalım.
+
+617
+01:09:19,380 --> 01:09:23,880
+A3, A4. Şimdi mesela burada şunu yapabiliriz.
+
+618
+01:09:31,060 --> 01:09:37,099
+Neyse, bunu böyle çalıştıralım da bir de öyle ayrıca onu ayrı kurgulayalım. Run diyorum.
+
+619
+01:09:41,555 --> 01:10:00,316
+yazar bulunamadı falan. Şu an hiçbir şey yazmıyoruz. Şimdi bunu yaptıktan sonra kütüphane nokta, kütüphane nokta listele diyorum. Şu tanıtlar şimdi kapalı olsun. Yazarı da tanıtmıyorum. Herkes tanıdığı tanıyacağı kadar.
+
+620
+01:10:05,684 --> 01:10:23,784
+IDC1 olan Java olan yazar bulunamadı. IDC2 olan yazarı adı olan kitap. Yine IDC3 olan bir tane kitap var. Niye? Biz burada 3 tane şey yazdık. Gelip bunu mesela 4 yapalım. 4.nünün de geldiğini göreceğiz.
+
+621
+01:10:23,784 --> 01:10:44,024
+Şimdi biraz önce dersin başında yazdığım kod mu daha makul? Şu mu daha makul? Buradaki bir arkadaş, yani bu test eden ben veya işte bir kurum, kitap yurdu hepsi burada. Kitap eklemenin nasıl olduğunu bilmesi gerekiyor mu? Gerekmiyor.
+
+622
+01:10:44,024 --> 01:10:45,283
+Gerekmiyor. Bu daha güzel.
+
+623
+01:10:45,283 --> 01:11:12,723
+Tamamen soyut bir durum var. Yani nasıl ekliyorsa ekliyor. Beni ilgilendirmez. Arka planda LinkedList mi kullanıyor, normal dizimi kullanıyor. O beni ilgilendirmiyor. Ekliyor mu ekliyor? Veya getir dediğim gibi listeledim gibi listeliyor. Yani işte bu bizim user tarafında user interface dediğimiz o tarafa bakan tarafı arkadaki olan şeyler de işte bu sarmalanmış daha spesifik yazılmış şeyler. Tabii bunları daha da geliştireceğiz ileride.
+
+624
+01:11:12,724 --> 01:11:32,143
+Şimdi ben bir de şöyle bir şey yapmak istiyorum arkadaşlar. Diyelim ki bir kütüphane daha oluşturalım. Başka başka kütüphaneler. Mesela kütüphaneleri de başka bir nesnenin içine yerleştirebilir miyiz? Kütüphaneleri de kapsayan bir nesne söyleyin.
+
+625
+01:11:33,523 --> 01:11:34,944
+Okul olsun hocam mesela.
+
+626
+01:11:34,943 --> 01:12:02,983
+Okul da mesela birden fazla kütüphane. O zaman ne yapacaksınız? Okul, tabi bunlar iç içe böyle şey gibi hani ne derler? İç içe bohçalar olur ya. Aynı onlar gibi bir şey. Bunu da mesela kendiniz deneyebilirsiniz. Şimdi ben diyorum ki yeni bir kütüphane oluşturayım. Bu kütüphanenin kapasitesi işte ne olsun? N olsun diyebilirim. Burada bir integer N yaparım. Hani burada malloc gibi bir şey de yok.
+
+627
+01:12:02,983 --> 01:12:18,624
+Sonra bunu bir şekilde system in ile kullanıcıdan veri girişiyle alırım program çalışırken bunu n olarak atarım. Mesela şu an n eşittir 5 diyelim. Böyle kalsın. System in için şöyle bir şey yazacağız.
+
+628
+01:12:19,143 --> 01:12:24,603
+Scender sınıfından bir önce klavyeden bir şey okumak için bir şey alacağız.
+
+629
+01:12:24,603 --> 01:12:28,663
+div, scanner nesnesiydi. Şöyle hatırlıyorsam.
+
+630
+01:12:29,383 --> 01:12:32,443
+Sistem.in kullanacağız.
+
+631
+01:12:34,143 --> 01:12:35,803
+Scanner'ı da kullanmak için
+
+632
+01:12:35,803 --> 01:12:40,523
+ultil scanner'ı eklememiz gerekiyor. Diyeceğiz ki burada
+
+633
+01:12:40,523 --> 01:12:41,803
+n eşittir
+
+634
+01:12:41,803 --> 01:12:43,143
+neydi?
+
+635
+01:12:45,544 --> 01:12:47,303
+sc.nextint
+
+636
+01:12:47,303 --> 01:12:49,624
+bir tane nextint oku bana.
+
+637
+01:12:50,203 --> 01:12:50,743
+Kullanıcıdan.
+
+638
+01:12:52,463 --> 01:12:54,184
+Burada da south diyelim.
+
+639
+01:12:54,603 --> 01:13:18,124
+kitap sayısı şey 50 kütüphane cts giriniz dedik. Eni de burada yazıyor. Bu şekilde bir kütüphane oluşturdum. Sonra diyorum ki ben buraya kitaplar ekleyeceğim. Kitaplar eklerken diyorum ki şöyle kitap dizisinden kaç tane kitap ekleyeceğim? Mesela burada şey yapalım kitaplar diyelim.
+
+640
+01:13:18,124 --> 01:13:43,083
+New, kitaplar. Bakın bu bir dizi. Mesela dört tane kitap olsun. Tabii kitaplar diye bir şey yok kitap türünde. Bu bir dizi olduğu için arkadaşlar şuradaki şekilde bir constructor çağıramıyorum. Bu ne demek? Kitap türündeki referanslar dört tane kitap türünde referans içeren bir dizi oluşturur demek.
+
+641
+01:13:43,083 --> 01:13:53,083
+Yani şunlardan K, K2, K3, K4 ve Lainstack bölgesindeymiş gibi düşüneceksiniz. Tabi bu da dizi olduğu için ip bölgesinde oluşuyor aslında.
+
+642
+01:13:53,555 --> 01:14:06,135
+Bunlar her biri kitap tutan bir değişken, bir pointer. Bu pointerı tutan da kitaplar diye bir şey var. Aslında ikinci dereceden bir pointer var burada. C'deki çift pointer'a benziyor.
+
+643
+01:14:06,375 --> 01:14:18,195
+Diyorum ki ben sonra for, i eşittir 0, i küçüktür 4, i artı artı 4 tane yapmam yeterli diyoruz.
+
+644
+01:14:18,195 --> 01:14:22,755
+Şimdi her birine, tabi i'yi tanımlamamız lazım, integer i diyelim.
+
+645
+01:14:23,995 --> 01:14:28,795
+Diyorum ki kitapların i'si eşittir.
+
+646
+01:14:29,695 --> 01:14:34,755
+Bir nesne üret, kitap türünden bir nesne üret.
+
+647
+01:14:35,175 --> 01:14:35,835
+Üretemedik.
+
+648
+01:14:39,636 --> 01:14:41,415
+Bu red team iznesne
+
+649
+01:14:44,819 --> 01:14:52,059
+Mesela şurada ID olarak i'yi vereyim. Sonra işte kitapta ne var? Bir tane ismi bir şey var. Java.
+
+650
+01:14:56,564 --> 01:15:20,143
+Artı diyorum, iyi diyorum. Virgül. Şurada da, nerede illegal? Şunu mu kabul etmiyor? Şurada da diyeceğim ki mesela bir yazar üretsin. Y1 olsun mesela burada da. Bunu çalıştırsın. Yeterli. Hepsine Y1 yazarını atayalım. Problem değil.
+
+651
+01:15:20,143 --> 01:15:47,803
+ne oluyor? Gidiyor Java artı i diye bir isminde ve i idli bir kitap oluşturuyor, nesne oluşturuyor. Bu nesneyi kitapların i'sinde saklıyor. Bunlar bu şekilde duruyor. Sonra ben diyorum ki kitap şey kütüphane 2 nokta kütüphane 2 hazır oluşturmuşken kütüphane 2 nokta kitap ekle.
+
+652
+01:15:47,803 --> 01:16:05,683
+diyeceğim ki kitapların iyi inci olanını ekle. Değerini ekle. Ne oldu? Yine nokta. Tamam. Onu da yazdık. Ne oluyor? Yukarıdaki yaptığım aynısını daha hızlı bir şekilde referans üzerinden yapıyorum. Buyurun.
+
+653
+01:16:05,683 --> 01:16:20,923
+Hocam şu an kütüphane şeyinde, classında şey ekleyebilir miydik? Bu kitap eklenin kitap listesi versiyonu. Yani override yapalım falan.
+
+654
+01:16:22,503 --> 01:16:26,963
+Ha yani tek bir eleman değil de bir liste şeklinde ekleme.
+
+655
+01:16:28,403 --> 01:16:29,203
+Bil, aynen.
+
+656
+01:16:29,203 --> 01:16:33,543
+Tamam. Zaten bundan sonra ona geleceğim. Şimdi en sonundan anlatacağım. Öyle bitireceğim.
+
+657
+01:16:33,543 --> 01:16:50,943
+Şimdi ne yapıyor? Bu tek tek kitapları ekliyor arkadaşlar. Sonra diyorum ki ben bu döngü bitince kütüphaneye ekleme işi bitti. Eklenebildiği kadar eklendi. Kütüphane 2 nokta. Kütüphane listele diyorum. Ve yazdır diyorum.
+
+658
+01:16:55,028 --> 01:17:05,948
+Kütüphane kapasitesi giriniz diyor. Mesela burada biz kaç tane? 4 tane girdik. Hadi 5 tane girelim. Ne oldu? İşte Java 0, Java 1, Java 2, Java 3 bunları ekledi.
+
+659
+01:17:07,247 --> 01:17:19,887
+Yani şurada oluşturulan bir nesne, fiziksel bir nesne var. Gidiyor bu. Buradaki kitapların i inci alanında saklanıyor. Bu kitapların i'si de her biri de kitaplarda saklanıyor.
+
+660
+01:17:19,887 --> 01:17:48,867
+Buradaki mevzu şu arkadaşlar aslında. Bir tane benim kitaplar diye bir referansım var. Bu kitaplar referansı stack bölgesinde. Bu kendi içinde referans tutan, kitaplar referansı tutan bir dizinin başlangıç adresini, yani şurayı tutuyor. Bunların her birinde bir kitap nesnesi tutacak. Yani kitap, işte bir, bir, bir, bir, bir, bir şey dedik ya. Bunlar da bakın bellek de başka yerlerde dağınık olarak.
+
+661
+01:17:48,868 --> 01:18:02,267
+ne oluyor? Hepsi birbirine refere ediyor. Zaten object orientat hep söylediğim gibi bir referanslar işidir. Yani bir yere bir nesneyi atarsın onu oraya bağla, bunu buraya bağla eşittirle adreslerini birbirine bağlarız.
+
+662
+01:18:03,148 --> 01:18:15,507
+Şimdi arkadaşınızın söylediği burada en tane kitap oluşturduk. Bunu böyle her defasında gidip kitap ekle kitap ekle demek yerine kütüphaneye tek bir seferde eklesek olmaz mı? Olur.
+
+663
+01:18:15,507 --> 01:18:39,007
+Şimdi benim burada kitaplar isminde bir dizi tutan şeyim var. O zaman ben şunu mesela şey yapayım. Public, William, kitap ekle diyorum. Buraya kitaplar şeklinde bir kitap dizisi gönderiyorum.
+
+664
+01:18:39,007 --> 01:18:51,667
+Bakın buna kızmadı. Tabi şimdi sadece return false diyelim şöyle. Şimdi kızmadı. Niye kızmadı? Çünkü bu bundan farklı bir şey. İsimler aynı ama parametre olarak farklı.
+
+665
+01:18:51,667 --> 01:18:59,608
+Diyeceğim ki if kütüphane veya şöyle diyelim
+
+666
+01:18:59,607 --> 01:19:02,367
+Dis.capacity
+
+667
+01:19:02,367 --> 01:19:07,587
+eksi this nokta
+
+668
+01:19:07,587 --> 01:19:12,227
+ne olduğunu this nokta
+
+669
+01:19:16,724 --> 01:19:17,863
+Neyi tanımadı ya?
+
+670
+01:19:20,704 --> 01:19:22,503
+Diz nokta kitap sayısı diyeceğim.
+
+671
+01:19:24,303 --> 01:19:26,163
+Kapasiteden kitap sayısını çıkarttım.
+
+672
+01:19:26,263 --> 01:19:28,203
+Veya doğrudan kapasite kitap sayısı diyelim.
+
+673
+01:19:28,243 --> 01:19:29,064
+Dizi karıştırmayalım.
+
+674
+01:19:29,883 --> 01:19:31,703
+Kapasiteden kitap sayısını çıkardım.
+
+675
+01:19:32,763 --> 01:19:34,043
+Bu çıkardığım sonuç
+
+676
+01:19:34,043 --> 01:19:36,543
+büyükse yani boş yer
+
+677
+01:19:36,543 --> 01:19:37,824
+büyükse ve eşitse
+
+678
+01:19:37,824 --> 01:19:39,423
+K nokta
+
+679
+01:19:39,423 --> 01:19:41,763
+bakın dizilerde böyle bir şey var.
+
+680
+01:19:41,883 --> 01:19:44,023
+K gelen bir diziyse bunun otomatik olarak
+
+681
+01:19:44,023 --> 01:19:45,963
+length diye bir şeyi saklıyor arkadaşlar. Çünkü
+
+682
+01:19:45,963 --> 01:19:55,424
+şu bellek organizasyonunda, referansta kaç tane eleman tutulacağı bu alanda derleyici tarafından tutuluyor.
+
+683
+01:19:55,783 --> 01:19:56,343
+Bu saklanıyor.
+
+684
+01:19:57,043 --> 01:19:59,343
+Eğer benim yeteri kadar yerim varsa demektir bu.
+
+685
+01:20:00,003 --> 01:20:00,363
+Tamam mı?
+
+686
+01:20:01,343 --> 01:20:04,944
+Şimdi en son kaldığım yere bunu göstermem lazım.
+
+687
+01:20:06,124 --> 01:20:06,363
+This.
+
+688
+01:20:06,904 --> 01:20:09,444
+Aslında bu birazcık şöyle bir problemli.
+
+689
+01:20:11,143 --> 01:20:13,264
+Olduğu gibi direkt kopyalayamıyoruz.
+
+690
+01:20:13,263 --> 01:20:16,143
+list.kitaplar desek
+
+691
+01:20:20,500 --> 01:20:25,500
+Kitaplar. Kitaplar. Kitaplar.
+
+692
+01:20:27,315 --> 01:20:43,416
+noktada kitaplar eşittir K diyeceğiz. Normalde şu olur. Kitapların bulunduğu adrese git K'yı ata. Yani bir dizi artık bu dizi şuraya dizi olarak gelen şeyi gösteriyor. Şimdi bunu şöyle test ederiz. Problem değil.
+
+693
+01:20:43,416 --> 01:21:11,756
+Yani senin sorduğun sorunun cevabı bu aslında. Tabi burada ekstra başka şeyler yapmak gerekiyor. Kontroller yani bir kitap listesi var onun üstüne devamını getirmek gerekiyordu. Onlar daha çok ArrayList'lerle falan yapılabilen şeyler. Problem değil. Şimdi ben burada dört tane kitap oluşturdum. İşte beş tanelikte yerim var. Diyorum ki şurada şöyle bir şey daha yapacağım.
+
+694
+01:21:13,415 --> 01:21:38,135
+Şunları kütüphaneye listelemiştik hatta. Önce onları bir görelim. Kitaplar 2 diyorum. 4 elemanlık bir şey daha oluşturacağım. Buradan i artı 5 değerini göndereceğim mesela. Böyle bir kitaplar 2 dizim olacak. 4 elemanlık.
+
+695
+01:21:38,135 --> 01:21:49,835
+Sonra diyeceğim ki kütüphane 2. kitap ekle diyorum ve şu kitaplar 2'yi ekliyorum.
+
+696
+01:21:55,252 --> 01:21:59,371
+Toplu bir şekilde eklemeye çalışacağım. Sonra şunu tekrar çağıracağım arkadaşlar.
+
+697
+01:22:02,551 --> 01:22:10,451
+Şimdi burada ne var? 0, 1, 2, 3 var en son. Şurada da ne var? İşte 5, 6, 7, 8 diye devam eden Java şeyleri var. Java artı iyi diye gidiyor.
+
+698
+01:22:11,071 --> 01:22:17,031
+Ne olacak? Bunun belli bir kısmı kütüphane 2'den öncekiler gidecek ama toplu bir şekilde eklemiş olacağım onu.
+
+699
+01:22:18,092 --> 01:22:23,791
+Eğer algoritmik olarak üsttekinden en son kaldığım yerden yazmam gerekiyorsa orada bir for döngüsü yazmak zorundayız.
+
+700
+01:22:23,791 --> 01:22:44,651
+Şimdi en önce kütüphane sayısını giriniz demiş. Mesela 4 girelim yine. 4 girdikten sonra ne oluyor? 0123 yazıldı. Sonra 0123 diye bir daha yazıyor. Ha tabii şurada ID'lerini niye yapmadı?
+
+701
+01:22:49,268 --> 01:22:51,268
+0 artı 5 diye yazdık ama
+
+702
+01:22:51,268 --> 01:22:54,287
+Java artı i
+
+703
+01:22:54,287 --> 01:23:02,567
+0 1 2 3 yazdı, 0 1 2 3 4. Yani şurada i artı 5'i hesaplatmadı, karşıya göndermedi.
+
+704
+01:23:03,787 --> 01:23:06,727
+ID'leri böyle yazdı. Önce o zaman şöyle mi yapsak acaba?
+
+705
+01:23:12,756 --> 01:23:14,055
+Bishudanija.
+
+706
+01:23:22,868 --> 01:23:23,387
+diyorum.
+
+707
+01:23:26,627 --> 01:23:29,087
+Java 0, Java 1, Java 2, Java 3.
+
+708
+01:23:31,567 --> 01:23:33,187
+Yani bunu yazmaması ilginç.
+
+709
+01:23:39,412 --> 01:23:50,651
+Şu listele. Şimdi şurada bir yerde hatamız varmış. Sıfırdan başladık. Kitaplar 2. Nil kitap dedik. Oluşturduğumuz nesneyi buraya atadık. Tamam.
+
+710
+01:23:57,043 --> 01:24:12,363
+şöyle yapabiliriz. Benim bir tane daha yazarım olsun. En azından eklendiğini görmek için. Şunlara da Y2'leri atıyorum.
+
+711
+01:24:15,572 --> 01:24:26,171
+Bu değişkenlerin görülmemesi 4 diyorum. Ali, Ali, Ali. Bunu oraya kopyalamadı. Kitap ekle, kitaplar 2 dedik.
+
+712
+01:24:32,500 --> 01:24:33,039
+Tukane.
+
+713
+01:24:37,300 --> 01:24:41,280
+Şuraya bir breakpoint koyacağım arkadaşlar. Debug edelim o zaman.
+
+714
+01:24:41,780 --> 01:24:50,419
+Hocam, bu kütüphel listede gibi fonksiyonlarda bu for each diye bir yapımız var ya o nasıl çalışıyor?
+
+715
+01:24:50,979 --> 01:24:54,279
+For each şunu yapıyor, yani onu anlatacağız daha geleceğiz.
+
+716
+01:24:55,159 --> 01:25:04,679
+Dizi şeklinde olan her bir yapıyı o diziye oluşturan basit elemanlara tek tek kopyalayıp istersen onları topluyorsun, istersen ekrana yazdırıyorsun, listeliyorsun.
+
+717
+01:25:04,679 --> 01:25:07,999
+onu biraz şöyle implement ederiz.
+
+718
+01:25:09,099 --> 01:25:12,919
+Şimdi şunu bir run edelim diyeceğim de şuradan run edelim.
+
+719
+01:25:15,959 --> 01:25:18,660
+Kapasite eksi kitap sayısı ejittir sıfır oluyor.
+
+720
+01:25:20,499 --> 01:25:21,219
+Kütüphane.
+
+721
+01:25:23,219 --> 01:25:26,980
+Şimdi kapasiteden kitap sayısını çıkartırsak dört.
+
+722
+01:25:29,559 --> 01:25:30,279
+Yani.
+
+723
+01:25:31,039 --> 01:25:34,520
+Ha evet şurada şu şart işi bozuyor olabilir arkadaşlar.
+
+724
+01:25:34,679 --> 01:25:51,119
+Şimdilik şunu kapatalım doğrudan kitapları K'ya eklesin o zaman. Hani çok uğraştırmayalım detayıyla. 4 dedik. Ne oldu? Burada Ali'ler gelmişti. Şimdi de burada veriler var. İşte 6, 7, 8 diye getiriyor.
+
+725
+01:25:51,119 --> 01:26:11,520
+Bunun mesela arkadaşımızın söylediği bu kitapları toptan eklemek yani dörtten büyük olması lazım. Şu kütüphaneye toptan ekleme yapmak gerekirse ne yapacağız? Şurada bir döngü yazacağız gerektiği durumda. Çünkü bu dizi yapısının verdiği bir şey.
+
+726
+01:26:11,520 --> 01:26:15,939
+LinkedList veya Collection'ları görünce biz o zaman şunu yapacağız.
+
+727
+01:26:16,480 --> 01:26:18,960
+Gelen bu listeyi append diyeceğiz.
+
+728
+01:26:20,060 --> 01:26:23,579
+Mevcut olan kitaplar listesinin sonuna ekle diyeceğiz.
+
+729
+01:26:23,579 --> 01:26:26,740
+Çünkü o LinkedList veya ArrayList yapısıyla çalışıyor.
+
+730
+01:26:26,840 --> 01:26:27,520
+Doğrudan gidecek.
+
+731
+01:26:27,579 --> 01:26:30,740
+Onun sonuna bu gelen diziyi ekleyecek.
+
+732
+01:26:30,899 --> 01:26:31,740
+O zaman onu yapabileceğiz.
+
+733
+01:26:31,859 --> 01:26:36,780
+Şu an bizimki sınırlı bir dizi olduğu için biraz daha sıkıntılı.
+
+734
+01:26:36,779 --> 01:27:00,960
+Şimdi burada arkadaşlar kütüphanede birden fazla kitaplar var. Kitaplarında işte bir tane yazarı var. Daha sonra sizin tavsiyem şunu yapmanız olur. Bitireceğim şimdi. Bir kitabın birden fazla yazarı varsa o zaman şurada birazcık değişiklik yapmanız gerekiyor. Kitabın yazarları artık bir dizi tutacaktır. Onu değiştireceksiniz.
+
+735
+01:27:00,960 --> 01:27:27,200
+ve kitap tanıt derken kitabın kaç tane yazarı varsa artık burada bir döngü çalışacak. Niye? Çünkü bir tane olur, iki tane olur. Kaç tane yazarı varsa o döngü dizideki değere göre bunu birazcık güncellemeniz gerekiyor. Bu size faydalı olur. Bugünkü anlattığımız konuların tekrar açısından. Onun dışında şuradaki şeylere bakıyorum. Biz oradan daha fazlasını yaptık diye düşünüyorum.
+
+736
+01:27:27,199 --> 01:27:37,379
+Ömer şimdi senin soruna bakacağım
+
+737
+01:27:37,379 --> 01:27:41,259
+Yok yok sen sor Bora
+
+738
+01:27:41,259 --> 01:28:02,999
+Okey, burada şimdi şey dizisi mesela, kitaplar dizisi oluşturacak şimdi, demin söylediğimiz soru için, mesela 3 tane kitap var dizide, bu dizide itereklerken, diziyi dönerken, sonuna ulaştığımızı, başka bir dizinin uzunluğu değiştirmek gerekli mi? Yoksa ne gördüğünde çık demem lazım, null mu oluyor? Yani o dizinin sonuna geldiğimi nasıl anlayacağım?
+
+739
+01:28:02,999 --> 01:28:04,919
+Şimdi kitapları ekrana bastırırken mi?
+
+740
+01:28:05,519 --> 01:28:10,499
+Herhangi bir şey yaparken, aynen. Kitap elemanları hani o dizinin sonunu nasıl anlıyor?
+
+741
+01:28:11,259 --> 01:28:30,959
+Tamam. Şimdi mesela kitapları listele dediğimde benim en tane kitabım var. Bunu biliyorum. Bunu da şey yaptık, söyledik. Yani kapasiteye girdik. Bu en değerini kaç girdiysem kitaplar nokta dediğimde bana aslında tabi burada kitap sayısı olarak söylüyor da şöyle bir bunun değişkeni var.
+
+742
+01:28:31,667 --> 01:28:33,987
+Kitaplar nokta length diyor.
+
+743
+01:28:34,408 --> 01:28:35,327
+Ben onu soracaktım.
+
+744
+01:28:35,507 --> 01:28:40,687
+Bu length'e kadar bunu hesap edebiliyorsun. Bu dinamik bağlama sayesinde gelen bir özellik.
+
+745
+01:28:41,428 --> 01:28:44,147
+Yani objeleri sayabiliyor. 3 tane kitap var diye.
+
+746
+01:28:44,147 --> 01:28:54,067
+O değeri elde edebiliyorsun. Zaten şurada yapılan şey de bir anlamda kapasite yazmak demek o length değişkenin içerisinde bir şey yazmak.
+
+747
+01:28:54,907 --> 01:28:56,027
+Bir değişik değer yazmak.
+
+748
+01:28:56,327 --> 01:28:57,247
+Tamam, sağ olun hocam.
+
+749
+01:28:57,247 --> 01:29:02,287
+Ve bu şeyden gelen bir şey mesela şunun definition'ına gidebilir miyiz bilemiyorum da
+
+750
+01:29:02,287 --> 01:29:07,388
+Parantez mi lazım ona göre?
+
+751
+01:29:07,508 --> 01:29:07,688
+Yok.
+
+752
+01:29:08,727 --> 01:29:13,627
+Bu şey bir public final int length.
+
+753
+01:29:14,047 --> 01:29:17,708
+Bu diyor ki bir int türünde bir şey döndürüyor final bir değer.
+
+754
+01:29:18,348 --> 01:29:19,947
+Muhtemelen bu değiştirilemez oluyor.
+
+755
+01:29:19,947 --> 01:29:25,407
+Bu obje sınıfında length diye veya bir yerde length diye bir değişken var.
+
+756
+01:29:25,407 --> 01:29:52,967
+Bunun kaynağını bulmak lazım, objede olabilir. Nesne dizi üretildiğinde gidiyor bu lenkte bir değer atanıyor ve bu final değer olduğu için muhtemelen şeyde atanıyor. Yani int, final int diyelim. Kitap sayısı. Şu şurada tabii geçersiz olacak, arttırılmayacak. Tabii ben örnek için veriyorum. Bu kitap sayısı burada konstruktörde bir sıfır yapılıyor. Bir daha değiştirilemez.
+
+757
+01:29:52,967 --> 01:30:03,967
+Aynen o length de bizi oluşturulduğunda o gittiği yerde muhtemelen constructor da atanıyor ve biz istediğimiz yerde o değeri elde edebiliyoruz. Get yapabiliyoruz aslında.
+
+758
+01:30:05,047 --> 01:30:05,367
+Anladım.
+
+759
+01:30:06,567 --> 01:30:11,527
+Ömer, hocam bul döndüren bir fonksiyonun değerini boşa döndürebiliyor muyuz o şekilde?
+
+760
+01:30:12,527 --> 01:30:18,307
+Yani bu false değeri mesela kitap ekle de döndü, şey yapmak durumunda değiliz.
+
+761
+01:30:18,307 --> 01:30:43,108
+Bunu alıp if gibi bir yerde kullanmak durumunda değil. Mesela kitap eklenemedi diye bir şey şurada yapılabilir mi? Yapılabilir veya burada bir mesaj verilebilir. Şurada almak zorunda değiliz test durumunda. Ama bazı şeylerde mesela şöyle bakalım. Public kitap tanıt int olsun mesela. Return 1 diyelim. Bunu merak ediyorum.
+
+762
+01:30:43,108 --> 01:31:09,367
+teste geldim. Kitap tanıt. Şunlardan birini açtım. Bunlardan bazısı diyor ki bu bir şey döndürüyor ama bu warning. Bir ara muhtemelen Java'da veya C++ olabilir. Hangisinin olduğunu hatırlamıyorum. Bir şey return ediyorsa onu alman gerekiyordu. Boş boşuna return ettirme diye öyle bir uyarı vardı. Şunu geri alalım şimdi kitaptaydı herhalde.
+
+763
+01:31:09,367 --> 01:31:14,227
+Zorunlu değil yani kısaca.
+
+764
+01:31:19,923 --> 01:31:45,863
+Başka? Şimdi rapper classlara derste gireceğiz. Ama onun öncesinde değişken isimlerine bakarsak arkadaşlar. Long var 8 byte'lık, short var 2 byte'lık, byte var 1 byte. Evet. Çok önemselleyecek warninglerden bir tanesi. Şimdi bunların birbirine dönüşümü arkadaşlar büyükler küçüklere dönüşemiyor. Küçükler büyüklere dönüşüyor.
+
+765
+01:31:45,863 --> 01:32:06,163
+Yani şu atama işlemlerinde çok fazla karşımıza gelecek. Byte eşittir, byte b eşittir, 1 diyelim. Öbürü neydi? Short muydu neydi? Short. S eşittir, 3 diyelim.
+
+766
+01:32:06,163 --> 01:32:26,683
+Şimdi B eşittirse küçükten büyüğe mümkün. S eşittir B. Bundan mümkün olmuyor. B eşittirse yazacağız. Bu diyor ki büyük bir tipi küçük bir tipe dönüştüremezsin. Doğrudan hata veriyor.
+
+767
+01:32:26,684 --> 01:32:45,504
+integer c diyelim c eşittir b yapabiliyorum şu hala hatalı tabi veya c eşittir s yapabiliyorum bunlar mümkün ama tam tersine s eşittir c yapamıyorum bunlar büyük tipler küçük tiplere dönüşmüyor
+
+768
+01:32:45,504 --> 01:32:48,563
+s sıfırda olsa olmuyor değil mi hocam?
+
+769
+01:32:49,164 --> 01:32:49,703
+nasıl yani?
+
+770
+01:32:50,404 --> 01:32:52,324
+senin değeri sıfırda olsa olmuyor değil mi?
+
+771
+01:32:52,324 --> 01:32:53,324
+Değer ile alakalı değil. Yani bir tipin içindeki bir değişkeni diğerine aktarmak. Burada deep copy yapılıyor çünkü. Bunlar değer tipinde şeyler. Baya baya değer bir yere kopyalanacak. Kayıpsız işlem yapmak istiyor burada. Tam tersini yapabiliriz. Double float'a aynı şekilde atanamaz ama float double'a atanabilir. İşte karakter var, boolean var. Bunlar bildiğimiz şeyler. Boolean C'de yoktu. Bir de string var. Operatörlere baktığımızda matematiksel operatörler
+
+772
+01:33:22,323 --> 01:33:24,163
+Atama operatörleri falan bunlar var.
+
+773
+01:33:25,023 --> 01:33:32,743
+Static değişken işte bugün konuştuğumuz mat, pow, absolute value falan işte kaydırma operatörü bunlara hızlıca derste daha sonra tekrar bakarız.
+
+774
+01:33:33,303 --> 01:33:36,703
+Bundan sonra diyeceğiz ki bu değişkenlerin hepsi bizim için primitiftir.
+
+775
+01:33:37,343 --> 01:33:42,523
+Bunların rapper classlarına, sarmalayıcı classlarına ve bunların özel metotlarına bakacağız.
+
+776
+01:33:42,523 --> 01:33:44,403
+İşte to string bunlardan bir tanesi.
+
+777
+01:33:44,983 --> 01:33:47,283
+Bugün birazcık bahsettik equals diye bir metot var.
+
+778
+01:33:47,383 --> 01:33:48,483
+Ol bunlardan bir tanesi.
+
+779
+01:33:49,183 --> 01:33:50,403
+Ama burada kalalım.
+
+780
+01:33:50,403 --> 01:33:56,823
+Yani gelecek derste şu 38, 39 veya 40'tan devam eder gideriz. Var mı sormak istediğiniz bir şey?
+
+781
+01:34:00,692 --> 01:34:09,631
+Bu Discord'u göstermek isteyen varsa bir şey paylaşabilirim. Kendi Zoom hesabımı oradan birkaç soru sorabilirim size.
+
+782
+01:34:13,908 --> 01:34:33,627
+İsteyen varsa şuradan copy invitation diyelim. Yani 5-10 dakika bir bakabiliriz. Ama vaktiniz yoksa çok önemli değil. Acelesi yok onun. Evet, herkese iyi akşamlar. Haftaya muhtemelen bu saatte ben olmam. Laboratuvar olur. Sormak istediğiniz varsa derste yine konuşuruz arkadaşlar.
+
+783
+01:34:34,627 --> 01:34:36,847
+Hocam ağzına, emeğine sağlık ya.
+
+784
+01:34:37,487 --> 01:34:38,047
+Estağfurullah.
+
+785
+01:34:38,828 --> 01:34:39,248
+Hocam.
+
+786
+01:34:39,267 --> 01:34:39,767
+Görüşürüz.
+
+787
+01:34:39,767 --> 01:34:41,707
+İsterseniz kapatmayın.
+
+788
+01:34:42,427 --> 01:34:43,687
+Yardımcı olabilirim okunda.
+
+789
+01:34:44,387 --> 01:34:47,787
+Burayı kapatalım da oradan ben kendi hesabımdan devam edeyim.
+
+790
+01:34:47,787 --> 01:34:50,887
+Şu an şuradan bir link paylaştım.
+
+791
+01:34:52,347 --> 01:34:53,487
+İyi akşamlar hepinize.
+
+792
+01:34:53,687 --> 01:34:55,867
+İsterseniz hemen kapatalım oradan devam ederiz.
+
+793
+01:34:56,247 --> 01:34:56,588
+Tamamdır.
+
+794
+01:34:57,227 --> 01:34:58,487
+Hoşçakalın görüşürüz.

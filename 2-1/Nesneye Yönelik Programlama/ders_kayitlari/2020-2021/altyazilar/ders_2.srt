@@ -1,0 +1,1767 @@
+1
+00:05:31,827 --> 00:05:34,288
+Evet arkadaşlar, merhaba, hoş geldiniz. Tekrardan
+
+2
+00:05:37,875 --> 00:05:38,375
+Merhaba hocam.
+
+3
+00:05:39,555 --> 00:05:40,096
+Şimdi
+
+4
+00:05:40,096 --> 00:05:43,215
+şöyle yapalım.
+
+5
+00:05:46,995 --> 00:06:06,315
+NetBeans'i ben indirdim. Ama Intel'ci indirme imkanı olmadı henüz. Daha başka işlerle uğraşmaktan ona bakamıyoruz. Şu NetBeans Download yazıyorsunuz arkadaşlar.
+
+6
+00:06:12,307 --> 00:06:36,967
+Bu arada şey değişmiş, artık Apache NetBeans olmuş. Farklı bir sayfaya yönlendiriyor size. Buradan download dediğinizde, işte Windows, Linux, Max, hangisini indireceksiniz? Ben Windows için olanı indirdim. Adım adım kuralım derseniz, gerek var derseniz, bekleyeyim, herkes indirsin.
+
+7
+00:06:36,967 --> 00:06:46,267
+var mı hocam yapalım diyen bekleyin beraber kuralım çok fazla bir kurulum şeyi yok sıkıntısı yok varsa yazın
+
+8
+00:06:51,156 --> 00:06:53,596
+Tamam, indirin ve bekleyin arkadaşlar.
+
+9
+00:06:56,536 --> 00:07:00,975
+300 küsur megabayt olması lazım. Windows için olanı ben indirdim.
+
+10
+00:07:02,395 --> 00:07:03,875
+400 megabayt ayaklanmış.
+
+11
+00:07:12,339 --> 00:07:20,839
+Easy UML diye bir plugin'i var. Fakat en son 8.2 versiyonda kalmış.
+
+12
+00:07:24,596 --> 00:07:41,235
+İçerisinde birazcık araştırmam gerekiyor. UML ile alakalı bir şey var mı? Şöyle bir şey arayayım. Bir iki üç dakika bekleyelim. O arada herkes indire dursun. İnternet müzik hızına göre değişir.
+
+13
+00:08:25,908 --> 00:08:26,987
+Tchkega.
+
+14
+00:08:45,683 --> 00:08:52,683
+Belki daha sonradan şey olabilir. Download edip yüklenebilir.
+
+15
+00:08:58,259 --> 00:09:02,099
+En son güncelleme 2017 için Easy Yemel'de var.
+
+16
+00:09:04,279 --> 00:09:08,359
+Denemek gerekiyor. Yeni versiyona uyum sağlayacak mı sağlamayacak mı? Neyse.
+
+17
+00:09:13,779 --> 00:09:19,299
+Yorumlarda birisi 11'de test ettim, sıkıntı yok yazmış ama herhalde official bir desteği yok.
+
+18
+00:09:19,299 --> 00:09:27,939
+O şeyde, yani doğrudan indirilen dosyada yapabiliyorsak problem yok, onu denemedim.
+
+19
+00:09:29,219 --> 00:09:32,819
+Alternatif kesin vardır ya, bence kurunca buluruz.
+
+20
+00:09:33,219 --> 00:09:38,179
+Yani bunun kullanımı gayet kolaydı ama bunun alternatif bir şey var zaten.
+
+21
+00:09:39,859 --> 00:09:43,459
+Başka, sadece UMR üreten yazılımlar var.
+
+22
+00:09:43,779 --> 00:09:49,539
+Software Engineering araçları var. 2014
+
+23
+00:09:54,644 --> 00:09:56,303
+En son yorum ne zaman gelmiş?
+
+24
+00:09:56,583 --> 00:09:59,903
+Orada gördüm. 2019'da birisi denedim yazmış ama bilmiyorum.
+
+25
+00:10:01,183 --> 00:10:03,963
+Bende işte 8.2 mi? 8.3 mi? Ne vardı?
+
+26
+00:10:05,703 --> 00:10:18,963
+Bunun yoluyla reverse engineering de yapılıyor. Yani bir kod, bir proje dosyasını verdiğinizde tersine sizin dosyanızdan UML şemasını oluşturuyor veya işte şemayı oluşturup kod generated biliyorsunuz.
+
+27
+00:10:18,963 --> 00:10:25,504
+Bunlar daha çok yazılı mühendisliği tarafında anlatılan şeyler ama burada da konuşacağız bunları.
+
+28
+00:10:32,052 --> 00:10:34,611
+Yükleyemeyen var mı? Beklemeyene bekleyen var mı hala?
+
+29
+00:10:37,611 --> 00:10:38,532
+Başlayalım mı?
+
+30
+00:10:41,940 --> 00:10:43,379
+Hocam benimki henüz iniyor.
+
+31
+00:10:44,039 --> 00:10:44,339
+Tamam.
+
+32
+00:10:52,820 --> 00:11:02,820
+Ozan ben yeni girdim de niye yaşıyorduk tam o zaman? Şu sayfaya girip şuradan eğer Windows kullanıyorsan
+
+33
+00:11:06,515 --> 00:11:07,955
+NetBeans'i indiriyoruz.
+
+34
+00:11:10,475 --> 00:11:11,635
+Şey yolladım.
+
+35
+00:11:12,295 --> 00:11:15,776
+Diğer Linux veya MacOS kullanacaklar ayrıca bekleyelim.
+
+36
+00:11:16,356 --> 00:11:19,455
+O zaman şöyle 7 geçiyor, 15 geçe görüşürüz arkadaşlar.
+
+37
+00:11:19,856 --> 00:11:20,856
+Herkes indire dursun.
+
+38
+00:11:21,795 --> 00:11:22,295
+Öyle yapalım.
+
+39
+00:18:46,420 --> 00:18:48,359
+Evet, tamamlayamayan var mı?
+
+40
+00:18:50,239 --> 00:18:52,459
+Şöyle ekran paylaşımı yapalım.
+
+41
+00:18:54,680 --> 00:19:00,899
+Hocam, Kocaeli'de yaşamaktan kaynaklı internet sorunu var ama yükleniyor yani.
+
+42
+00:19:01,759 --> 00:19:04,779
+Tamam. Niye? Kocaeli iyi yerdir.
+
+43
+00:19:06,159 --> 00:19:07,719
+İnternet çok kötü hocam.
+
+44
+00:19:08,619 --> 00:19:11,459
+Başka yerdir. Geçici bir şeydir herhalde.
+
+45
+00:19:11,459 --> 00:19:16,559
+Pekala. Biraz daha bekleyelim o zaman.
+
+46
+00:19:47,215 --> 00:20:09,195
+Oracle University veya Oracle Akademi açılıyor. Bir ara bunların sertifikasyonu da vardı. Bölüme öyle bir opsiyon sunmuşlardı. Geçen iki sene önce falan. Belki bu dönemde öyle bir şey gelmiştir de haberim yok tam bilmiyorum. Şu sayfa açılacak.
+
+47
+00:20:14,867 --> 00:20:16,367
+Bu sefer bende de yavaş açıldı.
+
+48
+00:20:24,372 --> 00:20:26,232
+Citede bir şey var hocam açılmıyor benden.
+
+49
+00:20:26,751 --> 00:20:28,131
+Hepimiz girmeye çalışınca.
+
+50
+00:20:28,971 --> 00:20:30,191
+Evet, yüklenince öyle oldu.
+
+51
+00:20:32,911 --> 00:20:35,111
+Türkiye'den bir saldırı var falan diye şimdi.
+
+52
+00:20:35,891 --> 00:20:36,851
+Yap atmasınlar, evet.
+
+53
+00:20:38,252 --> 00:20:46,731
+Şimdi birkaç yıl önce laboratuvar yapıyorum. Bizim CE Yıldız o zaman açıktı. Bir dosya yükleyeceğim. Bizim DB26 Casper Lab'dayız.
+
+54
+00:20:48,271 --> 00:20:52,691
+Arkadaşlar, bekleyin, dosyayı yüklüyorum, ondan sonra indirirsiniz, lava başlarsınız dedim.
+
+55
+00:20:52,691 --> 00:20:55,531
+30-40 kişi laboratuvarda var.
+
+56
+00:20:55,531 --> 00:20:56,831
+Bu an işte iki tane laboratuvar.
+
+57
+00:20:57,991 --> 00:20:59,191
+Ben giremiyorum arkadaşlar.
+
+58
+00:20:59,392 --> 00:21:02,131
+Herkes bir anda yüklenince 40 kişiyi kaldırmamıştı sistem.
+
+59
+00:21:03,331 --> 00:21:04,351
+Herkes bir dursun.
+
+60
+00:21:04,431 --> 00:21:06,052
+Ondan sonra bir halledelim.
+
+61
+00:21:07,011 --> 00:21:07,651
+Mesela burada
+
+62
+00:21:07,651 --> 00:21:10,632
+keşke açılsa
+
+63
+00:21:10,632 --> 00:21:11,712
+şu
+
+64
+00:21:11,712 --> 00:21:15,232
+kısımdan
+
+65
+00:21:15,232 --> 00:21:19,052
+Java Explorer yaklaşık 7 saatlik bir
+
+66
+00:21:19,052 --> 00:21:20,751
+üyelik gerektiriyor.
+
+67
+00:21:20,751 --> 00:21:29,951
+Edo uzantılı mailinizle bir yol olursanız daha rahat edersiniz. Bazen özel mail adreslerini bu tarz yerleri kabul etmeyebiliyor.
+
+68
+00:21:31,951 --> 00:21:36,471
+Ben girdim bu arada hocam. Biraz bekleyince şansa girdim. Sizin hakkınızı yoruluyorum şu anda.
+
+69
+00:21:38,351 --> 00:21:39,471
+Açılıyor yavaş yavaş.
+
+70
+00:21:47,059 --> 00:21:48,259
+Bir daha yenileyelim.
+
+71
+00:21:57,844 --> 00:22:00,503
+Hocam bu arada idesini indirdik mi NetBeans'in?
+
+72
+00:22:01,703 --> 00:22:12,683
+Şu an onu indiriyoruz. İndirenler, ben indirdim de diğer arkadaşlar indireceğiz diye. Onun için bekledik. Yoksa başka bir şey için beklemiyorsun.
+
+73
+00:22:14,104 --> 00:22:20,143
+O arada ben şunu göstereyim istedim. Mesela veri tabanı için MySQL veya Oracle ile alakalı da bir şey var.
+
+74
+00:22:20,143 --> 00:22:40,884
+Burada konular var. Tabi açıp izleyebilmeniz için üyelik gerektiriyor. İşte birine basarsanız üye olmanız gerekir falan diye bir şey var. Buradan takip edebilirsiniz. Belki tamamlayınca certification falan da verebilirler. Onun için arada bakmanız yani bitirmeniz iyi olur.
+
+75
+00:22:40,884 --> 00:22:50,864
+Neyse şimdi indirdiğimiz dosyaya çift tıklıyoruz arkadaşlar. Herhalde bitmiştir. Bitiremeyen var mı? Hasan bitti mi sende?
+
+76
+00:22:56,276 --> 00:23:10,276
+Bitti hocam. Tamam. Shift tıkladığınızda şöyle bir şey dolacak. Aslında kurulumu kolay. Direkt ileri ileri deyip bitiriyoruz. Başka herhangi bir spesifikasyon yapmayacağız.
+
+77
+00:23:14,451 --> 00:23:30,811
+şu installer gelecek. Buradan customize derseniz hangi şeyleri seçeceğinizi yüklemek istediğinizi belirleyebiliyorsunuz. Mesela Enterprise Edition'ı yüklemeye gerek yok derseniz bunu kaldırabiliriz.
+
+78
+00:23:30,811 --> 00:23:42,031
+İşte HTML, JavaScript, PHP, belki PHP'ye de gerek yok. Bir okey diyelim. Ben şimdilik bunlarla idare ederim mesela. Yani HTML, JavaScript bazen kullanıyorum çünkü.
+
+79
+00:23:42,031 --> 00:24:01,812
+Geçenlerde yüklemiştim. Bunu seçtikten sonra isterseniz siz hepsini seçin. Next diyoruz. Kabul ediyoruz. Bu bizim bütün okuduğumuz her yerde kullandığımız şey. JDK lazım var. Ben JDK içinde var diyebiliyorum.
+
+80
+00:24:06,099 --> 00:24:08,580
+Yok hocam, JDK'yı ayrıca indirmek gerekiyor.
+
+81
+00:24:08,820 --> 00:24:13,299
+Bakın burada, ha bende JDK olduğu için, acaba onu mu gördü direkt?
+
+82
+00:24:14,739 --> 00:24:26,319
+Biraz önce kaldım üstüne, Java Development Kit indirilir, belki şey, şu aşamada sizden indirmesini istiyorsa, bende öyle bir şey olmadığı için olmayacak muhtemelen.
+
+83
+00:24:26,319 --> 00:24:32,239
+Next dedik, update'leri yükle diyoruz ve install diyoruz, başka herhangi bir şey yok.
+
+84
+00:24:32,239 --> 00:24:43,519
+JDK gerekenler eğer otomatik indirme varsa herhangi bir ekstra bir yerden gidip indirin demiyorsa otomatik indiriyorsa onu da indirsinler tabii ki.
+
+85
+00:24:43,579 --> 00:24:51,539
+Yok hocam şöyle oluyor direkt çift tıklayınca diyor ki JDK'nız yok diyor. Önce JDK'yi indirmek için Oracle'ın sitesine yönlendiriyor. Onu indirdik şimdi kuruyor.
+
+86
+00:24:51,539 --> 00:24:55,759
+Tamam o zaman o da çok fazla bir şey değildi galiba ama.
+
+87
+00:24:55,759 --> 00:25:03,359
+Demek ki ben biraz önce kendi NetBeans'imi size yüklemek için kaldırınca onu kaldırmamış.
+
+88
+00:25:04,739 --> 00:25:05,839
+Kaldığı yerden görüyor.
+
+89
+00:25:06,759 --> 00:25:08,399
+Neyse bu bitecek arkadaşlar.
+
+90
+00:25:09,120 --> 00:25:10,919
+Bu eğitim şey de şöyle bir şey.
+
+91
+00:25:11,059 --> 00:25:14,119
+İşte buna tıklayınca direkt önce giriş yapın.
+
+92
+00:25:15,119 --> 00:25:15,879
+Bir bakarsınız.
+
+93
+00:25:18,159 --> 00:25:24,180
+Aynı şekilde bunun gibi Visual Studio'nun da var.
+
+94
+00:25:24,180 --> 00:25:32,540
+O da kullanılabilir C Sharp veya DatNet teknolojileri üzerine çalışacaksanız.
+
+95
+00:25:33,940 --> 00:25:37,000
+Bazı linkler daha sonra paylaşırım size bununla alakalı.
+
+96
+00:25:42,900 --> 00:25:54,799
+şeye gerek yok. İçinde doğrudan swing ile alakalı operasyonlarımız var. Sadece şu UML'e bir çözüm bulabilirsek o zaman daha güzel olacak.
+
+97
+00:26:02,324 --> 00:26:14,324
+Bu pluginleri belki indirdiğimiz bir klasör vardı. Şu indirdiğim, biraz önce download ettiğim, şuraya gelen easy UML'i kullanabiliriz belki.
+
+98
+00:26:17,587 --> 00:26:18,607
+Evet, bende bitti.
+
+99
+00:26:20,247 --> 00:26:22,548
+JDK son sürüm olur.
+
+100
+00:26:25,467 --> 00:26:31,347
+Yani bizim için aslında çok geriden geliyor bizim anlatacağımız şeyler de.
+
+101
+00:26:33,087 --> 00:26:35,127
+Olabildiği kadar en son sürüm olsun.
+
+102
+00:26:43,188 --> 00:26:44,787
+Yönelikar.
+
+103
+00:26:55,796 --> 00:26:57,796
+Bir eskisini indirdim.
+
+104
+00:27:00,468 --> 00:27:12,468
+Şuradan inmiyor mu? JDK 16. Page not found dedi ama bir sayfayı açmaya çalışıyor.
+
+105
+00:27:18,132 --> 00:27:20,251
+Neyse, olabilen en son indirilebilen
+
+106
+00:27:20,251 --> 00:27:23,971
+Bugün, bugün yetişiyor.
+
+107
+00:27:30,932 --> 00:27:32,432
+Evet şurada 15 var.
+
+108
+00:27:37,172 --> 00:27:38,871
+Şu egzeyi indirin arkadaşlar.
+
+109
+00:27:45,011 --> 00:27:54,791
+Size slide'da bahsettiğim bir kodun değerlenmesiyle alakalı işlemler bunlarla oluyor. Bu uygulamalarla.
+
+110
+00:30:21,811 --> 00:30:23,511
+Hocam mikrofonu nız katalı?
+
+111
+00:30:24,931 --> 00:30:48,531
+Şimdi size gönderdiğim şeylerde şu an şeyi açıyorum. Verdiğimiz ödevlerde ve laboratuvarlarda sizlerden sadece Java dosyalarını isteyeceğiz arkadaşlar. Başka bir şey istemiyoruz. Class dosyasını göndermemeye dikkat etmeniz gerekiyor. Onun için şimdi birazcık bunlardan bahsedeceğim.
+
+112
+00:30:48,531 --> 00:30:57,191
+Geçen dönemki yapısal programlamayla alakalı konulardan yola çıkarak birkaç kod yazacağız ve dersi tamamlayacağız.
+
+113
+00:31:04,211 --> 00:31:29,991
+Şimdi açıldı. Normalde bunun net birisi, şimdi Apache net birisi olmuş. Şurada eski bir proje var, bunu siliyorum. Şimdi bunların arkadaşlar menüsü şeye benziyor, devsiye falan benziyor. Bu ekranı herkes açtıysa, beni biraz ekrandan takip edin. Daha sonra size bir zaman veririm bu yaptıklarını denemeniz için.
+
+114
+00:31:29,991 --> 00:31:58,651
+File menüsüne geldiğinizde yeni proje diyorsunuz. Bu yeni proje altında Java with Maven, Gradle ve Ant var. Biz şimdilik Ant'ı kullanalım. Bu ne demek? Şimdi bir proje source kodlardan, projenin debug edilmesiyle alakalı, çalıştırılmasıyla alakalı bazı konfigürasyon dosyalarından oluşur. Bunları düzenleyen bazı alt yazılım diyebileceğimiz kütüphaneler var.
+
+115
+00:31:58,651 --> 00:32:12,331
+Bunlardan bir tanesi 3 de bu şey gelmiş. Ant'ı seçebiliriz. Main'ın falan biraz daha kapsamlanır. Java Application seçiyoruz. Class Library falan değil. Doğrudan Application. Ve Next diyoruz.
+
+116
+00:32:12,831 --> 00:32:27,351
+Şimdi diyor ki içerisinde bir Main Class'ı oluştursun mu? Bu şu demek. Main metodunun olduğu sınıf, yani programın açılacağı ilk sınıf Main Class olan sınıftır.
+
+117
+00:32:28,651 --> 00:32:48,111
+Hatta burada buna isim de verebiliriz. İsme kadarki, noktaya kadarki olan kısım bulunduğumuz klasörün adı, diğer kısım da sınıfın adı olacak. Burada dosya ismiyle class olarak oluşturacağımız şeyin adı, sınıfın ismi aynı olacak. Mesela burada deneme diyelim.
+
+118
+00:32:48,111 --> 00:33:16,971
+Enter'a bastık yanlışlıkla. Önemli değil. Sonra bunu nereye oluşturduğunu falan şuradan görelim. Mesela şu aynı isimde kendisi otomatik olarak üretti. Bakın. Bunu değiştirmek için sağ tıklıyoruz Refactor diyoruz. Refactor yeniden yapılandırmak demek. Rename diyoruz. Bu refactoring yapınca her şey kod içerisinde de değişiyor.
+
+119
+00:33:16,971 --> 00:33:40,031
+Şimdi mesela ben gelip burada class deneme 2 yazarsam bunun hatalı olduğunu yani bu dosyayla bunun aynı isimde olması gerektiğini söylüyor. Çünkü bu bytecode haline dönüşecek. Dönüştükten sonra buradaki şeyin dosya adıyla aynı olması lazım. Değerleme aşamasında sıkıntı olmaması için. Bunlar otomatik gelen işte yorum satırları falan.
+
+120
+00:33:40,031 --> 00:33:58,011
+Bu şekilde projeyi oluşturduk. Bu proje nereye oluştu? Bunu bilmiyoruz. Görmek için şöyle bakabiliriz. Properties dediğinizde C'nin içinde, user'ın içinde işte doküman, yani belgelerim diye Türkçe'de bilinen bir klasör vardır ya.
+
+121
+00:33:58,671 --> 00:34:06,771
+Şurada. NetBeans Project'e gelip bunun adı 3'e geliyor ve şu klasör yapısını görüyoruz.
+
+122
+00:34:06,771 --> 00:34:11,971
+Burada projeyle alakalı bazı konfigürasyon dosyaları var.
+
+123
+00:34:12,971 --> 00:34:14,491
+src'de bizim kodumuz var.
+
+124
+00:34:14,691 --> 00:34:16,811
+Bu kodun içinde bakın şöyle bir klasörümüz var.
+
+125
+00:34:16,811 --> 00:34:20,311
+Bu klasörün içinde de deneme Java dosyamızı görüyoruz.
+
+126
+00:34:20,951 --> 00:34:26,092
+Sizden istediğimiz şey şu Java, burada birden fazla Java dosyası olacak.
+
+127
+00:34:26,211 --> 00:34:27,051
+Birazdan oluşturacağız.
+
+128
+00:34:27,771 --> 00:34:29,051
+Bunları göndermeniz olacak.
+
+129
+00:34:29,171 --> 00:34:29,831
+Buna dikkat edin.
+
+130
+00:34:30,451 --> 00:34:32,691
+Buraya kadarki kısmı isterseniz bir deneyin.
+
+131
+00:34:37,331 --> 00:34:39,971
+Hocam ilk açılışta proje olarak ne seçiyorduk?
+
+132
+00:34:41,011 --> 00:34:45,331
+File, new project, Java application.
+
+133
+00:34:45,811 --> 00:34:46,712
+Application, okey.
+
+134
+00:34:49,632 --> 00:34:58,491
+Mesela Maven'da veya Gradle'da da farklı şeyler var ama onlar biraz daha detaylı dosyalar. Şu an için bize bu yeterli.
+
+135
+00:34:59,352 --> 00:35:05,731
+Ant'ın içinde JavaFX ile alakalı uygulamalar, görsel programı ile alakalı. Onları geri gelince daha sonra göreceğiz.
+
+136
+00:35:05,731 --> 00:35:30,931
+Eğer bir C değerleyiciniz varsa burada CC++ kodu da yazılıyor. Mesela devc'nin değerleyicisini buraya gösterip burayı bir editör gibi kullanın. Devc üzerinde kod yazmak yerine burayı kullanabilirsiniz C dersinde. Ama ben veri yapıları dersi için tavsiye edeyim devc'yi kullanın. Çünkü ödevleriniz nerede değerlenecek? Devc'de değerlenecek. Asistanlar okurken zorluk çekmesinler.
+
+137
+00:35:30,931 --> 00:35:36,071
+Buraya kadar bir gelelim.
+
+138
+00:35:37,571 --> 00:35:41,851
+Şimdi kısaca siz kontrol ederken açıklama yapayım.
+
+139
+00:35:41,951 --> 00:35:44,831
+Bakın C'de int main gibi bir şey söylemiştik.
+
+140
+00:35:44,951 --> 00:35:45,912
+Burada da bir main var.
+
+141
+00:35:47,052 --> 00:35:54,091
+Main olan class yani main olan dosya açılacak, çalıştırılacak ilk dosyadır.
+
+142
+00:35:54,091 --> 00:35:56,391
+Bu web programlamada da böyle.
+
+143
+00:35:57,311 --> 00:35:59,471
+Java ile Mac web programını yazarsak da böyle.
+
+144
+00:35:59,471 --> 00:36:05,692
+Görsel programlama da böyle şeyde böyle yani bütün programlar main olan class'dan başlar.
+
+145
+00:36:06,651 --> 00:36:09,692
+Ve bir uygulamada bir tane olmasını bekleriz.
+
+146
+00:36:10,092 --> 00:36:14,991
+İkinci, üçüncü eklenir de o zaman bize sorar hangisinden başlatmak istiyorsunuz diye.
+
+147
+00:36:17,811 --> 00:36:20,751
+Bir hello world yazalım ondan sonra devam edelim.
+
+148
+00:36:20,751 --> 00:36:36,912
+Şimdi bu class arkadaşlar bizim daha çok driver class veya test class dediğimiz yazdığımız projedeki bütün classları test etmek için kullandığımız bir sınıf.
+
+149
+00:36:36,912 --> 00:36:46,712
+Özel bir sınıf. İçerisinde özelliği şu main metodunu barındırıyor. Biz buraya başka classlar da ekleyeceğiz. Onlarda main metodu olmayacak.
+
+150
+00:36:46,711 --> 00:36:51,371
+bu mail metodunu kullanıp onları test edeceğiz veya drive edeceğiz.
+
+151
+00:36:52,551 --> 00:36:56,591
+Ne diyoruz buna? Driver, tester veya test klaster'ı diyoruz.
+
+152
+00:36:57,971 --> 00:37:00,551
+Örnek olarak burada çok basit is
+
+153
+00:37:00,551 --> 00:37:05,751
+systemout println diye bir şey var.
+
+154
+00:37:07,751 --> 00:37:10,891
+Println'e gitti. Şimdi bir de derlemiyormuş.
+
+155
+00:37:15,923 --> 00:37:20,864
+Mesela deneme diyelim noktalı bir gül. Yapmasını bekliyorum ama.
+
+156
+00:37:21,803 --> 00:37:25,543
+IntelliSense çalışmadı. Birazdan bakarız belki çalışır.
+
+157
+00:37:26,543 --> 00:37:34,203
+Bunu yazdıktan sonra sağ tıklayıp run file diyebilirsiniz veya şuradan run diyebilirsiniz veya şuradan run diyebilirsiniz veya şuradan run diyebilirsiniz.
+
+158
+00:37:34,203 --> 00:37:41,203
+Hangisini istiyorsanız. Bana şu veya işte klavyeyle 5 tane yolu var. Hangisine derseniz çalıştırdınız.
+
+159
+00:37:41,203 --> 00:38:09,964
+çalıştırdınız. Bakın burada şu aşağıda programın çalıştığı gösteriliyor. Burada sonucu gösteriliyor. Build Successful diyor. Ne kadar söyledi? Ve bu çalışan şey bitti. Program tamamen bitti. Bir de bunun eleni derken sistem alt printi var arkadaşlar. Eğer bu printi yazarsak tahmin edebileceğiniz gibi alt satıra geçmiyor. O şekilde yazıyor.
+
+160
+00:38:11,203 --> 00:38:13,203
+İkisinin başka çok bir farkı yok.
+
+161
+00:38:15,563 --> 00:38:22,784
+Buraya kadar herkes bir şey yazabildi mi? Yani bende hata olduğu bir sıkıntı var mı arkadaşlar? Yapamayın.
+
+162
+00:38:26,864 --> 00:38:29,743
+Bakın Build Successful bunun devamında.
+
+163
+00:38:31,583 --> 00:38:37,784
+Bu işi daha hızlı yapmak için bunun bazı hızlandırıcıları var.
+
+164
+00:38:37,784 --> 00:38:57,964
+Yani küçük yazıyorsunuz. Ben derste yazarken S-O-P yazardım. Hani uzun olmasın diye. S-A-L yazdınız. Taba basarsanız size bir tane taba basınca S-A-L bir taba bastınız. Sistem-A-L printlerini kendi oluşturur. Ondan sonra içerisinde bir şeyler yazarsınız.
+
+165
+00:38:57,964 --> 00:39:13,163
+Başka bu tarz net means shortcuts diye aratırsanız birçok şey var. Bunun input output ile alakalı kısma şimdi girmeyeceğim. Sadece şimdi böyle output ile alakalı kısımlara bakacağız.
+
+166
+00:39:16,659 --> 00:39:18,819
+Var mı takip edemeyen, sıkıntı yaşayan?
+
+167
+00:39:20,640 --> 00:39:29,159
+Hocam, bende hiç Java dosyası oluşmadı. Bulamıyorum yani sizin source package altında mesela Java application diye bir şey oluşmadı.
+
+168
+00:39:29,859 --> 00:39:31,779
+File, new project'e geldiniz.
+
+169
+00:39:33,539 --> 00:39:34,799
+Java bit ant'ı seçtin.
+
+170
+00:39:35,920 --> 00:39:37,420
+Application'ı seçtin, değil mi?
+
+171
+00:39:39,539 --> 00:39:39,879
+Evet.
+
+172
+00:39:40,500 --> 00:39:41,679
+Next diyoruz.
+
+173
+00:39:44,439 --> 00:39:46,479
+Şuradaki, soldaki menü görünüyor mu?
+
+174
+00:39:46,659 --> 00:39:52,939
+Sonra create main class'tan finish diyorsun o kadar. Şu kısım görünüyor mu?
+
+175
+00:39:55,420 --> 00:39:59,719
+Gözüküyor hocam. Şimdi geldi. Az önce herhalde bir şey yanlış yaptım. Teşekkür ederim.
+
+176
+00:40:02,599 --> 00:40:05,200
+Peki. Şimdi arkadaşlar.
+
+177
+00:40:05,420 --> 00:40:06,920
+Hocam ben de bir şey söyleyebilir miyim?
+
+178
+00:40:07,299 --> 00:40:14,119
+Geçmeden. Bu az önce Sout'tan tab yapınca direkt sistem out'u getirdi ya.
+
+179
+00:40:14,119 --> 00:40:16,439
+Onun için bir kütüphane mi çekmemiz lazım?
+
+180
+00:40:16,659 --> 00:40:16,919
+Yok.
+
+181
+00:40:18,359 --> 00:40:24,939
+Yani NetBeans'in kendi özelliği bu. Herhangi bir kütüphane ile bir şey değil. Şöyle diyelim hatta.
+
+182
+00:40:32,724 --> 00:40:35,224
+Kendimizde oluşturabilir miyiz?
+
+183
+00:40:36,724 --> 00:40:42,263
+Snippetleri. Yani shortcut tanımlama vardır tahmin ediyorum. Şu ana kadar hiç.
+
+184
+00:40:57,204 --> 00:41:04,704
+Bunun bir dokumentasyonu vardı bende de. Say out then hit top demiş. Mesela şu olabilir. Bakalım.
+
+185
+00:41:09,043 --> 00:41:14,984
+Burada da bir yenilenme yapılıyor galiba. Onun için bulunmuyor.
+
+186
+00:41:27,443 --> 00:41:54,643
+Mesela Eclipse'de SYSO ve Ctrl Space ile oluyormuş. JDeveloper'da SOP ile ve Ctrl Enter ile oluyormuş. Bunun şeyine bir bakarım. Yani öyle bir Karsan'ın söylediği gibi bir şey varsa. İlla ki şu şeyler bir yerlerde vardır arkadaşlar. Tools'tan veya herhangi bir kısımdan bir şeyler ekleniyordur. Birazcık karıştırmak gerekiyor.
+
+187
+00:41:54,643 --> 00:42:03,124
+Ben en çok sistem alt printlerini yazarken üşendiğim için derste de s.o.p yazıp içerisinde şeyi yazardım.
+
+188
+00:42:03,643 --> 00:42:13,023
+Şimdi bu ne demek? Biz printf'i C'de gördük. Arada nokta var. Alt diye bir şey var. Yeşil yazdı. Sonra bir nokta daha var.
+
+189
+00:42:13,463 --> 00:42:22,783
+Şimdi arkadaşlar burada bir sınıfın, sistem diye bir sınıf var. O sınıfın altında bir alt sınıf var. Inner class. Alt diye bir başka sınıf var.
+
+190
+00:42:22,784 --> 00:42:46,643
+Onun altında bir metot var, print elen metodu. Bu metodu kullanıyoruz. Bunun detayına daha sonra geleceğiz de bu statik bir sınıftır. Hatta buna şöyle navigate dersek, go to source dersek, system out print elenin, bakın sistem sınıfının içerisine geldik. Bunun altındaki tanımlamaya geliyoruz.
+
+191
+00:42:46,643 --> 00:43:00,143
+Alt diye bir şey olması lazım. Şöyle yapalım. Kontrol ve tabi burada bütün detayları göremiyoruz. Arada bazı kodlar kapalı.
+
+192
+00:43:00,143 --> 00:43:02,683
+Print.
+
+193
+00:43:09,619 --> 00:43:32,880
+Printstream out diye bir şey varmış. Bu out da printstream'e gidiyor. Setout. Burada bir derlenmiş koddan bahsediyor. Ne demek bu? Yani Java derleyicisi tarafından bu kod derlenmiş. Onun için burada herhangi bir şey doğrudan görüyoruz ama bunların derlenmiş hallerini open source olarak aktaran, gösteren siteler var.
+
+194
+00:43:32,880 --> 00:44:00,859
+Bu out'u kullanarak aslında out bir sistem altındaki bir değişken, statik değişken bu print stream'e gidecek. Şimdi şu print stream'e gidelim bile. Code source. Bunun altında print elenler veya printler var. Tabi burada bakın printler demiş, print elenler demiş. Long için, integer için bunları görüyoruz.
+
+195
+00:44:00,859 --> 00:44:08,819
+Bunlar ileride metot overloading diye bir şey görüyoruz. Bakın imzası şuraya kadar aynı. Nerede değişiyor? Şurada değişiyor.
+
+196
+00:44:10,019 --> 00:44:12,559
+Burada da bunlar da compiled code. Bu ne yapıyor arkadaşlar?
+
+197
+00:44:14,019 --> 00:44:24,359
+Buraya gelen bir argümanı, şu argümanı işletim sistemi vasıtasıyla input stream'ine veya output stream'ine gönderecek alacak.
+
+198
+00:44:24,359 --> 00:44:28,259
+Eğer input ise input stream'inden alacak, output ise output stream'ine gönderecek demektir.
+
+199
+00:44:28,259 --> 00:44:53,660
+Bunların aynı olması dediğim gibi bir method overloading dediğimiz bir şey. Burada işletim sistemiyle bir haberleşme yapılıyor. Bakın sistemin altında out diye bir şey var. Bir ne diyelim buna bir nesne var. Bu nesnenin altında da bir metot var. Ben şurada biraz önce class dedim de bu class değilmiş. Bir nesne. Sistemin bir özelliği.
+
+200
+00:44:53,660 --> 00:45:20,599
+Peki hala. Bunu söyledikten sonra şu paket dediğimiz şey projenizi mantıksal olarak, fiziksel olarak değil mantıksal olarak parçalara bölmenizi sağlıyor. Şimdi şöyle bir üniversite sistemi projesi yazdığınızı düşünün. Bu üniversite sistemi projesinde işte muhasebeyle alakalı şeyler sizin ilgi alanınız değil, öğrencilerle alakalı bir şey değil. Onları ayrı bir yerde tutarız.
+
+201
+00:45:20,599 --> 00:45:34,999
+Muhasebenin dışında öğrencilerin notlarıyla alakalı şeyler ayrı bir pakettedir. Bu paketler arası aynı isimde dosyalar, classlar olabilir. Ne bileyim ikisinde de yazdır diye bir şey, class olsa.
+
+202
+00:45:34,999 --> 00:45:56,339
+Şimdi muhasebedeki yazdırla öğrencideki yazdır farklı şeyler. Bunları birbirinden mantıksal olarak ayırt etmek için paketler kullanılıyor. Bu paketler bizim dosyalarımızın ayırt edilmesi de aslında Java Application 3.deneme dosyasıdır bu. Bu şekilde diyeceğiz.
+
+203
+00:45:56,340 --> 00:46:23,679
+Eğer siz başka bir paketteki dosyaya erişecekseniz o paketi buraya dahil etmeniz gerekiyor. Daha sonra onlara geleceğiz. Şu an onlarda çok fazla vakit kaybetmeye gerek yok. Peki biz burada bir yeni class oluşturalım. Bu şeyin içerisinde bir class ekleyelim. Sağa tıkladık. Bakın burada Java class seçeceğiz. Şu ana kadar yani bayağı bir boş Java class'ını alacağız arkadaşlar.
+
+204
+00:46:23,679 --> 00:46:33,640
+Birazdan şu G-Frame'de deniriz. Java class dediğimizde bu projenin altında, bu paketin altında istersek başka bunları değiştirebiliriz.
+
+205
+00:46:34,200 --> 00:46:38,299
+İşte kitaplar diye bir class oluşturalım diyoruz.
+
+206
+00:46:39,500 --> 00:46:47,739
+Buna bir süper class'ı varsa yani bir kalıtım konusunu görünce veya interfaz varsa onları yazabiliyoruz ama biz bunları ara yüzden yapmayacağız.
+
+207
+00:46:47,739 --> 00:46:51,799
+Elle kendimiz yazacağız öğrenmek adına. Kitapları seçtik ve finish'e bastık.
+
+208
+00:46:51,799 --> 00:47:07,419
+Kitaplar altında aynı paket içinde bakın ne yaptı? Public class dedi kitaplar diye bir şeyler oluşturdu ve bıraktı. Demek ki aslında deneme de public class deneme altında bir tane main metodu var.
+
+209
+00:47:07,419 --> 00:47:08,679
+İşte biz...
+
+210
+00:47:08,851 --> 00:47:30,032
+Bütün nesnelerimizi aynı C'deki structure'larda olduğu gibi nesnelerimizin özelliklerini bir class altında yazacağız. Ama class structure'lardan farklı olarak bu nesnelere bir de ne yapacağız? Ekstra özellikler ekleyeceğiz. Mesela diyeceğiz ki burada string kitabın mesela adı.
+
+211
+00:47:30,032 --> 00:47:47,752
+Tabii büyük set string olarak olacak. Bir de burada string diye bir şey var mesela. Ad diyelim. Integer sayfa sayısı diyorum. Sayfa sayısı. String yazar diyelim.
+
+212
+00:47:50,811 --> 00:47:59,351
+Mesela burada yazarı string olarak yazmam sizce doğru mu? Birazcık düşünün bakalım.
+
+213
+00:48:00,032 --> 00:48:03,252
+O kadar structure anlattık geçen dönemlerde.
+
+214
+00:48:04,432 --> 00:48:09,372
+Yazarın da özellikleri olacağı için onun da farklı bir class olması gerekiyor olabilir.
+
+215
+00:48:10,392 --> 00:48:16,771
+Yani nasıl ki inner, nested, struct yapmıştık orada. Burada da aslında öyle bir şey var.
+
+216
+00:48:17,051 --> 00:48:18,792
+O zaman ben yeni bir tane daha class ekliyorum.
+
+217
+00:48:20,752 --> 00:48:27,212
+Yazar diyelim. Bakın bunlar aslında kitaplar demeyelim de şuna yazar diyelim arkadaşlar.
+
+218
+00:48:32,916 --> 00:48:47,315
+faktör diyorum. Niye böyle dedim? Kitap soyut bir nesne. Bunun somut hale gelmişi obje olarak, kitap objesi olarak söylüyorum. Bunu bir class olarak yazdığımızda genellikle tekil isimler kullanılır.
+
+219
+00:48:48,296 --> 00:48:59,815
+Yazar tekil isimdir, kitap tekil isimdir gibi. O zaman önce yazarı bir belirtelim. Nihai olarak aslında her şey primitif tiplerle oluşuyor.
+
+220
+00:49:02,916 --> 00:49:11,195
+yazarın bir de ID'si olsun. Şimdi buraya önüne başka bir şeyler yazmadım. Daha sonra onları da anlaşacağım. Şimdilik dursun arkadaşlar.
+
+221
+00:49:12,096 --> 00:49:32,456
+Şimdi ben artık burada kitap içerisine geldiğimde yazar türünde kitabın yazarı diyebileceğim. Hatta ileride collectionları görünce yani listeleri görünce, dizileri görünce bu kitabın bir sürü yazarı olabilir değil mi?
+
+222
+00:49:32,455 --> 00:50:00,255
+bir tane yazar olmak zorunda değil. O zaman diyeceğiz ki bu bir yazarlar listesi var. Bu şekilde dizi saklayacak. Eğer bir yazarlıysa bir tane eleman saklar. İki yazarlıysa iki eleman saklar. Şimdi burada ne oluyor? Burada hep bir referans mekanizması, aslında bir pointer mekanizması var. Ben bellekte, bellekte, yazar diye bir yer açtım.
+
+223
+00:50:02,456 --> 00:50:16,475
+Ama dikkat edin yazar şu an şunu yaparak soyut bir şey yaptık. Somut herhangi belli bir A, B, C, X yazarı yok. Mehmet Akip Ersoy ne bileyim yok. Sadece yazar mı yazar. Yani öyle bir genel bir kavram.
+
+224
+00:50:16,475 --> 00:50:42,755
+Şimdi buradan yola çıkarak bir yerde bir nesne oluşturacağım. Yani bunu somut hale getireceğim. Somut hale getirir getirmez. Bellekte ne olacak? Yazar diye bir alan açılacak. O yazarın altında kaç tane alan varsa ben şöyle dikey çizeyim. İşte ID dedik, ad dedik bir de yaş diyelim. Önemli değil ne oldu? Ve bunun içerisinde işte bir gibi işte bir şeyler bir şeyler yazılacak.
+
+225
+00:50:42,755 --> 00:50:49,735
+Artık bunun kendisine ait bellekte bir adresi var ama bu bellekteki hip bölgesinde arkadaşlar.
+
+226
+00:50:50,975 --> 00:50:56,175
+Niye? Bu bir nesne ve ben bunu oluştururken zamanı gelince nasıl oluşturacağımızı anlatacağız.
+
+227
+00:50:57,916 --> 00:51:00,795
+Oluşturma şeklinden dolayı bellekte hip bölgesinde tutuluyor.
+
+228
+00:51:00,795 --> 00:51:03,856
+Bunun bir stack bölgesinde referansı var.
+
+229
+00:51:03,955 --> 00:51:08,435
+Yani bellekteki bunun adresi hip bölgesindeki adresi bir yerde referan ediliyor.
+
+230
+00:51:08,615 --> 00:51:11,615
+İşte bunun değişkeni ne dedik? Küçük y ile yazar dedik değil mi?
+
+231
+00:51:11,615 --> 00:51:12,795
+Bu bir yazar nesnesi
+
+232
+00:51:12,795 --> 00:51:15,735
+Bu şurayı gösteriyor
+
+233
+00:51:15,735 --> 00:51:18,035
+Bunun üzerinden
+
+234
+00:51:18,035 --> 00:51:19,515
+Şurada da adresi saklanıyor
+
+235
+00:51:19,515 --> 00:51:20,496
+Bir pointer gibi bir şey
+
+236
+00:51:20,496 --> 00:51:22,115
+Bu normal
+
+237
+00:51:22,115 --> 00:51:24,015
+Allelit tak bir değişken değil artık
+
+238
+00:51:24,015 --> 00:51:25,375
+Bir integer olsa
+
+239
+00:51:25,375 --> 00:51:27,295
+Integer'ın
+
+240
+00:51:27,295 --> 00:51:30,716
+Değerini doğrudan sistem alt printelerine yazarım
+
+241
+00:51:30,716 --> 00:51:32,235
+Ama gelin
+
+242
+00:51:32,235 --> 00:51:33,576
+Şurada
+
+243
+00:51:38,963 --> 00:51:47,684
+yazar sınıfından bir Y nesnesi oluşturacağım. Nasıl oluşturacağım? Hadi şimdilik böyle yeri gelmedi ama söyleyelim. Böyle bir nesne oluşturuyorum.
+
+244
+00:51:50,823 --> 00:52:00,903
+Normalde bir değişkenin değerini bir yerde yazdırmak için ne yaparız? Değişkenin değerini yazarız. Yani integer x eşittir 5 dediğimizde
+
+245
+00:52:00,903 --> 00:52:02,403
+Stay out.
+
+246
+00:52:18,963 --> 00:52:35,144
+Bu direkt gider, bunun değerini yazar. Çünkü bu değer tipinde bir şeydir. Stack bölgesinde saklanır. Bu değer tipli değildir. Hip bölgesinde saklanır. Bunun bellekteki referansını, bir anlamda adresini yazar. Şimdi bir daha çalıştırıyorum bunu.
+
+247
+00:52:41,844 --> 00:52:59,864
+Bakın, burada 5. Şurada acayip bir şey yazdı. İşte bu yazdığı acayip şey arkadaşlar. Bu nesnenin, bu yazar nesnesinin hangi sınıfa ait olduğunu ve bu sınıftaki nesnenin referansının ne olduğunu, bereklik adresinin ne olduğunu yazmaya çalıştı.
+
+248
+00:53:00,423 --> 00:53:07,983
+Peki bu nereden geliyor diye soracak olsanız şimdi sormayın. Önümüzdeki günlerde bunu anlayacağız. Yani bu niye böyle bir şey yazılıyor?
+
+249
+00:53:07,983 --> 00:53:24,643
+Zamanı gelince bunu detaylı anlatacağım. Şimdi kafayı karıştırmaya gerek yok. Demek ki bu şekilde basit bir nesne nasıl oluşturulur ama onun öncesi de soyut bir nesne nasıl oluşturulur ve soyut bir halden nasıl bir somut hale getirilir şu örnekleri yaptık.
+
+250
+00:53:24,884 --> 00:53:37,583
+Nesne oluşturmak için buraya sınıf ekliyoruz. Bunu somut hale getirmek için de kod yazıyoruz. Bu kadar. Başka bir şey yok. Şurada yazdığımız şeyler, bir saniye, şurada yazdığımız şeylerin önüne bazı şeyler gelecek.
+
+251
+00:53:37,983 --> 00:53:54,844
+Ona da daha sonra bakacağız. Çünkü şurada diyeceğiz ki burada bir Y nesnesi oluşturduk. Y nokta dediğimizde bakın ad ve ID alanları geliyor. İşte bunların erişim belirteçleri gibi değerleri var. Onlara daha sonra bakacağız. Evet şimdi buyurun.
+
+252
+00:53:54,844 --> 00:53:58,704
+soru kimden geldi?
+
+253
+00:54:00,824 --> 00:54:01,964
+Birisi hocam dedi.
+
+254
+00:54:02,623 --> 00:54:03,884
+Ben de hocam.
+
+255
+00:54:04,363 --> 00:54:10,744
+Yazar kınasına nasıl özellikler eklemiştik ona bakabilir miyim?
+
+256
+00:54:11,443 --> 00:54:12,004
+Şunlar.
+
+257
+00:54:13,604 --> 00:54:15,223
+Ad var, ID var.
+
+258
+00:54:15,424 --> 00:54:17,983
+Gerçi yazara başka bir şey eklemedim şu an.
+
+259
+00:54:17,983 --> 00:54:27,884
+hepsi nihayet olarak bütün şeyler nesneler yapısal programlarında olduğu gibi temel veri tiplerinden oluşuyor.
+
+260
+00:54:28,844 --> 00:54:30,104
+string, integer, char gibi.
+
+261
+00:54:31,104 --> 00:54:36,024
+Ama işin sonunda bir nesne üretiminde referans oluşuyor.
+
+262
+00:54:36,024 --> 00:54:40,083
+Şimdi kitabın içerisine ben bir yazar dizisi eklediğimde olan şey de şu.
+
+263
+00:54:41,103 --> 00:54:46,903
+Ben bir kitap nesnesi oluşturduğumda bellekte son olarak bunu anlatayım bir de kısaca şey tarafına geçeceğim.
+
+264
+00:54:47,983 --> 00:55:16,704
+Bellek'te şöyle bir şey oluşuyor arkadaşlar. Bir kitap nesnesi var. Bu kitap sınıfından bir soyut bir şey. Bunun nesnesini oluşturduğumda bunun da içinde üç tane alın var. Bunun içinde adı var, id'si var. Bir de yazar var. Şimdi soyut bir yazar değil bu artık. Bu somut bir şeyse bunun da somut olarak bir yazar nesnesiyle ilişkilendirilmesi lazım. Dolayısıyla bir kitabın var olması için önce yazar nesnesinin oluşturulması gerekiyor.
+
+265
+00:55:16,704 --> 00:55:17,704
+yazar nesnesi bakın şurada önceden oluşturmuştuk şu diyor ki bu da burayı göstersin tamam mı bu çünkü somut halde içinde veriler var bu da ne yapıyor burayı gösteriyor bu yazar nesnesi ben bir kitap nesnesi oluşturunca işte bu kitap nesnesinde de k diyelim o da gidecek şu adresi gösterecek bu adresin altında id var ad var bir de yazar var o zaman aynı şekilde şöyle bir şey diyelim arkadaşlar şimdilik şu diziyi silmekle
+
+266
+00:55:46,704 --> 00:55:55,743
+Derelim de kafanız karışmasın böyle dursun. Denemeye geliyorum bir de kitap meselesi oluşturuyorum. Kitap k eşittir.
+
+267
+00:55:55,743 --> 00:56:15,743
+Kitap dedik. Bakın hatta bunu da yazalım. K diyelim. Niv değil, Niv. Şimdi bunun elemanlarına eriştiğinde k nokta bakın yazar diye bir şey söyledi.
+
+268
+00:56:15,743 --> 00:56:31,983
+nokta dedik. Onun altında da gittiği yazarın içinde ad ve id'ye. Nasıl sistemin altında out'a gidince o gidip printelene gittik ya biraz önce. Burada da kitabın içindeki, yazarın içindeki yazarın bilgilerine erişebiliyor. Tabi her zaman erişemeyeceğiz. Ona daha sonra bakacağız.
+
+269
+00:56:33,043 --> 00:56:52,863
+Bu da böyle. Yani object oriented programlamayı bana kısaca özetleyin deseniz bir referanslar mekanizmasıdır. Her şeyi birbirine referans eder. Dip copy çok azdır. Çünkü dip copy maliyetli bir şeydir. Gerekirse yapılır. Klonlamak diyoruz burada daha çok. Daha çok sığ kopyalama dediğimiz şey vardır.
+
+270
+00:56:52,863 --> 00:57:21,764
+Yani ben bir kitap nesnesi oluşturduğumda kitap, k eşittir, new kitap dedim. Ondan sonra bir kitap daha oluşturdum, k2 dedim. k2 eşittir, k yaptığında bu k'nın içindeki değerler fiziki olarak k2'nin olduğu yere gitmiyor. Ne yapıyor? Bir k2 diye yer açıyor. Bu k2 de burayı gösteriyor.
+
+271
+00:57:22,863 --> 00:57:50,423
+Şöyle yapmış olsaydım da yine aynı şey olacak. Kitap, K3 eşittir, new kitap diyecektim. O zaman ne yapacak? Yeni bir kitap için yer açacak fiziksel olarak. Buraya K3 diyeceğiz. K3 burayı gösterecek. Bakın burası hip bölgesinde. K3'ün gösterdiği yer burası oldu. Şurası. Ve bu burada duruyor. Ben şöyle bir şey yaparsam, K3 eşittir.
+
+272
+00:57:50,423 --> 00:58:15,404
+K dersem artık bu K3 şurayı göstermeyecek. Bakın burasının başı boş kaldı. Bunu silelim. Hatta şöyle yapalım. Silmeyelim. Artık bir renkte koyalım. Bu K'nın olduğu yeri gösterecek artık arkadaşlar. Burayla bağlantısı koptu. Burayla bağlantısı kopunca, bu başı boş kalınca biz Malloc'ta ne yapıyorduk? Free yapıyorduk değil mi?
+
+273
+00:58:15,404 --> 00:58:28,624
+Malloc'da yaptığımız frelinin yerine Java'nın kendi çöp toplayıcısı bakıyor arada başıboş olan bir bellek alanı varsa bunları temizliyor ve şu bölgeyi serbest bırakıyor.
+
+274
+00:58:30,883 --> 00:58:37,963
+Demek ki şöyle bir şey yapınca bir fiziki bir şey üretecek, şunu yapınca fiziki bir şey üretmiyor.
+
+275
+00:58:37,963 --> 00:58:56,323
+Bu belleğin stack bölgesinde olan bir şey. Bu new ile bir şey yapınca bir şeyler oluyor ona geleceğiz. Hip bölgesinde olacak. Ama ben bunu daha sonra böyle bir atama işlemi yaparsam kesinlikle burada bir deep copy yok.
+
+276
+00:58:56,323 --> 00:59:19,803
+Dip copy yapmak istiyorsak nesneler arası klon diye bir metot var. Bu ne yapıyor? Aynı şeyde pointerda olduğu gibi bu nesnenin K3 nesnesinin başladığı adresten öbür nesnenin başladığı adrese işte bit bit veya byte byte bütün değerleri klonluyor. Dip copy yapıyor. O ayrı bir metottur. Spesifik bir metot. Ona daha sonra geliriz.
+
+277
+00:59:19,803 --> 00:59:26,023
+Şimdi arkadaşlar kısaca özet olarak söyleyecek olursak, object oriented anlattık.
+
+278
+00:59:26,023 --> 00:59:32,863
+Şimdi şey olarak da ikinci bir yani özet olarak da object oriented şudur.
+
+279
+00:59:34,063 --> 00:59:42,283
+Buna bir OOP kümesi dersek, şuna da yapısal programla structural programming dersek, structural programming bütün özelliklerini içerir.
+
+280
+00:59:43,083 --> 00:59:45,163
+Buna ek olarak ekstra özellikler içerir.
+
+281
+00:59:45,363 --> 00:59:49,743
+O zaman siz geçen dönem C'den bildiğiniz birçok şeyi burada da kullanacaksınız.
+
+282
+00:59:49,803 --> 01:00:06,803
+Mesela değişken tanımlamalar. Aynıdır. Hiçbir fark yoktur. Normal değişkenlerden bahsediyoruz. Dizi tanımlamalarında sadece şöyle bir şey yapacaksınız ama dizide ekstra bir özellikler. Ona geleceğiz. Sonra if dediğimiz şey if hemen hemen %99 aynı. İşte size bir if.
+
+283
+01:00:10,804 --> 01:00:13,123
+döngüler aynı. While döngüsü.
+
+284
+01:00:15,204 --> 01:00:15,983
+Ondan sonra
+
+285
+01:00:15,983 --> 01:00:17,983
+while döngüsü.
+
+286
+01:00:24,947 --> 01:00:49,767
+Bir de for döngüsü var. For döngüsünde sadece integer i eşittir 0. Ben orada c'de kesinlikle bunu yapmayın diyordum. Burada da yapın diyeceğim. Tam tersi. i artı artı diyelim. Böyle for döngüsü kurabiliyorsunuz. Bakın if for bir diziler kaldı. Dizilerde gelecek hafta kısaca anlatırsam yapısal programlamanın çoğunu burada anlatmış olacağız.
+
+287
+01:00:49,767 --> 01:01:06,547
+Önemli olan bizim öncelikli amacımız objekt oriyantı kavramlarla şu nesneleri önce kavramsal olarak teorik olarak oluşturmak, bu nesneler arasında ilişkiler kurmak, bu ilişkilerin nasıl olacağını anlatacağım, bunun metotları var
+
+288
+01:01:06,547 --> 01:01:16,067
+Yani bir kitabın çok yazarı olur, bir yazarın çok kitabı olur, çoka çok ilişki diyeceğiz, ilişkilerin derecelerinden bahsedeceğiz
+
+289
+01:01:16,067 --> 01:01:19,707
+Ve bu size veri tabanı konusunda da yardımcı olacak
+
+290
+01:01:19,707 --> 01:01:25,607
+Geçen dönem yapısal projesinde veri tabanına benzer bir şey yaptırmıştım
+
+291
+01:01:25,607 --> 01:01:29,507
+Oradaki mantık, projedeki mantık burada da geçerli olacak
+
+292
+01:01:29,507 --> 01:01:33,087
+Diyelim bugünlük yeter olsun
+
+293
+01:01:33,087 --> 01:01:40,107
+var mı sorunuz? Başka anlatmak istediğim bir şey kalmadı diye düşünüyorum. Herhalde yok.
+
+294
+01:01:43,607 --> 01:01:51,907
+Debug yapma da işte şöyle arkadaşlar. Buraya bir breakpoint koyacaksınız. Sonra debug menüsünden debug project diyeceksiniz.
+
+295
+01:01:51,907 --> 01:01:56,967
+Tabi şu an hata veriyor. Şunların conditionlarını yazmadığımız için hata veriyor. Onlar önemli değil.
+
+296
+01:01:56,967 --> 01:01:58,807
+Geri geldikçe
+
+297
+01:01:58,807 --> 01:02:02,487
+Şimdi Java öğrenmek şu değil
+
+298
+01:02:02,487 --> 01:02:06,647
+Hocam ya işte bize if'leri anlatmadınız, for'ları anlatmadınız yok
+
+299
+01:02:06,647 --> 01:02:11,147
+Hani bu bir dili öğrenip öbür dili de önce tensleri öğrenmek gibi düşünmeyin
+
+300
+01:02:11,147 --> 01:02:12,827
+Bunlar bu kadar
+
+301
+01:02:12,827 --> 01:02:17,227
+Yani bunu yapısal programlamadan biliyorsunuz
+
+302
+01:02:17,227 --> 01:02:19,667
+Tekrardan size for, if, while anlatmayacağız
+
+303
+01:02:19,667 --> 01:02:24,967
+Burada çok algoritmik derinliği olan sorular da doğrudan pek sormayız
+
+304
+01:02:24,967 --> 01:02:33,967
+Önemli olan nasıl yapısal programlamada C bilginizi test ediyorsak, biz burada object oriented programlama ve Java bilginizi test edeceğiz
+
+305
+01:02:33,967 --> 01:02:37,867
+Algoritmik derinliği olan sorular nerede gelir ve yapılarında gelir
+
+306
+01:02:37,867 --> 01:02:43,567
+Ondan sonra algoritma analizinde gelir veya bilgisayar bilimlerine giriş bir iki derslerinde gelir
+
+307
+01:02:43,567 --> 01:02:49,647
+Burada daha basit, çok fazla algoritmik açıdan size uğraş çıkarmayacak sorular gelecektir
+
+308
+01:02:49,647 --> 01:02:52,108
+Sınavlarınızda, ödevlerinizde gibi
+
+309
+01:02:52,108 --> 01:02:57,988
+Ama önemli olan tasarımı doğru yapabilmek, bunun mantığını doğru anlayabilmek ve bunu yavaş yavaş göreceğiz.
+
+310
+01:02:59,007 --> 01:03:05,287
+Evet herhangi bir sorumuz yoksa bugünlük bu kadar yeter. Şimdi Toygar burada mısın?
+
+311
+01:03:10,099 --> 01:03:38,059
+yok. IntelliJ'ye bakamadım. Yani orada şeyle alakalı bazı kısımları test etme imkanım, zamanım yoktu. Onu da daha sonra bakacağım. Şimdi şurada application'a new dediğimizde G-Frame'i seçersek, bunun kendine ait spesifikasyonları var. Bize şöyle bir arayüz açılıyor bakın. Bu arayüzde bir palet açılıyor.
+
+312
+01:03:38,059 --> 01:03:44,620
+Bu paleti basit anlamda görsel programlama için kullanacağız ilerleyen zamanlarda.
+
+313
+01:03:45,899 --> 01:03:50,839
+Çok tabi ben buna karşıyım. İlk zamanlar bununla öğrenmek çok iyi bir şey değil.
+
+314
+01:03:51,659 --> 01:03:52,839
+Ben bunu çalıştırayım.
+
+315
+01:03:54,539 --> 01:03:56,799
+Bakın bunun da kendine ait bir nesi oldu?
+
+316
+01:03:56,799 --> 01:04:01,699
+Şu yeşil üçgen içinde bir main class'ın olduğunu söylüyor.
+
+317
+01:04:02,140 --> 01:04:03,599
+Main metodunun olduğunu söylüyor.
+
+318
+01:04:04,539 --> 01:04:07,999
+Source koduna baktığımızda bakın içinde bir main var.
+
+319
+01:04:08,059 --> 01:04:17,320
+Sonra şöyle göremediğimiz şöyle değişik değişik şeyler var. Bunları daha sonra anlatırız. Çünkü bu GUI ile alakalı konudur. Bunu da run ettiğimizde
+
+320
+01:04:17,320 --> 01:04:25,479
+Hocam UML bununla mı alakalı? Ben ne olduğunu bilmiyorum tam da bu GUI ile alakalı gibi geldi.
+
+321
+01:04:25,479 --> 01:04:53,599
+Yok yani UML geniş bir kavram gelecek ders işte başlayacağız. UML şu şimdi buton bir nesne burada bir de bizim frame'imiz var şu açılan pencere bir nesne nasıl kitap bir nesne yazar bir nesne bu kitabın bir nesne olduğunu ve kitap nesnesinin altında neler olduğunu özellik olarak veya metot olarak
+
+322
+01:04:53,599 --> 01:04:59,239
+Aynı şekilde yazarın ne olduğunu, onun özelliklerinin ne olduğunu burada belirtiyoruz.
+
+323
+01:05:00,140 --> 01:05:04,879
+Ve bununla beraber kitapla yazar arasında nasıl bir ilişkisel model var?
+
+324
+01:05:05,619 --> 01:05:06,500
+Bunu ifade ediyoruz.
+
+325
+01:05:07,360 --> 01:05:11,439
+Şimdi kitaplar yazarlar tarafından yazılır veya yazar, kitap, yazar.
+
+326
+01:05:12,180 --> 01:05:16,019
+Bu sözel ilişkiyi burada ifade ederken UML kullanıyoruz.
+
+327
+01:05:16,879 --> 01:05:21,219
+Toygar şeyi deneyemedim de senden bir ekran paylaşımı rica edebilirim.
+
+328
+01:05:21,219 --> 01:05:27,339
+GUI ile alakalı bir şey deneyebilirsek şu an ben istersen o yetkiyi sana açayım.
+
+329
+01:05:27,339 --> 01:05:37,180
+Tabii önce nasıl yapacağız? Önce stop diyeceğiz. Multiple diyeceğiz. UML bu işin modelleme dili.
+
+330
+01:05:37,299 --> 01:05:41,879
+Yani bu işin flowchartı diyebiliriz. Object Oriented'ın flowchartı. Daha sonra geleceğiz.
+
+331
+01:05:42,879 --> 01:05:50,299
+Bu frame mesela şöyle bir şeyle başlıyor. Biraz önceki sınıfımız böyleydi. Burada böyle bir ifade var.
+
+332
+01:05:50,299 --> 01:05:52,059
+İşte bu kalıtım diyeceğiz, extend
+
+333
+01:05:52,059 --> 01:05:54,339
+Bu kalıtımın ne olduğunu anlatacağız
+
+334
+01:05:54,339 --> 01:05:57,079
+O kalıtımı mesela UML'de bir notasyonla gösteriyoruz
+
+335
+01:05:57,079 --> 01:06:01,059
+Bunların detayları dönem içinde zamanla gelecek arkadaşlar
+
+336
+01:06:01,059 --> 01:06:04,159
+Toygar istersen ekranını paylaşabilirsin
+
+337
+01:06:04,159 --> 01:06:05,299
+Ben kapatacağım arkadaşlar
+
+338
+01:06:05,299 --> 01:06:07,279
+Benimden bir şey var mı sormak istediğiniz
+
+339
+01:06:07,279 --> 01:06:09,619
+Bir IntelliJ'den bir şeye bakalım
+
+340
+01:06:09,619 --> 01:06:14,400
+Şu an için bize swing ve şey için bu yeterli
+
+341
+01:06:14,400 --> 01:06:16,320
+Bir de buraya şey ekleyecektik
+
+342
+01:06:16,320 --> 01:06:17,219
+Ben onu bir deneyeyim
+
+343
+01:06:17,219 --> 01:06:20,159
+Plug-in'lere geldiğimizde
+
+344
+01:06:20,159 --> 01:06:22,939
+acaba var mı?
+
+345
+01:06:24,379 --> 01:06:25,820
+Away the book plugin demiş.
+
+346
+01:06:30,879 --> 01:06:33,199
+Hemen sana...
+
+347
+01:06:33,199 --> 01:06:37,199
+Orada ben bulamadım ama bende mesela 74 tane göstermiyor o yüzden...
+
+348
+01:06:37,199 --> 01:06:39,480
+Bende ilk başı 38 tane gösteriyordu.
+
+349
+01:06:39,480 --> 01:06:40,219
+Şimdi arttı.
+
+350
+01:06:41,839 --> 01:06:43,879
+Öyle bir şey var.
+
+351
+01:06:44,139 --> 01:06:45,139
+Güncelleme yapıyor.
+
+352
+01:06:46,540 --> 01:06:49,980
+Settings dediğimizde add diyelim.
+
+353
+01:06:50,159 --> 01:06:59,159
+Check for update yok bu değil şu şeylerin içinden et plug istiyorum
+
+354
+01:06:59,159 --> 01:07:08,659
+desktop download nbm bizim indirdiğimiz şey böyle bir şey değildi
+
+355
+01:07:09,396 --> 01:07:18,675
+şöyle yapalım. Zip dosyası. Evet, burada bir nbm var. Ama hangi nbm? Hepsini tek tek indirirsek olmaz bu iş.
+
+356
+01:07:19,316 --> 01:07:26,755
+iZU Yemel, iNbm diye şöyle bir biraz kurcalamak gerekiyor. Masa üstüne atayım da. Desktop.
+
+357
+01:07:30,547 --> 01:07:32,207
+bir plan install diyelim.
+
+358
+01:07:36,820 --> 01:07:44,699
+Tamam, şöyle yapalım. Herhalde olacak gibi. Biraz daha uğraşırsak. Az kaldı.
+
+359
+01:07:50,900 --> 01:07:56,639
+lisanslar falan demiş de şunları şöyle bir masa üstünde bir klasör oluşturayım.
+
+360
+01:07:58,939 --> 01:08:07,299
+Muhtemelen bu yenilendiği için, bu şey yenilendiği için arkadaşlar bazı ayarları stable değil herhalde.
+
+361
+01:08:12,244 --> 01:08:13,643
+Add plugin diyelim.
+
+362
+01:08:15,643 --> 01:08:17,144
+Hepsini seçemiyoruz.
+
+363
+01:08:18,144 --> 01:08:19,543
+Hadi seçtik, o da oldu.
+
+364
+01:08:21,004 --> 01:08:21,903
+Yes diyelim.
+
+365
+01:08:23,263 --> 01:08:27,083
+Install, next, accept, install, next.
+
+366
+01:08:47,028 --> 01:08:49,087
+başarılı bir şekilde yapıldı diyor.
+
+367
+01:08:50,508 --> 01:08:51,707
+Şimdi şöyle
+
+368
+01:08:51,707 --> 01:08:54,087
+şöyle
+
+369
+01:08:56,115 --> 01:08:58,296
+Şurada UML diye bir şey çıkması lazım.
+
+370
+01:09:00,355 --> 01:09:05,895
+Bir kapatıp açayım. Bunu belki restart'ı vardı çünkü kendi içinde.
+
+371
+01:09:10,996 --> 01:09:19,315
+En azından birlikte yapmamız daha iyi oldu. Ben yapıp hazırlamış olsaydım bunu yapamayacak, hatırlayamayan olabilirdi.
+
+372
+01:09:35,060 --> 01:09:35,659
+açılıyor.
+
+373
+01:09:42,420 --> 01:09:44,719
+Neyse, bu açılırken Toygar sen paylaşabilir misin?
+
+374
+01:09:52,851 --> 01:09:58,051
+Şimdi şu src'ye bir saat tıklar mısın klasörün üzerine?
+
+375
+01:10:01,051 --> 01:10:19,471
+New dediğimizde burada mesela JavaFX Application demiş. Şey var mı? Swing UI Designer. Evet. Ona bir tıklayalım. GuiForm diyelim. Bir isim verelim. Bu da güzel gibi.
+
+376
+01:10:19,471 --> 01:10:21,691
+Ok
+
+377
+01:10:26,100 --> 01:10:28,919
+O yeterli. Ona direkt okey demek yeterli.
+
+378
+01:10:30,460 --> 01:10:34,719
+Şimdi bu G-Frame diye geçiyor. Başka dillerde başka türlü.
+
+379
+01:10:36,239 --> 01:10:40,879
+Oradan bir koda girelim. Lab formun kodunu mu görebilir miyiz?
+
+380
+01:10:42,319 --> 01:10:45,239
+O lab bir forma çift tıklarsak yok o değil.
+
+381
+01:10:51,539 --> 01:10:54,719
+Şu form 1 alanında bir sağ tıklayıp istersen
+
+382
+01:10:54,719 --> 01:10:56,639
+Source Code
+
+383
+01:10:56,639 --> 01:10:57,719
+Sersen
+
+384
+01:11:00,851 --> 01:11:05,531
+Hocam source kodu sanırım lab 1 isimli dosyaymış.
+
+385
+01:11:06,871 --> 01:11:12,371
+Ama içi boş. Ha şöyle tamam tamam. Mesela sağ taraftan bir buton sürükleyip bırakabilir misin?
+
+386
+01:11:16,020 --> 01:11:17,500
+J buton var yukarıda.
+
+387
+01:11:23,764 --> 01:11:26,303
+Tamam. Şimdi o source koda girelim.
+
+388
+01:11:26,443 --> 01:11:29,963
+Bu kadar mı? Bunu ben evde de eklerdim.
+
+389
+01:11:31,963 --> 01:11:33,203
+Bunun ama bir şeyi var.
+
+390
+01:11:34,644 --> 01:11:36,663
+Bir mesela boyunu büyüt istersen.
+
+391
+01:11:38,603 --> 01:11:40,483
+Yok, bunun bir konfigürasyon dosyası var.
+
+392
+01:11:42,623 --> 01:11:43,903
+Ona bakarız.
+
+393
+01:11:43,903 --> 01:11:46,444
+O muhtemelen lab1.form'un altında.
+
+394
+01:11:47,563 --> 01:11:49,703
+Orada bir source kod görmemiz lazım.
+
+395
+01:11:50,863 --> 01:11:51,783
+Oradan bulacağız onu.
+
+396
+01:11:53,764 --> 01:12:01,644
+Neyse burada da en azından varmış. Bir de bunun UML'le alakalı eklentisini ben araştırayım. Öyle bir şey bulursak bunu da kullanabiliriz.
+
+397
+01:12:01,644 --> 01:12:09,144
+Hocam Print UML adlı bir pluginmiş. Birçok kişi onu beğenmişler.
+
+398
+01:12:09,144 --> 01:12:11,844
+Bir ismini yazar mısın chat'e ben bakayım.
+
+399
+01:12:18,292 --> 01:12:19,271
+Plant UML
+
+400
+01:12:19,271 --> 01:12:24,931
+Hocam 2 milyona yakın indirilmiş bu
+
+401
+01:12:24,931 --> 01:12:26,151
+Tamam bir install et bakalım
+
+402
+01:12:26,151 --> 01:12:27,911
+Ben de bu arada
+
+403
+01:12:27,911 --> 01:12:33,771
+Tamam ben de şey geldi
+
+404
+01:12:33,771 --> 01:12:36,851
+Nedir o
+
+405
+01:12:36,851 --> 01:12:38,451
+UML şeyi geldi
+
+406
+01:12:47,699 --> 01:12:52,100
+Ben hoşuma giderse kullanırım. Bu GUI'deki mevzuyu da çözersek
+
+407
+01:12:54,099 --> 01:12:59,219
+Mesela GUI'yı bir istersen şey yap, run it
+
+408
+01:13:06,100 --> 01:13:15,759
+Lab 1'in üzerine sağ tıklayıp plan edebilirsin belki. Onları bilmiyorum çünkü hiç kullanmadığım için böyle şeyler. O ilk dersi açıyor direkt.
+
+409
+01:13:19,060 --> 01:13:20,879
+şey yok ya, main metodu yok ya.
+
+410
+01:13:20,979 --> 01:13:21,739
+Main yok hocam.
+
+411
+01:13:23,040 --> 01:13:27,280
+Onun için şey gelecek, jpanel diye bir şey olacak. Ona ben bakarım. Tamam.
+
+412
+01:13:28,820 --> 01:13:30,259
+O daha sonra olacak bir şey.
+
+413
+01:13:33,716 --> 01:13:44,235
+Hocam, Plant UML dosyası ile çalışmak için yeni bir dosya oluşturabiliriz. Şey, Project 3'yi
+
+414
+01:13:47,539 --> 01:13:50,339
+Tamam. Şey yapalım, file menüsüne gel.
+
+415
+01:13:55,412 --> 01:13:55,791
+Evet.
+
+416
+01:14:03,155 --> 01:14:04,276
+New project.
+
+417
+01:14:10,355 --> 01:14:12,295
+Şimdi Java diyelim.
+
+418
+01:14:19,507 --> 01:14:21,107
+Meyman, goido.
+
+419
+01:14:22,307 --> 01:14:23,207
+Tamam.
+
+420
+01:14:26,579 --> 01:14:44,000
+onu göremedik. Neyse en azından bu uygulanıyorsa Plant Yomer'in kullanımına bir bakarız arkadaşlar. Ben şimdi daha fazla Toygar seni de yormak istemem. Vaktinizi de almayın. Bugünlük yeter zaten. Şunu da son olarak bendekini de bir anlatıp bitireceğim.
+
+421
+01:14:44,000 --> 01:14:51,940
+Şimdi ekran görüntüsünü ben paylaşayım tekrardan.
+
+422
+01:14:53,780 --> 01:14:56,940
+Şimdi biraz önce yaptığımız projede, Toygar çok teşekkür ederim.
+
+423
+01:14:57,219 --> 01:14:57,899
+Teşekkür ederim.
+
+424
+01:14:58,019 --> 01:14:58,719
+Eline sağlık.
+
+425
+01:15:00,899 --> 01:15:04,219
+Bir kitap nesnemiz vardı. Şunları bir şey yapalım.
+
+426
+01:15:06,940 --> 01:15:09,219
+Comment'a alalım. Comment da aynı.
+
+427
+01:15:15,667 --> 01:15:24,207
+Buna sağ tıkladığımızda Easy UML Create Class Diagram diyoruz. Başka bir arıza olmazsa.
+
+428
+01:15:29,908 --> 01:15:34,427
+Önce bir open şey proje, new proje oluşturacakmışız.
+
+429
+01:15:36,147 --> 01:15:43,748
+UML dediğimizde arkadaşlar, UML diagram proje diyoruz. Bakın buraya bu geldi. Next diyorum, finish diyorum.
+
+430
+01:15:45,887 --> 01:15:55,867
+UML diagramlar ve class diagram. Şimdi buna bir şunu seçelim. Hangisine aktarmak istiyorsun bunu diyor. Bunu seçiyorum. Create class diagram diyorum.
+
+431
+01:15:55,867 --> 01:16:25,847
+ne yaptı? Şöyle bir şey diagramı bir Nijil frame varmış var bir kitap var bir yazar var bir de neredeydi o deneme var denemeyi şu an bir yerin altında mı oldu acaba bilmiyorum belki şey doğrudan hata verdiği için onu yazmayabilir bunu oluşturuyor bakın bundan kod da üretilebiliyor veya bunda
+
+432
+01:16:25,847 --> 01:16:45,848
+vardı zannediyorum. Bakarız. Bunu daha sonra işte detaylarına bakacağız. Bakın şurada bir işaret var. Burada başka bir işaret var. Şunların yanında işte tilda sembollerini falan görüyoruz. Burada mesela bir şeyler eksi olmuş. Bunların hepsinin anlamlarına bakacağız. Onun için bunu kullanmak iyi olur. Şimdi yeni bir...
+
+433
+01:16:49,524 --> 01:17:13,444
+diagram oluşturmak istediğimizde other diyelim. UML diyelim, class diagram next diyelim. Şöyle bir şey finish diyorum. Buradan bir class, bu classlara işte alanlar ekleyeceğiz. Bir başka class daha ekleyeceğiz. Bu classlar arasında şu ilişkileri, relationları yazacağız.
+
+434
+01:17:13,444 --> 01:17:39,604
+ve bunun daha sonra UML generate code dediğimizde nereye aktarmak istiyorsun buna bakalım. Untitled class diye size böyle bir boş bir şey oluşturuyor. Biraz güzel gibi yani inşallah seveceksiniz. Önemli olan dediğim gibi şu tasarımı yapabilmek.
+
+435
+01:17:43,956 --> 01:17:45,335
+Evet. Var mı sorunuz?
+
+436
+01:17:51,636 --> 01:17:53,816
+Hocam sesim geliyor bu. Evet.
+
+437
+01:17:55,136 --> 01:17:59,875
+Şimdi hepimizin bir UML, UML şeyi indirmesi lazım değil mi?
+
+438
+01:18:00,056 --> 01:18:00,755
+Evet.
+
+439
+01:18:00,755 --> 01:18:02,755
+Siz nedir diyebiliriz olabilir, başka bir şey.
+
+440
+01:18:03,335 --> 01:18:16,375
+Yani bir şekilde UML çizme aracınızın olması lazım. Bu nerede olursa olsun önemli değil. Bir netbins olur, eklips olur, internetciğe olur. Hangisi olsa olsun fark etmez.
+
+441
+01:18:17,775 --> 01:18:19,855
+Tamamdır hocam. Teşekkür ederim.
+
+442
+01:18:19,855 --> 01:18:42,356
+Rica ederim. Sorunuz var mı? Başka? Haftaya görüşmek üzere. Yani idesi olmayan, ide kurmamış olan bence kursun. Ders notlarını da bugün yarın içinde yüklerim. Onun dışında kendinize iyi bakın. Herkese iyi akşamlar. Görüşürüz.

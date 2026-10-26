@@ -1,0 +1,3711 @@
+1
+00:03:50,675 --> 00:03:51,916
+Merhabalar arkadaşlar.
+
+2
+00:03:54,416 --> 00:03:55,556
+Merhaba hocam.
+
+3
+00:03:56,056 --> 00:03:57,055
+Nasılsınız, iyisiniz?
+
+4
+00:03:57,355 --> 00:03:57,975
+Merhaba hocam.
+
+5
+00:03:59,375 --> 00:04:00,195
+İyisizdir, Zaman.
+
+6
+00:04:01,136 --> 00:04:02,995
+Sağ olun, ben de iyiyim. Teşekkür ederim.
+
+7
+00:04:08,020 --> 00:04:11,419
+Merhabalar Özkan ve Parsa teşekkür ederim.
+
+8
+00:04:12,299 --> 00:04:14,159
+Chatten yazmışsınız.
+
+9
+00:04:16,280 --> 00:04:18,780
+Şimdi süremiz gelmiş.
+
+10
+00:04:33,108 --> 00:04:34,348
+Hocam nasıl keyifler?
+
+11
+00:04:36,047 --> 00:04:39,167
+İyi, çok şükür. Bugün sabahtan beri dersteyiz.
+
+12
+00:04:39,707 --> 00:04:51,887
+Hocam senin artık standartın oldu. Bunlar artık bizi hiç şey yapmıyor. Sizin günde 18 saat ders yapmadığınız gün bize tafkı geliyor. 20-22 arası bekliyoruz biz sizi.
+
+13
+00:04:54,887 --> 00:04:57,608
+Hocam çıtayı o kadar yükseldiyorsun ki.
+
+14
+00:04:57,608 --> 00:05:26,747
+Yani maalesef ben korkmuyorum ben beklenti içerisindeyim yani 20 ile 22 kal sizden beklentimiz budur. Sağlık sıhhat iyidir inşallah. İyiyiz iyiyiz çok şükür ya. İyi maşallah çok güzel. Ders başlamadı diye böyle geyik yapıyorum bir iki dakika bekliyorsunuz ben şimdi girdim ama. Ben de onun için erken geldim. Ha iyi yaptınız başver biz eğitimi aç insanlar biraz erken geliyoruz ya.
+
+15
+00:05:27,608 --> 00:05:46,188
+Eyvallah. Bugün uygulama yapacağız arkadaşlar. Herkese mail gelmiştir herhalde. Zaten birkaç kanaldan da duymuş olabilirsiniz. Neyse onun hakkında dersin sonuna doğru konuşuruz. Saat yedideki seansta. Biz geçen haftalarda da yapıyorduk da. Bu hafta bütün yapılar yapacak.
+
+16
+00:05:46,188 --> 00:05:52,347
+Ben de onu diyecektim. Değişik bir şey olmuyor herhalde. Sadece siz mi girmeyeceksiniz? Aslanlar mı girecek?
+
+17
+00:05:52,347 --> 00:05:59,267
+Ben bir katılacağım, Toprak Hocanız gelecek, bu hafta uygulamayı o yapacak
+
+18
+00:05:59,267 --> 00:06:06,288
+Yani, bir tanem bir şey vardı, onu bulmaya çalışıyorum
+
+19
+00:06:06,288 --> 00:06:09,667
+Onu da bir bulayım, nereden buradaymış
+
+20
+00:06:09,667 --> 00:06:11,608
+Evet
+
+21
+00:06:11,608 --> 00:06:15,487
+Sormak istediğiniz bir şey var mı arkadaşlar?
+
+22
+00:06:17,227 --> 00:06:17,907
+Merak ettiniz
+
+23
+00:06:21,588 --> 00:06:27,307
+Hocam ben slide'a bakarken bir tane vardı da bulamıyorum şu an. Bir saniye hocam.
+
+24
+00:06:30,327 --> 00:06:31,987
+Kimle konuştum? Toygar.
+
+25
+00:06:32,367 --> 00:06:36,588
+Bendim hocam. Bir şey soracaktım size. Bak slide'da not almıştım da kaybettim.
+
+26
+00:06:39,188 --> 00:06:43,707
+Bugün de kaybettin, daha önceden de kaybettin. Bugün ise bulursun rahat bir şekilde. Bekleriz.
+
+27
+00:06:43,707 --> 00:07:07,088
+Şimdi ben mesela kayıtları dinlerken bir şey söylemişim. Şimdi client ile işte bu bir sınıf, test sınıfı olabilir. İşte car sınıfından bir kit objesi oluşturulmuş. Bu sınıftan bir getplate metodu çağrılıyor client içerisinde.
+
+28
+00:07:07,088 --> 00:07:31,248
+Bu işlem arkadaşlar response değildir. Bu request'e gelen şey de cevap yani reply veya response olarak adlandırılır. Orada bir kelime hatası yapmışız. Onu siz duyarmadınız ama ben kontrol ederken sonra baktım bu olmaz dedim. Hatta şeyden de yazdık. Evet şimdi bulabildim mi Toygar?
+
+29
+00:07:36,084 --> 00:07:50,063
+diğer gruplara göre biraz ilerideyiz. Hani örnek olarak da ilerideyiz. Bugün 60. slide'ın bir chapter var. Oraya kadar geleceğiz.
+
+30
+00:07:51,723 --> 00:08:05,023
+Şimdi şöyle kısaca bir özet geçecek olursak. Sınıfın ne olduğunu geçen derste konuşmuştuk. Sınıf verilerden ve objelerden, metotlardan oluşuyor dedik.
+
+31
+00:08:05,023 --> 00:08:29,084
+Bu verileri daha çok biz member diyoruz. Member data attribute deniyor işte. Bir de metotlar var. Bunlar da fonksiyonlar, işte test dediğimiz şeyler. Member variable. İstersen şimdi de sorabilirsin Tolga. Sayfayı falan hatırlıyorum.
+
+32
+00:08:29,084 --> 00:08:32,503
+Hocam sayfa 20 sanırım.
+
+33
+00:08:33,543 --> 00:08:37,584
+20 tamam oraya doğru gelince tekrar bakalım o zaman şimdi yavaş yavaş geliyorum.
+
+34
+00:08:39,003 --> 00:08:46,264
+Şu yapıyı biz class yapısını somut değil soyut olarak ifade ettik.
+
+35
+00:08:46,264 --> 00:08:48,823
+Bundan üretilen obje somut haldir.
+
+36
+00:08:49,524 --> 00:08:57,903
+İşte araba dediğimiz şey soyut bir şeyse ondan üretilen herhangi bir spesifik fiziksel bir şey somut hale geliyordu.
+
+37
+00:08:57,903 --> 00:09:01,283
+Bu iki kelimeyi de ben nedense çok karıştırıyorum kendi içeri Türkçesini.
+
+38
+00:09:02,423 --> 00:09:03,844
+Kendileri de çok benzer için.
+
+39
+00:09:03,903 --> 00:09:07,344
+Evet bu bir bakın soyut bir yapı, bir sınıf.
+
+40
+00:09:07,643 --> 00:09:09,283
+Bu kadar aslında class oluşturmak.
+
+41
+00:09:09,423 --> 00:09:18,043
+Buna biz problemin türüne göre anlam yükleyip özellikler ve fonksiyonlar atamamızda objek oryantı tasarımı gerektirecek.
+
+42
+00:09:19,103 --> 00:09:20,543
+Bunları konuşmuştuk.
+
+43
+00:09:20,543 --> 00:09:29,384
+Objenin içerisinde veya sınıfın içerisinde özellik olarak primitive veriler olabiliyordu veya non primitive veriler olabiliyordu.
+
+44
+00:09:29,384 --> 00:09:42,183
+Biz bununla alakalı örnek de yaptık. Biraz slide'a göre ileri bir örnek oldu belki. Kitabın içerisinde bir yazar tuttuk değil mi? Daha sonra dedik ki bu kitapları da bir kütüphanede tutalım.
+
+45
+00:09:42,703 --> 00:09:48,563
+Bugünkü yapılacak örnek de uygulamayı üç grup ortak yapıyorlar. Geçen bizim yaptığımız örneğe benzer.
+
+46
+00:09:48,563 --> 00:09:57,804
+Ama ben tamamen bizimkiyle aynı olmasın diye o grubun asistan arkadaşlarının hazırladığı soruya biraz müdahale edip ekstra şeyler eklettirdim.
+
+47
+00:09:58,503 --> 00:10:01,003
+Hani iyi bir pekiştirme olur bugün size yapılacak o şeyde.
+
+48
+00:10:01,703 --> 00:10:03,643
+Non-Primitif veriler de olabiliyor.
+
+49
+00:10:03,983 --> 00:10:08,304
+İşte nedir mesela kitaba, kütüphaneye kitaplar dizisi eklemek.
+
+50
+00:10:09,024 --> 00:10:12,503
+Kitaplar başka, kitap başka şeydir, kitapların dizisi başka şeydir.
+
+51
+00:10:12,563 --> 00:10:13,763
+Ona da dikkat edelim arkadaşlar.
+
+52
+00:10:13,763 --> 00:10:16,143
+Bu terminoloji önemli.
+
+53
+00:10:16,143 --> 00:10:32,283
+İşte data, member field, field, attribute, property gibi kelimeler datalar için kullanılıyor. Bunların fonksiyonu olarak da member method, function, method, action, task gibi işlemler kullanıyoruz gibi.
+
+54
+00:10:33,123 --> 00:10:41,003
+UML representasyonları çok önemli. Sınavda çünkü biz UML vereceğiz. Belki UML'in kodunu soracağız. Bakın bu bir class diagramıdır.
+
+55
+00:10:41,003 --> 00:10:48,563
+class'ın görünümüdür. Bu da bir objenin görünümüdür. İşte kar sınıfından bir obje üretildiğini gösteriyor.
+
+56
+00:10:51,363 --> 00:10:58,763
+Burada UML'in temel iki tane şeyinden bahsedilmişti. Interaction ve Sequence Diagram ve Collaboration Diagram.
+
+57
+00:10:59,503 --> 00:11:05,524
+Bunları yeri geldikçe yani slide'lar içerisinde belli bir düzen var. O düzene göre anlatılıyor.
+
+58
+00:11:05,524 --> 00:11:29,164
+İşte nerede class diagramı, nerede activation diagramı veya diğer diagramını anlatıyor. Bazıları bu dönem gördüğünüz şu neydi? Sistem analizi ve tasarımı orada da göreceksiniz. Mesela rolleri atayan bir diagram var. Activity diagram mıydı? Kim geliyor şey sistem analizine? Gerçi iki grup onlarda herhalde değil mi?
+
+59
+00:11:29,164 --> 00:11:33,143
+Evet hocam, grup var.
+
+60
+00:11:33,143 --> 00:11:34,143
+Ama...
+
+61
+00:11:34,159 --> 00:11:37,179
+Daha görmedik gibi bir şey. Daha çok başlardayız, bilmiyorum.
+
+62
+00:11:37,299 --> 00:11:45,319
+Tamam, yani orada öyle çok... Tamam, genel şeylerden başlar ama orada da UML'nin bir kısmını göreceksiniz, bir kısmını da yazılım mühendisinde göreceksiniz.
+
+63
+00:11:45,319 --> 00:11:51,559
+Çünkü yazılımla alakalı hemen hemen her şeyi bu UML'le bir bağlantısı var.
+
+64
+00:11:53,439 --> 00:12:02,619
+Bu nesnelerin nesi vardı? Referans tipteydi. Diğer primitifler değer tipindeydi. İşte bellekte farklı yerlerde saklanıyordu falan dedik.
+
+65
+00:12:04,159 --> 00:12:23,639
+Erişimlerden kısaca bahsettik. Burada işte UML diyagramlarından bir tanesini görmüştük. Hatta hatamız buradaydı. Mesela burada bir obje var. Client isminde bir obje. Obje olduğunu nereden anlıyoruz?
+
+66
+00:12:23,639 --> 00:12:51,999
+Class'tan ayırt etmek için bu bir altı çizdi bir şey belli bir client objesi. Bu da araba sınıfından türetilen bir kit objesi. Aynı zamanda işte client şeyinden alakasız demiş. O çok önemli değil. Bu car isminde bir sınıf var. Oradan türetilen kit diyor. Yani söylediğim şeyde tek tek cümle cümle tekrar anlatmış.
+
+67
+00:12:51,999 --> 00:13:14,139
+Bir tane getplate metodu var. Bu ona bir mesaj gönderiyor. Yani bir istekte bulunuyor. Request'te bulunuyor. Ondan sonra ona cevap geliyor. Evet. Şimdi herhalde Toygar senin soruya geldik. Package var. Nasıl import edilir? Muhtemelen şu package bir yıldız deyince acaba class C'yi import ediyor muyuz diye soracaksın.
+
+68
+00:13:14,139 --> 00:13:21,939
+Hocam orada yaz etmiyor demiş de neden etmiyor diye soracaktım. Çünkü hesap pek hiçbirinin içinde ya paketi ki.
+
+69
+00:13:21,939 --> 00:13:38,639
+Şimdi bu import çalışması şu şekilde. Bir paket verip yıldız yazdınız mı sadece ilgili class dosyaları ekleniyor. Paketin altındaki paketler eklenmiyorlar. Onları dahil etmiyor.
+
+70
+00:13:38,639 --> 00:13:40,039
+Sadece
+
+71
+00:13:40,039 --> 00:13:42,899
+Mesela şöyle göstereyim
+
+72
+00:13:42,899 --> 00:13:45,600
+Bu bir hafta 3 paketi
+
+73
+00:13:45,600 --> 00:13:47,899
+Buraya yeni bir paket ekliyorum
+
+74
+00:13:47,899 --> 00:13:50,240
+İşte new package diyelim
+
+75
+00:13:50,240 --> 00:13:54,100
+Ondan sonra bunun altına da yeni bir paket ekleyeceğim
+
+76
+00:13:54,100 --> 00:13:56,020
+New package dedim
+
+77
+00:13:56,020 --> 00:13:58,999
+Ah tabi önce bir dosya eklememiz gerekecek
+
+78
+00:13:58,999 --> 00:14:00,020
+Java class diyelim
+
+79
+00:14:00,020 --> 00:14:02,939
+Finish
+
+80
+00:14:02,939 --> 00:14:06,499
+Bunun altına yeni bir paket diyorum
+
+81
+00:14:06,499 --> 00:14:12,820
+Böyle bir de şey yapar, hiyerarşik olarak kendi default şeyler atıyor, altı falan diyelim.
+
+82
+00:14:16,279 --> 00:14:19,439
+Bunlar, tabii şuraya ekleyecek bunu, niye buraya eklediyse.
+
+83
+00:14:21,279 --> 00:14:25,459
+Sadece şu Java dosyasını dahil eder bu projeye.
+
+84
+00:14:25,939 --> 00:14:31,939
+Şey etmez, mesela şurada bir paket daha oluşturmak istiyor, niye olmalıysa.
+
+85
+00:14:32,880 --> 00:14:35,839
+Java isimlendirmeden, yok isimlendirmeyle de alakası yok.
+
+86
+00:14:36,499 --> 00:14:39,679
+Pardon pardon iç içe
+
+87
+00:14:39,679 --> 00:14:44,320
+New package. New package.
+
+88
+00:14:44,320 --> 00:14:48,539
+Acaba sadece aynı şey yapıyor bu arayüz.
+
+89
+00:14:49,339 --> 00:14:52,959
+Şöyle diyelim. New paketin altındaki new paket.
+
+90
+00:14:52,959 --> 00:14:55,059
+Şimdi bunu şurada
+
+91
+00:14:55,059 --> 00:14:58,059
+Tabii şurada yapacağız.
+
+92
+00:14:59,679 --> 00:15:00,479
+Import
+
+93
+00:15:00,479 --> 00:15:03,859
+New package
+
+94
+00:15:03,859 --> 00:15:13,639
+.new package.new package.new package daha.
+
+95
+00:15:13,939 --> 00:15:18,079
+Şu an burada herhangi bir şey olmadığı için, class olmadığı için şey yaptı. Şunu şöyle yıldız koyalım.
+
+96
+00:15:18,079 --> 00:15:21,479
+Bu yıldız sadece bunun altındaki class dosyalarını alır.
+
+97
+00:15:22,219 --> 00:15:24,960
+Eğer onun altında bir paket daha varsa,
+
+98
+00:15:26,259 --> 00:15:44,059
+onu da import etmek için ayrıca o paketi de import etmek gerekiyor. Bu şunu sağlıyor bir anlamda. Mesela biz input output işlemleri için kullandığımız sistem in scanner sınıfı var. Scanner sınıfının bulunduğu pakette bir sürü şey var, class var.
+
+99
+00:15:44,059 --> 00:15:53,919
+Şimdi sen onların hepsini import edersen gerekli gereksiz ne varsa, çünkü iç içe bir sürü paketler var orada, gerekli gereksiz her şeyi şu koduna dahil etmiş oluyorsun.
+
+100
+00:15:53,919 --> 00:16:05,539
+Import demek yani buraya o kod değerlenirken şey oluyor dahil ediliyor. Aynı bizim in-colot'daki gibi. Hatta bununla alakalı şöyle bir örnek yapmıştım ben C'deki arkadaşlara size de göstereyim.
+
+101
+00:16:07,480 --> 00:16:23,599
+Şimdi benim test C dosyam var. Test C dosyasından değerleme yaparken ilk oluşan şey test input, test E dosyası. İçinde basit bir toplama işlemi yapıyorum. Şöyle göstereyim onu da.
+
+102
+00:16:23,919 --> 00:16:51,160
+Burada bir in-colot var, işte bir makro definiş var, işte yorumlar var. Şimdi bunu kodlarken in-colot'u buraya dahil edecek ve bak bizim orada 3-5 satır yazdığımız şey neredeyse 600 küsur satır mıydı neydi o kadar. Yani şuraya kadar in-colot'un dahil edilmesiyle alakalı süreçler var. Bu import da bunun aynısı. Eğer bütün dosyaları dahil etseydi bizim program baya baya büyürdü. Ne yapıyor? Şuraya kadar in-colot'u dahil ediyor.
+
+103
+00:16:51,160 --> 00:16:55,980
+derlerken de buradan ilgilileri alacak, gereksizleri atacak, ona göre değerleyecek zaten.
+
+104
+00:16:56,640 --> 00:16:58,380
+Yaptığı şey bu. Import da aynı bunun gibi.
+
+105
+00:17:00,300 --> 00:17:05,780
+Bunu dahil etmemesinin sebebi gereksiz dosya eklemesini, yani şey yapmasını engellemek.
+
+106
+00:17:05,920 --> 00:17:08,359
+Herhalde soruya biraz daha net cevap vermişimdir.
+
+107
+00:17:08,359 --> 00:17:11,800
+Hocam peki neden altında gösteriyoruz paketi?
+
+108
+00:17:12,240 --> 00:17:17,259
+Yani paket 2'yi isim olarak ekliyor, biz sonra içindekini istiyorsak ayrıca paketi kullanabiliyor muyuz?
+
+109
+00:17:17,679 --> 00:17:18,099
+Onun için mi?
+
+110
+00:17:18,099 --> 00:17:22,199
+package 1'e girmeden package 2'ye ulaşamıyoruz gibi bir şey mi oluyor?
+
+111
+00:17:22,399 --> 00:17:23,679
+Yok şöyle o zaman şunu yapacaksın.
+
+112
+00:17:23,819 --> 00:17:26,199
+Paket 1'dekileri almadan şunu yaparsın.
+
+113
+00:17:26,379 --> 00:17:27,739
+Paket 2'nin altındakileri alabilirsin.
+
+114
+00:17:27,739 --> 00:17:29,179
+Bu şey hiyerarşiktir.
+
+115
+00:17:29,359 --> 00:17:36,159
+Yani paket 1 ile paket 2 arasında mantıksal bir ilişki varsa onları bu şekilde mantıksal parçalara bölüyorsun.
+
+116
+00:17:37,019 --> 00:17:38,679
+Programın işte modüllerini.
+
+117
+00:17:39,319 --> 00:17:42,379
+Ama sen sadece paket 2'nin altındakileri istiyorsan şunu yapacaksın.
+
+118
+00:17:42,499 --> 00:17:43,739
+Yukarıdakini eklemeye gerek yok.
+
+119
+00:17:43,739 --> 00:18:10,759
+Genelde mesela AVT şeyi görünce event handling mekanizmasını veya GUI'yi görünce diyeceğiz ki önce bunu ekleyeceğiz o yetmeyecek daha sonra böyle bir şey yapacağız. Çünkü bunu yapmak için bazı kutubanlar buradaki şeylere ihtiyaç duyuyorlar. Mecburiler ama bu tamamen şey modülerliği arttırmak için yapılan mantıksal bir şey. Yani dediğim gibi bunu eklerken şunlara normalde ihtiyaç olmaz.
+
+120
+00:18:10,759 --> 00:18:14,019
+Tamamdır hocam teşekkürler.
+
+121
+00:18:14,019 --> 00:18:19,019
+Ayrı spesifik bir sınıf ekleyeceksek de şunu yapıyoruz zaten bu mevzu bu.
+
+122
+00:18:21,780 --> 00:18:23,080
+Mesela burada ne demiş?
+
+123
+00:18:29,780 --> 00:18:32,340
+Onun için birbirleri farklı paketlerde tutuluyor.
+
+124
+00:18:33,039 --> 00:18:34,459
+Sonra baktığımız şey neydi arkadaşlar?
+
+125
+00:18:34,459 --> 00:18:52,679
+Görünürlük ve Visibility Rules dediğimiz ya Information Hiding dediğimiz sınıfın memberlarının gizlenmesi. Şimdi burada şu soru olabilir. Hocam biz sınıfın üyelerini niye gizliyoruz? Zaten ona constructorla veya ne bileyim set get metotlarıyla erişemiyorum dedi.
+
+126
+00:18:52,679 --> 00:19:20,739
+Şimdi set-get matutları veya constructorla erişim normal erişimden biraz farklı. Normal erişimde özellikle constructorı dahil edersek, constructor bir defa erişim sağlayabiliyoruz. O da nasıl tanınlandıysa obje ona göre veya constructor ona göre bir erişim sağlanıyor. Normal bir değişkeni public yapsak o zaman her defasında erişip değiştirebilme imkanımız var. Bu da obje koruyan tutun.
+
+127
+00:19:21,087 --> 00:19:35,367
+ve sınıfların birbiri arasındaki uyumlu bir şekilde çalışmasına aykırı bir kural. Onun için private yapmamız genellikle gerekiyor ve size sorulan sorularda bütün memberları private yapmanız beklenecektir.
+
+128
+00:19:36,587 --> 00:19:49,187
+Şu şase örneği güzel bir şey. Araba ilk defa üretildi, üretilir, üretilmez bir numara verilecek veya kitap ilk defa üretildi, üretilmez bir ISBN numarası verilecek ve o daha sonra değişmeyecek.
+
+129
+00:19:49,187 --> 00:20:08,827
+İşte bunu yaparken constructorla o alan set ediliyor. Ama daha sonradan değiştirilebilir alanlar var. Mesela fiyat gibi, ne bileyim başka ID, başka şeyler gibi değiştirilmesi mümkün alanlar gibi düşünün. Bunları da yine doğrudan değil, set get metotlarıyla bu işlemleri yapabilmek tasarlanmış.
+
+130
+00:20:08,827 --> 00:20:35,267
+Çünkü sizin yazdığınız bir kod daha sonra işte ondan kalıtım alınabilir. Kalıtım alınırsa sınıfın davranışı değiştirilebilir veya aynı şekilde kodunuz kullanma ilişkisi yoluyla elde edilip kodun içeriği değiştirilebilir. Kodun içeriği değişince diğer bütün projenin çalışması akamete uğratılabilir. O bir problem. Onun için information hiding kullanıyor.
+
+131
+00:20:35,268 --> 00:21:05,248
+Yani bunu güncel nesnelerden günümüzdeki hayat şeyden örnek verirsek yani telefonun içerisinde bir sürü devre var onları görüp kendimizi değiştirebiliyor muyuz yapamıyoruz sadece belli bize lazım olan bizi ilgilendiren şeylerine erişim sağlayabiliyoruz bizi ilgilendirmeyen şeylere erişim sağlamak bu işin doğasına biraz aykırı yazılım belki biraz daha soft bir şey ama soft bir şey de yani bu işin sonuçta bankası var veya veri gizliliği veri güvenliği gerektiren durumlar
+
+132
+00:21:05,247 --> 00:21:33,847
+var. Her zaman her şeye erişebilmek doğru değil. Bunun için UML'de neler görmüştük arkadaşlar? Artı ve eksi, bir de daha sonra göreceğimiz diyez ve tilda sembolleri vardı. Paketlerle alakalı şeyler işte tilda ile kalıtımla alakalı ilişkiler diyezde, public variable'lar neyle? Artı ile private'lar da eksi ile gösteriliyordu. Ve UML representation'da şu önemli bir, bunu iyi bilmeniz lazım.
+
+133
+00:21:33,847 --> 00:22:03,827
+Eğer size bir kod verip bunun yemenini çizin dersek yapacağınız şey önce specifier'ları yani information hiding için kullandığımız public, private neyse onları yazıyoruz. Daha sonra metodun adını veya özelliğin adını yazıyoruz. Eğer özellik yazıyorsak iki nokta koyup karşısına türünü yazıyoruz. Integer, float neyse veya kitap, kalem. Eğer bu bir metodsa iki nokta koyup return type'ını yazıyoruz veya parametre ekleyeceksek yine önce parametrenin adı iki nokta parametre tipi.
+
+134
+00:22:03,847 --> 00:22:13,787
+Burada yani bu bir flowchart gibi uyulması gereken düzen bu şekilde. Zaten kullandığımız UML yazılımları da buna uygun olarak tasarlanmıştır.
+
+135
+00:22:15,647 --> 00:22:20,028
+Evet buna da baktık. Burada bazı örnekleri konuştuk.
+
+136
+00:22:23,923 --> 00:22:38,163
+Final ve static alanlar vardı. Final olunca bir değiştiren olsa onun değeri değiştirilemiyordu. Eğer bir metot final ise o da daha sonra kalıtımla override edilemiyordu. Bundan konuştuk.
+
+137
+00:22:39,083 --> 00:22:52,383
+Şunun öncesinde static ile alakalı static memberlar ve static metotlar vardı. Bir metot static ise bir defaya mahsus initialization yapılıyor. Ondan sonra initialization yapılamıyordu. Ancak atama yapılabilir.
+
+138
+00:22:52,383 --> 00:22:58,723
+Assignment. İşte C'de de yaptığımız gibi bir initialization yaptık. Sonra sürekli plus plus yapıyoruz.
+
+139
+00:22:58,723 --> 00:23:10,183
+Ki bununla alakalı bugün bir örnek yapacak hocalarınız. Yani statik işin işine dahil edip ne yapıyor? Bu statik sayesinde bütün bir sınıfın özelliği oluyordu. Objenin özelliği değil.
+
+140
+00:23:11,063 --> 00:23:21,863
+Hatta ne örnek vermiştim? Kantin örneği vermiştim değil mi arkadaşlar? Kaç tane öğrenci girdiyse kantine veya bir arabaya şeyine kaç tane partta araç varsa o kadar bir
+
+141
+00:23:21,863 --> 00:23:34,903
+Herkesin görebileceği bir ortak alan olacak. O alan işte olması gereken en yüksek değere ulaşınca artık yeni müşteri kabul etmeyeceğiz gibi öyle bir şey kurgu yapmıştık. Gece ondan bahsetmiştim.
+
+142
+00:23:36,504 --> 00:23:49,144
+Genellikle bu static memberlar objelerin böyle olması gereken yani hep ortak olan özelliklerini set ederken kullanılır. Ve sınıfın bir değişkenleri dikkat edelim.
+
+143
+00:23:49,144 --> 00:24:14,784
+Buna alakalı bir şey. Memberımızla şey metotlarımız statik olursa ne oluyordu? Ya sınıfın ismiyle erişiyorduk. İşte kitaplar nokta, kitap tanıt gibi bir şey diyebiliriz. Veya nesne ile obje ile de erişim sağlayabiliyorduk ama bu her zaman tercih edilen bir şey değildi. Normal bir metoda statik olmayan bir metoda sınıf üzerinden erişmek mümkün değil. Bunu biliyorsunuz.
+
+144
+00:24:14,784 --> 00:24:37,384
+işte class name.method bir metot şu şekilde çağırılır ama normalde böyle bir şey olmaz eğer farklı bir metot ise önce oradan bir nesne üreteceğiz o nesnenin metotlarını çağıracağız çünkü elimizde soyut bir şey var onu önce somut hale getirip o somut hali üzerinden çalışmamız gerekiyor diyelim
+
+145
+00:24:41,460 --> 00:25:05,999
+Constructor'ı konuştuk. Constructor'ın overlay edilebildiğini söylemiştik. Tabi bu kalıtımla alakalı kısma gelince Constructor'ın devamına bakacağız arkadaşlar. Şimdi metotlar var. Metotları da görünce overloading'e tekrar geri geleceğiz. Orada C Sharp'ta veya C++'ta farklı bir kod yazacağım. Operatörleri overload edeceğiz.
+
+146
+00:25:05,999 --> 00:25:24,119
+En son burada kalıp kaldık. Şuraya geldik diye biliyorum. Şuraya kadar sorumuz var. Bugün de bir 30'a kadar slide'da ilerleyeceğiz arkadaşlar. Herhangi bir sorumuz yoksa şöyle yapalım. Slide gösterisi.
+
+147
+00:25:32,276 --> 00:26:01,696
+Yes, we are going to talk about perimeters and wrappers today. The first one is about perimeters. You know perimeters from structural programming course. There is one unit value or data. For example, integer, long integer, short, byte. These are values related to integers.
+
+148
+00:26:02,276 --> 00:26:05,035
+integer physical data.
+
+149
+00:26:06,836 --> 00:26:13,395
+Difference between them, for example, difference are size.
+
+150
+00:26:13,496 --> 00:26:21,276
+For example, integer is four bytes, long is big integers, eight bytes or short two bytes.
+
+151
+00:26:21,715 --> 00:26:22,796
+Byte is one byte.
+
+152
+00:26:24,036 --> 00:26:29,456
+These are important in terms of type conversion between themselves.
+
+153
+00:26:29,456 --> 00:26:36,716
+So you should take into consideration about this size.
+
+154
+00:26:37,555 --> 00:26:46,515
+From small size to big size is okay, but vice versa there is a problem.
+
+155
+00:26:48,095 --> 00:26:52,115
+Java compiler does not permit this conversion.
+
+156
+00:26:53,195 --> 00:26:54,076
+We can try now.
+
+157
+00:26:55,555 --> 00:26:58,136
+For example, şunları bir silelim önce.
+
+158
+00:27:15,892 --> 00:27:17,132
+İzledim, doverşim.
+
+159
+00:27:40,307 --> 00:27:41,867
+Nesneye Yönelik Programme.
+
+160
+00:27:43,947 --> 00:27:45,947
+Int a is 5.
+
+161
+00:27:48,467 --> 00:27:49,707
+Votel long.
+
+162
+00:27:56,564 --> 00:28:00,443
+This type of conversion is okay.
+
+163
+00:28:00,443 --> 00:28:06,364
+But when it comes to vice versa, there's a compile time error.
+
+164
+00:28:06,364 --> 00:28:10,003
+Sorry.
+
+165
+00:28:11,859 --> 00:28:22,059
+These are another incompatible types from losing conversion from log to int. We should consider this size.
+
+166
+00:28:27,380 --> 00:28:33,919
+White to short is okay, but from short to white is not permitted.
+
+167
+00:28:36,800 --> 00:28:41,819
+These are primitives about integer values.
+
+168
+00:28:42,939 --> 00:28:56,759
+All of these primitives have a wrapper class to acquire some methods or to do some useful operations.
+
+169
+00:28:56,759 --> 00:29:22,999
+For example, swap between two integers is another algorithm. As you know, in C, swapping two integers in a function, we should use a pointer variable due to the call by reference mechanism. There is no call by value mechanism. There was no call by value mechanism in C.
+
+170
+00:29:22,999 --> 00:29:28,659
+In Java, there is also no call by value mechanism in primitives.
+
+171
+00:29:29,579 --> 00:29:37,039
+But wrapper class has a call by reference property.
+
+172
+00:29:37,759 --> 00:29:45,539
+Thanks to this property, we can easily swap our variables or we can easily swap the value of our variables.
+
+173
+00:29:46,079 --> 00:29:51,039
+Şimdi bu değişkenlerin kendileri tanımlamaları bu şekilde.
+
+174
+00:29:51,039 --> 00:30:01,399
+Eğer bunların bir de şeylerine bakacağız, wrapper classlarına, onları kullanırsak onlar vasıtasıyla değişkenlerimizi yer değiştirebileceğiz.
+
+175
+00:30:01,399 --> 00:30:06,899
+Şimdi basit bir örnek göstereyim. Gerçi fonksiyonları görmedik ama problem değil.
+
+176
+00:30:10,355 --> 00:30:11,155
+Interior.
+
+177
+00:30:31,059 --> 00:30:33,059
+Yönelik Programme dersi, Java.
+
+178
+00:31:01,523 --> 00:31:02,843
+before...
+
+179
+00:31:24,531 --> 00:31:25,991
+virgül hata selamına
+
+180
+00:31:25,991 --> 00:31:26,571
+ha
+
+181
+00:31:43,827 --> 00:32:07,827
+This is a usual we expect because due to the call by value mechanism changing does not reflect this main method. To do this we can use wrapper class. Wrapper class of int is integer.
+
+182
+00:32:07,827 --> 00:32:13,987
+integer, for example, x is equal to
+
+183
+00:32:25,587 --> 00:32:35,407
+So, we again, we should again define a method swap.
+
+184
+00:32:38,451 --> 00:32:40,271
+These are integer
+
+185
+00:32:44,051 --> 00:32:49,251
+Here, we are using
+
+186
+00:32:55,028 --> 00:33:06,227
+x value of integer value of x is assigned into t and
+
+187
+00:33:06,708 --> 00:33:10,047
+Buna gerek yok yani şu direkt ikisi olacak. Şöyle olması lazım.
+
+188
+00:33:21,299 --> 00:33:23,839
+Arkadaşlar uyarmıyorsunuz. Bakın bu T olacak.
+
+189
+00:34:03,827 --> 00:34:20,647
+Şuradan çok emin değilim. Bunun bir şey mekanizması daha vardı. Belki şimdi yer değiştirmeyecek ama bu swap işlemini call by referansla bu şekilde yapıyoruz. 3-6-3-6. Şimdi t'yi aldık.
+
+190
+00:34:24,947 --> 00:34:26,507
+Şunu bir şöyle yapayım.
+
+191
+00:34:37,619 --> 00:34:38,219
+Bir dakika.
+
+192
+00:34:40,419 --> 00:34:42,100
+Integer x t eşittir.
+
+193
+00:34:43,459 --> 00:34:44,379
+Integer deyip.
+
+194
+00:34:46,340 --> 00:34:47,699
+Buradan x nokta
+
+195
+00:34:47,699 --> 00:34:50,580
+value alacağız.
+
+196
+00:34:50,580 --> 00:34:51,179
+Evet.
+
+197
+00:35:02,324 --> 00:35:26,183
+Tayyip'e daha sonra geleceğim için çok fazla burada konuya girmek daha şu yok. Buna bir bakarım. Daha dersinleri kısmında tekrar geleceğiz bu konuya. Yani şu call by reference mekanizması aslında burada da şey call by volume mekanizması aslında burada da var bu kısımda. Ama bunu call by reference haline dönüştüreceğiz. Ona birazdan geleceğiz herhalde. Slide'ın yeri kısmında vardı.
+
+198
+00:35:26,183 --> 00:35:40,923
+Hocam bir şey sorabilir miyim? X eşittir Y ve Y eşittir T yerine X nokta int value eşittir Y nokta int value eşittir T desek?
+
+199
+00:35:40,923 --> 00:36:03,403
+Şimdi bu int value dediğimiz şey bir set metodu değil. Herhangi bir parası almıyor. Bu bir get metodu. Doğrudan şey oluyor. Yani direkt x olarak yazabiliyoruz. Onun için olmuyor.
+
+200
+00:36:03,403 --> 00:36:07,404
+X'in bir özelliği olabilir mi diye düşündüm de.
+
+201
+00:36:07,923 --> 00:36:09,143
+Yani X nokta value.
+
+202
+00:36:09,163 --> 00:36:17,324
+Şimdi int value dediğimiz şey özellik olması için bunun bir kere böyle bir metotla çağrılması olmaz.
+
+203
+00:36:17,504 --> 00:36:20,184
+Yani bu bir metot, parantez de gösteriyor, o bir metottur.
+
+204
+00:36:20,623 --> 00:36:21,463
+Herhangi bir özelliği yok.
+
+205
+00:36:23,044 --> 00:36:26,943
+Şimdi tools'dan şöyle bir şey geçen ayarlayacaktım da.
+
+206
+00:36:28,404 --> 00:36:29,743
+Toygar senin dediğin yeri.
+
+207
+00:36:30,824 --> 00:36:31,983
+Nasıl bir renk yapalım?
+
+208
+00:36:33,403 --> 00:36:37,403
+Şuradan Highlighting
+
+209
+00:36:41,108 --> 00:36:46,447
+Neredeydi o? CodeCoverage Annotation yok.
+
+210
+00:36:49,907 --> 00:36:50,407
+Line.
+
+211
+00:36:54,036 --> 00:37:01,795
+Profile, o yukarıda olan şey, profile, flat, dark, darkmiş. Bunu değiştirmek.
+
+212
+00:37:01,795 --> 00:37:08,795
+Yok, ben onu şey, onu değiştirdim. Zaten şu koyu haline onu getirdim de şurada bir tane şey vardı ya.
+
+213
+00:37:11,415 --> 00:37:13,275
+Yok, bu değil versiyon.
+
+214
+00:37:15,655 --> 00:37:19,695
+Şurada bir tane alan vardı. Onu değiştirince
+
+215
+00:37:19,695 --> 00:37:42,576
+Brace, Carrot, bu değil, Highlight, Carrot, Roll, Highlight, bunu ne yapabiliriz, Custom diyelim, şöyle biraz daha koyu kırmızı yapınca yapmak istemiştim, tabii, şu belki daha şey olur,
+
+216
+00:37:42,575 --> 00:38:11,115
+Devs'i de onu kullanıyorum. Biraz hoşuma gidiyor. Yani çok da böyle rahatsız etmiyor. Evet. Şimdi şuna bakacağız arkadaşlar. Bunu call by referans haline getireceğiz. Aslında bunu şöyle, bu hatayı gördüğümüz şu an iyi oldu. Normalde şu elemanların da kendine ait bir şeyleri var. Hani referanslar var. Aslında referanslar da burada call by value mekanizması ile referanslar kopyalanıyor.
+
+217
+00:38:11,116 --> 00:38:35,095
+Burada yine kendi içindeki referanslar yer değişiyor. Burada belki şunu yapabiliriz. New integer değil de. New integer çalışıyor muydu bilmiyorum. Rapper classlara gelince bunu daha detaylı konuşacağız. Eskitilmiş olabilir bu. New integer ilk istesek. Bir de şuna new integer diye bir de öyle deneyeyim.
+
+218
+00:38:40,532 --> 00:38:50,311
+Bunlar değişti diye yani eski versiyonunda kullanılıyor diye biliyorum ama bazı şeylerde kaldırılıyor metotlar.
+
+219
+00:38:52,311 --> 00:38:59,372
+3.6.3.6. Neyse, burada da call by value'nun olduğunu şimdilik bilelim ama bunu call by referans haline getireceğiz.
+
+220
+00:39:00,372 --> 00:39:02,532
+Daha zaten onun daha şeyi var.
+
+221
+00:39:03,811 --> 00:39:07,212
+Yes, these are integer numbers.
+
+222
+00:39:07,212 --> 00:39:22,212
+There are four types and all of the pyramids have a wrapper class. For example, integer, long, long with capital letter, short and byte.
+
+223
+00:39:22,212 --> 00:39:35,212
+Other floating point types, primitive, double and float like C. These have also a wrapper class, double and float.
+
+224
+00:39:35,212 --> 00:40:00,532
+All wrapper class are stored in heap section in Memorand. Car and Boolean is also, there is also another type. Car and character, Boolean is Boolean wrapper class. UTF-16 encoding in Java are used.
+
+225
+00:40:03,956 --> 00:40:06,115
+real numbers and primitive data.
+
+226
+00:40:09,475 --> 00:40:18,515
+Non-primitive data type string, there is another slide and there are another slides about it.
+
+227
+00:40:21,235 --> 00:40:31,555
+Yes, operations upon primitive data, arithmetical operation, addition, subtraction, modulation, multiplication, etc.
+
+228
+00:40:31,555 --> 00:40:52,956
+Another operator is plus, plus, and minus, minus, per increment and post increment operators. Operator precedency is important, like C, to know about the rule. There's a table if you want, I can share with you.
+
+229
+00:40:52,956 --> 00:41:21,756
+Yes. For example, another important operation is Mathematical operations, for example, pow, abs, tut, value, round. Binary operations, not operation, and or, and tilde, or xor operations in the bit level, we will use shift or another.
+
+230
+00:41:22,956 --> 00:41:28,316
+The rightmost of fourth bit of n is equal to like this.
+
+231
+00:41:29,515 --> 00:41:40,595
+n and 8 over 8 or n and right shift or left shift like this.
+
+232
+00:41:40,595 --> 00:41:57,095
+Şimdi buradaki şeyler arkadaşlar C'nin aynısı olduğu için tekrardan size tabii böyle toplama şöyle yapılır. Yani A eşittir A artı B, işte A eksi A eksi A eşittir B eksi C gibi şeyler.
+
+233
+00:41:57,095 --> 00:41:58,616
+Yes.
+
+234
+00:42:01,875 --> 00:42:03,375
+Rapper class.
+
+235
+00:42:03,375 --> 00:42:21,816
+This class, wrapper class, has a specific class with only one member field, including a primitive type, that is reps or box.
+
+236
+00:42:21,816 --> 00:42:31,195
+For example, integer is a class, wrapper class. Inside this class, there is a member, there is only a member, A.
+
+237
+00:42:31,195 --> 00:42:41,915
+Okay? By using this wrapper class, we are defining another functions or some operations.
+
+238
+00:42:42,475 --> 00:42:53,755
+We use wrapper class for their useful methods. Method is important here. And in case where primitives cannot be used, for example, swap operation.
+
+239
+00:42:55,835 --> 00:42:59,895
+Serialization and map index are examples of such case.
+
+240
+00:43:01,195 --> 00:43:31,175
+We will learn about this in the next, in the later weeks. Serialization for stream and map index in collection section. This is a stream section. The wrappers reside in the Java length and Java length package. Some useful mod methods of integer compare two, comparison between two integers.
+
+241
+00:43:31,195 --> 00:43:37,595
+integer, int and integer value, these are useful, static integer, parse integer.
+
+242
+00:43:38,875 --> 00:43:47,715
+You can give a string to convert this, to convert into integer.
+
+243
+00:43:48,395 --> 00:43:54,495
+This method, try to convert your argument into integer.
+
+244
+00:43:54,495 --> 00:43:57,375
+If possible, it gives result.
+
+245
+00:43:57,375 --> 00:44:02,015
+If it is not possible, it gives an exception.
+
+246
+00:44:03,923 --> 00:44:05,463
+mesela şöyle yapalım.
+
+247
+00:44:32,596 --> 00:44:47,695
+This is convertible into integer. This is not convertible. So we have to try. For example, integer t is equal to what?
+
+248
+00:44:58,003 --> 00:45:13,763
+integer parse int, for example, a, okay. I will comment this. Sorry.
+
+249
+00:45:19,764 --> 00:45:25,764
+While doing this conversion, there may be any exceptional class.
+
+250
+00:45:33,907 --> 00:45:46,387
+Yes. Number format exception about BDDSF. When it comes to variable t,
+
+251
+00:45:54,547 --> 00:46:01,707
+This one is executed, but the other one is not executed.
+
+252
+00:46:18,516 --> 00:46:20,516
+Wat, temp 2.
+
+253
+00:46:26,996 --> 00:46:30,335
+Bu da şundan. Post increment'tan dolayı.
+
+254
+00:46:38,036 --> 00:46:38,915
+There's an exception.
+
+255
+00:46:43,092 --> 00:46:57,092
+Go on. ToString is a useful method we learned today about some useful information is another method.
+
+256
+00:46:59,092 --> 00:47:07,092
+String to string, static to string to string, these are different. Static integer value of string.
+
+257
+00:47:07,092 --> 00:47:37,071
+For example, you can supply a string in this method. For example, integer sarma is an object from integer class and the value of integer part is assigned one. The second one is seven. We can use also new integer but this is depreciated.
+
+258
+00:47:37,092 --> 00:47:50,812
+absolute or old-fashioned by Oracle or Java in the feature-age version.
+
+259
+00:48:00,691 --> 00:48:27,111
+As a result of comparison, the result is not equal and this is minus 1 because the argument of argument SARMA 2, SARMA 2 is greater than SARMA 1 so the result is minus 1. You can use these operations.
+
+260
+00:48:27,111 --> 00:48:56,592
+Yes, another is string class. This is an important data type string and this also has a class name. There are some methods, for example, length, compare and integer between two integers.
+
+261
+00:48:57,112 --> 00:49:12,791
+and the result means the results may be zero or plus one or minus one according to the situation of two strings.
+
+262
+00:49:13,431 --> 00:49:23,032
+Compared to ignore case it is not case sensitive method. This is case sensitive, this is not case sensitive.
+
+263
+00:49:23,032 --> 00:49:36,632
+system alt println takes an argument or string. Print and println there is a minor difference.
+
+264
+00:49:37,752 --> 00:49:48,812
+Yes. A is a string. This is a literal assignment into string variable. This is another literal assignment.
+
+265
+00:49:48,812 --> 00:50:14,571
+comparison after comparison the result is sorry this is not this is a negative number so B is greater than A the method make a subtraction between two variables
+
+266
+00:50:14,571 --> 00:50:25,631
+setter A minus setter B. After this subtraction, the result is returned. This is a character by character
+
+267
+00:50:25,631 --> 00:50:37,952
+subtraction in order to compare two strings. But there is an exception. I didn't see a lot
+
+268
+00:50:37,952 --> 00:50:41,791
+useful explanation for this.
+
+269
+00:50:45,684 --> 00:51:03,684
+What we will see for the same string? For example, aa is hello, string bb is also hello.
+
+270
+00:51:06,228 --> 00:51:09,007
+What is the result of this comparison?
+
+271
+00:51:24,980 --> 00:51:30,179
+zero. Yes, this is an important
+
+272
+00:51:33,331 --> 00:52:02,531
+exception, maybe. String, it is related to string literal. We are using double quotes mark, quotation mark to assign any string into any string variable. Each time you create a string literal, Java Virtual Machine controls string constant pool.
+
+273
+00:52:03,331 --> 00:52:14,331
+If you already assigned this string before, there is no need to memory allocation for the second string, LeraList.
+
+274
+00:52:14,331 --> 00:52:31,331
+Okay, so these are located into the same memory location, so there is one string, hello, both of these variables shows or indicates the same memory location.
+
+275
+00:52:31,331 --> 00:52:44,331
+and the result is zero.
+
+276
+00:52:50,804 --> 00:52:51,544
+Şunu kapatalım.
+
+277
+00:52:57,748 --> 00:53:19,287
+Bu arkadaşlar bir string için bir havuz vardır. Bu havuzda ben böyle bir şey atadıktan sonra bu Java 3.5'in bu işi tekrar yapmamak adına bunu saklıyor. Daha sonra yeni bir string ekleyeceksem bunları daha önce varsa tekrar aynı mellek hücresinden bağlıyor. Bakın bir Java'nın bir özelliği. Belki başka dillerde böyle değil.
+
+278
+00:53:19,287 --> 00:53:33,627
+ve bunu kıyasladığımda ne çıkıyor? Sonuç aynı çıkıyor. Bunun aynı çıkmasının sonucu bunların farklılığı yani içeriklerinin değişkenlerin farklılığı değil. İkisi de aynı stringi göstermesidir.
+
+279
+00:53:35,468 --> 00:53:43,407
+Yeni bir şey üretmiyor yani. S1 ve S2AA ile BB'yi kıyaslayınca normalde bunlar referans tipli.
+
+280
+00:53:44,007 --> 00:53:44,847
+Şimdi şuna bakalım.
+
+281
+00:53:44,847 --> 00:53:49,167
+Gerçi bizim yukarıda var mıydı integerimiz?
+
+282
+00:53:51,587 --> 00:53:53,748
+O zaman farkı daha iyi anlaşılır.
+
+283
+00:53:58,483 --> 00:53:59,044
+Şurada
+
+284
+00:54:05,300 --> 00:54:13,619
+Buna baktığım zaman buradaki sonucumuz şunlar aynı olsun hatta. Gerçi nesneler farklı olacağı için.
+
+285
+00:54:16,359 --> 00:54:20,059
+Veya biz bunu geçen hafta kitap örneğinde bakmıştık. Bakın burada false geldi.
+
+286
+00:54:20,539 --> 00:54:28,439
+Tabii doğrudan bunun compare metodu yok. Bu comparison şuradaki hello'ların bellilikle aynı yerde saklanmasından kaynaklı bir şey.
+
+287
+00:54:33,492 --> 00:54:58,492
+There is another important usage of string. Conversion from character array into string variable. For example, char is an array and the value of this array is
+
+288
+00:54:58,771 --> 00:54:59,591
+T
+
+289
+00:55:24,211 --> 00:55:31,011
+This character Array can be converted into directly string. For example, string.
+
+290
+00:55:33,012 --> 00:55:37,411
+Here we are using new string.
+
+291
+00:55:42,771 --> 00:56:12,751
+When we look at the method, the constructor method in a string class, byteCars, byteArrays, and CarArrays. Yes, this is a CarArrays. There are lots of overload methods. One of them is CharacterArrays. So we can add these cars as an argument into this.
+
+292
+00:56:12,771 --> 00:56:42,751
+And now we're going to do this.
+
+293
+00:56:27,380 --> 00:56:45,539
+OK. The vice versa or the reverse conversion is possible from string into character array. We will see next later.
+
+294
+00:56:52,371 --> 00:57:00,131
+Yes, let's look at some useful methods.
+
+295
+00:57:01,907 --> 00:57:19,907
+Please guess the meaning of methods without making any help. What is this charAt? What do you say about charAt?
+
+296
+00:57:21,556 --> 00:57:34,795
+şey görünmüyor. Evet, char et ne işe yarar arkadaşlar? Ne diyorsunuz bu konuda? Bunları karakter etribüt yani yaptığı iş ne olabilir?
+
+297
+00:57:38,835 --> 00:58:06,155
+This queue is a character from a position from a location you specified. For example, the first character of a string is 0. So char at ss dot char at 0 gives us the first character of string. This is similar to array in C or in Java.
+
+298
+00:58:06,155 --> 00:58:24,435
+The SSLength gives us the length, the last position of character is SSLength-1.
+
+299
+00:58:24,435 --> 00:58:37,435
+This is a method returning a length of string. This is the last position and this method the last character of your string.
+
+300
+00:58:37,435 --> 00:59:04,755
+Go on. SS.contains, for example. So concat, it is similar to simple method, concatenation between concatenation two strings. The return type is string. If you add a parameters, concat,
+
+301
+00:59:04,755 --> 00:59:18,755
+For example, string hello, we have to take the return value string new SS.
+
+302
+00:59:18,755 --> 00:59:20,755
+Okay.
+
+303
+00:59:25,684 --> 00:59:38,963
+New SS. There is no addition at the end of the SS variable. This is a new string.
+
+304
+00:59:42,643 --> 00:59:43,523
+string hello.
+
+305
+00:59:46,803 --> 00:59:48,883
+Yes, SS.contains.
+
+306
+00:59:50,084 --> 00:59:53,683
+What this contains?
+
+307
+00:59:59,539 --> 01:00:02,459
+return type is boolean.
+
+308
+01:00:04,000 --> 01:00:07,459
+What may be this function?
+
+309
+01:00:09,259 --> 01:00:13,460
+Hocam, bir substring'a onun içinde var mıdır?
+
+310
+01:00:13,460 --> 01:00:14,739
+Yes.
+
+311
+01:00:15,779 --> 01:00:23,199
+It controls whether there is a substring inside this string or not.
+
+312
+01:00:23,699 --> 01:00:24,300
+Okay?
+
+313
+01:00:24,839 --> 01:00:28,839
+In order to check the existence of string, substring.
+
+314
+01:00:29,539 --> 01:00:54,900
+Content is equal. Compare this string to the specified character sequence. The result is true if and only if this string represents the same sequence of car values as specified sequence. This is similar to comparison. This is related to character, this is related to string.
+
+315
+01:00:54,900 --> 01:01:00,080
+string buffer and character sequence are different plus.
+
+316
+01:01:01,159 --> 01:01:08,599
+And switch test or control if this string add with this specified suffix.
+
+317
+01:01:08,959 --> 01:01:12,499
+This is very important for the natural language processing.
+
+318
+01:01:12,499 --> 01:01:22,879
+In order to control your vocabulary or your words with some suffix, we can use.
+
+319
+01:01:22,879 --> 01:01:28,359
+We can use another purposes.
+
+320
+01:01:29,319 --> 01:01:37,739
+Equals, this is another, comparison between the string with the specified object.
+
+321
+01:01:38,559 --> 01:01:48,799
+Equals ignore case, get bytes, string, from string to sequence of bytes.
+
+322
+01:01:48,799 --> 01:01:55,099
+These are, okay, get class and hash code we will see next.
+
+323
+01:01:55,879 --> 01:02:01,239
+In the character, the first occurrence is important.
+
+324
+01:02:02,139 --> 01:02:06,919
+For example, you can search any character in your string.
+
+325
+01:02:07,479 --> 01:02:10,939
+The location of your character returns.
+
+326
+01:02:13,599 --> 01:02:17,859
+This has four different overload methods.
+
+327
+01:02:17,859 --> 01:02:43,739
+searching it as a substring. Searching is an index for specified characters. Searching another string from the specified index. For example, as of third index. Third or fourth and etc.
+
+328
+01:02:43,739 --> 01:02:52,499
+Yani bunlar kendi işlerinde farklı görevleri yerine getiren aynı isimde farklı şekillerde görevlerini yerine getiren fonksiyonlar.
+
+329
+01:02:52,499 --> 01:03:04,599
+Is empty is okay, there is your string is a string or not. Last index of your character, first index and last index are similar.
+
+330
+01:03:04,599 --> 01:03:23,400
+Splitt is important to split your strings. For example, there's a by using a regular expression, you can use split my strings into by using M character or L character.
+
+331
+01:03:23,400 --> 01:03:48,019
+Substring is important to obtain any substring from your strings. You can use this, for example, unhappy, that substring as of 2. The first one is 0, the second one is 0, 1 and 2.
+
+332
+01:03:48,019 --> 01:03:59,179
+So from H you can return happy and you can achieve this variable. Another overload method is
+
+333
+01:03:59,635 --> 01:04:24,075
+from start to end. The last index is not included here. For example, hamburger substring from 4 and 8, 0, 1, 2, and 4 from U to E, not R is not included. Okay.
+
+334
+01:04:24,075 --> 01:04:51,675
+To car array, this is the reverse conversion we examined before. To lowercase or to uppercase, these are another trim may be used. For example, ignoring the white space in your sentence to compare your string.
+
+335
+01:04:54,075 --> 01:05:12,076
+Let's take an example. You will enter a book name in search element. When you enter space, only space, there may be any exception while searching in database.
+
+336
+01:05:12,075 --> 01:05:18,515
+To overcome this problem, we should use firstly trim function.
+
+337
+01:05:19,395 --> 01:05:27,095
+Trim function directly delays or ignores the white space characters and gives non-one space characters.
+
+338
+01:05:28,095 --> 01:05:32,475
+Yani bu trim'i kullandığınızda boşluk dışındaki karakterleri size döndürür.
+
+339
+01:05:32,475 --> 01:05:40,335
+Eğer bir yere bazı web sayfalarında hiçbir şeye girmeyip boşluk girdiğinizde karşı tarafa yutturursunuz ama bazılarında yutmaz.
+
+340
+01:05:40,335 --> 01:05:48,475
+İşte o yutmamasının sebebi boşluklara göre trim edilmesidir. Boşlukları ne yapıyor? Yok ediyor. Boşluktan ayrı kalanları dikkate alıyor.
+
+341
+01:05:48,475 --> 01:05:50,115
+Yes.
+
+342
+01:05:52,935 --> 01:05:57,555
+Yes, this is an example about some string operations.
+
+343
+01:05:58,455 --> 01:06:01,595
+String A is in Istanbul. String B is Yıldız.
+
+344
+01:06:02,615 --> 01:06:06,775
+String A contains string B. Is it true or not?
+
+345
+01:06:12,788 --> 01:06:13,767
+What is the result?
+
+346
+01:06:18,099 --> 01:06:27,499
+false olacak değil mi? Yani herhangi bir şeyin içerdiği yok. Birebir içermesi lazım. String B is done. What is the result here?
+
+347
+01:06:34,963 --> 01:06:37,883
+true olacak arkadaşlar. Siden bir cevap gelmiyor. Neyse.
+
+348
+01:06:39,324 --> 01:06:54,603
+To uppercase is converging from lowercase to uppercase. If your characters already is already in uppercase, there is no need. It remains the same. It remains.
+
+349
+01:06:56,724 --> 01:07:04,083
+Contains is okay. Again, tested to uppercase contains. These are simple examples.
+
+350
+01:07:04,963 --> 01:07:24,163
+Evet yani bu stringle alakalı ben size yani öyle bir şey çıkarırım ki içerik çıkarırım ki bir dönemi alır. Çünkü doğal dil işlemeye kadar gider. Şöyle bir şey bulmuştum geçen senelerde onu sizinle paylaşayım.
+
+351
+01:07:24,164 --> 01:07:34,504
+Çünkü çok zengin bir içeriktir. Çünkü bir stringi alıp işleyip ondan anlam çıkarmak string operasyonlarının içerisine dahildir arkadaşlar.
+
+352
+01:07:35,263 --> 01:07:42,404
+Şimdi şurada baktığımızda işte temel string concatenation falan bazı biraz önce bahsettiğimiz metotlar ve string metotları var.
+
+353
+01:07:43,124 --> 01:07:46,803
+Bunların hepsinin burada örneklerini falan bulabilirsiniz bu sayfada paylaşacağım.
+
+354
+01:07:47,243 --> 01:07:50,844
+Mesela Java Regular Expression da bu konuya dahildir.
+
+355
+01:07:50,843 --> 01:08:13,343
+Bir stringden öncelikle anlam çıkarmak yani doğal dil işleme gibi bir proje yapacaksanız öncelikle stringe preprocessing işlemler yapmanız gerekiyor. Yani ysa boşluklarını silmeniz, ne bileyim karakter sayısını bulmanız, bazı suffixleri almanız yok etmeniz gibi. Mesela relationship, ship bir suffixdir.
+
+356
+01:08:13,343 --> 01:08:43,243
+Şip'i arayıp onu yok ederseniz Relation'ı elde ederseniz gibi veya belli bir işte bir türden bir türe dönüşüm yapmak istiyorsunuz. Bu dönüşümleri yapmak için ne yapacaksınız? Belli safiksler falan vardır. Bu string işlemleri orada kullanılıyor. Şu Java T-Point'in şeyi, dokumentasyonu güzel olmuş. Biz burada size string üzerinde çok fazla bir işlem yaptırmayacağımız için temel şeyleri bilmeniz yeterli. Yani burada string dizisini alıyor, string'e çeviriyor veya tam
+
+357
+01:08:43,243 --> 01:09:07,544
+tersini işte ne yapıyordu? From to chair Array deyip stringi alıp karakter dizisine dönüştürüyor. Bunlar temel işlemler. Bize de zaten temeli lazım şu an için. Object Oriental programlama kapsamında. Evet, saatimiz gelmiş. Bir 10 dakika ara verelim. Geldiğimizde şu matematikle alakalı kısımdan devam edeceğiz. 16.15'te görüşmek üzere.
+
+358
+01:19:25,587 --> 01:19:37,667
+Evet arkadaşlar. Bana ders sonunda lütfen laboratuvar hakkında bir hatırlatma yapacaktınız diye hatırlatın arkadaşlar. Konuşacağımız şeyler var.
+
+359
+01:19:41,716 --> 01:20:04,535
+Şimdi bir W3Skos. Burada da stringlerle alakalı veya Java ile alakalı güzel kaynaklar bulabilirsiniz. Onun linkini de paylaşayım. W3Skos. Ben öğrenciliğimden beri var. Hani daha eski de olabilir. Web bile başladılar. Şimdi diğer dilleri de dahil etmişler. Gayet güzel bir şeydir.
+
+360
+01:20:04,535 --> 01:20:11,755
+Buraya kadar anlattıklarımızda herhangi bir sorun var mı?
+
+361
+01:20:14,335 --> 01:20:22,315
+Şimdi tabi ben bugün bu bahsettiğimiz konular ufak tefek konular olduğu için yani yeni object oryantla alakalı çok bir şey yok.
+
+362
+01:20:22,315 --> 01:20:26,655
+Onun için ufak tefek örneklerle anlatı yapacağız.
+
+363
+01:20:27,855 --> 01:20:28,955
+Geniş bir konu değil.
+
+364
+01:20:29,076 --> 01:20:32,216
+Şimdi şu işlemi yapmak için şunu yapabiliriz.
+
+365
+01:20:33,055 --> 01:20:34,396
+Bir tane sınıf oluşturacağım.
+
+366
+01:20:34,535 --> 01:20:37,195
+MyClass diyelim.
+
+367
+01:20:40,195 --> 01:20:44,616
+Çünkü doğrudan integer'lar üzerinde de bir şey olmuyor.
+
+368
+01:20:46,576 --> 01:20:49,675
+Rapper class'lar üzerinde de call by reference çalışmıyor.
+
+369
+01:20:49,796 --> 01:20:56,016
+Ama şu an yazacağım şeyde buna sadece integer A metodunu, A değişkenini ekledim.
+
+370
+01:20:58,296 --> 01:20:59,936
+Şunları da sileceğim şimdi.
+
+371
+01:21:02,016 --> 01:21:03,495
+Temiz bir sayfa olsun.
+
+372
+01:21:07,188 --> 01:21:12,347
+Şurada bir, şu swaplerden bir tanesinin içerisinde dursun. Bu diğerini silerim.
+
+373
+01:21:15,731 --> 01:21:19,331
+Neyse, biraz önce yaptığımız şeyi sildi ama önemli değil.
+
+374
+01:21:20,231 --> 01:21:27,711
+Şimdi my class içinden bir obje üreteceğim. Hatta hadi bunu şey de yapalım. Private olsun.
+
+375
+01:21:29,411 --> 01:21:32,451
+Private yaptığım için bunun set ve get metotlarını yazacağız.
+
+376
+01:21:34,631 --> 01:21:39,652
+Bunu idelerde refactor deyip encapsulate diyelim.
+
+377
+01:21:40,652 --> 01:21:43,971
+Set ve get metotları olsun diyorum. Refactor diyorum.
+
+378
+01:21:43,971 --> 01:21:57,391
+Bunlar bana şimdilik lazım. Bir de buraya bir constructor yazalım. public myclass.pager.exe gibi bir şey gelsin.
+
+379
+01:21:58,772 --> 01:22:01,971
+is.a.exe
+
+380
+01:22:01,971 --> 01:22:07,391
+Aslında şimdilik set metoduna da pek gerek yok da neyse lazım olacak.
+
+381
+01:22:12,148 --> 01:22:17,007
+Şimdi my class sınıfından bir A nesnesi oluşturuyorum. New my class.
+
+382
+01:22:18,547 --> 01:22:20,967
+İşte 4 diyelim buna.
+
+383
+01:22:26,387 --> 01:22:43,367
+Bir de B nesnesi. Bakın artık bu bir değişken değil, bir nesne arkadaşlar. Şimdi ben bunları şurada swap yapmak istiyorum. Buraya göndereceğim şeyler biraz önce integer veya int olmuştu. Artık buraya göndereceğim nesne türü my class türünden olacak.
+
+384
+01:22:46,367 --> 01:22:49,547
+Peki. Şöyle salt yapalım.
+
+385
+01:22:52,187 --> 01:22:53,687
+Before diyelim yine.
+
+386
+01:22:59,380 --> 01:23:06,380
+a.get a plus
+
+387
+01:23:09,619 --> 01:23:11,419
+b.gta
+
+388
+01:23:11,419 --> 01:23:16,439
+value değerini de yazabilirdik.
+
+389
+01:23:16,439 --> 01:23:19,099
+Yani A değil de int value gibi bir şey.
+
+390
+01:23:29,587 --> 01:23:56,107
+Şimdi swap diyelim. A ve B değişkenlerimi burada gönderiyorum. Şu swap şeyini de hatırlayalım. Öbür fonksiyonu keşke silmeseydim. Integer. İçerikleri aynı olduğu için bir daha yazmayacağım. Şurada da integer.
+
+391
+01:23:56,107 --> 01:24:02,327
+Bakın bunlar hata vermedi. Niye hata vermedi? 3'ü de swap.
+
+392
+01:24:08,243 --> 01:24:09,364
+Overloading yaptık.
+
+393
+01:24:09,423 --> 01:24:31,344
+Overloading yaptık. Ama bunu çağırırken hata verme olasılığı var. Eğer 3,5 gibi bir şeyle çağırırsak şu an hata vermez. Çünkü ikisi de MyClass türünde. Ama 3,5, gerçi orada da hata vermez. Mesela 3 ile şunu çağır dediğimde, bunu da bir şey diyor mu?
+
+394
+01:24:31,344 --> 01:24:36,964
+Şununla şunu karıştırma durumu var. Hatta
+
+395
+01:24:40,467 --> 01:24:41,367
+Şöyle diyelim.
+
+396
+01:24:44,487 --> 01:24:45,868
+Integer demeyelim de buraya.
+
+397
+01:24:46,448 --> 01:24:47,307
+Long diyelim.
+
+398
+01:24:48,947 --> 01:24:51,428
+Onu şeyde, method overloading'de anlatacağım.
+
+399
+01:24:52,407 --> 01:24:54,747
+Gerçi long'u da burada en yakını böleceği için.
+
+400
+01:24:55,467 --> 01:25:00,367
+Eğer şu iki metot arasında kafası karışırsa, onun örneği var bende, daha sonra bakarız.
+
+401
+01:25:01,207 --> 01:25:04,447
+Hangisini çağıracağını bilemez ve derleme zamanı hatası alırız.
+
+402
+01:25:05,388 --> 01:25:06,767
+Ambiguity diyoruz buna.
+
+403
+01:25:07,447 --> 01:25:08,547
+Şu an kafada karışmıyor.
+
+404
+01:25:08,547 --> 01:25:18,148
+direkt bunu integer bunu da integer olarak algılıyor long olmadığı için mesela short desek short diyelim
+
+405
+01:25:22,228 --> 01:25:37,267
+Aslında bunları şey... Neyse başka bir zaman onun örneğine bakarız ayrıca arkadaşlar. Yani her türlü overloading doğrudan çalışacak diye düşünüyorum. Önemli olan hangi overloada gideceğini de bilecek şekilde bir tanım yapmamız gerekiyor.
+
+406
+01:25:38,488 --> 01:25:45,127
+Şu da şöyle ile. Şimdi burada yapacağımız şey diğerleri aynı olduğu için yazmayacağım. Bunu yazmamız yeterli.
+
+407
+01:25:45,127 --> 01:26:06,507
+Bir tane integer değişken oluşturuyorum. Mesela temp diyelim. x.getA'yı buna yazdım. x.setA diyeceğim. Bunu y.getA diyelim.
+
+408
+01:26:06,507 --> 01:26:14,507
+İstersek eşittir de kullanabilirdik ama o zaman private yapmamız, public yapmamız lazımdı.
+
+409
+01:26:15,167 --> 01:26:16,687
+y.seta
+
+410
+01:26:16,687 --> 01:26:19,607
+temp
+
+411
+01:26:19,607 --> 01:26:20,947
+diyorum.
+
+412
+01:26:22,347 --> 01:26:24,147
+Şimdi çalıştıralım bakalım.
+
+413
+01:26:26,887 --> 01:26:28,487
+Aslında ne yaptım? Kendim
+
+414
+01:26:28,487 --> 01:26:30,408
+bu şey için
+
+415
+01:26:30,408 --> 01:26:32,647
+integer için bir sarmalayıcı
+
+416
+01:26:32,647 --> 01:26:35,668
+class oluşturdum.
+
+417
+01:26:36,507 --> 01:26:49,908
+4'e 8'e 8'e 4. Yani aslında swap mümkün değil diyemiyoruz. Ha şu bizim integer'larda, wrapper class'larda doğrudan yok. Niye yok? Şimdi onu gelelim.
+
+418
+01:26:55,220 --> 01:26:56,559
+Şöyle alayım.
+
+419
+01:27:02,644 --> 01:27:10,864
+Şimdi yukarıda bir integer objemiz olduğunu düşünelim. Bunlar bellekte bir yerlerde saklanıyor.
+
+420
+01:27:14,223 --> 01:27:21,423
+Main'de bir tane büyük İ ile integer var. Bir de Y objem var.
+
+421
+01:27:22,503 --> 01:27:30,343
+Swap'in içerisine geldiğimde bunlar arkadaşlar içinde bir tane X değişkeni tutuyor. Yani 4'e 8 gibi bir şey tutuyor.
+
+422
+01:27:30,343 --> 01:27:38,504
+Bir de bunun adres alanı, ekstra bir şeyler var. Bunun kendine ait bir adresi var. Ne bileyim buraya 100 diyelim, buraya da 110 diyelim.
+
+423
+01:27:39,923 --> 01:27:49,663
+Swap'in içine geldiğimizde Swap'e ait bir X değişkeni, aynı isimde de olabilir. Swap'a ait bir Y değişkeni. Ama bu X ve Y'ler integer olan. Şöyle yapayım hatta.
+
+424
+01:27:49,664 --> 01:27:58,664
+integer x swap, integer y swap içindeki değişkenler dedik.
+
+425
+01:27:59,443 --> 01:28:11,103
+Şimdi ben bu fonksiyonu çağırdım da şu 17. satırdakini çağırdım da şu adresler, çünkü bunlar referans tutuyor dedik yani integer x'i geçenlerde yazdırmaya çalıştığında referans tutuyordu.
+
+426
+01:28:11,783 --> 01:28:16,084
+Adresleri buraya ne olacak? Kopyalanacak. Yani 100 ve 110 kopyalanacak.
+
+427
+01:28:16,083 --> 01:28:46,063
+Bu 100 ve 110 işte içeride bir tane temp değişkeni yaptık ama burada yeniden bir şey tanımlanıyor içeride. Referans yani bellek hücresi tanımlanıyor burası için. Ve içeride yaptığım swap burada olduğu ile kalıyor. Buraya yansıtılmıyor. Çünkü şurada bana ne lazım? Şuradaki tabi ben bunu parçalı yaptım da 4 ve 8'in adresini elde edebilseydim o zaman değiştirebilirdim.
+
+428
+01:28:46,083 --> 01:29:12,423
+Bunu elde edemediğimiz için ne yapıyoruz? Burada yaptığımız değişiklik burada kalıyor. Şu zaten C'de de olmuyordu. Aynısı referansın call by value gibi çalışmasıdır bu. Yani tam bir, yani burada yalancı diyebileceğimiz call by referans var. Yani oradaki referans, çağrılan referans buraya kopyalanıyor. Burada yeniden kendi içinde işlemler yapılıyor ve burada yapıldığı da kalıyor.
+
+429
+01:29:12,423 --> 01:29:20,744
+Bunun üstesinden gelmek için eğer gerçekten bir objeyi yer değiştirmek istiyorsanız bunu kullanabilirsiniz.
+
+430
+01:29:20,744 --> 01:29:27,744
+Yani kendiniz bir sınıf yazıp bunu tamamen referans haline, kolbayı referans haline getiriyorsunuz.
+
+431
+01:29:28,543 --> 01:29:30,463
+Çünkü bu sınıf için böyle bir şey tanımlanmamış.
+
+432
+01:29:34,355 --> 01:29:47,475
+Çünkü biz o sınıfın metoduna yani integer üzerinde biraz önce swap yaparken şimdi örneği gelecek hiçbir şekilde getlerle setlerle erişmedik doğrudan birbirine atamaya çalıştık onun örneğini şimdi bakacağız.
+
+433
+01:29:50,215 --> 01:29:57,196
+Before this example we will study about math class or random class.
+
+434
+01:29:58,395 --> 01:30:03,135
+So far we have studied string and another wrapper class.
+
+435
+01:30:03,135 --> 01:30:08,955
+These are special for mathematical operations, math and random.
+
+436
+01:30:09,955 --> 01:30:20,995
+To generate a random variable between 0.0 and 1.0, we are using random class in math, random method in math class.
+
+437
+01:30:21,655 --> 01:30:32,735
+If you don't supply any argument in math function or method, you can directly obtain a double variable.
+
+438
+01:30:33,135 --> 01:30:40,576
+Double value between this interlock. Let's try this code.
+
+439
+01:30:58,100 --> 01:31:10,259
+Random method has several overload methods. For example, mat.random
+
+440
+01:31:24,243 --> 01:31:24,903
+İyi görmedi.
+
+441
+01:31:40,948 --> 01:32:07,227
+Bunun içine parametre alan şey de vardı. Yok acaba. Argüman kabul etmiyor diyor. Neyse. Bir de random şey var acaba. Bu direkt 0-1 arası mı veriyordu? Bir de random sınıfının var. Belki ben onunla karıştırıyorum. Neyse. Matematik sınıfının içerisinde böyle bir şey. Peki biz bunu nasıl böyle kullanabildik? Niye böyle eriştik? Direkt hiçbir nesne falan üretmedik bunda.
+
+442
+01:32:07,227 --> 01:32:10,527
+Static tamamen olacağımı konuşalım.
+
+443
+01:32:10,527 --> 01:32:12,567
+Güzel, static tamamen olduğu için.
+
+444
+01:32:13,187 --> 01:32:17,647
+Mesela önceki şurada yaptığımız şeylerde bir şeyin contains var.
+
+445
+01:32:17,747 --> 01:32:19,047
+O contains'e nereden ulaşıyoruz?
+
+446
+01:32:19,667 --> 01:32:21,087
+Nesne üzerinden erişiyoruz.
+
+447
+01:32:21,087 --> 01:32:26,787
+Ama aynı şu sistemi alt printlendiği olduğu gibi ne yapıyor?
+
+448
+01:32:26,927 --> 01:32:29,647
+mat.random içerisinde bunun erişmiyor.
+
+449
+01:32:30,427 --> 01:32:32,967
+Doğrudan kullanabiliyoruz.
+
+450
+01:32:32,968 --> 01:32:47,888
+Inside this class there are lots of static methods for commonly used mathematical functions, power, round, or exponent, etc.
+
+451
+01:32:52,627 --> 01:33:16,287
+For example, definition of these static functions, return type, public, static, and return type, mostly primitive, and parameters, mostly primitive parameters. For example, absolute value, public, static, double, abs, mat, not the absolute value returns.
+
+452
+01:33:17,968 --> 01:33:19,787
+Variation of static,
+
+453
+01:33:22,627 --> 01:33:38,067
+For example, between two integers or doubles you can obtain maximum value of these. Another public static double is mathematics mean.
+
+454
+01:33:41,908 --> 01:33:42,908
+Okay. These are some useful methods. Sail is round to upwards. Floor is downwards rounded. Mat nokta round is round according to round algorithm. If your decimal point has greater than, greater or equal than 5, the
+
+455
+01:34:11,908 --> 01:34:31,187
+The left decimal point is incremented by one. Square root is another useful method. You know, square root needs an algorithm to calculate any real number.
+
+456
+01:34:31,187 --> 01:34:36,847
+About more random variables
+
+457
+01:34:36,847 --> 01:34:42,467
+We have to use random class
+
+458
+01:34:42,467 --> 01:34:46,927
+This is a pseudo-random number
+
+459
+01:34:46,927 --> 01:34:49,988
+What is pseudo-random number?
+
+460
+01:34:51,387 --> 01:34:56,467
+Bu yapay bir rastgele sayı üretme harici
+
+461
+01:34:56,467 --> 01:35:00,547
+Nedir peki buradaki yapaylıktan söz konusu olan şey ne?
+
+462
+01:35:01,187 --> 01:35:06,607
+Rön bilgisayarın klak ile bağlı bir şey.
+
+463
+01:35:08,047 --> 01:35:30,567
+Evet. Yani gerçek anlamda yapaylıktan, şey, randomlıktan söz edeceksek işte evet belli bir pattern var demiş Bahtiyar'da. Gerçek anlamda random olması için hiçbir etken, bağlayıcı etken olmadan, hiçbir hile vesaire olmadan bir şey üretmesi, rastgele değer üretmesidir.
+
+464
+01:35:30,567 --> 01:35:39,027
+Yani paranın bile havaya atılıp yazı tura gelmesinde işte rüzgarın etki etmemesini, paranın eşit bir şekilde distribution'a sahip olduğunu gibi.
+
+465
+01:35:39,867 --> 01:35:47,967
+Utkan'ın da söylediği gibi random number generator'lar belli bir kök değerinden başlayıp belli bir uzunlukta sayı üretirler.
+
+466
+01:35:47,967 --> 01:35:49,167
+Şöyle örnek verelim.
+
+467
+01:35:52,947 --> 01:35:59,547
+Mesela sizin ilk kök değeriniz 5 olsun, 6 bundan sonraki sayı bu 5'e bağlı olarak bir şey üretir.
+
+468
+01:35:59,547 --> 01:36:22,547
+işte 8 ondan sonra mesela 1000 üretirsin gittiniz gittiniz bir yerde tekrar 5'i bulursanız başa geri dönmüşsünüz demektir ondan sonraki sayı 8 olacaktır onun için tam bir number değil bu pseudo number pseudo random generator'lar ne kadar uzun frekansta üretirlerse o kadar başarılı oluyorlar işte bunun farklı algoritmaları var
+
+469
+01:36:22,547 --> 01:36:43,467
+To use random operations, random mathematical operations, we are using random class. We should add or import this class into your project or your class. For example, generation boolean through all fours, next boolean.
+
+470
+01:36:43,467 --> 01:36:52,467
+generation of double next double return between 0.0 between 1.0.
+
+471
+01:36:54,467 --> 01:37:00,467
+Next float is also similar next integer next integer and next long integer.
+
+472
+01:37:01,467 --> 01:37:08,467
+These are used between 0.0 and 1.0 to produce more
+
+473
+01:37:08,467 --> 01:37:18,467
+more larger values we can manipulate these results.
+
+474
+01:37:20,467 --> 01:37:22,467
+Next long, next int.
+
+475
+01:37:22,467 --> 01:37:26,467
+These are not static methods.
+
+476
+01:37:26,467 --> 01:37:31,467
+As a result, we have to use what?
+
+477
+01:37:35,572 --> 01:37:55,572
+We have to use what? Ne kullanmak zorundayız bu statik olmayan metotları kullanmak için? Nesne. Evet. Şimdi Java, util, random diye bir şey import etmekle o bize, emrimize amade olmuyor arkadaşlar. Şöyle yapalım.
+
+478
+01:38:03,475 --> 01:38:04,475
+Random.
+
+479
+01:38:06,216 --> 01:38:10,635
+Bunu aldıktan sonra hadi hemen üretebilelim diyemiyoruz.
+
+480
+01:38:11,915 --> 01:38:16,115
+Neyi kabul etmedi? Şu package'i şuraya mı alacağız?
+
+481
+01:38:22,036 --> 01:38:34,075
+Oradaki metotların hepsi şey olduğu için, bakın random class'ı geldi. Normalde ben bunu şöyle yapayım hatta. Bunu ekledin de kullanmadın. Hani kullanalım.
+
+482
+01:38:34,075 --> 01:38:37,195
+Random class'ı.
+
+483
+01:38:42,547 --> 01:38:59,187
+bir random sınıfından nesne üretmem gerekiyor. Eğer bunu import etmezsek bu bunu doğrudan göremeyecek. Çünkü şu Java'nın bu sınıfın içinde böyle bir şey yok. Hatta daha klavyeden okumayla yazmayla alakalı şeyleri de eklemedik. Bunu eklememiz gerekiyor.
+
+484
+01:38:59,187 --> 01:39:07,947
+Şimdi random'ın içine girebilirsek şöyle bir bakalım. Code source diyelim. Veya code declaration diyebilecek miyiz? Yok.
+
+485
+01:39:07,947 --> 01:39:18,748
+So, R nokta, next integer, there are two overload methods about next integer.
+
+486
+01:39:19,547 --> 01:39:31,487
+The first one is, so the number generator uniform distributed, all to the power of 32 possible integer values.
+
+487
+01:39:31,487 --> 01:39:55,488
+The other one is important and bound value. If you can specify a specific number, for example, 5. To write this,
+
+488
+01:40:11,155 --> 01:40:23,975
+You can easily manipulate by multiplying or adding or subtracting some integers or some real values for this return types.
+
+489
+01:40:25,655 --> 01:40:30,095
+It can be either double or float R integer.
+
+490
+01:40:31,635 --> 01:40:31,955
+Yes.
+
+491
+01:40:33,135 --> 01:40:38,576
+These are another example from random and mathematic class.
+
+492
+01:40:38,576 --> 01:40:48,215
+Mathematical class is directly included here. Math.absolut.value. Random is indirectly via import.
+
+493
+01:40:49,176 --> 01:40:58,455
+This is a random number. Initial value, absolute value of this initial random number.
+
+494
+01:40:59,455 --> 01:41:07,736
+The number is restricted via this parameter. This is another example.
+
+495
+01:41:08,575 --> 01:41:15,055
+Any problem? Any question about this? These are simple.
+
+496
+01:41:18,579 --> 01:41:22,940
+60 slide olduğu için 10 tane slide'ımız kaldı daha vaktimiz var. Yavaş yavaş gidelim.
+
+497
+01:41:24,299 --> 01:41:26,139
+Yes, input output operations.
+
+498
+01:41:27,979 --> 01:41:30,519
+This is a output.
+
+499
+01:41:30,899 --> 01:41:32,639
+This is output slides.
+
+500
+01:41:33,779 --> 01:41:40,699
+In Java, via command line, we are using system.out object.
+
+501
+01:41:41,159 --> 01:41:46,959
+Inside system class, there is a out member variable.
+
+502
+01:41:48,579 --> 01:41:50,579
+Sorry
+
+503
+01:41:54,579 --> 01:41:56,959
+Let's go to source.
+
+504
+01:41:56,959 --> 01:41:58,759
+Not.
+
+505
+01:42:05,363 --> 01:42:35,343
+Bazen gidiyor, bazen gitmiyor. Şimdi. System Java. This is a print stream element. If I go, yes, print stream. Print stream communicates between your program and operation systems, procedures or kernels and your input-output requests are implemented by this class.
+
+506
+01:42:35,363 --> 01:42:41,183
+Input is input stream, output is output stream, error is error stream.
+
+507
+01:42:41,724 --> 01:42:58,224
+If there may be, in case of any error or in case of any exceptional case, error message can be thrown via Java Virtual Machine in, out, and error.
+
+508
+01:42:58,224 --> 01:43:19,423
+System, out or system, in are used but when we study exception chapter we will see error. Yes, out is a member field for system class.
+
+509
+01:43:19,423 --> 01:43:32,423
+Inside this out there is a println method like this. There are lots of overload methods.
+
+510
+01:43:36,423 --> 01:43:47,423
+This is a static definition so there is no need object generation to access this member method.
+
+511
+01:43:47,423 --> 01:43:57,943
+Print, Alan and Print, these are similar to Print F in C, the difference between them, the new line.
+
+512
+01:44:00,983 --> 01:44:01,463
+Yes.
+
+513
+01:44:05,108 --> 01:44:13,608
+IO is another useful class or useful methods in Java.
+
+514
+01:44:16,707 --> 01:44:24,608
+To use input facility in Java, we have to use scanner class.
+
+515
+01:44:24,907 --> 01:44:33,608
+For example, we have to produce an object, new scanner,
+
+516
+01:44:35,108 --> 01:45:04,868
+and scanner needs a parameter. This parameter is a system.in because to use your keyboard we should supply input stream in this class by definition. There's a problem. It needs scanner class definition.
+
+517
+01:45:05,108 --> 01:45:12,108
+To add this definition we should use import. Import Java Util Scanner.
+
+518
+01:45:12,108 --> 01:45:15,108
+Let's
+
+519
+01:45:22,963 --> 01:45:52,923
+After this operation, we can enter any integer, enter an integer. Integer x is equal to cj sc.next integer or float f equal to cj.z.
+
+520
+01:45:52,963 --> 01:46:04,644
+next, plot. You can use this object whatever you want or what type of no matter how your type is.
+
+521
+01:46:06,723 --> 01:46:12,083
+There are lots of there are lots of definition or lots of methods for this purpose.
+
+522
+01:46:12,083 --> 01:46:40,243
+in this example system input generation object generation what's your name in that next line next line gives you a string from your comment line how old are you it is next integer hello plus name next year you will be h dot dot blah blah blah
+
+523
+01:46:40,243 --> 01:47:09,544
+input closed after this operation. This is a communication between your system kernel or especially operation system. So we have to use our scanner object. GeoRutualMachine deletes all of these objects' informations.
+
+524
+01:47:10,243 --> 01:47:39,923
+Yes. There's a bug in the scanner class. If you get input for a string after getting input for a primitive by using nextint, nextplot, etc. The string goes to void. What is the reason of this bug? You can, you might know this from C.
+
+525
+01:47:40,243 --> 01:47:43,243
+if you encountered before.
+
+526
+01:47:48,724 --> 01:47:50,823
+Niçin böyle bir hata olmuş olabilir arkadaşlar?
+
+527
+01:47:53,624 --> 01:47:56,403
+C'de kod yazanlar bunu görmüşlerdir.
+
+528
+01:47:58,863 --> 01:48:01,203
+Mesela Durdane'ye soralım.
+
+529
+01:48:07,475 --> 01:48:08,235
+Burada mısınız?
+
+530
+01:48:11,196 --> 01:48:12,575
+Mehmet Çikaray soralım.
+
+531
+01:48:16,435 --> 01:48:44,475
+Arkadaşlar, yani gerçi burada olanlara söylüyorum da belki kayıttan dinlenir diye söyleyeyim. Ben devam devamsızlıktan bırakmıyorum. Boşu boşuna katılıp burada hani görüntü vermeye kalkmanın bir alemi yok. Boşu boşuna elektrik harcamayın. Yani evinizde, ekonominize zarar vermeyin. Hiçbir şekilde devamsızlıktan kalmayacaksınız. Mikrofonunuz yoksa yazabilirsiniz. Onun için ben buraya kaç kişi katılmış ona da çok bakmıyorum.
+
+532
+01:48:44,475 --> 01:48:46,935
+Umut Sümer size soralım.
+
+533
+01:48:51,988 --> 01:49:00,307
+Evet. Umut da yok herhalde. Neyse. Kayıttan dinlerler belki. Bora sana sorayım. Sen buradaydın. Bora Yankı.
+
+534
+01:49:00,807 --> 01:49:04,328
+Buradayım hocam. Onu keşke bilsem. Yani denk gelmemişim herhalde.
+
+535
+01:49:04,328 --> 01:49:10,387
+Şimdi C'de hiç böyle kullanıcıdan bir karakter almadın mı? Veya bir string almadın mı?
+
+536
+01:49:10,867 --> 01:49:12,067
+Aldım herhalde.
+
+537
+01:49:13,527 --> 01:49:20,387
+Mesela orada şöyle bir şey oluyordu. Öncesinde bir sayı girdin. Enter'a bastın. Ondan sonra ne yapıyordu? İsim okuyamıyorduk.
+
+538
+01:49:20,387 --> 01:49:22,227
+veya karakter okuyamıyorduk.
+
+539
+01:49:24,227 --> 01:49:27,188
+Hocam bir boşluk bırakmıyor muyduk şeyden önce?
+
+540
+01:49:28,047 --> 01:49:28,888
+Onunla ilgili mi acaba?
+
+541
+01:49:30,388 --> 01:49:32,528
+%C'den önce bir boşluk bırakıyorduk değil mi?
+
+542
+01:49:32,567 --> 01:49:32,867
+Evet.
+
+543
+01:49:33,988 --> 01:49:36,708
+ScanF boşluk %C gibi bir şey yazıyorduk.
+
+544
+01:49:36,767 --> 01:49:37,528
+İşte o nedendi?
+
+545
+01:49:38,348 --> 01:49:41,568
+Bir önceki satırda bir şeyler girdik, Enter'a bastık.
+
+546
+01:49:42,247 --> 01:49:44,787
+O bastığımız Enter, buffer'da kalıyor.
+
+547
+01:49:45,547 --> 01:49:47,967
+Bir sonraki satırda okuyacağımız String'i,
+
+548
+01:49:47,967 --> 01:49:57,788
+Eğer string ise ne oluyordu? O stringe o boşluk atanıyordu. O boşluk atanınca ne oluyor? Bu sefer biz klavyeden girdiğimiz bir şeyi göremiyorduk.
+
+549
+01:49:58,528 --> 01:50:11,547
+Şimdi şu örneğe bir bakalım herhalde burada. Önce how old r u girip sonra isim girmeye çalışınca o hatayı alacağız yine. C'de de böyle bir şey var çünkü.
+
+550
+01:50:16,148 --> 01:50:31,507
+Hatta C'de onun fonksiyon olarak çözümü de var. Bu arada sistem outprintlende böyle artı koyup alt satıra geçmenin hiçbir engeli yok arkadaşlar. Yani böyle kod uzamıyor. Şimdi ne oluyor? Burada bir tane integer okuyoruz. Okuduğumuz integer'ı tabii şurada okuyoruz aslında.
+
+551
+01:50:36,387 --> 01:50:45,727
+Burada in.nextline demiş. Burada bir şey elde etmiş. Yani bir şey okuduk. Ondan sonra bakın ismi okuduk. Şimdi ben önce şunu kapatıyorum.
+
+552
+01:50:46,148 --> 01:50:50,067
+Şöyle çalıştıralım
+
+553
+01:50:57,427 --> 01:51:21,667
+How old ArrayList. 33 değilim ya. 30 falan. 30 da değilim mi? Hadi 32 diyelim. Bakın ne oldu? İsmi giremedik. Niye giremedik? Çünkü isimle beraber, yaşla beraber bir Enter'a bastığımız için o girdiğimiz Enter'ı bufferda sakladı. Peki Enter niye Integer'a tanımladı? Çünkü diyor ki buradan bir Integer okuyana kadar bu işi yap.
+
+554
+01:51:21,667 --> 01:51:47,807
+Enter integer'a dahil değil, 32 dahil. Bu 32'yi alıyor, oradaki Enter veya Backslash'ın alınmıyor. Alınmadığı için orada duruyor. Ondan sonra ne yapıyor? İşte What is your name dedi, onu ekrana yazdı. O şeyden gidiyor, bir tane bir şey okuyor. Ne okuyor? Bir tane boşluk var. Yani ben daha girmeden, klavyeye basmadan bile ne oldu? Gitti, şunu okudu bu boşluğu.
+
+555
+01:51:47,807 --> 01:51:50,487
+Onun için diyor ki şurada bir çözüm
+
+556
+01:51:50,487 --> 01:51:56,287
+Şuradaki boşluğu bir tane boş bir şey al
+
+557
+01:51:56,287 --> 01:51:57,647
+İçeride boşluk varsa
+
+558
+01:51:57,647 --> 01:51:59,007
+Niye integer'dan sonra
+
+559
+01:51:59,007 --> 01:52:01,007
+Ne bileyim karakterden sonra
+
+560
+01:52:01,007 --> 01:52:02,427
+Böyle bir şey yaparsak
+
+561
+01:52:02,427 --> 01:52:03,387
+Peki
+
+562
+01:52:03,387 --> 01:52:05,427
+Şöyle bir şey olsa nasıl olur
+
+563
+01:52:05,427 --> 01:52:09,127
+Şimdi ne yapacak
+
+564
+01:52:09,127 --> 01:52:10,307
+Age 2 diyelim buna
+
+565
+01:52:10,307 --> 01:52:12,387
+Burada
+
+566
+01:52:12,387 --> 01:52:14,547
+Age girdik
+
+567
+01:52:14,547 --> 01:52:15,227
+İşte 32
+
+568
+01:52:15,227 --> 01:52:16,307
+Enter'a bastık
+
+569
+01:52:16,307 --> 01:52:17,687
+Sonra diyor ki
+
+570
+01:52:17,687 --> 01:52:38,767
+Enter duruyor. Daha sonra ben bir şeylere daha girdim. Enter 20 girdim. O Enter'ı siliyor. Çünkü o integer değil. Ondan sonraki 20'yi alıyor. Enter 20, Enter yapmıştım artık orada. O sonraki Enter şimdi şurada şuraya takılacak. Yani arada stringli bir şey okurken dikkat edeceğiz arkadaşlar.
+
+571
+01:52:38,767 --> 01:52:48,767
+Çok karmaşık bir şey değil de ufak tefek gözden kaçan bir şey. Bence çok önemli değil ama anlatılıyor. Biz de söylemiş olalım.
+
+572
+01:52:48,767 --> 01:53:03,767
+12 dedik. Bakın bu 12 girildi. Enter şu an şu age 2'ye atanacak. 23 diyorum. 23'den önce mesela bir bufferda Enter var. Bir de şimdi Enter'a basınca bir de o olacak.
+
+573
+01:53:03,767 --> 01:53:32,767
+Ama 23'e kadar olan önceki enter ile beraber almaya çalışacak. O önceki enter boşluk whitespace olduğu için bu next ona göre çalışıyor. Onu siliyor. Whitespace'ı 23 alıyor. Şimdi what is your name dedi. What is your name? Niye dedi? Çünkü şurada bir tane boşluk alındı. Artık burada bir şeyler girebiliriz. Sağlıklı bir şekilde. Onun için şu. Ne demiş hatta? Bug'ın etrafını dolaşmak. Şimdi hukukta hukukun etrafını dolaşmak diye bir şey vardır.
+
+574
+01:53:32,767 --> 01:53:55,247
+Bu da onun gibi böyle bir hata olunca bug'ı arkadan halletmiş oluyorsunuz. Aslında bunun C'de flash diye bir şey vardır. Belki burada da olur. Şöyle aratalım. System.out input'taki flash var mıymış yokmuş.
+
+575
+01:54:01,684 --> 01:54:31,663
+Şöyle yapalım. Outta flash olur mu? Olmaz. Ha şu olabilir belki. Ama outputtaki flash'ı da pek zannetmiyorum. Flash aslında orayı boşaltmak için kullanılan bir şey. C'de doğrudan flash işe yarıyor. Veya Onur'un söylediği gibi ne yapıyoruz? İşte bakın flash burada output. Inputta bir flash olsaydı çünkü o input streaminde bekleyen bir şey.
+
+576
+01:54:31,684 --> 01:54:32,944
+şey output'u ilgilendirmez.
+
+577
+01:54:34,803 --> 01:54:36,103
+Input'a bir daha bakayım.
+
+578
+01:54:41,076 --> 01:54:56,956
+Diğer metotlarına bakalım. Skip, wait, notify. Bunlar genel metotlar. Bunlar pek işe yaramaz. Neyse, belki başka bir yerde başka bir fonksiyon bulursak onu da size söyleyeyim. Ama şu hatanın etrafından dolaşıp dolaylı bir şekilde çözmek için kullanılan bir şey.
+
+579
+01:54:56,956 --> 01:55:25,995
+Yes. Comment line IO for any class, there is no important. We design a class, name of it is car. There are two there and there is one member field. Get plate is a method, set place is another set method. Car is constructor, introduce yourself.
+
+580
+01:55:25,995 --> 01:55:53,455
+This is a main method. This is also test class. This test itself. Car is a reference. From user, enter a license plate. We add this information into this plate member and introduce yourself, input clause. The result is whatever we enter shown.
+
+581
+01:55:53,455 --> 01:56:20,635
+Şimdi burada şuna çok şaşırıyor arkadaşlar. Hocam car class'ı tasarladık. Tamam. Bu kendi içinden nasıl böyle bir nesne üretir veya nasıl referans tutar? Şimdi bu bir kendini test eden bir sınıf arkadaşlar. Yani bir şey yazdınız. Ayrıca bir gidip sınıf yazmadınız. Bu sınıfın içine bir main motodu eklersiniz. Kendi kendine test ettirirsiniz. Bu olur. Hani bir sıkıntı yok bunda.
+
+582
+01:56:20,635 --> 01:56:22,895
+Basit bir örnek
+
+583
+01:56:22,895 --> 01:56:24,116
+Şimdi
+
+584
+01:56:24,116 --> 01:56:28,635
+Önce şu
+
+585
+01:56:28,635 --> 01:56:33,015
+Nereye kadardı? Ha şu şey var
+
+586
+01:56:33,015 --> 01:56:34,955
+Evet
+
+587
+01:56:34,955 --> 01:56:37,455
+Neredeyse 3-4 sayfalık bir şeyimiz kalmış
+
+588
+01:56:37,455 --> 01:56:39,215
+Ondan sonra anlatacağım
+
+589
+01:56:39,215 --> 01:56:41,015
+Geçen hafta belki söylemedik ama
+
+590
+01:56:41,015 --> 01:56:43,875
+Bu hafta ona girmek iyi olur
+
+591
+01:56:43,875 --> 01:56:45,655
+Ufak bir kısım kaldı
+
+592
+01:56:45,655 --> 01:56:48,655
+Şimdi
+
+593
+01:56:48,655 --> 01:57:08,655
+Method, parameters, and control flow. You know in C programming language we divide our program into lots of functions. This is a modular approach to solve our big problems into smaller ones.
+
+594
+01:57:08,656 --> 01:57:22,616
+Yes. In Java, we are using methods and functions both test class and our specified R class. Okay.
+
+595
+01:57:23,736 --> 01:57:35,376
+While using these methods and parameters, Java mostly uses call-by-volume mechanism for parameters.
+
+596
+01:57:35,376 --> 01:57:41,336
+like in swap function.
+
+597
+01:57:41,336 --> 01:57:49,715
+This is a call by value.
+
+598
+01:57:51,836 --> 01:57:53,796
+Keşke silmeseydim bunu.
+
+599
+01:58:02,387 --> 01:58:17,387
+Because these arguments or parameters are primitive data types, so function, usage of function is according to call by value mechanism. Okay?
+
+600
+01:58:19,887 --> 01:58:28,387
+This calling style works in the same way when you pass parameters without pointers in the C++, C or C++.
+
+601
+01:58:28,387 --> 01:58:38,788
+Please remember in C, passing of parameter is by default call by value.
+
+602
+01:58:40,908 --> 01:58:47,127
+Java also used call by value, but call by value of references.
+
+603
+01:58:48,207 --> 01:58:54,867
+This is a mock mechanism of call by reference.
+
+604
+01:58:55,367 --> 01:58:57,827
+Yalancı bir call by reference mekanizması.
+
+605
+01:58:58,387 --> 01:59:17,387
+while passing non-primitive data. Normally non-primitive data can be passed directly by value mechanism, call by reference mechanism, but in Java call by value of references.
+
+606
+01:59:17,387 --> 01:59:43,587
+For this example, this is a reference type. This is not primitive. This is non-primitive reference type example or value. This is also reference type. The references of these objects are copied into this new variable.
+
+607
+01:59:43,587 --> 01:59:59,667
+I will draw again to emphasize the importance of this. For example, integer x and integer y in main.
+
+608
+02:00:05,460 --> 02:00:14,059
+and integer x and integer y in suep.
+
+609
+02:00:17,492 --> 02:00:41,492
+Okay. The references of these objects are copied, but the value of these references are copied in this example, in this variables. Because inside this function, a new references are created for Svett.
+
+610
+02:00:41,492 --> 02:00:56,212
+For this example, the reference, the value of references are copied into all this variable. So changing does not affect the main function.
+
+611
+02:00:57,731 --> 02:01:10,032
+But when it comes to this function, we are doing deeply copy or deeply cloning for primitive variables over wrapper class.
+
+612
+02:01:10,031 --> 02:01:27,852
+This is also value of reference but by using this memory locations inside for this primitive data we can change the actual value by swapping operation.
+
+613
+02:01:27,852 --> 02:01:39,191
+Yani burada yaptığımız şey hepsinde, tabi şunda doğrudan değerler aktarılıyor, nesnenin referansının değeri aktarılıyor arkadaşlar, x ve y'ye.
+
+614
+02:01:39,191 --> 02:01:46,911
+Nesnenin referansının değerinin aktarılmasıyla burada pointerlarda olduğu gibi bir değişiklik olacak diye bir şey yok Java'da.
+
+615
+02:01:47,511 --> 02:01:57,011
+Bunu ancak bir sınıf daha bunu sarmalayarak veya kendi mesela bir book diye bir classımız olsa onun da sarmalayan sınıfını yapacağız.
+
+616
+02:01:57,712 --> 02:02:00,531
+Doğrudan bu referanslar üzerinden değişim mümkün olmuyor.
+
+617
+02:02:01,352 --> 02:02:05,391
+Ancak böyle buradaki değeri alıp buna kopyalayacağız, yedekleyeceğiz.
+
+618
+02:02:05,391 --> 02:02:13,591
+X'in değerini alıp Y'nin değerini daha sonra primitifler üzerinden bir swap işlemi buradaki olduğu gibi yapabiliriz.
+
+619
+02:02:14,291 --> 02:02:16,751
+Ve bu yukarıya yansıyor biraz önce gördüğümüz gibi.
+
+620
+02:02:17,351 --> 02:02:19,931
+Ama diğerlerinde olmuyor.
+
+621
+02:02:20,031 --> 02:02:22,411
+Çünkü değerler kopyalanıyor diyelim.
+
+622
+02:02:22,871 --> 02:02:23,591
+Anlaşıldı mı burası?
+
+623
+02:02:28,627 --> 02:02:58,227
+This method call is different than call by reference. Namely, when you pass parameter as pointer in C or C++, you know, if you use pointer, change the actual memory addresses, or you can access the actual memory of the equation, so you can swap easily.
+
+624
+02:02:58,627 --> 02:03:04,787
+But in Java there is no this type, there is no this mechanism, this type of mechanism
+
+625
+02:03:07,587 --> 02:03:14,547
+This is very similar to pointer except you cannot change the memory addresses of object parameters. This means that
+
+626
+02:03:15,267 --> 02:03:21,267
+changes to object parameters are permanent except re-initializing and swapping objects.
+
+627
+02:03:21,267 --> 02:03:33,007
+Şimdi buradaki swap işleminde ve initialization işlemindekiler dışında nesnelerin parametreleri kalıcı. Nasıl kalıcı?
+
+628
+02:03:34,227 --> 02:03:41,367
+Şimdi şöyle diyelim. Nesneler, belki referanslar değişecek ama gösterdikleri yerler aynı kalacak.
+
+629
+02:03:41,367 --> 02:03:43,587
+Şimdi şuradaki kodu inceleyelim demiş.
+
+630
+02:03:45,967 --> 02:03:49,447
+This is a class method parameter test 1.
+
+631
+02:03:49,447 --> 02:03:54,907
+There are two object references from integers.
+
+632
+02:03:56,467 --> 02:04:03,587
+This is a ilkel düzenle function, sarmalayıcı düzenle ilkel değiştir.
+
+633
+02:04:04,348 --> 02:04:08,047
+These are related to primitive functions except for this.
+
+634
+02:04:08,047 --> 02:04:11,047
+This is a wrapper.
+
+635
+02:04:12,607 --> 02:04:17,327
+Sarmalayıcı değiştir is similar to our swap function.
+
+636
+02:04:17,327 --> 02:04:46,687
+inside this function there is another version of a swap this is a temporary variable for integer but these are new memory location because this is a this use new operator for example x, y and temp this swap does not reflect
+
+637
+02:04:47,327 --> 02:05:14,488
+swap for real value. This is a swapping for global variable via temp. This is a method parameters and try me. What is try me? Yes. Integer count three before
+
+638
+02:05:14,488 --> 02:05:38,327
+İlkel Düzenle count. İlkel Düzenle is a method. This is copied into x and x++ is executed and x is 4 but this does not change. So result is before 3, after 3.
+
+639
+02:05:38,327 --> 02:06:03,428
+Okay. Before 3 and after 3. Wrapping. Wrapper 1. 5. Sarmalayıcı düzenle. This is another important method. 5 is assigned into this variable. X is increment.
+
+640
+02:06:03,427 --> 02:06:27,127
+but the changing does not reflect it. 5 and 5. Okay. Increment is not reflected here. Again, primitive ilkel deyiştir.
+
+641
+02:06:27,988 --> 02:06:34,587
+You know, one and two before and after the situation are the same.
+
+642
+02:06:35,667 --> 02:06:40,807
+Inside this, Sarmalacı Deyiştir, there is no difference.
+
+643
+02:06:41,988 --> 02:06:44,787
+Again, one and two, one and two.
+
+644
+02:06:46,267 --> 02:06:50,627
+Again, Sarmalacı Deyiştir, alt, there is no difference.
+
+645
+02:06:50,627 --> 02:07:12,227
+Once again, all of these swap operations actually are not swap. Inside this function you can say these are swap but actually they are not swap for calling method or main or try me.
+
+646
+02:07:12,227 --> 02:07:37,227
+But when it comes to global variables, this global variable, rep i and rep g, can be swept by this function by anywhere. There is no difference. Before and after are different. This is normal because these are global variables.
+
+647
+02:07:37,227 --> 02:07:38,227
+wherever we call these variables or we use these variables we can easily change the actual values the real values. Understand? Because these are already global variables. Like similar to class of, member of class. Let's remember this example of the last
+
+648
+02:08:07,227 --> 02:08:36,527
+click. After this example I will give a break. For example accessing of ID, accessing of ad yazar etc. These are the same as this variable. This is usual. Yani bunu kullanmış olmakla arkadaşlar gerçek swap meselesini yapmış olmuyoruz. Sadece hani böyle bir şey yapılabilir mi?
+
+649
+02:08:37,227 --> 02:08:46,987
+yapılabilir. Ama gerek var mı? Yani yok. Eğer global değişken kullanılacaksa zaten global integer da kullanabilirdik.
+
+650
+02:08:46,987 --> 02:08:49,447
+Bir saniye.
+
+651
+02:08:55,412 --> 02:09:06,611
+Ama şunların hiçbirisi çalışmıyor. Ancak bizim yaptığımız şekilde gerçek anlamda bir şey integer için yapacaksak o zaman onu kullanabiliriz. Şuradaki örnekte olduğumuz gibi.
+
+652
+02:09:06,931 --> 02:09:17,391
+Bunu normal bir integer için yapmayız da eğer lazım olacaksa şey için yapacağız. İşte bizim kitap class'ımız için bir şeyi böyle swap ederken yapabiliriz diyeceğiz.
+
+653
+02:09:17,391 --> 02:09:27,971
+Tabi o zaman da işin içine başka parametre de gelecek onu daha sonra şurada örneği vardı göstereyim ben size şurada mıydı
+
+654
+02:09:34,963 --> 02:09:36,204
+constructor olabilir.
+
+655
+02:09:44,275 --> 02:09:48,555
+Neyse, arada ben onu bulurum. Gelince diğer class için olanı da gösteririz.
+
+656
+02:09:50,495 --> 02:09:50,775
+Yes.
+
+657
+02:09:52,875 --> 02:10:00,616
+Şimdi bir ara daha verelim. Geldiğimizde çok az bir kısım kaldı. Bir de bir iki şey yapıp, 10 dakika ara yeter. 17-15'te görüşürüz arkadaşlar.
+
+658
+02:12:15,667 --> 02:12:18,047
+Sorum var arkadaşlar İlhan.
+
+659
+02:12:24,180 --> 02:12:29,359
+Sorunuz varsa sorabilirsiniz. Ben buradayım. Araya çıkmış olsanız bile problem değil.
+
+660
+02:13:07,604 --> 02:13:08,803
+Hocam burada mısın sen?
+
+661
+02:13:10,683 --> 02:13:10,963
+Evet.
+
+662
+02:13:12,484 --> 02:13:13,483
+Hocam burada mısın sen?
+
+663
+02:13:13,643 --> 02:13:21,803
+Muhabbet falan çok. Ben baştan beri dinliyorum sakın ha. Sadece ilk hafta kızımın sınavı.
+
+664
+02:13:21,803 --> 02:13:22,963
+Cevap vermeyenler.
+
+665
+02:13:24,823 --> 02:13:26,083
+Soru sorunca cevap verilmiyor.
+
+666
+02:13:26,083 --> 02:13:28,083
+Yani fiilen...
+
+667
+02:13:28,083 --> 02:13:31,583
+Hocam ben bilmediğim için cevap vermiyorum. Aynı bizim yanke gibi.
+
+668
+02:13:31,923 --> 02:13:37,203
+Bilmiyorum, şey bilmeyen bilmiyorum desin de birkaç kişiye bakın sordum. Kimseden ses çıkmadı. Siz buradasınız.
+
+669
+02:13:37,203 --> 02:13:52,043
+Çok ben özellikle de fazla gevezelik yapmak istemedim. Yoksa bak Bilal de aynı şeyi söylüyor. Benim Java'yı baştaki ilk haftadan ben yine kaçırdım herhalde. Devamını getirmem. Çok güzel olacak hocam.
+
+670
+02:13:52,483 --> 02:13:54,923
+Yok çok daha bir şey anlatmadım. Sadece temel.
+
+671
+02:13:54,923 --> 02:14:05,363
+Yok bak kendime söz verdim. Senin baştan alacağım seni. Yani 3 hafta öncesinden alacağım. Mutlaka alacağım ama bunları da bilmiyorum ki. İkinci tekrarıma denk gelsin diye.
+
+672
+02:14:05,363 --> 02:14:19,263
+İlk hafta büyük kızın sınavları için biz okula ilk haftaya gidip geldik. O yüzden ders takimi yaşadım. Artık doğal, normal oda ama halledeceğim bir şekilde. Hala gazım var, bırakmadım, bırakmayacağım.
+
+673
+02:14:20,263 --> 02:14:25,743
+Anladım. En azından arkadaşlar bilmiyorsanız bilmiyorum deyin ki ben de...
+
+674
+02:14:25,743 --> 02:14:32,464
+Tamam tamam. Bizler sorduğunda bağırırız bütün sınıf sana söyleyeyim yani. Hiç sorun yok yani.
+
+675
+02:14:32,464 --> 02:14:38,423
+Ya şu hoş değil, geçenlerde Banu Hoca ile konuşuyoruz, birine soru soruyoruz, cevap yok.
+
+676
+02:14:38,784 --> 02:14:45,303
+Orada belki kayıt olmuş, ben açık çek veriyorum kayıtlara, girsin, devamsızlıktan bırakmıyorum diyorum.
+
+677
+02:14:46,104 --> 02:14:50,343
+Bari elektrik tüketme yani, boş boşuna kendi bütçene zarar, ülkeye zarar, hepimize zarar.
+
+678
+02:14:50,544 --> 02:14:56,563
+Geziyorum dede, hocam ben buradayım, sen neredeysem ben buradayım, o yönden sakın ha.
+
+679
+02:14:56,624 --> 02:14:58,923
+Dedem çağırdı, öpüyorum, buradayım yani, hiç şey yapma.
+
+680
+02:14:58,923 --> 02:15:09,303
+Hocam ben bilmiyorum demeye hakkım oldum diye düşünmüyorum. Çünkü ben birinci sınıf birinci dönemim aslında devam zorunlu kalmasın diye ben bu dersi aldım.
+
+681
+02:15:10,243 --> 02:15:14,523
+Devam zorunlu olmasa da yine de ben olabildiğince öğrenmek için burada bulundum.
+
+682
+02:15:14,523 --> 02:15:23,904
+Sorarsam bir zana tepki. Bilmiyorum demenizde hiçbir sakınca yok. Belki ben bir yeri anlatırken anlamadınız. Onu söylemeniz daha doğru.
+
+683
+02:15:23,904 --> 02:15:26,784
+bilmemek ayıp değil öğrenmemek demektir
+
+684
+02:15:26,784 --> 02:15:31,004
+varsa eksik hemen tarif etmeye çalışalım
+
+685
+02:15:31,004 --> 02:15:33,303
+gidelim yoksa şu oluyor
+
+686
+02:15:33,303 --> 02:15:37,344
+ben boşa konuşmuş olmamda problem cevap vermiş vermem ona da takmıyorum da
+
+687
+02:15:37,344 --> 02:15:39,004
+israf etmeyelim arkadaşlar
+
+688
+02:15:39,004 --> 02:15:41,404
+niye boş boşuna elektrik yapıyoruz ya evde
+
+689
+02:15:41,404 --> 02:15:44,904
+yani hocayı işte devam zorundan
+
+690
+02:15:44,904 --> 02:15:46,004
+tamam ben hoca bırakmıyorum
+
+691
+02:15:46,004 --> 02:15:47,243
+herkes kendi gruplarında eğebilir
+
+692
+02:15:47,243 --> 02:15:51,723
+normal örgünde bile olsa
+
+693
+02:15:51,723 --> 02:16:02,123
+Ancak hiçbir faaliyeti olmayan, sınava girmemiş, ödev vermemiş, hiçbir şey yapmamış, hiç de gelmemiş, o kişiye F0 verebilirim.
+
+694
+02:16:03,003 --> 02:16:15,863
+Ama burada derslere katılmadı veya ne bileyim, bugün kaç saat var, 5 saat dersimiz mi var, 300 dakika katılması gerekirken, bunun %70'ine katıldığı, öyle hesaplar yapacak biri değilim ben.
+
+695
+02:16:17,943 --> 02:16:20,063
+Onun için rahat olun arkadaşlar.
+
+696
+02:16:21,723 --> 02:16:47,763
+Şimdi az bir konu kaldı. Tabi bu şimdi konular şey böyle tırıvırı dediğimiz Siden bilgisi olanların yapacağı şeyler. Hani belki bu dönem şu rapperlar birazcık farklı olabilir. Ama bilmiyorsanız yani veya bir şey anlamadıysanız sormanız en doğru. Eğer sormazsanız ben herhangi bir sorun yoktur deyip konuma devam ederim.
+
+697
+02:16:47,763 --> 02:17:03,763
+230 sayfa slide'ın 60'ı bitti. Gelecek haftada bir 40-50 sayfa yapacağız. Neredeyse işin yarısına geleceğiz. Burada detaylar var. Detayları öğrenmeden geçmeyelim. Zamanımız bol.
+
+698
+02:17:05,332 --> 02:17:07,332
+Hocam sadece bu 270 slide mi bu da ne?
+
+699
+02:17:08,631 --> 02:17:24,012
+230 slide bu var. Bir de yani GUI ile alakalı kısım var da GUI'yi biz size hani sınav olarak pek sormayız. Sadece projenizde kullanacaksın. GUI zaten başlı başına orada 200 sayfada belki orada var ama onu çok fazla kullanmayacağız.
+
+700
+02:17:24,311 --> 02:17:25,711
+GUI'nın açı mı neydi hocam?
+
+701
+02:17:26,611 --> 02:17:29,512
+Graphical User Interface yani Swing falan artık.
+
+702
+02:17:29,512 --> 02:17:31,092
+Artık JavaFX hangisi olmuşlar.
+
+703
+02:17:31,092 --> 02:17:32,611
+Tamam tamam şimdi hatırladım hocam.
+
+704
+02:17:32,611 --> 02:17:59,151
+Yani görsel programlama diyelim ona. Şimdi onların da daha slide'ları var ama yani o başladık mı sonu gelmeyen bir konu onu zaten size sınavda şey yapmayacağız tutmayacağız. Buradaki slide'larda da eksikler var yani bazı şeyler işte her türlü kavram yok. Yani Java'da olmadığı için eklenmemiş normal olarak. Ama onları da görmeniz için ben ekstradan araya eklemeler, saplamalar yapacağız.
+
+705
+02:18:02,772 --> 02:18:08,951
+Bilal, daha önceden bu dersi eğer C ile beraber alıyorsan, sen yapısalda mı alıyorsun?
+
+706
+02:18:09,591 --> 02:18:10,051
+Evet hocam.
+
+707
+02:18:12,091 --> 02:18:14,371
+Kimden alıyorsun? Benden mi, Fatih Hoca'dan mı?
+
+708
+02:18:14,451 --> 02:18:15,291
+Fatih Hoca'dan hocam.
+
+709
+02:18:17,311 --> 02:18:26,891
+Tamam, yani orada da laboratuvarlar falan olacak. C ile alakalı eksiklerini giderirsen bu iki ders birbiriyle baş başa gider.
+
+710
+02:18:26,891 --> 02:18:37,251
+Tabi biraz algoritma eksik olunca biraz belki burada zorlanabilirsin ama bu ders algoritma yoğun bir ders değil. Object oriented mantığı öğrenmeye dayalı bir ders.
+
+711
+02:18:37,632 --> 02:18:52,831
+Yani hocam ders görmemiş olsam da hobi olarak ben önceden ilgileniyordum. Zanneme emişri olarak çalışıyorum hocam. Bu işi gerçekten öğrenmek istiyorum.
+
+712
+02:18:52,831 --> 02:18:58,831
+Farklı şekilde ben farklı kaynaklardan da çalışıyorum. Eksiklerimi kapatman niyetim var olabildiğince.
+
+713
+02:18:59,971 --> 02:19:01,371
+Yoksa Fatih Hoca ile...
+
+714
+02:19:01,371 --> 02:19:02,631
+Olmaz diye bir şey.
+
+715
+02:19:02,631 --> 02:19:05,131
+Ötüremez hocam size söyleyeyim yani açık söyleyeyim.
+
+716
+02:19:07,371 --> 02:19:11,772
+Fatih Hoca'nın anlattığı si ile normal si'nin bir alakası yok.
+
+717
+02:19:12,171 --> 02:19:14,371
+Ben iki kere aldım, üçüncü yok.
+
+718
+02:19:14,471 --> 02:19:17,751
+Siden ziyade şey algoritma anlatıyor ya.
+
+719
+02:19:17,751 --> 02:19:26,311
+Evet, Fatih Hoca'nın olayı tamamıyla olaya çok başka bir boyuttan bakıyor.
+
+720
+02:19:27,091 --> 02:19:28,271
+Algoitmik bakıyor işte.
+
+721
+02:19:28,391 --> 02:19:37,591
+Evet, evet. Yani onun C ile bir alakası yok. Ama Bilal'e tavsiyem normal bir C videosuyla bile gidebilirsin yani.
+
+722
+02:19:37,851 --> 02:19:43,131
+Tabii tabii. Hiçbir farkı yok çünkü. Ha orada da şimdi laboratuvarlar başlıyor.
+
+723
+02:19:43,132 --> 02:20:05,091
+Ben de çünkü o dersi verdiğim için bu dönem önümüzdeki haftalarda laboratuvarlar başlayacak. O da eksiğini gidermene yardımcı olur. Zaten bu tarz şeyleri öğrenmek için illa ikinci sınıfa gelip bu dersi almak gerekmiyor. Tabi ders sizin mühredatınızda olan bir şey. Öğrenmenin hiçbir zaman zamanı, zemini, yeri, şartı yok. Her türlü öğrenilebilir.
+
+724
+02:20:05,091 --> 02:20:09,471
+Evet arkadaşlar süremiz gelmiş.
+
+725
+02:20:11,212 --> 02:20:13,451
+Şimdi şu ekranımızı paylaşalım bir daha.
+
+726
+02:20:16,391 --> 02:20:30,792
+Şimdi for this example again there is a swap operation between primitive variables and non-primitive variables.
+
+727
+02:20:30,792 --> 02:20:38,132
+Actually, this is useless example. We know the results already.
+
+728
+02:20:39,752 --> 02:20:51,852
+The inside this function before and after are different because x and y is 1 and 2 respectively.
+
+729
+02:20:51,852 --> 02:20:55,611
+Here x and y is 2 and y respectively.
+
+730
+02:20:55,611 --> 02:21:07,611
+Why? Because this is inside of this method. There is no another method called change reflects for this variables.
+
+731
+02:21:07,611 --> 02:21:24,611
+Also, the situation is the same as for integer wrappers class. Before and after are different, 3 and 5 respectively. Here, 5 and 3.
+
+732
+02:21:24,611 --> 02:21:53,811
+Yani bu örneği arkadaşlar şey yapılmış ama hani şurada da şeyi çağırıyor işte yani metodun öncesi metodun sonrası diye bir şey yok her şey metodun içinde oluyor yani içinde olunca önceyle sonra elbette değişik olacak yani bu algoritmik akışa uygun bir şey hani aynı olmasını beklemek zaten burada bir gariplik olur normal integer de olsa sarmalayıcı sınıf da olsa sonucumuz aynı olacak
+
+733
+02:21:53,811 --> 02:21:55,491
+Herhalde burada bir sorun yoktur.
+
+734
+02:21:57,772 --> 02:21:59,091
+Evet son iki slide'mız.
+
+735
+02:22:00,511 --> 02:22:00,811
+Şimdi ama...
+
+736
+02:22:02,195 --> 02:22:03,215
+Şöyle bir şey var.
+
+737
+02:22:05,916 --> 02:22:17,656
+Passing arrays into function or any class, the actual values are changed like in C.
+
+738
+02:22:17,656 --> 02:22:37,335
+Okay? You know in C, passing arrays into any function, you can actually pass the address of arrays, the first element of arrays or address of arrays.
+
+739
+02:22:37,335 --> 02:22:45,395
+So, changing or changes in your array reflects the caller function.
+
+740
+02:22:46,135 --> 02:22:51,775
+Here, this is an integer array with five elements.
+
+741
+02:22:52,355 --> 02:23:06,175
+From zero to end, we are writing what before for this writing, we are calling a method from low-high-swept function.
+
+742
+02:23:06,175 --> 02:23:32,615
+And this is a static method. So we can directly access this method over class table. So this is a changing of do something. I know the changing between the last element and the first element as far as I know.
+
+743
+02:23:32,615 --> 02:24:01,135
+1, 2, 3, 4, 0 is printed here as 5, 2, 3, 4, and 5. As a result, as a consequence, if you pass an Array into your function, changes are, affects the color method or function. The original values, original data are changed.
+
+744
+02:24:02,615 --> 02:24:26,796
+Evet anlaşıldı mı burası? Demek ki dizi aktarırsak da ne oluyormuş? Aynı C'de olduğu gibi C'de nasıl içeriğini değiştirince buraya yansıyorsa bu. Yani şu swap işlemleri bu yansıma işlemlerinde şuraya system out printf yazıyorlar ya bir sürü kitaplar tamamen laf kalabalığı. Hiçbir anlamı yok. Zaten burada yaptığım bir şeyin burada yani yansıdığını göreceğiz. Öyle değil mi?
+
+745
+02:24:26,795 --> 02:24:48,175
+Yani ben kitapları bazen bu konuda eleştiriyorum. Yani yansımaması zaten acayip bir şey olur. Hayır. Şurada yazdırsa after, before anlarım. Önemli olan burada bir fonksiyona bir verinin girip o fonksiyondan değişmiş olarak çıkmasıdır. İşte bu yapılan muhabbetin manası bu.
+
+746
+02:24:48,175 --> 02:24:55,315
+Şimdi şuraya geldiğimizde, control flow ile alakalı ilk derste sizlere kısa bir C özeti geçmiştim.
+
+747
+02:24:56,035 --> 02:25:03,235
+This is related to structural programming or computer introduction to computer science course.
+
+748
+02:25:04,315 --> 02:25:15,935
+Decision making or if condition and curly brackets as if condition curly brackets and else the same as C.
+
+749
+02:25:15,935 --> 02:25:41,855
+Also, comparison operator, comparator operator, lower than, greater than, lower or equal, greater or equal, equal or not equal. These are the same. Double operator is used in logical operations to express multiple conditional statements in a conditional statement.
+
+750
+02:25:41,855 --> 02:25:53,055
+For example, your attendance is lower than 20 and your average grade is greater than 40.
+
+751
+02:25:53,055 --> 02:25:57,975
+So evaluate your grade, letter grade.
+
+752
+02:25:59,175 --> 02:26:00,055
+We can...
+
+753
+02:26:00,371 --> 02:26:24,251
+consider two conditional statements. So there are two different conditional statements operators, the logical AND and logical OR. The usage of this operator are the same with same as C or other, for example, digital design, computer hardware, all of them is okay.
+
+754
+02:26:24,251 --> 02:26:44,971
+You know this operation. For loop, while loop and do while are the same. Do while needs a semicolon at the end of the while condition. So which case are the same with C languages.
+
+755
+02:26:44,971 --> 02:26:53,831
+In addition to this loop, there is another loop, for loop, or for each loop.
+
+756
+02:26:56,151 --> 02:27:05,271
+Some friends, one of my friends asked me, Toygar or others?
+
+757
+02:27:06,271 --> 02:27:08,511
+Bir arkadaşımız for each döngüsünü sormuştu.
+
+758
+02:27:11,151 --> 02:27:12,511
+Kim sormuştu?
+
+759
+02:27:13,211 --> 02:27:14,031
+Ben değil hocam.
+
+760
+02:27:17,459 --> 02:27:37,839
+Şimdi bu tabi genel bir iteratorlarda göreceğiz bunu. Böyle bir dizi şeklinde veya liste şeklinde bir yapınız varsa illa böyle şey olması da gerekmiyor. Tabi burada new int diyelim.
+
+761
+02:27:42,579 --> 02:27:44,579
+O zaman şunu şöyle mi yapacaktık?
+
+762
+02:27:47,939 --> 02:27:49,639
+Veya şuna gerek yoktu herhalde ya.
+
+763
+02:27:54,164 --> 02:28:16,164
+Şimdi dizi şeklinde bir yapınız varsa bunun üzerinde for döngüsüyle gezebilirsiniz ama bu daha özel bir şey olan integer a in dizi deyip in değildi buradaki noktaydı herhalde.
+
+764
+02:28:22,131 --> 02:28:23,931
+Aynısı C Sharp'ta da var çünkü.
+
+765
+02:28:26,071 --> 02:28:26,691
+Niye yazmadı?
+
+766
+02:28:42,804 --> 02:28:56,283
+Ne yapıyor arkadaşlar bunun yaptığı şey? Bu ilk elemandan alıyor. Hiç atlamadan, son elemana kadar bütün elemanları buraya bir defa kopyalıyor. Sonra sen burada ne yaparsın? İşte istersen değerleri topla.
+
+767
+02:28:58,355 --> 02:29:00,355
+İstersen onları ekrana yazdır.
+
+768
+02:29:02,215 --> 02:29:05,155
+Bu aslında iterator gibi bir şeydi.
+
+769
+02:29:14,804 --> 02:29:15,123
+Enemki.
+
+770
+02:29:19,476 --> 02:29:46,236
+kopyalıyor. Burada elemanı değiştirirsen mesela A eşittir A artı bir yaparsan buradaki şey yansır mı? Yansımaz. Çünkü ne yapıyor? Birebir dizinin içindeki şu elemanı alıyor, A'nın içine atıyor. Daha sonra sen burada ne yaparsan yap diyor. Bu sadece böyle bir okuma tarzı. Yani read only gibi düşünebilirsin. Çok değiştirme imkanı yok bildiğim kadarıyla burada. Böyle bir şey yapacak. Şimdi şuradan sonrasını bir yorum yapalım. Ondan sonraki kısım benim anlatacağım bölümün alakalı.
+
+771
+02:29:46,236 --> 02:29:48,316
+Canım bir şey sorayım.
+
+772
+02:29:49,756 --> 02:29:54,556
+Sean Forage şeyle, objelerle çalışır mı?
+
+773
+02:29:54,656 --> 02:29:55,275
+Kullanılıyor.
+
+774
+02:29:55,915 --> 02:29:58,635
+Kutup mesela, kitap, ağa.
+
+775
+02:29:58,656 --> 02:29:59,535
+Olur, olur.
+
+776
+02:29:59,876 --> 02:30:00,696
+Tamam teşekkür ederim.
+
+777
+02:30:00,795 --> 02:30:01,115
+Olur.
+
+778
+02:30:01,836 --> 02:30:04,196
+Orada da ne yapacağız? Şimdi onu da söyleyecektim.
+
+779
+02:30:04,316 --> 02:30:07,435
+Zaten bundan sonraki kısım onu kullanmaya gelecek.
+
+780
+02:30:07,615 --> 02:30:12,736
+Yani bir diziyi böyle yazdırıyoruz da, bir kitap dizisini veya başka bir şeyi nasıl yazdırırız da geleceğiz.
+
+781
+02:30:13,376 --> 02:30:14,496
+Önce suyun sonucunu bir görelim.
+
+782
+02:30:24,084 --> 02:30:51,764
+1, 2, 3, 4, 5, toplamda 15. Tamam mı arkadaşlar? Bunun kullanımı böyle. Parsan'ın sorduğu gibi bunu şeyde de kullanabiliyoruz diğer sınıflarda. Ona şimdi kod yazacağım ama önce şuradaki şeyi bir görelim. Şimdi iki tane string. Bu stringi f fonksiyonuna gönderiyorum. Burada yani f fonksiyonu içinde büyük harfle çevirmişim, şey küçük harfle de çevirmişim. Bunun before'unu after'ını yazıyorum.
+
+783
+02:30:51,764 --> 02:31:09,084
+Burada hani görünecek biz de adeta uydup bunu da yazdık. Sonra buradan return ediyorum. Return ettikten sonra şurada parantezde alıyorum. Bakın bu lower case'in şeyi. Şimdi yalnız ben bir hash fonksiyonu yazdım. Burada stringleri swap etmek istiyorum. Yani o da neredeydi? Şuradaydı.
+
+784
+02:31:09,084 --> 02:31:39,063
+G fonksiyonu bakın iki tane string'e alıyor ama string biraz önceki integer'a benzer bir örnek. Bu hiçbir şekilde gerçek anlamda swap edecek. Yani şuradaki before G ve after G sonuçları aynı olacak. Niye? Bunu biraz önce açıkladık. Ama ben bunu eğer gerçekten swap etmeyin. O zaman bir class yazdım. str class diye şuraya. Bunun içinde de tek bir tane string tutuyorum ve bu string ne yapıyor? Bir tane işte bu public. Biraz önce biz problemi yapmıştık.
+
+785
+02:31:39,084 --> 02:31:40,744
+işte bir tane string değişken tutuyor.
+
+786
+02:31:41,283 --> 02:31:42,183
+Buraya geldiğimiz zaman
+
+787
+02:31:48,340 --> 02:31:49,039
+Şuradan ha.
+
+788
+02:31:50,239 --> 02:31:52,979
+Tamam mı? Başka bir şey yok. Bir daha çalıştırıyorum bunu.
+
+789
+02:31:55,139 --> 02:31:57,600
+Rapper classların böyle bir faydası var.
+
+790
+02:31:58,939 --> 02:32:04,959
+Neredeydi? İşte şurada bir merhaba before h, dünya, dünya after h, merhaba.
+
+791
+02:32:04,959 --> 02:32:12,279
+Yani şurada şu işin olduğunu, şurada daha önce G'nin içerisinde merhaba dünya, merhaba dünya hiçbir değişimin olmadığını görüyoruz.
+
+792
+02:32:13,520 --> 02:32:18,299
+Şimdi gelelim. Bizim şu ikinci hafta uygulamada yaptık örneğe.
+
+793
+02:32:18,340 --> 02:32:21,659
+Şunu açayım önce
+
+794
+02:32:21,659 --> 02:32:25,579
+Parsa'nın sorusuna da burada bakmış olalım
+
+795
+02:32:32,147 --> 02:32:32,987
+Şunlar
+
+796
+02:32:32,987 --> 02:32:35,707
+Dursun şimdi kaldıralım.
+
+797
+02:32:40,819 --> 02:32:41,619
+Burada
+
+798
+02:32:46,835 --> 02:32:48,135
+Hata olarak ne var?
+
+799
+02:32:50,375 --> 02:32:51,595
+Neymiş bu?
+
+800
+02:32:56,115 --> 02:33:21,876
+beraber iyi definetmişiz. Şunu da sileyim. Döngülerle alakalı. Bu bizim yaptığımız şeydi arkadaşlar. Örnekti. Uygulama saatinde yaptığımız örnekti. Şimdi diyorum ki ben ForEach, yani For döngüsünü burada istiyorum. Benim kütüphanemde kitaplarım var. Şimdi kütüphaneyi burada kullanamam. ForEach'i yazmak için. Ama şöyle diyebilirim.
+
+801
+02:33:21,876 --> 02:33:42,876
+kitap türünden K örneklerim var. Bunlar nelerden oluşuyor? Tabii ona ulaşmam gerekecek. Kütüphane nesnesinden vardı. Hatırlatayım şöyle. Kütüphane nesnesinden vardı. Buraya kitaplar eklemiştik. Kütüphane nesnesindeki kitaplara erişebiliyorum.
+
+802
+02:33:42,875 --> 02:34:09,296
+Şimdi biliyorum ki bu bir dizi. Her biri kitap içeren bir dizi. Bu kitabın içerisinde şöyle bir metot vardı. Ne metodu? Kitap tanıtı. Kitap tanıtı burada çağıracağım. Kitap tanıtı ne yapıyormuş? Hiçbir şey return etmiyor. Burada değer yazdırıyor.
+
+803
+02:34:09,296 --> 02:34:38,495
+O zaman teste geliyorum. Bu kitabı artık bu bir nesne oldu. Yani birinci, sıfırıncı kitap alındı. Nereye yazıldı? Şu kitapta çağıracağım. Bunun öncesinde tabii şunu alalım. İsterseniz şuradan yok edelim. Bizim kütüphanemiz vardı. Kütüphane listele diyorum. Şurada. Birinci kütüphanemiz, birinci nesnemiz. Şuraya alıyorum. İkinci kütüphane nesnesinin şu kısımlarını comment yapalım.
+
+804
+02:34:39,296 --> 02:34:46,575
+Şunu da şöyle, hatta şu GC çalışsın, garbuş kolektöründe çalıştığını tekrar görelim.
+
+805
+02:34:48,296 --> 02:34:55,215
+Evet, oluşturduk. Daha sonra kitaplar oluşturduk. Bu kitaplarla yazılarları ilişkilendirdik.
+
+806
+02:34:58,815 --> 02:35:09,075
+Daha sonra kütüphaneye de bu kitapları ekledik. Sonra dedi ki biz, bu kitaplar şeyi, ama bakın dikkat edin, ben bu kütüphanedeki,
+
+807
+02:35:09,295 --> 02:35:24,455
+Kitaplar dizisine erişebiliyorum. Eğer erişemeseydim ne yapacaktım? Eğer private olsaydı şuradaki kitaplar, ne yapacaktım? GetSet gibi bir şey kullanacaktık. Biz burada biraz daha genel yazdık. Şimdi bunu çalıştırıyorum.
+
+808
+02:35:24,455 --> 02:35:41,875
+Bu for each döngüsü bu şekilde kullanılabiliyor. Hatta şu kütüphane listelerinden sonra south deyip bir ara bir şey verelim. Şöyle break verelim araya. İkisinin kayıtlarının birebir aynı olduğunu göreceğiz.
+
+809
+02:35:48,915 --> 02:35:53,856
+İşte ne oldu? Yazar bulunamadı. Ali Ali Ali dediği bir şeyler. 1-2-3-4 bu kadar yazar var.
+
+810
+02:35:54,635 --> 02:35:56,915
+Yazılıyor. Varsa bu senin soruna cevaptı.
+
+811
+02:35:58,256 --> 02:36:01,135
+Şimdi arkadaşlar bir de rica ederim.
+
+812
+02:36:04,195 --> 02:36:05,495
+Şunu yazdır istesem.
+
+813
+02:36:09,620 --> 02:36:11,439
+Kitabı yazdırmak istesem ne olacak?
+
+814
+02:36:13,139 --> 02:36:16,999
+Aslında burası kalıtımla da alakalı da burada söylemek için.
+
+815
+02:36:17,120 --> 02:36:18,340
+Yani şunu yazdırmayayım.
+
+816
+02:36:18,719 --> 02:36:19,319
+Görürüm.
+
+817
+02:36:29,747 --> 02:36:53,127
+Bunu yazdırmaya çalışırken adresini göreceğiz diyoruz. Peki bakalım. Çünkü ne yapacak? Her bir kitabın yani bu diziydi. Bu dizi ne yapacak? Bakın burada olduğu gibi adreslerini görüyoruz. Peki ben başka bir şey görmek istiyorum. Yani kitap deyince şu gördüğüm mesajları göremez miyim? Öyle düşünelim.
+
+818
+02:36:53,127 --> 02:37:05,167
+Şimdi bunun için şu kitabı çağırınca aslında bir metot çalışıyor arkadaşlar. Bu metodun adı toString metodu ve bu toString metodu aslında biz şurada görüyoruz.
+
+819
+02:37:05,167 --> 02:37:15,207
+Nokta deyince, yemedik. Bakın bir yerde toString çıkıyor. Equals'u geçen hafta konuşmuştuk. GetClass, HashClass, diğer şunlar var.
+
+820
+02:37:15,247 --> 02:37:21,207
+Şimdi bu toString'i ben kendi amacım doğrultusunda değiştirirsem o zaman göreceğim farklı olacak.
+
+821
+02:37:21,207 --> 02:37:36,667
+Gelin ulaştık. Şimdi bu kime ait? Kitaba ait bir şey. Kitaba ait bir şey de ben toString metodunu tanımlayacağım. Peki bu nereden çıktı? Bu toString metodu. Yani hiçbir yerde tanımlamadık. Ama her nesnede var. Nereden geliyor bu?
+
+822
+02:37:43,219 --> 02:37:44,359
+Hocam, class.
+
+823
+02:37:44,359 --> 02:37:44,619
+Evet.
+
+824
+02:37:46,460 --> 02:37:47,099
+Static class.
+
+825
+02:37:47,099 --> 02:37:47,580
+Nereden geliyor?
+
+826
+02:37:49,459 --> 02:37:50,439
+Static'te değil.
+
+827
+02:37:53,480 --> 02:37:54,159
+Karıştırdım.
+
+828
+02:37:55,859 --> 02:37:57,379
+Object class'ından geliyor.
+
+829
+02:37:59,419 --> 02:38:02,060
+Dedik ya, bir tane object diye bir class var.
+
+830
+02:38:03,439 --> 02:38:06,619
+Bu object class'ı bütün sınıfları kapsayan bir class.
+
+831
+02:38:07,379 --> 02:38:09,659
+Bu toString'de orada tanımlanmış.
+
+832
+02:38:09,759 --> 02:38:10,560
+Nasıl tanımlanmış?
+
+833
+02:38:11,019 --> 02:38:12,619
+Biraz önce şu çıktıları gösterecek şekilde.
+
+834
+02:38:12,619 --> 02:38:24,299
+Yani diyor ki bu sınıfın adını yaz, pardon önce hafta iki package'ın adını yaz, sonra o package'ın altındaki sınıfın adını yaz, git bir de bellekteki referans adresini yaz, o şekilde tanımlanmış
+
+835
+02:38:24,299 --> 02:38:26,900
+Yani burada diyelim ki biz
+
+836
+02:38:26,900 --> 02:38:32,300
+Şunu yönderelim, string, this.
+
+837
+02:38:32,300 --> 02:38:33,859
+Şöyle diyelim hatta
+
+838
+02:38:33,859 --> 02:38:35,659
+this.
+
+839
+02:38:36,940 --> 02:38:38,139
+get class
+
+840
+02:38:38,139 --> 02:38:40,419
+class
+
+841
+02:38:40,419 --> 02:38:53,979
+Hatta bunun yanına ne yazıyorduk arkadaşlar? İşte kitaplar, kitap işte, artı, null da ekleyelim. Ne olacak? Bir görelim.
+
+842
+02:38:55,899 --> 02:39:05,779
+Null'u biliyorsunuz geçen hafta söylemiştim. Null string'in yanına gelince göreceğim şey string'i null'u string haline geliyor. Bakın ne oldu?
+
+843
+02:39:05,779 --> 02:39:10,539
+Hafta 2'nin içinde kitap nokta kitap
+
+844
+02:39:10,539 --> 02:39:15,719
+hafta bir kitap sınıfı varmış. Şu bana şunu verdi.
+
+845
+02:39:16,659 --> 02:39:21,419
+Bunun yanında ben kitap iste ekledim. Sonra da null ekledim. Hepsi böyle bir string olarak geldi.
+
+846
+02:39:22,059 --> 02:39:24,519
+Demek ki böyle bir sonuç yok. O zaman ben şu kitap tanıtı
+
+847
+02:39:24,519 --> 02:39:29,659
+acaba kendi çıkarlarım doğrultusunda şöyle bir şey yapsam
+
+848
+02:39:29,659 --> 02:39:33,379
+nasıl olur diyebilirim. Şimdi şuradaki ifadeyi alıyorum.
+
+849
+02:39:35,779 --> 02:39:53,679
+Buradaki ifadeyi alıyorum. Şurada birazcık düzen. Şimdi bu bir kere string döndürecek. Yani bunun tanımını değiştiremem. Şimdi diyor ki this.id'yi al, this.id'yi al. Tamam. Ben diyorum ki şurası bir string olsun.
+
+850
+02:39:53,679 --> 02:40:21,379
+S eşittir dedim. Bu S'ye şöyle sistem alt print şeyden kalan içinde yazacağım. Şunu ekledim. Sonra diyor ki this.id hani yazarları da şu an için tabii almayacağız. Yazarlara da bu string to string'i eklememiz lazım. Şimdilik dursun. Eğer diyelim ki yazar eşittir Nulsa
+
+851
+02:40:25,203 --> 02:40:43,563
+Buna S'ye S artı eşittir. Şu yazar bulunamadığı ekleyelim. Null değilse kısmına daha sonra bakarız. Daha vaktimiz kalırsa bakalım. Tamam. Başka da bir şey yok. Yani bir kitabın nesi vardı? Yazar bilgisi vardı. Şunu ekleyeceğiz.
+
+852
+02:40:47,283 --> 02:41:15,464
+ne oldu? ID dedi, ad ekledi. Yazarı Nul ise yazar bulunamadı dedi. Yazarı Nul değilse şimdilik hiçbir şey eklemedik. Yazar bilgisi yok. Sonra da diyorum ki şu artık S'yi yani bu bir string değişken return it. Return edince ne yapacak? Bunu ben nereden toString bakın hiçbir şey yazmadım. Metodu çağırırken yani bu referansıyla çağırırken bir nesneyi gidecek otomatik toString metodu çağırılacak.
+
+853
+02:41:15,464 --> 02:41:20,624
+Şimdi kitap tanıtı bir görelim. Hatta şöyle yapayım. Kopyalayalım.
+
+854
+02:41:24,020 --> 02:41:29,359
+Aslında biz burada ne yapmış olduk? ToString metodunu söyleyin.
+
+855
+02:41:33,780 --> 02:41:47,319
+obje sınıfında tanımlanmış to-string metodunu geçer sıkıldık. Yani ona kendimiz bir yeni tanım belirledik. Bir şeyi tanımlayınca, yani bir şeyin tanımlama yetkisini biz kendi elimize almış olduk burada.
+
+856
+02:41:48,479 --> 02:41:59,659
+Şimdi bakın, kütüphane listele dedi. Sonra yıldızı yazdı. Sonra dedi ki, idc1 olan, işte şey1 olan, bakın bunun zaten yazar bulunamadıymış, yazar bulunamadı yazdı.
+
+857
+02:41:59,659 --> 02:42:01,979
+Sonra gitti bunları çağırdı
+
+858
+02:42:01,979 --> 02:42:04,039
+Ne oluyor?
+
+859
+02:42:04,999 --> 02:42:07,839
+Ben orada nasıl tanımladıysam birebir hepsini görüyorum burada
+
+860
+02:42:07,839 --> 02:42:09,219
+Sonra ne yapacağım?
+
+861
+02:42:09,339 --> 02:42:11,799
+İşte şu kitap tanıt fonksiyonlarını çağıracağım
+
+862
+02:42:11,799 --> 02:42:13,879
+Bir de şuraya yıldız ekleyelim öbür şeye
+
+863
+02:42:13,879 --> 02:42:20,379
+Şuradan biraz daha derinleşelim ondan sonra bitireceğim
+
+864
+02:42:20,379 --> 02:42:26,460
+Kitapta böyle bir şey yapabildiysem ben bunu yazarda da yapabilir miyim?
+
+865
+02:42:26,460 --> 02:42:29,820
+ne dersiniz?
+
+866
+02:42:31,820 --> 02:42:34,800
+ToString metodunu yaptıysam yazarda da yapabilir miyim?
+
+867
+02:42:37,300 --> 02:42:38,300
+Ben yapabilirsiniz.
+
+868
+02:42:38,300 --> 02:42:43,599
+Siz seniz yapabilirsiniz.
+
+869
+02:42:43,940 --> 02:42:45,239
+Mustafa Onur ne dersin?
+
+870
+02:42:48,000 --> 02:42:49,119
+Bilemedim hocam.
+
+871
+02:42:49,119 --> 02:42:49,580
+Bu saat.
+
+872
+02:42:51,580 --> 02:42:52,280
+Tamam.
+
+873
+02:42:52,280 --> 02:43:08,440
+Şimdi bak demiştim ki Mustafa toString metodu obje sınıfından geliyor değil mi? Biz bunu ne yaptık? Kendimize göre tekrar tasarladık. Bu kitaba obje sınıfından geliyorsa yazara da obje sınıfından gelmesi gerekmez mi? Onur, Mustafa Onur.
+
+874
+02:43:08,439 --> 02:43:18,159
+Çünkü hepsinin en üstünde yani bir hiyerarşik düşün kitabın da üstünde obje var yazarın da üzerinde obje var.
+
+875
+02:43:18,159 --> 02:43:23,439
+Dolayısıyla ben şöyle diyelim hatta şundan daha şey olur belki açıklayıcı olur.
+
+876
+02:43:24,139 --> 02:43:30,639
+Ben y1. dediğimde burada da toString'i görebiliyorum.
+
+877
+02:43:30,780 --> 02:43:34,139
+Yani hangi nesneyi üretirseniz üretin hepsinde toString'i görüyorsunuz.
+
+878
+02:43:34,159 --> 02:43:38,219
+Onun için bütün sınıflarda toString yapabilirsiniz.
+
+879
+02:43:38,439 --> 02:43:52,780
+Ha bakın yazar tanıt diye şurada bir şey vardı ya bunu şimdi ben to string üzerinden çağrıyorum public string ama string geri dönecek yani burada sisteme altın telan yazmaya gerek yok.
+
+880
+02:43:52,780 --> 02:43:54,020
+string diyorum.
+
+881
+02:43:55,100 --> 02:43:57,539
+Şimdi bunu yapınca bir uyarı da veriyor hatta şey bana.
+
+882
+02:43:58,119 --> 02:43:59,020
+Diyorum ki return
+
+883
+02:43:59,020 --> 02:44:04,300
+bu yazarın id'sini al.
+
+884
+02:44:04,440 --> 02:44:05,179
+Yazarın adı o.
+
+885
+02:44:05,280 --> 02:44:06,539
+Başka da bir bilgisi yoktu zaten.
+
+886
+02:44:06,660 --> 02:44:08,039
+İki tane bilgi tutmuştuk o örnekte.
+
+887
+02:44:08,819 --> 02:44:10,419
+Şu aynı değeri geri gönder.
+
+888
+02:44:11,739 --> 02:44:12,580
+Yazar id.
+
+889
+02:44:12,880 --> 02:44:13,580
+Tabii bunu ne yapacağız?
+
+890
+02:44:13,679 --> 02:44:14,919
+Şuraya tırnak alacağız.
+
+891
+02:44:14,919 --> 02:44:16,280
+This.id
+
+892
+02:44:16,280 --> 02:44:19,000
+artı
+
+893
+02:44:19,000 --> 02:44:20,380
+yazar id.
+
+894
+02:44:20,539 --> 02:44:21,419
+Şuradan şunu aldık.
+
+895
+02:44:21,419 --> 02:44:50,300
+artı bir de şuraya noktalı bilgi ekleyeceğiz. Bakın bunu yapınca şurada farklı bir şey gördük. Add override notation diyor. Bakın bu bir override. Ne demek override? Bir şeyin üstüne yazmak. Yani diyor ki bu to string go to source yapabilir miyim bilmiyorum veya go to definition declaration falan. Mesela buna diyor ki super implementation diyelim. Görebilecek miyim? Ha gördük bak çok güzel. Beni nereye götürdü?
+
+896
+02:44:51,419 --> 02:45:20,059
+Object Class'ına götürdü. İşin aslını şimdi görmüştüm. Demek ki burada toString diye bir şey varmış. Şu an yazılmış, kompile edilmiş kodu da gizliyor. Gizlediği için bunu göremiyoruz ama biz artık bu public olarak tanımlanmış bu şeyi alıp şurada yazar içinde, kitap içinde veya herhangi bir nesne içinde hangisi olursa olsun kendimiz kullanıyoruz. Şimdi geldik kitabın içinden ben yazar bulunamadı demiştim. Eğer şeyse yazar dursa. Eğer değilse
+
+897
+02:45:21,419 --> 02:45:33,500
+ne yapalım yazar bilgisini buraya ekleyelim yani S artı eşittir diyorum bis nokta
+
+898
+02:45:33,716 --> 02:45:56,615
+Diz'in yazar bilgisini getir. Bunun yazarı kim? Herhalde o da şeydi. Bir tane yazarı olduğunu kabul etmiştik. Bu Diz nokta yazarı nereden getirecek? Gidecek. ToString metodunu çağıracak. Hatta Diz nokta yazar nokta ToString diye de çağırabiliyorduk bunu. Bir dakika var mı? Evet var.
+
+899
+02:45:57,695 --> 02:46:01,896
+ToString'e hatta biraz önce bakın. Bak güzel bir şey yakaladım.
+
+900
+02:46:03,716 --> 02:46:04,795
+Şunu kapatıyorum.
+
+901
+02:46:08,500 --> 02:46:09,819
+Şimdi geldim kitaba.
+
+902
+02:46:12,099 --> 02:46:13,139
+This nokta yazar.
+
+903
+02:46:13,799 --> 02:46:14,400
+To sit link.
+
+904
+02:46:14,699 --> 02:46:15,919
+Bir dakika, görmedik.
+
+905
+02:46:16,139 --> 02:46:16,720
+Niye görmedik?
+
+906
+02:46:20,244 --> 02:46:23,443
+Yazardakini mi kapatmıştık? Evet, yazardakini kapatmıştık.
+
+907
+02:46:27,572 --> 02:46:38,992
+yazar nokta. Gerçi aynı duruyor. Normalde aşağıda tanımlanmış görünüyordu ama herhalde derlemedi. Şuradan bir şey deneyeceğim.
+
+908
+02:46:42,708 --> 02:46:59,067
+Ane nokta. Bakın toString deyince bu burada hiçbir ayrım yapmadı. Bir çizgi yok. Ama ben kendi sınıfımda bunu tanımlayınca aynısını mesela K için, kitap için yapalım. Gerçi burada görüyor ya. Direkt toString olarak görüyor. Neyse orada çalışmıyor demek ki.
+
+909
+02:46:59,067 --> 02:47:12,167
+this.yazar.toString veya this.yazar dediğinde ne yapacak? Gidecek o toString'i çağıracak. O toString bana şurada ne tanımladıysam içerisinde onu söyleyecek, onu geri verecek.
+
+910
+02:47:12,167 --> 02:47:17,447
+Ve şimdi bir de çalıştıralım. Yani iç içe metotlar çağrılmış oluyor arkadaşlar.
+
+911
+02:47:19,208 --> 02:47:23,647
+Şimdi artık yazar bulmamız diyemiyoruz. Bir şeyler bulacak.
+
+912
+02:47:23,647 --> 02:47:45,388
+Bakın ne oldu? Şu ikinci kısımda java bir yazar id bir yazar adı. Ne yapıyor bunların hepsi? Tabi biz burada altı satıra yazmıştık öncekinde. Bunu da hemen yanına yazdık. Artı eşittir ekledik. ToString metoduyla bu sonucu görüyoruz. Şuraya da ne diyelim? ToString diyelim. Hatta Türkçe yazalım ne olacak?
+
+913
+02:47:47,007 --> 02:47:51,148
+ToString diyelim. Evet sorumuz var mı?
+
+914
+02:47:53,647 --> 02:48:17,127
+Evet bakın to string ile yazılabiliyor. Bunu kalıtım konusunda daha detaylı göreceğiz. Herhangi bir sorunuz yoksa saat 19'da toprak hocamda göreceğiz. Kısaca laboratuvardan bahsedeyim. Arkadaşlar uygulamalarda hocanız gelecek size soru çözecek. O zamana kadar anlattığımız konularla alakalı.
+
+915
+02:48:17,127 --> 02:48:38,288
+Şimdi ben şurada bir şey vardı onu sizinle de bir link paylaşacağız. Laboratuvar programı gerçekten paylaşıldı yani onda çok bir değişiklik olacağını zannetmiyorum ama şimdi burada 3 grubun öğrencilerin hepsi var. Siz bu linkte yani bu sayfaların hepsini görebileceksiniz. Şu an yükleniyor herhalde.
+
+916
+02:48:38,287 --> 02:49:05,747
+Benim grubumda Toprak Hocamız size yaptığı laboratuvardan elde verdiği puanları buraya girecek. Diğer gruplar da burada da herkes tek bir Excel ile bu işi halledecek. Proje notumda buraya girilecek. Şurada eğer isminizin yanında Yıldız varsa bu listeyi gerçi güncellemedim ama birkaç eklem. Gerçi bana eklem olmamış. Diğer sınıflar olmuş.
+
+917
+02:49:05,747 --> 02:49:27,347
+diğer gruplar olmuş. Laboratuvar puanından muaftınız. Yani laboratuvardan puan almıyorsunuz. Sizin ortalamanızı proje ve finallere görebiliyorsunuz. Ama uygulamalara ve laboratuvarlara girip dinleyebilirsiniz. Soruyu çözebilirsiniz. İsterseniz gönderebilirsiniz. Hani eksiğiniz, yanlışınız var mı? Hocanız kontrol eder. Şurada muafiyet oluyor. Durum böyle.
+
+918
+02:49:27,347 --> 02:49:53,887
+Evet. Şimdi takvimlerinde bu hafta uygulama var. Görevlimiz Himmet Toprak Keskin, Toprak Hoca kendi Toprak ismini kullanıyor. Bu hafta saat 19'da. Konularımız da burada. Şu konuların sıralamasında belki bir güncelleme veya sonraki tarihlerde bir güncelleme olabilir. Şurada da önemli günler falan tarihler var. Bu tarihlere göre laboratuvarları mesul olan arkadaşlar kaçırmasınlar. Onu söyleyeyim.
+
+919
+02:49:53,887 --> 02:50:05,827
+Bunun linkini ben size şeyden göndereceğim daha sonra. Birkaç düzenleme daha yapacağım da. Yani dönem boyunca notlarınızı belki sınav notlarınızı da ben buradan ilan ederim. Bu da bu şekilde. Var mı sorunuz?
+
+920
+02:50:10,324 --> 02:50:18,603
+Yok, devamsızlık önemli değil. Laboratuvardan alacağınız puanlar söz konusu. O puanlar belli bir ortalamaya yansıyor.
+
+921
+02:50:19,923 --> 02:50:34,763
+Evet, hocamız bizden mezun. Yani dersi biliyor, konuyu biliyor. Öyle dışarıdan gelip de bir şey bilmeyen bir şey değil. Özellikle çok da istekli. Kendisi 3-4 gün önceden hazırlıklar yaptı. Yani benimle de paylaştı sağ olsun.
+
+922
+02:50:34,763 --> 02:51:04,743
+faydalı olacağını düşünüyorum. Yani kendisine bir sıkıntı çıkarmazsınız. Zaten o konuda bir sıkıntı olacağını düşünmem. Daha öncelerden bazı asistanlarla tartışmalar olmuş geçen dönem özellikle benim verdiğim derslerde değil de işte diğer işletim sistemi falan o tarz derslerde bazı şeyler olmuş. Ben kendisine öyle bir problem olacağını düşünmem. Varsa bir sorun muhabbet ederek, iletişim kurarak olmadı benimle haberleşerek hallederiz.
+
+923
+02:51:04,763 --> 02:51:09,703
+Yani burada olabilecek sorun en fazla notunuzu beğenmezsiniz. Notunuza da itiraz edersiniz. Tekrar bakarız.
+
+924
+02:51:10,583 --> 02:51:18,404
+İşte virüs zamanı insanların hastası oluyor, sağ oluyor, ölüsü oluyor. Bu tarz şeyler insanların moral durumlarını etkileyebiliyor arkadaşlar.
+
+925
+02:51:18,404 --> 02:51:24,864
+Bunu göz önünde bulunduralım olur mu? Yani tabii herkes görevinin vazifesinin şuurunda olacak.
+
+926
+02:51:24,983 --> 02:51:29,443
+Öğrenci öğrenciliğine, hoca hocalığına, saygı sevgi vesaire o sınırlara dikkat etmesi lazım.
+
+927
+02:51:30,083 --> 02:51:33,843
+Ama bazen işte olabiliyor. Onun için birazcık anlayışlı karşılamak gerekir.
+
+928
+02:51:33,843 --> 02:51:54,283
+Bunlar olacaktır diye değil de daha önceki tecrübelerden yola çıkarak ufak bir hatırlatma. Ben aslında çok böyle hatırlatmaları da sevmiyorum. Neyse görüşürüz. Yani bir sıkıntı olursa haberleşiriz yani. Hepinize afiyet olsun. Görüşmek üzere. Teşekkür ederiz hocam. Görüşmek üzere. İyi akşamlar. Sağlığınızla sağlık hocam. Çok sağ olun. Sağ olun. Görüşürüz.

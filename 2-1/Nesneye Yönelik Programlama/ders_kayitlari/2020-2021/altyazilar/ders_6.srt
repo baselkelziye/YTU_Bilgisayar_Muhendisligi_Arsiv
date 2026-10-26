@@ -1,0 +1,2219 @@
+1
+00:00:12,756 --> 00:00:14,376
+Evet, merhabalar arkadaşlar.
+
+2
+00:00:34,036 --> 00:00:34,915
+Sesim geliyor mu?
+
+3
+00:00:37,395 --> 00:00:38,396
+Geliyor hocam.
+
+4
+00:00:39,155 --> 00:00:41,215
+Tamam. Şimdi hocamız da gelecek.
+
+5
+00:00:42,876 --> 00:00:45,996
+Gerçi biz 3 dakika erken gelmişiz ama problem değil.
+
+6
+00:00:58,771 --> 00:00:59,872
+Toprak hocam hoş geldiniz.
+
+7
+00:01:01,171 --> 00:01:02,971
+Hoş bulduk hocam.
+
+8
+00:01:04,212 --> 00:01:05,232
+Nasılsınız, iyisiniz?
+
+9
+00:01:07,511 --> 00:01:09,152
+İyiyim hocam, siz nasılsınız?
+
+10
+00:01:09,451 --> 00:01:15,991
+Teşekkür ederim, ben deyim. Arkadaşlar, biraz daha, gerçi vakit var, 3-4 dakika daha gelir herhalde.
+
+11
+00:01:21,151 --> 00:01:26,251
+Şöyle arkadaşlar, 5 geçe yapalım, biz de hazırlanmış oluruz.
+
+12
+00:01:26,251 --> 00:01:29,731
+18.05'de görüşmek üzere diyelim o zaman.
+
+13
+00:08:32,052 --> 00:08:39,131
+Evet arkadaşlar, merhabalar tekrardan. 5 dakikada sayımız biraz daha artmış.
+
+14
+00:08:41,472 --> 00:08:43,171
+Hocam bu kadar mı oluyor genelde?
+
+15
+00:08:44,191 --> 00:08:57,631
+Normalde 59 kişiydi ama bunların yaklaşık 10-12 kişisi zaten muaf. Bir de uygulama vs. olunca bir de bilmiyorum başka dersler vardır. Bir sayı azalabiliyor ama yani 40-45 falan olabiliyoruz bazen.
+
+16
+00:08:57,631 --> 00:09:10,111
+Yavaş yavaş artacaktır. Dersin başladığını haber verebilirseniz gelsinler arkadaşlar. Hocamız başlayacak. Toprak hocamız bizden mezundur. Kendisini tanıtsın. Ben daha sonra sizi baş başa bırakayım.
+
+17
+00:09:12,711 --> 00:09:20,851
+Merhaba arkadaşlar. Hocanın dediği gibi bizim bölümden mezun. Yani bu dersi ben de aldım.
+
+18
+00:09:20,851 --> 00:09:47,291
+İşte uygulamaları ve lapları beraber yapacağız. Uygulamalarda ben bir problem anlatacağım, bir de onu çözüm yapacağım, konuyu yapacağım. Laplarda da benzer zorlukta bir soru soracağız size. Siz onları işte yüzeceksiniz sisteme. Onlarından not da alacaksınız. Bu da Egil sunu notunuzun belli bir kısmını oluşturacak. Onu hocanız ilk ders de söylemiştir.
+
+19
+00:09:47,291 --> 00:09:50,092
+Başka?
+
+20
+00:09:51,531 --> 00:09:53,211
+Çok zor bir şeyler işlemeyeceğiz.
+
+21
+00:09:53,211 --> 00:09:56,751
+Burada amacımız bu object-oriented programlama nedir?
+
+22
+00:09:56,891 --> 00:09:57,991
+Nasıl bir konseptleri var?
+
+23
+00:09:58,171 --> 00:10:01,111
+Bunları konseptleri anlamaya çalışacağız.
+
+24
+00:10:01,272 --> 00:10:04,371
+Algoritmaları çok karnış tutmayacağız ki bu konseptler anlaşılabilsin.
+
+25
+00:10:05,871 --> 00:10:06,412
+Bu kadar.
+
+26
+00:10:06,552 --> 00:10:12,091
+Başka sorunuz varsa ya da söylemek istediğiniz bir şey söyleyebilirsiniz.
+
+27
+00:10:17,235 --> 00:10:34,975
+Hocamız bizden mezun olduğu için sizin yaptığınız öğrenciliğin bütün süreçlerini biliyor. Sizin içinizden birer şey. Onun için çoğu bölümün kurallarına, bölümün işleyişine hakimdir. O konuda zaten bir şey yok.
+
+28
+00:10:34,975 --> 00:11:03,475
+Anlamadıklarınızı sorun. Bu saatlerde yani boş boşuna hani belki burada anlatacağım şeyin konunun içeriğini çoğu yerde bulabilirsiniz ama burada önemli olan sizin bir şeyler sormanız arkadaşlar. Ben size YouTube'dan bir sürü video kaydı gönderebilirim. Belki aynı konuları anlattınız ama farklı sorular seçiyoruz. İşte şu da olsun, şu olmasın gibi spesifikasyonlar birleyip çözdüğümüz sorular sizin bir şeyleri kavramanıza yönelik.
+
+29
+00:11:03,475 --> 00:11:26,535
+Anlamadığınız her şey sorun ancak o şekilde faydalı olur. Diyelim herhangi bir sorunuz yoksa ben müsaade isteyeceğim. Sizlere iyi akşamlar. Arada belki katılabilirim ama başka bir şeyim var onunla uğraşacağım. Hocam sizden veya diğer arkadaşlar var mı sorunuz? Peki teşekkürler. İyi akşamlar arkadaşlar. Görüşürüz. İyi akşamlar hocam.
+
+30
+00:11:26,535 --> 00:11:31,775
+Onu da şey yapacağım, şu an yapabiliyorsunuz değil mi?
+
+31
+00:11:32,455 --> 00:11:34,355
+Evet, paylaştı hocam tamam.
+
+32
+00:11:36,035 --> 00:11:37,655
+Görünüyor değil mi ekranı arkadaşlar?
+
+33
+00:11:38,135 --> 00:11:38,735
+Geldi geldi.
+
+34
+00:11:39,355 --> 00:11:39,775
+Sağ olun.
+
+35
+00:11:43,220 --> 00:11:44,819
+Ekran görünüyor değil mi arkadaşlar?
+
+36
+00:11:45,739 --> 00:11:45,979
+Evet.
+
+37
+00:11:46,019 --> 00:11:46,440
+Görünüyor.
+
+38
+00:11:47,819 --> 00:11:48,499
+Tamam.
+
+39
+00:11:49,459 --> 00:11:53,100
+Şimdi basit bir kitaplık uygulaması yapacağız.
+
+40
+00:11:53,499 --> 00:11:55,779
+Bunda kitaplar var, raflar var.
+
+41
+00:11:56,100 --> 00:11:58,459
+Bir de kitaplık var.
+
+42
+00:12:00,079 --> 00:12:01,839
+Bu kitabın özellikleri var.
+
+43
+00:12:01,919 --> 00:12:03,779
+Adı var, yazarı var, isterseniz var.
+
+44
+00:12:04,159 --> 00:12:06,720
+Bir de tüm kitap sayılarını saklamak istiyorlarmış.
+
+45
+00:12:08,039 --> 00:12:10,619
+Bir de kitabları ekleyebileceğiz, silebileceğiz.
+
+46
+00:12:10,759 --> 00:12:12,560
+Rafa ne yapabilirsek arayabileceğiz.
+
+47
+00:12:13,220 --> 00:12:28,300
+Egeo Meli'nin de vermiş. Bunu uygulayacağız. Şurada elmaslar var. Onları şeyini birazdan anlatacağım. Bunun farkına gireriz. Şuradan projeye çıkıp başlayalım.
+
+48
+00:12:28,299 --> 00:12:44,519
+Soruyu bölüm bölüm bir şey anlatırken sorarsanız açmıyor. O an onunla ilgili ise sorabilirsiniz. Ya da o bölüm bittikten sonra ben sorarım zaten sorumunuz var mı diye o zaman sorabilirsiniz.
+
+49
+00:12:46,639 --> 00:12:55,059
+Tamam şunu da sağlayalım. Tamam. Bir çalıştıralım çalışıyor mu yeni projemiz.
+
+50
+00:12:55,059 --> 00:12:59,399
+Şimdi F6'ya bastım, bekliyorum.
+
+51
+00:13:01,479 --> 00:13:02,939
+Tamam, oluyor.
+
+52
+00:13:03,799 --> 00:13:08,519
+Şimdi ilk oluşturmamız gereken sınıf bence kitap sınıfı.
+
+53
+00:13:09,439 --> 00:13:11,319
+En basit ve diğerlerinden bağımsızlık.
+
+54
+00:13:11,319 --> 00:13:32,539
+Şimdi zaten UML'i biliyorsunuzdur. Bu başındaki eksiler private olduğunu anlatıyor. Bu artılar public olduğunu. Private ise o değişkene erişemiyoruz direkt. Bu metodol üzerinden erişmemiz gerekiyor.
+
+55
+00:13:32,539 --> 00:13:34,499
+yazalım mesela.
+
+56
+00:13:35,279 --> 00:13:36,999
+Private string
+
+57
+00:13:36,999 --> 00:13:39,779
+private
+
+58
+00:13:39,779 --> 00:13:43,380
+string yazar
+
+59
+00:13:46,707 --> 00:13:48,587
+private string
+
+60
+00:13:48,587 --> 00:13:50,567
+isbn
+
+61
+00:13:50,567 --> 00:13:52,507
+şimdi burada tam metnikama
+
+62
+00:13:52,507 --> 00:13:53,648
+koydum da bu isbn
+
+63
+00:13:53,648 --> 00:13:56,327
+şey olması
+
+64
+00:13:56,327 --> 00:13:57,287
+büyük olması
+
+65
+00:13:57,287 --> 00:14:00,447
+o yüzden bunu final yapalım
+
+66
+00:14:00,447 --> 00:14:01,427
+değiştirilemesin
+
+67
+00:14:01,427 --> 00:14:04,587
+bir de statik bir değişikliğimiz var
+
+68
+00:14:04,587 --> 00:14:06,067
+bu şey diyor
+
+69
+00:14:06,067 --> 00:14:07,707
+constructor'da henüz oluşturduğumuz için
+
+70
+00:14:07,707 --> 00:14:10,787
+ne diyeceğiz
+
+71
+00:14:10,787 --> 00:14:11,227
+private
+
+72
+00:14:11,227 --> 00:14:14,487
+statik int
+
+73
+00:14:14,487 --> 00:14:16,427
+kitap
+
+74
+00:14:16,427 --> 00:14:20,428
+Tamam, şu kısmı yaptık.
+
+75
+00:14:22,428 --> 00:14:25,428
+Şimdi şu ilk Constructor'ımızı oluşturacağız.
+
+76
+00:14:25,428 --> 00:14:30,428
+Burada kısa yoldan insert kod değil.
+
+77
+00:14:30,428 --> 00:14:32,428
+Otomatik oluşturmasını sağlayabiliriz.
+
+78
+00:14:32,428 --> 00:14:34,428
+Bu şekilde oluşturalım.
+
+79
+00:14:35,428 --> 00:14:38,428
+Tamam, bu ISBN'nin uyarısı gitmiş oldu.
+
+80
+00:14:38,428 --> 00:14:40,428
+Çünkü burada ilgilendirildi.
+
+81
+00:14:40,428 --> 00:14:42,428
+Burada da bunları da final yapabilirsiniz.
+
+82
+00:14:42,427 --> 00:14:45,047
+Tamam. Başka
+
+83
+00:14:45,047 --> 00:14:47,187
+şimdi getir setlerimiz var zaten.
+
+84
+00:14:47,287 --> 00:14:48,227
+Onları da bu hafta edelim.
+
+85
+00:14:50,627 --> 00:14:52,847
+Şu şekilde. Şimdi burada
+
+86
+00:14:52,847 --> 00:14:55,307
+şeyin getir ve setleri gelmediği
+
+87
+00:14:55,307 --> 00:14:56,928
+sevenin. Neden? Çünkü final.
+
+88
+00:14:57,667 --> 00:14:59,387
+Şimdi final'sı biz buna set edemememiz
+
+89
+00:14:59,387 --> 00:15:01,307
+lazım. Yani şudur diyememiz lazım. Başta
+
+90
+00:15:01,307 --> 00:15:02,887
+oluştuysa hep o şekilde kalması lazım.
+
+91
+00:15:03,407 --> 00:15:04,447
+Ama DM'leri
+
+92
+00:15:04,447 --> 00:15:06,987
+edebilmeniz gerek. Yani onu kullanacağız.
+
+93
+00:15:09,787 --> 00:15:10,568
+Onun yüzden getir
+
+94
+00:15:10,568 --> 00:15:12,248
+onun
+
+95
+00:15:12,248 --> 00:15:14,407
+yani şöyle get fonksiyonunu
+
+96
+00:15:14,407 --> 00:15:14,888
+yazmış olur.
+
+97
+00:15:16,648 --> 00:15:18,907
+Şimdi bu kitap sayısı da aslında set edilmeyecek.
+
+98
+00:15:19,068 --> 00:15:20,868
+Bu konstaterda oluştukça
+
+99
+00:15:20,868 --> 00:15:22,547
+bunu arttıracağız. Bu statik
+
+100
+00:15:22,547 --> 00:15:24,728
+yazmamın sebebi hani diğerlerinde statik
+
+101
+00:15:24,728 --> 00:15:26,527
+yazmıyor. Bunu da yazıyor. Bir fark olması lazım.
+
+102
+00:15:28,148 --> 00:15:28,748
+Diyelim kitap
+
+103
+00:15:28,748 --> 00:15:30,687
+sayısı artı artı diyelim. Her konstater
+
+104
+00:15:30,687 --> 00:15:32,468
+içerisinde şey yapmış olsun.
+
+105
+00:15:34,428 --> 00:15:34,888
+Başka
+
+106
+00:15:34,888 --> 00:15:36,767
+to stink var. Onu birazdan
+
+107
+00:15:36,767 --> 00:15:37,148
+yapalım.
+
+108
+00:15:38,888 --> 00:15:39,767
+Bir de
+
+109
+00:15:39,767 --> 00:15:41,447
+şöyle bir şey.
+
+110
+00:15:41,888 --> 00:15:42,888
+Yazacağım public.
+
+111
+00:15:45,707 --> 00:15:46,487
+Geleyelim.
+
+112
+00:15:46,687 --> 00:15:47,068
+Static
+
+113
+00:15:47,068 --> 00:15:50,068
+string ise benne nedir
+
+114
+00:15:50,068 --> 00:15:50,987
+diye bir fonksiyonumuz olsun.
+
+115
+00:15:54,611 --> 00:15:55,091
+Şöyle.
+
+116
+00:15:55,832 --> 00:15:57,072
+Burada string es diyelim.
+
+117
+00:15:59,751 --> 00:16:00,291
+İse
+
+118
+00:16:00,291 --> 00:16:02,351
+bana kitapları
+
+119
+00:16:02,351 --> 00:16:06,051
+ayırt etmek için
+
+120
+00:16:06,051 --> 00:16:09,211
+bir
+
+121
+00:16:09,748 --> 00:16:38,067
+Yönelik yazamadım. Esizleyelim. Bir neden numaradır. Bunları turn esleyelim. Tamam. Şimdi bu class'ımızı yazdık. İşte bu özelliklerimiz var. Hani C'de de abstractları gördüksiniz. Ona çok benzeyen bir şey. Şimdi bu sınıfımızda da test edeceğiz. Şimdi bir de şey söyleyeyim. Bu class ismiyle Java dostucusun ismi aynı olmak zorunda. Yani burayı test desem şu an hata verir. Yani
+
+122
+00:16:38,067 --> 00:16:40,627
+şey yapar.
+
+123
+00:16:41,627 --> 00:16:43,268
+Bu da değiştirmeyi istiyorsak yani
+
+124
+00:16:43,268 --> 00:16:45,968
+aplikation altı şeyse
+
+125
+00:16:45,968 --> 00:16:48,127
+buradan refactor deyip
+
+126
+00:16:48,127 --> 00:16:49,748
+yeniden atılandır.
+
+127
+00:16:51,187 --> 00:16:53,127
+Bunu test olarak değiştirelim.
+
+128
+00:16:55,487 --> 00:16:57,167
+Şimdi kitap sınıfımızı oluşturduk.
+
+129
+00:16:59,167 --> 00:17:00,387
+Bir kitap yaratalım.
+
+130
+00:17:00,387 --> 00:17:02,928
+Mesela kitap tipinde
+
+131
+00:17:02,928 --> 00:17:04,788
+kitap bir eşittir.
+
+132
+00:17:05,567 --> 00:17:06,367
+Bir kitap.
+
+133
+00:17:08,067 --> 00:17:11,067
+3 tane şey alıyordu.
+
+134
+00:17:14,067 --> 00:17:22,067
+Ne diyelim isimleri çok şey yapmayalım. Kitap 1, yazar 1, 1, 2, 3, 4. Tamam şimdi bir de bunu yazdıralım.
+
+135
+00:17:30,579 --> 00:17:54,920
+F6 yapalım. Tamam, şimdi şöyle bir şey yazdırdı. Bu bizim için çok anlamlı değil. Java kendisi objeleri ayırt etmek için. O yüzden oraya string beta da ekleyelim ki biz o kitapları ayırt edebilirim. Yani string beta yazdığımız şey o print'e verdiğimizde çıkacak şey aslında. Burada bütün özelliklerini yazsın. Kitap bu desin, adı bu desin, yazar bu desin, ebenes bu desin.
+
+136
+00:17:54,920 --> 00:18:20,920
+Tekrar dönüp çalıştırdığımızda kitap bu yazarı bu bilmem neyse o tamam. Kitap bir nokta set deyip, set at dedik sadece at ve yazar çıkmadı. Adını kitap iki olarak değiştirebiliriz. Set bu işleri öderek değişken değiştirmeyi getti almayı sağlıyor zaten. Bu şekilde değişmiş oldu. Başta böyle yazdırız şimdi böyle yazdırız.
+
+137
+00:18:20,920 --> 00:18:30,920
+Şimdi bu statik değişkenlerimiz var. Bir de isvene şu şeyi çağıralım. isvene nedir? Biraz farklı. Şimdi statik bir metot.
+
+138
+00:18:30,920 --> 00:18:40,919
+Statik metot şu demek. Hiçbir obcu oluşturmana, şu anten obcu oluşturduk kitap 1 diye, hiçbir obcu oluşturmana çağırabileceğimiz bir metot.
+
+139
+00:18:40,919 --> 00:18:45,159
+İsefene'yi direkt class'ın kendisinden çağırıyoruz.
+
+140
+00:18:46,779 --> 00:18:48,279
+Mesela nokta İsefene nedir?
+
+141
+00:18:49,119 --> 00:18:53,179
+Şimdi normal İsefene'yi yazdı.
+
+142
+00:18:53,339 --> 00:18:54,499
+Şeyden de çağırabiliriz.
+
+143
+00:18:54,599 --> 00:18:56,339
+Burada kitap bir için de çağırabiliriz.
+
+144
+00:18:59,019 --> 00:19:00,159
+Nereden? Şu.
+
+145
+00:19:06,003 --> 00:19:22,543
+Kitap 1-2-A'yı büyük yazmayacağız. Şöyle. Tamam. Şimdi bunu direkt class'ın ismiyle de çağırabiliriz. Ama mesela işte get up diğer metotlarımız var diye onları çağıramayız. Çünkü hangi kitabın adı? Ya da hangi kitabın yazarı? Burayı da hiç şuraya alalım.
+
+146
+00:19:23,764 --> 00:19:31,303
+Şimdi statik metodun şeyi bu. Belli bir kitabı özel değil. Yani bir kitabın bir adı vardır, yazarı vardır. Doğru, spesifik. Ama ise ben ne?
+
+147
+00:19:31,303 --> 00:19:53,143
+Kitap.getup diyemeyiz yani. Çünkü hangi kitabın adı? Onu belli değil. Kitap sınıfı bu kadar gibi. Anlamadığınız bir şey var mı? Sormak istediğiniz.
+
+148
+00:19:58,548 --> 00:20:07,747
+Biri çete yazmış diye tahmin ediyorum. Ahmet Hoca'ymış. Tamam. Var mı arkadaşlar sorunuz? Yok da diyebilirsiniz. Hani belli bir şey olsun.
+
+149
+00:20:07,968 --> 00:20:23,167
+Hocam, şöyle daha çok amaç anlamak için. Bu statik şeyi kullanırken, statik asıl kullanma amacımız her zaman obje yaratmadan direkt class'tan kullanabilmek için mi? Yoksa bu böyle yan etkisi falan gibi mi? Yoksa hani statik kullanıyorsak amacımız bu mu?
+
+150
+00:20:24,968 --> 00:20:25,728
+Anlatabildim mi?
+
+151
+00:20:25,728 --> 00:20:29,728
+Başka bir etkisi de var mı statik olma zaman?
+
+152
+00:20:32,128 --> 00:20:41,707
+Yani oradaki değişkenlerin saklandığı yerlerle falan alakalı da hani şimdi sizin kullanım amacınızda göre değişir ama bu şekilde kullanabilirsiniz.
+
+153
+00:20:41,707 --> 00:20:47,268
+Hani bütün sınıfın bilgisini saklandırır. Belli bir hocaya olmayan, belli bir şey olmayan şeklinde.
+
+154
+00:20:47,847 --> 00:20:51,768
+Burada şeyi de unuttum. Bu kitap sayısını da statik yaptık. Her kitap oluşturulumunda artıyor.
+
+155
+00:20:52,427 --> 00:20:54,128
+Şurada mesela bir kitap daha oluşturalım.
+
+156
+00:20:54,127 --> 00:21:14,447
+Hocam şimdi şöyle ben de dinliyorum. Senin sorun yankı. Statik metot hakkında ise senin sorun şu. Sık kullanılan, nesne üretilmesine gerek kalmayan metotlar için metotları statik tanımlamak daha kolay oluyor.
+
+157
+00:21:14,448 --> 00:21:26,488
+statiğin manasına gelirsek, statik eğer biraz önce hocamın da yapacağı gibi şimdi yapıyor, eğer bunu memberlar üzerinde yapacaksak o zaman onun farklı kullanımları var.
+
+158
+00:21:26,488 --> 00:21:43,488
+En basiti şu ana kadar kitap sınıfından kaç tane nesne üretilmiş. Eğer öyle bir kurgu düzenlersem ve onu da birer arttır arttırıcı dersem her kitap oluşturulduğunda mesela gizli bir şekilde arka planda bunu tutabilirim.
+
+159
+00:21:44,447 --> 00:21:48,387
+Statik yani her defasında birden başlamayacak.
+
+160
+00:21:49,047 --> 00:21:50,067
+Anladım unutmayacak.
+
+161
+00:21:50,167 --> 00:21:52,247
+Hal doyurdan devam edecek.
+
+162
+00:21:52,787 --> 00:21:55,067
+Bu da bellekte farklı bir yerde saklanıyor.
+
+163
+00:21:55,067 --> 00:22:00,267
+Ben bu yerleşimini daha sonra size anlatacağım.
+
+164
+00:22:01,047 --> 00:22:03,527
+Metot olarak bakarsam farklı kullanımlar var.
+
+165
+00:22:03,867 --> 00:22:05,967
+Memor olarak bakarsam farklı kullanımlar var.
+
+166
+00:22:06,207 --> 00:22:07,607
+Süper. Sağ olun hocam. Mantıklı.
+
+167
+00:22:07,607 --> 00:22:09,908
+Tamam.
+
+168
+00:22:10,988 --> 00:22:11,827
+Şuraların
+
+169
+00:22:11,827 --> 00:22:16,107
+işte get kitap sayısı dediğimizde de bunu da statik yapmamız lazım.
+
+170
+00:22:16,947 --> 00:22:17,607
+Yapmışız.
+
+171
+00:22:21,875 --> 00:22:51,855
+İntekler
+
+172
+00:22:32,468 --> 00:22:37,207
+Şöyle, yani iki tane kitap oluşturduk diye iki tane yazdırabiliriz. Yani şurada avatış dedi ki iki tane olmuş olacak.
+
+173
+00:22:38,027 --> 00:22:46,407
+Şimdi bu kitap sınıfı bu kadar. Şimdi bir sonraki sınıf, RAP sınıfı. Aslında tek bir alanı var. Yani kitapların dizisinden oluşuyor.
+
+174
+00:22:46,407 --> 00:22:47,687
+Ben bir şey açayım.
+
+175
+00:22:51,527 --> 00:22:58,687
+İşte kitap dizisinden oluşuyor. Kendi metodları var. Yani çok basit. Ereğe kitap ekleyeceğiz, kitap çıkaracağız vs.
+
+176
+00:22:58,687 --> 00:23:05,688
+Sıfı
+
+177
+00:23:07,155 --> 00:23:09,755
+Şimdi test alan var.
+
+178
+00:23:09,755 --> 00:23:11,755
+Private.
+
+179
+00:23:11,755 --> 00:23:17,155
+Şimdi demin private string yazıyordu.
+
+180
+00:23:17,155 --> 00:23:18,155
+Tipini yazıyorduk.
+
+181
+00:23:18,155 --> 00:23:19,155
+Şimdi bunun tipini yazacağız.
+
+182
+00:23:19,155 --> 00:23:20,155
+Onun tipine.
+
+183
+00:23:20,155 --> 00:23:24,155
+Kitap gereği tipinde.
+
+184
+00:23:24,155 --> 00:23:25,155
+Adı ne? Kitaplar.
+
+185
+00:23:25,155 --> 00:23:27,155
+Kitaplar.
+
+186
+00:23:27,155 --> 00:23:29,155
+Bu şekilde tek bir alan var.
+
+187
+00:23:29,155 --> 00:23:33,155
+Şimdi bunun işte Construct'ını yine şuradan oluşturalım.
+
+188
+00:23:33,155 --> 00:23:34,155
+Şunu değiştireceğiz ama.
+
+189
+00:23:34,155 --> 00:23:36,155
+Nereden doğalım?
+
+190
+00:23:36,155 --> 00:23:39,536
+Şimdi on, construct this.
+
+191
+00:23:42,867 --> 00:24:03,427
+Burada aslında bir şey almayacağız. Bu kitaplarımızı ilklendirmemiz lazım. Nasıl yapıyoruz? Kitap 10. Şimdi raf sınıfımızın içinde constructor çağrılmıyor. Şurada bir raf oluşturduğumuzda 10 tane alanı olan bir dizi oluşmuş olacak.
+
+192
+00:24:03,427 --> 00:24:18,567
+Tamam. Şimdi bu bize kitap ekleyeceğiz. Şerap sileceğiz. Rafa göstereceğiz. Bir de bu dizisini döndürecekmişiz. Tamam. Public. Dönüştüğimiz neymiş? Boy itmiş.
+
+193
+00:24:20,707 --> 00:24:22,268
+Metod ismimiz kitap ekle.
+
+194
+00:24:24,408 --> 00:24:25,768
+Aldığı şey de kitap.
+
+195
+00:24:26,548 --> 00:24:27,387
+Bunlar kağıt diyelim.
+
+196
+00:24:29,527 --> 00:24:32,607
+Şimdi bu şu an hepsi içi null.
+
+197
+00:24:33,427 --> 00:24:44,347
+Ama hep null olmak yani doldukça null olmamış oluyor. O yüzden null olmadığı yerleri gezip null olmadığı yere ekleyelim. Bunu nasıl yapalım?
+
+198
+00:24:44,347 --> 00:24:47,847
+While'la gezeceğiz. Nasıl gezeceğiz?
+
+199
+00:24:47,847 --> 00:24:54,707
+Şimdi bunun bir de length'i var. Nasıl diyelim?
+
+200
+00:24:54,707 --> 00:24:56,907
+Küçükken Kitaplar.
+
+201
+00:25:00,756 --> 00:25:01,256
+ve
+
+202
+00:25:01,256 --> 00:25:05,515
+i eşit eşitken nala
+
+203
+00:25:05,515 --> 00:25:08,375
+i'yi arttıralım.
+
+204
+00:25:11,216 --> 00:25:12,275
+Tamam, nerede?
+
+205
+00:25:12,995 --> 00:25:14,435
+i nala eşit olmaz zaten.
+
+206
+00:25:15,216 --> 00:25:16,335
+Kitap nala eşit olur.
+
+207
+00:25:16,756 --> 00:25:17,776
+Kitap nala eşit olmaz.
+
+208
+00:25:18,776 --> 00:25:20,495
+Kitabın i'si nala eşit olur.
+
+209
+00:25:22,276 --> 00:25:23,375
+Kitapta kitaplar zaten.
+
+210
+00:25:23,936 --> 00:25:24,315
+Tamam, şöyle.
+
+211
+00:25:25,155 --> 00:25:26,596
+Şimdi bu ne yapacak?
+
+212
+00:25:26,676 --> 00:25:27,855
+Mesela ilk nala olduğu için
+
+213
+00:25:27,855 --> 00:25:32,055
+Null değil.
+
+214
+00:25:35,055 --> 00:25:36,475
+Kitap lengthden küçük.
+
+215
+00:25:36,715 --> 00:25:37,315
+Null değil.
+
+216
+00:25:39,195 --> 00:25:40,955
+Null ise bunun direktleşmesi lazım.
+
+217
+00:25:41,095 --> 00:25:41,256
+Tamam.
+
+218
+00:25:42,595 --> 00:25:44,575
+Bir de buraya şey açtık.
+
+219
+00:25:44,655 --> 00:25:45,936
+Onun kontrolünü yapmamız lazım.
+
+220
+00:25:48,675 --> 00:25:50,415
+İyi kitaplar noktada length de oldu mu?
+
+221
+00:25:50,595 --> 00:25:52,175
+Yani hangi kosurdan çıktı?
+
+222
+00:25:54,475 --> 00:25:56,495
+Eğer bu olmadıysa
+
+223
+00:25:56,495 --> 00:25:59,255
+Küçüklüğü de diyebilirdik.
+
+224
+00:26:00,155 --> 00:26:01,995
+Kitaplar iyi, iyi.
+
+225
+00:26:02,455 --> 00:26:03,255
+O kitaba atacağız.
+
+226
+00:26:04,395 --> 00:26:05,095
+Şey oldu.
+
+227
+00:26:08,535 --> 00:26:10,735
+Basitçe ne yaptık?
+
+228
+00:26:11,455 --> 00:26:12,035
+Kitap geldi.
+
+229
+00:26:12,575 --> 00:26:13,295
+Boş yer bulduk.
+
+230
+00:26:13,815 --> 00:26:14,495
+K'yı koyduk.
+
+231
+00:26:19,028 --> 00:26:21,547
+Tamam. Bunların hepsini en son test edelim o zaman.
+
+232
+00:26:25,203 --> 00:26:31,443
+Biri bir şey mi dedi?
+
+233
+00:26:32,164 --> 00:26:49,423
+Evet, ben dedim de hocam. Bir şey sorabilir miyim? Oradaki public rafta diz kitapları eşittir, new kitap onu dediğimiz zaman oradaki new'un tam olarak amacını anlayamadım. Normalde yeni nesne yaratırken buradan nesne dizisi mi yarattık biz?
+
+234
+00:26:49,423 --> 00:27:05,903
+Evet, Nesne'dir. İçine kitap alabilen bir dizi yer attı. Yani Rem'de 10'unuz içine kitap bulunabilen bir yer açıldı. Şurada sadece int deselik, sadece int deselik. Şimdi Rem'de böyle bir yer var. İçine 10 tane kitap bulunabilecek.
+
+235
+00:27:05,903 --> 00:27:08,343
+Tamam hocam, teşekkürler.
+
+236
+00:27:08,343 --> 00:27:32,784
+Bu 10'luk bir dizi. İlk elemanını ekledik, başka da ekledik diyelim. Belli bir elemandakini sileceğiz.
+
+237
+00:27:32,784 --> 00:27:35,983
+20 de vermiş olurdu.
+
+238
+00:27:35,983 --> 00:27:37,584
+Biz şu an sabit 10 kullanıyoruz.
+
+239
+00:27:37,584 --> 00:27:39,584
+10 şundan küçükse diye bakalım.
+
+240
+00:27:39,584 --> 00:27:41,584
+Sonra...
+
+241
+00:27:41,584 --> 00:27:43,584
+İyi değişiyor zaten.
+
+242
+00:27:43,584 --> 00:27:47,584
+Ne yapalım? Küçükse direkt...
+
+243
+00:27:51,476 --> 00:28:08,115
+Kitaplar noktalarından küçükse kitaplar iyi değil. Kitaplar sıra ne oluyor? Nal yapalım. Bu ne yapıyor? Şu sırada kitabı sil diyor. İlk oluşturduğumuzda hepsi nalda. Yine nal haline getirmiş oluyoruz.
+
+244
+00:28:08,115 --> 00:28:20,115
+Diğeri Public Void, kitap sayı. Bu ne alacak? Bu kitabı alacak. Bu kitabı aramız lazım.
+
+245
+00:28:20,115 --> 00:28:23,115
+Kaçın sırada olduğunu bilmiyor. Burada direkt sırayı söylemiştim.
+
+246
+00:28:23,115 --> 00:28:27,595
+Onun da çok kolay kolay olabiliriz
+
+247
+00:28:31,380 --> 00:28:47,380
+Bu sefer kitaplar iyi, Nala değil, buradan Nala arıyorduk, Nala kadar gidiyorduk burada da. Kitaplar iyi K'ya kadar, K mı diye bakacağız, K olunca duracağız. Yine şu kontrolü yapıp, şundan da çıkmış olabiliriz diye. Bu sefer de burayı Nal yapacağız.
+
+248
+00:28:47,380 --> 00:28:52,499
+Başka bir de raf göster bir konumuz varmış.
+
+249
+00:28:55,499 --> 00:28:59,519
+Public void raf göster.
+
+250
+00:29:00,900 --> 00:29:02,139
+Parametris bir şey yok.
+
+251
+00:29:03,560 --> 00:29:04,799
+Ink i eşittir sıfır.
+
+252
+00:29:04,799 --> 00:29:05,799
+Bu eski.
+
+253
+00:29:09,400 --> 00:29:11,140
+İ küçükken.
+
+254
+00:29:11,939 --> 00:29:12,880
+Neyden?
+
+255
+00:29:13,460 --> 00:29:14,259
+İ küçükken değil.
+
+256
+00:29:14,499 --> 00:29:15,079
+İ sıfırlar.
+
+257
+00:29:15,880 --> 00:29:16,799
+Başlayıp.
+
+258
+00:29:17,380 --> 00:29:34,880
+i küçükken kitaplar nokta length, i artı artı, ne yapacağız? Burada basitçe sistem atlayıp, birinci kitabı yazdıracağız.
+
+259
+00:29:40,692 --> 00:29:43,531
+Diğeri de Get Kitaplar. Onu da şu insert.
+
+260
+00:29:50,675 --> 00:30:19,955
+Tamam, rough sınıfımızda oluşturmuş oldu. Şimdi yanlış yapmış olabiliriz. O yüzden test edelim. Şuradaki gibi kitap tipinde kitap bir, ünlü kitap demiştik. Burada da bir rough oluşturacağız. Rough tipinde. Rough bir diyelim. New rough. Bu konstruyönde bir şey almıyordu. Sabit vermiştik. Bu ortalığı. Rough nokta. Rough bir nokta. Rough göster diyelim bir ne olmuş içinde.
+
+261
+00:30:19,955 --> 00:30:21,055
+çalışıyor mu?
+
+262
+00:30:22,955 --> 00:30:24,155
+Nalan nal diye basıyor.
+
+263
+00:30:24,215 --> 00:30:25,036
+Şunun içinde hiçbir şey yok.
+
+264
+00:30:25,315 --> 00:30:26,275
+O zaman bir şeyler ekleyelim.
+
+265
+00:30:27,455 --> 00:30:29,015
+Raf bir nokta.
+
+266
+00:30:30,055 --> 00:30:30,975
+Şöyle geçersin.
+
+267
+00:30:32,575 --> 00:30:33,515
+Kitap ekle diyelim.
+
+268
+00:30:33,835 --> 00:30:34,815
+Kitap bir ekleyelim.
+
+269
+00:30:37,115 --> 00:30:38,396
+Kitap iki ekleyelim.
+
+270
+00:30:38,915 --> 00:30:39,595
+Üç ekleyelim.
+
+271
+00:30:41,675 --> 00:30:42,536
+Şunu da iki yapalım.
+
+272
+00:30:42,915 --> 00:30:44,175
+Ayırt edilebilsinler.
+
+273
+00:30:58,355 --> 00:31:19,015
+Tamam, şimdi ne bekliyoruz? Basitçe üç tane şey olup gerisinden almasını bekliyoruz. Aynen öyle. Şunun adını bir daha kitap 2 yapmıştık. O yüzden o da 2 olarak görüyorum. Şuradan. Ama yazarı yazar 1. Tamam. Bir de kitap sil fonksiyonları yazmıştık. Raf 1.kitap sil. Bir tane sıra no. İşte kaç ikinci istenin. Yine gösterelim.
+
+274
+00:31:24,147 --> 00:31:26,447
+Bu da şey oldu gerçi. Birbirine girdi de.
+
+275
+00:31:28,007 --> 00:31:28,327
+Neyse.
+
+276
+00:31:28,487 --> 00:31:30,088
+İki dediğimiz var da ortadaki olmanızı.
+
+277
+00:31:30,167 --> 00:31:30,887
+Son bir olmanızı.
+
+278
+00:31:30,947 --> 00:31:31,947
+Ortadaki insin istiyorum.
+
+279
+00:31:32,088 --> 00:31:33,127
+Sıkabilmek olduğu için.
+
+280
+00:31:33,467 --> 00:31:33,727
+Şöyle.
+
+281
+00:31:35,147 --> 00:31:37,847
+Bir de raf bir nokta.
+
+282
+00:31:39,447 --> 00:31:40,248
+Kitap sil.
+
+283
+00:31:41,248 --> 00:31:41,488
+Yalan.
+
+284
+00:31:42,207 --> 00:31:42,647
+Şur.
+
+285
+00:31:44,027 --> 00:31:45,507
+Kitap üçü sil.
+
+286
+00:31:46,187 --> 00:31:47,007
+Bu da son da kimsiniz?
+
+287
+00:31:47,887 --> 00:31:50,227
+Bir tane görülmüş olacak gibi.
+
+288
+00:31:50,328 --> 00:31:51,068
+Ama silmedi sanki.
+
+289
+00:31:54,900 --> 00:31:57,699
+Hocam bir daha göster eklemedik sonuna.
+
+290
+00:31:59,199 --> 00:32:01,360
+Aynen. O zaman şurada silelim.
+
+291
+00:32:06,163 --> 00:32:35,763
+Tamam, bir tane olmuş oldu. Bu da rough sınıfıydı. Şurada bir şey false vermez mi? Hep diyor. Ona bir cevap verelim. Şimdi objede biz direkt objenin kendisini verdiğimiz için bu karşılaştırma hep false vermez. Aynıysa aynı değilse true verir. Böyle değil mi? Yani iki aynı objeyi karşılaştırabiliriz. Şöyle. Hani burada şu an çok saçma olacak.
+
+292
+00:32:35,763 --> 00:32:39,083
+if kitap bir eşit eşit kitap bir diyebiliriz.
+
+293
+00:32:42,675 --> 00:33:00,255
+Bu true dönmesi lazım. Zaten aynısı. Ama şu iki kitabın adı aynı olsaydı, yazarı aynı olsaydı, numarası aynı olsaydı, bulma eşitliği deseydik o zaman true dönmezdi. Çünkü farklı objeler. Onlar aynı diye test etmek istiyorsak işte şu numaralar.
+
+294
+00:33:01,175 --> 00:33:04,975
+Tukhan, orada yani şey, referans üzerinden bir karşılaştırma yapılıyor.
+
+295
+00:33:07,075 --> 00:33:09,775
+Tamam. Sonuçta bir objeli.
+
+296
+00:33:09,775 --> 00:33:11,295
+Direkt aynı objemi diye soruyoruz.
+
+297
+00:33:11,295 --> 00:33:25,135
+Evet. İçerikleri belki farklı gibi görünür ama sonuçta o eşit eşit operatörü iki nesne aynı referansı gösteriyorsa aynı ne yer demektir. Dolayısıyla içerikler de aynı olacak. Onun için sıkıntı yok orada.
+
+298
+00:33:29,815 --> 00:33:32,835
+Tamam diğer başka sorusu olan var mı ya da bir şey söylemek istiyorum.
+
+299
+00:33:41,971 --> 00:33:42,891
+Yılabilmek.
+
+300
+00:33:46,099 --> 00:33:49,019
+Bileceğiz, Yönceva, class, class, object.
+
+301
+00:33:50,779 --> 00:33:53,599
+Şimdi bunda da ne var? Rough dizisi var.
+
+302
+00:33:55,599 --> 00:33:57,219
+Onda dizi var, bir de onda dizi var.
+
+303
+00:33:57,779 --> 00:33:58,879
+Şuradan yine kopyalayalım.
+
+304
+00:34:08,916 --> 00:34:10,855
+ne diyeceğiz, raf diyeceğiz.
+
+305
+00:34:11,595 --> 00:34:13,435
+Buna raf diyeyim.
+
+306
+00:34:14,515 --> 00:34:15,115
+Olmadı.
+
+307
+00:34:19,603 --> 00:34:21,743
+Çubukluşu.
+
+308
+00:34:25,811 --> 00:34:31,811
+Bu class'ın ismi, bu kullanacağımız değişik. Bunun kontraktını oluşturalım.
+
+309
+00:34:38,324 --> 00:34:58,324
+Şimdi bunu konusacak bir daha değişik olacak. Şununki gibi yine bir şey almayacak. Ya da ink bir şey alacak. Yani kaç tane raf olacağını alacak. Şurada statik yapmıştık. Burada kullanıcıdan alarak yapıyoruz.
+
+310
+00:35:01,556 --> 00:35:27,875
+Şu şekilde, ne diyeceğiz, raf, raf ve en. Tamam. Bir de, şimdi enlik bir şey oluşturduk. Ama bu oluşturduğu şeylerin içinin de tek tek raf olması yani. Yani şu an onların içi dolu değil. Bir de onları oluşturacağız. Score, int, i eşittir, sıfır, an. Parantez olacak.
+
+311
+00:35:30,963 --> 00:35:49,543
+ne diyeceğiz? i küçükken. Raf nokta, length veya zaten n almıştır. i artı artı. Raf i eşittir. Raf diyeceğiz.
+
+312
+00:35:57,043 --> 00:36:04,203
+Constructors bu. Şimdi bu diğerine göre garip oldu. Yani bunun içindeki rafların da tek tek ilklendirilmesi gerekiyor. Yoksa null pointer hatası alırız.
+
+313
+00:36:04,984 --> 00:36:26,363
+Bunu bunun içinde oluşturmamızın sebebi de birazdan şurada işte iki parça şey var ya biri dolu biri boş. Onun farkına da gireceğim. Birinde aslında bunun içinde oluşturuyoruz. Yani kitaplığı şey yaptığımızda nasıl diyeyim? Kitaplığı yok ettiğimizde buradaki raflar da yok olsun istiyorsak bunun konstructorsını da oluşturuyoruz.
+
+314
+00:36:26,363 --> 00:36:38,363
+Ama şurada kitaplar oluşturup buna ekledik ya bu rafı silsek de bu kitaplar var olmayı devam eder. Böyle olmasını istiyorsan bununla gösteriliyor. Tamam kitaba geri dönelim.
+
+315
+00:36:38,363 --> 00:36:43,363
+Başka kitap ekli fonksiyonu kitap silse de benzer zaten.
+
+316
+00:36:43,363 --> 00:36:48,983
+Public, void, kitap ekle.
+
+317
+00:36:51,863 --> 00:36:53,764
+Ne alacak?
+
+318
+00:36:54,963 --> 00:36:56,483
+Kitap alacak.
+
+319
+00:36:57,944 --> 00:36:59,663
+Bir de int alacak.
+
+320
+00:37:01,323 --> 00:37:02,724
+Hangi rafa ekleyeceği için?
+
+321
+00:37:03,484 --> 00:37:04,404
+Raf no'u girelim.
+
+322
+00:37:06,584 --> 00:37:09,764
+Şimdi diğer şu Raf komisyonu bir arkadaşımız yazdıysa bizim için.
+
+323
+00:37:09,764 --> 00:37:15,384
+Raph, Raph no.
+
+324
+00:37:15,384 --> 00:37:17,944
+Neydi oradaki fonksiyonumuz?
+
+325
+00:37:17,944 --> 00:37:18,503
+On adı.
+
+326
+00:37:19,904 --> 00:37:20,963
+Kitap ekle.
+
+327
+00:37:21,924 --> 00:37:23,064
+Gelen kitabı ekleyeceğiz.
+
+328
+00:37:23,503 --> 00:37:24,863
+Yani biz burada hiç eklemediğimiz bir şey yapmıyoruz.
+
+329
+00:37:24,944 --> 00:37:27,243
+O arkadaşa şey yaptı konusunun yanında.
+
+330
+00:37:28,383 --> 00:37:30,043
+Başka kitap sil fonksiyonumuz var.
+
+331
+00:37:31,904 --> 00:37:33,164
+Bu iki tane int alıyormuş.
+
+332
+00:37:33,163 --> 00:37:44,803
+Kitap, C, int, int, int, B, şimdi bundan ne olduğunu yazalım.
+
+333
+00:37:45,663 --> 00:37:49,703
+Bir tanesi yine raf no, bir tanesi de kaçıncı sıraya ekleyecek?
+
+334
+00:37:49,703 --> 00:37:50,603
+Onda sıra no.
+
+335
+00:37:53,003 --> 00:37:55,623
+Yani hangi raf ekleyecek? Şimdi kitaplık var, düşünürsek.
+
+336
+00:37:56,763 --> 00:37:58,963
+Bir de rafları var, bir de bu rafların sırası var, 10 tane.
+
+337
+00:37:59,723 --> 00:38:02,963
+Hangi raf ekleyecek? Hangi rafdan silecek? Hangi raf ekleyecek?
+
+338
+00:38:02,963 --> 00:38:03,243
+ve
+
+339
+00:38:03,243 --> 00:38:03,724
+onları yapıyoruz.
+
+340
+00:38:04,764 --> 00:38:05,764
+O rafmaya gideceğiz.
+
+341
+00:38:05,943 --> 00:38:06,363
+Nokta.
+
+342
+00:38:06,683 --> 00:38:07,204
+Kitap sil.
+
+343
+00:38:07,523 --> 00:38:08,643
+Ama sıra noyla sildiz.
+
+344
+00:38:08,704 --> 00:38:08,844
+Aynen.
+
+345
+00:38:09,963 --> 00:38:10,424
+O da tamam.
+
+346
+00:38:12,383 --> 00:38:13,984
+Public, void.
+
+347
+00:38:15,463 --> 00:38:17,283
+Kitap silleyip alın sıra noyla yaptık.
+
+348
+00:38:17,344 --> 00:38:18,424
+O yüzden şu sıra noyla.
+
+349
+00:38:22,675 --> 00:38:23,875
+Tamam kitap sil.
+
+350
+00:38:25,075 --> 00:38:26,635
+Burada kitap silde sadece
+
+351
+00:38:26,635 --> 00:38:28,555
+kaçıncı şeydeki
+
+352
+00:38:28,555 --> 00:38:30,455
+tamam kaçıncı raftaki
+
+353
+00:38:30,455 --> 00:38:31,896
+kitap sileceğini şey yapıyor.
+
+354
+00:38:33,315 --> 00:38:34,115
+Rafno
+
+355
+00:38:34,115 --> 00:38:36,435
+virgül kitap tipinde kitap.
+
+356
+00:38:38,975 --> 00:38:39,815
+Burada da yine
+
+357
+00:38:39,815 --> 00:38:41,776
+bu Rafno'muza gidiyoruz.
+
+358
+00:38:43,535 --> 00:38:44,516
+Nokta kitap
+
+359
+00:38:44,516 --> 00:38:46,235
+siliyoruz ama kitap vererek
+
+360
+00:38:46,235 --> 00:38:48,375
+siliyoruz. Bu da böyle.
+
+361
+00:38:50,375 --> 00:38:50,815
+Başka
+
+362
+00:38:50,815 --> 00:38:52,475
+şu kitap arayası
+
+363
+00:38:52,475 --> 00:38:53,555
+daha sonra yapalım.
+
+364
+00:38:54,495 --> 00:38:56,755
+Göster rafı, tüm rafları göster.
+
+365
+00:38:56,915 --> 00:38:57,315
+Tamam.
+
+366
+00:38:58,955 --> 00:39:00,216
+Bu biz şöyle kaldı. Tamam.
+
+367
+00:39:02,016 --> 00:39:02,975
+Public void.
+
+368
+00:39:03,575 --> 00:39:04,435
+İşte raf göster.
+
+369
+00:39:06,055 --> 00:39:06,755
+Hangi rafı
+
+370
+00:39:06,755 --> 00:39:07,695
+gösterecek? Onu alalım.
+
+371
+00:39:10,095 --> 00:39:10,375
+Yine
+
+372
+00:39:10,375 --> 00:39:12,655
+şuradan şey yapalım.
+
+373
+00:39:12,755 --> 00:39:13,216
+Yani bütün
+
+374
+00:39:13,216 --> 00:39:16,716
+raf sınıfını alayıp
+
+375
+00:39:16,716 --> 00:39:18,075
+sadece onu
+
+376
+00:39:18,075 --> 00:39:19,115
+kullanıyoruz.
+
+377
+00:39:20,615 --> 00:39:21,695
+Raf göster.
+
+378
+00:39:22,475 --> 00:39:29,476
+Bir de tüm rafları göster var.
+
+379
+00:39:29,475 --> 00:39:31,575
+Altı poit.
+
+380
+00:39:34,495 --> 00:39:36,115
+Tüm grafları göster.
+
+381
+00:39:38,935 --> 00:39:40,335
+Buna da
+
+382
+00:39:40,335 --> 00:39:41,315
+for
+
+383
+00:39:41,315 --> 00:39:44,455
+i eşittir sıfırdan
+
+384
+00:39:44,455 --> 00:39:46,435
+i küçükken
+
+385
+00:39:46,435 --> 00:39:47,475
+i'den
+
+386
+00:39:47,475 --> 00:39:49,155
+şunun renkliğinden
+
+387
+00:39:49,155 --> 00:39:54,395
+i artı artı
+
+388
+00:39:54,395 --> 00:39:58,255
+hepsini arada arada basacak ama şöyle bir şey
+
+389
+00:39:58,255 --> 00:39:58,975
+yazalım ki
+
+390
+00:39:58,975 --> 00:40:01,515
+3. rap oldu belli olsun.
+
+391
+00:40:05,235 --> 00:40:22,315
+Diyelim. Bunki rafttaki kitaplar. Bu işi park edelim. Sonra kendi fonksiyonumuzu da çağırabiliriz. Aynı şimdiler yapabiliriz. Kendi fonksiyonumuzu çağırabiliriz.
+
+392
+00:40:24,884 --> 00:40:31,884
+Bu da bütün rapları gösterecek. Buraya kadar anlamayan var mı? Anlamayan ya da sorusu olan bir şey söylemem isteyen.
+
+393
+00:40:37,556 --> 00:40:38,556
+Yo, Keralde.
+
+394
+00:40:40,615 --> 00:40:44,556
+No, en kita para formación de eso, solo que es...
+
+395
+00:40:47,731 --> 00:40:56,231
+Kitap aramayı kitapçıya gittiğimizde genelde ismini söyleriz diye siktir olarak yapalım.
+
+396
+00:40:58,311 --> 00:40:59,351
+Yazıyor kitap adı.
+
+397
+00:41:02,171 --> 00:41:05,311
+Şimdi aslında şey yapmamız daha doğru olur.
+
+398
+00:41:05,471 --> 00:41:10,551
+Yani bu raf şeyine bir de kitap ara fonksiyonu yazıp buradan onu çağırıp raf raf yapmamız lazım.
+
+399
+00:41:10,611 --> 00:41:11,271
+Ama öyle yapmayalım.
+
+400
+00:41:11,412 --> 00:41:12,851
+Hani bunun yanlış olduğunu görelim.
+
+401
+00:41:13,731 --> 00:41:17,331
+Öbür türlü olsaydı nasıl daha kolay olurdu onu görmüş oluyoruz.
+
+402
+00:41:17,731 --> 00:41:22,731
+Mesela int n eşittir, raf nokta blank diyelim.
+
+403
+00:41:22,731 --> 00:41:27,731
+Şimdi tek tek bir rafları gezeceğiz. Bir de rafların içinde gezeceğiz.
+
+404
+00:41:31,059 --> 00:41:43,919
+For, x, y, eşittir, sıfırdan, küçükten, enden, bir artı artı. Bu neyi? Rafları gezmek için. Bir de rafların içinde gezeceğiz.
+
+405
+00:41:45,739 --> 00:41:55,259
+Rafların içinde gezmek için ne yapabiliriz? Bir de şöyle bir for dönemüsü var. Gelişmiş for dönemüsü falan yazıyor böyle. Kitap tipinde kitap dönecek.
+
+406
+00:41:57,099 --> 00:42:00,320
+Bu raf, i'ye direkt erişemeyiz şurada şey yaptığımız için.
+
+407
+00:42:01,059 --> 00:42:06,760
+Krabi tanımladığımız için şu get'ini yazdık. Bu get'ını çağıracağız.
+
+408
+00:42:06,760 --> 00:42:20,059
+Get kitaplar diyelim. Bu şey dönecek. Şuraya kadar rafları dönüyoruz. Şu an rafın içindeyiz. Rafın içine döneceğiz.
+
+409
+00:42:20,059 --> 00:42:27,759
+Şimdi string karşılaştırması yapacağımız için, bir de çoğu null olduğu için null diye kontrolü yapalım.
+
+410
+00:42:27,759 --> 00:42:47,759
+NAL ise hiç ulaşmasın. NAL değilse ve aradığımız kitapsa, şimdi aradığımız, NAL'ı hata vermesin diye yazdık. Aradığımız kitap olmadığının bulunuyor içinde. Bu döndüğümüz kitabın anı getireceğiz.
+
+411
+00:42:47,759 --> 00:43:12,939
+Şimdi bu şu an bir string. Şimdi iki string karşılaştıracağız. Onunla mesela şurada equals diye çıktı. Onunla karşılaştık. Bunun içine neyi koyacağız? Yani buradan dönen string. Şurada bizim verdiğimiz string eşitse bir kitabı bulduk demektir. O zaman return kitap diyebiliriz. Aynen. Şimdi bir parantez yapalım. Yazı yazalım başına.
+
+412
+00:43:19,411 --> 00:43:20,152
+Geleyelim.
+
+413
+00:43:31,987 --> 00:43:45,307
+İkinci rafda kitap var diyelim. Bu kadar dönük dönük bulamadıysa da tamam diyelim. Bir de kitap yok diyelim.
+
+414
+00:43:52,083 --> 00:44:18,683
+Arkadaşlar, ben bir şey ekleyeyim hocam. Bakın hocamız burada kitap türünden bir nesne döndürüyor. Birçok internet sayfasında, elektronik sayfalarda işte alışveriş yaparken bir şeyin adını yazıyorsunuz. Size diğer bilgileri geliyor değil mi? İşte ne bileyim sayfa sayısı, fiyatı, yazarı, şusu, busu. İşte bu böyle bir sorgudan dönen bir şey. İster veri tabanından çekin, ister başka bir şeyden. Bir şey aradınız.
+
+415
+00:44:18,683 --> 00:44:45,083
+Yani bu kimlik numarasıyla sizin bilgileriniz de olabilirdi. Dönüş değerine dikkat edin. Böyle bir şey döner. Hatta bunun dizisini de döndürebilirsiniz. Kitap dizisi şeklinde. Bu şarta uyan, bu kitap isminde birden fazla kitap olabilir. Onu da döndürebilirsiniz. Aldığınız bu verileri daha sonra işte grafik arayüzünde bir yerlerde bastırırsanız mesela hocam burada ne yaptı? Kitabın adıyla karşılaştırdı. Bu metodu nereden çağırırsak birazdan çağıracağız.
+
+416
+00:44:45,083 --> 00:44:57,884
+Çağırdığımız yerde işte sistem alt print ile biz yapıyoruz ama isterseniz grafik arayüzünde bastırın, isterseniz başka bir şekilde yapın. Bu bilgilerin hepsine erişebiliyorsunuz bu sayede. Object search ediyoruz. Dikkat edin. Buyurun hocam.
+
+417
+00:45:00,823 --> 00:45:03,664
+Var mı arkadaşlar sorusu olan bir şey söylemek istiyorum?
+
+418
+00:45:09,323 --> 00:45:13,024
+Hocam ben içteki soruluk bu bir daha anlatabilir misiniz?
+
+419
+00:45:13,023 --> 00:45:17,583
+Evet hocam
+
+420
+00:45:17,583 --> 00:45:20,183
+Tamam
+
+421
+00:45:20,183 --> 00:45:42,263
+Şimdi normal bu gelişmiş bir ordan ücünü biliyor musun? Kitap tipinde kitap olacak bizim iteratorımız her buradan gelen bir kitap olacak. Yani şimdi bu rafi noktaki kitaplar bir tane bize buradan bir raf meselesi veriyor. Bu raf meselesini de burada oluşturduk. Şimdi bu raf meselesinin 10 tane elemanı var. Bu 10 tane elemanı
+
+422
+00:45:43,023 --> 00:45:55,343
+dolaşacağız spor döngüsüyle. Hepsinin üstünden geçeceğiz. O an dolaştığımız objenin şeyi de değişkeni de kitap. Yani buradan birer birer bu kaçıncı rafs oradaki kitaplar döngü.
+
+423
+00:45:57,823 --> 00:46:00,823
+Tamam anlatabildim mi? Biraz karışık görünüyor da.
+
+424
+00:46:02,143 --> 00:46:03,043
+Anladım. Tamam.
+
+425
+00:46:03,043 --> 00:46:03,524
+Tamam.
+
+426
+00:46:05,403 --> 00:46:12,663
+Tamam. Şimdi arkadaşlar mesela şuradaki metotların ne kadar basit olduğunu anlayalım. Hani işte raf şeyin başka biri, bunu başka bir geliştiriyorsaydı direkt
+
+427
+00:46:12,664 --> 00:46:22,343
+Kitap ekle, kitap sel, hiç içini nasıl olduğu umurunda değil yani. Kitap ekle, kitap sel. Hani bu bir veri tabanı olsaydı bugün SQL kullanıyoruz, yarın modu gibi bir geçeceğiz.
+
+428
+00:46:23,044 --> 00:46:30,503
+Bunu değiştirirdiniz, hiç bu kitaplığı kullanan veya testi kullanan adım ondan haberi olmaz. Yani aynı kullanmaya devam edebiliriz.
+
+429
+00:46:30,503 --> 00:46:41,783
+Ama burada kitap ara fonksiyonu mesela aslında çoğu işi burada biz yapıyoruz. Bunu yine Rafa şey yapıp orada arayıp hani bu yani bir tane kitap ara fonksiyonu olması lazımdı burada.
+
+430
+00:46:42,664 --> 00:46:44,664
+Burada arayıp bulduğumuzda oraf da var.
+
+431
+00:46:44,664 --> 00:46:46,664
+Hepsini de arayabiliriz.
+
+432
+00:46:46,664 --> 00:46:48,664
+Başka yerlerde devam ediyor.
+
+433
+00:46:48,664 --> 00:46:50,664
+Burada biz bir tane olunca çıkıyoruz.
+
+434
+00:46:50,664 --> 00:46:54,664
+Tamam, şimdi normalde şunlar olmayacak.
+
+435
+00:46:54,664 --> 00:46:56,664
+Bunda bir koment alalım.
+
+436
+00:46:56,664 --> 00:46:58,664
+Bizim kitaplığımız olacak.
+
+437
+00:46:58,664 --> 00:47:00,664
+Kitaplık tipinde...
+
+438
+00:47:00,664 --> 00:47:02,664
+Öyle mi yazdık?
+
+439
+00:47:02,664 --> 00:47:04,664
+Kitaplığımız var.
+
+440
+00:47:04,664 --> 00:47:06,664
+Başıttır, nim.
+
+441
+00:47:06,664 --> 00:47:08,664
+Kitaplık.
+
+442
+00:47:08,664 --> 00:47:09,203
+Look, look, look.
+
+443
+00:47:15,027 --> 00:47:19,488
+İntecir, bu kaç tane raf olduğunu alıyordum.
+
+444
+00:47:20,807 --> 00:47:24,687
+Tamam, şimdi kitaplığımıza aslında basitçe kitap ekleyeceğiz, kitap sedeceğiz.
+
+445
+00:47:25,847 --> 00:47:26,908
+Ne diyelim, kitap ekle.
+
+446
+00:47:27,967 --> 00:47:30,267
+Şunları da üç taneydi, onları bir altı tane yapalım.
+
+447
+00:47:47,731 --> 00:48:15,591
+Sıfırıncı raf açılar üç ekledi. Onu eklesin. Bir ile ikiyi de ekleyelim sıfıra. Başka şöyle yapalım. Dördüncü kitap, beşinci kitap, altıncı kitap. Birinci raf, birinci raf da ikinci raf. Şu an ekledi. Mesela kitaplık nokta. Bir tüm rafları göster vardı.
+
+448
+00:48:15,591 --> 00:48:15,711
+1.
+
+449
+00:48:15,711 --> 00:48:17,591
+3.
+
+450
+00:48:17,591 --> 00:48:21,592
+4.
+
+451
+00:48:21,592 --> 00:48:24,592
+5.
+
+452
+00:48:24,592 --> 00:48:28,592
+6.
+
+453
+00:48:28,592 --> 00:48:31,592
+7.
+
+454
+00:48:31,592 --> 00:48:33,592
+8.
+
+455
+00:48:33,592 --> 00:48:35,592
+9.
+
+456
+00:48:35,592 --> 00:48:45,592
+10.
+
+457
+00:48:44,500 --> 00:49:11,359
+Bak nokta, kitap sil. Sıra mı? Tamam. Kitap sil. Kitap vermemiz lazım. Sıfırıncadan altıncı isleyemez. Yani hata da vermez ama bir şey yapmaz şu anki kod. Onu ikinciden silsin. Ya da direkt sıfırıncadan kitap atıyorum biri silsin. Bu da hangisi aynı şeyi hatırlamıyorum. Bir sıra ne? Odan bir tane kitap silecek. Bu da birinciden birinciyi silsin. Yani şu haler kardeş, şunu silmiş olsun. Gülüldü olduğu için.
+
+458
+00:49:11,359 --> 00:49:22,079
+Tamam şimdi ne bekliyoruz? 0. rafta ortadaki gitmiş olacak. 1. rafta da ikincisi yok, birincisi gitmiş olacak.
+
+459
+00:49:22,079 --> 00:49:32,719
+Şöyle yazdır dediğimizde nasıl oldu? Şuradaki gitti. Birinci rafın birincisini yani şunu sermiş oldu.
+
+460
+00:49:32,719 --> 00:49:34,719
+Burada 4 kalmış oldu.
+
+461
+00:49:34,719 --> 00:49:36,719
+Tamam bu şekilde.
+
+462
+00:49:36,719 --> 00:49:40,719
+Başka anlamadığınız, sormak istediğiniz bir şey var mı?
+
+463
+00:49:40,719 --> 00:49:42,719
+Tek tek klaslara da dönebiliriz.
+
+464
+00:49:55,284 --> 00:49:57,403
+Hocam bittiyse ben bir şey sormak istiyorum.
+
+465
+00:49:57,484 --> 00:49:58,043
+Labla ilgili.
+
+466
+00:50:00,863 --> 00:50:05,584
+Hocam, Labda da siz böyle bize UML vereceksiniz ve bizi bu şekilde kodlayacağız değil mi?
+
+467
+00:50:07,223 --> 00:50:07,483
+Evet.
+
+468
+00:50:07,483 --> 00:50:09,284
+Yani direkt bir...
+
+469
+00:50:09,284 --> 00:50:11,863
+Direkt UML olabilir.
+
+470
+00:50:12,363 --> 00:50:15,903
+Soru metni olup, o soru metninden UML'i siz de çıkaracak olabilirsiniz.
+
+471
+00:50:16,143 --> 00:50:16,743
+Tamam.
+
+472
+00:50:18,243 --> 00:50:19,083
+Teşekkür ederim.
+
+473
+00:50:21,503 --> 00:50:23,583
+Ahmet hocanız şey açar, oraya yüklersiniz.
+
+474
+00:50:23,583 --> 00:50:25,943
+O şekilde süresi olur
+
+475
+00:50:25,943 --> 00:50:27,563
+Hocam bir de
+
+476
+00:50:27,563 --> 00:50:28,784
+Ha pardon sana söyle
+
+477
+00:50:28,784 --> 00:50:32,863
+Bugünkü kodları da yine Ahmet hocam Drive'da ekleyebilir misiniz?
+
+478
+00:50:34,964 --> 00:50:38,923
+Şimdi onunla alakalı biz Toprak hocamızla yazışacağız
+
+479
+00:50:38,923 --> 00:50:40,464
+Yani ben bir link gönderdim
+
+480
+00:50:40,464 --> 00:50:43,343
+Okula süre hocamızdan rica edeceğim yükleyeceğiz
+
+481
+00:50:43,343 --> 00:50:44,423
+Teşekkürler hocam
+
+482
+00:50:44,423 --> 00:50:46,243
+Senin soruna cevap vereceğim
+
+483
+00:50:46,243 --> 00:50:51,523
+Laboratuvarda arkadaşlar bakın böyle 3-4 tane class kodlayacak şekilde
+
+484
+00:50:51,523 --> 00:51:08,163
+algoritmik olarak 3 aşağı 5 yukarı olur. Bu şekilde olur. Yani biri veri yapılarında gördüğünüz derinlikte bir algoritma bilgisi olmayacak. Burada önemli olan hangi classlar var, hangi classlar arasında ilişkiler nasıl? Hocam bir şu şekli büyütebilir miyiz UML'i?
+
+485
+00:51:08,163 --> 00:51:29,623
+Ben bir kere şunu soruyorum. Arkadaşlar önce sizlerden bir görüş alalım. Bu tasarımda şu da olsa denilecek bir şey yok mu? Ne eklemek isterseniz aranızdan bazı görüşler alalım. Yani ne bileyim şu özelliği de eklemek istersek diyebileceğiniz bir şey.
+
+486
+00:51:34,579 --> 00:51:39,179
+Utkan senin soruna genel cevap vereceğim. Onu ben de fark ettim. Açıklamam lazım.
+
+487
+00:51:42,619 --> 00:51:45,239
+Hocam ben bir şey sorayım. Ekleyebilir miyim?
+
+488
+00:51:45,839 --> 00:51:54,639
+Rafın içinde bir kitap, kitap ekle metodu ama kitap array'den parametre oluşuyor.
+
+489
+00:51:55,959 --> 00:51:59,639
+Kitap array'i direkt rafa çevirelim.
+
+490
+00:51:59,639 --> 00:52:03,799
+Tamam. Yani bir tane kitap değil de güzel bir şey.
+
+491
+00:52:03,799 --> 00:52:23,319
+Mesela bunu geçen hafta biz farklı bir şekilde yapmıştık. Rafa tek bir kitap değil bir kitap dizi eklemeyi sordu. Güzel bir özellik. Bence bunu geçen haftaki yaptığımız çalışmayla birleştirip daha üzerinde çalışabilirsiniz arkadaşlar. Ona biz daha geleceğiz. Çünkü dinamik dizileri de anlatmamız gerekiyor.
+
+492
+00:52:23,319 --> 00:52:36,119
+Kitap silince kitapları kaydırma. Yani statik bir dizi kullandığımız için arada bir shift işlemi, diziden bir eleman silince o da yapılabilir. Güzel. Başka?
+
+493
+00:52:37,399 --> 00:52:44,379
+Mesela arkadaşlar kitabın içerisinde kitap ekle diye bir şey yazsam makul olur mu sizce?
+
+494
+00:52:49,748 --> 00:52:50,287
+Yok.
+
+495
+00:52:50,687 --> 00:52:52,167
+Kitap sınıfına, kitap ekleme.
+
+496
+00:52:55,107 --> 00:52:55,487
+Efendim?
+
+497
+00:52:56,547 --> 00:52:57,127
+Hayır.
+
+498
+00:53:01,076 --> 00:53:14,855
+Yani kitap sınıfı class var değil. Yani kitap içerisinde kitap ekle metodu diyorum. Yani class'ın olduğunu görüyoruz. O sınıfta ne bileyim bir tane kitap ekle diye bir metot yazabilir miyiz?
+
+499
+00:53:21,300 --> 00:53:46,800
+mantıken bunu yapmak çok doğru değil. Yani kitabı eklenecek yer ya raftır ya da kitaplıktır. Onun için o sınıfı içerisinde böyle bir yani diziye kitap ekleme tarzında bir şey çok doğru olmaz. Bakın o kurgudan hangi sınıfta hangi özellikler hangi metotlar olacak bunu çıkarabilmek lazım. Yani bu işin biraz algoritmik tarafı aslında bu. Yani tasarımı yaparken ilgisiz bir metodu ilgisiz bir yere yazmamak gerekiyor.
+
+500
+00:53:46,800 --> 00:53:57,800
+Bu da hemen olacak bir şey değil. Örnek çöze çöze. Bizim anlattığımız konuları görerek bunu da geliştireceksiniz. Şimdi burada Utkan'ın sorduğu soruya gelelim. Buyurun.
+
+501
+00:53:59,919 --> 00:54:03,279
+Hocam şey bu sordan buna geçmek aslında biraz.
+
+502
+00:54:03,719 --> 00:54:03,980
+Tabii.
+
+503
+00:54:03,980 --> 00:54:12,919
+Hani tasarım şeklinde. Gereksinlerden. Burada hem şurada var hem başka bir örnek olsun diye şunu da getirmiştim hocam. Siz açıklayacaksınız.
+
+504
+00:54:12,919 --> 00:54:36,819
+Tamam ondan sonra siz açıklarsınız. Şimdi bu baklava, diamond sembolleri birisi kompozisyon, koyu olan kompozisyonu gösteriyor. Öbürü de aggregation dediğimiz bir ilişki türü. İlişkinin hassasiyeti mi diyelim veya güçlülüğü mü diyelim koyuysa daha güçlü ilişki. Şimdi kitaplık varsa raf da vardır değil mi?
+
+505
+00:54:36,819 --> 00:54:49,300
+İkisi arasında böyle bir şey düşünsek ve işte bir kitaplıkta en tane raf olabilir diyoruz ama kitaplıkla raf arasındaki bu varlık ilişkisi birbirine bağımlılık ifade ediyor.
+
+506
+00:54:49,499 --> 00:54:54,199
+Yani insan varsa kafası da vardır. İnsan yoksa kafasının da bir anlamı yok. Öyle düşünün.
+
+507
+00:54:54,899 --> 00:55:01,459
+Tabii kafa nakli yapmadığımızı düşünüyor. Ama raf varsa kitap olacak diye bir şey yok. Raf yoksa da kitap olabilir.
+
+508
+00:55:01,459 --> 00:55:24,139
+İkisi birbirine sahiplik ilişkisi var. Yani raf kitaplara sahip, kitaplıkta raflara sahip. Zaten biz buna has ilişkisi diyoruz. Öyle değil mi hocam? Bu has ilişkisinden kaynaklı ilişkinin derecesini, sıklığını veya ne bileyim ciddiyetini ifade ederken güçlülüğünü bu iki tane kavram ortaya çıkıyor.
+
+509
+00:55:24,139 --> 00:55:28,659
+Hatta biraz önce kod tarafına belki bakabiliriz tekrardan
+
+510
+00:55:28,659 --> 00:55:33,919
+Kod yazarken kitaplık altında hocamız bir konstraktda bir şey oluşturmuştu
+
+511
+00:55:33,919 --> 00:55:39,259
+Ben kitaplık nesnesini yok edersem, delete edersem
+
+512
+00:55:39,259 --> 00:55:42,199
+Onunla beraber raf nesneleri de yok olur
+
+513
+00:55:42,199 --> 00:55:46,999
+Evet bakın burada raf türünden 18. satırda nesneler oluşturuluyor
+
+514
+00:55:46,999 --> 00:55:50,020
+Kaç tane işte kaç elemanlı bir rafsa diyoruz
+
+515
+00:55:50,020 --> 00:55:52,899
+İşte bu raf nesnesi burada fiilen oluşturuluyor
+
+516
+00:55:52,899 --> 00:56:06,259
+Ben kitaplık nesnesini silersem ne olacak? Bu sınıf silindiği için beraberinde buradaki nesneler de yok olacaktır. Çünkü birbirlerini refer öden nesnel. Öbür tarafa gelebilir miyiz hocam raf içerisine?
+
+517
+00:56:08,159 --> 00:56:10,819
+Edeyim. Burada ama kitaplara bağımlı değiliz.
+
+518
+00:56:10,819 --> 00:56:21,199
+Evet. Bakın 10 tane kitaplık kitap tutan şey gösterdiği referans tutan. Bakın fiili bir kitap yok. 10 tane kitabın nesi var?
+
+519
+00:56:21,199 --> 00:56:45,399
+referansı var. Birinde fiili olarak graf vardı. Diğerinde referans var. Bu 16. satırdaki mantıkla biraz önceki satırdaki mantığı kavrarsanız bu ikisi arasındaki farkı anlaşıyorsun. Burada da 18 olmuş. Herhalde şimdi Utkan'ın sorusu biraz daha netleşmiştir. Buyurun hocam siz de o şekli gösterin.
+
+520
+00:56:45,399 --> 00:56:50,719
+Hocam dediğiniz gibi bu
+
+521
+00:56:50,719 --> 00:57:09,400
+Koyu ise bunun içinde oluşturduğumuz, constructori boşsa ayrı da kitap rap olmadan da var olmaya devam ediyor. Burada da aslında onun bir örneği var. İnsan beyninden oluşuyor. İnsanı yok ettiğimizde beyninden bahsedemeyiz. Ama işte arabayı yok ettiğimizde hala yolcudan bahsedebiliriz.
+
+522
+00:57:09,400 --> 00:57:23,379
+şeklinde yani o insanlar. Burada Türkçesi olarak şeyi düşünmek benim kolayıma geliyor. Composition oluşma yani onu oluşma bu ise içer mi? Hani sadece içeriyor. Bu ise ondan oluşuyor şeklinde. Ben aklımda tutuyorum.
+
+523
+00:57:24,199 --> 00:57:37,139
+Hatta biz buna daha önceden şöyle bir örnek yapmıştık. Mesela ben bu kitaplık nesnesine, kitaplık nesnesinin altından get raf ile raf nesnesine şu an erişebiliyorum.
+
+524
+00:57:37,139 --> 00:58:01,739
+Yani nesneyi yok etme, işte main'den, test sınıfından erişebilirim. Ama yeni bir kitaplık oluşturdum. Bunun referansını, eski kitaplık referansını atadım. Yani eski nesnem boşa çıktı. O boşa çıkınca Jehovah's Shul Machine onu silecek. Silince ne olacak? Onunla beraber raf nesneleri de tamamen yok olacak. Ama rafın tuttuğu kitaplar halen var olarak yaşamaya devam edecek.
+
+525
+00:58:01,739 --> 00:58:09,619
+Onlara erişmeye çalışınca mesela şu kitapla erişemeyeceğimizi falan onu bir ara zaten daha vakit var.
+
+526
+00:58:09,619 --> 00:58:11,359
+Acceptation'lar kısmında anlatıyorum onu.
+
+527
+00:58:11,719 --> 00:58:13,419
+Onunla alakalı orada ayrıca örnek yaparsın.
+
+528
+00:58:13,459 --> 00:58:15,939
+Ama şu an için bu mantığı bilmemiz iyi olur.
+
+529
+00:58:16,619 --> 00:58:21,819
+Zaten bunun dışında bir de association ve şey kaldı, extent kaldı.
+
+530
+00:58:22,519 --> 00:58:24,719
+Onları da gelecek haftaki konularımızda göreceğiz.
+
+531
+00:58:24,799 --> 00:58:29,319
+Ama bu iki kavram şimdilik önemli bir şey olarak aklımızda kalsın arkadaşlar.
+
+532
+00:58:29,639 --> 00:58:30,679
+Bakın kodlaması var.
+
+533
+00:58:30,679 --> 00:58:39,940
+ve günlük hayatta karşımıza nasıl çıkacağına dair örnekler var. Bunları kendi içinizde farklı örneklerle zenginleştirin. Daha iyi olur.
+
+534
+00:58:42,080 --> 00:58:43,539
+Var mı sormak istediğiniz?
+
+535
+00:58:43,800 --> 00:58:46,199
+Ben küçük bir şey söylemiyorum hocam. Bu konu bittiyse.
+
+536
+00:58:47,039 --> 00:58:47,379
+Buyurun.
+
+537
+00:58:47,379 --> 00:58:54,339
+Bugün işlediğimiz ders hakkında. Bu raporlar hakkında bir lab ayrılmamış galiba ama bahsedilecek mi?
+
+538
+00:58:54,419 --> 00:58:59,899
+Veya bir örnekte kalıcı bir şekilde değerleri değiştirme falan onları işleyecek miyiz?
+
+539
+00:58:59,899 --> 00:59:01,819
+Yoksa bu dersin kadar yeterli mi?
+
+540
+00:59:02,359 --> 00:59:09,839
+Şöyle dersin dışında ekstra örnek şöyle yapacağız. İlerleyen haftalarda obje sort diye ArrayList'leri de anlatınca bir konu gelecek.
+
+541
+00:59:10,959 --> 00:59:16,239
+Orada zaten daha çok işler şey üzerinden, objeler üzerinden olacağı için bir anlamda rapper yapmış olacağız orada.
+
+542
+00:59:16,839 --> 00:59:20,859
+İşte iki tane kitabın nesnesini yer değiştirme gibi düşünün. Bir sıralama yapıyoruz.
+
+543
+00:59:21,539 --> 00:59:23,619
+Orada tekrar onunla alakalı konulara değineceğiz.
+
+544
+00:59:24,239 --> 00:59:24,679
+Tamamdır.
+
+545
+00:59:24,679 --> 00:59:52,779
+Onun dışında şimdi bu size paylaştığım Drive'a gelince yavaş yavaş toparlayalım. Orada hafta 1, hafta 2 diye şeyler var arkadaşlar. VLM2012 kodlar kısmına gelince hafta 2 ve hafta 3'ü ekledim ben. Geçen haftaki ve bu haftaki kodları. Gün içinde de hocamızdan rica ederiz. Onu da yani veya müsait olunca onu da yükler.
+
+546
+00:59:52,779 --> 01:00:05,619
+Diğer ders notlarımız da orada var. Her şeye oradan klasörden erişebilirsiniz. Var mı sorunuz başka? Eklemek istediğiniz, çıkarmak istediğiniz. Yani bunları iyi analiz edin arkadaşlar.
+
+547
+01:00:08,359 --> 01:00:12,020
+Hocamız gayet detaylı anlattı. Ağzına, yüreğine sağlık.
+
+548
+01:00:13,100 --> 01:00:16,199
+Teşekkür ederiz hocam. İkinize de sağ olun. İyi akşamlar.
+
+549
+01:00:16,199 --> 01:00:19,059
+Çok teşekkür ediyoruz hocam. Her şey için emeğinize sağ olun.
+
+550
+01:00:19,059 --> 01:00:19,899
+İyi akşamlar hocam.
+
+551
+01:00:19,899 --> 01:00:23,119
+Toprak hocama da kolay gelsin. Allah gönlüne göre versin.
+
+552
+01:00:23,479 --> 01:00:25,779
+Sağ olun. Teşekkür ederiz. Herkese iyi akşamlar.
+
+553
+01:00:26,219 --> 01:00:27,459
+Hocam görüşmek üzere diyelim.
+
+554
+01:00:28,279 --> 01:00:29,719
+Görüşmek üzere. İyi akşamlar.
+
+555
+01:00:29,839 --> 01:00:30,279
+Sağ olun.

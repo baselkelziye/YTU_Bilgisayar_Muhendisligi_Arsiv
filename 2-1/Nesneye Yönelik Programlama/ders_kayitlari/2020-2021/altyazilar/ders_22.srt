@@ -1,0 +1,4231 @@
+1
+00:02:17,139 --> 00:02:18,139
+Merhaba arkadaşlar.
+
+2
+00:02:25,171 --> 00:02:28,331
+Birkaç dakika daha bekleyelim. Ondan sonra da başlarız.
+
+3
+00:02:31,132 --> 00:02:31,831
+Merhabalar hocam.
+
+4
+00:02:41,427 --> 00:02:49,427
+arkadaşlar ben yaklaşık olarak bir bir saat belki sürer. Ondan sonra sana zaman veririz.
+
+5
+00:02:49,427 --> 00:03:03,427
+Tamamdır hocam zaten çok fazla sürmez de tahmin ediyorum. Tamamdır. Yani bir kod yazacağım geçen haftaki threadlerle alakalı.
+
+6
+00:03:03,427 --> 00:03:10,427
+GUI ile alakalı bir şey yapacaktım onu da hazırlayayım. Bir saniye.
+
+7
+00:04:34,963 --> 00:04:36,204
+Evet.
+
+8
+00:04:54,259 --> 00:04:55,740
+Evet arkadaşlar, şimdi
+
+9
+00:04:55,740 --> 00:05:11,479
+Biz geçen hafta threadlerle alakalı normalde ders notumunu tamamen bitirdik ama ben ekstradan bir şey anlatmak istiyorum, bir örnek yapmak istiyorum. Bu gelecek dönem işletim sistemlerinde de size faydalı olacaktır.
+
+10
+00:05:12,819 --> 00:05:16,719
+Prodüzür-Konzümür problemini yapacağız.
+
+11
+00:05:16,719 --> 00:05:24,959
+Bu problem nedir? Geçen hafta biraz özledim ama şimdi önce anlatayım tekrar implementasyon üzerinden gidelim.
+
+12
+00:05:26,100 --> 00:05:30,679
+Bir üretim ve tüketimin yapıldığı bir kaynak düşünelim.
+
+13
+00:05:30,679 --> 00:05:34,999
+Yani bir, burada dizi gibi düşünceler ama başka şeyler de olabilir.
+
+14
+00:05:36,359 --> 00:05:46,099
+Bu kaynağı bir ekleme, yani push dediğimiz bir şey, bir de pub dediğimiz bir şey, insert, delete, add, remove mekanizması var.
+
+15
+00:05:46,719 --> 00:05:48,719
+Bunun bir kapasitesi var tabi.
+
+16
+00:05:51,419 --> 00:06:01,819
+Ürünlerin de sıfırdan 1, 2, 3 böyle en eksi 1'e kadar buraya eklendiğini kabul edelim.
+
+17
+00:06:02,819 --> 00:06:06,279
+Şimdi bir shape up yapabilmem için bir kere buranın dolu olması lazım.
+
+18
+00:06:07,659 --> 00:06:10,359
+Bir şeyler alacak bir şeylerin olması gerekiyor.
+
+19
+00:06:10,359 --> 00:06:17,499
+Aynı zamanda önce buradan sıfırıncı item, sonra birinci item, sonra ikinci item alabilmem lazım.
+
+20
+00:06:17,499 --> 00:06:27,639
+Eğer burası boşaldıysa, yani pop yapacak işlemim çok hızlı çalıştı, burada eleman kalmadıysa bu thread beklemeye geçecek.
+
+21
+00:06:28,480 --> 00:06:30,219
+Push yapacak thread'in çalışması lazım.
+
+22
+00:06:30,639 --> 00:06:35,859
+Aynı zamanda push thread çalıştıp buranın buffer'ını doldurursa bu da beklemeye geçecek.
+
+23
+00:06:35,959 --> 00:06:37,480
+Bunun tüketmesini de gerekiyor.
+
+24
+00:06:38,099 --> 00:06:40,239
+Ve bu işlemim senkron bir şekilde yapılması lazım.
+
+25
+00:06:40,359 --> 00:07:01,259
+Çünkü ben iki tane thread kullanacağım. Bir de burada main var. Üç tane thread. Bu iş için bir veri yapısı lazım. İşte burada Linked List'i bir Q mantığıyla kullanabiliriz. Ona bakacağız. Öncelikle mekanizmayı bir yazalım. Hemen bir class oluşturuyorum.
+
+26
+00:07:01,259 --> 00:07:05,939
+Buna producer consumer dedim
+
+27
+00:07:05,939 --> 00:07:15,560
+Bu üretim yapacağımız yerde ilk başta mesela maksimum üretim sayısı gibi şeyler lazım ama
+
+28
+00:07:15,560 --> 00:07:17,759
+hani dinamik de bunu yapabiliriz
+
+29
+00:07:17,759 --> 00:07:21,200
+Evvela bir linked list tutacağım
+
+30
+00:07:21,200 --> 00:07:23,519
+Bunun için önce import yapıyorum
+
+31
+00:07:23,519 --> 00:07:25,620
+İşte java
+
+32
+00:07:25,620 --> 00:07:55,599
+So, here we go.
+
+33
+00:07:36,755 --> 00:07:40,095
+Bu class'ın içerisinde integer tarzında bir şey olsun.
+
+34
+00:07:46,899 --> 00:07:57,059
+ve bu sınıfın bir nesnesi olsun. Sınıfın nesnesi gibi doğrudan oluşturduğu, ilklendiriyoruz. Constructor'a falan burada gerek yok.
+
+35
+00:08:01,331 --> 00:08:03,331
+Bu integer türünde
+
+36
+00:08:12,531 --> 00:08:37,771
+Burada bizim iki tane temel threadimiz olacak. Bu sınıftan bir nesne üretilince. Birincisi fonksiyonumuz olacak. Bunu thread ile kullanacağız. Buraya bir produce etme şey olacak. Produce ederken mesela diyelim ki belli bir sayıya kadar yani 10 eleman, 120 eleman. Bunu simülasyonu izlemek için koyacağım. Normalde böyle bir şeye pek gerek yok.
+
+37
+00:08:37,771 --> 00:08:49,511
+Static Integer sayı diyelim. Number. Mesela bu ilk başta sıfırla başlasın.
+
+38
+00:08:54,131 --> 00:09:02,231
+ve kaçıncı kayda geldiğimi buradan kontrol edeyim. İşte belli bir şey vereceğim birazdan. Kaçıncı kayda kadar geldiğimizi göstereceğiz.
+
+39
+00:09:03,791 --> 00:09:16,931
+Diyorum ki şurada sürekli bu fonksiyon üretim yapabilir. Ama hani bunu sürekli edelim. Şimdi şurada number'ı mesela 10 olana kadar üretsin.
+
+40
+00:09:17,812 --> 00:09:21,831
+Ve burada her üretimde bir id integer ekleyeceğiz.
+
+41
+00:09:24,131 --> 00:09:43,411
+Yapacağımız şey ne olacak? 10 olana kadar ekleyeceğiz. Ama şunu düşünmemiz gerekiyor. Eğer listemizin size'ı eşitse bizim kapasiteye, bir de kapasite ekleyecektik bunu unuttuk.
+
+42
+00:09:43,411 --> 00:09:46,791
+bir capacity
+
+43
+00:09:46,791 --> 00:09:51,611
+şimdilik bu da 10 olsun
+
+44
+00:09:51,611 --> 00:09:56,511
+size'mız kapasiteye eşitse
+
+45
+00:09:56,511 --> 00:10:00,212
+bunun ne yapması lazım? Beklemesi lazım
+
+46
+00:10:00,212 --> 00:10:05,672
+thread'in beklemesini sağlamak için ya burada bir şey yaparız
+
+47
+00:10:05,672 --> 00:10:06,371
+ne derler?
+
+48
+00:10:07,231 --> 00:10:08,831
+bir boş döngü veya
+
+49
+00:10:08,831 --> 00:10:11,771
+bunun zaten kendi hazır fonksiyonu var
+
+50
+00:10:11,771 --> 00:10:29,151
+Capacity, wait dedik. Bu şeyi çalıştıran thread beklem alacak. Diyor ki burada rapor edilmemiş bir exception var. Bu thread'in interrupt edilmesi için şuraya şunu yazacağız.
+
+51
+00:10:29,151 --> 00:10:39,691
+rows, bu şekilde de interrupted, interrupted, interrupted, exception,
+
+52
+00:10:44,820 --> 00:11:14,639
+Evet. Eğer burada bir şey üretebilmişsek, yani beklememişsek, yani şu döngüye takılmamışsak, o zaman bir mesaj yazalım. South producer üretti. Neyi üretti? Burada mesela üretilen değeri dikkate alalım. Kaçıncı değer olduğunu artlıyorum. Bir value değişkenim olsun. Şuradan yazalım.
+
+53
+00:11:14,820 --> 00:11:21,180
+Şuraya da diyelim ki produce yaptığımızda integer value eşittir 0.
+
+54
+00:11:22,540 --> 00:11:32,500
+Çünkü bu nasıl üretecek? Bu thread başlayacak, 0'dan alacak, kapasite 10 olana kadar sürekli yapacak, birazdan geleceğiz ona.
+
+55
+00:11:33,559 --> 00:11:38,360
+Ondan sonra üretilen şey bitecek ve o günkü işini dolduracak.
+
+56
+00:11:38,599 --> 00:11:41,959
+Tekrar tekrar bu metot çağrılmayacak, biz bunu bir defa çağıracağız.
+
+57
+00:11:41,959 --> 00:11:54,159
+Yani şöyle düşünün bir işçi var sabah mesai içinde başlıyor akşam bitiriyor veya ne bileyim elindeki yapması gereken işi bitirince bitiriyor. Bu da bir işçi gibi çalışacak bir metot.
+
+58
+00:11:54,159 --> 00:12:01,979
+Ürettikten sonra bu üretim sayısı için kullandığımız şu değişkenimizi bir arttıralım.
+
+59
+00:12:01,979 --> 00:12:08,999
+Bu niye statik yaptık? Kaldığı yerden devam etsin diye. Yani o gün için belli bir sayıda şey olacak.
+
+60
+00:12:09,839 --> 00:12:20,339
+Bu number'ı artı yap diyorum. Sonra ürettiğim değer hangisini ürettiysem, kaç sayısını ürettiysem listeye bunu ekle diyorum.
+
+61
+00:12:20,339 --> 00:12:49,659
+Şimdi listeye ekleyince bunu listenin sonuna ekleyecektir doğrudan. Yani ilk alınacak eleman olmayacak. Value'yu ekledim. Daha sonra value'nin değerini bir arttır. Eğer ki burada yapacağımız başka işler yoksa işimizi tamamladık. Buradan consumer thread'i uyarabiliriz. Yani notify dediğimi diğer thread olacak. Şimdi onu da geleceğiz.
+
+62
+00:12:49,659 --> 00:13:16,540
+Diğer bir tane daha thread varsa onu uyarmak istiyoruz. Yani bizim işimiz bitti. Kaynaktan çıkacağız. Birazdan söyleyeceğiz. Bu consumer thread üretim yapabilir dedik. Çünkü bu kaynağı ekleme başka yerden çıkarma başka yerden oluyor. Sonra diyoruz ki bu işlemler yapılsın. Sonucu hızlı bir anda şey görmek için bir bekleme verelim.
+
+63
+00:13:16,540 --> 00:13:28,900
+Simülasyonu sığıp 500 desek yeterli. Aynısını farklı bir şekilde consume için yapacağım.
+
+64
+00:13:38,932 --> 00:13:47,251
+ne kadar şey üretildiyse kaç tane ürün üretildiyse o kadar tüketilecek.
+
+65
+00:13:48,631 --> 00:13:53,151
+O zaman yine bir while döngümüz var burada.
+
+66
+00:13:54,892 --> 00:13:58,612
+Number küçüktür 10 olduğu müddetçe diyelim.
+
+67
+00:14:03,347 --> 00:14:27,407
+Bu da 10. şeyi üretmemiş olabilir. Bu 10. şeye kadar üretecek. Bu da 10. şeye kadar tüketecek. Yani bunun ürettiği bakın number'ı arttırıyor. Şimdi böyle devam edeceğiz. Burada number'ı azaltmayacağız yalnız bakın. Çünkü kuyruktan çıkarıyoruz. O günkü 10 taneyi bu arttırıyor ve bu neyi sağlıyor?
+
+68
+00:14:27,407 --> 00:14:35,927
+mesela 9 tane tükettik ama 10. işi bir türlü üretmedi. Bu üretmediği için bu hiçbir zaman görevini tamamlamayacak. Onu bekleyecek. Tamam mı?
+
+69
+00:14:37,347 --> 00:14:45,487
+Ondan küçük olduğu müddetçe diyoruz ki burada yine while list.size.
+
+70
+00:14:46,947 --> 00:14:56,787
+Burada while'ın listin size'ı 0 olursa ne demek? Bunun beklemesi gerekecek. Yani liste boş tüketecek bir şey yok.
+
+71
+00:14:57,407 --> 00:15:10,047
+Bu trade'i bekletiyoruz. Bu trade'i bekletirken bunu kim yarıyordu? Bakın şurada notify ile uyaracağız. Eğer burada kapasiteye eşitseydi bu da full demektir. Onun için o da bekliyordu.
+
+72
+00:15:12,187 --> 00:15:23,387
+Wait diyoruz. Bunu wait dediğim için aynı şey şurada yine uninterrupted exception mevzusu var. Bunu buraya ekledik.
+
+73
+00:15:23,388 --> 00:15:39,847
+ekledikten sonra bu üretim bandından bir şey alacağız. Şimdi Linked Listenin sonuna ekliyoruz. Başından kayıt almamız lazım.
+
+74
+00:15:39,847 --> 00:15:58,307
+Bu hal diyelim. Başından kayıt alırken listenin kuyruk gibi kullanılırsın get, remove first diye bir şey var. Bakın bu integer türünde hangi türden tanımladıysak bu generi ona göre bir şey döndürüyor. İlk elemanı alıyoruz. Döndürdüğümüz eleman. Sonra bunu yazdıralım.
+
+75
+00:15:58,307 --> 00:16:13,267
+South, consumer, consumer, tüketti, neyi tüketti, şuradaki değeri tüketti, bu işini bitiriyor, daha sonra diğer thread'i uyarıyoruz, notifiye ediyoruz,
+
+76
+00:16:16,148 --> 00:16:17,087
+thread.
+
+77
+00:16:22,100 --> 00:16:22,859
+Sleepy.
+
+78
+00:16:26,899 --> 00:16:45,740
+Buradan bir test edince, 500 soran diyelim. Testte bir yanlış göreceğiz. O yanlışı nasıl düzenlendiririz? Ona bakacağız. Yeni bir class oluşturuyorum burada. Buraya kadar sormak istediğiniz var mı? Ben bu arada chat'i göremiyorum. Belki chat'ten yazıyorsunuz. Şöyle yapayım.
+
+79
+00:16:48,500 --> 00:16:49,399
+Test diyelim.
+
+80
+00:16:52,916 --> 00:17:00,795
+Şimdi bir kere producer consumer'dan bir nesnemiz olacak. Bu nesnemizin aracılığıyla threadlerimizi çalıştıracağız.
+
+81
+00:17:00,795 --> 00:17:08,495
+Şöyle yapıyorum. Public static void.
+
+82
+00:17:16,435 --> 00:17:41,935
+bizim şey PC idi. PC eşittir. New PC dedik. Orada bir tane üretim şeyi oluştu. Burada biz ya thread sınıfından kalıtımla veya thread sınıfını kullanarak bir şey yapabiliriz. Ben şunu yapacağım. Thread sınıfından bir nesne oluşturuyorum. T1 nesnesi diyorum. Bakın burada iki tane thread olacak. New thread dedim. Bu yeni thread'imizin
+
+83
+00:17:45,203 --> 00:17:47,983
+İçerisine runable interface'ini ekliyorum.
+
+84
+00:17:49,283 --> 00:17:52,283
+Ve bir inner class tanımıyor.
+
+85
+00:17:53,943 --> 00:17:58,643
+Bu inner class'ın içerisinde nasıl yapıyorduk?
+
+86
+00:17:58,943 --> 00:18:00,243
+Şöyle bir parantez açıyorduk.
+
+87
+00:18:00,363 --> 00:18:01,644
+Biraz kötü bir görüntüsü var ama.
+
+88
+00:18:03,603 --> 00:18:07,163
+Runable arayüzünü eklemiş olduk referansına.
+
+89
+00:18:07,163 --> 00:18:08,163
+Runable.
+
+90
+00:18:08,163 --> 00:18:31,463
+Diyor ki runable eklediğinde sen bunun içerisindeki abstract olan metot şeyini overwrite etmedin. Overwrite edeceğiz zaten. Bu aralıkta şunu da şöyle alalım da düzgün görünsün. Şurayı klas. Bakın bir inner class oldu burada. Bu klasın içerisinde void metodumuzu yazıyoruz. Run diyoruz.
+
+91
+00:18:31,463 --> 00:18:39,583
+yazacağımız burada ne yapacak? Program, şey, producer, consumer ne yapacak? Burada produce etsin.
+
+92
+00:18:40,943 --> 00:18:43,303
+PC.producer şey yazmadık mı?
+
+93
+00:18:49,652 --> 00:18:51,211
+Produce niye görmedi?
+
+94
+00:18:59,763 --> 00:19:03,343
+produce diyelim. Herhalde intelligence.
+
+95
+00:19:07,796 --> 00:19:08,796
+Anlama
+
+96
+00:19:10,875 --> 00:19:12,676
+Can not find symbol
+
+97
+00:19:13,435 --> 00:19:17,515
+Bunlar aynı paketten mi? Evet, import package.pc
+
+98
+00:19:19,115 --> 00:19:20,235
+Test
+
+99
+00:19:23,347 --> 00:19:26,568
+Public void, Produs. Evet.
+
+100
+00:19:33,844 --> 00:19:34,383
+Rangiver.
+
+101
+00:19:38,003 --> 00:19:43,723
+Şunlar Threadlerle alakalı şeyler. Prodüksü niye görmüyor acaba?
+
+102
+00:19:47,539 --> 00:19:52,020
+produce. Ya intelligence hala çalışmadı.
+
+103
+00:20:04,372 --> 00:20:05,151
+Prodüç
+
+104
+00:20:10,675 --> 00:20:11,195
+Vim.
+
+105
+00:20:18,516 --> 00:20:20,195
+Hatayı görenler var mı arkadaşlar?
+
+106
+00:20:20,215 --> 00:20:24,395
+Hocam diğer PC.java dosyasını bir ctrl'de seyre kaydetseniz bazen.
+
+107
+00:20:24,956 --> 00:20:25,555
+Yapmıyorlar.
+
+108
+00:20:26,055 --> 00:20:26,456
+Olur.
+
+109
+00:20:27,135 --> 00:20:27,655
+Or diyorsun.
+
+110
+00:20:29,436 --> 00:20:31,396
+Şunları bir şöyle kapatayım.
+
+111
+00:20:38,067 --> 00:20:40,427
+Şu an herhalde çözüm oldu gibi.
+
+112
+00:20:42,287 --> 00:20:52,028
+Şimdi diyor ki burada produce ederken bu kendi içerisinde produce metodu ne yapmış? Bir tane interrupt oluşuyormuş. O zaman diyor ki bunu bir şeyin içerisine al, try catch'in içerisine al.
+
+113
+00:20:53,407 --> 00:20:59,748
+Public o itiranı. Veya hani şuraya throws yazabiliriz ama bunu try catch'te yazmak en doğrusu.
+
+114
+00:20:59,748 --> 00:21:09,428
+Bunu try yapalım, rüyaladım. Burada da catch yapacağımız şey uninterrupted exception.
+
+115
+00:21:15,443 --> 00:21:16,323
+E dedik.
+
+116
+00:21:18,323 --> 00:21:19,443
+E nokta
+
+117
+00:21:19,443 --> 00:21:21,364
+PrintStakeTrace
+
+118
+00:21:21,364 --> 00:21:22,703
+dedik.
+
+119
+00:21:23,543 --> 00:21:25,063
+Bu işlem bu kadar. Bakın bu bir thread.
+
+120
+00:21:25,263 --> 00:21:27,383
+Şimdi bu thread'in benzerinden bir tane daha
+
+121
+00:21:27,383 --> 00:21:28,103
+oluşturacağız.
+
+122
+00:21:29,324 --> 00:21:31,243
+Şurada. Bu kendisi çalışmaya
+
+123
+00:21:31,243 --> 00:21:33,563
+başlayacak bir işçi bir thread. T2 dedik.
+
+124
+00:21:34,303 --> 00:21:35,544
+Yine Runable Interface'inden
+
+125
+00:21:35,544 --> 00:21:37,683
+bu thread oluşturuluyor.
+
+126
+00:21:39,343 --> 00:21:41,364
+Bunun yapacağı şey de bu da konsüm edecek arkadaşlar.
+
+127
+00:21:41,364 --> 00:21:49,484
+Tamam threadlerimiz bu şekilde. Bunlar tanımlandıktan sonra diyorum ki t1.start
+
+128
+00:21:53,076 --> 00:21:54,576
+T2.start
+
+129
+00:21:54,576 --> 00:21:59,036
+Burada şimdi bir şey yapmamız lazım.
+
+130
+00:22:00,215 --> 00:22:03,036
+Önce hangi thread'in bitmesi gerekiyor, işini bitirmesi gerekiyor?
+
+131
+00:22:09,715 --> 00:22:10,915
+Biraz önce söyledim.
+
+132
+00:22:13,015 --> 00:22:15,015
+Prodüser önce işini tamamlayacak.
+
+133
+00:22:15,096 --> 00:22:17,475
+O zaman join yapmamız gerekiyor arkadaşlar.
+
+134
+00:22:18,596 --> 00:22:19,955
+T1.join
+
+135
+00:22:23,604 --> 00:22:26,064
+T2.join
+
+136
+00:22:26,064 --> 00:22:30,243
+T2.join de niye yapıyoruz?
+
+137
+00:22:31,423 --> 00:22:32,484
+T1 işini bitirecek.
+
+138
+00:22:33,444 --> 00:22:34,524
+T2'yi bekleyeceğiz.
+
+139
+00:22:35,763 --> 00:22:36,343
+Ondan sonra
+
+140
+00:22:36,343 --> 00:22:39,123
+T2 de işini bitirecek.
+
+141
+00:22:39,503 --> 00:22:40,944
+Ana programı bekleyeceğiz.
+
+142
+00:22:41,524 --> 00:22:42,803
+Ana program bekleyecek T2.
+
+143
+00:22:42,803 --> 00:22:44,903
+Yani T2, T1'i
+
+144
+00:22:44,903 --> 00:22:47,784
+main'de T2'yi bekliyor.
+
+145
+00:22:48,063 --> 00:22:51,104
+Yoksa bir senkronizasyon sorunu olur.
+
+146
+00:22:51,104 --> 00:22:54,384
+Burada bir tane daha exception varmış şu oyunda
+
+147
+00:23:00,596 --> 00:23:02,155
+try catch içerisine alalım.
+
+148
+00:23:04,295 --> 00:23:07,576
+Şunu da şöyle try catch içerisine alalım.
+
+149
+00:23:09,995 --> 00:23:12,835
+Genel olarak şuraya bunu yazmayalım arkadaşlar.
+
+150
+00:23:13,035 --> 00:23:14,056
+Bunu şey yapıyorum.
+
+151
+00:23:14,855 --> 00:23:15,915
+Vazgeçtim bundan.
+
+152
+00:23:17,555 --> 00:23:20,415
+Bu sıkıntıdan kurtulmak için ne yapacağız? Şuraya throws.
+
+153
+00:23:22,215 --> 00:23:26,375
+Bu kime bilgi verecek? Tabi bu main olduğu için herhangi bir şey vermeyecek.
+
+154
+00:23:26,375 --> 00:23:30,995
+Şunu yaparsak bundan kurtulmuş oluyoruz.
+
+155
+00:23:31,175 --> 00:23:32,515
+Main'de tasarlı yazdığımız için.
+
+156
+00:23:33,615 --> 00:23:34,596
+Peki sonucu bir görelim.
+
+157
+00:23:35,255 --> 00:23:36,175
+Burada sorun yok herhalde.
+
+158
+00:23:40,500 --> 00:23:41,139
+Bunları
+
+159
+00:23:41,139 --> 00:23:43,799
+Sina bir şey olmuş.
+
+160
+00:23:54,036 --> 00:23:55,055
+Geldikçe geliyor.
+
+161
+00:23:56,855 --> 00:23:57,955
+Allah'ım ya.
+
+162
+00:24:06,483 --> 00:24:08,443
+Bakın, üretici üretiyor boyuna.
+
+163
+00:24:12,243 --> 00:24:19,563
+ve bir türlü hani şey olmadı tüketiciye sıra gelmedi. Böyle devam edip gidiyor. Bakalım ne yapabiliriz.
+
+164
+00:24:21,504 --> 00:24:32,344
+Üreticinin koduna geri geliyorum. Bu number diye bir değişkenimiz var. Başta sıfırdı. Buraya geldi value sıfırmış.
+
+165
+00:24:32,943 --> 00:24:38,343
+Dedi ki kapasiteye eşit mi? Değil. Eşit olmadığı için üretici üretti. Yani şu satırı görüyoruz.
+
+166
+00:24:38,343 --> 00:24:42,843
+sayı ondan küçük olduğu için bu satırı görüyoruz.
+
+167
+00:24:44,983 --> 00:24:45,983
+Peki.
+
+168
+00:24:47,243 --> 00:24:51,083
+Bu aşlamadan sonra biz ne yapacağız?
+
+169
+00:24:51,403 --> 00:24:53,323
+Number'ı bir yerde arttırıyor muyduk?
+
+170
+00:24:57,619 --> 00:25:25,019
+üretim sayısını bir yerde şurada arttırıyoruz, listeye ekliyoruz. Ha bu arada tabii şunu da yapmamız lazım. Şurada bir eksiğimiz var. Şunu while'ın içerisine alacağız arkadaşlar. Böyle biraz da hani beklemeyi bekleyelim, görelim demiştik. Şurada ne eksiğimiz var? Burada yok. Tamam şu an daha doğru oldu. Şimdi çalıştırıyoruz.
+
+171
+00:25:27,619 --> 00:25:41,320
+Dedi ki üretici üretti, şurada bir notify sıkıntısı oldu ve şeyi kapattı, thread'i kapattı. Bu normal.
+
+172
+00:25:42,039 --> 00:25:53,480
+Tekrar geri geliyorum. Bu kaynağa erişimde, yani bu sınıfa erişimde aynı anda hem üretim hem tüketim tabii baştan alıp sondan çıkar atabiliriz de
+
+173
+00:25:53,480 --> 00:26:20,619
+Bu sınıfa, bu nesneye erişimde ya paylaşılan bir kaynak var şu linked list buna ortak paylaşım olmaması gerekiyor. Bakın böyle bir sıkıntıyla karşılaştık. Dedi ki burada monitör sistemde bir exception oldu falan dedi. O zaman bizim bu şeye erişimi senkron yapmamız gerekiyor. Yani birisi eriştiğinde diğerinin o anda erişmesini engelli ediyor. Neden böyle?
+
+174
+00:26:20,619 --> 00:26:43,119
+Ben bir kaynağa bir şey hiçbir şey yok mesela ilk kaynağa ekledim tam şu gördüğümüz senaryo aslında ilk elemanı ekler ekmez yani daha kaydetmeden şu tüketici oraya erişim sağlayabilir. Bu sebeple ne yapacağız bunu senkronize yapacağız. Bizim synchronized keywordümüz vardı hatırlarsınız.
+
+175
+00:26:43,119 --> 00:27:03,939
+diyorum ki bu nesneyi yani bu sınıfın kendisini senkron kullan. Bu sınıfın kendisine this diye bir bizim keyword hatırlarsınız. O zaman dediğimiz ki bunu senkron kullanacağız. Yani şurada while döngüsünün içerisinde şuraya gelenek bir blok açıyorum.
+
+176
+00:27:03,939 --> 00:27:05,780
+Synchronized.
+
+177
+00:27:05,940 --> 00:27:07,659
+S-Y-N-C
+
+178
+00:27:07,659 --> 00:27:10,659
+Şimdi doğru yazdık herhalde.
+
+179
+00:27:11,780 --> 00:27:16,679
+Diyoruz ki bunu, bu sınıfın nesnesini, hangi nesneyse bu, bunu senkron kullan.
+
+180
+00:27:17,560 --> 00:27:18,220
+Şunu alıyorum.
+
+181
+00:27:19,659 --> 00:27:22,579
+Şuraya kopyalıyorum.
+
+182
+00:27:23,579 --> 00:27:24,940
+Böyle bir tuş vardı.
+
+183
+00:27:25,019 --> 00:27:27,679
+Otomatik olarak bunları erenç ediyordu da ben şu an onu bilmiyorum.
+
+184
+00:27:28,480 --> 00:27:29,459
+Eclipse'de falan var.
+
+185
+00:27:32,079 --> 00:27:32,980
+Şimdi ne oldu?
+
+186
+00:27:32,980 --> 00:27:44,480
+bu sınıfa ulaşınca, prodüzer gidince diğer thread'in o anda girmesini engelliyor. Daha sonra while'ın içerisinde şurada aynı şeyi consumer içinde yapacağım.
+
+187
+00:27:46,480 --> 00:28:00,319
+Biz diyeceğiz. Thread, slip şu olana kadar. Bunu senkron kullan. Şimdi bir daha çalıştıralım. Bakalım başka bir hatamız var mı?
+
+188
+00:28:05,203 --> 00:28:32,343
+Evet. Şimdi her şey bakın doğru bir şekilde gidiyor. Bakalım. Sıfırı üretti, biri üretti, ikiyi üretti, üçü üretti. Sonra diğer trede sıra geldi. Bu sıfırı tüketti. Bakın sıfırı tüketmeden biri tüketmesi söz konusu değil. O arada öbür trede sıra geçti. Bu dördü üretti. Mecbur dörtten devam edecek. Sonra konzumur bir gitti, şey üretti.
+
+189
+00:28:32,343 --> 00:28:41,863
+Tabi bu gerçek hayatta yani iki taraflı bu kuyruk olduğu için aslında erişim sağlanabilir ama o senkronizasyonun nesne üzerindeki senkronizasyonu ancak bu şekilde sağlayabilirsin.
+
+190
+00:28:42,483 --> 00:28:52,263
+Ne yapıyor bu şekilde? Şurada prodüsür 9'u üretti. Bakın consumer 4'ü tüketti. Ama consumer'ın daha tüketecek şeyleri var.
+
+191
+00:28:54,663 --> 00:29:00,263
+Elemanları var. Daha her şeyi tüketmedi. 3'e 4'e kadar geldi. Bazıları durdu.
+
+192
+00:29:00,263 --> 00:29:21,223
+Bir dakika pardon. Kaçıncı sıradan tükettiğini gösterdiği için böyle bir durum var. Yani şu gelen değerler onun için normal. Yani şurada 20 tane satır olmasın. 2, 4, orada bir sıkıntı yok. 6, 8, 10, 12, 14, 15. Niye 15 oldu? 15 olmaması lazım.
+
+193
+00:29:24,660 --> 00:29:25,660
+şurada bir yerde
+
+194
+00:29:25,660 --> 00:29:29,979
+number
+
+195
+00:29:29,979 --> 00:29:33,979
+remove first dedik
+
+196
+00:29:33,979 --> 00:29:36,919
+şurada wait yaptık
+
+197
+00:29:36,919 --> 00:29:38,620
+bir dakika arkadaşlar
+
+198
+00:29:38,620 --> 00:29:40,099
+şurada noktalı virgül olmayacak
+
+199
+00:29:40,099 --> 00:29:42,379
+yani bir şeyse
+
+200
+00:29:42,379 --> 00:29:44,660
+bekleyecek onun için şu bir hata
+
+201
+00:29:45,439 --> 00:29:48,299
+orada noktalı virgül olması biliyorsunuz
+
+202
+00:29:48,299 --> 00:29:49,660
+boş bir şey demektir
+
+203
+00:29:49,660 --> 00:29:50,660
+Laptop.
+
+204
+00:29:57,523 --> 00:30:03,903
+2, 4, 6, 8, 10, 12, 13.
+
+205
+00:30:03,903 --> 00:30:04,163
+10, 10.
+
+206
+00:30:06,643 --> 00:30:08,904
+Kapasiteye eşitse...
+
+207
+00:30:12,756 --> 00:30:14,515
+Şimdi şurada value 0
+
+208
+00:30:14,515 --> 00:30:18,015
+Number 10'dan küçük olacak. Yani şu
+
+209
+00:30:22,451 --> 00:30:24,072
+Kapasiteyi
+
+210
+00:30:24,072 --> 00:30:25,811
+5 vereyim.
+
+211
+00:30:28,591 --> 00:30:29,531
+5'e kadar
+
+212
+00:30:29,531 --> 00:30:31,311
+tamam tamam. Evet.
+
+213
+00:30:33,191 --> 00:30:36,431
+Şunu 5 verince o 2 verdiğimiz için 2'ye kadar gidiyorlar.
+
+214
+00:30:36,591 --> 00:30:38,091
+Öyle bir şey vardı burada.
+
+215
+00:30:39,231 --> 00:30:39,491
+Şimdi
+
+216
+00:30:39,491 --> 00:30:43,031
+evet.
+
+217
+00:30:44,792 --> 00:30:45,911
+Şu consumer
+
+218
+00:30:45,911 --> 00:30:50,411
+sayısı artıyor. Şunu ikisini yani 10 tutacağız.
+
+219
+00:30:50,411 --> 00:30:52,292
+10'a kadar olacak.
+
+220
+00:30:52,451 --> 00:30:53,392
+Bu şekilde ayarlayacağız.
+
+221
+00:30:58,804 --> 00:30:59,943
+Simdo on matelas.
+
+222
+00:31:06,451 --> 00:31:07,371
+Allah Allah.
+
+223
+00:31:09,591 --> 00:31:13,091
+Hocam, ilk yaptığımızda da ilk çalıştığımızda dörte kadar tüketmişti.
+
+224
+00:31:15,431 --> 00:31:21,551
+Yani bir saniye şurada kapasiteyi şey verdik.
+
+225
+00:31:23,712 --> 00:31:30,031
+Value 0'dan başlattık. Üretim sayısı 10'dan küçük olacak dedik. Senkronize et dedik.
+
+226
+00:31:30,031 --> 00:31:54,672
+Eğer kapasiteye eşitsek bekleyeceğiz. Değilsek üreteceğiz. Ve üretim sayısını şunu bir arttıracağız. Kaç tane ürettiğim gibi. Sonra üretim sayısını arttırıp value'yu listeye ekliyoruz. Yani listeye bir ekledik, iki ekledik. Önce sıfır ekledik, bir ekledik, iki ekledik, böyle ekledik.
+
+227
+00:31:54,671 --> 00:32:22,651
+Sonra Notify'de bir diğer thread'i çalıştırıyoruz. Sonra senkronizasyon bitiyor. Bu bittikten sonra ne olacak? While döngüsü eğer ona ulaşmışsak mesela kapasiteyi 5 yapsam number yani şunu kapasite yapsak arkadaşlar kapasiteye ulaşana kadar desek.
+
+228
+00:32:22,651 --> 00:32:25,031
+üretebilir.
+
+229
+00:32:25,891 --> 00:32:26,451
+O olabilir.
+
+230
+00:32:27,411 --> 00:32:31,411
+Şimdi şurada da number dediğim şey kapasiteden küçükse.
+
+231
+00:32:35,508 --> 00:32:50,247
+desek, synchronized yaptık. Liste sıfıra eşitse, bekle, değilse eleman al. Eleman aldıktan sonra aldığımız elemanı yazdır. Başka da bir şey yok. Şimdi bir daha çalıştırıyorum.
+
+232
+00:33:01,940 --> 00:33:12,559
+Hocam bu arada hepsinin ortak yönü de şu. Prodüser hocam bittikten sonra bir kere konsümür çalışıyor, duruyor hocam. Şimdi yakalık 4 çalıştırmanız hepsi ortak yöne.
+
+233
+00:33:13,299 --> 00:33:16,839
+Ama arada bir prodüser bir konsümür çalıştığı durum olmuştu.
+
+234
+00:33:18,259 --> 00:33:23,219
+Tam bir prodüser bir konsümür çalışıyor da prodüser bittikten sonra bir dakika konsümür çalışıyor, bitiyor.
+
+235
+00:33:23,219 --> 00:33:23,960
+Evet.
+
+236
+00:33:25,979 --> 00:33:28,379
+8-9'u üretti, 5.
+
+237
+00:33:28,379 --> 00:33:33,659
+Yani şurada şey diyebiliriz list.size
+
+238
+00:33:33,659 --> 00:33:39,319
+Veya şöyle desek
+
+239
+00:33:39,319 --> 00:33:44,019
+list.size üzerinden gidelim
+
+240
+00:33:44,019 --> 00:33:45,019
+size
+
+241
+00:33:45,019 --> 00:33:49,239
+büyükken sıfırdan
+
+242
+00:33:53,556 --> 00:33:58,556
+Tabii şurada şey boşa çıkacak da...
+
+243
+00:34:02,324 --> 00:34:14,923
+Yani üretilecek şey, tüketilecek ürün varken desek. Buna hiçbir zaman sıra gelmedi. Hep üretti, üretti, üretti. Allah Allah.
+
+244
+00:34:18,900 --> 00:34:19,919
+Number, capacity.
+
+245
+00:34:23,919 --> 00:34:24,599
+Synchronized.
+
+246
+00:34:29,599 --> 00:34:36,139
+Şuradaki test sınıfında herhangi bir şey var mı? Yani şu joinlerde mi acaba? Yok, joinlerde de bir problem yok.
+
+247
+00:34:51,987 --> 00:34:52,507
+Yani
+
+248
+00:34:52,507 --> 00:34:58,727
+Şimdi number sürekli kapasiteden küçük olunca
+
+249
+00:34:58,727 --> 00:35:02,487
+Kapasite değişmiyor. 10
+
+250
+00:35:02,487 --> 00:35:06,247
+Number sürekli artıyor. Normalde burada bir sonsuz döngü olur.
+
+251
+00:35:07,167 --> 00:35:08,367
+Buna girdikten sonra değil mi?
+
+252
+00:35:10,008 --> 00:35:12,967
+Yani bu döngü hiçbir zaman tamamlanmayacak.
+
+253
+00:35:22,835 --> 00:35:40,155
+7'yi tüketti, consumer 6'yı tüketti, 7'yi tüketti. Halbuki şurada kapasitemiz sabit bir sayı, 10. Sabit sayı olduğu için hiçbir yerde numberı arttırıyoruz.
+
+254
+00:35:44,851 --> 00:36:09,651
+Ha şurada evet. Yani kapasite number 9 oluyor ama kapasite şu an 2 mesela. Yani şu durumda 9'a kadar 6'yı tükettik. 3 tane eleman var. Numberımız şey olduğu için şuraya girmiyor. Girmediği için tüketemiyor. Tamam. Peki burada ne yapabiliriz? Numberımız 10 diyelim yine şuna mesela.
+
+255
+00:36:15,827 --> 00:36:18,827
+Hatta küçük eşit 10 demek daha doğru olur.
+
+256
+00:36:27,507 --> 00:36:29,267
+Kapasite desek
+
+257
+00:36:29,267 --> 00:36:32,367
+Eşittir 10 diyelim
+
+258
+00:36:32,367 --> 00:36:35,207
+Kafa karıştırdı burası ya
+
+259
+00:36:50,579 --> 00:37:06,619
+Yalnız burada şu an 9'a kadar gitti de kapasite 10'dan küçük olduğu için thread hala şu thread çalışmaya devam ediyor. Bu döngü dönüyor bakın. Şurası running pozisyonda. Onun için burada bir problemimiz var.
+
+260
+00:37:06,619 --> 00:37:35,019
+Şimdi üretim sayısı desek yani şuradaki number'a göre baksak number küçük onken desek olur mu? Biraz önce çünkü öyleydi. Number artacak. Bir yerde şunu deneyeceğim arkadaşlar bakın bu hala çalışıyor. Yani main thread'e hala sıra gelmedi. Şuradan çıkamadık. Birisi bitti.
+
+261
+00:37:35,019 --> 00:37:37,260
+Şunun number diyelim
+
+262
+00:37:37,260 --> 00:37:41,139
+Küçük eşittir 10 diyelim
+
+263
+00:37:41,139 --> 00:37:46,199
+Hocam galiba bir başka değişkene daha ihtiyacımız var
+
+264
+00:37:46,199 --> 00:37:47,279
+Ne kadar tüketildiğini
+
+265
+00:37:47,279 --> 00:37:49,399
+Number sadece ne kadar üretildiğini tutuyor
+
+266
+00:37:49,399 --> 00:37:51,639
+Ne kadar tüketildiğini tutmamız lazım
+
+267
+00:37:51,639 --> 00:37:54,159
+Yani statiği aslında onun için düşündüm de
+
+268
+00:37:54,159 --> 00:37:58,239
+Bakın şu an 9'a geldi hala takıldı kaldı
+
+269
+00:37:58,239 --> 00:38:01,239
+Yani şu number'ın 0 olması
+
+270
+00:38:01,239 --> 00:38:06,519
+Ama kapasite kadar dolduracak, number artacak
+
+271
+00:38:06,519 --> 00:38:13,239
+Number arttıktan sonra şöyle desek
+
+272
+00:38:13,999 --> 00:38:19,239
+Hocam number sıfırdan büyük oldu müddetçe desek
+
+273
+00:38:19,239 --> 00:38:23,319
+Ama bir dakika deneyelim
+
+274
+00:38:23,319 --> 00:38:25,899
+Number'ın sıfırdan büyük olması ne demek?
+
+275
+00:38:25,899 --> 00:38:27,639
+Number burada sürekli artıyor
+
+276
+00:38:27,639 --> 00:38:54,959
+Yani kaç tane ürün üretildiği boyuna artıyor. Arttığı için o ona geldi. Yani sıfırdan büyüktür desek bu döngüden çıkmayacak. Yani şurası full olacak. Consumer'da number'ı azaltalım. Ama number'ı azaltınca zaten aslında size azalıyor. Hani biz şurada size'a göre bakacağız.
+
+277
+00:38:57,639 --> 00:39:03,279
+Şurada ne diyebiliriz? Şu an benim de kafam kaçtı. Listenin size'ı.
+
+278
+00:39:08,052 --> 00:39:28,191
+Yukarıda listenin size sıfırdan büyük olduğu sürece desek o zaman. Onu dersek de ne olacak? Büyük eşit olduğu sürece desek. Denedik olamadı. Biraz önce denedik. Konzumer'da number'ı azaltalım ama number şey azaltabiliriz burada evet.
+
+279
+00:39:28,191 --> 00:39:36,691
+Number'ı azaltırsak hocam yukarıdakinde number'ı sürekli arttırıcı açıdan o sefer hiç çıkmayacak. Sürekli üretim ve tüketim olacak. Aynen.
+
+280
+00:39:38,052 --> 00:39:43,752
+şöyle döngü hiçbir üretici de bitmez tüketici de bitmez yani senin dediğin anladım şöyle yapacağız
+
+281
+00:39:47,923 --> 00:39:48,743
+run diyelim.
+
+282
+00:39:51,243 --> 00:39:55,463
+Prodüzer, consumer. Yani bu ona kadar değil, baya devam edip gidecek.
+
+283
+00:40:01,715 --> 00:40:23,955
+Mesela bu tamamen bitirdi şu an ama üretici devam ediyor bir anlamda. Yani şurada diğerine geçmedi bir türlü. Şuradaki döngüden çıkamadı. Ama buradan çıkabilse buradan devam edecek. Çünkü şu an number'ın değerini bir yerde bastırsak ondan küçük veya kapasiteden küçük göreceğiz. Onun için bu şey olmaz.
+
+284
+00:40:25,715 --> 00:40:27,935
+Bir dakika kafamı toparlayayım şimdi.
+
+285
+00:40:27,935 --> 00:40:40,936
+O da olur.
+
+286
+00:40:40,936 --> 00:40:41,936
+Yani şöyle diyorsun, bir tane ilk değişken.
+
+287
+00:40:41,936 --> 00:40:43,936
+Statik olacak ona.
+
+288
+00:40:43,936 --> 00:40:45,936
+O da öyle mi?
+
+289
+00:40:45,936 --> 00:40:47,936
+Aynen hocam.
+
+290
+00:40:47,936 --> 00:40:49,936
+O zaman arkadaş söylemişti galiba ama.
+
+291
+00:40:49,936 --> 00:40:52,936
+Mesela kaç?
+
+292
+00:40:52,936 --> 00:40:56,936
+Ondan başlayıp sonra geri geri gelsin hocam. Ondan sıfıra doğru.
+
+293
+00:40:57,935 --> 00:41:20,936
+Ama yani zaten size o zaman olur. Yani diyeceksin ki produce büyükken sıfırdan. Yani kapasiteden başlayacak. Bu işi yapacak. O zaman olur. Ama ben bunu geçen sene tek değişkenle çözdüğümü hatırlıyorum.
+
+294
+00:41:20,936 --> 00:41:23,215
+Wild Chesson hocam produce xx yapmadınız.
+
+295
+00:41:23,715 --> 00:41:24,495
+Evet şu an.
+
+296
+00:41:31,699 --> 00:41:45,099
+Bunu geçen sene, bilmiyorum belki aranızda ders alanlar var da laboratuvarda şu an aynı kodu bulamadım. Bir bakayım yani gerekirse tekrar size gönderirim.
+
+297
+00:41:47,603 --> 00:42:00,323
+Bakın şimdi bu geçti. Bundan sonra main thread'e döndük. Yani şuraya hatta şey yazalım. Join oldu. Bu join olduktan sonra artık buradayız. Program bitti diyelim.
+
+298
+00:42:04,532 --> 00:42:10,111
+Hocam galiba şey yapabiliriz. İşte nokta size küçükse numberdan. Onu denedik mi?
+
+299
+00:42:11,331 --> 00:42:22,271
+Bakalım hemen. Bakın 8-9 daha program bitti. Yazısı gelmedi. En son bu bitiriyor. Tüketici yani şunlar bitiyor. Ondan sonra buraya giriyoruz.
+
+300
+00:42:22,271 --> 00:42:25,891
+Ne demiştin Bilal? Şuraya mı yazacağız?
+
+301
+00:42:26,811 --> 00:42:28,471
+Evet nokta size.
+
+302
+00:42:28,471 --> 00:42:29,792
+List nokta size.
+
+303
+00:42:31,091 --> 00:42:31,891
+Size.
+
+304
+00:42:32,471 --> 00:42:33,271
+Küçük.
+
+305
+00:42:34,532 --> 00:42:38,572
+Gece o zaman hiç çıkmıyor. Yok bir şey anlayacağım. Yazınca aklına.
+
+306
+00:42:40,092 --> 00:42:50,752
+Ben şu şeye göre yaptığımı hatırlıyorum. Şu number mesela kaçtan başlıyordu?
+
+307
+00:42:52,752 --> 00:42:58,252
+Sıfırdan başlatmıştık yine. Kapasitemiz 10 gibi bir şeydi.
+
+308
+00:42:58,251 --> 00:43:14,371
+Bu number küçükse 10'dan demiştim. Hatta 10 yazdıydım geçen sene. Eski bir kodun bir kısmı var. Ona da baktım da orada da 10 yazıyor.
+
+309
+00:43:14,892 --> 00:43:24,131
+This eğer size kapasiteye eşitse bekle, değilse number'ı bir arttır ve değer ekle, notify'de ondan sonra çık.
+
+310
+00:43:24,131 --> 00:43:31,932
+Bak şuraya geldiğimizde de kapasitemiz ondan küçükse, yani şu number küçükse ondan demişim.
+
+311
+00:43:33,631 --> 00:43:36,691
+Ama number'a bir yerde müdahale etmek gerekiyor.
+
+312
+00:43:36,691 --> 00:43:41,511
+Yani bu sürekli number ona geldikten sonra sürekli dönecek.
+
+313
+00:43:41,612 --> 00:43:42,691
+Onun için buradan çıkmayacak.
+
+314
+00:43:42,831 --> 00:43:45,511
+O açıdan burada bir problem var.
+
+315
+00:43:45,651 --> 00:43:47,511
+Neyse ben buna bir daha bakayım arkadaşlar da.
+
+316
+00:43:47,651 --> 00:43:49,631
+Yani Bilal'in söylediği çözüm evet.
+
+317
+00:43:49,631 --> 00:44:07,112
+Evet, kim ne kadar üreteceğini biliyor ama tüketicinin üreticinin ürettiği kadar üretmesidir. Yani burada ikimiz de 10 tane üreteceğiz diye bir şey, sen 10 tane üreteceksin ben 10 tane tüketeceğim diye bir şey yok. Şu daha şey olabilir ne derler.
+
+318
+00:44:07,111 --> 00:44:34,471
+Yani daha fazla olabilir veya bu sürekli üretebilir işte üretmek istiyor musunuz diye tamamen böyle sabit bir sayı olmaz dinamik olur bu dinamik olduğuna göre şunun da dinamik olarak tüketmesi lazım mevzu burada aslında yani sabit bir şey olmayacak akşam buna ben bir daha kafa yoruyum da bu şey vardı wild list büyüktür sıfır denedik mi nerede şurada mı denedik
+
+319
+00:44:38,579 --> 00:44:40,179
+List.size
+
+320
+00:44:40,179 --> 00:44:43,299
+Bunu denedik herhalde. Büyük sıfır
+
+321
+00:44:43,299 --> 00:44:45,599
+olduğu müddetçe.
+
+322
+00:44:47,059 --> 00:44:49,399
+Denedik hocam bunun çalışması lazım. Niye çalışmıyor orasını?
+
+323
+00:44:49,399 --> 00:44:51,239
+Şimdi şöyle. İlk başta
+
+324
+00:44:51,239 --> 00:44:52,679
+bu thread
+
+325
+00:44:52,679 --> 00:44:54,879
+konsüme sıra gelirse
+
+326
+00:44:54,879 --> 00:44:57,180
+ilk başta thread çalışırsa
+
+327
+00:44:57,180 --> 00:44:59,239
+yani prodüsten önce
+
+328
+00:44:59,239 --> 00:45:00,979
+çalışma ihtimali var. Buraya geldi.
+
+329
+00:45:01,859 --> 00:45:03,359
+Baktı hiçbir şey tüketilmemiş.
+
+330
+00:45:03,559 --> 00:45:04,619
+While döngüsünden çıktı.
+
+331
+00:45:05,279 --> 00:45:06,359
+Bir daha çalışmayacak bu.
+
+332
+00:45:06,359 --> 00:45:08,519
+Tamam, one of them
+
+333
+00:45:13,780 --> 00:45:15,000
+Eğer şanslıysak
+
+334
+00:45:15,000 --> 00:45:17,260
+Dova'yı kullansak çözülür aslında ya
+
+335
+00:45:17,260 --> 00:45:31,620
+Bakın şu an hep prodüüs çalıştı. Niye hep prodüüs çalıştı? Çünkü konsümer başta çalıştı. Buraya girmedi. Girmediği için görevini bitirdi, çıktı. Artık bir daha konsümer çağrılmayacak. Şimdi bir daha çalıştı. Eğer şanslı olsak
+
+336
+00:45:31,620 --> 00:45:40,200
+Prodüüsür bizden önce çalışsa, bakın şu an prodüüsür çalıştı. Gerçi yok çalışmadı yine. Bir tane konsüm görürsek
+
+337
+00:45:40,200 --> 00:45:46,079
+diyeceğiz ki demek ki prodüsür consumer'dan önce çalışmış. Hatta şuraya gelelim bakın şey yazalım.
+
+338
+00:45:46,079 --> 00:45:48,559
+South.
+
+339
+00:45:49,939 --> 00:45:51,460
+Conumer çalıştı.
+
+340
+00:45:54,140 --> 00:45:55,539
+Run diyelim.
+
+341
+00:45:59,603 --> 00:46:16,024
+Bakın evet, şu an prodüsür önce çalışıyor, sonra bir şey tüketiyor. Ama o arada tükettiği için yine şu size şey oldu ya, sıfıra düştü. Tüketecek ürün kalmadı. Tüketecek ürün kalmadığı için buradan görevini bitirip çıkıyor. Onun için buna bakamıyoruz.
+
+342
+00:46:16,024 --> 00:46:24,803
+Hocam şu şekil yapsak galiba çözüldü. Şu 34. 35. satırı üstüne alırsak vaydın. Üstüne alırsak galiba olacak.
+
+343
+00:46:24,803 --> 00:46:42,803
+Diyorsun ki size'mız şeyse bekleyelim tamam olabilir sıfırdan şeyse bekleyelim sıfırdan büyükse çalışalım ve diğer işlemleri yapalım bir deneyelim bakalım
+
+344
+00:46:48,052 --> 00:47:16,851
+Bakın yine bu monitör hatası. Yani şu weightten kaynaklı bir şey. Bu produce etti. Orada bir exception verdi. Yine çalışmadı. Şu number'ı dikkate almamız gerekiyor arkadaşlar. Yani şu number küçükken kapasiteden çalışacak. Ama üzerinde bir daha bir düşüneyim. Yani ben bir yerde belki yanlış bir şey yazıyorumdur.
+
+345
+00:47:18,052 --> 00:47:38,592
+Şimdi şu an size'a erişemiyoruz çünkü size'ın da şeyi yok. Weight'ten kaynaklı zaten bir exception var. Size'ın, gerçi orada problem olmaz herhalde. Weight'i ne yapıyor? Daha diyor bu çalışmadı ki diyor şey diyor. Yani çalışmamış bir thread üzerinde bir weight ile alakalı bir exception fırlatıyor.
+
+346
+00:47:38,591 --> 00:47:41,031
+Neyse buna bir daha bakayım da
+
+347
+00:47:41,031 --> 00:47:44,031
+Yani bu üretici tüketici problemi böyle
+
+348
+00:47:44,031 --> 00:47:45,911
+Benim muhtemelen bir yerde bir hatam vardır
+
+349
+00:47:45,911 --> 00:47:48,591
+Onu tekrar size cevabını gönderelim
+
+350
+00:47:48,591 --> 00:47:50,731
+Bilal'in söylediği tabi bir çözüm ama
+
+351
+00:47:50,731 --> 00:47:52,951
+Evet
+
+352
+00:47:52,951 --> 00:47:55,951
+Threat ile alakalı söyleyeceklerim hemen hemen bu kadar
+
+353
+00:47:55,951 --> 00:47:58,251
+Hani bu konu çok daha detaylı işte
+
+354
+00:47:58,251 --> 00:48:00,751
+İşletim sistemleri dersi alınca göreceksiniz
+
+355
+00:48:00,751 --> 00:48:02,111
+Şimdi gelelim
+
+356
+00:48:02,111 --> 00:48:05,751
+GUI ile alakalı kısma
+
+357
+00:48:05,751 --> 00:48:29,531
+Evvela GUI ile alakalı kısımdan önce inner classları zaten size anlatmıştım. Burada tekrar anlatmıyorum. Çünkü Java'da C Sharp takımından farklı olarak birkaç tane GUI kütüphanesi var. İlk başlarda AVT vardı. Sonra Swing çıktı. AVT çok eski bir versiyon. Şimdilerde de JavaFX'in farklı versiyonları var.
+
+358
+00:48:29,531 --> 00:48:53,851
+Bu da yine event driving dediğimiz şeye bağlı. Böyle bir Java Swing'in hiyerarşisi var bakın. Bizim bu label, buton, tablolar, jcomponentten alınan şeyler. Containerlar var. Bu containerlar pencereyi mantıksal olarak bölmeyi sağlıyor. Üzerinde frameler, diyaloglar falan var. Her biri işte bir component klasından kalıtım oluyorlar.
+
+359
+00:48:53,851 --> 00:48:56,711
+Özellikle bizim
+
+360
+00:48:56,711 --> 00:49:04,211
+Burada bir şeyde form oluşturmuştuk C-sharp'ta hatırlarsanız.
+
+361
+00:49:04,951 --> 00:49:07,211
+Burada da G-frame üzerinden bu işi yapacağız.
+
+362
+00:49:07,691 --> 00:49:08,611
+Pencere oluşturacağız.
+
+363
+00:49:09,571 --> 00:49:11,371
+Şöyle yeni bir paket oluşturayım.
+
+364
+00:49:12,951 --> 00:49:13,992
+V diyelim.
+
+365
+00:49:15,871 --> 00:49:17,891
+En basit bir pencereyi oluşturalım.
+
+366
+00:49:17,971 --> 00:49:19,691
+Sonra üzerine birkaç bir şeyler ekleyelim.
+
+367
+00:49:20,171 --> 00:49:23,091
+Şimdi hatırlarsanız yine
+
+368
+00:49:23,091 --> 00:49:38,471
+C-Shot'ta form sınıfından kalıtım almıştık. Burada yine onu benzer bir şey yapabiliriz ama kalıtım almadan da kullanmak mümkün. Doğrudan association yapabiliyoruz.
+
+369
+00:49:39,411 --> 00:49:47,311
+Benim bir sınıfım var. Buna işte ne diyelim adını değiştireyim şöyle. Pencerem diyelim.
+
+370
+00:49:53,076 --> 00:50:08,076
+Bu sınıfta bir buton olsun. Bunu private diyorum. Butonun buradaki karşılığı j butonu arkadaşlar. Birazdan bunları ekleyeceğiz. Hatta diyor ki import yap diyor. İşte b dedim.
+
+371
+00:50:08,076 --> 00:50:09,276
+şeydeki gibi.
+
+372
+00:50:10,336 --> 00:50:10,836
+Private.
+
+373
+00:50:11,916 --> 00:50:13,315
+J text file'ım olacak.
+
+374
+00:50:15,795 --> 00:50:17,895
+Bu text file 1 diyelim.
+
+375
+00:50:18,956 --> 00:50:19,996
+Şu text file'ın
+
+376
+00:50:19,996 --> 00:50:21,055
+şeyisi
+
+377
+00:50:21,055 --> 00:50:23,015
+büyük olacak.
+
+378
+00:50:23,936 --> 00:50:26,516
+Diyor ki şunları import yap diyor. Tamam yaparız.
+
+379
+00:50:29,515 --> 00:50:32,135
+Bunlar sınıfımızda bakın kullandığımız referanslar.
+
+380
+00:50:32,215 --> 00:50:33,976
+Şimdi bu sınıftan nesne üretildiğinde
+
+381
+00:50:33,976 --> 00:50:36,175
+yani constructor metot çağrıldığında
+
+382
+00:50:36,175 --> 00:50:41,515
+Bu nesnenin ilk değerlerini oluşturmamız lazım.
+
+383
+00:50:42,395 --> 00:50:45,256
+Bunu public pencerem, constructor içerisinde yazıyorum.
+
+384
+00:50:46,875 --> 00:50:47,495
+Aynı şekilde.
+
+385
+00:50:49,175 --> 00:50:58,936
+Evvela diyoruz ki bu sınıftan bir şey üretildiğinde jFrame, oradaki formdu, burada jFrame, sınıfından bir nesne üret.
+
+386
+00:51:00,936 --> 00:51:02,256
+NIM jFrame
+
+387
+00:51:02,256 --> 00:51:04,256
+RULE
+
+388
+00:51:07,284 --> 00:51:08,163
+Örnektirik.
+
+389
+00:51:13,108 --> 00:51:26,387
+Yine diyor ki şunu da diyor import yapalım yaptık. Bu sınıfın yani bu frame üzerine butonu ekleyeceğim text field'ı falan ekleyeceğim. B eşittir. Artık buton nesnemi oluşturuyorum jbuton.
+
+390
+00:51:28,528 --> 00:51:33,187
+Burada bakın bunun constructor'ında isim verebiliyoruz. Mesela tıkla diyelim buna.
+
+391
+00:51:33,187 --> 00:51:55,627
+Bunu söyledik. Sonra bunun geometrisini ayarlıyoruz. B.setBound diye bir şey var. SetBound olacaktı. Bakın Bound da diyor ki şurada kullanırsak bulunduğunuz yerin xy koordinatlarını ve başlangıç xy koordinatlarını ve bulunduğunuz yerden genişlik yükseklik verebilirsiniz.
+
+392
+00:51:55,628 --> 00:52:02,227
+50'ye 100
+
+393
+00:52:07,380 --> 00:52:09,840
+50'ye 100 noktasından başla.
+
+394
+00:52:11,279 --> 00:52:14,499
+95'e 30'luk bir şey yap.
+
+395
+00:52:17,380 --> 00:52:19,760
+Daha sonra bunu frame'e ekliyoruz arkadaşlar.
+
+396
+00:52:19,899 --> 00:52:22,819
+Orada controllers diye bir controllers nokta et demiştik.
+
+397
+00:52:22,919 --> 00:52:24,259
+Bunu da oradan frame'e ekliyoruz.
+
+398
+00:52:24,300 --> 00:52:25,220
+F nokta et dedik.
+
+399
+00:52:25,300 --> 00:52:26,819
+Bakın bir komponent ekliyor.
+
+400
+00:52:26,919 --> 00:52:31,619
+Komponent biraz önceki şuradan baktığımızda bizim üst sınıfımızda.
+
+401
+00:52:31,619 --> 00:52:34,140
+Yani buradaki butonlar aslında bir anlamda komponent.
+
+402
+00:52:34,479 --> 00:52:36,319
+Onun için bir type casting oluyor zaten.
+
+403
+00:52:37,380 --> 00:52:46,380
+bunu add dedik, B'yi ekle diyorum. B'yi ekledikten sonra daha frame'i görünür yapmadık ona geleceğiz.
+
+404
+00:52:46,380 --> 00:53:03,380
+Text field'ımızı da yapalım. tf1 eşittir new text field. İlk başta bu mesela boş olsun herhangi bir şey yaptım.
+
+405
+00:53:03,380 --> 00:53:27,280
+Bakın C Sharp'ta böyle bir constructor yok mesela. Tamamen dilden dile bunlar değişir. Bunların nesnelerin şeylerine bakacaksınız. Yani kullanım kılavuzu dediğimiz data sheetlerine bakmamak gerekiyor. Bunun bağımda 50'ye yani sayfadaki lokasyonu şey yapalım 50'ye 50 olsun yani yukarıda olsun şeye göre butona. 95'e aynı boyutlarda olsun 30 diyorum.
+
+406
+00:53:27,280 --> 00:53:31,500
+Aynı şekilde bunu da ekleyeceğim.
+
+407
+00:53:32,540 --> 00:53:33,839
+f.at
+
+408
+00:53:33,839 --> 00:53:38,180
+tf1
+
+409
+00:53:42,099 --> 00:53:55,739
+Şimdi frame'i daha çerçevesini ayarlamadım. f.setSize diyorum. Penceremiz ne kadar olacak? İşte burada iki tane var. Constructor metodu, overload olarak. 300'e 300 dedik.
+
+410
+00:53:59,239 --> 00:54:05,479
+frame.setVisible. Bunun visibility'sini, yani görünürlüğünü evvela true yapalım.
+
+411
+00:54:05,479 --> 00:54:08,239
+Şimdi pencerede
+
+412
+00:54:08,239 --> 00:54:11,219
+Neyse onu çalıştırmayayım şimdi
+
+413
+00:54:11,219 --> 00:54:14,619
+Şöyle bir çalıştıralım bakalım görelim ne olacak
+
+414
+00:54:14,619 --> 00:54:17,299
+Ha bu arada tabi ne yapacağız main metodunu açacağız
+
+415
+00:54:17,299 --> 00:54:19,039
+Public
+
+416
+00:54:19,039 --> 00:54:21,079
+Void
+
+417
+00:54:21,079 --> 00:54:22,059
+Main
+
+418
+00:54:22,059 --> 00:54:26,119
+Argument string
+
+419
+00:54:26,119 --> 00:54:30,759
+Bu sınıftan bir ne üretmemiz gerekiyor
+
+420
+00:54:30,759 --> 00:54:31,899
+Nesne üretmemiz gerekiyor
+
+421
+00:54:31,899 --> 00:54:32,339
+Niv
+
+422
+00:54:32,339 --> 00:54:34,599
+Pencerem diyorum sadece
+
+423
+00:54:34,599 --> 00:54:42,259
+Bakın nesneyi ürettim. Bu ne yapıyor? Kendinden bir şey üretirken constructor'ı çağırıyor ve sonucu göreceğiz.
+
+424
+00:54:44,259 --> 00:54:47,599
+Niye public static void main olacak tabii.
+
+425
+00:54:56,179 --> 00:55:16,020
+Bakın bir şey çalıştı. Şöyle, herhalde bu text kutusu. Evet. Şu an visibility'sinde bir şey yok. Bir layoutta bir parametre vardı. Set layout onu düzenleyeceğiz. Şurada bir text kutusu var. Bir şey görünüyor. Bakalım.
+
+426
+00:55:16,020 --> 00:55:42,679
+f.add buton dedik. 50'ye 100'den 95'e 30. Text field dedik. 300'e 300 dedik. Set visible dedik. Şunu da f.set layout'u galiba. Bu yukarıda yaptığımız ayarlamaları şey yapalım. Burada null diyelim.
+
+427
+00:55:42,679 --> 00:55:43,799
+Buna
+
+428
+00:55:43,799 --> 00:55:46,679
+Herhalde bundan kaynaklı bir şeydi
+
+429
+00:55:46,679 --> 00:55:48,580
+Heh
+
+430
+00:55:48,580 --> 00:55:50,700
+Evet böyle bir yüz
+
+431
+00:55:50,700 --> 00:55:51,979
+Ara yüz geliyor
+
+432
+00:55:51,979 --> 00:55:53,339
+Dahasını yapabiliriz
+
+433
+00:55:53,339 --> 00:55:55,080
+Şimdi bakın şunu kapatıyorum arkadaşlar
+
+434
+00:55:55,080 --> 00:55:58,540
+Bunu kapatınca biraz önceki çalıştırdığım şeyde
+
+435
+00:55:58,540 --> 00:56:00,799
+Bir sonraki de ikisi de çalışır halde
+
+436
+00:56:00,799 --> 00:56:02,299
+Yani proses sonlanmadı
+
+437
+00:56:02,299 --> 00:56:05,179
+Bunları buradan öldürelim
+
+438
+00:56:05,179 --> 00:56:08,840
+Bunu öldürmek için
+
+439
+00:56:08,840 --> 00:56:11,919
+Şu çarpı düğmesine bir görev atamamız gerekiyor Java'da
+
+440
+00:56:11,919 --> 00:56:30,419
+Bunu kendimiz yapacağız. F.set defaultCloseOperation dediğimiz bir şey var. Bunun içerisine bir mi yazıyorduk ya? DefaultCloseOperation
+
+441
+00:56:37,043 --> 00:56:48,483
+Bunun bir şeyi var. Ne derler? Makrosu var. Yani buraya bir ID vermek gerekiyor. Hatta şurada belki bir yardım vardır. Bakalım oradan.
+
+442
+00:56:51,063 --> 00:57:04,724
+Diyor ki, do nothing on close. Yani çıkışta herhangi bir şey yapma. Çıkışta pencereyi gizle. Çıkışta dispose et. Yani bellekle alakalı kısmı bitir.
+
+443
+00:57:04,724 --> 00:57:25,484
+Exit on Close, çıkışta kapat. Bu 0, 1, 2, 3 diye gidiyor arkadaşlar. 3 yazacağız onun için burada. Bunların değerleri var. Bu şeye bakılabilir. Şuraya 3 yazıyorum. O şeyleri de yazabiliriz. İşte do nothing, exit on close. Mesela exit nokta bir de.
+
+444
+00:57:30,195 --> 00:57:31,155
+Alt üst üstü hocam.
+
+445
+00:57:31,655 --> 00:57:32,175
+Exit.
+
+446
+00:57:33,275 --> 00:57:34,035
+Alttan tele.
+
+447
+00:57:36,176 --> 00:57:36,935
+Neyi göremedi?
+
+448
+00:57:38,795 --> 00:57:39,855
+Şunu bir daha...
+
+449
+00:57:48,307 --> 00:57:49,668
+exit on alt.
+
+450
+00:57:50,927 --> 00:57:54,927
+Hocam, yanlış hatırlamazsam jframe noktadan buluşalım.
+
+451
+00:57:55,487 --> 00:57:59,327
+Bunun içerisindeki jframe içerisinde tanımlanmış aslında flagler bunlar.
+
+452
+00:57:59,608 --> 00:58:00,567
+Yani bunu da yazabiliriz.
+
+453
+00:58:01,768 --> 00:58:05,927
+Hatta bu jframe exit on close'u isterseniz bir ne bileyim ekrana bastıralım.
+
+454
+00:58:06,007 --> 00:58:08,267
+Bakın burada sistem alt print alan yapabiliriz.
+
+455
+00:58:08,267 --> 00:58:11,087
+O zaman o kısmı şeyde göreceğiz.
+
+456
+00:58:12,787 --> 00:58:13,488
+Nedir o?
+
+457
+00:58:15,007 --> 00:58:16,327
+Comment line'da göreceğiz.
+
+458
+00:58:18,307 --> 00:58:22,368
+Şimdi çalıştır dedim.
+
+459
+00:58:24,947 --> 00:58:30,787
+Bakın 3'ü yazdı. Biz de oraya 3 yazacaktık. Şimdi kapatınca prosesimizin kapandığını gördük.
+
+460
+00:58:31,747 --> 00:58:34,208
+Genel pencere şekli bu kadar arkadaşlar.
+
+461
+00:58:35,047 --> 00:58:40,787
+Buna daha fazla konteyner ekleyebilir veya işte burada da görsel arayüzden mouse'la sürükle bırak yapabilirsiniz.
+
+462
+00:58:40,787 --> 00:58:43,787
+Peki burada butona görev atamak istiyoruz.
+
+463
+00:58:44,208 --> 00:58:47,148
+Geçenlerde mouse'a görev atadık, butona görev atadık.
+
+464
+00:58:47,148 --> 00:58:56,488
+Diyeceğiz ki burada geçenlerde ne yapmıştık? Eventlerden C Sharp'ta biraz kolay demiştik. Burada biraz daha iş gıcıklaşıyor açıkçası.
+
+465
+00:58:57,488 --> 00:59:04,468
+Şimdi buton nokta add action listener diye bir şey var burada. Action'ların listelenmesi.
+
+466
+00:59:05,927 --> 00:59:15,427
+Buraya bir nesne göndeririz. Bu nesne action listener sınıfında bir referans olacak.
+
+467
+00:59:15,427 --> 00:59:38,047
+Bakın Action list'in bir şey aslında Java AVT'den gelen bir özellik. Ve buradan gelen referansı aşağıda tanımlayacağız. Yani butona tıklandığında ne yapılmasını istiyoruz. Yine Anonym Class ile bunu yapabiliriz. Şöyle kapatayım. Şu araya yazacaklarımızı yazacağız.
+
+468
+00:59:38,047 --> 00:59:41,867
+Diyeceğiz ki burada bu ne uyarısı?
+
+469
+00:59:41,867 --> 00:59:44,947
+Diyor ki action performant metodunu overwrite etmeye giriyor.
+
+470
+00:59:45,028 --> 00:59:49,047
+Yani bir aksiyon gerçekleştiğinde şu aksiyonu yerine getir.
+
+471
+00:59:49,287 --> 00:59:50,967
+Bir şey olduğunda bir şey yap diyorduk ya.
+
+472
+00:59:51,727 --> 00:59:55,407
+Action performant, perform biliyorsunuz bir görevi yerine getirmek falan anlamında.
+
+473
+00:59:56,127 --> 01:00:01,207
+Public void action performant dedik.
+
+474
+01:00:01,987 --> 01:00:07,827
+Buraya bir action event türünden hani geçenlerde mouse event falan demiştik şeyde C şartta aynı örnekte.
+
+475
+01:00:07,828 --> 01:00:11,867
+Burada da gelen şey daha geniş bir halde action event
+
+476
+01:00:11,867 --> 01:00:14,028
+action event
+
+477
+01:00:14,028 --> 01:00:17,408
+türünde bir event geliyor
+
+478
+01:00:17,408 --> 01:00:21,408
+sonra diyoruz ki bunu istersek artık şey yapabiliriz
+
+479
+01:00:21,408 --> 01:00:26,768
+yapmak istediğimiz şeyleri istersek burada yazacağız
+
+480
+01:00:26,768 --> 01:00:28,188
+istersek bir metoda
+
+481
+01:00:28,188 --> 01:00:29,128
+ben diyorum ki buradan
+
+482
+01:00:29,128 --> 01:00:30,548
+işte buton
+
+483
+01:00:30,548 --> 01:00:32,288
+click'e git
+
+484
+01:00:32,288 --> 01:00:34,968
+C Sharp bunu kendi yapıyordu ama
+
+485
+01:00:34,968 --> 01:00:36,727
+otomatik tab'a basıyordu, hallediyordu
+
+486
+01:00:36,727 --> 01:00:54,528
+Biz burada kendimiz yazacağız. O zaman diyoruz ki şurada private void button click. Yukarıda da yapılabilir ama yukarıda her şeyi yaparsak orası çok karışıyor. Onun için ayrı yazmak daha güzel.
+
+487
+01:00:54,528 --> 01:00:56,908
+Action event e
+
+488
+01:00:56,908 --> 01:01:03,567
+Diyelim ki text field 1 dot set text
+
+489
+01:01:03,567 --> 01:01:05,548
+Bakın burada direkt text yok
+
+490
+01:01:05,548 --> 01:01:07,168
+Direkt set text diyeceğiz
+
+491
+01:01:07,168 --> 01:01:11,528
+Bu özelliğine diyelim ki butona tıklandı
+
+492
+01:01:11,528 --> 01:01:19,768
+Eğer mesela bir text kutusundan öbür text kutusuna şey almak istiyorsak
+
+493
+01:01:19,768 --> 01:01:21,567
+Mesela onu da yapalım isterseniz
+
+494
+01:01:21,567 --> 01:01:23,447
+tf1, tf2 diyorum
+
+495
+01:01:23,447 --> 01:01:31,447
+Bir tane text kutusu olsun. Şurayı şöyle kopyalayacağım arkadaşlar.
+
+496
+01:01:31,447 --> 01:01:36,007
+Tf2'mizin
+
+497
+01:01:39,603 --> 01:01:41,023
+Bu şeyi merhaba olsun.
+
+498
+01:01:43,383 --> 01:01:45,243
+Bu 50'ye 50'den başlıyordu.
+
+499
+01:01:45,504 --> 01:01:46,544
+95 birimdi.
+
+500
+01:01:46,803 --> 01:01:49,543
+Buna 50'ye 95 eklersek ne olur?
+
+501
+01:01:50,484 --> 01:01:51,603
+150 olur.
+
+502
+01:01:52,263 --> 01:01:53,803
+145'den 150 diyelim.
+
+503
+01:01:54,024 --> 01:01:56,124
+150'ye 50 noktasından başlasın.
+
+504
+01:01:56,743 --> 01:01:58,103
+Bu tf2'yi ekliyorum.
+
+505
+01:01:58,823 --> 01:02:01,543
+Sonra diyorum ki tf1.setText
+
+506
+01:02:01,543 --> 01:02:04,043
+Şurada butona tıklandı yazma.
+
+507
+01:02:05,323 --> 01:02:07,364
+tf2.getText
+
+508
+01:02:07,364 --> 01:02:22,223
+oradaki metni al buraya şey al tıklayınca da tf2.setText diyelim onu oradan kopyalayalım şöyle diyelim
+
+509
+01:02:25,844 --> 01:02:34,863
+butona artı önce kes tıklandı. Şimdi onu da şöyle yapalım.
+
+510
+01:02:38,324 --> 01:02:50,063
+value diyelim, artı diyelim. Buton bir klike geliyorum. Static value eşittir 1 diyorum.
+
+511
+01:02:54,643 --> 01:02:55,903
+Nerede kızdı bu?
+
+512
+01:02:59,860 --> 01:03:04,979
+Identifier expected dediği, acaba şuraya virgül mü? Yok, virgüle gerek yoktu.
+
+513
+01:03:10,643 --> 01:03:14,643
+Bu doğrudan şey yapıyormuş. O zaman şöyle bir şey yaparız. Ctrl X
+
+514
+01:03:19,347 --> 01:03:43,467
+büyük s ile s eşittir. Kontrol ve bunda bir sıkıntı yok. Buraya s'yi aldık. Illegal start of expression. Static int value 1. Şöyle yapalım. Orayı anlayamadım.
+
+515
+01:03:56,916 --> 01:03:58,195
+Şimdi şunu sıfır yapabiliriz.
+
+516
+01:04:01,115 --> 01:04:01,796
+Çalıştırıyoruz.
+
+517
+01:04:08,019 --> 01:04:10,019
+O olmadı, niye olmadı?
+
+518
+01:04:11,519 --> 01:04:13,019
+Frame at
+
+519
+01:04:15,419 --> 01:04:18,019
+Ha, şunu tf2 yapacağız.
+
+520
+01:04:21,235 --> 01:04:21,695
+Andiem.
+
+521
+01:04:27,476 --> 01:04:33,255
+Merhaba, butona bir kez tıkladı. Bir daha tıkladık, butona iki kez tıklandı. Böyle devam edip gidiyor. Tamam?
+
+522
+01:04:35,175 --> 01:04:42,155
+Şimdi bir ara verelim arkadaşlar. Geldiğimizde az daha bir şey anlatacağım. Ondan sonra Ömer'e söz vereceğiz. 16.10'da görüşmek üzere.
+
+523
+01:04:43,736 --> 01:04:52,476
+Bu arada ben buradayım. Sorunuz olursa bakabiliriz. Ben şu şeye biraz kafa yorayım. Eski kodu bir bulabilirsem.
+
+524
+01:04:54,575 --> 01:04:56,035
+Program counter şu.
+
+525
+01:04:57,476 --> 01:04:59,396
+Öndeki çalışmayana bir bakayım
+
+526
+01:05:07,284 --> 01:05:07,663
+Yeah.
+
+527
+01:06:01,588 --> 01:06:06,607
+Biraz önündekinde aslında bu çalışıyor. Ne farkı var?
+
+528
+01:06:10,643 --> 01:06:30,744
+Şimdi integer üretim sayısı, şuna üretim sayısı dedik, şu yoktu zaten onu sonradan ekledik. Produce dedik, value 0. Üretim sayısı number 10'dan küçükken.
+
+529
+01:06:36,467 --> 01:06:39,367
+List.size eşittir kapasite ise bekle.
+
+530
+01:06:48,083 --> 01:06:48,443
+Dek.
+
+531
+01:07:07,315 --> 01:07:09,015
+Albuquerque, Shukiri, Andreas.
+
+532
+01:07:15,380 --> 01:07:17,880
+Number küçük 10 olacaktı.
+
+533
+01:07:26,579 --> 01:07:32,799
+size eşit 0'sı bekle.
+
+534
+01:07:34,179 --> 01:07:36,759
+D is inci den al.
+
+535
+01:07:41,652 --> 01:07:44,652
+kurduyuz. Yok. Sonra da istediğimiz değişken rütün.
+
+536
+01:12:23,923 --> 01:12:26,624
+Buradaki örnek arkadaşlar bu yaptığım kodda.
+
+537
+01:12:29,763 --> 01:12:33,264
+Sıkıntı yok gibi. Mesela kapasiteyi 5 yapalım.
+
+538
+01:12:35,203 --> 01:12:40,483
+Bu şu demek. Yani şu kuyruğun ama listenin kapasitesi 5'e kadar çıkacak.
+
+539
+01:12:41,283 --> 01:12:44,944
+5'ten fazla olmayacak. Bunun için yazdık.
+
+540
+01:12:45,684 --> 01:12:49,983
+Üretim sayısı da mesela 10 taneye kadar üretecek.
+
+541
+01:12:49,983 --> 01:12:55,843
+O gün tabi şu set edilebilir bir parametre olsun demiştim hatta
+
+542
+01:13:00,020 --> 01:13:29,159
+integer, ekstra bir değişken kullanmak gerekecek. Mesela diyelim ki int max diyelim. Burada bu sınıftan bir şey üretince public ec max list nokta max eşittir max diyorum. Şu 10 yerine artık max'ı görebiliriz.
+
+543
+01:13:29,159 --> 01:13:50,959
+Yani 10 tane şey üretilmiş mi? Veya işte üretildiği kadar da tüketileceği için. Burada buna bakacaktık. Bu şunu sağlıyor. İlk başta mesela üretim sayısı hiçbir şey üretilmedi. Yani şu eleman sıfır. Biz max'a ulaşamadık.
+
+544
+01:13:50,959 --> 01:14:14,119
+Max'a ulaşamadığımız için consumer hiçbir şekilde çalışmıyor. Hatta burada backlet edebiliriz. Yani ekstra senaryolar da yazılabilir. Sonra bunu senkroniz bir şekilde çalıştıracağız. Tabii şurada şimdi PC'yi üretirken, test yaparken diyelim ki 10 diyelim.
+
+545
+01:14:14,119 --> 01:14:23,600
+Şimdi çalıştığı diyorum. Kodu tekrar inceleriz. 0 üretti tüketildi falan böyle gidiyor.
+
+546
+01:14:31,764 --> 01:14:36,184
+Yok yine 9'u üretti, 8'de kaldı. Yani bir geride kalıyor.
+
+547
+01:14:41,332 --> 01:14:47,772
+Biraz önce normal çalışmıştı. Ben acaba başka bir yerde hata mı yapıyorum?
+
+548
+01:14:57,492 --> 01:15:03,932
+Bakın 9'a 9. Yani burada tam sorunsuz çalıştı.
+
+549
+01:15:09,876 --> 01:15:14,975
+Hocam bir şanslı olduğumuzda yapıyor ama 8 ürettikten sonra hemen 8'i tüketirse oluyor.
+
+550
+01:15:15,876 --> 01:15:27,296
+Evet. Mesela şurada en son 4'ü tüketti. Yani bir sonuçta burada 8'e kadar ilerlemesi lazım.
+
+551
+01:15:27,296 --> 01:15:38,495
+Üretim sayısı maksimum deyince burada tıkanıyor. Muhtemelen ben bir geçen sene ki çözdüğüm soruyu bulayım da orada doğrusu vardır.
+
+552
+01:15:38,495 --> 01:15:46,135
+Hocam yanlış tahmin etmiyorsam Produce'da en son girdiğinde üretim sayısını 10'a eşitliyor.
+
+553
+01:15:46,916 --> 01:15:55,335
+Eğer yani 9. yü ürettikten sonra 10'a eşitlediği için eğer ondan sonra konsüm etmeye çalışırsa maksa eşit olduğundan şeye girmiyor.
+
+554
+01:15:55,416 --> 01:15:58,395
+Onu küçük eşit yaparsak çözülür diye tahmin ediyorum.
+
+555
+01:15:58,395 --> 01:16:01,376
+Bakalım doğru diyor. Evet olabilir.
+
+556
+01:16:16,435 --> 01:16:34,435
+Ama şu anda da kaldı orada. Yani consumer dönmeye devam ediyor. Ekstra bir değişken kullanmadan nasıl yaparız? Ha burada şey diyebiliriz. Küçük eşitse...
+
+557
+01:16:37,555 --> 01:16:39,955
+ve
+
+558
+01:16:43,572 --> 01:16:44,591
+Aynı zamanda
+
+559
+01:16:44,591 --> 01:16:48,371
+List.size
+
+560
+01:16:48,371 --> 01:16:54,572
+Büyükse sıfırdan
+
+561
+01:16:54,572 --> 01:16:55,912
+desek
+
+562
+01:16:55,912 --> 01:16:58,511
+Listede eleman var
+
+563
+01:16:58,511 --> 01:17:04,691
+Ama V'den dolayı da bu sefer hiç girmeme ihtimali oluyor değil mi?
+
+564
+01:17:05,631 --> 01:17:05,912
+Evet
+
+565
+01:17:05,912 --> 01:17:07,691
+Şimdi V
+
+566
+01:17:07,691 --> 01:17:09,611
+List.size
+
+567
+01:17:09,611 --> 01:17:11,591
+Şimdi küçük eşit olunca
+
+568
+01:17:11,591 --> 01:17:19,991
+Sonuncuya gelecek buradan doğru olacak. Biraz önceki duruma hani V dediğimiz için yine şey yapmayacak.
+
+569
+01:17:21,991 --> 01:17:30,811
+Hani consumer burada kaldı işte. Şurada hiçbir şey yapmadan bekliyor.
+
+570
+01:17:34,515 --> 01:17:36,475
+Neyse ben buna bir daha bakayım ya.
+
+571
+01:17:38,035 --> 01:17:46,615
+Türet işleri biraz böyle hani algoritmik düşüncenin de ötesinde biraz daha karışık.
+
+572
+01:17:48,476 --> 01:17:55,715
+Hocam şey bir dakika number key'den büyük sıkı iken number eksiklikle sonra uzun produs kısmına çıkmıyor.
+
+573
+01:17:55,715 --> 01:17:57,715
+Tamam.
+
+574
+01:18:05,203 --> 01:18:24,083
+Başka önerisi olan varsa bakabiliriz arkadaşlar. Biraz önce şuradaki durum bunu 5 vermemiz sebebi de 10 tane üreteceğiz ama üreteceğimiz şeyin buffer'ın kapasitesi 5. Arada bir tüketim olacak, üretime öyle devam edeceğiz.
+
+575
+01:18:24,083 --> 01:18:48,763
+Hocam içeride weight yaptığı yerde üretim sayısı eşit eşit max değilse diye eklersek, while list size eşit eşit sıfır diyor ya, yok aşağıda hocam, onun yanına bile ve işte değilse şey, üretim sayısı eşit eşit max.
+
+576
+01:18:54,707 --> 01:18:59,108
+üretim sayısı demişiz.
+
+577
+01:19:03,475 --> 01:19:07,095
+Unary Operator, şu şöyle olacak.
+
+578
+01:19:08,775 --> 01:19:13,276
+Bu sefer hocam ama treat mantığına ters. Hepsini bitirecek, sonra tüketmeye başlayacak.
+
+579
+01:19:14,276 --> 01:19:14,776
+Bakalım.
+
+580
+01:19:18,375 --> 01:19:20,335
+Şu ama bekletecek bizi.
+
+581
+01:19:21,416 --> 01:19:22,996
+0-1, 0-1.
+
+582
+01:19:28,532 --> 01:19:52,731
+Yok, yine 7'de kaldı. 9'u tüketmedi. 8 ve 9. Neyse, sizle ben bu kodu paylaşayım. Var bir çözümü var da şu an hani tam çıkamadık şimdi. Senkronizasyon. Bu senkronizasyonun dışında thread'in işini tamamlaması için bizim şurada yaptığımız senaryo.
+
+583
+01:19:52,731 --> 01:19:58,731
+Yukarıda üretim sayısı küçük max olarak kalmış. O küçük eşit de max olduğunda çalışmıştı ya.
+
+584
+01:19:58,731 --> 01:19:59,731
+Şu mu?
+
+585
+01:19:59,731 --> 01:20:01,731
+O yüzden çalışmadım.
+
+586
+01:20:01,731 --> 01:20:03,731
+Prodüste değil mi?
+
+587
+01:20:04,731 --> 01:20:06,731
+Veya şu konsümde mi?
+
+588
+01:20:06,731 --> 01:20:07,731
+Konsümde, aynen.
+
+589
+01:20:07,731 --> 01:20:10,731
+Prodüste şöyle kalacak.
+
+590
+01:20:11,731 --> 01:20:13,731
+Run diyelim.
+
+591
+01:20:26,100 --> 01:20:38,339
+ama aslında böyle bir eleman bulunamadı diye. Yani thread'in işte ulaşmaya çalıştığı şeyde LinkedList'te, Remove First yok. Yani şurada bir tane Remove First fazla yapıyor.
+
+592
+01:20:40,339 --> 01:20:42,639
+Hocam, debat çukuru buradan çıkılmaz ya.
+
+593
+01:20:43,860 --> 01:20:52,479
+Ama bu hakikaten işte kafayı yakan bir şey. Zaten meşhur bir problem hatta. Dining, producer, producer, consumer.
+
+594
+01:20:52,479 --> 01:20:57,879
+Neyse bakarız. Biraz da siz uğraşın arkadaşlar. Belki unuttuğum bir şeyler var.
+
+595
+01:21:00,879 --> 01:21:03,539
+Bu örnekle beraber şurada bir tane daha.
+
+596
+01:21:06,259 --> 01:21:14,399
+Bakın GUI'de şu ana kadar aslında object-oriented kavramlara ilişkin çok fazla bir şey yok.
+
+597
+01:21:14,399 --> 01:21:27,039
+Hepsi Object Oriented Programlama ve dersin başında gördüğümüz işte Callitum, Association, ondan sonra Referans, ne derler, İlklendirme gibi şeyler şurada yaptığımız işler sadece bunlar.
+
+598
+01:21:28,059 --> 01:21:33,359
+Bunu biraz daha hani programlamaya uygun hale getirmek gerekiyor.
+
+599
+01:21:33,500 --> 01:21:36,680
+Yani biraz da yazılım mühendisliği açısından bakmak gerekiyor.
+
+600
+01:21:37,820 --> 01:21:38,019
+Niye?
+
+601
+01:21:38,019 --> 01:21:44,140
+Çünkü ben bu pencerede örneğin veri işleyeceğim, veri tabanından bir şeyler getireceğim.
+
+602
+01:21:44,399 --> 01:21:46,379
+Sonra veri tabanına geri kaydedeceğim.
+
+603
+01:21:46,579 --> 01:21:49,279
+Yani onunla alakalı işlemler bu kodun içinde yer alacak.
+
+604
+01:21:50,039 --> 01:21:53,439
+Ondan sonra belki bir algoritmik bir şey yapacağım.
+
+605
+01:21:53,539 --> 01:21:54,599
+O algoritma çalışacak.
+
+606
+01:21:54,699 --> 01:21:58,459
+Ne bileyim matriz çarpma algoritması veya bir veri madenciliği algoritması.
+
+607
+01:21:58,919 --> 01:21:59,419
+Onlar burada.
+
+608
+01:21:59,539 --> 01:22:03,539
+Bir de şu grafik arayüzüyle alakalı yazdığımız işler var.
+
+609
+01:22:03,699 --> 01:22:07,299
+Hepsi bir arada olunca baya kötü görünüyor.
+
+610
+01:22:07,799 --> 01:22:08,259
+Öyle değil mi?
+
+611
+01:22:09,259 --> 01:22:10,899
+Bunu biraz daha eğit edebilir miyiz?
+
+612
+01:22:10,899 --> 01:22:12,339
+Yani birazdan ona geleceğim.
+
+613
+01:22:12,339 --> 01:22:37,960
+Ama yaptığımız şey arkadaşlar bir action meydana geldiği durumda bu action'ın çalışacağı metodu burada belirtiyoruz. Biraz böyle karışık bir şey var ama çok da zor değil. Bu action listener ile yapılıyor. Action listener hangi nesne tarafından action gerçekleştiyse action event o event'i yakalayıp bana parametrelerini görüyor.
+
+614
+01:22:37,960 --> 01:22:46,420
+Mouse ise mouse olayları, klavye ise klavye olayları gibi hangi nesne üzerinde tanımlıysa onunla alakalı bir şey.
+
+615
+01:22:46,420 --> 01:22:48,620
+Şimdi bunun şurada bir şeyi vardı.
+
+616
+01:22:49,779 --> 01:22:52,460
+Hangi event tanımlanılacak, hangi listener çağırılacak?
+
+617
+01:22:52,579 --> 01:22:54,019
+Bakın bu C şartta böyle değil.
+
+618
+01:22:54,140 --> 01:22:56,439
+Direkt üst sınıftan hallediyorlar bunu.
+
+619
+01:22:56,640 --> 01:22:57,980
+Ama burada biraz daha detaylı.
+
+620
+01:22:58,859 --> 01:23:04,439
+Mouse event olduysa mouse listener veya mouse motion listener ayrı ayrı çalışıyor.
+
+621
+01:23:04,439 --> 01:23:30,320
+Mouse'un tekerleğinin yani altta önceden tekerlek oldu. Orada bir olay olduysa o mouse wheel distiner key eventler yani klavye üzerindeki eventler, text ile alakalı eventler bunlar o şekilde çağırıyor. Yani şurada yazdığımız şu event hangi nesne tarafından gerçekleşiyorsa bu üzerinde çalıştığımız işte butonsa butona göre değişken şeyler. Bunlara dikkat etmemiz lazım.
+
+622
+01:23:30,320 --> 01:23:54,840
+Bir event handling de yapılacak şey evvela komponentimizi ilgili listener ile kaydedeceğiz. Yani diyor ki butonsa add action listener. Herhangi bir menü itemi olabilir. Yani add action listener bu arada arkadaşlar üzerine tıklamayla alakalı genellikle yapılan şey. Yani clique benziyor.
+
+623
+01:23:54,839 --> 01:24:20,219
+İşte menü itemına tıklayabiliriz veya text file'da yine tıklayabiliriz ama text file'da bir şey basarız. Klavyeden mesela bir şeye bastık. O bastığımız andaki olan action. Aynı şey text area'da da olabilir. İşte check kutusunda oraya bir add item listener veya choice kutusunda bir item listener olabiliyor. Bunlar farklı sınıflar.
+
+624
+01:24:20,219 --> 01:24:24,399
+Bunun içindeki yazılacak olan şey, şurada parametre olarak yazılacak şey
+
+625
+01:24:24,916 --> 01:24:49,075
+Item Listener ise Item Events ise Item Listener ile şey yapacağız. O ilgili şeyleri buraya yazıyoruz. Buna bir bakmamız gerekiyor. Diğer işte de yani Event Ending'in kodunu yazacağız. Bu sınıf içinde yazılabilir. Biraz önce yaptığımız gibi başka bir class oluşturabilirsiniz veya Anoim Class oluşturabilirsiniz. Şimdi şunu biraz büyütelim, daha rahat görelim.
+
+626
+01:24:49,075 --> 01:24:52,676
+Sınıf içinde yazmak ilk başta
+
+627
+01:24:52,676 --> 01:24:54,695
+Add Action Listener
+
+628
+01:24:54,695 --> 01:24:56,176
+Burada buton üzerinden gidiyoruz
+
+629
+01:24:56,176 --> 01:24:59,116
+Diyor ki B.Add Action Listener
+
+630
+01:24:59,116 --> 01:25:02,795
+Bu nesneyi Add Action Listener'a gönder
+
+631
+01:25:02,795 --> 01:25:05,975
+Add Action Listener içerisinde diyor ki
+
+632
+01:25:05,975 --> 01:25:08,215
+Action Performance metodu çağrılacaktı
+
+633
+01:25:08,215 --> 01:25:09,956
+Buraya bir Action Performance metodu
+
+634
+01:25:09,956 --> 01:25:12,636
+Yani diyor ki ben kendi sınıfıma
+
+635
+01:25:12,636 --> 01:25:15,416
+Action Listener'ı ekledim
+
+636
+01:25:15,416 --> 01:25:30,895
+Bu tabi frame'den şey alması demek ki çok önemli değil bunu kullanmasak da olur. Action List'ini eklediğim için buraya Action Performance yazıyorum ve bu Action oluştuğunda direkt şu Action Event aynı yaptığım biraz önceki yaptığım şey biraz daha bu halde görünüyor.
+
+637
+01:25:31,816 --> 01:25:41,115
+This diyerek aslında en kolay yollardan bir tanesi bu bu sınıfa ait bütün nesnelerin özelliklerini şuraya gönderiyor ve bunların içerisinden bir tanesi Action Event.
+
+638
+01:25:41,115 --> 01:25:46,575
+Typecasting olarak hangi action tarafından bu işlem gerçekleştirse o getiriliyor.
+
+639
+01:25:46,575 --> 01:25:48,255
+Ama burada şöyle bir problem var.
+
+640
+01:25:49,575 --> 01:25:51,335
+Bir tane butonum var burada.
+
+641
+01:25:51,795 --> 01:26:04,655
+Eğer birden fazla butonum olsaydı, this dediğim zaman, yani bu sınıfta B1 ve B2 iki tane butonum olsaydı, this dediğim zaman B1'in eventlerini de, B2'in eventlerini de buraya getirecekti.
+
+642
+01:26:04,995 --> 01:26:06,335
+Bütün eventler gelecekti.
+
+643
+01:26:06,335 --> 01:26:23,735
+O zaman diyecektik ki eğer if e.source yani basılan buton B1 ise welcome yap, B2 ise işte başka bir şey yap. Hangi butona basıldığını önce tespit etmemiz gerekir o durumda. Bakın bu kolay gibi görünüyor ama arka plandan başka işler çıkıyor.
+
+644
+01:26:23,735 --> 01:26:50,375
+Global bir metot yazmak bazı durumlarda işe yarar. Ne zaman yarar? Örneğin hani geçenlerde dedim ya bir stadyum var. Stadyumda kırk bin tane koltuk var. Koltuk üzerinden işte üzerindeki butonlara tıklıyorsun. Kırk bin tane metot yazacak değiliz. Mecburen global bir metot yazacağız. Daha sonra hatta o metotun içerisinde diyeceğiz ki J butonlar şöyle yapacağız onu. Şöyle göstereyim.
+
+645
+01:26:50,375 --> 01:27:18,575
+400 tanelik veya kaç bin tanelikse bir J buton dizisi olacak. Bunu şöyle yapacağız arkadaşlar. Private J buton diyorum. Büyük B diyorum. 100. Bu ne demek? 100 elemanlık bir J buton referansı oluşuyor.
+
+646
+01:27:18,576 --> 01:27:20,695
+kitabının nivini falan yapacağız.
+
+647
+01:27:22,036 --> 01:27:23,176
+Ne dedi buna?
+
+648
+01:27:28,340 --> 01:27:52,039
+Pardon bu şöyleydi değil mi arkadaşlar? Böyle olmaz. Şunu yapıyoruz. Burada diziyi oluşturuyoruz. Şurada ben C şartla karıştım. B eşittir. Niv J buton. Yani referans tutacağını göstereceğiz. Şurada da işte 100 diyeceğiz.
+
+649
+01:27:58,707 --> 01:28:26,207
+Ondan sonra diyeceğiz ki J butonun iyisi yani burada yine iyinci eleman for döngüsü ile gezebiliyoruz veya kaçıncı butona basıldığını elde edebiliyoruz. Ama buradaki action listener'ımız, action listener'a gelen event metodu ne yapıyor? İçinde şeyler saklıyor. Mesela bu E'nin içine bakalım. E nokta, mesela get class, get id, get source. Mesela bu get source hangi kaynaktan geldi? Get source eşittir.
+
+650
+01:28:26,207 --> 01:28:27,947
+şey diyebiliriz burada
+
+651
+01:28:27,947 --> 01:28:30,007
+B desek mesela
+
+652
+01:28:30,007 --> 01:28:31,507
+biraz önceki buton desek
+
+653
+01:28:31,507 --> 01:28:34,207
+ve bunu bir if'e bağlasak
+
+654
+01:28:34,207 --> 01:28:37,007
+if
+
+655
+01:28:37,007 --> 01:28:40,207
+herhalde böyleydi yanlış hatırlamıyorsam
+
+656
+01:28:40,767 --> 01:28:41,947
+eğer
+
+657
+01:28:41,947 --> 01:28:44,207
+B butonuna basıldıysa
+
+658
+01:28:45,007 --> 01:28:46,207
+sana diyelim south
+
+659
+01:28:46,207 --> 01:28:50,507
+butona basıldı
+
+660
+01:28:50,507 --> 01:28:55,568
+birden fazla buton olduğunda mesela işte birini B yap öbürünü B2 yap
+
+661
+01:28:55,568 --> 01:28:58,487
+Şuradaki referansta bunu karşılaştırmamız gerekiyor.
+
+662
+01:28:58,968 --> 01:29:00,388
+Şimdi mesela bir çalıştırayım.
+
+663
+01:29:02,928 --> 01:29:05,188
+Tabi bunun için bir tane daha buton eklemek en güzeli de.
+
+664
+01:29:06,267 --> 01:29:08,108
+O yanlış yaptık. Şunu run diyeceğiz.
+
+665
+01:29:11,764 --> 01:29:36,444
+Bakın butona basıldı dedi. Hangi butona basıldı dedi. Burada bir tane buton var. Gelin ikinci butonu da ekleyelim. Yapmışken işimizi tam yapalım. B2 diyorum. Şuradan şu kısımları kopyalayacağım. Bunları B2, B2, B2 diyeceğim.
+
+666
+01:29:36,444 --> 01:29:52,104
+50'ye 100 olmasın. Bu sefer 50'ye 300 olsun. Şunu da B2 diyorum. Şimdi diyeceğim ki e.getSource eşittir. Birinci butona basıldı diyelim.
+
+667
+01:29:55,859 --> 01:29:56,679
+else if
+
+668
+01:29:56,679 --> 01:29:59,340
+e.getSource
+
+669
+01:29:59,340 --> 01:30:03,820
+eşittir eşittir
+
+670
+01:30:03,820 --> 01:30:05,740
+b2 ise
+
+671
+01:30:15,764 --> 01:30:32,204
+Dizi olduğunu düşünün. İinci butona basıldı. Yani önce bir ID alırız. Şu get source'tan parse ederek. Bakın tıkla diyorum. Öbür buton nereye gitti? Şurada.
+
+672
+01:30:32,204 --> 01:30:52,823
+Tabi onun Action Listener'ını yazmadık. Hani B için yazdık da bunu. B2 için yazmadık. Aynısını kopyalayacağım arkadaşlar şöyle. Mecburen kopyalayacağım. Hani B2 için Action Listener'ı yazmayınca bu hiçbir şey yaramaz. Şimdi run diyorum.
+
+673
+01:31:00,435 --> 01:31:04,796
+Şöyle gelelim, bakın ikinci butona basıldı, birinci butona basıldı, ikinciye, birinciye, tamam.
+
+674
+01:31:07,155 --> 01:31:13,375
+Bu yüzden bunu sağlıyor aslında. Yani this yazarak biraz işimiz kolay ama her zaman kolay değil.
+
+675
+01:31:13,816 --> 01:31:17,835
+Dıştaki bir class'a bu işin üst diyebiliriz. Buyurun.
+
+676
+01:31:17,835 --> 01:31:24,635
+Bir şey sorabilir miyim? Butonlara listener değil de bir forma direkt eklesek oluyorum o şekil.
+
+677
+01:31:25,356 --> 01:31:26,335
+Forma listener mı?
+
+678
+01:31:26,815 --> 01:31:29,615
+Evet, formun bütün listener. Formda yapılan bütün işlemleri.
+
+679
+01:31:30,435 --> 01:31:38,935
+Yok. Şimdi formun üzerine, form kendisi başlı başına bir nesne olacağı için, tabi burada frame olarak söyleyeceğiz. Şunu yapabiliriz mesela.
+
+680
+01:31:40,935 --> 01:31:46,935
+E nokta, add action listener. Var mıydı? Tabi burada jf dedik herhalde buna.
+
+681
+01:31:48,735 --> 01:31:54,315
+Yok f dedik. f nokta, add action listener.
+
+682
+01:31:55,995 --> 01:31:57,075
+Mesela yokmuş burada.
+
+683
+01:31:57,075 --> 01:31:58,595
+muhtemelen
+
+684
+01:31:58,595 --> 01:32:22,855
+bakayım ne var? Mesela component listener var, container listener var. Muhtemelen şunlardan bir tanesi. Component listener olabilir veya container listener olabilir. Bu container listener içerisine işte bir action listener veya işte container listener nesnesi ekleyeceğiz. Bu tamamen butondan farklı oluyor.
+
+685
+01:32:22,855 --> 01:32:37,775
+Tamam mı? Ekstra yani onun şey tabii detaylarını bilmiyorum. Container listener veya diğer listener nasıl çalışıyor? Hangisi hangisiyle uyumlu çalışıyor? Action eventleri ona bakmak lazım.
+
+686
+01:32:38,775 --> 01:32:41,675
+Eğitim hocam her bir biton için bunu oluşturmadan çözmenin yolu yok mu?
+
+687
+01:32:41,675 --> 01:32:50,855
+Her bir biton işte var. Dizi şeklinde tanımlarız. Mesela iki tane elemanlı dizi. Şurada B yerine.
+
+688
+01:32:50,855 --> 01:32:54,575
+Bak onu söyleyelim, şöyle yapalım, Ctrl X diyorum
+
+689
+01:32:54,575 --> 01:32:59,075
+Önce iki eleman oluşturdum, diyorum ki B'nin sıfırına
+
+690
+01:32:59,075 --> 01:33:02,495
+Şöyle yap
+
+691
+01:33:02,495 --> 01:33:08,855
+B'nin sıfırının bound'unu ayarla
+
+692
+01:33:08,855 --> 01:33:14,456
+Şimdi neyi görmedi? Array required
+
+693
+01:33:14,456 --> 01:33:16,975
+Büyük B yapacaksınız herhalde
+
+694
+01:33:16,975 --> 01:33:19,816
+Evet, şunu küçük B yapalım, öbürünü büyük B yapalım
+
+695
+01:33:19,815 --> 01:33:49,795
+Thank you
+
+696
+01:33:23,283 --> 01:33:26,883
+Neyse zaten bunlarla şunu küçük b yapsak yeterli.
+
+697
+01:33:27,883 --> 01:33:28,883
+Devir diyorum.
+
+698
+01:33:29,683 --> 01:33:33,283
+Sonra b'nin sıfırını frame'e ekle diyorum.
+
+699
+01:33:35,483 --> 01:33:37,803
+Aynısını b'nin biri için yapacağız.
+
+700
+01:33:44,020 --> 01:34:01,020
+Şimdi tek bir metot da halledebiliriz. Aslında. Ama yine burada da şey olacak. Yani bir genel bir buton. Yani B1, B2 şu anda, şimdi de yazmak zorundayız.
+
+701
+01:34:02,360 --> 01:34:09,039
+Veya burada bir for döngüsüyle bu işi tek seferde herhangi bir hangisine basıldıysa bunu yapmak mümkün.
+
+702
+01:34:09,039 --> 01:34:38,520
+Oradan şey çıkabilirim. İşte bu B'nin 0 olsun, B'nin 1 olsun falan diyeceğiz. Ve buradan daha sonra 0 1'i içeriden elde edebiliyoruz. Biraz da tabii get source'un içerisinden bir ne gelecek? Burada buton 1 gelecek. O butonu string işlemleriyle 1, 2, 3 id'sine alacağız. Bunlara ayrıca id de verilebiliyor. Onlar mümkün olan şey. Zaten web tarafında XML gibi formatlarla bu
+
+703
+01:34:38,520 --> 01:35:01,079
+işlemlerin karmaşıklığı biraz işe yaramıyor. Web tarafında daha kolay. İşte HTML taglerine bakarsanız bir şeyin name'i vardır, value'su vardır, onun da sonra class'ı vardır, ID'si vardır, birçok etiketleri vardır. Onlarla ne yapıyoruz? O olaylar daha hızlı çözülebiliyor. Ama bu işte dizi mantığıyla, burada biraz daha statik bir mantıkla bu olaylara çözüm sağlamak mümkün.
+
+704
+01:35:01,079 --> 01:35:04,279
+Şimdi class outer yaptığımızda ise
+
+705
+01:35:04,279 --> 01:35:08,639
+Burada bir action meydana geldiğinde
+
+706
+01:35:08,639 --> 01:35:13,520
+Diyor ki action sınıfını outer sınıftan bir şey üret
+
+707
+01:35:13,520 --> 01:35:18,100
+Bunu yani üreten bu nesneyi buraya gönder
+
+708
+01:35:18,100 --> 01:35:19,859
+Buraya this olarak geldiğinde ne yapıyor?
+
+709
+01:35:20,579 --> 01:35:24,039
+Gelen bu nesnenin işte butonsa action performantını çağıracak
+
+710
+01:35:24,039 --> 01:35:25,919
+Veya hangi butondan geldiyse onlara bakacak
+
+711
+01:35:25,919 --> 01:35:29,119
+Tabi bu çok fazla sınıf ortaya çıkaran bir şey
+
+712
+01:35:29,119 --> 01:35:30,919
+Çok fazla tercih edilmiyor
+
+713
+01:35:30,919 --> 01:35:49,079
+diğer her tarafı geri kalan şeyle aynı. Anonim class yaptığımızda yöntemi de biraz önce bizim ilk başta yaptığımız şey işte bir nesne ilklendirildiğinde add action listener deyip ilgili kısmı buraya action performant yazıyoruz ve şu şirkin gibi görünen şeyde işimizi tamamlıyoruz.
+
+714
+01:35:49,079 --> 01:36:07,419
+Ama ikisini birlikte yapalım derseniz hem anonimi hem de şeyi şu bizim yazdığımız kod gayet iş görür. Hani butona tıklandı dedik ya. İşte şurada buton klik çağırılacak. Buton klik içerisinde bunu yaparız. Ha şimdi şunu diyebiliriz.
+
+715
+01:36:07,419 --> 01:36:16,479
+Buton Click'i çağırdık ya şu yazdığımız kodu arkadaşlar iki defa yazmaya gerek yok aslında.
+
+716
+01:36:19,479 --> 01:36:27,479
+Bunun şu kısmı alıp çünkü bu şurada yapılacak bir işlem aslında buton click'ten.
+
+717
+01:36:29,119 --> 01:36:35,119
+Bu hangi action'dan gelmiş? Hani hangi butondan gelmiş? Bunu ya burada yazmak tek seferde şeyi sağlar.
+
+718
+01:36:35,119 --> 01:36:46,139
+Genellikle şu olur arkadaşlar, döngülerle, hani böyle bir dönüşü birden fazla, 100-200 tane buton varsa döngülerle bunu kontrol etmek daha mantıklı.
+
+719
+01:36:50,771 --> 01:37:19,571
+J buton örneğini söyledik. Burada en çok kullanılan mesela boş yazarsanız herhangi bir ikon koymuyor. Eğer string yazarsanız yazı koyuyor. İkon eklerseniz ikon yazabiliyorsunuz. Bunun çok kullanılan şeyleri set ve get metotları. Yani butonun üzerindeki şeylerin set edilmesi. Bunlar metotlar arkadaşlar. Bir de bunların eventleri var. Enable, disable yapabiliyorsunuz. İkonları set ediliyorsunuz. Burada üzerine işte minimum karakterler yazabiliyorsunuz.
+
+720
+01:37:19,571 --> 01:37:46,611
+Şu da AddActionDistiner metoda bir ne yapıyor? Action'a bunu bağlamayı sağlayan bir metot. Yaptığımız şey biraz önce konuştuklarımızın aynısı burada da var. Label'da mesela kontrole bakarsak label yani etiketler şeydeki birçok yerde görüyoruz. Karşımıza geliyor yani şuradaki invite falan. Gerçi siz bunu göremiyorsunuz herhalde. Zoom'un invite şeyi var ya participantlarda.
+
+721
+01:37:46,612 --> 01:38:15,452
+Orada bir buton var. İşte üst tarafta find a participant. Yani onların hepsi etiket arkadaşlar. Veri bir anlamda bize sistem alt printelerinin yaptığı işi yaptırıyor. Öyle söyleyelim. Get text yapabiliyorsunuz. Set text yapabiliyorsunuz. İşte alignment olarak ayarlayabiliyorsunuz. Yatayda ve dikeyde. İkonlu şey yapıyorsunuz. Genelde label üzerine yazı yazılmaz. Hani da sadece gösterilir. Text field dediğimiz şey bu içerisine yazı yazılan. Ondan sonra ona göre ara yapıyorsunuz. Öyle bir kontrol.
+
+722
+01:38:15,452 --> 01:38:43,572
+Şimdi bu işi Python'da yapacaksanız C Sharp'da başlamıştık. Python'da direkt connect ile yapılabiliyor. İki türlü. Eğer bunu bir nesne üzerinden B1 butonuna connect, klik edildiğinde, connect dediğinizde ne yapacak? Bu klik olayını şuradaki B1 klik metoduna bağlayacak. Veya bunu daha global olan statik bir şeyle yapınca Q objelerinden connectleyip diyor ki B2 klik yapıldığında B2 klik metodunu çağırır. İkisi de aynı.
+
+723
+01:38:43,571 --> 01:38:55,551
+örneği de şurada var. Ne yapmış mesela bir B1 şeyine klik yapıldığında B1 klik şuradaki metodu çağırıyor.
+
+724
+01:38:55,551 --> 01:39:04,271
+Button 1.Clicked veya diğer yöntemde Q obje üzerinden B2'ye klik sinyali geldiğinde B2 klik metodunu çağır diyor.
+
+725
+01:39:04,411 --> 01:39:10,511
+Bu da Python'da gayet PyQT arayüzünde tabii. PyQT kütüphanesinde olan bir şey bu.
+
+726
+01:39:10,511 --> 01:39:27,131
+Şimdi bu tarz bir sürü kütüphane var. GUI Libraries diye Wikipedia'ya girerseniz her dilim altında bir sürü şeyler görürsünüz. Hangisi çok kullanılıyorsa onunla devam edilebilir. Peki şimdi çok kısa bir şey daha anlatıp ondan sonra sözü ben bırakıyorum.
+
+727
+01:39:27,132 --> 01:39:51,111
+Şimdi bu yaptığımız işlerde arkadaşlar biraz önce dedik ya database işlemleri olacak gerçek uygulamalarda. User interface işlemleri olacak. Sonra bizim business logic dediğimiz yani algoritmik işlemlerimiz olacak. Arada ayrıca kontrollerimiz olacak işte bağlantılar falan. Şimdi bunların hepsini tek bir klasta veya birden fazla klasta yazmak pek makul değil.
+
+728
+01:39:51,111 --> 01:40:18,411
+Bunun yerine Layered Architecture veya Entire Architecture dediğimiz bir mimari var. Aslında bu bir metodoloji bir anlamda. Burada ne yapıyoruz? Database ile alakalı işlemleri bir class grubunda yazıyoruz. Yani ben database'e bağlantı yapacağım, database'e kayıt yapacağım, veri getireceğiz, veri götüreceğiz. Database class grubu içerisinde oluyor. Yani ekleler, siller, güncelleler.
+
+729
+01:40:18,411 --> 01:40:21,271
+Sonra User Interface'im oluyor.
+
+730
+01:40:23,572 --> 01:40:27,932
+Yani butonları eklediğim bilmem neler yaptığım falan burada onlar olacak.
+
+731
+01:40:28,852 --> 01:40:33,451
+Sonra User Interface'e mesela burada bir buton var veya burada bir text kutusu var.
+
+732
+01:40:33,751 --> 01:40:35,432
+Bir yerden veriler gelecek gidecek.
+
+733
+01:40:35,751 --> 01:40:40,212
+Ama bu kendisine gelen giden verinin database'den gelip gelmediğini bilmeyecek.
+
+734
+01:40:40,331 --> 01:40:41,352
+Bu bir arayüz.
+
+735
+01:40:42,471 --> 01:40:44,471
+Business Logic Layer dediğimiz bir yerler.
+
+736
+01:40:45,332 --> 01:41:10,252
+Kendisine gelen giden verileri kontrol için eklediğimiz ara bir katmana. Yani bunların hepsi class arkadaşlar. Bir Java dosyası öyle düşünebilirsiniz. Yani bunu ayrıca bir library olarak da yazmak mümkün de bunların hepsini bir Java dosyası gibi düşüneceksiniz. Yani bir öğrenci class'ın içerisinde ID tanımladınız. Java içerisinde ne derler? ID, name gibi bir şey. Birazdan MVC'de örnek göstereceğim ben. Bunlar bu tamamen veri tabanı ile iletişim halinde.
+
+737
+01:41:10,252 --> 01:41:15,092
+Kendisine veri tabanından veri geliyor veya veri tabanına veri gönderiyor.
+
+738
+01:41:15,432 --> 01:41:23,012
+Buradan gelen veriler arada bir katmandan işte veri tabanı işlemleri insert, update, delete gibi kurut işlemleri var.
+
+739
+01:41:23,712 --> 01:41:28,791
+Burayla ne yapıyor? Arayüz arasında bağlantı kuran bir şey var.
+
+740
+01:41:28,791 --> 01:41:31,052
+Burada buna da facat diyoruz.
+
+741
+01:41:31,891 --> 01:41:34,412
+Faça de aslında Fransızcadan gelir.
+
+742
+01:41:34,531 --> 01:41:35,271
+Facat layer.
+
+743
+01:41:37,172 --> 01:41:38,052
+Vitrindir bu.
+
+744
+01:41:38,051 --> 01:41:54,371
+Arayüz'den kontrol edilmiş, business logic ile kontrol edilmiş gelen verilerin veri tabanına aktarılmasını sağlayan komutlar fasatlaşır. Yani veri tabanına verim yazılacak. Buradan veri gelecek. Şuradaki şey aracılığa veri tabanına gönderilmesi gerektiği database'e söylenecek.
+
+745
+01:41:54,571 --> 01:42:03,651
+Veya veri tabanından bir şey kayıt mı geliyor? İşte bir listeleme geliyor. Diyor ki veri tabanından bir liste geliyor. İşte bir yerler sana gönderiyorum. Sen de grafik arayüze gönder.
+
+746
+01:42:03,651 --> 01:42:26,052
+Ben genelde bunu şöyle anlatıyorum. 100 tane karpuz taşınacak. Ne yaparlar insanlar? Birbirlerine atarlar değil mi? Aynen bu da onun gibidir. Eğer birbirini atmazsan kişilerin o arada karpuzu alıp yürümesi lazım. Şimdi yürümenin maliyetine gerek yok. Öyle değil mi? Adam durduğu yerde bir sürü şeyi taşıyabiliyor.
+
+747
+01:42:26,052 --> 01:42:51,651
+Yürümenin maliyetinden kurtulmak hem de bu işi herkes kendi işi daha modüler yapmak istiyorsak aynen burada layer'lara bölüyoruz. Bu layer'ların tasarım patenlerinde daha güncel kullanılan hali MVC. Bu MVC'nin model, VIV dediğim şey VIV, bu da controller. Model dediğim şey buradaki database'e karşılık geliyor arkadaşlar.
+
+748
+01:42:51,651 --> 01:43:09,632
+VIV dediğim ise user interface'e karşılık geliyor. Controller'da aslında FASAT ve VRL'in yaptığı şey. Bir veri tabanına ki gerçek uygulamalar da veri tabanı olmak durumunda gelen giden verilerin ara yüzde görünmesi için bir kontrol ile işlem yapılması.
+
+749
+01:43:10,332 --> 01:43:20,031
+Tabi bu webde olan bir şey gibi herkes MVC deyince aklına web geliyor da masaüstü uygulamalarında da bu yapı var. Çünkü bu bir tasarım dizayn patendir.
+
+750
+01:43:20,031 --> 01:43:24,272
+Dönem başında dedim ya size bir design patternı bu dersten sonra aslında almanız iyi olur.
+
+751
+01:43:25,371 --> 01:43:26,671
+Veya öğrenmeniz iyi olur.
+
+752
+01:43:26,751 --> 01:43:30,031
+Çünkü piyasa ve yazılım mühendisliği hakikaten bu işlerine ilerliyor.
+
+753
+01:43:30,772 --> 01:43:32,871
+Model view controller onlardan bir örnek.
+
+754
+01:43:32,871 --> 01:43:38,391
+Şimdi ben çok uzatmadan şu örneği göstereceğim size.
+
+755
+01:43:39,492 --> 01:43:40,132
+Neredeydi?
+
+756
+01:43:47,891 --> 01:44:07,951
+Bu C Sharp'taki bir şey. Geçen hafta kısmından baktık da burada biraz daha. Model dediğimiz şey arkadaşlar, veri tabanındaki sütunların birebir kopyası. Yani bir öğrenci tablonuz var veri tabanında. Öğrenciye ait bir şeyiniz var. Birebir onun class'ını yazıyorsunuz. Yani öğrencinin ID'si olsun, ismi olsun, yaşı olsun. Tamam.
+
+757
+01:44:07,951 --> 01:44:10,251
+Bu niye kullanılıyor modeller?
+
+758
+01:44:11,431 --> 01:44:13,912
+Veri tabanında bir sürü tablonuz olabilir.
+
+759
+01:44:14,631 --> 01:44:16,991
+O tabloların altında bir sürü stünler olabilir.
+
+760
+01:44:17,131 --> 01:44:18,791
+Yani ID gibi stün neyim.
+
+761
+01:44:19,431 --> 01:44:24,752
+Bunların hepsini tek tek integerlar, stringler yani temel veri tipleri üzerinden işlemeye kalkmak çok uzun sürer.
+
+762
+01:44:25,432 --> 01:44:26,311
+Bunun yerine ne yapıyoruz?
+
+763
+01:44:26,491 --> 01:44:28,331
+Objelerle veri transferi yapıyoruz.
+
+764
+01:44:29,051 --> 01:44:32,771
+Primitive Obsession dediğimiz ilkel veri takıntısından böylece kurtulmuş olacağız.
+
+765
+01:44:32,771 --> 01:44:44,951
+Eğer bizim veri tabanında 100 tane bunun gibi şey varsa, class varsa, tablo varsa her bir için tablo oluşturuyoruz. Tablonun her bir sütunu da buradaki memberlarımız oluşturuyor.
+
+766
+01:44:44,951 --> 01:45:11,851
+VIV dediğimiz şey veri tabanındaki gördüğümüz yani web sayfasında gördüğümüz veya bir grafik uygulamada gördüğümüz şey. Bakın bu gördüğümüz bir VIV'dir. VIV'in arkasında ne var? HTML kodları var ama o HTML kodları üzerinde çalıştığınız programlama diliyle programlanıyor. Yani Spring Framework'ta Java ile kodluyorsunuz. İşte burada C Sharp da kodlanıyor. İçerisinde biraz C Sharp kodları, biraz HTML kodları var.
+
+767
+01:45:11,851 --> 01:45:15,271
+Eğer bunu Visual Basic ile kodlayacaksanız VBHTML
+
+768
+01:45:15,271 --> 01:45:22,252
+Eskiden ASPX vardı ASPX olarak C Sharp ile kodlayacaksanız C Sharp HTML
+
+769
+01:45:22,252 --> 01:45:26,591
+Java ile kodlayacaksanız Java'nın Spring framework'ünde onun da bir kullantısı var
+
+770
+01:45:26,591 --> 01:45:30,072
+Aslında bunlar bir şey arkadaşlar ne derler?
+
+771
+01:45:31,851 --> 01:45:34,271
+Web sayfası yani bir HTML sayfası
+
+772
+01:45:34,271 --> 01:45:40,332
+Şimdi biz VB bir kontrolle birbirine bağlamak zorundayız
+
+773
+01:45:40,331 --> 01:46:03,791
+Yani bir homepage dediğimiz bir indeks sayfası, sayfa açıldığında işte Yıldız Mekba Eduteri'ye giriyorsunuz bir homepage geliyor. Bu homepage'in home controller oluyor kendisine ait. Her page'in hem her view'in kendine ait bir kontrol oluyor. Mesela ne yapacaksınız? Öğrenci ekleme. Öğrenci eklemek istediğinizde yeni bir sayfa açılıyor web sayfalarında.
+
+774
+01:46:03,791 --> 01:46:32,011
+ve yani ders ekle diyorsunuz yeni bir şey açılıyor. Bunların her birine bir web sayfası yazıyorsunuz. Ve bir yazdığınızda karşımıza gelecek şey şu şekilde bakın. Böyle bir sayfa geliyor. Yani işte HTML teklerinin olduğu işte paragraflar, tablolar böyle şeylerin olduğu ve şu etlerle başlayan bazı bir görüntü geliyor. Bu görüntü nedir? Şu kısım TD'ler HTML'in kendi kodu.
+
+775
+01:46:32,011 --> 01:47:00,191
+etle başlayanlar C şarpın kodu. Demek ki buraya veri tabanından bir şeyler gelmiş. Hatta bu gelen bir şey şuradaki bir dizi. Yani öğrenci dizisi geliyor model olarak. Gelen bu model ekrana öğrencinin adı, idsi, soyadı gibi şeyler yazdırılıyor. Bunun gösterini Razor Sintaks deniyor. Yani birazcık C şarp kodları, biraz HTML kodlarının bulunduğu şey.
+
+776
+01:47:00,192 --> 01:47:04,811
+Burada HTML helper'larla bu işler biraz daha kolay oluyor.
+
+777
+01:47:05,332 --> 01:47:08,992
+Ve bu sayfayı biz görüntülediğimizde bakın şöyle bir tablo görünümünde bir şey görüyoruz.
+
+778
+01:47:09,871 --> 01:47:13,332
+Buraya gelen veriler nereden geldi? Şuraya gelen veriler nereden geldi?
+
+779
+01:47:14,552 --> 01:47:14,951
+Şunlar.
+
+780
+01:47:20,180 --> 01:47:21,920
+Veri tabanından model mi?
+
+781
+01:47:23,660 --> 01:47:25,459
+Esasen veri tabanından geliyor.
+
+782
+01:47:25,660 --> 01:47:26,279
+Ama biz
+
+783
+01:47:26,279 --> 01:47:29,119
+Veev olarak buraya veri tabanından geldiğini
+
+784
+01:47:29,119 --> 01:47:30,279
+bilmiyoruz. Buraya bize
+
+785
+01:47:30,279 --> 01:47:32,959
+modelden kontrol aracılığıyla
+
+786
+01:47:32,959 --> 01:47:33,879
+geldiğini biliyoruz.
+
+787
+01:47:34,759 --> 01:47:36,919
+Yukarıda şeyde yazdığımız model
+
+788
+01:47:36,919 --> 01:47:37,659
+vardı. Şu.
+
+789
+01:47:38,879 --> 01:47:40,339
+Bu bir nesne aslında.
+
+790
+01:47:40,680 --> 01:47:42,839
+Bu nesnenin array liste mesela 10 tane
+
+791
+01:47:42,839 --> 01:47:44,639
+öğrenci, 100 tane öğrenin array liste
+
+792
+01:47:44,639 --> 01:47:46,940
+bir kaydını tutabiliriz. Basit bir array
+
+793
+01:47:46,940 --> 01:47:48,020
+liste yapabiliriz bunu.
+
+794
+01:47:48,020 --> 01:47:48,739
+veya Linkedliste.
+
+795
+01:47:49,759 --> 01:47:51,759
+Controller'da ben bir şey
+
+796
+01:47:51,759 --> 01:47:53,619
+istediğimde, ne bileyim öğrenci listeleri
+
+797
+01:47:53,619 --> 01:47:55,720
+dediğimde, Controller
+
+798
+01:47:55,720 --> 01:47:57,580
+gidiyor, veri tabanından
+
+799
+01:47:57,580 --> 01:47:58,999
+modele veri çekiyor.
+
+800
+01:47:59,819 --> 01:48:01,239
+Çekilen bu veri
+
+801
+01:48:01,239 --> 01:48:03,739
+Controller'daki bir çağrıyla
+
+802
+01:48:03,739 --> 01:48:05,299
+şuraya gönderiliyor. Bakın bu
+
+803
+01:48:05,299 --> 01:48:07,720
+esasen veri tabanından gelmiş. Ama bu
+
+804
+01:48:07,720 --> 01:48:09,620
+kendisi bilmez. Bu model, bu
+
+805
+01:48:09,620 --> 01:48:11,999
+sadece Controller'den
+
+806
+01:48:11,999 --> 01:48:13,999
+böyle bir veri geldiğini bilir.
+
+807
+01:48:14,940 --> 01:48:15,619
+Tamam mı?
+
+808
+01:48:16,119 --> 01:48:17,720
+Peki şunu entegre edelim demiş.
+
+809
+01:48:18,020 --> 01:48:20,520
+Yani üçüne birden bakalım. Model, Vee ve Controller.
+
+810
+01:48:21,260 --> 01:48:24,959
+Şimdi bir öğrenci controller'ında yani öğrenciler sayfasına girdiniz.
+
+811
+01:48:25,180 --> 01:48:28,760
+Öğrenciler sayfasının bir index sayfası vardır. İlk giriş sayfasıdır.
+
+812
+01:48:28,760 --> 01:48:38,620
+Bu otomatik olarak Vee dediğinde student'ı başına ekliyor ve student index sayfasını gösteriyor.
+
+813
+01:48:38,879 --> 01:48:43,340
+Şunu alacak. Bunun sonuna controller yazmak gerekiyor arkadaşlar.
+
+814
+01:48:44,220 --> 01:48:45,980
+Bu controller sınıfından kalıtım alıyor.
+
+815
+01:48:46,619 --> 01:48:47,919
+Student kısmını alacak.
+
+816
+01:48:48,279 --> 01:48:49,659
+Student index sayfasına.
+
+817
+01:48:50,199 --> 01:48:52,759
+Yani bakın şurada parametre var ya şuradaki şeyler.
+
+818
+01:48:53,319 --> 01:48:54,639
+Burada birinde student yazacak.
+
+819
+01:48:54,759 --> 01:48:56,859
+Student'ın sonrasında index yazacak ve
+
+820
+01:48:56,859 --> 01:48:58,939
+index sayfası açılacak.
+
+821
+01:48:58,939 --> 01:49:00,599
+Index sayfası açıldığında
+
+822
+01:49:00,599 --> 01:49:04,259
+index diye seçtiğime de bir şeyler gönderilecek demektir.
+
+823
+01:49:04,939 --> 01:49:06,119
+Bu gelen bir şeyler neymiş?
+
+824
+01:49:06,239 --> 01:49:08,559
+Mesela şu an herhangi bir parametre buradan gitmiyor.
+
+825
+01:49:08,699 --> 01:49:12,099
+İstersek buraya işte liste gibi bir şeyler yazabiliriz.
+
+826
+01:49:12,619 --> 01:49:13,699
+Buraya gelen bu sayfada
+
+827
+01:49:13,699 --> 01:49:15,519
+işte şöyle bir şeyler yapmış.
+
+828
+01:49:15,979 --> 01:49:34,059
+Bu kaç tane model varsa işte modeldeki veriler yazılıyor. Bunları ben uzun uzun işte başka yerde anlatıyordum verdiğim başka derste. Uygulamalarını falan yapıyorduk. Bu şekilde üç şey birbirine bağlanıyor bakın. Burası modelimiz, burası kontrolümüz, burası da divimiz.
+
+829
+01:49:34,059 --> 01:49:40,919
+Şimdi şurada baktığımızda diyor ki student controller'ın içerisinde bir liste oluşturur.
+
+830
+01:49:41,479 --> 01:49:44,699
+Yani burada bir veri tabanından gelmiş gibi bir statik bir listemiz var.
+
+831
+01:49:44,759 --> 01:49:45,919
+Buna repository diyoruz.
+
+832
+01:49:46,739 --> 01:49:51,399
+Index metodunu çağırdığında bakın student listi gönderiyor.
+
+833
+01:49:51,519 --> 01:49:59,259
+Bu student list çağrıldığında şuraya gelen modelle beraber burada ekrana bastırılıyor.
+
+834
+01:50:00,619 --> 01:50:02,599
+Genel mantığı bunun budur.
+
+835
+01:50:02,599 --> 01:50:05,579
+bu sayede biz bu projeyi
+
+836
+01:50:05,579 --> 01:50:06,719
+3'e bölerek ne yaptık?
+
+837
+01:50:07,419 --> 01:50:08,700
+Herkesin yeri ayrı dedik.
+
+838
+01:50:09,779 --> 01:50:11,439
+Yani VIV'in içerisinde
+
+839
+01:50:11,439 --> 01:50:13,279
+HTML ile alakalı şeyleri yazıyoruz.
+
+840
+01:50:13,439 --> 01:50:15,579
+Controller'ın içerisinde başka şeyleri yazıyoruz.
+
+841
+01:50:16,760 --> 01:50:17,299
+Yani burada
+
+842
+01:50:17,299 --> 01:50:19,379
+şu gördüğümüz şey bizim
+
+843
+01:50:19,379 --> 01:50:21,219
+elle yazdığımız bir liste. Ama bu
+
+844
+01:50:21,219 --> 01:50:22,879
+diyeceğiz ki mesela
+
+845
+01:50:22,879 --> 01:50:23,379
+db.
+
+846
+01:50:23,980 --> 01:50:26,700
+Şöyle diyelim
+
+847
+01:50:26,700 --> 01:50:29,499
+variable sl
+
+848
+01:50:29,499 --> 01:50:30,959
+eşittir db.
+
+849
+01:50:30,959 --> 01:50:32,079
+nokta get
+
+850
+01:50:32,079 --> 01:50:34,359
+student
+
+851
+01:50:34,359 --> 01:50:37,120
+öğrencinin id'si işte 4 olan
+
+852
+01:50:37,120 --> 01:50:39,060
+id'den bir şey getir. Şimdi bu gelecek
+
+853
+01:50:39,060 --> 01:50:40,879
+belli bir spesifik bir şey.
+
+854
+01:50:41,480 --> 01:50:42,620
+Sonra diyeceğiz ki return
+
+855
+01:50:42,620 --> 01:50:45,200
+view
+
+856
+01:50:45,200 --> 01:50:46,840
+diyeceğiz ve bu
+
+857
+01:50:46,840 --> 01:50:49,219
+student listesindeki şeyi
+
+858
+01:50:49,219 --> 01:50:50,419
+getireceğiz veya bunu ne bileyim
+
+859
+01:50:50,419 --> 01:50:52,999
+ders adına göre öğrencilerin
+
+860
+01:50:52,999 --> 01:50:54,840
+listesini getir. Buradan bir kurs
+
+861
+01:50:54,840 --> 01:50:57,060
+id'si vereceğiz. Bu kurs
+
+862
+01:50:57,060 --> 01:50:58,919
+id'sinden dersi seçen öğrencilerin
+
+863
+01:50:58,919 --> 01:51:00,799
+listesi buraya gelecek ve bu gelen
+
+864
+01:51:00,799 --> 01:51:03,099
+şey ekranda görüntülenecek.
+
+865
+01:51:03,180 --> 01:51:04,319
+Şu BV aktarılacak.
+
+866
+01:51:05,900 --> 01:51:06,059
+Evet.
+
+867
+01:51:07,079 --> 01:51:08,680
+Burada bundan sonraki hani bunun
+
+868
+01:51:08,680 --> 01:51:10,719
+diğer tarafı yani MVC
+
+869
+01:51:10,719 --> 01:51:12,099
+bir tasarım paterni dedik.
+
+870
+01:51:12,779 --> 01:51:14,959
+Genel mantığı bu. Ondan sonra burada yapılan
+
+871
+01:51:14,959 --> 01:51:16,779
+şey parametrelerin aktarılması
+
+872
+01:51:16,779 --> 01:51:18,680
+ile veya tasarımlarla alakalı daha
+
+873
+01:51:18,680 --> 01:51:19,079
+kolay.
+
+874
+01:51:19,475 --> 01:51:49,215
+nasıl yapılır? Veya işte routing mekanizmaları var. Bunlar nasıl yapılır? Burada bu sayfada detaylı olarak anlatılıyor. Mesela viewback, viewdata, tempdata dediğimiz şeyler parametre aktarımıdır. Çünkü şurada dikkat ederseniz controller'dan iki tane şey gitmiyor. Burada bir tane bir şey gidiyor. Bir tane bir şey giderse bu sayfa çok işe yaramayabilir. Biz bazen birden fazla veri tabanı sorgusu gönderebiliriz. Araya virgül de koyamıyoruz. Araya virgül koymayınca ya nesneleri birleştirip bir üst sınıftan yeni bir
+
+875
+01:51:49,215 --> 01:52:13,095
+Rapper oluşturmak gerekiyor. Veya işte viewback gibi mekanizmalar var. Bu işleri kolaylaştıran. Bunlar yapılıyor. Veya işte farklı web teknolojileri üzerinde başka benim de bilmediğim yani şu ana kadar anlattıklarımın daha ötesini anlatıyorum da onun da ötesinde benim bilemediğim bir sürü mevzu var. Bunlara daha sonra bakarsınız. Tabii bir web programlama ile beraber birazcık HTML bilgisi gerekiyor.
+
+876
+01:52:13,095 --> 01:52:25,715
+Burada. Benim anlatacaklarım bu kadar arkadaşlar. Ömer şimdi sana söz veriyorum. Şöyle diyelim. Ekranı sana teslim ettim.
+
+877
+01:52:37,555 --> 01:52:39,355
+fullscreen yapsam nereden yapıyorum?
+
+878
+01:52:42,275 --> 01:52:43,195
+Olur herhalde.
+
+879
+01:52:43,195 --> 01:52:44,435
+Share screen deyince.
+
+880
+01:52:44,855 --> 01:52:45,435
+Yaş yok.
+
+881
+01:52:46,436 --> 01:52:48,555
+Şu an geldi.
+
+882
+01:52:49,235 --> 01:52:50,016
+Evet, geldi.
+
+883
+01:52:50,375 --> 01:52:50,655
+Tamam.
+
+884
+01:52:59,475 --> 01:53:20,255
+Şöyle ufaktan tanımlamalarını yaparak başlayacağım. Model View Presenter. Bu MVC 80'lerin sonundaydı yanlış hatırlamıyorsam. Ortaya çıkmış bir mimari desem. MVC o zaman çok büyük bir problemi aslında ortadan kaldırmak için ortaya çıkmış.
+
+885
+01:53:20,255 --> 01:53:41,156
+Ama kendisinin de tabii ki bazı ortaya çıkardığı problemleri var. Mesela az önce Ahmet hocamızın da anlattığı gibi bir işte görüntü var, bir de model var. Onun arasındaki bütün işlemleri controller hallediyor. Controller'ın bundan dolayı görevleri çok fazla büyüyebiliyor ve satır sayısı olarak çok fazla artabiliyor.
+
+886
+01:53:41,156 --> 01:54:09,175
+Onu çözmek için Model View Presenter diye bir mimari desen ortaya çıkmış. Bu Intelligent Inc. işte Apple'ın içinde IBM'in vesaire bulunduğu bir ortak kurulan bir firma, şirket. Orada ortaya çıkmış bir desen. Yine MVC deseninin üzerine inşa edilmiş controller sınıfını Presenter'ı da değiştiriyor.
+
+887
+01:54:09,175 --> 01:54:25,555
+Presenter'ın görevleri aslında biraz kontrollere benziyor ama biraz daha daraltılıyor. Bu şekilde aslında o kontroller'ın fazla görevi olması, olgusunu ortadan kaldırmaya çalışıyor.
+
+888
+01:54:26,315 --> 01:54:37,975
+Bunu yaparken zaten hani MVC'de bunu yapıyordu. İşte data kısmı yani database kısmı ve görüntü kısmına ayırarak iki parça eriyor. Arasına da kontroller'ı koyuyor.
+
+889
+01:54:37,975 --> 01:55:00,196
+Burada da benzer bir ikiye ayırma şekli, hali var. Ama bunu ilk tanımladığı halleriyle altı parçaya bölüyorlar. Bu altı parçada data kısmında modulu görüyoruz. Burada selection diye bir şey var, command var. Bunlar orada kullanılan ufak tefek elementler. Birazdan detaylıca bahsedeceğim.
+
+890
+01:55:00,195 --> 01:55:04,095
+sağ tarafta gördüğümüz UI tarafında zaten Vue kısmı var.
+
+891
+01:55:04,775 --> 01:55:11,355
+Vue ile iletişime geçen aslında kullanıcı inputlarını alan bir interaktif sınıfı var arada.
+
+892
+01:55:11,355 --> 01:55:15,135
+Bir de presenter var. Bunların ikisinin ortasında.
+
+893
+01:55:16,755 --> 01:55:26,075
+Zaten şeyde de MWC'de de böyle model şeyi database'deki o bilginin bir oluşumunu sağlıyor aslında.
+
+894
+01:55:26,395 --> 01:55:27,255
+Nasıl bir bilgi var orada.
+
+895
+01:55:27,255 --> 01:55:37,935
+ve bir taraftan da aslında bunları gerçekleştiren, alışveriş işlemlerini gerçekleştiren bazı manager cluster olabilir.
+
+896
+01:55:38,115 --> 01:55:41,975
+Mesela eğer uygulama yazıyorsanız burada API kullanıyorsunuzdur şu anlıkla.
+
+897
+01:55:42,435 --> 01:55:46,196
+Oradan bir JSON verisi çekip onu şeye çevireceksiniz, modele çevireceksiniz.
+
+898
+01:55:46,196 --> 01:55:50,856
+Bu işlemleri yapan cluster'ı da genelde model tarafına alınıyor.
+
+899
+01:55:50,955 --> 01:55:52,776
+Bazıları presenter tarafına alıyor vesaire.
+
+900
+01:55:52,836 --> 01:55:56,196
+Orası biraz şeyde muallakta tam olarak belirlenmemiş yani.
+
+901
+01:55:56,196 --> 01:56:13,455
+Selection bu gelen datanın içerisinde hangi verileri alacağımızı belirliyor. O görevi Presenter'dan almış ufak bir parça. Command'da kaydetme, silme vs. bu işlemleri gerçekleştiren ayrı bir klas.
+
+902
+01:56:14,175 --> 01:56:25,196
+Presenter bu klası aslında iletiyor. Daha doğrusu bu klasın bu metotlarını çağırarak bu işlemleri gerçekleştiriyor. Bu şekilde yine Presenter'ın ebatlarını küçültmüş oluruz satır sayısı olarak.
+
+903
+01:56:26,196 --> 01:56:40,356
+Vue zaten bildiğimiz üzere işte butonlar bilmem neler vesaire onları oluşturmaya programlanıyor. Interactor'da kullanıcı girdisini alıyor. Bu aldığı kullanıcı girdisini de presenter'e iletiyor.
+
+904
+01:56:40,355 --> 01:56:45,055
+Prezentr bu ikisi arasında, görüntü ve data arasındaki köprü oluşturuyor.
+
+905
+01:56:45,055 --> 01:56:50,775
+Yani nedir ki? Biz veri tabanından bilgiyi aldık, görüntüde göstereceğiz.
+
+906
+01:56:51,295 --> 01:56:58,655
+O veri tabanından alınan bilgiyi görüntüde gösterecek şekilde değiştirme işlemleri vs. bunların hepsi Prezentr'da.
+
+907
+01:56:59,475 --> 01:57:14,595
+örnek veriyorum mesela şeyden veritabanından doğum tarihi geldi ama siz yaş göstereceksiniz. O değişimi, o işte veritabanından gelen doğum günü verisini yaşa çevirme işlemleri vs. bunlar presenter'da.
+
+908
+01:57:15,715 --> 01:57:17,576
+Bir şey sorabilir miyim buradan?
+
+909
+01:57:17,775 --> 01:57:18,035
+Tabii.
+
+910
+01:57:18,035 --> 01:57:37,615
+Bu biraz önce bahsettiği, Ömer'in bahsettiği şey, business logic aslında. Yani gelen verilerin amaca uygun işlenmesi veya kaydedilecek verilerin amaca uygunluğunun kontrolü. Herhalde burada da bu yapılıyor. Mesela ben bir kitap ismi gireceğim, ekleyeceğim veya bir kitap ismi sorguluyorum.
+
+911
+01:57:37,615 --> 01:57:52,016
+ekleme yaparken yani insanlar bunu yapıyorlar. Mesela kitap alanına boş giriyorsun veya boşluk boşluk giriyorsun. Normalde onun veri tabanına eklenmemesi lazım. Zannediyorum bu kontrol burada MVP'de burada yapılıyor.
+
+912
+01:57:52,016 --> 01:58:00,595
+Evet hocam. Yani o veri üzerinde kaydedilecek veya gösterecek veri üzerinde yapılacak herhangi bir değişim işlemlerinin hepsi presenter class'ında yapılıyor.
+
+913
+01:58:00,595 --> 01:58:19,336
+Bu business logic diye çok önceden bizim entire bunlar böyle geçmişten geleceğe sürekli gelişen teknolojidir arkadaşlar. Hangi işi yapıyorsanız yani bir matriz çekeceksiniz matrice uygun verilerin gitmesi veya gelmesi beklenir. Aynen öyle teşekkürler.
+
+914
+01:58:19,336 --> 01:58:21,575
+Teşekkür ederim hocam.
+
+915
+01:58:21,755 --> 01:58:26,236
+Yani şimdi presenter zaten business logic ile view logic ile tam arasında oturuyor.
+
+916
+01:58:26,355 --> 01:58:30,295
+Yani görüntü mantığıyla veri mantığının arasında oturuyor.
+
+917
+01:58:30,736 --> 01:58:32,636
+Bunların arasındaki geçişi sağlıyor.
+
+918
+01:58:33,096 --> 01:58:33,776
+Asıl görevi o.
+
+919
+01:58:35,376 --> 01:58:37,996
+Burada data veri akışını da görebiliriz.
+
+920
+01:58:38,096 --> 01:58:40,356
+Hani kullanıcıdan bir girdi aldı, bir butona bastı mesela.
+
+921
+01:58:40,356 --> 01:58:44,615
+Bu butonu presenter'a iletiyor işte interaktör vasıtasıyla.
+
+922
+01:58:44,615 --> 01:59:12,576
+Bu arada şeyde var mıydı? Bir sonrakinde vardı galiba hatırlamıyorum. Veya bir önceki slide olması lazım. Bu interaktör, selektör ve comment biraz şey arada kalmış ve her zaman kullanılması gerekmeyen işte MVP'nin içerisinde bazen kullanılan bazen kullanılmıyor. İlk tanımında var ama günlük kullanımında yani yasadaki kullanımında çok fazla yok. Yanlış hatırlamıyorsam şurada aynen en alttaki maddede bundan bahsetmiştim.
+
+923
+01:59:12,575 --> 01:59:15,255
+Ben bahsetmedim de orada yazıyordu.
+
+924
+01:59:17,355 --> 01:59:19,375
+Presenter'a iletiyor kullanıcı girdisini.
+
+925
+01:59:19,555 --> 01:59:28,915
+Presenter bu kullanıcı girdisine göre invok etmesi gereken işte database'e ne yapacaksa artık kaydedecek mi verimi çekecek onların hepsini yapıyor.
+
+926
+01:59:29,655 --> 01:59:31,715
+Ama şöyle bir şey var.
+
+927
+01:59:31,715 --> 01:59:34,635
+Şimdi bir şey saykı oluşturmamak lazım.
+
+928
+01:59:34,636 --> 02:00:02,016
+Ben presenter'dan modele, daha doğrusu veritabanıyla iletişim kuran başka bir manager klasına veri gönderdim. Manager klası da presenter'a diyelim ki şey tutuyorsa, referans tutuyorsa burada bir cycle oluşuyor. Bu cycle'ı kırmak için aslında bazı notification işlemleri var veya bazı dillerde Swift'te mesela bunu closure yapılarıyla kullanıyoruz veya delegation yapıları var. Bunlarla çözüyoruz bu işi.
+
+929
+02:00:02,015 --> 02:00:17,555
+Yani güçlü bir referans tutmuyor da zayıf bir referansla mesela database'e veri kaydetti ve kaydettim diye bilgi göndermesi gerekiyor geri. Bunları bu şekilde yapıyor. Yani arada güçlü değil zayıf bir bağ var geri dönüşte.
+
+930
+02:00:17,556 --> 02:00:33,035
+Presenter bu işlemi gerçekleştirdikten sonra görüntüye uyarlıyor ve görüntüde yine aynı şekilde Presenter'dan bunun görüntünün uyarlandığı bilgisini aldıktan sonra gidip Presenter'dan o veriyi alıp kendisini de gösteriyor.
+
+931
+02:00:35,436 --> 02:00:42,975
+Bunun avantajları ne? MVC'de bütün işlemler Controller'da yapıldığı için aslında test edilmesi çok zor.
+
+932
+02:00:43,296 --> 02:00:47,535
+Burada biraz daha parçalı bir yapı olduğu için bu parçaların hepsini tek tek test edebiliriz yönet testlerle.
+
+933
+02:00:47,556 --> 02:00:55,556
+Bundan dolayı MVC'den daha iyi bir test edilmesi olduğunu söyleyebiliriz. Bununla birlikte daha iyi bir...
+
+934
+02:00:56,180 --> 02:00:58,479
+görev dağılımı var.
+
+935
+02:01:00,339 --> 02:01:00,519
+İşte
+
+936
+02:01:00,519 --> 02:01:03,719
+datayla ilgilenen kısım ayrı.
+
+937
+02:01:04,719 --> 02:01:11,019
+Görüntüyle ilgilenen kısım ayrı. Bunların arasındaki bağlaşım kuran ve o aralardaki ufak parçalar vs. daha iyi bir şekilde dağılmış.
+
+938
+02:01:12,100 --> 02:01:14,020
+Dependency cycle az önce dediğim zaten
+
+939
+02:01:14,020 --> 02:01:14,780
+bağımlılık
+
+940
+02:01:14,780 --> 02:01:21,399
+döngüsü yok. Daha akışkan bir şey var, yapısı var.
+
+941
+02:01:21,719 --> 02:01:26,059
+Verinin nereden nasıl gittiğini, geldiğini vs. hepsini kontrol edebiliyoruz ve görebiliyoruz.
+
+942
+02:01:26,059 --> 02:01:35,540
+çok rahat bir şekilde. Presenter, MVC'deki kontrolların yaptığı gibi görüntüdeki bütün işlemleri kontrol etmiyor aslında.
+
+943
+02:01:36,979 --> 02:01:46,259
+Sadece aradaki veri akışını sağlıyor. Bu yüzden de veri kendi kontrolcüsüne sahip olabilir. O önemli değil.
+
+944
+02:01:46,259 --> 02:02:06,879
+Hani bu dilden dile göre değişir. Web de farklıdır. IOS geliştirmede vesaire farklı. Kusura bakmayın dışarıdan ses geliyor. Yok sorun değil. Neyse bunları harmonize ediyor aslında. Bir orkestranın şefi gibi harmonize ediyor.
+
+945
+02:02:06,879 --> 02:02:19,459
+ve MVC'de daha önce bahsettiğim işte controller klasının çok büyümesi hatta bunun için zaten kullanılan massive view controller diye bir kullanım var şeyde piyasada.
+
+946
+02:02:20,339 --> 02:02:21,439
+Bu problemi çözüyor.
+
+947
+02:02:22,139 --> 02:02:30,599
+Ama işte komponans sayısı fazla olduğu için çoğunlukla implement etmesi en azından başlangıçlarda ve daha basit uygulamalarda implement etmesi biraz daha zor.
+
+948
+02:02:30,599 --> 02:02:41,400
+Ve MVVM'e geçiyorum. MVVM'de aslında biraz daha yeni, 2005'te yanlış hatırlamıyorsam ortaya çıkmış bir şey.
+
+949
+02:02:44,379 --> 02:02:52,879
+Reactive Programming denilen bir olgu var. Bunun üzerine aslında biraz geliştirilmiş. Birazdan detaylarından bahsedeceğim.
+
+950
+02:02:52,879 --> 02:03:20,479
+Vio model bu sefer sınıfımız var. Vio ile model arasında. Görev tanımları değişik. Vio ile Vio model arasında bir data binding var. Veri bağlaşımı diye çevirebiliriz. Bu çoğunlukla bazı dillerde şey olarak var, native olarak var. Bazı dillerde dışarıdan 3. parti kütüphanelerle mesela Swift'te, Array Swift diye bir şey vardı. Sonradan native oldu.
+
+951
+02:03:20,480 --> 02:03:29,280
+Kütüphanelerle gerçekleştirebiliyoruz. Aslında şöyle bir şey bir yerde olan bir değişikliği diğer taraf izliyor ve bu taraftaki değişikliği de bu taraf izliyor.
+
+952
+02:03:29,280 --> 02:03:39,459
+Ve burada bir şey değiştirildiği zaman bunun buna bilgi vermesi gerekmiyor. Bu direkt zaten bunu izlediği için burada yapılan değişikliği kendisini uyarlayabiliyor. Bu şekilde çalışıyor.
+
+953
+02:03:40,220 --> 02:03:48,560
+Evet bu aslında şu Ömer. Biz association ilişkisini gördüğümüzde kitabın yazarı demiştik.
+
+954
+02:03:48,559 --> 02:04:16,479
+Bir de yazarın hangi kitapları var? Şimdi bu ikili alanlar, bu örnek üzerinden düşecek olursak birbirini refere etsin mi? Bu tarz bir şeyde view model yapıp hatta birden fazla tabloyu, veritabanın tablosunu birleştirip yeni bir sanal tablo oluşturabiliyorsunuz. Veritabanında view olarak yapılıyor bu. Bunun da model tarafı view model olarak. Yani böyle bir kolaylığı var. Bu o açıdan güzel bir şey.
+
+955
+02:04:16,480 --> 02:04:27,140
+Evet şu anda zaten çok popüler. Özellikle mobil geliştirme tarafında, iOS'da da görüyorum, şeyde de Android tarafında da çok fazla görüyorum.
+
+956
+02:04:27,540 --> 02:04:38,360
+NVVM çok kullanılıyor çünkü hem yeni bir teknoloji nispeten yeni bir teknoloji aslında ve çok şey özellikle karmaşık uygulamalarda çok işe yarayan bir şey.
+
+957
+02:04:38,780 --> 02:04:45,700
+Benim şu anda mesela geliştirdiğim uygulamada olmasını çok istediğim bir şey ama onun şeyini yapmak, refaktörünü yapmak çok zor tabii.
+
+958
+02:04:45,699 --> 02:04:49,699
+Maalesef. Burada bir ilişki diagramı
+
+959
+02:04:50,131 --> 02:05:10,911
+var. Aynı şekilde burada da hani ViewModel model ile iletişime geçiyor ama ViewModel'a bir referans tutmuyor. Onun yerine işte bir şekilde haber veriyor. Bu işte notification'lar olabilir. Uygulama içerisinde global notification'lar veya işte bir weak reference şeklinde olabilir. Vesaire.
+
+960
+02:05:10,911 --> 02:05:33,591
+Burada görev tanımlamaları var. Model yine işte business logic oluşturuyor. Transaction'lardan sorumlu ve bu verilerin alışverişinden sorumlu. Ve tabii ki oradaki verinin bir modelini oluşturuyor. ViewModel görüntü mantığını tamamen oluşturuyor burada. Presenter'den farkı o. Sadece aradaki şeyi sağlamıyor da tamamen onu oluşturuyor.
+
+961
+02:05:33,591 --> 02:05:49,531
+Yani görüntüde bir buton varsa, bir text box varsa bunun şeyde de bir karşıtı olması lazım. ViewModel'da bir karşıtı olması lazım. Eğer onunla iletişime geçmesi gerekiyorsa. Çünkü View onu dinliyor olacak. O değişkeni dinliyor olacak.
+
+962
+02:05:49,531 --> 02:06:19,271
+Vio zaten her zaman bildiğimiz Vio. Buradaki farkı işte şeyle VioModule'la bir veri bağlaşımı içerisinde. Burada da yine bir data akışı var. Görüntü kullanıcının girdisini alıyor ama bir yere iletmiyor. Çünkü o sırada zaten VioModule bunu dinliyor oluyor. VioModule bu dinlediği burada yapılan değişikliklere göre kendi fonksiyonlarına, metotlarında neyi çağırması gerekiyorsa çağırıyor.
+
+963
+02:06:19,271 --> 02:06:36,091
+Modelde ne değişiklik yapması gerekiyorsa yapıyor. Ondan sonra kendi içerisinde bu değişikliği yapıyor. Ve bunu View Model'ı dinleyen View'da buradaki değişiklikleri izlediği için zaten orada o değişiklik olduğu anda kendisinde de o değişikliği gerçekleştirmiş oluyor zaten otomatik olarak.
+
+964
+02:06:40,340 --> 02:06:56,099
+Burada da şöyle bir şey var. Görüntü test etmek çok zor bir şey. Çünkü UI tarafını test etmek, yani açacaksınız otomatiği testleri biraz daha zor. Model view'u test ederek aslında görüntünün mantığını da test etmiş oluruz bir noktada.
+
+965
+02:06:56,099 --> 02:06:59,779
+Görev dağılımı çok iyi.
+
+966
+02:07:00,359 --> 02:07:02,779
+Yani tam olarak ayırmış vaziyette şeyleri, görevleri.
+
+967
+02:07:03,999 --> 02:07:05,860
+Yine dependency cycle yok.
+
+968
+02:07:05,959 --> 02:07:10,699
+Çünkü zaten model ile şey arasında zayıf bir ilişki var.
+
+969
+02:07:10,779 --> 02:07:12,719
+Geri dönüşte, verinin geri dönüşünde.
+
+970
+02:07:13,239 --> 02:07:13,939
+Vue model arasında.
+
+971
+02:07:14,139 --> 02:07:20,319
+Vue model arasında da data binding olduğu için böyle bir referans cycle gerçekleşmiyor.
+
+972
+02:07:20,959 --> 02:07:22,559
+Yine temiz bir akış var.
+
+973
+02:07:23,559 --> 02:07:26,039
+Buradaki görüntü çok pasif durumda.
+
+974
+02:07:26,099 --> 02:07:28,239
+Çünkü görüntü aslında bir şey çağırmıyor.
+
+975
+02:07:28,759 --> 02:07:32,679
+Ne bileyim, view model'ın bir metodunu vesaire çağırmıyor.
+
+976
+02:07:33,199 --> 02:07:36,139
+Kendisinde olan değişiklikler otomatik olarak view model'da uygulanıyor.
+
+977
+02:07:36,319 --> 02:07:37,299
+O yüzden pasif durumda.
+
+978
+02:07:38,559 --> 02:07:42,079
+Yine masif view controller şeyini bu da çözülüyor bu şekilde.
+
+979
+02:07:45,219 --> 02:07:55,599
+Ve bunun da zorluğu işte reactive programming dediğimiz olgu yeni başlayan programcılar için biraz yeni ve öğrenmesi biraz daha zor, uygulaması biraz daha zor bir olgu.
+
+980
+02:07:55,599 --> 02:08:00,079
+O yüzden zaten iş tanımlarında bunu bilen diye özellikle istiyorlar.
+
+981
+02:08:01,219 --> 02:08:03,039
+Burada da bir kaynakçım var.
+
+982
+02:08:03,599 --> 02:08:08,319
+Bir de isterseniz bununla ilgili Android üzerinde bir şey buldum, GitHub'ta örnek buldum.
+
+983
+02:08:08,779 --> 02:08:18,419
+NVC ve şey üzerinde, NVC, MVP ve MVVM üzerinde örnekler yapmış.
+
+984
+02:08:20,119 --> 02:08:21,159
+Tamam, güzel olur.
+
+985
+02:08:21,159 --> 02:08:40,280
+Şimdi burada bir view class yok ama muhtemelen bunu zaten başka bir yerde oluşturmuştur ama burada işte model user, user'ımız var işte username, password, login sayfası gibi düşünüyorum. Login işlemi yapılacak. Data üzerinde herhangi bir işlem yapmıyor burada.
+
+986
+02:08:40,279 --> 02:08:45,999
+Burada o işlemleri yapan controller
+
+987
+02:08:45,999 --> 02:08:53,999
+İşte oluştuğundan yapılacak, login durumundan yapılacak, login olmadığı durumundan yapılacak
+
+988
+02:08:53,999 --> 02:08:59,539
+Bunların hepsini controller sınıfı burada gerçekleştiriyor ve buradan view'u kendisi değiştiriyor
+
+989
+02:09:04,884 --> 02:09:16,003
+MVP'de ise biraz daha şeyler kullanılıyor. Interfaceler çok fazla kullanılıyor. Interfaceler aracılığıyla az önce söylediğim o big reference işini biraz bu şekilde gerçekleştiriyoruz aslında.
+
+990
+02:09:18,344 --> 02:09:29,463
+Mesela işte login metodu tanımlanmış bu interfaiste. Burada yine user'ın bir şey var, oluşumu var. Tamamen database'da nasılsa.
+
+991
+02:09:29,463 --> 02:09:34,963
+ve bu login işlemini gerçekleştiren bir manager class'ı diyebileceğimiz bir şey var, class var.
+
+992
+02:09:35,183 --> 02:09:37,724
+Ve bu interface'i implement ediyor.
+
+993
+02:09:39,464 --> 02:09:44,043
+Ve biz user bizi direkt almayacağız aslında presenter'da.
+
+994
+02:09:46,043 --> 02:09:48,263
+Bunu bir şey olarak alacağız.
+
+995
+02:09:49,384 --> 02:09:50,943
+Gerçekten burada almışım.
+
+996
+02:09:52,784 --> 02:09:53,943
+Normalde almaması gerekiyordu.
+
+997
+02:09:57,684 --> 02:10:22,203
+Ha pardon, pardon. Referansını alıyor orada. Evet, referansını alıyor. Direkt almaması lazımdı. Burada biraz yanlış yapmış galiba. Şeyin referansını alması lazımdı. Interface'in referansını alması lazımdı. Neyse, burada işte presenter'de az önceki controller class'ın ne kadar büyük olduğunu gördüğümüzde şu işlemle halletmiş oldu aslında burada. Yani ne kadar küçültülediğini görebiliyoruz buradan.
+
+998
+02:10:22,203 --> 02:10:24,583
+parçaları bildiğine.
+
+999
+02:10:25,123 --> 02:10:27,743
+Ve ne diyor? İşte burada bir view var buna ait.
+
+1000
+02:10:28,483 --> 02:10:32,343
+Ve o view'un işte şu metodunu çalıştırıyor bu login durumunda.
+
+1001
+02:10:33,343 --> 02:10:35,643
+Veya işte pardon oradan şeyi alıyor, veriyi alıyor.
+
+1002
+02:10:35,643 --> 02:10:38,483
+İşte name'ini almış, password'ını almış.
+
+1003
+02:10:38,923 --> 02:10:43,643
+Ondan sonra gitmiş, isLoginSuccessful, hani şey, menajere gitmiş, oradan Successful'sa
+
+1004
+02:10:43,643 --> 02:10:46,663
+view'da onLoginResult o metodu çalıştır.
+
+1005
+02:10:46,663 --> 02:10:48,404
+Sonra
+
+1006
+02:10:48,404 --> 02:10:52,923
+Vue'da da
+
+1007
+02:10:52,923 --> 02:10:55,423
+Şuydu galiba
+
+1008
+02:10:55,423 --> 02:10:57,063
+Ha bu şey
+
+1009
+02:10:57,063 --> 02:10:59,224
+Interface'de
+
+1010
+02:10:59,224 --> 02:11:04,984
+Vue'da da o metot çalışıyor ve kendini buna göre update ediyor
+
+1011
+02:11:10,228 --> 02:11:20,228
+NVVM'de de yine user'ımız var. Bunu çok göstermeme gerek yok artık. Aynı zaten bu model. Burada bir view'umuz var.
+
+1012
+02:11:24,979 --> 02:11:28,079
+Data Binding'i nerede yapmış? Bunu göremedim ama.
+
+1013
+02:11:31,179 --> 02:11:32,940
+On Click'te view gönderiyor.
+
+1014
+02:11:39,604 --> 02:11:44,763
+get text, logine mesela text değil to string password gönderiyor.
+
+1015
+02:11:45,923 --> 02:11:46,723
+On create'te.
+
+1016
+02:11:49,083 --> 02:11:51,003
+Zannediyorum burada şeyi uygulamamış mı?
+
+1017
+02:11:54,223 --> 02:11:57,544
+Observer var tamam evet. Bu yerlerde uygulamış demek ki ben göremiyorum şu anda.
+
+1018
+02:11:58,483 --> 02:12:06,143
+Observer'da bu şeyi, viewmodel'ı kendisine bağlıyor. Viewmodel'ın işte hangi kendi elementiyle, viewmodel'ın hangi elementi olduğunu burada birbirine tanıtıyoruz.
+
+1019
+02:12:06,143 --> 02:12:11,923
+Ondan sonra ViewModel bu işlemleri gerçekleştirdiği zaman kendini de otomatik olarak update edecek
+
+1020
+02:12:11,923 --> 02:12:18,703
+MutableLight'a da muhtemelen şudur hocam ben Java jargonda çok hakim değilim bu konuda
+
+1021
+02:12:18,703 --> 02:12:22,503
+İşte login olduğu zaman kendisini değiştiriyor
+
+1022
+02:12:22,503 --> 02:12:25,343
+Yani buradaki user'ı kendi değiştiriyor
+
+1023
+02:12:25,343 --> 02:12:28,083
+Bunu değiştirdiği anda View'da zaten otomatik olarak değişmiş oluyor
+
+1024
+02:12:28,083 --> 02:12:32,604
+Veya View'da sizin yaptığınız işlemler burada otomatik olarak tanımlanmış oluyor zaten
+
+1025
+02:12:32,604 --> 02:12:36,003
+Bu da bu şekilde çalışıyor
+
+1026
+02:12:36,003 --> 02:12:58,943
+Envy bir yamda bu. Bunun üstüne clean architecture diye bir şey var. Bunun tam bir aslında her dilde karşılığı var ama bu Uncle Bob diye bu yazılım mühendisliği alında çok bilinen bir abimiz var. Onun geliştirdiği bir sistem. Bu her dile ayrı bir şekilde uyarlanmış. O yüzden tek bir şey bulup da şey koymak istemedim.
+
+1027
+02:12:58,943 --> 02:13:23,843
+Burada aslında mantık en dışarıda şey olsun işte mesela UI olsun işte arayüz vesaire ne olursa olsun ondan sonra kontroller olsun ondan sonra işte use case ne varsa mesela bir alışverişte şey butonuna tıkladım ve orada yapılacak işlemler order gerçekleştirdim ve o order gerçekleştirdiği zaman birçok yere haber göndermesi gerekecek.
+
+1028
+02:13:23,843 --> 02:13:46,923
+Onları yapacak yüz kezler ve onun altında da en aşağıda entities dediğimiz şey aslında bizim model diye bildiğimiz şey burada. Burada geriye dönüş bir şey olmaması lazım. Yani entity'nin Vue'dan haberi olmaması lazım veya controller'ın Vue'dan haberi olmaması lazım. Vue'nun controller'ı tutması lazım ve ona göre kendini değiştirmesi lazım vs. Bu farklı şeylerde, dillerde farklı şekilde yorumlanabiliyor.
+
+1029
+02:13:46,923 --> 02:14:02,484
+Swift'te de bunun karşılığı Viper diye geçiyor. Onunla ilgili bir örnek. Şurada bir şey var ama çok fazla detayına girmeye gerek yok sanırım şimdilik. Biraz daha şey. Son iki aşamalarda.
+
+1030
+02:14:02,484 --> 02:14:04,083
+Evet bu son iki aşamalarda.
+
+1031
+02:14:05,163 --> 02:14:12,503
+Tamamdır. Teşekkür ederim. Var mı arkadaşlar sorunuz Ömer'e? Kalktığın için çok sağ olun Ömer. Elin ağzına sağlık.
+
+1032
+02:14:12,824 --> 02:14:13,163
+Rica ederim.
+
+1033
+02:14:13,163 --> 02:14:20,184
+Şimdi arkadaşlar bu dönem belki sistem analizi dersinde şey yapıyorsunuz.
+
+1034
+02:14:20,643 --> 02:14:22,184
+Basit bir proje yapacaksınız.
+
+1035
+02:14:22,283 --> 02:14:24,663
+Veri tabanından bazı sorgular almak falan.
+
+1036
+02:14:25,303 --> 02:14:30,163
+Veri tabanını tasarlamak önemli ama veri tabanından sorgu çekemek çok zor bir iş değil.
+
+1037
+02:14:30,824 --> 02:14:33,484
+Niye? Bunu frameworkler artık günümüzde yapıyor.
+
+1038
+02:14:33,723 --> 02:14:35,643
+Frameworklerin kullanılması daha elzem.
+
+1039
+02:14:36,643 --> 02:14:40,083
+Yani select, yıldız, fromlar falan tamam bilmek lazım da
+
+1040
+02:14:40,083 --> 02:14:56,143
+Onlar böyle çok abartılacak şeyler değil. Oradaki yapılan her şeyi işte Statnet'te Entity Framework veya işte Java'da Hibernate gibi teknolojiler yapıyor. Yani sen get all books diyorsun. Bütün kitapları hiç select cümlesi yazmadan onu çeviriyor.
+
+1041
+02:14:56,143 --> 02:15:26,123
+Arka planda zaten bu frameworkler select cümlesi yazıyorlar. Burada işin önemli tarafı model tarafına bakarsak veri tabanının iyi organize edilmesi ki bunu veri tabanı tasarımcıları yapıyor büyük bir projede. Diğer tarafta object oriented organizasyonun, object oriented tasarımın iyi bir şekilde yapılması. Bunda yazdığım tasarımcıların bir emeği var. Yani hangi classlar olacak, bu classlar arasında ilişkiler nasıl olacak ve yazdığımız bir kod acaba bir yerlerde şişmeyecek.
+
+1042
+02:15:26,143 --> 02:15:31,903
+Bu tarz kod kusurlarından uzak olması lazım.
+
+1043
+02:15:32,916 --> 02:15:58,615
+Bunun dışında işte eğer webse, webe uygun bir mantık. İşte mobilse mobile veya masaüstü ise masaüstüne uygun bir mantıkla çalışacak ve modülerlik bu şekilde sağlanacak. Bu derste Nesneye Yönelik Programlama'da bu işin aslında en temellerini konuştuk. Bunun devamına hani bu konularda yazılım tasarımı veya yazılımla alakalı hatta yazılım mühendisliğiyle alakalı kısımlara girecek olursanız bilmeniz gerekenler hani veri tabanını bilmek gerekiyor.
+
+1044
+02:15:58,615 --> 02:16:16,815
+Ondan sonra web programlama, mobil programlama bilmek gerekiyor. Bununla beraber nesne önemli kavram ve programlamanın bir üst versiyonu olan tasarım patenleri, tasarım dizayn dediğimiz konuyu herhangi bir yerden öğrenmeniz iyi olur.
+
+1045
+02:16:16,815 --> 02:16:24,535
+Bu konuda Türkçe kaynaklar da fena değil. Yabancı kaynaklar önceden çok fazla da şimdiki Türkçe kaynaklarımız iyi.
+
+1046
+02:16:24,535 --> 02:16:54,475
+İşte Aykut Taş, Telen falan var bu konuda kitabı olan kişiler. İyi bir tasarım nasıl yapılacak? Yani mevzu burada ona geliyor. İşte hangi dilde olursa olsun. Yani UML'i optimum bu şekilde tasarlamak diye ifade edeyim kısaca. Ondan sonra zaten bu işle uzmanlaşan birinin gidip de veri tabanı tasarımcı olmasına gerek yok. Onu da başkası yapıyor. Büyük projelerde bu işler böyle yürüyor. Her şeyin altından bir kişi kalkmıyor yani. Tamamen bir modülerlik var, iş paylaşımı var.
+
+1047
+02:16:54,535 --> 02:17:22,035
+Dönem boyunca bunları birazcık sizlere tanıtmaya çalıştım. Ben dinlediğiniz için, sabrınız için, katkılarınız için teşekkür ederim. Hepinize ayrı ayrı. İnşallah faydalı olmuşuzdur. Bugün laboratuvar seansımız olacak yine. Hocamız gelecek. Projelerinizi de hocalarla değerlendiriyorlar. Varsa katkınız, söylemek istediğim şeyi dinleyebilirim. Yoksa dersimizi tamamlayabiliriz. Hepiniz hakkınızda helal edin. Bundan sonra başka derslerde karşılaşır mıyız bilmiyorum.
+
+1048
+02:17:22,035 --> 02:17:26,735
+Varsa benden yana bir hak helal olsun. Hepinize başarılar diliyorum.
+
+1049
+02:17:28,255 --> 02:17:29,515
+Teşekkürler hocam.
+
+1050
+02:17:31,355 --> 02:17:32,235
+Teşekkür ederim hocam.
+
+1051
+02:17:32,655 --> 02:17:33,615
+Ben teşekkür ederim.
+
+1052
+02:17:35,275 --> 02:17:38,915
+Peki sorunuz varsa alabilirim yoksa ayrılabiliriz.
+
+1053
+02:17:40,175 --> 02:17:41,055
+Rica ederim arkadaşlar.
+
+1054
+02:17:42,916 --> 02:17:44,675
+Okula geldiğinizde de beklerim.
+
+1055
+02:17:44,675 --> 02:17:48,495
+Yani inşallah aşılamalar yakın zamanda başlıyormuş.
+
+1056
+02:17:48,496 --> 02:18:01,496
+Okulda inşallah yüz yüze görüşmek dileğiyle diyelim. Şimdiden başarılar sınavlarınızda, derslerinizde, hayatınızda. Peki herhalde soru yok. Görüşmek üzere. İyi günler arkadaşlar.
+
+1057
+02:18:05,843 --> 02:18:07,043
+Yeniden görüşmek üzere.
+
+1058
+02:18:07,163 --> 02:18:07,883
+Görüşürüz.

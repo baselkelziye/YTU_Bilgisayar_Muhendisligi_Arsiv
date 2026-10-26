@@ -1,0 +1,3135 @@
+1
+00:03:02,740 --> 00:03:04,480
+Selamlar arkadaşlar, merhabalar.
+
+2
+00:03:09,716 --> 00:03:10,135
+Arabojan.
+
+3
+00:03:18,548 --> 00:03:20,387
+En son thread konusuna gelmişiz.
+
+4
+00:03:22,447 --> 00:03:23,627
+Sondan bir önce.
+
+5
+00:03:25,227 --> 00:03:28,367
+Şimdi projenin testimiz son ne zamanda?
+
+6
+00:03:29,647 --> 00:03:31,207
+Bir bakayım dönem projesi.
+
+7
+00:03:34,996 --> 00:03:41,555
+7. Hafta yok 7 olunca ne oluyor? Pazartesi günü son mu oluyor?
+
+8
+00:03:43,435 --> 00:03:44,695
+Evet hocam pazartesi son.
+
+9
+00:03:49,747 --> 00:04:12,467
+Şimdi JUnit test ile alakalı bir kısım var. Onu da bugün bitirelim. Yani küçük bir bölüm. Projenizde lazım olacak. Geçen hafta keşke anlatsaydım diye düşündüm de unuttuk. Daha sonra işte GUI'ya dalınca bu konuya girmedik. Bugün bu konuyu hızlıca ilerletebildiğimiz kadar ilerletelim.
+
+10
+00:04:12,467 --> 00:04:27,428
+Çok bir şey kalmadı ama bir yandan da JUnity bitirelim. Gelecek hafta bu konunun, thread'in devamı ve GUI'de, hani derste olmayan ama bu konuda anlatacağımız kısmı bitiririz.
+
+11
+00:04:28,428 --> 00:04:38,968
+Saat, şimdi 7'de sınav görünüyor. Bugün henüz daha şey yapmadım, yayınlamadım, görüneceksiniz.
+
+12
+00:04:38,967 --> 00:04:48,927
+Sınavla alakalı dersin sonunda kurallardan bahsediğim 50 soru 60 dakika test sınavı yanlış doğruyu götürmeyecek.
+
+13
+00:04:49,187 --> 00:04:56,468
+215. slide'a kadar şey yani 215 dahil bütün konulardan sorumlu olacağınız bir şey.
+
+14
+00:04:57,468 --> 00:05:00,267
+Son yani threadle alakalı bir tane soru var.
+
+15
+00:05:01,267 --> 00:05:07,707
+Onu da zaten hani yapamamak için ekstra hani tam tersine eğitim almak gerekiyor yapamamak için.
+
+16
+00:05:07,707 --> 00:05:13,947
+Çok kolay bir soru. Neyse sizin bir sorunuz merak ettiğiniz bir şey var mı?
+
+17
+00:05:15,047 --> 00:05:16,527
+Hocam sorulara geri dönüş var mı?
+
+18
+00:05:18,928 --> 00:05:27,567
+Sorularda geri dönüş var. 50 soru 60 dakika olunca yani bu size sıkıntı olmasın diye böyle bir şey yaptık. Geri dönebileceksiniz.
+
+19
+00:05:27,747 --> 00:05:28,608
+Teşekkür ederiz hocam.
+
+20
+00:05:29,127 --> 00:05:36,567
+Hocam benim projeyle ilgili bir sorum vardı. Acaba proje için rapor yazmamıza gerek var mı? Kodun nasıl çalıştığıyla alakalı?
+
+21
+00:05:36,567 --> 00:05:43,267
+Yani çalışma durumlarını J-Unit test zaten onun için var. Onları raporda göstereceksiniz.
+
+22
+00:05:44,008 --> 00:05:44,707
+Tamam. Teşekkürler.
+
+23
+00:05:44,707 --> 00:06:00,628
+Asistanlar kontrol edecek. Yani asistan hocalarınıza da biz sorarız. Onların özel bir isteği varsa hani şu şekilde hazırlansa bu şekilde hazırlarsın diye. Gerçi yüklenmiştir belki şu an çoktan da bazı arkadaşlar yüklemişlerdir.
+
+24
+00:06:00,627 --> 00:06:29,167
+Onlar kontrol edecekler ama daha çok onlarla iletişim halinde olursanız daha iyi olur. Ben J-Unit testin onun için olmasını istendiğini düşünüyorum. En azından oradaki test sonuçlarını görürseniz birazdan ders anlatınca hani daha bu işin rahat olacağını görürüz. Normalde biz size ödevlerde diyoruz ki yani test klasını veriyoruz şeyde laboratuvarda. Çıktı var şu şekilde olacak diyoruz.
+
+25
+00:06:29,167 --> 00:06:40,887
+Bunu gözle kontrol etmek yerine JUnit Test beklenen sonuçları otomatik kontrolü. İşte % şu kadar başarılı, % bu kadar başarılı gibi bir sonuç veriyor bize. Tamam mı?
+
+26
+00:06:50,163 --> 00:06:53,223
+Peki şimdi şöyle yapalım.
+
+27
+00:06:56,563 --> 00:06:58,203
+Üniversitede yaz okulu açılacakmış.
+
+28
+00:06:59,903 --> 00:07:02,263
+Uzaktan eğitilmiş. Böyle bir yazı geldi.
+
+29
+00:07:03,943 --> 00:07:05,723
+Bakalım bizim bölümden kim açacak?
+
+30
+00:07:06,523 --> 00:07:08,684
+Ben açmamayı düşünüyorum da.
+
+31
+00:07:12,500 --> 00:07:38,099
+Şimdi arkadaşlar, multi-threading'e gelmeden önce burada olmayan ama bilinmesi gereken bazı kavramlardan bahsedelim. Bunlardan birisi program, diğeri proses ve thread. Bu kavramlar normalde işletim sistemleri dersinin konusudur. Gelecek dönem, 100 döneminde işletim sistemleri dersinde göreceksiniz.
+
+32
+00:07:38,099 --> 00:07:48,299
+Program dediğimiz bir şey. Herhangi bir dilde yazılmış. Java olur, C olur. Bizim anladığımız ama makinenin anlamadığı bir şey.
+
+33
+00:07:48,539 --> 00:07:54,399
+İşte ne var? Printler, bilmem neler falan var. Artık hangi konutlar varsa. Bu bir program.
+
+34
+00:07:55,439 --> 00:08:00,699
+Biz bunu bilgisayarın anladığı dile dönüştürmemiz için ne yapıyoruz? Compile ediyoruz.
+
+35
+00:08:00,700 --> 00:08:05,260
+gerekirse link ediyoruz, interpret ediyoruz.
+
+36
+00:08:06,600 --> 00:08:11,240
+Compiler'lı bir değilse compile edilecek, interpreter'lı birse interpret edilecek.
+
+37
+00:08:11,880 --> 00:08:18,199
+Sonra eğer birden fazla program varsa link edilecek ve bir executable file haline gelecek.
+
+38
+00:08:19,639 --> 00:08:20,900
+Herhangi bir program.
+
+39
+00:08:21,760 --> 00:08:25,459
+Ben ne zaman bu programı, işte üzerine çift tıkladım veya komut satırdan,
+
+40
+00:08:25,459 --> 00:08:54,319
+satırından adımı yazdım, çalıştırır hale getirdim. Running program oldu yani. Running program olunca ne oluyor? Bunun copy of the executable program is loaded into the main memory.
+
+41
+00:08:55,459 --> 00:09:20,419
+via loader. Bir yükleyici vasıtasıyla programın, executable programın bir kopyası belleğe yükleniyor. Yani gittiniz bir word dosyasına çift tıkladınız. Ne bileyim bir exe dosyasına çift tıkladınız. Ne oluyor? O şeyin bir örneği belleğe kopyalanıyor ve bu artık bir rang program, çalışan program, özel adı process.
+
+42
+00:09:20,419 --> 00:09:30,419
+Hatta bunu Ctrl Alt Delete yaptığımızda Task Manager'a bakarsanız veya işte Linux'taki çalışan şeylere, details'lere bakalım.
+
+43
+00:09:31,080 --> 00:09:35,539
+Burada prosesler vardır ve bu prosesin gördüğü gibi bir PID'si var.
+
+44
+00:09:36,580 --> 00:09:40,660
+İşletim sistemi tarafından bu prosesse bir tane PID veriliyor, integer bir ID.
+
+45
+00:09:42,399 --> 00:09:47,519
+Niye? Çünkü işletim sistemi gerektiği zaman bu prosesse müdahale etmesi lazım.
+
+46
+00:09:47,519 --> 00:10:00,219
+Bu prosesse bazı kaynaklar tahsis etmesi lazım. Ondan sonra prosesin bazı kaynaklarını kesmesi lazım. Yönetmesi lazım yani işletim sisteminin. Yönetmesini bu PID üzerinden yapıyor. Tamam mı arkadaşlar?
+
+47
+00:10:00,220 --> 00:10:24,660
+Şimdi thread konusu ise bir prosesin hani main'den başlar ya programlar main'den başlanıp end noktaya kadar end bitiş noktasına kadar prosesin akışı programın akışı gibi ama proses yani çalışan bir prosesin başlangıç noktasından bitişe doğru akışı ve her program each veya her şey diyelim each proses
+
+48
+00:10:24,659 --> 00:10:29,339
+must have
+
+49
+00:10:29,339 --> 00:10:32,499
+sahip olması gerekir.
+
+50
+00:10:32,499 --> 00:10:33,899
+At least
+
+51
+00:10:33,899 --> 00:10:37,179
+must have at least
+
+52
+00:10:37,179 --> 00:10:39,779
+one
+
+53
+00:10:39,779 --> 00:10:42,379
+thread.
+
+54
+00:10:43,439 --> 00:10:47,719
+Her proses en az bir thread'e sahip olması gerekir.
+
+55
+00:10:48,819 --> 00:10:52,559
+Yani illa ki bir program bir yerden başlayacak, bir yere kadar gidecek.
+
+56
+00:10:54,659 --> 00:11:07,659
+Genel olarak bu üç kavramı bilmemiz lazım. Çünkü bu dersin içeriğinde biz bir program yazacağız, bunu bir proses haline getireceğiz ve bu prosesteki threadleri yönetmeye hatta multi...
+
+57
+00:11:08,596 --> 00:11:37,455
+thread bir şekilde yönetmeye çalışacağız. Ne demek multi-thread? Program main'den başlayacak end noktaya kadar belli noktalarda tek thread ile giderken belli noktalarda parçalara ayrılacak. Bu parçalara ayrılması sonucunda biz işimizi belli parçalabiliyoruz. Tekrar belli noktada birleştireceğiz ve programımızı tamamlayacağız. Şimdi işlemcimiz ne yapıyor? Bir programdaki komutları tek tek koşturuyor. CPU yapıyor yani.
+
+58
+00:11:37,455 --> 00:11:55,755
+CPU'nun içine baktığımızda bir tane işlem ünitesi var. Aritmetik, lojik ünitesi dediğimiz bir bölüm var. Bu aritmetik, lojik ünitesinde komutlar geliyor, çözülüyor. Aritmetik, lojik ünitesinde, lojik değersinde falan görüyorsunuz veya bilgisayar organizasyonunda komutlar tek tek işletiliyor.
+
+59
+00:11:55,755 --> 00:12:04,996
+Genel olarak buradaki max işleyiş nedir? Bir komutun fetch edilmesi, daha sonra decode edilmesi, daha sonra execute edilmesi.
+
+60
+00:12:05,996 --> 00:12:11,795
+Gerekirse write back dediğimiz tekrar geriye yazma, yedekleme işlemini yapması.
+
+61
+00:12:11,795 --> 00:12:16,235
+Şu execution aşaması şurada yapılacak.
+
+62
+00:12:17,235 --> 00:12:22,655
+Ve bir birim zaman içerisinde normalde bir işlemcide bir tane execution yapılır.
+
+63
+00:12:22,655 --> 00:12:41,855
+Yani benim bir programım çalışıyorsa, prosesim aktif halde ise onun bir komutu bir zaman dilimi arasında yapılır. Şimdi buna multitasking diye bir şey söyleyemeyiz. Yani bir tane işlemcimiz var bu işlemci içerisinde ancak bir tane komut çalışacak işte bir T zamanında.
+
+64
+00:12:41,855 --> 00:12:50,635
+Ama şu an ben size yazı yazarken bir yandan konuşuyorum bir yandan bir sürü program çalışıyor peki bu iş nasıl oluyor?
+
+65
+00:12:51,535 --> 00:13:01,455
+Çünkü burada öyle bir durum aynı anda belki 100 tane işlem yapılıyor hatta şuraya bakarsak bir sürü prosesin aktif bir şekilde çalıştığını görürüz.
+
+66
+00:13:01,455 --> 00:13:02,775
+Peki bu nedir?
+
+67
+00:13:02,776 --> 00:13:27,995
+Şimdi birincisi arkadaşlar günümüz işlemcileri tek çekirdekli değil yani içerisindeki işlem yapan, execute yapan birim bir tane değil. Single core yok bir sürü core var. O zaman multi core prosesörler ne yapıyor? Aynı anda birden fazla yani many veya several execution diyelim.
+
+68
+00:13:32,340 --> 00:13:59,180
+bu kabiliyete sahipler. Bellekten, ne bileyim, bu programın, işte Zoom'un belli bir data şeyini komutuna alıyor. İşte şu OneNote'un belli bir data şeyini komutuna alıyor. Ve ayrı ayrı kollardan şeyi yürütebiliyorlar. Eğer birden fazla işlemci olursa o zaman daha güzel. Yani bir sürü işlem elemanımız olur. Ama biz şu an tek bir işlemci içerisinde çok fazla çekirdeğin olduğu, multi-cor'un olduğu işlemcilerden bahsedebiliriz.
+
+69
+00:13:59,180 --> 00:14:14,959
+Bir de işlemciler arasında, şey, prosesler arasında işletim sisteminin yönetimi sayesinde bir switching yapılıyor. Şöyle diyelim switching. Oraya doğru geliyoruz.
+
+70
+00:14:14,959 --> 00:14:37,759
+Şimdi mesela P1 prosesimiz var, P2 prosesimiz var, P3 prosesimiz var, Pn tane prosesimiz var. Bunların hepsi aynı bir market kasası gibi düşünün. Bir işlemciyi kullanacaklar. Peki bir işlemciyi kullanacaklarsa siz işletim sistemi olarak bu P1, P2, P1 proseslerine işlemciyi nasıl kullandırırsınız?
+
+71
+00:14:37,759 --> 00:14:47,479
+Temel olarak iki tane. Bir time sharing vardır. Bir de frequency sharing vardır. Zaman paylaşımı ve frekans paylaşımı.
+
+72
+00:14:49,279 --> 00:15:01,020
+Şimdi frekans paylaşımı burada pek söz konusu olmaz. İşlemci belli bir frekansla çalışıyor. Nedir mesela 4.9 GHz diyoruz. O zaman elimizde kalan şey zaman paylaşımı. Ne demek zaman paylaşımı?
+
+73
+00:15:01,020 --> 00:15:21,860
+İşte bir T eşittir sıfır anından belli T1 aralıklarla T1, T2, T3,.t. Diyor ki işletim sistemi P1 prosesini aldım diyor sana şu kadarlık bir zaman verdim diyor. Bu kadar zaman içerisinde kendi konutlarından belli bir kısmını çalıştır.
+
+74
+00:15:21,859 --> 00:15:48,739
+T1 zamanı geldiğinde süren dolduğunda tamam işlemciden çık sana P2'ye sıra veriyorum. Daha sonra P3'e sıra veriyorum. Daha sonra P1'e tekrar sıra geliyor. Böyle bu işlem bilgisayar açıldıktan sonra kapanana kadar prosesler teker teker işlemciye girip hizmet alıyorlar. Anlaşıldı mı? Yani bunu neye benzetebiliriz? Bir oturum var. Bu oturumda işte insanlar konuşmak istiyorlar. Konuşmaları için neye ihtiyaç var? Mikrofonu.
+
+75
+00:15:48,739 --> 00:15:54,579
+Mikrofonu elinde bulunduran, yani burada da izni elinde bulunduran konuşabilir, çalışabilir durumda.
+
+76
+00:15:56,239 --> 00:16:05,499
+Peki burada şöyle bir durum var. Şöyle bir örnek verelim. Kabul edelim ki bir markete geldik. Markette bir kasi var. Dört tane de müşteri geldi.
+
+77
+00:16:09,524 --> 00:16:10,283
+Eeeh
+
+78
+00:16:14,196 --> 00:16:41,515
+Şimdi bu müşterilere dedi ki tamam hiçbirinizi kırmayacağım. Hepinizden belli bir parçalar alacağım. Birinci müşterinin M1 diyelim. Belli bir miktar parçasını aldı. Mesela 10 birimlik şey vardı. Kasaya girdi. Birinci müşterinin ne oldu? 5 birimlik kaldı. 5'ini aldı, 5'i kaldı. İkinci müşteriye sıra geçti. Bunu tamamlamadan. Ne yaptı? Bunu 8 birimlik vardı. Bundan 4 birim aldı. Tamam sen de kal dedi.
+
+79
+00:16:41,515 --> 00:17:10,155
+Bu müşteriye geldi 7 birimlik vardı bundan 2 birim aldı daha sonra ne olacak işte müşteri n diyelim müşteri 1'e tekrar geri gelecek tamam mı müşteri 1'e geri gelecek bunun 5 birimlik parçası üzerinden kalacak şimdi burada bir sorun var sorun şu normalde ben bunları sizinle soru cevaplı giderim de mecburen artık anlatmam gerekiyor sorun şu arkadaşlar M1'den Mn sürekli bir değişim var şimdi M1'den M2'ye geçince
+
+80
+00:17:10,155 --> 00:17:15,855
+M1'e ne kadarlık işlem yaptı, ne kadarlık bir ürün geçirdi, bunların bir yerde saklanması lazım.
+
+81
+00:17:15,855 --> 00:17:22,855
+Diyecek ki M1 bak senden 5 bir ürün geçirdim, şu kadar para alacağım, şu kadar almadığım ürünün kaldı, bunları bir yerde sakla demesi lazım.
+
+82
+00:17:23,355 --> 00:17:29,455
+Sonra aynısını M2 için, M3 için bu aradaki her bir geçişte ekstra bilgiler saklanıyor.
+
+83
+00:17:29,535 --> 00:17:37,115
+İşte bu ara geçişlere yani M1'den M2'ye geçişlere şöyle bir şey biliyor, context switching.
+
+84
+00:17:37,115 --> 00:17:55,575
+Context switching ne demek? Context içerik demek. İçeriğin değiştirilmesi. Yani bir proses işlemciyi kullanırken onun işlemciden çıkartılıp beklemeye alınıp diğer prosesin işlemciye alınması ve o prosesin işlemlerinin devam etmesi daha sonra bu işin devam etmesi.
+
+85
+00:17:55,575 --> 00:18:21,735
+Şimdi burada bir ne yapısı var? Bir anlamda veri yapılarında gördüğünüz Q yapısı var. Kuyruk yapısı var. Yani önce M1 geldi sonra M1 çıktıktan sonra kuyruğun sonuna geçiyor. Ha eğer bunlar öncelikli proseslerse o zaman öncelikli bir kuyruk oluyor. Yani M1 kuyruğun sonuna geçmeden ne bileyim şuradaki bazı proseslerden daha öncelikliyse kuyruğun ortalarında bir yere geçebiliyor. Veya tekrardan başa gelebiliyor belli bir aralıkta.
+
+86
+00:18:21,736 --> 00:18:38,556
+Ama genellikle en yüksek öncelikle bir tane proses olmaz birden fazla proses olur yani illaki bir kuyruk mekanizması işleyecek şimdi bu proseslerin önceliğiyle alakalı şeye bakarsak burada o bilgilerin olması lazım şuradan select columns diyelim
+
+87
+00:18:38,556 --> 00:18:41,776
+Bir gözüküyor hocam base priority şu an açık
+
+88
+00:18:41,776 --> 00:18:51,395
+Nerede görünüyor? Base priority tamam normal high işte not assigned above normal normalin üzerinde böyle priority'ler var
+
+89
+00:18:51,395 --> 00:19:08,175
+Şimdi dolayısıyla bu şekilde bu sırayla tekrar kuyruğa gelip devam edecekler. Bakın bunlar hepsi ayrı ayrı prosesler ve bu işlemler böyle sürekli devam ediyor. Şimdi multitasking dediğimiz bir kavram var.
+
+90
+00:19:11,667 --> 00:19:12,807
+Çok Görevlilik
+
+91
+00:19:12,807 --> 00:19:21,027
+Yani aynı anda birden fazla işin yapılması. Bu genel anlamda ikiye ayrılıyor.
+
+92
+00:19:24,167 --> 00:19:25,347
+Multi-process
+
+93
+00:19:25,347 --> 00:19:29,688
+Multi-threat
+
+94
+00:19:29,688 --> 00:19:40,047
+Multi-process dediğimiz kavram aynı anda, bakın bir T anında birden fazla prosesin çalıştırılması.
+
+95
+00:19:40,047 --> 00:19:42,367
+Peki bu bir tane işlemci ile mümkün müdür?
+
+96
+00:19:43,427 --> 00:19:44,528
+Tek işlemci tek korla
+
+97
+00:19:49,299 --> 00:19:50,959
+multiproces mümkün müdür?
+
+98
+00:19:53,499 --> 00:19:56,199
+Multiproces mümkün, multitreet değil galiba.
+
+99
+00:19:57,319 --> 00:19:58,220
+Yok, olmadı.
+
+100
+00:20:00,739 --> 00:20:04,559
+Proses dediğimiz, şundan her biri ayrı proses. Yani OneNote, ne bileyim Zoom.
+
+101
+00:20:05,759 --> 00:20:06,939
+Bir tane işlemcimiz var.
+
+102
+00:20:08,539 --> 00:20:09,720
+Multiproces çalışacağız.
+
+103
+00:20:15,380 --> 00:20:43,499
+Mümkün değil. Niye mümkün değil? Çünkü benim tek bir tane işlemcim varsa, single core, tek bir tane işlem biten vardır. Yani bir tane komut üçleyecek birim zamanında bir tane bir birimim var. Dolayısıyla bir prosesi çalıştırırken bir başka prosesi çalıştırmaz. Dolayısıyla bu multi-proses işlem için single core mümkün değil. Ancak ya multi-core olacak bir işlemcimiz veya multi çoklu CPU olacak.
+
+104
+00:20:43,499 --> 00:21:05,499
+İşte bu durumda multiprocessing şurada mümkün, okey, bundan mümkün değil. Aha şurada virtual parallelism, paralleling, parallel programming dediğimiz veya paralelizm dediğimiz bir şey mümkün.
+
+105
+00:21:05,499 --> 00:21:24,320
+Bu da neyle sağlanıyor? Context switching ile sağlanıyor. Şimdi işlemcinin çalışma hızı ne? Gigahertzler mertebesinde. İşlemci çok hızlı çalıştığı için eğer tek bir şey varsa, core'umuz varsa bir proses giriyor, nano saniyeler mertebesinde öbür proses giriyor.
+
+106
+00:21:24,320 --> 00:21:34,560
+E biz yani nano saniyelik bir değişimi algılayamadığımız için o değişimler ne oluyor? Yani sanki her şey aynı anda çalışıyormuş gibi oluyor. Single core bir işlemci.
+
+107
+00:21:34,560 --> 00:22:04,540
+MultiCore'da bunu zaten hiç hissetmiyoruz. MultiCPU'da hiç hiç hissetmeyiz. Eski bilgisayarlarda Windows 3.1 miydi neydi yani çoklu işlem multitasking özelliği geldiğinde o zamanlar tabii işlemciler ve bilgisayar bellekleri bu kadar gelişmiş değil. Dolayısıyla ne oluyor? Bazen takılmalar oluyordu bir prosesten öbür prosese geçti. Niye? Şu context switching esnasında yani bir prosesin hesabının kitabının yapılıp öbür prosese geçmeyecek.
+
+108
+00:22:04,560 --> 00:22:25,040
+araya geçmesi arada ne oluyordu? Takılmaya sebep oluyordu ve belli bir gecikme oluyordu. O gecikme bir saniye mertebesinde bile olsa bir başka gecikmeyi diğerlerini tetikliyordu. Ve eski bilgisayarlarda görmüşsünüz işte bazen programlar kilitlenir, işte çok kısa bir süre şey olur ondan sonra devam eder. Bunun bir sebebi de budur. Buradaki konteks silinçlikten kaynaklıdır.
+
+109
+00:22:25,040 --> 00:22:39,760
+Diyelim. Eğer elimizde multi-core bir şey yoksa, multi-cpu yoksa yani çok fazla proses işlemeyeceksek single proses bilgisayar varsa her türlü bilgisayarda çalışabiliriz. Sıkıntı yok.
+
+110
+00:22:39,759 --> 00:23:07,799
+Şimdi bir prosesin yani en tane burada proses var. Dikkat edin. Şimdi multi-threat ise bir prosesin kendi içinde alt küçük prosesçik diyelim bunları ama işte bu prosesçiklere thread diyoruz. Many threads olabilir bir proses içerisinde.
+
+111
+00:23:07,799 --> 00:23:29,320
+Bu da neyi sağlayacak? Prosesin içerisindeki bazı işlemler alt parçalara bölünüyor ve bu alt parçalar birbiriyle eş zamanlı gibi, concurrent gibi yürütülüyor. Mesela örnek, Word'de yazı yazıyorsunuz. Yazı yazarken bir anda yanlış bir şey yazarsak altı çiziliyor değil mi?
+
+112
+00:23:29,320 --> 00:23:59,299
+İşte bu işlem bir yandan siz yazı yazarken veya bir yandan başka bir şey yaparken sadece Word için diyorum bakın Word'de yazı yazarken belki müzikle dinliyorsunuz o değil sadece Word'ün içindeki kendi işleyişe bakacağız burada tek bir proses için işte bir yandan bir iş yaparken bir yandan diğer taraftan ne bileyim yazım kontrolünün yapılması veya diğer işte tablo ekleme vesaire gibi işlerin yapılması durumunda many thread çok fazla thread kullanıyoruz şimdi bakın şurada dikkat ederseniz bir sütüm var thread diye zoom mesela burada şu proseste
+
+113
+00:23:59,299 --> 00:24:04,279
+26 tane thread kullanıyormuş. Diğeri 130 tane thread kullanıyormuş.
+
+114
+00:24:04,756 --> 00:24:20,815
+ve Windows Vista ayarında çalışıyoruz. Normalde benimle Windows 8.1 var. Bazı uyumluluklar mesela burada değiştiriliyor. Şimdi bunlar bir proseslerin kendi içinde kaç tane farklı prosese bölündüğünü gösteren döküş şeyler. Bakın hepsi işletim sistemi tarafından yönetiliyor.
+
+115
+00:24:20,815 --> 00:24:42,535
+Bir diğer kavram, proses, kontrol, blok kavramı. Bu proses, kontrol, blok işletim sistemlerinde göreceksiniz. Bu bir prosesin belleğe yüklenmesi yani bir program belleğe yüklenip proses halini aldıktan sonra bellekte ona bir yer ayrılıyor.
+
+116
+00:24:42,535 --> 00:24:47,436
+Bu bellekteki yerde, yani belleğimiz burası, buna bir yer aldı
+
+117
+00:24:47,436 --> 00:24:50,995
+Burada neler saklanıyor? İşte buradaki programın içindeki variabullar
+
+118
+00:24:50,995 --> 00:24:54,315
+Ondan sonra static variabullar, non-static variabullar
+
+119
+00:24:54,315 --> 00:24:59,375
+Ondan sonra içerisinde değişken atanmış variabullar, değişken atanmamış variabullar
+
+120
+00:24:59,375 --> 00:25:02,275
+İşte mallokta oluşturulan dinamik variabullar
+
+121
+00:25:02,275 --> 00:25:05,515
+Ondan sonra programın kodu, yani program datası
+
+122
+00:25:05,515 --> 00:25:07,315
+Sonra başka neler var?
+
+123
+00:25:08,555 --> 00:25:12,175
+İşte flagler, işlemcinin mesela flagleri orada saklanıyor
+
+124
+00:25:12,175 --> 00:25:19,675
+Çünkü bir fonksiyon çağrısı yapıldığında, recursion fonksiyon olabilir, normal fonksiyon olabilir, biliyorsunuz işlemcinin state'inin kaydedilmesi gerekiyor.
+
+125
+00:25:20,116 --> 00:25:34,095
+Assembl'de bunları konuştuk. Bunlar hep programın başlangıcından bitişine sağlıklı bir şekilde yürütülmesi için gerekli olan bütün bilgiler bu process control bloğu içerisinde, yani bellek içerisindeki hafıza kısmında yönetiliyorlar.
+
+126
+00:25:34,095 --> 00:25:41,476
+Şimdi aynı şey, bu process control bloğu şöyle bir inceleyelim, internetten bir şey aratalım.
+
+127
+00:25:42,175 --> 00:25:44,675
+İçeri bir bakalım
+
+128
+00:26:11,059 --> 00:26:12,219
+Şu daha iyi ya.
+
+129
+00:26:13,139 --> 00:26:37,179
+Mesela burada sadece programınızın içeriğiyle alakalı şeyler yok. Ekstra bazı şeyler de var. Mesela program counter bilgisi saklanıyor. Yani işlemcinin içerisindeki o şey. Ama bunun dışında prosesinizin state'i bakın. Niye? Biraz önce dedik ya, prosesler belli aralıklarla işlemciye, işlemciden çıktıklarında eğer tamamlanmadıysa beklerler.
+
+130
+00:26:37,179 --> 00:27:03,799
+İşte proses şu an bekliyor mu, çalışıyor mu veya terminate oldu, bitti mi o bilginin saklanması lazım. Sonra proses ID bilgisinin burada saklanması lazım. Bir sürü başka bir prosesten başka bir proses oluşturulabilir. Bunu işletim sistemlerinde forkla veya şeyle, executela göstereceğiz. Onların işte child prosesleri ve parent prosesler dediğimiz ekstra bilgilerinin pointerlarının saklanması lazım.
+
+131
+00:27:03,799 --> 00:27:18,159
+Yani bu kavram daha çok işletim sistemlerine girdiği için daha fazla devam etmeyeceğim. Bu bilgiler saklanıyor. Bizim için önemli olan şey bir proses state'i yani çalışan durumda mı bekler durumda mı onun da bir yerde bu proses kontrolü bile o içerisinde saklanması gerekiyor.
+
+132
+00:27:18,159 --> 00:27:36,240
+Şimdi burada prosesin altında birden fazla thread çalışabilir dedik. Bu threadler bu prosese ayrılan, tahsis edilen mesela global değişkenlerle alakalı yerlere erişebilirler ortak olarak. Ondan sonra bazı değişkenlere erişebilirler.
+
+133
+00:27:36,240 --> 00:27:40,379
+Ama thread control block dediğimiz bir yapı var.
+
+134
+00:27:43,680 --> 00:27:47,360
+Process control blockdaki şekle benzer.
+
+135
+00:27:49,479 --> 00:27:51,820
+Ama onun bir alt kümesi gibi düşünün.
+
+136
+00:27:51,899 --> 00:27:57,580
+İşte burada kaç tane thread varsa bu process control block, PCB'nin içinde kaç tane thread control block varsa
+
+137
+00:27:57,580 --> 00:28:00,320
+işte thread 1 için, thread 2 için, thread 3 için.
+
+138
+00:28:00,319 --> 00:28:10,999
+Proses'le alakalı genel şeyler yine proses control bloğunda ama her bir thread'in kendi içindeki blokları thread control bloğu altında saklanıyor.
+
+139
+00:28:10,999 --> 00:28:20,339
+Yani bunun da mesela kendi lokal değişkenleri olabilir veya işte burada da mesela bu thread belli bir miktar çalışacak, burada thread'ler arasında switching yapılacak.
+
+140
+00:28:20,420 --> 00:28:27,239
+Sonra diyecek ki bu thread'e geç, sonra bu bu kadar çalışacak, sonra diyecek ki bu buraya geç, sonra bu bu kadar çalışacak, sonra ne yapacak?
+
+141
+00:28:27,239 --> 00:28:28,759
+Buradan geri gelecek, devam edecek.
+
+142
+00:28:29,199 --> 00:28:34,919
+Şimdi bunun da nereden kaldığının devam etmesi gereken yerlerin bilinmesi, saklanması gerekiyor.
+
+143
+00:28:36,019 --> 00:28:36,279
+Evet.
+
+144
+00:28:36,819 --> 00:28:38,759
+Şimdi ben burada şöyle bir örnek veririm.
+
+145
+00:28:38,759 --> 00:28:45,199
+Sol elinizi çevirirken sağ elinizi saat yönünün tersine çevirebilir misiniz?
+
+146
+00:28:45,299 --> 00:28:46,879
+Kendinize doğru, yüzünüze doğru.
+
+147
+00:28:48,259 --> 00:28:51,579
+Sol elinizi sallayın, sağ elinizi tam tersi yönünde sallayın.
+
+148
+00:28:51,659 --> 00:28:52,479
+Yapabiliyor musunuz?
+
+149
+00:28:56,596 --> 00:29:01,415
+Hocam ben müzik çalıştığım için biraz yapabilirim.
+
+150
+00:29:03,235 --> 00:29:04,695
+Tam ters yönde.
+
+151
+00:29:07,575 --> 00:29:08,096
+Şey miyiz?
+
+152
+00:29:10,016 --> 00:29:12,715
+Tekrar eder misiniz? Peki o zaman anlamadım.
+
+153
+00:29:13,315 --> 00:29:19,356
+Yani ekran paylaşmak istersen şey yapabilirsin tabii gösterebilirsin.
+
+154
+00:29:20,096 --> 00:29:24,776
+Çünkü bunu yapabilmesi için beynin iki tarafında aynı anda çalışıyor olması lazım.
+
+155
+00:29:28,564 --> 00:29:37,444
+Ben şu an göremiyorum ama eğer kamerayla yapabiliyorsam bir dakika ben niye göremiyorum?
+
+156
+00:29:37,503 --> 00:29:39,583
+Ben kameram müsait değil de.
+
+157
+00:29:40,404 --> 00:29:44,263
+Tamam tamam problem değil. Yani şey göstermek yapmak zorunda değilsin.
+
+158
+00:29:44,923 --> 00:29:50,543
+Şimdi arkadaşlar bu şu demek yani bir thread çalışırken öbür thread çalışmayacak demek.
+
+159
+00:29:50,943 --> 00:29:57,203
+Tamam threadler çok hızlı yine şey yapılacak. Ne derler? Switching yapılacak.
+
+160
+00:29:57,203 --> 00:30:02,183
+Ama bir prosesin altında belli bir anda bir thread çalışacak normalde
+
+161
+00:30:02,183 --> 00:30:05,203
+Ama yine bu çoklu core işlemciden dolayı
+
+162
+00:30:05,883 --> 00:30:08,543
+Eğer işlemcimiz birden fazla core'a aitse
+
+163
+00:30:08,543 --> 00:30:11,223
+Threadler paralel bir şekilde çalışabilir
+
+164
+00:30:11,223 --> 00:30:13,583
+Yalnız dikkat etmemiz gereken şey ne?
+
+165
+00:30:14,223 --> 00:30:17,883
+Bu threadlerin paralel çalışırken senkron bir şekilde çalışması
+
+166
+00:30:17,883 --> 00:30:22,123
+Yani T1 çalışırken T1'in uğraştığı bir data varsa
+
+167
+00:30:22,123 --> 00:30:50,943
+Bu T2 T1'in uğraştığı bir dataya müdahale etmeyecek. Yani birisi mesela sen burada yazı yazıyorsun, bir değişiklik yapıyorsun. Şu da yazdığın yazıyı kontrol ediyor sadece değiştirmiyor bakın. Tamam mı? Bu ikisi beraber çalışabilirler. Ama dikkat edin bunların birbirine müdahale etmemesi yani alan uzaylarına çok fazla müdahale etmemesi gerekir. Eğer müdahale edeceksek bunu üst taraftaki şuradaki ortak alanlar vasıtasıyla yaparız.
+
+168
+00:30:50,943 --> 00:31:09,223
+Hani biz size deriz ya global değişken kullanmayın ödevlerde falan. İşte onun gerekçelerinin birisi budur. Eğer bu global değişken birden fazla thread tarafından kontrol ediliyorsa ne bileyim bir tanesi burada arttırma yapıyor öbürü azaltma yapıyorsa yanlış sonuçlar alınır ve bunun daha ciddi sıkıntıları vardır.
+
+169
+00:31:09,223 --> 00:31:22,663
+Genel olarak threadle alakalı kavramlar, kavram haritası oluşsun diye söyleyeceklerim bunlar. Programın, processing, thread'in ne olduğunu bilelim. Context switching'in ne olduğunu bilelim.
+
+170
+00:31:22,663 --> 00:31:35,643
+İşte patch, decode, execution aşamalarını bilelim. Multitasking nedir? Multiprocessing nedir? Multitread nedir? Multitread'in multiprocessing'den farkı nedir? Bunları bilelim.
+
+171
+00:31:35,643 --> 00:31:53,923
+Yani bir programın kendi içinde alt parçalara bölünmesi, bir prosesin kendi içinde alt parçalara bölünmesi multi-trading. Bir bilgisayarda, bir sistemde birden fazla prosesin aynı anda çalışması multi-processing olarak ifade edilecek.
+
+172
+00:31:55,383 --> 00:31:57,763
+Evet, genel olarak böyle. Şimdi bir de şurada, şuna bakalım.
+
+173
+00:32:01,491 --> 00:32:29,511
+Threat, control, block. Threatlilerin de running durumu var, execution durumu var. Bakın herhalde şuydu. Evet. Bir single threadli bir proses. Yani içerisinde tek bir akış var. Bu bir proses ama çok threadli. Bunun process, control, block'ta ortak bir alanı var. Bir de kendine ait her bir threadin ortak bir memorist var.
+
+174
+00:32:29,511 --> 00:32:30,951
+Tamam mı?
+
+175
+00:32:32,531 --> 00:32:36,191
+Şimdi kod üzerinde bunlar nasıl olacak şimdi oraya doğru gelelim.
+
+176
+00:32:38,111 --> 00:32:39,352
+Şuradan birazcık şey yapalım.
+
+177
+00:32:40,151 --> 00:32:53,431
+Bu multitasking dediğimiz aynı zamanda birden fazla programın yani aslında burada program working program demiş ya yani bir prosesin aynı anda birden fazla prosesin çalışması demek.
+
+178
+00:32:53,431 --> 00:33:00,672
+Ama program working at the same time can be defined as multiprocessing.
+
+179
+00:33:01,791 --> 00:33:09,151
+Şimdi günümüzdeki bilgisayarlarda özellikle çok fazla core, birden fazla core olduğunu biliyoruz.
+
+180
+00:33:09,151 --> 00:33:14,631
+Her core kendi içinde işte bir veya daha fazla task gerçekleştirebiliyor.
+
+181
+00:33:14,891 --> 00:33:16,511
+Yani bunlara process dedik.
+
+182
+00:33:17,731 --> 00:33:19,511
+Bu işlemcinin mimarisine göre değişir.
+
+183
+00:33:19,511 --> 00:33:29,371
+A process can sometimes be divided into threads, may run in parallel, yani paralel çalışacak threadlere bölünebilir.
+
+184
+00:33:29,651 --> 00:33:34,331
+Yani buradaki bir diğer kavram concurrent running dediğimiz.
+
+185
+00:33:35,071 --> 00:33:36,852
+Concurrent running some process.
+
+186
+00:33:37,451 --> 00:33:40,551
+Bu concurrent kelimesini çok fazla duyacaksınız.
+
+187
+00:33:40,551 --> 00:33:42,431
+Eş zamanlı demektir.
+
+188
+00:33:42,551 --> 00:33:48,211
+Current biliyorsunuz şu anki ama concurrent buradakinden biraz anlam kayıyor.
+
+189
+00:33:48,212 --> 00:33:50,951
+eş zamanlı paralel dediğimiz bir hale geliyor.
+
+190
+00:33:51,811 --> 00:34:02,991
+Eğer yeteri kadar bir hardware resursunuz yani core'unuz varsa bakın işlemcinin olması işlemcinin gigahertz'inin yüksek olması burada çok bir anlam ifade etmiyor.
+
+191
+00:34:02,991 --> 00:34:08,992
+Çünkü işlemcinin içerisinde komutu işleyecek bir core lazım bize işlem ünitesi.
+
+192
+00:34:09,932 --> 00:34:13,771
+Bu zaman ne yapabilir? Çok ciddi bir şekilde düşebilir.
+
+193
+00:34:14,352 --> 00:34:17,471
+Şimdi mesela concurrent bir örnek verelim.
+
+194
+00:34:18,212 --> 00:34:20,312
+Bir matriz düşünün.
+
+195
+00:34:22,312 --> 00:34:23,652
+Veya bir dizi düşünelim.
+
+196
+00:34:23,712 --> 00:34:24,712
+Matriz düşünmeye gerek yok.
+
+197
+00:34:24,792 --> 00:34:25,732
+1, 2, 3 olsun.
+
+198
+00:34:26,391 --> 00:34:27,331
+Bunda da 4, 5, 6.
+
+199
+00:34:28,352 --> 00:34:29,631
+Ben toplamını istiyorum.
+
+200
+00:34:30,452 --> 00:34:37,111
+Toplama yaparken şununla şunu topladıktan sonra şununla şunu toplamanın bir alemi var mı?
+
+201
+00:34:37,152 --> 00:34:37,952
+Bir gereği var mı?
+
+202
+00:34:38,452 --> 00:34:38,671
+Yok.
+
+203
+00:34:39,191 --> 00:34:40,732
+Yani bunlar bunları etkilemiyor.
+
+204
+00:34:40,732 --> 00:34:43,831
+1 ile 4'ü toplarken bir yandan 2 ile 5'i toplatabilirim.
+
+205
+00:34:43,891 --> 00:34:45,792
+Öbür taraftan 3 ile 6'yı toplatabilirim.
+
+206
+00:34:45,792 --> 00:35:00,611
+şu toplama işlemini paralel bir şekilde yapabilirim. Yeter ki paralel bir şekilde yapayım derken normal klasik toplama için geçen süreden daha uzun bir süre bana meydana getirmesin.
+
+207
+00:35:00,611 --> 00:35:13,611
+Çünkü bunu paralelleştirmek için de ekstra bir süre gerekiyor. Günümüzde eğer çok fazla büyük bir vektörünüz varsa bunu single yani for döngüsüyle yapmak yerine tek bir döngüyle algoritma karmaşıklığı da zaten onun şey.
+
+208
+00:35:13,611 --> 00:35:31,311
+Bunun yerine ne yapıyor? Bir sefer de bununla bunu topladık, işte bununla bunu topladık, bununla bunu topladık. Aynısı matriz çarpımında veya bir matriz toplamında da olan bir şey arkadaşlar. İşte buna paralelleştirme veya işte threadler yoluyla daha kısa sürede tamamlama imkanı olacak.
+
+209
+00:35:31,311 --> 00:35:35,871
+İşte bu artış sadece ne demiş?
+
+210
+00:35:39,871 --> 00:35:44,651
+Yani mümkün olan core'ların sırasında değildir.
+
+211
+00:35:45,111 --> 00:35:48,471
+Özellikle burada eş zamanlı çalışan threadler,
+
+212
+00:35:49,351 --> 00:35:55,431
+Yani birbiriyle öyle veya böyle bir şekilde senkronize edilmesi lazım.
+
+213
+00:35:55,431 --> 00:36:00,431
+Yani ben bir şeyi parçalara böldüm, tamam her şey çok güzel çalışacak diye bir...
+
+214
+00:36:00,943 --> 00:36:16,303
+mantık da yok. Böldüğümüz bir şey, parçalar birbirini ne kadar etkileyecek? Mantıklı bir şekilde bölmek gerekiyor. Bunu da söylemiş olalım. Ayrıca bir prosesin oluşturulması veya bir thread'in oluşturulması ekstra bir zaman da alıyor. Bunu da biraz önce söyledik.
+
+215
+00:36:16,303 --> 00:36:39,723
+Bu kursun adı bu kursun içeriğinde bu dersin içeriğinde bir işletim sistemi dersindeki kadar bir şey anlatmıyoruz. Geçen dönem yapısal programlamada C'de thread nasıl oluşturulur, nasıl çalıştırılır buna girdik. Burada biraz daha bunun ileri seviyesinde ve Java'da hani ekstra kolay kullanımlar var onlara bakacağız.
+
+216
+00:36:39,723 --> 00:36:58,723
+Şimdi bir thread'in multi-thread bir ifade şeyin çalıştırılması nasıl oluyor? Siz bir prosesi oluşturdunuz. Proses oluştuktan sonra ilk başta yeni bir hale geliyor. Bunlar stateler. Bu yeni bir state proses oluştuktan sonra runnable çalıştırılabilir hale geliyor.
+
+217
+00:36:58,723 --> 00:37:08,844
+ve ne zamanki işletim sistemi tarafından alınıp işlemciye gönderildi ve işlemci tarafından işletiliyorsa running state'ine geçiyor.
+
+218
+00:37:08,844 --> 00:37:16,063
+Tamam mı? Bu running state içerisinde bir tabii zamanlayıcı dediğimiz işletim sistemin altında bir planlayıcı var.
+
+219
+00:37:16,643 --> 00:37:19,563
+Diyor ki P1 şu kadar çalışsın, P2 bu kadar çalışsın gibi.
+
+220
+00:37:20,583 --> 00:37:26,583
+Şimdi bazen bu proses çalışırken bir hata olur, terminate edebilir veya sonlanabilir.
+
+221
+00:37:26,583 --> 00:37:41,744
+O zaman ölü durumda alınıyor. Bazen bir proses çalışırken bir IO'ya, input-output'a, onun sonra bir uykuya veya beklemeye veya bir başka prosesi beklemeye join diyoruz. Buna ihtiyaç duyabilir.
+
+222
+00:37:42,443 --> 00:37:47,703
+Şimdi IO dediğimiz şey mesela kullanıcıdan bir sayı alacaksınız. Bir sayı giriniz dediniz, mesajı verdiniz.
+
+223
+00:37:47,703 --> 00:37:52,903
+İşte sistem in dosyasından integer.readnextint dediğimiz bekliyor.
+
+224
+00:37:53,343 --> 00:37:56,623
+Şimdi bu aşamada sizin prosesinizin ne olması lazım?
+
+225
+00:37:57,323 --> 00:37:58,663
+İşlemciden çıkması lazım.
+
+226
+00:37:59,003 --> 00:38:00,703
+Çünkü boşu boşuna bekletiyorsunuz.
+
+227
+00:38:01,363 --> 00:38:03,343
+Diğer taraftaki proseslerin çalışması gerekiyor.
+
+228
+00:38:03,343 --> 00:38:07,463
+O zaman mesela o IO servisine alınıyor.
+
+229
+00:38:07,583 --> 00:38:10,643
+Veya tamamen başka bir amaç için bekletebilirsiniz.
+
+230
+00:38:11,423 --> 00:38:16,523
+Şimdi bu IO yaparken veya wait yaparken sistem kaynaklarını kısmen kullanıyor.
+
+231
+00:38:17,703 --> 00:38:39,703
+Bu iki durumu böylesin. Eğer slip yaparsanız yine işlemciden çıkıyor ve sistem kaynaklarını kullanmayacak kadar çok az sadece işte bir şey durumunda işte varlığını gösterecek kadar çalışıyor. Slipten interrupt yaptığınızda uyandır dediğinizde tekrar aktif hale gelmeye çalışıyor. Her zaman da aktif hale gelecek diye bir şey yok. Bazen exception verebilir.
+
+232
+00:38:39,703 --> 00:39:01,703
+Join yaparken de yine geliyor bir başka trade yani trade'in biri geldi şurada bekliyor. Neyi bekliyor? Şunun gelmesini bekliyor. Bu gelsin beni geçsin ben ondan sonra devam edeceğim. Çünkü muhtemelen bunun tamamlayacağı bir iş var. Bu işini tamamlayacak ondan sonra belki buna devredecek. Ama bu çoktan gelmiş buraya. İşte bu join işlemi bunun tamamlayıp gelmesini bekleyecek.
+
+233
+00:39:01,703 --> 00:39:19,523
+İşte bunlar blok aşamasına yani blok durumuna gelmesi için bazı sebepler. Eğer blok edilmiş bir thread'imiz varsa veya birden fazla thread'imiz varsa notify ederek uyandırarak veya notify ol diyerek bütün thread'leri uyandırabiliriz.
+
+234
+00:39:19,524 --> 00:39:32,343
+IO yapmak istedik, IO işlemini bitirdik, kullanıcıdan sayıya girdik, enter'a bastık, IO tamamlandı, tekrar çalıştırılabilir hale, yani bir kuyruğa giriyoruz, tekrar planlayıcının kuyruğuna gireceğiz.
+
+235
+00:39:32,343 --> 00:39:39,264
+İşte uykunun zamanı bitti, uyuttuk ama uyku tamamlandı veya join işlemi tamamlandı da tekrar şeye gireceğiz.
+
+236
+00:39:39,263 --> 00:39:59,843
+Şimdi şu scheduler'ın yaptığı şey işte time slicing dediğimiz veya yield dediğimiz ne yapıyor? Tamamen zaman paylaşımlı olarak bu tamamen işletim sisteminin Paşa Gönül kriterine göre yapılan bir şeydir. İşletim sistemi hani burada şeylere bakar nedir o? Proseslerin veya threadlerin önceliklerine bakar.
+
+237
+00:40:00,000 --> 00:40:05,859
+O da bir burada paylaşımda kullanılan kriterlerden bir tanesidir diyelim.
+
+238
+00:40:07,139 --> 00:40:10,880
+Peki thread nasıl bekler? Nasıl beklemelidir?
+
+239
+00:40:12,159 --> 00:40:19,340
+Bir thread aktif durumda değilse yapacağı işe devam etmek için, neden aktif durumda değil?
+
+240
+00:40:19,340 --> 00:40:21,819
+Belli bir engel vardır. Bu engeller ne olabilir?
+
+241
+00:40:21,819 --> 00:40:31,799
+İşte belli bir kaynağın kullandırılması, ne bileyim thread tarafından veya belli bir programlayıcı tarafından engellenmesi gibi farklı şeyler olur.
+
+242
+00:40:32,580 --> 00:40:39,400
+Burada thread bu engelin ortadan kalkacağı zamana kadar beklemesi lazım.
+
+243
+00:40:39,400 --> 00:40:47,659
+Tamam mı? Bu engel işte dediğim gibi netten gelen bir veri olur, bir diğer thread'ten gelen veri olur, kullanıcıdan alınacak bir veri olur.
+
+244
+00:40:47,659 --> 00:40:49,319
+Yani her türlü şey
+
+245
+00:40:49,319 --> 00:40:52,759
+Şimdi mesela arkadaşınızla bir yere gideceksiniz
+
+246
+00:40:52,759 --> 00:40:54,479
+Arkadaşınız sizi bekletiyor
+
+247
+00:40:54,479 --> 00:40:55,739
+Bekliyorum hadi gel diyorsun
+
+248
+00:40:55,739 --> 00:40:57,040
+Zaman tüketiyorsun mesela
+
+249
+00:40:57,040 --> 00:40:58,279
+Yani bu da onun gibi
+
+250
+00:40:58,279 --> 00:40:59,979
+Bir şeyin tamamlanması
+
+251
+00:40:59,979 --> 00:41:01,659
+Bir şeyin bir şartının yerine gelmesi
+
+252
+00:41:01,659 --> 00:41:05,360
+Aslında bir burada graflarla işletim sistemlerinde şey gösterilecek
+
+253
+00:41:05,360 --> 00:41:08,839
+Bu prosesler arasındaki veya threadler arasındaki ilişkiyi gösterecek
+
+254
+00:41:08,839 --> 00:41:11,959
+Şimdi bu işlem yapılırken
+
+255
+00:41:11,959 --> 00:41:14,360
+Yani thread boşta dururken
+
+256
+00:41:14,360 --> 00:41:16,419
+Buna busy waiting yapmamak gerekiyor
+
+257
+00:41:16,419 --> 00:41:43,799
+Yani bellekte bomboş instruction sıralatmamak gerekiyor. Mesela on bin defa bir for döngüsü boşu boşuna dönsün. Bunun yerine ne yapacağız? Thread'i bloklanmış sitede koyacağız ve bunu slip convotivit yapacağız. Bu sleeping thread şuradaki şeyin busy waiting'in aksine herhangi bir sistem kaynağı tüketmeyecek.
+
+258
+00:41:43,799 --> 00:42:08,220
+Biz bir waiting yaparsak for döngüsü dönecek durduk yere. O for döngüsünün dönmesi amaçsızca kaynak tüketen bir şey demektir. Uyuyan tet ama bir sıkıntısı var. Uyanmama ihtimali var. Bu durumda ne yapılabilir? Şu uninterrupted exception yakalanabilir. Bu check-it bir exception'dir. Örneklerine geleceğiz arkadaşlar.
+
+259
+00:42:13,800 --> 00:42:35,919
+Şimdi multi-threading dediğimiz şey de burada, threadler içerisinde. Bir taskı, çalışan bir taskı ne yapmak? Ayrı ayrı threadlere bölmek. Şimdi bunun için Java'da yapılacak bazı class tanımlamaları var, implementasyonlar var. Bu işlem runable interfazi üzerinden yapılıyor.
+
+260
+00:42:35,919 --> 00:43:04,360
+Ne diyor? Place the code for the task into the run method of class that implements the runable interface. Yani ben bir klasıma runable interface'ini dahil edeceğim ve bunun run metodunu kendim tanımlayacağım. Bu run metodu işte her bir thread'in yapacağı işi tanımlamaktır. Hani dedik ya biz bir prosesi kendi içinde thread verebileceğiz. Thread 1 şu işi yapsın, thread 2 bu işi yapsın, thread 3 bu işi yapsın. Yani ben thread 1 ile işte yazı yaz diyeceğim.
+
+261
+00:43:04,360 --> 00:43:07,660
+Thread 2 ile check yap diyeceğim.
+
+262
+00:43:07,800 --> 00:43:09,899
+Yani bir yazılan geri spell checking yapacağım.
+
+263
+00:43:10,020 --> 00:43:11,360
+Thread 3 ile başka bir şey yapacağım.
+
+264
+00:43:12,000 --> 00:43:22,679
+Her bir thread için belki bir class oluşturup bu class'ın altında run metodunu şu implement'den, runable interface'inden implement ederek threadlere görevler atacağım.
+
+265
+00:43:22,940 --> 00:43:24,399
+Yani programımı parçalara böleceğim.
+
+266
+00:43:24,399 --> 00:43:30,300
+Sonra bu class için, oluşturduğum class için bir obje oluşturacağım.
+
+267
+00:43:30,299 --> 00:43:35,819
+ve buradan bir thread objesi oluşturacağız.
+
+268
+00:43:35,919 --> 00:43:40,259
+Runable içerisinde bir referans oluşturacağız ve threadleri çalıştıracağız.
+
+269
+00:43:40,819 --> 00:43:43,399
+Bu threadleri çalıştırmak için de threadin start metodu var.
+
+270
+00:43:43,879 --> 00:43:45,119
+Run metodunu çağırmıyoruz.
+
+271
+00:43:45,299 --> 00:43:47,039
+Bu run metodunu çağır demektir.
+
+272
+00:43:47,539 --> 00:43:51,159
+Thread.start dediğinde run metodu otomatik olarak çalışacak.
+
+273
+00:43:51,159 --> 00:43:52,839
+Otomatik olarak çalışması ne demek?
+
+274
+00:43:53,939 --> 00:43:58,759
+Proseslerin alt parçalara rastgele bir şekilde bölünüp çalıştırılmasıdır.
+
+275
+00:43:59,059 --> 00:44:26,939
+Şimdi ben şurada bir örneğim vardı. Neyse buradaki şeye bakalım. Şimdi bu iş için şunu yapmayın diyoruz. Threat class'ından inheritance alarak yani şey yaparak bunu yazmayın diyoruz. Sadece şu implementsli kullanmak daha iyi. Eğer bunu kullanırsak gereksiz kalıtımdan kaynaklı bir ekstra çöp şeyler oluyor.
+
+276
+00:44:26,939 --> 00:44:32,279
+değişkenler vesaireler oluyor. Bunlara gerek yok. Onun için şu implements'ı kullanmak Runable'dan yeterli.
+
+277
+00:44:34,059 --> 00:44:42,979
+Bunun için bir örnek yapalım demiş. People watching a match yani maç izleyen insanların örneği.
+
+278
+00:44:42,979 --> 00:44:54,100
+Şimdi her kişi bağırabilir kendi takımı için. Onları desteklemek adına bir kişi heyecanlandığında bağırabilir.
+
+279
+00:44:54,099 --> 00:45:22,559
+Ayrıca bir ne vardır diyor olasılık da vardır bir kişinin heyecanlanması için sıfır ile bir milisaniye bir saniye arasında heyecanlanıyor ani bir şekilde heyecanlanacak düşünün bir maç esnasında herkes aynı anda heyecanlanmıyor değil mi yani sen yanındakine bakıyorsun veya işte solundakine bakıyorsun yani ne yapıyor bu adam diyorsun yani bir anda heyecanlanıyor çünkü o hepsi kendi başına bir şey kendi başına buyurup gidiyor
+
+280
+00:45:22,559 --> 00:45:30,559
+Burada tabii 10 defa herkes heyecanlandıktan sonra, bağırdıktan sonra birazcık yoruluyor ve dinlenmesi gerekiyor.
+
+281
+00:45:30,640 --> 00:45:32,320
+Hani maç esnasında bunlar da olan şeyler.
+
+282
+00:45:33,039 --> 00:45:35,879
+Böyle bu senaryoyu günlük hayattan hatırlayın.
+
+283
+00:45:36,299 --> 00:45:37,559
+Şimdi bunun koduna bakacağız.
+
+284
+00:45:38,600 --> 00:45:41,979
+Evvela kodu yazmak için arkadaşlar mesela bir class yazdık.
+
+285
+00:45:41,979 --> 00:45:45,920
+Bu class da dedi ki işte izleyici, fan, spor, fan gibi bir şey.
+
+286
+00:45:46,879 --> 00:45:48,259
+Neyi implements ediyoruz?
+
+287
+00:45:48,399 --> 00:45:50,360
+Runable arayüzünü implements ediyor diye.
+
+288
+00:45:50,359 --> 00:46:16,239
+Bunu yazdığımız için şu metodu arkadaşlar tanımlamamız gerekiyor. Neye göre tanımlayacağız? Kendi amacımız neyse ona göre tanımlayacağız. Bununla alakalı bugün ekstra örnekler de yaparız. Şimdi run metodunu yazdık. Run metodunun içerisinde bakın hiçbir parametre almıyor, void döndürüyor ve içerisinde ne istiyorsak onu yapıyoruz. Dikkat ederseniz Java'da da aynıydı. Yani şey bir metot vardı o da void döndürüyordu. İstersek buraya void pointer alıyorduk. Hemen hemen birbirine benziyor.
+
+289
+00:46:16,239 --> 00:46:40,899
+Şimdi demiş ki burada bir değişken steps değişkeni var bir de delay değişkeni var iki tane değişken kullanmış sonra bunun constructor metodunda işte hangi takımda işte nasıl bağıracak işte bağıracak ne diyecek o sözü buraya geliyor ve diyor ki burada try niye try var çünkü try'di slip etmemiz söz konusu slip edince işte bir exception olması söz konusu onun için try yaptık
+
+290
+00:46:40,899 --> 00:46:52,659
+Dedi ki en fazla 10 defa olacak şekilde işte falanca kişi yalanca takım için bir şeyler bağıracak işte dedi ki benim takımım şu işte Galatasaray şöyle Fenerbahçe böyle gibi
+
+291
+00:46:52,659 --> 00:47:03,939
+Bağırdıktan sonra işte bir milisaniyelik bir random 0 ile 1 milisaniye arasında 1 saniye arasında bekletiliyor uyuyor
+
+292
+00:47:03,939 --> 00:47:08,679
+Ondan sonra tekrar süre dolunca tekrar uyanıyor sürenin dolmasıyla uyanan bir şey
+
+293
+00:47:08,679 --> 00:47:36,099
+Bu böyle bakın arkadaşlar sınıf bu şekilde. Ben bu sınıftan şimdi nesneler üreteceğim. Test sınıfı içerisinde bir nesne üreteceğim. Onun için öncelikle bir thread referansı üretiyorum. Ve bu thread referansının içine yeni thread dedim. Bakın bu thread sınıfından olan bir şey. Yani soççarı falan değil. Geldik şurada thread sınıfının içerisinde new dedik. Bir sınıf nesnesi işte Galatasaray rules diye bir şey gönderdik.
+
+294
+00:47:36,099 --> 00:47:58,019
+Daha sonra diyoruz ki bu thread'i start yap diyoruz. Bu thread'i start yap deyince ne yapacak? İzin verildiğinde şu metot çalışmaya başlayacak. Mesela bu metot çalışır çalışır çalışır şuraya kadar gelir. İyi eşittir 3'e kadar çalışır. Daha sonra tamam yeter artık der. Bunun kaldığı yer burasıdır. Sonra tekrar çalıştığında buradan devam eder gider. Tamam mı?
+
+295
+00:47:58,483 --> 00:48:14,824
+Bunlar mesela bir adım çalışır, uykuya geçebilir. Yani uyku esnasında da şu thread slibe gelmeden sonlandırılabilir ama bu satır bitmiştir. Ondan sonra hemen uykuya geçer. O sırada uykuya geçince diğer thread'e sıra verilir. Bu tamamen farklı farklı senaryolar.
+
+296
+00:48:14,824 --> 00:48:22,883
+Şimdi bunu göstermek adına, bundan sonra bir sıra, neyse bunu da anlatayım da ondan sonra oradan gidelim. Bu bu şekilde devam ediyor.
+
+297
+00:48:22,883 --> 00:48:50,664
+Sonra diyor ki bir thread daha oluşturdum diyor. Yeni bir thread. Bu thread'i de yani yine şuradaki bakın bu thread kendi çalışıyor. Yani ben daha sonra bunu öldürene kadar bu çalışacak. Sonra bir thread mesnesi daha oluşturdu. İşte Galastro şampiyon dedi. Tekrar şey yapıyor. Onu da start yapıyor. Daha sonra diğerini de start yapıyor. Bir tane de uçuyor. Sonra diğerini de start yapıyor. Ve burada dört thread başlı başına çalışıyorlar.
+
+298
+00:48:50,664 --> 00:49:19,603
+Şimdi 4 thread'in başlı başına çalışması bu şekilde. Bitmesi ne zaman olacak? Şimdi bunlar start metodu çalıştırınca şuraya gelecekler. Bu metot ne zaman biterse thread de o zaman işini bitirmiş olacak. Bu metot ne zaman biter? Bu sayıyı üretti. Tamam. Daha sonra buraya geldi. For döngüsünden 10 defa dönecek. İşte her bir döngüde şu kadar uyuyacak. Uyuduktan sonra ne yapacak? İşte şu kısıma gelecek. Daha sonra buraya gelecek ve şurayı bitirdiğinde proses ne olacak? Tamamlanmış olacak.
+
+299
+00:49:19,603 --> 00:49:22,003
+Genel yapısı bu şekilde arkadaşlar
+
+300
+00:49:22,003 --> 00:49:29,343
+Şimdi thread pulllarına geçmeden önce bunun farklı örneklerine bakalım
+
+301
+00:49:33,523 --> 00:49:37,383
+Benim şurada threadle alakalı bir şeyim vardı.
+
+302
+00:49:39,944 --> 00:49:42,864
+Şimdi çalıştıracağım da ondan önce bir de ona bakalım.
+
+303
+00:49:43,984 --> 00:49:47,203
+Others, yap dersler...
+
+304
+00:50:05,268 --> 00:50:06,707
+Şu örnek neymiş?
+
+305
+00:50:10,087 --> 00:50:13,067
+Şeyle alakalı size örnek çözdüler değil mi arkadaşlar?
+
+306
+00:50:15,127 --> 00:50:20,007
+Treadle alakalı. Belki onlar bizden önce laboratuvarda bir şeyler yapmışlar diye hatırlıyorum ama.
+
+307
+00:50:21,448 --> 00:50:22,647
+Keşaflı uygulama yaptık hocam.
+
+308
+00:50:24,627 --> 00:50:24,927
+Tamam.
+
+309
+00:50:26,448 --> 00:50:29,747
+Ders yapmadan uygulama yapmak da birazcık sıkıntı ama neyse.
+
+310
+00:50:35,923 --> 00:50:59,303
+şöyle yapalım. Neyse ona da birazdan bakalım. Şimdi evvela şu birinci örneği bir çalıştıralım arkadaşlar. Bakın burada hangi thread'in önce bitireceği belli değil. Yani şurada görünüyor ki belki şu önce bitirecek gibi görünüyor olabilir ama bu tamamen thread'lerin çalışma sırasıyla alakalı.
+
+311
+00:50:59,303 --> 00:51:16,423
+Normalde FB is the best en son gelecekti. Yani şuna göre bakın ne oldu güzel bir sonuç. GS is the jump. Mikrofonu bir kapatabilirsek şey giriyor. Bakın sonda geldi. Tekrar çalıştırıyorum.
+
+312
+00:51:21,523 --> 00:51:30,643
+FB is the best. Normalde biz bunu burada çalıştırdık ama daha ona sıra şu çalıştırmadan, bundan önce çalışana sıra gelmeden önce bu çalıştı.
+
+313
+00:51:31,404 --> 00:51:40,903
+Ve bakın YS is the champion bu şey devam etti. Böyle threadlerin çalışmasını sağlayabiliriz.
+
+314
+00:51:40,903 --> 00:51:48,043
+Yaptığımız şey bir sınıf içerisinde runable'ı eklemek, implement etmek ve bu runable'ı eklediğim için run metodunu tanımlamak.
+
+315
+00:51:48,043 --> 00:52:15,643
+Tamam mı? Genel olarak bu böyle. Şimdi watch 2'ye bakalım. Burada ne varmış? Şimdi eğer ben start yapmazsam doğrudan thread.run çalıştırırsam ne olur? Şimdi thread.run çalıştırırsam önce bu işlem tamamlanacak. Sonra şu işlem tamamlanacak. Sonra buna gelecek. Normal bir metot çağrısı yapmış oluyor. Halbuki bu sequential bir çalışma değil. Tamam mı? Stread'i run etmeyiz. Start ederiz burada.
+
+316
+00:52:30,547 --> 00:52:53,087
+Peki, üçüncü örneğe bakalım. Burada ne yapıyoruz? Burada bakın dikkat edin şurada yaptığımız şey thread.run. Yani şu thread sınıfı üzerindeki çalıştırılan run metodu üzerinden thread'in üzerinden run metodu çağrılıyor. Burada da sınıfın üzerinden run metodu çağrılıyor.
+
+317
+00:52:53,087 --> 00:53:21,047
+Bu da yine aynı şekilde ne yapıyor? Gidiyor içerisindeki o run metodunu gereği neyse adım adım çalıştırıyor. Herhangi bir karmaşıklık yok. Halbuki olması gereken match 1'deki ilk örneğimizdeki gibi. Bakın proses hala devam ediyor. Prosesin bittiğini şuradaki işaretçiden göreceğiz. Hani yazdırma biraz burada geç sürebilir. Evet şu an tamamlandı.
+
+318
+00:53:21,047 --> 00:53:43,308
+4'e bakalım. 4'e baktığımızda da bakın her biri için ayrı thread referansları oluşturmuş. Her bir referans kendi içerisinde başlatıyor. Bu da bir multi-thread çalışmadır arkadaşlar. Yani bir referansta da bu işi yapabiliriz ama birden fazla referansta da çalıştırabiliyoruz. Hiçbir farkı yok çalıştırmak açısından.
+
+319
+00:53:43,308 --> 00:53:51,748
+gelen sonuçlar kesinlikle ve kesinlikle birbirinden farklı olacak. Çünkü o anda işletmeye hangi şey alınırsa ona göre çalışacak.
+
+320
+00:53:51,748 --> 00:53:57,948
+Şimdi şuradan bir package oluşturayım.
+
+321
+00:54:03,411 --> 00:54:22,512
+Evet diyelim. Belki bu örnekleri ben hazırlamıştım. Geçen senelerde anlatıyordum. Belki laboratuvarda açıklanır ama ilginç bir şey varsa onları da söylemiş olalım. Bu neymiş? Şunlardan birine bakalım. Uygulama 3. Şunu uygulama 3 yapayım.
+
+322
+00:54:25,512 --> 00:54:29,451
+Refactor. Uygulama 3.
+
+323
+00:54:41,940 --> 00:54:43,519
+Şimdi şu örneğe baktığımızda
+
+324
+00:54:47,443 --> 00:55:01,083
+Bakın test sınıfı kendi içinde. Malta diye bir classımız var. Bu sefer thread şeyle yapılıyor ama bu gerekli değil. Yani bunun yerine implement runable yapmak daha makul.
+
+325
+00:55:03,188 --> 00:55:28,028
+Yine aynısıdır. Tabi burada bundan bir nesne üretemeyiz. Onun için doğrudan şey yapmayacak, maltı birden nesne üretilmez diyecek. Onun için geri alayım. Aynı şey olduğunu bilin. Sadece birazcık bir farkı var. Diyor ki thread run edilmiş. Şimdi burada tek bir tane thread oluşturulmuş gibi görünüyor. Aslında burada iki tane thread var.
+
+326
+00:55:28,028 --> 00:55:54,028
+Birincisi main'in kendi çalışması için gerekli thread. Bir de ayrıca yeni bir thread oluşturuyoruz ve bu tek başına çalıştı. Yani bu örnekte hiçbir şey yok. Şimdi gelelim şuna. Runable ile bunu nasıl yapacağız demiş. Şimdi öncelikle bu sınıftan bir nesne üretiyoruz. Bu ürettiğimiz nesneyi bu thread'e veriyoruz. Yani biraz önceki match örneğinden, social örneğinden aynı şey. Çalışması yine biraz öncekinin şu multi1'in aynısı.
+
+327
+00:55:54,028 --> 00:56:02,167
+Burada da aslında tek bir çalışma var. Şimdi gelelim iki tane işçimiz olsun ve her bir işçi kim olduğunu söylesin.
+
+328
+00:56:03,107 --> 00:56:10,548
+Şimdi biz burada maltı 3'ü işçi 1 ve işçi 2 diye iki tane nesne oluşturduk. Daha sonra bunları çalıştırıyoruz.
+
+329
+00:56:10,768 --> 00:56:22,188
+Çalıştırdığımız zaman her biri kendi içinden hangi name olduğunu, get name demek hangi nesne ismiyle üretilmiş onu yazıyor ve kaçıncı durumda olduklarını gösteriyor.
+
+330
+00:56:22,188 --> 00:56:34,427
+Bakın burada eğer bunu single çalıştırmasaydık yani threadli çalıştırmasaydık işçi 1.1, işçi 1.0, işçi 1.1, işçi 1.4'e kadar sonra işçi 2 yapacaktı.
+
+331
+00:56:34,427 --> 00:56:40,728
+Yani şöyle bir şey görecektik aslında. Önce bunu görelim.
+
+332
+00:56:47,956 --> 00:57:00,695
+Böyle düzgün bir sonuç görecektik. Fakat gerçek hayatta önce birincisi çalışacak sonra diğeri çalışacak diye bir şey yok. Böyle olduğu için yapacağımız şey bunu threadle start etmek.
+
+333
+00:57:02,695 --> 00:57:03,735
+Run diyelim.
+
+334
+00:57:08,820 --> 00:57:34,199
+Bakın önce thread 1 bitti, sonra thread 0 bitti ve 1, 2, 3, 4, 0, 1, 2, 3, 4 ve burada ikisi birbiriyle çok böyle şey önce 0 sonra 1 hani birbirine çok karışmadı. Bakın şimdi birazcık karıştığını görüyoruz. Bu güzel bir sonuç. Önce 1'e gidiyor daha sonra 0'a geçiyor. Şurada birazcık bir şey yaparsak
+
+335
+00:57:34,199 --> 00:57:39,759
+red.sleep mesela 500 dersek
+
+336
+00:57:39,759 --> 00:57:43,000
+tabi bunu 500 dediğimiz için burada diyor ki bunu
+
+337
+00:57:43,000 --> 00:57:46,540
+şey yapmanız lazım ya
+
+338
+00:57:46,540 --> 00:57:49,779
+try-catch içerisine alacaksın ya da
+
+339
+00:57:49,779 --> 00:57:54,379
+bunu şey yapacaksın işte throws diyeceksin. Şimdi bunu try-catch içine alalım.
+
+340
+00:57:54,379 --> 00:57:57,979
+Bu ifadeyi ve
+
+341
+00:57:57,979 --> 00:58:01,540
+uninterrupted exception olacağını söylesin. Run diyorum.
+
+342
+00:58:01,539 --> 00:58:12,259
+Şimdi birazcık bekleyeceği için çok daha farklı sonuçlar göreceğiz. İşte biri ondan biri ondan daha böyle diğerine sıra gelmesi daha mümkün. Biraz öncekinden mesela şunu 100 yapalım.
+
+343
+00:58:18,099 --> 00:58:34,719
+Çünkü işletim sisteminin asıl amacı nedir? Kaynakların etkin kullanımı. Kaynak dediğimiz şey işlemci ve bellek. İşlemciyi burada işletim sistemi ne yapıyor? Boş bıraktırmıyor. Öyle bir yazılım ki işlemciyi boş bıraktırırsa çok işe yaramaz.
+
+344
+00:58:34,719 --> 00:58:57,719
+Şimdi threadler çalışırken birbirini bekleyebilir dedik. Join işlemi burada devreye girecek. Join ne demek arkadaşlar? Bir thread çalışmasını tamamladıktan sonra eğer diğer threadlerin çalışmasını beklemesi gerekiyorsa ondan sonra işlem devam edecek.
+
+345
+00:58:57,719 --> 00:59:26,040
+Şimdi şunu çalıştıralım. Sonucu görelim. Bakın thread 0 çalıştı. Thread 1, t1. Tabi burada neye göre bakıyor? Önce şeye bakacak. Şurada 0. thread diye yani o şeye göre şuradaki 0.1.2.3 diye kendisi id veriyor. Önce 0'a göre bu işlem çalışacak, bu tamamlanacak bunu join ettiğimiz için. Ondan sonra thread 2 ve thread 3 start olacak.
+
+346
+00:59:26,039 --> 00:59:46,499
+Yani şu işlem main'de kendisi bir thread'tir. T1 tamamlanmadan bundan sonraki satırları yaptırmıyor. T1 diyor ki işini tamamlayacak. Ondan sonra şuradaki satırlar yani main buna izin vermiyor. Tamam mı? Şimdi gelelim join ile alakalı şu kısma. Niye burası açıldı?
+
+347
+00:59:57,076 --> 00:59:57,775
+On, On, On.
+
+348
+01:00:03,795 --> 01:00:05,715
+şu join'i de bitireceğim, ara vereceğim.
+
+349
+01:00:06,875 --> 01:00:10,895
+Şimdi burada ne yapıyor? Herhangi bir şekilde bakın metotlar oluşturulmuş.
+
+350
+01:00:12,075 --> 01:00:18,655
+T1 start ediliyor. T1 join edilecek diyor ve belli bir bekleme miktarı verilmiş bakın buna.
+
+351
+01:00:20,396 --> 01:00:25,735
+Böyle bir şey var. Ondan sonra 0, 1, 2, 3, 4 yapılacak.
+
+352
+01:00:25,735 --> 01:00:45,095
+Ondan sonra T1'in çalışması için tamamlanması için şu kadar bir süre ve bu kadar süre dolunca diğerlerine sıra geçebiliyor burada. Yani diğerleri de çalışabilir hale geliyor bakın şurada olduğu gibi. Bu da çok mühim bir şeydi ama join'i normalde bilmek iyi olur.
+
+353
+01:00:45,095 --> 01:00:56,555
+Burada da T1'in ne yapmışız? Set name, get name yani test şeylerine özellikler atamışız.
+
+354
+01:00:58,555 --> 01:00:59,636
+Run diyelim.
+
+355
+01:01:03,435 --> 01:01:09,096
+Threadlerin isimlerinin değiştirilmesi ile alakalı basit örneği. Aslında bu join örneği değil de niye böyle yaptıysak.
+
+356
+01:01:09,095 --> 01:01:13,395
+Genel olarak şeyler böyle arkadaşlar
+
+357
+01:01:13,395 --> 01:01:16,595
+Şimdi aradan sonra 10 dakika ara verelim
+
+358
+01:01:16,595 --> 01:01:20,075
+Thread havuzu ile alakalı bir kısım var
+
+359
+01:01:20,075 --> 01:01:23,355
+O 3-5 sayfa aslında bir şeydi
+
+360
+01:01:23,355 --> 01:01:25,655
+Thread havuzu bir de thread senkronizasyonu var
+
+361
+01:01:25,655 --> 01:01:27,735
+Olmadı bunu bir sona bırakırız
+
+362
+01:01:27,735 --> 01:01:29,275
+Şurada J-Unit'e bir bakalım
+
+363
+01:01:29,275 --> 01:01:33,175
+Vaktimiz kalırsa thread havuzu ile alakalı kısma geliriz
+
+364
+01:01:33,175 --> 01:01:35,235
+Saat 16.10'da görüşmek üzere
+
+365
+01:09:43,731 --> 01:09:51,731
+Size mail geldi değil mi arkadaşlar sınav olarak? Gerçi şeyde de duyurduk, nedir o? AVSİS'te de duyurduk.
+
+366
+01:09:54,739 --> 01:09:58,739
+Herhalde bir sıkıntı yoktur sınavın olacağına dair.
+
+367
+01:10:02,239 --> 01:10:14,019
+Bir de anket gönderdim. Her zaman yaptığımız değerlendirmek için inşallah gelecek ders bu ders için bir değerlendirme üzerinde konuşuruz.
+
+368
+01:10:43,028 --> 01:11:04,147
+Şey yapmayacağım, bilginiz olsun. Direkt sınav başlayacak. Herhangi bir toplantı falan yapmayacağım. Soruları da girdik. Yanlış olduğunu düşündüğünüz bir şey olursa sınav sonrası veya sınav sırası mail atabilirsiniz veya telegramdan yazarsanız daha hızlı müdahale ederim.
+
+369
+01:11:04,147 --> 01:11:11,207
+Yani sınav esnasında zaten soruların düzeltilmesiyle alakalı bir şey olamaz da
+
+370
+01:11:11,207 --> 01:11:14,667
+Ha bu arada sorular İngilizce arkadaşlar dersin dili gereği
+
+371
+01:11:21,011 --> 01:11:22,271
+4 seçenek var.
+
+372
+01:11:36,467 --> 01:12:04,067
+Evet, biz devam edelim. Bu join işi de böyle. Bu threadlere isim atama yani basit bir şey. Ona çok fazla girmeye gerek yok. Şimdi threadlerin öncelikleri değiştirilebiliyor. Mesela minimum priority verirseniz bir threade ona sıra daha sonra gelir. Maksimum priority verirseniz daha fazla gelir. Bu proseslerde de yapılıyor. Threadlerde de yapılıyor.
+
+373
+01:12:04,067 --> 01:12:32,947
+Yani şunun set priority dediğimizde real time demek gerçek zamanlı yani çok interaktif çalışacak bir şey demektir. Çok yüksek verebilirsiniz. Bunlar yapılabiliyor. Threadlerde de bu mümkün. Örneğine bakalım. Bu mesela iki tane thread çalışacak. Birisi minimum priority, birisi maximum priority. Minimum priority olanı önce çalıştırıyorum. Maximum priority olanı sonra çalıştırıyorum.
+
+374
+01:12:34,067 --> 01:13:03,967
+Run diyelim. Bakın ne yaptı? Threat 1 önce çalıştı. Bunun dedi ki priority'si 10'dur. Yani en yüksektir. Şu sonra çalıştı. Bunu tekrar çalıştıralım. Öyle bir zaman gelir ki tabii önce düşük priority olan girebilir sisteme problem değil. Ama beklediğimiz şey bunlar peş peşe çalışacağı için önce yüksek olanın daha çok çalışması.
+
+375
+01:13:04,067 --> 01:13:06,828
+Yani daha erken bitmesi diyebiliriz.
+
+376
+01:13:08,648 --> 01:13:11,287
+Evet join'i söyledik, priority'yi söyledik.
+
+377
+01:13:12,847 --> 01:13:17,267
+Şimdi multitasking işlemler için bize thread lazım aslında.
+
+378
+01:13:18,347 --> 01:13:21,048
+Biraz ondan bahsedelim. Ondan sonra şeye geçeceğiz.
+
+379
+01:13:22,508 --> 01:13:24,787
+Bu multitasking işlemler yaparken
+
+380
+01:13:30,739 --> 01:13:48,779
+birden fazla thread oluşturmak genelde söz konusu. Şimdi bunu yaparken de arkadaşlar 3 tane thread, 5 tane thread diye böyle alt alta kodlamak ve her birini ayrı ayrı çalıştırmak biraz iyi bir şey değil. Onun yerine thread havuzundan bir işlem yapacağız.
+
+381
+01:13:48,779 --> 01:14:01,639
+şu neymiş? Şunlara bir bakalım. Test multi-slip metot. Srib'i gösterdik. Şu multi-tasking diyelim bir buna bakalım.
+
+382
+01:14:05,652 --> 01:14:07,211
+Bunun da ne varmış?
+
+383
+01:14:11,220 --> 01:14:27,339
+Bu da anonim bir şekilde. Mesela thread sınıfına nasıl şey çağıracağız? Ne yapıyor? Direkt thread'i bu şekilde buradan üretilen bir nesneyle çalıştırıp üretiyoruz. Bunlar farklı bir notasyonlar.
+
+384
+01:14:30,459 --> 01:14:40,739
+Bakın mesela buradaki şey güzel. Bir simple thread'imiz var. Bir de simple 2 var. İkisi de buradan extent alıyor.
+
+385
+01:14:40,739 --> 01:15:02,679
+Bunu runable ile de yapabilirdik. Bakın bunun yapacağı iş bir şey mesela bu yazım kontrolü yapsın. Bu da yazı yazma işini yapsın. Siz bundan nesne ürettiğinizde ikisini de çalıştırdığınızda bir tane main, bir tane thread 2, bir tane thread 1 yani şu simple 2 ve simple toplamda 3 tane thread çalışır arkadaşlar. Run diyelim buna.
+
+386
+01:15:02,679 --> 01:15:25,720
+İşte önce task 1 daha sonra task 2 dedi. Run diyelim tekrar. Shift F6 ile belki hızlı. Bakın task 1, task 2, 2. Yani hiçbir zaman belki denk gelir. Bakın task 2 önce çalıştı, task 1 sonra çalıştı. Bunlar tamamen rastgele gibi öyle söyleyeyim.
+
+387
+01:15:25,720 --> 01:15:50,720
+Şimdi bir diğer yöntem de sınıfın içerisinde anonim class'lar, inner class'ları kullanarak thread oluşturmak. Bunu geçenlerde inner class konusunda konuşmuştuk. Şimdi bir thread nesnesi oluşturulup şurada şey açınca bir blok açıyoruz. Bakın anonim bir blok. Burada istediğimiz run metodunu yazıyoruz. Şu thread şeyinle alakalı.
+
+388
+01:15:50,720 --> 01:15:56,819
+Thread oluşturulduktan sonra burada task1 çalışacak diyor. Thread2 oluşturulduktan sonra task2 çalışacak diyor.
+
+389
+01:15:57,440 --> 01:16:05,279
+Tabi bunlar çok güzel şeyler değil. Yani programı çok şişiriyor. Onun yerine şöyle bir şey yapmak biraz daha makuldür.
+
+390
+01:16:06,179 --> 01:16:15,279
+Çalıştıralım bunu da. Bakın 1, 2 tekrar çalıştıralım. Önce 2 sonra 1.
+
+391
+01:16:18,899 --> 01:16:20,899
+bu şekilde sonucu görebiliyoruz.
+
+392
+01:16:22,259 --> 01:16:23,380
+Herhalde sorun yoktur.
+
+393
+01:16:27,220 --> 01:16:31,220
+Şimdi Threadpool, Threadgroup
+
+394
+01:16:31,220 --> 01:16:36,539
+Bunlara bakacağız.
+
+395
+01:16:41,427 --> 01:17:04,647
+GC metod, senkronizasyon var, mutual exclusion var. Bunlara hafeya olmadı bakarız. Threadler arası haberleşme falan falan falan. Deadlock. Neyse burada duralım. Slide'dan da şey kısmına geleceğim arkadaşlar daha sonra. Şu multi-threading'den önce neredeydik?
+
+396
+01:17:10,355 --> 01:17:17,975
+Evet şu 215. slide'a kadar kısmı bitirdik. 216'dan devam edeceğiz. Ama önce şu JUnit test'e bakalım.
+
+397
+01:17:20,755 --> 01:17:34,375
+Projenizde kullanırsan diye. Şimdi bir büyük proje düşündüm arkadaşlar. Burada bir sürü class tasarladınız ve bunların işte metotlarını yazdınız test etmek için. Bu metotlar da genellikle main metot üzerinden test edildi.
+
+398
+01:17:34,375 --> 01:17:38,255
+Size de biz öyle laboratuvarda da şey yaptık.
+
+399
+01:17:39,055 --> 01:17:53,995
+Şimdi bir kod biriminin, bir sınıfın test metodunu daha otomatik hale getirmek, daha formal bir şekilde getirmek için unit test kullanıyor.
+
+400
+01:17:54,095 --> 01:17:55,536
+Literatürde buna birim test ediyoruz.
+
+401
+01:17:56,235 --> 01:17:58,615
+Yazılım mühendisliğinde bu konunun daha detaylarını göreceksiniz.
+
+402
+01:17:58,615 --> 01:18:27,495
+Şimdi burada neyi ifkes yani bir sınıfın test işlemi yapıyoruz. Sonuçlar başarılı oldu mu olmadı mı? Yani bir metot çağırıyoruz. İşte kitap sınıfından kitapları listele. Kitaplar belli bir sırayla listeleniyor. Ondan sonra başarılı mı değil mi? Onların tek tek kontrol etmesi çok uzun bir iş. Bunu daha sistematik hale getirmek amacımız.
+
+403
+01:18:28,615 --> 01:18:53,915
+Burada işte ayrı zamanda ne var bizim bir design, execute ve analiz işlemlerimiz var test sonuçlarını. Bu işlem acaba bir tool ile yapılabilirse bize çok fazla yardımcı oluyor. Yani mevzu bu burada. Piyasada da bu konuda çok hani bir talep var. İnsanlar yani test yapmayı bilmiyorlar. Unit test falan yapmayı bilmiyorlar diye. Onun için bu derse bunu ekledik.
+
+404
+01:18:53,915 --> 01:19:15,255
+J-Unit testi Java'da bu işi yapmamız için kullanılan bir birim. Bu bir tool aslında yani doğrudan bir şey de değil de. Normalde arkadaşlar J-Unit framework'ü vardır. Bunun içerisinde bir test case'i oluşturuluyor. Bu test case'in içerisinde de bir assert klası var.
+
+405
+01:19:15,255 --> 01:19:29,975
+Asert'in içerisinde eşittir, eşit değildir, doğru, yanlış, null, not null gibi bir şeyler kontrolü yapan, yani doğru veya yanlış sonuçlarını üreten çoğu bu ilini döndürüyor veya bir nesne döndürüyor.
+
+406
+01:19:29,975 --> 01:19:41,855
+Bir class, bir yapı var, class galiba bu. Bunun altındaki metotları test ederek biz bir sınıftan veya bir metottan beklediğimiz sonucu aldık mı ona bakacağız.
+
+407
+01:19:41,855 --> 01:20:00,796
+Şimdi bunun 3x versiyonunu hoca yazmış. Bu test kezlerini ayrı sınıflarda oluşturuyoruz Unistest için. Yani şuradaki metotlarımızın her birindeki şeyleri, işte test xxx diriglerimiz şunları, şunları, her birinin test kezlerini ayrı sınıfta oluşturuyoruz 3x'de.
+
+408
+01:20:00,796 --> 01:20:11,796
+ve bunları istersek daha sonra birleştirebiliyoruz ve bunları birleştirmek için test on.suit metodu statik olarak tanımlamış bunu kullanabiliyorduk.
+
+409
+01:20:12,796 --> 01:20:26,096
+The test case.setup method runs in time before test edilme. Yani şu test edilmeden önce, execute edilmeden önce test case.setup metodu ne yapılıyor, çalıştırılıyordu.
+
+410
+01:20:26,095 --> 01:20:38,895
+4x'de bu biraz daha iyileştirilmiş hali versiyon 3'e göre. Bunlar test class'ları test case class'ından şey yapılmıyor, kalıtım alınmadan yapılıyor.
+
+411
+01:20:39,595 --> 01:20:45,575
+Test case metotlarının isimlerinde başlangıçta bir test diye bir şey yazmak zorunda değiliz.
+
+412
+01:20:45,575 --> 01:20:49,875
+Yani test case'in altında şunlara test test test diye yazmamıza gerek yok.
+
+413
+01:20:50,515 --> 01:20:54,395
+Çünkü bunun test edilmesini istiyorsak ayrıca sıkıntılar yaşıyorduk.
+
+414
+01:20:54,395 --> 01:20:57,455
+Ona da gerek yok demiş
+
+415
+01:20:57,455 --> 01:21:03,295
+Sadece bunun öncesinde test annotationı bulunursa
+
+416
+01:21:03,295 --> 01:21:06,695
+Yani öncesinde bu test ile alakalı bir şey yazarsak
+
+417
+01:21:06,695 --> 01:21:09,855
+Ne olacak? Bunun test edileceğini bize söyleyecek
+
+418
+01:21:10,739 --> 01:21:37,119
+Şimdi bununla beraber exception desteği de var. Yani bir exception oluşursa exception'ı da bize bildirebilen bir destek de var. 4x içerisinde denmiş. Neyse. Şimdi şuraya baktığımızda şu örnek üzerinden bu test nasıl yapılacak? Kısaca bunu anlatalım istiyoruz. Mesela bir MUBI var. MUBI işte kiralanabiliyor ve bunu kim kiralıyor? İşte müşteri bir kiralama işlemi gerçekleştiriyor.
+
+419
+01:21:37,119 --> 01:21:55,460
+Bir müşteri birden fazla muvi kiralayabilir. Burada böyle bir association tarzında bir ilişkiden bahsediliyor. Tabi şurada bir şey var aggregation gibi ama bu association. İşte bu kişinin yaptığı işlemlerin bu classların test edilmesini istiyoruz.
+
+420
+01:21:55,459 --> 01:22:00,959
+İşte kullanıcı bir statement yani şunu çağırdığında ne olacak?
+
+421
+01:22:00,959 --> 01:22:06,859
+Bütün kiralamalar için işte bir movie'nin title bilgisi elde edilecek.
+
+422
+01:22:06,959 --> 01:22:09,799
+Onu gidecek ne yapacak? Get title'ı çağıracak.
+
+423
+01:22:10,399 --> 01:22:14,819
+Sonra buradan dönen değer get charge ne kadar fiyat olduğu daha sonra bunu döndürecek.
+
+424
+01:22:15,279 --> 01:22:18,659
+Ve böyle bir işlem silsilesi var.
+
+425
+01:22:19,479 --> 01:22:20,499
+Acaba bunlar doğru mu?
+
+426
+01:22:22,239 --> 01:22:25,179
+Şimdi bunun için normal bir class yazıyoruz.
+
+427
+01:22:25,460 --> 01:22:28,400
+TestCustomer, extends, testcase diye.
+
+428
+01:22:28,979 --> 01:22:31,860
+İşte Customer olarak bir referansımız var.
+
+429
+01:22:31,940 --> 01:22:33,939
+Movie olarak böyle referanslarımız var.
+
+430
+01:22:34,420 --> 01:22:35,239
+Bu bilgileri yazdık.
+
+431
+01:22:36,420 --> 01:22:39,680
+Diyoruz ki GetName metodunu test et.
+
+432
+01:22:40,460 --> 01:22:43,900
+Şimdi GetName metodunu test ettiğimizde bir sonuç dönecek.
+
+433
+01:22:43,900 --> 01:22:48,900
+Şimdi şu Yunus yani Customer'daki GetName'e bakarsak,
+
+434
+01:22:50,600 --> 01:22:53,280
+tabi burada doğrudan yazılmamıştı, gizli bir şey olarak var.
+
+435
+01:22:53,500 --> 01:22:54,680
+Hepsi bütün metotlar yazılmamıştı.
+
+436
+01:22:54,679 --> 01:23:13,579
+get name'e bakarsak bir string döndürüyor. O zaman diyoruz ki bunu çalıştır ve bu yunus.get name'den dönen şu şey assert equals şu test keyed içerisindeki şunla şuradan dönen sonucu karşılaştırıyor.
+
+437
+01:23:13,579 --> 01:23:22,879
+Bu karşılaştırma sonrasında true dönebilir, false dönebilir. Buradan ne yapıyoruz? İşte bir karşılaştırmanın doğru bir işlem yaptık mı yapmadık mı?
+
+438
+01:23:22,879 --> 01:23:31,519
+Sonra Yunus.statement'ı çağırmış. Yunus.statement bir şey döndürüyor. Bunun beklenen sonucu neymiş?
+
+439
+01:23:32,260 --> 01:23:37,579
+Rental, record for Yunus Emre Selçuk falan filan işte bu string eklenecek. Daha sonra bu eklenecek.
+
+440
+01:23:37,579 --> 01:23:48,180
+Yani siz oluşturduğunuz test case'lerin beklenen sonuçlarını buraya yazıyorsunuz. Bir de elde edilen sonuçlar var. Bunların eşitliğine veya işte büyüklüğüne, küçüklüğüne diğer durumlarına bakıyoruz.
+
+441
+01:23:48,180 --> 01:24:17,200
+Bunlar da bakın yine diğer metotlar işte test statement with movies long run yani uzun vadeli kiralamalarla alakalı bir şeyler galiba bu. Şu nesneler gönderiliyor. Bu nesneler gönderdikten sonra şu metot çağrılıyor bir defa ve buradan dönecek olan sonuç burada yazılıyor. Diyor ki bu metottan böyle bir şey dönmesini bekleriz. Bu ne yapacak? Bunları kontrol edecek.
+
+442
+01:24:17,199 --> 01:24:45,599
+Aynısını diğer şeyler için aslında algoritmanın arkadaki o metodun nasıl çalışacağını önceden şurada bir şekilde nasıl bir sonuç döndüreceğini yazmamız gerekiyor. Daha sonra bunun eşitliğine falan bakıyoruz. Bu bittikten sonra burada da mesela bir assert e-coalsu var. Test suite dediğimiz bir metot yazmış. Bu neymiş? Bütün testleri otomatik olarak yap.
+
+443
+01:24:45,600 --> 01:25:02,379
+TestSuite içerisinde suite.addTestSuite, TestCustomer class'ını ve TestMovie class'ını veriyoruz. Tamam mı? Bütün her şeyi test edeceğimiz durumda. Bakın statik bir metot. Ve buradan bir test türünde bir şey dönüyor.
+
+444
+01:25:04,756 --> 01:25:23,856
+Evet, test all içerisinde. Ben bu test all'a sağ tıkladığımda run as junit test dediğimde bu şeyin çalışmasında herhangi bir hata olmuş mu veya tam tam da çalışmış mı, %100 başarılı mı bunun sonucunu bana veriyor. Eğer %100 başarılıysa tamam diyoruz. Buradaki bütün metotlar doğru bir şekilde çalışıyor.
+
+445
+01:25:23,856 --> 01:25:36,296
+Bu işin şeyi bu. Burada NetMeans'te nasıl bir şey var bilmiyorum. Daha önce NetMeans'te bakayım var mıydı burada böyle bir şey.
+
+446
+01:25:39,891 --> 01:25:41,171
+ROM içerisinde.
+
+447
+01:25:48,020 --> 01:26:15,419
+Daha önce kullanan var mı? TestProject diye varmış bakın mesela. Eğer kodu testProject olarak çalıştırırsak, tabi burada test class'ı yazmadığımız için bir hata alacağız da çünkü herhangi bir test execute edilmedi diyor. Bu test suite metoduna benzer bir şey yazacağız ve oradaki class'lardan dönecek sonuçları ne yapacağız? Gerçekleyeceğiz. Şimdi bakayım şurada kodlar içerisinde bir şey var mı?
+
+448
+01:26:28,595 --> 01:26:29,195
+Kudeli.
+
+449
+01:26:34,515 --> 01:26:35,695
+Yok, bunlar da değil.
+
+450
+01:26:37,115 --> 01:26:40,675
+Neyse, o kodu direkt çalıştırırsanız arkadaşlar, şu örneği.
+
+451
+01:26:40,675 --> 01:26:43,915
+Ben şu an bu şeydeki kodu bulamadım.
+
+452
+01:26:44,655 --> 01:26:46,375
+Nereye yazılmış olabilir acaba?
+
+453
+01:26:47,575 --> 01:26:49,635
+Ha, Fowler'in kitabındaki package'tan bu.
+
+454
+01:26:49,815 --> 01:26:52,075
+Diğer dersten alınmış bir şey.
+
+455
+01:26:52,856 --> 01:26:54,515
+Çok da hani zor bir şey değil.
+
+456
+01:26:54,856 --> 01:26:57,856
+Bunu test olarak projenizde kullanmanızı bekliyoruz.
+
+457
+01:26:59,455 --> 01:27:00,776
+Chat'ten bir şey var.
+
+458
+01:27:00,776 --> 01:27:28,036
+Class'a tıklayıp test file'a tıklarsak o class'ın testini açıyor. Tamam teşekkür ederim. Yani burada da ona benzer bir arayüz var. Bunu da hani şimdiden görün ki projenize test case'lerinizi yetiştirin diye söylemiş olayım. Peki. Şeye geri geldik. Thread kısmına geri geldik. Sizden çok fazla bir tepki yok.
+
+459
+01:27:35,283 --> 01:27:36,123
+216.
+
+460
+01:27:39,956 --> 01:28:01,636
+Şimdi arkadaşlar, biz thread havuzları diye bir şey kullanıyoruz. Bu ne için var? Bir programı 20 tane thread'e bölmek isteyebiliriz veya 10 tane thread veya daha efektif bir hale olması gereken en efektif çalışacak dinamik bir thread şeyi oluşturmak isteyebiliriz. Bunun sayısını bulmak biraz zor.
+
+461
+01:28:01,636 --> 01:28:30,396
+Küçük sayıda bir şeyle çalışmak kabul edilebilir. Bu makul bir şey. Fakat gerçek dünyadaki her bir birim kendisi ayrı çalışması gerekecek. Ayrıca bir threadle kendine has bir CPU tarafından yönetilmesi gerekiyor. Burada bir thread oluşturmak ayrıca bir maliyet. Yani o kodu yazıp tekrar new demek bilmem ne demek biraz uzun.
+
+462
+01:28:30,395 --> 01:28:41,975
+Eğer çok fazla sayıda bir görev çalıştıracaksak, işleteceksek bunun için thread oluşturmak yerine thread havuzunu kullanmak daha makul.
+
+463
+01:28:41,975 --> 01:28:48,275
+Bu tabi Java'nın bir özelliği. Aşağıdaki interfazlar ve classlar bu iş için kullanılıyor.
+
+464
+01:28:48,335 --> 01:28:58,235
+Şimdi bir executor interfazi var. Executor bakın runable'ı kullanıyor ve bir thread execute etme metodu var.
+
+465
+01:28:58,235 --> 01:29:06,835
+Bu daha sonra executor service dediğimiz, threadlerin shutdown edilmesi, shutdown edilmiş mi edilmemiş mi bununla alakalı şeyler
+
+466
+01:29:06,835 --> 01:29:12,255
+Ve burada ekstra bazı statik metotlar var. Şimdi biz birazcık bunları kurcalayalım
+
+467
+01:29:12,255 --> 01:29:19,015
+Bu iş için Java Util Concurrent Executor Service'i eklememiz gerekiyor
+
+468
+01:29:19,015 --> 01:29:24,176
+Shutdown dediğimizde bu executor servisini kapatıyor
+
+469
+01:29:24,176 --> 01:29:49,996
+Fakat diyor ki görevlere, bu işlemlere izin veriyor. Şu anki thread'te çalışan şeylere tamamlanması, bitmesi için. Yani ben bunu kapatacağım ama her şeyi yarım bırakıp kapatmayacağım. Her şey bitecek, ondan sonra kapatacak. Yeni threadlerin havuza girişini engelliyor. Bu güvenli kapatma işlemi için kullanılan bir metottur.
+
+470
+01:29:49,995 --> 01:30:10,475
+List dediğimizde, şey, list, shutdown'la diyor ki ani bir şekilde derhal kapat demektir. Bu tamamlanmamış threadleri ve threadleri de kapatıyor ve tamamlanmamışların listesini döndürüyor. Bunlar bunlar kapandı, bazıları tamamlanmadı.
+
+471
+01:30:10,475 --> 01:30:28,895
+Bir executor'un kapalı olup olmadığını görmek için is shut down, is terminated dediğimiz bütün havuzdaki işlemler tamamlandı mı? Yani bütün threadler görevini bitirdi mi? Bunu görmek için kullanılan bir metot.
+
+472
+01:30:29,755 --> 01:30:39,955
+Can be used in the main motor for waiting to stress. Yani threadlerin şeyini bekletip beklenilmediğini görmek adına kullanabiliyoruz bunda is terminated metodunu.
+
+473
+01:30:40,475 --> 01:30:58,095
+Daha sonra executor içerisinde execute metodu var. Kendisine verilen bir taskı başlatıyor, çalıştırıyor. Executors içerisinde de yeni bir thread havuzu oluşturacak.
+
+474
+01:30:58,095 --> 01:31:06,135
+Yani belli bir sayıda thread oluşturmak için yeni bir thread sayısı. Yani burada 5 dersek 5 tanelik bir thread havuzu oluşturabilir.
+
+475
+01:31:06,135 --> 01:31:13,875
+veya ihtiyaç duyulan kadar thread house'u burada oluşturabiliyoruz.
+
+476
+01:31:16,055 --> 01:31:25,655
+Fakat diyor ki tekrar kullanacaktır. Eskiden tanımlanmış, yapılandırılmış thread'leri kullanılabilir olduğunda tekrar.
+
+477
+01:31:25,795 --> 01:31:31,335
+Eğer bunu yazarsak, daha önceden tanımlanmış bir şey varsa onları da kullanabiliriz diyoruz.
+
+478
+01:31:32,195 --> 01:31:35,255
+Bunun esası şu, aynı örneğe geri gelelim.
+
+479
+01:31:36,135 --> 01:31:38,135
+Peace
+
+480
+01:31:36,916 --> 01:32:04,935
+her bir şey için ayrı ayrı track oluşturmak yerine diyoruz ki bir executor servisten bir nesne üretiyoruz. Bu ilk başta boş. Bu nesnenin içerisinde diyoruz ki şöyle bir metot gönder. Yani böyle bir class gönder. Bunun içerisinde ne vardı? Run metodu vardı. Bununla herhangi bir değişiklik yok bakın bu class'ta. Sadece burada bunu çağırırken bunu gönderdik bu nesneyi. Daha sonra bu nesneyi gönderdik. Sonra bu nesneyi gönderdik. Sonra bu nesneyi gönderdik. Daha sonra shutdown dedik.
+
+481
+01:32:04,935 --> 01:32:16,875
+tamamının kapatılmasını istedik. Olay bu kadar basit. Bu hangisiymiş? Match with pool.
+
+482
+01:32:36,564 --> 01:32:37,323
+Bakın yine
+
+483
+01:32:37,323 --> 01:32:42,083
+shutdown initiated dedi. Yani şu
+
+484
+01:32:42,083 --> 01:32:43,443
+shutdown'a geldi ama
+
+485
+01:32:43,443 --> 01:32:48,343
+shutdown'a gelmesine rağmen diğer threat'ler daha çalışmasını
+
+486
+01:32:48,343 --> 01:32:52,363
+tamamlamadı. Bunlar şey yapıyor. Shutdown complete diyor. Ne kadar
+
+487
+01:32:52,363 --> 01:32:54,404
+sürede tamamlandığını gösteriyor. Bakın.
+
+488
+01:32:55,623 --> 01:32:57,484
+Match with people. Tamam mı?
+
+489
+01:32:59,064 --> 01:33:02,583
+Şurada initiated olduğunu, complete olduğunu yazmışız.
+
+490
+01:33:03,763 --> 01:33:05,904
+Şurada da geçen süreyi yazıyoruz.
+
+491
+01:33:06,564 --> 01:33:14,464
+Biraz öncekine göre sadece farkı, yani şuradakilere göre farkı ekstradan nesne üretmeye falan gerek kalmıyor.
+
+492
+01:33:19,507 --> 01:33:35,087
+Şimdi bu multi-trail tümteki exception'lar. Buradan run metodundan bir exception fırlatabiliriz. Bu mümkündür. Bu metodun imzasını değiştiremeyiz ama.
+
+493
+01:33:35,087 --> 01:34:02,967
+yani metotta işte void run demiştik. Burada herhangi bir imza değiştiremiyoruz. Bir check it exception şey yapacaksak buradan run metottan bunu multi-threaded task yani bir normal bir member metot içinde exception üretecek bir ayrı sınıf yazmamız gerekiyor.
+
+494
+01:34:02,967 --> 01:34:14,007
+ve diyeceğiz ki burada trolls some check-it exception, herhangi bir check-it exception üreteceğini, yani check-it sınıfından hangi exception üreteceksek, fırlatacaksak onu yazacağız.
+
+495
+01:34:14,848 --> 01:34:19,787
+Ve bunu run metodunu try-catch içerisinde düzgün bir şekilde kullanmamız gerekecek.
+
+496
+01:34:21,067 --> 01:34:21,327
+Peki.
+
+497
+01:34:24,067 --> 01:34:25,987
+Oluşacak exceptionlarla alakalı durumda var.
+
+498
+01:34:26,088 --> 01:34:27,387
+Şimdi race condition diye bir şey var.
+
+499
+01:34:28,448 --> 01:34:29,368
+Race condition ne demek?
+
+500
+01:34:32,979 --> 01:34:37,579
+Aslında hep global değişken kullanmayın deriz ya, onunla alakalı kısma geldik.
+
+501
+01:34:39,119 --> 01:34:46,440
+Şimdi iki tane veya daha fazla thread ortak paylaşılan bir data'ya ulaşmak istiyor.
+
+502
+01:34:47,259 --> 01:34:51,639
+Şimdi banka kartınız var, gittiniz yedeğini aldınız, iki tane banka kartınız var.
+
+503
+01:34:53,400 --> 01:34:58,059
+Birine verdiniz, arkadaşınıza verdiniz, ailenize verdiniz, dediniz ki işte baba bana para yatır falan.
+
+504
+01:34:58,320 --> 01:35:01,759
+Şimdi bu tek bir hesap üzerinde olan bir şey.
+
+505
+01:35:02,979 --> 01:35:23,660
+Ama bu hesabı kullanan iki tane şey olabilir. Burada hesaba user1 eriştiğinde user1 hesaba eriştiğinde user2'nin o anda erişmemesi lazım.
+
+506
+01:35:23,660 --> 01:35:31,160
+Çünkü mesela hesaba para yatıracağız. Balance eşittir. Balance artı amount.
+
+507
+01:35:34,020 --> 01:35:49,880
+Şimdi bu işlem asembiyle nasıl oluyor? İşte move. Bir tane belki balansı bir yerde alıyor. Balansı bir yere alacak. R0'ı alacak. Daha sonra add diyecek. R0'a A kadar bir şey ekleyecek. Daha sonra bu move diyeceğiz.
+
+508
+01:35:49,880 --> 01:35:58,840
+Tekrardan şeyi R0'ı buradaki balansa aktaracağız. Balansa gidecek bir yerde yolacak.
+
+509
+01:35:58,840 --> 01:36:08,640
+Şimdi işlemci tarafında bu yapılan işleme bakıldığında bir thread çalışırken şu thread mesela bu komut çalışır.
+
+510
+01:36:09,340 --> 01:36:13,179
+Bu komutun çalışmasıyla beraber diğer thread'e sıra gelebilir.
+
+511
+01:36:13,179 --> 01:36:31,659
+Dolayısıyla bu para yatırma işlemi daha tamamlanmadan diğer threat şu kaynağa erişip başka bir işlem yapabilir. Dolayısıyla siz para çektiğiniz halde paranızın çekilmemiş veya para yatırdığınız halde paranızın yatırılmamış olduğunu görebilirsiniz. Eğer böyle bir race condition'a girilirse.
+
+512
+01:36:32,139 --> 01:36:42,560
+Dolayısıyla global bir değişken, paylaşılan bir değişken üzerinde bu değişkeni elde etti mi bırakana kadar ne yapmaması lazım?
+
+513
+01:36:43,179 --> 01:36:53,179
+Oradan çıkmaması lazım. Bununla alakalı temel problemler var. Bu problemlerden bir tanesi Dining philosopher problemi.
+
+514
+01:36:57,619 --> 01:37:19,499
+Bu şu arkadaşlar. Dört tane filozof var. Bunlar makarna, spagetti artık ne yiyecek? Spagetti yiyecekler. Şurada da çatallar var. Dört tane de çatallar. Şimdi bu kişi şu çatalı alması ile birlikte bunu da alması lazım ki yemeği yiyebilsin.
+
+515
+01:37:19,499 --> 01:37:22,779
+1, 2, 3, 4
+
+516
+01:37:22,779 --> 01:37:36,039
+Yani 2 tane çatalı aldıysa 1 de yemez, 3 de yemez. Bunlar yiyemeyeceği için eğer şunları bıraktılarsa 4 yiyebilir. Yani 2 ile 4 karşılıklı yiyebilir, 1 ile 3 yiyebilir.
+
+517
+01:37:36,639 --> 01:37:49,259
+Tabii şunları da bırakmaları kaydıyla. Ne zaman ki işte 4 bıraktı, 4 bıraktıktan sonra 2 de bırakırsa ondan sonra 1-3 yiyebiliyor. Bakın bir ortak 4 tane değişkenimiz var.
+
+518
+01:37:49,499 --> 01:37:58,159
+Sonra bir diğer problem, yine bunlar işletim sistemleri dersinde anlatılır, producer-consumer problem
+
+519
+01:37:58,159 --> 01:38:05,459
+Şimdi producer-consumer herhangi bir şeyin üretilip tüketilmesiyle alakalı
+
+520
+01:38:05,459 --> 01:38:10,259
+Şimdi siz bir araç kiralayacaksanız, araç kiralama şirketinin sayfasına girdiniz
+
+521
+01:38:10,259 --> 01:38:14,259
+Bir şey alabilmeniz için veya bir kitap alabilmeniz için ne olması lazım?
+
+522
+01:38:14,259 --> 01:38:17,319
+Orada bir üretilmiş bir nesne olması lazım
+
+523
+01:38:17,319 --> 01:38:38,480
+Bu üretilmiş nesne ne olacak? Ondan sonra tüketilebilir hale gelecek. Tüketilince de eğer yeterli miktarda yoksa artık daha fazla yoktur tanımda bir şey olması gerekiyor. Şimdi üretici bir buffer'a nesne koyuyor. Bu buffer'ın belli bir limiti olsun. Sıfırdan en eksi bire kadar. En tane nesne alsın.
+
+524
+01:38:38,480 --> 01:38:41,539
+Prodüzer buraya bu nesneleri ekliyor.
+
+525
+01:38:42,560 --> 01:38:45,520
+Consumer da buradan bu nesneleri alacak çıkaracak.
+
+526
+01:38:45,920 --> 01:38:49,100
+Yani ekleme çıkarma aslında bir kuyruk gibi düşünebiliriz buradaki örneğin.
+
+527
+01:38:49,740 --> 01:38:54,179
+Şimdi Prodüzer'ın eklemesi için buranın boş olması gerekiyor arkadaşlar.
+
+528
+01:38:54,859 --> 01:38:59,459
+Dolayısıyla bu kaynağın içerisinde yeterli yer var mı ona bakmak gerekiyor.
+
+529
+01:39:00,280 --> 01:39:05,980
+Consumer'ın da burada yeterli miktarda veri var mı tüketecek veri onları alması gerekiyor.
+
+530
+01:39:05,980 --> 01:39:21,980
+Kaynak boşken consumer ne yapamaz? Tüketemez. Kaynak doluyken prodüsür tüketemez. O zaman bu kaynağa erişimde ne yapacağız? Prodüsür ve consumer'ı kontrollü kullanacağız.
+
+531
+01:39:21,980 --> 01:39:50,119
+Başka bununla alakalı köprü problemi var. Böyle bir yol düşünün. Bu yol bir yerde daralıyor. Tek şeride düşüyor. Sonra bir yerde açılıyor. Bir yandan böyle bir trafik var, bir yandan böyle bir trafik var. Şimdi şu kaynak, bakın burası shared bir variable. Paylaştırılmış bir şey. Ama bu paylaşımı race condition'a girmeyecek şekilde yapmak lazım.
+
+532
+01:39:50,119 --> 01:39:52,280
+Bu da bir diğer problem
+
+533
+01:39:52,280 --> 01:39:55,700
+Başka bununla alakalı problemler işte şey dersinde anlatılacak
+
+534
+01:39:55,700 --> 01:40:03,000
+Eğer birden fazla thread'imiz varsa iki veya daha fazla thread'imiz varsa burada dikkat etmemiz gerekiyor
+
+535
+01:40:03,000 --> 01:40:07,759
+Tabi paylaştıralım derken başka sıkıntılar ortaya atıyoruz
+
+536
+01:40:07,759 --> 01:40:11,340
+Mesela bir trafik polisini bir trafiğe koydunuz trafiği yönetsin dedik
+
+537
+01:40:11,340 --> 01:40:13,759
+Ama adam gitti trafiği kilitledi
+
+538
+01:40:13,759 --> 01:40:15,560
+Olabiliyor mu? Olabiliyor
+
+539
+01:40:15,560 --> 01:40:39,399
+Aynı şekilde biz de burada threadlere paylaşım yapalım derken ne yapılabilir? Threadler kilitlenebilir. Burada bir problem deadlock problemidir. Yani trafiği kilitledi bir polis veya polis unuttu bir taraftaki kişilere hiç hak vermedi. O adamlar bekliyor da bekliyor. Bu da starvation problemi, açlık problemi. Yani kendisine hiç sıranın gelmemesi.
+
+540
+01:40:39,399 --> 01:40:46,599
+Bir şeyi senkronize edeyim derken iki tane böyle problemle, alt problemle karşılaşabiliyoruz.
+
+541
+01:40:46,599 --> 01:40:56,739
+Şimdi Starvation'a örnek, proseslere priority vermişler bilgisayarlarda 1980'li yıllarda bu kitaplardan birinde vardır, işletim sistemleri kitabındaydı.
+
+542
+01:40:57,055 --> 01:41:20,275
+Proses çalışıyor, çalışıyor, çalışıyor. Artık tamamlanıyor. Bilgisayarı kapatmak istiyorlar. Bilgisayarı kapatmak istediklerinde bilgisayar diyor ki şu an çalışan bir program var. Kapatmak istediğiniz eminmişsiniz. Sonra bakıyorlar ki halbuki bütün prosesler tamamlanmış görünüyor. Bir prosese hiç sıra gelmemiş. Yani o kadar açlıktan ölmüş. Starvation demek zaten biliyorsunuz. Açlıktan ölmek demek. Bu da bir diğer problem.
+
+543
+01:41:20,275 --> 01:41:47,355
+Şimdi peki iki tane thread bir objeye erişirse ve her bir objenin bu ilgili metodu da bu obje üzerinde bir değişiklik yapmaya kalkarsa ne olacak? Biraz önce işte banka hesabına erişmek gibi. Tahmin edebileceğimiz gibi threadlerden bir tanesi kendi yapacağı işleri yapacak. Yani can step on each other toes. Hepsi kendi işlerini yapacak burada.
+
+544
+01:41:47,355 --> 01:41:59,515
+Ama burada kim daha önce ulaştıysa, ulaşma sırasına göre, burada corrupted objeler meydana gelebiliyor.
+
+545
+01:41:59,515 --> 01:42:07,636
+Yani bir tanesi kaynağa ulaştı, o kaynakta bazı şeyleri yaptı ama araya bir tane diğer thread girdi, senkronize de etmedik.
+
+546
+01:42:08,075 --> 01:42:10,015
+O zaman buna bir çare bulmamız gerekiyor.
+
+547
+01:42:10,776 --> 01:42:13,935
+Bu tür işlemlere de race condition adını veriyoruz.
+
+548
+01:42:13,935 --> 01:42:43,795
+En basit örneğimiz işte runable şey banka üzerinden şey yapma. Bankaya para yatırmak istiyoruz. Bankadan para çekmek istiyoruz. Bu da bizim bankamız değişen şeyimiz. Şimdi bankaya para yatırmak da para çekmek de eş zamanlı yapılabilir işlemler. Bu eş zamanlı yapılabilir işlemler üzerinden ne yapacağız? Bir run metodu tanımlayacağız şu runable'dan. Bu diyecek ki bir withdraw yapacak. Bu deposit para eklemesi yapacak ve bu simülasyona
+
+549
+01:42:43,795 --> 01:43:13,515
+bir göz atalım. Herhalde burada senkronizasyonun ne olduğuna baktık. Evet şimdi önce bankayı bir yazalım. Şimdi banka dediğimiz ise içerisinde bir para olan bir şey, bir özelliği var bu kadar. Sonra içerisinde işte constructorla nesne oluşturunca bir para aktarabiliyoruz. İçerisindeki balansı elde edebiliyoruz. İşte balansı set etme şeyi yok. Withdraw deyince belli bir miktarda
+
+550
+01:43:13,795 --> 01:43:37,755
+Current Balance'ı alıp ne yapacağız? Belli bir miktarda şeyi güncelleyeceğiz. Çünkü hemen pat diye parayı yatırınca veya parayı çekince güncellenmiyor. Paranızı çekene kadar bir süre geçiyor orada. Şöyle bir delay verilmiş. Daha sonra bu şey güncellenecek arkadaşlar. Parayı yatırınca da bu bilgi miktar buraya aktarılıyor. Hemen ama bu kadar.
+
+551
+01:43:37,755 --> 01:43:44,095
+Muhtemel delay de işte 5 saniyeye kadar bir delay gerçekleştirilmiş.
+
+552
+01:43:45,975 --> 01:43:50,916
+Peki account depositor dediğimiz deposit yapacak accountımız ne yapacak?
+
+553
+01:43:51,015 --> 01:43:54,636
+Runnable interface'ini implement edecek.
+
+554
+01:43:55,295 --> 01:43:59,335
+Bu bir banka üzerinde bir hesaba sahip, bir referansa sahip.
+
+555
+01:43:59,335 --> 01:44:00,776
+Buna bir amount geliyor.
+
+556
+01:44:01,555 --> 01:44:04,975
+Diyor ki bu şu hesaptaki şu miktarı oraya gönder.
+
+557
+01:44:05,555 --> 01:44:06,755
+Şimdi bunu yaparken ne yapacak?
+
+558
+01:44:06,755 --> 01:44:30,695
+account.deposit metodunu çağıracak ve run ile bakın bir thread ile çağıracak. Bunu thread ile çağırdıktan sonra ne yapıyor? O gidiyor hesaba erişiyor parayı işte deposit işlemini yapacak. Yani şuradaki tanımlanan artı miktarı yapacak. İkinci şeyimiz withdraw. Withdraw yaptığında da aynı işlemler var. Sadece şu miktar hesaptan düşülecek.
+
+559
+01:44:30,695 --> 01:44:52,356
+Şimdi şu aradaki yapılan işlemlerin hani assembly değil de Java karşılığına bakarsak şimdi şu metot şu deposit şu kod çalışır depozitte bu kod çalıştıktan sonra şu kod çalışmadan buradan çıkabiliriz. Buradan çıkıp neye geliriz? Şu withdraw'a gelebiliriz. Yani withdraw'un içerisinde de ne var?
+
+560
+01:44:54,131 --> 01:45:22,251
+Burası çalıştı. Sonra burası gelir, burası çalışır ve şurası çalışır. Bakın şu tamamlanmadan ne oldu? Buradan bir para çekildi. Halbuki biz daha para yatıracaktık. Ve ne oluyor? Daha sonra tekrar buraya geliyor. Hesap karışmış olacak. Öyle değil mi? O zaman bizim şu withdraw veya deposit işlemini yaparken amount'a erişimimiz senkronize olması lazım.
+
+561
+01:45:22,251 --> 01:45:51,751
+Bunu synchronized keyword'ü ile birazdan yapacağız. Tabi önce bunu bir deneyelim demişiz. Öncelikle bir hesap oluşturuyor sıfır birimlik. Sonra diyoruz ki bunun balansını yazdıralım. Sonra bir thread havuzu oluşturmuş. Thread havuzu içerisinde 100 defa çalışacak bir şey. Yani account içerisine an account depositor yani bir para yatırma bir birimlik miktarlar yatıracak. Bunu execute ediyor.
+
+562
+01:45:52,251 --> 01:46:07,312
+Sonra bu 50 birimlik çalışacak bir with drawer çalışıyor. Bu da bir birimlik çalışacak. Bunları shutdown ediyor. Bunlar diyor işte bitti mi bitmedi mi onu kontrol ediyor ve sonucu göstermeye çalışıyor. Ne bekliyoruz? Sonuç olarak ne görsünüz?
+
+563
+01:46:11,380 --> 01:46:23,459
+100 tane birer birimlik yatıracağız, 50 tane birer birimlik çekeceğiz. Normalde beklememiz gereken nedir? 50 birimlik bir şey göreceğiz normalde. Bakalım neler görüyoruz.
+
+564
+01:46:24,739 --> 01:46:25,779
+Kodumuzu bir açalım.
+
+565
+01:46:28,980 --> 01:46:30,759
+Bu 14B'deydi herhalde.
+
+566
+01:46:34,260 --> 01:46:38,499
+Evet. Run diyelim.
+
+567
+01:46:42,963 --> 01:47:03,363
+Before'da 0 var, After'da 6 var. Şimdi ne oldu? Bir daha çalıştırıyorum. 0, 6. Şöyle tekrar tekrar çalıştıralım. 0, 4. 50'ye ulaşamadık.
+
+568
+01:47:03,363 --> 01:47:19,644
+Bakın şu amount depositor bir birimlik amount kadar. Bu da account nektat deposita şu amount'ı gönderecek. Bu da ne yapıyor? Bir birimlik ekliyor. Başka hiçbir şey yok buna.
+
+569
+01:47:24,340 --> 01:47:25,199
+8 oldu.
+
+570
+01:47:26,780 --> 01:47:28,299
+Before, after zaten böyle.
+
+571
+01:47:28,659 --> 01:47:34,879
+Halbuki biz önce before kesinlikle 0, after'ın 50 olmasını bekleriz.
+
+572
+01:47:36,019 --> 01:47:37,359
+Peki, çözüm nedir?
+
+573
+01:47:37,359 --> 01:47:41,459
+Çözüm bu account'u senkronize kullanmak.
+
+574
+01:47:42,059 --> 01:47:47,079
+Şimdi buna preemptive, non-preemptive dediğimiz iki tane kavram var arkadaşlar.
+
+575
+01:47:47,239 --> 01:47:48,180
+Bunu da bilelim.
+
+576
+01:47:48,180 --> 01:47:56,880
+Preemptive, Non-Preemptive
+
+577
+01:47:56,880 --> 01:48:06,520
+Bu scheduling'de kullanılan bir işletim sistemi kavramı. Ne demek Preemptive İngilizcesi?
+
+578
+01:48:16,659 --> 01:48:20,159
+Şöyle translate karşılığına bakayım nasıl çevrilmiş.
+
+579
+01:48:29,492 --> 01:48:31,191
+Priam ti-u
+
+580
+01:48:36,148 --> 01:49:06,127
+önleyici olarak çevrilmiş. Yani ne demek arkadaşlar? Bu preemptive tutunca bir hesabı elde edince başkası gelene kadar yani şey bırakana kadar başkasına izin vermiyor. Non-preemptive de işte başkasına işte başkası gelip olabilir. İşletim sistemleri non-preemptive ve preemptive scheduling yaparlar. Yani bir proses P1 prosesi gelir işlem üreticisine P1 çalışır. Sonra P1 bitmediyse tekrar ona
+
+581
+01:49:06,127 --> 01:49:08,127
+B1 bitmediyse bir daha izin verir.
+
+582
+01:49:08,227 --> 01:49:12,488
+P1 bitene kadar tekrar tekrar ne kadarlık süre?
+
+583
+01:49:12,587 --> 01:49:13,567
+5 birimlik süre.
+
+584
+01:49:13,627 --> 01:49:15,967
+5 birim çalış, sonra 5 daha çalış, 5 daha çalış.
+
+585
+01:49:16,048 --> 01:49:18,587
+Bittiyse artık P2'den böyle devam et.
+
+586
+01:49:18,947 --> 01:49:21,347
+Şeklinde bir mantıkla çalışıyor.
+
+587
+01:49:21,988 --> 01:49:24,328
+Burada da aslında biraz da şey var.
+
+588
+01:49:25,487 --> 01:49:26,247
+Böyle bir şey yok.
+
+589
+01:49:26,247 --> 01:49:35,107
+Bunun olması gereken şey böyle tutunca oradan çıkana kadar, kritik bölgeden çıkana kadar, race condition'dan çıkana kadar orada kalacak.
+
+590
+01:49:36,127 --> 01:50:03,707
+Peki gelelim. Slide'dan devam edelim. Olan şey şu. Alice geldi. Bankada işte bir de BAP var. İkisi de bu hesaba erişebiliyorlar. Dedi ki bu 100 lira çekmek istedi. Bu da 50 lira yatırmak istedi. Olacak şey bunun işte eğer bu önce ulaştıysa 1100 olacak. Sonra 50 çekince 1050 bekleriz.
+
+591
+01:50:03,707 --> 01:50:30,027
+Yani önce bu da ArrayList'e 1050 olacak, önce bu da ArrayList'e 1050 olacak. Normalde bu. Şimdi biz bu threadleri çalıştırdığımızda ikisinin de run metodunun çalışacağını biliyoruz. Daha sonra run metodu çalışmaya geldiğinde ikisi de şu işi yapacak. Sadece birisi, pardon, ikisi de 100 çekiyor, affedersiniz. Dolayısıyla bir ekleme çıkarma yok.
+
+592
+01:50:30,027 --> 01:50:35,148
+Bu withdraw yapacak, bu da withdraw yapacak, birisi 100 çekecek, birisi 50 çekecek
+
+593
+01:50:35,148 --> 01:50:38,868
+Normalde ne olur? İşte 850'ye düşmesini bekleriz
+
+594
+01:50:38,868 --> 01:50:40,008
+Bakalım nasıl oluyor?
+
+595
+01:50:40,807 --> 01:50:44,127
+Şimdi bu geldiğinde bu withdraw'u çağıracak
+
+596
+01:50:44,127 --> 01:50:45,567
+Şimdi bu withdraw'u çağırdı
+
+597
+01:50:45,567 --> 01:50:49,567
+Ne yapılır? Bunun için şu kod tek tek işlenmeye başlar
+
+598
+01:50:49,567 --> 01:50:51,107
+Çünkü run metodundayız, bu bir thread
+
+599
+01:50:51,107 --> 01:50:58,607
+Şimdi bu işlenirken bu yapılır, bu yapılır ama şunun yapılacağı veya bundan sonraki bir iş yapılırken yarı da kesilebilir
+
+600
+01:50:58,607 --> 01:51:23,087
+Bakın bu da geldi. Sonra dedi ki şurada şey için sol taraftaki için Alice'in şeyi balansı buraya bin olarak kopyalandı. Çünkü şu an bin var. Bin olarak kopyalandıktan sonra ne yapıyor? Dedik ya dersin başında thread kontrol bloğu var. Bu thread kendi kontrol bloğunda bu bini görecek.
+
+601
+01:51:23,088 --> 01:51:48,728
+Bunun kendi kontrol bloğundaki bin oraya kopyalandı. Baya baya bu dip kopi yapıldı. Sonra ne yapıyoruz? Bu da kendi thread kontrol bloğuna ikisi de aynı anda eriştiği için bini kopyaladı. Devam ediyoruz. Şimdi bir buna sıra verildi bir buna sıra verildi. İkisi de bin bin olarak kopyaladı. Sonra sıra buna geldi.
+
+602
+01:51:48,728 --> 01:51:59,748
+Dedi ki şu kendi balansı kadar güncelleme yapsın. Yani şuradaki 1000'ini ne yaptı? 900 yaptı. Bu 900'ü ne yapması lazım? Gidip şuraya yazması lazım.
+
+603
+01:52:00,528 --> 01:52:18,407
+Şimdi yazacak. Yazdıktan sonra artık bu 50 lira çekince normalde 850 olması. Çünkü bunun hesabında hala 1000 görünüyor. Ama bu bir defa kopyaladı. İzinsiz olarak girdi. Ve tekrar bu 100 lira çekildi.
+
+604
+01:52:18,728 --> 01:52:33,008
+Şimdi geldik bu tarafa sağ tarafa bu hala bunu bin görüyor bankadaki parayı. Bin gördüğü için ne yapıyor arkadaşlar? Gidiyor binden elliyi çıkarıyor. Bu sefer gidiyor bu dokuz yüz elliyi hesaba yazdırıyor ve hesapta dokuz yüz elli görüyor.
+
+605
+01:52:34,899 --> 01:52:48,919
+Sıkıntıya anlaşıldı mı? Bakın bu animasyon biraz daha herhalde işi özetliyor. O zaman biz ne yapacağız? Şuraya geldiysek şunu dışlayacağız. Sen bir diyeceğiz bekle. Biz işimizi bitirelim. Ondan sonra sen gireceksin.
+
+606
+01:52:48,919 --> 01:53:13,059
+Çünkü bizim işimi bitirmeniz ne demek? Şuradaki şeyi güncellemek demek. Bakın şu işlem yapıldı. Tamam burada kendi lokalimizde güncelledik ama bunu karşıya yüklememiz gerekiyor. Ve nihayet olarak baktığımızda işte bankada 950 para var. Bizim birimizin cebinde 100 lira var. Öbürümüzün cebinde 50 lira var. Bankada hala 950 var. Kara geçtik. Peki bunu nasıl önleriz?
+
+607
+01:53:13,059 --> 01:53:34,120
+Şimdi bunu önlemek için arkadaşlar mutual exclusion'ı yapmak için birçok yöntem var. Mesela mikrofon mantığı bunlardan bir tanesi. Yani bir lock değişkenimiz olur. Lock değişkenini o an kim elinde tutarsa onun girme hakkı olur. Bu da ne demek?
+
+608
+01:53:34,119 --> 01:54:02,479
+Şimdi ben şu bank account içerisinde bir değişken tutsam. Lock diye bir değişken. Ve static olsa bu. Şimdi static olması ne demek? İki tarafta kaç tane değişken nesne üretirsen üret, her nesne bunu görür. Static, lock değişkeni. Ben buraya eriştim. Bunun default değeri de false olsun. Alice olarak buraya eriştim. Tamam dedim hesap ben de false'u true yapıyorum.
+
+609
+01:54:02,480 --> 01:54:08,980
+Hani lavaboya tuvalete girersinizde işte meşgul yazar ya aynen onun gibi düşünün
+
+610
+01:54:08,980 --> 01:54:14,380
+Bu true hale döndüğü için şu girmek istediğinde giremeyecektir
+
+611
+01:54:14,380 --> 01:54:16,620
+Giremeyeceği için bekleyecek
+
+612
+01:54:16,620 --> 01:54:19,980
+Çıkarken de ne yapacak? Tekrar false'u true'yu false yapacak
+
+613
+01:54:19,980 --> 01:54:25,640
+Statik bir değişken olduğu için bu ne yapılabilir? Ne yapılabilir? Görülebilir hiçbir sıkıntı yok
+
+614
+01:54:25,640 --> 01:54:29,260
+Veya hani true false değil de bunu 2-3 durumunu yapabiliriz
+
+615
+01:54:29,260 --> 01:54:32,420
+Ne bileyim sıfırdan başlar girince 1 yapılır
+
+616
+01:54:32,419 --> 01:55:01,179
+ne bileyim çıkınca iki yapılır. Zaten prodüstür konsümür problemi bu mantıkla çözülüyor. 1, 2, 3, 4 diye artar o da 4, 3, 2, 1 diye azalır. Prodüstür artırır konsümür azaltır. Sıfıra geldiyse veya doyum noktasına geldiyse ne yapılır işte orada durulur falan. Peki luck tam bir çözüm mü? Kısmen bir çözüm ama onun da kendi içinde başka problemler var. Çünkü luck'ın işlemci tarafında işlenmesi de şey.
+
+617
+01:55:01,179 --> 01:55:25,099
+Çünkü ben lock'a sahip oldum. Lock'a sahip olduktan sonra lock'ı aldığım anda yani false iken aldım ya. False iken aldım true'ya dönüştürürken diğer thread aradan lock'ı elde edebiliyor. Burayı anladık mı? Yani bir tane değişkenim var.
+
+618
+01:55:25,099 --> 01:55:27,159
+Bak
+
+619
+01:55:27,159 --> 01:55:29,799
+Account'a girdim
+
+620
+01:55:29,799 --> 01:55:31,219
+Account'a gireceğim
+
+621
+01:55:31,219 --> 01:55:34,700
+Aynı şuradaki gibi nasıl balansı copy yapacaksam kendi hafızama
+
+622
+01:55:34,700 --> 01:55:36,079
+Lock copy yapacağım
+
+623
+01:55:36,079 --> 01:55:39,439
+Tam copy yaparken öbür thread de gelirse o da kendine copy yapacak
+
+624
+01:55:39,439 --> 01:55:42,099
+Şimdi hem bu false hem bu false yaptı
+
+625
+01:55:43,019 --> 01:55:44,879
+Şimdi bu da false görüyor bu da false görüyor
+
+626
+01:55:44,879 --> 01:55:47,060
+Çünkü şey
+
+627
+01:55:47,060 --> 01:55:50,099
+Ha ben bunu burada true yapınca bu true'yu görecek
+
+628
+01:55:50,099 --> 01:55:53,219
+Bu da false yapınca bu da true'yu görecek
+
+629
+01:55:53,219 --> 01:56:15,499
+Dolayısıyla arada yine bir senkronizasyon problemi olacak. Yani mikrofon örneğine benziyor ama tam iş yaramıyor. Çünkü burada mikrofonun klonlandığını düşünün bir anda. Hani mikrofon var, aynı anda klonlanabilen bir mikrofon. Dolayısıyla tam bir çözüm değil. İşletim sistemlerinde bunun detaylarını anlatacaklar. Semafor bunlardan bir çözümdür.
+
+630
+01:56:15,499 --> 01:56:24,139
+semafor mesela demir yollarında falan da kullanılıyor trenlerde veya monitör bir çözümdür. Burada bir monitör mekanizması olan
+
+631
+01:56:24,564 --> 01:56:46,904
+Senkronize keyword'ünü kullanacağız. Tamam mı? Senkronize keyword'ünü kullanacağız. Az bir şey kaldı arkadaşlar. Bitirelim. Gelecek hafta bununla alakalı daha güzel örnek yapacağız. Yapacağımız şey şu olacak. Ben thread çalıştıktan sonra şu withdraw'u çağırıyordum. Depoziti çağırıyordum. Diyeceğim ki burası bunlar senkronize bir metottur. Bakın yeni bir keyword çıktı.
+
+632
+01:56:46,904 --> 01:57:14,144
+Ben bu metoda, bu metot işletime alınırsa neyin üzerinde çalışıyor bu metot? İşte bir banka hesabı üzerinde çalışıyor. Bu metodun kullandığı bütün kaynaklar bloke ediliyor. Yani get balance. Get balance ne yapıyordu? Şu return balance'ı. Balance neydi? Bir tane account üzerinde bir şey. Şu veri ne oluyor? Bloke ediliyor ve diğer başka bir metodun, başka bir trendin oraya girmesine izin verilmiyor.
+
+633
+01:57:14,143 --> 01:57:27,923
+Tamam mı? Aynısını depozitte de yaptık. Diğer şeyler aynı. Şimdi buna baktığımızda before ve after'da neyi göreceğiz? 0 ve 50'yi göreceğiz. Şimdi kodu çalıştıralım.
+
+634
+01:57:35,699 --> 01:57:48,419
+Bakın şurada herhangi bir şey yok, değişiklik yok. Ama neyi çağırıyor? Account with Drawer demiş.
+
+635
+01:57:50,612 --> 01:57:51,371
+Şurada
+
+636
+01:57:51,371 --> 01:57:54,651
+Bunu değiştirmek istiyor galiba. Tamam.
+
+637
+01:57:55,231 --> 01:57:55,851
+Depositi
+
+638
+01:57:55,851 --> 01:58:00,372
+Synchronized
+
+639
+01:58:04,243 --> 01:58:05,543
+Niye yalamadık?
+
+640
+01:58:06,143 --> 01:58:07,843
+Say nehe
+
+641
+01:58:11,028 --> 01:58:13,607
+Kelimeyi de yazmak.
+
+642
+01:58:16,567 --> 01:58:17,727
+T-Y-N-C-H
+
+643
+01:58:29,684 --> 01:58:31,603
+Pro-nized
+
+644
+01:58:35,220 --> 01:58:36,340
+Zineye Yeni
+
+645
+01:58:36,340 --> 01:58:41,399
+Şu deposit, şu da withdraw.
+
+646
+01:58:42,819 --> 01:58:44,699
+Yaptığımız bu kadar bir şey oldu.
+
+647
+01:58:45,379 --> 01:58:48,220
+Tekrar versiyon 2 olarak çağırıyorum.
+
+648
+01:58:49,199 --> 01:58:50,919
+Account withdraw task.
+
+649
+01:58:53,359 --> 01:58:55,199
+Aslında bunda herhangi bir fark yok.
+
+650
+01:58:55,320 --> 01:58:56,839
+Niye böyle yaptık ya bunu? Neyse.
+
+651
+01:58:56,839 --> 01:58:56,900
+Neyse.
+
+652
+01:59:00,851 --> 01:59:28,251
+bir dakika pardon. Aynısını çalıştıracağız. Run diyelim. Şurada 0'a 50 göreceğiz. Bakın burada 50'yi gördük. Şimdi banka simülasyonunda yani %50'de bunu yaparsak senkronize yaptığımız için şu örnekte de pardon %50, 850 çekmiş göreceğiz. Şu account'taki şeyi kaldıralım. Mesela account'taki bunu kaldırınca ne göreceğiz?
+
+653
+01:59:28,251 --> 01:59:31,171
+Şu durumda
+
+654
+01:59:35,315 --> 01:59:54,836
+950 görebiliriz. Öyle değil mi? Başka ne görebiliriz? Veya 900 görebiliriz. Niye böyle? Çünkü şu önce yazarsa kalan miktarı 900 görürüz. Şu önce yazarsa 850 görürüz. Herhalde yanlış hatırlamıyorsam öyleydi.
+
+655
+01:59:54,836 --> 01:59:58,236
+Bakın 1950
+
+656
+01:59:58,236 --> 02:00:00,975
+Run diyorum
+
+657
+02:00:00,975 --> 02:00:02,596
+1950
+
+658
+02:00:02,596 --> 02:00:03,716
+Tekrar şey yapalım
+
+659
+02:00:03,716 --> 02:00:04,656
+1950
+
+660
+02:00:04,656 --> 02:00:06,555
+Hep 1950 geliyor
+
+661
+02:00:06,555 --> 02:00:10,716
+Acaba ilk thread
+
+662
+02:00:10,716 --> 02:00:12,356
+Önce çalıştığı için mi öyle?
+
+663
+02:00:13,356 --> 02:00:15,095
+1900 gördük
+
+664
+02:00:15,095 --> 02:00:16,915
+Arada bir tane yakaladık
+
+665
+02:00:16,915 --> 02:00:20,496
+Başka görme olasılığımız var mı?
+
+666
+02:00:21,815 --> 02:00:22,716
+Başka bir şey görme?
+
+667
+02:00:26,931 --> 02:00:47,612
+850 görebiliriz burada. Nasıl görebiliriz? Şu thread doğru bir şekilde işini tamamlar. Şu da bir şekilde işini tamamlar. 850 de görebiliriz. Yani normal olması gereken de görme olasılığımız var. Ama böyle sıkıntılı bir durum. Bakalım biz 850 görebilecek miyiz?
+
+668
+02:00:47,612 --> 02:00:51,091
+850 niye göremiyoruz biliyor musunuz arkadaşlar?
+
+669
+02:00:53,472 --> 02:01:05,332
+Şimdi Withdrawer ve Depositor ikisini de şey pardon şu account'a geldiğimizde şurada bir metot işlemi var.
+
+670
+02:01:05,332 --> 02:01:06,692
+Şurada bir delay var.
+
+671
+02:01:07,931 --> 02:01:10,031
+Burada yine metot çağrıları var.
+
+672
+02:01:10,171 --> 02:01:13,911
+Şu işlemler yapılırken asemde seviyesinde düşünürseniz az önce görüldü.
+
+673
+02:01:14,131 --> 02:01:15,192
+Tamam görüldüse güzel.
+
+674
+02:01:15,191 --> 02:01:18,611
+Ben hiç görmedim zannettim ama görülmesi muhtemel.
+
+675
+02:01:19,231 --> 02:01:23,851
+Şurada bu işlemler yapılırken bir diğer thread'e sıra geliyor.
+
+676
+02:01:24,331 --> 02:01:26,411
+Bir diğer thread'e sıra gelmesi ne demek?
+
+677
+02:01:27,471 --> 02:01:30,911
+Eski şeyin yok edilmesi yani devam edip gidecek.
+
+678
+02:01:31,131 --> 02:01:33,091
+Dolayısıyla hatalı sonuç görmemiz daha olası.
+
+679
+02:01:33,751 --> 02:01:35,631
+Çünkü işlemci çok hızlı çalışıyor öyle söyleyeyim.
+
+680
+02:01:35,631 --> 02:01:38,631
+Yani burada yapılacak bu işlemler çok hızlı yapılıyor.
+
+681
+02:01:38,731 --> 02:01:42,851
+O anda işletim sistemi bir thread'ten öbürüne aktarım sağlıyor.
+
+682
+02:01:42,851 --> 02:01:46,071
+ve şimdi artık bunları senkronize yapınca şey yapacağız.
+
+683
+02:01:46,131 --> 02:01:49,931
+Şimdi bu synchronized keyword'ü gelecek hafta göreceğiz.
+
+684
+02:01:50,071 --> 02:01:51,531
+Sadece bu metotta kullanılmıyor.
+
+685
+02:01:52,171 --> 02:01:55,191
+İşte bir şey blok içerisinde de kullanılıyor.
+
+686
+02:01:55,811 --> 02:01:59,751
+Yani şunu alıp anonim olarak kullanımdan bahsedeceğim.
+
+687
+02:01:59,911 --> 02:02:02,831
+Bu ders slide'larında yok ama onu anlatmak istiyorum.
+
+688
+02:02:03,711 --> 02:02:06,851
+Diyeceğiz ki şu aralıkta bir şeyi senkronize.
+
+689
+02:02:07,431 --> 02:02:09,851
+Mesela balansı senkronize kullanalım.
+
+690
+02:02:09,851 --> 02:02:17,472
+kullanalım. Tabi balans üzerinde olmaz da belli bir inner class mantığıyla bunu tekrardan çalışacağız, göreceğiz.
+
+691
+02:02:19,472 --> 02:02:20,771
+Şimdi gelelim.
+
+692
+02:02:25,011 --> 02:02:43,131
+Bu veri yapılarının ve multi-threading'in hakkında da bir konuşmak gerekiyor. Şimdi veri yapıları kısmına baktığımızda bazı veri yapıları hakkında thread-safe yani senkronize çalışabilen bir veri yapısı kavramından kısaca da olsa bahsetmiştik.
+
+693
+02:02:43,131 --> 02:03:03,911
+Mesela Vector, HashTable bunlar multi-threading ile kullanılabilir şeylerdir. Bunlara imkan sağlıyor. Yani üzerinde thread operasyonu yapıldığında senkronize kullanmaya müsaade edebiliyor diyeceğiz.
+
+694
+02:03:03,911 --> 02:03:30,311
+Evet. Bu dersin kapsamında normalden önce sürede hani iki hafta tatile rağmen tabii biz lap saatlerini de kullandık. Konularımız bitti arkadaşlar. Hepinize geçmiş olsun. Ama Thread'le alakalı ve GUI ile alakalı benim ekstradan anlatmak istediklerim var. Bunlar hem size yani gelecek dönemlerdeki işte işletim sistemi dersinde faydalı olur.
+
+695
+02:03:30,311 --> 02:03:36,591
+hem de GUI anlatmak işte belki web, mobil gibi şeylerde çalışmak isterseniz onların mantığını bilmeniz açısından faydalı olur.
+
+696
+02:03:37,131 --> 02:03:43,371
+Geçen hafta C Sharp'la başlamıştık. C Sharp kolay bir örnek olduğu için orada en temelden biraz kolay tarafını anlatmıştım.
+
+697
+02:03:43,851 --> 02:03:55,151
+Bunun Java'daki şeyine bakacağız. Ondan sonra biraz Python'da veya şey tarafında XML temelli özellikle HTML'de falan nasıl yapılıyor?
+
+698
+02:03:55,151 --> 02:03:57,751
+Biraz belki MVC üzerinden konuşuruz.
+
+699
+02:03:58,291 --> 02:04:00,931
+Yani MVC'den kastım şöyle bir Visual Studio açayım.
+
+700
+02:04:08,948 --> 02:04:10,267
+Bir video süzüğü açalım.
+
+701
+02:04:16,916 --> 02:04:20,615
+Evet, süre 60 dakika demişiz sınav için.
+
+702
+02:04:26,899 --> 02:04:29,399
+Create new project diyeyim.
+
+703
+02:04:31,399 --> 02:04:34,899
+Bir web sayfasını açtığımızda
+
+704
+02:04:34,899 --> 02:04:38,360
+şey göreceğiz arkadaşlar, belli
+
+705
+02:04:38,360 --> 02:04:42,679
+nesneler var aslında. Yani butonlar, yazılar, hepsi bir nesne.
+
+706
+02:04:42,780 --> 02:04:44,899
+Nesne tabanlı mantık orada alabildiğince
+
+707
+02:04:44,899 --> 02:04:47,479
+karşımıza gelecek.
+
+708
+02:04:48,539 --> 02:04:50,339
+Ama biz şuradan C Sharp'ı seçelim.
+
+709
+02:04:51,559 --> 02:04:53,899
+C Sharp'ın web tarafını seçelim.
+
+710
+02:04:53,899 --> 02:04:59,219
+Windows Form, VPF o kadar çok şey var ki.
+
+711
+02:05:01,780 --> 02:05:02,839
+Niye göremedik.
+
+712
+02:05:08,724 --> 02:05:12,903
+Normal, normal. Daha şey açmadım. Birazdan açarım, kontrol ederiz, öyle şey yaparız.
+
+713
+02:05:14,063 --> 02:05:18,564
+Niye web görünmüyor burada? Web application diyelim. Belki şundan ilerleyeceğiz.
+
+714
+02:05:19,644 --> 02:05:20,564
+Next diyelim.
+
+715
+02:05:23,703 --> 02:05:26,943
+Long Term MVC Core.net Core.
+
+716
+02:05:28,644 --> 02:05:29,404
+Tamam.
+
+717
+02:05:30,064 --> 02:05:31,064
+Create diyelim.
+
+718
+02:05:36,884 --> 02:05:37,463
+Kaya bek.
+
+719
+02:05:45,971 --> 02:05:48,131
+Bunun arayüzü değişmiş. Niye böyle bir web?
+
+720
+02:05:49,751 --> 02:05:50,811
+Derse çıkarma.
+
+721
+02:05:54,387 --> 02:05:56,267
+ASP.NET Core
+
+722
+02:05:56,267 --> 02:06:00,328
+Web Application Model View Controller
+
+723
+02:06:00,328 --> 02:06:02,947
+ASP.NET
+
+724
+02:06:02,947 --> 02:06:04,367
+Web
+
+725
+02:06:04,367 --> 02:06:07,768
+Application.NET Framework
+
+726
+02:06:07,768 --> 02:06:09,987
+Şu olabilir ya herhalde.
+
+727
+02:06:11,308 --> 02:06:11,667
+Next.
+
+728
+02:06:12,887 --> 02:06:13,927
+Şeyi bulmak daha zor.
+
+729
+02:06:15,728 --> 02:06:17,507
+Create diyelim bakalım ne göreceğiz.
+
+730
+02:06:18,927 --> 02:06:21,287
+MVC olsun diyelim, create diyelim.
+
+731
+02:06:21,287 --> 02:06:30,248
+Şimdi burada karşımıza gelen web sayfası bir start.class diye bir şeyden başlıyor.
+
+732
+02:06:30,347 --> 02:06:31,127
+Main metodu var.
+
+733
+02:06:31,748 --> 02:06:38,987
+O main metodundan başlayarak bütün web sayfalarının alt sayfaları işte birbirine yönlendirme vesaire temel mantıkla çalışıyor.
+
+734
+02:06:38,987 --> 02:06:42,487
+Şimdi ben gelecek hafta bu MVC'nin biraz mantığından bahsedeceğim.
+
+735
+02:06:42,587 --> 02:06:46,147
+MVC aslında bir projeyi üç parçaya bölüyor.
+
+736
+02:06:46,147 --> 02:07:00,547
+Şimdi gerçek hayattaki projeler sizin yaptığınız şekilde bir grafik arayüzünden oluşur. Bir veri tabanı vardır. Bir de programlama tarafı vardır. İşte programlama kendi içinde business, logic ve object oriented design olarak ikiye bölünür.
+
+737
+02:07:01,347 --> 02:07:14,207
+Bu üç parçayı önce inşa edip diğer servisleri oluşturmak. Şimdi web sayfası açılınca bu otomatik bir şeye sahip olması lazım. Bunu bir çalıştıralım.
+
+738
+02:07:14,207 --> 02:07:17,207
+Google Chrome üzerinde çalıştır diyor bakın.
+
+739
+02:07:23,444 --> 02:07:26,023
+Bu şeyin tek sıkıntısı geç açılması.
+
+740
+02:07:38,931 --> 02:07:43,892
+Sınav Mehmet Hoca yayınlamış. Ben de bir kontrol edip o açılana kadar yayınlayayım.
+
+741
+02:07:57,076 --> 02:07:59,235
+Sonuçları da hemen şey yaparız.
+
+742
+02:08:01,595 --> 02:08:03,375
+Otomatik zaten hesaplanıyor.
+
+743
+02:08:04,255 --> 02:08:08,315
+Ben klasöre şu, bizim şey yaptığımız klasöre yüklerim.
+
+744
+02:08:09,076 --> 02:08:12,996
+Derslerin notlarının bulunduğu bir klasör var ya, ders duvarında linki var.
+
+745
+02:08:14,176 --> 02:08:15,815
+Şimdi şuradan şunu yapalım.
+
+746
+02:08:16,035 --> 02:08:17,775
+Verdiğimiz dersler nesne,
+
+747
+02:08:19,576 --> 02:08:21,576
+adım sınav,
+
+748
+02:08:25,171 --> 02:08:26,171
+Şöyle getireyim.
+
+749
+02:08:28,611 --> 02:08:35,351
+Evet, şu özelliklere sahip arkadaşlar. 19'da başlıyor, 22'de bitiyor. Bakayım diğer tarafta kontrol edelim.
+
+750
+02:08:37,331 --> 02:08:46,551
+Ben 2 dakika şey verdim hani geç kalan olsa ama sınav 60 dakika olacak. Gördüğünüz soruya geri gelebilirsiniz. Sorular rastgele bunlar bu şekilde.
+
+751
+02:08:46,551 --> 02:09:12,111
+60 dakika var. Yanlışlar doğruları götürmüyor. Şimdi yayınına diyelim. Bir kontrol edin. Görmeyen varsa haberim olsun. Evet şuradan biraz devam edeyim. Ondan sonra dersi tamamlayacağım. Şimdi bakın bu bir web sayfası. Bu web sayfasını incelediğimizde view page source diyelim. Bir web şey geliyor. Bir page geliyor. İşte böyle yazılar falan var.
+
+752
+02:09:12,111 --> 02:09:41,852
+Bu yazıların bazı özellikleri var. Ama bunlar programlamayla elde edilen şeyler. Yani C Sharp ile buradaki HTML etiketlerini programlayır. Yani şu gördüğünüz kontrollerin her biri mesela şu load, learn, more demiş. Inspect dediğimizde şu taraftan daha hızlı inceleriz. Ne yapıyor? Bu bir şey, buton. Bu sayfaya gitmemizi sağladığını söylüyor.
+
+753
+02:09:42,111 --> 02:10:07,871
+Böyle bunun özellikleri var. Şimdi bunu şurada kod içerisinde inceleyelim. Şurayı kapatıyorum. Kod içerisinde incelediğimizde bu VIV ile oluşan bir web sayfası. Web sayfasının içerisinde Home diye işte About, Contact ve Index diye 3 tane sayfa var. Şimdi biz biraz önce Index'i açtık. Bu arada niye Visual Basic'i açtık? Visual Basic HTML açılmış da neyse problem değil o da aynı zaten.
+
+754
+02:10:07,871 --> 02:10:27,131
+ne yapıyor? Oradaki gördüğünüz şeyleri bakın burada kodluyoruz. Şimdi mesela ben bir for döngüsüyle şurada şu p'leri istediğim kadar yazabilirim. Yani bir for döngüsü açacağım. Şöyleydi herhalde. For diyeceğim. Tabi bu Visual Basic olduğu için for'u direkt tanımlayabilir. i eşittir sıfır.
+
+755
+02:10:30,899 --> 02:10:55,299
+Visual Basic de int 16 diye gidiyor. Ne bileyim, i küçüktür 10, 10 defa döndür. Şimdi bunu 10 defa döndürmek yerine n defa döndüreceğiz veya buraya işte bir kitap listesi veri tabanından çekilip gelecek. O gelen şey bir LinkedListe veya ArrayListe alınacak. ArrayList'teki bütün kayıtlar böyle P'lerle veya işte bazı butonlarla ne yapılacak? Şey yapılacak, aktarılacak.
+
+756
+02:10:55,299 --> 02:11:03,280
+Daha sonra şuradaki bazı özellikler var işte class gibi, hreferans gibi bunlar değiştirilebiliyor programlamayla.
+
+757
+02:11:03,740 --> 02:11:08,379
+Ve bu programlama buradaki görüntüyü kontrol eden şey de şuradaki kontrol olurlar.
+
+758
+02:11:09,080 --> 02:11:11,339
+Keşke Visual Basic açmasaydık ama o da çok benzer.
+
+759
+02:11:11,339 --> 02:11:17,159
+Diyor ki mesela index sayfasını açmak için şuradaki ilgili vb çağır.
+
+760
+02:11:17,260 --> 02:11:20,379
+Yani index.html dosyasını vb.html'i çağır.
+
+761
+02:11:20,379 --> 02:11:27,879
+VB HTML'den kastımız biraz Visual Basic, biraz HTML veya bunun CSS HTML'i var, biraz C Sharp, biraz HTML.
+
+762
+02:11:28,440 --> 02:11:33,760
+Şimdi Code Igniter diye bir şey vardı, orada PHP ile yazılıyor, Java'nın Spring diye framework var.
+
+763
+02:11:34,260 --> 02:11:35,760
+Aynı yapı oralarda da var arkadaşlar.
+
+764
+02:11:36,539 --> 02:11:37,840
+Buradan bir VEV çağrılıyor.
+
+765
+02:11:38,999 --> 02:11:47,779
+İşte bir veri tabanı üzerinde çalışıyorsak, veri tabanındaki kayıtlarınız, kitaplar, yazarlar, bütün veri tabanı sorguları modeller üzerinden yönetiliyor.
+
+766
+02:11:47,779 --> 02:11:57,039
+Bu model, view ve controller'ın 3'ü arasında bir bağlantı kurma aşaması, bir programlama yapma aşaması karşımıza gelecek
+
+767
+02:11:57,039 --> 02:12:03,519
+Yani C-Sharp kodlarımızı, Visual Basic kodlarımızı şu controller'da ve modelde daha çok yazıyoruz
+
+768
+02:12:03,519 --> 02:12:08,219
+Web ile alakalı kısımlar da şuradaki view'ler altında yazıyoruz
+
+769
+02:12:08,219 --> 02:12:12,260
+Bakın şurada view start vbhtml dediğimiz ana sayfayı açan bir şey
+
+770
+02:12:12,260 --> 02:12:34,379
+Ama bunun temeline baktığımızda burada başlangıç diye bir application start diye bakın bir sayfa var. Bu Visual Basic olarak ilk program açıldığında main metodunu çalıştıran bir şeydir bu. Ne derler? Bir cluster. Keşke C-Sharp'la açsaydık daha rahat olurdu ama aynı çok fazla bir şey değişmiyor.
+
+771
+02:12:34,379 --> 02:12:53,779
+Neyse gelecek hafta buna birazcık C-Sharp üzerinden hem görsel programı hem de bu web ile alakalı kısma bakarız. İleride bu konuda çalışmak isteyenler olursa, staj yaparken bazen karşınıza denk geliyor böyle şeyler. Üzerinde faydası olacağını düşünüyorum. Sizin bir sorunuz, bir isteğiniz var mı?
+
+772
+02:12:57,779 --> 02:13:15,620
+Hocam ben şey söyleyebilirim hani bu son derste bu MVC ile ilgili bahsedeceksiniz. Eğer dilersiniz hani ben de yine webde çok kullanılmıyorum ama başka alanlarda kullanılan MVP, MVVM desenlerinden bahsedebilir mi?
+
+773
+02:13:15,620 --> 02:13:38,620
+Olur, güzel olur. Yani sana da söz veririz. Ben memnun olurum. Yani basit bir örnek hazırlayıp bana gönderirsen yani işin özünü anlatacak yani önce bir benim anlattığım gibi genel bir konseptle anlatıp bir de küçük bir örnekle arkadaşlarla paylaşırsan yani güzel olur. Teşekkür ederim desteğin için. Şey yaparız, değerlendirelim tabii ki.
+
+774
+02:13:39,140 --> 02:13:41,659
+Tabii. Hangi dilde olması lazım Yalnız Hanım?
+
+775
+02:13:41,659 --> 02:13:50,199
+Sen hangisini istersen? Dil fark etmez. Çünkü bu nesneye yönelimlik programlama dersi, yani Java olacak, hangisini istersen? Swift de olabilir, başka bir şey de olabilir.
+
+776
+02:13:50,819 --> 02:13:50,959
+Tamam.
+
+777
+02:13:51,779 --> 02:14:02,819
+Bana bir paylaşırsın, katılmak isteyenlere. Yani konu bitti arkadaşlar. Hani dersin müfredatı bu kadar. Ama ne kadar işte burada ek olarak bir şeyler yaparsak o kadar faydalı olur.
+
+778
+02:14:02,820 --> 02:14:15,000
+Gelecek hafta laboratuvar var ama ders saatinde hem Ömer'den hem de benim yap hazırladıklarından bir şeyler anlatırım. İnşallah faydasını görürsünüz. Var mı bir seneiniz başka?
+
+779
+02:14:17,619 --> 02:14:18,460
+Teşekkürler hocam.
+
+780
+02:14:18,460 --> 02:14:30,519
+Hepinize sınavda başarılar. Sakin sakin yapın. Çok zor sorular değil. İngilizce olabilir ama çok zor kötü bir İngilizce de yok. Üç grup ortak olacak.
+
+781
+02:14:30,519 --> 02:14:47,979
+süre fazlasıyla yeter. Bazı soruları görünce işaretleyeceğiniz sorular 4 tane seçenek var. Onun için hepinize tekrardan başarılar diliyorum. Daha sonra ben size mail gönderirim. İşte sunuşları açıkladım falan diye. İnşallah gün içinde USİS'e de sınavları girelim.
+
+782
+02:14:51,636 --> 02:14:53,755
+Peki, iyi akşamlar, görüşmek üzere arkadaşlar.
+
+783
+02:14:53,816 --> 02:14:55,116
+Teşekkürler hocam, iyi akşamlar.
+
+784
+02:14:55,335 --> 02:14:55,775
+Sağ olun.

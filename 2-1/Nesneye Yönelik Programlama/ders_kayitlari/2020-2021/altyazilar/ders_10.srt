@@ -1,0 +1,1879 @@
+1
+00:02:17,780 --> 00:02:23,119
+Evet arkadaşlar, hoş geldiniz, merhabalar. Bugün veri yapılarında ne oldu?
+
+2
+00:02:25,220 --> 00:02:33,419
+Merhaba hocam. İki saatlik süre verdi hoca, ödev verdi ama daha çok yani lab sınavı ya da sınav gibiydi. Ödev için iki saat olunca.
+
+3
+00:02:33,939 --> 00:02:36,979
+Onunla iki saat boyunca tabii strese girdiniz.
+
+4
+00:02:37,499 --> 00:02:39,099
+Herhalde o yüzden bugün biraz yorgunluyum.
+
+5
+00:02:39,120 --> 00:02:40,179
+Bütün gruplar mı öyleydi?
+
+6
+00:02:41,559 --> 00:02:46,280
+Herhalde öyle. Ben iki gruptan arkadaşla konuştum. Üçüncü grup da öyle dersek herhalde hepsi öyle.
+
+7
+00:02:46,280 --> 00:02:47,159
+Onu ne?
+
+8
+00:02:48,800 --> 00:02:50,699
+Şey, unuttum yani.
+
+9
+00:02:51,699 --> 00:02:52,699
+Kimi saniye.
+
+10
+00:02:57,620 --> 00:03:19,179
+Stack şey yapmamız gerekiyor. Stack ile çözülecek bir soru. Bir tane string vermiş. String'i dekod ediyoruz işte ama stack'i atarak yapıyoruz. En karmaşıklıkta olması için stack yani. Direkt soruda söylemese de onu anlamamız gerekiyordu. İki casus problemi diye bir isim varmış hocam ama bilmiyorum öyle bilindik bir şey değil herhalde.
+
+11
+00:03:20,300 --> 00:03:25,019
+Yok şimdi string'i siteye atıyorsunuz sonra stack'ten çekiyor musunuz?
+
+12
+00:03:25,019 --> 00:03:28,179
+Evet işte daha ayrı bir şey anlatayım isterseniz.
+
+13
+00:03:28,640 --> 00:03:28,899
+Olur.
+
+14
+00:03:29,219 --> 00:03:30,840
+İsterseniz pdf'i atalım.
+
+15
+00:03:31,320 --> 00:03:32,399
+Aynen ben o sırada anlatayım.
+
+16
+00:03:32,480 --> 00:03:35,820
+Ya çok kısa işte aabc34 falan diye string var.
+
+17
+00:03:35,919 --> 00:03:40,300
+Arada sayı görünce duruyoruz ve işte 2 ise sayı önceki 2 karakteri siliyoruz.
+
+18
+00:03:40,439 --> 00:03:42,300
+3 ise sayı önceki 3 karakteri siliyoruz falan.
+
+19
+00:03:42,939 --> 00:03:44,399
+Böyle mesaj kodlanmış işte.
+
+20
+00:03:44,539 --> 00:03:47,620
+O gelen mesajı silerek en son oluşan şeyi getiriyoruz.
+
+21
+00:03:48,239 --> 00:03:48,539
+Aynen.
+
+22
+00:03:48,819 --> 00:03:50,160
+Siteye atıp çekmeliyene aynen.
+
+23
+00:03:51,239 --> 00:03:53,099
+Çok da zor bir soru değil herhalde ama ben yapamam.
+
+24
+00:03:53,099 --> 00:04:00,300
+Stake üzerinde tabi şey siteyi kodlamak zor değil de probleme hani elbise gibi giydirmek lazım.
+
+25
+00:04:00,859 --> 00:04:01,379
+Aynen öyle.
+
+26
+00:04:02,259 --> 00:04:04,920
+Belki orada zor olmuş olabilir. Neyse ayıdası bakalım.
+
+27
+00:04:06,200 --> 00:04:09,800
+14. Bir iki dakika daha bekleyelim başlarız.
+
+28
+00:04:12,239 --> 00:04:14,300
+Hiç ödev verdiler mi veri yapılarında?
+
+29
+00:04:16,700 --> 00:04:20,620
+Bu ödev diye geçiyordu. Yani bu ilk ödevdi. Ama onun dışında olmadı hiç.
+
+30
+00:04:20,620 --> 00:04:24,600
+Uzun süreli ödev falan yok yani
+
+31
+00:04:29,684 --> 00:04:43,583
+Geçen dönem belki size kanlattık da, video yapılarında biraz daha onların uygulamalarını falan onların üzerinde duruyorlar. İyi olur yani öyle şeyler yapmaları güzel. Tabii biraz stres yapabilir.
+
+32
+00:04:44,963 --> 00:04:50,604
+Koruş hocam yani iş görüşmesine falan hazırlanıyor gibi hazırlanmak lazım bu algoritma kafasında.
+
+33
+00:04:50,604 --> 00:05:00,623
+Evet. Yani o tür dersler biraz şey, kafayı kullandırmayı, çalıştırmayı gerekiyor. Öyle yattığı yerden olmuyor.
+
+34
+00:05:02,623 --> 00:05:09,923
+Çünkü istediğin kadar kuralları öğren, ters bir soru soruyor. İşte bir farklı bir şey veriyorlar. İş değişiyor.
+
+35
+00:05:09,923 --> 00:05:25,723
+C problem çıkarmaz Utkan. Yani stack kullanıyorsan çok daha kolaydır diye düşünün. Diziyi göndereceksin fonksiyonlara, return edeceksin, pointer kullanacaksın.
+
+36
+00:05:25,723 --> 00:05:33,723
+Hani bana C'de yazmak bazı dillerden daha kolay geliyor. Uzun süredir C'de kullanıcı.
+
+37
+00:05:33,724 --> 00:05:46,503
+O ayrıntı karıştırıyor bazen hocam. Ben size of yazmıştım mesela. Size of böyle eleman yapmayı unutmuşum. Bütün algoritmamda bir saat harcadım. Öyle saçma sapan küçük bir şeymiş haline. İşte hemen öğrenince kullanışlı boyunca.
+
+38
+00:05:48,643 --> 00:05:59,503
+Olaya hakimiyet. Biraz orada ön planına çıkıyor. Evet arkadaşlar. Şu ekranımı bir daha paylaşayım da.
+
+39
+00:05:59,503 --> 00:06:08,923
+Şimdi bugünkü gördüğümüz özellikle kalıtım başta olmak üzere bununla alakalı basit bir soru çözelim.
+
+40
+00:06:10,124 --> 00:06:16,383
+Neyin ne olduğunu kavramları bir yerine oturtalım diye düşünüyorum.
+
+41
+00:06:17,764 --> 00:06:23,023
+Şimdi Akbil sistemi örneğini verdim. Onun kodlaması aklıma geldi. Onu yapalım.
+
+42
+00:06:23,023 --> 00:06:43,863
+Şimdi bir akbit sisteminde kullanıcılar olacak. Kullanıcıların işte ID'si, adı, soyadı, yaş bilgisi bir de bakiye bilgisini saklayalım. Hatta at soyata gerek yok ID'si, yaş ve bakiye olsun. Öncelikle bir kullanıcı oluşturuyorum. Person diyelim buna. Person Java dosyası.
+
+43
+00:06:43,863 --> 00:07:12,243
+Bu person.java dosyasında kullanacağım alanlar mesela private olarak başlayalım. Integer ID, private integer IH, private double vakiye diyelim. Yeterli. Bunların set ve get metotlarını oluşturacağım.
+
+44
+00:07:12,243 --> 00:07:14,923
+Getter diyoruz.
+
+45
+00:07:18,483 --> 00:07:19,523
+Ondan sonra
+
+46
+00:07:28,115 --> 00:07:31,315
+Şimdilik bunlar böyle dursun gerekirse sileceğimiz olursa sileriz.
+
+47
+00:07:32,735 --> 00:07:34,435
+Şimdi arkadaşlar, herkesin
+
+48
+00:07:34,435 --> 00:07:40,515
+bundan sonra şey olacak işte statüsü olacak. Mesela bunlardan bir tanesi öğrenci.
+
+49
+00:07:42,115 --> 00:07:42,875
+Student diyelim.
+
+50
+00:07:51,060 --> 00:07:55,279
+Yeni class, bir de öğretmen diyelim, teacher.
+
+51
+00:07:59,060 --> 00:08:09,060
+Bu da bir diğer classımız. Bunların hepsi Extend diyeceğiz. Person sınıfından Extend alacak.
+
+52
+00:08:11,060 --> 00:08:24,060
+Şimdi önce Person sınıfıyla alakalı temel şeyleri bir yapalım. Ondan sonra bu sınıfların altını dolduracağız. Şimdi herkesin aydın, yaş, bakiye bilgileri ortak.
+
+53
+00:08:24,060 --> 00:08:39,920
+Buraya bir constructor yazıyorum. Public Person. Şu an biraz böyle hani şey bir yere bakmadan yazdığım için hani bazı şeyleri değiştirebiliriz. Yani şöyle yapsak dediğiniz bir şey olursa sizin tavsiyeniz onları da yapabiliriz.
+
+54
+00:08:39,920 --> 00:08:59,740
+Buraya integer id alacağız, integer geç alacağız, integer barki alacağız, şu şeye bir bakayım ya, insert kodda burada şey var mı, constructor, varmış, ne güzel.
+
+55
+00:09:03,283 --> 00:09:33,204
+Çok hoşuma gidiyor böyle şeyler. Tamam, bu da böyle. Şimdi bunu yazdıktan sonra, person sınıfı tamam. Herkesin yaşlarının güncellemesini istiyoruz. Şimdi öğretmenin de yaşı bir artar, öğrencinin de yaşı bir artar. Burada bir değişiklik olmadı. Onun için ben bunu altı sınıflarda, çeşitli farklı şekillerde yazamam. Onun için bunu public, integer, yaş,
+
+56
+00:09:33,283 --> 00:10:00,443
+Güncellediyorum. Hatta void yapalım. Niye? Yani döndürsün hadi ne olacak? Yaş güncellene. Bu yaşı güncellelerden yurt parametre mı alınacak? This nokta yaş. Herkesin yaşı aynı artacak. Ama burada da return this nokta yaş diyorum. Herkesin bakiyesini güncelleyeceğim.
+
+57
+00:10:07,124 --> 00:10:27,323
+Öğretmenin bakiyesi ile öğrencinin bakiyesi farklı şekillerde güncelleniyor. Birincisinde işte birinden 50 kuruş alıyorsan birinden 1 lira alacaksın diyoruz. Dolayısıyla bizim burada, şimdi üç aranız olsun, yapacağımız bakiye güncelleme işlemi bir anlam ifade etmeyecek.
+
+58
+00:10:27,323 --> 00:10:50,423
+Niye? Alt sınıflarda çünkü bunlar farklı şekillerde oluyor. Bu üst sınıf. O zaman şimdilik burayı bir durduruyoruz. Şimdi geldim student'a. Bu student, extent diyeceğiz. Şimdi person sınıfından extent alıyor. Şimdi bunu deyince,
+
+59
+00:10:59,700 --> 00:11:00,359
+Ne oldu?
+
+60
+00:11:02,180 --> 00:11:03,099
+Teacher'a dedik.
+
+61
+00:11:06,772 --> 00:11:11,772
+teacher'da da bir şey var.
+
+62
+00:11:14,272 --> 00:11:22,551
+Public class person. Şu hatayı bir anlamaya çalışayım. Constructor person in class person cannot be acquired given types.
+
+63
+00:11:23,811 --> 00:11:27,731
+Şimdi person'daki bu şey diyor, olamaz diyor. Niye olamaz?
+
+64
+00:11:29,411 --> 00:11:30,751
+Hiçbir sıkıntı yok.
+
+65
+00:11:31,671 --> 00:11:33,171
+Şimdi muhtemelen bu şeyden.
+
+66
+00:11:33,171 --> 00:11:37,131
+Buraya bir constructor ekliyorum arkadaşlar.
+
+67
+00:11:40,071 --> 00:11:43,031
+Insert code, constructor diyorum. Evet.
+
+68
+00:11:43,831 --> 00:11:44,972
+Bu da çok güzel bir şeymiş.
+
+69
+00:11:46,191 --> 00:11:47,871
+Yani üst sınıfı gönderiyor direkt.
+
+70
+00:11:48,091 --> 00:11:50,651
+Normalde hadi bunu elle yazalım da öbürünü şey yapalım.
+
+71
+00:11:50,751 --> 00:11:52,852
+Public, nature.
+
+72
+00:11:54,751 --> 00:11:56,591
+Buraya bir integer ID alacağız.
+
+73
+00:11:57,852 --> 00:11:58,911
+Integer yaş alacağız.
+
+74
+00:11:59,971 --> 00:12:01,172
+Double, baki alacağız.
+
+75
+00:12:01,171 --> 00:12:23,691
+Şimdi bu aldıklarımız nerede? Burada değil. Bu sınıfa ait değil. O zaman ne yapacağız arkadaşlar? Bunları üst sınıfa göndereceğiz. Yani süper sınıfa göndereceğiz. ID'yi göndereceğiz. Yaşı göndereceğiz. Vakiye'yi göndereceğiz. Şimdi bu süper sınıfta şuraya geleceğini nereden biliyor?
+
+76
+00:12:23,691 --> 00:12:34,471
+Bakıyor ki arkadaşlar şu parametrelerin dizilimi birbirine dönüştürüp dönüştürülememesi gibi durumlarla ayırt ediliyor.
+
+77
+00:12:34,471 --> 00:12:44,931
+Şimdi diyelim ki mesela ben integer id alanına integer'ın bir büyüğü nedir burada? Long int var mıydı? Yok herhalde.
+
+78
+00:12:57,107 --> 00:13:14,107
+Identifier, expected, integer, long desek. Bu long oldu. Bunu da long yapıyorum. Bu da double olarak kalsın.
+
+79
+00:13:17,460 --> 00:13:26,639
+veya short diyelim olursa. Burada başka bir şey özetlemek istiyorum ya.
+
+80
+00:13:33,268 --> 00:13:35,508
+Şimdi burada şöyle bir sıkıntı var.
+
+81
+00:13:37,907 --> 00:13:40,947
+Şunu da şey yapalım, ekleyelim constructorını.
+
+82
+00:13:47,124 --> 00:13:48,643
+Insert code.
+
+83
+00:13:52,755 --> 00:13:53,835
+student şimdi.
+
+84
+00:13:56,195 --> 00:13:58,236
+Super constructor'ı seçin diyor.
+
+85
+00:13:58,615 --> 00:14:01,476
+Bakın, super constructor'da iki tane karşımıza çıktı.
+
+86
+00:14:02,035 --> 00:14:03,235
+Ben şuna göre olsun diyorum.
+
+87
+00:14:04,636 --> 00:14:05,875
+Bunu ilk defa kullanıyorum.
+
+88
+00:14:06,115 --> 00:14:07,176
+Vardı yani böyle bir özelliği.
+
+89
+00:14:07,315 --> 00:14:08,895
+Daha önce 50 kod yazdığım için.
+
+90
+00:14:09,955 --> 00:14:11,335
+Şimdi buradan gidecek şeyler.
+
+91
+00:14:13,215 --> 00:14:13,735
+Şurada.
+
+92
+00:14:14,535 --> 00:14:15,676
+Integer, integer, double.
+
+93
+00:14:16,255 --> 00:14:16,875
+Person'da.
+
+94
+00:14:17,875 --> 00:14:19,415
+Normalde integer, integer, double.
+
+95
+00:14:19,516 --> 00:14:21,016
+Doğrudan buna uygun bir şey var.
+
+96
+00:14:21,016 --> 00:14:48,016
+Ama bazen şuna eş değer olabilecek bir şey oluyor. Şurada bu tabi eş değer olmadığı için hata vermedi. Atama hatası alıyoruz arkadaşlar. Yani diyor ki ben buna mı gideceğim, buna mı gideceğim? Undefinet behavior tarzı bir durum olabiliyor. Bunu daha sonra birkaç örnekle özellikle method overloading'de bu konuyu konuşacağız. Tabi biz burada bir constructor overloading yaptık.
+
+97
+00:14:48,015 --> 00:14:54,315
+Şimdi aynı şekilde eğer ben buraya bir public person şöyle bir şey yazsaydım bakın
+
+98
+00:14:54,315 --> 00:14:59,195
+ID'sini biliyorum, yaşını biliyorum, bakiyesini bilmiyorum
+
+99
+00:15:02,611 --> 00:15:14,912
+Şöyle yapalım. Hani default parametrenin varlığından da altyazı yok. Herhalde geçenlerde birisi sormuştu acaba da default parametre var mı diye hatta ben de hatırlamıyordum. Galiba yoktu. Neyse olup olmaması önemli değil.
+
+100
+00:15:16,171 --> 00:15:18,371
+Student'a geldim. Insert code dedim.
+
+101
+00:15:22,292 --> 00:15:33,111
+Yine bir constructor. Bu sefer şunu seçiyorum. Bu yukarıda bununla alakalı olabilecek şeyi ekleyebiliriz. İlla burada bunu vermek zorunda değiliz arkadaşlar.
+
+102
+00:15:34,592 --> 00:15:43,171
+ID ve yaş versek bu böyle. Peki, teacher da böyleydi. Bunda da bir sıkıntı yok. Sadece şunu kendi üretsin. Daha doğru düzgün yazsın.
+
+103
+00:15:43,171 --> 00:15:46,211
+Constructor
+
+104
+00:15:46,211 --> 00:15:47,511
+Şu diyelim
+
+105
+00:15:47,511 --> 00:15:54,512
+Şimdi bizim şurada yazdığımız Person sınıfındaki bakiye güncelleme
+
+106
+00:15:54,512 --> 00:15:58,731
+Burada System Out Printed'e yazayım bir tane
+
+107
+00:15:58,731 --> 00:16:02,731
+Bakiye güncelleniyor
+
+108
+00:16:06,740 --> 00:16:32,279
+hatta person bakiye güncelleniyor diyelim. Halbuki diyeceğiz ki burada öğrencinin bakiyesi farklı güncellenecek, teacher'ın bakiyesi farklı güncellenecek. İşte bu polymorphism oluyor. Geliyorum burada. Public. Neydi onun adı? Double'du. Double bakiye güncelle.
+
+109
+00:16:36,436 --> 00:17:01,155
+Buraya gelip şöyle 0.0 yazalım. Bunu yazdığımızda bakın diyor ki arkadaşlar Add Overwrite Annotation diyor. Normalde ben bunu küçük g ile yapsam herhangi bir şey yok. Niye yok? Çünkü o başka bu başka. Ama aynı isimde yapınca diyor ki sen burada override etmeye çalışıyorsun. Bunu ekle diyor. Yani bu bir hata değil warning.
+
+110
+00:17:01,155 --> 00:17:28,695
+Bakiye'yi güncelleyeceğiz. Şimdi diyeceğiz ki bu nesnenin bu nesne kime aitse bakiye güncelle metodunu çağırırsam işe yaramaz. Bunu burada kendimiz yapacağız. Diyorum ki get bakiyesini al. Bu get bakiyesinden mesela 1 lira çıkart. Çıkardığım bu yeni fiyatı dis.set bakiye diye bir şeyimiz var bize. Ona gönder.
+
+111
+00:17:31,155 --> 00:17:44,995
+Önce get ettik. Ona göre yazdım. Sonra set ediyoruz. Bundan 1 lira kestik. 1.0 diyelim attım. Gerçi bu kimdi? Öğrenciydi mi? Öğrenciden o kadar kesmeyelim. 0.5 olsun. Aynısını alıyorum.
+
+112
+00:17:48,435 --> 00:17:50,015
+teacher'a gidiyoruz.
+
+113
+00:17:55,827 --> 00:18:23,647
+get bakiye yerine işte buna da 1.0 diyorum. Şimdi hocam bu kadar kolay bir şey için niye buna gerek var diye sorabilirsiniz. Yani bunu başka nasıl yapabilirdik? Bu nesnenin class bilgisini alırdık. Bu öğrenci classından bir şey mi? Öğretmen classından bir şey mi? Önce onu elde ederdik. Öğrenci ise bilir işte 0.5 çıkar, öğretmen ise 1 lira çıkar diyebiliriz. Olur muydu? Olurdu.
+
+114
+00:18:23,647 --> 00:18:53,627
+Yani if denle işte hangi nerede bunu yapacaksak o sınıfta yapabiliriz. Öğrencinin statüsünü tutarız. Ama kabul edelim ki yazılım dedik ya farklı yaşam yaşayan bir şey. Ben üçüncü bir kategori eklesem. Ne bileyim emekli var. Dördüncü ekleyeceğim, beşinci ekleyeceğim, beş yüzüncü ekleyeceğim. Uzun uzun if mi yazacağız? Birazcık hiç mantıksız bir noktaya gidiyor. Yani switch de yazsan, if de yazsan bir şey de bir yerde olmayacak.
+
+115
+00:18:53,647 --> 00:19:13,647
+Onun için bakın bu kalıtım ilişkisiyle ve polymorphism sonucunda üst sınıfta ortak alanları tamamladık, alt sınıfta ilgili spesifikasyonlar yapıyoruz. Mesela öğretmenin kendine ait ayrıca bir bilgisi olur. Neslin nedir mesela? Integer, kıdem yılı.
+
+116
+00:19:13,647 --> 00:19:17,887
+Kıdem diyelim veya tecrübe diyelim ya.
+
+117
+00:19:19,347 --> 00:19:19,827
+Tecrübe.
+
+118
+00:19:20,307 --> 00:19:22,128
+Gerçi biraz İngilizce, biraz Türkçe oluyor da.
+
+119
+00:19:23,088 --> 00:19:25,508
+Şimdi buraya bunun bir id ise gelsin.
+
+120
+00:19:25,588 --> 00:19:26,707
+Integer tecrübe desin.
+
+121
+00:19:28,607 --> 00:19:30,908
+İlk üç kısım süper sınıfta.
+
+122
+00:19:32,647 --> 00:19:33,787
+This.tecrübe.
+
+123
+00:19:35,827 --> 00:19:36,548
+Tecrübe.
+
+124
+00:19:38,768 --> 00:19:39,488
+Burada.
+
+125
+00:19:43,859 --> 00:19:44,519
+atanacak.
+
+126
+00:19:45,919 --> 00:19:46,799
+Tamam mı?
+
+127
+00:19:48,619 --> 00:19:52,039
+Zaten şu bakiye güncellene kendine ait bir şeydi. Şimdi bir de
+
+128
+00:19:52,039 --> 00:19:54,979
+bizim toString metodumuz vardı.
+
+129
+00:19:56,259 --> 00:19:56,700
+Public
+
+130
+00:19:56,700 --> 00:19:59,219
+aslında string
+
+131
+00:19:59,219 --> 00:20:00,460
+biz bu metodu
+
+132
+00:20:00,460 --> 00:20:03,880
+override için sürekli kullanıyoruz. Geçen derste gördük.
+
+133
+00:20:03,880 --> 00:20:05,319
+Ne yapıyor da bu?
+
+134
+00:20:06,019 --> 00:20:07,339
+Kendini tanıtacaktı.
+
+135
+00:20:08,620 --> 00:20:09,040
+Return
+
+136
+00:20:09,040 --> 00:20:12,339
+şöyle diyelim
+
+137
+00:20:12,339 --> 00:20:14,499
+ID eşittir.
+
+138
+00:20:16,619 --> 00:20:20,799
+This nokta, şimdi ID diyemiyorum. Niye? Çünkü bu ID dediğim şey
+
+139
+00:20:20,799 --> 00:20:26,499
+person sınıfında nasıl tanımlı? Private tanımlı. Hani bunu protected yaparsak
+
+140
+00:20:26,499 --> 00:20:32,299
+bunu protected yaparsak şöyle artı
+
+141
+00:20:32,299 --> 00:20:39,080
+this nokta ID'yi bulabildik. Ama gerek var mı? Bence yok. Zaten set get metoduyla erişiyoruz.
+
+142
+00:20:39,079 --> 00:20:46,079
+Constructor'la da değer atıyoruz. Onun için private olması daha iyi. En azından her önüne gelen de burada şey yapamasın diye.
+
+143
+00:20:46,079 --> 00:21:08,859
+Ha bu arada bunu final class yaparsak şu teacher'da tabii şunu böyle yapacağız şimdilik. Ne oldu? Dedi ki buradan final person sınıfından inherit yapamıyorsun dedi. Onu da söylemiş olalım. Orada da final ekleyeceğiz diye derste konuşmuştuk.
+
+144
+00:21:09,080 --> 00:21:12,120
+C sharp'ta seal it diye bir şey ekliyoruz.
+
+145
+00:21:12,999 --> 00:21:19,120
+id plus this nokta diyorum ki id değil get id.
+
+146
+00:21:21,120 --> 00:21:22,300
+Her şey karıştı.
+
+147
+00:21:33,107 --> 00:21:39,927
+getid artı yaş eşittir
+
+148
+00:21:43,763 --> 00:21:47,603
+Hatta niye böyle yapıyoruz arkadaşlar? Şuradan daha bu işi hızlandıralım.
+
+149
+00:21:49,204 --> 00:21:50,463
+Insert code diyorum.
+
+150
+00:21:50,923 --> 00:21:51,543
+ToString
+
+151
+00:21:51,543 --> 00:21:55,684
+override metot.
+
+152
+00:21:55,823 --> 00:21:56,543
+Yok muymuş?
+
+153
+00:21:58,043 --> 00:21:59,363
+Toygar söylemişti.
+
+154
+00:21:59,784 --> 00:22:02,104
+IntelliJ'de ToString de vardı. Ben mi göremiyorum?
+
+155
+00:22:03,163 --> 00:22:04,284
+Equals hash code
+
+156
+00:22:04,284 --> 00:22:05,923
+add property desek
+
+157
+00:22:05,923 --> 00:22:09,143
+Yok. Tamam.
+
+158
+00:22:09,143 --> 00:22:12,143
+Hocam, override kısmında
+
+159
+00:22:12,143 --> 00:22:15,604
+kısmında bir personmiş bir de object.
+
+160
+00:22:17,104 --> 00:22:18,643
+Alright metotta?
+
+161
+00:22:19,523 --> 00:22:21,363
+Object'i açarsak.
+
+162
+00:22:21,963 --> 00:22:22,203
+Tamam.
+
+163
+00:22:23,403 --> 00:22:24,563
+Ama şey yok.
+
+164
+00:22:27,243 --> 00:22:28,263
+Diğerleri yok.
+
+165
+00:22:28,883 --> 00:22:32,243
+Yani bizim aradığımız şey yok.
+
+166
+00:22:32,883 --> 00:22:33,664
+ToString yok.
+
+167
+00:22:35,023 --> 00:22:36,203
+Neyse sorun değil.
+
+168
+00:22:36,763 --> 00:22:38,063
+Artık iş başa düştüğü yazacağız.
+
+169
+00:22:38,063 --> 00:22:39,683
+This.get
+
+170
+00:22:39,683 --> 00:22:41,383
+Yaş
+
+171
+00:22:41,383 --> 00:22:58,023
+Artı şöyle bakiye bakiye cittir artı dis.net bakiye
+
+172
+00:23:02,771 --> 00:23:03,731
+artı
+
+173
+00:23:03,731 --> 00:23:06,891
+is nokta
+
+174
+00:23:06,891 --> 00:23:08,732
+şey
+
+175
+00:23:08,732 --> 00:23:12,811
+dem veya
+
+176
+00:23:12,811 --> 00:23:13,732
+tecrübe diyelim
+
+177
+00:23:20,468 --> 00:23:24,727
+Artı, dis.tecrübe
+
+178
+00:23:24,727 --> 00:23:28,468
+Bir de buna artı
+
+179
+00:23:28,468 --> 00:23:31,207
+Şunu dersek
+
+180
+00:23:31,207 --> 00:23:34,428
+Yeterli olur.
+
+181
+00:23:35,987 --> 00:23:36,888
+ID'miz bu
+
+182
+00:23:36,888 --> 00:23:39,687
+Yaşımız bu
+
+183
+00:23:39,687 --> 00:23:41,648
+Faki'miz bu
+
+184
+00:23:41,648 --> 00:23:43,327
+Tecrübemiz bu
+
+185
+00:23:43,327 --> 00:23:46,247
+Dedik ve şurada
+
+186
+00:23:46,247 --> 00:23:49,247
+Noktayı koyduk
+
+187
+00:23:49,247 --> 00:23:56,047
+Aynısını alacağım arkadaşlar. Öğrenci için bunu farklı bir şekilde yazmam lazım çünkü.
+
+188
+00:23:58,047 --> 00:24:05,508
+Hocam tecrübe isterseniz bir eşittir koyun bitişik çıkmaz. Tecrübenin sonuna.
+
+189
+00:24:07,648 --> 00:24:09,107
+Tamam bunu yaparız.
+
+190
+00:24:13,364 --> 00:24:35,423
+Burada tecrübe diye bir şey yok. Mesela buna da diyelim ki private burada string olsun hadi. Okul veya bölüm no bölüm adı. Bunu bölüm adı diyelim. Buraya da string bölüm adı diyorum.
+
+191
+00:24:35,423 --> 00:24:40,864
+list.volume adı eşittir.
+
+192
+00:24:44,864 --> 00:24:46,663
+Bunu aldık.
+
+193
+00:24:48,264 --> 00:24:51,584
+Şurada da list.volume adı eşittir.
+
+194
+00:24:51,584 --> 00:24:51,944
+Bakın.
+
+195
+00:24:53,044 --> 00:24:55,163
+Burada da bir ne var arkadaşlar?
+
+196
+00:24:56,683 --> 00:24:58,283
+Overwrite işlemi yaptık.
+
+197
+00:24:59,663 --> 00:25:03,523
+ToString'imizi de şöyle kapatalım.
+
+198
+00:25:05,423 --> 00:25:08,163
+Genel olarak kalıtım bu şekilde.
+
+199
+00:25:09,243 --> 00:25:16,063
+Şimdi ben bu öğrenciyi, bu personeli ve öğretmeni kullanarak ne yapacağım?
+
+200
+00:25:17,063 --> 00:25:18,864
+Test sınıfından bazı denemeler yapalım.
+
+201
+00:25:19,123 --> 00:25:21,343
+Şimdi diyebiliriz ki şunu doğrudan yapabiliyoruz arkadaşlar.
+
+202
+00:25:22,283 --> 00:25:27,743
+Bir student nesnesi S1 eşittir.
+
+203
+00:25:28,543 --> 00:25:32,263
+New student. Doğrudan böyle bir şey oluşturabilirim.
+
+204
+00:25:32,264 --> 00:25:38,524
+Tabi ne yapacağız? Student'ın tanımına esas olarak yani constructor'ına esas olarak bir şeyler yapmamız gerekiyor.
+
+205
+00:25:38,524 --> 00:25:50,244
+İşte id, yaş, bakiye, bölüm adı girecekmişiz. 1, 15, bakiyesi 15.0, bölüm adı bilgisayar.
+
+206
+00:25:52,323 --> 00:25:58,524
+Böyle bir şey oluşturabilirim. Sonra gidip bunun S1.bakiye güncelle diyeceğim.
+
+207
+00:25:58,523 --> 00:26:05,863
+Şimdi S1.bakiye güncelerince S1.bakiye
+
+208
+00:26:09,076 --> 00:26:09,935
+Eşittir.
+
+209
+00:26:11,335 --> 00:26:11,975
+Artı
+
+210
+00:26:18,900 --> 00:26:29,320
+Çünkü bakiye güncelle bir integer değer döndürüyor. Yeni bakiyemizi yazdırabiliriz. Hemen bunu bir deneyelim. Hem de diğer bütün classlarımız değerlenmiş olsun.
+
+211
+00:26:31,539 --> 00:26:33,639
+Hiçbir şey yazdırmadı. Niye yazdırmadı?
+
+212
+00:26:36,699 --> 00:26:40,479
+Student s1.bakiye güncelle deyince
+
+213
+00:26:40,479 --> 00:26:45,679
+Return 0.0 yapıyor. Bunu
+
+214
+00:26:45,679 --> 00:26:57,519
+list.getvakiye diyeceğiz. Vakiyesi güncellenmiş olsun. Run diyelim.
+
+215
+00:27:03,571 --> 00:27:06,451
+Niye olmadı?
+
+216
+00:27:08,500 --> 00:27:10,459
+S1.bakiye güncelle
+
+217
+00:27:14,932 --> 00:27:16,731
+Bir şey mi atlıyorum diye.
+
+218
+00:27:18,251 --> 00:27:19,791
+Pek 3 hafta 5
+
+219
+00:27:20,312 --> 00:27:21,392
+Yok.
+
+220
+00:27:24,852 --> 00:27:27,391
+Şuraya bir şey koyalım, bir divak yapalım ne olacak?
+
+221
+00:27:37,779 --> 00:27:38,579
+Listening on.
+
+222
+00:27:41,159 --> 00:27:42,799
+Build diyelim bir...
+
+223
+00:27:59,508 --> 00:28:00,868
+Şöyle round diyorum.
+
+224
+00:28:02,867 --> 00:28:05,027
+Yeni bakiye 14.5 olmuş. Tamam.
+
+225
+00:28:06,127 --> 00:28:08,268
+Şimdi bir tane öğretmen oluşturuyorum.
+
+226
+00:28:17,011 --> 00:28:26,352
+Bunlar geçenki yaptıklarımızdan çok farklı şeyler değil nesne oluşturma açısından. Ama ne yaptık? Öğretmenin bakiyesi diye bir şey yoktu. Onu kişi sınıfından tanımladık.
+
+227
+00:28:27,551 --> 00:28:38,171
+Bir yaş, tamam. Bir girdik. Kırk girelim. On beş nokta sıfır sıfır girelim. Tedibesi yirmi olsun.
+
+228
+00:28:38,171 --> 00:28:42,291
+Aynısını
+
+229
+00:28:42,291 --> 00:28:49,291
+STD yeni vakiye, teach yeni vakiye dedim
+
+230
+00:28:49,291 --> 00:28:53,571
+T1 nokta vakiye güncellediyorum
+
+231
+00:29:04,468 --> 00:29:12,468
+Allah Allah. Bu net bir iste alakalı bir sıkıntı mı var acaba? Yok.
+
+232
+00:29:12,468 --> 00:29:16,468
+Round file diyelim.
+
+233
+00:29:18,548 --> 00:29:23,847
+bir clean and build. En son derlenmiş halini şey yapıyor nedense.
+
+234
+00:29:27,731 --> 00:29:55,631
+Tekrardan terlemek gerekiyor galiba. Round file diyelim. Evet. Burada da şimdi teacher'da da şurada this.get bakiye diyebiliriz. Evet. Şimdi dikkat ederseniz teacher içerisinden ben bakiye bilgisine erişim sağlayabiliyorum.
+
+235
+00:29:55,631 --> 00:30:22,831
+bakın. Şuraya geldiğim zaman T1 nesnesi içerisinden aslında getpakiye yine erişim var. Niye? T1 nesnesi üst sınıftan yani person sınıfından bir kalıtım alabiliyor. Eğer ki bunları şuradaki person'dakileri getpakiye, setpakiyeleri, şunlar private olabilir. Protected yapsaydım ne yapacaktım?
+
+236
+00:30:22,831 --> 00:30:40,812
+erişemeyecektim şeylere. Yani ancak alt sınıflardan erişebilirdim diyoruz. Bazıları dışarıya açık olacak, bazıları dışarıya kapı olacak. Şimdi ilk bakmak istediğimiz şey bu. İşin daha güzel tarafı burada şunu oluşturuyoruz arkadaşlar.
+
+237
+00:30:40,812 --> 00:30:43,272
+Student sınıfından
+
+238
+00:30:43,272 --> 00:30:45,871
+S
+
+239
+00:30:45,871 --> 00:30:49,051
+ne bileyim student diyorum ya
+
+240
+00:30:49,051 --> 00:30:50,092
+person sınıfından
+
+241
+00:30:50,092 --> 00:30:53,812
+şeyler isminde bir dizi oluşturuyorum
+
+242
+00:30:53,812 --> 00:30:56,231
+new person
+
+243
+00:30:56,231 --> 00:30:58,772
+bunu geçenlerde kitaplar için yaptık
+
+244
+00:30:58,772 --> 00:31:00,332
+bu ne yapıyordu?
+
+245
+00:31:02,332 --> 00:31:04,572
+10 tane referans üretiyordu
+
+246
+00:31:04,572 --> 00:31:08,412
+10 tane dizi değil bakın
+
+247
+00:31:08,412 --> 00:31:10,132
+her bir referansa
+
+248
+00:31:10,131 --> 00:31:19,511
+Yani kişilerin her bir elemanına sıfırıncıdan başlamak üzere bir nesne new ile üretmem lazım. Burada sadece 10 tane referans ürettik.
+
+249
+00:31:19,511 --> 00:31:43,011
+Ben diyorum ki kişilerin sıfırıncısı S1 olsun, kişilerin birincisi T1 olsun, kişilerin ikincisi için New diyorum, ne olsun? Teacher olsun.
+
+250
+00:31:43,011 --> 00:32:05,511
+Bu teacher'ın da şuradaki bilgilerini alacağım. IDC 2 olsun mesela. Ne bileyim bu 50 yaşında, 55 yaşında olsun. 25 lira olsun. Kişilerin 3'ü içinde bir öğrenci üretelim. Neyim neyim olmaz.
+
+251
+00:32:12,339 --> 00:32:39,779
+1, 1, 2, 3, hatta 1, 2, 3 ve 4 diye yapalım. Bu öğrencinin işte bölümü elektronik olsun dedik. Bakın bunu yapabiliyoruz. Şimdi şurada ne varmış? The array is only written to, never written to. Sadece diyor yazıldı diyor, hiç şey yapılmadı, okulmadı diyor. Tamam o problem değil.
+
+252
+00:32:39,779 --> 00:32:57,779
+Sonra geliyorum. Bizim bir for döngümüz vardı hatırlarsanız. Şimdi bizim kişiler diye bir şeyimiz var değil mi? Bu kişilerin her biri ne türden nest referansı içeriyor? Kişi türünden. O zaman person türünden bir kişi indisi oluşturuyorum. Bu kişileri indisliyorum.
+
+253
+00:32:57,779 --> 00:33:24,200
+ve diyorum ki burada şu yaptığım işi şurada yapacağım. Yeni bakiye diyelim. Hatta integer i eşittir 0 diyorum. Şuraya i yazdıralım. i artı diyelim. i plus plus diyelim burada da. Niye 0'dan başladık? 1'den başlasın.
+
+254
+00:33:24,200 --> 00:33:42,259
+yeni bakiye kişi nokta bakiye güncellediyeceğim. Burada eğer bu kişi yani şuradaki şey öğrenci ise gidecek öğrencidekini çağıracak değilse diğerini çağıracak. Şunları şimdilik kapatıyorum arkadaşlar.
+
+255
+00:33:42,259 --> 00:33:54,159
+Hocam kişilerin son kişisi şey indisi tekrar ikiymiş. New student var ya kişiler iki eşittir.
+
+256
+00:33:54,159 --> 00:34:05,439
+Evet tamam teşekkür ederim. Dört tane alan. Şimdi gelelim tabii burada kişilerde normalde on tane şey vardı. Bakalım ne göreceğiz.
+
+257
+00:34:05,439 --> 00:34:30,879
+Önce bir yine build diyorum. Project. Compile on save. Mesela şu compile on save bu bazı arkadaşlarımızın yaşadığı problemle alakalı olabilir. Şimdi bir run diyoruz.
+
+258
+00:34:36,980 --> 00:34:37,919
+niye çalışmadı?
+
+259
+00:34:39,720 --> 00:34:41,179
+Bir şey yapmadık mı?
+
+260
+00:34:43,059 --> 00:34:44,940
+Buyrun açık kaldı galiba.
+
+261
+00:34:45,579 --> 00:34:46,339
+Mustafa Nur'un.
+
+262
+00:34:47,719 --> 00:34:48,739
+Yok şu an.
+
+263
+00:34:51,379 --> 00:34:52,499
+Run file.
+
+264
+00:34:54,660 --> 00:34:55,379
+Evet.
+
+265
+00:34:56,160 --> 00:34:58,119
+Şimdi şundan al pointer ona geleceğiz arkadaşlar.
+
+266
+00:34:58,119 --> 00:35:02,939
+Birinci kişi işte yeni bakiye 14 falan falan falan bunlar görülüyor.
+
+267
+00:35:03,059 --> 00:35:03,240
+Güzel.
+
+268
+00:35:03,240 --> 00:35:27,240
+Demek ki şey bir de şunu yapmak istiyorum. Hatta niye öyle yapıyoruz ki? Burada yeni vakiyeyi güncelledemeyelim. Kişinin kendini tanıtı çağıralım. Yani string to string'i çağıralım. Şimdi string'i çağırmak için neydi? Nesnenin kendi referansını vermemiz gerekiyor. Yani kişiyi versek yeterli.
+
+269
+00:35:27,239 --> 00:35:31,879
+artı şöyle diyelim tık tık tık.
+
+270
+00:35:33,599 --> 00:35:38,859
+Kişi ne yapacak? Buradaki person'a gelecek string to string metodunu çağıracak.
+
+271
+00:35:39,819 --> 00:35:47,739
+Yazdık mı burada? Tabi person'da yok. Gidecek student'taki string to string, student'sa student'sa değilse teacher'ı getirip yazacak.
+
+272
+00:35:48,840 --> 00:35:55,679
+Bu bu şekilde iyiydi. Not to string de yazabiliriz ama gerek yoktu oradan to string metodu aktif hale geliyordu.
+
+273
+00:35:55,679 --> 00:36:18,439
+Şimdi bunu bir daha, benim buna bir çare bulmam lazım, böyle olmaz. Yani run and, build and run diye bir şey yapması lazım ama nedense ya bunun ayarlarında bir şey oldu. Set project, configuration, set main project, run file diyelim.
+
+274
+00:36:18,439 --> 00:36:33,700
+Evet ID'miz bu. İşte yaşımız 15, tecrübe. Tecrübe bilgisayar nereden geldi? Şu öğrencide şeyimiz var. Tecrübe olmaz. Bölüm diyelim.
+
+275
+00:36:40,115 --> 00:36:40,635
+Kulina.
+
+276
+00:36:44,340 --> 00:36:47,399
+Nesneye Yelene bir şey olmuş, bana bakmam lazım.
+
+277
+00:36:56,019 --> 00:37:17,280
+Tamam. Demek ki ilgili metot hangi sınıftansa çağırıyor. Bu güzel bir özellik. Şimdi mesela ben yeni bir öğrenci şeyi, yeni bir sınıf ekleyin desem ne yapacağız? Hiç student'a, teacher'a dokunmadan, person'a da dokunmadan gideceğim. Yeni bir klas oluşturu diyeceğim. Ne olsun? Emekli klas olsun diyeceğim.
+
+278
+00:37:19,379 --> 00:37:24,379
+Ondan sonra bunun mesela kendine ait nesi olabilir? Emeklilik yılı olabilir diyeceğiz.
+
+279
+00:37:26,019 --> 00:37:27,720
+Emekli yılı
+
+280
+00:37:27,720 --> 00:37:31,499
+Diyeceğiz ki bu extent edecek
+
+281
+00:37:31,499 --> 00:37:36,720
+Kimden? Person'dan extent edecek
+
+282
+00:37:36,720 --> 00:37:40,220
+Bu extent edince buna bir tane insert kod diyeceğiz
+
+283
+00:37:40,220 --> 00:37:41,499
+Constructor diyeceğiz
+
+284
+00:37:41,499 --> 00:37:44,600
+Constructor'ı pardon şuradan yapacağız
+
+285
+00:37:44,600 --> 00:37:46,479
+Üst sınıftan Constructor alacağız
+
+286
+00:37:46,479 --> 00:37:48,600
+Generate diyeceğiz
+
+287
+00:37:48,600 --> 00:37:51,119
+Ve bu iş bu şekilde
+
+288
+00:37:51,119 --> 00:37:52,939
+Eğer istersek
+
+289
+00:37:52,939 --> 00:37:55,560
+Diğer metotları da ekleyebilirim
+
+290
+00:37:55,559 --> 00:38:19,559
+Mesela diğer metotları eklediğince bu ne yapıyormuş? Overwrite metot diyelim. Şimdi overwrite edilebilecek bunun metotları neler var? Person sınıfından bakiye güncelleyi overwrite edebilirsin diyor. Get şey yaş güncelleyi overwrite edebilirsin diyor. Set yaşı overwrite edebilirsin diyor. Bunlar hepsi hani overwrite edilebilir metotlar. Veya işte obje sınıfından daha üst sınıftan overwrite edilebilirsiniz.
+
+291
+00:38:19,560 --> 00:38:48,560
+Overwrite'inden bakın two-string metodu varmış. Bunu Overwrite generate diyorum. Kendine göre işte ne yaptı? Şimdilik bir şey yazmadı. Süper'deki two-string'i çağırdı. Yani person'daki two-string'e bakacak. Person'da two-string tanımlıysa onu yapacak. Eğer person'da da tanımlıysa obje sınıfındaki two-string'i çağıracak. Şimdilik mesela biz burada ne diyelim? Ben emekliyim diyelim. Ben emekliyim benden para almayın. Dedik ve bitirdik. Peki arkadaşlar.
+
+292
+00:38:49,560 --> 00:39:07,560
+Bu da böyle. Şimdi burada söyleyeceğim şey yaş güncelleme peki nasıl çalışıyor? Bir tane de ona örnek verelim. Diyelim ki şurada hafta beşte bu kişinin önce yaşı güncellensin.
+
+293
+00:39:07,559 --> 00:39:15,599
+kişi nokta yaş güncelli diyelim.
+
+294
+00:39:16,979 --> 00:39:21,599
+Kişi nokta hatta şu kişiyi yazdıralım önce.
+
+295
+00:39:26,900 --> 00:39:28,779
+nokta vakiye güncelli diyelim.
+
+296
+00:39:32,467 --> 00:39:40,107
+Böyle yaparsak yaş güncelleme hepsi için aynı. Üst sınıftan bakiye güncelleme alt sınıftan çalışacak.
+
+297
+00:39:51,668 --> 00:39:54,247
+Herhangi bir problem var mı buraya kadar anlattığım şeyden?
+
+298
+00:39:56,568 --> 00:39:58,507
+Hocam ben bir soru sorabilir miyim?
+
+299
+00:40:00,187 --> 00:40:13,168
+Şey, kişiler oluşturduk ya, dizinin, normal bir dizinin elemanları sabit bir size'da olmadı değil mi?
+
+300
+00:40:13,168 --> 00:40:20,208
+Size of class var ya şöyle fixed size, deep.
+
+301
+00:40:21,787 --> 00:40:36,668
+Biraz şey şu an konuşamıyorum ama normal bir dizinin şeyde, memoride sabit bir size vardır.
+
+302
+00:40:36,668 --> 00:40:39,487
+Var, evet. Yani kişiler dizinin size var.
+
+303
+00:40:39,487 --> 00:40:46,028
+Evet. Ama mesela teacher ya da student farklı boyutta değil mi?
+
+304
+00:40:46,727 --> 00:40:56,007
+Tabii ki. Ama burada zaten bu dizi neyi saklıyor? Bu student nesnesinin referansını saklıyor veya işte teacher nesnesinin referansını saklıyor.
+
+305
+00:40:56,007 --> 00:41:06,067
+Bunlar da bunun üst sınıfı olduğu için ne yapıyor? Bunlar birbirine dönüştürülebilir bir nesne olarak ağlayıp ne yapıyor?
+
+306
+00:41:06,187 --> 00:41:10,007
+Kişilerin üst sınıfından elde edilen referans dizisinde saklayabiliyoruz.
+
+307
+00:41:12,287 --> 00:41:16,168
+Anladım. Referanslar farklı bir şey.
+
+308
+00:41:16,507 --> 00:41:19,507
+Evet. Referans farklı. Doğrudan adres saklıyorsun.
+
+309
+00:41:19,507 --> 00:41:45,547
+Şimdi burada şunu da yapabiliriz. Person sınıfından P oluşturur gibi yapıp new student deriz. Yani person gibi başladık, öğrenci gibi bitirdik. 5 diyelim. Mesela kişiler 4'e de ne yapalım? P'ye aktaralım.
+
+310
+00:41:45,547 --> 00:41:52,627
+Bu da mümkün. Yani kişiler böyle bir üst sınıftan başlayıp şuna bakıyoruz.
+
+311
+00:41:56,207 --> 00:42:02,867
+Şimdi şöyle diyeceğiz yine. Ya burada bir bunu ben halletmem lazım ya. Bu bana çok takıntı oldu kafama.
+
+312
+00:42:08,403 --> 00:42:19,423
+Şimdi öğrenciyi, öğretmen veya işte emekli de yapabiliriz arkadaşlar. Statüsünü değiştirebiliyoruz. Bu sayede. Ne olduğunu şimdi konuşacağız, yazacağız.
+
+313
+00:42:22,423 --> 00:42:28,943
+Şu aradakinde işte bir tanesinde ne var? Hafta 5 main, şurada 18. satır demiş.
+
+314
+00:42:28,943 --> 00:42:50,303
+Yaş günceledim. Bir yerde birinde bir hata veriyor. O çok önemli değil. Yani bir exception, null pointer exception. Muhtemelen bilgi eksiklerinden bakın. Her birini işte ikişer defa, çünkü iki defa çağırdık, yazdırdık ya. Birinin bakiyesini 0-5 artırırken birini 1 artırıyor. Onu görebiliyoruz.
+
+315
+00:42:50,303 --> 00:43:12,743
+Şimdi mesela benim şu P nesnem var. Artık bu P nesnem öğrenci değil, öğretmen oldu. Bir şekilde öğretmen mertebesine aldık. O zaman diyoruz ki P eşittir. Eğer ben bunu P'den tanımlamışsam, yani üst sınıftan tanımlamışsam artık bu bir new student diyorum. Bu studentla bilgilerini kaybetmemem gerekiyor.
+
+316
+00:43:12,743 --> 00:43:19,303
+Şimdi student'ın konstraktöründe yeni bir nesne oluşturacağım. Pardon, student'u teacher diyeceğiz.
+
+317
+00:43:20,304 --> 00:43:49,644
+Bu teacher'ın nesneli şeyini kaybetmememiz gerekiyor. ID olarak diyorum ki p.getID'yi kullanabiliriz. Çünkü p dediğimiz yukarıda bir ID'si vardı. p. işte bu ikincisi yaştı. Yaşı kullanabiliriz. Sonra p. bakiye'yi de kullanabiliriz. Tamam. Sonra ne varmış? Tecrübe. Şu an herhangi bir tecrübesi yok. Sıfır. Yani onun bölüm bilgisi artık o öğrencinin gitti. Ne oldu?
+
+318
+00:43:49,643 --> 00:44:18,963
+bu öğretmenmiş gibi davranıyor. Gelin bunu şöyle yapalım. Yazdırdıktan sonra P nokta böyle bir şey dedik. Sistem alt printelen ne? Zaten şurada P'yi galiba en son eklemiştik. Şurada en son göreceğiz. Şunu da bir kapatalım isterseniz. Hani karmaşık iki şey her şeye ait. Gerçi problem değil. Aynısını göreceğiz.
+
+319
+00:44:19,643 --> 00:44:31,303
+P'yi en son ekledik. Burada eklediğimiz yeni P'yi, yani bilgileri nakledilmiş P'yi öğretmen olarak göreceğiz.
+
+320
+00:44:35,123 --> 00:44:53,044
+Null pointer'lar yine önemli değil. Bakın nerede Null pointer? Şurada aldık herhalde. O da şeyden dolayı. Beşinciye kadar var ya. Tamam o zaman diyorum ki şimdilik şurayı 5 yapalım. Diğer satırı görmek için böyle bir şey yapmak lazım.
+
+321
+00:45:09,684 --> 00:45:13,343
+Bu kişi bakın
+
+322
+00:45:13,343 --> 00:45:25,023
+İ zaten sonra 1 arttı, 6 oldu. Artık bu 5 olan, yaşı 16 olan, baki olan, sıvı tecrübesi şu olan kişi haline geldi.
+
+323
+00:45:28,755 --> 00:45:34,535
+Öyle değil mi? Bir dakika. Hata yaptık mı burada? Beşinci de tecrübe. Beşinci de bu kişi neydi?
+
+324
+00:45:39,219 --> 00:45:41,420
+Ha bir dakika yanlış şunu şuradan sileceğiz artık.
+
+325
+00:45:43,819 --> 00:45:44,859
+Şurada olacak.
+
+326
+00:46:07,155 --> 00:46:27,015
+Şimdi bilgisayar öğrencisi olan şey, öğrenci arkadaş burada bu hale geldi. Şimdi student p new person olabilir mi? Yok. Şimdi üst sınıfa anladım demek istediğini. Alt sınıftan bir şeyi üst sınıfa kest edemiyoruz.
+
+327
+00:46:27,015 --> 00:46:44,295
+Yani student dedik, pp diyelim, new person. Şimdi person'ın endine göre bazı şeyleri var. Ne var mesela? İşte bir girelim, iki girelim, üç girelim.
+
+328
+00:46:50,643 --> 00:47:09,324
+diyor ki, person cannot be converted to student. Bu hiyerarşinin tersine convert işlemi yapılamıyor. Aslında integer'ın long'a dönüşümü böyle mümkünken long'un integer'a dönüşümü de bir anlamda bunun. Gerçi orada doğrudan kalıtım yok da. Aynen bunun gibi düşüneceğiz.
+
+329
+00:47:09,324 --> 00:47:14,443
+Stude'un daha üst sınıf bu işte impossible, illegal bir durum.
+
+330
+00:47:15,383 --> 00:47:16,883
+Şimdi tek sıkıntımız şu.
+
+331
+00:47:17,123 --> 00:47:20,664
+Kalıtımla alakalı başka bir kavram falan burada çok yok arkadaşlar.
+
+332
+00:47:21,184 --> 00:47:22,583
+Şunu söyleyebiliriz.
+
+333
+00:47:22,583 --> 00:47:29,904
+Mesela bir Stude'un oluşturulduğunda süpere gidiyor.
+
+334
+00:47:30,283 --> 00:47:31,984
+Bu süperde ne var? Şu var mesela.
+
+335
+00:47:32,423 --> 00:47:33,703
+Önce bu işlemler yapılıyor.
+
+336
+00:47:33,783 --> 00:47:38,484
+Eğer süperi yazmasaydım bu ID'ler.
+
+337
+00:47:39,324 --> 00:47:58,703
+Herhangi bir, yani şurada argümanlar var, bir yere atanmadan, yani burayı da boş kabul ettim, şöyle yapalım arkadaşlar, daha anlaşılır olsun, public student, böyle bir şey, bir constructor.
+
+338
+00:47:58,703 --> 00:48:05,023
+Şimdi bunun üst sınıfta uygun bir constructor'ını yazacağız.
+
+339
+00:48:07,864 --> 00:48:11,864
+Diyeceğiz ki public person.
+
+340
+00:48:14,963 --> 00:48:17,683
+Burada da mesela istediğimiz bir şeyi yapabiliriz.
+
+341
+00:48:18,023 --> 00:48:23,023
+Şimdi şurada diyor ki bunu önce yani şu an gerçi gördü.
+
+342
+00:48:23,823 --> 00:48:25,803
+Ben burada salt diyorum.
+
+343
+00:48:25,803 --> 00:48:30,423
+Öğrenci oluşturuldu
+
+344
+00:48:30,423 --> 00:48:36,143
+Hiçbir şey yazmasam bile person'a geliyorum bakın
+
+345
+00:48:36,143 --> 00:48:38,083
+Out
+
+346
+00:48:38,083 --> 00:48:42,083
+Person oluşturuldu
+
+347
+00:48:42,083 --> 00:48:44,483
+Geliyorum
+
+348
+00:48:44,483 --> 00:48:47,923
+Bir de detay olarak bunu anlatalım burada
+
+349
+00:48:52,371 --> 00:48:53,011
+Şunu
+
+350
+00:48:53,011 --> 00:48:57,391
+Veya şöyle diyelim.
+
+351
+00:49:19,731 --> 00:49:37,311
+Kalıtım hiyerarşisi gereği, Kadir soruna cevap vereceğim. Önce new student oluşturulmadan önce gidiyor student'ın üst sınıfına bakıyor. Student'ın üst sınıfı person. Person da şu değişkenleri oluşturuyor arkadaşlar.
+
+352
+00:49:37,311 --> 00:50:07,211
+Hatta bir class variable işte person'la alakalı bir başka class değişken varsa önce gidiyor o nesneyi oluşturuyor. Ondan sonra constructor çağrılıyor. Yani constructor çağrılacak ama constructor çağrılmadan önce şuradaki işler yapılacak. Hatta static varsa önce statikler yapılır. Ondan sonra şuradaki member variable'lar yapılır. Ondan sonra constructor tanımlanacak. Şimdi bu tanımlanacak. Person oluşturuldu yazacak. Sonra gelecek student'un bu boş olan constructor'ını çağırdık.
+
+353
+00:50:07,211 --> 00:50:15,891
+Çünkü öğrenci oluşturuldu yazacak ondan sonra nesne tamamen oluşturulacak ve şu referans ataması yapılacak. Şimdi çalıştırıyorum.
+
+354
+00:50:20,596 --> 00:50:44,715
+Önce person oluşturuldu, sen sonra öğrenci ol. Halbuki ben burada hiçbir şekilde şeyi çağırmadım. Student'ın içinde, yukarıdakini çağırdım. İşte burada gizli bir tane süper var. Yazsan da yazmasan da gizli bir süper. Şimdi bu gizli süper, default olarak boş parametreli şeyi çağırıyor. Constructor'ı çağırıyor.
+
+355
+00:50:55,827 --> 00:50:57,087
+Bunlar çalıştıralım.
+
+356
+00:51:06,356 --> 00:51:35,795
+Peki bu segment null pointer exception ne? Yani biz 10 elemanlık bir dizi oluşturmuştuk biraz önce. 6 diyelim. 6 elemanı da şimdi burayı 6'ya göre şekillendiriyor şu döngü. 6. elemana herhangi bir referans atamadığımız için gidiyor null yeri gösteriyor. Null yeri gösterdiği için orada yazacak bir şey bulamıyor. Exception fırlatıyor. O exception da ileride yani bu kodu paylaşacağım. İleride diyeceğiz ki bakın böyle hafta 5'te böyle bir hata almıştık. Gelin bunu.
+
+357
+00:51:36,356 --> 00:51:51,716
+halledelim. Student P eşittir, new student ile person P, new student arasında bizim ne gibi kullanım farkımız var? Yani tam olarak ne için böyle bir şekilde yapabiliyoruz? Tam farkını anlamadım. Şimdi Kadir, üst sınıfımız burada person, alt sınıfımız student, teacher ve emekli.
+
+358
+00:51:51,716 --> 00:51:53,596
+Retired
+
+359
+00:51:53,596 --> 00:52:21,695
+Şimdi bunların üçünü ortak bir şöyle bir değişkenle tanımlayabiliyorum. Tamam mı? Üst sınıftan tanımlayabiliyorum referans olarak. Nesnenin kendisinde herhangi bir değişiklik yok. Nesneyi tutan referans değişkende farklılık var. Bu sayede ben ne yapıyorum? Mesela bütün 100 tane öğrencim var veya işte 500 tane şeyim var, öğretmenim var, 600 kişi ve bunların hepsi person sınıfından.
+
+360
+00:52:21,716 --> 00:52:49,315
+kalıtım almışlar. Şimdi sen öğrencileri ayrı, öğretmenleri ayrı çağırmak yerine person sınıfından referansları tutarsan böyle bir döngüyle bütün elemanları dolaşıp ilgili yöntemlerin hepsine ne yapabilirsin? Erişebiliyorsun veya ilgili feature'ları kullanabiliyorsun. Mesela hepsinin bakiyesine 5 lira para yükleyeceksin. Tamam mı? Yani bonus para yükleyeceksin. O zaman gidip tek tek bunu değiştirmek yerine ne yaparsın?
+
+361
+00:52:49,315 --> 00:52:58,235
+İşte kaç tane elemanın varsa onun üst sınıfı cinsinden bir referans fizisi oluşturup bunları ne yapıyorsun birbirine ilişkilendiriyorsun.
+
+362
+00:52:59,436 --> 00:53:03,115
+Yaptığımız şey bir anlamda buna upcasting gibi bir şey diyorlar.
+
+363
+00:53:04,055 --> 00:53:06,615
+Yani üst sınıf üzerinden erişmek.
+
+364
+00:53:06,615 --> 00:53:14,595
+Ve üst sınıfla oluşturduğum P sayesinde oluşturduğum bir şeyle referansla burada öğrenciyi ne yaptım?
+
+365
+00:53:14,716 --> 00:53:15,736
+Öğretmen haline getirelim.
+
+366
+00:53:15,735 --> 00:53:24,455
+Hary ki ben burada bunu person değil de student yapsaydım student türünden bir referansı şurada bunu atayamazdım.
+
+367
+00:53:25,835 --> 00:53:30,215
+Çünkü bu birbirine dönüşüm mümkün olmayan eşit düzeyde sınıflar.
+
+368
+00:53:31,255 --> 00:53:33,335
+Bu üst sınıfı kullanmak bunun için gerek.
+
+369
+00:53:35,255 --> 00:53:37,255
+Var mı soru burada arkadaşlar?
+
+370
+00:53:37,795 --> 00:53:39,815
+Çok kısa birkaç bir şey daha söyleyeceğim bitireceğiz.
+
+371
+00:53:41,695 --> 00:53:43,595
+Şimdi benim kafama şu takılıyor.
+
+372
+00:53:43,595 --> 00:54:10,355
+Şimdi şurada Person'a geldik, yaş güncelle dedik, bakiye güncelle dedik, bakiye güncelle işlemi hiçbirinde boş boşuna çalıştı. Burada boşuna kod yazmış olduk. Öyle değil mi? Bu kod hiçbir zaman görünmedi. Mesela Person'ın, Person'ın bakiye güncelleniyor diye hiçbir şeyi göremedik. Öyle değil mi arkadaşlar? Mesela şunu alalım. Student'a gidelim.
+
+373
+00:54:18,516 --> 00:54:21,195
+STD Baki'ye güncelleniyor diyelim.
+
+374
+00:54:28,596 --> 00:54:31,855
+ve tekrardan çağırıyorum.
+
+375
+00:54:38,963 --> 00:54:59,343
+Bakın STD bakiye gibi. Şimdi eğer ben bu student'taki bakiye güncelle işleminden önce süper pardon hatta dis.super çağırırsam
+
+376
+00:55:07,380 --> 00:55:09,759
+Yok bu değildi. Bir dakika. Süper nokta.
+
+377
+00:55:11,360 --> 00:55:16,340
+Bakiye güncelleyi çağırırsam yani normal bir metot çağırmaktan hiçbir farkı yok.
+
+378
+00:55:17,159 --> 00:55:22,279
+Önce burada eğer üst sınıfta yapılacak işlemler varsa bunu yaptırırım.
+
+379
+00:55:24,339 --> 00:55:29,619
+Tamam mı? Eğer kurgu ona göre ise yani bakiye güncelleme şunda bir miktar buna göre çalışacak.
+
+380
+00:55:30,359 --> 00:55:37,279
+Geri kalanı öğrendi ise öğrenciye göre işte öğretmense öğretmeni göre çalışacaksa bunu bu şekilde sağlayabiliyoruz.
+
+381
+00:55:37,380 --> 00:55:39,400
+Student'un içinde yaptığımız şey.
+
+382
+00:55:40,199 --> 00:55:42,460
+Süper'deki bakiye güncelliği çağırdık.
+
+383
+00:55:42,560 --> 00:55:45,539
+Şimdi bunu tekrar bir derleyelim.
+
+384
+00:55:54,164 --> 00:56:22,223
+Kurguya göre bakın. Eğer bana böyle bir şey lazımsa. Şimdi lazım değilse tarafını asıl önemli konuşacağız. Oradan yeni bir mevzu çıkacak. Bakın ST de bakiye güncelleniyor. Ondan önce person bakiye güncelleniyor. Ve dikkat ederseniz şurada şunu yapamam arkadaşlar. Bu derste de konuştuk teorik tarafta. Şu süper bakiye güncelliği alıp buraya süper keyword ile alamıyorum.
+
+385
+00:56:22,223 --> 00:56:23,103
+Çünkü diyor ki
+
+386
+00:56:23,103 --> 00:56:25,823
+Gerçi bir dakika burada assignment var
+
+387
+00:56:25,823 --> 00:56:29,303
+Şurada belki yapılabilir
+
+388
+00:56:29,303 --> 00:56:32,303
+Ha burada yapılıyor da
+
+389
+00:56:32,303 --> 00:56:35,283
+Evet yani burada mümkünmüş
+
+390
+00:56:35,283 --> 00:56:37,823
+Yani bu süper fonksiyonunu çağırmak mümkün
+
+391
+00:56:37,823 --> 00:56:40,983
+Bundası yani constructor kadar bu şey değil
+
+392
+00:56:40,983 --> 00:56:41,723
+Bu biraz daha
+
+393
+00:56:41,723 --> 00:56:45,003
+Hatta dis ile de kullanılabilir
+
+394
+00:56:45,003 --> 00:56:46,064
+Dis nokta
+
+395
+00:56:46,064 --> 00:56:50,003
+Bakiye güncelledersek yine aynısı çalışacaktır
+
+396
+00:56:50,003 --> 00:56:50,403
+Tamam
+
+397
+00:56:50,403 --> 00:57:12,343
+Ama kabul edelim ki yani varsayalım ki ben bu person'daki şu şey benim için hiç önemli değil. Buranın hiçbir anlamı yok. Yani çalışmayacağım. Ben burayı boş bırakmak istiyorum. Return'ı da istemiyorum. Şimdi return'ı yazmazsam kod hata verecek.
+
+398
+00:57:12,344 --> 00:57:20,543
+Hani void yazsam aşağıda bunlar double yazıldı. Void yapamam. Double olarak kalacak.
+
+399
+00:57:21,263 --> 00:57:26,643
+İşte diyorum ki bu metod hiçbir iş yapmasın. Onun için diyorum ki getirip buraya abstract yazıyorum.
+
+400
+00:57:30,164 --> 00:57:30,763
+Abstract
+
+401
+00:57:30,763 --> 00:57:34,623
+Bu sayede ne oluyor? Diyor ki
+
+402
+00:57:34,623 --> 00:57:38,704
+Bunun gövdesini artık silmen lazım diyor.
+
+403
+00:57:38,704 --> 00:58:01,164
+yani ne yapacağız? Ctrl Z dedim. Bunun gövdesini sileceğiz. Gövdesini silince diyor ki burada bir tane de noktalı virgül koy diyor. Baksana hiçbir sıkıntı yok. Gövdesiz bir metot. Şimdi bunu gövdesiz yapınca eğer bir sınıfın en az bir tane abstract oluşuyorsa bak bu sefer de buradan patladı.
+
+404
+00:58:01,164 --> 00:58:19,184
+Bu da diyor ki ancak diyor abstract classlar diyor şey içerebilir diyor. Abstract metotlar içerebilir. Şimdi bir class abstractsa en az bir tane nesi olması lazım? Metodu olması lazım mı acaba?
+
+405
+00:58:19,184 --> 00:58:22,064
+Şimdi şunu kapatıyorum arkadaşlar.
+
+406
+00:58:22,943 --> 00:58:26,443
+Önce getiriyorum.
+
+407
+00:58:26,544 --> 00:58:27,484
+Bunu abstract yapıyorum.
+
+408
+00:58:29,744 --> 00:58:36,484
+Abstract yapınca bir sınıf abstract ise en az bir tane metodu olması lazım önermem doğru çıkmadı.
+
+409
+00:58:36,624 --> 00:58:37,943
+Yani herhangi bir hata vermedi.
+
+410
+00:58:38,083 --> 00:58:38,364
+İşte bu.
+
+411
+00:58:38,803 --> 00:58:39,924
+Genelde böyle anlatırlar.
+
+412
+00:58:40,644 --> 00:58:44,503
+Sınıf abstract ise en az bir tane abstract metodu olması lazım diye anlatırlar.
+
+413
+00:58:44,583 --> 00:58:45,524
+Yanlış bir önermedir.
+
+414
+00:58:45,644 --> 00:58:46,503
+Bakın hiçbir hata yok.
+
+415
+00:58:48,324 --> 00:58:48,764
+Tamam mı?
+
+416
+00:58:49,183 --> 00:59:17,063
+Ama bunun tersi doğru. Yani aslında tersinden söylemişsiniz. Eğer bir sınıfta en az bir tane abstract metot varsa işte şimdi bunu abstract olarak tanımlamak gerekiyor. Ben bu abstract sayesinde niye bu abstracta geldik? Şu metodun içini boş bırakmam istediğimden. Bu bundan kalıtım alan bütün klaslara bir yön belirliyor. Diyor ki bu bir standart. Bakiye güncelleyi kendinde bulunduracaksın.
+
+417
+00:59:17,063 --> 00:59:37,923
+Şimdi mesela Avrupa Birliği'ne giriş. Diyor ki şunları şunları yap veya bilmem nereye giriş. Şunlar şunlar sizde olacak. Aynen bu da onun gibi. Bu şeyleri yerine getireceksin. Şimdi geldim student'a. Benim şu bakiye güncelleyi bir kapatalım. Bakalım burada neler patlayacak.
+
+418
+00:59:37,923 --> 00:59:40,463
+Şimdi geldiğimiz zaman diyor ki
+
+419
+00:59:40,463 --> 00:59:46,483
+Student is not abstract and does not override abstract method bakiye güncelliği
+
+420
+00:59:46,483 --> 00:59:50,183
+Diyor ki bu bakiye güncelliği öneri olarak da diyor ki
+
+421
+00:59:50,496 --> 01:00:16,635
+implement all abstract methods. Ne demek implement all abstract? Üst sınıfında abstract olan metotları ben diyor sana istersen burada implement ederim. Bakın buraya getirdi. Şu an bunun içeriğini ben kendime göre değiştirirsem herhangi bir şurada kendi uydurup şeyler yapıyor, farklı otomatik kodlar yazıyor. Bunu hallediyor arkadaşlar. Override'ı da ekledi. Demek ki abstract da buymuş. Gelecek hafta bunu biraz daha teorik olarak detaylı göreceğiz.
+
+422
+01:00:16,635 --> 01:00:22,355
+Ama bunun ötesinde abstractın çok fazla bir ufak tefek detayları var. Onu bilmek yeterli.
+
+423
+01:00:22,935 --> 01:00:27,996
+Nereden geldik buraya? Vakiye güncelde, öğrenci de, öğretmen de, onda bunda hepsinde var.
+
+424
+01:00:28,676 --> 01:00:32,255
+Ama üst tarafında boşuna var. Yani içi boş bir metot olsun istiyoruz.
+
+425
+01:00:32,435 --> 01:00:38,455
+İçi boş olacaksa return sıfır diye bir şey yazmıyor. Ama return etmesini istemiyoruz. Hiçbir şey yapmasın diyoruz.
+
+426
+01:00:38,455 --> 01:00:43,455
+O zaman ne olacak? Gittik buradaki person'daki metodumuzu abstract olarak düzelttik.
+
+427
+01:00:43,455 --> 01:00:49,695
+Bunu abstract yapınca dedik ki en azından bir abstract metot varsa bunu da abstract yapmak zorundasın dedik.
+
+428
+01:00:50,275 --> 01:00:50,895
+Şimdi gelelim.
+
+429
+01:00:53,176 --> 01:00:56,815
+Biraz önce arkadaşlar person sınıfından bir nesne üretmiştik.
+
+430
+01:00:58,555 --> 01:01:01,396
+Hatta önce şu abstract metodu bir kaldırayım.
+
+431
+01:01:07,539 --> 01:01:25,640
+Herhalde hata vermez. Bakın şimdi emekli niye hata veriyor? Çünkü diyor ki şeyi implemente etmedin diyor. Onun için hata veriyor. Şimdi şurada da bu da diyor override edilecek bir şey değil diyor. Override olacak bir durum değil. Onun için burada da bu hata var. Keştik bunu önce yazsaydık. Şu overrideları kapatalım.
+
+432
+01:01:25,640 --> 01:01:28,000
+diyor ki
+
+433
+01:01:28,000 --> 01:01:31,060
+person sınıfından bir nesne üreteceğim
+
+434
+01:01:31,060 --> 01:01:31,619
+person
+
+435
+01:01:31,619 --> 01:01:35,740
+p4 eşittir new person
+
+436
+01:01:35,740 --> 01:01:39,319
+person'da boş constructor vardı
+
+437
+01:01:39,319 --> 01:01:42,060
+bunu yaptık
+
+438
+01:01:46,835 --> 01:02:14,875
+Şunu kapatalım önce. Bu ilk halimizdi. Person'dan bir nesne ürettik. Şu an herhangi bir hata yok. Şuradakiler de zaten kalkacak hatalar. Bunlar da bitti. Herhangi bir hata almadan bunu çalışıyorum. Ama ben şu isteğim doğrultusunda teacher'da ne yaptım? Bunu Ctrl Z yapıyorum. Eski halime geri geliyorum.
+
+439
+01:02:14,875 --> 01:02:26,935
+Burada bunu override etmiştim. Bu override ettiğim şey person'daydı. Bu person'da olan şey neydi arkadaşlar? Şuradaki abstract metodun override edilmesiydi. Bu abstract olduğu için şu da abstract olmak zorunda dedik.
+
+440
+01:02:29,415 --> 01:02:41,155
+Geliyoruz buraya. Şimdi bakın bunu person oluşturmaya başladığında diyor ki person is abstract cannot be instantiated. Yani bundan örnek alma yapamaz.
+
+441
+01:02:41,155 --> 01:02:49,475
+Abstract sınıfların en önemli özelliklerinden tanesi bundan örnek alamazsın. Bu illegal.
+
+442
+01:02:52,855 --> 01:02:59,016
+Illegal because it is abstract plus.
+
+443
+01:02:59,575 --> 01:03:02,675
+Ha şunu yapabilirsin. Bakın diğerlerinde herhangi bir sıkıntı yok.
+
+444
+01:03:02,675 --> 01:03:19,035
+Bakın person sınıfı ile başladık. Person bir referans, nesnemiz student veya person bir referans, nesnemiz teacher. Onu yapabiliriz. Ama örnek, initialization tarzı bir örnek alma yapamıyoruz.
+
+445
+01:03:19,035 --> 01:03:35,595
+Bu niye illegal dedik? Bu da because due to the child to parent conversion diyelim.
+
+446
+01:03:37,295 --> 01:03:42,355
+Küçük bir sınıftan büyük bir sınıfa conversion yapılamaz.
+
+447
+01:03:42,495 --> 01:03:48,395
+Due to the error of child to parent conversion.
+
+448
+01:03:48,395 --> 01:04:17,895
+Tamam mı? Evet bugünlük benim anlatacaklarım burada kalsın. Gelecek hafta işte bu abstractlara gireriz. Yani kalıtımla alakalı şeyler bu kadar. Şimdi sizden ricam bu koda şunu ekleyin. Öyle bir aggregation, composition veya association ilişkisi olsun ki şunlardan bile mesela personla olabilir, studentla olabilir, ne bileyim teacher mesela öğrencinin hani bağlı bulunduğu okul.
+
+449
+01:04:18,395 --> 01:04:33,696
+veya öğretmenin çalıştığı okul. Şimdi bir okul klası oluşturacaksınız. Öğrenci de okulda okul bilgisi var. Teacher'in de okulu var. Bunlar çalışma ilişkisi, bir association gibi görünüyor. Hani bir parça bütün ilişkisi yok.
+
+450
+01:04:33,696 --> 01:04:48,776
+Öğrenci ile okul arasında bir ilişki kurup bu öğrencinin bilgilerini alırken hangi okulda okuduğunu veya öğretmenin bilgilerini alırken hangi okulda çalıştığına dair bilgileri de şey yapıyoruz
+
+451
+01:04:48,776 --> 01:04:51,475
+Vakiye güncelleyi silersek Utkan
+
+452
+01:04:51,475 --> 01:04:54,895
+Şimdi orayı dinlemedim herhalde veya ben anlatamadım
+
+453
+01:04:54,895 --> 01:05:04,335
+Vakiye güncelleyi silersek bu kalıtımla aşağıda override edilmesi gerekli olmayan bir metottur
+
+454
+01:05:04,335 --> 01:05:08,136
+Yani aşağıda istediğimiz gibi Vakiye güncelleyi yazarız
+
+455
+01:05:08,136 --> 01:05:11,216
+Biz bunu aşağıda override ettik
+
+456
+01:05:11,216 --> 01:05:15,136
+Ve bu sayede ben şurada
+
+457
+01:05:15,136 --> 01:05:17,895
+Nerede?
+
+458
+01:05:18,776 --> 01:05:45,376
+Bakiye güncelle deyince kişi üzerinden öğretmen mi Bakiye güncelleyecek, öğrenci mi Bakiye güncelleyecek aşağıdaki ilgili sınıfları polimorphism sağlamış olduk. Eğer onu silersek polimorphism yapamaz. Bu hem bir standart sunuluyor hem de kişinin yani nesnelerin alt sınıfların durumuna göre sana ilgili metodu çağırmayı sağladı. Tamam mı? Silersen olmaz.
+
+459
+01:05:48,467 --> 01:06:09,367
+Var mı başka soru? Evet, üçüncü bir sınıf buna eklerseniz ve bu sınıfta bir başka şeyle association yaparsa güzel olur. Şimdi hatta şurada bir örneğimiz vardı bizim. Onu belki buraya uyarlayabilirsiniz arkadaşlar. Neydi o? Kısaca hemen bakalım. Ondan sonra dersi bitireceğim.
+
+460
+01:06:12,107 --> 01:06:17,047
+Page 112'de miydi neydi? 111'de miydi? Hastane ile alakalı vardı ya bir şey.
+
+461
+01:06:31,059 --> 01:06:58,839
+Mesela kişi var, doktor var, hasta vardı. Bunlar yine bizim öğrenci, öğretmen gibi. Bir de bunlara, bunlarla ilişkili mesela treatment vardı. Mesela burada da ders alma veya okul ilişkisi, işte doktor da oku, şey öğretmen de okulda, öğrenci de okulda gibi bir şey eklerseniz şuradaki senaryoya uygun olarak bu konuyu öğrenme sadedinde biraz daha ileri noktaya taşırsınız diye düşünüyorum.
+
+462
+01:06:58,839 --> 01:07:14,139
+var mı merak ettiğiniz, sormak istediğiniz herhangi bir şey? Onun dışında bugünlük bu kadar yeter diyelim. Hedefimize beklenenden önce ulaştık diye düşünüyorum.
+
+463
+01:07:14,139 --> 01:07:28,819
+Şimdi slide'daki her bir örneğin ben kodlarını drive'a yükledim. Ben slide'da dedik dedik ediyorum. Sağını çiz, solunu çiz. Bir de açıp tekrardan net bir insan yazmıyorum.
+
+464
+01:07:28,839 --> 01:07:52,039
+onlara siz tekrar amaçlı bakarsınız ama ben burada ayrıca hani kendim burada ayrıca örnek yapıp size iki tane örnek yapma imkanı örnek gösterme imkanı sağlamış oluyorum ama dediğim gibi burada esas olan şey yazmaktır. Örnek olay üzerinden bununla alakalı bir sürü örnekler var kitaplarda internetlerde.
+
+465
+01:07:52,039 --> 01:08:04,219
+Sınavlar da bu şekilde olacak arkadaşlar. Bakın laboratuvarda bir tecrübe yaşadınız. Sınavda o tecrübenin biraz daha zoru olacak şekilde kendinizi ona göre ayarlayın derim.
+
+466
+01:08:06,959 --> 01:08:14,639
+Şimdilik benim söyleyeceğim bir şey yok. Herkese soracağınız bir şey yoksa iyi akşamlar diyelim.
+
+467
+01:08:15,759 --> 01:08:17,219
+Teşekkür ederiz hocam. İyi akşamlar.
+
+468
+01:08:17,219 --> 01:08:17,799
+Rica ederim.
+
+469
+01:08:17,799 --> 01:08:20,219
+İyi akşamlar hocam.
+
+470
+01:08:20,759 --> 01:08:21,199
+Sağ olun.
