@@ -1,0 +1,3735 @@
+1
+00:00:47,155 --> 00:00:48,235
+Evet, merhaba arkadaşlar.
+
+2
+00:00:50,535 --> 00:00:51,355
+Merhaba hocam.
+
+3
+00:00:54,932 --> 00:01:23,511
+ekran ayarlarımızı tamamladık. Bu aralar katılım derslere oldukça düşük. Herkes büyük ihtimalle videolardan takip ediyor dersleri. Şu anda da 4-2 var. Ben hariç. Bakalım. Böyle bu şekilde devam edeceğiz. Şimdi yine sınıfa baktım. Oradan geldim. Sınıfta da kimse yoktu. Hibrit olarak online devam ediyoruz tamamen diyebiliriz.
+
+4
+00:01:23,511 --> 00:01:33,691
+herhangi bir canlı katılım sınıfa gelip de katılım söz konusu değil. Bu nedenle aslında daha da fazla uzun betlemeye gerek yok.
+
+5
+00:01:33,691 --> 00:01:41,772
+Mümkün olunca yine bugün kısa bir şekilde konuları özetleyip bu haftaki konularımızı tamamlamak istiyorum.
+
+6
+00:01:42,772 --> 00:01:48,652
+Bu ders kapsamında şimdi bu haftaki ders kapsamında sistem tasarımı aşamasına geçeceğiz.
+
+7
+00:01:48,651 --> 00:02:02,851
+bu aşamaya kadar geçtiklerimizi tekrar bir hatırlayacak olursak önce bir ön inceleme sonrasında bir project charter doküman dediğimiz bir doküman çıksı üretmiştik ya da üretilmesi gerektiğinden bahsetmiştik.
+
+8
+00:02:02,851 --> 00:02:17,371
+Sonrasında fizibilite çalışması bununla beraber fizibilite raporu ve sonrasında da iki aşamadan oluşan iş analizi ve işlevsel ya da nesne yönelik çözümleme aşamalarından oluşan sistem analizi safhası ve bunun sonucunda da
+
+9
+00:02:17,371 --> 00:02:47,211
+DRV, SRS şeklinde yani Software Requirement Specification şeklinde iki tane yine aslında temel doküman çıktısı ürettiğimizden bahsetmiştik ve bu sayede hem problemin ne olduğunu, bu problemin çözülmesi için nelere ihtiyaç duyulduğunu, nasıl bir zaman planına, nasıl bir maddi kaynağa, nasıl bir iş gücü kaynağına ya da makine teçhizat kaynağına ihtiyaç olduğunu belirlemiştik hatırlarsınız.
+
+10
+00:02:47,211 --> 00:02:54,612
+fizibilitede ve sonrasında problem nedir? Problemin çözülmesi ve bu sistemin işler hale getirilmesi için neler yapması gerekir?
+
+11
+00:02:55,472 --> 00:03:00,432
+Bunlar ortaya çıkartılmıştı. İşlerin oluş şekli, mevcut durumda nasıl işler ilerliyor?
+
+12
+00:03:01,091 --> 00:03:05,911
+Ve bunlar bir bilgi sistemine yani bir yazılım ortamına nasıl aktarılmaları gerekir?
+
+13
+00:03:05,911 --> 00:03:11,911
+Bunun çözümlemesi nasıl olmalıdır? Bunları da analiz safasında anlatmıştık ya da ortaya çıkartmıştık.
+
+14
+00:03:11,911 --> 00:03:35,911
+ve şimdi artık ne değil yani gereksinimler nelerdir değil bu gereksinimler nasıl yerine getirilmelidir çözüm nasıl olmalıdır gerçekleştireceğimiz yani kodlayacağımız sistem nasıl bir yapıda olmalıdır bu aşamaları ortaya çıkarttığımız ya da dokümante ettiğimiz sistem tasarımı aşamasına geçiyoruz.
+
+15
+00:03:35,911 --> 00:03:44,751
+geçiyoruz. Şimdi sistem tasarımında tabii ki birkaç tane yine alt aşamadan geçeceğiz. Bunlardan bir tanesi kullanılacak olan altyapının belirlenmesi olacak.
+
+16
+00:03:45,691 --> 00:03:56,872
+Sonrasında tabii bu fizibiliteden beslenecek detaylarına yine gireceğiz. İlk olarak tasarım aşamasında bir genel tasarım yani ön tasarım adını verdiğimiz aşamayı anlatacağız.
+
+17
+00:03:57,592 --> 00:04:03,331
+Ve burada yapılması gerekenler, nelere dikkat edilmesi gerekir ve nasıl bir çıktı üretilir bunları aktaracağım.
+
+18
+00:04:03,331 --> 00:04:22,371
+sonrasında ayrıntılı tasarımda biraz daha detaylı olmak üzere sistemin öncelikle daha basit tarafları olan girdi tasarımı nedir, çıktı tasarımı nedir, ara birim tasarımı nedir bunlara bakacağız ve esas bir sistemin yazılım tasarımı nasıl yapılır konusuna daha fazla ağırlık vereceğiz.
+
+19
+00:04:22,372 --> 00:04:37,872
+tabi ki veri tasarımıyla birlikte. Veri tasarımına şimdilik bu iki hafta boyunca girmeyeceğiz fakat özellikle vize sınavından sonraki haftada veri tasarımını apayrı. Hani tek bir bütün halinde bir haftalık konu halinde aktarmayı planlıyorum.
+
+20
+00:04:40,019 --> 00:04:49,599
+Bu hafta yine fonksiyonel çözümlemeyle eğer yola çıktıysak yani bir işlevsel modelleme yapıyorsak nasıl bir tasarım yolu izlemeliyiz?
+
+21
+00:04:49,699 --> 00:04:54,319
+Ne gibi çıktılar üretmeliyiz? Bunlar nelerdir? Nasıl oluşturulur? Nelere dikkat etmemiz lazım?
+
+22
+00:04:54,319 --> 00:05:04,839
+Bunlardan konuşacağız, bahsedeceğiz. Haftaya da tahmin edersiniz ki yine nesne yönelik olarak oluşturduğumuz bir kavram sal sınıf diagramı vardı.
+
+23
+00:05:04,839 --> 00:05:07,159
+senaryolardan yola çıkarak.
+
+24
+00:05:07,319 --> 00:05:12,139
+Bunları kullanarak acaba ben bir nesneye yönelik yazılımın tasarımını nasıl gerçekleştirelim?
+
+25
+00:05:12,139 --> 00:05:20,720
+Bu konudaki hızlı bir şekilde çok aşırı detaya girmeden yapılması gerekenleri de haftaya olan dersimizde işleyeceğiz.
+
+26
+00:05:21,179 --> 00:05:32,039
+Bunlarla birlikte tabii ki genel ve ayrıntılı tasarımı tamamladığınızda ortaya bir model, bir öneri, bir çözüm önerisi ya da çözüm tasla diyelim prototipi oluşturmuş olacaksınız.
+
+27
+00:05:32,420 --> 00:05:34,119
+Buna da tasarım modeli adını veriyoruz.
+
+28
+00:05:34,119 --> 00:05:36,659
+Bu model nasıl oluşturulur, neyle nasıl ifade edilir?
+
+29
+00:05:37,019 --> 00:05:41,619
+Bu gibi detaylara da yine slide map'ta dersin kapsamında okuyacağız.
+
+30
+00:05:43,019 --> 00:05:48,959
+Dediğim gibi sistem tasarımı ön ve ayrıntılı tasarım olmak üzere iki tane ana safhadan oluşuyor demiştik.
+
+31
+00:05:49,079 --> 00:05:52,139
+Ön tasarımda aslında biz ilk olarak altyapıyı belirliyoruz.
+
+32
+00:05:52,359 --> 00:05:54,740
+Yani bu sistem çalışacak bir donanım altyapısında.
+
+33
+00:05:55,439 --> 00:05:59,999
+Bu donanım altyapısı tabii ki fiziksel olarak bizim tarafımızda da barındırılabilir, kiralanabilir.
+
+34
+00:05:59,999 --> 00:06:06,399
+Ya da tamamen bizim fiziksel temasımızın olmadığı bir bulut ortamında bile varınabilir.
+
+35
+00:06:06,799 --> 00:06:08,839
+Partilerin eksilerini konuşup tartışacağız.
+
+36
+00:06:09,139 --> 00:06:13,319
+Ve hangisi bizim için daha doğru bir altyapıdır bunu kesinleştireceğiz.
+
+37
+00:06:13,459 --> 00:06:14,859
+Bunları fizibilitede yapmamış mıydık?
+
+38
+00:06:14,959 --> 00:06:16,019
+Yapmıştık. Öneriydi.
+
+39
+00:06:16,319 --> 00:06:17,339
+Tavsiye niteliğindeydi.
+
+40
+00:06:17,779 --> 00:06:22,319
+Artık tasarıma geçtiğimizde çözümümüze bunları birebir gerçek hayatta uyguluyor olacağız.
+
+41
+00:06:23,219 --> 00:06:28,079
+Ve yine ön tasarımda kabaca modül mimarisini oluşturmaya başlıyoruz.
+
+42
+00:06:28,079 --> 00:06:36,039
+Aslında biz burada işlevsel çözümleme yani analizle birlikte yola çıktıktan sonra yazılımdaki parçalar neler olacak?
+
+43
+00:06:36,219 --> 00:06:38,319
+İşlevsel modüller neler olacak?
+
+44
+00:06:39,159 --> 00:06:42,439
+Aslına bakarsanız şöyle de kabaca düşünebiliriz.
+
+45
+00:06:42,559 --> 00:06:45,439
+Veri akış diagramlarımız vardı ya, DFT'lerimiz.
+
+46
+00:06:45,539 --> 00:06:51,199
+Veri akış diagramlarında yer alan o prosesler acaba birer modül mü olacak?
+
+47
+00:06:51,400 --> 00:06:55,039
+Yoksa bir modül ve içinde alt modüller gibi bir yapıdan mı oluşacak?
+
+48
+00:06:55,040 --> 00:07:01,140
+Bunların çalışması için ne gibi kontrol ve veri mesajlarının gidip gelmeleri gerektiğini göstereceğiz.
+
+49
+00:07:01,560 --> 00:07:04,260
+Bu gibi detaylarla bir modül mimarisi oluşturacağız.
+
+50
+00:07:04,420 --> 00:07:07,460
+Bunu da yine ön tasarım kapsamında aslında gerçekleştiriyoruz.
+
+51
+00:07:08,140 --> 00:07:13,240
+Ve ayrıntılı tasarımda dediğim gibi bir etkileşim tasarımı gerçekleştiriyoruz.
+
+52
+00:07:13,420 --> 00:07:16,380
+Bunun için de girdi çıktı ve ara verim tasarımları yer alıyor.
+
+53
+00:07:17,400 --> 00:07:19,840
+Ve en önemlisi yine yazılımın tasarımı.
+
+54
+00:07:19,839 --> 00:07:22,539
+buna kabaca program tasarımı özellikle program yazıyorum.
+
+55
+00:07:22,699 --> 00:07:26,219
+Kodlama tarafındaki işlerin nasıl yapılacağına dair bir tasarım yapacağız.
+
+56
+00:07:26,719 --> 00:07:31,239
+Ve veri tasarımı, veri yapısı tasarımı ya da bunu fiziksel olarak tutarken de
+
+57
+00:07:31,239 --> 00:07:38,819
+veri tabanı tasarımı da yine eş zamanlı olarak işletmemiz gereken bir diğer alt adım olacak ayrıntılı tasarımda.
+
+58
+00:07:38,819 --> 00:07:45,539
+Yani ön tasarımda biz altyapıyı ve modüler çözümlemeyi ortaya koymalıyız.
+
+59
+00:07:45,539 --> 00:07:56,739
+Ayrıntılı tasarımda da girdi çıktı ve ara birim tasarımlarını, yazılım tasarımını ve veri tasarımını tamamlamalıyız ve bunların ifade edilmesini sağlamalıyız.
+
+60
+00:07:58,519 --> 00:08:00,679
+Genel olarak tasarım aşamasında yaptıklarımız bunlar.
+
+61
+00:08:00,679 --> 00:08:06,859
+Şimdi burada genel bir bilgi sistemi görüyoruz.
+
+62
+00:08:06,859 --> 00:08:15,559
+Bilgi sisteminin günümüzde artık standart olarak olmazsa olmaz dediğimiz parçalarını görüyoruz aslında.
+
+63
+00:08:15,807 --> 00:08:24,947
+Burada bir sistem dediğimiz yapı, bir bilgi sistemi dediğimiz yapı aslında bakarsanız şöyle, şunların neredeyse hepsinden oluşuyor.
+
+64
+00:08:25,447 --> 00:08:29,107
+İşte burada sistem budur diyebileceğiniz bir yapı söz konusu değil.
+
+65
+00:08:29,427 --> 00:08:33,607
+Ama bir sistemin ana parçaları var ve bunların hepsinin tasarlanmaları gerekiyor.
+
+66
+00:08:34,068 --> 00:08:37,648
+Bir arada nasıl çalışacaklarının da ortaya çıkartılması gerekiyor.
+
+67
+00:08:37,648 --> 00:08:57,767
+Şimdi yazılım tasarımı dediğimiz kısım yani iş yapacak o senaryolardaki anlattıklarımızın yerine getirecek olan çalışmaları aslında şuradaki uygulama sunucusu içinde tutuyoruz ve özellikle yazılım tasarımları uygulama tasarımı kısmını ilgilendiriyor.
+
+68
+00:08:57,767 --> 00:09:10,227
+Tam olarak şurası. Kabaca kodlarımız, programlarımız, yazdığımız her şey, yazılım tarafımız bizim uygulama sunucusu altında duran uygulamaların tasarlanmalarını gerektiriyor.
+
+69
+00:09:10,687 --> 00:09:16,348
+Bununla birlikte bu uygulamalar çalışmak için bir girdiye ve çıktıye ihtiyaç duyuyorlar.
+
+70
+00:09:16,427 --> 00:09:21,787
+Ya da girdi alıp çıktı üretecekler. Input, process, output zincirini işletecekler.
+
+71
+00:09:21,787 --> 00:09:24,807
+Bu durumda da verilerin bir yerde durması lazım.
+
+72
+00:09:24,807 --> 00:09:29,587
+bunun içinde ayrı bir veri tabanı sunucusu yapısı olması gerekir.
+
+73
+00:09:29,587 --> 00:09:33,468
+Şimdi ben bunları burada mesela aynı bir alt ağ içinde
+
+74
+00:09:33,468 --> 00:09:38,687
+mesela şirket içinde kalın bir yerel ağ ile bağlantılar şeklinde gösteriyorum
+
+75
+00:09:38,687 --> 00:09:40,447
+ama böyle olmak zorunda değil.
+
+76
+00:09:40,867 --> 00:09:45,627
+Yani bu veri tabanı sunucusu internet üzerinde bambaşka bir yerde duruyor olabilir.
+
+77
+00:09:46,147 --> 00:09:49,748
+Uygulama sunucusu yine internet üzerinde bambaşka bir yerde duruyor olabilir.
+
+78
+00:09:50,227 --> 00:09:53,787
+Ama buradaki temsil bunlar bizim içimizde.
+
+79
+00:09:53,787 --> 00:10:02,007
+Şirketimizde mesela kendi sunucularımızda barınıyor ve kendi iç ağımızda yer alıyor şeklinde bir çizim söz konusu.
+
+80
+00:10:02,467 --> 00:10:04,827
+Bu tek doğru çizim değil, onun için anlatıyorum.
+
+81
+00:10:06,027 --> 00:10:08,807
+Çok farklı kombinasyonlar burada yaratılabilir.
+
+82
+00:10:09,287 --> 00:10:10,727
+Peki başka ne görüyoruz burada?
+
+83
+00:10:10,827 --> 00:10:12,587
+Çeşitli ofis bilgisayarları görüyoruz.
+
+84
+00:10:12,667 --> 00:10:18,967
+Yani bunlar aslında veriyi kullanan uygulamaların erişim noktalarını oluşturuyor.
+
+85
+00:10:18,967 --> 00:10:23,227
+Mesela burada bir masaüstü bilgisayar var ya da yukarıda bir dizüstü bilgisayar var.
+
+86
+00:10:23,227 --> 00:10:41,227
+Peki ben bu bilgi sistemine erişip kullanmak için neye ihtiyaç duyuyorum? Bir şekilde arayüzlere ihtiyaç duyuyorum. İşte bunlara da kullanıcı arayüzü diyoruz ve son noktalardan, uç noktalardan bilgi sistemine erişip kullanmak için de bu arayüzlerin tasarlanmaları gerektiğini söylüyoruz.
+
+87
+00:10:41,227 --> 00:10:41,787
+söylüyoruz.
+
+88
+00:10:45,447 --> 00:10:47,447
+Ekranlar, ondan sonra
+
+89
+00:10:47,447 --> 00:10:49,067
+üretilen raporlar
+
+90
+00:10:49,067 --> 00:10:51,028
+girdi ve çıktılar ve bunların
+
+91
+00:10:51,028 --> 00:10:52,947
+üzerinde yapılması gereken kontroller
+
+92
+00:10:52,947 --> 00:10:54,947
+gibi noktalar bizim
+
+93
+00:10:54,947 --> 00:10:57,028
+girdi ve çıktı tasarımımızı ya da kabaca
+
+94
+00:10:57,028 --> 00:10:58,947
+hepsi dahil olmak üzere kullanıcı
+
+95
+00:10:58,947 --> 00:11:00,807
+arayüz tasarımımızı içerecek.
+
+96
+00:11:01,188 --> 00:11:02,987
+Peki, şimdi diyelim bu kapalı bir
+
+97
+00:11:02,987 --> 00:11:04,608
+sistem. Kendi içimizde kullanıyoruz.
+
+98
+00:11:05,028 --> 00:11:06,888
+O yüzden de erişim noktaları var,
+
+99
+00:11:07,028 --> 00:11:09,047
+uygulama sunucusu var, veri tabanı sunucusu var.
+
+100
+00:11:09,168 --> 00:11:10,947
+Temelde bu yeterli. Tabii ki bunların bir
+
+101
+00:11:10,947 --> 00:11:13,147
+ağ üzerinden birbirleriyle de bir şekilde bağlı
+
+102
+00:11:13,147 --> 00:11:15,147
+ve haberleşiyor olmaları gerekir.
+
+103
+00:11:15,528 --> 00:11:17,188
+Bunlar aynı fiziksel makine
+
+104
+00:11:17,188 --> 00:11:18,767
+üzerinde de duruyor olabilirler ama
+
+105
+00:11:18,767 --> 00:11:20,447
+farklı yazılım sonucularıdır.
+
+106
+00:11:20,807 --> 00:11:23,028
+Uygulama sonucusu ve veri tabanı sonucusu. O yüzden de
+
+107
+00:11:23,028 --> 00:11:24,987
+bunlar genellikle böyle bağımsız ayrı
+
+108
+00:11:24,987 --> 00:11:27,108
+makineler şeklinde temsil edilir.
+
+109
+00:11:27,587 --> 00:11:29,388
+Şimdi eğer bizim sistemimiz
+
+110
+00:11:29,388 --> 00:11:31,427
+böyle kendi başına, tek başına
+
+111
+00:11:31,427 --> 00:11:32,828
+kendi içinde çalışmıyorsa
+
+112
+00:11:32,828 --> 00:11:35,048
+başka sistemlerle entegre
+
+113
+00:11:35,048 --> 00:11:37,328
+veri alışverişi yapması gerekiyorsa
+
+114
+00:11:37,328 --> 00:11:39,108
+bilgi toplaması ya da başka
+
+115
+00:11:39,108 --> 00:11:41,867
+sistemlere bilgi sunması gerekiyorsa
+
+116
+00:11:41,867 --> 00:11:43,787
+o zaman onlarla da konuşmam lazım.
+
+117
+00:11:44,688 --> 00:11:45,908
+Bu noktada da
+
+118
+00:11:45,908 --> 00:11:47,748
+sistem arayüz tasarımları
+
+119
+00:11:47,748 --> 00:11:49,968
+yani diğer sistemlerle haberleşmemizin
+
+120
+00:11:49,968 --> 00:11:52,087
+tanımlandığı arayüzlerin
+
+121
+00:11:52,087 --> 00:11:53,548
+de tasarlanmaları gerekiyor.
+
+122
+00:11:53,848 --> 00:11:54,748
+Mesela benim
+
+123
+00:11:54,748 --> 00:11:57,628
+kabaca bir örnek olsun diye söyleyeyim.
+
+124
+00:11:57,988 --> 00:11:59,688
+Sizin bir uygulama sunucunuz var
+
+125
+00:11:59,688 --> 00:12:01,848
+ve burada yazdığınız bir bilgi sistemi var.
+
+126
+00:12:01,947 --> 00:12:03,608
+Diyelim ki sizin sistemleriniz Windows
+
+127
+00:12:03,608 --> 00:12:05,668
+işletim sistemine sahip ve onun
+
+128
+00:12:05,668 --> 00:12:07,707
+üzerinde bir web tabanlı uygulama
+
+129
+00:12:07,707 --> 00:12:09,747
+yaptığınız IIS docusunu kullanıyorsunuz.
+
+130
+00:12:10,419 --> 00:12:23,499
+Ama sizin mesela çalışmak için, mesela bir kullanıcının yetkilendirilmesi için, atıyorum Türkiye Cumhuriyeti vatandaşı olup olmadığını kontrol etmek için TC, işte Mernis sisteminden bir sorgu, bir numara verip
+
+131
+00:12:23,499 --> 00:12:30,840
+bu kimlik numarası doğru mudur, böyle bir insan var mıdır, gerçek bir vatandaş mıdır diye soru, evet ya da hayır diye bir cevap almanız gerekecek.
+
+132
+00:12:30,840 --> 00:12:40,919
+oradaki sistem belki de Linux üzerinde Java ile yazılmış ve Linux işletim sistemi üzerinde çalışan bambaşka bir altyapıya sahip bir sistem olabilir.
+
+133
+00:12:41,039 --> 00:12:50,780
+Nasıl konuşacaksınız? Bunun bir tasarımının yapılması lazım. Belli protokollere göre konuşmanız lazım. Bunların hepsi de aslında sistem arayüz tasarımının içinde yer alıyor.
+
+134
+00:12:50,780 --> 00:13:16,680
+ne zaman ki işte bu her bir parça internet üzerinde başka yerlerde durabilir uygulama suncusu, veri tabanı suncusu, hizmet alınan ve verilen başka sistemler ve kendi bilgi sisteminizde erişim uç noktaları bunların hepsi internetin bir yerlerindeyse eğer o zaman benim bir şekilde bu internetten sonra benim bilgi sistemimin çalıştığı ortamı izole etmem ya da korunaklı hale getirmem gerekir.
+
+135
+00:13:16,680 --> 00:13:46,520
+bunun için de şurada bir güvenlik duvarı görüyorsunuz bir tuğla duvar bir güvenlik ve kontrol tasarımı ya da işte kabaca bir güvenlik duvarı oluşturulması diyoruz burada ama çok daha büyük bir konu çok daha geniş bir konu olabilir hem uygulama güvenliği hem ağ güvenliği erişim güvenliği kullanıcı güvenliği veri güvenliği gibi pek çok altyapı alt parçaya alt dalı ayrılabilir bunların hepsinde yine yapılmaları gerekir o zaman benim güvenlik tasarımı diye yine ayrı bir
+
+136
+00:13:46,519 --> 00:14:16,379
+tasarım alt başlığına da ihtiyacım olur. Gördüğünüz gibi bir sistemi tasarlamak demek hadi arkadaşlar oturuyoruz şimdi işte benim modüllerim bunlar olsun. Ondan sonra bu modüllerin içinde işte atıyorum Java dilini kullanalım. Şu kütüphanelerden faydan alalım. Ondan sonra işte ekranlarımızı Swing ile yazalım. Bilmem neyimizi başka işte kütüphane ile oluşturalım. Diğer bilmem yazdığımız verdiğimiz şeyleri işte Hibernate kullanalım. Onu yapalım bunu yapalım demek.
+
+137
+00:14:16,379 --> 00:14:42,159
+değil sadece burası ne olacak erişim uçları bunlar nasıl olacak ve uygulama sonucu yazılım nasıl olacak veri nasıl olacak güvenlik nasıl olacak başka sistemlerle nasıl haberleşecek bunların hepsinin ayrı ayrı tasarlanmaları gerekiyor yani bunların hepsi bir arada yapıldığında tamamlandığında ancak bir sistemin bir bilgi sisteminin tasarlandığını söyleyebiliriz.
+
+138
+00:14:42,159 --> 00:14:47,379
+Hemen devam edelim
+
+139
+00:14:47,379 --> 00:14:55,239
+Tasarımın yine kitaptan da faydalanmak ve kitap uygun olarak gitmekte fayda var
+
+140
+00:14:55,239 --> 00:14:58,219
+Şimdi tasarımın çeşitli aşamaları var demiştik
+
+141
+00:14:58,219 --> 00:15:03,099
+Bunları görsel olarak görsel hafsası olanlar için bir daha burada ifade edelim
+
+142
+00:15:03,099 --> 00:15:05,839
+Bir önceki aşamamız neydi? Gereksinim analiziydi
+
+143
+00:15:05,839 --> 00:15:09,819
+Gereksinim analizinden pek çok sistem gereksinimi bize geldi
+
+144
+00:15:09,819 --> 00:15:19,819
+ve buradan gelen gereksinimlerin üzerindeki yapılan çalışmalarla birlikte bizim hem sistemimiz için tanımlanması gerekiyor.
+
+145
+00:15:20,199 --> 00:15:28,979
+Modüler bir ayrıştırma, modüler bir yapının oluşturulması gerekiyor ve işte yine sistemle alakalı genel kısıtların tanımlanmaları gerekiyor.
+
+146
+00:15:28,979 --> 00:15:37,239
+altyapı, modüler çözümleme, bunlar temelleri ve doğal olarak da bu modüller hangi verilerle çalışacak?
+
+147
+00:15:37,239 --> 00:15:41,860
+Veri ve kontrol, temel veriler ve temel kontrol mesajlarının belirlenmeleri gerekiyor.
+
+148
+00:15:42,080 --> 00:15:46,979
+İşte bunlar bizim ön tasarımımız oluşturacak ve bir ön tasarım raporu ile bunları ifade edeceğiz.
+
+149
+00:15:47,580 --> 00:15:49,220
+İdari incelemeden geçecek.
+
+150
+00:15:50,259 --> 00:15:55,279
+hatırlayalım idari incelemeyi. Hatırlarsanız fizibilite sonrasında gereksinim analizini de yine yapmıştık.
+
+151
+00:15:55,660 --> 00:16:02,999
+Ve burada gerekiyorsa revize edilecek, tekrar incelenecek ve diyelim ki ön tasarım kabul edildi. O zaman da ayrıntılı tasarıma geçilir.
+
+152
+00:16:03,399 --> 00:16:16,459
+Ayrıntılı tasarımda her bir modül, her bir bir önceki slide'da bahsettiğim arayüzler, veri tabanı, güvenlik, ilişim arayüzleri, yani diğer sistemlerle etkileşim arayüzleri gibi bütün parçalar tasarlanır.
+
+153
+00:16:16,459 --> 00:16:40,419
+yazılım tasarımı da bunların içinde ve ayrıntılı tasarım oluşturulur. Bu ön tasarımda doğal olarak dester. Yine bu da her adımda incelenir, gerek yoksa revize edilir. Ne zamanki kabul edildi işte artık benim sonu tasarlanmış bir sistem çözümüm var demektir ve sistem çözümü artık burada işletilmek üzere yani gerçekleştirme aşamasına taşınmak üzere burada yerini alır.
+
+154
+00:16:40,419 --> 00:17:08,879
+Peki ben bir sistemi acaba nasıl tasarlayabilirim? Şimdi bir sistem tasarımı oluşturmak için tabi tek bir yol yok. Farklı farklı çözüm yaklaşımları var. Bunlara da sistem tasarımı yaklaşımları adını veriyoruz. En çok kullanılanlardan bahsedeceğim. Tabi daha fazlası da var. Geçmiş zamanda daha çok kullanılanları da var. Onları şu anda hani o odamıza almakta almaya gerek yok.
+
+155
+00:17:08,879 --> 00:17:16,479
+ama bizim için önemli bir durum değil artık. Şimdi bir model driven dediğimiz model güdümlü yaklaşımlar var.
+
+156
+00:17:16,939 --> 00:17:21,979
+Burada şunu yapıyoruz. Elimizde bizim analiz modellerimiz var değil mi? Ya biz yaptık ya da bize hazır geldi.
+
+157
+00:17:22,379 --> 00:17:28,559
+Tamam belki de biz sadece tasarım ekip de olabiliriz. Mantıksal modeller var ve ben bu modelleri kullanarak,
+
+158
+00:17:29,159 --> 00:17:34,299
+oluşturulan analiz modelini kullanarak çeşitli modeller, tasarım modelleri oluşturuyorum.
+
+159
+00:17:34,300 --> 00:17:55,800
+Aslına bakarsanız işte buna tasarım çalışmaları adı da veriliyor. Pek çok farklı mimarlık ya da mühendislik dallarında da benzer çalışmalar yapılabiliyor. Şöyle ki oturuyorsunuz çeşitli adaylar oluşturuyorsunuz. Hani bu gereksinimleri karşılayan şöyle bir tasarım, şöyle bir sistem çözümü mü geliştirsek yoksa böyle bir sistem çözümü mü geliştirsek?
+
+160
+00:17:55,800 --> 00:18:14,080
+Prototip gibi bunlar aslına bakarsanız daha doğrusu üretmiyorsunuz ama tartışıyorsunuz. Bunları kullansak ne olur? Ya da şöyle bir yapıyla şu teknolojileri kullanarak bir çözüm üretsek ne olur? Bunları bunları karşılar ama şunu karşılamıyor onun için şu kadar uğraşmamız gerekir.
+
+161
+00:18:14,079 --> 00:18:22,279
+ya da bunu kullanırsak şu çözüm yöntemini kullanırsak daha uygun olur gibi çeşitli modeller oluşturulur.
+
+162
+00:18:22,559 --> 00:18:28,659
+Ve bu modellerin sonucunda da kabul gören model neyse o tasarlanır.
+
+163
+00:18:28,779 --> 00:18:36,699
+Onun gerçek ayrıntılı tasarımı daha detaylı bütün yönleriyle yapılması gereken tasarımı oluşturulur.
+
+164
+00:18:36,699 --> 00:18:41,239
+Burada pek çok alt başlık var. Bunların detaylarına girmeyeceğim.
+
+165
+00:18:41,239 --> 00:18:50,179
+işte modern tasarım, modern yapısal tasarım, bilgi, mühendisliği, prototipleme gibi model gülümlü yaklaşımın alt kırılımları var.
+
+166
+00:18:50,279 --> 00:18:52,999
+Bu detaylara girmiyorum ama kabaca ne yapıyoruz?
+
+167
+00:18:53,159 --> 00:18:54,159
+Bunu bilsek yeterli.
+
+168
+00:18:54,899 --> 00:18:59,739
+Çeşitli ürün adayları oluşturuyoruz tasarım yaklaşımlarını kullanarak.
+
+169
+00:19:00,239 --> 00:19:02,099
+Şöyle bir şey mi yapsak, böyle bir şey mi yapsak?
+
+170
+00:19:02,179 --> 00:19:04,259
+Sonra oturup bunların artısını, eksisini tartışıyoruz.
+
+171
+00:19:04,259 --> 00:19:14,019
+ve bizim için en önemli, en uygun olan ve gereksinimleri en iyi karşılayan beklentileri, kalite beklentilerini de en uygun şekilde karşılayan model hangisi ise
+
+172
+00:19:14,019 --> 00:19:20,379
+o modeli çözüm adayı olarak alıp detaylı tasarımını gerçekleştiriyoruz.
+
+173
+00:19:20,980 --> 00:19:23,780
+Bunun dışında ya bu kadar önceden oturup düşünmeyelim.
+
+174
+00:19:24,519 --> 00:19:26,239
+Bunun yerine şöyle çalışalım.
+
+175
+00:19:26,340 --> 00:19:27,860
+Hızlı bir şekilde uygulama geliştirelim.
+
+176
+00:19:27,939 --> 00:19:31,759
+Rapid Application Development dediğimiz bir tasarım yaklaşımı da mevcut.
+
+177
+00:19:32,031 --> 00:19:38,351
+Rapid Application Development yani RAD dediğimiz yaklaşımda da yine bir model aslında hazırlıyorsunuz.
+
+178
+00:19:38,391 --> 00:19:39,151
+Bu bir prototip.
+
+179
+00:19:39,931 --> 00:19:40,992
+En iyisi şudur.
+
+180
+00:19:41,211 --> 00:19:42,191
+En çok kullanılan bu.
+
+181
+00:19:42,311 --> 00:19:43,571
+Ya da bunlar çok revaçta.
+
+182
+00:19:44,011 --> 00:19:46,952
+Buna benzer problemleri herkes böyle çözüyor gibi düşünün.
+
+183
+00:19:47,851 --> 00:19:49,571
+Bir model hazırlanıyor.
+
+184
+00:19:49,671 --> 00:19:50,491
+Bu bir prototip.
+
+185
+00:19:50,691 --> 00:19:52,712
+Sonrasında bu iyileştiriliyor.
+
+186
+00:19:54,031 --> 00:19:57,831
+Yeniden tasarım gözden geçirip iyileştiriliyor sürekli olarak.
+
+187
+00:19:57,831 --> 00:20:05,911
+Ve bunu yaparken de ortak bilgi sistemi geliştiren taraflarla birlikte ortak uygulama geliştirme oturumları gerçekleştiriliyor.
+
+188
+00:20:05,911 --> 00:20:08,531
+Yani siz bir spiral modeli hatırlayın.
+
+189
+00:20:09,451 --> 00:20:12,731
+Bir önce analiz ve sonrasında bir mühendislik faaliyeti.
+
+190
+00:20:12,851 --> 00:20:16,252
+İşte mühendislik faaliyetinde bir modeli hazırlıyorsunuz, prototipi geliştiriyorsunuz.
+
+191
+00:20:16,631 --> 00:20:17,831
+Sonra oturup konuşuyorsunuz.
+
+192
+00:20:17,851 --> 00:20:18,432
+Bu oldu mu?
+
+193
+00:20:19,231 --> 00:20:20,371
+Bu nesi eksik?
+
+194
+00:20:20,591 --> 00:20:21,331
+Ne koyabiliriz?
+
+195
+00:20:21,371 --> 00:20:22,131
+Ne ekleyebiliriz?
+
+196
+00:20:22,131 --> 00:20:34,131
+Sonrasında yine haydaşların görüş önerileri ve katkılarıyla birlikte ortak uygulama geliştirme oturumundaki çıktılarla birlikte prototipinizi bir model daha ileriye taşıyorsunuz.
+
+197
+00:20:34,751 --> 00:20:36,091
+Yani bir iterasyon daha iyisin.
+
+198
+00:20:36,511 --> 00:20:38,551
+Yeni modüller ekliyorsunuz gibi düşünebilirsiniz.
+
+199
+00:20:38,731 --> 00:20:40,991
+Yeni işlevsellikler, yeni özellikler.
+
+200
+00:20:40,991 --> 00:20:57,432
+Mesela işte önce sadece çekirdek uygulama, ondan sonra buna veri katmanının eklenmesi, ondan sonra işte arayüz tasarım katmanlarının eklenmesi gibi ilave ede ede adım adım ilerlediğiniz bir sistem tasarımı yaklaşımında kullanabilirsiniz.
+
+201
+00:20:58,191 --> 00:21:04,351
+Bunun dışında üçüncü yöntemimiz de ortak uygulama geliştirme dediğimiz başlık.
+
+202
+00:21:04,351 --> 00:21:09,131
+Şimdi burada genellikle çok daha büyük projelerde kullanılıyor tabii ki bu.
+
+203
+00:21:09,131 --> 00:21:11,331
+ekip
+
+204
+00:21:11,331 --> 00:21:12,591
+bütün
+
+205
+00:21:12,591 --> 00:21:15,151
+paydaşlar bir araya geliyor
+
+206
+00:21:15,151 --> 00:21:17,252
+ve bir seminer gibi
+
+207
+00:21:17,252 --> 00:21:18,892
+aynı bir atölye çalışması
+
+208
+00:21:18,892 --> 00:21:21,011
+gerçekleştiriliyor. Tasarımla ilgili bütün
+
+209
+00:21:21,011 --> 00:21:23,051
+paydaşlar bir araya geliyorlar. Bu
+
+210
+00:21:23,051 --> 00:21:24,791
+birkaç günde sürebilir.
+
+211
+00:21:25,411 --> 00:21:27,171
+Sadece tek bir gün olmak durumunda
+
+212
+00:21:27,171 --> 00:21:29,252
+değil ama böyle bir mesai yapar
+
+213
+00:21:29,252 --> 00:21:31,131
+gibi sabah 8'den başlayıp akşam
+
+214
+00:21:31,131 --> 00:21:32,871
+5'e kadar bir mesai yapar gibi
+
+215
+00:21:32,871 --> 00:21:35,212
+kocaman bir salonda herkes
+
+216
+00:21:35,212 --> 00:21:37,212
+bir hani yansıtarak
+
+217
+00:21:37,212 --> 00:21:39,271
+problem. Arkadaşlar şimdi şunu tartışıyoruz.
+
+218
+00:21:39,351 --> 00:21:40,811
+Şu konuşulmuş. Şunu nasıl yapalım?
+
+219
+00:21:41,472 --> 00:21:43,052
+Bir işte yapılacak bir mesela
+
+220
+00:21:43,052 --> 00:21:45,252
+senaryo ya da bir gereksinim
+
+221
+00:21:45,252 --> 00:21:47,112
+ele alınıyor ya da öncesinde
+
+222
+00:21:47,112 --> 00:21:48,832
+hani bunlar var. Genel
+
+223
+00:21:48,832 --> 00:21:51,091
+altyapı nasıl olsun? Önce bu tartışılıyor.
+
+224
+00:21:51,552 --> 00:21:52,832
+Ondan sonra bu altyapı için işte
+
+225
+00:21:52,832 --> 00:21:54,791
+modüller neler olsun? Bunlar tartışılıyor.
+
+226
+00:21:54,892 --> 00:21:56,291
+Sonrasında her bir modül nasıl olsun?
+
+227
+00:21:58,151 --> 00:21:59,371
+Girdileri nasıl olsun?
+
+228
+00:21:59,692 --> 00:22:00,752
+Çıktıları nasıl olsun?
+
+229
+00:22:00,991 --> 00:22:02,311
+Yazılım tasarımı nasıl olsun?
+
+230
+00:22:02,731 --> 00:22:03,931
+Veri tasarımı nasıl olsun?
+
+231
+00:22:04,431 --> 00:22:07,151
+Arayüzler, diğer sistemlerle haberleşmeler nasıl olsun?
+
+232
+00:22:07,211 --> 00:22:08,871
+herkes de bir arada olduğu için
+
+233
+00:22:08,871 --> 00:22:10,891
+bir dakika şu beni engeller ya da
+
+234
+00:22:10,891 --> 00:22:12,271
+şunun şöyle yapılmaması lazım.
+
+235
+00:22:13,091 --> 00:22:15,011
+Şunu şöyle yaparsak daha iyi olabilir gibi
+
+236
+00:22:15,011 --> 00:22:17,311
+farklı farklı taraflarının kendi bakış açılarının
+
+237
+00:22:17,311 --> 00:22:19,071
+hepsi bir arada olduğu için
+
+238
+00:22:19,071 --> 00:22:20,131
+böyle biraz daha
+
+239
+00:22:20,131 --> 00:22:23,311
+kim ne diyecekse
+
+240
+00:22:23,311 --> 00:22:24,291
+şimdi söylesin.
+
+241
+00:22:24,451 --> 00:22:26,871
+Onun gibi bir yaklaşımla
+
+242
+00:22:26,871 --> 00:22:28,651
+bir sistem tasarımı oluşturuluyor.
+
+243
+00:22:28,751 --> 00:22:30,131
+Genellikle çok büyük projelerde.
+
+244
+00:22:30,491 --> 00:22:33,051
+Çünkü siz bir parçacı tasarımını
+
+245
+00:22:33,051 --> 00:22:35,071
+yaparsanız ama belki de o yaptığınız tasarım
+
+246
+00:22:35,071 --> 00:22:36,791
+çok iyi bile olsa sistemin
+
+247
+00:22:36,791 --> 00:22:38,731
+genelinde başka kısımları
+
+248
+00:22:38,731 --> 00:22:40,671
+bozuyor olabilir ya da çok kötü etkiliyor
+
+249
+00:22:40,671 --> 00:22:42,231
+olabilir. Böyle durumlar
+
+250
+00:22:42,231 --> 00:22:44,491
+oluşabilecekse ortak uygulama
+
+251
+00:22:44,491 --> 00:22:46,291
+geliştirme, seans şeklinde böyle
+
+252
+00:22:46,291 --> 00:22:48,771
+bütün katılımcıların fayda sağladığı
+
+253
+00:22:48,771 --> 00:22:50,371
+ve katkı sağladığı bir
+
+254
+00:22:50,371 --> 00:22:52,752
+sistem tasarımı da gerçekleştirilebilir.
+
+255
+00:22:53,271 --> 00:22:54,511
+Bu genellikle pek yapılmıyor.
+
+256
+00:22:54,611 --> 00:22:56,711
+Dediğim gibi çok büyük projelerde ancak olabilir.
+
+257
+00:22:57,311 --> 00:22:58,571
+Genellikle günümüzde daha çok
+
+258
+00:22:58,571 --> 00:23:00,771
+hızlı uygulama geliştirme ve bunun türevleri
+
+259
+00:23:00,771 --> 00:23:01,831
+daha çok kullanılıyor.
+
+260
+00:23:02,331 --> 00:23:04,851
+Biz bir başlayalım. Zaten herkes
+
+261
+00:23:04,851 --> 00:23:06,351
+şu mimariyi kullanıyor.
+
+262
+00:23:06,351 --> 00:23:18,351
+Girip ondan sonra o mimariye göre yapılması gerekenler ve o mimariye göre sizin probleminizde uydurulması gerekenler yapılarak prototipiniz ürüne doğru ilerletilmeye çalışılıyor.
+
+263
+00:23:18,688 --> 00:23:44,167
+Birincisi ise daha uzun bir süreç. Çünkü orada pek çok aday var. Aday çözümlerin çoğu ya da en eksi bir tanesini çöpe atacaksınız. Bir tanesiyle yola devam edeceksiniz ama o kadar bir tasarımı, en tane tasarımı bir şekilde ön tasarımlarını yapmak zorunda kalacaksınız. O yüzden de burada da iş yükü daha fazla. Ama çok garantili bir ürün elde etmeniz gerekiyorsa o zaman bir model güdümlü yaklaşım tabii ki kullanabilirsiniz.
+
+264
+00:23:44,167 --> 00:23:46,727
+Peki şimdi gelelim ön tasarıma
+
+265
+00:23:46,727 --> 00:23:51,028
+Ne demiştik? Altyapı belirlenecek, modüler çözümleme yapılacak
+
+266
+00:23:51,028 --> 00:23:55,007
+Bakalım onlar nasıl yapılıyor ya da oradaki çalışmalar neler olabilir?
+
+267
+00:23:55,368 --> 00:23:58,987
+Bir, bir kere fizibiliteden gelen öneriler vardı
+
+268
+00:23:58,987 --> 00:24:01,787
+Onlar değerlendirilecek ve bunlar nasıl temin edilecek?
+
+269
+00:24:02,408 --> 00:24:06,048
+Hem yazılım hem donanım hem de A altyapısı olarak düşünebilirsiniz
+
+270
+00:24:06,048 --> 00:24:10,467
+Bunları sıfırdan oluşturabilirsiniz ya da kurum içinde geliştirebilirsiniz
+
+271
+00:24:10,467 --> 00:24:14,407
+ya da ihtiyaca göre satın alabilirsiniz.
+
+272
+00:24:14,567 --> 00:24:16,087
+Hazır çözümleri satın alabilirsiniz.
+
+273
+00:24:16,548 --> 00:24:19,947
+Ya da hiçbir şey satın almayıp direkt olarak hizmet satın alabilirsiniz.
+
+274
+00:24:19,947 --> 00:24:21,987
+Hani bu iki şekilde olabilir.
+
+275
+00:24:22,127 --> 00:24:23,927
+Outsource etmek şeklinde de olabilir.
+
+276
+00:24:24,107 --> 00:24:29,128
+Ya da hiç uğraşmadan direkt olarak çalışan sistemi bir servis olarak alabilirsiniz.
+
+277
+00:24:29,807 --> 00:24:32,347
+Bunların hepsinin kendisine göre artıları ve eksileri var.
+
+278
+00:24:32,827 --> 00:24:37,647
+Diyelim ki bir sistemi sıfırdan oluşturduğunuz ve bunun için de kurum için de geliştirme seçeneğini seçtiniz.
+
+279
+00:24:38,347 --> 00:24:39,527
+Ürün tamamen sizin olur.
+
+280
+00:24:39,527 --> 00:25:00,407
+tamamen size özel olur. İstediğiniz her tür yapısı tamamen size özel olarak değiştirilebilir. Terziye bir kıyafet diktirmek gibi düşünebilirsiniz bunu. Hatta terzi de anneniz mesela diyelim kurum içinde tamamen öz kaynaklarınızı kullanarak bir sistemi geliştirdiğinizi düşünelim.
+
+281
+00:25:00,408 --> 00:25:04,908
+ama bu tabii ki çok daha pahalıya mal olacaktır.
+
+282
+00:25:05,068 --> 00:25:10,368
+Çünkü işte ham maddeyi alacaksınız, bunun geliştirmesi için bir zaman harcayacaksınız.
+
+283
+00:25:10,808 --> 00:25:15,448
+Artı iş gücü gerekecek, o iş gücünün de yine finanse edilmesi gerekecek gibi gibi.
+
+284
+00:25:15,887 --> 00:25:26,848
+Kurum içi geliştirme tamamen özelleştirilebilir, tamamen size ait, tamamen sahibi sizin olduğunuz, fikri mülkiyet haklarıyla dahil olmak üzere size ait olan bir ürün olur, bir çözüm olur.
+
+285
+00:25:26,848 --> 00:25:42,588
+gerekliğinde belki iyi tasarlandıysa belki pazarlanabilir başkalarının da aynı hizmeti kullanması sağlanabilir ama bunun dışında pahalıya mal olur daha uzun sürebilir artı onun için ekstra istihdamlar yapmanız da gerekebilir.
+
+286
+00:25:42,868 --> 00:25:54,428
+Satın alıp özelleştirebilirsiniz satın alma bir maliyettir ama belki de toplam maliyetinizi kurum içi geliştirmeye göre düşünüyorsa şey yapılabilir tercih edilebilir ama bunda eksisi ne olur?
+
+287
+00:25:54,427 --> 00:26:04,287
+ürünün sahibi siz olmazsanız hani fikri hakları mülki hakları sizde olmaz artı tamamen ihtiyaçlarınızı yüzde yüz karşılamıyor olabilir
+
+288
+00:26:04,287 --> 00:26:18,227
+hani tamamen sizin ihtiyaçlarınıza özel olarak geliştirilmemiş bir ürün olabilir çeşitli uyarlamalarla yaklaştırılıyor olabilir sizin probleminize
+
+289
+00:26:18,227 --> 00:26:25,127
+bu yüzden de birebir uyum ve birebir terzi işi bir çözüm ortaya çıkartılamayabilir.
+
+290
+00:26:25,527 --> 00:26:29,087
+Hizmet olarak alınmasına geçtiğimizde de outsource olarak yaptırabilirsiniz.
+
+291
+00:26:29,267 --> 00:26:32,847
+Orada da yine fikri ve sınayi haklar tartışılır.
+
+292
+00:26:33,547 --> 00:26:39,027
+Eser sahipliği ve eserin kullanım hakkı gibi şeyler üretende ve kullananda olur.
+
+293
+00:26:39,688 --> 00:26:41,587
+Sizde olur bir kısmı.
+
+294
+00:26:41,587 --> 00:26:49,087
+fakat onun dışında genellikle bu normal bir kurum içi geliştirmeden bile daha pahalıya mal olabilir.
+
+295
+00:26:49,527 --> 00:26:51,927
+Yani ne olur daha hızlı bir çözüm elde edebilirsiniz.
+
+296
+00:26:52,107 --> 00:26:58,887
+Yine nispeten hazır bir ürüne göre ya da hazır bir çözüme göre daha özelleştirilmiş,
+
+297
+00:26:58,887 --> 00:27:08,408
+mümkün olduğunca sizin tamamen kendi yaptığınıza yakın bir çözüm ile sisteminizi tasarlayıp geliştirebilirsiniz.
+
+298
+00:27:08,884 --> 00:27:22,804
+Bir diğeri de işte tamamen bu bilgi sistemindeki beklentilerinizi servis olarak almak. Bu durumda da ne altyapıyla uğraşırsınız, ne geliştirmeyle uğraşırsınız, hiçbir şeyle uğraşmazsınız ama bu da aslında kira öder gibi biraz pahalıya mal olur.
+
+299
+00:27:22,804 --> 00:27:31,764
+ilk yatırım maliyetiniz yok ama o ilk yatırım maliyetinin fazlasını aslında zaman içindeki kullanım maliyetine yedirmiş olursunuz.
+
+300
+00:27:32,404 --> 00:27:44,943
+Birden çok para harcamayayım ya da bir anda kullanmaya başlayayım hazır bir çözümü ve bunu da abonelik gibi kullanayım gibi bir yaklaşım gerekiyorsa, işinizi çözüyorsa o zaman bunu hizmet olarak da alabilirsiniz.
+
+301
+00:27:45,323 --> 00:27:46,964
+Çözümünüzü böyle de oluşturabilirsiniz.
+
+302
+00:27:46,963 --> 00:28:14,903
+Şimdi biz burada tabi daha çok kendi içimizde ya da hazır olarak outsource olarak birilerine yaptırdığımız çözümleri göz önüne alıyoruz. Yoksa hazır bir ürünü parayı verip de kullanmak şeklinde bir tasarımdan çok fazla bahsetmiyoruz. Ne olursa olsun kurum içi geliştirme ya da birilerine para verip geliştirme yaptığınızda en önemli şey bir yazılımı bir sistemin mimari tasarımını etkileyen en önemli nokta işlevsel olmayan gereksinimlerdir.
+
+303
+00:28:14,903 --> 00:28:19,843
+işlevsel olmayan gereksinimler non-functional requirements dediğimiz kısım.
+
+304
+00:28:20,583 --> 00:28:29,003
+Bunlar aslında bir yazılımın mimarisini ve tasarımını birebir, direkt, doğrudan en çok etkileyen noktalardır.
+
+305
+00:28:32,660 --> 00:28:50,399
+Şimdi, işlevsel olmayan gereksinimler aslında hani böyle use case olarak yazmadığımız, orada use caselerde bulunmayan ama hani use caselerin altında özel teknolojik beklentiler falan gibi alt kısımlar vardı ya işte oralarda yazanlar.
+
+306
+00:28:50,399 --> 00:29:04,860
+Mesela siz bir sisteminizde yapılan girdiğe göre mesela oluşan çıktığının bir raporun üretilme süresiyle ilgili bir kısıt koyulmuşsa ona uygun bir çözüm üretecek tasarımı yaparken çok zorlanabilirsiniz
+
+307
+00:29:04,860 --> 00:29:14,560
+Rapor üretmek başka bir şey, raporu mesela atıyorum işte 1 milyon kayıttan oluşan bir raporu 100 milisaniyede üretebiliyor olmak başka bir şey
+
+308
+00:29:14,559 --> 00:29:30,660
+ya da kapasite. Bir öğrenci bilgi sistemi ya da ders seçme bilgi sistemi yaptığınızı düşünelim. Burada öğrencilerin dersleri seçebilmesi, yani o gereksinimi yerine getirebilmesi, o işlevi yapabilmesi ayrı bir şey.
+
+309
+00:29:32,339 --> 00:29:43,599
+Saniyede 10 bin öğrencinin eş zamanlı olarak bağlanabilmesi ve atıyorum işte ne bileyim 80 bin tane ders kaydının bir saniye içinde eş zamanlı olarak yapılabiliyor olması başka bir şey.
+
+310
+00:29:43,599 --> 00:29:53,559
+ya da iki seviyeli güvenlik doğrulamasına sahip bir doğrulama ve geçerleme mekanizmasına sahip olması başka bir şey gibi.
+
+311
+00:29:53,799 --> 00:30:01,899
+Ya da işte zararlı yazılımlara karşı korunaklı olması gereksinimlerde yazmayan ama işlevsel olmayan bir gereksinim.
+
+312
+00:30:02,199 --> 00:30:08,139
+Ve bunların yapılması için ayrı tasarımlar, ilave işler yapılmaları gerekir. Bu da ayrı bir ihtiyaç.
+
+313
+00:30:08,139 --> 00:30:17,859
+ve bununla beraber tabii ki yine donanım ve yazılım altyapısına yönelik de pek çok kararı burada bu aşamada vermeniz gerekecek.
+
+314
+00:30:20,299 --> 00:30:31,319
+Özellikle yazılımın mimari tasarımını ya da modellemesini yaparken pek çok soru var ve bu soruların hepsinin bir şekilde yanıt bulması gerekecek.
+
+315
+00:30:31,319 --> 00:30:37,779
+Şimdi dedim ya işlevsel olmayan gereksinimler yüzünden oluyor aslında bunların her biri burada yapılan seçimlerin her biri.
+
+316
+00:30:38,139 --> 00:31:08,119
+mesela siz bu ürettiğiniz bilgi sistemini tek bir merkezde mi barındıracaksanız tek bir merkezde mi çalışacak bu yoksa dağıtık bir sistem mi olacak günümüzde tabii ki eğer bir yük karşılama durumunuz varsa bir kapasiteye hizmet vermek durumundaysanız merkezi sistemle bunu karşılamanız çok zor o yüzden daha ilk aşamada bir dakika benim buradaki sistemi dağıtık olarak çalışacak şekilde tasarlanabilirsiniz
+
+317
+00:31:08,139 --> 00:31:19,859
+tasarlamam lazım. Onun için de uygulama sunucusunu, uygulama sunucusunun üzerindeki modülleri farklı fiziksel cihazlarda aynı anda çalışılabilir halde tasarlamam lazım.
+
+318
+00:31:20,039 --> 00:31:26,679
+Eş zamanlılığı bilmem neyi çözmem lazım diye bu problemleri de yazılım tasarımınıza eklemeniz gerekecektir.
+
+319
+00:31:27,100 --> 00:31:32,839
+Ya da veri tek merkezde mi duracak yoksa ağ üzerinde mesela depolanacak dağıtık bir yapıda mı olacak?
+
+320
+00:31:32,839 --> 00:31:58,219
+Yine pek çok modern veri tabanı günümüzde işte dağıtık ya da çok kopyalı olarak verileri tutabiliyor. Bunlar nasıl birleştirilecek? Ben mesela bir kayıdı güncellediğimde acaba bütün hepsinde güncelleme olacak mı? Yoksa sadece bir tanesinde güncellenip diğerlerinde eski kalmasına mı sebebiyet verecek? Bunların kontrolleri nasıl olacak? Gibi gibi gibi pek çok ekstra soru ve çözülmesi gereken nokta ortaya çıkıyor.
+
+321
+00:31:58,219 --> 00:32:06,320
+Yine yazılımı geliştirirken kullanacağımız uygulamalar, kütüphaneler, teknolojiler neler olacak, programlama dili ne olacak, kullanılacak araçlar neler olacak
+
+322
+00:32:06,320 --> 00:32:10,680
+Eğer bazı parçaları hazır satın alıyorsak bunlar nasıl birleştirilecek?
+
+323
+00:32:10,680 --> 00:32:15,960
+Mesela hani hep örnek veriyorum ya muhasebe sistemi genellikle yazılmaz hazır alınır ve entegre edilir
+
+324
+00:32:15,960 --> 00:32:20,719
+Acaba o bize uyumlu mu ya da onun diliyle konuşmamız gerekecek mi?
+
+325
+00:32:20,839 --> 00:32:22,619
+Ona verileri nasıl sağlamamız lazım?
+
+326
+00:32:22,740 --> 00:32:25,020
+Onun ürettiği çıktığıları ben nasıl entegre edebilirim?
+
+327
+00:32:25,020 --> 00:32:28,799
+Bunlarla ilgili yine çalışmalar ve tasarım değişiklikleri yapılması lazım
+
+328
+00:32:29,248 --> 00:32:57,307
+arayüzlerdeki teknolojiler neler olacak? Mesela mobil arayüzü olacak mı? Mobil arayüzü olacak diyelim. iOS mu olacak? Android mi olacak? Eskiden Windows vardı, Blackberry vardı, Huawei'nin bilmem ne osu var çıkmıştı falan. Bunların hepsini destekleyecek mi? Ya da sadece iOS ve Android'i mi destekleyecek? iOS, Android'i nereye kadar destekleyecek? iOS'u nereye kadar destekleyecek? Bunlar native mi olacak? Cross platform mu olacak?
+
+329
+00:32:57,307 --> 00:33:24,507
+bakın sadece mobil arayüzden bahsediyorum bir saatten ya deminden beri. Web arayüzü olacak mı? Web arayüzü olacaksa nasıl olacak? Ya da işte bir desktop arayüzleri olacak mı? Onlar nasıl olacak? Bambaşka belki de farklı işte ne bileyim tablet gibi bir ortamdan belki giriş alacak, çıktı üretecek. Bunlar nasıl olacak? Bunların hepsinin teknolojilerinin ve tasarımların nasıl olacağında mimari modelde yer alması gerekecek.
+
+330
+00:33:24,507 --> 00:33:40,108
+ve farklı sistemlerle konuşurken yani arayüzler üzerinden konuşurken bunlar için nasıl interfeyslere ihtiyacımız olacak, buradaki teknolojiler neler olacak, hangi protokoller kullanılacak, hangi güvenlik kullanılacak gibi gidiyor. Soruların sonu yok.
+
+331
+00:33:40,108 --> 00:33:54,127
+O yüzden tasarım bir dünya, tasarım bir çözüm oluşturma yani bir çözüm adayı oluşturma aşaması ve karar verilmesi gereken o kadar çok nokta var ki bunların hepsini bir şekilde üzerinden geçmeniz gerekiyor.
+
+332
+00:33:54,507 --> 00:34:04,667
+Bunları ne kadar detaylandırırsanız o kadar iyi bir tasarım yapmış olursunuz. Ne kadar üzerinde durmayıp açık bırakırsanız da o kadar aslında muğlak ve kötü bir tasarım ortaya koymuş olursunuz.
+
+333
+00:34:06,487 --> 00:34:13,487
+Özetleyecek olursak mimari tasarım bileşenlerini temelde iki parçaya ayırabiliriz. Bunlardan bir tanesi yazılım, bir tanesi de donanımdır.
+
+334
+00:34:13,487 --> 00:34:22,627
+Donanım tarafında istemci, sunucu ve altyapıları nasıl olacak bunları belirlememiz gerekiyor. İstemci taraf dediğim kullanıcılar, erişim noktaları.
+
+335
+00:34:22,627 --> 00:34:43,767
+hani bir Amazon Kindle gibi bir şey mi olacak yoksa bir akıllı telefon hatta bir akıllı saat belki belki bambaşka bir veri giriş ortamı bir sensör mesela bir kamera belki olabilir her şey olabilir sanatabiliyor muyum? Bunların mutlaka mimar tasarımlarının bizim sistemimizin modeline eklenmeleri gerekiyor.
+
+336
+00:34:43,768 --> 00:35:02,188
+sonrasında sonucu özellikle de iş yapan birimler, fonksiyonları yerine getiren, gereksinimleri yerine getiren, çalışan, yazılımın durduğu yerler bunlar ne olacak nasıl olacak dağıtık mı merkezi mi gibi soruları tartıştık zaten ve bunlar birbiriyle hangi ağ ortamından hangi protokollerle nasıl haberleşecek
+
+337
+00:35:02,188 --> 00:35:05,548
+Hatırlarsanız fizibilitede şeyi bile tartışmıştık
+
+338
+00:35:05,548 --> 00:35:11,568
+Bu sistem önerisi, tasarımı demiyorum önerisi kabaca şu kadar bir trafik yaratır
+
+339
+00:35:11,568 --> 00:35:15,848
+Onun için de şöyle şöyle bir network altyapısına ihtiyaç duyuyoruz
+
+340
+00:35:15,848 --> 00:35:19,667
+Ama bu 10.000 kullanıcı değil de 100.000 kullanıcıya çıkarsa şöyle değişir
+
+341
+00:35:19,667 --> 00:35:23,867
+O zaman da şunların şu şekilde arttırılmaları ya da değiştirilmeleri gerekir gibi
+
+342
+00:35:23,867 --> 00:35:31,027
+Sadece geliştirme değil, kullanım aşamasında 5 yıllık projeksiyonuyla birlikte hatırlarsanız tartışmamız gerekiyordu
+
+343
+00:35:31,027 --> 00:35:39,527
+tasarımı yaparken de aynı noktaları oradaki önerileri tavsiyeleri alıp artık bunları gerçek kanlı canlı hale getirmemiz gerekiyor.
+
+344
+00:35:42,027 --> 00:35:53,548
+Yazılım tarafına baktığımızda da burada da bir kere çeşitli yazılım genellikle günümüzde tasarımda katmanlara ayrılır.
+
+345
+00:35:53,548 --> 00:36:05,408
+her bir katman birbirine hizmet eder, hizmet alır ve böylece problemi alt parçalara ayırmış oluruz ve her bir parçayı kendi içinde daha ufak alt problemler halinde biraz daha kolay bir şekilde çözebiliriz.
+
+346
+00:36:05,947 --> 00:36:11,928
+Ve burada da bir uygulama katmanımız olacak. Uygulama mantığının çözülmesi yani yazılım tasarımının yapılması gerekiyor.
+
+347
+00:36:12,508 --> 00:36:17,048
+Sunum katmanı dediğim hem diğer sistemlerle hem de istemcilerle haberleşecek.
+
+348
+00:36:17,440 --> 00:36:33,979
+kontrol katmanının nasıl olması gerektiğini söylüyor ya da bunun tasarımının yapılmasını ifade ediyor. Bununla beraber bir altta veriye nasıl erişilecek bu katman nasıl olmalı? Veri erişim mantığının tasarlanması ve yine veri depolamanın ve veri tasarımının da yapılması gerekiyor.
+
+349
+00:36:33,979 --> 00:36:39,779
+yazılım altında temelde 3 noktaya dikkat etmeliyiz.
+
+350
+00:36:39,879 --> 00:36:45,019
+Veri tasarımı, veri tasarımı ile birlikte veriye erişim mantığı ve bunun tasarlanması,
+
+351
+00:36:46,379 --> 00:36:49,739
+uygulama katmanı tasarımı ve sunum katmanının tasarımı.
+
+352
+00:36:49,800 --> 00:36:56,379
+Sunum katmanı dediğim gibi uygulama ile ön yüzler arasındaki kontrol ara tabakası aslında.
+
+353
+00:36:57,459 --> 00:36:59,279
+Ve bununla beraber ön yüzler tabii ki.
+
+354
+00:36:59,280 --> 00:37:17,539
+ve donanım tarafındaysa ön yüz tarafları istemci, uygulama mantığı ve veri katmanı sunucu tarafı birbirleriyle olan bütün haberleşmeleri de A altyapısını oluşturuyor ve bunların hepsinin tasarımlarının gerçekleştirilmeleri gerektiğini söylüyoruz.
+
+355
+00:37:17,539 --> 00:37:33,739
+Şimdi diyelim ki elimizde tasarlanacak bir sistem var ve ben burada bazı şeyleri geliştirmem gerektiğini, bazı parçaları ya da modülleri hazır alabileceğimi ya da kullanabileceğimi fark ediyorum
+
+356
+00:37:33,739 --> 00:37:44,020
+ve elimde de bir iyi kötü çalışan bir bilgi sistemi var ve bununla beraber bir donanım da var diye belli bir parçası ya da belli bir miktarda donanımım da var
+
+357
+00:37:44,020 --> 00:37:49,180
+sunucularım, uygulama sunucularım ya da veri tabanı sunucularının durduğu cihazlar da var diyelim.
+
+358
+00:37:49,500 --> 00:37:53,680
+Bir kere öncelikle benim elimde ne var? Envanterim nedir? Bunu belirlemem gerekir.
+
+359
+00:37:54,060 --> 00:37:58,499
+Bunu belirledikten sonra yani şuradaki ilk aşama iş yükünü tahminlemem lazım.
+
+360
+00:37:58,759 --> 00:38:04,820
+Yani bunu da niye yapıyorum? Donanım ve yazılım açısından acaba bunlar mevcutlar beni karşılar mı karşılamaz mı?
+
+361
+00:38:04,820 --> 00:38:11,039
+Eğer bu yapılmış olan yatırım benim yeni sistemimde karşılıyorsa çok güzel.
+
+362
+00:38:11,039 --> 00:38:15,779
+hiçbir yeni altyapı yatırımı yapmadan bunları kullanarak yoluma devam edebilirim.
+
+363
+00:38:16,059 --> 00:38:23,340
+Ama karşılamıyorsa bu iş yükünü o zaman yeni ilaveler yapmam ya da daha kapsamlı değişiklikler yapmam gerekebilir.
+
+364
+00:38:23,839 --> 00:38:25,540
+Onun için de bir şeyler almam lazım.
+
+365
+00:38:25,960 --> 00:38:28,199
+İşte onun için de kimden alacağımı belirlemem lazım.
+
+366
+00:38:28,380 --> 00:38:35,740
+Bununla beraber de nasıl satın alacağını finansal olarak alacak mıyım, leasing mi, kiralama mı bunların da belirlenmeleri gerekecek.
+
+367
+00:38:35,740 --> 00:38:37,859
+Şimdi bunların detaylarına hızlıca bakalım.
+
+368
+00:38:37,859 --> 00:38:47,940
+Envanter'in belirlenmesi aşamasında, yani şuradaki ilk aşamada özellikle sistem analizleri tabii ki burada yine rol alacak
+
+369
+00:38:47,940 --> 00:38:53,899
+Var olanlık da sistemin altyapısını, durumunu görmek için aynı fizibilitede yaptıklarını daha detaylı bir şekilde
+
+370
+00:38:53,899 --> 00:39:03,859
+Elimizde ne var? Bunlar ne model? Üreticisi kim? Durumu nedir? Yaşı nedir? Daha ne kadar çalışır? Fiziksel olarak nerede duruyor? Bunlardan kimler sorumlu?
+
+371
+00:39:03,859 --> 00:39:19,079
+ve acaba bunun finansal yapısı nedir? Yani bu işletmenin malı mı, kiralık mı? Yoksa hani artık bunun mesela kiralıksa belki de kira ömrü doldu artık daha fazla buna devam etmeyelim gibi bir şey söyleyebiliriz.
+
+372
+00:39:19,460 --> 00:39:27,999
+Ve gerekli olması gereken altyapı ihtiyacıyla mevcut donanımı kıyaslayıp alınması gereken kısım aslında ortaya çıkartılmaya çalışılır.
+
+373
+00:39:27,999 --> 00:39:48,499
+iş yükü tahmininde de kapasite yetiyor mu yetmiyor mu ve bizim için istenen zamanda tepki verecek mi vermeyecek mi bunlar ortaya çıkartılıyor ve gereksiz mümkün olduğunca satın alma ve sistem kurulumlarının engellenmesi esas buradaki bu iş yükü tahminindeki amaç olarak karşımıza çıkıyor.
+
+374
+00:39:48,499 --> 00:39:58,979
+mümkün olduğunca çok gereksiz yatırım yapmayalım, gereksiz para harcamayalım, gereksiz yeni donanım ya da yazılım satın almaları yapmayalım diye
+
+375
+00:39:58,979 --> 00:40:07,160
+acaba ne kadar bir ilave iş yükü oluşur, bu sistemin kaldırabileceği bir yer midir, yoksa mevcut altyapı bunu kaldırabilir mi?
+
+376
+00:40:07,520 --> 00:40:09,079
+Bunları ortaya çıkartmaya çalışıyoruz.
+
+377
+00:40:09,652 --> 00:40:20,032
+sonrasında yine donanım değerlendirmesi ve yazılım değerlendirmesi dediğimiz elimizde ne var ve bunları ne kadar nasıl kullanabiliriz bu aşamalardan geçeriz.
+
+378
+00:40:20,691 --> 00:40:31,311
+Yine projenin ihtiyaçlarıyla birlikte iş yükünü de tahminlemiştik hatırlarsanız. Mevcut envantere göre acaba donanım karşılıyor mu, karşılamıyor mu?
+
+379
+00:40:31,311 --> 00:40:36,951
+Bunlara bakarken de bir işlemi gerçekleştirmek için gereken ortalama süre nedir?
+
+380
+00:40:37,711 --> 00:40:41,091
+Hani inputtan, prosesiyle beraber output'u üretme süresi nedir?
+
+381
+00:40:41,251 --> 00:40:43,251
+Bu beklentilerin içinde mi?
+
+382
+00:40:43,431 --> 00:40:45,791
+İşte 10 mili saniyede yapıyor mu, yapmıyor mu gibi.
+
+383
+00:40:46,251 --> 00:40:48,052
+Sistemin toplam kapasitesi nedir?
+
+384
+00:40:48,192 --> 00:40:51,671
+Hani 1000 öğrenciye kadar mı, 10.000 öğrenciye kadar mı tepki verebiliyor?
+
+385
+00:40:51,671 --> 00:40:57,291
+Ne kadar CPU atıl kalıyor ya da ne kadar bellek ihtiyacı oluşuyor?
+
+386
+00:40:57,911 --> 00:41:00,791
+Bu gibi ana kriterler kullanılabilir.
+
+387
+00:41:00,791 --> 00:41:07,471
+tabi buradaki kriterleri çok daha fazla arttırabilirsiniz. Bunlar sadece birer örnek. Neye bakabilirim şeklindeki örnekler.
+
+388
+00:41:07,931 --> 00:41:13,071
+Yazılımı değerlendirirken de mevcut yazılımlardaki işte mesela performans etkinliğine bakılır.
+
+389
+00:41:13,451 --> 00:41:21,732
+İstekleri yerine getiriyor mu? Ekranlar çıktılar uygun mu? Yeterli kapasiteye sahip mi? Performansı yeterli mi?
+
+390
+00:41:21,732 --> 00:41:27,832
+Kullanım kolaylığı ihtiyaçları karşılıyor mu? Değişiklik kolay yapılabiliyor mu? Yani esnek mi?
+
+391
+00:41:27,832 --> 00:41:36,812
+dökümentasyonu iyi mi ve üreticisi bu yazılıma destek veriyor mu? Mevcut da elimizdekileri de bu kriterlere göre değerlendirebiliriz.
+
+392
+00:41:38,092 --> 00:41:43,412
+Yani ne kadarını kullanalım, ne kadarını kullanmadan yeni yapalım ya da yeni alalım ya da yeni üretelim.
+
+393
+00:41:43,412 --> 00:41:49,312
+Bunları tasarım aşamasında, ön tasarım aşamasında hatta ortaya koymaya gayret ediyoruz.
+
+394
+00:41:49,471 --> 00:41:51,952
+Mümkün olduğunca az iş yapmaya çalışıyoruz anlayacağınızı.
+
+395
+00:41:53,351 --> 00:41:57,211
+Ve diyelim ki bir şeyler satın almamız gerekli. Nereden alacağız?
+
+396
+00:41:57,832 --> 00:42:09,732
+Buna nasıl karar verelim? Verdiği desteklere bakmanız lazım. Donanım desteğini ne kadar veriyor? Yazılım desteğini ne kadar veriyor? Kuruluş ve eğitimle alakalı ne gibi destekleri ve hizmetleri var?
+
+397
+00:42:09,732 --> 00:42:22,831
+Ve bakım aşamasında tabi bunlar sözleşmeye bağlı olarak değişmekle birlikte ne kadar bizi destekliyor? Ne kadar arkamızda duruyor? Mesela işte çeşitli tabi bakım seviyeleri de var parayla. Para seviyesine göre de değişebilir.
+
+398
+00:42:22,831 --> 00:42:44,191
+siz sadece hafta içinde mesai saatlerinde bakım desteği alabilirsiniz ya da işte akşamları dahil edebilirsiniz resmi tatiller hariç olur ya da böyle 7 gün 24 saat sürekli istediğinizde anında bakım desteği alabilirsiniz tabi bu biraz daha çok daha fazla pahalıya mal olacaktır sizin açınızda
+
+399
+00:42:44,191 --> 00:42:51,191
+ama bunda satıcının sunduğu destekler, hizmetler sonuçta sizin nereden alacağınızı etkileyecektir.
+
+400
+00:42:51,331 --> 00:43:02,491
+Bununla beraber satın mı alacaksınız, finansal kiralamamı yapacaksınız, leasing dediğimiz ve hiç satın almadan direkt kiralamamı yapacaksınız.
+
+401
+00:43:02,911 --> 00:43:04,652
+Bunlara da yine karar vermeniz gerekiyor.
+
+402
+00:43:04,751 --> 00:43:09,811
+Burada biraz üst yönetimle beraber yani patron tarafıyla beraber de çalışmanız gerekecek.
+
+403
+00:43:09,811 --> 00:43:10,851
+Ona bir şey diyemiyoruz.
+
+404
+00:43:10,851 --> 00:43:37,471
+şimdi genel olarak satın almak demek bir malın yani mesela bir sunucu diye donanım altyapısından fiziksel olarak konuşalım bir sunucu var ortamda ihtiyacınız olan şöyle şöyle şöyle özelliklerde bir cihazın mutlaka alınması gerekiyor uygulama sunucusunun için gerekli hem performans hem işlem hacmi hem de gereksinimlerin işlerin yerine getirebilmesi için bu ortaya çıktı diyelim önceki aşamaları yaptığınızda
+
+405
+00:43:37,471 --> 00:43:51,891
+diyelim ki bu ürünü acaba satın mı alalım diye bir soru geldi. Yani düşünüyoruz, sesli düşünmeye başladığınız. Satın alırsanız bir kere uzun dönemde daha ucuza gelir ve isterseniz hani
+
+406
+00:43:52,304 --> 00:44:13,564
+ölçeklendirebilirsiniz. Tamamı sizindir, tam kontrolünüz vardır ve amortismanla beraber yine şirkette bunu gider olarak yazarak gelir vergisinden, gelir toplam kazancınızdan bunu gider olarak düştüğünüz için vergi indiriminden de gelir vergisinin azaltılması avantajından da faydalanabilirsiniz.
+
+407
+00:44:14,023 --> 00:44:20,783
+Ama tabii dezavantajları da var. Bir kere direkt lap diye parayı ödüyorsunuz. Taksitte de ödüseniz sonuçta baştan ödüyorsunuz.
+
+408
+00:44:20,783 --> 00:44:26,144
+günümüzdeki teknolojinin değişim hızıyla düşündüğünüzde çok çabuk eskiyebilir.
+
+409
+00:44:26,723 --> 00:44:36,123
+Ya da yanlış bir seçim sonucunda hem fizibilitenin belki eksik ve yanlışlarından hem de tasarımdaki yanlış kararlardan ötürü
+
+410
+00:44:36,123 --> 00:44:41,583
+belki de doğru bir cihazla yatırım yapmıyor olabilirsiniz ve yatırım boşa yapılabilir.
+
+411
+00:44:41,583 --> 00:44:46,164
+Yani yatırımın batma riski olabilir ve cihaz üzerindeki bütün sorumluluk da tamamen sizindir.
+
+412
+00:44:46,643 --> 00:44:50,603
+Şimdi leasing'e geçtiğimizde leasing şu demek, ben cebimden parayı direkt çıkartmayayım.
+
+413
+00:44:50,783 --> 00:44:58,123
+bir banka gibi bir kurum benim için bu parayı çıkartsın ödesin satın almış olalım ama ben kira öder gibi parasını ödeyeyim.
+
+414
+00:44:58,283 --> 00:45:08,823
+Normalde kiradan daha düşük bir bedel ödersiniz ama direkt olarak bir para bağlamanız ya da direkt olarak bir satın alma yapmanız gerekmez.
+
+415
+00:45:08,823 --> 00:45:16,683
+Ama tabii ki leasing bankada kendi karını ve riskini de üstüne koyduğu için genelde satın almadan daha pahalıya gelecektir.
+
+416
+00:45:17,063 --> 00:45:19,763
+Ama kiralamadan da daha ucuz olacaktır.
+
+417
+00:45:20,783 --> 00:45:34,283
+özellikle de ödemede çeşitli sıkıntılar yaşarsanız falan hem ürün elinizden gidebilir yani bilgisayar elinizden gidebilir ya da sunucu ya da daha yüksek faiz oranlarıyla daha fazla ödeme yapmak zorunda da kalabilirsiniz.
+
+418
+00:45:34,843 --> 00:45:43,843
+Eğer finansal durumunuz elveriyorsa ve bunda bir risk öngörmüyorsanız leasing direkt böyle bütün parayı bir arada çıkartmadığınız için ha mantıklı bir seçim olabilir.
+
+419
+00:45:43,844 --> 00:46:04,003
+Bir diğeri de kiralama. Kiralamada da ürün sizin değil. Sadece onu bir süre için kiralayıp kullanıyorsunuz. Gerçek sahibi olmuyorsunuz. Ama tabi burada da normalde satın alacağınızdan ya da leasing alacağınızdan çok daha fazla totalde toplam kullanım ömründe daha fazla bir para harcamış olursunuz.
+
+420
+00:46:04,003 --> 00:46:23,063
+Ama tabi genellikle bakım ya da garanti de kiralama hizmetleriyle beraber birlikte gelir. Bu nedenle de bu da artısı olarak düşünülebilir ve ekstra finansada ihtiyaç yok. Her ay zamanı geldikçe parça parça ödeyebilirsiniz. Bu sizin için daha mantıklıysa bunu da seçebilirsiniz.
+
+421
+00:46:23,063 --> 00:46:39,463
+isteyelim ki son kullanıcılara hizmet veren bir yapınız var. Zaten abonelikle rutin olarak insanlardan da taksitle parayı topluyorsunuz, aylık topluyorsunuz ve o zaman siz de aylık olarak ödemeleri sistem altyapılarını kiraladığınız yere yapabilirsiniz.
+
+422
+00:46:39,463 --> 00:46:52,923
+Bu da bir tercih sebebi olabilir. Sıkıldınız bıraktınız, bıraktığınız yerde kirayı tamam kardeşim bitiriyorum deyip çıktığınızda ortada satmanız gereken ya da elden çıkartmanız gereken herhangi bir sunucunuz ya da bir donanım altyapınızda kalmaz.
+
+423
+00:46:53,063 --> 00:47:03,323
+Bu da bir tercih sebebi olabilir. Yine işe göre, probleme göre, sistemin nasıl çalışacağına göre, ne yapacağına göre buradaki satın alma şekli de yine değişebilir.
+
+424
+00:47:05,503 --> 00:47:16,883
+Peki, ön tasarım aşamasında özellikle altyapının belirlenmesiyle alakalı söyleyeceklerim bu kadar. Dikkat etmesi gereken noktalardan bahsetmek farkındaysanız.
+
+425
+00:47:16,884 --> 00:47:23,723
+Bundan sonra aslında ön tasarımda bir de mimari modüler çözümleme yapılmasından bahsetmiştim
+
+426
+00:47:23,723 --> 00:47:28,804
+Onu burada ayrıntılı tasarımdaki uygulama tasarımıyla birlikte anlatacağım
+
+427
+00:47:28,804 --> 00:47:31,604
+Çünkü onlar birbirine oldukça yakın noktalar
+
+428
+00:47:31,604 --> 00:47:37,223
+Hani ön tasarımda ilk kısmını yapıp ayrıntılı tasarımda kalanları bitiriyorsunuz aslında
+
+429
+00:47:37,223 --> 00:47:45,464
+Ama en azından bütün program ya da uygulama tasarımının hepsini bir kere de bir tek bir adımda anlatmak daha doğru olacaktır
+
+430
+00:47:46,068 --> 00:47:47,907
+Şimdi buradaki sırayla gidelim.
+
+431
+00:47:48,027 --> 00:48:01,747
+Çıktı tasarımı, girdi tasarımı, ara birim tasarımı, uygulama ya da programın yani yazılım kodlarının tasarımı ve veritabanı tasarımı olarak 5 tane ana tasarım aşamasının ayrıntılı tasarımda oluşturulması gerekir.
+
+432
+00:48:01,747 --> 00:48:14,007
+Şimdi bir bilgi sisteminin çıktılarını tasarlamak demek aslında kullanıcılara verdiğiniz bilgi ya da ürettiğiniz rapor yani her neyse onların nasıl olacağına karar vermek.
+
+433
+00:48:14,007 --> 00:48:31,287
+Hep böyle. Tasarımdaki ana soru nasıldır arkadaşlar? Yani bu nasıl yapılacak? Bu rapor nasıl oluşturulacak? Bu bilgi nasıl üretilecek? Bu bilginin formatı nasıl olacak? Ortamı nasıl olacak? Hep böyle nasıl sorulara cevaplanır aslına bakarsanız.
+
+434
+00:48:31,287 --> 00:48:35,227
+Şimdi bir çıktığı tasarlarken şunlara dikkat etmeniz gerekiyor.
+
+435
+00:48:36,247 --> 00:48:38,407
+Çıktığı amacına hizmet etmesi gerekir.
+
+436
+00:48:38,567 --> 00:48:41,707
+Saçma sapan alakasız içerik barındırmaması gerekir.
+
+437
+00:48:41,847 --> 00:48:44,267
+O yüzden de anlamlı olması gerekir kullanıcı açısından.
+
+438
+00:48:45,207 --> 00:48:47,287
+Uygun sayıda çıktı üretmeniz gerekir.
+
+439
+00:48:49,867 --> 00:48:55,367
+Ve bu çıktığının hangi kullanıcılara dağıtılacağının,
+
+440
+00:48:55,507 --> 00:49:00,887
+yani hangi kullanıcıların bunlara erişme ve kullanma hakkı olduğunun doğru belirlenmesi gerekir.
+
+441
+00:49:01,288 --> 00:49:10,127
+Çıktıda eğer bir zaman var ise zaman ekseni de varsa buna uygun şekilde çıktıkların üretilmesi gerekir.
+
+442
+00:49:11,448 --> 00:49:15,188
+Günlük, aylık, yıllık olarak düşünebilirsiniz bunları.
+
+443
+00:49:16,267 --> 00:49:20,248
+Ve çıktıların doğru ortamda üretilmeleri gerekir.
+
+444
+00:49:20,248 --> 00:49:23,948
+Yani mesela hani bir ekrana mı yansıtılacak?
+
+445
+00:49:24,248 --> 00:49:30,387
+Bir infografik olarak mesela bir billboardda mı ya da işte ne bileyim duvarda gibi ekranda mı duracak?
+
+446
+00:49:30,387 --> 00:49:33,227
+yoksa stoktaki
+
+447
+00:49:33,227 --> 00:49:35,468
+adamın eline bunlar kağıt halinde
+
+448
+00:49:35,468 --> 00:49:36,868
+bir listede mi gitmeli
+
+449
+00:49:36,868 --> 00:49:39,027
+ya da işte kargodaki
+
+450
+00:49:39,027 --> 00:49:41,387
+kamyonun şöhürüne
+
+451
+00:49:41,387 --> 00:49:43,087
+bunları kağıtta mı vermelisiniz
+
+452
+00:49:43,087 --> 00:49:45,387
+yoksa işte ne bileyim adamın
+
+453
+00:49:45,387 --> 00:49:47,108
+birinin akıllı saatine bilmem ne
+
+454
+00:49:47,108 --> 00:49:49,447
+alakları şeklinde mi gitmeli şunu yap bunu yap
+
+455
+00:49:49,447 --> 00:49:51,568
+şeklinde yani hangi ortamda
+
+456
+00:49:51,568 --> 00:49:53,267
+hangi yöntemle
+
+457
+00:49:53,267 --> 00:49:54,428
+hangi zamanda
+
+458
+00:49:54,428 --> 00:49:56,228
+hangi içerikle
+
+459
+00:49:56,228 --> 00:49:58,648
+kime göre
+
+460
+00:49:58,648 --> 00:50:00,368
+hangi
+
+461
+00:50:00,387 --> 00:50:05,947
+tarafı hedefleyerek üretilmeleri gerektiğine mutlaka çıktılar da dikkat etmeniz gerekiyor.
+
+462
+00:50:07,167 --> 00:50:13,847
+Mümkün olduğunca çıktıkların temiz olmaları ve düzgün, yalın olmalarına aslında dikkat etmekte fayda var.
+
+463
+00:50:14,527 --> 00:50:19,367
+Mesela ben bir çıktığı ekranda diyelim bir rapor bana ürettiniz, bir liste var.
+
+464
+00:50:19,787 --> 00:50:21,227
+Bunları aslında sıralayabilmeliyim.
+
+465
+00:50:21,387 --> 00:50:26,027
+Mesela hani kolonlara tıkladığımda büyükten küçüğe sıralanabilmeli.
+
+466
+00:50:26,027 --> 00:50:30,427
+ya da bir filtre en azından basit bir şekilde bir filtre uygulayabilmeliyim.
+
+467
+00:50:30,607 --> 00:50:36,567
+Yani binden büyük olanlar kalsın gerisini sil falan gibi gösterme gibi filtrelendirmeler yapabilmeliyim.
+
+468
+00:50:37,487 --> 00:50:39,367
+Sınırlarının belli olması lazım.
+
+469
+00:50:39,607 --> 00:50:44,847
+Bir aylıksa bir ay ya da bu ayın daha fazla değiştirilebilir şekilde olması gerekir.
+
+470
+00:50:45,927 --> 00:50:52,407
+Grafik çıktılar varsa grafiğin tipi düzgün seçilmesi gerekir.
+
+471
+00:50:52,487 --> 00:50:54,347
+Renklerin düzgün seçilmesi gerekir.
+
+472
+00:50:54,347 --> 00:50:56,428
+ölçeklenebilir olması gerekir ya da
+
+473
+00:50:56,428 --> 00:50:58,508
+birbiriyle değiştirilebilir tipler olması
+
+474
+00:50:58,508 --> 00:51:00,467
+gerekir gibi noktalara da dikkat etmek
+
+475
+00:51:00,467 --> 00:51:02,568
+gerekir. Yani çıktı tasarımında
+
+476
+00:51:02,568 --> 00:51:04,347
+direkt olarak arkadaşlar oturuyoruz şöyle
+
+477
+00:51:04,347 --> 00:51:06,568
+yapıyoruz demiyoruz. Sadece bunlara
+
+478
+00:51:06,568 --> 00:51:08,347
+dikkat edin. Çıktığı anlamlı
+
+479
+00:51:08,347 --> 00:51:10,407
+olmalıdır. Çıktığın amacı olmalıdır. Belli bir
+
+480
+00:51:10,407 --> 00:51:12,467
+amaca hizmet etmelidir. Saçma sapan içerik
+
+481
+00:51:12,467 --> 00:51:14,627
+olmamalıdır. Kullanıcısı
+
+482
+00:51:14,627 --> 00:51:16,347
+hedefi belli ve ona uygun
+
+483
+00:51:16,347 --> 00:51:18,467
+olmalıdır. Ve aynı şekilde ona uygun
+
+484
+00:51:18,467 --> 00:51:20,327
+ortamda üretilmelidir. Eğer
+
+485
+00:51:20,327 --> 00:51:22,307
+bir zaman varsa çıktığın
+
+486
+00:51:22,307 --> 00:51:24,228
+içinde o zaman da mutlaka gözetilmeli
+
+487
+00:51:24,227 --> 00:51:26,127
+ve ona göre çıktılar oluşturulmalıdır.
+
+488
+00:51:26,547 --> 00:51:29,487
+En önemli, en temel dikkat edilmesi gereken noktalar.
+
+489
+00:51:30,164 --> 00:51:47,164
+Benzer şeyler girdi tasarımında da aslında önemli. Siz bir bilgi sisteminin girdilerini ya da girdi alınan arayüzlerini falan tasarlıyorsanız bir şekilde kaliteli girdi sağlanmasına ön ayak olmanız gerekiyor.
+
+490
+00:51:47,164 --> 00:52:15,244
+Şimdi yine mesela bir formla ya da bir ekranla kullanıcıdan bilgi girişi sağlıyorsunuz diyelim. Buradaki dizilimin bir amacının olması lazım. Daldan dala atlamaması lazım. Mesela ben bir ekranda kişisel bilgileri giriyorsam kişisel bilgileri girmeliyim. Onun dışında mesela eğitim bilgilerinin orada yer almaması lazım. İkinci ekranda eğitim bilgilerinin giriyorsam orada alakasız şekilde ne bileyim hobileri girmemem lazım gibi düşünebilirsiniz.
+
+491
+00:52:15,243 --> 00:52:21,583
+her bir parça, her bir girdi kendi içinde bütünlük arz etmesi gerekir.
+
+492
+00:52:21,923 --> 00:52:25,103
+Bununla beraber girdilerin kontrol edilmeleri de gerekir.
+
+493
+00:52:25,203 --> 00:52:27,183
+Doğru olmalarının sağlanmaları gerekir.
+
+494
+00:52:27,623 --> 00:52:41,823
+Analizde tanımladığımız yani bir önceki aşamada tanımladığımız bütün işlemleri yerine getirmek için yeterli miktarda veride toplamda o işi yere getirmek için gerekli bütün verileri almamız gerekir.
+
+495
+00:52:41,823 --> 00:53:11,164
+yani eksikli olmaması ve bunların da doğrulamalarının yapılmaları gerekir. Mümkün olduğunca ergonomik veri girişine özen göstermekte fayda var. Mesela bir yıl girdisi alıyorsunuz hani 2023 zaten hani 2.0 ile başlayacağı çok çok büyük olasılık hatta eğer çok böyle daha bir yıllık falan bir girdi almaya çalışıyorsanız 2020 sadece 3'ü yazsam ya da 2'yi yazsam yeterli olacaktır.
+
+496
+00:53:11,164 --> 00:53:15,003
+onu dört tane tuşa basmak yerine iki ya da üç tuşa basmayı tercih ederim.
+
+497
+00:53:17,704 --> 00:53:25,204
+Ya da işte diyelim ki bir ne bileyim çok şey aydan yani gün seçeceksiniz.
+
+498
+00:53:26,443 --> 00:53:32,123
+Otuz bir tane günün içinden bir scroll bar'dan bir şeyi seçmek çok ergonomik olmayabilir.
+
+499
+00:53:32,283 --> 00:53:33,443
+Kaydırma kaydırma böyle.
+
+500
+00:53:33,863 --> 00:53:35,024
+Eli kolu insanın kayabilir.
+
+501
+00:53:35,183 --> 00:53:37,564
+Bir anda yanlış bir şeyi seçebilir ya da tıklayabilir.
+
+502
+00:53:37,563 --> 00:53:45,723
+mümkün olduğunca kolay kullanımlı veri girişi sağlanması yine ona göre uygun olarak tasarılın yapılması gerekir.
+
+503
+00:53:46,283 --> 00:54:06,563
+Bir diğeri uyumluluk işte bir formunuz var dedim ya hani kişisel bilgileri aldınız next'te bastınız ikinci ekranda eğitim bilgilerini alıyorsunuz ama böyle bir anda fontlar değişmiş bir taraf soldaydı şimdi girdiler sağa gitmiş birinde hep textboxlar vardı şimdi bambaşka şeyler olmuş falan gibi böyle bir düzen değişiminin yaşanmaması gerekir.
+
+504
+00:54:06,563 --> 00:54:31,623
+gerekir. Mümkün olduğunca basit ve sade olması ve insana itici değil insana çekici gelen ekran ve form yapılarının tasarlanmaları girdi. Tasarımın da esastır. Yine bu kesin doğrusu olan tek bir doğrusu olan bunu yaparsanız doğrudur bunu yaparsanız yanlıştır diyebileceğiniz bir durum değil. Bazı siz de bunu farkına varırsınız bazen bir işte uygulama indirirsiniz.
+
+505
+00:54:31,623 --> 00:54:43,763
+bazılarını kullanmak çok kolaydır. Böyle baş parmağınızla bir şeyleri tutup çekiştirdiğinizde yukarı aşağı sağa suda pek çok işlevselliği yerine getirirsiniz.
+
+506
+00:54:43,763 --> 00:54:54,323
+Ya da bazılarında da işte illa şuraya tıkla onu aktif et ondan sonra klavye açılsın içine bir şeyler yaz falan gibi böyle uzun uzun girdiler olur.
+
+507
+00:54:54,323 --> 00:55:22,163
+bunlar tabi ki iyi girdi tasarımı değildir ikinci örnek kötü girdi tasarımıdır şimdiden örneklerini de vereyim mesela şimdi seneye ara proje yapacaksınız bilgisayar projesi dersinde pek çoğunuz bilgi sistemi geliştirecek ve yine o pek çoğunuzun içindeki pek çoğunuzda aslında mobil arayüzlere sahip olan çeşitli uygulamalar geliştirecek şimdi mesela bir şeyi listeliyor ya da bir veri gelirecek
+
+508
+00:55:22,559 --> 00:55:42,259
+silmek için yukarıdan bir işlemler menüsünü açıp ondan sonra silmeyi seçip ondan sonra silinecek elemanı seçip yanında bir şey çıkartıyor. Onu seçip ondan sonra da aşağıda OK'ya basıp silmem gerekiyor. Neden? Bunu yapmak, bu tasarımı yapmak ve bu tasarımı kodlamak çok kolay.
+
+509
+00:55:42,259 --> 00:55:49,559
+çünkü işte bir buton koy, checkbox koy ondan sonra ona tıklandığında aktif et falan gibi çok basit konuşuyorum şu anda
+
+510
+00:55:49,559 --> 00:55:54,459
+böyle şeyleri yazmak, tasarlamak ve sonrasında da gerçekleştirmek kolay
+
+511
+00:55:54,459 --> 00:55:57,579
+ama aslında olması gereken kolay kullanım nedir?
+
+512
+00:55:57,579 --> 00:56:04,179
+ben o ekranda mesela verileri girerken, görürken üzerinde baş parmağımla mobil bir arayüz ya
+
+513
+00:56:04,179 --> 00:56:11,019
+sadece sağa doğru kaydırdığımda orada benim bir silme butonunun oluştuğunu görmem ve direkt tıklayarak silebiliyor olmam lazım
+
+514
+00:56:11,019 --> 00:56:19,900
+ya da böyle bastırıp uzun şekilde kaydırdığımda otomatik olarak silinebiliyor olmasını ya da sadece bir onay sormasını sağlamam lazım.
+
+515
+00:56:20,359 --> 00:56:26,039
+İşte hani basitlik, çekicilik, ergonomiklik, kullanım kolaylığı bu tip şeyler bunlar etkiliyor.
+
+516
+00:56:26,539 --> 00:56:28,780
+O yüzden de bazı uygulamaları seviyorsunuz.
+
+517
+00:56:28,819 --> 00:56:32,240
+Aa bu ne kadar kolay kullanımlı çat çat çat şu işleri yapıyorum diyorsunuz.
+
+518
+00:56:32,659 --> 00:56:34,920
+Bazen de abi bir tane takvime bir şey yazacağım.
+
+519
+00:56:34,920 --> 00:56:37,259
+50 yere basıyorum bilmem neyi seçiyorum.
+
+520
+00:56:37,679 --> 00:56:38,899
+Unuttuğumda hata veriyor.
+
+521
+00:56:38,899 --> 00:56:43,739
+en başa geri dönüyorum falan diyip onu boşver sil gitsin bunu niye kullanayım diyorsunuz.
+
+522
+00:56:44,139 --> 00:56:50,199
+İşte hani kullanıcının kabulü için aslında sosyal fizibilitede de bunların biraz değinilmesi gerekiyor.
+
+523
+00:56:50,879 --> 00:56:55,439
+Hani yaşlılar mı kullanacak, gençler mi kullanacak, çocuk, ufak çocuklar mı kullanacak?
+
+524
+00:56:55,939 --> 00:57:02,459
+Onlara uygun, onların sağlayabileceği girdilerin onlara uygun olarak tasarlanmaları gerekiyor.
+
+525
+00:57:03,839 --> 00:57:07,639
+Genel olarak tabii bunların hepsi ayrı bir dünya olarak işlenebilir.
+
+526
+00:57:07,639 --> 00:57:26,179
+sadece şunlara dikkat edin deyip devam ediyorum gördüğünüz gibi. Girdi tasarımında da mümkün olduğunca sisteminize elle girdi sağlanabildiği gibi online girdi ya da böyle batch ya da bulk input yapılabilmesine de olanak sağlamakta fayda var. Ne demek bu?
+
+527
+00:57:26,179 --> 00:57:33,439
+bir yerden diyelim ki bir sınıfın notlarına gireceksiniz diyelim bir sisteme.
+
+528
+00:57:33,920 --> 00:57:38,299
+Onları ekrana açıp tek tek tek tek tek mesela aynı OBS'den örnek vereyim.
+
+529
+00:57:38,959 --> 00:57:40,500
+İşte vize sınavını okuduk.
+
+530
+00:57:40,579 --> 00:57:43,839
+Vize sınavında bütün aldığınız notları ya da bir işte ödev var.
+
+531
+00:57:43,839 --> 00:57:49,559
+Ödevde aldığınız notların hepsini tek tek hepsinin karşısına tıklayıp yazmam gerekiyor olabilir.
+
+532
+00:57:49,899 --> 00:57:51,059
+Kötü bir giriş şekli.
+
+533
+00:57:51,879 --> 00:57:56,159
+Ama bunun yerine mesela ben zaten onları evde okurken Excel'e yazmıştım.
+
+534
+00:57:56,179 --> 00:58:11,559
+Excel'den onları pat diye mesela import edebilsem çok daha kolay bir girdi sağlamış olurum sisteme. Mümkün olduğunca toplu girdilere de uygun bir tasarım yapmanızda ya da bu olanakları da yine tasarımınızda bulundurmanızda fayda var.
+
+535
+00:58:11,559 --> 00:58:16,619
+veriyi mümkün olunca kaynağında tutmanız, başka yerlerde tutmamanız gerekir
+
+536
+00:58:16,619 --> 00:58:21,640
+mümkün olduğunca az tıklama ve tuşlama yapılmasına dikkat etmeniz gerekir
+
+537
+00:58:21,640 --> 00:58:28,099
+ve bir veriyi alırken her zaman için doğrulama ve geçerleme işlemlerini
+
+538
+00:58:28,099 --> 00:58:31,940
+yani validation and verification işlemlerini mutlaka yapılmaları gerekir
+
+539
+00:58:31,940 --> 00:58:34,519
+ne gibi kontroller yapmanız lazım burada?
+
+540
+00:58:35,019 --> 00:58:39,559
+bir kere veri tam mı? eksik mi tam mı? verinin biçimi doğru mu?
+
+541
+00:58:39,559 --> 00:58:47,739
+verinin aralığı doğru mu ve veri tutarlı mı gibi dört tane ana kontrolü mutlaka yapmanız gerekir.
+
+542
+00:58:47,739 --> 00:58:53,739
+Yani bunu şimdi şöyle mesela diyelim ki işte kullanıcının doğum tarihini alıyorsunuz.
+
+543
+00:58:53,920 --> 00:59:01,179
+Doğum tarihinizi giriniz gibi bir alan var. Adam şey yazdı işte 1999 yazdı geçti.
+
+544
+00:59:01,492 --> 00:59:17,091
+Şimdi bu tam mı? Hayır değil. Çünkü sizin sisteminizin çalışması için belki gün ve ay bilgisine de ihtiyacınız var. O zaman onları da hani lütfen bunları da giriniz ya da onları girmeden aktif etmemeniz lazım bir sonraki adımı gibi yönlendirmeniz gerekir.
+
+545
+00:59:17,452 --> 00:59:25,531
+Sonrasında biçim. Şimdi adam acaba gün, ay, yıl olarak mı giriyor? Ay, gün, yıl olarak mı giriyor? Bunların kontrollerine dikkat etmeniz gerekir.
+
+546
+00:59:25,531 --> 00:59:29,771
+mesela Amerikalılar hep ay gün yıl olarak girmeye alışmışlardır
+
+547
+00:59:29,771 --> 00:59:38,492
+eğer Amerikan halkına bir şeyler yapıyorsanız onlara uygun ay gün yıl formatında input almayı kontrol etmeniz gerekir
+
+548
+00:59:38,492 --> 00:59:47,532
+aralıklar şimdi adam yazdı ne yazdı doğum tarihine işte 1899 yazdı
+
+549
+00:59:48,291 --> 00:59:51,852
+adam 100 kaç oluyor 124 yaşında mı oluyor
+
+550
+00:59:51,852 --> 00:59:54,911
+çok büyük bir ihtimalle yanlış yazdı değil mi
+
+551
+00:59:54,911 --> 01:00:03,211
+yani 1800'lerde doğmuş olamaz. O zaman aralığın doğru olup olmadığını da kontrol etmeniz gerekir.
+
+552
+01:00:03,271 --> 01:00:05,831
+Ya da daha da beteri doğum tarihine atıyorum.
+
+553
+01:00:07,051 --> 01:00:15,091
+İşte 2000 çocuk diyelim ya da çocuğunun tarihine 2022 yazacağına yanlışlıkla 2122 yazdı.
+
+554
+01:00:15,091 --> 01:00:18,751
+Ya da işte 2922 yazdı. Sıfırla dokuz yan yana diyelim.
+
+555
+01:00:18,751 --> 01:00:35,831
+Eğer laptop ya da desktop kullanıyorsa 2122 yanlışlıkla yazdı. Şimdi ne oldu? Daha olmayan bir tarihte doğum tarihi girmiş oldu. Aralık yanlış. Bunların dikkat edilmesi, bunların kontrol edilmeleri gerekir. Doğrulanması ve geçerlenmesi gerekir.
+
+556
+01:00:35,831 --> 01:01:00,531
+Ayrıca tutarlı olduklarına da bakmak gerekir. Adamın yaşını, doğum tarihini aldınız. 1999 girdi. Ondan sonra da işe giriş tarihini, ilk işe başlama tarihini alıyorsunuz. Onda da atıyorum 2003 girdi. Hayda. Adam 2023 yazacağına 2003 yazdı mesela. Şimdi tutarlı değil veri. Adam 4 yaşında işe mi girdi? 4 yaşında çalışmaya mı başladı?
+
+557
+01:01:00,532 --> 01:01:30,512
+ya da işte doğum tarihine şey yapıyorsunuz evlilik tarihini alıyorsunuz evlilik tarihi daha önce ya da böyle 10 yaşında evlenmiş gibi gözüküyor bunlar tutarsızlık tarihten örnek veriyorum çok basit oldukları için bunu pek çok veriye tabi değiştirip uygulayabilirsiniz bunların bütün kontrollerinin doğrulamalarının geçerlemelerinin girdilerde hep yapılması tamamen sizin elinizde ama esas mutlaka yapmanız gerekir yaparsanız iyi tasarım yapmış olursunuz yapmazsanız kötü tasarım yapmış olursunuz
+
+558
+01:01:30,512 --> 01:01:51,852
+yani bugün mesela mobil ortamlarda bir yere login olurken artık kimse bir şey yazmak bile istemiyor değil mi? Direkt olarak işte Facebook'la login ol ya da Google'la login olu devam ettirmek istiyor. Onlar da yine kolay girdi aslında kullanım kolaylığını adresleyen girdi tasarımına gerçekleştirilmiş şekiller olarak karşımıza çıkıyor.
+
+559
+01:01:51,852 --> 01:01:53,452
+Evet
+
+560
+01:01:53,452 --> 01:01:55,191
+Şimdi
+
+561
+01:01:55,191 --> 01:01:58,251
+Girdi'de son olarak bir de şey söyleyeyim
+
+562
+01:01:58,251 --> 01:02:00,012
+Ekran tasarımlarından bahsedelim
+
+563
+01:02:00,012 --> 01:02:02,891
+Mümkün olduğunca eğer bir ekranınız varsa
+
+564
+01:02:02,891 --> 01:02:04,171
+Girdi sağladığınız
+
+565
+01:02:04,171 --> 01:02:07,251
+Kolay kullanımlı olmasına, basit olmasına dikkat edin
+
+566
+01:02:07,251 --> 01:02:08,751
+Gereksiz bilgiyi barındırmayın
+
+567
+01:02:08,751 --> 01:02:13,271
+Ve bir pencereleme yapısı, bir kutulama yapısı yapın
+
+568
+01:02:13,271 --> 01:02:15,952
+Ve kutuların içinde gerekli açıklamaları mutlaka verin
+
+569
+01:02:15,952 --> 01:02:18,712
+Hani özellikle şu formatta girilmesi gerekir
+
+570
+01:02:18,712 --> 01:02:21,751
+Ya da özel yönlendirmeler varsa onları da mutlaka açıklayın
+
+571
+01:02:21,852 --> 01:02:26,992
+ekranlarınız arasında mutlaka bir tasarım uyumluluğunun olmasına özen gösterin.
+
+572
+01:02:27,492 --> 01:02:30,712
+Hareket kolaylığı olmasına özen gösterin.
+
+573
+01:02:31,352 --> 01:02:38,452
+İşte ekranlar ekrana geçişler, kolonunu tutup kaydırmak, tıkladığınızda sıralanmasını sağlamak gibi işlere dikkat edin.
+
+574
+01:02:38,452 --> 01:02:40,952
+Ve mümkün olduğunca belli bir düzeniniz olsun.
+
+575
+01:02:41,532 --> 01:02:47,232
+Ve işte renkleriniz, yazı tipleriniz, imleciniz, boyutlarınız sürekli oynayıp değişmesin.
+
+576
+01:02:47,231 --> 01:02:59,611
+neyse ki günümüzde zaten bunların çoğu web tabanlı ve web tabanlı CSS tabanlı formatlama ya da şekillendirmelerle yani biçimlendirmelerle yapıldığı için artık bunların çoğu çok daha kolay bir hale geldi.
+
+577
+01:03:02,867 --> 01:03:24,807
+Genel olarak kullanıcı ile etkileşime geçtiğiniz sadece ekran değil de farklı ara birimler de olabilir. Bunların hep gerekiyorsa bunları da tasarlamanız, tasarlama ihtiyacınız doğabilir. Neler olabilir? Doğal dil ara birimleri olabilir. Günümüzde chat GPT gibi bir şeyler sorup bir şeyden cevabını aldığınız arayüzler var.
+
+578
+01:03:24,807 --> 01:03:37,048
+ya da soru cevap sorgulama şekli olabilir, menü ara birimleri olabilir, çeşitli formlar olabilir, hatta uygulamanıza özel bir script dili, bir komut dili olabilir
+
+579
+01:03:37,048 --> 01:03:41,947
+ya da çeşitli sistem bildirimleri için bir ara birim tasarımı yapmak zorunda kalabilirsiniz.
+
+580
+01:03:42,687 --> 01:03:51,567
+Kullanıcıyla iletişime girdiğiniz her bir kısım yine sisteminizde var ise bunlarla ilgili de tasarımları düzgün bir şekilde gerçekleştirmeniz gerekir.
+
+581
+01:03:51,568 --> 01:03:58,847
+burada da hani önceki ekranlardaki slide'lardaki girdi tasarımından çok da farklı şeyler söylemiyoruz aslında
+
+582
+01:03:58,847 --> 01:04:06,687
+yine bunların etkinliği, verimliliği önemli ve kullanıcının doğru girdileri sağlayabilmesi
+
+583
+01:04:06,687 --> 01:04:11,308
+ve mümkün olduğunca yine ergonomik şekilde bunların kullanılabiliyor olması önemli
+
+584
+01:04:11,308 --> 01:04:18,668
+eğer ekranlarda yine bir ekran arayüzünüz ya da bir ara biriminiz varsa
+
+585
+01:04:18,668 --> 01:04:21,427
+genellikle biz bunu üç parçaya bölmeyi tercih ederiz
+
+586
+01:04:21,427 --> 01:04:24,228
+en üstte bir navigasyon, bir gezinim alanı.
+
+587
+01:04:24,347 --> 01:04:26,567
+Şeyi düşünün, hani Word gibi bir uygulamayı düşünün.
+
+588
+01:04:26,947 --> 01:04:27,767
+En üstte neler var?
+
+589
+01:04:27,847 --> 01:04:29,067
+Bir sürü düğmeler var değil mi?
+
+590
+01:04:29,067 --> 01:04:35,728
+İşte hani dosya işlemleri, düzenleme işlemleri, font işlemleri, yok işte tablo işlemleri falan filan gibi.
+
+591
+01:04:36,387 --> 01:04:38,887
+Bunlardan işlevler arasında gezinim sağlıyorsunuz.
+
+592
+01:04:38,967 --> 01:04:41,167
+Genelde bilgi sistemlerinde de bu üstte olabilir.
+
+593
+01:04:41,707 --> 01:04:43,088
+Ya da solda olabilir.
+
+594
+01:04:43,247 --> 01:04:44,107
+Solda bir kolon.
+
+595
+01:04:44,447 --> 01:04:47,107
+OBS'ye girdiğinizde solda bir menü var değil mi?
+
+596
+01:04:47,247 --> 01:04:48,728
+İşte orası sizin gezinim sağlarınız.
+
+597
+01:04:49,147 --> 01:04:51,107
+İşlevler arasında gezinmenizi sağlar.
+
+598
+01:04:51,427 --> 01:04:56,427
+orta alan en büyük alan kullanıcının yaptığı çalışmalar ana ekran buraya ayrılır.
+
+599
+01:04:56,867 --> 01:05:05,467
+En altta da yapılanlarla ilgili status bar dediğimiz bir durum alanı ve daha teknik bilgilerin sağlandığı bir alan barındırabilirsiniz.
+
+600
+01:05:05,687 --> 01:05:12,687
+Genellikle kullanıcı ara birimlerinde özellikle ekranlarda bu şekilde bir tasarım tercih edilir.
+
+601
+01:05:13,448 --> 01:05:20,347
+Burada genel olarak dikkatsizlik sonucunda olanlar bilgi düzensiz olabilir, yığınlar şeklinde görünebilir.
+
+602
+01:05:20,347 --> 01:05:30,448
+geçişler uyumsuz olabilir, terminoloji karmaşık olabilir, hata mesajları saçma ya da detaylı olmayabilir, açıklayıcı şeyler olmayabilir
+
+603
+01:05:30,448 --> 01:05:37,487
+hani bilinmeyen bir durum oluştuğu gibi bir hata mesajı hiçbir bilgi vermiyor. Bunların ne olduğunu biraz daha net bir şekilde
+
+604
+01:05:37,487 --> 01:05:47,207
+neden dolayı hatanın olduğunu açıklanması gerekir ve kullanıcı kılavuzlarının ve yazılımın el kitaplarının anlaşılmaz derecede karmaşık olması
+
+605
+01:05:47,207 --> 01:05:52,267
+ara birimlerle ilgili genel tasarım problemleri olarak karşımıza çıkıyor.
+
+606
+01:05:52,407 --> 01:05:55,927
+Mevcut bugüne kadar üretilmiş, tasarlanmış sistemlerde.
+
+607
+01:05:56,668 --> 01:06:01,487
+Gördüğünüz gibi girdi tasarımı, çıktı tasarımı ve ara birim tasarımı dediğinizde
+
+608
+01:06:01,487 --> 01:06:06,627
+hadi oturun şöyle bir şey yapın diyemiyorum.
+
+609
+01:06:06,627 --> 01:06:10,467
+Sadece dikkat edin, şunları göz önünde bulundurun.
+
+610
+01:06:11,147 --> 01:06:14,448
+Çıktı üretiyorsanız şunları, şunları, şunları mutlaka sağlayın.
+
+611
+01:06:15,028 --> 01:06:17,187
+Girdi alıyorsanız bunlara, bunlara dikkat edin.
+
+612
+01:06:17,207 --> 01:06:47,187
+şeklinde. Kullanıcının aptal olduğunu her zaman unutmayın. Kullanıcı aptaldır. Bütün doğrulamaları, geçerlemeleri, kontrolleri. Ya o zaten kontrolden geçiyor. O framework onları öyle yapıyor diyebilirsiniz ama ona rağmen hiçbir şekilde kontrol etmeden kendi bilgisayarını almayın. Orada o şekilde direkt olarak aldığınız haliyle kullanmayın. Kaldı ki bilgi güvenliğinde de temel şeylerden biri en basitinden bir SQL injection atak bile aslında bu tipi
+
+613
+01:06:47,207 --> 01:06:57,647
+kontrollerin eksikliğinden doğuyor. Yani tasarımın, girdi tasarımının düzgün şekilde yapılmamış olmasından dolayı bir güvenlik açığı bile oluşabiliyor.
+
+614
+01:06:58,228 --> 01:07:08,387
+bu sırada Windows bir şey oldu deyip formatı sonlandırıyor. Nasıl? Diski mi format derken sonlandırıyor? Bir şey oldu diyormuş.
+
+615
+01:07:09,247 --> 01:07:14,707
+Evet hocam, bilgisayara format atarken bazen bir şey oldu deyip bütün formatı sonlandırıyor.
+
+616
+01:07:15,287 --> 01:07:17,107
+Bir şey oldu he? Vay. Aynen.
+
+617
+01:07:17,988 --> 01:07:21,247
+Güzelmiş. Hiçbir şey olmasa bile bir şey oldu dese daha da garip olurdu.
+
+618
+01:07:21,247 --> 01:07:48,728
+Evet. Peki. Şimdi ayrıntılı tasarımda girdi, çıktı. Ara birim gibi ilk üç başlığı olabildiğince hızlı şekilde anlatmış olduk. Üzerinden geçmiş olduk desek daha doğru olacak. Bundan sonra iki tane ana kısım kalıyor. Biri yazılımın mimarisinin ortaya çıkartılması. Yani yazılım tasarımının yapılması ve bir de veritabanı tasarımının yapılması.
+
+619
+01:07:48,728 --> 01:07:58,768
+Şimdi yazılım tasarımına ilk olarak değineceğiz
+
+620
+01:07:58,768 --> 01:08:03,287
+Dediğim gibi veri tabanı tasarımını şu anda bu iki hafta için pas geçiyoruz
+
+621
+01:08:03,287 --> 01:08:07,187
+Sonrasında bir hafta olarak ekstra o işe bakacağız
+
+622
+01:08:07,187 --> 01:08:16,187
+Yani özetle bugün bir yazılımın mimarisini belirleme için özellikle de işlevsel çözümleme ile
+
+623
+01:08:16,187 --> 01:08:28,908
+yani veri akış diyagramlarıyla yola çıktığınızda analizi aktardığınızda neler yapabilirsiniz ya da nasıl tasarımınızı ifade edebilirsiniz.
+
+624
+01:08:29,308 --> 01:08:33,088
+Bunun detaylarını bugün kalan dakikalarımızda göreceğiz.
+
+625
+01:08:34,088 --> 01:08:39,088
+Şimdi burada ön tasarımda ne yapıyorduk? Modüler yapıyı belirliyorduk.
+
+626
+01:08:39,088 --> 01:09:08,687
+belirliyorduk. Ayrıntılı tasarımda da bu modüllerin neler olması gerektiğini ve buradaki iç birimlerin nasıl çalışması gerektiğini anlatıyorum. İkisini bir arada anlatacağım. Tabii ki modüler program yapısı demek aslında veri akış diyagramlarındaki işlevleri alıp bunları çalışan yazılım birimleri, parçaları, modülleri haline getirmek ve bunların arasındaki hiyerarşiyi belirlemek demek. Aralarındaki ilişkileri ortaya koymak ve varsa denetim yani kontrol mekanizmaları kabaca
+
+627
+01:09:08,687 --> 01:09:16,427
+çok detaylı olamıyor maalesef. Kabaca bunların ortaya çıkartılıp koyulması ve grafik halinde ifade edilmeleri demek.
+
+628
+01:09:16,907 --> 01:09:25,287
+Burada genel olarak programı verilerle birleştiriyoruz. Yani hangi parça hangi veriyle çalışmalı bunları anlatıyoruz.
+
+629
+01:09:25,787 --> 01:09:33,187
+Ve ara birimler varsa bunları da yine tanımlıyoruz. Şimdi bunu yaparken temel bir tane diagram kullanıyoruz arkadaşlar.
+
+630
+01:09:33,187 --> 01:09:43,407
+yani ben acaba işlevsel çözümleme yaparken bir mimari tasarımı ifade edeceksem ya da yazılımın modüler çözümlemesini göstereceksem ne kullanıyorum?
+
+631
+01:09:43,907 --> 01:09:50,087
+Yapı diagramı. Yapı diagramı adını verdiğimiz structure diagram dediğimiz bir diagramı kullanıyoruz.
+
+632
+01:09:50,167 --> 01:09:56,887
+Çok aşırı basit. Göreceksiniz şimdi dikkat edilmesi gereken noktalarını aynı veri akış diyagramında olduğu gibi anlatacağım.
+
+633
+01:09:56,887 --> 01:10:01,887
+Ama genel olarak şunlar içinde bulunuyor. Modüllerimiz var. Bunlar birer dikdörtgen.
+
+634
+01:10:01,887 --> 01:10:11,327
+anlaşılması ve bakımı kolay olan mantıksal program işlem birimleri. Veri akış diyagramlarındaki kutucuklarımız var diye işlemlerimiz.
+
+635
+01:10:11,327 --> 01:10:18,427
+İşte aslında onların yazılım uzayına taşınmış halleri gibi düşünebilirsiniz ama gerektiğinde belki birkaç parçaya ayrılabilirler.
+
+636
+01:10:20,347 --> 01:10:25,747
+Anlaşılması ve bakımı kolay olsun diye. Bunların arasında mutlaka bir veri iletişimi olması lazım.
+
+637
+01:10:25,887 --> 01:10:31,467
+Zaten veri akış diyagramlarında bütün her şey veri, akan veriler halindeydi. Oklar çiziyorduk.
+
+638
+01:10:31,467 --> 01:10:42,267
+burada da tamamen modüller arasında hangi veriler iletiliyor onları gösteriyoruz. Bunlar veri olabileceği gibi kontrol verileri de olabilir ki bunlara da kontrol mesajı adını veriyoruz.
+
+639
+01:10:43,267 --> 01:10:55,667
+İşte bir durumun ya da bir hareketin aktarılması için kullandığımız özel mesajlar. Örneğin hani bir dosyanın okuma yapıyorsunuz ama dosyanın sonu geldi diye özel bir kontrol mesajı yani bu bir durum.
+
+640
+01:10:56,115 --> 01:10:58,255
+bir event yani bir olay
+
+641
+01:10:58,255 --> 01:11:00,715
+hop dur artık dosyanın sonu geldi
+
+642
+01:11:00,715 --> 01:11:01,755
+diye bir
+
+643
+01:11:01,755 --> 01:11:04,135
+kontrol mesajını özel olarak
+
+644
+01:11:04,135 --> 01:11:06,515
+gösterebilirsiniz yapı diagramında.
+
+645
+01:11:07,036 --> 01:11:08,456
+Bununla beraber koşula
+
+646
+01:11:08,456 --> 01:11:10,456
+bağlı bir modül çağrımı
+
+647
+01:11:10,456 --> 01:11:12,556
+olabilir. Bunun çok basit bir gösterimi var.
+
+648
+01:11:13,015 --> 01:11:13,435
+Bir de
+
+649
+01:11:13,435 --> 01:11:16,655
+bu iş için mutlaka bu modüller bu sırayla
+
+650
+01:11:16,655 --> 01:11:18,315
+çalışsın diyebilirsiniz.
+
+651
+01:11:18,315 --> 01:11:20,296
+Bununla ilgili de bir döngü gösterimi
+
+652
+01:11:20,296 --> 01:11:22,475
+söz konusu. Şöyle ki
+
+653
+01:11:22,475 --> 01:11:24,275
+her bir modül birer
+
+654
+01:11:24,275 --> 01:11:27,216
+birer dikdörtgen şeklinde gösteriliyor
+
+655
+01:11:27,216 --> 01:11:28,575
+demiştik. Bakın burada
+
+656
+01:11:28,575 --> 01:11:31,095
+yukarıdaki yer aşık olarak bir yapı.
+
+657
+01:11:31,156 --> 01:11:31,656
+Üsttekiler
+
+658
+01:11:31,656 --> 01:11:35,316
+üst alttakiler de onun alt modülleri
+
+659
+01:11:35,316 --> 01:11:37,075
+şeklinde bir gösterim sağlıyoruz.
+
+660
+01:11:37,555 --> 01:11:39,175
+Buna kontrol modülü adını veriyoruz.
+
+661
+01:11:39,316 --> 01:11:41,075
+Neden? Çünkü bu modül
+
+662
+01:11:41,075 --> 01:11:43,255
+1.1
+
+663
+01:11:43,255 --> 01:11:44,935
+1.2 ve 1.3
+
+664
+01:11:44,935 --> 01:11:47,376
+1.3 modüllerinin çalışmasını
+
+665
+01:11:47,376 --> 01:11:48,135
+kontrol ediyor.
+
+666
+01:11:49,115 --> 01:11:51,095
+Modül 1 çalışıyor. İsterse
+
+667
+01:11:51,095 --> 01:11:53,275
+modül 1.1 çalışabilir. İsterse
+
+668
+01:11:53,275 --> 01:11:55,375
+modül 1-2 çalışabilir ya da isterse modül
+
+669
+01:11:55,375 --> 01:11:57,195
+1-3 çalışabilir gibi düşünebilirsiniz.
+
+670
+01:11:57,775 --> 01:11:59,375
+Şimdi bunları böyle gördüğünüzde bunlar
+
+671
+01:11:59,375 --> 01:12:00,535
+alt modüller aslında.
+
+672
+01:12:01,876 --> 01:12:03,296
+İkisi aynı anda çalışmıyor.
+
+673
+01:12:03,815 --> 01:12:05,095
+Bunun için de ya bunu ya bunu
+
+674
+01:12:05,095 --> 01:12:07,336
+kullanıyorsunuz gibi düşünebilirsiniz.
+
+675
+01:12:07,595 --> 01:12:08,675
+Yani bu bir opsiyon.
+
+676
+01:12:09,156 --> 01:12:11,476
+Bu da başka bir opsiyon. Mesela burada bir ödeme
+
+677
+01:12:11,476 --> 01:12:12,495
+modülünüz var.
+
+678
+01:12:13,235 --> 01:12:15,336
+Bunun içinde işte nakit ödeme olabilir.
+
+679
+01:12:15,995 --> 01:12:17,476
+Kredi kartıyla ödeme olabilir
+
+680
+01:12:17,476 --> 01:12:19,595
+gibi düşünebilirsiniz. Bununla beraber
+
+681
+01:12:19,595 --> 01:12:21,235
+buradaki modül
+
+682
+01:12:21,235 --> 01:12:24,615
+bir başka kütüphane modülünü kullanıyor olabilir.
+
+683
+01:12:24,795 --> 01:12:26,695
+Hazır bir kütüphane kullanıyor olabilirsiniz.
+
+684
+01:12:27,355 --> 01:12:29,355
+Hani import ettiğiniz bir modül olabilir.
+
+685
+01:12:29,635 --> 01:12:32,655
+Bunları da library modülü adında şuralarına çift çizgi çizerek
+
+686
+01:12:32,655 --> 01:12:35,075
+özellikle gösterebilirsiniz.
+
+687
+01:12:35,775 --> 01:12:38,135
+Hani ben bilmem ne formunu oluşturması için
+
+688
+01:12:38,135 --> 01:12:40,955
+işte şu form kütüphanesini kullanıyorum.
+
+689
+01:12:41,475 --> 01:12:44,255
+O da yine bu kontrol modülünün içinde yer alsın.
+
+690
+01:12:44,295 --> 01:12:46,835
+Buna dahil olsun diye bu şekilde gösterebilirsiniz.
+
+691
+01:12:47,655 --> 01:12:50,255
+Mesajlar mesajlar veri iletişimleri demiştik.
+
+692
+01:12:50,255 --> 01:12:52,556
+onları gösterelim. Şimdi mesela bakın
+
+693
+01:12:52,556 --> 01:12:53,575
+burada bir menü var.
+
+694
+01:12:54,355 --> 01:12:55,836
+Pardon menü diyorum. Modül var.
+
+695
+01:12:56,815 --> 01:12:58,115
+Müşteri verisinin
+
+696
+01:12:58,115 --> 01:13:00,556
+bakımının yapılmasıyla alakalı bir modül
+
+697
+01:13:00,556 --> 01:13:02,775
+tasarımı var. İçinde ne olduğunu bilmiyoruz.
+
+698
+01:13:02,955 --> 01:13:03,836
+Algoritması ne?
+
+699
+01:13:04,375 --> 01:13:06,155
+Kodlar nasıl olacak? Burada o detay yok.
+
+700
+01:13:06,336 --> 01:13:07,436
+Ön tasarım çünkü aslında.
+
+701
+01:13:08,216 --> 01:13:10,095
+Ve bunun içinde alt
+
+702
+01:13:10,095 --> 01:13:12,755
+modüllerde iki tane alt modül tanımlanmış.
+
+703
+01:13:12,856 --> 01:13:14,535
+Birincisi müşterinin
+
+704
+01:13:14,535 --> 01:13:16,815
+durumunun kontrol edilmesi alt modülü.
+
+705
+01:13:17,196 --> 01:13:17,836
+İkincisi
+
+706
+01:13:17,836 --> 01:13:20,315
+müşterinin bilgilerinin ya da
+
+707
+01:13:20,315 --> 01:13:22,716
+kayıtlarının dosyalarının güncellenmesi
+
+708
+01:13:22,716 --> 01:13:24,636
+modülü. Maintain Customer
+
+709
+01:13:24,636 --> 01:13:26,476
+Data'nın iki tane alt parçası var.
+
+710
+01:13:26,656 --> 01:13:28,115
+Ya bunu ya bunu çalıştırabilir.
+
+711
+01:13:28,476 --> 01:13:29,836
+Bunu çalıştırması için
+
+712
+01:13:29,836 --> 01:13:32,296
+mutlaka ona bir veri yollaması
+
+713
+01:13:32,296 --> 01:13:33,936
+gerekiyormuş. Onu da şu içi boş
+
+714
+01:13:33,936 --> 01:13:36,235
+halkaya sahip okla görüyorum. Neymiş bu?
+
+715
+01:13:36,295 --> 01:13:38,255
+Customer Number. Yani bu şu
+
+716
+01:13:38,255 --> 01:13:39,916
+demek. Bu güzel modül
+
+717
+01:13:39,916 --> 01:13:41,716
+soldaki alt parça çalışabilir.
+
+718
+01:13:42,375 --> 01:13:44,336
+Bu Maintain Customer Data modülün
+
+719
+01:13:44,336 --> 01:13:45,675
+içinden bu başlatılabilir.
+
+720
+01:13:45,675 --> 01:13:48,015
+ama başlatılması için mutlaka
+
+721
+01:13:48,015 --> 01:13:50,196
+müşteri numarasının bu arkadaşa verilmesi
+
+722
+01:13:50,196 --> 01:13:52,015
+lazım. Buradan böyle
+
+723
+01:13:52,015 --> 01:13:52,795
+bunu görüyorum.
+
+724
+01:13:53,655 --> 01:13:56,215
+Bu demek ki customer number olmadan
+
+725
+01:13:56,215 --> 01:13:57,996
+zaten çalışmayacak bir modülmüş.
+
+726
+01:13:58,095 --> 01:13:58,955
+Yani parametresi.
+
+727
+01:13:59,455 --> 01:14:02,115
+Ve bu modülün bir çıktısı
+
+728
+01:14:02,115 --> 01:14:04,035
+var. Bir üretimi var. O da müşterinin
+
+729
+01:14:04,035 --> 01:14:05,996
+durum bilgisi. Onu da yine veri
+
+730
+01:14:05,996 --> 01:14:07,935
+olduğu için şöyle iki boş bir
+
+731
+01:14:07,935 --> 01:14:09,996
+yuvarlağı sahip okla
+
+732
+01:14:09,996 --> 01:14:11,476
+gösteriyorum. Bu ne demek?
+
+733
+01:14:11,976 --> 01:14:13,996
+Veriyorum numarayı. Bu modül çalışıyor.
+
+734
+01:14:13,995 --> 01:14:15,895
+karşısında bana bir durum bilgisi getiriyor.
+
+735
+01:14:16,615 --> 01:14:18,315
+Bana bir çıktı üretiyor ve ben artık
+
+736
+01:14:18,315 --> 01:14:20,235
+bu modül olarak bu çıktıya sahibim.
+
+737
+01:14:21,055 --> 01:14:22,355
+Şimdi ben o
+
+738
+01:14:22,355 --> 01:14:24,235
+çıktığın sahibim
+
+739
+01:14:24,235 --> 01:14:26,295
+o zaman mesela o çıktığının durumuna
+
+740
+01:14:26,295 --> 01:14:27,295
+göre istersem
+
+741
+01:14:27,295 --> 01:14:29,775
+burada gördüğünüz gibi herhangi bir şey yok.
+
+742
+01:14:30,155 --> 01:14:31,375
+Çalışabilir, çalışmayabilir.
+
+743
+01:14:33,075 --> 01:14:33,995
+Belli bir
+
+744
+01:14:33,995 --> 01:14:35,835
+işte
+
+745
+01:14:35,835 --> 01:14:37,415
+tutarı
+
+746
+01:14:37,415 --> 01:14:39,615
+mesela şu kadarı harcadı
+
+747
+01:14:39,615 --> 01:14:41,355
+gibi bir bilgiyle beraber
+
+748
+01:14:41,355 --> 01:14:43,875
+güncelleme modülüne yollayabilirim.
+
+749
+01:14:43,995 --> 01:14:45,455
+güncelleme modülü ne yapacak?
+
+750
+01:14:45,955 --> 01:14:47,515
+Bu bilgiyi alacak, çalışacak.
+
+751
+01:14:47,695 --> 01:14:49,075
+Bununla beraber mesela bu
+
+752
+01:14:49,075 --> 01:14:52,035
+güncelleme alt modülü
+
+753
+01:14:52,180 --> 01:14:54,900
+bir kontrol mesajı geriye döndürebilir.
+
+754
+01:14:55,119 --> 01:14:56,439
+Neymiş bu kontrol mesajı?
+
+755
+01:14:56,519 --> 01:15:02,959
+Account over yani işte hesap bakiyesi yetersiz gibi ya da hesap taştı gibi bir şey döndürüyor.
+
+756
+01:15:03,060 --> 01:15:04,799
+Demek ki böyle bir şey alabilirim ben.
+
+757
+01:15:05,299 --> 01:15:10,259
+Burada bunu alıp da ne yapacağım konusunda burada herhangi bir detay yok gördüğünüz gibi.
+
+758
+01:15:10,259 --> 01:15:12,940
+Fakat buradaki içerikten şunu görüyorum.
+
+759
+01:15:13,259 --> 01:15:17,100
+Bu bir özel durum, bir kontrol mesajı bana veriyor.
+
+760
+01:15:17,219 --> 01:15:19,059
+Demek ki ben bunu bir yerde ele almalıyım.
+
+761
+01:15:19,059 --> 01:15:25,899
+Bu modülün algoritmasında mutlaka bunu göz önünde bulundurmalı ve ona göre bir iş yapmalıyım.
+
+762
+01:15:26,479 --> 01:15:38,059
+Bunu göstermek için aslında hani temelde böyle bir kontrol mesajı gelir buradan gelebilir diye bir yapı diagramında kontrol mesajı barındırabilirsiniz.
+
+763
+01:15:38,819 --> 01:15:40,439
+Buna ne diyoruz? Kontrol çifti.
+
+764
+01:15:40,439 --> 01:15:45,779
+Yani ben buna bir çalışması için mutlaka veri yolluyorum ama bu çalışabilir.
+
+765
+01:15:46,239 --> 01:15:48,919
+Herhangi bir şey döndürmeyebilir ya da çalışabilir.
+
+766
+01:15:49,059 --> 01:15:51,859
+Ve bana bir kontrol mesajı döndürebilir.
+
+767
+01:15:52,319 --> 01:15:54,059
+O kontrol mesajı, exception yani.
+
+768
+01:15:54,459 --> 01:15:57,379
+Bunu gördüğümde ben aslında burada bir şeyler yapmalıyım.
+
+769
+01:15:57,459 --> 01:15:58,479
+Bunu ele almalıyım.
+
+770
+01:15:58,699 --> 01:16:00,139
+Bunu adresliyorum.
+
+771
+01:16:00,259 --> 01:16:05,559
+Ayrıntılı tasarımda bunu lütfen yapın diye ön tasarımda aslında göstermiş de oluyorum.
+
+772
+01:16:08,199 --> 01:16:09,799
+Döngülerden bahsetmiştik.
+
+773
+01:16:09,799 --> 01:16:15,799
+Burada mesela bir eşkenar dörtgen görüyorsanız, baklava deseni görüyorsanız.
+
+774
+01:16:16,639 --> 01:16:17,759
+Bu şu demektir.
+
+775
+01:16:17,760 --> 01:16:19,779
+koşula bağlı. Burada
+
+776
+01:16:19,779 --> 01:16:21,240
+bir sıralama modülü var.
+
+777
+01:16:22,160 --> 01:16:23,220
+Sıralama modülü
+
+778
+01:16:23,220 --> 01:16:25,420
+ada göre sıralama yapabilir.
+
+779
+01:16:26,080 --> 01:16:27,599
+Bunun için başka işlemler yapması
+
+780
+01:16:27,599 --> 01:16:29,660
+gerekir. O yüzden bir
+
+781
+01:16:29,660 --> 01:16:31,680
+alt modüldür. Ya da
+
+782
+01:16:31,680 --> 01:16:33,739
+numaraya göre sıralama yapabilir.
+
+783
+01:16:33,920 --> 01:16:35,200
+Bu da ayrı bir alt modüldür.
+
+784
+01:16:35,200 --> 01:16:36,940
+Ya da işte envanter
+
+785
+01:16:36,940 --> 01:16:39,099
+değerine göre başka bir şeye göre sıralama
+
+786
+01:16:39,099 --> 01:16:40,440
+yapabilir. Bu da bir alt modül.
+
+787
+01:16:40,800 --> 01:16:43,120
+Koşula göre ya bu, ya bu, ya bu çalışacak.
+
+788
+01:16:43,220 --> 01:16:45,040
+Buradaki koşul tabii ki bu
+
+789
+01:16:45,040 --> 01:16:46,860
+modülün içinde bir şekilde
+
+790
+01:16:46,860 --> 01:16:49,400
+akışının ya algoritmasının
+
+791
+01:16:49,400 --> 01:16:51,260
+tasarlanması tabii ki gerekecek.
+
+792
+01:16:51,940 --> 01:16:53,340
+Altta da bir döngü örneği
+
+793
+01:16:53,340 --> 01:16:55,319
+görüyorsunuz. Şimdi bu ne demek?
+
+794
+01:16:55,940 --> 01:16:57,400
+Şöyle bir ok görüyorsunuz burada.
+
+795
+01:16:57,639 --> 01:16:59,360
+Sağdan sola doğru bir ok. Şimdi
+
+796
+01:16:59,360 --> 01:17:01,480
+benim notlarla
+
+797
+01:17:01,480 --> 01:17:03,379
+oluşan bir rapor üretme modülüm
+
+798
+01:17:03,379 --> 01:17:05,260
+var. Yani işte alınan notlarla
+
+799
+01:17:05,260 --> 01:17:06,280
+rapor üret modülü.
+
+800
+01:17:07,200 --> 01:17:09,239
+Bu modülün 3 tane alt modülü
+
+801
+01:17:09,239 --> 01:17:11,060
+var. Öğrencinin notlarının
+
+802
+01:17:11,060 --> 01:17:12,000
+alınması modülü.
+
+803
+01:17:12,959 --> 01:17:15,180
+Ağırlıklı not ortamalarının hesaplanması
+
+804
+01:17:15,180 --> 01:17:16,780
+modülü ve işte
+
+805
+01:17:16,779 --> 01:17:18,799
+raporun hazırlanması alt modülü.
+
+806
+01:17:18,899 --> 01:17:20,739
+Üç tane alt modülü var. Ama burada bir ok
+
+807
+01:17:20,739 --> 01:17:22,759
+görüyorsunuz. Bu şu demektir. Bunlar
+
+808
+01:17:22,759 --> 01:17:24,539
+böyle tek başına çalışmıyor kardeşim.
+
+809
+01:17:25,079 --> 01:17:26,979
+Aslında bunlar bu sırayla çalışıyorlar.
+
+810
+01:17:27,219 --> 01:17:27,439
+Yani
+
+811
+01:17:27,439 --> 01:17:30,939
+ben bunun için de şu ikisini
+
+812
+01:17:30,939 --> 01:17:32,239
+birlikte çalıştırmalıyım.
+
+813
+01:17:32,979 --> 01:17:34,559
+Şöyle bir döngü halinde çalışıyorlar.
+
+814
+01:17:34,699 --> 01:17:35,899
+Bunun için ne yapıyormuşum ben?
+
+815
+01:17:36,999 --> 01:17:38,159
+Numarayı vermeliymişim.
+
+816
+01:17:38,639 --> 01:17:40,719
+Lütfen şu numaralı öğrencinin notlarını
+
+817
+01:17:40,719 --> 01:17:42,499
+ver demeliymişim. Bu da bana
+
+818
+01:17:42,499 --> 01:17:44,799
+notları bir şekilde kendi içinde çalışıp
+
+819
+01:17:44,799 --> 01:17:46,579
+veri tabanından bir şeyleri okuyup mesela
+
+820
+01:17:46,579 --> 01:17:48,599
+sorguları yapıp bana notları döndürecek.
+
+821
+01:17:49,120 --> 01:17:50,760
+Onunla beraber bir kontrol
+
+822
+01:17:50,760 --> 01:17:52,639
+mesajı da döndürebilir. Hani bitti.
+
+823
+01:17:53,760 --> 01:17:54,779
+Yok gibi bir
+
+824
+01:17:54,779 --> 01:17:56,400
+end of file döndürebilirmiş.
+
+825
+01:17:57,159 --> 01:17:58,819
+O zaman ben bunu yine ele almalıyım
+
+826
+01:17:58,819 --> 01:18:00,659
+buradaki modülümün içinde. Buraya
+
+827
+01:18:00,659 --> 01:18:02,779
+baktığında da şimdi buradan notları okudum ya
+
+828
+01:18:02,779 --> 01:18:04,799
+bunu çalıştıktan
+
+829
+01:18:04,799 --> 01:18:06,099
+sonra notları alıyorum.
+
+830
+01:18:06,680 --> 01:18:08,559
+Başka bir modüle veriyorum. Lütfen bana
+
+831
+01:18:08,559 --> 01:18:10,579
+ortalamaları hesapla diyorum. Onlar da bana
+
+832
+01:18:10,579 --> 01:18:12,519
+ortalamaları hesaplıyor. Tamam mı?
+
+833
+01:18:13,011 --> 01:18:29,251
+Sonrasında ben bunu bu şekilde bitirebilirim. Mesela ekranda gösterebilirim. Ya da bunların rapor hale getirilmeleri için ayrı bir modülüm varmış. Bu modülde de al kardeşim bu GPA listesine deyip lütfen raporu üret diyebilirim. Bu da bana üretilmiş raporu.
+
+834
+01:18:29,251 --> 01:18:56,811
+gördüğünüz gibi burada aslında kompozit bir yapı var. Bu raporun ekranda mı olduğu, kağıtta mı olduğu, nasıl bir ortama nasıl bir rapor üretildiğini görmüyorum ama sadece böyle bir rapor verisinin oluşturulup döndürülmesi gerektiğini görüyorum. Bu da yine ön tasarımda modüler çözümlemede. Bunun çalışması için temelde bunlar lazım ve bu çalıştığında temelde şu çıktığı üretir ve sana geri verir şeklindeki ifadelerin gösterilmesini sağlıyor.
+
+835
+01:18:56,811 --> 01:19:03,052
+Bu modüler çözümlemenin yapılması için kullanılan diyagram
+
+836
+01:19:03,052 --> 01:19:05,611
+Burada örnek bir yapı diagramı görüyorsunuz
+
+837
+01:19:05,611 --> 01:19:12,192
+Şimdi bir bordro ya da ödeme makbuzu, ödeme kağıdı neyse işte adı
+
+838
+01:19:12,192 --> 01:19:14,771
+Onun üretilmesiyle alakalı bir modül var
+
+839
+01:19:14,771 --> 01:19:16,851
+Tabi bunun tepesinde başka bir modül vardır
+
+840
+01:19:16,851 --> 01:19:20,331
+Ben menüden bir şekilde bordro oluştura tıkladım
+
+841
+01:19:20,331 --> 01:19:22,331
+Yani buradaki modülün çalışmasını istedim
+
+842
+01:19:22,331 --> 01:19:23,911
+Şu sırayla çalışıyor işte
+
+843
+01:19:23,911 --> 01:19:26,452
+Nedir bu? Kayıtların alınması
+
+844
+01:19:26,451 --> 01:19:55,731
+net ödemenin hesaplanması ve sonra da işte bu makbuzun basılması. Bunun çalışması için herhangi bir veri vermeme gerek yokmuş. Bunun içinde de iki tane şey varmış okuma ve geçerleme. Gördüğümüz gibi yine buradan okunan kayıt buraya geri dönebiliyor ve bitti dönebiliyor. Burada da validate edebiliyorum istersem. İkisi aynı anda arka arkaya çalışmamış. Ben bunu veriyorum acaba bu geçerli mi diyorum.
+
+845
+01:19:55,732 --> 01:19:59,452
+o da geçerli ya da değil diye bana bir kontrol mesajı döndürebiliyor.
+
+846
+01:19:59,892 --> 01:20:09,071
+Nihayetinde buradan bana bir kayıt dönebilir, kayıtlar dönebilir ya da kayıtlar artık yok bitti diye bir kontrol mesajı da dönebilir.
+
+847
+01:20:09,571 --> 01:20:15,532
+Demek ki ben bu kontrol mesajı gelirse eğer hani bitti anlamında artık net hesaba geçebilirim.
+
+848
+01:20:15,532 --> 01:20:17,611
+İkinci döngüdeki ikinci adım.
+
+849
+01:20:18,172 --> 01:20:22,011
+Kayıtları veriyorum ve net ödeme işte önce bürüt ödeme hesaplanıyor.
+
+850
+01:20:22,011 --> 01:20:31,112
+ondan sonra buradaki ödeme ile birlikte varsa şeyler, tenzilatlar, indirimler onlar hesaplanıyor.
+
+851
+01:20:31,271 --> 01:20:36,252
+Sonra kayıt yapılıyor. Bunun için de yine çalışacak alt modüller var falan filan.
+
+852
+01:20:36,312 --> 01:20:41,092
+Bu bitti. Buradan alındı data. En son artık al kardeşim bunları print et diyorum.
+
+853
+01:20:41,551 --> 01:20:46,612
+Bu da kağıda mesela bunları basıyor ve artık bastım diye bana bir kontrol mesajını döndürüyor.
+
+854
+01:20:46,611 --> 01:21:08,471
+bu şekilde bir işlev, bir modül oluyor. O işlemin yapılması sırasında bir veri akış diyagramındaki ikinci seviyede yer alan 1.1, 1.2 diye numaralandırtığımız vardı ya, onlar da burada aslında bir alt seviyedeki modüler çözümleme parçaları olarak diyagramda yerleşiyorlar.
+
+855
+01:21:08,471 --> 01:21:13,251
+Bunun isterseniz tabii ki yine daha da alt aşamasını gerçekleştirebilirsiniz
+
+856
+01:21:13,251 --> 01:21:16,991
+Burada da örneğini gördünüz
+
+857
+01:21:16,991 --> 01:21:26,591
+Yine mutlaka kendinizin ekstra inceleme ve araştırmaları yaparak
+
+858
+01:21:26,591 --> 01:21:34,391
+Yapı diagramında nasıl parçalar vardır örnekleriyle birlikte araştırarak üzerinden geçmeniz faydalı olacaktır
+
+859
+01:21:34,391 --> 01:21:41,911
+Peki şimdi ön tasarım aşamasında modüler çözümlemeyi yapı diagramıyla ifade ettiğimizi söyledik
+
+860
+01:21:41,911 --> 01:21:51,011
+Bununla beraber işte bir altyapıyla alakalı kararlar da verdik ve ön tasarımla alakalı yapacağımız işleri bitirdik
+
+861
+01:21:51,011 --> 01:21:53,571
+Ne oldu? Buradan artık bir çift üretmemiz lazım
+
+862
+01:21:53,571 --> 01:21:56,891
+Hani o kitapçık vardı ya ön tasarım spesifikasyonu
+
+863
+01:21:56,891 --> 01:22:02,311
+Burada da genel özellikler, ilişkiler olması gerekiyor ve modüler çözümlemenin yer alması gerekiyor
+
+864
+01:22:02,739 --> 01:22:20,000
+Ve bununla beraber ayrıntılı tasarımda da işte bütün yapı diagramının bütün detayları, diğer gereken bütün algoritmik ayrıntılar ve kontrol akışları her neyse bunların hepsi de ayrıntılı tasarım spesifikasyonda yer alacaktır.
+
+865
+01:22:20,160 --> 01:22:28,239
+Şimdi modüler çözümlemeyi yaptıktan sonra, ön tasarım yaptıktan sonra bu modüllerin iç yapılarının da tasarımlarının ifade edilmeleri gerekiyor.
+
+866
+01:22:28,239 --> 01:22:29,859
+Onun için ne yapacağız?
+
+867
+01:22:29,859 --> 01:22:32,139
+ayrıntılı tasarımda yazılımı
+
+868
+01:22:32,139 --> 01:22:33,919
+nasıl göstereceğiz tasarımımızı
+
+869
+01:22:33,919 --> 01:22:36,039
+yazılım tasarımımızı nasıl
+
+870
+01:22:36,039 --> 01:22:38,080
+göstereceğiz problem bu
+
+871
+01:22:38,080 --> 01:22:39,280
+şimdi onun için
+
+872
+01:22:39,280 --> 01:22:42,079
+tabii ki yine farklı birkaç
+
+873
+01:22:42,079 --> 01:22:43,119
+yaklaşım var
+
+874
+01:22:43,119 --> 01:22:46,259
+ama bunlar şimdi söyleyeceğim
+
+875
+01:22:46,259 --> 01:22:47,859
+ama anlatacağım size ama
+
+876
+01:22:47,859 --> 01:22:49,819
+açıkçası artık kullanılmıyorlar
+
+877
+01:22:49,819 --> 01:22:52,039
+yani kimse bunlarla uğraşmıyor
+
+878
+01:22:52,039 --> 01:22:54,039
+diyebilirim yapı diagramı
+
+879
+01:22:54,039 --> 01:22:55,939
+ne kadar kullanılıyor diyeceksiniz
+
+880
+01:22:55,939 --> 01:22:58,139
+o bile artık çok fazla kullanılmıyor
+
+881
+01:22:58,139 --> 01:23:12,999
+Sebebi de işlevsel çözümlemede veri akış diagramları çizmiştik ya, veri akış diagramlarında da fiziksel veri akış diagramına isterseniz bunları dönüştürebilirsiniz demiştik ya, oraya dönüştürdükten sonraki zaten aslında sizin fiziksel modülleriniz oluyor.
+
+882
+01:23:13,719 --> 01:23:25,979
+O yeterli oluyor genellikle ama yine de bir modüler çözümlemeyi kontrol ve veri mesajlarıyla birlikte ifade etmek istiyorsanız, tasarımınızı göstermek, modüler çözümlemenizi göstermek istiyorsanız yapı diagramını kullanın.
+
+883
+01:23:25,979 --> 01:23:31,679
+Sonrasında diyelim ki o yapı diagramındaki her bir modül ve alt modüllerin nasıl çalışacağını ifade edeceksiniz.
+
+884
+01:23:31,819 --> 01:23:34,519
+Onun için IPO kartları oluşturabilirsiniz.
+
+885
+01:23:34,679 --> 01:23:36,960
+Input, process, output kartları demektir bu.
+
+886
+01:23:37,339 --> 01:23:45,839
+Bunların hiyerarşisini de o modüler çözümlümede ekleyebilirsiniz ve böylece bir IPO çözümü ortaya koyabilirsiniz.
+
+887
+01:23:46,259 --> 01:23:47,059
+Ne demektir IPO?
+
+888
+01:23:47,239 --> 01:23:48,979
+Hierarchy yani input, process, output.
+
+889
+01:23:49,600 --> 01:23:57,939
+Sistemdeki her bir modüler parça yani her bir fonksiyon birbirleriyle olan ilişkileri nelerdir bunları belirliyoruz.
+
+890
+01:23:57,939 --> 01:24:05,139
+Bunun için de bir görsel içerik tablosu genel ipo ve ayrıntılı ipo diagramları oluşturabilirsiniz.
+
+891
+01:24:05,320 --> 01:24:08,779
+Görsel içerik tablosu dediğim bildiğiniz kitabın içindekiler tablosu gibi.
+
+892
+01:24:09,339 --> 01:24:11,079
+Sizin ana menü yapınız.
+
+893
+01:24:11,460 --> 01:24:14,859
+Uygulama bu ya da uygulamanın ana bir modülü bu.
+
+894
+01:24:14,859 --> 01:24:24,119
+Bunun alt modülleri onun alt modülleri şeklinde bir menüyü açtınız onun içinde bir alt menüye girdiniz onun içinde bir alt menüye daha girdiğiniz gibi düşünebilirsiniz.
+
+895
+01:24:24,419 --> 01:24:27,859
+Bu şekilde bir içindekiler tablosu oluşturabilirsiniz.
+
+896
+01:24:28,759 --> 01:24:37,259
+Sonrasında her bir fonksiyon için şuradaki her bir fonksiyon için burada gördüğünüz bunları inputları nelerdir?
+
+897
+01:24:37,960 --> 01:24:39,199
+Prosesleri nelerdir?
+
+898
+01:24:39,739 --> 01:24:43,619
+Outputları nelerdir şeklinde birer kart oluşturabilirsiniz.
+
+899
+01:24:43,619 --> 01:24:59,399
+Ve yine isterseniz her bir veri akış diagramında da yer alan prosesler ya da buradaki her bir modül için daha detaylı bir şekilde bunlar şu dosyadan okunacak ve aslında o işlemlerin şu adımına girecek.
+
+900
+01:24:59,839 --> 01:25:07,739
+Şunlar şu adımına girecek. Bunlar buraya kaydedilecek. Bu adımdakiler aslında şuradaki kayıtlar işin bu adımına girecek.
+
+901
+01:25:07,739 --> 01:25:10,419
+bunun içinde de artık akışlarınız
+
+902
+01:25:10,419 --> 01:25:12,400
+ister pseudokot ister
+
+903
+01:25:12,400 --> 01:25:14,859
+akış diagramları bunlarla
+
+904
+01:25:14,859 --> 01:25:17,139
+her bir işlemin alt adımının nasıl yapılması
+
+905
+01:25:17,139 --> 01:25:19,299
+gerektiğiyle alakalı algoritmik çözümlerinizi
+
+906
+01:25:19,299 --> 01:25:21,739
+de burada barındırabilirsiniz.
+
+907
+01:25:22,499 --> 01:25:23,299
+Ama dediğim gibi
+
+908
+01:25:23,299 --> 01:25:25,019
+genellikle biz ipo tarafını
+
+909
+01:25:25,019 --> 01:25:26,019
+hiç yapmayız.
+
+910
+01:25:26,159 --> 01:25:27,320
+Kimse yapmaz.
+
+911
+01:25:28,699 --> 01:25:31,100
+Modüler çözümlemenizi yapı diagramıyla
+
+912
+01:25:31,100 --> 01:25:32,900
+göstermeniz yeterli olacaktır.
+
+913
+01:25:34,999 --> 01:25:35,659
+Genellikle
+
+914
+01:25:35,659 --> 01:25:37,760
+eğer bir işlevsel çözümleme yapılıyorsa
+
+915
+01:25:37,760 --> 01:25:39,859
+veri akış diagramlarının fiziksel
+
+916
+01:25:39,859 --> 01:25:42,040
+hale getirilmeleri yeterli
+
+917
+01:25:42,040 --> 01:25:43,540
+oluyor diyebilirim.
+
+918
+01:25:43,960 --> 01:25:45,659
+Peki ne yapılıyor o zaman?
+
+919
+01:25:46,659 --> 01:25:47,359
+Genellikle
+
+920
+01:25:47,359 --> 01:25:49,419
+nesneye yönelik bir çözümleme
+
+921
+01:25:49,419 --> 01:25:51,559
+uygulamanın tasarımı
+
+922
+01:25:51,559 --> 01:25:52,939
+yapılıyor. O da
+
+923
+01:25:52,939 --> 01:25:55,460
+nesneye dayalı
+
+924
+01:25:55,460 --> 01:25:57,739
+tasarım modelinin oluşturulması
+
+925
+01:25:57,739 --> 01:25:58,540
+demektir.
+
+926
+01:25:59,540 --> 01:26:00,519
+Tabii ki
+
+927
+01:26:00,519 --> 01:26:01,519
+...
+
+928
+01:26:01,583 --> 01:26:21,583
+Bunu bu hafta anlatmayacağım. Haftaya. Nesneye dayalı tasarım modeli. Yani ayrıntılı tasarım aşamasında yazılım ya da uygulama tasarımı dediğimiz alt parça gerçekleştirilirken eğer nesneye yönelik bir çözümleme yaptıysak bunu nasıl tasarıma dönüştürürüz? Bir yazılım tasarımına nasıl dönüştürürüz?
+
+929
+01:26:21,583 --> 01:26:32,323
+Yani bunları çalışan yazılım sınıfları halinde nasıl modelleriz? Bunun yolu yordamı nedir? Bunu da haftaya daha detaylı bir şekilde işleyeceğiz
+
+930
+01:26:32,323 --> 01:26:35,284
+Özetle bu haftalık bu kadar
+
+931
+01:26:35,284 --> 01:26:41,583
+Yedinci haftamız mıydı bu? Evet yedinci haftamızdı. Yedinci dersimizin sonuna geldik
+
+932
+01:26:42,503 --> 01:26:49,063
+Haftaya sekizinci dersimizle bayramdan önceki son dersimiz ve vize sınavından önceki son dersimiz olacak
+
+933
+01:26:49,063 --> 01:26:56,264
+mesneğe dayalı tasarım, yazılım tasarımı nasıl yapılır? Bunun detaylarını aktarmış olacağım sizlere. Sorunuz var mı?
+
+934
+01:27:03,060 --> 01:27:16,079
+O zaman iyi haftalar, iyi günler öncelikleri dileyelim. Ondan sonra da iyi haftalar dileyelim. İyi günler hocam. Görüşmek üzere haftaya. Kendinize iyi bakın.
