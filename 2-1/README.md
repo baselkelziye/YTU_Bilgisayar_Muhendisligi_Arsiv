@@ -140,6 +140,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/15OgFx9BIu8Gur6ra1izx2N7-6Z2BfAim?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [İstatistik ve Olasılık Hesapları Ders Kayıtları Altyazıları](./%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/ders_kayitlari/) ✨
 - 📄 **Not:** [Efe Girgin'in notları](./%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/efe_girgin) ✨
 - 📄 **Not:** [Esma Nur Çilekaya'nın elyazısı notu](./%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2023/esma_nur_cilekaya/not.pdf) ✨
 - 📄 **Not:** [Nasırın el yazısı notu](./%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/muhammed_nasir_sabir/not.pdf) GitHub'dan açılmıyorsa indirin. ✨
@@ -241,6 +242,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1zKtjd9DCbePaRoQbQbF-banQ71u-_AqN?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Nesneye Yönelik Programlama Ders Kayıtları Altyazıları](./Nesneye%20Y%C3%B6nelik%20Programlama/ders_kayitlari/) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=eQOqd2qvkJE&ab_channel=TolgaZiftci) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=889IY3UeJDQ&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)

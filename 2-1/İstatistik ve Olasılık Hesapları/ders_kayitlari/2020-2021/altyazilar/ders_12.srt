@@ -1,0 +1,1735 @@
+1
+00:03:15,572 --> 00:03:18,091
+Yes, my friend,
+
+2
+00:03:36,340 --> 00:03:38,340
+Okay, thank you.
+
+3
+00:03:38,340 --> 00:03:44,340
+Thank you.
+
+4
+00:03:44,340 --> 00:03:46,340
+Geçen hafta
+
+5
+00:03:48,340 --> 00:03:50,340
+ne yaptık?
+
+6
+00:03:58,804 --> 00:04:25,564
+Geçen hafta grafiksel istatistiklere başladık. Bu graflar, çeşitli grafiklere bakacağız. Bunların içerisinde histogramları gördük. Histogramlar neydi?
+
+7
+00:04:29,875 --> 00:04:59,155
+Veri ne yapıyorsunuz? Çeşitli binlere ayırıyorsunuz. Veri aralığını diyelim daha doğrusu. Mesela CPU data hatırlarsanız 9'dan başlıyor. 135'e kadar gidiyor buradaki veriler. Dolayısıyla 9 ile 135 arasını mesela 14'lük binlere ayırsak.
+
+8
+00:04:59,875 --> 00:05:25,435
+0-14 arası, 14-28 arası, 28-42 arası gibi. Her birinde kaç tane gözlem var sayacağız. Bunları bir grafiğe döküyoruz. 0-14 arasında bir tane gözlem var. 0-28 arasında beş tane gözlem var.
+
+9
+00:05:25,435 --> 00:05:48,995
+28-42 arasında 9 tane gözlem var. Bu şekilde bir aslında bar yani çubuklardan oluşan bir çart. Histogram. Histogramlar şu bakımdan önemli bizim için. Yani birkaç bakımdan önemli.
+
+10
+00:05:48,995 --> 00:06:07,275
+Bir verinin bir dağılımdan geldiğini varsayarsak bu veriyi üreten dağılımı dağılımın şeklini iyi kötü bize söylüyor.
+
+11
+00:06:07,275 --> 00:06:18,275
+Yani şöyle bir baktığımızda mesela şunun şöyle hayalen şöyle bir şey olduğunu görüyoruz.
+
+12
+00:06:18,995 --> 00:06:44,675
+Dolayısıyla diyoruz ki bu veri bu tarz bir grafiğe sahip bir dağılımdan gelmiş olabilir. Bu tarz ne grafik var mesela? Hangi bildiğimiz dağılımların grafiğe buna benziyor? Mesela gama diyelim ki. Gamanın böyle bir grafiği var.
+
+13
+00:06:44,676 --> 00:06:59,616
+Bunun yanında grafikte mesela bu grafikte bir outlier olduğunu görüyoruz.
+
+14
+00:07:00,155 --> 00:07:10,336
+Ve genel olarak homojen bir dağılım olduğunu yani birden fazla dağılımın karışımı olmadığını görüyoruz.
+
+15
+00:07:10,396 --> 00:07:11,795
+Onu yakında göreceğiz.
+
+16
+00:07:11,795 --> 00:07:19,155
+dolayısıyla bize baya güzel fikir veriyor.
+
+17
+00:07:20,956 --> 00:07:33,596
+Buradaki kovalarının içerisindeki sayıları direkt yazmak yerine toplam gözlem sayısına bölürsek, bölersek,
+
+18
+00:07:33,596 --> 00:08:02,036
+Yani CPU data'da 30 tane gözlem var 9 bölü 30, 5 bölü 30, 1 bölü 30 gibi bu bölümü yazarsak o zaman ne oluyor? Bunların hepsinin toplamı 1 oluyor. Yani 1 bölü 30, 5 bölü 30, 9 bölü 30 gibi tüm şuradaki binlerin içerisindeki binlerin şeyi
+
+19
+00:08:02,035 --> 00:08:18,755
+30 oluyor. Bu bölüme ne diyoruz biz? Olasılık diye bakabiliriz. Buna relative frequency histogram da deniliyor. Ama düşünürseniz bu aslında bir nevi olasılık.
+
+20
+00:08:18,755 --> 00:08:28,195
+Yani neyi veriyor? Empirical gözleme dayalı bir olasılık dağılımı veriyor bize.
+
+21
+00:08:29,408 --> 00:08:46,547
+0 ile 14 arasında bir gözlem görmemiz olasılığı 1 bölü 30, 14 ile 28 arasında bir gözlem görme olasılığımız 5 bölü 30 gibi. Histogram bize neyi veriyor? Bir olasılık dağılımı veriyor.
+
+22
+00:08:53,587 --> 00:08:55,587
+Here we have a few minutes left.
+
+23
+00:09:10,419 --> 00:09:12,579
+So what are the
+
+24
+00:09:16,211 --> 00:09:31,011
+Some common histogram types you might see. Let's look at them. Let's say histograms.
+
+25
+00:09:33,427 --> 00:09:40,427
+of various samples.
+
+26
+00:09:43,379 --> 00:09:51,379
+And you might see a histogram like this.
+
+27
+00:09:55,091 --> 00:09:56,091
+And this looks like if you look at this. There seems to be. A constant value. A constant count. Pretty much you can see that it changes a little bit, but in general, the number of the counts are constant. So you can say probably this is a.
+
+28
+00:10:25,091 --> 00:10:26,091
+This is a uniform distribution. Or you might see something like this. And the counts are starting from a large value and going down. And you can see that this looks like a
+
+29
+00:10:55,091 --> 00:11:00,091
+exponential distribution
+
+30
+00:11:07,988 --> 00:11:10,988
+and you might see some
+
+31
+00:11:21,395 --> 00:11:27,795
+symmetric distribution something like this.
+
+32
+00:11:35,827 --> 00:11:49,107
+something like this and you can say okay this looks like a bell shape and maybe this may be a normal distribution.
+
+33
+00:11:54,484 --> 00:12:21,484
+So these are some of the shapes, histogram shapes and possible distributions, possible distributions that the data may come from. An interesting one might be a non-homogeneous distribution.
+
+34
+00:12:21,484 --> 00:12:25,484
+Let's call mixtures
+
+35
+00:12:34,131 --> 00:12:39,131
+Let's call them mixture distributions.
+
+36
+00:12:46,131 --> 00:12:52,291
+You might see something like this, let's say
+
+37
+00:12:53,139 --> 00:12:56,139
+You have a normal
+
+38
+00:12:58,139 --> 00:13:02,139
+Like normal looking thing here.
+
+39
+00:13:10,131 --> 00:13:15,131
+But let's say you have this second hump.
+
+40
+00:13:18,803 --> 00:13:28,803
+So this looks like two humps. Okay, hump.
+
+41
+00:13:29,683 --> 00:13:40,484
+Hump means Devenin Hörgücü. So there are two Humps here.
+
+42
+00:13:44,115 --> 00:13:57,115
+So this this kind of means that there are two things somehow mixed mixed in this sample. So these may be
+
+43
+00:14:01,115 --> 00:14:05,115
+This might come from maybe from males
+
+44
+00:14:07,115 --> 00:14:09,115
+and females
+
+45
+00:14:09,115 --> 00:14:14,115
+or under graduates.
+
+46
+00:14:18,355 --> 00:14:19,355
+and graduates. Or daytime. Internet usage versus night time. So maybe you are talking about weight here. And somehow the weight of some of the population is concentrated
+
+47
+00:14:48,355 --> 00:14:52,936
+around some value like mu two.
+
+48
+00:14:55,988 --> 00:14:56,988
+and some of the rest of the population is concentrated around value like mu one. Right. So. In this case, you can say, OK, seems like I have a mixture of two distributions, let's say. Mixture of. To normal.
+
+49
+00:15:25,988 --> 00:15:41,988
+distributions. Okay. And now, how can you express this mixture? You need to express.
+
+50
+00:15:46,868 --> 00:16:00,987
+in terms of a probability. So a sample might be from the first distribution with some probability P1.
+
+51
+00:16:06,740 --> 00:16:11,740
+And a sample can be from the second distribution,
+
+52
+00:16:14,119 --> 00:16:17,299
+second distribution with probability P2.
+
+53
+00:16:18,740 --> 00:16:22,139
+Now, if it is,
+
+54
+00:16:23,340 --> 00:16:26,639
+if it comes from the first distribution,
+
+55
+00:16:27,840 --> 00:16:32,839
+then it's, it has, let's say normal distribution,
+
+56
+00:16:32,839 --> 00:16:37,839
+distribution, but it can have it may be other distributions too.
+
+57
+00:16:40,639 --> 00:16:42,639
+So.
+
+58
+00:16:43,719 --> 00:16:46,039
+You will say, let's say.
+
+59
+00:16:46,240 --> 00:16:52,240
+The first distribution have a cumulative distribution of F1.
+
+60
+00:16:52,439 --> 00:16:56,839
+So we are trying to write.
+
+61
+00:16:56,839 --> 00:17:02,359
+write an equation for cumulative distribution of x.
+
+62
+00:17:03,839 --> 00:17:07,059
+Cumulative probability value of x.
+
+63
+00:17:07,819 --> 00:17:10,159
+So with probability P1,
+
+64
+00:17:11,439 --> 00:17:14,320
+x can be from the first distribution.
+
+65
+00:17:14,320 --> 00:17:18,820
+And if it is from the first distribution,
+
+66
+00:17:19,759 --> 00:17:23,600
+its cumulative probability value is F1x.
+
+67
+00:17:23,600 --> 00:17:28,600
+Now you can add others.
+
+68
+00:17:28,600 --> 00:17:33,600
+So with probability P2, X is from the second distribution.
+
+69
+00:17:33,600 --> 00:17:36,600
+And if it is from the second distribution,
+
+70
+00:17:36,600 --> 00:17:43,600
+its probability is F2 of X.
+
+71
+00:17:43,600 --> 00:17:48,600
+And here F1 and F2
+
+72
+00:17:53,364 --> 00:18:04,883
+are determined by what what distribution you see here, what distribution you think you see here.
+
+73
+00:18:04,883 --> 00:18:14,243
+This is called mixture of distributions or mixture distributions.
+
+74
+00:18:14,243 --> 00:18:20,683
+mixture of distributions.
+
+75
+00:18:26,708 --> 00:18:46,708
+So these these are histograms and they they they help us understand the data. In addition to histograms, we also see. Box plots.
+
+76
+00:18:58,036 --> 00:19:12,036
+A box plot is like a box. Okay. So let's say you have Let me be a little careful.
+
+77
+00:19:14,516 --> 00:19:18,175
+So let's say this is the X axis.
+
+78
+00:19:19,315 --> 00:19:25,155
+And now in a box plot, you have this box.
+
+79
+00:19:30,963 --> 00:19:57,483
+and the box starts from Q1. Remember Q1? That's Q1 is the first quarter. Right? This is 25th quantile.
+
+80
+00:19:59,155 --> 00:20:00,155
+So the box starts from Q1 and it ends at Q3. That is 7. This is 0.25. So that is 0.75. And you can also see a line
+
+81
+00:20:29,155 --> 00:20:54,535
+inside the box that will give you median or Q2. Okay. That will give you a median. And inside the box, you might see a plus. And the plus will show you where mean is. So this is mean.
+
+82
+00:20:54,535 --> 00:21:22,535
+and also sometimes you see a line like this and at the end of the line you will see a dot and that that that shows us. Let me. Redraw this part.
+
+83
+00:21:24,535 --> 00:21:33,535
+that dot shows us the minimum X i.
+
+84
+00:21:38,355 --> 00:21:54,515
+Minimum XI means the minimum value in the data XI. You can think XI as the all data. Minimum value.
+
+85
+00:21:58,163 --> 00:22:05,363
+And similarly on the other side, you can see the maximum value.
+
+86
+00:22:10,259 --> 00:22:31,259
+We will write max x i here. And finally, sometimes if you have. So sorry, you may or may not see a dot here actually. So let me clean those.
+
+87
+00:22:31,188 --> 00:22:32,188
+So these are not dots just align and see it. Try that again. Okay. Now, you might see. That appears far away. And these are considered outliers. So these are your outliers.
+
+88
+00:23:09,364 --> 00:23:33,364
+because of because they are considered outliers. They are not considered considered maximum value. So this is the maximum value inside. How was it so if this is IQ remember.
+
+89
+00:23:32,884 --> 00:23:47,884
+The difference between Q3 and Q1 was IQR and from Q3 if you go 1.5 IQR
+
+90
+00:23:47,884 --> 00:23:59,884
+You get to a point where after that it is outliers right so you can think here as something like that.
+
+91
+00:23:59,884 --> 00:24:13,884
+So this kind of box plots summarize your data in a concise way.
+
+92
+00:24:13,884 --> 00:24:16,884
+In a concise way.
+
+93
+00:24:16,884 --> 00:24:23,884
+Now you can see these box plots next to each other.
+
+94
+00:24:23,884 --> 00:24:27,884
+So you can see parallel box plots.
+
+95
+00:24:38,579 --> 00:24:40,919
+and you would see something like
+
+96
+00:24:40,919 --> 00:24:43,259
+uh
+
+97
+00:24:47,571 --> 00:24:50,571
+something like this.
+
+98
+00:24:54,675 --> 00:25:03,715
+And this might be, so you might see something like this.
+
+99
+00:25:21,076 --> 00:25:35,076
+So these might be some kind of time separations. For example, this might be Mondays. And this might be Internet usage.
+
+100
+00:25:37,491 --> 00:25:43,491
+And so basically Mondays, Tuesdays
+
+101
+00:25:43,491 --> 00:25:54,491
+Maybe it goes like that. And on Friday, somehow you see that there are a lot of Internet users
+
+102
+00:25:54,491 --> 00:25:58,491
+Because Friday is just before the
+
+103
+00:25:58,491 --> 00:26:02,491
+holiday. So
+
+104
+00:26:07,731 --> 00:26:25,731
+Do we have a have outliers beyond minimum X? Yes, it's possible. So, up here, you might see some outliers too. Sorry.
+
+105
+00:26:34,516 --> 00:27:01,276
+So, so these are again parallel box plots, maybe. So Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. So again, you might see this kind of thing.
+
+106
+00:27:01,276 --> 00:27:09,276
+In this case, we are kind of instead of looking the looking the whole data.
+
+107
+00:27:09,276 --> 00:27:19,276
+We are somehow first categorizing data by day and then trying to see how data changes.
+
+108
+00:27:30,740 --> 00:27:32,740
+So similar things.
+
+109
+00:27:38,099 --> 00:28:06,099
+again, you might have these. Plus whatever. It's it. So. This was another kind of graph. Another kind of graph is a scatter plots and time plots. So they are scatter plots and time plots.
+
+110
+00:28:09,299 --> 00:28:11,299
+So, scatter plots
+
+111
+00:28:15,892 --> 00:28:21,892
+Scatter plots is when you have data like,
+
+112
+00:28:26,211 --> 00:28:32,291
+when you have two different random variables and you have corresponding data.
+
+113
+00:28:32,291 --> 00:28:41,411
+So let's say you have X, random variable X, and you have random variable Y.
+
+114
+00:28:41,411 --> 00:28:51,691
+And somehow you measure or collect data of these two variables at the same times.
+
+115
+00:28:52,191 --> 00:28:57,892
+So for example, here there is an example in the book.
+
+116
+00:28:58,231 --> 00:29:04,271
+X might be, let's say, antivirus.
+
+117
+00:29:08,211 --> 00:29:09,752
+Ne zamandır durdu?
+
+118
+00:29:09,752 --> 00:29:17,752
+You wrote the Parallel Box Flood, you wrote the graphic, and you didn't write anything.
+
+119
+00:29:17,752 --> 00:29:19,752
+You didn't write anything.
+
+120
+00:29:33,236 --> 00:29:37,236
+Yes, it is now. Thank you.
+
+121
+00:29:37,236 --> 00:29:39,236
+Thank you.
+
+122
+00:29:39,236 --> 00:29:45,236
+Parallel box plots we have seen.
+
+123
+00:29:46,932 --> 00:29:50,932
+Monday, Tuesday, Tuesday, Thursday.
+
+124
+00:29:50,932 --> 00:30:02,932
+For example, here we see that there is a high usage, high internet usage on Fridays.
+
+125
+00:30:02,932 --> 00:30:09,932
+And somehow from Fridays to Tuesdays, it goes down.
+
+126
+00:30:09,932 --> 00:30:14,932
+and from Tuesdays, it starts to go up.
+
+127
+00:30:16,932 --> 00:30:20,932
+So it's kind of summarized here.
+
+128
+00:30:20,932 --> 00:30:23,932
+It summarizes the data.
+
+129
+00:30:23,932 --> 00:30:27,932
+Now, scatter plots is used
+
+130
+00:30:27,932 --> 00:30:32,932
+when you have more than one random variables,
+
+131
+00:30:32,932 --> 00:30:36,932
+and somehow you have data for both random variables
+
+132
+00:30:36,932 --> 00:30:43,932
+variables at the exact exact time or case.
+
+133
+00:30:44,132 --> 00:30:48,932
+So, for example, X might be here.
+
+134
+00:30:50,652 --> 00:30:52,932
+Number of times.
+
+135
+00:30:55,859 --> 00:31:00,859
+Antivirüs software
+
+136
+00:31:02,228 --> 00:31:17,228
+launched. So somehow they launch a lot. So this is per month.
+
+137
+00:31:19,155 --> 00:31:20,155
+and Y is the number of virus, viruses. Number of viruses. Found. On that month, so per month. Here X, let's say, is 30. So they launched on to his software every day for the
+
+138
+00:31:49,155 --> 00:32:19,135
+30 days and zero. And here you might have another month they launched 30 times, they got zero on two viruses. And it went on like that at some point, they launched 30 times they got one virus. At some point, they launched 15 times.
+
+139
+00:32:19,155 --> 00:32:23,155
+and zero, fifteen times one,
+
+140
+00:32:27,571 --> 00:32:44,571
+at some point maybe they launched the software 10 times and they found two maybe. It goes like this. So six times one, six times two.
+
+141
+00:32:44,571 --> 00:33:14,551
+So you have this data that somehow related to each other in some way. So here the zero and third are related because they were gathered on the same month. Right. So you have these data and now you can draw
+
+142
+00:33:14,571 --> 00:33:24,051
+this data on a scatter plot. For example, you can say that.
+
+143
+00:33:28,723 --> 00:33:31,723
+Let me try this again.
+
+144
+00:33:34,163 --> 00:33:39,163
+You can say that
+
+145
+00:33:40,627 --> 00:33:46,627
+This is x axis. So I will write the values of x here.
+
+146
+00:33:52,211 --> 00:33:55,211
+And I write the values of y here.
+
+147
+00:33:57,211 --> 00:34:04,211
+And so, for example, here we have on 30, we have a zero.
+
+148
+00:34:04,211 --> 00:34:06,211
+So let's say this is zero.
+
+149
+00:34:06,211 --> 00:34:08,211
+This is one.
+
+150
+00:34:08,211 --> 00:34:09,211
+This is two.
+
+151
+00:34:13,211 --> 00:34:15,211
+Three, four, it may go on.
+
+152
+00:34:15,211 --> 00:34:17,211
+And let's say you have.
+
+153
+00:34:17,211 --> 00:34:21,771
+one two three
+
+154
+00:34:25,691 --> 00:34:29,771
+30 etc maybe somewhere here you have a 10.
+
+155
+00:34:36,947 --> 00:35:06,927
+Sorry. So you have a 10, you have some 15, etc. So the scale may not be really good, but you get the idea. So now one way you can do is for each of these, you can put a dot or a circle or a triangle. So in plotting programs, you have a lot of options.
+
+156
+00:35:06,947 --> 00:35:29,327
+So you can say, I will put a dot here. And now for the second one, you can put a dot same way. Now notice that if you put dots or circles on it, directly on it, what will happen?
+
+157
+00:35:29,327 --> 00:35:36,527
+I have two such things but
+
+158
+00:35:41,108 --> 00:35:49,108
+I have two values here, but let's say I have only one such value.
+
+159
+00:35:50,804 --> 00:36:03,804
+There is no difference between them, right? So there is only one circle on 31 and there is only one circle on 30 zero.
+
+160
+00:36:03,804 --> 00:36:17,804
+So somehow these can tell you
+
+161
+00:36:26,708 --> 00:36:50,947
+until seconds, do you get more viruses, right? And if you are doing that, maybe it's better to better to scan a lot of times instead of 30 times, maybe you can scan twice a day 60 times so you can get more viruses.
+
+162
+00:36:50,947 --> 00:36:59,947
+So you can answer these kinds of questions on these graphs.
+
+163
+00:36:59,947 --> 00:37:01,947
+And...
+
+164
+00:37:10,804 --> 00:37:19,804
+Now. This graph seems a little misleading because, as I said.
+
+165
+00:37:22,291 --> 00:37:23,291
+30 and one. And 30 and zero are shown with the same are shown in the same way in this in this graph. So you might instead of putting circles, you might try to find ways to differentiate between different numbers. So
+
+166
+00:37:52,291 --> 00:38:20,372
+instead you might one thing you might do is use different symbols for different values. So in the book they used A for one, B for two, C for three.
+
+167
+00:38:22,291 --> 00:38:34,652
+So here, for example, instead of on 30 and 1, so let's say this is 0, this is 1, and this is 30.
+
+168
+00:38:39,092 --> 00:38:48,092
+Here you might write, since we have two of these guys, you might write B.
+
+169
+00:38:48,091 --> 00:39:01,931
+and right above it you might write an A. So that will say okay, B will say okay we have a lot of, we have more data here.
+
+170
+00:39:02,751 --> 00:39:15,731
+Or similarly instead of ABC sometimes you can see usage of different symbols like circles, triangles, squares.
+
+171
+00:39:15,731 --> 00:39:25,731
+So circle can be one, this can be two, square can be three, or you can use colors.
+
+172
+00:39:25,731 --> 00:39:34,732
+So you can use colors, so, or colors.
+
+173
+00:39:34,732 --> 00:39:41,732
+Or sometimes you can draw three dimensional images.
+
+174
+00:39:41,732 --> 00:40:08,491
+images. So you can say, OK, I will draw x here, y here, and I will draw the count somehow in this three-dimensional graph. And I may have data here, data there, et cetera.
+
+175
+00:40:08,491 --> 00:40:24,491
+So there are a lot of possible ways to go about this. Sometimes you can even draw a surface out of this. So you can say, you can say, okay.
+
+176
+00:40:27,795 --> 00:40:29,795
+I will draw
+
+177
+00:40:34,260 --> 00:40:39,260
+y here, I will draw, x here.
+
+178
+00:40:45,876 --> 00:40:59,876
+This will be count. But here, somehow I have a lot of data, so I will draw a surface. A three-dimensional surface.
+
+179
+00:41:03,347 --> 00:41:05,347
+and
+
+180
+00:41:07,827 --> 00:41:12,827
+In Python, for example, you have a
+
+181
+00:41:17,108 --> 00:41:21,108
+library called matplotlib.
+
+182
+00:41:25,331 --> 00:41:53,331
+and that will help you draw a lot of a lot of different kinds of graphs. So scatter plots and one one more type of graph is time plots. So time plots are very similar to scatter plots but
+
+183
+00:41:58,483 --> 00:42:07,483
+In this kind of data, x-axis is time.
+
+184
+00:42:08,884 --> 00:42:22,163
+and somehow you have something else on the other axis. For example, you might have the world population.
+
+185
+00:42:25,300 --> 00:42:36,300
+and here time might be in years. So you might have something like this.
+
+186
+00:42:40,916 --> 00:43:08,916
+So this might be 1950s, this might be 1970s, this might be 2000s, et cetera. This might be 2020s, et cetera. So you might somehow draw this. And these obviously tell you the trends.
+
+187
+00:43:08,916 --> 00:43:13,916
+the trends, right? This tell you the trends.
+
+188
+00:43:19,188 --> 00:43:39,188
+So you see, okay, we have a trend of world population increasing and you can even somehow do some interpol, extrapolations. So this is extrapolation.
+
+189
+00:43:42,708 --> 00:44:00,708
+and you can say okay in 2030 world population will be probably this and that. So these are very helpful if you have that kind of data.
+
+190
+00:44:01,652 --> 00:44:12,652
+So these were different kind of plots. And as I said, they are very helpful.
+
+191
+00:44:14,387 --> 00:44:23,387
+Now, this was chapter eight, I think we've just finished chapter eight.
+
+192
+00:44:31,923 --> 00:44:34,923
+in Barron's book.
+
+193
+00:44:36,851 --> 00:44:46,131
+And now Chapter nine is about parameter estimation.
+
+194
+00:44:52,436 --> 00:45:05,436
+and actually more generally the general name is statistical inference. Let's write that.
+
+195
+00:45:24,211 --> 00:45:31,531
+So we will try to infer information from our data.
+
+196
+00:45:31,531 --> 00:45:39,971
+And. First, we will see parameter estimation.
+
+197
+00:45:49,652 --> 00:46:13,811
+And the situation here is, let's say you have, you have some data. Okay. For example, you have CPU data or some other data. So you have some data.
+
+198
+00:46:21,876 --> 00:46:29,955
+So. 3, 4, 5, 2, 6, whatever.
+
+199
+00:46:29,955 --> 00:46:34,796
+You have some data now you.
+
+200
+00:46:34,796 --> 00:46:39,955
+Take you draw a histogram.
+
+201
+00:46:45,235 --> 00:46:50,035
+right and somehow the histogram looks like this.
+
+202
+00:47:00,755 --> 00:47:28,755
+and you look at it and you say that, okay, this looks like from coming from an exponential distribution. So you think data comes from
+
+203
+00:47:30,516 --> 00:47:32,516
+exponential
+
+204
+00:47:36,307 --> 00:48:03,127
+distribution. And you want to find that exponential distribution. Now, because if you can find that exponential distribution, if you can know what it is, you can do a lot of things with it. You can estimate future values or you can do a lot of things.
+
+205
+00:48:03,127 --> 00:48:14,407
+So you think data is from exponential distribution and you remember that exponential distribution has density.
+
+206
+00:48:20,659 --> 00:48:33,659
+F of X equals to Lambda times e to the minus Lambda X X is on top.
+
+207
+00:48:33,659 --> 00:48:49,659
+Like this. So you so so when we say exponential distribution, we have a lot of different exponential distributions, right? Each of them changes based on the Lambda parameter here.
+
+208
+00:48:49,659 --> 00:49:16,659
+So what is the lambda of this exponential distribution for this data? Right? That's a question. That's an important question because if you know what lambda is, you know the exponential distribution that produced this data.
+
+209
+00:49:16,659 --> 00:49:31,659
+So you can do a lot of different calculations. You can do everything so far we have learned here. You can find its mean, its median, you can
+
+210
+00:49:36,851 --> 00:49:51,131
+and answer a lot of different questions that doesn't come to my mind now. So you want to find this lambda and lambda is a parameters. Right.
+
+211
+00:49:55,860 --> 00:50:02,860
+Lambda is a parameter. X is the variable.
+
+212
+00:50:04,820 --> 00:50:30,820
+And for any data, we think that Lambda is fixed. So Lambda is fixed. And we find the probability based on probability of X based on that. Right. So,
+
+213
+00:50:29,811 --> 00:50:53,811
+Lambda is a parameter and we want to estimate it, right? Parameter estimation. That's the name of this subject. We want to estimate this Lambda parameter. You might have gamma distribution, you might have normal distribution. And if you think the data comes from gamma distribution, you would have
+
+214
+00:50:53,811 --> 00:51:15,811
+have what parameters? Alpha and Lambda. For normal distribution, what parameters do you have? Mu and Sigma, right? So these are all parameters.
+
+215
+00:51:22,835 --> 00:51:47,835
+Now we want to find this parameters. So how can we find it? We will see two different methods for finding for estimating lambda. So we will see two different methods.
+
+216
+00:51:48,179 --> 00:51:50,859
+One is method of moments.
+
+217
+00:51:56,596 --> 00:52:01,275
+The other is method of maximum likelihood.
+
+218
+00:52:13,076 --> 00:52:39,635
+So now luckily we have some methods to find this these parameters like lambda, alpha, me or sigma. So let's say a 10 minutes break. When we come, we will learn method of moments. This guy. So let's have a 10 minutes break.
+
+219
+00:52:42,387 --> 00:52:45,387
+Then when we come, we will learn method of
+
+220
+00:52:48,387 --> 00:52:49,387
+moments.
+
+221
+01:03:47,572 --> 01:03:49,572
+Yes, I'm getting my own.
+
+222
+01:03:58,291 --> 01:04:00,291
+Okay, okay.
+
+223
+01:04:02,631 --> 01:04:04,631
+The screen is on the screen.
+
+224
+01:04:20,532 --> 01:04:49,032
+So, we were saying that we will see method of moments to estimate these parameters here, right? We won't be able to estimate that lambda if we have data. So, for that first we will need to find, we need to first learn moments, right? So this is method of moments. So what is moment?
+
+225
+01:04:50,532 --> 01:04:52,532
+Let us first look at that
+
+226
+01:05:12,628 --> 01:05:17,667
+So what is the moment?
+
+227
+01:05:20,820 --> 01:05:31,820
+Moment is the expected value of excess powers. So the expected value.
+
+228
+01:05:37,364 --> 01:05:44,364
+expected value of X is X's first moment.
+
+229
+01:05:51,923 --> 01:05:52,923
+expected value of X square is X's second moment, etc. Very simple. Expected value of X cube is X's third moment. Now, the moments come in two flavors. One is population moments.
+
+230
+01:06:21,923 --> 01:06:24,923
+So these are actual population moments.
+
+231
+01:06:34,324 --> 01:07:00,723
+and population moments are always equations. Okay. Now the other flavor is sample moments. So sample moments is like the estimation of these.
+
+232
+01:06:57,748 --> 01:07:07,067
+Estimator of these is, these are sample moments.
+
+233
+01:07:16,916 --> 01:07:43,435
+For example, and since these are estimators, we are estimating them from data. We are calculating them from data. So first, for example, X is first, sorry, first sample moment
+
+234
+01:07:43,435 --> 01:07:48,435
+is an estimator of this guy.
+
+235
+01:07:49,395 --> 01:07:55,075
+And we will calculate this, we will estimate this from data.
+
+236
+01:07:55,075 --> 01:08:00,075
+So let's write as mu one.
+
+237
+01:08:03,155 --> 01:08:08,155
+And that will be one over n summation over all samples.
+
+238
+01:08:13,436 --> 01:08:22,436
+X i so that's your first sample moment.
+
+239
+01:08:22,436 --> 01:08:31,436
+And let us write this by mu instead of a.
+
+240
+01:08:31,436 --> 01:08:41,436
+So this is mu one. This is mu two. This is mu three.
+
+241
+01:08:41,435 --> 01:08:50,435
+So, third moment, for example, what is it? Third sample moment.
+
+242
+01:08:56,948 --> 01:08:57,948
+is we will write M three and that's one over N. We will again some. But here we will some X is square, right? Very similar. So instead of taking taking the expected value, we are taking an average here. And these are these are not equations. These are values. Okay.
+
+243
+01:09:26,948 --> 01:09:42,948
+because we have data and these are data values. So we can just calculate them. So to generalize this, let us give definitions.
+
+244
+01:09:48,020 --> 01:09:52,359
+So the key to the case,
+
+245
+01:09:53,908 --> 01:09:56,908
+population moment.
+
+246
+01:10:00,916 --> 01:10:20,416
+is the expected is written as mu k and is the expected value of x to the k. Like these guys. And k sample moment.
+
+247
+01:10:26,355 --> 01:10:27,355
+we write is m k. And it is one over n summation over all possible values, all samples sorry. Of x i to k. Right. So it's like this.
+
+248
+01:10:52,148 --> 01:11:10,227
+Now we have central moments very similar to this but central moments are you kind of subtract mean to center. So you have central moments.
+
+249
+01:11:28,020 --> 01:11:56,020
+So they are very similar to these moments, but you are subtracting the mean from them. So you are kind of making the average zero. So let's say Kate population central moment.
+
+250
+01:12:05,844 --> 01:12:06,844
+We write mu prime k. So we will write a prime for for central once. And here again, we are talking about an expectation, but here instead of x to the k, it is x to the k minus mu. So you are subtracting the mean.
+
+251
+01:12:35,844 --> 01:13:05,823
+and very similar to this you have Kate sample central moment and it's written as mk and again it is a apostrophe it has an apostrophe and use that is one over n you will sum over all
+
+252
+01:13:05,823 --> 01:13:27,663
+samples, X i to k minus. Now, since we are talking about samples, we don't know mean, but we know the estimator of mean. And estimator of mean is sample mean. We learned this.
+
+253
+01:13:27,663 --> 01:13:50,663
+So these are central moments. Now some of these we already learned them in different names, right? For example, what is the first moment?
+
+254
+01:13:58,131 --> 01:14:00,131
+What is the first moment?
+
+255
+01:14:03,891 --> 01:14:04,891
+expectation of X, right? This is the mean we already know, right? We learned this. We call this mean. And for all of a lot of distributions, we already calculated them. For example, for exponential distribution. We already know that first momentum is the
+
+256
+01:14:33,891 --> 01:15:01,051
+and is lambda, right? And another thing that we learn is second central moment. So we are talking about mu2 but central. And what is it? We are talking about here. This should be x square. That's
+
+257
+01:15:05,684 --> 01:15:10,684
+That's variance, right? That's variance.
+
+258
+01:15:16,051 --> 01:15:40,051
+So, and for a lot of different. Distributions we have already learned what variances for explanation distribution. What was variance. Was it was it. I don't remember now was it lambda square.
+
+259
+01:15:50,707 --> 01:16:03,707
+It was lambda square, I think. So I have a I have a missing part here. So for these central moments, the case should be
+
+260
+01:16:07,707 --> 01:16:10,707
+The case should be over the parentheses.
+
+261
+01:16:10,707 --> 01:16:18,707
+So let me rewrite them and fix this part.
+
+262
+01:16:18,707 --> 01:16:22,707
+So the case case on the parenthesis.
+
+263
+01:16:22,707 --> 01:16:27,707
+Similarly here.
+
+264
+01:16:27,707 --> 01:16:29,707
+Sorry.
+
+265
+01:16:40,724 --> 01:17:08,724
+So you have parentheses and K is over the parentheses. OK. So that's better. So, yeah. Now, since we know moments, we can use method of moments now. So how do you find method? What is method of moments?
+
+266
+01:17:13,652 --> 01:17:38,652
+Method of moments is just setting population and sample moments equal to each other and getting an equation from them. So let's say you can say population moment one is equal to sample moment one. So this gives you an equation.
+
+267
+01:17:38,652 --> 01:18:05,652
+Remember this part is a number. You can calculate from the data and this part is an equation or expression. So we have an expression equals to a number. So that means we have an equation. Similarly, you can use second moment
+
+268
+01:18:08,652 --> 01:18:35,652
+second central moment equal to second central moment. This one is population, this one is sample. So as much as you want, if you think about it, you just need to consider how many equations you need. You can do something like M3 equals to M3.
+
+269
+01:18:39,731 --> 01:18:50,891
+So from all of these, you get your equations. And then sold the equations.
+
+270
+01:18:55,764 --> 01:18:57,764
+for unknowns.
+
+271
+01:19:03,188 --> 01:19:07,188
+Let's do an example.
+
+272
+01:19:18,707 --> 01:19:20,707
+Let's say
+
+273
+01:19:22,707 --> 01:19:24,707
+As we discussed, let's say
+
+274
+01:19:24,707 --> 01:19:30,707
+You have some data
+
+275
+01:19:32,307 --> 01:19:51,747
+Let's say let's think about a very simple data. Let's let it be four, six and two. And we assume that this data is. From. Gamma distribution.
+
+276
+01:19:55,347 --> 01:19:58,467
+And we want to find this gamma distribution.
+
+277
+01:19:58,467 --> 01:20:04,347
+So this gamma distribution, if you remember, gamma distribution has two parameters, right?
+
+278
+01:20:05,507 --> 01:20:11,308
+So you have alpha and you have lambda.
+
+279
+01:20:12,667 --> 01:20:20,707
+So we want to find alpha and lambda of the gamma distribution that produces these data.
+
+280
+01:20:21,887 --> 01:20:22,608
+This data.
+
+281
+01:20:22,608 --> 01:20:30,608
+Now, how many, how many equation do we need?
+
+282
+01:20:33,327 --> 01:20:38,928
+Well, we need two equations
+
+283
+01:20:42,208 --> 01:20:47,487
+because we have two unknowns, right? And
+
+284
+01:20:47,487 --> 01:20:52,127
+And we will use method of moments.
+
+285
+01:20:52,127 --> 01:20:59,007
+So we will use these moment equivalencies.
+
+286
+01:20:59,007 --> 01:21:11,367
+And we already know that mean of the gamma distribution
+
+287
+01:21:11,367 --> 01:21:18,047
+is alpha over lambda and variance of gamma distribution
+
+288
+01:21:18,047 --> 01:21:22,867
+is alpha over lambda squared.
+
+289
+01:21:22,867 --> 01:21:25,867
+OK.
+
+290
+01:21:25,867 --> 01:21:27,667
+We already know it.
+
+291
+01:21:27,667 --> 01:21:30,047
+If you don't, we will calculate it.
+
+292
+01:21:30,047 --> 01:21:30,647
+Right.
+
+293
+01:21:30,647 --> 01:21:41,208
+And mu is first moment and variance is
+
+294
+01:21:41,208 --> 01:21:45,068
+second central moment, right?
+
+295
+01:21:46,608 --> 01:21:50,288
+So we already know this because of,
+
+296
+01:21:50,288 --> 01:21:53,047
+I am using this example.
+
+297
+01:21:53,047 --> 01:21:58,047
+So we already know this because we already know it.
+
+298
+01:21:59,947 --> 01:22:04,948
+So I will just do mu one equals to M one
+
+299
+01:22:04,947 --> 01:22:13,947
+equals to M one and mu two prime equals to M two prime.
+
+300
+01:22:13,947 --> 01:22:14,947
+Okay.
+
+301
+01:22:14,947 --> 01:22:16,947
+And here.
+
+302
+01:22:16,947 --> 01:22:23,947
+Mu one is just mu itself, which is I forward lambda.
+
+303
+01:22:23,947 --> 01:22:25,947
+So.
+
+304
+01:22:25,947 --> 01:22:29,947
+I will from here, I will say.
+
+305
+01:22:29,947 --> 01:22:35,947
+Alpha over lambda equal to and what is m1.
+
+306
+01:22:35,947 --> 01:22:41,867
+Well, m1 is this one over n.
+
+307
+01:22:41,867 --> 01:22:49,147
+Summation over all possible i's from i equal to one to n.
+
+308
+01:22:49,147 --> 01:22:54,987
+X to do i right.
+
+309
+01:22:54,987 --> 01:22:58,987
+and now
+
+310
+01:23:02,323 --> 01:23:26,924
+The second one is this one. Alpha over lambda squared and that's what is it? Central moment. So we want one over n summation from i equals to one to the n.
+
+311
+01:23:26,924 --> 01:23:34,323
+X i minus some sample mean.
+
+312
+01:23:37,603 --> 01:23:43,283
+And then I will get a square because this is second moment, right?
+
+313
+01:23:45,044 --> 01:23:51,243
+So I have these two equations and I can easily calculate them.
+
+314
+01:23:52,243 --> 01:23:54,203
+For this side, what is this?
+
+315
+01:23:54,203 --> 01:24:24,123
+This is 4 plus 6 plus 2 divided by 3, right? So that's what? 4. And here again, this is also the sample mean, right? So this is like 4 minus 4, 0, 0 square plus 6 minus 4,
+
+316
+01:24:24,203 --> 01:24:49,203
+square two squares plus two minus four squares that's minus two squares again divide by three so we have here four plus four that's eight over three so we have alpha over lambda equals to four alpha
+
+317
+01:24:49,203 --> 01:24:57,603
+over lambda squared equals to eight over three.
+
+318
+01:24:57,603 --> 01:25:07,684
+Right. And now I will just what I can do is I can replace alpha over lambda here.
+
+319
+01:25:07,684 --> 01:25:17,843
+For example, you can go on different ways, but I will say four times one over lambda is equal to
+
+320
+01:25:17,844 --> 01:25:25,844
+So, alpha over lambda, instead of alpha over lambda, I wrote four here.
+
+321
+01:25:25,844 --> 01:25:33,844
+And from there, you can say this is two, so lambda is three over two.
+
+322
+01:25:33,844 --> 01:25:39,844
+And you can continue with this, you can now find alpha.
+
+323
+01:25:39,844 --> 01:25:45,844
+So that's method of moments.
+
+324
+01:25:58,163 --> 01:26:23,163
+Now, I did a numerical example here, but a lot of the times you will want to, especially if things like, if you are looking at distributions like gamma distribution or exponential distribution, you will want to find equations, right? Instead of just finding numbers, you might want to find equations.
+
+325
+01:26:23,163 --> 01:26:48,163
+So you can say, okay, I will find an equation. So I will say here, for example, I can say, let's say, or let's say, I would say alpha over lambda is equal to 1 over n from i equals to 1 to n xi.
+
+326
+01:26:48,163 --> 01:27:18,143
+x i and that is sample mean. If you look at this, this is just sample mean. We recognize that this is sample mean. And then what is this alpha over lambda square equal to 1 over n i from 1 to n x i minus
+
+327
+01:27:18,163 --> 01:27:33,163
+and I can say something like I will substitute alpha over lambda with this.
+
+328
+01:27:33,163 --> 01:27:44,163
+So then I will have this sample mean divided by lambda equal to one over.
+
+329
+01:27:44,163 --> 01:28:08,643
+and this part is sample variance, right? Except we should have 1 over n minus 1 here, right?
+
+330
+01:28:08,643 --> 01:28:18,643
+So, 1 over N minus 1 is S if we have distinct
+
+331
+01:28:24,787 --> 01:28:54,767
+So maybe I can do something like that. 1 over n times n minus 1 divided by n minus 1. And then this thing. I minus 1 to n. X i minus. This sample. And now this here is now sample standard deviation. Right.
+
+332
+01:28:54,787 --> 01:29:16,787
+So this is S squared. Remember S is a sample standard deviation and S squared is sample variance. So now I have here n minus 1 over n sample variance.
+
+333
+01:29:16,787 --> 01:29:38,008
+Right. And now I can take the lambda to the other side and take this to this side. So I will have sample mean divided by sample variance times n over n minus one is equal to my lambda.
+
+334
+01:29:38,008 --> 01:30:03,607
+And this might be a better thing. Here I have a nice equation for gamma distributions. So the nice thing about this is since I have this equation for any gamma distribution, I can use this now. I don't need to recalculate everything again and again.
+
+335
+01:30:03,607 --> 01:30:30,387
+And one more thing, at this point we should write head here. Head, if you remember these are estimates. So this is the estimate of lambda. So here again, this should be lambda head. Lambda head. And if you want you can put them at the beginning too.
+
+336
+01:30:36,787 --> 01:30:42,787
+So that's a method of moments.
+
+337
+01:30:42,787 --> 01:30:46,787
+It's very easy.
+
+338
+01:30:46,787 --> 01:30:52,787
+You just consider how many unknowns you have and then
+
+339
+01:30:52,787 --> 01:31:04,787
+as much unknowns as much equations as you need, you write these equations and then solve them.
+
+340
+01:31:09,235 --> 01:31:21,235
+Now, the other technique we will learn is method of maximum likelihood.
+
+341
+01:31:48,020 --> 01:31:58,259
+Now, for this we will first learn what likelihood is.
+
+342
+01:32:00,851 --> 01:32:15,851
+And then we will find data, find parameters that will maximize this likelihood. In discrete case,
+
+343
+01:32:24,212 --> 01:32:29,491
+in discrete case, likelihood,
+
+344
+01:32:35,123 --> 01:32:59,403
+or let's say L is just the probability of data. So you have some data. So it's the probability of X1, X2, X3. Let me write this way.
+
+345
+01:32:59,667 --> 01:33:00,667
+X n. And. Now this likelihood notice that we have this we have. Normally we will we should consider. Data dependencies and here we should. Write things like probability of X one times probability of X one.
+
+346
+01:33:29,667 --> 01:33:57,667
+of x2 given x1 plus times probability of x3 given x1 and x2, etc. Normally we should write this by chain rule, but here we assume that we will not need to write this way because we assume that
+
+347
+01:34:01,908 --> 01:34:16,187
+data was calculated, collected using data was collected.
+
+348
+01:34:17,811 --> 01:34:32,811
+using simple random sampling that we learned recently, simple random sampling.
+
+349
+01:34:35,091 --> 01:34:44,091
+And since we sample by simple random sampling data is
+
+350
+01:34:45,555 --> 01:34:50,835
+is IID.
+
+351
+01:34:54,100 --> 01:35:01,100
+meaning independent, identically distributed.
+
+352
+01:35:16,659 --> 01:35:28,099
+So all of these X one X two X and come from the same same data, same distribution.
+
+353
+01:35:28,099 --> 01:35:33,739
+And more importantly, they are independent from each other.
+
+354
+01:35:33,739 --> 01:35:36,139
+So since there is independence,
+
+355
+01:35:36,139 --> 01:35:39,420
+now we can get rid of these conditionals.
+
+356
+01:35:39,420 --> 01:35:42,659
+Right. We don't need those conditions.
+
+357
+01:35:42,659 --> 01:35:47,659
+So we can just write here probability of X1,
+
+358
+01:35:48,360 --> 01:35:50,259
+probability of X2,
+
+359
+01:35:51,279 --> 01:35:56,279
+probability of X3 up to probability of Xn.
+
+360
+01:35:57,619 --> 01:36:02,219
+And the way to write this more compact,
+
+361
+01:36:02,219 --> 01:36:06,319
+in a more compact way is you write,
+
+362
+01:36:06,319 --> 01:36:11,099
+you use this large multiplication.
+
+363
+01:36:12,659 --> 01:36:16,060
+Large multiplication symbol.
+
+364
+01:36:16,459 --> 01:36:19,399
+This is like summation, but it's for multiplication.
+
+365
+01:36:19,399 --> 01:36:22,999
+You say from i equal to 1 to n,
+
+366
+01:36:24,079 --> 01:36:28,920
+I will multiply probability of xi.
+
+367
+01:36:30,600 --> 01:36:30,880
+Okay.
+
+368
+01:36:31,499 --> 01:36:34,700
+Let me get rid of that, these three dots.
+
+369
+01:36:38,739 --> 01:36:41,619
+Let me get rid of this part too.
+
+370
+01:36:52,627 --> 01:36:54,407
+So these are
+
+371
+01:37:05,492 --> 01:37:07,492
+So, um
+
+372
+01:37:16,884 --> 01:37:40,423
+So, likelihood is just then this multiplication. Okay. And this is a discrete case. So we have probability mass functions here, PMFs. Okay. This is capital P.
+
+373
+01:37:40,423 --> 01:37:49,424
+Now for for continuous case we have.
+
+374
+01:37:59,475 --> 01:38:04,475
+a very simple likelihood.
+
+375
+01:38:06,195 --> 01:38:08,195
+and
+
+376
+01:38:10,996 --> 01:38:25,996
+We will calculate the density for our data. Okay. So we will calculate joint density for X1, X2, etc.
+
+377
+01:38:25,996 --> 01:38:39,996
+And similarly, since we have independent data, we will say this is just the multiplication of densities of individual ones.
+
+378
+01:38:39,996 --> 01:38:51,996
+ones. So individual density for X one, then for X two, et cetera. From I equal to one to n.
+
+379
+01:38:59,412 --> 01:39:17,412
+Now, the method is called maximum likelihood. So method of maximum likelihood is then
+
+380
+01:39:30,771 --> 01:39:58,771
+method of maximum likelihood is then to find parameters that maximizes likelihood. And you can find this is an optimization problem now.
+
+381
+01:40:00,435 --> 01:40:11,715
+And one way you can do the do this is take the derivative with respect to parameters and make it equal to zero.
+
+382
+01:40:12,975 --> 01:40:17,595
+And this will solve this, this will give you a critical values
+
+383
+01:40:20,995 --> 01:40:26,955
+And find which of these critical values is maximum.
+
+384
+01:40:26,955 --> 01:40:55,955
+Okay, and you will also need to care about boundaries. So what are critical values? So in critical values are these values where this derivative is zero here. So d over L over d theta hat is zero here.
+
+385
+01:40:56,956 --> 01:41:19,956
+Similarly, it's zero here. Similarly, it's zero here. So for all of these cases, the derivative is zero. And some of these may be minimum instead of maximum. Also, there are inflation, several points. So you might have several points.
+
+386
+01:41:19,955 --> 01:41:28,955
+So you might have something like this and again derivative will be zero here.
+
+387
+01:41:32,659 --> 01:41:56,659
+But here, this is a minimum. So this is a maximum. And this is another maximum. These two are we are interested in these two. But here this guy is an inflection point.
+
+388
+01:41:56,340 --> 01:42:17,340
+It's not a maximum. And this guy here is a minimum. Right. So another thing that we need to be aware is the boundary points. So boundary points, let's say we are interested in from A to B.
+
+389
+01:42:17,340 --> 01:42:34,340
+And in this case, critical value, these two values, A and B are also critical values, boundary.
+
+390
+01:42:38,323 --> 01:42:58,323
+means since they are on the boundary. Maybe their derivative is not zero, but maybe they are really big values. They are maybe really large values. So we need to consider boundary values to
+
+391
+01:43:07,091 --> 01:43:11,271
+So at A maybe you have this very large number
+
+392
+01:43:18,036 --> 01:43:26,036
+So you have another here. So critical points are
+
+393
+01:43:31,283 --> 01:43:35,123
+are a the ones that give you
+
+394
+01:43:37,043 --> 01:43:37,764
+actually
+
+395
+01:43:40,643 --> 01:43:46,244
+where you take the derivative and make it equal to zero its solutions.
+
+396
+01:43:49,443 --> 01:43:52,003
+And be the boundary points.
+
+397
+01:43:55,604 --> 01:44:13,683
+So basically, you find all critical points and check whether they are maximizing the likelihood. One trick that's important is
+
+398
+01:44:20,724 --> 01:44:21,724
+instead of maximizing likelihood, you maximize log logarithm of the likelihood. And the reason is if you think about it, if you directly. So the reason is when there is a maximum in likelihood
+
+399
+01:44:53,332 --> 01:45:21,491
+There's also a maximum in. So if this is, I don't know. Let's say we have a maximum here. We also have a maximum there for log like logarithm of likelihood. So let's say this is L.
+
+400
+01:45:24,020 --> 01:45:36,020
+this is logarithm of likelihood. So, their max.
+
+401
+01:45:47,283 --> 01:45:50,283
+Simum likelihood because
+
+402
+01:45:53,283 --> 01:45:54,283
+we are talking about
+
+403
+01:45:57,283 --> 01:45:58,283
+the
+
+404
+01:45:59,475 --> 01:46:01,475
+taking the derivative of
+
+405
+01:46:09,684 --> 01:46:10,684
+like this multiplication from equals one to n probability of Xi, for example. And now this can be, or for example, this can be, you might have a lot of multiplicative
+
+406
+01:46:39,684 --> 01:46:57,684
+constants here. So taking the derivative of x1 times x2 and you have these multiplications. If you take the derivative of logarithm.
+
+407
+01:47:12,659 --> 01:47:13,659
+Now,
+
+408
+01:47:24,787 --> 01:47:53,787
+This becomes summation. So you will have to take the derivative of a summation over logarithms of P Xi. Now, so this is like logarithm of P of X1 plus logarithm of probability of X2.
+
+409
+01:47:53,787 --> 01:48:04,787
+and while taking derivatives, this term and this term will be separately derived.
+
+410
+01:48:04,787 --> 01:48:09,787
+So you will take the derivative of this term and then derivative of this term. It will be very easy.
+
+411
+01:48:09,787 --> 01:48:22,787
+But if you use the original likelihood, now you will have to you will have this huge complex expression that you need to take a derivative of.
+
+412
+01:48:22,787 --> 01:48:48,887
+of, right, everything will be a single expression. But when you use these logarithms, this, this product becomes summation. And then you can take the derivatives of these terms individually, which is much easier. So the trick here is instead of
+
+413
+01:48:48,887 --> 01:49:06,307
+of maximizing likelihood, maximize logarithm of likelihood.
+
+414
+01:49:08,447 --> 01:49:09,368
+Right?
+
+415
+01:49:10,368 --> 01:49:13,127
+That's the trick we are talking about here.
+
+416
+01:49:13,127 --> 01:49:20,107
+and as I said, the solutions will be on the same points, right?
+
+417
+01:49:20,947 --> 01:49:25,327
+You will find the same solutions and that's good.
+
+418
+01:49:26,387 --> 01:49:28,607
+So let's look at an example.
+
+419
+01:49:45,492 --> 01:49:48,492
+Let's say we have data again.
+
+420
+01:49:51,492 --> 01:50:01,492
+To make things simpler, let's say 464 to very simple data. And let's say we think that this data comes from Poisson distribution.
+
+421
+01:50:01,492 --> 01:50:03,492
+This.
+
+422
+01:50:14,515 --> 01:50:15,515
+distribution, I'm going to miss it to the minus lambda lambda to the X. X factorial right PMF of Poisson distribution is given this way and we have one parameters. In this distribution lambda, so we want to estimate lambda right. We want to estimate parameter lambda.
+
+423
+01:50:44,515 --> 01:51:06,515
+So then what will we do? Okay, we will say, okay, derivative of the likelihood log likelihood actually log likelihood of
+
+424
+01:51:11,028 --> 01:51:37,028
+I from three. So let us first try to find an equation from I to the N. P. So what is this? E to the minus lambda lambda to the X I. X I. Factorial.
+
+425
+01:51:37,028 --> 01:51:55,028
+we will take the derivative with respect to with respect to lambda's estimate and we will say this is equal to zero right and now we will try to solve this
+
+426
+01:51:59,123 --> 01:51:59,983
+Okay.
+
+427
+01:52:08,884 --> 01:52:16,884
+And so today I will stop here because I have a meeting next hour.
+
+428
+01:52:16,884 --> 01:52:24,884
+But you can please continue to do this example yourself.
+
+429
+01:52:24,884 --> 01:52:32,884
+So I am leaving the solution of this as an exercise to you.
+
+430
+01:52:32,884 --> 01:52:36,884
+Okay.
+
+431
+01:52:37,235 --> 01:52:39,235
+Do it yourself.
+
+432
+01:52:44,916 --> 01:53:03,916
+Yes, dediğim gibi burada bırakıyoruz. Saat 3'te bir toplantım başlayacak. Ona katılmam gerekiyor. İyi, mutlu 2021 yılı diliyorum size. Hastalıksız, pandemisiz mümkün olursa.
+
+433
+01:53:07,916 --> 01:53:11,535
+Bir söyleyeceğiniz, soracağınız bir şey var mı?
+
+434
+01:53:21,939 --> 01:53:29,920
+yok gibi görünüyor. Öyleyse haftaya görüşürüz arkadaşlar. İyi günler.

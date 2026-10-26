@@ -1,0 +1,2919 @@
+1
+00:04:10,036 --> 00:04:14,355
+Arkadaşlar merhabalar, sesim geliyor mu?
+
+2
+00:04:16,115 --> 00:04:17,255
+Yes, welcome.
+
+3
+00:05:18,132 --> 00:05:25,171
+Okay, today we will learn distribute random variables.
+
+4
+00:05:49,908 --> 00:05:57,348
+Discrete random variables. So random variables. First, let's define that.
+
+5
+00:06:00,819 --> 00:06:03,699
+A random variable
+
+6
+00:06:09,747 --> 00:06:36,747
+is a function of an outcome. So we usually write this by capital letters. So it's a function of the outcome of an experiment. So this is outcome of an experiment.
+
+7
+00:06:36,747 --> 00:06:44,747
+and now this function is a random variable.
+
+8
+00:06:44,747 --> 00:06:48,747
+So it gives, it's just a function.
+
+9
+00:06:52,403 --> 00:07:00,403
+And the result of this function is a value, a number. So it's, this is important.
+
+10
+00:07:00,403 --> 00:07:14,403
+A numeric value or a number. It cannot be something like rain or hats. It must be a number.
+
+11
+00:07:14,403 --> 00:07:23,403
+An example might be, let's say you have an experiment of,
+
+12
+00:07:28,115 --> 00:07:29,115
+tossing two coins, two fair coins. And you are interested in number of heads. So random variable here is number of heads. Now, if this experiment has the sample space
+
+13
+00:07:58,115 --> 00:08:18,115
+what? We are tossing two coins and each can be a head or a tail. So heads, heads, heads, tails, tails, tails, tails, heads. So you have four different outcomes, right?
+
+14
+00:08:23,987 --> 00:08:43,988
+Now, what are the possible number of results here? For, for this random variable X, we call that R X meaning range of X.
+
+15
+00:08:47,283 --> 00:08:48,283
+range of X meaning the possible values this random variable can take on and what are the possible very possible values this can take on. This should be equal to. Well. If you look at the outcomes of this experiment, if this outcome comes, there are no heads here. So no.
+
+16
+00:09:17,283 --> 00:09:40,283
+So number of heads is zero. If this outcome happens, number of heads is one. So we write one. If this outcome happens, number of heads is one. We already wrote one. So we will not repeat it. We are just writing the range possible values.
+
+17
+00:09:40,283 --> 00:10:03,283
+And if this outcome happens, we have two heads there. So a two is possible too, right? So the random variable can only take values zero, one and two. Okay. And now,
+
+18
+00:10:13,908 --> 00:10:21,467
+We will talk about distributions of these random variables. Let's do that.
+
+19
+00:10:33,107 --> 00:10:36,867
+PMF off
+
+20
+00:10:41,364 --> 00:10:48,563
+PMF and CDF. Of random variables, let's say.
+
+21
+00:10:53,331 --> 00:10:59,651
+A PMF is a function.
+
+22
+00:11:05,235 --> 00:11:33,635
+such that it takes a random variable possible value and gives us a probability. So we write it this way. We say probability of X having value X. When we write this, this means probability of the event that random variable X value lowercase X.
+
+23
+00:11:43,316 --> 00:11:53,316
+Now, this is called probability mass function.
+
+24
+00:12:08,980 --> 00:12:31,779
+sometimes, at least in this course, we will just say P and F for it, for P and F probability mass function. This function basically gives you the probability of each, each possible value this random variable can take on.
+
+25
+00:12:33,219 --> 00:12:34,660
+Now there is another,
+
+26
+00:12:34,660 --> 00:12:47,660
+So this is a measure of probability. There is another one similar to PMF. We call it CDF.
+
+27
+00:12:55,124 --> 00:13:23,124
+Now, a CDF is. We will usually write it in capital F. Now, this means probability of random value. X having value less than or greater the lowercase x.
+
+28
+00:13:32,916 --> 00:13:40,916
+This one is called cumulative
+
+29
+00:13:45,940 --> 00:13:46,940
+distribution.
+
+30
+00:13:53,587 --> 00:14:21,907
+cumulative distribution function. And sometimes we will just say C, D, F to it again from these initials. And sometimes you will learn, you will hear the word distribution only. And sometimes when we talk about distribution, so
+
+31
+00:14:21,907 --> 00:14:28,707
+we will be talking about these two things.
+
+32
+00:14:35,091 --> 00:14:43,091
+PMF or CDF. So if I say find the distribution, you need to find probability mass function or
+
+33
+00:14:46,611 --> 00:14:53,091
+PM cumulative distribution function.
+
+34
+00:15:01,875 --> 00:15:08,875
+Now for the previous example we had.
+
+35
+00:15:17,875 --> 00:15:24,875
+So this guy here
+
+36
+00:15:27,860 --> 00:15:57,839
+What is the probability distribution and what is the what is the PMF and what is the CDF? Now PMF will give you probabilities for all possible values. So when we try to write PMF, there are different ways to write it. So, so you just need to define a function somehow. Sometimes you can just write tabular data
+
+37
+00:15:57,839 --> 00:16:00,740
+or sometimes you give an equation.
+
+38
+00:16:00,740 --> 00:16:03,599
+So in this case, it's possible to say,
+
+39
+00:16:07,796 --> 00:16:36,796
+Probability of X equal to zero is now what is it? What is the probability of number of heads becoming zero? Well, in sample space, we have one, two, three, four elements each are equally likely and TT is the only one that has zero heads. So probability of zero is one over four.
+
+40
+00:16:37,796 --> 00:16:46,796
+Now probability of X being one, this guy.
+
+41
+00:16:46,796 --> 00:16:55,796
+Now, if you look at it, this guy and this guy, these two outcomes of the experiment give one.
+
+42
+00:16:55,796 --> 00:17:06,796
+So we have two over four probability for having a one head.
+
+43
+00:17:06,796 --> 00:17:14,796
+and probability of X being two is now we only have HH.
+
+44
+00:17:14,796 --> 00:17:18,796
+So that's one over four.
+
+45
+00:17:25,779 --> 00:17:46,779
+So you can, if you want tabulate this, so you can say sometimes this is possible, this is okay, but sometimes this is written as a table, so you might see things like X.
+
+46
+00:17:46,036 --> 00:17:47,036
+probability of X. And then 0, 1 over 4. 1, 2 over 4. 2, 1 over 4. So this is kind of same thing, but written as a table.
+
+47
+00:18:14,771 --> 00:18:32,411
+Now, this is probability mass function. We also saw something called cumulative distribution function CDF. This guy here. Sorry.
+
+48
+00:18:33,748 --> 00:18:34,748
+This guy here. So what is the cumulative distribution function? Well, let's try to obtain that. Again, we only have zero one and two. So we are interested in cumulative value of zero cumulative probability value of one and cumulative probability value of two.
+
+49
+00:19:03,748 --> 00:19:28,748
+What are these now let's look at the definition. What does it say? It says probability of random value having that value or a value less than that. So that means we are interested in probability of X being less than or equal to zero. Right.
+
+50
+00:19:28,748 --> 00:19:37,748
+And what is that value? Well, probability of zero is one over four. So this is just one over four.
+
+51
+00:19:41,491 --> 00:19:42,491
+Now for one. Probability of X being less than or greater to one. So less than or equal to one. Now, in this case, one probability of one is two over four, but less than one. So zero is counted to. So we need to count one over four and two over four. That will give us
+
+52
+00:20:11,491 --> 00:20:15,332
+say one over four plus two over four.
+
+53
+00:20:15,332 --> 00:20:17,731
+And that will give us three over four.
+
+54
+00:20:19,572 --> 00:20:24,012
+And finally, cumulative distribution for,
+
+55
+00:20:25,512 --> 00:20:28,712
+not distribution, cumulative value for,
+
+56
+00:20:28,712 --> 00:20:32,871
+cumulative probability value for two is probability of,
+
+57
+00:20:35,672 --> 00:20:36,951
+let me just write it.
+
+58
+00:20:36,951 --> 00:20:53,951
+Now you will have all these three zero one and two right because two and smaller values so you will have one over four plus two over four
+
+59
+00:20:58,195 --> 00:21:11,995
+plus one over four. And that will give you four over four. So these are the cumulative probabilities.
+
+60
+00:21:17,172 --> 00:21:18,172
+Now, when we talk about distribution, we may be talking about cumulative distributions or PMF, direct probabilities, because we can convert one to other. Right. So you can call if you know cumulative distribution value. Values, you can obtain PMFs or if you know PMFs, you can obtain
+
+61
+00:21:47,172 --> 00:21:53,172
+So how can we do that? Well,
+
+62
+00:21:58,099 --> 00:22:01,299
+First of all,
+
+63
+00:22:13,683 --> 00:22:20,003
+CDF and PMF conversion, let's say.
+
+64
+00:22:26,867 --> 00:22:27,867
+Well, first of all, from the definition of cumulative distribution, we can just write it. We just understand that we can just sum these normal probabilities to obtain cumulative probabilities. So we need to sum
+
+65
+00:22:56,867 --> 00:22:59,228
+we need to sum over what?
+
+66
+00:23:00,268 --> 00:23:04,927
+Let's say over values y, let me call them y,
+
+67
+00:23:04,927 --> 00:23:07,708
+that are smaller than or equal to x.
+
+68
+00:23:12,468 --> 00:23:40,468
+and I will call them PY. So by just summing out the probabilities of values like here. I can obtain cumulative probabilities. Now you can go to the other way around. So.
+
+69
+00:23:43,731 --> 00:23:45,731
+Probability of
+
+70
+00:23:49,411 --> 00:23:51,411
+X being
+
+71
+00:23:51,971 --> 00:23:56,531
+between A and B is given as
+
+72
+00:23:57,451 --> 00:24:02,652
+cumulative value of B minus cumulative value of A.
+
+73
+00:24:13,299 --> 00:24:32,299
+So, this way, if you know cumulative probabilities, you can obtain the, you can obtain the, normal probabilities.
+
+74
+00:24:35,571 --> 00:24:44,571
+Now the Rx, the Rx we called here is sometimes this is called.
+
+75
+00:24:46,740 --> 00:25:05,099
+support of random variable X or sometimes called its code range of random variable X. Both are used.
+
+76
+00:25:13,748 --> 00:25:18,228
+Now what are some properties of this?
+
+77
+00:25:31,508 --> 00:25:42,187
+for one if you some of these probabilities they you must get one. So.
+
+78
+00:25:45,236 --> 00:25:49,015
+summation over all possible outcomes.
+
+79
+00:25:52,339 --> 00:25:56,839
+summation over the probabilities of all outcomes.
+
+80
+00:26:00,211 --> 00:26:01,771
+is just one.
+
+81
+00:26:06,708 --> 00:26:11,247
+And what else?
+
+82
+00:26:46,740 --> 00:26:47,740
+as sorry. As x goes to zero. Or sorry minus infinity. The cumulative distribution of x goes to zero. And as x goes to positive infinity. cumulative probabilities of x goes to zero.
+
+83
+00:27:16,740 --> 00:27:17,639
+to one.
+
+84
+00:27:18,680 --> 00:27:19,240
+So,
+
+85
+00:27:30,548 --> 00:27:40,548
+Now, if you if you draw these things, we should say we should say something like this.
+
+86
+00:27:40,548 --> 00:27:43,548
+Let's say.
+
+87
+00:27:48,756 --> 00:27:53,035
+Now, what is the cumulative probability for
+
+88
+00:27:59,347 --> 00:28:27,347
+So what values we had for the example? We had zero. We had one. And we had two. And now the probability, sometimes you will see these PMF graphs.
+
+89
+00:28:30,900 --> 00:28:35,900
+of zero was one over four probability of zero.
+
+90
+00:28:41,236 --> 00:28:48,236
+probability, statistics, and the fact that one was two over four.
+
+91
+00:28:57,428 --> 00:28:58,428
+and probability of two was again one over four. Okay. Now, PMFs are point, the PMF probabilities are defined only on these points. So in fact, sometimes
+
+92
+00:29:27,428 --> 00:29:29,428
+and the
+
+93
+00:29:37,523 --> 00:29:47,843
+In fact, at this point we may delete the series to indicate that
+
+94
+00:29:53,140 --> 00:30:11,140
+At these points, the probability is jump. And everywhere else, for example, what is the probability of 0.5?
+
+95
+00:30:12,660 --> 00:30:13,499
+It's zero.
+
+96
+00:30:15,019 --> 00:30:15,839
+So,
+
+97
+00:30:19,667 --> 00:30:47,267
+So everywhere else the probability value is just zero. But probability of let's say one is two over four. So there is a jump there. You may see this kind of graphs. Here you may see probability. This may be X. This may be.
+
+98
+00:30:49,667 --> 00:31:02,667
+px. Sometimes you see the capital X here. So,
+
+99
+00:31:10,579 --> 00:31:11,579
+If you want to be careful, you write this X. But sometimes when you are working fast and you have only one variable, then you don't need to write it. So sometimes I will not write the subscript X. If I am talking about single random variable, there will be no ambiguity because
+
+100
+00:31:45,076 --> 00:31:56,076
+Now, we can also draw the graph of CDF. Okay. And what is the graph of CDF for this guy?
+
+101
+00:31:56,076 --> 00:31:59,076
+Well,
+
+102
+00:32:09,107 --> 00:32:39,087
+Now, let's say this is zero. This is one and this is two. Now, the probability up to zero is zero. So this in this case, I am drawing x versus cumulative probability. So, as x goes to minus infinity, cumulative probability is zero. So we have zero.
+
+103
+00:32:39,087 --> 00:33:02,087
+Now the first value we have is when P0 is equal to 1 over 4. So at 0, the probability will move to 1 over 4.
+
+104
+00:33:02,087 --> 00:33:04,087
+you can
+
+105
+00:33:09,779 --> 00:33:33,779
+In fact, we should maybe show that. Sorry, it should be here. We have a jump here. So at zero now we have a jump. And from now on from zero on the cumulative probability will be one over four.
+
+106
+00:33:33,779 --> 00:33:39,220
+and it will be, it will continue to be one over four up to one.
+
+107
+00:33:39,220 --> 00:33:46,519
+Now at one, we will also include the probability of two over four
+
+108
+00:33:46,519 --> 00:33:52,079
+and one over four, two over four summed, it will give three over four.
+
+109
+00:33:52,079 --> 00:33:55,960
+So here again, we can show a jump
+
+110
+00:33:57,739 --> 00:34:01,979
+and now the probability will be
+
+111
+00:34:01,979 --> 00:34:04,979
+3 over 4.
+
+112
+00:34:06,979 --> 00:34:09,979
+And from here on it will be 3 over 4.
+
+113
+00:34:10,979 --> 00:34:13,979
+At 2, though, what will happen?
+
+114
+00:34:16,979 --> 00:34:17,979
+What will happen?
+
+115
+00:34:18,979 --> 00:34:24,979
+From 2 and on, we will also add the probability of 2, which is 1 over 4.
+
+116
+00:34:24,979 --> 00:34:28,979
+So you have 1 over 4, 2 over 4, and one more 1 over 4,
+
+117
+00:34:28,979 --> 00:34:39,859
+1 over 4 which will give you 4 over 4 which is 1. So here we have another jump to
+
+118
+00:34:43,635 --> 00:34:44,635
+one.
+
+119
+00:34:49,460 --> 00:34:50,460
+and from then on forever up to infinity, it will be one. So that's what we say as x goes to infinity, the cumulative probability goes to one. Notice that cumulative probabilities are defined or are non zero after the first element. So for example,
+
+120
+00:35:19,460 --> 00:35:44,460
+for cumulative probability of 0.5. What is it? Well, here, it is 1 over 4, right? It's not 0. Whereas, for probability mass function, 0.5 has 0 probability.
+
+121
+00:36:01,715 --> 00:36:04,956
+Do you have a question up to this point?
+
+122
+00:36:07,855 --> 00:36:09,455
+Hocam bir soru sorabilir miyim?
+
+123
+00:36:09,795 --> 00:36:10,315
+Tabii ki.
+
+124
+00:36:11,735 --> 00:36:22,236
+Hocam limit eksi sonsuza giderken neden sıfır oldu? Yani bizim eksi indekslerimizde de olasılık değerleri olsa daha büyük bir şey çıkamaz mı? Ya da eksi indeks koyamıyor muyuz?
+
+125
+00:36:22,615 --> 00:36:30,115
+Koyabiliyoruz. Bu örnek problem için eksi sonsuza en yakın değerimiz sıfır.
+
+126
+00:36:30,115 --> 00:36:36,116
+But there is a problem that can be said
+
+127
+00:36:36,115 --> 00:36:37,115
+Okay.
+
+128
+00:36:40,467 --> 00:36:47,467
+Now, range is like this.
+
+129
+00:36:47,467 --> 00:37:08,467
+We have a lot of things here.
+
+130
+00:37:08,467 --> 00:37:09,467
+So, the change of the change of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the
+
+131
+00:37:38,467 --> 00:37:45,467
+Continuous Distributions.
+
+132
+00:37:46,467 --> 00:37:56,467
+The same thing is the same thing.
+
+133
+00:37:56,467 --> 00:38:01,467
+And we can see that the same thing is the same thing.
+
+134
+00:38:01,467 --> 00:38:06,467
+We will be able to close the problem.
+
+135
+00:38:24,947 --> 00:38:25,947
+Okay?
+
+136
+00:38:25,947 --> 00:38:27,947
+Okay.
+
+137
+00:38:27,947 --> 00:38:28,947
+Sorunuza cevap oldu mu?
+
+138
+00:38:28,947 --> 00:38:30,947
+Oldu hocam, teşekkür ederim.
+
+139
+00:38:30,947 --> 00:38:31,947
+Rica ederim.
+
+140
+00:38:38,516 --> 00:38:54,516
+Now we will talk about probability distributions of more than one random variables. We will call these sometimes random vectors.
+
+141
+00:38:58,324 --> 00:39:28,303
+These are similar to random variables. But in this case, you not only have a single x, and maybe next to it, you have another random variable. Let's say, let's call it y. And in fact, you might have z, etc. So I am giving two component vector, but it may be three component.
+
+142
+00:39:28,303 --> 00:39:30,303
+five component, whatever.
+
+143
+00:39:31,443 --> 00:39:37,203
+Now, this is called a random vector.
+
+144
+00:39:42,003 --> 00:39:43,003
+Each component of a random vector is a random. Variable. Now. When we talk probability distributions of.
+
+145
+00:40:06,003 --> 00:40:10,723
+distributions of random vectors.
+
+146
+00:40:14,675 --> 00:40:21,675
+We call it joint distribution.
+
+147
+00:40:29,556 --> 00:40:30,556
+joint together, joint, birleşik değil mi? Birden fazla olduğu için birleşik dağılımı demek istiyoruz. When we have a random vector and we are talking about the probability distribution of just one variable, we call it marginal distribution. So distribution of
+
+148
+00:40:59,556 --> 00:41:10,556
+single random variable is called marginal distribution.
+
+149
+00:41:16,556 --> 00:41:21,715
+Eğer birden fazla rastgele değişkeniniz yoksa direkt dağılım diyorsunuz.
+
+150
+00:41:21,795 --> 00:41:26,236
+Ama birden fazla rastgele değişkeniniz varsa problemde
+
+151
+00:41:26,236 --> 00:41:34,596
+o rastgele değişkenlerin bir tanesinin dağılımına marjinal dağılım diyoruz.
+
+152
+00:41:49,012 --> 00:41:55,012
+Now I don't have to give you the notes.
+
+153
+00:41:55,012 --> 00:41:59,012
+I'm just going to write it down.
+
+154
+00:41:59,012 --> 00:42:03,012
+The Dropbox link is...
+
+155
+00:42:03,012 --> 00:42:16,012
+...and I don't have to give you the Dropbox link.
+
+156
+00:42:17,780 --> 00:42:29,939
+quiz'e burası dahil mi? Bu derste işlediğimiz konu dahil değil. Quiz'e gelecek, geçen dersteki işlediğimiz konular dahil.
+
+157
+00:42:35,123 --> 00:42:35,843
+Uh,
+
+158
+00:43:01,492 --> 00:43:03,492
+Now when we talk about
+
+159
+00:43:03,492 --> 00:43:07,492
+uh
+
+160
+00:43:07,476 --> 00:43:12,476
+When we talk about the
+
+161
+00:43:19,987 --> 00:43:26,747
+properties. One thing we know is the sum is again one. So if you have
+
+162
+00:43:27,968 --> 00:43:38,828
+two random variables in your random vector, if you sum over all possible outcomes,
+
+163
+00:43:49,652 --> 00:43:57,652
+Before that, let's define joint probability. Sorry for that.
+
+164
+00:44:21,427 --> 00:44:26,427
+So if you have random vectors,
+
+165
+00:44:26,427 --> 00:44:31,427
+now you can talk about probability of each vector value.
+
+166
+00:44:31,427 --> 00:44:40,427
+So you will say probability of x, y being x and y.
+
+167
+00:44:41,427 --> 00:44:49,427
+And this means actual probability of
+
+168
+00:45:27,123 --> 00:45:31,123
+this means probability of the event.
+
+169
+00:45:32,524 --> 00:45:34,243
+Random variable X.
+
+170
+00:45:36,163 --> 00:45:38,363
+Being lowercase x.
+
+171
+00:45:39,763 --> 00:45:40,483
+And.
+
+172
+00:45:41,763 --> 00:45:44,003
+Low random variable Y.
+
+173
+00:45:45,203 --> 00:45:47,804
+Being lowercase y.
+
+174
+00:45:49,003 --> 00:45:49,323
+OK.
+
+175
+00:45:50,403 --> 00:45:53,403
+And sometimes remember.
+
+176
+00:45:53,403 --> 00:46:08,923
+Okay, this is enough information. So joint probability is this. And now joint probabilities can-
+
+177
+00:46:18,771 --> 00:46:23,431
+be summed and you will see that they sum up to
+
+178
+00:46:30,931 --> 00:46:38,931
+one. So if you sum these probabilities, you get one.
+
+179
+00:46:52,403 --> 00:47:05,603
+If you have joint probabilities, you can calculate marginal probabilities. So marginal.
+
+180
+00:47:07,347 --> 00:47:18,148
+Probabilities from joint probabilities.
+
+181
+00:47:26,708 --> 00:47:27,708
+and the idea is some over all others, random variables. So you have a random vector X and Y. And so let's say you want to find probability of X equal to lowercase X. So you want this probability.
+
+182
+00:47:56,708 --> 00:48:19,708
+So you sum over all possible values of y. Okay. So you sum over y and you sum over joint probability. So you sum the joint probabilities x and y, x, y.
+
+183
+00:48:19,708 --> 00:48:46,267
+Similarly, you can obtain the marginal probabilities of y. Now in this case, you will sum over all possible values of x, probability of x, y. Again, you will sum. In this case, again, these subscripts mean that
+
+184
+00:48:50,260 --> 00:49:06,700
+This value equals to this. So this random variable equals to this value and this random variable equals to this value. But if you know these things, you can just ignore writing them.
+
+185
+00:49:06,700 --> 00:49:15,659
+If you want to be more mathematically, what can we say, careful, you can write these things.
+
+186
+00:49:15,659 --> 00:49:27,660
+But if everything is obvious, you can just not write them. In this case, I didn't write them. Here, I wrote them.
+
+187
+00:49:29,660 --> 00:49:33,660
+Now, let's have a break.
+
+188
+00:49:34,660 --> 00:49:39,660
+Sorunun kaç tane olduğunu falan artık sorularda görürsünüz.
+
+189
+00:49:44,692 --> 00:49:46,692
+sınavda görürsünüz yani
+
+190
+00:49:50,643 --> 00:50:03,643
+Dediğim gibi bugünkü notlarımı paylaşacağım. Bir 10 dakika ara verelim.
+
+191
+00:50:10,516 --> 00:50:12,516
+What we call the test?
+
+192
+00:50:12,516 --> 00:50:16,516
+10 minutes break
+
+193
+00:50:20,019 --> 00:50:24,019
+So, 14.02 to the end.
+
+194
+00:56:30,003 --> 00:56:31,343
+Ara var değil mi beyler?
+
+195
+00:56:44,340 --> 00:56:48,340
+This quiz is at 3.00 p.m.
+
+196
+00:57:09,364 --> 00:57:18,423
+mail gelmiş de 3-4 arası anladığım kadarıyla. Tamamdır, tamamdır. İnşallah bağlantımız kopmazsa eşlik edeceğiz.
+
+197
+00:57:22,452 --> 00:57:24,591
+Ewa Allah saham. Shalom.
+
+198
+01:04:17,523 --> 01:04:20,523
+Yes, I'm getting a lot of information.
+
+199
+01:04:29,204 --> 01:04:46,204
+Sınav 3.5'da başlayacak arkadaşlar. 4'e daha doğrusu 3.59'a kadar sürecek. 4'te yüklediğiniz cevaplar kabul edilmeyecek. Dropbox sistemi öyle çalışıyor.
+
+200
+01:04:52,436 --> 01:05:12,436
+Internet, tabi bu kadar aslında sınav daha kısa bir sınav. Yani 15 dakikada falan yapılabilecek bir sınav esasen. Yarım saat verdik ki işte insanlar yüklemeye vakit bulabilsinler diye. Fotoğraf makinenizde...
+
+201
+01:05:16,659 --> 01:05:39,699
+Dropbox'a üye olmamız gerekiyor mu? Bilmiyorum. Ben hep ödev veren taraftaydım. Ama ben geçen hafta size e-mail attım. Her ihtimale karşı üye olun diye. Hatırlar mısınız? Yani bunu geçen hafta size bildirdim. YouSys'ten. Üye değilseniz hemen üye oluverin.
+
+202
+01:05:39,699 --> 01:05:51,619
+Google ile Dropbox'ı sign in yapabiliyorsunuz direkt arkadaşlar demiş birisi. Dolayısıyla ona hazırlıklı olun.
+
+203
+01:05:58,900 --> 01:06:00,900
+This is the next slide.
+
+204
+01:06:00,900 --> 01:06:04,900
+I want to open the camera.
+
+205
+01:06:04,900 --> 01:06:15,900
+We will be able to open the camera.
+
+206
+01:06:15,900 --> 01:06:20,900
+If you have a camera,
+
+207
+01:06:20,900 --> 01:06:23,900
+you will need to open the system.
+
+208
+01:06:23,900 --> 01:06:27,900
+Please do that.
+
+209
+01:06:27,900 --> 01:06:33,179
+One second, one second, one second, camera is available.
+
+210
+01:06:33,179 --> 01:06:37,179
+Camera is open.
+
+211
+01:06:37,179 --> 01:06:39,179
+But this is not open.
+
+212
+01:06:39,179 --> 01:06:42,219
+But this is not a problem.
+
+213
+01:06:42,219 --> 01:06:44,219
+This is not a problem.
+
+214
+01:06:44,219 --> 01:06:46,219
+I'm not saying that.
+
+215
+01:06:55,123 --> 01:07:23,123
+Let me repeat in English. First of all, in the next exam, there is a probability that we will ask you to open your webcams so that we can see what you do. For this quiz, we will not ask this. But if you don't have camera, somehow you have a problem with your camera, etc. Fix it.
+
+216
+01:07:23,123 --> 01:07:52,804
+Fix that situation so that you will not have, so that don't have a problem with that. Also the quiz will be starting at 3.30pm and it will continue up 3.99pm not until 4pm because Dropbox works that way.
+
+217
+01:07:52,804 --> 01:08:10,804
+when it is 40 p.m. It closes itself. So you must upload a little early and make sure in fact upload earlier because there might be some Internet problems or uploading can be slow.
+
+218
+01:08:10,804 --> 01:08:17,804
+So we are giving you more than enough time. Normally we think this.
+
+219
+01:08:17,804 --> 01:08:31,804
+This exam can be done in 15 minutes, but we are giving you half an hour so that you can convert this to the PDF and upload.
+
+220
+01:08:31,804 --> 01:08:36,804
+You will see a number of questions in the exam.
+
+221
+01:08:36,804 --> 01:08:43,804
+Make sure you have a PDF scanner, for example, if you are using an Android phone,
+
+222
+01:08:43,804 --> 01:09:12,803
+Cam scanner is a nice, very nice scanner program. I use it a lot. So you can just take photo of the page with cam scanner and directly convert to PDF and share to yourself by email or I don't know, somehow, and then download it and upload to Dropbox.
+
+223
+01:09:13,803 --> 01:09:17,803
+So I think that is what you will need to do.
+
+224
+01:09:21,803 --> 01:09:28,803
+If you don't send in time, we will not accept.
+
+225
+01:09:28,803 --> 01:09:33,803
+Okay. At four, the system will be shut itself.
+
+226
+01:09:33,803 --> 01:09:39,803
+Okay. So make sure to write to upload at least five minutes earlier.
+
+227
+01:09:39,803 --> 01:10:00,803
+Okay. And all this taking the photo converting PDF, sending to you downloading uploading, I think it can take at least 10 minutes. So make sure try to finish at least 15 or 20 minutes or you will not be able to upload it.
+
+228
+01:10:00,803 --> 01:10:05,803
+Okay.
+
+229
+01:10:05,803 --> 01:10:11,803
+Any if you don't have any questions, let's continue with the course.
+
+230
+01:10:11,803 --> 01:10:19,803
+Today I will be going a little faster because of that I will share the notes with you so
+
+231
+01:10:19,803 --> 01:10:27,803
+I will share, I will convert these to a PDF and share to you through Dropbox. Okay.
+
+232
+01:10:27,803 --> 01:10:32,803
+Okay, I will send the Dropbox share link somehow later.
+
+233
+01:10:37,108 --> 01:10:43,108
+What is the name of the dropbox link to the email address?
+
+234
+01:10:46,068 --> 01:10:49,308
+Chat ekranından ben size bir link vereceğim.
+
+235
+01:10:49,788 --> 01:10:51,227
+O linki tıklayacaksınız.
+
+236
+01:10:51,667 --> 01:10:53,247
+Dropbox ekranı açılacak.
+
+237
+01:10:54,247 --> 01:10:55,988
+Orada yükle diyeceksiniz.
+
+238
+01:10:56,107 --> 01:10:57,207
+Upload diyeceksiniz.
+
+239
+01:10:57,507 --> 01:10:58,747
+Oraya yükleyeceksiniz.
+
+240
+01:11:01,727 --> 01:11:03,008
+Anladınız mı?
+
+241
+01:11:04,908 --> 01:11:05,947
+Tamam.
+
+242
+01:11:06,748 --> 01:11:08,908
+Ben zaten online olacağım.
+
+243
+01:11:09,068 --> 01:11:11,607
+Siz de sistemden zoomdan çıkmayın.
+
+244
+01:11:11,607 --> 01:11:13,748
+Ama chatleşmeyin de.
+
+245
+01:11:13,748 --> 01:11:14,748
+If you have questions, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like this, like
+
+246
+01:11:40,724 --> 01:11:49,243
+So in English again, you will not send me an email if you send me an email, I will not accept it.
+
+247
+01:11:49,243 --> 01:11:57,443
+I will send you a Dropbox link from the chat window, you will click to that Dropbox links link.
+
+248
+01:11:57,443 --> 01:12:08,083
+A browser will open and in the browser screen, you will upload to the Dropbox link, you will upload file.
+
+249
+01:12:08,083 --> 01:12:20,084
+Okay, it will be a file request, you will upload to that file request. I will not accept if you send me by email.
+
+250
+01:12:21,460 --> 01:12:49,460
+Okay. Where are we, what are we doing? Independence of random variables. Okay. So we are talking about more than one random variables or joint probabilities. So then let's talk about their independence.
+
+251
+01:13:06,452 --> 01:13:17,431
+to random variables x and y are independent.
+
+252
+01:13:18,836 --> 01:13:23,836
+if their joint probability
+
+253
+01:13:25,836 --> 01:13:27,836
+is equal to the same.
+
+254
+01:13:31,412 --> 01:13:41,431
+is equal to multiplication of their marginal probabilities.
+
+255
+01:13:58,420 --> 01:14:16,420
+Now, expectation and other things. Now we are putting a stop to joint probabilities. We will return to it on an example. But let's talk about expectation.
+
+256
+01:14:29,971 --> 01:14:30,971
+So expectation is the expected value or mean or sometimes average value of the random variable. So sometimes this is called mean to. And if you have a random variable X. If you have a random variable X, we usually write it like this.
+
+257
+01:14:59,971 --> 01:15:04,771
+e of x meaning expectation.
+
+258
+01:15:08,948 --> 01:15:13,448
+of x and x is a random variable here.
+
+259
+01:15:18,420 --> 01:15:47,699
+And sometimes we just say mean of X. So you might, you might mean is written this with this mu, it's not you mu, this is mu, it's close to M. Okay. And if I write here X, it means mean of X. Okay. So this is mean of X.
+
+260
+01:15:52,020 --> 01:16:07,919
+and it just gives you idea of what kind of value is most probable, what kind of value you expect. That kind of intuition. It gives you that kind of intuition.
+
+261
+01:16:09,259 --> 01:16:10,979
+And we
+
+262
+01:16:12,759 --> 01:16:15,700
+calculated with the equation
+
+263
+01:16:17,039 --> 01:16:17,819
+Mu
+
+264
+01:16:17,819 --> 01:16:29,979
+or expected value of x is equal to summation over all values of x, x times probability of x.
+
+265
+01:16:31,819 --> 01:16:46,299
+So basically we are multiplying all elements. So all, all the values, all possible values of random variable by their probabilities.
+
+266
+01:16:46,299 --> 01:16:51,399
+Okay. Let's do an example.
+
+267
+01:17:15,091 --> 01:17:43,411
+Let's say you have a random variable X, sorry. And X has only two values. So it has values zero and one and probabilities of those values are, let's say zero has probability 0.75 and one has probability 0.25.
+
+268
+01:17:45,091 --> 01:17:52,091
+or let's make it a little different let's make these values two and three
+
+269
+01:17:56,435 --> 01:18:24,435
+So your random value can be two or three. Now the expected value of this random variable is summation of all possible values of x, x times probability of x, which is x can be a two. Its probability is 0.75.
+
+270
+01:18:21,971 --> 01:18:51,951
+plus x can be a 3 and its probability can be a 0.25. Okay, now what is that two times 0.75 that's 1.5. This is 0.75. You sum this 2.25 is the expected value. Now, if you think about it,
+
+271
+01:18:51,971 --> 01:18:56,971
+You will never get a value equal to 2.25.
+
+272
+01:18:59,812 --> 01:19:04,971
+Because all the possible values are only two or three.
+
+273
+01:19:04,971 --> 01:19:09,971
+You can only get two, but, or you can only get three.
+
+274
+01:19:10,591 --> 01:19:14,971
+But expected value is 2.25.
+
+275
+01:19:14,971 --> 01:19:16,211
+What does that mean?
+
+276
+01:19:17,771 --> 01:19:20,951
+Well, one interpretation is,
+
+277
+01:19:21,971 --> 01:19:31,971
+If you if you carry out this experiment that gives you two or three millions of times.
+
+278
+01:19:31,971 --> 01:19:36,132
+A lot of times you repeat the experiment.
+
+279
+01:19:36,132 --> 01:19:49,571
+And then some over them and divide by number of your experiments, you will get a value very close to 2.25 that's one interpretation.
+
+280
+01:19:49,571 --> 01:19:51,571
+okay
+
+281
+01:19:57,011 --> 01:20:15,091
+Now, this was expectation of a random variable. Sometimes instead of a random variable, we have a function of random variable. So expectation.
+
+282
+01:20:14,707 --> 01:20:19,707
+of function.
+
+283
+01:20:28,148 --> 01:20:58,127
+Now expectation of a function is, let's say you have random variable x. Now we are talking, talking about the function, let's say g of x. So what this means is whatever x returns, whatever the outcome, g sometimes g does something to it and returns it.
+
+284
+01:20:58,148 --> 01:21:07,148
+Okay, and now we are talking about expected value of this G of X.
+
+285
+01:21:07,148 --> 01:21:09,148
+Okay.
+
+286
+01:21:18,131 --> 01:21:46,131
+And it's this is very simple, similar to this, this equation here. Now, instead of X, we will just have G of X here. Okay, the rest is same. So you will write summation over all possible X's G of X times probability of X.
+
+287
+01:21:57,555 --> 01:22:06,555
+There are a number of different properties of expectations. Let's look at them.
+
+288
+01:22:15,731 --> 01:22:16,731
+So properties. Of expectation. Now, one thing that's nice is. Expectation of a constant is just itself. OK, so. This is a constant.
+
+289
+01:22:43,604 --> 01:23:12,403
+So expectation of five is just five. And then expectation of a constant times a random variable is that constant times expectation of random variable. Again, a is a constant in this case. And another thing is,
+
+290
+01:23:18,547 --> 01:23:37,547
+expectation of some of random variables like x plus y, both of which are random variables can be divided into two sums. So expectation of x plus expectation of y.
+
+291
+01:23:42,452 --> 01:23:45,331
+And one more.
+
+292
+01:23:45,331 --> 01:23:53,691
+If this is there is an if here, if X and Y are.
+
+293
+01:23:53,691 --> 01:23:58,211
+Independent.
+
+294
+01:23:58,211 --> 01:24:00,251
+Okay.
+
+295
+01:24:00,251 --> 01:24:06,091
+We have expectation of X times Y.
+
+296
+01:24:06,091 --> 01:24:13,091
+X equals to expectation of X times expectation of Y.
+
+297
+01:24:13,091 --> 01:24:15,091
+Okay.
+
+298
+01:24:16,091 --> 01:24:18,091
+Notice that we have an if here.
+
+299
+01:24:18,091 --> 01:24:22,091
+If X and Y are independent, we can do that.
+
+300
+01:24:22,091 --> 01:24:26,091
+If they are not independent, we cannot write this.
+
+301
+01:24:26,091 --> 01:24:35,091
+Now, if we like, for example, what is the expectation of X?
+
+302
+01:24:35,091 --> 01:24:45,091
+expectation of. Let's say a X plus B Y plus C.
+
+303
+01:24:45,091 --> 01:24:55,091
+Let's say. Well, the here a B and C are constants.
+
+304
+01:24:55,091 --> 01:25:01,091
+And X and Y are random variables.
+
+305
+01:25:01,091 --> 01:25:09,291
+Now, just using the properties here, we can write this.
+
+306
+01:25:09,291 --> 01:25:10,992
+So we can say, okay.
+
+307
+01:25:16,212 --> 01:25:46,191
+I can just divide from summations. So this is equal to expected value of Ax plus expected value of By plus expected value of C. And now I can take out these constants A times expected value of X plus B times expected value of Y plus C.
+
+308
+01:25:46,212 --> 01:26:13,212
+and this is expectations just itself. Okay. So these are very helpful actually, you should know these properties. And you can prove these at home, I will not spend time on these but you should prove these at home. Okay.
+
+309
+01:26:20,692 --> 01:26:31,192
+Now another important concept is variance. or standard deviation.
+
+310
+01:26:39,060 --> 01:26:44,500
+variance and standard
+
+311
+01:26:47,796 --> 01:26:50,115
+variance and
+
+312
+01:26:54,420 --> 01:26:56,420
+standard deviation.
+
+313
+01:27:08,404 --> 01:27:09,404
+expectation shows us what kind of what kind of points, central point we expect. So now variance shows us how how different can values be. So
+
+314
+01:27:38,292 --> 01:28:08,271
+Let's say you have two. Random variables, let's say you have x one. And it's possible values are its range is let's say, one and two. Okay. Now, consider another random variable. Let's say, as this is x one range of x two is let's say, 1000 and 2000.
+
+315
+01:28:08,292 --> 01:28:29,052
+So now in this case the values that you get from this random variable and this random variable which has higher variance. X2 has higher variance so variance of.
+
+316
+01:28:32,404 --> 01:28:40,404
+x2 is higher. Okay?
+
+317
+01:28:44,564 --> 01:28:53,564
+because the values change more. In fact, we can even make this example a little better, let's say.
+
+318
+01:28:53,564 --> 01:29:06,564
+Let's say the values you can have are minus two and two and minus 2000 and 2000.
+
+319
+01:29:06,564 --> 01:29:27,964
+Now, in both cases, the mean is zero, mean of X one is zero. Similarly, mean of X two is zero. So basically, assuming probabilities are same. Okay, assume probabilities are same.
+
+320
+01:29:27,963 --> 01:29:45,963
+So variance of X2 is higher. So let's say probability of minus two is equal to probability of two equals one over two and probability of minus 2000
+
+321
+01:29:45,963 --> 01:29:49,963
+equal to probability of 2000
+
+322
+01:29:49,963 --> 01:29:54,963
+equal to one over two. So they have the same probabilities.
+
+323
+01:29:54,964 --> 01:30:19,964
+And so the expected values will be zero, but the values here has a higher range. Okay. That's what, that's what makes the variance higher. And mathematically we define it this way. Variance.
+
+324
+01:30:24,275 --> 01:30:52,915
+So, we use this Sigma square here. Or sometimes we write as var of x here we can write x2 if you want, variance of x. This is mathematically expected value of x minus expected value of x's squared.
+
+325
+01:30:55,315 --> 01:31:13,475
+and remember, we can write this as so it is equal to summation of overall x's.
+
+326
+01:31:13,908 --> 01:31:17,107
+x minus
+
+327
+01:31:19,227 --> 01:31:21,107
+e x cis
+
+328
+01:31:22,067 --> 01:31:31,107
+square, okay, times probability of x and in instead of e x let's write mu
+
+329
+01:31:38,739 --> 01:31:51,939
+So X minus its means square times probability of X. We have an extra, let me write this.
+
+330
+01:32:05,395 --> 01:32:32,035
+So we are just taking the average or subtracting the mean, taking the square and multiplying but by the probability. Now this is variance and standard deviation is very simple actually. It's just square root of variance.
+
+331
+01:32:46,515 --> 01:32:47,515
+So we write Sigma in this case, or sometimes we say STD meaning standard deviation of X. And this is just square root of variance. Okay. And the reason standard deviation is like this, the units are in the problem units.
+
+332
+01:33:16,515 --> 01:33:18,515
+it's easier to sorry
+
+333
+01:33:25,779 --> 01:33:46,779
+standard deviation is easier to interpret to understand. So we can use sometimes standard deviation. Now for variance for variance, there is an alternative equation. So I will write off here.
+
+334
+01:33:46,779 --> 01:33:57,779
+or variance of X can be calculated by this equation.
+
+335
+01:33:57,779 --> 01:34:08,779
+Expected value of X is square minus mu square.
+
+336
+01:34:08,779 --> 01:34:36,979
+So, you can obtain this from the previous equation and you should do this at home. So I will write prove at home. Okay. It's not that hard. Also, it should be in the book or in the internet you can find it for sure.
+
+337
+01:34:36,979 --> 01:34:41,979
+but before looking at the internet, try to prove yourself.
+
+338
+01:34:48,419 --> 01:34:53,419
+Now, two other things related to this are covariance and correlation.
+
+339
+01:35:20,180 --> 01:35:50,159
+covariance and correlation. Now expectation and variance are for single variables. Now when you have random vectors, when you have more than one, more than one, two or three, whatever, at least let's say two, they have two random variables. You can think about their covariance, how they change together.
+
+340
+01:35:50,180 --> 01:36:19,180
+Okay, now these are mathematically given as this way. So we write is it now sigma xy. So this is covariance of random variables x and y. Or we write like this.
+
+341
+01:36:20,180 --> 01:36:25,180
+like this, Cov x, y.
+
+342
+01:36:25,279 --> 01:36:25,840
+Okay.
+
+343
+01:36:26,860 --> 01:36:31,699
+This is defined as, as an expected value.
+
+344
+01:36:32,639 --> 01:36:37,639
+It's defined as, expected value of x minus mu x times y minus mu y.
+
+345
+01:36:50,180 --> 01:37:16,180
+Okay. So for each x and y, you want to calculate the mean and then you will subtract the mean from x, you will subtract the y's mean from y and then you will multiply.
+
+346
+01:37:16,180 --> 01:37:46,159
+again for this there is an alternative equation. So, or let's say, you can say covariance of x, y is given by expected value of x times y minus x times y.
+
+347
+01:37:46,180 --> 01:37:56,180
+is mu x times mu y. Again, you should prove this at home.
+
+348
+01:38:01,076 --> 01:38:14,515
+Okay. It shouldn't be that hard. Now, what is covariance? So if you have a,
+
+349
+01:38:42,484 --> 01:38:45,123
+So when you have high covariance.
+
+350
+01:38:51,988 --> 01:38:56,988
+Let's call this covariance interpretation.
+
+351
+01:39:07,412 --> 01:39:13,412
+Let's say you have two random variables X and Y.
+
+352
+01:39:15,412 --> 01:39:17,931
+Let's say this is X, this is Y.
+
+353
+01:39:25,427 --> 01:39:36,747
+Let's say you draw the graph of how they how they move. So let's say you have these data points.
+
+354
+01:39:40,148 --> 01:39:58,148
+Now, if you have high covariance, you get a graph like this. You get a graph like this. So here you have covariance, positive covariance or high covariance.
+
+355
+01:40:06,228 --> 01:40:14,228
+Okay. And you might see something like this.
+
+356
+01:40:16,404 --> 01:40:41,404
+like something like this. And this is X values. This is, these are Y values. And now you might see a graph like this. If you fit a line to these points, this should be a line.
+
+357
+01:40:41,404 --> 01:41:07,404
+The covariance in this case is negative. So it's a high negative covariance. And finally, if you see something like this, let's say something like this, you have your y, you have your x, and so
+
+358
+01:41:12,916 --> 01:41:15,916
+The graph is like this.
+
+359
+01:41:20,659 --> 01:41:34,659
+So the X changes but Y values don't really change. Okay. Then we say they are uncorrelated or covariance is zero.
+
+360
+01:41:37,332 --> 01:41:46,332
+So in this case, covariance of X and Y is zero.
+
+361
+01:41:56,243 --> 01:42:14,123
+covariance tells us how these two change together. One is increasing, let's say x is increasing, then does the y increasing at the same time?
+
+362
+01:42:14,123 --> 01:42:34,123
+If that's so we say that we have a positive covariance or when X is increasing, Y is decreasing right in this case. So when X is increasing, Y is decreasing. So here we have a negative covariance.
+
+363
+01:42:34,123 --> 01:42:44,123
+So we have a covariance, they are not uncorrelated, but the thing is they are inversely covariant.
+
+364
+01:42:49,460 --> 01:42:53,460
+In the third case,
+
+365
+01:42:55,475 --> 01:42:58,475
+They don't vary together.
+
+366
+01:42:58,475 --> 01:43:03,475
+They vary independently, so they are not covariant.
+
+367
+01:43:03,475 --> 01:43:07,475
+We say their covariance is zero.
+
+368
+01:43:07,475 --> 01:43:10,475
+Let's.
+
+369
+01:43:10,475 --> 01:43:14,475
+Let's have a.
+
+370
+01:43:27,347 --> 01:43:34,067
+Let's have a ten minutes break and then when we come we will continue
+
+371
+01:43:34,067 --> 01:43:43,507
+Hocam çok özür diliyorum. Bu özellikle var yansıdan sonrasını bir beş dakika Türkçe olarak yine yoracağım sizi ama hakkınızı helal edin.
+
+372
+01:43:44,047 --> 01:43:44,927
+Tabii ki tabii ki.
+
+373
+01:43:45,007 --> 01:43:50,247
+Demek ki beni İngilizceden dilek atlattılar ama demek ki o kadar iyi İngilizcem yok benim hocam yani.
+
+374
+01:43:50,907 --> 01:43:56,667
+Ben hala geçen sene bu sene kaçırıyorum ama aradan soru olur. Hiç sorun değil hocam. Yani size bağlı yani hiç sorun yok.
+
+375
+01:43:56,667 --> 01:43:59,528
+Sorun daha iyi, herkes daha iyi anlar
+
+376
+01:43:59,528 --> 01:44:15,388
+Yani özellikle varianz ve varianzdan sonraki bölümü Türkçe olarak işte şu varianztır, şunun tanımı şudur, işte covariance şudur, tanımı yani formülü şudur, öteki en son correlation şudur, tanımı şudur diye o bölümü alacak sadece o kadar
+
+377
+01:44:15,387 --> 01:44:27,227
+Variance bize rastgele değişkenin aldığı değerlerin ne kadar değiştiğini, ne kadar dalgalı olduğunu gösteriyor
+
+378
+01:44:27,227 --> 01:44:30,267
+Örneğin şu örneğe bakalım
+
+379
+01:44:35,731 --> 01:44:41,531
+Let's say, x1 has a rastgele change.
+
+380
+01:44:41,531 --> 01:44:44,731
+And x2 and x2 is a value.
+
+381
+01:44:44,731 --> 01:44:47,931
+And the other one is x2 and x2.
+
+382
+01:44:47,931 --> 01:44:51,931
+Only x2 and x2 are not.
+
+383
+01:44:51,931 --> 01:44:55,931
+x2 and x2 are not.
+
+384
+01:44:55,931 --> 01:44:57,931
+Only one is a value.
+
+385
+01:44:57,931 --> 01:45:00,931
+And every one is a value.
+
+386
+01:45:00,931 --> 01:45:12,931
+Now, this is the difference between the two and the two and the two and the two and the two and the two and the two.
+
+387
+01:45:12,931 --> 01:45:21,931
+The second difference between the two and the two and the two and the two and the two.
+
+388
+01:45:21,931 --> 01:45:25,931
+The other one's own ability to be one and the two.
+
+389
+01:45:25,931 --> 01:45:28,931
+Now, the difference between the two and the two.
+
+390
+01:45:28,931 --> 01:45:34,931
+Now, what are the differences between these two differences?
+
+391
+01:45:34,931 --> 01:45:37,931
+What is the difference between these two differences?
+
+392
+01:45:37,931 --> 01:45:42,931
+The difference between these two differences is different.
+
+393
+01:45:42,931 --> 01:45:47,931
+The difference is different.
+
+394
+01:45:47,931 --> 01:45:51,931
+The difference between these two differences is very small.
+
+395
+01:45:51,931 --> 01:45:54,931
+because the value is 2.
+
+396
+01:45:54,931 --> 01:45:58,931
+2 is 2.
+
+397
+01:45:58,931 --> 01:46:02,931
+2 is 4.
+
+398
+01:46:02,931 --> 01:46:04,931
+x2 is 4.
+
+399
+01:46:04,931 --> 01:46:08,931
+x2 is 4.000.
+
+400
+01:46:08,931 --> 01:46:10,931
+Varyans is the value of this.
+
+401
+01:46:10,931 --> 01:46:12,931
+Rastgele değişkenin değerleri
+
+402
+01:46:12,931 --> 01:46:14,931
+ne kadar dalgalanıyor?
+
+403
+01:46:14,931 --> 01:46:18,931
+I have to say this.
+
+404
+01:46:18,931 --> 01:46:20,931
+I said this to me.
+
+405
+01:46:20,931 --> 01:46:22,931
+But we'll look at matematical.
+
+406
+01:46:22,931 --> 01:46:24,931
+What do you say?
+
+407
+01:46:28,756 --> 01:46:29,756
+Diyor ki
+
+408
+01:46:29,756 --> 01:46:33,756
+Eee
+
+409
+01:46:36,083 --> 01:46:58,004
+Rastgele değişkenin aldığı değerlerin ortalamadan farkının karelerinin beklenen değeridir diyor. Yani aslında ortalamadan ne kadar farklı her bir değer onu bulacaksınız şurada. Bir de karesini alacaksınız ki negatif şeyler olmasın. Sonra da onun ortalamasını alacaksınız. Buna variance deniliyor.
+
+410
+01:46:58,004 --> 01:47:07,004
+Bunun sayısal bir örneğini bu derste yapacağız veya ileriki ders artık ne kadar yetiştirdiğimize bağlı
+
+411
+01:47:07,004 --> 01:47:12,523
+Sayısal bir değer verdiğim sayısal örnekte daha iyi görürsünüz herhalde
+
+412
+01:47:12,523 --> 01:47:15,643
+Şu küçük örnekler için de sayısal bir şey yapalım vaktimiz
+
+413
+01:47:15,643 --> 01:47:21,683
+Diyelim ki x birim varyansını hesap edelim
+
+414
+01:47:27,091 --> 01:47:34,371
+Now what we need to do is x, mu x, mu x, etc.
+
+415
+01:47:34,371 --> 01:47:40,371
+We need to consider expectation of x or mu x.
+
+416
+01:47:40,371 --> 01:47:42,371
+The expectation of x or mu x.
+
+417
+01:47:42,371 --> 01:47:47,731
+We need to put it on the right.
+
+418
+01:47:47,731 --> 01:47:53,731
+Let's see what we need to do.
+
+419
+01:47:58,931 --> 01:48:21,891
+mu x'i bulayım. Mu x'in 0 olduğunu, mu x1 diyeceğim. Yani x1'in varyansını buluyorum şimdi şunun. Mu x'in 0 olduğunu biliyoruz. Nereden biliyoruz? Eksi 2 çarpı 1 bölü 2 artı 2 çarpı 1 bölü 2 eşittir 0. Bu buraya gelecek.
+
+420
+01:48:21,891 --> 01:48:34,391
+Now x-0'ın beklenen değerini bulacağız. Variance neymiş? x1
+
+421
+01:48:38,100 --> 01:48:57,100
+x-0'ın karesinin beklenen değeri imiş. Bunu nasıl buluruz? Bunu bir gx gibi düşünün. Bir fonksiyon bu. Fonksiyonların beklenen değerini de nasıl buluyoruz? Şöyle buluyoruz.
+
+422
+01:48:57,100 --> 01:49:11,419
+x'in tüm olası değerleri üzerinden o fonksiyonu alıyoruz. Burada x eksi sıfırın karesi fonksiyonumuz. Px'e çarpıyoruz topluyoruz. Değil mi?
+
+423
+01:49:14,280 --> 01:49:25,419
+O zaman ne olacak? Bakalım bunu yapalım. x'in tüm değerleri dediğimiz zaten iki değeri var. x eşittir sıfır için sıfır eksi sıfırın karesi
+
+424
+01:49:25,419 --> 01:49:50,180
+Olasılığı ne? 1 bölü 2, artı, diğer değer ne? Ha sıfır değil, 2 alıyordu ya, değil mi? O zaman 2 eksi sıfırın karesi, eksi 2 ve 2 alıyor. Dolayısıyla önce eksi 2'yi diyelim. Burası karıştı.
+
+425
+01:49:56,115 --> 01:50:23,115
+eksi 2'den 0 çıkaracağız, karesini alacağız, 1 bölü 2 ile çarpacağız. Diğer değer de 2. Dolayısıyla 2'den 0 çıkaracağız, karesini alacağız, 1 bölü 2 ile çarpacağız. O zaman ne oluyor? 2 kere 2 4, eksi 2 kere eksi 2 4, yarıya böldük 2, 2 kere 2 4, yarıya böldük 2, 2 2 daha 4. Varyans ne çıktı? 4 çıktı.
+
+426
+01:50:29,908 --> 01:50:43,107
+Aynı şeyi x1 için de x2 için de yapalım. Variance x2'yi hesap edelim.
+
+427
+01:50:47,828 --> 01:50:51,767
+Here is the mu x2 is 0.
+
+428
+01:50:52,387 --> 01:50:54,288
+We have to have a guess.
+
+429
+01:50:54,788 --> 01:50:57,168
+Mu x2 is 0.
+
+430
+01:50:57,708 --> 01:50:59,168
+x2 is 0.
+
+431
+01:50:59,168 --> 01:51:01,187
+The mu x2 is 0.
+
+432
+01:51:03,087 --> 01:51:05,067
+So we have to have a guess.
+
+433
+01:51:05,887 --> 01:51:07,807
+Aynı işlemler 4000 çıkar.
+
+434
+01:51:08,887 --> 01:51:09,947
+Yes, yes.
+
+435
+01:51:10,168 --> 01:51:11,347
+Birebir aynı işlem.
+
+436
+01:51:11,767 --> 01:51:12,387
+Ne yapacağız?
+
+437
+01:51:12,928 --> 01:51:16,828
+Eksi 2000'den 0'ı çıkarıp karesini alacağız.
+
+438
+01:51:16,828 --> 01:51:17,907
+1,2
+
+439
+01:51:17,907 --> 01:51:23,188
+2,0
+
+440
+01:51:23,188 --> 01:51:26,008
+1,2
+
+441
+01:51:26,008 --> 01:51:32,447
+2,0
+
+442
+01:51:32,447 --> 01:51:32,467
+6,0
+
+443
+01:51:32,467 --> 01:51:45,828
+4,0
+
+444
+01:51:45,828 --> 01:51:47,828
+4.000.000.000.
+
+445
+01:51:49,828 --> 01:51:50,708
+Dolayısıyla
+
+446
+01:51:50,708 --> 01:51:55,607
+X1'in varyansı 4
+
+447
+01:51:55,607 --> 01:51:58,048
+X2'nin varyansı 4.000.000.
+
+448
+01:51:59,448 --> 01:52:00,088
+Yani
+
+449
+01:52:00,088 --> 01:52:01,707
+bu ne demek? X2
+
+450
+01:52:01,707 --> 01:52:02,848
+çok daha
+
+451
+01:52:02,848 --> 01:52:05,588
+dalgalı bir şey. Şöyle düşünün.
+
+452
+01:52:05,707 --> 01:52:08,048
+Mesela borsada yatırım yapacağınızı
+
+453
+01:52:08,048 --> 01:52:10,128
+düşünün. X1
+
+454
+01:52:10,128 --> 01:52:11,828
+bilmiyorum
+
+455
+01:52:11,828 --> 01:52:13,167
+şey
+
+456
+01:52:13,167 --> 01:52:15,027
+IMKB 30
+
+457
+01:52:15,027 --> 01:52:15,967
+like this is a very
+
+458
+01:52:15,967 --> 01:52:17,267
+good feeling.
+
+459
+01:52:17,267 --> 01:52:18,147
+It's a very good feeling.
+
+460
+01:52:19,567 --> 01:52:22,947
+X2 is a very speculative
+
+461
+01:52:22,947 --> 01:52:23,627
+a feeling.
+
+462
+01:52:24,447 --> 01:52:33,007
+It's a very good feeling.
+
+463
+01:52:34,527 --> 01:52:35,427
+Anladım.
+
+464
+01:52:36,328 --> 01:52:37,287
+Rastgele
+
+465
+01:52:37,287 --> 01:52:37,887
+değişken,
+
+466
+01:52:38,207 --> 01:52:39,367
+it's a very good feeling.
+
+467
+01:52:39,368 --> 01:52:43,967
+variance is a big
+
+468
+01:52:43,967 --> 01:52:45,967
+and you can see it
+
+469
+01:52:45,967 --> 01:52:49,368
+very much
+
+470
+01:52:49,368 --> 01:52:50,368
+variance
+
+471
+01:52:50,368 --> 01:52:51,368
+this is a very
+
+472
+01:52:51,368 --> 01:52:52,368
+variance
+
+473
+01:52:52,368 --> 01:52:53,368
+two different variance
+
+474
+01:52:53,368 --> 01:52:54,368
+one of the time
+
+475
+01:52:54,368 --> 01:52:55,368
+yes
+
+476
+01:52:55,368 --> 01:52:56,368
+covariance
+
+477
+01:52:56,368 --> 01:52:57,368
+look at the
+
+478
+01:52:57,368 --> 01:52:58,368
+two of them
+
+479
+01:52:58,368 --> 01:52:59,368
+are a good
+
+480
+01:52:59,368 --> 01:53:00,368
+covariance
+
+481
+01:53:00,368 --> 01:53:01,368
+why
+
+482
+01:53:01,368 --> 01:53:02,368
+now
+
+483
+01:53:02,368 --> 01:53:03,368
+3.3
+
+484
+01:53:03,368 --> 01:53:07,368
+do you have to
+
+485
+01:53:07,368 --> 01:53:08,368
+do you have to do
+
+486
+01:53:08,367 --> 01:53:10,367
+I don't know what the problem is.
+
+487
+01:53:10,367 --> 01:53:14,367
+It's not a problem.
+
+488
+01:53:14,367 --> 01:53:20,367
+This is the same sector.
+
+489
+01:53:20,367 --> 01:53:22,367
+We are the same sector.
+
+490
+01:53:22,367 --> 01:53:28,367
+The sector is the same sector.
+
+491
+01:53:28,367 --> 01:53:30,367
+Then we are positive.
+
+492
+01:53:30,367 --> 01:53:36,367
+We have a positive.
+
+493
+01:53:36,367 --> 01:53:38,367
+Why?
+
+494
+01:53:38,367 --> 01:53:41,367
+2, 2, 2, 2, 2, 2, 2, 2, 2.
+
+495
+01:53:41,367 --> 01:53:44,367
+Ciddi bir varyans var burada.
+
+496
+01:53:44,367 --> 01:53:47,367
+Tabii 2 değer için çok fazla anlamlı olmuyor.
+
+497
+01:53:47,367 --> 01:53:54,367
+Binlerce değer olsa daha güzel, daha anlamlı olur bu.
+
+498
+01:53:54,367 --> 01:53:57,367
+Ama o anlama geliyor.
+
+499
+01:53:57,367 --> 01:53:58,367
+Covaryans.
+
+500
+01:53:58,367 --> 01:54:01,367
+Beraber hareket ediyorlar mı?
+
+501
+01:54:01,367 --> 01:54:08,607
+Negative covariance is a result of the relationship with the hisse-senet.
+
+502
+01:54:08,607 --> 01:54:13,127
+If you have a hisse-senet, you can't think about it.
+
+503
+01:54:13,127 --> 01:54:17,747
+There is a situation that is a result of the other.
+
+504
+01:54:17,747 --> 01:54:23,247
+A result of the other.
+
+505
+01:54:23,247 --> 01:54:31,247
+If you have a negative covariance, you can't think about it.
+
+506
+01:54:31,247 --> 01:54:35,247
+0 covariance is a difference between the two and the two.
+
+507
+01:54:35,247 --> 01:54:42,247
+One is the one in the other, the other is the other one.
+
+508
+01:54:42,247 --> 01:54:46,247
+The other is the one in the other, the other is the other.
+
+509
+01:54:46,623 --> 01:54:49,823
+and
+
+510
+01:54:51,220 --> 01:55:17,999
+Şuradaki gibi x diyelim ki artıyor ama y şöyle bir bakıyorsunuz pek alakalı değil azalıyor da artıyor da onunla gibi. Bu durumlarda da covariance yok bunların arasında diyoruz. Co biliyorsunuz İngilizce'de ne demek? Beraber demek. Variance'da değişim. covariance beraber değişim.
+
+511
+01:55:17,999 --> 01:55:32,779
+covariant, beraber değişen. Dolayısıyla beraber değişen rastgele değişkenler değil bunlar diyoruz covariant sıfırsa. Tamam.
+
+512
+01:55:36,756 --> 01:55:46,216
+Yes, 10-10-20-20-dakka ders yapıp sonra da sınavı başlatacağız.
+
+513
+01:55:46,596 --> 01:55:50,495
+Çay koyuyordum o yüzden tamam diyeyim. Mikrofonu kapatıyorum. Teşekkür ederim hocam.
+
+514
+01:55:50,535 --> 01:55:53,115
+Tamam, rica ederim. 3-10 geçe kadar ara verelim.
+
+515
+02:08:54,003 --> 02:08:58,404
+Yes, I'm here, my friend, your voice is coming.
+
+516
+02:09:11,891 --> 02:09:17,891
+So,
+
+517
+02:09:17,891 --> 02:09:19,891
+Okay, so,
+
+518
+02:09:19,891 --> 02:09:23,891
+the next thing we should learn is correlation.
+
+519
+02:09:23,891 --> 02:09:25,891
+So,
+
+520
+02:09:35,699 --> 02:09:40,699
+Now, correlation is very similar to covariance.
+
+521
+02:09:40,699 --> 02:10:02,699
+But it is normalized. Now, the problem with covariance is it can get really big or small and it's very hard to tell whether the value is big or large. I mean, what is large, what is big.
+
+522
+02:10:02,699 --> 02:10:27,699
+We can discuss this. What is a big number? What is a small number? These are relative things. Correlation normalizes all values to the range minus one and one. So it's like correlation. Correlation is like covariance.
+
+523
+02:10:31,988 --> 02:10:32,988
+But. Values. Are being. Minus one. Let me say in the range.
+
+524
+02:10:51,891 --> 02:10:56,011
+I can write it in English.
+
+525
+02:11:01,811 --> 02:11:03,111
+correlation.
+
+526
+02:11:09,235 --> 02:11:12,476
+like covariance but values are
+
+527
+02:11:16,467 --> 02:11:17,467
+in the. In the range. Minus one plus one. So this is easier to interpret because if the correlation is close to one very high covariance, very high correlation, let's say correlation, covariance is different, related by different. If the values are close to negative one,
+
+528
+02:11:46,467 --> 02:11:59,027
+you have negative correlation. So how do we how do we do that? How can we normalize covariance into the range of minus one plus one?
+
+529
+02:11:59,027 --> 02:12:08,467
+Well, this is, by the way, shown by rho. So this is the symbol for correlation.
+
+530
+02:12:10,484 --> 02:12:38,484
+Now we start by covariance. Of X and Y, so we are talking about correlation of X and Y. And we divide it. By standard deviations, so by standard deviation of X, X times standard deviation of Y.
+
+531
+02:12:41,363 --> 02:12:42,363
+So by normalizing using these standard deviations. The value you get will be in the range. Minus one and one, and that will be easier to interpret. Any questions about this so. There are some properties of these.
+
+532
+02:13:11,363 --> 02:13:15,363
+variances and covariances. So let's talk about them.
+
+533
+02:13:39,444 --> 02:13:49,444
+So. Let's go from simple to kind of complicated.
+
+534
+02:13:49,444 --> 02:13:58,444
+First of all, covariance of x, y is equal to covariance of y, x.
+
+535
+02:13:58,444 --> 02:14:04,444
+So you can just exchange the variables.
+
+536
+02:14:04,444 --> 02:14:17,444
+Similarly correlation have this property correlation of X and Y is equal to correlation of Y and X.
+
+537
+02:14:17,444 --> 02:14:21,444
+And now.
+
+538
+02:14:25,555 --> 02:14:26,475
+Sorry
+
+539
+02:14:29,811 --> 02:14:50,811
+Now, if you have. So variance of. Constant is what zero. So if you have a constant, its variance is zero. Because a constant is constant, it doesn't change, right? Variance is related to change.
+
+540
+02:14:50,811 --> 02:14:56,811
+And. Now.
+
+541
+02:15:05,363 --> 02:15:06,363
+variance of. A x plus B. Is. So let's write this way. Variance of a x is a square times variance of x. So c and a here are constants. So c is a constant.
+
+542
+02:15:35,363 --> 02:15:41,363
+again a here is a constant.
+
+543
+02:15:41,363 --> 02:15:48,363
+So you so you can kind of take the constant outside by taking a square.
+
+544
+02:15:55,828 --> 02:15:58,828
+Now variance of
+
+545
+02:16:10,612 --> 02:16:37,191
+variance of ax plus b, y plus c. This is now a square times variance of x plus b square times variance of y.
+
+546
+02:16:44,308 --> 02:17:09,308
+the square variance of Y. Plus. To a B covariance of X Y. So you have this, this kind of big, large equation or property, let's say.
+
+547
+02:17:10,579 --> 02:17:13,579
+And
+
+548
+02:17:22,772 --> 02:17:31,171
+Now, covariance. In the case of covariance, you have
+
+549
+02:17:34,835 --> 02:18:01,835
+covariance of AX plus BY CZ plus DW. This should be large. So you have AC times covariance of XZ.
+
+550
+02:18:01,835 --> 02:18:30,835
+It's like you are doing this multiplication thing. AD times covariance of XW R2 BC times covariance of YZ plus
+
+551
+02:18:31,835 --> 02:18:56,715
+So, it's a large equation, but if you think about it, it's like you are multiplying this and this, and then you are multiplying this and this.
+
+552
+02:18:56,715 --> 02:19:14,215
+So you can kind of, it looks like a multiplication, right? But instead of directly multiplying, you are doing this covariance X, Z thing. So we have that.
+
+553
+02:19:26,451 --> 02:19:27,451
+So, covariance, so this is another one. This is actually specific input. So this is a special case. Of the above. So covariance, ax plus b, cy plus d. So that's ac times
+
+554
+02:19:56,451 --> 02:20:00,051
+covariance x y
+
+555
+02:20:08,884 --> 02:20:33,884
+And so another one, correlation of ax plus b, cy plus d is equal to correlation of x and y. So when you scale with a and c, correlation doesn't change.
+
+556
+02:20:33,884 --> 02:20:44,284
+And finally, if x and y are independent
+
+557
+02:20:48,819 --> 02:21:09,219
+We have covariance X and Y equal to zero and variance. Variance X plus Y equal to variance of X plus variance of Y.
+
+558
+02:21:09,219 --> 02:21:18,019
+So let's finish here this for this course for today's course. Let's finish here.
+
+559
+02:21:18,019 --> 02:21:22,019
+We will do an example next week
+
+560
+02:21:30,899 --> 02:21:41,899
+and numerical example. And I will, as I said, I will share these notes with you.
+
+561
+02:21:54,899 --> 02:22:19,459
+Okay. Let's go into quiz mode. Do you have five minutes? Do you have a need for five minutes if you have a need? So we will start at 3.30.
+
+562
+02:22:20,404 --> 02:22:40,404
+Hocam geçen seneki benim problem hali devam etti ama ben yine de Dropbox'u yükledim yalnız tekrardan kaldırdım çünkü herhalde yüklerken büyük ihtimalle ki sorudan arkadaşlar dedi abi yüklemeye gerek yok dediler ama maalesef başta yüklemiş olayım. Ben şimdi size iki dakika göstereyim. Okey lütfen.
+
+563
+02:22:43,404 --> 02:22:48,404
+Quiz'in linkini gönderiyorum yani yükleme linkini.
+
+564
+02:22:54,195 --> 02:23:16,796
+This is the link for uploading the quiz. Click on that link. O linke tıklayınız. Şu sayfanın gelmesi lazım. Bir deneyin bakın geldi mi bu sayfa. Web sayfasından bahsediyoruz.
+
+565
+02:23:20,819 --> 02:23:22,259
+Bu kadar kolay mıydı bu ya?
+
+566
+02:23:22,859 --> 02:23:23,999
+Gördünüz mü arkadaşlar?
+
+567
+02:23:25,339 --> 02:23:28,819
+O sayfanın el altında Add Files yazıyordu.
+
+568
+02:23:29,479 --> 02:23:31,979
+Buraya tıkladığınızda seçenekler var.
+
+569
+02:23:32,120 --> 02:23:37,879
+Mesela Files from Computer dediğiniz zaman bilgisayarınızdan bir dosya seçebiliyorsunuz.
+
+570
+02:23:37,879 --> 02:23:39,699
+Mesela ben bir resim seçeceğim şimdi.
+
+571
+02:23:41,500 --> 02:23:42,139
+Aç dedim.
+
+572
+02:23:43,139 --> 02:23:44,359
+Buraya koydu liste olarak.
+
+573
+02:23:44,519 --> 02:23:46,039
+Şimdi Upload'a basmam lazım.
+
+574
+02:23:46,419 --> 02:23:47,240
+Upload dedim.
+
+575
+02:23:47,240 --> 02:24:05,139
+Yükledim diyor. Bu şimdi benim Dropbox'ıma düşecek. Yani sistem bu şekilde. Hepsi bu. Yani yapmanız gereken bu. Tamam.
+
+576
+02:24:07,840 --> 02:24:14,139
+Upload more files dediğinizde işte tekrar tekrar tekrar bir şeyler yükleyebiliyorsunuz.
+
+577
+02:24:14,139 --> 02:24:20,540
+Now, take a A4 card to answer your question
+
+578
+02:24:20,540 --> 02:24:29,139
+A4 card to answer your question
+
+579
+02:24:29,139 --> 02:24:34,900
+Then you can PDF to answer your question
+
+580
+02:24:34,900 --> 02:24:36,500
+I have Android to use
+
+581
+02:24:36,500 --> 02:24:38,939
+Android to CamScanner is a program
+
+582
+02:24:38,939 --> 02:24:41,939
+I have a phone with a camera
+
+583
+02:24:41,939 --> 02:24:59,559
+Evet, yani A4 şu anda tabii yoksa beyaz kağıt artık tamam, kareli kağıda da yazabilirsiniz. Yani iki dakika içinde şimdi A4 kağıt yok diye sıkıntı yapmayacağım ben.
+
+584
+02:25:02,963 --> 02:25:04,263
+Uh...
+
+585
+02:25:10,579 --> 02:25:12,579
+What do you think?
+
+586
+02:25:12,579 --> 02:25:16,579
+PDF's are the same way.
+
+587
+02:25:16,579 --> 02:25:20,579
+Number, Q1.
+
+588
+02:25:20,579 --> 02:25:24,579
+It's a single page.
+
+589
+02:25:24,579 --> 02:25:26,579
+And what do you think?
+
+590
+02:25:26,579 --> 02:25:30,579
+You can add files.
+
+591
+02:25:30,579 --> 02:25:36,579
+I think you can use Dropbox to send you a guarantee.
+
+592
+02:25:36,579 --> 02:25:42,579
+You can send us a email from Dropbox to send you a email.
+
+593
+02:25:42,579 --> 02:25:55,579
+And then you can send us a email from Dropbox to send you a email from Dropbox.
+
+594
+02:25:55,579 --> 02:25:57,780
+Folders from computer var.
+
+595
+02:25:57,780 --> 02:25:59,780
+O tüm bir dizini yüklüyor.
+
+596
+02:25:59,780 --> 02:26:01,519
+Onunla karıştırmayın.
+
+597
+02:26:01,519 --> 02:26:03,579
+Files from computer diyeceksiniz.
+
+598
+02:26:03,579 --> 02:26:06,620
+Tegbi dosya yüklyeceksiniz.
+
+599
+02:26:06,620 --> 02:26:10,579
+So let me repeat this in English.
+
+600
+02:26:10,579 --> 02:26:17,480
+Please click to the link I passed it into the chat window.
+
+601
+02:26:17,480 --> 02:26:19,279
+I wrote it.
+
+602
+02:26:19,279 --> 02:26:24,520
+I commented that it is the link for uploading the quiz.
+
+603
+02:26:24,519 --> 02:26:29,619
+And in a minute, I will paste the PDF for questions.
+
+604
+02:26:29,619 --> 02:26:35,239
+Write your answers to a single A4 sheet.
+
+605
+02:26:35,239 --> 02:26:41,759
+And then convert that sheet to PDF.
+
+606
+02:26:41,759 --> 02:26:45,279
+You may use your cellular phone or if you have a scanner,
+
+607
+02:26:45,279 --> 02:26:46,779
+use it.
+
+608
+02:26:46,779 --> 02:26:48,759
+Convert to the PDF.
+
+609
+02:26:48,760 --> 02:26:58,520
+And then using this this window here, this Dropbox file request page.
+
+610
+02:26:58,520 --> 02:27:08,039
+Click to add files, go files from computers, select the PDF file you will create.
+
+611
+02:27:08,039 --> 02:27:10,160
+Push open.
+
+612
+02:27:10,160 --> 02:27:11,880
+And then.
+
+613
+02:27:11,880 --> 02:27:14,199
+Push upload.
+
+614
+02:27:14,199 --> 02:27:18,719
+And if it uploaded, you will see this screen.
+
+615
+02:27:18,759 --> 02:27:40,899
+Be careful, be quick. This may take you some time. So leave like 10 minutes for this. Okay. At least 10 minutes for this because the Dropbox will be shutting down. It will be closed automatically at 4 o'clock.
+
+616
+02:27:40,899 --> 02:27:46,899
+Dropbox linki saat 4.00'da otomatik olarak kapanacak arkadaşlar.
+
+617
+02:27:47,639 --> 02:27:50,679
+Bir de bilgisayarlar arasında zaman farkı da olabilir.
+
+618
+02:27:51,419 --> 02:27:56,079
+Siz en az bir 5 dakika öncesinden bunu yüklemeyi kafanıza koyun.
+
+619
+02:27:56,219 --> 02:27:59,079
+Yani 4.00'da 5.00 kalabını yükleyin.
+
+620
+02:28:00,279 --> 02:28:01,739
+Zaten 4.00'da yükletmiyor.
+
+621
+02:28:01,919 --> 02:28:03,659
+3.59'da yükletiyor en son.
+
+622
+02:28:04,919 --> 02:28:08,459
+Biraz sizinki geride olabilir, ileride olabilir, bir şeyler olabilir.
+
+623
+02:28:08,459 --> 02:28:13,459
+I can say 10 seconds before I put it on the screen.
+
+624
+02:28:13,459 --> 02:28:17,459
+But I would like to say 5 seconds before I put it on the screen.
+
+625
+02:28:17,459 --> 02:28:21,459
+It's about 3.30.
+
+626
+02:28:21,459 --> 02:28:29,459
+I'm looking for the quiz.
+
+627
+02:28:29,459 --> 02:28:33,459
+I'm looking for the PDF.
+
+628
+02:28:33,459 --> 02:29:03,439
+Thank you.
+
+629
+02:28:39,827 --> 02:28:41,827
+I wish you luck.
+
+630
+02:30:16,084 --> 02:30:24,003
+C'mon, dosyayı başlığına atabilir misiniz? Benim bilgisayarım biraz kasıyor da zoom'dan attı beni.
+
+631
+02:30:24,464 --> 02:30:33,764
+Şöyle bir şeyler söyleyeyim. Dosyanın sonuna.pdf koymazsanız açmayabiliyor. Ben öyle yaşamıştım. Sonuna.pdf koyunca pdf olarak algıladır bilgisayarım.
+
+632
+02:30:35,123 --> 02:30:36,383
+Tamamdır hocam. Teşekkürler.
+
+633
+02:30:37,943 --> 02:30:38,823
+Tekrar attım ben.
+
+634
+02:30:42,739 --> 02:30:44,739
+Okay, thank you.
+
+635
+02:30:44,739 --> 02:30:46,739
+Thank you.
+
+636
+02:30:46,739 --> 02:30:48,739
+How is C?
+
+637
+02:30:48,739 --> 02:30:52,739
+A1, B1, A2, B1, A2.
+
+638
+02:30:52,739 --> 02:30:54,739
+Ha, there is a 2, B1, A2.
+
+639
+02:30:54,739 --> 02:30:58,739
+I think there is a 2, B1.
+
+640
+02:31:03,987 --> 02:31:28,567
+O zaman onlardan bir tanesini yapmayın. Yani onu ikişik olarak değerlendiririm. Birinci soru da C şıkkında A1 B1'i iki kere sormuşuz. A2 given B1'i. Sadece bir tanesini yapın. C şıkkında iki alt soru var gibi düşünün.
+
+641
+02:31:32,180 --> 02:31:39,680
+Where we are working? Chat windowing you can see? What is it? What is it?
+
+642
+02:31:42,548 --> 02:32:01,187
+chat ekranını aç, chat ekranını. Telefonda bağlanıyorsun. Yani telefondaki Zoom'u bilemiyorum şimdi. Bizi söylemiştik Zoom'un chat window'una yapıştıracağız diye geçen hafta. Kusura bakma.
+
+643
+02:32:05,652 --> 02:32:14,851
+My computer is very high, but there is something else that can be done with extra time?
+
+644
+02:32:14,851 --> 02:32:18,851
+No, this is something that is a good thing.
+
+645
+02:32:18,851 --> 02:32:34,851
+I'm not going to watch it.
+
+646
+02:32:36,371 --> 02:32:53,931
+C-Shıkkı'nın da iki tane P-R-A-2-Y-U-N-E-2 var. Bir tane yapsanız yeterli diyorum.
+
+647
+02:34:00,691 --> 02:34:05,691
+Cine Bilgisayara geçtim de tekrar gönderebilir misiniz?
+
+648
+02:34:05,691 --> 02:34:06,691
+Tabii.
+
+649
+02:34:22,835 --> 02:34:24,835
+Thank you
+
+650
+02:38:06,388 --> 02:38:08,388
+Aşam bir şey sorabilir miyim?
+
+651
+02:38:12,084 --> 02:38:12,923
+Buyurun soru.
+
+652
+02:38:13,643 --> 02:38:20,084
+Hocam burada A ve B'den bahsedilmiş de bunlar iki farklı olgu değil mi? Yani iki farklı bağımsız olay.
+
+653
+02:38:22,084 --> 02:38:23,343
+Tamam kastedilmiş.
+
+654
+02:38:35,156 --> 02:38:38,156
+Now we have to ask questions.
+
+655
+02:38:41,156 --> 02:38:44,156
+Experiment A, experiment B, experiment B.
+
+656
+02:38:46,156 --> 02:38:54,156
+Two experiment together, two experiment together, two experiment together, one another experiment together.
+
+657
+02:38:54,156 --> 02:38:56,156
+Okay, okay, okay.
+
+658
+02:38:56,156 --> 02:39:00,156
+I have a question
+
+659
+02:39:00,156 --> 02:39:02,156
+C and D
+
+660
+02:39:02,156 --> 02:39:04,156
+what do you think?
+
+661
+02:39:04,156 --> 02:39:08,156
+C
+
+662
+02:39:08,156 --> 02:39:26,156
+A
+
+663
+02:39:41,043 --> 02:39:43,943
+Arkadaşlar konuşmayalım ses diyorum ben ya
+
+664
+02:39:52,691 --> 02:39:54,691
+Tarık, talk about Tarık.
+
+665
+02:40:00,628 --> 02:40:01,967
+Tarık Mayim
+
+666
+02:40:28,819 --> 02:40:30,819
+How do you do this?
+
+667
+02:40:30,819 --> 02:40:32,819
+What is it?
+
+668
+02:40:32,819 --> 02:40:34,819
+How do you do this?
+
+669
+02:40:43,540 --> 02:41:13,519
+There's a sound.
+
+670
+02:40:57,907 --> 02:41:00,407
+Mikrofon açık olan bir kişi var hocam zaten galiba.
+
+671
+02:41:00,847 --> 02:41:01,087
+Evet.
+
+672
+02:41:08,435 --> 02:41:10,835
+Aklımı kaçıracağım, nasıl olmuyor abi bu?
+
+673
+02:45:38,899 --> 02:45:49,139
+C-shook'ında bir tanesini yapmanız yeterli arkadaşlar. C-shook'ında iki alt soru var gibi değerlendireceğim.
+
+674
+02:45:51,820 --> 02:45:59,119
+Yani probability of A1 given B1 ve probability of A2 given B1'i yapmanız yeterli.
+
+675
+02:46:01,939 --> 02:46:04,179
+Hocam C-shook'ı için konuştunuz değil mi?
+
+676
+02:46:04,719 --> 02:46:06,219
+Evet C-shook'ı.
+
+677
+02:46:07,339 --> 02:46:08,719
+Tamam teşekkürler.
+
+678
+02:46:13,780 --> 02:46:19,639
+D şıkkında en sonunda aynısı. A2 given B1.
+
+679
+02:46:20,439 --> 02:46:26,219
+Yok, şıkkında farklı. Ha yani C şıkkıyla aynısı diyorsunuz.
+
+680
+02:46:26,639 --> 02:46:31,399
+Evet. Yani üç tane soruldu. Yani bir tane yapmamız gerekiyor değil mi?
+
+681
+02:46:31,399 --> 02:46:36,979
+Tamam. Onu bir kere ne yapalım? D şıkkında yazın.
+
+682
+02:46:36,979 --> 02:46:41,299
+C şıkkında yazacaksınız zaten
+
+683
+02:46:41,299 --> 02:46:43,619
+D şıkkında yazmayın
+
+684
+02:46:43,619 --> 02:46:45,179
+Tamam hocam
+
+685
+02:46:56,468 --> 02:46:57,468
+I'm a D-I-K-K-I-N-A-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I-N-A-Y-S-I
+
+686
+02:52:00,755 --> 02:52:07,475
+Tekrar yollayabilirsiniz. Version 2 yazın. V2 yazın. Hangisi olduğunu anlayayım.
+
+687
+02:52:19,636 --> 02:52:22,915
+Tekrar yollarsanız versiyonlayın. V1, V2 gibi.
+
+688
+02:52:43,123 --> 02:53:00,623
+Son 5 dakika kaldı. Bence hala yazıyorsanız bırakın upload edin. Çünkü 5 dakikadan önce yetiştirirsiniz bütün bu fotoğrafını çek, yükle, şudur budur. Süre uzatmayacağım. Otomatikman 4'te kapanacak ona göre.
+
+689
+02:53:26,675 --> 02:53:31,675
+Şu andan itibaren yazmayın arkadaşlar. Hemen yükleyin. 4 dakikanız kaldı.
+
+690
+02:53:36,435 --> 02:53:37,435
+You can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that you can say that
+
+691
+02:54:06,435 --> 02:54:34,435
+I can't do that.
+
+692
+02:54:34,435 --> 02:54:37,435
+So this is your responsibility to make your own responsibility.
+
+693
+02:54:41,747 --> 02:54:56,088
+Hocam o zaman numarasız atsam dosya ismini yani numara koymadan atsam mail olarak numarayı atsam dosya ismiyle size. Çünkü dosyanın adını gerçekten değiştiremiyor. Yani tek derdin adını değiştirmekse at onu. Tamam öyle deneyeyim ben o zaman.
+
+694
+02:55:10,227 --> 02:55:40,207
+Thank you
+
+695
+02:55:46,772 --> 02:55:50,851
+Bicam bir ara mikrofonum açık kalmış kusura bakmayın. Verdiğim rahatsızlığından dolayı.
+
+696
+02:55:55,924 --> 02:55:57,924
+not only
+
+697
+02:56:17,043 --> 02:56:21,703
+Arkadaşlar bir dakika içinde süre doluyor ona göre. Hemen upload edin hemen.
+
+698
+02:57:21,012 --> 02:57:27,012
+I'm going to go to the next one.
+
+699
+02:57:27,012 --> 02:57:33,012
+I don't know if I'm going to go to the next one.
+
+700
+02:57:33,012 --> 02:57:37,012
+I'm going to go to the next one.
+
+701
+02:57:43,572 --> 02:58:13,551
+What's the difference?
+
+702
+02:58:13,572 --> 02:58:43,551
+Thank you, guys.
+
+703
+02:58:23,156 --> 02:58:28,156
+Bilgisayarında sorun yaşayan Tarık mıydı?
+
+704
+02:58:31,924 --> 02:58:33,123
+Yok hocam ben de değilim.
+
+705
+02:58:33,123 --> 02:58:34,124
+Yok hocam ben de attım.
+
+706
+02:58:35,323 --> 02:58:38,723
+Ben attım dosyayı da numara ismi koyamadım yani. Olmadı.
+
+707
+02:58:38,723 --> 02:58:39,723
+Mithat mıydı o?
+
+708
+02:58:41,924 --> 02:58:43,724
+Evet. Mithat Koray.
+
+709
+02:58:44,123 --> 02:58:47,523
+Dosya içinde zaten ismi, numaram falan yazıyor.
+
+710
+02:58:47,924 --> 02:58:48,723
+Hocam.
+
+711
+02:58:50,924 --> 02:58:51,924
+Gelmiş mi?
+
+712
+02:58:54,723 --> 02:58:56,043
+Mithat...
+
+713
+02:59:03,540 --> 02:59:05,540
+and the data.
+
+714
+02:59:05,540 --> 02:59:11,540
+I'm not going to read it.
+
+715
+02:59:13,620 --> 02:59:18,620
+Okay, you have a very good one. I'm a big fan of my book. I'm a big fan of my book.
+
+716
+02:59:18,620 --> 02:59:21,620
+I'm a big fan of my book.
+
+717
+02:59:21,620 --> 02:59:23,620
+Why?
+
+718
+02:59:23,620 --> 02:59:38,620
+I'm a big fan of my book.
+
+719
+02:59:38,620 --> 02:59:40,620
+Do you agree?
+
+720
+02:59:40,620 --> 02:59:42,620
+Yes.
+
+721
+02:59:42,620 --> 02:59:46,620
+Is it right?
+
+722
+02:59:48,819 --> 02:59:49,859
+What do you wish?
+
+723
+02:59:53,236 --> 03:00:19,736
+Peki, size geçmiş olsun diyoruz. Fatih, ya kardeşim, sen laftan anlamıyorsunuz. Yani diyoruz ya, 5 dakika evvel yükleyin diye. Neyse, geçmiş olsun hepinize. Haftaya görüşürüz arkadaşlar. İyi akşamlar hocam, sağ olun. İyi akşamlar. İyi akşamlar hocam. Bye bye.
+
+724
+03:00:19,736 --> 03:00:22,295
+Bye bye. İyi akşamlar hocam.
+
+725
+03:00:23,236 --> 03:00:29,236
+Why did you do this?
+
+726
+03:00:29,236 --> 03:00:31,236
+It was done, it was done.
+
+727
+03:00:31,236 --> 03:00:37,236
+I'm not going to stop it now.
+
+728
+03:00:37,236 --> 03:00:39,236
+this
+
+729
+03:00:44,468 --> 03:00:46,127
+I'm not sure what's going on.
+
+730
+03:00:56,020 --> 03:01:01,920
+Bubba, Bubba, trying to check. Bubba, trying to check.

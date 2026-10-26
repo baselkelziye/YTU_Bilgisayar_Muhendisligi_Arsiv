@@ -1,0 +1,3623 @@
+1
+00:02:13,620 --> 00:02:17,620
+Merhabalar sesim geliyor mi arkadaşlar
+
+2
+00:02:27,924 --> 00:02:46,803
+Okay, so today we will continue discrete random variables. In the last lecture, we have started to discrete random variables. And
+
+3
+00:02:53,651 --> 00:02:57,651
+So discrete random, discrete random variable
+
+4
+00:02:57,651 --> 00:03:08,651
+Is a function that takes an outcome of an experiment and gives us a number. It's important that this be a number.
+
+5
+00:03:08,651 --> 00:03:10,651
+And
+
+6
+00:03:10,651 --> 00:03:12,651
+Now,
+
+7
+00:03:12,651 --> 00:03:18,651
+An example is number of heads if you are tossing
+
+8
+00:03:18,651 --> 00:03:21,651
+two fair coins.
+
+9
+00:03:21,651 --> 00:03:33,611
+points. And for these discrete random variables, we discussed PMF and CDF, meaning probability mass function.
+
+10
+00:03:33,611 --> 00:03:36,951
+Hocam, sanırım sizin yazdıklarınız bize gelmiyor şu an.
+
+11
+00:03:37,352 --> 00:03:37,992
+Yeah, pardon.
+
+12
+00:04:12,276 --> 00:04:23,276
+So we discussed probability mass functions and cumulative distribution functions of these random variables.
+
+13
+00:04:23,276 --> 00:04:35,276
+And probability mass function gives the probability of a random variable taking a value.
+
+14
+00:04:35,276 --> 00:04:49,796
+and cumulative distribution function or cumulative distribution gives probability of random variable taking value less than or equal to of this number.
+
+15
+00:04:49,796 --> 00:04:51,835
+And we said that
+
+16
+00:04:54,899 --> 00:05:04,219
+CDF and PMF are two different parts of the same apple.
+
+17
+00:05:04,219 --> 00:05:14,059
+So if you know if you know PMF, you can obtain cumulative distribution function from that.
+
+18
+00:05:14,059 --> 00:05:22,939
+And if you know cumulative distribution function, you can obtain PMF from that.
+
+19
+00:05:25,524 --> 00:05:40,283
+We have looked at their graphs. So PMF graphs look like something like this and CDF graphs look like this.
+
+20
+00:05:46,771 --> 00:06:04,771
+And then we discussed random vectors. And in a random vector, you have more than one random variables, more than one random variable. So here, X is a random variable. Y is another random variable.
+
+21
+00:06:06,483 --> 00:06:15,483
+And since we have more than one random variable, we can talk about their joint distribution.
+
+22
+00:06:17,779 --> 00:06:47,759
+and the joint probability mass function is given as probability of X having value X and and so this is an and. Okay, random value Y having value Y. And we noted that some of all these probabilities always have a
+
+23
+00:06:47,759 --> 00:06:58,759
+set to one. Now, if you have joint probabilities. We can obtain marginal probabilities.
+
+24
+00:07:02,036 --> 00:07:31,036
+For that we do a summation over all possible values of the other random variables. So if you want to find marginal probability distribution of X, we sum over Y's. Similarly, if you want to find the marginal marginal distribution of Y, we sum over X's.
+
+25
+00:07:31,036 --> 00:07:32,036
+Okay.
+
+26
+00:07:36,660 --> 00:07:37,660
+Now. We talked about independence of these random variables. And. Run the value. Run them the random variable X and run the variable Y are independent. If.
+
+27
+00:08:04,564 --> 00:08:07,564
+for all x, y values,
+
+28
+00:08:08,143 --> 00:08:12,984
+probability of x, y is equal to probability of x times
+
+29
+00:08:12,984 --> 00:08:14,043
+probability of y.
+
+30
+00:08:14,423 --> 00:08:18,383
+Notice that this should be true for all values.
+
+31
+00:08:18,383 --> 00:08:22,303
+So let us write here,
+
+32
+00:08:24,584 --> 00:08:26,824
+x and y are independent if
+
+33
+00:08:26,824 --> 00:08:31,004
+if
+
+34
+00:08:31,004 --> 00:08:34,924
+probability of x y
+
+35
+00:08:34,924 --> 00:08:36,424
+equals to probability of x and
+
+36
+00:08:36,424 --> 00:08:38,303
+times probability of y
+
+37
+00:08:38,303 --> 00:08:40,824
+for all
+
+38
+00:08:40,824 --> 00:08:42,464
+x
+
+39
+00:08:42,464 --> 00:08:44,504
+y values
+
+40
+00:08:44,504 --> 00:08:48,763
+so we have a four here
+
+41
+00:08:48,763 --> 00:08:50,723
+sorry we have an all
+
+42
+00:08:50,723 --> 00:08:51,163
+here
+
+43
+00:09:02,100 --> 00:09:11,060
+and we learned then we learned about expectation.
+
+44
+00:09:12,820 --> 00:09:41,820
+So expected value or expectation of a random variable is defined by this equation. So for all possible values of the random variable, you multiply that value with its probability and some. Okay. That gives you the expected value. You can think of this as the average value somewhat.
+
+45
+00:09:42,820 --> 00:10:10,820
+So we had an example. Now, instead of a single random variable, we can talk about expectation of a function. So instead of e to the x, we can talk about e to the gx. gx is a function here.
+
+46
+00:10:12,820 --> 00:10:22,820
+and the equation is similar instead of X here we are writing G of X and then probability of X.
+
+47
+00:10:33,844 --> 00:11:02,163
+Now we have listed some properties of expectations. So we said that expected value of a constant is itself. If you have some constant times x, you can take the constant out of expectation. If you have a summation, you can take expectations of each term, then sum them.
+
+48
+00:11:02,163 --> 00:11:23,163
+and if x and y are independent, you can do this multiplication, you can say expectation of x times y is equal to expectation of x times expectation of y, but you have an if here, if x and y are independent.
+
+49
+00:11:28,820 --> 00:11:58,799
+So we those when you apply those properties to something like this. You get this. Now, after expectation, we have seen variance and standard deviation. Variance is given by this equation. So variance is written by the
+
+50
+00:11:58,799 --> 00:12:08,799
+by this equation or by this one.
+
+51
+00:12:12,148 --> 00:12:27,148
+You can use any of these equations and you can obtain the second form from this first form. In fact, I said, prove at, at home or later.
+
+52
+00:12:27,148 --> 00:12:41,148
+So what is variance variance is expected value of the difference from the mean. So if you calculate mean like this, if you take the difference from mean
+
+53
+00:12:41,148 --> 00:12:51,148
+mean and take the square so that negatives will be positives and you take its expectation.
+
+54
+00:12:51,947 --> 00:12:58,148
+Okay. How do you take expectation function times probability and you sum them.
+
+55
+00:13:00,148 --> 00:13:05,148
+You take expectation of the difference from the center. That's variance.
+
+56
+00:13:10,707 --> 00:13:11,707
+and standard deviation is just the square root of variance. After you, after you get variance, you can take the operation. Now, covariance and correlation are similar, sorry, similar to each other. Covariance is you take the expected value of
+
+57
+00:13:40,707 --> 00:13:45,707
+is variable from the, from the mean.
+
+58
+00:13:46,908 --> 00:13:52,908
+So X is difference from the mean times Y is difference from mean.
+
+59
+00:13:53,627 --> 00:13:56,548
+And then you take expected value of that thing.
+
+60
+00:13:57,468 --> 00:14:04,468
+So if you think about this, it's kind of, if X is going above the mean,
+
+61
+00:14:05,827 --> 00:14:08,068
+is Y going above the mean too?
+
+62
+00:14:08,068 --> 00:14:11,068
+You're kind of answering that question.
+
+63
+00:14:14,307 --> 00:14:33,148
+And again, you have another equation for this. You can use expected value of x times y minus mu x times mu y. And again, you can obtain the second form from the first form. You can, you should do that later.
+
+64
+00:14:40,211 --> 00:15:09,972
+We discussed what is covariance and what is. Zero covariance, positive covariance, negative covariance. Positive covariance means when one variable goes up, sorry, when one variable goes up, the other goes up to. Negative variance means one, when one variable goes up. The other variable goes.
+
+65
+00:15:10,211 --> 00:15:26,591
+down. And zero covariance means when one variable goes up, the other variable doesn't do anything. It doesn't go up or down. It kind of fluctuates where it is.
+
+66
+00:15:34,803 --> 00:15:59,803
+We have also seen correlation. Correlation is like covariance, but the values are in the range minus one to one. And how do you do that? You do that by dividing covariance to these standard deviations. You are normalizing the covariance value with standard deviations.
+
+67
+00:15:59,803 --> 00:16:27,803
+and we listed some properties of the covariance, in particular, variance of constant, variance of a constant zero, it doesn't change. If you have a constant, it takes, it gets out of variance expression by its square.
+
+68
+00:16:29,803 --> 00:16:58,803
+and you have this kind of thing. So if you have ax plus by plus C, that's a square variance x, b square variance y, 2ab covariance x and y. We have another one. Again, this is a property. These things actually you can prove.
+
+69
+00:16:58,803 --> 00:17:07,443
+In fact, you should prove at home. It's not that hard. So I am just skipping the proofs.
+
+70
+00:17:11,283 --> 00:17:26,804
+So a special case is if you have a covariance of ax plus B and C, Y plus D, you can take a look at this, this as AC times covariance X and Y.
+
+71
+00:17:29,107 --> 00:17:33,607
+And in the case of correlation.
+
+72
+00:17:35,220 --> 00:18:02,220
+The fact that you edit a constant or scaled with a constant does not change anything. Correlation of X and Y is same as correlation of X plus B and C Y plus D. So correlation gets rid of these details.
+
+73
+00:18:02,867 --> 00:18:32,847
+And finally, if X and Y are independent, covariance of X and Y are zero. So again, you have an if here. And instead of variance of X plus Y, you can write variance of X plus variance of Y. Again, you have this if here. So if X and Y are independent.
+
+74
+00:18:32,867 --> 00:19:02,847
+Thank you very much.
+
+75
+00:18:47,092 --> 00:18:55,831
+Now, for this lecture, I will not give any notes to you, so you should take your notes.
+
+76
+00:18:55,831 --> 00:19:02,731
+Sinan, şeyin açılmış, Sinan Kızanlık.
+
+77
+00:19:05,951 --> 00:19:07,491
+Mikrofonunu kapatır mısın?
+
+78
+00:19:07,491 --> 00:19:10,551
+Sinan Kızanlık.
+
+79
+00:19:13,940 --> 00:19:15,940
+Okay, so.
+
+80
+00:19:20,980 --> 00:19:28,980
+We will look at an example. A numerical example.
+
+81
+00:19:40,531 --> 00:19:49,531
+Let me arrange my screen a little bit. So let's look at this example.
+
+82
+00:19:55,220 --> 00:20:21,220
+So this is an example about joint. This is an example about random vectors. But we will calculate a lot of things. So it's an, it will be a repeat actually. So you have a program.
+
+83
+00:20:20,692 --> 00:20:22,692
+that consists of
+
+84
+00:20:27,412 --> 00:20:31,792
+two modules.
+
+85
+00:20:34,291 --> 00:20:41,291
+and the number of errors in the first module.
+
+86
+00:20:45,875 --> 00:20:46,875
+the number of errors. In the. First. Module. Let's say is variable that that we will call X.
+
+87
+00:21:10,420 --> 00:21:11,420
+and the number of errors in the second module, let us say y, have the joint distribution
+
+88
+00:21:48,915 --> 00:21:51,715
+P zero zero.
+
+89
+00:21:51,715 --> 00:21:56,835
+And P zero one.
+
+90
+00:21:56,835 --> 00:22:00,115
+And P one zero.
+
+91
+00:22:03,124 --> 00:22:04,124
+P is equal to 0.2. P one one. And P one two. And P one three.
+
+92
+00:22:21,940 --> 00:22:32,740
+is 0.1. P zero to. P zero three.
+
+93
+00:22:34,708 --> 00:22:37,827
+P is equal to 0.05.
+
+94
+00:22:39,467 --> 00:22:42,267
+So this is the PMF
+
+95
+00:22:43,668 --> 00:22:46,147
+of joint, joint PMF.
+
+96
+00:22:48,067 --> 00:22:48,827
+Joint
+
+97
+00:22:50,547 --> 00:22:51,548
+distribution.
+
+98
+00:22:55,539 --> 00:23:23,539
+Now, we will find a lot of things about this, these two random variables. First, for example, A, what is the marginal probabilities?
+
+99
+00:23:18,451 --> 00:23:23,451
+be, are these independent
+
+100
+00:23:27,955 --> 00:23:31,795
+see, let's say correlation coefficient.
+
+101
+00:23:43,635 --> 00:23:57,915
+So what what is their correlation. So let's look at those things also maybe let's start let's find variances.
+
+102
+00:23:59,380 --> 00:24:03,079
+variance of x and variance of y.
+
+103
+00:24:05,019 --> 00:24:09,079
+Hocam soruyu çözmeden önce soruyu Türkçe açıklama şansınız var mı bir kere?
+
+104
+00:24:10,220 --> 00:24:19,079
+Evet. Bir şey bu, bir program var diyor. Programda iki modül var diyor. İki dosya diye düşünebilirsiniz.
+
+105
+00:24:20,459 --> 00:24:22,679
+Dosyalardaki hataların sayısı.
+
+106
+00:24:22,679 --> 00:24:48,519
+Bununla ilgili rastgele değişkenler var. X birinci dosyadaki hataların sayısı, Y ikinci dosyadaki hataların sayısı. Bize ama direkt X ve Y verilmemiş. Ne verilmiş? X ve Y'nin birleşik dağılımları verilmiş.
+
+107
+00:24:48,519 --> 00:24:58,600
+So, 1. dosyada hiç hata olmama ve 2. dosyada hiç hata olmama olasılığı 0.2'miş
+
+108
+00:24:58,600 --> 00:25:11,839
+1. dosyada 1. dosyada 1 tane hata olma olasılığı, 2. dosyada 2 tane hata olma olasılığı 0.1'miş gibi
+
+109
+00:25:11,839 --> 00:25:32,899
+tüm böyle şeyler verilmiş. Olasılık durumları verilmiş. Buna ne diyoruz? Birleşik dağılım. Bu birleşik dağılımdan yola çıkarak bir kere diyor ki marjinal olasılıkları bul. Yani x'in olasılıkları ve y'nin olasılıklarını bul. Marjinal bu demek.
+
+110
+00:25:32,899 --> 00:25:34,899
+B.
+
+111
+00:25:34,899 --> 00:25:38,899
+Birleşik dağılım varsa bu tekil dağılımlara marjinal dağılım diyoruz.
+
+112
+00:25:40,899 --> 00:25:42,899
+Birbirinden bağımsız mı x ve y?
+
+113
+00:25:44,899 --> 00:25:46,899
+Bunların belki sırası değiştirilmesi lazım.
+
+114
+00:25:46,899 --> 00:25:48,899
+Mesela sen çok önemli değil.
+
+115
+00:25:50,899 --> 00:25:56,899
+X'in varyansı, y'nin varyansı ve x ve y'nin korelasyon kat sayıları nedir?
+
+116
+00:25:57,899 --> 00:25:59,899
+Teşekkürler hocam.
+
+117
+00:25:59,899 --> 00:26:00,899
+Rica ederim.
+
+118
+00:26:08,723 --> 00:26:29,723
+So let's start before moving on. Creating a joint distribution table might make things a little easier. So let's first do that. So let's say this is solution.
+
+119
+00:26:30,355 --> 00:26:56,355
+And first we will create this. This. Table, what we can do is we can write the possible value. So what are the Rx? So what are the possible values of X? If you look at this, we see that X only takes values zero and one.
+
+120
+00:26:58,195 --> 00:26:59,195
+and what are the range of Y? Well, it takes 0, 1, 0. We have a three here. We have two. So it takes value 0, 1, 2, 3. Okay. These are the ranges of X and Y. Now we can create a table. For example, let's write Rx to the as rows. So let's say,
+
+121
+00:27:28,195 --> 00:27:33,195
+x can take values 0 and 1.
+
+122
+00:27:33,195 --> 00:27:37,195
+So these are the values x can take.
+
+123
+00:27:37,195 --> 00:27:39,195
+And then
+
+124
+00:27:42,771 --> 00:28:00,851
+So, Y can take values 0, 1, 2 and 3. So let us write these are the values for Y. And now here in the cells,
+
+125
+00:28:06,644 --> 00:28:36,623
+Let us write their joint probabilities. So probability of X and Y having values X and Y. Okay. So let's try to write these things. So we have all data here. We'll just write that. So 00 is 0.20. 01 is 0.20.
+
+126
+00:28:36,644 --> 00:29:03,644
+1 0 is 0.20, 1 1 is 0.10, 1 2 is 0.10, 1 3 is 0.10, 0 2 is 0.05,
+
+127
+00:29:03,644 --> 00:29:10,644
+and 0,3, 0.05.
+
+128
+00:29:10,644 --> 00:29:24,644
+So we just wrote, we just wrote the joint distribution, but as a table.
+
+129
+00:29:30,163 --> 00:29:57,043
+Okay. Now, from here, let's start with marginal probabilities. So what does marginal probabilities? What we need to find is for each of these possible values, we want to find their probabilities. So I need to find
+
+130
+00:30:12,980 --> 00:30:13,980
+probability of zero. And this is X, by the way. For X, probability of one for X, probability of again zero, but this time for Y, probability of. One, this time for Y, probability of. Two and probability of three.
+
+131
+00:30:43,284 --> 00:30:44,284
+These two will be. Pia, this, these two will give me PMF of X. These three, these four will give me PMF of Y. So what is PMF of zero? Well, what is the equation? For all possible values of since this is X,
+
+132
+00:31:13,284 --> 00:31:42,284
+So, I will sum over y right so I need to sum over all possible values of y and what are the possible values of y here they are from zero to three and what will I sum I will sum the joint probability of x and y so x here is zero.
+
+133
+00:31:43,284 --> 00:31:51,284
+and I am summing over Y's. OK.
+
+134
+00:31:51,284 --> 00:32:01,284
+So then what is this? If Y is zero, I have I have this value.
+
+135
+00:32:01,284 --> 00:32:06,284
+If Y is one, I have this value. If Y is two, I have this value.
+
+136
+00:32:06,284 --> 00:32:11,284
+If Y is three, I have this value.
+
+137
+00:32:11,284 --> 00:32:30,284
+So I will have 0.20 plus 0.20 plus 0.20 plus 0.05 plus 0.05.
+
+138
+00:32:30,284 --> 00:32:38,284
+And that will give me what? For the 50, 0.50.
+
+139
+00:32:38,284 --> 00:33:07,164
+Now, that's probability of zero. If you want, you can write these to the margins of the table. So you can say like, okay, I will write here probability of, let's say, x having value x. I will write those here. And then you can write 0.50 here.
+
+140
+00:33:08,284 --> 00:33:19,284
+Now, for the other one, again, you have to do the same calculation.
+
+141
+00:33:19,284 --> 00:33:28,284
+So let me write in different colors. Again, from all possible values of Y.
+
+142
+00:33:28,284 --> 00:33:37,284
+If you don't write anything, if you don't write starting and ending, that means for all possible values for everything.
+
+143
+00:33:37,284 --> 00:33:50,284
+So sometimes I will not write it. Probability of one y right so this time x is equal to one.
+
+144
+00:33:50,284 --> 00:34:06,284
+And notice that these are all in this row where x is one right and now if I sum them up, I have 0.20 plus 0.20 less sorry.
+
+145
+00:34:11,251 --> 00:34:23,651
+So 0.20, 0.10, plus 0.10, plus 0.10.
+
+146
+00:34:24,291 --> 00:34:28,371
+Şurada fazla mı yazdım ben? 1, 2, 3, 4, 5 tane şey yazmış.
+
+147
+00:34:31,432 --> 00:34:36,571
+So let's delete one of these.
+
+148
+00:34:40,724 --> 00:35:05,644
+And that should give us again what? 50. So that's 0.50. Now with this, now I have my probability distribution for X. I have my marginal distribution of X. And if you want, you can write it like this.
+
+149
+00:35:05,644 --> 00:35:18,843
+X, probability of X, having value X, this is capital X, 0, 1, 0.50, 0.50.
+
+150
+00:35:20,843 --> 00:35:23,043
+So this is marginal.
+
+151
+00:35:27,284 --> 00:35:52,284
+probability distribution of X. The reason we are saying this is marginal is because there is another variable in the problem. If there were no other random variable, if there was only X, then we would say just probability distribution.
+
+152
+00:35:52,284 --> 00:36:00,284
+Now, you can do the rest similarly.
+
+153
+00:36:06,452 --> 00:36:13,571
+Okay. You can do the rest similarly.
+
+154
+00:36:16,340 --> 00:36:21,340
+So let's say, let's do them.
+
+155
+00:36:32,724 --> 00:36:37,523
+Let's say probability of
+
+156
+00:36:40,692 --> 00:36:41,692
+y having value zero. Now this time we want to calculate marginal distribution marginal probability value for y, a y value. So we will sum over x. For all possible values of x, we will have probability of x and zero. Right. And if you look at it,
+
+157
+00:37:10,692 --> 00:37:17,692
+It's this column, right? We are basically summing over this column.
+
+158
+00:37:17,692 --> 00:37:31,692
+And so that will give you 0.20 plus 0.20. So that's 0.40.
+
+159
+00:37:31,692 --> 00:37:39,692
+And probability of y will be summation over all possible values of x.
+
+160
+00:37:39,692 --> 00:37:44,692
+So we have values of X, probability of X and one.
+
+161
+00:37:44,692 --> 00:37:54,692
+And here we have 0.20 and 0.10, 0.20 plus 0.10. So that's 0.30.
+
+162
+00:37:54,692 --> 00:38:06,692
+Probability of two, y being two, sum over all possible values of X, probability of X, two.
+
+163
+00:38:06,692 --> 00:38:17,692
+So you have 0.05 and 0.10, 0.05 plus 0.10, so you have 0.15.
+
+164
+00:38:25,108 --> 00:38:49,507
+And finally, probability of y having value 3 is summation over all possible values of x, probability of x and 3. And then there you have 0.05 and 0.10. 0.05 plus 0.10.
+
+165
+00:38:49,507 --> 00:38:59,508
+and that is your, so you can, if you want, you can create these distributions horizontally.
+
+166
+00:38:59,508 --> 00:39:08,508
+So, x value and its probabilities, so this should be y.
+
+167
+00:39:08,508 --> 00:39:16,508
+So let's say y value and its probability is,
+
+168
+00:39:19,699 --> 00:39:46,699
+So why you can have values 0, 1, 2, 3 and the probability values are 0.40, 0.30, 0.15 and 0.15. These should add up to one. So let's check 70 and 100 and this should 50 and 50 is 100. So they should add to one as expected.
+
+169
+00:39:46,699 --> 00:39:54,699
+So this is now marginal probability distribution of
+
+170
+00:40:03,923 --> 00:40:31,923
+of y. So now we have marginal distributions of x and y. Now, one question we had was, are these x and y independent or dependent? So question was,
+
+171
+00:40:30,708 --> 00:40:35,708
+R, X and Y independent.
+
+172
+00:40:39,123 --> 00:40:58,163
+and for these two to be independent. What are we required? Well, the rule is all for all possible X and Y.
+
+173
+00:40:59,603 --> 00:41:12,603
+we must have so if x and y are independent
+
+174
+00:41:14,612 --> 00:41:42,851
+we must have probability of x, y equals to probability of x times probability of y for all possible values of x and y. So that's the rule. So we need to check that.
+
+175
+00:41:42,851 --> 00:41:47,851
+So basically we can just go to the table.
+
+176
+00:41:47,851 --> 00:41:50,851
+And see if this is right, we have.
+
+177
+00:41:50,851 --> 00:41:57,851
+Everything in the screen, so, for example, zero and zero.
+
+178
+00:41:57,851 --> 00:41:58,851
+Sorry.
+
+179
+00:41:58,851 --> 00:42:04,851
+Now, probability of zero zero is zero to any.
+
+180
+00:42:04,851 --> 00:42:11,851
+Probability of X equals to zero is zero 50 probability of Y equals to.
+
+181
+00:42:11,851 --> 00:42:37,491
+0 is 040. If you multiply this, I think we get this one. We have, we are okay for this, for the first cell. But notice that for all possible values, the equation, the equality must hold. So you need to check all possible values. So let's check, let's check the next one.
+
+182
+00:42:37,491 --> 00:43:02,491
+Here we have probability of, probability of 0,1, which is 0,20, probability of 0x equals to 0 is 0,50, probability of y equals 1 is 0,30.
+
+183
+00:43:02,491 --> 00:43:11,491
+Now clearly this is this multiplication is 0.15 I think.
+
+184
+00:43:11,491 --> 00:43:31,492
+So 0.15 is not equal to 0.20. So clearly, these two are not independent and to prove the independence, giving a single
+
+185
+00:43:31,491 --> 00:44:01,451
+So, we will prove that they are independent by giving a contradictory, contradictory example. So let me delete this. We found our contradictory example, but we must write the answer nicely, right? So you can do, you can solve your problem, but if you are on an exam or
+
+186
+00:44:01,451 --> 00:44:16,571
+if you are preparing a report, you have to be able to express yourself clearly so that everybody can understand. So let us do that.
+
+187
+00:44:24,916 --> 00:44:27,916
+Let's say assume
+
+188
+00:44:27,916 --> 00:44:33,916
+For contradiction
+
+189
+00:44:35,539 --> 00:44:42,539
+that x and y
+
+190
+00:44:46,420 --> 00:44:48,420
+are independent.
+
+191
+00:44:56,884 --> 00:44:57,884
+But for. But for. X equals to zero and Y equals to one. We have. Probability of zero one not equal to probability of zero. This is for X.
+
+192
+00:45:26,884 --> 00:45:30,884
+times probability of one, this is for y.
+
+193
+00:45:32,884 --> 00:45:34,884
+So here we x and y.
+
+194
+00:45:39,572 --> 00:45:47,572
+So, we have a contradiction.
+
+195
+00:45:49,715 --> 00:46:03,955
+and we conclude. X and Y are not. Independent.
+
+196
+00:46:08,851 --> 00:46:32,851
+Okay, so the way we do this proof is first we assume they are independent. We take x as zero, we take y as one, and then we show that we have a contradiction with this rule. Okay.
+
+197
+00:46:32,851 --> 00:46:44,851
+We have a contradiction with this rule. So we say that because there's a contradiction, we prove that X and Y are independent.
+
+198
+00:46:44,851 --> 00:46:46,851
+Not independent.
+
+199
+00:46:49,235 --> 00:46:54,235
+So this was, I think, see.
+
+200
+00:47:11,795 --> 00:47:13,795
+So this part was a, I think.
+
+201
+00:47:19,219 --> 00:47:26,660
+Marginal probabilities independence. Now I want, let's say this is the and this is C. So
+
+202
+00:47:28,819 --> 00:47:31,140
+first, because we will need to find
+
+203
+00:47:36,884 --> 00:47:45,884
+Let's find some variances and etc. So first let's find variances.
+
+204
+00:47:50,324 --> 00:47:52,324
+So this should be B then
+
+205
+00:47:55,188 --> 00:47:56,188
+B,
+
+206
+00:48:06,195 --> 00:48:17,355
+So we want to find variance of X and variance of Y.
+
+207
+00:48:20,628 --> 00:48:31,628
+Let's do those after we have a break. Let's have a 10 minutes break.
+
+208
+00:48:36,851 --> 00:48:37,691
+Till
+
+209
+00:48:40,651 --> 00:48:42,091
+14 o'clock.
+
+210
+00:48:42,091 --> 00:48:42,931
+Okay.
+
+211
+00:58:49,139 --> 00:59:19,139
+I'm going to get to the screen.
+
+212
+00:59:20,755 --> 00:59:27,255
+yetiştiremezseniz yazmayı beni uyarabilirsiniz. Hocam yetiştiremedim vesaire gibi uyarabilirsiniz.
+
+213
+00:59:31,255 --> 00:59:33,515
+Haftaya sınavımız var.
+
+214
+00:59:36,695 --> 00:59:40,155
+Bugün bu saatte diye hatırlıyorum.
+
+215
+00:59:43,115 --> 00:59:47,615
+Sınav için not aldınız mı soruyu?
+
+216
+00:59:55,731 --> 01:00:00,731
+I will change my question.
+
+217
+01:00:03,827 --> 01:00:09,827
+Yes, we are.
+
+218
+01:00:14,739 --> 01:00:23,899
+We have a midterm
+
+219
+01:00:27,795 --> 01:00:55,476
+And we will prepare a test this time. You should be able to, we will probably hold the test on this online. You will do this here. So you should find, you will find your test here.
+
+220
+01:00:55,476 --> 01:01:17,476
+and we don't know the exact values but somewhere between I think there will be more than 10 questions so more than 10 questions.
+
+221
+01:01:17,476 --> 01:01:31,476
+We didn't prepare it yet, but most probably it will have 20 questions, 20 something. But it will be having, it will have more than 10 questions.
+
+222
+01:01:31,476 --> 01:01:46,476
+And the time will be three minutes or five minutes per question probably. Again, we didn't prepare the questions, so these are all guesses, estimates.
+
+223
+01:01:47,476 --> 01:02:00,476
+Everything we have done from the beginning of the course and today what we will learn today is included.
+
+224
+01:02:15,380 --> 01:02:26,380
+Let's see today's. Everything including today's lecture. Is in maybe in the exam.
+
+225
+01:02:35,284 --> 01:02:44,704
+These are what these are the things I I remember I can tell you do you have any questions about the exam
+
+226
+01:02:45,704 --> 01:02:50,403
+I'm midterm ilgili sorunuz var mı nedir ne değildir falan gibi
+
+227
+01:02:50,403 --> 01:02:57,663
+I'm sorry kağıda yazıp atacak yoksa sadece test üzerinden test üzerinden
+
+228
+01:02:57,663 --> 01:03:00,663
+The test system will be a lot of tests.
+
+229
+01:03:00,663 --> 01:03:03,663
+I will not say anything.
+
+230
+01:03:03,663 --> 01:03:08,663
+The test system will be changed and changed.
+
+231
+01:03:08,663 --> 01:03:11,663
+They are now working on the test.
+
+232
+01:03:11,663 --> 01:03:14,663
+We have a few of them.
+
+233
+01:03:14,663 --> 01:03:17,663
+There were some important features.
+
+234
+01:03:17,663 --> 01:03:22,663
+The most important thing is that I didn't see the answer.
+
+235
+01:03:22,663 --> 01:03:26,663
+So, the system is not to be able to see the system.
+
+236
+01:03:26,663 --> 01:03:30,663
+But the system is not to see the question.
+
+237
+01:03:30,663 --> 01:03:34,663
+The question is not to see the question.
+
+238
+01:03:34,663 --> 01:03:38,663
+But the system is not to see the question.
+
+239
+01:03:38,663 --> 01:03:42,663
+The question is not to see the question.
+
+240
+01:03:42,663 --> 01:03:46,663
+It is not to see the question.
+
+241
+01:03:46,663 --> 01:03:48,663
+This is not to see the question.
+
+242
+01:03:48,663 --> 01:03:50,663
+We will use the system.
+
+243
+01:03:55,188 --> 01:04:08,907
+Şu an için öyle bir şey yok. Dolayısıyla ama siz yine hazırlıklı olun. Böyle bir şey gelebilir. Açmanız istenebilir.
+
+244
+01:04:22,708 --> 01:04:26,708
+Yes, there is no question.
+
+245
+01:04:33,460 --> 01:04:35,460
+Okay, okay.
+
+246
+01:04:46,195 --> 01:04:47,195
+So now in those actions. So let's continue with the with this example. We want to find the variance of X and variance of Y. For that first we need to find the expected values because in the variance. Equation, what what do we have, we have expected value of X.
+
+247
+01:05:16,195 --> 01:05:21,195
+minus mu, mu is the expected value of x.
+
+248
+01:05:22,416 --> 01:05:25,876
+So first we need to find these.
+
+249
+01:05:25,876 --> 01:05:29,216
+So what is the expected value of x?
+
+250
+01:05:29,216 --> 01:05:34,216
+Well, x can take value zero with probability 0.5,
+
+251
+01:05:36,456 --> 01:05:40,556
+plus it can take value one with probability.
+
+252
+01:05:40,556 --> 01:05:42,255
+So what is the first,
+
+253
+01:05:42,255 --> 01:06:10,715
+Sınavınız test değil ama yarın bir gün testi olmayan sınavlara da girebilirsiniz. Bir soruya cevap verirken şunu yapmanız lazım. Aranan şeyi yazın. Sonra denklemini yazın. Sonra sayısal olarak o denklemde hangi sayı, denklemdeki nesneler hangi sayıdır onu gösterin. Sonra da sonucu yazın.
+
+254
+01:06:10,715 --> 01:06:21,295
+So, 1, 2, 3, 4 aşamalı bir cevap sistemi oluşturmanız gerekiyor. Bu cevap sistemini görmediğim zaman puan vermiyorum ben.
+
+255
+01:06:22,755 --> 01:06:26,435
+Quizde de bu nedenle notunuz düşük gelebilir, şaşırmayın.
+
+256
+01:06:29,175 --> 01:06:33,435
+Yani soruya bakıyorum, bir sayılar yazmış, pat sonucu bulmuş.
+
+257
+01:06:33,435 --> 01:06:58,835
+Hatta hiç sayı, ne yapmış kimisi? Denklem yazmamış, tak sonucu yazmış. Kimisi denklem yazmış, sayıları yerine koymadan tak sonucu yazmış. Böyle bu tarz çok şey görüyorum. Bunları kırdım, bunlara puan vermedim. Şu anda bu izleyenizi okuyorum, daha okumadım.
+
+258
+01:06:58,835 --> 01:07:28,815
+So, in this case, what is the equation for expected value?
+
+259
+01:07:28,835 --> 01:07:57,315
+It's for all possible values of x, we multiply x times probability of x. And then now what do these are? For x is equal to 0, we have 0 times what is probability of 0? 0.5 plus we have 1 as x equals to 1. So x is from 0 to 1.
+
+260
+01:07:58,835 --> 01:08:17,056
+and its probability is 0.5. So from here we understand that this simplifies we have 0.5 as expected value for x. Similarly expected value for y.
+
+261
+01:08:17,975 --> 01:08:28,315
+Bazılar da şöyle bir şey yapmış. Denklemi mesela bir şıkta göstermiş. Diğer şıkta artık denklem yazmaya gerek duymamış. Bunlardan da puan kırdım.
+
+262
+01:08:28,315 --> 01:08:34,675
+Bunlara da puan vermedim. Her şık için kullanacağınız denklemi yazıp göstermeniz gerekiyor arkadaşlar.
+
+263
+01:08:36,175 --> 01:08:44,575
+Expected value of y is equal to from y equals to 0 to 3 y times probability of
+
+264
+01:08:48,595 --> 01:09:06,595
+Why? So we have zero times what was that? So zero is zero zero's probability is 0.40 then 0.30. So we have
+
+265
+01:09:09,587 --> 01:09:23,747
+0 times 0.4 40 plus 1 times 0.30 plus 2 times 0.15 plus. Plus, let me say.
+
+266
+01:09:27,636 --> 01:09:35,636
+3 times 0.15. Okay. And, uh,
+
+267
+01:09:43,956 --> 01:09:47,956
+What is the value for this?
+
+268
+01:10:28,500 --> 01:10:34,899
+3 x 0.15, 0.45 2 x 0.15, 0.30
+
+269
+01:10:36,179 --> 01:10:48,180
+Buradan 0.30 geliyor. Bu sadeleşiyor. So we have 5, 10, 1.05.
+
+270
+01:10:48,180 --> 01:11:15,379
+So, we have here 0.1.0, 1.05 as the expected value of y. Now we can find variance of x and y. So variance of x
+
+271
+01:11:18,180 --> 01:11:22,419
+is expected value of X minus mu.
+
+272
+01:11:25,716 --> 01:11:26,716
+mu square right. X minus mu square so. That means for all possible value of X, we have X minus mu square times probability of X. So that means. For zero, so from zero to one here for zero zero minus 0.5.
+
+273
+01:11:55,716 --> 01:12:03,716
+plus one minus 0.5, we have a square.
+
+274
+01:12:03,716 --> 01:12:12,716
+Right. So here we have 0.25, 0.25, we have 0.5, I think.
+
+275
+01:12:17,747 --> 01:12:19,887
+and variance of Y.
+
+276
+01:12:22,931 --> 01:12:44,931
+Let us use the alternative alternative equation. Remember, we have another equation for variance. So it is expected value of Y's square minus Mu Y's square. Okay.
+
+277
+01:12:44,931 --> 01:13:03,931
+So let's do that here mu y square is 1.05 square and expected value y square is for all possible values of y which is from 0 to 3.
+
+278
+01:13:03,931 --> 01:13:08,051
+we have y squared times probability of y.
+
+279
+01:13:08,612 --> 01:13:09,612
+OK.
+
+280
+01:13:09,772 --> 01:13:11,731
+And let's not forget this guy.
+
+281
+01:13:11,972 --> 01:13:14,812
+1.05 square.
+
+282
+01:13:17,211 --> 01:13:18,211
+And.
+
+283
+01:13:22,612 --> 01:13:33,091
+Here we have what? Zero square times 0.40.
+
+284
+01:13:34,387 --> 01:13:35,387
+plus one square 0.30 plus two square 0.15 plus three square 0.15 minus this guy 1.05 square. So here this guy simplifies. From here we have 0.30
+
+285
+01:14:04,387 --> 01:14:23,387
+From here we have 4 times 0.15 which is 0.60. From here we have 9 times 0.15 so that means
+
+286
+01:14:29,844 --> 01:14:57,844
+We have 531, 1.35. And here we have minus, so these are positives, minus, we have the square of 1.05.
+
+287
+01:14:55,539 --> 01:15:12,619
+Let me open a calculator. 1.05 times 1.05. That should be 1.1025.
+
+288
+01:15:16,532 --> 01:15:26,231
+1.1025, so let's set this.
+
+289
+01:15:29,332 --> 01:15:48,172
+So if we do this, we have 5741, 0, 0 point, this guy, and we have 0.9 there.
+
+290
+01:15:48,172 --> 01:16:00,192
+So this should be 5, 5, 7, 4, 0, 1.
+
+291
+01:16:00,872 --> 01:16:05,332
+This should be variance of y.
+
+292
+01:16:07,031 --> 01:16:09,311
+I think I have a mistake here.
+
+293
+01:16:09,311 --> 01:16:23,631
+I am looking at the book and somehow this the book gives 1.1475 so I guess somehow I have a mistake
+
+294
+01:16:23,631 --> 01:16:27,912
+2 olacak değil mi?
+
+295
+01:16:27,911 --> 01:16:53,531
+Okay, so then this should be 1.1475. So this is variance of y. Okay. So we have variance of y. Now the question is correlation coefficient, right? The next question is find the correlation coefficient.
+
+296
+01:17:07,764 --> 01:17:37,003
+So this is D. So what is correlation coefficient for x and y? Now, if you remember for correlation coefficient, we need to first calculate covariance. So what is the covariance of x and y? Well, it was expected value of x minus x minus mu x.
+
+297
+01:17:37,764 --> 01:18:04,164
+times y minus mu y. And we want the expected value for that. Alternatively, or we have expected value of x times y minus mu x times mu y. This is easier to calculate.
+
+298
+01:18:04,163 --> 01:18:17,163
+And this is easier to understand. So the first is kind of the logic, the intuition behind it.
+
+299
+01:18:17,163 --> 01:18:30,163
+The second gives the gives an easier to calculate formula for us. So let's use the second formula.
+
+300
+01:18:30,164 --> 01:18:38,164
+So we need expected value of x and y
+
+301
+01:18:45,716 --> 01:19:14,755
+Now, expected value of X and Y. So we have here two different random variables. So to get the expected value, we will do two summations. We will sum over all possible X's and then sum over all possible Y's. So sum over all possible X's, sum over all possible Y's.
+
+302
+01:19:14,755 --> 01:19:39,615
+And what will I sum? Well, the function that I am taking the expected value, so that is x times y plus the probability. But what probability? Joint probability, right? So because I have both x and y, I will need to calculate the joint probability.
+
+303
+01:19:39,615 --> 01:20:07,735
+So probability, sorry, probability of x, y having values x, y. I need to calculate that. And now these two are easy, minus, let's not forget them. This is 0.5. And this one is we just calculated over there. What was it?
+
+304
+01:20:09,616 --> 01:20:16,616
+1.05
+
+305
+01:20:22,131 --> 01:20:23,851
+And this part is
+
+306
+01:20:27,532 --> 01:20:31,311
+So basically, we will need to go to this.
+
+307
+01:20:34,691 --> 01:20:36,291
+So this is for
+
+308
+01:20:37,351 --> 01:20:40,711
+Basically, you need to go on the whole table, right?
+
+309
+01:20:42,312 --> 01:20:43,691
+That we created here.
+
+310
+01:20:46,191 --> 01:20:48,951
+So here we have zero
+
+311
+01:20:48,951 --> 01:21:02,951
+and zero, zero times zero times zero 20, zero times one times zero 20, zero times two times zero 0.05.
+
+312
+01:21:02,951 --> 01:21:09,951
+Now, notice that we are multiplying with zero here in the first row.
+
+313
+01:21:09,951 --> 01:21:17,951
+So those are all zeros. In the second row, again, we are multiplying by zeros.
+
+314
+01:21:17,951 --> 01:21:32,951
+in the first column sorry so in the first column and in the first row we are multiplying by zeros and all those terms are just zero so nonzero terms here are just these three right.
+
+315
+01:21:37,971 --> 01:21:38,971
+and their probability are all 0.10 nicely for us. So that means this here is a lot of zeros. Then one time one time probability of one one. Plus one time two time probability of one two.
+
+316
+01:22:07,971 --> 01:22:09,971
+two times, one time
+
+317
+01:22:16,564 --> 01:22:18,403
+Let me go there again.
+
+318
+01:22:25,300 --> 01:22:33,300
+1, 2, 3, 1. 1, 1, 1, 2, 1, 3. Okay.
+
+319
+01:22:33,300 --> 01:22:54,300
+So, 1, 1, 1, 2, now I have 1, 3. 1, sorry. 1, 3 times probability of 1, 3. And these are all 0.10.
+
+320
+01:22:58,771 --> 01:23:28,751
+So I have this is just 0.10 plus 0.20 plus 0.30. So I have what? 0.60. So this is the covariance, right? But to get the covariance, correlation coefficient,
+
+321
+01:23:28,771 --> 01:23:32,771
+What was the correlation coefficient?
+
+322
+01:23:32,771 --> 01:23:41,771
+It is covariance of x, y divided by the standard deviations of these guys.
+
+323
+01:23:41,771 --> 01:23:47,771
+Standard deviation of x times standard deviation of y.
+
+324
+01:23:47,771 --> 01:23:53,771
+So we already have variances. So I will just write those here.
+
+325
+01:23:53,771 --> 01:24:03,771
+So I have 0.60 divided by square root of axis variance. What was it?
+
+326
+01:24:07,380 --> 01:24:10,380
+0.5
+
+327
+01:24:14,387 --> 01:24:19,387
+time square root of
+
+328
+01:24:19,387 --> 01:24:28,387
+1.1475
+
+329
+01:24:28,387 --> 01:24:37,387
+Hocam bir şey sorabilir miyim?
+
+330
+01:24:37,387 --> 01:24:39,387
+Buyurun.
+
+331
+01:24:39,387 --> 01:24:44,387
+We had a decision to do it, we didn't have a decision to do it
+
+332
+01:24:44,387 --> 01:24:46,387
+I remember it
+
+333
+01:24:46,387 --> 01:24:49,387
+I forgot
+
+334
+01:24:49,387 --> 01:24:51,387
+So let's not forget those
+
+335
+01:24:51,387 --> 01:24:57,387
+So let's write them here
+
+336
+01:24:57,387 --> 01:25:14,387
+minus 0.5105
+
+337
+01:25:18,612 --> 01:25:19,612
+So what is this value? So we have here 1, 0, 5, 6, 5, 6,
+
+338
+01:25:48,612 --> 01:25:55,612
+one more.
+
+339
+01:25:55,612 --> 01:25:57,612
+0.5
+
+340
+01:25:57,612 --> 01:25:59,612
+5
+
+341
+01:25:59,612 --> 01:26:01,612
+9
+
+342
+01:26:01,612 --> 01:26:05,612
+0.0.95
+
+343
+01:26:05,612 --> 01:26:07,612
+I'm not sure what I'm doing.
+
+344
+01:26:11,091 --> 01:26:14,091
+0.075 galiba.
+
+345
+01:26:14,091 --> 01:26:16,091
+Doğru.
+
+346
+01:26:16,091 --> 01:26:20,091
+Buradan
+
+347
+01:26:21,091 --> 01:26:26,091
+9'dan 2's çıkar ya da evet hızlı yazdığım için. Tamam.
+
+348
+01:26:29,091 --> 01:26:32,091
+0.075
+
+349
+01:26:33,091 --> 01:26:36,091
+Dolayısıyla şurası da
+
+350
+01:26:36,091 --> 01:26:37,091
+...
+
+351
+01:26:47,988 --> 01:26:53,988
+Yes, we will now check the results of the results of the results of the results of the results.
+
+352
+01:27:00,659 --> 01:27:10,659
+Here we can see if the book is written.
+
+353
+01:27:17,171 --> 01:27:23,171
+I think that's a mistake.
+
+354
+01:27:23,171 --> 01:27:25,171
+If you have a mistake,
+
+355
+01:27:25,171 --> 01:27:27,171
+you can see that.
+
+356
+01:27:27,171 --> 01:27:29,171
+There is a mistake.
+
+357
+01:27:29,171 --> 01:27:37,171
+This is a mistake.
+
+358
+01:27:37,171 --> 01:27:39,171
+But this is a mistake.
+
+359
+01:27:39,171 --> 01:27:43,171
+This is a mistake.
+
+360
+01:27:46,131 --> 01:28:16,111
+So from dirt. Is this a large covariance or do we have some covariance here? This seems these two variables are covariance, but there is a small correlation. The correlation is not large, but it's not zero to so we can because maximum correlation can be one, right? This is the maximum correlation and we have minimum correlation can be one.
+
+361
+01:28:16,111 --> 01:28:20,111
+can be, you can say minus one.
+
+362
+01:28:23,347 --> 01:28:51,347
+But minimum really is zero. Yeah, minimum positive correlation is anything greater than zero. So. This looks very close to zero, right? So this value is very close to zero. So that seems like these two are not really, really correlated. The correlation is very weak.
+
+363
+01:29:06,323 --> 01:29:17,704
+So, let me write. There is a calculation.
+
+364
+01:29:19,956 --> 01:29:22,956
+Mistake, somewhere.
+
+365
+01:29:25,956 --> 01:29:26,956
+There.
+
+366
+01:29:32,659 --> 01:29:33,659
+Now,
+
+367
+01:29:38,003 --> 01:29:45,003
+If this part is okay, let's move on with the new subject. Is this part okay?
+
+368
+01:29:45,003 --> 01:29:56,003
+Hocam, çok ufak bir şey daha sorabilir miyim? Yukarıda varyans kısmını yazmıştık ya hani, biraz üstte kaldı ama.
+
+369
+01:29:58,387 --> 01:30:01,747
+variance x'si bulduğumuz yerde.
+
+370
+01:30:05,300 --> 01:30:20,300
+We have a square of x.
+
+371
+01:30:20,300 --> 01:30:22,300
+Yes, we have a square of x.
+
+372
+01:30:22,300 --> 01:30:30,300
+We have a square of x.
+
+373
+01:30:30,300 --> 01:30:37,300
+I need to get the phone.
+
+374
+01:31:41,108 --> 01:32:05,127
+Evet, orada öyle bir hatamız olmuş. Sanırım oradan geliyor. Ama genel şeyi anladınız herhalde. Genel mantığı anladınız. Bu şekilde devam ettiğinizde yapmanız lazım. Şimdi biraz devam etmek istiyorum.
+
+375
+01:32:05,127 --> 01:32:10,927
+So let's start with Chebyshev's inequality.
+
+376
+01:32:31,444 --> 01:32:34,444
+Chebyshev proved that
+
+377
+01:32:36,643 --> 01:32:39,444
+we have this equation, probability of
+
+378
+01:32:43,843 --> 01:32:44,444
+the set
+
+379
+01:32:46,043 --> 01:32:57,444
+or the event that random variable x minus its mean having a value greater than some epsilon
+
+380
+01:32:57,444 --> 01:33:09,784
+is less than or equal to variance divided by Epsilon's square.
+
+381
+01:33:16,435 --> 01:33:17,435
+Now this inequality. So here, let's say this is random. This is any random variable. Chebyshev's inequality is valid for any random variable. Any random variable. Mu here is mean of x. So expected value of x.
+
+382
+01:33:46,435 --> 01:33:52,255
+sigma square here is variance of x.
+
+383
+01:33:56,243 --> 01:33:57,243
+variance of x. Now, based on the problem we have, we assign a value to epsilon. So what problem you have, you need to assign a value to epsilon and then you have this nice inequality. So it's kind of, it bounds the probability of
+
+384
+01:34:26,243 --> 01:34:44,243
+this thing happening. So it kind of puts probability somewhere between some values. You can find the proof in the book, in Baron's book.
+
+385
+01:34:47,891 --> 01:34:49,891
+and
+
+386
+01:35:02,355 --> 01:35:15,635
+You can find proof in Barron's book. Let's look at the example, look at an example to understand how we use this. Let's say
+
+387
+01:35:17,076 --> 01:35:18,535
+Let's say
+
+388
+01:35:27,028 --> 01:35:28,028
+So let's say number of errors in a new software. Has a big expectation to any. So. Suppose. Number of errors. In a new software.
+
+389
+01:35:58,163 --> 01:36:02,443
+has expectation,
+
+390
+01:36:05,587 --> 01:36:06,587
+20 and a standard deviation and a standard deviation of two. So what is the, so we want you to bound the probability
+
+391
+01:36:35,587 --> 01:36:47,587
+of having more than 30 errors.
+
+392
+01:36:51,155 --> 01:37:17,795
+So now we cannot calculate these directly. So we don't know probability of having more than 30 errors. We cannot calculate it directly because we don't know the random variable equation or we don't know the random variable PDF.
+
+393
+01:37:20,083 --> 01:37:24,083
+So,
+
+394
+01:37:26,003 --> 01:37:27,003
+We don't know. Probability mass function of X. So we cannot calculate this directly, but since we know variance and expectation, we can use Chebyshev's inequality to reason about it. So what does Chebyshev's inequality say us?
+
+395
+01:37:56,003 --> 01:38:05,003
+It says that, so here x is number of errors.
+
+396
+01:38:11,699 --> 01:38:15,699
+x is number of errors.
+
+397
+01:38:23,412 --> 01:38:38,412
+So we just need to apply this right but everything is clear except epsilon. So if you write this.
+
+398
+01:38:40,243 --> 01:39:05,243
+Let me delete this. So it's obvious that we will use Chebyshev's inequality. So let me just write probability of x. There is an absolute value here. x minus mu is 20. Greater than epsilon.
+
+399
+01:39:12,500 --> 01:39:14,639
+and accuracy.
+
+400
+01:39:19,988 --> 01:39:43,988
+because it's an event. Is less than or equal to variance is four, right? Epsilon squared. Now, what kind of, what kind of, uh, Epsilon is proper for this question?
+
+401
+01:39:43,988 --> 01:39:49,988
+what can epsilon be what should epsilon be
+
+402
+01:39:53,395 --> 01:40:22,395
+Well, if you think about it, we are talking about what is difference from the mean, right? We are comparing difference from mean and epsilon. So epsilon is actually difference from the mean, right? So the mean is 20.
+
+403
+01:40:23,395 --> 01:40:46,736
+and we are talking about 10 third errors here. So what is the difference from the mean? It's 10. So a nice epsilon here is 10, right? So then let's use 10 here.
+
+404
+01:40:52,916 --> 01:41:03,716
+Epsilon is 30 minus mu, which is 30 minus 20, which is 10.
+
+405
+01:41:06,644 --> 01:41:27,644
+So we will use 10 in this equation. So probability of x minus 20 being larger than 10 is less than or equal to 4 divided by 10 squared.
+
+406
+01:41:27,644 --> 01:41:34,644
+Which means 4 over 100.
+
+407
+01:41:39,572 --> 01:41:49,131
+What does that say us to us? What does that say? Let's try to understand this a little bit.
+
+408
+01:41:53,684 --> 01:41:54,684
+tells us that, let's say this is our mean. So let's say this is 20. And let's say this axis is the values of x. And the probability that the value, so the epsilon
+
+409
+01:42:23,684 --> 01:42:28,123
+plus mu, so mu is 20.
+
+410
+01:42:30,443 --> 01:42:38,343
+Now, if you go this way by epsilon amount, which is 10, we reach to 30.
+
+411
+01:42:39,404 --> 01:42:46,944
+And that was what we want because 30 is in the question.
+
+412
+01:42:46,943 --> 01:42:56,943
+So we chose, we have chosen epsilon for that to get to 30. So this is our epsilon.
+
+413
+01:42:56,943 --> 01:43:08,943
+Now if we go to same amount on the other side, we get to 10 minus 20 minus 10, we get 10.
+
+414
+01:43:13,652 --> 01:43:39,351
+Now, what we say, what we are told is the probability of errors being larger than 30, right? Because we are saying that the absolute value of that difference is greater than 10, right? So, and being less than 10, right?
+
+415
+01:43:39,351 --> 01:43:59,351
+these two areas have the probability less than 0.25 right so this is for over 100 that's 0.25 right
+
+416
+01:44:08,148 --> 01:44:10,148
+How much is this?
+
+417
+01:44:14,612 --> 01:44:18,612
+1,25%
+
+418
+01:44:24,724 --> 01:44:29,724
+Oda 0.04 ediyor, kafa karıştı.
+
+419
+01:44:36,787 --> 01:44:50,427
+So probability of X being in taralı alanın ingilizcesine arkadaşlar shaded mı diyeceğiz?
+
+420
+01:44:55,412 --> 01:45:05,011
+shaded area is less than or equal to 0.05.
+
+421
+01:45:09,211 --> 01:45:18,012
+So that gives us, now what are we looking for?
+
+422
+01:45:18,912 --> 01:45:21,811
+The probability of having more than 30 errors.
+
+423
+01:45:21,811 --> 01:45:24,011
+So it's here, right?
+
+424
+01:45:25,412 --> 01:45:32,412
+Basically the probability of this area is what they ask for us.
+
+425
+01:45:32,412 --> 01:45:42,412
+Now, we know that that probability is n plus the probability of this part is less than 0.04.
+
+426
+01:45:42,412 --> 01:45:48,412
+So probability of only this part is again less than 0.04.
+
+427
+01:45:48,412 --> 01:45:54,412
+We cannot bound it further because we don't know the probability of this part either.
+
+428
+01:45:54,412 --> 01:46:07,412
+either, right? So the best we can say is then probability of X being
+
+429
+01:46:16,083 --> 01:46:17,083
+x being
+
+430
+01:46:17,083 --> 01:46:21,083
+larger than
+
+431
+01:46:21,083 --> 01:46:26,083
+30
+
+432
+01:46:26,083 --> 01:46:35,083
+is less than or equal to 0.004.
+
+433
+01:46:35,083 --> 01:46:36,083
+So
+
+434
+01:46:36,083 --> 01:46:42,083
+the nice thing about Chebyshev is this. It helps us
+
+435
+01:46:42,083 --> 01:46:49,083
+bound probabilities and it is valid for any kind of random variable.
+
+436
+01:46:49,083 --> 01:46:57,083
+If you know the random variables probability mass function, you can do much better.
+
+437
+01:46:57,083 --> 01:47:10,083
+You can get much better calculations, but if you don't know it at all, if all you have is the mean
+
+438
+01:47:10,083 --> 01:47:18,023
+mean and variance then you can just use Chebyshev's in a quote and it will give you some idea.
+
+439
+01:47:21,124 --> 01:47:26,583
+Let's have a 10 minutes break and when we come we will continue.
+
+440
+01:47:27,783 --> 01:47:29,083
+Ya, sorabilir miyim?
+
+441
+01:47:29,844 --> 01:47:30,444
+Tabii, buyurun.
+
+442
+01:47:31,223 --> 01:47:37,003
+Şu e'yi hesaplarken neden 30'dan ortalamayı çıkarttık ben orayı anlamadım da.
+
+443
+01:47:40,916 --> 01:47:45,916
+Now, Čevišev'in denklemi
+
+444
+01:47:51,923 --> 01:48:21,903
+What is the case?
+
+445
+01:48:21,923 --> 01:48:27,923
+Now, we are 30's.
+
+446
+01:48:27,923 --> 01:48:31,923
+30's.
+
+447
+01:48:31,923 --> 01:48:32,883
+Değil mi?
+
+448
+01:48:34,743 --> 01:48:35,723
+Demek ki
+
+449
+01:48:35,723 --> 01:48:37,863
+x-20'nin
+
+450
+01:48:37,863 --> 01:48:41,903
+30-20'den
+
+451
+01:48:41,903 --> 01:48:42,624
+esasen
+
+452
+01:48:42,624 --> 01:48:43,464
+merak ediyoruz.
+
+453
+01:48:43,464 --> 01:48:43,804
+Yani
+
+454
+01:48:43,804 --> 01:48:47,804
+x'in
+
+455
+01:48:47,804 --> 01:48:49,223
+değerinin 30'dan büyük
+
+456
+01:48:49,223 --> 01:48:51,184
+olması durumundan
+
+457
+01:48:51,184 --> 01:48:53,383
+durumunu
+
+458
+01:48:53,383 --> 01:48:54,144
+merak ediyoruz.
+
+459
+01:48:54,784 --> 01:48:57,184
+x 30'dan büyük olacaksa
+
+460
+01:48:57,184 --> 01:48:59,483
+çevişer denklemine koyarken epsilon'u
+
+461
+01:48:59,483 --> 01:49:00,543
+ne almamız lazım?
+
+462
+01:49:01,923 --> 01:49:05,923
+30-20 from 10 to 10.
+
+463
+01:49:05,923 --> 01:49:10,923
+We need to 20 to 10.
+
+464
+01:49:14,131 --> 01:49:15,931
+Anladım hocam. Teşekkürler.
+
+465
+01:49:15,931 --> 01:49:16,971
+Güzel.
+
+466
+01:49:29,652 --> 01:49:31,652
+Yes, there is a way of a mantick.
+
+467
+01:49:31,652 --> 01:49:35,652
+One minute to go to the hour, 3.30pm.
+
+468
+01:49:35,652 --> 01:49:37,652
+3.00pm.
+
+469
+01:49:44,212 --> 01:49:47,212
+10 minutes break
+
+470
+01:49:48,411 --> 01:49:49,411
+till
+
+471
+01:49:50,212 --> 01:49:53,212
+15.02
+
+472
+02:00:59,572 --> 02:01:08,572
+Yes, I am here, friends. Is my voice coming? Yes, it is coming. Thank you.
+
+473
+02:01:08,572 --> 02:01:28,572
+Okay, so we will start to see some common discrete distributions. These are families of discrete distributions. These are most common probability distributions. The first one we will see is the Bernoulli distribution.
+
+474
+02:01:28,572 --> 02:01:32,072
+Now first we will define a Bernoulli trial
+
+475
+02:01:40,819 --> 02:01:45,319
+So a Bernoulli trial is an experiment.
+
+476
+02:01:50,163 --> 02:01:55,163
+with a binary outcome.
+
+477
+02:02:00,724 --> 02:02:21,724
+Binary means two. So examples of these are. Let's say you flip. A coin. And what do you have? What outcomes do you have?
+
+478
+02:02:25,235 --> 02:02:51,235
+You have a hat or a tails. Okay. Or, uh, let's say, uh, what is the gender of a, of a newborn baby?
+
+479
+02:02:51,252 --> 02:03:15,252
+A baby can be either a girl or a boy. Right. So there are two possibilities. So this kind of experiment is called a Bernoulli trial. Now, a Bernoulli distribution.
+
+480
+02:03:27,667 --> 02:03:28,667
+maps one of the outcome of a Bernoulli trial to zero, the other outcome to one. A Bernoulli distribution converts outcomes of a Bernoulli trial. Let's say maps because functions are maps.
+
+481
+02:03:57,667 --> 02:04:00,868
+So, a Bernoulli distribution maps
+
+482
+02:04:08,148 --> 02:04:09,148
+maps.
+
+483
+02:04:15,252 --> 02:04:18,371
+outcomes of a Bernoulli trial.
+
+484
+02:04:19,571 --> 02:04:20,051
+To.
+
+485
+02:04:23,571 --> 02:04:39,611
+Set zero and one. So one of the outcome will be zero. The other outcome will be one. We will call it zero or one. So let's say birth of a gender of a baby, let's say.
+
+486
+02:04:40,611 --> 02:04:43,731
+A X might be an example here.
+
+487
+02:04:45,252 --> 02:05:03,252
+might be zero if baby is a boy and one if baby is a girl. Okay, let's say.
+
+488
+02:05:06,739 --> 02:05:07,739
+So, this is a Bernoulli variable. So, whatever the experiment is, we will always think of it as zero and one. If you want, you can sometimes call this success or failures, it doesn't really matter. So, a Bernoulli distribution
+
+489
+02:05:36,739 --> 02:06:06,719
+The first step is to make the difference between the two and the two and the two and the two.
+
+490
+02:05:42,963 --> 02:05:52,963
+table then will be this way
+
+491
+02:05:58,003 --> 02:06:27,983
+The values you have can only be zero and one, nothing else. Okay. And let's say probability of one is P. So for different problems, P can be different where P can have different values for for for for some problem, for example, for a girl or boy think probability of a girl is 0.5.
+
+492
+02:06:28,003 --> 02:06:37,003
+and then P is then P is this small p is 0.5.
+
+493
+02:06:37,003 --> 02:06:45,603
+And now if P is if probability of one is P, what is the probability of zero?
+
+494
+02:06:45,603 --> 02:06:49,603
+One minus P.
+
+495
+02:06:49,603 --> 02:06:57,103
+OK. Some some books say this Q.
+
+496
+02:06:57,103 --> 02:07:08,944
+again, but they say Q is one minus P. So when writing equations, sometimes it's easier to write Q, but Q is just one minus P.
+
+497
+02:07:08,944 --> 02:07:23,263
+Now, a lot of the times we need to find expected value. So what is the expected value of a Bernoulli distribution variable?
+
+498
+02:07:23,263 --> 02:07:33,343
+well, it is zero times one minus so what is the equation.
+
+499
+02:07:35,503 --> 02:07:40,783
+For all possible values of x, x times probability of x so
+
+500
+02:07:42,063 --> 02:07:52,063
+we have possible values of zero and one for x so we have zero times one minus p plus one times
+
+501
+02:07:53,263 --> 02:07:55,263
+P
+
+502
+02:07:57,971 --> 02:08:04,291
+and so zero simplifies. So expected value is just P.
+
+503
+02:08:07,828 --> 02:08:08,828
+And what is the variance then? Variance of X is. Expected value of X is square minus mu mu square, right? So. What do we have here? Normal as them. So we have here.
+
+504
+02:08:37,828 --> 02:09:07,807
+Thank you
+
+505
+02:08:42,195 --> 02:08:43,195
+summation over all possible x. x is square. Times. P of x minus this mu square. And. So x is from zero, sorry. Zero to one. So we have
+
+506
+02:09:12,195 --> 02:09:24,195
+0 times 0 square times 1 minus P plus 1 square times P minus mu square.
+
+507
+02:09:24,195 --> 02:09:33,195
+But what is mu mu is P. We already found it. So minus P square.
+
+508
+02:09:33,195 --> 02:09:58,876
+So what do we have here? This simplifies. So we have p minus p square. Sometimes we will write this p times one minus p or sometimes this is written as p times q. Again, q is just one minus p.
+
+509
+02:09:58,876 --> 02:10:12,876
+So variance is p times q. Okay, this is a Bernoulli distribution, the simplest of the probability distributions.
+
+510
+02:10:19,636 --> 02:10:26,915
+And the next distribution we will learn is binomial distribution.
+
+511
+02:10:45,747 --> 02:11:15,727
+Binomial distribution gives us the number of successes in a sequence of independent Bernoulli trials. So if X is a binomial, if X is distributed by binomial distribution, then X is number of successes.
+
+512
+02:11:18,452 --> 02:11:25,452
+in a sequence of
+
+513
+02:11:27,060 --> 02:11:34,319
+of independent Bernoulli
+
+514
+02:11:37,939 --> 02:11:48,439
+trials. Here we assume that Bernoulli trial has only two outcome. So.
+
+515
+02:11:52,148 --> 02:11:53,148
+has outcomes. Success. Or failure. Okay. And we will map success to one failure to zero. If you use the if you think of the Bernoulli distribution here.
+
+516
+02:12:22,148 --> 02:12:31,148
+Bernoulli trial we are talking about here is it has the sample space.
+
+517
+02:12:36,051 --> 02:13:03,051
+So sample space for the Bernoulli trial here is success. And failure and success is mapped to one for Bernoulli distribution. Now, here we are saying that we have so the parameters are
+
+518
+02:13:05,684 --> 02:13:09,043
+the parameters of binomial
+
+519
+02:13:11,563 --> 02:13:12,483
+distribution.
+
+520
+02:13:17,300 --> 02:13:23,300
+are n. Which is number of trials.
+
+521
+02:13:31,636 --> 02:13:41,636
+p which is the probability of success for each Bernoulli trial.
+
+522
+02:13:49,587 --> 02:13:57,587
+So, we will write,
+
+523
+02:14:04,212 --> 02:14:06,212
+We will say that
+
+524
+02:14:10,323 --> 02:14:15,443
+x is distributed by binomial
+
+525
+02:14:18,323 --> 02:14:31,283
+and p. So this will be a shortcut to say things. So this is this is the shorter way to writing x is
+
+526
+02:14:32,363 --> 02:14:33,843
+distributed
+
+527
+02:14:36,563 --> 02:14:37,203
+by
+
+528
+02:14:40,323 --> 02:14:44,323
+Binomial distribution
+
+529
+02:14:48,692 --> 02:15:10,692
+with parameters n and p. So instead of writing this whole sentence, I will just write x is distributed by binomial with parameters n and p.
+
+530
+02:15:10,692 --> 02:15:23,692
+and now the probability mass function of binomial distribution is
+
+531
+02:15:29,652 --> 02:15:39,652
+So probability of some x. Sometimes the parameters are written after the
+
+532
+02:15:39,652 --> 02:15:58,652
+After the value. So n and p. Sometimes they don't write it because we are talking about binomial distribution and its parameters are n and p. So you can just write probability of x.
+
+533
+02:15:58,652 --> 02:16:09,052
+Okay. But some books or some resources use this meaning we are talking about probability of the value x
+
+534
+02:16:12,091 --> 02:16:26,251
+and the parameters we are told we talk about are n and p. In fact some books use something like this instead of p they say binomial
+
+535
+02:16:28,652 --> 02:16:52,031
+x, and p. Again, this is the saying that binomial, we have binomial distribution. We are talking about the probability of x. The parameters of the binomial distribution is n and p.
+
+536
+02:16:52,031 --> 02:17:20,231
+So depending on what book you are reading or what writing you are reading, you may come across to these things. Sometimes instead of binomial, they can use capital B, B of X.
+
+537
+02:17:22,031 --> 02:17:51,532
+and P, they are all same. Now, what, how are we going to calculate this value? Well, probability of X is, we are talking about probability of random variable X having value lowercase x. And that is given by n choose X.
+
+538
+02:17:52,031 --> 02:18:12,031
+Okay. P to the X, 1 minus P to the N minus X. That is the probability mass.
+
+539
+02:18:22,164 --> 02:18:23,164
+function.
+
+540
+02:18:25,164 --> 02:18:26,164
+PMF.
+
+541
+02:18:27,564 --> 02:18:29,164
+Of binomial.
+
+542
+02:18:33,363 --> 02:18:44,363
+So let me write P M F of. Binomial. Random variable.
+
+543
+02:18:49,108 --> 02:18:57,627
+Now how to how do we obtain this binomial random variable.
+
+544
+02:19:01,556 --> 02:19:08,556
+Let's do an example and then
+
+545
+02:19:23,476 --> 02:19:27,476
+I can say something else.
+
+546
+02:19:27,476 --> 02:19:29,476
+Can you speak about the Turkish language?
+
+547
+02:19:29,476 --> 02:19:49,476
+We have a lot of different things.
+
+548
+02:19:49,476 --> 02:19:59,476
+This is a very interesting way.
+
+549
+02:20:02,484 --> 02:20:29,484
+Buralarda burada hangi dağılımları göreceğiz? Bernoulli dağılımı, Binomial dağılımı, Geometrik dağılımı, Negatif dağılımı,
+
+550
+02:20:30,131 --> 02:20:32,131
+Binomial
+
+551
+02:20:32,131 --> 02:20:34,131
+Dağılımı
+
+552
+02:20:34,131 --> 02:20:36,131
+Poisson
+
+553
+02:20:39,796 --> 02:21:07,855
+diye 5 tane çok bilinlik dağılımı göreceğiz. Bu dağılımların her biri için ne zaman kullanılır, olasılık dağılım fonksiyonu nedir, beklenen değeri nedir, varyansları nedir, kümülatif olasılık dağılımları nedir bunları göreceğiz.
+
+554
+02:21:07,855 --> 02:21:09,855
+Buna başladık
+
+555
+02:21:09,855 --> 02:21:13,855
+En basiti de Bernoulli, Bernoulli ile başlıyoruz
+
+556
+02:21:13,855 --> 02:21:18,855
+Bernoulli
+
+557
+02:21:18,855 --> 02:21:25,855
+Dağılımından önce Bernoulli denemesini görmek lazım Bernoulli trial
+
+558
+02:21:25,855 --> 02:21:55,835
+and the results are the same.
+
+559
+02:21:34,131 --> 02:21:59,651
+Bernoulli trial, Bernoulli denemesi. Bu bir olasılıksal deneme ama sadece iki çıktısı var. Yani mesela bir yazı tura attığınızda çıktılar, yazı ya da tura olmuş. Bir yeni doğan bebeğin cinsiyetini düşündüğünüzde kız olur, erkek olur.
+
+560
+02:21:59,651 --> 02:22:06,312
+Bir sınıfı geçip geçmemeyi düşündüğünüzde sınıfı geçersiniz veya geçemezsiniz
+
+561
+02:22:06,312 --> 02:22:13,531
+Yüz yaşından fazla yaşamayı düşündüğünüzde yüz yaşından fazla yaşarsınız veya yaşamazsınız
+
+562
+02:22:13,531 --> 02:22:21,312
+Yani iki tane çıktısı olan denemelerden bahsediyoruz
+
+563
+02:22:21,312 --> 02:22:24,731
+Bunlara ne diyoruz? Bernoulli denemesi
+
+564
+02:22:24,731 --> 02:22:37,191
+Bernoulli denemelerinin çıktılarını 0 ve 1'e götüren rastgele değişkene de Bernoulli değişkeni diyoruz.
+
+565
+02:22:38,791 --> 02:22:42,971
+Bernoulli değişkeninin dağılımına da Bernoulli dağılımı diyoruz.
+
+566
+02:22:42,971 --> 02:23:06,991
+Genel olarak bu iki çıktıdan bir tanesi success yani başarılı, diğeri de failure, başarısızlık yani success, başarılılık, başarı, failure
+
+567
+02:23:11,283 --> 02:23:12,404
+and
+
+568
+02:23:15,572 --> 02:23:45,551
+So, this is a very good question.
+
+569
+02:23:45,572 --> 02:23:50,952
+1 is a
+
+570
+02:23:50,952 --> 02:24:15,572
+1.
+
+571
+02:24:15,572 --> 02:24:17,572
+The female is 0.
+
+572
+02:24:17,572 --> 02:24:21,572
+We have a successful, successful, so that is not a good idea.
+
+573
+02:24:21,572 --> 02:24:25,572
+Do you think that is a good idea of the child?
+
+574
+02:24:25,572 --> 02:24:27,572
+Because she is a good idea of the child,
+
+575
+02:24:27,572 --> 02:24:30,572
+or she is a good idea of the child.
+
+576
+02:24:30,572 --> 02:24:32,572
+It is a good idea of the child.
+
+577
+02:24:32,572 --> 02:24:43,572
+Yes.
+
+578
+02:24:43,572 --> 02:24:53,332
+So, Tülin says that I'm a success to get to the end of the year.
+
+579
+02:24:54,332 --> 02:24:58,531
+Batuhan says that I'm a success to the end of the year.
+
+580
+02:24:59,351 --> 02:25:00,531
+The result is not changing.
+
+581
+02:25:01,152 --> 02:25:05,592
+So, this is your first model.
+
+582
+02:25:10,899 --> 02:25:16,899
+And, every two types of models of the problem is a good result.
+
+583
+02:25:16,899 --> 02:25:22,399
+But, the problem is a good way to some things.
+
+584
+02:25:22,399 --> 02:25:28,899
+If you think of the result of the result of the problem, you can do it.
+
+585
+02:25:28,899 --> 02:25:33,899
+If you think of the result of the problem, you can do it.
+
+586
+02:25:36,308 --> 02:25:51,087
+Now Bernoulli dolayısıyla rastgele değişkenine ne diyoruz? 2 değer alır, bu değerlerin biri 1'dir, biri 0'dır diyoruz.
+
+587
+02:25:52,687 --> 02:26:04,207
+Şimdi genel konuşabilmek için de diyoruz ki Bernoulli değişkeninin 1 gelmesinin olasılığına P diyelim, küçük P.
+
+588
+02:26:04,207 --> 02:26:27,208
+Toplam 1 olması gerektiği için 0 gelmesi olasılığına da ne diyeceğiz? 1-P diyeceğiz. 1-P yerine bazı kitaplar Q'da demiş. Formüller daha kolay olabiliyor Q'yu yazarsanız. Dolayısıyla birine P, birine Q ama Q 1-P diye söylüyoruz.
+
+589
+02:26:27,207 --> 02:26:46,147
+Beklenen değerine baktığımızda Bernolli değişkeninin beklenen değerinin P olduğunu görüyoruz. Varyansına baktığımızda PQ olduğunu görüyoruz.
+
+590
+02:26:46,147 --> 02:26:57,147
+Bu en basit dağılımlardan biri diyebiliriz
+
+591
+02:26:57,147 --> 02:27:01,147
+Burada
+
+592
+02:27:04,275 --> 02:27:27,275
+Bir de konuşurken işte bu değişken Bernoulli değişkenidir, birin doğru gelme olasılığı P'dir falan uzun uzun anlatmaktansa hızlı bir şekilde maksadımızı ifade için şu şekilde yazımlar yapıyoruz.
+
+593
+02:27:27,275 --> 02:27:31,956
+Bunu buraya yazmayı da unutmuşum. Sırası gelmişken bunu da yazayım.
+
+594
+02:27:34,275 --> 02:27:36,275
+x diyeceğiz.
+
+595
+02:27:36,275 --> 02:27:38,275
+Bernol nedir?
+
+596
+02:27:42,355 --> 02:28:01,355
+p parametresi. Yani ne diyoruz? Bir x rastgele değişkenimiz Bernoulli dağılımı ile dağılıyorsa ne diyeceğiz? x is distributed by şu işareti öyle okuyabilirsiniz.
+
+597
+02:28:16,755 --> 02:28:44,375
+x is distributed by Bernoulli distribution with parameter p. Şimdi sizde hani Bernoulli dağılımını biliyorsunuz ya bir tek parametresi var yani o da ne p değil mi? p'yi bilirseniz artık beklenen değerini de biliyorsunuz varyansını da biliyorsunuz vesaire vesaire.
+
+598
+02:28:44,375 --> 02:29:12,375
+Bernoulli dağılımı çok basit dolayısıyla üzerinde fazla durmadım bir sonraki dağılım binom dağılımı binom dağılımı binom dağılımı n tane denemeyi yapıyorsunuz n tane Bernoulli denemesi yapıyorsunuz
+
+599
+02:29:12,375 --> 02:29:33,375
+Bunların kaç tanesi success, başarılıdır bunu size veriyor. Yani bu Bernolli denemeleri ne olabilir? Mesela elinizde bir tane oyuncak tabanca var, karşıya da bir tane hedef tahtası diktiniz. Tak, atıyorsunuz.
+
+600
+02:29:33,375 --> 02:29:50,395
+Her kurşunun hedefi vurması olasılığı, vurması veya vurmaması bir Bernolli denemesi. Hedefi vurursanız success 1 diyelim. Hedefi vuramadınız başarısızlık 0.
+
+601
+02:29:50,395 --> 02:30:03,936
+5 kere atış atma hakkınız var. 5 kere atış attığınızda 3 kere vurma olasılığınız nedir? Binom dağılımı bunu verebiliyor size.
+
+602
+02:30:10,932 --> 02:30:36,011
+Nasıl yazıyoruz onu? Binom dağılımını? Bir x rastgele değişkeni binom dağılımındansa şöyle yazıyoruz. x is distributed by binomial distribution parametrelerde m ve p. Mesela beş kere attığımızda üç kere vurma olasılığını hesap etmek için bize hangi değerler lazım?
+
+603
+02:30:36,011 --> 02:30:44,112
+3, zaten olasılığını hesap etmek istediğimiz şey 3
+
+604
+02:30:44,112 --> 02:30:51,152
+3'ün olasılığını hesap etmek için nasıl bir yaklaşım kullanacağız?
+
+605
+02:30:51,952 --> 02:30:53,351
+PMF'i kullanırız lazım.
+
+606
+02:30:54,792 --> 02:30:58,231
+3'ün PMF'i neyle veriliyor?
+
+607
+02:31:00,571 --> 02:31:04,751
+And choose x, yani diyelim ki 5 deneme var.
+
+608
+02:31:06,011 --> 02:31:17,991
+5 kurşun atıyorsunuz. 3 kere başarı. Burada success rahat bir şekilde hedefi vurma olarak tanımlanabilir.
+
+609
+02:31:22,644 --> 02:31:46,744
+Failure'da hedefi vuramama. 5 deneme atadınız. Demek ki N5, X3. Şimdi bunu hesaplayabilmek için hedefe kurşun atan kişinin ne kadar iyi nişancı olduğunu söylememiz lazım değil mi?
+
+610
+02:31:46,744 --> 02:32:10,184
+Ben mesela hedefe kurşun atsam başka bir olasılıkla vururum. Tecrübeli bir subay hedefe kurşun atsam başka bir olasılıkla vurur. Bunu nasıl söylüyoruz? İşte her Bernoulli denemesindeki başarı parametresiyle, P ile söylüyoruz.
+
+611
+02:32:10,183 --> 02:32:16,303
+Benim mesela nacizane çok fazla kurşun atma şansım olmadı
+
+612
+02:32:16,303 --> 02:32:22,403
+Dolayısıyla P'yi ne diyeyim oyuncak ama atıyorum
+
+613
+02:32:22,403 --> 02:32:28,043
+Dolayısıyla yakın bir yere de koyarsak işte bir sürü şey var ama
+
+614
+02:32:28,043 --> 02:32:33,703
+P'nin diyelim ki 0.6 olduğunu varsayalım
+
+615
+02:32:33,703 --> 02:32:38,903
+Yani 10 kere atarsam 6 tanesini vurmamı bekliyoruz
+
+616
+02:32:38,903 --> 02:33:04,903
+yakın bir hedef. Dolayısıyla başarı olasılığı 0.6. Dolayısıyla binom rastgele binom dağılımı diyor ki binom PMF'ine göre bunu bir örneğe döndürelim.
+
+617
+02:33:09,940 --> 02:33:23,739
+We try to hit a target. Five times
+
+618
+02:33:26,548 --> 02:33:28,548
+What is the probability of
+
+619
+02:33:29,827 --> 02:33:30,467
+hitting
+
+620
+02:33:32,427 --> 02:33:33,468
+three times?
+
+621
+02:33:38,388 --> 02:33:51,707
+probability of a single probability of a hit.
+
+622
+02:33:57,876 --> 02:34:25,716
+on a single trial is 0.6. So we are given that probability of a single hit. If you if you shoot a single times, the hit probability is 0.6. So that means.
+
+623
+02:34:25,716 --> 02:34:30,716
+p is 0.6
+
+624
+02:34:34,932 --> 02:35:04,911
+We will try to, we will shoot five times. So n is, sorry, n is five. And we want to find the probability of hitting three times. So what is the probability of three? Okay, that's our question. And this equation here says that probability of three is
+
+625
+02:35:04,932 --> 02:35:32,932
+five choose three probability of 0.6 to the three and one minus 0.6 that's 0.4 times five minus three which is two right so we can find the probability of three with this
+
+626
+02:35:32,932 --> 02:35:45,932
+and now where does this equation come from? Well, actually it's not that hard if you think about it.
+
+627
+02:36:09,523 --> 02:36:14,004
+If you think about it, we have
+
+628
+02:36:19,092 --> 02:36:46,092
+So each of these, let's say we are having five, these are each one is a shooting. So we will shoot five times. Each of these can be a success, a success or a failure. Now we are interested in three, right? So that means we will have three successes.
+
+629
+02:36:46,092 --> 02:36:50,092
+So three successes can be.
+
+630
+02:36:57,203 --> 02:37:00,203
+That can be a success.
+
+631
+02:37:02,203 --> 02:37:04,203
+A success, a success.
+
+632
+02:37:05,203 --> 02:37:07,203
+And failure, failure.
+
+633
+02:37:09,203 --> 02:37:23,203
+Or you can have success, failure, failure, success, success, etc. So you can have different orders of these successes and failures. How many of these do we have
+
+634
+02:37:23,203 --> 02:37:34,203
+We have five, five choose three of these right.
+
+635
+02:37:34,203 --> 02:37:40,203
+Now, what is the problem probability of each of these they are all same.
+
+636
+02:37:40,203 --> 02:37:49,203
+Well, probability of first shooting being a hit is 0.6.
+
+637
+02:37:49,203 --> 02:38:12,644
+Probability of next being a hit is 0.6. Probability of next being a hit is again 0.6. So we have here 0.6 to the 3, right? Because we are talking about 3 successes. So that 3 comes from there.
+
+638
+02:38:12,643 --> 02:38:36,063
+Now the remaining two will be failures. What is the probability of a failure? 1 minus 0.6. That's 0.4. Again, the other 0.4. So we will have 0.4 twice. So to the two. Okay.
+
+639
+02:38:36,064 --> 02:38:42,424
+So that's where that PMF come from. Okay.
+
+640
+02:38:44,663 --> 02:38:48,263
+That's where that PMF equation
+
+641
+02:38:49,504 --> 02:38:56,183
+come from here. Okay. And choose x, the number of different orderings.
+
+642
+02:38:56,183 --> 02:39:08,723
+P to the X, the probability of X successes, 1 minus P to the N minus X, probability of N minus X failures.
+
+643
+02:39:33,108 --> 02:39:34,627
+Now,
+
+644
+02:39:50,388 --> 02:39:55,388
+What is the expected value and what is the variance?
+
+645
+02:40:03,572 --> 02:40:05,572
+Now, normally
+
+646
+02:40:05,572 --> 02:40:16,572
+You can write a binomial variable as a sum of individual Bernoulli variables.
+
+647
+02:40:26,484 --> 02:40:27,484
+You are you have N Barnoulli trials, right? So each of these are. Random variable. For. Bernoulli. Trial one, this is random variable for Bernoulli trial to et cetera. And. Notice that.
+
+648
+02:40:56,484 --> 02:40:57,484
+variable is some of these Bernoulli variables. So if the first if the first trial is a success, what will this be? A one. If the second trial is a success, this will be one. If the last trial is a failure, this will be zero. So if you sum these up, you want these to be
+
+649
+02:41:26,484 --> 02:41:34,284
+three, let's say. Right, so that's your X.
+
+650
+02:41:40,724 --> 02:41:48,224
+So now we want to find the expected value.
+
+651
+02:41:50,739 --> 02:42:06,939
+of x. And remember, the expected value for the expected value. If you take the expected value of both sides.
+
+652
+02:42:11,156 --> 02:42:33,156
+Then you can divide from these terms, divide by these terms. So you can have expected value of X1 plus expected value of X2 plus expected value of Xn.
+
+653
+02:42:33,156 --> 02:43:03,135
+And these are identical Bernoulli trials. So each of the Bernoulli trials has the same, same parameters. They are same. They are independent, but they are same trials. So we assume that when I shoot, my probability of hitting remains the same. Normally in the real life, if I try five,
+
+654
+02:43:03,156 --> 02:43:14,676
+times, my probability of hitting increases normally because I can make better judgment, let's say.
+
+655
+02:43:14,676 --> 02:43:24,516
+But for this purpose, for our purposes, we will say that these are independent but identical.
+
+656
+02:43:25,635 --> 02:43:28,435
+So this is called Eid sometimes.
+
+657
+02:43:31,275 --> 02:43:32,196
+Eid.
+
+658
+02:43:33,156 --> 02:43:35,156
+independent
+
+659
+02:43:40,180 --> 02:43:43,379
+Identically
+
+660
+02:43:46,484 --> 02:43:48,484
+distributed.
+
+661
+02:43:54,420 --> 02:44:17,420
+So this Bernoulli trials are IID. They are independent and they are identically distributed, meaning their mean, their parameters, everything is same. So then we can just say each of these is just P. Remember the mean of Bernoulli distribution was P.
+
+662
+02:44:17,420 --> 02:44:25,420
+So we have n of these, so that means expected value of binomial variable is n times p.
+
+663
+02:44:28,371 --> 02:44:55,371
+Similarly, variance can be calculated. Variance of expected variance of binomial distribution is n times pq. Remember, this is variance of Bernoulli random variable.
+
+664
+02:44:55,371 --> 02:44:56,371
+So since variance of Bernoulli random variable is pq. We can just sum them up and get NPQ because we have independent Bernoulli trials. And if X and Y are independent,
+
+665
+02:45:30,388 --> 02:45:47,187
+Variance of X plus Y can be divided by variance of X plus variance of Y. So by using this, this property, we can get to the variance of X.
+
+666
+02:46:20,531 --> 02:46:27,531
+Next week we will see geometric distribution, but that will be after the exam.
+
+667
+02:46:47,379 --> 02:46:56,379
+Obviously binomial distribution is included in the exam.
+
+668
+02:46:57,043 --> 02:47:02,043
+Yes, here we will talk about the question.
+
+669
+02:47:02,043 --> 02:47:05,043
+Mythome, here we go.
+
+670
+02:47:05,043 --> 02:47:09,043
+Bernoulli, binomial, these are all.
+
+671
+02:47:09,043 --> 02:47:12,043
+This is the baron's book.
+
+672
+02:47:12,043 --> 02:47:16,043
+If you are there, you can see it.
+
+673
+02:47:18,739 --> 02:47:23,439
+I think that my last week's quiz is a lot of the things I saw in the building,
+
+674
+02:47:23,439 --> 02:47:25,739
+I saw a lot of the things I saw in the building,
+
+675
+02:47:25,739 --> 02:47:29,239
+I saw a lot of things that I saw in the building,
+
+676
+02:47:29,239 --> 02:47:31,739
+but I saw a lot of the things I saw in the building,
+
+677
+02:47:31,739 --> 02:47:39,739
+I saw a lot of the things I saw in the building,
+
+678
+02:47:39,739 --> 02:47:43,739
+but I saw a lot of the things I saw in the building.
+
+679
+02:47:43,739 --> 02:48:13,719
+I can't agree with that.
+
+680
+02:48:13,739 --> 02:48:15,800
+3.5'dan 4'e kadar süre verdiniz.
+
+681
+02:48:15,940 --> 02:48:16,960
+Yarım saatlik süre ama.
+
+682
+02:48:17,059 --> 02:48:18,359
+9'e kadar verdik.
+
+683
+02:48:19,999 --> 02:48:20,420
+Efendim?
+
+684
+02:48:21,159 --> 02:48:22,820
+4'te süre biter dedik.
+
+685
+02:48:23,159 --> 02:48:25,540
+Evet işte ama şey de
+
+686
+02:48:25,540 --> 02:48:27,540
+bu bizim o
+
+687
+02:48:27,540 --> 02:48:29,859
+uzaktan eğitim sisteminde
+
+688
+02:48:29,859 --> 02:48:31,640
+16.50'den sonra
+
+689
+02:48:31,640 --> 02:48:33,559
+o dersi görüp de oraya katıl
+
+690
+02:48:33,559 --> 02:48:34,839
+deme şansımız yokmuş.
+
+691
+02:48:35,040 --> 02:48:36,059
+Onu da yeni öğrendim.
+
+692
+02:48:36,159 --> 02:48:37,159
+Geçen hafta öğrendim.
+
+693
+02:48:38,719 --> 02:48:39,719
+Gözükmüyormuş yani.
+
+694
+02:48:39,780 --> 02:48:41,979
+16.50'de sistem otomatikman
+
+695
+02:48:41,979 --> 02:48:51,979
+I think it was a very important thing.
+
+696
+02:48:51,979 --> 02:49:09,979
+I was able to get the time.
+
+697
+02:49:09,979 --> 02:49:15,979
+I'm sorry, I'm sorry.
+
+698
+02:49:15,979 --> 02:49:37,979
+I'm sorry.
+
+699
+02:49:37,979 --> 02:49:40,979
+But they are very important.
+
+700
+02:49:40,979 --> 02:49:42,979
+They are very important.
+
+701
+02:49:42,979 --> 02:49:44,979
+It is a good thing.
+
+702
+02:49:44,979 --> 02:50:02,979
+I don't know.
+
+703
+02:50:02,979 --> 02:50:30,979
+...
+
+704
+02:50:30,979 --> 02:50:33,979
+I'm not going to do that. I'm not going to do that.
+
+705
+02:50:37,075 --> 02:50:43,075
+You are talking about it?
+
+706
+02:50:43,075 --> 02:50:45,075
+I am talking about it.
+
+707
+02:50:45,075 --> 02:50:49,075
+Yes, I am talking about it.
+
+708
+02:50:49,075 --> 02:50:51,075
+I am talking about it.
+
+709
+02:50:51,075 --> 02:50:53,075
+It is a matter of fact,
+
+710
+02:50:53,075 --> 02:50:55,075
+it is a matter of fact.
+
+711
+02:50:55,075 --> 02:50:57,075
+It is a matter of fact,
+
+712
+02:50:57,075 --> 02:50:59,075
+it is a matter of fact.
+
+713
+02:50:59,075 --> 02:51:01,075
+Maybe it is something that is happening.
+
+714
+02:51:01,075 --> 02:51:03,075
+Three of us are doing it,
+
+715
+02:51:03,075 --> 02:51:05,075
+and the two of us are doing it.
+
+716
+02:51:05,075 --> 02:51:07,336
+So, I had no idea that I had no idea.
+
+717
+02:51:07,336 --> 02:51:09,335
+And I had no idea that I had no idea.
+
+718
+02:51:10,335 --> 02:51:12,916
+I had no idea.
+
+719
+02:51:14,916 --> 02:51:17,055
+Now, we have no idea.
+
+720
+02:51:17,055 --> 02:51:35,055
+We have no idea.
+
+721
+02:51:35,055 --> 02:51:35,416
+quiz,
+
+722
+02:51:36,315 --> 02:51:37,875
+10 point of a value,
+
+723
+02:51:39,015 --> 02:51:41,715
+more than one quiz,
+
+724
+02:51:42,476 --> 02:51:44,195
+two more than two midterm
+
+725
+02:51:44,195 --> 02:51:44,455
+are,
+
+726
+02:51:44,535 --> 02:51:45,516
+did we?
+
+727
+02:51:49,116 --> 02:51:50,156
+And if we have a
+
+728
+02:51:50,156 --> 02:51:51,175
+more than one
+
+729
+02:51:51,175 --> 02:51:52,195
+of the things that we have,
+
+730
+02:51:52,195 --> 02:51:54,236
+if we have a
+
+731
+02:51:54,236 --> 02:51:54,876
+problem with
+
+732
+02:51:54,876 --> 02:52:04,815
+a problem with
+
+733
+02:52:04,815 --> 02:52:06,835
+Online, her şey online.
+
+734
+02:52:07,655 --> 02:52:10,495
+Sınavları da mecburen online yapmak zorundayız.
+
+735
+02:52:11,256 --> 02:52:13,015
+Ona göre de hazırlanmamız gerekiyor.
+
+736
+02:52:14,035 --> 02:52:14,515
+Evet, evet.
+
+737
+02:52:14,635 --> 02:52:16,275
+Mazeret uydurmamamız lazım hocam.
+
+738
+02:52:16,375 --> 02:52:19,156
+Bizim gibi insanların artık mazeret belirtmemesi lazım.
+
+739
+02:52:19,275 --> 02:52:20,575
+Ben de dahil özellim.
+
+740
+02:52:20,615 --> 02:52:22,515
+Yani evet, sağ olun öyle dediğiniz için.
+
+741
+02:52:22,535 --> 02:52:23,055
+Tabii tabii.
+
+742
+02:52:23,175 --> 02:52:25,235
+Yani bu seviyeye çıkmamız gerekiyor.
+
+743
+02:52:25,635 --> 02:52:28,275
+Ya da kendimizi bu seviyeye göre ayarlamamız gerekiyor.
+
+744
+02:52:28,656 --> 02:52:32,835
+Çünkü bizim kalitemizde insanların işini şansa bırakmaması lazım aslında.
+
+745
+02:52:32,835 --> 02:52:40,595
+We have a week ago, we said that we were online, we were in a place where we were in a place.
+
+746
+02:52:42,595 --> 02:52:49,075
+We have a quiz, a lot of a big issue that we have to do not think about.
+
+747
+02:52:49,175 --> 02:52:52,475
+It is important to learn more than 90 points.
+
+748
+02:52:54,235 --> 02:52:56,655
+Now, the test system is also in the devre.
+
+749
+02:52:57,495 --> 02:52:58,855
+The other sınavlar has been like this.
+
+750
+02:52:58,855 --> 02:53:00,855
+There is a problem with this.
+
+751
+02:53:02,835 --> 02:53:22,835
+We have a test system that we have a test system that we have a test system that we have a test system that we have a test system that we have a test system.
+
+752
+02:53:22,835 --> 02:53:30,835
+But now we have to look at them, they have to work with new things, they have to work with new things.
+
+753
+02:53:30,835 --> 02:53:35,835
+We can see what we can do with the questions.
+
+754
+02:53:35,835 --> 02:53:40,835
+We can see online.yildiz.edu.tr's.
+
+755
+02:53:40,835 --> 02:53:45,835
+We can see how we can use this system.
+
+756
+02:53:45,835 --> 02:53:49,835
+I'm sorry.
+
+757
+02:53:49,835 --> 02:53:51,835
+You can't get a quiz.
+
+758
+02:53:51,835 --> 02:53:55,835
+I'm not going to get a quiz.
+
+759
+02:53:55,835 --> 02:54:05,835
+You can't get a quiz.
+
+760
+02:54:05,835 --> 02:54:13,835
+We can't get a quiz.
+
+761
+02:54:13,835 --> 02:54:14,835
+No, no,
+
+762
+02:54:44,115 --> 02:54:47,635
+Quiz'i açayım dedim ama neredeydi bu?
+
+763
+02:54:50,275 --> 02:54:53,175
+Hocam A1, A2, A3, B1 ve B2.
+
+764
+02:54:55,135 --> 02:54:58,375
+A'ların şeyleri, probability'leri, B'lerin probability'leri.
+
+765
+02:54:59,095 --> 02:54:59,455
+Evet.
+
+766
+02:55:00,195 --> 02:55:05,956
+Anlatabiliyor muyum? A1, A2, A3, 3 tane. Birinci kümemiz. B1, B2. B kümesi 2 tane.
+
+767
+02:55:07,595 --> 02:55:13,575
+Herhalde A ile B şıkkı. 1 bölü 3, 1 bölü 3, 1 bölü 3. B'de 1 bölü 2, 1 bölü 2 değil mi?
+
+768
+02:55:14,115 --> 02:55:16,115
+Quiz'i hemen şurada çözelim
+
+769
+02:55:20,180 --> 02:55:23,180
+Dersi bir on dakika uzatmış olacağız artık.
+
+770
+02:55:24,180 --> 02:55:29,180
+İşi olanlar arkadaşlarından alabilir şeyleri.
+
+771
+02:55:30,180 --> 02:55:33,180
+Veya videoları zaten izleyebiliyorsunuz sonradan.
+
+772
+02:55:35,180 --> 02:55:37,180
+Şimdi
+
+773
+02:55:40,404 --> 02:55:41,404
+Şu bilgi verilmiş A1B1 0.2 A2B1 0.1 A3B1 0.1 A1B2 0.1 A2B2 0.2 A3B1 0.2
+
+774
+02:56:10,404 --> 02:56:13,984
+B2 0.3
+
+775
+02:56:13,984 --> 02:56:21,143
+A şıkkında A1, A2 ve A3'in olasılıklarını istiyor.
+
+776
+02:56:22,343 --> 02:56:24,984
+A1'i yapayım gerisini zaten siz yaparsınız.
+
+777
+02:56:26,104 --> 02:56:27,664
+Ne yapıyoruz burada?
+
+778
+02:56:27,664 --> 02:56:31,984
+Burada total probability kullanıyoruz.
+
+779
+02:56:32,084 --> 02:56:40,023
+Toplam olasılık A1'in olasılığını bulmak istiyorsak A1'le tüm kesişimleri toplamamız gerekiyor.
+
+780
+02:56:40,404 --> 02:57:09,124
+Yani i eşittir 1'den 2'ye probability of a1 kesişim b i'yi yapmamız gerekiyor. Dolayısıyla a1 b1 0.2 a1 b2 0.1'den 0.3 ediyor mu?
+
+781
+02:57:10,404 --> 02:57:39,823
+Benzer şekilde A2 ne olacak? 0.1 ile 0.2'yi toplayacaksınız 0.3 olacak. A3 0.1 ile 0.3'ü toplayacaksınız 0.4 olacak. Şuraları yalnız bu şekilde yazanlara puan vermedim. Şurada yaptığım gibi açık bir şekilde ne buluyoruz? Denklemi nedir?
+
+782
+02:57:40,404 --> 02:57:49,564
+Denklemere koyduğumuz sayılar nedir, sonuç nedir? Bu dört şeyi istiyorum. Bu dört şeyi yapmayanlardan puan kırdım, kabul etmedim.
+
+783
+02:57:50,163 --> 02:57:55,624
+Hocam toplam sembolü yerine yine sembolik yazıp toplam sembolünü açık şekilde yazsak?
+
+784
+02:57:56,043 --> 02:57:57,023
+Olur, olabilir o.
+
+785
+02:57:57,284 --> 02:57:58,543
+Tamamdır, teşekkürler.
+
+786
+02:57:58,543 --> 02:58:03,363
+Hocam ven şeması ile de yapılabiliyor. Ven şemasını da yerine koyup topladığımızda da o kabul mü?
+
+787
+02:58:03,543 --> 02:58:05,323
+Ven şemasını da kabul ettim.
+
+788
+02:58:10,404 --> 02:58:36,504
+B şıkkında B1'in olasılığı aynı mantık ama şunları topluyorsunuz. Ben şimdi 0.4. Dediğim gibi siz böyle yazarsanız puan alamazsınız. 0.6. Yani B2 ile her şeyi topluyorsunuz.
+
+789
+02:58:36,503 --> 02:58:40,703
+ozaman B2'nin olasılığını buluyorsunuz
+
+790
+02:58:46,835 --> 02:58:50,115
+C şıkkında şartlı olasılıklar vardı.
+
+791
+02:58:54,675 --> 02:58:58,756
+Probability of A1 given B1.
+
+792
+02:58:59,716 --> 02:59:03,975
+Bunu direkt şartlı olasılığın tanımından tak diye yapacaktınız zaten.
+
+793
+02:59:04,735 --> 02:59:11,555
+Probability of A1 and B1 divided by probability of B1.
+
+794
+02:59:12,875 --> 02:59:14,795
+Bu da sayıları yerine koyacaktınız.
+
+795
+02:59:14,795 --> 02:59:17,295
+We have already seen the case.
+
+796
+02:59:17,295 --> 02:59:18,555
+The case is 0.2.
+
+797
+02:59:21,915 --> 02:59:24,455
+The case is here.
+
+798
+02:59:25,095 --> 02:59:26,035
+The case is 0.4.
+
+799
+02:59:27,275 --> 02:59:29,035
+Here is 0.5.
+
+800
+02:59:33,108 --> 02:59:56,108
+Öbürü de 0.25 çıkıyordu diye hatırlıyorum. Tamamen aynı mantık. Probability of A2 given B1 Probability of A2 B1 Probability of B1 A2 and B1 burada var. 0.1
+
+801
+03:00:00,000 --> 03:00:01,519
+Bölüm 0.4
+
+802
+03:00:01,519 --> 03:00:03,139
+Dolayısıyla 0.25
+
+803
+03:00:03,139 --> 03:00:05,279
+Sorunun
+
+804
+03:00:05,279 --> 03:00:06,359
+Geri kısmında
+
+805
+03:00:06,359 --> 03:00:08,079
+Tekrar
+
+806
+03:00:08,079 --> 03:00:11,279
+A2B1'i sormuş
+
+807
+03:00:11,279 --> 03:00:13,460
+Bu şıkta onu iptal ettim
+
+808
+03:00:13,460 --> 03:00:14,039
+Dolayısıyla
+
+809
+03:00:14,039 --> 03:00:17,879
+Bu C şıkkında 2 alt kısım var
+
+810
+03:00:17,879 --> 03:00:19,619
+Şeklinde okudum
+
+811
+03:00:19,619 --> 03:00:23,079
+D şıkkında
+
+812
+03:00:23,079 --> 03:00:28,879
+A1
+
+813
+03:00:28,879 --> 03:00:33,099
+Probability of A1 given A1.
+
+814
+03:00:33,879 --> 03:00:41,439
+Probability of A1 and A1 divided by probability of A1.
+
+815
+03:00:43,079 --> 03:00:46,019
+Kendisiyle kesişimi bir kümenin kendisidir.
+
+816
+03:00:46,239 --> 03:00:50,900
+Probability of A1 bölü probability of A1 eşittir 1.
+
+817
+03:00:51,839 --> 03:00:53,739
+Bu şekilde yapanlara puan verdim.
+
+818
+03:00:54,019 --> 03:00:56,739
+Bir kısmı direkt 1 yazmışlar kafalarından.
+
+819
+03:00:56,739 --> 03:01:12,739
+I have a point to them. I have a point to them. I have a point to them. I have a point to them. I have a point to them. I have a point to them.
+
+820
+03:01:12,739 --> 03:01:14,739
+If you don't have a question,
+
+821
+03:01:14,739 --> 03:01:22,739
+if you don't have a question,
+
+822
+03:01:22,739 --> 03:01:30,739
+I don't have a question,
+
+823
+03:01:30,739 --> 03:01:34,739
+but I don't have a question,
+
+824
+03:01:34,739 --> 03:01:40,739
+I don't have a question,
+
+825
+03:01:40,739 --> 03:01:47,739
+If you want to give me a second, give me a second.
+
+826
+03:01:47,739 --> 03:01:53,739
+The second thing is probability of A2 given A1.
+
+827
+03:01:55,603 --> 03:02:13,343
+Probability of A2 intersection A1 Probability of A1'e bölüyoruz. A2 intersection A1 boş küme. Probability of empty set.
+
+828
+03:02:15,743 --> 03:02:24,123
+Çünkü bunlar ayrık. Yani bir denklemin çıktıları ayrıktır. A1, A2, A3'ün çıktı olduğu soruda söyleniyor.
+
+829
+03:02:25,603 --> 03:02:32,964
+probability of A1, boş kümenin olasılığı 0, probability of A1, bu da 0.
+
+830
+03:02:34,903 --> 03:02:35,843
+D şıkkı böyle.
+
+831
+03:02:37,184 --> 03:02:39,403
+Şimdi D şıkkını iptal edeceğim ben.
+
+832
+03:02:39,403 --> 03:02:43,763
+Şu bakımdan olayların,
+
+833
+03:02:48,163 --> 03:02:51,824
+esasen şunu yapmanız lazımdı, bugün gördük ama
+
+834
+03:02:51,823 --> 03:02:59,243
+A1, A2, A3 için tüm hepsi için şunu göstermeniz lazımdı.
+
+835
+03:02:59,243 --> 03:03:12,583
+Assume A and B are independent for contradiction.
+
+836
+03:03:18,164 --> 03:03:28,483
+So, the A's are not allowed to be a B's.
+
+837
+03:03:28,483 --> 03:03:32,443
+Then there is a need to be a B's.
+
+838
+03:03:35,507 --> 03:04:01,907
+Then we have probability of a i and b j equal to probability of a i times probability of b j for all i j.
+
+839
+03:04:01,907 --> 03:04:28,947
+Yani bütün A, İ ve B, C'ler joint birleşik olasılıkları teker teker olasılıklarının çarpımına eşit olmalı. Bütün İ, C'ler için. Yani A1, A2, B, C yani iki tane B var, üç tane A var, altı tane durum var.
+
+840
+03:04:28,947 --> 03:04:31,947
+6 durum içinde bunun sağlanması lazım.
+
+841
+03:04:33,027 --> 03:04:44,007
+Biz burada bir tane bile uymayan örnek bulursak bir zıtlığa erişmiş, olmayana ergiye, olmayana erişmiş oluyoruz.
+
+842
+03:04:44,007 --> 03:04:47,247
+Dolayısıyla ne diyeceğiz?
+
+843
+03:04:47,368 --> 03:04:54,487
+But şuradan hangisi uymuyor?
+
+844
+03:04:55,147 --> 03:04:57,647
+Bir tane bile uymayanı göstermemiz yeterli.
+
+845
+03:04:58,947 --> 03:05:13,087
+İşte hepsini mesela A1B1 için baktığımızda B1 0 4 A1 0 3 3 4 4 12 0 20'ye eşit değil. Dolayısıyla
+
+846
+03:05:18,036 --> 03:05:45,036
+Probability of A1 and B1 is not equal to Probability of A1 çarpı Probability of B1. Çünkü bu ne? 20 eşit değil. A1 0.3'tü. B1 0.4'tü.
+
+847
+03:05:45,036 --> 03:06:15,015
+So, what do we say?
+
+848
+03:06:01,203 --> 03:06:03,203
+We reached
+
+849
+03:06:04,203 --> 03:06:06,203
+To a contradiction
+
+850
+03:06:12,084 --> 03:06:13,084
+So. A and B are not. Independent.
+
+851
+03:06:24,115 --> 03:06:43,115
+The solution is this. I only have an idea that I have talked about. I have a question about the problem. I have a question about the problem.
+
+852
+03:06:43,115 --> 03:07:13,095
+I think I can't do that.
+
+853
+03:07:13,115 --> 03:07:15,115
+The other group is not the same as the other group.
+
+854
+03:07:15,115 --> 03:07:17,115
+I don't know if the question is about the question.
+
+855
+03:07:17,115 --> 03:07:21,115
+He said that he would tell me the same thing.
+
+856
+03:07:21,115 --> 03:07:23,115
+Okay.
+
+857
+03:07:23,115 --> 03:07:27,115
+This is a different page.
+
+858
+03:07:27,115 --> 03:07:33,115
+The one and the one is a different way.
+
+859
+03:07:33,115 --> 03:07:39,115
+A1 is a 1.
+
+860
+03:07:39,115 --> 03:07:44,115
+Here you can see the formula when you put the point in the form.
+
+861
+03:07:44,115 --> 03:07:46,115
+No, no.
+
+862
+03:07:46,115 --> 03:07:52,115
+We have a formula with the ifadeler of the result.
+
+863
+03:07:56,979 --> 03:08:00,979
+Okay.
+
+864
+03:08:00,979 --> 03:08:14,979
+I think it's a good thing.
+
+865
+03:08:14,979 --> 03:08:16,979
+I'm going to get to the end of this video.
+
+866
+03:08:16,979 --> 03:08:18,979
+Okay?
+
+867
+03:08:18,979 --> 03:08:26,979
+Okay.
+
+868
+03:08:26,979 --> 03:08:28,979
+So, I said,
+
+869
+03:08:28,979 --> 03:08:54,979
+I said,
+
+870
+03:08:54,979 --> 03:09:03,979
+Okay, friends, we have a question. We'll see you again. We'll see you again.
+
+871
+03:09:03,979 --> 03:09:07,979
+We'll see you again.
+
+872
+03:09:07,979 --> 03:09:11,979
+I'll see you again.
+
+873
+03:09:11,979 --> 03:09:16,979
+We'll see you again.
+
+874
+03:09:16,979 --> 03:09:21,160
+Like a member of the people can be able to look at it.
+
+875
+03:09:22,979 --> 03:09:24,740
+And then...
+
+876
+03:09:24,740 --> 03:09:25,600
+Saat is not a good?
+
+877
+03:09:25,600 --> 03:09:26,979
+Suna is not a good?
+
+878
+03:09:27,060 --> 03:09:27,280
+Again, it is not a good?
+
+879
+03:09:27,280 --> 03:09:28,200
+It is not a good?
+
+880
+03:09:28,420 --> 03:09:29,200
+It is not a good.
+
+881
+03:09:29,200 --> 03:09:29,859
+It is a good.
+
+882
+03:09:30,660 --> 03:09:31,319
+Okay, okay.
+
+883
+03:09:31,420 --> 03:09:31,920
+We'll see it.
+
+884
+03:09:32,060 --> 03:09:46,959
+It is a good.
+
+885
+03:09:46,959 --> 03:09:53,959
+But you can say something about what you want to do.
+
+886
+03:09:53,959 --> 03:09:57,959
+I have a graphic graphic for you.
+
+887
+03:09:57,959 --> 03:10:00,959
+I have a demo for you.
+
+888
+03:10:00,959 --> 03:10:06,959
+I have a demo that I have a dropbox with you.
+
+889
+03:10:06,959 --> 03:10:09,959
+I have a dropbox with you.
+
+890
+03:10:09,959 --> 03:10:12,959
+I have a demo that I have a dropbox with you.
+
+891
+03:10:12,959 --> 03:10:17,959
+Yes, I've been using a very easy system.
+
+892
+03:10:17,959 --> 03:10:21,959
+This system is new, what is the need for the system?
+
+893
+03:10:21,959 --> 03:10:23,959
+We have a new system.
+
+894
+03:10:23,959 --> 03:10:25,959
+This system is a new system.
+
+895
+03:10:25,959 --> 03:10:31,959
+It's a new system.
+
+896
+03:10:31,959 --> 03:10:33,959
+We have a new system.
+
+897
+03:10:33,959 --> 03:10:37,959
+We have a new system that we have used to do this.
+
+898
+03:10:37,959 --> 03:10:39,959
+We have a new system.
+
+899
+03:10:39,959 --> 03:10:43,340
+We will be able to test.
+
+900
+03:10:43,479 --> 03:10:45,139
+We will not be able to test.
+
+901
+03:10:45,700 --> 03:10:47,139
+We will be able to finish this.
+
+902
+03:10:48,299 --> 03:10:49,819
+Thank you.
+
+903
+03:10:49,819 --> 03:10:50,359
+Thank you very much.
+
+904
+03:10:51,039 --> 03:10:51,700
+Thank you.
+
+905
+03:10:51,700 --> 03:10:52,700
+Thank you very much.
+
+906
+03:10:53,599 --> 03:10:54,599
+See you soon.

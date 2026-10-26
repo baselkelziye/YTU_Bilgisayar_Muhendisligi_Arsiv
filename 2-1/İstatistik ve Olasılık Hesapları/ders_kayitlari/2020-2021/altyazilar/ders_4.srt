@@ -1,0 +1,3343 @@
+1
+00:03:59,219 --> 00:04:01,719
+Yes, my name is coming, friends.
+
+2
+00:04:10,484 --> 00:04:24,623
+Yes, merhabalar. Bugün temel olasılığı bitireceğiz. Saymaya başlayacağız. Biraz da saymadan konuları göreceğiz. Bu şekilde olacak.
+
+3
+00:04:35,699 --> 00:04:36,539
+Rica ederim
+
+4
+00:04:48,500 --> 00:04:50,500
+Let's start with the first question.
+
+5
+00:04:53,012 --> 00:04:54,012
+So
+
+6
+00:04:56,311 --> 00:04:57,892
+In
+
+7
+00:05:02,132 --> 00:05:04,132
+In the previous lecture,
+
+8
+00:05:08,084 --> 00:05:09,084
+We saw a rule called law of total probability. And basically this rule said that if you want to calculate
+
+9
+00:05:31,572 --> 00:05:57,572
+If you want to calculate the probability of some set, let's say in this case this is A, you can just sum the probabilities of these intersections of that set with these other sets like B1, B2, B3, B4.
+
+10
+00:05:57,572 --> 00:06:26,572
+and let's call them the i so i from one to four the sum of probability of a intersection bi will give you your i and furthermore a intersection bi can be written as probability of i given bi times probability of bi so you can use the probability of i.
+
+11
+00:06:26,572 --> 00:06:30,572
+So you can use this equation too.
+
+12
+00:06:37,747 --> 00:06:50,787
+Now we we have seen an example. We actually wrote this example but didn't solve it. And the example is
+
+13
+00:06:53,076 --> 00:06:55,076
+Let's say you have a bag.
+
+14
+00:06:55,076 --> 00:06:57,076
+Sorry.
+
+15
+00:06:57,076 --> 00:07:01,076
+You have a bag.
+
+16
+00:07:01,076 --> 00:07:07,076
+And inside that bag, you have three coins.
+
+17
+00:07:07,076 --> 00:07:14,076
+And probability of selecting each of these coins is same.
+
+18
+00:07:14,076 --> 00:07:25,476
+And we also know that A for coin I, sorry coin 1, probability of heads is 0.9.
+
+19
+00:07:25,476 --> 00:07:28,576
+So these are unfair coins.
+
+20
+00:07:29,296 --> 00:07:34,395
+So normally probability of heads should be 0.5, but these are unfair.
+
+21
+00:07:35,455 --> 00:07:40,375
+For coin 2, probability of heads is 0.6.
+
+22
+00:07:40,375 --> 00:07:47,455
+and for coin 3 probability of heads is 0.3.
+
+23
+00:07:48,655 --> 00:07:51,515
+So we draw a coin at random.
+
+24
+00:07:52,116 --> 00:07:55,335
+We get a random coin there and we flip.
+
+25
+00:07:56,535 --> 00:08:00,156
+And then what is the probability of getting a pass?
+
+26
+00:08:00,156 --> 00:08:00,796
+Right.
+
+27
+00:08:02,095 --> 00:08:05,855
+And I said that do this at home.
+
+28
+00:08:06,595 --> 00:08:07,656
+I hope you did it.
+
+29
+00:08:07,656 --> 00:08:18,656
+I hope you tried to solve it. Now, let's solve it here too.
+
+30
+00:08:18,656 --> 00:08:28,495
+And before solving probability questions, it's a good idea to give letters to certain
+
+31
+00:08:28,495 --> 00:08:36,016
+events and thereby it's a good idea to model the problem.
+
+32
+00:08:36,015 --> 00:08:49,295
+let us give some names. So let's say the event that heads come, let us call them age. So age is the
+
+33
+00:08:49,295 --> 00:08:59,935
+event that heads comes if you flip a coin. And let's say c1 is the probability that you select
+
+34
+00:08:59,936 --> 00:09:09,215
+c1 from the back right and c2 coin type 2 c3 coin 3.
+
+35
+00:09:09,215 --> 00:09:16,415
+And now based on the these names or letters let us try to write
+
+36
+00:09:16,415 --> 00:09:19,936
+the information given us
+
+37
+00:09:21,055 --> 00:09:24,576
+in terms of these equations. So we want to write
+
+38
+00:09:24,576 --> 00:09:31,215
+the equations the information given us to us in terms of these equations or
+
+39
+00:09:31,215 --> 00:09:36,415
+inequalities whatever so in this case we know that
+
+40
+00:09:36,415 --> 00:09:42,656
+for coin one probability of heads is 0.9 so that
+
+41
+00:09:42,656 --> 00:09:46,896
+that means in probable in conditional probability
+
+42
+00:09:46,896 --> 00:09:52,096
+if we have coin one if we select coin one from the
+
+43
+00:09:52,095 --> 00:10:01,775
+from the back and flip it the probability of head is 0.9. So this gives us this equation.
+
+44
+00:10:02,575 --> 00:10:11,855
+So the second expression gives us this new equation. Similarly if you have coin 2
+
+45
+00:10:12,655 --> 00:10:20,095
+probability of heads is 0.6. If we have coin 3 probability of heads is 0.3.
+
+46
+00:10:20,095 --> 00:10:43,095
+Now these are given and what else? Also what they ask from us, right? That's that we should write that in terms of an expression in terms of these mathematical, how to say, in a mathematical expression using or letters or naming.
+
+47
+00:10:43,095 --> 00:10:50,095
+And in this case, we are asked for probability of heads.
+
+48
+00:10:51,635 --> 00:10:52,635
+What is the probability of a hat? And so what is the probability of age then? Right? And now we can just write this in terms of or or nearly learned rule, the total probability rule here. Right? We will just need to apply this rule. And we say that, okay,
+
+49
+00:11:21,635 --> 00:11:39,635
+I can calculate probability of heads by summing over these coins. So I have three coins, so I is from one to three.
+
+50
+00:11:39,635 --> 00:12:09,615
+and I will, for each coin, I want to get its intersection with heads. So I want to say probability of heads given that coin times probability of that coin. And assuming that all the points are equal probable when you get, when you select them from the back,
+
+51
+00:12:09,635 --> 00:12:14,616
+We can say each has probability one over three to be selected.
+
+52
+00:12:15,996 --> 00:12:27,076
+And then we are done, right? Everything is here. So you just say the probability of heads is
+
+53
+00:12:28,716 --> 00:12:33,576
+0.9 times one over three
+
+54
+00:12:33,575 --> 00:12:51,335
+plus for this guy 0.6 times one over three less. Again for this guy is 0.3 times one over three. This should be times.
+
+55
+00:12:53,255 --> 00:13:01,335
+Okay, so whatever this number is, that's all probability. And this is how you use total probability rule.
+
+56
+00:13:09,139 --> 00:13:34,139
+Now let's continue to basic, to basic probability. Let me remove this layer two. Okay, so now the next rule we will learn is bias rule and it's very important.
+
+57
+00:13:41,331 --> 00:14:01,331
+bias rule. So it's the rule of bias. And so it says that for any two events A and B,
+
+58
+00:14:01,331 --> 00:14:31,311
+Thank you.
+
+59
+00:14:14,644 --> 00:14:16,644
+where
+
+60
+00:14:20,371 --> 00:14:29,971
+Probability of A or B is not equal to zero. I'm sorry, probability of A is not equal to zero. We have
+
+61
+00:14:33,332 --> 00:14:48,451
+this equation probability of B given A is probability of A given B times Disguise probability
+
+62
+00:14:48,451 --> 00:14:57,712
+probability of B divided by this guy's probability probability of A.
+
+63
+00:15:01,683 --> 00:15:16,683
+Okay. This rule can be easily obtained from definition of conditional probability. So you can just say,
+
+64
+00:15:16,683 --> 00:15:40,683
+So the proof can be just the intersection, let's say, so we already know this probability of B given A is probability of A intersection B divided by probability of A.
+
+65
+00:15:40,683 --> 00:15:50,683
+We already know this. This is the definition of conditional probability. Now if you write this,
+
+66
+00:15:52,683 --> 00:16:06,683
+we also know that you have this probability of A given B is probability of A intersection B divided by probability of B.
+
+67
+00:16:06,683 --> 00:16:12,683
+Again, both of these are from the definition of conditional probability.
+
+68
+00:16:12,683 --> 00:16:26,683
+Now, we have this term here. So if I take it out and put there, I will get a probability of
+
+69
+00:16:26,683 --> 00:16:35,683
+A intersection B times probability of B divided by probability of A.
+
+70
+00:16:35,683 --> 00:16:49,323
+So just from the unconditional probability we can calculate, we can get to this rule.
+
+71
+00:16:51,003 --> 00:17:05,544
+Now, Bayer's rule, sometimes you might need to use low total probability to calculate this.
+
+72
+00:17:05,683 --> 00:17:20,683
+So sometimes, a lot of the times actually, you may need to use...
+
+73
+00:17:25,811 --> 00:17:54,911
+law of total probability here to calculate this. And if you if you write the law of total probability, the rule comes a little complicated, but at the end, it is the same thing. Let's try to do an example.
+
+74
+00:17:59,316 --> 00:18:19,055
+example. Remember the back end coins problem. So, in the previous coins problem,
+
+75
+00:18:20,884 --> 00:18:40,884
+Let's say we draw a coin from the back and flipped it and its heads. Then what is the probability of coin being, let's say coin one, right? So what is the probability of
+
+76
+00:18:46,996 --> 00:19:05,155
+and the same thing is that we can see the coin one if the flip outcome is heads. So what is it? And the
+
+77
+00:19:07,380 --> 00:19:32,880
+Now we can write that. So let's try to write it. So let's remember the remember the problem here. We have three coins. These coins are coin one, coin two and coin three. Probability of heads, even coin one is what are those numbers?
+
+78
+00:19:32,880 --> 00:20:00,079
+0.9, 0.6, 0.3, 0.9 probability of heads given coin 2 is 0.6 probability of heads coin 3 is 0.3 and probability of each of these coins, coin 1,
+
+79
+00:20:00,079 --> 00:20:15,079
+probability of coin two and probability of coin three is normally one over three because we have three coins and they have equal probability of taking out of the bag.
+
+80
+00:20:15,079 --> 00:20:29,079
+And the question is again this time we selected a coin we flipped it we look at it and it hurts then what is the probability that it is
+
+81
+00:20:29,079 --> 00:20:49,959
+it is the first coin. We can easily write this using bias rule. So we'll just apply bias rule probability of C1 given
+
+82
+00:20:57,236 --> 00:21:24,755
+probability of C1 given heads is, remember first term is the inverse of this guy. So you will write probability of heads given C1. And here comes the probability of this guy. So we have probability of C1 divided by
+
+83
+00:21:24,755 --> 00:21:29,755
+This guy is probability of hertz
+
+84
+00:21:37,619 --> 00:22:03,419
+Now, which one of these we have here? Probability of heads given C1 is here, 0.9, right? We already know that. Probability of C1 is known. This is 1 over 3. Now we need probability of heads, right?
+
+85
+00:22:03,419 --> 00:22:33,399
+So in this case again here we can use the law of total probability. So our equation will be now probability of c1 given heads is probability of heads given c1 times probability of c1 now divided by summation over i where i is from one
+
+86
+00:22:33,399 --> 00:23:03,279
+to three, not epsilon three. We have, how can I obtain this probability? I will obtain it through these, these intersections. I write probability of h, c i instead of c one. It's really, its form is really similar to what I have here, right? Instead of the one,
+
+87
+00:23:03,399 --> 00:23:15,399
+I have eyes times probability of C i. And now here I just used low total probability.
+
+88
+00:23:20,788 --> 00:23:32,788
+law of total probability. And here is a Bayes rule.
+
+89
+00:23:34,451 --> 00:24:04,031
+So by using Bayes' rule and law of total probability, I can solve this problem because everything here are just numbers now. Right? If you think about it, these are just stuff we already know because probability of CI is always one over three and probability of heads given CI are here.
+
+90
+00:24:04,451 --> 00:24:33,731
+Right, these numbers come here. And probability of has given C1 is here this guy, right, that's 0.9. And this guy is 1 over 3 again. So that's the bias rule. Bias rule is very important.
+
+91
+00:24:51,284 --> 00:25:00,284
+So, it's almost definite that it will be in the exam. Most, I am almost sure it will be in the exam.
+
+92
+00:25:00,284 --> 00:25:14,284
+And you will see this everywhere later in the artificial intelligence, in machine learning. There are rules that start with application of Bayes' rule.
+
+93
+00:25:14,284 --> 00:25:34,284
+There are some methods like naive Bayes that starts from Bayes rule. I will not spend a lot of time on this rule. It itself is not too hard, but you need to know it. Let's move on.
+
+94
+00:25:45,619 --> 00:25:49,619
+Let's talk about conditional independence.
+
+95
+00:26:09,268 --> 00:26:11,687
+So remember that
+
+96
+00:26:15,188 --> 00:26:16,188
+Remember that two events A and B are independent if so we have two possible stuff to check out. If their intersection is probability of A intersection
+
+97
+00:26:45,188 --> 00:27:15,167
+So, the probability of intersection B is probability of A times probability of B. You can just multiply their probabilities to get the intersection probability. Or, we have a probability of A given B is just probability of A, right? Because probability of B, the occurrence of B doesn't give us any information.
+
+98
+00:27:15,188 --> 00:27:24,188
+Now we can write the conditional versions of these guys right.
+
+99
+00:27:24,188 --> 00:27:26,188
+So.
+
+100
+00:27:31,155 --> 00:27:32,755
+So we say that
+
+101
+00:27:32,755 --> 00:27:33,795
+uh
+
+102
+00:27:40,339 --> 00:27:43,539
+A and B are
+
+103
+00:27:48,756 --> 00:27:57,756
+A and B are conditionally independent.
+
+104
+00:28:05,140 --> 00:28:19,459
+So we are talking about conditionally. It's not independent, it's conditionally independent. Given an event C,
+
+105
+00:28:26,804 --> 00:28:54,804
+event C, if and only if probability of A intersection B given C is equal to. So we will go with this rule probability of A given B, sorry given C.
+
+106
+00:28:56,804 --> 00:29:06,403
+times probability of B given C. So basically I just inserted given C's here, right?
+
+107
+00:29:11,443 --> 00:29:15,443
+I just inserted given C's in this rule and I obtained this.
+
+108
+00:29:31,667 --> 00:29:46,787
+And another thing we need to learn is something called the chain rule for conditional probability.
+
+109
+00:30:06,483 --> 00:30:07,483
+and so basically original chain rule, by the way, we also need to know that. So chain rule is just the application of conditional probability. So the chain rule says probability of A intersection B
+
+110
+00:30:36,483 --> 00:30:53,483
+is probability of A given B times probability of A. So it's like, sorry this is wrong, it should be B.
+
+111
+00:31:01,907 --> 00:31:30,107
+It's like you can read like this. We the occurrence of B, what is it? It's probability probability of B. And after B happened. What is the probability of A then? Right. So if you multiply these two, you get their intersections probability. And you can actually write
+
+112
+00:31:41,491 --> 00:31:51,091
+Triple version of this. So you can say probability of intersection B intersection C is equal to
+
+113
+00:31:55,011 --> 00:32:09,332
+You can write this in many different ways. But first you select one to happen. Let's say I want to select B to happen first or C to happen first. So probability of C, let's say
+
+114
+00:32:14,451 --> 00:32:16,451
+times probability of
+
+115
+00:32:20,372 --> 00:32:30,611
+A, B, then let's say given C. So C happened. After C happens, what's the probability of B?
+
+116
+00:32:32,292 --> 00:32:42,691
+And now the third, so C happened, B happened, then probability of A is happening, given
+
+117
+00:32:42,691 --> 00:33:06,451
+Now, which of these are happened now? Both C and B happened. So I will write what? Probability of A given B and C. So this notation says both B and C are known to happen already. We know that they happened, they occurred.
+
+118
+00:33:06,451 --> 00:33:34,392
+And then the probability of B in this case. When C happens and then probability of C. So you can change the order of these things, by the way. So this is also equal to, let's say you can start by A, probability of A, then probability of, let's say,
+
+119
+00:33:34,391 --> 00:34:04,091
+B given A, then probability of now C given A and B. So I hope you get the general idea. So this is called chain rule. So this is chain rule in intersection. Now you can think
+
+120
+00:34:04,391 --> 00:34:08,291
+conditional versions of these two.
+
+121
+00:34:19,347 --> 00:34:24,147
+Or you can think that
+
+122
+00:34:28,980 --> 00:34:46,980
+You can write conditional versions of this if you want. You can say probability of A intersection B equal to given C.
+
+123
+00:34:47,699 --> 00:35:12,899
+is equal to now you can apply this rule, but you will just put C's there. Probability of A intersection. Now I am adding C as a as a condition, but B is already there. So B and C, so I can write B and C this way.
+
+124
+00:35:12,899 --> 00:35:41,899
+times this guy probability of B given now C. So I added C to all conditions. And the notation here is if you have like these commas here, it just means intersection, by the way.
+
+125
+00:35:41,899 --> 00:35:42,899
+So
+
+126
+00:36:03,507 --> 00:36:05,948
+So,
+
+127
+00:36:08,148 --> 00:36:14,527
+Note that probability of
+
+128
+00:36:17,556 --> 00:36:18,556
+A given B, C is sometimes written as probability of A, B intersection C. So the comma, the comma is just intersection. Okay, whenever you see comma in probability, it's just intersection. There are different notation conventions, conventions,
+
+129
+00:36:47,556 --> 00:37:17,556
+different authors use different notations. One of the one of the conventions is when you have, especially this is done on intersections because intersections are used a lot. So this is one way to do it. Some authors even do that probability of a given BC. So some authors even don't write
+
+130
+00:37:17,556 --> 00:37:29,556
+They just write the letters and if there is nothing between the letters it means intersection. They are all same thing.
+
+131
+00:37:33,876 --> 00:38:00,675
+Okay. And again, these might be in the other side too. So you might have probability of A, B, given C, something like that. And again, this is just probability of A intersection B, given C. Okay.
+
+132
+00:38:03,699 --> 00:38:09,160
+I hope this this part is clear. This part is important.
+
+133
+00:38:13,460 --> 00:38:40,159
+Are we going to see the proof of the chain rule? No, I will not give the proof of chain rule, but it is, it's not that hard actually, you can just apply the conditional probability multiple times, I guess. I don't remember now, but it's not that hard to obtain it. The first chain rule is directly from
+
+134
+00:38:40,159 --> 00:38:55,219
+this one the first chain rule is like when you have two events a and b it comes directly from conditional probability definition. Remember, what is the definition of conditional probability?
+
+135
+00:38:56,439 --> 00:39:07,699
+It is probability of a given b equal to probability of a intersection b divided by probability of b. And
+
+136
+00:39:07,699 --> 00:39:31,699
+All we did here is just sending the B to the other side and taking out this intersection. Right. It's nothing else. Okay. So this, the way you have a pair of events, that's just it. And the triple one, it's a good exercise, you can try to get that at home.
+
+137
+00:39:31,699 --> 00:39:38,699
+I believe you can obtain it by applying this rule multiple times.
+
+138
+00:39:38,699 --> 00:39:46,699
+Okay. Now, before giving a
+
+139
+00:39:51,251 --> 00:40:08,291
+A break. I want to talk about quiz. Next week, one week later, in the third hour, we will have a quiz. Okay, so
+
+140
+00:40:13,715 --> 00:40:15,715
+So next week
+
+141
+00:40:18,675 --> 00:40:35,955
+We will have a quiz. And it will be third hour of the next week. So it will start at
+
+142
+00:40:37,876 --> 00:41:00,796
+15.00. Okay. And it may be at most 50 minutes. So you will need less than 50 minutes for it. So in that third hour, we will finish it.
+
+143
+00:41:00,796 --> 00:41:19,935
+to the contents, the contents will be whatever we have, including this lecture, this lecture, everything.
+
+144
+00:41:23,284 --> 00:41:36,483
+we learned, including this lecture. Okay.
+
+145
+00:41:38,675 --> 00:41:39,595
+uh
+
+146
+00:41:43,284 --> 00:42:05,124
+I think if I don't remember wrong, it should be 10 points. I guess. So it's percent which is 10. I'm not sure about this. This you can check out Bologna system, but I think it was 10 points.
+
+147
+00:42:05,124 --> 00:42:20,624
+It will be a test. Okay. Multiple choice, multiple choice and I want to do it in online Yildiz EduTR system.
+
+148
+00:42:46,260 --> 00:43:06,260
+Yes. So I don't, I didn't, we didn't have a chance to try this new system because it's a new system. So I want you to help me now. Log in here right now, right now. Log in here.
+
+149
+00:43:09,260 --> 00:43:16,260
+And there should be an, a very short two question quiz.
+
+150
+00:43:23,507 --> 00:43:29,187
+And answer questions.
+
+151
+00:43:32,067 --> 00:43:34,607
+You don't need to read, just answer.
+
+152
+00:43:35,647 --> 00:43:39,987
+I will not grade them.
+
+153
+00:43:41,188 --> 00:43:44,848
+Just to, I want to be able to see that the system works.
+
+154
+00:43:45,108 --> 00:43:46,167
+Can you do that for me?
+
+155
+00:43:48,167 --> 00:43:50,067
+Şu anda sizden bir ricam var.
+
+156
+00:43:51,107 --> 00:43:52,507
+Bu sistemi denemek istiyorum.
+
+157
+00:43:52,507 --> 00:43:55,507
+Online Yıldız EduTR system.
+
+158
+00:43:55,507 --> 00:44:03,507
+There is a new one.
+
+159
+00:44:03,507 --> 00:44:06,507
+The new one is not to be able to do this.
+
+160
+00:44:06,507 --> 00:44:11,507
+You can only see one of the two questions.
+
+161
+00:44:11,507 --> 00:44:21,507
+You can see the new one.
+
+162
+00:44:21,507 --> 00:44:30,688
+Then we'll start with 2.00 at 2.00 at the end.
+
+163
+00:44:32,027 --> 00:44:33,948
+Can you say something?
+
+164
+00:44:35,168 --> 00:44:36,368
+Of course.
+
+165
+00:44:36,368 --> 00:44:40,768
+I mean, for example, my relationship is kopted.
+
+166
+00:44:40,768 --> 00:44:41,368
+Why?
+
+167
+00:44:41,368 --> 00:44:57,368
+I'm a city of the city.
+
+168
+00:44:57,368 --> 00:45:05,368
+Or, I'm a city of the city.
+
+169
+00:45:05,368 --> 00:45:09,368
+I'm a city of the city.
+
+170
+00:45:09,368 --> 00:45:27,368
+I'm going to go back to the screen.
+
+171
+00:45:27,368 --> 00:45:37,368
+I'm going back to the screen.
+
+172
+00:45:31,347 --> 00:45:37,347
+Yes, of course, there are some things that are happening.
+
+173
+00:45:37,347 --> 00:45:42,347
+The students usually do not have a problem.
+
+174
+00:45:42,347 --> 00:45:46,347
+The pandemic is not a problem.
+
+175
+00:45:46,347 --> 00:45:51,347
+The problem is that there is a problem.
+
+176
+00:45:51,347 --> 00:45:54,347
+I think that there is a problem.
+
+177
+00:45:54,347 --> 00:45:59,347
+Yes, of course, there is a problem.
+
+178
+00:45:59,347 --> 00:46:02,628
+Quizlerde yapılabilir mi?
+
+179
+00:46:02,628 --> 00:46:06,667
+Quizde de yapılır herhalde sonuç itibariyle.
+
+180
+00:46:06,667 --> 00:46:10,147
+Normalde quizlerin bahanesi olmaz.
+
+181
+00:46:10,548 --> 00:46:12,028
+Sınavların bahanesi olur.
+
+182
+00:46:12,728 --> 00:46:16,388
+Fakat sonuç itibariyle pandemi dönemidir bilmem nedir.
+
+183
+00:46:16,928 --> 00:46:19,327
+Büyük ihtimal quizlerde de tekrar yapılabilir.
+
+184
+00:46:21,007 --> 00:46:22,248
+Ben şimdi girdim.
+
+185
+00:46:22,347 --> 00:46:25,587
+Siz şu anda online'dan girip bir şey istiyorsunuz değil mi?
+
+186
+00:46:25,627 --> 00:46:27,528
+Oranın çalışıp çalışmadığını görmemizi istiyoruz.
+
+187
+00:46:27,547 --> 00:46:28,547
+Görmek istiyorum.
+
+188
+00:46:28,547 --> 00:46:30,547
+I'm going to see you and I'm going to see you.
+
+189
+00:46:30,547 --> 00:46:32,547
+So, the system is going to see you.
+
+190
+00:46:32,547 --> 00:46:38,547
+We will see you in the next week.
+
+191
+00:46:38,547 --> 00:46:40,547
+If you have any questions,
+
+192
+00:46:40,547 --> 00:46:44,547
+you can see you in the internet
+
+193
+00:46:44,547 --> 00:46:46,547
+with the internet connection.
+
+194
+00:46:46,547 --> 00:46:50,547
+Or you can see you in the next week.
+
+195
+00:46:50,547 --> 00:46:51,547
+Of course, we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we can't believe that we
+
+196
+00:47:20,547 --> 00:47:24,547
+The student will be a part of the pandemic.
+
+197
+00:47:24,547 --> 00:47:25,547
+The student will be a part of the student's
+
+198
+00:47:25,547 --> 00:47:27,547
+student's student's student.
+
+199
+00:47:27,547 --> 00:47:31,547
+And the student will be a part of the student's student.
+
+200
+00:47:31,547 --> 00:47:37,547
+You can see the student's student's student's student.
+
+201
+00:47:37,547 --> 00:47:40,547
+You can see the student's student's student.
+
+202
+00:47:40,547 --> 00:47:47,547
+I don't know.
+
+203
+00:47:47,547 --> 00:47:57,547
+I'm a professor at the university.
+
+204
+00:47:57,547 --> 00:47:59,547
+So if you don't know what you're doing,
+
+205
+00:47:59,547 --> 00:48:01,547
+you can learn about it.
+
+206
+00:48:01,547 --> 00:48:03,547
+I'm a professor at the university.
+
+207
+00:48:03,547 --> 00:48:05,547
+We're going to get a professor at the university.
+
+208
+00:48:05,547 --> 00:48:15,547
+I'm a professor at the university.
+
+209
+00:48:15,547 --> 00:48:17,547
+I don't know what I mean.
+
+210
+00:48:17,547 --> 00:48:19,547
+I didn't know what I mean.
+
+211
+00:48:19,547 --> 00:48:21,547
+Okay, look at that.
+
+212
+00:48:21,547 --> 00:48:23,547
+Let me see what I mean.
+
+213
+00:48:23,547 --> 00:48:25,547
+There is a automatic
+
+214
+00:48:25,547 --> 00:48:27,547
+notification.
+
+215
+00:48:27,547 --> 00:48:29,547
+One of the things that I have
+
+216
+00:48:29,547 --> 00:48:31,547
+is
+
+217
+00:48:31,547 --> 00:48:33,547
+a
+
+218
+00:48:33,547 --> 00:48:35,547
+first question.
+
+219
+00:48:35,547 --> 00:48:37,547
+First question.
+
+220
+00:48:37,547 --> 00:48:41,547
+Can you read the chat?
+
+221
+00:48:41,547 --> 00:48:46,547
+The first question is what was the first question?
+
+222
+00:48:51,956 --> 00:48:55,155
+and the results of the study is written by the study.
+
+223
+00:48:59,155 --> 00:49:01,155
+Yes.
+
+224
+00:49:01,155 --> 00:49:04,155
+Hocam sınavı tamamladığımız için görünmüyor şu anda.
+
+225
+00:49:04,155 --> 00:49:05,155
+Yes.
+
+226
+00:49:05,155 --> 00:49:06,155
+Tamam, şu anda tekrar göremiyorsunuz.
+
+227
+00:49:06,155 --> 00:49:07,155
+Tamam.
+
+228
+00:49:07,155 --> 00:49:12,155
+Anladım, sınav bitince.
+
+229
+00:49:12,155 --> 00:49:13,155
+Uzatabiliyorum gerçi.
+
+230
+00:49:13,155 --> 00:49:15,155
+Bir daha bir deneyim dur bakalım.
+
+231
+00:49:16,155 --> 00:49:18,155
+Online Yıldız Etüter'e giriyorum.
+
+232
+00:49:21,780 --> 00:49:25,999
+Ders nasıl şimdi? Baya karışık bu sistem.
+
+233
+00:49:29,396 --> 00:49:55,396
+I'm going to give my class.
+
+234
+00:49:55,396 --> 00:49:57,396
+Okay, it's not a good thing.
+
+235
+00:49:57,396 --> 00:50:03,476
+I think that's the case of 1.2, 1.2, 1.2.
+
+236
+00:50:03,616 --> 00:50:05,396
+Is there any other oushooks?
+
+237
+00:50:05,396 --> 00:50:10,396
+I think that's the answer to the question.
+
+238
+00:50:13,460 --> 00:50:23,460
+Yes, now I will thank you for the time.
+
+239
+00:50:28,179 --> 00:50:31,939
+Derse devam edeceğiz. Şu anda bir 10 dakikalık ara verelim arkadaşlar.
+
+240
+01:02:07,827 --> 01:02:14,827
+Yes, I am coming to the table.
+
+241
+01:02:21,684 --> 01:02:23,684
+system and login.
+
+242
+01:02:26,684 --> 01:02:29,963
+Direkt notlarınızı görebiliyor muyum acaba?
+
+243
+01:02:33,043 --> 01:02:33,923
+So,
+
+244
+01:02:39,411 --> 01:02:44,211
+and finish your first time.
+
+245
+01:02:46,579 --> 01:02:51,579
+Tıklayabiliyor muyum üzerine? Tıklayamıyorum.
+
+246
+01:02:54,132 --> 01:03:10,132
+Notları buraya yazmış. Not listesini benim için çıkartmış. Güzel. Siz login olunca doğruyu yanlışı görebiliyor musunuz acaba?
+
+247
+01:03:12,211 --> 01:03:16,211
+Or you can see your system or your own system?
+
+248
+01:03:16,211 --> 01:03:20,211
+Or you can see your own system?
+
+249
+01:03:26,260 --> 01:03:34,419
+but not only the number of people are given.
+
+250
+01:04:15,123 --> 01:04:17,123
+Peki biz devam edelim
+
+251
+01:04:22,996 --> 01:04:26,996
+If this is a change, I will give you a email.
+
+252
+01:04:26,996 --> 01:04:30,996
+If we don't have any other system, we will do it.
+
+253
+01:04:30,996 --> 01:04:34,996
+If we don't have any other system,
+
+254
+01:04:34,996 --> 01:04:40,996
+I will give you a mail.
+
+255
+01:05:04,788 --> 01:05:05,827
+So
+
+256
+01:05:10,195 --> 01:05:21,195
+We finished basic probability. We almost finished. Let's look at an
+
+257
+01:05:23,795 --> 01:05:34,295
+Let's look at a specific kind of application that you might come across to. This is called reliability.
+
+258
+01:05:39,284 --> 01:05:53,284
+A lot of the times we are asked questions about whether a system what is the probability of a system works without failing
+
+259
+01:05:55,476 --> 01:06:10,875
+And for example, let's look at this example. Let's look at this question. So there is a 100% probability for a hard drive to crash. So there's a hard drive.
+
+260
+01:06:10,875 --> 01:06:17,875
+And its probability of failing or crashing is 1%.
+
+261
+01:06:17,875 --> 01:06:20,875
+Therefore, it has two backups.
+
+262
+01:06:20,875 --> 01:06:25,875
+So in addition to this hard drive, there are two backup hard drives.
+
+263
+01:06:25,875 --> 01:06:30,876
+And each of them has a 2% probability of crashing.
+
+264
+01:06:30,876 --> 01:06:34,876
+And all three components are independent of each other.
+
+265
+01:06:34,876 --> 01:06:39,876
+So if one fails, the other can crash or not.
+
+266
+01:06:39,875 --> 01:06:46,115
+or not. They are independent from each other. The stored
+
+267
+01:06:46,115 --> 01:06:51,835
+information is lost only all of the three devices crash. What is
+
+268
+01:06:51,835 --> 01:06:55,955
+the probability that the information is saved? I mean,
+
+269
+01:06:55,955 --> 01:07:03,715
+there are no crashes. Let's try to let's try to model this
+
+270
+01:07:03,715 --> 01:07:08,595
+question first. As usual, first thing we do is give some letters
+
+271
+01:07:08,595 --> 01:07:09,915
+to the events.
+
+272
+01:07:10,775 --> 01:07:11,155
+So,
+
+273
+01:07:12,395 --> 01:07:14,415
+the event that
+
+274
+01:07:14,415 --> 01:07:16,935
+original hard drive crashes,
+
+275
+01:07:17,615 --> 01:07:19,035
+let us call it H.
+
+276
+01:07:19,875 --> 01:07:22,255
+The event that backup 1 crashes,
+
+277
+01:07:23,015 --> 01:07:24,655
+let us call it B1.
+
+278
+01:07:25,295 --> 01:07:27,175
+And backup 2 crashes,
+
+279
+01:07:27,655 --> 01:07:29,155
+the event that backup 2 crashes,
+
+280
+01:07:29,815 --> 01:07:31,815
+let us call it B2.
+
+281
+01:07:32,815 --> 01:07:34,495
+Now, we are given
+
+282
+01:07:34,495 --> 01:07:36,675
+the probabilities of these events.
+
+283
+01:07:36,675 --> 01:07:40,755
+So probability of hash is 0.01.
+
+284
+01:07:40,755 --> 01:07:44,355
+Probability of B1 is 0.02.
+
+285
+01:07:44,355 --> 01:07:47,675
+Probability of B3 is 0.02.
+
+286
+01:07:48,915 --> 01:07:51,215
+And what is, what is they want?
+
+287
+01:07:51,215 --> 01:07:52,915
+What is the question?
+
+288
+01:07:52,915 --> 01:07:57,915
+Well, what is the probability that the information is saved?
+
+289
+01:07:58,196 --> 01:07:59,775
+What does that mean?
+
+290
+01:07:59,775 --> 01:08:04,775
+That means at least one of these disks work, right?
+
+291
+01:08:07,636 --> 01:08:12,916
+when does the information lost? If all of them, all three of them
+
+292
+01:08:13,755 --> 01:08:17,755
+crashes at the same time, we lose the information. Now here,
+
+293
+01:08:20,675 --> 01:08:24,856
+how can we write that? Well, one way to write is you can say,
+
+294
+01:08:24,856 --> 01:08:26,875
+okay, I want the probability of
+
+295
+01:08:29,075 --> 01:08:35,435
+hardware, original hard drive not crushing, or first backup not
+
+296
+01:08:35,435 --> 01:08:42,635
+crushing or second backup not rushing if any of these not
+
+297
+01:08:42,635 --> 01:08:52,755
+crush then information is saved. That is a now the problem with
+
+298
+01:08:52,755 --> 01:08:56,855
+this approach is okay this equation is true but calculating
+
+299
+01:08:56,855 --> 01:09:03,195
+it directly may be a little a little tough a little complicated
+
+300
+01:09:03,196 --> 01:09:08,196
+because to be able to calculate this,
+
+301
+01:09:08,196 --> 01:09:13,196
+sorry, to be able to calculate this expression,
+
+302
+01:09:13,196 --> 01:09:18,196
+we will need to use this rule,
+
+303
+01:09:18,196 --> 01:09:23,196
+which says probability of A union B union C
+
+304
+01:09:23,595 --> 01:09:26,895
+is probability of A plus B plus C.
+
+305
+01:09:26,895 --> 01:09:31,895
+So you are summing the individual probabilities,
+
+306
+01:09:31,895 --> 01:09:52,895
+minus the probabilities of pairs. So you subtract probability of a intersection B subtract a intersection C and subtract a B intersection C
+
+307
+01:09:53,811 --> 01:09:54,811
+Then plus subtract. So it goes plus minus plus. You add the intersection of all three things. So this comes from you can prove it in different ways. But one way to think about it's so if you have three sets like
+
+308
+01:10:23,811 --> 01:10:30,811
+A, B, B, C, you are kinda,
+
+309
+01:10:35,091 --> 01:10:37,091
+If you want to take the union
+
+310
+01:10:41,140 --> 01:10:42,140
+You are using this this intersection twice. So we are subtracting it here. Similarly, you subtract these two. Now, in that case, you are subtracting this middle part too much. So we are adding it back here, right?
+
+311
+01:11:11,140 --> 01:11:40,900
+Now, this is a kind of messy situation we have. So instead of that, why not we just use this idea. So instead of directly working sorry. Instead of directly working with this, we can say, okay, I can think about like this, not all crashes. So
+
+312
+01:11:40,899 --> 01:12:08,199
+not all of them crashes, right? And all of them crashes means probability of first original hard disk crashes and backup one crashes and backup two crashes. Now, if you take the nut of this, so take the complement of this, you get that, right?
+
+313
+01:12:08,199 --> 01:12:10,199
+So
+
+314
+01:12:13,811 --> 01:12:14,811
+And the probability we will have is one minus probability of all of them crashing. Right. And this is very easy to calculate why here we have independent events. If you don't have independent events, we must use the chain rule. But in this case, we do the question says, the devices are independent. So I, so
+
+315
+01:12:43,811 --> 01:13:12,852
+So this this this intersections probability can be just calculated by multiplying individual probabilities. So that's very easy, isn't it? It's much easier. So in general, these kinds of questions are called reliability questions. And
+
+316
+01:13:18,260 --> 01:13:23,959
+Sometimes these questions are asked in terms of circuits.
+
+317
+01:13:24,959 --> 01:13:26,159
+Sir, can I ask something?
+
+318
+01:13:26,459 --> 01:13:27,260
+Yes, sure.
+
+319
+01:13:27,959 --> 01:13:32,559
+If we went for the first method in the previous exercise.
+
+320
+01:13:33,059 --> 01:13:33,559
+Yes.
+
+321
+01:13:33,559 --> 01:13:43,260
+The events are independent, so maybe the probability of the intersections is zero in the first method.
+
+322
+01:13:43,260 --> 01:14:10,620
+The probability of intersections are not zero, but their probability can be calculated quite easily. So since the events are independent, for example, this guy's probability is probability of A times probability of C.
+
+323
+01:14:10,620 --> 01:14:23,740
+Right? In case of independent events, we can calculate the intersection by multiplying their probability directly.
+
+324
+01:14:23,740 --> 01:14:39,980
+Okay. Okay, so you can actually calculate this. I mean, you can write it and calculate it, but you have one, two, three, four, five, six, seven terms there. Here you can, you just have two terms, right?
+
+325
+01:14:39,980 --> 01:14:53,980
+So it's much easier to calculate. So it may be easier to think, to be able to think that way, like the inverse way.
+
+326
+01:14:53,980 --> 01:15:08,980
+So sometimes these questions are asked as part of a circuit design. So for example, in this case, let's say,
+
+327
+01:15:08,980 --> 01:15:38,959
+Let's say we have a device A, this can be a hard disk or I don't know, a light bulb or in a circuit, it may be some kind of device. But the thing is, they are A and B are devices and they are connected serially meaning to the system to the whole system to work both A and B must work.
+
+328
+01:15:38,980 --> 01:16:02,659
+Okay, so if you can think of there is a current going on here. So to the current to move on, the current must go through this and this right. And if any of these do not work, if any of these fail, the current will not move to the other side.
+
+329
+01:16:04,060 --> 01:16:04,539
+So
+
+330
+01:16:08,659 --> 01:16:27,659
+This is general, it's not only for current, but there might be the case that two devices must work together for the system to work. Right. So in this kind of situation, you might ask the probability of system working.
+
+331
+01:16:27,659 --> 01:16:37,459
+So for example, let's say S is the event that system works, doesn't crash, doesn't fail.
+
+332
+01:16:38,459 --> 01:16:46,299
+And A is the probability, sorry, A is the event that device A works without a problem.
+
+333
+01:16:46,759 --> 01:16:49,700
+And B is the event that device B works.
+
+334
+01:16:50,500 --> 01:16:58,020
+Now, the probability of this system work, working without, without the problem is,
+
+335
+01:16:58,659 --> 01:17:05,619
+if you think about it, A must work and B must work. And what is that? That's intersection.
+
+336
+01:17:05,619 --> 01:17:13,780
+So that's the probability of intersection of A working and B working. Okay.
+
+337
+01:17:13,779 --> 01:17:20,779
+Okay. And similar to this, there is the parallel connection.
+
+338
+01:17:20,779 --> 01:17:26,779
+Again, you might see this in as part of a circuit.
+
+339
+01:17:26,779 --> 01:17:38,779
+Representation, let's say, so in this case, a and b are in parallel.
+
+340
+01:17:38,779 --> 01:17:42,139
+So if any of them does not work,
+
+341
+01:17:42,139 --> 01:17:44,779
+let's say if one of them does not work,
+
+342
+01:17:44,779 --> 01:17:47,219
+let's say B doesn't work.
+
+343
+01:17:47,219 --> 01:17:50,539
+The system will still work, right?
+
+344
+01:17:50,539 --> 01:17:53,499
+You can again think about current.
+
+345
+01:17:53,499 --> 01:17:58,179
+A current comes here and it can go either here or here.
+
+346
+01:17:58,179 --> 01:18:02,459
+And if B works, if B doesn't work,
+
+347
+01:18:02,459 --> 01:18:07,099
+it doesn't really matter because A works, right?
+
+348
+01:18:07,099 --> 01:18:08,959
+And this is like a backup.
+
+349
+01:18:08,959 --> 01:18:15,399
+You can think of this as a hard disk and think of this as the backup.
+
+350
+01:18:15,399 --> 01:18:17,559
+So if hard disk fails,
+
+351
+01:18:17,559 --> 01:18:20,919
+we can still get the data from the backup.
+
+352
+01:18:20,919 --> 01:18:26,499
+Right? Now in this kind of situation,
+
+353
+01:18:26,499 --> 01:18:29,539
+if this is the system,
+
+354
+01:18:29,539 --> 01:18:35,339
+probability of system working without a problem is,
+
+355
+01:18:35,339 --> 01:18:59,099
+the union of these two devices, successful working. So we want a works or B works, right? So union is like or intersection is like and right. So we want either a to work or be to work.
+
+356
+01:18:59,100 --> 01:19:09,100
+So in this case, again, you just need to calculate this union.
+
+357
+01:19:09,100 --> 01:19:22,100
+And so you just need to calculate this union and if you want, you can use the union rule,
+
+358
+01:19:22,100 --> 01:19:30,100
+let's say for probability is probability of a plus probability of B minus this guy.
+
+359
+01:19:30,100 --> 01:19:42,100
+Or you can use the other logic like you can you try to use this kind of thinking again.
+
+360
+01:19:42,100 --> 01:19:48,100
+can if if you have more than one more than two devices.
+
+361
+01:19:51,100 --> 01:19:56,100
+Instead of calculating the union, you can just subtract
+
+362
+01:19:56,100 --> 01:20:02,100
+the complements intersection from one right there same thing.
+
+363
+01:20:03,100 --> 01:20:07,100
+And if they are independent, if the
+
+364
+01:20:07,199 --> 01:20:18,719
+devices work independently. You can calculate this by simple multiplication. Let's do an example of this.
+
+365
+01:20:27,699 --> 01:20:42,699
+So let's say here you have this system and you want to calculate its reliability. So the question is calculate the reliability of the system.
+
+366
+01:20:43,599 --> 01:20:45,499
+System is here the whole thing.
+
+367
+01:20:46,399 --> 01:20:46,800
+Okay.
+
+368
+01:20:46,800 --> 01:20:59,300
+Let's say this is a system and each component is operable with probability 0.92 independently
+
+369
+01:20:59,300 --> 01:21:01,999
+from other components.
+
+370
+01:21:01,999 --> 01:21:10,299
+So each of these guys work without a problem with probability 0.92 and they are independent
+
+371
+01:21:10,299 --> 01:21:12,600
+from each other.
+
+372
+01:21:12,599 --> 01:21:17,079
+So what is the probability of the whole system working?
+
+373
+01:21:17,079 --> 01:21:24,079
+Now, in this case, a good approach is to divide the divide
+
+374
+01:21:24,079 --> 01:21:28,639
+and conquer to applying to divide and conquer to the problem.
+
+375
+01:21:28,639 --> 01:21:33,039
+So you can first think about these two guys, let's say,
+
+376
+01:21:33,039 --> 01:21:37,920
+then think about these two guys, right?
+
+377
+01:21:37,920 --> 01:21:41,519
+And like this, you can find a serial part
+
+378
+01:21:41,519 --> 01:21:45,659
+and then find a parallel part and step by step,
+
+379
+01:21:45,659 --> 01:21:49,699
+you can reduce the problem and solve it.
+
+380
+01:21:49,699 --> 01:21:52,079
+So for example, here in this case,
+
+381
+01:21:55,179 --> 01:21:57,339
+this is a rewrite of the problem.
+
+382
+01:21:58,880 --> 01:22:03,000
+And we first again, try to model this problem
+
+383
+01:22:03,000 --> 01:22:07,259
+by giving names, letters to the events.
+
+384
+01:22:07,259 --> 01:22:12,259
+And A is the event that first gadget, first device works.
+
+385
+01:22:13,799 --> 01:22:18,179
+And its probability of working is 0.92.
+
+386
+01:22:18,179 --> 01:22:21,579
+B, C, D, E, you have similar situation.
+
+387
+01:22:21,579 --> 01:22:26,439
+And we are asked for the probability of systems working,
+
+388
+01:22:26,439 --> 01:22:27,479
+the whole system.
+
+389
+01:22:27,479 --> 01:22:31,139
+And S in this case is the event the whole system works.
+
+390
+01:22:31,139 --> 01:22:36,140
+Now, what we can do is,
+
+391
+01:22:36,140 --> 01:22:42,140
+let's say we can start from this top branch.
+
+392
+01:22:42,140 --> 01:22:47,140
+And A and B on this branch are serial.
+
+393
+01:22:47,140 --> 01:22:51,140
+So instead of A and B,
+
+394
+01:22:51,140 --> 01:22:56,140
+we will think of it as a single device.
+
+395
+01:22:56,140 --> 01:22:59,140
+And we will call that device F.
+
+396
+01:22:59,140 --> 01:23:18,140
+And probability of that F is just a probability of A intersection B because for this branch to work both A and B must work.
+
+397
+01:23:20,140 --> 01:23:27,140
+So then A and B and since these are independent, we can just multiply their probabilities.
+
+398
+01:23:27,140 --> 01:23:39,960
+Each of these is 0.92. So we have 0.92 square as the probability of this new device that
+
+399
+01:23:39,960 --> 01:23:45,360
+will replace this top branch.
+
+400
+01:23:45,360 --> 01:23:56,860
+And similarly, now for D and E, again, we can calculate the probability.
+
+401
+01:23:56,859 --> 01:24:01,839
+they are parallel to each other. And we are talking about now
+
+402
+01:24:01,839 --> 01:24:08,799
+their union. And as I said, instead of unions, it's easier
+
+403
+01:24:08,799 --> 01:24:13,539
+to calculate
+
+404
+01:24:15,819 --> 01:24:19,599
+there is a mistake here. Can you see can you see this?
+
+405
+01:24:22,119 --> 01:24:23,919
+We need to subtract
+
+406
+01:24:25,300 --> 01:24:38,300
+intersection of their complements. Okay. So then what is this? This should be, okay.
+
+407
+01:24:41,779 --> 01:24:43,939
+Let me remove this layers.
+
+408
+01:24:46,160 --> 01:24:47,779
+0.08 maybe
+
+409
+01:24:49,379 --> 01:24:55,979
+Yes, you're right. This should be 0.08 square right because
+
+410
+01:24:57,499 --> 01:25:03,919
+Each complement has probability 0.08
+
+411
+01:25:04,880 --> 01:25:08,239
+And we have two of these guys so there will be a square here.
+
+412
+01:25:08,239 --> 01:25:13,239
+and that will be
+
+413
+01:25:16,627 --> 01:25:26,827
+That will be the probability of G, let's say.
+
+414
+01:25:28,916 --> 01:25:40,735
+Let's say this is G. These two, I will just call G. And that way you can calculate the probability of G and now you can write the system
+
+415
+01:25:43,735 --> 01:25:58,435
+In this way so you you merged A and B to F you merged D and E to G. And now your whole system is this. So we kind of made this made the problem smaller
+
+416
+01:25:58,916 --> 01:26:08,215
+And now you can continue like this right on each serial branch, you will do an intersection on each parallel
+
+417
+01:26:09,515 --> 01:26:21,316
+branch or parallelism, let's say you will do a union this way. Now you can merge C and G into let's say, let's say H
+
+418
+01:26:21,315 --> 01:26:38,835
+And then its probability is the intersection of C and G. And now you will have them, these guys. And finally, now you have F and H and the system and its probability is
+
+419
+01:26:40,515 --> 01:26:47,475
+since these are parallel to each other, probability of F union H, right?
+
+420
+01:26:47,475 --> 01:26:48,475
+That will give you your final reliability estimate. Okay, this is, this is called reliability of a system. Are you okay with this guide? This is this is the type of problem. In Barone's book, you can find questions
+
+421
+01:27:17,475 --> 01:27:42,315
+regarding or related to this, this approach so you can work on this on Baron's book. I think Pichronik doesn't have this. I didn't remember. I don't remember. If this is okay, I will move to a new chapter or a new to a new subject is this is this clear
+
+422
+01:27:48,979 --> 01:27:53,360
+Okay. Let's move to counting.
+
+423
+01:27:59,507 --> 01:28:01,507
+Sayı saymayı öğreneceğiz arkadaşlar
+
+424
+01:28:05,747 --> 01:28:24,467
+say değil de kümenin elemanlarını saymayı öğreneceğiz. Why is counting important? Why are we looking at? Why are we discussing counting? Well, because
+
+425
+01:28:27,155 --> 01:28:55,155
+When we calculate probabilities of events, if the outcomes of the experiment have equal probabilities, then we calculate the events probability using this equation, we say probability of event A is equal to number of number of outcomes in the event divided by number of outcomes in the sample space.
+
+426
+01:28:55,155 --> 01:29:00,496
+right? So this is sample space.
+
+427
+01:29:04,659 --> 01:29:09,219
+Sometimes I am writing this as this sample space.
+
+428
+01:29:20,435 --> 01:29:27,635
+So that means we should be able to count the outcomes of an event.
+
+429
+01:29:27,635 --> 01:29:29,535
+An event is just a set.
+
+430
+01:29:30,215 --> 01:29:34,375
+So that means we need to be able to count the elements of a set.
+
+431
+01:29:35,575 --> 01:29:44,776
+Now, to count things, we will use, first of all, we need to consider this multiplication principle.
+
+432
+01:29:44,776 --> 01:29:50,935
+multiplication principle says that if we
+
+433
+01:29:50,935 --> 01:29:55,575
+first if we perform our experiments in
+
+434
+01:29:55,575 --> 01:30:02,616
+order in the order such that like we are
+
+435
+01:30:02,616 --> 01:30:05,895
+performing an experiments in order so we
+
+436
+01:30:05,895 --> 01:30:08,535
+have experiment one then we have
+
+437
+01:30:08,535 --> 01:30:10,935
+experiment two then we have experiment
+
+438
+01:30:10,935 --> 01:30:13,895
+three so we are performing these
+
+439
+01:30:13,895 --> 01:30:21,335
+experiments and outcomes for each experiment is
+
+440
+01:30:22,835 --> 01:30:28,296
+and I so first experiment has outcome and one second experiment
+
+441
+01:30:28,516 --> 01:30:35,435
+has outcome and two. The third experiment has outcome and three
+
+442
+01:30:35,435 --> 01:30:44,935
+or I should say entry outcomes and the art experiment have r outcomes.
+
+443
+01:30:47,116 --> 01:30:48,035
+And then
+
+444
+01:30:50,116 --> 01:31:05,435
+number of outcomes of the sequence of these r experiments is given by. So this count is given by number of outcomes in the first experiment times
+
+445
+01:31:05,435 --> 01:31:12,635
+number of outcomes in the second experiment times up to number of
+
+446
+01:31:12,635 --> 01:31:20,035
+similar experiment in the last experiment. It's a mouthful but it's a
+
+447
+01:31:20,035 --> 01:31:25,635
+very simple idea. Let's look at an example.
+
+448
+01:31:37,108 --> 01:31:48,627
+So let's say you have a college planning committee and it has three freshmen, four sophomores, five juniors and two seniors and
+
+449
+01:31:50,108 --> 01:31:51,108
+I guess these are
+
+450
+01:31:55,028 --> 01:32:06,987
+The number of classes so freshmen might be first first classes first years sophomores might be second years juniors might be third years
+
+451
+01:32:07,108 --> 01:32:33,508
+and seniors might be 40 years if you have a four year college, then you already have a committee like this. Now you want to select a subcommittee. So a smaller committee out of these guys. And in this new subcommittee, one person from each class is to be chosen.
+
+452
+01:32:33,507 --> 01:32:42,867
+So then how many different subcommittees are possible? Right? So what we are seeing is
+
+453
+01:32:52,372 --> 01:32:59,691
+So from freshman, you'll select one person out of three.
+
+454
+01:33:00,651 --> 01:33:01,071
+Right.
+
+455
+01:33:03,891 --> 01:33:15,091
+Out of three. So you can think that this is all experiment one. Okay, selecting a freshman from these three is our first experiment.
+
+456
+01:33:15,091 --> 01:33:43,291
+and the outcome is one of these three guys. So how many outcomes we have? We have three outcomes. So N1 is three. Let's say and selecting SO4 more is our second experiment. We will call it N2 and it has four outcomes, four possible outcomes because we have four of these guys and we will select one of them.
+
+457
+01:33:43,291 --> 01:34:11,691
+Similarly, the third experiment has five outcomes because we have five juniors and last experiment and four has two outcomes and the final number of possible subcommittees can be obtained obtained by this multiplication principle.
+
+458
+01:34:11,691 --> 01:34:37,691
+It will be 3 times 4 times 5 times 2 right so we can have 20, 120 different subcommittees from this group okay
+
+459
+01:34:37,691 --> 01:34:43,691
+Okay. So this was the counting principle. Okay.
+
+460
+01:34:47,667 --> 01:34:48,667
+This was the sorry, this was multiplication principles. Okay, multiplication principle. Now this is the first step. Now in addition to this, we will learn counting methods. And what will we count? We will count the number of samples.
+
+461
+01:35:17,667 --> 01:35:21,667
+sampling is
+
+462
+01:35:24,979 --> 01:35:32,859
+Sampling is, you can think of it as drawing objects from a bag or from a set.
+
+463
+01:35:32,960 --> 01:35:34,179
+A bag is like a set.
+
+464
+01:35:34,179 --> 01:35:37,639
+So a set has elements.
+
+465
+01:35:37,919 --> 01:35:43,679
+So you choose some elements from a set or you draw objects from bags.
+
+466
+01:35:43,820 --> 01:35:44,639
+The same thing.
+
+467
+01:35:45,139 --> 01:35:46,379
+We call this sampling.
+
+468
+01:35:47,499 --> 01:35:54,839
+Now, when we talk about sampling, especially when you are sampling more than one element,
+
+469
+01:35:54,979 --> 01:36:05,939
+you need to consider whether you are sampling with replacement or not. So let's say you are,
+
+470
+01:36:05,939 --> 01:36:18,899
+you sample this guy. Okay, let me say you sample this guy. And now you will need to do another
+
+471
+01:36:18,899 --> 01:36:22,899
+sampling. Let's say you have you need to do multiple
+
+472
+01:36:22,899 --> 01:36:29,700
+samplings, you get multiple elements from the from the set.
+
+473
+01:36:29,700 --> 01:36:35,299
+Now, what will you do with the object you already have? If you
+
+474
+01:36:35,299 --> 01:36:41,099
+put it back before sampling again, this is called sampling
+
+475
+01:36:41,099 --> 01:36:47,399
+with replacement. And if you think about it, since you are
+
+476
+01:36:47,399 --> 01:36:56,579
+replacing the object back it is still in the back so you can you can choose it
+
+477
+01:36:56,579 --> 01:37:07,999
+again you can sample it again that means repetition is allowed so in your in your
+
+478
+01:37:07,999 --> 01:37:16,039
+selections you can have the same object more than once okay repetition is allowed
+
+479
+01:37:16,039 --> 01:37:23,539
+If it is not this, if it is not the case like this, you can't.
+
+480
+01:37:23,539 --> 01:37:34,039
+So let's say you get an object and then instead of putting back, you are thrashing that object.
+
+481
+01:37:34,039 --> 01:37:38,039
+Now you only have two objects left.
+
+482
+01:37:38,039 --> 01:37:45,039
+This kind of sampling is called sampling without replacement.
+
+483
+01:37:45,039 --> 01:37:49,340
+So you are not replacing, you are not replacing.
+
+484
+01:37:49,340 --> 01:37:51,200
+And again, in this case,
+
+485
+01:37:51,200 --> 01:37:56,200
+since the object you sample first is thrashed,
+
+486
+01:37:57,659 --> 01:38:02,659
+there is no repetition in the objects you choose, right?
+
+487
+01:38:04,119 --> 01:38:07,799
+This is called sampling without replacement,
+
+488
+01:38:07,799 --> 01:38:10,739
+or sometimes this is called no repetition.
+
+489
+01:38:10,739 --> 01:38:20,739
+So you need to consider this. Now, another thing you need to consider is whether we consider
+
+490
+01:38:20,739 --> 01:38:25,739
+whether we care about order or not.
+
+491
+01:38:25,739 --> 01:38:39,739
+So when you are selecting these objects, let's say you choose object A1, A2, and A3,
+
+492
+01:38:39,739 --> 01:38:52,219
+let's say. If the order you choose matters, so choosing first one, then second, then third
+
+493
+01:38:52,219 --> 01:39:01,019
+is different than choosing first, second, and third, and one, we call this ordered sampling.
+
+494
+01:39:01,019 --> 01:39:13,179
+And otherwise, if the order is not important, you call this unordered same thing. Okay,
+
+495
+01:39:14,219 --> 01:39:17,979
+so you have this, you have to consider this term.
+
+496
+01:39:20,379 --> 01:39:23,019
+And we will see these one by one.
+
+497
+01:39:24,500 --> 01:39:32,000
+So if you think about it now, you have these four situations.
+
+498
+01:39:35,412 --> 01:39:58,811
+So you can have ordered sampling and unordered sampling. And for each you need to consider whether they are with replacement or without replacement. So this gives you one, two, three, four different cases to think about.
+
+499
+01:39:58,811 --> 01:40:15,731
+And we will do this way we will take four different cases. The first case, let's say ordinate sampling with replacement. Let's look at that.
+
+500
+01:40:27,283 --> 01:40:40,664
+order sampling with replacement. In this case, the order matters. So,
+
+501
+01:40:45,524 --> 01:40:54,223
+The order matters. So let's say we originally have a set of three items. Let us call those items 123
+
+502
+01:40:55,423 --> 01:41:06,223
+And let us call the set a now we want to select two items from this set two elements from this set and
+
+503
+01:41:07,024 --> 01:41:15,223
+Let us call that number K. So K will be number of number of elements we want to draw
+
+504
+01:41:15,804 --> 01:41:22,763
+or select and n will be from now on will be number of elements
+
+505
+01:41:22,963 --> 01:41:29,024
+in the set we take values from elements from. So how many
+
+506
+01:41:29,024 --> 01:41:31,604
+elements we have in the set is n.
+
+507
+01:41:33,803 --> 01:41:40,043
+Okay, how many of them we choose is k, right. So let's say
+
+508
+01:41:40,044 --> 01:41:49,704
+we are we will choose these three elements. And now we will
+
+509
+01:41:49,704 --> 01:41:55,824
+do ordered sampling with replacement. What that what does
+
+510
+01:41:55,824 --> 01:42:01,163
+that mean with replacement meaning the two elements you
+
+511
+01:42:01,163 --> 01:42:08,284
+select can be the same element. So if you look at it here, we
+
+512
+01:42:08,283 --> 01:42:16,283
+will be able to. So we will we can get these three possible
+
+513
+01:42:17,223 --> 01:42:22,923
+selections. And if you look at it here, two and two is there. So
+
+514
+01:42:23,163 --> 01:42:28,263
+in the first something we got two, let's say, in the second
+
+515
+01:42:28,263 --> 01:42:34,143
+sampling, we can still get two, right. So one one, two two,
+
+516
+01:42:34,143 --> 01:42:42,123
+three are included. So that's with replacement. And ordered
+
+517
+01:42:42,243 --> 01:42:50,403
+means, let's say we have two one. We have 122, right? This is
+
+518
+01:42:50,463 --> 01:42:59,524
+ordered their order matters. So then, if you think about it,
+
+519
+01:42:59,524 --> 01:43:03,363
+how many different how many different
+
+520
+01:43:03,363 --> 01:43:12,083
+two how many different pairs you can select if you that's that's the guys you can select you have
+
+521
+01:43:12,083 --> 01:43:22,003
+one so you have one one two one three one one two two two three two one three two three three three
+
+522
+01:43:22,003 --> 01:43:28,303
+And this gives you nine possibilities. And how did we
+
+523
+01:43:28,303 --> 01:43:34,183
+calculate this? The way the way to calculate this is actually,
+
+524
+01:43:34,663 --> 01:43:42,403
+you can go like this. So I will select two elements, right? And
+
+525
+01:43:43,123 --> 01:43:47,843
+when selecting the first element, how many possibilities I
+
+526
+01:43:47,843 --> 01:43:54,343
+have? Well, I have 123 possibilities. And this is the
+
+527
+01:43:54,343 --> 01:44:00,943
+number of elements in the set and right now while choosing the
+
+528
+01:44:00,943 --> 01:44:06,943
+second selection. Since I replaced back the one I got
+
+529
+01:44:06,943 --> 01:44:14,543
+already. I still have three elements there. So I still have
+
+530
+01:44:14,543 --> 01:44:22,143
+n elements to choose from. So now using the multiplication
+
+531
+01:44:22,143 --> 01:44:32,143
+principle we just learned, I can say okay then with this idea
+
+532
+01:44:32,303 --> 01:44:37,903
+I have I can have n outcomes here from this experiment. I can have
+
+533
+01:44:37,903 --> 01:44:43,903
+n outcomes from this experiment and we can easily see that
+
+534
+01:44:43,028 --> 01:45:13,007
+Each drawing is an experiment and the number of outcomes from each experiment will be n. So I can just say that, okay, n times, n times, n times, how many of these I have? I have k of these. So I can just write, okay, I have n to the k different possible pairs.
+
+535
+01:45:13,028 --> 01:45:26,028
+to choose from. And so in general, I can just write number of possible number of possible
+
+536
+01:45:26,028 --> 01:45:40,028
+samplings is n to the k. That's your general equation. You can you can just use this equation or you can just use this idea.
+
+537
+01:45:40,028 --> 01:45:55,028
+For me usually using this idea is easier at this point. Usually I don't remember these equations. At least for this one I don't remember the equation. I just remember the logic.
+
+538
+01:45:57,747 --> 01:46:05,507
+Okay. So with this, we will continue and
+
+539
+01:46:06,867 --> 01:46:15,588
+We will see, okay, before that, let's, let's do an example and then we will do the other one. Let's look at the example.
+
+540
+01:46:17,268 --> 01:46:18,387
+The question is,
+
+541
+01:46:18,387 --> 01:46:48,067
+How many different license plates are possible in Turkey? So in Turkish traffic plates, you have things like 34 BA, 1482, I don't know. So you have your license plates are like this. So how many different
+
+542
+01:46:48,387 --> 01:46:56,047
+how many different license plates you can with this kind of pattern.
+
+543
+01:46:56,047 --> 01:47:14,027
+So that's because if you have more cars or more, let's say, traffic devices, you will need to change this pattern.
+
+544
+01:47:14,027 --> 01:47:17,387
+You will need to put more numbers here.
+
+545
+01:47:17,387 --> 01:47:22,428
+So how many different so now for this
+
+546
+01:47:24,667 --> 01:47:32,027
+Let's divide this into three because first we need to choose two
+
+547
+01:47:34,507 --> 01:47:35,627
+two numbers
+
+548
+01:47:36,908 --> 01:47:43,707
+and then we need to choose two letters and then we need to choose four numbers again
+
+549
+01:47:43,707 --> 01:48:12,947
+And how can we choose these two numbers? Well, I don't know if we can have zero here. Let's assume we can have zero. Let's make things simpler. So the set I have here is 0, 1, 2, 9. So n is 10. I have 10 elements.
+
+550
+01:48:12,947 --> 01:48:37,947
+and I have two things to select from. So I have 10 to the two possible numbers here. Right. Using this equation. For the letters, now you have 29 Turkish letters for the first letter.
+
+551
+01:48:37,947 --> 01:49:07,787
+again for the second you have another 29 letters so you have 29 square and for the final four numbers you have 10 to the four because for each you can have 10 different numbers and you have four selections to do and the final result will be multiplication of these
+
+552
+01:49:07,947 --> 01:49:10,947
+using the multiplication principle
+
+553
+01:49:10,947 --> 01:49:16,947
+Türkçe'de kaç karakter var arkadaşlar?
+
+554
+01:49:18,947 --> 01:49:22,247
+Evet. 29'du değil mi?
+
+555
+01:49:23,947 --> 01:49:25,807
+Yumuşak G'yi kullanamıyoruz herhalde.
+
+556
+01:49:27,128 --> 01:49:28,587
+O zaman 28 diyeceğiz.
+
+557
+01:49:33,447 --> 01:49:37,227
+Okey, let's say, so in this case we have 28.
+
+558
+01:49:37,947 --> 01:49:56,947
+And now this is the number of different license plates you can have in Turkey. So if you have more vehicles than this number, you will need to change this pattern.
+
+559
+01:49:57,072 --> 01:50:05,711
+And I don't know what this number is, but probably this, this is huge. So I don't expect that we will need to change this.
+
+560
+01:50:07,751 --> 01:50:11,111
+Okay, so this was an example of
+
+561
+01:50:12,711 --> 01:50:21,431
+ordered sampling with replacement. Now in the next lecture, we will look at ordered sampling without replacement. But
+
+562
+01:50:21,431 --> 01:50:27,091
+Before that let's take a break.
+
+563
+01:50:27,991 --> 01:50:30,731
+Arkadaşınız 9 ile başlayan da var mı ki demiş.
+
+564
+01:50:30,932 --> 01:50:32,491
+O kadarına evet haklısınız.
+
+565
+01:50:33,271 --> 01:50:35,432
+O kadar ayrıntıya girmedik.
+
+566
+01:50:36,271 --> 01:50:39,451
+Tüm sayılar kullanılabilir kabul ettik.
+
+567
+01:50:40,311 --> 01:50:43,432
+Yoksa her bir sayıyı tek tek düşünüp
+
+568
+01:50:43,432 --> 01:50:50,331
+burada hangileri kullanılabiliyor, burada hangileri kullanılabiliyor diye bakmanız mantıklı.
+
+569
+01:50:50,331 --> 01:50:57,331
+Now let's take 10 seconds to give us a minute
+
+570
+01:50:57,331 --> 01:50:59,331
+3 seconds to give us a minute
+
+571
+01:50:59,331 --> 01:51:01,072
+Benim saatime göre
+
+572
+02:02:57,427 --> 02:03:01,828
+Yes, I'm here, can you hear me?
+
+573
+02:03:12,500 --> 02:03:23,500
+So we have done the first branch here.
+
+574
+02:03:30,484 --> 02:03:54,484
+So we have done this guy. Now we have three more to go. Let's continue. Now we will talk about ordered sampling without replacement.
+
+575
+02:03:58,996 --> 02:04:00,996
+Now, in this case,
+
+576
+02:04:06,579 --> 02:04:10,579
+I want to again get two elements.
+
+577
+02:04:10,579 --> 02:04:16,579
+But the order matters.
+
+578
+02:04:16,579 --> 02:04:19,579
+The order matters.
+
+579
+02:04:19,579 --> 02:04:24,579
+But we don't replace the element,
+
+580
+02:04:24,579 --> 02:04:29,579
+the first element we got from the back or from the set.
+
+581
+02:04:29,579 --> 02:04:40,579
+So, you know, if you have 123, you can get this these pairs.
+
+582
+02:04:40,579 --> 02:04:42,579
+These these pairs.
+
+583
+02:04:42,579 --> 02:04:50,579
+And if you think about the previous previous guy, which of these, which of them are not here.
+
+584
+02:04:50,579 --> 02:04:54,579
+Remember, one one is not here.
+
+585
+02:04:54,579 --> 02:05:01,579
+Okay, two, two is not here and three, three is not here.
+
+586
+02:05:03,579 --> 02:05:04,579
+Okay.
+
+587
+02:05:05,579 --> 02:05:14,579
+So in the previous one, the order matter just like this, but it was with replacement now without replacement.
+
+588
+02:05:14,579 --> 02:05:18,579
+So when we get a one, we will not get a one again.
+
+589
+02:05:18,579 --> 02:05:21,579
+So I am getting rid of this.
+
+590
+02:05:21,579 --> 02:05:33,579
+Okay, these three. So these three are kind of reduced from more possible outcomes.
+
+591
+02:05:33,579 --> 02:05:41,579
+Sampling outcomes. So if you count this, you have six possibilities. Okay.
+
+592
+02:05:41,579 --> 02:05:49,579
+And how do we get this? How do we get the value six here? Actually, it's quite simple.
+
+593
+02:05:49,579 --> 02:05:52,219
+we just think like this, let's say,
+
+594
+02:05:53,700 --> 02:05:54,700
+let's say,
+
+595
+02:05:56,139 --> 02:06:01,020
+in like the example here, I have two things to select.
+
+596
+02:06:01,579 --> 02:06:03,020
+So I will get two elements.
+
+597
+02:06:03,819 --> 02:06:07,819
+Now, for the first element, while I selecting it,
+
+598
+02:06:08,940 --> 02:06:11,779
+all of the elements are in the set.
+
+599
+02:06:11,779 --> 02:06:14,619
+So one, two, three, all of them are there.
+
+600
+02:06:14,619 --> 02:06:18,499
+So I have N different things to select from.
+
+601
+02:06:19,579 --> 02:06:21,259
+Now I selected one.
+
+602
+02:06:22,400 --> 02:06:27,020
+And I am not replacing. So for the second sampling.
+
+603
+02:06:28,800 --> 02:06:34,820
+I have n minus one elements in the set, right? So for the second,
+
+604
+02:06:35,119 --> 02:06:41,440
+second slot, let's say, for the for the second selection, I
+
+605
+02:06:41,440 --> 02:06:45,740
+have n minus one elements in the set. So let's say I have
+
+606
+02:06:45,740 --> 02:06:54,060
+chosen one. Now I only have two and three. So it goes like this. If you want to select
+
+607
+02:06:54,060 --> 02:07:03,579
+a third element, now you will have n minus, so n minus two things to select from. And
+
+608
+02:07:03,579 --> 02:07:08,579
+if you if you continue for the kth,
+
+609
+02:07:10,960 --> 02:07:13,499
+for the kth sampling,
+
+610
+02:07:13,499 --> 02:07:17,680
+you have n minus k plus one things to select from.
+
+611
+02:07:20,320 --> 02:07:24,800
+So you can either use this simple logic.
+
+612
+02:07:24,800 --> 02:07:28,499
+And I always, if it is this simple,
+
+613
+02:07:28,499 --> 02:07:31,559
+I always just use this logic here,
+
+614
+02:07:31,559 --> 02:07:33,559
+But you can convert this to.
+
+615
+02:07:37,160 --> 02:07:42,559
+An equation and the equation is this n factorial.
+
+616
+02:07:43,759 --> 02:07:48,559
+So if you like this looks like n factorial right but.
+
+617
+02:07:50,160 --> 02:07:54,559
+The rest of the elements are not here right and the rest of elements are.
+
+618
+02:07:56,559 --> 02:08:00,559
+If you take one from this guy you have n minus k.
+
+619
+02:08:01,363 --> 02:08:02,363
+and then n minus K minus one, and this will go up to one and you are getting rid of these guys. How do you get rid of these guys? You divide n factorial by them, right? So you kind of divide n factorial to n minus K factorial. So if you need an equation, so if you have a larger
+
+620
+02:08:31,363 --> 02:08:43,363
+large if you have large numbers you can just use this equation n factorial divided by n minus k factorial.
+
+621
+02:08:46,420 --> 02:08:52,420
+and or if you have small numbers, you can just use the logic.
+
+622
+02:08:58,612 --> 02:09:01,612
+Let me remove layer two.
+
+623
+02:09:04,851 --> 02:09:30,532
+So those to summarize. Also the notation here is sometimes P and K is used. So this is also called K permutations of and distinguishable objects. The word distinguishable, distinguishable is means ordered. So
+
+624
+02:09:30,532 --> 02:09:42,532
+in some places, in some books authors use the word ordered, in some books they use the word distinguished and unordered
+
+625
+02:09:46,676 --> 02:09:48,676
+is used for undistinguished.
+
+626
+02:09:54,515 --> 02:10:13,715
+So let's say let's go back to our first definition of ordered. So ordered sampling is when you have distinguished objects.
+
+627
+02:10:16,148 --> 02:10:21,548
+objects. Let me say distinguished objects.
+
+628
+02:10:31,731 --> 02:10:32,731
+unordered means when you have undistinguished objects, meaning you cannot distinguish object one from object two. That's the reason order doesn't matter. So you have on this tin who ish. Objects. As unordered sampling.
+
+629
+02:11:01,731 --> 02:11:15,731
+or when they say when you have understood undistinguished objects, you have an ordered sampling. And when you have distinguished objects, you have ordered something
+
+630
+02:11:21,747 --> 02:11:48,147
+Distinguished or undistinguished is abstract. So you may distinguish between the objects from you, but it may not matter from the point of problem. That's why that's what we are talking about. That's what we are talking about. We are saying that the objects are indistinguishable from the point of problem. Okay.
+
+631
+02:11:48,147 --> 02:12:00,148
+And so in this case, again, you have this, this, this equation and notice that here.
+
+632
+02:12:00,148 --> 02:12:08,148
+K is less than or equal to n and it's greater than.
+
+633
+02:12:08,147 --> 02:12:26,147
+0. Okay, so k cannot be and that's logical because if you have three items you cannot or you cannot get four of the three right you you can get three or less.
+
+634
+02:12:26,147 --> 02:12:31,147
+So also make sure you have this.
+
+635
+02:12:31,148 --> 02:12:52,148
+to use this equation here, you need to make sure you have this situation. I don't know negative factor. Is it is the negative factor? Yeah, defined or not. I don't know. I don't care at least for this course. So for this course, K is smaller than n.
+
+636
+02:13:01,268 --> 02:13:25,427
+So that's the second one. Okay. Now the third one. I'm going a little faster because you know these things from high school. So I am not spending too much time here.
+
+637
+02:13:28,500 --> 02:13:32,259
+The next one is
+
+638
+02:13:34,707 --> 02:13:54,027
+unordered sampling without replacement. So, unordered sampling without replacement.
+
+639
+02:13:59,796 --> 02:14:22,716
+So, in this case, let's say again, we have the set 123. So n is three. And we want to get two items. Okay, so k is two. So k is the number of items we want to select.
+
+640
+02:14:22,716 --> 02:14:35,136
+And now these should be unordered. So the order doesn't matter. So if you have one, two.
+
+641
+02:14:38,676 --> 02:14:48,676
+if you have one two, you cannot have two one, right? So,
+
+642
+02:14:49,619 --> 02:14:50,619
+So we can have one two. And then we can have one three. This may be 312 but we don't care, right? 12 or 21 are the same thing in this kind of selection. So we have 21. And finally, we have
+
+643
+02:15:19,619 --> 02:15:27,619
+three, two, three. So here we have three possibilities.
+
+644
+02:15:34,899 --> 02:16:03,899
+And if you think about it, this is like previous one, like ordered something without replacement. But we are now getting rid of these guys, right? We are getting rid of two one because one two is equal to two one for for this kind of selection.
+
+645
+02:16:03,899 --> 02:16:14,139
+and also we are getting rid of 31. This should be 32. So this should be 32.
+
+646
+02:16:23,380 --> 02:16:38,380
+three two three two is not is not in the selection two. Well, it may be in the selection, but if three two is in the selection two three is not right. So they are the same thing basically.
+
+647
+02:16:50,739 --> 02:17:18,739
+And you might remember that this kind of selection is called combinations. So we are also calling this combinations. And remember that the previous one was called permutations.
+
+648
+02:17:16,788 --> 02:17:20,647
+Hello, my friends. Hello. Hello. Hello.
+
+649
+02:17:26,324 --> 02:17:36,643
+So ordered with sampling with replacement was permutations. Sorry.
+
+650
+02:17:40,564 --> 02:17:44,643
+So that was permutations and now
+
+651
+02:17:51,219 --> 02:17:52,219
+on ordered sampling without replacement is called combinations. And now. How are we going to calculate this? What is the value here? So. Remember, we can calculate for this from permutations. Remember that permutations was.
+
+652
+02:18:20,404 --> 02:18:24,483
+n factorial divided n minus k factorial, right?
+
+653
+02:18:26,943 --> 02:18:27,663
+So
+
+654
+02:18:29,284 --> 02:18:33,663
+we are kind of getting rid of these guys, right?
+
+655
+02:18:36,483 --> 02:18:39,723
+And how many are these?
+
+656
+02:18:41,164 --> 02:18:42,483
+How many are these?
+
+657
+02:18:45,244 --> 02:18:48,783
+We have, so we have two slots here.
+
+658
+02:18:50,404 --> 02:18:57,063
+and now,
+
+659
+02:19:15,700 --> 02:19:21,700
+Bunların sayısı K! de neden K! diyoruz?
+
+660
+02:19:27,763 --> 02:19:30,943
+P ile değil de C ile gösteremeyecek miyiz hocam kombinasyonu?
+
+661
+02:19:31,323 --> 02:19:49,503
+İşte kombinasyona geliyorum da K faktörüyle bölerek P'yi C'yi elde edeceğiz. Yani şunları kaybetmek istiyorum K faktörüyle bölerek. Ve onlar neden K faktörüyle şu anda hatırlayamadım.
+
+662
+02:19:49,503 --> 02:20:16,503
+So these are key factor values we have here. So we are basically combinations is sometimes it's called this way or sometimes it's called this way and choose K is
+
+663
+02:20:19,503 --> 02:20:41,503
+P and K divided by K factorial. So we are getting rid of these guys. So P and P K and divided by K factorial.
+
+664
+02:20:41,503 --> 02:20:45,503
+şunların da sırasında key aşağıya yazalım
+
+665
+02:20:52,147 --> 02:21:20,387
+Okay. So what, so this makes n factorial divided by k factorial times n minus k factorial. So this is permutations. So just to make sure that we will not confuse these things I am erasing this part.
+
+666
+02:21:34,579 --> 02:22:00,579
+So in this case, we have n factorial divided by k factorial times n minus k factorial elements or combinations. I should say combinations. Possible combinations.
+
+667
+02:22:04,852 --> 02:22:17,852
+So, we are kind of getting rid of order, right? We are getting rid of the order.
+
+668
+02:22:20,755 --> 02:22:24,755
+So let's say, let's give a simple example.
+
+669
+02:22:28,724 --> 02:22:33,224
+Let's say you have a five card.
+
+670
+02:22:34,579 --> 02:22:38,579
+So you have a deck of cards
+
+671
+02:22:48,500 --> 02:23:12,500
+So let's say you have a deck of cards. So you have a deck of cards and remember on a deck of cards you have 52 cards. And let's say you have a hand and in your hand you have five cards. So you have five cards.
+
+672
+02:23:27,347 --> 02:23:33,647
+five cards hand. So how many different hands you can have?
+
+673
+02:23:39,956 --> 02:23:45,396
+So how many different
+
+674
+02:23:47,095 --> 02:23:47,995
+and
+
+675
+02:23:50,456 --> 02:23:51,175
+is there
+
+676
+02:23:53,195 --> 02:24:04,495
+Right, we are basically choosing five cards out of these 52 cards and how many different selections can we have. And in this case.
+
+677
+02:24:04,495 --> 02:24:24,496
+This is the case of an unordered selection. Because let's say we have, I don't know, ACE. I don't remember these guys. Let's say we have something like this. We can have it there again, right.
+
+678
+02:24:32,244 --> 02:24:42,244
+Without replacement and order doesn't matter. So you can first choose this guy or you can first choose this guy. It doesn't really matter.
+
+679
+02:24:43,244 --> 02:24:48,244
+All matters is what you have in your hand. So that is, that's unordered.
+
+680
+02:24:51,244 --> 02:24:56,244
+And without replacement, because when you get this card from this deck,
+
+681
+02:24:56,244 --> 02:25:14,244
+deck, you cannot get again, you cannot get that from the deck again because we are physically taking it from the deck. So this is a combinations. So we have 52 choose five combinations here.
+
+682
+02:25:19,188 --> 02:25:20,447
+hands, let's say.
+
+683
+02:25:24,979 --> 02:25:26,979
+different
+
+684
+02:25:32,564 --> 02:25:33,564
+and
+
+685
+02:25:41,811 --> 02:25:58,131
+So, the last one is unordered sampling with replacement.
+
+686
+02:26:00,915 --> 02:26:15,315
+So remember we have four different situations. And the last one is unordered sampling with
+
+687
+02:26:20,020 --> 02:26:22,020
+Replace
+
+688
+02:26:27,476 --> 02:26:34,956
+So let's go with the same example. So we have the set of 123.
+
+689
+02:26:39,219 --> 02:26:49,919
+So we have n equals to three things to select from and we want to select k equals to two samples.
+
+690
+02:26:52,724 --> 02:26:53,724
+Now, unordered. And with replacement, so with replacement meaning repetitions allowed. So repetition. Okay. And unordered meaning if you have one two, we cannot have two one.
+
+691
+02:27:22,724 --> 02:27:25,244
+right. So if
+
+692
+02:27:29,683 --> 02:27:33,823
+So one two is basically cool to two one, right.
+
+693
+02:27:35,264 --> 02:27:43,244
+So we will not count it, we will either say one two, or we will say two one, they are the same thing.
+
+694
+02:27:45,963 --> 02:27:46,603
+So
+
+695
+02:27:46,603 --> 02:27:47,603
+What are the elements we have in this case? Well, we have one, sorry, one, one, we have two, two, and we have one, two, we have one, three, right? And now,
+
+696
+02:28:16,603 --> 02:28:30,843
+Here we have 2223 and we have three three. So we have six possibilities.
+
+697
+02:28:43,219 --> 02:29:09,799
+which one of the guys we didn't include here. We didn't include three one because one three is there. We didn't include two one because one two is there. And we didn't include three two because two three is there. Right. So
+
+698
+02:29:09,799 --> 02:29:22,519
+These guys are not there. So how do you calculate this? How do you calculate this?
+
+699
+02:29:32,724 --> 02:29:43,724
+Well, I will just write the equation here. I will not give you how it is obtained.
+
+700
+02:29:46,611 --> 02:29:49,611
+So, in this case we have
+
+701
+02:29:55,763 --> 02:30:03,283
+So, 1 minus k plus 1 choose k.
+
+702
+02:30:09,396 --> 02:30:22,356
+Or this is also equal to n minus k plus one divided by n minus one. So this should be same possibilities.
+
+703
+02:30:25,427 --> 02:30:42,948
+Let's see if this equation checks. So n is three here, k is two. Last one, and k is two. So we have what four minus two to two over two.
+
+704
+02:30:50,899 --> 02:30:52,899
+This is a mistake.
+
+705
+02:30:57,427 --> 02:31:01,427
+4 and 2, 2, 2.
+
+706
+02:31:01,427 --> 02:31:04,427
+That's a mistake.
+
+707
+02:31:04,427 --> 02:31:11,427
+3 minus 2 plus 1.
+
+708
+02:31:11,427 --> 02:31:14,427
+N minus 1.
+
+709
+02:31:14,427 --> 02:31:16,427
+2.
+
+710
+02:31:19,827 --> 02:31:27,308
+the 2. and what will that be?
+
+711
+02:31:30,995 --> 02:31:35,995
+2 factorial, 2 factorial, 0 factorial 1 eder.
+
+712
+02:31:35,995 --> 02:31:37,995
+Hmm.
+
+713
+02:31:39,995 --> 02:31:41,995
+Burada bir hata var galiba ama.
+
+714
+02:31:44,995 --> 02:31:48,995
+Hocam formülde n artı k eksi 1 olacak galiba.
+
+715
+02:31:48,995 --> 02:31:50,995
+Yok şimdi hımm.
+
+716
+02:31:51,995 --> 02:31:55,995
+Aslında bu bir eşitlikmiş, bunun çözümünü istiyor.
+
+717
+02:32:03,636 --> 02:32:05,636
+What did you say?
+
+718
+02:32:06,835 --> 02:32:08,835
+N artı k eksi 1.
+
+719
+02:32:08,835 --> 02:32:09,835
+Değil mi?
+
+720
+02:32:09,835 --> 02:32:10,835
+Evet.
+
+721
+02:32:11,835 --> 02:32:14,835
+Şöyle diyelim.
+
+722
+02:32:28,788 --> 02:32:29,788
+n plus k minus 1 choose k. Denyelim. So let's try. n is 3, k is 2, minus 1 choose 2. This should be 5 minus 1, 4,
+
+723
+02:32:58,788 --> 02:33:10,788
+So we should have 4 factorial divided by 2 factorial divided by 2 factorial times 2 factorial.
+
+724
+02:33:10,788 --> 02:33:21,788
+This should be 4, 3, 2 divided by 2 times 2. So this goes and we have 6. Okay.
+
+725
+02:33:21,788 --> 02:33:24,788
+So this seems to work.
+
+726
+02:33:24,788 --> 02:33:34,788
+Yes, so, Bedrettin gave the link to the chapter actually.
+
+727
+02:33:34,788 --> 02:33:48,788
+And I guess they are explaining it here, but I will not explain. I didn't have time to check that part out.
+
+728
+02:33:48,788 --> 02:33:53,788
+So we have this much possibilities
+
+729
+02:34:38,484 --> 02:34:51,763
+Let's look at the... Let's try to look at examples for this.
+
+730
+02:35:06,036 --> 02:35:15,036
+Let's look at an example for this. So this is an example from Wikipedia.
+
+731
+02:36:30,131 --> 02:36:33,131
+Let's say
+
+732
+02:36:40,979 --> 02:36:42,979
+Let's say,
+
+733
+02:36:46,579 --> 02:37:02,339
+You have four types of donuts to choose from on a menu. So you go to a restaurant. So in a restaurant.
+
+734
+02:37:04,371 --> 02:37:09,371
+You have four types of donuts
+
+735
+02:37:19,476 --> 02:37:20,476
+Okay.
+
+736
+02:37:24,275 --> 02:37:37,476
+So in this case, your donuts are like donut one, donut two, donut three, donut four. Okay. So that's your A.
+
+737
+02:37:38,675 --> 02:37:47,236
+Okay. So this might be chocolate donut. This might be I don't know really
+
+738
+02:37:47,236 --> 02:38:14,236
+So, honey, this might be whatever, banana, this might be, I don't know, berries, whatever. So you have three types of donuts. You go to restaurant and they gave you a menu. And now you want to choose three donuts.
+
+739
+02:38:14,235 --> 02:38:20,375
+So, you want to
+
+740
+02:38:23,636 --> 02:38:27,636
+Choose three donuts
+
+741
+02:38:32,884 --> 02:38:46,384
+And in this case, let's say this is chocolate. So you can choose. So you will have three things to choose. And you can choose
+
+742
+02:38:52,404 --> 02:39:10,404
+The same donut type twice. So you can have two chocolate donuts and a banana donut, let's say. So you can have one twice.
+
+743
+02:39:13,523 --> 02:39:20,523
+So here, number of different ways
+
+744
+02:39:24,979 --> 02:39:42,119
+number of different ways to choose this. So it's sometimes called CRN.
+
+745
+02:39:48,724 --> 02:39:54,164
+CRNK actually, this is Baron's notation.
+
+746
+02:39:54,164 --> 02:39:57,323
+NK.
+
+747
+02:40:00,788 --> 02:40:28,867
+This is n plus k minus one choose three. So that means we have four plus three minus one choose three, which is six choose three.
+
+748
+02:40:30,788 --> 02:40:46,788
+So here we are increasing the number of things we choose from somehow. This is like combinations.
+
+749
+02:40:52,051 --> 02:41:11,331
+But somehow we are increasing the number of, we say that we have more things to choose from. And the reason of the idea for that is the stars and bars idea.
+
+750
+02:41:16,340 --> 02:41:18,340
+So
+
+751
+02:41:30,644 --> 02:41:35,144
+And the idea is here is
+
+752
+02:41:36,943 --> 02:41:46,963
+Let's say you put what you selected into this form. Let's say each star is a donut. Okay.
+
+753
+02:41:49,123 --> 02:41:58,243
+And you have a bar that separates different donut types. So let's you might have something like this.
+
+754
+02:41:58,243 --> 02:42:21,243
+Let's say the first type of donut from the first type of donut I will I will choose two let's say so I will have two chocolate donuts and I will have no banana donuts let's say
+
+755
+02:42:27,956 --> 02:42:28,956
+And
+
+756
+02:42:33,811 --> 02:43:02,011
+And I will have no, let's say, whatever else donuts. And finally, one, two, three, four, for the fourth, I will have one. Okay, so for the first kind of donut, I will have two. For the second kind of donut, I do I will not have any. For the third kind of kind of donut, I will have none. And for the fourth kind of donut, I will have one. Okay, this is one selection.
+
+757
+02:43:02,011 --> 02:43:16,411
+Another selection can be, let's say, one from the first, one from the, let's say, second.
+
+758
+02:43:19,891 --> 02:43:35,491
+and one from the third and none from the fourth. Okay. So this is another selection. So bars, let me not use a bar here.
+
+759
+02:43:44,819 --> 02:44:11,459
+So, this is one kind of selection and this is another kind of selection. Now, if you, if this, this is why you are kind of increasing the number of things to choose from. You are introducing these bars. Okay.
+
+760
+02:44:18,644 --> 02:44:20,644
+and
+
+761
+02:44:38,324 --> 02:44:49,324
+So you have, including the bars, you have six things to choose.
+
+762
+02:44:51,324 --> 02:44:57,324
+So one, two, three.
+
+763
+02:45:05,075 --> 02:45:10,075
+four, five, six. And where is the three years?
+
+764
+02:45:29,876 --> 02:45:33,876
+Okay, I couldn't kind of
+
+765
+02:45:36,435 --> 02:45:40,615
+Remember this and I'm not able to
+
+766
+02:45:44,659 --> 02:45:47,539
+Remember what this was because of
+
+767
+02:45:48,559 --> 02:45:49,699
+So anyways,
+
+768
+02:45:52,159 --> 02:45:58,899
+So you can read this from Wikipedia or probably they have the reason from the book too.
+
+769
+02:46:00,659 --> 02:46:04,039
+But this is the, this is the equation and
+
+770
+02:46:05,539 --> 02:46:06,799
+An example for it.
+
+771
+02:46:07,879 --> 02:46:09,019
+I will finish here.
+
+772
+02:46:11,359 --> 02:46:11,879
+And
+
+773
+02:46:11,879 --> 02:46:19,880
+The quiz is up to this point. If you have any question about the quiz or anything else you can ask now.
+
+774
+02:46:23,188 --> 02:46:25,188
+One question is about the question?
+
+775
+02:46:27,987 --> 02:46:41,167
+Hocam bu soru, bu örnekle ilgili. 4 farklı donattan 3 tane seçeceğiz ama her birinin tekrarlanabiliyor, tekrar seçebiliyoruz. Dolayısıyla 4x4x4 şeklinde olmayacak mı?
+
+776
+02:46:41,167 --> 02:46:44,008
+Şey toplama.
+
+777
+02:46:50,487 --> 02:46:56,007
+Yok, mantığı aslında bunu biraz daha düşünmek lazım da.
+
+778
+02:46:56,007 --> 02:46:58,007
+and say,
+
+779
+02:47:00,564 --> 02:47:01,203
+So, you know,
+
+780
+02:47:07,827 --> 02:47:11,827
+Wikipedia'da bunun tam listesini de vermişler.
+
+781
+02:47:14,467 --> 02:47:15,887
+Açayım onu.
+
+782
+02:47:21,780 --> 02:47:29,379
+For example, a donut here is a 4-tip donut.
+
+783
+02:47:29,379 --> 02:47:33,379
+You can choose 3-tip.
+
+784
+02:47:33,379 --> 02:47:39,780
+This is a form of formula.
+
+785
+02:47:39,780 --> 02:47:48,780
+We can see the multi-subset list of the multi-subset.
+
+786
+02:47:55,956 --> 02:47:56,956
+Esasen bu bir denklemden elde ediliyor. Yani x1 artı x2 artı x3 artı x4 eşittir 3 denklemini çözmeniz gerekiyor. Yani burada hepsi var. Mesela 20 tane çıkıyor. 1 1 1
+
+787
+02:48:23,731 --> 02:48:24,731
+1.1-2, 1.1-2, 1.1-2, 2.1-2, 2.1-2, 1.1-2, 2.1-2, 1.1-2,
+
+788
+02:48:53,731 --> 02:48:58,731
+They are stars and bars notation with the stars.
+
+789
+02:48:58,731 --> 02:49:03,731
+So, here you can see a bar.
+
+790
+02:49:03,731 --> 02:49:08,731
+And two stars.
+
+791
+02:49:08,731 --> 02:49:14,731
+This is the bar.
+
+792
+02:49:14,731 --> 02:49:21,731
+So, where can I place bar?
+
+793
+02:49:21,731 --> 02:49:30,731
+Where can I place bar?
+
+794
+02:49:30,731 --> 02:49:35,731
+How different places are you place?
+
+795
+02:49:35,731 --> 02:49:41,731
+The 6 is the 3 bar.
+
+796
+02:49:41,731 --> 02:49:47,731
+This is the 6 bar.
+
+797
+02:49:47,731 --> 02:49:50,672
+uh
+
+798
+02:49:55,636 --> 02:49:58,895
+Linki kopyalayabilir misiniz Çata? Daha sonra bakalım biz.
+
+799
+02:50:11,092 --> 02:50:11,991
+Say love.
+
+800
+02:50:11,991 --> 02:50:12,871
+Peace.
+
+801
+02:50:17,523 --> 02:50:24,523
+Yes, arkadaşlarımız başka linkler de yollamış. Buralarda anlatılıyor.
+
+802
+02:50:34,675 --> 02:50:55,955
+Kombinasyondan farkı ne? Kombinasyonda donatları tekrar edemiyorsunuz. Yani her birinden bir tane alacağım diye karar verdiğiniz mi standart kombinasyon oluyor. Ama birinden birden fazla alabilirim dediğiniz anda buna dönüşüyor.
+
+803
+02:50:55,955 --> 02:51:05,075
+multi-subset sayma ile ilgili bir açıklama var burada.
+
+804
+02:51:08,075 --> 02:51:09,036
+Böyle.
+
+805
+02:51:11,175 --> 02:51:12,095
+Tamam mı arkadaşlar?
+
+806
+02:51:17,843 --> 02:51:19,843
+This is a way to look at it.
+
+807
+02:51:19,843 --> 02:51:21,843
+This is a way to explain it.
+
+808
+02:51:25,843 --> 02:51:31,843
+If there is a change in the system,
+
+809
+02:51:31,843 --> 02:51:35,843
+or the exam will be done,
+
+810
+02:51:35,843 --> 02:51:39,843
+if there is a 3. hour,
+
+811
+02:51:39,843 --> 02:51:42,843
+a short time of exam will be done.
+
+812
+02:51:42,843 --> 02:51:44,843
+If there is a exam,
+
+813
+02:51:44,843 --> 02:51:51,843
+So I'm going to talk about the book of Baron's book.
+
+814
+02:51:54,963 --> 02:51:56,503
+Baron'un kitabından
+
+815
+02:52:00,852 --> 02:52:02,852
+Chapter 2'yi bitirmiş olduk.
+
+816
+02:52:08,724 --> 02:52:31,724
+dolayısıyla chapter 2'nin sonundaki problemleri çözebilirsiniz veya çalışabilirsiniz. Orada bir 36 tane soru var. Pichronik'in kitabında da ne yaptık?
+
+817
+02:52:35,924 --> 02:52:49,264
+Basic Concepts'i bitirdik. Kombinatorics'in de büyük kısmını bitirdik sanırım. Burada anlatmadığımız bir şey var mı acaba? Tam bilemiyorum.
+
+818
+02:52:55,572 --> 02:52:57,572
+So we will look at the same time
+
+819
+02:53:17,139 --> 02:53:25,139
+Do you know what happens when you are a quiz?
+
+820
+02:53:25,139 --> 02:53:37,139
+buralardan çalışabilirsiniz demek istedim. Tabii ki içerik benim anlattığım şeyler. Ama anlattığım kısım...
+
+821
+02:53:50,227 --> 02:54:00,847
+Baron'un kitabından chapter 2 galiba, Pichronik kitabından
+
+822
+02:54:02,899 --> 02:54:04,899
+Chapter 1 ve 2
+
+823
+02:54:04,899 --> 02:54:08,679
+Baron'dan da 1 ve 2
+
+824
+02:54:08,679 --> 02:54:09,439
+diyebilirsiniz de
+
+825
+02:54:09,439 --> 02:54:11,179
+Baron 1'de pek bir şey yok zaten.
+
+826
+02:54:13,059 --> 02:54:13,939
+Buralardaki
+
+827
+02:54:13,939 --> 02:54:15,780
+problemleri
+
+828
+02:54:15,780 --> 02:54:17,780
+çözmenizi, çalışmanızı
+
+829
+02:54:19,000 --> 02:54:20,099
+tavsiye ediyorum.
+
+830
+02:54:21,219 --> 02:54:23,859
+Baron'daki soruları da ihmal etmeyin.
+
+831
+02:54:26,559 --> 02:54:28,539
+Quiz buralardan gelecek.
+
+832
+02:54:29,839 --> 02:54:32,399
+Şimdiye kadar zaten çalışıyor olmanız lazımdı belki.
+
+833
+02:54:32,899 --> 02:54:34,299
+e...
+
+834
+02:54:41,075 --> 02:54:56,456
+quiz'den sonra da artık ayrı kraskeli değişkenlere başlayarak olasılığa devam edeceğiz. Saymayı kısa geçtim. Lisede zaten görülen bir konu.
+
+835
+02:55:02,451 --> 02:55:03,451
+Okay?
+
+836
+02:55:09,747 --> 02:55:14,967
+Okay, so much for the rest of us.

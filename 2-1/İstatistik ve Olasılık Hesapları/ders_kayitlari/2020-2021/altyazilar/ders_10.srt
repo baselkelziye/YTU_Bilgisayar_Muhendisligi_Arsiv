@@ -1,0 +1,1743 @@
+1
+00:01:24,212 --> 00:01:26,791
+Online Yıldız Edit'e sesim geliyor mu arkadaşlar?
+
+2
+00:01:49,364 --> 00:01:51,364
+and the other one is the same.
+
+3
+00:01:54,739 --> 00:02:02,599
+Tamam, online yıldız edüterde şu anda quiziniz var. Yarım saat süreniz var. Quiz'e başlayın.
+
+4
+00:17:05,011 --> 00:17:22,331
+Mustafa Bey açık kalmış mikrofonunuz sanırım. Bir hışırtı geliyor. Pardon hocam özür dilerim. Sayfayı yenileme işini yani daha doğrusu sınavı tekrar baştan almamız çok zor oluyordu da onu öğrendim hocam. Pardon. Anladım. Evet evet. Öyle. Tamam. Kolay gelsin.
+
+5
+00:35:23,603 --> 00:35:25,603
+Peki sesim geliyor mu arkadaşlar?
+
+6
+00:35:29,268 --> 00:35:39,028
+Okay, let's start. Let me share the screen.
+
+7
+00:35:44,724 --> 00:35:46,924
+So last week
+
+8
+00:35:50,291 --> 00:36:18,291
+We saw, we started statistics, introductory statistics. And we have seen median. First we have seen actually sample mean.
+
+9
+00:36:24,307 --> 00:36:25,307
+So first we have seen this guy, sample mean. We talked about sample means, expected value, variance, distribution, etc. And then next we learned median. This guy. And
+
+10
+00:36:54,307 --> 00:37:07,307
+How can we calculate medians in samples or how can we calculate population medians
+
+11
+00:37:11,307 --> 00:37:19,307
+Then we learned about quantiles
+
+12
+00:37:22,291 --> 00:37:52,271
+and quantiles were similar to median, but it was a more general idea. And for continuous distributions, a quantile looked like kind of inverse of CDF, inverse of the cumulative distribution function.
+
+13
+00:37:52,291 --> 00:38:06,211
+it's like an inverse CDF quantile. So this can give you what quantile is, give you an idea of what quantile is in actual way.
+
+14
+00:38:09,652 --> 00:38:21,571
+And we learned how we can calculate sample quantiles. So we learned its description here.
+
+15
+00:38:22,291 --> 00:38:25,291
+which is kind of
+
+16
+00:38:29,108 --> 00:38:53,108
+You need to think about it to understand, to get what it's saying. And we learned a simple method for calculating the quantiles, sample quantiles. And the idea was actually we could do it.
+
+17
+00:38:53,684 --> 00:38:55,684
+Mm.
+
+18
+00:39:00,403 --> 00:39:04,723
+So sample P quantile is, can be calculated by
+
+19
+00:39:07,963 --> 00:39:10,803
+First, you sort the sample
+
+20
+00:39:13,483 --> 00:39:14,763
+And
+
+21
+00:39:18,931 --> 00:39:28,051
+You sort the sample. And then you can calculate this thing by this.
+
+22
+00:39:37,492 --> 00:40:00,492
+by this. Sorry for that. So basically you multiply the you multiply the number of elements plus one with the quantile you want to get for and take the round.
+
+23
+00:40:00,492 --> 00:40:09,051
+this will give you which element in the array is the quantile you are looking for
+
+24
+00:40:25,619 --> 00:40:52,979
+We, we, we got an, we get an example. So here I have written the CPU data that we have learned before. In this data there are 30 elements. And we asked the question, what is the 0.255 quantile?
+
+25
+00:40:55,619 --> 00:41:02,619
+So this is written as 0.25 quantile.
+
+26
+00:41:02,619 --> 00:41:09,619
+We should also write sample here.
+
+27
+00:41:09,619 --> 00:41:14,619
+Sample 0.5 quantile.
+
+28
+00:41:14,619 --> 00:41:21,619
+And similarly, what is the 0.75 quantile?
+
+29
+00:41:21,619 --> 00:41:33,619
+What is the 0.50 quantile? And I left them as exercises. And I said that normally you should find these values.
+
+30
+00:41:37,907 --> 00:42:07,887
+and for the first one, what was it? We did the calculation. So to get the 0.25 quantile sample quantile, you multiply this probability with n plus 1 and that gives you this value.
+
+31
+00:42:07,907 --> 00:42:14,907
+and then you can get the round and say that 34 is a quantile.
+
+32
+00:42:14,907 --> 00:42:24,907
+Now, there are similar things to quantiles.
+
+33
+00:42:30,164 --> 00:42:41,383
+It's just these things have different names but essentially they are the same thing. So first one is a person type.
+
+34
+00:42:45,556 --> 00:42:46,475
+So,
+
+35
+00:42:51,731 --> 00:43:00,731
+A percentile is written like this. So for population,
+
+36
+00:43:06,164 --> 00:43:23,283
+percentile. You write it like this, P, let's say, gamma. And you say that this is gamma percentile.
+
+37
+00:43:25,844 --> 00:43:39,844
+and gamma percentile is basically 0.01 gamma quantile.
+
+38
+00:43:45,715 --> 00:43:46,715
+So for example,
+
+39
+00:43:53,811 --> 00:43:56,151
+You can ask what is
+
+40
+00:44:00,755 --> 00:44:06,755
+What is 25th percentile?
+
+41
+00:44:11,795 --> 00:44:25,195
+25th percentile is just you need to divide this to 100. So this is just this is just 0.25 quantile.
+
+42
+00:44:27,795 --> 00:44:33,695
+OK, and we just saw an example of how we can calculate this. Right.
+
+43
+00:44:34,995 --> 00:44:39,895
+So simply it's kind of a different name for the same thing.
+
+44
+00:44:41,795 --> 00:45:00,795
+So you have population percentiles, you have sample percentiles, everything is same. If you have a sample percentile, you will have a head.
+
+45
+00:45:00,795 --> 00:45:02,795
+So
+
+46
+00:45:03,891 --> 00:45:20,891
+sample percentile will have a, this head on it. So it's very similar to quantile basically.
+
+47
+00:45:25,108 --> 00:45:36,108
+Now. Another thing again very similar is. Quartile.
+
+48
+00:45:49,204 --> 00:46:00,204
+and quartiles again can be defined in terms of quantiles.
+
+49
+00:46:02,771 --> 00:46:27,011
+And we have only three of them basically actually. So you have q1, q2 and q3. And q1 is 0.25 quantile. q2 is 0.50 quantile.
+
+50
+00:46:27,011 --> 00:46:34,011
+which is we know that it is also median.
+
+51
+00:46:37,588 --> 00:47:04,947
+and Q3 is 0.75 quantile. So again, these are just different names for quantiles. Again, you have the sample versions of these, for example,
+
+52
+00:47:05,556 --> 00:47:25,556
+So sample versions of these have a head. Okay, so when we see a head, it says it means it comes from a sample and it is an estimate.
+
+53
+00:47:28,628 --> 00:47:39,628
+Okay, so these are different names again, quantiles, percentiles.
+
+54
+00:47:40,659 --> 00:47:42,659
+quarter times.
+
+55
+00:47:48,052 --> 00:47:51,052
+Now, uh
+
+56
+00:47:59,188 --> 00:48:00,188
+One thing I left when I was teaching you mean and median is so we just learned median. So you can use mean and median to guess the skewness of skewness of the distribution. So this will be
+
+57
+00:48:30,612 --> 00:48:31,691
+uh
+
+58
+00:48:35,380 --> 00:48:36,380
+shape. Of. The distribution. Using. Mean. And median.
+
+59
+00:48:58,835 --> 00:49:16,835
+So if you know the if you if you know mean and if you know median of the distribution, you can have some idea of some idea of the shape of the distribution.
+
+60
+00:49:16,835 --> 00:49:17,835
+and now the idea here is now mean is affected by the outliers more than medium. So mean is affected
+
+61
+00:49:46,835 --> 00:49:54,835
+by extreme values.
+
+62
+00:49:58,996 --> 00:50:00,996
+I should say sample mean.
+
+63
+00:50:14,804 --> 00:50:24,804
+This idea is more general, so we can write it for both
+
+64
+00:50:26,579 --> 00:50:43,859
+both sample means and population means. So let's say mean or expected value. Is this.
+
+65
+00:51:06,452 --> 00:51:23,811
+and median is this capital M. So this is mu. This is capital M. Now, if our graphic is distribution is symmetric, what we have is
+
+66
+00:51:30,835 --> 00:51:55,975
+something like this. X. F of X. And you will see that. The data is if you see that data is kind of symmetric. You will see that mean and median are same or very, very close to each other.
+
+67
+00:51:55,975 --> 00:52:19,975
+So if you see that mu mean, let me write this way, mu is same as the mean, that means data should be symmetric.
+
+68
+00:52:19,975 --> 00:52:26,975
+distribution, the distribution is symmetric
+
+69
+00:52:42,643 --> 00:52:49,923
+Long tail on one side. Okay, so you might see something like
+
+70
+00:52:54,068 --> 00:52:57,068
+something like this.
+
+71
+00:53:00,052 --> 00:53:03,052
+and this is secured data.
+
+72
+00:53:09,108 --> 00:53:10,108
+This is opposed to symmetric. So it is not symmetric, kind of data goes to the right side more. So that data extends or varies to the right side more. In these kinds of graphs, mean is
+
+73
+00:53:39,108 --> 00:53:53,988
+on the skewed side. The reason is mean is affected from outliers from data shape more. So here you would see something like
+
+74
+00:54:05,139 --> 00:54:13,139
+mean here, but median here. Okay.
+
+75
+00:54:19,027 --> 00:54:30,787
+So here, secure is to the right. So remember, this part has a longer tail. Okay.
+
+76
+00:54:34,195 --> 00:55:02,195
+So we say that this data is skewed to this side. It's right skewed. So you'll say this is right skewed. So the shape of the distribution is right skewed. Now, very similarly, we can have a left skewed shape. So
+
+77
+00:55:09,396 --> 00:55:14,396
+So you might have a data something like this.
+
+78
+00:55:16,211 --> 00:55:41,211
+and this case again mean is on the skewed side because mean is affected from extreme values more. So at least for sample mean. So we might have mu here and mean somewhere here.
+
+79
+00:55:41,211 --> 00:55:46,211
+Let me draw this in green
+
+80
+00:55:56,083 --> 00:56:05,083
+And in this case we will say that this shape is left skewed.
+
+81
+00:56:09,588 --> 00:56:12,588
+So the data will be left skewed.
+
+82
+00:56:16,588 --> 00:56:19,588
+So
+
+83
+00:56:22,164 --> 00:56:40,164
+So these two were measures of central tendency. When I say two, I'm saying, I'm talking about,
+
+84
+00:56:41,907 --> 00:56:57,347
+mu or its estimators mu and s its estimators
+
+85
+00:56:59,923 --> 00:57:22,923
+sample mean. Also median. And it's estimated sample median. These are. They are sometimes they are called measures of central tendency.
+
+86
+00:57:37,427 --> 00:57:45,927
+So basically, they answer us the question of where is the center?
+
+87
+00:57:51,827 --> 00:58:00,107
+They give us information on that. Where is the center of this this thing? This is distribution and
+
+88
+00:58:02,507 --> 00:58:03,507
+the most
+
+89
+00:58:05,387 --> 00:58:07,788
+the bigger difference between them is
+
+90
+00:58:09,227 --> 00:58:11,107
+the
+
+91
+00:58:21,811 --> 00:58:24,811
+The biggest difference between these guys is
+
+92
+00:58:26,811 --> 00:58:28,811
+Means
+
+93
+00:58:30,811 --> 00:58:32,811
+Let's say
+
+94
+00:58:36,052 --> 00:58:38,811
+median
+
+95
+00:58:42,171 --> 00:58:42,891
+is
+
+96
+00:58:44,012 --> 00:58:46,552
+more robust
+
+97
+00:58:49,371 --> 00:58:49,932
+to
+
+98
+00:58:50,811 --> 00:58:52,131
+outliers
+
+99
+00:58:53,611 --> 00:58:54,291
+than
+
+100
+00:58:55,451 --> 00:58:56,291
+mean.
+
+101
+00:58:58,491 --> 00:58:59,091
+So
+
+102
+00:59:00,371 --> 00:59:04,171
+outliers are extreme values in the data.
+
+103
+00:59:18,099 --> 00:59:33,099
+So if you change an extreme value in the data mean changes a lot. Let's look at an example.
+
+104
+00:59:49,811 --> 00:59:51,811
+Let's look at this example.
+
+105
+00:59:56,532 --> 01:00:00,532
+And let's call this robustness.
+
+106
+01:00:05,300 --> 01:00:35,279
+Let's say our sample data is one, one and let's say, let's make it very simple. One, one, one, two and three. Now if this is the data, let's make it a little better. One, two, three, four and five.
+
+107
+01:00:35,300 --> 01:01:01,300
+Now the sample mean of this data is 3 and its median is again 3. Now look at this data. So let us call S1 and this is sample mean 1, this is sample median 1. Let's say S2 is this.
+
+108
+01:01:01,300 --> 01:01:09,300
+one, two, three, four, and let's say 500.
+
+109
+01:01:12,980 --> 01:01:24,179
+Now, the, the sample mean in this case changes a lot because there is this outlier.
+
+110
+01:01:26,164 --> 01:01:32,323
+Okay, and what is the, what is the
+
+111
+01:01:37,556 --> 01:01:56,556
+What is the mean of this? So 500, on the hamı geliyor? Beş yüz onu beşe böleceğiz. Beş yüz onu beşe böleceğiz. Ne yapıyor?
+
+112
+01:02:00,755 --> 01:02:28,255
+So sample mean here is 102. But what is sample median? It is still three. So that's the robustness. If you have these outliers, median does not really, is not really affected from them.
+
+113
+01:02:28,255 --> 01:02:33,255
+but sample mean is affected a lot.
+
+114
+01:02:51,155 --> 01:03:09,155
+Now we will learn measures of variance measures measures of spread. But before that.
+
+115
+01:03:11,860 --> 01:03:18,860
+Let's have a 10 minutes break. So let's have a break till
+
+116
+01:03:34,835 --> 01:03:36,835
+Let's have a break till
+
+117
+01:03:41,076 --> 01:03:51,076
+14.04 or 14.05.
+
+118
+01:15:40,851 --> 01:15:42,851
+Okay.
+
+119
+01:15:42,851 --> 01:15:50,851
+So...
+
+120
+01:16:01,268 --> 01:16:10,268
+So mean and median are measures of central tendency.
+
+121
+01:16:16,532 --> 01:16:18,532
+Let's write like this.
+
+122
+01:16:34,163 --> 01:17:02,163
+And here we talked about robustness. Now measures of spread is these are some statistics that give you or some measures that give you how spread data is. And what are they? One of them is variance.
+
+123
+01:17:02,387 --> 01:17:29,387
+or standard deviation squared. So you can you can think of it as standard deviation or variance. It doesn't really matter. So you can say variance. Let me just say standard deviation.
+
+124
+01:17:35,764 --> 01:17:46,764
+and the other is IQR that we will learn later. So for the time being,
+
+125
+01:17:54,899 --> 01:17:59,380
+For the time being, I'll just give its name.
+
+126
+01:18:04,851 --> 01:18:12,851
+Now, we have already seen what variance is, population variance.
+
+127
+01:18:44,372 --> 01:18:48,372
+population variance was
+
+128
+01:18:54,644 --> 01:19:23,644
+How was it defined? It was expected value of, we wrote it as variance of X or sigma square of X. And it was expected value of X minus mu square, right?
+
+129
+01:19:23,644 --> 01:19:33,644
+So it was an expected value. Now we will also see sample variance.
+
+130
+01:19:44,819 --> 01:20:11,819
+So the variance estimation that we will see. And it is written as s squared. This is lowercase s. And it has a special symbol. Normally it's an estimator for population variance. So sample variance estimates
+
+131
+01:20:14,819 --> 01:20:17,819
+population variance.
+
+132
+01:20:25,363 --> 01:20:28,963
+and it is defined as
+
+133
+01:20:32,435 --> 01:20:51,435
+one over N minus one, summation over all elements. So I is from one to N.
+
+134
+01:20:53,619 --> 01:21:22,619
+x i minus x standard. This is sample mean. And that's good. So you can see the similarity here. Instead of mean, we are using sample mean. And we are subtracting sample mean from all values.
+
+135
+01:21:22,619 --> 01:21:45,619
+We are summing them up and then we are dividing by one over, we are dividing by n minus one. One thing that when I first saw this equation that made me kind of curious was why is this not n?
+
+136
+01:21:45,619 --> 01:21:54,619
+Right. Why don't we divide by n. But we are dividing by n minus one.
+
+137
+01:22:06,195 --> 01:22:15,076
+So, the question is, why not one over n?
+
+138
+01:22:26,036 --> 01:22:54,036
+instead of one over n, it is one over n minus one. Why do we divide by n minus one and not n? Now, it turns out that if we use one over n in this equation, the estimator will be biased.
+
+139
+01:22:55,155 --> 01:22:56,155
+So. It. Turns out. That. If. We. Use one over n. The estimators.
+
+140
+01:23:18,804 --> 01:23:19,804
+becomes. Yes. So that means estimators expected value.
+
+141
+01:23:37,779 --> 01:24:07,759
+expected value of the parameter theta, which is the theta we are trying to estimate here is variance. So we can just use expected value of variance minus or estimator S square is not zero as an
+
+142
+01:24:07,779 --> 01:24:27,779
+So as n goes to infinity, the difference between population variance and the estimation and the sample variance does not go to zero.
+
+143
+01:24:27,779 --> 01:24:48,779
+if we use n as the division there. So we so to do to correct that instead of n they are divided by n minus one. You can I will leave this as an exercise to show.
+
+144
+01:24:54,292 --> 01:25:10,292
+I will leave this as an exercise to show that if you if you use one over n, Bayes is not. Zero and if you use one over n minus one, Bayes is zero.
+
+145
+01:25:12,916 --> 01:25:39,435
+Now, Similar to standard deviation population standard deviation, we have sample standard deviation, which is the square root of sample variance. So standard deviation.
+
+146
+01:25:40,532 --> 01:26:08,532
+Let me write sample here. So sample standard deviation. It's just S. We write it as S and it's just the square root of the sample variance as usual. And it estimates S estimates.
+
+147
+01:26:11,091 --> 01:26:13,091
+population standard deviation.
+
+148
+01:26:18,931 --> 01:26:23,931
+as estimates population standard deviation.
+
+149
+01:26:29,268 --> 01:26:45,268
+Now, the nice properties of this standard, these, these estimators is, as we first discussed, these are unbiased.
+
+150
+01:27:06,292 --> 01:27:17,811
+So. The sample standard deviation s and sample variance s square.
+
+151
+01:27:21,140 --> 01:27:23,140
+are.
+
+152
+01:27:24,739 --> 01:27:25,540
+Anbiased.
+
+153
+01:27:28,499 --> 01:27:33,939
+We just talked about it and they are consistent.
+
+154
+01:27:37,332 --> 01:27:41,332
+and they are asymptotically normal.
+
+155
+01:27:53,619 --> 01:27:54,619
+And what was consistency? So, on B as we talked about it. As n goes to infinity expected value of the expected value of the difference between standard deviation and s goes to infinity.
+
+156
+01:28:23,619 --> 01:28:42,939
+Let me use goes to here. And consistency comes from Chebyshev's property, right? What does it say? As n goes to infinity.
+
+157
+01:28:46,292 --> 01:28:49,292
+What was it? I don't remember now.
+
+158
+01:28:56,115 --> 01:29:02,115
+Here again we should use ghost.
+
+159
+01:29:21,268 --> 01:29:23,268
+consistency.
+
+160
+01:29:32,851 --> 01:29:52,851
+So, parameter, the estimator theta hat is consistent if, as n goes to infinity, probability of error being larger than some value goes to zero.
+
+161
+01:29:55,667 --> 01:29:57,667
+So,
+
+162
+01:30:07,123 --> 01:30:14,123
+So that means consistent means as n goes to infinity.
+
+163
+01:30:15,539 --> 01:30:45,059
+probability of the difference between population standard deviation and sample standard deviation being larger value, some larger value, value being larger than some value that we can choose from. We can choose an epsilon here, any value.
+
+164
+01:30:45,539 --> 01:31:14,539
+it goes to zero. So these two say the difference between our estimate and the population parameter goes to zero as we use more and more data. And finally, asymptotically normal says that as n goes to infinity, the distribution of the S
+
+165
+01:31:15,539 --> 01:31:25,739
+So the distribution of s goes to normal distribution.
+
+166
+01:31:28,459 --> 01:31:32,300
+So how can we say goes to normal distribution? We can just write it.
+
+167
+01:31:34,800 --> 01:31:44,800
+Probability distribution of s and s squared goes to
+
+168
+01:31:44,799 --> 01:32:07,799
+So these nice things are there for standard deviation and variance.
+
+169
+01:32:07,799 --> 01:32:27,799
+variance. Now, another name for standard deviation is standard error. So this is used especially when we are talking about the standard deviation of an estimator.
+
+170
+01:32:33,171 --> 01:32:34,171
+So.
+
+171
+01:32:43,283 --> 01:32:45,283
+standard error.
+
+172
+01:32:50,387 --> 01:32:55,667
+of an estimator
+
+173
+01:32:59,252 --> 01:33:00,091
+To the head.
+
+174
+01:33:03,539 --> 01:33:06,539
+Now, these estimates
+
+175
+01:33:08,039 --> 01:33:10,039
+that we talked about
+
+176
+01:33:11,339 --> 01:33:17,539
+are, they are random variables themselves. So
+
+177
+01:33:19,380 --> 01:33:25,699
+So, our estimates
+
+178
+01:33:27,636 --> 01:33:32,435
+or random variables.
+
+179
+01:33:37,460 --> 01:34:05,460
+So we can talk about their standard deviation, their mean. So there is this loop recursion or estimator is itself a random variable and standard deviation of estimators.
+
+180
+01:34:31,347 --> 01:34:38,788
+are also called standard errors.
+
+181
+01:34:53,779 --> 01:34:59,939
+So when we say as an example,
+
+182
+01:35:02,804 --> 01:35:05,703
+we can say what is the
+
+183
+01:35:10,707 --> 01:35:36,907
+standard error. Of sample mean. What is the standard error of sampling? Well, it's just it's it's standard deviation, right? It's standard deviation.
+
+184
+01:35:39,412 --> 01:35:56,412
+And what was this? We actually calculated this. Was this population standard deviation divided by square root of n?
+
+185
+01:35:58,739 --> 01:36:00,739
+Was it like that?
+
+186
+01:36:02,739 --> 01:36:06,739
+Sample mean'in standardı bu muydu arkadaşlar?
+
+187
+01:36:33,108 --> 01:36:36,108
+sample menu we have discussed.
+
+188
+01:36:51,347 --> 01:37:19,188
+sample meanin standart sapması, population in standart sapması bölü kullanılan verinin veri sayısının kare kökü oluyor. Sample meanin ortalaması neymiş meani? O direct expected value idi değil mi?
+
+189
+01:37:22,100 --> 01:37:25,299
+expected value of sample mean direct
+
+190
+01:37:32,564 --> 01:37:36,883
+population, population, beklenen derece, minine.
+
+191
+01:38:01,300 --> 01:38:27,939
+Okay, so this is the standard error of sample mean. Now, we want estimators with low standard errors. So, a good estimator, estimator,
+
+192
+01:38:29,876 --> 01:38:40,115
+has two properties so far we can say. First, it must be ambiest.
+
+193
+01:38:43,796 --> 01:38:57,435
+and it should be consistent if possible, asymptotically.
+
+194
+01:38:58,996 --> 01:39:16,996
+and now we also want that if possible we want estimators with low standard
+
+195
+01:39:21,524 --> 01:39:32,324
+error. Okay, so standard error should be low. And the
+
+196
+01:39:38,036 --> 01:39:43,036
+Let's look at unbasedness and low standard error.
+
+197
+01:39:47,036 --> 01:39:51,036
+When you have
+
+198
+01:40:03,412 --> 01:40:05,412
+Let's throw these here.
+
+199
+01:40:09,171 --> 01:40:13,831
+let's say you have this.
+
+200
+01:40:15,507 --> 01:40:18,507
+X is for your parameters.
+
+201
+01:40:20,507 --> 01:40:23,507
+Parameter estimates.
+
+202
+01:40:23,507 --> 01:40:28,507
+And let's say your parameters value is here.
+
+203
+01:40:28,507 --> 01:40:36,507
+And you are estimating this this parameter with different samples.
+
+204
+01:40:38,507 --> 01:40:43,507
+So you are sampling once and calculating
+
+205
+01:40:43,507 --> 01:40:52,507
+Theta hat, you are sampling another times randomly and calculating another Theta hat.
+
+206
+01:40:52,507 --> 01:40:56,507
+You are continuing to do so.
+
+207
+01:40:56,507 --> 01:41:03,507
+And what will happen, you will see some estimates.
+
+208
+01:41:03,507 --> 01:41:06,507
+Right. And.
+
+209
+01:41:14,899 --> 01:41:19,459
+Now, if you see something like this,
+
+210
+01:41:22,452 --> 01:41:24,452
+So these are your estimates.
+
+211
+01:41:31,796 --> 01:41:59,796
+The most of the estimates are. Let's compare this to the next one. Let's compare this with this one, this graph. Let's say your graph is something like this. Again, you are you have to add that.
+
+212
+01:42:04,340 --> 01:42:11,840
+Let's say you your estimates are something like this.
+
+213
+01:42:22,804 --> 01:42:30,804
+What are the what are the difference of these two estimators? These two estimators?
+
+214
+01:42:30,804 --> 01:42:49,603
+Well, one one of them is the estimates here are kind of more focused, right? They are close to each other than this estimators estimates. So that means here we have low.
+
+215
+01:42:49,603 --> 01:42:52,003
+Standard error.
+
+216
+01:42:54,868 --> 01:43:12,868
+And here we have high standard error. But the story doesn't end here. We see that
+
+217
+01:43:15,699 --> 01:43:34,979
+Most of these estimates are different, far away from the from the population parameter. So the center of the estimates. You can say that's the expected value of the estimates.
+
+218
+01:43:37,076 --> 01:43:38,076
+are far away from the. From the parameters so you can see here we have no standard error. But this is a biased. Estimates.
+
+219
+01:44:02,131 --> 01:44:03,131
+And here we have high standard error, but this is bad. But it is it doesn't look like biased. The expected value seems to be right on the. Parameter so we can say this is an unbiased. Estimator. Now. Both of these are middle like in the middle.
+
+220
+01:44:32,131 --> 01:44:44,131
+They are not really good or they are not really bad. The really good one should be something like this, right?
+
+221
+01:44:52,692 --> 01:44:53,692
+The really good one should be. Like this estimates should be close to each other. And they must. They must gather around the parameters. So this looks like a very good estimators. This is this has no standard error.
+
+222
+01:45:22,579 --> 01:45:23,579
+and it has it is unbiased. So this is very nice. And the worst case would be something like this. Again, these are axis for our estimates.
+
+223
+01:45:47,539 --> 01:45:58,539
+And the worst case would be something like this. Maybe. We may need more space for to draw that but
+
+224
+01:46:01,363 --> 01:46:02,104
+to set.
+
+225
+01:46:12,851 --> 01:46:19,971
+Let's say your parameter is here.
+
+226
+01:46:21,684 --> 01:46:22,684
+your theta axis is there and your estimates are separated from each other in general and they are far away or their center is far away from the original from the original parameters that we want to estimate. So this says high standard
+
+227
+01:46:51,684 --> 01:47:08,684
+and it is it seems to be biased so this is like the worst case this is the best case and these two are somewhere in between
+
+228
+01:47:21,587 --> 01:47:29,587
+So this this is this was a discussion of sample standard.
+
+229
+01:47:29,587 --> 01:47:33,587
+Sample standard deviation and sample variance.
+
+230
+01:47:33,587 --> 01:47:41,587
+Now we will see this thing called interquartile range, but before that.
+
+231
+01:47:41,587 --> 01:47:50,587
+Let's give a break. So when we come, we will see interquartile.
+
+232
+01:47:54,003 --> 01:47:59,183
+range, IQR.
+
+233
+01:48:06,484 --> 01:48:12,984
+So for that, let's give a break till 3pm.
+
+234
+01:48:29,555 --> 01:48:32,755
+and
+
+235
+01:48:32,755 --> 01:48:33,835
+I will say
+
+236
+01:48:40,979 --> 01:48:42,979
+3.30 a.m.
+
+237
+02:01:50,195 --> 02:01:52,075
+sesim geliyor mu arkadaşlar?
+
+238
+02:02:05,779 --> 02:02:07,779
+and the other way.
+
+239
+02:02:14,003 --> 02:02:17,503
+Yes, I will talk about the same thing.
+
+240
+02:02:20,916 --> 02:02:49,916
+So we have been talking about measures of spread and we just saw variance, sample variance. Now we will see interquartile range. And interquartile range is just the difference between quartile one and quartile three.
+
+241
+02:02:50,916 --> 02:02:53,916
+So we will write it like this
+
+242
+02:02:58,931 --> 02:03:00,292
+Inter.
+
+243
+02:03:03,315 --> 02:03:10,315
+Quartile range
+
+244
+02:03:10,315 --> 02:03:16,315
+which is written as IQR
+
+245
+02:03:16,315 --> 02:03:30,315
+is the difference between Q3, which is the third quartile, and Q1, the first quartile.
+
+246
+02:03:32,659 --> 02:04:00,659
+So we have just seen this, right? So first quartile is 0.25th quantile. And Q3 is 0.75th quantile.
+
+247
+02:04:00,307 --> 02:04:22,307
+Now, this is population version. If you don't say anything, usually, if you don't say sample, that means it's population. So this is population interquartile range, and it has a sample version.
+
+248
+02:04:31,572 --> 02:04:43,572
+and it has, it is written as IQR with a head. This is a, this should be a head.
+
+249
+02:04:44,884 --> 02:05:07,083
+And it just means it's an estimate. And it is calculated by the estimate of third quartile and estimate of first quartile.
+
+250
+02:05:06,707 --> 02:05:08,707
+and
+
+251
+02:05:13,460 --> 02:05:21,440
+Now, we have been talking about outliers, but
+
+252
+02:05:26,836 --> 02:05:38,836
+We are saying that these are outliers are extreme values, but we didn't give you a precise definition of it.
+
+253
+02:05:38,836 --> 02:05:45,836
+Now, Baron says that outliers are
+
+254
+02:05:54,323 --> 02:05:57,643
+are the observations.
+
+255
+02:06:03,091 --> 02:06:13,631
+that are 1.5 interquartile range outside of
+
+256
+02:06:15,507 --> 02:06:22,507
+outside of Q1, Q2 range.
+
+257
+02:06:27,475 --> 02:06:32,475
+So let's see what that means.
+
+258
+02:06:35,635 --> 02:06:38,475
+Let's say,
+
+259
+02:06:43,380 --> 02:07:03,380
+This axis is your data axis. So these are values, data values. And let's say the mean of the data, median, median of the data is here.
+
+260
+02:07:03,380 --> 02:07:25,939
+and let's say this is Q. So remember mean is Q2. So that means let's say this is Q3 and this is Q1.
+
+261
+02:07:25,939 --> 02:07:34,939
+Now, interquartile range is this, this area here.
+
+262
+02:07:43,220 --> 02:08:10,220
+You subtract q1 from q2. Now, outliers are 1.5 interquartile range outside the q1 q2 range. What does that mean? So, let's say, let's say this length is
+
+263
+02:08:10,163 --> 02:08:17,163
+1.5 interquartile range.
+
+264
+02:08:17,163 --> 02:08:20,163
+Okay.
+
+265
+02:08:20,163 --> 02:08:29,163
+Now any value, any value
+
+266
+02:08:29,163 --> 02:08:35,163
+here is an outlier.
+
+267
+02:08:35,163 --> 02:09:03,163
+Why? Because it's outside this 1.5 interquartile range. Similarly, on the other side, left side, you can think of it in the same way. You can find a length of 1.5 IQR.
+
+268
+02:09:13,043 --> 02:09:24,043
+Any value outside or before this value here is again an outlier.
+
+269
+02:09:28,051 --> 02:09:30,051
+So, I think that's a good question.
+
+270
+02:09:36,020 --> 02:09:48,020
+So for example, was there an outlier in the CPU data? Let's try to find that.
+
+271
+02:10:12,307 --> 02:10:31,507
+So let's think about that. Is there any outlier there? First, obviously, we need data. So let's go back there. Where we listed the CPU data.
+
+272
+02:10:32,884 --> 02:10:36,884
+And we have seen that
+
+273
+02:10:40,884 --> 02:10:48,884
+The first quartile Q1 is 34. So let's write this somewhere.
+
+274
+02:10:48,884 --> 02:10:52,884
+Q1 was 34.
+
+275
+02:10:52,884 --> 02:11:01,884
+And Q3 was 59.
+
+276
+02:11:01,884 --> 02:11:29,884
+Okay. And the values are like this, I will not write all of them, but there is this 139 there, the maximum value, and the minimum value is nine. So these are possible outliers, there might be others. And before 139, you have 89.
+
+277
+02:11:29,884 --> 02:11:58,884
+and you have it goes like 915 etc. So let's look at whether we have an outlier here. So CPU data starts with nine. So nine, then there is a 15. It goes like that. And there's an 89.
+
+278
+02:12:02,771 --> 02:12:07,771
+and there's an hundred and thirty nine.
+
+279
+02:12:07,771 --> 02:12:23,771
+And the first quartile was 34 and second quartile was, third quartile was 59.
+
+280
+02:12:23,771 --> 02:12:30,771
+So this can be calculated from the data up there. I will not rewrite these things.
+
+281
+02:12:30,771 --> 02:13:00,051
+So these are obviously estimates, so I should write, I should put heads here, heads there. These are estimates, sample quartiles. So let's see. First of all, what is the interquartile range estimate? Well, we will just subtract
+
+282
+02:13:00,771 --> 02:13:07,771
+34 from 59, right?
+
+283
+02:13:07,771 --> 02:13:09,771
+And what do we get?
+
+284
+02:13:09,771 --> 02:13:16,771
+5, 2, right? 25.
+
+285
+02:13:16,771 --> 02:13:21,771
+So interquartile range estimate is 25.
+
+286
+02:13:21,771 --> 02:13:29,771
+And what is 1.5 interquartile range estimate?
+
+287
+02:13:29,771 --> 02:13:42,771
+Well, we will just multiply this value with 1.5, 1.5 times 25.
+
+288
+02:13:42,771 --> 02:13:48,771
+And that's 37.5.
+
+289
+02:13:48,771 --> 02:13:55,771
+Right. That's our interquartile range times 1.5.
+
+290
+02:13:55,771 --> 02:14:14,771
+Now, any value between 59 plus this value, which is 37.5.
+
+291
+02:14:14,771 --> 02:14:31,771
+So if we add the 59 dash, we get 96.5, 96.5.
+
+292
+02:14:31,771 --> 02:14:37,771
+So any value after this is an outlier.
+
+293
+02:14:37,771 --> 02:14:40,771
+And do we have such a value?
+
+294
+02:14:40,771 --> 02:14:43,771
+We actually have one value, right?
+
+295
+02:14:43,771 --> 02:14:45,771
+Right? Because
+
+296
+02:14:49,363 --> 02:14:54,363
+This hundred and thirty nine there
+
+297
+02:14:54,363 --> 02:14:59,363
+It's larger than this value
+
+298
+02:14:59,363 --> 02:15:04,363
+It's larger than 96.5
+
+299
+02:15:04,363 --> 02:15:09,363
+So it becomes it's like it becomes an outlier
+
+300
+02:15:09,363 --> 02:15:12,624
+Um,
+
+301
+02:15:17,332 --> 02:15:19,332
+So this is an outlier then
+
+302
+02:15:25,716 --> 02:15:26,716
+Now, do we have an outline in the other side? Let's check that. So what will we do? We want to go to 1.5 IQR to the left of first quartile. So that means we will subtract 37.5 from
+
+303
+02:15:55,716 --> 02:16:23,595
+34 and that will give us what minus 3.5 and now minus 3.5 is smaller than everything all the data we have right so minus 0 minus 3.5 is here.
+
+304
+02:16:23,595 --> 02:16:31,835
+So we have no outliers in the left side, in the minimal side.
+
+305
+02:16:37,811 --> 02:16:40,811
+On the maximal side we have an outline.
+
+306
+02:16:46,548 --> 02:17:07,548
+Okay, so this was outliers and interquartile range. So let's say you you gathered this CPU data. And you saw this outliers. What should you do about that? I
+
+307
+02:17:35,316 --> 02:17:40,316
+So when there are outliers, what should we do?
+
+308
+02:17:42,388 --> 02:18:10,388
+We are sampling data. So what should we do? When we sample data, let's say you have outliers. Now, some people say that just delete outliers.
+
+309
+02:18:14,548 --> 02:18:16,548
+So that it will not.
+
+310
+02:18:17,548 --> 02:18:27,548
+Why are we deleting outliers because it changes the means a lot right the mean the variance knows change a lot.
+
+311
+02:18:31,548 --> 02:18:35,548
+Mean and variance.
+
+312
+02:18:36,548 --> 02:18:41,548
+Estimates.
+
+313
+02:18:41,811 --> 02:18:48,811
+will not, may be better lesson.
+
+314
+02:19:00,852 --> 02:19:29,852
+So they may be better. But others say that, okay, it may not be a good idea to delete outliers because maybe those are. So let's report them. Because maybe they may be new trends.
+
+315
+02:19:30,852 --> 02:19:45,852
+in data. So the CPU suddenly now is starting to work slower somehow. Maybe there's something wrong with the system.
+
+316
+02:19:55,123 --> 02:20:06,623
+So those may be new trends in data or some special cases, situations.
+
+317
+02:20:08,275 --> 02:20:10,275
+that are interesting.
+
+318
+02:20:18,644 --> 02:20:46,644
+So, you can report outliers. And so one thing you can do is if you don't want to be affected too much, you can actually use robust statistics.
+
+319
+02:20:52,564 --> 02:20:55,763
+like median,
+
+320
+02:20:57,299 --> 02:20:59,019
+or IQR.
+
+321
+02:21:24,468 --> 02:21:53,747
+median and IQR interquartile range. And I didn't mention this, but interquartile range is robust too. So as you see, first you are sorting. So we are not doing any aryatmetics. We are just sorting the data and selecting from it. So
+
+322
+02:21:54,468 --> 02:22:02,067
+if you look at it, mean,
+
+323
+02:22:06,868 --> 02:22:14,368
+and variance are not robust.
+
+324
+02:22:17,043 --> 02:22:27,043
+Instead of a variance, I will write standard deviation because its unit is similar to IQR.
+
+325
+02:22:30,515 --> 02:22:38,515
+but you can use median sometimes.
+
+326
+02:22:39,987 --> 02:22:44,388
+and IQR instead of these.
+
+327
+02:22:50,451 --> 02:23:00,011
+So you may want to use median and IQR instead of mean and standard deviation.
+
+328
+02:23:07,603 --> 02:23:16,603
+So with this, I think we have we have finished another chapter.
+
+329
+02:23:19,540 --> 02:23:25,460
+No, we didn't. So we are in Chapter 8 now.
+
+330
+02:23:28,628 --> 02:23:38,628
+We are still in Chapter 8. And we will see some graphs, graphical statistics.
+
+331
+02:24:22,131 --> 02:24:47,812
+So there are these nice plots, nice graphs that we can look at and we can inspect before doing anything with our data. In fact, the book says that before doing anything
+
+332
+02:24:50,963 --> 02:25:18,963
+if you have some data with it before doing anything plot and look at the data. Okay. So before doing anything like calculating the mean, median or whatever or we will learn other methodologies before using them
+
+333
+02:25:20,963 --> 02:25:27,963
+just plot your data and look its shape.
+
+334
+02:25:27,963 --> 02:25:39,963
+And that information will give us some, that these plots give us some information that are helpful to us.
+
+335
+02:25:39,963 --> 02:25:43,963
+for example what probability distribution
+
+336
+02:25:54,036 --> 02:25:57,635
+the data comes from is produced by
+
+337
+02:26:06,899 --> 02:26:11,899
+and Is there any outliers?
+
+338
+02:26:18,067 --> 02:26:45,067
+And what are time trends? So if there is a, there is time in the data, you can see that by time something is increasing, decreasing. So what, what, what happens to the data as, as time, as time passes?
+
+339
+02:26:46,995 --> 02:26:55,995
+and you might have multiple variables and you might want to see relations.
+
+340
+02:26:56,948 --> 02:27:24,948
+between variables. So these things can be very helpful for you. And what are some graph types that can be used? We, so some, let's say graph types.
+
+341
+02:27:49,203 --> 02:27:52,203
+Well, one of them is histogram.
+
+342
+02:27:57,427 --> 02:28:01,027
+And this is very useful and it kind of gives you
+
+343
+02:28:03,667 --> 02:28:05,107
+An idea about
+
+344
+02:28:06,547 --> 02:28:09,667
+Distribution of the data, probability distribution.
+
+345
+02:28:13,332 --> 02:28:15,911
+And you might have box plots.
+
+346
+02:28:19,443 --> 02:28:22,443
+You might have time plots
+
+347
+02:28:25,683 --> 02:28:27,963
+or you might have scattered plots.
+
+348
+02:28:32,915 --> 02:28:46,115
+and it goes on. So if you if you look at you will you will see that there are a lot of possible visualizations of data.
+
+349
+02:28:49,811 --> 02:28:51,811
+and they are very helpful.
+
+350
+02:28:55,860 --> 02:29:02,860
+First of all, first of these we will see histograms.
+
+351
+02:29:42,227 --> 02:30:10,367
+So nice thing about histograms. So first let's let's see how we can draw one and then let's talk about its properties. So let's try to draw a histogram of the CPU data. So what you do is you sort the data.
+
+352
+02:30:13,971 --> 02:30:17,971
+and then you decide a bin size.
+
+353
+02:30:30,548 --> 02:30:35,548
+and count the number of data points in each bin.
+
+354
+02:30:54,004 --> 02:31:22,483
+count the number of data samples in each bin. Bin Türkçe'de kova anlamına geliyor galiba. Böyle küçük kovalar sanki ayarlıyorsunuz.
+
+355
+02:31:22,483 --> 02:31:27,483
+her kovaya kaç tane veri düşmüş onu hesap ediyorsunuz.
+
+356
+02:31:34,708 --> 02:31:38,708
+So let's say, let's say,
+
+357
+02:31:43,188 --> 02:31:48,907
+Let's say for CPU data.
+
+358
+02:31:54,388 --> 02:31:58,388
+We will use bin size of
+
+359
+02:32:01,716 --> 02:32:23,476
+14. And what are the bins? Let's first this, then we will decide on the bins. What are bins? Decide a bin size and bins. What are your bins? So obviously for this, you need to look at your data, but
+
+360
+02:32:23,476 --> 02:32:47,476
+You can say that one bin is from let's say zero to 14. And you need to give a convention. So you will let's say you will let's say
+
+361
+02:32:56,724 --> 02:33:23,243
+include zero but not include 14. And then the next bin will be from 14 to 28. But 28 will not be here. 28 will be in the next bin. And then 14 more 30, 42.
+
+362
+02:33:21,396 --> 02:33:29,015
+etc. So you basically list your bins.
+
+363
+02:33:32,531 --> 02:33:46,531
+And now for each bin, how many, how many of the, how many of the data are in this range? So from zero to 14, how many value do we have?
+
+364
+02:33:49,683 --> 02:33:54,683
+So you need to find that count.
+
+365
+02:33:57,843 --> 02:34:06,503
+So count, let's say, and these are bins. Let me delete this.
+
+366
+02:34:11,796 --> 02:34:14,415
+So these are bins.
+
+367
+02:34:17,427 --> 02:34:36,787
+and the count is so between zero and 14 how many do we have? Well, we have only nine. If you remember, it goes with nine and then 15, etc. It goes like that. So we have only one of these and that's nine, right?
+
+368
+02:34:36,787 --> 02:34:59,788
+and then between 14 and 28 we have five between 28 and 42 we have nine so basically you kind of list all of them and then you can now just draw this
+
+369
+02:35:19,412 --> 02:35:33,171
+So you can draw this. So the x axis will be data axis data values axis.
+
+370
+02:35:41,043 --> 02:35:47,843
+and the other axis will be count.
+
+371
+02:35:50,227 --> 02:36:13,227
+So how many? How many of these do we have? And let's say from 0 to 14, we have only one. And from 14 to 28, we have five.
+
+372
+02:36:17,556 --> 02:36:29,315
+And from 20 to 42, we have 9.
+
+373
+02:36:41,012 --> 02:36:47,251
+and then it goes down. So from 42 to 56.
+
+374
+02:36:51,412 --> 02:36:54,412
+we have endless.
+
+375
+02:36:58,036 --> 02:37:05,635
+and then from 56 to
+
+376
+02:37:08,915 --> 02:37:16,915
+what will that be? 66, 70, 70.
+
+377
+02:37:19,827 --> 02:37:22,827
+So let's continue with this.
+
+378
+02:37:28,819 --> 02:37:39,459
+So from 70 to 84, we have a little less.
+
+379
+02:37:40,500 --> 02:37:51,099
+and from 84 to 98.
+
+380
+02:37:55,188 --> 02:38:23,188
+I guess we have just one. From 98 to 100 and 112, we have no data dash, right? We have no data dash. And from 112 to
+
+381
+02:38:23,188 --> 02:38:51,007
+to 126. How many? We have no data again, right? Because it goes like 89 and then we have 135, right? So we have no data here. And once more,
+
+382
+02:38:51,007 --> 02:38:58,007
+from 140.
+
+383
+02:38:58,007 --> 02:39:02,007
+So from 126 to 140.
+
+384
+02:39:02,007 --> 02:39:07,007
+Now we have just one element there and that's 125.
+
+385
+02:39:07,007 --> 02:39:09,007
+So we have just one element here.
+
+386
+02:39:12,884 --> 02:39:19,884
+So if you if you draw this, you have this histogram.
+
+387
+02:39:24,884 --> 02:39:26,884
+Now
+
+388
+02:39:31,283 --> 02:39:42,283
+histograms. So there is this, this is called frequency histogram.
+
+389
+02:39:51,796 --> 02:40:12,796
+And there is a version of this is there's a version of this that is called relative frequency histogram and it has the same x axis but the values here are not one but how many values we had here?
+
+390
+02:40:12,796 --> 02:40:40,296
+1 over 30, right? Because we had 30 items. We are dividing these counts by number of elements in the data. And then that will be a relative frequency histogram. So this will be 5 over 30.
+
+391
+02:40:40,296 --> 02:40:47,296
+this will be 9 over 30. So, uh,
+
+392
+02:40:51,252 --> 02:40:53,131
+So let's say
+
+393
+02:41:07,412 --> 02:41:25,871
+If we use count divided by number of all elements,
+
+394
+02:41:29,172 --> 02:41:34,411
+instead of just count.
+
+395
+02:41:44,404 --> 02:41:49,623
+The graph is called, or the plot is called,
+
+396
+02:41:58,420 --> 02:42:03,420
+relative.
+
+397
+02:42:08,147 --> 02:42:15,147
+relative frequency, so it's not a frequency but relative frequency.
+
+398
+02:42:25,843 --> 02:42:47,843
+And now the nice thing about relative frequency histogram is all counts add up to 1. So if you have here you have 1.30. If you sum this with 5 over 30.
+
+399
+02:42:47,843 --> 02:42:57,843
+and then you can add 9 over 30 and you can add others and that will give you 1.
+
+400
+02:42:57,843 --> 02:43:02,843
+And this looks like what? This looks like a probability distribution.
+
+401
+02:43:02,843 --> 02:43:13,843
+In a probability distribution, the probabilities of the values add up to 1.
+
+402
+02:43:13,843 --> 02:43:15,843
+So
+
+403
+02:43:20,020 --> 02:43:33,020
+So we have, so this kind of reminds you that these values are then proportions.
+
+404
+02:43:38,995 --> 02:43:41,995
+and there you can see their probability.
+
+405
+02:43:44,995 --> 02:43:45,995
+They estimate.
+
+406
+02:43:50,131 --> 02:44:09,131
+probability, probabilities. And you can say then, we can, we are able to see in a way probability distribution.
+
+407
+02:44:13,780 --> 02:44:17,780
+So what can we say? A histogram
+
+408
+02:44:17,780 --> 02:44:24,780
+gives us idea about probability distribution. Let's say that
+
+409
+02:44:31,700 --> 02:44:32,700
+So relative frequency histogram gives us idea about the probability distribution of data. So that's that's if you think about it, that's very important.
+
+410
+02:45:01,700 --> 02:45:13,819
+because we have been working with the random variables and their probability distributions for a long time now, almost from the start of the semester.
+
+411
+02:45:14,639 --> 02:45:26,600
+So if we have data, if we can draw it, if we can draw the histogram, relative histogram of it,
+
+412
+02:45:26,599 --> 02:45:39,599
+you are kind of saying, okay, the probability of data being in this range is this and that and that. So you are creating this distinct like a probability distribution.
+
+413
+02:46:03,763 --> 02:46:22,524
+So. What do we see in this data? What do we see in the data we have just plotted? Let's see. So I will delete this part.
+
+414
+02:46:25,427 --> 02:46:28,427
+and I will rename this part to frequency histogram.
+
+415
+02:46:32,027 --> 02:46:35,427
+So I will maybe I should write here frequency.
+
+416
+02:46:45,652 --> 02:47:09,652
+histogram. So what can we see now about the data here? Well, one of them is this is not a symmetric distribution, right? So what we see
+
+417
+02:47:08,275 --> 02:47:22,275
+What do we see? Well, this distribution is not symmetric.
+
+418
+02:47:25,907 --> 02:47:54,588
+In fact, it is right skewed, right skewed. It has a long tail on the right side. So it is right skewed. And what else? There seems to be an outlier. You can spot an outlier.
+
+419
+02:47:55,907 --> 02:48:23,907
+we can support an outlier. So this guy seems to be an outlier just from even before you calculate IQR etc you are seeing that the others are kind of gathered here but this guy here right there so it's kind of an outlier right so
+
+420
+02:48:25,907 --> 02:48:28,907
+we can support that.
+
+421
+02:48:28,907 --> 02:48:29,907
+And
+
+422
+02:48:32,948 --> 02:48:41,948
+except this this outlier, it seems that this is homogeneous. So all data are like there isn't any more
+
+423
+02:48:44,948 --> 02:48:59,948
+any more bins where no data is like all bins, all bins are full, right. And they are first increasing number of counts, the counts are increasing and decreasing. So
+
+424
+02:49:02,948 --> 02:49:05,348
+We have homogenous data
+
+425
+02:49:11,987 --> 02:49:15,267
+except the outliers.
+
+426
+02:49:22,420 --> 02:49:41,420
+and know what is a good model for this data? That's maybe one of the most important thing we can learn. This looks like a gamma distribution.
+
+427
+02:49:57,268 --> 02:50:24,268
+So then now we can say, okay, probably this data was generated by a gamma probability distribution. So then we can try to find the alpha and lambda of that gamma. And then if we can find lambda and gamma, we can now do a lot of things with that distribution.
+
+428
+02:50:34,611 --> 02:50:45,171
+So let's finish here. Let's finish here. And we will continue next week.
+
+429
+02:50:47,412 --> 02:50:49,412
+Today we will finish this.
+
+430
+02:50:56,979 --> 02:51:18,639
+Chapter 8'in sonuna yaklaşıyoruz. Gelecek hafta bir sonraki chapter olan chapter 10'a başlarız herhalde. Gelecek hafta vize, ikinci vize var diye konuşmuştuk. Dolayısıyla ikinci vize olacak.
+
+431
+02:51:22,579 --> 02:51:36,579
+So, here we go.
+
+432
+02:51:39,507 --> 02:51:41,507
+One question is a question?
+
+433
+02:51:45,427 --> 02:51:47,427
+and remember what you remember.
+
+434
+02:51:51,827 --> 02:51:52,367
+Yok.
+
+435
+02:51:53,987 --> 02:51:57,387
+Peki öyleyse kapatıyorum. Haftaya görüşürüz arkadaşlar.
+
+436
+02:52:01,843 --> 02:52:02,643
+Evinus
