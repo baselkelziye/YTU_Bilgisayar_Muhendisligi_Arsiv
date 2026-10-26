@@ -44,6 +44,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Bilgisayar Donanımı Ders Kayıtları Altyazıları](./Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -86,6 +87,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1-vbsuBWeH-6pERcq4DPnR4OFo98oHKGP?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları Altyazıları](./Bilgisayar%20M%C3%BChendisleri%20i%C3%A7in%20Sinyaller%20ve%20Sistemler/ders_kayitlari/) ✨
 - 📄 **Not:** [Esma'nın SS notları](./Bilgisayar%20M%C3%BChendisleri%20i%C3%A7in%20Sinyaller%20ve%20Sistemler/slaytlar_notlar/2022/Esma%27n%C4%B1n%20ss%20notlar%C4%B1.docx) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
@@ -285,6 +287,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Sistem Analizi ve Tasarımı Ders Kayıtları Altyazıları](./Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1/ders_kayitlari/) ✨
 - 📄 **Not:** [Damla Gül Saykara'nın Göksel Biricik El Yazısı Slayt Özeti Notları](./Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1/slaytlar_notlar/2026/damla_gul_saykara) ✨
 - 📄 **Not:** [Melihin 2024 Notları](./Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1/slaytlar_notlar/2024/melih) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)

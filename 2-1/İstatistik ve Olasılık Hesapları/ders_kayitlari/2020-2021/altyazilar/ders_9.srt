@@ -1,0 +1,3127 @@
+1
+00:05:00,500 --> 00:05:03,500
+Arkadaşlar merhabalar sesim geliyor mu?
+
+2
+00:05:05,500 --> 00:05:08,500
+Geliyor hocam merhaba
+
+3
+00:06:37,588 --> 00:06:51,588
+We were working on continuous distributions. And now we are in the central limit theorem.
+
+4
+00:07:08,500 --> 00:07:34,139
+Central Limit theorem is about sums of random variables. So let's say you have some random variables. Let's call them x1. And there's another random variable, let's call it x2 plus up to some xn.
+
+5
+00:07:34,139 --> 00:07:59,139
+and you are summing them up and you are getting some, since each of these are random variables, their sum is another random variable. Let's call that random variable as n, meaning from the sum of n variables.
+
+6
+00:07:59,139 --> 00:08:19,139
+Now, let's also assume that these x1, x2, up to xn are e, meaning identical, independent, and identically distributed.
+
+7
+00:08:35,059 --> 00:09:03,059
+What that means is first of all, what number X1 gets does not change or affect what number X2 gets. So they are independent. And identically distributed means that expected value of each of these
+
+8
+00:09:00,436 --> 00:09:29,696
+are same, let's call it Mu. And let's call it Mu i. And variance of this Xi, this was X1, X1 is equal to variance of X2. And let's call it variance of i.
+
+9
+00:09:30,436 --> 00:09:46,836
+So they have the same variance, they have the same mean and they have the same graph. So these are from the same distribution, exact distribution same. Identical distribution.
+
+10
+00:09:54,131 --> 00:09:58,131
+Now, the central limit theorem says that
+
+11
+00:09:58,131 --> 00:10:00,291
+The central limit theorem says that
+
+12
+00:10:13,908 --> 00:10:40,507
+The central limit theorem says that as So we call it CLT from central limit theorem Central limit theorem says that as the n goes to infinity as we have more and more variables in this sum.
+
+13
+00:10:40,507 --> 00:10:54,507
+so this n goes to infinity as that goes to infinity the distribution let me write this way
+
+14
+00:11:01,107 --> 00:11:27,667
+distribution of Sn. So probability distribution of this sum goes to normal distribution. We just learned normal distribution last week. And the mean of that normal distribution is
+
+15
+00:11:29,364 --> 00:11:53,864
+n times the mean of each of these guys. So basically you are just summing their means. You have n of them, so their expected value or mean is n times n times the mean of these guys. So let me call that
+
+16
+00:11:55,860 --> 00:11:58,860
+will I
+
+17
+00:12:00,820 --> 00:12:30,399
+mu i times n. So we have n of these summing up. So their mean will be summed to. And what is the variance? Notice that there is a square here. So this is variance. The variance of the normal distribution is n times variance of these i's.
+
+18
+00:12:30,820 --> 00:12:42,820
+Okay. So central limit theorem says that as the sum increases the.
+
+19
+00:12:48,980 --> 00:13:03,980
+The number of elements participating in the sum increases as that increases. The distribution of the sum goes to normal distribution and in practice.
+
+20
+00:13:08,371 --> 00:13:33,371
+In practice, since infinite is, you can never go to infinite. If n is greater than or equal to 30, you can use central limit theorem. We can use central limit theorem.
+
+21
+00:13:50,548 --> 00:13:52,548
+Let's do an example.
+
+22
+00:13:56,019 --> 00:14:05,019
+Let's say we have a disk, hard disk.
+
+23
+00:14:05,019 --> 00:14:15,019
+That has to 330 megabytes of empty space.
+
+24
+00:14:15,019 --> 00:14:17,019
+You
+
+25
+00:14:24,019 --> 00:14:25,219
+and,
+
+26
+00:14:34,964 --> 00:14:41,464
+sınav günü ile ilgili değişiklik mi var? Nereden çıktı bu?
+
+27
+00:14:48,179 --> 00:14:52,979
+and other groups of people with other groups.
+
+28
+00:15:02,740 --> 00:15:09,740
+How did we talk about the next week?
+
+29
+00:15:17,331 --> 00:15:24,391
+Sanki 17. hafta diye konuşmuştuk değil mi? Yani 17 Aralık gelecek hafta diye konuşmuştuk.
+
+30
+00:15:27,668 --> 00:15:41,668
+I have a new relationship with the group. So now we are 17 Aralık Olarak Devam Ediyor. If there is a change, I can see you in the email.
+
+31
+00:15:47,251 --> 00:16:00,811
+So we have this hard disk and it has 330 megabytes of empty space.
+
+32
+00:16:00,811 --> 00:16:06,451
+And we want to download the...
+
+33
+00:16:11,220 --> 00:16:13,220
+300 images.
+
+34
+00:16:16,628 --> 00:16:23,628
+independent images there.
+
+35
+00:16:26,580 --> 00:16:53,859
+into that hard disk. And these images each has a size that change with, we don't know the exact distribution, but the mean is, so normally we have one megabyte. So in average, in mean, these images are one megabyte.
+
+36
+00:16:53,859 --> 00:17:20,859
+they may be one, some of them may be more in size, some of them may be less, but in average their mean is one megabyte and I will say me, am I here from mean of images and variance of these images is sorry
+
+37
+00:17:23,859 --> 00:17:24,859
+0.5 square. So standard deviation is 0.5 megabytes. And variance is 0.5 square in megabytes. And the question is, is it likely to be sufficient? Is the
+
+38
+00:17:53,859 --> 00:17:59,959
+space sufficient.
+
+39
+00:18:03,635 --> 00:18:32,635
+Or we can say what is the probability of space being sufficient. Now, when does the space become sufficient? Let's first think about the total amount of space needed total amount of the download. So let's call that S of 300 because we have 300 images to download.
+
+40
+00:18:32,635 --> 00:18:44,635
+and so we have x1 as the first images size and we don't know what it is yet.
+
+41
+00:18:44,635 --> 00:19:00,635
+We will download it later. So I'm just writing it as an as a random variable to x2 plus up to xn and here is 300.
+
+42
+00:19:00,635 --> 00:19:20,635
+So we have 300 images. They have an X here is X. I here is the random variable that models the size of image. I.
+
+43
+00:19:20,635 --> 00:19:42,875
+okay, Xi size of the image i, so S300 is the total size of the download okay and what we need is here
+
+44
+00:19:42,875 --> 00:19:54,635
+Here to space to be sufficient, we need the probability of, we need this sum to be
+
+45
+00:19:54,635 --> 00:20:03,195
+Less than or equal to 330 megabytes, right?
+
+46
+00:20:04,415 --> 00:20:10,075
+If the size, total size is less than that, hard disk is sufficient.
+
+47
+00:20:10,075 --> 00:20:35,076
+If it is not, we have a problem. So the question is to find this probability. Now, this is a direct, direct, this is an example for a direct application of central limit theorem.
+
+48
+00:20:35,076 --> 00:21:04,076
+We can use central limit theorem, why 300 is greater than 30. So n here is 300. So that means the probability, the distribution of S 300 is approximately a normal distribution.
+
+49
+00:21:05,076 --> 00:21:06,076
+and what is the mean of that normal distribution? n times mean of these images. So we have 300 images, each of which have one megabyte of size in average. And variance is again 300 times
+
+50
+00:21:35,076 --> 00:21:39,876
+variance of the individual images.
+
+51
+00:21:39,876 --> 00:21:42,456
+So that's 0.5 square.
+
+52
+00:21:45,555 --> 00:21:51,396
+Now, the rest is, you just need to find,
+
+53
+00:21:53,016 --> 00:21:58,016
+so this is, you just need to standardize this, right?
+
+54
+00:21:58,975 --> 00:22:02,496
+So if you have a normal distribution,
+
+55
+00:22:02,612 --> 00:22:09,612
+we standardize it. So fee I will
+
+56
+00:22:12,980 --> 00:22:24,480
+So let's say we have a Z. And Z is standard normal distribution as you remember.
+
+57
+00:22:29,619 --> 00:22:35,619
+And here
+
+58
+00:22:59,571 --> 00:23:00,571
+So,
+
+59
+00:23:04,052 --> 00:23:08,011
+we just need to standardize this value here.
+
+60
+00:23:08,891 --> 00:23:09,891
+So,
+
+61
+00:23:13,931 --> 00:23:14,931
+and
+
+62
+00:23:19,923 --> 00:23:26,923
+Z in this case is 330 minus this mu
+
+63
+00:23:26,923 --> 00:23:32,923
+divided by this variance's square root.
+
+64
+00:23:32,923 --> 00:23:34,923
+So this.
+
+65
+00:23:34,923 --> 00:23:35,923
+Okay.
+
+66
+00:23:35,923 --> 00:23:40,923
+And basically we want to find this
+
+67
+00:23:40,923 --> 00:23:46,923
+probability of
+
+68
+00:23:46,003 --> 00:24:15,983
+as 300 less than or smaller than 330. It's just a cumulative distribution of this value, right? Z. Because this is a cumulative distribution. From the definition of cumulative distribution, we know that we can find this as a cumulative distribution of
+
+69
+00:24:16,003 --> 00:24:30,003
+330. And if you have a standard normal variable like this, we can standardize this with subtracting
+
+70
+00:24:30,003 --> 00:24:37,923
+the mean and dividing to standard deviation. We will have a standard normal distribution
+
+71
+00:24:37,923 --> 00:24:43,923
+and that's cumulative distribution value can be found in tables.
+
+72
+00:24:49,683 --> 00:24:53,683
+of, for example, in Baron.
+
+73
+00:24:59,155 --> 00:25:13,395
+And so this should be. 09997 if you want to do if you want to check, check this at one.
+
+74
+00:25:18,067 --> 00:25:21,067
+We have a special case where
+
+75
+00:25:25,067 --> 00:25:26,067
+if the
+
+76
+00:25:27,067 --> 00:25:30,067
+x1, x2
+
+77
+00:25:32,067 --> 00:25:34,067
+are
+
+78
+00:25:34,067 --> 00:25:37,067
+normal themselves
+
+79
+00:25:37,067 --> 00:25:38,067
+and
+
+80
+00:25:44,660 --> 00:25:52,660
+The sum is always normal. We don't care about number of terms.
+
+81
+00:26:06,132 --> 00:26:34,132
+So that's another nice, nice thing to know. If, if we know that these X, X, X one, X two are already normal. There's some, there's some is normal even if, even if number of, number of these things. So the last one is X n.
+
+82
+00:26:36,132 --> 00:26:38,132
+let me light it this way
+
+83
+00:26:42,932 --> 00:26:49,971
+Even if n is less than 30, we can still say that this sum is normal.
+
+84
+00:26:53,711 --> 00:26:56,932
+Hocam çok özür diliyorum. Yukarıdaki soruyu bitirdik mi?
+
+85
+00:26:57,812 --> 00:26:58,751
+Evet, bitirdik.
+
+86
+00:27:00,091 --> 00:27:02,591
+Benim kaçırdığım bir şey mi var orada hocam?
+
+87
+00:27:02,591 --> 00:27:05,711
+Yani çok kısa baştan almamız mümkün mü?
+
+88
+00:27:05,891 --> 00:27:12,571
+Yani 300 MB'lik bir yere 1 MB'nin 300 tane resmi yerleştirebilme oranımızı mı bulduk biz?
+
+89
+00:27:12,932 --> 00:27:20,492
+the olasılığını olasılığını yani birer megabayt 300 resmi 330 megabayt kart diske
+
+90
+00:27:20,492 --> 00:27:31,531
+nasıl yerleştirme yani şöyle şöyle mazur görün kusura bakmayın ya estağfurullah şöyle bu
+
+91
+00:27:31,531 --> 00:27:38,251
+resimleri elimizde değil her birinin bir megabayt olduğunu bilmiyoruz ha yukarıda
+
+92
+00:27:38,251 --> 00:27:40,251
+I'm sorry to go ahead.
+
+93
+00:27:40,251 --> 00:27:42,251
+Sorry to go ahead.
+
+94
+00:27:42,251 --> 00:27:44,251
+We were already in the first page.
+
+95
+00:27:44,251 --> 00:27:46,251
+There are some resim,
+
+96
+00:27:46,251 --> 00:27:48,251
+1 MB,
+
+97
+00:27:48,251 --> 00:27:50,251
+the new-y,
+
+98
+00:27:50,251 --> 00:27:52,251
+the more-or-less
+
+99
+00:27:52,251 --> 00:27:54,251
+look at it?
+
+100
+00:27:54,251 --> 00:27:58,251
+Let's think about it.
+
+101
+00:27:58,251 --> 00:28:02,251
+We don't have a spider.
+
+102
+00:28:02,251 --> 00:28:06,251
+We can see it.
+
+103
+00:28:06,251 --> 00:28:18,751
+Rastgele resimler indirecek ama diyelim ki biliyoruz ki bir daha önceki çalışmadan internetteki resimlerin ortalama büyüklüğü 1 megabyte.
+
+104
+00:28:18,751 --> 00:28:19,652
+Şimdi biraz.
+
+105
+00:28:19,851 --> 00:28:20,292
+Tamam mı?
+
+106
+00:28:21,211 --> 00:28:27,351
+Dolayısıyla esasen onların her biri de bir rastgele değişken.
+
+107
+00:28:29,372 --> 00:28:31,092
+Anladım şimdi hocam.
+
+108
+00:28:31,211 --> 00:28:32,071
+Şimdi anladım.
+
+109
+00:28:32,292 --> 00:28:35,571
+Bu da bir rastgele değişken çünkü daha bu işi yapmadık.
+
+110
+00:28:36,251 --> 00:28:45,411
+This is 1, 5, 30, 0.2, but this is like this.
+
+111
+00:28:45,411 --> 00:28:54,551
+But what we know is that the internet's picture is 1 MB.
+
+112
+00:28:54,551 --> 00:29:00,292
+And the picture's picture is 0.25.
+
+113
+00:29:00,292 --> 00:29:03,752
+This is what we know.
+
+114
+00:29:03,751 --> 00:29:04,751
+Yes, yes.
+
+115
+00:29:04,751 --> 00:29:07,751
+We can do 300 different things.
+
+116
+00:29:07,751 --> 00:29:09,751
+We know what we know.
+
+117
+00:29:09,751 --> 00:29:15,751
+We know what we know about 330 megabayton is not yet to be?
+
+118
+00:29:15,751 --> 00:29:22,751
+We know what we know about central limit theorem,
+
+119
+00:29:22,751 --> 00:29:24,751
+which means that we use the limit theorem.
+
+120
+00:29:24,751 --> 00:29:26,751
+What we know about the limit theorem?
+
+121
+00:29:26,751 --> 00:29:30,751
+If you have a problem with this,
+
+122
+00:29:30,751 --> 00:29:33,671
+N tane rastgele değişkenin toplamı.
+
+123
+00:29:37,411 --> 00:29:38,651
+Buradaki gibi.
+
+124
+00:29:40,231 --> 00:29:41,531
+O zaman ne yapabilirsin?
+
+125
+00:29:42,211 --> 00:29:48,171
+Bu N sayısı 30'un üzerinde ise, yani pratikte 30'un üzerinde diyoruz da,
+
+126
+00:29:48,171 --> 00:29:49,511
+esasen teorem ne diyor?
+
+127
+00:29:49,611 --> 00:29:50,951
+N sonsuza giderken diyor.
+
+128
+00:29:52,171 --> 00:29:55,411
+N sonsuza giderken ne diyebiliyoruz?
+
+129
+00:29:55,411 --> 00:30:04,411
+This is the total of the total of the normal dağılımı.
+
+130
+00:30:04,411 --> 00:30:10,411
+This is the total of the M300.
+
+131
+00:30:10,411 --> 00:30:20,411
+This is the total of the total of the normal dağılımı.
+
+132
+00:30:20,411 --> 00:30:30,411
+because the difference between the difference between the difference between the same
+
+133
+00:30:30,411 --> 00:30:34,411
+the same variance.
+
+134
+00:30:34,411 --> 00:30:37,411
+So I think this is a good idea.
+
+135
+00:30:38,132 --> 00:30:46,132
+We have a work done with a lot of work. We know that the average of 1 MB is 1 MB.
+
+136
+00:30:46,132 --> 00:30:52,132
+We have a resum that you can see.
+
+137
+00:30:52,132 --> 00:30:59,132
+The resum that you can see is 1.
+
+138
+00:30:59,132 --> 00:31:03,132
+Then you can see 1.
+
+139
+00:31:03,132 --> 00:31:04,132
+again.
+
+140
+00:31:04,132 --> 00:31:07,132
+And the one's expected to be the one.
+
+141
+00:31:07,132 --> 00:31:13,132
+Is this the one?
+
+142
+00:31:13,132 --> 00:31:15,132
+Yes, it is.
+
+143
+00:31:15,132 --> 00:31:18,132
+The one's expected to be the one's left.
+
+144
+00:31:18,132 --> 00:31:23,132
+The one's left.
+
+145
+00:31:23,132 --> 00:31:25,132
+300 x 0.5 x.
+
+146
+00:31:25,132 --> 00:31:27,132
+We did this.
+
+147
+00:31:27,132 --> 00:31:32,132
+Now, normal to be the one's right.
+
+148
+00:31:32,132 --> 00:31:34,111
+normal
+
+149
+00:31:34,111 --> 00:31:35,172
+dağılımı biz nasıl
+
+150
+00:31:35,172 --> 00:31:37,611
+parametrize ediyoruz, nasıl
+
+151
+00:31:37,611 --> 00:31:40,431
+tanımlıyoruz? Yani hangi parametreler
+
+152
+00:31:40,431 --> 00:31:41,512
+normal dağılımı
+
+153
+00:31:41,512 --> 00:31:43,292
+bizim için belirliyor?
+
+154
+00:31:44,392 --> 00:31:46,032
+Ağırlığı ve varyansı
+
+155
+00:31:46,032 --> 00:31:47,852
+ya da standart satması. Fark etmiyor.
+
+156
+00:31:48,172 --> 00:31:50,251
+Varyans standart satmanın karesi.
+
+157
+00:31:50,251 --> 00:31:50,551
+Evet.
+
+158
+00:31:51,771 --> 00:31:53,951
+O zaman ortalaması
+
+159
+00:31:53,951 --> 00:31:56,011
+nedir? Ortalaması
+
+160
+00:31:56,011 --> 00:31:57,072
+kaç tane
+
+161
+00:31:57,072 --> 00:31:59,032
+şey var?
+
+162
+00:31:59,871 --> 00:32:02,051
+İşte o topladığınız şey
+
+163
+00:32:02,051 --> 00:32:04,051
+and the average of them.
+
+164
+00:32:04,051 --> 00:32:06,051
+This is a very clear.
+
+165
+00:32:06,051 --> 00:32:08,051
+If we have a 1 MB of 300
+
+166
+00:32:08,051 --> 00:32:10,051
+a pair of nesneses,
+
+167
+00:32:10,051 --> 00:32:14,051
+the average of the average of 300?
+
+168
+00:32:14,051 --> 00:32:16,051
+The average of 300.
+
+169
+00:32:16,051 --> 00:32:18,051
+The average of the variance.
+
+170
+00:32:18,051 --> 00:32:22,051
+The average of the variance is the same.
+
+171
+00:32:22,051 --> 00:32:30,051
+The average of the variance.
+
+172
+00:32:30,051 --> 00:32:45,051
+If you remember, one of the two different variables, the difference between the two different variables, the difference between the two different variables.
+
+173
+00:32:45,051 --> 00:32:50,051
+So, we can see the same as the variable variable.
+
+174
+00:32:50,051 --> 00:33:00,051
+This is 300.25.
+
+175
+00:33:00,051 --> 00:33:04,051
+This is a single variable.
+
+176
+00:33:04,051 --> 00:33:08,051
+This is 300.25.
+
+177
+00:33:08,051 --> 00:33:15,051
+This information is now known as normal.
+
+178
+00:33:15,051 --> 00:33:19,051
+The difference is 300 times 1, 300.
+
+179
+00:33:19,051 --> 00:33:21,051
+The difference is 300 times 0, 25.
+
+180
+00:33:21,051 --> 00:33:25,051
+We know what we know about.
+
+181
+00:33:25,051 --> 00:33:29,051
+If we have a question about normal,
+
+182
+00:33:29,051 --> 00:33:33,051
+we have a question about the value.
+
+183
+00:33:33,051 --> 00:33:37,051
+We have a standardization of the value.
+
+184
+00:33:37,051 --> 00:33:38,811
+standard sapmaya bölerek
+
+185
+00:33:38,811 --> 00:33:40,551
+karşılık gelen
+
+186
+00:33:40,551 --> 00:33:42,652
+standard normal dağılımdaki
+
+187
+00:33:42,652 --> 00:33:43,531
+değeri buluyoruz.
+
+188
+00:33:44,932 --> 00:33:45,951
+Buradaki tabii
+
+189
+00:33:45,951 --> 00:33:48,531
+işlemi yapmadım ama yazdım buraya.
+
+190
+00:33:48,891 --> 00:33:50,091
+Anladım, anladım, anladım.
+
+191
+00:33:50,531 --> 00:33:53,031
+30 bölü şey 0997
+
+192
+00:33:53,031 --> 00:33:53,732
+bize verdi.
+
+193
+00:33:53,951 --> 00:33:55,152
+Yani işte
+
+194
+00:33:55,152 --> 00:33:57,932
+30 bölü dediğiniz gibi evet.
+
+195
+00:33:57,932 --> 00:33:59,391
+Bu tabii
+
+196
+00:33:59,391 --> 00:34:01,152
+şu değil, bunun kare kökü.
+
+197
+00:34:01,531 --> 00:34:03,611
+Burada standart sapma var, burada var yalnız var.
+
+198
+00:34:04,551 --> 00:34:06,031
+Bunu yaptıktan sonra
+
+199
+00:34:06,031 --> 00:34:10,031
+Yes, we need to do the cumulative
+
+200
+00:34:10,031 --> 00:34:13,031
+relative relative to the baron's
+
+201
+00:34:13,031 --> 00:34:16,031
+tableau.
+
+202
+00:34:16,031 --> 00:34:18,031
+Because the normal
+
+203
+00:34:18,031 --> 00:34:22,031
+hesab is a complex
+
+204
+00:34:22,031 --> 00:34:24,031
+complex form.
+
+205
+00:34:24,031 --> 00:34:27,031
+We have to look at the table
+
+206
+00:34:27,031 --> 00:34:29,031
+and look at the table.
+
+207
+00:34:29,031 --> 00:34:31,031
+We need to look at the table.
+
+208
+00:34:31,031 --> 00:34:32,031
+Thank you very much.
+
+209
+00:34:47,731 --> 00:34:55,731
+So, now if you think about it.
+
+210
+00:34:56,692 --> 00:34:57,692
+Some of the random variables, some of the distributions we know are sums of others. So how can we say distributions? That are. Some of others. For example, we know that binomial distribution.
+
+211
+00:35:27,539 --> 00:35:32,020
+That's some of Bernoulli distributions.
+
+212
+00:35:36,659 --> 00:35:52,659
+and what else? Gamma distribution is sum of exponential distributions.
+
+213
+00:35:54,771 --> 00:36:01,011
+and also negative binomial.
+
+214
+00:36:05,523 --> 00:36:06,523
+is some of geometric distribution. So that means if we have n greater 30 in these sums, if we have more than n elements to sum, we can use actually central limit theorem to calculate this.
+
+215
+00:36:35,523 --> 00:36:58,523
+Right. If n is greater than 30. We can use central limit theorem to calculate these sums, right. So if you want to calculate.
+
+216
+00:36:58,523 --> 00:37:27,723
+When we say calculate, we should actually say approximate. So this is not an exact thing, right? The exact situation happens in the infinity. And normally we don't have infinite numbers of things to sum up. So that's an approximation. So we can approximate these sums by
+
+217
+00:37:28,523 --> 00:37:36,523
+central limit theorem using central limit theorem which means we can use normal distribution for this.
+
+218
+00:37:45,012 --> 00:38:02,612
+So approximate these sums so we can approximate them using normal distribution.
+
+219
+00:38:04,148 --> 00:38:34,127
+So instead of binomial, you can use normal distribution instead of gamma, you can use normal distribution instead of negative binomial, you can use normal distribution if you need. And especially for gamma, which has a very complex equation and binomial, which has very high factorials in the in the equation of gamma.
+
+220
+00:38:34,148 --> 00:38:39,148
+of the PDA, PMF, sometimes normal distribution is used.
+
+221
+00:38:41,067 --> 00:38:44,548
+Now, some of these are continuous,
+
+222
+00:38:44,548 --> 00:38:46,747
+some of these are discrete.
+
+223
+00:38:46,747 --> 00:38:50,967
+So negative binomial is a discrete distribution.
+
+224
+00:38:54,420 --> 00:38:55,420
+Gamma is continuous. And binomial is discrete. So when we try to approximate a discrete distribution with a continuous distribution, we come across to a problem. Solving the problem is called.
+
+225
+00:39:24,916 --> 00:39:26,916
+continuity correction.
+
+226
+00:39:39,347 --> 00:39:52,347
+Let's say we will approximate
+
+227
+00:39:57,684 --> 00:40:00,963
+Binomial distribution
+
+228
+00:40:03,827 --> 00:40:07,827
+using normal distribution.
+
+229
+00:40:11,155 --> 00:40:39,155
+one problem happens is what happens is remember that binomial distribution is discrete. So you can say, for example, you can talk about the probability of five. Okay. So in discrete distributions, you have a PMF. Okay.
+
+230
+00:40:39,155 --> 00:41:08,535
+Okay. And you can say probability of five is, I don't know, maybe something. We don't care. It's not really important. Let's say 1.5 or 1.6, whatever. It doesn't really matter. Now in the normal distribution, we have this x, we have PDF,
+
+231
+00:41:09,155 --> 00:41:34,035
+probability distribution function. This is PMF, probability mass function. And what is the probability of, and remember, it's something like this, continuous. What is the probability of a single point? So here, probability of 5 is, let's say, 1 over 6.
+
+232
+00:41:34,035 --> 00:41:37,875
+probability of 5
+
+233
+00:41:41,300 --> 00:42:05,300
+in a continuous distribution is zero, right? So we immediately we see a problem. You can, you cannot talk about individual probabilities of single points.
+
+234
+00:42:07,539 --> 00:42:11,219
+So what do we do?
+
+235
+00:42:15,284 --> 00:42:22,284
+We use this continuity correction. We use this idea and this is just an idea. And the idea is
+
+236
+00:42:25,284 --> 00:42:29,284
+If you are talking about five
+
+237
+00:42:29,284 --> 00:42:40,284
+Why not talk about one unit between 4.5
+
+238
+00:42:40,284 --> 00:42:42,284
+and 4.5
+
+239
+00:42:42,387 --> 00:43:08,787
+and 5.5 right and now here probability of five will be approximated by probability of random variable being between 4.5 and 5.5 okay because we have one here right so
+
+240
+00:43:08,787 --> 00:43:35,788
+So if you consider half from the previous and half from the after in the graph, this width is one. So instead of five, which has probability zero, we can calculate the probability between 5.5 and 4.5.
+
+241
+00:43:35,787 --> 00:43:43,787
+And again, we will have an approximation, but it will be at least something. Right.
+
+242
+00:43:43,787 --> 00:43:49,787
+So that's called continuity correction.
+
+243
+00:43:49,787 --> 00:44:02,787
+So you need to be careful about if you are especially when you have something like probability of, let's say, X less than 10.
+
+244
+00:44:02,788 --> 00:44:09,788
+Now, if you are using, let's say this is negative binomial
+
+245
+00:44:15,315 --> 00:44:33,395
+X is, let's say, negative binomial. So X is discrete. And let's say we will approximate it by again by saying that X is normal.
+
+246
+00:44:42,356 --> 00:45:10,356
+and we will say that x is normal then. Now again, in this case, after doing the approximation, trying to calculate probability of x smaller than 10 is, that will be wrong. Right?
+
+247
+00:45:09,364 --> 00:45:10,364
+The same situation that we had here happens again. We need to consider that. And the thing here is if you consider the values of X, so this is the value of 10, this is the value of 9. Now what we consider 10 in our appropriate
+
+248
+00:45:39,364 --> 00:45:40,364
+The approximation will be here from 9.5 to 10.5. So in the approximation we will assume 10 is here. Then probability of X being less than this value will be actually
+
+249
+00:46:09,364 --> 00:46:13,044
+probability of
+
+250
+00:46:18,228 --> 00:46:48,207
+x being less than 9.5, right? Because we want it to be less than 10. But in our approximation, the 10 is an area and it starts from 9.5. So we say that x should be smaller than 9.5. Okay. This is the, the, the, the, the thing that we're talking about.
+
+251
+00:46:48,228 --> 00:46:52,228
+I think you should try to find after approximation.
+
+252
+00:47:00,532 --> 00:47:06,691
+Okay. This approximation though happens only in only when
+
+253
+00:47:09,811 --> 00:47:28,372
+you need to use this only when approach approximating a discrete distribution using a continuous distribution. So let's see here.
+
+254
+00:47:24,820 --> 00:47:29,559
+when approximating
+
+255
+00:47:32,275 --> 00:47:57,275
+and discrete distribution. Using continuous distribution. We need to use. We need to do, let's say continuity.
+
+256
+00:48:08,115 --> 00:48:11,115
+continuity correction.
+
+257
+00:48:21,523 --> 00:48:39,523
+When we approximate continuous distribution with another continuous distribution, we don't use continuity correction. Okay. So be careful about that.
+
+258
+00:48:43,123 --> 00:48:44,123
+No need for. Continue to correction. When they say approximating. Gamma distribution, which is continuous. Using. Normal. Which again is continuous. So when approximating a continuous distribution with another
+
+259
+00:49:13,123 --> 00:49:16,123
+continuous distribution, you don't need to use this.
+
+260
+00:49:24,083 --> 00:49:52,083
+Okay, with this, we are finishing chapter four of Barron's book. We are finishing continuous distributions. So, end of chapter four, continuous distributions in Barron's book.
+
+261
+00:49:54,068 --> 00:50:08,068
+With this, we finalize working on probability. We will now move on statistics. So starting next lecture.
+
+262
+00:50:10,804 --> 00:50:24,804
+We will start statistics. Okay. If you have any question, you can ask now or we will have a 10 minutes break and then we will continue.
+
+263
+00:50:27,891 --> 00:50:37,011
+Okay, so then let's give you the give a 10 minutes break. Till, till two o'clock.
+
+264
+01:01:12,596 --> 01:01:17,596
+Yes, is coming to my friends?
+
+265
+01:01:19,764 --> 01:01:21,764
+Good luck, John.
+
+266
+01:01:26,036 --> 01:01:30,476
+Now we start to start.
+
+267
+01:02:05,684 --> 01:02:13,383
+statistics is statistics subjects in Barron's book start with chapter eight.
+
+268
+01:02:32,884 --> 01:02:46,243
+And so what are we, what is statistics? Before talking about that, we need to
+
+269
+01:02:51,731 --> 01:03:12,731
+Before talking about this, we need to define some terms. First of all, a population is, so in statistics, there is a population.
+
+270
+01:03:15,027 --> 01:03:25,027
+Okay. And population is basically all units of interests.
+
+271
+01:03:35,827 --> 01:04:03,787
+everybody. So if you are talking about weights of people in Turkey, each and every individual person's weight is your population, all the units of interest. And now populations has probability distributions of these things and
+
+272
+01:04:03,787 --> 01:04:06,387
+So we can
+
+273
+01:04:11,219 --> 01:04:30,219
+populations has parameters. So they have probability distributions. And those probability distributions have parameters. So you might say the weight distribution.
+
+274
+01:04:32,083 --> 01:04:36,083
+weights of people
+
+275
+01:04:38,083 --> 01:04:39,083
+people
+
+276
+01:04:39,083 --> 01:04:42,083
+in Turkey
+
+277
+01:04:46,804 --> 01:05:01,804
+So let's say this is distributed by normal distribution. Okay. And we know that normal distribution has two parameters mu and standard deviation.
+
+278
+01:05:01,804 --> 01:05:11,804
+Now, what we want to do is normally we want to estimate these parameters.
+
+279
+01:05:11,804 --> 01:05:17,804
+So let's say we are interested in finding this distribution, right?
+
+280
+01:05:20,804 --> 01:05:29,144
+And if we can find the mu and standard deviation, we can obtain the whole distribution, right?
+
+281
+01:05:30,144 --> 01:05:33,344
+And mu and sigma are parameters.
+
+282
+01:05:37,043 --> 01:05:57,043
+Now, normally to get the actual value of these parameters, you need to find, you need to find the weight of each and every person in Turkey. So how many, how many people are there in Turkey? I don't know. 80 million?
+
+283
+01:05:57,043 --> 01:06:05,243
+What's the, Türkiye'nin nüfusu kaç bilen var mı arkadaşlar? 80 milyon falan mıydı?
+
+284
+01:06:09,715 --> 01:06:11,475
+Seksens, million did it.
+
+285
+01:06:11,475 --> 01:06:11,956
+Is it?
+
+286
+01:06:12,915 --> 01:06:13,315
+Tom.
+
+287
+01:06:13,915 --> 01:06:14,515
+So,
+
+288
+01:06:17,395 --> 01:06:18,835
+So we will need,
+
+289
+01:06:20,915 --> 01:06:23,515
+how can we calculate these parameters?
+
+290
+01:06:24,475 --> 01:06:29,275
+We need to do 83 million
+
+291
+01:06:33,115 --> 01:06:34,435
+summations.
+
+292
+01:06:34,435 --> 01:06:46,436
+and then do a division to take average. Okay, so average of 83 million will be your mu.
+
+293
+01:06:50,436 --> 01:07:01,436
+Now the problem with this approach is it's unlovable, even so it's very costly. So you cannot actually find the actual parameters.
+
+294
+01:07:01,435 --> 01:07:15,595
+What you normally do is, instead of these 83 million people, let me write 83 million people here.
+
+295
+01:07:19,891 --> 01:07:49,871
+83 million weights. Now, instead of these 83 million ways because if I try to get everybody's weight, it will be extremely expensive, very, very costly. So what I will do is I will select random people, let's say 1000 people from Turkey. Okay. And then I will get the weights.
+
+296
+01:07:49,891 --> 01:08:12,131
+and that will give me an estimation of the estimation of the this parameter mu. Okay. Now selecting these 10,000 people is called sampling. Okay. So from the population, I will sample.
+
+297
+01:08:15,668 --> 01:08:18,667
+Let's say 1000.
+
+298
+01:08:18,667 --> 01:08:20,667
+rates.
+
+299
+01:08:20,667 --> 01:08:25,667
+So I will select 1000 people, and I will wait them.
+
+300
+01:08:25,667 --> 01:08:28,667
+So that's called sampling.
+
+301
+01:08:28,667 --> 01:08:34,667
+So sampling is just data collection.
+
+302
+01:08:38,996 --> 01:08:39,996
+So you, you collect this, this data, which you hope to represent the actual data, actual population. And now, from the sample, you can actually calculate the estimates of this mu. So you can estimate you can guess what mu is, but we
+
+303
+01:09:08,996 --> 01:09:11,996
+We shouldn't tell what we estimate mu
+
+304
+01:09:29,844 --> 01:09:57,844
+So what we estimated using these thousand weights is not me. It's an estimate for me. Okay, so we will estimate. Mu here and for sure there will be an error. So what we find will not be exact value. Okay, we cannot do that. So there will be an error.
+
+305
+01:09:57,844 --> 01:10:10,844
+Because of that instead of mu, let's call it something else. And what we will call here in this course is sample mean.
+
+306
+01:10:10,844 --> 01:10:12,844
+Okay.
+
+307
+01:10:20,435 --> 01:10:21,435
+And it has this name because it's the mean we obtained from the sample. Okay. And normally in general, if you have a parameter theta,
+
+308
+01:10:45,652 --> 01:10:56,171
+We call we denote its estimate with theta hat. Okay, so there is a hat here.
+
+309
+01:10:59,028 --> 01:11:01,028
+Teta hat is the estimate.
+
+310
+01:11:08,307 --> 01:11:09,307
+But for some very important parameters, we give them special names. So in general, we will write. Like this, but particularly.
+
+311
+01:11:29,684 --> 01:11:34,423
+Mu will be estimated by
+
+312
+01:11:34,423 --> 01:11:37,124
+So
+
+313
+01:11:37,124 --> 01:11:45,704
+We will not write Mu hat because it is very important. It has a special name or sign.
+
+314
+01:11:45,704 --> 01:11:52,184
+Mu is estimated by sample mean.
+
+315
+01:11:52,184 --> 01:11:53,864
+And
+
+316
+01:11:53,864 --> 01:12:10,864
+and for a lot of other things, if you have a parameter theta, theta hat is its estimate. If you want to estimate lambda, lambda hat will be its estimate.
+
+317
+01:12:21,716 --> 01:12:33,716
+Now, these estimates are called statistics. So what is statistics then?
+
+318
+01:12:55,220 --> 01:13:00,220
+These estimates are statistics.
+
+319
+01:13:06,771 --> 01:13:29,532
+or estimates. What is estimate? Estimate'ın Türkçesi ne demek arkadaşlar? Tahmin mi hocam? Tahmin. Tahmin. Tahminlerimize istatistik diyoruz. Or estimates are called statistics.
+
+320
+01:13:29,532 --> 01:13:35,671
+O yukarıdaki sample mean'deki mean de ortalama değil mi hocam?
+
+321
+01:13:37,071 --> 01:13:37,532
+Şu mu?
+
+322
+01:13:38,411 --> 01:13:42,532
+Evet o mean'in yani burada kullandığımız anlamı ortalama anlamı.
+
+323
+01:13:44,532 --> 01:13:45,632
+Ortalama mı yoksa?
+
+324
+01:13:45,731 --> 01:13:46,712
+Ortalama ortalama.
+
+325
+01:13:47,452 --> 01:13:47,731
+Tamam.
+
+326
+01:13:47,992 --> 01:13:48,511
+Ortalama.
+
+327
+01:13:49,231 --> 01:13:49,511
+Okey.
+
+328
+01:13:49,952 --> 01:13:53,292
+Hepsini toplayıp eleman sayısına bölgeceksiniz.
+
+329
+01:13:57,492 --> 01:14:05,492
+But we have a real population that has been expected to be expected to be expected.
+
+330
+01:14:05,492 --> 01:14:12,492
+We have a statistic that we have to find out.
+
+331
+01:14:12,492 --> 01:14:22,492
+Or we have a statistic that we have to find out.
+
+332
+01:14:22,492 --> 01:14:26,492
+So, we have to think about this.
+
+333
+01:14:26,492 --> 01:14:31,492
+We have to think about this.
+
+334
+01:14:31,492 --> 01:14:34,492
+How do we think about this?
+
+335
+01:14:34,492 --> 01:14:47,492
+What do we think about this?
+
+336
+01:14:47,492 --> 01:14:54,492
+You remember the mean meaning of the meaning of the meaning?
+
+337
+01:14:54,492 --> 01:14:58,492
+The mean mean was the same?
+
+338
+01:14:58,492 --> 01:15:00,492
+You know what you mean?
+
+339
+01:15:00,492 --> 01:15:05,131
+We had a mean to do a lot of a sıkıntı we had to get.
+
+340
+01:15:05,131 --> 01:15:08,091
+We didn't know what we were doing.
+
+341
+01:15:08,091 --> 01:15:10,892
+Maybe there was a mean.
+
+342
+01:15:10,892 --> 01:15:12,892
+There was a mean to be.
+
+343
+01:15:12,892 --> 01:15:16,091
+If the mean was different?
+
+344
+01:15:16,091 --> 01:15:19,292
+Or maybe I can't remember.
+
+345
+01:15:19,292 --> 01:15:22,091
+I can't remember.
+
+346
+01:15:22,091 --> 01:15:24,892
+Mean is the thing that we have to do.
+
+347
+01:15:24,892 --> 01:15:28,892
+So.
+
+348
+01:15:28,892 --> 01:15:29,892
+I mean, I mean,
+
+349
+01:15:58,891 --> 01:16:01,291
+Normal not to be a
+
+350
+01:16:01,291 --> 01:16:02,891
+exponential
+
+351
+01:16:02,891 --> 01:16:04,891
+example of a
+
+352
+01:16:04,891 --> 01:16:06,891
+change.
+
+353
+01:16:06,891 --> 01:16:08,891
+Let's say
+
+354
+01:16:08,891 --> 01:16:12,891
+that
+
+355
+01:16:12,891 --> 01:16:14,891
+the
+
+356
+01:16:14,891 --> 01:16:16,891
+people of
+
+357
+01:16:16,891 --> 01:16:18,891
+the
+
+358
+01:16:18,891 --> 01:16:20,891
+gamma
+
+359
+01:16:20,891 --> 01:16:24,891
+with
+
+360
+01:16:24,891 --> 01:16:26,891
+the
+
+361
+01:16:26,891 --> 01:16:31,891
+We know that gamma is a parameter.
+
+362
+01:16:31,891 --> 01:16:33,891
+Alpha and lambda.
+
+363
+01:16:33,891 --> 01:16:37,891
+Now,
+
+364
+01:16:37,891 --> 01:16:41,891
+we are in the middle of the world.
+
+365
+01:16:41,891 --> 01:16:48,891
+The people of the world are in the alpha and lambda.
+
+366
+01:16:48,891 --> 01:16:53,891
+We are in the middle of the world.
+
+367
+01:16:53,891 --> 01:16:57,011
+But we can't find a chance to find a way.
+
+368
+01:16:57,011 --> 01:16:58,691
+Because 83 million
+
+369
+01:16:58,691 --> 01:16:59,691
+We need to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to be able to
+
+370
+01:17:18,836 --> 01:17:44,395
+neyi tahmin edeceğiz? Estimate, alpha and lambda diyelim. Alpha ve lambda'yı o bin tane şeyden tahmin edeceğiz. Tahminlerimiz genelde alfaya gibi bir alfayı tahmin ediyorsak alfanın tahminine alfa hat, alfa şapka, şapkalı alfa.
+
+371
+01:17:44,395 --> 01:17:50,876
+Lambda'yı tahmin ediyorsak da Lambda hat diyoruz
+
+372
+01:17:50,876 --> 01:17:58,455
+Tahminlerle popülasyondaki gerçek parametreyi karıştırmak istemiyoruz
+
+373
+01:17:58,455 --> 01:18:03,215
+Çünkü hiçbir zaman tam doğrusunu bulamayacağız
+
+374
+01:18:03,215 --> 01:18:06,556
+Popülasyon değerini hiçbir zaman bulamayacağız
+
+375
+01:18:06,556 --> 01:18:09,155
+Her zaman bir hata olacak
+
+376
+01:18:09,155 --> 01:18:11,495
+O ikisini ayırt etmek istiyoruz
+
+377
+01:18:11,495 --> 01:18:15,495
+İşte bu tahminlerimize istatistik diyoruz
+
+378
+01:18:15,495 --> 01:18:23,715
+Genelde böyle şapkalı oluyor ama birkaç şey için özel isim verilmiş
+
+379
+01:18:23,715 --> 01:18:33,975
+Mesela min, mü yani beklenen değer dediğimiz şey
+
+380
+01:18:33,975 --> 01:18:38,535
+Gamanın da beklenen değeri vardır
+
+381
+01:18:43,667 --> 01:18:53,667
+But, for example, in the normal way of the mu, we have a mu.
+
+382
+01:18:53,667 --> 01:19:00,667
+But in other parts of the population, there are a number of factors that are not expected.
+
+383
+01:19:00,667 --> 01:19:06,667
+There is a number of factors that are not expected.
+
+384
+01:19:06,667 --> 01:19:10,667
+It is not expected to be expected.
+
+385
+01:19:10,667 --> 01:19:16,667
+It is not expected to be expected to be expected.
+
+386
+01:19:16,667 --> 01:19:17,667
+Again, we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can imagine that we can
+
+387
+01:19:46,667 --> 01:19:49,667
+This is a symbol.
+
+388
+01:19:49,667 --> 01:19:53,667
+X bar, the x bar, the x bar.
+
+389
+01:19:53,667 --> 01:19:57,667
+And the variance is a S.
+
+390
+01:20:03,539 --> 01:20:06,539
+So, x'in variance'ı
+
+391
+01:20:09,460 --> 01:20:30,460
+Normal, küçük s'nin karesi ile gösteriliyor mesela. Burada parametre var yans, şuna sample var yans deniliyor. Yani birkaç böyle özel ismi olan şey hariç genelde şapkalıysa tahmin anlamına gelecek. Toparlandı mı biraz?
+
+392
+01:20:37,108 --> 01:20:53,108
+Yes. So let's continue. Now, as we said, there will be errors for sure.
+
+393
+01:21:10,707 --> 01:21:23,987
+Here we are talking about discrepancy.
+
+394
+01:21:24,275 --> 01:21:25,275
+between
+
+395
+01:21:25,275 --> 01:21:31,275
+a sample, collected sample,
+
+396
+01:21:31,275 --> 01:21:37,275
+and a whole population.
+
+397
+01:21:37,275 --> 01:21:38,275
+population.
+
+398
+01:21:45,363 --> 01:22:14,363
+So the difference between the sample and population. When we say the difference, the difference in character or this difference will show itself in our estimates. So what are the sources of these estimates, these errors? So these errors come from in two different ways.
+
+399
+01:22:15,363 --> 01:22:18,363
+One is called sampling error
+
+400
+01:22:24,627 --> 01:22:28,627
+The address is called non-sampling error
+
+401
+01:22:32,148 --> 01:22:46,148
+and non sampling error is caused by wrong technique.
+
+402
+01:22:55,731 --> 01:23:16,731
+So if you use wrong methods to use sampling, somehow you will change the, you will change the estimates. Sampling error is caused by number of samples.
+
+403
+01:23:21,235 --> 01:23:40,435
+So if you, if you get more samples, you will have less error. So if possible, get more samples. If n goes infinity,
+
+404
+01:23:41,876 --> 01:23:43,876
+This error
+
+405
+01:23:45,876 --> 01:23:47,876
+goes to zero.
+
+406
+01:23:48,876 --> 01:23:49,876
+Okay.
+
+407
+01:23:49,876 --> 01:23:55,876
+So if you can, if you, if you can use a lot of samples,
+
+408
+01:23:56,876 --> 01:24:04,876
+and ideally you can use all the population, then you will have no error for this. Sampling error will be zero.
+
+409
+01:24:04,876 --> 01:24:30,876
+But in general, obviously, we don't have enough money or time to collect to look all population. So this will not be zero. Now, non sampling error is caused by wrong methods. So what is the right method? The right method to use is
+
+410
+01:24:30,876 --> 01:24:44,076
+use what is called simple random sampling method.
+
+411
+01:24:44,076 --> 01:24:59,376
+Okay. So to eliminate this non sampling error, this technical error, you need to use this technique called simple random sampling.
+
+412
+01:24:59,376 --> 01:25:02,176
+And what is it?
+
+413
+01:25:21,108 --> 01:25:35,108
+Here it's a this is a sampling design where units are collected from the entire population independent of each other all being equal to likely to be sampled so
+
+414
+01:25:37,108 --> 01:25:47,108
+So one units meaning observations are obtained
+
+415
+01:25:47,108 --> 01:25:58,667
+from the whole population to
+
+416
+01:26:01,844 --> 01:26:15,463
+independency. So units are independent.
+
+417
+01:26:24,787 --> 01:26:31,787
+And when we say units, I mean selection of units.
+
+418
+01:26:35,988 --> 01:26:57,988
+So the fact that they selected me to get my weight doesn't affect the probability of let's say somebody here or somebody in the same apartment as me to be selected.
+
+419
+01:26:57,988 --> 01:27:08,988
+So if I am selected, the next person with me may or may not be selected independently of my selection.
+
+420
+01:27:08,988 --> 01:27:17,988
+And third, all units are equally likely to be selected.
+
+421
+01:27:31,444 --> 01:27:44,683
+So, let's say, we are interested in all the weights in Turkey.
+
+422
+01:27:50,420 --> 01:27:54,499
+Weights and we are interested in expected value of
+
+423
+01:27:55,539 --> 01:27:58,819
+Weights in Turkey.
+
+424
+01:28:00,659 --> 01:28:01,220
+Now,
+
+425
+01:28:03,219 --> 01:28:06,019
+if you just select people in Istanbul
+
+426
+01:28:07,819 --> 01:28:08,899
+and weight them,
+
+427
+01:28:11,579 --> 01:28:16,899
+is this proper? No, because I must select
+
+428
+01:28:16,899 --> 01:28:23,519
+from everywhere, all population, from all the 83 million people.
+
+429
+01:28:25,339 --> 01:28:30,859
+And all units are equally likely to be selected.
+
+430
+01:28:30,859 --> 01:28:41,579
+So each of these people must have one over 83 million chance to be selected, at least the first one.
+
+431
+01:28:41,579 --> 01:28:47,019
+and the next one will be a different probability to be selected.
+
+432
+01:28:47,019 --> 01:28:55,939
+But at the end, everybody must have the exact same probability to be selected.
+
+433
+01:28:56,860 --> 01:28:57,739
+This is called.
+
+434
+01:29:01,820 --> 01:29:03,979
+Simple random sampling.
+
+435
+01:29:14,131 --> 01:29:18,131
+So what, for example, what you can do is
+
+436
+01:29:23,891 --> 01:29:51,891
+Let's say you have a bank, you have a bank like Akbank or Richbankası and let's say this bank wants to sample their accounts.
+
+437
+01:29:55,507 --> 01:30:13,507
+So they want to select thousands of their accounts. OK. So first, what should they do? And they have an accounts in.
+
+438
+01:30:12,819 --> 01:30:16,899
+in total. So they have
+
+439
+01:30:19,659 --> 01:30:21,160
+n accounts in total.
+
+440
+01:30:26,003 --> 01:30:30,003
+First of all, what they can do is
+
+441
+01:30:34,003 --> 01:30:40,003
+First they need to get a random number between
+
+442
+01:30:50,036 --> 01:30:52,036
+get a
+
+443
+01:30:56,340 --> 01:30:58,340
+Random number
+
+444
+01:31:03,060 --> 01:31:28,060
+using let's say, uniform 0 n. Okay. And let's say that number is x. So,
+
+445
+01:31:33,300 --> 01:31:48,999
+So they need to get a random number X, which is distributed by uniform distribution. From zero to n. And the.
+
+446
+01:31:58,003 --> 01:31:59,003
+They so this will give you a real number. So let's say they sell it. So. Account. Number is. Sailing.
+
+447
+01:32:23,507 --> 01:32:28,507
+So let's say they get with this. I don't know if they have
+
+448
+01:32:28,507 --> 01:32:42,507
+3 million, they get one of them. That's one person in the sample. One account in the sample. Now, what will they do?
+
+449
+01:32:44,372 --> 01:32:45,372
+Now they get a random number. Let's call this x1. x2, which is a uniform distributed number between zero and and minus one. So we already choose one one account. So that account should not be selected again.
+
+450
+01:33:14,372 --> 01:33:20,932
+again. And the remaining accounts must have the same probability to be selected.
+
+451
+01:33:21,131 --> 01:33:25,611
+So we are using uniform and new account.
+
+452
+01:33:27,011 --> 01:33:28,611
+Number.
+
+453
+01:33:29,052 --> 01:33:33,931
+Must be by sailing of X2.
+
+454
+01:33:35,171 --> 01:33:42,412
+So this is an example of random simple random sampling.
+
+455
+01:33:46,963 --> 01:33:47,963
+Now. So. If you have a good sample, now you can start calculating these statistics. So we will say simple. Descriptive.
+
+456
+01:34:11,091 --> 01:34:12,091
+statistics.
+
+457
+01:34:25,395 --> 01:34:55,375
+First statistics will be mean, but to calculate these statistics, we need a sample. So let's write an example sample. So first of all, we will show a sample. S as a couple of random variables.
+
+458
+01:35:02,612 --> 01:35:12,612
+as a tuple of non-random variables. Tuple ne demek arkadaşlar?
+
+459
+01:35:21,395 --> 01:35:23,395
+How can you write it?
+
+460
+01:35:23,395 --> 01:35:27,395
+Tuple, Tuple, Tuple.
+
+461
+01:35:27,395 --> 01:35:33,395
+Siz yazıyorsanız ekran bize gelmiyor haberiniz olsun yani yazmıyorsunuz belki ama.
+
+462
+01:35:33,395 --> 01:35:37,395
+Nasıl gelmiyor ya?
+
+463
+01:35:38,996 --> 01:35:40,195
+5 seconds.
+
+464
+01:35:40,195 --> 01:35:40,996
+Do you want something?
+
+465
+01:35:41,795 --> 01:35:44,996
+I'm writing something.
+
+466
+01:35:46,996 --> 01:35:48,996
+I'm looking at this.
+
+467
+01:35:48,996 --> 01:35:50,996
+I'm doing something.
+
+468
+01:35:50,996 --> 01:36:06,996
+I'm looking at this.
+
+469
+01:36:06,996 --> 01:36:08,996
+It's a very good thing.
+
+470
+01:36:08,996 --> 01:36:10,996
+You can see it now.
+
+471
+01:36:10,996 --> 01:36:14,996
+Double list.
+
+472
+01:36:14,996 --> 01:36:18,996
+But the difference between elements are not changing.
+
+473
+01:36:18,996 --> 01:36:20,996
+Python.
+
+474
+01:36:25,395 --> 01:36:44,215
+Dolayısıyla bir sample dediğimiz şey ne aslında? Rastgele değişken listesi olarak düşünebiliriz. Neden rastgele değişken listesi değil de değer listesi? Çünkü o değerleri toplamadan önce o değerleri bilmiyoruz.
+
+475
+01:36:44,215 --> 01:36:57,775
+dolayısıyla o değerlerin her birine bir rastgele değişken olarak bakacağız ve istatistikleri de bu rastgele değişkenler üzerinden düşüneceğiz.
+
+476
+01:37:01,775 --> 01:37:08,775
+After you collect the sample, so this is a sample before collection.
+
+477
+01:37:14,804 --> 01:37:19,963
+And after sample collection,
+
+478
+01:37:21,747 --> 01:37:22,747
+We have data. So, for example, I will use this CPU. Data. In the barons book. So it has a 70 36. 43 69 82
+
+479
+01:37:51,747 --> 01:37:58,747
+48, 34, 62, 35
+
+480
+01:38:05,076 --> 01:38:12,076
+So I'm just copying this. So that they it may be in your
+
+481
+01:38:14,475 --> 01:38:17,076
+critique.
+
+482
+01:38:19,988 --> 01:38:23,187
+your notes.
+
+483
+01:38:53,460 --> 01:39:12,460
+So, again, now you can think of this as a tuple now, but now this is instead of a, instead of random variables, now you have actual values. Okay.
+
+484
+01:39:17,716 --> 01:39:19,716
+and
+
+485
+01:39:22,195 --> 01:39:51,875
+Now, here the CPU data has n equals to 30 values. So we have 30 observations in our sample. And I may refer to this as CPU data later. So I wrote it there. Now, first of all, we will look at sample mean.
+
+486
+01:40:01,619 --> 01:40:19,699
+and sample mean is just the arithmetic average. So it's written like this. And what you do is you use some all these. All these.
+
+487
+01:40:37,971 --> 01:40:40,471
+all these random variables.
+
+488
+01:40:47,764 --> 01:41:05,923
+and just divided by n number of number of random variables. And so sample mean, this is called sample mean.
+
+489
+01:41:09,108 --> 01:41:13,108
+sample mean estimates.
+
+490
+01:41:15,539 --> 01:41:21,299
+population mean or expected value.
+
+491
+01:41:44,595 --> 01:42:11,595
+Now, you can talk about expected value of this parameter itself, this statistics itself. So we can talk about expected value of sample mean.
+
+492
+01:42:18,868 --> 01:42:46,868
+Okay, we can do this because sample mean is a random variable because look at this calculation. This is a random variable x1 is a random variable x2 is a random variable xn is a random variable so their sum is a random variable. So division by n again that's a random variable so this is a random variable.
+
+493
+01:42:51,028 --> 01:42:54,028
+So,
+
+494
+01:42:57,427 --> 01:42:58,427
+Since this is a random variable variable itself, we can talk about its expected value. And how are we going to calculate that? Well, we can just use this definition. And expected value of x1 plus x2 plus up to x and
+
+495
+01:43:27,427 --> 01:43:31,427
+Now
+
+496
+01:43:35,028 --> 01:44:05,007
+expected value of a constant is a constant and that's the constant itself. So here we have summations. So expected value operation can be calculated by individual expected values. So you will have your expected value of x1 divided by n plus expected value of x2.
+
+497
+01:44:05,028 --> 01:44:14,028
+divided by n plus up to expected value of xn divided by n.
+
+498
+01:44:19,667 --> 01:44:43,667
+And now we can take n's out. So one over n times expected value of x1 plus one over n times expected value of x2 plus. Now expected value of x1.
+
+499
+01:44:43,220 --> 01:45:11,419
+What is the expected value of an observation before we actually select it? Before we actually select an observation, its expected value is the expected value of the population. So we can just directly here, right? One over
+
+500
+01:45:19,764 --> 01:45:23,764
+on our end times.
+
+501
+01:45:30,707 --> 01:46:00,687
+So expected value of the population. We can just call that mu or we can just call that e to the x. It doesn't really matter. So let's write e to the as e to the x, e to the x. Notice that there is no subscript here. Plus one over n times e to the x.
+
+502
+01:46:08,404 --> 01:46:38,383
+up to one over n times e to the x. So we have n of these. So first one, second one, and one. So if we sum them, n's will simplify. So we will get expected value of
+
+503
+01:46:38,383 --> 01:46:49,983
+x. So expected value of sample mean is expected value of the population. Okay.
+
+504
+01:46:53,524 --> 01:47:08,524
+So this is important. Expected value of sample mean is expected value of the population or mu.
+
+505
+01:47:13,524 --> 01:47:19,524
+Now, what is the variance of sample mean?
+
+506
+01:47:29,460 --> 01:47:30,960
+It's not right
+
+507
+01:47:48,180 --> 01:48:16,180
+Again, to calculate variance, we can just use the definition there. Variance of sample mean, variance of x1 plus x2 plus up to xn divided by n. And you will notice that this is variance of x
+
+508
+01:48:16,180 --> 01:48:25,479
+divided by n. If you do the calculation, you can think of this as an exercise.
+
+509
+01:48:27,860 --> 01:48:42,239
+Do yourself later. So variance of the sample mean is variance of the population divided by number of elements in the number of units in the population.
+
+510
+01:48:42,239 --> 01:48:47,579
+So this is also written as
+
+511
+01:48:52,020 --> 01:48:53,020
+If you want, you can write it like this. So variance is Sigma square X means random variable X. And we are talking about population variance here. So that means what is the standard deviation of the sample mean its square root of this so then standard deviation of
+
+512
+01:49:22,020 --> 01:49:36,020
+sample mean is square root of this. What is it? Standard deviation of the population divided by square root of n.
+
+513
+01:49:47,667 --> 01:49:52,667
+So what is the distribution of sample mean?
+
+514
+01:50:06,836 --> 01:50:14,375
+Well, if number of units n is large,
+
+515
+01:50:22,644 --> 01:50:23,644
+sample mean is distributed by normal distribution. But when the you can think you can go from here central limit to around so remember. Central limit to. But if and is not large.
+
+516
+01:50:52,644 --> 01:51:04,644
+distribution called t distribution is used. So sample mean is distributed by t distribution.
+
+517
+01:51:17,395 --> 01:51:42,395
+Now, before we move on. Okay, we have reached time for a break. Do you have any questions from up to this point? Okay, if you don't have a question, let's have a break till 3 o'clock.
+
+518
+01:59:11,636 --> 01:59:13,636
+Yes, I am not sure.
+
+519
+01:59:36,404 --> 02:00:02,923
+So when we talk about statistics parameter estimates, we, there are a couple of things that are important. One of them is this thing called Bias. The other is this thing called consistency.
+
+520
+02:00:02,996 --> 02:00:09,996
+And the other is called asymptotic normality.
+
+521
+02:00:19,444 --> 02:00:25,444
+and we will now discuss these things. First of all, Bayes.
+
+522
+02:00:27,699 --> 02:00:30,699
+because of an estimator.
+
+523
+02:00:36,916 --> 02:00:40,916
+Let's say we have a parameter theta.
+
+524
+02:00:45,140 --> 02:00:52,019
+and we will estimate this parameter using
+
+525
+02:00:53,587 --> 02:00:55,587
+teta het.
+
+526
+02:00:56,587 --> 02:00:57,587
+Okay.
+
+527
+02:00:58,187 --> 02:01:00,587
+Now,
+
+528
+02:01:02,579 --> 02:01:07,579
+Bayes of Tether head
+
+529
+02:01:09,939 --> 02:01:12,939
+for parameter theta is
+
+530
+02:01:14,939 --> 02:01:17,339
+this thing expected value of
+
+531
+02:01:18,439 --> 02:01:20,240
+the difference between these two
+
+532
+02:01:21,039 --> 02:01:23,439
+theta hat minus theta.
+
+533
+02:01:24,239 --> 02:01:28,139
+So the difference between your estimate and
+
+534
+02:01:29,040 --> 02:01:30,139
+population
+
+535
+02:01:31,239 --> 02:01:33,939
+parameters, you are taking its
+
+536
+02:01:34,839 --> 02:01:39,439
+its expected value. So what is the expected value
+
+537
+02:01:39,939 --> 02:01:40,939
+uh
+
+538
+02:01:44,435 --> 02:01:55,795
+of the difference of the error, let's say, what is the expected value of the error? So Bayes is the expected value of error.
+
+539
+02:02:00,851 --> 02:02:08,671
+So, in a way, in a way. So, now,
+
+540
+02:02:17,524 --> 02:02:18,524
+We say that theta hat is unbiased if Bs of theta hat is zero. So meaning there is no Bs. Okay. It's equal to zero. And what this mean is that
+
+541
+02:02:49,524 --> 02:03:00,524
+So before that, then we say that theta is an unbased estimator.
+
+542
+02:03:05,043 --> 02:03:12,043
+So, theta hat is an unbiased estimator.
+
+543
+02:03:12,043 --> 02:03:24,043
+And being unbiased is important for an estimator. Good estimators are unbiased.
+
+544
+02:03:30,868 --> 02:03:43,987
+Okay. So if you say this is the theta to be estimated.
+
+545
+02:03:46,036 --> 02:03:56,036
+Let's say you do some estimates. So your, these are your estimates, let's say.
+
+546
+02:04:09,460 --> 02:04:24,519
+So you can create multiple estimates because you can create multiple samples. And notice that in a Bayes estimator,
+
+547
+02:04:28,340 --> 02:04:31,300
+Your estimates are always wrong.
+
+548
+02:04:32,179 --> 02:04:36,459
+There is a, like, they are not right on the spot.
+
+549
+02:04:37,340 --> 02:04:40,599
+But on an unbiased estimator,
+
+550
+02:04:43,099 --> 02:04:45,619
+if you have this theta,
+
+551
+02:04:46,899 --> 02:04:51,139
+your estimates will be around this theta.
+
+552
+02:04:51,899 --> 02:04:56,979
+So their expected value will coincide with this theta.
+
+553
+02:04:57,879 --> 02:04:58,019
+Okay.
+
+554
+02:04:58,340 --> 02:05:28,319
+Thank you.
+
+555
+02:05:02,131 --> 02:05:10,131
+So being unbiased is important. Now,
+
+556
+02:05:12,372 --> 02:05:25,372
+What is the parameter that we learn? We have learned sample mean. Is sample mean biased or unbiased?
+
+557
+02:05:29,268 --> 02:05:30,268
+sample mean is obvious that's good. There is no bias. In sample mean. And it's an exercise for you to show.
+
+558
+02:05:50,036 --> 02:05:54,036
+show that sample mean is on the list.
+
+559
+02:05:54,036 --> 02:05:57,036
+And.
+
+560
+02:05:57,036 --> 02:06:04,036
+Now, another important thing is consistency.
+
+561
+02:06:24,115 --> 02:06:25,115
+consistency of an estimator. An estimator theta hat. Is consistent consistent if.
+
+562
+02:06:43,859 --> 02:06:44,859
+If you have this situation probability of the difference between estimate and the population parameter is larger than epsilon. So the the the difference being larger than epsilon, the probability of that goes
+
+563
+02:07:13,859 --> 02:07:21,859
+goes to zero as n, number of units, goes to infinity.
+
+564
+02:07:21,859 --> 02:07:30,859
+So as n goes to infinity, we want this probability go to zero.
+
+565
+02:07:30,859 --> 02:07:35,859
+So the error being above some threshold must go to zero.
+
+566
+02:07:35,859 --> 02:07:38,859
+That is consistency.
+
+567
+02:07:38,859 --> 02:07:41,859
+And now...
+
+568
+02:07:46,515 --> 02:07:51,515
+This can be.
+
+569
+02:07:51,515 --> 02:07:55,515
+So the sample mean we have been talking about sample mean.
+
+570
+02:07:55,515 --> 02:08:01,515
+Sample mean is consistent.
+
+571
+02:08:01,515 --> 02:08:06,515
+And I will leave this as an exercise for you.
+
+572
+02:08:06,515 --> 02:08:13,515
+To show that it is consistent.
+
+573
+02:08:22,292 --> 02:08:33,292
+Now, another important property of a good estimator is asymptotic normality.
+
+574
+02:08:52,243 --> 02:08:53,243
+Now this says that if distribution of so we say that our estimator is asymptotically normal if
+
+575
+02:09:22,243 --> 02:09:24,944
+distribution of theta
+
+576
+02:09:32,212 --> 02:09:37,212
+to the head goes to normal.
+
+577
+02:09:41,524 --> 02:09:42,524
+as n goes to infinity. So as you have more and more units, your estimators own distribution must be normal distribution. And we have already said that previously in this class, that sample mean is asymptotically
+
+578
+02:10:14,931 --> 02:10:23,931
+normal. We said that if n is large, the distribution is normal.
+
+579
+02:10:26,131 --> 02:10:46,131
+So asymptotically means just large when we have large number of samples. Okay. And again, where does this come from? Well, this comes from
+
+580
+02:10:46,131 --> 02:10:51,131
+central limit theorem, right?
+
+581
+02:10:51,131 --> 02:11:01,131
+Sample mean has this sum and if n is large, these sums go to normal distribution.
+
+582
+02:11:03,131 --> 02:11:07,131
+Their distribution goes to normal distribution.
+
+583
+02:11:21,492 --> 02:11:35,771
+So these are properties of sample mean. Do you have any questions up to this point?
+
+584
+02:11:38,804 --> 02:11:41,983
+Okay, so, um.
+
+585
+02:11:44,275 --> 02:11:54,275
+Then let's move on to another estimator. This time we will talk about median.
+
+586
+02:11:57,555 --> 02:12:02,555
+So.
+
+587
+02:12:02,555 --> 02:12:08,555
+Median is another.
+
+588
+02:12:08,555 --> 02:12:14,555
+Estimation of population centers.
+
+589
+02:12:27,859 --> 02:12:41,700
+and median is robust to outliers. And the.
+
+590
+02:12:43,859 --> 02:13:11,859
+We didn't talk about population median in the course. But today we will learn it. For a population, we will use the M, capital M as population median.
+
+591
+02:13:13,235 --> 02:13:25,235
+and we will use m hat as the estimate of population median and we will call this sample median.
+
+592
+02:13:32,595 --> 02:13:34,595
+This is the sample median.
+
+593
+02:13:41,395 --> 02:13:46,395
+So we will now learn these.
+
+594
+02:13:49,011 --> 02:13:53,351
+So for the population,
+
+595
+02:13:55,796 --> 02:14:03,315
+The population median M, capital M,
+
+596
+02:14:04,275 --> 02:14:05,275
+is defined by. Median is defined. By this piecewise.
+
+597
+02:14:21,076 --> 02:14:51,055
+condition. So probability of random variable having value greater than the median is zero less than or equal to less than or equal to 0.5 and population and probability of X having values less than median should be again,
+
+598
+02:14:51,076 --> 02:14:59,076
+and less than or equal to 0.5. So let me draw these two same way.
+
+599
+02:15:23,572 --> 02:15:39,811
+Or if you think about it, for a population median, if you consider these two inequalities, you can actually merge them into one.
+
+600
+02:15:39,811 --> 02:15:53,191
+So you can say, or probability of median is, sorry, cumulative actually.
+
+601
+02:15:53,572 --> 02:16:23,551
+Thank you.
+
+602
+02:15:57,203 --> 02:16:04,463
+cumulative probability of median is 0.5. Okay.
+
+603
+02:16:08,724 --> 02:16:28,883
+Now, where you calculate, where you want to calculate this population median, you need to consider discrete and continuous cases separately. So,
+
+604
+02:16:32,500 --> 02:16:43,500
+population median of a continuous distribution
+
+605
+02:16:48,500 --> 02:16:51,500
+can be calculated by
+
+606
+02:16:52,699 --> 02:16:54,500
+using this
+
+607
+02:16:56,500 --> 02:17:00,500
+equation here directly.
+
+608
+02:17:04,852 --> 02:17:09,852
+Let's show it as an example.
+
+609
+02:17:09,852 --> 02:17:23,852
+Find, let's say, median of the distribution.
+
+610
+02:17:27,443 --> 02:17:47,443
+f of x is one minus e to the minus lambda x for x greater than zero. So we are given this probability distribution and we want to find its median.
+
+611
+02:17:47,443 --> 02:17:55,443
+Well, actually, it's quite easy solution.
+
+612
+02:17:57,443 --> 02:18:01,443
+You just solve this.
+
+613
+02:18:01,443 --> 02:18:08,443
+So cumulative distribution value of n must be 0.5.
+
+614
+02:18:08,443 --> 02:18:16,443
+And if you use this equation, that means 1 minus 1.
+
+615
+02:18:16,443 --> 02:18:24,644
+1 minus e to the minus lambda m must be 0.5.
+
+616
+02:18:32,819 --> 02:18:51,819
+and from there you can easily calculate m as ln 2 over lambda. So we can find value for median.
+
+617
+02:18:57,907 --> 02:19:13,907
+So for continuous distributions, you just solve these equations. Now for median of discrete distributions, it's a little bit complicated.
+
+618
+02:19:18,324 --> 02:19:35,324
+So we are talking about population median of discrete distribution.
+
+619
+02:19:36,948 --> 02:19:46,547
+Now in this case, again we will use,
+
+620
+02:19:50,995 --> 02:20:14,995
+Again, we will solve cumulative distribution of median equals to 0.5. But this time we have two different situations. The solution of
+
+621
+02:20:16,115 --> 02:20:23,115
+the solution of this equation.
+
+622
+02:20:28,404 --> 02:20:38,603
+A either have no solution, no roots, or
+
+623
+02:20:40,915 --> 02:20:48,075
+So, but let's say the equation has no rules, this is better.
+
+624
+02:21:00,979 --> 02:21:01,979
+but the equation A has many roots. So there are many solutions. B no roots. So there is no solution for the equation.
+
+625
+02:21:30,979 --> 02:21:32,979
+in each case.
+
+626
+02:21:37,652 --> 02:21:43,112
+For A, when you have many roots,
+
+627
+02:21:56,564 --> 02:22:01,564
+usually you have like you have a situation like this, you have this graph.
+
+628
+02:22:04,564 --> 02:22:05,564
+And.
+
+629
+02:22:08,064 --> 02:22:11,564
+Let's say this is the cumulative distribution.
+
+630
+02:22:16,595 --> 02:22:17,595
+graph. And let's say you one, two, three, you have one, two, three here, let's say. And let's say the function is some value up to this point. And from one up to two, it's a different value. And from two up to three,
+
+631
+02:22:46,595 --> 02:22:48,595
+It has a different value
+
+632
+02:23:12,531 --> 02:23:21,531
+Now, this is the situation when
+
+633
+02:23:21,363 --> 02:23:24,363
+The cumulative value 0.5
+
+634
+02:23:26,363 --> 02:23:40,363
+Is right on one of these lines. So 0.5 is here. So that means all the values in this range.
+
+635
+02:23:44,363 --> 02:23:48,363
+They are all roots. So we say that
+
+636
+02:23:51,363 --> 02:24:13,803
+All values between all values, let's say, in from one to two, but one is there, but two is not there.
+
+637
+02:24:13,803 --> 02:24:22,523
+all values in 1 to 2 are a median.
+
+638
+02:24:24,383 --> 02:24:25,283
+Okay.
+
+639
+02:24:27,183 --> 02:24:36,003
+So in this case 1.2 is a median, 1.5 is a median, 1 is a median
+
+640
+02:24:36,003 --> 02:24:41,444
+because all of these points satisfy the condition
+
+641
+02:24:41,444 --> 02:24:49,823
+that those points has the cumulative distribution value of 0.5, right?
+
+642
+02:25:01,907 --> 02:25:13,907
+Now, another situation that may happen is no roots. No roots. What does that mean?
+
+643
+02:25:16,051 --> 02:25:20,051
+In that situation,
+
+644
+02:25:27,603 --> 02:25:28,403
+and
+
+645
+02:25:37,843 --> 02:26:03,843
+Again, you have this graph. X and cumulative value of X. And let's say again, you have one, two, three, whatever. And cumulative value is some value up to one. Let me use green here as I did before.
+
+646
+02:26:05,236 --> 02:26:09,236
+and it has another value till
+
+647
+02:26:09,236 --> 02:26:11,236
+two
+
+648
+02:26:13,236 --> 02:26:19,236
+and it has another value till three
+
+649
+02:26:31,283 --> 02:27:00,583
+Now, no roots happens when the median value 0.5 is not on one of these lines. Let's say 0.5 is here. That means there is no point, no x, with a cumulative probability value of 0.5.
+
+650
+02:27:00,583 --> 02:27:30,543
+There is no such value. Now in this case, we say that the smallest x with cumulative value is larger than or equal to 0.5 is the mean.
+
+651
+02:27:34,804 --> 02:28:04,783
+So in this example, what is the first value that has 0.5 or greater cumulative value? Well, in this case, that is this way here, right? Because at one, in this example, at one, the cumulative probability becomes larger than the cumulative probability.
+
+652
+02:28:04,804 --> 02:28:16,804
+than 0.5 and it is the smallest value. So here, median is one.
+
+653
+02:28:28,788 --> 02:28:29,788
+So here. Median is one. Okay. So these are calculating mediums in probably in populations. So.
+
+654
+02:28:51,827 --> 02:29:19,827
+We should have discussed this actually in the probability section. It's like calculating mean or variance, mean variance and now median. Now in addition to that, in this section we are talking about sample, sample statistics. So sample mean, sample variance, we will talk about that. And now sample median.
+
+655
+02:29:19,827 --> 02:29:25,067
+We also need to discuss those
+
+656
+02:29:43,059 --> 02:29:49,540
+sample median is simple. You just sort the values.
+
+657
+02:29:58,100 --> 02:30:14,100
+then find the value in the middle. So value in the middle. Is median.
+
+658
+02:30:17,236 --> 02:30:46,095
+and we use a hat here because that's sample median. Value in the middle is sample median. So for example, let's say your sample is 2, 2, 3. It's already sorted here. What is the sample median? It's 2, this value.
+
+659
+02:30:47,236 --> 02:30:49,236
+and the same.
+
+660
+02:31:05,396 --> 02:31:11,396
+This is sample we have is two, two, three, three.
+
+661
+02:31:14,196 --> 02:31:29,396
+And then what is the sample median? Now, there is no middle element. So both these two are in the middle because number of elements is even.
+
+662
+02:31:29,396 --> 02:31:49,396
+So Barron says any number in the range 2 to 3 is a median.
+
+663
+02:31:49,396 --> 02:31:55,396
+So let me, instead of equality, let me write this way.
+
+664
+02:31:59,316 --> 02:32:03,316
+Any number in this range is a median.
+
+665
+02:32:06,835 --> 02:32:12,835
+So in this case we have more than one median again.
+
+666
+02:32:21,075 --> 02:32:32,075
+Now median actually is a special case of something called quartiles.
+
+667
+02:32:33,043 --> 02:32:41,043
+We will now learn about quantiles, sorry, not quartiles but quantiles.
+
+668
+02:32:53,876 --> 02:33:04,876
+Now, quantiles are similar. Or let's say a generalization of median.
+
+669
+02:33:22,708 --> 02:33:41,907
+So the idea is a more general version of median median is a special case. And we define it like this. So P quantile.
+
+670
+02:33:43,860 --> 02:33:46,860
+of a population.
+
+671
+02:33:52,147 --> 02:34:18,147
+QP is defined as a number such that probability of less than QP is P.
+
+672
+02:34:18,147 --> 02:34:25,147
+And probability of random variable having value greater than.
+
+673
+02:34:26,147 --> 02:34:28,147
+Q P.
+
+674
+02:34:29,147 --> 02:34:33,147
+Is again less than one minus P.
+
+675
+02:35:00,211 --> 02:35:01,211
+Quantile thing is very similar to cumulative probability actually. If you look at here. This is the definition of. This is really related to cumulative probability. So.
+
+676
+02:35:22,484 --> 02:35:29,563
+We say that for continuous distributions for.
+
+677
+02:35:32,084 --> 02:35:35,363
+continuous distributions,
+
+678
+02:35:41,971 --> 02:35:42,731
+uh
+
+679
+02:35:49,139 --> 02:36:16,019
+So this first this first equation here. You can think about that this part here as cumulative distribution so you can say cumulative value of QP. Is equal to P. Right. So.
+
+680
+02:36:15,476 --> 02:36:35,476
+So you can think about quantile as the inverse cumulative distribution. So it's like inverse of cumulative distribution function. F.
+
+681
+02:36:48,468 --> 02:36:51,407
+So let me delete that inverse silk.
+
+682
+02:37:09,780 --> 02:37:14,780
+So if you think about it, you have this in continuous distributions.
+
+683
+02:37:18,780 --> 02:37:26,780
+Let's say you have probability density function. Somehow it goes like this.
+
+684
+02:37:26,780 --> 02:37:39,759
+And QP is the value where this area before the distribution is
+
+685
+02:37:39,759 --> 02:37:44,759
+before it, it's, the area before it is P.
+
+686
+02:37:47,159 --> 02:37:48,000
+Okay.
+
+687
+02:38:00,500 --> 02:38:12,579
+or if you think in terms of continuous distributions, in terms of cumulative distributions,
+
+688
+02:38:18,899 --> 02:38:32,899
+and you know that this function somehow goes to one.
+
+689
+02:38:35,283 --> 02:38:37,283
+from zero.
+
+690
+02:38:37,283 --> 02:38:39,283
+QP
+
+691
+02:38:44,724 --> 02:38:48,724
+has the cumulative value P.
+
+692
+02:38:57,363 --> 02:39:14,363
+So, if you have a then continuous distribution, you can or you can just use these two equations. If you have, sorry.
+
+693
+02:39:14,804 --> 02:39:43,043
+If you have distributions, you can directly use these two equations to find QP. Now, if you don't have such distributions, if you have a sample, you need to find sample quantiles. So let's here, this was a population quantile.
+
+694
+02:39:52,180 --> 02:39:56,180
+Now we will learn sample quantiles.
+
+695
+02:40:10,579 --> 02:40:17,579
+as sample p quantile
+
+696
+02:40:24,724 --> 02:40:29,363
+sample p quantile
+
+697
+02:40:32,243 --> 02:40:39,923
+q p, again, since this is a sample, we have a hat here, q p hat,
+
+698
+02:40:41,443 --> 02:40:43,443
+is defined as
+
+699
+02:40:49,780 --> 02:41:02,099
+what? QP hat exceeds at most
+
+700
+02:41:06,515 --> 02:41:15,555
+100 p percent of the sample
+
+701
+02:41:27,891 --> 02:41:37,091
+and it is exceeded by
+
+702
+02:41:42,739 --> 02:41:44,739
+at most.
+
+703
+02:41:50,548 --> 02:41:58,787
+100 times 1 minus p percent of the sample.
+
+704
+02:42:04,308 --> 02:42:31,308
+So, it's like, if you sort the sample, and if you sort the sample, sample values, and let's say,
+
+705
+02:42:34,420 --> 02:42:35,420
+Let's say QP hat is here. So P quantile is, let's say, this value. Okay. That means number of units that are less than QP is their count is
+
+706
+02:43:06,772 --> 02:43:12,451
+less than or equal to 100 P percent.
+
+707
+02:43:12,451 --> 02:43:16,411
+And the ones that are greater than.
+
+708
+02:43:16,411 --> 02:43:20,491
+QP has a count.
+
+709
+02:43:20,491 --> 02:43:30,971
+Again, less than or equal to 100 1 minus P percent.
+
+710
+02:43:35,219 --> 02:43:53,219
+Now, using this definition, when using by using this definition, doing some calculations is kind of confusing. So there is a short
+
+711
+02:43:52,340 --> 02:43:59,340
+or simple method for calculating p quantiles, sample p quantiles. So I will say
+
+712
+02:44:01,340 --> 02:44:05,340
+simple method
+
+713
+02:44:08,340 --> 02:44:11,340
+of calculating
+
+714
+02:44:11,340 --> 02:44:13,340
+Coolating
+
+715
+02:44:15,924 --> 02:44:23,303
+sample p quantiles
+
+716
+02:44:26,324 --> 02:44:34,324
+So, let's say values are in
+
+717
+02:44:38,611 --> 02:44:47,611
+Let's say x is your sample or s is your sample. Let's say s is your sample.
+
+718
+02:44:50,611 --> 02:44:52,611
+S is your sample.
+
+719
+02:44:55,411 --> 02:45:04,411
+But it's sorted. So before doing this, before using this method, you first need to sort the sample.
+
+720
+02:45:05,911 --> 02:45:06,611
+And
+
+721
+02:45:11,111 --> 02:45:12,511
+QP hat
+
+722
+02:45:13,611 --> 02:45:14,311
+is
+
+723
+02:45:16,611 --> 02:45:19,111
+the sample unit
+
+724
+02:45:19,111 --> 02:45:48,991
+that has the index p times n plus one. Okay. And sometimes n plus one here may not be integer. Sometimes this p times n plus one is not integer. So if p times n plus one is not an integer,
+
+725
+02:45:49,111 --> 02:45:50,111
+and the numbers.
+
+726
+02:45:52,819 --> 02:45:56,019
+You can
+
+727
+02:45:59,636 --> 02:46:01,636
+You can round it.
+
+728
+02:46:06,195 --> 02:46:10,195
+or take average.
+
+729
+02:46:10,195 --> 02:46:14,195
+Average.
+
+730
+02:46:14,195 --> 02:46:18,195
+Of the.
+
+731
+02:46:18,195 --> 02:46:21,195
+Two points.
+
+732
+02:46:23,156 --> 02:46:25,156
+between and after.
+
+733
+02:46:30,963 --> 02:46:34,963
+Let me do an example for this
+
+734
+02:46:51,476 --> 02:46:57,715
+Let's see, let's talk about CPU data.
+
+735
+02:47:01,172 --> 02:47:02,172
+See in the CPU data. What is what is 0.25 quantile. And what is 0.75 quintile. And what is the median.
+
+736
+02:47:37,268 --> 02:48:03,667
+and notice that median is actually just 50th quantile. So it's just this one. 0.50th quantile is median. And let's sort the data first. We will calculate it, sort the data.
+
+737
+02:48:03,667 --> 02:48:32,948
+and I will write the data here 915 so let's call s is 915 1922 24 25 30 34 35 35
+
+738
+02:48:36,852 --> 02:49:01,452
+36, 36, 37, 36, 36, 37, 38, 42, 43, 38, 42, 43, 46, 48, 54, 55,
+
+739
+02:49:08,531 --> 02:49:33,531
+So let us put some commas in between.
+
+740
+02:49:43,796 --> 02:50:11,296
+So this is our CPU data, but now it is sorted. And remember, n is 30, right? So we have 30 units here. Now, what is the, this one? Then, what is the 0.25th quantile?
+
+741
+02:50:11,296 --> 02:50:35,395
+Well, here, we will take the sample unit with the index 0.25 times n plus 1 and it's 30 plus 1.
+
+742
+02:50:35,395 --> 02:51:05,376
+right and if you do this calculation this will give you s 7.75 s 7.75 since this is not an integer we are rounding it so actually this should be s round p times n plus one
+
+743
+02:51:05,395 --> 02:51:22,476
+So if you round it, what do we get? S8. So 8 is the number of 0.25th quantile element.
+
+744
+02:51:22,476 --> 02:51:34,715
+So this is the first, second, third, four, five, six, seven, eight.
+
+745
+02:51:34,715 --> 02:51:43,895
+So that means that is 34.
+
+746
+02:51:43,895 --> 02:51:50,895
+Okay. So 34 is or 0.25.
+
+747
+02:51:50,895 --> 02:51:53,896
+Okay.
+
+748
+02:51:53,896 --> 02:51:56,896
+So this should be six.
+
+749
+02:51:56,896 --> 02:52:00,896
+So,
+
+750
+02:52:00,895 --> 02:52:02,895
+and say, you know, this is a mission.
+
+751
+02:52:02,895 --> 02:52:04,895
+Yes, it is.
+
+752
+02:52:04,895 --> 02:52:06,895
+Tamam, so.
+
+753
+02:52:06,895 --> 02:52:10,895
+So this should be six.
+
+754
+02:52:10,895 --> 02:52:17,895
+So that's how you calculate quantiles.
+
+755
+02:52:17,895 --> 02:52:19,895
+Okay.
+
+756
+02:52:19,895 --> 02:52:23,895
+In samples, if you have samples, you can just use.
+
+757
+02:52:23,895 --> 02:52:25,895
+just use
+
+758
+02:52:32,340 --> 02:52:56,340
+Round. Notice that rounding here is arbitrary. So you know, you could actually say a value between seventh and sixth because seven point seventy five is so this may be a value.
+
+759
+02:52:56,340 --> 02:53:06,340
+So any value between 34 and 35 is a 0.25 quantile.
+
+760
+02:53:10,340 --> 02:53:15,340
+So but by conversion here, we will just use median.
+
+761
+02:53:15,340 --> 02:53:17,340
+Okay.
+
+762
+02:53:17,340 --> 02:53:21,340
+Or all conversion in this course will be median.
+
+763
+02:53:21,340 --> 02:53:24,340
+It could be ceiling.
+
+764
+02:53:24,340 --> 02:53:33,340
+So it could be the way the element after it. So it's just a just a convention and I will use round here.
+
+765
+02:53:41,459 --> 02:53:49,459
+So that's quantiles and we can finish here. Next week.
+
+766
+02:53:52,244 --> 02:53:53,244
+You can do the rest yourself. 0.75 quantile and 0.58 quantiles. These should be 59 and this should be S16. So it should be, I think,
+
+767
+02:54:22,244 --> 02:54:24,244
+48
+
+768
+02:54:32,500 --> 02:54:36,500
+You can do this as an exercise at home.
+
+769
+02:54:41,043 --> 02:54:43,043
+and accuracy, the answer is correct.
+
+770
+02:54:45,843 --> 02:54:50,843
+as exercises. Next week,
+
+771
+02:54:55,188 --> 02:54:59,188
+midterm two
+
+772
+02:55:01,268 --> 02:55:21,707
+It will start at nine o'clock. Okay. As usual, it will be on online yielders. Edu tier. And there will be lecture after the midterm. So there will be
+
+773
+02:55:25,556 --> 02:55:37,556
+lecture, lecture, after the mid turn. Okay.
+
+774
+02:55:50,260 --> 02:55:56,260
+Ah, but this is the 9th of the beginning, I think it's the 13th.
+
+775
+02:56:01,523 --> 02:56:05,523
+So, I will talk about the first time.
+
+776
+02:56:05,523 --> 02:56:09,523
+I will talk about the first time.
+
+777
+02:56:11,412 --> 02:56:13,412
+So it will start at
+
+778
+02:56:15,412 --> 02:56:24,412
+Bugünkü şeyler included. Today's topic is included up to this point.
+
+779
+02:56:29,299 --> 02:56:31,299
+including let me say.
+
+780
+02:56:48,564 --> 02:56:49,564
+okay?
+
+781
+02:56:53,236 --> 02:57:04,475
+Test mi olacak? Büyük ihtimal test olacak ama onu konuşmadık henüz, daha hazırlamadık, bu hafta hazırlayacağız. %90 test olur.
+
+782
+02:57:14,355 --> 02:57:19,855
+Peki, başka soru yoksa kapatıyorum. Haftaya görüşürüz. Başarılar dilerim arkadaşlar.
