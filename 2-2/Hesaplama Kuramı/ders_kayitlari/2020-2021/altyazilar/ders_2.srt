@@ -1,0 +1,2655 @@
+1
+00:01:46,579 --> 00:01:48,579
+Evet sesim geliyor mu arkadaşlar?
+
+2
+00:01:55,540 --> 00:01:56,419
+Evet hocam.
+
+3
+00:02:01,331 --> 00:02:05,712
+Peki.
+
+4
+00:02:14,195 --> 00:02:33,355
+So this is the second week of this course. And before starting to the lecture, we made changes to the evaluation system.
+
+5
+00:02:46,611 --> 00:02:50,611
+So the evaluation system.
+
+6
+00:02:55,604 --> 00:03:00,683
+we decided to have three quizzes.
+
+7
+00:03:07,348 --> 00:03:25,348
+and each of these will be 10 points. So three times 10, these will be 30 points. And the rest is same. So we have one mid-turn.
+
+8
+00:03:32,307 --> 00:03:41,307
+which will be again 30 points. And one final, which will be 40 points.
+
+9
+00:03:44,756 --> 00:03:55,636
+these quizzes will not be surprised. So they will not be...
+
+10
+00:04:05,939 --> 00:04:06,939
+They will not be surprises. We will tell you when we will do them. They will be short. So it may be 20 minutes, 15 minutes or something at the end of the class and at the end of the lecture. Most probably it will be tests. But the
+
+11
+00:04:35,939 --> 00:05:03,520
+and
+
+12
+00:04:49,043 --> 00:05:01,043
+Okay, so last lecture we said that there will be two homeworks. We will not give any homeworks. So no homeworks.
+
+13
+00:05:05,043 --> 00:05:07,043
+Again, this is still tentative.
+
+14
+00:05:10,708 --> 00:05:11,708
+But most probably we will do like this. Any questions about this? No. Okay. Then let's start the course. So last lecture we started to prove techniques and
+
+15
+00:05:40,708 --> 00:05:56,108
+direct proofs. You basically start from your inputs and then get to the results, get to the thing that you want to prove.
+
+16
+00:05:56,108 --> 00:06:05,507
+Another way is to do constructive proofs and usually you do constructive proofs
+
+17
+00:06:05,507 --> 00:06:10,507
+when you need to prove the existence of something.
+
+18
+00:06:10,507 --> 00:06:17,508
+So in this example, for example, in this example,
+
+19
+00:06:17,508 --> 00:06:25,508
+we want to prove that there exists a rational number q to the r,
+
+20
+00:06:25,508 --> 00:06:31,508
+which is equal to p, and p is...
+
+21
+00:06:34,612 --> 00:06:42,612
+and rational numbers and Q and R are not irrational, they are irrational.
+
+22
+00:06:46,612 --> 00:07:00,612
+And we said that just by giving an example or constructing it, the proof is done. So we can say, okay, if I take Q as this one and R as this one,
+
+23
+00:07:00,612 --> 00:07:28,612
+and the square root of two to the square root of two is not rational, it's irrational. R is square root of two, again, that's irrational. And then Q to the R in this case becomes two, which is a rational number. So this example itself, this construction itself,
+
+24
+00:07:30,612 --> 00:07:45,972
+finishes or concludes the proof. That's enough. This was a constructive proof. And in this class, we may use this because we will see the existence of stuff.
+
+25
+00:07:54,963 --> 00:08:03,963
+Now another one is proof by contradiction. Let's look at that.
+
+26
+00:08:20,403 --> 00:08:43,403
+Now, proof by contradiction, you start with, you start with something that is wrong. You start with the inverse of the theorem. So whatever you want to prove, assume it is wrong.
+
+27
+00:08:43,403 --> 00:08:52,403
+and then you use these steps and at some point you will see you will get a contradiction.
+
+28
+00:08:52,403 --> 00:09:04,403
+And you will say, okay, since we get the contradiction, when we assume that the theorem is false, that means theorem is true.
+
+29
+00:09:04,403 --> 00:09:05,744
+Uh...
+
+30
+00:09:16,628 --> 00:09:17,628
+So what we will do here is we will assume the theorem is false. Okay. Then show that
+
+31
+00:09:45,844 --> 00:09:49,043
+This assumption
+
+32
+00:09:55,764 --> 00:09:59,764
+leads us to a contradiction.
+
+33
+00:10:24,532 --> 00:10:28,532
+Let's look at an example for this.
+
+34
+00:10:36,788 --> 00:10:38,788
+So let's look at an example.
+
+35
+00:10:41,875 --> 00:10:43,915
+So let's say,
+
+36
+00:10:56,148 --> 00:10:58,148
+Let's say the theorem is, uh,
+
+37
+00:11:02,355 --> 00:11:09,355
+square root of two is irrational.
+
+38
+00:11:15,475 --> 00:11:29,475
+and again remember what is rational and what was irrational. So, rational numbers.
+
+39
+00:11:43,124 --> 00:11:58,124
+were set of M over N such that M and N are integers.
+
+40
+00:12:07,860 --> 00:12:31,860
+and irrational numbers are numbers that are not in this set, right? So. So now we will do this with a proof by contradiction. So we say that. Proof. By contradiction.
+
+41
+00:12:33,235 --> 00:12:36,235
+letter session.
+
+42
+00:12:41,844 --> 00:12:42,844
+The square root of two is rational for obtaining a contradiction.
+
+43
+00:13:06,484 --> 00:13:07,484
+Then it means, you know, usually you say this for obtaining a contradiction. Think usually at the start of the proof you say that just to make sure that we are using this just for contradiction.
+
+44
+00:13:36,484 --> 00:13:38,484
+and
+
+45
+00:13:48,628 --> 00:13:49,628
+Now you need to do some series of thinking to get to that, to get to a contradiction and the contradiction in this case comes from the fact that this M over N
+
+46
+00:14:18,932 --> 00:14:46,451
+can be taught as not having any common, common factors. So first let's say that that means so let us assume square root is is rational for obtaining a contradiction. And then that means square root of
+
+47
+00:14:45,076 --> 00:14:58,076
+to can be written as P over Q, some P over Q, which are integers.
+
+48
+00:15:02,419 --> 00:15:05,059
+And we can also assume that
+
+49
+00:15:09,844 --> 00:15:11,844
+and we can...
+
+50
+00:15:15,860 --> 00:15:20,860
+further restricted.
+
+51
+00:15:28,692 --> 00:15:29,611
+and,
+
+52
+00:15:32,724 --> 00:15:35,923
+P and Q
+
+53
+00:15:40,371 --> 00:15:45,371
+and Turing machine, which is a very important thing to say.
+
+54
+00:15:45,371 --> 00:15:49,371
+The other thing is that the people who have no common factors have no common factors.
+
+55
+00:15:55,956 --> 00:16:11,075
+So what we mean here is, let's say P is 9 and Q is, let's say, 6.
+
+56
+00:16:12,788 --> 00:16:19,788
+Right now, in this case, you can just say that, okay, the common fact P over Q.
+
+57
+00:16:19,788 --> 00:16:26,788
+P over Q.
+
+58
+00:16:28,947 --> 00:16:47,947
+is three times three divided by three times two. So we can just get rid of the common factor and get to two or two. So this common factor can be always simplified. So we are saying that
+
+59
+00:16:47,947 --> 00:16:56,947
+uh
+
+60
+00:16:56,947 --> 00:17:24,528
+and
+
+61
+00:16:57,524 --> 00:16:58,024
+sort of.
+
+62
+00:17:05,395 --> 00:17:17,835
+If we have a common factor D,
+
+63
+00:17:19,988 --> 00:17:23,187
+of P and Q
+
+64
+00:17:28,627 --> 00:17:30,627
+We can just get rid of them.
+
+65
+00:17:35,412 --> 00:17:51,412
+We can just say that we use, instead of P, we can use P prime, which is a,
+
+66
+00:17:54,291 --> 00:18:07,291
+and Q prime, which is, so this should be P.
+
+67
+00:18:16,596 --> 00:18:24,235
+which is Q over D. And we can say that, uh,
+
+68
+00:18:26,612 --> 00:18:27,612
+these now.
+
+69
+00:18:32,243 --> 00:18:33,243
+and Turing machine, P over, P prime over Q prime is square root of two. And there is no common factors.
+
+70
+00:19:02,836 --> 00:19:07,836
+between P' and Q'
+
+71
+00:19:24,147 --> 00:19:52,147
+So what we are saying is if there were some kind of common factors, in this case, some D, we could just simplify it. And now we are saying that after the simplification, we will find these pair of values like P and Q
+
+72
+00:19:52,147 --> 00:19:54,147
+that's
+
+73
+00:19:58,516 --> 00:20:20,516
+that gives square root of two after division. Okay. So this is important because the contradiction will come here. Okay. We will see that the contradiction will be coming that there is always a factor there.
+
+74
+00:20:20,516 --> 00:20:30,516
+So these are the assumptions and starting points. Now we can continue.
+
+75
+00:20:34,259 --> 00:20:40,259
+So we will say that, sorry.
+
+76
+00:20:44,660 --> 00:20:52,899
+Q Q is square root of two.
+
+77
+00:20:52,899 --> 00:21:01,299
+That means P squares or Q squares is two.
+
+78
+00:21:01,299 --> 00:21:12,299
+And that means two Q squares is P squares.
+
+79
+00:21:17,556 --> 00:21:19,556
+Now,
+
+80
+00:21:23,059 --> 00:21:32,059
+here Q square, this part is even.
+
+81
+00:21:33,299 --> 00:21:52,299
+This is obviously even because two times something, some integer is even. That means this piece square is even too. And, and that means P is even.
+
+82
+00:21:56,019 --> 00:22:01,319
+So we have this, we have this situation.
+
+83
+00:22:07,667 --> 00:22:23,667
+So that means now instead of P, we can write some value 2 to the R. So instead of P, we can write some value 2 to the R. So instead of P,
+
+84
+00:22:30,612 --> 00:22:33,852
+We can write.
+
+85
+00:22:35,731 --> 00:22:44,731
+P is two R because P is even. And we assume R is some integer again.
+
+86
+00:22:52,980 --> 00:23:03,219
+Now, if you continue from this point, we will say, then, uh,
+
+87
+00:23:05,011 --> 00:23:30,011
+So, Q, 2Q square equal to 2 to the R square. And that means 2Q square means 4R square. And that means Q square is equal to 2R square.
+
+88
+00:23:31,476 --> 00:23:37,476
+Now, similar to what we have done there.
+
+89
+00:23:43,571 --> 00:24:02,571
+just a minute ago. Obviously, two to the R square is even. That means Q square is even. And that means Q is even.
+
+90
+00:24:04,692 --> 00:24:16,851
+right? And now, but this is wrong. This is a contradiction.
+
+91
+00:24:19,508 --> 00:24:20,587
+Oi.
+
+92
+00:24:39,763 --> 00:24:51,763
+PVQ aralarında sallardı. İkisi de çift çıktı. Evet. Tam duyamadım. Ne dediniz?
+
+93
+00:25:04,980 --> 00:25:10,239
+So P and Q, we just said that here,
+
+94
+00:25:10,239 --> 00:25:13,139
+we just said that here,
+
+95
+00:25:23,508 --> 00:25:45,508
+here we said that there can be no common factor between P and Q. But we just found that there is a common factor between P and Q because both P and Q are even. So the common factor is two.
+
+96
+00:25:52,051 --> 00:26:02,051
+both P and Q are even.
+
+97
+00:26:06,708 --> 00:26:13,708
+there is, there is the,
+
+98
+00:26:18,804 --> 00:26:22,804
+common factors, two.
+
+99
+00:26:32,403 --> 00:26:35,884
+That's not the right thing because D was something else.
+
+100
+00:26:40,627 --> 00:26:41,627
+So, we arrived to a contradiction that means, or assumption was wrong. So, or assumption that square root of two is,
+
+101
+00:27:11,796 --> 00:27:13,796
+rational
+
+102
+00:27:15,796 --> 00:27:17,796
+was wrong.
+
+103
+00:27:19,796 --> 00:27:21,796
+Well, let's say is wrong.
+
+104
+00:27:30,483 --> 00:27:39,483
+So this is how proof by contradiction goes. This is how proof by contradiction goes.
+
+105
+00:27:42,483 --> 00:27:45,483
+You assume the inverse of what you want to prove.
+
+106
+00:27:46,483 --> 00:27:51,483
+And then after some steps, somehow you come to a contradiction.
+
+107
+00:27:51,483 --> 00:27:59,483
+And then you say, okay, since there is a contradiction, that means my original assumption that the term is wrong is wrong.
+
+108
+00:27:59,483 --> 00:28:05,164
+is wrong. So that means the theorem is right. And I proved the theorem.
+
+109
+00:28:08,915 --> 00:28:19,756
+Hocam başta reminder yazmıştık Sarı. Passion number ne olduğu ile ilgili. O aksiyon mu, definition mı? Onu prove etmemiz gerekiyor muydu?
+
+110
+00:28:21,115 --> 00:28:37,135
+Utanım evet. Buna gerek yok. Bunu prove etmeye gerek yok. Çünkü bu aksiyon da değil, definition. Yani bir set tanımlamışız.
+
+111
+00:28:37,135 --> 00:29:00,596
+Bu setin içinde mi değil mi onunla ilgili konuşuyoruz. Bu bir küme. Rasyonel sayılar bir küme. O kümenin içinde mi değil mi? Kare kök 2. Onu konuşuyoruz. Piyorem diyor ki o kümenin içinde değil. Biz de o kümenin içinde olmadığını ispat ettik.
+
+112
+00:29:02,195 --> 00:29:03,035
+Teşekkürler.
+
+113
+00:29:11,508 --> 00:29:20,508
+So another proof technique is proof by induction. Let's look at that one.
+
+114
+00:29:38,132 --> 00:29:39,132
+proof by induction. The general idea goes like this. So you prove. Your theorem.
+
+115
+00:29:59,251 --> 00:30:03,251
+holds for some number.
+
+116
+00:30:06,579 --> 00:30:34,579
+Okay. And then, we say, and this number is usually one. Usually that's n equals to one, but it doesn't have to be. So you're basically select a number and say that for this number, this theorem holds.
+
+117
+00:30:38,036 --> 00:30:40,615
+and
+
+118
+00:30:41,715 --> 00:30:49,215
+You obviously assume theorem is true.
+
+119
+00:30:53,332 --> 00:31:03,332
+for n. Now what you need to do is you need to prove the theorem is true for n plus one.
+
+120
+00:31:19,443 --> 00:31:48,563
+And what will happen is, we already know that the theorem is true for number one. And from then, we say that if it is true for one, and we just showed that if the theorem is true for n, it is also true for n plus one. So then from one, we can go to two. And then from two, we can go to three, up to infinity.
+
+121
+00:31:49,443 --> 00:32:01,524
+and that will conclude your proof. If you need, you can do the inverse too. So you can say, okay,
+
+122
+00:32:04,468 --> 00:32:07,468
+You can do things like...
+
+123
+00:32:14,900 --> 00:32:15,900
+or you can prove the theorem holds four and minus one. And you can start from a larger value. Then this way you can go to minus infinity.
+
+124
+00:32:44,900 --> 00:33:03,900
+It depends what you want to prove and what you want. It really depends. Sometimes it may be necessary. You may need to use n plus two maybe because you want to prove something on even numbers. So the general idea but is this.
+
+125
+00:33:03,900 --> 00:33:09,900
+and let's look at an example for this.
+
+126
+00:33:12,900 --> 00:33:14,900
+So as an example,
+
+127
+00:33:21,044 --> 00:33:32,844
+and Turing machine, so the theorem here we have is, for all positive numbers n,
+
+128
+00:33:43,508 --> 00:33:45,508
+integers, sorry.
+
+129
+00:33:49,395 --> 00:33:53,395
+for all positive integers. These are important.
+
+130
+00:34:03,539 --> 00:34:05,539
+We have
+
+131
+00:34:13,108 --> 00:34:15,108
+we have
+
+132
+00:34:16,108 --> 00:34:17,108
+sorry
+
+133
+00:34:26,068 --> 00:34:53,068
+one plus two plus three plus n is equal to n times n plus one over two. So this theorem is used usually this kind of, this proof by induction is used usually for this kind of identity proofs.
+
+134
+00:34:53,068 --> 00:35:00,507
+and especially when you have, when you can find this,
+
+135
+00:35:03,956 --> 00:35:27,956
+The theorem, where you can find the theorem inside n plus one case. In those cases, it's easy to use this induction. So in this case, how we will do the solution?
+
+136
+00:35:26,579 --> 00:35:44,579
+It's easy to prove for a number. So that's sometimes called the basis of the induction. So let's not forget this. Basis of the induction.
+
+137
+00:35:48,019 --> 00:36:17,999
+and Turing machine, if n is equal to one, we have, so you can write this clearly, but we have, this part is just one. And then we have one plus, one times one plus one divided by two. So,
+
+138
+00:36:18,019 --> 00:36:26,019
+one equals to one. So, basis of the induction. So, the theorem holds for n equals to one.
+
+139
+00:36:28,019 --> 00:36:30,019
+And...
+
+140
+00:36:33,204 --> 00:36:58,204
+We already assumed the theorem is true. So these steps are called induction step and basis. Let's not forget them. So this part is called basis of the induction.
+
+141
+00:37:09,940 --> 00:37:22,940
+basis of the induction. And this proving for n plus one is called the induction step.
+
+142
+00:37:29,172 --> 00:37:34,172
+So in the induction step, basically
+
+143
+00:37:46,963 --> 00:37:51,364
+induction step.
+
+144
+00:37:55,507 --> 00:38:06,507
+You prove that n plus one case holds if n is true. And, uh,
+
+145
+00:38:15,219 --> 00:38:20,219
+It's not that hard, so you can just say, okay.
+
+146
+00:38:21,780 --> 00:38:26,780
+for N plus one case.
+
+147
+00:38:33,652 --> 00:38:34,652
+We have 1 plus 2 plus 3 up to n plus n plus 1 equal to n plus 1 and n plus 2 divided 2. And now this part is
+
+148
+00:39:04,947 --> 00:39:07,627
+we can just use this
+
+149
+00:39:10,771 --> 00:39:29,771
+original identity. So we can say this part is N times N plus 1 divided by 2. And then you can just continue to find that they are same thing.
+
+150
+00:39:40,403 --> 00:39:47,403
+Okay, so this is proof by induction.
+
+151
+00:39:50,771 --> 00:40:12,771
+Another useful thing is, another useful thing in proof is, proving is something called the pigeonhole principle or pigeon. Was this pigeon principle or pigeonhole principle?
+
+152
+00:40:12,771 --> 00:40:15,771
+Hocam, induction ile ilgili bir şey sorabilir miyim geçmeden?
+
+153
+00:40:15,771 --> 00:40:27,411
+basis için en eşitir 1'i aldık. Induction için de en eşitir 2'yi almayacak mıydık veya ben öyle olacağını düşündüm?
+
+154
+00:40:28,852 --> 00:40:43,532
+Yok, induction step'te sayısal değil de denklem üzerinden ispat etmemiz lazım. Çünkü 2'yi 2 üzerinden ispat ederseniz 2'yi ispat etmiş olursunuz.
+
+155
+00:40:43,531 --> 00:41:01,111
+sonrasında 3'ü ispat etmeniz gerekir. Ama şunu yaparsanız en doğruysa en artı bir içinde doğrudur derseniz ne yapmış oluyorsunuz? Herhangi bir sayı için doğruysa bir üstündeki sayı için de doğrudur. Tümünü birden ispat etmiş oluyorsunuz.
+
+156
+00:41:01,731 --> 00:41:06,071
+Anladım. İlk sayıyla yapacağız. Basic'i sonra sayıyla.
+
+157
+00:41:06,071 --> 00:41:10,291
+diğerini identity üzerinden yapmanız lazım, denklik üzerinden.
+
+158
+00:41:10,611 --> 00:41:10,811
+Tamam.
+
+159
+00:41:11,251 --> 00:41:15,271
+Ki o zaman hepsini birden ispat etmiş oluyorsunuz.
+
+160
+00:41:15,271 --> 00:41:18,551
+Bir tanesi doğruysa bir sonrakisi de doğru.
+
+161
+00:41:18,711 --> 00:41:20,171
+O zaman bir sonrakisi de doğru.
+
+162
+00:41:20,291 --> 00:41:22,151
+Bir sonrakisi de doğru değil mi?
+
+163
+00:41:22,951 --> 00:41:27,711
+O ilk birincisini de sayısal olarak hesap ediyorsunuz ve doğrudur diyorsunuz.
+
+164
+00:41:29,171 --> 00:41:30,431
+Anlaşıldı hocam, teşekkür ederim.
+
+165
+00:41:31,091 --> 00:41:31,391
+Güzel.
+
+166
+00:41:36,340 --> 00:41:41,340
+pigeon principle.
+
+167
+00:41:45,523 --> 00:41:52,523
+So this is a very simple idea.
+
+168
+00:41:54,228 --> 00:42:04,547
+pigeonhole. pigeon principle day, which is the pigeonhole principle day.
+
+169
+00:42:18,132 --> 00:42:21,132
+pigeonhole.
+
+170
+00:42:28,211 --> 00:42:30,811
+pigeonhole ne demek? Türkçesi.
+
+171
+00:42:34,231 --> 00:42:35,091
+Koş ulasana.
+
+172
+00:42:35,871 --> 00:42:36,091
+Evet.
+
+173
+00:42:39,451 --> 00:42:41,951
+Görüyor musunuz ekranda paylaştığım şeyi?
+
+174
+00:42:44,392 --> 00:42:46,351
+Browser resmini görüyor musunuz?
+
+175
+00:42:54,291 --> 00:43:02,371
+Evet. Şu pigeonhole oluyor. Yani pigeonhole'lar biraz daha birden fazla böyle bölmeye sahip oluyor.
+
+176
+00:43:04,851 --> 00:43:12,632
+Ve içinde işte güvercinler oluyor. Pigeon, güvercin. Pigeonhole'da onların yuvası oluyor. Güvercin yuvası.
+
+177
+00:43:16,731 --> 00:43:18,431
+Tabular gibi bir şey mi çıkacak acaba?
+
+178
+00:43:20,431 --> 00:43:23,011
+Tabular gibi bir şey mi olacak acaba?
+
+179
+00:43:23,011 --> 00:43:24,691
+Bilmiyorum o dediğim gibi
+
+180
+00:43:24,691 --> 00:43:29,332
+Yani tablo gibi bir şey mi olacak? Çünkü tablo gibi ya bu gözler var
+
+181
+00:43:29,332 --> 00:43:33,931
+Tablo değil, sadece şey olacak, kutularımız olacak
+
+182
+00:43:33,931 --> 00:43:39,931
+Çok basit bir şey aslında, kutu sayısına, mesela burada kaç tane kutu var? 9 kutu var
+
+183
+00:43:39,931 --> 00:43:44,431
+Kaç tane güvercin var? 10 tane
+
+184
+00:43:44,431 --> 00:43:47,951
+O zaman ne diyor o prensip?
+
+185
+00:43:49,291 --> 00:43:51,371
+Güvercin yuvası prensibi
+
+186
+00:43:51,371 --> 00:44:10,591
+10 güvercini 9 tane yuvaya yerleştirmek istediğinizde yuvaların bir tanesine 2 tane koymak zorundasınız.
+
+187
+00:44:13,111 --> 00:44:17,711
+Çok basit bir şey. Evet öyle falan dersiniz.
+
+188
+00:44:17,711 --> 00:44:23,431
+Ama işte o mantıktan gidince bir kısım problemleri çözmeniz kolay oluyor.
+
+189
+00:44:25,972 --> 00:44:29,872
+Burada da anlatmış benzer şeyler zaten hepsinde var.
+
+190
+00:44:48,980 --> 00:44:58,659
+So the pigeonhole principle says that
+
+191
+00:45:02,132 --> 00:45:07,132
+If, so you have some pigeon rolls.
+
+192
+00:45:25,588 --> 00:45:34,588
+You have these pigeon holes and you have these pigeons.
+
+193
+00:45:40,244 --> 00:45:42,244
+So you have a...
+
+194
+00:45:52,563 --> 00:45:54,563
+and the other one is the same.
+
+195
+00:45:59,827 --> 00:46:20,827
+Now, you have these pigeons. And number of pigeons is greater than number of pigeon holes.
+
+196
+00:46:21,748 --> 00:46:27,748
+So if number of pigeon is greater than number of pigeonholes,
+
+197
+00:46:30,748 --> 00:46:33,307
+what we have is then
+
+198
+00:46:33,307 --> 00:46:49,748
+there is
+
+199
+00:46:45,300 --> 00:46:50,300
+at least pigeonhole,
+
+200
+00:46:56,211 --> 00:47:03,211
+with more than one pigeons.
+
+201
+00:47:07,380 --> 00:47:35,380
+So you have, yeah, you will have to put at least for one of the pigeon holes, you will have more than one pigeon, if you really want to put them in these boxes or in these holes. So let's say you have one in English.
+
+202
+00:47:33,300 --> 00:47:36,300
+You might have one here.
+
+203
+00:47:44,052 --> 00:48:07,052
+Now you have three. For the next one, one of the boxes must have, for the next one you need to choose an occupied pigeonhole. So that pigeonhole, whatever you select, will have more than two, more than one pigeonhole.
+
+204
+00:48:07,052 --> 00:48:16,052
+So you will see how this is applied in a minute. Let's try to use this.
+
+205
+00:48:24,532 --> 00:48:28,532
+Let's write this in more, a little more mathematical terms first.
+
+206
+00:48:32,019 --> 00:48:49,019
+So it means if A and B are sets such that
+
+207
+00:48:51,027 --> 00:49:00,027
+number of elements in A is greater than number of elements in B.
+
+208
+00:49:00,947 --> 00:49:01,947
+So this is number of elements. Then there is no
+
+209
+00:49:11,635 --> 00:49:13,635
+one-to-one function.
+
+210
+00:49:22,483 --> 00:49:27,483
+from A to B.
+
+211
+00:49:34,003 --> 00:49:40,243
+If you have the, if you have A and if you have B,
+
+212
+00:49:44,724 --> 00:49:47,724
+and number of elements in A is greater.
+
+213
+00:49:48,823 --> 00:49:56,823
+So you cannot find a one-to-one function, meaning for each element in A,
+
+214
+00:49:58,684 --> 00:50:01,484
+you want to find a separate,
+
+215
+00:50:11,539 --> 00:50:25,539
+You want to find a separate corresponding element in B and you cannot find such a correspondence, mapping or function.
+
+216
+00:50:36,724 --> 00:50:41,724
+Let's try to use this in an example.
+
+217
+00:50:44,483 --> 00:50:45,484
+So,
+
+218
+00:50:50,963 --> 00:50:54,963
+The theorem we will prove says that
+
+219
+00:51:03,699 --> 00:51:10,699
+if seven distinct numbers
+
+220
+00:51:12,659 --> 00:51:22,979
+if seven distinct
+
+221
+00:51:24,980 --> 00:51:30,579
+numbers are selected
+
+222
+00:51:35,284 --> 00:51:36,284
+from
+
+223
+00:51:40,164 --> 00:51:41,163
+one to
+
+224
+00:51:43,403 --> 00:51:44,603
+up to 11.
+
+225
+00:51:49,012 --> 00:51:49,851
+Then,
+
+226
+00:51:55,315 --> 00:52:00,315
+some two of these numbers, some two.
+
+227
+00:52:14,068 --> 00:52:17,068
+sum to 12.
+
+228
+00:52:30,867 --> 00:52:31,867
+So what does that, let's try to understand what does this mean. So you have these numbers and
+
+229
+00:52:44,755 --> 00:52:45,755
+You need to select them from the set. Let's say S equals to 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. So you need to select seven distinct numbers from this. So let's say your selection, I don't know, P,
+
+230
+00:53:14,755 --> 00:53:27,956
+can be 1, 5, 6, 7, 10, how many is this?
+
+231
+00:53:28,776 --> 00:53:35,936
+1, 2, 3, 4, 5, 11, 6, and now I need to select one more.
+
+232
+00:53:35,936 --> 00:53:38,116
+So let's say I select three.
+
+233
+00:53:39,976 --> 00:53:41,675
+Let's say three.
+
+234
+00:53:41,675 --> 00:53:58,675
+Okay. Now, whatever kind of selection you do out of this, this theorem says that,
+
+235
+00:54:07,219 --> 00:54:31,219
+The theorem says that some of these numbers sum up to 12. And let's see whether we have such a number. For example, 1 plus 11. So 1 plus 11 is 12. Right? Do we have any other value like that?
+
+236
+00:54:31,219 --> 00:54:39,719
+I don't think this is, no.
+
+237
+00:54:39,719 --> 00:54:43,719
+So one plus 11 is 12 and that's enough, right?
+
+238
+00:54:43,719 --> 00:54:54,480
+So this theorem says that sum to all these numbers, meaning at least one number or at least
+
+239
+00:54:54,480 --> 00:54:57,279
+one pair sum to 12.
+
+240
+00:54:57,279 --> 00:55:08,619
+and in this example, we can see that 1 and 11 indeed sum to 12.
+
+241
+00:55:08,619 --> 00:55:10,999
+Now, this is not a proof, right?
+
+242
+00:55:10,999 --> 00:55:12,699
+This was not a proof.
+
+243
+00:55:16,532 --> 00:55:42,532
+because we need to somehow show that for all selection, there is at least one pair that sums to it, right? And so, so far we didn't prove, but we just tried to understand the theorem, right? What does the theorem say?
+
+244
+00:55:42,532 --> 00:55:58,811
+Now, to prove this, you may go, so this is kind of, obviously, needs to think, needs one to think a little bit.
+
+245
+00:56:02,091 --> 00:56:11,532
+So, the way you can prove this with the pigeonhole principle is,
+
+246
+00:56:12,532 --> 00:56:20,532
+You can construct these sets.
+
+247
+00:56:26,387 --> 00:56:37,747
+And so for each value, for example, for one, what is the number that sums to 12? That's 11.
+
+248
+00:56:39,956 --> 00:56:55,956
+So for two, you have 10. For three, you have nine. For four, you have eight. For five, you have seven.
+
+249
+00:56:58,132 --> 00:56:59,132
+and
+
+250
+00:57:02,483 --> 00:57:14,483
+for six, you would need six, but there's only one six, so you cannot...
+
+251
+00:57:20,052 --> 00:57:47,052
+I mean, you don't, you cannot find a number that will bring this to 12, let's say. And notice that we used all numbers here. So 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. All of the selection numbers is there. So everything is there. And how many such sets are there?
+
+252
+00:57:48,884 --> 00:57:51,884
+We have six sets.
+
+253
+00:57:55,315 --> 00:58:18,315
+Now we want to do a selection and we need to do seven selection. Right? We need to do seven selection. So then this part is like your pigeon holes.
+
+254
+00:58:18,099 --> 00:58:19,099
+and this part is your pigeons. So, for the six number you select, first six number you select, you need to select one of these. And we have six sets. Okay. But for the seventh selection, you need to
+
+255
+00:58:48,099 --> 00:59:13,099
+and then you select one of these again, one of the same pigeonholes, one of the already selected pigeonholes, and any of the selection will directly sum up to 12. So that means by pigeonhole principle,
+
+256
+00:59:13,099 --> 00:59:29,260
+there will be at least one value that sums up to 12. So to write this in English, in words, you would say something like,
+
+257
+00:59:35,764 --> 00:59:42,764
+since seven numbers are selected.
+
+258
+00:59:50,260 --> 00:59:53,260
+The pigeonhole principle guarantees that
+
+259
+01:00:20,500 --> 01:00:26,420
+guarantees that two of the selections
+
+260
+01:00:38,835 --> 01:00:42,076
+are selected from
+
+261
+01:00:47,860 --> 01:00:49,860
+one of the six sets.
+
+262
+01:00:56,724 --> 01:01:01,724
+and then you can write these six sets.
+
+263
+01:01:03,059 --> 01:01:19,939
+11, 2, 10, 3, 9, 4, 8, 5, 7,
+
+264
+01:01:23,476 --> 01:01:25,476
+six.
+
+265
+01:01:29,043 --> 01:01:32,243
+and these two numbers
+
+266
+01:01:37,556 --> 01:01:39,176
+sum to 12.
+
+267
+01:01:54,931 --> 01:02:13,931
+So you have this first, you have to think about it somewhere else. And then you have to write its English version or Turkish, whatever, in, you have to write it in sentences.
+
+268
+01:02:15,668 --> 01:02:21,668
+And this is an example of that. What's the time now?
+
+269
+01:02:25,427 --> 01:02:37,427
+Let's give a 10 minutes break till 10. Let's give a break till 10. 10.
+
+270
+01:02:39,827 --> 01:02:44,308
+10, 15. Do you have any questions?
+
+271
+01:02:48,980 --> 01:03:02,980
+Hocam burada eleman sayısından yarısından bir fazla selection yaptığımızda zaten pigeonhole ispatlanmış oluyor zannedersem. Adamlar bunun adına pigeonhole koymuş bunun üzerine de doktoratezi mi yazmış şimdi?
+
+272
+01:03:02,980 --> 01:03:14,980
+Doktoratezi yazılıp yazılmadığını bilmiyorum. Ama seni şey yapıyor, bu şekilde bir fikir var.
+
+273
+01:03:14,980 --> 01:03:21,119
+Bu fikri bazı teoremlerin ispatında kullanabilirsiniz diyor.
+
+274
+01:03:22,919 --> 01:03:27,219
+Bir farkındalık oluşturuyor yani kafanızda.
+
+275
+01:03:31,188 --> 01:03:55,707
+farklı uygulamalarını bulabilirsiniz. İnternette Pigeon Hall Principle diye yarattırırsanız farklı uygulamaları oluyor. Bir fikir. Dediğim gibi çok öyle ağım şağım bir şey değil. Yani iki set birinin eleman sayısı diğerinden fazlaysa birebir ilişki kuramıyorsunuz.
+
+276
+01:03:55,707 --> 01:04:08,188
+Ama işte basit bir fikir ama güzel uygulamaları var. O yüzden burada o fikre sizi uyandırıyorlar. Bu ders kapsamında.
+
+277
+01:04:14,420 --> 01:04:16,420
+Başka soru var mı?
+
+278
+01:04:18,420 --> 01:04:19,420
+Peki.
+
+279
+01:04:19,420 --> 01:04:24,420
+Bir, on beş keçeye kadar bir ara verelim arkadaşlar.
+
+280
+01:16:30,323 --> 01:16:34,323
+Evet arkadaşlar, tekrar merhabalar. Sesim geliyor mu?
+
+281
+01:16:37,460 --> 01:16:38,299
+Evet hocam.
+
+282
+01:16:38,839 --> 01:16:39,539
+Geliyor, tamam.
+
+283
+01:16:52,180 --> 01:17:00,180
+So now let's start with regular expressions.
+
+284
+01:17:02,931 --> 01:17:04,931
+regular languages.
+
+285
+01:17:26,868 --> 01:17:43,868
+So we finished this basic math introduction. And now we are starting to our actual course content.
+
+286
+01:17:58,195 --> 01:18:08,515
+and we will first see regular languages. We will start with some definitions though.
+
+287
+01:18:17,300 --> 01:18:19,300
+regular languages.
+
+288
+01:18:29,811 --> 01:18:31,811
+Now, uh...
+
+289
+01:18:39,380 --> 01:18:43,380
+We'll need to write some definitions.
+
+290
+01:18:54,068 --> 01:18:55,068
+An alphabet is a finite, non-empty set of symbols. So this is finite, non-empty,
+
+291
+01:19:16,916 --> 01:19:17,916
+set of symbols. OK. And the number numbers of the. Alphabet is symbols.
+
+292
+01:19:35,667 --> 01:19:38,967
+So a symbol is a member,
+
+293
+01:19:43,923 --> 01:19:44,923
+and members of an alphabet. Okay. In this course, we will usually use Sigma or Gamma for alphabets. So for example, an alphabet Sigma one might be
+
+294
+01:20:13,923 --> 01:20:22,083
+this. And here, Sigma one is the name of the alphabet.
+
+295
+01:20:28,979 --> 01:20:29,979
+and zero and one are symbols. And this set itself is the alphabet, right?
+
+296
+01:20:47,412 --> 01:20:48,652
+and, uh,
+
+297
+01:20:52,020 --> 01:21:02,020
+You might have other alphabets. So another alphabet, for example, might be something like
+
+298
+01:21:02,020 --> 01:21:05,020
+Gamma
+
+299
+01:21:06,996 --> 01:21:11,996
+zero, one, X, Z, whatever.
+
+300
+01:21:13,675 --> 01:21:28,676
+So, now if you have these alphabets, you can describe or you can define strings.
+
+301
+01:21:32,884 --> 01:21:36,163
+So a string.
+
+302
+01:21:40,564 --> 01:21:48,463
+a string over an alphabet, just write this way,
+
+303
+01:22:00,564 --> 01:22:15,564
+So when we say a string, usually we are talking it in connection with an alphabet. A string over an alphabet is a finite sequence of symbols.
+
+304
+01:22:22,868 --> 01:22:27,868
+of symbols.
+
+305
+01:22:28,148 --> 01:22:30,148
+from that alphabet.
+
+306
+01:22:41,011 --> 01:22:42,011
+So a string, for example, over Sigma one might be 0010, for example, is a string over Sigma one. Or you might say,
+
+307
+01:23:11,011 --> 01:23:36,011
+zero, X, Z, zero, is a string over gamma. Okay. So basically, these are sequences that have symbols from those alphabets.
+
+308
+01:23:42,515 --> 01:23:49,515
+Now, we can talk about the length of a string.
+
+309
+01:23:55,220 --> 01:23:59,220
+length of string
+
+310
+01:24:01,220 --> 01:24:04,220
+is just the number of symbols.
+
+311
+01:24:08,532 --> 01:24:16,532
+So length of string W written as
+
+312
+01:24:19,828 --> 01:24:20,828
+This. So if you if you see this notation, this means length. Is. The number of symbols.
+
+313
+01:24:41,844 --> 01:24:42,844
+in W. So. The length of, let's say zero X, Z zero. Is for, for example. Now, we might have empty string, which means there is no symbol in the sequence.
+
+314
+01:25:23,155 --> 01:25:25,475
+It's the string of string of
+
+315
+01:25:33,108 --> 01:25:34,108
+link zero. And in this course, we will write is as this. For this, so epsilon or lambda, some in general epsilon, but sometimes lambda will mean and string.
+
+316
+01:26:27,604 --> 01:26:31,123
+So,
+
+317
+01:26:42,484 --> 01:26:52,484
+if string w has length n, so,
+
+318
+01:26:54,579 --> 01:26:56,579
+Then we can write...
+
+319
+01:27:03,283 --> 01:27:04,283
+We can write W as a sequence of these subsequent, these symbols. So W1, W2, up to Wn. Where n is in the.
+
+320
+01:27:33,747 --> 01:27:43,747
+Alphabet. Now, the reverse of string.
+
+321
+01:27:48,787 --> 01:28:01,787
+So if you have a string W, if you write R there, you mean it's reverse. Okay.
+
+322
+01:28:08,212 --> 01:28:37,212
+So for example, reverse of this W is, what is it? W is reverse. Last symbol will be first. So you will have WN up to W2. So we don't need to use those commas because this is a sequence. We are just writing it.
+
+323
+01:28:43,380 --> 01:28:48,380
+So it's just the reverse of the string.
+
+324
+01:28:48,380 --> 01:28:51,380
+Substring.
+
+325
+01:29:06,420 --> 01:29:07,420
+A string that is a sub string of W. If that appears consecutively within W. So. So let's say you have. W.
+
+326
+01:29:26,899 --> 01:29:29,899
+first let me write the definition.
+
+327
+01:29:33,899 --> 01:29:34,899
+A string
+
+328
+01:29:37,899 --> 01:29:41,899
+that is a subset,
+
+329
+01:29:42,899 --> 01:29:44,899
+substring, sorry, substring
+
+330
+01:29:48,899 --> 01:29:50,899
+of W
+
+331
+01:29:52,899 --> 01:29:53,899
+if
+
+332
+01:29:53,899 --> 01:29:57,019
+Z appears.
+
+333
+01:30:00,627 --> 01:30:02,248
+consecutively.
+
+334
+01:30:21,108 --> 01:30:31,108
+in W. For example, you might have W abracadabra.
+
+335
+01:30:33,684 --> 01:30:44,684
+and now here we can see, for example, CAD. That means,
+
+336
+01:30:49,684 --> 01:30:52,684
+Z equals to C A D
+
+337
+01:30:53,684 --> 01:30:55,684
+Is a substring
+
+338
+01:30:58,684 --> 01:31:01,684
+Of W
+
+339
+01:31:12,979 --> 01:31:40,979
+Now, we have some operations on these expressions, on these strings. So some string operations are, for example, concatenation operation.
+
+340
+01:31:42,452 --> 01:31:43,651
+and Turing machine.
+
+341
+01:31:53,395 --> 01:32:04,395
+So you are just writing these strings together. So if you have a
+
+342
+01:32:13,524 --> 01:32:25,524
+So if you have string W as Abra. And you have the strings that equals to Kadabra.
+
+343
+01:32:26,515 --> 01:32:37,515
+Then their concatenation can be written as WZ. And it's just Abra Kadabra.
+
+344
+01:32:40,595 --> 01:32:50,595
+So you just write the string next to each other in this course.
+
+345
+01:32:50,868 --> 01:32:52,868
+and
+
+346
+01:32:56,212 --> 01:33:00,212
+Here we have an example of concatenation.
+
+347
+01:33:06,387 --> 01:33:36,347
+Now, if you are going to concatenate a string with itself, there are some shortcuts. So, for example, x to the three means x concatenated with itself three times. xxx is x to the three. So also you have,
+
+348
+01:33:36,387 --> 01:33:39,387
+extra
+
+349
+01:33:49,268 --> 01:33:58,268
+Now, X star means any number of concatenations. So.
+
+350
+01:34:02,100 --> 01:34:07,100
+So this means all possible.
+
+351
+01:34:17,332 --> 01:34:22,332
+recurrences or concatenations.
+
+352
+01:34:25,203 --> 01:34:26,203
+of X.
+
+353
+01:34:29,971 --> 01:34:57,531
+So, x star would... So, it's a set and we will first need to consider x to the 0, right? So, x to the 0 is no x. So, it's possible to have x to the 0. And whatever it is, none of it means empty set, empty string, sorry.
+
+354
+01:34:57,531 --> 01:34:58,531
+Then X, then X, X, X, X, X, X, all of these are in this X star and notice that this epsilon is X to the zero.
+
+355
+01:35:27,531 --> 01:35:34,531
+x to the 1, x is x to the 1, x x is x to the 2, etc.
+
+356
+01:35:44,916 --> 01:36:00,916
+Now this star is also called clean star, clean star. So it is. It's called clean.
+
+357
+01:36:04,787 --> 01:36:15,787
+clean stuff. We will just say star. So X star will mean all possible recurrences of X.
+
+358
+01:36:25,779 --> 01:36:32,779
+We are continuing with these descriptions, definitions.
+
+359
+01:36:34,836 --> 01:36:48,836
+Now a language. So we decided we have defined these alphabets, strings. Now we will define a language.
+
+360
+01:37:03,188 --> 01:37:22,188
+A language is a set of strings over an alphabet. So it's just a set of strings over an alphabet.
+
+361
+01:37:29,747 --> 01:37:33,228
+and, you know,
+
+362
+01:37:36,467 --> 01:37:55,827
+So some some alphabets, some languages might be, let's say, let's say A is a language of, first again, it's over an alphabet. So we need to,
+
+363
+01:37:57,395 --> 01:38:04,115
+specify an alphabet first so let's say alphabet is
+
+364
+01:38:06,595 --> 01:38:11,395
+zero one x
+
+365
+01:38:15,731 --> 01:38:18,731
+A language L1 might be
+
+366
+01:38:19,931 --> 01:38:23,131
+A
+
+367
+01:38:24,307 --> 01:38:26,307
+this
+
+368
+01:38:29,043 --> 01:38:32,504
+Another language, L2 might be,
+
+369
+01:38:36,595 --> 01:38:37,595
+Let's say zero and zero X. Another language L3 might be something like W such that W is in
+
+370
+01:39:06,595 --> 01:39:36,575
+X to the two N where N is greater than or equal to zero, for example. Now, this L3, if we, what is it? Let's try to see what is it. L3 is then something like,
+
+371
+01:39:36,595 --> 01:39:56,595
+Let me write that in yellow. L3 is, n must be zero or greater. So if n is zero, x to the zero, I didn't write the alphabet here. So let me write the alphabet.
+
+372
+01:40:07,188 --> 01:40:30,188
+X is in alphabet sigma. Okay. So that means for, we are talking about for all possible symbols in this alphabet sigma. So,
+
+373
+01:40:30,195 --> 01:41:00,195
+If n is 0, we will have then that means empty string. If n is 1, then we have what? For x for 0, we have 0 to 2 times 1, which means 0 to which means 00. Notice that this is not numeric computation. We have in this course, this means concatenation. So we have
+
+374
+01:41:00,195 --> 01:41:07,276
+zero, zero, one, one, similar, x, x.
+
+375
+01:41:07,276 --> 01:41:13,076
+And if n is two now, we have zero to the two times two.
+
+376
+01:41:13,076 --> 01:41:17,036
+That means zero four, which is zero, zero, zero, zero.
+
+377
+01:41:17,036 --> 01:41:25,435
+So we have zero, zero, zero, zero, one, one, one, one, x, x, x.
+
+378
+01:41:25,435 --> 01:41:26,956
+So it goes like this.
+
+379
+01:41:26,955 --> 01:41:30,955
+Now,
+
+380
+01:41:34,963 --> 01:41:38,163
+notice that
+
+381
+01:41:46,195 --> 01:41:57,195
+Notice that this L1 and L2 are finite sets or finite languages.
+
+382
+01:42:03,444 --> 01:42:11,444
+whereas this L3 is an infinite language.
+
+383
+01:42:14,899 --> 01:42:28,899
+meaning it has infinite number of elements, not one, not two. It has infinite number of elements. So both are possible.
+
+384
+01:42:28,899 --> 01:42:39,899
+So when we say a language, we are just saying a set of strings. Okay. It's very important. It's just a set of strings. Very easy.
+
+385
+01:42:52,884 --> 01:42:55,523
+Now, uh,
+
+386
+01:42:58,579 --> 01:43:09,219
+Some of the languages are called regular. Some of these languages are called regular languages.
+
+387
+01:43:12,148 --> 01:43:14,148
+Let me make that a
+
+388
+01:43:28,435 --> 01:43:51,435
+A regular language is a subset of languages and usually there is no way to define a regular set. However, it is possible to say whether a set is regular or not. So,
+
+389
+01:43:53,716 --> 01:43:58,716
+A regular language is a subset of
+
+390
+01:43:58,716 --> 01:44:06,716
+And we will see what kind of subset is. So is
+
+391
+01:44:06,716 --> 01:44:12,716
+Let me write a regular language
+
+392
+01:44:15,796 --> 01:44:16,796
+is a subset of languages. And there is no definition for it. So there is no way to define it.
+
+393
+01:44:49,844 --> 01:45:19,823
+I will just write RL now. So instead of regular language, I will just say RL. So there is no way to define a regular language. But this is interesting. There is no way to define it. We cannot define it. But there are tests that help us. So if that say whether a language is regular or regular,
+
+394
+01:45:19,844 --> 01:45:43,844
+or not. So they can give us a language and we can say whether it is regular or not. Okay. But there is no definition of regular languages. So there is no way to define a regular language.
+
+395
+01:45:47,188 --> 01:45:48,188
+however.
+
+396
+01:45:55,283 --> 01:45:57,283
+We can
+
+397
+01:46:00,948 --> 01:46:02,948
+Test!
+
+398
+01:46:09,043 --> 01:46:19,283
+if a language is regular,
+
+399
+01:46:21,844 --> 01:46:36,163
+or not. So how can we say, how can we test it? We will use it using a finite automata.
+
+400
+01:46:38,771 --> 01:46:53,771
+So there might be different ways, but in general, we may use finite automata.
+
+401
+01:46:57,235 --> 01:47:02,235
+for testing.
+
+402
+01:47:02,235 --> 01:47:06,235
+Now we didn't learn finite automata yet, but we will learn them.
+
+403
+01:47:06,235 --> 01:47:11,235
+So just wait a minute.
+
+404
+01:47:11,235 --> 01:47:24,235
+Now using regular languages, you can build up other regular languages too.
+
+405
+01:48:07,604 --> 01:48:13,604
+So, we can build
+
+406
+01:48:15,604 --> 01:48:17,604
+languages.
+
+407
+01:48:20,243 --> 01:48:25,243
+using set operations.
+
+408
+01:48:27,412 --> 01:48:33,412
+And remember, languages are just sets.
+
+409
+01:48:33,412 --> 01:48:44,412
+Those set operations, you already know what union is.
+
+410
+01:48:44,412 --> 01:48:56,412
+So let's say we have set A as AA and BB and
+
+411
+01:49:00,819 --> 01:49:01,819
+Let's say you have B, which is 0, 1, 0, 1, 1, let's say. These are languages and the union,
+
+412
+01:49:20,819 --> 01:49:46,819
+is shown as a union B. You already know that. So this is just the usual set operation. So just set of X such that X is in A or X is in B.
+
+413
+01:49:46,819 --> 01:49:56,020
+So in this case we have a, a, b, b, 0, 1, 1.
+
+414
+01:49:56,020 --> 01:50:03,540
+And you have your, so the union, intersection difference, those you can use them.
+
+415
+01:50:03,540 --> 01:50:10,019
+The set operations we already know, you can just use all of those guys.
+
+416
+01:50:10,020 --> 01:50:17,020
+one intersection, one interesting is concatenation. So we can use...
+
+417
+01:50:21,844 --> 01:50:46,844
+concatenation. This can be written just right as AB, or sometimes also written as AB. So you have this small circle here, meaning we concatenated these two. And, uh,
+
+418
+01:50:48,692 --> 01:51:15,692
+A concatenation B is set of X such that, set of X, Y such that, set of X, Y such that X is in A and Y is in B.
+
+419
+01:51:15,692 --> 01:51:34,192
+So in this case, for example, we might have AA0, AA11, AA1B, I should write these now.
+
+420
+01:51:39,347 --> 01:51:40,347
+So we have B, B, 0 and then B, B, 1, 1. Okay. As an example. So that's concatenation. Now star, again the clean star. So this might be new for you. If we apply this to a set, it means
+
+421
+01:52:09,347 --> 01:52:11,188
+the set of X such that,
+
+422
+01:52:23,828 --> 01:52:24,828
+sorry, this side this way. It's set of these strings x1, x2, up to xk such that k is greater than 0 and each of these xi is in a.
+
+423
+01:52:56,180 --> 01:52:59,459
+So for example,
+
+424
+01:53:01,492 --> 01:53:05,492
+here, what are we talking about for the A we wrote up there?
+
+425
+01:53:09,492 --> 01:53:24,492
+So this A had AABB. So we should have AABB for K equals to 1.
+
+426
+01:53:24,492 --> 01:53:34,492
+Now for K equals to 2, we will have AABB and
+
+427
+01:53:39,667 --> 01:53:46,128
+and
+
+428
+01:53:47,667 --> 01:53:51,107
+Do we have a...
+
+429
+01:54:00,692 --> 01:54:04,971
+Do we have things like AAA?
+
+430
+01:54:09,908 --> 01:54:11,467
+I think we have them.
+
+431
+01:54:17,203 --> 01:54:20,203
+based on this definition.
+
+432
+01:54:25,203 --> 01:54:49,203
+So we might have A, A, A, A, A, A, A, B, B, etc. So again, this is an infinite set. You need to write all possible combinations, let's say, of them.
+
+433
+01:54:51,444 --> 01:55:20,843
+Bush, Q, me, all must get a key on the service or gelmiş. I don't think we need the empty set is there because look at this definition. K is larger than zero. So there must be at least one, at least one value from A. And if you look at the definition of A here for this example,
+
+434
+01:55:21,444 --> 01:55:35,444
+uh empty set is not an element of a right it's not here so uh right
+
+435
+01:55:40,435 --> 01:55:42,435
+Okay. Thanks.
+
+436
+01:55:46,387 --> 01:55:48,387
+Okay, so, um,
+
+437
+01:55:52,051 --> 01:56:13,051
+Now, the, there is one thing, one, one thing as I will give you here, I will tell you, this, there's this closeness thing.
+
+438
+01:56:13,300 --> 01:56:22,300
+Now we say that a set is closed under some operation.
+
+439
+01:56:24,243 --> 01:56:26,444
+set is,
+
+440
+01:56:29,811 --> 01:56:36,811
+closed under some operation.
+
+441
+01:56:36,811 --> 01:56:41,811
+If
+
+442
+01:56:45,684 --> 01:56:46,863
+and Turing machine.
+
+443
+01:56:52,307 --> 01:56:57,188
+Let, let us write this way, let me write this way.
+
+444
+01:57:06,100 --> 01:57:11,100
+A regular set,
+
+445
+01:57:11,100 --> 01:57:15,100
+A regular language,
+
+446
+01:57:15,100 --> 01:57:20,100
+A regular language is closed
+
+447
+01:57:20,100 --> 01:57:26,100
+under some set,
+
+448
+01:57:26,100 --> 01:57:31,100
+some operation, sorry.
+
+449
+01:57:33,460 --> 01:57:34,460
+if the result is also regular. So you do some operations to these languages and these regular languages and the resulting language itself is still regular.
+
+450
+01:58:03,460 --> 01:58:18,460
+that regular languages are closed under these operations.
+
+451
+01:58:18,460 --> 01:58:21,460
+So let me rewrite this a little bit.
+
+452
+01:58:21,460 --> 01:58:23,460
+Instead of A, I should write.
+
+453
+01:58:28,884 --> 01:58:36,884
+this way. The close of...
+
+454
+01:58:38,131 --> 01:58:39,131
+The class of regular languages are closed under some operation. If the result is also regular. Let's see. For example, this is a language. A, A, B, B, and it's regular. And they say this is another one.
+
+455
+01:59:08,131 --> 01:59:10,052
+and let's see.
+
+456
+01:59:17,395 --> 01:59:19,395
+and both of these are regular.
+
+457
+01:59:28,212 --> 01:59:54,212
+We will see why these are regular later, but let me tell you first, all finite sets are regular. All finite languages are regular. So since these are finite, they're regular.
+
+458
+01:59:54,212 --> 02:00:03,491
+there are some languages that are infinite but still regular we will come to those
+
+459
+02:00:06,932 --> 02:00:09,011
+now we say that
+
+460
+02:00:13,011 --> 02:00:17,011
+the class of regular languages is closed under
+
+461
+02:00:31,315 --> 02:00:40,755
+is closed under union.
+
+462
+02:00:41,939 --> 02:00:55,939
+So, if you have a union B, the language you get is still regular. So,
+
+463
+02:00:58,068 --> 02:01:08,068
+if A and B are regular,
+
+464
+02:01:10,260 --> 02:01:17,260
+then A union B is regular.
+
+465
+02:01:36,083 --> 02:01:40,083
+So as an example here,
+
+466
+02:01:45,235 --> 02:01:56,455
+A union B, which is A, A, B, B, D, D, A, B.
+
+467
+02:01:58,612 --> 02:02:01,131
+is
+
+468
+02:02:05,268 --> 02:02:06,368
+Now,
+
+469
+02:02:16,851 --> 02:02:44,851
+not only union, but there is a list of operations that the regular language is languages are class of regular languages is closed. So let me write this way. Class of regular languages.
+
+470
+02:02:46,851 --> 02:02:48,851
+is
+
+471
+02:02:53,652 --> 02:02:54,652
+closed, under. Now I will list all of them under union, intersection,
+
+472
+02:03:09,844 --> 02:03:13,844
+complement.
+
+473
+02:03:16,340 --> 02:03:19,340
+concatenation.
+
+474
+02:03:23,699 --> 02:03:30,699
+and clean.
+
+475
+02:03:33,268 --> 02:03:51,427
+clean star. These are set operations and under these set operations, the regular languages are closed.
+
+476
+02:03:53,555 --> 02:04:08,555
+We will see some examples and applications of these things later. So let's give it a give a break, 10 minutes break and when we come we will continue.
+
+477
+02:04:15,667 --> 02:04:16,707
+Any questions?
+
+478
+02:15:23,604 --> 02:15:28,203
+Tekrar merhabalar, sesim geliyor mu arkadaşlar?
+
+479
+02:15:42,931 --> 02:15:44,931
+Yeah, yeah, thank you.
+
+480
+02:15:46,931 --> 02:15:47,931
+So,
+
+481
+02:15:49,931 --> 02:15:59,931
+we have seen these definitions and let's look at some examples and some new definitions. So, this part will be
+
+482
+02:16:01,931 --> 02:16:06,931
+a mix of things. So, I would say miscellaneous
+
+483
+02:16:07,931 --> 02:16:09,931
+uh
+
+484
+02:16:17,171 --> 02:16:19,451
+miscellaneous examples.
+
+485
+02:16:28,275 --> 02:16:30,275
+definitions again.
+
+486
+02:16:34,835 --> 02:16:42,835
+So, let's look at this alphabet.
+
+487
+02:16:46,324 --> 02:16:51,324
+A, B, so it has these symbols A and B.
+
+488
+02:16:59,956 --> 02:17:29,935
+And so some of the strings might be things like A, AA, AB, AA, BBB, etc. So we can say U is a string that is AB, V is a string that is BB, A, AA, W is another string ABBA.
+
+489
+02:17:29,956 --> 02:17:35,956
+So we can define these things there.
+
+490
+02:17:35,956 --> 02:17:41,956
+Similarly, we can write
+
+491
+02:17:45,236 --> 02:17:58,675
+or well-known sets in these, in terms of these strings and alphabets. For example,
+
+492
+02:18:02,195 --> 02:18:06,435
+So this was an example actually.
+
+493
+02:18:10,195 --> 02:18:14,935
+For example, we can write decimal numbers.
+
+494
+02:18:17,811 --> 02:18:37,811
+as, so we have this alphabet, 0, 1, 2, 3, up to 9. And now, these strings will be our decimal numbers now.
+
+495
+02:18:41,108 --> 02:18:42,947
+So 0 1.
+
+496
+02:18:54,100 --> 02:18:56,100
+whatever. So,
+
+497
+02:18:59,219 --> 02:19:04,419
+so, even though decimals, decimal numbers are numbers,
+
+498
+02:19:07,940 --> 02:19:23,139
+we can think of them being strings and then we can rethink the operations on these numbers based on these strings.
+
+499
+02:19:30,675 --> 02:19:35,675
+As an example, we might have binary numbers.
+
+500
+02:19:38,772 --> 02:19:42,772
+Again, this time alphabet will be zeros and ones.
+
+501
+02:19:46,195 --> 02:19:55,195
+and now your strings will be binary numbers. Like one zero zero one zero etc.
+
+502
+02:19:59,540 --> 02:20:27,540
+Now, you might come across, probably, most probably, you have already come across to this, but there is an interesting version of this, these numbers. It's called unary numbers.
+
+503
+02:20:25,043 --> 02:20:38,043
+and you know in unary numbers or alphabet consists of just one. Okay. And now the strings we have.
+
+504
+02:20:39,347 --> 02:20:50,347
+might be 1111111111 and the length of the string is the value.
+
+505
+02:20:50,347 --> 02:20:52,347
+So.
+
+506
+02:20:52,347 --> 02:20:54,347
+Here.
+
+507
+02:20:54,347 --> 02:20:56,347
+This is one.
+
+508
+02:20:56,347 --> 02:20:59,347
+This is two.
+
+509
+02:20:59,347 --> 02:21:02,347
+In decimal notation, this is three.
+
+510
+02:21:02,347 --> 02:21:04,347
+This is four.
+
+511
+02:21:04,347 --> 02:21:17,228
+and these unity numbers are very easy to work as strings so we will come across to
+
+512
+02:21:21,587 --> 02:21:23,587
+examples of those.
+
+513
+02:21:31,827 --> 02:21:35,027
+for example,
+
+514
+02:21:42,291 --> 02:21:54,291
+Sorry for that. For example, you can say, you can think about generic addition.
+
+515
+02:22:03,092 --> 02:22:04,092
+In unit edition, your alphabet might be, let me write this as another x. Alphabet might be. These ones, and since this is edition, we have plus. And then you have an equal. Now, this way.
+
+516
+02:22:33,092 --> 02:22:36,172
+you have a set of additions.
+
+517
+02:22:36,172 --> 02:22:37,652
+You might
+
+518
+02:22:41,683 --> 02:22:50,683
+You can define the language of additions. So.
+
+519
+02:22:56,852 --> 02:22:57,852
+So addition is the set of these strings such that you have X, then a plus, then Y and equal and Z such that. So here plus is this plus and equals is this equal and X, Y, Z are
+
+520
+02:23:29,556 --> 02:23:43,155
+these unary numbers and how are we going to write it? X is in one to the M.
+
+521
+02:23:44,948 --> 02:23:45,948
+y is in one to the n, and z is in one to the n plus n. So the number of elements on m is n plus m. So we are saying,
+
+522
+02:24:14,948 --> 02:24:19,387
+that here the addition.
+
+523
+02:24:29,811 --> 02:24:46,811
+have elements like, let's say it has 1, 1, 1 plus 1, 1 equals to 1, 1, 1, 1, 1.
+
+524
+02:24:46,811 --> 02:24:57,811
+And it may have something like 1 plus 1, 1 equals to 1, 1, 1, et cetera. So it is an infinite set.
+
+525
+02:24:57,811 --> 02:25:27,791
+So it has all these addition operations. So the addition operation becomes a set itself. All the addition becomes. And this set includes all possible additions of all numbers. Obviously, it's a huge set. It's large, but it's a set.
+
+526
+02:25:27,811 --> 02:25:32,811
+set, and it's a language. So addition is a language in this case.
+
+527
+02:25:46,708 --> 02:25:53,708
+Similarly, you can think of squaring language, for example.
+
+528
+02:26:00,468 --> 02:26:03,468
+squaring, let's see.
+
+529
+02:26:05,780 --> 02:26:32,780
+And similarly, now you can define a, an alphabet. And, now, since this will be just, for example, you can say this is my alphabet and this sharp will show the power, right? So,
+
+530
+02:26:41,236 --> 02:26:45,995
+So you have your square language.
+
+531
+02:26:49,811 --> 02:26:58,811
+will have things like, let's write squares.
+
+532
+02:27:03,252 --> 02:27:04,252
+So it will have things like strings like X sharp Y such that X is in some one to the M. So we should also have a
+
+533
+02:27:35,891 --> 02:28:02,891
+So x is in 1 to the m, let's say. And y is in, since we are talking about squaring, number of ones must be twice, right? So y's must be in 1 to the n, where n is 2m, right?
+
+534
+02:28:02,891 --> 02:28:16,772
+So the squares have values like one sharp one one.
+
+535
+02:28:21,236 --> 02:28:22,236
+one, one, sharp, one, one, one, one, et cetera. It's an infinite set again. So for each value, it gives you its square. Okay. Again, this is a language.
+
+536
+02:28:48,819 --> 02:28:49,819
+and so this kind of
+
+537
+02:29:00,468 --> 02:29:29,468
+This kind of approach helps us any kind of operation helps us in defining any kind of operation in terms of sets. These because languages are sets and then you can use set operations on these things and later we will see how this becomes helpful.
+
+538
+02:29:33,652 --> 02:29:35,892
+Um...
+
+539
+02:29:47,987 --> 02:30:00,667
+ne demiş? Hocam n eşittir 2m olunca iki katını almış olduk. Karesini almayacak mıydık? Mesela 3'ü 9'a çevirme gibi bu ayrı bir kare mi?
+
+540
+02:30:02,515 --> 02:30:16,315
+Yo, burada yuneri olduğu için, taban yuneri. Dolayısıyla bu, şu hatalı oldu değil mi?
+
+541
+02:30:23,092 --> 02:30:26,832
+Nasıl tanımlamışız? Bir daha kontrol edeyim onun tanımına.
+
+542
+02:30:30,391 --> 02:30:32,671
+Çünkü birin karesi birdir değil mi?
+
+543
+02:30:46,036 --> 02:30:56,275
+Tabi buradaki squares, bizim sayısaldaki
+
+544
+02:31:02,772 --> 02:31:04,411
+Aslında şurada sıkıntı yok.
+
+545
+02:31:07,411 --> 02:31:11,011
+Yani bu iki, bu dört, değil mi?
+
+546
+02:31:16,051 --> 02:31:20,692
+Hocam üçte de sıkıntı olur. Yani böyle düşünürsek. Sadece ikide sıkıntı yok sanki.
+
+547
+02:31:20,692 --> 02:31:22,372
+Hımm, evet.
+
+548
+02:31:29,075 --> 02:31:34,075
+Bir dakika, burada bak şeyi yanlış yazdım. 2M değil de M kare yazacaktık.
+
+549
+02:31:36,556 --> 02:31:37,275
+Haklısın.
+
+550
+02:31:38,895 --> 02:31:41,916
+Şu tekrar de şey yapalım.
+
+551
+02:31:43,775 --> 02:31:45,455
+M kare olacak orası, haklısın.
+
+552
+02:31:46,676 --> 02:31:51,916
+Karelerin değil de uzunluğunu iki katı, iki ile çarpma yapıyoruz aslında biz değil mi?
+
+553
+02:31:52,496 --> 02:31:54,635
+Şu aşağıya yazdığım iki ile çarpma oldu.
+
+554
+02:31:54,635 --> 02:32:02,416
+Burada şey diyeceğiz, n eşittir m'in karesi diyeceğiz.
+
+555
+02:32:02,416 --> 02:32:08,296
+O zaman ne olacak?
+
+556
+02:32:13,299 --> 02:32:15,299
+Şu birincisi de şöyle olacak
+
+557
+02:32:20,819 --> 02:32:43,459
+Sonra 1, 1, şarp. Şimdi oldu değil mi? 2'nin karesi 4 tane koyacağız şimdi. Şimdi oldu. Evet. 3 olduğu zaman 9 tane koyacağız artık. 1, 2, 3, 4, 5, 6, 7, 8, 9. Evet. Teşekkürler.
+
+558
+02:33:00,915 --> 02:33:07,915
+So, let's do some other examples.
+
+559
+02:33:14,195 --> 02:33:17,495
+So for example,
+
+560
+02:33:20,371 --> 02:33:21,371
+We have seen concatenation, reverse. These are simple. Let's look at the lengths. So for example, W is, sorry, W is, let's say,
+
+561
+02:33:53,012 --> 02:34:11,012
+A, A, B, then the length of W is 3. And what is this? What do you think? The length of empty string, what is it?
+
+562
+02:34:13,556 --> 02:34:23,556
+The length of empty string is zero. Right? So this is zero. Um.
+
+563
+02:34:30,899 --> 02:34:57,539
+We have seen substrings, but there is special cases of these. Let's talk about them. Prefix and suffix.
+
+564
+02:34:54,388 --> 02:34:58,447
+suffix, substrings,
+
+565
+02:35:08,884 --> 02:35:16,283
+prefix and suffix substrings.
+
+566
+02:35:24,659 --> 02:35:27,659
+So we know that a substring is...
+
+567
+02:35:54,675 --> 02:36:16,436
+Let's say all W has W is a string abracadabra. Let's see. Now we have already seen CAD is a substring.
+
+568
+02:36:17,108 --> 02:36:43,108
+Now, ra here is a suffix, substring. Meaning abracadabra ends with ra. Or ab here is a prefix, substring.
+
+569
+02:36:46,708 --> 02:36:47,708
+Now,
+
+570
+02:36:54,227 --> 02:36:58,227
+Things to notice here is epsilon is
+
+571
+02:37:02,227 --> 02:37:04,227
+prefix
+
+572
+02:37:05,227 --> 02:37:06,227
+and
+
+573
+02:37:07,227 --> 02:37:08,227
+suffix
+
+574
+02:37:09,227 --> 02:37:11,227
+substring
+
+575
+02:37:12,227 --> 02:37:13,227
+and suffix
+
+576
+02:37:15,123 --> 02:37:17,623
+to all strings.
+
+577
+02:37:19,423 --> 02:37:22,423
+Okay, so, um,
+
+578
+02:37:25,716 --> 02:37:26,716
+So because if you have W Abba, then epsilon W is still Abba. So that means, or you can also say W is, that's better actually.
+
+579
+02:37:58,899 --> 02:38:02,899
+W is epsilon ABBA.
+
+580
+02:38:08,531 --> 02:38:30,531
+Absolutely. So you can prefix and suffix epsilon to the end of or to the beginning of any sub any string and it will not change. So epsilon is a prefix and suffix to all strings.
+
+581
+02:38:31,156 --> 02:38:35,156
+and ABBA itself is a...
+
+582
+02:38:39,028 --> 02:38:42,028
+sub-string and
+
+583
+02:38:46,028 --> 02:38:47,028
+so
+
+584
+02:38:47,028 --> 02:38:52,028
+Abba itself is a prefix and suffix of itself.
+
+585
+02:38:52,028 --> 02:38:54,028
+So
+
+586
+02:38:55,028 --> 02:38:59,028
+if W is Abba
+
+587
+02:39:02,028 --> 02:39:04,028
+Abba
+
+588
+02:39:04,028 --> 02:39:08,028
+is a suffix
+
+589
+02:39:09,028 --> 02:39:27,807
+of w, and abbo also is a prefix of w. So, it itself is a prefix of itself.
+
+590
+02:39:44,819 --> 02:40:02,819
+We have already seen the star operation. There is a similar one, but it's a plus operation. So let's look at that.
+
+591
+02:40:13,108 --> 02:40:17,108
+So we have we already know that.
+
+592
+02:40:17,108 --> 02:40:21,108
+If we have an alphabet, for example.
+
+593
+02:40:21,108 --> 02:40:24,108
+A B.
+
+594
+02:40:24,108 --> 02:40:32,108
+Sigma this is Sigma Sigma star is.
+
+595
+02:40:32,108 --> 02:40:46,108
+Epsilon a, b, a, b, b, a, b, b, b, a, a, a goes on like that.
+
+596
+02:40:46,108 --> 02:40:58,108
+Now, sigma plus is very similar to sigma star,
+
+597
+02:40:58,108 --> 02:41:01,027
+But the difference is.
+
+598
+02:41:01,027 --> 02:41:04,508
+It does not have the epsilon.
+
+599
+02:41:04,508 --> 02:41:08,988
+Okay. So there is no empty string there.
+
+600
+02:41:08,988 --> 02:41:16,067
+Okay. So that's the plus or
+
+601
+02:41:16,067 --> 02:41:19,987
+cleaner plus if you want plus operation.
+
+602
+02:41:22,739 --> 02:41:32,739
+So that means we have, we are omitting epsilon now. We have A, B, AA, etc.
+
+603
+02:41:36,691 --> 02:42:02,131
+There is no epsilon here. Also, I am using epsilon, but a lot of the times this is also called null. So actually, maybe I should have used the word null here. We write as we write using null or lambda symbols, but the name should be null.
+
+604
+02:42:02,131 --> 02:42:20,131
+also here this this here is a set difference so this is a set but this is not a set right so there's a mistake here so we should write this in a set
+
+605
+02:42:30,708 --> 02:42:38,708
+sigma star difference, null, set of null.
+
+606
+02:42:54,804 --> 02:42:58,804
+Some other miscellaneous is
+
+607
+02:43:19,667 --> 02:43:37,667
+So model miscellaneous is a, for example, a language or an alphabet is a subset of sigma star. So,
+
+608
+02:43:38,611 --> 02:43:40,611
+a language
+
+609
+02:43:42,611 --> 02:43:43,611
+over
+
+610
+02:43:46,611 --> 02:43:48,611
+and alphabet sigma
+
+611
+02:43:49,611 --> 02:43:51,611
+is a subset
+
+612
+02:43:52,611 --> 02:43:53,611
+of
+
+613
+02:43:54,611 --> 02:43:55,611
+sigma star.
+
+614
+02:43:57,611 --> 02:44:01,611
+As some examples, you can say, let's say
+
+615
+02:44:02,611 --> 02:44:04,611
+sigma is a B.
+
+616
+02:44:04,611 --> 02:44:34,591
+B.
+
+617
+02:44:12,724 --> 02:44:13,724
+Then we have, let's say, let's say L1 is this, A, A, A, B. But notice that L1 is a subset of Sigma star because Sigma star includes all possible strings.
+
+618
+02:44:42,724 --> 02:44:52,963
+So it has epsilon, A, AA, B, and other things as well.
+
+619
+02:44:52,963 --> 02:44:58,843
+But these, these were L1, right?
+
+620
+02:44:58,843 --> 02:45:08,843
+So any language or that alphabet is, or the alphabet sigma is a subset of sigma star.
+
+621
+02:45:32,084 --> 02:45:41,123
+because of that we will use this in some definitions. So you can say things like
+
+622
+02:45:44,468 --> 02:45:46,468
+for example, prime numbers.
+
+623
+02:45:54,899 --> 02:45:55,899
+So this is an example. So you can say prime numbers is this axis set of axis such that X is in Sigma star and let's say Sigma B. Let's first then write it here. Example. Let's write Sigma is
+
+624
+02:46:24,899 --> 02:46:35,899
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+625
+02:46:35,899 --> 02:46:37,899
+So the usual.
+
+626
+02:46:37,899 --> 02:46:40,899
+Now we can say.
+
+627
+02:46:44,628 --> 02:47:14,607
+So we are continuing that example. Now we are saying that X is in this Sigma star. So X is any number. It's a number basically. So just by saying that we are saying that X is a number and now we can use additional conditions. We can say X is prime.
+
+628
+02:47:16,755 --> 02:47:34,755
+So we can use this property, a language over sigma is a subset of epsilon star as for, we can use that in the definitions of these sets, etc. So it's helpful.
+
+629
+02:47:44,788 --> 02:47:49,788
+Some interesting things to note again.
+
+630
+02:48:03,507 --> 02:48:11,507
+We can use any set operation.
+
+631
+02:48:15,316 --> 02:48:23,316
+on languages. Because languages are sets.
+
+632
+02:48:30,036 --> 02:48:31,036
+so you can use complements, unions, whatever, whatever kind of set operation you have, you can use them.
+
+633
+02:49:03,507 --> 02:49:09,747
+An interesting example here is this, for example,
+
+634
+02:49:12,659 --> 02:49:15,179
+let's say A is...
+
+635
+02:49:18,260 --> 02:49:20,260
+A is
+
+636
+02:49:20,260 --> 02:49:26,260
+A, B and AAA
+
+637
+02:49:29,587 --> 02:49:30,587
+You can define its complement and the complement will be. So obviously again you will need to define a language, an alphabet. Sigma star this will be so the Sigma star.
+
+638
+02:49:59,587 --> 02:50:11,587
+set in this case, you can now take the difference of universe from A and that means you will have
+
+639
+02:50:15,987 --> 02:50:41,547
+I didn't see this notation before, but it seems like, let me not write that. It's weird. So you'll have null and then AA, BB, whatever. But you cannot have AB and AAA there. Okay.
+
+640
+02:50:46,772 --> 02:50:53,772
+And finally some interesting situations. Let me write them again.
+
+641
+02:51:00,500 --> 02:51:09,220
+So, this is empty set.
+
+642
+02:51:14,995 --> 02:51:21,995
+and this is null. Okay. So these are different things.
+
+643
+02:51:31,412 --> 02:51:38,412
+And these two are not the same thing. Okay. So be careful about that.
+
+644
+02:51:44,244 --> 02:51:53,763
+They are different. For example,
+
+645
+02:52:09,139 --> 02:52:19,139
+The set of empty set, for example, is not an empty set, right? Because it has one element, empty string.
+
+646
+02:52:23,316 --> 02:52:28,316
+and number of elements it has is...
+
+647
+02:52:32,500 --> 02:52:34,500
+is one.
+
+648
+02:52:34,500 --> 02:52:35,500
+Okay.
+
+649
+02:52:37,500 --> 02:52:40,500
+So be careful about these things.
+
+650
+02:52:40,500 --> 02:52:43,500
+Eşit değildir yazacaktınız hocam yukarıda.
+
+651
+02:52:46,500 --> 02:52:48,500
+Haklısın. Eşit değildir.
+
+652
+02:52:51,500 --> 02:52:54,500
+Okay, so this is the end of this lecture.
+
+653
+02:52:57,500 --> 02:53:00,500
+Next lecture we will start finite automata.
+
+654
+02:53:00,500 --> 02:53:02,500
+Any further students know?
+
+655
+02:53:11,763 --> 02:53:23,763
+Evet herhangi bir sorunuz yok galiba. Bitirmeden dediğim gibi quiz yapacağız ona göre ama sürpriz quiz yapmayacağız yani quizin zamanını söyleyeceğiz.
+
+656
+02:53:23,763 --> 02:53:29,763
+3 tane quiz olacak.
+
+657
+02:53:30,451 --> 02:53:50,451
+Bir hafta önceden quiz'in zamanını söylemiş olacağız. Ona göre hazırlıklı olun. Hani bir anda bir hafta bile söylense vaktiniz olmayabilir. Bunlar kitabın hangi bölümünde diye sormuş birisi.
+
+658
+02:53:50,451 --> 02:54:00,451
+This should be in some chapters of the book, but I mean, it should be at the beginning chapter.
+
+659
+02:54:00,451 --> 02:54:07,451
+It should be at the beginning chapter.
+
+660
+02:54:07,451 --> 02:54:10,451
+First chapter.
+
+661
+02:54:10,451 --> 02:54:16,451
+There might be some things that are not written explicitly in the book.
+
+662
+02:54:16,451 --> 02:54:27,891
+book. Most of them must be in the book. And other questions?
+
+663
+02:54:33,332 --> 02:54:35,332
+No, okay. Then I am closing.
+
+664
+02:54:38,091 --> 02:54:39,091
+Görüşürüz arkadaşlar.

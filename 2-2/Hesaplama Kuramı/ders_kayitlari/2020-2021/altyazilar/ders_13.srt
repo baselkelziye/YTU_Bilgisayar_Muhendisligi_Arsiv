@@ -1,0 +1,2231 @@
+1
+00:04:09,044 --> 00:04:11,203
+Arkadaşlar merhabalar.
+
+2
+00:04:15,252 --> 00:04:16,931
+sesim geliyor herhalde.
+
+3
+00:04:16,931 --> 00:04:18,611
+Merhaba hocam geliyor.
+
+4
+00:04:31,956 --> 00:04:34,196
+Ekran paylaşırını...
+
+5
+00:05:00,244 --> 00:05:11,044
+OK, so this last week we were discussing Turing machines.
+
+6
+00:05:11,044 --> 00:05:23,523
+And we were seeing examples of Turing machines that compute some functions.
+
+7
+00:05:23,523 --> 00:05:27,603
+As an example,
+
+8
+00:05:36,115 --> 00:05:37,115
+We saw Turing machines that computes fx equals to x plus y. And then we saw a Turing machine that computes fx equals to 2x. And for this function,
+
+9
+00:06:06,115 --> 00:06:23,115
+We saw the whole Turing machine and you were supposed to take a look at this yourself. And also for this Turing machine, we gave a pseudo code.
+
+10
+00:06:23,115 --> 00:06:45,556
+Now, going forward, we will start to only give pseudo codes because the Turing machines will be more and more complicated. And instead of writing these state machines, we will start to give just these pseudo codes.
+
+11
+00:06:55,603 --> 00:07:15,603
+And one thing about functions is you can combine them together. So you when calculating a function, you can use another function. So we will get to that. But before that, let's look at another example.
+
+12
+00:07:27,764 --> 00:07:29,343
+This example,
+
+13
+00:07:33,043 --> 00:07:34,043
+says that function f of x, y equals to 1 if x greater than y, 0 if x less than or equal to y. So this is a piecewise function.
+
+14
+00:08:03,043 --> 00:08:24,183
+and you have your ifs here, right? We have our ifs here. And so this example says that this function f of x, y,
+
+15
+00:08:30,899 --> 00:08:34,339
+Fxy is computable.
+
+16
+00:08:41,716 --> 00:09:09,716
+Now, again, remember that the numbers, the integers, we are working with integers here and integers, we show integers with unary representation. So, we are using unary representation.
+
+17
+00:09:15,860 --> 00:09:22,379
+So for example, one, one, one will mean three.
+
+18
+00:09:39,124 --> 00:09:48,124
+So, and remember that everything is a string so in the truing machines we have this large tape.
+
+19
+00:09:48,124 --> 00:09:55,124
+So, first of all, we need to discuss how input will be.
+
+20
+00:09:57,124 --> 00:10:04,124
+Input string will be and how output string strings will be.
+
+21
+00:10:04,124 --> 00:10:16,844
+and if x's and y's are all ones so we we can separate with them with zeros again so input will be x
+
+22
+00:10:16,844 --> 00:10:31,763
+zero and y and x and y are ones and output will be zero or one as a string
+
+23
+00:10:36,500 --> 00:10:45,500
+Now for this Turing machine, we will just give the pseudo code.
+
+24
+00:10:59,539 --> 00:11:12,539
+and how can this be calculated? So what we will have is in the input tape,
+
+25
+00:11:15,956 --> 00:11:17,576
+actually just tape.
+
+26
+00:11:21,299 --> 00:11:24,579
+We have someone's
+
+27
+00:11:27,572 --> 00:11:34,572
+and a zero separating the X and Y and some other ones.
+
+28
+00:11:41,779 --> 00:12:03,540
+Well, what we can do is, we will need to match each one on the X side. So this is X side and this is Y side. We will match the first one with the one on the Y side.
+
+29
+00:12:03,540 --> 00:12:16,540
+then match the second one in the X side with the one on Y side until all of X or Y is matched, right?
+
+30
+00:12:17,540 --> 00:12:21,800
+So this means we will do that in a loop.
+
+31
+00:12:23,800 --> 00:12:28,979
+So let's write this, repeat.
+
+32
+00:12:36,755 --> 00:12:37,955
+match
+
+33
+00:12:40,555 --> 00:12:41,355
+one
+
+34
+00:12:43,155 --> 00:12:45,155
+from X
+
+35
+00:12:47,755 --> 00:12:48,355
+with
+
+36
+00:12:52,155 --> 00:12:52,875
+one
+
+37
+00:12:59,956 --> 00:13:11,715
+and y. So this is in a loop. When do we get out of the loop? Well, until...
+
+38
+00:13:18,388 --> 00:13:25,587
+all of X or Y are matched.
+
+39
+00:13:28,507 --> 00:13:39,787
+So first of all, we try to match all of the ones and we want to finish or consume all of the X's or all of the Y's.
+
+40
+00:13:39,787 --> 00:13:43,667
+And in practice, we have done this kind of thing.
+
+41
+00:13:43,667 --> 00:13:53,627
+if you remember, for example, when we were summing, doing the summation, in the summation function,
+
+42
+00:13:55,007 --> 00:14:05,847
+we did that, right? We matched ones on both sides, right?
+
+43
+00:14:11,443 --> 00:14:20,623
+I think we did that. Was this one? We did some matching. Mm-hmm.
+
+44
+00:14:26,803 --> 00:14:28,003
+to do that.
+
+45
+00:14:42,964 --> 00:15:03,323
+I think it was this one because this one was matching A's and B's, right? So it's exactly the same thing. Number of A's and number of B's must be same. So we are able to match number of things using Turing machines. There's an example here.
+
+46
+00:15:03,323 --> 00:15:31,303
+So we can do the same kind of Turing machine there. And we can match once of both sides. Now, then after going out of, after exiting this loop,
+
+47
+00:15:33,324 --> 00:15:46,324
+if, now we are checking if, so we need to write this part.
+
+48
+00:15:52,148 --> 00:16:17,148
+If a one from x is not matched, that means the x was larger. There are more ones on the x, so x is larger. So we have this first situation in that piecewise function.
+
+49
+00:16:17,148 --> 00:16:34,548
+So we want to return one. And how are we going to do that? We will delete everything on the tape and then write one. So erase tape.
+
+50
+00:16:39,187 --> 00:16:44,707
+write one. Else,
+
+51
+00:16:48,659 --> 00:16:57,939
+If X is not larger, then we have the second situation in the piecewise function.
+
+52
+00:16:57,939 --> 00:17:01,779
+So you want to erase everything.
+
+53
+00:17:05,811 --> 00:17:06,811
+again. But this one, this time we want to write a zero. So this is the Trink machine now. For this function and for this one, we will not give a pseudo code and so we will not give a state diagram. You can imagine that
+
+54
+00:17:35,811 --> 00:17:41,811
+This is possible. With a Turing machine you can do this.
+
+55
+00:17:48,819 --> 00:17:49,819
+Any questions? Up to this point? Okay. So now you have these functions and you can even combine them as you see. And if you have some functions, you can even use block diagrams.
+
+56
+00:18:18,819 --> 00:18:25,279
+and
+
+57
+00:18:25,279 --> 00:18:35,279
+the
+
+58
+00:18:23,251 --> 00:18:30,371
+So let's say, combining Turing machines.
+
+59
+00:18:53,779 --> 00:18:56,779
+For this we will use block diagrams.
+
+60
+00:19:12,372 --> 00:19:16,031
+block diagram, you have these blocks and each block.
+
+61
+00:19:21,875 --> 00:19:40,716
+for this course, each block will be a Turing machine. And a Turing machine gets an input. And returns an output. So this is just like a function.
+
+62
+00:19:45,940 --> 00:19:46,940
+Okay. And now, in addition to writing episode code, you might actually use a block diagram. So for example, you can say,
+
+63
+00:20:14,003 --> 00:20:16,083
+f of x, y,
+
+64
+00:20:22,259 --> 00:20:23,259
+is x plus y if x is larger than y. 0 if x is smaller than or equal to y. We can, we can combine Turing machines and get a new Turing machine.
+
+65
+00:20:52,259 --> 00:20:58,019
+and so this function is computable.
+
+66
+00:21:04,627 --> 00:21:28,627
+And notice that we already have functions like this. Remember that we have a summation function. We saw that we can have a summation function. And this kind of piecewise function with if we just saw that example.
+
+67
+00:21:28,627 --> 00:21:54,627
+So this is this one comparison, let's say function. So it's a comparison function and previously here we saw last week as summation function.
+
+68
+00:21:58,163 --> 00:22:12,723
+and these were all computable functions. There were Turing machines for them. So now at this point,
+
+69
+00:22:14,355 --> 00:22:38,355
+We know that we have parts of this function already. So we can do that. We can do this like this. So first we will need a comparison. So let us say that we have a comparator.
+
+70
+00:22:42,195 --> 00:22:43,195
+Turing machine, or function if you want. So it will do this comparison. And as an input, it takes X and Y. Okay. Now,
+
+71
+00:23:06,740 --> 00:23:10,740
+If the comparison is
+
+72
+00:23:22,003 --> 00:23:29,523
+If X is larger than Y, now the input,
+
+73
+00:23:42,067 --> 00:23:51,187
+If X is larger than Y, the other function will be used. And this time, again, other function will be
+
+74
+00:23:53,267 --> 00:23:55,587
+taking X and Y
+
+75
+00:23:56,988 --> 00:23:58,427
+as inputs.
+
+76
+00:24:01,347 --> 00:24:02,447
+And
+
+77
+00:24:15,347 --> 00:24:16,347
+If,
+
+78
+00:24:20,788 --> 00:24:44,788
+x is smaller than or equal to y. We will write 0 there. So erase and write 0 or erasers. And the other will give x plus 1 as an output.
+
+79
+00:24:44,788 --> 00:24:49,788
+X plus Y is an output.
+
+80
+00:24:49,788 --> 00:25:04,788
+The eraser will give zero as an output. So, for razor function takes a string and erases it and writes zero there. So it's not just, it doesn't just erase this.
+
+81
+00:25:04,788 --> 00:25:10,788
+These are just short names given by us. We give those names. And so
+
+82
+00:25:10,788 --> 00:25:20,027
+And so the final output of the machine will be whatever.
+
+83
+00:25:20,027 --> 00:25:22,907
+So either adder or eraser will work.
+
+84
+00:25:22,907 --> 00:25:27,107
+So that output will be our output.
+
+85
+00:25:27,107 --> 00:25:32,548
+So this is our combined Turing machine, if you will.
+
+86
+00:25:44,660 --> 00:26:08,660
+So this somewhat looks like a flow diagram now. And you can see that we can combine Turing machines using these functions and we can visualize that using these diagrams.
+
+87
+00:26:08,531 --> 00:26:10,531
+Any question up to this point?
+
+88
+00:26:19,059 --> 00:26:27,059
+Okay. Now we will learn Turing's thesis.
+
+89
+00:26:33,844 --> 00:26:35,844
+This is kind of important.
+
+90
+00:26:50,804 --> 00:26:55,804
+This is also for church string thesis.
+
+91
+00:27:06,067 --> 00:27:19,347
+And this thesis says that any computation carried out by mechanical means can be performed by a Turing machine.
+
+92
+00:27:23,763 --> 00:27:26,244
+So, Turing thesis says that,
+
+93
+00:27:32,372 --> 00:27:37,372
+any computation.
+
+94
+00:27:39,988 --> 00:27:41,608
+carry it out.
+
+95
+00:27:45,140 --> 00:27:47,140
+by mechanical
+
+96
+00:27:54,099 --> 00:27:55,099
+means
+
+97
+00:27:57,099 --> 00:27:59,179
+can be performed
+
+98
+00:28:03,380 --> 00:28:05,380
+by a Turing machine.
+
+99
+00:28:25,332 --> 00:28:26,731
+So,
+
+100
+00:28:34,612 --> 00:28:46,612
+This means that any computation done in computers can be done by a Turing machine.
+
+101
+00:28:47,988 --> 00:28:56,988
+and from that also we have a definition of algorithm.
+
+102
+00:29:13,460 --> 00:29:15,460
+algorithm
+
+103
+00:29:17,259 --> 00:29:19,259
+for a problem
+
+104
+00:29:22,420 --> 00:29:23,979
+is a Turing machine
+
+105
+00:29:31,635 --> 00:29:34,035
+which solves the problem.
+
+106
+00:29:50,516 --> 00:30:02,516
+And the reason for this is you can always, what is an algorithm for first of all?
+
+107
+00:30:07,316 --> 00:30:12,316
+and algorithm describes the steps of the mechanical means.
+
+108
+00:30:15,656 --> 00:30:18,895
+And algorithm is like pseudo code, right?
+
+109
+00:30:18,895 --> 00:30:21,355
+It has these steps.
+
+110
+00:30:26,996 --> 00:30:28,996
+mechanical means.
+
+111
+00:30:34,900 --> 00:30:39,439
+to solve the problem, solve a problem.
+
+112
+00:30:46,771 --> 00:30:57,011
+and these steps of the mechanical means can easily be translated into Turing machines.
+
+113
+00:31:26,900 --> 00:31:51,900
+So, this kind of gives us a definition for algorithm. So, for a problem to have an algorithm that solves that, this means that there should be a Turing machine that solves that problem.
+
+114
+00:32:00,147 --> 00:32:12,307
+So that means when we say that when we talk about existence of an algorithm,
+
+115
+00:32:21,140 --> 00:32:23,140
+What a problem
+
+116
+00:32:27,508 --> 00:32:46,508
+We can talk about existing of a Turing machine that executes that algorithm. So when we say the exist, exists an algorithm.
+
+117
+00:32:50,548 --> 00:33:03,548
+We, this kind of, we, it means there exists, there exists, exists a Turing machine.
+
+118
+00:33:07,859 --> 00:33:10,859
+that executes.
+
+119
+00:33:14,644 --> 00:33:16,644
+the algorithm.
+
+120
+00:33:21,748 --> 00:33:35,027
+So it means you can write a Turing machine that can execute those steps, right? For example,
+
+121
+00:33:39,827 --> 00:33:48,827
+machine pseudo-code. We actually gave an algorithm here, right? So this is an algorithm.
+
+122
+00:33:52,596 --> 00:34:16,596
+It's these steps to compute this function. And there is an algorithm for computing this function because we can describe a Turing machine that carries out necessary steps to compute this function.
+
+123
+00:34:16,596 --> 00:34:45,676
+So, this is important. So this is now a definition of algorithms. What is an algorithm? If they ask you what is an algorithm, obviously you will say, okay, these are steps to solve the problem. But you can also say an algorithm is described by a Turing machine.
+
+124
+00:34:54,228 --> 00:34:59,228
+and you can talk about existing or not existing
+
+125
+00:35:00,407 --> 00:35:03,648
+of an algorithm for a problem, for a problem,
+
+126
+00:35:05,547 --> 00:35:09,527
+because you can talk about existing or not existing
+
+127
+00:35:09,527 --> 00:35:11,027
+of a Turing machine for that.
+
+128
+00:35:12,228 --> 00:35:17,228
+Okay, so this bit was kind of important, Turing's thesis.
+
+129
+00:35:17,228 --> 00:35:32,228
+We will move on now. We will see the variations of the Turing machines.
+
+130
+00:35:53,204 --> 00:35:54,243
+machine, very
+
+131
+00:36:07,092 --> 00:36:09,092
+Let me add some pages.
+
+132
+00:36:22,996 --> 00:36:23,835
+machine.
+
+133
+00:36:27,539 --> 00:36:29,039
+variations.
+
+134
+00:36:40,436 --> 00:37:08,436
+Now we solve the standard Turing machine model. Let us call this standard model. Let's remember that. The standard Turing machine model. In the standard Turing machine model, we have an infinite tape.
+
+135
+00:37:18,324 --> 00:37:22,563
+The tape is infinite on both sides.
+
+136
+00:37:26,452 --> 00:37:34,452
+There are blank symbols right after and before input.
+
+137
+00:37:36,851 --> 00:37:49,851
+and the read-write head, there's a read-write head and at the beginning of computation, it shows the first symbol of the input.
+
+138
+00:38:04,628 --> 00:38:23,628
+And this right-head moves each on each computation, each moves to either moves to the right or moves to the left. Moves to left or right.
+
+139
+00:38:30,483 --> 00:38:34,723
+And we have a control unit.
+
+140
+00:38:38,516 --> 00:38:43,016
+that has all, that has all states.
+
+141
+00:38:57,043 --> 00:39:01,444
+And remember this is a deterministic
+
+142
+00:39:04,436 --> 00:39:21,436
+control unit. So the standard Turing machine is deterministic. So when I say standard Turing machine or just Turing machine, you'll understand this model, okay?
+
+143
+00:39:23,891 --> 00:39:35,891
+Now we will see some variations of this standard Turing machine.
+
+144
+00:39:44,692 --> 00:39:45,711
+So,
+
+145
+00:40:03,443 --> 00:40:12,443
+what variations we will see. For example, we will see a Turing machine called stay option.
+
+146
+00:40:15,891 --> 00:40:22,891
+Turing machine. We will see semi-infinite.
+
+147
+00:40:26,708 --> 00:40:50,407
+Turing machine. So, stay option Turing machine can stay in the stay option Turing machine, the read-read head can stay on the same place. It doesn't have to move left or right. In semi-infinite Turing machine, the tape is infinite only on one side, for example, only on the right. On the left, tape is not infinite.
+
+148
+00:40:50,407 --> 00:40:54,407
+multi-tape Turing machine.
+
+149
+00:40:58,407 --> 00:41:00,407
+This guy has more than one tapes.
+
+150
+00:41:02,407 --> 00:41:04,407
+Multi-dimensional Turing machine.
+
+151
+00:41:13,619 --> 00:41:37,619
+The tape in the in this kind of Turing machine is two-dimensional or even more. So it's just it's like a page, not just a simple paper. It's like a page. And finally, we have non-deterministic Turing machine.
+
+152
+00:41:47,027 --> 00:41:48,027
+and,
+
+153
+00:42:10,228 --> 00:42:11,228
+Now, each of these Turing machines, in a way, determine or introduce a new class of Turing machines. So we will say these are different
+
+154
+00:42:35,155 --> 00:42:39,735
+Turing machine classes.
+
+155
+00:42:41,495 --> 00:42:46,775
+So all the stay option, all the stay option Turing machines,
+
+156
+00:42:46,775 --> 00:42:51,775
+make up the stay option Turing machine class, right?
+
+157
+00:42:52,496 --> 00:42:56,935
+Or all the semi-infinite Turing machines make up
+
+158
+00:42:56,935 --> 00:43:02,875
+the semi-infinite Turing machine class.
+
+159
+00:43:02,875 --> 00:43:13,876
+Now, we will see that all of these Turing machines have the same power.
+
+160
+00:43:20,371 --> 00:43:31,371
+and power in this case means ability of accepting languages.
+
+161
+00:43:33,652 --> 00:43:36,971
+So let's talk about power.
+
+162
+00:43:40,692 --> 00:43:45,172
+So in this course, power
+
+163
+00:43:46,931 --> 00:44:00,931
+is kind of shows the language.
+
+164
+00:44:05,972 --> 00:44:15,151
+class that can be recognized.
+
+165
+00:44:19,188 --> 00:44:21,327
+So for example,
+
+166
+00:44:29,331 --> 00:44:31,331
+context-free languages
+
+167
+00:44:47,539 --> 00:44:52,539
+are more powerful.
+
+168
+00:44:57,940 --> 00:44:59,979
+than regular languages.
+
+169
+00:45:08,884 --> 00:45:10,884
+because
+
+170
+00:45:20,659 --> 00:45:32,620
+I should have said not languages here. Instead of context-free languages, I should have said pushdown automata.
+
+171
+00:45:44,755 --> 00:45:49,955
+pushdown automata are more powerful than
+
+172
+00:45:54,963 --> 00:45:56,163
+finite automata.
+
+173
+00:46:04,947 --> 00:46:18,387
+And the reason for that is finite automata can accept regular languages.
+
+174
+00:46:23,731 --> 00:46:28,092
+and pushdown automata can accept context-free languages.
+
+175
+00:46:37,108 --> 00:47:06,427
+regular languages, context-free languages. And we know that regular languages are a subset of context-free languages. So that means pushdown automata are more powerful. They can accept all the languages that finite automata can accept and can accept some other languages too.
+
+176
+00:47:07,108 --> 00:47:30,108
+And now, Turing machines are more powerful than standard Turing machines, at least. So when I say Turing machine, it's standard Turing machine. Turing machines are more powerful.
+
+177
+00:47:34,387 --> 00:47:37,387
+then pushdown automata.
+
+178
+00:47:46,195 --> 00:48:11,195
+because Turing machines can recognize Turing recognizable languages. We call those Turing recognizable languages. Turing recognizable, recognizable.
+
+179
+00:48:13,172 --> 00:48:27,172
+recognizable. And Turing recognizable languages are a superset of context-free languages. So every context-free language is a Turing recognizable language.
+
+180
+00:48:30,579 --> 00:48:34,019
+So Turing machines can accept
+
+181
+00:48:47,251 --> 00:48:49,251
+Turing recognizable
+
+182
+00:49:00,659 --> 00:49:25,659
+Now, standard Turing machines are more powerful than the pushdown automata. Now the question is, is any of these more powerful than Turing machines? So, stay option Turing machines, semi-infinite Turing machines, multi-tape, multi-dimensional, non-deterministic Turing machines.
+
+183
+00:49:25,659 --> 00:49:42,659
+is any of these more powerful than standard Turing machine? And it turns out that they are not. Okay, so...
+
+184
+00:49:53,972 --> 00:50:01,851
+So these variations of Turing machines,
+
+185
+00:50:12,115 --> 00:50:23,855
+has the same, have the same polish.
+
+186
+00:50:36,500 --> 00:50:39,500
+with standard
+
+187
+00:50:41,500 --> 00:50:43,500
+Turing machine.
+
+188
+00:50:52,371 --> 00:50:57,371
+So, the power of, uh,
+
+189
+00:51:16,436 --> 00:51:27,236
+let's say what is there here? Non-deterministic Turing machine, for example.
+
+190
+00:51:40,148 --> 00:51:44,648
+It's the same as standard Turing machine.
+
+191
+00:51:47,795 --> 00:51:51,795
+Remember, standard Turing machine is internalistic.
+
+192
+00:52:08,884 --> 00:52:28,884
+So now we will need to prove this and for that we will need to work on this method called simulation. Before that let's give a 10 minutes break.
+
+193
+00:52:36,788 --> 00:52:49,387
+Evet yani sesle ilgili bir arkadaşınıza soru olmuş ama kendisine üzgüymüş galiba. 10 dakika ara öğrenim arkadaşlar gelince devam ederiz.
+
+194
+01:03:32,980 --> 01:03:39,980
+Yes, my voice is coming.
+
+195
+01:03:39,980 --> 01:03:40,980
+Yes.
+
+196
+01:03:40,980 --> 01:03:50,980
+So, we said that variations of Turing machines, these variations,
+
+197
+01:03:54,980 --> 01:03:57,980
+are the same power with standard Turing machine.
+
+198
+01:03:57,980 --> 01:04:10,980
+For example, power of non-deterministic Turing machines is equivalent to power of standard or deterministic Turing machines.
+
+199
+01:04:16,916 --> 01:04:23,916
+and what we when we say same powers.
+
+200
+01:04:28,179 --> 01:04:30,179
+We mean that
+
+201
+01:04:35,476 --> 01:04:47,215
+both classes accept the same set of languages.
+
+202
+01:04:54,036 --> 01:05:18,275
+So, class of non-deterministic Turing machines accept the same set of languages. Now, what will we do for these variations? For each variation,
+
+203
+01:05:20,947 --> 01:05:25,447
+for each Turing machine variant.
+
+204
+01:05:33,300 --> 01:05:35,019
+we will prove
+
+205
+01:05:40,563 --> 01:05:43,123
+that they...
+
+206
+01:05:49,300 --> 01:05:56,939
+that their class has the same power.
+
+207
+01:06:05,811 --> 01:06:11,431
+with standard Turing machine.
+
+208
+01:06:15,188 --> 01:06:18,387
+and for that, uh,
+
+209
+01:06:20,403 --> 01:06:22,403
+We will use simulation.
+
+210
+01:06:25,972 --> 01:06:27,972
+So,
+
+211
+01:06:27,972 --> 01:06:30,972
+Let me say same,
+
+212
+01:06:30,972 --> 01:06:31,972
+but
+
+213
+01:06:31,972 --> 01:06:55,972
+I
+
+214
+01:06:48,052 --> 01:06:51,331
+Let's write this more mathematically.
+
+215
+01:07:07,476 --> 01:07:11,876
+for any machine M1,
+
+216
+01:07:14,356 --> 01:07:18,356
+and the other one is the same.
+
+217
+01:07:18,356 --> 01:07:22,356
+I'm sorry.
+
+218
+01:07:25,492 --> 01:07:31,952
+and
+
+219
+01:08:02,900 --> 01:08:05,100
+Furkan Necat'in mikrofonu açık herhalde hocam.
+
+220
+01:08:05,100 --> 01:08:08,579
+Evet, unmute etmeye çalışıyorum buradan da.
+
+221
+01:08:09,919 --> 01:08:11,959
+Birileri kim olduğunu bilemiyorum.
+
+222
+01:08:12,660 --> 01:08:14,839
+Furkan Necat gibi bir şey yazıyor.
+
+223
+01:08:26,771 --> 01:08:34,551
+Ben kendim buradan unmute edemiyorum galiba. Şu anda unmute olmuş gerçekten.
+
+224
+01:08:38,387 --> 01:08:46,387
+Ask to unmute, bir dakika, unmute demek, aç demek. Şu anda mute zaten.
+
+225
+01:08:48,180 --> 01:09:07,180
+So when we say same for same power of two machines for any machine and one of first class,
+
+226
+01:09:07,180 --> 01:09:12,180
+and one of the first class,
+
+227
+01:09:13,011 --> 01:09:15,011
+There is a machine.
+
+228
+01:09:19,731 --> 01:09:23,091
+M2 of second class.
+
+229
+01:09:28,372 --> 01:09:38,372
+such that language of M1 is equal to language of M2.
+
+230
+01:09:41,492 --> 01:09:42,992
+and vice versa.
+
+231
+01:09:48,787 --> 01:09:53,787
+So, we want to prove this.
+
+232
+01:09:56,148 --> 01:10:06,148
+We will use this property. Now we will use a technique called simulation for that.
+
+233
+01:10:12,180 --> 01:10:14,640
+So this technique is used
+
+234
+01:10:29,716 --> 01:10:34,216
+used to prove that machines have same powers.
+
+235
+01:10:39,060 --> 01:10:47,060
+and the idea is, let's say you have an original machine M1.
+
+236
+01:10:49,619 --> 01:10:52,499
+and, uh,
+
+237
+01:10:55,796 --> 01:10:59,796
+and this is of the first class.
+
+238
+01:11:03,828 --> 01:11:14,788
+and first class here may be deterministic Turing machines or non-deterministic Turing machines. And now,
+
+239
+01:11:17,235 --> 01:11:19,235
+In the second class,
+
+240
+01:11:22,579 --> 01:11:48,579
+If we can write a machine called M2, and this M2 will basically simulate M1. Whatever M1 does, M2 does it somehow. We will call the M2 simulation machine.
+
+241
+01:11:52,756 --> 01:12:19,756
+If we can show that we can write such an M2, such a simulation machine, that means second-class machines can simulate first-class machines. So the second-class machines have the power, same power as the first-class machines.
+
+242
+01:12:21,555 --> 01:12:24,555
+So we will simulate
+
+243
+01:12:28,916 --> 01:12:30,675
+the machine
+
+244
+01:12:32,475 --> 01:12:32,955
+of
+
+245
+01:12:34,035 --> 01:12:35,235
+first class
+
+246
+01:12:40,979 --> 01:12:43,499
+with machine.
+
+247
+01:12:49,587 --> 01:12:51,087
+or second plus.
+
+248
+01:12:58,100 --> 01:12:59,100
+And when we do that, configurations in the original machine will correspond to configurations in the simulation machine. Remember that a computation
+
+249
+01:13:20,724 --> 01:13:26,644
+in machine M1, will be something like,
+
+250
+01:13:26,644 --> 01:13:28,403
+uh,
+
+251
+01:13:33,043 --> 01:13:54,043
+configuration one, then configuration two, configuration three up to, there will be a final configuration, let's say configuration n, or these are, what did we call them? Instantaneous descriptions, if you will.
+
+252
+01:14:13,235 --> 01:14:14,235
+instantaneous descriptions, description. Now in M2, in the simulation machine, we will have a
+
+253
+01:14:31,667 --> 01:14:50,667
+corresponding configuration for all of these configurations. So we will show that in machine M1, there is a configuration one. There is a, let's say, C star one configuration, which corresponds to this guy.
+
+254
+01:14:50,667 --> 01:15:18,607
+and you can have a corresponding configuration to C2, a corresponding configuration to C3, finally a corresponding configuration to Cn. So really the same computation will be carried out in M2.
+
+255
+01:15:24,756 --> 01:15:25,756
+And obviously the final configuration, which will be a, I will use F here for final or accepting or rejecting. The final accepting or rejecting configuration or final accepting configuration will be same.
+
+256
+01:16:09,460 --> 01:16:37,460
+So these accepting configurations will be same on both side or there will be a corresponding accepting configurations. And then we will say that, okay, then that means language of M1 is language of M2.
+
+257
+01:16:38,836 --> 01:17:03,836
+because these computations means, remember, each of these has input. So we start with input. And if we do the same things, we should obtain same strings. So these will accept same string.
+
+258
+01:17:09,076 --> 01:17:23,076
+Let's, when we do an example, you will see it's really easy actually. Let's start with stay option Turing machines.
+
+259
+01:17:38,036 --> 01:18:03,036
+Now, these stay option Turing machines, remember these are one of the variants I said here, the first one. Now we will go on these variants one by one and see that they have the same power of standard Turing machines. And stay option Turing machine is the first variant.
+
+260
+01:18:03,028 --> 01:18:21,827
+What is this? In the stay option Turing machine, everything is similar to Turing machine, except the read-write head.
+
+261
+01:18:26,131 --> 01:18:27,131
+has three things to do. Can read right head can move left. Move right. And we will show that with an L. And it can move right.
+
+262
+01:18:58,163 --> 01:19:08,803
+We will show that with an R or it may stay at the same place. It can stay.
+
+263
+01:19:12,884 --> 01:19:14,884
+in the same position.
+
+264
+01:19:21,268 --> 01:19:36,467
+and we will say that S and everything else is same. So similarly, so you might have A, B, B, whatever, and you will have your blanks.
+
+265
+01:19:39,380 --> 01:19:40,380
+infinite tape on both sides. Everything else is same. So everything else is same with the standard Turing machine.
+
+266
+01:20:09,380 --> 01:20:12,380
+only difference is that.
+
+267
+01:20:12,380 --> 01:20:18,380
+Now, we want to show that
+
+268
+01:20:33,108 --> 01:20:36,108
+So, disruption, Turing machines.
+
+269
+01:20:51,315 --> 01:20:57,796
+Turing machines have the same power.
+
+270
+01:21:03,731 --> 01:21:19,251
+with standard Turing machines. I will just write STMs from now, STMs. And STM will mean standard Turing machine.
+
+271
+01:21:27,155 --> 01:21:34,915
+and I might say S-T-O-T-M for this guy, stay option.
+
+272
+01:21:34,915 --> 01:21:42,475
+So S-T-O-T-M, standard, so stay, that's right, S-O.
+
+273
+01:21:49,203 --> 01:21:50,444
+stay option Turing machine.
+
+274
+01:21:54,243 --> 01:22:00,483
+I will use that only in this section when we are talking about stay option Turing machines.
+
+275
+01:22:00,483 --> 01:22:06,964
+So this proof actually has, since this is an equivalency,
+
+276
+01:22:06,964 --> 01:22:10,323
+we will need to prove two things.
+
+277
+01:22:10,323 --> 01:22:19,203
+So we have stay option Turing machines are equivalent to standard Turing machines.
+
+278
+01:22:19,203 --> 01:22:23,203
+we say that so we need to prove first
+
+279
+01:22:28,051 --> 01:22:36,051
+step-option, Turing machines can simulate standard Turing machines.
+
+280
+01:22:36,051 --> 01:22:43,051
+step-option, Turing machines simulate
+
+281
+01:22:45,043 --> 01:22:55,043
+standard Turing machines. Also, so this is the proof.
+
+282
+01:23:03,444 --> 01:23:06,643
+standard Turing machines can simulate
+
+283
+01:23:09,444 --> 01:23:11,444
+stay option Turing machines.
+
+284
+01:23:20,115 --> 01:23:27,115
+Now, let's work on those one by one.
+
+285
+01:23:33,300 --> 01:23:34,300
+So let's do step one. Step one says, Stay option Turing machines can simulate
+
+286
+01:23:49,492 --> 01:23:59,811
+standard Turing machines. And we don't need to do anything about this because this is trivial.
+
+287
+01:24:00,627 --> 01:24:14,627
+If you think about it, any standard Turing machine is also a stay option Turing machine.
+
+288
+01:24:23,315 --> 01:24:35,156
+And a standard Turing machine is also a stay option Turing machine.
+
+289
+01:24:35,156 --> 01:24:40,595
+What that means is what can a standard Turing machine do?
+
+290
+01:24:40,595 --> 01:24:49,656
+Well, standard Turing machine read write hat can go right.
+
+291
+01:24:49,656 --> 01:24:55,196
+But stay option trick machine goes right too.
+
+292
+01:24:55,196 --> 01:24:58,536
+Standard trick machine can go left.
+
+293
+01:24:58,536 --> 01:25:03,435
+But stay option trick machine can go left too.
+
+294
+01:25:03,435 --> 01:25:09,275
+So both of these things are in the definition
+
+295
+01:25:09,275 --> 01:25:12,896
+of stay option trick machines.
+
+296
+01:25:12,896 --> 01:25:17,375
+So any standard trick machine is also
+
+297
+01:25:17,375 --> 01:25:19,356
+stay option trick machine.
+
+298
+01:25:19,355 --> 01:25:27,655
+So that means if you have a standard Turing machine,
+
+299
+01:25:27,655 --> 01:25:31,875
+you can also think about that as a stay option Turing machine.
+
+300
+01:25:31,875 --> 01:25:35,635
+Or you can say stay option Turing machine can simulate that.
+
+301
+01:25:38,975 --> 01:25:49,155
+Because it has those functionalities or abilities
+
+302
+01:25:49,155 --> 01:25:53,235
+already in it now let's look at the second thing
+
+303
+01:25:55,795 --> 01:26:01,235
+that we need to prove
+
+304
+01:26:05,043 --> 01:26:14,043
+and that is standard Turing machines simulate stay option machines.
+
+305
+01:26:17,844 --> 01:26:25,844
+standard Turing machines simulate, stay option Turing machines.
+
+306
+01:26:40,051 --> 01:26:41,051
+Now we will need to focus on the difference and the difference between these two guys is stay option Turing machines have a stay head option, right? So the machine
+
+307
+01:27:02,100 --> 01:27:11,100
+stay option, Turing machine has this transition from Q1 to Q2.
+
+308
+01:27:14,859 --> 01:27:23,539
+It can read some symbol, let's say A, and it can write some symbol B and just stay there.
+
+309
+01:27:28,379 --> 01:27:31,339
+Now, what can we do about it?
+
+310
+01:27:32,100 --> 01:27:48,500
+in the standard Turing machine. What can we do? What can we replace this feature? This remaining on the same place feature. Well, for Q1,
+
+311
+01:27:53,844 --> 01:28:07,844
+We can go to some state that is not Q2. And we will need to introduce the state ourselves. Right?
+
+312
+01:28:13,171 --> 01:28:40,171
+So it's a new state maybe. And between that state and Q2, there will be a transition. And from Q1, remember, we cannot stay on the same position with standard Turing machines.
+
+313
+01:28:40,171 --> 01:28:55,171
+So we will simulate this thing on the same place with first going to the left and then going back to right. So it's like...
+
+314
+01:29:00,243 --> 01:29:09,363
+here, if you have an A, what stay option Turing machine does is,
+
+315
+01:29:14,644 --> 01:29:19,723
+let's say this is BAB here.
+
+316
+01:29:23,188 --> 01:29:42,188
+B, B, B, B, right? And Q1, Q2. So here, if this is Q1, we want this to be Q2. So, standard Turing machine needs to do two things for that.
+
+317
+01:29:42,188 --> 01:30:03,188
+If we have BAB, so we are starting with the same situation and we want to end up with the same situation with the option to repushing. So B, B, B, and this will be Q2.
+
+318
+01:30:03,188 --> 01:30:07,028
+So at the end, we want to come to the same place.
+
+319
+01:30:07,028 --> 01:30:17,507
+But in between, there might be additional steps that we can carry to get to this place.
+
+320
+01:30:17,507 --> 01:30:22,228
+And for that, first, we go to left.
+
+321
+01:30:25,467 --> 01:30:30,307
+So first, we will come here.
+
+322
+01:30:33,876 --> 01:30:59,876
+And then we will go right to come back to the same place. Right? So left and then right. And to have the same kind of same input, same tape content, what will we do?
+
+323
+01:30:59,876 --> 01:31:11,896
+So if this reads an A and writes a B, so read an A, write a B, so this will be B, B, B, okay.
+
+324
+01:31:13,175 --> 01:31:20,636
+Now, when we go to write, we need to read a B and write a B, right?
+
+325
+01:31:20,636 --> 01:31:25,376
+So read a B and write a B and go to write.
+
+326
+01:31:25,376 --> 01:31:54,215
+If you do this way, there is a problem because there might be some other tape symbols here. So here there was B, but maybe we have an A or C or whatever here. So we need to write this in a different way. So we will write this way.
+
+327
+01:31:54,215 --> 01:31:55,415
+we will say that
+
+328
+01:31:59,572 --> 01:32:25,572
+We will read an X, whatever X is, and write that X back for every possible tape symbol X. So whatever tape symbol we have here,
+
+329
+01:32:25,572 --> 01:32:40,572
+We want to in actual transition or state diagram, we should write them here. So it should be all those transitions must be there.
+
+330
+01:32:46,036 --> 01:33:12,835
+So, for going to Q1 to Q2, you will have maybe Q12 state for this. Q12 state will kind of connect these two states, Q1 and Q2. And from Q1 you will go to Q12 and from Q12 you will go to Q2.
+
+331
+01:33:21,779 --> 01:33:28,279
+for other moves everything is same. So...
+
+332
+01:33:39,731 --> 01:33:41,731
+So the different
+
+333
+01:33:47,252 --> 01:33:48,252
+was this. And we discussed how to do, how to simulate the different move. And the rest of the moves work the same. So we don't need to. So simulation will be very easy. If you have Q1.
+
+334
+01:34:17,252 --> 01:34:22,812
+Q2, this is the option to link machine, the new one.
+
+335
+01:34:27,891 --> 01:34:34,891
+We read A, write B, go to write, standard Turing machine, same.
+
+336
+01:34:39,220 --> 01:34:50,419
+A, B, right, whatever. So, similarly for the left, you have the same thing. So,
+
+337
+01:34:56,532 --> 01:34:59,532
+So this is the end of proof then.
+
+338
+01:35:06,163 --> 01:35:16,163
+We showed how we can simulate a stay option Turing machine by a standard Turing machine.
+
+339
+01:35:16,163 --> 01:35:23,163
+So we say that, okay, standard Turing machines simulate stay option Turing machines.
+
+340
+01:35:23,163 --> 01:35:29,163
+And we already know that stay option Turing machines can simulate standard Turing machines.
+
+341
+01:35:29,163 --> 01:35:35,163
+So that means stay option Turing machines are equivalent to standard Turing machines.
+
+342
+01:35:35,163 --> 01:36:05,143
+Thank you.
+
+343
+01:35:49,108 --> 01:35:52,108
+So this was the first variant.
+
+344
+01:35:54,207 --> 01:36:03,207
+And these variants, let's look at some other, some of them.
+
+345
+01:36:03,207 --> 01:36:05,208
+One of the variants is,
+
+346
+01:36:13,844 --> 01:36:15,883
+semi-infinite tape.
+
+347
+01:36:26,899 --> 01:36:38,219
+tape, Turing machine. So this is a new variant. And this one has actually,
+
+348
+01:36:42,228 --> 01:36:56,228
+more constraint than standard Turing machine. And this, the constraint is, the machine is infinite on, on the right side, let's say.
+
+349
+01:37:03,028 --> 01:37:12,147
+So this is the infinite side. And this is not infinite.
+
+350
+01:37:18,163 --> 01:37:42,163
+And this is our tape. So our tape is not infinite on left and infinite in right, let's say. And the read-write help comes with at the beginning of this input. And the input is at the beginning of the tape and the rest is all these blanks.
+
+351
+01:37:52,243 --> 01:38:10,844
+And I will call these semi-infinite, semi-infinite tape Turing machines. Semi-infinite tape Turing machines. And,
+
+352
+01:38:13,427 --> 01:38:18,427
+with this Turing machine, when...
+
+353
+01:38:22,131 --> 01:38:26,631
+the head moves left from the borders.
+
+354
+01:38:40,916 --> 01:38:44,195
+It returns back to leftmost position.
+
+355
+01:38:58,420 --> 01:39:04,519
+Daha güzel yazayım şunu. Turn back to leftmost.
+
+356
+01:39:07,604 --> 01:39:36,503
+position. So for example, you might have something like, I don't know, Q1. If you see an A, write a B and go left. And Q2, let's say. And here we are on Q1, let's say. Now, what happens is,
+
+357
+01:39:37,604 --> 01:40:07,504
+We have a left here, right, left. So normally, the right head should go to the left, but the machine is kind of closed there, so it immediately returns back, or it's like it stays there, just for this cell, just for the leftmost symbol,
+
+358
+01:40:07,604 --> 01:40:21,604
+the read-write head can stay there. Normally this is not stay option, right? Everything is because everything else is...
+
+359
+01:40:24,979 --> 01:40:32,339
+everything is as is.
+
+360
+01:40:34,228 --> 01:40:50,228
+I am getting sloppy when I try to write too fast. Everything else is same as standard Turing machines.
+
+361
+01:40:58,131 --> 01:41:22,531
+So, if there's a left move, it goes back to right immediately. And that means it stays there. Now, from now on, we will do the same thing. We will write a theorem.
+
+362
+01:41:25,811 --> 01:41:36,612
+We will say that semi-infinite tape Turing machines have the same power,
+
+363
+01:41:43,988 --> 01:41:45,988
+with standard Turing machines.
+
+364
+01:41:51,539 --> 01:41:58,539
+and proof will be always in two steps.
+
+365
+01:42:00,307 --> 01:42:10,648
+First, show that semi-infinite Turing machines can simulate standard Turing machines.
+
+366
+01:42:11,447 --> 01:42:15,327
+I will write as the second because first will be easier.
+
+367
+01:42:16,408 --> 01:42:25,988
+Semi-infinite Turing machines simulate standard Turing machines.
+
+368
+01:42:25,988 --> 01:42:34,748
+and the first one will be standard Turing machines simulate
+
+369
+01:42:34,748 --> 01:42:41,828
+semi-infinite Turing the semi-infinite tape Turing machines
+
+370
+01:42:49,492 --> 01:43:00,492
+Now, for the first one, for the first step of the proof,
+
+371
+01:43:04,724 --> 01:43:07,383
+Let's move right here, step one.
+
+372
+01:43:21,332 --> 01:43:22,332
+We want to simulate semi-infinite tape with an infinite tape. And it's not hard actually if you think about it. Let me write here first, standard Turing machines simulate semi-infinite tape Turing machines. And we
+
+373
+01:43:51,332 --> 01:43:52,332
+can...
+
+374
+01:43:55,764 --> 01:44:16,764
+for entering machine, for any semi-infinite tape Turing machine, we can create a standard Turing machine that has the same content, but we will introduce a special symbol. Let's say this is sharp.
+
+375
+01:44:16,764 --> 01:44:21,764
+And
+
+376
+01:44:25,779 --> 01:44:30,279
+The contents, whatever they are, A, B, A, C,
+
+377
+01:44:34,387 --> 01:44:41,387
+So this will be equivalent to...
+
+378
+01:44:46,644 --> 01:44:48,644
+A, B, A, C.
+
+379
+01:44:59,444 --> 01:45:18,444
+So basically we will just introduce a stop symbol here. And it will be a standard Turing machine, but we are introducing this, this.
+
+380
+01:45:20,979 --> 01:45:22,979
+this special symbol.
+
+381
+01:45:36,340 --> 01:46:04,899
+introduce spatial symbol. Normally this is not in the tape. And then, we add a self loop to every state. So, for example, let's say you have some state in the Turing machine. And whatever it is, it doesn't really matter. We add a loop and say that, what will we say?
+
+382
+01:46:06,340 --> 01:46:14,740
+If there is a, if you are on, if you are looking on this sharp symbol, right?
+
+383
+01:46:16,659 --> 01:46:19,939
+What we will do? We will immediately come back.
+
+384
+01:46:20,979 --> 01:46:25,520
+So write the sharp back and go right.
+
+385
+01:46:36,819 --> 01:47:05,819
+So, we will, so first we will introduce this spatial symbol. Second, add self loops to all states. Okay. Add this self loop to all states.
+
+386
+01:47:05,819 --> 01:47:07,819
+and that's all there is to it.
+
+387
+01:47:07,819 --> 01:47:08,819
+So,
+
+388
+01:47:09,819 --> 01:47:10,819
+uh,
+
+389
+01:47:18,387 --> 01:47:39,988
+very easy. So, since standard Turing machines has more tape plates, all we need to is cut to cut the left side.
+
+390
+01:47:42,420 --> 01:47:43,420
+Now for step two, that's a little bit confusing or a little complex, let's say step two. We want to show that semi-infinite tape Turing machines simulate standard Turing machines. Now,
+
+391
+01:48:11,347 --> 01:48:12,347
+What can we do here? There are possible, at least two possible ways to to do here or solve this problem. One of them is using this trick.
+
+392
+01:48:48,627 --> 01:48:51,627
+So we will use this thing called,
+
+393
+01:48:58,931 --> 01:48:59,931
+use multiple track tape trick. Use multiple track tape trick. And what is multiple track tape?
+
+394
+01:49:24,979 --> 01:49:27,379
+It's a tape.
+
+395
+01:49:39,155 --> 01:49:48,155
+that has multiple tracks. So, a track...
+
+396
+01:49:51,764 --> 01:49:55,764
+So it's like there are two tapes.
+
+397
+01:49:58,131 --> 01:49:59,131
+on top of each other. And there is a single read-write head. So single read-write head. And now you might have things like A, B, A, B, C, D, A, C,
+
+398
+01:50:28,131 --> 01:50:29,131
+somehow.
+
+399
+01:51:00,724 --> 01:51:11,363
+Now in multiple track tape, this is a trick. So,
+
+400
+01:51:12,659 --> 01:51:24,979
+This is a single symbol actually. Because there is single read, write, read, write, head. This is a single symbol.
+
+401
+01:51:28,851 --> 01:51:29,851
+and the name of that symbol is AC. Okay, so these are tracks by the way. So this is track one. This is track two. So this is a,
+
+402
+01:51:54,963 --> 01:52:18,823
+standard, this is a standard Turing machine, and it's a standard tape, but the symbols have these, like, their names consist of, the name of a single symbol consists of two symbols, if you will.
+
+403
+01:52:18,823 --> 01:52:25,823
+So the input tape alphabet
+
+404
+01:52:31,796 --> 01:52:32,796
+comma, tape, alphabet, consists of pairs like AC, BD, AA, BC. Basically, it consists of all possible pairs of the original,
+
+405
+01:53:01,796 --> 01:53:04,796
+tape alphabet.
+
+406
+01:53:06,796 --> 01:53:08,796
+So let's say this is gamma 2.
+
+407
+01:53:08,796 --> 01:53:11,796
+And original gamma 1 was
+
+408
+01:53:17,363 --> 01:53:19,363
+e...
+
+409
+01:53:22,100 --> 01:53:37,339
+A, B, C. Right? So the new tape alphabet is like this A, C, B, D, A, whatever. And now, uh,
+
+410
+01:53:38,996 --> 01:53:39,996
+The first part of each peer comes from track one, second from track two. Okay, from track one, from track two, we can write this way. So anyway, this works just like a
+
+411
+01:54:06,387 --> 01:54:15,387
+just like a normal Turing machine. So you can say when we are on Q1,
+
+412
+01:54:16,948 --> 01:54:41,948
+If we read AC, write there, for example, I don't know, CC, and go to right or left. And go to state Q2. So it works like that.
+
+413
+01:54:47,539 --> 01:54:56,359
+So we will use this multi-track tape trick. Multiple track tape trick.
+
+414
+01:55:00,372 --> 01:55:02,372
+This is a standard
+
+415
+01:55:04,372 --> 01:55:06,372
+Turing machine.
+
+416
+01:55:23,155 --> 01:55:46,155
+machine with, let's say, enhanced or augmented with a new alphabet.
+
+417
+01:55:50,420 --> 01:55:52,420
+So we will use these guys.
+
+418
+01:55:58,996 --> 01:56:03,095
+How will we use these guys?
+
+419
+01:56:09,716 --> 01:56:11,716
+So let's look at that.
+
+420
+01:56:16,692 --> 01:56:27,692
+using multiple track, tape, trick in this case.
+
+421
+01:56:29,692 --> 01:56:41,692
+Let's say in this standard Turing machine, we have A, B, C, D, E, T,
+
+422
+01:56:45,171 --> 01:56:47,171
+We have blanks here.
+
+423
+01:56:57,747 --> 01:57:15,747
+Now we need to select a point somewhere in the middle of the input as a reference point. So let's say this is our reference point.
+
+424
+01:57:22,003 --> 01:57:32,884
+and let's see, or read-write head shows here. Now,
+
+425
+01:57:36,307 --> 01:57:43,627
+We will show this with a multi-track tape.
+
+426
+01:57:58,484 --> 01:57:59,783
+like this.
+
+427
+01:58:27,091 --> 01:58:35,371
+Now, we will use a semi-infinite tape. In this case, this is a semi-infinite tape.
+
+428
+01:58:45,332 --> 01:58:48,531
+Turing machine,
+
+429
+01:58:50,899 --> 01:59:04,899
+but it has two tracks with two tracks. Now, semi-infinite Turing machines, we can use them.
+
+430
+01:59:08,243 --> 01:59:10,123
+We can use this.
+
+431
+01:59:13,268 --> 01:59:21,268
+because there are
+
+432
+01:59:22,292 --> 01:59:24,292
+They have the same power.
+
+433
+01:59:29,716 --> 01:59:55,075
+power of standard Turing machines. So here, instead of standard Turing machines, we can use a semi-infinite-shaped Turing machine, and there will be no problem with that, because we have already proved that semi-infinite Turing machines have the same power with standard Turing machines, so we can use them.
+
+434
+02:00:10,036 --> 02:00:38,036
+karıştırdın mı ne? Ah, stay optional. Sorry. So we didn't prove them. We are proving now. We have proved stay option Turing machines being or having the same power. So semi-infinite Turing tape machines, we are trying to prove them now. So let me...
+
+435
+02:00:40,036 --> 02:00:48,736
+delete this, so, semi-infinite.
+
+436
+02:00:52,564 --> 02:00:53,564
+Turing machine with two tracks. Okay. And the head will be showing A. Now, the rest is kind of complicated, but what we do is, let's think about,
+
+437
+02:01:22,564 --> 02:01:23,564
+this.
+
+438
+02:01:28,020 --> 02:01:30,020
+Let's say, uh...
+
+439
+02:01:39,828 --> 02:01:40,828
+the hydrate has moved to B, right? Just B, right? And come here. And let's say,
+
+440
+02:02:07,220 --> 02:02:11,720
+Let's say the next configuration is like this.
+
+441
+02:02:24,020 --> 02:02:51,020
+A became C and we have B there. And the right head came here, moved to the right. And we have C, D, E there. And this is the reference point again. So let's say what will happen in the semi-infant tape side.
+
+442
+02:03:16,659 --> 02:03:45,659
+So, we need to have this situation. DE will be same, DE, right? And this ABC, instead of ABC, we will have CBC.
+
+443
+02:03:49,619 --> 02:04:01,619
+and the right head will move to this. Okay.
+
+444
+02:04:19,572 --> 02:04:25,931
+Now, the transition,
+
+445
+02:04:37,011 --> 02:04:44,371
+read an A, write a B,
+
+446
+02:04:51,028 --> 02:05:01,028
+go to light. Here what will it be?
+
+447
+02:05:04,180 --> 02:05:07,939
+read a diamond
+
+448
+02:05:11,412 --> 02:05:21,412
+write a C diamond or diamond A, let's say.
+
+449
+02:05:32,948 --> 02:05:34,948
+write a diamond seeder.
+
+450
+02:05:38,644 --> 02:06:05,404
+and go right. So, if you work on this, this is kind of a little complicated, but you will see that at the end, semi-infinite tape machine with two tracks. So you need to do quite a bit work on here, but at the end, you can see that
+
+451
+02:06:05,404 --> 02:06:15,404
+Semi-infinite Turing machine, Semi-infinite tape Turing machine can simulate.
+
+452
+02:06:19,380 --> 02:06:21,380
+standard Turing machine.
+
+453
+02:06:25,619 --> 02:06:29,380
+skipped, I skipped,
+
+454
+02:06:36,884 --> 02:06:38,283
+Quite a bit.
+
+455
+02:06:50,963 --> 02:07:20,943
+So you need to kind of figure out how to work out this. So you see this here, for example, these sharps are equivalent to this reference point. And you need to figure out when you go to here, what happens? Right? When you go to the left, what happens? Etc.
+
+456
+02:07:20,943 --> 02:07:25,943
+So it's kind of a little messy, but it can be done.
+
+457
+02:07:27,263 --> 02:07:28,103
+Can be done.
+
+458
+02:07:36,467 --> 02:07:40,467
+Another way might be
+
+459
+02:07:50,292 --> 02:07:52,451
+Another idea might be
+
+460
+02:08:14,515 --> 02:08:43,955
+somehow, uh, insert a special symbol here, at the beginning of the semi-infinite tape. And when you go there, uh, let's say you have A, B, C, whatever. And let's say you want to write A, B, C, whatever.
+
+461
+02:08:43,955 --> 02:08:46,875
+and you will write a B here, right?
+
+462
+02:08:52,724 --> 02:09:04,724
+So this will be B, A, B, C, let's say.
+
+463
+02:09:07,891 --> 02:09:25,891
+This will be the translation. What you can do is, in the semi-infinite tape, you understand that you are at the end of tape using this special symbol.
+
+464
+02:09:28,532 --> 02:09:52,532
+and then put whatever you want to write here and shift the rest. So there was this A, B, C. A, B, C. These guys shifted to write.
+
+465
+02:09:52,532 --> 02:10:00,212
+So you can kind of shift everything to right and insert the B dash.
+
+466
+02:10:00,212 --> 02:10:07,532
+So there are possible ways to do this. So there are more than one ways to do this.
+
+467
+02:10:20,083 --> 02:10:24,083
+Let's give a 10 minutes break and then we will continue.
+
+468
+02:21:44,020 --> 02:22:13,999
+Okay. We are back. Okay, thank you. We have 25 minutes, around 25 minutes, and this is the last lecture of the course. First of all, I put your quiz results to the wall, to the course wall, if you didn't notice.
+
+469
+02:22:14,020 --> 02:22:17,139
+you can see your quiz results now.
+
+470
+02:22:21,459 --> 02:22:44,979
+and we will have a midterm on the next Tuesday, I think, at nine o'clock probably. But I am not sure. Check the timetable for the finals.
+
+471
+02:22:47,667 --> 02:22:57,667
+and everything we have seen in this class will be on the final. So whatever we have learned, it can be on the final.
+
+472
+02:22:59,667 --> 02:23:05,667
+So we have midterm, final, so we have final.
+
+473
+02:23:05,667 --> 02:23:17,667
+Sorry. And that's it. Any questions you want to ask about midterm or sorry about final?
+
+474
+02:23:25,780 --> 02:23:52,780
+Okay, I will look at a couple of different things. I will move a little faster to summarize. So, another kind of Turing machine variant is called multi-tape Turing machine.
+
+475
+02:23:55,780 --> 02:24:08,780
+And this is very similar to the Turing machine we have seen so far, but it has more than one tapes. It can have tape one.
+
+476
+02:24:17,620 --> 02:24:21,620
+It can have tape too.
+
+477
+02:24:26,739 --> 02:24:29,220
+and a number of tapes.
+
+478
+02:24:29,220 --> 02:24:31,220
+Tape N.
+
+479
+02:24:34,899 --> 02:24:35,899
+Each of them is infinite on both sides. And each of them has a different read-write head. So the read-write heads are independent from each other. Right? So, and they all are connected to the same, same
+
+480
+02:25:06,195 --> 02:25:36,175
+control unit. And the transitions are like, if you are on Q1, you can go to Q2. If you have A on tape one and C on tape two, and so these are tape content.
+
+481
+02:25:36,195 --> 02:25:37,195
+lines.
+
+482
+02:25:40,115 --> 02:25:47,115
+So it's like A, C, let's say D,
+
+483
+02:25:55,603 --> 02:26:03,603
+So these are tape contents. And then you can say, OK,
+
+484
+02:26:07,860 --> 02:26:36,540
+In the first tape, write a B. In the second tape, write a D. Whatever. In the other tape, write a D back. And then, now moves. In the first tape, move to the right. In the second tape, move to the left.
+
+485
+02:26:37,860 --> 02:26:45,860
+in the end tape, move to the left, but, okay, and then go Q2.
+
+486
+02:26:46,620 --> 02:26:49,959
+So the transitions are like this, okay?
+
+487
+02:26:51,060 --> 02:27:00,580
+And even though this looks much more powerful, multi-tape TMs has the same power as
+
+488
+02:27:08,147 --> 02:27:18,147
+multi-tape, Turing machines, have the same power.
+
+489
+02:27:19,667 --> 02:27:45,667
+or as Turing machines, standard Turing machines. OK. And I will not prove this. You can read the proof yourselves somewhere. Or you can prove yourselves. It isn't... Prove yourself.
+
+490
+02:27:48,628 --> 02:27:49,628
+and, you know,
+
+491
+02:27:49,628 --> 02:27:50,628
+you know,
+
+492
+02:28:06,899 --> 02:28:10,899
+Another one is multi-dimensional Turing machines.
+
+493
+02:28:19,540 --> 02:28:33,779
+with these guys. Now the tape is two dimensional, for example. So 2D tape in the two dimensional.
+
+494
+02:28:35,572 --> 02:28:51,572
+machine, let's say, you can have three-dimensional Turing machine too. And this, now you have a tape, like a two-dimensional tape.
+
+495
+02:29:13,587 --> 02:29:33,027
+input is in the middle. So you have things like A, B, A, C, A, C, let's say, and everything else you have diamonds or blank.
+
+496
+02:29:42,611 --> 02:29:53,412
+and it's infinite on all sides. The tape is infinite on all sides.
+
+497
+02:30:02,804 --> 02:30:24,804
+And now you have, in addition to, in this case, you have more moves. So, read, write, head shows, let's say, this guy. This is your head.
+
+498
+02:30:26,899 --> 02:30:46,899
+and redirect head, in addition to moving to left and right, it can go up and down. Okay. So it has moves left, right.
+
+499
+02:30:48,755 --> 02:30:50,755
+up and down.
+
+500
+02:30:52,755 --> 02:30:55,755
+So let's say this is X, this is Y.
+
+501
+02:30:59,755 --> 02:31:00,755
+Again,
+
+502
+02:31:03,755 --> 02:31:07,755
+it doesn't have more power than standard Turing machines.
+
+503
+02:31:07,755 --> 02:31:11,755
+So this looks much more powerful, but
+
+504
+02:31:16,755 --> 02:31:18,315
+multi-dimensional,
+
+505
+02:31:24,468 --> 02:31:49,468
+machines have the same power with standard Turing machines. So it doesn't give you any more power. Again, you can prove this yourself.
+
+506
+02:31:52,308 --> 02:31:56,688
+I am trying to come to non-deterministic Turing machines.
+
+507
+02:32:00,724 --> 02:32:11,724
+So, non-deterministic Turing machines. Now this is important.
+
+508
+02:32:15,092 --> 02:32:16,092
+machines. And non-deterministic Turing machines allow non-deterministic choices. So for the same Q1 state, if you read an A,
+
+509
+02:32:39,700 --> 02:33:01,700
+You can do different things. For example, again, the machine replicates itself. So if you read NA, you can write B and go left, or you can write C and go to right. And maybe you go to Q2 here, Q3 here.
+
+510
+02:33:01,700 --> 02:33:09,700
+So it's like you have these choices.
+
+511
+02:33:09,700 --> 02:33:17,700
+This allows non-deterministic.
+
+512
+02:33:21,396 --> 02:33:22,396
+choice.
+
+513
+02:33:26,548 --> 02:33:29,768
+and does it have null transitions?
+
+514
+02:33:35,412 --> 02:33:38,892
+It doesn't say that it has null transitions.
+
+515
+02:33:50,388 --> 02:33:55,627
+So, machine replicate itself.
+
+516
+02:34:03,379 --> 02:34:05,779
+Now, uh,
+
+517
+02:34:09,075 --> 02:34:20,075
+An undetermined stick-turing machine, since machine replicates itself, has a computation tree.
+
+518
+02:34:33,587 --> 02:34:37,587
+So you can start with this. Go there.
+
+519
+02:34:51,540 --> 02:34:52,540
+And if in any of these trees, there is an except. If you reach to an except state. Then you accept. If you reach to an except state. Machine accepts.
+
+520
+02:35:22,227 --> 02:35:40,347
+and it doesn't care other branches. For example, here, maybe this computation does not go further. And rejects here. So how it's on a.
+
+521
+02:35:42,644 --> 02:35:46,644
+in a reject state, or maybe somewhere here,
+
+522
+02:35:48,644 --> 02:35:49,644
+uh,
+
+523
+02:35:52,051 --> 02:35:56,051
+It goes to an infinite loop maybe.
+
+524
+02:36:01,652 --> 02:36:02,652
+It doesn't matter if we have an accept state. And if we reach to this accept state, what we do is we stop the computation, we halt and we accept. Okay. And non-deterministic Turing machines are very fast if you think about it. Standard Turing machines has just
+
+525
+02:36:31,652 --> 02:36:34,271
+the computation.
+
+526
+02:36:38,152 --> 02:36:46,471
+So non-deterministic Turing machines as a computation tree.
+
+527
+02:36:49,211 --> 02:36:51,971
+I will write NTM for this.
+
+528
+02:36:54,771 --> 02:37:01,372
+And standard Turing machines has
+
+529
+02:37:01,652 --> 02:37:03,251
+a computation list.
+
+530
+02:37:09,843 --> 02:37:11,464
+So it's like, uh,
+
+531
+02:37:15,891 --> 02:37:38,891
+You have this configuration. You go from this and then this, from this, and then you accept or reject. Okay. Now, non-deterministic Turing machines,
+
+532
+02:37:44,500 --> 02:38:14,479
+machines, has the same power with standard Turing machines. They don't give you a new power. They cannot accept new languages. But if you think about it, they are much more efficient.
+
+533
+02:38:23,379 --> 02:38:39,379
+much faster, let me say, much faster. Because if you think about it, there is parallel, it's like there is parallel computation.
+
+534
+02:38:51,796 --> 02:38:52,796
+So because of that non-deterministic Turing machines are used in theory of computation later, for example. What is it? We will not go there in this course, but when you go to complexity, complexity classes,
+
+535
+02:39:21,796 --> 02:39:30,755
+algorithm, complexity, classes, what do you have?
+
+536
+02:39:33,755 --> 02:39:38,876
+You have a class of P, I think, and class of NP, right?
+
+537
+02:39:40,636 --> 02:39:47,315
+And the class of P, it's like polynomial.
+
+538
+02:39:47,316 --> 02:39:51,816
+manual. These can be sold.
+
+539
+02:39:58,804 --> 02:40:01,804
+P class algorithms.
+
+540
+02:40:09,203 --> 02:40:23,203
+can be executed by a standard Turing machine in polynomial time.
+
+541
+02:40:28,147 --> 02:40:30,147
+and what is NP?
+
+542
+02:40:38,451 --> 02:40:43,531
+and P class algorithms,
+
+543
+02:40:48,500 --> 02:40:54,980
+can be executed.
+
+544
+02:40:56,564 --> 02:41:03,564
+by a non-deterministic Turing machine in polynomial time.
+
+545
+02:41:09,940 --> 02:41:33,940
+So the difference is standard Turing machine and non-deterministic Turing machine. So an algorithm can be executed in polynomial time if we had a non-deterministic Turing machine. And non-deterministic Turing machines are like, they are not real, I think. We don't have them.
+
+546
+02:41:33,940 --> 02:41:45,940
+Do we have them? Non-deterministic Turing machine learnings var mı acaba?
+
+547
+02:41:50,067 --> 02:42:12,067
+So both of these are computation models. They are not real computers anyway. I mean, standard Turing machine is a computation model. And non-deterministic Turing machines and others, another computation model. So they are not real.
+
+548
+02:42:16,531 --> 02:42:30,531
+So, so this non-deterministic Turing machine becomes important because it's used in the definition of these P and NP class complexities.
+
+549
+02:42:43,412 --> 02:42:50,412
+Okay, this is the end of this lecture and end of the semester.
+
+550
+02:42:53,716 --> 02:42:55,716
+Do you have any questions?
+
+551
+02:43:00,595 --> 02:43:01,895
+Yok efendim, teşekkürler.
+
+552
+02:43:02,415 --> 02:43:20,175
+Peki teşekkürler. Bu semestri bitirmiş olduk. Uzaktan. Seneye umarım görüşürüz bu işler biterse. Sınavlarınızda başarılar diliyorum arkadaşlar. Sınavlardan sonra da iyi tatiller diliyorum.
+
+553
+02:43:20,175 --> 02:43:32,175
+Bir sorunuz vs. varsa e-mail ile bana ulaşabilirsiniz oaltunyulduz.tr'den ya da oğuz211.gmail'den
+
+554
+02:43:32,175 --> 02:43:36,436
+Yıldız.tr adresim şu sıralar bazen çalışmıyor galiba
+
+555
+02:43:36,436 --> 02:43:45,436
+Eğer bir sorunuz vs. varsa oğuz211.gmail
+
+556
+02:43:50,484 --> 02:44:06,303
+ya da oaltun.edu.tr'den sorabilirsiniz. Şu çalışmıyor olabilir bazen. İsterseniz bunu da kullanabilirsiniz.
+
+557
+02:44:11,860 --> 02:44:30,159
+sınavda artık sınavda görüşmeyiz. Sınavı ayarlarım sadece. Her zamanki gibi test olur herhalde. 20'nin üzerinde soru olacağını zannediyorum. Zamanında ona göre ayarlarız. Sorunuz varsa sorun yoksa kapatıyorum.
+
+558
+02:44:34,995 --> 02:44:51,395
+Teşekkürler hocam. Sağ olun her şey için. Size de başarılar dilerim. Kuyziniz şu anda açıklanmış durumda. Dersin duvarında. Oradan kuyuz notlarınızı görebilirsiniz. Başarılar arkadaşlar. Sağ olun. İyi günler.

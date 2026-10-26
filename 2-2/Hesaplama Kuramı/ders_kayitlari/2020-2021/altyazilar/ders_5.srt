@@ -1,0 +1,2571 @@
+1
+00:02:51,508 --> 00:02:54,287
+Arkadaşlar merhabalar sesim geliyor mu?
+
+2
+00:02:58,388 --> 00:02:59,227
+Geliyor hocam.
+
+3
+00:02:59,907 --> 00:03:00,947
+Peki teşekkürler.
+
+4
+00:03:06,580 --> 00:03:07,580
+So, last week, last week, we started to talk about conversion of NFAs to DFAs, conversion of non-deterministic finite automatas to deterministic finite automatas. I started with an example. We had this NFA, but there was a missing
+
+5
+00:03:36,580 --> 00:03:59,899
+in the original NFA. So notice that Q1 must be an accept state. So last week, I didn't put that. So make sure that in your notes, Q1 is an accepting state. I will do it here.
+
+6
+00:04:04,852 --> 00:04:07,711
+So Q1 is an accepting state.
+
+7
+00:04:12,467 --> 00:04:23,467
+So, we want to convert this to DFA, meaning there will be no epsilon transitions or null transitions.
+
+8
+00:04:23,467 --> 00:04:27,707
+And the...
+
+9
+00:04:35,220 --> 00:05:05,199
+So how can we do that? This is the DFA. Let's start from the beginning. Now our initial state is this state. We can give it any name, but when we are converting from DFA to NFA, from NFA to DFA, we will do like this. We will name or
+
+10
+00:05:05,220 --> 00:05:10,839
+or states as sets.
+
+11
+00:05:10,839 --> 00:05:26,580
+So the starting state for the DFA will be named as set of set that has the element Q0.
+
+12
+00:05:26,580 --> 00:05:35,240
+Now, with DFA, for each, so our alphabet here is clearly A and B, right?
+
+13
+00:05:35,240 --> 00:05:39,179
+So alphabet is clearly A and B.
+
+14
+00:05:41,760 --> 00:05:44,580
+For each state, we need to tell what happens
+
+15
+00:05:44,580 --> 00:05:48,260
+for each of these symbols in the alphabet, right?
+
+16
+00:05:48,260 --> 00:05:53,260
+So what happens when we get A?
+
+17
+00:05:53,260 --> 00:06:16,840
+we get A, what happens when we get B? So that's that question will be asked for each of the states we have. Now when Q0 gets an A here, what happens? We go to Q1, right? Q1.
+
+18
+00:06:22,803 --> 00:06:37,803
+Notice that immediately after that, since there is this null transition, state becomes also Q2, too. So at the same time, we will have Q1 and Q2.
+
+19
+00:06:39,803 --> 00:06:49,803
+So here we will write that. So you'll say, okay, in this state, we will have Q1 and Q2.
+
+20
+00:06:49,803 --> 00:07:01,563
+So, for this state, if you will, will represent the states Q1 and Q2 in the original NFA.
+
+21
+00:07:02,763 --> 00:07:10,223
+Let us take this into a circle to make it look like a state.
+
+22
+00:07:10,223 --> 00:07:28,543
+Now what happens with B? Well, Q0 does not have any B outgoing B connection or B transition. There's no such thing as B. That means it doesn't accept.
+
+23
+00:07:28,543 --> 00:07:35,603
+So in DFA, we must have a B, so B must be going somewhere.
+
+24
+00:07:36,563 --> 00:07:43,203
+And what we need to do here is we will create a state just for this.
+
+25
+00:07:43,203 --> 00:07:45,763
+So we will create a state.
+
+26
+00:07:48,223 --> 00:07:52,183
+And let us call that state empty state, if you will.
+
+27
+00:07:55,636 --> 00:08:24,636
+and it's a rejecting state. Okay. And when we have B, we will go to this state and it's a rejecting state. So there is no problem. And as you will see, we will not allow anywhere outside this B. So now we have two states in our hands. Okay.
+
+28
+00:08:24,636 --> 00:08:49,476
+Now, for both of these, we will ask the same question. What will happen when the state gets A? What will happen when the state gets B? What happens when the state gets A? What happens when the state gets B? So the question is this. You have to ask this question again and again and again until
+
+29
+00:08:49,476 --> 00:08:59,816
+you create no more states, right? As long as you create new states, you will do this.
+
+30
+00:09:00,955 --> 00:09:11,475
+Now, we are on this state that represents Q1 and Q2, and what happens when we get an A?
+
+31
+00:09:12,036 --> 00:09:19,155
+Well, let's look at it. For Q1, if we get an A, we go to Q1 itself.
+
+32
+00:09:19,475 --> 00:09:29,175
+so, and so there will be Q1 here.
+
+33
+00:09:32,692 --> 00:10:02,051
+Okay. And what happens for Q2? Q2 does not have an outgoing A. Right? Does not have an outgoing A. So in this case, we will just look at, we will just assume this. So when we have an A, we go to Q1.
+
+34
+00:10:02,692 --> 00:10:19,891
+Now, Q1 is already here. So, this state represents the original Q1 and Q2, both of them. So, we will convert this to a loop. Okay.
+
+35
+00:10:22,212 --> 00:10:25,891
+So, we will say that, okay, for...
+
+36
+00:10:37,971 --> 00:10:58,971
+So with A, we have this loop. Okay. Because when we are on Q1, if we get A, we go back to Q1 again. Okay. And with B, let's see, Q1 doesn't have a B.
+
+37
+00:10:58,971 --> 00:11:26,812
+But Q2 has a B, outgoing B, right? So this one. So what happens is if Q2 gets symbol B, goes to Q0. So this B must go to Q0 then, right? Let's write that.
+
+38
+00:11:31,251 --> 00:11:39,251
+and the other. So let's write it up here.
+
+39
+00:11:42,676 --> 00:12:12,315
+Okay, so on A, it goes to itself, on B, it goes to Q0. Okay, for this, now we are done. Now for this state, this empty state, again, what happens with A, what happens with B? As we said that this is a state for killing, this is a death state. So for A and B, both,
+
+40
+00:12:12,676 --> 00:12:17,556
+we will say that we will stay in this state.
+
+41
+00:12:25,748 --> 00:12:30,748
+So if the input
+
+42
+00:12:32,500 --> 00:12:58,000
+had a B at the beginning, right? We will come to this state and from then on whatever we have will still be in this state. We will not be able to get out. And this is a rejecting state, so it rejects. And that's similar to here. It says that to accept, to go to an accepting state, you must start with an A. A B is not accepted.
+
+43
+00:12:58,000 --> 00:13:04,599
+Sankar Kauru, One more thing here, then we will be done.
+
+44
+00:13:04,599 --> 00:13:06,919
+Sankar Kauru, And that is.
+
+45
+00:13:06,919 --> 00:13:15,159
+Sankar Kauru, Now, you know, DFA, there is no accepting state right what is the accepting status.
+
+46
+00:13:15,159 --> 00:13:17,439
+Sankar Kauru, So for that.
+
+47
+00:13:17,439 --> 00:13:23,799
+Sankar Kauru, In in in NFA, she one is accepting.
+
+48
+00:13:29,011 --> 00:13:30,011
+Now, for all, for any DFA state that has Q1, then we will make it an accepting state. Right? So we will make this an accepting state by doing a second. By drawing a second.
+
+49
+00:13:59,827 --> 00:14:01,667
+circle around it.
+
+50
+00:14:10,836 --> 00:14:12,715
+So, uh,
+
+51
+00:14:17,395 --> 00:14:28,395
+That is the general procedures. So. General procedures for this is like.
+
+52
+00:14:42,644 --> 00:14:43,644
+If the NFA has states. Q0, Q1, etc. DFA has states. Empty set. Q0, Q1, Q0, Q1, Q0, Q1, etc.
+
+53
+00:15:12,644 --> 00:15:15,004
+This is the power set, right?
+
+54
+00:15:26,419 --> 00:15:40,739
+So NFA states are Q, you know that. So the power set is the states and...
+
+55
+00:15:46,964 --> 00:15:54,964
+and the initial state will be for NFA.
+
+56
+00:16:00,980 --> 00:16:06,980
+if it is Q0,
+
+57
+00:16:08,148 --> 00:16:13,088
+for DFA, it will be this.
+
+58
+00:16:19,827 --> 00:16:20,827
+and
+
+59
+00:16:29,779 --> 00:16:36,579
+So, for every DFA state,
+
+60
+00:16:36,579 --> 00:16:39,879
+.
+
+61
+00:16:40,659 --> 00:16:41,459
+and, uh,
+
+62
+00:16:47,956 --> 00:16:55,956
+QI, QJ, QN,
+
+63
+00:17:12,243 --> 00:17:14,243
+You compute
+
+64
+00:17:16,724 --> 00:17:33,243
+What happens for each of these these states when you get each symbol. So compute in the NFA. What happens when you get
+
+65
+00:17:33,243 --> 00:17:43,243
+So we have QI here. What happens if you have, let's say, A,
+
+66
+00:17:47,380 --> 00:17:48,380
+and then add that to this. You will add that to this resulting state. So let's say this is.
+
+67
+00:18:07,476 --> 00:18:14,476
+Q'K, Q'L, whatever.
+
+68
+00:18:18,387 --> 00:18:41,387
+And so similarly now, what happens when this QJ gets an A? Again, you will edit here. So all these, so that means you are doing a union.
+
+69
+00:18:41,387 --> 00:18:55,987
+Q, M, what happens when it gets an A? You do a union and then you add all of them into this set.
+
+70
+00:19:05,875 --> 00:19:18,875
+and follow this resulting set. And then now this will be your new DFA.
+
+71
+00:19:20,980 --> 00:19:29,980
+This will be your new, new DFA state.
+
+72
+00:19:32,211 --> 00:19:40,011
+So in your transition table for the DFA,
+
+73
+00:19:40,011 --> 00:19:46,531
+you will have something like a
+
+74
+00:19:49,364 --> 00:19:50,364
+When we are on this state. For the DFA. QI QJ. QM. And let us write these in a set so it's because it's a set and we get a simple A. We go to this state now.
+
+75
+00:20:19,364 --> 00:20:24,364
+prime, QL prime, whatever.
+
+76
+00:20:26,603 --> 00:20:30,963
+And you will do that for every symbol too.
+
+77
+00:20:31,904 --> 00:20:32,744
+Okay.
+
+78
+00:20:36,627 --> 00:20:44,627
+So for every DFA state like this, we should infect the right here for for every
+
+79
+00:20:46,627 --> 00:20:48,627
+Every symbol
+
+80
+00:20:50,227 --> 00:20:50,627
+A
+
+81
+00:20:54,548 --> 00:20:57,747
+You compute that.
+
+82
+00:21:09,971 --> 00:21:10,811
+Now,
+
+83
+00:21:17,044 --> 00:21:25,563
+So you repeat this and you create new DFA states.
+
+84
+00:21:25,563 --> 00:21:28,563
+So this is repeated until
+
+85
+00:21:36,788 --> 00:21:41,788
+no new states.
+
+86
+00:21:45,748 --> 00:21:46,748
+are added.
+
+87
+00:21:46,748 --> 00:22:03,748
+So you can no more add new states. So you found all states. And now finally, you need to write the accepting states.
+
+88
+00:22:03,748 --> 00:22:13,748
+Okay.
+
+89
+00:22:07,284 --> 00:22:17,923
+Don't forget that. So for any DFA state,
+
+90
+00:22:20,115 --> 00:22:22,576
+and Turing machine,
+
+91
+00:22:25,715 --> 00:22:34,755
+How can you write? For any original NFA transition,
+
+92
+00:22:37,683 --> 00:22:39,563
+acceptance state,
+
+93
+00:22:46,036 --> 00:22:59,675
+make the DFA states. So for any accepting state, let's say QF.
+
+94
+00:23:03,059 --> 00:23:15,059
+make the DFA states that have QF. So it will be something like QF.
+
+95
+00:23:18,740 --> 00:23:20,740
+accepting.
+
+96
+00:23:30,195 --> 00:23:57,195
+Is this clear? So do you understand how you can convert an NFA to DFA? I wrote a description, but the example would be more explanatory, I think. Is there any problem with this?
+
+97
+00:24:22,291 --> 00:24:34,291
+Okay, so then let's stop with this. We will move to pumping lemma.
+
+98
+00:24:37,971 --> 00:24:45,331
+So let's, did you take note of this? I will close the screen.
+
+99
+00:24:59,635 --> 00:25:01,635
+Let me create a new...
+
+100
+00:25:05,748 --> 00:25:10,748
+and this will be pumping lemma.
+
+101
+00:25:11,748 --> 00:25:14,748
+What's 05?
+
+102
+00:25:15,748 --> 00:25:18,748
+Kaçıncı haftadayız arkadaşlar?
+
+103
+00:25:20,748 --> 00:25:22,748
+Beşinci haftada mıyız acaba?
+
+104
+00:25:22,748 --> 00:25:24,748
+Evet hocam.
+
+105
+00:25:45,844 --> 00:25:46,844
+So we will see this thing called, this lemma called pumping lemma. And it helps us find irregular languages. So, so far,
+
+106
+00:26:21,011 --> 00:26:49,011
+So, the set of languages that we can find an NFA or DFA that accepts them is called regular languages.
+
+107
+00:26:52,500 --> 00:26:53,500
+So something like A times B, et cetera. So B times C plus A. So these languages, for them, we can find or write or design. And DFA or NFA,
+
+108
+00:27:22,500 --> 00:27:34,500
+So I will just say finite automaton. We can design a finite automaton that accepts these.
+
+109
+00:27:37,395 --> 00:28:03,395
+Okay. And these are called regular, meaning we can find a finite automata for these guys. Okay. Now there are some languages like, for example, a to the n, b to the n, such that n is greater than or equal to zero.
+
+110
+00:28:03,395 --> 00:28:23,395
+or some string and then it's reverse such that that string is in a, B, let's say, A, B star.
+
+111
+00:28:23,395 --> 00:28:37,395
+These are not regular languages and so these are called non-regular or irregular.
+
+112
+00:28:51,059 --> 00:29:01,059
+And so this looks like a set, so I will not make the set. So.
+
+113
+00:29:01,059 --> 00:29:05,059
+Okay.
+
+114
+00:29:05,059 --> 00:29:09,059
+And.
+
+115
+00:29:11,316 --> 00:29:13,316
+For these,
+
+116
+00:29:18,740 --> 00:29:19,740
+We can not find or design and accepting finite automata. Now, how are we going to prove that though? So proving a language
+
+117
+00:29:48,307 --> 00:29:49,307
+proving a language L is irregular. How can we do that? And here we will, we will, we will use this observation called pumping lemma.
+
+118
+00:30:22,355 --> 00:30:27,796
+Okay. And the pumping lemma.
+
+119
+00:30:29,748 --> 00:30:32,107
+is just...
+
+120
+00:30:38,387 --> 00:30:47,387
+and application of pigeonhole principle. So, uh,
+
+121
+00:30:50,836 --> 00:30:54,836
+So pumping lemma is an application of a PG.
+
+122
+00:30:58,516 --> 00:31:05,635
+application of the pigeonhole.
+
+123
+00:31:07,476 --> 00:31:22,835
+principle. And if you remember pigeonhole principle was very easy. So let's say you have your pigeons.
+
+124
+00:31:29,107 --> 00:31:39,107
+Let's say you have N pigeons. Okay. And you have these pigeonholes.
+
+125
+00:31:40,115 --> 00:31:56,275
+You have M of these pigeonholes. And N is greater than M. So you have more pigeons. So let us draw a little more.
+
+126
+00:32:06,451 --> 00:32:31,451
+So you have more pigeons and you want to put these pigeons in these holes and if you put them there will be at least one pigeon hole with more than one pigeon. So
+
+127
+00:32:39,284 --> 00:32:42,083
+So, there will be...
+
+128
+00:32:45,044 --> 00:33:13,044
+at least one pigeonhole with more than one pigeon. Okay. That's the pigeonhole principle. So let's see how this is applied.
+
+129
+00:33:15,044 --> 00:33:19,444
+So let's look at pumping lemma.
+
+130
+00:33:36,339 --> 00:33:45,339
+Let's look at an example with four states.
+
+131
+00:33:47,028 --> 00:34:06,147
+so let's draw a simple q1 q2 q3 q4 and the last one is accepting and you have a a
+
+132
+00:34:08,708 --> 00:34:08,868
+b
+
+133
+00:34:12,227 --> 00:34:12,467
+a
+
+134
+00:34:12,467 --> 00:34:30,227
+a a b and another b so this is a dfa okay so your finite automata okay
+
+135
+00:34:31,587 --> 00:34:37,747
+and how many states we have we have four states okay
+
+136
+00:34:37,747 --> 00:34:51,187
+okay now let's uh try to see what happens when we when we when we give it the string
+
+137
+00:34:51,187 --> 00:34:54,187
+let's say
+
+138
+00:34:54,187 --> 00:35:03,187
+AABB
+
+139
+00:35:03,187 --> 00:35:08,187
+and again
+
+140
+00:35:08,887 --> 00:35:12,427
+how many symbols we have here
+
+141
+00:35:12,427 --> 00:35:13,647
+four symbols
+
+142
+00:35:17,300 --> 00:35:47,279
+Now, let's write the walk here. Okay. Let's write the walk. Walk, meaning the states that the machine goes while accepting this, this, this, this string. So we start with Q1.
+
+143
+00:35:47,300 --> 00:35:59,300
+okay, because that's the initial state. Okay. And we get an A.
+
+144
+00:36:02,643 --> 00:36:04,643
+We got Q2.
+
+145
+00:36:07,643 --> 00:36:09,643
+We get another A.
+
+146
+00:36:11,643 --> 00:36:13,643
+And we got Q3.
+
+147
+00:36:16,643 --> 00:36:17,803
+We get a B.
+
+148
+00:36:21,331 --> 00:36:40,491
+and we go to Q4. Now, notice that after we get one, two, three symbols, now we have, we are,
+
+149
+00:36:42,260 --> 00:36:46,260
+We kind of visited all states, right?
+
+150
+00:36:49,556 --> 00:37:08,835
+Now, for the next B, we have to repeat one of these guys, right? So we get another B, and we are now in Q4 again. And notice that...
+
+151
+00:37:09,588 --> 00:37:12,088
+Q4, this Q4,
+
+152
+00:37:15,088 --> 00:37:16,088
+is repeated.
+
+153
+00:37:23,411 --> 00:37:26,411
+So this state is repeated.
+
+154
+00:37:29,588 --> 00:37:33,948
+and the-
+
+155
+00:37:36,467 --> 00:37:44,467
+You can find other accepting states, so something like
+
+156
+00:37:48,628 --> 00:37:55,987
+for A's and B's. For example, what happens when we have a...
+
+157
+00:37:58,771 --> 00:38:21,372
+A, A, A, B. Well, we start from Q1, we go to Q2 with an A. With another A, we go to Q3. With another A, now we go back to Q2.
+
+158
+00:38:21,372 --> 00:38:24,931
+Q2.
+
+159
+00:38:28,812 --> 00:38:35,812
+Now, with another, with a B, we are failing.
+
+160
+00:38:35,812 --> 00:38:39,011
+So let us write an accepting state.
+
+161
+00:38:39,011 --> 00:38:46,251
+So let me make this 4A and a B. So A, A, A, B.
+
+162
+00:38:46,251 --> 00:38:49,651
+I want to give an accepting example.
+
+163
+00:38:49,651 --> 00:38:58,771
+So with any, so we had one, two, three A's, one, two, three A's, and we are on Q2.
+
+164
+00:39:01,511 --> 00:39:03,071
+Let's have another A.
+
+165
+00:39:04,331 --> 00:39:05,911
+So we go to Q3.
+
+166
+00:39:10,452 --> 00:39:15,452
+and with the final B, we go to Q4.
+
+167
+00:39:18,036 --> 00:39:46,036
+Right now. The thing here is we have one, two, three, four, four states. And now we have five symbols. So, and it is an accepting state. So Q4 is accepting. Let's not forget that.
+
+168
+00:39:50,931 --> 00:40:06,931
+So if you have a string at least four states, you will have repeated states. Here, what is repeating? This guy, Q3, right?
+
+169
+00:40:09,043 --> 00:40:22,043
+repeated state. In fact, not only repeating, but notice that there is a loop here, right?
+
+170
+00:40:22,804 --> 00:40:26,804
+and there is a loop here too, this B loop.
+
+171
+00:40:30,900 --> 00:40:55,139
+So whenever you have a string that has at least a number of states, at least the number of, what did I say?
+
+172
+00:40:55,139 --> 00:41:11,620
+Whenever you have a string with number of symbols, at least number of states in the finite automata, one of the states at least one of the states will repeat.
+
+173
+00:41:12,279 --> 00:41:12,879
+Okay.
+
+174
+00:41:13,719 --> 00:41:17,620
+And there will be a loop there.
+
+175
+00:41:18,279 --> 00:41:18,459
+Okay.
+
+176
+00:41:18,559 --> 00:41:22,819
+So if you think about it, there are more than one loops here.
+
+177
+00:41:22,819 --> 00:41:24,339
+So there is a loop here.
+
+178
+00:41:25,139 --> 00:41:29,139
+Okay, there's another loop here.
+
+179
+00:41:29,139 --> 00:41:33,139
+There's another loop here.
+
+180
+00:41:33,139 --> 00:41:36,139
+So there will be at least one loop.
+
+181
+00:41:36,139 --> 00:41:38,139
+Okay.
+
+182
+00:41:38,139 --> 00:41:50,139
+And the pigeonhole principle comes into the picture here.
+
+183
+00:41:50,139 --> 00:41:55,139
+You only have a stage Q.
+
+184
+00:41:58,547 --> 00:42:10,547
+states Q1, Q2, Q3, and Q4 in this example. And you can say that these are pigeon holes.
+
+185
+00:42:13,076 --> 00:42:27,076
+and you can say that these are pigeons. So these walk states are pigeons. So here we have a one, two, three, four, five, six pigeons.
+
+186
+00:42:29,108 --> 00:42:59,087
+And how many pigeonholes we have? We have four pigeonholes. Okay. And now, when you have four symbols, and at the beginning you have those initial states, so if you have four states and you have four symbols, what will happen is you have four pigeons,
+
+187
+00:42:59,108 --> 00:43:10,108
+But you will have how many, how many pigeon, you will have four pigeon holes, but you will have five pigeons. Right here we have five pigeons.
+
+188
+00:43:20,659 --> 00:43:49,659
+One, two, three, four, five. We have five pigeons. Meaning walk states, let's say. So at least when you try to map these to each other, you'll see that at least one set of pigeons go to the same.
+
+189
+00:43:50,659 --> 00:44:02,659
+pigeonhole. In fact, here I have just noticed that Q2 repeats too. So. Q2 repeats too.
+
+190
+00:44:20,851 --> 00:44:25,351
+So our observation here is.
+
+191
+00:44:30,420 --> 00:44:33,619
+So in general,
+
+192
+00:44:35,315 --> 00:44:36,315
+So this is a first observation, let's say we have in general. If the length of string. Is greater than or equal to. Length of the state set.
+
+193
+00:45:04,371 --> 00:45:05,371
+Then,
+
+194
+00:45:08,659 --> 00:45:19,339
+by this principle, by the pigeonhole principle.
+
+195
+00:45:23,507 --> 00:45:30,507
+A state is repeated.
+
+196
+00:45:33,972 --> 00:45:40,972
+in the walk of W.
+
+197
+00:45:56,884 --> 00:45:58,884
+So somehow,
+
+198
+00:46:04,947 --> 00:46:16,947
+So you have your states here. And. At some point you go into some loop. OK.
+
+199
+00:47:06,291 --> 00:47:07,291
+So we can, we can, that means we can divide this W into three parts. Okay. So we can divide this into three parts. Let's say this is the part
+
+200
+00:47:39,155 --> 00:47:51,155
+So then let me say, so then we can...
+
+201
+00:47:56,211 --> 00:47:57,611
+divide
+
+202
+00:48:01,588 --> 00:48:10,588
+accepted string W into three parts.
+
+203
+00:48:10,588 --> 00:48:22,588
+So we can divide W into three parts. Let us call them X, Y, and Z, Z.
+
+204
+00:48:22,588 --> 00:48:26,588
+Okay. Such that
+
+205
+00:48:31,507 --> 00:48:42,507
+three parts. Let me write here, WHD, X, Y, Z such that,
+
+206
+00:48:49,811 --> 00:49:01,311
+Why repeats? Why can repeat? Or taken out?
+
+207
+00:49:04,115 --> 00:49:07,115
+and
+
+208
+00:49:11,539 --> 00:49:13,539
+the resulting
+
+209
+00:49:15,539 --> 00:49:16,539
+string
+
+210
+00:49:17,539 --> 00:49:19,539
+will still
+
+211
+00:49:20,539 --> 00:49:22,539
+be accepted.
+
+212
+00:49:24,539 --> 00:49:27,539
+So the idea here is,
+
+213
+00:49:27,539 --> 00:49:31,539
+let's say you looked at the walk of
+
+214
+00:49:31,539 --> 00:49:34,539
+this string w
+
+215
+00:49:34,539 --> 00:49:39,539
+and you notice this loop, okay,
+
+216
+00:49:39,539 --> 00:49:45,319
+Okay, and what is the loop here, for example, in A, A, A, A, B?
+
+217
+00:49:46,900 --> 00:49:51,940
+Well, we can see that Q2, Q3 is repeating.
+
+218
+00:49:54,740 --> 00:49:55,620
+Okay.
+
+219
+00:49:57,880 --> 00:50:08,679
+And now you can take out one of these Q2, Q3s and it will still accept.
+
+220
+00:50:09,539 --> 00:50:11,539
+okay so
+
+221
+00:50:16,275 --> 00:50:27,275
+or you can add new Q2, Q2, Q3s here, as much as you want, right? So you can have...
+
+222
+00:50:33,268 --> 00:51:02,268
+You can have in this example, Q1, Q2, Q3, Q2, Q3, Q2, Q3. You can insert as many Q2, Q3s, sorry, Q2, Q3s as you want. It doesn't matter.
+
+223
+00:51:02,268 --> 00:51:14,268
+and the finite automaton will accept those. Finally, you will go to Q4, for example.
+
+224
+00:51:17,139 --> 00:51:42,820
+And so these repeating states here corresponds to this loop part, right? And since this loop, you can use as many of that, as many of those. And let us name these. So this part, I will name as X.
+
+225
+00:51:42,820 --> 00:51:53,700
+and this part I will name as Y, sorry, as Z.
+
+226
+00:51:57,523 --> 00:52:22,523
+and this repeating part, I will name those as Y. So when I said, so XYZ here is not the sets, but it is not the states, but they are the part of the part of the string. Okay.
+
+227
+00:52:22,523 --> 00:52:35,523
+Now, here, y is in the repeating part. So you can increase number of y's or decrease number of y's.
+
+228
+00:52:41,523 --> 00:52:53,107
+Another observation is
+
+229
+00:53:00,244 --> 00:53:04,244
+So let's say observation one.
+
+230
+00:53:25,331 --> 00:53:26,331
+Another observation is. The length of X, Y. Length. Of the length. Of X, Y together. Is equal or less than. M, which is M was number of states by the way.
+
+231
+00:53:59,443 --> 00:54:04,443
+number of states.
+
+232
+00:54:04,443 --> 00:54:14,443
+So if only if only you consider the repeating part. So here in this example, what is the repeating part?
+
+233
+00:54:14,443 --> 00:54:28,443
+So X is the preceding part and Y is the repeating part and there's no Z here, right? So if you if you look at this example here.
+
+234
+00:54:28,443 --> 00:54:56,883
+There is q1. That will be x. So when you go to q1, so this this transition is x. Okay, so this part is x. Now, after that, there is q2 q3 parts. This part. Okay, now that is y.
+
+235
+00:54:58,443 --> 00:55:09,443
+and the length, this length, one, two, that will be less than four.
+
+236
+00:55:09,443 --> 00:55:17,443
+So in that example, x, y is two and m is four.
+
+237
+00:55:17,443 --> 00:55:24,443
+So you will have less than or equal to the states.
+
+238
+00:55:29,108 --> 00:55:34,407
+you have in the states you have in the machine.
+
+239
+00:55:47,027 --> 00:55:56,027
+And the reason for that is again, you have some states.
+
+240
+00:56:01,139 --> 00:56:10,139
+and at some point you enter into a loop.
+
+241
+00:56:14,291 --> 00:56:22,291
+and now we didn't, so X is this part.
+
+242
+00:56:33,427 --> 00:57:00,427
+So if you have like sigma one is your symbol one, sigma two is your symbol two, sigma three is your symbol three. Here X is, X is sigma one, sigma two and sigma three. And then let's say you have a sigma four.
+
+243
+00:57:00,427 --> 00:57:18,427
+So these are again your symbols, sigma 4, sigma 5, sigma 6. So this Y here is then...
+
+244
+00:57:23,315 --> 00:57:28,315
+sigma four, sigma five and sigma six.
+
+245
+00:57:31,395 --> 00:57:32,236
+Now,
+
+246
+00:57:35,395 --> 00:57:37,196
+the, this length,
+
+247
+00:57:39,576 --> 00:57:45,736
+so the length of X and Y together will be less than number of states because,
+
+248
+00:57:47,615 --> 00:57:52,415
+you, or equal to, less than or equal to number of states,
+
+249
+00:57:52,415 --> 00:58:00,975
+because you never reused any state except this one.
+
+250
+00:58:00,975 --> 00:58:03,975
+So let's say this state is Q.
+
+251
+00:58:07,476 --> 00:58:37,455
+So except Q, all states are used only once. Because of that, since we have number of states M, X and Y's length can be only M,
+
+252
+00:58:37,476 --> 00:58:46,715
+m or equal to m. Equal happens when q is repeated and q can repeat only once.
+
+253
+00:58:52,083 --> 00:58:56,083
+And finally, there's another observation.
+
+254
+00:58:59,668 --> 00:59:10,668
+So let's call this, so in the loop, in this loop,
+
+255
+00:59:13,139 --> 00:59:25,139
+So since this must be a loop, there must be at least one transition. So the length of here, the length of Y,
+
+256
+00:59:29,588 --> 00:59:39,827
+must be greater than one or equal to greater than or equal to one.
+
+257
+00:59:44,820 --> 00:59:46,820
+And the reason is again,
+
+258
+00:59:49,820 --> 00:59:54,820
+If you have a loop like this.
+
+259
+00:59:58,420 --> 01:00:02,420
+For this to be looped, there must be at least one transition.
+
+260
+01:00:07,603 --> 01:00:35,603
+This is the first transition. Even if you have a simple loop like this, again, you have a first transition, right? So the Y must be one or more in length.
+
+261
+01:00:38,195 --> 01:00:39,075
+and Turing machine.
+
+262
+01:00:48,052 --> 01:00:51,052
+So let's
+
+263
+01:01:10,452 --> 01:01:19,452
+Let's have a break and after 10 minutes we will continue.
+
+264
+01:01:33,043 --> 01:01:34,043
+and nucleosions.
+
+265
+01:17:07,699 --> 01:17:10,759
+Tekrar merhabalar sesim geliyor mu arkadaşlar?
+
+266
+01:17:14,195 --> 01:17:32,195
+So, let's continue with this. So we had some observations. And the.
+
+267
+01:17:34,707 --> 01:17:56,707
+So let's look at this observation one again. So let's look at the observation one again and work on it a little bit more.
+
+268
+01:18:10,899 --> 01:18:24,399
+So you have some states, you have some transitions, and at some point you have this loop.
+
+269
+01:18:34,355 --> 01:18:54,675
+and we said that the transitions before the loop, let us call them X and the transitions after the loop, let us call them Y, Z sorry.
+
+270
+01:18:54,675 --> 01:19:22,115
+and the transitions inside the loop. Let us call them Y. And we said that we can write any string W that is accepted as this X, Y, and Z as this division. And now,
+
+271
+01:19:26,131 --> 01:19:30,271
+So,
+
+272
+01:19:34,387 --> 01:19:53,387
+This is accepted. We already know this. Okay. Now let's look at W1. X, Y, Y, Z. Will it be accepted?
+
+273
+01:19:56,724 --> 01:20:21,724
+Yes, because one X brings us to the start of the loop. Then with one Y, you again go to the start of the loop. And then with the next Y, you again go to the start of the loop. And then with the Z, you have your accepting state here, probably. You can go to the accept state.
+
+274
+01:20:21,724 --> 01:20:22,603
+OK?
+
+275
+01:20:25,924 --> 01:20:28,764
+So x, y, y, z is accepted.
+
+276
+01:20:31,104 --> 01:20:35,483
+In fact, any number of y's is accepted.
+
+277
+01:20:35,724 --> 01:20:39,503
+So let's write this more concisely.
+
+278
+01:20:39,503 --> 01:20:44,124
+So any number, so how can we write that?
+
+279
+01:20:51,475 --> 01:20:57,475
+So let's write it a little more concisely.
+
+280
+01:20:59,828 --> 01:21:29,287
+X, Y to the I, Z, where I is from zero to infinity, is accepted. So you can have two Ys, three Ys, infinitely many Ys, and it will be still accepted.
+
+281
+01:21:29,828 --> 01:21:45,348
+One thing interesting here is zero is accepted to, so y to the i, x, y to the zero, z means x, z, right? So let's look at that.
+
+282
+01:21:47,588 --> 01:21:56,828
+So e equals to zero means you have x, z, okay?
+
+283
+01:21:56,828 --> 01:22:10,828
+and look at that x and we don't go into the loop we just continue z okay xz is accepted.
+
+284
+01:22:21,395 --> 01:22:22,395
+and, uh,
+
+285
+01:22:28,500 --> 01:22:54,500
+where we say accepted instead of writing it, we can write it as in the language. So we can just write X, Z is in the language of the machine. And this is the pumping lemma actually. I will write this.
+
+286
+01:22:54,500 --> 01:23:22,080
+and
+
+287
+01:23:06,899 --> 01:23:10,959
+pumping lemma.
+
+288
+01:23:17,524 --> 01:23:35,524
+So all these observations now become the pumping lemma. Let's write it first, then we will work on it with examples. So given...
+
+289
+01:23:37,108 --> 01:23:40,108
+given an infinite
+
+290
+01:23:43,108 --> 01:23:44,108
+regulus
+
+291
+01:23:47,764 --> 01:24:04,803
+language, L. So the word regular is key here. Is the regular language. L. There exists an integer M.
+
+292
+01:24:17,363 --> 01:24:35,363
+There exists, exists an integer M. Let us call that critical length.
+
+293
+01:24:42,355 --> 01:24:50,355
+So, for any string,
+
+294
+01:24:58,323 --> 01:24:59,323
+accepted by the language. For instance, Turing accepted by the language with length.
+
+295
+01:25:17,427 --> 01:25:28,308
+So this is length of string, greater than or equal to M. We can write
+
+296
+01:25:35,572 --> 01:25:46,572
+w in terms of x, y and z with
+
+297
+01:25:55,731 --> 01:26:18,731
+x and y's length is less than or equal to m and y is the length of y is greater than or equal to 1 such that
+
+298
+01:26:23,475 --> 01:26:38,475
+x, y to the i, z is in the language, where i is from zero to infinity.
+
+299
+01:26:40,243 --> 01:26:43,683
+So this is the pumping lemma.
+
+300
+01:26:53,747 --> 01:26:56,147
+This is the pumping lemma.
+
+301
+01:27:13,747 --> 01:27:35,747
+in the book, you can read this and instead of M they use P. So instead of M here in the Sipsers book,
+
+302
+01:27:36,372 --> 01:27:45,411
+instead of M they use P and it's called pumping length.
+
+303
+01:27:47,988 --> 01:28:05,988
+So you can either, you can use the word pumping length or you can use the word critical length. And sometimes this is shown by P or sometimes this is shown by M.
+
+304
+01:28:07,252 --> 01:28:12,252
+So how can we apply pumping lemma?
+
+305
+01:28:51,123 --> 01:29:05,123
+We use pumping lemma when we try to understand, when we try to prove a language is not regular.
+
+306
+01:29:08,659 --> 01:29:09,659
+So. We have a language and let's say. Okay. Now, if it is regular.
+
+307
+01:29:32,724 --> 01:29:34,724
+or let's say if a language
+
+308
+01:29:40,787 --> 01:29:51,027
+is finite in size.
+
+309
+01:29:57,076 --> 01:29:59,076
+It is regular.
+
+310
+01:30:02,771 --> 01:30:03,771
+So let's say you have a language like this. A, B, A, A, A, B, whatever. This is a finite language. And it is regular. Why? Because you can easily construct a
+
+311
+01:30:25,203 --> 01:30:36,203
+easily construct a regular finite automata. We can easily construct a finite automata that can accept this.
+
+312
+01:30:54,355 --> 01:31:10,355
+So if it is finite, no problem. It's regular. Now, that means...
+
+313
+01:31:15,220 --> 01:31:20,220
+every non-regular language
+
+314
+01:31:25,395 --> 01:31:26,895
+is infinite.
+
+315
+01:31:35,188 --> 01:31:43,188
+in size. So that means we can use pumping lemma.
+
+316
+01:31:50,131 --> 01:32:00,131
+So, we can use pumping lemma.
+
+317
+01:32:02,100 --> 01:32:04,100
+to prove
+
+318
+01:32:06,228 --> 01:32:10,228
+and infinite.
+
+319
+01:32:13,716 --> 01:32:16,915
+language,
+
+320
+01:32:22,452 --> 01:32:23,452
+is irregular. So if it is finite, no problem. It's regular. If it is infinite, we may use pumping lemma and show that it is irregular. So
+
+321
+01:32:47,828 --> 01:32:48,828
+Provence.
+
+322
+01:32:53,140 --> 01:32:55,140
+and infinite language.
+
+323
+01:33:03,731 --> 01:33:06,111
+not regular or irregular.
+
+324
+01:33:20,627 --> 01:33:33,427
+What we will do is, first, this will be a proof by contradiction. So, we will use proof by contradiction.
+
+325
+01:33:47,220 --> 01:33:57,859
+Okay. We will always use proof by contradiction. And how will we do that? We will assume...
+
+326
+01:33:59,220 --> 01:34:17,220
+language L is regular. So let's change the heading. Proving an infinite language L irregular.
+
+327
+01:34:20,148 --> 01:34:22,148
+Sorry for that.
+
+328
+01:34:45,140 --> 01:34:51,140
+So we assume L is regular for proof by contradiction.
+
+329
+01:34:52,819 --> 01:34:53,819
+So that means pumping lemma should hold for L. And what we do is we use pumping lemma
+
+330
+01:35:22,452 --> 01:35:25,452
+to obtain a contradiction.
+
+331
+01:35:36,148 --> 01:35:46,148
+So we will say that, okay, therefore, L is not regular.
+
+332
+01:36:03,252 --> 01:36:11,252
+So, let's write this in more detail, in more detail.
+
+333
+01:36:22,515 --> 01:36:36,835
+First, we will assume that we will say that let M be the critical length.
+
+334
+01:36:41,492 --> 01:36:43,492
+pushL
+
+335
+01:36:48,180 --> 01:37:16,180
+for language L. So we will assume M is the critical length and M will be M. It will not be a number. Now, the second step will be important. We will choose a string pattern.
+
+336
+01:37:15,091 --> 01:37:19,091
+pattern
+
+337
+01:37:24,979 --> 01:37:31,979
+W in the language L, which
+
+338
+01:37:36,659 --> 01:37:38,659
+satisfies,
+
+339
+01:37:42,836 --> 01:37:44,836
+the condition
+
+340
+01:37:46,195 --> 01:37:52,836
+that length is greater than equal to that critical length M.
+
+341
+01:37:55,716 --> 01:37:56,716
+Okay.
+
+342
+01:37:58,756 --> 01:38:00,715
+So this M,
+
+343
+01:38:05,268 --> 01:38:16,268
+Then we will write W equals to X Y Z.
+
+344
+01:38:17,076 --> 01:38:30,755
+And then we will show that W prime that we obtained by changing the number of Ys.
+
+345
+01:38:33,971 --> 01:38:44,291
+is not in the language. So we will show that. Let me show that there.
+
+346
+01:39:18,131 --> 01:39:47,131
+This is not in the language. So we will show that the new strings we have when changing the number of y's is not in the language. For some i not equal to one. So for one, it is already in the language, but for other y's, so that will be our contradiction.
+
+347
+01:39:55,988 --> 01:40:04,988
+This gives a, this will be a, this will be the contradiction.
+
+348
+01:40:09,427 --> 01:40:10,427
+We need.
+
+349
+01:40:22,323 --> 01:40:33,003
+So, notice that we can, it is sufficient to show that,
+
+350
+01:40:37,203 --> 01:40:50,483
+to show that only one string pattern
+
+351
+01:40:52,500 --> 01:40:54,500
+gives a contradiction.
+
+352
+01:41:02,387 --> 01:41:11,387
+So if we can show that only one string pattern gives a contradiction, that will be enough.
+
+353
+01:41:12,627 --> 01:41:40,627
+So this, this is so far quite, quite abstract. Let's, let's give some examples now that then I think you will be understand, you will understand. So examples.
+
+354
+01:41:39,764 --> 01:41:45,043
+The theorem says that
+
+355
+01:41:48,819 --> 01:41:52,819
+language.
+
+356
+01:41:53,619 --> 01:42:07,939
+A to the N, B to the N, such that N is greater than or equal to zero, is not regular.
+
+357
+01:42:11,699 --> 01:42:19,019
+and we want to prove it. Okay.
+
+358
+01:42:21,619 --> 01:42:50,899
+So let's look at that. Let's look at the proof. Before that, what kind of language is this? Let's look at what we have here. So for n equals to zero, we have a null string. For n equals to one, we have a, b. For n equals to two, we have a, a, b, b.
+
+359
+01:42:50,899 --> 01:43:00,739
+So we have some A's and the same amount of B's after that.
+
+360
+01:43:00,739 --> 01:43:04,739
+So how can we prove that?
+
+361
+01:43:04,739 --> 01:43:06,899
+So let's look at this.
+
+362
+01:43:06,899 --> 01:43:10,899
+First, we will assume M is the critical length.
+
+363
+01:43:10,899 --> 01:43:13,459
+So step one.
+
+364
+01:43:13,459 --> 01:43:14,459
+Step one.
+
+365
+01:43:14,459 --> 01:43:20,139
+M is the critical length.
+
+366
+01:43:20,140 --> 01:43:47,719
+and
+
+367
+01:43:25,555 --> 01:43:26,555
+step two. Now we choose to find a string pattern. So we need to find a pattern with M in it. Okay. So you need a pattern with M dash. Okay. So what can it be? And the condition is
+
+368
+01:43:55,555 --> 01:44:21,555
+and then, the length of the pattern must be greater than M. Okay. So one thing very natural is here, let the pattern be A to the M, B to the M. Okay. Because A to the M, B to the M, what is the length of that?
+
+369
+01:44:21,555 --> 01:44:49,435
+length of this will be two m's, right? And two m's greater than one m. So we have this condition. Nice. And it's very natural because since the pattern, original pattern, the language accepts is a to the n, b to the n,
+
+370
+01:44:49,435 --> 01:44:58,435
+constructing or pattern as A to the M, B to the M is quite natural.
+
+371
+01:44:58,435 --> 01:45:17,435
+So that's good. Now we need to show that for some i, if we divide this W as x, y, z,
+
+372
+01:45:17,435 --> 01:45:23,435
+it will not be in L.
+
+373
+01:45:27,731 --> 01:45:28,731
+So,
+
+374
+01:45:33,747 --> 01:45:34,747
+So in the proof, actually we have forgotten some first steps. We should say. Assume. So let me write this is zero. Assume. For contradiction.
+
+375
+01:46:01,395 --> 01:46:02,395
+and L is regular. Okay. We first assume L is regular. And then. Since. L is infinite. Pumping lemma.
+
+376
+01:46:25,779 --> 01:46:27,079
+should hold
+
+377
+01:46:31,155 --> 01:46:34,195
+So,
+
+378
+01:46:40,948 --> 01:46:52,948
+So that was the first step actually. So you first assume that L is regular and since
+
+379
+01:46:55,539 --> 01:47:00,539
+L is infinite.
+
+380
+01:47:00,539 --> 01:47:06,539
+Then pumping lemma should hold. Then we start applying the pumping lemma.
+
+381
+01:47:07,539 --> 01:47:13,539
+Sesim geliyor mu arkadaşlar?
+
+382
+01:47:13,939 --> 01:47:20,380
+Biraz kesildi hocam. Şu an iyi geliyor. Demin bende de kesildi hocam. Evet, internet bir kötü falan dedi de.
+
+383
+01:47:35,988 --> 01:47:58,988
+Okay, so, so we assume for contract the contradiction L is regular and since L is infinite, pumping lemma should hold and then we start applying the pumping lemma. First, M is, let's assume M is the critical length.
+
+384
+01:47:58,988 --> 01:48:05,947
+and then we select a pattern like W equals to A to the M, B to the M.
+
+385
+01:48:05,947 --> 01:48:10,208
+And we make sure that whatever pattern we select,
+
+386
+01:48:11,068 --> 01:48:16,227
+it has M in it and also its length is greater than M.
+
+387
+01:48:17,127 --> 01:48:22,467
+So this should be, this is important.
+
+388
+01:48:22,467 --> 01:48:52,068
+Okay. And now, now we need to show for any kind of, for any kind of division of x, y, z, you cannot have a loop. You cannot have different values of y, i.
+
+389
+01:48:52,467 --> 01:48:59,467
+So let's continue with that. So three. So let's say
+
+390
+01:49:07,699 --> 01:49:10,019
+and, you know,
+
+391
+01:49:18,996 --> 01:49:31,996
+So, we will write, we need to write W equals to X, Y, Z with,
+
+392
+01:49:34,100 --> 01:49:37,419
+the length of x, y is,
+
+393
+01:49:41,171 --> 01:49:54,171
+Less than or equal to M and the length of Y is greater than or equal to 1. So we will try to write those.
+
+394
+01:50:00,692 --> 01:50:10,692
+and write such divisions. So,
+
+395
+01:50:11,123 --> 01:50:25,283
+Let's try to do this. W here. Division is like, let's say we have some A's.
+
+396
+01:50:34,068 --> 01:50:37,308
+and then some Bs.
+
+397
+01:50:41,395 --> 01:50:53,395
+and the number of A's is M and number of B's is M.
+
+398
+01:50:56,500 --> 01:51:26,479
+and now we need to select x's, y's, x, y and z here. Okay. What can we do? First of all, this helps us a lot. The length of x, y must be less than m. Okay. So that means we cannot do this. For example, this is x.
+
+399
+01:51:26,500 --> 01:51:46,260
+and this is why. Can we do that? No. Why? Because the length of x, y must be less than m. Okay. So less than or equal to m. Okay. So this is not possible.
+
+400
+01:51:46,259 --> 01:51:58,259
+So what we can do is maybe, maybe this part.
+
+401
+01:52:03,667 --> 01:52:27,667
+Let's let me call that X. And let's say this part is Y. And the rest will be Z. The rest will be Z. And the...
+
+402
+01:52:31,220 --> 01:52:44,659
+and here Y is some A's. Let's say we have K A's here.
+
+403
+01:52:46,355 --> 01:53:16,335
+So y is a to the k where k is between what can be, you can at least have one a there. Okay. And at max, maximum value for k can be m. Meaning x can be empty.
+
+404
+01:53:16,355 --> 01:53:37,415
+So if you wish, you can do something like that. All of this can be Y. It's all right. So you can do something like, this is all Y. It's okay. X will be empty.
+
+405
+01:53:37,415 --> 01:53:56,795
+The big helpful thing for us is that X and Y together must be less than M in length and they must start, they must be at the beginning, right?
+
+406
+01:53:56,795 --> 01:54:09,395
+That helps us in confining or in reducing the possible patterns, possible divisions we can have.
+
+407
+01:54:10,395 --> 01:54:14,155
+So this was K.
+
+408
+01:54:17,755 --> 01:54:26,095
+So we say that thus, we choose Y as this.
+
+409
+01:54:26,795 --> 01:54:40,755
+A to the K, and K can be from one to the M, and X will be based on that, X will be A to the M minus K, right?
+
+410
+01:54:43,375 --> 01:54:46,975
+Or even it may not, it may be different, sorry.
+
+411
+01:54:48,295 --> 01:54:49,175
+Doesn't really matter.
+
+412
+01:54:49,175 --> 01:54:59,815
+Now, let's look at what will happen if k is 2.
+
+413
+01:55:07,028 --> 01:55:12,047
+What will happen if K is 2?
+
+414
+01:55:15,155 --> 01:55:40,275
+Sorry. If we have K equals to 2, what will happen? Well, we will add K more A's here, and our pattern will be now, our new string will be
+
+415
+01:55:40,275 --> 01:55:51,135
+a to the m plus k and then b to the m, right?
+
+416
+01:55:52,135 --> 01:55:56,895
+Because originally it was a to the m, b to the m, right?
+
+417
+01:55:58,115 --> 01:55:58,735
+And
+
+418
+01:56:07,444 --> 01:56:15,444
+Now we are making K2. That means...
+
+419
+01:56:18,163 --> 01:56:20,203
+Sorry.
+
+420
+01:56:23,475 --> 01:56:25,475
+We are making A2. Sorry.
+
+421
+01:56:34,899 --> 01:57:04,519
+We are increasing the number of y's from one to two. So we will have one more a to the k, right? So then we will have one more a to the k and then our pattern will be a to the m plus k, b to the m. And this should be in the language.
+
+422
+01:57:04,519 --> 01:57:07,879
+so this should be acceptable.
+
+423
+01:57:16,083 --> 01:57:18,443
+and, uh,
+
+424
+01:57:20,500 --> 01:57:37,500
+for K larger than one, right? If K is equal to one, it's okay, but if K is greater than one,
+
+425
+01:57:39,028 --> 01:57:41,028
+So,
+
+426
+01:57:52,340 --> 01:57:53,179
+and Turing machine.
+
+427
+01:57:57,268 --> 01:58:02,268
+So there is no if here. So K is greater than one.
+
+428
+01:58:07,188 --> 01:58:09,327
+So we have 3 yaşını, buyurun.
+
+429
+01:58:10,047 --> 01:58:12,527
+Burada i ne, k ne tamamlaşılmıyor da.
+
+430
+01:58:15,827 --> 01:58:17,307
+Tekrar soru duyamadım.
+
+431
+01:58:18,367 --> 01:58:22,427
+Burada i ne hocam, k ne. Orayı anlamadım yani.
+
+432
+01:58:22,747 --> 01:58:24,227
+i neyi temsil ediyor, k neyi.
+
+433
+01:58:24,227 --> 01:58:26,147
+Şöyle.
+
+434
+01:58:31,747 --> 01:58:32,827
+W
+
+435
+01:58:32,827 --> 01:58:47,427
+x, y to the e, z şeklinde yazabilmemiz lazım. Yani şöyle x, y to the z şeklinde yazacağız.
+
+436
+01:58:51,380 --> 01:58:56,219
+x, y to the e z'lerin hala dilde olduğunu göstereceğiz.
+
+437
+01:58:59,360 --> 01:59:04,239
+Yani y'nin sayısını değiştirdiğimizde hala dilde olması lazım.
+
+438
+01:59:04,539 --> 01:59:07,980
+Dil, o dil içerisinde olması lazım.
+
+439
+01:59:09,939 --> 01:59:12,159
+Burada y'yi ne seçtik?
+
+440
+01:59:12,739 --> 01:59:14,019
+A to the k'yi seçtik.
+
+441
+01:59:15,199 --> 01:59:15,539
+Değil mi?
+
+442
+01:59:17,179 --> 01:59:19,499
+Dolayısıyla orijinal hali neydi?
+
+443
+01:59:21,380 --> 01:59:46,479
+X, A to the K, Z idi. Değil mi? Şimdi İ'yi 2 yaparsak ne olacak? X, A to the K, A to the K, Z olacak. Ne için bu? İ 2 için. Değil mi?
+
+444
+01:59:46,479 --> 01:59:50,639
+X
+
+445
+01:59:54,292 --> 01:59:57,891
+XA,
+
+446
+02:00:00,948 --> 02:00:21,767
+ve Z zaten neye eşit? AM, B, M'e eşit. Orjinal, değil mi? Burada bir AK daha geldi. Ve bu A. Dolayısıyla şuraya yazacağız. A'ların yanına yazacağız.
+
+447
+02:00:34,484 --> 02:00:36,484
+Okağı buradan gelmiş olacak.
+
+448
+02:00:39,828 --> 02:00:44,067
+Sağ olun hocam anladım.
+
+449
+02:00:44,067 --> 02:00:52,267
+Evet. İ'yi mesela dolayısıyla hatta İ'den yola çıkarak burayı yazmaya çalışsak ne oluyor?
+
+450
+02:00:53,668 --> 02:01:03,928
+A, M, İ, eksi bir, K. Bir M oluyor değil mi?
+
+451
+02:01:03,928 --> 02:01:10,787
+Yani i-1 tane K geliyor buraya. Şuraya.
+
+452
+02:01:14,323 --> 02:01:27,823
+şöyle. i-1 tane k geliyor oraya. i1 ise k'lar gidiyor a üzeri m, b üzeri m oluyor. Böyle bir şey var.
+
+453
+02:01:34,387 --> 02:01:41,507
+Ama burada ne görüyoruz? Bu dilimizin içinde değil değil mi?
+
+454
+02:01:49,171 --> 02:02:05,971
+So if A is 2, we have W prime as A to the M plus K B M in L for K greater than 1. But...
+
+455
+02:02:07,828 --> 02:02:10,828
+eeeeh
+
+456
+02:02:12,595 --> 02:02:40,595
+a to the M plus K, B to the M for K greater one is not in the language. Because this language, in this language, number of A's and number of B's must be equal. So this is, which is a contradiction.
+
+457
+02:02:50,868 --> 02:02:54,307
+So we say that therefore
+
+458
+02:03:00,435 --> 02:03:03,795
+or initial assumption that
+
+459
+02:03:10,996 --> 02:03:12,996
+L is regular
+
+460
+02:03:15,695 --> 02:03:17,496
+was wrong
+
+461
+02:03:25,460 --> 02:03:29,219
+or not true, was not true.
+
+462
+02:03:43,731 --> 02:03:45,731
+So as a conclusion.
+
+463
+02:03:52,467 --> 02:03:53,467
+L is not a regular language. So this was the first example we had for. Example for application of a pumping lemma. We will do one or two more.
+
+464
+02:04:22,467 --> 02:04:26,467
+let's have a 10 minutes break and when we come we will continue.
+
+465
+02:04:29,467 --> 02:04:31,467
+There was a chat message, okay.
+
+466
+02:04:35,572 --> 02:04:37,572
+10 minutes break.
+
+467
+02:14:33,939 --> 02:14:36,579
+Tekrar merhabalar. Sesim geliyor mu arkadaşlar?
+
+468
+02:14:39,860 --> 02:14:40,839
+Geliyor hocam.
+
+469
+02:14:41,380 --> 02:14:42,059
+Geliyor, tamam.
+
+470
+02:14:57,363 --> 02:14:58,363
+ne yapalım?
+
+471
+02:15:01,764 --> 02:15:03,363
+Bir örnek daha yapalım.
+
+472
+02:15:15,475 --> 02:15:18,475
+مثلا
+
+473
+02:15:21,108 --> 02:15:23,727
+So let's do another example.
+
+474
+02:15:29,268 --> 02:15:33,427
+Let's say our theorem says that
+
+475
+02:15:44,275 --> 02:15:45,275
+this language A to the N, B to the L, C to the N plus L such that N and L are zero or more is non-linear.
+
+476
+02:16:14,275 --> 02:16:19,656
+regular, we want to prove that.
+
+477
+02:16:21,275 --> 02:16:21,476
+Okay.
+
+478
+02:16:23,215 --> 02:16:26,515
+So what do we have here?
+
+479
+02:16:27,656 --> 02:16:32,435
+So if both are zero, we have empty set.
+
+480
+02:16:34,176 --> 02:16:40,775
+If N is one, let's say we have A and C.
+
+481
+02:16:40,775 --> 02:16:50,136
+If N and L are ones, we have A, E, C, C, etc.
+
+482
+02:16:52,536 --> 02:16:59,735
+So this is a little more flexible, right?
+
+483
+02:17:02,136 --> 02:17:06,915
+So how do we start for the proof?
+
+484
+02:17:11,956 --> 02:17:14,995
+and Turing machine,
+
+485
+02:17:16,788 --> 02:17:21,788
+We start by assuming for the contradiction.
+
+486
+02:17:32,147 --> 02:17:38,307
+L is regular
+
+487
+02:17:40,884 --> 02:17:59,523
+and since L is infinite in size, we can use pumping lemma.
+
+488
+02:18:05,012 --> 02:18:07,411
+Let's assume
+
+489
+02:18:10,579 --> 02:18:12,579
+M is the critical length.
+
+490
+02:18:20,308 --> 02:18:47,308
+So this part, this much is always the same. Now, what do we need to do? We need to pick a string such that, so we need to find a pattern, string pattern. Pick a string pattern.
+
+491
+02:18:50,308 --> 02:18:52,947
+that has M in it.
+
+492
+02:18:54,028 --> 02:19:01,587
+And the length of the pattern must be greater than M or equal to it.
+
+493
+02:19:03,107 --> 02:19:09,267
+So what is a natural selection here?
+
+494
+02:19:09,267 --> 02:19:23,867
+We can say, for example, W is equal to A to the M, B to the M, C to the 2M, for example.
+
+495
+02:19:24,627 --> 02:19:33,388
+This is in the language, and length of this is 4M, right?
+
+496
+02:19:33,787 --> 02:19:38,267
+M plus M plus 2M, 4M, and it will be greater than M.
+
+497
+02:19:39,267 --> 02:20:01,267
+Okay. So this should work. Now, we need to divide this, right? So we need to divide this into x, y, z. So we can write...
+
+498
+02:20:04,308 --> 02:20:05,308
+w equals to x, y, z, equals to a to the m, b to the m, c to the 2 m, with lengths,
+
+499
+02:20:23,188 --> 02:20:48,188
+x, y is greater, less than or equal to m and y is larger than m. So here, again, this helps us to reduce, these two help us in reducing the number of different divisions we can choose.
+
+500
+02:20:48,188 --> 02:21:13,868
+We need to prove that all divisions are, all divisions give a contradiction. So let's see. Now, since x, y is less than m, x, y will be inside these a's, right?
+
+501
+02:21:13,868 --> 02:21:18,188
+So let's write that.
+
+502
+02:21:22,100 --> 02:21:25,959
+So,
+
+503
+02:21:30,868 --> 02:21:32,868
+w is equal to
+
+504
+02:21:38,868 --> 02:21:40,868
+some a's
+
+505
+02:21:49,203 --> 02:22:13,683
+and some B's, let's say, and some G's, some C's, sorry. And we have M such A's here. M such B's here. And 2M. So this should be M.
+
+506
+02:22:16,755 --> 02:22:34,755
+and such piece here. Now this helps us because X and Y must be less than M and these must be at the start because X is at the start. This must be Z, sorry.
+
+507
+02:22:34,755 --> 02:22:36,755
+X, Y, Z.
+
+508
+02:22:38,324 --> 02:23:06,863
+So from the beginning to here, XY must be here. XY must be here. So that means Y can only be A's, right? Some A's. A to the K, let's say again. So some of these might be K and there must be at least one element in Y.
+
+509
+02:23:06,863 --> 02:23:33,623
+So K must be one or greater than it. And K can be maximum M because all of them, all of these can be Y's and X may be in this case, no. Right. So if Y is M, that means X is M set.
+
+510
+02:23:37,427 --> 02:24:06,747
+And now, the, the, pumping lemma says that, X, let me write this way, these W primes that you obtain by changing the number of Ys, are in the length.
+
+511
+02:24:07,427 --> 02:24:15,268
+where i is in, i is from zero to infinite.
+
+512
+02:24:16,707 --> 02:24:22,468
+So let's try something different this time.
+
+513
+02:24:22,468 --> 02:24:26,828
+In the previous example, we pumped up.
+
+514
+02:24:29,347 --> 02:24:32,747
+So let's pump down, okay?
+
+515
+02:24:32,847 --> 02:24:36,447
+Meaning that we decrease the number of y's.
+
+516
+02:24:36,448 --> 02:24:43,448
+So let's see. For i equals to zero.
+
+517
+02:24:47,412 --> 02:24:49,412
+What do we have?
+
+518
+02:24:52,412 --> 02:24:55,412
+We have
+
+519
+02:25:00,564 --> 02:25:28,683
+A to the M minus K because K of these A's were in X, in Y and we say that we will use no Y's. We are pumping down. And then the rest B and C are not touched. B to the M and C.
+
+520
+02:25:30,564 --> 02:25:45,363
+to do 2m where k is greater than or equal to 1. Must be in the language.
+
+521
+02:25:48,979 --> 02:25:52,979
+But is this in the language?
+
+522
+02:26:02,484 --> 02:26:05,823
+Well, this is not in the language because
+
+523
+02:26:10,243 --> 02:26:17,243
+m minus k plus m is not equal to 2m, right?
+
+524
+02:26:17,783 --> 02:26:18,404
+The
+
+525
+02:26:22,355 --> 02:26:50,355
+This language says that the number of C's must be number of A's plus number of B's, right? So number of, if you sum up number of A's and number of B's, clearly since K is larger than one, it is not zero.
+
+526
+02:26:50,355 --> 02:26:57,355
+clearly these two are not equals. So we have a contradiction.
+
+527
+02:27:08,435 --> 02:27:13,435
+So since this is not equal,
+
+528
+02:27:14,435 --> 02:27:15,435
+uh,
+
+529
+02:27:15,435 --> 02:27:18,435
+.
+
+530
+02:27:21,811 --> 02:27:36,131
+A to the M minus K, B to the M, C to the 2M, where K is greater than 1, is not
+
+531
+02:27:37,940 --> 02:27:45,940
+in L. And this is a contradiction.
+
+532
+02:27:51,379 --> 02:27:57,939
+So, O'Ur's initial assumption
+
+533
+02:27:59,283 --> 02:28:07,783
+that L is regular, is not true.
+
+534
+02:28:13,396 --> 02:28:16,396
+and this is the end of the proof.
+
+535
+02:28:16,396 --> 02:28:17,396
+Okay.
+
+536
+02:28:24,404 --> 02:28:26,404
+Any questions with this?
+
+537
+02:28:40,564 --> 02:28:45,564
+I will do one more pumping lemma examples.
+
+538
+02:28:51,540 --> 02:28:52,540
+example. And in this case, L equals to A to the N factorial, where N is greater than or equal to zero, is not regular. Prove. We want to prove this. So,
+
+539
+02:29:21,540 --> 02:29:29,620
+again, the start is same, assume for contradiction,
+
+540
+02:29:34,644 --> 02:29:51,443
+L is regular. Since L is infinite, we can use pumping lemma.
+
+541
+02:29:53,811 --> 02:30:21,811
+Let's assume M is the critical length. So this part is same. Now we need to write a pattern. Right? So we need to write a pattern that has M. This should be M.
+
+542
+02:30:23,507 --> 02:30:52,507
+in it and the length of the pattern must be greater than m. So one natural selection might be a to the m factorial, right? If we select a to the m factorial, the length of this will be m factorial.
+
+543
+02:30:53,507 --> 02:31:19,507
+and that's greater than M. So this is good. Now we say that we can divide this W into x, y, z such that the size of x, y is less than or equal to M.
+
+544
+02:31:19,507 --> 02:31:27,588
+and size of y is more.
+
+545
+02:31:27,588 --> 02:31:49,487
+And in this case, w primes where x, y, i, z, where i is 0 to 0.
+
+546
+02:31:49,507 --> 02:31:54,507
+and infinity are in our language.
+
+547
+02:31:56,567 --> 02:32:01,567
+So let's see if we can find a contradiction here.
+
+548
+02:32:03,207 --> 02:32:08,707
+So here, everything is A.
+
+549
+02:32:08,707 --> 02:32:13,707
+So W equals X, Y is A.
+
+550
+02:32:13,707 --> 02:32:20,188
+and we all have ACs, we only have ACs.
+
+551
+02:32:24,788 --> 02:32:52,527
+Now, how many A's we have? We have M factorial A's. And now, what can we select for Y? We know that X, Y, this is again very helpful, X, Y is less than or equal to M. So from the start, up to some point, it will be X, Y.
+
+552
+02:32:52,527 --> 02:33:12,527
+and X can be a null or any number. So we doesn't really care what X is, but Y must be minimum NA because length of Y is greater than one or equal to it.
+
+553
+02:33:12,527 --> 02:33:26,087
+So then y is again something like a to the k where k is minimum one.
+
+554
+02:33:29,907 --> 02:33:37,348
+and the maximum, it can be M, right? Because...
+
+555
+02:33:39,156 --> 02:33:57,156
+If you assume X is now. All of them. All of the X, Y is Y and it must be less than or equal to M. So maximum, the K, this K can be M.
+
+556
+02:34:03,667 --> 02:34:10,667
+So let's see. Let's see.
+
+557
+02:34:10,667 --> 02:34:16,667
+What happens we pump up.
+
+558
+02:34:26,291 --> 02:34:31,291
+and the rest, by the way, Z is, sorry.
+
+559
+02:34:36,468 --> 02:34:40,468
+The rest is it.
+
+560
+02:34:40,468 --> 02:34:44,468
+And the.
+
+561
+02:34:47,572 --> 02:35:07,811
+Let's see if, if I equals to two, we have, what do we have? X, Y to the two, Z must be in the language. So we have,
+
+562
+02:35:07,811 --> 02:35:11,811
+X, Y to the two, Z must be in the language. So we have,
+
+563
+02:35:11,811 --> 02:35:13,811
+X, Y to the two, Z must be in the language.
+
+564
+02:35:16,147 --> 02:35:45,527
+So we have one more case there. So we have a to the m factorial plus k. Right? Because originally this was x, y, z. x, y, z was a to the m factorial. Now we have one more y. Right? And y is a to the k.
+
+565
+02:35:45,527 --> 02:35:53,188
+So we have A to the K. So we have A to the M factorial plus K.
+
+566
+02:36:00,435 --> 02:36:30,415
+So x, y to z is equal to a to the m factorial k. And now, and we say that this is in the language. What that means is m plus, m factorial plus k is factorial of some other.
+
+567
+02:36:30,435 --> 02:36:33,136
+other numbers, right?
+
+568
+02:36:33,136 --> 02:36:42,735
+Then m factorial plus k must be factorial of some number.
+
+569
+02:36:42,735 --> 02:36:45,796
+Let us call it p.
+
+570
+02:36:52,691 --> 02:36:55,371
+Okay. Or let me call it N.
+
+571
+02:36:58,995 --> 02:37:24,795
+So there must be then, there must be, there is an N such that the factorial of N is M's factorial plus some number K. But remember, K has a, K has a,
+
+572
+02:37:24,795 --> 02:37:38,795
+K has bounds. K can be minimum one, maximum M. So,
+
+573
+02:37:48,404 --> 02:37:54,523
+However, so, we say that then,
+
+574
+02:37:55,956 --> 02:38:09,275
+There is, there is an N such that M factorial plus K is equals to N factorial. However,
+
+575
+02:38:11,731 --> 02:38:16,051
+There is no such, there is no such,
+
+576
+02:38:24,564 --> 02:38:37,763
+However, there is no such end because this can be showed. So let's say we have.
+
+577
+02:38:40,275 --> 02:39:09,275
+So we can start by m factorial plus k. And we know that this is less than or equal to m factorial plus m. Then this is again smaller than or equal to m. Because m factorial is greater than m, we can just write this.
+
+578
+02:39:10,275 --> 02:39:27,176
+and then we can write m factorial times m plus m factorial because again this is larger than this guy and that is larger than this guy and that is larger than this guy.
+
+579
+02:39:35,219 --> 02:39:58,219
+And then now, this, this here, is equal to M factorial times M plus one. And which is, this is M factorial, M plus one's factorial.
+
+580
+02:40:01,843 --> 02:40:26,843
+Again, here we have M factorial plus K, M factorial plus K. So we say that K, if we sum up M factorial with some K, it will be less than...
+
+581
+02:40:26,708 --> 02:40:44,708
+It will be less than or equal to m plus one factor here actually even better at some point it is less than so here it is less it became less than
+
+582
+02:41:01,780 --> 02:41:02,780
+So when we multiply m factorial with m, it will be a larger number. And here we are talking about 4 m greater than 1. Okay. So we assume m is greater than 1 here.
+
+583
+02:41:31,780 --> 02:41:35,460
+assumption, assumption.
+
+584
+02:41:35,460 --> 02:41:37,219
+And so,
+
+585
+02:41:45,012 --> 02:42:11,692
+This sum M factorial plus K is less than the smallest factorial after M. Okay. It is small. Therefore, it cannot be equal to any P, any N's factorial. So therefore,
+
+586
+02:42:13,075 --> 02:42:15,075
+m plus 1,
+
+587
+02:42:20,788 --> 02:42:48,788
+So, M factorial plus K is not equal to N factorial for any N. And now that is our contradiction because we said that there is an N such that N factorial plus K equals to N factorial. But here we are saying that there is no such N.
+
+588
+02:42:48,788 --> 02:42:54,788
+So, this is our contradiction.
+
+589
+02:43:17,299 --> 02:43:27,299
+because if there's no such N, that means, let's first write that.
+
+590
+02:43:28,659 --> 02:43:52,659
+That means, A to the M plus K, which was X, Y to 2, Z, remember? Is not in the language.
+
+591
+02:44:00,979 --> 02:44:05,979
+So this is not in the language.
+
+592
+02:44:10,100 --> 02:44:23,699
+hence, we obtained a contradiction.
+
+593
+02:44:29,492 --> 02:44:38,452
+So, our initial assumption,
+
+594
+02:44:42,291 --> 02:44:43,532
+that
+
+595
+02:44:47,123 --> 02:44:50,923
+L is regular
+
+596
+02:44:54,515 --> 02:44:55,515
+was wrong. OK. So we applied pumping lemma three times. Any questions about this?
+
+597
+02:45:13,716 --> 02:45:26,995
+Okay. Let's try to do a summary of how we can prove the things. Summary.
+
+598
+02:45:37,843 --> 02:45:47,843
+So, what can you have? If L is finite,
+
+599
+02:45:51,092 --> 02:45:52,092
+We have that L is regular. No problem there. Now, if L is infinite, L may be
+
+600
+02:46:10,451 --> 02:46:39,712
+regular or irregular. Okay. Now we need to prove those. So to prove, how can we prove regularity? Okay. We can prove a language L regular,
+
+601
+02:46:40,451 --> 02:46:49,931
+by giving a finite automata or regular expression.
+
+602
+02:46:57,203 --> 02:47:16,203
+So, we didn't see regular expressions, but you already should know them or in the next lecture I may or you just read from the book.
+
+603
+02:47:19,412 --> 02:47:37,932
+what regular expressions are. They are very easy. So, and they are equivalent to finite automata. So finite automata, so you can just give a finite automata.
+
+604
+02:47:40,979 --> 02:47:45,340
+and say that this finite automata accepts
+
+605
+02:47:49,108 --> 02:47:50,108
+and say you say, okay, since this M accepts this language, that language is regular. Or you can say this language.
+
+606
+02:48:09,203 --> 02:48:11,203
+is generated
+
+607
+02:48:14,100 --> 02:48:20,339
+by this regular expression.
+
+608
+02:48:35,028 --> 02:48:36,888
+And again, this will be
+
+609
+02:48:42,451 --> 02:48:47,451
+Let's not let's not write the regular expression thing.
+
+610
+02:48:54,963 --> 02:49:05,804
+So we can prove an L regular by giving a finite automata. You can give a finite automata that accepts L.
+
+611
+02:49:13,556 --> 02:49:40,556
+Now, if we cannot find a finite automata, this is not a proof that L is irregular. So if you prove, if you give, if you can design a finite automata that accepts L, L is regular. But if you cannot design, it doesn't mean that it is regular.
+
+612
+02:49:40,556 --> 02:49:59,316
+So prove for irregularity. We can prove. Language L irregular. Using. Pumping lemma.
+
+613
+02:50:03,763 --> 02:50:21,043
+So this finally, we can use set closure.
+
+614
+02:50:23,412 --> 02:50:26,652
+for proving.
+
+615
+02:50:28,595 --> 02:50:33,195
+language is aar, el is regular or irregular.
+
+616
+02:50:39,667 --> 02:50:40,667
+set closure. We have talked about this. So. Regular, for example.
+
+617
+02:50:58,611 --> 02:51:12,291
+regular languages are closed under intersection.
+
+618
+02:51:14,515 --> 02:51:29,755
+So if you have two regular language and intersect them, that will be a regular language too. So you can use that idea for proving a language is regular too.
+
+619
+02:51:36,564 --> 02:51:38,564
+So that's
+
+620
+02:51:40,564 --> 02:51:42,564
+The end of the lecture today.
+
+621
+02:51:48,404 --> 02:52:00,404
+Before closing, let me check what did we have in the study sheet we gave to you.
+
+622
+02:52:06,644 --> 02:52:08,243
+So,
+
+623
+02:52:11,796 --> 02:52:19,796
+study the rest of
+
+624
+02:52:23,283 --> 02:52:36,643
+study sheet. One. So I gave you the study sheet I shared to you.
+
+625
+02:52:55,283 --> 02:53:22,283
+So remember I gave you this worksheet. And questions 1 to 12 were for DFAs. Now we learned NFAs too, so you should be able to do questions 13 to 17.
+
+626
+02:53:26,899 --> 02:53:32,099
+Buna çalıştınız mı arkadaşlar? Çok faydalı bir study sheet bu.
+
+627
+02:53:33,899 --> 02:53:38,099
+Bunun ilk 12 tanesi DFA'lerle ilgiliydi.
+
+628
+02:53:40,499 --> 02:53:43,099
+Gerisi NFA'lerle ilgiliydi.
+
+629
+02:53:45,500 --> 02:53:49,899
+Bugünden itibaren bu gerisini yapabilirsiniz, yapın yani.
+
+630
+02:53:50,399 --> 02:53:52,299
+NFA'lerle ilgili.
+
+631
+02:54:11,412 --> 02:54:17,412
+kitaptan da nereyi bitirmiş olduk?
+
+632
+02:54:27,188 --> 02:54:29,908
+kitaptan da...
+
+633
+02:54:45,652 --> 02:54:49,051
+Part One, Chapter One. Chapter One'ı bitirmiş olduk.
+
+634
+02:54:52,275 --> 02:55:10,876
+chapter 1'ı bitirmiş olduk. X-Xen sayfa. Dolayısıyla chapter 1'ın sonundaki egzersizleri, problemleri yapabilirsiniz. Şuradaki regular expressions'ı atladık. Bunlar basit, bunları da okumanız gerekiyor. 63'den 66'ya kadar.
+
+635
+02:55:19,412 --> 02:55:21,412
+Dolayısıyla
+
+636
+02:55:28,308 --> 02:55:32,308
+study,
+
+637
+02:55:38,324 --> 02:55:45,324
+Chapter 1, Exercises and Problems.
+
+638
+02:55:49,587 --> 02:55:51,587
+from Sipser.
+
+639
+02:55:58,484 --> 02:56:01,523
+Regular expressions
+
+640
+02:56:01,523 --> 02:56:27,543
+the
+
+641
+02:56:20,275 --> 02:56:26,015
+Peki sorunuz vs. varsa sorabilirsiniz yoksa kapatıyorum.
+
+642
+02:56:28,736 --> 02:56:30,175
+İyi günler hocam.
+
+643
+02:56:30,495 --> 02:56:32,515
+İyi günler. Peki arkadaşlar. Görüşürüz.

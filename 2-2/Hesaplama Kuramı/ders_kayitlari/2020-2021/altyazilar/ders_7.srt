@@ -1,0 +1,1911 @@
+1
+00:04:08,756 --> 00:04:11,075
+Merhabalar, sesim geliyor mu arkadaşlar?
+
+2
+00:04:16,468 --> 00:04:17,487
+Evet hocam.
+
+3
+00:04:17,987 --> 00:04:18,708
+Peki sağ olun.
+
+4
+00:04:28,148 --> 00:04:29,148
+So this week I decided to return back to regular expressions. Normally we have seen pumping lemma and irregular languages here. And I told you to read the regular expressions yourselves. But
+
+5
+00:04:58,148 --> 00:05:25,667
+I decided to spend some time on it because we have been going a little, just a little bit faster. I think we have enough time to cover regular expressions. So let's do that and then we will continue with context-free grammars. So I will add a new notebook here.
+
+6
+00:05:33,012 --> 00:05:37,012
+Hocam sınav 15 dakika mı olacak, 1 saat mi olacak?
+
+7
+00:05:39,012 --> 00:05:41,012
+15 dakika.
+
+8
+00:05:41,012 --> 00:05:46,012
+Sınav sistemde 1 saat olarak tanınlanmış ama 15 dakika olarak gözüküyor.
+
+9
+00:05:48,012 --> 00:05:49,012
+Öyle mi?
+
+10
+00:05:51,012 --> 00:05:52,012
+Bir bakayım bununla.
+
+11
+00:05:52,012 --> 00:05:58,012
+35'den 12-36'ya kadar falan gösteriyordu sanırım yanlış hatırlamıyorsam.
+
+12
+00:06:00,596 --> 00:06:02,596
+Bakıyorum şimdi
+
+13
+00:06:03,836 --> 00:06:06,056
+hesaplama kurama
+
+14
+00:06:10,995 --> 00:06:17,476
+Quiz 2. 11.30'dan 12.26'ya kadar görünüyor. Evet.
+
+15
+00:06:20,296 --> 00:06:22,135
+Bunu ne yapacağız?
+
+16
+00:06:24,135 --> 00:06:26,215
+Yayından kaldırdı yayını.
+
+17
+00:06:31,668 --> 00:06:32,668
+Ödüt
+
+18
+00:06:34,668 --> 00:06:38,168
+11.35'den 11.50'ye kadar olması lazım.
+
+19
+00:06:41,067 --> 00:06:42,447
+11.
+
+20
+00:07:05,363 --> 00:07:07,363
+Şimdi doğru görünüyor değil mi?
+
+21
+00:07:09,764 --> 00:07:12,563
+11.35'den 11.50'ye kadar.
+
+22
+00:07:26,132 --> 00:07:51,132
+Okay, thank you for that warning. So, you have a quiz today. If you don't know, it will start at 11.35. Let's work on regular expressions a bit.
+
+23
+00:08:23,668 --> 00:08:37,668
+So, um, in arithmetic, we have expressions, arithmetic expressions.
+
+24
+00:08:44,371 --> 00:08:45,371
+like five plus three times four. Similarly, we can use regular operations to build up languages.
+
+25
+00:09:13,779 --> 00:09:16,799
+So a regular expression is something like this.
+
+26
+00:09:16,859 --> 00:09:23,939
+For example, you might say 0 union 1...
+
+27
+00:09:26,707 --> 00:09:44,707
+and zero star. Now this is a regular expression. So an arithmetic expression give you a value of a number.
+
+28
+00:09:47,860 --> 00:09:58,860
+This regular expression gives you a language.
+
+29
+00:10:04,436 --> 00:10:10,436
+So anyway, this describes a language.
+
+30
+00:10:13,107 --> 00:10:40,107
+And for example, what language this describes? It describes languages that start with zero and one, right? So if this is a R, then language of R is, what is it?
+
+31
+00:10:39,731 --> 00:10:53,731
+It can start with a zero or one. Then it can have some zeros. Okay, some zeros. So zero is okay. Just...
+
+32
+00:10:56,884 --> 00:11:21,523
+and clean star means no, no zeros too. So you have, you can have null here. And so zero, epsilon zero, or you can have one, or you can have one, some zeros, then some zero, then others, some other zeros, et cetera.
+
+33
+00:11:21,523 --> 00:11:36,523
+So, a regular expression describes a language to us.
+
+34
+00:11:36,523 --> 00:11:38,523
+Now,
+
+35
+00:11:41,716 --> 00:11:46,716
+when we write this,
+
+36
+00:11:48,628 --> 00:11:58,628
+zero union, one, zero clean star.
+
+37
+00:12:01,235 --> 00:12:03,235
+This should be union.
+
+38
+00:12:08,532 --> 00:12:22,532
+We mean that this since you know that union is a set operation, right?
+
+39
+00:12:25,107 --> 00:12:38,107
+So what is zero and one then? They are sets actually. So actually this is, this kind of writing is a short, short-hand writing for
+
+40
+00:12:40,532 --> 00:13:10,511
+The set of zero and the set of one. So this is a set that has only one element. Sorry. And that is one. Similarly, this is a set that has only element and that element is zero. Now you have, you can have union between them. Similarly,
+
+41
+00:13:16,052 --> 00:13:27,052
+If you don't have anything in between, that means you have a concatenation.
+
+42
+00:13:45,268 --> 00:13:47,268
+So basically,
+
+43
+00:13:52,371 --> 00:13:57,371
+This actually means that we want to
+
+44
+00:14:00,275 --> 00:14:04,275
+take the union of zero and one.
+
+45
+00:14:06,707 --> 00:14:09,707
+and this will give us the set
+
+46
+00:14:11,707 --> 00:14:13,707
+0, 1
+
+47
+00:14:16,788 --> 00:14:17,788
+and
+
+48
+00:14:23,788 --> 00:14:26,788
+there is a concatenation operation here.
+
+49
+00:14:29,788 --> 00:14:31,788
+And then there is the set of zero.
+
+50
+00:14:33,788 --> 00:14:36,788
+Yeah. And there is clean star on it.
+
+51
+00:14:37,788 --> 00:14:38,788
+Okay.
+
+52
+00:14:40,788 --> 00:14:41,788
+And
+
+53
+00:14:41,788 --> 00:14:48,247
+and
+
+54
+00:14:47,059 --> 00:14:52,059
+The concatenation basically
+
+55
+00:15:02,451 --> 00:15:11,451
+So you can write it in two steps. So sometimes instead of...
+
+56
+00:15:13,844 --> 00:15:16,723
+So this looks like...
+
+57
+00:15:20,275 --> 00:15:24,295
+zero, it's just like this.
+
+58
+00:15:33,331 --> 00:15:41,331
+So this up there is just a short-hand for this guy.
+
+59
+00:15:48,884 --> 00:16:07,123
+Sometimes instead of union, you will see plus. So this can be also written as 0 union 1.
+
+60
+00:16:09,844 --> 00:16:11,844
+is same as
+
+61
+00:16:11,844 --> 00:16:13,844
+zero plus one.
+
+62
+00:16:17,844 --> 00:16:35,844
+and it may be a little confusing because normally if you see a plus zero, sorry, zero plus one, that will give you one normally. But in this case,
+
+63
+00:16:37,139 --> 00:16:46,139
+plus is just another notation for union. Okay, so that means union.
+
+64
+00:16:54,259 --> 00:16:58,259
+Another thing to notice is that
+
+65
+00:17:00,340 --> 00:17:05,340
+where you have a zero plus one,
+
+66
+00:17:05,340 --> 00:17:07,340
+zero plus one,
+
+67
+00:17:08,819 --> 00:17:38,799
+like this. You can open this parenthesis. So it will be zero and zero clean star plus one zero clean star. So you can open these parenthesis just like plus and multiplication, summation and multiplication.
+
+68
+00:17:38,819 --> 00:17:39,819
+communication.
+
+69
+00:17:43,635 --> 00:18:09,635
+And you already know that if you have one, two, so if you have concatenation of these, what is the concatenation for sets?
+
+70
+00:18:21,556 --> 00:18:36,995
+Let's say you have A, B, and set C.
+
+71
+00:18:40,051 --> 00:19:08,911
+Well, this is for each value element in these sets, you will write, so you will have a new set and for each symbol or element in the first set, you will write it and then write a symbol from the,
+
+72
+00:19:10,051 --> 00:19:12,811
+other set or element.
+
+73
+00:19:12,811 --> 00:19:15,732
+So, B, C.
+
+74
+00:19:18,191 --> 00:19:23,072
+So it's, if you write it like this summation,
+
+75
+00:19:23,072 --> 00:19:25,671
+it's very easy to remember this.
+
+76
+00:19:25,671 --> 00:19:34,671
+So you can have, instead of this, you can have A plus B,
+
+77
+00:19:34,671 --> 00:19:54,412
+because A or B, and you have C there. And now you can just do this multiplication like thing. So you'll have A, B, sorry, A, C plus A, B.
+
+78
+00:19:58,036 --> 00:20:09,036
+So, if you have plus there, it's just a nice way to remember these unions and what they are.
+
+79
+00:20:29,523 --> 00:20:33,964
+and the...
+
+80
+00:20:34,932 --> 00:20:39,332
+zero clean star means
+
+81
+00:20:42,483 --> 00:20:47,483
+this set of zero and that's clean star and that,
+
+82
+00:20:51,483 --> 00:20:56,483
+that means you can have null in this set for zero,
+
+83
+00:20:58,483 --> 00:21:03,483
+or zero, zero, zero, zero, zero, zero, zero, zero, zero,
+
+84
+00:21:04,483 --> 00:21:08,483
+okay, up to infinity.
+
+85
+00:21:16,756 --> 00:21:21,756
+So any number of zeros, including zero.
+
+86
+00:21:31,028 --> 00:21:36,307
+sometimes you can see that
+
+87
+00:21:40,500 --> 00:21:47,500
+So remember that sigma means
+
+88
+00:21:57,844 --> 00:21:59,844
+da alfabet.
+
+89
+00:22:12,115 --> 00:22:19,115
+So, if you have zero, sigma equals two,
+
+90
+00:22:24,819 --> 00:22:26,300
+zero one,
+
+91
+00:22:30,059 --> 00:22:34,059
+then we can sometimes,
+
+92
+00:22:35,240 --> 00:22:36,879
+you can use sigma,
+
+93
+00:22:38,700 --> 00:22:41,199
+in the regular expressions too.
+
+94
+00:22:41,199 --> 00:22:44,699
+So you can say things like,
+
+95
+00:22:57,715 --> 00:23:01,035
+sigma
+
+96
+00:23:02,067 --> 00:23:04,067
+zero
+
+97
+00:23:07,316 --> 00:23:32,316
+So, what would that mean? That would mean, okay, you have a single zero at the beginning. And then you have the one or more elements from the, any number of elements from the, from the alphabet.
+
+98
+00:23:36,852 --> 00:23:43,031
+So that means this is all strings that start with zero.
+
+99
+00:23:43,231 --> 00:23:47,711
+So you might have A.
+
+100
+00:23:49,711 --> 00:23:52,931
+So this can be epsilon.
+
+101
+00:23:52,931 --> 00:24:07,811
+and then it can be 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, etc.
+
+102
+00:24:07,811 --> 00:24:08,552
+It goes on.
+
+103
+00:24:08,671 --> 00:24:11,692
+So you add those to 0.
+
+104
+00:24:11,692 --> 00:24:18,011
+So you will have 0, 0, 0, 1, 0, 0, 0, etc.
+
+105
+00:24:31,476 --> 00:24:36,476
+So basically, um,
+
+106
+00:24:37,907 --> 00:24:42,907
+this means all strings.
+
+107
+00:24:43,796 --> 00:24:47,796
+from the alphabet.
+
+108
+00:24:52,084 --> 00:24:53,084
+Okay.
+
+109
+00:24:59,084 --> 00:25:00,084
+And if you want,
+
+110
+00:25:02,084 --> 00:25:08,084
+you can see how this works. So you can, this actually means, if you think about it,
+
+111
+00:25:09,084 --> 00:25:11,084
+zero Sigma star means
+
+112
+00:25:12,084 --> 00:25:13,084
+zero,
+
+113
+00:25:14,084 --> 00:25:18,084
+and Sigma is just one, zero and one, zero plus one.
+
+114
+00:25:19,084 --> 00:25:20,084
+And
+
+115
+00:25:20,084 --> 00:25:31,084
+this, and you can open this so you will have zero.
+
+116
+00:25:38,867 --> 00:25:59,867
+Let's leave it here because since there's a clean star, we cannot open this. So we will leave it like that. But we see that this is the strings that start with zero and continues with zeros and ones.
+
+117
+00:26:09,107 --> 00:26:12,107
+and the
+
+118
+00:26:21,779 --> 00:26:26,779
+So you see that there is a precedence.
+
+119
+00:26:31,251 --> 00:26:36,251
+There is an order of precedence here.
+
+120
+00:26:45,715 --> 00:26:57,035
+What that means is there is an order of these operations. So first you do
+
+121
+00:27:03,731 --> 00:27:05,731
+the clean start operation.
+
+122
+00:27:10,036 --> 00:27:14,036
+Then we do concatenation.
+
+123
+00:27:23,923 --> 00:27:30,923
+Then we do these unions.
+
+124
+00:27:34,900 --> 00:27:36,900
+So, for, so there's a,
+
+125
+00:27:39,955 --> 00:27:44,695
+precedence over there.
+
+126
+00:27:55,923 --> 00:28:09,243
+The plus sign sometimes can be used instead of clean stash. So...
+
+127
+00:28:19,155 --> 00:28:48,155
+You can have something like zero plus one plus. And in this case, the plus in the power here, that means we will have at least one one. Okay. So,
+
+128
+00:28:45,332 --> 00:28:55,332
+That means we have just one and then we have the clean star one. Okay.
+
+129
+00:29:00,403 --> 00:29:08,403
+So this is equivalent to zero plus one and then a clean star one.
+
+130
+00:29:43,092 --> 00:29:54,092
+So in a regular language, regular expression, we can have these, also we can have antisets.
+
+131
+00:29:55,892 --> 00:29:56,971
+So,
+
+132
+00:30:01,140 --> 00:30:14,759
+You might have something like A plus empty set. And empty set is a,
+
+133
+00:30:25,044 --> 00:30:35,123
+asset with no, empty set is asset with no elements.
+
+134
+00:30:39,892 --> 00:30:48,931
+Okay. And so if you think about it,
+
+135
+00:30:52,596 --> 00:31:09,596
+We are talking about the set of A's, union, empty set, and that will give us empty set.
+
+136
+00:31:10,355 --> 00:31:11,375
+and, um,
+
+137
+00:31:40,852 --> 00:31:41,852
+One thing that's, that may be interesting is, if you have this, now what is this? The set of just A concatenate with the set of empty set. And now what is this? Well, here we want to find a, find elements,
+
+138
+00:32:10,852 --> 00:32:36,252
+elements that start with A, which is from this first set, and a second element must come from this second set here. But from the second set, no element can come. So there is no such element here. Okay. And then the result then becomes empty set.
+
+139
+00:32:42,708 --> 00:33:05,147
+And you see the reason for that, right? Because in the concatenation of the sets, the resulting set must have elements such that their first part must come from the first set and the second part must come from the second set.
+
+140
+00:33:05,147 --> 00:33:10,147
+and in the second set here, there is no element.
+
+141
+00:33:10,147 --> 00:33:15,147
+So we cannot write any elements in the resulting set.
+
+142
+00:33:19,571 --> 00:33:20,971
+and
+
+143
+00:33:25,652 --> 00:33:37,652
+One thing that I should have mentioned here is you can also have things like
+
+144
+00:33:39,667 --> 00:34:08,107
+one to the two or three. And again here, one to the two means we have two ones. So basically, the power here is number of such elements. So we can say one to the K means once.
+
+145
+00:34:09,667 --> 00:34:11,667
+Kill you
+
+146
+00:34:16,724 --> 00:34:20,003
+Let's change this to a...
+
+147
+00:34:38,387 --> 00:34:40,848
+Let's look at some
+
+148
+00:34:51,027 --> 00:34:55,027
+some examples here.
+
+149
+00:35:05,139 --> 00:35:08,499
+So for example, what is this?
+
+150
+00:35:14,835 --> 00:35:17,135
+So let's write
+
+151
+00:35:30,675 --> 00:35:49,675
+write the language, write the languages, the regular expression describes.
+
+152
+00:35:53,204 --> 00:36:18,204
+So regular expressions describe languages. So for example, this is a set of W such that, what is this? And we assume that alphabet is 0 and 1 in all of these examples.
+
+153
+00:36:19,923 --> 00:36:49,903
+So this is the, these are, this is the language that has a single one, right? So this describes strings that has a single one and it can proceed, it can be proceeded with some zeros and, or it can be proceeded, anteceded with some zeros. So W is a string such that W contains,
+
+154
+00:36:52,916 --> 00:37:03,916
+exactly one. Let me write that in words, one, one.
+
+155
+00:37:08,724 --> 00:37:11,724
+and, uh,
+
+156
+00:37:16,307 --> 00:37:18,307
+for example this.
+
+157
+00:37:42,452 --> 00:37:44,452
+Now,
+
+158
+00:37:49,619 --> 00:38:18,619
+What does that mean? So this means we will have one symbol from this set and one other symbol from this set. So that means we have two elements here. And there's a green star. So that means we are talking about W such that W has an even number of symbols.
+
+159
+00:38:29,427 --> 00:38:32,427
+and obviously zero is even.
+
+160
+00:38:35,123 --> 00:38:40,084
+If there are no elements, we say that is even.
+
+161
+00:38:58,612 --> 00:39:00,612
+Let's look at this.
+
+162
+00:39:02,612 --> 00:39:03,612
+So we have
+
+163
+00:39:05,612 --> 00:39:07,612
+zero union epsilon
+
+164
+00:39:18,483 --> 00:39:20,143
+Now, um,
+
+165
+00:39:31,603 --> 00:39:56,643
+here, what is this? First of all, zero union null. Now null is not empty set. So make sure they are, make sure you understand that they are different. So this is like in programming, you have this, okay.
+
+166
+00:39:56,643 --> 00:40:02,643
+It is a string, but it has no symbols in it.
+
+167
+00:40:02,643 --> 00:40:14,644
+So, now, that means we will not concatenate it into a single element.
+
+168
+00:40:14,644 --> 00:40:15,644
+Okay.
+
+169
+00:40:15,644 --> 00:40:25,644
+So, you might be tempted to write this as a zero and one's clean stash,
+
+170
+00:40:25,643 --> 00:40:29,643
+like getting rid of this epsilon or not.
+
+171
+00:40:29,643 --> 00:40:32,643
+But that is wrong.
+
+172
+00:40:32,643 --> 00:40:36,643
+Okay.
+
+173
+00:40:36,643 --> 00:40:40,643
+This is not empty set.
+
+174
+00:40:40,643 --> 00:40:45,643
+So what this is, is you basically can
+
+175
+00:40:49,235 --> 00:41:07,235
+distribution, distribute this one clean star to inside. So you can have zero, one clean star. Union, null, one clean star. And now, uh,
+
+176
+00:41:10,579 --> 00:41:11,579
+here, this guy. This concatenation in this concatenation, you can get it off this now. So you will have zero. Union ones. Okay.
+
+177
+00:41:50,483 --> 00:42:00,803
+So I'm looking at the book. In general, these are interesting. One thing interesting is this.
+
+178
+00:42:04,500 --> 00:42:20,500
+So it says a clean star empty set is null. But how that happens?
+
+179
+00:42:23,507 --> 00:42:34,507
+The star operation puts together any number of strings from the language to get a string in the result. If the language is empty.
+
+180
+00:42:36,884 --> 00:42:42,603
+The star operation can put together zero strings, giving only the end string.
+
+181
+00:43:07,155 --> 00:43:12,435
+So, let's have a 10 minutes break and then we will continue.
+
+182
+00:43:31,284 --> 00:43:36,284
+Let's have a break till 11 or 10.
+
+183
+00:57:39,635 --> 00:57:41,635
+sesim geliyor mu arkadaşlar?
+
+184
+00:57:49,460 --> 00:58:14,460
+automaton. Okay, so, um, this is a, how this happens is a little confusing. I didn't understand yet myself. So this seems like it comes from, uh, from some definition.
+
+185
+00:58:19,443 --> 00:58:20,443
+So I will not develop on it. So to repeat, we have empty set and we have the
+
+186
+00:58:37,076 --> 00:58:43,076
+and
+
+187
+00:58:45,108 --> 00:58:46,108
+If you take the union of some regular expression with the empty string, you get the regular expression. And if you get the concatenation of the regular expression with empty string, you get the regular expression again. But be careful that
+
+188
+00:59:15,108 --> 00:59:27,108
+regular expression union null string is not equal to regular expression. It may or may not be.
+
+189
+00:59:37,300 --> 00:59:41,059
+How can we write that? So it may be true too. So
+
+190
+00:59:45,396 --> 00:59:46,396
+may not.
+
+191
+00:59:52,371 --> 01:00:11,811
+equal R. So it may or may not be equal to R. And R concatenation, M-set, is M-set.
+
+192
+01:00:17,427 --> 01:00:44,427
+Okay, so these are some basic things about regular expressions. One thing important is regular expressions are equivalent with finite automata. So equivalence.
+
+193
+01:00:45,300 --> 01:00:50,740
+with finite automata.
+
+194
+01:01:06,963 --> 01:01:13,963
+So, we say that,
+
+195
+01:01:14,483 --> 01:01:29,483
+A language is regular if and only if a regular expression is a regular expression.
+
+196
+01:01:36,019 --> 01:01:37,519
+describes it.
+
+197
+01:01:41,460 --> 01:01:59,460
+So that, that means, one, we can convert, so there's an if and only if here. So one, we can,
+
+198
+01:01:59,603 --> 01:02:03,603
+convert any finite automata
+
+199
+01:02:07,603 --> 01:02:19,603
+to regular expression. Also we can convert any regular expression into a finite automata. So both are possible.
+
+200
+01:02:29,460 --> 01:02:44,659
+So this kind of gives us a third thing about regular languages. So a regular language...
+
+201
+01:02:52,724 --> 01:02:53,724
+regular language must have finite automata, deterministic finite automata or non-deterministic finite automata that accepts it.
+
+202
+01:03:22,724 --> 01:03:36,304
+there is a, or you can say has a regular expression that describes it.
+
+203
+01:03:40,307 --> 01:03:42,607
+So, that means...
+
+204
+01:03:52,692 --> 01:04:06,011
+to prove that a regular language or to prove a language is regular, you can just show a regular expression that...
+
+205
+01:04:09,427 --> 01:04:13,168
+that describes it. Right?
+
+206
+01:04:20,436 --> 01:04:21,556
+So,
+
+207
+01:04:29,204 --> 01:04:39,204
+language, regular, you can design,
+
+208
+01:04:42,068 --> 01:04:43,068
+DFA or NFA that accepts it. Or you can design a regular expression that describes it. Okay.
+
+209
+01:05:07,764 --> 01:05:09,203
+Now,
+
+210
+01:05:16,467 --> 01:05:26,707
+Let's look at an example of converting regular expression NFA.
+
+211
+01:05:29,427 --> 01:05:33,927
+So, regular expression to NMFA.
+
+212
+01:05:39,251 --> 01:05:41,131
+So converting
+
+213
+01:05:50,675 --> 01:05:58,675
+regular expression to NFA.
+
+214
+01:06:07,731 --> 01:06:11,331
+Let's look at it, let's try to convert
+
+215
+01:06:15,331 --> 01:06:20,231
+one and let's work on an example. So we want to convert
+
+216
+01:06:20,931 --> 01:06:23,431
+AB Union
+
+217
+01:06:24,332 --> 01:06:25,332
+A
+
+218
+01:06:28,436 --> 01:06:29,436
+So, we want to convert this to NFA, non-deterministic finite automaton. Now, uhm,
+
+219
+01:06:47,347 --> 01:06:48,347
+A methodical way to do it is you start with the smallest sub-expressions. So you build up
+
+220
+01:07:06,291 --> 01:07:11,291
+from smallest sub-expressions.
+
+221
+01:07:22,228 --> 01:07:23,228
+and,
+
+222
+01:07:30,579 --> 01:07:58,939
+So let's say we have A here. So as we see we have A here. So let's say A and just A is a regular expression has this NFA like this. So we come to a state and if we get A,
+
+223
+01:08:00,579 --> 01:08:02,579
+We accept it.
+
+224
+01:08:06,036 --> 01:08:08,036
+and similarly B is...
+
+225
+01:08:11,731 --> 01:08:26,731
+You have an expression. And if you get B, you go to an accepting state. Now what will happen if, what happens if we,
+
+226
+01:08:34,323 --> 01:08:37,323
+concatenate them, AB.
+
+227
+01:08:39,143 --> 01:08:42,403
+Well, in this case,
+
+228
+01:08:42,403 --> 01:08:48,924
+and
+
+229
+01:08:48,924 --> 01:08:50,923
+you
+
+230
+01:08:49,043 --> 01:09:00,283
+We change this accepting state into a non-accepting state. So we have...
+
+231
+01:09:03,380 --> 01:09:17,699
+this, A. Now this is non-accepting and we have a null transition to this second part. So we have
+
+232
+01:09:23,315 --> 01:09:23,815
+Be.
+
+233
+01:09:40,916 --> 01:10:07,055
+Now, so we came up to this point. Sorry. We did this part. So now we need to add this A here again. And we already have an expression for A. But this time, instead of concatenation, we need a union.
+
+234
+01:10:07,055 --> 01:10:25,895
+So that means either AB is accepted or A is accepted. So it's like we have this parallel situation. So we, let's say, start with some state.
+
+235
+01:10:25,895 --> 01:10:47,276
+and to create a parallel situation, we create two different transitions that are null. We create two null transitions and up here we write this directly.
+
+236
+01:10:47,276 --> 01:10:56,636
+so we have A, sorry, A,
+
+237
+01:11:07,091 --> 01:11:17,091
+And now, in the bottom part, we write this guy. The A.
+
+238
+01:11:25,971 --> 01:11:36,451
+Now, finally, so this was AB union A.
+
+239
+01:11:45,555 --> 01:12:13,555
+And finally, we need to add this clean star. And a clean star means you will accept one or zero or more of it. And there can be infinitely many of these things. So how can we create that? We can create that with a
+
+240
+01:12:13,460 --> 01:12:17,460
+loop. So we will have AB Union A.
+
+241
+01:12:21,460 --> 01:12:45,460
+Clean star. For the clean star, we will take a union or we will take a null transition from the accepting state to the beginning state. And we will do that for each of these transitions.
+
+242
+01:12:48,692 --> 01:13:15,692
+So let me write it this way. A, B, union, A, green star. Okay. Um, and this, maybe you have noticed this, but, uh,
+
+243
+01:13:14,420 --> 01:13:23,420
+This gives us too much state. So this is a mechanical method. So, uh...
+
+244
+01:13:35,988 --> 01:13:36,988
+usually
+
+245
+01:13:36,988 --> 01:13:38,688
+Hocam bir soru sorabilir miyim?
+
+246
+01:13:38,867 --> 01:13:39,407
+Tabi buyurun.
+
+247
+01:13:40,627 --> 01:13:44,248
+Sanırım kaçırdım ama A ile B arasında niye naltrasm işin var?
+
+248
+01:13:46,227 --> 01:13:51,507
+Daha doğrusu A'dan B'ye B'den de kabul edilen string'e geçsek hatalı mı oluyor?
+
+249
+01:13:54,527 --> 01:13:56,967
+Yani onu hiç koymasak diyorsun değil mi?
+
+250
+01:13:58,647 --> 01:14:02,767
+Evet, yani A'dan direkt bir sonraki aşamaya oradan da E.
+
+251
+01:14:02,767 --> 01:14:03,908
+Hatalı olmuyor.
+
+252
+01:14:03,908 --> 01:14:27,947
+Bu aslında biraz bir bilgisayar programının bunu nasıl yapacağını açıklıyor. Yani bir insan bunu yazsa çok daha senin kurduğun gibi mantıklarla daha basit şeyler, makineler yazabilir. Ben de onu söyleyecektim zaten.
+
+253
+01:14:27,947 --> 01:14:36,047
+genel olarak bu metot gereğinden fazla şey veriyor. Daha karmaşık bir state veriyor.
+
+254
+01:14:40,916 --> 01:14:42,975
+Teşekkür ederim. Rica ederim.
+
+255
+01:14:43,896 --> 01:14:52,895
+Şey olur mu, hani robotik yöntemi niye böyle yapmışlar? Direkt hani epsilon'suz niye direkt eklememişler? Ondan emin değilim.
+
+256
+01:14:56,275 --> 01:14:58,335
+üzerinde pek düşünmedim yani.
+
+257
+01:15:07,796 --> 01:15:36,275
+Now, one thing that we have forgotten here is that here, sorry, null is accepted. But in this example, in our example, null is not accepted, right? So we have to work on that. So we add an accepting state,
+
+258
+01:15:36,275 --> 01:15:39,875
+and we make a null transition here.
+
+259
+01:15:46,003 --> 01:15:50,163
+With this now, we are also accepting now string, right?
+
+260
+01:16:00,180 --> 01:16:00,939
+Okay.
+
+261
+01:16:10,068 --> 01:16:20,068
+Now, a lot of the times as we discussed, we can usually
+
+262
+01:16:24,020 --> 01:16:25,380
+simplify
+
+263
+01:16:29,059 --> 01:16:30,259
+the resulting
+
+264
+01:16:34,195 --> 01:16:50,195
+and the resulting finite automata. So the book says that you can actually find a version with only two states.
+
+265
+01:17:05,395 --> 01:17:26,395
+So you can do that at home, but let me, so this may need some time to, you may need to work on it a little more, a little. So let's try to simplify this into a single, only two states. Okay.
+
+266
+01:17:26,395 --> 01:17:49,616
+So, AB union A, how can we do this? And this will not be mechanical. So we have the clean star. So we know that we accept null string.
+
+267
+01:17:49,615 --> 01:17:56,615
+and now
+
+268
+01:18:01,684 --> 01:18:03,684
+We should accept AB.
+
+269
+01:18:07,796 --> 01:18:08,796
+right? So we have this. Or we should, we should be also accepting A, like this. Since this is an NFA, we can write more than one path. And then we can bring back,
+
+270
+01:18:37,492 --> 01:18:44,492
+with these epsilons, right? Is this okay? I think this is okay.
+
+271
+01:19:01,492 --> 01:19:04,712
+I think this will work. So,
+
+272
+01:19:10,292 --> 01:19:28,292
+So you can do the same thing with just two states. But here we have three states, right? Can we, how can we, how can we, how can we,
+
+273
+01:19:30,228 --> 01:19:46,228
+Well, A and AB are accepted. Maybe we can just make this. Okay. I think this is better now.
+
+274
+01:19:47,891 --> 01:19:51,451
+So we are...
+
+275
+01:19:53,043 --> 01:20:01,043
+We have still three states. Can we do this?
+
+276
+01:20:03,060 --> 01:20:05,060
+What if you do this?
+
+277
+01:20:12,532 --> 01:20:14,251
+I think this is a
+
+278
+01:20:18,452 --> 01:20:22,691
+So we have an A, B,
+
+279
+01:20:28,724 --> 01:20:36,164
+So we can put these loops.
+
+280
+01:20:41,908 --> 01:20:43,908
+Зинопный видит.
+
+281
+01:20:46,707 --> 01:21:01,707
+So as you see, you have to work on this a little bit, but this is like you can work on this at home, but I don't want to spend a lot of time on this now.
+
+282
+01:21:04,884 --> 01:21:06,884
+So try later.
+
+283
+01:21:30,036 --> 01:21:32,375
+So let's look at another example.
+
+284
+01:22:03,347 --> 01:22:07,347
+So let's say we want to convert
+
+285
+01:22:09,619 --> 01:22:20,040
+A, union, B, clean style, A, B, A, to an NFA.
+
+286
+01:22:25,971 --> 01:22:29,171
+So,
+
+287
+01:22:31,315 --> 01:22:39,315
+We already know the starting steps, so for A we have this.
+
+288
+01:22:42,452 --> 01:22:45,011
+for me we will have this.
+
+289
+01:22:52,115 --> 01:23:00,115
+and then we can kind of do an A or B.
+
+290
+01:23:17,492 --> 01:23:18,492
+So up here we have the first with A and these are null transitions and we have B here. And then we will have, we need this clean star so A union B is clean star. So now to get a clean star,
+
+291
+01:23:47,492 --> 01:23:59,492
+we create a starting state and then we start with this one and we have these two not transitions.
+
+292
+01:24:01,492 --> 01:24:03,492
+A,
+
+293
+01:24:12,851 --> 01:24:19,951
+and we will add these null transitions back to create this,
+
+294
+01:24:38,068 --> 01:24:40,147
+and
+
+295
+01:24:41,876 --> 01:24:57,876
+The second part ABA is quite simple. ABA. And this is, we can just write this as A, B, A.
+
+296
+01:25:02,804 --> 01:25:20,003
+Normally, so I will write mechanical way but, you can just, you can just skip these nulls.
+
+297
+01:25:35,283 --> 01:25:44,963
+So this is another note, this is A. Obviously you can just write this as a...
+
+298
+01:25:47,507 --> 01:25:50,988
+e de...
+
+299
+01:25:56,627 --> 01:25:57,547
+and then,
+
+300
+01:26:01,332 --> 01:26:10,332
+And finally now we want to concatenate these two together. So ABA and this guy.
+
+301
+01:26:35,028 --> 01:27:00,028
+Now, the thing here is in this ABA, A union B star, we have three accepting states. And now, how will we concatenate that with this one?
+
+302
+01:27:00,212 --> 01:27:21,712
+And so the final one is, I will do this in different colors. A union B, A, B, A. Now,
+
+303
+01:27:28,212 --> 01:27:51,651
+Let me rewrite it. So, first of all, we cannot use these accepting states, right? Because when we are concatenating, as you see, we are getting rid of the middle concatenating states.
+
+304
+01:27:51,651 --> 01:27:58,131
+So I guess I will have to re-draw this.
+
+305
+01:28:02,963 --> 01:28:04,963
+Now,
+
+306
+01:28:21,076 --> 01:28:39,076
+Currently we have this. Now this is A union B clean stash. And now we have ABA.
+
+307
+01:28:57,652 --> 01:29:17,652
+So, what we can do is, for each of these accepting states, we will go to the starting state of A. So, we will do this.
+
+308
+01:29:17,652 --> 01:29:33,652
+But we also need to get rid of these accepting states. They must be converted to non-accepting states. So let me do that.
+
+309
+01:29:46,036 --> 01:29:47,575
+Let me get rid of this.
+
+310
+01:30:00,275 --> 01:30:01,555
+and finally this.
+
+311
+01:30:06,131 --> 01:30:24,131
+So we are converting these accepting states into non-accepting states. And these are all null transitions.
+
+312
+01:30:33,300 --> 01:30:58,300
+So I think you get the idea. In general, when we concatenate two finite automata, we kind of, for a regular expression, we get rid of the accepting states in the first one.
+
+313
+01:30:59,475 --> 01:31:10,236
+And again, you can obviously simplify this. Some obvious simplifications are.
+
+314
+01:31:17,524 --> 01:31:38,524
+Anyway, I will not spend time on it, but we can do that. Now, this was the first part. So we can, we can convert a regular expression to an NFA. Now let's do the other path. So convert
+
+315
+01:31:38,524 --> 01:31:42,524
+.
+
+316
+01:32:02,771 --> 01:32:12,771
+converts and NFA to regular expression.
+
+317
+01:32:15,731 --> 01:32:18,931
+So, um,
+
+318
+01:32:22,836 --> 01:32:35,155
+Now, again here, there are two methodical ways. There are two ways. One way is the methodical way.
+
+319
+01:32:38,515 --> 01:32:42,996
+and second is intuitive.
+
+320
+01:32:45,619 --> 01:32:49,619
+methodical way can be used.
+
+321
+01:32:51,604 --> 01:33:05,604
+for all NFA and intuitive way can be used for simple NFA.
+
+322
+01:33:15,123 --> 01:33:31,123
+For the intuitive way, you don't, I don't even need to teach you anything. So let's say, let's start with the intuitive way. So...
+
+323
+01:33:40,948 --> 01:33:45,948
+Let's say you have this simple NFA.
+
+324
+01:33:47,923 --> 01:33:50,983
+So this is A, let's say, and this is B.
+
+325
+01:33:54,420 --> 01:34:19,979
+Now, I guess it's quite obvious that this, when you start, you can have some A's because there's a loop here. And you can show that loop with a clean star. And you need a B to get to this accepting state, right?
+
+326
+01:34:19,979 --> 01:34:25,420
+and so no big deal.
+
+327
+01:34:29,043 --> 01:34:36,043
+or let's see, for example, let's say,
+
+328
+01:34:36,043 --> 01:34:38,043
+.
+
+329
+01:34:43,796 --> 01:34:46,675
+You have a...
+
+330
+01:34:49,619 --> 01:34:51,619
+This A and this B.
+
+331
+01:34:53,019 --> 01:34:53,519
+Okay.
+
+332
+01:34:54,959 --> 01:34:56,859
+How can you write this?
+
+333
+01:34:59,759 --> 01:35:01,199
+So,
+
+334
+01:35:36,851 --> 01:35:55,612
+For example here, this looks, this is a little bit more complicated than it looks, but we can still do this in an intuitive way. So first of all,
+
+335
+01:35:59,060 --> 01:36:24,060
+If nothing is there, so empty string is there. Right. Let's make sure that empty string is accepted. And then we accept a, right. We accept a.
+
+336
+01:36:23,252 --> 01:36:25,252
+and then we accept B.
+
+337
+01:36:29,619 --> 01:36:53,619
+So we accept A. Now, we also accept ABs, right? So like AB and any number of this, right?
+
+338
+01:36:52,340 --> 01:37:12,340
+We all know, we also need to consider that after first A, now we have another loop. So, so we can start with an A, come here, and then,
+
+339
+01:37:22,163 --> 01:37:31,464
+Now we can have a B and then A and we have such a loop.
+
+340
+01:37:57,140 --> 01:38:04,140
+Now, we also have, we need to consider the case that,
+
+341
+01:38:04,140 --> 01:38:09,140
+um,
+
+342
+01:39:34,292 --> 01:39:45,451
+So let's give some break here. I'm kind of lost. So let's have a break till 11.
+
+343
+01:39:55,636 --> 01:39:59,996
+Bir soru gelmiş dersin puan dağılımı ile ilgili.
+
+344
+01:40:03,123 --> 01:40:14,863
+Now we will do three quiz, 30 points, vize 30 points, and 40 points final.
+
+345
+01:40:17,171 --> 01:40:28,451
+So we will have one more quiz.
+
+346
+01:40:28,451 --> 01:40:35,692
+So we will have three quizzes, each of which will be 10 points.
+
+347
+01:40:35,692 --> 01:40:37,692
+So again, let's give some break.
+
+348
+01:40:37,692 --> 01:40:39,391
+I'm a little lost here.
+
+349
+01:40:39,391 --> 01:40:44,491
+So let's start at 11.
+
+350
+01:59:03,988 --> 01:59:05,988
+Evet sesim geliyor mu arkadaşlar?
+
+351
+01:59:14,452 --> 01:59:16,452
+Geliyorum.
+
+352
+01:59:20,180 --> 01:59:43,180
+So, I think this second example should be something like this. So, you have, you need to start with AB and you can start with here BA and you can have none or more than zero of them.
+
+353
+01:59:43,180 --> 02:00:09,080
+or now you can go to first A and then you can start writing your loops there. So like each of these can behave like a starting point. So it gets very large and if you have these loops, etc., it gets very large very quickly.
+
+354
+02:00:09,079 --> 02:00:30,760
+Now let's look at the methodical way. And if you, if you, if the NFA is complicated, let's try to, you may need to use this methodical way. So let's look at the methodical way.
+
+355
+02:00:46,579 --> 02:00:53,579
+And in the methodical way, what you need to do is
+
+356
+02:00:56,979 --> 02:01:12,419
+First, you need to convert your NFA to this thing called GNFA.
+
+357
+02:01:13,939 --> 02:01:19,939
+meaning generalized
+
+358
+02:01:22,068 --> 02:01:29,387
+So the rest is non-deterministic as usual. Generalized non-deterministic.
+
+359
+02:01:35,220 --> 02:01:38,819
+finite automata.
+
+360
+02:01:43,028 --> 02:02:01,028
+And then you break apart transitions and re-merge them.
+
+361
+02:02:03,828 --> 02:02:21,907
+So let's try to see what GNFA is. GNFA or generalized NFA.
+
+362
+02:02:27,699 --> 02:02:51,699
+that the transitions may have regular expressions. So instead of just a symbol, you can write something like that. Okay. So on the edges, you have regular expressions. You may have regular expressions.
+
+363
+02:02:51,699 --> 02:03:13,699
+So it's the idea here is instead of reading a single symbol, the machine reads until the end of this pattern. It reads this pattern from the input.
+
+364
+02:03:13,699 --> 02:03:38,699
+So the generalized NFA has in G and FH transitions can have regular expressions.
+
+365
+02:03:38,699 --> 02:03:39,619
+Okay.
+
+366
+02:03:45,043 --> 02:04:05,043
+So it's a non-deterministic. So you can have epsilon transitions, et cetera. Now we need a special form, DnFa, for doing this conversion.
+
+367
+02:04:06,644 --> 02:04:24,644
+So, to convert regular expressions to finite, we are doing the inverse. to convert
+
+368
+02:04:29,524 --> 02:04:46,524
+NFA to regular expressions, we need a special version.
+
+369
+02:04:52,148 --> 02:04:53,148
+g and FAS. And what is, what is the spatial meaning here?
+
+370
+02:05:06,836 --> 02:05:11,836
+The start state.
+
+371
+02:05:16,692 --> 02:05:19,932
+as transitions.
+
+372
+02:05:23,091 --> 02:05:32,591
+to all others, but none to itself.
+
+373
+02:05:40,564 --> 02:06:05,564
+So your start transition, let's say you have these states, must have transitions to each of them. And there cannot be something like this.
+
+374
+02:06:04,851 --> 02:06:12,851
+This is not allowed. Okay. So that's the start state.
+
+375
+02:06:13,684 --> 02:06:14,684
+and
+
+376
+02:06:22,836 --> 02:06:34,836
+The stop state or accept state. There is only one accept state.
+
+377
+02:06:36,467 --> 02:06:38,467
+Okay, and
+
+378
+02:06:46,771 --> 02:06:47,771
+start state is different than accept state. So accept and start states are different. And, uh,
+
+379
+02:07:18,163 --> 02:07:20,163
+There are errors
+
+380
+02:07:22,163 --> 02:07:24,163
+from all
+
+381
+02:07:26,163 --> 02:07:28,163
+other
+
+382
+02:07:29,163 --> 02:07:32,163
+states
+
+383
+02:07:37,555 --> 02:07:39,555
+to it.
+
+384
+02:07:41,555 --> 02:07:45,555
+But none from it.
+
+385
+02:07:46,555 --> 02:07:50,555
+So it's like you have a single state.
+
+386
+02:07:50,555 --> 02:08:03,555
+And if you have these other states, all of them must be.
+
+387
+02:08:09,140 --> 02:08:25,939
+all of them must have transitions to it. Okay. But it cannot have a transition to another. Okay.
+
+388
+02:08:29,652 --> 02:08:36,652
+So it's like the end state.
+
+389
+02:08:46,100 --> 02:08:48,100
+And finally,
+
+390
+02:08:52,787 --> 02:08:55,987
+except
+
+391
+02:09:00,467 --> 02:09:10,467
+for the start and accept states.
+
+392
+02:09:14,899 --> 02:09:37,139
+One arrow goes from every state to every other state. One arrow goes from every state to every other state.
+
+393
+02:09:44,115 --> 02:09:47,115
+and also from each state to itself.
+
+394
+02:10:00,884 --> 02:10:28,884
+So what this means is you have your start state, you have your accept state, and you have some states here. These inner states must be fully connected, meaning
+
+395
+02:10:39,764 --> 02:10:40,764
+They are all fully connected and from star state, you have these two them and from each of them you have a stage to your accept state. Now, obviously this will be a very crowded, crowded,
+
+396
+02:11:11,091 --> 02:11:12,671
+graph, but
+
+397
+02:11:16,131 --> 02:11:19,711
+we can, we cannot, we can kind of say
+
+398
+02:11:19,711 --> 02:11:21,932
+.
+
+399
+02:11:24,340 --> 02:11:29,340
+For a machine, this is not so problem. So we can, we can...
+
+400
+02:11:38,452 --> 02:11:58,911
+So a machine can probably easily can do this. So no problem. And when we are working on it, on examples, we can simplify. We can, for example, not draw if the transition is an empty set.
+
+401
+02:11:58,911 --> 02:12:12,871
+So, as you see, how are we going to convert first NFA to this special GNFA? So, our first job will be
+
+402
+02:12:19,315 --> 02:12:21,315
+converting
+
+403
+02:12:23,315 --> 02:12:24,315
+or NFA
+
+404
+02:12:25,815 --> 02:12:27,315
+to special
+
+405
+02:12:30,315 --> 02:12:31,315
+GNFA.
+
+406
+02:12:39,220 --> 02:12:46,220
+We can easily do that.
+
+407
+02:12:51,507 --> 02:12:55,107
+first we can add a new
+
+408
+02:12:59,667 --> 02:13:01,227
+start state
+
+409
+02:13:08,851 --> 02:13:19,091
+and we use an epsilon transition. So, originally let's say we have this.
+
+410
+02:13:20,979 --> 02:13:31,780
+What we do is, we add a new starting state. And we put an Epsilon transition here.
+
+411
+02:13:38,963 --> 02:13:45,123
+and we add a...
+
+412
+02:13:47,123 --> 02:13:51,123
+new accept state.
+
+413
+02:13:58,420 --> 02:13:59,420
+and let's say for this we had some accepting states. For this we will convert these to non-accepting states and
+
+414
+02:14:18,484 --> 02:14:24,484
+we will connect them with a null to a single accept state.
+
+415
+02:14:41,779 --> 02:14:42,779
+If normally there are no connection between two states, we add a arrow with empty set. So let's say add arrows with empty set to
+
+416
+02:15:17,652 --> 02:15:19,652
+states
+
+417
+02:15:21,652 --> 02:15:23,652
+that have no errors.
+
+418
+02:15:32,180 --> 02:15:33,359
+So, um,
+
+419
+02:15:45,619 --> 02:15:48,399
+Let's say you have something like this.
+
+420
+02:15:53,747 --> 02:16:00,747
+normally you have A here and A.
+
+421
+02:16:03,731 --> 02:16:15,731
+Yeah, B here. But you don't have any transition here. What you need to do is you add these...
+
+422
+02:16:18,644 --> 02:16:21,943
+empty transitions.
+
+423
+02:16:35,379 --> 02:16:48,659
+And the anti-transitions can never be used. So this allows us to convert the special GNFA and...
+
+424
+02:16:51,572 --> 02:16:52,572
+still have the same language. Transitions. They both. Empty can never be used. Okay. We cannot use them. Uh,
+
+425
+02:17:21,780 --> 02:17:26,780
+Now, this is how we convert NFA to special GNFA.
+
+426
+02:17:28,099 --> 02:17:30,540
+Now, what we do is,
+
+427
+02:17:33,652 --> 02:17:47,131
+We convert to special GNFA. And then we start ripping off, removing the,
+
+428
+02:17:57,811 --> 02:18:16,811
+removing these one by one until only start and accept state remains. So removing a transition for an error.
+
+429
+02:18:23,796 --> 02:18:28,796
+Let's say we have something like this.
+
+430
+02:18:28,796 --> 02:18:35,796
+Let's say you have a,
+
+431
+02:18:35,796 --> 02:18:41,796
+so let's say you have qi, qj,
+
+432
+02:18:43,700 --> 02:18:58,700
+and let's say QRIP, we will get rid of this state. Okay. Removing a, not a row, but a state actually. So we will remove states.
+
+433
+02:19:02,195 --> 02:19:05,936
+Let's say you have a
+
+434
+02:19:14,227 --> 02:19:26,227
+This is R1, this is R3, this is R4, and this arrow, let's make it this way.
+
+435
+02:19:31,347 --> 02:19:37,347
+and you have a loop here, R2. And what we want is now,
+
+436
+02:19:43,123 --> 02:20:00,123
+We want to get rid of this. We will remove it. So we will have QI and QJ.
+
+437
+02:20:06,324 --> 02:20:08,324
+Now,
+
+438
+02:20:14,260 --> 02:20:39,539
+from going to QI when we want to go to Q from QI to QJ. There is this R4, right? So there is that. And there is this way R1, QRIP, R3. So now when we get rid of this, this path becomes
+
+439
+02:20:39,539 --> 02:20:57,440
+R1, then we go to QRIP. And after we go to QRIP, we can loop here with R2. So R2 star.
+
+440
+02:21:04,180 --> 02:21:06,180
+And then we can use R3.
+
+441
+02:21:11,443 --> 02:21:30,443
+Now, we can also, we will also need to merge, merge these transitions. So we will remove states and merge transitions.
+
+442
+02:21:32,531 --> 02:21:59,372
+And what we do is, from QI to QJ, we can go either by R4 or by this. So we will write QI, QJ, and then we have R4 union R1, R2 star, R3.
+
+443
+02:21:59,372 --> 02:22:08,372
+So here we removed QRIP and we merged these two into a single one.
+
+444
+02:22:08,372 --> 02:22:10,372
+So the idea is
+
+445
+02:22:17,907 --> 02:22:28,467
+So the idea is first when we are converting to...
+
+446
+02:22:32,979 --> 02:22:33,979
+converting NFA to regular expression. First we obtain a special GNFA. Then remove states and merge transitions.
+
+447
+02:23:04,564 --> 02:23:17,564
+until only start and accept states remain.
+
+448
+02:23:34,004 --> 02:23:39,004
+Let's look at a simple example.
+
+449
+02:23:43,700 --> 02:23:45,859
+So let's say we have a...
+
+450
+02:23:50,036 --> 02:23:51,115
+this
+
+451
+02:23:57,747 --> 02:24:14,747
+So we have this. Now we want to convert this to regular expression. So first we convert it to a special GNA.
+
+452
+02:24:24,404 --> 02:24:25,363
+that was a big issue.
+
+453
+02:24:30,355 --> 02:24:44,355
+and these two are like or so because we are converting into a regular expression we will write A or B or A union B.
+
+454
+02:24:44,355 --> 02:24:49,355
+And we are creating a new accept state.
+
+455
+02:25:15,956 --> 02:25:18,595
+And now,
+
+456
+02:25:22,579 --> 02:25:31,939
+We are skipping some steps because it will take some time. So we will...
+
+457
+02:25:33,907 --> 02:25:43,407
+get rid of this two, so, we will get rid of this two, so we have a, S.
+
+458
+02:25:52,435 --> 02:25:54,775
+So we have our accepting state.
+
+459
+02:25:57,775 --> 02:25:59,175
+Now,
+
+460
+02:26:08,435 --> 02:26:28,435
+We have this. Now, we have B, and then this A union B, and it's a loop. So, we have A union B. It's a loop. But before that, we have a B. Right? This B.
+
+461
+02:26:34,388 --> 02:26:57,388
+And finally we will have S A and we will have, so we will get rid of this one too and we will have A star B, A union B, B star.
+
+462
+02:26:57,388 --> 02:27:04,388
+So let's finish here because five minutes later you have an exam.
+
+463
+02:27:04,388 --> 02:27:13,388
+Normally I said you to read this part yourselves, so you should have already know these things.
+
+464
+02:27:13,388 --> 02:27:22,388
+But since we had some time, I wanted to work on it a little more.
+
+465
+02:27:22,388 --> 02:27:25,388
+So you are supposed to know these things already.
+
+466
+02:27:28,388 --> 02:27:31,388
+Do you have any questions?
+
+467
+02:27:31,388 --> 02:27:35,388
+Five minutes later, you will have an exam quiz.
+
+468
+02:27:43,028 --> 02:27:44,028
+No. Okay, so let's finish the lecture here. You have five minutes, you can take some rest and five minutes later at online use it to say, it is.
+
+469
+02:28:07,283 --> 02:28:10,083
+You'll have your quiz, quiz too.
+
+470
+02:28:12,043 --> 02:28:13,523
+Yine 5 soru mu var hocam?
+
+471
+02:28:14,744 --> 02:28:15,504
+Yok.
+
+472
+02:28:21,780 --> 02:28:26,099
+Daha fazla soru var. Baya fazla, evet.
+
+473
+02:28:38,131 --> 02:28:40,131
+Tamam arkadaşlar.
+
+474
+02:28:42,131 --> 02:28:56,131
+İyi günler hocam sağ ol. İyi günler ben bir 5 dakika daha açık tutacağım sisteme girebiliyor musunuz? Quiz yapabiliyor musunuz diye. Quiz başlayınca sisteme girebiliyorsanız kapatacağım yani quiz normal başladıktan sonra kapatacağım.
+
+475
+02:28:56,131 --> 02:29:00,131
+5 dakika ara veriyorum sonra 35 geçe geleceğim.
+
+476
+02:35:31,796 --> 02:35:34,955
+Sorun var mı arkadaşlar? Bağlanabiliyor musunuz sınava?
+
+477
+02:35:37,055 --> 02:35:38,135
+Bakacağım, devam ediyoruz.
+
+478
+02:35:38,756 --> 02:35:39,736
+Kolay gelsin.
