@@ -1,0 +1,2803 @@
+1
+00:03:47,955 --> 00:03:51,955
+Evet arkadaşlar merhabalar sesim geliyor mu?
+
+2
+00:04:03,316 --> 00:04:26,816
+Okay, so this course is in English, so let's start. Let's look at the syllabus and let's talk about what this course is about.
+
+3
+00:04:32,019 --> 00:04:32,839
+So,
+
+4
+00:04:35,891 --> 00:04:39,191
+70 şehir
+
+5
+00:04:41,524 --> 00:04:44,524
+type it with you.
+
+6
+00:04:48,723 --> 00:04:49,583
+Okay.
+
+7
+00:04:54,516 --> 00:04:56,355
+So this is a...
+
+8
+00:05:07,636 --> 00:05:09,636
+BLM
+
+9
+00:05:12,036 --> 00:05:15,035
+2502
+
+10
+00:05:16,235 --> 00:05:18,436
+and
+
+11
+00:05:20,884 --> 00:05:28,824
+its name is Theory of Computation.
+
+12
+00:05:31,475 --> 00:05:36,195
+Okay. And, um,
+
+13
+00:05:53,620 --> 00:06:02,179
+The course is about mostly, it will be mostly about automata.
+
+14
+00:06:04,980 --> 00:06:09,440
+Can you see what I write?
+
+15
+00:06:15,379 --> 00:06:18,659
+Is what I write, readable?
+
+16
+00:06:26,420 --> 00:06:49,420
+So the, the, the course is in English. So I will not speak in Turkish. I can sometimes speak in Turkish, but in general, we will be doing the course in English. It doesn't depend whether we have foreign, foreign students or not.
+
+17
+00:06:49,420 --> 00:06:56,420
+So the course will be about automata, and these are like machines.
+
+18
+00:06:59,699 --> 00:07:03,699
+But they are theoretical machines.
+
+19
+00:07:08,115 --> 00:07:18,755
+and what these theoretical machines can solve? What problems can these solve?
+
+20
+00:07:33,620 --> 00:07:52,120
+And we will also learn about things like algorithms. What is an algorithm? What is computation?
+
+21
+00:07:54,899 --> 00:08:22,899
+and, this will be the main, main theme of this course. We will, I will, I will speak about these more in detail, but let's talk about administrative stuff a little bit.
+
+22
+00:08:35,604 --> 00:08:40,604
+The course is online as you see and
+
+23
+00:08:45,172 --> 00:08:47,172
+The tentative
+
+24
+00:09:02,868 --> 00:09:04,868
+evaluation system is
+
+25
+00:09:04,868 --> 00:09:06,868
+a
+
+26
+00:09:11,635 --> 00:09:16,135
+We will have two homeworks.
+
+27
+00:09:18,196 --> 00:09:46,995
+and each of these will be, or together these will be 30 points. So they will have 50 points each. And we will have one mid-turn. This will be 30 points. So, and we will have one final.
+
+28
+00:09:48,196 --> 00:09:53,196
+which will be again, which will be 40 points.
+
+29
+00:09:55,696 --> 00:09:59,315
+And this will add up hopefully to 100 points.
+
+30
+00:10:13,587 --> 00:10:17,907
+The book of the course will be
+
+31
+00:10:23,059 --> 00:10:23,919
+So it is.
+
+32
+00:10:33,395 --> 00:10:40,395
+The book is Introduction to Theory of Computation.
+
+33
+00:10:56,820 --> 00:10:57,820
+by
+
+34
+00:10:59,820 --> 00:11:01,820
+Michael Sipser
+
+35
+00:11:08,500 --> 00:11:15,500
+We will use the third edition.
+
+36
+00:11:24,532 --> 00:11:27,532
+third edition.
+
+37
+00:11:27,532 --> 00:11:29,532
+And
+
+38
+00:11:35,700 --> 00:11:38,379
+The subjects will be...
+
+39
+00:11:45,107 --> 00:11:50,107
+So we will learn proof types.
+
+40
+00:11:54,964 --> 00:11:59,964
+We will learn deterministic and non-deterministic
+
+41
+00:12:11,443 --> 00:12:13,443
+finite automata,
+
+42
+00:12:20,148 --> 00:12:31,507
+We will learn context-free languages.
+
+43
+00:12:39,412 --> 00:12:44,611
+and pushdown automata.
+
+44
+00:13:22,355 --> 00:13:33,355
+We will learn. Church Turing thesis. We will learn Turing machines, let's say.
+
+45
+00:13:34,644 --> 00:13:39,144
+and their variations.
+
+46
+00:13:42,772 --> 00:13:53,091
+and we will be also talking about NP completeness.
+
+47
+00:13:54,995 --> 00:13:56,995
+decidability.
+
+48
+00:14:00,724 --> 00:14:03,724
+reducibility
+
+49
+00:14:05,724 --> 00:14:09,724
+if we have time. So let's say this is again tentative.
+
+50
+00:14:15,412 --> 00:14:45,391
+This is a tentative list of subjects. So basically, for sure, we will be doing Turing machines. But the subjects after that, we can do if we have time or we may not do it, do them. So they are kind of like joker or bonus subjects that we may or may not do.
+
+51
+00:14:45,412 --> 00:14:52,412
+So let's see.
+
+52
+00:15:00,596 --> 00:15:01,596
+We talked about book. So this is a good book and there are quite a bit. So there will be only one book by the way. And it will be this one, single book. And please read this book. Read the subjects that we did or we will do. And the
+
+53
+00:15:30,596 --> 00:15:34,596
+do the exercises and problems.
+
+54
+00:15:38,803 --> 00:16:05,323
+Okay, so, sold exercises. As I said, we will give only two homeworks, but you should do basically all the exercises in the book to be really learn very well this course. And there are some sold exercises, sold problems. Some of them are not sold, but
+
+55
+00:16:05,323 --> 00:16:07,323
+and then,
+
+56
+00:16:14,644 --> 00:16:24,644
+It's a good book, so read all of them, all of the subjects that we have done and do all the exercises related to them.
+
+57
+00:16:24,644 --> 00:16:38,644
+Do you have any questions about administrative stuff? If not, I will start the course. I will start the first lecture.
+
+58
+00:16:38,707 --> 00:16:40,707
+Hocam bir bize vardı değil mi?
+
+59
+00:16:43,892 --> 00:16:45,892
+I couldn't understand.
+
+60
+00:16:46,592 --> 00:16:47,911
+Bir vize vardı, değil mi?
+
+61
+00:16:48,231 --> 00:16:49,211
+Bir vize var, evet.
+
+62
+00:16:49,771 --> 00:16:50,531
+Teşekkür ederim.
+
+63
+00:16:52,732 --> 00:16:57,151
+Tentative, normalde böyle düşünüyoruz ama bunlar değişebilir.
+
+64
+00:16:58,352 --> 00:17:02,271
+These can change, but the current plan is this.
+
+65
+00:17:03,611 --> 00:17:08,331
+Single midterm, two homeworks, one final.
+
+66
+00:17:14,579 --> 00:17:34,579
+Is there a PDF version of the book? I think you can somehow find it. You can find it, but it's my responsibility to give you the PDFs of the books. Okay. Any questions?
+
+67
+00:17:36,579 --> 00:17:39,139
+Hocam, vizenin kaçıncı hafta olacağı belli mi?
+
+68
+00:17:39,139 --> 00:17:50,819
+normally it's the eighth week so probably most probably that's right here
+
+69
+00:17:54,708 --> 00:17:56,708
+midterm
+
+70
+00:17:57,708 --> 00:18:02,708
+is, let me check our program.
+
+71
+00:18:08,147 --> 00:18:25,147
+in this program, it is the ninth week. So it may be eight or ninth week. On eight or ninth.
+
+72
+00:18:27,988 --> 00:18:29,988
+How do you write this?
+
+73
+00:18:35,988 --> 00:18:37,067
+und
+
+74
+00:18:48,692 --> 00:19:17,692
+So, normally I remember it to be at the eighth week, but here in the program, it's written as Nint week. But there are some mistakes in the program. Somehow it was prepared quite a bit earlier, quite a bit time ago, but it wasn't edited.
+
+75
+00:19:18,692 --> 00:19:20,091
+So, um...
+
+76
+00:19:23,316 --> 00:19:29,316
+either eight or length week. Any questions?
+
+77
+00:19:42,355 --> 00:19:47,355
+So, I will not give...
+
+78
+00:19:57,364 --> 00:20:15,364
+I will not give any handouts, I will not give notes. I plan to not give any presentations. So it's your responsibility to take notes. So take your own notes.
+
+79
+00:20:22,963 --> 00:20:30,963
+Okay, so, another question? Any questions?
+
+80
+00:20:32,692 --> 00:20:37,871
+Okay, no other questions. So let's start.
+
+81
+00:20:55,604 --> 00:21:00,604
+So let's write theory of computation.
+
+82
+00:21:09,268 --> 00:21:13,127
+Why is this turning the light off?
+
+83
+00:21:24,180 --> 00:21:26,819
+So, um,
+
+84
+00:21:29,587 --> 00:21:38,587
+The questions we will answer, we will try to answer as, are, so we have these questions.
+
+85
+00:21:40,211 --> 00:21:50,472
+What are the mathematical properties of computer hardware and software?
+
+86
+00:22:10,195 --> 00:22:17,636
+So we are interested in them. What is a computation?
+
+87
+00:22:20,884 --> 00:22:23,443
+and what is an algorithm?
+
+88
+00:22:27,155 --> 00:22:37,155
+and one interesting thing is the limits of computers. What are the...
+
+89
+00:22:46,420 --> 00:23:07,420
+What are the limits of computers? So is there anything that, is there any computation that the computers cannot do? That's a question.
+
+90
+00:23:21,364 --> 00:23:34,963
+and we will see that there are some things, there are some computations.
+
+91
+00:23:38,740 --> 00:23:40,740
+that computers
+
+92
+00:23:45,940 --> 00:24:13,940
+cannot do. And these, even if they have very, even if they have infinite power, or even if, let's not, let's not say infinite, but even if they, they are very, very powerful, there are some computations that computers cannot do theoretically.
+
+93
+00:24:20,915 --> 00:24:22,156
+So,
+
+94
+00:24:25,236 --> 00:24:49,236
+In general, so purpose of this course is to develop formal mathematical models of computation that reflect real world computers. So we want to develop these formal mathematical
+
+95
+00:24:50,067 --> 00:25:00,307
+models. Of computation.
+
+96
+00:25:02,067 --> 00:25:12,067
+that reflect real-world computers.
+
+97
+00:25:18,451 --> 00:25:19,451
+So,
+
+98
+00:25:23,892 --> 00:25:50,892
+We want to create these mathematical models and we want to be able to think about real world computers without using real world computers. So we want to be able to think about them mathematically using these models, these tools we will have.
+
+99
+00:25:51,571 --> 00:25:52,411
+Uh,
+
+100
+00:25:59,667 --> 00:26:08,787
+So this part, the second part will be about complexity theory.
+
+101
+00:26:27,892 --> 00:26:29,892
+So, uh...
+
+102
+00:26:32,756 --> 00:26:50,756
+In the complexity theory, we will think about what makes some problems computationally hard and other problems easy. So why are some problems hard?
+
+103
+00:27:00,500 --> 00:27:03,119
+and some are easy.
+
+104
+00:27:05,279 --> 00:27:12,279
+And here, hard and easy from the point of computers.
+
+105
+00:27:12,279 --> 00:27:23,279
+So when we say easy, it means the computers can efficiently solve these problems.
+
+106
+00:27:23,279 --> 00:27:29,219
+So easy in this context means computer can,
+
+107
+00:27:33,076 --> 00:27:34,076
+efficiently, meaning fast, in a fast way, rapidly. So the computer can efficiently calculate or do or solve these problems.
+
+108
+00:28:02,163 --> 00:28:29,443
+and for the hard problems now, you might guess what I will say. So the computers cannot efficiently solve hard problems. It means if the problem becomes larger, so we will see these things, but if the input becomes larger, bigger, no matter how strong computers you have,
+
+109
+00:28:29,443 --> 00:28:50,443
+The complexity, the hardness increases so rapidly that no matter how strong computers you have, you will have a hard time computing these problems.
+
+110
+00:28:50,443 --> 00:28:51,443
+And...
+
+111
+00:28:54,963 --> 00:28:57,843
+some examples of easy,
+
+112
+00:28:57,843 --> 00:28:59,463
+easy,
+
+113
+00:29:02,099 --> 00:29:06,099
+problems are like sorting
+
+114
+00:29:08,099 --> 00:29:09,099
+let's say sorting
+
+115
+00:29:12,099 --> 00:29:13,099
+1 million numbers.
+
+116
+00:29:17,395 --> 00:29:44,395
+So there is there are these fast algorithms that that will help you to solve this problem. You can easily sort or you can easily search search for names in a phone directory, let's say.
+
+117
+00:29:44,276 --> 00:29:54,276
+or in a database. You can easily search. Or,
+
+118
+00:30:00,180 --> 00:30:01,180
+Now, there are a lot of obviously easy problems. Now for hard problems, for example, timetable scheduling for all courses. Timetable scheduling.
+
+119
+00:30:30,132 --> 00:30:58,132
+for all courses. So you have some courses. OK. Like we have now, for example, one is BLM. What is the name? 2502, et cetera. You have these courses.
+
+120
+00:31:02,003 --> 00:31:06,003
+And now you have times.
+
+121
+00:31:13,172 --> 00:31:23,691
+also you have, normally, normally we will also have,
+
+122
+00:31:25,748 --> 00:31:26,748
+classrooms. Because of the pandemic now we are doing online courses but normally you would have classrooms too. And you want to schedule, you want to put
+
+123
+00:31:50,644 --> 00:31:52,583
+these
+
+124
+00:31:56,531 --> 00:31:57,531
+courses to these times and these classrooms. And for small, when you have small number of
+
+125
+00:32:11,604 --> 00:32:15,604
+So here, what is the input?
+
+126
+00:32:17,523 --> 00:32:36,523
+input size. What is the input size? Input size is determined by number of courses. OK. Let's say this is N. So number of courses is N.
+
+127
+00:32:45,203 --> 00:32:55,203
+Now for small n, if n is small, it's not that hard to do this, but if n is large,
+
+128
+00:32:58,099 --> 00:33:16,620
+If n goes to infinity, the amount of time the computer will need to solve this problem goes to infinity too.
+
+129
+00:33:21,140 --> 00:33:28,140
+And usually it goes to infinity.
+
+130
+00:33:28,140 --> 00:33:36,140
+So in this problem, I am not sure is it exponential or what, but.
+
+131
+00:33:36,140 --> 00:33:41,140
+If this graph is.
+
+132
+00:33:42,932 --> 00:33:43,932
+If this graph is linear, something like this, a linear graph means the problem is easy. As the input increases, the time needed is linear. If you have a graph like n square or something, again, it is considered easy. This is polynomial growth.
+
+133
+00:34:12,931 --> 00:34:15,931
+Again, this is easy.
+
+134
+00:34:15,931 --> 00:34:35,931
+But if you have an algorithm that needs time, exponential time, given the input, so something like two to the n or something.
+
+135
+00:34:35,931 --> 00:34:39,931
+Now, this is a hard one, right? This is a hard one.
+
+136
+00:34:49,268 --> 00:35:17,787
+Okay. Because 2 to the n grows really, really fast. And as n goes to infinity or n has increases, 2 to the n increases much more rapidly. And your computers will be having a hard time to solve these in reasonable time.
+
+137
+00:35:19,268 --> 00:35:42,207
+So, so now the problem, so then what is, what do we do? What do we want? Well, we want to classify the problems. We want to be able to classify problems as easy or hard. So one central problem is
+
+138
+00:35:45,652 --> 00:35:58,652
+So, one central question in complexity.
+
+139
+00:36:01,715 --> 00:36:09,715
+Turing is how can we classify?
+
+140
+00:36:17,780 --> 00:36:21,379
+given problem,
+
+141
+00:36:24,179 --> 00:36:28,179
+as easy or hard.
+
+142
+00:36:32,563 --> 00:36:49,563
+and so I just said hard or easy but actually we will if you have time we will see more than two classes so we will have very hard let's say and
+
+143
+00:36:49,563 --> 00:37:02,563
+and
+
+144
+00:36:53,043 --> 00:37:00,043
+This is important. Why? Because...
+
+145
+00:37:02,195 --> 00:37:28,195
+If you can classify a problem, problem as easy, then you know that you can write an algorithm for it that will work fast. But if you can, but if you classify a problem as hard, let's say, you know that the problem is hard.
+
+146
+00:37:28,195 --> 00:37:39,155
+That means you cannot find an algorithm that will solve this problem in reasonable time.
+
+147
+00:37:39,276 --> 00:37:41,335
+So what will you do? What can you do?
+
+148
+00:37:41,335 --> 00:37:46,456
+You can change the problem. You can look to the problem from a different angle.
+
+149
+00:37:46,455 --> 00:38:12,855
+you can try to find alternatives or instead of solving it deterministically you may try to solve it randomly or you can say okay maybe since this is a hard problem you can say maybe
+
+150
+00:38:16,456 --> 00:38:21,335
+find good enough.
+
+151
+00:38:24,980 --> 00:38:37,980
+solution. Maybe since this is a, since you know that this problem is hard, you will not try to find the best solution, but a good enough solution, right?
+
+152
+00:38:53,364 --> 00:39:02,364
+So this step is you. So you will think about how, what can I do? But the crucial point here is
+
+153
+00:39:08,364 --> 00:39:10,364
+You should be able to classify.
+
+154
+00:39:12,364 --> 00:39:16,364
+Right. You should be able to say, okay, this is easy. This is hard.
+
+155
+00:39:16,364 --> 00:39:45,364
+And this is hard. If you can, if you find that this is an easy question, you can find an exact answer to it. And if you cannot classify, you will never be sure, right? Whether you can find the best solution or a good enough solution is needed, you cannot find the best solution in reasonable time. So if you cannot classify this,
+
+156
+00:39:46,364 --> 00:39:54,364
+You cannot do that. And when we say classify, we will, we will, uh,
+
+157
+00:39:57,396 --> 00:40:13,396
+We will prove these. Okay. So you will have a problem. And you will prove that it is easy.
+
+158
+00:40:13,427 --> 00:40:39,427
+or you will prove that it is hard. Okay, so it's it will not be just speculation or logic, simple logic. It will not be speculation, let's say it will not be guesswork. You will prove that this problem is easy. Or hard.
+
+159
+00:40:39,764 --> 00:40:41,004
+and,
+
+160
+00:40:52,500 --> 00:41:01,639
+So to do this problem, to do this proofs,
+
+161
+00:41:06,579 --> 00:41:07,579
+for proving these things. You will need mathematical definitions of what is a computer.
+
+162
+00:41:26,099 --> 00:41:28,099
+What is a machine?
+
+163
+00:41:30,099 --> 00:41:32,099
+What is an algorithm?
+
+164
+00:41:36,099 --> 00:41:38,099
+What is computation?
+
+165
+00:41:40,099 --> 00:41:44,099
+You will need precise mathematical
+
+166
+00:41:45,099 --> 00:41:49,099
+.
+
+167
+00:41:49,364 --> 00:41:50,364
+definitions for this. So that you can mathematically prove. And in this course you will have this, you will learn this. So,
+
+168
+00:42:50,996 --> 00:42:54,996
+So we were talking about complexity theory.
+
+169
+00:43:00,500 --> 00:43:10,500
+and we said that a central question in complexity theory is to
+
+170
+00:43:15,027 --> 00:43:23,207
+classify these problems. And the.
+
+171
+00:43:26,452 --> 00:43:34,452
+We will also talk about compatibility theory.
+
+172
+00:43:43,764 --> 00:43:45,764
+let me delete this word.
+
+173
+00:43:54,164 --> 00:43:57,363
+So, computability theory.
+
+174
+00:44:09,492 --> 00:44:21,251
+So, in 1930s, the
+
+175
+00:44:23,764 --> 00:44:32,764
+scientists discovered something. They discovered that...
+
+176
+00:44:34,900 --> 00:44:46,900
+that some fundamental mathematical problems cannot be solved by a computer. That...
+
+177
+00:44:48,052 --> 00:45:01,731
+some fundamental mathematical problems.
+
+178
+00:45:17,235 --> 00:45:19,235
+mathematical problems
+
+179
+00:45:22,555 --> 00:45:23,635
+cannot be
+
+180
+00:45:24,635 --> 00:45:25,755
+.
+
+181
+00:45:30,675 --> 00:45:37,096
+sold by a computer.
+
+182
+00:45:43,347 --> 00:45:58,347
+The interesting thing is, at that time, there were no computers. So computers,
+
+183
+00:46:00,307 --> 00:46:03,627
+were invented,
+
+184
+00:46:07,123 --> 00:46:10,123
+in 1940s.
+
+185
+00:46:13,123 --> 00:46:27,123
+So before they invented computers, they knew some of the problems will not be, they knew that computers cannot solve some of these problems.
+
+186
+00:46:27,123 --> 00:46:34,123
+For example, an example is,
+
+187
+00:46:33,331 --> 00:46:41,331
+Is an arbitrary mathematical statement true or false?
+
+188
+00:46:55,059 --> 00:46:58,540
+is an arbitrary mathematical statement.
+
+189
+00:47:02,739 --> 00:47:10,739
+is true or false.
+
+190
+00:47:17,940 --> 00:47:45,940
+So you will give a statement to the computer and the computer must know or tell you whether that statement is false or whether it's true. And it will not, the computer will not solve this. So this is not solvable.
+
+191
+00:47:48,532 --> 00:47:50,972
+meaning computers cannot do this.
+
+192
+00:47:56,091 --> 00:47:56,851
+So,
+
+193
+00:48:00,563 --> 00:48:25,563
+The central problem here is again a classification, but this time we want to classify problems as solvable or unsolvable. So here, central question, let's say.
+
+194
+00:48:28,083 --> 00:48:31,083
+in computability theory.
+
+195
+00:48:39,123 --> 00:48:42,123
+Again, you want a classification.
+
+196
+00:48:53,652 --> 00:49:04,391
+But this time as soluble or unsoluble.
+
+197
+00:49:10,996 --> 00:49:12,015
+and, uh,
+
+198
+00:49:17,043 --> 00:49:18,043
+again, obviously this is important. If a problem is unsolvable, theoretically unsolvable, you will not spend time to work on it, right? You will not think about it. It will be unnecessary to think about it. And another related field is
+
+199
+00:49:47,043 --> 00:49:48,543
+automaton theory,
+
+200
+00:49:56,500 --> 00:49:56,939
+So,
+
+201
+00:50:01,268 --> 00:50:07,748
+and the other.
+
+202
+00:50:15,219 --> 00:50:16,219
+Now, uh, uh, Automata theory deals with definitions and properties of different types of computation models. Uh, uh,
+
+203
+00:50:31,188 --> 00:50:32,188
+So here we will have study of different
+
+204
+00:50:45,235 --> 00:50:47,235
+computation models.
+
+205
+00:50:52,403 --> 00:51:06,723
+Okay. And the examples of these computational computation models are Deterministic finite automata.
+
+206
+00:51:16,340 --> 00:51:31,340
+or you can also have non-deterministic finite automata or you might have context-free grammars.
+
+207
+00:51:36,148 --> 00:51:41,148
+or you might have Turing machines.
+
+208
+00:51:53,139 --> 00:52:06,139
+Each of these have different use cases. So you might use finite automata in text processing compilers.
+
+209
+00:52:12,467 --> 00:52:23,107
+etc. Context-free grammars are used in programming languages.
+
+210
+00:52:27,795 --> 00:52:32,236
+in artificial intelligence.
+
+211
+00:52:34,579 --> 00:53:02,579
+and now Turing machines are really important. Turing machines give us a simple abstract model of real computers. So Turing machines give us, helps us think about real computers.
+
+212
+00:53:10,516 --> 00:53:40,495
+and Turing machines will be able to solve the problems real computers can solve. And if a problem cannot be solved by Turing machine, that means it cannot be solved by a real computer. So kind of, this is like the, for me, this is like the most important thing.
+
+213
+00:53:40,516 --> 00:53:45,955
+important kind of computation model.
+
+214
+00:53:45,955 --> 00:53:54,876
+And complexity theory, et cetera, is based on Turing machines.
+
+215
+00:53:54,876 --> 00:53:59,175
+You can base it based on it at least.
+
+216
+00:54:03,860 --> 00:54:32,860
+So this is a, these are the general, like a very high level summary of the contents of the, of the course. And in a way we gave it in the reverse order. So we will first work on, so we will start by in this course.
+
+217
+00:54:42,387 --> 00:54:46,387
+We will start by automata theory.
+
+218
+00:54:52,820 --> 00:54:55,820
+and then computation theory.
+
+219
+00:55:01,364 --> 00:55:03,364
+then complexity theory.
+
+220
+00:55:07,956 --> 00:55:08,956
+Now we will go in this order and most of the course will be about automata theory. So, we will not be able to do a lot of complexity theory or a lot of computation theory or not at all. So this was a general, general look at what we will do. In the next lecture, we will start with
+
+221
+00:55:37,956 --> 00:55:48,115
+set theory. I will give a 10 minutes break. Do you have any questions before that?
+
+222
+00:56:01,396 --> 00:56:03,396
+Where is the chat window?
+
+223
+00:56:16,947 --> 00:56:30,627
+Okay, there was a message but I couldn't read it so sorry for that in time I mean. So let's give a break till
+
+224
+00:56:37,811 --> 00:56:39,811
+What? 10.05.
+
+225
+00:56:43,811 --> 00:56:46,811
+Let's have a break till 10.05.
+
+226
+01:07:30,612 --> 01:07:34,671
+Evet merhabalar tekrar arkadaşlar sesim geliyor ama
+
+227
+01:07:38,867 --> 01:07:39,867
+Geliyor hocam.
+
+228
+01:07:39,867 --> 01:07:40,867
+Geliyor, tamam.
+
+229
+01:07:46,931 --> 01:07:51,931
+İşlemiş olduğumuz dersle ilgili bir sıkıntı oldu mu? Görmeniz, duymanız...
+
+230
+01:07:58,003 --> 01:07:59,843
+Yani ben herhangi bir sıkıntı yaşamadım.
+
+231
+01:08:00,464 --> 01:08:00,704
+Tamam.
+
+232
+01:08:01,123 --> 01:08:05,903
+Hocam ekranda sorun yok da videonuz simsiyah karanlık yüzünüz hiçbir şekilde gözükmüyor.
+
+233
+01:08:05,903 --> 01:08:24,043
+Evet evet bu şeyle ilgili bilgisayarın ve pencerenin konumuyla ilgili burada da bu şekilde oluyor. Dolayısıyla bununla idare etmeniz gerekecek.
+
+234
+01:08:25,303 --> 01:08:26,283
+Tamamdır hocam.
+
+235
+01:08:31,155 --> 01:08:42,155
+Okay, so we will start with a new notebook. Let's call it set theory.
+
+236
+01:08:52,916 --> 01:08:53,895
+Okay.
+
+237
+01:09:08,148 --> 01:09:19,507
+So, uh, I will try to go first because you probably know these things.
+
+238
+01:09:23,828 --> 01:09:32,328
+So asset is a collection of well-defined objects.
+
+239
+01:09:43,123 --> 01:09:58,123
+well-known sets, well-known sets, for example, n is set of natural numbers.
+
+240
+01:10:22,387 --> 01:10:25,147
+you have set of integers,
+
+241
+01:10:40,756 --> 01:10:46,756
+So it comes from minus infinity and goes to positive infinity.
+
+242
+01:10:54,707 --> 01:10:58,387
+And you have the set of rational numbers.
+
+243
+01:11:03,307 --> 01:11:04,508
+We have
+
+244
+01:11:06,187 --> 01:11:07,588
+M over N
+
+245
+01:11:08,227 --> 01:11:09,588
+such that
+
+246
+01:11:10,107 --> 01:11:12,107
+so natural
+
+247
+01:11:12,468 --> 01:11:14,107
+rational numbers
+
+248
+01:11:14,267 --> 01:11:17,388
+are numbers that we can express as
+
+249
+01:11:18,827 --> 01:11:21,187
+this division M over N
+
+250
+01:11:21,628 --> 01:11:24,187
+where M and N are
+
+251
+01:11:24,187 --> 01:11:51,987
+integers. So M is in set of integers. And N is in set of integers. If I don't write, if I just put comma here, you can read it as N. So M is in Z and N is in Z. And then this N must not be zero.
+
+252
+01:11:51,987 --> 01:11:58,987
+So you say n is not 0.
+
+253
+01:12:02,707 --> 01:12:07,707
+and then we have set of real numbers.
+
+254
+01:12:19,636 --> 01:12:30,636
+So, we have the relation of subset. So,
+
+255
+01:12:32,756 --> 01:12:37,756
+So we say that A is a subset.
+
+256
+01:12:39,796 --> 01:12:49,796
+of B if every element of A is
+
+257
+01:12:57,395 --> 01:13:11,395
+every element of A, set A, is also an element of B.
+
+258
+01:13:20,724 --> 01:13:34,003
+We have the power set, so, P of B, this is also called power set of B.
+
+259
+01:13:36,180 --> 01:13:46,180
+and it is the set of all subsets of B. So,
+
+260
+01:13:50,036 --> 01:14:09,036
+It is the set of all subsets of B. And these subsets include empty set and B itself. So how will we write?
+
+261
+01:14:10,323 --> 01:14:36,323
+Let's write it mathematically. This is the set of elements. These elements are sets themselves such that these A elements are subsets of B. Okay.
+
+262
+01:14:40,372 --> 01:14:58,611
+and you notice that empty element is in power set of P and P itself is in power set of P.
+
+263
+01:15:04,979 --> 01:15:09,499
+And also we have the usual stuff, unions,
+
+264
+01:15:15,636 --> 01:15:18,015
+So we have the...
+
+265
+01:15:21,876 --> 01:15:46,876
+We have A union B. A and B are sets obviously here. And this is a set of elements X such that X is an element of A and it's an element or we have to use order here.
+
+266
+01:15:46,876 --> 01:16:08,435
+It must be either in A or in B. X is an element of B. Again, we have the intersection. X is such that X is in A and this time X is in B. So it must be in both of them.
+
+267
+01:16:08,435 --> 01:16:32,495
+and we have the difference A and the difference B. So in this case, X is in A, but it is not in B. So we have X is in A and X is not in B.
+
+268
+01:16:32,495 --> 01:16:48,095
+Now, these are usual stuff, union, intersection, difference. Now, Cartesian product is, that may be new for you.
+
+269
+01:16:49,535 --> 01:17:01,835
+So, A Cartesian product B, now this is a set that has the elements, these pairs. It has
+
+270
+01:17:01,835 --> 01:17:15,776
+So elements are pairs in this case. So you might have an X and Y. So these are pairs. And one of these pairs will come from A and the other will come from B.
+
+271
+01:17:17,916 --> 01:17:27,956
+So in this case, X is in A and Y is in B.
+
+272
+01:17:31,572 --> 01:17:42,572
+And you have the complement. So A's complement is...
+
+273
+01:17:42,868 --> 01:18:10,868
+the set of X that are not in A. So X is not the element of A. And of course, there might be infinitely many things that are not inside A. So we are here, we are talking about a...
+
+274
+01:18:06,963 --> 01:18:32,963
+So, we need to also define what the universal set is, right? So, the A's complement are the set of elements that are not in A, but they are in the universal set. So, these are A's complement.
+
+275
+01:18:32,963 --> 01:18:37,283
+So you know these things so
+
+276
+01:18:49,908 --> 01:19:01,107
+Now, a binary relation on two sets A and B is a subset of
+
+277
+01:19:02,579 --> 01:19:14,019
+a Cartesian product B. So a binary relation,
+
+278
+01:19:23,444 --> 01:19:34,003
+on A and B. Is a subset of...
+
+279
+01:19:36,627 --> 01:19:37,627
+A.
+
+280
+01:19:37,627 --> 01:19:38,627
+Part of the.
+
+281
+01:19:38,627 --> 01:19:39,627
+Subset of a.
+
+282
+01:19:39,627 --> 01:19:42,627
+Cartesian product the.
+
+283
+01:19:42,627 --> 01:19:45,627
+So in a mean in a way.
+
+284
+01:19:45,627 --> 01:19:49,627
+You have a you have be.
+
+285
+01:19:52,083 --> 01:19:53,083
+We have these pairs. So from A you select this, from B you select this. So that means they are in the Cartesian product of each. It's a binary relation. Now, a function now is a binary relation. So a function from
+
+286
+01:20:22,083 --> 01:20:27,363
+A to B, and we write this as,
+
+287
+01:20:33,604 --> 01:20:35,043
+we write this as,
+
+288
+01:20:40,595 --> 01:20:41,635
+this way.
+
+289
+01:20:45,332 --> 01:21:02,332
+So, sorry, I wrote inverse. It should be A to B. From A to B. So it's a binary relation.
+
+290
+01:21:04,115 --> 01:21:08,596
+is binary radiation.
+
+291
+01:21:11,699 --> 01:21:18,120
+and that binary relation have the probability that for each element in A,
+
+292
+01:21:24,948 --> 01:21:43,267
+So for each element A in A, there is exactly one ordered pair in R.
+
+293
+01:21:54,996 --> 01:22:00,996
+There is exactly one ordered pair in R.
+
+294
+01:22:06,644 --> 01:22:20,803
+So binary relation R. Let's say R. And there's exactly one ordered pairs. In R.
+
+295
+01:22:23,380 --> 01:22:31,380
+whose first component is A. So,
+
+296
+01:22:36,372 --> 01:22:42,671
+We will say that F of A is B.
+
+297
+01:22:44,251 --> 01:22:47,091
+Hocam in B dememiz gerekmiyor muydu?
+
+298
+01:22:48,131 --> 01:22:49,292
+Ne dememiz gerekiyordu?
+
+299
+01:22:50,351 --> 01:22:53,071
+In B dememiz gerekmiyor muydu? A dedik ya.
+
+300
+01:22:55,831 --> 01:22:57,872
+From A to B dedik ya.
+
+301
+01:22:58,731 --> 01:23:04,771
+Yani relation zaten A'dan B'ye ya. Dolayısıyla B'de olmak zorunda diye onu yazmadım.
+
+302
+01:23:06,372 --> 01:23:14,372
+Ya doğru, haklısınız, B'de olmak zorunda, from A to B, A to B.
+
+303
+01:23:14,372 --> 01:23:18,372
+In R,
+
+304
+01:23:25,460 --> 01:23:34,460
+and we write that F of A is equal to B.
+
+305
+01:23:36,404 --> 01:24:02,404
+or we can say F maps A to B. So we say F maps A to B. And we might say images image of A under F is B.
+
+306
+01:24:04,404 --> 01:24:09,404
+image of A under-if.
+
+307
+01:24:16,851 --> 01:24:23,851
+I never used this. So now, uh,
+
+308
+01:24:27,412 --> 01:24:46,412
+So basically this is, you have your set A, you have your set B, and for each point here, you have exactly one point, one corresponding point. You cannot have this situation.
+
+309
+01:24:46,412 --> 01:24:47,412
+Okay.
+
+310
+01:24:52,020 --> 01:25:21,999
+Right. For each element A, there is exactly one ordered pair in R. So there is exactly one element in B. So you have A, you have B. So your A is in B. Your B is there.
+
+311
+01:25:27,859 --> 01:25:46,859
+and this is okay if you have some other C that maps to B, that's okay. But the same A cannot map to two different Bs, two different values.
+
+312
+01:25:47,891 --> 01:25:51,251
+Now the set A is called domain.
+
+313
+01:25:54,452 --> 01:26:07,891
+domain of F. And the other is called, B is called, the range of F.
+
+314
+01:26:34,420 --> 01:26:45,420
+Now we say that a binary relation is an equivalence relation.
+
+315
+01:26:48,948 --> 01:26:49,987
+So,
+
+316
+01:26:59,220 --> 01:27:01,099
+So, an equivalence,
+
+317
+01:27:04,467 --> 01:27:05,467
+relation. Is when, so it's a subset of A cross product A. And it satisfies three conditions. And.
+
+318
+01:27:34,547 --> 01:27:44,547
+R is reflexive for every element in A, we have A, A, so...
+
+319
+01:27:50,804 --> 01:27:58,804
+So R is reflexive.
+
+320
+01:28:00,404 --> 01:28:07,404
+So equivalence relation is a binary relation.
+
+321
+01:28:07,380 --> 01:28:09,219
+I didn't write tears.
+
+322
+01:28:25,460 --> 01:28:43,460
+is a binary relation. It is a subset of A, Cartesian product A itself. And R is reflexive, meaning for every element in A,
+
+323
+01:28:51,988 --> 01:29:01,988
+The pair AA is in the relation.
+
+324
+01:29:05,108 --> 01:29:11,347
+and are symmetric.
+
+325
+01:29:16,212 --> 01:29:17,212
+meaning for all A and B in A, if AB is in R, then BA is in R. So we have for all A in A and B in B, we have if AB is in R, then BA.
+
+326
+01:29:46,212 --> 01:29:56,212
+The symmetry, the inverse of it is also in R. And finally, R is transitive.
+
+327
+01:30:03,539 --> 01:30:15,619
+So for all AB and C in A, if AB is in R and BC is in R, then also AC is in R. So for all...
+
+328
+01:30:17,555 --> 01:30:18,255
+and, uh,
+
+329
+01:30:22,452 --> 01:30:39,452
+Sorry, here I said in B, but there is no B here, right? We have A and A. So this should be for all A and B in A. Let's write that way.
+
+330
+01:30:44,884 --> 01:31:14,863
+for all A and B in A, we have this. And now for all A, B and C in A, we have if A, B in R and B, C is in R,
+
+331
+01:31:14,884 --> 01:31:19,803
+then AC is in R.
+
+332
+01:31:24,627 --> 01:31:29,627
+So this is the, this is transitive.
+
+333
+01:31:32,372 --> 01:31:40,372
+So if we have such a binary relation, we call it an equivalence relation.
+
+334
+01:31:48,372 --> 01:32:07,372
+Now, this was a very short summary of important points that we will use in this course. Again, let's look at Boolean logic.
+
+335
+01:32:11,891 --> 01:32:18,891
+So this was Satori...
+
+336
+01:32:25,076 --> 01:32:30,076
+Let's write the Boolean logic this way.
+
+337
+01:32:41,652 --> 01:32:42,851
+and, you know,
+
+338
+01:32:50,707 --> 01:32:54,707
+So in the Boolean logic,
+
+339
+01:32:59,315 --> 01:33:01,315
+In the Boolean logic we have
+
+340
+01:33:05,652 --> 01:33:10,891
+false and true. So we have only two values.
+
+341
+01:33:17,043 --> 01:33:42,804
+and true. And instead of writing these words false and true, a lot of the times we will just write zero and one. So zero means false, one means true. Sometimes you can see F for false and T for true too.
+
+342
+01:33:42,804 --> 01:33:51,283
+and now we have basic operations and so we have
+
+343
+01:33:55,060 --> 01:33:59,460
+basic operations like negation,
+
+344
+01:34:01,652 --> 01:34:02,652
+also called not. And this is represented by. This. We have conjunct conjunction. Con. Junction.
+
+345
+01:34:27,444 --> 01:34:41,444
+This is also called AND. Let me write this in capital letters to this knot. So I will say NOT.
+
+346
+01:34:42,899 --> 01:34:56,899
+and N is shown with this inverse V, let's say. We have this junction.
+
+347
+01:35:00,851 --> 01:35:11,851
+or. Represented by this V. We have exclusive or.
+
+348
+01:35:18,612 --> 01:35:36,612
+So this is written as XOR. And here we will present it with this plus sign inside.
+
+349
+01:35:36,148 --> 01:35:37,508
+circle
+
+350
+01:35:44,148 --> 01:35:51,148
+and we have equivalents.
+
+351
+01:35:54,579 --> 01:36:22,579
+They don't, this doesn't have a name, X operator name. And we will represent this with this. Or this fat rows, let's say, skinny rows and fat rows, double sided. And finally, we have implication.
+
+352
+01:36:24,404 --> 01:36:36,404
+So this is again shown with the second arrow or third arrow.
+
+353
+01:36:39,572 --> 01:36:48,572
+Now for this, we have these truth tables. So...
+
+354
+01:36:52,051 --> 01:36:53,131
+So,
+
+355
+01:37:02,260 --> 01:37:03,260
+And the truth tables tell us whether the values of the operations, what are the values of the operations themselves? So in case of not, so if the value is zero, meaning false, it's not is
+
+356
+01:37:30,292 --> 01:38:00,271
+true and not of true is false. And for and, so we have, let's say 0011 and, and, and, and, and, 0101. So we have four different possibilities.
+
+357
+01:38:00,292 --> 01:38:14,292
+So we want to make sure we know the value for the operating operation value for all of this.
+
+358
+01:38:14,292 --> 01:38:18,372
+So 0 and 0.
+
+359
+01:38:18,372 --> 01:38:23,571
+Only this one is true here, right?
+
+360
+01:38:23,571 --> 01:38:29,972
+If both of them are true, then the operation result is true.
+
+361
+01:38:30,292 --> 01:38:58,292
+The rest are all zeros, right? So we have 0, 0, 0 here. And for ORS, now again, 0, 0, 1, 1 ORS, ORS, ORS, ORS, 0, 1, 0, 1. Now, these are all true, except
+
+362
+01:38:58,292 --> 01:39:24,211
+zero or zero. This one is zero. And the rest is one. So it's like, this doesn't happen. This is false. This false. This is false too. So the final result is false.
+
+363
+01:39:24,211 --> 01:39:34,211
+So we have a one, one, one for all of these. Now for XOR,
+
+364
+01:39:43,091 --> 01:39:44,091
+again 0011 XOR XOR XOR XOR 0101. Now XOR is XOR is 0 when they are the same thing.
+
+365
+01:40:13,091 --> 01:40:25,091
+If the opera, if the arguments are different, then we have one.
+
+366
+01:40:25,091 --> 01:40:27,091
+Okay.
+
+367
+01:40:32,692 --> 01:40:45,692
+And if the arguments are the same, they are both false or they are both true, the operation result is false.
+
+368
+01:40:47,412 --> 01:40:52,412
+and equivalence is kinda inverse of XOR.
+
+369
+01:40:57,555 --> 01:41:02,555
+So equivalence.
+
+370
+01:41:05,203 --> 01:41:12,323
+So we have again 0011 and we will say this.
+
+371
+01:41:16,340 --> 01:41:20,820
+zero, one, zero, one.
+
+372
+01:41:22,068 --> 01:41:46,267
+Now, it's kind of inverse of XOR. So if the arguments are same, the equivalence becomes true, right? So these two are true then, right? And if the arguments are different, then we have, so they are not equivalent, right? Logical. They are not equivalent.
+
+373
+01:41:46,267 --> 01:41:56,267
+So the arguments are not equivalent. So we will say this is these two are false. Now implication.
+
+374
+01:42:03,380 --> 01:42:04,380
+again, 0011. And we have this, now, 0101. Now, implication is false only when you have this guy, only false in this row.
+
+375
+01:42:33,380 --> 01:42:43,380
+So implication is like if then let's look at this a little bit a little more.
+
+376
+01:42:43,380 --> 01:42:47,380
+So implication.
+
+377
+01:42:52,051 --> 01:42:59,051
+implication is like you have this if-then statement.
+
+378
+01:43:03,444 --> 01:43:30,003
+if then and arguments are here. Right. Now, the first thing is called antecedent antecedent, which I never use. You can also call this condition.
+
+379
+01:43:28,884 --> 01:43:40,884
+So if condition, then you have a consequence.
+
+380
+01:43:42,484 --> 01:43:44,484
+This should be as
+
+381
+01:43:51,123 --> 01:43:54,483
+consequence or promise.
+
+382
+01:43:58,564 --> 01:44:05,323
+So you have a condition and there is a promise.
+
+383
+01:44:05,323 --> 01:44:15,323
+And now an example that you can see a lot is something like this.
+
+384
+01:44:15,323 --> 01:44:27,503
+let's say you have P, P and P is you take out the trash.
+
+385
+01:44:39,796 --> 01:44:44,236
+You take out the trash and Q is a,
+
+386
+01:44:47,347 --> 01:44:49,347
+You get money.
+
+387
+01:44:54,899 --> 01:45:05,959
+So now, what is the value of P implies Q?
+
+388
+01:45:07,360 --> 01:45:11,199
+What is the value of P implies Q?
+
+389
+01:45:13,199 --> 01:45:14,199
+Implication.
+
+390
+01:45:17,039 --> 01:45:23,119
+Now, assume that you took out the trash, so P is true.
+
+391
+01:45:23,119 --> 01:45:24,479
+Okay.
+
+392
+01:45:25,919 --> 01:45:29,299
+But you didn't get any money, right?
+
+393
+01:45:29,920 --> 01:45:31,179
+You didn't get any money.
+
+394
+01:45:31,999 --> 01:45:36,059
+So then this implication was wrong.
+
+395
+01:45:36,599 --> 01:45:37,639
+So that's this row.
+
+396
+01:45:38,199 --> 01:45:38,359
+Okay.
+
+397
+01:45:40,999 --> 01:45:44,039
+You took out the trash, but you didn't get the money.
+
+398
+01:45:44,819 --> 01:45:49,059
+Now, the interesting thing is the rest is all ones.
+
+399
+01:45:49,059 --> 01:45:59,499
+meaning so this is very easy if you get so p is one meaning you took out the trash
+
+400
+01:45:59,499 --> 01:46:09,560
+and if q is one that means you get the money and in this case again the simplification is true
+
+401
+01:46:09,560 --> 01:46:16,440
+so this is easy what is kind of a little interesting is okay this is easy too so
+
+402
+01:46:16,440 --> 01:46:23,660
+So let's say you didn't take out the trash and you didn't get money.
+
+403
+01:46:23,740 --> 01:46:25,440
+Again, that's logical.
+
+404
+01:46:25,440 --> 01:46:34,760
+So you don't do the condition and you don't get the promise or award, let's say.
+
+405
+01:46:35,499 --> 01:46:37,620
+Now, interesting part is this one.
+
+406
+01:46:37,620 --> 01:46:53,539
+So even if you don't take out the trash, if you get money, that means this implication is true.
+
+407
+01:46:53,539 --> 01:47:02,880
+So you get the money. That's the point here. You get the award or the consequence happens.
+
+408
+01:47:03,640 --> 01:47:04,640
+The consequence happens.
+
+409
+01:47:10,355 --> 01:47:11,355
+Okay. So these are Boolean operations and this was a very short summary of Boolean logic. Now, we will need to use these in proof techniques. So,
+
+410
+01:48:03,859 --> 01:48:06,619
+So, um,
+
+411
+01:48:09,555 --> 01:48:20,555
+In mathematics, a theorem is a statement that is true. So in math,
+
+412
+01:48:21,140 --> 01:48:23,140
+A theorem
+
+413
+01:48:23,140 --> 01:48:27,140
+is a statement
+
+414
+01:48:27,140 --> 01:48:28,140
+of
+
+415
+01:48:30,644 --> 01:48:58,644
+that is true. And now to say that something is a theorem, then you need to prove it that it is true. So you need a mathematical proof, right? So then a proof
+
+416
+01:48:57,395 --> 01:49:10,675
+is a sequence of mathematical statements. So this is a sequence of mathematical
+
+417
+01:49:12,435 --> 01:49:13,815
+statements,
+
+418
+01:49:17,395 --> 01:49:31,195
+that form an argument to show that a theorem is true. So the you have these mathematical statements and these mathematical statements form an argument.
+
+419
+01:49:38,003 --> 01:49:48,003
+that a theorem is true.
+
+420
+01:49:53,587 --> 01:50:00,587
+So you might also come across to axioms.
+
+421
+01:50:01,747 --> 01:50:13,107
+So an axiom is something you cannot prove. It is an assumption. So it's an assumption.
+
+422
+01:50:15,796 --> 01:50:22,796
+about the underlying mathematical structures.
+
+423
+01:50:39,539 --> 01:50:50,539
+So these are usually very, very small number of things. So you might say,
+
+424
+01:50:58,131 --> 01:51:03,131
+Improbability theory, for example.
+
+425
+01:51:06,292 --> 01:51:09,451
+For example, what are the axioms?
+
+426
+01:51:43,283 --> 01:52:13,263
+For example, in Probable Tutorial, you have axiom 1 that says that probability of an event is a non-negative real number. So probability of an event is a non-real number. So it's in real numbers and it is greater than zero.
+
+427
+01:52:20,979 --> 01:52:22,979
+and
+
+428
+01:52:28,787 --> 01:52:51,787
+and then you might have axiom and other axiom too. And let's say, Probability of sample space is one, meaning all possible choices. If you sum the probabilities, you have this. And the third axiom might say,
+
+429
+01:52:51,787 --> 01:53:14,188
+for this joint sets, any countable sequence of this joint sets satisfies this probability of union of
+
+430
+01:53:19,859 --> 01:53:22,859
+these events.
+
+431
+01:53:24,692 --> 01:53:29,692
+are some of the probabilities.
+
+432
+01:53:34,996 --> 01:53:41,996
+if A, E, R, independent.
+
+433
+01:53:46,131 --> 01:53:48,131
+Sorry, this is your name.
+
+434
+01:53:59,636 --> 01:54:26,636
+And now these three are the axioms. You accept them. So this is an example. And now using these three axioms, you can write books. You start from there, but you're using these three rules, these three assumptions, you can create another rule, then another rule, then another rule by proving.
+
+435
+01:54:26,636 --> 01:54:41,036
+and then you can have this huge thing called probability theory. It's a probability theory is a list of theories, let's say.
+
+436
+01:54:53,844 --> 01:54:54,844
+and, you know, the same thing.
+
+437
+01:54:59,923 --> 01:55:03,923
+power set of B.
+
+438
+01:55:05,619 --> 01:55:12,619
+So, let's say, power set of B.
+
+439
+01:55:15,283 --> 01:55:17,623
+Hocam, ekranımızın görüntüsü gitti.
+
+440
+01:55:21,043 --> 01:55:24,023
+Bir de biraz yukarı çıkar mısınız oraya geçin?
+
+441
+01:55:26,624 --> 01:55:27,803
+Nereye çıkıyor?
+
+442
+01:55:29,023 --> 01:55:32,964
+Şey, yukarı kısmı. Tamam, burayı alırım ben şimdi.
+
+443
+01:55:34,663 --> 01:55:36,063
+Yazacak mıydın? O yüzden mi?
+
+444
+01:55:37,124 --> 01:55:37,544
+Aynen.
+
+445
+01:55:38,544 --> 01:55:42,544
+Öyle bu durumda uyarabilirsiniz. Beni daha yavaş gidebilirim.
+
+446
+01:55:45,283 --> 01:56:00,164
+Birisi de power set of B'yi sormuş. Power set of B, Türkçe'de ne diyoruz? B'nin ne diyoruz arkadaşlar? Türkçesini unuttum.
+
+447
+01:56:01,083 --> 01:56:01,983
+Alt kümeleri.
+
+448
+01:56:01,983 --> 01:56:12,864
+Alt kümelerinden oluşan küme. Yani basit bir örnek verelim. Burayı sileceğim daha sonra.
+
+449
+01:56:19,604 --> 01:56:20,724
+Diyelim ki
+
+450
+01:56:28,500 --> 01:56:32,339
+B, 1, 2, 3 olsun.
+
+451
+01:56:33,880 --> 01:56:35,919
+B'nin power seti nedir?
+
+452
+01:56:37,819 --> 01:56:38,639
+Boş küme var.
+
+453
+01:56:40,960 --> 01:56:42,079
+1 var.
+
+454
+01:56:42,960 --> 01:56:44,439
+Sadece 1'i içeren küme.
+
+455
+01:56:45,440 --> 01:56:46,840
+Sadece 2'yi içeren küme.
+
+456
+01:56:47,520 --> 01:56:49,000
+Sadece 3'ü içeren küme.
+
+457
+01:56:51,219 --> 01:56:53,379
+1 ve 2'yi içeren küme.
+
+458
+01:56:54,799 --> 01:56:57,019
+1 ve 3'ü içeren küme.
+
+459
+01:56:58,500 --> 01:57:11,319
+1, 2 ve 3'ü içeren küme. Bir de 1, 2 ve 3'ü içeren küme. Bütün bu kümeleri içeren kümeye power set diyoruz.
+
+460
+01:57:14,919 --> 01:57:18,919
+Tamam. Soru açıklandı mı power seti soran için?
+
+461
+01:57:26,644 --> 01:57:45,404
+kuvvet kümesi diye geçiyor demiş bir arkadaşınız. Bunları tabii chatten değil de sesli sorarsanız o anda anlayabilirim. Chat'i takip edemiyorum bir taraftan da çünkü bir taraftan yazıyorum falan, bir taraftan anlattığım kaynağa bakıyorum.
+
+462
+01:57:45,404 --> 01:57:49,963
+chat'i takip edemiyorum anlık olarak.
+
+463
+01:57:49,963 --> 01:57:59,344
+Çat'i şey yaptıktan sonra yazdınız değil mi arkadaşlar?
+
+464
+01:58:07,283 --> 01:58:11,843
+chat'e yazmaktansa sesli olarak sorarsanız o anda açıklayabilirim.
+
+465
+01:58:18,068 --> 01:58:37,068
+Okay, so axiom, these are the things, these are the assumptions about the underlying mathematical structures. So, they are assumed.
+
+466
+01:58:37,068 --> 01:58:47,068
+Okay, meaning, we accept them.
+
+467
+01:58:51,060 --> 01:58:53,060
+without proof.
+
+468
+01:58:56,404 --> 01:59:25,203
+without proof. We don't need, we don't require a proof for them. We say that, okay, we assume this is true, we assume this is true, and we assume this one is true. So these are, if you didn't take probability and statistics course, these may be tough to understand. You don't need to understand these. I gave them only as examples.
+
+469
+01:59:25,203 --> 01:59:55,124
+variables. So we assume these are true. Then based on these, we obtain all other rules, right? So rule, let's say, a rule like probability of A's complement is 1 minus probability of A, let's say, okay?
+
+470
+01:59:55,203 --> 02:00:04,204
+Now, this is not an axiom because we prove these using axioms.
+
+471
+02:00:06,204 --> 02:00:11,204
+Okay, you have your axioms, you don't need to prove them, you assume them.
+
+472
+02:00:11,204 --> 02:00:19,204
+Then the next rule you prove using axioms.
+
+473
+02:00:19,203 --> 02:00:47,563
+Okay. And the next, sorry. And the next rule. Let's say rule two. Now you prove using axioms. And rule one, because you proved rule one, right? So now it is true, you know, it is true. So this is true. Axioms are true by assumption.
+
+474
+02:00:47,563 --> 02:00:57,563
+So now for the next rule, you can use these. And then for the rule three,
+
+475
+02:01:02,836 --> 02:01:03,836
+Now you have your axioms. Plus your rule one plus your rule two. You can use all of them to prove. Your rule three. Okay. Or two or entry. So instead of rule three, you can say these are terms. So two or one. To them to. Etc. So.
+
+476
+02:01:32,836 --> 02:01:45,755
+are like the first things that you accept without questioning or without a mathematical proof. Is that clear?
+
+477
+02:01:45,755 --> 02:01:50,176
+Evet hocam, teşekkürler.
+
+478
+02:01:52,176 --> 02:01:54,475
+Bir sorun daha olacaktı.
+
+479
+02:01:55,596 --> 02:02:02,336
+Biz aksiyonların doğruluğunu kanıtlamadan kabul ediyoruz.
+
+480
+02:02:02,836 --> 02:02:32,815
+and this is a way to solve the problem.
+
+481
+02:02:32,836 --> 02:02:58,755
+gerekmez mi? Sanırım evet. Yani öyle bir her şey hani puzzle'ın parçaları yerli yerine oturuyor ya falan deriz ama bu yine matematiksel bir proof olmuyor aksiyonların doğru olduğu ile ilgili. Mantığımız yani diyoruz ha bunlar işe yarıyor. Görüyoruz yani. Anladım. Benim düşüncem bu.
+
+482
+02:03:04,115 --> 02:03:23,855
+Aksiyon şu, yani şimdi Türkçe açıklayayım. Diyelim ki, aksiyon ispata girişmeyeceğimiz varsayımlarımız. Başka bir örnek vereyim. Mesela bu daha anlaşılır olur herhalde.
+
+483
+02:03:27,855 --> 02:03:30,215
+Kalkulus'un aksiyonları.
+
+484
+02:03:41,908 --> 02:03:43,087
+yok muymuş?
+
+485
+02:03:58,131 --> 02:04:09,131
+Tabii şöyle, farklı matematikçiler, farklı şeyler kullanıyorlar.
+
+486
+02:04:34,996 --> 02:04:57,735
+Bir kurallar bütünü oluşturmak istiyorsunuz. Bir teorem bütünü oluşturmak istiyorsunuz. Mesela olasılık teoremi gibi. Olasılık kurallar bütünü oluşturmak istiyorsunuz. Bir yerden başlamanız gerekiyor. İşte o başladığınız yere aksiyon diyoruz.
+
+487
+02:04:57,735 --> 02:05:22,635
+onlar için, aksiyonlar için proof, ispat aramıyorsunuz. Mesela olasılık teoreminde, olasılıkta daha doğrusu şu üç aksiyon var. Diyoruz ki bir olayın olasılığı sıfırdan büyük bir real sayıdır.
+
+488
+02:05:22,635 --> 02:05:27,155
+Evrensel kümedeki olasılıkların toplamı birdir.
+
+489
+02:05:29,095 --> 02:05:47,396
+Birbirinden ayrık olan olayların birleşiminin olasılığı tek tek olasılıkların toplamlarına eşittir.
+
+490
+02:05:47,396 --> 02:06:08,496
+Şimdi bu üç kuralı bir kenara koyuyoruz. Ondan sonra bu kurallardan yola çıkarak ne yapıyoruz? Bütün olasılık sistemini oluşturuyoruz. Burada da adım adım gidiyoruz. Mesela işte çok basit bir kural oluşturuyoruz aksiyonlardan.
+
+491
+02:06:08,496 --> 02:06:21,656
+her oluşturduğumuz aksiyonları kullanarak ispat ettiğimiz her teorem araç kutumuza attığımız yeni bir araç oluyor.
+
+492
+02:06:21,656 --> 02:06:33,815
+Yani ispat ettiğimiz şey yöntemlerimizi artırıyor. Dolayısıyla artık onu kullanabiliyoruz.
+
+493
+02:06:33,815 --> 02:06:43,576
+Yani üç aksiyondan başlıyoruz ama ileri seviye bir olasılık teoremi için ta böyle ileride işte istatistiğe girmişsiniz artık.
+
+494
+02:06:46,395 --> 02:06:58,695
+İstatistikte ne bileyim kurallar var. Bunların ispatını yapmaya çalışıyorsunuz. O sırada hala aksiyonlarla uğraşmıyorsunuz.
+
+495
+02:06:58,695 --> 02:07:26,335
+Çünkü oradan oraya gelmek çok zaman alır. Yani aksiyonlarla hesap edebilirsiniz, oraya gelebilirsiniz ama çok çok çok zor olur. O yüzden ne yapıyorsunuz? Aksiyonlardan başlayıp ispatlaya ispatlaya oluşturduğunuz bir araç kümeniz var, törebi kümeniz var. O törebi alıp ne yapıyorsunuz? Oradaki töremlerden kullanmaya başlıyorsunuz artık yavaş yavaş.
+
+496
+02:07:26,335 --> 02:07:31,815
+Böyle bir sistem oluşturuyorsunuz. Aksiyon bu.
+
+497
+02:07:35,175 --> 02:07:37,255
+Bilmiyorum yeterli oldu mu?
+
+498
+02:07:40,979 --> 02:07:42,979
+Fazlasıyla hocam, teşekkür ederim.
+
+499
+02:07:42,979 --> 02:07:51,499
+Peki. Şimdi, so, this was a axiom. And now, what is a hypothesis?
+
+500
+02:07:54,239 --> 02:07:56,499
+So, we have...
+
+501
+02:08:09,108 --> 02:08:22,547
+So a hypothesis is something you want to make into a theorem. So it's a supposition.
+
+502
+02:08:24,948 --> 02:08:31,948
+or explanation.
+
+503
+02:08:33,684 --> 02:08:34,684
+that you that needs a proof, right? To become a theorem. So, and it's a supposition or an explanation as a starting point.
+
+504
+02:09:00,243 --> 02:09:03,243
+for further investigation.
+
+505
+02:09:10,644 --> 02:09:38,644
+So you have your hypothesis. OK. And you have your proofs. If you can prove your hypothesis, it becomes a theorem. OK, so hypothesis do not they don't have proofs. Or it's something that you need to prove to make into a theorem.
+
+506
+02:09:45,076 --> 02:09:55,076
+And you might also come across to lemmas and corollaries. These are again theorems.
+
+507
+02:09:56,851 --> 02:10:10,131
+So they have already been proved. So lemma. So lemmas are previously proved problems.
+
+508
+02:10:18,420 --> 02:10:23,420
+and you might also come across to corollaries.
+
+509
+02:10:27,028 --> 02:10:36,028
+Again, these are theorems, but sorry, this should be theorem.
+
+510
+02:10:41,011 --> 02:10:51,011
+Previous to prove terms are lemmas and special cases of terms are corollaries.
+
+511
+02:10:56,884 --> 02:11:25,884
+So again, they are, they are approved. Now, now, as you see, there's the, the, the, the, one of the most important thing is proving. So you will start from axioms and you will prove things. So for that, we will need to talk about proof techniques.
+
+512
+02:11:31,604 --> 02:11:50,604
+So how can we prove things? Before that, let's give, let's have a break, 10 minutes break and after that we will start working on some proof techniques. Do you have any questions now?
+
+513
+02:11:50,604 --> 02:11:51,604
+No.
+
+514
+02:11:51,604 --> 02:11:53,604
+Hocam, one thing can you ask?
+
+515
+02:11:53,604 --> 02:12:01,403
+lemma'sla, theorem'sde ispatladığımız şeyler oldu, lemma'sla ispatladığımız şeyler, crew ettiğimiz şeyler oldu.
+
+516
+02:12:01,403 --> 02:12:13,104
+Aslında haklısın ben de anlayamadım. İnternete bir soralım bakalım. Lemma vs. Proust yazayım.
+
+517
+02:12:39,923 --> 02:12:41,923
+nasıl şehr, neyi şehr mi yapacağım?
+
+518
+02:13:02,515 --> 02:13:16,515
+Neyjia, lemma, a true statement used in proving other true statements. That is a less important theorem that is helpful in the proof of other results.
+
+519
+02:13:18,260 --> 02:13:23,260
+Yani daha az önemli teorem gibi mi oldu burada?
+
+520
+02:13:32,467 --> 02:13:38,368
+Teoremi ispatlamaya yardımcı olan daha küçük, ispatlanmış bir şey gibi anladım ben hocam.
+
+521
+02:13:43,444 --> 02:13:45,184
+Yani yine bir teorem ama
+
+522
+02:13:45,184 --> 02:13:52,843
+Küçük. Küçük yani o kadar zor bir şey değil gibi.
+
+523
+02:13:58,868 --> 02:14:09,407
+lemma is generally used to describe a helper fact that is used in the proof of a more significant result.
+
+524
+02:14:10,607 --> 02:14:17,907
+Yani biraz şey oluyor, matematiksel kitap yazıyorsun, önemli bir şey ise teorem diye ayırıyorsun.
+
+525
+02:14:18,567 --> 02:14:24,027
+Basit bir şey ise hani ara ispat gibi bir şey.
+
+526
+02:14:24,027 --> 02:14:28,807
+Evet yani oraya ben buna teorem bile demem arkadaş yani lemma.
+
+527
+02:14:28,868 --> 02:14:50,347
+kolay bir şekilde ortaya çıkar gibi bir şey ise lemma diyorsun. Significant results are frequently called theorems, short easy results of theorems are called corollary. Yani bir teoremi ispatladın, ondan hemen bir iki adım, ufak bir iki sonuç çıkarıyorsun, onlara corollary diyorsun.
+
+528
+02:14:50,347 --> 02:15:19,527
+ama bak ne diyor but the words aren't exactly that set in stone yani bu matematikçilerin kitaplarını okurken farklı terminolojileri kullandığını da görüyor insan arabasında da dolayısıyla hani bu da tüm evrensel olarak lemma şudur korolori budur şeklinde
+
+529
+02:15:19,527 --> 02:15:21,687
+ayrılmamış olabilir.
+
+530
+02:15:24,607 --> 02:15:25,307
+Ne diyor?
+
+531
+02:15:25,487 --> 02:15:28,787
+A lot of authors like to use lemma to mean small theorem.
+
+532
+02:15:29,507 --> 02:15:33,027
+Often a group of lemmas are used to prove a larger result of a theorem.
+
+533
+02:15:35,107 --> 02:15:40,687
+However, when it boils down to it, all of these things are equivalent as they denote the truth of a statement.
+
+534
+02:15:44,564 --> 02:15:59,524
+I want to stress that calling something a lemma, theorem or corollary is truly a choice of made for organizational purposes. That's probably the most important to take away from my answer. A lemma is just as true as a theorem.
+
+535
+02:15:59,524 --> 02:16:26,963
+Yani daha önemsiz şeylere, daha küçük, kolayca hesaplanan, bulunan şeylere çoğu yazar sanırım lemma diyor. Daha böyle uğraştırıcı şeylere teorem diyor gibi gözüküyor. Ama sonuçta üçü de lemada, teoremde, korolerede ispatlanmış, matematiksel olarak ispatlanmış artık tool box'ımızda kullanabildiğimiz
+
+536
+02:16:29,523 --> 02:16:32,363
+kabul ettiğimiz artık şeyler olmuş oluyor.
+
+537
+02:16:33,503 --> 02:16:35,023
+Başka soru var mı?
+
+538
+02:16:40,051 --> 02:16:42,831
+Tamam, öyleyse bir 10 dakikada verelim.
+
+539
+02:29:02,995 --> 02:29:04,995
+Evet tekrar merhabalar.
+
+540
+02:29:04,995 --> 02:29:09,995
+Sesim geliyor mu?
+
+541
+02:29:14,804 --> 02:29:15,304
+Thank you.
+
+542
+02:29:22,579 --> 02:29:23,579
+Okay.
+
+543
+02:29:37,396 --> 02:29:50,396
+So, we will see some proof techniques. And, uh,
+
+544
+02:29:51,572 --> 02:29:56,572
+So the question is how can we
+
+545
+02:30:00,115 --> 02:30:03,115
+through mathematical statements.
+
+546
+02:30:08,819 --> 02:30:09,819
+Okay. Now, before actually going to the techniques, there are some tips here. So let's look at those tips. So first of all, read and completely understand the statement. So read and
+
+547
+02:30:38,819 --> 02:30:40,819
+completely.
+
+548
+02:30:44,084 --> 02:30:54,403
+understand the theorem to be proved.
+
+549
+02:30:55,731 --> 02:30:57,731
+and, uh,
+
+550
+02:31:00,244 --> 02:31:11,244
+This is says that this is the hardest part. So in fact, rewrite the statement in your own words. So kind of
+
+551
+02:31:23,636 --> 02:31:24,636
+So you try, you try to write it yourself. rewrite yourself. So this, this will help you understand what is actually asked for. And be careful about details. So sometimes like things like I is in R or this and that. So there are everything
+
+552
+02:31:53,636 --> 02:32:03,636
+I think every little thing that's said in the term is important usually. So be very careful about what the problem has.
+
+553
+02:32:07,188 --> 02:32:08,188
+and now sometimes a theorem is actually two theorems you need to prove. So when you, this is an example sometimes,
+
+554
+02:32:34,835 --> 02:32:38,835
+theorems contain
+
+555
+02:32:38,835 --> 02:32:42,995
+more than one.
+
+556
+02:32:48,275 --> 02:32:53,275
+things to prove.
+
+557
+02:32:56,500 --> 02:33:01,500
+especially as an example.
+
+558
+02:33:03,123 --> 02:33:03,883
+Isn't that?
+
+559
+02:33:09,587 --> 02:33:11,587
+for example,
+
+560
+02:33:11,587 --> 02:33:12,587
+uh,
+
+561
+02:33:12,587 --> 02:33:14,587
+for example,
+
+562
+02:33:17,268 --> 02:33:20,867
+You have this.
+
+563
+02:33:23,603 --> 02:33:31,603
+if and unoffly. So let's say you have property
+
+564
+02:33:33,396 --> 02:33:34,396
+A, if and only if property B. So this if and only if sometimes also written as this way. Now, if you see that property A, if and only if,
+
+565
+02:34:03,396 --> 02:34:30,635
+with property B, then you have to prove first A implies B, then you need to prove B implies A. So this is also, remember, written this way or this way. So kind of equivalence. So to prove this,
+
+566
+02:34:36,244 --> 02:34:37,244
+property A implies B and prove property B implies, I should have written property B here. So property A implies property B, property B implies property A.
+
+567
+02:35:06,244 --> 02:35:32,244
+So when you have this situation, an equivalent situation, actually you have to prove two implications. So you have two things to do. Similarly, set equivalence.
+
+568
+02:35:46,995 --> 02:35:56,035
+So this was example one. For example, you have set A equals set B.
+
+569
+02:36:02,835 --> 02:36:22,835
+So you have two sets and you want to prove that they are equal. Now, in this case, you have to prove first set A is a subset of B and two, you have to prove set B is a subset of A.
+
+570
+02:36:22,835 --> 02:36:27,835
+Okay.
+
+571
+02:36:28,211 --> 02:36:39,811
+Okay. So the order doesn't really matter. So, so I should have actually just use bullets there.
+
+572
+02:36:43,172 --> 02:36:53,491
+So, A is a subset of B, B is a subset of E. So you, you need to prove both in this case. So be careful about that.
+
+573
+02:36:53,491 --> 02:37:07,491
+If the theorem includes any if and only ifs or set equivalency, then you have to prove the implication on both directions.
+
+574
+02:37:12,884 --> 02:37:19,884
+So some other tips.
+
+575
+02:37:32,147 --> 02:37:45,667
+Some other tips. To try to understand the term, try to work out a few simple cases.
+
+576
+02:37:49,683 --> 02:37:54,683
+try to work out
+
+577
+02:37:57,683 --> 02:38:03,723
+some simple cases. And...
+
+578
+02:38:07,572 --> 02:38:13,572
+Once you have it, try to write down the proof.
+
+579
+02:38:22,579 --> 02:38:23,499
+and, uh,
+
+580
+02:38:28,020 --> 02:38:47,020
+So, if you cannot do it the first time, if you cannot prove something first time, don't worry about it. Finding proofs takes time.
+
+581
+02:38:54,451 --> 02:39:12,451
+also it's kind of an experience thing. So if you do some proofs, you can do newer proofs easily. So easier in an easier way. So it's kind of, you need to practice.
+
+582
+02:39:21,108 --> 02:39:22,108
+Okay.
+
+583
+02:39:22,108 --> 02:39:23,108
+Um.
+
+584
+02:39:23,108 --> 02:39:24,108
+Okay.
+
+585
+02:39:24,108 --> 02:39:25,108
+Um.
+
+586
+02:39:25,971 --> 02:39:31,971
+Now let's, let's look at some proof techniques.
+
+587
+02:39:31,971 --> 02:39:35,971
+So,
+
+588
+02:39:35,971 --> 02:39:43,971
+One proof technique is direct proof. So let me write it as
+
+589
+02:40:04,500 --> 02:40:06,500
+direct proves.
+
+590
+02:40:10,772 --> 02:40:12,471
+Let me know it this way.
+
+591
+02:40:43,379 --> 02:40:45,139
+Keep starting from that.
+
+592
+02:40:49,492 --> 02:41:07,492
+So in the direct proof, we approach the theorem directly. So we give, we start from the inputs.
+
+593
+02:41:12,564 --> 02:41:22,564
+So we have input statement or inputs and we go to the result.
+
+594
+02:41:25,492 --> 02:41:32,811
+An example might be, let's say you want to prove the theorem.
+
+595
+02:41:36,180 --> 02:41:55,180
+If n is an odd positive integer, n square is odd as well. So you might have this. If n is an odd integer, then n is an odd integer. Then n is an odd.
+
+596
+02:41:56,468 --> 02:41:59,468
+n square is odd as well.
+
+597
+02:42:05,907 --> 02:42:12,907
+So here we can do a direct proof.
+
+598
+02:42:19,028 --> 02:42:49,007
+You can say, okay, so your statements can go like, okay, an odd positive integer n can be written as, so, n can be written as 2k plus 1. So, odd means in Turkish, tek, tek saye, tek tam saye. So that means we can write n as two times,
+
+599
+02:42:49,028 --> 02:42:57,908
+some integer k, and k will be an integer that is greater than zero.
+
+600
+02:43:02,324 --> 02:43:13,324
+or odd positive. I should have written positive here too.
+
+601
+02:43:15,156 --> 02:43:45,135
+So if n is an odd positive integer, then n square is odd positive as well. No, odd as well. So n is an odd positive integer, then n square is odd as well. So that means since n is an odd positive integer, we can write it as 2k plus 1 where k is some positive integer.
+
+602
+02:43:49,012 --> 02:43:51,012
+and, uh,
+
+603
+02:43:53,299 --> 02:44:15,779
+Okay. Now, the next step might be, okay, we are thinking about N squared. So let's just calculate this N squared. And that will be, then we will calculate 2K plus 1 squared.
+
+604
+02:44:15,779 --> 02:44:43,359
+and then what will this be? 4K square plus 4K plus 1. And now these two fours, they are, we can take twos out of them. So you will have, you can have two.
+
+605
+02:44:43,359 --> 02:45:05,919
+So you have one here. So odd plus one, right? So you want to have an even plus one. So this part is even clearly. So let's make it more clear. Two times two to the k square plus two k plus one.
+
+606
+02:45:05,919 --> 02:45:28,919
+OK. And now 2k squared plus 2k is clearly greater than zero. OK. And in integer set, in the set of integers.
+
+607
+02:45:28,919 --> 02:45:29,919
+integers. So hence, we are saying that, OK, then n squared is odd. OK. We proved it because we say that, OK, we meet then. In fact, you can write here too, if you want, since
+
+608
+02:45:58,919 --> 02:46:20,919
+to do two K square plus two K is even. Then even plus one is odd. Let me say and here.
+
+609
+02:46:25,459 --> 02:46:26,459
+and even plus one is odd, then n squared is odd. So obviously you need to rewrite this once or twice to make it more clear. So this is called a direct proof. You start with the n and the fact that it is odd, what that means, and then do some
+
+610
+02:46:55,459 --> 02:46:58,279
+operations to obtain the final results.
+
+611
+02:47:03,700 --> 02:47:04,700
+Another proof technique is called proof by construction. So let's write this way. Constructive proofs. Or you can say proof by construction.
+
+612
+02:47:41,108 --> 02:47:43,108
+here
+
+613
+02:47:47,188 --> 02:48:14,188
+Okay. Usually you use this when a term states that a particular type of objects exists. So usually you have the term says some object exists. So then what you can do is that some object exists.
+
+614
+02:48:14,188 --> 02:48:37,188
+So then what you can do is just construct that object or one such object. Just construct one such object.
+
+615
+02:48:43,156 --> 02:49:01,156
+and Turing machine, as an example. Let me write here. Let's say the theorem says that there exists a rational number.
+
+616
+02:49:09,363 --> 02:49:16,363
+relation number P, which can be expressed as,
+
+617
+02:49:30,036 --> 02:49:33,036
+Q to the R.
+
+618
+02:49:33,036 --> 02:49:37,036
+With.
+
+619
+02:49:37,036 --> 02:49:48,036
+Q and R both irrational.
+
+620
+02:49:48,036 --> 02:49:57,036
+You.
+
+621
+02:49:58,484 --> 02:50:20,484
+So what does this say? So what is an irrational number? What is a rational number? So remember what is this? Let's remember what rational numbers and irrational numbers are. So we say that a number is irrational or in the set.
+
+622
+02:50:20,484 --> 02:50:28,484
+Let's say x is in rational numbers.
+
+623
+02:50:28,484 --> 02:50:32,484
+If.
+
+624
+02:50:32,484 --> 02:50:34,484
+Let's write this way.
+
+625
+02:50:34,484 --> 02:50:38,484
+Remember we have already written Q.
+
+626
+02:50:38,484 --> 02:50:42,484
+Rational numbers, set of rational numbers.
+
+627
+02:50:50,420 --> 02:51:09,420
+It says that we should have some M and N such that M is an integer and N is an integer. Okay.
+
+628
+02:51:11,507 --> 02:51:31,507
+Okay. So if we can, so a rational number is like that. Now an irrational number is a number that is not here. So what is an irrational number? Example.
+
+629
+02:51:35,443 --> 02:52:02,443
+It's pi, right? So it's a 3, 1, 4, something, something, but you can never write it as an integer divided by as another integer, right? So pi is an irrational number. So what we are saying here is q and r are both irrational, okay?
+
+630
+02:52:02,443 --> 02:52:09,124
+but Q to the R is rational.
+
+631
+02:52:09,124 --> 02:52:10,443
+Okay.
+
+632
+02:52:10,443 --> 02:52:25,443
+So one way you can prove that this can happen is just give an example.
+
+633
+02:52:25,443 --> 02:52:28,923
+So you just construct a Q and R.
+
+634
+02:52:28,923 --> 02:52:49,923
+You find a Q and R and Q to the R will be a rational number. If you can construct that, you are fine. So as a proof here, we just say, okay, we just say that
+
+635
+02:52:52,275 --> 02:52:54,675
+Let's say Q is.
+
+636
+02:52:54,675 --> 02:52:57,676
+Uh.
+
+637
+02:53:00,979 --> 02:53:04,819
+square root of two to the square root of two.
+
+638
+02:53:04,819 --> 02:53:08,779
+Okay. So this is an irrational number.
+
+639
+02:53:10,999 --> 02:53:14,299
+And R is again square root of two.
+
+640
+02:53:15,219 --> 02:53:16,059
+Okay.
+
+641
+02:53:18,119 --> 02:53:23,679
+So let's say let Q is this and R is this.
+
+642
+02:53:24,660 --> 02:53:28,339
+Then Q to the R,
+
+643
+02:53:28,339 --> 02:53:36,099
+which is square root of 2 to the square root of 2 to the square root of 2.
+
+644
+02:53:36,099 --> 02:53:44,199
+This is the square root of 2 squared and that is 2.
+
+645
+02:53:49,236 --> 02:53:54,236
+and two is clearly a rational number, sorry.
+
+646
+02:54:01,940 --> 02:54:02,940
+Okay. So this concludes the proof. Okay. We say that we are given and we have constructed an example, right? So this concludes the proof. We have constructed.
+
+647
+02:54:31,940 --> 02:54:38,579
+and examples.
+
+648
+02:54:45,172 --> 02:55:13,172
+So the next proof will be about proof by contradiction, but we will do it next week. So let me just write here. If you have any question, you can ask now proof by contradiction.
+
+649
+02:55:21,940 --> 02:55:23,259
+Sorunuz var mı arkadaşlar?
+
+650
+02:55:29,907 --> 02:55:56,347
+Yok. Tamam. Haftaya yine aynı saatte görüşürüz o zaman. Kapatıyorum. Hocam. Buyurun. Bir şey sorabilir miyim? Tabii ki. Şeyi hesaplamaya çalışıyordum da ikiyi tam olarak anlayamadım neden iki olduğunu şey aldın. Anladın mı şimdi? Yani tabii kağıt kalemi alıp yapman lazım.
+
+651
+02:55:56,347 --> 02:56:00,187
+şöyle
+
+652
+02:56:00,187 --> 02:56:04,067
+ben bir buldum gibi geldi de
+
+653
+02:56:04,067 --> 02:56:04,927
+bakalım
+
+654
+02:56:09,556 --> 02:56:10,556
+şu kısmı Q.
+
+655
+02:56:13,556 --> 02:56:14,476
+Şu da var.
+
+656
+02:56:15,875 --> 02:56:18,035
+Şimdi bunu nasıl yaparız?
+
+657
+02:56:23,335 --> 02:56:25,395
+Üstler çarpım haline gelir değil mi?
+
+658
+02:56:26,455 --> 02:56:27,195
+Yani bu ne olur?
+
+659
+02:56:27,316 --> 02:56:31,615
+Ben önce Q'yu hesaplamıştım. Sonra üzeri R'ye almıştım da.
+
+660
+02:56:32,795 --> 02:56:33,095
+Evet.
+
+661
+02:56:35,295 --> 02:56:36,795
+Bu hale gelir değil mi bu?
+
+662
+02:56:39,556 --> 02:56:42,556
+Bunların çarpımı 2 olur.
+
+663
+02:56:44,236 --> 02:56:47,276
+Karakök 2'nin karesi de 2 olur.
+
+664
+02:56:48,855 --> 02:56:52,596
+Önce Q'yu hesapladığımızda 2 üzeri 1 bölü 2'nin
+
+665
+02:56:52,596 --> 02:56:58,335
+2 üzeri 1 bölü 2'nin kuvveti olmuyor mu ama?
+
+666
+02:57:00,736 --> 02:57:02,596
+Q'yu hesaplamak için
+
+667
+02:57:02,596 --> 02:57:04,916
+yani şöyle
+
+668
+02:57:04,916 --> 02:57:07,556
+hesaplayamazsın ki Q'yu.
+
+669
+02:57:07,556 --> 02:57:27,776
+Hocam ama mesela 2 üzeri 1 bölü 2 dedik tabana. Onun da kuvveti 2 üzeri 1 bölü 2 olduğu için 1 bölü 2 ile 2 üzeri 1 bölü 2'yi çarparak kuvvetleri sizin demin yaptığınız gibi çarpacağız. Yani 1 bölü 2 ile 2 üzeri 1 bölü 2'yi çarpacağız.
+
+670
+02:57:31,700 --> 02:57:33,920
+Bunun üstünde 2 üzeri 1 bölü 2 var.
+
+671
+02:57:34,819 --> 02:57:35,139
+Evet.
+
+672
+02:57:35,739 --> 02:57:37,140
+Bu ikisini çarpınca
+
+673
+02:57:37,140 --> 02:57:39,519
+2 üzeri eksi 1
+
+674
+02:57:39,519 --> 02:57:41,939
+çarpı 2 üzeri 1 bölü 2 oluyor.
+
+675
+02:57:42,799 --> 02:57:44,000
+1 bölü 2 dediğimiz şey
+
+676
+02:57:44,000 --> 02:57:45,040
+2 üzeri eksi 1 ya.
+
+677
+02:57:46,959 --> 02:57:48,059
+2 üzeri eksi 1
+
+678
+02:57:48,059 --> 02:57:49,720
+çarpı 2 üzeri 1 bölü 2'den
+
+679
+02:57:49,720 --> 02:57:51,979
+2 üzeri eksi 1
+
+680
+02:57:51,979 --> 02:57:52,700
+bölü 2 geliyor.
+
+681
+02:57:55,880 --> 02:57:57,639
+Sonra aynısını bir üstü için
+
+682
+02:57:57,639 --> 02:57:58,099
+yapacağız.
+
+683
+02:57:59,299 --> 02:58:01,219
+2 üzeri 1 bölü 2 mi diyorsun?
+
+684
+02:58:01,700 --> 02:58:02,999
+şey
+
+685
+02:58:02,999 --> 02:58:05,060
+evet böyle
+
+686
+02:58:05,060 --> 02:58:06,659
+1 bölü 2'de 2 üzeri
+
+687
+02:58:06,659 --> 02:58:08,819
+1 bölü 2
+
+688
+02:58:08,819 --> 02:58:12,479
+1 bölü 2'de 2 üzeri
+
+689
+02:58:12,479 --> 02:58:13,139
+1
+
+690
+02:58:13,139 --> 02:58:15,380
+2 üzeri 1
+
+691
+02:58:15,380 --> 02:58:15,979
+diyorsun
+
+692
+02:58:15,979 --> 02:58:17,859
+2 üzeri
+
+693
+02:58:17,859 --> 02:58:20,140
+2 üzeri 1
+
+694
+02:58:20,140 --> 02:58:21,479
+çarpı
+
+695
+02:58:21,479 --> 02:58:24,219
+2 üzeri 1 bölü 2
+
+696
+02:58:24,219 --> 02:58:27,060
+buradan 2 üzeri 1 bölü 2
+
+697
+02:58:27,060 --> 02:58:27,939
+geldi kuvvet
+
+698
+02:58:27,939 --> 02:58:30,799
+bakalım
+
+699
+02:58:30,799 --> 02:58:33,739
+2 üzeri
+
+700
+02:58:36,915 --> 02:59:05,015
+eksi 1 bölü 2. Doğru mu? Evet. Sonra bunun da... Eksi 1 bölü 2 ne? Evet yani çok karışıyor ama. Bunun da iki üzeri bir, iki. kuvvetini alınca... Olmadı. Tamam, şey kuvvet, tamam kuvvet bir geliyor. Anladım hocam. İki üzeri birden yine iki geliyor. Tamam kuvvet bir geliyormuş.
+
+701
+02:59:05,015 --> 02:59:24,695
+Evet yani buradan çıkmaması lazım. Bakalım başka çete. Evet arkadaşlarımız iyi günler demiş. Tamam. Tamam. Haftaya görüşürüz o zaman arkadaşlar. İyi günler hocam. İyi günler.

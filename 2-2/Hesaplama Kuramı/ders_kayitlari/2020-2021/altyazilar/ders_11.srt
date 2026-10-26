@@ -1,0 +1,2327 @@
+1
+00:08:43,956 --> 00:08:46,916
+Merhabalar arkadaşlar. Sesim geliyor mu?
+
+2
+00:08:47,956 --> 00:08:48,896
+Evet.
+
+3
+00:08:48,896 --> 00:08:50,475
+Geliyor, tamam.
+
+4
+00:09:04,916 --> 00:09:05,916
+Last week we started pushdown automata. And pushdown automata had a stack in addition to the usual input string and states. And
+
+5
+00:09:34,388 --> 00:09:59,308
+pushdown automata has an instantaneous description. So if your pushdown automata is on state Q1, then your instantaneous description has that Q1 as the first tuple element.
+
+6
+00:09:59,308 --> 00:10:14,428
+element, and the input that is not yet processed is written as the second tuple element.
+
+7
+00:10:15,627 --> 00:10:22,267
+And finally, the current stack contents are written as the third tuple element.
+
+8
+00:10:22,267 --> 00:10:49,167
+So instead of drawing the whole thing, drawing the whole pushdown automaton every time, you can just write this instantaneous description. And since you have the state diagrams somewhere, using the state diagrams, you can continue writing these instantaneous descriptions.
+
+9
+00:10:52,267 --> 00:11:08,267
+pushdown automaton are non-deterministic. And we saw some examples of that, of pushdown automaton.
+
+10
+00:11:08,267 --> 00:11:12,267
+And
+
+11
+00:11:21,395 --> 00:11:26,395
+Since these are non deterministic at some points.
+
+12
+00:11:27,395 --> 00:11:28,395
+The.
+
+13
+00:11:29,395 --> 00:11:32,395
+Computation becomes a tree because.
+
+14
+00:11:33,395 --> 00:11:37,395
+Some points the computation is replicated.
+
+15
+00:11:38,395 --> 00:11:42,395
+There are two parallel parallel machines that's working.
+
+16
+00:11:43,395 --> 00:11:44,395
+And.
+
+17
+00:11:45,395 --> 00:11:47,395
+Two or more actually.
+
+18
+00:11:48,395 --> 00:11:50,395
+So you can write these computation trees.
+
+19
+00:11:51,395 --> 00:12:01,395
+You don't have to, sometimes you can just see one computation will work. If you can see it, you can write that.
+
+20
+00:12:01,395 --> 00:12:16,395
+But if you are not able to see it, you may want to write these computation trees to see what's going on.
+
+21
+00:12:16,395 --> 00:12:24,395
+So these transitions on pushdown automata are the first input symbol that you read.
+
+22
+00:12:25,395 --> 00:12:31,395
+Then what you pop from the stack and then what you push to stack.
+
+23
+00:12:31,395 --> 00:12:35,395
+And you can pop or push.
+
+24
+00:12:35,395 --> 00:12:43,395
+Normally a single symbol, but you can write as if you pop or pushed.
+
+25
+00:12:43,395 --> 00:12:58,395
+you popped or pushed a string and in that case it's just a shortcut for coping one by one like first popping e then b and then pushing f and then d and then c.
+
+26
+00:12:58,395 --> 00:13:08,635
+than C. And in fact, in between, maybe it's possible to have some other computations too.
+
+27
+00:13:08,635 --> 00:13:17,275
+Maybe you push the F here, then you popped here and then pushed back, etc.
+
+28
+00:13:17,275 --> 00:13:20,955
+There might be some other computations here.
+
+29
+00:13:28,395 --> 00:13:39,595
+so formal definition of pushdown automata is a seven seven tuple first is the set of states
+
+30
+00:13:40,795 --> 00:13:50,795
+second is the sigma is a set of alphabet set of symbols that we use in the input and
+
+31
+00:13:50,795 --> 00:13:57,035
+And gamma is the set of symbols that we can use in the stack.
+
+32
+00:13:57,235 --> 00:13:59,195
+And.
+
+33
+00:13:59,395 --> 00:14:05,235
+That does not include that symbol in the stack.
+
+34
+00:14:06,355 --> 00:14:09,835
+And then we have our transition function.
+
+35
+00:14:10,035 --> 00:14:16,955
+And the transition function is set to each element in the transition function
+
+36
+00:14:16,955 --> 00:14:21,675
+as I said, because pushdown automata are non-deterministic.
+
+37
+00:14:21,675 --> 00:14:27,875
+So for a given input and stack top,
+
+38
+00:14:27,875 --> 00:14:37,196
+you might have different states to go,
+
+39
+00:14:37,196 --> 00:14:41,915
+and you might push different things to the stack.
+
+40
+00:14:41,915 --> 00:14:46,515
+So you may even have something like Q2,
+
+41
+00:14:46,515 --> 00:14:54,595
+but some w4 here right even if the state is saying what you push to the stack is different in this
+
+42
+00:14:54,595 --> 00:15:02,595
+case
+
+43
+00:15:03,988 --> 00:15:04,988
+So, a list of computations, a list of instance instantaneous descriptions like this is called a computation. And if you want, you can use this short, short cut short enter notation. This just means that
+
+44
+00:15:33,988 --> 00:15:48,488
+from the instantaneous description where you are on the initial state and you have the full initial input and as an empty stack.
+
+45
+00:15:50,267 --> 00:15:53,388
+In this case, we don't count the special stack symbol.
+
+46
+00:15:55,287 --> 00:15:56,828
+You do some computation.
+
+47
+00:15:57,907 --> 00:16:01,947
+And then you arrive to this year.
+
+48
+00:16:01,947 --> 00:16:02,947
+here on Q3, all the input is used. And again, the stack returned back to what it was. So we can talk about languages of these pushdown automata. And language of the pushdown automata is the set of all strings that the pushdown automata
+
+49
+00:16:31,947 --> 00:17:01,928
+data accepts. And so how is it? That means for those strings, you can start with the initial state and that string and the initial stack start symbol. After some computation, you obtain or you go to an accept state. Okay. That's very important.
+
+50
+00:17:01,947 --> 00:17:08,947
+and you must finish or you must consume all the inputs like this.
+
+51
+00:17:08,947 --> 00:17:14,947
+And you might have something on the stack. It doesn't really matter what you have.
+
+52
+00:17:14,947 --> 00:17:16,947
+Uh...
+
+53
+00:17:19,347 --> 00:17:21,347
+for example, for the,
+
+54
+00:17:25,332 --> 00:17:35,651
+for the language a to the n, b to the n, such that n is greater than or equal to zero.
+
+55
+00:17:38,324 --> 00:17:48,963
+M1 accepted strings from this language. So this language of M1 is that language.
+
+56
+00:17:52,243 --> 00:18:22,223
+context-free languages and pushdown automata are equivalent. So, language that the context-free grammar generates is accepted by some pushdown automata. And a language that is accepted by pushdown automata is generated by some context-free grammar.
+
+57
+00:18:22,243 --> 00:18:38,723
+lemma. Last week we stated these and said that we should see how these conversions are done.
+
+58
+00:18:38,723 --> 00:18:42,723
+So let's do that.
+
+59
+00:19:04,531 --> 00:19:07,631
+Let's see more this layer layer
+
+60
+00:19:20,788 --> 00:19:21,788
+So, remember that when we want to prove such an equivalency, we need to prove actually two things. First, since these are sets, when we want to prove the equivalence of sets, we need to prove first, the first set being subset of the other, and then the first set being
+
+61
+00:19:50,788 --> 00:20:10,788
+a superset of the other. So let's continue with the first one.
+
+62
+00:20:30,996 --> 00:20:36,996
+So we will see how we can convert
+
+63
+00:20:37,875 --> 00:20:40,275
+how we can convert
+
+64
+00:20:44,819 --> 00:20:47,219
+context-free grammar,
+
+65
+00:20:52,660 --> 00:20:59,979
+into an equivalent pushdown automata.
+
+66
+00:21:06,355 --> 00:21:26,355
+So if context-free languages are a subset of pushdown automata, then that means any context-free grammar can be converted into a pushdown automata.
+
+67
+00:21:28,211 --> 00:21:29,211
+So, we will need to take an arbitrary
+
+68
+00:21:40,500 --> 00:21:42,500
+context-free grammar, G,
+
+69
+00:21:46,500 --> 00:21:50,500
+and convert it
+
+70
+00:21:53,939 --> 00:21:58,500
+into a pushdown automata M,
+
+71
+00:22:01,219 --> 00:22:10,500
+such that language of the grammar is equal to language of the machine.
+
+72
+00:22:10,500 --> 00:22:38,080
+and
+
+73
+00:22:15,220 --> 00:22:22,539
+The conversion procedure is in this case quite easy actually.
+
+74
+00:22:35,476 --> 00:22:59,875
+First of all, there are only three, there are only three states in the new pushdown automata. It's simple. So you start with Q0 as usual. And that Q0 transitions to Q1.
+
+75
+00:22:59,875 --> 00:23:11,595
+and that Q1 transitions to a Q2 and that Q2 is an accepting state.
+
+76
+00:23:13,935 --> 00:23:28,235
+And these two transitions are always same. So from Q0 to Q1, you transition with this. You don't read anything from the input.
+
+77
+00:23:28,235 --> 00:23:47,235
+input, don't pop anything from the stack, but push S. And S in this case is the starting variable of the context-free grammar. So remember that context-free grammar is something like that.
+
+78
+00:23:47,236 --> 00:24:12,236
+You start with an S and S produces something. And then let's say you might have some A, A might be producing some string W, W A, so maybe.
+
+79
+00:24:15,955 --> 00:24:43,955
+and sometimes there are some variables and they produce a terminal, right? So in this case, S and A are variables.
+
+80
+00:24:43,380 --> 00:24:49,559
+and A is a terminal.
+
+81
+00:24:53,811 --> 00:25:23,431
+So, a context-free grammar is a list of such rules, basically. Now, so for the first conversion is, first transition is from Q0 to Q1. And that is, we are saying that you push the starting variable into the stack.
+
+82
+00:25:23,811 --> 00:25:53,611
+here. Okay. And the last transition is you will not read anything from the input. And if you have dollar on the stack, remember dollar is our special stack symbol, you pop it and then push it, meaning
+
+83
+00:25:53,811 --> 00:26:06,811
+You are basically checking whether you only have a dollar, right? This transition can work only if there is only dollar on the stack. So as usual, we have a stack.
+
+84
+00:26:10,163 --> 00:26:36,163
+And at the beginning, you have your dollars as a special stock symbol. Now, what is interesting is this Q1. On this Q1, there is a loop. Actually, there are a lot of loops. There may be a lot of loops, but we will show it with just a single loop.
+
+85
+00:26:36,163 --> 00:27:05,683
+and on that loop you write quite a bit different transitions. And all of the transitions are like that for all variables. You write them in the form of read nothing. Then the this rule so a and w.
+
+86
+00:27:06,163 --> 00:27:15,683
+So here, A produces W, we read this as A produces W in context-free grammar.
+
+87
+00:27:15,683 --> 00:27:25,403
+But here in pushdown automata, the corresponding thing is a transition, and it means we read nothing from the input.
+
+88
+00:27:25,403 --> 00:27:43,403
+we pop the, we pop the variable and we push a string, this string. So the usual popping and pushing for pushdown automaton.
+
+89
+00:27:50,867 --> 00:27:52,867
+just...
+
+90
+00:27:56,564 --> 00:27:57,483
+that's...
+
+91
+00:28:00,564 --> 00:28:11,564
+and W. So, for each variable, you have this kind of rule.
+
+92
+00:28:20,307 --> 00:28:25,047
+actually for each production, let's say.
+
+93
+00:28:28,051 --> 00:28:34,291
+So these are production rules, right? For each production rule,
+
+94
+00:28:36,884 --> 00:28:46,884
+You write a corresponding transition. And then, uh,
+
+95
+00:28:54,516 --> 00:29:18,675
+for each terminal. So you add these, these production transitions, and then for each terminal like a years, you add the, this kind of transitions read nothing, read the a from the input and then
+
+96
+00:29:18,675 --> 00:29:33,675
+So this should be read from the A, read A from the input and pop that from the stack and push nothing.
+
+97
+00:29:37,140 --> 00:29:44,640
+and you may add quite a bit of production rules there.
+
+98
+00:29:49,844 --> 00:29:50,844
+Let's look at an example and that you will see that it's quite simple. Let's look at this example. So let's write a grammar here. S produces A, S, T, B. S produces B.
+
+99
+00:30:19,844 --> 00:30:27,924
+T produces TA, and T produces null.
+
+100
+00:30:30,244 --> 00:30:32,803
+So this is your context-free grammar.
+
+101
+00:30:41,556 --> 00:31:11,275
+And we want to convert into, convert this into a pushdown automata. So as I said, pushdown automata is very simple. We have a Q0 transition to Q1.
+
+102
+00:31:11,556 --> 00:31:17,556
+and we push the S here.
+
+103
+00:31:21,556 --> 00:31:46,556
+and we transition to Q2 which is an accepting state when there is nothing in the stack or just a special symbol. So we have dollar, dollar. And again, as usual, we have our stack and we have dollar there.
+
+104
+00:31:46,556 --> 00:32:07,556
+and what do we have here in the Q1? Well, we have first we will add each of these productions. So we have one, two, three, four production rules. We will have four of them here. So read nothing.
+
+105
+00:32:07,556 --> 00:32:31,875
+pop S, push A, S, T, B, read nothing, pop S, push B, read nothing, pop a T, push T, A, read nothing, pop a T, push now.
+
+106
+00:32:31,875 --> 00:32:57,295
+So this was like the first thing. And then the second thing that we need to do is for each terminal at these terminal transitions. And here we have how many terminals? A is a terminal, B is a terminal. So we have A and B. We have two terminals.
+
+107
+00:32:57,295 --> 00:33:05,295
+So let us write them here in addition to these rules, these transitions, sorry.
+
+108
+00:33:05,295 --> 00:33:12,295
+So when we read B, we pop a B and push them.
+
+109
+00:33:16,180 --> 00:33:17,180
+Sorry. When we read an A, we pop an A and we read and we push nothing. So there are six transitions on Q1 and that's our pushdown automata.
+
+110
+00:33:44,723 --> 00:33:49,124
+Let's see how this works.
+
+111
+00:33:51,731 --> 00:33:53,291
+on an example.
+
+112
+00:33:56,884 --> 00:33:57,884
+Let's see how this pushdown automata works on examples. So let us
+
+113
+00:34:11,092 --> 00:34:16,611
+C computation.
+
+114
+00:34:20,724 --> 00:34:23,724
+on and input.
+
+115
+00:34:25,983 --> 00:34:31,024
+And let's input, let's say input is ABAB, okay?
+
+116
+00:34:31,024 --> 00:34:32,363
+Just ABAB.
+
+117
+00:34:33,483 --> 00:34:40,484
+And now let's write a computation tree.
+
+118
+00:34:46,900 --> 00:34:58,900
+to see what's going on. So, at time zero, what do we have?
+
+119
+00:35:03,827 --> 00:35:05,827
+We are on Q0.
+
+120
+00:35:08,827 --> 00:35:10,827
+Input is ABAB.
+
+121
+00:35:12,827 --> 00:35:15,827
+And the stack has just dollar.
+
+122
+00:35:18,827 --> 00:35:20,827
+Now from then, what happens?
+
+123
+00:35:22,827 --> 00:35:26,827
+This first transition happens and we go to Q1.
+
+124
+00:35:28,827 --> 00:35:30,827
+Input does not change.
+
+125
+00:35:30,827 --> 00:35:31,827
+ABAB.
+
+126
+00:35:33,827 --> 00:35:43,827
+But stack changes because we push this variable s to the stack. So stack becomes s dollar.
+
+127
+00:35:49,139 --> 00:35:58,139
+and let's say that's time one. Now on time two, we have a lot of time.
+
+128
+00:35:58,675 --> 00:36:28,655
+So let's see what we can do. What transitions are possible on time two? Well, first of all, I see that these two are possible. So in these two, we don't read anything and stuck top is S. So we can pop an S and we can push these things. So we are, and nothing else actually.
+
+129
+00:36:28,675 --> 00:36:34,675
+right, because the four other transitions does not match.
+
+130
+00:36:34,675 --> 00:36:40,356
+So we have two transitions to happen.
+
+131
+00:36:40,356 --> 00:36:48,756
+And since pushdown automata are non-deterministic, both of these happen, actually.
+
+132
+00:36:48,756 --> 00:36:57,555
+So we will say that, OK, we will stay in Q1.
+
+133
+00:36:57,555 --> 00:37:25,075
+and for the first one here, we don't read anything from input, so input is still ABAB, but S is now changed to ASTB. ASTB and we have a dollar there. So I applied this first rule now, the first transition now.
+
+134
+00:37:25,076 --> 00:37:49,076
+and in addition to that, I have this other, I can say, and I have, again, I am on Q1, input is still AB, AB.
+
+135
+00:37:49,075 --> 00:38:13,075
+well, this time I am applying this second transition, pop S push B. So if I do that, if I pop this S and push B instead, I will have B dollars in the stack. So at this point,
+
+136
+00:38:17,876 --> 00:38:26,876
+I have two parallel computations. And that's my time to.
+
+137
+00:38:31,059 --> 00:38:35,059
+Now, on time three,
+
+138
+00:38:38,708 --> 00:38:39,708
+Let's see. Now for this guide, for this first machine, so we have two machines now running parallel, running parallel. The top of the stack is A. And the first thing we need to read is A in the input. So this matches here. We need to read an A from the input and
+
+139
+00:39:08,708 --> 00:39:13,507
+open A, and that matches this transition.
+
+140
+00:39:13,507 --> 00:39:17,027
+So, and nothing else actually, right?
+
+141
+00:39:17,027 --> 00:39:21,967
+So there's only one thing, one transition here, one possible transition here.
+
+142
+00:39:21,967 --> 00:39:25,507
+So we will just use that.
+
+143
+00:39:32,275 --> 00:39:34,275
+So we will have...
+
+144
+00:39:38,099 --> 00:40:03,099
+and Q1. And now since this A will be red, the remaining string is just BAB on the input. And this A is popped now. So I only have STB dollars.
+
+145
+00:40:06,324 --> 00:40:35,324
+So you can show the transition three branches with these arrows if you want. Now for this second machine, there is no transition to happen because the top of the input is A and we, sorry, the input symbol we need to read is A, top of the stack is B, and we have no such transition.
+
+146
+00:40:36,324 --> 00:41:01,324
+Okay. So there is no transition from this guy and we are on an rejecting state. So this is not an accepting state either. And we didn't consume all of the inputs. So basically this, this machine just dies, right?
+
+147
+00:41:01,324 --> 00:41:27,324
+So, we now have only one machine again. And we can continue like this. So, on time, for now we have S again.
+
+148
+00:41:27,324 --> 00:41:52,324
+and so again, we will have two transitions that matches. So we will have two machines. First will be Q1 and BAB. Then I will pop this S and push ASTB.
+
+149
+00:41:52,324 --> 00:42:18,324
+So that means I will have A, S, T, B for this guy and then T, B again and the dollars. And I will have Q1, B, A, B. Now I pop this S again, but in the case, I will have Q1, B, A, B.
+
+150
+00:42:18,324 --> 00:42:30,324
+Now I pop this S again, but instead I will write a B. So I would have B, T, B, dollars.
+
+151
+00:42:34,483 --> 00:42:36,724
+So in this case, my
+
+152
+00:42:40,532 --> 00:42:41,532
+machine replicated itself. Now, this one dies because we need to read symbol B and we need to have, we need to pop A. There's no such transition. So this dies in this case. Now this one is useful, right? Because we need to read a B
+
+153
+00:43:10,532 --> 00:43:14,112
+and stuck must have a B on top.
+
+154
+00:43:14,112 --> 00:43:19,052
+And we have such a transition here, this guy.
+
+155
+00:43:20,631 --> 00:43:22,651
+So we will use that.
+
+156
+00:43:24,771 --> 00:43:26,451
+And what will happen?
+
+157
+00:43:26,451 --> 00:43:31,451
+We will have Q1, AB, T, B, dollars.
+
+158
+00:43:44,755 --> 00:44:09,596
+So at time, five. Now, for T, again, we have two transitions. So we need to apply those. So one will be Q1, AB. When we have a variable here, we don't read anything from the input, so we can just write the input.
+
+159
+00:44:09,596 --> 00:44:29,395
+and for T, we can use the first one, TA, and this B here, and dollar, or, or, and we have the machine, Q1, AB again.
+
+160
+00:44:29,395 --> 00:44:50,395
+And now let's think about the second rule with the second transition with the T. So that says just delete T. So we will have B dollar here.
+
+161
+00:44:50,395 --> 00:45:12,235
+and on the next time, this guy will die because input is A, stuck top is B, and we know there is no such transition.
+
+162
+00:45:12,235 --> 00:45:38,415
+And for this guy, again, there will be two different childs, if you want. So the machine will replicate itself. And one of those will be Q1AB. And if you apply the first one, I'll write a TA instead of T, and then I have an AB dollar.
+
+163
+00:45:38,415 --> 00:46:07,815
+So TA and then AB dollar. So TAAB. And in addition to this, I have Q1AB. And if I apply the second transition here, this says pop T push nothing.
+
+164
+00:46:07,815 --> 00:46:10,815
+so we are deleting T basically.
+
+165
+00:46:10,815 --> 00:46:12,815
+We have A, B dollars.
+
+166
+00:46:18,164 --> 00:46:24,363
+So let me delete this thing and write a little to the side.
+
+167
+00:46:27,668 --> 00:46:57,647
+Now, at this point, I can see that these two matches nicely. So clearly this branch will accept because AA, this will match this guy. And I have BB and that will match this guy.
+
+168
+00:46:57,668 --> 00:47:19,907
+And finally, I will only have null and I will only have dollar and that will match this transition. And I will go to Q2. And I will skip those steps. But basically, we will have here.
+
+169
+00:47:25,331 --> 00:47:26,331
+Q2, null, dollars. Right? And this is an accepting situation because Q2 is accepting and input is consumed. So we are accepting here.
+
+170
+00:47:48,115 --> 00:48:06,115
+On this other branch, notice that this will continue forever. So this branch will never, never end. So you will always have a...
+
+171
+00:48:07,764 --> 00:48:08,764
+these branches on this side because what will happen is you have this T being replaced by TA here, right? So this rule here, this transition. So we can apply this to this T here forever.
+
+172
+00:48:37,764 --> 00:48:40,523
+what I'm doing.
+
+173
+00:48:40,523 --> 00:48:50,243
+You can apply that to this T here and forever you will be a branch that is active.
+
+174
+00:48:50,243 --> 00:49:03,243
+And but we don't care because that branch will, well, not forever actually.
+
+175
+00:49:03,243 --> 00:49:06,243
+or forever?
+
+176
+00:49:06,243 --> 00:49:11,804
+Yes, forever, because it doesn't need to read the input, right?
+
+177
+00:49:11,804 --> 00:49:16,323
+I thought maybe input can be finished,
+
+178
+00:49:16,323 --> 00:49:19,804
+but it doesn't need to read input.
+
+179
+00:49:19,804 --> 00:49:28,643
+So this doesn't need to read input, just needs to change TVTA.
+
+180
+00:49:32,148 --> 00:49:33,148
+So this, this branch will kind of work forever, but we will still accept this string because there is this accepting computation. Okay. So this goes on this kind of loops. Forever. But here we are accepting.
+
+181
+00:50:02,996 --> 00:50:30,996
+Now, as I always say, you don't need to write this whole computation today because you can sense that, okay, somehow, if you have ABAB, you can sense that.
+
+182
+00:50:36,211 --> 00:50:43,652
+You can sense the branch just by looking at looking at
+
+183
+00:50:51,092 --> 00:51:15,092
+So, so I will say that try this, do this without writing full computation tree.
+
+184
+00:51:21,043 --> 00:51:23,043
+yourself later.
+
+185
+00:51:28,724 --> 00:51:46,724
+So let's have a break till 10 o'clock. Do you have any questions at this point? Okay. Okay. Let's have a 10 minutes break.
+
+186
+01:08:23,444 --> 01:08:25,444
+Evet sesim geliyor mu arkadaşlar?
+
+187
+01:08:28,444 --> 01:08:29,444
+Evet hocam.
+
+188
+01:08:29,444 --> 01:08:30,444
+Geliyorum tamam.
+
+189
+01:08:31,444 --> 01:08:34,444
+Haftaya quiz var onu tekrar hatırlatayım.
+
+190
+01:08:36,444 --> 01:08:39,083
+Ders saatinde yeni test olacak.
+
+191
+01:09:02,963 --> 01:09:25,963
+So let's look at how this worked. So one thing you may not notice at first, but is there is pushdown automata simulates the leftmost derivation of the grammar.
+
+192
+01:09:45,460 --> 01:09:46,820
+The, the,
+
+193
+01:09:50,131 --> 01:09:51,651
+generated
+
+194
+01:09:54,371 --> 01:09:57,131
+pushdown automata
+
+195
+01:09:58,211 --> 01:09:59,291
+simulates
+
+196
+01:10:03,651 --> 01:10:04,651
+leftmost
+
+197
+01:10:05,251 --> 01:10:05,991
+or the
+
+198
+01:10:09,460 --> 01:10:12,460
+left, most.
+
+199
+01:10:15,796 --> 01:10:17,796
+derivation
+
+200
+01:10:19,796 --> 01:10:21,796
+of the string.
+
+201
+01:10:29,171 --> 01:10:39,531
+And how is that done? Let's look at here. If you look at the stack,
+
+202
+01:10:45,203 --> 01:11:14,203
+What is the stack contents? At time step zero, stack content is dollar. Then we have S there. Then we have ASTB. And we, we kind of get rid of the terminal before variable. And then we have the leftmost variable, popped.
+
+203
+01:11:15,203 --> 01:11:44,964
+and changed to here. And then we kind of take out the terminal and then what is again the leftmost variable. So leftmost like the top of the stack corresponds to the left of the string. So we are basically
+
+204
+01:11:45,203 --> 01:12:15,183
+and
+
+205
+01:11:51,188 --> 01:11:54,747
+If you look at the stack contents for,
+
+206
+01:11:54,747 --> 01:11:55,787
+for,
+
+207
+01:12:10,771 --> 01:12:19,692
+the stack contents
+
+208
+01:12:26,228 --> 01:12:29,107
+simulates.
+
+209
+01:12:31,444 --> 01:12:33,603
+the leftmost.
+
+210
+01:12:40,595 --> 01:12:46,595
+variation. except
+
+211
+01:12:46,595 --> 01:12:50,595
+starting
+
+212
+01:12:53,595 --> 01:12:55,595
+terminals
+
+213
+01:12:58,195 --> 01:13:01,875
+or, to watch the BC.
+
+214
+01:13:05,235 --> 01:13:13,235
+starting terminals are hidden or deleted.
+
+215
+01:13:15,091 --> 01:13:28,851
+So for the example, A, B, A, B, and the machine we have up there, the stack contents were
+
+216
+01:13:37,043 --> 01:13:50,723
+We start with a dollar at time zero. Then we had S dollar.
+
+217
+01:13:54,068 --> 01:14:00,068
+Then we have ASTB dollar.
+
+218
+01:14:02,467 --> 01:14:09,068
+And I am talking about accepting computation branch here.
+
+219
+01:14:09,068 --> 01:14:14,068
+So I'm not, I will not consider these things.
+
+220
+01:14:14,068 --> 01:14:27,428
+i'm only talking about this and this and this dies then here and then here and then here and then here
+
+221
+01:14:28,387 --> 01:14:37,587
+and here okay so i am talking about the accepting branch accepting computation
+
+222
+01:14:37,588 --> 01:14:44,748
+so we had astb now
+
+223
+01:14:44,748 --> 01:14:51,968
+this initial terminal is deleted so
+
+224
+01:14:51,968 --> 01:15:01,828
+we had s like writing like stb dollars
+
+225
+01:15:01,828 --> 01:15:05,108
+then
+
+226
+01:15:05,108 --> 01:15:08,428
+this s
+
+227
+01:15:08,428 --> 01:15:10,668
+became what
+
+228
+01:15:10,668 --> 01:15:15,188
+b
+
+229
+01:15:15,188 --> 01:15:17,068
+so we had
+
+230
+01:15:17,068 --> 01:15:20,088
+b t
+
+231
+01:15:20,088 --> 01:15:21,487
+b dollar
+
+232
+01:15:21,487 --> 01:15:25,188
+and
+
+233
+01:15:25,188 --> 01:15:28,668
+then we had
+
+234
+01:15:28,668 --> 01:15:30,568
+t b dollar
+
+235
+01:15:30,568 --> 01:15:32,627
+you
+
+236
+01:15:38,899 --> 01:15:45,139
+TAB dollars. And then we have TAB dollars.
+
+237
+01:15:46,996 --> 01:16:14,996
+TAB$, and then we had AB$, and we had $. Now, these are the stack contents and if we had to generate this using the context-free grammar, what would be the,
+
+238
+01:16:14,996 --> 01:16:20,755
+AB generation.
+
+239
+01:16:23,891 --> 01:16:26,891
+production.
+
+240
+01:16:30,228 --> 01:16:57,228
+for this context-free grammar, what would it be? Well, at first we would have S, then we would have ASTB, then we would have A. Now, the difference is we are deleting this initial symbol.
+
+241
+01:16:57,228 --> 01:17:09,228
+So here, instead of that, context-free grammar would keep that A, and instead of STB, we would have BTB.
+
+242
+01:17:11,891 --> 01:17:41,871
+and then we would have this T. So we are again deleting this B. So it's kind of this part is same. This part is deleted now. So kind of the part of the string that is free of the variables is deleted in the stack.
+
+243
+01:17:41,891 --> 01:18:05,891
+Other than that, it's the same. So, and this becomes ABTAB, like this. And then it becomes ABAB. So it's very similar actually.
+
+244
+01:18:10,387 --> 01:18:19,308
+So, you can see that.
+
+245
+01:18:24,307 --> 01:18:26,687
+Now, um,
+
+246
+01:18:37,427 --> 01:18:48,228
+So, to continue to the proof, we say that,
+
+247
+01:18:52,532 --> 01:18:54,532
+to prove continuity.
+
+248
+01:19:07,444 --> 01:19:09,444
+So in general,
+
+249
+01:19:14,444 --> 01:19:17,444
+it can be shown that
+
+250
+01:19:25,076 --> 01:19:26,155
+and, uh,
+
+251
+01:19:30,931 --> 01:19:37,931
+and then the, that the, context-free grammar,
+
+252
+01:19:46,579 --> 01:19:49,579
+g generates
+
+253
+01:19:52,579 --> 01:19:53,579
+string w
+
+254
+01:19:58,228 --> 01:19:59,787
+If and only if
+
+255
+01:20:02,899 --> 01:20:12,899
+pushdown automata, and accepts.
+
+256
+01:20:14,612 --> 01:20:19,612
+W. Delfors.
+
+257
+01:20:23,380 --> 01:20:50,380
+We say that language of G is equal to language of M. And this showing here is proof by construction. So we say that for any grammar, we can construct a corresponding pushdown automata.
+
+258
+01:20:50,380 --> 01:20:57,299
+So that means we are able to convert them.
+
+259
+01:20:57,299 --> 01:21:09,839
+So this concludes the first part of the proof and it shows how we can convert a context-free grammar
+
+260
+01:21:09,839 --> 01:21:11,880
+into a pushdown automaton.
+
+261
+01:21:11,880 --> 01:21:13,619
+So this part.
+
+262
+01:21:13,619 --> 01:21:14,619
+Okay.
+
+263
+01:21:14,619 --> 01:21:20,619
+Now the second part is kind of complicated so I will not do it.
+
+264
+01:21:23,619 --> 01:21:29,619
+You can read it from the book so I will just write it right here.
+
+265
+01:21:32,619 --> 01:21:34,619
+So I'll say step
+
+266
+01:21:36,619 --> 01:21:39,619
+to convert
+
+267
+01:21:39,619 --> 01:21:56,740
+word, pushdown automata to context-free grammar. I am skipping that, but you can read it.
+
+268
+01:22:00,275 --> 01:22:02,275
+from the book.
+
+269
+01:22:05,684 --> 01:22:11,684
+if you can, if you are interested. But the thing is,
+
+270
+01:22:14,676 --> 01:22:30,676
+You can take any arbitrary PDA. We can convert any pushdown automata.
+
+271
+01:22:33,427 --> 01:22:34,407
+and then,
+
+272
+01:22:42,579 --> 01:22:49,899
+we can, yes, into corresponding,
+
+273
+01:22:53,332 --> 01:23:18,332
+context-free grammar, G. Now the context-free grammar is quite large in this case. So we are creating a huge context-free grammar. So I will skip that part. And if you are interested, you can read it from the book.
+
+274
+01:23:26,484 --> 01:23:37,484
+Do you have any questions from this part? If you don't, we will move to the next, next chapter. We will start Turing machines.
+
+275
+01:23:39,484 --> 01:23:40,484
+Yoko Chambcha.
+
+276
+01:23:41,484 --> 01:23:47,484
+Okay. So Turing machines, I think they are on a different chapter with this.
+
+277
+01:23:47,484 --> 01:23:56,484
+we finished the chapter two I think of the book. Let's see.
+
+278
+01:24:15,188 --> 01:24:22,188
+Right, so with this we finished chapter one and chapter two.
+
+279
+01:24:24,564 --> 01:24:37,564
+chapter one and chapter two of the book is finished.
+
+280
+01:24:40,180 --> 01:24:48,940
+In chapter two, I think we didn't do some parts. In chapter two,
+
+281
+01:25:03,988 --> 01:25:07,988
+We didn't do deterministic pushdown automata, I think.
+
+282
+01:25:19,604 --> 01:25:22,604
+in chapter 2 we skipped
+
+283
+01:25:24,604 --> 01:25:26,604
+deterministic
+
+284
+01:25:31,060 --> 01:25:33,099
+context-free language.
+
+285
+01:25:36,435 --> 01:25:40,435
+So this is not included in the exam.
+
+286
+01:25:43,764 --> 01:25:47,764
+Let's see if do we have anything else?
+
+287
+01:25:57,811 --> 01:26:27,791
+deterministic, no. Okay. So basically in chapter two, we skipped deterministic context-free languages. Other than that, we did all of the chapter two. And we will not do deterministic context-free languages. Now we are going to start with chapter three, the church Turing thesis and there you will see Turing machines.
+
+288
+01:26:31,507 --> 01:26:34,507
+So you should do the exercises.
+
+289
+01:26:38,644 --> 01:26:40,644
+in the book.
+
+290
+01:26:55,380 --> 01:27:00,380
+Okay, let's say 11 Turing machines.
+
+291
+01:27:28,307 --> 01:27:32,307
+So the name of the chapter is Church Turing
+
+292
+01:27:34,307 --> 01:27:38,307
+thesis
+
+293
+01:27:40,180 --> 01:27:53,439
+We will come to that later. Before that, what kind of languages we have seen so far? Let's look at the language hierarchy.
+
+294
+01:27:59,764 --> 01:28:01,764
+Elaki bir örneği soru var.
+
+295
+01:28:12,948 --> 01:28:18,187
+The simplest languages we learned are called regular languages.
+
+296
+01:28:22,836 --> 01:28:37,635
+and for these regular languages, you can design a pushdown, so you can design a deterministic or non-deterministic finite automata. So basically finite automata.
+
+297
+01:28:41,460 --> 01:28:47,460
+The strings in these regular languages are accepted by finite automata.
+
+298
+01:28:51,123 --> 01:28:59,123
+Now, later we learned context-free languages.
+
+299
+01:29:05,971 --> 01:29:19,971
+and these context-free languages, the strings in these languages can be generated by context-free grammars.
+
+300
+01:29:26,260 --> 01:29:37,220
+or they can be accepted by pushdown automata. And the...
+
+301
+01:29:38,836 --> 01:29:57,516
+Here we have, for regular languages, we have things like A star, very simple languages. And for context-free languages, we have things like A to the N, B to the N. So you can accept these kind of patterns.
+
+302
+01:29:57,516 --> 01:30:24,395
+Now, notice that regular languages is a subset of context-free languages. So if you say that a language is context-free, automatically you are proving that it is a regular language. And if you prove that a language is not regular, you are automatically proving that it is not context-free. So notice that
+
+303
+01:30:39,091 --> 01:30:55,091
+Notice that context-free languages or regular languages is a subset of context-free languages. Okay.
+
+304
+01:30:56,083 --> 01:30:57,083
+Now, starting today, we will learn a more powerful machine, Turing machine, and these machines will accept
+
+305
+01:31:19,220 --> 01:31:23,220
+Turing recognizable languages.
+
+306
+01:31:30,515 --> 01:31:39,515
+and they will be a super set of context-free languages and regular languages.
+
+307
+01:31:58,420 --> 01:32:06,420
+So these are called Turing recognizable languages. Turing recognizable.
+
+308
+01:32:14,707 --> 01:32:33,707
+and strings of these languages are accepted by Turing machines. We will learn those. And they can be much more complex than context-free languages or regular languages.
+
+309
+01:32:48,340 --> 01:33:03,340
+So you can have something like A to the N, B to the N, C to the N, et cetera. Because context-free languages can only count two things. They can match two things.
+
+310
+01:33:03,340 --> 01:33:18,340
+But Turing machines is very powerful. We will later see that everything you can compute with your computer can be computed by a Turing machine.
+
+311
+01:33:18,340 --> 01:33:37,340
+So it's like a Turing machine is like a simulation of or it's like a virtual machine. It's like a logical machine. Let's look at these things. So Turing machines.
+
+312
+01:33:59,315 --> 01:34:10,315
+A Turing machine has an input tape. So we just call it a tape. Like this.
+
+313
+01:34:13,300 --> 01:34:16,300
+And in the tape we have symbols.
+
+314
+01:34:20,307 --> 01:34:35,307
+This tape is infinite in both sides. So it continues to infinity in right and in the left side. So infinite.
+
+315
+01:34:47,155 --> 01:35:16,595
+and we have a read, write, head. So at any point we have a read, write, head. A read, write, head shows a symbol that we will read next. So we will read that symbol and notice the word write here.
+
+316
+01:35:16,595 --> 01:35:23,435
+So the special thing with Turing machines is we can write back to the tape.
+
+317
+01:35:23,435 --> 01:35:30,795
+So far in pushdown automata and finite automata, we could only read from the input.
+
+318
+01:35:30,795 --> 01:35:33,435
+Now we can write back.
+
+319
+01:35:33,435 --> 01:35:37,155
+So it's really like a computer memory.
+
+320
+01:35:37,155 --> 01:35:41,115
+We can write into or we can read from the computer memory.
+
+321
+01:35:41,115 --> 01:35:45,555
+So the tape is like a computer memory in this case.
+
+322
+01:35:45,555 --> 01:35:48,555
+and we have a control unit.
+
+323
+01:35:53,171 --> 01:36:18,171
+And again, we have states there. We can have a starting state and we have some other states and we have accepting states, one or more accepting states. And between them again, we have transitions.
+
+324
+01:36:27,859 --> 01:36:56,859
+Now, after the reading or writing, this read-write head moves to left or right. So after reading and writing, this moves to left or right. Okay.
+
+325
+01:36:56,859 --> 01:37:10,760
+So it can read, let's say you have an A here, it can read the A, and then let's say it can write a B there, and then it can either go to here, to left, or either go to the right.
+
+326
+01:37:22,739 --> 01:37:31,739
+So, the head at each transition or time step.
+
+327
+01:37:39,764 --> 01:37:58,764
+at each transition or time step, the head, the head does these three things.
+
+328
+01:38:03,988 --> 01:38:07,988
+first reads a symbol.
+
+329
+01:38:13,844 --> 01:38:28,083
+second, writes a symbol, third, moves to left or right.
+
+330
+01:38:45,171 --> 01:38:46,171
+Now, since the tip is infinitely in both sides, the initial input needs to be somehow shown. How will we know that? Where is the input? Right? Where are we? So,
+
+331
+01:39:15,171 --> 01:39:42,752
+and
+
+332
+01:39:19,604 --> 01:39:22,523
+tape contents,
+
+333
+01:39:24,916 --> 01:39:33,716
+or the initial tape is somewhat special. What happens is, first of all,
+
+334
+01:39:35,475 --> 01:39:37,795
+input is
+
+335
+01:39:41,332 --> 01:39:49,832
+shown by the head. So the head, read, write, head, shows the beginning of the input.
+
+336
+01:39:54,420 --> 01:39:57,420
+So I had initially
+
+337
+01:40:00,532 --> 01:40:02,532
+shows
+
+338
+01:40:05,452 --> 01:40:05,891
+the
+
+339
+01:40:06,972 --> 01:40:08,651
+first symbol
+
+340
+01:40:10,971 --> 01:40:12,372
+of input.
+
+341
+01:40:14,091 --> 01:40:14,372
+Okay.
+
+342
+01:40:16,251 --> 01:40:18,132
+So you might have something like
+
+343
+01:40:21,411 --> 01:40:24,532
+A, B, A, C as input there.
+
+344
+01:40:25,292 --> 01:40:30,131
+Now, this is still not enough because we say that the
+
+345
+01:40:30,532 --> 01:40:35,532
+tape is infinite on both sides.
+
+346
+01:40:35,532 --> 01:40:44,532
+So how are we going to understand that this is not part of the original input, right?
+
+347
+01:40:44,532 --> 01:40:49,532
+This here. For that, we need a special symbol.
+
+348
+01:40:49,532 --> 01:40:57,532
+We will call that symbol blank symbol. Here, I will use diamond.
+
+349
+01:41:01,492 --> 01:41:02,492
+diamonds. So diamond will be a blank, blank symbol. So when we see a diamond, it means that there is nothing there. So initially the input will be written into the tape. Head will be at the first symbol of the input and on both sides of the input, we will only see
+
+350
+01:41:31,492 --> 01:41:39,892
+blank symbol. And in the book, if you read the book, blank symbol is shown by this.
+
+351
+01:41:46,515 --> 01:41:47,515
+blank symbol is this thing, whatever it is. Also in the book,
+
+352
+01:42:05,619 --> 01:42:14,619
+only right side is infinite. So in the book.
+
+353
+01:42:22,292 --> 01:42:33,292
+machines have only in the book on the right side.
+
+354
+01:42:36,884 --> 01:42:38,744
+You have the first sight that
+
+355
+01:42:43,347 --> 01:42:45,987
+on the right side of the tape.
+
+356
+01:42:49,427 --> 01:42:51,427
+is infinite.
+
+357
+01:42:53,427 --> 01:42:55,947
+So you have something like this.
+
+358
+01:43:14,579 --> 01:43:37,579
+And we will later see that these two Turing machines are equivalent. So you can have infinite in both sides. So infinite amount of space on both sides of the table or only on the right side of the table.
+
+359
+01:43:37,579 --> 01:44:06,940
+the Turing machine will be equivalent. They will be able to accept the same strings. So this infinite amount of space on both sides doesn't give additional power to the Turing machine because we can just, when we need space on the left, we can just shift everything to the right.
+
+360
+01:44:15,315 --> 01:44:22,995
+Okay, so initial tape in this case, in our case will be like that.
+
+361
+01:44:26,036 --> 01:44:33,036
+and how will we write states and transitions?
+
+362
+01:44:52,083 --> 01:45:14,083
+So we need to somehow tell all these three things, right? So reads a symbol, writes a symbol, moves to left or right. So we need a notation that will tell us all of it. So Q1, let's say, is current state and let's say we go to Q2.
+
+363
+01:45:14,083 --> 01:45:38,203
+and now reads a symbol. So we will write first that. Let's say it reads an A. And instead of that A, let's say it writes a B. So this is shown by an arrow. So let me
+
+364
+01:45:45,011 --> 01:45:46,011
+and a, writes a B and then goes to left. So L means left. Instead, it could be R meaning goes to R. So.
+
+365
+01:46:04,564 --> 01:46:05,564
+So, A in this case means reads A, B means writes B, and then read right head moves to left. And L means left here, as you see, and R means right.
+
+366
+01:46:34,564 --> 01:46:41,043
+So we could have written R there and that would mean the head moves to the right.
+
+367
+01:46:44,163 --> 01:46:57,043
+So for this transition to happen, we must be on state Q1 and the read-write head must be pointing to NA.
+
+368
+01:46:57,043 --> 01:46:59,023
+So we need two conditions.
+
+369
+01:46:59,023 --> 01:47:09,023
+conditions. If these two conditions happen, this transition can occur.
+
+370
+01:47:25,492 --> 01:47:36,731
+Now, we still have an instantaneous description. So,
+
+371
+01:47:41,268 --> 01:47:52,867
+like pushdown automata. Instant. instantaneous. instantaneous description.
+
+372
+01:47:56,372 --> 01:47:57,372
+and so remember that in pushdown automata, we had these three, these three element tuples like Q0, something like AB and BAW or something. Now in Turing machines,
+
+373
+01:48:26,372 --> 01:48:54,372
+and the place that is shown by the red-write head can change all the time. So instead of that, we use something like that. Let's say A, B, C, Q0, D, E, let's say. And that will mean that
+
+374
+01:48:58,452 --> 01:49:10,452
+We have blank symbol. And it goes to infinity to the left. Then we have ABC.
+
+375
+01:49:12,916 --> 01:49:25,916
+and DE. Then we have all blank symbols. And with right head shows D.
+
+376
+01:49:28,532 --> 01:49:58,511
+Okay. So we write the, and we are on Q0. So, we are on Q0. Okay. So we might have Q1 or something, whatever. We are currently on Q0.
+
+377
+01:50:13,235 --> 01:50:39,795
+So in Turing machines we will not use tuples, we will just use the state to separate the input before head and input after and with input starting let's say, input that the head shows.
+
+378
+01:50:41,716 --> 01:50:42,716
+input that the head shows and the rest, let's say. So in Turing machines, we will use this kind of instantaneous descriptions. Now, Turing machines are deterministic.
+
+379
+01:51:03,699 --> 01:51:12,699
+machines are deterministic.
+
+380
+01:51:21,876 --> 01:51:43,876
+There are non-deterministic Turing machines, but they are called non-deterministic Turing machines. So if you hear Turing machines, it means deterministic Turing machine. If you hear non-deterministic Turing machine, it's non-deterministic. We will see those later for the time being.
+
+381
+01:51:43,876 --> 01:52:12,475
+when I will just say Turing machine and that means Turing machines are deterministic. And what does deterministic mean? Well, remember, in non-deterministic machines for the same input, we can have different states as a result.
+
+382
+01:52:12,475 --> 01:52:26,035
+So if you are on Q1 and let's say we write head as has a under it.
+
+383
+01:52:26,035 --> 01:52:40,556
+So head points to an A. Let's say you can go to Q2 and write something there, B and R, let's say.
+
+384
+01:52:42,475 --> 01:53:04,615
+Now you cannot do this. You still have an A and you want to write something like a D there and you want to go to move to left and you want to move to Q3. This is not a load. Okay. So this is not a load.
+
+385
+01:53:12,243 --> 01:53:38,243
+And in addition, there is no null transition. So you cannot have something like Q1 goes to Q2, reads nothing, writes something, and moves to the left. Let's say again, this is not allowed.
+
+386
+01:53:41,108 --> 01:53:44,108
+So null transition is not allowed.
+
+387
+01:53:51,188 --> 01:53:54,428
+So this is null transition.
+
+388
+01:53:56,884 --> 01:53:58,884
+and this is what can we say?
+
+389
+01:54:06,579 --> 01:54:12,619
+I don't know, doing more than one different things on the same input. Again, not allowed.
+
+390
+01:54:25,747 --> 01:54:34,747
+So let's have a break here. If you have any questions, you can ask now.
+
+391
+01:54:37,140 --> 01:54:39,140
+Okay, let's have a break till
+
+392
+01:54:52,467 --> 01:54:55,527
+1102
+
+393
+02:05:33,011 --> 02:05:34,011
+Turing machines are deterministic. Recall that in deterministic finite automata, you have to write what happens for all possible inputs.
+
+394
+02:06:03,011 --> 02:06:17,011
+But in Turing machines that's not the case. In Turing machines you can just write a partial transition function.
+
+395
+02:06:31,220 --> 02:06:35,439
+So, you call that, uh,
+
+396
+02:06:39,475 --> 02:07:09,455
+in deterministic finite automata. If let's say we have in our input alphabet A, B, C, for each state, we need to tell what happens for A, what happens for B, what happens for C,
+
+397
+02:07:09,475 --> 02:07:16,955
+for all of these symbols in the input alphabet, right?
+
+398
+02:07:17,775 --> 02:07:19,236
+So this was input alphabet.
+
+399
+02:07:26,292 --> 02:07:27,371
+e...
+
+400
+02:07:31,636 --> 02:07:38,636
+but in, or in contrast, in Turing machines,
+
+401
+02:07:45,587 --> 02:08:14,587
+in Turing machines, you might have the same input alphabet, A, B, and C. And for a state, maybe there's only one input that it accepts, and that is A. And B and C are not shown, and that's okay. So this is allowed.
+
+402
+02:08:18,707 --> 02:08:20,707
+load even though
+
+403
+02:08:24,884 --> 02:08:28,884
+machines are deterministic.
+
+404
+02:08:32,212 --> 02:08:59,212
+So, in finite automata, we allowed not writing everything or just showing the partial transition function only in NFAs, non-deterministic finite automata. But in Turing machines, even though they are deterministic, we may skip writing what happens on some input symbols.
+
+405
+02:08:59,212 --> 02:09:19,212
+and this is called partial translation function. We are skipping writing what happens or drawing what happens for some functions. And the reason is, Turing machines themselves are usually quite involved.
+
+406
+02:09:19,212 --> 02:09:40,212
+and then, they can get very complex very easily. So this is an attempt to make them a little simpler, those diagrams, to make those diagrams a little simpler.
+
+407
+02:09:40,212 --> 02:09:46,131
+Okay, so now
+
+408
+02:09:51,699 --> 02:09:52,699
+There is the concept of halting in Turing machines. So we say that the Turing machine halts in a state if there is no transition to follow. So you have your machine and in that machine you are on some state Q. And
+
+409
+02:10:21,699 --> 02:10:27,339
+there is no, no,
+
+410
+02:10:30,771 --> 02:10:45,091
+transition you can follow. They may be, there may be some transitions, but you cannot follow because they, you need an A, but on the inputs.
+
+411
+02:10:46,996 --> 02:10:49,775
+The head shows a B, for example.
+
+412
+02:10:54,323 --> 02:11:22,323
+So, or, what does maybe you have no outgoing transitions at all that's possible. So in this case, no matching transitions. And here we have no transitions at all.
+
+413
+02:11:27,539 --> 02:11:38,539
+And in this case we say that machine helps, stops. Basically it doesn't, it doesn't.
+
+414
+02:11:43,667 --> 02:11:44,667
+work anymore. The program, if you think Turing machines can be thought of as programs, so your program stops. So we say that, let's write this, the machine halts in a state. So here we say that the machine halts
+
+415
+02:12:13,667 --> 02:12:24,667
+halts in the state Q, right? So the machines halts in a state if there is no transition.
+
+416
+02:12:33,171 --> 02:12:34,412
+to follow.
+
+417
+02:13:00,851 --> 02:13:17,851
+Now, related to this is, in Turing machines, accepting states does not have outgoing transitions. So, uh,
+
+418
+02:13:26,868 --> 02:13:30,827
+So in Turing machines, you can have
+
+419
+02:13:39,380 --> 02:13:40,380
+your accepting states obviously can have inbound transitions, but your accepting state cannot have outgoing transitions. Okay. So this is not allowed.
+
+420
+02:14:11,252 --> 02:14:13,252
+This is obviously allowed.
+
+421
+02:14:17,747 --> 02:14:24,747
+and you might have some. Let me write that to the bottom.
+
+422
+02:14:35,412 --> 02:15:03,412
+So what that means is, remember just a little ago we said that the machine halts in a state if there is no transition to follow and in accepting states there is no transition to follow. That means on accepting states the machine halts. Okay. So first right accepting states states
+
+423
+02:15:07,604 --> 02:15:16,963
+have no outgoing transitions.
+
+424
+02:15:20,916 --> 02:15:26,195
+As a result, the machine halts.
+
+425
+02:15:31,796 --> 02:15:50,796
+halts and accepts. Since we are on a, we reached to an accepting state, the machine accepts. The machine halts and accepts.
+
+426
+02:15:56,020 --> 02:15:58,020
+So,
+
+427
+02:16:00,020 --> 02:16:04,020
+to summarize accepting or rejecting,
+
+428
+02:16:06,020 --> 02:16:10,020
+the cases you might come across to are,
+
+429
+02:16:10,020 --> 02:16:15,020
+let's look at them, so accepting or rejecting.
+
+430
+02:16:30,260 --> 02:16:31,260
+So there are three things that can happen. So one thing is machine can
+
+431
+02:16:50,644 --> 02:16:52,644
+So the machine can halt
+
+432
+02:16:56,244 --> 02:16:59,923
+in an accepting state.
+
+433
+02:17:03,603 --> 02:17:15,603
+We just, we just talked about it here. And in this case, we say that input string is accepted.
+
+434
+02:17:27,987 --> 02:17:31,987
+You can just write, make sense.
+
+435
+02:17:48,244 --> 02:17:52,563
+So accept the input string, if machine,
+
+436
+02:18:11,283 --> 02:18:19,283
+Accept input string if machine halts in an accepted accept state.
+
+437
+02:18:23,283 --> 02:18:24,283
+Now, another thing that can happen is maybe the machine halts, but the state is not accept. It's a reject state. So we can say, if machine halts in a non-accept, in a non-accept,
+
+438
+02:18:53,283 --> 02:18:54,843
+state.
+
+439
+02:19:00,051 --> 02:19:01,051
+So this is clearly rejecting the input. In this case, the machine halts, but we are not on an accept state. So we are rejecting. Now, there is one thing that can happen here. Or sometimes, trick machines enter infinite loops. So if machine enters
+
+440
+02:19:30,051 --> 02:19:34,051
+and interest and infinity.
+
+441
+02:19:39,412 --> 02:19:42,671
+and in this case, again,
+
+442
+02:19:45,940 --> 02:19:52,940
+In both cases, we reject the input string.
+
+443
+02:20:07,987 --> 02:20:34,987
+So you have these three situations. First, machine halts in an accept state, so you accept. Second, machine halts in an unaccept state, reject. And third, machine does not halt at all. It continues forever.
+
+444
+02:20:34,987 --> 02:21:02,987
+Now, notice that the machine can enter in an acceptance accepting state without finishing all of the input without consuming all of the input. So, in fact, input is not consumed input is only changed, right?
+
+445
+02:21:02,987 --> 02:21:11,467
+So notice that input is not necessarily
+
+446
+02:21:15,347 --> 02:21:16,347
+consente.
+
+447
+02:21:25,172 --> 02:21:26,431
+machine,
+
+448
+02:21:30,772 --> 02:21:32,431
+can accept
+
+449
+02:21:34,492 --> 02:21:35,491
+a string
+
+450
+02:21:39,612 --> 02:21:40,491
+without
+
+451
+02:21:43,311 --> 02:21:44,911
+scanning all of it.
+
+452
+02:21:54,739 --> 02:21:55,399
+Okay?
+
+453
+02:22:00,724 --> 02:22:17,724
+So we have these, we have talked about this quite a bit. Let's do an example. Let's look at an example Turing machine and try to see how this, how it works.
+
+454
+02:22:21,363 --> 02:22:25,804
+So, examples, Turing machine.
+
+455
+02:23:00,564 --> 02:23:01,564
+So this machine is very simple actually. Initially, the state is Q0 and you have this transition, read and write and A, move to write. And you have this transition. If you are on a blank, read that blank.
+
+456
+02:23:30,564 --> 02:23:53,564
+blank, then write back blank and move to the left and go to your accept state. And in this case, input alphabet is A and B. So
+
+457
+02:23:59,188 --> 02:24:17,188
+and B is never shown in the diagram. So that means there is no transition that accepts B. And for example, this language accepts what?
+
+458
+02:24:17,716 --> 02:24:43,235
+A star. So if you think about it, as long as there are A's, the input will be consumed. And at the end of the input, we go to write when we read A's. So when we reach to a blank,
+
+459
+02:24:43,235 --> 02:24:58,235
+we go to the accepting state q1 and accept. So let's see how this works for an input AAA.
+
+460
+02:25:07,123 --> 02:25:17,443
+So what will happen for this input? How will the tape be initially?
+
+461
+02:25:19,572 --> 02:25:33,891
+Well, the tape will be like this. A, A, A, and there will be blanks everywhere else.
+
+462
+02:25:36,979 --> 02:25:52,979
+and the head will be here. And the initial state will be Q0. And this will be our time zero.
+
+463
+02:26:15,219 --> 02:26:19,399
+So now,
+
+464
+02:26:22,644 --> 02:26:25,843
+at time one,
+
+465
+02:26:28,628 --> 02:26:33,628
+at time one.
+
+466
+02:26:37,012 --> 02:26:41,012
+At time zero, what will, what will the machine do?
+
+467
+02:26:43,012 --> 02:26:49,012
+Uh, machine will run this transition because it matches.
+
+468
+02:26:49,012 --> 02:26:54,012
+Because there is, uh, we are on Q zero.
+
+469
+02:26:54,012 --> 02:27:06,012
+So when we are on Q zero, if we read an A like this, we can write that A back and we can move to the right.
+
+470
+02:27:06,012 --> 02:27:20,012
+right. So the machine will use that transition. And what will be the next situation at time zero?
+
+471
+02:27:38,484 --> 02:28:06,484
+The head will be here. We will still be on Q0. And this will be our time one. And on time two, we are still stayed on state Q0 and our symbol is A. So we can still use this transition. So the same thing.
+
+472
+02:28:08,484 --> 02:28:38,303
+A, A, A. Now we are here. And a time to the machine will read this A, write it back and move to the left. And the situation or instant, instantaneous description, let's say, on a diagram will be like this.
+
+473
+02:28:38,484 --> 02:29:05,484
+So I didn't write these diamonds. But you could, if I don't write anything, usually that means there are diamonds there. It's blank. The time three. Now, our head shows this time this blank. And we are on Q zero.
+
+474
+02:29:26,835 --> 02:29:55,475
+Now, that's, this is the point where we get out of this loop. And we actually use this transition to the accept state. Right, because here we are on Q0. Like this. And symbol is blank. So we need to read the blank symbol to use this transition and we have a blank transition.
+
+475
+02:29:55,475 --> 02:30:01,475
+So, we can read it, write back it, and then move to the left.
+
+476
+02:30:05,971 --> 02:30:12,971
+and the new will be Q1, right? It's not a Q0 but Q1.
+
+477
+02:30:18,899 --> 02:30:20,899
+So that will be our time for.
+
+478
+02:30:35,347 --> 02:30:45,667
+This is q1 not q0. Now, at this point, at time 4, the machine halts, why?
+
+479
+02:30:49,236 --> 02:31:19,215
+because Q1 does not have any outgoing states. So the machine halts and accepts. The accepts AAA. Why? Because Q1 is an accepting state. Okay. And this is an example of how a Turing machine might work.
+
+480
+02:31:19,236 --> 02:31:46,816
+and
+
+481
+02:31:24,724 --> 02:31:33,724
+Now, what would happen if we used ABA instead of AAA? Let's look at that example.
+
+482
+02:31:38,899 --> 02:31:40,939
+the same Turing machine.
+
+483
+02:31:52,180 --> 02:31:54,799
+But now this time,
+
+484
+02:32:08,788 --> 02:32:10,507
+Now input is,
+
+485
+02:32:13,811 --> 02:32:32,811
+input is what? ABA. And now instead of drawing these diagrams, let's try to use instance instantaneous descriptions here. So, or computation.
+
+486
+02:32:34,451 --> 02:32:46,451
+will be Q0, A, B, A, BA at the beginning.
+
+487
+02:32:47,771 --> 02:32:53,771
+And now this will result in, so this is all time zero.
+
+488
+02:32:53,771 --> 02:32:58,771
+So this is all time zero.
+
+489
+02:32:59,860 --> 02:33:07,360
+This transition will happen because we are on Q0 and input is A.
+
+490
+02:33:09,780 --> 02:33:36,939
+So we will have, we will write back A, so we will have A, Q0, B, A. And then again, we will use A, A, R transition. So we will have A, B. Sorry. Now, can we transition here? No, because look at here.
+
+491
+02:33:39,780 --> 02:33:59,780
+There is no transition for these guys, right? Because on Q0, when we have input B, we can do nothing. That means at this point, the machine halts, right? So there is no more
+
+492
+02:34:02,388 --> 02:34:05,667
+There is no more to the computation and the machine
+
+493
+02:34:08,308 --> 02:34:08,907
+machine
+
+494
+02:34:10,227 --> 02:34:10,907
+holds.
+
+495
+02:34:15,123 --> 02:34:17,123
+and rejects.
+
+496
+02:34:20,500 --> 02:34:40,500
+Why does it reject? Because Q0 is a rejecting state. It's a non-accept state. Why does it halt? Because from Q0, there is no transition that accepts P.
+
+497
+02:34:45,811 --> 02:34:48,451
+So, um,
+
+498
+02:34:50,515 --> 02:34:55,515
+Let's look at an infinite loop example.
+
+499
+02:35:00,244 --> 02:35:07,563
+or let's look at a simpler machine again, yet simpler.
+
+500
+02:35:13,012 --> 02:35:25,012
+that has the, that accepts the same language with this guy. Notice that this accepts a star.
+
+501
+02:35:27,924 --> 02:35:28,924
+Now,
+
+502
+02:35:33,043 --> 02:35:38,043
+What, what about this machine?
+
+503
+02:35:50,036 --> 02:35:59,036
+does, what, what do you think about this? This accepts everything, right?
+
+504
+02:36:02,036 --> 02:36:11,036
+This halts and accepts without any scanning.
+
+505
+02:36:19,731 --> 02:36:29,971
+and the reason is at the beginning we are already on an accept state. So whatever the input doesn't really matter.
+
+506
+02:36:33,299 --> 02:36:58,299
+We don't care. We are already on an accept state. Okay. So this helps directly. Now, with Turing machines, you can have infinite loops. So let's look at the infinite loop.
+
+507
+02:37:08,275 --> 02:37:09,275
+Again, there are two states. Q0 and Q1. Q1 is accepting. And final transition happens on blank symbol. And here we have this, this loop. When we see a B, we go to left.
+
+508
+02:37:38,275 --> 02:37:42,676
+C and A, we go to right.
+
+509
+02:37:45,636 --> 02:37:50,636
+Now, what happens if you give it an input of AB?
+
+510
+02:37:59,219 --> 02:38:01,059
+ABA, let's say.
+
+511
+02:38:02,259 --> 02:38:03,839
+What happens?
+
+512
+02:38:03,839 --> 02:38:08,060
+Notice that at time zero,
+
+513
+02:38:10,879 --> 02:38:14,419
+we will be Q0, ABA,
+
+514
+02:38:18,060 --> 02:38:20,299
+and then Q0 and A.
+
+515
+02:38:20,299 --> 02:38:23,959
+So this transition will happen.
+
+516
+02:38:23,959 --> 02:38:27,599
+So we will have A Q0,
+
+517
+02:38:30,963 --> 02:38:33,963
+B, A, at time one.
+
+518
+02:38:36,203 --> 02:38:39,103
+Now here Q0 and B.
+
+519
+02:38:39,103 --> 02:38:44,384
+So we have state Q0 and input B.
+
+520
+02:38:44,384 --> 02:38:49,363
+So we will use this transition, BBL transition.
+
+521
+02:38:49,363 --> 02:38:52,984
+So, but this, notice that this is left.
+
+522
+02:38:54,543 --> 02:38:56,783
+So the head moves to the left.
+
+523
+02:38:56,783 --> 02:39:01,423
+So that means time zero, time three, sorry, two.
+
+524
+02:39:03,603 --> 02:39:12,603
+We have Q zero A, B, A because Q zero moves to left in this case.
+
+525
+02:39:13,103 --> 02:39:16,843
+And it moved to right in the first case.
+
+526
+02:39:16,843 --> 02:39:21,843
+Now notice that we are back to the time zero, right?
+
+527
+02:39:21,843 --> 02:39:27,443
+right? This is same as time zero.
+
+528
+02:39:33,940 --> 02:39:41,519
+Time two is same as time one.
+
+529
+02:39:48,371 --> 02:39:53,371
+So this is an infinite loop.
+
+530
+02:39:56,724 --> 02:40:05,724
+If you want, you can write a time three. And let's write a couple of more.
+
+531
+02:40:20,371 --> 02:40:22,371
+view on the level.
+
+532
+02:40:24,371 --> 02:40:25,371
+So,
+
+533
+02:40:30,324 --> 02:40:31,324
+So at time three, now you will have A, Q0, BA. At time four, you will have Q0, A, B, A. So it will go like this forever. So starting from time two, we enter this infinite loop. Okay. Now what happens in this case? In this case,
+
+534
+02:41:00,324 --> 02:41:01,324
+rejects.
+
+535
+02:41:07,412 --> 02:41:11,531
+So, we have an infinite loop.
+
+536
+02:41:16,275 --> 02:41:18,275
+There is a new food loop.
+
+537
+02:41:26,932 --> 02:41:38,432
+and because of this infinite loop, we can never reach to an accepting state. So...
+
+538
+02:41:42,484 --> 02:41:43,883
+The machine,
+
+539
+02:41:48,500 --> 02:41:49,500
+never reaches to an accepting
+
+540
+02:42:01,172 --> 02:42:02,151
+state,
+
+541
+02:42:06,131 --> 02:42:10,631
+then that means it never holds.
+
+542
+02:42:18,868 --> 02:42:21,868
+and then the input string.
+
+543
+02:42:28,308 --> 02:42:30,308
+is rejected.
+
+544
+02:42:41,492 --> 02:43:01,492
+Now, this Turing machine, this thing, like rejecting the because of infinite loop.
+
+545
+02:42:59,316 --> 02:43:00,316
+It is not easy to see that, right? I mean, how can we understand that a machine is inside an infinite loop? Well, we can keep track of these computations, right? We can keep track of these computations and make sure we, if we go back to a already existing machine, we can keep track of these computations and make sure we, if we go back to a
+
+546
+02:43:29,316 --> 02:43:56,935
+and already existing instantaneous description in our history. That means we are in a loop, right? And that means we will never reach to a state, accepting state. But still, it's not easy. It's not easy because maybe the loop happens,
+
+547
+02:43:56,935 --> 02:44:15,935
+and then the loop may happen after a really, really long computation and we may or may not have enough time to wait for that. So the machine going to an infinite loop is really a problem.
+
+548
+02:44:15,935 --> 02:44:43,815
+and this problem is called halting problem actually. So can we know whether a Turing machine will halt or not? That's a very important question. And if the Turing machine is very simple like this, this guy here, very simple,
+
+549
+02:44:43,816 --> 02:45:11,176
+you might be able to say that this may go into an infinite loop. Or you might be able to say that the machine actually halts on all the inputs. It will never go to an infinite loop. But this is quite difficult actually.
+
+550
+02:45:13,816 --> 02:45:28,816
+If the Turing machine is complex, so a Turing machine can easily get very, very complex. The examples we have seen are very easy.
+
+551
+02:45:34,675 --> 02:45:35,675
+I will, I will draw the Turing machine here and you can work on it at home. And even this Turing machine is very simple yet you will see that it becomes very complex easily. Now, if you have a complex Turing machine that you cannot see, like a human can see,
+
+552
+02:46:04,675 --> 02:46:06,555
+see and analyze.
+
+553
+02:46:11,795 --> 02:46:16,795
+You cannot actually, it happens that you cannot actually know
+
+554
+02:46:16,795 --> 02:46:21,216
+whether the Turing machine will stop, will halt.
+
+555
+02:46:22,995 --> 02:46:26,675
+And that's like a philosophical question
+
+556
+02:46:26,675 --> 02:46:29,635
+and answer to that philosophical question.
+
+557
+02:46:29,635 --> 02:46:34,356
+Like, can you tell if I give you a program,
+
+558
+02:46:34,675 --> 02:46:54,675
+Can you tell me whether it will hold or not? And the answer to that is we cannot say that a program will hold if it is not very simple.
+
+559
+02:46:54,675 --> 02:46:58,076
+Okay, so we are out of time actually.
+
+560
+02:47:02,455 --> 02:47:08,356
+So I will write another example.
+
+561
+02:47:09,936 --> 02:47:12,036
+But I will do that next week.
+
+562
+02:47:23,987 --> 02:47:37,267
+or five minutes, let me draw this and you can work at home. So this is kind of, so you have Q0 here.
+
+563
+02:47:41,043 --> 02:47:42,043
+A, X, R, Q1, X
+
+564
+02:47:50,036 --> 02:47:54,635
+Y, Y, H, A,
+
+565
+02:47:59,156 --> 02:48:06,735
+AR, B, Y, L,
+
+566
+02:48:09,811 --> 02:48:11,151
+diskute
+
+567
+02:48:14,227 --> 02:48:27,627
+So, you have Y, Y, L, A, Z, A, A, L,
+
+568
+02:48:30,644 --> 02:48:31,644
+you have one transition back to that, X, X, R, and you have Q3 here. So you go to this way, Y, Y,
+
+569
+02:48:53,363 --> 02:48:54,363
+and you have this loop, Y, Y, R, this accepting state. This is.
+
+570
+02:49:12,084 --> 02:49:28,883
+blank, blank, L, this is Q4. Did I draw everything? Seems to be okay.
+
+571
+02:49:35,028 --> 02:49:43,028
+Okay, so this Turing machine accepts the language.
+
+572
+02:49:47,476 --> 02:49:57,476
+A to the N, B to the N, where N is greater than one. So try on...
+
+573
+02:50:00,000 --> 02:50:07,759
+they say AABB. Okay. And see how this works yourself.
+
+574
+02:50:14,164 --> 02:50:35,164
+I hope I didn't make a mistake copying it. Any questions about Turing machines? Or anything else? Next week you have a quiz. Everything we have seen of the quiz will be in the quiz, can be in the quiz, by the way.
+
+575
+02:50:35,164 --> 02:50:40,164
+Weis, dersten önce mi olacaktı, sonra mı olacaktı hocam?
+
+576
+02:50:42,963 --> 02:50:45,004
+Probably it will be a third hour.
+
+577
+02:50:47,143 --> 02:50:49,963
+Bugünkü işleyeceğimiz konular da dahil olacak mı dolayısıyla?
+
+578
+02:50:51,024 --> 02:50:51,504
+Olabilir.
+
+579
+02:50:55,731 --> 02:50:58,731
+Yani quiz'e kadar ki her şey dahil olabilir.
+
+580
+02:51:00,731 --> 02:51:02,731
+Biz saatine karşı.
+
+581
+02:51:07,540 --> 02:51:17,540
+Okay. Did you copy the example? If you copy the example, I will close.
+
+582
+02:51:19,540 --> 02:51:25,540
+Okay, then see you next week.
