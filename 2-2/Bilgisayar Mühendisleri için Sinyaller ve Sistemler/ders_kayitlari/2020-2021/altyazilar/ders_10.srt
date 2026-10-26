@@ -1,0 +1,3419 @@
+1
+00:01:59,284 --> 00:02:01,284
+Merhabalar arkadaşlar.
+
+2
+00:02:10,740 --> 00:02:14,740
+Kayra tamam, ödevi açıklarız.
+
+3
+00:02:19,508 --> 00:02:26,067
+ödev metniliği açayım o zaman ben herkes gelene kadar
+
+4
+00:03:56,596 --> 00:03:58,935
+Evet, ses iyi mi arkadaşlar?
+
+5
+00:04:00,355 --> 00:04:01,056
+İyi hocam.
+
+6
+00:04:05,056 --> 00:04:06,896
+Şimdi daha iyi olması lazım.
+
+7
+00:04:08,896 --> 00:04:17,795
+Şimdi ne yapacağız bugün? Önce ödevle alakalı açıklama istendi, onu yapalım. Ondan sonra sınav sorularını çözeceğiz. Ondan sonra konumuzu devam edeceğiz.
+
+8
+00:04:17,795 --> 00:04:30,315
+sınavla alakalı kontrol ettirmek isteyen varsa bugün farklı bir bilgisayarda çalışıyorum. Onun için cumartesi günü talepte bulunmanızı isteyeceğim.
+
+9
+00:04:31,895 --> 00:04:40,575
+Şu an sadece PowerPoint ekranı görüyorsunuz herhalde. Önce şu ekran paylaşımını kapatayım. Nasıl yapacağız?
+
+10
+00:04:40,575 --> 00:04:57,255
+şey yapalım. Ödev Fourier sentezi ile alakalı bir ödev arkadaşlar. Biliyorsunuz biz Fourier analizi yaparak işaretin
+
+11
+00:04:57,255 --> 00:05:03,355
+kosünüs ve sinüz ozal birleşenlerini tespit etmiştik. Kosünüs ve sinüz birleşenlerini. Bunu yaparken de şuradaki
+
+12
+00:05:03,355 --> 00:05:09,155
+AK dediğimiz kas sayıları bulacaktık. Bu AK kas sayılarının bulunması için bir tane integralimiz vardı.
+
+13
+00:05:09,155 --> 00:05:23,375
+ödev analiz üzerine değil, sentez üzerine. Şimdi sınavda da bir sorumuz vardı, analiz üzerineydi. O analizi birazdan yapacağız. Hem de sentez haline getirip aynı sonuca ulaşmaya çalışacağız.
+
+14
+00:05:24,596 --> 00:05:36,515
+Şimdi burada size bir tablo verilmiş. Bu tabloda bir işaretin faz bileşeni, AK kas sayıları, bu AK kas sayılarından üretilen magnitud değerleri, bunu bir derste konuştuk. Burada da frekanslar var.
+
+15
+00:05:36,515 --> 00:05:49,735
+Bu öyle bir nokta ki bazı frekans değerlerinde AK kat sayıları sıfır. Bu ne demek? O frekans bileşenin olmadığını gösteriyor.
+
+16
+00:05:50,596 --> 00:05:56,395
+Ve burada baktığımız zaman sıfır yani görünmeyen bütün değerler sıfırlardan oluşuyor.
+
+17
+00:05:56,395 --> 00:06:02,415
+17 tane bileşen varmış. İşte şu sıfırmış, şu sıfırmış, şu sıfırmış, şu narsı bu.
+
+18
+00:06:02,415 --> 00:06:21,616
+geri kalanların frekans bileşenleri var. İşte bu frekans bileşenlerinin bir tanesini çizdirirsek şöyle. Bu bir taneye yani o ilke şu olacak. İkinciyi eklersek bu şekilde, üçüncüye eklersek bu şekilde, dördüncüye eklersek bu şekilde, beşinciye eklersek bu şekilde bir sonuç elde ediyorsunuz.
+
+19
+00:06:21,616 --> 00:06:47,015
+elde ettiğiniz bu dalganın seslendirmesini yaparsanız, birazdan onu da konuşacağım, şu yukarıda bahsettiğimiz A sesini duyarsınız. Frekans bileşeni olarak da, örnekleme frekansı 20.000 Hz demiştim. Bunu seçerseniz, birazdan bu seslendirme komutunu göreceğiz. Bu şekilde bir dalga formunun nasıl bir sese karşılık geldiğini görmüş olacaksınız. Var mı soru?
+
+20
+00:06:47,015 --> 00:06:58,695
+Hocam bu ilk şeyden bahsedeyim de ben mesela hocam şey yapıyorum bu iki çarpı real kısmı mettebde yazdırıyorum da hocam hani grafikler çok genzemiyor.
+
+21
+00:06:59,596 --> 00:07:07,075
+Muhtemelen şuradaki sinzoydar şeylerinde bir hata alıyorsun veya grafiği çizdirirken çok yapılan bir hata var.
+
+22
+00:07:07,075 --> 00:07:20,536
+birazdan onu yani şöyle plot y dersen bu y vektörü işte örneğin 1000 uzunlukta olsun x80'ini birden bine kadar otomatik atar.
+
+23
+00:07:21,096 --> 00:07:33,475
+Herkese bu t'ye göre değişen bir şey dersen t'ye, y'e demen lazım. Hata bu olabilir. Eğer dalga formunda farklılık varsa o zaman şu denklemi şeydeki denklemi yanlış kuruyorsun demektir.
+
+24
+00:07:33,475 --> 00:07:45,255
+onu bir gözden geçirmen lazım. Bu sonuçlar, şu gördüğüm sonuçlar şu tablodan elde edilmiş. Daha sonra cevabını göstereceğim, göstereceğim sonuçlardır.
+
+25
+00:07:46,655 --> 00:07:50,815
+Buradaki tablolardaki değerlerle şuradaki grafikler arasında bir uyum var.
+
+26
+00:07:50,815 --> 00:07:53,075
+Tamam.
+
+27
+00:07:56,180 --> 00:08:05,879
+Şimdi sınavla alakalı çözümleri yapacağız. Dediğim gibi sınav sorularının itirazlarınız varsa, çözümleri gördükten sonra itiraz etmeniz en doğrusu.
+
+28
+00:08:07,459 --> 00:08:14,879
+Cumartesi günü o itirazlarınızı yönetmenizi isteyeceğim. Bana mail atarsanız veya dersten sonra görüşürüz.
+
+29
+00:08:17,100 --> 00:08:22,619
+Cumartesi günü yine öğleden sonra bir tane quizimiz olacak. Kalan iki quizimizin bir tanesini bu hafta yapacağız.
+
+30
+00:08:22,619 --> 00:08:31,799
+dördüncü kuizi test sınavı şeklinde değil de basit bir kodlama böyle iki üç saatlik bir kodlama şeklinde yapmayı düşünüyorum.
+
+31
+00:08:31,799 --> 00:08:38,680
+Yine dersin son saatlerinde başlayıp dersin sonrasındaki iki saatte üç saatte bitecek şekilde bir ödev olacak.
+
+32
+00:08:39,459 --> 00:08:44,979
+Ona tam karar veremedim. Belki yine test yapabilirim de işte bir ödevimiz bir kuizimiz kalıyor bu hafta zamanı.
+
+33
+00:08:44,979 --> 00:08:53,239
+diye duyurulmazsa. Şimdi gelelim şu sorularımıza bakalım.
+
+34
+00:08:59,028 --> 00:09:00,227
+Şimdi ilki
+
+35
+00:09:00,227 --> 00:09:03,347
+şöyle alsam
+
+36
+00:09:03,347 --> 00:09:06,227
+kopyalasam
+
+37
+00:09:13,844 --> 00:09:15,844
+Şşatın bir beş kalın.
+
+38
+00:09:21,139 --> 00:09:32,139
+Bugün tek monitör olduğu için biraz alandar ama yapacağız bir şekilde. Genel olarak soru çözüm ortalaması fena olmayan bir soru.
+
+39
+00:09:32,139 --> 00:09:47,139
+Şöyle yapalım. İlki bir ayrık işaret. Eğer burada sürekli zamanda bir şey çizmişseniz, yani şöyle yapayım.
+
+40
+00:09:47,139 --> 00:10:06,459
+A maddesinde şöyle bir grafik çizilmişse böyle bir çizgi doğrudan yanlış bir sonuçtur. Oradan çok çok düşük bir puan almışsınızdır. Belki mantıken ayrık zamandakine yakın bir sonuçtur ama yanlış bir sonuç olur. Bu ayrık bir işaret olduğunu konuştuk.
+
+41
+00:10:06,459 --> 00:10:20,019
+Gelelim A maddesindeki şeyi çizmeye. Şimdi A maddesinde iki tane işaretin çarpımından oluşuyor. Zaten B'de de böyle bir durum var. Bir çarpım, bir toplam. Bunlar konvolüsyon olmadığı için
+
+42
+00:10:20,019 --> 00:10:23,019
+Niye içteniyoruz?
+
+43
+00:10:41,971 --> 00:10:49,171
+şimdi hene bağlı işaretimiz var 3-10 de şimdi çekse en şöyle birkaç tanesini yazalım ben sıfırken
+
+44
+00:10:49,171 --> 00:11:01,211
+üçte yerini verecek en bir ken en eşittir sıfırken sonucumuz işte işten diyelim üçte en bir ken iki
+
+45
+00:11:01,211 --> 00:11:10,291
+değerini verecekmiş şöyle ikiyken bir değerini vereceğiz sonra sıfır değerini aldı sonra eksi
+
+46
+00:11:10,291 --> 00:11:20,192
+olacak böyle en sonsuza kadar ve işte şurada en eksi birken 4 değerini alır gibi böyle bir işaret
+
+47
+00:11:20,192 --> 00:11:27,872
+burası Biz bu işareti parantez içerisindeki işareti çarpma yapacağız bu parantez içerisindeki
+
+48
+00:11:27,872 --> 00:11:35,791
+işareti çizelim şimdi bu en dediğimiz şey en sıfırdan başlamak üzere sıfırdan büyük değerler
+
+49
+00:11:35,791 --> 00:11:44,692
+bir olan işarettir bundan en eksikü yani üç birim ötelenmiş mi sıfır bir iki üç dört böyle gidiyor
+
+50
+00:11:44,692 --> 00:11:51,451
+üç birim ötelenmiş diğer işareti çıkartacağız üç bir ötelenmiş işaret üçten itibaren başlayıp
+
+51
+00:11:51,451 --> 00:11:57,491
+sonsuza kadar artık şuradaki değerlerin hiçbir anlamı yok Dolayısıyla bunları silebiliriz
+
+52
+00:11:57,491 --> 00:12:03,091
+parantez içerisindeki işaret buna karşılık geliyor o zaman bizim yapacağımız şey şu
+
+53
+00:12:03,091 --> 00:12:12,071
+olarak da şu işareti vektörel olarak çarpmak demektir vektör olarak çarpınca şunu iki vektörü
+
+54
+00:12:12,071 --> 00:12:17,611
+çarpmak demek ne demek karşılıklı olarak değerleri çarpmak demektir şimdi şöyle baktığımızda enin
+
+55
+00:12:17,611 --> 00:12:23,591
+sıfırdan küçük olduğu değerlerde eksi bir eksik her şey 00 diye geliyor o zaman buradaki bütün
+
+56
+00:12:23,591 --> 00:12:30,151
+ayrık değerlerimiz hepsi sıfır oluyor yani bir anlamı olmayacak sıfır noktasında bir diye bunların
+
+57
+00:12:30,152 --> 00:12:35,912
+başkaların bir olduğunuz tepkan uyuyor o sondan biliyoruz buradaki değerde buradaki
+
+58
+00:12:35,912 --> 00:12:38,971
+de çarpacağız şimdi buradaki değerde buradaki değer çarpınca sıfır noktasında
+
+59
+00:12:38,971 --> 00:12:43,471
+gidelim 3 3'e karşılık geliyor sonra bir noktasında işte buradaki değerle buradaki
+
+60
+00:12:43,471 --> 00:12:48,692
+çarpacağız burada ikiye karşılık geliyor sonra iki noktasında bir e karşılık geliyor
+
+61
+00:12:48,692 --> 00:12:57,811
+bundan sonraki noktalarda da 00.00 diye gidiyor Dolayısıyla sonucumuz 321 diye şöyle görecek
+
+62
+00:12:57,811 --> 00:13:04,471
+bunu ister vektörel formatta yazsaydın aynı sonucu vurdur ama ben çizim istemiştim böyle bir sonuç
+
+63
+00:13:04,471 --> 00:13:08,071
+elde edeceğiz sorusu olan var burada
+
+64
+00:13:12,115 --> 00:13:16,516
+dediğim gibi ayrık değil de sürekli bir sonuç çizdiyseniz o zaman yanlış olur.
+
+65
+00:13:19,395 --> 00:13:20,395
+pekala
+
+66
+00:13:21,036 --> 00:13:22,595
+şimdi ikinci sorumuz
+
+67
+00:13:23,315 --> 00:13:35,716
+yandaki işareti kullanarak şimdi VT'ye bir şey yapılıyor, VT ile bir işaret çarpılıyor, bir de VT ile başka bir işaret çarpılıyor, daha sonra bu isim toplamak yapılır. Yani vektörel bir toplam var nihay olarak. Şurayı sileyim.
+
+68
+00:13:44,275 --> 00:13:51,196
+önce ilk kısmı yapacağım ama aradaki şu UT ile UT-1 tarafını halledelim.
+
+69
+00:13:51,196 --> 00:14:00,395
+orası çünkü geçici bir işareti ben alfa T diyorum oraya
+
+70
+00:14:10,548 --> 00:14:12,548
+Şurası alfa T olsun.
+
+71
+00:14:17,299 --> 00:14:27,720
+Bu alfa T'nin özelliğine yine yukarıdaki gibi U T dediğimiz şey şöyledir işaret. U T-1 dediğimiz şeyde şu noktadan başlayacak.
+
+72
+00:14:29,479 --> 00:14:47,179
+Bir noktasından alamadık. Böyle devam edip gidecek. Şimdi ben bundan bunu çıkarırsam bir dahil her şey çıkmış olacak. Yani şu gidecek, işte şurası gidecek. Ama birinin bir öncesi kalacak.
+
+73
+00:14:47,299 --> 00:15:05,740
+Dolayısıyla şurada bir hariç bütün değerler vardır açık nokta burası bazı arkadaşlar bir de götürmüşler bir ile beraber aradaki değerlerde gitmiş sürekli bir işaret olduğu için 0.99999 gitmiyor bu işaretin içerisinde var alfa t'nin içerisinde
+
+74
+00:15:05,739 --> 00:15:19,559
+doyası da burada böyle bir sonucumuz olacak. Evet, VT ile ben bu işareti çarparsam, şimdi VT'nin sıfırdan önceki değerleri, birden sonraki değerleri hiçbiri önemli değil.
+
+75
+00:15:19,939 --> 00:15:33,719
+Çünkü sadece şu sıfır bir aralığında değer alacak demektir. Bu ara çarpım ne olacak? VT'nin mevcut değerlerini koruyacağız ama sadece şurada bir noktadaki değer açıkladı.
+
+76
+00:15:33,719 --> 00:15:56,559
+bunu çizmeyenlerden çok puan kırmadım. Doğrudan düz çizgi şu şekilde çizenler vardı. Ondan da puan kırmadım. Şurası 3 olacak, burası 1 olacak. Ama şöyle çizyenlerden puan kırdım. Burada 3 değeri kalacak. İşte bu burada böyle. Ama şimdi burada bir değerine kadar olan işaretin bütün değerleri saklı kalması lazım. Onun için olması gereken çizim bu şekilde.
+
+77
+00:15:56,559 --> 00:16:08,399
+Evet bu toplamanın sol tarafı. Şimdi toplamanın sağ tarafında bir tane birim basamak, birim darbe, impuls fonksiyonu ile çarpma işlemi var işaretin kendisi.
+
+78
+00:16:08,879 --> 00:16:20,539
+Şimdi VT dediğimiz işaret bu. Ben bunu T artı bir dediğimiz nokta neye karşılık gelecek? Şuna karşılık gelecek. Şu noktada kendisiyle çarparsam orada bir örnekleme yapmış oluyorum.
+
+79
+00:16:20,539 --> 00:16:47,039
+Şimdi bu noktada T artı bir, bire karşılık giriyor. Yani şöyle bir işaret. Oradaki değer, değerin kendisine sıfır. Dolayısıyla orada bir çarpı sıfır, sıfır geriyeyim. Şurada şöyle bir değer var. Yazmak zorunda değiliz. Dolayısıyla sonucumuz, YT dediğimiz şey, T'ye bağlı olarak bu şekilde geliyor. Yani buradan itibaren şöyle çizgi çizilebilir. Ama bu, buradan itibaren onda, eksi sonsuzdan sıfıra kadar.
+
+80
+00:16:47,039 --> 00:16:55,419
+sıfır değeri birden itibaren sıfır değerini gösteren bir sinyal olacak. Sorumuz var mı burada?
+
+81
+00:16:58,159 --> 00:17:12,579
+Şimdi tek ekran olduğu için chatleri görmekte biraz sıkıntı çekebilirim arkadaşlar. Chatten soru sorulursa ve mikrofon olmayan birisi arkadaşı soru sormuşsa diğer arkadaşlarım en azından beni uyarsın hocam chatte soru var diye atlayıp gitmeyelim.
+
+82
+00:17:17,523 --> 00:17:41,403
+Evet, ikinci soruya geçebiliriz. İkinci soruda da genel anlamda şey de sadece sınırlar konusunda hala o kadar şey örnek yapmama rağmen bazı sıkıntılar vardı. Şimdi HN ve XN işaretlerimiz verilmiş şu şekilde. Buna konvolüsyon işlemi yapıp sonucu göstermemiz gerekiyor.
+
+83
+00:17:41,403 --> 00:17:46,683
+Şöyle yapalım, şunu görüntü olarak alayım
+
+84
+00:18:03,955 --> 00:18:11,955
+sınava katılan sayısı nedense az. Niye öyle bir duruma anlayamadım ben? Yani 50 kişi var ama 38 kişi katılmış.
+
+85
+00:18:11,955 --> 00:18:29,255
+Bu da ilginç. Bir daha kendiniz isteyerek geliyorsunuz. Şimdi eksi bir, pardon eksi bir diyorum yanlış oldu. 2, 3, burada 0 noktası var. 2, 1 işaretimiz.
+
+86
+00:18:29,255 --> 00:18:31,055
+Ya, haşan
+
+87
+00:18:34,483 --> 00:18:39,663
+2, eksi 1, 1 ve eksi 2.
+
+88
+00:18:40,563 --> 00:18:41,944
+Şurada da işaretimiz şu.
+
+89
+00:18:42,723 --> 00:18:50,023
+Şimdi bu işaretin aralıklarını yazdığımızda 0, eksi 1, eksi 2.
+
+90
+00:18:50,103 --> 00:18:52,424
+Eksi 2'den, şu da eksi 1'den başlıyor.
+
+91
+00:18:53,343 --> 00:18:56,223
+İşte şu 0, 1, 2, eksi 1'den 2'ye kadar.
+
+92
+00:18:56,223 --> 00:19:03,663
+Yani şöyle yazarsak, istediğimiz şey, eksi 1'den 2'ye kadar olan değerler.
+
+93
+00:19:03,663 --> 00:19:13,683
+yeri H dediğimiz şeyde hep yeri başlıyoruz eksi ikiden ve artı bire kadar yani bire kadar bizim
+
+94
+00:19:13,683 --> 00:19:22,923
+yeğenimiz ne olacak arkadaşlar bunların toplamıyla tayin ediliyordu bu aklınıza gelmemiş olabilir
+
+95
+00:19:22,923 --> 00:19:30,183
+başka bir yol göstermiş işaretin sıfır noktası ile ikna iki sıfır noktasını karşı çarptı çarptınız
+
+96
+00:19:30,183 --> 00:19:36,183
+nokta sıfır noktası bu sıfır noktasını tayin edip ondan önceki noktaları bulabilirsiniz önce çarpma
+
+97
+00:19:36,183 --> 00:19:45,543
+işlemini gerçekleştirelim sonra bakarız şöyle hızlıca yazayım 2 3 2 1 burada şimdi bu ters
+
+98
+00:19:45,543 --> 00:19:49,383
+çeviriyoruz ters çevirip ondan sonra ne yapıyorduk benim terk ayırıyor şimdi ilk kaydım
+
+99
+00:19:49,383 --> 00:19:58,844
+ilk noktamız şurası şuraya getiriyor iki eksi bir bir eksi iki buradan gelen sonuç nedir 4 ilk
+
+100
+00:19:58,844 --> 00:20:00,164
+Şöyle bir yere not ederim.
+
+101
+00:20:02,324 --> 00:20:04,164
+Sonra bunu bir kaydıracağız.
+
+102
+00:20:04,424 --> 00:20:05,704
+2-1
+
+103
+00:20:05,704 --> 00:20:07,583
+1-2
+
+104
+00:20:07,583 --> 00:20:10,623
+6 oluyor.
+
+105
+00:20:10,903 --> 00:20:13,083
+6'dan yine bir 4 buluyoruz.
+
+106
+00:20:14,303 --> 00:20:14,704
+Öyle değil mi?
+
+107
+00:20:15,104 --> 00:20:16,524
+2-1
+
+108
+00:20:16,524 --> 00:20:19,524
+1-2
+
+109
+00:20:19,524 --> 00:20:21,183
+4
+
+110
+00:20:21,183 --> 00:20:22,784
+3 çıktı.
+
+111
+00:20:22,784 --> 00:20:23,104
+1
+
+112
+00:20:23,104 --> 00:20:27,223
+2 daha 3 oluyor.
+
+113
+00:20:27,223 --> 00:20:57,204
+Bir tane daha kaydırıyoruz.
+
+114
+00:20:57,223 --> 00:21:06,223
+eksi 2 eksi bir le bunu çarptık eksi bir iki daha artı bir eksi beş daha ne oldu eksi dört mu oldu
+
+115
+00:21:06,223 --> 00:21:36,203
+bulduk sonra şöyle yapalım 2 1 2 1 1 2 1 2 1 2 2 1 2 1 2 1 2 1 2 2 1 2 2 1 2 2 2 2 2 2
+
+116
+00:21:36,223 --> 00:21:41,083
+yanlış yaptığım şey var mı arkadaşlar sayısal sonuçta atladığım bir şey
+
+117
+00:21:41,083 --> 00:21:50,923
+bakayım ben de 4 4 3 eksi 1 eksi 5 bir yerde eksi 5 olması almış eksi 3 eksi 2 şimdi şurada
+
+118
+00:21:50,923 --> 00:22:00,343
+eksi 5 bulmamız gerekiyormuş bu hangisi 4 kaydırdık şurada eksi 5 bulacağız
+
+119
+00:22:00,344 --> 00:22:13,004
+eksi bir gitti tabi eksi altı şuradan artı bir yerine eksi beş olacak şu duruma bakarsak eksi
+
+120
+00:22:13,004 --> 00:22:26,804
+bir artı iki daha artı bir eksi altı daha eksi beş demek sonumuz 4 4 3 eksi bir eksi beş eksi üç ve eksi
+
+121
+00:22:26,803 --> 00:22:27,303
+Evet.
+
+122
+00:22:28,051 --> 00:22:42,551
+Şimdi geldik nokta tayin yapmaya. Bunun için en kolay yol, hani şunları, işte burası eksi üçten başarır, eksi üç, eksi iki, eksi bir, sıfır noktası burasıdır. Bunu doğru tespit etmek yani sıfır işaretleyecekse ki böyle.
+
+123
+00:22:42,551 --> 00:22:55,051
+Veya bunu nasıl yapabildik? İşaretin noktasında, iki sıfır noktasında çarptığımız noktadan da bulabilir. Ama en kolay yolu bu. Şimdi iki sıfır noktasını nerede çarptık?
+
+124
+00:22:55,051 --> 00:23:14,851
+orayı yani eksi bir bulduğumuz işlem hangisiydi? Şunlardan işte dördüncü adım veya üçüncü adım. O dördüncü adım olacak yani en başa geldiğimiz nokta şu işlem. Bu işlemde elde ettiğimiz sonucu karşılıklı olarak çarptığımız için iki tane sıfır noktasına o zaman oraya da sıfır yazabiliriz. Ama hiç gerek yok. Hani şunu doğrudan kullanabilirsin.
+
+125
+00:23:14,851 --> 00:23:39,912
+Bunu daha böyle birim darbe fonksiyonu kullanarak bu işin asıl esası birim darbe fonksiyonu cinsinden yazarak yapmaktır demiştim. Onunla alakalı da örnek çözmüştük. O zaman yaparsanız birim darbe fonksiyonu işte şu n ile şu n'in çarpıldığı, karşılıklı çarpıldığı nokta bize sıfır noktasını verir. İşte 1, 2 ve 3. Demek ki sonucumuz bu olacak.
+
+126
+00:23:39,912 --> 00:23:52,092
+çizersek 4, 4, 3, 3 noktasında bir 4 var, sonra bir 4 var, sonra ondan küçük biraz 3 var, sonra 0 noktasında
+
+127
+00:23:52,092 --> 00:24:01,531
+eksi 1 var şöyle, sonra bir eksi 5 var, sonra bir eksi 3 var, sonra bir eksi 2 var diyebiliriz şu şekilde de sonucu yazarız.
+
+128
+00:24:02,452 --> 00:24:03,791
+Burada herhangi bir sorumuz var mı?
+
+129
+00:24:07,667 --> 00:24:25,667
+Bununla alakalı şeyden önce de baya örnek yaptık. Genel olarak ortalama fena değildi. İşte puan kırılan arkadaşlar şu şeylerin tayin edilmesi, sınırların tayin edilmesi veya sıfır noktasının tayin edilmesi konusunda sıkıntı yaşamışlar. Halbuki bu çok da zor bir şey değildi.
+
+130
+00:24:27,667 --> 00:24:30,667
+Sorumuz yoksa, şimdi chat'e bakayım.
+
+131
+00:24:33,267 --> 00:24:34,667
+Devam edebiliriz.
+
+132
+00:24:37,667 --> 00:24:40,528
+Evet şimdi bunu şöyle alacağım
+
+133
+00:24:52,468 --> 00:25:00,928
+ayrık zamanlı işaret, XN işareti verilmiş. Bu işlem işaret üzerinde yapılacak bazı operasyonlardan bahsediyoruz.
+
+134
+00:25:00,928 --> 00:25:10,068
+Şimdi bu işaretin bağıntısına, unit-impulse, unit-impulse fonksiyonunu yazmayın.
+
+135
+00:25:10,068 --> 00:25:16,308
+unit-step yazanlar var. unit-impulse dediğim şey arkadaşlar şu işarettir.
+
+136
+00:25:16,308 --> 00:25:27,348
+ünit impas cinsinden bunu yazmak mümkün, ünit steple yani yu n ile yazmak biraz zor olur. Çünkü bu ayrı kısa zamanda bir işaret.
+
+137
+00:25:27,348 --> 00:25:36,767
+Burada bir sürü yu n'lerden oluşan şey yazmak lazım. Onun için zaten ben ünit impas sordum. Şimdi bir x n işareti
+
+138
+00:25:36,767 --> 00:25:52,667
+daha önce bağıntısını yazalım. İkselin bağıntısını yazdığımızda şimdi bu sıfır noktası 3 olan bir işaret. O zaman sıfır noktasında bir günün infas işaretleri ama 3 katıyla çarpacağız genliğinde.
+
+139
+00:25:53,127 --> 00:25:59,807
+Çünkü bu biliyoruz ki en eşittir sıfır noktasında bir sonucunu verecek. O bir sonucunu 3 ile çarparsam artı 3 değerini elde ederim.
+
+140
+00:25:59,807 --> 00:26:11,247
+geriye veya ileriye doğru devam edelim. Bunun öncesinde ne var? Eksi bir noktasında genliği sıfır olan. O zaman yazmak gerekmiyor. Yani şöyle yazacağız. Sıfır çarpı
+
+141
+00:26:11,247 --> 00:26:21,207
+eksi bir diye bir şey yazıp bırakacak ama genliği sıfır olduğu için bir anlam ifade etmiyor. Sonra n-2 noktasında 2 olan
+
+142
+00:26:21,207 --> 00:26:47,887
+şöyle biraz daha, ve n-3 noktasında, eksi 1, eksi 3, eksi 1 olan bir şey o zaman, eksi, n-3 olacak tabii ki arkadaşlar, yanlış söylüyorum, zaman üzerinde geriye almak demektir, n-3, artı 2 çarpı, bırak n-2,
+
+143
+00:26:47,887 --> 00:27:17,207
+3 çarpı, n, artı, artı değil, şimdi eksi var, eksi 7 çarpı, n-1, artı, n-2, ama bunun gelmeyi 6, evet, eksi 7 artı 6, evet, a seçeneğimizin cevabı bu şekilde olacak,
+
+144
+00:27:17,207 --> 00:27:26,707
+sıfır yazmak zorunda değiliz. Şimdi diyor ki, İksen işaretinin grafiğini ve yeğen eşittir şu işaretin grafiği için.
+
+145
+00:27:26,707 --> 00:27:35,967
+Şimdi grafiği çizmek zaten bu sorunun çözümünde gayet bizi çözüme götüremiş. Birinci soruyla da çok yakın bir soru oluyor.
+
+146
+00:27:37,087 --> 00:27:45,927
+Şimdi sıfır noktasında 3 var. Ondan sonraki bir noktasında eksi 7 var.
+
+147
+00:27:47,207 --> 00:28:10,127
+şurada eksi 6 var. Böyle şekli çizmiyorum, düşüne direkt bu şekilde yazıyorum. Yani siz de bu şekilde zaten görüyorsunuz. Şu noktada bir 0 var, eksi 1 de. Eksi 2 noktasında ki değerimiz 2. Şuradaki değerimiz de eksi 1.
+
+148
+00:28:15,284 --> 00:28:17,784
+altı olacak hocam neresi altı olacak?
+
+149
+00:28:23,188 --> 00:28:35,787
+eksi 6 pardon doğru diyorsun teşekkür ederim şurası 6 olacak yani gelmeğimiz 6 olduğu için ters yazmayacağız yani şuraya 2 diyelim şurayı da 6 yapalım
+
+150
+00:28:35,787 --> 00:28:51,987
+Evet xn işaretimiz bu şekilde şimdi yn için şöyle bir şey yapılmış xn ile vektör olarak u n-u n-2 şimdi o zaman şu u n-u n-2 çözelim önce
+
+151
+00:28:51,987 --> 00:29:01,947
+buraya ne bileyim ve hem diyebiliriz geçişimde şimdi bu en dediğimiz şey biraz önce de konuştuk şöyle bir olan
+
+152
+00:29:01,947 --> 00:29:10,107
+hem sıfır noktasından başlayıp buraya doğru giden bir işaret bu en artık iki eksi iki noktasından
+
+153
+00:29:10,107 --> 00:29:20,827
+başlayacak Bu da şuradan itibaren başlayıp ve ben bu enden bu en artık iki çıkarın şimdi bu enden bu en artık
+
+154
+00:29:20,827 --> 00:29:34,868
+başarmak demek. Öyle bir şey var ki işte 0 noktası şey şurası bu 1111 diye gidiyor. Bu 1111 diye gidiyor.
+
+155
+00:29:34,868 --> 00:29:47,588
+Bunları çıkartırsak ne olacak? Eksi 1, eksi 1, 0000 yani elde edeceğimiz sonuç vn için şunlar tamamen gidecek. Şuradaki değer de gidecek.
+
+156
+00:29:47,588 --> 00:29:54,028
+Şuradaki oluşacak yenilik değerleri de
+
+157
+00:29:58,420 --> 00:30:07,959
+eksi 1 ve eksi 1 olacak. Şimdi ben bununla bunu çarptığım zaman şuradaki değerlerle buradaki değerleri
+
+158
+00:30:07,959 --> 00:30:15,159
+karşılıklı olarak çarpmak demektir. eksi 2 ve eksi 1 dışındaki bir kere bütün değerler sıfır. Onu şuraya çizeyim.
+
+159
+00:30:21,332 --> 00:30:22,611
+Şöyle alalım.
+
+160
+00:30:26,579 --> 00:30:32,699
+Yani şuradaki bütün değerler eksi 2, eksi 1 ondan sonra 0 dahil. Her şey 0. Çarpma yapıyoruz çünkü.
+
+161
+00:30:32,699 --> 00:30:38,699
+eksi 1'deki çarpım nedir? Burada eksi 1 var ama burada 0 var. O da 0 oldu.
+
+162
+00:30:38,699 --> 00:30:47,699
+eksi 2'ye baktığım zaman eksi 2'deki değer 2. Buradaki değer eksi 1 oluyor. Bu ne oluyor? Ters dönüyor.
+
+163
+00:30:47,699 --> 00:30:53,579
+eksi 2'ye karşılık geliyor. Diğer değerler de zaten 0, 0, 0 diye devam ediyor.
+
+164
+00:30:53,579 --> 00:31:12,260
+Dolayısıyla sonucumuz Yn grafiğimizde eksi iki noktasında iki olan, eksi iki olan bir şey olacak. Yani onu vektörel olarak yazmak istersek ne diyeceğiz? Eksi iki, sıfır, sıfır, şurası sıfır noktası değil. Böyle bırakabiliriz.
+
+165
+00:31:12,260 --> 00:31:26,120
+veya doğrudan eksi 2 yazıp indis bilgisini yazarız. Burada genellikle hata şuydu, eksi 2 noktasındaki genliği artı 2, yani şuradaki işlemi yukarıya doğru yazıp,
+
+166
+00:31:26,119 --> 00:31:54,039
+şöyle yapıp dolayısıyla artı iki genlik üreten arkadaşlar vardı. Bir de şurayla şurayı çarpıp artı ikiye artı bir toplama olsa belki buradaki artı bir ortaya çıkar da çarpma olduğu için vektora çarpma bunlar yok olacak. Sadece iki değeri kalacak ve o da şuradaki negatiflikten dolayı eksi iki haline gelecek. Burada soru var mı?
+
+167
+00:31:58,067 --> 00:32:03,227
+x'in işaretinin tek ve çift bileşenlerini hesaplayınız demişiz.
+
+168
+00:32:03,227 --> 00:32:12,147
+O zaman x'in işaretini şuradan bir alalım, eksi bir veya şurayı sileyim, şurada çözelim.
+
+169
+00:32:21,332 --> 00:32:31,332
+Bizim bir kere teklik çiftlikle alakalı işlem yapmamız için xn ile birlikte x-n'i bulmamız ve formüllerde yerine koymamız gerekiyor.
+
+170
+00:32:31,332 --> 00:32:35,332
+xn'i yazalım.
+
+171
+00:32:36,948 --> 00:33:02,427
+eksi 1, 2, 0, 3, eksi 7, 6. Şimdi buna göre x eksen nedir? Şimdi burası sıfırsa, şurası eksi 3, burası artı 2. O zaman bunu ters dediğimizde bu y eksen etrafında dönecektim. Yani artı 2'deki değer eksi 2'ye gelecek, 6.
+
+172
+00:33:02,427 --> 00:33:32,007
+6 bu eksi 7 olarak gelecek eksi 1'e 3 yerinde kalacak 0 2 eksi 1 yalnız buradaki limitler eksi 2'ye artı 3 şeklinde buna dikkat ediyoruz tek fonksiyon ve çift fonksiyonla alakalı formüllerimizi yerine yazalım ve hesaplamaları yapalım vektör olarak toplama ve çıkarma işlemleri var burada şimdi x
+
+173
+00:33:32,427 --> 00:33:44,308
+even n dediğim şey neydi? x n ile artı x eksi n'i karşılıklı olarak toplayacağız. 2'ye böleceğiz.
+
+174
+00:33:45,308 --> 00:33:54,087
+Bunun sonucunda şimdi biz karşılıklı olarak toplarken 6 ile eksi 1'i toplamıyoruz. Genelde bazı hatalar buradaydı.
+
+175
+00:33:54,907 --> 00:34:01,808
+Şimdi eksi 1'in karşılığında ne var? 0 var burada. Eksi 3 diye bir şey. Eksi 1 bölü 2.
+
+176
+00:34:02,427 --> 00:34:08,687
+Ondan sonra, eksi 2'nin karşısında, burada 6 var, burada 2 var, yani 8 bölü 2
+
+177
+00:34:08,687 --> 00:34:13,407
+Burası eksi 1, burası eksi 1, eksi 7 bölü 2
+
+178
+00:34:13,407 --> 00:34:17,427
+3'e 3, 6 bölü 2
+
+179
+00:34:17,427 --> 00:34:24,967
+1'e 1, yani eksi 7 bölü 2, yanlış yapmadıysam
+
+180
+00:34:24,967 --> 00:34:28,267
+6 artı 2, 8 bölü 2
+
+181
+00:34:28,267 --> 00:34:48,787
+şu da eksi 1 bölü 2 olacak. Yani 0.x0.54 falan yazabilirsiniz. Genel olarak bu şekilde. X odd dediğimiz şey neydi? Xn-xn bölü 2.
+
+182
+00:34:48,787 --> 00:34:59,407
+aynı şekilde eksi üçüncü indisten, tabii şu x80, eksi üçüncü indisten karşısındaki sıfırı çıkaracağız.
+
+183
+00:35:00,147 --> 00:35:01,407
+Nedir? Bu eksi bir bölü ikidir.
+
+184
+00:35:03,187 --> 00:35:10,327
+Eksi ikinci indisten bunu çıkartınca iki eksi altı, eksi dört, o da eksi dört bölü iki.
+
+185
+00:35:13,147 --> 00:35:15,847
+Sıfırdan eksi yedi'yi çıkarınca yedi bölü iki.
+
+186
+00:35:15,847 --> 00:35:35,487
+3'den 3'ü çıkarınca 0, eksi 7'den 0'ı çıkarınca eksi 7 bölü 2, 6'dan 2'yi çıkarınca 4 bölü 2, sonra 0'dan eksi 1'i çıkarınca bu da 1 bölü 2.
+
+187
+00:35:36,767 --> 00:35:42,887
+Bunların doğrudan eksi 0.5 falan yazanlar da sıkıntı değil. Bu şekilde de bırakabilirsiniz.
+
+188
+00:35:42,888 --> 00:35:54,888
+Bunlar tek ve çift birleşenlerdir. Sonra Yn işaretinin enerjisini hesaplayın demişiz. Şimdi ayrık zamanlı işareti enerji nasıl hesaplanıyordu?
+
+189
+00:35:54,888 --> 00:36:03,888
+N eşittir sıfır noktasından sonsuza kadar Xn'lerin karelerini alarak hesaplıyorduk.
+
+190
+00:36:03,888 --> 00:36:19,367
+yiyorduk. Pardon, x'n dediğim burada y'n hesaplayacağız. Şimdi bazı arkadaşlar x'n'yi hesaplamışlar. Buradan y'n hesaplanmadığı için x'n hesapladıkları için hesaplamayı bildiklerinden dolayı biraz puan verdim ama tam puan alamadı. Çünkü bizim sorduğumuz şey y'n.
+
+191
+00:36:21,048 --> 00:36:30,908
+y'n'in enerjisini hesaplarken ekisi sonsuzdan başlayacağız ama y'n dediğimiz şey biraz önce neydi? Sadece keşke sildik ama.
+
+192
+00:36:31,476 --> 00:36:40,696
+eksi 2, 0, 0 şu noktada şöyle bir işaretli gelen eksi sonsuzdan eksi 2'ye gelene kadar hep 0, 0'lar var.
+
+193
+00:36:40,696 --> 00:36:51,476
+Sadece eksi 2 noktasında eksi 2'nin karesi var. Bu da eksi 2'nin karesi artı 0, artı 0 diye bir şey. Bu da sonuç ne olacak? 4 Joule olacak.
+
+194
+00:36:51,476 --> 00:36:59,476
+D seçeneğimizin cevabı da bu şekilde.
+
+195
+00:37:01,780 --> 00:37:04,780
+Evet. Var mı sorumuz?
+
+196
+00:37:13,876 --> 00:37:15,876
+son soru
+
+197
+00:37:20,307 --> 00:37:48,488
+Bu tarz bir işaret, periyodik bir işaret var. Eksi birden dörde. Yani yaptığımız örnekleri benziyor. Sadece genlik kısmında bir eksi birine dört şey var, farklılığı var. Temel frekansı belirleyin. İşte DC işaretin frekansını belirleyin demişiz. A maddesi. Sonra DC bir ekşeğini bulunuz. İşte Fourier serisi CK kas sayılarını bulunuz. İşte buradan AK ve BK kas sayılarını elde edin demiş. Sonra frekans spektrogramını,
+
+198
+00:37:48,488 --> 00:37:54,668
+ve spektrumu çizin demiş. Evet şimdi şöyle yapayım bunu da.
+
+199
+00:37:59,188 --> 00:38:07,528
+Bunu yaptıktan sonra bunun sentezini de ödevdeki konuya örnek olsun diye sentezini göstereceğim.
+
+200
+00:38:07,528 --> 00:38:21,267
+Ödevde biliyorsunuz sentez yok sadece sentez edilmiş, analiz edilmiş bir şeyin ödevi, pardon analiz yok. Şu ana kadar soru analizle alakalı. Sentezini de ayrıca yapıp konuşmuş olacağız.
+
+201
+00:38:21,267 --> 00:38:34,268
+işaret periyodik olduğu zaten belli zaten periyodik olarak da söylenmiş periyod bulurken ne yapıyorduk herhangi bir başlangıç noktasından başlayıp
+
+202
+00:38:34,268 --> 00:38:41,268
+bir noktan aynı noktaya aynı değere ulaştığımız nokta bizim periyodumuz oldu şimdi burada baktığımızda
+
+203
+00:38:41,267 --> 00:38:49,967
+şöyle işte sıfırdan başlarsak bu nokta tekrardan 4'te tekrar kendini şey yapalım. O zaman biz burada
+
+204
+00:38:49,967 --> 00:39:02,587
+periyodumuz t eşittir 4 saniye. Periyot bu tek bir tane şey bir kare dalga olduğu için bunun frekansı nedir?
+
+205
+00:39:02,587 --> 00:39:09,807
+f eşittir, bir bölü t, bir bölü t, bu da bir bölü 4, 0.25 hertz'tir.
+
+206
+00:39:12,527 --> 00:39:16,447
+Şey böyle, şimdi DC bileşeni bulmak demek ne demek?
+
+207
+00:39:16,807 --> 00:39:25,227
+A0'ı bulmak demek, istersek dedik ki bunun bir periyot boyunca olan alanını alırız veya işte formül değerini koyarız.
+
+208
+00:39:25,228 --> 00:39:49,647
+bir periyot boyunca olan alanı A0'ı şöyle hesaplayalım. 1 bölü T0 diyorduk. Nereden nereye? İşte 0'dan 4 noktasına. Buna XT, DT diyeceğiz. Bu T0 dediğimiz şey 1 bölü 4 başa geliyor. Şimdi 0'dan 2'ye kadar
+
+209
+00:39:49,647 --> 00:39:58,827
+eksi bir şeklinde davranan bir işaret. Yine 1 bölü 4, 2'den 4'e kadar 4 şeklinde davranıyor 4D'de.
+
+210
+00:39:59,268 --> 00:40:14,427
+Bu integral'e sözümüzde sonucu bulacağız. 1 bölü 4 çarpı, eksi T, 2'den sıfıra artı 1 bölü 4 çarpı, 4T, 4'ten 2'ye.
+
+211
+00:40:14,427 --> 00:40:38,427
+İşte şurada eksi t yerine koyarsak eksi t yani eksi 2 kalacak bu da nedir işte karşı taraf şöyle 1 bölü 4 parantezini alalım eksi 2 eksi 0 yine burası da 1 bölü 4 parantezinde artı 4 köre 4 16 eksi 2 kere 4 8
+
+212
+00:40:38,427 --> 00:40:54,507
+şurası nedir? 8, eksi 2 daha, eksi 6, şey artı 6, 6 bölü 4, bu da 3 bölü 2. DC birleşenimiz, A0 dediğimiz, kas sayımız 3 bölü 2'ymiş.
+
+213
+00:40:56,147 --> 00:40:57,707
+Buraya kadar anlaşılmayan bir şey var mı?
+
+214
+00:41:00,587 --> 00:41:04,987
+Şimdi geldik işin biraz daha uzun tarafına.
+
+215
+00:41:13,172 --> 00:41:23,172
+AKK sayılarımız, hani karmaşık gösterimle, yani hep yaptığımız örnekteki, integral ile bulunduğumuz şey. Önce formülü yazalım.
+
+216
+00:41:23,172 --> 00:41:40,672
+1 bölü T0, bir periyod boyunca, işte sıfırdan T0'a kadar, ne yapacağız? XT işaretimiz çarpı, E üzeri, eksi J, K, burada Omega 0,
+
+217
+00:41:40,672 --> 00:41:57,331
+t, dt diyeceğiz. Şimdi omega 0 t'yi şurada hızlıca bulabiliriz. Omega 0 dediğimiz 2 pi bölü f0'dır. f0 yerine de 1 bölü t'yi getirirsek yani buradan 2 pi bölü 4, buradan pi bölü 2'yi buluruz.
+
+218
+00:41:57,331 --> 00:42:02,192
+Evet formülde yerip yerine yazıyoruz 1 bölü 4
+
+219
+00:42:02,192 --> 00:42:05,791
+İşaret 0'dan 2'ye kadar
+
+220
+00:42:05,791 --> 00:42:09,451
+Eksi 1 şeklinde davranıyor
+
+221
+00:42:09,451 --> 00:42:13,471
+E üzeri eksi J K P bölü 2
+
+222
+00:42:13,471 --> 00:42:15,512
+T D T
+
+223
+00:42:15,512 --> 00:42:18,051
+Yine 1 bölü 4
+
+224
+00:42:18,051 --> 00:42:21,271
+2'den 4'e 4 çarpı
+
+225
+00:42:21,271 --> 00:42:24,131
+E üzeri eksi J K P bölü 2
+
+226
+00:42:24,131 --> 00:42:26,271
+T D T'dir
+
+227
+00:42:26,271 --> 00:42:29,731
+Burada anlaşılmayan bir şey var mı arkadaşlar?
+
+228
+00:42:34,708 --> 00:42:46,708
+İntegralleri çözelim. Allah'tan kolay integraller. 1 bölü 4 yazdık. Parantez açalım.
+
+229
+00:42:46,708 --> 00:43:01,708
+Şu ifadeyi integraline alırsak e üzeri eksi j k pi bölü 2 t aynen yazılıyordu. T'nin önündekiler aşağıya gidiyor. Eksi j k pi bölü 2.
+
+230
+00:43:01,708 --> 00:43:24,767
+Burası nereden nereye? 0'dan 2'ye. Artı 1 bölü 4 açarsak 4 çarpı E üzeri eksi J k pi bölü 2 t bölü eksi J k pi bölü 2. Bu da şunu şöyle yapalım.
+
+231
+00:43:29,684 --> 00:43:53,684
+2'den 4'e. Şimdi şuradaki birazcık temizlik yapmak gerekecek. Şu eksiler birbirini götürür. Başka ne yapabiliriz ilk görmüşte? Yani sınırları yazmadan yapabileceğimiz bir operasyon var mı diye bakıyorum. Mesela şuradaki 4'ler de birbirini götürebilir.
+
+232
+00:43:53,684 --> 00:44:23,224
+bunu da şey yapabiliriz. Şurada aradaki çarpma eksiği gibi görünmesin. Şu eksiği de yukarıya alalım. Yani normal şey görüntün. Şurada da başka bir şey yok. Şurası 1 bölü 4 de gösteriliyor. Ama bir dakika yapmayalım. 1 bölü 4'ün silersek ileride bize zorluk oluşturur. Şimdi o aklıma geldi. Bu böyle dursun şimdilik. Hatta 1 bölü 4'ü ortak parantez yapalım. Kafamızı karıştırmasın.
+
+233
+00:44:23,223 --> 00:44:33,063
+yapalım şöyle yapalım ki daha şey olsun. Bir yerine yazıyoruz arkadaşlar. Nasıl yapsam şurayı alayım isterseniz şöyle bir.
+
+234
+00:44:39,443 --> 00:44:41,443
+kontrol, şey edelim.
+
+235
+00:44:43,443 --> 00:44:45,443
+Şöyle kontrol, vay edelim.
+
+236
+00:44:56,019 --> 00:45:11,019
+var mı bir kaybımız aktarırken? jkp2.4jkp4'den 2'ye hatta fazlalık almışız parça arttırmıyor kaybımız var şurada bir 1 böl 4 olacak.
+
+237
+00:45:12,980 --> 00:45:24,019
+1 bölü 4 şunlar şey 1 bölü 4'ü bir dakika zaten şey parantez almıştık kaybımız yok şimdi yazalım şöyle eşittir diyelim
+
+238
+00:45:24,019 --> 00:45:39,419
+t yerine 2 yazdığımızda ne olur ikiler sadeleşir e üzeri eksi jkpi bölü jkpi bölü 2 bu kadar değil mi
+
+239
+00:45:39,419 --> 00:46:05,079
+eksi sıfır yazdığımızda e üzeri bilmem ne bilmem ne sıfır yani bir bölü jkp bölü 2. Şurası şu parantez. Artı 4 yazdığımızda e üzeri jk2p 4 çarpı e üzeri j eksi jk2p buluruz.
+
+240
+00:46:05,079 --> 00:46:21,899
+bölü, eksi, hatta şu eksiği başa alalım, burası eksi 4 olsun, şimdi eksi 4, jkp bölü 2, şurada jkp bölü 2 var,
+
+241
+00:46:24,480 --> 00:46:34,779
+eksi 2 yazdığımızda, şimdi şu önündeki eksiden dolayı artı diyeceğiz artık buraya, bir dakika, yok şimdi şu eksiği karıştırmayan,
+
+242
+00:46:34,779 --> 00:46:59,919
+kafam karışıyor. Eksi 2 yazdığımızda ikiler sadece 4 çarpı E üzeri eksi j k pi bölü eksi j k pi bölü 2. Şurayı bulacağız. Sağ salim buraya kadar geldik. Şimdi şu eksi şu eksiyle şey olsun götürsün burayı artı yapalım.
+
+243
+00:46:59,919 --> 00:47:12,459
+başka da bir şey görünmüyor. Pekala. Şimdi şu jk pi bölü 2'leri parantezin dışarısına atabilirim. Hatta şurayı da eksi yapalım arkadaşlar artık. Engel değil.
+
+244
+00:47:13,679 --> 00:47:28,239
+jk pi bölü 2'leri parantezin dışına atarsak şuradan devam edeyim. jk burada kalabilir. pi bölü 2'yi de 2'yi yukarı atıp pi'yi burada yazarsam ne olur? jk 2 pi olacaktır şurası.
+
+245
+00:47:28,239 --> 00:47:49,259
+tamam mı? Yani pi bölü 2'nin ikisi yukarıda 1 bölü 2 yaptık. Bu şekilde yazdık. Şimdi şurada ne var? E üzeri eksi jkpi eksi 1 eksi 4 çarpı e üzeri buraya gelince şunu yapalım. E üzeri jk2pi dediğim şey nedir?
+
+246
+00:47:49,259 --> 00:47:59,480
+eksi jk2p bunu kosinus k çarpı 2p eksi j çarpı sinüs k çarpı 2p diye yazabiliriz.
+
+247
+00:47:59,480 --> 00:48:04,920
+Şimdi bu her zaman sıfır olacaktır. Şu kosinus her zaman bir olacaktır.
+
+248
+00:48:06,000 --> 00:48:15,780
+Dolayısıyla burası eksi 4. Şurayı bir yaparsak, doğrudan şunu bir yaparsak,
+
+249
+00:48:15,780 --> 00:48:28,099
+evler açılımı formülü onun için her zaman bize lazım olan bir şey. Eksi 4 var burada. Devam ediyoruz. Şurada da 4 çarpı şöyle yapalım.
+
+250
+00:48:31,160 --> 00:48:44,800
+Artı 4 çarpı E üzeri eksi Jkp var. Şimdi E üzeri eksi Jkp'ler ortak. Burası nedir? 1 bölü Jk 2p.
+
+251
+00:48:45,779 --> 00:49:07,739
+çarpı, 5 çarpı, E üzeri, eksi, J, K, P, eksi, 5 oluyor. Şu J'yi de, kurtarmak, faydadan kurtarmak için J ile çarparsak, ne olur? J bölü, çünkü bu işimize yarayacak birazdan.
+
+252
+00:49:08,436 --> 00:49:27,936
+j bölü, aşağısı eksi, eksiği de içeriye dağıtalım. 2k pi diyelim şuraya. içeriye dağıtığımızda 5-5 üzeri eksi kpi. bu ifade buluruz.
+
+253
+00:49:27,936 --> 00:49:40,695
+gelin 5'i de dışarıya atalım. 5'ye bölü 2KP bölü 1-1 üzeri-JKP. Şimdi şu JKP'nin
+
+254
+00:49:40,695 --> 00:49:51,235
+bir dakika burada E var arkadaşlar şu E'yi unuttuk. Yani doğrudan bir değil de E diyeceğiz.
+
+255
+00:49:51,815 --> 00:49:56,995
+E üzeri JKP'nin iki türlü davranış gösterdiğini geçenlerde konuşmuştuk. Onu şurada yazayım.
+
+256
+00:49:57,936 --> 00:50:14,796
+E üzeri J, K, Pi. Bu K'nın çift değerlerinde 2P falan olacak. Tek değerlerinde işte 1P, 3P gibi bir şey olacak. O zaman bu eksi 1 üzeri K şeklinde yazılabilir.
+
+257
+00:50:14,796 --> 00:50:24,556
+1, bunu da 5'liği bölü 2KP paranda 1-1 üzeri K haline yani bir tek bir çift olacak şekilde yazacağız.
+
+258
+00:50:25,755 --> 00:50:27,275
+Şu kısmı alıyorum.
+
+259
+00:50:31,699 --> 00:50:32,380
+Ctrl G.
+
+260
+00:50:41,364 --> 00:50:51,683
+gruplandır diyelim. Şimdi bu K'nın çift değerleri ve tek değerleri için bir sonuç gösteriyor. O zaman bizim CK
+
+261
+00:50:51,683 --> 00:51:00,124
+kas sayılarımız nasıl olacak? Bir kere K eşittir sıfırken 3 bölü 2'yi bulduk. K evenken ve K oldukken,
+
+262
+00:51:00,124 --> 00:51:09,743
+tabii K evenken K 0'ı dahil etmeyeceğiz. K oldukken nasıl davranacak? Şimdi K evenken burası artı bir
+
+263
+00:51:09,743 --> 00:51:35,904
+sonuçları verecek. 1-1, 0. Doğruysa even, 0 oluyor. Zaten bu işaret tek bir fonksiyon olduğu için çift birleşeni yani kosmüstü birleşeni olmayacaktır diye konuşmuştuk sizlerle. Burası 0. K, otken, burası 2 oluyor. İkiler sadeleşince ne olacak? 5 bölü, onun 5'ye bölü, K, pi. Tabii bütün değerler K, pi şeklinde devam edecektir.
+
+264
+00:51:35,903 --> 00:51:56,543
+O zaman biz ck kas sayılarımızı bu şekilde bulduk. Şimdi buradan ak'ları ve bk'ları bulalım demişiz. ak dediğimiz şey kosünüstü olanlarda zaten doğrudan sıfır. bk dediğimiz şeyde sinüstü olanlar bu da neydi? eksi 2 çarpı imajineri kısımdı. imajineri ck demiştik.
+
+265
+00:51:56,544 --> 00:51:58,783
+şöyle.
+
+266
+00:52:00,783 --> 00:52:01,844
+Eksi 2 ile.
+
+267
+00:52:02,944 --> 00:52:05,984
+Imagineri Jk'yı çarparsak ne oluyor?
+
+268
+00:52:06,063 --> 00:52:12,444
+Eksi 5 bölü Kp şeklinde J'yi dışarıya atacak şekilde bir şey yapacağız.
+
+269
+00:52:12,624 --> 00:52:13,624
+Normalde bunlar bu.
+
+270
+00:52:15,024 --> 00:52:17,203
+Bakalım başka burada soruda ne varmış.
+
+271
+00:52:18,724 --> 00:52:18,923
+Evet.
+
+272
+00:52:19,463 --> 00:52:23,843
+Tabi burada ben direkt A1, A2, A3 derim demişim.
+
+273
+00:52:24,304 --> 00:52:24,524
+Pardon.
+
+274
+00:52:24,523 --> 00:52:47,123
+geçen burada B1, B2, B3, şuradaki C'ler karışmış ama sıkıntı değil. A1, A2, A3'ü çizmeye çalıştık zaten 0 olacak. Frekans spektronunu çizmeye çalışırsak, şimdi süremiz gelmiş, geldikten sonra şunu kullanarak, eksi 5 bölü Kp'leri kullanarak biz temel frekansa göre, şöyle yapayım yanlış yaptım,
+
+275
+00:52:47,123 --> 00:53:11,804
+buradaki frekans genlik değişimini çizeceğiz. Mesela F0'da ne var? Doğrudan 3 bölü 2 var. F1 diye bir şey olacak. İşte orayı göreceğiz. Bu temel frekansa göre değişen şeydi. Şuraları doldurup frekans spektronunu çizeceğiz. Ara verelim. Saat 5'te görüşmek üzere.
+
+276
+01:04:49,523 --> 01:04:51,523
+Evet arkadaşlar
+
+277
+01:04:56,052 --> 01:04:57,052
+devam edelim.
+
+278
+01:05:00,148 --> 01:05:04,508
+İlk 3 frekans spektronunu çizliyor soruda.
+
+279
+01:05:05,787 --> 01:05:07,567
+Bir daha okuyayım.
+
+280
+01:05:17,780 --> 01:05:32,780
+A1, A2, A3. Şimdi birinci frekans spektrum tabi de artı eksi demiş. Çünkü bu karşılıklıydı. Kompleks eşlenikten dolayı. Şimdi K1 için yerine yazarsak
+
+281
+01:05:32,780 --> 01:05:45,979
+A1 değerimiz ne olacak? Eksi 5 bölü pi olacak. K-1 için A-1 diyelim. Artı 5 bölü pi elde edeceğiz.
+
+282
+01:05:45,979 --> 01:05:59,119
+değil mi? Bu işaretler bizim işareti sentezlerken kullanacağımız önemli kas sayılar. Şimdi K2 için baktığımızda
+
+283
+01:05:59,119 --> 01:06:08,780
+şimdi 2'de çift bir sayı olduğu için CK kas sayılarımız şuradaki durumda 0 gelecek. O zaman
+
+284
+01:06:08,780 --> 01:06:28,559
+A2 eşittir, A-2, bunlar sıfır olacaklar. K3 için baktığımızda, A3 dediğimiz sayı, 5'yi bölü, 3'yi, ötekisi de A-3,
+
+285
+01:06:28,559 --> 01:06:31,239
+ah ya da matam
+
+286
+01:06:37,076 --> 01:06:59,275
+eksi 5'yi bölü 3.1. Bunları yerine koyduğumuzda, şimdi temel frekansımız kaçtı? 0.25. O zaman bu 0.25'in kendisi bu iki katı 0.5 bu üç katı 0.75. Böyle devam edip gidiyor. Bu da negatif frekanslar.
+
+287
+01:06:59,275 --> 01:07:22,955
+eksi 0.25, eksi 0.5, eksi 0.75. Şimdi birinci Fourier kasem zaten A03 bölü 2. Şurada eksi 5 bölü piilik, burada da 5 bölü piilik bir şey var. Bu bundan biraz daha küçük olacak. Niye? Eksi 5 bölü 3 pi kadar.
+
+288
+01:07:22,955 --> 01:07:31,955
+şu da bundan şey zaten frekans spektrumda frekans arttıkça genlik ümitasyona sönümleniyordu. Sonsuz da 0 oluyordu.
+
+289
+01:07:33,535 --> 01:07:40,055
+Artı 5 bölü 3P. Pardon yanlış çizdik burası 0 olacak bunu 3. yazacaktık arkadaşlar.
+
+290
+01:07:41,895 --> 01:07:44,555
+Çünkü A2 kaslerimiz burası 0.
+
+291
+01:07:44,555 --> 01:07:57,135
+A3'te şurada, eksi 5 bölü 3P, şurada da 5 bölü 3P şeklinde frekans kültürümüz görülecek.
+
+292
+01:07:58,355 --> 01:08:00,735
+Bu sorumuzun çözümü de bu şekildeydi.
+
+293
+01:08:02,875 --> 01:08:04,475
+Burada herhangi bir soru var mı?
+
+294
+01:08:06,675 --> 01:08:09,615
+Hocam burada değil de bir önceki sayfada bir yeri anlamadım.
+
+295
+01:08:10,335 --> 01:08:10,995
+Bakayım.
+
+296
+01:08:14,612 --> 01:08:42,811
+Evet. Bu sol altta J'yi yukarı atıyoruz. Oradan sonrasını tam anlamadım. Yani nasıl yukarı atıyoruz? Şuradaki şunu diyorsun değil mi? J yukarıya gitti. Şimdi A bölü İ gibi bir şeyi kompleks sayıdan parmağı, şeyden kurtulmamak için payı ve paydayı İ ile çarparsak İ çarpı İ nedir? Eksi birdir. Yukarıda da A çarpı İ kalır. Eksi A İ sonucunu elde ederiz. Tamam mı? Aşağıya ve yukarıya J ile çarpınca yukarıda J kalıyor.
+
+297
+01:08:42,811 --> 01:09:06,731
+aşağısı da ne oluyor? J çarpıcıya eksi bir. Bu eksiği de şu içeriye dağıtıyoruz. 5 eksi 5 üzeri işte jkp, eksi jkp kalıyor. Tamam mı? Tamam, anlamadım. Devamı aynı şeyler. Peki biz arkadaşlar, şu ifadeden sinizoidal işaretin birleşenlerini yazmak istesek.
+
+298
+01:09:06,731 --> 01:09:16,851
+Fourier ile alakalı slide'mızda bu grafikten sinizoidal işaretim yani işareti sinüs ve kosünüsler şeklinde nasıl yazacağımızı görmüştük.
+
+299
+01:09:18,292 --> 01:09:19,972
+Artık sentez yapabilir miyiz?
+
+300
+01:09:21,271 --> 01:09:24,771
+Derdimiz bu bir saniye. Şurada bir noktalarıma bakıyoruz.
+
+301
+01:09:25,871 --> 01:09:26,811
+Unuttuğum bir şey var mı?
+
+302
+01:09:28,951 --> 01:09:30,891
+Bir dakika bekleteceğim size.
+
+303
+01:09:43,988 --> 01:09:57,287
+buradaki faz bilgisinden söz etmedik. Tabii faz bilgisi, sinüsleri, sinüsleri, cos şeklinde pi bölü 2 ekleyerek çıkarabiliriz ama şimdi bir cos işareti
+
+304
+01:09:57,287 --> 01:10:12,887
+a çarpı cos 2pi ft artı şöyle bir işaretti değil mi? Bizim amacımız bunları işte birden sonsuza a i çarpı cos 2pi fi fi şeklinde yazıp asıl işareti elde etmek olacak.
+
+305
+01:10:12,887 --> 01:10:42,168
+dalga formunu. Bu normalde sınava dahil değil. Sentez adına bunu yapıyoruz. Şimdi ağlarımız şuradaki eksi 5 bölü pi'ler. Frekanslarımız şurada. Faz bir ikisinde eğer bunu kosünüs şeklinde yazacaksak doğrudan pi bölü 2 şeklinde yazarız. Elde edebiliriz. O zaman şunları, şuradaki değerlerimizi ne yapacağız? Kullanacağız. Şimdi bu işareti iki tane bileşen olduğu için bir pi bölü 5 bölü pi var.
+
+306
+01:10:42,168 --> 01:11:11,788
+bir de eksi beş bölümü var. Şu formülü hatırlayalım. Nereye yazayım onu? Şuraya yazayım. Şurada yazalım. Çünkü frekans spektrumda eksi frekanslardan da bahsedelim. E üzeri J omega. Neydi? Kosünüs omega artı J sinüs omega. E üzeri eksi J omega. Kosünüs omega eksi J sinüs omega. Bu omegaların ne olduğu dönemde J'nin yanında herhangi bir şey olabilir.
+
+307
+01:11:11,787 --> 01:11:27,687
+Omega bilmem ne bilmem ne olabilir. Önemli olan J ve yanındaki bir şey. Peki biz burada kosünüs Omega'yı çekersek ne olur? E üzeri J Omega eksi pardon artı E üzeri eksi J Omega bölü 2'yi buluruz. Taraf tarafa toplarsak şunlar gider.
+
+308
+01:11:27,687 --> 01:11:54,868
+Şimdi şurada yapılan ifade bir tane bir şeyli bir şey var. Tabi burada E yok. 5 bölü P bu bir faz. Bu da 5 bölü xP ve şurada frekans bileşimini var. Yani buradan 2 ile çarparsak bunları 10 bölü P gibi bir genlik değeri elde edeceğiz. Frekanslar zaten var. Faz bu ikisini de P bölü 2 yapacağız. O zaman şu genlik bilgilerinin iki katını alacağız.
+
+309
+01:11:54,867 --> 01:12:00,667
+Peki gelelim bunu mektepte yapmaya çalışalım
+
+310
+01:12:00,667 --> 01:12:03,547
+Restart diyelim
+
+311
+01:12:24,819 --> 01:12:33,700
+Evet, şimdi şöyle script açacağım arkadaşlar. Script'in sonucunu da şurada plot olarak görelim diye yapıyorum. Önce bir clear yapalım.
+
+312
+01:12:33,700 --> 01:12:43,299
+Fazla denemeler yapacağız. Bir de CLC diyelim, değişkenlerin hepsinin değerleri iyisin. Bizim bir temel frekansımız var. F0, buna F diyorum.
+
+313
+01:12:43,299 --> 01:12:53,859
+Bu nedir? 0.25. 0.25'in katları şeklindesiniz. Oydan işaretler olacak. Bir tane Y değişkenimiz var. Bu başlangıçta 3 bölü 2,
+
+314
+01:12:53,859 --> 01:13:21,299
+bir buçukla başlatabiliriz. Çünkü bir buçuğa ekleyeceğiz. A0 kas sayımız. Başka, şimdi bir T değişkenimiz olacak. Çünkü biz burada artık T düzlemindeki şeye bakacağız. T'yi şöyle yazıyorum. Sıfırdan başlayalım. T sıfırdan başlasın. Şöyle yanlış yaptım. Bir bölü şey kadar artsın. Örnekleme frekansı bu kadar artsın.
+
+315
+01:13:21,299 --> 01:13:26,660
+diyorum ki bir bölü fs kadar art pardon f kadar
+
+316
+01:13:26,660 --> 01:13:33,180
+gerçi burada örnekleme frekansını ayrıca versek
+
+317
+01:13:33,180 --> 01:13:38,779
+evet daha şey görelim şuraya fs tanımlayayım arkadaşlar bir tane fs eşittir 100 diyelim yani
+
+318
+01:13:38,779 --> 01:13:46,059
+her yüzümde saniyede bir şey olsun bir bölü fs kadar arttırıyorum şey biraz daha detaylı olsun
+
+319
+01:13:46,059 --> 01:13:49,239
+mesela burada da diyelim ki
+
+320
+01:13:49,239 --> 01:14:03,319
+birden mesela beşe kadar olan şeye bakalım. Beş eksi bir bölü efese kadar git. Sonuç noktamız da şurası olsun. Şurayı da şöyle parantez içerisine alayım.
+
+321
+01:14:08,180 --> 01:14:18,919
+Sonuçta işaretin içerisinde bir T değeri olacak. Şimdi for döngüsüyle ben birden fazla işaret toplayacağım. Yani kosünüs bir tane değil de iki üç tane falan olsun.
+
+322
+01:14:19,239 --> 01:14:48,999
+Şimdi mesela V diyorum değişkin olarak V eşittir. Şimdi bize çift birleşenler lazım değil. O zaman ikişer ikişer arası. Çünkü çift birleşenler sıfırdı. Mesela beşe kadar. Oradan yüzü böyle yazıyor. Şimdi bir x işareti oluşturacağım burada. Bu x işaretini oluşturup yeğenin üzerine ekleyeceğim. İstediğim şey şuradaki her bir harmoni. Harmonik birleşenler. Bunlar nasıl iş oluyor? On bölü kpi şeklinde.
+
+323
+01:14:48,999 --> 01:15:11,879
+10 bölü 1 pi, 10 bölü 3 pi şeklinde yani 10 bölü V çarpı pi yazabiliriz. O zaman şöyle diyelim. 10 bölü V çarpı pi kadar bir genliğimiz var. Bu genliğe çarpı diyoruz bir kosünüs işareti olacağı için.
+
+324
+01:15:11,879 --> 01:15:33,819
+Kosyuns işaretinin aynı şeyini yazacağız. 2 çarpı, P çarpı, frekansımız nasıl değişiyor? Temel frekansın katları kadar. F çarpı, V kadar. Şuradaki V kadar değişecek. İşte 1, F, 3, F şeklinde değişecek. Çarpı, T bizim zaman düzlemindeki gösterebileceğimiz şey.
+
+325
+01:15:33,819 --> 01:15:51,239
+Şimdi buna bir faz eklersek, fazı birazdan kaldırırız ama faz eklediğimiz şey görürsün. X değişkenimiz bu şekilde. Y'ye Y artı X diye bir şey ekliyorum.
+
+326
+01:15:51,239 --> 01:16:01,859
+nihayet sonucum bu olacak. Şimdi geldim, plot diyeceğim, Y'yi çizdirelim. Şimdi Y'yi çizerken, Y bir vektör olduğu için arkadaşlar,
+
+327
+01:16:03,019 --> 01:16:14,059
+Y'nin boyutu kadar T ekseni oluşturur, işte birden N'e kadar, Y'nin uzunluğu neyse. Bunu önce bir görelim, daha sonra bunu T'ye göre çizdirmemiz gerektiğini göreceğiz.
+
+328
+01:16:14,059 --> 01:16:16,659
+Önce Run diyorum
+
+329
+01:16:22,676 --> 01:16:23,676
+santes dilerim.
+
+330
+01:16:34,131 --> 01:16:40,831
+bakın, eksi bir ile artı dört aralığında, şu an kaç tane frekans birleşenimiz var burada?
+
+331
+01:16:42,171 --> 01:16:44,131
+kaç sinzoydar birleşen var?
+
+332
+01:16:46,771 --> 01:16:47,491
+sayıca
+
+333
+01:16:47,491 --> 01:16:50,211
+üç tane hocam
+
+334
+01:16:50,211 --> 01:16:57,791
+evet, ben bunu daha da arttırırsam, mesela beş değil de on beşe kadar dersem
+
+335
+01:16:57,791 --> 01:17:11,111
+Dikkat edin şurası Y'nin uzunluğu 500'müş halbuki biz zaman ekserinde sınavda 0, 2, 4 diye bir şey görüyorduk değil mi? O zaman ben bunu T'ye göre çizdirmek istiyorum arkadaşlar T'ye bir şey
+
+336
+01:17:13,111 --> 01:17:16,571
+Ve şunu da 15 yaptım şu an
+
+337
+01:17:16,571 --> 01:17:23,352
+Bakın 0'dan 2'ye kadar eksi 1 civarında 2'den 4'e kadar artı 4 civarında bir şey
+
+338
+01:17:23,351 --> 01:17:28,111
+Şunu biraz daha arttıralım. 15 değil de 155 yapalım bakalım ne olacak.
+
+339
+01:17:31,311 --> 01:17:37,751
+Kare dalgaya çok çok yakın, işte şunlara da cips fenomen demiştik hatırlarsanız, bir sonuç elde ettim.
+
+340
+01:17:39,071 --> 01:17:40,051
+Anlaşılmayan bir şey var mı?
+
+341
+01:17:43,131 --> 01:17:49,291
+İşte sizin sınavda yapacağınız şey de böyle bir kosünüs işaretini oradaki verilen tablodaki değerlere göre.
+
+342
+01:17:49,291 --> 01:18:00,291
+eğer genlik değeriniz yani şurası sıfırsa zaten onu yazmanıza gerek yok. Frekansı, faz bilgisini bir araya getirip bir kosünüsü oluşturup oradaki nihai değişkeni toplamak şeklinde olacak.
+
+343
+01:18:02,291 --> 01:18:03,571
+Herhangi bir soru var mı?
+
+344
+01:18:04,451 --> 01:18:06,371
+Hocam ödevde bu şekilde forla mı yapacağız?
+
+345
+01:18:07,251 --> 01:18:13,211
+Tabii yani isterseniz forla yapabilirsiniz ama sonuçta orada 5-6 tane şey olduğu için sonuçta normal değişkeni de yapabilirsiniz.
+
+346
+01:18:13,811 --> 01:18:14,631
+Tamam hocam sağ olun.
+
+347
+01:18:14,631 --> 01:18:17,171
+Birazcık o şeyi arttırır sadece.
+
+348
+01:18:19,291 --> 01:18:48,131
+Bakın bu sonucu görerek şuradaki yaptığımız analizin şu işlemin doğru olduğunu kanıtlayabiliyoruz. Yani orijinal dalgaya yakın bir şey, işareti yakın bir şey elde ettik. Mesela bunu 5 değil de mesela ne bileyim 15 falan yapalım. Ne olacak? Şurada göreceğimiz şey sayısı artacak.
+
+349
+01:18:48,131 --> 01:18:52,331
+ve ikişer ikişer gittiğini göreceğiz.
+
+350
+01:18:52,331 --> 01:19:00,131
+Tabii grafiği biraz daha netleştirirsek, yakınlaştırırsak zaman ekseninde diğer değerleri de çok rahat görebiliriz.
+
+351
+01:19:03,699 --> 01:19:13,699
+Şimdi bilgisayarcı açısından bize burada ne önemli? Örneğin bir ses analizi yapacağız. Ses tanıma uygulaması. İleride paternalik okunu için dersi falan alırsanız makine öğrenmesinde.
+
+352
+01:19:13,699 --> 01:19:27,699
+Sesin kendisine ait frekans bileşenleri örneğin işte notalar üzerinde veya harfler üzerinde, ondan sonra kelimeler üzerinde, kişinin yorgunluğu üzerinde, duygusu üzerinde frekans bilgisi ve şügenlik bilgisi değişkenlik gösterir.
+
+353
+01:19:27,699 --> 01:19:56,939
+işte bu bir parmak izi uygulaması aslında biyometri. Siz herhangi bir veri üzerinde yaptığınız şu analizi bu şekle getirip buradan frekans ve genlik analizi yaparsanız yani şuradaki şeklinde işte yorgun durumdaki genlik frekans durumu bu bir tablo işte ne bileyim dinç durumda şu veya işte do notasında böyle fa notasında şu şekilde gibi o zaman bir ayırt edici özellik çıkartıyorsunuz.
+
+354
+01:19:56,939 --> 01:20:07,139
+elinizdeki ham veriden bu ayırt edici özellikleri de kullanarak işte her türlü uygulamaya hazır hale getiriyorsunuz ses tarzı uygulamalarda.
+
+355
+01:20:09,319 --> 01:20:13,780
+Bu görüntü işlemede de var farklı şeyde tabi orada iki boyutlu burada da var.
+
+356
+01:20:17,268 --> 01:20:24,447
+sorunuz yoksa Fourier transform ile alakalı konuya devam edeceğim.
+
+357
+01:20:25,228 --> 01:20:27,707
+Hocam ödevde bunun ses halini istemiyorsunuz değil mi?
+
+358
+01:20:27,887 --> 01:20:32,167
+Çok güzel hatırlattın. Ses halini şöyle yazmanızı istiyorum.
+
+359
+01:20:33,948 --> 01:20:37,567
+Şimdi bir Y'yi oluşturduktan sonra o çok kolay.
+
+360
+01:20:39,567 --> 01:20:41,227
+Im sound galiba.
+
+361
+01:20:43,727 --> 01:20:45,927
+Veya sound mü ya?
+
+362
+01:20:45,927 --> 01:21:13,647
+bir fonksiyon var. Herhangi bir vektörün sese dönüştü yani ses üretiyor. Eğer datayı verirseniz örnekleme frekansı vermeden veya bir örnekleme frekansı verirsiniz şöyle bir şey yapıyor. Bizim herhangi bir sinzoydan işaret oluşturalım şurada. Onun sesini dinleyelim. Onun için şurada önce share sound yapacağım. Mesela
+
+363
+01:21:18,612 --> 01:21:20,612
+x eşittir
+
+364
+01:21:22,612 --> 01:21:26,612
+10 çarpı
+
+365
+01:21:27,956 --> 01:21:47,956
+Burayı kapatayım arkadaşlar, şurada yapalım onu. x eşittir, 10 çarpı kosünüs 2 çarpı pi çarpı. İnsan kulağı 10 kHz, 20 kHz'e kadar duyuyordu.
+
+366
+01:21:49,811 --> 01:22:04,211
+çarpı, tabi bir T tanımlayacağız, onu unuttuk. Şöyle alalım. T eşittir sıfırdan başlasın, 0.01 kadar gitsin ona kadar.
+
+367
+01:22:04,211 --> 01:22:20,051
+bir çarpı yani bir kilo herstik bir sinyal şöyle bir sinyal olsun o çizdirelim bakalım doğru bir şey elde ettik mi
+
+368
+01:22:24,692 --> 01:22:26,692
+Niye olmuyor ya bazen?
+
+369
+01:22:28,692 --> 01:22:33,692
+Hocam x1 yapsın mı? x2 yapsın mı? x1 mi?
+
+370
+01:22:34,692 --> 01:22:37,692
+Biraz önceki şeyden mi? Hocam ben de
+
+371
+01:22:38,692 --> 01:22:41,692
+Bilmiyorum da ben direkt düz x yapınca böyle hata ölebilirim dedim.
+
+372
+01:22:42,692 --> 01:22:44,692
+Sonra x2 yadlandırınca
+
+373
+01:22:45,692 --> 01:22:48,692
+Şunu 10 ile çarpalım. Hani nokta çarpı diyebiliriz.
+
+374
+01:22:48,692 --> 01:22:56,692
+acaba şey başka bir değişkenle mi karışıyor? X1.
+
+375
+01:23:07,315 --> 01:23:11,315
+t dediğimiz şey, sonuçta şöyle workspace'e bir bakayım.
+
+376
+01:23:13,315 --> 01:23:16,315
+On linear space dokunulabilir stage.
+
+377
+01:23:17,315 --> 01:23:21,315
+Yani bu t bu şekilde artık gidecek. Ve bunun
+
+378
+01:23:22,315 --> 01:23:26,315
+Acaba şurada nokta t demek
+
+379
+01:23:27,315 --> 01:23:31,315
+iki çarpı pi çarpı bin çarpı nokta t desek
+
+380
+01:23:32,315 --> 01:23:35,315
+Tabii şey yazdık, t nokta değil.
+
+381
+01:23:41,908 --> 01:23:43,107
+Oradan x1 diyelim.
+
+382
+01:23:52,243 --> 01:23:58,463
+bunu bir de doğrudan ona şey yaptı, fit etti. Yani sıfırdan ona bir fluctuation olmadı.
+
+383
+01:24:01,908 --> 01:24:12,408
+her zaman çizdirdiğimiz sinyalı çizememek şu an çok önemli. Şöyle diyelim.
+
+384
+01:24:15,028 --> 01:24:17,847
+belki bir şey vardır.
+
+385
+01:24:21,332 --> 01:24:29,332
+vardır. Mesela şunu alayım, kopyalım.
+
+386
+01:24:35,572 --> 01:24:37,572
+Onunla çarpıyorum arkadaşlar.
+
+387
+01:24:45,524 --> 01:24:47,524
+Bunsharba
+
+388
+01:24:54,676 --> 01:25:00,795
+o zamanlar sıkışıyor. Şimdi Sound y dediğimizde
+
+389
+01:25:00,795 --> 01:25:15,235
+browser'ın izin vermediğini söylüyor.
+
+390
+01:25:17,716 --> 01:25:21,716
+Online mektepte çalışınca böyle bazen dezavantajlar var.
+
+391
+01:25:26,003 --> 01:25:33,003
+yapmaya şuna ön çarpı diyelim.
+
+392
+01:25:36,627 --> 01:25:37,627
+yerine
+
+393
+01:25:46,452 --> 01:25:55,631
+browserla Google Chrome diyor işte yani. Neyse, yani bunu lokalinizde kendiniz, ben şu an Opera kullandığım için muhtemelen ondan çalışmıyor.
+
+394
+01:25:55,631 --> 01:26:09,311
+Eğer burada doğrudan y verseniz default olarak bir örnekleme frekansı kullanıyor. İsterseniz kendiniz sound y, işte 22.050 veya 44.100 gibi bir değer verip şeyi bulsunuz.
+
+395
+01:26:09,311 --> 01:26:21,312
+ve bu sinuzoyları çizdiğinizde bir ip diye bir şey hani duyma testi diye bir şey var. Bakayım o neredeydi? Bir saniye bir şey yapacağım arkadaşlar.
+
+396
+01:26:31,988 --> 01:26:33,007
+meteste, evet.
+
+397
+01:26:35,307 --> 01:26:36,587
+Şimdi bu
+
+398
+01:26:38,127 --> 01:26:41,208
+bir aralıktan başlayıp sonra devam edip gidiyor.
+
+399
+01:26:43,767 --> 01:26:45,047
+bakalım kim var?
+
+400
+01:26:49,140 --> 01:26:56,140
+Test size, için ikinci olarak aynı şey. Önce geç onu bize tanıtma ya.
+
+401
+01:27:00,020 --> 01:27:05,319
+bir yerde başlamıştı aslında. Kulaklarınız kaç yaşında?
+
+402
+01:27:05,319 --> 01:27:07,679
+Biz insanlar yaşlandıkça
+
+403
+01:27:07,679 --> 01:27:08,360
+jemz
+
+404
+01:27:08,360 --> 01:27:11,219
+duyabileceksiniz
+
+405
+01:27:27,539 --> 01:27:28,539
+Ben bunu duyamadım.
+
+406
+01:27:28,539 --> 01:27:32,539
+Eğer tüm bu frekansları duyabildiyseniz...
+
+407
+01:27:32,539 --> 01:27:35,539
+Son ikisini ben duyamadım. Duyabilen var mı son ikisini?
+
+408
+01:27:40,307 --> 01:27:55,307
+Bunu Vali Hoca'ya söylesek herhalde tribe depresyona girerdi. Evet, burada yapılan işlem arkadaşlar farklı frekanslarda sinzoidal dalga göndermek.
+
+409
+01:27:55,307 --> 01:27:57,307
+Herhalde benim aradım şu.
+
+410
+01:27:57,307 --> 01:28:03,307
+Kanalı da kulakları duyuyor. Buyurun test edin.
+
+411
+01:28:03,307 --> 01:28:11,068
+takip edelim, chatten bir şey. Ben hepsini duydum Fatma Nur, Nasır, o zaman hep gençsiniz.
+
+412
+01:28:23,252 --> 01:28:28,111
+Bu çizilen şey, bu dalga arkadaşlar, siz de öyle dalgal alalım, dikkat edin.
+
+413
+01:29:53,971 --> 01:30:12,671
+Nasır, mevzu rahatsız olmak değil. Aslında bu ses aralığını çoğu kişi yani en düşükten en yükseğe duyabiliyorsan rahat demeksin. Yani iyi bir sağlıklısın demektir. Şimdi audiometri testleri de bu şekilde yapılıyor. Belli bir frekanstan başlayıp size Sinyozylar dalgaşı yaparlar. Hastanelerde vardır.
+
+414
+01:30:12,671 --> 01:30:24,051
+YouTube ona bilmiyorum kaçı destekliyor ama bu gören aralık, sinuzoylar aralık birçok yerde en azından duyma işitme testlerinde yapılan bir şey.
+
+415
+01:30:25,951 --> 01:30:31,251
+Frekansın arttığında dikkat ederseniz bakın dalga formunun belirsiz hale geldi.
+
+416
+01:30:31,351 --> 01:30:35,471
+Yani o sıklık iyice azalıyor, periyot iyice küçülüyor demektir.
+
+417
+01:30:35,471 --> 01:30:37,311
+Onu görebilirsiniz arkadaşlar.
+
+418
+01:30:38,051 --> 01:30:40,051
+Ama bunların hepsi sinuzoylar işaret.
+
+419
+01:30:40,051 --> 01:30:50,251
+O duyduğumuz çirkin ses de sinüs işaretinin şurada biraz önceki yaptığım şekilde ses formatına dönüştürülmesi.
+
+420
+01:30:51,131 --> 01:30:56,531
+İki tane ses toplayın, iki tane kosinüs şeyi toplayın, nota elde edersiniz.
+
+421
+01:30:56,531 --> 01:31:01,031
+Mesela geçenlerde C6 notasından bahsetmiştim, onun frekans bileşenlerine bakın mesela.
+
+422
+01:31:02,291 --> 01:31:04,031
+O notayı sentezleyebilirsiniz.
+
+423
+01:31:05,091 --> 01:31:08,411
+İşte neredeydi? Music Information Retrieval şuradan.
+
+424
+01:31:14,579 --> 01:31:16,579
+al diyor.
+
+425
+01:31:22,707 --> 01:31:34,647
+1047 her şunu seslendirirsek basit bir siz orada işaret ama bu 1047 ye
+
+426
+01:31:34,647 --> 01:31:45,808
+bu o boy şeklinde seslendirmek istediği 1047 şurada 2000 küsürlerde şurada birkaç tane frekans
+
+427
+01:31:45,808 --> 01:31:54,268
+bir deşene eklerseniz çıkacak ses de buna şeydir yani bunu yapay olarak taklit edebiliyorsunuz
+
+428
+01:31:54,268 --> 01:32:00,807
+onun için insan sesi dahil bir yere kadar yapay olarak taklit edilebiliyor bununla alakalı bilimsel
+
+429
+01:32:00,807 --> 01:32:08,007
+çalışmalar var Hatta su bu fikir ama de zehirlenme dir ben konuşuyorum aranızdan herhangi bir ses
+
+430
+01:32:08,007 --> 01:32:14,648
+duyuluyor yani ben normal söylüyorum ama orada bir dönüşüm var çıkan ses başkasının sesi oradadır
+
+431
+01:32:14,647 --> 01:32:24,847
+matematik operasyonda bu işlemler yapılabilir Evet sorunuz yoksa sorularla alakalı sınav
+
+432
+01:32:24,847 --> 01:32:34,047
+puanınız alakalı dediğim gibi itiraz varsa bugün şey yok yanımda bilgisayarım yok soruların
+
+433
+01:32:34,047 --> 01:32:35,807
+bilgisayarım yok. Diğer bilgisayarım var.
+
+434
+01:32:36,767 --> 01:32:37,887
+13. cumartesi
+
+435
+01:32:37,887 --> 01:32:38,327
+günü bakalım.
+
+436
+01:32:39,747 --> 01:32:40,807
+Hocam bir şey sorabilir miyim?
+
+437
+01:32:42,787 --> 01:32:44,027
+Hocam siz şimdi
+
+438
+01:32:44,027 --> 01:32:45,667
+ses dosyasını da istiyorsunuz değil mi?
+
+439
+01:32:46,347 --> 01:32:47,607
+Ses dosyasını değil.
+
+440
+01:32:47,607 --> 01:32:48,987
+Yani kodun içerisinde
+
+441
+01:32:48,987 --> 01:32:50,947
+sound yazmanız yeterli.
+
+442
+01:32:51,007 --> 01:32:53,227
+Sadece tek bir rapor göndereceksiniz.
+
+443
+01:32:53,447 --> 01:32:54,227
+Ekstra bir şey gerek.
+
+444
+01:32:54,747 --> 01:32:56,647
+O komut zorunlu mu?
+
+445
+01:32:57,527 --> 01:32:58,487
+Zorunlu değil.
+
+446
+01:32:59,127 --> 01:33:00,707
+PDP'de göremedim de.
+
+447
+01:33:01,367 --> 01:33:01,867
+Zorun değil.
+
+448
+01:33:02,387 --> 01:33:03,907
+Yani onu duymak istiyorsanız
+
+449
+01:33:03,907 --> 01:33:06,467
+ah sesini duymak istiyorsanız
+
+450
+01:33:06,467 --> 01:33:07,888
+onu sound yapacaksınız.
+
+451
+01:33:08,047 --> 01:33:10,007
+Yani şey ben zaten göndermiştim.
+
+452
+01:33:10,287 --> 01:33:12,027
+Şimdi denedim kodumda
+
+453
+01:33:12,027 --> 01:33:13,407
+ah sesi çıkıyor gerçekten.
+
+454
+01:33:13,507 --> 01:33:15,807
+Onu yazmam zorunluysa tekrar...
+
+455
+01:33:15,807 --> 01:33:17,727
+Sen eğer bize duyurmak istiyorsan
+
+456
+01:33:17,727 --> 01:33:19,647
+hani aynısını biz yapamadık ama
+
+457
+01:33:19,647 --> 01:33:21,687
+istersen senden duyabiliriz. Yani ekran
+
+458
+01:33:21,687 --> 01:33:22,547
+şeyini paylaş.
+
+459
+01:33:23,347 --> 01:33:24,428
+Göndermen gerek yok.
+
+460
+01:33:25,627 --> 01:33:27,147
+Tabii ki paylaşırsan güzel olur.
+
+461
+01:33:27,907 --> 01:33:29,407
+Yani o sesi
+
+462
+01:33:29,407 --> 01:33:31,847
+oluşturduğunuzda duyulacak olan şey
+
+463
+01:33:31,847 --> 01:33:32,967
+özgür yapmış.
+
+464
+01:33:33,907 --> 01:33:38,947
+Ben paylaşım iznini verdim. Ben paus ve alın stop değil.
+
+465
+01:33:42,804 --> 01:33:46,323
+Ses paylaşmam gerekiyor galiba. Yalnız konunu paylaşmadan.
+
+466
+01:33:47,523 --> 01:34:05,003
+Pardon. Ya onun için şey, şurada şey oluyor, şey aynı. Şurada şey olduğu için, kırk milisaniyede olduğu için biraz kısa çıkıyor. Şunu şöyle yaparsak, ses geliyor mu size?
+
+467
+01:34:05,003 --> 01:34:18,043
+Yalnız şey, share yaparken share sound diyeceksin. O sol alt köşede yeşil duyma var ya, share'e basınca bir pencere açılıyor, share sound'u seç, ondan dolayı biz duymuyoruz.
+
+468
+01:34:18,043 --> 01:34:19,903
+Share sound dedim ama.
+
+469
+01:34:28,787 --> 01:34:35,787
+yok ben duymadım. O zaman çok da şey değil. Çok bilmiyorum çünkü zorunlu.
+
+470
+01:34:35,787 --> 01:34:50,787
+Sen duyduysan tamam. O analiz ve sentez bu işe yarıyor arkadaşlar. Daha fazla aynı şeyleri tekrar etmeye gerek yok. Teşekkür ederiz Rezgür.
+
+471
+01:34:50,787 --> 01:35:12,347
+Başka sorusu olan var mı? Bugün slide'ın birazcık dışına çıkacağız. Slide'larda olmayan bir konudan bahsedeceğim. Biz Fourier serilerini ve ondan sonra Fourier Transform'ını gördük. Hangi tür sinyallerde bu işi yaptık? Sürekli mi, ayrık mı?
+
+472
+01:35:19,444 --> 01:35:23,804
+Fourier transform ve Fourier serilerini hangi tür sinyallerde çalıştık?
+
+473
+01:35:23,804 --> 01:35:27,123
+Sürekli, sürekli sinyallerde.
+
+474
+01:35:27,123 --> 01:35:32,763
+Peki bunu biz normalde ayrıkta çalışmamız lazım. Çünkü elimizdeki datalar ayrık bilgisayarcı olarak.
+
+475
+01:35:32,763 --> 01:35:40,444
+Şimdi bununla alakalı birkaç terminolojiden bahsedeceğim, hem de yeni konumuza giriş yapacağız.
+
+476
+01:35:44,115 --> 01:35:46,935
+Şimdi arkadaşlar Fourier transform
+
+477
+01:35:51,315 --> 01:36:19,755
+biliyoruz ki Fourier serilerini kapsıyor. Çünkü periyodik olmayan işaretleri de Fourier transform'u analiz edebiliyoruz. Bu Fourier transform'un algoritmik olarak gerçeklenmesi, discrete Fourier transform olarak söyledim. Tamam mı? Ayrık Fourier transform. Bunun algoritmik hali, DFT diye yazılır. Hatta Mettep'te
+
+478
+01:36:19,755 --> 01:36:43,135
+şu an görüyorsunuz ya benim ekranımın. Evet hocam. DFT diye bir fonksiyon var. Discrete Fourier Transform. Şimdi bu Discrete Fourier Transform'ın yaptığı şey şu İntegreli, eksi sonsuzdan sonsuza FT çarpı E üzeri eksi C Omega 0 Omega T, DT diye şey Omega 0 yok burada.
+
+479
+01:36:43,135 --> 01:36:54,435
+bunu gerçekleşen iki tane toplam sembolüyle FT'yi ayrı, E üzeri J, Omega T'yi ayrı çarpıp çarpıp toplamak demektir.
+
+480
+01:36:55,795 --> 01:37:04,536
+Bunun algoritmik karmaşıklığı DFT'nin n kare. Eleman sayımıza göre, sinyalin uzunluğuna göre değişiyor n kare.
+
+481
+01:37:04,536 --> 01:37:23,796
+Bu maliyetli bir şey yani 4 dakikalık bir müziği, s-d kalitesinde müziği saklarsanız 4x60x44100 dersek ki günümüzde 44.100'lükler pek kalmadı yani 1 milyon falan diyor örnek sayısı 1-2 ders dersen, 1-2 ders.
+
+482
+01:37:23,795 --> 01:37:34,235
+çok daha büyük bir sayı yani 1 milyon çarpı işte şu 60 milyon 240 milyon uzunluklu bir dizi 240 milyon uzunluklu bir
+
+483
+01:37:34,235 --> 01:37:41,075
+diye verirseniz 240 milyonun karesi kadar işlem yapmanız gerekir bu diskret Fourier transform algoritmik olarak
+
+484
+01:37:41,075 --> 01:37:44,015
+gerçekten ama bunun daha hızlısı var fast Fourier transform
+
+485
+01:37:47,283 --> 01:37:59,283
+Bu da algoritmik bir implementasyon. Sadece biraz daha karmaşıklığı nlogan'a indiriyor. Bunun detayları sayısal işaret işleme dersinde anlatılır.
+
+486
+01:37:59,283 --> 01:38:06,283
+Mesela biz biraz önce sentezlediğimiz şu SESTOS sinyali...
+
+487
+01:38:06,283 --> 01:38:15,283
+Neredeydi? Şuraya current folder şey yazdık, sentez yazdık.
+
+488
+01:38:14,195 --> 01:38:15,195
+için.
+
+489
+01:38:19,028 --> 01:38:33,627
+Şöyle indirelim. Mesela bir frekans bileşeni olsun içerisinde 1, 3 ve 5 olsun. Yani 5'e kadar değil. Şimdi bunun içinde 3 tane kosinus var, bir de DC bileşen var. Toplamda 4 tane bileşen var. Öyle değil mi?
+
+490
+01:38:33,627 --> 01:38:46,627
+Ben bunu bileşenlerine ayırmak istiyorum. Mesela Y'yi, büyük Y diyorum, eşittir. FFT Fast Fourier Transform yap. Bu FFT'yi de sonra Y'yi gönder.
+
+491
+01:38:46,627 --> 01:38:56,867
+Şimdi bu Fourier transformu real ve imajiner kısımlar gönderiyordu. Bunun real kısmını alalım. Direkt hatta şuradan real yazalım.
+
+492
+01:39:02,260 --> 01:39:09,339
+Bunun hazır halini birazdan göstereceğim. Daha önceden hazırlanmıştım. Real kısmını alıp şey yapalım. Bir de bunu plot diyelim.
+
+493
+01:39:09,339 --> 01:39:24,819
+Y diyorum. Şimdi ben Fourier transform'u aldığımda göreceğim şey frekans düzlemindeki görüntüsünü. Burada dört tane birleşen varsa dört tane noktada pik görmem lazım. Bakalım ne göreceğiz. Şunu kapatıyorum.
+
+494
+01:39:24,819 --> 01:39:27,819
+Şunu kapatıyorum.
+
+495
+01:39:29,747 --> 01:39:41,747
+İşte şu yaptığım FFT, S-FREEER transform'u incelemek. Bakın, şuradaki gördüğümüz pikler, arkadaşlar, tabi burada sinyalin uzunluğu kadar, frekans düzenine geçiş yapmamız lazım.
+
+496
+01:39:41,747 --> 01:39:50,747
+Temel frekansı göre ayarlama yapmalıdır. Şunları saydığınızda şu piklerin sayısını toplam 4 tane şey çıkar. Tamam mı? Şurada bir tane var, şurada bir tane daha var.
+
+497
+01:39:50,747 --> 01:39:59,547
+Sonra yukarıda bir tane var, bir de DC birleşen var, hemen hemen 4 tane. Şuraya daha önceden daha düzenli hazırlamıştım. O, bu dersin konusu değil ama,
+
+498
+01:39:59,547 --> 01:40:00,668
+Bakalım neredes?
+
+499
+01:40:05,235 --> 01:40:15,435
+diyorum ki, FFT'yi frekans düzlemindeki şeylere karşılık gelecek şekilde yazmak için 0.25, 0.5, 0.75 diye bizim frekanslarımız.
+
+500
+01:40:15,435 --> 01:40:32,235
+sinyalin uzunluğuna göre önce bir abstract, absolute value aldım, real da diyebilirdim, FFT'yi aldım, daha sonra FFT'yi shift yapıyorum. Shift yaparak işareti 0 ve işte sonrası ve 0 öncesi yani pozitif ve negatif frekansları yazacak şekilde
+
+501
+01:40:32,235 --> 01:40:55,755
+pozitif ve negatif frekansları da bir F değişkeni oluşturdum. Çünkü bu zaman düzeninde başka frekans düzeninde başka görünecek. Hatta şöyle subplot diyelim. Plotun birincisi bu olsun. Şunu açayım. Diğer subplotta da şunu yok edelim. Frekans düzenindeki bir yukarıda zaman düzenini aşağıda da frekansı görelim. Şurada da aynı biraz önceki şeyi 5'e kadar yapıyorum.
+
+502
+01:40:57,895 --> 01:40:58,935
+Run diyeceğim.
+
+503
+01:40:58,935 --> 01:41:08,515
+Bakın bu işaretimiz şu da frekans düzenini sonuçta frekans düzenini biliyorsunuz artı ve eksili şekilde çalışıyordu.
+
+504
+01:41:08,515 --> 01:41:14,315
+Buna yaklaştığınızda burada 1, 3 ve 5 bir de DC bileşen şeylerini analizini görebilirsiniz.
+
+505
+01:41:14,415 --> 01:41:15,956
+Frekans eksilindeki sonucu.
+
+506
+01:41:16,375 --> 01:41:18,675
+Şimdi bunu 5 değil de 75 yapalım.
+
+507
+01:41:21,096 --> 01:41:22,835
+Frekans düzeninde nasıldı?
+
+508
+01:41:23,295 --> 01:41:27,175
+Küçük frekanslarda genlik yüksek, yüksek frekanslarda genlik azalarak geçecekti.
+
+509
+01:41:27,175 --> 01:41:33,395
+Bakın bu yaptığımız sonucun frekans düzenindeki karşılığını elde edebiliyoruz. Varsa alabilirim.
+
+510
+01:41:35,115 --> 01:41:43,555
+Hatta şuna eğer masaüstü uygulama olsaydı doğru düzgün fokuslanırsam en son frekans breşeni kaçta olacak? Şuraya bir hesap edersek.
+
+511
+01:41:44,515 --> 01:41:56,655
+75'te, 75'e yakın bir frekans sonucu elde edeceğiz. Tabii pardon 75 olmaz. Burada 0.25 ile çarpıyoruz. 75'i 4'e bölersek kaç olur? 32 yok.
+
+512
+01:41:57,175 --> 01:42:22,555
+24 küsür mü oluyor? 64 ve 15 yaklaşık değerini bulalım. 75 bölü 4. 18 küsür. Bakın şu en son frekans bileşenimizin yaklaşık değerini gösteriyor. 18.8. Bu FFT olduğu için yaptığımız için bir kayıp var. DFT olsa biraz daha şu 18.8.
+
+513
+01:42:22,555 --> 01:42:52,455
+ve değere yakın değerler girerse alırsın. Ama burada en son bir şey. Ondan önceki mesela kaçta olacak? 73'ün karşılığı olacak. 73 bölü 4 dersek 17 birbir küsüre karşı giriyor. Bunu böyle arttırdığımızda genliğin giderek azaldığını ve bu kadar frekans birleşeninin piklerin olduğunu görüyoruz. Tabii aslında bunu şeyle çizmek lazım arkadaşlar. Plotla değil de sistemle çizmek lazım. Çünkü sistem frekans düzleminde biz ayrı bir görüntü var.
+
+514
+01:42:52,456 --> 01:43:21,375
+bu da kontinüs görüntü işimize yaramaz ama bu sistemin de şöyle bir problem var. Şimdi bizim x vektörümüz aradaki değerleri de çiziyor. Yani pik olmayan küçük noktaları da çizdiği için böyle analiz etmesi biraz zor. Çünkü shift değerleri çizmemesi lazım. Sıfıra yakın olun. Yine sıfır görüyoruz da ayırt etmesi bayağı bir zor oluyor. Şöyle iyice yaklaştık. Sokustanacağız. Mesela şu çok sıfıra yakın değerler ama yine bunları da yazmış.
+
+515
+01:43:22,456 --> 01:43:44,096
+even birleşenler biliyorsunuz çift olacaktı gibi. Bu analiz konusu tabii bu dersin şeyi değil yani bu FFT'nin kullanması veya diğer şeyler, görüntü işleme veya sayısal işaret işlemeler sağ olursanız orada bunlar hocası tarafından anlatılır.
+
+516
+01:43:44,096 --> 01:44:01,795
+Peki buraya kadar sürekli sinyallerde bunu yaptık. Şimdi ayrı zamanda Fourier transformunu yapacaksak orada karşımıza gelecek tek şeyin adı discrete time Fourier transform.
+
+517
+01:44:05,043 --> 01:44:15,763
+Discrete Time Fourier transform bir n-bağlı işaret, artık t-ye bağlı işaret yok, n-bağlı işaretin içerisindeki frekans bileşenlerini alacak.
+
+518
+01:44:16,384 --> 01:44:17,424
+Yapması gereken şey bu.
+
+519
+01:44:19,323 --> 01:44:25,964
+Tabii biz burada Fourier transformunda o zaman integral kullandıysak burada toplam sembolüyle ilgileneceğiz.
+
+520
+01:44:26,923 --> 01:44:33,003
+Burada şu vardı, omega vardı, burada onun yerine büyük omega olacak.
+
+521
+01:44:33,003 --> 01:44:48,003
+bununla alakalı bazı şeyleri bugün konuşacağız. Diğer ödevimiz de bunun uygulaması şeklinde. Hem analitik bir çözüm, basit bir örmek üzerine analitik bir çözüm yapacağız hem de ters dönüşüm yapacağız.
+
+522
+01:44:48,003 --> 01:45:08,603
+Yani konumuz ayrı, zamanlı Fourier transform diye bildiğimiz discrete time Fourier transform. Bunu DTFT diye kaynaklarda kısa bir şekilde görürsünüz. Türkçesinde AZFT diye yazıyorlar. Niye öyle yazıyorlar ben de bilmiyorum.
+
+523
+01:45:08,603 --> 01:45:36,183
+her şeyin Türkçesi olacak diye bir şey yok yani o biraz saçma öyle. Şimdi şuradaki noktalarımdan bu kitaptan anlatacağım bazı şeyleri. Çok fazla detayı var ama bize sürekli zamandaki şeyin mantığını öğrendikten sonra ayrık zaman aynı. Olacağı için çok şey fark etmiyor. Formülleri vereceğim. Bir de formüller üzerinde birkaç örnek yapacağız.
+
+524
+01:45:36,183 --> 01:45:38,543
+bir sayang bu.
+
+525
+01:45:58,515 --> 01:46:04,515
+Şans'ın kitabında bulunan berkala çok güzel örnekler de var. Tavsiye ederim. Bakabilirsiniz.
+
+526
+01:46:06,515 --> 01:46:17,515
+Normalde ayrık Fourier serileri de var arkadaşlar ama biz o kadar girmiyoruz. Çünkü o çok basit bir şey. Yine CK kat sayılarını falan buluyorsunuz ayrık Fourier serisinde.
+
+527
+01:46:17,515 --> 01:46:27,515
+Ayrık Fourier dönüşümünün amacı yine ayrık Fourier serisini düşünürseniz periyodik bir seri olması lazım ayrık zamanlı işaretin.
+
+528
+01:46:28,515 --> 01:46:35,515
+Eğer periyodik bir işaret değilse bu kadar ayrık Fourier dönüşümü, ayrık zamanlı Fourier dönüşümü konuşulacak.
+
+529
+01:46:35,515 --> 01:46:48,015
+Ve burada yapacağımız şey işte bir ck kat sayılarını bulurken toplam sembolünü dikkate alacağız.
+
+530
+01:46:48,015 --> 01:46:53,015
+Toplam sembolünün karşılığı da burada formülümüz şu şekilde olacak.
+
+531
+01:46:53,015 --> 01:46:57,515
+ck dediğimiz şey bir bölü n0.
+
+532
+01:46:59,856 --> 01:47:03,236
+İşte küçük n noktasından başlayalım.
+
+533
+01:47:03,236 --> 01:47:17,655
+İşte 0'dan pd1 n0 noktasına kadar artık şey neyse x n'lerle e üzeri eksi jk omega 0 n.
+
+534
+01:47:19,535 --> 01:47:20,876
+Şöyle bir dönüşüm.
+
+535
+01:47:20,876 --> 01:47:42,916
+Şimdi tabi burada bu periyodik olduğunu kabul ederek yapacağımız bir dönüşüm arkadaşlar. Eğer bu periyodik olmazsa şurada omega sıfır yerine normal bir omega koyup bunu integral dönüşümü gibi toplam sembolü dönüşümü haline getiriyor. Daha genel yazıyoruz. Şimdi ona geleceğim. Onun bir de ters dönüşüm hali var.
+
+536
+01:47:42,915 --> 01:47:51,495
+Bu periyodik işaret için
+
+537
+01:47:51,495 --> 01:48:02,515
+Asıl bizim bize lazım olan şey bir x n'e bağlı işaret verdiğinde bulacağımız şey artık x omega'ya bağlı bir işaret
+
+538
+01:48:02,515 --> 01:48:03,875
+Çünkü dönüşüm yapıyoruz
+
+539
+01:48:03,875 --> 01:48:11,915
+İşaretin kendi içindeki eksi sonsuz noktasından artı sonsuza toplam sembolü şeyle aynı, diğerini de aynı
+
+540
+01:48:11,915 --> 01:48:32,215
+Sadece toplam sembolü geldi. Xn'lerle bir korelasyon yapıyoruz. Bu da e üzeri eksi j, artık burada k falan yok, omega çünkü periyodik değil. Şu toplam sembolü çalıştırdığımızda elde edeceğimiz sonuç bizim frekans düzlemindeki karşılığımızda. Örneğin elimizde 1, 2, 3 diye bir sayısal işaret var, ayrık işaret.
+
+541
+01:48:32,215 --> 01:48:51,355
+bunu şeyle çarpmak işte bir çarpı E üzeri eksi J omben artı iki çarpı E üzeri eksi J omben artı üç çarpı E üzeri eksi J omben birleşenleri oluyor ve sonuçta bulduğumuz şey ne olur? J omega şey omega'ya bağlı bir denklem elde etmiş oluruz.
+
+542
+01:48:51,355 --> 01:49:13,935
+Şimdi bunun ters dönüşümü nasıl olacak diye bakacak olursak, ödeviniz bu ters dönüşüm üzerinden, elimizde Omega'ya bağlı bir şey varsa, Xn dediğimiz şey, tabi yine eski şeye geri döneceğiz, yüzleme
+
+543
+01:49:17,460 --> 01:49:23,460
+Hatırlarsanız şeyde de 1 bölü 2 pi gibi bir şey vardı ters kur yer dönüşümde 1 bölü 2 pi
+
+544
+01:49:23,460 --> 01:49:30,899
+k eşittir herhangi bir noktadan başlıyoruz x
+
+545
+01:49:30,899 --> 01:49:37,259
+Pardon burada 1 bölü 2 pi yok şey 1 bölü 2 pi var da
+
+546
+01:49:37,259 --> 01:49:43,859
+şu yok bunun ters dönüşüm arkadaşlar toplam sembolü olmuyor integral oluyor yine
+
+547
+01:49:43,859 --> 01:50:00,899
+1, 2 pi periyot boyunca şu x omega'yı verip e üzeri j omega n ve d omega böyle bir integral hesap yaparsak x'eni buluyoruz.
+
+548
+01:50:00,899 --> 01:50:11,860
+Şimdi bir işaret, ayrık zamanlı bir işaretin Fourier dönüşümü, ayrık zamanlı Fourier dönüşümü sürekli zaman haline geliyor.
+
+549
+01:50:11,859 --> 01:50:34,059
+buradan tekrar N'e dönüşüm yapmak istiyorsak onun için integral oluyoruz. Bakın burası ayrık, burası sürekli hale geldi. Bu sürekli halden tekrar geri dönüşüm yapmak için ne yapacağız? Şu integral'i kullanacağız. Örneğin benim şöyle bir işaretim var. Bunun N düzleminde, Fourier düzleminde geçtiğinde belki şöyle bir karşılık bulacağım sürekli.
+
+550
+01:50:34,059 --> 01:51:01,219
+bunu ters şey alırken de işte ne yapacağız? Şuradan F'e bağlı veya Omega'ya bağlı, Omega da olabilir, F da olabilir. Ters integral alıp 1 bölü 2'ye böldüğünde N'e bağlı bir şey haline getiriyoruz. Sonuç haline geliyoruz. Niye? Bu bir integral dönüşüm demiştim. Integral dönüşümde ana fonksiyon neydi? Yanında bir değişken içerir. Bu değişken işin sonunda ne yapıyor? Bize yeni boyutu veriyor. Integral dönüşümde.
+
+551
+01:51:01,219 --> 01:51:09,219
+Tabi yine şey, Fourier dönüşümünde olduğu gibi, sürekli zaman Fourier dönüşümünde olduğu gibi, bunun yakınlaması lazım
+
+552
+01:51:09,219 --> 01:51:18,119
+alanın, şunun sonsuza gitmemesi gerekiyor, şuradaki çarpımların, buna da dikkat etmek gerekiyor, onlar hepsi aynı kurallar, tekrar tekrar bunları söylemeyeceğim
+
+553
+01:51:18,119 --> 01:51:28,579
+şimdi ara verelim, geldiğimizde bununla alakalı bazı örnekler ve kurallardan bahsedeceğim, ondan sonra dersimizi tamamlarız
+
+554
+01:51:28,579 --> 01:51:31,119
+saat 6'da görüşmek üzere.
+
+555
+02:03:45,844 --> 02:03:47,123
+Evet arkadaşlar.
+
+556
+02:03:49,943 --> 02:03:58,123
+Şimdi bu ayrık Fourier serilerini ve ayrık Fourier dönüşümünü kısaca formüllerini tekrar yazacağım. Üzle birkaç örnek çözeceğiz.
+
+557
+02:03:58,903 --> 02:04:02,743
+Bir de buradan nereye geçiş yapabiliriz? Onunla konuşacağız ve bitireceğiz.
+
+558
+02:04:15,123 --> 02:04:25,123
+Ayrık Fourier serisinden bahsediyorsak bir kere periyodik bir durum var demektir. Periyodik ise bizim temel periyodu bulmamız gerekiyor.
+
+559
+02:04:25,123 --> 02:04:36,123
+Hatırlarsanız sürekli zamanda da periyodu bulduktan sonra integral alıyorduk. Şimdi ayrık Fourier serileri diyelim.
+
+560
+02:04:40,340 --> 02:04:48,779
+xn hesaplanırken, nasıl orada ck katsayılarını buluyorsak, burada da ck katsayı buluyoruz.
+
+561
+02:04:48,779 --> 02:04:55,739
+Aslında aylık Fourier serisinin en genel hali şöyle yazabiliriz, k değişkenimiz olsun, k sıfırdan başlasın.
+
+562
+02:04:56,459 --> 02:05:05,299
+Toplam en tane örneğimiz varsa bizim n sıfır eksi bire kadar, yani sıfırdan başladık n sıfır eksi bire kadar, ck katsayılarını bulacağız.
+
+563
+02:05:05,299 --> 02:05:34,599
+ck kasayı da sinuz oyundan işaretlerden olacak. Bu ck da omega 0 temel frekans olmak üzere onun katlarından olacak. Bakın şunu açarsanız nedir? Kosnüz k çarpı omega 0 çarpı n'lerden oluşacak demektir veya işte sinüz. Peki burada ck'yı nasıl hesap edeceğiz? Aynı sürekli zamanda olduğu gibi işte bir periyot boyunca bunu inceleyebiliriz. Bir bölü n 0 diyelim periyodumuza.
+
+564
+02:05:35,299 --> 02:05:48,599
+yine burada n eşittir sıfırdan n sıfır eksi bire kadar bir periodik boyunca işaretin içerisindeki kosünüs ve sinüs bileşenlerini buluyoruz.
+
+565
+02:05:48,599 --> 02:05:57,499
+O da neydi? e üzeri eksi j k. Orada omega sıfır küçük omega ile yazıyorduk. T yazıyorduk. Artık burada büyük omega sıfır n yazacağız.
+
+566
+02:05:57,499 --> 02:06:27,459
+Bu şekilde sonucu bulabiliriz. Bunun ters dönüşümünü zaten söyledik tekrar söylemeye gerek yok. Ayrık Fourier, ayrık zamanlı Fourier dönüşümü dediğimiz şey işte burada biraz önce yazdığımız şekilde Fourier dönüşüm çiftini kullanmamız gerekiyor. Çünkü burada periyodik bir durum yok. Bunun daha genel hali
+
+567
+02:06:27,499 --> 02:06:55,359
+Onu da şöyle yazalım tekrardan. Belki not almak isteyenler özet bir şekilde yazabilirler. Eğer biz X omega'yı hesap edeceksek, Fourier dönüşümü alacağız. İşaretin içerisinden n eşittir, eksi sonsuzdan artı sonsuza kadar X n değerlerimizi neydi? E üzeri eksi j küçük omega'ydı. Burada büyük omega. E'ydi. Onun yerine n yazıyoruz. Ve bu işlemize omega karşılaştırıyor.
+
+568
+02:06:55,360 --> 02:07:02,979
+Eğer buradan x n'e ulaşacaksak bu sürekli bir şeydi. Onun için buradan integral almamız gerekiyor.
+
+569
+02:07:03,619 --> 02:07:08,179
+2P hatta Laplace dönüşümünde bunu kontrol integral olarak söyleyeceğiz. Orada da aynı mantık var.
+
+570
+02:07:08,960 --> 02:07:23,179
+x omegaları e üzeri eksi j omega ise burada e üzeri j omega n diyeceğiz ve d omega'ya göre integral hesabı yapacağız.
+
+571
+02:07:25,359 --> 02:07:33,779
+Tamam mı? Bu belli bir periyod durumu var. Dolayısıyla bu periyodu hesaplarız işaretin durumundan, davranışından.
+
+572
+02:07:34,359 --> 02:07:39,959
+Buraya yazarız. Burada periyodik bir durum yok. Eksi sonsuzdan artı sonsuzdan daha genel haliyle yazmak zorundayız.
+
+573
+02:07:41,239 --> 02:07:44,979
+Şimdi arkadaşlar şöyle birkaç örnek yapalım.
+
+574
+02:07:49,108 --> 02:07:52,427
+x'n işareti
+
+575
+02:07:55,315 --> 02:08:07,495
+bir iki sıfır bir iki üçmüş 0123 şöyle bir ve en sıfır eşittir periyodu 40 bunun
+
+576
+02:08:07,495 --> 02:08:14,895
+Purya kat sayılarını bulunuz diyor şimdi en sıfır biliyorsak bizim buradan önce Omega sıfıra
+
+577
+02:08:14,895 --> 02:08:21,475
+geçmemiz gerekiyor Omega sıfır dediğimiz iki Pİ bölü F0'da F0 dediğimizde işte bir bölü T0 veya
+
+578
+02:08:21,475 --> 02:08:29,575
+olacak ve ayağızlı parı dersek ne gelecek iki P bölü dörtten P bölü iki yılacağız ve buradan
+
+579
+02:08:29,575 --> 02:08:36,235
+yola çıkarak arkadaşlar şu formülü ck kat sayılarını bu ck kat sayılarından sonra bu
+
+580
+02:08:36,235 --> 02:08:41,216
+toplam sembolü yerine yazıyoruz önce o zaman ck'ları bulacağız ve ck kat sayılarında şu
+
+581
+02:08:41,216 --> 02:08:49,975
+şeyi yerine yazmamız gerekiyor bir kere c0 dediğimiz şey bc bileşen nedir omega'nın
+
+582
+02:08:49,975 --> 02:08:51,656
+olduğu durum. Bunu doğrudan yazabiliriz.
+
+583
+02:08:51,815 --> 02:08:54,176
+1 bölü 4 formülde yerini yazarsak
+
+584
+02:08:54,176 --> 02:08:56,475
+n eşittir
+
+585
+02:08:56,475 --> 02:08:57,676
+0'dan 3'e kadar
+
+586
+02:08:57,676 --> 02:09:00,176
+bu ne demektir? İşaretin sürekli
+
+587
+02:09:00,176 --> 02:09:01,976
+zamanda bir periyot boyuncaki altındaki
+
+588
+02:09:01,976 --> 02:09:04,055
+alanda burada da toplamını
+
+589
+02:09:04,055 --> 02:09:05,996
+değerlerin toplamını alacağız.
+
+590
+02:09:06,116 --> 02:09:07,935
+Aslında ortalamasını alıyoruz. Aritmetik
+
+591
+02:09:07,935 --> 02:09:10,216
+ortalamasını. 0 artı
+
+592
+02:09:10,216 --> 02:09:12,315
+1 artı
+
+593
+02:09:12,315 --> 02:09:13,076
+şöyle diyelim
+
+594
+02:09:13,076 --> 02:09:16,476
+genel halini yazayım. X n çarpı
+
+595
+02:09:16,476 --> 02:09:18,075
+şuraya bakarsak
+
+596
+02:09:18,075 --> 02:09:26,895
+var İsten çarpı evleri jika ama da sıfır en e üzeri jika onu da sıfır şunun yerine sıfır
+
+597
+02:09:26,895 --> 02:09:32,295
+yazdığımızı kabul edersek burası ne olacaktır evleri 01 olacaktır yani ilk senlerin toplamının
+
+598
+02:09:32,295 --> 02:09:39,195
+dördü bölümü yani ilk senden ortalaması buradan da bir bölü dört çarpı sıfır artı bir artı iki
+
+599
+02:09:39,195 --> 02:09:50,115
+3 toplamda ne oluyor 6 bölü 4'ten 3 bölü 2 mi oluyor sonuç 3 bölü 2'yi buluyoruz şimdi geldik
+
+600
+02:09:50,115 --> 02:09:58,335
+c1 c2 c3 şeyleri bir kere bizim burada dört tane örneğimiz olduğu için ck kat sayılarımız
+
+601
+02:09:58,335 --> 02:10:05,835
+sınırlı c1 c2 c2 yapıp eski zaten bu yerlere bakarken arkadaşlar daha genel bir şey yazmaya
+
+602
+02:10:05,836 --> 02:10:07,196
+Çünkü bu periyodik bir işaret.
+
+603
+02:10:08,196 --> 02:10:08,916
+1 bölü 4.
+
+604
+02:10:11,216 --> 02:10:13,076
+n eşittir 0'dan
+
+605
+02:10:13,076 --> 02:10:14,676
+3'e kadar
+
+606
+02:10:14,676 --> 02:10:17,616
+x n çarpı
+
+607
+02:10:17,616 --> 02:10:19,336
+şimdi
+
+608
+02:10:19,336 --> 02:10:21,676
+şeyin yerine şurada
+
+609
+02:10:21,676 --> 02:10:23,836
+n'in yerine 1 yazdım
+
+610
+02:10:23,836 --> 02:10:25,256
+e üzeri j k
+
+611
+02:10:25,256 --> 02:10:27,955
+omega 0. Şimdi e üzeri
+
+612
+02:10:27,955 --> 02:10:29,436
+j k omega 0'da nedir?
+
+613
+02:10:29,636 --> 02:10:31,476
+Omega'yı zaten biliyoruz. Pi bölü 2.
+
+614
+02:10:31,476 --> 02:10:34,196
+e üzeri j k
+
+615
+02:10:34,196 --> 02:10:35,576
+pi bölü 2.
+
+616
+02:10:35,835 --> 02:10:44,235
+en yerine de şurada şey yazdım bir yazdım için bu nedir eksi J üzeri en şeklinde bir açılımdır
+
+617
+02:10:44,235 --> 02:10:50,335
+Yani nasıl bir üzeri eksi bir üzeri kademsi bir tekrar bir çiftler o zaman burada yazacağımız
+
+618
+02:10:50,335 --> 02:11:01,235
+şey eksi C üzeri en eksi C üzeri yerine getirip yazdığımızda bir bölü 4 dışarıda 0 çarpı eksi
+
+619
+02:11:01,235 --> 02:11:02,775
+sıfır. Yani bu sıfır demek.
+
+620
+02:11:04,795 --> 02:11:05,775
+Bir çarpı
+
+621
+02:11:05,775 --> 02:11:07,095
+eksi c üzeri bir
+
+622
+02:11:07,095 --> 02:11:08,575
+bu eksi c'dir.
+
+623
+02:11:09,375 --> 02:11:10,836
+Şuraya eksi c yazalım.
+
+624
+02:11:11,955 --> 02:11:13,415
+Artı iki getirirsek
+
+625
+02:11:13,415 --> 02:11:15,696
+örnek olarak iki çarpı
+
+626
+02:11:15,696 --> 02:11:16,896
+eksi c'nin karesi.
+
+627
+02:11:17,336 --> 02:11:19,256
+Şimdi c'nin karesi eksi bir.
+
+628
+02:11:19,735 --> 02:11:21,416
+Bir de önünde eksi var.
+
+629
+02:11:22,795 --> 02:11:23,635
+Eksi bir
+
+630
+02:11:23,635 --> 02:11:25,555
+ne olacak? Eksi iki olacak.
+
+631
+02:11:25,676 --> 02:11:26,455
+J'ye kaybolacak.
+
+632
+02:11:27,335 --> 02:11:29,155
+Eksi c eksi iki dedik.
+
+633
+02:11:29,355 --> 02:11:30,635
+Artıya gerek yok.
+
+634
+02:11:31,235 --> 02:11:37,355
+3 yazarsak 3 dediğimizde burada 3. durumda örneğimiz 3.
+
+635
+02:11:38,075 --> 02:11:40,075
+Eksi C üzeri 3 de nedir?
+
+636
+02:11:40,215 --> 02:11:41,935
+Yine eksi 1'dir.
+
+637
+02:11:42,756 --> 02:11:46,616
+Buradan da pardon eksi C üzeri 3 eksi C'dir.
+
+638
+02:11:47,476 --> 02:11:51,215
+Eksi ile beraber artı C çarpı 3C'ye geliyor.
+
+639
+02:11:52,756 --> 02:12:07,136
+Buradan hesapladığımıza eksi bir bölü real partı ayrı, imajineli partı ayrı yazarsak eksi bir bölü iki artı j çarpı bir bölü iki giriyor. Bakın bu bize neyi gösteriyor, neye benziyor bu?
+
+640
+02:12:10,868 --> 02:12:13,167
+Şu açılımı bize neyi gösteriyor arkadaşlar?
+
+641
+02:12:15,987 --> 02:12:19,828
+Kosünüslü bir şeyin yani e üzeri j'li bir şeyin açılımı gibi değil mi?
+
+642
+02:12:22,907 --> 02:12:30,327
+Kosünüs x artı j çarpı sinüs x gibi bir ifadeyi gösteriyor ona çok benziyor zaten bundan ona geçiş yapılıyor.
+
+643
+02:12:30,827 --> 02:12:32,628
+c2 hesaplayalım.
+
+644
+02:12:33,907 --> 02:12:38,267
+c2 dediğimiz şeyde şurada n yerine 2 yazacağız.
+
+645
+02:12:38,267 --> 02:12:58,167
+1 bölü 4 çarpı n eşittir 0'dan 3'e kadar xn çarpı eksi j üzeri 2 n olacak bu sefer. Burada aynı şeyleri yerine koyarsak önce 0 yerine koyduk. 0 çarpı bir şey işte burası doğrudan 0.
+
+646
+02:12:58,167 --> 02:13:09,467
+1 çarpı eksi J üzeri 2 olunca bu ne olur? Burası doğrudan eksi 1 olur. Eksi J'nin ikinci kuvveti eksi 1'e karşı.
+
+647
+02:13:09,467 --> 02:13:26,448
+Eksi 1 artı 2 yazınca ne olacak? 2 çarpı eksi J üzeri 4. Eksi J üzeri 4 nedir? Artı 1'dir. Buradan da 2 gelir. Sonuçta 1 çarpı 2, 2 gelecek.
+
+648
+02:13:26,448 --> 02:13:35,168
+artı, artı olmaz, 3 çarpı, eksi c üzeri 6, bu eksi c üzeri 6 da eksi 1'e karşı gire, şurası ne olacak? Eksi 3 olacak.
+
+649
+02:13:36,808 --> 02:13:48,908
+Burada şeyleri hesapladığımızda ne oluyor? Eksi 4, eksi 2, eksi 2 bölü 4'ten eksi 1 bölü 2 sonucu. Bakın burada sadece kosünüs birleşeni var, imajiner bir şey yok.
+
+650
+02:13:48,908 --> 02:14:10,967
+c hesaplayalım. Hatta bunu doğrudan uzun uzun yazmayayım. n eşittir sıfırdan 3'e xn çarpı eksi c üzeri 3n. Bakın bunu dönüşümü yapabilmemizin sebebi yine evler denkleme. Şu işlem normalde toplam sembolünde buna dönüşüyor.
+
+651
+02:14:10,967 --> 02:14:38,147
+Burada da işte 1 bölü 4 çarpı 0 eksi 0 artı c eksi 2 eksi 3 j. Buradan da gelen sonuç eksi 1 bölü 2 artı eksi j bölü 2 geliyor arkadaşlar. Bunlar bizim Fourier kas sayılarımız. Ayrık Fourier serisinde periyodik bir durum varsa. Buraya kadar sorunuz var mı?
+
+652
+02:14:38,147 --> 02:14:44,047
+Hocam, eksi C3'e nasıl bulduk onu tekrar anlatabilir misiniz?
+
+653
+02:14:45,468 --> 02:14:51,248
+Şimdi bizim çarpım yapacağımız şey şurası değil mi? E üzeri J, K, Omega 0, N
+
+654
+02:14:51,248 --> 02:14:56,647
+Temel şeyimiz burada. Şimdi Omega 0'ımız ne? Pi bölü 2
+
+655
+02:14:56,647 --> 02:15:01,127
+E üzeri J, K, Omega 0, N
+
+656
+02:15:01,127 --> 02:15:23,027
+Omega sıfır yerine E üzeri J, K, P bölü 2, N yazdığımızda şimdi bu nedir? Kosinus K çarpı P bölü 2 çarpı N, eksi, pardon eksi artı sinüs K çarpı P bölü 2 N.
+
+657
+02:15:23,027 --> 02:15:36,667
+Şimdi bir pi bölü iki, ondan sonra iki pi bölü iki, üç pi bölü iki diye bir şey geliyor. Yani biraz önce şeyde çözerken eksi bir üzeri n diye, eksi bir üzeri k diye bulmuştuk ya.
+
+658
+02:15:36,667 --> 02:15:43,567
+İşte buradan sinüsün pi bölü ikisi, bir bak bakayım, pi bölü iki, şuraya k yazacağız.
+
+659
+02:15:43,567 --> 02:16:06,627
+birim çemberde şurası pi bölü 2, şurası 0, şurası pi pardon, pi bölü 2'ler, 1 çarpı pi bölü 2, ondan sonra hesap edersek,
+
+660
+02:16:07,155 --> 02:16:16,155
+şu ifade iyilik kısım oluyor, burası birlik kısım oluyor. Yani bir i'nin karesi i'nin kuvvetleri şeklinde olacak.
+
+661
+02:16:16,155 --> 02:16:26,155
+1 pi bölü 2, 2 pi bölü 3 pi bölü 2 diye gidersek, i'nin kuvvetlerine göre sonuç olacak. O dönüşüm buradan karşılık geliyor. Tamam?
+
+662
+02:16:26,155 --> 02:16:29,155
+Tamam hocam.
+
+663
+02:16:29,155 --> 02:16:57,075
+ve bunu işi uzatmamak yerine şurada tabi eksi J şeklinde yazmak gerekiyor. Tam eksi bunun karşılığı J'nin en inci dereceden kuvvetleri şeklinde yazmak bize hesabı kolaylaştırmayı sağlayacak. Bunu en sonunda da yapabiliriz. Yani önce E üzeri J omega'nın öne göre bir sonuç bulup ondan sonra onu dönüştürürsek orada da yaparız ama şurada yapmak bir defaya mahsus daha kısaltıyor.
+
+664
+02:16:57,075 --> 02:17:24,855
+burada mesela şu pi değil pi bölü 2 değil de ne bileyim 5 pi bölü 7 çıkabilir miydi evet çıkabilirdi o zaman işimiz biraz daha zorlaşırdı çünkü şurada böyle bir dönüşüm yapmak biraz daha zordu bunun karşılığını bulup yazmak gerekiyordu onun nedenle genelde sorular test ederken kolay sorulur çok böyle zorlayılaşır sorulmaz sizde mesela çalışırken arkadaşlar şunu yapın
+
+665
+02:17:27,075 --> 02:17:42,775
+işaret, xn işareti şöyle bir şey olsun, 1, 1, 1, 1, 1, sonra 0, 0, 0, 0, 0, şöyle bir işaret, arada bir günler olduğunu kaldım, buradan bunun Fourier serileri, kasturaya serisi, kastırlarını bulmayı deneyim.
+
+666
+02:17:43,775 --> 02:17:50,915
+Şimdi geldik, Fourier dönüşümüyle alakalı birkaç şey yapalım, ayrı kuryer dönüşümü.
+
+667
+02:17:50,915 --> 02:18:14,375
+yapalım. Mesela işaretimiz xn, drag n olsun. Bunun şeydeki karşılığı nedir? X omega nedir? Bunu bulalım. Burada biraz önceki gibi şey yerine yazacağız. Bu periyodik bir işaret değil kabul ediyoruz. Normalde tek bir tane değeri var.
+
+668
+02:18:14,375 --> 02:18:32,055
+Puriye dönüşümü şeyini yazarsak, X omega eşittir, X sonsuzdan, artı sonsuzdan, X'en yerine gidip bunu yazıyoruz, işaretimiz bu, çarpı E üzeri,
+
+669
+02:18:32,055 --> 02:19:01,675
+eksi j omega n. Şimdi bu n'in eksi sonsuzdan n için sıfıra gelene kadar bütün değerler için burası sıfır. Şundan dolayı değil mi? Dolayısıyla hep sıfır sıfır sıfır sıfır sıfır artı sıfır artı sıfır diye geliyor. N sıfır olduğunda bu bir oluyor. Bu n sıfır olduğunda şurası da bir oluyor ve oradan artı bir geliyor. Sonra sıfırı geçiyoruz.
+
+670
+02:19:02,055 --> 02:19:12,376
+gidiyoruz bu hep yine 0000 dolayısıyla 0 artı sıfır sıfır sıfır bir yerde bir artı sıfır sıfır sıfır sonuç ne olacaktır bir olacaktır buraya anladık mı
+
+671
+02:19:12,376 --> 02:19:25,215
+basit bir işarette bunun Fourier düzlemindeki karşı yani ben böyle bir işaret en düzleminde verirsem şöyle
+
+672
+02:19:25,215 --> 02:19:34,795
+işaretimiz var. Bunun frekans düzlemindeki karşı buraya en düzlemi diyelim şuraya omega düzenli şöyle bir şeklinde bir işaret alacağız.
+
+673
+02:19:34,795 --> 02:19:45,835
+Tamam mı? Peki öbür örneği buraya sığdırır mıyız herhalde? Sığdırırız. Neyse öbür taraflar.
+
+674
+02:19:45,835 --> 02:19:59,235
+işaretimiz biraz daha karmaşık bir işaret olsa, örneğin A üzeri N, U N olsa, bu nasıl bir işaret çizmeye kalksak nasıl bir görüntü verir arkadaşlar?
+
+675
+02:20:01,555 --> 02:20:03,455
+Bir kere sağ taraflı mı, sol taraflı mı?
+
+676
+02:20:16,852 --> 02:20:34,911
+çok yüksekten. Evet, sağ taraftayım. Çünkü UN'den kaynaklı olarak sıfırdan sonraki değerler bir şey gösterecek. Peki sağ tarafta nasıl bir görüntü olur? A'yı tam sayı olarak kabul edelim.
+
+677
+02:20:37,363 --> 02:20:39,363
+birden büyük bir tam sayı olsun mesela.
+
+678
+02:20:48,435 --> 02:20:58,535
+eksponansiyel bir şey olmaz mı arkadaşlar? Yani 1 üzeri n, 2 üzeri 1, 1 üzeri 2, 1 üzeri 3, 1 üzeri 4 şeklinde şöyle bir şey buluruz.
+
+679
+02:20:59,896 --> 02:21:10,875
+Eksponansiyel artan, pardon mesela 2 diyelim, 2 üzeri 1, 2 üzeri 2, 2 üzeri 3, 2 üzeri 4, böyle şöyle artan üstel bir şey, işaret buluruz.
+
+680
+02:21:11,555 --> 02:21:16,555
+Peki bunun Fourier dönüşümünü almak için formülü yine yazıyoruz.
+
+681
+02:21:16,555 --> 02:21:29,575
+n-sonsuzdan artı sonsuza. Yerine koyduğumuzda a üzeri n çarpı bu n. Pardon arkadaşlar bir saniye.
+
+682
+02:21:41,075 --> 02:21:55,835
+AN çarpı UN diyeceğiz. çarpı E üzeri eksi J omega n. hesaplayacağımız şey bu olacak. Peki şu UN'den kaynaklı olarak biz sınırları ne hale getirebiliriz?
+
+683
+02:21:55,835 --> 02:22:06,875
+UN'den kaynaklı olarak şurası sıfırdan sonraki değerler oluşturacağı için burayı sıfır yapacağız.
+
+684
+02:22:06,875 --> 02:22:27,335
+sıfırdan başlatabiliriz. O zaman şurayı şöyle direk n eşittir sıfır diyelim. Şundan kaynaklı. Bu gidecek. Toplam sembolümüz ne hale gelecek? n eşittir sıfırdan sonsuza a n çarpı e üzeri eksi j omega n. Bunu bulacağız. Pardon a üzeri n.
+
+685
+02:22:27,335 --> 02:22:43,195
+Şimdi şu ifadeyi açarsak geometrik serileri burada birazcık hatırlamak gerekiyor. Biraz da üstü sayılarla işlem yapacağız. Bunu bir üstü sayılarla işlem yapacak hale getirelim. Şimdi bu A üzeri N çarpı E üzeri J
+
+686
+02:22:43,195 --> 02:23:00,395
+en ortak parantezini alırsak ne buluruz? Toplam sembolünden n eşittir sıfırdan sonsuza kadar n ortak parantezinde A çarpı E üzeri eksi J omega'yı buluruz değil mi?
+
+687
+02:23:01,475 --> 02:23:10,475
+Şöyle bir şeyi serilerden hatırlıyor musunuz arkadaşlar? Toplam sembolünde n eşittir işte bir yerden başlayıp bir yere kadar x üzeri n desek.
+
+688
+02:23:10,476 --> 02:23:38,196
+bunun bir formülü vardı. 1 bölü 1-x falan yazılıyordu. Bu da onun gibi. Yani A çarpı E üzeri eksi j omega'nın artan kuvvetleri bir seri açılımı. Bu da nedir? Bu 1 bölü 1-x'e karşılık gelir. Bunun seri açılımlarının karşılıklıdır. Bunu 1 bölü 1- A çarpı E üzeri eksi j omega şeklinde yazabiliriz.
+
+689
+02:23:38,195 --> 02:23:47,955
+şartımız ne olacak? Şu x'in mutlak değerce birden küçük olması lazım. Mutlak değerce birden büyük olması demek ne demektir peki?
+
+690
+02:23:49,375 --> 02:23:50,055
+Böyle olursa ne olur?
+
+691
+02:23:50,055 --> 02:23:51,595
+Bonsuza Irak süreci.
+
+692
+02:23:51,775 --> 02:23:53,735
+Çok güzel. Bir dakika onu kim söyledi?
+
+693
+02:23:57,492 --> 02:24:00,131
+kim söyledi? Ben söyledim hocam. Hayra.
+
+694
+02:24:00,131 --> 02:24:01,791
+Güzel. Teşekkür ederim.
+
+695
+02:24:02,472 --> 02:24:08,011
+x'in mutlak değerce birden büyük olması bunun zaten dönüşümün alınamayacağı anlamda.
+
+696
+02:24:08,091 --> 02:24:11,691
+Ancak bu şartlar altında, yani burada şöyle bir şey diyeceğiz.
+
+697
+02:24:13,811 --> 02:24:24,891
+a üzeri a çarpı e üzeri j omega dediğimiz şey veya aynı şekilde mutlak değer a ne olacak?
+
+698
+02:24:24,891 --> 02:24:41,551
+küçüktür, bir olacak ki eşit bir olmaması lazım, sıfır olur. Küçük bir olacak, şu ifade sonsuz olarak gitmeyecek, yakın sayan bir durum olacak. Bu şartlar altında bunun Fourier transformu, frekans düzlemindeki karşılığı bu.
+
+699
+02:24:41,551 --> 02:24:43,191
+ve bunu da çizdirirse
+
+700
+02:24:43,191 --> 02:24:46,691
+omega'nın sıfır olduğu noktalarda nasıl bir şey buluruz?
+
+701
+02:24:47,911 --> 02:24:48,791
+Omega sıfırken
+
+702
+02:24:48,791 --> 02:24:53,391
+temel frekansda bir bölü birden bir gibi bir şey buluruz. Omega'yı arttırırsak
+
+703
+02:24:53,391 --> 02:24:57,511
+omega'nın artan değerleriyle ne oluyor? E üzeri sonsuz
+
+704
+02:24:57,511 --> 02:25:01,572
+burası sıfıra gidiyor. Burası sıfıra
+
+705
+02:25:01,572 --> 02:25:03,751
+giderse yani E üzeri sıfır
+
+706
+02:25:03,751 --> 02:25:07,691
+yaklaşık olarak sıfıra gidecek ve bu
+
+707
+02:25:07,691 --> 02:25:08,751
+şöyle azalan
+
+708
+02:25:08,752 --> 02:25:14,512
+nasıl desem bir yere kadar az zaman bir şekilde devam edecek.
+
+709
+02:25:18,252 --> 02:25:21,152
+Burada başka söyleyecek bir şey.
+
+710
+02:25:22,152 --> 02:25:27,652
+Şimdi bunun farklı fonksiyonlarda uygulaması falan da var da onlara uzun uzun girmeyeceğiz.
+
+711
+02:25:27,652 --> 02:25:30,451
+Çünkü dersimiz buna sayısal işaret işlemi değil.
+
+712
+02:25:31,631 --> 02:25:34,892
+Diğer Fourier dönüşümünde gördüğümüz bütün özellikler burada da var.
+
+713
+02:25:35,032 --> 02:25:37,631
+Mesela zamanda öteleme.
+
+714
+02:25:38,751 --> 02:25:56,751
+bir x'en işaretinin zamanında ötelenmesine kadar buna n sıfır kadar mesela burada doğrudan pozitif sayı girdiğimiz kadar. Bunun ayrıca dönüşüm olmak yerine zamanda öteleme yaptığımızda arkadaşlar sürekli zamanda ne yapıyorduk?
+
+715
+02:25:56,751 --> 02:26:08,891
+XT elimizde varken XT'nin karşılığı X, J, Omega'yı da hatırlarsanız X, T, T, T, 0 kadar öteleyince ne yapıyorduk?
+
+716
+02:26:15,924 --> 02:26:17,924
+Evet
+
+717
+02:26:23,283 --> 02:26:53,163
+bir şeyle çarpıyorduk değil mi? Yani x, j, omega'yı tekrardan dönüşüm almıyorduk. e üzeri j, omega, t0 kadar çarpmıyor muyduk arkadaşlar? e üzeri pardon, eksi j, omega, t0 kadar çarpıyorduk ve bu sonucu gösteriyordu. t0 değerimiz neyse. Aynı şey burada da var. Eğer biz elimizde x'nin karşılığı olarak x, omega'yı biliyorsak, burada n0 kadar yaptığımız ötelemenin
+
+718
+02:26:53,163 --> 02:27:04,923
+karşılığı E üzeri, omega, yine pardon omega sıfır değil, n sıfır kadar bir çarpan etkilemektir bunu.
+
+719
+02:27:07,324 --> 02:27:18,923
+Frekansta öteleme yaparsak, yani bunlar karşılıklıydı hatırlarsanız, bunun karşılığı olarak eğer elimizde x, omega x'i, omega sıfır kadar öteleme varsa bu da
+
+720
+02:27:18,923 --> 02:27:32,303
+zamanda yani en düzleminde omega 0 kadar çarpmak demek. Yani elimizde Xn var. Xn çarpı E üzeri, J omega 0 çarpı N kadar bir çarpan eklemek.
+
+721
+02:27:34,763 --> 02:27:40,944
+Doğrusallık özelliği falan var. Yani ayrı ayrı şeyleri yapabiliyoruz. Ölçekleme falan onlarla aynı.
+
+722
+02:27:51,924 --> 02:28:17,463
+konvolüsyona bakalım. Eğer elimizde x1n işaretinin frekans düzlemindeki karşılığı ve x2n işaretinin frekans düzlemindeki karşılığı varsa karşılıklı olarak tekrardan konvolüsyon almak yerine x1 omega ile x2 omega'yı çarpıp direkt vektörel çarpma yapıp sonuç elde ediyoruz.
+
+723
+02:28:17,463 --> 02:28:23,083
+Eğer çarpma yapacaksak da frekans düzleminde konvolüsyon almamız gerekiyordu.
+
+724
+02:28:23,083 --> 02:28:26,083
+Bakalım başka.
+
+725
+02:28:31,252 --> 02:28:32,571
+Bu kadar yeterler herhalde.
+
+726
+02:28:32,891 --> 02:28:34,291
+Çok fazla şeyle gerek yok.
+
+727
+02:28:35,971 --> 02:28:40,191
+Cumartesi günü bununla alakalı belki birkaç tane de örnek çözeriz.
+
+728
+02:28:40,191 --> 02:28:47,631
+Özellikle ayrık zamanlı sistemler üzerinden bazı kolaylıklar.
+
+729
+02:28:47,711 --> 02:28:50,611
+Mesela geçenlerde bir diferansiyel denklem çözmüştük.
+
+730
+02:28:51,331 --> 02:28:53,191
+Burada da fark denklemlerini çözebiliyoruz.
+
+731
+02:28:54,012 --> 02:28:55,211
+Onu da aslında konuşuruz.
+
+732
+02:28:55,551 --> 02:28:57,031
+Bugünlük kadar iyi yüklenmeyelim.
+
+733
+02:28:58,051 --> 02:28:59,191
+Şimdi hem...
+
+734
+02:28:59,191 --> 02:29:12,071
+bırakacağım hem Furyer transform'da hem de Furyer serilerinde ve şöyle diyelim öyle
+
+735
+02:29:12,071 --> 02:29:20,491
+söylemeyin Furyer transformu açısından düşündük olursak bir kontinüüs bir de diskrik
+
+736
+02:29:20,491 --> 02:29:29,731
+bu ya transform gördük değil mi arkadaşlar ikisinde de sonsuza gitme durumu olasılığı
+
+737
+02:29:29,731 --> 02:29:38,991
+var bu yer tanesi belli şartlar altında kabullenerek kabul edilerek gerçekleştirilen dönüşüm Peki
+
+738
+02:29:38,991 --> 02:29:46,332
+sonsuza gidersek ne yapacağız yani işaretimiz sonsuza gidiyorsa bunun bir çözümü yok mu bunun
+
+739
+02:29:46,332 --> 02:29:52,832
+için arkadaşlar iki tane yeni dönüşüm önerilmiş daha çok matematikler önerdiği şey kontinu üst
+
+740
+02:29:52,832 --> 02:29:59,891
+üzerinde Eğer sonsuza ile gitme durum varsa yani konu ördü değil de bırak zamanın İngilizcesi neydi
+
+741
+02:29:59,891 --> 02:30:12,432
+da veririz değil yani son bir durumu yazdınız yani sonsuza Epoç olurdu onun ayrı bir adı yani
+
+742
+02:30:12,432 --> 02:30:14,631
+ve divergence olabilir arkadaşlar.
+
+743
+02:30:14,771 --> 02:30:15,451
+Sonsuza gitme.
+
+744
+02:30:16,412 --> 02:30:17,112
+Bu durumda
+
+745
+02:30:17,112 --> 02:30:21,031
+continuous işaretler için Laplace transform'u
+
+746
+02:30:21,031 --> 02:30:22,732
+yani continuous
+
+747
+02:30:22,732 --> 02:30:24,451
+Fourier transform'u uygulamakken de
+
+748
+02:30:24,451 --> 02:30:26,152
+Laplace transform kullanacağız.
+
+749
+02:30:27,531 --> 02:30:29,211
+Discrete Fourier transform'u
+
+750
+02:30:29,211 --> 02:30:30,231
+için de arkadaşlar
+
+751
+02:30:30,231 --> 02:30:32,192
+Z transform'dan faydalanacağız.
+
+752
+02:30:33,552 --> 02:30:33,792
+Bu
+
+753
+02:30:33,792 --> 02:30:36,631
+ikisi de yaptığı şey şu
+
+754
+02:30:36,631 --> 02:30:38,091
+işareti
+
+755
+02:30:38,091 --> 02:30:40,552
+sonsuza götürmeyi engelleyen
+
+756
+02:30:40,552 --> 02:30:42,412
+bir parametre ile çarpım
+
+757
+02:30:42,412 --> 02:30:43,171
+yapmayı sağladı.
+
+758
+02:30:44,212 --> 02:30:46,311
+Onu daha sonra tekrar konuda. E üzeri mesela
+
+759
+02:30:46,311 --> 02:30:47,712
+eksi ST diyeceğiz.
+
+760
+02:30:48,591 --> 02:30:50,132
+DT diyeceğiz. İşaretimiz de
+
+761
+02:30:50,132 --> 02:30:52,052
+FT olacak. İşte eksi sonsuzdan
+
+762
+02:30:52,052 --> 02:30:53,992
+artı sonsuza. Şu eksi
+
+763
+02:30:53,992 --> 02:30:55,112
+S sayesinde
+
+764
+02:30:55,112 --> 02:30:57,432
+eksi parametresi sayesinde
+
+765
+02:30:57,432 --> 02:31:00,171
+işaretimizin tepesine aslında bir şekilde
+
+766
+02:31:00,171 --> 02:31:01,712
+basacak. Onu
+
+767
+02:31:01,712 --> 02:31:03,772
+sonsuza götürecek. Tabi büyükler bozuyor.
+
+768
+02:31:04,832 --> 02:31:06,171
+Sonsuza gitmesini engelledik
+
+769
+02:31:06,171 --> 02:31:08,232
+bir genel dönüşüm
+
+770
+02:31:08,232 --> 02:31:09,852
+hali var. Aynısı Z
+
+771
+02:31:09,851 --> 02:31:17,351
+ve transformada diskret hali için var yani bu yer transforma hem sürekli zamanda hem de aylık
+
+772
+02:31:17,351 --> 02:31:23,291
+zamanda daha genel hale yazan baktığı transit transformları ile devam edeceğiz şey yaptığımız
+
+773
+02:31:23,291 --> 02:31:28,211
+konvaryasyon işlemi veya işte bir an seyden kendini çözümle alakalı işlemler orada daha
+
+774
+02:31:28,211 --> 02:31:34,091
+kolay Aslında görülüyor olacak bunların ters transformlarına falan da bakacağız yeri gelince
+
+775
+02:31:34,091 --> 02:31:38,171
+bugünlük kadar yeter herhangi bir sorunuz var mı arkadaşlar
+
+776
+02:31:41,780 --> 02:31:53,660
+Cumartesi dediğim gibi, krizimiz var. Ondan sonra başka bir krizimiz, örneklerle konularda devam edeceğiz.
+
+777
+02:31:54,319 --> 02:32:00,359
+Hocam, bu Cumartesi'ki kriz, bu geçmiş iki haftanın konuları mı yoksa yine sadece bu haftanın özeti gibi?
+
+778
+02:32:00,359 --> 02:32:07,299
+Yok, geçen haftalar bu haftanın konularına dahil, yani şöyle, Fourier dönüşümüyle alakalı bir konu yok.
+
+779
+02:32:07,299 --> 02:32:20,699
+4 veya 5 veya 6 soru var. Yani biz konvolüsyon, Fourier transformu ile alakalı şeyler konusunda sorular hazırlamıştım. Şu an bir dakika bakayım hatta ekran paylaşmıyorum değil mi sizinle?
+
+780
+02:32:20,699 --> 02:32:23,739
+Yok. Şöyle yapalım.
+
+781
+02:32:24,519 --> 02:32:35,960
+Ders notu, signal, yans, fast quiz. Evet. Yani Fourier transformu var, frekans düzemi ile alakalı şeyler var.
+
+782
+02:32:35,960 --> 02:32:45,300
+Fourier serileri var. Genellikle Fourier ve konvolüsyon, çünkü konvolüsyondan çok bir şey yapmamıştık.
+
+783
+02:32:45,399 --> 02:32:54,239
+Altı tane soru hazırlamıştık. Fourier serilerine, Fourier transforma ve konvolüsyon işlemini geçen iki haftayı içeren sorular.
+
+784
+02:32:55,019 --> 02:32:55,960
+Sağ olun hocam.
+
+785
+02:32:55,960 --> 02:32:57,379
+Sağ olun.
+
+786
+02:32:57,379 --> 02:33:08,159
+geçen şeye göre bakarsam yani güz dönemine göre yani ortalama fena değil ama biraz pratiklikten zaman nasıldı arkadaşlar süre?
+
+787
+02:33:09,539 --> 02:33:11,280
+Son soruda biraz yetmemiş gibi sanki.
+
+788
+02:33:12,739 --> 02:33:17,819
+Hocam süre aslında yeterliydi hani hepsini ayrı ayrı yazmak zorundayız ya o biraz zaman kaybettiriyor.
+
+789
+02:33:18,099 --> 02:33:20,159
+Hani işlemleri teker teker yazmak zorunda olmaz mısın?
+
+790
+02:33:20,159 --> 02:33:27,220
+Anladım. Yani yine dört veya beş soru olacak finalde ama burada genel sıkıntı şu.
+
+791
+02:33:27,379 --> 02:33:34,539
+çok fazla pratik yapmamanızdan kaynaklı. Yani işlem alışkanlığı olursa biraz daha hızlı ilerler.
+
+792
+02:33:35,820 --> 02:33:46,199
+Bu yüzden formülleri mesela hani çoğunu ezberim. Hani belki siz formülleri açıp slide'lardan baktınız. Normalde ben ders notlarınız olduğu için sınav kağıdına formül yazmıyorum.
+
+793
+02:33:46,199 --> 02:33:59,160
+dersi anlatırken çoğuna ezber olduğum için çatır çatır yazıp geçiyorum. Ama burada formül için önceden mesela kağıt hazırlarsanız kendinize faydası olur.
+
+794
+02:34:00,839 --> 02:34:13,360
+Evler formülü bile işinize yarar, bir yerlerde karşınıza gelir. Genel anlamda fena değil de işte bu dersin doğasından kaynaklı bazı bir antipati var öğrencilerde.
+
+795
+02:34:13,360 --> 02:34:40,580
+Ama bu ders sizi makine öğrenmesi gibi, akıllı sistem, yapay zeka gibi konularda bir gün de taşıyacak. Özellikle akademik çalışacaksanız bilgileri içeren bir ders. Onun için önemli. Yani körü körüne görüntü işleme, video işleme yapmak ileride çok bir anlam ifade etmiyor. Çünkü tıkanıp kalıyor öğrenci. Sadece var olan yöntemleri kullanmak üzerine bir şeyler öğreniyor. Yöntemler sürekli değişiyor, yeni yeni şeyler çıkıyor.
+
+796
+02:34:40,580 --> 02:34:46,119
+temelleri bilmek için bu ders bunun nedeni önemli. Yani konvolüsyon anlattık ya mesela size.
+
+797
+02:34:47,320 --> 02:34:53,419
+Hani emin olun konferanslarda veya makalelerde, dergilerde işte şey geliyor, hakemlik geliyor.
+
+798
+02:34:54,040 --> 02:34:59,020
+Bu konvolüsyon işleminin ne olduğunu bilmeden sadece aldım kullandım şeklinde veya işte hazır kodu var.
+
+799
+02:34:59,020 --> 02:35:02,619
+Daha sonra onları da size göstereceğim işte derin öğrenme ilanakalı şeyde.
+
+800
+02:35:03,280 --> 02:35:07,520
+Aldım kullandım. Şimdi konvolüsyonun da birkaç farklı şekli var veya başka parametre var.
+
+801
+02:35:07,519 --> 02:35:15,459
+öyle bırakmış. Mesela şu sıfır noktasının tespit edilmesi görüntü işlemede, mettebde önemli bir şey.
+
+802
+02:35:15,459 --> 02:35:23,399
+Yani görüntüyü yanlış işlemeye sebep oluyor. Bu sefer bilgi çıkaramıyorsun. O shift işleminin yapılması gerekiyor bir konvolüsyon yapıldıktan sonra.
+
+803
+02:35:24,419 --> 02:35:32,199
+Bunlar önemli başlıyor. Yoksa hani bu iş sadece bu işin programlanması, mettebde kod yazılması, farkında kod yazılmasından ibaret değil.
+
+804
+02:35:33,079 --> 02:35:36,779
+Teorisini bilirseniz sizi bir üst noktaya taşır buradaki bilgiler.
+
+805
+02:35:37,519 --> 02:35:40,279
+var mı herhangi bir sorunuz isteyiniz, merak ettiniz bir şey.
+
+806
+02:35:44,180 --> 02:35:49,819
+Hocam, ben bir şey söylemek istiyorum da, bu güzeden önce örnek çözmüştünüz, onun bir katkısı oldu, bayağı onu söylemek istiyorum.
+
+807
+02:35:51,100 --> 02:35:58,239
+Evet, o geçen dönemde genel bir şey veriyor, orada olumlu bir bildirim vardı.
+
+808
+02:35:58,979 --> 02:36:05,680
+Şimdi bu derste, dediğim gibi, soru çözmek çok önemli, ben onun için size örnek sorular sayfası açtım bu Google Drive'daki şeyde.
+
+809
+02:36:06,780 --> 02:36:12,819
+Ekstra soru çözüm yapmadan biraz soru, tabii derste her konudan 2-3 tane soru çözüp geçmek durumundadır.
+
+810
+02:36:12,819 --> 02:36:32,299
+yoksa 10 tane soru çözecek gibi değil. Zaman yetmez. Dersin konusu da çok fazla. Bazı konuları hatta dijital işaret işlemeye ayırdık. Buradan çıkardık. Elimden geldiğince o tarz sorular çözüyorum ama burada size bahsettiğim kitaplardan ve internetteki kaynaklardan bir sürü soru bulabilirsiniz.
+
+811
+02:36:32,299 --> 02:36:35,200
+Kuyizlerde doğrudan bilgi test ediyorum.
+
+812
+02:36:35,459 --> 02:36:40,059
+Yani ne bileyim işte drakt işaretinin bilgisi geçenlerde konuştuk veya enerji bilgisi.
+
+813
+02:36:40,059 --> 02:36:45,559
+Bunlar doğrudan hani derse katılan birinin öğrendiği şeyi orada tatbik edeceği sorular oluyor.
+
+814
+02:36:46,019 --> 02:36:49,439
+Ama sınavda biraz daha pratik yapmaya ihtiyacınız var.
+
+815
+02:36:49,519 --> 02:36:53,159
+Önceden bir antrenmanlı olmak sizi sınavda daha rahat ettirir.
+
+816
+02:36:54,379 --> 02:36:55,980
+Aynen antrenman gibi düşünebilirsiniz.
+
+817
+02:36:56,159 --> 02:36:58,019
+Elimden geldiğince ben yapmaya çalışırım da.
+
+818
+02:36:58,760 --> 02:37:02,199
+Hocam finalden önce de öyle bir soru çözme yapabilir miyiz?
+
+819
+02:37:02,299 --> 02:37:29,079
+yaparız. Şimdi finalden önceki konularımız şu ana kadar herhangi bir problemi çözmek için gördüğümüz konular işin zor tarafıydı. Yani konvolüsyon alacaksak konvolüsyon integrali uygulayacağız. İşte ne bileyim Fourier transformu alacaksak işte bir integral hesabı veya diferansiyel dönüşüm için bazı şeydir. Şimdi Laplace ve z-transformu ve Fourier transformu özellikleri finale bırakılan konular.
+
+820
+02:37:29,079 --> 02:37:46,159
+aslında final dikkat edilirse ve yani derslerde konuya hakim olunursa daha kolay çözüme gitmeyi sağlayan konular olacak. Yani bir problemi Laplace'da çözmek, Fourier'le çözmekten daha kolay açıkçası. O zaman gelince yani bu kadar kolay mı diyeceğiz?
+
+821
+02:37:46,159 --> 02:37:55,339
+Sadece sizin kalkulus, yani lise matematiği kalkulus da değil, lise matematiği bilginizde sorun varsa iş biraz orada zorlaşıyor.
+
+822
+02:37:56,339 --> 02:38:02,859
+Hani burada karmaşık sayılar, integral, şu biraz orada belki integrali daha çok kullanacağız veya karmaşık sayıları daha çok kullanacağız ama
+
+823
+02:38:02,859 --> 02:38:06,040
+hakikaten zor değil, lise matematiği seviyesinde.
+
+824
+02:38:07,180 --> 02:38:15,279
+Onu öğrendikten sonra ya işte bu konvolüsyon daha kolay çözülüyormuş veya ne bileyim diferansiyel denklem daha kolay çözülüyormuş diye hissedeceksiniz.
+
+825
+02:38:15,279 --> 02:38:21,039
+orada ekstra tabii işte her konudan birkaç soru çözeriz, pratik yapmış oluruz.
+
+826
+02:38:21,539 --> 02:38:26,339
+Şeydeki sorular da yeterli benden ayrı, klasördeki sorular da yeterli.
+
+827
+02:38:26,459 --> 02:38:33,219
+Hatta orada bayağı önceden ders veren hocaların hazırladığı sorular olduğu için ileri düzey sorular da var.
+
+828
+02:38:33,439 --> 02:38:38,019
+Dersin içeriğini daha da zor hale getiren farklı konulardan sorular da görebilirsiniz.
+
+829
+02:38:38,019 --> 02:38:41,939
+Onların hepsini çözmek kalkmayın. Mesela sampling'i anlatmadık.
+
+830
+02:38:41,939 --> 02:38:49,759
+filtreleri burada anlatmıyoruz filtrelerde sayısal işaret işlemine. Buradaki içeriye paralel oradaki sorulardan çözerseniz faydalı olur.
+
+831
+02:38:52,759 --> 02:38:52,959
+Evet.
+
+832
+02:38:53,119 --> 02:38:55,400
+Eko'yüz olacaktı değil mi? Bu hafta sonu.
+
+833
+02:38:55,779 --> 02:38:56,540
+Evet, var.
+
+834
+02:38:59,987 --> 02:39:24,748
+şöyle şeye baktığında bilmiyorum size paylaştım mı daha önce? Bahar listeler. Ben ilerleyen haftalarda paylaştım diye düşünüyorum da. Şu an ekran gelmiyor değil mi size? Yok. Şöyle yapalım. Çünkü benim notlandırmak için kullandığım Excel.
+
+835
+02:39:24,748 --> 02:39:33,688
+quiz ödev, ikinci ödev bu hafta gelecek, vize falan. Şu an ortalamalarımız şu durumda, yani 40'a yaklaşan arkadaşlar var.
+
+836
+02:39:35,467 --> 02:39:40,947
+Burada niye Efe görünüyor? Çünkü ben burada aralıkları USİS'in şeyine göre değiştiriyorum.
+
+837
+02:39:41,107 --> 02:39:54,287
+İşte diyorum ki AA 85'ten başlamasında ne bileyim 25'ten başlayınca buradaki AA sayısı falan işte tabii şunları da düzeltmek gerekecek.
+
+838
+02:39:54,287 --> 02:40:02,168
+bir şey yok. Böyle kalmaz. Burada notlar falan da otomatik oluşturuyor işte bu yüzdeler ne kadar falan
+
+839
+02:40:02,168 --> 02:40:08,528
+onları hesaplıyorum. Şu an çoğu kişinin aslında durumu iyi. Sınava katılmayanlara bir şey diyemem.
+
+840
+02:40:08,528 --> 02:40:14,928
+Meccuder vermenler onlara bir şey diyemem de. Yani birazcık gayret gösteren bizi de özellikle elinin üzerinde
+
+841
+02:40:14,928 --> 02:40:23,928
+alanlar avantajlı durumda. Her şeyde bitmiş değil tabii. Devam ederseniz sonuna kadar dersten geçmek zor bir şey değil.
+
+842
+02:40:23,927 --> 02:40:33,467
+Hocam burada çok pardon hocam lafınızı böldüm de burada yazdımışsınız da takvimde büt tarihi yok.
+
+843
+02:40:33,467 --> 02:40:38,427
+Bütünleme yok. Bu benim kullandığım kendi egzerimde dönem içinde böyle bir şey kullanıyorum.
+
+844
+02:40:38,787 --> 02:40:46,207
+Yani bu siz bazen kilitleniyor biliyorsunuz. Öyle olduğu için burada bazı işleri kendi tarafımda daha hızlı hallediyorum.
+
+845
+02:40:46,727 --> 02:40:47,727
+Normalde bütünleme yok.
+
+846
+02:40:47,727 --> 02:41:14,288
+Bu arada bilgi işleme mail attım şey konusunda bilmem size bir bilgi geldi mi? U-SİS'e not girişi olmuyor. Bir de bir ara U-SİS'in kapatılıp yerine yenisi alındı. Onunla alakalı bir süreç vardı. Bilmiyorum size bir bilgi geldi mi o konuda? Belki notları yeni sisteme gelecek olabilirim. Bu konuda bir şey öğrendirsem size haber ederim. U-SİS'e şu an not girişi yapamıyorum. Mizeleri veya ne bileyim ödev ortalamalarına gireceğim normalde.
+
+847
+02:41:14,288 --> 02:41:18,388
+var mı size gelen bir bilgi haler?
+
+848
+02:41:19,288 --> 02:41:19,788
+Hayır hocam.
+
+849
+02:41:21,428 --> 02:41:23,088
+Neyse, öğreniniz bir şekilde.
+
+850
+02:41:24,348 --> 02:41:31,808
+Artık usis olmayacak mı? Herhalde usisin yerine bir yazılım alınmış. Öyle bir şey geçenlerde duydum.
+
+851
+02:41:33,348 --> 02:41:37,687
+Süreç ne durumda bilmiyorum ama herhalde usisin yerine farklı bir yazılım gelecek.
+
+852
+02:41:39,208 --> 02:41:43,907
+Amaç, yani Allah'a şükür demiş Muhammed, gelen gideni aratmasın inşallah.
+
+853
+02:41:43,907 --> 02:41:52,508
+öyle söyleyeyim. Hatta sözümüz vardır. Gelenlikten aratmadıkları inşallah hoş gelsin, sefağa gelsin de beni gelen yazın.
+
+854
+02:41:54,467 --> 02:41:58,687
+Peki, hepinize iyi akşamlar arkadaşlar. Cumartesi görüşmek üzere inşallah. Hoşçakalın.
+
+855
+02:41:58,747 --> 02:41:59,368
+Görüşürüz hocam.

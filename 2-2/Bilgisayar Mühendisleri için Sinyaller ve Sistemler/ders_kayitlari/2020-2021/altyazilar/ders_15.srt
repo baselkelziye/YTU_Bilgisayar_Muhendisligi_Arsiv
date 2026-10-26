@@ -1,0 +1,2367 @@
+1
+00:03:02,163 --> 00:03:12,964
+Merhaba arkadaşlar. Şu an şey görünüyor herhalde. Quiz 4. Sistemde görüyor olmanız lazım.
+
+2
+00:03:35,123 --> 00:03:42,123
+z-dönüşümüyle ayakalı kısımları bitirelim. Sonra dönemi bitireceğiz.
+
+3
+00:03:45,812 --> 00:04:01,171
+yakın saklık bölgesi ile alakalı şartın farkında olun arkadaşlar. Çünkü gelen soru hem normal dönüşüm hem ters dönüşüm olduğunda sizi yanıltabiliyor.
+
+4
+00:04:01,171 --> 00:04:06,812
+Yani şuna bakacağız. Tekrar z dönüşüm ile alakalı yazalım.
+
+5
+00:04:06,812 --> 00:04:25,451
+1xz, eksi sonsuzdan artı sonsuza x n işareti çarpı z üzere eksen. Şimdi bunu yaparken, şuradaki ifadenin,
+
+6
+00:04:25,451 --> 00:04:30,371
+Yani biraz önce açtık nasıl oldu z-dönüşümünün şeyini daha da yapılıştırdık
+
+7
+00:04:30,371 --> 00:04:40,691
+Bu toplam sonucunun değerini etkileyen şeyler nelerdir? Bir kere şu sınırlardır
+
+8
+00:04:40,691 --> 00:04:44,352
+Bizim sinyallerimizde de genelde şöyle olur
+
+9
+00:04:44,352 --> 00:04:48,331
+Yani ya sağ taraflı ya sol taraflı ya u n veriyoruz ya da bu eksen falan
+
+10
+00:04:48,331 --> 00:04:49,532
+Sınırlar değişiyor
+
+11
+00:04:49,532 --> 00:04:53,951
+Sınırların değişimiyle örneğin mesela şöyle bir şey elde ettik
+
+12
+00:04:53,951 --> 00:05:15,771
+n eşittir sıfırdan sonsuza ne diyelim a çarpı z üzeri eksi bir n diye bir şey yerleştirdik. Yani bu nedir? a üzeri n çarpı un sinyalinin z üzeri n'ine çarpımı normalde böyle. Şimdi bu ifadenin bir kere ne olması lazım?
+
+13
+00:05:15,771 --> 00:05:32,231
+sıfırdan sonsuza giderken biz sıfır yazacağız, bir yazacağız, iki yazacağız. Bu toplamın sonsuzdan küçük olması lazım. Bu toplamın sonsuzdan küçük olması için şuranın 1, 2, 3 gibi yani birden büyük sayı olmaması gerekiyor öyle değil mi?
+
+14
+00:05:32,231 --> 00:05:40,532
+A çarpı z-dü üzeri eksi birim mesela 5 oldu. Şimdi 5 dersek bu zaten enin artan derecede değil ve ne oluyor?
+
+15
+00:05:40,532 --> 00:05:50,971
+Eksponansiyel bir fonksiyon gibi davranacak ve bu sonsuza gider. O zaman A çarpı z-dü üzeri eksi birin birin altında bir şey olması gerekiyor ki
+
+16
+00:05:50,971 --> 00:05:59,892
+raksama olmasın, yakınsama olsun. Bu şartlar altında zaten yakınsaklık bölgesi tayin edilebiliyor, doğru bir şekilde bulunabiliyor.
+
+17
+00:05:59,892 --> 00:06:04,252
+Buna dikkat etmeniz yeterli. Onu zaten öğleden önce bayağı konuştuk.
+
+18
+00:06:07,912 --> 00:06:10,091
+Hocam konudan mağımsız bir şey sorabilir miyim?
+
+19
+00:06:11,172 --> 00:06:11,752
+Buyurun.
+
+20
+00:06:14,252 --> 00:06:22,352
+Ödevi saat 3'te başlıyor. 5.30'a 3'te tanımlamışsınız da. Yanlışlık yok yani. Siz sabah galiba 2 gibi filan demişsiniz de.
+
+21
+00:06:23,672 --> 00:06:27,352
+Ama bir dakika ben bir mail gönderdim ya. Orada 3 yazmıyor mu?
+
+22
+00:06:27,351 --> 00:06:30,131
+Yok yok ben sabah öğlediniz ondan sordum
+
+23
+00:06:30,131 --> 00:06:36,051
+Yani iki gibi şöyle açıklarız ama saat mailin gönderdiğim şeye göre tanımladım
+
+24
+00:06:36,051 --> 00:06:39,591
+Çünkü saat üçte girecek arkadaşlarınız vardır katılmazlar
+
+25
+00:06:39,591 --> 00:06:42,431
+Biz zaten üçe doğru anca bitiririz
+
+26
+00:06:42,431 --> 00:06:44,251
+Tamam hocam
+
+27
+00:06:44,251 --> 00:06:53,211
+Şimdi temel sinyallerin dönüşümlerine baktık birim darbenin
+
+28
+00:06:53,211 --> 00:06:54,511
+Mesela şunu sorayım
+
+29
+00:06:54,511 --> 00:07:24,491
+ve
+
+30
+00:07:01,267 --> 00:07:03,267
+Bunun zehk dönüşümü nedir arkadaşlar?
+
+31
+00:07:13,492 --> 00:07:17,492
+z-d-5
+
+32
+00:07:17,492 --> 00:07:23,492
+yani ne oluyor? 5 prim ötelenmiş. Artı 5 olsaydı
+
+33
+00:07:23,492 --> 00:07:27,492
+o da z-d-5
+
+34
+00:07:27,492 --> 00:07:29,492
+yani oradan polinom gibi
+
+35
+00:07:29,492 --> 00:07:33,492
+düşünebiliyorsunuz. Bu açıdan kolay.
+
+36
+00:07:33,492 --> 00:07:41,492
+Şöyle hızlıca yaygın kullanılanları da yazalım. Mesela u-n'in z-dönüşümü neydi?
+
+37
+00:07:45,108 --> 00:08:07,547
+bir bölü bir eksi z üzeri eksi bir veya z bölü z eksi bir yüvenler. Şimdi burada yakın saklık bölgesi birden büyük olmak durumunda. Peki u eksi u eksen eksi bir nedir?
+
+38
+00:08:07,547 --> 00:08:13,947
+işin ilginç tarafı ve kütücü tarafı bir eksi z üzeri yani zorlaştıran şey z bölü z eksidir.
+
+39
+00:08:15,007 --> 00:08:21,947
+Yani ikisi de bakın aynı. Sadece burada yakın saklık bölgesinin birden küçük olma durumunu konuşuyoruz.
+
+40
+00:08:21,948 --> 00:08:25,227
+A üzeri n demiştik.
+
+41
+00:08:25,227 --> 00:08:27,808
+Tabi tek taraflı u n diyelim buna.
+
+42
+00:08:29,387 --> 00:08:37,808
+Veya a üzeri n, eksi a üzeri n çarpı u eksi n eksi bir diyelim.
+
+43
+00:08:38,587 --> 00:08:40,107
+Bu ikisinin de nedir arkadaşlar?
+
+44
+00:08:40,288 --> 00:08:40,868
+Şeyi aynıdır.
+
+45
+00:08:40,948 --> 00:08:46,027
+Bir bölü, bir eksi a çarpı neydi?
+
+46
+00:08:46,207 --> 00:08:47,107
+Z üzeri eksi bir.
+
+47
+00:08:47,107 --> 00:09:05,847
+veya z ile hem payı hem de payı çarparsak z bölü z-a. Şu da aynı. Sadirini değişiyor. Yakın saklık bölgesi. Burada z dediğimiz şey büyüktür a olacak. Hatta şöyle diyelim. Şurada da z dediğimiz şey küçüktür a olacak.
+
+48
+00:09:05,847 --> 00:09:25,627
+Şimdi bu tarz şeylerde n ile çarpımın yani n çarpı a üzeri n çok kullanılan bir şey. Burada olan şey şu tabi uzun uzun açıp yapılabilir de z dönüşüm özelliklerinden bunu bulmak daha kolay.
+
+49
+00:09:25,627 --> 00:09:37,987
+A çarpı z üzeri eksi bir bölü bir türev özelliğinden bahsetmiştik. Onu şimdi tekrar konuşalım. A çarpı z üzeri eksi birin karesi.
+
+50
+00:09:38,427 --> 00:09:46,187
+Burada bunu söylüyorum. Eğer iki tarafı payı ve paydayı z ile çarparsak A yukarıda yalnız kalacak. A bölü.
+
+51
+00:09:46,187 --> 00:10:14,167
+değil mi? Gerçi şey olur. Çarpmaya gerekmiyor. Burada payı paydayı çarpmaya gerekmiyor. Bu şekilde yazılırız. Ha bu ifadeyi açıp düzeltirsek şu olabilir. A çarpı z bölü z eksi a'nın karesi. Pay payda açılımıyla işte bu yani bir eksi a bölü z. Burada şey yaparsınız, açılım yaparsınız. Ondan sonra bu açılımı yukarıya yansıtırsınız.
+
+52
+00:10:14,167 --> 00:10:35,367
+bu dönüşümde çıkabilir. Burada da z-dönüşümüz a'dan büyük olma şartı var. Tabii şu bir kısa yol tek bir n ile çarpma. Bunun daha uzun yoluna şey daha böyle geçerli olan şey neydi? n ile çarpma.
+
+53
+00:10:35,367 --> 00:10:38,947
+Multiplication by n
+
+54
+00:10:38,947 --> 00:10:47,187
+Herhangi bir işareti x'in işaretini n ile çarpmak demek ve bunun z dönüşümünü almak demek
+
+55
+00:10:47,187 --> 00:10:53,627
+Yani normalde x'in z dönüşümü x, z
+
+56
+00:10:53,627 --> 00:10:58,867
+n çarpı x'in z dönüşümü nasıl alınacak dersek
+
+57
+00:10:58,867 --> 00:11:07,328
+elimizde eğer x'nin z dönüşümü varsa bunun için n çarpı x'ini ayrıca hesaplayıp bu işi yapmaya gerek yok demiştik.
+
+58
+00:11:08,387 --> 00:11:17,267
+D, xz yani z düzleminde bir derece türev alıyoruz ve eksi z ile çarpıyoruz.
+
+59
+00:11:18,647 --> 00:11:23,387
+Mesela a üzeri n'in ne olduğunu bileceğiz arkadaşlar. Şunun olduğunu bilelim.
+
+60
+00:11:23,387 --> 00:11:44,027
+z bölü z eksi a burada z e göre türev alırsak şimdi z e göre türev almak için şöyle z bölü z eksi a diyelim bakalım kazası yapabilecek miyiz bunun türevi nedir payın türevi bir z e göre türevi bir çarpı payda yani z eksi a
+
+61
+00:11:47,508 --> 00:11:58,008
+art, eksi, paydanın türevi değil mi? z-a'nın türevi nedir? Bu da birdir. çarpı pay z geliyor.
+
+62
+00:11:58,008 --> 00:12:09,008
+bölü şeyin karesi, paydanın karesi. Şimdi z'ler gidince ne oluyor? eksi a kalıyor. eksi a buradan. Bir de ne yapacağız? eksi z ile çarpacağız.
+
+63
+00:12:09,008 --> 00:12:29,567
+Yani eksi z ile çarpmak ne demek? Aşağıya şu eksi şey olur, şurayı da eksi z ile çarpalım, eksi z ne olacaktır? z çarpı a bölü z eksi a'nın karesi. Bakın neyi bulduk? Şunu bulduk, a çarpı z, z eksi a'nın karesi.
+
+64
+00:12:29,567 --> 00:12:48,447
+Bunu ters dönüşümde de çok kullanıyoruz. Eğer böyle hem payda hem z-a gibi bir şey var ama kare varsa demek ki bir a üzeri n gibi bir şeyin bir şeyle bir n gibi bir ifadeyle çarpılmış olmasını göreceğiz.
+
+65
+00:12:48,807 --> 00:12:57,767
+Hem yukarıda z var hem de küp gibi bir şey var. Şimdi bunun bir dereceler türevini alın. O da nedir? n kare ile çarpım demektir.
+
+66
+00:12:59,567 --> 00:13:09,447
+ekleyebilirsiniz. Konvolüsyon falan söylemiştik. Şimdi ters dönüşüm için normalde şu kullanılıyor arkadaşlar.
+
+67
+00:13:09,447 --> 00:13:28,567
+Bir matematiçi olsaydık, baya bir ileri seviyor olan 2PiJ integral kontur x, z, çarpı z üzeri n-1, d, z.
+
+68
+00:13:28,567 --> 00:13:39,927
+bakın integral dönüşümü yine z-düzere n-1 var, d-z var, demek ki bu ne olacak? Dışarıda bu iş bittikten sonra ene bağlı olarak değişecek integral dönüşümü mantığında.
+
+69
+00:13:40,728 --> 00:13:49,907
+Fakat burada şu kontrol integralini çözmek vesaire bu işler çok uzun şeyler, yani kompleks değişkenli fonksiyonlar diye önceden dersler vardı.
+
+70
+00:13:49,907 --> 00:14:05,107
+onları bilmek falan gerekiyor. Onun yerine z-dönüşüm tablolarını, biraz önce gösterdiğimiz temel yöntemleri ve z-dönüşümlerinin temel özelliklerini kullanmak bizim için daha kolay.
+
+71
+00:14:05,407 --> 00:14:17,167
+Tabi burada yine kısmi kesirlere yani parçalı kesirlere açılım yapmak, işte basit kesirler formatında yazmak bizim daha çok işimize gelen bir şey. Onları daha çok kullanıyoruz.
+
+72
+00:14:17,168 --> 00:14:24,427
+oradaki kuralların aynısı yani Laplace'da gösterdiğimiz kuralların aynısı burada da geçerli.
+
+73
+00:14:26,427 --> 00:14:28,868
+Burada herhangi bir sorumuz var mı arkadaşlar?
+
+74
+00:14:38,580 --> 00:14:40,580
+kaç tane örnek yapacağım?
+
+75
+00:14:42,580 --> 00:14:43,580
+z-dönüşümün
+
+76
+00:14:45,580 --> 00:14:48,580
+özelliklerinden bakayım bir iki örnek bulabilirsem
+
+77
+00:15:20,403 --> 00:15:22,403
+Şuna bakalım.
+
+78
+00:15:25,716 --> 00:15:32,716
+xz eşittir, 1, 3, z bölü
+
+79
+00:15:33,235 --> 00:15:50,235
+2z'nin karesi, eksi 3z artı 1. Bunun ters z dönüşünü bulun demişiz. Şimdi burada yapacağımız şey arkadaşlar, önce hani şurayı paydalarını şey yapabiliriz, fark çarpanlarını ayırabiliriz. z bölü.
+
+80
+00:15:52,235 --> 00:16:00,235
+Şunu 2x z eksi 1 çarpı z eksi 1 bölü 2 diye yazabiliriz.
+
+81
+00:16:04,148 --> 00:16:33,167
+Burada aklımıza gelen şey A, B ve C kat sayılarının bulunması. Fakat şimdi şöyle bir şey var. Yukarıda Z olunca, geçen sene bunu arkadaşlar birkaç defa farklı yollar denediler ama en kısa yolu budur. Yukarıda Z olunca, hani şey yok, Z bölü 2. Böyle bir şey kural görmedik. Yani yukarıda bir Z'nin o, yukarıda sabit bir sayı olabilir.
+
+82
+00:16:33,167 --> 00:17:02,947
+veya z bölü z-diksidir. Bakalım yani şuradakilerde hiç böyle bir, gerçi z bölü z-diksidir var ama onun önünde bir kat sayı gelecek. Öyle bir şey yok. Yani a çarpı z bölü z-diksidir yok. Şöyle bir bölü bir şey olsa çıkartmak kolay olur. Onun için burada şöyle bir operasyon yapılıyor. İfadeyi xz bölü z formunda yazıyor. Yani z yazınca şurası ne olacak?
+
+83
+00:17:02,947 --> 00:17:30,387
+burası bir olacak doğru. Yani yukarısı bir, aşağısı iki çarpı, z-1 çarpı, z-1 bölü iki. Bu sayede şu oluyor arkadaşlar, yukarısı bir olan aşağıda da işte A bölü, iki zaten burada doğrudan yazılmayacak, hani şöyle yapabiliriz, c1 bölü mesela z-1 için, çünkü iki zaten şey doğrudan bir ifade.
+
+84
+00:17:30,387 --> 00:17:44,267
+artı c2 bölü z-d1 bölü 2 için biz sabit sayılar bulacağız. Niye birinci dereceden bir sabit sayı aldım? Çünkü aşağıdakiler niye sabit yazdım? Aşağıdakiler birinci dereceden fonksiyon.
+
+85
+00:17:44,267 --> 00:17:47,467
+Şimdi bunu bilmek lazım.
+
+86
+00:17:55,347 --> 00:18:14,347
+Peki burada payda eşitlediğimizde mesela şu ikiyi hatta şuraya yazabiliriz veya ikisine de dağıtabiliriz şöyle olabilir parantez diyelim çünkü sonucunun değişmesi lazım bu şekilde yazabiliriz.
+
+87
+00:18:14,347 --> 00:18:20,007
+fayda eşitleme yaparsak ve fayda eşitlemeye gerek kalmadan doğrudan şunu da kullanabiliriz.
+
+88
+00:18:20,007 --> 00:18:27,667
+Bir bölü, sonuçta biz Z'in yerine bir yazarsak ne olacak? Şunu bulacağız. Bir bölü iki yazarsak öbürünü bulacağız.
+
+89
+00:18:28,627 --> 00:18:43,688
+Bir bölü iki çarpı, Z-1 bölü iki. Burada Z yerine bir yazdığımızda bulacağımız şey o olacaktır.
+
+90
+00:18:44,347 --> 00:19:12,267
+buradan gelecek sonuçta bir. Aynı şekilde c2 ile yazdığımızda, bulduğumuzda eksi bir buluyoruz. Peki o zaman bu ne oluyor? xz bölü z eşittir. Şöyle bir şey oldu. Şimdi z'i kendi yerine geri gönderiyorum. Çünkü şurada z ile eşitleme yapmak, z'ye bağlı terim olmadığı için biraz daha farklı bir sonuç veriyor. Ekstra işlemler yapmak gibi bir zaman öterim vermesine sebep oluyor.
+
+91
+00:19:12,267 --> 00:19:39,367
+ama z bölü z yazınca zaman ötelemesinden kaçabiliyoruz. Şimdi burası nedir? Z bölü z eksi bir eksi z bölü z eksi bir bölü iki. Ha bir de soru da şunu vermiş yani onu da hep unutuyoruz. Genelde sınavda unutmayız da burada ders yaparken unutuyoruz. Z dediğim şey yakın saklık bölgesi bir ikiden küçük olacak.
+
+92
+00:19:39,367 --> 00:20:02,907
+Şimdi 1 bölü 2'den küçük olması ne anlamı ifade ediyor? İşaretin 1 bölü 2 ile olan kökü sol yanlı bir dizi olduğunu yani küçük burada verilen ifadeye göre sol taraf. Sol taraflı olunca şuradaki şartlardan bakarsanız hep bakın şu şekilde U-N-1 şekilde başlısı olacak şekilde bir dönüşüm yapacağız.
+
+93
+00:20:02,907 --> 00:20:28,508
+z bölü z-1 dediğimiz şey nedir arkadaşlar? Bu doğrudan un ama un'in tam sol taraflısı onun için eksi u eksi n eksi 1 yazıyoruz. Öbürü de şu z bölü z-a yani a üzeri n formatında eksi diyelim ama bir de eksi kendiliğinden gelecek işaret sol taraflı olduğu için onun için buraya artı yazacağız.
+
+94
+00:20:28,508 --> 00:20:57,047
+1 bölü 2 üzeri n çarpı u eksi n eksi 1. Bakın bu şekilde çözüme ulaşabiliyoruz. Mesela benzer soruyu z büyüktür 1 bölü 2 yazsaydık bir de öyle şey çözebilirsiniz. Şu kısmı kesirlerle alakalı olduğu için biraz daha sorunun zorlaştırılması için şöyle bir şey yapalım örnek yapalım.
+
+95
+00:20:57,047 --> 00:20:59,288
+Burada bir soru var mıydı bu arada?
+
+96
+00:21:05,748 --> 00:21:07,427
+göremiyorum, çeti açalım.
+
+97
+00:21:14,132 --> 00:21:29,491
+xz şu şekilde olsun bu sefer. z bölü z çarpı z eksi 1 çarpı z eksi 2'nin karesi.
+
+98
+00:21:32,307 --> 00:21:57,068
+şimdi yine Doğru mu yazdım? normalde şu zler birbirini götürebilir arkadaşlar ama bakın burada yine kuralları şey yapamıyoruz yani tablodaki kurallara uydurmak için benzetmek için xz bölü z şeklinde düşünürsek burası ne olacak?
+
+99
+00:22:04,948 --> 00:22:21,227
+xz'i z'e bölersek ne olacak? Şurası aşağıya gelecek. Yukarıda bir bölü. Burada şey vermiş bir arada, şimdi yazalım. z büyüktür, iki olacak. Yani yakın saklık bölgesi ikiden büyük olan yerleri içerecek demiş.
+
+100
+00:22:21,227 --> 00:22:36,587
+Şimdi şu ifadede xz bölü z yazdığımızda z eksi bir kalacak. İki tarafı da z bölmek ne demek? z eksi ikinin karesi diyeceğiz.
+
+101
+00:22:37,867 --> 00:22:43,927
+Acaba şurada şey yok mu ya? Şurada z yok arkadaşlar. Yanlış olmuş.
+
+102
+00:22:43,927 --> 00:22:56,367
+z-1 doğrudan x-d z'e böldük z-1 çarpı z-2'nin karesi. Peki burada nasıl bir kısmı kesilir açılış yapacağız?
+
+103
+00:22:56,367 --> 00:23:12,147
+İşte c1 dersek c1 bölü z-1 artı c2 bölü z-2 artı bu ikinci dereceden olduğu için c2 bölü c3 bölü z-2'nin karesi şeklinde yazacağız.
+
+104
+00:23:13,927 --> 00:23:24,847
+Peki burayı şöyle yapalım, burayı z-2'nin karesi ile, burayı z-2 çarpı z-1 ile, şurayı da z-1 ile genişletirsek
+
+105
+00:23:24,848 --> 00:23:47,628
+xz bölüm, yani yukarıdaki bir neye eşit oluyor? c1 çarpı z-2'nin karesi artı c2 çarpı z-2 çarpı z-1 artı c3 çarpı z-2'nin pardon z-1 olacak.
+
+106
+00:23:53,203 --> 00:24:19,124
+şu şekilde. İşte burada C1'in yerinde C1'i bulmak için özet'in yerine bir verirsek ne olur? Şunlar gider. Burada 1-2-1 karesi artı bir işte C1 buradan bir geliyor. Aynı şekilde C2 dediğimiz şey bir gelecekmiş. C3 de kaça karşılık giriyormuş?
+
+107
+00:24:31,059 --> 00:24:38,059
+Yani yerine koymak gerekiyor galiba burada bir değer vereyim çünkü 2 veremeyiz. Ha 2 verirsek gerçi ne olur bu gider bu gider.
+
+108
+00:24:38,059 --> 00:24:55,359
+Şurası ne oluyor? 2-1'den 1 doğrudan c3'de 1 geliyor işte. Herhalde hepsi doğru. Evet lambda 2 ve lambda 3 diye burada vermiştim. Tamam. O zaman bizim ifademiz şu şekilde yazılacak arkadaşlar.
+
+109
+00:24:55,359 --> 00:25:03,859
+1 bölü z-1 artı 1 bölü z-2 artı 1 bölü z-2'nin karesi.
+
+110
+00:25:04,580 --> 00:25:08,659
+Şimdi şuradaki aldığımız şeyi yerine geri gönderirsek ne olacak?
+
+111
+00:25:08,659 --> 00:25:12,439
+X'et dediğimiz şey, z bölü, z-1
+
+112
+00:25:16,468 --> 00:25:30,867
+z bölü z eksi bir artı z bölü z eksi iki artı z bölü z eksi ikinin karesini buluruz. z'in de 2'den büyük olduğunu biliyoruz.
+
+113
+00:25:30,867 --> 00:25:40,468
+Şimdi z 2'den büyükse ne demektir? Bu sağ taraflıdır. Yani kutuptan büyük olanlar sağ taraflıdır. Yani sağ taraflı olması da bize ne ifade edecek?
+
+114
+00:25:40,468 --> 00:25:49,707
+UN diye bir şey getireceğiz. Yani burada pozitif değerleri getireceğiz. Dönüşüme bakalım. Şimdi şu bize neyi gösteriyor? Bu neyin ters dönüşümü arkadaşlar?
+
+115
+00:25:56,692 --> 00:26:13,692
+En eksi birim hocam. Sağ taraflı olursa? Evet pozitif oluyordu yani eksili değil. Sağ taraflı oluyordu. Sol taraflı olunca eksili oluyordu. Bu normal yani direkt en eksi bir. En eksi bir olmaz. Bu UN.
+
+116
+00:26:13,692 --> 00:26:35,611
+Bu un artı şu nedir? Z bölü z eksi iki. Bir şey z bölü z eksi a olunca a üzeri n oluyor. Yani bu iki üzere n.
+
+117
+00:26:35,611 --> 00:26:45,331
+bir dakika şurada şu eksi bir olacak arkadaşlar ya şu ifade şurada bir sıkıntı bulan şurasını eksi bir bulacağız.
+
+118
+00:26:52,915 --> 00:26:54,915
+iki üzeri n çarpı
+
+119
+00:26:57,415 --> 00:27:06,415
+u n değil mi bu da? Sonuçta işaret sağ tarafta. Şuraya baktığımızda şimdi z bölü z-d2 burada bir iki üzeri n var.
+
+120
+00:27:07,115 --> 00:27:17,915
+Ama bu ne oluyor? Bir aşağıda kare diye bir şey var. Yani burada bir şeyin bir şey ile çarpılmış olması gerekiyor. İşte şu
+
+121
+00:27:17,915 --> 00:27:29,915
+Nerede yaptık onu? Şu yaptığımız özelliğe bakarsak burada bir n ile çarpım şeyi görüyoruz. 2 üzeri n çarpı n diyeceğiz buna.
+
+122
+00:27:34,436 --> 00:27:47,756
+Evet bu da böyle. Bir de bunun işte u n'i var. Hepsini un parantezinde yazarsak 1-2 üzeri n çarpı 2 üzeri n çarpı n şeklinde
+
+123
+00:27:47,756 --> 00:27:49,436
+sonuç bulabiliriz.
+
+124
+00:27:50,496 --> 00:27:52,796
+Bakalım burada var mı başka bir şey?
+
+125
+00:27:57,299 --> 00:28:00,899
+Ama bir dakika arkadaşlar, şu 2 üzeri n çarpı n'in
+
+126
+00:28:03,699 --> 00:28:06,899
+Şimdi 2 üzeri n dediğim şey z bölü z x2
+
+127
+00:28:06,899 --> 00:28:12,299
+Bunu bir şeyle çarparsak, bakın burada bir atladığımız bir şey var
+
+128
+00:28:12,299 --> 00:28:17,900
+n ile çarparsak ne demek? Birinci dereceden türevini alacağız. Birinci dereceden türevini alalım buranın
+
+129
+00:28:17,900 --> 00:28:21,900
+Bunun türevi 1 çarpı z x 2
+
+130
+00:28:21,900 --> 00:28:50,480
+aşağıdakinin türevi eksi şu çarpı şey z. Yukarısı ne oldu? 2 oldu. 2 bölü z eksi 2'nin karesi. Bunu bir de eksi z ile çarpınca 2 z. Şimdi burada ne var? z bölü z eksi 2'nin karesi var. Yani 2 burada şey. O zaman burada bir 1 bölü 2 gibi bir şey olacak. Yani 2 üzeri n'in değil de bu. 2 üzeri n eksi 1'in türevidir.
+
+131
+00:28:50,480 --> 00:29:18,179
+2 üzeri n-1'in n ile çarpılmış halde. Onun için şuradaki ifadeyi düzeltmek gerekiyor. Çünkü şurada 2 yok. 2 olsaydı o zaman doğrudan 2 üzeri n diyebilirdik. Bunu düzeltelim. Başka da burada bir şey yok. X n dediğimiz işaretimiz demek ki buymuş. Size çalışma sorusu olarak şunu vereyim. Uğraşın.
+
+132
+00:29:36,627 --> 00:29:45,067
+xz eşittir, 2 artı z üzeri eksi 2, şans kitabında bununla alakalı bir sürü örnek var, oradan da bakabilirsiniz.
+
+133
+00:29:45,807 --> 00:29:56,007
+z üzeri eksi 2 artı 3 çarpı z üzeri eksi 4 bölü z'in karesi artı 4z artı 3, birazcık düzenleme yapıp
+
+134
+00:29:56,007 --> 00:30:01,447
+bir forma getirmeniz gerekiyor. Ondan sonrası zaten çok kolay.
+
+135
+00:30:01,447 --> 00:30:26,647
+sadece şurada birazcık alcebik işlemler yapmak gerekecek arkadaşlar. Bu da ters-dönüşümüyle alakalı şeylerdir. Şimdi sistem fonksiyonu dedik yani bir şekilde sistemleri ayrık zamanlı sistemleri YZ formatına getirerek ne yapıyorduk? Konvolüsyonu kolay bir şekilde yapabiliyorduk veya diğer işleri kolay bir şekilde yapabiliyorduk.
+
+136
+00:30:39,124 --> 00:30:44,124
+en basit bildiğimiz şey aslında hani xn dediğimiz eleman şöyle olsun
+
+137
+00:30:46,124 --> 00:30:50,523
+1, 1, 1 olsun hani sıfır noktasında şöyle ifade edelim
+
+138
+00:30:50,523 --> 00:30:52,124
+hn de
+
+139
+00:30:53,823 --> 00:31:00,124
+1, 1 olsun, bu da böyle olsun. Şimdi bunu z dönüşümüne alırsak
+
+140
+00:31:00,124 --> 00:31:02,624
+bu drag n
+
+141
+00:31:02,624 --> 00:31:26,863
+Önce şey halde yazalım, artı drag n-1 artı drag n-2'dir. Şu da drag n artı drag n-1'dir. Peki buradan xz'i nasıl yazarız? Drag n'in z dönüşümü doğrudan birde artı şu nedir? n-1 olunca z üzeri eksi bir artı şu z üzeri eksi iki doğrudan polinom gibi yazabiliyoruz.
+
+142
+00:31:26,863 --> 00:31:42,863
+hz dediğimiz şey ne olacak? Bu 1 artı z üzere eksi 1. Peki bunun konvolüsyonu nedir? xn konvolüsyon hn eşittir xz.
+
+143
+00:31:46,451 --> 00:31:53,711
+çarpı şuna artık karşılıklı olarak çarpacağız bir çarpı bir bir şöyle yapalım bir çarpı z
+
+144
+00:31:53,711 --> 00:32:00,372
+üzeri eksi bir z üzeri eksi bir bir çarpı bir bir çarpı z üzeri eksi bir z üzeri eksi bir artı
+
+145
+00:32:00,372 --> 00:32:08,951
+z üzeri eksi bir bir daha geldi artı z üzeri eksi iki geldi z üzeri eksi iki artı bir dakika
+
+146
+00:32:08,951 --> 00:32:11,091
+Z üzeri eksi 1, Z üzeri eksi 2.
+
+147
+00:32:11,712 --> 00:32:14,751
+Artı Z üzeri eksi 2 bir daha geldi.
+
+148
+00:32:14,911 --> 00:32:16,312
+Artı Z üzeri eksi 3 geldi.
+
+149
+00:32:16,792 --> 00:32:22,431
+Bakın bu sayede konvolüsyon işlemi yaptığımızda sınırları belirlemek de kolay olabiliyor.
+
+150
+00:32:23,032 --> 00:32:27,132
+1 dediğimiz şey Z üzeri 0, şu Z üzeri eksi 1, Z üzeri eksi 3.
+
+151
+00:32:27,191 --> 00:32:28,472
+Yani işaret nereye gidecek?
+
+152
+00:32:28,571 --> 00:32:29,891
+0'dan başlayacak.
+
+153
+00:32:30,532 --> 00:32:32,051
+3'e kadar gidecek.
+
+154
+00:32:32,191 --> 00:32:32,712
+Bunu görüyoruz.
+
+155
+00:32:33,151 --> 00:32:35,051
+Şimdi aynı terimleri ortak bir şekilde yazalım.
+
+156
+00:32:35,051 --> 00:32:37,292
+bir tane z üzeri sıfır.
+
+157
+00:32:37,811 --> 00:32:39,071
+Z üzeri eksi bir kaç tane?
+
+158
+00:32:39,171 --> 00:32:40,071
+Bir tane şurada var.
+
+159
+00:32:41,091 --> 00:32:43,011
+Bir de aşağıda var. İki tane z üzeri eksi
+
+160
+00:32:43,011 --> 00:32:43,851
+bir gelecektir.
+
+161
+00:32:44,871 --> 00:32:46,851
+İki tane z üzeri eksi iki gelecek.
+
+162
+00:32:49,231 --> 00:32:50,911
+Artı bir tane de z üzeri
+
+163
+00:32:50,911 --> 00:32:53,111
+eksi üç gelecek. Peki bunu ters
+
+164
+00:32:53,111 --> 00:32:54,951
+dönüşüm alırsak
+
+165
+00:32:54,951 --> 00:32:56,892
+ne olacak? Şunun
+
+166
+00:32:56,892 --> 00:32:58,271
+şeyi drag n'di.
+
+167
+00:32:59,231 --> 00:33:00,731
+Z üzeri eksi bir neydi?
+
+168
+00:33:00,851 --> 00:33:02,191
+Drag n-1'di.
+
+169
+00:33:03,312 --> 00:33:04,651
+n-1. Ama
+
+170
+00:33:04,651 --> 00:33:06,871
+bundan iki tane var. Onun için iki olacak.
+
+171
+00:33:07,071 --> 00:33:08,991
+Artı iki tane z üzeri
+
+172
+00:33:08,991 --> 00:33:10,911
+etraf. En eksi iki
+
+173
+00:33:10,911 --> 00:33:13,031
+artı işte bir tane
+
+174
+00:33:13,031 --> 00:33:14,771
+z üzeri şey. En eksi üç.
+
+175
+00:33:16,411 --> 00:33:17,312
+Konvaryasyon
+
+176
+00:33:17,312 --> 00:33:18,211
+sonucunda bu şekilde
+
+177
+00:33:18,211 --> 00:33:21,091
+hesaplayabiliyoruz. Eğer sistemimiz
+
+178
+00:33:21,091 --> 00:33:22,211
+bu şekilde verildiyse,
+
+179
+00:33:22,911 --> 00:33:24,731
+sinyaller bu şekilde verildiyse kolay.
+
+180
+00:33:25,831 --> 00:33:27,312
+Böyle verilmeyip
+
+181
+00:33:27,312 --> 00:33:28,411
+bir
+
+182
+00:33:28,411 --> 00:33:30,611
+bağıntı şeklinde verilirse
+
+183
+00:33:30,611 --> 00:33:32,531
+burada da ne yapacağız? Doğrudan
+
+184
+00:33:32,531 --> 00:33:33,951
+cebirsel işlem yapacağız.
+
+185
+00:33:33,951 --> 00:33:35,411
+Onu da şuradan
+
+186
+00:33:35,411 --> 00:33:38,151
+biraz kapsamlı bir örnek olarak yapalım.
+
+187
+00:33:39,032 --> 00:33:40,271
+Anlaşılmayan bir şey varsa
+
+188
+00:33:40,271 --> 00:33:42,291
+durdurun arkadaşlar. Belki hızlı çözüyorum.
+
+189
+00:33:42,431 --> 00:33:43,911
+Çünkü yapılacak birkaç şey var. Hani
+
+190
+00:33:43,911 --> 00:33:46,132
+kayıttan dinlersiniz diye ben de
+
+191
+00:33:46,132 --> 00:33:48,072
+olabildiğince daha fazla örnek
+
+192
+00:33:48,072 --> 00:33:50,071
+çözüp ilerlemeye çalışıyorum.
+
+193
+00:33:51,511 --> 00:33:52,231
+Yavaşlamışsak
+
+194
+00:33:52,231 --> 00:33:54,032
+daha az örnek çözeceğiz. O da pek
+
+195
+00:33:54,032 --> 00:33:54,851
+faydalı olmuyor.
+
+196
+00:33:56,491 --> 00:33:58,272
+Doğru tanılı bir sistem şu şekilde
+
+197
+00:33:58,272 --> 00:34:00,351
+tanımlanmış. Yn
+
+198
+00:34:00,351 --> 00:34:02,151
+eksi 3
+
+199
+00:34:02,151 --> 00:34:03,392
+bölü 4. Y
+
+200
+00:34:03,392 --> 00:34:08,472
+biraz önce slide'larda görmüştük.
+
+201
+00:34:08,672 --> 00:34:09,752
+IAR mı?
+
+202
+00:34:10,112 --> 00:34:10,952
+PIR mi?
+
+203
+00:34:11,952 --> 00:34:13,112
+Hangisine benziyor?
+
+204
+00:34:17,619 --> 00:34:20,119
+direk görüntüsünden zaten bunu söyleyebiliriz.
+
+205
+00:34:29,972 --> 00:34:38,171
+Fır filtreler neye bağlı? sadece x'nin farklı zamandaki değerlerine bağlı. iR filtre, y'nin farklı zamandaki değerlerine bağlı.
+
+206
+00:34:38,171 --> 00:34:46,472
+Onun için bu iR filtre edilir. Şimdi A maddesi demiş ki, bu giriş ve çıkış arasındaki bağıntı. Sistem fonksiyonu bulmuşsun.
+
+207
+00:34:46,472 --> 00:34:58,472
+find system function gelebilecek ilk soru bu olabilir. Şimdi sistem fonksiyonu ne demek? Sistemin bağıntısının z-dönüşü.
+
+208
+00:34:58,472 --> 00:35:21,571
+Y, Z'nin, Y, N'in, Z dönüşümü, Y, Z'tir. Şöyle yapalım. Eksi 3 bölü 4, Y, N, Eksi 1'in, Z dönüşümü, yine Z üzeri eksi 1, birbirim gecikme var, Y, Z'tir. Artı 1 bölü 8, Z üzeri eksi 2, Y, Z'tir. X'nin şeyde X, Z'tir.
+
+209
+00:35:21,571 --> 00:35:30,531
+Burada bulmamız gereken şey ne? YZ'in XZ'le olan ilişkisi. O zaman YZ parantezini alırsak ne oluyor?
+
+210
+00:35:30,531 --> 00:35:48,351
+1-3 bölü 4 çarpı Z üzeri eksi 1 artı 1 bölü 8 Z üzeri eksi 2 eşittir XZ. Burayı da YZ bölü XZ formatında yazabiliriz veya ne bileyim daha böyle düzeltilebilir.
+
+211
+00:35:48,351 --> 00:36:00,351
+yz bölü xz formatında yazalım. Bu formatın bu oranın özel ismi de biliyorsunuz hz yani şöyle yapayım biraz daha.
+
+212
+00:36:00,351 --> 00:36:13,871
+HZ, YZ bölü XZ eşittir. Bu tarafı XZ'e öbür tarafı şu kısımdaki paydadaki şeylere bölersek
+
+213
+00:36:13,871 --> 00:36:25,371
+1 bölü 1-3 bölü 4Z üzeri 1 artı 1 bölü 8 şartı Z üzeri 2'yi buluruz.
+
+214
+00:36:25,371 --> 00:36:37,811
+Şöyle bir şey yapılabilir, her iki tarafı z üzeri 2 ile en küçük şeyle çarparsak, burası z kare bölü, şuradan ne gelecek? Bir z kare gelecek, şunun yanına, şuradan ne gelecek?
+
+215
+00:36:38,472 --> 00:36:54,031
+z üzeri 2 ile z üzeri 1 çarpınca z üzeri 1 gelecek, eksi 3 bölü 4 z, şurası da z üzeri 0 olacak, artı 1 bölü 8, bakın bu veya bu sistemin fonksiyonu, tamam?
+
+216
+00:36:55,371 --> 00:37:00,972
+Peki gelelim şurayı bir kopyalayayım öbür tarafa geçeyim şöyle alayım
+
+217
+00:37:13,396 --> 00:37:14,155
+olmalı.
+
+218
+00:37:20,052 --> 00:37:23,471
+İpsin ama, şöyle bir gönüme.
+
+219
+00:37:50,420 --> 00:37:54,739
+var sıkıntısı herhalde. Şöyle diyelim, hz
+
+220
+00:37:54,739 --> 00:38:09,299
+eşittir. Yukarıda bir var, aşağıda 1-3 bölü 4 var, z-dülere x-1 artı mıydı, x-1 bakarız, artı olacak, 1-dülere x-2.
+
+221
+00:38:09,299 --> 00:38:28,539
+Burada iki tarafı z ile çarparsak z kare bölü z kare eksi 1 3 bölü 4 çarpı z artı 1 bölü 8 bu ifade. Peki biz burada daha başka ne yapabiliriz? Sistemin kutuplarını ve sıfırlarını bulmak isteyebiliriz.
+
+222
+00:38:28,539 --> 00:38:53,219
+Sistemin kutup ve sıfırlarını bulmak için şu ifadeyi bir kere çarpanlara ayırmak gerekiyor veya paydayı sıfırlara eşitmek gerekiyor. Z kare yukarıda kalabilir bölü. Burası nedir? Şunu 1 bölü 2 desek, şuraya da 1 bölü 4 desek, çarpımları 1 bölü 8 olacak, toplamları şey olacak, eksi 1 bölü 2 desek olur herhalde.
+
+223
+00:38:53,219 --> 00:39:22,679
+bu zaman burası z-1 bölü 2, z-3 bölü 4. Bunu bize söyledi. Pardon 1 bölü 4 ne 3 bölü 4? Çarpımları 1, eksi 1 bölü 2, eksi 1 bölü 4, z-1 bölü 2 şey. Peki burada hangileri? Kutup, şunlar kutuplu. Yani bir kutubumuz var. Pol 1 diyelim. 1 bölü 2, pol 2 dediğim şey 1 bölü 4. Sıfırımız var mı burada? Aslında sıfırımız da var.
+
+224
+00:39:23,219 --> 00:39:48,219
+şuraya bile baktığımızda z sıfırda bir sıfır görüyoruz. Bakın şu formda sıfır görülmeyebilir. Ama bu forma geçtiğimizde bakın bir sıfır görüyoruz. Onun için bu formdan bu forma geçiş yapmak bazen faydalıdır. Peki bu madde bu kadar yeterli. Şimdi demiş ki sistemin dürtü tepkisini bulunduz. Şimdi dürtü tepkisi neydi arkadaşlar? Özel adı. Yani impulse response.
+
+225
+00:39:48,219 --> 00:39:59,140
+ne ile gösteriliyordu? Sembol olarak veya ne bileyim harf olarak öyle söyleyelim.
+
+226
+00:40:02,339 --> 00:40:03,259
+H-n miydi?
+
+227
+00:40:04,379 --> 00:40:11,299
+Heh çok güzel. Şimdi ben h-n'i bulacağım. Dürtü tepkisi veya ne bileyim impuls response dediğimiz şey.
+
+228
+00:40:12,339 --> 00:40:14,819
+Peki elimde h-set varsa h-n'i nasıl bulabilirim?
+
+229
+00:40:22,420 --> 00:40:32,019
+çok kolay. ters dönüşüm ile bulunur mu? çok güzel. ters z dönüşümü ile bulacağız. h z diyeceğiz.
+
+230
+00:40:32,019 --> 00:40:42,520
+şu. peki bunun ters z dönüşümünü bulmak için biraz önce yaptık. şu ifadeyi h z bölü z şeklinde yazarsak,
+
+231
+00:40:42,520 --> 00:41:00,239
+bir derece birim geçmesinden kurtulmuş oluyoruz. Z bölü, z-1 bölü 2 çarpı z-1 bölü 4. Burada kısmi kesirlere ayırdığımızda yani A ve B şeklinde yazarsak bu ifade şu şekle geliyor arkadaşlar.
+
+232
+00:41:02,079 --> 00:41:11,000
+Hatta yazayım biraz daha ilerleyelim şuradan gelelim. Keşke daha çok alanımız olsa. H z bölü z eşittir.
+
+233
+00:41:12,519 --> 00:41:23,719
+Bu z bölü veya şöyle diyelim a bölü z eksi 1 bölü 2 artı b bölü z eksi 1 bölü 2
+
+234
+00:41:23,719 --> 00:41:29,619
+Burada z kareyi bırakırsak z kare bölü bir şey olmuyor
+
+235
+00:41:29,619 --> 00:41:34,500
+Çünkü z bölü z diye doğrudan bir şey yok
+
+236
+00:41:34,500 --> 00:41:38,979
+Onun için z'i aşağıya alıp a ve b sabit sayıda bunu geri yerine göndereceğiz
+
+237
+00:41:38,979 --> 00:41:44,019
+z bölü z eksi bir bölü iki o nedir? Eksi bir bölü ikinin eninci dereceden kuvvetidir diyeceğiz.
+
+238
+00:41:45,339 --> 00:41:50,600
+Burada yine unuttuğumuz bir şey var. Yakın saklık bölgesine de bakalım. Soruda ne söylemiş?
+
+239
+00:41:51,219 --> 00:41:54,839
+Hocam ikincisi b bölü bir z artı bir bölü dört olması lazım.
+
+240
+00:41:54,979 --> 00:42:07,019
+Bir bölü dört evet. Z eksi bir bölü teşekkür ederim. Şimdi burada burayı bir bölü dört ile burayı bir bölü iki ile çarpıp sonuçlara baktığımızda veya
+
+241
+00:42:07,019 --> 00:42:19,140
+z'in yerine 1 bölü 2 yazarsak ne buluruz? C1'i yani A'yı buluruz. A eşittir. 2 gelecek 1 bölü 2 yazdığımızda şey yazdım 1 bölü 4 yazdığımda B eşittir.
+
+242
+00:42:19,139 --> 00:42:47,439
+eksi bir gelecek. Dolayısıyla bu ifade z bölü şöyle diyelim. Önünde şu var. 2 çarpı z bölü z eksi bir bölü 2 eksi z bölü z eksi bir bölü 4. Peki bu nedir? Bu bildiğimiz basit bir şey dönüşümü. Şimdi işaretin şeyini vermiş burada.
+
+243
+00:42:49,140 --> 00:42:58,699
+Bakayım nerede varmış. Yakın saklık bölgesini. Şimdi demiş ki bu nedensel bir işaret demiş.
+
+244
+00:43:01,160 --> 00:43:07,259
+Nedensel bir işaret diye söyleyince şuna nedensel demiş arkadaşlar. Buradan bir çıkarım yapacağız.
+
+245
+00:43:11,259 --> 00:43:15,599
+Nedensel. Sistemin nedenselliği ne anlama geliyordu?
+
+246
+00:43:20,500 --> 00:43:22,720
+Sıfırdan büyük değerler için
+
+247
+00:43:22,720 --> 00:43:25,579
+Aynen, yani şu anki
+
+248
+00:43:25,579 --> 00:43:28,720
+Aynen. Şimdi sistem nedenserse
+
+249
+00:43:28,720 --> 00:43:29,559
+Bu sistem
+
+250
+00:43:29,559 --> 00:43:31,840
+Öyle bir şey ki içerisinde
+
+251
+00:43:31,840 --> 00:43:34,679
+UN'ler içeriyor. Yani sıfırdan büyük değerler
+
+252
+00:43:34,679 --> 00:43:36,099
+İçeriyor. Öyle bir durum var.
+
+253
+00:43:36,600 --> 00:43:36,940
+O zaman
+
+254
+00:43:36,940 --> 00:43:39,979
+Sistem sağ taraflıdır diyebiliriz.
+
+255
+00:43:40,479 --> 00:43:42,779
+Sağ taraflıysa, şimdi iki tane kutbumuz var
+
+256
+00:43:42,779 --> 00:43:45,180
+Birisi 1 bölü 2, öbürü 1 bölü 4
+
+257
+00:43:45,180 --> 00:43:47,979
+Saklık bölgesi nasıl olur?
+
+258
+00:43:47,979 --> 00:43:49,979
+Büyük kutbun dışında oluyor bu
+
+259
+00:43:49,979 --> 00:44:19,959
+sağ tarafta bir şeyde. O zaman bu büyük kutup bir bölüki ise burada z dediğimiz şey büyüklü bir bölü iki olacak. Bunu burada yani soruda nedensel ifadesini kullandığı için doğrudan buradan çıkartabiliriz. Peki sistemimiz nedensel ise ve işte bu yakın saklık bölgesi buradaysa o zaman şeyde bir bölü iki yani şundan kaynaklı.
+
+260
+00:44:19,979 --> 00:44:28,239
+un'ler olacak. Şimdi z bölü, z-1 bölü 2 neyin ters dönüşümü arkadaşlar? Bir kere 1 bölü 2 üzeri n'in ters dönüşümü.
+
+261
+00:44:28,239 --> 00:44:37,800
+Önündeki iki kat sayısı da başına gelecek bir kat sayısı sadece. Eksi şu z bölü z-1 bölü 4, bu da 1 bölü 4 üzeri n'in ters dönüşümü.
+
+262
+00:44:38,360 --> 00:44:45,759
+Aslında bunlar nedense olduğu için çarpı un, çarpı un var. Şöyle geniş bir parantezi alalım. Burayı da un ile çarpalım.
+
+263
+00:44:45,759 --> 00:45:01,259
+ve bizim sonucumuz şöyle yaparsak sonucumuz neresi olacak? Şurası olacak. 2 çarpı 1 bölü 2 üzeri n, eksi 1 bölü 4 çarpı 1 bölü 4 üzeri n şeklinde söyleyebiliriz.
+
+264
+00:45:04,059 --> 00:45:10,859
+Hocam bir şey söyleyebilir miyim? Yukarıda z varken bunu yapabiliyor muyum? Çarpı endişelen olmayacak mıydı?
+
+265
+00:45:10,860 --> 00:45:17,860
+yukarıda z varsa şöyle yapacağız. Hangisinde? Şuradan mı basıyorsunuz?
+
+266
+00:45:18,940 --> 00:45:19,520
+Evet hocam.
+
+267
+00:45:20,919 --> 00:45:26,779
+Şimdi şöyle payda eşitleme yaptığında z'li terim gelmeyeceği için aşağıdan sayılar bulunabiliyor.
+
+268
+00:45:27,339 --> 00:45:35,679
+Ama z kareli terim olduğunda bir birim gecikme, oradan da çıkar da birim gecikmesiyle şuradan gelen sonuçlar daha karmaşık oluyor.
+
+269
+00:45:35,679 --> 00:45:42,339
+onun için bir birim gecikmesini alıp z-dönüşümün bir tanesini buraya rezerve edip o şekilde kullanıyoruz.
+
+270
+00:45:42,839 --> 00:45:53,979
+Çünkü şey yok. Önümüzde ben A'yı buldum, B'yi buldum diyelim. Mesela 2 bölü z-1 bölü 2. Böyle bir kural yok.
+
+271
+00:45:54,279 --> 00:45:58,819
+Yani şurada z'li bir şeyin olması gerekiyor. O z'li bir şeyi burada saklıyoruz. Ondan sonra getiriyoruz.
+
+272
+00:46:00,119 --> 00:46:04,139
+Hocam o manada benim en sonunda var ya 2 z bölü z-1 bölü 2.
+
+273
+00:46:04,139 --> 00:46:09,360
+Evet, tamam. Bunun dönüşümü, n çarpı a üstü, n çarpı u değil miydi?
+
+274
+00:46:11,279 --> 00:46:21,979
+Hayır, ama z bölü z eksi, şimdi 2 dediğimiz şey, doğrudan bir genlik gibi katsa, yani 2'yi dışarı atabiliyoruz. Sen şununla karıştırdın, dur.
+
+275
+00:46:24,119 --> 00:46:34,080
+Dur bakayım, neredeydi o? Şuradaki miydi o? Evet, şimdi z bölü z eksi 2'nin karesi olsa,
+
+276
+00:46:34,139 --> 00:47:03,399
+saydı bunu yapabilirdik. Anladım hocam, anladım. Şimdi z bölü z-2 ne oluyor? 2 üzeri n çarpı n. Ama bir de burada ne olacak? 2 olacak. 2 üzeri n olması demek, 2 olması gerekiyor şurada. 2 olmadığı için şurayı 1 bölü 2 ile çarpmış gibi oluyoruz. Yani n üzeri de eksi bir şeklinde yazıyoruz. Tamam mı? Şu ifade doğrudan, bu ikisi doğrudan, işte 1 bölü 2 üzeri n, 1 bölü 4, n şeklinde.
+
+277
+00:47:04,139 --> 00:47:17,479
+söylenebilir. Peki demiş ki sistemin basamak tepkisini bulun. Birim basamaktır herhalde, unit stepten bahsediyor.
+
+278
+00:47:19,027 --> 00:47:28,027
+basamak değil ya çünkü step function yok o step oluruz adım tepkisiyle diyorlar da
+
+279
+00:47:28,027 --> 00:47:42,027
+yani ben bu sisteme biraz önceki şu bulduğumuz eşitliğe xn işaretini girişine uygularsam
+
+280
+00:47:42,027 --> 00:47:53,007
+ve uven işaretini uygularsam sistemin sonucu ne olur bu ne yapacağım normalde konulü ya şurada
+
+281
+00:47:53,007 --> 00:48:00,627
+bulduğum ifadeyi konulü sen yapacak ki çok zor bir şey ya da işte Z dönüşümünün faydası bu elimde
+
+282
+00:48:00,627 --> 00:48:07,947
+şu var Z kare bölü de teksi bir bölü iki çarpı zeksi çarpı zeksi bir bölüm bunu kullanarak bir
+
+283
+00:48:07,947 --> 00:48:16,467
+yapmak terşeyi yani şu fonksiyonu girdi olarak verdiği bulundayım yani bulmamız gereken şey ye
+
+284
+00:48:16,467 --> 00:48:27,087
+z eşittir xz çarpı biraz önce harceti bulmuştuk bakın adım adım ilerliyor su asletin var ilk
+
+285
+00:48:27,087 --> 00:48:32,427
+setinde şey bu yaratılan şey ve transforma bunu biz şimdi şuradan iki seti yazabiliriz Bu nedir
+
+286
+00:48:32,428 --> 00:48:37,828
+doğrudan z bölü z eksi 1'dir değil mi arkadaşlar?
+
+287
+00:48:38,548 --> 00:48:40,987
+Yürüt birim basamak nonsiyonu.
+
+288
+00:48:42,728 --> 00:48:43,728
+Bunu yazdık.
+
+289
+00:48:44,108 --> 00:48:47,947
+Şimdi z bölü z eksi 1 çarpı.
+
+290
+00:48:47,947 --> 00:48:56,307
+H z dediğimiz şey de mesela buradaki z kare z eksi 1 bölü 2 z eksi 1 bölü 2.
+
+291
+00:48:56,367 --> 00:48:56,987
+Şuraya yazalım.
+
+292
+00:48:56,987 --> 00:49:00,907
+z eksi 1 bölü 2
+
+293
+00:49:00,907 --> 00:49:03,807
+z eksi 1 bölü 4
+
+294
+00:49:03,807 --> 00:49:05,487
+yani ne olacak?
+
+295
+00:49:05,667 --> 00:49:07,127
+z küp bölü
+
+296
+00:49:07,127 --> 00:49:08,587
+z eksi 1
+
+297
+00:49:08,587 --> 00:49:10,907
+z eksi 1 bölü 2
+
+298
+00:49:10,907 --> 00:49:12,807
+z eksi 1 bölü 4
+
+299
+00:49:12,807 --> 00:49:14,867
+bunlar olacak.
+
+300
+00:49:15,727 --> 00:49:17,727
+Peki burada yapacağımız şey ne olur?
+
+301
+00:49:18,568 --> 00:49:20,347
+Bir birim şeyi
+
+302
+00:49:20,347 --> 00:49:23,867
+şu z'in birisini aşağıya alırsak
+
+303
+00:49:23,867 --> 00:49:25,547
+bu artık y z
+
+304
+00:49:25,547 --> 00:49:28,847
+yz bölü z eşittir
+
+305
+00:49:28,847 --> 00:49:30,587
+z kare bölü
+
+306
+00:49:30,587 --> 00:49:32,227
+z eksi 1
+
+307
+00:49:32,227 --> 00:49:34,688
+z eksi 1 bölü 2
+
+308
+00:49:34,688 --> 00:49:35,947
+z eksi
+
+309
+00:49:35,947 --> 00:49:38,207
+1 bölü 4
+
+310
+00:49:38,207 --> 00:49:40,907
+bulacağız. Buradan yine
+
+311
+00:49:40,907 --> 00:49:42,767
+a, b, c
+
+312
+00:49:42,767 --> 00:49:44,847
+gibi kat sayılar bulacağız. Bu kat sayıları
+
+313
+00:49:44,847 --> 00:49:46,527
+direkt söyleyeyim. Şöyle diyelim
+
+314
+00:49:46,527 --> 00:49:48,367
+a, b, c
+
+315
+00:49:48,367 --> 00:49:50,748
+kat sayıları bulacağız. Bu kat sayıların sonuçları
+
+316
+00:49:50,748 --> 00:49:52,727
+şuymuş. Birincisi
+
+317
+00:49:52,727 --> 00:49:54,807
+8 bölü 3'müş. 8 bölü 3
+
+318
+00:49:54,807 --> 00:49:58,727
+z-1'in kastayız. Yani şurada
+
+319
+00:49:58,727 --> 00:50:00,968
+z-1 var. Bu 8 bölü
+
+320
+00:50:00,968 --> 00:50:03,108
+3'ün yerine şuradaki z geliyor yukarıya.
+
+321
+00:50:03,328 --> 00:50:04,748
+8 bölü 3 çarpı z bölü
+
+322
+00:50:04,748 --> 00:50:05,248
+z-1.
+
+323
+00:50:06,768 --> 00:50:09,087
+Öbürü neymiş? Eksi 2'ymiş.
+
+324
+00:50:09,188 --> 00:50:10,768
+Eksi 2 çarpı
+
+325
+00:50:10,768 --> 00:50:13,207
+z yukarıya geliyor. Z bölü
+
+326
+00:50:13,207 --> 00:50:15,527
+2 çarpı
+
+327
+00:50:15,527 --> 00:50:16,248
+z bölü
+
+328
+00:50:16,248 --> 00:50:17,727
+z-1 bölü 4.
+
+329
+00:50:18,748 --> 00:50:20,807
+Öbürü de neymiş? 1 bölü 3'miş. Artı
+
+330
+00:50:20,807 --> 00:50:22,807
+1 bölü 3 çarpı z bölü
+
+331
+00:50:22,807 --> 00:50:24,487
+z-1 bölü 4.
+
+332
+00:50:24,807 --> 00:50:25,787
+Bunlarmış.
+
+333
+00:50:27,268 --> 00:50:29,248
+Peki bu işaret neydi?
+
+334
+00:50:29,987 --> 00:50:32,888
+Şimdi şu X'en dediğimiz şey sağ taraflı.
+
+335
+00:50:33,007 --> 00:50:34,807
+Y, N de biraz önce bulduk.
+
+336
+00:50:34,867 --> 00:50:35,567
+O da sağ taraflı.
+
+337
+00:50:35,667 --> 00:50:36,867
+Sonuç da sağ taraflı olacak.
+
+338
+00:50:37,688 --> 00:50:40,548
+Şuraya yazarsak şöyle yapacağım arkadaşlar.
+
+339
+00:50:48,148 --> 00:50:50,148
+Evet, bu.
+
+340
+00:51:01,076 --> 00:51:29,535
+buraya yazarsak, şimdi şu nedir? 8 bölü 3. Bu kendisi doğrudan UN'dir. Öyle değil mi? Şimdi o zaman şöyle yapalım. UN'i şöyle bir dışarıya paranteze atalım. Hepsinden çünkü UN gelecek. Bu 8 bölü 3 UN. Şu UN olduğunu biliyoruz. Şu 2 çarpı z-1 bölü 4. 1 bölü 4 üzeri hocam orası 1 bölü 2 olmayacak.
+
+341
+00:51:29,535 --> 00:51:49,355
+1 bölü 2, affedersin, affedersin, şurayı 1 bölü 2, artı şu 1 bölü 3 çarpı 1 bölü 4 üzeri n, herhangi bir çarpanımız yok, diğer şeyler sıkıntısız, işte şurada da un ifademiz var.
+
+342
+00:51:49,355 --> 00:51:56,615
+ben sisteme şu girişi uyguladığımda sistemin davranışını gösteren Yn eşitliği de bu olacak.
+
+343
+00:51:56,615 --> 00:52:08,195
+Mesela n eşittir 8 anında bu sistemden hangi çıktığı elde edelim dersek işte şurada n yerine 8 verdiğinde artık bu bir dizi bu dizinin sonucunu elde edebiliriz.
+
+344
+00:52:10,915 --> 00:52:12,195
+Buraya kadar bir sorumuz var mı?
+
+345
+00:52:19,827 --> 00:52:24,827
+ara verelim. 10 dakika sonra biraz daha devam ediyoruz arkadaşlar.
+
+346
+01:03:41,108 --> 01:03:48,108
+ve
+
+347
+01:04:17,300 --> 01:04:25,800
+genelde bu tarz sorularda da bir sizler tarafından kaçıklık oluyor. Şimdi mesela h setimiz şöyle bir şey olsun.
+
+348
+01:04:28,300 --> 01:04:40,800
+1 artı z üzeri eksi 1 bölü 1 eksi 0.3 z üzeri eksi 1. Bunun ters set dönüşümü nedir?
+
+349
+01:04:40,800 --> 01:04:51,619
+Yani bir yerlerden bu haç seti bulduk. Şimdi yapacağımız şey bunu şu şekilde yazabiliriz. Doğrudan basit kesirleri ayırabiliriz.
+
+350
+01:04:51,619 --> 01:05:02,259
+Bir bölü, bir eksi sıfır nokta üç z üzeri eksi bir, artı z üzeri eksi bir bölü, bir eksi sıfır nokta üç z üzeri eksi bir.
+
+351
+01:05:02,259 --> 01:05:14,319
+iki farklı kesirin toplamını şey bir toplamı iki farklı kesir şeklinde yazdık. Peki şu sol taraftaki neye benziyor?
+
+352
+01:05:31,635 --> 01:05:32,635
+Evet, Özgür.
+
+353
+01:05:35,495 --> 01:05:37,036
+Ses gelmiyor galiba.
+
+354
+01:05:38,235 --> 01:05:43,635
+Şey, 3 bölü 10 üzeri n çarpı uğulan.
+
+355
+01:05:45,235 --> 01:05:47,635
+Evet, yani tek taraflı dersek doğru.
+
+356
+01:05:47,635 --> 01:05:48,635
+Evet.
+
+357
+01:05:48,635 --> 01:06:00,235
+Doğrudan yani 1-1 bölü a, 1-1 bölü 1-a çarpı z üzere eksi bir form değil mi? Yani şu formu daha önce konuştuk. 1 bölü 1-a çarpı z üzere eksi bir.
+
+358
+01:06:00,235 --> 01:06:04,695
+veya bu z ile çarparsak payı ve paydayı z-a.
+
+359
+01:06:05,615 --> 01:06:06,415
+Buna benziyor.
+
+360
+01:06:06,995 --> 01:06:07,635
+İşte bu nedir?
+
+361
+01:06:09,235 --> 01:06:12,115
+0.33 üzeri n.
+
+362
+01:06:12,316 --> 01:06:14,475
+Eğer şeyse de un diyebiliriz.
+
+363
+01:06:14,595 --> 01:06:15,915
+Yakın sarkılık bölgesinde dikkat edelim.
+
+364
+01:06:16,455 --> 01:06:18,155
+Peki yan taraftaki ney?
+
+365
+01:06:25,619 --> 01:06:31,619
+Bu da ona çok benziyor. Sadece yukarıda bir z var.
+
+366
+01:06:34,420 --> 01:06:40,619
+Yan taraftakini şöyle de görebiliriz. z bölü z-0.3
+
+367
+01:06:42,119 --> 01:06:49,619
+Yok bir dakika öyle görür müydük? Pardon bir bölü z-0.3 diye de görebilirdik.
+
+368
+01:06:49,619 --> 01:07:11,219
+net bir şey söyleyecek kayna. Payı paydayı z ile çarparsak hocam. Tamam onu çarptım işte. Çarptım bir bölü, aynısı olmuyor. Bir bölü z eksi 0.3. Zaten aynısı olsa ikisini toplarız tek kez arız.
+
+369
+01:07:17,043 --> 01:07:42,043
+Şimdi kurallara bakarsak, şöyle bir şey söylemiştim. Mesela, Drag n neydi? 1 idi değil mi? Yani şöyle diyelim Drag n üzerinden xn'in z dönüşümü xz'ti. Peki xn-1 olunca ne oluyordu?
+
+370
+01:07:46,324 --> 01:07:48,923
+x'e çarpı z üzeri eksilmiş.
+
+371
+01:07:49,623 --> 01:07:53,723
+Bir birim direkt polinomla çarpar gibi çarpıyorduk z üzeri.
+
+372
+01:07:57,556 --> 01:08:23,155
+Bunu burada, işte şurada görmek gerekiyor. Bakın şu z çarpı, z üzeri eksi 1 çarpı 1 bölü, 1 eksi 0.3 z derece. Yani şu tarafı alıp, şunun aynısı olduğunu görüyoruz değil mi arkadaşlar? O zaman bu ne olacak? 0.3 üzeri n demeyeceğiz de,
+
+373
+01:08:23,155 --> 01:08:30,935
+şu z üzeri eksi birden dolayı birbirim geciktirilmiş, ötelenmiş bir dönüşümdeyiz.
+
+374
+01:08:33,935 --> 01:08:34,575
+Anlaşıldı mı?
+
+375
+01:08:38,795 --> 01:08:45,315
+Eksi biri neden koydum bana hocam? Yani sıfır üzeri, sıfır ve bir üzeri 3, n-1'in eksi biri nereden geldi hocam?
+
+376
+01:08:45,315 --> 01:08:53,855
+İşte şurada xn'in z dönüşümü xz ise xn-1'in z dönüşümü z üzeri eksi bir çarpı xz oluyor ya
+
+377
+01:08:53,855 --> 01:08:59,035
+Şu bir bölü sıfır bir eksi sıfır nokta üç z üzeri eksi bir zaten şunun aynısı
+
+378
+01:08:59,035 --> 01:09:06,395
+Şu z üzeri eksi bir ifadesi şuradaki bunu ne yapıyor? n'de bir birim geciktirme yaptırıyor
+
+379
+01:09:06,395 --> 01:09:08,595
+Anladım hocam
+
+380
+01:09:08,595 --> 01:09:14,075
+Ha şimdi buna un yazdıysak buna ne yazacağız? Buna da un-1 yazacağız
+
+381
+01:09:14,075 --> 01:09:22,556
+Eğer buna un gibi bir şey yazıyorsak sağ taraflı sol taraflı demedik yani sadece soruyu şu şekilde çözmek istedik
+
+382
+01:09:22,556 --> 01:09:31,695
+Yani böyle yukarıda z üzeri eksi birli bir şey var aşağıda da böyle bir karesi bilmem nesi bir şey yok ne bileyim bir bölü bir eksi
+
+383
+01:09:31,695 --> 01:09:39,315
+a çarpı z üzeri eksi bir gibi bir şey görüyorsanız bu ne demektir z üzeri eksi bir çarpı bir gibi düşünür
+
+384
+01:09:39,315 --> 01:09:49,315
+Şuradan a üzeri n'i çarpı, işte şu eksi bir olduğu için a üzeri n-1 şeklinde düşüneceksin sonra.
+
+385
+01:09:49,435 --> 01:09:56,935
+Önce a üzeri n'i bulacağız. Bu a üzeri n çarpı z üzeri eksi birdir. Bu da a üzeri n-1'dir.
+
+386
+01:09:57,695 --> 01:10:00,595
+Peki z üzeri eksi 2 olsa o zaman iki birim öteleme demek.
+
+387
+01:10:00,595 --> 01:10:08,715
+Çünkü şu kural doğrudan diyor ki bize eğer sen x n-k'yı yapacaksan z üzeri eksi k ile x z'i çarp diyor.
+
+388
+01:10:09,315 --> 01:10:15,315
+Bu açıdan çok güzel bir özellik. Bu tarz ters dönüşümlerde de çok fazla işimize yarıyor. Tamam mı?
+
+389
+01:10:19,667 --> 01:10:25,427
+Region of Convergence'ı tabi burada sağ taraflı verce elimizin direkt UN diye yazabiliriz.
+
+390
+01:10:26,567 --> 01:10:29,207
+Peki birkaç örnek daha bakalım.
+
+391
+01:10:36,916 --> 01:10:45,235
+internette birkaç soru buldum, onlar da fena değil. Hatta bu gördüğümüzü de pekiştirmiş oldu. xz
+
+392
+01:10:45,235 --> 01:11:03,875
+z üzeri eksi 4 bölü z eksi 1 artı z üzeri eksi 6 artı z üzeri eksi 3 bölü z artı 0.5. Bakın bu xz olmasaydı, hz olsaydı
+
+393
+01:11:03,875 --> 01:11:18,635
+Bu sistem fonksiyonu olarak düşünebilirdik. Yani sistem öyle bir şey var ki kapalı kutu içerisinde böyle bir şey yapıyor. Bunun en düzleminde yani hn'i veya x'i bulmak için ne yapacağız? Bir kere z üzeri eksi bir yani ters set dönüşümü yapacağız.
+
+394
+01:11:21,875 --> 01:11:28,675
+Bunun ters set dönüşümü nedir? Bunları ayrı ayrı z üzeri eksi bir yani ters set dönüşümüne tabi tutabiliriz.
+
+395
+01:11:28,675 --> 01:11:32,175
+Şurada yapacağımız şey
+
+396
+01:11:32,175 --> 01:11:37,215
+Şimdi ne var? 1 bölü z-1 diye bir dönüşümümüz var mı bizim arkadaşlar?
+
+397
+01:11:40,535 --> 01:11:42,535
+Böyle bir tür bir şey gördük mü?
+
+398
+01:11:43,335 --> 01:11:47,276
+Veya z-1 ile çarpalım. z-1 bölü
+
+399
+01:11:47,276 --> 01:11:50,655
+1-z-1 diye bir şey var mı?
+
+400
+01:11:53,475 --> 01:11:55,996
+Şurada baktığımızda şeylerde, kurallarımızda
+
+401
+01:11:55,996 --> 01:12:24,856
+böyle bir şey görmüyoruz. Ne şurada? Yani bir bölü bir eksi z-dönüşü eksi bir var. Ama buradaki olduğu gibi böyle bir kuralımız yok. Bir bölü z-dönüşü eksi bir gibi. O zaman bunu şöyle yapsak. Bildiğimiz formata dönüştürelim. Bildiğimiz format ne var bizim? Aşağısı z-dönüşü eksi bir olarak kalsa. Yukarıda bize ne gerekiyor? Z gerekiyor. Bu bizim bildiğimiz bir şey.
+
+402
+01:12:24,855 --> 01:12:31,255
+yukarıda z'i gerektiriyorsa o zaman buraya ben z üzeri eksi beş yaparım yukarısı aynen kalır.
+
+403
+01:12:32,615 --> 01:12:44,175
+O zaman bunun ters z dönüşümünü alırsak tabi şu z'i de eksi bir çarpan olarak gelmesin doğrudan bir dönüşüm hatta bunu süslü parantezle yazalım.
+
+404
+01:12:44,175 --> 01:12:51,955
+Ne oluyor? Bu dönüşümün ters dönüşümünü almış olursa. Bu nedir? Z bölü z eksi bir. Bu un.
+
+405
+01:12:51,955 --> 01:13:00,235
+Bu U n'i ben z üzeri eksi beşte çarpıyorsam demek ki ne yapıyorum? Beş birim öteliyorum demek ki değil mi?
+
+406
+01:13:01,075 --> 01:13:08,916
+U n çarpı z üzeri eksi beş. Tabi bu böyle bir çarpım olmaz da. Çünkü bir tarafı n'li bir tarafı z'li bir çarpım yok. Şu içerisi U n.
+
+407
+01:13:10,295 --> 01:13:20,935
+Şunun geneli bu n eksi beştir. Bakın bunu doğrudan bulduk. Bakın bu kuralı anlarsanız dönüşümlerinde çok fazla bir sıkıntı yaşamazsınız.
+
+408
+01:13:20,935 --> 01:13:34,155
+Onun için şu önemli yani bilindik bir formata çevirip payından paydasından bir şekilde bir şeyler yapıp ne yapıyoruz o formata göre düzenliyoruz peki şu nedir z üzeri eksi altı
+
+409
+01:13:42,420 --> 01:13:54,619
+Böyle bir şeyimiz var mı bizim? Yani 1 bölü, yani z üzeri eksi 6 diye bir dönüşümüz yok ama bunu z üzeri eksi 6 çarpı 1 diye yaparsak, bakın bu bir polinom arkadaşlar.
+
+410
+01:13:55,380 --> 01:14:03,999
+Polinomsa doğrudan bu draktır. Yani drak n-6'ya karşılık gelecek. Birincisi bu. Birinci parçamız bu. İkinci parçamız bu.
+
+411
+01:14:04,619 --> 01:14:10,680
+Şimdi geldik üçüncü parçaya. Şurada ne var? z artı 0.5 var. Birinci parçaya benziyor bu.
+
+412
+01:14:10,680 --> 01:14:38,000
+Şimdi z artı 0.5 ise yukarıya ne yazmam lazım? Z yazmam lazım. Yukarıda z olması için şurada z üzeri eksi 4 ile çarpmam lazım. Şu ifadeyi. O zaman ne olur? Şu dediğim şey bu z artı 0.5 bu 0.5 bakın artı 0.5 normalde dönüşümde neydi? Eksi 0.5 olacak. O zaman bu eksi 0.5'in nesi?
+
+413
+01:14:37,999 --> 01:15:07,539
+n. kuvveti. Ama burada z üzeri eksi 4 de bunu düşüneceksek, bu ne olacak? Eksi 0.5'in n-4. kuvveti olur. Bunların hepsine un getireceksek, yani mesela şurada un zaten kendisi de var. Buraya un getirmek için ne yapacağız? Un n-4 sağ taraflıysa. Burayı anladık mı? Bakın şurada z bölü z artı a diye bir şeyimiz yok. Hep eksi a.
+
+414
+01:15:07,539 --> 01:15:09,659
+o zaman bu artı nereden geldi? Demek ki şu
+
+415
+01:15:09,659 --> 01:15:11,999
+eksi, eksi 0.5
+
+416
+01:15:11,999 --> 01:15:13,499
+diye bir şey şu resmi. Şurada ne var?
+
+417
+01:15:13,579 --> 01:15:15,799
+Eksi, eksi 0.5 dolayısıyla artı var.
+
+418
+01:15:16,419 --> 01:15:17,519
+Ona dikkat etmek gerekiyor.
+
+419
+01:15:17,599 --> 01:15:19,759
+Bu tarz şeylerden puan kaçıyor genelde sizde.
+
+420
+01:15:20,519 --> 01:15:21,639
+Yani burada artı 0.5
+
+421
+01:15:21,639 --> 01:15:23,479
+varsa direksi artı 0.5
+
+422
+01:15:23,479 --> 01:15:24,779
+yazılmayacak.
+
+423
+01:15:25,999 --> 01:15:27,539
+Bu soru fena değildi. Yani internette
+
+424
+01:15:27,539 --> 01:15:29,599
+bulmuştum. Bir de şuna
+
+425
+01:15:29,599 --> 01:15:29,899
+bakalım.
+
+426
+01:15:33,876 --> 01:15:42,195
+sonra çift taraflı şey sağ taraflı dönüşümlerle alakalı bir örnek var ona bakarız. fz
+
+427
+01:15:44,515 --> 01:15:48,915
+10 çarpı z çarpı z artı 5 bölü
+
+428
+01:15:51,056 --> 01:15:52,695
+z eksi 1
+
+429
+01:15:54,335 --> 01:15:58,115
+z eksi 2 z artı 3'müş
+
+430
+01:15:58,115 --> 01:16:18,916
+Şimdi biz bunu öyle bir şey yapacağız ki bilindiğimiz formata dönüştüreceğiz. Şimdi z-1, z-2 biraz önceki şunlara benziyor. Z-2 şeyler artır. Tamam bu kolay. Ama yukarıda ne olması lazım? Sabit sayılar olması. Yani z bölü z gibi bir şey. Ama yukarıda iki tane ne var? Z var arkadaşlar.
+
+431
+01:16:18,915 --> 01:16:40,855
+O zaman diyoruz ki şu z'yi 10 çarpı z çarpı z'yi dışarıya alsam yani aşağıya alsam f z bölü z desem bu 10 çarpı z artı 5 bölü z teksi 1 z teksi 2 z artı 3 olur.
+
+432
+01:16:40,855 --> 01:16:43,955
+Bunu burada rezerve ettik
+
+433
+01:16:43,955 --> 01:16:55,715
+Peki ne yapabiliriz? İşte A bölü z-1 artı B bölü z-2 artı C bölü z artı 3
+
+434
+01:16:55,715 --> 01:17:01,635
+Şimdi 10 çarpı z artı 5 eşittir
+
+435
+01:17:01,635 --> 01:17:06,955
+Nedir? A çarpı z-2 çarpı z artı 3'tür değil mi?
+
+436
+01:17:06,955 --> 01:17:23,475
+artı B çarpı z eksi bir çarpı z artı üçtür artı C çarpı z eksi bir çarpı z eksi ikidir. Peki biz Z yerine ne verelim? 2 verirsek, 2 verirsek ne olur? Şu gider.
+
+437
+01:17:23,475 --> 01:17:46,275
+bu gider, B'yi buluruz. O zaman verelim bakalım ne gelecek. Z-1'den 1 geldi, Z-3'den 5 geldi, 5B eşittir. Şuraya da 2 verince 7, ne oluyor? 70, B eşittir 14 mi oluyor?
+
+438
+01:17:46,275 --> 01:18:15,075
+Tamam bunu bulduk. Z dediğimiz şey için bir tane verelim, eksi 3 verelim. Eksi 3 verirsek bu gider, bu gider, şurayı buluruz. Nedir bu? Eksi 3 verirsek eksi 4, şurası da ne? Eksi 5, yani 20C eşittir. Eksi 3 verdiğimizde burası artı 2, 20, yani C ile 1 bulduk. Tamam, çok güzel gidiyoruz. Z eşittir.
+
+439
+01:18:16,275 --> 01:18:25,295
+Kime A'yı bulduk? Pardon A'yı bulacağız. A'yı bulmak için 1 vereceğiz. Z'in yerine 1 verirsek ne olur? Bu gider, bu gider.
+
+440
+01:18:25,955 --> 01:18:38,895
+Eksi 1, çarpı 4 daha, eksi 4. Eksi 4 A. Bir verdiğimizde 6, 60. A dediğim şeyde ne oluyor? Eksi 15 oluyor.
+
+441
+01:18:40,895 --> 01:18:45,395
+Tamam bunu da bulduk. O zaman getirip şurada yerine yazalım.
+
+442
+01:18:46,275 --> 01:18:59,075
+A-15, B-14, şu da 1. Şimdi bizim bir tane şurada kenara koyduğumuz Z vardı. Bu Z'i buraya getiriyoruz.
+
+443
+01:19:00,355 --> 01:19:12,175
+Z, Z, Z. Şimdi bu dönüşümle x-15, z bölü z-1. Şimdi z bölü z-1 bizim bu enimiz. Öyle değil mi?
+
+444
+01:19:12,175 --> 01:19:31,435
+O zaman ne diyeceğiz? Eksi 15, un, z bölü z-2, 2 üzeri n'di, artı 2 üzeri n. Önünde ne var? 14 var. O zaman 14 tane 2 üzeri n, un. Şurada z bölü z artı 3.
+
+445
+01:19:32,212 --> 01:20:00,251
+z-3 olunca ne oluyor? Artı, eksi 3 üzeri n, u n, bir de önünde ne var? İşte onun gerçi 1 var. Doğrudan 1 çarpı deyip geçeriz. Yani sonucumuz ne oluyor? Eksi 15, u n, artı 14, 2 üzeri n, u n, artı 1, artı 1 mi bir dakika? Artı 1 çarpı eksi 3 üzeri n, u n. Yani şu 1'e de gerek yok zaten.
+
+446
+01:20:00,251 --> 01:20:02,811
+Burada anlaşılmayan bir şey var mı?
+
+447
+01:20:07,572 --> 01:20:16,572
+Peki, devam edelim. Şimdi bizim Laplace transformunda türev özelliğimiz vardı.
+
+448
+01:20:16,572 --> 01:20:30,072
+Şimdi Y, orayı bir hatırlayalım. Y, T'nin Laplace'ı neydi? Y, S'ti. Y, Türev T'nin Laplace'ı neydi? İki farklı şekilde oluyordu.
+
+449
+01:20:30,072 --> 01:20:46,771
+S, Y, S diyebiliyorduk veya ne diyebiliyorduk? S, Y, S, ekisi, Y, sıfır diyorduk. Öyle değil mi? Şu ne anlamında bu ikisinin farkı neydi arkadaşlar?
+
+450
+01:20:51,283 --> 01:20:53,843
+Biri unilateral, biri bilateral
+
+451
+01:20:53,843 --> 01:20:56,583
+Hangisi uni, hangisi bi?
+
+452
+01:20:57,244 --> 01:20:59,043
+İkincisi bilateral'dır galiba
+
+453
+01:20:59,043 --> 01:21:02,423
+Yok, bu tek taraflı
+
+454
+01:21:02,423 --> 01:21:02,803
+Öyle mi?
+
+455
+01:21:03,704 --> 01:21:07,704
+Öyle hatırlıyorum. Şu unilateral, şey pardon bilateral
+
+456
+01:21:07,704 --> 01:21:09,283
+Bilateral
+
+457
+01:21:12,467 --> 01:21:26,467
+Pardon, niye? Bu yün ile tek taraflı olun. Bunu bir deltiler. Çift taraflı, tek taraflı. Niye tek taraflı da böyle bir şey yapıyorduk? Örneğin bir devreniz var. Elektrik devresi.
+
+458
+01:21:26,467 --> 01:21:42,447
+T eşittir sıfır anında bir anda açacaksınız. Sonra çalışmaya başlayacak. Yani bastığınız duymaya sistem çalışmaya başlayacak. Şimdi sistemin çalışması eğer sistem kapalı iken içerisinde bazı değerlerin devre dışı bırakılmasını isterse
+
+459
+01:21:42,447 --> 01:21:53,587
+yaparsanız onları çıkartmak gerekir, dahil etmemek gerekir. Peki sistem kapalı iken ki sistemde bulunan değer hangi değerdir? Y'nin sıfırdaki başlangıç koşulu değeridir.
+
+460
+01:21:53,587 --> 01:22:11,307
+Bunu z-transform ile uygulayacağız. Şöyle yapalım. Bir kere elimizde XT yok veya YT yok. XN veya YN gibi şey var. Bunun biliyoruz ki biz z-transformu XZ.
+
+461
+01:22:12,447 --> 01:22:41,067
+bunun da tamamısı. Peki bunun türevini almak ne demek? Türevini almak demek aslında xn-xn-1'i almak demek. Eğer biz bunu türev kuralını doğrudan uygulayacak olursak z ile çarpabiliriz. Bunda bir sıkıntı yok iki taraflıysa. Fakat bizim sayısal sistemlerde iki taraf gerçek hayatta bir uygulamalarda böyle bir şey olduğunu,
+
+462
+01:22:41,067 --> 01:23:02,627
+Onun yerine ne yapıyoruz? Başlangıç koşullarını devre dışı bırakmamız gerekiyor. Şimdi bunun başlangıç koşulu ne? Sistem burada n sıfır dahil olduğu için yani sağ tarafa sıfır da dahil edildiği için sıfırın bir önceki değerini çıkartmak gerekecek. Sıfırın bir önceki değeri de ayrık zamanlı sistemlerde n eşittir, eksidir.
+
+463
+01:23:02,627 --> 01:23:10,447
+O zaman biz baştan uç koşullarını buna göre yazmamız gerekiyor arkadaşlar. Yani diyeceğimiz şey şu olacak.
+
+464
+01:23:16,595 --> 01:23:17,935
+böyle bir şey yapsak.
+
+465
+01:23:21,971 --> 01:23:46,371
+Yani bir süre almak, bir birim geciktirme almaktan aslında şu, yani bir önceki durumu bunu bulmak istiyorsak şey durumunda, normalde xz çarpı z demiştik. xz çarpı z'ten çıkaracağımız şey şu olacak arkadaşlar, pardon z üzere xz olmaz. Çünkü bir birim geciktirme uyguluyoruz.
+
+466
+01:23:46,371 --> 01:23:54,672
+Bu çıkaracağımız şey x'in eksi bir anındaki değerleri çıkartmak demektir.
+
+467
+01:23:56,751 --> 01:23:59,271
+Bir dakika pardon burada çıkarmıyoruz arkadaşlar.
+
+468
+01:23:59,971 --> 01:24:01,111
+Şey yapıyoruz ekliyoruz.
+
+469
+01:24:02,251 --> 01:24:02,771
+Niye ekliyoruz?
+
+470
+01:24:02,832 --> 01:24:07,951
+Oradaki değerlerin işte bu şeyde türevden açılım var uzunluğunun ispatı var.
+
+471
+01:24:08,692 --> 01:24:15,611
+Orada eksi y türev 0 yaparken eksi 0 şeydeki değerleri buraya dahil ederek işlem yapılıyor.
+
+472
+01:24:16,371 --> 01:24:36,951
+Şimdi genel mantığı bu. Eğer ki sistemimiz sağ taraflı, tek taraflı çalışıyorsa, birinci dereceden türev alma bu şekilde. Eğer bunun ikinci dereceden türevini xn-2'yi bulacaksak, bak bunlar hep normalde xn-1 bulurken xd çarpı z üzeri x'i 1 deyip bırakıyorduk.
+
+473
+01:24:36,951 --> 01:25:00,891
+şunun bir derece türevini alacağız demektir. Şimdi bunun bir derece türevinde ne yapıyoruz? Z üzeri eksi bir çarpı x, z çarpı z üzeri eksi bir artı x eksi bir. Bir de bunun şeyi x eksi iki, şu parantezden sonra artı x eksi iki'yi ekleriz.
+
+474
+01:25:00,891 --> 01:25:05,971
+Bu kadar gerekli değil, bunlar o kadar önemli değil de şu ikisi bizim için önemli şeyler
+
+475
+01:25:05,971 --> 01:25:09,771
+Buna çok fazla ihtiyacımız yok
+
+476
+01:25:09,771 --> 01:25:11,671
+Peki bunu nerede kullanacağız?
+
+477
+01:25:11,871 --> 01:25:14,891
+Şimdi ben bir soru çözeceğim, bir tane soruyu da çözmeniz için size bırakacağım
+
+478
+01:25:14,891 --> 01:25:27,111
+Yani bir sistem üzerinde analiz yapacağımızda eğer sistem fonksiyonunu elde edeceksek ve bu tek taraflı verecekse fark denklemi
+
+479
+01:25:27,111 --> 01:25:35,852
+burada başlangıç koşullarını dikkate almak gerekiyor. Zaten size bir başlangıç koşulu veriliyorsa bu kuralı işletmeniz gerekecek.
+
+480
+01:25:35,852 --> 01:25:49,712
+1 bölü 2, Y, N-1, eşittir X, N. Bunu söyleyeceğiz. Şimdi bize X, N'in giriş olarak şu olduğunu söylemişler.
+
+481
+01:25:49,711 --> 01:25:55,891
+1 bölü 3 üzeri, yani girişe böyle bir şey verecekmişiz. Y'nin eksi 1'deki değeri de 1 olacakmış.
+
+482
+01:25:56,211 --> 01:26:04,551
+Başlangıç koşullar. O zaman biz burada tek tek şey dönüşümü yapalım. Mesela xz'in değeri nedir?
+
+483
+01:26:05,511 --> 01:26:13,011
+1 bölü 3 üzeri n ise bu nedir? z bölü, z eksi 1 bölü 3'tür. Ve burada yakın saklık bölgesinin, yani bunu
+
+484
+01:26:13,011 --> 01:26:20,351
+yapalım. Hatta şey vermiş, U'n diye vermiş, Z'nin bir bölüşten büyük olduğunu biliyoruz, söyleyebiliriz.
+
+485
+01:26:20,351 --> 01:26:35,771
+Şöyle diyeceğiz. Peki, dönüşüm yapalım. Y, Z'nin, Y'nin şey dönüşümü, Z dönüşümü, Y, Z. 1 bölü 2, Y, N-1'in Z dönüşümü, işte burada başlangıç koşullarına dikkate alacağımız için
+
+486
+01:26:35,772 --> 01:26:48,951
+diyeceğiz ki yz çarpı z üzeri eksi bir buvar artı y eksi bir şunu getireceğiz.
+
+487
+01:26:50,552 --> 01:26:56,152
+Tabii şu bir bölü iki dışarıdaki bir bölü iki bunların ikisini de etkileyecek şöyle yapalım.
+
+488
+01:26:56,971 --> 01:27:01,632
+Dışarıda da ne var? X enki xz. xz de zaten burada yerine yazıldı.
+
+489
+01:27:02,232 --> 01:27:05,471
+Şimdi şu değeri şuraya yazdığımızda gelen değer bir.
+
+490
+01:27:05,771 --> 01:27:08,271
+ne var?
+
+491
+01:27:08,551 --> 01:27:13,271
+yz-1 bölü 2 yz çarpı z-düzeli eksi 1 artı 1 eşittir xz.
+
+492
+01:27:13,271 --> 01:27:19,951
+Şimdi burada xz'leri ve yz'leri sağ tarafa sol tarafa atarsak yz'imiz
+
+493
+01:27:21,076 --> 01:27:27,076
+Şöyle bir şey geliyormuş. Hızlıca yazayım. Zaman da ilerliyor. Bir saniye daha göstereceğimiz bir şey var.
+
+494
+01:27:27,076 --> 01:27:32,076
+Yani biraz dört işlem yapmak gerekecek.
+
+495
+01:27:32,076 --> 01:27:39,076
+Burası 1 bölü 2 çarpı.
+
+496
+01:27:40,756 --> 01:28:02,256
+z bölü z eksi 1 bölü 2 artı z kare bölü z eksi 1 bölü 2 z eksi 1 bölü 3 buna karşılık gelecek. Bu ifadede şurayı basit kesirlere açmak gerekiyor.
+
+497
+01:28:02,256 --> 01:28:11,655
+basit kesirleri açıldığında bunun sonucu Yn yani bu Xn girişi uygulandığında göreceğimiz sonuç isterseniz ara adımları kendinize yapabilirsiniz.
+
+498
+01:28:11,796 --> 01:28:19,395
+7 çarpı 1 bölü 2 üzeri n artı 1 birim ön alma varmış.
+
+499
+01:28:19,735 --> 01:28:22,315
+Tabi çünkü burada türev var. Ondan dolayı böyle.
+
+500
+01:28:23,016 --> 01:28:26,275
+Eksi 2 çarpı 1 bölü 3 üzeri n şeklinde alıyor.
+
+501
+01:28:26,275 --> 01:28:27,275
+Tamam mı?
+
+502
+01:28:28,016 --> 01:28:31,775
+Sonucumuz için ara adımları siz çalışmak için yapabilirsiniz.
+
+503
+01:28:32,256 --> 01:28:50,215
+Burada bir soru daha şey yapalım. Tabi burada ikinci dereceden türev de var. Fark demek arkadaşlar bir anlamda türev demek. Bunu unutmayın. Yani bir şekilde biz Yn'den Yn-1'e geçiyorsak bir anlamda aslında türev işlemi yapıyoruz demektir.
+
+504
+01:28:50,215 --> 01:29:06,256
+soru şöyle 3YN-4YN-1 artı YN-2 eşittir XN.
+
+505
+01:29:08,476 --> 01:29:13,756
+Buradaki XN'imiz 1 bölü 2 üzeri N'miş.
+
+506
+01:29:13,756 --> 01:29:27,135
+başlangıç koşulları Y-1 için 1 varmış. Y-2 için 2 varmış. Şimdi bir size tavsiyem. Birincisi bunu tek taraflı çözüm.
+
+507
+01:29:29,635 --> 01:29:33,235
+Tek taraflı çözüm yaparken şunlara dikkat alacaksın. Bir de çift taraflı çözüm.
+
+508
+01:29:35,476 --> 01:29:42,196
+Çift taraflı çözüm yaparken bunlar dikkate alınmıyor. Doğrudan Z dönüşümlerini alıp ters-Z dönüşümler ne yapacaksınız?
+
+509
+01:29:42,195 --> 01:29:48,755
+h-n'i bulabilirsiniz. Ve x-n'i yerine koyup y-n'i çekebilirsiniz.
+
+510
+01:29:50,756 --> 01:30:06,135
+Şimdi tek taraflı şeyin sonucu şuymuş. Şöyle yazalım. 3 bölü 2 eksi, 1 bölü 2 üzeri n, artı, 1 bölü 2 üzeri, 1 bölü 3 üzeri n.
+
+511
+01:30:06,135 --> 01:30:21,675
+en büyüktür, eşittir, eksi 2. Çift taraflı da burada biraz daha farklı sonuç gelecek. Çünkü şu şeyleri dahil etmiyoruz. Biraz önce yaptığımız örneklere benziyor. Bunu da çözerseniz yeterli olur.
+
+512
+01:30:29,427 --> 01:30:31,427
+başka birkaç tane soru yazayım.
+
+513
+01:30:45,684 --> 01:30:56,863
+şöyle bir sistem verilmiş, bu sefer grafiğini vermişiz. Size verdiğimiz sorularda da buna benzer bir şey olması lazım.
+
+514
+01:31:24,692 --> 01:31:36,492
+şurada toplama var, şurası da toplama. şimdi yen bakın bir birim gecikme ile sisteme dahil ve xn de toplanıyor tekrar yen dediğim şey yen
+
+515
+01:31:36,492 --> 01:31:40,811
+eksi bir
+
+516
+01:31:42,771 --> 01:32:12,011
+xn hatta 1 bölü 2 var bir de burada. Önce gecikme alınacak, sonra 1 bölü 2 ile çarpılacak. Sonra yapılacak şey şu. Şimdi z üzeri eksi 1 diye yazılıyorsa arkadaşlar, bir birim gecikme olduğunu bu şekilde özel bir notasyon, z üzeri artı 1 olsaydı bir birim öne alma şeklinde düşünecektik. Ve bu yn'in bir birim geciktirilmiş haliyle çarpılıyor işte şuradaki sayılar, xn'i topluyoruz. Bu bir sistem.
+
+517
+01:32:12,771 --> 01:32:35,452
+Bu sistemi mesela z-dönüşümünü alın diyebilir. İşte h z-d'i bulun diyebilir. Mesela h z-d'i bunun neymiş? Bunu eğer yerine koyarsanız 1-1 bölü 2 z üzeri eksi 1 geliyor. h n'i zaten yazılabilir. Çünkü bu giriş çıkış ilişkisini doğrudan oranlayabilirsiniz.
+
+518
+01:32:35,452 --> 01:32:52,911
+y, n, x, n, pardon y, z, x, t, oranlarsanız bunları bulacaksınız. H, stek buymuş, h, l'de bir bölü iki üzeri, tabii şuradan yerine koyarsak bu nedir? Bir eksi bir bölü iki, yani bu bir bölü iki üzeri n, un şeyde böyle verilmiş.
+
+519
+01:32:52,911 --> 01:33:09,011
+bu sistemi mesela çözeceğiz. Daha karmaşık sistemler de vardı. Bizim baktığım haberleşmeciler bile bu tarz konularda anlatmışlar. Daha ileri gitmemişler. Bize de yeterli.
+
+520
+01:33:12,511 --> 01:33:17,931
+Şimdi kısaca şu quizden bahsedelim. Sınavla alakalı konuşalım. Ondan sonra kapatacağız.
+
+521
+01:33:17,931 --> 01:33:36,491
+Şimdi quizde Laplace transformunda ve z-transformunda incelediğimiz sistemin sıfırları ve kutupları ile alakalı MATLAB'de veya işte Python'da kullanılan hazır fonksiyonlar var. Yani bir plot gerçekleştiriyor. Plot olarak siz ne yapıyorsunuz?
+
+522
+01:33:36,492 --> 01:33:41,831
+pay ve paydayı polinom şeklinde kullanıcıdan giriyorsunuz.
+
+523
+01:33:41,831 --> 01:33:49,971
+İşte ne bileyim s kare artı 3s bölü s artı 1 çarpı s eksi 2 bizim şeyimiz bu ama bunun polinom formatında girmeniz gerekiyor.
+
+524
+01:33:50,572 --> 01:33:55,872
+İşte polinom formatı nedir? Burada 1 var, 3 var, 0 var. Bu bir polinom, ikinci dereceden bir polinom.
+
+525
+01:33:56,451 --> 01:34:02,352
+İşte şunu açarsanız o da bir ikinci dereceden polinom. Kat sayıları girdiğinizde size 0 kutup diagramını çiziyor.
+
+526
+01:34:03,891 --> 01:34:05,712
+Aynısı z-transformunda da var.
+
+527
+01:34:06,492 --> 01:34:10,992
+Ben önce şu şeyimi açayım, Q104
+
+528
+01:34:10,992 --> 01:34:16,352
+Yapacağınız şey aslında çok karmaşık değil
+
+529
+01:34:16,352 --> 01:34:26,271
+Ayrık XS ve sürekli XS işaretini, ZeroPol diagramı çizen MATLAB ve Python fonksiyonu kullanımı ayrık ve sürekli zaman için ikişer farklı örnekle açıklayacaksınız
+
+530
+01:34:26,271 --> 01:34:31,891
+Yani fonksiyonları incelediğinizde iki tane örnek yapacaksınız her birisi için
+
+531
+01:34:31,891 --> 01:34:36,312
+Onların sonuçlarını grafiksel sonuçlarını üzerine raporunuza ekleyeceksiniz
+
+532
+01:34:36,311 --> 01:34:54,931
+yazdığınız kodu ekleyeceksiniz. Bu kadar. Mesela bu işlem için transfer fonksiyon to zero pole matlab'de işte pz map z plane fonksiyonları matlab'de var. Aynısı Python'da da yani belki isimleri ufak tefek değişiyordur. İşte bunun dışında diğer diller de kullanabilirsiniz demişiz.
+
+533
+01:34:54,931 --> 01:35:06,051
+Burada demişim ki zero pole diagramı için z-dönüşümünde yani veya s-dönüşümünde sadece şey değil, pi ve pi dalının kassalarını input olarak alıyorsunuz.
+
+534
+01:35:06,051 --> 01:35:17,811
+İşte kaçıncı derece bir şeyse örnek olarak şurada bir kullanım var. Hem z hem s yüzlemi için. Bu şeylere ikişer tane örnek yapıp fonksiyonların kullanımlarını ve sonuçlarını gösteriyorsunuz.
+
+535
+01:35:17,811 --> 01:35:38,691
+Tabii gösterdiğiniz şeyler, yani yazdığınız polinomla doğru, alakalı, uyumlu olması lazım. Yani z-1 çarpı z-2'nin 0 polinomunu çizdirdiğimizde ne göreceksiniz? 1 ve 2 noktalarında pol göreceksiniz. Eğer pi'de da hiçbir şey yoksa hiçbir şey yoksa sıfır görmeyeceğiz.
+
+536
+01:35:39,412 --> 01:35:49,912
+bu şekilde yapabilirsiniz. Burada bir 23.59 yazıyor da bu 23.59 değil arkadaşlar. Hatta ben onu şimdi değiştireyim sonra yanlış anlaşılma olmasın.
+
+537
+01:35:49,912 --> 01:35:58,711
+Online Yıldız sisteminde belirtilen sürenin sonuna kadar. Bunu bir hemen değiştireyim ondan sonra
+
+538
+01:35:58,711 --> 01:36:01,071
+Quiz 4'ü bir yayından kaldı diyelim.
+
+539
+01:36:04,011 --> 01:36:06,611
+Yaz Quiz 4'ü şöyle yapayım.
+
+540
+01:36:10,420 --> 01:36:21,659
+sistemde 17.30 demişim. Normalde 17 diyecektim de 17.30 olması sıkıntı değil sistemden dolduruyorsunuz.
+
+541
+01:36:24,627 --> 01:36:28,627
+ve pol diagramı s ve s
+
+542
+01:36:28,627 --> 01:36:31,627
+şu şekilde düzeltme hazır gelmişken
+
+543
+01:36:31,627 --> 01:36:35,627
+yerinde
+
+544
+01:36:40,787 --> 01:36:41,787
+Güzel, güzel.
+
+545
+01:37:12,180 --> 01:37:37,680
+yayından. Şu an görüyorsunuzdur arkadaşlar. Açığım belge göstereyim. 15'ten 17, 34 Eylül. S ve S yazacak. Şurayı tekrar düzeltirim ben şimdi birazdan. İkişer tane dört tane örnek sonuç görmem gerekiyor. Doğru sonuçlar olması gerekecek. Tamam mı?
+
+546
+01:37:42,036 --> 01:37:47,536
+Bir saniye şurada hemen bir düzeltme daha yapayım.
+
+547
+01:37:58,868 --> 01:38:22,827
+Hocam bir şey sorabilir miyim? Tabii ki. İçer farklı örnekler açıklayan demişsiniz ya, orada biz ayrıyeten bu yorum yapmayacağız değil mi? Yani yorumdan zaten şey, yapılacak bir yorum yok. Sonuç doğruysa doğrudur. Hani görün, yani oraya ikisinin bir şey yapmanız gerekmiyor. Sonuçta çarpı işaretlerini ve yuvarlak işaretlerini doğru yerlerde görmemiz lazım. Onun dışında bir yoruma gerek yok.
+
+548
+01:38:22,827 --> 01:38:24,827
+Tamam hocam, sağ olun.
+
+549
+01:38:28,051 --> 01:38:48,051
+diğer ödevde yorum vardı. Niye? Çünkü orada W'nun değişimine göre işarette oluşacak değişikliği görüyorduk. Ama burada iş biraz daha farklı. Yani öyle bir değişim yoktu oradan. Hani girdiğe karşılık bir sonuç var. Herhangi bir ekstra parametre kullanılmıyor.
+
+550
+01:38:48,051 --> 01:38:52,051
+Şimdi yayınla diyelim.
+
+551
+01:38:56,148 --> 01:39:05,028
+17-doruz falan filan filan filan. Tamam. Bu böyle. Şimdiden isteyenler birazdan kapatınca çalışmaya başlayabilir.
+
+552
+01:39:05,028 --> 01:39:10,648
+Gelelim sınava. Hatta sınav için şöyle bir şey yapayım.
+
+553
+01:39:14,355 --> 01:39:23,295
+Anlattığımız konuları hızlıca gözden geçirsek 5-6 sorunun nasıl geleceğine dair belki bir fikir verir diye bir şeyler söyleyelim arkadaşlar.
+
+554
+01:39:25,015 --> 01:39:33,735
+Geriye doğru gideceğim. Biz öncelikle ayrık zamanlı sistemlerin dönüşümleriyle alakalı en son gördüğümüz şey Z-Transform.
+
+555
+01:39:35,855 --> 01:39:41,616
+Bununla beraber tabii ayrık zamanlı Fourier Transform'u, Laplace Transform.
+
+556
+01:39:41,616 --> 01:40:09,076
+işte burada ne olur? Size bir sistem verilir, o sisteme bir giriş uygulamanız istenir ve bu girişi Laplace dönüşünü, z-dönüşünü yaparak sistemin sonucunun ne olacağı, yani yt veya yn sonucunun ne olacağı, bununla birlikte işte üçüncü zamanda t eşittir, üç anında, n eşittir, beşte sistemden görülecek sonuç nedir? Sistem kararlı mıdır, kararsız mıdır? gibi.
+
+557
+01:40:09,075 --> 01:40:16,895
+sonra region of convergence'ı çizin, belirleyin gibi derste konuştuğumuz şeylerle alakalı sorular gelebilir.
+
+558
+01:40:17,115 --> 01:40:21,055
+İşte bu diferansiyel denklem olabilir bir tarafta, öbür tarafta fark denklemi olabilir.
+
+559
+01:40:22,216 --> 01:40:25,815
+Biraz önce yaptığımız örnekler, hep konuştuğumuz şeylerle alakalı.
+
+560
+01:40:27,395 --> 01:40:30,375
+Buradan bir iki tane soru geleceğini düşünüyorum ben.
+
+561
+01:40:30,815 --> 01:40:31,975
+Üç de olabilir de en az iki.
+
+562
+01:40:32,975 --> 01:40:34,155
+Şimdi fır filtreler var.
+
+563
+01:40:34,275 --> 01:40:35,875
+Fır filtreleri biz ne için gördük?
+
+564
+01:40:35,875 --> 01:40:39,575
+zaman düzleminde ayrık zamanlı sinyallerde işlem yapmak için ne yapıyorduk?
+
+565
+01:40:39,655 --> 01:40:48,295
+İşte üç tane eleman belirleyip, işte şu an xn işareti, xn artı bir işareti veya xn-1 işareti diyelim.
+
+566
+01:40:49,495 --> 01:40:58,955
+xn-1. Bu işaretlerin mesela bir ortalama filtresi, önündeki kat sayılar 1, 2, 1 olsa mesela işaretin yeni hayalini çizip mesela ne var elimizde?
+
+567
+01:40:58,955 --> 01:41:06,235
+1, 2, 3, 4, 5, 6, 7 diye bir işaret var ayrı kısmında.
+
+568
+01:41:06,896 --> 01:41:14,076
+Buna 3'e 3'lük bu filtreyi gezdirince şu kat sayılarla oluşacak yeni dizi nasıl görünür, nasıl bir sonuçtur?
+
+569
+01:41:14,076 --> 01:41:16,036
+Yeni dizinin değerlerini istiyorsunuz.
+
+570
+01:41:16,655 --> 01:41:17,895
+Şurayı ne yaparsınız?
+
+571
+01:41:18,775 --> 01:41:20,775
+Bunu 1 ile bunu 2 ile bunu 1 ile çarpınca ne oluyor?
+
+572
+01:41:20,915 --> 01:41:24,315
+4, 7, 8, 3'e böldünüz.
+
+573
+01:41:24,576 --> 01:41:25,595
+Ne olur şunun karşılığı?
+
+574
+01:41:25,736 --> 01:41:26,376
+8 bölü 3.
+
+575
+01:41:26,376 --> 01:41:43,176
+şunun öncesi şey olmadığı için burayı olduğu gibi bırakabiliriz, 1 olabilir veya işte pardon şunun için 1 ile şartıp 4, 5, 5 bölü 3 olur gibi böyle filtreler bir soru buradan düşünüyorum.
+
+576
+01:41:44,316 --> 01:41:55,855
+Geriye doğru gidiyoruz. Sampling. Sampling de tabii biz ispatla değil de işte işaretin örneklenmesi sonucunda elde edilen sayısal işaretin denklemi nedir?
+
+577
+01:41:56,375 --> 01:42:19,875
+Bu sayısal işaret örneklerindeyken, örnekleme, frekans kaç olmalıdır, örtüş mü olur mu? Bu tarz konuları anlattık. Buradan bir soru gelir. Yani şuradan bir, buradan bir. Sonra Fourier serilerini bize de sorduk. Fourier Transform ve uygulamaları. Bir tane buradan gelecek.
+
+578
+01:42:19,875 --> 01:42:44,855
+sonra ne vardı? Konvolüsyon. Konvolüsyonun ayrık halini sorduk. Bir tane belki sürekli konvolüsyon sorulabilir. 2, 3, 4, 5, 6. Eğer 6 soru soracak olursam şey bu şekilde artı bir soru daha olursa bilmiyorum yani onu daha karar veremedim. Bu gece soruları bugün ve yarın hazırlayacağım.
+
+579
+01:42:44,855 --> 01:42:52,555
+önceki konular işte ne var burada sistem özellikleri, işte nedensellik, kararlılık vesaire.
+
+580
+01:42:52,555 --> 01:42:57,755
+Gerçi nedensellik, kararlılık şunların içerisinde de olacağı için belki yedinci soruya gerek kalmayacak.
+
+581
+01:42:57,835 --> 01:43:00,635
+Çok fazla hani uğraştırmak da istemiyorum.
+
+582
+01:43:01,656 --> 01:43:02,275
+Genel olarak böyle.
+
+583
+01:43:03,315 --> 01:43:10,815
+Yani derslere katılan, ne bileyim, ödevlerde ilgili olan soru soran çok fazla zorlanmayacağı sorular olur.
+
+584
+01:43:11,175 --> 01:43:15,736
+Örneklerimize benzerdir. Yeterince zaten dokümanda sizinle paylaştığımı düşünüyorum.
+
+585
+01:43:16,755 --> 01:43:21,256
+Hepinize şimdiden başarılar diliyorum. Önümüzdeki öğretim döneminde de başarılar diliyorum.
+
+586
+01:43:21,615 --> 01:43:27,095
+İyi bir yaz okulu dönemi geçmiştir diye temenni ediyorum. İnşallah ben faydalı olmaya çalışmışımdır.
+
+587
+01:43:27,095 --> 01:43:34,295
+faydalı olmuşumdur. Evet varsa sorunuz olabiliriz yoksa kapatalım. Birazdan quizimiz başlayacak.
+
+588
+01:43:49,300 --> 01:43:54,999
+yok herhalde. Ben teşekkür ederim. Katılımınız için, ilginiz için tekrardan başarılı diliyorum. Hoşçakalın arkadaşlar.
+
+589
+01:43:55,679 --> 01:44:05,539
+Bir sorunuz olursa bana mail atabilirsiniz. Sınavla alakalı bir toplantı zaten yapacağım ama onunla alakalı bir mail gönderirim.
+
+590
+01:44:05,720 --> 01:44:15,199
+Sınav sorularını açıklamak üzere sınavın başlangıcından 10 dakika önce başlayıp ilk 10 dakika süresince açık kalacak bir zoom toplantısı yaparız.
+
+591
+01:44:15,199 --> 01:44:16,999
+O konuda ayrıca bilgi vereceğim
+
+592
+01:44:16,999 --> 01:44:21,480
+Hepinize iyi günler, iyi hafta sunuları, iyi pazarlar, başarılar diliyorum arkadaşlar

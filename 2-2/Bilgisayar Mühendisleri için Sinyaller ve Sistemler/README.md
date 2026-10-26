@@ -30,6 +30,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1-vbsuBWeH-6pERcq4DPnR4OFo98oHKGP?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Esma'nın SS notları](./slaytlar_notlar/2022/Esma%27n%C4%B1n%20ss%20notlar%C4%B1.docx) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

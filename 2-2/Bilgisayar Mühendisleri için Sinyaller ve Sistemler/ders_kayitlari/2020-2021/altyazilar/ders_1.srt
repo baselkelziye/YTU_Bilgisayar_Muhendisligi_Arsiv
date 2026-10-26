@@ -1,0 +1,4323 @@
+1
+00:00:16,051 --> 00:00:18,051
+Arkadaşlar merhabalar
+
+2
+00:00:25,684 --> 00:00:27,684
+Ses geliyor mu acaba?
+
+3
+00:00:32,787 --> 00:00:44,347
+Tamamdır. Hepiniz hoş geldiniz. Birkaç hazırlık yapıyorum. Sınıfta o arada toplanmış olur. Bir beş dakika bekleyelim.
+
+4
+00:00:53,908 --> 00:01:00,027
+Evet, iki Atakan da dersimizi aldı. Atakan, seninle konuşmuştuk. Beklediğimiz oldu bak.
+
+5
+00:02:18,740 --> 00:02:45,039
+Evet, hepiniz hoşgeldiniz arkadaşlar. Tekrardan hayırlı uğurlu bir yaz dönemi eğitimi olmasını diliyorum. Beni tanımayanlarınız olabilir. Var mı? Aranızda daha önce hiç dersine girmediğim olabilir. İsmim Ahmet Eldir. Bilgisayar Mühendisliği bölümünde öğretim görevlisi doktor olarak çalışıyoruz. Bilgisayar bilimleri ana bilim dalındayım.
+
+6
+00:02:45,039 --> 00:02:51,420
+birkaç yıldır işte bu sinyal sistem dersleriyle meşguldum. İki dönemdir de bu dersi veriyorum.
+
+7
+00:02:53,119 --> 00:03:00,839
+Faydası olsun diye bazı arkadaşlar üstten ders almak isteyenler falan oldu. Bir de azami eğitim süresinde takılanlar oldu.
+
+8
+00:03:01,600 --> 00:03:10,420
+Normalde açmayı düşünmediğim bir derste ama yani yaz okulu açmayı düşünmüyordum ama madem ki faydası olacak diye sinyal sistem dersini açalım dedik.
+
+9
+00:03:10,420 --> 00:03:19,920
+bazen arkadaşlar niye başka dersteye de bu ders diye soruyor olabilirler. Benim yaz okulu dersi açmanındaki gayem şudur arkadaşlar.
+
+10
+00:03:21,240 --> 00:03:29,339
+Öğrenciye faydası olacaksa çünkü yaz okulu bazen hocaya maddi açıdan faydası olacak şekilde de açılabiliyor.
+
+11
+00:03:30,420 --> 00:03:40,320
+Bunu tamamen karşısındayım ve ders seçimi yaparken birincisi laboratuvar olmamasına, ikincisi dönem içerisindeki ders başarı oranı yüksek olan derslerden
+
+12
+00:03:40,320 --> 00:04:04,519
+biri olmasına dikkat ettim. Önemli olan sizlere faydası olsun. Erken mezun olmak isteyenler olabiliyor veya son eğitim süresine takılan farklı sebeplerden sıkıntılar yaşayıp eğitim süresi dolayacak arkadaşlar olabiliyor. Bu açıdan açmak istedim. Hatta son anlarda bir seminer dersi falan da söz konusu oldu ama seminere gerek kalmadı açmadık.
+
+13
+00:04:04,519 --> 00:04:32,400
+İkinci soru da şu olabilir. Niye cumartesi günü ve bu saatlerde açıldı? Bu benim hafta içi beş günde verdiğim bir yerde ders var. Teknopark'la birlikte. Onun için çok fazla bir vaktim yok açıkçası. Bunu değerlendirmek adına bir kısmını cumartesi hatta bir ara hepsini cumartesi yapalım diye düşündüm ama günde altı saatten fazla ders verilemiyormuş yönetmelik olarak. İşte üçer saat, üçer saat olacak şekilde üç parçaya böldük.
+
+14
+00:04:32,400 --> 00:04:40,120
+beş hafta boyunca işte bir dönemlik dersi inşallah sizlere aktarmaya çalışacağım.
+
+15
+00:04:41,240 --> 00:04:45,400
+Birazdan dersin içeriğiyle, dersin değerlendirmesiyle alakalı şeyler anlatacağım.
+
+16
+00:04:45,400 --> 00:04:50,939
+Öncesinde sizin başka böyle merak ettiğiniz şeyler olabilir.
+
+17
+00:04:51,240 --> 00:04:52,299
+Onları sorabilirsiniz.
+
+18
+00:04:53,320 --> 00:05:00,799
+Dersin işleyişi vesaire dışında herhangi bir sorununuz varsa işte ne bileyim bilgisayar ders saatleri falan
+
+19
+00:05:00,799 --> 00:05:15,339
+onları alabilirim. Yoksa ben şöyle bir ekran paylaşımı yapayım. Birkaç şey anlatıp yavaş yavaş dersimizin içeriğiyle ve konularımızla alakalı çalışmaya başlayalım.
+
+20
+00:05:15,879 --> 00:05:17,600
+Hocam bir şey sırabilir miyim? İyi günler.
+
+21
+00:05:18,100 --> 00:05:18,519
+İyi günler.
+
+22
+00:05:19,180 --> 00:05:22,320
+Geçen sene galiba bu ders İngilizce açmıştı galiba değil mi?
+
+23
+00:05:22,379 --> 00:05:22,620
+Evet.
+
+24
+00:05:23,479 --> 00:05:24,919
+Şu an neden Türkçe açıyoruz peki?
+
+25
+00:05:24,919 --> 00:05:33,240
+Evet bundan sonra bu dersi Türkçe açmaya karar verdim. Yani önümüzdeki dönemde Gökhan Bilgin hocayla beraber Türkçe açacağız.
+
+26
+00:05:33,499 --> 00:05:43,439
+Nedeni şu çok fazla teknik ve terminolojik içerik var. Bizim İngilizcemiz özellikle benim İngilizcem belki konuşma açısından bu dersi İngilizce aktarmaya yeterli değil.
+
+27
+00:05:44,519 --> 00:05:51,959
+Belki daha önceki hocalar yeterince aktarabiliyorlardı. Bilmiyorum. Onun için bundan sonra Türkçe açmayı düşünüyorum.
+
+28
+00:05:51,960 --> 00:05:58,879
+hem işin teorik teknoloji ağırlığı var hem de benim İngilizcem konuşma açısından yeterli değil.
+
+29
+00:05:59,200 --> 00:06:03,379
+Biz sınav yeterliye gelirken hiçbir şekilde konuşmamız test edilmiyor.
+
+30
+00:06:03,980 --> 00:06:07,320
+90 puanım var ama o 90 puanın içerisinde speaking puanı yok.
+
+31
+00:06:08,200 --> 00:06:10,299
+Okuma, anlama, gramer belki birazcık writing.
+
+32
+00:06:11,379 --> 00:06:14,919
+Öyle olunca biz bunu ben şahsen Türkçe açmak istedim.
+
+33
+00:06:15,860 --> 00:06:24,419
+zaten anlaşılması ve öğrenilmesi biraz güç derslerden bir tanesi. Sizler tarafından da pek tercih edilmiyor.
+
+34
+00:06:25,360 --> 00:06:30,719
+Bunu daha böyle tercih edilmesi hale getirmek adına fiilen ve resmen Türkçe olması iyi olur.
+
+35
+00:06:31,459 --> 00:06:34,780
+Resmen İngilizce olup fiilen Türkçe olması da çok hoş olmuyor.
+
+36
+00:06:35,159 --> 00:06:43,079
+En fazla sınav sorularını İngilizce anlatıyoruz ama dersin içerisinde İngilizce anlattığımızda Türkçe özet geçmek gerekiyor.
+
+37
+00:06:43,079 --> 00:07:04,199
+Bu sefer karışıklık oluyormuş. Öğrenci arkadaşlarından bu konuda olumsuz geri bildirimler aldık. Ben bundan sonra önümüzdeki dönemde bu dersi eğer ben vereceksem diğer ekip hocam da aynı şekilde aynı kanaatte Türkçe vereceğiz. Başkası verirse o zaman İngilizceye belki dönebilir ama herhalde bir iki dönem daha biz veririz gibi geliyor. Tamam mı?
+
+38
+00:07:04,199 --> 00:07:05,599
+Anladım hocam. Teşekkürler.
+
+39
+00:07:05,599 --> 00:07:19,499
+Yüzde otuz kredi şeyiniz var biliyorum ama bizim zaten bölümde öğrenci arkadaşların aldığı toplam İngilizce krediler yüzde otuzu fazlasıyla geçiyor yani yüzde altmışa falan yaklaşıyor.
+
+40
+00:07:20,319 --> 00:07:24,599
+O açıdan bu dersin olup olmaması size çok bir şey kaybettirmeyecektir İngilizce bakımından.
+
+41
+00:07:25,779 --> 00:07:27,360
+Evet hocam ben de o yüzden sormuştum.
+
+42
+00:07:27,360 --> 00:07:28,199
+Tamamdır.
+
+43
+00:07:29,119 --> 00:07:31,059
+Şimdi arkadaşlar şöyle bir şey yaptım.
+
+44
+00:07:31,179 --> 00:07:33,360
+Ders duvarına girdiğinizde şurada bir link göreceksiniz.
+
+45
+00:07:33,360 --> 00:07:57,720
+göreceksiniz. Bu linki açalım. Açtığınızda dersin slide'ları işte dersin öncesinde yüklemeye çalışırım. Burada olacak pdf olarak. Şu ana kadar örnek bazı sınav soruları şeklinde burada dersin dışında çalışacağımız örnek sorular var. Bunları ekledim. Ek slide'lar, ek ders notları gibi şeyler var. Onları da buraya ekleyeceğim.
+
+46
+00:07:57,720 --> 00:08:05,279
+Ayrıca sınav sonuçları belli olunca, quiz sonuçları belli olunca, burada bir Excel veya bir PDF olacak
+
+47
+00:08:05,279 --> 00:08:09,199
+Hatta onu da belki ayrıca bir klasöre ekleyebilirim
+
+48
+00:08:09,199 --> 00:08:11,199
+O bilgileri de buradan ulaşacaksınız
+
+49
+00:08:11,199 --> 00:08:15,919
+Link sabit, ders duvarında herkes görüyordur şu an
+
+50
+00:08:15,919 --> 00:08:18,639
+Bütün her şey buradan takip edilecek
+
+51
+00:08:18,639 --> 00:08:21,739
+Bunun haricinde eğer bir bilgi göndermek istersem
+
+52
+00:08:21,739 --> 00:08:25,199
+Ayrıca herhangi bir Google Classroom veya başka bir şey kullanmayacağım
+
+53
+00:08:25,199 --> 00:08:36,639
+online yıldızın mail platformunu kullanmak istiyorum. Zaten 5 hafta olduğu için kısa bir dönem. Ayrıca bir iletişimsizlik sorunu olacağını düşünmüyorum.
+
+54
+00:08:37,860 --> 00:08:49,639
+Bu da tamamsa geldik ilk slide'ımızla ve dersimizin içeriğiyle, tanıtımıyla söze başlayalım.
+
+55
+00:08:49,639 --> 00:09:18,360
+Şimdi bu 20-41 dersi sinyaller ve sistemler olarak birçok yerde göreceğiniz bir ders. Adı bu isimini göreceksiniz ama biz bunu burada kısa yazdık da bilgisayar mühendisleri için sinyaller ve sistemler dersi. Normalde bu dersi kontrol, elektronik, elektrik, makine gibi birçok yerde görebilirsiniz. Yani işin içinde sinyalin ve sistemin olduğu birçok yer bu konularla iyilenir.
+
+56
+00:09:18,360 --> 00:09:26,759
+Fakat bu konularla ilgilenmek için elektronikçi kadar elektronik bilgisi, kontrolcü kadar kontrol bilgisi gerekebiliyor.
+
+57
+00:09:27,059 --> 00:09:30,600
+Onun için dersimizin bize bakan tarafıyla ilgileneceğiz daha çok.
+
+58
+00:09:31,300 --> 00:09:34,660
+Bilgisayar mühendisleri için sinyaller ve sistemler ismi buradan geliyor.
+
+59
+00:09:35,779 --> 00:09:42,800
+Daha önceki yıllarda bu dersi geçen sene, geçen dönem, yüz dönemi haricinde Nizamettin Hoca ve Ferkan Hoca,
+
+60
+00:09:42,800 --> 00:09:44,139
+bize Görkem Hoca veriyordu.
+
+61
+00:09:44,139 --> 00:09:49,699
+Görkem Hoca ile beraber biz bu dersin içeriğini oluşturmaya başlamıştık o zamanlar ben asistandım.
+
+62
+00:09:50,360 --> 00:09:54,720
+İşte bu dönemden ve geçen dönemden sonra bize kaldı Gökhan Bilgin hocamla bana.
+
+63
+00:09:55,779 --> 00:09:58,539
+Şu an için tek grup grup bir olarak biz varız.
+
+64
+00:09:59,880 --> 00:10:01,300
+Değerlendirmemiz şu şekilde olacak.
+
+65
+00:10:01,300 --> 00:10:08,419
+Dönem içerisinde biraz daha farklıydı ama biz şu an zaman kısıtlı olduğu için bunu biraz daha şu an farklı yapacağım.
+
+66
+00:10:09,076 --> 00:10:20,295
+4 tane quiz olacak. Benden sayısal analiz dersi alanlar bilirler. Dersin sonrasında belki yarım saat 45 dakikalık sürede test veya klasik olacak şekilde bir quiz yapacağız.
+
+67
+00:10:20,715 --> 00:10:26,775
+Sınıfımız çok kalabalık olmadığı için bu quiz test şeklinde de olabilir veya basit küçük program yazma şeklinde de olabilir.
+
+68
+00:10:27,155 --> 00:10:37,395
+Onu yeri gelince söyleyeceğiz. Şimdi quiz 4 hafta olduğu için 5 haftanın 4 haftası quiz olacak demektir.
+
+69
+00:10:37,395 --> 00:10:44,635
+yani her çarşamba ve cumartesi günlerinden birinde quiz olacak. Ben bunu cumartesi günü yapmayı tercih ediyorum.
+
+70
+00:10:44,895 --> 00:10:52,395
+İşte staj yapan arkadaşlar falan var aranızda. Bir de konular cumartesi gününün son saatlerinde tamamlanacağı için o haftanın konuları.
+
+71
+00:10:53,375 --> 00:10:57,436
+İşler biter, bütün konular tamamen, onun üzerine quiz yaparız diye düşündüm.
+
+72
+00:10:57,916 --> 00:11:05,256
+Dolayısıyla genellikle bu quiz günlerini cumartesi olarak söyleyebiliriz.
+
+73
+00:11:07,395 --> 00:11:15,215
+ama değişebilir. Yani ne bileyim belki şarşambaya alınabilir. Buna bir soru işareti koyabiliriz yine de.
+
+74
+00:11:15,995 --> 00:11:25,175
+Dört tane quiz düşünüyorum yeterli. Burada işte dört beş tane test sorusu olacak. O anda dersin içeriğinin değerlendirilmesi,
+
+75
+00:11:25,315 --> 00:11:30,656
+size anlatılan konunun sizin tarafınızdan ne kadar öğrenildiğinin değerlendirilmesine yönelik bir şey.
+
+76
+00:11:30,656 --> 00:11:34,376
+Bir bilgi vermişimdir. O bilgiyi de oradan test etmek amaçlıdır bunlar.
+
+77
+00:11:34,375 --> 00:11:39,075
+bir yani o bilgiden yola çıkarak yeni bir şeyler üretme manasında bir şey olmayacak.
+
+78
+00:11:39,915 --> 00:11:47,555
+Ve bunun ortalamaya olan etkisini yıl içi ve yani genel ortalamaya etkisi yüzde on beş şeklinde düşündük.
+
+79
+00:11:47,815 --> 00:11:50,535
+Bu dördünün ortalamasının yüzde on beşi alacağız.
+
+80
+00:11:51,935 --> 00:11:55,495
+Ödev olarak arkadaşlar üç veya dört tane ödev düşünüyorum.
+
+81
+00:11:55,495 --> 00:12:02,835
+Bunlar kağıt üzerinde bazı işte işlem ödevleri olabileceği gibi basit program yazma olur.
+
+82
+00:12:02,955 --> 00:12:04,255
+Test gibi bir şey olmaz burada.
+
+83
+00:12:04,375 --> 00:12:33,835
+duruma göre konuların ağırlığına göre 3 olabilir 4 olabilir ve bunun genel ortalamaya ağırlığı %20 olacak. Bir tane vizemiz var %25 ağırlıkta ve bir tane de final sınavımız var. Şimdi final sınavının dışında herhangi bir katılım vesaire herhangi bir şey burada değerlendirmeye dahil etmedim ama ödevlerde istenenden fazlası yani veya ödevde bir ek bonus gibi bir şey verilirse
+
+84
+00:12:33,835 --> 00:12:52,675
+bu yukarıdaki kalemlere dahil edilecektir. Sizin faydanıza olacak şekilde. Üniversite kuralları gereği işte ortalamazın 40'dan aşağıda olması FF gibi bir nota veya FD, DD gibi bir nota karşılık geliyor. Genel ortalamanızı bunun üzerinde tutmanız gerekiyor.
+
+85
+00:12:52,675 --> 00:13:01,075
+Ayrıca yaz okulunda bütünleme olmadığı için final sınavına girip final sınavında mutlaka bir not almanız gerekiyor.
+
+86
+00:13:01,175 --> 00:13:07,615
+Yani yıl için notunuz %100 olsa bile final sınavına girmezseniz FF notuyla notlandırılıyorsunuz.
+
+87
+00:13:07,755 --> 00:13:10,675
+Onun için bunu da ifade etmiş olayım.
+
+88
+00:13:11,795 --> 00:13:15,155
+Genel olarak değerlendirmemiz bu kalemler üzerinden olacak.
+
+89
+00:13:15,315 --> 00:13:16,675
+Burada bir sorunuz var mı arkadaşlar?
+
+90
+00:13:27,539 --> 00:13:41,039
+Yok, Nasır bir soru sormuşum, öyle bir grup açmayacağım. Yani kısa süreli bir şey olduğu için ayrıca bir şey yok. Bütün dokümanlar, ders notları belli bir link üzerinde.
+
+91
+00:13:41,979 --> 00:13:50,720
+Haber gönderecek olursam size üniversite kanallarından, işte Yıldız üzerinden mail gönderirim. Onun için mail adreslerinizi takip edin.
+
+92
+00:13:50,720 --> 00:14:01,659
+Ayrıca duyuruları ders duvarına ekleyebilirim. Bilmeniz gereken veya almanız gereken bir bilgi vardır. Oraya da ekleriz. Ayrıca bir grup oluşturmayacağız.
+
+93
+00:14:05,364 --> 00:14:13,364
+Şimdi gelelim arkadaşlar, bu dersin şeyine şöyle bir slide gösterimini açayım.
+
+94
+00:14:14,740 --> 00:14:17,740
+Şöyle yapacağız, naif gösterisi
+
+95
+00:14:32,083 --> 00:14:35,443
+ne oluyor? birinci monitör 35
+
+96
+00:14:35,443 --> 00:14:46,903
+şu an şöyle yapayım. gözüküyor hocam şu an bizde. çizdiğim kalemle çizdiğim şey görünüyor mu arkadaşlar? Evet o da gözüküyor. Tamam güzel.
+
+97
+00:14:46,903 --> 00:14:54,403
+ayarlı. Şimdi arkadaşlar bu dersin adı dedik ya bilgisayar mühendisleri için sinyaller ve sistemler.
+
+98
+00:14:54,403 --> 00:14:59,683
+vizenin tarihi de bunu da sormuş. Teşekkür ederim.
+
+99
+00:14:59,683 --> 00:15:24,923
+Şimdi biz normalde 8. hafta bu dersin vizesini yapıyoruz dönem içerisinde. Yani 8 haftalık bir ders anlatmamız gerekiyor. Hatta 9. haftaya falan da gelir. Onun için burada 2 hafta boyunca ders anlatacağım. 3. haftanın sonunda, cumartesi günü son zamanlarda yapabiliriz veya 4. haftanın çarşamba ilk günü yapabiliriz.
+
+100
+00:15:24,924 --> 00:15:38,923
+buna şu konularda ilerlememize göre zaten size bilgi vereceğim. Bu ikinci hafta biter. Üçüncü haftanın sonu mu olacak? Dördüncü haftanın sonu mu olacak? O konuda bilgi veririm. Duyuru yaparız. Tamam mı?
+
+101
+00:15:40,664 --> 00:15:53,744
+Şimdi arkadaşlar sinyaller ve sistemler dediğimiz kavram nedir? Şu ana kadar belki sinyal kavramını duydunuz da sistem kavramı burada biraz daha farklı bir şekilde karşınıza gelecek.
+
+102
+00:15:53,743 --> 00:16:02,603
+Öncelikle bunun bir sinyallerin matematiksel tanımlanmasıyla, sistemlerin matematiksel olarak tanımlanmasıyla başlayacağız.
+
+103
+00:16:03,523 --> 00:16:08,763
+Sonra temel doğal sinyaller olan ve doğal şeyler olan sinüzoidler üzerinde çalışacağız.
+
+104
+00:16:08,763 --> 00:16:13,543
+Özellikle sinüs ve kosünüs fonksiyonları bunların farklı notasyonlarına bakacağız.
+
+105
+00:16:14,303 --> 00:16:19,943
+Burada birazcık matematiksel işlemler var ki bu dersin zaten çoğunluğu matematiksel işlemlerden oluşuyor.
+
+106
+00:16:19,944 --> 00:16:29,403
+Sonra spectrum representation dediğimiz frekans düzleminde bir inceleme yapacağız
+
+107
+00:16:29,403 --> 00:16:32,604
+Sampling analyzing normalde bu dersin konusu değildi
+
+108
+00:16:32,604 --> 00:16:35,124
+Geçen dönem çıkarmıştık ama bunu en son konuya atıyorum
+
+109
+00:16:35,124 --> 00:16:37,744
+Gerekirse bunu daha sonra inceleyeceğiz
+
+110
+00:16:37,744 --> 00:16:45,744
+Bir kısmını yine şu kısmında anlatacağım sampling'in ama bazı yerlerini belki bu derste anlatmıyoruz
+
+111
+00:16:45,744 --> 00:16:49,464
+Sayısal işareti işleme dersi var orada daha çok anlatıyoruz
+
+112
+00:16:49,463 --> 00:17:11,383
+sonra sinyaller ve sistemler dersi kendi içerisinde arkadaşlar ikiye ayrılır. Yani şurası bu dört şeptir. Bunun girişidir. Birincisi continuous taraftır, birincisi discrete taraftır, ikincisi discrete taraftır. Burada sinyaller ve sistemler üzerinde yapılan her türlü işlemi continuous olarak ve discrete olarak inceleyeceğiz.
+
+113
+00:17:11,384 --> 00:17:20,824
+Burada da diyeceğiz ki mesela doğrusal zamanla değişmeyen sistemler, continuous sistemlerin incelenmesi ve konvolüsyon integrali
+
+114
+00:17:20,824 --> 00:17:25,944
+Şimdi continuous dediğimizde aklınıza arkadaşlar integral işlemi gelecek
+
+115
+00:17:25,944 --> 00:17:33,643
+Bunun discrete taraftaki karşılığı da doğrusal zamanla değişmeyen sistemlerin incelenmesi ve konvolüsyon toplamı
+
+116
+00:17:33,643 --> 00:17:38,564
+Burada da summation gelecek yani burada toplam sembolü var
+
+117
+00:17:38,563 --> 00:17:47,243
+Çünkü biz biliyoruz ki bilgisayar mühendisliği olarak diskret datalarla çalışacağız. Burada da bunun diskret boyutu ve kontinüüs boyutuyla ayrı ayrı ilgileniyor olacağız.
+
+118
+00:17:48,823 --> 00:18:00,503
+Burada integral işin içine gelince doğal olarak türev de işin içine geliyor ve burada differential denklem, differential equation dediğimiz bir kavram.
+
+119
+00:18:00,503 --> 00:18:19,043
+hatta uzun yazalım differential. Bizde gerçi ders olarak verilmiyor diferansiyel denklemler ama birçok bölümde var. Kontinuyus sistemlerde diferansiyel denklemler var. Burada da fark denklemlerde dediğimiz difference.
+
+120
+00:18:20,147 --> 00:18:44,307
+Equation var. Bu Difference Equation'ı ayrık matematikte algoritmaların analizinde de görüyoruz kısmen. Bunların farklarına gireceğiz. Tabii biz diferansiyel denklem çözmeyle ilgilenmeyeceğiz. O işte makinecilerin, elektronikçilerin tarafı. Biz daha çok fark denklemleri üzerinde bilgisayarcıya daha yakın olan taraflara bakacağız. Ve bunları zaman düzlemi işte farklı düzlemler üzerinde değerlendireceğiz yedinci şeptirde.
+
+121
+00:18:44,307 --> 00:18:59,807
+sonra frekans düzlemiyle alakalı çalışmalar yapacağız. Bir işaretin zaman düzlemindeki görüntüsü farklıdır, frekans düzlemindeki görüntüsü farklıdır. İşte burada niye düzlemler arasında geçiş yapılıyor, bir boyut değişimi yapılıyor bunları konuşacağız.
+
+122
+00:19:00,168 --> 00:19:12,947
+Ve bunun bilgisayar mühendisi açısından önemi nedir? Niçin biz bu işaretler arasında değişiklik yapıyoruz, zaman düzleminden, frekans düzlemine veya başka düzleme geçiş yapıyoruz? Bunları anlatacağız.
+
+123
+00:19:12,947 --> 00:19:19,727
+Burada continuous olarak ve discrete olarak kullanacağımız dönüşümler olacak.
+
+124
+00:19:19,727 --> 00:19:28,588
+Yani bu dönüşümlerden kastımız herhangi bir domeyndeki işte buna T time domeni dersek herhangi bir X dönüşümüyle burada ne yapıyoruz?
+
+125
+00:19:28,707 --> 00:19:38,207
+İşte başka bir domeyne geçiyor işte ne bileyim N domeyne olabilir, S domeyne olabilir, Z domeyne olabilir gibi işareti aslında farklı bakış açılarından inceleyeceğiz.
+
+126
+00:19:38,368 --> 00:19:40,728
+Veya bir sistemi farklı bakış açılarından inceleyeceğiz.
+
+127
+00:19:40,728 --> 00:20:10,688
+inceleyeceğiz. Bu bize birçok bilgi sağlayacak. Örneğin bir ses işaretini ele alalım. Ses dediğimiz şey arkadaşlar zamana göre değişen bir fonksiyondur. Bir sesi alıp kaydettiğinizde işte şöyle bir şey böyle bir dalga elde edersiniz. Bu dalganın zaman düzlemindeki görüntüsü size her zaman gerekli bilgiyi vermeyebilir veya istediğiniz bilgiyi vermeyebilir veya yeterli bilgiyi vermeyebilir. Daha fazla bilgi elde edinmek istiyorsanız bu zaman düzleminden işte frekans düzlemine veya S düzlemine veya başka düzlemlere
+
+128
+00:20:10,688 --> 00:20:19,008
+geçip ekstradan bilgiler elde edebilirsiniz. İşte buradaki mesela işaretin frekansı hakkında yeterince bilginiz yoksa frekans düzlemine geçmeniz gerekiyor.
+
+129
+00:20:19,008 --> 00:20:33,407
+İşte şu 8. 9. ve 10. şeptör işaretler ve sistemlerin incelenmesinde kullanılan özellikle burada Laplace ve Fourier transformu için sürekli zamanda incelemeler.
+
+130
+00:20:33,407 --> 00:20:42,987
+ayrıca Z ve hatta 11'i de buraya dahil ederim. Z ve ayrık Fourier transformuyla ayrık zamanlı işaretler ve sistemler üzerinde çalışmalar yapacağız.
+
+131
+00:20:42,987 --> 00:20:50,547
+Şimdi ayrık nedir, kontinüs nedir daha bu kavramlar önümüzdeki derslerde ve bugün öğreneceğiniz kavramlar olacak.
+
+132
+00:20:51,767 --> 00:20:56,947
+11 chapter'ımız var. Bu 11 chapter'ın sampling, alizing dışında aslında 10 chapter diyebiliriz.
+
+133
+00:20:56,948 --> 00:21:03,608
+Şu ana kadar bilgisayar bilimlerine giriş dersi almayan yoktur herhalde aranızda. Var mı arkadaşlar?
+
+134
+00:21:05,787 --> 00:21:08,668
+Veya ne bileyim yapısal programlamaya giriş dersi almayan var mı?
+
+135
+00:21:12,147 --> 00:21:34,488
+Herhalde herkes bu derslerden bir tanesine. Bir şekilde bir şeyler programladınız. Ne bileyim orada C'de olabilir, başka bir yerde olabilir. Bunun dışında bu ders neyle alakalıdır, nereden gelmiştir, nereye gidecektir, ola birazdan şimdi onlardan bahsedeceğim. Onun için bir PowerPoint açayım. Asıl orada büyük resmi göstermek istiyorum. Şöyle yapalım.
+
+136
+00:21:38,900 --> 00:21:55,619
+Öğrenciler tarafından ilk başta sevilmeyen ama ne bileyim eğer gerçek anlamda mühendislik yapacaksak yani bir tasarım işi olacaksa hele de günümüzde işte yapay zeka, derin öğrenme gibi konularla uğraşacaksak buradaki bilgiler çok önemli.
+
+137
+00:21:57,000 --> 00:21:57,939
+Şunu da şöyle yapalım.
+
+138
+00:22:04,019 --> 00:22:09,559
+Şimdi Sinyaller ve Sistem dersi arkadaşlar tam bir geçiş dersi, bir böyle hani geçiş kapısı gibi düşüneceğiz.
+
+139
+00:22:15,028 --> 00:22:25,587
+ne demek? Bunun öncesi var, sonrası var. Bu derse ait bilgilerinizi, daha önceki bilgilerinizle ilişkilendirmeniz gerekiyor.
+
+140
+00:22:26,167 --> 00:22:31,788
+Bu derste öğreneceklerinizi. Mesela nedir? Computer Introduction to Computer Science.
+
+141
+00:22:33,607 --> 00:22:41,087
+Burada mesela ne gördük? Önce verilerin nasıl saklandığıyla alakalı bazı şeyler gördük.
+
+142
+00:22:41,087 --> 00:22:44,127
+Yani bilgisayarda bir veri nasıl saklanır veya nasıl işlenir?
+
+143
+00:22:45,028 --> 00:22:59,687
+sonra analog dünyaya dair bazı bilgileri elde ettiğiniz öğrendiğiniz circuit theory devre teorisi işte direnç nedir akım nedir bunlar arasındaki ilişkiler nelerdir
+
+144
+00:22:59,687 --> 00:23:14,428
+şimdi burada analog dünyadan bir örnek var şurada dijital dünyadan bir örnek var işte bu sinyaller ve sistemler analog dünyadaki problemleri dijital dünyada çözmek için kullanılan yaklaşımların en temellerini içeren bir ders
+
+145
+00:23:14,427 --> 00:23:23,847
+Buradan elde ettiğiniz bilgilerle Digital Signal Processing sayısal işaret işleme dersine bir temel atıyorsunuz.
+
+146
+00:23:23,847 --> 00:23:40,307
+Digital Signal Processing'den başka Image Processing, Görüntü İşleme ve Video Processing dediğimiz Digital Video Processing, Digital Image Processing gibi alanlara geçiş yapıyorsunuz.
+
+147
+00:23:40,307 --> 00:23:55,068
+Burada yaptığınız prosesinkler sizi yapay zeka ile bir yerde kesiştiriyor. Yani akıllı bir sistem ortaya koyacaksınız. Bazı temel sinyal işleme adımlarından bazılarını seçtiniz ve uyguladınız.
+
+148
+00:23:55,068 --> 00:24:05,608
+İşte Computer Vision olabilir, Digital veya ne bileyim Intelligent System dediğimiz veya AI diyelim biz buna genel olarak.
+
+149
+00:24:06,748 --> 00:24:14,367
+İşte otonom robotlar bunun içine dahil olabilir gibi gibi birçok yapay zeka ile alakalı birleşenlerin bir ön adımıdır.
+
+150
+00:24:14,367 --> 00:24:32,567
+örneğin bir ses işleyecekseniz sesin karakteristiklerini ortaya çıkarmak adına sinyal işleme ondan sonra digital sound processing dediğimiz yine şuradaki seri buradaki seriden farklı ana şuraya o diyelim sound processing adımlarını uygulamanız gerekiyor.
+
+151
+00:24:33,067 --> 00:24:38,447
+İşaretten belli bilgileri elde edebilmek için. Ondan sonrası yapay zekada kullanılan teknikler.
+
+152
+00:24:38,447 --> 00:24:48,067
+İşte bu geçiş dersi size buradaki temel terminoloji yapılması gerekenlerin ne olduğunu anlatmayı hedefleyen bir ders. Buraya kadar bir sorumuz var mı?
+
+153
+00:24:53,299 --> 00:25:00,079
+O zaman şunu sorayım, bu dersten başarılı olmak için devre teorisi ve Computer Science konusunda ne kadar bilginiz olması gerekiyor?
+
+154
+00:25:04,692 --> 00:25:14,692
+Bunu bir arkadaş geçen dönem sormuştu bana. Hocam ben devre teorisi dersi almadım, bu dersi yapabilir miyim demişti. Normalde ön koşulu olmadığı için alınabiliyor.
+
+155
+00:25:19,923 --> 00:25:46,184
+Evet, sizden bir cevap yok. Devre teorisindeki temel kavramları bilmek bizim için yeterli arkadaşlar. Yani oradaki kadar devrelerle falan uğraşmayacağız. Çünkü biz hazır bir sistemi ve tasarlayacağımız bir sistemi ele alacağız. Burada sistem tasarımı doğrudan yok. Sistemlerin daha çok özelliklerinin öğrenilmesi hedefleniyor. Eğer bir dijital sinyal işleme dersi veya işte başka sinyal işleme dersi olsaydı orada biraz da devre teorisindeki konulara ihtiyacımız vardı.
+
+156
+00:25:46,184 --> 00:26:07,703
+Şimdi arkadaşlar şöyle bir şey var burada dijital sinyal processing de söylediğim şeyin mesela bunların analog hallerini de yazabiliriz. Yani analog signal processing yapılabilir. Ancak analog imaj processing yapılabilir. Önceden mesela fotoğrafçılar işte rötuş yaparlardı. İmaj üzerinde işlem yaparlardı. Onlar da yapılabilir. Onlar da yine aslında sinyal ve sistemlerden daha sonra ilgilenilecek konular.
+
+157
+00:26:07,703 --> 00:26:21,903
+elektronik bölümü okuyor olsaydınız orada işte analog elektronik diye bilinen dersler veya analog devre tasarımı, analog devre analizi gibi konularla uğraşır olurdunuz.
+
+158
+00:26:23,543 --> 00:26:33,464
+Yani bu geçiş dersi olması hasebiyle biz buradaki bazı bilgilerimizi şurada özellikle başta tekrarlayacağım ama burada kullanacağız.
+
+159
+00:26:33,464 --> 00:26:34,823
+Peki.
+
+160
+00:26:37,703 --> 00:27:02,843
+Şöyle ilerleyelim. İçerimiz bu şekilde. Sizden beklentimiz ne? Öğrencilerimiz, arkadaşlarımızın matematiksel olarak sinyallerin tanımlanmasını bilmenizi bekliyoruz bu derste. Yani herhangi bir sinyal verilinde bunu matematiksel özellikle bir fonksiyon cinsinden yazmak gerekiyor.
+
+161
+00:27:02,843 --> 00:27:14,464
+Burada öyle bir şey olacak ki arkadaşlar, YT eşittir, XT çarpı A gibi bir şey diyeceğiz, bu bir XT bir sinyal, YT bir sinyal
+
+162
+00:27:14,464 --> 00:27:20,963
+Bu YT'ye, XT'den YT'yi oluşturan bu şeyde bir fonksiyon aslında, bu da bir sistem
+
+163
+00:27:20,963 --> 00:27:27,403
+Buna niye sistem diyoruz? X de kendi içinde zamana göre değişiyor, Y de kendi içinde zamana göre değişiyor
+
+164
+00:27:27,403 --> 00:27:42,504
+ama Y aynı zamanda X'e göre değişiyor. X'in değerlerine göre değişiyor. İşte şurada sabit bir sayıda çarpıyoruz mesela. Ben zamana göre elde ettiğim X değerlerini belli bir kat sayıda çarpıp yeni Y değerleri elde ediyorum ve bu da zamana göre değişiyor.
+
+165
+00:27:42,504 --> 00:28:07,864
+İşte bunların matematiksel tanımlarına bakacağız. Burada arkadaşlar kod yazma işi de var ama bu kod yazma işinde C'de olduğu gibi oturup sıfırdan algoritmayı kodlamamız gerekmiyor. Var olan algoritmaları kullanmamız, oradaki fonksiyonları kullanmamız gerekiyor ve bunun için bu algoritmaları implemente etmiş, algoritmaları içerisinde barındıran dilleri kullanacağız.
+
+166
+00:28:07,864 --> 00:28:31,164
+işte burada Python kullanabilirsiniz, R kullanabilirsiniz veya sinyalcilerin, elektroniklerin veya kontrolücülerin daha çok kullandığı şurada en çok kullanandan en az kullanana doğru MATLAB, Octave veya Cylab bunları kullanabilirsiniz. Şimdi MATLAB'in bizim üniversiteye şey tanımı var, lisans tanımı var fakat MATLAB'i indirmeye kalkarsanız yaklaşık 7 GB kadar bir şey indiriyorsunuz.
+
+167
+00:28:31,163 --> 00:28:41,803
+baya büyük bir programdır. Kullanışlıdır, güzeldir ama biz her fonksiyonunu kullanmayacağız. Bunun daha güzel hali online meddap var.
+
+168
+00:28:51,343 --> 00:28:59,243
+Size vereceğimiz ufak tefek ödevler meddap'te veya python'da veya diğer dillerden birinde de olabilir. Yazabilirsiniz. O konuda tercih size ait.
+
+169
+00:28:59,243 --> 00:29:14,243
+Diğer şey, burada mesela ben size konvolüsyon anlatacağım, konvolüsyonun hazır kodu var, bir de basit olarak algoritma, basit bir algoritması olduğu için bir de onu kendiniz yazmanızı isteyeceğim, ikisinin sonuçlarını karşılaştıracağız mesela
+
+170
+00:29:15,508 --> 00:29:43,087
+Bu işte hem Python'da vardır, hem R'da vardır veya diğer dillerde vardır. Ben MATLAB veya Python'dan birini seçmenizi tavsiye ederim. R'ı da seçebilirsiniz. Yani R şu an Data Science üzerinde çok etkin bir dil, çok kullanılan bir dil. MATLAB open source değil, ücretli bir şey ama okulun şey var, diğerleri open source. Bildiğim kadarıyla Sylab'da open sourstu. Bunlardan yine istediğinizi kullanabilirsiniz. Benim tercihim MATLAB, R veya Python'dır diyebilirim.
+
+171
+00:29:43,087 --> 00:29:49,088
+Bunlardan bir tanesini kullanacaksınız. Zaten burada yazmışız.
+
+172
+00:30:01,467 --> 00:30:09,088
+Ben hızlıca Matlab'in environment'ını tanıtayım. Matlab arkadaşlar bir programlama diline sahip aslında bir paket program.
+
+173
+00:30:09,087 --> 00:30:14,147
+kendi içerisinde kod yazabiliyorsunuz işte döngüsü var dizisi var ne bileyim değişken tanımlayabiliyorsunuz falan
+
+174
+00:30:14,147 --> 00:30:26,787
+şurada comment window dediğimiz bir ekranı vardır şurası menü var falan bu comment window kodunuzu yazarsınız ve her satır derlenerek değil yorumlanarak şey yapılır
+
+175
+00:30:26,787 --> 00:30:32,088
+ve bunu daha sonra örneklerini yapacağız işte bir şey yaptığınızda hemen sonucunu görürsünüz
+
+176
+00:30:32,088 --> 00:30:38,967
+şurada hangi direkt krasör altında çalışıyorsanız onun bilgileri içerisindeki dosyalar görülür
+
+177
+00:30:38,967 --> 00:31:07,967
+şurada üzerinde çalıştığınız değişkenlerin yani burada bir x değişkeni tanımladınız işte içerisinde 5 dediniz işte bu değişken burada otomatik olarak tanımlanmış oluyor. Daha önce yazdığınız komutları burada gösteriyorsunuz. Şimdi Matlab'in güzel tarafı arkadaşlar şu Getting Stunted demo ve video. Bunun help'i çok güzel bir dokümentasyona sahip. Ayrıca bir şeye bakmanıza gerek yok. Gidip bir tutorial aramanıza gerek yok. Herhangi bir fonksiyonu buradaki help üzerinden örnekleriyle ve tanımlarıyla çok rahat inceleyebiliyorsunuz.
+
+178
+00:31:08,967 --> 00:31:27,747
+Burada var mıydı bilmiyorum. Metteb bir ara şey yapmıştım da. Şöyle 2019 A'sı varmış. Bakalım açalım. Üniversitenin linki şey var, lisansı var. Ben de oradan kurmuştum. Bakalım şimdi açılsın da birazdan inceleriz.
+
+179
+00:31:27,747 --> 00:31:33,307
+ama online metlebi tavsiye ediyorum.
+
+180
+00:31:33,527 --> 00:31:35,307
+Sileup dediğimizde buna çok benziyor.
+
+181
+00:31:35,587 --> 00:31:37,187
+Aynı şekilde kodları buraya yazıyoruz.
+
+182
+00:31:37,407 --> 00:31:42,087
+İşte değişkenler burada zaten onun open source versiyonları olarak piyasaya sürülmüş şeyler.
+
+183
+00:31:45,715 --> 00:31:55,875
+şu an şey olmuş galiba bu, bayağıdır girmeyince. Neyse, bunu birazdan arada şey yapayım ben, lisansını aktive edeyim, şimdilik şey yapmayalım, vaktinizi almayalım.
+
+184
+00:31:56,815 --> 00:32:03,236
+Saylak böyle bir şey. Octave yine aynı şekilde çok benziyor. Hatta Octave, MATLAB'in open source versiyonu hali denir.
+
+185
+00:32:03,236 --> 00:32:10,255
+Doğrudan MATLAB kodlarını Octave'da çalıştırabilirsiniz. Hatta ikisinin de uzantısı.m'dir arkadaşlar.
+
+186
+00:32:10,255 --> 00:32:38,835
+biz burada bu dili doğrudan niye kullanıyoruz? Kolay bir şekilde sonuca ulaşmak, hedefe ulaşmak için bu dilleri kullanıyoruz arkadaşlar. Niye? Çünkü grafik çizmek isteyeceğiz. Ondan sonra bazı hazır işte Fourier transformu gibi işlemleri yapmak isteyeceğiz. Bunu yaparken oturup C'de sıfırdan kodunu yazmak tabii yazılabilir ama çok kolay değil. Amacımız da burada şey kodu yazmak işte ne bileyim Fourier transformu kodu yazmak değil.
+
+187
+00:32:38,835 --> 00:32:46,615
+Fourier transformundan elde edeceğimiz sonuçları yorumlayabilmek. Yani ürünler ve o ürünler üzerindeki bilgiler bizim için önemli.
+
+188
+00:32:47,115 --> 00:32:54,375
+Buna dikkat etmemiz gerekiyor. İşte Octave kullanılabilecek bir arayüz. Özellikle şu grafik çizimleri bizim çok işimize yarar.
+
+189
+00:32:54,375 --> 00:33:00,355
+Ki ödevlerinizde genellikle biz grafik çizmenizi isteyeceğiz. Onun için bunu bu dilleri tercih ediyoruz.
+
+190
+00:33:00,535 --> 00:33:06,595
+R dediğimiz şey de RStudio bir idesi vardır ama dil kendinden ayrıca kuruluyor.
+
+191
+00:33:06,595 --> 00:33:21,455
+RStudio'yu kurduğunuzda MatTab'e benzer bir arayüz. Sadece bunun sintaksi biraz MatTab'den farklıdır. İşte bir şey burada pardon şurada konsol ekranda kodunuzu yazıyorsunuz burada bazı sonuçları görüyorsunuz gibi bir arayüzü var.
+
+192
+00:33:22,835 --> 00:33:34,615
+Python'da bildiğiniz aslında Python diğerleri arasında daha öne çıkan çünkü tamamen bir programlama dili olan fakat sinyal işleme tarafında da çok fazla kullanışlı bir dildir.
+
+193
+00:33:34,615 --> 00:33:46,615
+işte bir ide kullanmak gerekiyor. Burada Python'ı Anaconda ile beraber kullanırsanız, kurarsanız Anaconda'yı bilmeyen var mı aranızda? Duymadım diyen var mı Anaconda?
+
+194
+00:33:48,055 --> 00:33:48,595
+Ben duymadım.
+
+195
+00:33:49,255 --> 00:33:59,595
+Tamam, güzel. Şimdi Anaconda dediğim şey arkadaşlar, Python dilini ve bu dili kolay bir şekilde programlama yapabilecek özellikleri içerisinde barındıran bir ortam.
+
+196
+00:33:59,595 --> 00:34:01,615
+yani bir paket program
+
+197
+00:34:01,615 --> 00:34:06,775
+Anaconda 3 müydü bendeki
+
+198
+00:34:10,291 --> 00:34:35,671
+Niye çalışmadım? Doğrudan Anaconda'nın, ha şu Navigator. Bu çalışsın bari dur bakalım inşallah çalışacaktır. Bunu download ettiğinizde arkadaşlar Python'ın kendisi derleyicisini indiriyorsunuz. İşte kod yazmak için gerekli ortamı elde ediyorsunuz. Mesela Spider bunlardan bir tanesi. Tabii sadece Spider'la sınırlı değil. Şu Anaconda'yı açabilirsek, şu an yükleniyor bakın.
+
+199
+00:34:35,671 --> 00:34:58,391
+içerisinde birçok geliştirme özellik falan var. Tool ekleyebiliyorsunuz. Yani bir çeşit Visual Studio diyebilirim. Yani Python için kullanılan Visual Studio. Bakın burada Anaconda Navigator dediğimizde işte bunlardan işte PyCharm doğrudan buradan başlatılabiliyor. İşte Jupyter Notebook var, Jupyter Lab var. İşte Visual Studio kod buradan eklenebiliyor.
+
+200
+00:34:58,391 --> 00:35:05,191
+spider biraz önce açtığımız şey. Burada python kodu yazabilecek veya diğer dilleri de destekliyor. İşte r falan da yazılabiliyor.
+
+201
+00:35:06,071 --> 00:35:14,911
+Veya bazı tool'lar var. Mesela makine öğrenmesi için orange diye bir tool vardır. Hiç kod yazmadan direkt makine öğrenmesi yöntemlerini test edebiliyorsunuz.
+
+202
+00:35:14,911 --> 00:35:23,911
+Bu navigator üzerinden python'a erişebilirsiniz. Şimdi o yükleme dursun. Biraz daha şey yavaş çalışıyor.
+
+203
+00:35:23,911 --> 00:35:48,251
+mesela RStudio'da bakın buradan yüklenebiliyor yani R diliyle de bir bağlantısı var. Burada bayağı bir şey bunu kurcalarsanız faydasını görürsünüz. Hangisini tercih ederseniz diye düşünebilirsiniz. Ben Python'la yapmanızı tavsiye ederim. Yani hem open source bir de Python'ı ilerleyen zamanlarda diğer derslerde kullanacaksınız.
+
+204
+00:35:48,251 --> 00:36:05,271
+dili aşinalık kazanmak önemli bir şey. Yani her bir işte yeni bir dil öğrenmek çok marifet değil. Önemli olan o dili kullanabilmeklerdir arkadaşlar. Onun için yani ya Python'cı olun ya Metlap tarafında olun diye düşünürüm ama Python daha çok tercih edeceğim bir şey.
+
+205
+00:36:05,271 --> 00:36:33,091
+Burada ayrıca dersin amaçlarına baktığımızda şimdiye kadar böyle bir programlama bilgisi işte devre bilgisi aldınız ama burada biraz daha akademik olarak sizi geliştirecek bir bilgi var burada bu dersin içerisinde işte sinyallerle alakalı sistemlerle alakalı şeyler frekans düzlemine geçiş mesela zaman düzlemine geçiş nedir sinyale zaman açısından bakmak frekans açısından bakmak nedir
+
+206
+00:36:33,092 --> 00:36:37,032
+Bunların birbirlerine olan farkları, birbirlerine geçişler nelerdir?
+
+207
+00:36:37,711 --> 00:36:43,291
+Sonra diskret zaman nedir? Ayrık zaman, sürekli zaman, kontinüs zaman nedir? Bunlar olacak.
+
+208
+00:36:43,291 --> 00:37:01,372
+Bunlar akademik olarak, interlektüel olarak arkadaşlar şunu hani bu ders genellikle hedefler özellikle kontrolcülerde ve elektrik, elektronikçilerde, haberleşmecilerde herhangi bir gerçek dünya problemini bununla alakalı örnek göstereceğim.
+
+209
+00:37:01,372 --> 00:37:06,952
+modelleyebilmek lazım arkadaşlar. Şimdi bizim çok disiplinli tasarım projesi diye bir dersimiz var.
+
+210
+00:37:06,952 --> 00:37:13,771
+Orada kontrolden, elektronikten, elektrikten ve bilgisayardan öğrenciler ortak bir proje yapıyorlar.
+
+211
+00:37:14,291 --> 00:37:21,252
+Örneğin geçen seneki proje şuydu. Bir sera sisteminin sıcaklık modellemesi. Sıcaklık ve belki nem.
+
+212
+00:37:22,152 --> 00:37:26,552
+Biz sıcaklık diyelim şimdi. Şimdi sera dediğimiz bir ortam. Bu ortamın büyüklüğü önemli.
+
+213
+00:37:26,771 --> 00:37:31,071
+Ortamında sıcaklığı etkileyen bir sürü değişken var. Kontrolcü arkadaşlar,
+
+214
+00:37:31,372 --> 00:37:39,851
+Bu sistemi modellerken bu tarz parametreleri dikkate alarak bir oranın sıcaklık sistemini kontrol edecek kontrolör tasarladılar.
+
+215
+00:37:39,851 --> 00:37:41,592
+Bakın orada bir şey vardı.
+
+216
+00:37:42,152 --> 00:37:47,491
+Ve burada sistemin ortaya koyacağı matematiksel modeli oluşturabiliyoruz.
+
+217
+00:37:47,571 --> 00:37:48,911
+Yani bu dersin öyle bir faydası var.
+
+218
+00:37:49,771 --> 00:37:54,771
+Ayrıca bu sistem veya sinyal ortaya konulduktan sonra matematiksel olarak bunu yorumlayabilmek,
+
+219
+00:37:55,631 --> 00:37:59,832
+matematiksel olarak elde edilen fonksiyonlardan, sonuçlardan bir yorumlar ortaya koyabilmek,
+
+220
+00:37:59,831 --> 00:38:02,051
+kararlılık bunlardan bir tanesi gibi.
+
+221
+00:38:03,291 --> 00:38:05,751
+Pratik olarak buradaki hedefimiz işte bir dil
+
+222
+00:38:06,815 --> 00:38:32,835
+üzerinde şuradaki öğrendiklerimizi uygulayabilir hale geleceğiz. İşte MATLAB, OTLAB şey dedik. Ayrıca buradan bir transfer edilebilir yetenekler, özellikler öğreniyorsunuz. Bunlardan bir tanesi, biraz önce bahsettiğim işte yapay zekada, makine öğrenmesinde, işte günümüzde derin öğrenmede kullanılacak bütün yöntemlerin bir ön adımı bu dersin içerisindeki içeriklerden geçiyor.
+
+223
+00:38:32,835 --> 00:38:59,535
+İşte burada yine aynı şekilde yaptığınız bilimsel bir çalışma olacaktır. O bilimsel çalışmanın nasıl sunulması gerektiğini de burada söylüyorum. Yani ben bir yapay zeka çalışması yaptığımda, ortaya koyduğumda bunu insanlara nasıl aktaracağım, nasıl bir makale yazabilirim veya nasıl bir sunum yapabilirim, benim elimdeki sunumda kullanacağım anahtarlar, anahtar şeyler nelerdir onlara bakacağız, onları göreceğiz.
+
+224
+00:38:59,535 --> 00:39:23,055
+Gelelim kitaplara. Şimdi bu dersin Signals and Systems diye aratırsınız arkadaşlar. Birçok kitabı var. Aslında bu kitapların çoğu MIT'de, Oppenheim diye birinin, şu an burada bu kitap var da kameram olmadığı için gösteremiyorum, yazdığı bir kitaptan türetilen, yani o kitaptan esinlenen diğer kitaplardan oluşuyor.
+
+225
+00:39:23,055 --> 00:39:33,176
+bir de buna daha sonra işte signals and systems de o kitabın adı buna ek olarak digital signal processing bu dersin bir sonraki adımı olan kitaplar ortaya çıktı
+
+226
+00:39:33,176 --> 00:39:41,815
+şimdi şu Boğaziçi'nde ODTÜ'de bu ders aynı isimde var Türkiye'de işte signals and systems for computer engineering diye
+
+227
+00:39:41,815 --> 00:39:50,875
+biz işte bu çok ünlü hem Boğaziçi'nde hem burada signal processing first yani bu signal processing değil bunun ilk adımları dediğimiz
+
+228
+00:39:50,875 --> 00:40:13,455
+şu kitabı burada daha çok kullandık. Elektronik olarak bunları bulunmanız mümkün. Kitabın güzel bir İngilizcesi var, çok ağır değil. Okumanız, bazı yerlerde anlamadığınız kavramları buradan pekiştirmeniz veya işte bazı örnek soruları çözmeniz gerekiyor. Hani bu kitaptan faydalanabilirsiniz. Ana kitabımız budur. Birkaç tane de kitap gelecek şimdi.
+
+229
+00:40:13,455 --> 00:40:43,375
+şu kitap Signals and Systems for Dummies dediğimiz şey biraz daha böyle bu kitabı yani buradaki konuları kolay bir dille anlatan bildiğiniz yöntemler bildiğiniz şeylerden bilmediğinize doğru aktaran bir kitap bunun da elektronik hali var asıl işte Oppenheim'ın MIT'deki hocadır hatta bu hocanın YouTube'da Signals and Systems video kayıtları var yani biz günümüzde uzaktan eğitim yapıyoruz
+
+230
+00:40:43,375 --> 00:41:02,196
+ama belki 20 yıl önceki dersin video kayıtları YouTube'da falan bulabilirsiniz. MIT'de de var. Birçok kitabın temel kaynağı olan bir kitaptır bu kitapta. Ayrıca işte online ebook şu sayfada kullanılan bir elektronik kitap var. Buna bakabilirsiniz.
+
+231
+00:41:02,195 --> 00:41:23,535
+Şimdi ben ayrıca bunun dışında şunu buldum. Hatta bu şeyde de bazen yararlanacağız. X-Slide klasörüne girdiğinizde arkadaşlar, Kanada'da Mitchell Adams, bunun ders notu ve kitabı var arkadaşlar.
+
+232
+00:41:23,536 --> 00:41:42,655
+Şimdi kitabını free olarak indirebiliyorsunuz, slide'larını da free olarak indirebiliyorsunuz. Hatta bu hocanın şeyde, YouTube'da bu kitap üzerinden anlattığı dersler var. Kendisi C++ ile buradaki bilgileri birleştirip ileride daha ileri çalışmalar yapan bir hoca.
+
+233
+00:41:42,655 --> 00:42:04,896
+hatta ben bir arada mailleşmiştim bir konu üzerinde fikir sormuştum görüştük gayet bu konuda güzel bir içerik oluşturmuş zaman zaman buraya da başvuracağız çok özenli ve güzel bir kaynağı var sürekli de güncelliyor bunu da tavsiye ederim bunların hepsi şu an şeyde var tabi kitaplar yok da
+
+234
+00:42:05,523 --> 00:42:22,763
+Bu slide ve benim anlattığım slide'lar ders duvarındaki linkte var. Şimdi burada birazdan dersin çelene girdiğimizde sinyallerin ve sistemlerin ne olduğunu, bazı şeyleri buradaki örneklerden de bahsedeceğim. Çok güzel sınıflandırmalar yapmış. Buraya da ayrıca geleceğiz.
+
+235
+00:42:22,763 --> 00:42:44,784
+Şimdi bunlar genel kurallar hani sınıfta olsak su içmeyin su haricinde hiçbir şey içmeyip içmeyin telefonunuzu kapalı tutun işte internette şey yapmayın dedik bunlarda işimiz yok ama bunun dışında size şurada söyleyeceklerim var arkadaşlar sizin öğrenci olarak haklarınız var sorumluluklarınız var bunların bilincinde olmanız gerekiyor
+
+236
+00:42:44,783 --> 00:43:10,783
+Haklarınız nedir? İşte bir sınav oldu. Sınav tarihini öğrenmek hakkınızdır. İşte ne bileyim belki bir hafta önceden sınav tarihini, sınav saatini öğrenmek. Sınavın zamanında açıklanmasını istemeniz veya sınavın açıklanıp açıklanmadığını, belli olup olmadığını sormanız bir hakkınızdır. Bu haklarınızın farkında olmanız gerekiyor. Peşinde olmanız gerekiyor. İşte sınavınız okundu, beklediğiniz notu alamadınız. Ne bileyim itirazınız olabilir. Bu bir hakkınızdır.
+
+237
+00:43:10,784 --> 00:43:25,324
+sorumluluklarınıza gelince size verilen ödevi zamanında yapmak, verilen ödevleri intihal ve kopya kurallarına riayet ederek onlardan uzak durarak yapmak gibi sorumluluklarınız var.
+
+238
+00:43:25,324 --> 00:43:31,943
+Bununla alakalı üniversitenin kuralları, yakın kuralları bunları buradan inceleyebilirsiniz.
+
+239
+00:43:31,943 --> 00:43:40,903
+benim tavsiyem şudur, bunu her zaman için düşüneceksiniz, diğer derslere de düşünün
+
+240
+00:43:40,903 --> 00:43:46,123
+ödev verildiğinde veya quiz verildiğinde bunu zamanında yüklememiz esastır
+
+241
+00:43:46,123 --> 00:43:50,104
+her zaman için herkes toleranslı davranmayabiliyor
+
+242
+00:43:50,104 --> 00:43:53,384
+işte hocam yani sistemden yükleyemedim, şu oldu, bu oldu deyip
+
+243
+00:43:53,384 --> 00:43:56,384
+ödevi son ana bırakırsanız bizim ödevler son anda bitmez
+
+244
+00:43:56,384 --> 00:44:00,443
+ve bu herhangi bir mazereti kabul edilmeyecek bir şeydir
+
+245
+00:44:00,443 --> 00:44:30,423
+ayrıca mail ile gelen ödevi ben çoğu zaman kabul etmiyorum kabul edersen de işte %40 keseceğim tamam mı belki çok geç gelirse tabii %70 %80'e kadar da keserim bu şu açıdan önemli bir ödev bazen sizi bir üst noktaya taşıyor üst puana taşıyor veya ne bileyim kalmakla geçme arasındaki noktada ödev imdadınıza yetişiyor bunların her bir değerlendirme kalemi değerlidir bunları boşa verdiğimizi düşünmeyin yani ben bir vize bir final de yapabilirim belki
+
+246
+00:44:30,423 --> 00:44:58,143
+size çok fazla yük olmaz ama bize ve finalin sadece olması sizin şansınızı azaltıyor. Bu değerlendirme kalemi ne kadar fazla olursa sizin şansınız o kadar geçme şansınız başarılı bir üst noktada başarılı olma şansınız o kadar fazladır. Buna da dikkat ediniz. Dediğim gibi her şey online yıldız sistemi üzerinden olacağı için burada ayrıca ödev gönderip başka bir sistem üzerinden kayıt dışı işlem yapmak hakkınız değil.
+
+247
+00:44:58,143 --> 00:45:00,823
+o hakka biz bazen tolerans tanıyoruz.
+
+248
+00:45:01,083 --> 00:45:04,843
+İşte internet kesilmiştir, şu olmuştur, bu olmuştur diyoruz ama onun da bir yaptırımı var.
+
+249
+00:45:05,503 --> 00:45:06,403
+Bunun da farkında olalım.
+
+250
+00:45:08,263 --> 00:45:10,203
+Şimdi devam bilgisi arkadaşlar.
+
+251
+00:45:10,384 --> 00:45:15,083
+Burada biz örgün eğitimde olduğumuzda %70 devam zorunluluğu var.
+
+252
+00:45:15,083 --> 00:45:20,343
+Yani 12 saatten fazla buraya katılmamak da oradan F0 şey.
+
+253
+00:45:21,343 --> 00:45:25,043
+Bunu doğrudan şu an kontrol etmek mümkün değil.
+
+254
+00:45:25,443 --> 00:45:27,143
+Yani herkesin kamerasını açtıramam.
+
+255
+00:45:27,143 --> 00:45:49,103
+yani normal dönem olsa imza topluyoruz falan. Ama şunu da F0 alırsınız. Bütün derse dair faaliyetleriniz, işte ne bileyim quizler, ödevler hepsi 0 olursa doğrudan F0 alırsınız. Daha önceden bu dersi FF'le geçmiş olsanız bile. Çünkü derse dair herhangi bir katkınız, faaliyetiniz olmamış oluyor.
+
+256
+00:45:49,104 --> 00:45:58,003
+devam bilgisi ne ayrıca notlandırılacak ne de işte burada kontrol edilip işte kimsenin kamerasını açıp burada mısın değil misin diye kontrol edilecek halim yok.
+
+257
+00:45:58,744 --> 00:46:03,283
+Onun için buna doğrudan hani bu kısmı şimdilik geçebiliriz. Burayla şu an işimiz yok.
+
+258
+00:46:05,204 --> 00:46:10,883
+Büyük resme baktığımızda arkadaşlar dersin içeriğine dair bu mesela kitaptan alınmış bir şey.
+
+259
+00:46:11,563 --> 00:46:13,403
+Öncelikle biz ne yapacağız bu dersimizde?
+
+260
+00:46:14,383 --> 00:46:17,084
+Sinyaller ve sistemlerin temellerini inceleyeceğiz.
+
+261
+00:46:17,443 --> 00:46:20,883
+Sonra diyeceğiz ki bir continuous gideceğiz biz discrete gideceğiz.
+
+262
+00:46:20,963 --> 00:46:23,884
+Bakın şu taraf continuous tarafı şu taraf discrete tarafı.
+
+263
+00:46:24,403 --> 00:46:26,163
+Continuous time'da bir şeyler göreceğiz.
+
+264
+00:46:27,083 --> 00:46:28,163
+Bunlar temel kısımlar.
+
+265
+00:46:28,943 --> 00:46:30,103
+Continuous time nedir?
+
+266
+00:46:30,304 --> 00:46:31,323
+Continuous sistem nedir?
+
+267
+00:46:31,323 --> 00:46:33,403
+Aynı zamanda discrete time nedir?
+
+268
+00:46:33,464 --> 00:46:34,383
+Discrete sistem nedir?
+
+269
+00:46:34,383 --> 00:46:38,663
+Continuous'den discrete'e geçmek için yapılan şey sampling'tir. Bunları anlatacağız.
+
+270
+00:46:39,723 --> 00:46:47,704
+Bu işlem bittikten sonra continuous time'de yapılan konvolüsyon integrali ve ayrık zamanda yapılan konvolüsyon toplama işlemlerine bakacağız.
+
+271
+00:46:48,384 --> 00:46:54,523
+Bunları öğrendikten sonra bu sistemlerin gösteriminde kullanılan matematiksel işlemler,
+
+272
+00:46:54,643 --> 00:46:59,583
+işte diferansiyel ve fark denklemleri, difference denklemlerini inceleyeceğiz zaman düzleminde.
+
+273
+00:47:00,623 --> 00:47:03,463
+Ondan sonra frekans düzlemine geçiş yapacağız.
+
+274
+00:47:03,463 --> 00:47:08,583
+Burada time düzlemi üzerinde yaptığımız işlemlerden şurada frekans düzlemine geçiş yapıyoruz.
+
+275
+00:47:08,704 --> 00:47:10,343
+Başka bir boyutta inceleme yapacağız.
+
+276
+00:47:11,064 --> 00:47:17,384
+Burada da arkadaşlar iki türlü Fourier serileri ve Fourier transformu dediğimiz iki tür dönüşüm var.
+
+277
+00:47:17,564 --> 00:47:18,424
+Bu niye ayrı?
+
+278
+00:47:19,163 --> 00:47:26,463
+İşaretlerin kullandığımız sinyallerin periyodik olup olmadığına bağlı olarak burada işlem iki türlü yapılıyor.
+
+279
+00:47:26,623 --> 00:47:27,483
+Bunları inceleyeceğiz.
+
+280
+00:47:27,743 --> 00:47:32,823
+Daha sonra aynı şekilde ayrık zamanda bunların analizine bakacağız.
+
+281
+00:47:32,823 --> 00:47:46,883
+Ayrıca zamanda işte discrete time Fourier transform ve discrete time Fourier transform ile beraber fast Fourier transform. Pardon discrete Fourier transform ile beraber fast Fourier transform'u inceleyeceğiz. Bakın discrete time Fourier transform başka bir şey.
+
+282
+00:47:47,483 --> 00:47:57,143
+Discrete Fourier transform başka bir şey. Bunların farkını bile bilmek size hani bu konuda hem genel kültür hem de daha neyi yaptığınızı öğrenmek adına önemli bir şey.
+
+283
+00:47:57,143 --> 00:47:59,543
+sonra Z düzlemine geçiyoruz
+
+284
+00:47:59,543 --> 00:48:01,963
+Z düzleminde yapacağımız şey
+
+285
+00:48:01,963 --> 00:48:03,403
+S ve Z düzlemi
+
+286
+00:48:03,403 --> 00:48:05,123
+sürekli zamanda
+
+287
+00:48:05,123 --> 00:48:08,003
+yaptığımız şey S düzlemidir
+
+288
+00:48:08,003 --> 00:48:10,223
+burada Laplace transformu ve özelliklerine
+
+289
+00:48:10,223 --> 00:48:11,823
+bakacağız ayrık zamanda
+
+290
+00:48:11,823 --> 00:48:13,503
+yaptığımız şey Z transformudur
+
+291
+00:48:13,503 --> 00:48:15,903
+Z düzlemidir Z transformu özelliklerine bakacağız
+
+292
+00:48:15,903 --> 00:48:17,064
+ve burada
+
+293
+00:48:17,064 --> 00:48:19,963
+öğrendiklerimizin çoğuyla
+
+294
+00:48:19,963 --> 00:48:21,663
+bir bilgi
+
+295
+00:48:21,663 --> 00:48:23,843
+çıkartımı yapabilir miyiz bir yorum yapabilir miyiz
+
+296
+00:48:23,843 --> 00:48:25,303
+bu sinyal veya sistem üzerinde
+
+297
+00:48:25,303 --> 00:48:26,983
+onları konuşuyor olacağız
+
+298
+00:48:26,983 --> 00:48:30,724
+diyelim ve tam 50 dakika
+
+299
+00:48:30,724 --> 00:48:32,903
+geçti bir ara verelim
+
+300
+00:48:32,903 --> 00:48:34,064
+10 dakika sonra
+
+301
+00:48:34,064 --> 00:48:36,784
+ilk slide'ımızla konumuza
+
+302
+00:48:36,784 --> 00:48:38,784
+giriş yapacağız buraya kadar bir sorumuz var mı
+
+303
+00:48:38,784 --> 00:48:42,843
+veya varsa
+
+304
+00:48:42,843 --> 00:48:44,823
+şimdi bir dinlenin nefes
+
+305
+00:48:44,823 --> 00:48:46,784
+alın 10 dakika
+
+306
+00:48:46,784 --> 00:48:48,623
+sonra kaldığımız yerden
+
+307
+00:48:48,623 --> 00:48:49,323
+devam ederiz
+
+308
+00:56:27,347 --> 00:56:29,907
+ses geliyor mu arkadaşlar? Görüntü, ses.
+
+309
+00:56:36,851 --> 00:56:38,851
+geldi hocam evet gözüküyor.
+
+310
+00:56:38,851 --> 00:56:40,851
+tamamdır
+
+311
+00:56:43,284 --> 00:56:48,284
+Şimdi geçen dönem bir arkadaşınız şey demişti, değerlendirme yapıyorduk.
+
+312
+00:56:48,903 --> 00:56:52,204
+Hocam ara veriyorsunuz derse bir dakika erken başlıyorsunuz diye.
+
+313
+00:56:53,903 --> 00:56:58,603
+Ara verdiğimizde ben erken geldiysem genelde bulunduğum yerden kalkmıyorum.
+
+314
+00:56:59,583 --> 00:57:02,423
+Lütfen uyarın, hocam daha ara bitmedi deyin.
+
+315
+00:57:03,223 --> 00:57:06,363
+Zamanında başlayalım, hatta bir dakika geç bile söyleyebilirsiniz.
+
+316
+00:57:08,423 --> 00:57:12,103
+O konuda ben bazen unutabilirim, beni uyarın lütfen.
+
+317
+00:57:21,364 --> 00:57:24,864
+Hocam daha 10 dakika olmadı. 3 keçe söylediniz 10 dakika diye o zaman.
+
+318
+00:57:25,503 --> 00:57:27,483
+Tamam 10 dakikaysa bekleyelim biraz daha.
+
+319
+00:57:31,347 --> 00:57:34,427
+Bu Atakan, benim görüştüğüm Atakan mı? Hangi Atakan ile konuştum?
+
+320
+00:57:34,447 --> 00:57:38,268
+Evet hocam ben Atakan'dım. Atakan pek konuşmuyor zaten diğer Atakan.
+
+321
+00:57:43,155 --> 00:57:56,235
+Ben hep böyle şey derim, iki arkadaş da aynı sınıfta olursa, inşallah karıştırmam falan diye, bu sefer ikiniz de aynı sınıfa denk geldiniz. Neyse, öğrenci numaralarınız var, karıştırmayız.
+
+322
+00:58:04,659 --> 00:58:10,999
+Başka yaz okulundan ders alan var mı arkadaşlar diğer üniversitelerden veya bölümlerden?
+
+323
+00:58:21,076 --> 00:58:22,275
+Ne alıyorsun Kaan?
+
+324
+00:58:28,724 --> 00:58:36,643
+Yıldız'dan mı veya farklı bir üniversiteden bildiğim kadarıyla bizim bölümden sayısal işaretçilme, görüntüçlme güzel şey.
+
+325
+00:58:36,704 --> 00:58:45,843
+Elektronikte şeyden oluyorsun o zaman. Birini Bülent Hoca'dan, diğerini şimdi Serdar Hoca'dan galiba.
+
+326
+00:58:47,564 --> 00:58:55,724
+İyi, bununla beraber üçü tam kombin olmuş. Kolay gelsin. Yani hepsi birbiriyle alakalı dersler. Mantıklı bir seçim olmuş.
+
+327
+00:59:09,268 --> 00:59:18,387
+Başka üniversiteden ders alan var mı? Veya bizim üniversiteden bölüm dışından ben kimseyi göremedim ama herkes herhalde bizim bölümden.
+
+328
+00:59:21,940 --> 00:59:51,919
+yok herhalde kimse. Bir başka üniversiteden İngilizce açılsa geliriz diye falan şeyler olmuştu. Yani dedik dersi açtıktan sonra hani Türkçe açtıktan sonra İngilizce'ye çevirmek pek doğru değil. Yani aslında çevirmek benim elimde kolay da. Bizim öğrencilerle olsak daha güzel. Dışarıdakiler yani uyuşmuyor bazen. Var mı arkadaşlar başka bölümden gelen? Onu şunun için soruyorum. Geçen sene yaz okulunda
+
+329
+00:59:51,940 --> 01:00:11,539
+İzmir'den bir arkadaş bu ders ayrık matematik dersini Bolonya'da Türkçe İngilizce diye yazıyor. Gitmiş yani İngilizce verilebilir falan diye bölümünü onaylatmış. Tabii biz geçen dönem Türkçe açmıştık geçen sene yazın. Aldığı dersi orada işte Türkçe olarak görünce buradan götürdüğü not dökümünde Türkçe yazıyor.
+
+330
+01:00:11,539 --> 01:00:32,559
+saydıramadığını duydum. Yani okul demiş yani bize de kimse gelip ya bu dersi Türkçe mi açacaksın, İngilizce mi açacaksın diye doğrudan sormadı. Zaten sistemde görünüyor. Eğer dışarıdan bir arkadaş varsa ve İngilizce diye aldıysa yol yakınken bunun çaresine baksın. Dersimiz Türkçe. Daha sonra mağdur olmanızı istemem.
+
+331
+01:00:32,559 --> 01:00:51,099
+Bu arada görmüşken söyleyeyim benim iletişim bilgilerim okuldaki dahili telefonda bir problem var bu mail adresinden soru sorabilirsiniz istediğiniz zaman ulaşabilirsiniz tamam mı?
+
+332
+01:00:54,420 --> 01:00:58,019
+Doldurduk mu arayı? Bir dakika daha duralım hadi.
+
+333
+01:01:08,115 --> 01:01:30,655
+Bu dersi şöyle el kaldırın isterseniz. Üstten almak için, yani alttan alanları değil de üstten almak için kim aldı? Benim daha çok hani hedefim şeydi. Yani üstten almaktan kastım şu, önümüzdeki dönem normalde bu dersi alacaksınız ama şimdiden almış olmak için daha fazla kişi bekliyorum.
+
+334
+01:01:38,164 --> 01:01:42,564
+İyi. Yani baya sayı var. Güzel.
+
+335
+01:01:46,804 --> 01:02:05,644
+Yaz okulu bir anlamda güzel bir şey arkadaşlar. 5 haftada bir ders aradan çıkıyor ve ben erken mezun olmuştum yaz okulu sayesinde üstten ders alarak. O açıdan belki tatilinizden bir miktar kısıyorsunuz ama şu an herkes bulunduğu yerden derse girebileceği için o açıdan rahat.
+
+336
+01:02:05,644 --> 01:02:26,903
+Evet arkadaşlar şimdi birinci chapter'ımızın slide'ı şu an şeyde var, sistemde var. Bu geçen dönemlerde işte bilgisayar bilimlerine giriş aldıysanız veya ne bileyim yapısal programlamaya giriş aldıysanız anlattığımız bilgileri böyle bir toparlamak adına hazırladığımız bir slide.
+
+337
+01:02:26,903 --> 01:02:51,943
+informatikle başlıyor. Bu dersin ön gereksinlerinden bir tanesi aslında. Buradaki çoğu şeyi biliyorsunuz. Doğrudan hani sınavda buradan soru sormam diye düşünüyorum ama tabii dolaylı sorular gelir. Yani bir işte N-bit ile kaç farklı durum temsil edilir bu iki üzeri N'i artık bilmemeniz biraz anormaldir. Onun için bileceğiniz şeyler olması lazım.
+
+338
+01:02:51,943 --> 01:03:18,323
+bunu bir genel kültür ve anlatacağımız diğer konulara hazırlık gayesiyle hazırladık. Bu informatik kavramı arkadaşlar genel olarak geniş bir şekilde tanımlamak gerekirse bir creating, storing, finding, manipulating, sharing of information ile alakalı.
+
+339
+01:03:18,323 --> 01:03:43,503
+Yani bilginin paylaşılması, işlenmesi, saklanması, oluşturulması, aranması, bulunması gibi işlemlere biz informatik diyoruz. Bunun etimolojik kökenleri falan var. Bunları soracak değiliz. İşte burada bunları okuyabilirsiniz. Bunlara bakarak hani genel kültür ile alakalı şeyler işte morfolojisine baktığınızda information'dan geliyor falan.
+
+340
+01:03:43,503 --> 01:03:53,183
+informatik falan. Şimdi bununla alakalı Linguistik, Obstik, Konics gibi farklı bilim dallarıyla böyle bir çalışım yapılabilir.
+
+341
+01:03:54,083 --> 01:03:59,863
+Bunun pratikteki şeyleri var, karşı taraflar. Bunlarla çok fazla uğraşmayacağız.
+
+342
+01:04:00,524 --> 01:04:03,983
+Şimdi Data Information ve Knowledge kavramları bizim için önemli.
+
+343
+01:04:04,623 --> 01:04:10,684
+Şimdi data dediğimiz şey unprocessed, yani herhangi bir şekilde işlenmemiş.
+
+344
+01:04:10,683 --> 01:04:31,983
+Buna fact olaylar, gerçekler, datalar, veriler diyebiliriz, figürler. İçerisinde herhangi bir yorumlanmış veya analiz içeren bir şey içermiyor, yok. Bunlara antrosist olan şeylere data diyoruz. Mesela işte validin, ham petrolün validi şu kadar da şeydi.
+
+345
+01:04:31,983 --> 01:04:37,483
+Information buradan bir yorum yaparak, datadan yorum yaparak ortaya çıkan yeni bir bilgi aslında.
+
+346
+01:04:39,223 --> 01:04:45,143
+İşte bu şeyin fiyatının şundan şuna artış olduğunu söylüyor burada.
+
+347
+01:04:46,003 --> 01:04:53,423
+Ne oluyor? İşte bir bilginin takip edildiğini, içeride bir bilginin olduğunu, artışın olduğunu görüyoruz gibi.
+
+348
+01:04:53,423 --> 01:05:17,623
+knowledge ise bu information'ın, tecrübenin, öngörülerin bir araya gelerek ileride bize daha ciddi çıkarımlar yapacak, tahminler yapacak ve bu tahminler sonucunda analizler, bazı kararlar verebilmemizi sağlayacak bir bilgi bankası diyebiliriz.
+
+349
+01:05:17,623 --> 01:05:40,723
+hatta bunun ötesinde bir wisdom vardır. Bilgelik dediğimiz şey. Eğer diyor ki bu varilin fiyatı varil başına tam petrol fiyatı şu kadar arttığında şöyle bir tahmin muhtemeldir ki petrol fiyatları yılbaşına şu kadar litre başına şu kadar artacaktır pound olarak diyor.
+
+350
+01:05:40,723 --> 01:05:45,863
+Yani burada tekrar geleceğe yönelik karar vermemizi sağlayacak bir tahmin
+
+351
+01:05:46,516 --> 01:05:50,115
+veya bir öngörü veya bir analiz. İşte bu sosyal olaylarda olabilir.
+
+352
+01:05:51,335 --> 01:05:58,295
+Bilmiyorum işte şu an içinde bulunduğumuz hastalık döneminin veya ne bileyim yangın dönemlerinin ileriye yönelik tahminleri olabilir.
+
+353
+01:05:58,915 --> 01:06:04,975
+Elimizde şu ana kadar bir bilgi birikimimiz var. Bu birikimden yola çıkarak geleceğe yönelik tahmin yapmamız gerekiyor.
+
+354
+01:06:04,975 --> 01:06:10,635
+Çünkü hayatın kendisi bunu gerektiriyor bize. Her şekilde bir veri toplanıyor aslında.
+
+355
+01:06:10,635 --> 01:06:31,575
+işte bunun bir knowledge olduğunu mesela burada bir insight dediğimiz bir şey içine bakmak ne bileyim yani insight normalde bir şeyin içini görmek demektir yani iyice o konuda bilgi sahibi olmak demektir derinlemesine bilgi olarak söyleyeceğimiz şey.
+
+356
+01:06:31,575 --> 01:06:58,655
+Verinin information'a dönüştürülmesi işte data dediğimiz bir şey var bir amaç için verileri topluyoruz ve buradan information'lar elde ediyoruz bizim de işte zamana bağlı olarak sinyallerimiz olacak XT'ler bunlar toplandıktan sonra işte bunlardan yeni tahminler yapacak şey alacağız bu information'dan bir şey bir proses yollu bilgiler knowledge elde edeceğiz ve daha sonra
+
+357
+01:06:58,655 --> 01:07:03,655
+tahmin yapacak, ileriye bizi götürecek bir aşamaya geleceğiz.
+
+358
+01:07:05,035 --> 01:07:14,376
+İşte burada işte demiş ki ham satış fiyatları bilgileri datadır.
+
+359
+01:07:15,876 --> 01:07:22,376
+Evet işte bir satış yöneticisi için bu işle alakalı elinde ham bilgiler vardır.
+
+360
+01:07:22,516 --> 01:07:24,655
+Bunları daha sonra information'a çevirir.
+
+361
+01:07:25,435 --> 01:07:27,556
+İşte bir satış raporunda.
+
+362
+01:07:28,655 --> 01:07:40,035
+satış fiyatları. Daha sonra buradan geleceğe yönelik işte deriz ki bir geleceğe yönelik ne oluşturalım? Fiyatları arttıralım veya azaltalım veya başka bir aksiyonda bulunalım.
+
+363
+01:07:41,696 --> 01:07:56,055
+Şimdi verinin toplanması arkadaşlar pahalı bir şey. Özellikle temiz veriye, yapılandırılmış veriye ihtiyacımız var. Bu da masraflı bir şey. Pahalılıktan kasıt illa maddi olarak değil bir sürü iş gücü gerektiriyor.
+
+364
+01:07:56,055 --> 01:08:14,395
+örneğin bir yapay zeka işlemi yapacaksanız önünüze bir sürü ön problemler çıkıyor. Bu ön problemlerin en mühimlerinden bir tanesi de verinin yanlış toplanmasından kaynaklı problemdir. Ne için bu işi yapacağımızı iyi bilmemiz lazım.
+
+365
+01:08:14,395 --> 01:08:23,695
+Ayrıca işte bir performans takibi ve performans iyileştirmesi aynı zamanda verinin toplanması için geçerli.
+
+366
+01:08:24,335 --> 01:08:32,875
+Eğer diyor gerçekten bir bilgiye bir şeyin kontrol edilmesi ve iyileştirilmesi için bir gerçekten bir bilgiye ihtiyacınız varsa
+
+367
+01:08:32,876 --> 01:08:46,855
+bu bir şeyin performansını gerçekten etkileyen belirleyici faktörlerin tespitini bulmanız ve buna yönelik datalar elde etmeniz gerekiyor.
+
+368
+01:08:46,855 --> 01:08:51,236
+Ne demek bu söylediğim? Yani dolar üzerinde tahmin yapacaksınız.
+
+369
+01:08:51,336 --> 01:08:58,956
+Doların hareketini etkileyen parametreleri burada belirleyip buna göre toplamak önemli.
+
+370
+01:08:58,956 --> 01:09:16,116
+düzenli ve güvenli veri toplamak gerekiyor. Aynı zamanda bir verinin bilgiye dönüşümüne, ihtiyacımız olan bilgiye dönüşümünü yapabilmemiz gerekiyor bu işlemler için. Eğer böyle bir amacımız varsa.
+
+371
+01:09:21,235 --> 01:09:29,616
+Verinin faydalı olabilmesi için bir kere ne olması lazım? Amacımıza uygun, alakasız verilerle uğraşmamamız gerekiyor.
+
+372
+01:09:31,076 --> 01:09:37,455
+Tam olması gerekiyor arkadaşlar. Eksik bir veriyle çalışmak çoğu zaman bizi yanlışa götürür veya istediğimize ulaşamayız.
+
+373
+01:09:38,475 --> 01:09:45,755
+Doğru, accuracy biliyorsunuz doğruluk yani kesinlik manasında yanlış veriyle çalışmamamız gerekiyor.
+
+374
+01:09:45,755 --> 01:09:59,555
+örneğin bilimsel yayınlarda bazen makalelerde yanlış veri toplamaktan kaynaklı ret verilir veya proje kabul edilmez veya kabul edilirse daha sonradan iptal edilir. Bu önemli.
+
+375
+01:09:59,555 --> 01:10:19,755
+zamanlı işte bu şey zamanlama önemli. Sonra bakacağımız şey dönüşüm yaparken işte doğru bir formatta bu veriyi kullanmamız gerekiyor.
+
+376
+01:10:19,756 --> 01:10:32,456
+işte mesela bir spreadsheet üzerinde analiz edilebilir. Eğer bir bilgisayar sistemine girilebilirse mesela bir Excel üzerinde gibi bir şey. Tabi her zaman yeterli değil.
+
+377
+01:10:34,276 --> 01:10:45,355
+Uygun bir fiyata, fiyatla elde edilebilmeli yani maliyetle elde edilebilmeli. Yani attığınız taş, ürküttüğünüz kuşa değsin derler ya.
+
+378
+01:10:45,355 --> 01:11:10,975
+aynen onun gibi yapacağınız bilgi çıkarım için toplayacağınız data feasible olması lazım. Bu işlem için arkadaşlar yani information için bunun bir önemli olduğu işte doğru bilgiye ulaşmak için işte bilginin doğrusuna ulaşmak için yapılması gerekenler hemen aynı şeyler. Information için yapılacak şeyler de aynı veride.
+
+379
+01:11:14,676 --> 01:11:25,655
+Burada toplanan büyük, devasa miktardaki veriler arkadaşlar, yararlı olabilecek şekilde üretiliyor.
+
+380
+01:11:25,655 --> 01:11:32,096
+Eğer bu bilgi çıkarımına, knowledge elde edilmesinde kullanılacaksa, buraya başvuracaksak,
+
+381
+01:11:32,096 --> 01:11:45,335
+Burada ayrıca ciddi bir miktarda blurring ve confusion dediğimiz karmaşıklığa sebep olan iki tane böyle bir şey var.
+
+382
+01:11:45,335 --> 01:11:50,716
+Ne ile ne ile arasında? Information ile knowledge arasında. Yani bazen birbirine karıştırılabiliyor.
+
+383
+01:11:51,856 --> 01:11:59,335
+Bizim bu dersimiz belki information ile knowledge arasındaki felsefeyi anlatmak değil ama bu aşamaları geçmek isterdi.
+
+384
+01:11:59,335 --> 01:12:26,635
+Mesela knowledge'ı explicit, formal ve genel kabul edilebilir bir şey olarak düşünebilirseniz bu bilgidir diyor elde edilmiş ve şey politikalar ve bazı şeyler geliştirmek için örneğin bu işlemleri yani geleceğe yönelik bazı kararlar vermek için yapılan bir şeydir.
+
+385
+01:12:26,635 --> 01:12:45,155
+Instinctive, subconscious, tasted or hidden knowledge dediğimiz bir şey var. Bu hani gizli bir mesaj gibi düşüneceğiz. Bir şey verirlerken arka planda yapılması gereken farklı şeyler. Bunlara çok girmeye gerek yok. İşin biraz daha felsefesini anlatıyoruz.
+
+386
+01:12:45,155 --> 01:12:52,895
+Bu iki bilgi de arkadaşlar organizasyon için önemlidir demişiz
+
+387
+01:12:52,895 --> 01:13:03,595
+Bu işlem için yani information'ın kullanımı temel bir anahtar yani temel bir geçiş yoludur bu da önemli bir şey
+
+388
+01:13:06,355 --> 01:13:12,595
+Peki biz daha çok sinyal ve sistem üzerinde duracak mısınız? Önce sisteme bakalım
+
+389
+01:13:12,595 --> 01:13:16,455
+Sinyal biraz daha diğer kaynaklardan da bahsedeceğiz.
+
+390
+01:13:18,115 --> 01:13:25,875
+Şimdi bir sistem dediğimiz şey arkadaşlar, tümleşik elemanların kümesidir.
+
+391
+01:13:26,476 --> 01:13:28,176
+Bütünleştirilmiş elemanların kümesidir.
+
+392
+01:13:28,815 --> 01:13:30,795
+Bu bütünleştirilmiş elemanlar ne demek?
+
+393
+01:13:30,995 --> 01:13:34,976
+Bir hedefi yerine getirmek için bir araya getirilmesi gerekiyor.
+
+394
+01:13:35,575 --> 01:13:41,056
+Örneğin bir araç sistemi tasarlayacaksınız, otomobil veya başka bir şey.
+
+395
+01:13:41,055 --> 01:14:02,675
+Burada bir fren sistemini ele alalım. Aracın içerisindeki fren sistem. İşte fren içerisinde pedal var. O bir elemandır. Ondan sonra başka bir eleman var. Sonra başka bir eleman var. Bu elemanlar arasında bir ilişki var. İşte bu sistemi tanımlanan, sistemin basit bir örneği. Birçok eleman var ve bu elemanlar bir hedefi yerine getirmek üzere bir araya getirilmişler.
+
+396
+01:14:02,676 --> 01:14:12,715
+Farklı işte mühendislik tanımlamalarının işte bu sistem üzerine farklı şeyler var işte bir yazılım mühendisi için biz ne diyebiliriz?
+
+397
+01:14:12,715 --> 01:14:21,696
+Yani bizim buradaki integrated setimiz, elemanlarımız bilgisayar programlarıdır ve bu bilgisayar programlarının bir araya gelmesiyle bir sistem oluşuyor.
+
+398
+01:14:21,815 --> 01:14:30,776
+Mesela işte diyoruz öğrenci yönetim sistemi gibi. Elektrik mühendisi için bir devre, elektriksel devre üzerinde birçok eleman var.
+
+399
+01:14:30,775 --> 01:14:36,035
+bu elemanlar bir araya getiriliyor belli bir hedef için. Buna elektrik devre sistemi diyoruz.
+
+400
+01:14:37,295 --> 01:14:54,375
+Kişiden kişiye göre değiştiği için bu belli bir hedefe yönelik oluşturulmuş tümleşik elemanların kümesi, birleştirmiş elemanların kümesi uygun bir tanımdır demişiz.
+
+401
+01:14:54,375 --> 01:15:07,396
+aslında bir assembly yani bir parçaların bir araya getirilmesi ki bu parçalar veya komponentler bir şekilde birbirine bağlanıyor.
+
+402
+01:15:07,396 --> 01:15:10,435
+Bu bağlanma şekli tamamen alandan alana değişir.
+
+403
+01:15:12,467 --> 01:15:32,767
+parçalar birbirlerini bir şekilde etkiliyorlar. Bir şekilde birbirlerinden etkileniyorlar. Ve bu ortaya çıkan şey bir şeyler yapıyor, bir işler, bir görevi yerine getiriyor. Ve buna biz bir misyon veriyoruz. İşte diyoruz ki bir tanım veriyoruz. İşte ne diyoruz ki, French sistemi gibi bir şey diyoruz.
+
+404
+01:15:36,404 --> 01:15:42,404
+aynı zamanda bakın şu sistemin tanımında
+
+405
+01:15:42,404 --> 01:15:50,103
+any arrangement which involves the handling, processing or manipulation of resources of whatever type can be represented as a system.
+
+406
+01:15:50,103 --> 01:16:03,843
+Bu da güzel bir tanım. Bir şeyi ortaya çıkarmak, bir işlemi yapmak için, onu ele almak, çözmek veya bir işlem yapmak için herhangi bir şekilde ortaya atılan, tanımlanan şey sistem olarak tanınmıyor.
+
+407
+01:16:03,843 --> 01:16:24,643
+Sözlüklerde, Wikipedia'da bunun bazı şeylerini bulabilirsiniz. Bunlara da çok fazla ilgilenmeyeceğiz. Bir arada çalışan çoklu parçalara sistem diyeceğiz arkadaşlar. Bu büyük veya kompleks bir şey olabilir. Örneğin trafik kontrol sistemi veya bizim haberleşme sistemimiz.
+
+408
+01:16:24,643 --> 01:16:43,783
+şimdi haberleşme sisteminizi düşündüğünüzde en yakın cihaz nedir size? En yakın element işte telefonunuz belki şu an veya ne bileyim karşıdaki bilgisayarınız. Ama bu sistem sadece telefondan oluşmuyor. En yakın uydu, GPS, işte o karşıdaki şey, aradaki geçişler ve aradaki prosesler bu sistemin içerisine dahil.
+
+409
+01:16:43,783 --> 01:16:46,643
+işte bir trafik kontrol sistemi aynı onun gibi.
+
+410
+01:16:47,404 --> 01:16:51,463
+Aynı zamanda işte küçük bir cihaz bir sistem olarak da tanımlanabiliyor.
+
+411
+01:16:51,463 --> 01:16:58,283
+Mesela bir packet calculator veya alarm veya ufak bir şey küçük bir sensörden oluşan bir kontrol.
+
+412
+01:16:58,363 --> 01:17:01,983
+Mesela şu an birçok yere girdiğinizde ateşiniz kontrol ediyor.
+
+413
+01:17:02,203 --> 01:17:08,423
+Ondan sonra elinize bir sensörle işte dezenfektan damlatılıyor falan.
+
+414
+01:17:08,663 --> 01:17:09,863
+Bunlar bir sistem arkadaşlar.
+
+415
+01:17:09,863 --> 01:17:15,264
+Sistem aslında bir bilgisayar sistemi gibi yani bilgisayar gibi çalışan bir şey
+
+416
+01:17:15,264 --> 01:17:22,043
+Kendisine bir inputlar var, proseslere sahip ve bu inputlardan proseslerle out-tublar oluşturuluyor
+
+417
+01:17:22,043 --> 01:17:23,103
+Temel yapısı budur
+
+418
+01:17:23,103 --> 01:17:30,444
+Bu feedback işlemiyle birlikte eğer bu sisteme bir feedback dahil edersek
+
+419
+01:17:30,444 --> 01:17:35,084
+Bu aynı zamanda işte operasyon sistemleri için önemli olan bir şeydir
+
+420
+01:17:35,084 --> 01:17:38,084
+Feedback sistem diye veya kontrol sistemleri diye konuşacağız
+
+421
+01:17:38,084 --> 01:17:47,463
+ve bu sistemler arkadaşlar genellikle nelerle ifade ediliyor, betimleniyor veya açıklanıyor, modellerle ifade ediliyor.
+
+422
+01:17:48,383 --> 01:17:56,784
+Aslında bu model dediğimiz şey bizim matematikteki fonksiyonlarımıza benziyor. Doğrudan belki fonksiyon değil de bağıntı da diyebiliriz.
+
+423
+01:17:56,784 --> 01:18:03,064
+Her zaman fonksiyon olmaz. Veya şeyde konuşmuştuk, sayısal analiz dersi alanlar bilirler.
+
+424
+01:18:03,064 --> 01:18:11,304
+işte bir regresyon veya interpolasyon oluşturarak verilerin topladığımız verilerden bir fonksiyon üretme yoluna gidip
+
+425
+01:18:11,304 --> 01:18:16,183
+daha sonra yeni gelen durumu o fonksiyon üzerinde test etmeye, tahmin etmeye çalışıyorduk.
+
+426
+01:18:17,304 --> 01:18:29,023
+Bu modeli oluşturduktan sonra elemanlar arasındaki ilişki bulunmuş oluyor ve bu ilişkiden yola çıkarak geleceğe yönelik tahmin yapmamız kolaylaşıyor.
+
+427
+01:18:29,023 --> 01:18:46,703
+örneğin x eşittir vt diye işte hızın zamanla çarpımı bize yolu veriyor. Bu bağıntı sayesinde biz falanca zamanda işte ne kadar hızımız varsa alacağımız yol bilgisini tahmin edebiliyoruz, hesaplayabiliyoruz.
+
+428
+01:18:46,704 --> 01:19:08,704
+işte bu bir modeldir arkadaşlar aslında bu model nasıl çalışıyor ilk zamana göre değişecek veya zamana göre değişecek burada bir t parametrisi var çünkü hızımız da zamana göre değişebilir sabit bir hızlı hareket yapmıyorsak böyle bir sistemi ortaya koyup buradaki şekillerde olduğu gibi bunlar üzerinde analizler yapacağız bu derste.
+
+429
+01:19:08,703 --> 01:19:17,763
+Şimdi sistemin modeli genellikle şudur arkadaşlar yani bir inputumuz vardır bu proses olarak işlenir ve bir output elde edilir.
+
+430
+01:19:17,763 --> 01:19:34,443
+Şimdi bu output desired output veya gerçek output ile karşılaştırarak bir feedback elde edilir ve bu feedback sonucuna göre sistemin proseslerinde veya başka bir komponentinde güncelleme yapılabilir.
+
+431
+01:19:34,931 --> 01:19:43,011
+ve bu artık ileride tahmin yapılabilecek, geleceğe yönelik işe yarayacak bir hale getirilir. Buna zaten eğitim diyoruz.
+
+432
+01:19:46,791 --> 01:19:55,511
+Information sistemlerin üç tane özelliğini, yani bilgi sistemlerinin dört tane özelliğinden bahsettik biraz önce.
+
+433
+01:19:55,511 --> 01:20:03,731
+İşte kaydetme, taşıma, organize etme, proses etme bu information üzerinde yapılıyordu.
+
+434
+01:20:04,931 --> 01:20:20,512
+Information teknolojilerine baktığımızda bir information sistemini implement eden komponentler var. Örneğin bunlardan bir tanesi hardware. Bizim için bilgisayar, network hardware'leri, bir sürü hardware'ler, fiziksel araçlarımız.
+
+435
+01:20:21,512 --> 01:20:31,231
+Eğer bir bilgisayarcıysak veya kontrolcüysak burada software'e ihtiyacımız var. Çünkü hardware'i bir şekilde yönetmemiz gerekiyor. Ona emirler vermemiz gerekiyor.
+
+436
+01:20:31,231 --> 01:20:39,832
+insan bu işin bir parçası, insanlarla beraber kurallar bu işin bir parçası, veriler ve veri tabanları bu işin bir parçası.
+
+437
+01:20:40,832 --> 01:20:48,851
+Şimdi sayısal bir sistemi ele aldığımızda arkadaşlar sayısal sistem biliyorsunuz inputlardan her sistem inputlardan oluşuyordu.
+
+438
+01:20:48,851 --> 01:21:00,851
+Burada sayısal sistemde discrete information'lar ayrık bilgiler saklanıyor ve ayrık dahili bilgiler dediğimiz sistem state'i ve yine ayrık information olarak output'lar bulunmuyor.
+
+439
+01:21:01,231 --> 01:21:29,511
+bulunuyor. Yani bir sayısal sistem ayrıklaştırmaya ihtiyaç duyan bir şey. Inputlarımız ayrık, outputlarımız ayrık, sistemin içerisinde ayrık veriler işleniyor, veriler ayrık bir şekilde işleniyor. Böyle bir şey sistem olacak arkadaşlar. Ve bu sayısal sistemler sayısal bilgisayar olarak bildiğimiz şeyler. İşte bir memorimiz var. Bu memori'de ne yapıyoruz? Verilerimizi geçici veya kalıcı şekilde saklıyoruz. İşlem elemanımız var. İşte buna CPU diyoruz.
+
+440
+01:21:29,511 --> 01:21:55,951
+işlem elemanı içerisinde işlemleri gerçekleştiren kontrol ünitesi veya farklı şeyler vardı. Bu datapetlerle, data veri yollarıyla memoriden veriler gidiyor, geliyor, işleniyor, tekrar kaydediliyor böyle işlemler. Hatta buna pipeline demiştik. Pipeline nasıl oluşuyordu? Hangi adımları vardı? Instruction cycle'ın bir pipeline dediğimiz yapısı nelerden oluşuyordu arkadaşlar?
+
+441
+01:22:00,340 --> 01:22:08,219
+şöyle desek, fetch instruction, ondan sonra decode instruction, execute instruction, gerektiğinde writeback.
+
+442
+01:22:08,800 --> 01:22:18,639
+Yani bir bellekten instruction'ı veya information'ı getireceğiz, bunu decode edeceğiz, ondan sonra execute edip, yani komut ne gerektiriyorsa onu yapacağız, sonra sonucu geriye yazacağız.
+
+443
+01:22:19,499 --> 01:22:23,459
+İşte burada input cihazlarımız var, ayrıca output cihazlarımız var, yardımcı cihazlar.
+
+444
+01:22:23,459 --> 01:22:30,959
+Bu işlem senkron olabilir, asenkron olabilir, eş zamanlı veya ayrık zamanlı bir şekilde, eş zamansız bir şekilde gerçekleştirebilir
+
+445
+01:22:30,959 --> 01:22:37,919
+Dijital bir bilgisayar, eğer bir dijital informasyon, dijital sistem oluşturacaksak dijital bilgisayara ihtiyacımız var
+
+446
+01:22:37,919 --> 01:22:39,859
+Peki geldik, sinyal ne demek?
+
+447
+01:22:41,520 --> 01:22:47,700
+Sinyal kavramından, şu ana kadar bildiğiniz, sinyaldan anladığınız şeyi yazar mısınız veya söyler misiniz?
+
+448
+01:22:51,347 --> 01:22:57,987
+Sinyal geldi diyorsunuz mesela. Ne oluyor? Genelde hep sinyal deyince insanlar hakkında sinyal geldi gibi bir şey söyleniyor.
+
+449
+01:23:02,836 --> 01:23:03,875
+Nidur meşerabu
+
+450
+01:23:10,963 --> 01:23:32,363
+Cevabınız yok mu arkadaşlar? Bir uyarı mesela değil mi? Yani bir şey haber geldi. Aslında orada bir size uyarı değil de bir bilgi gönderiliyor. Yani o bir sestir veya başka bir değişiklik bilgisi. Güzel. Yani bildiğimiz şey sinyalin yani o bildiğiniz söylediğiniz şeyler arkadaşlar sinyal kavramının içerisinde kullanılabilir. Ama daha geniş bir kavramdır.
+
+451
+01:23:32,363 --> 01:23:42,023
+herhangi bir seziksel quantity dediğimiz büyüklüğü gösteren variable değişkenlere sinyal diyoruz.
+
+452
+01:23:42,023 --> 01:23:44,664
+Bir bilgi değişkeni aslında, bilgi saklayan değişken.
+
+453
+01:23:46,203 --> 01:23:52,803
+Sayısal bir sistem için bu sayısal, diskret ayrık verilerden oluşacaktır sinyalimiz.
+
+454
+01:23:54,063 --> 01:24:00,144
+Eğer bu sayısal sistemi de geçen dönemlerde gördüğünüz şekilde temsil etmek istersek,
+
+455
+01:24:00,144 --> 01:24:14,983
+ikili veya binary değerlerden oluşan en yaygın sistem dijital sistemdir mesela binary sistem. Niye? 0 veya 5 volt, 0 veya 12 voltla bütün verileri saklayabiliyoruz.
+
+456
+01:24:14,983 --> 01:24:41,883
+işte burada ikili veriler dediğimiz şeyler işte sıfırdan veya birden oluşuyor. Eğer bunu sembollere dökecek olursak false veya true diyoruz karşılıklı şekilde veya low high elektriğin işte şuna sıfır volt buna beş volt dediğimizde bu low değer buna high değer dedik bunları söyleyebiliriz veya işte daha açık kapalı şeklinde söyleyebileceğimiz.
+
+457
+01:24:41,883 --> 01:25:00,824
+tabi bu açıkla kapalı yeri şeyde farklı olmuş normalde low olarak off high olarak on kullanılıyor yani şu ikisini yer değiştiririz ama bunlar değiştirilebilir yani bir yerde false dediğinizde on veya true dediğinizde off diyebilirsiniz.
+
+458
+01:25:04,435 --> 01:25:10,815
+Bu binary verileri kullanarak arkadaşlar biz fiziksel büyüklükleri ne yapabiliyoruz? Saklayabiliyoruz.
+
+459
+01:25:10,876 --> 01:25:17,675
+Demek ki fiziksel bir büyüklüğü taklayan değişkenimiz olacak ve bu değişken binary olarak sayısal sistemlere de saklanacak.
+
+460
+01:25:18,896 --> 01:25:27,515
+Şimdi bu önemli bir şey, slide. Bir ölçme sisteminin adımları.
+
+461
+01:25:27,515 --> 01:25:33,875
+Şimdi ölçme demek ne demek? Bir ortamın sıcaklığını ölçeceksin. Şimdi birinize soralım. Caner kaynak.
+
+462
+01:25:38,323 --> 01:26:06,143
+Caner duyuyor musun? Duyuyorum hocam, sesim geliyor mu? Heh, geliyor. Şu an nerede yaşıyorsun? İzmir'de. İzmir'de. İzmir'de sıcaklık kaç derece? Bak bakalım. Şu an bakayım mı? Evet, bakabilirsin. Yani bir yerlerden öğrenebilirsin. Tamam, bakıyorum. 38 derece şu an. Kaç? 38. 38, virgülü yok mu? Virgülü çıkmadı. Tamam, 38 santigrat derece.
+
+463
+01:26:06,143 --> 01:26:33,883
+Şimdi Caner bu bilgiyi nereden aldı? Bir sayfadan aldı. O sayfada öyle yazdığı için sıcaklık öyle değil arkadaşlar. Sıcaklık öyle olduğu için o sayfada öyle yazıyor. Bir kere bunu bilelim. Peki o sayfa bunu nereden aldı? Bu bilgiyi nereden aldı? İşte bitti meteorolojinin bilmem ne sitesinden aldı. Şimdi meteorolojide böyle yazdığı için değil sıcaklık. 38 derece değil. 38 derece böyle olduğu için öyle yazıyor.
+
+464
+01:26:33,883 --> 01:26:52,023
+Peki meteoroloji bunu nasıl elde etti? Nereden biliyor? İşte bu iş için arkadaşlar bir ölçme sistemi geliştirilmesi lazım. Nedir? Bunun sıcaklığı termometrelerle ölçelim demişler değil mi? Termometrelerin kaç tane vardı bildiğiniz?
+
+465
+01:26:52,023 --> 01:27:08,983
+civalı termometre, alkollü termometre falan diyorduk. Bir de bu Celsius, Fahrenheit, başka ne vardı? Ortaokuldan hatırlıyoruz. Kelvin olabilir mi? Gerçi onu kullanıyorlar bunlar termometreden.
+
+466
+01:27:08,983 --> 01:27:11,343
+Bilmiyorum hani şey bunlar şey
+
+467
+01:27:11,343 --> 01:27:18,703
+Şimdi öyle skalalar var değil mi? Biz mesela şu an Türkiye'de Celsius'u kullanıyoruz ama Amerika'da falan Fahrenheit kullanılıyor.
+
+468
+01:27:20,023 --> 01:27:23,603
+Bilmeyen birine Amerika'daki sıcaklığı söylesen yanıyor dersin.
+
+469
+01:27:23,603 --> 01:27:31,243
+Şu an çünkü Amerika'daki Fahrenheit değeri yani bizim 38'imiz orada belki daha fazla işte hesabı falan vardı bilmiyorum unuttum.
+
+470
+01:27:32,303 --> 01:27:36,463
+Peki bu bilgi, bu göreceli bilgi bize nasıl gelecek?
+
+471
+01:27:36,463 --> 01:27:46,084
+Çünkü bildiğimiz sıcaklık dediğimiz şey gerçek anlamda 38 değil. Yani bunun artısı vardır, eksisi vardır. Bu bir göreceli bir kavram.
+
+472
+01:27:46,084 --> 01:28:05,404
+Şimdi fiziksel bir büyüklük, dışarıdaki herhangi bir enerji veya büyüklük arkadaşlar, transdüsür dediğimiz, bu transdüsür bir dönüştürücü şeylerle bir forma dönüştürülüyor. Bakın transdüsür dönüştürücü.
+
+473
+01:28:05,404 --> 01:28:14,344
+bunun özel hali fiziksel bir büyüklüğü elektriksel işarete dönüştüren hali sensördür.
+
+474
+01:28:14,344 --> 01:28:26,904
+Burada yazmıyor. Bu sensör ne yapıyor? Fiziksel bir büyüklüğü elektriksel büyüklüğe dönüştürüyor.
+
+475
+01:28:26,943 --> 01:28:35,163
+Elektriksel büyüklüklerden bizim anladığımız ne? Volt veya amper, akım ikisinden bir tanesine dönüştürebiliriz.
+
+476
+01:28:35,404 --> 01:28:51,103
+bakın göreceli bir şey elde ettik. Şimdi bu elde ettiğimiz şey gerektiğinde içerisinde hatalar olabilir. Çünkü şu transducer'ımız doğru düzgün çalışmayabilir. Zaten hatalar ondan kaynaklanıyor ilk başta.
+
+477
+01:28:51,103 --> 01:29:06,484
+güçlendirmek veya hata sezmek gerekebiliyor veya bu amplifier, amplitatör dediğimiz elde edilen sıcaklığın bilgisini dedekt etmesi, yani bir sıcaklık bilgisi ölçmeye başladığınızı görmesi lazım.
+
+478
+01:29:06,484 --> 01:29:18,163
+Çünkü bu sürekli bir yerden sıcaklık bilgisi alacağız, belki bir saat boyunca. O bir saat kendi içerisinde bir sonsuzluk içeriyor, yani bir saat içerisinde aslında sonsuz tane sıcaklık bilgisi var.
+
+479
+01:29:18,163 --> 01:29:30,124
+biz onu alıp sonlu hale getirmemiz gerekiyor. Burada arkadaşlar gerektiğinde analog sinyal işaret işleyicilerle analog signal processing yapıyoruz. Ne demek?
+
+480
+01:29:30,123 --> 01:29:34,583
+bir sıcaklık bilgisi okuduk. Okuduğumuz bu bilgiyi
+
+481
+01:29:35,220 --> 01:29:48,619
+İçerisinde gürültü varsa gürültülerini analog bir şekilde temizleyelim. Güçlendireceksek güçlendirelim. Ne yapacaksak yapalım. Burası tamamen bir elektronikçinin tasarladığı devreyle gerçekleştirecek işlemler.
+
+482
+01:29:49,579 --> 01:30:00,239
+Bunu yaptıktan sonra arkadaşlar, elimizde hala elektriksel olan, analog olan, bakın buraya kadar analog dünyadayız hala, bir bilgi var.
+
+483
+01:30:00,239 --> 01:30:06,679
+Yani ben şurada bir sıcaklık bilgisi gördüm, 38 santigrat derece demedim daha
+
+484
+01:30:06,679 --> 01:30:11,779
+Ne dedim? İşte burada bir şey volt dedim, mesela 22,88 volt dedim
+
+485
+01:30:11,779 --> 01:30:18,400
+Tabii 22,88 demeyelim, 38,5 volt diyelim, şununla uyumlu olsun sıcaklığımıza
+
+486
+01:30:18,400 --> 01:30:25,779
+Şimdi bu volt bilgisi, analog bir bilgi, bizim bilgisayarımız, geçen dönemlerde anlattık
+
+487
+01:30:25,779 --> 01:30:28,019
+Hiçbir zaman analog bilgiyi doğrudan saklayamaz
+
+488
+01:30:28,019 --> 01:30:45,160
+Niye? Çünkü içerisinde sonsuzluk içeriyor. Bunu zaman düzleminde yani şöyle diyelim bu zaman düzleminde elde edilen bir bilgi çünkü sürekli sıcaklık ölçüyoruz. İşte şöyle bir şey gün içerisindeki değişim.
+
+489
+01:30:45,159 --> 01:30:59,019
+şu herhangi iki aralıkta şöyle işareti bu işareti alıp genlik değerlerini saklamamız gerekiyor.
+
+490
+01:30:59,019 --> 01:31:05,599
+Çünkü sonsuz tane değer alamam yani her anı kaydetmem mümkün değil. Burada çünkü bu verileri kaydedeceğiz.
+
+491
+01:31:06,659 --> 01:31:11,939
+İşte bu işlem arkadaşlar sampling dediğimiz bir operasyondur.
+
+492
+01:31:11,940 --> 01:31:18,400
+Analog to Digital Converter kendi içerisinde şu analog işareti önce Stampling yaparak
+
+493
+01:31:21,971 --> 01:31:40,812
+belli bir sayıda örneğe aktarıyor. Tamam mı? Şimdi bu bilgisayarın belleğinde saklanacak. Sampling yaparak ne yaptım? Bellekte kaç tane, kaç dizilik bir yer ayıracağımı buldum aslında. Dedim ki en tane yer ayır çünkü en tane örneğim gelecek. Yeterli mi bu işlem saklamak için?
+
+494
+01:31:46,387 --> 01:31:52,027
+Yani bir işareti aldım, belli bir kısmını kullandım, belli bir kısmını atacağım. Yeterli mi bu işlem?
+
+495
+01:31:54,507 --> 01:31:55,348
+Yetersiz hocam.
+
+496
+01:31:55,987 --> 01:31:56,827
+Ne için yetersiz?
+
+497
+01:31:57,907 --> 01:31:59,867
+Bir de oraya aktarmamız gerekiyor.
+
+498
+01:32:00,467 --> 01:32:07,728
+Tamam, onları kaydedebiliriz. Hani şu değerleri alacağız. Aktarmamız derken şuraya yazmaktan bahsediyorsun değil mi? Belli.
+
+499
+01:32:09,167 --> 01:32:09,728
+Evet.
+
+500
+01:32:09,728 --> 01:32:37,847
+Şimdi bu güzel bir şey. Şimdi bunu zaman ekseninde sonsuzluk gördük de hassasiyet dediğim sayı doğru. Zaman ekseninde belli bir şeyi kaybederek belli bir sayıya indirdik. Aynısını genlik dediğimiz daima bu eksen genliktir arkadaşlar. İşte sıcaklık diyelim. Aynısını bu işlemde de yapmamız gerekiyor. Yani her bir örneğimizin sayısal değeri işte şuradaki sayısal sıcaklık değeri bir sayısal karşıda.
+
+501
+01:32:37,847 --> 01:32:45,867
+işte 38.5 dedik belki burada 39.5 oldu burada başka bir şey oldu. Bu bilgileri de saklamamız gerekir. Şimdi bu da sonsuz tane bilgi içerir.
+
+502
+01:32:47,068 --> 01:32:55,227
+Çünkü iki nokta arasında iki aralık arasında bir ile iki arasında sonsuz tane sayısal değer var. O zaman diyorum ki ben bunları belli bir şeye yuvarlayayım.
+
+503
+01:32:55,227 --> 01:33:21,967
+bir şekilde kaydedeyim. Bu kaydı yaparken de ben bir belleğimde n tane yer ayıracağım. Belleğimin size önemli. Yani bu bellek kaç bitlik bir veri saklayabilir? Bu lazım. Eğer ben 8 bit deseydim bu sıcaklığın en alt değeriyle yani ölçtüğüm değerin en alt değeriyle en üst değeri arasında 2 üzeri n tane farklı parçaya bölecektim arkadaşlar.
+
+504
+01:33:21,967 --> 01:33:38,967
+Şimdi ben en küçük yeri 0 kabul ettim. Buradan buraya 2 üzeri 10 tane bölümleme yapıyorum ve şurada bulduğum yani gerçek değerle elde ettiğim bölümleme arasındaki fark en az hangisi ise onu 0 ve 1'ler şeklinde saklıyorum.
+
+505
+01:33:38,967 --> 01:34:07,027
+birazdan bunun örneği detaylı gelecek. Yani ben şöyle bir sıcaklık bilgisi alacağım. Altından üstünden bunların sıfır ve birler kodları var. İlk baştaki sıfır sıfır sıfır sıfır sıfır. En sonunda bir bir bir bir bir. Şimdi buradan buraya ne oluyor? Birer bit birer bit değişim gerçekleşiyor. Bu değişimi şurada üstteki mi olacak, alttaki mi olacak, hangisine yakın olacaksa ona yakın olacak şekilde yuvarlayarak ne yapıyorum? Buraya saklıyorum.
+
+506
+01:34:07,027 --> 01:34:14,887
+Peki bu yuvarlamanın miktarı az olursa gerçeğe o kadar yakın bir değer kaydetmiş olurum diyebilir miyim?
+
+507
+01:34:18,484 --> 01:34:23,623
+Evet hocam diyebilirim. Peki bunu demek için ne yapmam lazım? Bu miktarı azaltmak için?
+
+508
+01:34:25,964 --> 01:34:31,444
+Daha çok veri saklayabilmemiz lazım. Sıfırların sayısı, birilerin sayısının daha çok yani bit sayısının fazla olması lazım.
+
+509
+01:34:31,984 --> 01:34:39,443
+Daha çok veriden kastım şu 8 bitlerin yerine 16 bit daha fazla bit. Yani n sayısının fazla olması bu bir.
+
+510
+01:34:39,443 --> 01:35:01,563
+bir de orijinalliğe gitmek için şurada şimdi ben buradaki veriyi aldım bir de buradaki veriyi aldım arada belki şöyle bir sürpriz var onu kaçırdım. Şimdi bunu kaçırmamak için şu aradaki noktaların sayısını yani sampling miktarını da arttırırsam daha kaliteli bir ölçüm yapmış olacağım. Doğru mu? Bu söylediğime doğru diyebilir miyiz?
+
+511
+01:35:01,563 --> 01:35:02,363
+Evet hocam
+
+512
+01:35:02,363 --> 01:35:12,403
+Şimdi n sayısının artışı ve tabii buna n şöyle diyelim büyük n diyelim arkadaşlar
+
+513
+01:35:12,403 --> 01:35:23,183
+Büyük n'in artışı number of sampling'in artışı ve küçük n bit sayısının artışı bize daha kaliteli bir ölçüm yapmayı sağlıyor
+
+514
+01:35:23,183 --> 01:35:28,323
+Peki bu iki işlemi yaptık sampling yaptık ve bitlere ayırdık
+
+515
+01:35:28,323 --> 01:35:34,083
+bu bitlere ayırma işlemi de arkadaşlar genlikte yapılan sampling'e quantization diyoruz.
+
+516
+01:35:35,643 --> 01:35:41,823
+Aslında gerçek anlamda hani büyüklüğümüzün sonucunu saklamak kuantalama ile oluyor.
+
+517
+01:35:41,963 --> 01:35:44,123
+Niye? Çünkü ben bunu alacağım bilgisayara kaydeyeceğim.
+
+518
+01:35:44,223 --> 01:35:46,643
+Bilgisayara kaydetmek için ne lazım? Sıfır ve biriler lazım.
+
+519
+01:35:46,763 --> 01:35:48,443
+Sıfır ve birileri bulmam için ne yapmam lazım?
+
+520
+01:35:49,283 --> 01:35:54,123
+En alt noktayla en üst nokta arasında iki yüzleri en tane parçaya bölmem lazım.
+
+521
+01:35:54,123 --> 01:36:02,164
+ve en yakın değer hangisi ise ona atama yapmam lazım. Bu sampling ve quantization işlemlerinden sonra
+
+522
+01:36:02,164 --> 01:36:10,183
+sinyal storage yani bu şeyi saklayabilecek duruma getiriyoruz veya bir işte buffering dediğimiz bir işlem yapıyoruz.
+
+523
+01:36:10,183 --> 01:36:14,424
+Yani bu artık bilgisayarda saklanır. Bilgisayarda sakladığım şey artık nedir arkadaşlar?
+
+524
+01:36:15,103 --> 01:36:19,443
+C'de gördüğünüz int dizi n'den hiçbir farkı yoktur.
+
+525
+01:36:19,443 --> 01:36:49,424
+en elemanlı bir dizinin gösterimi neyse en elemanlı sıcaklık bilgisi burada saklamızdır. Şimdi mesela bir müzik düşünelim. CD kalitesinde bir müziği saklamak için saniyede 44 bin 100 tane örnek almak gerekiyor. Bir saniye. O zaman 60 dakikalık, şey 60 saniyelik yani bir dakikalık şey bir müzik bir ses bilgisi saklamak için CD kalitesinde 60 çarpı 40
+
+526
+01:36:49,443 --> 01:37:07,643
+dört bin yüz tanelik bir dizimiz olacak. Bu dizinin içerisindeki her bir elemanın bit sayısı ne kadar fazlaysa, şimdi ses kartlarınıza veya bilgisayarınızın hoparlörünün veya işte mikrofonunun ses ayarlarına bakın, orada bir çözünürlük bilgisi vardır.
+
+527
+01:37:07,643 --> 01:37:15,683
+Çünkü şu quantization çözünürlük seviyesiyle ölçülüyor. Çözünürlük dediğimiz resolution iki üzere n bilgisiyle bulunacaktır.
+
+528
+01:37:15,683 --> 01:37:25,704
+çözünürlük ne kadar fazlaysa genellikle 16 bit falan görürsünüz yani 2 üzeri 16 farklı seviye bilgisayarda saklanabilir oluyor
+
+529
+01:37:25,704 --> 01:37:32,743
+bit sayısını hesaplamak istersek ne yaparız 44100 tane örneğimiz var 60 saniye boyunca örnekledik
+
+530
+01:37:32,743 --> 01:37:45,363
+çarpı işte burada 16 bit varsa 2 üzeri 16 tane farklı durum olacaktır yani şöyle diyelim hatta doğrudan 16 bit kadar yer kaplayacak demektir
+
+531
+01:37:45,363 --> 01:38:10,043
+Bunu da byte'a çevirirseniz 8'e bölerseniz o kadarlık byte yer kaplar. Onu da 1024'e bölerseniz o kadarlık kilobyte yer kaplar. Onu da 1024'e bölerseniz o kadarlık megabyte yer kaplar. Bu hesapları biliyor olmanız lazım. Peki bu işlemde saklama yaptıktan sonra ne yapıyoruz arkadaşlar? Sinyali istediğim gibi işleyebiliriz. Ne demek sinyal işlemek? Yani şu dizinin en büyük elemanını bulabilirsiniz değil mi artık? Elinizde dizi varsa.
+
+532
+01:38:11,220 --> 01:38:37,279
+diziyi sıralayabilirsiniz. Eğer bu dizinin frekans karşılığını bulabiliyorsanız, o dizinin en büyük elemanından mesela en yüksek frekans bileşenini bulursunuz. Ortalama frekans bileşenini bulursunuz. Yani bu diziden bir de frekans bilgisi elde ederseniz, bu derste göreceğiz. Bakın bir sürü işlemle bir sürü bilgi ortaya koyuyoruz. Ve daha sonra gerektiğinde bunların display edilmesi ve başka işlemler yapılması sağlanıyor.
+
+533
+01:38:37,279 --> 01:38:54,679
+Bu işlemden sonra eğer biz dışarıya tekrar bir çıkış vereceksek, Transdücör'ün tam tersi iş yapan Actuator dediğimiz, yani eyleyici diyorlar buna Türkçe'de, bir harekete geçiren bir eleman lazım.
+
+534
+01:38:54,679 --> 01:39:22,900
+Yani o da ne yapıyor? Sayısal, diskret bir büyüklüğü analog bir şeye dönüştürüyor. İşte ne yapıyor? Bir yerin sıcaklığını kontrol eden bir kontrolör olursa orada bir hareket, bir aksiyon gerçekleşecek. Burada bir soru var mı? Bakın bilgisayara verinin alınması için böyle pat diye bir sıcaklığı şu gördüğümüz 38 dereceyi doğrudan alamıyormuşuz.
+
+535
+01:39:24,679 --> 01:39:41,520
+ölçüm yapacağız. Burada sensörler özel olarak kullanılıyor ama bunun genel adı transdüsürdür. Burada analog işlemler var. Analog işlemlerden sonra sayısal işlemler var. Ondan sonra gerekirse tekrar analog dünyaya geri dönüş yapabiliyoruz.
+
+536
+01:39:41,519 --> 01:39:48,119
+Transdüsür arkadaşlar herhangi bir enerji formunu diğer bir forma dönüştüren dönüştürücüdür arkadaşlar
+
+537
+01:39:48,119 --> 01:40:00,099
+Sinyal işlemi uygulamalarında bu enerji dönüşümü ne yapılıyor? Bilginin transferinde kullanılıyor
+
+538
+01:40:00,099 --> 01:40:02,319
+Yani enerjiyi bilgiye dönüştürüyoruz aslında
+
+539
+01:40:02,319 --> 01:40:06,699
+Transforma enerjiyi enerjiye dönüştürmüyoruz
+
+540
+01:40:06,699 --> 01:40:30,839
+Normalde transdüsürün görevi bir enerjiden yani bir büyüklükten bir başka büyüklüğe dönüştürmek. Gerçi bu tek yönlü pardon. Birinden birine mesela diğerinden diğerine. Mesela elektrik üretmek için ne yapılıyor? Barajlarda işte o suyun kinetik enerjisi bir çarkı döndürüyor, çark gidiyor başka bir şey yapıyor. Orada bir dönüşüm var. Aslında orada bir transdüsür var.
+
+541
+01:40:30,839 --> 01:40:41,660
+Ama bizim sinyal işlemedeki kullandığımız şey amaç enerjiyi alıp herhangi bir enerjiyi alıp bilgi üretmek ve o bilgi aslında ayrık bir veri olacak.
+
+542
+01:40:41,679 --> 01:40:42,139
+Siziniz gitti hocam.
+
+543
+01:40:43,019 --> 01:40:45,859
+Şu an nasıl? Duyuluyorum arkadaşlar?
+
+544
+01:40:47,679 --> 01:40:50,539
+Hayır gitmedi hocam. Anlık mı oldu acaba?
+
+545
+01:40:50,799 --> 01:40:53,979
+Tamam belki kişisel bazı da olabilir.
+
+546
+01:40:53,979 --> 01:41:07,859
+Bu fizyolojik ölçme sistemleri arkadaşlar, bu fizyolojik ölçme sistemlerinde transdüsürler ne olabilir?
+
+547
+01:41:07,859 --> 01:41:22,940
+Giriş transdüsürü olabilir, yani bir sensör. Yani sensörden kastımız şu, analog bir şeyi alıp giriş amaçlı yani bir input alacağız, bir büyüklüğe dönüştüreceğiz
+
+548
+01:41:22,940 --> 01:41:32,520
+ve bu büyüklük genellikle elektrik işareti olacak eğer sensörse. Non elektriksel bir enerjiyi elektriksel sinyale dönüştürmektir burada input transistörüne gireli.
+
+549
+01:41:32,520 --> 01:41:51,800
+Örneğin mikrofon. Mikrofonun yaptığı şey biraz önceki şurada buraya mikrofonu koyarsak transistör olarak mikrofonu koyarsak bu mikrofonun yapacağı şey ses akustik bilgiyi alıp bize duyacağımız veya saklayacağımız bir ses işaretine dönüştürmek.
+
+550
+01:41:51,800 --> 01:42:10,160
+ve bu ses işareti elektriksel olarak satılıyor. Sizin duyduğunuz kulağınıza, kulaklığınıza, hoparlörünüze gelen şey elektriksel işaretin actuator yoluyla analog işarete dönüştürülmüş hali. Peki burada bir kayıp olur mu? Kaç defa kayıp olur?
+
+551
+01:42:13,844 --> 01:42:23,844
+Ben size konuşuyorum. Benim sesim analog. Sizin kulağınıza gelen ses de analog. Burada kaç defa kayıp olur en az?
+
+552
+01:42:23,844 --> 01:42:25,844
+2
+
+553
+01:42:25,844 --> 01:42:29,844
+2. Niye 2?
+
+554
+01:42:31,412 --> 01:42:38,412
+Bir girerken alabildiği ses tonu var mikrofonun, bir de çıkarken kulaklığın verebildiği ses tonundan iki kere olmuyor.
+
+555
+01:42:38,412 --> 01:42:45,412
+Şimdi mikrofondan sesi kaydederken sampling ve quantization'dan kaynaklı bir hata var.
+
+556
+01:42:46,851 --> 01:42:50,571
+Öyle değil mi? Orada bir transdüsür iş yapıyor, yani bir sensördür mikrofon.
+
+557
+01:42:51,471 --> 01:42:58,891
+Sonra burada kaydedilen bu ses, yani bir belleğe kaydediliyor, ondan sonra size ulaşıyor benim sesim.
+
+558
+01:42:59,871 --> 01:43:01,271
+Arada işlemler falan yapılıyor.
+
+559
+01:43:01,412 --> 01:43:09,051
+sizin kulaklığınızda actuator yoluyla dönüştürülürken tekrar bir kayıp oluyor. Çünkü orada da arada interpolasyon yapılmak zorunda.
+
+560
+01:43:09,132 --> 01:43:18,111
+Interpolasyonu sayısal analizde gördük. Niye interpolasyon yapılacak? Çünkü bizim sample'larımız var. Artık şöyle bir ses datamız var olsun.
+
+561
+01:43:19,151 --> 01:43:28,871
+Bu örneklendi ve şu şekilde bir hale geldi. Tam çizemiyorum da. Şimdi bunu tekrar buna dönüştürmek bir kere tam mümkün değil.
+
+562
+01:43:28,871 --> 01:43:35,351
+niye arada şu kadar hatalı şeyimiz var, kayıplarımız var veya şurada kuantalama hatalarımız var.
+
+563
+01:43:36,831 --> 01:43:46,651
+İşte bu örneği kaydederken oluşan hata veya tekrar fiziksel büyüklüğe dönüştürürken oluşan hata ki buradaki oluşan hata da aslında interpolasyondan kaynaklı bir hata.
+
+564
+01:43:46,751 --> 01:43:50,931
+Çünkü şuradan şuraya veya buraya bir interpolasyon gerçekleşecek.
+
+565
+01:43:51,651 --> 01:43:54,111
+Sayısal analizde gördüğünüz yöntemleri düşünün.
+
+566
+01:43:54,111 --> 01:44:11,191
+o hata arkadaşlar, interpolasyon hatası sizin kulağınıza yansıyacak bir şekilde. Eğer bunu çok hissediyorsanız ya çok kötü bir sampling yapılmıştır ya çok kötü bir quantization yapılmıştır ya da çok kötü bir interpolasyon yapılmıştır.
+
+567
+01:44:11,191 --> 01:44:27,431
+Yani transducer'ın yaptığı işte bir sıkıntı olabilir sampling ve quantization manasında. Aynı şekilde mikrofonun veya actuator dediğimiz daha genel kavramla elemanların bir hatası olmuş olabilir.
+
+568
+01:44:27,431 --> 01:44:43,772
+Evet, output transdücüre de actuator diyoruz. Yani transdücür genel bir kavram. Burada da şey kullandık, actuator'ı özel olarak kullandık. Burada da herhangi bir elektrik sinyali non-electrical olan büyüklüğe dönüştürücü örneğin speaker.
+
+569
+01:44:45,231 --> 01:44:53,151
+Şimdi burada sinyal dediğimiz şey analog ve dijital olarak genel anlamda ikiye ayrılıyor arkadaşlar. Analog sinyal
+
+570
+01:44:53,151 --> 01:45:07,191
+sonsuz hassasiyette değerler içeren continuous variable'dır. Continuous variable deyince aklımıza hani T değişkeni gelsin arkadaşlar.
+
+571
+01:45:07,191 --> 01:45:16,151
+Yani zamanın bütün anlarında en küçük parçasında dahi bilgi içeren bir işarettir. Ve bu neye dönüştürülüyor?
+
+572
+01:45:16,151 --> 01:45:25,671
+bilgisayarda işlenmek için sayısal hale yani diskret hale dönüşüyor ve bu diskret hal dediğim şey de bir dizi yani başka bir şey değil.
+
+573
+01:45:25,671 --> 01:45:46,131
+Tabii burada ne var? Bir kayıp var. Ne kayıbıdır? İşte bu ölçmeden kaynaklı bir kayıp, zamanlamadaki belirsizlikten bir kayıp, bu ölçme işleminin süresince ortaya konan kısıtlardan kaynaklı kayıp.
+
+574
+01:45:46,151 --> 01:46:07,211
+ne demek bu kısıtlar? Örnek olarak ses kartınızın çözünürlüğü, ekran kartınızın çözünürlüğü. Şimdi fotoğraf çekiyorsunuz falanca markanın fotoğraf makinesi daha iyi diyorlar. Çünkü bakın fotoğraf makinesinde de ne var? Bir ölçme var ve bu ölçmenin sonucunda bir fotoğraf iki boyutlu bir sinyal elde ediyorsunuz.
+
+575
+01:46:07,211 --> 01:46:26,931
+Bunu yaparken burada kayıp nedir? O kullandığınız cihazın çözünürlüğü olur, ne bileyim yanlış tutarsınız, hareket edersiniz bir sürü kaynak olur. Bazı limitlerdir ölçmedeki. Bu efektleri arkadaşlar quantization error diyoruz. Bu önemli bir kavram. Ne demek quantization error?
+
+576
+01:46:27,412 --> 01:46:35,412
+şu süreç içerisinde, biraz önceki Blockchama içerisinde yapmış olduğumuz işlemlerde ortaya çıkan hataların hepsi Quantization Error oluyor.
+
+577
+01:46:35,412 --> 01:46:41,792
+Ve biz analog sinyalden dijital sinyale geçiş yapıyoruz.
+
+578
+01:46:42,231 --> 01:46:47,871
+Şimdi aslında yapılan şey şu, önce bizim sürekli bir sinyalimiz var. Bunu açıklayacağım, ondan sonra ara vereceğim.
+
+579
+01:46:47,871 --> 01:46:59,171
+bunu bir clock sinyaliyle yani biraz önce örnekleme olarak söylemiştik belli aralıklarla örnekleyecek şekilde bunu çarpıyoruz.
+
+580
+01:46:59,851 --> 01:47:04,511
+Şimdi bunu çarptığımızda şu şekilde merdiven şeklinde bir dalga ortaya çıkıyor.
+
+581
+01:47:05,031 --> 01:47:11,991
+Aslında tam bir çarpma değil konvolüsyon. Daha sonra bunun düşen kenarlarını şöyle alıp yani bu bir örnekleme işlemidir.
+
+582
+01:47:11,991 --> 01:47:20,731
+demek ki şu aralık bize örnekleme sıklığını verecek ve biz buna örnekleme frekansı fs diyeceğiz ileride göreceğiz.
+
+583
+01:47:21,771 --> 01:47:27,291
+Bu sinyal elde edildikten sonra zaman düzleminde ne yapıyoruz arkadaşlar?
+
+584
+01:47:27,431 --> 01:47:30,111
+Belli kaç tane eleman saklayacağımız elde edilmiş oluyor.
+
+585
+01:47:30,111 --> 01:47:52,031
+Bu işlem yapılmasaydı ne olurdu? Bu ölçme sırasında değişiyor olabilirdi. Sürekli değişken halde yanlış veriler kaydedebilirdik. Bir de bu arada sonsuz tane örnek almamız mümkün değil.
+
+586
+01:47:52,031 --> 01:48:08,611
+ancak şeyin sonrasında yani bu ölçme işleminin sonrasında bir örnek alma işleminin sonrasında biz sinyalimizi saklayabiliyoruz dijital olarak dönüştürüp saklayabiliyoruz.
+
+587
+01:48:08,831 --> 01:48:15,751
+Yani bir tane örnek alacağız bu örnek alma işlemi şurada bu aldığımız örneğin daha sonra sıfır ve birler karşılığını bulacağız.
+
+588
+01:48:15,751 --> 01:48:45,731
+Bu işlemin sonucunda yani bu işlemlerin detaylı haline buna sampling diyoruz arkadaşlar yani sampling şu işi yapmak burada bir tane şey almak buradan bir tane örnek almak buradan bir tane almak şu şekilde gerçekleşiyor yani bir gerçekliği şeyimiz var bir clock sinyaliyle bunu işleme tabi tutuyoruz bu tabi tuttuğumuz şeyin her bir işte yükselen kenarını veya düşen kenarını işte sıfır noktasına kadar çektiğimizde işte şu şeyler elde ediliyor bakın şu değerler elde ediliyor ve bu değerler sonrası işte bunun sıfır noktası
+
+589
+01:48:45,731 --> 01:49:15,371
+mesela şöyledir. Burada pozitif şeyler var, burada negatif şeyler var. Bu işlemi sampling dedik. Ama hala şuradaki sayısal değeri bulamadık. Bu continuous sinyalden, analog sinyale dönüşümü şunu da söyleyelim. Önce bu sinyalimiz vardı. Dedik ki hangi noktalarda örnek alacağımızı tespit ettik. Bazı yerlerde bunun dışına çıktık, bazı yerlerde bunun altına geldik.
+
+590
+01:49:15,731 --> 01:49:21,871
+ve bu işlem sonrasında biz diskret sinyali 0 ve 1'lerle kodlayacak hale geliyoruz.
+
+591
+01:49:21,971 --> 01:49:26,991
+Mesela bu XT veya XN diye gösterilebilecek. Birazdan anlatacağız.
+
+592
+01:49:28,291 --> 01:49:34,351
+Bizim T düzleminde kontinüüs zamanda T ile gösterilen ve yuvarlak parantezle gösterilen işaretimiz
+
+593
+01:49:34,351 --> 01:49:41,831
+ayrık düzlemde köşeli parantezlerle ve N olarak sembolize edilen işarete dönüştürülmüş olacak.
+
+594
+01:49:41,831 --> 01:49:51,111
+detaylarını 51 geçiyor saat 18.01'de veya 18.02'de geldiğimizde anlatacağız. Görüşmek üzere.
+
+595
+01:59:33,811 --> 01:59:35,811
+Evet arkadaşlar
+
+596
+01:59:45,268 --> 02:00:04,547
+Şimdi, size herhangi bir şey, şu şekilde bir şey sorsam, sayısal bir işaret nasıl gösterilir desem, hangi taraftakini, soldakini mi, sağdakini mi bana göre ve size göre hangisini göstermemiz lazım?
+
+597
+02:00:06,688 --> 02:00:07,807
+Sağdaki hocam.
+
+598
+02:00:07,807 --> 02:00:12,487
+Evet, yani N ile gösterilen şey sayısal işarettir.
+
+599
+02:00:12,487 --> 02:00:20,948
+discrete, digital dediğimiz işaretler N ile gösterilir ve köşeli parantezde.
+
+600
+02:00:22,347 --> 02:00:30,047
+Sürekli işaret, analog işaret diye söyleyeceksek de bu da T ile ve yuvarlak parantezde gösterilir.
+
+601
+02:00:30,787 --> 02:00:37,367
+Bakın buradaki işlemde şu sürekli işaretimiz 10 saniye boyunca kaydedilmiş.
+
+602
+02:00:37,367 --> 02:00:42,587
+Bakın bu çizimin kendisi işaretinin kendisi değildir.
+
+603
+02:00:43,487 --> 02:00:44,268
+Tamam mı?
+
+604
+02:00:45,087 --> 02:00:58,307
+Çünkü çizimde bu gördüğünüz şey araya interpolasyon yapılarak belli bir aralığı, yine burada sampling var, kontinüüsü betimleyen, gösteren bir grafiktir bu.
+
+605
+02:00:58,307 --> 02:01:00,247
+İşaretin kendisi kesinlikle değil.
+
+606
+02:01:00,427 --> 02:01:03,708
+Yani bu bir ses işareti ise orijinal işaret değil.
+
+607
+02:01:04,507 --> 02:01:04,967
+Görüntü.
+
+608
+02:01:04,967 --> 02:01:12,167
+ve herhangi iki nokta arasında bir kopukluk yok. Biraz sonra şurada bakacağız bir kopukluk göreceğiz.
+
+609
+02:01:13,947 --> 02:01:26,927
+Bu sürekli işaretin tamam sıfırdan ona kadar kaydedildi. Bu görüntüsünde zaman ekseninde yapılan sampling işleminde şunu elde ediyoruz.
+
+610
+02:01:26,927 --> 02:01:40,387
+hangi örnek, hangi noktalardan örnek alacağız? Demiş ki burada sıfırdan bir örnek alayım, bir ne oldu saniyeden, birinci saniyeden örnek alayım, ikiden örnek alayım, üçten alayım, dörtten alayım.
+
+611
+02:01:40,768 --> 02:01:49,447
+Şimdi bu aldığımız örnekler sonrasında genlik ekseninde de diyoruz ki yine örnekleme yapacağız yani quantization yapacağız.
+
+612
+02:01:50,087 --> 02:01:55,988
+Zaman eksenini böldük, genlik eksenini de biliyoruz. Genlik eksenini böldüğümüzde işte şuradan böldük, 2, 3, 4, 5 falan.
+
+613
+02:01:55,988 --> 02:02:15,607
+Peki sonra kim hangi değere gelecek? Şimdi burada aldığımız örneğin değeri sıfıra gelir. 1'de aldığımız örneğin değeri şurada olmasına rağmen en yakın ya burası olacaktır ya da şurası olacaktır. Şimdi burası daha yakın olduğu için bunu alıyoruz.
+
+614
+02:02:15,607 --> 02:02:32,387
+2'de aldığımız örneğin kendi değeri burası, normal değeri. Şurası daha yakın olduğu için burada buraya almış. Daha sonra 3'de burası, 4'de. Bütün örnek aldığımız noktalarda en yakın noktaya temas eden quantization seviyesini tespit ediyoruz.
+
+615
+02:02:32,507 --> 02:02:45,087
+Bu tespit ettikten sonra arkadaşlar ayrık işaretimiz n'e bağlı. Tabi burada yuvarlak parantezi göstermiş ama şöyle göstermesi gerekir. Bir işaret oluyor ve bu işareti şu şekilde merdiven şeklinde gösterirler.
+
+616
+02:02:45,087 --> 02:03:13,768
+buradan sıfır olarak gelecek, şurada bir anda ikiye gidecek, yani ikiyi görüyoruz, ondan sonra buradan şey üçe gidecek, sonra işte şuraya gelecek, sonra buraya gelecek, artış, azalış var, buradan buraya gelecek, sonra şöyle olacak, sonra şu olacak, ondan sonra bunu olacak, ondan sonra şu olacak.
+
+617
+02:03:13,768 --> 02:03:21,307
+bunu bir de burada ölçeklemişler yani 0,2,4,6 şeklinde şuradaki görüntü ortaya çıkıyor.
+
+618
+02:03:22,447 --> 02:03:24,008
+Tamam mı? İki tane önemli aşama.
+
+619
+02:03:26,387 --> 02:03:33,148
+Analog digital conversion için belki devre teorisini anlattılar. Analog to digital converter'lar kullanırlar.
+
+620
+02:03:34,827 --> 02:03:40,187
+Yani ne yapıyor? Analog bir işareti sayısal dijital bir işarete dönüştürüyor.
+
+621
+02:03:40,187 --> 02:03:43,788
+ve burada temel olarak 4 tane adım. Birincisi filtreleme.
+
+622
+02:03:44,404 --> 02:04:07,783
+Filtreleme nedir? Bir sesi veya bir büyüklüğü kaydetmeye başladığınızda, yani bir transdüüsür veya bir sensörle almaya başladığınızda, o sesle beraber başka şeyler de alabilirsiniz. Ne bileyim, ortamın gürültüsü. Şu an mesela benim bilgisayarın bayağı bir gürültüsü çıkıyor. Belki size de geliyordur. Geliyor mu? Arkada bir fan sesi.
+
+623
+02:04:07,783 --> 02:04:34,223
+gelmiyor mu? Bizim mikrofon o zaman iyi filtreleme yapıyor demek ki. Veya sizin kulaklık filtreleme yapıyor. İşte bakın orada analogdan dijitale dönüşürken alınan ses bir filtrelemeyle asıl olan büyüklüğe odaklanıp diğer yan girişimler, interferasyon diyoruz, yok ediliyor filtrelemeyle.
+
+624
+02:04:34,223 --> 02:04:53,423
+Sonra sampling aşamasına geçiyoruz. Çünkü o şöyle bir işaret belki. Şöyle bir şey. Yanında şöyle ufak tefek şeyler var. İşte bu sampling ile o yanındaki şeyler düzeltilip şu hale geliyor. Ondan sonra burada işte belli aralıklarla samplılar alıyoruz.
+
+625
+02:04:53,423 --> 02:05:21,523
+ondan sonra sampling işlettiğinden sonra quantization yapıyoruz. Sonra her bir quantization seviyesine göre encoding yapıyoruz. Mesela n tane seviyeden n-bit'ten 2 üzeri n tane seviye oluştuk. Bu 0, 0, 0, 0'dan kaç tane şey varsa 1, 1, 1, 1, 1'e kadar gelecektir. Şu seviyelerin her birisi işte bu 0 ve 1 dizilerin her birisi bir seviyeye karşılık gelecektir ki kodlanıyor.
+
+626
+02:05:21,523 --> 02:05:32,683
+sample yapmanın öncesinde filtreleme yapmak zorundayız. Tabii bunun başka kullanım amaçları da var. Sadece gürültüyü yok etmek için değil.
+
+627
+02:05:34,803 --> 02:05:50,223
+Maksimum frekansı, işaretin içindeki maksimum frekansı limitlemek, sınırlamak için. Bu maksimum frekans neyi etkiliyor arkadaşlar? Örnekleme frekansını, örnekleme oranını etkileyen bir şey.
+
+628
+02:05:50,223 --> 02:06:11,363
+Yani ben gelişi güzel, çok fazla örnekleme yapayım diyerek aslında çok kaliteli bir veri kaydetme düşüncesine sahip olabilirim ama bu gereksiz. Diyor ki sen işaretin içindeki maksimum frekansa göre örnekleme yaparsan gereksiz örneklemenin önüne geçersin.
+
+629
+02:06:11,363 --> 02:06:33,523
+işte mesela burada filtreleme kullanılıyor. Filtrelemeyi kullanırken aslında biz gürültüyü tespit ettik. Filtre, öyle bir filtre tasarlayacağız ki herhangi bir işaretin içindeki en yüksek, en büyük frekans nedir? Onu bulacağız. Ondan sonra örnekleme yapmak daha mantıklı bir şey. Gereksiz örneklemenin önüne geçiyoruz.
+
+630
+02:06:33,523 --> 02:07:01,323
+Bu bize neyi garanti etmeli? Ayrıca bir sinyalin bozulmasını, ekstra bir girişimleri engellemeyi sağlamalı. Yani yüksek frekans birleşenlerini yok etmeyi sağlamalı. Şimdi sinyalin kendisinde en yüksek frekans birleşeni var. Bir de gürültülerin frekans birleşenleri var. Eğer onları yok edersek sinyali temiz bir şekilde kaydediyoruz. Bir de gereksiz örneklemenin önüne geçiyoruz.
+
+631
+02:07:01,323 --> 02:07:09,723
+Şimdi sinyal frekans gösterimi şu şekilde bakın yatay düzlem F oluyor orada time değil artık
+
+632
+02:07:09,723 --> 02:07:16,543
+Şimdi frekansta düşük frekans bileşenleri her zaman bizim için daha çok kullanılan bileşenler
+
+633
+02:07:16,543 --> 02:07:23,764
+Yüksek frekans bileşenleri bir yerden sonra kesilir işte şuraya kadar olan şey bunlar sonrası atılır yok edilir
+
+634
+02:07:23,764 --> 02:07:36,764
+ve bunlar genellikle gürültüyle alakalıdır. Çünkü bir şeyin, bir büyüklüğün içerisinde asıl olan şey onu en çok tasvir eden, onu en çok etkileyen faktörlerdir.
+
+635
+02:07:36,764 --> 02:07:40,124
+işte bir ses ise sesin kendi faktörleri vardır ve onlar
+
+636
+02:07:40,467 --> 02:07:52,467
+daha çok belli bir seviyeye kadarki frekans bileşenleridir. Belli bir seviyeden sonraki frekans bileşenleri, o büyüklükle alakalı ya çok az alakalı detaylardır ya da alakasız gürültülerdir.
+
+637
+02:07:52,928 --> 02:08:01,388
+Biz alakalı olan kısmı almamız yeterli. Evet, şurada farklı bir şema var. Bakın analog sinyalimiz.
+
+638
+02:08:02,767 --> 02:08:07,728
+Sampling yapılıyor. Sampling yapıldıktan sonra neyi buluyoruz? Şu hale alıyoruz.
+
+639
+02:08:07,728 --> 02:08:19,988
+Quantization yaparak bakın burada sadece zaman eksenini yaptık. Burada genlik ekseninde quantization yaparak işte kimin hangi şeye bulacağını bulduk. Enkoding yaparak da bir dijital data elde ediyoruz.
+
+640
+02:08:23,604 --> 02:08:30,963
+Bu sampling neyle sonuçlanır arkadaşlar? Ayrık set of digital numbers yani bir diziyle sonuçlanıyor.
+
+641
+02:08:31,963 --> 02:08:38,383
+Bu dizide neyi gösteriyor? Bizim analog sinyalimizin sayısal değerlerini tutan bir dizi olarak geliyor.
+
+642
+02:08:39,383 --> 02:08:48,243
+Ve bu eşit zaman aralıklarıyla alınan bir şeydir genellikle. Ne demek? Yani böyle bir sinyal var.
+
+643
+02:08:48,243 --> 02:08:54,983
+eşit zaman aralıklarıyla yani şu iki aralık arasındaki zaman aralığı eşit olacak şekilde bir örnekleme yapılır.
+
+644
+02:08:54,983 --> 02:08:58,624
+Ama bunun farklı logaritmik zaman aralıklarıyla yapılanları da var.
+
+645
+02:09:01,083 --> 02:09:09,383
+Bu sampling işlemi şu işlemden yani bu hold'dan sonra gerçekleşiyor.
+
+646
+02:09:09,464 --> 02:09:14,104
+Bu hold'u bir devre ile şey yapmış.
+
+647
+02:09:14,943 --> 02:09:17,703
+Yani bir devre var sampling yapan devre.
+
+648
+02:09:18,243 --> 02:09:41,604
+yeterince hızlı olmalıdır. Çünkü kaydettiğimiz veri sürekli değişiyor. Yani benim sesim zaman içerisinde değişiyor konuşurken. O değişime göre veriyi kaybetmeyecek şekilde bir hızda sampling yapan bir elemana ihtiyacım var. Yani o mikrofonun devresi bu işi çok temiz ve hızlı bir şekilde yapması lazım.
+
+649
+02:09:41,604 --> 02:09:57,803
+Çünkü bir acquisition dediğimiz veri toplama işlemi yapıyoruz. Şu, acquisition. Data acquisition mesela, data mining'de çok kullanılan bir kavram.
+
+650
+02:09:57,803 --> 02:10:13,104
+bu işlemden sonra yani bunun çok hızlı olmasına gerekli ve bu sampling ile beraber biz neyi ölçmediğimizi bilemiyoruz.
+
+651
+02:10:13,104 --> 02:10:23,383
+Yani burada ölçtüğümüz şey artık ses mi ne bileyim sıcaklık mı başka ne olduğu önemli değil sadece ayrık dataları elde etmek için bir örneklemi yapıyoruz.
+
+652
+02:10:23,383 --> 02:10:38,003
+Aynı zamanda tabi burada ne oluyor? İşte şu örnek aralıklarından kaynaklı olarak bir kayıp oluyor. Şimdi bu kaybın geriye döndürülebilir bir miktarda olması için bir oran var. Bunu sampling konusunda bahsedeceğiz.
+
+653
+02:10:39,083 --> 02:10:49,704
+İşaret şöyle bir işaret. Ben bunun frekans bileşenlerine baktım. F1, F2, Fn kadar n tane frekans bileşeni olsun bu işaret. Bunları bir yerden elde ettik.
+
+654
+02:10:49,703 --> 02:10:57,743
+Sonra yapacağım şey buradan maksimum F1, F2 en yüksek frekans bileşenini buluyorum
+
+655
+02:10:57,743 --> 02:11:06,103
+Ondan sonra örnekleme yaparken Fs must be greater than two times Fs
+
+656
+02:11:06,104 --> 02:11:23,604
+şu pardon Fmax şuradan gelecek maksimum frekans bileşeninin en az iki katından daha büyük olacak bir semplik oranı bilmem ne şey yapmam gerekiyor.
+
+657
+02:11:23,604 --> 02:11:33,924
+Yani burada 1000 Hz'lik bir işaret varsa şunlar içerisinde en yüksek 1000 Hz ise benim en az 2000 tane örnek almam lazım ki
+
+658
+02:11:33,923 --> 02:11:46,223
+yani 2000 elemanlık bir diziye ihtiyacım lazım, ihtiyacım var ki bu sayede geriye döndürülmesi mümkün bir işaret kaydı yapabileyim.
+
+659
+02:11:46,443 --> 02:11:52,863
+Niye iki kat? Buna daha sonra sampling kısmında da değineceğiz arkadaşlar. Bunun bir ispatı var.
+
+660
+02:11:53,943 --> 02:12:01,543
+İki kata kadar geriye döndürülmesinde sorunlar yaşayan bir örneklemi oluyor. İki kat ve sonrasında bu geriye döndürmede sıkıntı yaşamıyoruz.
+
+661
+02:12:03,923 --> 02:12:16,923
+Şimdi bir sinyalin örneklenmesinde örnekleme aralığı dedik. Şu iki aralığa TS diyoruz arkadaşlar. Her TS aralığında
+
+662
+02:12:17,524 --> 02:12:24,583
+örnekleme yapacaksak ama biz biraz önce dedik ki örnekleme frekansına göre örnekleme yapacağız. Bu TS'i nasıl buluruz?
+
+663
+02:12:27,404 --> 02:12:33,243
+Yani bize FS verildi. FS'i biliyoruz. FS'ten TS'e geçmem lazım. Nasıl bulacağız?
+
+664
+02:12:40,275 --> 02:12:42,275
+Evet
+
+665
+02:12:46,836 --> 02:12:48,295
+Bir daha sorabilir misiniz?
+
+666
+02:12:48,535 --> 02:13:00,275
+Şimdi bize TS, yani şu zaman aralıklarını bulmamız lazım değil mi? Çünkü ben FS'i biliyorum, tamam iki katı kadar örnekleyeceğim dedim ama örneklemeyi yaparken zaman düzlemi üzerinde örnekleme yapacağız burada.
+
+667
+02:13:00,915 --> 02:13:05,195
+O zaman bize zaman düzlemi lazım, yani FS'ten zaman düzlemine tekrar geçmek gerekiyor.
+
+668
+02:13:06,495 --> 02:13:08,135
+Bu TS'i nasıl hesaplarız?
+
+669
+02:13:10,055 --> 02:13:15,596
+Kayra yazmış, bir bölü FS. Şimdi arkadaşlar, şu işareti FS tane.
+
+670
+02:13:16,836 --> 02:13:44,876
+aralığa böleceksem yani burada Efes tane şey çıkacaksa T-S'i bulmak için ne yapacağız? Bunu T-S eşittir. Bir bölü Efes dersek Efes'lerin zaman aralığını ne yapmış oluruz? Yani pardon her bir şey zaman aralığını hesaplamış oluruz. Burada çünkü Efes tane çizgi olacak. Çizgilerin her birinin aralığını eşit kabul ettik. Burada da işte T-S'e karşılıklı oluyor. Bu bir bölü Efes.
+
+671
+02:13:44,875 --> 02:13:48,295
+buna örnekleme nesi diyoruz?
+
+672
+02:13:49,435 --> 02:13:53,075
+Periyodu diyoruz veya örnekleme aralığı diyoruz.
+
+673
+02:13:53,135 --> 02:13:53,995
+Sampling interval.
+
+674
+02:13:54,895 --> 02:13:57,575
+T, S'deki S'nin manası ne?
+
+675
+02:13:57,775 --> 02:13:58,395
+T sampling.
+
+676
+02:14:00,475 --> 02:14:08,435
+Bu eğer hani açısal hızda T ile F'in çarpımı 1'dir oradan bu formülü çok kullanacağız arkadaşlar.
+
+677
+02:14:09,875 --> 02:14:13,435
+T, S çarpı F'sin 1'e karşılık geldiğini buradan zaten görebiliriz.
+
+678
+02:14:13,435 --> 02:14:35,355
+görebiliriz. Bu Fs'de örnekleme frekansı dediğimiz F-sampling bize şeyi gösteriyor. Burada temel olarak üç tane sampling metot var. Her biri ideal sampling dediğimiz bir impuls sinyali, her bir sample anında bir impuls sinyali gönderiyoruz.
+
+679
+02:14:35,355 --> 02:14:59,955
+Yani şöyle impuls sinyalleri, bunlara impuls diyeceğiz. Doğal sinyalle, doğal şey var. Bu ideal olanı şu arkadaşlar. Dip dibe dip dibe yani sıfır olacak şekilde her anda bir tane impuls sinyali göndermek. Yani bir sürü çizgi çekmek öyle söyleyeyim.
+
+680
+02:14:59,955 --> 02:15:09,675
+Doğal olanı belli aralıklarla bu aralığı sıfır değil de daha geniş aralıklar tutarak ama bu da makul bir aralık olan bir şeydir
+
+681
+02:15:09,675 --> 02:15:11,995
+Bir de flat up dediğimiz
+
+682
+02:15:11,995 --> 02:15:22,035
+Şimdi bu tek bir genlik değerinde bir yerde çok kullanılmıyor bu tabi burada doğrudan derinlerine girmeyeceğiz
+
+683
+02:15:22,035 --> 02:15:25,735
+Sample yapıyoruz o değeri tutuyoruz
+
+684
+02:15:25,735 --> 02:15:29,595
+Yani oradaki quantization değerini doğrudan alıp kaydediyoruz
+
+685
+02:15:29,595 --> 02:15:44,935
+Fakat bu birden fazla değere karşılık gelebilir. Yani bu single amplitude value şeydi değildir. Yani bu şeyin naturele benzemiyor. İleriye yönelik bir şey değil. Yani o anlık al kaydet, al kaydet şeklinde.
+
+686
+02:15:44,935 --> 02:16:09,675
+Bu işlem arkadaşlar şu hani şurada bir şey seçip buradaki yükseklik değerini bulmak Pulse Amplitude Modulation dediğimiz PAM diye geçiyor bu sonuç nedir arkadaşlar analog değerlerden oluşuyor yani yine burada analoglar var çünkü daha şeye gelmedik zaman ekseninde örnekleme yapıyoruz
+
+687
+02:16:09,675 --> 02:16:17,355
+Bakın bu ideal sampling dediğimiz aslında şu TS'in çok küçük olduğu bir şey
+
+688
+02:16:17,355 --> 02:16:24,395
+Natural sampling dediğimiz aralığın sadece burada puls sinyallerini aldık bıraktık
+
+689
+02:16:24,395 --> 02:16:30,795
+ve aslında bundan bir sürü yapılabilir. Burada daha örnek göstermek için belli bir aralık varmış
+
+690
+02:16:30,795 --> 02:16:39,595
+Natural sampling de buradan bir değer alıp bir sonraki örneğe kadar arayı interpole ediyoruz
+
+691
+02:16:39,595 --> 02:16:40,835
+arayı dolduruyoruz.
+
+692
+02:16:41,975 --> 02:16:42,795
+Flat topta da
+
+693
+02:16:43,891 --> 02:16:57,391
+Şu anki örnekleme durumundan bir sonraki duruma kadar bir impals dediğimiz, bunun gibi değil de yani kare bir dalga şeklinde bir örnek alıyoruz.
+
+694
+02:16:58,211 --> 02:17:02,351
+Bunların detaylarına biz bu derste girmiyoruz çünkü bu daha çok sinyal işlemenin konuları.
+
+695
+02:17:03,171 --> 02:17:10,691
+Peki biz bir orandan bahsetmiştik. Bu oranı Nyquist Rate diyeceğiz, örneklemede göreceğiz.
+
+696
+02:17:10,691 --> 02:17:19,412
+Ben bir işaretimi şu şekilde örneklersem yani şuradan bir örnek alacağım, buradan bir örnek alacağım, buradan bir örnek alacağım, buradan alacağım, buradan alacağım.
+
+697
+02:17:20,151 --> 02:17:21,291
+Ve işaret şuna gelir.
+
+698
+02:17:22,351 --> 02:17:28,971
+Şimdi ben bunu geri oluşturmak istersem işte şuradan şuraya şöyle bir şey, buradan buraya böyle bir şey, buradan buraya böyle bir şey.
+
+699
+02:17:29,072 --> 02:17:31,391
+Yani kayıp çok aza yakın oluyor.
+
+700
+02:17:32,211 --> 02:17:35,711
+Yani hemen hemen bayağı iyi bir örnekleme yapmış oluyoruz.
+
+701
+02:17:36,231 --> 02:17:38,891
+Peki bunu 4F ile yani daha sık şey yapalım.
+
+702
+02:17:38,891 --> 02:17:40,991
+Şimdi bunun frekansı nedir arkadaşlar?
+
+703
+02:17:41,132 --> 02:17:46,252
+Bu suyuzoydu arzalıkla şöyle kendisini şu kadar zamanda şey yapıyor.
+
+704
+02:17:46,912 --> 02:17:50,932
+Yani ben bunun frekansına f dersem onun için burada iki f ile şey yapmış.
+
+705
+02:17:52,192 --> 02:17:52,871
+Örneklemi yaptı.
+
+706
+02:17:52,911 --> 02:17:58,491
+Yani şuraya gelene kadar bir, iki, üç, pardon bir, iki, üç, dört, şu yok.
+
+707
+02:17:59,231 --> 02:18:00,792
+Dört defa örnek almış bakın.
+
+708
+02:18:01,192 --> 02:18:02,052
+Dört tane nokta var.
+
+709
+02:18:02,911 --> 02:18:06,411
+Şimdi burada diyoruz ki işaret yine f'lik.
+
+710
+02:18:06,411 --> 02:18:08,331
+Çünkü kendisini her bir periyotta
+
+711
+02:18:08,331 --> 02:18:10,291
+f kadar periyotta tekrar ediyor.
+
+712
+02:18:11,131 --> 02:18:11,971
+Şu kadar periyotta.
+
+713
+02:18:13,211 --> 02:18:14,511
+Bu frekansın
+
+714
+02:18:14,511 --> 02:18:15,991
+dört katı kadar. Bir,
+
+715
+02:18:16,451 --> 02:18:18,231
+iki, üç, dört,
+
+716
+02:18:18,491 --> 02:18:20,731
+beş. Gerçi şurada beş tane oldu da
+
+717
+02:18:20,731 --> 02:18:21,431
+hani dört tane.
+
+718
+02:18:22,051 --> 02:18:24,011
+Yukarıda hocam ikiydi aşağıda dört.
+
+719
+02:18:24,471 --> 02:18:25,611
+Yanlış olmasın da.
+
+720
+02:18:26,211 --> 02:18:28,031
+Yukarıda iki örnek aldık yukarıda.
+
+721
+02:18:28,591 --> 02:18:29,191
+Dört örnek değil.
+
+722
+02:18:30,071 --> 02:18:31,971
+Pardon bir dakika şu arada şey yok. Doğru düz.
+
+723
+02:18:34,971 --> 02:18:36,311
+Şurada bir değer.
+
+724
+02:18:36,411 --> 02:18:38,971
+şuraya gelene kadar
+
+725
+02:18:38,971 --> 02:18:39,371
+bakın
+
+726
+02:18:39,371 --> 02:18:41,631
+2 F
+
+727
+02:18:41,631 --> 02:18:45,011
+evet 2 tane örnek alıyoruz
+
+728
+02:18:45,011 --> 02:18:45,291
+doğru
+
+729
+02:18:45,291 --> 02:18:48,571
+şuraya gelene kadar böyle bir
+
+730
+02:18:48,571 --> 02:18:50,711
+durum var yani şu F'e gelene kadar
+
+731
+02:18:50,711 --> 02:18:52,871
+bir buradan aldık bir buradan aldık işte şuraya gelene kadar
+
+732
+02:18:52,871 --> 02:18:53,612
+bir buradan bir buradan
+
+733
+02:18:53,612 --> 02:18:56,411
+sonucu şu şekilde oldu yani arayı
+
+734
+02:18:56,411 --> 02:18:58,791
+birleştirirsek yine sinizoidal'e yakın
+
+735
+02:18:58,791 --> 02:19:00,071
+bir şey alma durumumuz var
+
+736
+02:19:00,071 --> 02:19:02,791
+şimdi burada biraz daha arttırdık 4 yaptık
+
+737
+02:19:02,791 --> 02:19:04,612
+1 2 3 4
+
+738
+02:19:04,612 --> 02:19:06,151
+işte 1 2 3 4 1 2 3 4
+
+739
+02:19:06,631 --> 02:19:09,151
+Bakın bu biraz daha, şu iki arayı birleştirmek,
+
+740
+02:19:09,271 --> 02:19:12,411
+daha sonra, gerçi burada şu ikisi arasında çok farklı,
+
+741
+02:19:12,511 --> 02:19:14,252
+bu da şuradan şuraya bir birleştireceğiz,
+
+742
+02:19:14,871 --> 02:19:16,131
+buradan buraya bir birleştireceğiz.
+
+743
+02:19:16,231 --> 02:19:17,752
+Biraz daha hatayı azaltan bir şey.
+
+744
+02:19:18,411 --> 02:19:19,831
+Şurada doğrudan f yapmışız.
+
+745
+02:19:19,951 --> 02:19:22,451
+Şimdi f yapınca, şuradan şuraya,
+
+746
+02:19:22,651 --> 02:19:24,191
+şurada bir tane örnek alındı,
+
+747
+02:19:24,332 --> 02:19:25,791
+daha sonra burada bir tane örnek alındı,
+
+748
+02:19:25,871 --> 02:19:27,411
+şuradan şuraya bir tane örnek alındı.
+
+749
+02:19:28,011 --> 02:19:29,851
+Şimdi bu araları birleştirme de şöyle bir şey var.
+
+750
+02:19:30,651 --> 02:19:34,351
+Demek ki örnekleme frekansı bizim sonucumuzu zaten etkiliyor dedik de,
+
+751
+02:19:34,351 --> 02:19:36,151
+Böyle bir etkisi var arkadaşlar.
+
+752
+02:19:38,691 --> 02:19:46,971
+Buna 2F'den daha büyük olan örneklemeye oversampling, aşırı örnekleme diyoruz.
+
+753
+02:19:47,791 --> 02:19:52,471
+Nyquist Rans sampling ise iki katı kadar örneklemektir.
+
+754
+02:19:53,171 --> 02:19:59,951
+Undersampling'de yetersiz örnekleme dediğimiz 2F'den daha az olan örnekleme için geçerli.
+
+755
+02:20:03,028 --> 02:20:10,327
+Evet, şu işlemde arkadaşlar yapılan şey nedir? Bir işaretin sayısal hale geliştirmesi. Bunlar hep aynı şeyler.
+
+756
+02:20:11,067 --> 02:20:16,347
+Burada mesela farklı bir şey örneği var. Osiloskop örneği var aslında.
+
+757
+02:20:18,127 --> 02:20:23,927
+Burada önce bakın sampling frekansı 1024 Hz olarak almış.
+
+758
+02:20:25,448 --> 02:20:31,427
+Burada Hz olarak bunu aldıktan sonra değişken, bunun sayısal halini alacak.
+
+759
+02:20:33,028 --> 02:20:40,588
+ve bu sayısal hali ne yapacak? Quantization yaparak şu sayısal değerleri sıfır ve birilerle kodlayacağız.
+
+760
+02:20:41,627 --> 02:20:46,167
+Sampling teoremin dediği şey teoremdir bu. Bunun detayına daha sonra bakacağız.
+
+761
+02:20:46,868 --> 02:20:55,167
+Nyquist tarafından atılan bir şey. Bir diyor sinyalin en az iki katı kadar sinyalin içerisindeki en yüksek frekansın iki katı kadar örnekleme yaparsan
+
+762
+02:20:55,167 --> 02:21:00,127
+geri sinyali elde edebilirsin, reconstruction yapabilirsin diyor burada.
+
+763
+02:21:00,127 --> 02:21:21,547
+Şimdi Nyquist rate'in burada mantığı da şu, işaret frekans düzleminde elde ediliyor. Yani time düzleminden frekans düzlemini aldık. Bunun en yüksek bileşenli frekansını buluyoruz. Ve bu fmax'dan daha küçük olan şeyleri alıyoruz. Frekanslara dikkat ediyoruz.
+
+764
+02:21:21,547 --> 02:21:29,587
+ve bu Nyquist rate iki katı kadar, f-max'ın iki katı kadar örnekleme yapıyor.
+
+765
+02:21:31,407 --> 02:21:40,667
+Ve şimdi şurada baktığımızda işte burada low pass dediğimiz f-max'ın altındaki bütün frekansları al dediğimizde
+
+766
+02:21:40,667 --> 02:21:44,707
+bütün bileşenleriyle sinyali örneklemiş oluyor.
+
+767
+02:21:44,708 --> 02:21:52,708
+Ama burada şunu da yapabiliriz, belli bir aralığa kadarki sinyalleri al, şu küçük değerleri yok et diyebiliriz örnekleme yaparken
+
+768
+02:21:52,708 --> 02:22:04,727
+Yine o aralıkta belli yani işareti örnekleme yaparken frekansına bakıyor, şu minimin dışındaysa veya maxmin ve maxmin dışındaysa almıyor, içindeyse alıp o örnekleri kaydediyoruz
+
+769
+02:22:04,727 --> 02:22:11,067
+Kaydetmediğimiz örnekler suppression dediğimiz bastırma yani yok etme ile ne yapılıyor aradan çıkarılıyor
+
+770
+02:22:11,067 --> 02:22:38,067
+Şimdi bu suppression önemli bir şey. Bir seste, bir görüntüde, bir gürültü varsa mesela görüntüde motion blur dediğimiz bir şey vardır. Mesela telefonla fotoğraf çekiyorsunuz, az hareket ettirdiniz. Orada bir kayma gerçekleşir. O kaymayı geri alabilirsiniz. Hatta bunun de-bluring algoritmaları var. Kaymanın miktarı kadar, frekansı kadar bir kompanzasyon yapıyorsunuz. O zaman neyi bulmamız lazım?
+
+771
+02:22:38,067 --> 02:22:43,647
+kayma miktarını gösteren bir frekans bilgisi bulmamız gerekiyor işaretten. Onu bulduktan sonrası kolay.
+
+772
+02:22:44,607 --> 02:22:50,387
+Compensation yaparak o görüntüdeki kayma işlemini geri alabiliyoruz.
+
+773
+02:22:51,307 --> 02:23:01,107
+Buraya kadar sampling. Quantization'da arkadaşlar sampling sonrasında elde edilen verilerin biraz önceki şekilde kodlanmasını gösteren bir işlem.
+
+774
+02:23:01,108 --> 02:23:12,587
+Şimdi burada quantization yaparken işaretin limitlerine min ve max limitlerine dikkat etmemiz gerekiyor. Yani burada genlik değerleri arasında bir şeye bakacağız.
+
+775
+02:23:12,587 --> 02:23:21,888
+Çünkü nasıl ki işaret zaman düzleminde sonsuzsa genlik düzleminde de sonsuz bunu sonlu hale getireceğiz
+
+776
+02:23:21,888 --> 02:23:33,287
+Ve bu sonlu hale getirme yaparken amacımız işareti bit sayısına göre genlik düzleminde L tane bölgeleri ayırmak
+
+777
+02:23:33,287 --> 02:23:36,888
+Yani şunların her birisi bir zon işlemidir
+
+778
+02:23:36,888 --> 02:24:01,548
+bölgeleri ayırmak. Ve bu zonların her birisi eşit teta dediğimiz aralıklara sahip. O zaman bizim teta dediğimiz şey ne olacak? Maksimum level'dan minimum level'ı çıkarttığımızda ve L sayı zon sayısına böldüğümüzde bulacağımız şey. Mesela maksimum 24 volt olsun, minimum eksi 14 volt olsun.
+
+779
+02:24:02,291 --> 02:24:05,051
+geçen sene bunu sormuştuk.
+
+780
+02:24:05,291 --> 02:24:07,212
+Kaç bitle gösterelim? En eşittir
+
+781
+02:24:07,212 --> 02:24:10,851
+14 olmasın da
+
+782
+02:24:10,851 --> 02:24:13,111
+12 diyelim
+
+783
+02:24:13,111 --> 02:24:15,651
+en eşittir 4 bitle.
+
+784
+02:24:17,431 --> 02:24:18,812
+36 olursa
+
+785
+02:24:18,812 --> 02:24:20,791
+36'yı bölen ne var? Mesela 2 bitle.
+
+786
+02:24:23,611 --> 02:24:25,271
+Her bir aralığımız ne olur?
+
+787
+02:24:26,331 --> 02:24:27,251
+24 eksi
+
+788
+02:24:27,251 --> 02:24:28,771
+eksi 12 36
+
+789
+02:24:28,771 --> 02:24:31,251
+bölü. Zon sayımız
+
+790
+02:24:31,251 --> 02:24:32,231
+2 üzeri 2.
+
+791
+02:24:32,291 --> 02:24:33,472
+Yani 4.
+
+792
+02:24:34,812 --> 02:24:35,672
+Bu da ne oluyor?
+
+793
+02:24:35,911 --> 02:24:38,152
+36 bölü 4'ten 9 oluyor.
+
+794
+02:24:38,251 --> 02:24:38,931
+Doğru yaptım mı?
+
+795
+02:24:39,992 --> 02:24:41,291
+2 bitten 4 seviye.
+
+796
+02:24:41,711 --> 02:24:43,071
+Yani 4 tane zonumuz var.
+
+797
+02:24:44,111 --> 02:24:46,551
+36 birimlik alanı.
+
+798
+02:24:47,211 --> 02:24:48,591
+Volt dedik burada birim olarak.
+
+799
+02:24:49,552 --> 02:24:53,111
+Her biri 9'ar aralıklı parçalara bölüyoruz.
+
+800
+02:24:53,832 --> 02:24:57,472
+Mesela birinci parça aşağıdan başlayalım.
+
+801
+02:24:57,652 --> 02:25:00,251
+Eksi 12 ile 9 eklersek ne olur?
+
+802
+02:25:00,251 --> 02:25:01,911
+Eksi 3 arası birinci zon.
+
+803
+02:25:02,291 --> 02:25:04,032
+eksi 2 ile
+
+804
+02:25:04,032 --> 02:25:06,772
+aslında eksi 2 değil de yine eksi 3 diyelim
+
+805
+02:25:06,772 --> 02:25:08,991
+eksi 3.01 ile
+
+806
+02:25:08,991 --> 02:25:11,092
+9 eklersek
+
+807
+02:25:11,092 --> 02:25:12,452
+6 arası diğer zon
+
+808
+02:25:12,452 --> 02:25:14,351
+6 virgül küsür ile
+
+809
+02:25:14,351 --> 02:25:16,211
+15 arası diğer zon
+
+810
+02:25:16,211 --> 02:25:17,671
+15 virgül küsür ile
+
+811
+02:25:17,671 --> 02:25:20,732
+24 arası diğer zon olacak şekilde
+
+812
+02:25:20,732 --> 02:25:22,472
+parçalara bölünüyor. Sizin
+
+813
+02:25:22,472 --> 02:25:24,872
+18 voltunuz kaçıncı zona karşılık gelecek?
+
+814
+02:25:25,891 --> 02:25:26,631
+15 ile
+
+815
+02:25:26,631 --> 02:25:27,692
+ne dedik
+
+816
+02:25:27,692 --> 02:25:29,711
+9 dersek 24
+
+817
+02:25:29,711 --> 02:25:32,171
+18 voltunuz şurada
+
+818
+02:25:32,171 --> 02:25:34,771
+O zaman 18 voltunuzu ne ile göstereceksiniz?
+
+819
+02:25:35,472 --> 02:25:36,891
+1-1 ile göstereceksiniz.
+
+820
+02:25:37,491 --> 02:25:42,931
+Çünkü 2 bit ile 0-0, 0-1, 1-0, 1-1 gösterilir.
+
+821
+02:25:43,071 --> 02:25:43,911
+Başka şey yoktur.
+
+822
+02:25:44,551 --> 02:25:54,551
+Birinci zon 0-0, ikinci zon 0-1, üçüncü zon 1-0, dördüncü zon 1-1 olan aralıktadır.
+
+823
+02:25:54,731 --> 02:25:59,371
+Bunları hani bütün bitlerin olası bütün permitasyonları bu şekilde yazılıyor.
+
+824
+02:25:59,371 --> 02:26:07,631
+Ve biz 18 voltluk bir değerimiz varsa ve bu işte 3. zonda yani aslında 4. zon oluyor burada son zonun içerisinde.
+
+825
+02:26:08,131 --> 02:26:11,751
+Bunu ne yapıyoruz? 1-1 ile bellekte saklayabiliyoruz.
+
+826
+02:26:14,251 --> 02:26:22,271
+Şimdi midpointler arasında hani 0. zon falan dedim de yani şey zon bilgisinde 1-2-3 dedim de bazen 0'dan da başlatılabilir.
+
+827
+02:26:22,371 --> 02:26:23,231
+Burada onu söylüyoruz.
+
+828
+02:26:24,891 --> 02:26:27,671
+0'dan L-1. zona kadar bilgiler verir.
+
+829
+02:26:27,671 --> 02:26:30,591
+Niye? Bu da şu binary açılımından kaynaklı bir şey arkadaşlar.
+
+830
+02:26:30,751 --> 02:26:33,531
+Şimdi bizim dört tane bitimiz olsun. Gerçi üç bit olsun.
+
+831
+02:26:34,171 --> 02:26:36,751
+Üç bit ile kaç farklı durumu yazılır? Sekiz durum.
+
+832
+02:26:36,911 --> 02:26:41,011
+Sıfır sıfır sıfır sıfır bir. Sıfır bir sıfır sıfır bir bir.
+
+833
+02:26:41,751 --> 02:26:45,011
+Bir sıfır sıfır bir sıfır bir bir bir sıfır bir bir bir.
+
+834
+02:26:45,551 --> 02:26:48,291
+Şimdi bu sıfırıncı zon direkt sıfıra karşılıklı.
+
+835
+02:26:48,371 --> 02:26:50,011
+Bu birinci zon. Bu ikinci zon.
+
+836
+02:26:50,011 --> 02:26:56,291
+Yani direkt sayısal karşılıklarını yani binary sistemlerin onluk sistemdeki direkt sayısal karşılıkları
+
+837
+02:26:56,291 --> 02:27:00,152
+Zon numarası olarak yazılabiliyor.
+
+838
+02:27:00,752 --> 02:27:01,491
+Tamam mı?
+
+839
+02:27:02,312 --> 02:27:03,971
+Zon decimal D diyelim.
+
+840
+02:27:04,092 --> 02:27:06,291
+Şu binary şu da D karşılıyor.
+
+841
+02:27:08,892 --> 02:27:16,351
+Ve aradaki mesela 18 yukarıda mı olacak aşağıda mı olacak kısmına burada doğrudan bakmıyoruz.
+
+842
+02:27:16,512 --> 02:27:19,551
+Yani hangi zona düştüyse o zonuna kodlayabiliriz.
+
+843
+02:27:19,551 --> 02:27:21,671
+şimdi mesela örnek demiş
+
+844
+02:27:21,671 --> 02:27:23,951
+eksi 20 ile artı 20
+
+845
+02:27:23,951 --> 02:27:25,031
+arasında 8 tane
+
+846
+02:27:25,031 --> 02:27:27,991
+zon bölmesine
+
+847
+02:27:27,991 --> 02:27:29,512
+bulmak istiyoruz işte ne olacak
+
+848
+02:27:29,512 --> 02:27:30,831
+her bir zonun bilgisi
+
+849
+02:27:30,831 --> 02:27:33,191
+5 aralıklarla
+
+850
+02:27:33,191 --> 02:27:35,591
+zonlar birbirinden ayırılacak kaç bit lazım
+
+851
+02:27:35,591 --> 02:27:36,331
+peki bu iş için
+
+852
+02:27:42,932 --> 02:27:54,451
+Evet, güzel, 3 bit lazım değil mi? Niye? 8 tane farklı seviye bulmak için 3 bite ihtiyacımız var. Peki ne kadar yer kaplarız?
+
+853
+02:27:58,227 --> 02:28:00,227
+bellekte
+
+854
+02:28:05,203 --> 02:28:23,423
+Zon değerlerimiz şunlar. Tamam, bunu bulduk. 3 bit olacağını da bulduk. Bellekte ne kadar yer kaplarız? 15 biti neye göre? Yani 3 bit ile 5'i niye çarptın kayra?
+
+855
+02:28:27,987 --> 02:28:32,667
+Hocam 5 tane ihtimal var ya ondan dolayı da.
+
+856
+02:28:32,687 --> 02:28:33,908
+5 tane ihtimal yok.
+
+857
+02:28:34,167 --> 02:28:35,247
+Şu an matıza gelmedi.
+
+858
+02:28:35,667 --> 02:28:36,147
+Evet doğru.
+
+859
+02:28:36,347 --> 02:28:38,167
+8 ihtimal var zaten o 3 bit.
+
+860
+02:28:39,127 --> 02:28:41,587
+5 her bir aralığın boyutu.
+
+861
+02:28:42,667 --> 02:28:47,687
+Yani burası birinci zon öbürü ikinci zon her biri işte delta kadar 5 birimlik şey.
+
+862
+02:28:48,908 --> 02:28:52,987
+8 çarpı 3 24 oradaki 8 nereden geldi?
+
+863
+02:28:52,987 --> 02:28:58,508
+Her bir 3 bit
+
+864
+02:28:58,508 --> 02:29:00,168
+yani her bir zonda 3 bit
+
+865
+02:29:00,168 --> 02:29:02,547
+ilgi olacak. 8 tane zon var.
+
+866
+02:29:02,987 --> 02:29:04,568
+Ama bizim bir işaretimiz
+
+867
+02:29:04,568 --> 02:29:06,467
+zonlardan birisinde olur. Yani 8
+
+868
+02:29:06,467 --> 02:29:07,587
+tanesinde de olmaz.
+
+869
+02:29:09,708 --> 02:29:10,147
+Öyle değil mi?
+
+870
+02:29:11,528 --> 02:29:12,168
+Doğru hocam.
+
+871
+02:29:13,267 --> 02:29:14,888
+Aslında Caner söylemiş.
+
+872
+02:29:16,028 --> 02:29:16,367
+Caner
+
+873
+02:29:16,367 --> 02:29:18,348
+örnek sayısı çarpı 3 bit.
+
+874
+02:29:18,447 --> 02:29:20,367
+Çünkü bizim şu an bir örneğimizin
+
+875
+02:29:20,367 --> 02:29:22,007
+düşeceği aralığı buluyoruz arkadaşlar.
+
+876
+02:29:22,008 --> 02:29:24,127
+bakın. Kaç tane örnek aldığımızı
+
+877
+02:29:24,127 --> 02:29:26,328
+bilmiyoruz. Number of samples
+
+878
+02:29:26,328 --> 02:29:27,888
+veya n diyelim
+
+879
+02:29:27,888 --> 02:29:30,168
+gerçi büyük n diyelim buna. Kaç tane
+
+880
+02:29:30,168 --> 02:29:31,008
+örneğimiz varsa
+
+881
+02:29:31,008 --> 02:29:34,547
+onu 3 bitle çarpıyoruz. Her bir örneğimizin
+
+882
+02:29:34,547 --> 02:29:36,168
+burada kaç bit ile temsil
+
+883
+02:29:36,168 --> 02:29:37,208
+edileceği bulunuyor bakın.
+
+884
+02:29:38,487 --> 02:29:38,987
+Çünkü ben
+
+885
+02:29:38,987 --> 02:29:42,008
+bir şey buldum, bir örnek
+
+886
+02:29:42,008 --> 02:29:44,187
+aldım. Bunun bir quantization zonu var.
+
+887
+02:29:44,608 --> 02:29:46,288
+Biliyorum ki artık burada saklayacağım
+
+888
+02:29:46,288 --> 02:29:48,248
+değer neye ait?
+
+889
+02:29:49,087 --> 02:29:50,288
+Ne içeriyor? 3 tane
+
+890
+02:29:50,288 --> 02:29:51,568
+bit gerektiriyor.
+
+891
+02:29:52,007 --> 02:29:53,687
+Bir sonraki sample o da 3 bit.
+
+892
+02:29:53,767 --> 02:29:54,567
+Öbürü o da 3 bit.
+
+893
+02:29:54,627 --> 02:29:56,607
+Çünkü bizim kaç tane zonumuz var?
+
+894
+02:29:56,747 --> 02:29:59,327
+İşte 8 tane quantization level'umuz var.
+
+895
+02:30:00,487 --> 02:30:02,107
+Buna göre dikkat etmek gerekiyor.
+
+896
+02:30:02,187 --> 02:30:03,947
+Bakın bu şaşırtıcı bir soru bazen.
+
+897
+02:30:05,047 --> 02:30:10,727
+Şimdi eğer bir işaretin zonları içerisinde,
+
+898
+02:30:10,887 --> 02:30:12,047
+şimdi onu şurada söyledik mi?
+
+899
+02:30:14,967 --> 02:30:16,627
+Orta noktadan büyükse,
+
+900
+02:30:17,687 --> 02:30:19,667
+şimdi burada bir kararsızlık durumu var arkadaşlar.
+
+901
+02:30:20,807 --> 02:30:21,867
+Şöyle bir zon diyelim.
+
+902
+02:30:22,007 --> 02:30:23,947
+Burası. Şurada da
+
+903
+02:30:23,947 --> 02:30:25,367
+işaretin bilgisi var. Şimdi
+
+904
+02:30:25,367 --> 02:30:27,667
+şuraya mı yazacağız? Yani burası
+
+905
+02:30:27,667 --> 02:30:29,707
+0, 0, 1 olsun. Burası
+
+906
+02:30:29,707 --> 02:30:32,067
+0, 1, 0
+
+907
+02:30:32,067 --> 02:30:33,287
+olur değil mi? 1 eklersek.
+
+908
+02:30:34,647 --> 02:30:35,467
+Buraya mı yazacağız?
+
+909
+02:30:36,727 --> 02:30:37,607
+Buraya mı kaydedeceğiz?
+
+910
+02:30:37,788 --> 02:30:39,967
+Şimdi bu da belirlenmesi lazım. Burada da diyor ki
+
+911
+02:30:39,967 --> 02:30:41,467
+yani en basit yaklaşım
+
+912
+02:30:41,467 --> 02:30:43,467
+eğer bu iki buzon arasında
+
+913
+02:30:43,467 --> 02:30:45,387
+yani burası ne olsun? Mesela 5 volt olsun.
+
+914
+02:30:46,047 --> 02:30:47,568
+Burası da işte bunun 9 fazlası
+
+915
+02:30:47,568 --> 02:30:48,467
+14 volt olsun.
+
+916
+02:30:50,068 --> 02:30:51,307
+5 volt 14 volt.
+
+917
+02:30:52,008 --> 02:30:57,248
+Şimdi eğer şurada yazacağım şey orta noktadan büyükse şununla kodla diyoruz.
+
+918
+02:30:57,907 --> 02:31:00,368
+Orta noktadan küçükse bununla kodla diyoruz.
+
+919
+02:31:00,568 --> 02:31:01,288
+Tamam mı? Bu da önemli.
+
+920
+02:31:02,608 --> 02:31:05,148
+O zaman ben bir sayısal değer versem.
+
+921
+02:31:05,148 --> 02:31:11,127
+Mesela desem ki burada soru olarak şöyle sorsak.
+
+922
+02:31:12,448 --> 02:31:16,267
+17 volt hangi zondadır?
+
+923
+02:31:17,127 --> 02:31:18,547
+17 volt şu zondadır.
+
+924
+02:31:19,448 --> 02:31:21,368
+Peki bu zonun üst sınırına mı yazılacak?
+
+925
+02:31:21,367 --> 02:31:28,187
+Alt sınırla mı yazılacak? Ne deriz? 17.5'un altında olacağı için alt sınırla yazılacak.
+
+926
+02:31:28,307 --> 02:31:32,647
+Üst sınır zaten 1-1-1-1-1'dir. Onun bir altı 1-1-1-1-1-0'dır.
+
+927
+02:31:32,727 --> 02:31:37,067
+Yani 17 voltu şu değerle saklayacağız. Kaç tane bit varsa içinde.
+
+928
+02:31:37,587 --> 02:31:43,647
+Tabi burada 3 bit vardı. 1-1-1 diğerine 1-1-0 ile 17 voltu saklayabiliriz.
+
+929
+02:31:43,647 --> 02:31:45,307
+16 volt o da 1 1 0
+
+930
+02:31:45,307 --> 02:31:47,627
+15 volt o da 1 1 0
+
+931
+02:31:47,627 --> 02:31:49,667
+17.5
+
+932
+02:31:49,667 --> 02:31:51,727
+volt ve üzeri 1 1 1
+
+933
+02:31:51,727 --> 02:31:52,647
+tamam mı?
+
+934
+02:31:56,435 --> 02:32:02,735
+Şimdi bu kodların zona atanmasıyla alakalı, işte şey, yani bütün olası durumları yazmak gerekiyor arkadaşlar.
+
+935
+02:32:02,735 --> 02:32:11,555
+Kaç tane zonumuz varsa bunun logaritmasını alıyoruz. Yani biraz önce 8 dediğimiz şey nasıl, siz tersten yaptınız, üstel fonksiyonla yaptınız.
+
+936
+02:32:12,015 --> 02:32:18,295
+İşte 2 üzeri n 8 ise n eşittir 3. Yani bunu logaritmayla yapabiliyoruz. Ha bu ne için kullanılıyor?
+
+937
+02:32:20,276 --> 02:32:25,835
+Gerekli olan minimum asgari bit sayısını bulmak için kullanılıyor. Şimdi 8'de 3'ü bulmak kolay da,
+
+938
+02:32:25,835 --> 02:32:28,616
+88'de desek ne yapacağız?
+
+939
+02:32:29,855 --> 02:32:32,015
+Şimdi logaritma işte burada devreye giriyor.
+
+940
+02:32:32,136 --> 02:32:33,136
+İki tabanında 88.
+
+941
+02:32:33,136 --> 02:32:40,956
+Şimdi 64 dediğimiz şey 6 bitle bu işi yapar ama 64 88'i saklamaz.
+
+942
+02:32:41,476 --> 02:32:42,355
+O zaman neye lazım?
+
+943
+02:32:42,995 --> 02:32:47,435
+Burada üst sınır olacak şekilde yani bu logaritmanın üst sınırını alacağız.
+
+944
+02:32:48,156 --> 02:32:48,675
+Bu da ne oluyor?
+
+945
+02:32:48,796 --> 02:32:50,235
+En yakın tam sayıya şey yapacak.
+
+946
+02:32:51,695 --> 02:32:53,955
+128'den yani 7 bit gibi bir şey gelecek.
+
+947
+02:32:53,956 --> 02:33:06,755
+Mesela bir 3 bit verildiğinde olabilecek durumlar bunlar. Ama bu 3 biti tespit etmek için şuradan logaritmayı almamız gerekiyor. 8 tane zon için bu iş kolay.
+
+948
+02:33:07,675 --> 02:33:17,956
+Eğer diyor 0, 0, 0 ise eksi 20 ile eksi 15 aralığına bakacağız gibi. İşte 0, 0, 1 ise eksi 15 ile eksi 10 aralığında diyor.
+
+949
+02:33:17,955 --> 02:33:26,215
+tabi burada şeye de bakacak yani aralıklara, orta noktalara da bakacağız.
+
+950
+02:33:27,895 --> 02:33:34,195
+Evet şu örneğe bakalım. Saatimiz kaç? 15 dakikamız varmış.
+
+951
+02:33:36,235 --> 02:33:41,995
+Şimdi bakın quantization kodlarımız işte eksi ile artı aralığında şöyle bir sinyalimiz var.
+
+952
+02:33:41,995 --> 02:34:06,296
+bu örneklenmiş bir sinyal. İşte sıfırdan başlıyor yediye kadar yani sekiz tane durum var. Yani sıfır sıfır sıfıra burayı dersek burası da bir bir bir olacak şekilde. Kim hangisine en yakınsa gidecek onun decimal karşılığını bulacak. Mesela demiş ki şurada tabi burada bir normalize etme durumu var. Doğrudan normalizasyon yapmak da gerekiyor falan demiş.
+
+953
+02:34:06,296 --> 02:34:24,835
+bunun eksi 6.1'in normalize değeri 1'in eksi 1.22'ymiş. Bunun quantization level'ı 1.1.5'a geliyor. İşte şu kadar quantization erroru var. Yani şundan yani eksi 1.22 bunu normalize etmesinin sebebi şu arkadaşlar.
+
+954
+02:34:24,835 --> 02:34:38,835
+min ile max aralığını belli bir aralığa çekiyor. Şu kadar bir hata var ve bu hata quantization kod olarak yani 2 demiş konu ve bunun karşılığı 2'nin binary karşılığındadır şudur.
+
+955
+02:34:38,915 --> 02:34:51,355
+Yani ben bu değeri 0, 1, 0 olarak. Şuna baktığım zaman bu normalize değeri 1,5'muş. Bunu yine 1,5 olarak saklıyor ve işte 0 hatayla 1, 0, 1 olarak yapıyor.
+
+956
+02:34:51,355 --> 02:35:13,096
+Bütün değerleri normalize etmesine de gerek yok. Burada min ve max arasında doğrudan daha değer verebilir de normalizasyon bir anlamda bit sayısını düşürmek için kullanılan bir şey. Peki bu quantization error dediğimiz şey nedir? Bir sinyal quantization yapıldığında ne oluyor? Belli bir değere yuvarlıyoruz.
+
+957
+02:35:13,095 --> 02:35:30,435
+olması gereken değerle kodlanan değer arasındaki fark bizim quantization errorumuz. Eğer daha fazla zonumuz varsa bu şey quantization hatamız azalır. Zon sayımız azalırsa tam tersi şekilde artacaktır.
+
+958
+02:35:30,435 --> 02:35:32,156
+ha burada
+
+959
+02:35:32,156 --> 02:35:46,796
+zon sayımızı artırmak her zaman iyi bir şey mi? İyi bir şey değil. O zaman ne lazım? Çok fazla bellek gerekiyor. Yani hatayı azaltmak için belliğe ihtiyacımız var. O da daha fazla bitrate'e ihtiyaç duyuyor. Bu bilgiyi de burada söylemiş olalım.
+
+960
+02:35:49,495 --> 02:35:55,176
+Mesela bir örnek analog to digital converter. Bir 12 bitlik analog to digital converter
+
+961
+02:35:56,147 --> 02:36:23,027
+ne yapıyormuş? İşte şey kullanılmış işte artı eksi less signif'in en düşük öncelikli bitleri öncelikle kullanıyormuş. Bu input race'imiz 0 ile 10 volt arasında olursa bu şeyin accuracy'si ne olur? Şimdi 12 bitlik bir şey olacak. Analoglu dijital convertimiz var. Input'un aralığı da 0 ile 10 volt.
+
+962
+02:36:23,027 --> 02:36:46,688
+Şimdi önce biz range'e bakacağız arkadaşlar. Bu range'imiz nedir? 10-0'dan 10 volt. Sonra kaç tane zona ayıracağımıza bakacağız. 10 volt bölü 2 üzeri 12 kadar seviye var ve her bir seviyenin yani delta dediğimiz şey 0.00 volt. Her bir seviyenin büyüklüğü bu kadar oluyor.
+
+963
+02:36:46,687 --> 02:36:56,747
+Yani bizim bu quantization errorumuz artı eksi 0.0024 volt olacak şekilde karşımıza gelecek.
+
+964
+02:36:59,047 --> 02:37:04,707
+Şimdi bu sampling related concepts dediğimiz buraları geçelim.
+
+965
+02:37:04,827 --> 02:37:07,187
+Çünkü bu sampling konusunda aynı şeyleri tekrar edeceğiz.
+
+966
+02:37:07,287 --> 02:37:09,368
+Bunlarla frek fazla zaman ayırmaya gerek yok.
+
+967
+02:37:12,852 --> 02:37:37,852
+Şimdi bir sinyalin sayısallaştırılması veya yeri inşa edilmesi için yapılacak olan şeyler. Şimdi sayısallaştırma ne demek? Analogdan dijitale geçiş. Önce belli bir band aralığında yani her frekansı almayıp belli bir frekans aralığına alıyoruz. Bu sampling ve gürültü gidermek için kullanılıyor. Sonra sampling yapıyoruz, sonra quantization yapıyoruz, sonra coding yapıyoruz. Bunlar temel stepler.
+
+968
+02:37:37,852 --> 02:38:02,072
+Bunun bu işlemi yaparken, bunun tersten yapılışında Digital to Analog Converter Reconstruction için yapılıyor. Sonra yine bir sampling yapılıyor. Bu sampling de aslında sayısaldan kontinüse dönüştürürken, analoga dönüştürürken yapılan bir interpolasyon işleminin ön adımı.
+
+969
+02:38:02,071 --> 02:38:09,491
+sonra orada yapılan işten bir interpolation, image rejection dediğimiz iki nokta arasının birleştirmesi.
+
+970
+02:38:09,571 --> 02:38:11,451
+Yani böyle bir sample'ın var, böyle bir sample'ın var.
+
+971
+02:38:12,051 --> 02:38:13,231
+Bu ikisini birleştirmek gibi.
+
+972
+02:38:13,791 --> 02:38:16,191
+Bunlar da temel adımları.
+
+973
+02:38:18,291 --> 02:38:25,431
+Şimdi burada dijital datanın saklanılmasıyla alakalı temel konseptler bunların çoğunu aslında bilgisayar bilimlerine girişten biliyorsunuz.
+
+974
+02:38:25,431 --> 02:38:29,831
+Hızlıca bunu anlatayım, ondan sonra dersimizi bitirelim.
+
+975
+02:38:29,831 --> 02:38:53,731
+Şimdi arkadaşlar bizim bitlerimiz dediğim şey en düşük, en küçük miktarda veri saklayan şey işte true postlar. Eğer bu 4 bitse nibble oluyor, 8 bitse 2 nibble veya byte oluyor, 16 bitse word oluyor. Bunlardan biz yola çıkarak işte sayısal integer, sinned integer, unsigned integer, long integer, işte tools complement gibi kavramlar ortaya çıkarıyoruz.
+
+976
+02:38:53,731 --> 02:39:03,811
+Tools komplementi belki anlatabiliriz. Şimdi burada yapılan şey bir sesin alınıp bu animasyonda analog to digital converter ile ne yapılması?
+
+977
+02:39:03,811 --> 02:39:14,171
+Bir DSP yani şurada bir sayısı olarak kaydedilmesi. Bu DSP ne yapıyor? Bir işareti işliyor. İşlenen işareti tekrar digital to analog converter ile dışarıya veriyor.
+
+978
+02:39:14,171 --> 02:39:24,232
+Şimdi bir bilgisayardaki kapasite ve hız birimlerine baktığımızda
+
+979
+02:39:24,232 --> 02:39:31,111
+Şimdi genellikle bunlar 10'un ikili kat derecelerinden 10 ve ikili şeylerinden oluşur
+
+980
+02:39:31,111 --> 02:39:37,212
+10 bize kilo, mega vs. söylüyor, 2 de bize bit, byte onları söylüyor
+
+981
+02:39:37,212 --> 02:39:46,911
+şimdi bir K dediğimiz kilo, bu M dediğimiz mega yani milyon, C dediğimiz giga, tera, peta
+
+982
+02:39:46,911 --> 02:39:58,352
+bu metrik ikinin katlarını da gösterse, onun katlarını da gösterse önemli olan nedir?
+
+983
+02:39:58,352 --> 02:40:25,131
+onun ölçülebildiği birim türüdür. Yani byte mı, bit mi, hız mı, frekans mı neyse bunların kilosu, megası, gigası önemli değil. Önemli olan bundan sonra gelecek olan birim bilgisi. Örneğin hertz nedir? Bir frekans bilgisidir. Saniye başına oluşan clock cycle'nın miktarını yani titreşim sayısını söyler. İşte bu mini bir megahertz yani megadan önemli olan şey aslında hertz'tir.
+
+984
+02:40:25,131 --> 02:40:27,131
+Yani amper mesela
+
+985
+02:40:27,131 --> 02:40:48,732
+Bir amper çok yüksek bir şeydir. Halbuki bir volt o kadar değildir. Asıl insana çarpan elektrik de amperdir. Yüksek amper çok düşük bir voltta çok daha fazla etki yapabilir. Onun için bilgi önemli. Genellikle bu prosesör işlemci hızları hertzlerle ifade ediliyor. İşte megahertz veya gigahertz
+
+986
+02:40:48,731 --> 02:41:00,831
+byte dediğimiz şey nedir? Bir storage, işte bir kilobyte, bir megabyte ve burada RAM, işte hard disklerde daha fazla gigabyte veya terabyte şeklinde kullanılıyor.
+
+987
+02:41:01,371 --> 02:41:09,351
+Zaman ve bellek space birimleri, işte bu mili, mikro, nano, pico, femto diye söylenen şeyler.
+
+988
+02:41:10,004 --> 02:41:34,123
+Bu saniyenin 10 üzeri eksi 3, 10 üzeri eksi 6 diye gidiyor. Tabi bunların da nesi var? İşte nanosaniye, ondan sonra nanometre gibi space alanları var. Biz bunlardan, bu bilgilerden data type'ları kullanıyoruz arkadaşlar. Hani programlamada. Niye? Çünkü bir şekilde soyutlama yapmamız lazım. İşte sesi veya herhangi bir şeyi.
+
+989
+02:41:34,123 --> 02:41:44,044
+neyse burayı geçebiliriz. İşte burada sıfır ve birlerden sıfırla birlerin nereden ortaya çıktığını yani ne için kullanıldığını falan anlatıyor.
+
+990
+02:41:44,044 --> 02:41:55,423
+İşte sayılar mesela sıfır ve birlerle ifade ediliyor. Sayı dediğimiz şey işaretli olur, işaretsiz olur, tam sayı olur, tam sayı olmayan floating point olur, kompleks sayı olur, rasyonel olur, idrasyonel olabilir.
+
+991
+02:41:55,423 --> 02:42:16,084
+tekst, karakterler ve stringlerden oluşuyor. Image dediğimiz şey bir matristir arkadaşlar. Ses dediğimiz şey bir sound dizidir. Image iki boyutlu. Mesela video dediğimiz şey nedir? Üç boyutlu. Yani bir sürü matris var. Logic veriler true veya false oluyor. Instructionlar, bizim başka işte komutlarımız.
+
+992
+02:42:16,084 --> 02:42:26,103
+bu data type'ın oluşturulması yani bir reprezent edilmesi ve operasyonları bir bilgisayarda bunlar ayrıca zaten programlama derslerinde görülen şeyler
+
+993
+02:42:27,664 --> 02:42:35,783
+şimdi arkadaşlar bu number sistemler normalde lojik dersinde ve bilgisayar bilimlerinde anlatılan şeyler
+
+994
+02:42:35,783 --> 02:42:43,463
+biz radix sistem kullanıyoruz positional of numbers sistemde
+
+995
+02:42:43,463 --> 02:42:59,983
+Yani bir R, işte radix şeyinde o kadar, R eksi bir tane, gerçi R'ye kadar dijitler oluyor. Mesela onlu sistem dediğimizde sıfırdan dokuza kadar rakamlarımız var.
+
+996
+02:42:59,983 --> 02:43:29,963
+10 dahil değil. Burada da R'li sistemde sıfırdan R'ye kadar sembollerimiz oluyor. Biz bu sembollerle verilerimizi saklıyoruz. Bu dijitlerin birleşimi bize neyi sağlıyor? Sayıların elde edilmesini sağlıyor. Eğer buna bir tam sayıya beraber bir gülü sayı ekleyeceksek bir fraksiyon noktası ekliyoruz ve bu fraksiyon noktası R'nin negatif kuvvetleriyle,
+
+997
+02:43:29,983 --> 02:43:59,563
+oluyor. Yani R üzeri 0, R üzeri 1, R üzeri 2 pozitif taraf. R üzeri 1, R üzeri 2 de ne yapıyor? Bu temel sayma sisteminin genel modelidir. Hangi sistemde? İşte ikilik sistem, onluk sistemde ne yaparsanız yapabilirsiniz. Desimal dediğimiz sıfırdan dokuza bildiğimiz şeyler işte nedir? 3446 böyle gösteriliyor ve matematik olarak böyle çözüm deniyor. Negatif olmasını istersek bunun başına bir eksik koyuyorduk onluk sistemde. Bu bize ne yapıyor?
+
+998
+02:43:59,563 --> 02:44:11,043
+pozitif ve negatif değerleri temsil ediyor. Buradaki işte mana nedir? İşte üç tane binlik var, buna ilave eden beş tane yüzlük var falan diyoruz. Bunlar bildiğimiz şeyler.
+
+999
+02:44:11,664 --> 02:44:20,724
+Negatifte de olunca ne oluyor? Bir tane işaretle yön bilgisi getiriyoruz. Eğer bunu binary sistemde yapacaksak, binary sistem ikililerden oluşuyor.
+
+1000
+02:44:20,724 --> 02:44:33,384
+burada nedir? A tane dörtlük var, B tane ikilik var, C tane birlik var demektir. İkinin katları şeklinde gider. Yani onlar yüzler birler değil de birler ikiler dörtler sekizler on altılar diye bunları söyleriz.
+
+1001
+02:44:33,384 --> 02:44:48,164
+Ve bu söylediğimiz şey ikilik sistemde işte ne olur? Bu şekilde kodlanır. Yani ben dörde kadar kodlama yapacaksam üç bitle şunları yazabilirim. Beş bitle yapacaksam dörde kadar buraya kadar yazarım. Sekiz bitle yapacaksam buraya kadar yazarım.
+
+1002
+02:44:48,163 --> 02:45:01,943
+ve bunların bakın hepsi aynı görünür. Yani şuraya kadar olanlar aynıdır. Ama bunda daha fazla işte bir yerden sonra bir ilerleyemiyoruz 7'ye kadar. Bunda daha fazla ilerleme imkanımız var. İlerleyeceğimiz yerde en fazla ne kadar?
+
+1003
+02:45:01,943 --> 02:45:08,063
+En number of bit değeri verildiğinde sıfırdan sıfır dahil olmak üzere mesela 2 üzeri 10 diyelim.
+
+1004
+02:45:08,468 --> 02:45:15,527
+i ne olacak? 1023. 1023 tane değere kadar ulaşacağız. 1023 dahil.
+
+1005
+02:45:16,848 --> 02:45:19,607
+Burada. Tabii şurayı niye dahil etmiş? Burada dahil olacak.
+
+1006
+02:45:22,607 --> 02:45:30,907
+Eğer negatif sayı olacaksa bu binary sistemde bir bit negatife gidiyor ve burada tuz komplement reprezentansını gösteriyor.
+
+1007
+02:45:31,007 --> 02:45:36,867
+Bunu olmadı bir ara anlatırız. Çünkü bu dersin konusu değil. Lojik dersinde daha çok anlatılacak.
+
+1008
+02:45:36,867 --> 02:45:44,868
+bir şeyin negatifliği, pozitifliği için birkaç yöntem var. Birincisi sign magnitude, diğeri once compliment, diğeri twos compliment.
+
+1009
+02:45:44,868 --> 02:45:51,387
+Once compliment de sign magnitude hatalı sonuçlar vereceği için, sıkıntılı olduğu için doğrudan kullanmıyoruz.
+
+1010
+02:45:52,087 --> 02:45:58,227
+Buraya sonra bakacağız. Burada yaptığımız şey eğer negatif sayıları göstermek istiyorsak n tane bitle,
+
+1011
+02:45:59,067 --> 02:46:03,027
+bir bitimiz işarete gidiyor. Yani benim 10 bitim varsa kaldı 9 bit.
+
+1012
+02:46:03,027 --> 02:46:10,647
+eksi iki üzeri en eksi birden iki üzeri en eksi bir artı eksi bire kadar olan bütün değerleri saklayabiliriz.
+
+1013
+02:46:11,407 --> 02:46:23,267
+Mesela biz beş bitle beş bitin bir biti işarete gittiği kalan dört bitle işte sıfır sıfır sıfırdan buraya kadar eksi on altıdan artı on beşe kadar bir şey saklayabiliriz.
+
+1014
+02:46:23,267 --> 02:46:29,627
+Buna Tuls komplement mutasyonunda şey diyoruz yani bunu daha sonra kullanabiliriz.
+
+1015
+02:46:29,627 --> 02:46:35,487
+operasyonlarda, matematiksel operasyonlarda tools komplement hatasız sonuç üretmeyi sağlar.
+
+1016
+02:46:36,487 --> 02:46:37,487
+Onun için efficienttir.
+
+1017
+02:46:38,267 --> 02:46:41,468
+Ve sıfır tools komplementte bir defa gösterilir.
+
+1018
+02:46:41,468 --> 02:46:46,167
+Şimdi once komplementte ve sine magnitude'da artı sıfır, eksi sıfır belirsizliği vardır.
+
+1019
+02:46:46,287 --> 02:46:47,107
+O da bir problemdir.
+
+1020
+02:46:47,727 --> 02:46:49,207
+Onun için kullanmıyoruz çok fazla.
+
+1021
+02:46:50,007 --> 02:46:54,407
+Bu birçok integerımız, çoğu sayı integer olmadığı için,
+
+1022
+02:46:54,468 --> 02:46:58,287
+integer'dan daha fazla sayılar olduğu için bu integer reprezentasyonu biraz sıkıntılı.
+
+1023
+02:46:58,287 --> 02:47:26,667
+çünkü virgüllü sayıları göstermek mümkün değil, range problemimiz falan var dedik, precision her zaman bizim yani veri hata dediğimiz şey, veride hata dediğimiz şeye sebep olabiliyor, bunu da kullanmıyoruz, bitiriyorum, real sayılar var, real sayıların floating point notasyonu var, bunları hani bu derste anlatmıyoruz ama isterseniz bir ara üzerinden geçeriz, yani buraya bakabilirsiniz ve bu real sayıların kullanımında IEEE 744 formatı kullanılıyor,
+
+1024
+02:47:26,667 --> 02:47:31,607
+Hocam ben Ayhırpızı 754'ü bilgisayar bilimlerine girişte görmedim diyen var mı?
+
+1025
+02:47:34,387 --> 02:47:35,667
+Ben görmedim hocam.
+
+1026
+02:47:36,607 --> 02:47:37,507
+Bu dersi aldın mı?
+
+1027
+02:47:38,107 --> 02:47:39,387
+Dijiversitesini almıştım.
+
+1028
+02:47:40,207 --> 02:47:42,328
+O zaman bir ara bunu anlatalım.
+
+1029
+02:47:42,408 --> 02:47:45,307
+754, bunun iki tane notasyonu var, 32 bittik.
+
+1030
+02:47:45,307 --> 02:47:48,647
+Buradan bakabilirsiniz. Bu işin genel kültürü arkadaşlar.
+
+1031
+02:47:48,828 --> 02:47:51,487
+Biz burada doğrudan bu derste bununla ilgilenmiyoruz.
+
+1032
+02:47:52,147 --> 02:47:54,548
+Bir veriyi verince bunun sıfır ve biriler karşılığı nedir?
+
+1033
+02:47:54,607 --> 02:47:56,167
+Onunla çok fazla meşgul olmayacağız.
+
+1034
+02:47:56,167 --> 02:48:03,447
+onun için burayı da geçebiliriz çok fazla burada örnekleri falan var ama bir ara isterseniz anlatırım.
+
+1035
+02:48:03,787 --> 02:48:06,447
+Sadece ben sen hocam bakabilirim araştırabilirim sorun değil.
+
+1036
+02:48:06,667 --> 02:48:13,348
+Yani şey bir ara böyle genel kültür olsun diye başka yerlerde başka derslerde lazım olabilir onun kullanımını anlatırız.
+
+1037
+02:48:13,427 --> 02:48:17,527
+Çünkü bu ders hani biraz daha bunları tanıtmak üzerine çok fazla şey gerekiyor.
+
+1038
+02:48:17,527 --> 02:48:23,147
+Mesela son olarak arkadaşlar bitireceğim bir renkler kodlayacağız.
+
+1039
+02:48:23,147 --> 02:48:38,567
+mesela görüntü işleme yapıyorsunuz. Kaç tane renginiz varsa ona uygun bit sayısı belirleyip işte 20 tane renk var. En azından 4 bit yetmez 5 bitlik bir şeyle renkleri kodluyorsunuz ve ona göre renkler bilgisayarda saklanıyor.
+
+1040
+02:48:39,387 --> 02:48:52,567
+Bunun için de yapılacak şey number of bits required gerekli bit sayısı arkadaşlar şu formülle hesaplanacak. Yani ben herhangi bir büyüklüğü saklarken en yüksek değerine bakacağım, rencine ve bunun logaritma, iki tabanında logaritmasını alacağım.
+
+1041
+02:48:53,147 --> 02:49:02,947
+Bu sail fonksiyonu da üstte yuvarlama demektir. Yani logaritma iki tabanında 68'i hesapladığımızda bu nedir?
+
+1042
+02:49:03,280 --> 02:49:24,579
+iki virgül, iki buçuktan daha fazla bir şeydir arkadaşlar. Bunu sale yaptığınızda, belki iki buçuktan da fazladır, bilmiyorum. İki virgül küsür. Bunu sale yaptığınızda, ne ikisi ya bir dakika, altı virgül küsürdür. Bunu sale yaptığınızda yediyi bulursunuz ve yedi bitlik bir şeye ihtiyacınız olduğunu söyler. Tamam mı? Sale işlemi.
+
+1043
+02:49:24,579 --> 02:49:30,379
+9 demiş mesela burada nedir? 3,2 sürdür bunu 4'e alıyoruz.
+
+1044
+02:49:32,159 --> 02:49:39,939
+Ve bu 4'e kadar işte 2 bitle ulaşacak bütün permutasyonlar yani burada sıralama önemli kombinasyon değil permutasyonlara bakacağız.
+
+1045
+02:49:40,539 --> 02:49:48,099
+Bunun dörtlü permutasyonları işte yani 4 bit varsa dörtlü permutasyonlarının sayısına bakacağız yani ikili durumları değil.
+
+1046
+02:49:48,879 --> 02:49:51,059
+Onları yazıyoruz kaç tane şey varsa.
+
+1047
+02:49:51,059 --> 02:49:59,019
+Burada BCD, binary decimal kod, bu da lojik dersinizin konusu, gelecek dönem görür, yani 100 döneminde ders alacak arkadaşlar görecek
+
+1048
+02:49:59,019 --> 02:50:07,580
+Ne yapıyoruz? Burada birbirine dönüşüm, yani onluk sistemden şeye dönüşüm, decimalden şeye, ikilik sisteme gibi şeyler var
+
+1049
+02:50:07,580 --> 02:50:13,140
+Bunlara da gerekirse bir ara bakarız, işte hata denetimi dediğimiz, yani bir yere karşıya bilgi götürüyoruz
+
+1050
+02:50:13,140 --> 02:50:16,579
+Bu hatayı denetlemek için ne yapılacak? Bununla da sonra bakarız
+
+1051
+02:50:16,579 --> 02:50:20,500
+ASCII kodlar dediğimiz şey, bu da bu dersle alakalı değil maalesef
+
+1052
+02:50:20,500 --> 02:50:39,080
+bir karakter tablosundaki her bir karakterin sayısal karşılığı olacak. Bunların belli bir sistematikle kodlanması gerekiyor. Buna da gerekirse sonra kısaca özet geçeriz. Unicode falan var. Unicode biraz daha ASCII'den daha teferruatlı. Conversion ile coding'i birbirine karıştırmamak gerekiyor.
+
+1053
+02:50:39,079 --> 02:50:49,159
+bir decimal sayının binary sayıya konverjını ile decimal sayının binary kodla kodlanması birbirinden farklı şey.
+
+1054
+02:50:49,159 --> 02:50:55,379
+Şimdi konverjın binary sayının direkt karşılığını verir ama kodlama direkt karşılığını vermez bir dönüşümdür.
+
+1055
+02:50:55,879 --> 02:51:03,199
+İşte bakın bu bir konverjındır. Yani şey şu bir kodlamadır. Yani biri böyle almış, üçü böyle almış.
+
+1056
+02:51:03,279 --> 02:51:08,099
+Halbuki matematikte doğrudan böyle bir operasyon yok. Şu matematiksel bir işlem, şu algoritmik bir işlem.
+
+1057
+02:51:08,099 --> 02:51:09,599
+birbirinden böyle ayırt edeceğiz.
+
+1058
+02:51:11,419 --> 02:51:14,539
+İşte sayısal şeylerin dışında matematiksel işlemler var.
+
+1059
+02:51:14,660 --> 02:51:17,199
+Not işlemi, logic, or, işte ent işlemleri.
+
+1060
+02:51:17,259 --> 02:51:19,819
+Bunlar lojik işlemler olduğu için bu da bizim dersimizle alakalı değil.
+
+1061
+02:51:20,919 --> 02:51:25,899
+Diyelim, yani buradan zaten sizlere herhangi bir soru sormayacağız arkadaşlar.
+
+1062
+02:51:26,580 --> 02:51:28,380
+Hani şununla şunu verince ilk soru nedir?
+
+1063
+02:51:28,520 --> 02:51:34,720
+Ama bunları ayrık matematikte ve lojik dersinde ikinci sınıfın ilk döneminde zaten üç derste her şey anlatılıyor.
+
+1064
+02:51:34,800 --> 02:51:36,720
+Hatta bir de assembly var, assembly'de de anlatılıyor.
+
+1065
+02:51:36,720 --> 02:51:40,160
+Onun için bunlarla vakit kaybetmeye çok gerek yok
+
+1066
+02:51:40,160 --> 02:51:42,419
+Bizim dersimiz bunlardan daha farklı ilerleyecek
+
+1067
+02:51:42,419 --> 02:51:44,160
+Herhangi bir sorunuz var mı?
+
+1068
+02:51:48,628 --> 02:51:49,628
+Gelecek derste
+
+1069
+02:51:49,628 --> 02:51:53,927
+Bir dakika, şöyle
+
+1070
+02:51:53,927 --> 02:51:56,467
+Cumartesi günü
+
+1071
+02:51:56,467 --> 02:52:04,067
+Sinyal nedir, sistem nedir? Artık sinyaller ve sistemlerin gerçek içeriğiyle derse başlayacağız.
+
+1072
+02:52:04,567 --> 02:52:06,068
+Cumartesi günü
+
+1073
+02:52:06,068 --> 02:52:09,507
+Öğleden sonraki sesinin son tarafında
+
+1074
+02:52:09,507 --> 02:52:10,628
+KUIZ yapacağız.
+
+1075
+02:52:11,247 --> 02:52:12,667
+Anlattığımız şeylerle alakalı. Tamam?
+
+1076
+02:52:14,147 --> 02:52:15,407
+Hepinize iyi akşamlar.
+
+1077
+02:52:15,407 --> 02:52:17,927
+Katılımınız için teşekkür ederim. Bir sorunuz yoksa
+
+1078
+02:52:17,927 --> 02:52:19,287
+görüşmek üzere.
+
+1079
+02:52:21,328 --> 02:52:22,107
+İyi günler hocam.
+
+1080
+02:52:22,107 --> 02:52:23,227
+Estağfurullah.
+
+1081
+02:52:24,468 --> 02:52:37,647
+Bu hafta quiz dediğim gibi cumartesi günü, Caner soruyu şimdi gördüm. Cumartesi günü son saatlerde. Onun duyurusunu yaparım.
