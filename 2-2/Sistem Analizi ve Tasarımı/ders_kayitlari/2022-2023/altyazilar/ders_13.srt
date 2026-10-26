@@ -1,0 +1,3919 @@
+1
+00:00:44,531 --> 00:01:06,571
+İyi günler arkadaşlar, merhaba, hoş geldiniz. Merhaba hocam, nasılsınız, iyi misiniz? İyiyiz, diyelim iyi olalım, siz nasılsınız? Bizdeyiz, hastamız geçti mi? İşte ses böyle, bu şekilde. Devam ediyoruz. Geçmiş olsun tekrardan. Teşekkürler, halim iyi ama ses kötü. Bir de burun ve şey hala dolu.
+
+2
+00:01:06,571 --> 00:01:18,851
+Şimdi E grubuyla başlıyoruz. Bu hafta 6 tane grubumuz var. Son 2 grubun raporu olmadığı için O ve P grupları herhangi bir şekilde katılım göstermediler.
+
+3
+00:01:19,631 --> 00:01:32,392
+E, M, H, D, G, J şeklinde sıralamamız. E grubundan Bilal burada, Hüseyin burada. Ramazanı göremedim galiba.
+
+4
+00:01:32,392 --> 00:01:35,632
+Ramazan gelir hocam şimdi
+
+5
+00:01:35,632 --> 00:01:38,912
+Burcan da şimdi gelirler
+
+6
+00:01:38,912 --> 00:01:43,311
+Sunumu kim yapacak?
+
+7
+00:01:45,072 --> 00:01:46,671
+Bilal açacak sunumu
+
+8
+00:01:46,671 --> 00:01:50,951
+O zaman hemen başlayalım
+
+9
+00:01:50,951 --> 00:01:54,652
+Bir saniye verirsenize hemen Uğurcan'a mesaj
+
+10
+00:02:45,524 --> 00:02:48,744
+Uğurcan da gelmiş. O zaman ben şimdi başlıyorum.
+
+11
+00:02:50,563 --> 00:02:51,743
+Bunu bir kameranını da açayım.
+
+12
+00:02:52,984 --> 00:02:56,484
+Evet, siz başlayabilirsiniz. Herkes geldi demişsin grupta.
+
+13
+00:02:57,043 --> 00:02:59,743
+Evet, geldiler. 5 kişiyiz. Başlıyorum.
+
+14
+00:03:00,283 --> 00:03:01,624
+Hadi başla bakalım hızlıca.
+
+15
+00:03:03,303 --> 00:03:06,603
+Merhaba arkadaşlar. Bugün size yaptığımız market sistemini anlatacağım.
+
+16
+00:03:07,923 --> 00:03:11,063
+Biz 5 kişiyiz. Ekip çamamızı gösterelim.
+
+17
+00:03:11,603 --> 00:03:13,483
+Ben Yasin, projede yönetici olarak görev aldım.
+
+18
+00:03:13,483 --> 00:03:41,024
+Bilal ve Ramazan yazıdımcılar olarak görev aldılar. Hüseyin Sistem Anonisti, Urucan hem sistem tasarımcısı hem de müşteri olarak görev aldı. Peki biz neden böyle bir proje yaptık? Şu anda hizmet veren marketler hız ve kolaylık açısından yetersizlik alıyordu. Pandemi koşulları ile beraber insanlar evlerinde alışveriş yapmaya alışmıştı. Bir de mevcut marketlerde ürün çeşitliği azdı. Bu yüzden böyle bir proje yapmaya karar verdik. Online bir market sistemi yaptık. 7 tane toplantı yaptık. Bunlar ana toplantılar. Ayrıca ara toplantılar da yaptık. Burada raporlarını görüyorsunuz.
+
+19
+00:03:41,024 --> 00:04:00,704
+Müşterimiz Uğurcan'la görüşmeler gerçekleştirdik. İlk görüşmede Uğurcan bizden böyle bir sistem yapmamızı istedi. Biz de bu kapsamda bir mobil uygulamak da web sitesi tasarladık. İkinci görüşmede de sistemin hangi durumda neler yaptığını, nasıl işlediğini anlattık. Üçüncü görüşmede de sistemin sonu haline müşteriye sunduk.
+
+20
+00:04:00,704 --> 00:04:28,064
+Fizibilite çalışması olarak teknik fizibilite ve yazılım fizibilitesi için sistemde web için React ve mobile için Swift kullanılarak yazıldı. Veri tabanı yazılım sistemi olarak Firebase kullanıldı. Web sitesi için Windows, mobile uygulama gerisim ve sürücüsü Mac OS işletim sistemi kullanıldı. Use case diagramların oluşturulmasına Violet UML Editor kullanıldı ve veri akış diyagramları, ER diyagramları ve yapı diyagramları oluşturulmasına DriveU çizim programı kullanıldı.
+
+21
+00:04:28,064 --> 00:04:36,464
+donanım fizibilite olarak ana bilgisayarlar, sunucular, kullanıcı bilgisayarları, kullanıcı telefonları, yerel alan ve geniş alan ağ ve alt yapısı kullanıldı.
+
+22
+00:04:37,464 --> 00:04:42,504
+Burada bazı olası teknik riskler ve çözüm yöntemlerini görüyorsunuz.
+
+23
+00:04:42,504 --> 00:04:52,524
+Gizlilik ve güvenliğin sağlanması gibi örneğin oluşabilecek teknik risk de gerekli güvenlik elemanlarının alınması ve kullanıcı konsolü yapılması gibi bir çözüm yöntemi vardır.
+
+24
+00:04:52,524 --> 00:04:53,764
+geçelim.
+
+25
+00:04:54,344 --> 00:04:58,583
+Sosyal fizibilite de alışveriş sistemi hedef kitlesi marketten alışveriş yapan bireyler.
+
+26
+00:04:58,923 --> 00:05:04,003
+Bu bireyler düşük ve orta gelirli bireyler gelir grubundaki bireyler olacaktır.
+
+27
+00:05:04,083 --> 00:05:08,863
+Bu gelir düzeyindeki bireyler alışverişlerini market üzerinden yaparlar ve bu sistemle beraber
+
+28
+00:05:08,863 --> 00:05:14,024
+geliştiren market otomasyonu sayesinde alışverişlerini daha kısa sürede yapabilecekler.
+
+29
+00:05:14,483 --> 00:05:19,624
+Kullanıcıların fırıncılardan beklentileri basit bir arayüzü sahip olması, güvenlik düzeyinin yüksek olması,
+
+30
+00:05:19,623 --> 00:05:24,943
+anlaşılabilir olması, kısa adımlar içermesi, satın alma işlemlerinin düzgünce yapılabilmesi ve hızla çalışması gibi
+
+31
+00:05:24,943 --> 00:05:29,923
+beklentilerin, projenin istekleri karşılayabileceği yön görülmüştür.
+
+32
+00:05:30,823 --> 00:05:35,723
+Yönetim fizibilite adına geliştirecek sistem yönetim süreçlerinde önemli bir rol oynayacaktır.
+
+33
+00:05:36,043 --> 00:05:41,183
+Sistemin etkisi öncelikle iş süreçlerinin optimiz edilmesi, iş akışlarının düzenlenmesi ve yardımcı kartışı olacaktır.
+
+34
+00:05:41,183 --> 00:05:45,683
+Sistemin uygulanması ile iş süreçlerin daha hızlı ve etkili bir şekilde yürütülmesi mümkün olacaktır.
+
+35
+00:05:47,483 --> 00:05:48,123
+Geçelim.
+
+36
+00:05:49,623 --> 00:05:57,323
+yöneticiler iş süreçleri hakkında daha detaylı bilgileri eşleştirebilecekler ve doğru kararlı alarak iş süreçlerini daha da geliştirebileceklerdir.
+
+37
+00:05:57,643 --> 00:06:01,103
+Bu nedenle geliştirecek sistem yönetim sürecine önemli faydalar sağlayacaktır.
+
+38
+00:06:02,803 --> 00:06:07,783
+Yasal fizibilite de sisteme ihtiyacı olan bazı yasal izinler ve ulusuna gereken düzenlemeler vardır.
+
+39
+00:06:07,783 --> 00:06:17,483
+Bunlar ticari işletme izni, vergi kaydı, vergi koruma düzenlemeleri, tüketici hakları düzenlemeleri, elektronik ticaret düzenlemeleri, ödeme sistemleri düzenlemeleri,
+
+40
+00:06:17,483 --> 00:06:31,143
+reklam düzenleme ve gibi izinler ve düzenlemelere ihtiyacı olacaktır. Sanal market uygulaması bu yasal faaliyetle göstermesi için gereklidir. Bu izin ve düzenlemelere sistem uygundur. Sistem patent ve fikri hakları ihlal etmemektedir.
+
+41
+00:06:32,643 --> 00:06:43,743
+Ekonomik zilteye geldiğimizde öncelikle harcamalardan bahsedeyim. Harcamalarımız çalışan maaştır ve reklam giderlerinin üzerine olacaktır. Maaşları ve giderleri görüyorsunuz. Toplam 97.200 liralık bir maliyetimiz olacak.
+
+42
+00:06:44,531 --> 00:06:46,171
+Peki sistem bize ne kazandıracak?
+
+43
+00:06:46,752 --> 00:06:50,012
+Raporda buradaki hesapların, rakamlarının daha detaylı açıklamalarını yaptık.
+
+44
+00:06:50,452 --> 00:06:53,271
+Bugünkü değer yöntemine göre net bugünkü değer 198 bin lira.
+
+45
+00:06:53,611 --> 00:06:56,051
+İş verim oranı %74, iş kontrolün %20.
+
+46
+00:06:56,391 --> 00:06:59,331
+İş verim oranı daha fazla olduğu için projenin kar edeceğini söyleyebiliriz.
+
+47
+00:06:59,831 --> 00:07:01,952
+Aşağıdaki tabloda da görüyorsunuz rakamları.
+
+48
+00:07:02,031 --> 00:07:05,651
+Buna göre 2,12'den 26 ay sonra projemiz kar etmeye başlayacak.
+
+49
+00:07:07,231 --> 00:07:10,751
+Zaman Fizbilitesi'ne geldiğimizde projeyi 11 Nisan'da başladık ve 21 Mayıs'ta bitirdik.
+
+50
+00:07:10,751 --> 00:07:11,491
+Tam 40 günde.
+
+51
+00:07:11,931 --> 00:07:13,691
+Waterfall yazılım geliştirme modelini kullandık.
+
+52
+00:07:13,691 --> 00:07:16,111
+Gant şamasında görüyorsunuz.
+
+53
+00:07:16,212 --> 00:07:18,072
+Gant şamasında genel olarak uyduğumuzu söyleyebilirim.
+
+54
+00:07:18,131 --> 00:07:19,432
+Ekip arkadaşlarıma teşekkür ediyorum.
+
+55
+00:07:20,752 --> 00:07:22,131
+Fizibilite maddesine geldiğimizde
+
+56
+00:07:22,131 --> 00:07:24,112
+aslında 3 tane seçeneğimiz vardı.
+
+57
+00:07:24,612 --> 00:07:26,311
+İlk seçenekte bu sistemi
+
+58
+00:07:26,311 --> 00:07:28,031
+Java ve SQL kullanarak yapalım dedik.
+
+59
+00:07:28,171 --> 00:07:30,011
+İkincisinde Mobile için, Suite, Web için
+
+60
+00:07:30,011 --> 00:07:31,872
+rahat kullanalım dedik. Üçüncüsünde sadece Flutter
+
+61
+00:07:31,872 --> 00:07:33,932
+kullanalım dedik. Mobile için, Web sitesinde
+
+62
+00:07:33,932 --> 00:07:34,971
+rahat kullanalım dedik.
+
+63
+00:07:36,072 --> 00:07:38,031
+Açıkçası buradayız. İkinci sistemi tercih ettik.
+
+64
+00:07:38,151 --> 00:07:40,131
+Çünkü ilk sistemde zaman açısından
+
+65
+00:07:40,131 --> 00:07:42,151
+sorun yaşayacaktık. Java hepimiz yapabiliyorduk ama
+
+66
+00:07:42,151 --> 00:07:44,511
+tecrübemiz azdı. Üçüncü sistemde de yine
+
+67
+00:07:44,511 --> 00:07:46,631
+flutter bilgimiz vardı ama yine tecrübemiz az olduğu için
+
+68
+00:07:46,631 --> 00:07:48,631
+zaman konusunda sorun yaşayacaktık. Bu yüzden ikinci sistemi
+
+69
+00:07:48,631 --> 00:07:49,171
+tercih ettik.
+
+70
+00:07:50,631 --> 00:07:52,491
+Gereksizliğinin anaynınızına geldiğimizde önce veri topladık.
+
+71
+00:07:52,752 --> 00:07:54,331
+Anketleri, yaptığımız anketleri ve sonuçlarını
+
+72
+00:07:54,331 --> 00:07:55,252
+burada görüyorsunuz.
+
+73
+00:07:57,151 --> 00:07:58,171
+Yüz kez modeline gelelim.
+
+74
+00:07:58,691 --> 00:08:00,231
+Yöneticimiz ürün ekleyebiliyor, ürün
+
+75
+00:08:00,231 --> 00:08:02,031
+çıkarabiliyor, ürün bilgisini güncelleyebiliyor.
+
+76
+00:08:02,491 --> 00:08:04,351
+Müşterimiz kayıt olduktan sonra oturum açıyor,
+
+77
+00:08:04,351 --> 00:08:06,151
+truflerlerini güncelleyebiliyor, orada
+
+78
+00:08:06,151 --> 00:08:08,472
+bakiyesini de güncelleyebiliyor. Alışveriş
+
+79
+00:08:08,472 --> 00:08:10,431
+yapmak için de kategori seçiyor, istediği ürünü
+
+80
+00:08:10,431 --> 00:08:12,091
+arayabiliyor, sepete ürün ekleyebiliyor,
+
+81
+00:08:12,151 --> 00:08:14,131
+ödeme yapabiliyor ve daha sonra isterseğer
+
+82
+00:08:14,131 --> 00:08:14,891
+derdendirme yapabiliyor.
+
+83
+00:08:16,351 --> 00:08:18,351
+Burada örnekli kullanım senaryosunu görüyorsunuz.
+
+84
+00:08:18,411 --> 00:08:19,971
+İki tane koyduk. Raporda daha fazla var.
+
+85
+00:08:20,071 --> 00:08:22,231
+Mesela ödeme yapma senaryosundan bahsedeyim.
+
+86
+00:08:22,731 --> 00:08:24,211
+Burada müşterimiz giriş ekranından
+
+87
+00:08:24,211 --> 00:08:26,211
+sisteme giriş yapacak. Daha sonra istediği kategori
+
+88
+00:08:26,211 --> 00:08:28,031
+yapışacak. Üründe
+
+89
+00:08:28,031 --> 00:08:30,271
+ekranda istenen ürünlerden istediği miktarda
+
+90
+00:08:30,271 --> 00:08:32,031
+istediği kadar seçecek. Daha sonra
+
+91
+00:08:32,031 --> 00:08:33,451
+sepet tuşuna basıp ödeme yapacak.
+
+92
+00:08:33,971 --> 00:08:36,051
+Alternatif olarak kategori seçiminin yapıldığı
+
+93
+00:08:36,051 --> 00:08:38,331
+ekrandan sepete basarak ödeme yapabilir müşteri.
+
+94
+00:08:38,871 --> 00:08:39,871
+Peki nasıl aksiyetler
+
+95
+00:08:39,871 --> 00:08:42,031
+gerçekleşebilir? Sepet boş olabilir.
+
+96
+00:08:42,151 --> 00:08:44,511
+müşterinin bakiyesi sepetin bakiyesini
+
+97
+00:08:44,511 --> 00:08:46,291
+karşılayabilir. Yani arası az
+
+98
+00:08:46,291 --> 00:08:48,411
+gelebilir. Veya stokta
+
+99
+00:08:48,411 --> 00:08:50,331
+bulunandan daha fazla miktarda ürün ekleyebilir
+
+100
+00:08:50,331 --> 00:08:51,171
+müşterimiz.
+
+101
+00:08:52,731 --> 00:08:54,051
+Tatsak düzey veri
+
+102
+00:08:54,051 --> 00:08:56,051
+ekşi diagramına geldiğimizde sistemimizin iki
+
+103
+00:08:56,051 --> 00:08:58,051
+kullanıcısı var. Biri yönetici, diğeri müşteri.
+
+104
+00:08:58,431 --> 00:09:00,211
+Yönetici sadece sisteme giriş
+
+105
+00:09:00,211 --> 00:09:02,071
+yapıyor. Müşteri de sisteme
+
+106
+00:09:02,071 --> 00:09:03,951
+giriş yapıyor. Aynı zamanda sisteme bir
+
+107
+00:09:03,951 --> 00:09:06,051
+değerlendirme onayı veriyor. Sistem de
+
+108
+00:09:06,051 --> 00:09:08,131
+müşteri siparişini ve değerlendirme sorusunu
+
+109
+00:09:08,131 --> 00:09:09,511
+soruyor. Geçebiliriz.
+
+110
+00:09:11,011 --> 00:09:11,851
+Birinci düzeyde
+
+111
+00:09:11,851 --> 00:09:13,951
+yönetici tarafından bir işlem, müşteri tarafından
+
+112
+00:09:13,951 --> 00:09:15,191
+altı işlem var. Bunlar
+
+113
+00:09:15,191 --> 00:09:17,511
+yönetici tarafından ürün fiyat işlemleri,
+
+114
+00:09:17,671 --> 00:09:19,771
+müşteri tarafından giriş menüsü işlemi, kayıt olma
+
+115
+00:09:19,771 --> 00:09:22,131
+işlemi, sepet işlemleri, profil bakiye işlemleri,
+
+116
+00:09:22,531 --> 00:09:23,951
+sipariş işlemleri, anket
+
+117
+00:09:23,951 --> 00:09:26,091
+ve yorum işlemi diye sıralanıyor.
+
+118
+00:09:26,671 --> 00:09:27,911
+Eğer yönetici
+
+119
+00:09:27,911 --> 00:09:29,791
+giriş yaptıktan sonra ürün fiyat
+
+120
+00:09:29,791 --> 00:09:31,351
+işlemlerine geliyor. Burada ürünlerin
+
+121
+00:09:31,351 --> 00:09:33,671
+bilgilerini güncelleyebilir,
+
+122
+00:09:33,791 --> 00:09:35,331
+ürünleri ekleyebilir, ürünleri silebilir.
+
+123
+00:09:35,951 --> 00:09:37,591
+Buradan alınan bilgiler ürünler
+
+124
+00:09:37,591 --> 00:09:39,651
+veri deposuna geliyor. Bu bilgiler de daha sonra
+
+125
+00:09:39,651 --> 00:09:40,991
+sepet işlemlerinde kullanılıyor.
+
+126
+00:09:41,691 --> 00:09:45,991
+Müşteri eğer yeni bir kullanıcıysa giriş menüsü işleminden kayıt olma işlemine geçiyor.
+
+127
+00:09:46,171 --> 00:09:48,231
+Buradaki bilgileri üyeler veri deposuna geliyor.
+
+128
+00:09:48,891 --> 00:09:53,431
+Eğer zaten bir kullanıcıysa başarılı giriş yaptıktan sonra sepet işlemlerine geliyor.
+
+129
+00:09:53,591 --> 00:09:58,231
+Buradan dilerse profil bilgilerini ve bakiye bilgilerini güncelleyebilir.
+
+130
+00:09:58,911 --> 00:10:01,571
+Dilerse de sepetini doldurup sipariş işlemlerine geçebilir.
+
+131
+00:10:01,571 --> 00:10:06,031
+Sipariş işlemlerine geldiğinde de siparişi müşteriye ulaştırıyoruz.
+
+132
+00:10:06,151 --> 00:10:09,251
+Aynı zamanda bir anket ve yorum işlemimiz var.
+
+133
+00:10:09,252 --> 00:10:13,192
+Bu işlem müşteriye bir değerlendirme onayı sunuyor.
+
+134
+00:10:13,332 --> 00:10:19,091
+Eğer müşteri değerlendirmeyi kabul ederse tekrardan anket ve yorum işlemine geri geliyoruz.
+
+135
+00:10:19,212 --> 00:10:21,151
+Ve buradaki cevaplar da sipariş kayıtlarında tutuluyor.
+
+136
+00:10:21,412 --> 00:10:21,811
+Geçeriz.
+
+137
+00:10:22,892 --> 00:10:25,912
+Örnek olarak bir yönetici tarafından bir de müşteri tarafından.
+
+138
+00:10:26,288 --> 00:10:44,628
+aldım burada. Ürün fiyat işlemlerini 4 farklı işlemi ayırdım. Ürünleri görüntüle, ürün ekli, ürün için ürün güncelleri diye. Müşteri tarafından da sepet işlemlerini aldım. Kategori seç, sepeti ürün ekli, sepeti görüntüle, sepetlik ürün adetini güncelleri, baki yeterli ve sbok kontrolü olmak üzere 5 tane işlemimiz var. Geçebilirim.
+
+139
+00:10:44,628 --> 00:11:01,628
+Veri sözü örneği sunumda 3 tane koydum kalanları raporda bulabilirsiniz örnek olarak da 1.4 ürün güncelleri, tanım yöneticinin sistemde var olan bir ürünün fiyat stok veya ismi resmin değiştirme işlemi, yedisi ürünler, çıktısı ürün fiyat stok bilgileri
+
+140
+00:11:01,628 --> 00:11:03,667
+Geçelim
+
+141
+00:11:03,667 --> 00:11:09,628
+Süreç tanımlama formu örnekleri olarak 2 adet süreç tanımlama formu verdik
+
+142
+00:11:09,628 --> 00:11:35,527
+verdik. Burada birincisi sepet işlemleri, ikincisi ürün güncellemeyle alakalı. Tanımında sepet işlemleri için sepette ürün ekleme, ürün çıkarma, ürün adetini arttırma veya azaltma işlemlerinin yapılması var. Girdiler ve çıktılar görüyorsunuz. Aynı şekilde ürün güncellemede de yöneticimiz sistemde var olan bir ürün bilgilerini güncellemesi var. Girdiler ve çıktılar yine burada. İki süreçte çevrim içi işliyor ve süreç mantığını da sözde kod olarak aşağıda görebilirsiniz.
+
+143
+00:11:35,527 --> 00:11:40,707
+oluşturulan yapı diyagramı da genel olarak bu şekilde.
+
+144
+00:11:43,607 --> 00:11:56,387
+ER diyagramında da 3 tane varlığımız var. Müşteri ürünler yönetici ilişkilerini görüyorsunuz. Örnek olarak da mesela ürünler, isim, id, kategori, stok ve fiyat olmak üzere 5 tane bilgisi var.
+
+145
+00:11:58,727 --> 00:12:03,167
+Anket olarak da müşteriye 3 tane soru sorduk. Burada da cevaplarını görüyorsunuz.
+
+146
+00:12:05,527 --> 00:12:16,387
+Evet, mobil uygulamayı ben anlatacağım. Uygulamayı en baştan başlattığımızda bir giriş animasyonu bizleri karşılıyor.
+
+147
+00:12:19,807 --> 00:12:26,847
+Admin kendisine ait bir mail ve şifre ile öncelikle admin paneline yönlendiriliyor.
+
+148
+00:12:30,548 --> 00:12:39,268
+Admin paneline geldiğimizde uygulamamızdaki bütün ürünler alt alta listeleniyor. Ürünün ismi, kategorisi, fiyatı ve stok bilgisi admine gösteriliyor.
+
+149
+00:12:39,428 --> 00:12:51,267
+Sağ üst taraftan artı butonuna bastığında buradan ürünün resmini ekleyebiliyor. Ürün ismi, fiyatı, stok bilgisi ve kategorisini seçtikten sonra ürünü kaydediyor.
+
+150
+00:12:51,267 --> 00:12:59,048
+Herhangi bir ürünü kaydırarak silebiliyor. Üzerine tıkladığında ise ürünün bilgileri geliyor. İstediği bilgi de değişiklik yapabiliyor.
+
+151
+00:12:59,048 --> 00:13:03,167
+giriş ekranına geri döndüğümüzde burada bir şifremi unuttum kısmı var.
+
+152
+00:13:03,568 --> 00:13:07,707
+Kullanıcı mail adresine girerek mail adresine bir şifre değiştirme linki gönderebiliyor.
+
+153
+00:13:08,628 --> 00:13:10,088
+Yeni bir kullanıcı oluşturalım.
+
+154
+00:13:22,451 --> 00:13:41,472
+Şifreyi 1, 2, 3, 4, 5, 6 koyuyorum. İlgili bütün kontroller yapılıyor. Eğer iki tane şifre birbirine uyumazsa uyarı veriyor. Aynı şekilde mail adresi de düzgün bir biçimde yazılmadıysa onun uyarısı da veriliyor. Kullanıcı başarılı bir şekilde üye olduktan sonra giriş ekranına tekrar geri dönülüyor. Az önce oluşturduğum kullanıcı ile giriş yapıyorum.
+
+155
+00:13:48,467 --> 00:14:11,228
+Giriş yaptıktan sonra öncelikle bütün kategorilerin listelendiği bir ekran var. Kullanıcı istediği bir kategoriye tıkladıktan sonra o kategoriyle alakalı ürünler listeleniyor. Yukarıda bir arama search barımız var. Burada istediği bir ürünü ismiyle arayabiliyor. Ürünlerin sağ tarafındaki artı butonu ile sepete ürün ekleyebiliyor. Ürün ekledikçe yukarıda da sepet ikonu üzerinde sepetteki ürün sayısı güncelleniyor.
+
+156
+00:14:11,228 --> 00:14:41,067
+şu anda kullanıcının herhangi bir bakiyesi yok sıfır olarak başladığı için hata veriyor yetersiz bakiye uyarısı veriyor profil ayarlarından istediği şekilde bakiye eklemesi yapabiliyor örneğin 45 dolarlık bir bakiye ekledi buradan aynı şekilde isim soy isim güncelleyebiliyor profil resmi ekleyebiliyor buradan herhangi bir resim seçelim profil resmi de eklendi yukarıda bir anahtar ikonumuz var yine buradan kullanıcı mail adresine bir şifre değiştirme
+
+157
+00:14:41,067 --> 00:14:42,667
+isteği gönderebiliyor.
+
+158
+00:14:44,707 --> 00:14:48,347
+Tekrardan sepete geri dönecek olursak şu anda 45 dolarlık bir bakiyemiz var.
+
+159
+00:14:48,507 --> 00:14:51,067
+Toplam 4.86'lık alışverişini onaylıyor.
+
+160
+00:14:52,007 --> 00:14:56,188
+Başarılı bir şekilde gerçekleştirdiğinde kullanıcıya bir değerlendirme yapmak isteyip istemediği soruluyor.
+
+161
+00:14:56,267 --> 00:14:58,587
+Eğer hayır atıklarsa kategori ekranına geri dönülüyor.
+
+162
+00:14:59,107 --> 00:15:01,188
+Evet atıkladığında da anket ekranına geliyor.
+
+163
+00:15:01,747 --> 00:15:07,447
+Burada soruları evet hayır şeklinde cevaplıyor ve en azından bir 10 karakterlik yorum yaptıktan sonra
+
+164
+00:15:07,447 --> 00:15:09,247
+bu anketi gönderebiliyor.
+
+165
+00:15:09,247 --> 00:15:18,247
+FHB'i kullandık veri tabanı olarak. Authentication kısmında az önce eklediğim kullanıcı buraya düştü.
+
+166
+00:15:26,008 --> 00:15:33,328
+Bakiyemiz 45'ti. İlgili alışveriş sonrasında 40.14'e düştü. E-mail'i, isim, soy ismi ve profil resmi burada gözüküyor.
+
+167
+00:15:33,328 --> 00:15:39,308
+yaptığı sipariş kaydı da burada aldığı ürünler ve değerlendirme sonuçları kaydediliyor.
+
+168
+00:15:40,387 --> 00:15:44,667
+Az önce gönderdiğim şifre değiştirme isteği de mail adresine düştü.
+
+169
+00:15:44,667 --> 00:15:53,228
+Buradan linke tıklayarak web sitesine yönlendiriliyor ve yeni şifresini girerek başarılı bir şekilde şifresini değiştirebiliyor.
+
+170
+00:15:58,611 --> 00:16:03,891
+Teşekkür ediyoruz. Siz neden İngilizce yaptınız? Uygulamayı.
+
+171
+00:16:06,011 --> 00:16:07,811
+Global'e hitap etmek için.
+
+172
+00:16:10,992 --> 00:16:12,291
+Size görüntü geliyor mu?
+
+173
+00:16:13,231 --> 00:16:13,591
+Geliyorum.
+
+174
+00:16:14,952 --> 00:16:21,091
+Hocam ben devam ediyorum. Ben de aynı uygulamanın web browser tarafında kullanabilmesi için React uygulaması yazdım.
+
+175
+00:16:21,872 --> 00:16:26,251
+Aynı şekilde iş değiş. Buradan hemen bir yeni hesap açıyorum ben de.
+
+176
+00:16:28,611 --> 00:16:32,812
+Bu tarafta da çeşitli kontroller yapılıyor hata yakalamaları
+
+177
+00:16:36,596 --> 00:16:45,195
+kayıttan sonra giriş yapmaya çalışıyorum. Burada da uygulamada olduğu gibi ilk giriş yapıldığında kategoriler yükleniyor.
+
+178
+00:16:45,715 --> 00:16:52,155
+Ben önce profilden basmak istiyorum biraz. İlk başta profilde bakiye sıfır oluyor. Gerekli bilgiler geliyor profilde.
+
+179
+00:16:52,635 --> 00:16:58,436
+Eğer sepete bir ürün eklediğimizde, mesela buradan erik eklediğimizde, sepette bunu görebiliyoruz.
+
+180
+00:16:59,096 --> 00:17:03,276
+Daha sonra burada detaylı bir şekilde görebiliyoruz ve kaldırabiliyoruz buradan.
+
+181
+00:17:03,276 --> 00:17:20,496
+Sipariş yapmak istediğimizde bir soru çıkıyor. Later dediğimizde bakiyenin olmadığı söyleniyor. Buradan bakiye yüklemesi yapabiliyoruz. Bakiyemizi güncelledik ve şimdi adışverişi yapacağız. Yine sorulara cevap vermeyeceğimi söyledim ve sipariş tamamlandı.
+
+182
+00:17:20,496 --> 00:17:31,475
+Bakiye değil, bakiye. Pardon hocam, çok özür dilerim. Bakiyemizin güncellendiğini gördük ve burada bakiyemize tekrardan sit edebiliriz ya da şu an şeyi göstereyim en iyisi.
+
+183
+00:17:31,475 --> 00:17:44,035
+ismimizi ve soy ismimizi mesela arkadaşım ismini yapayım buradan güncelleyebiliyoruz. Daha sonra mobilde olduğu gibi kendi profil ismimizi güncelleyebiliyoruz.
+
+184
+00:17:45,255 --> 00:17:54,816
+Başka ne yapalım? Bir de şifremizi buradan da reset edebiliriz içerideyken mobilde olduğu gibi ya da şifremizi unuttuysak buradan da mesela olmayan bir mail yollayalım.
+
+185
+00:17:54,816 --> 00:18:06,155
+olmayan bir mailde hata alıyoruz ama kendi mailimizi yolladığımızda o adrese bir tane mail yollanıyor ki şifremizi sıfırlayalım.
+
+186
+00:18:07,216 --> 00:18:13,476
+Şimdi şurada şöyle bir farklılık var. Admin kısmı web browserda yapmadık çünkü bir tane admin oluyor.
+
+187
+00:18:13,476 --> 00:18:21,555
+Bir tane admin olduğu için de böyle bir ihtiyaç duymadık en azından şimdilik. Daha sonra ilerleyen zamanlarda belki eklemeler yapacağız browser kısmı da admin için.
+
+188
+00:18:21,555 --> 00:18:27,316
+şu an sadece browser'ı müşteriler kullanıyor yani alışveriş yapacak kişiler. Teşekkür ederim dinlediğiniz için.
+
+189
+00:18:29,816 --> 00:18:31,676
+Biz teşekkür ederiz. Seninize sağ olun.
+
+190
+00:18:32,956 --> 00:18:36,435
+Evet. Şimdi sıradaki grubumuz M grubu.
+
+191
+00:18:38,575 --> 00:18:44,915
+M grubunda Ahmet'i göremedim. Diğer arkadaşlar buradaydı 4 kişi.
+
+192
+00:18:52,276 --> 00:18:53,615
+Enes'i paylaşıyor musun?
+
+193
+00:18:58,867 --> 00:19:03,087
+Talham, Metehan, Enes ve Muhammed Said Bey.
+
+194
+00:19:04,328 --> 00:19:07,907
+Bu şey, Ahmet yok mu? Ahmet Kocatürk?
+
+195
+00:19:08,387 --> 00:19:10,248
+Hocam, çalışmalara katılmadı ya.
+
+196
+00:19:11,987 --> 00:19:12,967
+Yani genel olarak dört kişi.
+
+197
+00:19:13,587 --> 00:19:14,227
+Efendim?
+
+198
+00:19:14,767 --> 00:19:16,767
+Bütün grup aynı fikirde mi?
+
+199
+00:19:17,667 --> 00:19:18,687
+Aynı fikirde.
+
+200
+00:19:19,167 --> 00:19:19,687
+Evet hocam.
+
+201
+00:19:19,847 --> 00:19:25,387
+Tamam, peki.
+
+202
+00:19:27,731 --> 00:19:38,152
+Evet arkadaşlar, Scooter neydi? Yağlama sistemi. Adını Ortak Yıldız Scooter İşletme Sistemi olarak güncellemişsiniz. Buyurun.
+
+203
+00:19:38,391 --> 00:19:42,072
+Söz sizde hızlıca 15 dakika içinde bitiriyoruz.
+
+204
+00:19:51,380 --> 00:19:52,939
+Konuşuyorsanız ben duymuyorum.
+
+205
+00:19:54,860 --> 00:19:56,340
+Sesin gelmiyor henüz.
+
+206
+00:20:08,115 --> 00:20:09,715
+Galiba sesimiz onda gitmiyor.
+
+207
+00:20:11,275 --> 00:20:14,115
+Bir pink lane arkadaşı.
+
+208
+00:20:15,615 --> 00:20:22,295
+Enes, mikrofonun açık görünüyor ama bir şekilde sesin kapalı.
+
+209
+00:20:23,355 --> 00:20:27,636
+Belki fiziksel olarak function tuşlarından falan kapatmış olabilirsin.
+
+210
+00:20:35,731 --> 00:20:42,491
+Hocam, şu an ulaştım. Bir dakikaya geliyorum dedi. Galiba ayarlamaya çalışıyorum şu anda.
+
+211
+00:20:43,551 --> 00:20:44,391
+Tamam, peki.
+
+212
+00:21:28,948 --> 00:21:29,387
+Alo.
+
+213
+00:21:31,448 --> 00:21:32,347
+Geliyor şimdi.
+
+214
+00:21:33,948 --> 00:21:36,767
+Hocam kusura bakmayın bilgisayarımda bir sıkıntı çıktı.
+
+215
+00:21:42,516 --> 00:21:44,175
+Telefondan mı bağlanın şimdi sen?
+
+216
+00:21:45,675 --> 00:21:50,175
+Yok hocam, kulaklığımı arıyordum az önce, kulaklığımı buldum.
+
+217
+00:21:51,295 --> 00:21:51,995
+Tamam, hadi bakalım.
+
+218
+00:21:51,995 --> 00:21:53,035
+Böyle bir şey yoktu ama.
+
+219
+00:21:54,356 --> 00:21:56,896
+Bak, 3 dakika, 4 dakikanız geçti, hadi çabuk.
+
+220
+00:21:57,155 --> 00:21:58,355
+Kusura bakmayın hocam.
+
+221
+00:21:59,016 --> 00:22:02,635
+Bugün sizinle beraber yazdığımız skuter otomasyonunu inceleyeceğiz.
+
+222
+00:22:03,895 --> 00:22:11,735
+Teknolojinin gelişmesiyle beraber skuter otomasyonu, kütbane otomasyonu ve sanat sipariş sistemleri gibi bilgi sistemlerinin kullanılına ihtiyaç duyulmuştur.
+
+223
+00:22:12,516 --> 00:22:39,835
+Projemizin tanımı, evantelinde toplu bir şekilde skuter bulunan ve birçok merkezi bulunan bir işletme, bazı zorluklardan dolayı bizden bir otomasyon tasarlanmasını istemiştir. Bu proje kullanıcılara nasıl bir fayda sağlayacak? Operatörler için yapılacak işlemlerin hesaplamalarının kolaylaştırılması ve kayıtta tutulmasını kolaylaştıracak. Yönetim için de işlemleri ve işlemlerin geçmişteki hallerini de incelemeyi kolaylaştıracak.
+
+224
+00:22:39,835 --> 00:22:45,396
+organizasyon aşamımızı burada görebiliyorsunuz. Az önce sorduğunuz gibi 4 kişi burada da.
+
+225
+00:22:46,516 --> 00:22:54,715
+Yasal fizibilite kısmına gelirsek, sistemin herhangi bir sunucuyla bağlantısı olmaması sebebiyle kişisel bilgilerin güvenliği konusunda bir problem yoktur.
+
+226
+00:22:54,715 --> 00:23:00,456
+Ve kullanıcılarımızın bilgileri KBKK kapsamındadır. Kimseyle paylaşılmayacaktır.
+
+227
+00:23:01,016 --> 00:23:08,715
+Sosyal fizibilite kısmında skuter kullanımının yaygınlaşması ve bu sistemin bütün araçlar için tasarlanabilecek olması
+
+228
+00:23:08,715 --> 00:23:14,155
+hedef kitle tarafından kabul edilebileceğini öngörmemize sebep oldu.
+
+229
+00:23:14,575 --> 00:23:22,376
+Yönetim fizibilitesinde de ücretlerin hesaplanmasında yönetimi düşen fiziksel yükü azaltmıştır.
+
+230
+00:23:24,675 --> 00:23:33,575
+Fizibilite raporlarının devamına gelirsek teknik fizibilite kısmında yazılımda Visual Studio ve veri tabanında da Microsoft SQL kullandık.
+
+231
+00:23:33,575 --> 00:23:35,975
+Sistem Windows'da gerçeklenecektir.
+
+232
+00:23:35,975 --> 00:24:04,475
+Bunun fizibilitesinde aslında biraz yüksek gereksinimi bilgisayar tasarladık. Bunun sebebi sistemin uzun süre stabil bir şekilde devam edebilmesi. Ekonomik fizibilite kısmında biz böyle bir uygulamanın 6000 dolar miktarında bir ücrette tasarlanabileceğini varsaydık. Bilgisayarında 1000 ve 1500 dolar arasında olacağını düşünürsek toplam 7000-7500 dolar tutacaktır.
+
+233
+00:24:05,975 --> 00:24:22,175
+Burada GENT diagramımızı görebilirsiniz. Biz süremizi dört kısmına ayırdık. Ön inceleme ve fizibilite raporlarını iki hafta, sistem analizini bir hafta, sistem tazarımını iki hafta, sistemin kodlanmasını da dört haftaya ayırdık. Burada GENT diagramımızı inceleyebilirsiniz isterseniz.
+
+234
+00:24:22,176 --> 00:24:34,896
+fizibilite maddesinde de aslında bizim için en önemli olan şey tasarımcılarımızın ve kodlayıcılarımızın C Sharp ve Microsoft SQL'e yatkın olması.
+
+235
+00:24:34,896 --> 00:24:48,956
+Onun dışında ekonomik fizibilitede pek bir farklılık yok. Zaman fizibilitesinde de uygulamanın Microsoft SQL ve C Sharp bildiğimiz için süremizi azalttı. Bu yüzden önerilen sistem 3'ü tercih ettik.
+
+236
+00:25:01,527 --> 00:25:04,248
+Merhabalar, sitem analizi safhasına ben devam edeceğim.
+
+237
+00:25:04,867 --> 00:25:08,228
+Sitem analizi safhası aslında burada yine müşterilerle görüşmeye devam ediyoruz.
+
+238
+00:25:08,748 --> 00:25:16,487
+Fakat baştakilerden farklı olarak biraz daha burada sitemin ayrıntılı bir tasarımı ya da nasıl olacağı konuşulmaya başlanıyor.
+
+239
+00:25:17,087 --> 00:25:22,847
+Biz burada örneklerine yer vermeyi unutmuşuz ama anketle bireysel görüşme yöntemlerini kullandık.
+
+240
+00:25:23,387 --> 00:25:30,227
+Genel olarak aslında görüşmelerimiz müşterinin sitemden beklentilerinin hem bugün için hem gelecek için beklentilerinin neler olduğu üzerineydi.
+
+241
+00:25:30,847 --> 00:25:36,087
+Yine bu doğrultuda da sistemde ne gibi modüllerin olacağı karar verildi, ne gibi işlemlerin yapılacağı karar verildi.
+
+242
+00:25:36,087 --> 00:25:41,147
+Az önce arkadaşım da bahsetti zaten. Genel olarak aslında müşteri ve skuter kayıtlarını tutmak istiyoruz.
+
+243
+00:25:41,687 --> 00:25:48,268
+Bununla ilgili bazı işlemlerin gerçekleştirilmesi ve bu işlemlerin de geçmiş kayıtlarının sistemde tutulması bekleniyor.
+
+244
+00:25:48,367 --> 00:25:52,707
+Bu doğrultuda modüllerimizi yine görüyorsunuz zaten. Devam edebiliriz.
+
+245
+00:25:53,967 --> 00:25:57,687
+Sıfırıncı düzey bir akış diagram var burada. İki tane aktörümüz var.
+
+246
+00:25:57,687 --> 00:26:00,647
+kullanıcılığı ya daha doğrusu müşterilerin doğrudan
+
+247
+00:26:00,647 --> 00:26:02,827
+sisteme ulaşamıyorlar. Daha ziyade
+
+248
+00:26:02,827 --> 00:26:04,547
+arada bir operatör aracılığıyla
+
+249
+00:26:04,547 --> 00:26:06,167
+müşteri işlemlerini gerçekleştiriyoruz.
+
+250
+00:26:06,707 --> 00:26:08,147
+Burada bir de yönetici tarafımız var.
+
+251
+00:26:08,587 --> 00:26:10,507
+Operatör genel olarak kiralama işlemi
+
+252
+00:26:10,507 --> 00:26:12,348
+ya da bu müşteri listesi görüntüleme,
+
+253
+00:26:12,507 --> 00:26:14,687
+gerekli zamanlı skutur envanterini görüntüleme
+
+254
+00:26:14,687 --> 00:26:16,607
+ve yine müşteri teslim etme
+
+255
+00:26:16,607 --> 00:26:17,848
+işlemlerini gerçekleştirebiliyor.
+
+256
+00:26:17,848 --> 00:26:19,687
+Bu doğrultuda aslında sisteme
+
+257
+00:26:19,687 --> 00:26:21,827
+müşteri kaydı yapıyorsa eğer
+
+258
+00:26:21,827 --> 00:26:23,827
+üyelik bilgilerine giriyor. Eğer ki
+
+259
+00:26:23,827 --> 00:26:25,707
+diğer görüntüleme ya da kayıt
+
+260
+00:26:25,707 --> 00:26:30,247
+daha doğrusu kiralama işlemlerini yapıyorsa yine skuter numarası ve müşteri numarası üzerinden
+
+261
+00:26:30,247 --> 00:26:34,527
+kimi zaman birlikte kimi zaman tek tek bunları sisteme girerek istediği bilgileri elde edebiliyor
+
+262
+00:26:34,527 --> 00:26:37,347
+ya da sistem üzerinde bir takım işlemler gerçekleştirebiliyor.
+
+263
+00:26:37,867 --> 00:26:41,627
+Yönetici, burada kiralama işlemini yöneticiye vermedik.
+
+264
+00:26:41,887 --> 00:26:47,487
+Yönetici, kiralama işlemini vermedik ama genel olarak modüller noktasında biraz daha esnek birçok modüle ulaşabiliyor.
+
+265
+00:26:48,027 --> 00:26:51,287
+Burada operatörden farklı olarak operatör ataması yapabiliyor.
+
+266
+00:26:51,287 --> 00:26:53,307
+Skuter kayıt, envantere kayıt yapabiliyor.
+
+267
+00:26:53,867 --> 00:26:55,347
+Bakım işlemini gerçekleştirebiliyor.
+
+268
+00:26:55,707 --> 00:26:58,567
+Yine geçmiş bilgi işlemlerini de yöneticiye verdik.
+
+269
+00:26:58,887 --> 00:27:03,287
+Benzer şekilde yine scouter numarası ve müşter numarası üzerinden genel olarak bu işlemleri gerçekleştirebiliriz.
+
+270
+00:27:03,687 --> 00:27:09,628
+Ek olarak scouter kaydı yapacağımız zaman ya da operatör kaydı yapmak istediğimiz zaman ek bilgiler gerekebiliyor.
+
+271
+00:27:09,727 --> 00:27:10,807
+Sisteme girmemiz gerekebiliyor.
+
+272
+00:27:11,407 --> 00:27:12,128
+Devam edebiliriz.
+
+273
+00:27:13,607 --> 00:27:15,427
+Burada birinci düzey veri akış diagramı var.
+
+274
+00:27:16,107 --> 00:27:19,988
+Genel olarak aslında arka planda işlemler benzer şekilde gerçekleşiyor.
+
+275
+00:27:19,988 --> 00:27:24,347
+O yüzden ben ikinci düzey veri akış diagramlarında belirlediğim iki üç tane sınav aynasını bahsedeceğim.
+
+276
+00:27:24,348 --> 00:27:42,488
+Burada ama veri depolarına bakabiliriz. Bazı bilgileri sakladığımızda bahsetmiştim. Burada depoları görüyorsunuz. Müşteri, bakım, operatörler, skuter kayıtları ve kiralama geçmişi depoları bulunuyor. Kimi zaman bu depolar üzerine veri yazıyoruz, kimi zaman buralardan yine verileri çekiyor oluyoruz. Devam edebiliriz.
+
+277
+00:27:43,488 --> 00:27:47,467
+Burada skuter kiralama işlemine ait ikinci düzey veri akış diagramını görüyoruz.
+
+278
+00:27:47,667 --> 00:27:51,588
+Operatör skuter ve müşteri numarasını sisteme girerek işlemi başlatıyor.
+
+279
+00:27:52,027 --> 00:27:56,488
+Tabii burada olmayan bir skuter ya da müşteri üzerinden işlem yapamayacağımız için öncelikle bir kontrol yapıyoruz.
+
+280
+00:27:56,628 --> 00:27:59,268
+Sistem hata veriyor mu ya da uyarı veriyor mu?
+
+281
+00:27:59,308 --> 00:28:00,687
+Yani duruma göre uyarı veriyor aslında.
+
+282
+00:28:01,288 --> 00:28:04,107
+Eğer herhangi bir hata almıyorsak işlemler devam ediyor.
+
+283
+00:28:04,547 --> 00:28:09,008
+Burada öncelikle skuter veri deposundan skuter'ın müsaitlik durumunu güncellememiz gerekiyor.
+
+284
+00:28:09,007 --> 00:28:10,347
+kirada mı değil mi?
+
+285
+00:28:10,507 --> 00:28:12,587
+Eğer geri gel şu an geçmem.
+
+286
+00:28:13,395 --> 00:28:27,055
+güncellememiz gerekiyor. Eğer müsaitse kirada durumuna geçiriyoruz. Yine devamında da bu işlemin kaydını tutmak istiyoruz. Bu sebepten dolayı o günün tarih ve saatiyle kiralama geçmişi deposunda yeni bir kayıt oluşturuyoruz. Şimdi devam edebilirsin.
+
+287
+00:28:27,495 --> 00:28:40,335
+Tabii burada kiralama geçmişi deposu sadece başlangıçlar değil, hem teslim tarihi, süre ve ücret bir bilgileri de tutması gerekiyor. Bu işlemi de aslında skotür teslim işleminde, bu verileri de skotür teslim işleminde giriyor oluyoruz. Operatör yine müşterinin numarası giriyor.
+
+288
+00:28:40,335 --> 00:28:56,675
+Burada herhangi bir hata almıyorsak kiralama geçmişi deposundan ilgili müşteri numarasına ait en son kayıt bulunuyor. Bu kayıttan alınan kira başlangıç tarihi ve o günün tarihi üzerinden ne kadar bir süre geçti, ne kadar süre kirada kaldı ve yine bu outputla da ücreti hesaplamış oluyoruz.
+
+289
+00:28:56,675 --> 00:29:10,675
+ilgili veriler yine kiralama geçmişi deposunda ilgili yerlere yerleştiriliyor. Son olarak da tabii teslim işlemini gerçekleştirdiğimiz için skotür bilgi deposunda müsaitlik durumunu kirada durumundan uygun durumuna çeviriyoruz.
+
+290
+00:29:13,415 --> 00:29:26,616
+Son olarak burada bir tane de görüntüleme işlemine yer vermek istedim. Skotür kiralama geçmişi görüntüleme işlemi. Burada operatör skotür numarasını sisteme giriyor. Girmesi durumunda herhangi bir hata olmuyorsa eğer öyle bir skotür
+
+291
+00:29:26,616 --> 00:29:32,936
+mevcutsa kiralama geçmişi deposundan ilgili bütün kiralama kayıtları sistemde gösteriliyor.
+
+292
+00:29:36,692 --> 00:29:48,931
+Merhaba, ben Talha. Sistem tasama evresinde müşteriyle de görüşülerek sistemin arayüzü, arayüzü, girdi çıktıları belirlenip bu doğrultuda yapı diyagramı ve ER diyagramı oluşturulmuştur.
+
+293
+00:29:50,551 --> 00:30:00,391
+Şimdi yapı diyagramını burada görüyoruz. Bir önce giriş ekranımız var. Buraya kullanıcı adı ve şifre giriliyor ve buradan onay bilgisi ve gidilecek ekran tipi geliyor.
+
+294
+00:30:00,391 --> 00:30:18,151
+ona göre yönetici ekranına veya operatör ekranına geçiş sağlıyoruz. Yönetici ekranında bakım işlemleri, operatör kayıt, skuter ve müşterilerin geçmiş görüntülenmeleri, skuter kayıt, müşteri listeleme ve skuter envanter görüntüleme işlemleri yapılıyor.
+
+295
+00:30:18,151 --> 00:30:26,692
+operatör ekranında da müşteri kayıt teslim işlemleri, kiralama işlemleri, müşteri listeleme ve skuter envanter görüntüleme işlemleri yer alıyor.
+
+296
+00:30:26,692 --> 00:30:34,372
+Burada skuter envanter görüntüleme ve müşteri listeleme işlemleri iki ekranda da ortak olarak yapılmakta.
+
+297
+00:30:36,092 --> 00:30:36,971
+Geçebiliriz.
+
+298
+00:30:38,151 --> 00:30:46,091
+ER diyagramında da varlıklarımızı müşteri, personel, skuter ve bakım olarak belirledik.
+
+299
+00:30:46,092 --> 00:30:55,632
+Bunlar ise ilişkilerde müşteri skuturu kiralıyor, işte personel müşteriyi oluşturuyor veya skuturu oluşturuyor gibi ilişkileri burada görmekteyiz
+
+300
+00:30:55,632 --> 00:31:05,312
+Mesela bir tanesi örnek olarak verecek olursak skuturda mesela özellik olarak marka, model, kayıt tarihi, müsaitlik durumu yani o an kiralanık olup olmadığı
+
+301
+00:31:05,312 --> 00:31:12,672
+Daha sonrasında skutur numarası ve skutur ID'yi görmekteyiz. Burada skutur ID de birinci anahtarı olarak geçmekte
+
+302
+00:31:12,671 --> 00:31:16,811
+Şimdi sözü sayıda arkadaşıma bırakıyorum
+
+303
+00:31:16,811 --> 00:31:20,731
+Ve slide kısmı bu kadardı hocam
+
+304
+00:31:20,731 --> 00:31:22,051
+Merhaba
+
+305
+00:31:22,051 --> 00:31:24,751
+Sesin geliyor mu?
+
+306
+00:31:25,271 --> 00:31:26,031
+Geliyor geliyor
+
+307
+00:31:26,031 --> 00:31:27,671
+Tamamdır hocam
+
+308
+00:31:27,671 --> 00:31:31,192
+Şimdi ekran paylaşacağım
+
+309
+00:31:37,523 --> 00:31:38,603
+Geldim Ekrem.
+
+310
+00:31:41,183 --> 00:31:43,743
+Geldim.
+
+311
+00:31:45,243 --> 00:31:47,743
+Programı başlatıyorum.
+
+312
+00:31:54,740 --> 00:32:04,279
+Programı çalıştırdığımızda bizi blogin ekranı karşılıyor. Burada kullanıcı adı ve şifre girdikten sonra şu an o ekranı göremiyoruz.
+
+313
+00:32:05,359 --> 00:32:05,719
+Öyle mi?
+
+314
+00:32:08,359 --> 00:32:11,819
+Paylaşımı durdurup bir dakika paylaşayım.
+
+315
+00:32:21,619 --> 00:32:25,619
+programı çalıştırdıktan sonra ekran paylaştığından programı seçsene.
+
+316
+00:32:29,619 --> 00:32:33,619
+Bu tamamdır şunları bir saniye.
+
+317
+00:32:41,875 --> 00:32:44,076
+Şu an görünüyor mu? Evet, görünüyor.
+
+318
+00:32:45,856 --> 00:33:02,615
+Programa girdikten sonra kullanıcı adı ve şifreyle giriş yapıyoruz. Bu kullanıcı adı ve şifreler burada personel oluşturuyor ve rollere göre farklı bir ekran karşılıyor. Şu anda bir admin ekranındayız. Program içerisindeki bütün modüller burada var.
+
+319
+00:33:02,615 --> 00:33:12,635
+ve personel içerisinde kayıt yaparken burada örneğin bir kayıt yapalım.
+
+320
+00:33:13,995 --> 00:33:16,195
+Kullanıcı türlerini burada seçiyoruz.
+
+321
+00:33:16,195 --> 00:33:28,596
+Bunu operatör olarak seçip bunu aktif olarak kaydettiğimde bu kullanıcıyla giriş yaptığımda beni farklı bir ekran karşılayacak.
+
+322
+00:33:29,635 --> 00:33:31,975
+Müşterilerin kayıtlarını burada yapıyoruz.
+
+323
+00:33:32,615 --> 00:33:40,115
+Burada ekledikten sonra müşteri 1 diyeyim örneğin. Telefon numarası istiyor.
+
+324
+00:33:42,515 --> 00:33:44,815
+Burada da bir e-mail adresi girmem gerekiyor.
+
+325
+00:33:48,660 --> 00:34:16,840
+kaydet diyorum. Düzenlemek için burada düzenleme seçeneğini seçip burada kaydı güncelleyebilirim. Scooter'da marka ve modeller kaydediyoruz ve buradaki envantör kodlarını veri tabanına otomatik oluşturuyoruz. Burada scooterların durumları var. Şu anda uygun mu, kirada mı veya bakımda mı diye. Bu da scooterların envantere giriş kayıt tarihlerini gösteriyor.
+
+326
+00:34:18,659 --> 00:34:27,540
+skuter geçmişinde burada öncelikle bir skuter'ı kiraya verelim daha sonra geçmişinde neler olduğunu göreceğiz.
+
+327
+00:34:28,180 --> 00:34:30,759
+Burada müşteri numarası giriyorum örneğin 3 numaralı müşteri.
+
+328
+00:34:32,259 --> 00:34:33,380
+Düzenle diyorum.
+
+329
+00:34:34,759 --> 00:34:43,279
+Şurada birini seçtikten sonra düzenle diyorum ve burada şu anda kiraya verilmeye uygun olan skuter'lar listeleniyor.
+
+330
+00:34:43,279 --> 00:34:46,979
+Bu veri tabanına otomatik olarak buraya geliyor.
+
+331
+00:34:46,979 --> 00:35:00,639
+diyelim 10 numaralı scooter'ı kiraya vermek istiyorum. Burada kiraya verdikten sonra scooter geçmişinde 10 numaralı scooter'ı arattığımda şu anda kirada olduğu görünüyor.
+
+332
+00:35:00,639 --> 00:35:13,359
+dönüşünü yapılmamış. Kiraya gelip burada tekrar bunu verdiğim müşteri seçtiğimde burada şey olarak da burada
+
+333
+00:35:13,359 --> 00:35:22,819
+proses olarak da iade seçtiğimde ve kaydet dediğimde şu anda bir dakikaya kiraya verileni bir dakikaya geçmediği için bu sıfır görünüyor ama
+
+334
+00:35:22,819 --> 00:35:47,999
+burada normalde iade ederken tutar görünüyor. Bu fiyatı da güncelleyebiliyorum. Örneğin fiyatlar şu an dakikasında 5 lira. Bunu ben burada yeni bir fiyat girdiğinde listeye yeni bir fiyat ekleniyor. Fiyatlarda düzenleme yapılmasına izin vermiyoruz. Güncelleme yapılıyorsa bu listeye yeni bir fiyat eklenmesi gerekiyor.
+
+335
+00:35:47,999 --> 00:35:59,759
+bakım için de burada skuter numarasını girerek örneğin 7 numaralı skuter düzenli deyip bunu bakıma gönderiyoruz.
+
+336
+00:36:01,740 --> 00:36:07,320
+Bakımdan döndürmek için de yine burada bunu seçip kaydet diyorum.
+
+337
+00:36:08,059 --> 00:36:17,479
+Bakım geçmişine geldiğimizde de az önce verdiğimiz 7 numaralı skuter bakıma gönderildiği tarih ve bakımdan dönüş tarihi ve şu anki durumu uygun.
+
+338
+00:36:17,999 --> 00:36:28,539
+roller bunu anlatmıştım. Burada da bir bilgi ekranı koyduk ve isimlerimizi yazdık. Benim anlatacaklarım bu kadar.
+
+339
+00:36:30,960 --> 00:36:33,539
+Peki teşekkür ediyoruz size de. Elinize sağlık.
+
+340
+00:36:35,359 --> 00:36:42,439
+Şimdi sıradaki grup H grubuydu ama H grubunun katılımcılarından sadece birisi burada.
+
+341
+00:36:44,240 --> 00:36:46,699
+O yüzden onları en sona bırakalım.
+
+342
+00:36:46,699 --> 00:36:48,479
+O zaman D grubu mu?
+
+343
+00:36:50,619 --> 00:36:54,139
+Ondan sonraki sıraya da şimdi bakacağım bir dakika.
+
+344
+00:36:55,059 --> 00:36:57,919
+D grubu evet. Bankacılık sistemi.
+
+345
+00:36:59,679 --> 00:37:00,819
+Şeyh Musa Atakan.
+
+346
+00:37:03,880 --> 00:37:05,699
+Başka Saadettin Hamza Harun.
+
+347
+00:37:07,099 --> 00:37:10,359
+Herkes burada. Evet buyurun arkadaşlar siz de dinliyoruz.
+
+348
+00:37:11,880 --> 00:37:14,259
+Merhaba hocam. Ekranımı görebiliyor musunuz öncelikle?
+
+349
+00:37:14,380 --> 00:37:14,519
+Evet.
+
+350
+00:37:15,659 --> 00:37:16,219
+Tamamdır.
+
+351
+00:37:16,699 --> 00:37:41,019
+Herkese merhaba arkadaşlar. Biz online bankacılık sistemini tasarlamaya çalıştık. Problemin tanımından ziyade senaryomuz şu şekilde. Bizim bir yatırımcımız var. Bu yatırımcı bankacılık sektörüne girmek istiyor ve bu sektörde de tamamen online bir hizmet sunmak istiyor. Bu sistemin kaba taslak özellikleri işte para transferinden sıfır komisyon ücreti alınacak.
+
+352
+00:37:41,440 --> 00:38:08,120
+kredi verilmeyecek. Biraz daha muhafazakar bir tutumda. Döviz ve altın yatırımlarında alış ve satış makası sıfır olacak ilk başta. Tabi bu makas sonra müşterinin faydası ve rekabeti artıracak şekilde diğer bankalarla açılacak. Onun dışında elektrik, su, doğal gaz faturaları ödenebilecek. Kapsam tanımında ürün tamamen online hizmete odaklı olacak dedik.
+
+353
+00:38:08,120 --> 00:38:12,759
+Bu adam nereden para kazanacak ya? Kredi vermiyor bilmem ne yapmıyor ne biçim var?
+
+354
+00:38:12,759 --> 00:38:20,140
+Hocam ilk başta şöyle düşündük sisteme hatırlayacak paraları oluşturacağız. Sürkülasyonla mı para kazanacak?
+
+355
+00:38:20,179 --> 00:38:24,399
+Oğlum nasıl para kazandırır? Çamaşır makinesinde mi döndürüyorsunuz?
+
+356
+00:38:24,499 --> 00:38:27,300
+Hocam ayakları alırsın hocam önce bir gelsin.
+
+357
+00:38:27,300 --> 00:38:27,919
+Aynen hocam.
+
+358
+00:38:27,919 --> 00:38:29,300
+Aslında anlarsan anlarsan deriz.
+
+359
+00:38:29,300 --> 00:38:35,499
+Şimdi niye hocam? Akbank'a gitmesin, emparaya gitmesin de bize gelsin. Birkaç avantajımız olacak ilk başta.
+
+360
+00:38:35,499 --> 00:38:44,759
+Ondan sonra yapacağımız güncellemelerle hocam çeşitli yönetimin de faydasına olacak şekilde para kazandıracağız
+
+361
+00:38:44,759 --> 00:38:46,419
+Öyle düşündük
+
+362
+00:38:46,419 --> 00:38:49,219
+Siz coinci misiniz bakayım?
+
+363
+00:38:50,079 --> 00:38:56,139
+Hocam blockchain ile uğraşıyoruz da o yüzden dedik banka sistemini yapalım hem biraz daha aşina oluruz falan
+
+364
+00:38:56,139 --> 00:38:58,619
+Bazen bunu da seçmiştik aynı zamanda
+
+365
+00:38:58,619 --> 00:39:00,559
+Anladım hadi bakalım
+
+366
+00:39:00,559 --> 00:39:03,259
+Tamamdır devam ediyorum
+
+367
+00:39:03,259 --> 00:39:11,480
+kaliteli olmasına da önem verdik. Tabii ki hızlı ve güvenli olması lazım. Bir para korunması söz konusu ve çokça bilgi aldığımız için.
+
+368
+00:39:12,259 --> 00:39:25,999
+Maliyet ve zamanda da öngörülen bir süre ve bütçe var. Onu da aşmamaya dikkat ettik. Kaynak olarak da çeşitli yazılım kaynakları ve toplantılar için işte Zoom lisansı gibi şeyler öngörüldü.
+
+369
+00:39:25,999 --> 00:39:48,079
+bundan sonra fizibilite çalışmalarımız var. İlk fizibilite çalışmamız teknik fizibilite. Bunu yazılım, donanım ve iletişim olmak üzere üç başlıkta inceledik. Yazılım fizibilitesinde fonksiyonel yaklaşım tercih ettik. Bunu Java diliyle ve NetBeans ortamında kodlamayı tercih ettik. Bu geçmiş yazılımcılarımızın tecrübesine dayanarak tercih ettiğimiz bir şey.
+
+370
+00:39:48,079 --> 00:40:02,380
+donanımda yazılım geliştirmesini yapacağımız cihazın özelliklerini her verdik. İletişim fizibilitesinde de tamamen Java ve MySQL veri tabanı arasındaki iletişimi sahillen API'lar söz konusu.
+
+371
+00:40:02,740 --> 00:40:13,320
+Zaman fizibilitesinde süreci ne kadar süreceğini daha böyle efektif bir şekilde anlayabilmemiz için Gant diagramı yöntemini kullandık.
+
+372
+00:40:13,319 --> 00:40:23,739
+Bu yöntemde her bir iş parçacığına belli bir süre ataması yapılarak ortalama kaç günde biz bu projeyi kodlarız onu öngörmeye çalıştık
+
+373
+00:40:23,739 --> 00:40:29,779
+Yazılım geliştirme modeli olarak waterfall ve waterfall iteratif modellerini tercih ettik
+
+374
+00:40:29,779 --> 00:40:40,399
+Her bir aşamayı başarıyla tamamlanmadan diğer aşamaya geçmediği için bu kontrolü daha da kolaylaştırıyor ve kodlamayı daha efektif hale getiriyor
+
+375
+00:40:40,399 --> 00:41:06,799
+Sosyal fizibilite de sağ çalışması yaptık, anket çalışması yaptık. Bu ankette iki sorumuz vardı. Tasarlanacak olan sistemin sade ve kullanımı kolay mı olmasını tercih edersiniz. Veyahut karmaşık ve çok işlevi mi olmasını tercih edersiniz. Anket soruncuna sade ve kullanımı kolay sesineyi daha çok tercih edildi. Tasarım aşamasında bu göz önünde bulundurulacak.
+
+376
+00:41:06,800 --> 00:41:25,859
+yönetim fizibilitesinde az önce de bahsettiğimiz gibi ilk başta yönetimsel olarak kar amacı gütmüyor ama zamanla bu kar marjini arttırarak çeşitli güncellemeler yapılacak işte kredi oranlarıyla dövizdeki alış satış arasındaki makasın açılmasıyla çeşitli gelirleri öngörüyoruz.
+
+377
+00:41:26,195 --> 00:41:48,475
+Yasal fizibilite de müşterinin çokça kişisel bilgilerini aldığımız için neredeyse her şeyini alıyoruz. Bu KBKK kapsamında bizi yükümlü hale getiriyor. Bu bilgilendirmeyi de müşteri bankaya kaydolurken aydınlatma metni ve kişisel verilerin korunması kanunu metniyle müşteriye bildiriyoruz.
+
+378
+00:41:48,475 --> 00:42:08,135
+onun dışında tasarım yapılırken de Sınav-i Mülkiyet Kanunu'nu da göz önünde bulundurduk. Daha önce tasarlanmış ve işleme alınmış sistemlerden farklı olmasını tercih ettik. Bunların dışında tabii BDDK ve SPK'nın da belli başlı mevzuatlarına uymak zorundayız bankacılık sektörüne girdiğimiz için.
+
+379
+00:42:08,135 --> 00:42:13,995
+tüm fizibilitelerden doğan belli başlı tabii maliyetlerimiz var.
+
+380
+00:42:13,995 --> 00:42:16,755
+Bunu da ekonomik fizibilitede en sonunda bırakıyoruz.
+
+381
+00:42:17,535 --> 00:42:23,915
+Burada işte personel giderleri, donanım giderleri, çeşitli yazılımsal giderler öngörülmüştür.
+
+382
+00:42:24,715 --> 00:42:29,755
+Bunların kabataslak toplamı 529 bin lira olarak öngörülmüştür.
+
+383
+00:42:29,895 --> 00:42:33,855
+Zaten projeye ayrılan bütçede 1 milyon TL civarıydı.
+
+384
+00:42:34,235 --> 00:42:35,075
+Bunu da aşmadık.
+
+385
+00:42:35,075 --> 00:42:46,095
+fizibilite raporları bu şekilde bunların daha kompakt ve bütün olarak incelenebildiği fizibilite matrisini anlatması üzerine Halun arkadaşımıza sözü bırakıyorum.
+
+386
+00:42:46,655 --> 00:42:49,995
+Bundan önce sorunuz var mı hocam fizibilitelerle ilgili?
+
+387
+00:42:49,995 --> 00:42:55,315
+Kaba taslak diyorsun kuruşuna kadar yazmışsın 529.75 lira.
+
+388
+00:42:55,416 --> 00:43:01,155
+Hocam şurada ben bilgisayarın tükettiği elektriği de hesapladım bu arada onu da es geçmek istemedim.
+
+389
+00:43:06,324 --> 00:43:07,663
+Harun sendeyiz.
+
+390
+00:43:09,663 --> 00:43:13,324
+Bir saniye, Harun interneti koktu da bağlanmaya çalışıyor şu an.
+
+391
+00:43:13,563 --> 00:43:13,784
+Tamam.
+
+392
+00:43:15,363 --> 00:43:20,343
+O zaman ben, merakış diyagramını anlatmaya devam edeyim mi?
+
+393
+00:43:20,664 --> 00:43:21,663
+Anlat, anlat, hadi.
+
+394
+00:43:22,023 --> 00:43:22,903
+Tamam, geç bakalım.
+
+395
+00:43:24,043 --> 00:43:29,403
+Fizibilite'de hepsine çağırlık verdik, ondan sonra baktık hangisi çıktı, dur yukarı çık.
+
+396
+00:43:29,943 --> 00:43:31,584
+Tamam, dur. Ben Saadet'te...
+
+397
+00:43:31,584 --> 00:43:33,983
+Harun'un interneti geldi de o mu? Devam etse.
+
+398
+00:43:33,983 --> 00:43:38,024
+geldi hocam şu an.
+
+399
+00:43:41,883 --> 00:43:52,343
+Merhabalar ben Harun Oktay. Bu projede yönetici rolünü üstleniyorum. Müşteriyle yapılan görüşme ve analizlerin yanı sıra projenin genel yönetiminden ve önemli kararların alınmasından da ben sorumluyum.
+
+400
+00:43:52,344 --> 00:44:17,324
+Biraz önce şeyimiz arkadaşımız yaptığımız fizibiliteleri detaylı olarak anlattı. Ben de şu an ekranda gördüğümüz matriz ve fizibilite çalışmalarının özetini yaptığımızı söyleyebilirim. Bu matriz bize karşılaştırma kolaylığı sağlıyor. Müşterimiz için ekonomik ve teknik özellikler ön planda olduğu için müşterimiz birinci sistem önerisini kabul etmeyi tercih etti.
+
+401
+00:44:17,324 --> 00:44:27,264
+güvenli ve platform bağımsız olması nedeniyle ayrıca bizim yazılımcılarımız da tecrübeli olduğu için Java dinini tercih ettik.
+
+402
+00:44:27,624 --> 00:44:28,404
+Bunu da nokta çekeyim.
+
+403
+00:44:30,124 --> 00:44:31,603
+Fizibilite matrisi bu şekildeydi.
+
+404
+00:44:31,783 --> 00:44:34,684
+Şimdi sistemimizin varlığına borçlu olduğumuz ekibimi tanıtayım.
+
+405
+00:44:35,203 --> 00:44:37,463
+Üç ekiple beraber bu sistemi gerçekleştirdik.
+
+406
+00:44:37,463 --> 00:44:41,283
+Bunlar yazılım ekibi, sistem aradis ekibi ve teknik destek ekibi.
+
+407
+00:44:41,864 --> 00:44:46,103
+Yazılım ekibi sistemin tasarımını ve tasarlanmak çalışmasını sağladı.
+
+408
+00:44:46,103 --> 00:45:05,264
+Ayrıca test ve koklanma kısmı da bu ekipte sistem analizleri sistemin üretilmesinde yol parçasını hazırladılar. Sistem üzerinde optimizasyon ve analiz raporlarını sundular. Teknik destek ekibi ise kullanılan ürünlerin bakımını yapmanın yanı sıra teslim sonrası müşteriye teknik destek de sağladılar.
+
+409
+00:45:05,263 --> 00:45:31,623
+Bu sistemi hazırlarken toplam 6 tane toplantı gerçekleştirdim. İlk ve son toplantıları müşteriyle beraber birebir ben gerçekleştirdim. Karanı genel olarak ekiplerimle gerçekleştirdiğim analiz ve karar toplantısındaydı. İlk toplantının özeti müşterinin taleplerini aldım ve bunları not edip bir özet çıkardım. İkinci toplantıda fizibilite çalışmalarını ekiplerimle müşteriyle beraber değerlendirdik.
+
+410
+00:45:31,624 --> 00:45:36,204
+3. toplantıda projenin gerçekleştirme raporları üzerinde bir analiz gerçekleştirdik
+
+411
+00:45:36,204 --> 00:45:43,404
+4. toplantıda ise yazılım süreci için yol hakları ile analiz ettik ve tasarım üzerinde görüş alışveriş yaptık
+
+412
+00:45:43,404 --> 00:45:49,204
+5. toplantıda ise ön yüz, arka yüz ve veri tabanı tasarımını tartıştık
+
+413
+00:45:49,204 --> 00:45:55,084
+Test aşamasında geçiş kararı aldık ve test sürecini kısa bir zamanda yapma kararı aldık
+
+414
+00:45:55,084 --> 00:46:00,344
+Son toplantımda da ben müşteriye projemizi teslim ettim ve görüşlerini aldım
+
+415
+00:46:00,343 --> 00:46:06,943
+oldukça memnun kaldığını ve söylediğimiz tarifi teslim ettiğimiz için bize teşekkür ettiğini söyledi.
+
+416
+00:46:08,183 --> 00:46:15,063
+Ben sözü Saadettin Berber'e veri akış diyagramlarını ve veri sözünü aktarması için sözü Saadettin'e bırakıyorum.
+
+417
+00:46:15,703 --> 00:46:19,663
+Teşekkürler Harun. Şimdi veri akış diyagramının taslağını inceleyelim.
+
+418
+00:46:20,203 --> 00:46:27,823
+Öncelikle müşteri varlığımdan ve döviz kurları varlığımdan bankacık sistemine kişisel bilgiler ve döviz kur bilgileri geliyor, veri akıyor.
+
+419
+00:46:27,824 --> 00:46:37,044
+Ondan sonra bankacık sisteminden hesap varlıklarıma ve admin varlıklarıma, deviz kuruligisi, altın oranı, bakiye, hesap listesi ve müşteri listeleri ve yakışı oluyor
+
+420
+00:46:37,044 --> 00:46:38,943
+Şimdi de birinci akış düzeyine bakalım
+
+421
+00:46:39,764 --> 00:46:42,683
+Öncelikle benim müşterimin kaydolması gerekiyor.
+
+422
+00:46:42,683 --> 00:46:52,604
+Kişisel bilgilerine girdikten sonra admin tarafından bir onay bilgisi aldıktan sonra müşterim benim TC bilgisini ve şifresini girerek hesaplarını görüntüleyecek.
+
+423
+00:46:52,743 --> 00:46:54,144
+Yani aslında hesaplarını elde edecek.
+
+424
+00:46:54,663 --> 00:46:56,843
+Ondan sonra ödemeler diye bir işlemim var.
+
+425
+00:46:57,223 --> 00:47:04,923
+Burada da biz temel olarak doğal gaz su elektrik faturalarını ödemeye üzerinde kurulu bu transaction.
+
+426
+00:47:05,883 --> 00:47:08,363
+Ondan sonra da hesap bilgilerinin düzenine var.
+
+427
+00:47:08,863 --> 00:47:10,923
+Müşterim hesap bilgilerini düzenleyebiliyor burada.
+
+428
+00:47:11,643 --> 00:47:14,703
+Ondan sonra aşağı ineceğimiz zaman para transferi var.
+
+429
+00:47:15,183 --> 00:47:19,103
+Para transferi için öncelikle gönderici hesap bilgilerini elde etmesi gerekiyor.
+
+430
+00:47:19,103 --> 00:47:25,624
+Ve müşterimin IBAN'a yani kendi hesaplarından IBAN'a girdikten sonra bir gönderici hesap bilgisi olacak.
+
+431
+00:47:25,783 --> 00:47:27,543
+Aynı zamanda miktar bilgisinin de girecek.
+
+432
+00:47:28,063 --> 00:47:30,643
+Ondan sonra da alıcı IBAN'larım var.
+
+433
+00:47:30,783 --> 00:47:32,003
+İki tane alıcı IBAN görüyoruz.
+
+434
+00:47:32,003 --> 00:47:38,803
+Bir tanesi kayıtlı alıcı İBAN, bir tanesi de normal hesaplar listesinden gelen alıcı İBAN'lar.
+
+435
+00:47:39,183 --> 00:47:43,443
+Ondan sonra da şimdi ikinci düzey ve yakıştığında daha detaylı inceleyelim.
+
+436
+00:47:44,163 --> 00:47:47,103
+Öncelikle dediğim gibi gönderici hesap bilgileri gelmişti.
+
+437
+00:47:47,683 --> 00:47:49,883
+Öncelikle bakiyemizi kontrol etmemiz gerekiyor.
+
+438
+00:47:49,963 --> 00:47:54,663
+Yeterli para var mı yok mu diye kontrol ettikten sonra gönderici hesabından para eksiltmemiz gerekiyor.
+
+439
+00:47:55,143 --> 00:47:58,663
+Eksittiğimiz para kadar da alıcı İBAN'a para eklememiz gerekiyor.
+
+440
+00:47:58,664 --> 00:48:05,444
+güncellenen hesap bilgilerinde artık hesaplar listesi, data beyeceğine de güncellememiz gerekiyor.
+
+441
+00:48:06,323 --> 00:48:08,083
+Ben sözü Atakan'a bırakıyorum.
+
+442
+00:48:09,164 --> 00:48:10,524
+Herkese merhaba ben Atakan.
+
+443
+00:48:11,323 --> 00:48:13,863
+Ben şimdi size veri sözlüğünü açıklamak istiyorum.
+
+444
+00:48:14,403 --> 00:48:19,064
+Veri sözlüğü genelde veri akış diagramlarındaki bulunan bilgileri
+
+445
+00:48:19,064 --> 00:48:21,424
+daha detaylı bir şekilde açıklamak için kullanılır.
+
+446
+00:48:21,764 --> 00:48:23,744
+Şimdi her birinden birer tane örnek vereceğim.
+
+447
+00:48:24,603 --> 00:48:31,023
+Gişisel bilgiler veri yakışında üye olacak kişinin isim, soy isim, TC, cinsiyet, telefon numarası ve doğum tarih bilgileri yer alır.
+
+448
+00:48:31,623 --> 00:48:36,543
+Ve müşteri nesnesinden müşteri kaydı metoduna doğru müşteri detayları kompozit bir şekilde iletilir.
+
+449
+00:48:37,543 --> 00:48:44,583
+İkinciye gelecek olursak veri deposu hesaplar listesinde müşterilerin hesabındaki hesap türü İBAN, bakiye bilgileri yer alır.
+
+450
+00:48:44,903 --> 00:48:46,363
+Ve günlük ortalama 20 giriş olur.
+
+451
+00:48:47,323 --> 00:48:49,063
+Şimdi diğer aşağı inebiliriz.
+
+452
+00:48:50,064 --> 00:48:54,024
+Veri yapısı sözlük girişinde para transferi veri yapısı yer alır.
+
+453
+00:48:54,484 --> 00:48:56,444
+Müşteriler arasındaki para transferini sağlar.
+
+454
+00:48:56,883 --> 00:49:03,504
+Gönderici hesap bilgileri, miktar, alıcı iban, güncel gönderici hesap bilgileri ve güncel alıcı hesap bilgilerini içerir.
+
+455
+00:49:04,183 --> 00:49:05,064
+Aşağı inebiliriz.
+
+456
+00:49:06,944 --> 00:49:08,784
+Şimdi IR diagramından bahsedeceğim.
+
+457
+00:49:10,183 --> 00:49:12,224
+Dört tane varlığımız bulunur.
+
+458
+00:49:12,224 --> 00:49:15,584
+Bunlar banka hesabı, müşteri, kayıtlı hesaplar ve admindir.
+
+459
+00:49:15,583 --> 00:49:18,203
+örnek verecek olursak
+
+460
+00:49:18,203 --> 00:49:20,683
+banka hesabı 3 tane özellik içerir
+
+461
+00:49:20,683 --> 00:49:22,523
+hesap türü, hesap bakiyesi
+
+462
+00:49:22,523 --> 00:49:23,463
+ve IBAN gibi
+
+463
+00:49:23,463 --> 00:49:26,343
+IBAN burada anahtar nitelik özelliği taşır
+
+464
+00:49:26,343 --> 00:49:28,463
+aralarındaki ilişkiye bakacak olursak
+
+465
+00:49:28,463 --> 00:49:30,423
+bir müşteri birden fazla
+
+466
+00:49:30,423 --> 00:49:31,863
+banka hesabına sahip olabilir
+
+467
+00:49:31,863 --> 00:49:34,943
+ve aynı zamanda müşterinin
+
+468
+00:49:34,943 --> 00:49:36,463
+birden fazla kayıtlı hesabı da olabilir
+
+469
+00:49:36,463 --> 00:49:38,123
+admin de müşterinin
+
+470
+00:49:38,123 --> 00:49:40,243
+bilgilerine erişme
+
+471
+00:49:40,243 --> 00:49:42,363
+hakkına sahiptir
+
+472
+00:49:42,363 --> 00:49:44,483
+aşağı inebiliriz
+
+473
+00:49:45,583 --> 00:49:53,443
+Yapı diagramına gelecek olursak sistemimiz iki tane ana panelden oluşur.
+
+474
+00:49:54,183 --> 00:49:56,263
+Birincisi kayıt ol, ikincisi de giriş yap.
+
+475
+00:49:56,683 --> 00:50:00,783
+Giriş yaptıktan sonra karşımıza üç tane işlem çıkar, proses çıkar.
+
+476
+00:50:01,643 --> 00:50:05,264
+Birincisi para transferi, ödemeler ve hesap bilgilerini görüntüle.
+
+477
+00:50:05,843 --> 00:50:10,283
+Hesap bilgilerini görüntüledikten sonra kullanıcının karşısında iki tane seçenek çıkar.
+
+478
+00:50:10,803 --> 00:50:13,643
+Yatırım hesabı oluşturma ve TL hesabı oluşturma.
+
+479
+00:50:13,643 --> 00:50:16,063
+aşağı inebiliriz.
+
+480
+00:50:16,523 --> 00:50:18,283
+Yatırım hesabı oluşturduktan sonra
+
+481
+00:50:18,283 --> 00:50:20,003
+senkron bir şekilde döviz bilgilerini
+
+482
+00:50:20,003 --> 00:50:22,203
+alabiliyoruz. Böylece kullanıcı
+
+483
+00:50:22,203 --> 00:50:23,763
+yatırım hesabı
+
+484
+00:50:23,763 --> 00:50:24,583
+oluşturabiliyor.
+
+485
+00:50:26,223 --> 00:50:27,763
+Şimdi şu ana kadar
+
+486
+00:50:27,763 --> 00:50:29,563
+anlattıklarımızı özetleyecek olursak
+
+487
+00:50:29,563 --> 00:50:31,603
+teknik olarak Lenovo ThinkPad
+
+488
+00:50:31,603 --> 00:50:33,683
+ve Localhost ve Router kullandık.
+
+489
+00:50:34,099 --> 00:50:51,639
+yazılım dili olarak Java hem front-end ve back-end kısmında database olarak da MySQL kullandık. Waterfall işaretle modelini yazılım geliştirme modeli olarak kullandık. Analiz kısmında veri akış diyagramı, veri sözlüğü, tasarım kısmında ise ER diyagramı ve yapı diyagramını oluşturduk.
+
+490
+00:50:51,639 --> 00:50:59,119
+Öncelikle problemimizi tanımladık bu sistemin gerçeklenmesi için ve sonrasında fizibilite çalışmaları yaptık
+
+491
+00:50:59,119 --> 00:51:06,899
+Bu fizibilite çalışmaları sonucunda fizibilite matrisi oluştu ve bize en uygun seçenekleri belirledik
+
+492
+00:51:06,899 --> 00:51:11,579
+Ve sonrasında analiz ve tasarım safhalarını bitirdik
+
+493
+00:51:11,579 --> 00:51:20,999
+Sonrasında ise bu sistemin gerçeklenmesi için sözü Hamza Aslanlı'ya bırakmak istiyorum. Teşekkürler
+
+494
+00:51:27,059 --> 00:51:32,879
+Teşekkürler Atakan. Ben yazılım ekibinden Hamza Hastanlı. Şu an yaptığımız kodu sunmak için ekranımı paylaşacağım.
+
+495
+00:51:39,092 --> 00:51:40,791
+Ekranım geldi mi? Gözüküyor mu şu an?
+
+496
+00:51:41,111 --> 00:51:41,552
+Gözüküyor.
+
+497
+00:51:43,231 --> 00:51:43,791
+Tamamdır.
+
+498
+00:51:47,347 --> 00:52:08,327
+Kodu başlatıyorum şu anda. Önce başlattığım zaman login ekranına geliyor karşımıza. Şimdi eğer kayıt olmamışsa buradan müşteri kaydını oluşturmamız gerekiyor. Müşteri kaydını oluşturmaya tıkladığımız zaman şöyle bir ekran geliyor karşımıza. Ben önceden doldurduğum vakit almamak için.
+
+499
+00:52:08,327 --> 00:52:15,947
+şu an kaydolmayı deniyorum ve şey diyor önce KVKK metniğini okumamız gerektiğini söylüyor.
+
+500
+00:52:17,907 --> 00:52:23,427
+Okudum onayı yoruma tıkladıktan sonra kaydola tıklıyorum ve isteğiniz başarılı şekilde ulaştık diyor.
+
+501
+00:52:23,507 --> 00:52:25,547
+Şimdi burada bir admin panelimiz var ayrıca.
+
+502
+00:52:26,587 --> 00:52:30,528
+Admin paneli kaydolmak isteyen müşterilerin onay bilgisi geliyor.
+
+503
+00:52:34,036 --> 00:52:53,036
+Admin panelde hesap bilgileri ve müşteri bilgileri var. Müşteri bilgilerinden en alta isteğimiz ulaşmış şekilde ama herhalde henüz onaylamadığımız için bu müşteri sisteme giriş yapamayacak. Bunu şuradan onaylıyorum ve onayladığım zaman şu confirm bire dönüşüyor ve şu an bu müşteri artık sisteme giriş yapabilir.
+
+504
+00:52:53,036 --> 00:53:02,036
+Şimdi ben buna giriş yapmayacağım, başka bir hesaba giriş yapacağım şuradaki ikinci saadetin kısmına. Tabii şunları kapatabilirim artık.
+
+505
+00:53:08,340 --> 00:53:36,020
+Önce yanlış girmeyi deniyorum. Giriş başarısı şu an doğru şekilde girmeyi deneyeceğim. Şimdi hesaba girdiğimizde dört farklı modül bizi karşılıyor. İlk modülde hesaplarım kısmı var. Burada hesaplarımızı görüntülüyoruz ve hesap ekle hesap sil gibi işlemler gerçekleştirebiliyoruz. Örneğin hesap eklemeyi deneyelim. Mesela vadeli banka hesabına ekliyorum. Şurada bir hesabımız oluştu. Bakiyesi sıfır. Şuradan parası olan bir hesabı silmeyi deneyeceğim.
+
+506
+00:53:36,020 --> 00:53:43,139
+parası olduğu için hesap silinemiyor. Hesapta para var önce onu boşaltın diyor. Şurada parası olmayan bir hesabı siliyorum.
+
+507
+00:53:44,100 --> 00:53:52,999
+Hesap silindi. Burası kabataslak, şöp böyle. Para transferi kısmındaysa şu boş olan hesabı biraz para eklemeye çalışacağım.
+
+508
+00:53:53,999 --> 00:54:01,119
+Sonu 58 olan İBAN'dan, sonu 21 ile biten İBAN'a, gerçi o kayıtlı değil, önce buradan bir kaydını oluşturuyorum.
+
+509
+00:54:01,119 --> 00:54:16,159
+sonu 21 olan IBAN'ı kayıtlı hesaplarıma ekleyelim. Ondan sonra bu hesaptan sonu 21 olan IBAN'a para yollayacağım. 15 lira. Önce IBAN'ı doğrulamam gerekiyor.
+
+510
+00:54:16,159 --> 00:54:25,619
+Doğruladım. IBAN doğrulandı. Şu an para gönderebilirim. Başarıyla gerçekleşti. Burası da kabatasak böyle. Örneğin yanlış bir IBAN girmeyi deneyeyim.
+
+511
+00:54:25,619 --> 00:54:31,619
+doğruladığım zaman geçerli iman giriniz diyor ve herhangi bir para falan gönderilmiyor.
+
+512
+00:54:31,619 --> 00:54:40,619
+Burası da bu şekilde işte. Yatırım işlemleri kısmı var. Buradan dövizden TL'ye ve TL'den dövizi dönüşümü yapabiliyorum.
+
+513
+00:54:40,619 --> 00:54:47,619
+Örneğin yatırım dolar hesabından, vadeli banka hesabına bir miktar para çevirmeyi deneyeceğim.
+
+514
+00:54:51,987 --> 00:54:55,887
+başayla çevrildi. Şimdi hesabın yetersiz olduğu bir yerden deneyeyim.
+
+515
+00:55:01,780 --> 00:55:09,939
+Banka hesabı seçmediğiniz diyor. Şu an seçtim. Yine çevirdi ama... Bir saniye.
+
+516
+00:55:11,080 --> 00:55:13,080
+Dur, sizin banka çok lark ya.
+
+517
+00:55:14,919 --> 00:55:16,979
+Şuradan herhalde şeyi yanlış anladı da.
+
+518
+00:55:19,679 --> 00:55:21,179
+Tamam, bu kısımda böyle işte.
+
+519
+00:55:22,979 --> 00:55:24,880
+Ondan sonra burada fatura ödeme kısmı var.
+
+520
+00:55:25,880 --> 00:55:31,280
+Fatura ödeme kısmında bir kullanıcının kimlik numarasına girdikten sonra faturasını ödeyebiliyoruz.
+
+521
+00:55:31,280 --> 00:56:01,199
+örneğin 2 numaralı şeyi deneyeceğim. Burada herhangi bir borcu yokmuş. Gazı deniyorum. 60 lira borcu varmış. Şuradan ödeyebilirim. Önce bakiye yetersiz olan bir yerden deniyorum. Bakiyeniz yetersiz diyor. Şuradan deneyeceğim. Borcunuz başarıyla ödendi. Şuradaki parada sıfırlandı. Borcunu tekrar gösteriyor mu? 0 TL. Borcu ödendi. Modüller böyle. Yani ekleyeceğim herhangi başka bir şey yok. Dinlediğiniz için teşekkürler.
+
+522
+00:56:01,280 --> 00:56:22,540
+Biz teşekkür ediyoruz. Saadettin Zümdü'yı da. Evet şimdi G grubu kütüphane sırada. Merhaba hocam sesim geliyor mu? Geliyor. Arkadaş ekran paylaşımını bitirmedi de ekran paylaşamıyorum.
+
+523
+00:56:22,540 --> 00:56:30,280
+Evet kapatın gençler. Banka. Paylaşım devam ediyor mu ara? Evet.
+
+524
+00:56:31,280 --> 00:56:32,879
+durdurdum ben ama
+
+525
+00:56:36,052 --> 00:56:37,152
+Ayla, ayla, ameliyo.
+
+526
+00:56:41,235 --> 00:56:42,375
+Ben kapatayım bir dakika.
+
+527
+00:56:42,476 --> 00:56:43,416
+Zoomlar çıkmamca.
+
+528
+00:56:44,775 --> 00:56:45,636
+Anamdır bir dakika.
+
+529
+00:56:45,975 --> 00:56:47,095
+Ben kapatabiliyor muyum?
+
+530
+00:56:50,516 --> 00:56:55,436
+paylaşımı durdur dedim ama tamam oldu şu an galiba.
+
+531
+00:56:55,555 --> 00:56:56,395
+Semine gitti evet.
+
+532
+00:56:57,075 --> 00:56:57,335
+Evet.
+
+533
+00:56:58,415 --> 00:57:00,016
+Peki G grubunda kim yok?
+
+534
+00:57:01,936 --> 00:57:03,035
+Hocam biz...
+
+535
+00:57:03,035 --> 00:57:04,195
+Gerileri yok gibi sanki.
+
+536
+00:57:04,976 --> 00:57:08,356
+Biz iki arkadaşımız çalışmaya katılmadı da biz üç kişiydik.
+
+537
+00:57:08,975 --> 00:57:13,155
+Kimler katılmadı? Ayşenur'la şey mi? Semih Mert miydi?
+
+538
+00:57:13,575 --> 00:57:13,915
+Evet.
+
+539
+00:57:13,915 --> 00:57:16,936
+Tamam başlıyorum o zaman.
+
+540
+00:57:17,856 --> 00:57:19,315
+Katılmadı mı onlar? Emin misin?
+
+541
+00:57:19,315 --> 00:57:19,815
+Evet çalıştım.
+
+542
+00:57:20,516 --> 00:57:22,036
+Evet çalışmaya katılmadılar
+
+543
+00:57:22,036 --> 00:57:24,096
+Niye katılmadılar?
+
+544
+00:57:27,536 --> 00:57:29,135
+Bileyim ben peki
+
+545
+00:57:29,135 --> 00:57:31,596
+Devam edin bakalım hadi
+
+546
+00:57:31,596 --> 00:57:38,776
+Merhaba herkese şimdi size sistem analizi ve tasarım dersinde proje kapsamında tasarladığımız kütüphane bilgi sistemini sunacağız
+
+547
+00:57:38,776 --> 00:57:48,196
+Kütüphane bilgi sistem projesinde bu proje kütüphanemizde verimliliği arttırmak ve kullanıcı memnuniyetini sağlamak amacıyla tasarlanmış bir sistem
+
+548
+00:57:48,196 --> 00:57:57,276
+Öncelikle projemizin başarılı bir şekilde gerçekleştirilmesine yer alan ekip üyelerini tutmak istiyorum. Ben İbrahim Şahin, bu projenin yazılım ve tasarım kısımlarına yer aldım.
+
+549
+00:57:58,615 --> 00:58:04,795
+Ayrıca analiz olarak çalışan Ezgi arkadaşım ve proje yöneticisi olarak görev yapan Ayşe arkadaşım da projede önemli roller üstlendiler.
+
+550
+00:58:05,276 --> 00:58:10,916
+Birlikte çalışarak kullanıcıların beklentilerini belirlemek ve bu beklentilere uygun bir sistem geliştirmek için çaba sarf ettik.
+
+551
+00:58:10,916 --> 00:58:35,276
+Kütüphane bilgi sistem projemizin temel amacı kütüphane çalışma alanlarında verimliliği artırmak ve kullanıcıların memnuniyetini sağlamak. Şu anda karşılaşan bazı problemlerden bahsetmek istiyorum. Yani bizim sistemimiz yokken karşılaşan bazı problemlerden. Masaya tersizliği ve masaların disipsiz bir şekilde kullanılması, modus sürelerinin dikkatsizce kullanılması gibi sorunlar kullanıcıların hoşnutsuz ve güvensiz hissetmelerine neden olmakta.
+
+552
+00:58:35,275 --> 00:58:47,755
+Bu problemleri çözmek ve kullanıcıların kütüphane deneyimini iyileştirmek için bir bilgi sistemi geliştirmeye karar verdik. Bu sistemi geliştirmeye karar vermemizde grup olarak kişisel deneyimlerimiz de etkili oldu.
+
+553
+00:58:48,815 --> 00:59:02,275
+Şimdi fizibilitelere geçtiğimizde teknik fizibilite ile başlarsak sistemi Java üzerinden kodladık. Nesneye dayalı bir yaklaşımla programladık. Java dahilindeki arayüz kütüphaneleri de kullanılarak arayüz oluşturduk.
+
+554
+00:59:02,275 --> 00:59:31,575
+oluşturduk. Database olarak da MongoDB Atlas kullandık. Ekonomik fizibiliteye geçtiğimizde yazılım araçları ücretsiz. Bu MongoDB Atlas da aylık 12 dolar, 57 dolardan, 12'den bir yıllık bir maliyet çıktı. İki tane bilgisayar kullandık. Tanesi 2750 dolardan, yazılım şirketi 11 bin dolardan, toplam 17 bin 234 dolara mal oldu bize. Zaman fizibilitesi için gun diagramı kullandık burada.
+
+555
+00:59:32,275 --> 00:59:42,815
+3 farklı kritik alan var. İlk önce araştırma ve fizibilite çalışmaları yaptık. Sonra tasarım ve geliştirme kısmında bulunduk. En son da test ve sunum yaptık.
+
+556
+00:59:43,236 --> 00:59:54,255
+Sosyal fizibiliteye geçersek, anket sonuçlarına göre kütüphane kullanımı ve memnuniyet oranlarının düşük olması nedenleri, disiplinden uzak masa kullanımı ve sistematik stabilliğin sağlanamaması olarak belirlendi.
+
+557
+00:59:54,255 --> 00:59:58,515
+ancak bu yeni sistemle birlikte bu sorunların çözülebileceği görüldü.
+
+558
+00:59:59,015 --> 01:00:04,515
+Kullanıcıların isteklerine dikkate aldığımızda sosyal açıdan kabul edilebilir bir sistem geliştirme de söz konusu olacaktır.
+
+559
+01:00:04,875 --> 01:00:13,795
+Yasal fizibiliteye geldiğimizde sistemde paylaşılan kişisel bilgiler KVKK gereği koruma altına alınacak, üçüncü kişilerle paylaşılmayacaktır.
+
+560
+01:00:14,115 --> 01:00:19,975
+Bu bilgi üye işlemleri sırasında kullanıcılara açıklanacak ve kabul etmeleri halinde üyelik işlemleri tamamlanacaktır.
+
+561
+01:00:19,975 --> 01:00:25,975
+yönetim fizibilitesine geldiğimizde zaten yönetim fizibilitesinde bir sorun yaşanmayacağını görülmektedir.
+
+562
+01:00:26,075 --> 01:00:31,295
+Çünkü kütüphane sistemi yönetimin isteği ve desteği doğrultusunda tasarlanıp geliştirildi.
+
+563
+01:00:32,371 --> 01:00:38,131
+Fizibilite maddesine baktığımızda iki farklı sistem önerildi bu proje geliştirilirken.
+
+564
+01:00:39,451 --> 01:00:44,851
+Bizim asıl ikinci sistemi kabul ettik kullanmada.
+
+565
+01:00:45,311 --> 01:00:48,451
+Asıl bizim için önemli olan şey ekonomik fizibilite diyebilirim.
+
+566
+01:00:48,451 --> 01:00:52,212
+Aynı zamanda fizibilitesi de önemliydi ikinci sistemi tercih etmemizde.
+
+567
+01:00:52,511 --> 01:00:56,251
+Sosyal, yasal ve yönetimsel fizibilitelerde de bir fark yok gördüğünüz üzere.
+
+568
+01:00:56,911 --> 01:00:59,811
+İkinci sistemi tercih etmemizde hem ekonomik fizibilite önemliydi.
+
+569
+01:00:59,811 --> 01:01:06,711
+hem de proje gruptaki proje grubundaki arkadaşlarımızın hepimizin Java diyeğine hakim olması.
+
+570
+01:01:07,211 --> 01:01:11,851
+Bir arkadaşımızın da MongoDB Atlas'la daha önce geliştirme yapmış olması da etkili oldu.
+
+571
+01:01:13,511 --> 01:01:19,351
+Gereksinim analizine geçtiğimiz zaman gereksinim analizini yaparken kütüphane kullanıcılarını sunan anketten faydalandık.
+
+572
+01:01:19,651 --> 01:01:23,671
+Bu anketten yola çıkarak kütüphane kullanıcıları için en büyük problemin kütüphane sıra beklemenin
+
+573
+01:01:23,671 --> 01:01:29,411
+ve boş masa bulunmak için kütüphaneyi dolaşmanın olduğunu yani tek tek masalara bakıp boş olup olmadığını
+
+574
+01:01:29,411 --> 01:01:31,971
+fark ettik. Buradan da
+
+575
+01:01:31,971 --> 01:01:34,171
+sorduğumuz soruları görüyorsunuz. Kütüphane işleyişinden
+
+576
+01:01:34,171 --> 01:01:35,271
+memnun olup olmadıklarını,
+
+577
+01:01:36,071 --> 01:01:38,091
+kütüphanede karşı açtıkları en büyük
+
+578
+01:01:38,091 --> 01:01:40,011
+problemi ne olduğunu, burada gördüğünüzde
+
+579
+01:01:40,011 --> 01:01:42,291
+en fazla 56 kişiyle
+
+580
+01:01:42,291 --> 01:01:44,071
+boş masa bulamadık için tüm
+
+581
+01:01:44,071 --> 01:01:46,111
+kütüphaneyi dolanmaları olduğunu görüyoruz. Aynı zamanda
+
+582
+01:01:46,111 --> 01:01:47,811
+kütüphane sıra beklemek de onlar için bir
+
+583
+01:01:47,811 --> 01:01:50,631
+sorunmuş. Aynı şekilde de
+
+584
+01:01:50,631 --> 01:01:51,991
+büyük bir çoğunlukla bu
+
+585
+01:01:51,991 --> 01:01:54,411
+geliştirdiğimiz kütüphane uygulamasının
+
+586
+01:01:54,411 --> 01:01:56,171
+faydalı olacağını
+
+587
+01:01:56,171 --> 01:01:57,531
+düşünmüş onların problemlerine.
+
+588
+01:01:57,531 --> 01:02:02,351
+Şimdi proje ekip yapısına geldiğimizde Ayşe arkadaşımız proje yöneticisiydi.
+
+589
+01:02:02,731 --> 01:02:05,351
+Ezgi arkadaşım aynı zamanda yazılım ekibine de yer aldı.
+
+590
+01:02:05,671 --> 01:02:08,791
+Ezgi arkadaşımız da hem yazılım hem araştırma kısmındaydı.
+
+591
+01:02:08,871 --> 01:02:11,031
+Ben ise tasarım ve yazılım kısmındaydım.
+
+592
+01:02:11,931 --> 01:02:17,451
+Toplantı raporlarına gelirsek ilk toplantımızı 4 Nisan 2023 tarihinde yaptık.
+
+593
+01:02:17,811 --> 01:02:21,491
+Bu toplantı kütüphane müdürü kütüphanesine bir eksistem kurmak istediğini dile getirdi.
+
+594
+01:02:21,851 --> 01:02:25,011
+Ve bu kütüphane sisteminin kullanıcı memnuniyetine göre tasarlanmasını istedi.
+
+595
+01:02:25,011 --> 01:02:32,172
+Kütüphane kullanıcı profilinin beklenti ve isteklerini öğrenmek için anket oluşturulması karar olarak da şöyle bir karar aldık.
+
+596
+01:02:32,251 --> 01:02:43,331
+Kütüphane kullanıcı ve profilinin beklenti ve isteklerini öğrenmek için anket oluşturulmasına ve anket sonuçları oluşuracak sistemi şekillenmesinde en önemli öncelik olarak değerlendirilmesine karar verildi.
+
+597
+01:02:44,211 --> 01:02:47,672
+Sonra ikinci toplantıyı da 7 Nisan tarihinde yaptık.
+
+598
+01:02:48,452 --> 01:02:53,752
+Anket sonuçları ve fizibilite sonuçlarına dayanarak oluşturulan iki sistem örneği kütüphane müdürüne sunuldu.
+
+599
+01:02:53,751 --> 01:03:05,171
+Anket verilerine göre masaların düzensiz kullanımı ve uzun molalar nedeniyle yaşanan yer sorununa çözüm olarak mola düzenleme ve takip işlemlerin önemli olduğu belirlendi.
+
+600
+01:03:05,931 --> 01:03:10,611
+Ayrıca da uygun masa bulmayı kolaylaştırmak için görsel belirticilerin kullanılması önerildi.
+
+601
+01:03:11,271 --> 01:03:18,491
+Sıra işlemlerin stabil ilerlemesi için kullanıcılara sıra numaralarının bildirilip boş masaların atanması da önemli görüldü.
+
+602
+01:03:18,491 --> 01:03:22,671
+Bu doğrultu hayata geçirilmesi planla ikinci sen örneği belirlendi. Bu kararlar alındı.
+
+603
+01:03:23,751 --> 01:03:26,471
+Üçüncü toplantıda 18. Nisan tarihinde yapıldı.
+
+604
+01:03:27,091 --> 01:03:34,511
+Ekip üyeleri görevlerindeki durumlarını anlatan sonları gerçekleştirdi ve arka plan geliştirme ilerleyişinin ek gereksinimler doğuracağı belirtildi.
+
+605
+01:03:35,351 --> 01:03:42,291
+Ön yüz geliştirme ilerleyişinin işleyişi en az etkilenmesi için arka plan geliştirme ilerleyişi hızlandırılmasına karar verildi.
+
+606
+01:03:42,291 --> 01:03:53,631
+Ön yüz geliştirmenin de ek gereksinimlerini gidermek için üç gün sıra ayrılması kararlaştırıldı ve bu durumun maliyetleri de herhangi bir ekstra büyük olmayacağına karar verildi.
+
+607
+01:03:53,751 --> 01:04:00,431
+En son toplantıda da kütüphane sisteme kütüphanemin geli sunuldu ve sistemle ilgili gerekli açıklamalar yapıldı.
+
+608
+01:04:01,011 --> 01:04:04,851
+Geri dönüş olarak da sisteme bir miktar yavaş olması olumsuz bir geri dönüş oldu.
+
+609
+01:04:05,171 --> 01:04:08,571
+Ancak istenen fonksiyonların başarısı da kütüphane müdürü tarafından onaylandı.
+
+610
+01:04:08,571 --> 01:04:11,311
+Şimdi ben Ezgi arkadaşımı devrediyorum.
+
+611
+01:04:12,991 --> 01:04:14,231
+Bu noktadan itibaren.
+
+612
+01:04:14,675 --> 01:04:23,016
+Merhabalar ben Ezgi. Sistemimizde analist ve programcılardan biri rolünü üstleniyorum.
+
+613
+01:04:24,096 --> 01:04:29,375
+Şimdi ben de ekranımı paylaşıp oluşturduğumuz diagramlardan bahsedeceğim.
+
+614
+01:04:30,675 --> 01:04:37,776
+Öncelikle use case diagramımızdan bahsedeyim. Burada temel iki tane kullanıcımız var.
+
+615
+01:04:37,776 --> 01:04:42,055
+Biri kütüphaneye gelen insanlar ve diğeri de küçük kütüphane görevlisi.
+
+616
+01:04:43,055 --> 01:04:49,516
+Kütüphaneye gelen insanlar ve kütüphane görevlisi de dolluk oranını takip edebilecek oluşturduğumuz ekstremden.
+
+617
+01:04:49,516 --> 01:05:01,675
+Bunun yanında kullanılacak payet işlemi, sisteme giriş, dolayısıyla doğrulama, moda alma, rezervasyon yapma, kütüphaneden çıkma gibi senaryoları gerçekleştirebilecek.
+
+618
+01:05:01,955 --> 01:05:06,716
+Burada doğrudan bağlantıda olan ve sonucu olabilecek şeyleri de gösterdim.
+
+619
+01:05:06,835 --> 01:05:11,455
+Mesela sisteme girişte mutlaka doğrulama alması gerekiyor.
+
+620
+01:05:11,455 --> 01:05:15,475
+Mol almak için masadan kalkış bilgisi ve dönüş bilgisi gerekiyor.
+
+621
+01:05:16,215 --> 01:05:17,675
+Mol alma sonucunda atılabilir.
+
+622
+01:05:18,295 --> 01:05:20,915
+Bu yüzden bunu eksentledik.
+
+623
+01:05:21,275 --> 01:05:24,735
+Ve atılma durumunda mutlaka masayı boşaltması gerekiyor.
+
+624
+01:05:24,875 --> 01:05:31,415
+Rezervasyon sırasında da ya masa seçebilir ya da bütün masalar doludur ve bu yüzden sarı numarası alır diye düşündük.
+
+625
+01:05:32,616 --> 01:05:34,896
+Şimdi bunların biraz daha detayına ineceğiz.
+
+626
+01:05:35,075 --> 01:05:37,935
+İlk önce rezervasyon yapmadan bahsetsem daha iyi olacak sanırım.
+
+627
+01:05:38,216 --> 01:05:40,116
+Burada birinci aktörümüz kullanıcı.
+
+628
+01:05:41,455 --> 01:05:46,455
+Ön koşullarda kütüphaneye üye olması ve kütüphaneden atılmamış olması aslında.
+
+629
+01:05:47,216 --> 01:05:51,135
+Son koşu olarak da seçilen masaya başarıyla yerleşmesi.
+
+630
+01:05:51,495 --> 01:05:53,335
+Bu şekilde ilerliyor.
+
+631
+01:05:53,595 --> 01:05:55,055
+Kullanıcı rezervasyon yapıyor.
+
+632
+01:05:55,595 --> 01:06:00,055
+Yerleşmek istediği odayı ve masayı seçiyor ve o seçtiği odayı ve masaya yerleşiyor.
+
+633
+01:06:00,055 --> 01:06:04,616
+Bunun alternatifi olarak da kütüphanede yer kalmaması durumu aslında.
+
+634
+01:06:04,615 --> 01:06:12,475
+Bu durumda kullanıcıya bir sıra veriliyor ve kullanıcı sıyafı geldiğinde boşalan masaya oturmuş oluyor.
+
+635
+01:06:13,435 --> 01:06:15,435
+Mola işlemine geçelim buradan.
+
+636
+01:06:16,695 --> 01:06:19,675
+Mola almada da yine kullanıcı birinci aktörümüz.
+
+637
+01:06:20,295 --> 01:06:23,935
+Üye olmalı ve sistemde bulunmalı hali hazırda ön koşul olarak.
+
+638
+01:06:24,675 --> 01:06:29,235
+Son koşul olarak da zamanlayıcı başıyla çalışmasını tamamlamış olmalı mola işlemi için.
+
+639
+01:06:29,235 --> 01:06:34,175
+Bunda akış şu şekilde kullanıcı mola başlatma tuşuna basıp mola alıyor.
+
+640
+01:06:34,616 --> 01:06:41,476
+Daha sonra molası bittiğinde molayı bitir tuşuna basıyor ve aradaki süre farkıyla kredisi hesaplanıyor.
+
+641
+01:06:41,735 --> 01:06:43,856
+Biz her kullanıcıya krediler tanımladık.
+
+642
+01:06:44,076 --> 01:06:49,295
+Böylece molası süresini ne kadar aşmış, ne sıklıkla aşmış bunu takip edebildik.
+
+643
+01:06:49,295 --> 01:06:57,116
+Aynı zamanda kredisi biten insanların takibini yapıp gereklik ceza işlemlerini atılmadan bahsediyorum.
+
+644
+01:06:58,116 --> 01:06:59,396
+Gerçekleştirebildik böylece.
+
+645
+01:06:59,896 --> 01:07:01,776
+Burada da alternatif akışa geçiyoruz aslında.
+
+646
+01:07:01,775 --> 01:07:05,775
+kayıda hakkının kalmadığı belirlenen kişiler kütüphaneden atılıyor.
+
+647
+01:07:07,975 --> 01:07:11,375
+Daha sonra çıkma işlemi.
+
+648
+01:07:11,795 --> 01:07:13,575
+Burada yine birinci aktörümüz kullanıcı.
+
+649
+01:07:14,675 --> 01:07:20,115
+Üye olmalı kişi ve atanmış bir masa olması lazım.
+
+650
+01:07:20,555 --> 01:07:22,295
+Halilere de oturuyor olması lazım yani.
+
+651
+01:07:23,015 --> 01:07:29,635
+Son koşullar olarak da işlem başlayı ile tamamlanmış ve masa tekrar rezervasyonu açılmış olması.
+
+652
+01:07:29,635 --> 01:07:34,635
+Bundan yakışık şekilde kullanıcı çıkış işleminde bulunur ve masayı boşaltır.
+
+653
+01:07:34,955 --> 01:07:40,435
+Burada alternatif olarak sırada birinin bulunmasıdır ve direkt sıraya o sıradaki insan atanır.
+
+654
+01:07:41,895 --> 01:07:47,155
+Burada diğer diagramlarımızla birbirleriyle bağlantıları gösterildi.
+
+655
+01:07:47,915 --> 01:07:51,895
+Burada ana olarak kullanıcı kütüphane ve odayı belirledik biz.
+
+656
+01:07:53,035 --> 01:07:58,615
+Buradan birbirleriyle bağlantılarında kullanıcı ve kütüphaneler arasında rezervasyon yapma ve mola alma işlemleri dönüyor.
+
+657
+01:07:58,616 --> 01:08:04,976
+Oda ve kütüphane arasında raporlama, oda ve kullanıcı arasında yerleşme ve çıkış işlemleri dönüyor.
+
+658
+01:08:05,595 --> 01:08:09,936
+Burada onların özellikleri de yanlarında sıralanmış durumda.
+
+659
+01:08:11,443 --> 01:08:15,943
+Yapı diagramımıza gelecek olursak sıradan başlayacağım.
+
+660
+01:08:16,463 --> 01:08:21,523
+Üye olmak için üyelik bilgilerinin gönderilmesi ve sonucu olarak onay alınması gerekiyor.
+
+661
+01:08:21,683 --> 01:08:26,103
+Raporlama işleminde dolduk oranı bilgisi gönderilmesi gerekiyor.
+
+662
+01:08:26,103 --> 01:08:31,763
+Giriş yapma işleminde de kullanıcı bilgileri gönderilmeli ve bunun sonucunda bir doğrulama alınması gerekiyor.
+
+663
+01:08:32,864 --> 01:08:37,803
+Giriş yaptıktan sonra rezervasyon için kullanıcı bilgilerinin gönderilmesi gerekiyor.
+
+664
+01:08:37,803 --> 01:08:41,903
+Rezervasyon yapmada iki dala ayrılabilir demiştim yukarıda.
+
+665
+01:08:42,603 --> 01:08:46,304
+Bu boş masa vardır ve masada seçersin ya da bekleme sırasına girersin.
+
+666
+01:08:46,723 --> 01:08:50,443
+İki durumda da işte birincisinde masa var ve oda bilgisi gönderiliyor.
+
+667
+01:08:50,563 --> 01:08:52,063
+Diğerinde süre bilgisi gönderiliyor.
+
+668
+01:08:52,624 --> 01:08:57,523
+Ama günün sonunda ikisinde de oda ve masa bilgisi masa yerleştirmek için o tarafa gönderilmiş oluyor.
+
+669
+01:08:58,403 --> 01:09:02,043
+Masayı yerleştirdikten sonra da üç olayımız var.
+
+670
+01:09:02,043 --> 01:09:03,863
+mola alma. Mola alma için
+
+671
+01:09:03,863 --> 01:09:06,343
+mola etkikme ve moladan dönmeden
+
+672
+01:09:06,343 --> 01:09:08,223
+zaman bilgisi
+
+673
+01:09:08,223 --> 01:09:10,183
+döndürülmesi gerekiyor ve daha sonra
+
+674
+01:09:10,183 --> 01:09:11,763
+mola alma işleminden de
+
+675
+01:09:11,763 --> 01:09:14,083
+trede ve mola hakkı bilgisi geri döndürülüyor.
+
+676
+01:09:14,243 --> 01:09:16,243
+Buna göre doğru düzgün bir
+
+677
+01:09:16,243 --> 01:09:18,243
+çıkış yapma ya da kütüphaneden atılma durumları
+
+678
+01:09:18,243 --> 01:09:19,164
+söz konusu oluyor.
+
+679
+01:09:22,083 --> 01:09:23,723
+Yönel diagramımız var
+
+680
+01:09:23,723 --> 01:09:26,183
+burada nesne yönelik bir düzgü kullandığımız için.
+
+681
+01:09:27,223 --> 01:09:28,043
+Dört temel
+
+682
+01:09:28,043 --> 01:09:29,943
+kılsımız var. Bu member
+
+683
+01:09:29,943 --> 01:09:31,884
+kütüphaneye kullanan insanlar kütüphane
+
+684
+01:09:31,883 --> 01:09:34,223
+sıra ve oda aslında.
+
+685
+01:09:35,223 --> 01:09:37,083
+Bunların özellikleri ve fonksiyonları
+
+686
+01:09:37,083 --> 01:09:38,903
+içinde tanınmamış durumda. Az önce
+
+687
+01:09:38,903 --> 01:09:41,283
+anlattığım şeyler aslında burada gerçekleşen olaylar.
+
+688
+01:09:42,863 --> 01:09:44,823
+Ayrı şıl diagramımızda şu şekilde
+
+689
+01:09:44,823 --> 01:09:46,503
+biz hepsini tek bir yere topladık.
+
+690
+01:09:47,623 --> 01:09:48,963
+Sırasıyla bahsedeceğim
+
+691
+01:09:48,963 --> 01:09:51,003
+şimdi hepsinden. İlk önce
+
+692
+01:09:51,003 --> 01:09:52,383
+üye olunabiliyor,
+
+693
+01:09:52,883 --> 01:09:55,043
+giriş yapılabiliyor. Giriş yapılmasının sonucunda
+
+694
+01:09:55,043 --> 01:09:56,463
+doğruluk mesajı döndürülüyor.
+
+695
+01:09:57,103 --> 01:09:59,203
+Daha sonra rezervasyon yapma işleminde
+
+696
+01:09:59,203 --> 01:10:00,863
+iki ihtimal var.
+
+697
+01:10:00,863 --> 01:10:03,903
+Daha önce bahsettiğim gibi boş yer olması ya da olmaması.
+
+698
+01:10:04,423 --> 01:10:06,943
+Boş yer olması durumunda rezervasyon yapma bilgisi gidiyor.
+
+699
+01:10:07,103 --> 01:10:12,283
+Daha sonra odaya geçme ve masa seçme ve bunun sonucunda masa oda bilgileri döndürülüyor kullanıcıya.
+
+700
+01:10:12,843 --> 01:10:15,183
+Eğer yer yoksa da sıra bilgisi döndürülüyor.
+
+701
+01:10:16,763 --> 01:10:19,223
+Daha sonra mola alma işlemi gerçekleşiyor.
+
+702
+01:10:19,623 --> 01:10:26,164
+Mola almada mola başlama ve mola bitirme işlemleri gerçekleşiyor kendi içinde kütüphane klasımızın.
+
+703
+01:10:26,463 --> 01:10:29,343
+Ve bunun sonucunda kalan mola sayısı döndürülmüş oluyor.
+
+704
+01:10:29,343 --> 01:10:36,643
+Bunun bir sonucu olarak da olabilecek bir sonucu olarak da kredisinin kalmaması kişinin.
+
+705
+01:10:36,823 --> 01:10:42,283
+Bunda da odayı ve masayı boşaltması bekleniliyor ve daha sonra da atılma bilgisi döndürülmüş oluyor kişiye.
+
+706
+01:10:43,083 --> 01:10:47,723
+Ve daha sonra da kütüphaneden çıkış işleminde de normal bir şekilde oda ve masa boşaltılmış oluyor.
+
+707
+01:10:47,963 --> 01:10:52,243
+Ve böylece bütün klaslarımızın hayat dönüşü tamamlanmış oluyor.
+
+708
+01:10:54,463 --> 01:10:58,703
+Gerçekleştirmede biz veritaban olarak MongoDB'yi kullandık.
+
+709
+01:10:58,703 --> 01:11:01,603
+Bunun üç tane ana sebebi var aslında.
+
+710
+01:11:01,963 --> 01:11:12,563
+Birincisi donanım ve altyapıdaki endişelerimizi bu bulut tabanı sayesinde giderebilmiş olmamız ve veri tabanını kolayca bu buluta taşıyabilmiş olmamız.
+
+711
+01:11:13,903 --> 01:11:16,804
+Yedekleme ve geri almada da bize güven verdi açıkçası.
+
+712
+01:11:17,743 --> 01:11:24,043
+Otomatik yedekleme seçenekleri sunduğu için, kaybı önlemek için kendisi düzenli olarak yedekleme yapıyor.
+
+713
+01:11:24,963 --> 01:11:29,343
+Güvenlik olarak da verilerimizi koruyor ve şifreli bir sistem.
+
+714
+01:11:29,523 --> 01:11:31,603
+Ayrıca kullanıcı erişimi sağlanabiliyor.
+
+715
+01:11:31,603 --> 01:11:36,343
+Bu sayede kimin erişip kimin erişemeyeceği de bizim tarafından belirlenebiliyor.
+
+716
+01:11:37,563 --> 01:11:42,843
+Kotlama sırasında da daha önce İbrahim arkadaşımın bahsettiği gibi C ve Java arasında kaldık.
+
+717
+01:11:43,263 --> 01:11:47,603
+Ve bunun nesneye yönelik olması gerektiğini düşünüp Java'da kararlaştırdık.
+
+718
+01:11:47,603 --> 01:11:54,383
+Ara yüz olarak da önce bir arkadaşımızın da denediği JavaFX kullanmaya karar verdik.
+
+719
+01:11:55,643 --> 01:11:58,803
+Fizibilite değerlendirmemizi bu şemaya göre yaptık.
+
+720
+01:11:59,543 --> 01:12:02,683
+Bu şemaya göre hangi sistem kullanacağımızı belirledik.
+
+721
+01:12:03,643 --> 01:12:06,603
+Müşteri değerlendirmemizde burada toplantı 4 sonucuna göre...
+
+722
+01:12:07,731 --> 01:12:31,152
+İbrahim'in de daha önce bahsettiği gibi kütüphane müdüründen aslında onay aldık. Ama şöyle bir geri dönüşü de aldık. Biraz yavaş olduğum sistemimizin geri dönüşünü aldık ve bunun geliştirilmesi için de bir talep de bulunuldu bize. Bu kadar. Şimdi gerçekleştirmesi için söz tekrar İbrahim arkadaşıma bırakacağım ben.
+
+723
+01:12:38,420 --> 01:12:42,039
+Ezgi ekran paylaşımını durdur istersen.
+
+724
+01:12:42,459 --> 01:12:43,300
+Tamamdır.
+
+725
+01:12:51,604 --> 01:12:52,623
+Tekrar merhaba.
+
+726
+01:12:58,163 --> 01:13:01,783
+Pardon, şuradan şimdi çalıştırıyoruz.
+
+727
+01:13:11,028 --> 01:13:26,667
+karşımıza böyle bir giriş ekranı çıkıyor. Eğer kütüphaneye hali hazırda üye olmuşsanız direkt mail ve şifrenize giriş yapabiliyorsunuz. Eğer üye olmamışsanız da mesela ben şu an kendim üye olacağım. Buradan diğer kayıt ol penceresine geçip üye oluyorum. Mesela hemen üye olayım.
+
+728
+01:13:29,187 --> 01:13:30,528
+Kendi bilgilerimle.
+
+729
+01:13:35,956 --> 01:13:46,855
+Şifreyi de şöyle. Burada da koşullarımızı kabul ettiğini belirtiyor. Şimdi giriş yapıp ekranına gelip giriş yapıyorum lütfen.
+
+730
+01:14:02,355 --> 01:14:26,935
+Burada kütüphanemizin ana ekranı çıktı. Şimdi burada masa seç kısmından öncelikle şurada ana sayfada kütüphanemizin dolabuk oranı görüyoruz. Şu an %96 dolulukta yani boş masa var benim için. Burada yukarıda salonları seçiyoruz. Şurada gördüğünüz üzere 3. odada 20. masa boş ve ben şimdi buraya oturacağım.
+
+731
+01:14:41,076 --> 01:14:55,015
+Masaya oturduldu. Burada da hemen masa doluluk oranı zaten artmış oldu. Şurada da oturduğum salon ve masa numarası gözüküyor. Şimdi burada mola alma işlemleri var. Mesela ben bir mola aldım.
+
+732
+01:14:57,427 --> 01:15:04,187
+15 dakikalık molam başladı. Ama mesela moladayken tekrar mol almaya çalışırsam da hata verecek sistem.
+
+733
+01:15:05,227 --> 01:15:08,987
+Hala moladasınız diye. Burada kalan mola hakkımız 3'den 2'ye düştü.
+
+734
+01:15:10,507 --> 01:15:18,787
+Molaya bitir dedim. Sonra şimdi şuradan hepsini azaltıp en son mola hakkımın bitmesini göstermek istiyorum.
+
+735
+01:15:28,851 --> 01:15:41,551
+Burada artık mola hakkım kalmadı. Tekrar derse döndüm. Eğer tekrar mola almak istersem de mola hakkımın bittiğini söyleyecek sistem bana. Şimdi ben burada da devamını anlatması için Ayşe arkadaşıma devredeceğim. Teşekkür ederim.
+
+736
+01:15:49,652 --> 01:16:18,451
+hebalar sesim geliyor ve ekranım gözüküyor değil mi? Evet, geliyor görüyoruz ekranda. Tamamdır. Bu yazılımı gösterme konusunda ikiye ayrılma sebebimiz bir noktada bunun bir sıralı bir işlem olduğu içindi. Şimdi ben hem sıraya girme fonksiyonlarını göstereceğim hem de işte o son masaya oturduğumda işte hangi sırada olduğumu görme konusunda bilgilendireceğim. İlk olarak Ezgi'nin hesabıyla giriş yapacağım.
+
+737
+01:16:21,555 --> 01:16:28,555
+Hatta ilk işitsem yanlış bir şekilde denemek istedim. Bu şekilde geri dönüş alabiliyoruz.
+
+738
+01:16:33,171 --> 01:16:37,491
+Şimdi giriş yaptığımda bekliyoruz.
+
+739
+01:16:41,779 --> 01:17:00,979
+Şimdi az önce İbrahim sondan bir aradaki masaya oturduğu için 98, 96'yı da 98 olmuştu. Gördüğünüz üzere şu masa artık dolu çünkü oraya oturdu. Ben de buraya oturmak istiyorum. Son masayı da ben oturarak bütün masaları dolduracağız.
+
+740
+01:17:00,979 --> 01:17:16,319
+Şimdi artık doğuluk oranı yüzde yüze çıktı. Burada masa bilgim ve oda bilgim yer alıyor. Şimdi buradan çıkış yaparak kendi hesabımla giriş yapacağım. Çünkü sıraya girmem lazım.
+
+741
+01:17:22,515 --> 01:17:30,496
+Bir noktada bu cloud tarafında oda bilgilerim, odanın içerisindeki masalar bu şekilde koleksiyonlar halinde tutuluyor.
+
+742
+01:17:32,115 --> 01:17:37,955
+Şimdi şuradan devam edeyim. Burada artık doğuluk oranı %100'e ulaştığı için farklı bir buton karşımıza çıkıyor.
+
+743
+01:17:37,955 --> 01:17:46,776
+Bu buton %100'e ulaşmadan gözükmüyor olacak. Şimdi hiçbir masa boş olmadığı için sıraya girmek zorundayım.
+
+744
+01:17:46,776 --> 01:17:55,596
+Sıraya girdiğimde hem bana sıra numaramı verecek hem de şuradaki sırada bekleyen kişi sayısını güncelliyor olacak
+
+745
+01:17:55,596 --> 01:18:03,315
+Şimdi çıkış yapacağım ve Ezgi'ye tekrar, Ezgi'nin hesabından tekrar giriş yaparak onu masasından kaldıracağım
+
+746
+01:18:11,699 --> 01:18:32,359
+Burada hem masada oturuyor olduğum için %100 olsa bile tekrardan bir buton yok sıraya girmem için çünkü zaten oturuyor oluyorum. Şimdi masadan kalktığımda bu bekleyen kişi sayısının bir düşmesini bekliyor olacağım. Ve tabii şurasında artık bir masada oturmadığım için bir şey yazmayacak. Yani masada oturmuyorum gibi bir bilgi olacak.
+
+747
+01:18:32,359 --> 01:18:46,519
+ve tekrar sıraya girebilirim çünkü artık yine %100 ve yine her masa dolu oluyor. Şöyle göstereyim. Yine bu masa dolu çünkü hem ben kalktım hem diğer hesabımdan sıradaydım ve buraya direkt oturdum.
+
+748
+01:18:46,519 --> 01:18:57,079
+Şimdi tekrardan kendi hesabıma giriş yapıp 3. odadaki son masaya oturduğumu göreceğim. Çünkü bunu sistem otomatik atıyor.
+
+749
+01:18:57,079 --> 01:19:18,239
+Eğer bütün odalar doluysa ve bütün masalar doluysa sadece sıraya gir butonunda artık bir masa seçme hakkım olmadığı için beni direkt masadan çıkan kişiye atıyor ve burada Kurguncuk 21 görüyorum. Bu az önce Ezgi'nin hesabından çıktığım masaydı ve böylelikle bu sistem doğru bir şekilde çalışıyor.
+
+750
+01:19:19,479 --> 01:19:22,299
+Sunumumuz bu kadardı. Bizi dinlediğiniz için teşekkür ederim.
+
+751
+01:19:22,299 --> 01:19:25,560
+Biz de teşekkür ediyoruz sunumunuz için
+
+752
+01:19:25,560 --> 01:19:32,699
+Şimdi de sıradaki grubumuz Süpermarket Bilgi Sistemi J grubu
+
+753
+01:19:32,699 --> 01:19:40,060
+İbrahim Kaya, Umut Can Demir, Furkan yok galiba
+
+754
+01:19:40,060 --> 01:19:41,019
+Buradayız hocam
+
+755
+01:19:41,019 --> 01:19:42,499
+Ha burada mısın?
+
+756
+01:19:42,739 --> 01:19:42,880
+Evet
+
+757
+01:19:42,880 --> 01:19:45,380
+Pardon görmemişim
+
+758
+01:19:45,380 --> 01:19:47,780
+Mehmet Eminaydın ve Yavuz Çetin
+
+759
+01:19:47,780 --> 01:19:52,119
+Başlıyorum dilerseniz
+
+760
+01:19:52,119 --> 01:19:59,179
+bizim sistemimiz süpermarket bilgi sistemi hızlıca bir giriş yapmak istiyorum
+
+761
+01:19:59,179 --> 01:20:02,299
+şu an paylaşmış olmam lazım
+
+762
+01:20:02,299 --> 01:20:07,899
+böyle bir gri arka plan gibi bir şey görüyorum ben çizgili
+
+763
+01:20:07,899 --> 01:20:10,299
+arka plan olarak gri bir şey
+
+764
+01:20:10,299 --> 01:20:13,380
+tekrar paylaşayım direkt ekranı paylaşayım
+
+765
+01:20:13,380 --> 01:20:16,619
+şu an nasıl peki
+
+766
+01:20:16,619 --> 01:20:19,459
+evet şimdi içindekileri görüyorum
+
+767
+01:20:19,459 --> 01:20:20,280
+tamam o zaman
+
+768
+01:20:20,280 --> 01:20:28,560
+Biliyorsunuz teknolojinin hızlı ilerleyişiyle birlikte süpermarketler müşterilerin daha iyi hizmet sunabilmek için dijitalleşmeye yöneliyor.
+
+769
+01:20:28,560 --> 01:20:30,780
+Aslında sadece süpermarketler demek de yanlış olur.
+
+770
+01:20:30,880 --> 01:20:38,599
+Çünkü teknolojinin bu denli hızlı ilerleyişi, bu sürece girilmesi neredeyse tüm alanlarda bundan nasibini almak zorunda bıraktı firmaları.
+
+771
+01:20:38,800 --> 01:20:43,420
+Artık firmalar rekabet edebilmek için teknolojinin varlığını kesinlikle kabul etmek zorundalar.
+
+772
+01:20:43,640 --> 01:20:47,119
+Aksi takdirde elimine olduklarını söyleyebiliyoruz günün dünyasında.
+
+773
+01:20:47,119 --> 01:20:56,580
+Bizim geliştirdiğimiz süpermarket bilgi sistemi ise müşteri işlemleri, stok yönetimleri, alışveriş modülü, kampanya uygulama ve ürün yönetimi gibi önemli özellikleri sahip
+
+774
+01:20:56,580 --> 01:21:02,459
+Aslında kendi alanına göre olması gereken tüm kritik rollere sahip olduğunu söyleyebiliriz
+
+775
+01:21:02,459 --> 01:21:10,080
+Bu sayede süpermarketler müşteri memnuniyetini ve satış rakamlarını arttırarak rekabet avantajı elde edebiliyorlar
+
+776
+01:21:10,080 --> 01:21:16,080
+Çok daha geniş kitlelere yayılıp markasını daha bilindik hale getiriyor ve değerlerine değer katabiliyorlar
+
+777
+01:21:16,079 --> 01:21:27,659
+Süpermarket bilgi sistemi müşterilerin alışveriş işlemlerini kulaştırarak stok takibi, ödeme işlemleri, kampanya yönetimi ve ürün yönetimi gibi alanlarda da süpermarketlerin etkinliklerini arttırıyor.
+
+778
+01:21:27,659 --> 01:21:33,519
+Bu açık sistem sürekli olarak gelişiyor ve süpermarketlerin ihtiyaçlarını uygulayarak tasarlanabiliyorlar firmalarca.
+
+779
+01:21:34,039 --> 01:21:36,519
+Günümüz dünyasında şimdi günümüz dünyasında tabii ki.
+
+780
+01:21:36,599 --> 01:21:40,619
+Şimdi dilerseniz bunu nasıl tasarladığımıza biraz daha yakından bakalım.
+
+781
+01:21:42,079 --> 01:21:44,359
+Bu girişte şimdi toplantılardan bahsedelim.
+
+782
+01:21:44,359 --> 01:21:52,639
+yaptığımız bir ünlü toplantı genel amaçlı bir toplantıydı. Grup üyeleriyle tanıştık öncelikle. Fikir alışverişleri yaptık. Her bir üyenin kendi fikrini sorduk.
+
+783
+01:21:53,159 --> 01:21:58,499
+Ve kendimizi hafiften belirgin bir rot oluşturduk. Ve değiştirilebilir görevleri dağıttık ilk başta.
+
+784
+01:22:00,059 --> 01:22:07,119
+Şimdi aslında şunu da söylemeliyim. Burada ne kadar toplantıları şeklinde yazılmış olsa da koordinasyonun büyük bir kısmını toplantılar haricinde yaptık.
+
+785
+01:22:07,119 --> 01:22:09,859
+Bizat gülerimizle konuşarak, iletişime geçerek yaptık.
+
+786
+01:22:10,676 --> 01:22:18,715
+İkinci toplantıya da geçecek olursak sistemin genel tasla zaten hazırlı. Ufak tefek ayrıntılar işte programlama gibi Node.js seçimini yaptık.
+
+787
+01:22:19,556 --> 01:22:26,215
+Fizibiliteyi yapmaya başladık ve bu ikinci toplantı zamanı yönelik fizibilitenin tekrardan gözden geçirildiğini hatırlıyorum.
+
+788
+01:22:27,895 --> 01:22:35,735
+Üçüncü toplantıda ise fizibiliteler çoktan bitmişti ve programcılarımız ilerleme kat etmişti.
+
+789
+01:22:35,735 --> 01:22:40,715
+önceden planladığımız modüllerin tamamı henüz eklenmemişti ama sistem genel hatlarıyla hazır gibiydi.
+
+790
+01:22:40,995 --> 01:22:45,795
+Bu noktada uygulamamıza biraz daha müşteri gözüyle bakıp değerlendirmelerde bulunduk.
+
+791
+01:22:45,935 --> 01:22:48,435
+Ne eklenebilir, nasıl eklenebilir gibi sorular sorduk.
+
+792
+01:22:48,435 --> 01:22:50,735
+Hatta bununla ilgili bir bölüme zaten yer verdik.
+
+793
+01:22:50,815 --> 01:22:52,235
+Yeri geldiğinde ondan da bahsedeceğiz.
+
+794
+01:22:53,536 --> 01:22:55,356
+Dördüncü toplantı ise sistem hazırdı.
+
+795
+01:22:55,435 --> 01:22:59,315
+Bu toplantı daha çok son bir toplantı olması gerektiğini düşündüğümüz için yaptık.
+
+796
+01:22:59,455 --> 01:23:00,655
+Sunum hakkında konuştuk.
+
+797
+01:23:00,856 --> 01:23:01,835
+Uygulamayı inceledik.
+
+798
+01:23:02,536 --> 01:23:03,095
+Denebilir.
+
+799
+01:23:05,735 --> 01:23:08,935
+Şimdi bu projeye neden ihtiyaç var?
+
+800
+01:23:09,835 --> 01:23:17,176
+Süpermarketler günümüzde rekabetin yoğun olduğu bir sektörde müşteri beklentini karşılamak ve deneyimi iyileştirmek için çeşitli stratejiler geliştirmektedir.
+
+801
+01:23:17,176 --> 01:23:21,235
+İşte bu stratejiler arasında süpermarket bilgi sistemlerinin kullanımda yer almaktadır.
+
+802
+01:23:21,655 --> 01:23:26,475
+Bu sistemler müşteri işlemlerinin hızlı ve verimli bir şekilde gerçekleştirmesini sağlıyor.
+
+803
+01:23:26,975 --> 01:23:32,235
+Müşterilerin alışveriş süreci hızlandırılırken otomatik ödeme seçenekleriyle güvenli bir ödeme deneyimi sunuyor.
+
+804
+01:23:32,235 --> 01:23:37,075
+Aynı zamanda stok yönetimi ve ürün yönetimi konularla da süpermarketlere avantajlar sağlıyor
+
+805
+01:23:37,075 --> 01:23:43,695
+Sonuç olarak süpermarket bilgi sistemleri günümüzde süpermarketlerin başarılı olabilmesi için önemli bir araç haline geldi
+
+806
+01:23:43,695 --> 01:23:52,635
+Bu sistemler müşteri odaklılık, verimlilik sağlayarak müşteri memnuniyetini arttırıyor, satışları optimize ediyor ve operasyonlar daha verimli bir şekilde yönetilmesini sağlıyor
+
+807
+01:23:52,635 --> 01:23:59,415
+Süpermarketlerin rekabetçi bir şekilde var olabilmeleri için bu süpermarket bilgi sistemlerine olan ihtiyaç da giderek artmakta
+
+808
+01:23:59,415 --> 01:24:06,575
+Peki giderilmesi için nelere ihtiyaç var bu sistemin gerçekleştirilmesi için?
+
+809
+01:24:06,935 --> 01:24:20,116
+Süpermarket bilgi sisteminin başarılı olması için kısaca donanım ve yazılım altyapısı, güvenilir ağ bağlantısı, NTG veritabını, kullanıcı dostu arayüz ve tabii ki yetkim teknik personel gibi temel gereksinimlerin sağlanması genel olarak gerektiğini söyleyebiliriz.
+
+810
+01:24:21,396 --> 01:24:23,655
+Peki bu usta zorluklar neler?
+
+811
+01:24:23,775 --> 01:24:29,155
+Süpermarket bilgi sistemleri birçok yararlı özelliğiyle süpermarketlere önemli avantajlar sağlamakta.
+
+812
+01:24:29,155 --> 01:24:44,015
+Bunların arasında müşteri memnuniyetinin arttırılması, satışların optimize edilmesi, verimlilik artışı, stok yönetiminin iyileştirilmesi ve kolaylaştırılması, kampanyaların etkin şekilde yönetilmesi ve veri analitinin stratejik kararlar alması sayılabilir.
+
+813
+01:24:44,015 --> 01:24:51,375
+Ayrıca teknik sorunlar, ağ kesintileri, güvenlik riskleri gibi olumsuz durumlar süpermarketlerin olumsuzluklarını etkileyebilir.
+
+814
+01:24:51,515 --> 01:24:56,555
+Bu nedenle doğru altyapıyı sağlamak, güvenli önlemleri uygulamak ve personelin eğitimini sağlamak önemli.
+
+815
+01:24:56,555 --> 01:25:02,735
+süpermarketler bu riskleri yöneterek ve sistemin maksimum fayda sağlayarak süpermarket bilgi sistemi kullanmaktadırlar.
+
+816
+01:25:03,655 --> 01:25:05,735
+Burada bizim sistemimizin özelliklerini görüyoruz kabaca.
+
+817
+01:25:05,875 --> 01:25:09,615
+Kullanıcı işlemleri, stok ve ürün işlemleri, alışveriş modülü, kampanya uygulamalı bir ürün yeteneği.
+
+818
+01:25:09,675 --> 01:25:13,575
+Bunu yapı diagramlarında ve daha birçok diagramda daha detaylı olarak göreceğiz.
+
+819
+01:25:14,575 --> 01:25:17,015
+Burada bir müşteri istek formumuz var. Bunu okumayacağım.
+
+820
+01:25:17,015 --> 01:25:24,115
+Bu bir arkadaşımızın müşteri rolü yaparak bizden ne istediğini, nasıl istediğini anlatan bir diyalog şeklinde hazırlamıştık bunu.
+
+821
+01:25:24,116 --> 01:25:34,536
+fizibilitelere geçmek istiyorum. Burada bir teknik fizibiliteden bahsettik. Özet demek gerekirse bir bilgisayar ve stabil bir internet bağlantısı yetiyor diyebiliriz.
+
+822
+01:25:36,496 --> 01:25:48,916
+Ekonomik fizibilite. Burada da değerleri görebiliyoruz. Biz öngörürek yaptık bunları. Sonuç olarak bunlar gerçek değerler değil elbette. Sonuçta sistemi gerçekleştirmedik.
+
+823
+01:25:48,915 --> 01:25:58,595
+daha çok tahmini değerli olduklarını söyleyebiliriz. Burada geri ödeme süresinin 2 yıl olduğunu hesaplarımıza göre görebiliyoruz.
+
+824
+01:25:58,995 --> 01:26:05,235
+Bu da zaman fizibilitesi için genç şeması kullandık. Her şey daha açık ve seçik olsun diyeyim.
+
+825
+01:26:05,235 --> 01:26:10,235
+Sosyal fizibilite ve yasal fizibiliteyi geçeceğim. Çoğu sistemde zaten...
+
+826
+01:26:10,292 --> 01:26:17,171
+üç aşağı beş yukarı aynı olduğu için. Riskler ve yönetimine gelmek istiyorum.
+
+827
+01:26:18,991 --> 01:26:38,292
+Şimdi genel olarak biraz risklerden bahsedelim. Bu risklerin başında güvenlik riskleri geliyor. Elbette günümüzde birçok sistem aslında veri sızıntısı, kimlik ağ gibi birçok güvenlik riskleri barındırıyor. Bunların çözümü aslında görüntüye kadar basit değil. Sonuç olarak genel şirketler en güvenli yazılımları kullanıyor. En güvenli şirketlerle çalışıyor bu hususta.
+
+828
+01:26:38,292 --> 01:26:51,411
+bir diğer risk konusunda verilerin kaybı ve depolanması diyebiliriz. Sistem ve donanım arızaları veri kaybına neden olabiliyor ve iş sürekliğini etkileyebiliyor. Bunun çözümü için yanıl olarak sıklıkla veri yedekleme işlemleri yapılabiliyor diye düşünüyoruz.
+
+829
+01:26:53,672 --> 01:27:03,731
+Burada birçok sorunlar da var. Riskler, doğal afetler. Sonuç olarak bir serverda bir yangın çıkması bile birçok şeyi sekteye uğratabiliyor.
+
+830
+01:27:03,731 --> 01:27:09,671
+Şimdi diagramlardan bahsetmek için sözü Yavuz'a vereceğim
+
+831
+01:27:09,671 --> 01:27:11,811
+Paylaşımı durduruyorum
+
+832
+01:27:16,180 --> 01:27:16,999
+Oramos, senyors.
+
+833
+01:27:21,619 --> 01:27:22,479
+Sesim gelmiyor.
+
+834
+01:27:24,419 --> 01:27:26,759
+Ekranı paylaşmaya çalışıyorum. Sesim nasıl geliyor?
+
+835
+01:27:27,020 --> 01:27:27,399
+Şu an iyi.
+
+836
+01:27:30,460 --> 01:27:31,580
+Evet, geldi mi?
+
+837
+01:27:32,019 --> 01:27:32,319
+Evet.
+
+838
+01:27:35,199 --> 01:27:39,319
+Şimdi yaptığımız birkaç veri akış diagramından bahsedeceğim ben.
+
+839
+01:27:39,599 --> 01:27:42,519
+Sonrasında ise programcımıza bırakacağım.
+
+840
+01:27:43,939 --> 01:27:45,819
+Tastak veri akış diagramından başlayalım.
+
+841
+01:27:45,819 --> 01:27:51,319
+Tastak veri akış diagramında kullanıcı ve admin olarak iki kişi olduğunu görebiliyoruz.
+
+842
+01:27:51,619 --> 01:27:54,419
+Kullanıcı şifre girerek sistemi girebiliyor.
+
+843
+01:27:54,939 --> 01:27:57,020
+Kullanıcı adı ve şifreyle sistemi girebiliyor.
+
+844
+01:27:58,219 --> 01:28:02,059
+Sonrasında ise istediği ürünün ismini girerek ürünü arayabiliyor.
+
+845
+01:28:02,719 --> 01:28:05,759
+Sonra supermarket bilgi sistemi de ona geri döndürdüğü bazı bilgiler var.
+
+846
+01:28:05,919 --> 01:28:08,119
+Bunlar Shube bilgisi, Stop bilgisi ve Sepet bilgisi.
+
+847
+01:28:09,219 --> 01:28:11,499
+Admin de kullanıcı adı ve şifreyle giriş yapıyor.
+
+848
+01:28:11,499 --> 01:28:15,419
+Ve ürünlere yeni bilgiler girebiliyor.
+
+849
+01:28:15,419 --> 01:28:20,039
+bilgi sistemi de geri döndürdüğü bilgiler olarak
+
+850
+01:28:20,039 --> 01:28:22,039
+şu ve bilgisi stop bilgisi
+
+851
+01:28:22,039 --> 01:28:24,019
+ürün bilgisi ve çalışan bilgisi
+
+852
+01:28:24,019 --> 01:28:27,999
+şimdi veri akış diagramından bahsedeceğim
+
+853
+01:28:27,999 --> 01:28:30,119
+bir düzeyden başlayayım kısaca
+
+854
+01:28:30,119 --> 01:28:32,579
+kullanıcımız var burada
+
+855
+01:28:32,579 --> 01:28:34,279
+kullanıcı üye olma işlemini
+
+856
+01:28:34,279 --> 01:28:35,700
+kişisel bilgilerini girerek yapıyor
+
+857
+01:28:35,700 --> 01:28:37,239
+ve üye bilgileri
+
+858
+01:28:37,239 --> 01:28:40,020
+user's da saklanıyor
+
+859
+01:28:40,020 --> 01:28:42,819
+sonra üye giriş yapmak istediğinde
+
+860
+01:28:42,819 --> 01:28:43,800
+üye olduktan sonra
+
+861
+01:28:43,800 --> 01:28:45,359
+kullanıcı adı ve şifresini girerek
+
+862
+01:28:45,359 --> 01:28:46,939
+üye girişini gerçekleştiriliyor.
+
+863
+01:28:47,419 --> 01:28:49,179
+Üye girişi yaptıktan sonra
+
+864
+01:28:49,179 --> 01:28:51,319
+marketin hangi
+
+865
+01:28:51,319 --> 01:28:53,219
+şubesinde alışveriş yapacağını seçiyor ve
+
+866
+01:28:53,219 --> 01:28:55,179
+alışveriş yapma işlemini
+
+867
+01:28:55,179 --> 01:28:56,980
+burada görebiliyoruz. Bu da
+
+868
+01:28:56,980 --> 01:28:59,239
+ürünler tablosundan alıyor ve
+
+869
+01:28:59,239 --> 01:29:01,679
+sepet bilgisini
+
+870
+01:29:01,679 --> 01:29:02,019
+alıyor.
+
+871
+01:29:03,340 --> 01:29:05,419
+Adminin yapabileceği bazı işlemler var.
+
+872
+01:29:05,519 --> 01:29:07,119
+Admin neler yapabiliyor? Admin
+
+873
+01:29:07,119 --> 01:29:09,340
+marketteki çalışanların
+
+874
+01:29:09,340 --> 01:29:11,299
+bilgilerini görüntüleyebiliyor. İzin günlerini
+
+875
+01:29:11,299 --> 01:29:13,259
+ve aldıkları maaşları
+
+876
+01:29:13,259 --> 01:29:15,319
+ve benzeri görüntüleyebiliyor ve değiştirebiliyor.
+
+877
+01:29:15,359 --> 01:29:22,739
+ürünlerin bilgilerini, ürün bilgisi girerek aratıp ürün bilgisini değiştirebiliyor.
+
+878
+01:29:23,779 --> 01:29:27,700
+Kampanya uygulayabiliyor. Bu kampanyalar belirli süre aralıklarında oluyor.
+
+879
+01:29:27,800 --> 01:29:33,719
+Bir süre aralığını girdikten sonra o ürüne hangi yüzde de indirim yapılacağını da giriyor
+
+880
+01:29:33,719 --> 01:29:38,019
+ve ürünün fiyatı o tarih aralıklarında o yüzde de azalma indirim oluyor.
+
+881
+01:29:40,019 --> 01:29:43,480
+Admin şubelerin bilgilerini görüp değiştirebiliyor.
+
+882
+01:29:43,480 --> 01:29:46,720
+marketin şubelerini ve bilgilerini görebiliyor.
+
+883
+01:29:47,000 --> 01:29:49,080
+Üye girişleri kullanıcıyla hemen hemen aynı.
+
+884
+01:29:51,659 --> 01:29:56,679
+Şimdi ikinci düzey ve yakış diagramını burada çok net gözükmüyor.
+
+885
+01:29:56,679 --> 01:29:59,560
+O yüzden görsel olarak açacağım.
+
+886
+01:30:00,959 --> 01:30:01,739
+Bunu kapatacağım.
+
+887
+01:30:21,300 --> 01:30:29,560
+Evet. Ükinci düzey veri akış diyagramı çok büyük olduğunu anlatımız çok uzun süreceğinde. Kullanıcının yaptığı işlemlerden bahsedeceğim sadece.
+
+888
+01:30:31,319 --> 01:30:36,919
+Kullanıcı isim ve şifre girişini yapıyor. Sonra burada kayıt işlemi gerçekleşiyor ve üye bilgileri güncelleniyor.
+
+889
+01:30:38,439 --> 01:30:46,480
+Kullanıcı isim ve şifre girdiğinde isim ve şifre girişi işlemi gerçekleşiyor. Ondan sonra kullanıcının girişi onay gelirse onaylanıyor.
+
+890
+01:30:46,899 --> 01:30:51,159
+Ondan sonra bu kullanıcı bir alışveriş yapmak istediği şubeyi buradan seçiyor.
+
+891
+01:30:51,300 --> 01:31:09,579
+Şube seçildikten sonra kullanıcıdan bir ürün seçmesi isteniyor. Bu ürün seçildikten sonra bu ürün sepete ekleniyor. Sepete eklenen üründen sonra ödeme işlemini geçirebiliyor. Ödeme yapıldıktan sonra da bu ürün satıldığı için bu üründen bir stok güncellemesi gerekiyor.
+
+892
+01:31:10,959 --> 01:31:13,140
+İkinci düzey bir akış diyagramı da buydu.
+
+893
+01:31:22,899 --> 01:31:36,759
+Sistemin genel akışını burada kısaca bahsetmişiz. Bu ne? Süpermarket yönetim sistemi. Kullanıcıların ürünleri görüntüleyebileceği, sepetlerine ürün ekleyebileceği, fiyatları görebileceği ve satın alma işlemlerini gerçekleştirebileceği bir platform sağlıyor.
+
+894
+01:31:38,239 --> 01:31:46,959
+Kullanıcılar sistemi geçiş yaparak kayıt oluyorlar ve ardında ürün listelerini görüntüleyebiliyorlar. Ürün detaylarına erişerek ürünlerin hakkında daha fazla bilgi edinebiliyorlar.
+
+895
+01:31:46,959 --> 01:31:53,240
+beğendikleri ürünü sepet ekleyebiliyorlar. Sonra alışverişlerini gerçekleştiriyorlar. Onay ve teslimat bilgilerini görüntüleyebiliyorlar.
+
+896
+01:31:55,019 --> 01:31:58,620
+Sistem kullanıcının alışveriş deneyimini yöneterek doğru stok bilgilerini güncel tutuyor.
+
+897
+01:31:59,359 --> 01:32:04,179
+Belki işte diagramında da gösterdiğim gibi. Bu diagramı Şurkan Arkadaşım...
+
+898
+01:32:04,179 --> 01:32:09,800
+Aynen ben anlatayım. Burada göreceğimiz gibi bizim sistemimiz dört ana yapıdan oluşuyor.
+
+899
+01:32:09,800 --> 01:32:13,620
+İşte sepet işlemleri, alışveriş işlemleri, kullanıcı işlemleri ve düzenleme işlemleri gibi.
+
+900
+01:32:13,619 --> 01:32:22,639
+bu her bir yapıda kendi içinde bazı küçük yapılara ayrılıyor diyebiliriz. Bir tanesini alalım. Örneğin sepet işlemlerini alalım.
+
+901
+01:32:22,639 --> 01:32:29,939
+Sepet işlemleri için bilgi sisteminden kullanıcı bilgisi, ürün bilgisi, ürün stok bilgisi, istek bilgisi ve sepet bilgisi gönderiliyor.
+
+902
+01:32:30,919 --> 01:32:39,439
+Örneğin sepete bir ürün eklemek istediğimizde işte sepet bilgisi, ürün bilgisi gibi, ürün fiyat bilgisi gibi şeyler o modüle gönderiliyor.
+
+903
+01:32:39,440 --> 01:32:43,660
+sonra eğer o ürün varsa stok bilgisinden kontrol edilip sepete yükleniyor.
+
+904
+01:32:43,760 --> 01:32:46,480
+Sepet işlemlerine döndürülüyor o sepet.
+
+905
+01:32:46,959 --> 01:32:51,980
+Sonra sepet işlemlerinde sepet bilgisi ve yeni stok bilgisi bilgi sistemine geri döndürülüyor.
+
+906
+01:32:52,840 --> 01:32:56,319
+Tıpkı bu modül gibi diğer işlemler de kendi içinde ayrılıyor.
+
+907
+01:32:56,319 --> 01:33:00,560
+Hepsini bahsetmenin çok zaman alacağını düşündüğümüz için bahsetmeyeceğim.
+
+908
+01:33:01,359 --> 01:33:03,179
+İsterseniz programa geçelim.
+
+909
+01:33:03,200 --> 01:33:04,700
+ER diyagramı varmış bundan sonra.
+
+910
+01:33:04,840 --> 01:33:06,120
+Ondan sonra da programa geçelim.
+
+911
+01:33:10,452 --> 01:33:21,351
+Evet, şimdi varlık ilişki diyagramını kısaca göstereceğim. Ondan sonra Mehmet Emin arkadaşımız galiba müşteri değerlendirmesini anlatacak.
+
+912
+01:33:25,844 --> 01:33:30,123
+Siz bir iş ayrımı yapmadınız mı? Galiba ile mi oluyor bu işler?
+
+913
+01:33:30,503 --> 01:33:31,663
+Aslında onu ben de yapmadım.
+
+914
+01:33:31,663 --> 01:33:34,363
+Yapalım mı, yapmayalım mı diye tartışmışım. Sesim geliyor.
+
+915
+01:33:34,363 --> 01:33:34,844
+Yapmayın.
+
+916
+01:33:35,483 --> 01:33:37,563
+Gerek yok gibi çünkü süre sıkıntısı var.
+
+917
+01:33:38,403 --> 01:33:41,663
+Evet. O yüzden hızlıca bunu anlat hemen uygulamaya geçelim.
+
+918
+01:33:42,264 --> 01:33:48,024
+Burada da işte hangi varlıkların olduğunu ve bu varlıkların hangi bilgilere sahip olduğunu kısaca görebiliriz.
+
+919
+01:33:48,844 --> 01:33:52,583
+İşte mesela ürünün ID'si var, ismi var ve fiyatı var.
+
+920
+01:33:52,583 --> 01:34:12,643
+Bunların birbirleri olan işlerini görebiliyoruz. Ürünün bir stovu var. Sepette ürün var gibi. Birbirleri olan işlerini görebiliyoruz. Kullanıcının ID'si username, password, role. Admin mi yoksa normal kullanıcı mı? Bunu görebiliyoruz.
+
+921
+01:34:12,643 --> 01:34:29,543
+Burada da employilerin bir şeyini görebiliyoruz. Mesela bu employilerin mesaileriyle ilgili bilgiler var. Ve tatilleriyle ilgili tablo var burada da. Benim anlatacaklarım bu kadar. Şimdi Mehmet Emin'e bırakıyorum o sonu.
+
+922
+01:34:30,683 --> 01:34:37,363
+Yok Mehmet Emin bir şey anlatmasın. Direkt programa geçelim. Ben zaten bahsettim azıcık müşteri şeyini değerlendirmesinden.
+
+923
+01:34:41,460 --> 01:34:45,679
+Tamamdır o zaman. Ben uygulamaya geçiyorum. Ekran paylaşayım ben.
+
+924
+01:34:53,235 --> 01:34:54,255
+Ekran geldi mi acaba?
+
+925
+01:34:56,375 --> 01:34:56,635
+Evet.
+
+926
+01:34:56,956 --> 01:34:57,495
+Evet, geldi.
+
+927
+01:34:58,255 --> 01:35:17,815
+Ben İbrahim. Uygulamanın, sistemin uygulama kısmını ben geliştirdim. Node.js ile yazdım uygulamayı. Arayüz olarak Node.js kullandım. Database'de PostgreSQL kullandım. Şu şekilde arayüzümüz gördüğünüz gibi böyle. İlk girişte kullanıcı bununla karşılaşıyor.
+
+928
+01:35:17,815 --> 01:35:24,815
+burada ürünler var, ürünlerin resimleri bu arada tamamen rastgele olarak çektim, onların şeyi yok
+
+929
+01:35:24,815 --> 01:35:28,055
+burada isimleri var, stokları var ve fiyatları var
+
+930
+01:35:28,055 --> 01:35:32,895
+burada branch var, işte istediğiniz bir şubeye atlayabiliyorsunuz
+
+931
+01:35:32,895 --> 01:35:36,535
+her branchin kendine özel ürünleri var ve stok miktarları var
+
+932
+01:35:36,535 --> 01:35:42,035
+sonrasında buradan herhangi bir şey yapmak istediğinde kullanıcı giriş ekranına atıyor
+
+933
+01:35:42,035 --> 01:35:44,535
+burada kayıtta olabiliyorsun, basıp ara yüzle
+
+934
+01:35:44,535 --> 01:35:47,695
+öncelikle normal bir kullanıcılar giriş yapacağım
+
+935
+01:35:47,815 --> 01:36:13,395
+sonrası admin olarak da giriş yapacağım. Normal bir kullanıcı giriş yaptığını direkt burada sepet atıyor. Bir ürün ekledim mesela. Burada gördüğünüz gibi stok miktarda değişiyor zaten. Şu şekilde. Sonrasında burada sepette ürünler gözüküyor ve toplam fiyatları var. Satın alma yok. Ayrı bir iş olacağı için yapmadık modüllerimiz yoktu. Tekrar kaldırabiliyorsunuz stok miktarı tekrar güncelleniyor.
+
+936
+01:36:13,395 --> 01:36:16,695
+kullanıcının yapabildiği şeyler bu şekilde.
+
+937
+01:36:17,195 --> 01:36:18,775
+Çıkış yapıp admin olarak giriş yapalım.
+
+938
+01:36:20,775 --> 01:36:24,775
+Böyle admin olarak da giriş yapabiliyoruz ve direkt biz olarak bizi...
+
+939
+01:36:24,775 --> 01:36:29,175
+Paneli aktörüyor bizi.
+
+940
+01:36:29,755 --> 01:36:31,315
+Tabii admin de yine burayı görebiliyor.
+
+941
+01:36:31,735 --> 01:36:33,095
+Panele girdiğimizde bu şekilde.
+
+942
+01:36:34,215 --> 01:36:39,415
+Buradan bütün aslında az önce arkadaşın gösterdiği tablolar burada mevcut.
+
+943
+01:36:40,815 --> 01:36:42,215
+Şube tablosu var.
+
+944
+01:36:42,215 --> 01:37:11,795
+sonra buradan ürünlerin tablosu var, çalışanlar tablosu var, stok tablosu var. Buradan bu tablolara ekleme çıkarma yapabiliyoruz. Mesela ürüne yapacağımız bir ekleme örnek olarak yapabiliriz isterseniz. Ürüne yapacağımız bir ekleme markete düşüyor. Hangi işe bu eklediysek oraya fiyatıyla beraber düşüyor. Buradan mesela tedarik oluşturabiliyoruz bir ürüne tedarik oluşturabiliyoruz. Oradaki yine stok miktarı güncelleniyor. Sonra burada vardiya var mesela çalışanların. Tabii bizim yaptığımız uygulamın ara yüzünde çalışanlar alakalı bir görsel yok.
+
+945
+01:37:11,795 --> 01:37:18,795
+bu admin paneline özgü sadece izinler var ve indirimler var aslında. Burada ürün fiyatlarıyla alakalı indirim de yapabiliyoruz.
+
+946
+01:37:19,375 --> 01:37:32,515
+Mesela bir indirim ekleyelim. Burada indirim miktarlarına göre view da var. Mesela birinci product'a, mesela product'ın normal fiyatı şu an, şuradan bakalım, 111 indirim girelim.
+
+947
+01:37:32,515 --> 01:37:51,635
+bulunduğumuz gün içerisinde olsun, ayın 30'sindeyiz. Şöyle %10 miktarında bir indirim yaptım. Şimdi tekrar bakalım. Gördüğünüz gibi fiyatı 100'e indi, 111'den. Burada da zam yapma kısmında mesela sermaye de hesaplayabiliriz.
+
+948
+01:37:51,635 --> 01:38:18,415
+Product 1'in sermayesi şu an bu şekilde. Güncel fiyat da burada. Product 1 nerede? Burada burada. Bu branch'ta Product 1 yok. Fiyat da güncelleniyor. Product 1 herhalde. Şurada. Branch 3'te Product 1 var ve güncel fiyat da var. Sistem bu şekildeydi. Benim anlatacaklarım bu kadar. Eğer aklınıza takılan bir kısım varsa gösterebilirim. Bu şekilde onun dışında dinleyiniz için teşekkür ederim.
+
+949
+01:38:18,415 --> 01:38:20,875
+Teşekkür ediyoruz.
+
+950
+01:38:21,175 --> 01:38:21,835
+Teşekkür ederim.
+
+951
+01:38:22,955 --> 01:38:29,295
+Evet arkadaşlar J grubunu da, J dedim yok sizinki kaç diye J dedim.
+
+952
+01:38:29,435 --> 01:38:30,335
+J tamam doğru.
+
+953
+01:38:31,195 --> 01:38:32,595
+J grubu da tamamlandı.
+
+954
+01:38:33,115 --> 01:38:34,295
+Kapatıyorum mezun ekranı.
+
+955
+01:38:34,295 --> 01:38:36,735
+Evet sen ekran paylaşımını durdur.
+
+956
+01:38:36,875 --> 01:38:40,575
+Şimdi bir H grubumuz var kalan arada atlamıştım hatırlarsanız.
+
+957
+01:38:40,815 --> 01:38:42,295
+Maç bilet satış sistemi.
+
+958
+01:38:43,235 --> 01:38:47,435
+Buradaki bu grupta Osman Berkay burada.
+
+959
+01:38:47,435 --> 01:38:50,816
+başından biri de buradaydı. Bir de İshak geldi sonra.
+
+960
+01:38:53,011 --> 01:39:09,011
+Emir, Mert ve Arif, Emre şu anda yoklar. Evet şimdi sizin durumunuz nedir? Sunum yapacak mısınız? Çünkü aslında siz normalde raporu da teslim etmeden sadece bir sunum yani PowerPoint paylaştınız benimle.
+
+961
+01:39:09,011 --> 01:39:16,692
+artı kodunuz da çalışmıyor. Bilmiyorum siz fark ettiniz mi ama yani verdiğiniz yer dosyasını
+
+962
+01:39:16,692 --> 01:39:23,372
+execute etmek istediğimde direkt olarak daha açılırken exception alıyor. Ondan sonra da chat diye kapanıyor.
+
+963
+01:39:26,372 --> 01:39:34,912
+Doğrudur hocam o kod kısmı çalışmıyordu. Sunuma da grupta yazdığımda Mert ve İshak sunmak istememişti
+
+964
+01:39:34,911 --> 01:40:02,111
+hazırlanmadığımız için. O yüzden de sunmayı da düşünmüyoruz hocam bu yüzden. Tamam peki. O zaman sadece teslim ettiğiniz raporlu üzerinden değerlendireceğim sizi. Peki tamam. Oldu o zaman. Evet arkadaşlar sunumlarımızın sonuna geldik bu durumda. 14 haftalık maratonu tamamladık.
+
+965
+01:40:02,111 --> 01:40:31,791
+umarım sadece kod geliştirmek değil bir problemin çözümünde problemi en baştan ele alıp ondan sonra anlayıp anladığımızı formal bir şekilde ifade edip ona uygun bir çözüm önerisi geliştirip ondan sonra da gerçekleştirme aşamasını bunu taşıyacak şekilde
+
+966
+01:40:31,791 --> 01:40:39,232
+süreçte neler yaşanıyor genel olarak bunları göstermeye çalıştık bu ders kapsamında. Varsa soru.
+
+967
+01:40:42,836 --> 01:40:44,336
+Hocam hakkınızı helal edin.
+
+968
+01:40:45,056 --> 01:40:46,296
+Helal olsun canım.
+
+969
+01:40:48,695 --> 01:40:50,336
+Siz de edin madem öyle.
+
+970
+01:40:51,075 --> 01:40:51,975
+Helal olsun hocam.
+
+971
+01:40:52,195 --> 01:40:52,676
+Helal olsun.
+
+972
+01:40:53,155 --> 01:40:54,676
+Galiba gideceğim herhalde öyle.
+
+973
+01:40:55,355 --> 01:40:57,535
+Yok hocam. Hayat mı?
+
+974
+01:40:58,256 --> 01:40:58,675
+O yüzden.
+
+975
+01:40:59,676 --> 01:41:04,695
+Peki. O zaman final sınavında da başarılar. Görüşmek üzere.
+
+976
+01:41:04,695 --> 01:41:05,596
+Altyazı teşekkürler.
+
+977
+01:41:05,635 --> 01:41:07,676
+Görüşürüz hocam. Teşekkürler. Görüşürüz.
+
+978
+01:41:08,435 --> 01:41:11,915
+Bize sınavına benzer bir şekilde bir final sınavı oluşturacağız.
+
+979
+01:41:11,915 --> 01:41:27,016
+online olduğu için zaten birbirimizi görmeden devam ediyor olacağız. Peki arkadaşlar kendinize iyi bakın. Teşekkür ediyorum katılımlarınız ve katkılarınız için. Finalde de başarılar dileyerek oturumu sonlandırıyorum. Hoşçakalın.
+
+980
+01:41:27,016 --> 01:41:30,115
+Sağ olun hocam. İyi günler hocam. İyi günler.

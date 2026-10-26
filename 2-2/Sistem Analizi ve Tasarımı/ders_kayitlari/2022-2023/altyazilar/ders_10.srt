@@ -1,0 +1,1463 @@
+1
+00:00:08,724 --> 00:00:15,003
+ve
+
+2
+00:01:51,347 --> 00:01:53,067
+Hocam merhabalar, ben geldim.
+
+3
+00:01:58,963 --> 00:02:03,263
+Merhaba Atıcı Hocam. Seni host yaptım, sen alabilirsin kontrolü.
+
+4
+00:02:03,884 --> 00:02:04,663
+Tamam hocam.
+
+5
+00:02:05,263 --> 00:02:06,063
+İyi dersler.
+
+6
+00:02:06,703 --> 00:02:08,143
+Sağ olun, teşekkür ederim.
+
+7
+00:02:16,532 --> 00:02:32,792
+Merhaba arkadaşlar. Bugün sizinle birlikte sistem analizi ve tasarımı da bir uygulama gerçekleştireceğiz. Spor salonu sisteminin işte fizibilite çalışmasını, gereksinim analizini inceleyeceğiz.
+
+8
+00:02:34,391 --> 00:02:36,491
+Sesim geliyor mu? Herhangi bir problem var mı?
+
+9
+00:02:37,771 --> 00:02:38,971
+Geliyor hocam.
+
+10
+00:02:38,971 --> 00:03:08,951
+Tamamdır. Şimdi şu spor salonu sistemi için bir problem tanımı gerçekleştirelim. Hizmet vermekte olan bir spor salonu artan müşteri sayısı ve genişleyen ders içerikleri sebebiyle yeni bir sisteme geçmeye ihtiyacı duyuyor. Var olan sistemde müşteriler spor salonuna giderek kayıt yaptırıyor. Kayıtlar yönetim tarafından yerel olarak depolanıyor. Bu durumda zaman kaybını oluşturuyor.
+
+11
+00:03:08,971 --> 00:03:22,072
+yani müşteri sayısı fazla olmuyorken belki bu problem yaratmıyordu fakat müşteri sayısı arttığında bir problem oluşmuş. Bunlar da artık yeni bir sisteme geçmek istiyorlar. Bu problemimiz bu.
+
+12
+00:03:22,072 --> 00:03:27,612
+spor salonunda artık işlemler online olarak gerçekleştirecek.
+
+13
+00:03:28,332 --> 00:03:32,271
+Kişiler işte salona online olarak üye olacaklar.
+
+14
+00:03:33,152 --> 00:03:35,472
+Dersleri kendileri seçecekler.
+
+15
+00:03:35,472 --> 00:03:40,572
+İşte sınıfların, saat ve sınıfların takvimini görüntürebilecek,
+
+16
+00:03:40,752 --> 00:03:46,271
+sınıfta ne zaman ders olduğu ile ilgili eğitmen bilgilerini görebilecekler.
+
+17
+00:03:46,752 --> 00:03:51,671
+İşte aerobik, step, pilates gibi işte özel derslere katılabilecekler.
+
+18
+00:03:51,671 --> 00:04:06,051
+bunların içinde ayrı bir ücret ödeyecekler. Yönetim tarafından da belirlenen derslerin tarih, saat bilgilerini, sınıf kapasitelerini görüntüleyebilecekler aynı zamanda.
+
+19
+00:04:06,591 --> 00:04:17,911
+Eğitimciler de sistemdeki kişisel bilgilerini güncelleyebilecekler. Bu şekilde bir sistem, online bir sistem tasarlanması isteniyor bizden.
+
+20
+00:04:17,911 --> 00:04:31,112
+problem tanımına devam ettiğimizde her ay sabit bir üyelik ücreti alınacak. Bu üyelik ücretin dahilinde süresiz olarak fitness salonundan yararlanılabilecek kullanıcılar.
+
+21
+00:04:31,631 --> 00:04:40,071
+Pilates, dans ve benzeri gibi özel eğitimler içinde ayrıca ekstra bir ücret ödemesi gerekiyor kullanıcıların.
+
+22
+00:04:40,071 --> 00:04:52,571
+Bu dersler için, atıyorum dans için bir ders yani grup dersi olabileceği gibi ayrıyeten özel dersler de olabilir. Bunlar için de ayrıyeten bir ücret ödemeleri gerekiyor.
+
+23
+00:04:57,524 --> 00:05:04,823
+belirtilen problemli sistemi kullanacak kişiler ve yapacakları işlemler yine kısa bir şekilde özetlenebilir.
+
+24
+00:05:05,484 --> 00:05:17,624
+Spor salonu yönetimi kişilerin yaptığı üyelik başvurularını onaylayacak, derslere ait sınıflar oluşturacak, tahit, tarih, saat bilgileriyle eğitmen bilgilerini girecekler.
+
+25
+00:05:18,223 --> 00:05:24,683
+Gerekirse bu bilgilerde güncelleme yapabilecek bu spor salonu yönetimi kısmının yapabileceği işlemler.
+
+26
+00:05:24,683 --> 00:05:50,463
+Üyeler bilgilerini girerek üyelik işlemlerini gerçekleştirilecekler. Sınıfların takvim, eğitmen vesaire bilgilerini görüntüleyerek kontenjanları olan sınıflara kayıt olabilecekler. İsterse eğitmenlerden özel ders talep edebilecekler. Eğitmenler sistemdeki bilgilerini güncelleyebilecekler. Ders verdikleri sınıflara ait katılımcı listelerini görüntüleyebilecekler.
+
+27
+00:05:50,463 --> 00:06:06,083
+Bizim yapacağımız projede 3 tane aktörümüz var. Biri spor salonu yönetimi, biri üye, biri de eğitmen olarak geçiyor. Bu 3 tane aktörün de yapabileceği işlemleri burada kısa bir şekilde özetlemiş olduk.
+
+28
+00:06:06,083 --> 00:06:15,903
+sistem analizi ve tasarımlı adımlarına geldiğimizde ilk başta biz bir fizibilite çalışması gerçekleştireceğiz yapacağımız proje için.
+
+29
+00:06:15,903 --> 00:06:22,803
+Daha sonra gereksinim analizini gerçekleştireceğiz. En son adımda da bir sistem tasarımı gerçekleştireceğiz arkadaşlar.
+
+30
+00:06:23,863 --> 00:06:32,983
+Bu arada bu yapabileceğimiz, buradaki yapacağımız adımları siz kendi ara projelerinizde, bitirme projelerinizde uygulayacaksınız.
+
+31
+00:06:32,983 --> 00:06:43,583
+yani bu şekilde sizden bunları uygulayacağınız raporlar isteniyor sizden zaten. Bu dersler sizin için hem ara projelerinizde hem de bitirme projelerinizi hazırlarken yardımcı olacağını düşünüyorum.
+
+32
+00:06:47,860 --> 00:06:59,599
+Fizibilite çalışması, teknik fizibilite, ekonomik fizibilite, zaman fizibilitesi, sosyal fizibilite, yönetim fizibilitesi ve yasal fizibilite olarak 6'ya ayrılıyor.
+
+33
+00:07:01,759 --> 00:07:08,599
+Teknik fizibilitede sistemin hayata geçmesinde kullanılacak yazılım, donanım birimleri araştırılıyor.
+
+34
+00:07:08,599 --> 00:07:38,019
+araştırılıyor. İşte ben bu proje için hangi donanımlara ihtiyacım var? İşte hangi yazılımı kullanmam gerekiyor? Gibi gibi bir araştırma yapıyorum. Sistem mesneye dayalı programla programlanacak. Java ve JavaScript ile ön arka plan geliştirilmeleri sağlanacaktır. Biz bu gerçekleştirdiğimiz projede Java ve JavaScript kullandığımızı varsayıyoruz. Bu varyasyonlar kendi içerisinde şekillenebilir. İşte C, C, Sharp.
+
+35
+00:07:38,599 --> 00:07:51,399
+Python, Django gibi farklı farklı yazılımlar kullanılabilir. Biz burada nesneye dayanıp bir programlama dili olarak Java'yı tercih ettik. Bunu varsayıyoruz örnek üzerinde.
+
+36
+00:07:52,479 --> 00:08:02,039
+Spor sonunu donanımsal olarak yetersizdi. Eski bilgisayarlara sahipti. Yeni bilgisayarlar server, router gibi donanım elemanlarına ihtiyaç duyuluyor.
+
+37
+00:08:02,040 --> 00:08:25,880
+Eğer ben online bir sisteme geçeceksem benim zaten bir server'a ihtiyacım var kullanıcı bilgilerini tutmam için işte router, yeni bilgisayarlara ihtiyacım var. Burada ben tedarik edilebilecek donanım birimlerini ve teknik özelliklerini yazıyorum. Daha sonra çünkü ben burada yazdığım donanım birimleri ve teknik özellikleriyle daha sonra bir ekonomik fizibilite oluşturacağım.
+
+38
+00:08:25,879 --> 00:08:37,759
+sonuçta ben ne kadar iyi donanım birimi kullanırsam ya da donanım birimlerini arttırdığımda benim bu projenin, bu yapacağım çalışmanın bana olan maliyeti de artmış olacak.
+
+39
+00:08:40,419 --> 00:08:47,139
+Masaüstü bilgisayar donanım birimi olarak belirtmişiz. Daha sonra da wireless router diye belirtmişiz.
+
+40
+00:08:47,139 --> 00:08:57,240
+bunlar dediğim gibi sizin projenize yani sizin projeye olan bakış açısında sizin projeden isteğinize göre buradaki istediğiniz donanım elemanları değişebilir.
+
+41
+00:08:58,319 --> 00:08:59,119
+Gelelim.
+
+42
+00:09:01,259 --> 00:09:08,539
+Teknik fizibilitede spor sonu sisteminde kullanıcı sayısı arttığında veri tabanı için ayrı bir sonucu alınabilir.
+
+43
+00:09:08,679 --> 00:09:14,279
+Bu alternatifler dediğim gibi hatta bu alternatifleri siz de çoğaltabilirsiniz.
+
+44
+00:09:14,279 --> 00:09:33,960
+daha sonraki aşama olarak ise veri tabanı ve uygulama sunucusu cloud ortamına taşınabilir. Veri tabanı ayrı bir sunucuda veya cloudda tutmak ayrı bir maaliket getirecektir aslında. Sizin buna verebileceğiniz örnekler var mı? İşte hocam kullanıcı sayısı arttığında şu şekilde de bir donanım ihtiyacı doğabilir diye.
+
+45
+00:09:33,959 --> 00:09:40,199
+siz de derste katılırsanız daha aktif bir şekilde işlemiş oluruz.
+
+46
+00:09:40,199 --> 00:09:42,319
+Hem de sizin için daha faydalı olur.
+
+47
+00:09:42,779 --> 00:09:48,339
+Çünkü yaptığınız raporlarda bu teknik fizibilite, ekonomik fizibiliteyi anlatmanızı istiyoruz.
+
+48
+00:09:48,459 --> 00:09:50,319
+Detaylı bir şekilde açıklamanızı istiyoruz.
+
+49
+00:09:55,796 --> 00:10:06,015
+Böyle online olunca biraz derslerde öğrenciyle çok iletişime geçemiyoruz. Geçen dönem yüzde yaptığımızda öğrencilerden katkılar olmuştu. Hocam şunu ne yapabiliriz, bunu ne ekleyebiliriz gibi.
+
+50
+00:10:07,235 --> 00:10:13,796
+Daha verimli geçordu dersler ama online olduğunda böyle sizden bir karşılanış alamayınca...
+
+51
+00:10:16,148 --> 00:10:42,927
+Neyse, bir fikriniz yoksa teknik fizibiliteden sonra ekonomik fizibiliteye geçebiliriz arkadaşlar. Ekonomik fizibilitede ben yazılım, donanım masraflarını çıkarmaya çalışıyorum. Bu projede, bu projenin maliyeti bana ne kadar olacak? İşte bu proje ne kadar sürede başa baş noktasına ulaşacak? Yani ben ne zaman kar noktasına geçebileceğim? Bunların tahminlerini yapabiliyoruz.
+
+52
+00:10:42,927 --> 00:11:02,387
+İlk aşamada da projeye başlamadan önce de aslında bizim için bir fikir oluyor. Yani ben bu projede ne kadar harcayacağım? Ne kadar harcarım? Onu görmüş oluyorum. Projeye bu şekilde başlıyorum. Bunları görerek başlamış oluyorum. Yazılım şirketini ne kadar ödeyeceğim? Bilgisayarların maliyeti ne kadar olacak?
+
+53
+00:11:02,387 --> 00:11:11,067
+routerların, serverın, yazılım araçlarının gibi gibi. Yazılım araçları burada ücretsiz demişiz ama ücretli bir yazılım aracı da kullanıyor olabilirdik.
+
+54
+00:11:12,327 --> 00:11:22,648
+Buradaki ücretler tabii ki de sadece şu an sembolik ücretler. Daha sonra ekonomik fizibiliteden sonra biz zaman fizibilitesine gidiyoruz.
+
+55
+00:11:22,887 --> 00:11:32,127
+Zaman fizibilitesinde sistemin ne kadar sürede planlanıp hayata geçirileceği bir iş akışının tarihlere göre nasıl olacağının belirlendiği adımdır.
+
+56
+00:11:32,387 --> 00:12:00,228
+Gant çizelgesi ile zaman planlaması yapıyoruz. Burada Gant çizelgesine mesela bunu geçen derste uygulamada yine anlatmıştı Elçin Hocanız. Siz Elçin Hocanız anlatmıştı. Ben diğer gruba anlatmıştım. Gant çizelgesi ile bir planlama yapıyorduk. Bu planlamada hangi işi, hangi kaynak yapacak bunların atamasını yapıyorduk.
+
+57
+00:12:00,227 --> 00:12:13,227
+İşte bu kaynakların saat başına alacakları ücretleri görebiliyorduk. Aslında genel olarak bir projenin nasıl işleyeceğini, ne zaman biteceğini net bir şekilde Gant çizelgesi üzerinden görebiliyorduk.
+
+58
+00:12:14,267 --> 00:12:21,507
+Tabi Gant çizelgesinin yanı sıra işte PERT diagramı da kullanabilirsiniz bu süreçleri rahat bir şekilde görebilmek için.
+
+59
+00:12:21,508 --> 00:12:35,228
+ama hani PERT'e göre Gantt çizelgesinin daha net bir görüntüsü vardı. Yani iş adımlarının ilişkilerini daha net bir şekilde gösteriyordu. Genellikle zaten PERT yerine Gantt çizelgesi yaygın olarak kullanılıyor.
+
+60
+00:12:37,987 --> 00:12:39,588
+Hocam bir şey sorabilir miyim?
+
+61
+00:12:39,847 --> 00:12:40,948
+Tabii ki de sorabilirsin.
+
+62
+00:12:41,688 --> 00:12:49,028
+Sürecimiz Gantt çizelgesinde belirttiğimiz şekilde işlemezse bunu sunum yapacağımız zaman nasıl belirtmeliyiz?
+
+63
+00:12:49,027 --> 00:12:55,467
+yani böyle böyle planladık ama yapamadık diye sözlü bir şekilde mi yoksa bunu belirtmenin farklı bir yöntemi var mı?
+
+64
+00:12:57,227 --> 00:13:06,087
+Şöyle bir şey aslında kullandığınız şeye göre değişebiliyor. Nasıl diyeyim? Kullandığınız yazılım modeline göre değişebiliyor.
+
+65
+00:13:06,607 --> 00:13:16,487
+Bazen uzadığınızda geri dönüşler sağlayabiliyorsunuz ama mesela projede net bir şekilde belirlendiyse 15 gün ya da 6 gün gibi
+
+66
+00:13:16,487 --> 00:13:40,868
+belki şurada ara toplantılarda da belirtilebilir bu. Hani uzadı. Bazı işlerde mesela esneklik payı var. Esneklik payında hani o iki gün esneklik payı varsa uzasa bir sıkıntı olmaz ama hani net bir iş varsa bu uzadığında bu sefer direkt diğer işleri de etkileyecektir. Hani bu toplantıda belirlenerek bu Gant çizelgezi tekrardan güncellenilir.
+
+67
+00:13:40,868 --> 00:13:49,407
+zaten burada atıyorum biz MS Project kullanmıştık. MS Project üzerinde tekrar bir düzenleme yaptığınızda zaten otomatikman
+
+68
+00:13:49,844 --> 00:13:56,563
+Mesela ayrıntılı tasarım kısmı dört günden beş güne çıktığında bitiremediniz.
+
+69
+00:13:56,824 --> 00:13:58,203
+Dört günden beş güne çıktı.
+
+70
+00:13:58,724 --> 00:14:01,543
+Tasarım birim toplantısında bu belirtilebilir.
+
+71
+00:14:01,543 --> 00:14:03,483
+Bugün uzar.
+
+72
+00:14:04,003 --> 00:14:10,524
+Daha sonra zaten uzadığında MS Project diğer işler içinde otomatik bir planlama daha yapacaktır.
+
+73
+00:14:10,604 --> 00:14:13,243
+Oraya beş dediğinde direkt gün sayısı artacak.
+
+74
+00:14:13,403 --> 00:14:16,524
+Diğerlerinin tarihlerini de ona göre ayarlayacaktır.
+
+75
+00:14:17,903 --> 00:14:18,684
+Teşekkür ederim.
+
+76
+00:14:19,844 --> 00:14:36,123
+Ya büyük ihtimalle senin dediğin olasılıklar büyük projelerde gerçekleşiyor olabilir. Yani bizim yaptığımız belki gerçekleştirdiğimiz küçük projelerde fazla sarkmıyor olabilir ama hani büyük projelerde çıkan bir aksaklık nedeniyle hani gün sayısı uzuyor olabilir.
+
+77
+00:14:36,123 --> 00:14:43,243
+Onu da direkt buradaki gün sayılarını güncellenerek tekrar yeni bir gaunt çizelgesi oluşturulabilir.
+
+78
+00:14:43,663 --> 00:14:47,923
+Diğer test uzmanının, mesela yazılımcı ikinin işi uzadı.
+
+79
+00:14:48,643 --> 00:14:54,583
+Test uzmanının da bunu takip edebilmesi için tekrar bir gaunt çizelgesi düzenlenebilir.
+
+80
+00:14:56,123 --> 00:15:01,243
+Zaten büyük bir projelerde bunlar herkese açık bir şekilde oluyor.
+
+81
+00:15:01,564 --> 00:15:05,303
+Bütün raporlar ortak bir şekilde ilerleniyor.
+
+82
+00:15:05,303 --> 00:15:09,524
+Bundan bütün ekibin haberi olup tekrar gant çizelgesi düzenlenir.
+
+83
+00:15:11,303 --> 00:15:15,144
+Zaman fizibilitesini etkileyen yazılım geliştirme modelleri var.
+
+84
+00:15:15,943 --> 00:15:21,244
+Biz bu projede yani bu şu an varsaydığımız örnek olarak anlattığımız projede
+
+85
+00:15:21,244 --> 00:15:24,683
+waterfall şelale yazılım geliştirme modelini kullanıyoruz.
+
+86
+00:15:26,704 --> 00:15:32,303
+Waterfall şelale modeli aslında daha önce benzer projeleri gerçekleştirdiysek
+
+87
+00:15:32,303 --> 00:15:44,644
+Dildiysek kullanıma uygun ama daha önce buna benzer bir proje yapılmadıysa, farklı bir projeye giriliyorsa Butterfall şelale modeli çok da uygun değil.
+
+88
+00:15:44,644 --> 00:15:48,564
+Çünkü şelale modelinde geri besleme yok.
+
+89
+00:15:48,723 --> 00:15:52,583
+Mesela ben analize geldim, tasarımı gerçekleştirdim.
+
+90
+00:15:52,663 --> 00:15:55,903
+Gerçekleme aşamasında bir problem olduğunu düşündüm.
+
+91
+00:15:55,903 --> 00:15:59,004
+tekrardan tasarım aşamasına gidip
+
+92
+00:15:59,004 --> 00:16:01,204
+tasarım aşamasını tekrarlayıp
+
+93
+00:16:01,204 --> 00:16:05,724
+daha sonra gerçekleme, test ve bakım aşamasına gelme gibi bir adımım yok.
+
+94
+00:16:05,864 --> 00:16:10,663
+Ben waterfall şelale modelinde analizi tamamen bitirdiğimi varsayıyorum.
+
+95
+00:16:11,123 --> 00:16:15,083
+Tasarım adımının tamamen doğru bir şekilde tamamlandığını varsayıyorum.
+
+96
+00:16:15,663 --> 00:16:16,784
+Gibi gibi ilerliyor.
+
+97
+00:16:16,963 --> 00:16:18,064
+Geri besleme yok.
+
+98
+00:16:19,603 --> 00:16:25,603
+Bu da büyük ölçekli projelerde waterfall şelale modeli önerilmiyor.
+
+99
+00:16:25,603 --> 00:16:28,323
+Yani önerilmiyor dedim, kullanıma uygun değil.
+
+100
+00:16:28,683 --> 00:16:33,003
+Her projeye göre farklı farklı kullanıma uygun yazılım modelleri var.
+
+101
+00:16:33,523 --> 00:16:38,243
+Projeye göre yazılım modelini doğru seçmek gerekiyor ki proje başarıya ulaşsın.
+
+102
+00:16:38,743 --> 00:16:40,003
+Bu da önemli bir nokta.
+
+103
+00:16:42,064 --> 00:16:50,383
+Mesela bu projede waterfall şelale modeli tercih edilmiş ama buna bir alternatif olan da waterfall iteratif modelde tercih edilebilirdi.
+
+104
+00:16:50,823 --> 00:16:52,263
+Bunda geri besleme var.
+
+105
+00:16:52,263 --> 00:16:56,123
+Ben tasarım adımında bir sıkıntı yaşadım.
+
+106
+00:16:56,303 --> 00:16:58,064
+Tasarım adımında değil, tasarımı yaptım.
+
+107
+00:16:58,463 --> 00:16:59,803
+Gerçekleme adımına geldim.
+
+108
+00:16:59,924 --> 00:17:04,564
+Gerçekleme aşamasında ben tasarımda bir sıkıntı olduğunu gördüğümde
+
+109
+00:17:04,564 --> 00:17:06,683
+tasarım adımına geri dönüyorum.
+
+110
+00:17:06,903 --> 00:17:10,623
+Tasarımdaki eksikliği veya hatayı düzeltiyorum.
+
+111
+00:17:11,204 --> 00:17:14,743
+Daha sonra gerçekleme adımına tekrardan geri dönebiliyorum.
+
+112
+00:17:19,188 --> 00:17:34,447
+Bu zaman fizibilitesini de anlattık. Zaman fizibilitesinden sonra bizim için sosyal fizibilite geliyor. Gerçekleştirmesi planının online üyelik içeren spor salonu sisteminin farklı spor salonları tarafından kullanıldığı görülüyor.
+
+113
+00:17:34,447 --> 00:17:57,048
+Yani bu ben online spor solunum sistemine geçmeden önce aslında bir araştırma yapıyorum yani sosyal olarak. Benim bu yaptığım proje toplum tarafından kabul görecek mi? Bu da önemli. Ben bir şey için efor sarf edeceğim. Bana bunun bir maliyeti var. Benden bir şeyler götürecek. Ama bana bunun getirisi olacak mı?
+
+114
+00:17:57,048 --> 00:18:03,228
+mesela buna baktığımızda artık birçok şeyi online üzerinden birçok işlemi halledebiliyoruz.
+
+115
+00:18:03,647 --> 00:18:05,588
+Birçok yere üye olabiliyoruz.
+
+116
+00:18:05,728 --> 00:18:07,987
+İşte atıyorum banka işlemlerimizi gerçekleştiriyoruz.
+
+117
+00:18:08,507 --> 00:18:11,588
+Artık bu şeyi kullanan yaş aralığı da arttı.
+
+118
+00:18:11,688 --> 00:18:16,308
+Artık hani genç nesiller özellikle zaten gençler çok fazla spora yöneliyor.
+
+119
+00:18:17,048 --> 00:18:21,868
+Onlar da internetle, telefonla, böyle şeyler de çok haşır neşir sosyal medyayla.
+
+120
+00:18:21,868 --> 00:18:31,848
+o yüzden de diyoruz ki biz bu online spor salonu sistemi kullanılabilir, bana getirisi olabilir diye düşünüyorum.
+
+121
+00:18:34,408 --> 00:18:46,147
+Yönetim fizibilitesi, benim bu bir ekiple gerçekleştireceğim online spor salonu sisteminin yönetim tarafından isteniyor ve destekleniyor olması lazım.
+
+122
+00:18:46,147 --> 00:18:59,467
+yönetim tarafından özellikle zaten bir projenin gerçekleşmesi için yönetim tarafından desteklenmesi önemli. Zaten yönetim tarafından desteklenmeyen bir projenin hayata geçmesi çok zor.
+
+123
+00:19:02,963 --> 00:19:23,543
+Yasal fizibiliteye geldiğimizde de kişilerin sistemde paylaştığı bilgilerin kişisel verilerin korunması kanunu gereği korunma altına alacaktır. Üyelik aşamasında belirtilecektir. Ben bunu kullanıcılar sisteme üye olurken bunu belirtmem gerekiyor. Onların verilerinin korunacağını kullanıcıya belirtmem gerekiyor.
+
+124
+00:19:23,543 --> 00:19:28,724
+daha sonra bizim bir fizibilite matrisimiz var.
+
+125
+00:19:29,644 --> 00:19:34,304
+Fizibilite matrisinde ben 3 tane sistem önermişim örnek olarak.
+
+126
+00:19:34,463 --> 00:19:37,783
+Bu sistemler 4, 5, 6 diye bir sınır yok.
+
+127
+00:19:37,903 --> 00:19:39,824
+Farklı farklı sistemler önerebilirim.
+
+128
+00:19:39,824 --> 00:19:51,184
+Ben bu fizibilite matrisinde farklı farklı sistemleri karşılaştırıyorum ve benim projem için uygun olan sistemi tercih etmek istiyorum.
+
+129
+00:19:51,183 --> 00:19:58,363
+aslında burada ben bir tane direkt bir tane sistem görürsem belki birbirleri arasında bir karşılaştırma yapamayabilirim.
+
+130
+00:19:58,363 --> 00:20:10,143
+Bu önerilen sistemleri çoğaltmakta fayda var. Ben farklı sistemler göreyim ki bu sistemlerden hangisi bana daha uygun, benim gerçekleştireceğim projeye daha uygun.
+
+131
+00:20:11,603 --> 00:20:17,403
+Mesela önerilen sistem bir de Java, JavaScript kullanılırken ve server kullanılmış teknik olarak.
+
+132
+00:20:17,403 --> 00:20:28,643
+diğerinde C Sharp,.NET ve iki server kullanılmış. Üçüncüde Python, Django, Cloud ve güvenlik hizmeti kullanılmış.
+
+133
+00:20:29,643 --> 00:20:42,683
+Mesela aslında baktığımızda önerilen sistem 3'te güvenlik hizmetinin veriliyor olması, işte Cloud sistemin kullanılıyor olması daha avantajlı gibi oluyor ama bunun maliyeti bize daha yüksek.
+
+134
+00:20:42,684 --> 00:21:10,044
+ya buna baktığımda işte ben bu maliyeti harcayacağım ama bana getirilsin ne kadar olacak? Ben kar ne kadar elde edebileceğim? Bunu karşılaştırdığımda benim şu anki işletmem için maliyetin yüksek olduğunu düşünüyorum. Önerilen sistem 2 de aynı şekilde. Yine 2 server kullanılmışım. Şu an benim online sisteme geçiş aşamasında benim için maliyeti yüksek. Şu an benim başlangıç için işlerimi tek bir server görebilir.
+
+135
+00:21:10,043 --> 00:21:15,123
+o yüzden ben önerilen sistem 1'i tercih ettiğimi düşünüyorum bu örnek için.
+
+136
+00:21:16,423 --> 00:21:18,243
+Sizin burada bir önerileriniz var mı?
+
+137
+00:21:18,383 --> 00:21:22,903
+İşte hocam teknik fiziviyat aşamasında şu da eklenebilirdi diye.
+
+138
+00:21:23,423 --> 00:21:25,043
+Mesela ben 3 tane sistem önermişim.
+
+139
+00:21:26,143 --> 00:21:28,343
+Sizin de önerebileceğiniz 4. bir sistem var mı?
+
+140
+00:21:35,859 --> 00:21:36,919
+yok galiba.
+
+141
+00:21:39,679 --> 00:21:54,700
+Fizibilite madresinde önerilen sistem örnekleri arttırılabiliyor. Örneilen sisteme göre teknik fizibilite, ekonomik fizibilite, zaman fizibilitesi, yasal fizibilite, yönetim fizibilite, sosyal fizibilite farklılıklar gösterebiliyor.
+
+142
+00:21:54,700 --> 00:22:19,400
+Burada örnekte de gördük. Bazıları sosyal fizibilite ile yönetim fizibilitesi farklılık göstermemişti ama yasal ve diğerleri farklılık gösterdi. Önerilen sistemde teknik fizibilite kısmında nesne yönelik programlamayı destekleyen web destekli herhangi bir programlama dili tercih edilebilir. Ama biz Java'yı tercih etmiştik.
+
+143
+00:22:19,400 --> 00:22:28,620
+Peki nesne yönelik programlamayı destekleyen programlama dilini seçmemizdeki neden ne olabilir arkadaşlar?
+
+144
+00:22:28,740 --> 00:22:31,300
+Burada bir kaçını yazmış ama siz de bunu çoğaltabilirsiniz.
+
+145
+00:22:32,580 --> 00:22:34,440
+Ya da bunu daha detaylı açabilirsiniz.
+
+146
+00:22:42,483 --> 00:23:09,583
+Yine bir cevap yok. O zaman devam ediyorum. Sınıflar sayesinde tüm proje değişiklik yapmak yerine tek bir sınıfta değişiklik yapıp tüm proje çalışmasını sağlayabiliriz. Tüm proje çalışmasını sağlayabiliriz. Sınıfları bir kez oluşturduğumuzdan dolayı uzun kod tekrarlarından kurtulmuş oluruz. Nesneler birbirinden bağımsız olduğu için bize bilgi gizliliği konusunda avantaj sağlayacaktır. Bu avantajlar çoğaltılabilir.
+
+147
+00:23:12,483 --> 00:23:37,983
+Ben fizibilite çalışmamı gerçekleştirdikten sonra artık gereksinim analizi kısmına geçiyorum. Ben ön incelememi yaptım. Fizibilite adımlarında elde edilen bilgilere ait raporları inceledim. Artık sıra benim gereksinim analizimi yapmama geldi. Yapılan detaylı görüşmeler sonucu sistemin ihtiyaçları belirlenerek modellemeler yapılıyor bu adımda. Tasarım aşamasının temelleri oluşturuluyor.
+
+148
+00:23:37,983 --> 00:23:45,864
+Bu aşamada veri toplama yöntemi olarak açık uçlu ve kapalı uçlu sorulardan oluşan bir anket kullanıcılara sunuluyor
+
+149
+00:23:45,864 --> 00:23:49,763
+Şöyle düşün, biz bir spor sonu sistemiydik
+
+150
+00:23:49,763 --> 00:23:58,123
+Ben buradaki spor sonu kullanıcılara sorular sorarak aslında biraz daha bu gerçekleştireceğim projeyi yönlendirmeye çalışıyorum
+
+151
+00:23:58,123 --> 00:24:04,043
+Şöyle de düşünebilir, biz bir yazılım şirketi olduğumuzu varsaydığımızda bize bir müşteri geliyor
+
+152
+00:24:04,043 --> 00:24:06,924
+Ben müşterinin isteklerini dinlediğim safa burası
+
+153
+00:24:06,923 --> 00:24:13,663
+müşterinin isteklerine göre aslında ben artık bir tasarım aşamasını modellemeye başlayacağım.
+
+154
+00:24:14,903 --> 00:24:20,003
+Biz de şu an spor salonu olarak bir kullanıcılarla görüşme gerçekleştiriyoruz.
+
+155
+00:24:20,503 --> 00:24:23,643
+Görüşme, anket gibi bir veri toplamaya çalışıyoruz.
+
+156
+00:24:25,863 --> 00:24:27,723
+Veri toplama anketi örneği burada var.
+
+157
+00:24:27,803 --> 00:24:32,263
+İşte var olan sistemde sorun yaşıyor musunuz gibi sorular yöneltmişiz kullanıcılara.
+
+158
+00:24:32,263 --> 00:24:39,863
+bunlar üzerinde, bunları verilen cevaplar üzerine projemizi yönlendireceğiz, çekillendireceğiz.
+
+159
+00:24:41,844 --> 00:24:48,344
+Şimdi benim elimde aktörlerim vardı. Aktörleri ben ilk safhada anlatmıştım.
+
+160
+00:24:49,583 --> 00:24:53,564
+Spor sonu yönetimi vardı, eğitmen vardı ve kullanıcılar vardı.
+
+161
+00:24:53,564 --> 00:25:02,424
+Yüz case kullanım senaryosunda bu aktörlerin gerçekleştirilen proje üzerinde yapabileceği işlemleri anlatacağız
+
+162
+00:25:02,424 --> 00:25:08,983
+Senaryolar yani yapabileceği, gerçekleştirileceği işlemler elips ile gösteriliyor
+
+163
+00:25:08,983 --> 00:25:11,383
+Sıkı yüz case diagramında
+
+164
+00:25:11,383 --> 00:25:20,064
+Üyenin sınıfa kaydolması işlemi sınıf bilgisinin görüntüreme işlemini de içermekte olduğundan include ile ifade ediliyor
+
+165
+00:25:20,064 --> 00:25:28,644
+üyeler sınıfa kaydolurken isterlerse özel ders talebiyi de bilmektelerdir. Sınıfa kaydolma aksiyonu extent ile gösteriliyor.
+
+166
+00:25:29,924 --> 00:25:43,504
+Spor salonu sistemine ait örnek 100 kez diagramı bir aşağı bir sonraki slide'da. Burada ben 100 kez diagramını oluşturmadan önce 100 kez kullanım senaryosu dokümentasyonu oluşturuyorum.
+
+167
+00:25:43,503 --> 00:25:52,823
+Senaryom benim yaptığım işlem ödeme işlemi. Bu ödeme işlemindeki birinci aktör yani ödeme işlemini gerçekleştirecek olan kişi üye.
+
+168
+00:25:53,823 --> 00:26:02,363
+İlgiler ve beklentiler, üyeler doğru hesaplanan ücreti sorunsuz şekilde online sisteme sistem üzerinden ödemek istiyorlar.
+
+169
+00:26:03,203 --> 00:26:10,343
+Kişiler üye olmalı veya sistemde online bulunmalıdır. Son koşullar ödeme bilgileri doğru olmalıdır.
+
+170
+00:26:10,344 --> 00:26:20,323
+ana akış üye ödenecek toplam tutarı görüntüler, ödenecek tutarı için kredi kartı bilgilerine ve fatura bilgilerine girer, üyenin onayıyla ödeme gerçekleşir.
+
+171
+00:26:20,323 --> 00:26:33,724
+Bu ana akış da benim olmasını beklediğim akış fakat alternatif akışım da var benim. Üyenin verdiği bilgilerde yanlışlık olması durumunda sistem hata mesajı verecek, bilgileri yeniden girmesini isteyecek.
+
+172
+00:26:35,284 --> 00:26:37,223
+Bu sadece benim ödeme işlemim
+
+173
+00:26:37,223 --> 00:26:39,024
+içinde. Ben geri kalan tüm
+
+174
+00:26:39,024 --> 00:26:40,704
+işlemler için kullanım senaryosu
+
+175
+00:26:40,704 --> 00:26:42,284
+dokumentasyonu oluşturuyorum.
+
+176
+00:26:43,923 --> 00:26:44,683
+Yüz kez
+
+177
+00:26:44,683 --> 00:26:46,664
+kullanım senaryosu aşağıda
+
+178
+00:26:46,664 --> 00:26:48,763
+gördüğünüz gibi. Şu benim
+
+179
+00:26:48,763 --> 00:26:51,384
+dikdörtgenle belirttiğim
+
+180
+00:26:51,384 --> 00:26:52,983
+spor salonu sistemim.
+
+181
+00:26:53,483 --> 00:26:54,384
+Bu spor salonu
+
+182
+00:26:54,384 --> 00:26:57,223
+içinde yapabileceğim işlemleri
+
+183
+00:26:57,223 --> 00:26:58,723
+ben belirtiyorum.
+
+184
+00:26:58,723 --> 00:27:00,464
+Burada benim aktörlerim var.
+
+185
+00:27:00,583 --> 00:27:02,443
+Bu aktörlerimi çöp adam şeklinde
+
+186
+00:27:02,443 --> 00:27:04,044
+belirtiyorum. Üyem,
+
+187
+00:27:04,044 --> 00:27:07,144
+eğitmenim ve yönetim var aktör olarak.
+
+188
+00:27:08,263 --> 00:27:09,883
+Üye ne yapıyor? Üye olabiliyor.
+
+189
+00:27:10,324 --> 00:27:11,883
+Sınıf bilgisini görüntülüyor.
+
+190
+00:27:12,684 --> 00:27:16,263
+Sınıfa kaydolma, sınıf bilgisini görüntüleme işlemini
+
+191
+00:27:16,263 --> 00:27:19,223
+içeriyor. Daha sonra sınıfa kaydolduktan
+
+192
+00:27:19,223 --> 00:27:21,563
+sonra ben özel ders seçebilirim.
+
+193
+00:27:22,023 --> 00:27:25,364
+Bu benim isteğime bağlı bir şey. Bunu ekstentle ifade ediyoruz.
+
+194
+00:27:25,964 --> 00:27:27,644
+Daha sonra üye ödeme işlemi
+
+195
+00:27:27,644 --> 00:27:31,004
+gerçekleştirebiliyor. Eğitmen katılımcıları
+
+196
+00:27:31,004 --> 00:27:33,044
+görme, bilgi güncelleme yapabiliyor.
+
+197
+00:27:33,683 --> 00:27:35,483
+Yönetimde sınıf oluşturabiliyor.
+
+198
+00:27:36,203 --> 00:27:42,144
+Burada ben Yuskes kullanım senaryosunda net bir şekilde aktörlerimi belirtiyorum.
+
+199
+00:27:42,683 --> 00:27:45,004
+Aktörlerimin yapabileceği işlemleri belirtiyorum.
+
+200
+00:27:45,644 --> 00:27:53,043
+Aslında proje için bizim projeyi daha iyi anlamamızı ve kavramamızı sağlıyor bu diagramlar.
+
+201
+00:27:53,483 --> 00:27:55,403
+Daha farklı farklı diagramlarımız da var.
+
+202
+00:27:55,483 --> 00:27:58,364
+Bu Yuskes kullanım senaryosu.
+
+203
+00:27:58,364 --> 00:28:09,764
+Bu arada sizin projelerinizde de bu şekilde yüz kez diagramlarını raporlarda istiyorlar.
+
+204
+00:28:11,684 --> 00:28:21,983
+Daha sonra ben yüz kez kullanım senaryosunu yaptıktan sonra, yüz kez diagramı tamamladıktan sonra veri akış diagramına geçiyorum.
+
+205
+00:28:21,983 --> 00:28:25,644
+Gereksinim analizi kısmındaki son adım.
+
+206
+00:28:25,823 --> 00:28:31,403
+Elde edilen bilgiler doğrultusunda sistemdeki verilerin nasıl taşındığını modellemesi.
+
+207
+00:28:32,843 --> 00:28:37,863
+Bu benim veri akış diagramım level level olarak tasarlanıyor.
+
+208
+00:28:39,144 --> 00:28:45,303
+İlk önce ben veri akış diagramımı bir taslak şeklinde yapıyorum.
+
+209
+00:28:45,303 --> 00:28:48,263
+İlk diyorum ki benim bir sistemim var.
+
+210
+00:28:48,864 --> 00:28:50,444
+Bunda da üç tane aktörüm vardı.
+
+211
+00:28:50,444 --> 00:28:55,404
+Bu aktörler arasındaki veri akışı nasıl olacak diye kaba bir sistem tasarlıyorum.
+
+212
+00:28:55,644 --> 00:28:58,004
+Veri akış diagramı tasarlıyorum sistem değil de.
+
+213
+00:28:59,084 --> 00:29:02,824
+Sistemi böyle bir şekilde bir dörtgen içerisinde belirtiyorum.
+
+214
+00:29:02,964 --> 00:29:04,563
+Buna da spor salonu sistemi diyorum.
+
+215
+00:29:05,464 --> 00:29:06,304
+Üye ne yapıyordu?
+
+216
+00:29:06,764 --> 00:29:10,044
+Kişisel bilgilerini veriyordu spor salonu sistemine.
+
+217
+00:29:10,724 --> 00:29:11,884
+Bu şekilde üye oluyordu.
+
+218
+00:29:12,563 --> 00:29:14,964
+Daha sonra sınıf seçimi için bilgiler giriyordu.
+
+219
+00:29:15,703 --> 00:29:17,724
+Sınıf bilgileri üyeye geri dönüyordu.
+
+220
+00:29:17,964 --> 00:29:19,524
+Yani sınıf bilgilerini görüntüleyebiliyordu.
+
+221
+00:29:19,523 --> 00:29:21,323
+Daha sonra üye ne yapıyordu?
+
+222
+00:29:21,423 --> 00:29:25,303
+Ücret ödeyerek spor salonu sisteminde o aylık ücretini ödeyebiliyordu.
+
+223
+00:29:26,183 --> 00:29:29,623
+Bu şekilde yönetim ve eğitmen arasında yine veri akışları var.
+
+224
+00:29:30,043 --> 00:29:34,583
+Bunları level 0'da daha kaba bir şekilde gösteriyorum.
+
+225
+00:29:35,263 --> 00:29:38,843
+Daha sonra bu veri akış diagramımı detaylandırıyorum.
+
+226
+00:29:41,323 --> 00:29:42,903
+Asla buraya anlatmıştım.
+
+227
+00:29:43,023 --> 00:29:43,483
+Geçiyorum.
+
+228
+00:29:44,723 --> 00:29:46,723
+Artık seviye 1'e geliyorum ben.
+
+229
+00:29:46,724 --> 00:29:50,604
+seviye 1'de de ben bu yapılan işlemleri
+
+230
+00:29:50,604 --> 00:29:54,524
+yani o spor sonuç sistemindeki işlemleri artık açıyorum.
+
+231
+00:29:56,604 --> 00:29:57,244
+Bir dakika.
+
+232
+00:29:58,864 --> 00:30:00,084
+Üye ne yapıyordu?
+
+233
+00:30:00,224 --> 00:30:04,423
+Kişisel bilgilerini üye olma işlemi için kişisel bilgilerini veriyordu.
+
+234
+00:30:05,423 --> 00:30:07,864
+Daha sonra bu üye olma işleminde
+
+235
+00:30:07,864 --> 00:30:13,664
+üye bilgileri üyeler adlı veri tabanının tablosunda tutuluyordu.
+
+236
+00:30:14,464 --> 00:30:15,164
+Şöyle bir şey var.
+
+237
+00:30:15,163 --> 00:30:20,303
+buradaki işlemlere bir bilgiler hem girecek hem de çıkacak.
+
+238
+00:30:20,983 --> 00:30:24,743
+Yani buralarda hem girdilerin hem de çıktıların olması gerekiyor bu işlemler için.
+
+239
+00:30:25,383 --> 00:30:25,923
+Bunu unutmayın.
+
+240
+00:30:25,923 --> 00:30:32,943
+Sizden bir veri akış diagramı istendiğinde mutlaka her işlemin bir girdisi bir de çıktısı olması gerekiyor arkadaşlar.
+
+241
+00:30:35,092 --> 00:30:40,251
+Bir daha bakalım. Bir daha farklı bir şey inceleyelim. Ne içinizi inceleyelim?
+
+242
+00:30:43,271 --> 00:30:48,631
+Mesela yönetim sınıf bilgileri girerek bir sınıf oluşturma işleme gerçekleşiyor.
+
+243
+00:30:49,191 --> 00:30:55,871
+Bu sınıf oluşturma işleminde aldığım bilgileri ben sınıf bilgisi veri tabanının tablosunda tutmaya çalışıyorum.
+
+244
+00:30:56,272 --> 00:31:02,231
+Yani benim bilgilerim artık bu veri tabanına geliyor. Gördüğünüz gibi bilgiler geliyor ve bilgiler bir yere aktarılıyor.
+
+245
+00:31:02,231 --> 00:31:04,391
+Bu şekilde.
+
+246
+00:31:05,092 --> 00:31:32,231
+bu birinci seviyeydi. Seviye sıfırda böyle kaba bir gösterimle veri akış diyagramını gösteriyorduk. Seviye bir de ayrıntılı olarak işliyoruz. İkinci seviyede artık biz mesela neymiş bu? Ödeme yapmanın da altını detaylandırıyoruz. İkinci seviye için. Bunu her işlem için gerçekleştirebiliriz.
+
+247
+00:31:32,231 --> 00:31:39,632
+aslında üye olmayı detaylandırabiliriz. Ödeme yapmayı, sınıfa kayıt olmayı bunun da alt işlemlerini oluşturuyoruz.
+
+248
+00:31:40,212 --> 00:31:49,092
+Mesela ödeme yapmada toplam ücretin hesaplanması işlemi var. Toplam ücret ödemenin alınması adımına geçiyor, işlemine geçiyor.
+
+249
+00:31:49,812 --> 00:31:56,032
+Ödenen tutar kalan borcun hesaplanması gibi gibi farklı farklı ödeme işleminin altında da adımlar var.
+
+250
+00:31:56,032 --> 00:32:01,651
+Bunları da daha detaylandırarak ikinci seviye veri akış diyagramını oluşturabiliriz.
+
+251
+00:32:02,231 --> 00:32:06,992
+Bir de benim burada kullandığım veri sözlüğüm var
+
+252
+00:32:06,992 --> 00:32:10,431
+Veri sözlüğünü nasıl kullanıyorum bakalım
+
+253
+00:32:10,431 --> 00:32:13,871
+İsim kişisel bilgiler
+
+254
+00:32:13,871 --> 00:32:16,812
+Kişisel bilgilerim var benim
+
+255
+00:32:16,812 --> 00:32:26,711
+Bu kişisel bilgilerin içerisinde üye olacak kişinin siteme vermesi gereken ad, soyad, yaş, boy, kilo ve iletişim bilgileri yer alması gerekiyor
+
+256
+00:32:26,711 --> 00:32:29,691
+Bu bilgiler nereden gelecek bize? Üyeden
+
+257
+00:32:29,691 --> 00:32:39,911
+nereye üye olmaya gidecek? Veri yapıları üye detayları gibi üyenin detaylarını burada göreceğiz. Bu da neydi?
+
+258
+00:32:40,871 --> 00:32:47,312
+Bu da kişisel bilgiler adımında nelerin üye olma adımına aktarıldığını görüyoruz.
+
+259
+00:32:49,291 --> 00:32:54,791
+Veri sözlüğümüzü de bu şekildeydi. Bunu yine aynı şekilde atıyorum üye bilgilerinden.
+
+260
+00:32:54,791 --> 00:33:02,092
+ücreti de tekrardan bir veri sözlüğü oluşturabilirsiniz. Ücret adımında hangi bilgiler gidiyor?
+
+261
+00:33:02,931 --> 00:33:09,551
+Gibi gibi. Nereden gidiyor? Nereye gidiyor? Bunları her biri için yapabilirsiniz.
+
+262
+00:33:11,752 --> 00:33:23,952
+Sınıf bilgileri demişiz mesela. Sınıf bilgileri, sınıflarda hangi dersi verildiği eğitmen, katılımcı bilgisayar, takvim bilgileri, miktar günlük ortalama 10 giriş demişiz.
+
+263
+00:33:28,403 --> 00:33:53,563
+Daha sonra bizim varlık ilişkisi diagramımız vardı. Entity relationship diagram olarak geçiyor. Kısaltması da ERD olarak ifade ediliyor. Varlıklar nit dörtgenler ile gösteriliyor. Varlıkların sahip olduğu nitelikler elips ile varlığa bağlanarak ifade ediliyor. Varlıklar alası ilişkiler eşkenar dörtgenler ile gösteriliyor.
+
+264
+00:33:53,563 --> 00:33:57,664
+Bakalım örneğimize
+
+265
+00:33:57,664 --> 00:34:13,164
+Şimdi benim bir üyem vardı aslında üye benim için bir sınıf artık bu sınıfın özellikleri vardı attributları yaş, boy kilo, iletişim bilgisi, ad soyad
+
+266
+00:34:13,164 --> 00:34:21,163
+Daha sonra ben bu eşkenar dörtgenlerle de sınıflar arasındaki ilişkileri gösterebiliyorum
+
+267
+00:34:21,163 --> 00:34:49,303
+Şimdi üye ile sınıf arasındaki ilişkiye bakalım. Benim üye sınıfım var. Bir de sınıf adında bir sınıfım var. Bu sınıfta da isim, yer, tarih, saat ve kapasite özellikleri yer alıyor. Bunlar arasındaki kaydolma ilişkisi var. Üye sınıfa kaydoluyor. Biz bu ilişkilere de özellik ekleyebiliyoruz aslında. Kaydolma işleminde de kayıt tarihi özelliği olabiliyor.
+
+268
+00:34:49,304 --> 00:34:58,144
+genelde şemalarda çok fazla özelliklere, ilişkilere özellik eklenmiyor fakat ilişkilere de özellik eklenebileceğini unutmayalım.
+
+269
+00:35:00,584 --> 00:35:06,043
+Mesela üye ile muhasebe sınıfı arasında da ödeme yap ilişkisi varmış.
+
+270
+00:35:06,543 --> 00:35:17,784
+Muhasebe ile yönetim sınıfı arasında raporlama, yönetim ile sınıf arasında sınıf oluşturma, sınıf ile eğitmen arasında da ders verme gibi bir ilişkimiz var.
+
+271
+00:35:17,783 --> 00:35:23,264
+ben burada kabaca sınıflar ve sınıflar arasındaki ilişkileri görebiliyorum.
+
+272
+00:35:27,699 --> 00:35:34,479
+Bunlar gereksinim analizi kısmında yapabileceğimiz çalışmalardı. Artık ben sistem tasarımı adımına geliyorum.
+
+273
+00:35:36,160 --> 00:35:42,719
+Sistem mimarisini ortaya koymak amacıyla programdaki yapısal ögeler arasındaki ilişkileri belirliyor.
+
+274
+00:35:43,339 --> 00:35:50,380
+Yapı diagramları ile ana modül ve ara birimler arasındaki veri akışı detaylı ve hiyerarşik şekilde ortaya konuluyor.
+
+275
+00:35:54,867 --> 00:36:09,807
+Bakalım. Ana modüle bağlı alt modüllerin belirlenmesi ve ifade edilmesi şeklinde ilerleyen süreçte birbirinden ayrı olduğu belirlenen modüller ayrı diagramların ana modülü olarak ifade edilebiliyor.
+
+276
+00:36:11,087 --> 00:36:21,867
+Sistem tasarımında yapı diagramına oluşturuyoruz ilk başta. Yapı diagramında bizim spor salonumuz vardı.
+
+277
+00:36:21,867 --> 00:36:29,867
+spor salonuna üye olma, üye giriş yapma ve spor salonu oluşturma işlemleri yapabiliyorduk.
+
+278
+00:36:30,248 --> 00:36:32,827
+Bunlar arasında geçen bilgileri işaretliyoruz.
+
+279
+00:36:32,827 --> 00:36:36,728
+Üye olmada üyelik bilgileri spor salonuna aktarılıyor.
+
+280
+00:36:37,487 --> 00:36:40,327
+Daha sonra spor salonundan üyelik onayı geliyor.
+
+281
+00:36:41,208 --> 00:36:43,268
+Burada bir şey fark ettiniz mi şu oklarda?
+
+282
+00:36:43,427 --> 00:36:45,408
+Bunlar arasında bir farklılık var.
+
+283
+00:36:46,208 --> 00:36:47,208
+Ne olabilir sizce?
+
+284
+00:36:47,427 --> 00:36:49,107
+Niye bunları farklı göstermişim?
+
+285
+00:36:53,652 --> 00:36:58,511
+Birinin şuradaki yuvarlak, ucundaki yuvarlak boş, birinin dolu.
+
+286
+00:37:04,980 --> 00:37:29,219
+üye olmada bilgi aktarılıyor. Daha sonra bir onay geliyor. Onaylarda, doğrulamalarda genellikle şu içi dolu yuvarlak kullanılıyor. Sadece bir onay mesajı gönderiyor. Burada o yüzden farklı. Mesela kullanıcı bilgileri spor salonuna gidiyor, üye giriş yapmada doğruluyor burada. Bunun gösterimi farklı.
+
+287
+00:37:29,219 --> 00:37:43,880
+daha sonra mesela sınıfa kaydol, grup tersine katıl, özel derse katıl demişiz. Burada da bir eşkenar dörtgen var yine. Sizce bu eşkenar dörtgen neyi ifade ediyor?
+
+288
+00:37:48,788 --> 00:37:57,647
+bir seçenek. Yani sınıfa kaydolduktan sonra özel derslere de katılabilir, grup derslerine de katılabilir, özel ders de alabilir.
+
+289
+00:37:59,788 --> 00:38:01,748
+Sistem Tasarımında.
+
+290
+00:38:03,987 --> 00:38:12,628
+Nesne tamamlı yaklaşımları benimsediğimiz için artık ve sistem tasarımında bir sınıf diagramı oluşturmamız gerekiyor.
+
+291
+00:38:12,628 --> 00:38:20,007
+Peki bu sınıf diagramını nasıl oluşturuyoruz biz kendi projemiz için?
+
+292
+00:38:21,447 --> 00:38:30,067
+Bir spor salonu yönetimim var. Daha sonra bunların altında benim sınıflarım var.
+
+293
+00:38:30,067 --> 00:38:35,368
+Eğitmen, sınıf, üye, üyelik, ders gibi sınıflarım var.
+
+294
+00:38:35,367 --> 00:38:53,227
+Ders sınıfları kalıtım, bu ders sınıfındaki özellikleri olarak, kalıtım olarak aerobik, dans ve pilates sınıfları oluşturuluyor. Bu pilates, dans ve aerobik kalıtımsal olarak ders sınıfının özelliklerini alıyor.
+
+295
+00:38:57,715 --> 00:39:01,875
+Abstract sınıflarda özelliği neydi peki biliyor musunuz?
+
+296
+00:39:05,300 --> 00:39:23,199
+abstrak sınıfların direkt nesnesini oluşturamıyorduk. Bunlar arasında ilişkiler var. Peki bu ilişkileri söyleyebilecek biri var mı? Ne olduğunu. Mesela eğitmenle sınıf arasındaki ilişkiyi nasıl tanımlarız? Nasıl ifade edilmiş burada da ne anlama geliyor?
+
+297
+00:39:29,844 --> 00:39:38,543
+Arkadaşlar, hiç fikri olan yok mu? Derse katılırsanız böyle en azından dinlendiğimi anlarım. Ya da bir şeyler öğreniyor musunuz? Sizin için faydalı oluyor mu?
+
+298
+00:39:43,219 --> 00:40:00,459
+Eğitmen birden fazla sınıfa katılabilir. Üye ve sınıf arasında da zayıf varlık ilişkisi var. Yani eğer bir üye varsa bir sınıfa kayıtlı olması gerekiyor.
+
+299
+00:40:02,279 --> 00:40:11,459
+Üyenin bir tane üyeliği olabilir. Ve gibi aralarında ilişkiler var bunların. Bu şekilde sistem tasarımında sınıf diagramını gerçekleştiriyorum.
+
+300
+00:40:13,219 --> 00:40:20,719
+nesne yönelik bir programlama yapacaksa bu benim için önemli bir diagram.
+
+301
+00:40:21,719 --> 00:40:25,900
+Çünkü ben burada projede yapacağım bütün işlemleri detaylı olarak görüyorum.
+
+302
+00:40:26,800 --> 00:40:29,919
+Direkt bunun üzerinden bir programlama gerçekleştireceğim.
+
+303
+00:40:32,300 --> 00:40:38,480
+Sistem tasarımında sınıf diagramından sonra bir de ardışıl diagramlar var.
+
+304
+00:40:38,479 --> 00:40:52,839
+Sistemdeki bir üyenin üye olma, sınıfa kaydolma ve ücret görüntüleme işlemlerinde hangi metot çağrısının ne şekilde gerçekleştirene dair bir aldışır diagram örneği şu şekilde olabiliyor. Bu bizim örneğimiz.
+
+305
+00:40:52,839 --> 00:41:09,539
+Üye sınıfına ait üye isminde bir tane nesnem var. Daha sonra bu nesnem üye olma işlemi gerçekleştiriyor.
+
+306
+00:41:09,539 --> 00:41:17,599
+Bu üye ol fonksiyonunun aldığı şeyler üyelik bilgileri. Üyelik bilgilerine alıyor bu fonksiyon.
+
+307
+00:41:17,599 --> 00:41:22,359
+daha sonra spor salonu tarafından da bir onay mesajı gönderiliyor.
+
+308
+00:41:23,719 --> 00:41:31,599
+Burada giden bilgiler düz çizgiyle geri dönen mesajlar da kesikli çizgiyle gösterilmiş.
+
+309
+00:41:32,679 --> 00:41:36,779
+Peki şu dikdörtgenler neyi ifade ediyor? Bir fikriniz var mı?
+
+310
+00:41:38,899 --> 00:41:43,299
+Buradaki ardışık diagramdaki dikdörtgenler size neyi ifade ediyordur?
+
+311
+00:41:47,603 --> 00:42:09,204
+süreçleri ifade ediyor. İşte bu üye ol ve onay mesajı arasında geçen süreyi ifade ediyor. Daha sonra üye sınıf bilgisini almak istiyor. Bu sınıf bilgisini almak için bizim mesajımız sınıf sınıfına gidiyor. Daha sonra buradan bizim için bir sınıf bilgisi geri dönüyor.
+
+312
+00:42:14,260 --> 00:42:25,519
+Ben direkt sınıfa kayıt olmak istediğimde bu yine benim üyelik bilgilerim sınıfına gidiyor.
+
+313
+00:42:28,100 --> 00:42:35,559
+Borç öğren dediğimde borç öğrenme işleminde ben geliyorum spor salonuna bir mesaj gönderiyorum.
+
+314
+00:42:36,699 --> 00:42:37,680
+O da sınıfa gidiyor.
+
+315
+00:42:38,139 --> 00:42:42,779
+Sınıftan get ödenecek tutarla ödenecek tutarı geri almaya çalışıyor.
+
+316
+00:42:42,779 --> 00:42:47,760
+Daha sonra sınıfa geldiğinde ders saati ücretini de ders sınıfına gidiyor.
+
+317
+00:42:48,519 --> 00:42:51,120
+Ders saati ücretini sınıfına döndürüyor.
+
+318
+00:42:52,059 --> 00:42:54,099
+Buradaki katılım süresi hesaplanıyor.
+
+319
+00:42:54,679 --> 00:42:59,779
+Katılım süresi saat ücreti çarpı katılım süresinin bilgisini spor salonuna döndürüyor.
+
+320
+00:43:00,839 --> 00:43:02,120
+Spor salonu da bize döndürüyor.
+
+321
+00:43:02,179 --> 00:43:04,159
+Bu işlemler bu şekilde gerçekleşiyor.
+
+322
+00:43:04,839 --> 00:43:10,779
+Ben şurada sınıf diagramında gerçekleştirilecek işlemleri zaten sınıfların altına yazmıştık.
+
+323
+00:43:10,780 --> 00:43:27,780
+Fakat burada artık ağırdaşıl diagramda üye bir işlem yapmak istediğinde bu bilgilerin nereden nereye aktarılacağı, nasıl geri dönüşlerin alınacağı, bu geri dönüşleri nasıl üyeye tekrar iletileceği gibi gibi bilgileri daha detaylı şekilde görebiliyorum.
+
+324
+00:43:29,739 --> 00:43:37,859
+Nasıl programlayacağım, işte buradaki oluşturduğum fonksiyonlar birbirlerine nasıl bir geri dönüş sağlayacak bunları daha net bir şekilde görebiliyorum.
+
+325
+00:43:40,779 --> 00:43:45,579
+Sistem tasarımındaki anlatacağımız son diagramımız buydu arkadaşlar.
+
+326
+00:43:46,299 --> 00:43:49,399
+Daha sonra ben bir değerlendirme gerçekleştiriyorum.
+
+327
+00:43:49,999 --> 00:43:51,839
+Mesela bu değerlendirmede benim ne vardı?
+
+328
+00:43:51,959 --> 00:43:53,399
+Fizibilite çalışmam vardı.
+
+329
+00:43:53,699 --> 00:43:56,799
+Gereksinim analizim ve sistem tasarımım vardı.
+
+330
+00:43:56,799 --> 00:44:06,559
+Ben gerçekleştireceğim projeye göre bu fizibilite çalışmasını, gereksinim analizi ve sistem tasarımını değerlendirebilirim.
+
+331
+00:44:07,299 --> 00:44:07,799
+Puanlandırabilirim.
+
+332
+00:44:07,800 --> 00:44:11,780
+Ben bu örnekte 100 üzerinden bir puanlandırma yaptım.
+
+333
+00:44:12,719 --> 00:44:15,399
+İşte teknik fizibilite benim için daha önemlidir.
+
+334
+00:44:15,520 --> 00:44:16,859
+Bu projeden projeye değişir.
+
+335
+00:44:17,319 --> 00:44:19,039
+Buna 8 puan verdim.
+
+336
+00:44:19,700 --> 00:44:27,519
+Ekonomik fizibiliteye 7 gibi gibi yasal fizibilite 3 gibi yönetim sosyal fizibilite 2 gibi.
+
+337
+00:44:28,379 --> 00:44:29,980
+Böyle puanlandırmalar yaptım.
+
+338
+00:44:30,399 --> 00:44:34,399
+Gereksinim analizine 40, sistem tasarımına 30 verdim mesela.
+
+339
+00:44:34,399 --> 00:44:38,299
+Burada siz farklı farklı puanlandırmalar gerçekleştirebilirsiniz.
+
+340
+00:44:38,799 --> 00:44:43,420
+Sizin gerçekleştireceğiniz projelere göre bu puanlandırmalar değişebilir.
+
+341
+00:44:44,060 --> 00:44:53,000
+Sadece yapacağınız projede böyle bir değerlendirme tablosu oluşturduğunuzda sizin için nelerin öncelikli olduğunu görebilirsiniz.
+
+342
+00:44:53,640 --> 00:44:58,260
+Senin için teknik fizibilite, ekonomik fizibiliteden önceliklidir.
+
+343
+00:44:58,959 --> 00:45:02,459
+Benim proje için ağırlanan bütçem çok fazladır.
+
+344
+00:45:02,459 --> 00:45:07,399
+Dersin ki ben ekonomik fizibilitede harcayacağım bütçe benim için çok önemli değil.
+
+345
+00:45:08,279 --> 00:45:13,779
+Ben teknik fizibilitede daha iyi bir donanıma sahip olmak istiyorum.
+
+346
+00:45:14,459 --> 00:45:18,179
+İşte atıyorum iki sorabla üç sorabla kullanabilirim.
+
+347
+00:45:18,739 --> 00:45:20,659
+Sistemim daha hızlı çalışsın istiyorum.
+
+348
+00:45:21,399 --> 00:45:25,739
+İşte kişisel verilerin kullanımını şey yapmak için bir güvenlik hizmeti almak istiyorum.
+
+349
+00:45:26,299 --> 00:45:32,039
+Kendi şirket içerisindeki bilgileri de kullanmak istiyorsam yine aynı şekilde güvenlik hizmeti alabilirim.
+
+350
+00:45:32,039 --> 00:45:36,420
+Yani sizin gerçekleştirilmiş projelere göre bu değerlendirme değişebilir.
+
+351
+00:45:38,560 --> 00:45:50,439
+Özet olarak ben teknik yani bizim şu anki projemizde teknik ihtiyaç olarak server, router, masaüstü, bilgisayar diye bir raporlama yapmıştık.
+
+352
+00:45:51,140 --> 00:45:53,939
+Kullanılan yazılımlara Java Java Script demiştik.
+
+353
+00:45:54,439 --> 00:45:57,519
+Yazılım geliştirme modeline waterfall, şelale modeli demiştik.
+
+354
+00:45:57,519 --> 00:46:09,459
+Sistem tasarımında yüz kez diagramı, veri akış diagramı, sınıf diagramı, yapı diagramı, ardışıl diagram ve ER diagramlarını oluşturmuştuk.
+
+355
+00:46:10,867 --> 00:46:23,907
+Spor sonu sistemi için gereksinimlerin belirlenmesi adına fizibilite çalışması yapılmış ve sistemin gerçekleştirilmesi için gerekli kaynaklar belirtilmiştir. Bu da orta sistem modellemeleri gerçekleştirebilir arkadaşlar.
+
+356
+00:46:25,748 --> 00:46:27,427
+Bu da kullandığım kaynaklar.
+
+357
+00:46:28,747 --> 00:46:34,747
+Sormak istediğiniz bir soru varsa yardımcı olabilirim. Tekrar bu slide'a geri dönebiliriz.
+
+358
+00:46:44,884 --> 00:47:12,003
+Arkadaşlar, bu slide'ı paylaşırız tabii ki de. Ben geçen senede, avasis sayfamda paylaşmış olabilirim. Tekrardan paylaşırım. Siz de bu slide'a ulaşabilirsiniz. Yani özellikle bu slide'ı da yaptığımız bu ER diyagramları, use case diyagramları, veri akış diyagramları önemli. Hani burada sadece örneğe odaklanmayın. Hani bu diyagramları çünkü proje raporlarınızda kullanacaksınız.
+
+359
+00:47:12,003 --> 00:47:21,403
+ki istiyorlar. Bu da bir de değerlendirme koşulu da oluyor. Yani sizden bu fizibilite çalışmasını istiyoruz. Bu diagramları kullanmanızı istiyoruz.
+
+360
+00:47:26,228 --> 00:47:40,087
+MS Project'te bu diagramların hepsini oluşturamıyorsunuz galiba. Onda emin değilim. Ona bir bakabilirsiniz arkadaşlar. Gant ve Pert'i oluşturabiliyorsunuz da diğerlerinden emin değilim.
+
+361
+00:47:43,731 --> 00:48:04,391
+Bunlar için, bu diyagramları oluşturmak için hem online sistemler var. Özellikle ben şu UML diyagramı için bunu kullanıyorum. Şurada kaynaklar kısmında. Online de var, bilgisayarınıza indirebileceğiniz programlar da var bu arada. Hani oradan araştırıp bakabilirsiniz.
+
+362
+00:48:06,511 --> 00:48:10,471
+Gant diyagramı için de farklı programlar kullanabilirsiniz.
+
+363
+00:48:16,884 --> 00:48:23,063
+Beni dinlediğiniz için teşekkür ederim arkadaşlar. Farklı sorularınız varsa yine beni bölüp sorabilirsiniz.
+
+364
+00:48:25,043 --> 00:48:26,884
+Biz teşekkür ederiz hocam.
+
+365
+00:48:27,724 --> 00:48:34,804
+Ben de teşekkür ederim. Umarım sizin için verimli olmuştur. Gerçi katılımcı sayınız da çok az.
+
+366
+00:48:39,123 --> 00:48:44,943
+tamamdır. Herkese iyi günler. Görüşmek üzere. İyi günler.

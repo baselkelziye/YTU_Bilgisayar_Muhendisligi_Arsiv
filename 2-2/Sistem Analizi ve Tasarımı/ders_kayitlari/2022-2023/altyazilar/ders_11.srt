@@ -1,0 +1,2903 @@
+1
+00:07:28,115 --> 00:07:31,115
+Hocam, mikrofonunuz kapalı galiba. Sesiniz bana gelmiyor.
+
+2
+00:07:45,779 --> 00:07:47,520
+Hocam, harika sesinizi kendinize.
+
+3
+00:07:55,252 --> 00:07:56,211
+Şimdi geliyor mu?
+
+4
+00:07:57,432 --> 00:07:58,891
+Şimdi çok temiz geliyor hocam.
+
+5
+00:07:59,371 --> 00:08:00,451
+Tamam, okey.
+
+6
+00:08:01,851 --> 00:08:04,632
+Setup problemi yaşamışız, dur'a bakmayın.
+
+7
+00:08:05,331 --> 00:08:11,811
+Evet, bir şeydi, test size gelmiyorsa video kralına da gitmemiş olacak, o yüzden baştan söyleyeyim.
+
+8
+00:08:12,291 --> 00:08:14,131
+Geçen hafta bir uygulama yaptık.
+
+9
+00:08:15,231 --> 00:08:17,272
+Biraz az bir şey gecikmeyle de başlasak.
+
+10
+00:08:18,151 --> 00:08:21,951
+Uygulama, örnek, bir başlığı örnek sizle paylaşmak istedik.
+
+11
+00:08:21,951 --> 00:08:35,151
+tabi ki sizden beklentimiz o basitlik değil daha fazlası ama kafanın karışmaması adına kafaların karışmaması adına süreçte hangi adımlar nasıl ilerlemeli onlar için basit bir örnekti.
+
+12
+00:08:35,391 --> 00:08:51,711
+Şimdi 12. haftaki dersimiz artık bu hafta son teorik konularımızı aktaracağım. Bundan sonra son 2 hafta boyunca sizler proje sunumlarınızı gerçekleştireceksiniz. Onlar için de programı ders duvarında paylaşacağım, duyuracağım.
+
+13
+00:08:51,951 --> 00:09:07,331
+rapor içinde bir ödev açacağız. Ödeve upload'unuzu yapacaksınız. Yükleyeceğiniz bütün bildileri, dosyaları oraya yüklersiniz. Genellikle sıklıkla bir soru geliyor. Hocam kodları verecek miyiz? Veri tabanını nasıl yapacağız?
+
+14
+00:09:07,332 --> 00:09:14,052
+bir şekilde benim onları kurup inceleyebileceğim halde paylaşmanızı bekliyoruz.
+
+15
+00:09:14,192 --> 00:09:20,811
+Yani yazdığınız, oluşturduğunuz gerçekleştirmelerinizi de analiz ve tasarımlarınızla uyumuna bakmak adına
+
+16
+00:09:20,811 --> 00:09:27,652
+her ne kadar siz sunumda hızlıca gösterecek olsanız da daha detaylı inceleme için sizlerden talep edeceğiz.
+
+17
+00:09:27,811 --> 00:09:29,451
+Yani onları daha bir göreve yüklüyorsunuz.
+
+18
+00:09:29,692 --> 00:09:33,552
+Hocam peki GitHub Reposuna eklesek oradan bakalım ya şansınız olur mu?
+
+19
+00:09:34,372 --> 00:09:35,552
+GitHub Reposuna mı?
+
+20
+00:09:35,552 --> 00:09:36,192
+Evet.
+
+21
+00:09:37,331 --> 00:09:54,191
+Yani şimdi public olmak zorunda. Public olunca da herkese açılmış oluyor. Onu pek tercih etmiyoruz aslında. Ders kapsamında tercih etmiyoruz. Dersten sonra siz isterseniz kendi GitHub Reponur'da bunları açabilirsiniz. Ama şu anda hala açık mı duruyor zaten?
+
+22
+00:09:54,991 --> 00:10:01,531
+Yok şu an private'da duruyor da. Yani sizin görmeniz açısından direkt public'e çekip daha sonrasında private'e çekebilirsiniz.
+
+23
+00:10:01,531 --> 00:10:12,391
+Yok işte yani public repoda durmasını istemiyoruz. O nedenle şey hani bir brengini alıp da paylaşırsam iyi olur çalışan halini.
+
+24
+00:10:13,151 --> 00:10:14,412
+Tamamdır hocam teşekkür ederim.
+
+25
+00:10:14,431 --> 00:10:23,091
+Yine reponun linkini koyarsın hani güncellemeler devam ediyor falan filan ya da ileride hani şu hale geldi göstermek istiyorum dersen tabii ki paylaşabilirsiniz.
+
+26
+00:10:23,891 --> 00:10:29,772
+Ama şu anda böyle public repozitorilerde paylaşmamanız daha doğru olacaktır ders kapsamında.
+
+27
+00:10:29,772 --> 00:10:30,772
+Tamamdır.
+
+28
+00:10:30,771 --> 00:10:54,911
+Bir de şey, şimdi hani 5 kişilik gruplar halinde yapıyorsunuz, ödevi 5 kişinin de 5'inin de yüklemesine gerek yok, aranızdan birisinin seçin, yani her ekip bir tane kopya yüklesin, raporu ve şeyi, geri kalan materyali, öyle tekrar tekrar aynı kopyayla uğraşmayayım ya da üst üste yollamayın, yani aranızdan bir tane temsilci seçin, o grup için o yollamış olsun
+
+29
+00:10:54,911 --> 00:11:02,451
+bu şekilde ödev yüklemeleriyle alakalı yönlendirmeleri de baştan söylemiş olayım.
+
+30
+00:11:02,451 --> 00:11:09,311
+Hocam bizim grupta dört kişi diğer grupta ben sizin gruba dosya yükleyeyim mi?
+
+31
+00:11:09,891 --> 00:11:15,131
+Sen bizim gruba dosyayı yükle ama sunumunuzu orada yapacaksın galiba.
+
+32
+00:11:15,891 --> 00:11:17,971
+Yani iki yerde de yaparız hocam programı.
+
+33
+00:11:18,391 --> 00:11:22,111
+Tamam. Yok çoğunluk oradayız orada yapmanız yeterli.
+
+34
+00:11:22,112 --> 00:11:50,192
+bir soru geldi. Müşteriyle gerçekleştireceğimiz formalite sonu zoom kaydı istiyor musunuz? Yok, hayır hayır. Zoom kaydına gerek yok. Ama bir toplantı tutanağını oluşturun. Hani bu şöyle görüşüldü, şöyle şu konular konuşuldu. Hani anlattık bir yapılandırılmış bir görüşmemi, yapılandırılmamış bir görüşmemi, neler konuşuldu, neler planlandı gibi ya da kime hangi sorumluluklar yüklendi gibi o detayları toplantı raporlarınızda anlatırsınız.
+
+35
+00:11:51,635 --> 00:12:12,635
+şey yok. Video kaydı falan almanıza gerek yok o konuda. Peki, şimdi bu derste artık kapatıyoruz. Dediğim gibi son konular. Kodlamaya biraz çok az olsa da değinmek istiyorum. Yazılım kalitesinin bizi nasıl etkilediğini ve aslında başımıza neler açısından biraz bahsetmek isteyeceğim.
+
+36
+00:12:12,635 --> 00:12:26,055
+sonrasında da yine kaliteyi aslında sağlamak için ve doğru ürünü ya da doğru şeyi yapıyor muyuz diye bakmak için kullandığımız temel test teknikleri çok detaya girmeden sadece üst seviyeli olarak bunları göreceğiz.
+
+37
+00:12:26,996 --> 00:12:36,115
+Ve son olarak da sondan bir önceki adım olarak da o kadar çalıştık, uğraştık bir problemi ele aldık ve bir çözüm ortaya koyduk.
+
+38
+00:12:36,115 --> 00:12:41,295
+Yeni bir sistem geliştirdik. Geliştirdiğimiz bilgi sistemi acaba nasıl kullanılmaya başlayabilir?
+
+39
+00:12:41,295 --> 00:12:47,915
+bunun için ne yapmamız lazım? Nasıl bir mevcut sistemden yeni sisteme geçiş yaşamamız gerekir? Bunlara bakacağız.
+
+40
+00:12:48,656 --> 00:12:59,796
+Sonra da bir bilgi sisteminin yaşamındaki en uzun süreç olan bakım ne demektir? Bakım konusunda ne gibi bakımlar neden yapılır?
+
+41
+00:13:00,316 --> 00:13:04,515
+Bunlara bakarak teorik anlatımızı tamamlayacağız.
+
+42
+00:13:04,515 --> 00:13:07,135
+Şimdi ilk başlığımız kodlama
+
+43
+00:13:07,135 --> 00:13:18,435
+Kodlama yani gerçekleştirme aşaması aslında hani şelale modele baktığınızda işte problemi aldık, ön incelemesini yaptık ondan sonra fizibilite çalışması gerçekleştirdik
+
+44
+00:13:18,435 --> 00:13:23,395
+Yapabiliyor muyuz biz bu projeyi ya da yapmak nelere mal olur diye baktık
+
+45
+00:13:23,395 --> 00:13:29,555
+Problemi anladık, modelledik, sistem analizini alt parçalarıyla birlikte yaptık
+
+46
+00:13:29,555 --> 00:13:33,555
+Sonra bir çözüm önerisi geliştirdik, bir çözüm örneği taslağı ortaya koyduk
+
+47
+00:13:33,555 --> 00:14:03,535
+buna da tasarım dedik ve sonrasında da işimiz bitti. Sistem analizi tasarımı dersin tasarımına sonu geldi. Hadi burada duralım diyebilirdik. Ama bir bilgi sisteminin oluşması için bir de tabii bunların gerçekleştirilmesi gerekiyor. Yani kodlama. Ne zamanki tasarımınızı tamamlarsanız bütün işte diagramlar, algoritmalar, davranışlarınızın akışları ya da pesado kod aktarımlarınız, anlatımlarınız bittikten sonra artık şelale modelinde özellikle
+
+48
+00:14:03,535 --> 00:14:33,515
+gerçekleştirme aşamasına geçiyor. Yani hadi bakalım oturalım kodlayalım aşamasına geçiliyor. Günlük hayatta tabii çoğunuz büyük bir ihtimalle böyle yapmıyorsunuz. Bu ders kapsamındaki projede bile patgüt direkt koddan başlamış olanlarınız çoğunluktadır diye düşünüyorum. Fakat aslında olması gereken özellikle de büyük projelerde olması gereken önce bir adım adım ilerlemek, problemi anlamak, tanımlamak, çözüm önerilerini ortaya koymak, sonra gerçekleştirmeyi yapmak.
+
+49
+00:14:33,535 --> 00:15:00,915
+bunu tabii ki küçük parçalar halinde hani spiral model falan bir şeyler anlatmıştım hatırlarsanız. İteratif olarak da yapabilirsiniz ki zaten günümüzdeki çevik süreçlerde de problemi küçük parçalar halinde ilave ede ede çözmek esastır. Sürekli olarak bir yazılım üretimi yapmak ve sürekli olarak yazılımı devreye alıp yeni parçalarıyla güncel tutmak ve fazla özellikler eklemek esastır.
+
+50
+00:15:00,915 --> 00:15:10,516
+ama nihayetinde yine de orada bile küçük bir analiz, küçük bir tasarım sonrasında gerçekleştirme şeklinde ufak parçalar birbirini takip edecektir.
+
+51
+00:15:11,576 --> 00:15:22,796
+Yani bir tasarım olmadan ya da en azından bir tasarım fikri olmadan gerçekleştirmeye geçmek çoğu zaman bizi kötü bir ürüne ya da yanlış bir ürüne doğru taşıyacak.
+
+52
+00:15:23,016 --> 00:15:28,175
+Bu nedenle kodlamayı gerçekleştirmeyi tasarımdan sonra yapmamız daha doğrudur diyoruz.
+
+53
+00:15:28,175 --> 00:15:47,295
+Şimdi kodlamada oturup da nasıl kodluyoruz arkadaşlar işte açıyoruz bilmem ne idresinde proje böyle oluşturulur ondan sonra bilmem ne dosyası şöyle bağlanır şu tübaneler böyle gösterilir falan gibi şeyler söylemeyeceğim tabii ki bunları siz elinizi kirleterek zaten ya buldunuz ya da buluyorsunuz
+
+54
+00:15:47,615 --> 00:15:58,095
+Fakat en önemli şey, özellikle de büyük bir projede, büyük bir bilgi sistemi geliştirme projesinde çalışıyorsanız, kodlamada standartlara uygun olmaya özen gösterin.
+
+55
+00:15:58,395 --> 00:16:10,716
+Yani coding conventions dediğimiz o dile özgü öneriler neyse kullandığınız dil, o dile özgü kodlama desenlerini, kodlama standartlarını kullanmanız esastır.
+
+56
+00:16:10,716 --> 00:16:21,715
+okunaklı olması için. Şimdi spesifikasyonlara uygun kodlama yapmak bu. Bunun da sebebi bir kolay okunabilir kod yazmak.
+
+57
+00:16:21,715 --> 00:16:33,336
+Yani bir koda baktığınızda elinin yüzünün düzgün olması, blokların, kod bloklarının, karar dallanmalarının ve işte ne bileyim döngü bloklarının net olması,
+
+58
+00:16:33,335 --> 00:16:38,115
+gerekli girintilerin ya da bloklama işaretlerinin ya da açıklamaların sağlanması gibi.
+
+59
+00:16:39,115 --> 00:16:45,315
+Baktığımızda bu kodun ne yaptığını kolay bir şekilde okumak ya bir kodun daha doğrusu tercih sebebilir.
+
+60
+00:16:45,875 --> 00:16:48,755
+Ayrıca kolay düzenlenebilir olması da esastır.
+
+61
+00:16:49,435 --> 00:16:55,336
+İşte ne bileyim hani tabi dildenleri de bunların şeyleri değişir ama desenleri değişir ama
+
+62
+00:16:55,336 --> 00:17:02,495
+işte önce prototip gibi verilecek mi ondan sonra belli fonksiyonlar altta mı verilecek,
+
+63
+00:17:02,495 --> 00:17:16,255
+üstte mi yazılacak, ana fonksiyonlar nerede olacak, değişken tanımları nasıl yapılacak gibi bunlar da kodun daha sonraki güncelleme ve değişikliklerde düzenlenebilir, rahat düzenlenebilir olmasını getirecek.
+
+64
+00:17:16,915 --> 00:17:23,895
+Ayrıca kodumuzun test edilme standartlarına da uygun olarak yazılması gereklidir.
+
+65
+00:17:23,895 --> 00:17:48,995
+bir şey olabilir. Java gibi dillerde bile zaten standart olarak birim testi için C-Unit kullandığınızda onun için neler yapılması gerektiği belli. Başka dillerde başka tıpaneler içinde belli. Siz kodunuzu mutlaka bu standartlara uygun olarak ya da bu test standartlarına uygun ve test edilebilir olarak yazmanız gerekir.
+
+66
+00:17:48,995 --> 00:17:53,575
+şu anda belki çok yapmıyor olabilirsiniz, uzak olabilirsiniz.
+
+67
+00:17:54,415 --> 00:18:00,655
+Özellikle yazıl mühendisliği dersiyle birlikte bunun önemini ve yapmanız gerekliliğini daha fazla göreceksiniz.
+
+68
+00:18:01,595 --> 00:18:04,735
+Hani şu anda tanıştırma safhasındayız diyebiliriz.
+
+69
+00:18:04,836 --> 00:18:07,575
+Ayrıca kodlar kolay değiştirilebilir olmalı.
+
+70
+00:18:07,575 --> 00:18:11,135
+Kolay değiştirilebilirlikte aslında yine düzenlenmek de çok farklı değil.
+
+71
+00:18:12,035 --> 00:18:18,776
+Yapısal değişikliklerin ya da ilavelerin ya da çıkartmaların kod üzerinde kolaylıkla yapılabilmesi anlamına geliyor.
+
+72
+00:18:18,995 --> 00:18:32,235
+mutlaka her yazdığınız kod için açıklama satırları kullanın. Bunu düzgün bir şekilde yaparsanız zaten kodun dokümentasyonunu da otomatik olarak oluşturursunuz.
+
+73
+00:18:32,235 --> 00:18:47,675
+Pek çok programlama dilinde artık API dokümanının oluşturulması için bu yorum satırları istendiği formatta yazıldığında otomatik olarak bu dokümanlar da oluşturulabiliyor.
+
+74
+00:18:47,675 --> 00:18:49,836
+esasen şöyle bir şey vardır.
+
+75
+00:18:50,015 --> 00:18:54,535
+Yazdığınız bir satır kod için neredeyse iki satır açıklama satırı yazmanız gerekir.
+
+76
+00:18:55,455 --> 00:18:56,595
+Yazmazsanız ne olur?
+
+77
+00:18:57,196 --> 00:18:58,355
+Kodunuz kolay okunmaz.
+
+78
+00:18:59,215 --> 00:19:06,395
+Düzenlerken başkaları, hatta siz kendi kodunuzu düzenlerken tam tabi caizse şaşalayabilirsiniz.
+
+79
+00:19:07,515 --> 00:19:13,935
+Bir hafta önce yazdığınız kodu bile açıp dönüp bir hafta sonra baktığınızda eğer yeterince yorum ve açıklama yoksa
+
+80
+00:19:13,935 --> 00:19:15,675
+şöyle yapabilirsiniz.
+
+81
+00:19:15,815 --> 00:19:16,735
+Bakıp kalabilirsiniz.
+
+82
+00:19:16,735 --> 00:19:37,435
+ben burada ne yapmışım? Burada ne oluyor? Bu niye böyle? Ben bu if'i niye böyle yazmışım? Bu gibi şeyler ya da bu döngüde niye böyle yapmışız ki? Bu nereden geliyor? Bunu nerede tanımlamıştık? Bir sürü şey aklınıza gelmeye başlar. O yüzden bunlar önemli ve daha doğrusu açıklama satırı kullanmak önemli.
+
+83
+00:19:37,435 --> 00:19:45,955
+kod yazım desenleri var standart. Bazı diller bazı desenleri daha çok tercih ediyor, istiyor. Okunaklık açısından da.
+
+84
+00:19:47,604 --> 00:19:50,923
+bu desenlere uymak faydalı olacaktır.
+
+85
+00:19:51,084 --> 00:19:56,423
+Aynı zamanda hem sınıf isimlerinden ya da nesne isimlendirmesinden tutun.
+
+86
+00:19:58,803 --> 00:20:01,703
+Dizilerin isimlendirilmesi, değişkenlerin isimlendirilmesi,
+
+87
+00:20:01,823 --> 00:20:05,423
+iteratörlerin isimlendirilmesi gibi gibi aklınıza gelen her türlü
+
+88
+00:20:05,423 --> 00:20:08,663
+kullandığınız veri yapılarının mesela isimlendirilmenin hepsinin
+
+89
+00:20:08,663 --> 00:20:11,923
+anlamlı olmaları istenir ve beklenir.
+
+90
+00:20:11,923 --> 00:20:16,203
+Yani değişkenleri A, B, C, D, E, F, G diye vermeye başlarsınız.
+
+91
+00:20:16,203 --> 00:20:18,303
+bir hafta sonra açtığınızda
+
+92
+00:20:18,303 --> 00:20:20,243
+A neyi yapıyor? Neyi tutuyordu?
+
+93
+00:20:20,323 --> 00:20:22,263
+B neyi tutuyordu? C neyi tutuyordu? Bu neydi?
+
+94
+00:20:22,383 --> 00:20:24,623
+falan diye kalırsınız. Bunlar isimleri de
+
+95
+00:20:24,623 --> 00:20:25,483
+düzgün olsun.
+
+96
+00:20:26,483 --> 00:20:28,303
+Çok jenerik isimler de kullanmayın
+
+97
+00:20:28,303 --> 00:20:30,403
+tabii. Toplam, ortalama
+
+98
+00:20:30,403 --> 00:20:31,563
+falan gibi.
+
+99
+00:20:32,383 --> 00:20:34,383
+Neyin ortalaması olduğunu söyleyen
+
+100
+00:20:34,383 --> 00:20:36,163
+daha anlamlı bir isimlendirme
+
+101
+00:20:36,163 --> 00:20:38,003
+ya da neyin toplamı olduğunu söyleyen
+
+102
+00:20:38,003 --> 00:20:39,583
+daha anlamlı isimlendirmeleri
+
+103
+00:20:39,583 --> 00:20:42,123
+tercih ederseniz daha iyi
+
+104
+00:20:42,123 --> 00:20:42,543
+olur.
+
+105
+00:20:42,543 --> 00:20:50,983
+tabii kodlamayı yapmak için bir programlama diline ve programlama ortamına ihtiyacımız var
+
+106
+00:20:50,983 --> 00:20:53,583
+bunları nerede seçmiştik?
+
+107
+00:20:53,723 --> 00:20:57,023
+gereksinimleri karşılayacak şekilde aslında fizibilite de seçmiştik
+
+108
+00:20:57,023 --> 00:21:00,144
+ön tasarım aşamasında da bunları kesinleştirmiştik hatırlarsak
+
+109
+00:21:00,144 --> 00:21:07,464
+burada da bir bilgi sistemini geliştirirken hangi dili kullanacağız?
+
+110
+00:21:07,464 --> 00:21:08,743
+neye dikkat etmemiz lazım?
+
+111
+00:21:08,743 --> 00:21:12,923
+Tabii ki dilin genel uygulama alanına bakmak lazım.
+
+112
+00:21:13,104 --> 00:21:24,324
+Hani bazı diller daha matematik ağırlıklıdır, bazı diller daha transaction ağırlıklıdır, bazı diller daha ne bileyim işte hani string için ağırlıklıdır ya da bazıları tamamen genel amaçlıdır.
+
+113
+00:21:24,443 --> 00:21:28,063
+Bazıları bilimsel programlar geliştirmek için daha uygundur gibi.
+
+114
+00:21:28,063 --> 00:21:30,523
+hangi uygulama alanına yakınsa
+
+115
+00:21:30,523 --> 00:21:31,824
+programlama dili
+
+116
+00:21:31,824 --> 00:21:34,403
+daha doğrusu sizin alanınızda hangisi
+
+117
+00:21:34,403 --> 00:21:36,243
+daha uygunsa, hangi dilin
+
+118
+00:21:36,243 --> 00:21:38,263
+yakınlığı sizin için daha iyiyse
+
+119
+00:21:38,263 --> 00:21:40,144
+onu seçmeniz tabii ki daha iyi
+
+120
+00:21:40,144 --> 00:21:42,163
+olacaktır. Daha
+
+121
+00:21:42,163 --> 00:21:44,623
+kolay geliştirme, daha kolay gerçekleştirme
+
+122
+00:21:44,623 --> 00:21:45,803
+yapmanızı sağlayacaktır.
+
+123
+00:21:47,123 --> 00:21:48,203
+Yine algoritmaların ve
+
+124
+00:21:48,203 --> 00:21:50,423
+veri yapılarının karmaşıklığı. Bazı dillerde
+
+125
+00:21:50,423 --> 00:21:52,404
+bazı veri yapıları hazır olabilir. Bazılarını
+
+126
+00:21:52,404 --> 00:21:54,423
+sizin yazmanız gerekebilir. Bunlar da
+
+127
+00:21:54,423 --> 00:21:55,563
+tercih sebebi olabilir.
+
+128
+00:21:56,563 --> 00:21:59,083
+Yazılımın kullanılacağı ortam da önemlidir.
+
+129
+00:21:59,243 --> 00:22:04,544
+Atıyorum mesela öyle bir ortamda öyle bir gömülü ortamda çalışması gerekiyordur ki o yazılımın.
+
+130
+00:22:04,663 --> 00:22:07,363
+Orayı da o programlama dili desteklemiyordur.
+
+131
+00:22:07,523 --> 00:22:10,243
+O platform için derleyicisi yoktur diyorum.
+
+132
+00:22:10,743 --> 00:22:11,803
+Böyle şeyler olabilir.
+
+133
+00:22:11,984 --> 00:22:19,023
+O yüzden ya da kullanılacağı ortamdaki performansı kötü olmasıyla ünlüdür falan gibi şeyler olabilir.
+
+134
+00:22:19,163 --> 00:22:22,184
+Bunlara dikkat etmek gerekiyor programlama dilini seçerken.
+
+135
+00:22:22,184 --> 00:22:24,583
+Ne uygulamanızın çalışma koşulları.
+
+136
+00:22:24,583 --> 00:22:36,923
+mesela dokunmatik bir girdiler almanız gerekiyorsa ve o programlama dilinde özellikle mobil gibi ön yüzlerle çok da rahat konuşamıyorsanız bu sizi zorlayacaktır.
+
+137
+00:22:37,824 --> 00:22:47,464
+Ama zaten dokunmatikten çok kolay bir şekilde veri akışını sağlayabiliyorsanız onun için hazır destek sağlıyorsun programlama dili bu sizin için tercih sebebi olabilir.
+
+138
+00:22:48,203 --> 00:22:52,243
+Bununla birlikte programlama dilini kim kullanacak, kim yazacak, kim kodlayacak?
+
+139
+00:22:52,243 --> 00:22:54,184
+insan. Bunu
+
+140
+00:22:54,184 --> 00:22:56,243
+kullanacak personelin yani kodlamayı yapacak
+
+141
+00:22:56,243 --> 00:22:57,803
+personelin de bilgi düzeyinin
+
+142
+00:22:57,803 --> 00:22:59,264
+seviyesi önemli.
+
+143
+00:23:00,624 --> 00:23:01,883
+Hiç bilmediği bir dilde
+
+144
+00:23:01,883 --> 00:23:04,083
+develenmek yerine bildiği bir dilde çok daha
+
+145
+00:23:04,083 --> 00:23:06,184
+hızlı uygulama geliştirme ve çözüm üretme
+
+146
+00:23:06,184 --> 00:23:07,904
+sağlayabilir. O yüzden
+
+147
+00:23:07,904 --> 00:23:10,143
+ekibe göre de programlama dili seçmeniz
+
+148
+00:23:10,143 --> 00:23:12,044
+gerekebilir. Bir yandan da tabii
+
+149
+00:23:12,044 --> 00:23:13,964
+lisans bedelleri olabilir. İşletme
+
+150
+00:23:13,964 --> 00:23:15,124
+bedelleri olabilir.
+
+151
+00:23:16,663 --> 00:23:18,083
+İşte mesela uygulama sunucusunun
+
+152
+00:23:18,083 --> 00:23:20,124
+belli bir şeyi vardır. O dilin
+
+153
+00:23:20,124 --> 00:23:21,923
+çalıştığı application server
+
+154
+00:23:21,923 --> 00:23:24,063
+dediğimiz uygulama sunucularının belki belli bir
+
+155
+00:23:24,063 --> 00:23:25,103
+lisans bedeli vardır.
+
+156
+00:23:25,963 --> 00:23:27,883
+Periyodik olarak kira gibi ödenmesi
+
+157
+00:23:27,883 --> 00:23:30,143
+gereken. Bunlar da yatırımı etkiler.
+
+158
+00:23:30,323 --> 00:23:32,103
+Yani biz bilgilerde bunların da tartışılması
+
+159
+00:23:32,103 --> 00:23:34,063
+gerekir. Bir de müşterinin
+
+160
+00:23:34,063 --> 00:23:35,923
+kendine has özel koşulları olabilir.
+
+161
+00:23:36,103 --> 00:23:37,303
+Mesela adam şey diyebilir.
+
+162
+00:23:37,303 --> 00:23:38,243
+Ya biz
+
+163
+00:23:38,675 --> 00:24:02,635
+Bizim bütün sistemlerimiz Java. O yüzden ben.net istemiyorum diyebilir. Ya da bambaşka bir şey. Ben Python kullanıyoruz biz şey olarak. Bütün kütüphanelerimizi orada yazdık. Bu şekilde devam etmesini istiyoruz. Siz işte R kullanamazsınız, istemiyoruz diyebilir gibi. Müşterinin kendine has özel kısıtları ve koşulları da programlama dili seçimini etkileyebilir.
+
+164
+00:24:02,635 --> 00:24:19,735
+en hızlı, en ucuz ve en temiz, en kolay hangi dil size daha iyi hizmet ediyorsa o dili seçip de kullanmak daha doğru bir çözüm olacaktır. Daha kaliteli bir bilgi sistemi geliştirebilmenizi, ortaya koyabilmenizi getirecektir.
+
+165
+00:24:21,195 --> 00:24:29,495
+Evet genel olarak programlama yani kodlama aşamasında programlama dilinin nasıl seçilmesi gerektiğine ilgili dikkat edilmesi gerekenler de bunlar.
+
+166
+00:24:29,495 --> 00:24:55,415
+yani tabii ki her dili her noktasına kadar bilemezsiniz ama şunu da unutmayın diller sizin için aslında birer araç amaca uygun olarak uygun aracı seçip kullanma sorumluluğu ve bunu seçme yeteneği bunu seçme kabiliyeti de tamamen mühendis olarak sizlerin üstünde omuzlarınızda olacak.
+
+167
+00:24:55,415 --> 00:25:06,675
+Peki dedik ya bir bilgi sisteminde belki de bizi en çok zorlayan başımıza bela olan noktalardan biri yazılım kalitesi faktörleri
+
+168
+00:25:06,675 --> 00:25:10,575
+Ne demek kalite? Önce kalite ne demek? Onun tanımını yapalım
+
+169
+00:25:10,575 --> 00:25:23,396
+Bir yazılımın kaliteli olması demek ya da yazılım için kalite işlevsel gereksinimlere, geliştirme standartlarına ve beklenen tüm özelliklere tamamen uyan
+
+170
+00:25:23,396 --> 00:25:36,495
+bunlara uygun olan bir yazılımın geliştirilmesi demektir. Şimdi burada işlevsel gereksinimler ve geliştirme standartlarıdır diyoruz ama şunu söylemiyoruz burada yazılı olarak.
+
+171
+00:25:36,495 --> 00:25:54,455
+bir yazılımın kalite faktörleri esasen hepsi birden yani her biri ayrı ayrı da olmak üzere bir bilgi sistemindeki işlevsel olmayan gereksinimlerden doğar ya da onları etkiler direkt olarak.
+
+172
+00:25:54,455 --> 00:26:03,776
+mesela doğruluk ne demek? Doğruluk çalışması. Doğru girdiler verdiğinizde doğru sonucu üretmesi beklenir.
+
+173
+00:26:03,855 --> 00:26:11,455
+Tabii ki bu işlevsel bir beklenti olarak görülebilir. Ama bunun dışında mesela güvenilirlik. Ne demek güvenilirlik? Reliability.
+
+174
+00:26:11,455 --> 00:26:31,955
+işte belli bir yük altında örneğin sistemde işte bir herhangi bir T anında 10.000 kullanıcı veri girişi yaparken bunun tepki süresinin böyle bir sistemin tepki süresinin makul sınırı nedir? 5 milisaniye mi? 10 milisaniye mi? 100 milisaniye mi?
+
+175
+00:26:31,955 --> 00:26:55,396
+onun altında kalması. Bu şekilde düşünebilirsiniz. Ya da belirli bir yük altında ya da belirli bir akış hızı altında dahi güvenilir bir şekilde tepki vermeye, cevap üretmeye devam edebilmesi. Bunu işlevsel bir gereksinim olarak ifade edemeyiz. Bu işlevsel olmayan bir gereksinim ve direkt olarak yazılımın kalitesiyle alakalı.
+
+176
+00:26:55,396 --> 00:27:25,375
+işi yapıyor mu yapıyor ama ya bu ne biçim yapıyor böyle konuşabilir birisi çok yavaş iki kişi girdi mi tıkanıyor mesela bakın böyle şeyler bu yani verimlilik benzer şekilde kullanışlılık benzer şekilde hani bunların hepsinin üzerinde çok uzun konuşabiliriz zaten yazılım katilisi bir dönemlik ders kendi başına içeriğiyle birlikte ama yani özet olarak şunu söyleyebilirim dediğim gibi bunlar da aslında nerede tamamı bir işlevsatı
+
+177
+00:27:25,375 --> 00:27:35,995
+olmayan gereksinimler olarak ifade edilir ve başımıza dert açarlar. Yani ben ders kaydını, senaryosunu yazabilirim. Ders kaydının
+
+178
+00:27:36,403 --> 00:27:58,723
+sınıflarını, modüllerini, bilmem nelerini oluşturabilirim. Eyvallah ama siz diyorsanız ki 10.000 kullanıcı, dersi aynı anda bağlanan 10.000 kullanıcı için tepki süresi 100 milisaniye geçmemelidir. O durumda benim bu yazılımın mimarilerini çok farklı şekilde tasarlamam gerekir. Direkt olarak tasarımımı etkiler.
+
+179
+00:27:58,723 --> 00:28:21,363
+farklı bir şekilde dağıtık yapılar kurgulamam gerekir. Hizmetleri yani servisleri farklı şekillerde parçalamam, bölmem ve onları o şekilde kurgulamam gerekir. Bir anda bütün tasarımın değişmesi gerekir. Tasarımın değişmesi demek doğal olarak her şeyin gerçekleştirmenin falan değişmesi demektir. Bu nedenle yazılım kalite faktörleri bizim başımızı çok ağrıtır.
+
+180
+00:28:21,363 --> 00:28:47,823
+verimlilik dedik işte kaynakların etkin kullanımı olarak bunu özetleyelim. Bir yazılım vardır ya da bir işte bir şeyleri kaydediyorsunuz diyelim bu iş için işte bir megabayt yer kaplıyor bir tane kayıt için. Başka bir bilgi sistemi aynı işi yapan alternatif ise sadece 100 kilobayt da aynı veriyi tutabiliyor.
+
+181
+00:28:47,823 --> 00:28:51,643
+ve aynı hız içinde bu tepkiyi verebiliyor diyelim.
+
+182
+00:28:51,743 --> 00:28:55,503
+Ne olacak? Biri daha verimli kaynakları yani disk alanını daha verimli kullanıyor.
+
+183
+00:28:55,663 --> 00:28:57,523
+Aynı şekilde bellek, aynı şekilde CP'yi.
+
+184
+00:28:57,963 --> 00:29:03,363
+Farklı farklı pek çok alanda, pek çok kaynakta verimliği tartışabiliriz.
+
+185
+00:29:03,363 --> 00:29:13,043
+Güvenlik, security, güvenli olmak ve güvenli olmak demek ekstradan yine geliştirmeler ve ilaveler yapmak demektir.
+
+186
+00:29:13,043 --> 00:29:42,723
+kullanışlı olmak, kullanıcı kolaylığı, hata bulma kolaylığı, esnek olmak, kolay test edilebilir olmak, taşınabilir olmak, yani farklı platformlarda kolay bir şekilde kullanılabilir olmak, yazılımın parçalarının başka projelerde, başka sistemlerde de kullanılabilir olması, tekrar kullanılabilirlik ve yine adaptasyon yetenekleri bir sistemin, bir yazılımın başka farklı
+
+187
+00:29:42,723 --> 00:29:58,064
+sistemlerle ya da yazılımlarla ne kadar entegre olabildiği, ne kadar onlarla rahat bir şekilde belli standart protokolleri de kullanarak konuşabilmesi de bağlanabilirlik faktörü olarak karşımıza çıkıyor.
+
+188
+00:29:58,724 --> 00:30:06,523
+Yani özetle burada saydığımız 7, 11 olması lazım.
+
+189
+00:30:06,523 --> 00:30:35,923
+8, 9, 10, 11. Tamam 11 tane kalite faktörü temel yazılım kalite faktörleri ve bunların hepsi bizim için çok ciddi maliyet demek. Eğer bu kalite faktörlerinde istenen belli hedefler varsa bunların tutturulması için hem analizin hem tasarımın hem gerçekleştirme yani bütün aşamaların bunları göz önüne alınarak alarak yapılması gerekiyor. Bu da her şeyi bütün proje sürecini çok fazla değiştirebiliyor.
+
+190
+00:30:40,468 --> 00:31:04,947
+Bu nedenle esasen bir bilgi sistem geliştirme sürecinde daha ön inceleme aşamasında hiç göz ardı etmeden en temelde sormanız ve bu olacak mı, bu olacak mı, bu ne kadar olacak, burada ne bekliyorsunuz gibi kalite faktörlerinin hepsinin üzerinden en başta geçmek, daha işlevsel çözümlemeye geçmeden önce bunları kesinleştirmek daha iyi, daha doğru bir yol olacaktır.
+
+191
+00:31:04,947 --> 00:31:07,648
+evet peki
+
+192
+00:31:07,648 --> 00:31:10,167
+şimdi ben bu yazılımda kalite faktörlerini
+
+193
+00:31:10,167 --> 00:31:11,947
+yapmak için
+
+194
+00:31:11,947 --> 00:31:14,188
+pek çok ilave iş yapmam gerekir
+
+195
+00:31:14,188 --> 00:31:16,207
+dedim ben bu kalitenin sağlanıp sağlanmadığını
+
+196
+00:31:16,207 --> 00:31:17,808
+nasıl ölçeceğim nasıl göreceğim
+
+197
+00:31:17,808 --> 00:31:20,107
+şu şekilde özet
+
+198
+00:31:20,107 --> 00:31:21,387
+olarak söylüyorum
+
+199
+00:31:21,387 --> 00:31:23,307
+daha projeyi planlarken
+
+200
+00:31:23,307 --> 00:31:26,267
+bu yazılım kalitesinin
+
+201
+00:31:26,267 --> 00:31:28,407
+kontrol edilmesi için nasıl bir yöntem
+
+202
+00:31:28,407 --> 00:31:29,968
+kullanılacağı hangi araçların
+
+203
+00:31:29,968 --> 00:31:32,087
+hangi yazılım kalite kontrol araçlarının
+
+204
+00:31:32,087 --> 00:31:33,887
+kullanılacağının belirlenmesi gerekiyor
+
+205
+00:31:33,887 --> 00:31:41,267
+Yani metriklerinizin de belli olması gerekiyor ve bunların ölçümlerinin de gerçekten proje sürecinde yapılıyor olması gerekiyor.
+
+206
+00:31:41,747 --> 00:31:49,207
+Ondan sonra da durak noktaları işte milestone'lar belirlenmeli ve bu milestone'larda mutlaka gözden geçirmeler yapılmalı.
+
+207
+00:31:49,328 --> 00:31:58,767
+Yani kalite faktörleri ne durumda neyi ne kadar karşıladım ya da neyi karşılamak için daha ne kadar ne yapmam lazım bu gibi gözden geçirmeler yapılmalı.
+
+208
+00:31:58,867 --> 00:32:00,347
+Etap etap bunlar ilerletilmeli.
+
+209
+00:32:00,968 --> 00:32:03,627
+Mutlaka test planınızın olması gerekiyor.
+
+210
+00:32:03,887 --> 00:32:18,787
+ve kaynak kodlarınızı yani program kodlarınızı yazılımlarınızın hepsinin biraz sonra söyleyeceğim farklı testlerle test edilmeleri, sınanmaları ve doğruluklarının geçerlenmesi gerekiyor.
+
+211
+00:32:19,567 --> 00:32:26,968
+Bununla beraber projenin doğru çalışıp çalışmadığı yani ürünü doğru yapıyor muyuz bir de doğru ürünü yaptık mı?
+
+212
+00:32:26,968 --> 00:32:29,548
+bu ikisinin de
+
+213
+00:32:29,548 --> 00:32:31,387
+ürünü doğru yapıyor mu? Doğru ürünü
+
+214
+00:32:31,387 --> 00:32:33,607
+yapıyor mu? Şeklinde. İkisinin de
+
+215
+00:32:33,607 --> 00:32:35,527
+mutlaka test edilmesi gerekiyor.
+
+216
+00:32:35,887 --> 00:32:37,487
+Ürün doğru mu? Nasıl test edeceğiz?
+
+217
+00:32:38,027 --> 00:32:39,368
+Bakacağız. Gereksinimleri
+
+218
+00:32:39,368 --> 00:32:41,328
+karşılıyor mu? Karşılamıyor. İşlevsel olan
+
+219
+00:32:41,328 --> 00:32:43,167
+işlevsel olmayan. Bunları karşılıyorsa
+
+220
+00:32:43,167 --> 00:32:44,008
+o zaman
+
+221
+00:32:44,008 --> 00:32:47,468
+doğru ve kaliteliyet
+
+222
+00:32:47,468 --> 00:32:49,307
+bir sistem geliştirmiş
+
+223
+00:32:49,307 --> 00:32:50,988
+oluruz. Karşılamıyorsa
+
+224
+00:32:50,988 --> 00:32:53,167
+karşılamadığı oranda yanlış
+
+225
+00:32:53,167 --> 00:32:55,087
+ya da kalitesiz bir
+
+226
+00:32:55,087 --> 00:32:57,127
+sistem ortaya koymuş olur. Bunların
+
+227
+00:32:57,127 --> 00:32:58,968
+hepsi içinde çeşitli planlar vardır.
+
+228
+00:32:59,087 --> 00:33:01,247
+Yazılım inceleme planı,
+
+229
+00:33:02,387 --> 00:33:02,828
+kaynak
+
+230
+00:33:02,828 --> 00:33:05,007
+program sınama planı,
+
+231
+00:33:05,007 --> 00:33:06,048
+yani test planı
+
+232
+00:33:06,048 --> 00:33:09,127
+diyebilirsiniz bunu kabaca. Yazılım test planı
+
+233
+00:33:09,127 --> 00:33:09,847
+da diyebilirsiniz.
+
+234
+00:33:11,048 --> 00:33:13,188
+Ve kabul muayene planı.
+
+235
+00:33:13,287 --> 00:33:15,007
+Kabul muayenesi ne demek? Müşteri
+
+236
+00:33:15,007 --> 00:33:16,908
+bunu kabul ediyor mu, etmiyor mu? Bunun içinde
+
+237
+00:33:16,908 --> 00:33:18,807
+bunun nasıl ortaya koyulacağını, nasıl
+
+238
+00:33:18,807 --> 00:33:20,747
+geçerleneceğine dair bir
+
+239
+00:33:20,747 --> 00:33:21,387
+plan
+
+240
+00:33:21,387 --> 00:33:24,767
+dahilinde işlerin
+
+241
+00:33:24,768 --> 00:33:26,747
+gerçekleştirilmesi gerekiyor.
+
+242
+00:33:27,188 --> 00:33:28,908
+Yani kaliteyi sağlamak istiyorsanız
+
+243
+00:33:28,908 --> 00:33:31,288
+bir kere metriklerinizi tanımlamalısınız.
+
+244
+00:33:31,527 --> 00:33:33,048
+Ölçümlerinizi yapmalısınız.
+
+245
+00:33:33,408 --> 00:33:34,928
+Süreç için sürekli olarak gözden
+
+246
+00:33:34,928 --> 00:33:36,728
+geçirmeli. Gerekiyorsa güncellemeler
+
+247
+00:33:36,728 --> 00:33:39,087
+yapmalısınız. Ve ayrıca
+
+248
+00:33:39,087 --> 00:33:40,807
+hem yazılımı hem de
+
+249
+00:33:40,807 --> 00:33:42,728
+bütün süreci test etmelisiniz.
+
+250
+00:33:43,208 --> 00:33:44,788
+Bunların hepsini de belirli bir
+
+251
+00:33:44,788 --> 00:33:46,908
+plan çerçevesinde, önceden tanımlı bir
+
+252
+00:33:46,908 --> 00:33:48,868
+plan çerçevesinde gerçekleştirmelisiniz.
+
+253
+00:33:49,448 --> 00:33:50,607
+Yazılım geliştirme
+
+254
+00:33:50,607 --> 00:33:53,087
+planınıza aslında kalite
+
+255
+00:33:53,087 --> 00:33:55,267
+ölçütlerini de kalite kriterlerini de
+
+256
+00:33:55,267 --> 00:33:57,207
+ekleyerek o planları ve gözden
+
+257
+00:33:57,207 --> 00:33:59,107
+geçirmeleri de eklemeniz
+
+258
+00:33:59,107 --> 00:34:01,527
+en güzel, en doğru yol olacaktır.
+
+259
+00:34:02,567 --> 00:34:03,167
+Ve bunların hepsi
+
+260
+00:34:03,167 --> 00:34:05,287
+maliyet. Hem zaman maliyeti
+
+261
+00:34:05,287 --> 00:34:06,807
+hem de iş yükü maliyeti
+
+262
+00:34:06,807 --> 00:34:09,027
+olarak da projenin
+
+263
+00:34:09,027 --> 00:34:11,188
+toplam maliyetini arttıracak
+
+264
+00:34:11,188 --> 00:34:12,487
+unsurlar maalesef.
+
+265
+00:34:13,867 --> 00:34:14,387
+Geldik
+
+266
+00:34:14,387 --> 00:34:17,367
+test aşamasına. Hani gerçekleştirmeyle
+
+267
+00:34:17,367 --> 00:34:18,967
+alakalı söyledik ve yazılım
+
+268
+00:34:18,967 --> 00:34:21,227
+kalitesinin karşılanması için de
+
+269
+00:34:21,227 --> 00:34:23,047
+yapmamız gerekenler
+
+270
+00:34:23,048 --> 00:34:26,928
+ve başımıza doğan ekstra maliyetlerden bahsettik.
+
+271
+00:34:27,348 --> 00:34:29,148
+Şimdi sıra geldi test aşamasına.
+
+272
+00:34:29,947 --> 00:34:30,988
+Test niye yapılıyor?
+
+273
+00:34:31,107 --> 00:34:32,087
+Hataları bulmak için.
+
+274
+00:34:32,188 --> 00:34:33,628
+Hatayı bulduk diyelim ne yapacağız?
+
+275
+00:34:34,188 --> 00:34:35,328
+Geri döneceğiz, düzelteceğiz.
+
+276
+00:34:36,019 --> 00:34:38,299
+nerede yaptıysak o hatayı
+
+277
+00:34:38,299 --> 00:34:40,460
+oraya geri dönüp oradaki düzeltmeyi
+
+278
+00:34:40,460 --> 00:34:41,940
+gerçekleştirir. İşte o yüzden
+
+279
+00:34:41,940 --> 00:34:44,519
+gerçekleştirmeyi yapar yapmaz test etmemiz
+
+280
+00:34:44,519 --> 00:34:45,219
+gerekiyor.
+
+281
+00:34:46,619 --> 00:34:48,459
+Biraz sonra da bahsedeceğim.
+
+282
+00:34:48,559 --> 00:34:50,279
+Birim testlerle ürettiğimiz
+
+283
+00:34:50,279 --> 00:34:52,019
+her bir yazılım parçasının testlerinin
+
+284
+00:34:52,019 --> 00:34:53,860
+gerçekleştirilmesi gerekiyor. Peki
+
+285
+00:34:53,860 --> 00:34:56,219
+diyelim bunlar testlerden geçti. Parçacıklar
+
+286
+00:34:56,219 --> 00:34:58,219
+doğru çalışıyor. Sonrasında
+
+287
+00:34:58,219 --> 00:35:00,099
+bunlar bir arada
+
+288
+00:35:00,099 --> 00:35:01,860
+doğru çalışıyor mu diye bakmamız lazım.
+
+289
+00:35:02,339 --> 00:35:04,219
+Ondan sonra ya bunlar gerçekten
+
+290
+00:35:04,219 --> 00:35:06,259
+isterleri yani gereksinimleri
+
+291
+00:35:06,259 --> 00:35:08,439
+doğru şekilde karşılıyor mu diye test etmemiz
+
+292
+00:35:08,439 --> 00:35:10,039
+lazım. Sonrasında da
+
+293
+00:35:10,039 --> 00:35:12,339
+kalite standartlarını karşılıyor mu diye
+
+294
+00:35:12,339 --> 00:35:14,200
+tekrardan tekrar farklı testler
+
+295
+00:35:14,200 --> 00:35:15,579
+yapmamız lazım. Bu şekilde
+
+296
+00:35:15,579 --> 00:35:18,279
+pek çok açıdan bakarak yazılımı
+
+297
+00:35:18,279 --> 00:35:19,999
+ya da bilgi sistemi test ederiz.
+
+298
+00:35:20,459 --> 00:35:21,979
+Temelde ne gibi testler yapılır?
+
+299
+00:35:22,299 --> 00:35:23,999
+Tekrar dört tane başlık altında
+
+300
+00:35:23,999 --> 00:35:25,999
+bunlardan bahsedeyim. Formal olsun.
+
+301
+00:35:26,739 --> 00:35:28,339
+Fonksiyonel testler yani işlevsel
+
+302
+00:35:28,339 --> 00:35:30,399
+testler yapılır. Burada aslında
+
+303
+00:35:30,399 --> 00:35:32,439
+input, process, output testi
+
+304
+00:35:32,439 --> 00:35:34,359
+yapılıyor. Yani uç değer
+
+305
+00:35:34,359 --> 00:35:36,539
+analizleriyle birlikte. Sisteme
+
+306
+00:35:36,539 --> 00:35:38,419
+doğru çöp olmayan verileri
+
+307
+00:35:38,419 --> 00:35:40,439
+bilgileri girdileri
+
+308
+00:35:40,439 --> 00:35:42,299
+sağladığımızda sistem
+
+309
+00:35:42,299 --> 00:35:43,619
+doğru şekilde çalışıp
+
+310
+00:35:43,619 --> 00:35:46,359
+doğru beklenen
+
+311
+00:35:46,359 --> 00:35:48,299
+çıktıları üretiyor mu? Sonuçları
+
+312
+00:35:48,299 --> 00:35:50,219
+üretiyor mu? Üretmiyor mu? Bunların
+
+313
+00:35:50,219 --> 00:35:51,779
+doğruluğu test ediliyor.
+
+314
+00:35:52,179 --> 00:35:54,240
+Diyelim yanlış. Ne olacak? O zaman işte
+
+315
+00:35:54,240 --> 00:35:56,419
+girdide mi bir problem var? Yoksa
+
+316
+00:35:56,419 --> 00:35:58,380
+işlemlerde mi, süreçlerde mi bir
+
+317
+00:35:58,380 --> 00:36:00,339
+problem var? Yoksa sonuç
+
+318
+00:36:00,339 --> 00:36:02,619
+üretiminden bir problem var. Bunlar geri dönüp
+
+319
+00:36:02,619 --> 00:36:04,479
+bakılır. Aa yanlış kodlamışız. Aa
+
+320
+00:36:04,479 --> 00:36:06,460
+veriyi yanlış almışız ya da yanlış
+
+321
+00:36:06,460 --> 00:36:08,460
+çevirmişiz gibi gibi bunlar
+
+322
+00:36:08,460 --> 00:36:10,339
+düzeltilir. Aa bir bakmışız ki
+
+323
+00:36:10,339 --> 00:36:12,499
+aslında kodlamada hata yok ama
+
+324
+00:36:12,499 --> 00:36:14,600
+problem bir şey. Tasarım yanlış. Yanlış
+
+325
+00:36:14,600 --> 00:36:16,859
+bir şekilde işletiliyor. Algoritması olmamış.
+
+326
+00:36:17,299 --> 00:36:18,680
+O zaman tasarıma geri dönüp
+
+327
+00:36:18,680 --> 00:36:20,619
+tasarımın değiştirilmesi gerekir
+
+328
+00:36:20,619 --> 00:36:22,799
+ve kodlamanın da güncellenerek
+
+329
+00:36:22,799 --> 00:36:24,680
+bir daha test edilmesi gerekir.
+
+330
+00:36:25,899 --> 00:36:26,619
+Problemi
+
+331
+00:36:26,619 --> 00:36:28,639
+yanlış anlamışıza kadar gidiyorsak zaten
+
+332
+00:36:28,639 --> 00:36:30,739
+orada analize geri dönmemiz gerekecek.
+
+333
+00:36:30,899 --> 00:36:33,399
+Bu da bizim maliyetimizi doğal olarak çok fazla arttıracak.
+
+334
+00:36:33,939 --> 00:36:38,519
+İşte mümkün olduğunca ürünü, projeyi küçük parçalara bölüp
+
+335
+00:36:38,519 --> 00:36:41,039
+her bir parçayı böyle iteratif olarak üretme fikri.
+
+336
+00:36:41,039 --> 00:36:45,339
+Bu yüzden çok mantıklı ve kabul gören bir yaklaşım oluyor günümüzde.
+
+337
+00:36:45,779 --> 00:36:49,259
+Çünkü adım adım küçük küçük böyle yiyebileceğimiz lokmalar halinde
+
+338
+00:36:49,259 --> 00:36:51,819
+projenin ilerletilmesini sağlıyor.
+
+339
+00:36:52,740 --> 00:36:54,779
+İkinci başlığımız performans testleri.
+
+340
+00:36:54,779 --> 00:36:56,939
+işte burada da her türlü başarım
+
+341
+00:36:56,939 --> 00:36:59,059
+yani performans ölçülüyor ve
+
+342
+00:36:59,059 --> 00:37:01,319
+bunlar yeterli mi bizim için?
+
+343
+00:37:01,459 --> 00:37:03,399
+Kalitesi, beklentilerini karşılıyor mu?
+
+344
+00:37:03,599 --> 00:37:05,240
+Bunlara bakılıyor. Mesela işte
+
+345
+00:37:05,240 --> 00:37:07,539
+tepki süresi nedir? Bellek kullanımı nedir?
+
+346
+00:37:09,380 --> 00:37:11,159
+İletişim ihtiyacı ya da
+
+347
+00:37:11,159 --> 00:37:12,399
+iletişim hızı nedir?
+
+348
+00:37:12,819 --> 00:37:14,919
+Bunlar ölçülüyor. Darboğazlarda
+
+349
+00:37:14,919 --> 00:37:17,319
+belirleniyor. Mesela belli noktalarda darboğaz
+
+350
+00:37:17,319 --> 00:37:19,139
+oluştuğu görülüyor. Bellek
+
+351
+00:37:19,139 --> 00:37:21,139
+yetersizliğine doğru gidebilecek
+
+352
+00:37:21,139 --> 00:37:23,199
+hacim artık bir şey öngördünüz.
+
+353
+00:37:23,199 --> 00:37:27,159
+O zaman burada işte sistemin bellek miktarının arttırılması gerekiyor.
+
+354
+00:37:27,559 --> 00:37:29,199
+Ya da iletişimin yavaş olduğu görülüyor.
+
+355
+00:37:30,279 --> 00:37:34,199
+O zaman da iletişim kanalının hızının arttırılması gerektiği söylenebiliyor.
+
+356
+00:37:34,999 --> 00:37:37,819
+İşte performans testleri de kabaca bunlara bakıyoruz.
+
+357
+00:37:39,879 --> 00:37:42,879
+Dayanıklık testleri de aslında uç noktaları.
+
+358
+00:37:43,059 --> 00:37:47,439
+Yani performans testinin uç noktalarını yaptığımız kontrol ettiğimiz testler.
+
+359
+00:37:47,959 --> 00:37:49,199
+Sisteme aşırı yüklenme.
+
+360
+00:37:49,199 --> 00:37:53,279
+Mesela bizim band genişliğimize ve tasarımımıza göre,
+
+361
+00:37:53,399 --> 00:37:57,459
+1000 kullanıcıya göre, esnamalı kullanıcıya göre bir tasarım yapmışız.
+
+362
+00:37:57,999 --> 00:38:01,379
+Dayanıklık testinde bu 1000 kullanıcı mesela sürekli olarak
+
+363
+00:38:01,379 --> 00:38:06,219
+belli bir süre boyunca, saatler boyunca sürekli sisteme meşgul eder.
+
+364
+00:38:06,759 --> 00:38:10,839
+Ya da 1000 kullanıcı değil de 5000 kullanıcı, 10.000 kullanıcı yüklenir
+
+365
+00:38:10,839 --> 00:38:15,379
+ve acaba nasıl bir darboğaz oluşuyor, nereler patlıyor ya da nerede
+
+366
+00:38:15,380 --> 00:38:20,219
+sistemin neresinden tıs sesi çıkıyor
+
+367
+00:38:20,219 --> 00:38:22,600
+nerede hata oluşuyor ilk önce
+
+368
+00:38:22,600 --> 00:38:24,519
+ya da hangi hata neyleri nasıl tepkliyor
+
+369
+00:38:24,519 --> 00:38:26,480
+bunlar test edilir
+
+370
+00:38:26,480 --> 00:38:28,040
+sistem bunlara tepki veriyor mu
+
+371
+00:38:28,040 --> 00:38:29,639
+kaldırabiliyor mu kaldıramıyor mu
+
+372
+00:38:29,639 --> 00:38:32,040
+mesela işte bir
+
+373
+00:38:32,755 --> 00:38:37,236
+girdilerde bir kuyruklama mekanizması yapılmış mı yapılmamış mı?
+
+374
+00:38:37,315 --> 00:38:40,855
+Bu kuyruklama mekanizması ne kadar düzgün yapılmış ve ne kadar düzgün çalışıyor?
+
+375
+00:38:41,355 --> 00:38:49,475
+Ve ne kadar veri kaybı oluyor gibi bu gibi şeyler metrikler dayanıklık testlerinin sonucunda ortaya çıkar.
+
+376
+00:38:49,835 --> 00:38:52,075
+Bunlar kabul edilebilir bazıları.
+
+377
+00:38:52,075 --> 00:38:55,395
+Mesela tamam canım bizim için 1000 kullanıcı yeter.
+
+378
+00:38:55,955 --> 00:38:58,176
+10.000 kullanıcı zaten istemiyorum.
+
+379
+00:38:58,455 --> 00:38:59,215
+Öyle bir şeyimiz yok.
+
+380
+00:38:59,315 --> 00:39:01,815
+Öyle bir projeksiyonumuz yok diyebilirsiniz.
+
+381
+00:39:01,815 --> 00:39:04,255
+o zaman dayanık testleri ona göre yapılır.
+
+382
+00:39:04,575 --> 00:39:10,895
+Ama mesela derseniz ki biz normalde 300-500 kullanıcımız olur ama bazen öyle bir kampanya yapıyoruz ki
+
+383
+00:39:10,895 --> 00:39:14,656
+işte aynı anda 10.000 kişi indirmeye çalışıyor, 10.000 kişi bir şey yapmaya çalışıyor.
+
+384
+00:39:15,135 --> 00:39:19,995
+Ona göre aslında sistemin tasarımının ölçeklenebilir olarak da değiştirilmesi gerekecektir.
+
+385
+00:39:20,455 --> 00:39:23,936
+Dayanık testleriyle böyle uç noktalar kontrol edilir.
+
+386
+00:39:23,936 --> 00:39:28,195
+fonksiyonel testlerle çok benzer şekilde
+
+387
+00:39:28,195 --> 00:39:29,855
+hatta buradakinin içinde
+
+388
+00:39:29,855 --> 00:39:32,116
+yer alabilir olarak söyleyebiliriz
+
+389
+00:39:32,116 --> 00:39:33,915
+yapısal testler yapılır
+
+390
+00:39:33,915 --> 00:39:34,836
+burada da aslında
+
+391
+00:39:34,836 --> 00:39:37,776
+sistemin iç yapıları
+
+392
+00:39:37,776 --> 00:39:39,955
+sınanıyor yani kodlar doğru mu
+
+393
+00:39:39,955 --> 00:39:41,056
+değil mi
+
+394
+00:39:41,056 --> 00:39:44,276
+programlar program parçaları
+
+395
+00:39:44,276 --> 00:39:46,476
+mantıksal olarak düzgün çalışıyor mu
+
+396
+00:39:46,476 --> 00:39:47,416
+çalışmıyor mu
+
+397
+00:39:47,416 --> 00:39:50,016
+yani yazılan şey ortaya çıkartılan
+
+398
+00:39:50,016 --> 00:39:52,156
+ürün doğru mu değil mi bunların testleri
+
+399
+00:39:52,156 --> 00:39:53,375
+yapılır
+
+400
+00:39:53,936 --> 00:39:55,416
+şimdi
+
+401
+00:39:55,416 --> 00:39:58,376
+hocam verileri
+
+402
+00:39:58,376 --> 00:40:00,376
+lokalosda tutsak sıkıntı olur mu?
+
+403
+00:40:00,476 --> 00:40:00,995
+aynı anda
+
+404
+00:40:00,995 --> 00:40:04,156
+bin kullanıcının gidebilmesi ihtimali
+
+405
+00:40:04,156 --> 00:40:05,276
+sıkıntı olur mu?
+
+406
+00:40:05,535 --> 00:40:08,395
+yok şu anda tabii ki ben bunları söylüyorum
+
+407
+00:40:08,395 --> 00:40:10,276
+ama şu anda sizden böyle yazılım
+
+408
+00:40:10,276 --> 00:40:12,595
+kalite faktörleri konusunda bir şey beklemiyoruz
+
+409
+00:40:12,595 --> 00:40:13,776
+hani
+
+410
+00:40:13,776 --> 00:40:16,215
+böyle stres testleri falan yapmayacağız
+
+411
+00:40:16,215 --> 00:40:17,016
+merak etmeyin
+
+412
+00:40:17,016 --> 00:40:19,815
+hocam ben de bir an korktum
+
+413
+00:40:19,815 --> 00:40:21,575
+dedim hocam nasıl yapacağız bunları falan
+
+414
+00:40:21,575 --> 00:40:23,415
+çişman. Onu düşünüyorum hocam
+
+415
+00:40:23,415 --> 00:40:24,796
+dersin başından beri.
+
+416
+00:40:25,455 --> 00:40:27,395
+Şöyle, şu anda önce bir işi
+
+417
+00:40:27,395 --> 00:40:29,376
+yapmayı öğrenin. Ondan sonra da bunları
+
+418
+00:40:29,376 --> 00:40:31,735
+karşılayacak şekilde yapmayı ilaveten
+
+419
+00:40:31,735 --> 00:40:33,116
+öğreneceksiniz. Öyle söyleyeyim.
+
+420
+00:40:33,815 --> 00:40:35,235
+Ama bunları bilmeniz lazım.
+
+421
+00:40:35,395 --> 00:40:37,535
+Farkında olun. Bunların hepsi
+
+422
+00:40:37,535 --> 00:40:39,215
+başınıza bela olacak ileride.
+
+423
+00:40:41,715 --> 00:40:42,696
+Teşekkürler hocam.
+
+424
+00:40:43,215 --> 00:40:44,576
+Rica ederim. Şu anda şey
+
+425
+00:40:44,576 --> 00:40:47,595
+işlevsel gereksinimleri
+
+426
+00:40:47,595 --> 00:40:49,515
+karşılayan bir sistem geliştirin
+
+427
+00:40:49,515 --> 00:40:51,535
+yeter. Onu söyleyeyim yani.
+
+428
+00:40:51,575 --> 00:40:54,155
+O süreci işletin yeter şu anda.
+
+429
+00:40:55,695 --> 00:40:56,575
+Tamam.
+
+430
+00:40:57,015 --> 00:40:58,275
+Yapısal testler de dediğim gibi.
+
+431
+00:40:58,975 --> 00:41:01,555
+Yani bütün algoritmalar düzgün çalışıyor mu?
+
+432
+00:41:01,795 --> 00:41:02,575
+Modüller düzgün.
+
+433
+00:41:02,695 --> 00:41:08,335
+Modüllerin içleri yani oradaki mekanizmalar hani kontrol akışı düzgün mü değil mi?
+
+434
+00:41:08,775 --> 00:41:11,355
+Buradaki mantıksal yollar denetleniyor.
+
+435
+00:41:12,055 --> 00:41:13,795
+Yapısal yazılım testinde.
+
+436
+00:41:15,095 --> 00:41:19,975
+Genel olarak test adımlarıyla süreç adımlarına eşleştirirken böyle bir spiral kullanırız.
+
+437
+00:41:19,976 --> 00:41:21,675
+Şimdi şurası
+
+438
+00:41:21,675 --> 00:41:23,936
+böyle spiral şeyden
+
+439
+00:41:23,936 --> 00:41:25,796
+başlıyor. Sistem geliştirmeden başlıyor.
+
+440
+00:41:26,296 --> 00:41:28,155
+Böyle bir içeri girdiğinizde gereksinimler.
+
+441
+00:41:28,296 --> 00:41:29,655
+Onun içine girdiğinizde tasarım.
+
+442
+00:41:29,755 --> 00:41:31,976
+Onun içine girdiğinizde kodlama. Yani gerçekleştirme
+
+443
+00:41:31,976 --> 00:41:33,655
+var. G'ler karışmasın diye
+
+444
+00:41:33,655 --> 00:41:34,476
+K yazdık buraya.
+
+445
+00:41:35,936 --> 00:41:36,655
+Şimdi
+
+446
+00:41:36,655 --> 00:41:39,996
+kodlamayı karşılayan sınama aslında
+
+447
+00:41:39,996 --> 00:41:41,556
+ünite testi. Birim testi.
+
+448
+00:41:41,815 --> 00:41:43,976
+Yani bu her parçamızı, her kodladığımız
+
+449
+00:41:43,976 --> 00:41:45,836
+parçayı mutlaka birim testine tabi
+
+450
+00:41:45,836 --> 00:41:47,675
+tutuyoruz ve bunları geçerlemiş oluyoruz.
+
+451
+00:41:48,616 --> 00:41:49,875
+Bunları yaptık.
+
+452
+00:41:49,976 --> 00:41:52,035
+tasarımın
+
+453
+00:41:52,035 --> 00:41:53,776
+doğru mu olup olmadığını
+
+454
+00:41:53,776 --> 00:41:55,755
+ölçmek için tam olarak bu modüller
+
+455
+00:41:55,755 --> 00:41:57,875
+bu parçalar birlikte iyi çalışıyorlar mı
+
+456
+00:41:57,875 --> 00:41:59,735
+doğru çalışıyorlar mı sıkıntı var mı diye
+
+457
+00:41:59,735 --> 00:42:01,655
+bakılır. Buna da bütünleme testi
+
+458
+00:42:01,655 --> 00:42:03,875
+adı veriliyor. Tasarımı karşılayan
+
+459
+00:42:03,875 --> 00:42:05,356
+test adı mı bütünleme testi.
+
+460
+00:42:06,175 --> 00:42:07,976
+Diyelim ki tasarımda da bir sıkıntı
+
+461
+00:42:07,976 --> 00:42:09,535
+yok. Parçacıklar yani
+
+462
+00:42:09,535 --> 00:42:12,095
+yazılım parçaları bir arada düzgün çalışıyorlar.
+
+463
+00:42:12,776 --> 00:42:13,515
+Sadece yazılım değil
+
+464
+00:42:13,515 --> 00:42:15,576
+diğer bileşenler de hani mesela veri
+
+465
+00:42:15,576 --> 00:42:17,636
+bileşenleriyle birlikte haberleşme
+
+466
+00:42:17,636 --> 00:42:19,776
+bileşenleriyle birlikte de düzgün çalışıyorlar.
+
+467
+00:42:19,976 --> 00:42:21,856
+bir arada bütün halde çalışıyorlar
+
+468
+00:42:21,856 --> 00:42:23,576
+diyelim. Eğer hata varsa
+
+469
+00:42:23,576 --> 00:42:25,576
+düzeltilecek tabii. Ve kodlama da belki
+
+470
+00:42:25,576 --> 00:42:27,576
+değişecek. Tekrar bilim testler yapılacak.
+
+471
+00:42:27,776 --> 00:42:29,375
+Tekrar bütünleme testi yapılacak.
+
+472
+00:42:30,132 --> 00:42:54,232
+Bütünleme testinde bir problem yine yok. O zaman da şuradaki bir önceki aşamayı test etmek için bir onaylama testi yapılır. Hatta kabul testi, kabul planı demiştik ya, kabul test planı. Bunlar yapılır. Onaylama testinde de bütün gereksinimler bu sistem tarafından karşılanıyor mu ve bu gereksinimler doğru şekilde çalışıyor mu bunlara bakılır.
+
+473
+00:42:54,232 --> 00:43:22,751
+Eğer onaylama testinde bir problem varsa o zaman problemimiz daha da büyür. Biz bazı şeyleri yanlış yapmışız deyip onları tekrar analiz edip tekrar tasarımlarını yapıp ondan sonra etkilediği, değdiği bütün her yerini de gözden getirilmeleriyle birlikte tekrar kodlamalar, güncellemeler, tekrar birim testleri, tekrar birim testleri, tekrar onay testi yapılması gerekir. Yani bu spiral böyle bir aşağı bir yukarı, bir aşağı bir yukarı. Sürekli olarak gidip gelmek zorunda kaldığınız bir yapı.
+
+474
+00:43:22,751 --> 00:43:48,151
+Diyelim ki onaylandı sistem tamamen de bu benim isteklerimi karşılıyor söylediklerimin hepsini yapmışsınız bravo size aferin çocuklar geldi karşınıza patla sonra ne oluyor bir de sistem geliştirmenin tamamını karşılayacak şekilde sistem testleri yapılıyor bu sistem testlerinde de daha çok kalite faktörleri yani buradaki görüntüslideki performans ve dayanıklılık testleri gibi testler yapılır
+
+475
+00:43:48,151 --> 00:43:57,731
+stres testleri gibi. Bunlarla da sistemin genel kalite faktörlerini eklendiği kadar karşılayıp karşılamadığı da test edilir.
+
+476
+00:43:57,731 --> 00:44:09,971
+Bu şekilde test adımlarımız. Burada ne anlatmışız? Burada aynı şeyleri bir de yazmışız. Birim testi, ünite testi her modül için ayrı ayrı her bir parçacık için yapılır.
+
+477
+00:44:10,051 --> 00:44:16,831
+Kodun doğruluğunu test eder. Modüller bağlanarak sisteme uçturulurken bütün ya da artmalı olarak bütünleme testi yapılabilir.
+
+478
+00:44:16,831 --> 00:44:20,992
+gereksinimler karşılanıyor mu ne kadar karşılanıyor diye onaylama testi yapılır.
+
+479
+00:44:20,992 --> 00:44:27,632
+Sonra bütün her şey bir arada kalite faktörleri için test edilir.
+
+480
+00:44:27,992 --> 00:44:37,871
+İşte burada da hata varsa düzeltmeler ondan sonra güvenlik, dayanıklık, performans gibi testler sistem testi kapsamında gerçekleştirilir.
+
+481
+00:44:38,671 --> 00:44:39,691
+Test adımları da bunlar.
+
+482
+00:44:40,311 --> 00:44:44,931
+Dediğim gibi bunların neler olduğu ne kadar detaylandırılması gerektiği burada şu anda yok.
+
+483
+00:44:44,932 --> 00:44:59,212
+çünkü test mühendisliğiyle ayrı bir dal, ayrı bir alt çalışma alanı ama günümüzde mesela önce testleri yaz ondan sonra kodu yaz gibi yaklaşımlar da var test driven development dediğimiz.
+
+484
+00:44:59,212 --> 00:45:10,732
+Biraz daha fazla tabii kodlama yapmanızı gerektiriyor ama bilim testleri ve bütün bütün bilim testleri için pek çok programlama dilinde hazır test iklimeleri var.
+
+485
+00:45:10,731 --> 00:45:17,451
+onların beklentilerini karşılayacak şekilde ilave kodlarla geliştirmenizi yapmanız yeterli olacak.
+
+486
+00:45:17,691 --> 00:45:22,951
+Bu testleri daha otomatik ve daha sürekli olarak yapmak için.
+
+487
+00:45:24,031 --> 00:45:27,611
+Şu anda sizden yazılım testleri de çok beklemiyoruz.
+
+488
+00:45:28,071 --> 00:45:30,791
+Çünkü daha erken bir yaşama onlar için de.
+
+489
+00:45:30,791 --> 00:45:38,471
+Ama en azından belki bir projenizde bütünleme ve onaylama testlerini yapabilirsiniz.
+
+490
+00:45:38,471 --> 00:45:50,971
+Bu arada birim testi yapmak da o kadar zor değil. Belki en azından bir modülünüz için ya da istediğiniz kadar bir parça için bunu da nasıl yaptığınızı gösterip raporlayabilirsiniz.
+
+491
+00:45:52,352 --> 00:45:53,911
+Ekstra olarak bunu.
+
+492
+00:45:56,492 --> 00:46:08,451
+Peki. Şimdi test adımını da geçtik. Ne oldu? Diyelim ki düzeltmeler var. Geri dönüldü, düzeltildi. Geri dönüldü, düzeltildi. Test edildi tekrardan ve tamam denler.
+
+493
+00:46:08,471 --> 00:46:23,871
+onaylandı. Bu sistem gerçekten de söylediğimiz işleri yapıyor. Beklentilerimizi, her türlü beklentimizi, işlevsel olmayan beklentilerimizi de, kalite faktörlerimizi de karşılıyor. İyi güzel. Hadi hayırlı uğurlu olsun.
+
+494
+00:46:24,371 --> 00:46:36,172
+güle güle herkes yoluna mı? Yoksa bu sistem nasıl kullanılmaya başlayacak? Bunu kim devreye alacak? Nasıl devreye alacak? Bu aşamaya geçmek mi? Tabii ki sonraki aşama yeni sisteme geçiş olacak.
+
+495
+00:46:36,891 --> 00:46:52,411
+Şimdi bir kere ne yapmak lazım? Donanımların kurulması gerekiyor ve iletişim altyapısının oluşturulması gerekiyor. Mevcut sistemde kayıtlar varsa onların yeni sisteme aktarılmaları, belki değiştirilmeleri gerekiyor.
+
+496
+00:46:52,411 --> 00:46:55,931
+bunlar çok sancılı süreçler onu da söyleyeyim
+
+497
+00:46:55,931 --> 00:46:59,311
+hatta siz birebir şeye şahit oldunuz
+
+498
+00:46:59,311 --> 00:47:04,451
+geçen sene UCC kullanırken ondan sonra bir anda OBS'ye geçtiniz
+
+499
+00:47:04,451 --> 00:47:07,711
+oradaki bilgilerinizin hepsi buraya taşındı
+
+500
+00:47:07,711 --> 00:47:10,391
+bazılarınız bazı problemler yaşadı mesela
+
+501
+00:47:10,391 --> 00:47:12,451
+hocam benim bilmem ne derse gözükmüyor
+
+502
+00:47:12,451 --> 00:47:15,011
+ya da bilmem neden ben AA almıştım
+
+503
+00:47:15,011 --> 00:47:17,711
+o niye böyle şey gözüküyor falan gibi
+
+504
+00:47:17,711 --> 00:47:21,271
+ufak ufak hatalar ortaya çıkabilir
+
+505
+00:47:21,271 --> 00:47:33,411
+yani eski kayıtların yeni sisteme aktarılmaları da tabiri caizse bazen kendi içinde minik bir proje olarak takdirlenmesi işletilmesi gereken ayrı bir çözüm olması gerekiyor.
+
+506
+00:47:34,151 --> 00:47:37,311
+Özetle kayıtların yeni sisteme aktarılmaları gerekiyor.
+
+507
+00:47:38,031 --> 00:47:47,351
+Bununla birlikte belki yeni sistemde ilave temel çeşitli tanımların ve kayıtların girdilerinde oluşturulması gerekebilir.
+
+508
+00:47:47,351 --> 00:47:58,711
+işte atıyorum eski sistemde adresleri sadece böyle metin olarak tutuyorsunuzdur ama yeni sistemde coğrafi bilgi sistemi entegrasyonları için farklı ilave şeylere ihtiyacınız vardır.
+
+509
+00:47:58,711 --> 00:48:07,751
+İşte hani il, ilçe, mahalle, semt değil ilaveten atıyorum coğrafi koordinatlar falan gibi şeyler belki ilave etmeniz gerekecektir.
+
+510
+00:48:08,171 --> 00:48:12,931
+O zaman bir şeylerin de hiç olmayan verilerin de girilmesi gerekir yeni sisteme.
+
+511
+00:48:13,871 --> 00:48:16,231
+Bunları da atlamamak gerekiyor.
+
+512
+00:48:16,232 --> 00:48:42,551
+sonrasında da eğitim vermek lazım. Eğitim şart arkadaşlar her türlü geçişte eğitim şart mutlaka sistem konusunda bir sistemle kimler ilgilenecekse onların hepsine iki bu sistemi kimler kullanacaksa son kullanıcıları uç kullanıcıları kimlerse onlara üç bütün yönetim kademesine bu sistem hakkında eğitim vermek gerekiyor.
+
+513
+00:48:42,551 --> 00:48:53,671
+ve donanımlar kuruldu, A6 yapısı oluşturuldu, temel veriler ve eski kayıtlar yeni sistemin aktarıldı.
+
+514
+00:48:54,451 --> 00:49:01,871
+Bu sistemin nasıl çalışacağı, nasıl bakımının yapılacağı ya da nasıl temel parametrelerini değiştirileceği ve girileceği tanımlanacağı
+
+515
+00:49:01,871 --> 00:49:08,771
+ya da belli işlerin hangi modüllerin nasıl kullanılacağıyla alakalı, nasıl yapılacağıyla alakalı her şey eğitim olarak.
+
+516
+00:49:08,771 --> 00:49:23,511
+bir de yönetimlere tabii nasıl raporlamalar olacak, takipçiler nasıl yapılacak onlarla ilgili eğitimler de verildi ve artık bu noktada yeni sisteme geçiş ve yeni sistemi devreye alma artık onu kullanmaya başlama noktasına geliyoruz.
+
+517
+00:49:23,511 --> 00:49:33,271
+Şimdi bu işte kurulumlar falan aktarımlar bunları yaptıktan sonra acaba bir sistem nasıl devreye alınabilir ona bakalım.
+
+518
+00:49:33,271 --> 00:49:44,011
+sistemini devreye almak için birkaç tane yani toplamda beş tane yöntem önerilmiş durumda. Bunları da yeni sisteme geçiş yöntemleri adını veriyoruz.
+
+519
+00:49:44,011 --> 00:50:01,092
+Şimdi şöyle akılda kalıcı grafiklerle bunları aktarmaya gayret ettik. Birincisi doğrudan geçiş. Bu ne demektir? Şimdi bakın sol taraf eski sistem. Şurada belli bir hani hop.
+
+520
+00:50:01,092 --> 00:50:14,732
+şurada bir nokta var zamanda bir T noktası var gördüğünüz tamam mı bu T anından önce hep eski sistem kullanılıyordu
+
+521
+00:50:15,231 --> 00:50:28,411
+ve derdik ki arkadaşlar işte 17 Mayıs 2023 sabah işte 0000 tarihinden itibaren yeni sisteme geçiyoruz. Bundan sonra böyle bu sistem kullanılacak.
+
+522
+00:50:29,511 --> 00:50:31,192
+Tamam. Bu nedir?
+
+523
+00:50:34,791 --> 00:50:45,051
+Her şey eski sistemde yapılıyordu. Bir anda yeni sistem devreye alındı. Eski sistem öldü, kapatıldı ve artık bütün işler için
+
+524
+00:50:45,051 --> 00:50:50,891
+her şey sadece burada yapılıyor. Bu yeni sistem kullanmaya başlandı. Bunun artıları var, eksileri var.
+
+525
+00:50:50,891 --> 00:50:58,231
+Tabii bunu tartışabiliriz. Bir kere artısı nedir? Eski sistem artık mazide kalmıştır.
+
+526
+00:50:58,452 --> 00:51:04,952
+Onunla hiç ilgilenmemize gerek yok. Ondan herhangi bir iş beklememize ya da orada herhangi bir iş yapmamıza gerek yok.
+
+527
+00:51:06,011 --> 00:51:14,551
+Her şey yepyeni sistemde bir kere yapılıyor. Ama tabii bunun da riskleri testler aşamasında gözden kaçmış noktalar olabilir,
+
+528
+00:51:14,551 --> 00:51:36,491
+faal çalışan parçalar olabilir. Yeni sistem de mesela patlarsa çok kritik olan noktalar da olabilir. Yanlış çalışırsa. Burada da gol yeriz. Yani belli sistemlerde evet doğrudan geçiş kullanılabilir ama pek çok kişi eski çalışma mantığının da bir süre devam etmesini isteyebilir.
+
+529
+00:51:36,491 --> 00:51:44,231
+backup gibi ya da bir şey olursa patlarsa biz eskiden devam ederiz o düzelir yeniye sonra bakarız demek için.
+
+530
+00:51:44,791 --> 00:51:48,711
+Tam bu noktada biz paralel geçişi şurada tartışıyoruz.
+
+531
+00:51:48,711 --> 00:51:53,051
+Şimdi burada bir şöyle bir T0 anı var.
+
+532
+00:51:55,031 --> 00:51:57,851
+Burada da bir tane T1 anı var gördüğünüz gibi.
+
+533
+00:51:59,071 --> 00:52:00,571
+Bu şöyle yapılıyor.
+
+534
+00:52:00,571 --> 00:52:13,471
+arkadaşlar işte 17 Mayıs tarihinde itibaren sabah 9'da biz yeni sistemi devreye alıyoruz. Şu şu adresten şu kullanıcılarla erişebilirsiniz.
+
+535
+00:52:13,471 --> 00:52:30,471
+Eğitimlerinizi yaptık zaten verdik biliyorsunuz ama her ihtimale karşı işte bir hafta boyunca bir ay boyunca her neyse artık şuradaki süre T1 zamanına kadar eski sistemde aynen bütün özellikleriyle her şeyiyle
+
+536
+00:52:30,471 --> 00:52:55,711
+kullanılmaya devam edecektir. Bu süreçte yeni sistem de tamamen devrede. Siz istediğiniz şeyle takılın. İster eski sistemden, yeni sistemden işlerinizi yapmaya devam edin. Ama sıkıntı şu. T0 ile T1 tarihleri arasında her işi iki kere yapacaksınız. Veri girilecek. Mesela sipariş girilecek. Eski sisteme de gireceksin. Yeni sisteme de gireceksin.
+
+537
+00:52:55,711 --> 00:53:05,891
+ne bileyim işte bilmem ne bilgileri tabloları bilmem ne raporları oluşturulacak eski sistemde de oluşturacaksın yeni sistemde de oluşturacaksın
+
+538
+00:53:05,891 --> 00:53:21,892
+şimdi bunun artısı ne diyelim ki yeni sistemde sıkıntılı noktalar fark edildi hiç önemi yok eski sistemimiz zaten devam ediyor çalışmaya biz işimizi o şekilde zor da olsa kör toparlı olsa yapmaya devam ediyoruz etkilenmiyor bizim hizmetlerimiz çalışmaya devam ederiz
+
+539
+00:53:21,891 --> 00:53:47,671
+T1'i öteleriz biraz belki gerekirse. T1'i şuraya taşırız şöyle. Böyle yaparız. Ama bizim hizmetlerimizde hiçbir aksama olmaz. Bu ana kadar da yeni sistemde güncellemeler değişikler. Onlar bunlar yapılması gerekiyorsa yapılır. Ve T1 anına geldiğimizde artık biz tamam ikna olduk. Yeni sistemimiz çok iyi çalışıyor. Hiçbir eksiği yok. Hatası yok. Patlamıyor, çatlamıyor. Her şeyi çok güzel dedik.
+
+540
+00:53:47,672 --> 00:53:57,752
+orada artık eski sistem şalter indi, kapatıldı. Artık bu T1'den sonra her işi bir kere yapıyoruz. O da yeni sistemle yapıyoruz.
+
+541
+00:53:58,195 --> 00:54:15,296
+Paralel geçiş, bir süre eski sistemin her şeyiyle kullanılmasını gerektiriyor. Özellikle mission critical falan bir şeyler varsa eski sisteminde bir süre daha gerçekten işlevsel olarak yaşatılması tercih edilebilir.
+
+542
+00:54:15,296 --> 00:54:27,555
+Bir diğeri dereceli geçiş. Şimdi burada da yine bir T0, şurada da bir T1 anları ya da tarihleri var. Aynı burada olduğu gibi.
+
+543
+00:54:28,195 --> 00:54:56,335
+Fakat burada şöyle bir şey var. Arkadaşlar diyoruz ki belli işler, mesela sipariş için şu tarihten itibaren yeni sistemi kullanacağız. Eski sistemde sipariş girmeyin. Sonra işte şu tarihten itibaren mesela şöyle şöyle şöyle. Bilmem ne modülleri buradan kullanıyorum. Bunlar ekleniyor, bunlar eklenecek. Modül, modül, parça parça, özellik, özellik ilerliyor.
+
+544
+00:54:56,335 --> 00:54:57,675
+servis, servis ilerliyor.
+
+545
+00:54:58,515 --> 00:55:02,835
+Tabii ki burada en basitten başlayıp en karmaşa doğru gitmekte fayda var.
+
+546
+00:55:03,755 --> 00:55:04,715
+Bunun güzelliği ne?
+
+547
+00:55:05,695 --> 00:55:11,056
+Buradaki şuradan böldüğünüzde bir işi ya eskide yapıyorsunuz ya yenide yapıyorsunuz.
+
+548
+00:55:11,115 --> 00:55:12,655
+İkisinin de aynı anda yapmıyorsunuz.
+
+549
+00:55:13,136 --> 00:55:16,075
+O yüzden de buradaki gibi iki kat iş yükünüz falan olmuyor.
+
+550
+00:55:16,376 --> 00:55:23,335
+Ama burada tabii eski sistemle yeni sistemin sürekli entegre olarak veri alışverişini yapar halde kalabilmesi gerekiyor.
+
+551
+00:55:23,335 --> 00:55:29,736
+bunu yapamıyorsanız dereceli geçemezsiniz zaten bir şekilde paralel geçmişi tercih etmeniz gerekecektir
+
+552
+00:55:29,736 --> 00:55:39,136
+işte ne oldu siparişleri yenide yapıyoruz ama bütün işte depodur, stoktur, üretimdir, sevkiyattır eski sisteme devam ediyordu
+
+553
+00:55:39,136 --> 00:55:44,356
+ondan sonra hop hadi depoyu da aldık, hop üretimi de aldık, hop kargoyu da aldık bilmem neyi de aldık
+
+554
+00:55:44,356 --> 00:55:49,755
+ala ala gidiyoruz yeni sisteme artık T1'e geldiğimizde eski sistemden kullandığımız hiçbir şey kalmıyor
+
+555
+00:55:49,755 --> 00:56:14,675
+yani eski sistem yavaş yavaş fadeaway oluyor böyle dereceli olarak kademe kademe az kullanılıyor. En son bir bakmışız ki biz eski sistemden artık hiçbir şey kullanmaz hale geldik. Her şey yeni sistemde. Burada da hatalar olabilir. Hatalar için yine eski sisteme geri dönüp o modülü bir süre daha eski sistemden kullanmaya, yenisi bitene kadar kullanmaya devam edebiliriz.
+
+556
+00:56:14,675 --> 00:56:38,255
+buna da dereceli geçiş yani paralelin biraz daha böyle yumuşatılmışı aynı işi iki kere yapmayalım da belli işleri yeni de kalan işleri etkide yapalım yaklaşıyor. Hemen buradan dağıtılmışa geçeyim. Burada da bir merdiven görüyorsunuz. Bu şu demek oluyor aslında çok benziyor ama arkadaşlar insan kaynakları yeni sistemi kullanacak. Geri kalan herkes eski sistem.
+
+557
+00:56:38,255 --> 00:57:08,136
+arkadaşlar insan kaynaklarının yanına depoyu da ekledik depoda yeni sisteme geçti eski sistemi artık kullanmayacaklar depo ve insan kaynakları yeni sistemde yani şirketin operasyonunu işletmenin parçaları ayrı ayrı yeni sisteme geçiyor hani işte şeyciler ne bileyim işte bugün şey gibi düşünebiliriz nasıl söyleyeyim benzetme olsun diye işte Ağustos ayının başında lisans
+
+558
+00:57:08,136 --> 00:57:14,376
+öğrencileri OBS'ye geçiyor. Ama yüksek lisans GESİS'te ya da YUSİS'te devam ediyor. Ondan sonra
+
+559
+00:57:14,376 --> 00:57:22,216
+yok bayağı fark var işte. Ondan sonra ne bileyim yüksek lisanslar geçiyor. Ondan sonra doktoralar
+
+560
+00:57:22,216 --> 00:57:28,356
+geçiyor. Ondan sonra özlük bilgileri oraya taşınıyor. Sonra lisans üstü sınavları oraya taşınıyor gibi böyle
+
+561
+00:57:28,356 --> 00:57:35,376
+farklı modüller yani şirketin ya da işletmenin farklı parçaları yeni sistemi kullanıyor. Diğerleri
+
+562
+00:57:35,375 --> 00:57:49,915
+sistemi kullanıyor. Evet aynen öyle Sadettin dediğin doğru. Dereceli geçiyorsan özellikler yavaş yavaş geçiyor. Dağıtılmış geçiyorsan departmanlar yavaş yavaş geçiyor. Aynen böyle. Aradaki fark bu.
+
+563
+00:57:52,415 --> 00:57:54,255
+Şimdi geldik dördüncüye.
+
+564
+00:57:54,592 --> 00:58:22,031
+Dördüncü ve sonuncuya. Niye bunu böyle yukarı almamışım ki? Bilmiyorum. Dördüncü de prototip geçiş. Bu da şu. Şuna benziyor. Şuraya bir temizleyeyim mi? Çok karanlık oldu orası. Şöyle yapalım. Prototip aslında paraleli benziyor ama şöyle düşünebiliriz. Nasıl söyleyeyim bunu? Eski sistem kullanılıyor. Eski sistem şurada hayatına devam ediyor.
+
+565
+00:58:22,031 --> 00:58:25,131
+T1 diyelim.
+
+566
+00:58:26,391 --> 00:58:32,291
+T0'da aslında ben yeni sistemin geliştirilmesinin startını vermiş durumdayım.
+
+567
+00:58:32,891 --> 00:58:39,391
+Versiyon 0 ve Core ilk böyle en az şeyiyle beraber, özelliğiyle beraber bir prototip üretiyorum.
+
+568
+00:58:39,391 --> 00:58:47,092
+Ve eski sistemde normal günlük işlerimi yaparken o prototip, aslında o prototip de şöyle çizmek daha güzel olur.
+
+569
+00:58:47,211 --> 00:58:48,491
+Şöyle bir şey çizebiliriz.
+
+570
+00:58:48,931 --> 00:58:50,731
+Şöyle de yeni sistem dik kalır burada.
+
+571
+00:58:50,731 --> 00:58:53,051
+bunu güncellesem daha iyi.
+
+572
+00:58:53,911 --> 00:58:58,632
+Ufak efekt böyle yavaş yavaş prototipte bir şeyler ilerliyor.
+
+573
+00:58:59,511 --> 00:59:00,511
+Hatta böyle bile değil.
+
+574
+00:59:01,172 --> 00:59:03,191
+Şöyle sonuna kadar bile diyebiliriz.
+
+575
+00:59:04,731 --> 00:59:05,051
+Şöyle.
+
+576
+00:59:06,251 --> 00:59:07,711
+Çok çizildi bu yine.
+
+577
+00:59:11,711 --> 00:59:14,812
+Şunu şuradan şöyle yapabiliriz.
+
+578
+00:59:14,812 --> 00:59:25,952
+prototipte de şuradaki gibi ama normalde aslında eski sistem tamamen kullanılıyor.
+
+579
+00:59:25,952 --> 00:59:32,871
+Yani ne tam böyle ne tam düz. Eski sistemle T1 anına kadar işlerinizi aynen yapmaya devam ediyorsunuz.
+
+580
+00:59:33,231 --> 00:59:42,511
+Ama o arada da prototipi geliştiriyorsunuz. İş yükünüz ilk başta az ama iş yükünüz gitgide ikisinde de aynı şeyleri yapar hale geliyorsunuz.
+
+581
+00:59:42,511 --> 01:00:11,392
+ve en sonunda prototipiniz öyle bir hale geliyor ki T0 anında başlayan prototip geliştirme T1 anına kadar öyle bir gelişiyor gelişiyor gelişiyor gelişiyor ki siz T1'e kadar aslında bütün hizmetlerinizi eski sistemle devam ediyorsunuz ama T1'e geldiğinizde artık şuna ikna oluyorsunuz ben bu prototipi yeterince olgunlaştırdım bütün reklentilerimi her şeyimi karşılıyor kalite standartlarında karşılıyor
+
+582
+01:00:11,392 --> 01:00:13,532
+eski sistemin fişini çekin.
+
+583
+01:00:14,192 --> 01:00:20,711
+Dediğiniz anda artık bu prototip değil, yeni sistem olarak T1'den sonra yoluna devam ediyor.
+
+584
+01:00:21,871 --> 01:00:26,431
+Bu da dediğim gibi prototip geçiş.
+
+585
+01:00:26,552 --> 01:00:27,092
+Farkı ne?
+
+586
+01:00:29,211 --> 01:00:32,791
+Prototip diyelim ki olmuyor, bir yerde patlıyor, ediyor.
+
+587
+01:00:33,412 --> 01:00:36,572
+Hiç yokmuş gibi eski sistemle yoluna devam edebilirsin.
+
+588
+01:00:37,192 --> 01:00:39,772
+Paralel sistemde de T1'i uzatırız demiştik ya.
+
+589
+01:00:39,771 --> 01:00:45,171
+böyle gider T1 buraya kadar belki eski sistem çok uzun süre yaşamaya devam edebilir.
+
+590
+01:00:45,651 --> 01:00:48,471
+Burada da çok istediğiniz kadar yaşayabilir.
+
+591
+01:00:48,471 --> 01:00:50,871
+Ama prototipi geliştirirsiniz o sırada.
+
+592
+01:00:51,031 --> 01:00:51,671
+Kullanırsınız.
+
+593
+01:00:51,831 --> 01:00:52,611
+Kullanımı artar.
+
+594
+01:00:53,031 --> 01:00:59,311
+Ne zamanki bütün prototip her şey özellikleri ilave yeni özellikleriyle birlikte sizin ihtiyaçlarınızı karşılar.
+
+595
+01:01:00,092 --> 01:01:03,631
+O noktada artık dersiniz ki ben eski sisteme ihtiyaç duymuyorum.
+
+596
+01:01:04,311 --> 01:01:05,771
+Artık seni kullanmayacağım.
+
+597
+01:01:05,971 --> 01:01:08,251
+Güle güle prototipim senin de adın şu olsun.
+
+598
+01:01:08,391 --> 01:01:09,151
+Yeni sistem olsun.
+
+599
+01:01:09,151 --> 01:01:16,151
+yeni sistem olarak seninle devam ediyorum deyip oyuncu değişikliği gibi bir geçiş yapıyorsunuz.
+
+600
+01:01:18,151 --> 01:01:18,931
+Peki.
+
+601
+01:01:25,076 --> 01:01:46,676
+Prototipte ve paralelde bir süre için eski sistem pul kullanılıyor. Dereceli ve dağıtılmışta bir süre için azalarak kullanılıyor. Oradan geçişte ise zaten şey böyle küt diye, yarın başka bir sisteme geçiyoruz diye bir anda geçiş yapılıyor.
+
+602
+01:01:46,676 --> 01:02:01,515
+tabii birinde iş yükü fazlalaşıyor, birinde risk fazlalaşıyor. Bu şekilde projeye göre, çalışılan sektöre göre, alana göre, bilgi sistemine göre uygun olan geçiş tercih ediliyor.
+
+603
+01:02:01,515 --> 01:02:18,515
+Bunlar da tabii daha en başından planlanıyor aslında yani hani fizibilite aşamasında bile hatta proje planı oluştururken bile yani project charter da bile bu sisteme nasıl geçileceği nasıl geçilmesi gerektiği aslında tartışılması ve ortaya koyulması gereken bir konu
+
+604
+01:02:18,515 --> 01:02:47,576
+Peki diyelim ki o şekilde bu şekilde herhangi bir şekilde yeni sistemi devreye geçtik devreye aldık ve artık işlerimizin hepsini yeni sistemimizde yapıyoruz hayırlı uğurlu olsun artık yeni diye bir şey kalmadı o sizin canlı bilgi sisteminiz oldu o bilgi sistemini kullanıyorsun harika ama yazılım bilgi sistemi
+
+605
+01:02:47,576 --> 01:02:54,955
+yazılım ekosistemi ya da aslında yaşayan bir organizma gibi bir süreç.
+
+606
+01:02:54,955 --> 01:02:57,895
+Sürekli olarak evrimleşiyor, sürekli olarak değişiyor.
+
+607
+01:02:58,895 --> 01:03:07,796
+Neden? Çünkü bir her ne kadar testleri yaptık, ettik, düzelttik ama her zaman için hata oluşabilir.
+
+608
+01:03:08,495 --> 01:03:11,135
+Yazılımsal hata da oluşabilir, donanımsal hata da oluşabilir.
+
+609
+01:03:11,476 --> 01:03:14,275
+Yani her şey olabilir, kullanım hatası da oluşabilir.
+
+610
+01:03:14,275 --> 01:03:42,615
+bununla birlikte belki de ihtiyaçlar değişebilir. Yani işte oluyor ya bir geçmiş zamanda üniversitemizde işte notlar A, A-B artı B, B-B şeklinde gidiyordu. Ama şimdi A, A, B, A, B, B, C, B diye gidiyor. Yani aralıkları değişti skalaları. Daha böyle yoğun, daha çok parçalı bir şey geçildi.
+
+611
+01:03:42,615 --> 01:03:46,335
+ne oldu sizin bütün not tutuş şeklinizi değiştirmeniz gerekti.
+
+612
+01:03:47,076 --> 01:03:50,515
+Ağırlıklı genel not ortalaması hesaplarınızı değiştirmeniz gerekti.
+
+613
+01:03:50,615 --> 01:03:55,555
+Böyle şeyler, basit örnekler olsun diye aşina olduğunuz bilgi sistemlerinden vermeye çalışıyorum.
+
+614
+01:03:56,895 --> 01:04:03,715
+Demek ki hem ihtiyaçlar değişebilir, bazı ihtiyaçlar bambaşka şekillerde yapılmak zorunda kalabilir.
+
+615
+01:04:03,855 --> 01:04:08,875
+Bir de zaman içinde eskiden olmayan ama artık yapılması gereken yeni işler de olabilir.
+
+616
+01:04:08,876 --> 01:04:24,256
+Şimdi böyle yeni şeyler yapılacaksa ya da zaman içinde değişen ihtiyaçların durumuna göre, getirilerine göre bizim bilgi sistemimize değişiklikler yapılması gerekiyorsa o zaman biz bunu bakım çalışmasıyla gerçekleştiriyorum.
+
+617
+01:04:24,255 --> 01:04:45,335
+bu bakım çalışmasına iyileştirici bakım adını veriyoruz. Yeni özellik eklemek ya da mevcut parçaları, mevcut işlevleri daha iyi çalışacak şekilde değiştirmek, ihtiyaçlara uygun çalışacak şekilde değiştirmek buna iyileştirici bakım faaliyetleri adını veriyoruz.
+
+618
+01:04:45,335 --> 01:04:49,076
+ya da altyapısal değişimler yaşanabilir.
+
+619
+01:04:51,635 --> 01:04:54,395
+Teknoloji eskiden sunucu dünyasındadır.
+
+620
+01:04:54,475 --> 01:04:56,595
+Oradan cluster dünyasına geçmiştir.
+
+621
+01:04:57,235 --> 01:04:59,975
+O anda siz aynı bilgi sistemini kullanmaya devam ediyorsunuzdur.
+
+622
+01:05:00,076 --> 01:05:02,436
+Ondan sonra bulut diye bir şey çıkmış derler.
+
+623
+01:05:03,595 --> 01:05:05,415
+At buluta unut gibi olur.
+
+624
+01:05:05,835 --> 01:05:06,355
+Nasıl olacak?
+
+625
+01:05:06,355 --> 01:05:14,915
+İşte onun taşınması, o altyapıya geçiş, aynı bilgi sistemi, aynı uygulama, sunucuları, aynı mantık ama bambaşka bir altyapıda çalışacak.
+
+626
+01:05:14,915 --> 01:05:17,335
+burada da bir değişiklik ihtiyacı var.
+
+627
+01:05:17,736 --> 01:05:19,955
+Bir uyarlama ihtiyacı var yeni duruma.
+
+628
+01:05:20,335 --> 01:05:24,335
+O yüzden de buna uyarlayıcı bakım adını veriyoruz.
+
+629
+01:05:24,980 --> 01:05:34,099
+Sonuncusu da dediğim gibi testleri her ne kadar yapmış olsak bile insanız, hatasız kul olmaz, hatasız yazılım da olmaz.
+
+630
+01:05:34,360 --> 01:05:40,559
+Testlerde fark edilmeyen hatalar olabilir. Bu hataların da doğal olarak düzeltilmeleri gerekir.
+
+631
+01:05:40,679 --> 01:05:54,719
+Bu yüzden de geliştirme süreci boyunca, bilgi sistemi geliştirme süreci boyunca her ne kadar test etmiş olsak bile sonradan anlaşılan, ortaya çıkan, fark edilen hatalar olabilir.
+
+632
+01:05:54,719 --> 01:06:20,279
+Bunları düzeltiriz. Bunlara da düzeltici bakım adını veririz. Demek ki bir yazılımın yaşam ömrü boyunca, kullanım ömrü boyunca 3 çeşit bakım yapıyoruz. Ya değişikliklere göre iyileştirici bakımlar, ya altyapıları uyarlamak için uyarlayıcı bakımlar, ya da hataları mevcut geliştirmedeki üründeki hataları düzeltmek için düzeltici bakımlar yapıyoruz.
+
+633
+01:06:20,279 --> 01:06:47,700
+Genel olarak bir bilgi sisteminin bütün yaşam ömrünün minimum %40, maksimum %80 kadarı bakım evresidir. Çok uzun bir süreçtir. Yazılım ne kadar kullanılması o kadar da bakım aşaması devam eder. Mesela yine bilgi sisteminden örnek vereyim kullandığımız öğrenci bilgi sisteminden. OBS geçen sene devreye alındı değil mi? 2022 miydi?
+
+634
+01:06:51,155 --> 01:06:52,256
+hatırlayamam mı?
+
+635
+01:06:54,215 --> 01:06:58,475
+Biz birinci sınıftayken direkt öyle başladık hocam. Geçen sene sanırım.
+
+636
+01:06:58,955 --> 01:07:10,155
+Tamam. Evet. 2021'de UCS vardı çünkü. 2022'de OBS'yle devam ettik. O yaz geçiş yaşandı yani öyle söyleyeyim size. Hem de şey geçiş yaşanmaya çalışıldı.
+
+637
+01:07:10,155 --> 01:07:39,775
+şurada geri döneyim. Doğrudan geçiş yöntemi yaşanmaya çalışıldı. Fakat aslında paralel geçiş yapıldı. Fakat doğrudan geçiş yapıldığı söylendi. Ama bir süre boyunca USIS aynen böyle çalışmaya aslında devam etti. Tamam mı? Ama bir yandan da aslında dağıtılmış bir geçiş de yapıldı. Çünkü önce lisans geçti. Ondan sonra yüksek lisans geçti. Ondan sonra yüksek lisansın farklı parçaları geçti.
+
+638
+01:07:39,775 --> 01:07:47,255
+aslında Yusis çalışıyordu ya ben hazırlıktayken falan girmiştim galiba ondan sonra da girdim hatırlıyor gibiyim
+
+639
+01:07:47,255 --> 01:07:57,775
+aynen aslında Yusis'e girdiğinizde çalışmaya devam ettiğini görüyordunuz yani aslında paralel bir geçiş yaşandı ama paralel geçiş ya da dağıtılmış geçişler sansasyonel değildir
+
+640
+01:07:57,775 --> 01:08:06,315
+hani böyle biz devrim yaptık hani doğrudan bunu kullanmaya geçiyoruz demek biraz daha reklam için iyi oluyor
+
+641
+01:08:06,315 --> 01:08:24,515
+o yüzden doğrudan geçtik böyle eski sistemi gömdük şeklinde söylesek bile aslında gömmedik böyle geçtik ve üstüne döştük aslında yeni sistem parça parça kullanılmaya alındı yani hem paralel hem dağıtılmış geçiş bir arada yaşandı diye biliriz.
+
+642
+01:08:24,516 --> 01:08:27,376
+şeyi söyleyecektim.
+
+643
+01:08:28,176 --> 01:08:32,056
+%40'dan %80'e kadar yaşam ömrü bakımında geçer demiştik ya.
+
+644
+01:08:33,276 --> 01:08:41,615
+İşte sizin o 2021'de mesela hazırlıkta girip baktığınız USIS bilgi sistemi ilk defa 2003 yılında kullanılmaya başlandı bu üniversitede.
+
+645
+01:08:43,376 --> 01:08:44,255
+2003.
+
+646
+01:08:45,176 --> 01:08:46,956
+Ne zaman devreden kaldırıldı?
+
+647
+01:08:47,236 --> 01:08:48,115
+2021.
+
+648
+01:08:49,316 --> 01:08:49,855
+Kaç sene?
+
+649
+01:08:51,676 --> 01:08:52,995
+2021, 22 hatta.
+
+650
+01:08:53,495 --> 01:08:54,176
+18 sene.
+
+651
+01:08:54,175 --> 01:08:58,495
+18 hocam 18
+
+652
+01:08:58,495 --> 01:09:00,115
+18 değil mi? 28
+
+653
+01:09:00,115 --> 01:09:01,555
+Ben mi dedim?
+
+654
+01:09:02,035 --> 01:09:03,995
+Ben dedim hocam sıra bakmayın bir an
+
+655
+01:09:03,995 --> 01:09:06,255
+Neyle sayıyorsun sen ya?
+
+656
+01:09:06,456 --> 01:09:07,695
+Vallahi zarar edersin
+
+657
+01:09:07,695 --> 01:09:09,596
+Hocam aklımız yerimizde değil
+
+658
+01:09:09,596 --> 01:09:10,535
+Niye?
+
+659
+01:09:12,876 --> 01:09:14,096
+Niye değil ne oldu?
+
+660
+01:09:15,575 --> 01:09:18,055
+Hocam bilmiyorum yoruldum ya bu dönem
+
+661
+01:09:18,055 --> 01:09:19,275
+Bu dönem farklıydı biraz
+
+662
+01:09:19,275 --> 01:09:21,855
+Evet çok farklıydı uzaktan da
+
+663
+01:09:21,855 --> 01:09:48,495
+Peki yani gördünüz mü bakın bir bilgi sistemi 18 sene kullanılmış. 18 sene boyunca tabii aynı bilgi sistemi kullanıldı ama hayır. Pek çok ihtiyaç değişti, pek çok özellik değişti. Yani çok fazla iyileştirici bakım yapıldı. Doğal olarak artan hacmi, artan istekleri karşılamak için çok fazla altyapı değişimi yapıldı. Orada da çok büyük yanlışlar yapıldı.
+
+664
+01:09:48,495 --> 01:09:57,055
+aslında çok rahatlıkla devam edebilirdi neyse yani çok fazla uyarlamada yapıldı ama uyarlamalar doğru şekilde yapılmadı diyelim.
+
+665
+01:09:58,355 --> 01:10:02,055
+Ayrıca hatalar az da olsa vardı onlar da düzeltildi.
+
+666
+01:10:02,975 --> 01:10:08,055
+Ve iyileştirici bakım sonrasında da pek çok düzeltici bakım yine yapılmak durumunda kaldı.
+
+667
+01:10:08,055 --> 01:10:36,895
+aldı. Ve UCC's'in oluşturulması da yani yazılması da toplamda işte yaklaşık ilk böyle hani devreye alınmasından önceki süreci bir sene falandır. Daha öncesindeki planlamaları saymıyorum. Analiz, tasarım, test ve gerçekleştirme aşamaları yaklaşık bir sene ama devreye alındıktan sonra aslında geliştirme devam etti. Yani bir prototip ondan sonra prototip geliştirmeye devam etti diyebiliriz.
+
+668
+01:10:36,895 --> 01:10:44,635
+2004 gibi 2005 gibi gerçekten olgun bir şekilde çalışan her şeyli çalışan bir yazılım halindeydi.
+
+669
+01:10:44,944 --> 01:10:58,944
+hani hadi o 2 seneyi de prototipten düştüm, 18'de 16 sene düştümsenize. Yani 16 sene boyunca bir bilgi sistemi size hizmet ediyor. Ama tabii bu hizmeti yapabilmesi için de işte 16 sene boyunca bakım yapıyorsunuz.
+
+670
+01:10:58,944 --> 01:11:06,964
+bir iki sene, bir sene geliştirme, iki sene prototip geliştirme diyelim, üç sene ama on altı senesi bakım.
+
+671
+01:11:06,964 --> 01:11:12,903
+Ne oldu? On dokuz senenin on altı senesi bakımda geçiyor. Gördüğünüz gibi aslında bakım süreçleri normalde bayağı uzunmuş.
+
+672
+01:11:13,543 --> 01:11:20,804
+Özellikle de böyle köklü bilgi sistemlerinde bir işletme için önemli temel bilgi sistemlerinde değişiklik çok fazla işlenmez.
+
+673
+01:11:21,024 --> 01:11:27,024
+Çünkü ne kadar değişiklik o kadar risk, o kadar hata olasılığı, o kadar tekrar iş yapma olasılığı.
+
+674
+01:11:27,023 --> 01:11:35,583
+o yüzden de mümkün olduğunca uzun ömürlü ve değiştirilebilir sistemler geliştirmeye, tasarlamaya gayret biliriz.
+
+675
+01:11:37,583 --> 01:11:40,163
+Evet bakım da bu kadar. Sonra ne oluyor?
+
+676
+01:11:41,043 --> 01:11:45,944
+Gün geliyor işte ihtiyaçları artık karşılamıyor ya da istekler farklılaşıyor.
+
+677
+01:11:46,543 --> 01:11:48,763
+Hadi biz yeni bilgi sistemine geçelim deniyor.
+
+678
+01:11:49,323 --> 01:11:52,263
+Ondan sonra ne yapacağız deniyor, nasıl yapacağız deniyor.
+
+679
+01:11:52,263 --> 01:12:06,204
+tekrardan hoppa, ön inceleme, fizibilite, analiz, tasarım, test, geliştirme, geliştirme test, devreye alma, bakım, ondan sonra çalış çalış çalış çalış, ondan sonra hadi yenileyelim hopp, ön inceleme devam ediyor.
+
+680
+01:12:06,204 --> 01:12:14,444
+Anlayacağınız bu süreçte uzun sürelerde, uzun dönemlerde de olsa tekrardan bir devinim halinde kendine devam ediyor.
+
+681
+01:12:14,444 --> 01:12:26,183
+Günümüzde dediğim gibi biraz daha bu işi otomatize ederek sürekli geliştirme, sürekli entegrasyon şeklinde süreçlere geçiyoruz
+
+682
+01:12:26,183 --> 01:12:31,923
+Yani operasyonel süreç yönetimi şeklinde yazılım üretimini yapmaya çalışıyoruz
+
+683
+01:12:31,923 --> 01:12:35,583
+Buna da DevOps deniyor, CICD süreçleri deniyor
+
+684
+01:12:35,583 --> 01:12:44,244
+Bunun için de yazılımın tasarımı daha modüler hallerde, daha ufak parçalar, granüler yapılar halinde yapılmaya çalışılıyor
+
+685
+01:12:44,243 --> 01:12:54,423
+tabi orada da yeni şeyler, problemler ortaya çıkıyor. Bunlar nasıl eş zamanlanacak, nasıl haberleşecek, bir hata olduğunda nasıl geri alınacak falan gibi pek çok şey çıkıyor.
+
+686
+01:12:54,903 --> 01:13:09,543
+Performans nasıl ayarlanacak, dağıtım nasıl yapılacak, dağıtık sistemle gibi. Bunlar da şu anda günümüzde bilgisayar mühendislerinde özellikle yazılım mühendislerinin en çok üzerinde kafa yorduğu ya da geliştirme yaptığı noktalar.
+
+687
+01:13:09,543 --> 01:13:26,003
+mikro servis mimarisiyle günümüzde bunları çözüyoruz. Hatta artık sunucusuz mimariler kullanılıyor. Daha mikro servisler gibi, nano servisler gibi yapılara doğru gidiyoruz. Ama tabii bu bir trade-off.
+
+688
+01:13:26,003 --> 01:13:55,884
+yani parçaları ufaldıkça o parçaları bir araya getirmek zorlaşıyor. Parçalar büyüdükçe daha hantal yapılarınız oluyor ya da böyle köşeli Lego gibi düşünün yani hani ufak çocuk Legosu ile teknik Lego bir mi? Değil. Ama bir tanesinde bilmem kaç bin tane parçayla bir şey yapıyorsun ama çok iyi oluyor ama yapana kadar da akla karayı seçiyorsun. Öbüründe lap lap lap koyuyorsun üç parçayı oluyor ama işte şey Minecraft gibi oluyor. Neyse böyle düşünebilirsiniz kabaca.
+
+689
+01:13:56,003 --> 01:14:09,203
+yazılım mühendisleri özellikle yazılım mimarlarında kullanarak bu problemleri, bu sistem geliştirme problemlerini çözmeye çalışıyorlar.
+
+690
+01:14:09,444 --> 01:14:11,043
+Günümüzde gerçek hayatta.
+
+691
+01:14:14,143 --> 01:14:19,403
+Peki bu haftalık bu kadar. Teorik derslerimizin sonuna geldik.
+
+692
+01:14:19,403 --> 01:14:21,804
+İki haftamız kaldı. 14. haftalar.
+
+693
+01:14:21,804 --> 01:14:41,304
+buralarda da söylediğim gibi sizinle paylaşacağım ödev de açacağım gruptan bir kişinin yüklemesi yeterli sunum, proje, rapor ve projeyle ilgili bütün müceleri dökümanlarınızı kodlarınızı falan filan hepsini oraya yüklersiniz public repo kullanmamayı tercih edin dediğim gibi
+
+694
+01:14:42,239 --> 01:15:07,779
+ders bittikten sonra açarsanız açın. O önemli değil. Ama ders bitene kadar açmayın. Evet. Sunum programını da dediğim gibi size ders kıvamından yine paylaşacağım. Şey olsun hani şimdiden niye açıklamıyorsunuz hocam? İşte biraz şey yapın. Herkes hazırlıklarını ilk haftaya göre yapsın. Yoksa şimdiden hemen açıklarsan o bizimki zaten ikinci hafta değil. Bir hafta şey yapmayın.
+
+695
+01:15:07,779 --> 01:15:15,719
+rahatlamayın diye sizi dinç ve zinde tutmak amacıyla projesinin planını biraz geç açıklamayı tercih ediyoruz.
+
+696
+01:15:16,659 --> 01:15:19,420
+Peki o zaman sorunuz var mı?
+
+697
+01:15:22,179 --> 01:15:23,639
+Gerçi çok sorunuz da yoktur.
+
+698
+01:15:23,899 --> 01:15:25,420
+Toplasan 4 kişiyiz şu anda.
+
+699
+01:15:28,379 --> 01:15:31,100
+Genelde katılan 4 kişi yine geldi.
+
+700
+01:15:31,759 --> 01:15:32,999
+Sağ olun, teşekkür ederiz.
+
+701
+01:15:34,139 --> 01:15:35,379
+Ne demek hocam?
+
+702
+01:15:35,379 --> 01:15:39,580
+yapılarında da baya yüksek almışsınız.
+
+703
+01:15:40,859 --> 01:15:43,379
+Kim? Genel anlamda mı?
+
+704
+01:15:43,960 --> 01:15:49,859
+Evet. Yani Elif 80 küsürdü, Berkay da 80 küsürdü. Yanlış mı hatırlıyorum?
+
+705
+01:15:52,019 --> 01:15:53,079
+Açıklandı mı hocam?
+
+706
+01:15:53,879 --> 01:15:54,600
+Açıklanmadı mı?
+
+707
+01:15:54,979 --> 01:15:55,879
+OBSD var.
+
+708
+01:15:55,900 --> 01:15:57,199
+Bilmiyorum ben kontrol etmedim.
+
+709
+01:15:58,059 --> 01:16:00,719
+OBSD açıklamışsınız hocam OBSD.
+
+710
+01:16:00,719 --> 01:16:05,459
+Evet evet benim grubu açıkladım o yüzden dedim
+
+711
+01:16:05,459 --> 01:16:10,399
+Çok bol not verdim ya
+
+712
+01:16:10,399 --> 01:16:15,519
+Hocam finalde de öyle yapın önümüzde derleyici olmayacak
+
+713
+01:16:15,519 --> 01:16:17,959
+Evet finalde bakalım neler olacak
+
+714
+01:16:17,959 --> 01:16:25,599
+Bakarsınız finallerden önce yeni bir şey gelir seçim vaadi
+
+715
+01:16:25,599 --> 01:16:27,599
+Finallerde online olacak diye
+
+716
+01:16:27,600 --> 01:16:33,239
+Yok canım o hakikarede değişmez şakaydı bu
+
+717
+01:16:33,239 --> 01:16:40,760
+Peki başka bir şey anladık kadarıyla soru yok var mı?
+
+718
+01:16:40,760 --> 01:16:45,339
+Hocam veriyle ilgili ben sorabilir miyim projede gelecek mi acaba?
+
+719
+01:16:46,299 --> 01:16:47,199
+Veri yapılarında mı?
+
+720
+01:16:47,939 --> 01:16:48,280
+Evet
+
+721
+01:16:48,280 --> 01:16:50,140
+Evet gelecek inşallah
+
+722
+01:16:50,140 --> 01:16:54,379
+Önümüzdeki hafta mı gelir acaba spoiler var mı?
+
+723
+01:16:54,379 --> 01:17:01,879
+sonumuzdaki haftaya kalmaz diye düşünüyorum. Öyle. Teşekkür ederim.
+
+724
+01:17:01,879 --> 01:17:07,480
+Ödevin son günü bugündü değil mi? Evet. Evet hocam ödevin testi bu gece. Evet bu geceydi.
+
+725
+01:17:08,980 --> 01:17:22,159
+Tamam. Hadi bakalım o zaman. Yani işte çalışıyoruz diyelim. Peki. Peki o zaman teşekkür ederim katılımınız için. Teorimizin sonuna geldik. Teşekkür ederiz.
+
+726
+01:17:22,159 --> 01:17:51,159
+son iki hafta söz sizde olacak sunumlarınızı yapacaksınız ve farklı farklı çözümler nasıl oluşmuş ne kadar acayip farklı görüşler var onları göreceksiniz bir problemi çözerken ya da benzer problemleri çözerken çok farklı yollar ya da çok farklı gösterimler göreceksiniz bunun için zaten paylaşım olsun diye sunum ortamı yaratmaya çalışıyoruz peki kendinize iyi bakın iyi haftalar görüşürüz hocam görüşmek üzere hoşçakalın
