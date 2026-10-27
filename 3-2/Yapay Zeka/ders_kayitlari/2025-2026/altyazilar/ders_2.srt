@@ -1,0 +1,2311 @@
+1
+00:06:33,716 --> 00:06:43,716
+Merhabalar, günaydın Ebru. Ses geliyor mu acaba? İyi hocam. Tamamdır, teşekkür ederim.
+
+2
+00:06:43,716 --> 00:06:51,716
+Herhalde şu an görüntü de var. Var hocam. Tamamdır, hemen başlayabiliriz.
+
+3
+00:07:15,891 --> 00:07:44,391
+Evet, arkadaşlar tekrar hemen merhabalar. Şimdi bugün iki tane temel konumuz var. Bu iki konuyu klasik Fatih Hocamızın slide'larından anlatacağım. Bir de ileride işte projelerinizde veya farklı yerlerde kullanırsanız diye ek bazı slide'lar hazırladım. Onları size göstereceğim. Bazı yeni teknolojilerden falan bahsedeceğiz.
+
+4
+00:07:44,391 --> 00:08:05,391
+ve dersimizi bitireceğiz. Şimdi makine öğrenmesi konusunun başından beri hani şöyle bir kısa hatırlatma yapmak gerekirse hatırlarsanız bir supervised learning vardı. Bir de unsupervised learning vardı.
+
+5
+00:08:05,391 --> 00:08:08,391
+BFS
+
+6
+00:08:08,391 --> 00:08:26,851
+Şimdi yaklaşık belki 10 yıl önce bir öğrenci verim adancılığı, makine öğrenmesi veya yapay zeka gibi bir ders aldığında işte makine öğrenmesi başlığını bu üç parçaya ayırırdık, ayrılırdı.
+
+7
+00:08:26,851 --> 00:08:40,432
+çünkü şey o zamanki çalışmalar daha çok spesifik problemleri çözmek üzerineydi. Bu şekilde günümüzdeki gibi dil modelleri, genel amaçlı işte araçlar pek yoktu.
+
+8
+00:08:40,432 --> 00:09:06,432
+örneğin hedefiniz ne? Sadece yüz tanıma problemi veya metinden, metinde hani belli böyle her türlü metin değil de belli bir alana yönelik metinden sınıflandırma problemi veya bunlarla alakalı kümeleme problemleri. Elinizde etiketli veri yoksa kümeleme yapıyordunuz. Reinforcement learning'te de işte belli oyunların veya bazı problemlerin çözümleri yapılıyordu.
+
+9
+00:09:06,432 --> 00:09:21,351
+Şimdi ben örneklerimi üçün üstünde verebilirim ama asıl bugünkü konumuzu ilgilendiren şey husus supervised eğiticili öğrenmenin bir açmazı, bir problemi üzerinden gideceğiz.
+
+10
+00:09:21,711 --> 00:09:26,231
+Yine önceden yani belki on yıl önce, on beş yıl önce şöyle şeyler vardı.
+
+11
+00:09:26,231 --> 00:09:38,231
+alana özgü bir problem. Örneğin bir banka düşünelim. Bu bankada var olan mevcut tecrübelerimden yola çıkarak bunu söylüyorum.
+
+12
+00:09:38,231 --> 00:09:46,231
+Dekontlar var. Bu dekontların insanlar tarafından sınıflandırılması gerekiyor.
+
+13
+00:09:46,231 --> 00:09:54,231
+Tabi bunların üzerinde genellikle el yazıları bulunuyor. Makine yazıcı çıktıları var ama el yazıları da var.
+
+14
+00:09:54,231 --> 00:10:04,231
+bu el yazılarında geçen kelimeler, fatura ödemesi diyelim, kredi ödemesi gibi farklı farklı şeyler var.
+
+15
+00:10:05,031 --> 00:10:11,191
+Burada insan faktörünü sınıflandırma için yapılan, insan faktörünü göz ardı etmek için şöyle şeyler yapmışlar.
+
+16
+00:10:12,131 --> 00:10:19,031
+Bir faturayı, dekontu düşünün, böyle bir dikdörtgen bir kağıt, çok da A4 boyutunda da değil.
+
+17
+00:10:19,031 --> 00:10:27,772
+bu dikdörtgen kağıt üzerinde odaklanmanız gereken, kişinin odaklanması gereken belli bir nokta var.
+
+18
+00:10:27,772 --> 00:10:33,992
+İşte diyelim ki sol alt köşede bir şey yazıyor el yazısıyla. Ona göre işte bir faturaysa bir kenara koyacağız.
+
+19
+00:10:35,451 --> 00:10:39,311
+Ne bileyim kredi ödemekse başka bir kenara koyacağız ve böyle sınıflandırma yapacağız.
+
+20
+00:10:39,772 --> 00:10:45,311
+Tabii bunu insan yapacak. Bir müddet sonra bu banka diyor ki ya bu iş böyle hani çok kolay olmuyor.
+
+21
+00:10:46,192 --> 00:10:48,671
+En azından bunları makineyle sınıflandıralım.
+
+22
+00:10:49,031 --> 00:10:54,351
+ki ellerinde yeterince şu ana kadar sınıflandırılmış veriler var.
+
+23
+00:10:54,351 --> 00:10:57,511
+Bunlar nasıl bir problem? Temelde OCR problem.
+
+24
+00:10:57,612 --> 00:11:02,371
+Yani şöyle bir dekontu düşünecek olursanız bu dekontu tarayacaksınız.
+
+25
+00:11:03,231 --> 00:11:09,351
+Bu taradığınız dekontun içerisinde şu kısımdaki metne odaklanacaksınız.
+
+26
+00:11:11,028 --> 00:11:27,028
+bu metninden OCR yapıp OCR sonucuna göre işte burada fatura, faturayla alakalı bir anahtar kelime yazıyorsa işte fatura ödemesi tarafına değilse ne bileyim kredi tarafına veya başka sınıflar da başka kategoriler de olabilir şu an aklıma gelmiyor her türlü kategori böyle bir problem.
+
+27
+00:11:27,028 --> 00:11:38,028
+şimdi bunun için ellerinde o kurumun yeterince örnek var. Yeterince örnek olması böyle bir problemi çözmek için aslında ciddi bir avantaj.
+
+28
+00:11:38,028 --> 00:12:06,947
+çünkü problem zaten çok spesifik yani herhangi bir döküman aramıyoruz veya dökümanın içerisinden tarayacağımız şey sınıf sayısı iki veya üç tane şey işte ne bileyim fatura dedik işte kredi ödemesi dedik veya belki birkaç tane daha bir şeyler olabilir böyle bin tane döküman bin çeşit döküman olan farklı farklı kategorizasyon yapan bir şey değildi gayet küçük ölçekli bir problem aslında
+
+29
+00:12:06,947 --> 00:12:32,847
+her ne kadar veri sayısı fazla da olsa banka ölçeğinde problem özü itibariyle küçük. Burada bu işi yapmak için ne yapmamız lazım? Supervised learning yapacaksak şu ana kadar bu tarz dokümanlardan ne bileyim belki beş bin tane her bir sınıftan veri toplasak, beş bin tane fatura ödemesi, beş bin tane kredi ödemesi, beş bin tane başka bir şey.
+
+30
+00:12:32,847 --> 00:12:41,528
+diyelim ki mesela 5 sınıfla bir problem olsun 25.000 tane hala etiketlenmiş şey bankada var.
+
+31
+00:12:42,407 --> 00:12:46,087
+İnsanlar zaten bunu bir şekilde sayısal halde getirmişler.
+
+32
+00:12:46,888 --> 00:12:54,028
+Bu veri varken bunun üzerine bir sınıflandırma ve görüntü işleme teknikleriyle problem çözülebilir.
+
+33
+00:12:54,028 --> 00:13:01,428
+Biraz daha derin öğrenmeyi bile karıştırmadan önce OCR yap, OCR'dan elde edilen metni, sonuçta sayısal bir metin,
+
+34
+00:13:01,427 --> 00:13:11,747
+sınıflandırmaya çalış ve bir model oluşturur. Belki burada KNN, Maywe, Karar Ağacı, SPM, yapay sinir ağaç gibi yöntemler çalışabilir.
+
+35
+00:13:13,067 --> 00:13:22,607
+Fakat gün içerisinde, zaman içerisinde diyelim yanlış söyledim, problemler sadece böyle alana yönelik problemlerden oluşmuyor.
+
+36
+00:13:22,608 --> 00:13:32,908
+öyle problemlerimiz var ki genel amaçlı olacak ve her türden probleme yanıt verebilir olacak.
+
+37
+00:13:32,908 --> 00:13:46,608
+Veya daha öyle problemlerimiz var ki belki 5-6 tane sınıflandırma yapmanız gerekiyor ama yeterince etiketli veriye ulaşmada probleminiz var.
+
+38
+00:13:46,608 --> 00:14:16,087
+bakın bu ikinci kısım çok önemli. Sınıflandırma yapacaksınız ama yeterince etiketli veriye ulaşmak zorun. Nasıl zorun olabilir? Şimdi mesela burada benim proje öğrencilerimden arkadaşlarım var. Müzik sınıflandırmada kullandığımız hazır veri setleri var. İşte 8000 örnekli veri seti, 24000 örnekli veri seti gibi. Bunlar Batı Müziği özelinde yapılmış çalışmalar.
+
+39
+00:14:16,608 --> 00:14:24,108
+20 çeşit müzik türünü, müzik canrasını sınıflandırmaya çalışan veri tabanları orada kullanılıyor.
+
+40
+00:14:24,108 --> 00:14:33,608
+Şimdi dedik ki biz bunu Türk müziği ve Türk müziğinde de Türk sanat müziği özelinde müzik makamlarına uyarlayalım.
+
+41
+00:14:33,608 --> 00:14:44,608
+İşte Muhayyer Kürdi, Kürdi'deki cazkar, ondan sonra seyah, bilmem ne böyle 20 çeşit makam var Türk sanat müziğinde galiba.
+
+42
+00:14:44,608 --> 00:14:56,608
+bununla alakalı yeterince etiketli verimiz yok. Yeterince etiketli veri olmayınca elde işte ne bileyim 20-30 tane veriyle de bunu yapmaya çalışırsanız şöyle sıkıntılar meydana geliyor.
+
+43
+00:14:58,608 --> 00:15:03,608
+Bu sıkıntılardan bir tanesi yeterince başarıya ulaşamıyorsunuz.
+
+44
+00:15:04,608 --> 00:15:07,608
+Dolayısıyla da
+
+45
+00:15:08,148 --> 00:15:24,148
+bu yeterince başarıya ulaşamamak, hani diyorsunuz ki bundan bir iş olmaz. Ama iş öyle değil. Yani bundan bir iş olmayacak. Olsa işte günümüzün çekciği bitirleri veya diğer yapay zeka araçları da bu konuma gelmezdi. Acaba nasıl bir çözüm üretilmiş?
+
+46
+00:15:24,148 --> 00:15:37,148
+Eee şimdi hedefimiz yine tekrardan eee üzerine vurgulayacağım. Aslında etiketli veriye ulaşmak. Peki etiketli veriye ulaşmak nasıl olabilir? İnsanlara veriyi etiketletirsiniz.
+
+47
+00:15:37,148 --> 00:15:47,148
+yani bir alan uzmanı insanlar istihdam edersiniz o insanlara veri etiketlemesiniz yani para harcayacaksınız.
+
+48
+00:15:47,148 --> 00:16:02,148
+Hani zaman harcanması kavramını burada şey yapalım olayın dışında tutalım yani belli bir fon ayrılır ve bu fonla yeterince para ayrı şey yani veri etiketlemesi yapılabilir.
+
+49
+00:16:02,148 --> 00:16:18,688
+mi acaba her problemde de yeterince veri etiketlemesi yapılamıyor yani elinizde para bile olsa işte burada diyor ki öz denetimli öğrenme aslında semi-supervised learning'in bir alt şeyi self-supervised learning konusuna bakacağız.
+
+50
+00:16:18,688 --> 00:16:28,048
+hedeflediğimiz şey aslında makine öğrenmesinde en büyük darboğaz biziz, insan.
+
+51
+00:16:28,048 --> 00:16:33,448
+İnsan olarak yani biz yeterince etiketli veriyi sağlayamıyorsak makine öğrenemiyoruz.
+
+52
+00:16:33,548 --> 00:16:45,467
+O zaman demişler ki acaba az sayıda etiketlenmiş veriden yola çıkarak bu etiketleme işini de makinelere yaptırabilir miyiz?
+
+53
+00:16:46,207 --> 00:16:47,607
+Bunun bir adım daha ötesi var.
+
+54
+00:16:48,688 --> 00:17:14,607
+veri var, etiket yok. Self-supervised learning ve semi-supervised learning ve bu birazcık üstesinden gelinebilen bir şey. Peki veri de yoksa ne olacak? O zamanda da üretken modeller, ikinci parçada da ona bakacağız. Çünkü düşünün ilk konuları anlattığımızda veri de var, etiket de var. Etiket yoksa en kötü işte clustering yapıyorduk.
+
+55
+00:17:14,607 --> 00:17:24,787
+ama veri var, etiket az var, etiketi biraz daha arttıralım, işte Self-supervised veya etiket hiç yok, ona göre bir şey bulacağız
+
+56
+00:17:24,787 --> 00:17:33,467
+ama bazen veri de olmayabiliyor, örneğin bir alanda sadece 50 tane verimiz var, etiketi geçtim, veri bile yok
+
+57
+00:17:33,467 --> 00:17:39,107
+ama orada belki 50 bin tane veriye ihtiyacımız var, şimdi buna bakacağız
+
+58
+00:17:39,107 --> 00:17:49,867
+Self-supervised learning içerisinde farklı öğrenme stratejileri, kodlayıcılar, tamamlama yöntemleri, contrastive learning falan var.
+
+59
+00:17:50,747 --> 00:17:56,467
+Hedefimiz burada ekstra insan emeğine ihtiyaç duymadan bu işi yapmak arkadaşlar.
+
+60
+00:17:58,067 --> 00:18:04,087
+Öz denetimli öğrenme de diyoruz Self-supervised learning'e ve işin sonunda eğitim kümeleri üretiyor.
+
+61
+00:18:04,087 --> 00:18:08,587
+Bu eğitim kümelerini makineleri ürettirmek sayesinde ne oluyor?
+
+62
+00:18:09,107 --> 00:18:16,587
+yani günümüzün dil modelleri dahil olmak üzere birçok problem daha verimli çözülebilir hale gelebiliyor.
+
+63
+00:18:16,587 --> 00:18:22,187
+Ve burada sadece veri üretmiyoruz hata da üretiyoruz.
+
+64
+00:18:22,187 --> 00:18:31,547
+Çünkü hata üretince veriden öğrenme daha iyi nasıl yapılır bunu da optimize edebilmemiz, iyileştirmemiz mümkün olabiliyor.
+
+65
+00:18:31,547 --> 00:18:39,067
+Çünkü hata öğrenirse o hatanın nasıl üretildiğini de makine öğrenirse o hatayı nasıl yok edeceğini de öğreniyor.
+
+66
+00:18:39,067 --> 00:18:49,308
+ve otokodlayıcılar, autoencoderlar bu mantıkla falan çalışıyorlar. İşin sonunda daha başarılı modellerin ortaya çıkıyor.
+
+67
+00:18:49,308 --> 00:19:03,847
+Şimdi biz bu anlattığımız şeyi, şu anlattığım konuları dediğim gibi 15 yıl önce veya 20 yıl önce benim öğrenciliğim, lisans öğrenciliğim zamanında anlatmış olsaydım tamamen hayali şeyler anlatıyordum bu hoca diye.
+
+68
+00:19:04,243 --> 00:19:26,803
+söylenirdi. Biz de zaten öyle şeyler söylerdik öğrenci olarak. Ama bu söylediklerimiz, buradaki anlattıklarımızın meyveleri şu an hali hazırda karşımızda var. Son dönem başarılarının en önemli birleşenleri. Bu işin sonunda hem ucuz hem de hızlı şekilde büyük bir miktarda eğitim örneği, üretimi yapılabiliyor.
+
+69
+00:19:26,803 --> 00:19:34,523
+insan davranışlarından, insan hatalarından, farklarından bağımsızlık ve çeşitliliği sağlayabiliyoruz.
+
+70
+00:19:35,483 --> 00:19:38,964
+Şimdi bu slide'ı bir başka slide ile paralel yürüteceğim.
+
+71
+00:19:39,723 --> 00:19:40,823
+Biraz da şuradan bakalım.
+
+72
+00:19:42,723 --> 00:19:47,223
+Örnek olarak şöyle bir şeyle, kendi hazırladığım başka bir slide de var.
+
+73
+00:19:47,223 --> 00:19:48,784
+Hatta biraz zoom yapalım buna.
+
+74
+00:19:50,464 --> 00:19:54,983
+Bir bebek mesela dünyaya gelirken ona hiçbir şey etiketleme şey alınıyor.
+
+75
+00:19:54,983 --> 00:19:59,343
+yani buna kedidir diye şey yapmıyorsunuz, binlerce kez söylemiyorsunuz.
+
+76
+00:20:00,223 --> 00:20:06,083
+Ama bir müddet sonra o kedileri tanıyor veya kedilere benzeyen şeyleri yavaş yavaş öğreniyor.
+
+77
+00:20:06,663 --> 00:20:12,683
+Kendi deneyimi, kendi tahmini ve geri geldiğini düzelterek öğrenme yapıyor.
+
+78
+00:20:13,343 --> 00:20:18,283
+Self-supervised veya öz denetimli öğrenme de tam olarak bunu yapan bir şey.
+
+79
+00:20:18,283 --> 00:20:21,683
+Kendi kendine öğrenme sinyali üretecekmiş.
+
+80
+00:20:21,683 --> 00:20:34,463
+denetimle öğrenme yani supervised etiket lazım. Örneğin bir milyon tane kedi fotoğrafını etiketi bu fotoğraf kedidir diye etiketlememiz lazım.
+
+81
+00:20:35,143 --> 00:20:40,303
+Denetim sizde kümeleme yok ama öz denetim belli bir sürede kendiki etiketini üretecek.
+
+82
+00:20:42,703 --> 00:20:51,143
+Öz denetimle öğrenme bize aslında şunu yapıyor. Siz bir cümlenin olumlu mu olumsuzlu olduğunu insana etiketletirseniz denetimle öğrenme yeterince etiketletsiniz.
+
+83
+00:20:51,143 --> 00:20:58,143
+denetimde öğrenme yaparsınız. Cümlenin son kelimesini silerseniz modelin tahmin etmesini istiyorsunuz.
+
+84
+00:20:58,143 --> 00:21:06,143
+Çünkü bakın şu önemli bir şey eğitim verisi içinde zaten bulunan bu bilgi gizlenmiş.
+
+85
+00:21:06,143 --> 00:21:13,143
+Modelin sadece siz onun bulmasını istiyorsunuz. Öz denetimden kastımız bu.
+
+86
+00:21:13,143 --> 00:21:20,143
+Cevap verinin kendisinde aslında var. Sadece belli bir parçası maskelenmiş, gizlenmiş, silinmiş veya bozulmuş.
+
+87
+00:21:20,143 --> 00:21:35,143
+bakın maskelenmiş olabilir, silinmiş olabilir, bozulmuş da olabilir. İşte İstanbul'un tarihi nokta nokta güzeldir. Sizin modelin bir yerden sonra yeterince öğrenirse kendi kendine bu boşluğu doldurabiliyor. Cevap zaten metninde vardır.
+
+88
+00:21:35,143 --> 00:21:35,903
+diyoruz.
+
+89
+00:21:37,443 --> 00:21:39,063
+Şunlar avantajları.
+
+90
+00:21:39,403 --> 00:21:45,623
+Küçük veri ve ölçek etkisi dediğimiz şey, örneğiniz bir milyon tane örneği etiketletirseniz
+
+91
+00:21:45,623 --> 00:21:49,783
+orta başarda %81 başarıyla bir problemi çözersiniz.
+
+92
+00:21:49,883 --> 00:21:52,363
+Bir milyon etiket de çok bir şey değil günümüz için.
+
+93
+00:21:52,903 --> 00:21:55,503
+Belki bunu insana yaptırmak da zor değil.
+
+94
+00:21:56,203 --> 00:21:59,203
+Düşünün bin tane insan istihdam edeceksiniz.
+
+95
+00:21:59,323 --> 00:22:02,303
+Herkes bin tane etiket verecek verileri.
+
+96
+00:22:02,303 --> 00:22:09,303
+yani otursa belki 3 günde çok rahat halledilecek bir şey. Hani iş-işçi ayrımını düzenleyin.
+
+97
+00:22:09,303 --> 00:22:14,303
+1000 işçi değil de 100 işçi olsun belki 3 günde değil de 10 günde biter. Ama biter.
+
+98
+00:22:14,303 --> 00:22:21,303
+Ama 1 trilyon örnek baktığınızda yani bunu arttırdığınızda insan seviyesinin üzerinde artık etiketlemek mümkün hale gelmiyor.
+
+99
+00:22:21,303 --> 00:22:33,943
+ve hani örneğin imaj nette 14 milyon görüntü var. Bunları etiketletmek istesek insanlara 25 bin insan gerekiyormuş yılda, yıl başında çalışarak.
+
+100
+00:22:33,943 --> 00:22:40,943
+Ve şu kadar bir maliyet gerekiyor. Bu denetimde öğrenmenin sınırları dediğimiz bir şey.
+
+101
+00:22:40,943 --> 00:23:01,583
+veya bunu insana yaptırsanız GPT-3'ü eğitmek için 175 bin tane parametre var. Bir de buna denetimli öğrenmeyi eklediğinizde neredeyse imkansız hale geliyor. Şu anki internetin %1'i bile denetimli öğrenmeyle etiketlenemiyor. Onun için bu kadar önemli bir şey dedik.
+
+102
+00:23:02,836 --> 00:23:12,836
+otokodlayıcılara geleceğiz şuradan devam edelim. Şimdi otokodlayıcılar şu. Bu aslında eskiden bir yapay sinir ağa olarak da önerildi.
+
+103
+00:23:12,836 --> 00:23:26,836
+Hedefiniz örneğin bir veriyi aslında sıkıştırmak. Sıkı verinin önemli kısımlarını almak. Mesela şu gördüğümüz slide'da hani bunu bir ekran görüntüsü olarak, snapshot olarak alırsanız arkadaşlar,
+
+104
+00:23:26,836 --> 00:23:56,696
+ve şuralardan yani her yerden alın. Slide'ın nereleri ilgili bilgi içeren şeyler, işte şuralar bilgi içeriyor, şuralar, şuralar, şuralar. Ama bakın bu görüntünün içerisinde şuradaki beyaz yerlerde dahil. Veya ne bileyim işte şu kare içerisindeki veya dikdörtgen içerisindeki işte mavi yerlerde dahil. Diyor ki ben buradaki veriyi en iyi temsil edecek şekilde bir vektör uzayına indirgeme yapayım.
+
+105
+00:23:56,836 --> 00:24:14,836
+Buna latent space diyoruz. Çünkü ne var? Şu ekranın görüntüsünü aldığınızda örneğin bu 1000 piksele 1000 piksellik bir görüntüyse burada 1 milyon tane veri var. Hani bunu RGB düşünürseniz 3 milyon olur. Her bir piksel 3 tane renge karşılık geldiği için.
+
+106
+00:24:14,836 --> 00:24:21,836
+ve bunu mesela bir veri aktarımında kullanacaksınız veya buradan işte OSR yapacaksınız.
+
+107
+00:24:21,836 --> 00:24:32,836
+Girdisi 1 milyon olan veya 3 milyon olan bir feature vektörü üzerinde işlem yapmak çok büyük boyutlu veriyle çalışmak demektir.
+
+108
+00:24:32,836 --> 00:24:34,836
+Yani bu neredeyse problemi çözememek demek.
+
+109
+00:24:34,836 --> 00:24:40,836
+Ama bu veriyi temsil eden, en iyi şekilde temsil eden bir latent space, saklı uzay bulabilirsek,
+
+110
+00:24:40,836 --> 00:24:52,836
+sıkıştırırsak, yani aslında bunu en uygun şekilde sıkıştırırsak transferimiz de iyi olur, ondan sonra sınıflandırmanız da iyi olur, birçok açıdan faydalar olacak.
+
+111
+00:24:52,836 --> 00:25:06,836
+Hedef bu latent space'i bulmak. Şimdi girdiğimiz X, öyle bir enkoder, kodlama yapacağız ki bu kodlamanın sonunda belli parametrelerimizle Z diye bir vektörümüz olacak.
+
+112
+00:25:06,836 --> 00:25:13,836
+bu vektörü daha sonra decode ettiğimizde x üstü olacak ve x ile x üstü arasındaki fark minimize olacak.
+
+113
+00:25:13,836 --> 00:25:21,836
+Şimdi bunu ses gibi, görüntü gibi şeylerde belki küçük bir hatayla yapabiliriz ama metin gibi şeylerde daha küçük hatalar lazım.
+
+114
+00:25:21,836 --> 00:25:28,836
+Şimdi bu bir varyasyonel bir autoencoder dediğimiz yapı.
+
+115
+00:25:28,836 --> 00:25:33,836
+Burada da mesela bir difüzyon modeli var. Şimdi bunları biraz daha açacağım.
+
+116
+00:25:33,836 --> 00:25:38,156
+Variational Autoencoder'ı ayrıca açacağım, diffüzyon modeli ayrıca açacağım.
+
+117
+00:25:38,156 --> 00:25:43,156
+Şimdi diffüzyon modelinde de şöyle bir yapı var, örnek bir datanız var, şuradaki görüntü.
+
+118
+00:25:43,156 --> 00:25:51,076
+Siz bu dataya forward, ileri yönlü olarak bozucu etkiyi ekliyorsunuz.
+
+119
+00:25:51,076 --> 00:26:02,156
+Yani bilinçli olarak modele bir bozma gerçekleştiriyorsunuz ve bu tamamen gürültü, pür bir, saf bir gürültü olacak şekilde
+
+120
+00:26:02,155 --> 00:26:11,095
+görüntü değişime uğratılıyor. Ama bunu nasıl yaptığını, nasıl gürültü eklediğini sistem öğreniyor.
+
+121
+00:26:12,175 --> 00:26:17,635
+Daha sonra bu öğrendiği yoldan geri çıkarak bunu reverse'üne, tersine çeviriyor ve tekrar o özelliğini bulmaya çalışıyor.
+
+122
+00:26:17,635 --> 00:26:22,595
+Difizyon modelleri de bunlar. Bakın bunların hepsi işte varyasyonel auto-encoderlar.
+
+123
+00:26:22,655 --> 00:26:28,935
+Aslında auto-encoderların bir alt ve geliştirilmiş hali veya difizyon modelleri işte bunlar da bir kodlayıcı var.
+
+124
+00:26:28,935 --> 00:26:37,835
+günümüzde şu an kullanımları olan şeyler. Şimdi tamamlayıcılara gelmeden burada bazı şeylere bakalım.
+
+125
+00:26:38,915 --> 00:26:52,635
+Fotoğrafı çok küçük bir alana sıkıştırıyorsun sonra geri açıyorsun. Hani ne bileyim bir kağıdı buruşturup hani olabildiğince en küçük hale getirdiğinizi düşünün veya katladığınızı düşünün sonra onu geri açıyorsunuz.
+
+126
+00:26:52,635 --> 00:26:56,115
+Geri açtığınızda orijinalinden bir şey kaybediyor mu? Kaybetmiyor.
+
+127
+00:26:58,228 --> 00:27:09,827
+tabi bunu makine tarafında yapmak için o fotoğrafın ve o sesin veya o verinin özünü kaybetmeyecek şekilde en az şekilde sıkıştırmanız lazım.
+
+128
+00:27:09,827 --> 00:27:15,828
+latent space'i bu şekilde oluşturuyorsunuz. Şimdi bu mnist datası var.
+
+129
+00:27:15,828 --> 00:27:24,827
+şöyle mnist dataset.
+
+130
+00:27:25,332 --> 00:27:43,332
+28'e 28'lik dijitlerin el yazısı olan şeyleri şöyle görsellerde aratırsak şunlar enmiş safhasının şeyleri. Bu görünüyor değil mi arkadaşlar? Bir feedback alayım da. Çünkü şu an ekran paylaşıldı. Evet hocam.
+
+131
+00:27:43,332 --> 00:27:51,012
+yani o el yazısı şeyler 28'e 28'lik bir pikselin vektör uzayı.
+
+132
+00:27:51,012 --> 00:28:02,732
+Bu vektör uzayına geri gelirsek 784 tane piksel, bunu 784 piksela match edebiliriz.
+
+133
+00:28:03,531 --> 00:28:07,172
+Yani buradan bir eğiticili öğrenme yapabiliriz.
+
+134
+00:28:07,172 --> 00:28:18,771
+ama 784 tane feature bir kere çok fazla bir de çok gereksiz veri var içinde. Neden çok gereksiz veri var? Yani şundakilerden bir tanesini alırsanız
+
+135
+00:28:18,771 --> 00:28:31,012
+veri sadece işte şu el yazısının oldukça arkada kocaman siyah bölümler var. Yani bir sürü sıfırlarla dolu bir matris bu. Siz onu alıp yani vektöre de çevirseniz bir sürü sıfır dolu olacak ve gereksiz şeylerle uğraşacaksınız.
+
+136
+00:28:31,012 --> 00:28:51,512
+hem de problem zorlaşacak. Problemin hem çözümü zorlaşacak hem de başarımı düşecek. Şimdi bu autoencoderlarla, hani bu yapılmış bir çalışma, otokodlayıcılarla bunu araştırabiliyorsunuz. 32'ye indirgeyebiliyorsunuz. Yani 32 vektörlü bir uzaya indirgeyebiliyorsunuz.
+
+137
+00:28:51,512 --> 00:29:06,272
+784'den 32'ye ve bunu mesela araştırıp üzerine şey yapın, sınıflandırma yapın işte K&N gibi bir algoritma ile Mnist atasında şey yapın yani bunu şu an burada şey çalışıyor mu bilmiyorum Grok
+
+138
+00:29:09,748 --> 00:29:10,748
+mesela ben yazayım hızlıca kod ürettirebilirse mlist datasına önce autoencoder uygula sonra bu uygulanmış 32 uzunluklu vektörlerle kfold cross-validate
+
+139
+00:29:39,748 --> 00:30:04,148
+uygulamalar olarak KNN, SVM ve MLP ile sınıflandırma yaptım. Yani böyle bir şeyi yapacak GPT'ye veya herhangi bir yapay zeka aracına sorun ama şu an ben diyor müsait değilim diyor.
+
+140
+00:30:04,147 --> 00:30:09,147
+Co-plot çalışır mı acaba? Ceminay'a bakalım. Burada Ceminay var mıdır?
+
+141
+00:30:15,796 --> 00:30:17,796
+A, ne oldu?
+
+142
+00:30:24,564 --> 00:30:52,564
+yani bu autoencoder sayesinde biz neyse o yapa dursun hani birazdan bakarız. 32'ye kadar indirgeyebiliyorsunuz. Bu indirgeme sayesinde aslında biz yeni veriler üretme veya sınıflandırma problemleri daha performanslı çözme imkanımız da oluyor. Öz temsili aslında özünü ekstraktını taşıyan bir vektör ediyorsunuz.
+
+143
+00:30:52,564 --> 00:31:12,564
+üretimde kullanabiliyoruz. Üretim bu etiketlemede vesaire çok fazla işimize geliyor. Tabi bu klasik autoencoderlar keskin bir şekilde veriyi enkode etmeyi sıkıştırmayı öğreniyor ama yeni veri üretmede şey bunun içinde varyasyonel autoencoderlar var. Şimdi kendi slide'ımızda bu yok onu buradan devam edeceğim.
+
+144
+00:31:12,564 --> 00:31:27,784
+Klasik autoencoder'ın yaptığı şey büyük bir 784 verimiz vardı bunu 32'ye indirgedik 32'ye indirgediğimizde bunu 32 boyutlu düzleme düşünseniz orada bir nokta
+
+145
+00:31:27,784 --> 00:31:35,303
+3 boyuta indirgesek x, y, z koordinat sisteminde bir nokta oluyor klasik autoencoder'da
+
+146
+00:31:35,303 --> 00:31:46,903
+Variasyonel Auto-Encoder'da ise bu verinin uygun düşeceği bir bölge, bu bölgede aslında ortalama ve standart sapmadan bir dağılıma göre işlem yapıyor.
+
+147
+00:31:46,903 --> 00:31:49,703
+Variasyon tarafı oradan gelen bir şekilde.
+
+148
+00:31:49,703 --> 00:31:58,503
+Yani bir latent space'imiz tek bir noktayken, burada belli bir noktaların kümesi aslında bir bölgeye karşılık gelecek.
+
+149
+00:31:58,503 --> 00:32:20,503
+bu bölgeden veya bu region'dan bir nokta alıp bunu tekrar çözücü dediğimiz yani decoder'a, encoder aşamasında hani şöyle yaptınız, veriyi aldınız, encode ettiniz, klasik autoencoder ise tek bir nokta veya burada bir noktalar gümesi yani bir bölge olacak şekilde bir hale getiriniz.
+
+150
+00:32:20,503 --> 00:32:26,503
+Buradan bir tane rastgele nokta alıp decode ederken gerçekçi veriler ürettirebiliyorsunuz.
+
+151
+00:32:28,503 --> 00:32:44,983
+Mesela bunun farklı uygulamaları var birazdan herhalde gelecek bir şeyde slide'lardan biri. Mesela diffusion modelde de işte DALI veya Stable Diffusion dediğimiz modeller var. Bunları bilmeyen var mı? Hocam hiç kullanmadım diyen var mı aramızda veya kullandım diyen var mı?
+
+152
+00:32:48,211 --> 00:32:59,211
+bunlar gürültüyü öğreniyor. İleri yönlü olarak bir veriye gürültü ekliyorsunuz ve daha sonra gürültüyü adım adım temizlemeyi öğreniyorsunuz ve burada insan etiketi yok.
+
+153
+00:33:00,211 --> 00:33:15,211
+Özdenetimli öğrenme ile bağlantısı şu, ben her adımda ne kadar gürültü ekledim bunu öğrenebiliyor ve cevap da zaten verinin içinde olduğu için çok güzel şeyler elde edebiliyorsunuz.
+
+154
+00:33:15,211 --> 00:33:25,711
+tamamlamalara geleceğiz. Bu şeylerin Stable Diffusion mesela veya DALI görüntü üretme gibi şeyler var.
+
+155
+00:33:25,711 --> 00:33:29,432
+Bunlara da birazdan başka bir slide'da geleceğiz. Şimdi şuradaki kodumuza bakalım.
+
+156
+00:33:31,432 --> 00:33:39,651
+MNIST datasını hazır olarak yükledik. Hani train ve bunun şeyi var. Hani içinde görüntüler var.
+
+157
+00:33:40,392 --> 00:33:44,591
+Autoencoder bakın bir encoder ve decoder'dan oluşuyor.
+
+158
+00:33:45,211 --> 00:34:15,191
+ve sizin encoder'unuz 784'ten önce 128'e ondan sonra 128'den 64'e sonra 64'ten 32'e yani bunu bir yapay sinirayı düşünürseniz şöyle bir şey arkadaşlar şuraya şöyle çizeyim işte böyle feature vektörünüz var 784 tane girdiniz var ondan sonra bunu işte 128'e indirgiyor amaç ne? Şuradaki ağırlıkları öğrenmek ondan sonra 64'e indirgiyor.
+
+159
+00:34:15,211 --> 00:34:25,711
+ondan sonra 32'ye indirgemiş. Şu aradaki ağırlıklar en uygun hale getirilene kadar burada bir öğrenme gerçekleştiriliyor.
+
+160
+00:34:25,711 --> 00:34:38,711
+Peki decoder'da da tabii bu öğrenmenin parçası hem enkode etmek hem dekode etmek ki girdi ile sıkıştırılmıştan açılmış.
+
+161
+00:34:38,711 --> 00:34:47,711
+yani şurada x'iniz var bunu 32'ye kadar indirgediniz 32'den tekrar 784'e kadar açıp x üstünü elde ediyorsunuz.
+
+162
+00:34:47,711 --> 00:34:53,711
+Bu x ile x üstünün birbirine çok yakın olması birebir hatasız olmasını beklemeyiz.
+
+163
+00:34:53,711 --> 00:34:57,711
+Burada aslında bir min square error kriteri kullanılıyor.
+
+164
+00:34:57,711 --> 00:35:00,711
+Belli bir orana kadar bu öğrenme gerçekleşiyor.
+
+165
+00:35:00,711 --> 00:35:08,711
+Bu autoencoder eğitildikten sonra, data eğitildikten sonra bize 32'lik bir vektör gelecek.
+
+166
+00:35:08,711 --> 00:35:19,711
+daha sonra bu 32 vektörleri artık 780 küsurluk vektörle işimiz yok. İşte k-fold cross-validation yapıp KNN, SVM, MLP gibi algoritmalarla sınıflandırıyoruz.
+
+167
+00:35:19,711 --> 00:35:29,711
+Şimdi arada şey yapabilirsem, Google Colab'e bu kodu aktarabilirsem, bir deneyelim, çalıştırayım kodu, bakalım yüzde kaç başarıyla çözeceğiz.
+
+168
+00:35:29,711 --> 00:35:37,711
+Bir aslında 784'ü doğrudan çalıştırmak lazım, bir de burada enkode ederek çalıştırmak lazım.
+
+169
+00:35:37,711 --> 00:36:05,471
+basit, mantıklı bir şekilde bakın güzel de çözdü. Evet şimdi devam ediyorum Self-supervised'dan. Yani variasyonel öte enkodurlar ve difizyon var. Tabi bunların detaylarına girmek lazım. Hani bu dersimiz sadece bunların ne olduğunu anlatmak, nasıl yaptıklarını hani matematiksel taraflarına girmek isterseniz şuradaki kaynaklara veya internete bakabilirsiniz. Bir diğer şey tamamlayıcılar.
+
+170
+00:36:05,471 --> 00:36:10,932
+Bakın bu da bir self-supervised learning şeyi
+
+171
+00:36:10,932 --> 00:36:16,471
+Verinin içindeki parçalara odaklanarak işlem yapıyor
+
+172
+00:36:16,471 --> 00:36:18,731
+Bu parçalara odaklanmak ne demek?
+
+173
+00:36:18,932 --> 00:36:23,751
+Verinin tamamı eldeyken bir kısmını silip onu tahmin etmeye çalışabilirsiniz
+
+174
+00:36:23,751 --> 00:36:30,391
+Yani bu bir metin olabilir, bu bir görüntü olabilir, bu bir ses olabilir
+
+175
+00:36:30,391 --> 00:36:33,451
+Bir kısmını silip o silinen kısmı tahmin
+
+176
+00:36:33,451 --> 00:36:34,891
+Bu birincisi
+
+177
+00:36:34,891 --> 00:36:44,851
+bir sonraki parçayı tahmin edebilirsiniz. Bu GPT, Vision Transformer'lar gibi şeyler bunu yapmaya çalışıyor.
+
+178
+00:36:45,492 --> 00:36:57,891
+bir sonraki parça nedir? Yani bir metnimiz var. Bu metinden yerine gelecek bir şeyler ne olabilir? Yani sonraki kelime, sonraki cümle ne olabilir?
+
+179
+00:36:57,891 --> 00:37:06,492
+veya eksik parçaları tahmin etme. İşte BERT modeli dediğimiz, günümüzde bu dil modellerinin de çok atası olan güzel bir model.
+
+180
+00:37:06,492 --> 00:37:16,492
+oradaki boşlukları doldurabilen şeyler, metinde BERT modeli, görüntülerde in-painting yani görüntülerde yapan başka modeller var.
+
+181
+00:37:16,492 --> 00:37:24,492
+Bir de bulunduğun yerin etrafını tahmin edebiliyorsun. Word to back şu eski bir şey ama bu da bazen işe yarıyor.
+
+182
+00:37:24,492 --> 00:37:31,492
+Şimdi mesela bunlara örnekler gelecek. Kediyle alakalı kavramlar ne olabilir arkadaşlar siz söyleyin.
+
+183
+00:37:34,356 --> 00:37:37,356
+Kedinin etrafında olabilecek kavramlar.
+
+184
+00:37:47,507 --> 00:37:49,507
+yazabilirsiniz.
+
+185
+00:37:55,476 --> 00:37:58,476
+Evet yok mu hiç? Yani düşüncesi olan.
+
+186
+00:38:02,260 --> 00:38:24,260
+word to wake'tan bahsediyoruz. Mesela kedi ile alakalı mama değil mi? Kedi maması. Ama sadece mama. Kedi ve mama böyle birbirine uzaklıkta iken, kedi ile alakalı olmayan bir kavram, bisiklet tekerleği. Bu biraz daha uzakta olacak.
+
+187
+00:38:24,260 --> 00:38:46,079
+bunu aynı şekilde görüntü veya başka veriler üzerinde de düşünebilirsin ama metin bazlı çalışan bir şey word to wedge çünkü kelimeyi vektöre dönüştüren bir yapı benzer kullanım ilişkileri veya benzer şeyleri bir şeyde yakın tutuyor birbirine benzer enleri uzak tutuyor öyle söyleyelim
+
+188
+00:38:46,079 --> 00:38:52,779
+mesela bunlar tamamlayıcılar tamamlayıcılara örnek şöyle devam edeceğim
+
+189
+00:38:52,780 --> 00:39:00,120
+verinin belli bir parçasını silebiliriz, gizleyebiliriz, kalanını tahmin edeceğiz.
+
+190
+00:39:00,120 --> 00:39:01,800
+Mesela otoregresif modeller.
+
+191
+00:39:02,919 --> 00:39:07,319
+Geçmişe bakarak bir sonraki kelimeyi veya pikseli tahmin ettireceğimiz şeyler.
+
+192
+00:39:08,520 --> 00:39:10,399
+İstanbul'un tarihi bilmem nesi.
+
+193
+00:39:10,599 --> 00:39:11,800
+Şimdi tarihi nesi olur?
+
+194
+00:39:13,399 --> 00:39:15,899
+Hani İstanbul'un tarihi yarımadası olabilir.
+
+195
+00:39:16,060 --> 00:39:17,340
+Başka şeyler de olabilir.
+
+196
+00:39:17,440 --> 00:39:17,899
+Düşünün.
+
+197
+00:39:17,899 --> 00:39:22,899
+bu yarımada kısmını otoregresif modellere tahmin ettirebiliyorsunuz.
+
+198
+00:39:24,399 --> 00:39:32,919
+Eksik parçayı tahmin dediğim şey, İstanbul, şurada bir maskeli bir şey var, bilmem ne tarihi.
+
+199
+00:39:34,560 --> 00:39:41,139
+Mask dediğimiz şeyler, işte büyük tarihi, görkemli tarihi, muhteşem tarihi gibi şeyler söyleniyor, tahmin ettiriyor.
+
+200
+00:39:41,279 --> 00:39:42,300
+Etrafını tahmin.
+
+201
+00:39:42,300 --> 00:39:50,499
+Şimdi kelimeden tabi bu wordback özellikle kelimeye yönelimli bir şey
+
+202
+00:39:50,499 --> 00:39:58,980
+Kedi kelimesini verdiğinizde tatlı, güzel, oyuncu gibi şeyleri etrafına alıyor, kediye yakın bir şekilde alıyor
+
+203
+00:39:58,980 --> 00:40:02,499
+Bununla alakası olmayan şeyleri bundan uzak tutuyor
+
+204
+00:40:02,499 --> 00:40:08,560
+Tabi bu özellikle günümüzün dil medalleri arasında önemli bir şey arkadaşlar
+
+205
+00:40:08,559 --> 00:40:28,559
+çünkü sadece kelimenin sayısal haliyle ilgilenmiyor bakın bu modeller. Bunu doğru tahmin edebilmek için o kelimenin anlamına, anlam yetmeyecek o cümledeki anlamına yani bağlamına bakacaksın ve o bağlamı da anlayabilmek için dil bilgisini kavramış olması gerekiyor.
+
+206
+00:40:28,560 --> 00:40:45,260
+ve GPT, BERT gibi modeller milyarlarca cümle gördükten sonra anlamış gibi davranabiliyorlar. Etiket olmadan size anlamış gibi davrandığını gösteriyor. Çünkü bu kadar veriyi etiketlemek neredeyse imkansız.
+
+207
+00:40:45,260 --> 00:41:14,260
+bakın bir sonraki kelimeyi tahmin için GPT'nin sergisi bu aslında otoragresif bir model kelime tamamlama oyunu gibi düşünün bunu belli bir birikimi var insanların etiketlediği şeyler var ama bir müddet sonra ölçek tamamen makine tarafından yürüyor GPT-1'de 117 milyon parametre varken şu an GPT-4'de 1 trilyon parametre varmış ama hepsi
+
+208
+00:41:14,260 --> 00:41:22,260
+bir sonraki kelimeyi tahmin etme fikri üzerine. Yapay girdin, zekayı tahmin et. Yapay zekaya girdin, çoku tahmin et gibi şeyler.
+
+209
+00:41:25,260 --> 00:41:35,260
+Mesela BERT modeline baktığımızda GPT'den, burada şey bakalım, GPT bu kelimenin bir sonrakisini tahmin ediyor.
+
+210
+00:41:35,260 --> 00:41:39,260
+Yani bir elinizde kelime var, acaba ondan sonraki ne olabilir?
+
+211
+00:41:39,260 --> 00:41:41,260
+GPT buna bakıyor.
+
+212
+00:41:41,260 --> 00:41:45,260
+BERT gibi şeyler, maskelenmiş dil modelleri.
+
+213
+00:41:45,260 --> 00:41:48,260
+Burada iki yönlü çalışan bir şey.
+
+214
+00:41:48,260 --> 00:41:52,260
+Soldan sağa doğru bakabilen yapıda GPT.
+
+215
+00:41:52,260 --> 00:41:54,260
+BERT hem sola hem sağa bakıyor.
+
+216
+00:41:54,260 --> 00:41:58,260
+Yani öncesini ve sonrasını bakarak çift yönlü şey yapıyor.
+
+217
+00:41:58,260 --> 00:42:01,260
+Ankara Türkiye'nin başkentidir.
+
+218
+00:42:01,396 --> 00:42:11,555
+Ankara Türkiye'nin derken, Türkiye'nin sonraki kelimeye bakmıyor sadece. Hem buna hem buna bakacak ve varsa bundan sonrakine de bakacak.
+
+219
+00:42:11,555 --> 00:42:19,635
+Burada BERT eğitimlerinde, eğitimde kelimelerin %15'i maskelenerek eğitim yapılmış zamanında.
+
+220
+00:42:19,635 --> 00:42:25,996
+İkisinin arasındaki farka başlıyor olsa, GPT soldan sağ dedik, sonrakini tahmin ediyor.
+
+221
+00:42:25,996 --> 00:42:37,436
+BERT iki tarafı eksik kelime işi yapıyor ve anlama sınıflandırma da güçlü, şu üretimde güçlü, chat GPT'nin atası olan GPT, bu da arama motorlarında kullanılıyor.
+
+222
+00:42:37,436 --> 00:42:49,476
+WorldWake, yine başa, burada tekrar olsun diye koymuşuz, kedi kelimesinin çevresinden veya kediye yakın olan şeyleri,
+
+223
+00:42:49,475 --> 00:43:07,775
+veya bir kelimeye yakın olan şeyleri tahmin etmeye çalışan bir şey. İşte kral, adam. Yani kral ve adam. Bunlar yakın şeyler olabilir. Kadın, kral içe. Hani bir tarafta o var, bir tane şey var. Bunları birbirine şartlayabiliriz.
+
+224
+00:43:07,775 --> 00:43:22,775
+veya diğer tamamlama yaklaşımları, bunlar da modelleri, elektra, kelimeyi maskelemek yerine değiştirebilen bir şey, diskriminatör modeli var ve bunun sayesinde oradaki veri asıl mı değiştirilmiş mi sorusunu buluyoruz.
+
+225
+00:43:22,775 --> 00:43:29,635
+Yani burada kedi yerine köpek yazılmış, bu olmaması gerekiyor diye bunun değiştirilmiş olduğunu size buluyor.
+
+226
+00:43:29,756 --> 00:43:33,396
+Veya BART modeli, şimdi o şurada gelecek, göreceğiz.
+
+227
+00:43:35,116 --> 00:43:37,055
+Önce şuradan bakalım, neyse.
+
+228
+00:43:37,775 --> 00:43:59,315
+parçalara odaklanan diğer şeyler bir parçayı değiştirip değişeni belirleme. Mesela D girmiş, generatör model D'yi üretmiş, orijinali kalmış. Hani buradaki metin The Chief Cooked The Meal. Ama karşıda gördüğünüz The Chief Ate The Meal.
+
+229
+00:43:59,315 --> 00:44:00,315
+tabii girdiği ile çıktığı kimse bilmiyor yani sadece siz bunu üretiyorsunuz. Normalde olan buyken bu maskeler sayesinde hani şunun değiştiğini öğretebiliyorsunuz, gösterebiliyorsunuz. Elma Elektra modelleri bunu yapıyor, şurada kaynakları var. Parçaların yerini karıştırıp düzeltebiliyorsunuz. Hani burada örneğin bazı metinleriniz veya parçalarınız var, bunların yerlerini
+
+230
+00:44:29,315 --> 00:44:56,896
+karıştırdınız. Bunu düzelttirebiliyorsunuz. BART modeli şey, bir şeyin sırasını tahmin etme BERT'de veya NSP modellerinde bir şey aynı cümlemi veya çözünürlük arttırma görüntüde çok çok yapılan şeyler. Bunlar da parçalara şey yapan yaklaşımlar. Mesela BART modeli birden fazla şekilde bozabiliyor. Bir şeyi token silebilirsiniz, yerlerini değiştirebilirsiniz, döndürebilirsiniz, görüntüyse döndürülebilir.
+
+231
+00:44:56,896 --> 00:45:01,295
+orijinal metni yeniden oluşturmayı öğretebiliyorsunuz.
+
+232
+00:45:02,616 --> 00:45:05,075
+Özetleme ve çeviri için güzel bir şey mesela.
+
+233
+00:45:05,075 --> 00:45:12,075
+Yani çeviride mesela bunu kullanan İngilizce'den ne bileyim Fransızca'ya gibi çeviri araçları var.
+
+234
+00:45:12,756 --> 00:45:16,315
+Burada hem bozuk mesela A aynen kalmış.
+
+235
+00:45:17,276 --> 00:45:20,155
+Ama bu noktadan sonra işte buraya bir B'ye gelmiş.
+
+236
+00:45:20,515 --> 00:45:21,616
+Burada bir bozulma olmuş.
+
+237
+00:45:22,636 --> 00:45:25,935
+Gibi gibi bu bozuk metni düzeltilmiş hale getiriyor.
+
+238
+00:45:26,896 --> 00:45:52,896
+sıra tahmin yapan şey var yani bir şey ardışık mı yani ardışık bir şekilde doğru bir şekilde üretilmiş mi bunlar bu evet hayır şekilde tahmin ediyor NSİ ailesi görüntü tamamlamada işte görüntünün belli bir bölgesi siliyorsun model onu doldurmaya çalışıyor gibi gibi yöntemler var
+
+239
+00:45:52,896 --> 00:46:00,896
+şunlar farklı öğrenme şeyleri bu şeyin altında bir diğer öğrenme karşısal kontrastive learning
+
+240
+00:46:02,164 --> 00:46:12,164
+aslında zaman ve mekandaki birlikteliğe göre verileri birbiriyle yaklaştıran veya uzaklaştıran bir öğrenme şekli.
+
+241
+00:46:12,164 --> 00:46:20,164
+hedefi şu, örneğin bu köpek var, bu köpeğin vücudun belli parçalarını alıyorsunuz.
+
+242
+00:46:20,164 --> 00:46:25,164
+bu parçalar birbiriyle alakalıysa bunları birbirine yaklaştırıyorsunuz.
+
+243
+00:46:25,164 --> 00:46:31,164
+eğer başka bir nesnenin parçasıysa, parçası ile karşılaşıyorsunuz, onları uzaklaştırıyorsunuz.
+
+244
+00:46:31,164 --> 00:46:34,504
+köpeğin de ayağı var, masanın da, sandalyenin de ayağı var.
+
+245
+00:46:35,384 --> 00:46:44,164
+Şimdi köpek ayağı ile masa, sandalye ayağı her ne kadar ayak olması cihetiyle birbirine yakın olsa da alakalı şeyler değil.
+
+246
+00:46:44,323 --> 00:46:48,583
+Ne yapacak? Köpek ayağı ile sandalye ayağını birbirinden uzak tutacak.
+
+247
+00:46:50,164 --> 00:46:55,803
+Dolayısıyla işte bu metinler ve görüntülerde karşımıza gelen bir şey,
+
+248
+00:46:56,483 --> 00:47:00,463
+hani biraz önce World Tueck'in cümle tabanlı mesela bu World Tueck'in Sebert var.
+
+249
+00:47:01,164 --> 00:47:06,664
+eğiticili pozitif ve negatif örnekler üzerinde işlem yapıyor. Zor negatif örneklerimiz var.
+
+250
+00:47:06,664 --> 00:47:12,664
+Rastgele yerine aynı dökümandan bazı şeyleri birbirine yaklaştırıp uzaklaştırmaya çalışacak.
+
+251
+00:47:15,164 --> 00:47:24,664
+Bunun kullanımı yeni örneklerin temsil üzerindeki halleri. Yani yeni bir örnek geldiğinde acaba bu hangisine daha yaklaştırılabilir?
+
+252
+00:47:24,664 --> 00:47:30,164
+Bunu kullanacağımız bir öğrenme tekniği debiliriz.
+
+253
+00:47:31,164 --> 00:47:41,164
+Fotoğraf albümümüz var, aynı kişinin farklı fotoğrafları birbirine benzer olur. Farklı kişilerin fotoğrafları birbirinden uzak olması lazım.
+
+254
+00:47:41,164 --> 00:47:49,164
+Mesela fotoğraf gruplayıcı uygulamalar var, şu an telefonlarımızda da var. Siz fotoğrafları çekiyorsunuz, 5 yıllık fotoğrafınız var.
+
+255
+00:47:49,164 --> 00:48:00,164
+Arkadaki o fotoğraf uygulaması sizin fotoğraflarınızı kendi içinde grupluyor. Mesela diyor ki, senin kendine ait olan fotoğrafların içinde senin yüzünü geçtiği için o bir grup.
+
+256
+00:48:00,164 --> 00:48:09,164
+bir grup, sana özel. Sonra doğa resimleri var, o doğa resimleri bir kenara koyuyor gibi gibi. Böyle bir mantıkla çalışıyor.
+
+257
+00:48:09,164 --> 00:48:18,164
+Mesela köpek olan fotoğrafları birbirine yakınlaştır ama köpekleri kedilerle baktığında, kedileri de bu köpeklerden uzaklaştır.
+
+258
+00:48:18,164 --> 00:48:23,164
+Pozitifçi, negatifçi şeklinde. Aynı nesnemi olduğunu öğreniyor.
+
+259
+00:48:23,164 --> 00:48:32,164
+işte World to Wake kelime düzeyinde bakıldığında kedi ve tatlı hani birbirine yakın olabilecek şeyler ki kedi ve astronomi birbirinden uzak olacak şeyler
+
+260
+00:48:32,164 --> 00:48:43,164
+ve cümle benzerinde bakıldığında hava çok sıcakla bugün kavurucu şeyler birbirine yakın olacak şeyler ama hava çok sıcakla matematik zordur.
+
+261
+00:48:43,164 --> 00:48:48,164
+Yani birbirinden uzak olacak şekilde düzenleniyor bu sebeple bunu yapıyor.
+
+262
+00:48:48,164 --> 00:48:57,484
+bunu yap. Mesela matematik zordur diye, bugün çalışmak çok zor gibi veya bu sıcakta çalışmak zordur desin gibi yakın şeyler bulacaktır.
+
+263
+00:48:57,484 --> 00:49:13,643
+Burada zor negatifler var. Rastgele negatifler kolay da zor negatifler. Mesela aynı dökümanın farklı cümleleri benzer görünüyor ama anlam genelde farklı. Bunlar işte bu şeyleri zorlayan kezler.
+
+264
+00:49:13,643 --> 00:49:27,223
+Kedi tatlı bir hayvandır. Kedi çok tehlikeli olabilir. İkiz de kediden bahsediyor. Ama bir tanesi zıt anlamlı. Burada modellerin daha derinlemesini anlaması gerekecektir.
+
+265
+00:49:29,723 --> 00:49:43,183
+Söyleyelim. Bir diğer kısma geliyoruz. Karşısal öğrenmeli bu. Şimdi reinforcement learning, geçen hafta anlattığım şey, ödülü önceden işte biz bir şekilde
+
+266
+00:49:43,183 --> 00:49:53,343
+ödev 2'de de siz yaptınız zaten etiketliyorsanız güzel şeyler elde edebiliyoruz. Ödülü insandan almadan reinforcement learning yapılabilir mi? Yapılabilir.
+
+267
+00:49:53,343 --> 00:50:01,983
+Alfa-Zero, bu Alfa-Zero neydi hatırlıyor musunuz arkadaşlar? Ben bunu size söyledim ilk haftalarda.
+
+268
+00:50:03,572 --> 00:50:05,572
+Nei dubojeva
+
+269
+00:50:16,755 --> 00:50:18,755
+yok mu hatırlayam?
+
+270
+00:50:20,755 --> 00:50:25,755
+satranç robotu, tamam teşekkür ederim. satranç robotu.
+
+271
+00:50:25,755 --> 00:50:32,755
+deep blue daha sonra hatırlarsınız ama alpha-büro oyunlar kısmında bahsediyoruz.
+
+272
+00:50:32,755 --> 00:50:38,755
+şimdi bunun yaptığı şey kendi kendine sürekli oyun oynuyor.
+
+273
+00:50:38,755 --> 00:50:42,755
+belki defalarca yani belki milyonlarca oyun oynuyor.
+
+274
+00:50:42,755 --> 00:50:47,315
+ve oyunlarından şunu görüyor, şunu yaparsam doğru yapıyorum, şunu yaparsam yanlış yapıyorum.
+
+275
+00:50:47,315 --> 00:50:53,796
+Yanlışlarını görüyor, doğrularını görüyor, doğrularını pekiştiriyor, yanlışlarını azaltmaya çalışıyor.
+
+276
+00:50:53,796 --> 00:51:05,156
+Aslında bir Python basit bir kodu var. Rastgele bir neural network başlatmış. Oyundan bir örnekler topluyor.
+
+277
+00:51:05,155 --> 00:51:15,055
+bir neural network eğitiyor. Sonra bunu mevcuttakinden iyiyse kullanıyor. Daha kötüyse kullanmıyor.
+
+278
+00:51:15,055 --> 00:51:21,955
+Ve o kötüdeki hatalarını buluyor. Ve ortamdan ödül bilgisi almayı sağlayan bir şey.
+
+279
+00:51:21,955 --> 00:51:25,616
+Yani tamamen reinforcement. Ama burada insan etiketlemesi yok.
+
+280
+00:51:25,616 --> 00:51:46,116
+bunu defalarca yaptığı için artık işin sonunda satranç gibi, dama gibi veya işte bu tarz oyunlarında insana gerek kalmadan bir feedback alarak ve ileride de bunu sınıflandırmayla beraber hibrit kullanarak çok başarılı sonuçlar elde ediyor.
+
+281
+00:51:46,116 --> 00:52:15,635
+Şimdi aslında burada alpha-beta şöyle bir şey var oyunun iki tane program diyelim iki programda birbirinin aynısı birbiriyle oyun oynuyor kazanan politika korunuyor polisi kazanıyorsa koruyoruz ortamdan ödül alarak mesela bu satranç go oyunları gibi şeyler bir diğeri ortamdan ödül alarak yapılan şeyler oyun skoru hayatta kalma gibi
+
+282
+00:52:15,635 --> 00:52:45,616
+bir şey, sinyaller üretilerek yapılan bir şey. Atari, Mario gibi simülasyon. Bir de başka bir modelden veri veya ödül alarak öğrenen bir şey. Bu da zaten reinforcement learning, human feedback dediğimiz bunun temelini gösteren bir şey. Alpha-0'da şöyle bir şey var. İşte A ajanımız var, B ajanımız var. A ajanında mevcut politika olsun, B'de de eski politikamız olsun. Sonuç kazandıysak, hani A ajanı kazandıysak,
+
+283
+00:52:45,635 --> 00:52:54,515
+mevcut politikayı tutuyoruz. B kazandıysa eski politikayı şey yapıyoruz ve bu şekilde politikayı sürekli
+
+284
+00:52:54,515 --> 00:53:04,875
+polisi iyileştirerek işe devam ediyoruz. Şimdi chat-ship-itli bu nedenle aslında sadece bir dil modeli değil yani
+
+285
+00:53:04,875 --> 00:53:10,895
+siz bir şey sorduğunuzda arkada sadece bir tahmin gerçekleştirme bir anlamda polisinin güncellenmesi
+
+286
+00:53:10,895 --> 00:53:17,895
+ve bir şekilde insanın istediği gibi cevap vermeyi öğreniyor. Bunu geçen hafta anlattım ama bu hafta tekrar edeceğim.
+
+287
+00:53:17,895 --> 00:53:25,895
+Ama burada ödülü veren bir insan etkisi büyük oranda değil. İnsanın başta bir etkisi var.
+
+288
+00:53:25,895 --> 00:53:32,895
+Yani insandan etiketleme ile ödül etiketlemesi yapılmış ama günü sonra bunun ölçeyi daha genelleştirilmiş.
+
+289
+00:53:32,895 --> 00:54:02,875
+bir kere supervised bir fine tuning aşamamız var. İnsanlar örnek konuşmalar yazıyor ve model bunları taklit ederek bir denetimde öğrenme yapılıyor. Bu başlangıçta küçük bir ölçekli veri de yapılabilir. Ha küçük ölçekten kastım üç bin tane beş bin tane veri değil de belki yüz bin tane girdi çıktı düşünün metin bazında. Bunun ucuna bunun sonrasına bu sizin ödev ikide yaptığınız şekilde birden fazla cevap verilmiş.
+
+290
+00:54:02,895 --> 00:54:15,616
+cevap verilecek ve insan en iyisini seçecek. Örneğin bir sorumuz var, model beş tane cevap verdi, en iyisini seçiyoruz. İşte bir mi, iki mi, üç mi, dört mi? Bu ödül modeli sıralamayı öğrenmeye çalışıyor.
+
+291
+00:54:16,820 --> 00:54:26,820
+bu mesela PPO'da ChatGPT'nin kendi algoritması dil modeli ödül modelini mümennü edecek şekilde cevaplar üretmeyi öğreniyor.
+
+292
+00:54:26,820 --> 00:54:39,820
+Yani bu ikisinin peşine PPO, GPT'yi sürekli güncelleyen ve insan etkisini artık dışarıya çıkartıp hem ödül modelini geliştiren hem de kendi servisive fine tuningi geliştiren bir arkada mekanizma.
+
+293
+00:54:39,820 --> 00:54:46,820
+Bunu neden öz denetimli sayıyoruz? Çünkü başta birazcık insan etkisi var.
+
+294
+00:54:46,820 --> 00:55:12,220
+ama bir müddet sonra insanı devre dışı bırakırız, tamamen makine kendi kendine öğrenme yapıyor. Şimdi şuraya geleceğiz ayrıca. Şunu geçen hafta anlattık. Önce bakın burada prompt var. Bu promptta insanların verdiği cevap var, etiketleyiciler var ve bir model eğitimi yapılmış.
+
+295
+00:55:12,219 --> 00:55:24,219
+ondan sonra bu modelden gelen cevapları, yeni cevapları ödülle, ödülle delecelendiren ayrı bir reward modelimiz var.
+
+296
+00:55:24,219 --> 00:55:33,820
+En sonunda da yeni durumların olduğu şey. Tabi şu 2 ve 3, step 2 ve 3 artık iteratif bir şekilde defalarca devam ediyor.
+
+297
+00:55:33,820 --> 00:55:39,820
+Aynısı bakın aslında şurada da var. Alfa-Ziro da sürekli bunu tekrar ediyor, defalarca tekrar ediyor.
+
+298
+00:55:39,820 --> 00:55:51,820
+ve sürekli bu politika iyileştiriliyor, iyileştiriliyor, artık tamamen makinesal, makine üzerinden gideceği için yani bunu bir insanın ötesine geçecek şekilde çok iyi bir noktaya getirebiliyorsunuz.
+
+299
+00:55:51,820 --> 00:56:04,820
+Evet, Self-Service Learning'in farklı uygulamaları bunlar. Şimdi üretici aşamada baktığımızda, hani şu ana kadar anlattıklarımızı biraz da böyle hani isimler üzerinde bakacak olursak,
+
+300
+00:56:04,820 --> 00:56:16,299
+otokoderlar, varia sınıf otokoderlar, difüzyon ve GAN, üretici modeller altında söylenebilecek örnekler.
+
+301
+00:56:17,099 --> 00:56:26,120
+Tamamlayıcı modellerimiz var. İşte GPT, BERT, BERT, BERT, ELECTRA. Karşısal modeller var. Bunları mesela inceleyebilirsiniz.
+
+302
+00:56:26,120 --> 00:56:33,320
+bu modelimiz, simsiyalar, Moco, Aspect, Clip, Reinforcement Learning'li modellerimiz var.
+
+303
+00:56:33,320 --> 00:56:38,120
+Bu GPT'nin kendisi orta modülü, TRL, AlphaZero gibi şeyler.
+
+304
+00:56:38,120 --> 00:56:44,120
+ChatGPT, mesela bunlardan GPT ve Reinforcement Learning'li ümuflitteki kullanıyor.
+
+305
+00:56:44,120 --> 00:56:47,120
+Google aramaları, Word'u kullanıyormuş.
+
+306
+00:56:47,120 --> 00:56:51,120
+Dali bu görüntü üzerindeydi, difüzyon artı Clip kullanıyormuş.
+
+307
+00:56:51,120 --> 00:57:05,519
+yani şunlardan bakın ne yapıyor illa ki hani tek bir şeyi kullanmıyor bunların bir arada getirmiş, alpha-go kendi kendine oyun oynaymış, spotify önerileri karşısal modeller gibi gibi farklı güncel uygulamaları görebiliyoruz.
+
+308
+00:57:05,519 --> 00:57:11,519
+Şimdi mesela şu sorulara bire cevabınız ne olur?
+
+309
+00:57:11,519 --> 00:57:16,519
+Yazın bakalım A, B, C, D, E, G.
+
+310
+00:57:25,619 --> 00:57:27,619
+Birene dersiniz?
+
+311
+00:57:40,148 --> 00:57:58,207
+bir B. Evet, Bert iki yönlü kullanırken GPT soldan sağa ilerliyordu. Doğru. Bert daha büyüktür, daha küçüktür veya işte GPT görüntü, şunlar zaten şeyler. İkinci soru.
+
+312
+00:58:09,235 --> 00:58:14,515
+yine ne dersiniz? C diyenler var. Mouse orada olduğu için demeyin.
+
+313
+00:58:24,947 --> 00:58:32,947
+ikinci soruya C'lenmiş. Evet, bu difüzyonda eklenen gürültü öğreniyordunuz, sonra onu geri açıyordunuz.
+
+314
+00:58:32,947 --> 00:58:38,947
+üçüncü soruda... dur, mouse'u bir şey yapmayalım.
+
+315
+00:58:56,884 --> 00:58:57,884
+temsilleri yani bu zor negatiflerde ne yapmamız gerekiyordu? ince detayları yakalayabilmek yani bu önemliydi. Yoksa hani böyle genel bir şey olmaması lazım. Bunlar şu ana kadar anlattıklarımdan böyle bir şey. Evet, self-supervised learning dediğim şey verinin parçasını gizleyip veya bozup onun tahmin etmesini yapacağımız şeyler. Yani bu autoencoder olarak tamamlayıcı model olarak karşı
+
+316
+00:59:26,884 --> 00:59:56,863
+olarak ve reinforcement learning olarak farklı şekillerde karşımıza geliyor. Şimdi 2017'de aslında bizim bu alanda hani bakın şu kronolojiye bakacak olursanız 2017 öncesi bir derin öğrenme furyası vardı bizim bu çalışmalarımızda. İşte özellikle CNN'ler, konvolüsyonel öğrenme networkler. Ama şu 2017'de çıkan okumanızı tavsiye ederim. Hani bu alanda çalışacaksanız ileride
+
+317
+00:59:56,884 --> 01:00:04,263
+artlı bir şekilde mühendislik alanının çeşitli alanlarında çalışacaksanız, attention is all you need.
+
+318
+01:00:04,964 --> 01:00:12,483
+Hani bu aslında şunu söylüyor, bizim şu ana kadar yaptığımız çalışmalarımız, makine öğrenmesi çalışmalarımız bir yere kadar geliyor, bir yerde tıkanıp kalıyor.
+
+319
+01:00:13,343 --> 01:00:20,884
+Başarılar, diğerine göre, ne bileyim, bir bioinformatik datası, %65'lerde literatür başarısı var, ne bileyim, %70 yapamıyorsun.
+
+320
+01:00:20,884 --> 01:00:27,884
+veya %98'lerde hyperspektral görüntü işleme başarısı var. %99 %100 yapamıyorsun.
+
+321
+01:00:27,884 --> 01:00:41,884
+İşte bu attention mekanizmasının bizim ihtiyacımızı görecek bir şey olduğu, transformer yapısı ve sonra bunun üzerine kurulan diğer şeyler, şu okumaları size tavsiye ederim. Daha sonra bunu size paylaşacağım arkadaşlar.
+
+322
+01:00:41,884 --> 01:00:55,884
+Self-Starwise Learning bu şekildeydi. Şimdi bir ara verelim. 35 keşe ikinci konumuz olan üretici modeller ve işte RAK dediğimiz kısma bakacağız. 35 keşe görüşürüz.
+
+323
+01:12:07,220 --> 01:12:09,220
+arkadaşlar, devam edelim.
+
+324
+01:12:12,979 --> 01:12:35,979
+Şimdi bu üretici modeller konusu. Üretici modellerin yaptığı şey aslında sizin mevcut verilerinizin karakteristiğinden yola çıkarak yeni veriler ürettirebiliyorsunuz veya işte sorduğunuz soruya bir cevap, bu cevap işte görüntü olabilir, ses olabilir veya başka şeyler olabilir ürettirebiliyorsunuz.
+
+325
+01:12:35,979 --> 01:13:05,079
+Şimdi nasıl üretelim ve ne üretelim konusu üzerinde tam üreteceğimiz şeyler az çok belli de üretim şu şekilde olabilir. Şu ana kadar etiketli veya etiketsiz verilerimiz var. Bu verilere dağılım biliniyorsa verilerin nasıl bir karakteristiğe sahip olduğu dağılımdan kastımız da aslında ortalama standart satmak veya varyans dediğimiz şeyler.
+
+326
+01:13:05,979 --> 01:13:17,380
+örneğin şu aralıkta mevcut verilerimiz var buradaki dağılıma bakarak bir şekilde veri ürettirebilirsiniz buradaki veriyi arttırabilirsiniz
+
+327
+01:13:17,380 --> 01:13:24,219
+bakın şurada varyansın biraz daha hem x ekseninde hem y ekseninde değiştiğinde
+
+328
+01:13:24,219 --> 01:13:31,380
+şurada sadece x de değişimin olduğunu hani y şu ekseninde biraz daha az olduğunu görüyoruz
+
+329
+01:13:31,380 --> 01:13:39,860
+dağılım eğer biliniyorsa o dağılım içerisinden yeni örnekler intertolaklığının yapılabilir, ürettirilebilir.
+
+330
+01:13:39,860 --> 01:13:45,939
+Normal dağılım üzerinde örneklerimiz normal dağılımdan kastımda aslında Gauss eğrisi.
+
+331
+01:13:45,939 --> 01:13:48,500
+Gözüyorsunuz Gauss eğrisi şöyle bir şey.
+
+332
+01:13:48,500 --> 01:13:53,860
+Burada şurası sizin ortalamanızı mümkün ifade ediyor.
+
+333
+01:13:53,860 --> 01:13:57,060
+Tabi iki boyutlu olursa iki boyutlu Gauss düşüneceksiniz.
+
+334
+01:13:57,060 --> 01:13:59,060
+Hani şu an onu çizmem mümkün değil.
+
+335
+01:13:59,059 --> 01:14:08,059
+bu ortalamanın %65'lik veya %67'lik kadar açıklığını, şu sigma dediğimiz standart satma belirliyor.
+
+336
+01:14:08,059 --> 01:14:22,059
+Yani biberinin büyük bir oranı şeydir. Mesela bir toplumda insanların boy şeyi, mesela sadece Türkiye'ye dikkat alalım, belki bazı ülkelerde boylar daha uzun, o farklılık gösterebilir.
+
+337
+01:14:22,060 --> 01:14:49,220
+Türkiye toplumunda insanların ortalama boyu 1.70 ve bu standart sapması işte ne olsun 5 olsun. Dolayısıyla toplumun %67 veya %70 kadar diyelim, 165 ile 175 arasında değişkenlik gösterecektir yorumunu yaparız kaosla.
+
+338
+01:14:49,219 --> 01:15:17,399
+kabaca hani örnekler tabii sayısal örnekler sadece aklımdan şu an uydurduğum şeyler. Bu bize dağılımın geneli hakkında şey veriyor. Şimdi şöyle bir veriye baktığınızda birçok veri hani şu uçtaki veri şey yapalım şu aralıkta toplanmış veya burada da şurada toplanmış. Bizim hedefimiz şuradaki şeyden yani şu iki parametreden yola çıkarak yeni veriler üretmek olabilir.
+
+339
+01:15:19,219 --> 01:15:33,219
+Bu üretilecek şey dediğim gibi illa buradaki bir nokta değil bir sürü farklı veri türlü olabilir. Dağılımını biliyorsak bu başarılı olabilir ama dağılımını bilmiyoruz.
+
+340
+01:15:33,219 --> 01:15:45,219
+Bu şekilde işte otokodlayıcılarla kendimiz üretelim veya karşılığını üretelim. Örnek, sınıf, sayı, soru, cevap, metin, özet, metin, soru ürettirelim.
+
+341
+01:15:45,219 --> 01:15:56,719
+Ne yapıyoruz? Otokodlayıcılarla, az önce de konuştuk, bir encoder'ımız var, bir decoder'ımız var, arada bir latent space diye bir şey olacak ve bir üretim yapacağız.
+
+342
+01:15:56,719 --> 01:16:05,719
+Ürettiğimiz şey ilk baştaki girdi ile çıktı, birbirine ne kadar yakınsa o kadar başarılı sonuçlar vereceğiz.
+
+343
+01:16:05,719 --> 01:16:09,719
+Mesela örneğe benzer örnekler üretmek.
+
+344
+01:16:12,340 --> 01:16:19,340
+yani ne bileyim görüntü var kediye benzeyen kedi üret, köpeğe benzeyen köpek köpek üret gibi gibi şeyler.
+
+345
+01:16:19,340 --> 01:16:28,340
+Tabi bu bir yerden sonra şey de çok önemli arkadaşlar, veri sayısının algı olduğu problemler de çok çok önemli bir şey.
+
+346
+01:16:28,340 --> 01:16:35,340
+Yani yeterince elinizde müzik yok, bu mevcut verilerinden o müzikleri arttırabiliyorsunuz.
+
+347
+01:16:35,340 --> 01:16:37,340
+Tabi bu nasıl bir şey?
+
+348
+01:16:37,340 --> 01:17:01,939
+aslında sıkıştırma K çarpı K boyuttaki örnekleri K'dan çok çok küçük olacak şekilde hani bunu bir vektör gibi düşünürsek D çünkü K çarpı K hani böyle bir görüntü düşündüğünüzde K tane satırınız, K tane sütürünüz var burada K tane K boyutta örneğiniz var demektir her bir örneğiniz için bunu K çarpı K'dan çok çok küçük olacak D'ye indirilmek.
+
+349
+01:17:01,939 --> 01:17:07,699
+Şimdi ben az önce yazdırdığımız kodu çalıştırdım, birazdan onun çiftçisini gösterdim.
+
+350
+01:17:08,899 --> 01:17:13,939
+Fakat bu otokodlayıcıların dedik ki biraz önce sabit bir noktaya karşılık geliyor.
+
+351
+01:17:13,939 --> 01:17:22,579
+Bunu bir noktalar hükmesi veya bir bölgeye karşılaşacak şekilde varyasyonel otokodlayıcılarla oluyor.
+
+352
+01:17:22,979 --> 01:17:31,459
+Ve bu aslında temsil uzayınızı bir dağılıma sahip olacak şekilde düzenletmektedir.
+
+353
+01:17:31,939 --> 01:17:40,619
+ve bu sayede de gürültüden yeni örnekler üretebiliyoruz. Şu zaten az önce konuştuğumuz şeyin aynısıydı.
+
+354
+01:17:40,619 --> 01:17:48,659
+Örneğin bir uygulama baktığımızda mesela şurada doğrudan hani bir Deep Learning'de Matlab üzerinde bunun örneği var.
+
+355
+01:17:48,659 --> 01:17:57,299
+20 boyutlu uzayda çalışıyorsunuz. Sol tarafta bir test örneğimiz var. Sağ tarafta bunun dağılımından üretilmiş örnekleri görüyorsunuz.
+
+356
+01:17:57,299 --> 01:18:11,299
+fena değil bakın aslında. Şuradaki sıfırlara benzeyen sıfırlar var, dokuzlarda var. Bazen şunlarda birazcık soru işareti güzel, iyi bir üretim olmuş.
+
+357
+01:18:11,299 --> 01:18:21,299
+Örnekler arası interpolasyonla üretilmiş örnek. Mesela birden dokuza kadar bütün örneklerimiz bunlar interpolasyon yaparak üretimi yaptırabiliyorsanız.
+
+358
+01:18:21,299 --> 01:18:32,299
+şu da başlangıçta kedi olan ve kediden zürafa ürettirilebilen bir interpolasyon yaklaşımına yapılan bir şey. Bu da bir makale çalışması ürün.
+
+359
+01:18:32,299 --> 01:18:36,299
+Varyasını otokodlayıcılar.
+
+360
+01:18:36,299 --> 01:18:39,299
+Şimdi şöyle ilerleyelim.
+
+361
+01:18:41,299 --> 01:18:46,299
+Mesela günümüzün görüntü üreten işte Dali, Mid Journey gibi modelleri var.
+
+362
+01:18:46,299 --> 01:18:56,299
+metin üreten GPT-4, Lama, Gemini işte bir sürü şey var aslında bunları yani artık sayısını bile bilmiyoruz neredeyse.
+
+363
+01:18:56,299 --> 01:19:01,299
+Ses üretenler var, video üretenler var bu son anki bir şeyler.
+
+364
+01:19:01,299 --> 01:19:12,299
+Bir de bunların çoklu model olanı mesela metinden görüntü veya görüntüden metin, metinden ses, sesten metin, görüntüden metinden sonra video.
+
+365
+01:19:12,299 --> 01:19:16,419
+görüntü ve metin veriyorsunuz onu video haline getirtiyorsunuz sonra gibi modellerle.
+
+366
+01:19:18,179 --> 01:19:29,059
+Koşullu koşullu üretim yaptırabiliyorsunuz rastgele bir yüz üret veya şöyle bir yüz üret dediğimizde işte önce bir koşul ve bundan sonra diğer şeyler ürettirilebiliyor.
+
+367
+01:19:30,219 --> 01:19:37,779
+Nasıl üretileceği işte dağılım biliniyorsa kolay olan kısım bunu söyledik şey autoencoderler ama
+
+368
+01:19:37,780 --> 01:20:03,780
+dağılım bilinmiyorsa işte varyasyonel autoencoder'lar falan kullanılıyor. Yani bunların hepsinde algoritmaları var ama algoritmaları çok matematikler şey içerse de kodlaması kolay açıkçası. Neden kolay? Şimdi birazdan kodu göstereceğiz. Yani iki üç tane satır bir şey yazıyorsun. Hani bu arkadaki zaten matematiksel işlemler kendi kendine, kendi kendine derken hazır fonksiyonlar yoluyla oluyor.
+
+369
+01:20:03,780 --> 01:20:07,780
+şimdi şuraya ayrıca geleceğiz
+
+370
+01:20:08,916 --> 01:20:33,916
+GAN dediğimiz bir adversarial, generative adversarial training. Aslında iki modelin etkileşimiyle bir üreten model var. İkinci modelde bu birinci modelin ürettiği çıktının gerçek bir üretim olduğunu tahmin eden bir başka model var. İkinci modelin başarısızlığı birinci modelin başarısızlığı. Bak bu güzel bir şey.
+
+371
+01:20:33,916 --> 01:20:56,916
+yani bir model, ikinci model, birinci modelin ne kadar gerçekçi olduğunu veya sahte ürettiğini tahmin edemiyorsa, gerçeğinden ayırt edemiyorsa ne yapıyorsunuz? Birinci modeliniz, ürettiğiniz o kadar başarılıdır. Yani bu aslında adversarial dediğimiz çekişmeli veya rekabetli training dediğimiz şey.
+
+372
+01:20:56,916 --> 01:20:58,916
+İki model şey
+
+373
+01:20:58,916 --> 01:21:06,916
+Tabi burada birinci model kendini eğitiyor da ikinci modelin de ne yapması lazım? Hani bu rekabetten geri kalmaması lazım. İkinci modelin de eğitilmesi gerekiyor.
+
+374
+01:21:06,916 --> 01:21:16,916
+İşte bir generator modelimiz, bizim bir fake imajımız var. Bir de hala hazırda gerçek verilerimiz var, etiketli verilerimiz var.
+
+375
+01:21:16,916 --> 01:21:20,916
+Discriminator model bunun fake veya real olduğunu tahmin edecek.
+
+376
+01:21:20,916 --> 01:21:48,195
+ve bu pek ve real tahminlerinde sürekli modeller kendilerini güncelleyecekler. İnsan etkisi olmadan bu bir yerden sonra yapılıyor ve veri üretimi aşamasında güzel şeyler elde ediliyor. Şu difüzyon modeli konuştuk. Yani buradaki her bir kaynak gidip okunulması ve içinden güzel bakış açıları edinilmesi gereken şeyler.
+
+377
+01:21:48,195 --> 01:21:54,015
+her ne kadar biz sınavda buradaki kaynakların içerisindeki kıyıda köyde kalmış şeyleri sormayacak olsak da
+
+378
+01:21:54,015 --> 01:21:59,015
+yani mühendis adayı birisi için de sadece olay sınavdan ibaret değil.
+
+379
+01:21:59,115 --> 01:22:01,235
+Onun için bunları incelemenizi tavsiye ediyorum.
+
+380
+01:22:02,416 --> 01:22:05,356
+Özellikle daha proje falan yapmamış arkadaşlar için bu önemli.
+
+381
+01:22:06,356 --> 01:22:13,615
+Koşullu üretim dediğimiz şey mesela öyle bir şey söylüyorsunuz ki ben şunu mesela onu çekip bir de bazen test ediyorum.
+
+382
+01:22:13,615 --> 01:22:22,555
+işte diyorum ki bana şöyle bir metin yaz ama bu metni bir proje hakemi üslubuyla yaz.
+
+383
+01:22:23,475 --> 01:22:27,235
+Burada da demiş ki işte Ahmet Hamdi Tanbinar üslubunda yaz.
+
+384
+01:22:27,235 --> 01:22:42,455
+Yani nedir bu onun bütün eserlerini alıp oradaki dili kullanma, kullandığı kelimeler, kalıplar veya işte ne bileyim edebi unsurlar açısından bir şey öğreniyor.
+
+385
+01:22:42,455 --> 01:22:52,455
+sonra bunun üslubunda bir şeyler yazmaya çalışıyor ve ekipler arası dönüşüm koşulu üretimde yapabiliyoruz. Metninden resme resimden falan şeyler yapılabiliyor.
+
+386
+01:22:52,455 --> 01:22:59,455
+Peki, şuradan devam edelim.
+
+387
+01:22:59,455 --> 01:23:08,455
+İşte difizyon modeli zaten söyledik, temizden gürültüye gidiyorduk. Az öncekiyle aynı şeyler tekrar edebilir.
+
+388
+01:23:08,455 --> 01:23:17,855
+sadece tekrar bir bakış açısı kazanalım diye koyduk. Daha sonra temize tekrardan gitmeye çalışıyoruz, öğrenmeye çalışıyoruz.
+
+389
+01:23:17,855 --> 01:23:28,055
+Koşullu üretim dediğimiz şey, burada bazıları tamam aynı. Mesela Whisper modeli ses veriyorsunuz, o sesi size metne dönüştürebiliyor.
+
+390
+01:23:28,055 --> 01:23:33,255
+Metinden kod mesela, işte GitHub'ın co-plotu gibi şeyler var.
+
+391
+01:23:33,255 --> 01:23:45,335
+Transformer mimarisi özellikle şu RNN'le beraber hani RNN'den sonraki gelen bir şey şu makaleyle beraber hayatımıza geldi.
+
+392
+01:23:46,335 --> 01:24:01,996
+Mesela şimdi bankaya gittim orada para yatırdım. Burada orada kelimesini anlamak için hani bunu gizlemiş olsak ve size böyle bir şey vermiş olsak bunun bankada olduğunu yani bunun buna referans verdiğini anırız.
+
+393
+01:24:01,996 --> 01:24:08,395
+bu Transformer'lar içerisindeki dikkat mekanizması bu oradanın neye
+
+394
+01:24:09,108 --> 01:24:37,108
+fokuslanması gerektiğini size buluyor, tespit ediyor. Her kelime cümledeki diğer hangi kelimede dikkat etmesi gerektiğini öğreniyor. Bakın her kelime için. Hani gittim, bu gittim derken acaba bu nereye gittim, nasıl gittim hani 5N, 1K gibi vardır ya, bu diğer unsurlarla onun ilişkisine bakıyor. Onun için bu attention mekanizması güzel, başarılı bir yöntem.
+
+395
+01:24:37,108 --> 01:24:52,488
+tabii ne yapıyor? Önce kelimelerinizi alıyorsunuz vektörlere dönüştürüyorsunuz. Yani böyle bir şey verildiğinde kelime bazı çalıştığımızda düşünelim kelimelerden vektörlere. Sonra bu vektörlerin pozisyon bilgisini yani kelimelerin pozisyon bilgisini kaybetmiyorsunuz.
+
+396
+01:24:52,487 --> 01:24:59,307
+normal klasik metin işlemelerde ilk başlarda yapılan şey kelimeleri doğrudan vektör yapmak.
+
+397
+01:24:59,307 --> 01:25:08,727
+Ama bu kelimenin ilk birinci cümle ögesi, ikinci cümle ögesi, üçüncü öge diye bu sıra kaybediliyorsa o zaman olay değişir.
+
+398
+01:25:09,727 --> 01:25:12,567
+Ve farklı bir anlam çıkartabilirsiniz.
+
+399
+01:25:13,127 --> 01:25:21,487
+İşte bu pozisyonal encoding bilgisi eklendikten sonra self-attention dediğim şey her token'ın diğerleri etkinleşmesini sağlıyorsun.
+
+400
+01:25:21,487 --> 01:25:49,167
+işte mesela bu, bununla, bu, bununla, bu, bununla. Tabi bu neyi beraberinde getiriyor? Çok kapsamlı, kocaman bir model oluşturuyor. Çünkü hem zaten vektörler var, bir de bu vektörlerin birbiriyle arasında ilişki var. Yani n tane kelimeniz varsa, hani n çarpı n-1 tane, hani bölü ikisini de belki eklersek n çarpı n-1 yani n kare kadar karmaşıklık içeren bir işlem yapılıyor.
+
+401
+01:25:49,167 --> 01:25:50,167
+sonra bunlar aslında bir tek başına şey token başına dönüşüm, pit forward dönüşüm sonra işte stabilizasyon eğitim falan var yani bunlar çok çok daha detaylı aşamalar bir kısmını ben mesela doğal dilci olmadığım için detaylarını yani teknik olarak bilmiyorum sadece hani ne yaptığını biliyorum da ben şahsi olarak nasıl yaptığını bilmiyorum mesela şu residual model şeylerini falan çok fazla detaylarını bilmem o konuda çalışmadığım için self-attention mekanizması burada işte bir basit öz dikkatli
+
+402
+01:26:19,167 --> 01:26:26,367
+dediğimiz bir şey var. Aslında arkada yaptığı şey her token'ın diğer token'a dot product yaparak benzerliğine bakılıyor.
+
+403
+01:26:26,367 --> 01:26:34,167
+Yani vektörel olarak çarpım yaparsak yapıyorsunuz. İşte küveri, anahtar, değeri, sorgusu yapılıyor esnek bir şekilde.
+
+404
+01:26:34,408 --> 01:26:45,908
+Her token üç farklı rolde olacak. Bu sayede işte neyi arıyorum, benim içimde ne var, bulunursam ne vereyim?
+
+405
+01:26:45,908 --> 01:26:50,587
+dönüş olarak ne vereyim? Üstelik kütüphanede arama gibi bir şey yapıyorsunuz aslında.
+
+406
+01:26:51,908 --> 01:26:56,508
+Farklı farklı arama şeyleri var bu mekanizmayı kurduktan sonra
+
+407
+01:26:58,108 --> 01:27:07,307
+şu otoregressive gelmeden, heh şurada, şimdi büyük dil modelleri elelenler token tahminiyle eğitilirken
+
+408
+01:27:08,508 --> 01:27:12,507
+günümüzdeki otoregressive modeller standart hale gelmiş.
+
+409
+01:27:12,507 --> 01:27:19,627
+yeni görevlere çok çok da kolay uyumsadı. Yani bir sonrakini tahmin etmeye duyarlı şeyler.
+
+410
+01:27:21,507 --> 01:27:32,467
+Elelemler burada sıfır hataya erişebilirler mi diye bir soru var. Yani bunun vektör temsilleri nasıl olacak? Bunlar hep hala üzerinde çalışılan şeyler.
+
+411
+01:27:32,468 --> 01:27:44,087
+bir üretim yaparken işte bir varmışı söylediğinizde LLM size bir yokmuş falan filan böyle üretimler yapabiliyor.
+
+412
+01:27:45,087 --> 01:27:47,947
+Transformer'a geçiyorum. Basit öz dikkat.
+
+413
+01:27:48,947 --> 01:27:52,747
+Tabi şurada basit öz dikkat mekanizmasını az önce şurada gösterdim.
+
+414
+01:27:52,747 --> 01:27:58,488
+O aşamaları biraz daha sembolize edilmiş. Şuradan daha detaylı bakabilirsiniz.
+
+415
+01:27:58,487 --> 01:28:06,487
+girdiniz var. Bu girdiğinizin sıraları unutmayacaksınız. Sonra bunların birbiriyle olan benzerliklerine DAT PRODUCT'la bakıyorsunuz.
+
+416
+01:28:07,028 --> 01:28:11,207
+sonra bunlar normalize ediyor. Soft-Mack dediğimiz bir fonksiyondan geçiriliyor.
+
+417
+01:28:11,207 --> 01:28:21,207
+ve bunun içerik farkında olan embedding vektörleri, embedding vektörleri de aslında bir anlamda feature extraction'da elde edilmiş vektörler oluyor.
+
+418
+01:28:23,708 --> 01:28:27,708
+bir de bunların esnek self-attention mekanizmaları var.
+
+419
+01:28:27,708 --> 01:28:31,307
+yani bunları okumanızı tavsiye ederim arkadaşlar.
+
+420
+01:28:31,307 --> 01:28:39,307
+tekniklerine, matematiğine girmenize gerek yok ama kabaca ne yapıyor bunu bilmek yeterli.
+
+421
+01:28:39,307 --> 01:28:53,307
+Mesela ilk GPT, chat GPT'nin atası diyebileceğimiz bir şey, girdiniz var, bu bir metin, bunun embeddinglerini yani feature extraction halini düşünün,
+
+422
+01:28:53,307 --> 01:29:00,307
+sonra buna pozisyonel encoding ekleyip işte dropout dediğimiz bazı nöronları yok eden şeyler, inaktif yapan şeyler,
+
+423
+01:29:00,307 --> 01:29:03,307
+sonra en sonunda buna çıktı üretiyorsunuz.
+
+424
+01:29:03,307 --> 01:29:13,307
+Şu transformer bloklarının her birisi de kendi içinde bu matriz multiplication yani matriz çarpımı,
+
+425
+01:29:13,307 --> 01:29:17,307
+sonra bunların maskelenmesi aslında bir anlamda belli kısımlarının kapatılması,
+
+426
+01:29:17,307 --> 01:29:22,307
+sonra aktivasyon top max fonksiyonu, sonra drop out, sonra matriz multiplication,
+
+427
+01:29:22,307 --> 01:29:29,307
+bu böyle kendi içinde farklı bloklar içeren ve kendisi işte bir öncekiyle bir sonrakileri
+
+428
+01:29:29,307 --> 01:29:36,307
+ve sonrakileri bir araya getiren bir blok. Transformer bloğu diyoruz. Çok detaylı şeyler, matematik olarak da detaylı.
+
+429
+01:29:36,307 --> 01:29:46,307
+Ne yaptığıyla alakalı, nasıl yaptığıyla alakalı şeyler de detaylı. Bu GPT'nin bir yaklaşımı ilk çıktığı zamanlardaki şey.
+
+430
+01:29:46,307 --> 01:29:54,907
+şunlarda şey var şimdi şu x-chat'a kadar şuradan bir şeyler göstereceğim
+
+431
+01:29:59,028 --> 01:30:13,028
+ve en sonunda yani bu GPT-4 işte şu kadar parametreye kadar gelmiş bu kadar yani farklı aslında parametre değerini içerecek şekilde bir eğitim gerçekleştirmiş.
+
+432
+01:30:13,028 --> 01:30:24,028
+Bu işleri yaparken de bu modeller dilin, dilin mantığını, gerçeklerini, matematiğini öğrenmek zorunda.
+
+433
+01:30:24,028 --> 01:30:48,407
+tabi bu şeyin dışında bazı öğrenme yaklaşımları da hani burada devreye girdi. Örneğin elimizde biraz önce dedik ya işte Reinforced Learning Human Feedback'te şu kadar veri var işte 100.000 veri var bu 100.000 veriyle başta bir şeyler eğitelim sonra gerisini otomatize edelim.
+
+434
+01:30:48,407 --> 01:30:55,647
+bunun da üstesinden gelip zero shot, one shot ve few shot gibi learning yöntemleri önerilmiş.
+
+435
+01:30:56,747 --> 01:31:02,567
+Tabi burada sudan buza beklenmeyen faz geçişi dediğimiz şeyden esinlenerek bir şey var aslında.
+
+436
+01:31:02,567 --> 01:31:08,707
+Bu fiziki olaylardan bakarak insanlar farklı farklı yaklaşımlar ortaya atıyorlar.
+
+437
+01:31:10,267 --> 01:31:14,087
+Sıcaklık çok az düştü, bir anda davranış tamamen değişti.
+
+438
+01:31:14,087 --> 01:31:20,767
+bu büyük dil modelleri de belli bir ölçeyi geçince acayip yepyeni kabiliyetler ortaya çıkarıyor.
+
+439
+01:31:20,767 --> 01:31:30,287
+Yani siz bir şekilde altyapıyı kuruyorsunuz ve o altyapıya küçük bir dokunuş yaparak kod yazma, mantık üretme gibi şeyler.
+
+440
+01:31:30,407 --> 01:31:34,667
+Hiç örnek olmadan bunlara X-Shot Learning deniyor.
+
+441
+01:31:35,827 --> 01:31:40,927
+Bir şey yapma. Diyorsunuz İngilizce'den Türkçe'ye çevir. İşte cheesy painl diye çevireceksin.
+
+442
+01:31:40,928 --> 01:31:51,928
+one-shot learning'te tek bir örnek kullanıyorsunuz. Bu tek bir örnekte de işte şunu şuna çevir gibi team-shot learning'te de birkaç örnekle eğitim yapıyorsunuz.
+
+443
+01:31:51,928 --> 01:32:03,928
+Geleneksel makine öğrenmesi her görev için yeni yani supervised learning için düşünelim işte OCR sınıflandıracaksın bir tane model.
+
+444
+01:32:03,927 --> 01:32:13,927
+ne bileyim mail sınıflandıracaksın başka bir model ama LLM size prompt ile yeni görevleri anında yapabiliyor, gerçekleştirebiliyor, bunları iyileştirebiliyor.
+
+445
+01:32:13,927 --> 01:32:19,927
+Herhangi bir gradient descent gibi update işlemleri yok. Birkaç promptta sonuçları gösteriyor.
+
+446
+01:32:19,927 --> 01:32:26,927
+Sadece bu ölçek arttıkça kabiliyetler artır ama doğrusal artmıyor tabii ki.
+
+447
+01:32:26,927 --> 01:32:37,927
+bu GPT-3'te mesela matematiksel olarak zayıfken GPT-4'te güçlüymüş. Yani ne yapmışlar, ne azı yapmışlar bunu tam bilmiyoruz.
+
+448
+01:32:37,927 --> 01:32:42,927
+Şunu zaten anlattım, bunları tekrardan anlatmayacağım.
+
+449
+01:32:42,927 --> 01:32:55,927
+Şimdi bu RAC'a gelmeden, oraya da ayrıca bakalım. X-Shot, RAC'la alakalı şeyler, şunları geçebiliriz.
+
+450
+01:33:00,020 --> 01:33:09,299
+mesela çoktan seçmeli sorular içeren veri hükmelerinde x-shot. Her cevabın ürettilme olasılık, en yüksek olasılık, olasılık seçilir.
+
+451
+01:33:09,299 --> 01:33:19,899
+What blocks, sunshine dediğinizde işte summer, park, desktop, sea, moon bunları veriyorsunuz. İşte QS için burada sunshine oluyor.
+
+452
+01:33:19,899 --> 01:33:41,979
+bunun aslında bir şeyi var. Olasılıksal değeri var. İşte öksürdüm diyor, işte sigara içtim veya işte şunu yaptım, işte sesim kısıldı falan diyor. Öksürdüm çünkü işte bunlardan hangisinin üreteceğinin olasılıkları var. En yükseği alınıyor. Bu X-Chat Learning'in bir uygulaması.
+
+453
+01:33:41,979 --> 01:34:02,219
+InstructGPT de bu Reinforcement Learning Human Feedback'in aslında ChatGPT'nin atası gerçekten bu diyebiliriz bakın şurada makalesi de var. Bunu zaten anlattım yani hep aynı şeyler tekrar ediyor ama önemine bile birazcık da böyle tekrar ettiriyoruz.
+
+454
+01:34:02,219 --> 01:34:10,339
+Önce birinci model eğiticili öğrenme, sonra ödül öğrenmesi, sonra işte bu ikisinin tekrar etmesi
+
+455
+01:34:10,339 --> 01:34:16,499
+Yani veri kümesine giriş var, buradan bir çıkış var, daha sonra bu çıkışı ödüle sunuyoruz
+
+456
+01:34:16,499 --> 01:34:21,899
+Ödülün güncellenmesini istiyoruz, model 1'i model 2'nin ödül tahminini kullanarak
+
+457
+01:34:21,899 --> 01:34:26,559
+Reinforcement Learning'e eğit, sonra 2'ye dönem, yani şu adım şöyle dolaşacak
+
+458
+01:34:26,559 --> 01:34:29,919
+Onun da görselliği şuradaydı, şununla şunun arasındaki şey
+
+459
+01:34:29,920 --> 01:34:37,920
+tabi şu anki chat GPT bunu kullanmıyor muhtemelen çünkü daha farklı bir şey kullanıyorlar.
+
+460
+01:34:37,920 --> 01:34:41,920
+Hani yayınladıklarına göre mevcut olanı çok şey değil.
+
+461
+01:34:41,920 --> 01:34:49,920
+Dil modellerinin bazı fanytın şeyleri var, bazı veri kümeleri var, bunları geçiyorum arkadaşlar.
+
+462
+01:34:49,920 --> 01:34:54,920
+Dil modellerini taklit eden modeller var.
+
+463
+01:34:54,919 --> 01:35:23,039
+sizin dil modeliniz şu kadar parametre kullanıyorsa bunu taklit eden bir başka modelle şey hatta ben birkaç gün önce bir yerde gördüm onu da size paylaşacağım çok büyük bir dil modelini 16 MB'e kadar indirgemişler, sıkıştırmışlar bir video da görmüştüm de onu size paylaşacağım onları da taklit eden modeller var bunlar da farklı şeyler bunları okuyabilirsiniz
+
+464
+01:35:24,919 --> 01:35:47,919
+Şimdi, şimdi rock diye bir kavram ve pintuinik var. Dil modellerinin kendi içinde bir açması var arkadaşlar. Siz bir dil modeline bir soru sorduğunuzda size bir tane ciddi cevap verebiliyorum. Bu cevabın yanlış olduğunu göreniniz var mı aranızda?
+
+465
+01:35:47,919 --> 01:35:51,459
+Hocam ben şöyle bir soru sordum
+
+466
+01:35:51,459 --> 01:35:55,679
+Yanlış bir cevap aldım
+
+467
+01:35:55,679 --> 01:35:59,079
+İlla ki birileri vardır, var mı hiç tecrübe eden
+
+468
+01:35:59,079 --> 01:36:01,459
+Mesela şöyle bir soru sordum
+
+469
+01:36:01,459 --> 01:36:04,119
+Aklınızda varsa yazın veya söyleyin
+
+470
+01:36:04,119 --> 01:36:05,899
+Katkınız olsun
+
+471
+01:36:11,731 --> 01:36:19,231
+yok mu hep doğru cevap mı alınız? Veya aldığınız cevabın doğru olduğuna kanaat getirip onu doğrudan, sorgulamadan kullandınız mı?
+
+472
+01:36:19,231 --> 01:36:32,731
+Kozmos elelem yanlış vermişti. Şimdi şey, neyse kayda giriyoruz ama. Tamam. Ne yanlış vermişti? Hatırlıyor musun?
+
+473
+01:36:43,347 --> 01:36:47,788
+şuradaki kosmos, şey, bitirilir farkı, yer çekimini dörde bölememişti.
+
+474
+01:36:47,788 --> 01:36:55,347
+veya mesela şey, Türkiye'nin başkenti Paris diye bir şey verse, yani herhangi bir dil modeli.
+
+475
+01:36:55,347 --> 01:37:03,347
+şimdi burada modelin yeni bilgi öğretme şeyi yok dil modellerinde.
+
+476
+01:37:03,347 --> 01:37:24,748
+dolayısıyla size bir halüsinasyon meydana getirebiliyor modelleri fine tune etme aşamasını ve bu hani ya bak o öyle değil aslı böyledir demek ki çok fazla zaman alan bir şey. Tekrar tekrar bütün süreci başa almanız gerekiyor.
+
+477
+01:37:24,747 --> 01:37:39,747
+aslında bunun sevgisel tarafı da şu birisi fine tuning sınava hazırlanır gibi yapmak öbürü de sınava kopya kağıdı ile girmek veya kitapla girmek.
+
+478
+01:37:39,747 --> 01:37:50,747
+Bir şeyi fine tune ederken sınava çalışarak yeterince soru çözülmek aslında bir anlamda onu ezberler gibi bir şey yapın tam ezberleme de değil de.
+
+479
+01:37:50,748 --> 01:37:59,748
+ama yanlış şeyi ezberlediniz veya bir şeyler dikkatinizden kaçtı veya soru hani ters kaşığı oldu yanlış cevap verebiliyorsunuz.
+
+480
+01:37:59,748 --> 01:38:09,748
+RAK dediğimiz Retrieval Augmented Generation'da bir kere anlık bilgiye erişim var, kaynak gösterebiliyor, hansizasyon azaltılıyor.
+
+481
+01:38:09,748 --> 01:38:14,748
+Bunu şöyle düşünün, biz bununla alakalı bir proje de yaptırmıştık geçen dönem.
+
+482
+01:38:14,748 --> 01:38:26,248
+mesela okulun bizim bölümün staj şeyi var, yönetmeliği var, bir de proje yönetmeliği var, bir de öğrenci işleriyle alakalı hani öğrenci genel yönetmeliğimiz var.
+
+483
+01:38:26,248 --> 01:38:33,748
+Şimdi biz öğrenci bir soruyu gitsin işte sekreterliğe sormadan önce bunu bir ara yüzünden, grafik ara yüzünden sorsun istiyoruz.
+
+484
+01:38:33,747 --> 01:38:46,747
+GPT gibi şeylerle yaptığınızda örneğin genel staj kaç gündür dediğinde GPT bazen 25 gündür gibi 30 gün olmayan cevaplar verebiliyordu.
+
+485
+01:38:47,547 --> 01:38:54,367
+Ama Rack şuna bakıyor. Doğrudan o kavramla ilişkili olabilecek şeyleri daha dikkatli bir şekilde eğitildiği için
+
+486
+01:38:54,367 --> 01:38:58,207
+eğitimde de aslında burada model eğitimi dediğimiz bir şey yok.
+
+487
+01:38:58,208 --> 01:39:04,327
+oradaki veriye bakarak aslında bağlama bakarak kaynağını dularak size bir şey çözüyor ve oradan onu getiriyor.
+
+488
+01:39:04,327 --> 01:39:09,127
+Bir anlamda bu kontrol C, kontrol F gibi bir arama değil aslında.
+
+489
+01:39:09,308 --> 01:39:14,148
+Yine bağlamdan arama yapıyor ama burada bir model eğitimine gerek duyulmadan bir şey.
+
+490
+01:39:15,027 --> 01:39:16,928
+Halüsinasyondan kaçmaya çalışıyor.
+
+491
+01:39:18,508 --> 01:39:24,967
+Örneğin mesela halüsinasyondan işte Cosmos GPT'ye insanlık tarihinde en büyük icatlar olmuş.
+
+492
+01:39:24,967 --> 01:39:38,967
+1899'da geliştirilen insansız araba demiş. Hani belki 1999 dese yine anlarız da öyle bir şey demiş. İşte 47'de yapay zeka sistemleri, 2012'de Alan Turing demiş.
+
+493
+01:39:38,967 --> 01:39:49,967
+İşte düşünün yani şey. Yılları muhtemelen şaşırdı burada. Yani 1912'de değil de 1912 falan dese bir daha şey olur. Tarihlerde yanlış var.
+
+494
+01:39:49,967 --> 01:39:53,627
+gerçek gibi görünen ama yanlış olan şeyler.
+
+495
+01:39:55,007 --> 01:39:59,288
+İşte RAK bunu biraz daha uygun şekilde yapıyor.
+
+496
+01:39:59,428 --> 01:40:02,467
+Şunlar model ailelerinin karşılaştırılması diye geçiyorum.
+
+497
+01:40:03,827 --> 01:40:06,427
+LLM'lerin sınırları, dil modellerinin sınırları.
+
+498
+01:40:06,607 --> 01:40:07,907
+Şunlara da geçelim.
+
+499
+01:40:08,867 --> 01:40:11,807
+Şimdi peki RAK bize burada ne söyleyecek?
+
+500
+01:40:11,927 --> 01:40:13,507
+Şimdi biraz da ondan bahsedeceğim.
+
+501
+01:40:13,607 --> 01:40:14,947
+Dersi yavaş yavaş bitireceğiz.
+
+502
+01:40:27,188 --> 01:40:37,188
+bir kere size anlık bilgi güncel belgeleri çektirebiliyorsunuz. şeyde elelemlerde güncel belge olmayabiliyor.
+
+503
+01:40:37,188 --> 01:40:46,188
+çünkü eğitim sonrasında gerçekleşen haberler burada yok elelemde ama RAK'ta bu problem ortadan kalkıyor.
+
+504
+01:40:46,188 --> 01:40:55,188
+özel bilgi dediğimiz yani lokalde çalıştırıp işte dedim ya biraz önce öğrenci işleriyle alakalı bilgiler buradan cevap üretebiliyorsunuz.
+
+505
+01:40:55,188 --> 01:41:15,188
+ve şunu da söylüyor, şu bilgi gerekçesini de üretiyor. Şuradaki belgeden veya bilgiden gelerek ben bu cevabı verdim. Dolayısıyla bu halüsinasyonu azaltabiliyor. Sıfırlanması belki mümkün değil ama daha şey, aslında siz sınava referans kitapla giriyorsunuz, her soru için doğru kaynağı buluyorsunuz.
+
+506
+01:41:15,188 --> 01:41:35,807
+bir anlamda bu aslında explainable AI dediğimiz yani cevaplına bir de bir yapay zeka şey. Ben bunu ürettim, üretiminin kaynağı da budur. RAK bunu yapabiliyor. Yani kitap olmadan cevap yok. Şimdi mesela bununla alakalı şöyle çalışmalar var. İşte ilkokul öğrencilerine matematik dersi öğreten yapay zeka sistemi RAK temelli.
+
+507
+01:41:35,807 --> 01:41:45,287
+yapay zeka kitabını veriyorsunuz. O arka planda çalışıyor. Sonra konuyu anlatıyor. Konuyla alakalı sorular soruyor.
+
+508
+01:41:45,287 --> 01:42:01,407
+Ve şöyle güzeldiği var. Üstü sayılar üzerinden örnek verecek olsam iki tane kural verelim. x üzeri A çarpı x üzeri B'nin kuralını rak kitapta yazıyor değil mi?
+
+509
+01:42:01,408 --> 01:42:31,387
+işte x üzeri A artı B ne bileyim y üzeri A çarpı z üzeri A bu da neydi y çarpı z üzeri A mıydı yani bu da var yani bundan yola çıkarak diyorsunuz ki siz Ragaz şöyle bir soru sordunuzda işte 2 üzeri 3 çarpı ne bileyim 3 üzeri 3 çarpı 2 üzeri
+
+510
+01:42:31,407 --> 01:42:49,908
+veya şöyle 6 üzeri 5. Önce şu kuralı uygulayıp işte buradan 6 üzeri 3'ünü, sonra 6 üzeri 5 ile 6 üzeri 3'ten de 6 üzeri 8'i hesaplayacak kabiliyete ulaşabiliyor.
+
+511
+01:42:49,908 --> 01:43:00,908
+Yani kabaca bu tarz şeyleri yapabiliyor. Sonuçta şu bir kural, bu bir kural, bu ikisinin birleşimi de yapılabilir gibi gibi bu tarz şeyler şu an çalışılan uygulamalar içerisinde.
+
+512
+01:43:01,408 --> 01:43:08,408
+olan bir şey. RUG'ın nasıl çalışacağı mesela burada hani söylenmiş birinci faz indeksleme offline,
+
+513
+01:43:08,408 --> 01:43:16,408
+diğeri sorgulama ve üretim dediğimiz şey. İndeksleme içinde siz bir veri tabanınızı, bir belgenizi yüklüyorsunuz.
+
+514
+01:43:16,408 --> 01:43:26,408
+Bu küçük parçalara bölünüyor ve embedding dediğimiz sayısal vektörlere çeviriyor. Sonra bunlar vektör gibi olarak kaydediliyor.
+
+515
+01:43:26,408 --> 01:43:53,488
+sonra siz bir soru soruyorsunuz bu sorunuz vektöre dönüşüyor çünkü vektör şuradaki vektör mantığıyla çalışacak bu vektöre en yakın K tane vektör bulunuyor en yakın K tane bulunan parçalar burada bir bağlam oluşturuluyor ve eleleme soruluyor arkada bu bağlama göre soru cevaplanıyor ve yanıtla kaynak arasındaki eşleşme de şey oluyor diyor ki ben
+
+516
+01:43:53,487 --> 01:43:57,447
+bu yanıtı şuradan şuradan vererek yaptım.
+
+517
+01:43:58,967 --> 01:44:03,367
+Mesela 2004 yılı, 24 yılı arge bütçesi nedir?
+
+518
+01:44:03,607 --> 01:44:05,987
+Bu illaki bir yerlerde var.
+
+519
+01:44:06,807 --> 01:44:11,127
+Belki arge bütçesi olarak yazılmadı birebir olarak ama buna yakın bir şey yazıldı.
+
+520
+01:44:12,087 --> 01:44:17,327
+Bu o kısımları alıyor, bununla alakalı olan K tane vektörü alıyor.
+
+521
+01:44:17,967 --> 01:44:22,067
+Elelem de yardımıyla ne yapıyor size yanıtı söyleyebiliyor.
+
+522
+01:44:23,572 --> 01:44:37,771
+chunking'in burada nasıl olduğu, işte sabit boyutlu mu olacak, öz dinleme ne olacak, semantik mi olacak, veya doküment şeyde mi olacak, bu, hani şuradaki aşamaları birazcık detaylandırmışım.
+
+523
+01:44:37,771 --> 01:44:49,771
+Bu şeylere chunk size olarak farklı değerler verilebilir. 512 chunklar olsun, overlap'ı birbiriyle geçmesi 50 olsun. Bu şu demek, şimdi kelime bazı düşünelim.
+
+524
+01:44:49,771 --> 01:45:01,651
+512 tane kelimeyi alıyor sizin kaynağınızdan bir vektörleştiriyor. Bu 512'nin son 50 tanesini alıyor, o 50'den itibaren bir 512 daha alıyor.
+
+525
+01:45:01,651 --> 01:45:09,391
+Yani 1, 2, 3, 4, 5, 512, 512'den 50 çıkarsak ne olur? 462 mi? 462'den başlayıp bir 512 daha alıyorsun.
+
+526
+01:45:09,391 --> 01:45:16,112
+Bu şekilde öz dinlelemeli özellikle teknik belgelerde bir chunking belge parçalama yapılmış.
+
+527
+01:45:16,111 --> 01:45:33,351
+sonra embedding vektörleri var burada da embedding modelleri kullanıyor yani siz bir metni verdiğinizde onu vektöre dönüştüren farklı modeller veya vektör veri tabanları var bunları kullanıyor yani bunlar da arka planda her birinin kendi kendine şey matematiksel altyapısı var
+
+528
+01:45:33,351 --> 01:45:44,351
+OpenA yayın mesela TextEmbedding 3. Ödev 2'de mesela siz bazı embedding yöntemleri kullandınız ki bunlar belki artık günümüzde binlerce diyelim.
+
+529
+01:45:44,351 --> 01:45:57,351
+Buradan bir embedding vektör veri tabanı oluştunuz sonra arama gerçekleşti. Aramada da burada aslında birazcık veri tabanı disk veri yapıları tarzında arama şeyler ve semantik arama yapılacak.
+
+530
+01:45:57,351 --> 01:46:07,351
+örneğin siz şöyle bir şey sordunuz semantik model bilgi güvenliği politikası diye bir şey döndürecek o onunla alakalı bir şey olduğu için
+
+531
+01:46:07,351 --> 01:46:13,351
+şimdi belki tam kod numarasını bulamayacaksın ama anlamsal olarak yakınlıktan onu yakalayabiliyor
+
+532
+01:46:13,351 --> 01:46:21,351
+ve burada şöyle bir şey oluyor işte ilk işte en yakın 20 tanesi geliyor dil modeline soruluyor
+
+533
+01:46:21,351 --> 01:46:26,072
+dil modellerinin hatta bir dil modeline değil birden fazla dil modeline soranlar var.
+
+534
+01:46:26,072 --> 01:46:30,991
+O soruluk sorgulardan gelen cevaplardan en uygunlu size return ediyor gibi.
+
+535
+01:46:32,631 --> 01:46:36,751
+İleri rock teknikleri var. Bunları size paylaşacağım. İncelersiniz okursuz arkadaşlar.
+
+536
+01:46:36,991 --> 01:46:44,471
+Yani bu güncel şeyleri de içeren bir yapıda olduğu için hatta kodlamayı da sağlayacak şekilde bazı içerikler koydum.
+
+537
+01:46:44,471 --> 01:46:58,471
+Pintuning ve Rack meselesi burada. Şimdi plan yapma konusunda bu slide'ın hazırlandığı dönemlerde belki bu tarz şeyler biraz başarısız kalabiliyor bazı dil modelleri.
+
+538
+01:46:59,231 --> 01:47:05,111
+Örneğin biz yine geçen dönem bu proje sınavlarında jüri programını dil modellerini yaptıralım dedik.
+
+539
+01:47:05,111 --> 01:47:12,371
+Ama klasik işte genetik algoritma tarzı algoritmalar biraz daha başarılı çıkmıştı veya diğer endüstri mühendisliği teknikleri.
+
+540
+01:47:12,372 --> 01:47:16,232
+kısmen plan yapabiliyor ama tam şey değil.
+
+541
+01:47:18,812 --> 01:47:22,691
+Gibi gibi bununla alakalı farklı tartışma soruları var.
+
+542
+01:47:23,211 --> 01:47:28,972
+Şimdi şurada bizim bu Fatih Hocaların grubunda dil modellerinin detaylarını içeren,
+
+543
+01:47:28,972 --> 01:47:32,191
+hani sınav için değil ama bu konularda bakmak istiyorsanız,
+
+544
+01:47:32,972 --> 01:47:39,432
+hem kodları hem de açıklamaları olan bir video serisi var.
+
+545
+01:47:39,532 --> 01:47:40,932
+Bunları da inceleyebilirsiniz.
+
+546
+01:47:40,932 --> 01:47:56,152
+Şimdi ben şu şeyi size yansıtacağım. Başarım sonuçları gelmişti. Az önceki kodu yansıtacağım. Varsa sorularınızı alacağım. Ondan sonra yavaştan dersimizi bitireceğiz. Şöyle şey diyelim.
+
+547
+01:48:01,140 --> 01:48:04,140
+şu an collab geldi herhalde. Görüyor musunuz?
+
+548
+01:48:06,640 --> 01:48:16,640
+Google collab'i kullanmayan varsa bir Python kodunu çok rahat yazıp deneysel sonuçlar üretebiliyorsunuz arkadaşlar.
+
+549
+01:48:17,640 --> 01:48:21,140
+Geliyor değil mi görüntü? Emin olayım da.
+
+550
+01:48:23,140 --> 01:48:24,640
+Geliyor hocam.
+
+551
+01:48:24,640 --> 01:48:31,419
+şimdi bu M-listata setinde birincisinde autoencoder yapıp sonra sınıflandırma yaptık
+
+552
+01:48:31,419 --> 01:48:39,599
+biliyorsunuz veri setinin kendisi 28'de 28'di işte 7, 7, 3 neyse öyle bir veriydi
+
+553
+01:48:39,599 --> 01:48:42,739
+784 uzunluktu bir aslında vektör
+
+554
+01:48:42,739 --> 01:48:45,379
+bunu 32'ye kadar sıkıştırdık
+
+555
+01:48:45,379 --> 01:48:49,140
+bunu biraz daha sıkıştırsak iyi olur mu veya kötü mü olur
+
+556
+01:48:49,140 --> 01:48:52,059
+işte literatür bunu 32'ye kadar sıkıştırmış
+
+557
+01:48:52,059 --> 01:49:20,299
+şimdi ne yapıyoruz? Önce encode ediyoruz, sonra decode ediyoruz. İşte bunun aşaması da hani forward aşaması da önce encoder sonra decoder çalışacak ve bu encoder ve decoder'ı return edeceğiz. GPU kullanarak bunu yapabiliyorsun yoksa hani şunlar şey environment ile alakalı şeyler. Veriyi açtıktan sonra hani m-list datasını açtıktan sonra
+
+558
+01:49:20,299 --> 01:49:24,059
+data loader'ı açtık.
+
+559
+01:49:24,619 --> 01:49:32,999
+Sonra bunu çalıştırıyoruz ve çalıştırdıktan sonra elimizde her bir görüntü için 32 tane değer içeren,
+
+560
+01:49:33,899 --> 01:49:41,019
+33. olarak da işte bu 0 mıdır, 1 midir, 2 midir, 3 midir, 9 midir, o tarz bir değer içeren bir veri tabanı oluşuyor.
+
+561
+01:49:41,679 --> 01:49:43,599
+Veri tabanında kaç tane örnek var hatırlamıyorum.
+
+562
+01:49:43,599 --> 01:49:49,579
+Belki yani şey şuradan bakılırsa, shape'lerine falan bakılırsa, variable'lara bakalım.
+
+563
+01:49:50,299 --> 01:49:58,799
+bakın 10.000 tane örnek varmış ve 10.000 tane örneğin her birisi 32 tane değer içeriyor.
+
+564
+01:50:00,419 --> 01:50:02,919
+Şöyle bunları görüntüleyebiliyor muyuz bilmiyorum da.
+
+565
+01:50:05,859 --> 01:50:08,379
+Orijinali 10.000 taneden 780.
+
+566
+01:50:08,379 --> 01:50:14,459
+Şimdi bu train ve test olarak işte şeye böleceğiz, k-fold cross-validation falan yapıyoruz.
+
+567
+01:50:14,539 --> 01:50:17,419
+Yani yapmasak da oluruz da ben en azından bir şey yapayım dedim.
+
+568
+01:50:17,419 --> 01:50:36,419
+burada KNN'i, SGM'i ve MLP'yi çalıştırdım. Hatta KNN'i 1 yapmak daha güzel olurdu ama 5 olup bir problem değil. Ne yapıyoruz? Veriyi işte train test diye 5 defa böleceğiz, 5 defa test edeceğiz. İşte test sonuçları da Eqris olarak karşımıza gelecek ve bunları ortalama Eqris ile yazacağız.
+
+569
+01:50:36,419 --> 01:50:52,339
+Şimdi şuraya baktığımızda M-list verisi yüklendikten sonra auto-encoder 15 epochta kaybı 0.01 olacak şekilde 32 uzunluklu bir vektöre sıkıştırmış
+
+570
+01:50:52,339 --> 01:51:11,220
+sıkıştırma yapıldıktan sonra bu şeyi işte K-Fot Cross-Validation ile hani K-NN, S-V-M, M-L-P ile sınıflandırıp beş defanın sınıflandırmanın ortalaması işte 92, 93, 94 yani şu şeylerle elde edilmiş.
+
+571
+01:51:12,099 --> 01:51:19,399
+S-V-M'i belki burada biraz daha şey yapabilirdik hani R-B-F değil de farklı şeyler yapabildik ama ortalama başarı bu.
+
+572
+01:51:19,399 --> 01:51:49,379
+Autoencoder olmadan ham veriyle yapmak istersek ham verimiz ne? İşte görüntülerimiz var. Bunları sayısal dizilere çeviriyoruz. Yani 728'e 28'lik bir şeyi ne yapıyoruz? 784 boyutlu piksel yaptık. Hiç ön işlem yapmadan yine KNM, SVM, MLP çalıştıracağız. Ve bu çalıştırma sonunda bakın %94, 95, 94. Yani birinde %93, 92 çok bir fark var.
+
+573
+01:51:49,399 --> 01:52:00,399
+hakkı etmemiş aslında. Hatta şunda daha iyi olduğu durum bile var. Şurada bakın bu 128 saniye sürüyor.
+
+574
+01:52:00,979 --> 01:52:18,979
+şurada 92. Yani birazcık süreden şey var. Yani %1'lik şey için böyle bir süresi var. Tabii K-Folt'un tamamlanma süresi dışında burada bir de autoencoder'ın eğitilme süresi dikkate alınırsa hani ikisinin süresi belki şu birinci örnekte daha fazla.
+
+575
+01:52:18,979 --> 01:52:45,979
+ama bu basit problem için autoencoder anlamlı olmayabilir. Probleminiz güçleştikçe ve bu tarz çok yüksek boyutlu verilere ulaşmadan özellikle de üretim yaptıracaksınız, autoencoder'lar veya varyasyonel autoencoder'lar başarımı iyileştiren bir şey. Burada çok fazla başarım olmadığı ortaya çıkıyor. Hatta şurada daha iyi olan bir durumda söz konusu diyebiliriz.
+
+576
+01:52:45,979 --> 01:52:46,979
+Bunlar yani bakın autoencoder'ı anlattık hani arkasında bir sürü matematik de var ama basit bir autoencoder hani şöyle belki 15-20 satırlık bir koda karşı geliyor kodu yazması çok zor değil arkadaşlar işte bu ilgeli kütüphaneleri import ettiğinizde çok rahat hani test yapabilirsiniz diyelim şimdi verim üretici modellerle alakalı da bir şeyler
+
+577
+01:53:15,979 --> 01:53:33,880
+yani şey konumuz bu makine öğrenmesi yöntemleri konumuz da bu hafta itibariyle sona erdi bir tane konumuz var yapay zeka ve etik konusu onu da işte inşallah bayramdan sonraki hafta konuşacağız sizin bir sorunuz var mı önce onu alayım
+
+578
+01:53:38,771 --> 01:53:54,131
+var mı sorunuz arkadaşlar? pekala, o zaman iki hafta sonra yani ayın dördünde mi oluyor yani normal ders saatimizde okulda görüşmek üzere hepinize iyi bayramlar, iyi tatiller diyorum kendinize iyi bakın. iyi bayramlar hocam.
