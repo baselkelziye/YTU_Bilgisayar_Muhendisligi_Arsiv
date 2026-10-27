@@ -1,0 +1,3995 @@
+1
+00:08:38,644 --> 00:08:39,923
+Arkadaşlar, günaydın.
+
+2
+00:08:50,515 --> 00:08:52,415
+sesim geliyor mu? Bir teyit edin lütfen.
+
+3
+00:08:57,172 --> 00:08:57,971
+günaydın hocam.
+
+4
+00:09:26,227 --> 00:09:41,227
+Okey, biraz daha bekleyeceğim. Ondan sonra başlayalım. Saat şu an 9.00'u 5 geçiyor. Saat 9.00'u 10 geçe başlayalım arkadaşlarınızla. WhatsApp grubundan dersin başladığını ve herkesin katılması gerektiğini siz yazarsanız memnun olurum.
+
+5
+00:16:38,964 --> 00:16:47,304
+ok, let's get started. Arkadaşlar, tekrardan bir teyit istiyorum. Sesimi duyuyor musunuz?
+
+6
+00:16:48,443 --> 00:16:53,783
+yazarak yaptım, mikrofonu açarak bir teyit edin, başlayalım ders. Evet hocam, duyabiliyoruz.
+
+7
+00:16:54,403 --> 00:16:55,384
+Tamam, süper. Ok.
+
+8
+00:16:55,384 --> 00:17:09,703
+Okay, now first thing first, your midterm results is announced, so you can check your grade for midterm.
+
+9
+00:17:09,703 --> 00:17:20,984
+and the weight for midterm is 30%.
+
+10
+00:17:20,984 --> 00:17:31,304
+And so here it's written 40%, but it is supposed to be 30%.
+
+11
+00:17:31,304 --> 00:17:35,483
+So there's a mistake on the syllabus.
+
+12
+00:17:35,943 --> 00:17:37,443
+So it's 30%.
+
+13
+00:17:37,443 --> 00:17:45,843
+and the other 30% is the term project, which means that the term project is highly important.
+
+14
+00:17:48,843 --> 00:17:54,404
+So today is the deadline for the term project proposal.
+
+15
+00:17:54,404 --> 00:18:01,124
+I have instructions where to send you.
+
+16
+00:18:01,123 --> 00:18:09,683
+I will be checking all the term project proposals on this email address. So if you haven't sent it
+
+17
+00:18:09,683 --> 00:18:18,503
+already, today is the deadline. So you should send it otherwise. So I will consider that you will not
+
+18
+00:18:18,503 --> 00:18:26,643
+do the term project. Okay. And I will evaluate the term projects. And if there's a need for a change
+
+19
+00:18:26,644 --> 00:18:30,523
+in your term project proposal, I will let you know.
+
+20
+00:18:31,783 --> 00:18:40,963
+But for now, so you can start working on your term project and the deadline for the term project is the last week of the semester.
+
+21
+00:18:41,883 --> 00:18:55,344
+And I will expect you to do a demonstration of your code and as well as you will explain to me your term project.
+
+22
+00:18:55,343 --> 00:19:06,463
+project in class. Okay, so you will be expected to do a demo and you will also present your
+
+23
+00:19:06,463 --> 00:19:22,103
+work on the last week of the semester. Now, today we are going to talk about recommendation
+
+24
+00:19:22,103 --> 00:19:30,824
+systems, which we haven't studied so far.
+
+25
+00:19:33,824 --> 00:19:37,544
+So we just check their number nine.
+
+26
+00:19:37,544 --> 00:19:40,344
+So if you have questions, you are welcome to ask.
+
+27
+00:19:40,344 --> 00:19:41,904
+So otherwise, so I will start.
+
+28
+00:20:05,907 --> 00:20:07,907
+ok.
+
+29
+00:20:07,907 --> 00:20:13,907
+Now today's topic is recommendation systems.
+
+30
+00:20:13,907 --> 00:20:19,907
+So first of all, so I will do an overview of the recommendation systems.
+
+31
+00:20:25,203 --> 00:20:25,703
+Okay.
+
+32
+00:20:27,703 --> 00:20:28,303
+Now,
+
+33
+00:20:31,583 --> 00:20:33,603
+when we view
+
+34
+00:20:33,603 --> 00:20:35,983
+the World Wide Web,
+
+35
+00:20:36,363 --> 00:20:38,023
+so we have different
+
+36
+00:20:38,023 --> 00:20:38,963
+applications.
+
+37
+00:20:39,963 --> 00:20:40,664
+We have
+
+38
+00:20:40,664 --> 00:20:43,663
+applications,
+
+39
+00:20:44,083 --> 00:20:45,964
+cloud-based applications
+
+40
+00:20:45,964 --> 00:20:47,583
+where you can buy books like
+
+41
+00:20:49,983 --> 00:20:51,563
+applications like Netflix
+
+42
+00:20:51,563 --> 00:20:53,544
+where you can watch
+
+43
+00:20:53,544 --> 00:20:55,843
+a movie or show
+
+44
+00:20:55,843 --> 00:20:58,003
+you have applications
+
+45
+00:20:58,003 --> 00:20:58,983
+like YouTube
+
+46
+00:20:58,983 --> 00:21:00,724
+where you can
+
+47
+00:21:00,724 --> 00:21:03,703
+watch a short
+
+48
+00:21:03,703 --> 00:21:06,983
+YouTube movie
+
+49
+00:21:06,983 --> 00:21:08,044
+okay
+
+50
+00:21:08,044 --> 00:21:10,503
+and so there are
+
+51
+00:21:10,503 --> 00:21:13,123
+applications like Spotify
+
+52
+00:21:13,123 --> 00:21:15,443
+where you can listen to music
+
+53
+00:21:15,443 --> 00:21:17,424
+and all these
+
+54
+00:21:17,424 --> 00:21:19,363
+and also
+
+55
+00:21:19,363 --> 00:21:21,263
+the World Wide Web right
+
+56
+00:21:21,263 --> 00:21:23,263
+so you have lots of
+
+57
+00:21:23,263 --> 00:21:33,483
+...documents that you would like to search, browse and also find corresponding to your query.
+
+58
+00:21:34,443 --> 00:21:44,263
+Now, usually when we go to these sites, right, when we go to these sites, one thing that we do is we search.
+
+59
+00:21:45,363 --> 00:21:50,363
+And so one way to do a search, you can do a browsing, right?
+
+60
+00:21:59,143 --> 00:22:05,363
+and you can go to the item category that you are searching for.
+
+61
+00:22:05,863 --> 00:22:12,583
+Or you can use their search text box and you can write your queries
+
+62
+00:22:18,363 --> 00:22:19,363
+bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin
+
+63
+00:22:48,364 --> 00:22:55,364
+bu nefesini aracılığınız için nefesini aracılığınızı
+
+64
+00:22:55,364 --> 00:22:59,364
+ve bu nefesini aracılığınızı aracılığınızı
+
+65
+00:22:59,364 --> 00:23:06,364
+aracılığınızı aracılığınızı aracılığınızı
+
+66
+00:23:06,364 --> 00:23:12,364
+aracılığınızı aracılığınızı
+
+67
+00:23:12,364 --> 00:23:15,364
+e-commerce sitesi aracılığınızı
+
+68
+00:23:15,364 --> 00:23:17,623
+İtems to us.
+
+69
+00:23:25,556 --> 00:23:29,435
+Şimdi, bu da bir physical store,
+
+70
+00:23:29,815 --> 00:23:33,135
+bu da Karfursa'a,
+
+71
+00:23:33,375 --> 00:23:35,335
+bu da Migros'a,
+
+72
+00:23:35,995 --> 00:23:40,615
+bu da bir şefde yerleştirilmiştir.
+
+73
+00:23:41,436 --> 00:23:44,175
+Bu da, bu da, DNR'e,
+
+74
+00:23:44,175 --> 00:23:46,175
+bu da bir şefde yerleştirilmiştir.
+
+75
+00:23:46,695 --> 00:23:48,135
+Bu da bir bursa,
+
+76
+00:23:48,135 --> 00:23:50,135
+bu da bir bursa yerleştirilmiştir.
+
+77
+00:23:50,135 --> 00:23:52,316
+Bu da bir bursa yerleştirilmiştir.
+
+78
+00:23:52,316 --> 00:23:53,316
+İçeride birçok oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, oranlar, or
+
+79
+00:24:22,315 --> 00:24:25,575
+sanal markets, virtual markets
+
+80
+00:24:25,575 --> 00:24:27,095
+is unlimited.
+
+81
+00:24:27,775 --> 00:24:27,855
+Okay?
+
+82
+00:24:28,395 --> 00:24:28,975
+Because
+
+83
+00:24:28,975 --> 00:24:32,515
+putting a product
+
+84
+00:24:32,515 --> 00:24:35,056
+into these e-commerce websites
+
+85
+00:24:35,056 --> 00:24:35,636
+is
+
+86
+00:24:35,636 --> 00:24:38,236
+near zero cost.
+
+87
+00:24:38,595 --> 00:24:38,755
+Okay?
+
+88
+00:24:38,935 --> 00:24:40,435
+All they need to do is
+
+89
+00:24:40,435 --> 00:24:43,295
+add these products into their database.
+
+90
+00:24:43,695 --> 00:24:43,895
+Okay?
+
+91
+00:24:44,155 --> 00:24:45,435
+But on the other hand,
+
+92
+00:24:45,515 --> 00:24:47,115
+if you go to a physical store,
+
+93
+00:24:47,115 --> 00:24:48,815
+if they want to increase
+
+94
+00:24:48,815 --> 00:24:50,075
+the number of products
+
+95
+00:24:50,075 --> 00:24:51,416
+that they want to sell,
+
+96
+00:24:51,416 --> 00:24:54,716
+They need to increase their physical space.
+
+97
+00:24:54,835 --> 00:24:59,596
+They need to put more shelves in order to increase the number of items.
+
+98
+00:25:00,655 --> 00:25:05,435
+So in the digital space, in the digital e-commerce sites,
+
+99
+00:25:05,956 --> 00:25:12,996
+so the number of items that they want to sell increase, right?
+
+100
+00:25:13,515 --> 00:25:19,835
+And this phenomenon called long tail.
+
+101
+00:25:19,835 --> 00:25:21,736
+So what does long tail mean?
+
+102
+00:25:24,736 --> 00:25:40,576
+Now, if you take a look at this, so this graph, in the x-axis, you can see that there are items.
+
+103
+00:25:40,856 --> 00:25:46,015
+So x-axis indicates the items ranked by popularity.
+
+104
+00:25:46,015 --> 00:26:05,675
+For example, the first item which has high popularity would be here, and the second item with less popularity would be here, and the popularity of the items would be increasing as the x-axis, the values in the x-axis increases, right?
+
+105
+00:26:06,115 --> 00:26:11,655
+And the y-axis indicates the number of purchases per week, okay?
+
+106
+00:26:11,835 --> 00:26:14,035
+Basically, it indicates the popularity.
+
+107
+00:26:14,035 --> 00:26:19,855
+So, the first, the items here are ranked based on their popularity.
+
+108
+00:26:20,695 --> 00:26:31,916
+Now, if you look at this blue line here,
+
+109
+00:26:31,916 --> 00:26:54,916
+Now, this indicates the threshold for the popularity that you may consider that a physical store may sell the items that are highly popular in their physical store up to this threshold.
+
+110
+00:26:55,096 --> 00:26:56,076
+So, what does this mean?
+
+111
+00:26:56,075 --> 00:27:03,395
+Şimdi, if you have a DNR in certain location, let's say if you have a DNR in Kaduker, right?
+
+112
+00:27:03,395 --> 00:27:18,135
+And you are the manager of the DNR in that location, and you have a certain space for your store.
+
+113
+00:27:18,511 --> 00:27:19,511
+ve bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kıs
+
+114
+00:27:48,511 --> 00:27:49,511
+Bu da bu da
+
+115
+00:28:18,511 --> 00:28:23,751
+that are highly likely to be sold, that are highly popular.
+
+116
+00:28:24,751 --> 00:28:31,632
+But if you go to digital versions of these stores,
+
+117
+00:28:31,632 --> 00:28:36,571
+like a digital DNR or digital Migros Sanal Market,
+
+118
+00:28:37,272 --> 00:28:42,891
+in that case, in those digital e-commerce stores,
+
+119
+00:28:42,891 --> 00:28:45,471
+you can find
+
+120
+00:28:45,471 --> 00:28:49,271
+items that are
+
+121
+00:28:49,271 --> 00:28:50,571
+less popular.
+
+122
+00:28:51,051 --> 00:28:53,591
+So that are less likely to be sold.
+
+123
+00:28:54,591 --> 00:28:55,171
+And
+
+124
+00:28:55,171 --> 00:28:56,651
+basically
+
+125
+00:28:56,651 --> 00:28:59,311
+the number of items
+
+126
+00:28:59,311 --> 00:29:01,691
+that they can put in those
+
+127
+00:29:01,691 --> 00:29:04,291
+digital stores will be
+
+128
+00:29:04,291 --> 00:29:05,911
+unlimited
+
+129
+00:29:05,911 --> 00:29:07,791
+but at the same time
+
+130
+00:29:07,791 --> 00:29:09,872
+their popularity will be low.
+
+131
+00:29:10,511 --> 00:29:10,551
+Okay.
+
+132
+00:29:11,251 --> 00:29:11,591
+Now
+
+133
+00:29:11,591 --> 00:29:38,211
+Now, here, if you look at the area under certain threshold, the number of products that you can put inside the digital store is much higher compared to the number of products that you can put into the physical store.
+
+134
+00:29:38,211 --> 00:29:49,952
+Now, here you can put unlimited number of items in your store and you don't care about their popularity.
+
+135
+00:29:50,491 --> 00:30:02,551
+But here in the physical store, you only can put highly popular items in your physical store because physical store has limitations, space limitations.
+
+136
+00:30:03,291 --> 00:30:06,111
+Now, this phenomenon is called long tail.
+
+137
+00:30:06,111 --> 00:30:19,191
+So what does long tail means? Being able to put less popular items in an unlimited way to do online stores.
+
+138
+00:30:19,351 --> 00:30:26,751
+That way, you don't care about whether or not they will be sold in a short amount of time,
+
+139
+00:30:27,091 --> 00:30:33,371
+but you are providing the access to these less popular items anytime.
+
+140
+00:30:41,076 --> 00:31:07,855
+but the problem with the long tail is that if you are putting so many items in your physical store, so in that case, if you are making it difficult for the end user, okay, to find those items, okay, because the only way to access those items is the search text box or the categories, right?
+
+141
+00:31:07,855 --> 00:31:18,295
+Now, if you have millions of items on Amazon, then if the end user is looking for a
+
+142
+00:31:28,339 --> 00:31:30,999
+less popular items to end user.
+
+143
+00:31:31,519 --> 00:31:36,839
+So that the end user can find the item they are looking for.
+
+144
+00:31:38,479 --> 00:31:41,300
+Okay, [öğrenci], beni duyamıyorsun sanırım.
+
+145
+00:31:41,819 --> 00:31:43,939
+Diğer arkadaşlarda da benzer durum var mı?
+
+146
+00:31:48,531 --> 00:31:51,691
+bir ara kopmuştu ama şu an geldi yani sorun yok.
+
+147
+00:31:53,051 --> 00:31:56,191
+Okey, ben big data attığımdan da bağlanayım.
+
+148
+00:36:03,188 --> 00:36:09,487
+Okey, gittim geldim. Tekrardan sesimi duyuyor olmanız lazım. Okulun internetindeki sıkıntıdan dolayı oluyor bunlar.
+
+149
+00:36:15,572 --> 00:36:17,572
+şöyle şurayı paylaşalım.
+
+150
+00:36:18,951 --> 00:36:19,911
+ikinci ekranı.
+
+151
+00:36:27,731 --> 00:36:29,271
+Ağın, Ağın, Ağın, Ağın, Ağın, Ağın.
+
+152
+00:37:01,043 --> 00:37:05,484
+bir şey yapıyoruz.
+
+153
+00:37:19,507 --> 00:37:21,627
+Evet, ekranım geliyor mu arkadaşlar size?
+
+154
+00:37:25,300 --> 00:37:26,179
+geliyor hocam.
+
+155
+00:37:27,959 --> 00:37:35,140
+Tamam. Yalnız hangi ekranın geliyor şu anda? Bir test edelim. Şöyle yapalım.
+
+156
+00:37:43,219 --> 00:37:54,319
+direkt şeyi paylaşalım. Okey, şu anda şeyi görüyor olmanız lazım. PDF'imize görünüyor olmanız lazım.
+
+157
+00:37:56,819 --> 00:38:00,539
+Ne paylaştığımızı da buradan görebiliyoruz. Tamam, okey.
+
+158
+00:38:04,980 --> 00:38:07,839
+Okay, moving forward.
+
+159
+00:38:08,960 --> 00:38:13,200
+Şu anda arkadaşlar, beşinci slide.
+
+160
+00:38:13,200 --> 00:38:14,339
+Okay.
+
+161
+00:38:16,559 --> 00:38:21,639
+Now, so we said that with the long tail phenomenon,
+
+162
+00:38:22,160 --> 00:38:29,139
+so we are putting less popular items on digital e-commerce websites
+
+163
+00:38:29,139 --> 00:38:34,759
+and the number of items that we are able to put them is unlimited.
+
+164
+00:38:34,980 --> 00:38:35,980
+Ve bu şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+165
+00:39:04,980 --> 00:39:06,899
+it's not efficient.
+
+166
+00:39:07,119 --> 00:39:08,680
+It will take way too much time.
+
+167
+00:39:09,340 --> 00:39:09,780
+Therefore,
+
+168
+00:39:10,359 --> 00:39:12,799
+these e-commerce websites
+
+169
+00:39:12,799 --> 00:39:15,039
+need some algorithms
+
+170
+00:39:15,039 --> 00:39:16,499
+in order to recommend
+
+171
+00:39:16,499 --> 00:39:19,020
+items to the end users.
+
+172
+00:39:19,020 --> 00:39:19,640
+Okay?
+
+173
+00:39:20,959 --> 00:39:21,319
+Now,
+
+174
+00:39:23,200 --> 00:39:24,700
+one example
+
+175
+00:39:24,700 --> 00:39:27,020
+advantage of
+
+176
+00:39:27,020 --> 00:39:28,819
+this recommendation system
+
+177
+00:39:28,819 --> 00:39:30,700
+is related with
+
+178
+00:39:30,700 --> 00:39:32,619
+books.
+
+179
+00:39:32,619 --> 00:39:56,719
+So in one of the book in recent years, which turned out to be a bestseller book, made another book a bestseller.
+
+180
+00:39:56,719 --> 00:40:03,539
+So what happened is that, so this Touching the Vault is a book about mountaineering.
+
+181
+00:40:04,459 --> 00:40:12,499
+And this book was published a year, a couple of years before this book into thin air.
+
+182
+00:40:12,679 --> 00:40:17,019
+So both of them are books and both of them are on mountaineering.
+
+183
+00:40:17,640 --> 00:40:17,759
+Okay.
+
+184
+00:40:18,619 --> 00:40:24,579
+And so when the first book Touching the Vault was published, it was not that popular.
+
+185
+00:40:24,579 --> 00:40:25,420
+Okay.
+
+186
+00:40:25,420 --> 00:40:32,280
+ve bu
+
+187
+00:40:32,280 --> 00:40:34,700
+ve
+
+188
+00:40:34,700 --> 00:40:54,480
+bu
+
+189
+00:40:54,480 --> 00:40:55,399
+engine
+
+190
+00:40:55,399 --> 00:40:59,039
+this touching the void book
+
+191
+00:40:59,039 --> 00:41:00,940
+ok so basically
+
+192
+00:41:00,940 --> 00:41:02,959
+this touching the void book was
+
+193
+00:41:02,959 --> 00:41:04,920
+recommended by the recommendation
+
+194
+00:41:04,920 --> 00:41:06,700
+engines to those
+
+195
+00:41:06,700 --> 00:41:08,759
+who bought into thin air
+
+196
+00:41:08,759 --> 00:41:11,140
+and after a while
+
+197
+00:41:11,140 --> 00:41:12,899
+so touching the void
+
+198
+00:41:12,899 --> 00:41:14,860
+also became a bestseller
+
+199
+00:41:14,860 --> 00:41:16,840
+and it became actually
+
+200
+00:41:16,840 --> 00:41:18,679
+it started to
+
+201
+00:41:18,679 --> 00:41:21,039
+sell
+
+202
+00:41:21,039 --> 00:41:22,439
+more than
+
+203
+00:41:22,439 --> 00:41:25,719
+İntro Tintin Air.
+
+204
+00:41:25,719 --> 00:41:32,859
+So basically, one book made another book a bestseller by the use of recommendation engine.
+
+205
+00:41:33,339 --> 00:41:33,459
+Okay.
+
+206
+00:41:33,639 --> 00:41:44,079
+So this is one good example of how recommendation engine can affect people's behavior, purchase behavior.
+
+207
+00:41:44,539 --> 00:41:44,779
+Okay.
+
+208
+00:41:45,299 --> 00:41:51,519
+Now, the recommendations engines are being used in different ways, in different platforms.
+
+209
+00:41:51,519 --> 00:41:59,379
+So book e-commerce websites such as DNR, movie e-commerce websites such as Netflix.
+
+210
+00:42:00,692 --> 00:42:16,692
+music stores, such as Spotify, news articles, such as Google News, okay? And recommendations engines are also being used on Facebook, LinkedIn, Twitter.
+
+211
+00:42:21,811 --> 00:42:24,792
+Now, there are different ways of doing recommendations.
+
+212
+00:42:25,032 --> 00:42:29,671
+One way is editorial and hand-created recommendations.
+
+213
+00:42:29,951 --> 00:42:33,291
+For example, so when you go to Starbucks, right?
+
+214
+00:42:33,971 --> 00:42:39,152
+Usually in Starbucks, you get to see a blackboard.
+
+215
+00:42:39,152 --> 00:42:48,411
+And on that blackboard, people who work in Starbucks, they write the kind of drinks that they recommend, right?
+
+216
+00:42:48,411 --> 00:42:52,871
+Or when you go to a DNR physical store, right?
+
+217
+00:42:53,051 --> 00:43:00,291
+So when you go to the store, you see a number of books put together in a certain location.
+
+218
+00:43:00,951 --> 00:43:06,431
+And basically those books are recommended by the DNR itself, right?
+
+219
+00:43:06,891 --> 00:43:14,751
+These are hand curated or editorial selected recommendations.
+
+220
+00:43:14,751 --> 00:43:23,691
+For example, when you go to a certain newspaper website, right?
+
+221
+00:43:24,211 --> 00:43:35,811
+And so basically on that site, you can see that the type of articles that are recommended by the newspaper, okay?
+
+222
+00:43:35,811 --> 00:43:46,831
+Now, these are the specific recommendations made by the owner of the store or editor of the news article, etc.
+
+223
+00:43:47,212 --> 00:43:49,771
+These are hand-created recommendations.
+
+224
+00:43:50,672 --> 00:43:55,231
+The second type of recommendations is based on the statistics.
+
+225
+00:44:12,291 --> 00:44:17,451
+So, which means that top 10 mostly sold books on the store.
+
+226
+00:44:17,451 --> 00:44:27,852
+So if you go to Spotify, it may tell you that, okay, these are the top 10 most listened music items.
+
+227
+00:44:28,051 --> 00:44:38,472
+If you go to Netflix, it can tell you that, okay, these are the most viewed movies in last month.
+
+228
+00:44:38,472 --> 00:44:50,311
+These are mainly based on the statistics of how people are using these products on this e-commerce store.
+
+229
+00:44:52,052 --> 00:44:58,572
+Now the third way of doing this is tailored to the individual users.
+
+230
+00:44:59,352 --> 00:45:05,431
+And we are mainly interested in this course, the third category of recommendations.
+
+231
+00:45:05,431 --> 00:45:35,411
+Now, this is basically, so what this means is that the recommendation engine algorithm is analyzing your digital prints on the e-commerce websites, which means that, so which books that you read on the e-commerce website or which movies that you watched so far on the e-commerce or the streaming service.
+
+232
+00:45:35,431 --> 00:45:48,451
+Okay, basically, they are looking at your history on that movie store or the bookstore or the music store.
+
+233
+00:45:49,071 --> 00:45:56,491
+And by analyzing your history, they are recommending you a particular item.
+
+234
+00:45:56,491 --> 00:46:01,971
+Okay, and we are interested in the third category in this course.
+
+235
+00:46:01,971 --> 00:46:16,951
+How can we analyze and model the user behavior on a given e-commerce website, understand the user behavior, model it, and then recommend an item for that user?
+
+236
+00:46:21,588 --> 00:46:36,347
+ok. Now, the formal way of showing this is that here is, as you see, the capital C represents the set of customers and capital S represents the set of items.
+
+237
+00:46:36,347 --> 00:46:55,967
+Okay. Now, with the recommendation engine, what we are trying to do, we are trying to find out the score that each customer can give to items that they haven't seen so far.
+
+238
+00:46:55,968 --> 00:47:25,948
+okay and usually the the score is measured by either the the based on the star rating between 0 and 5 or based on a real number between 0 and 1 okay and so we are trying to find an a function which we are going to call utility function which would which would take the customer ID and also the item ID as an input
+
+239
+00:47:25,967 --> 00:47:38,808
+and it will produce a rating value. And if we can find the rating value for every item in the physical
+
+240
+00:47:38,808 --> 00:47:46,547
+store corresponding to a certain customer, then we can make recommendations. Whenever that person
+
+241
+00:47:46,547 --> 00:47:55,727
+comes to our store, we can recommend the highest rated items to that person. So therefore,
+
+242
+00:47:55,727 --> 00:48:09,327
+So in the recommendation algorithm, we are going to find the utility function that would help us to find a rating score for every item for every customer.
+
+243
+00:48:15,155 --> 00:48:21,895
+Now, here is the utility matrix, which is calculated based on the utility function.
+
+244
+00:48:21,895 --> 00:48:29,935
+Now, as you see, I have four different users here and four different movies.
+
+245
+00:48:31,076 --> 00:48:31,195
+Okay.
+
+246
+00:48:31,555 --> 00:48:35,895
+And now these ratings that you see are explicitly ratings.
+
+247
+00:48:36,756 --> 00:48:43,115
+So, which means that the user explicitly gave a rating to these movies.
+
+248
+00:48:43,475 --> 00:48:43,715
+Okay.
+
+249
+00:48:43,715 --> 00:48:52,035
+So when you watch a movie on a streaming service, right after the movie, you see a star rating.
+
+250
+00:48:52,795 --> 00:49:02,336
+And the movie store, the streaming service is asking you to enter your rating for that movie that you watched, right?
+
+251
+00:49:02,935 --> 00:49:07,016
+And so that's explicit rating.
+
+252
+00:49:07,016 --> 00:49:15,475
+So basically by clicking on the stars, you are giving your explicit rating to the movie store.
+
+253
+00:49:16,176 --> 00:49:23,376
+Now here Alice gave two ratings to two movies.
+
+254
+00:49:23,615 --> 00:49:30,715
+Bob gave two, Carol gave two and David gave one rating to one movies that they watched.
+
+255
+00:49:31,115 --> 00:49:33,236
+Okay, these are explicit ratings.
+
+256
+00:49:33,236 --> 00:49:39,136
+Now, what we are interested here is to find the unknown ratings.
+
+257
+00:49:39,556 --> 00:49:46,596
+For example, we would like to calculate by using the utility function that I have just told you.
+
+258
+00:49:46,876 --> 00:49:58,376
+We would like to calculate this rating, what Alice would give to Lord of the Rings movie if she watched it.
+
+259
+00:49:58,755 --> 00:50:02,975
+What Alice would give to Pirates movie if she watched it.
+
+260
+00:50:03,235 --> 00:50:12,295
+And also we would like to find those unknown ratings for the other users as well.
+
+261
+00:50:12,875 --> 00:50:14,615
+So that's our purpose.
+
+262
+00:50:14,615 --> 00:50:24,535
+So we would like to come up with a utility function that could help us to calculate the unknown ratings.
+
+263
+00:50:24,975 --> 00:50:29,915
+So what's going to happen when we calculate the unknown ratings?
+
+264
+00:50:29,915 --> 00:50:42,915
+In that case, we will say, okay, when Alice comes to our movie store, we will know what she would give to Lord of the Rings or the Pirates movies.
+
+265
+00:50:43,615 --> 00:50:48,995
+And whichever is the highest score, we would recommend that movie to Alice.
+
+266
+00:50:49,135 --> 00:50:53,415
+We would say, okay, so this is the movie that we think you might like.
+
+267
+00:50:53,415 --> 00:50:53,955
+Okay.
+
+268
+00:50:59,987 --> 00:51:18,627
+Okay, now we have an idea. So with the recommendation engines, what we are trying to find is we are trying to find the unknown ratings for every user and for every item in this digital e-commerce store.
+
+269
+00:51:18,627 --> 00:51:29,127
+Okay, but implementing or designing these recommendation algorithms are highly difficult because we have some problems.
+
+270
+00:51:29,127 --> 00:51:40,848
+Now, one problem is that in order to make some recommendations, we need to know the history of that person.
+
+271
+00:51:40,848 --> 00:51:58,867
+Okay, so that person needs to provide us some history about his or her purchasing behavior or his or her preferences about the movies or the music, right?
+
+272
+00:51:59,127 --> 00:52:09,367
+Now, in order to get such information, so we need to gather the known metrics, known ratings.
+
+273
+00:52:09,367 --> 00:52:12,907
+For example, we need to gather these known metrics.
+
+274
+00:52:13,528 --> 00:52:19,708
+So how can you gather what Alice would give Avatar after she watched it?
+
+275
+00:52:19,987 --> 00:52:20,028
+Okay.
+
+276
+00:52:20,967 --> 00:52:29,107
+Now, this known ratings is difficult to get.
+
+277
+00:52:29,127 --> 00:52:33,727
+because not many people are giving their opinion
+
+278
+00:52:33,727 --> 00:52:35,708
+after they watched a movie
+
+279
+00:52:35,708 --> 00:52:37,788
+or after they read a book.
+
+280
+00:52:39,047 --> 00:52:42,168
+They don't give feedback to these stores.
+
+281
+00:52:42,168 --> 00:52:45,547
+Only a small number of users
+
+282
+00:52:45,547 --> 00:52:47,708
+are actually giving their feedback.
+
+283
+00:52:48,168 --> 00:52:51,087
+Now, gathering the known ratings
+
+284
+00:52:51,087 --> 00:52:52,967
+is a difficult problem.
+
+285
+00:52:53,288 --> 00:52:56,507
+So therefore, so that's a key challenge
+
+286
+00:52:56,507 --> 00:52:58,367
+that needs to be solved.
+
+287
+00:52:59,127 --> 00:53:13,967
+Okay, now the second problem is that after you solve that problem, after you somehow get the known ratings, how are you going to find these unknown ratings?
+
+288
+00:53:13,967 --> 00:53:23,547
+Okay, so what kind of algorithms that you can use in order to find these unknown ratings by utilizing the known ratings?
+
+289
+00:53:23,987 --> 00:53:25,687
+Okay, that's the second problem.
+
+290
+00:53:25,687 --> 00:53:52,507
+Now, the third problem is that once you calculate all these unknown ratings, and then once you do a recommendation based on these unknown ratings that you calculated, how are you going to calculate the success of your recommendation algorithm?
+
+291
+00:53:52,507 --> 00:54:00,547
+So, what is a good methodology for evaluating the performance of the recommendation engine?
+
+292
+00:54:02,947 --> 00:54:09,067
+Now, so let's start with the first problem, gathering ratings.
+
+293
+00:54:09,727 --> 00:54:11,967
+Now, there are two ways of gathering ratings.
+
+294
+00:54:12,187 --> 00:54:13,867
+One is explicit ratings.
+
+295
+00:54:14,347 --> 00:54:20,707
+In that case, you can directly ask user to enter their opinion after they watched it, right?
+
+296
+00:54:20,708 --> 00:54:39,887
+So if you watch a movie on Netflix, right after that, you will be shown a star rating and then you are asking user to enter his or her opinion based on the stars that they give, right?
+
+297
+00:54:40,403 --> 00:55:01,803
+For example, if you are DNR, so after somebody purchased a book, you can basically send an email to that person and asking their opinion about how they thought about the book.
+
+298
+00:55:01,803 --> 00:55:12,023
+Okay, so this is basically, this is the case where people are explicitly giving you their opinion.
+
+299
+00:55:12,723 --> 00:55:21,383
+Okay, but as I said earlier, so this doesn't scale because only a small number of users are giving their opinion.
+
+300
+00:55:21,383 --> 00:55:28,463
+Okay, in that case, so we need to look for other ways of gathering ratings.
+
+301
+00:55:28,463 --> 00:55:32,243
+And other ways of gathering ratings are implicit ratings.
+
+302
+00:55:32,863 --> 00:55:32,923
+Okay.
+
+303
+00:55:34,263 --> 00:55:38,403
+So how can you get the user opinion implicitly?
+
+304
+00:55:38,823 --> 00:55:38,983
+Okay.
+
+305
+00:55:39,523 --> 00:55:44,743
+So in that case, you can look at other metrics.
+
+306
+00:55:45,043 --> 00:55:52,343
+Like if somebody watched a movie several times,
+
+307
+00:55:52,343 --> 00:55:56,723
+then you can say that this person must have liked that movie.
+
+308
+00:55:56,723 --> 00:55:57,403
+Okay.
+
+309
+00:55:57,403 --> 00:56:06,484
+So in that case, you could consider that that person who watched a movie multiple times liked that movie.
+
+310
+00:56:07,003 --> 00:56:07,084
+Okay.
+
+311
+00:56:07,423 --> 00:56:13,543
+Then in that case, you can look at the number of views for that particular movie.
+
+312
+00:56:13,883 --> 00:56:19,603
+You can do the same thing for, for example, the music items as well.
+
+313
+00:56:19,603 --> 00:56:34,183
+If a person, a particular person listens to a particular music item on Spotify many times, then you can consider that that person likes that music item very much.
+
+314
+00:56:34,183 --> 00:56:54,764
+And based on basically the frequency that item is watched or listened or purchased by that person, you can increase the rating value that that person gives for that item.
+
+315
+00:56:55,264 --> 00:56:57,624
+So that implicit rating.
+
+316
+00:56:57,743 --> 00:57:03,443
+For example, let's think of Tarantiole, Tarantiole, another e-commerce website.
+
+317
+00:57:03,443 --> 00:57:29,703
+Now, if a person goes to the detail product or item, and if that person looks at the detail of that particular item multiple times in different sessions, in different days, then you can say that that person is highly interested in that item.
+
+318
+00:57:29,704 --> 00:57:37,664
+So therefore, so that person would give higher rating to that particular item.
+
+319
+00:57:38,064 --> 00:57:38,183
+Okay.
+
+320
+00:57:38,644 --> 00:57:41,924
+So this is implicit rating.
+
+321
+00:57:42,124 --> 00:57:48,284
+So by using the number of frequency that person interacted with that particular item,
+
+322
+00:57:48,284 --> 00:57:51,103
+so you can calculate an implicit rating.
+
+323
+00:57:51,484 --> 00:57:54,924
+This is the case where you cannot get the explicit rating.
+
+324
+00:57:55,963 --> 00:57:56,683
+Okay.
+
+325
+00:57:56,683 --> 00:58:22,564
+Now, the second problem was that, okay, if you know, if you know these, if you somehow find these ratings which are collected either explicitly or implicitly, the second problem was how can you calculate these unknown ratings, okay?
+
+326
+00:58:24,980 --> 00:58:41,699
+So for the unknown ratings, so this is the focus of today's lecture. So we are going to learn two algorithms, content-based algorithms and collaborative algorithms. There are others as well, but we will focus on the two different algorithms.
+
+327
+00:58:41,699 --> 00:58:48,439
+and these algorithms help us to find or calculate the unknown ratings.
+
+328
+00:58:48,439 --> 00:58:58,739
+But the only problem with these algorithms is that they require a previous history of the user on that e-commerce website.
+
+329
+00:59:00,739 --> 00:59:11,020
+And so, for example, if a new user comes into the store, so you don't have any previous information about that user
+
+330
+00:59:11,019 --> 00:59:26,099
+purchase behavior or that user music listening history or movie watching history, if you don't
+
+331
+00:59:26,099 --> 00:59:35,340
+have any previous information about it, then you cannot recommend a movie or music item or a book
+
+332
+00:59:35,340 --> 00:59:45,619
+to that person. Or if you have a new item that comes into your store and that particular item has no
+
+333
+00:59:45,619 --> 00:59:51,660
+history attached to it, then it will be difficult for you to recommend that item to the users.
+
+334
+00:59:52,140 --> 01:00:00,959
+So the only problem with the algorithms that we are learning is if they have no history. But this
+
+335
+01:00:00,959 --> 01:00:08,719
+problem is called cold start problem. And so this means that the algorithms that we are going to learn
+
+336
+01:00:08,719 --> 01:00:17,480
+only work when we have certain history accumulated, certain history data accumulated
+
+337
+01:00:17,480 --> 01:00:28,599
+in the database. After that, these recommendations algorithm work in an efficient way.
+
+338
+01:00:28,599 --> 01:00:36,099
+okay okay now we are going to go into details of these algorithms I will start with the content
+
+339
+01:00:36,099 --> 01:00:41,859
+based algorithm but first I want to give a 10 minute break and then we will continue okay
+
+340
+01:00:41,859 --> 01:00:50,079
+we will meet after at 5 after 10 okay we will meet in 10 minutes
+
+341
+01:09:55,796 --> 01:09:56,916
+ok.
+
+342
+01:10:24,243 --> 01:10:30,883
+okay uh let's move forward uh arkadaşlar beni duyuyorsunuz bir şey yapar mısınız?
+
+343
+01:10:30,883 --> 01:10:32,964
+teyde der misiniz?
+
+344
+01:10:32,964 --> 01:10:34,243
+duyuyoruz hocam
+
+345
+01:10:34,243 --> 01:10:43,443
+okay now now we are going to talk about uh the first algorithm this algorithm is called
+
+346
+01:10:46,803 --> 01:10:53,923
+uh recommender uh content based uh recommender uh system algorithm uh so let's
+
+347
+01:10:53,923 --> 01:10:58,924
+and take a look at how this algorithm works.
+
+348
+01:11:02,420 --> 01:11:09,519
+Okay, now the main idea with the content-based recommendation algorithm is that
+
+349
+01:11:09,519 --> 01:11:15,380
+this algorithm recommends items to specific customers
+
+350
+01:11:15,380 --> 01:11:22,340
+based on the previous items rated by that customer, okay?
+
+351
+01:11:23,079 --> 01:11:28,619
+So these items could be movies, websites, blogs, people.
+
+352
+01:11:28,619 --> 01:11:38,979
+It could be any kind of item in different e-commerce stores or social media networks.
+
+353
+01:11:39,879 --> 01:11:42,039
+Now, take a look at this picture.
+
+354
+01:11:42,619 --> 01:11:50,600
+Now, here is the person and this person purchases or likes certain number of items.
+
+355
+01:11:50,600 --> 01:11:58,179
+And what we are doing is that we are creating a future vector for each item.
+
+356
+01:11:58,619 --> 01:12:05,539
+Okay, let's say if this is a movie, then we are creating a future vector for this particular movie.
+
+357
+01:12:05,539 --> 01:12:09,699
+So what kind of futures that this vector might have?
+
+358
+01:12:10,199 --> 01:12:17,640
+The director of the movie, the actors that are in this movie, the genre of this movie,
+
+359
+01:12:17,759 --> 01:12:24,819
+whether it's an action movie or the science fiction movie, et cetera.
+
+360
+01:12:24,820 --> 01:12:29,180
+So we are creating a future vector corresponding to a movie.
+
+361
+01:12:30,120 --> 01:12:30,180
+Okay.
+
+362
+01:12:30,839 --> 01:12:40,379
+And similar to this, for every other item which are liked by user, we are creating a future vector.
+
+363
+01:12:40,540 --> 01:12:44,540
+And we are calling this future vector as item profile vector.
+
+364
+01:12:45,320 --> 01:12:45,559
+Okay.
+
+365
+01:12:45,559 --> 01:12:54,519
+Now, after we create an item profile vector for each of these items that are liked by this user,
+
+366
+01:12:54,780 --> 01:13:01,019
+what we are doing is that we are taking an average of these item profile vectors
+
+367
+01:13:01,019 --> 01:13:06,619
+and we are creating only one vector that represents all these items.
+
+368
+01:13:06,619 --> 01:13:19,780
+And this average vector that we are creating out of these many different item vectors liked by user, it is called user profile vector.
+
+369
+01:13:19,780 --> 01:13:21,380
+Okay.
+
+370
+01:13:22,039 --> 01:13:35,740
+Now the user profile vector that we are creating is only one vector, and it represents the user's previous preferred items.
+
+371
+01:13:36,039 --> 01:13:36,759
+Okay.
+
+372
+01:13:36,759 --> 01:13:52,539
+After we come up with this user profile vector, what we are trying to do, we are trying to compare the user profile vector with every other item profile vector in the database.
+
+373
+01:13:53,319 --> 01:14:02,039
+We are comparing the user profile vector with the item profile vectors that are in the database.
+
+374
+01:14:02,039 --> 01:14:06,140
+Okay, how we are comparing these vectors.
+
+375
+01:14:06,879 --> 01:14:15,159
+So basically every value for every feature value, if you consider this as a real number.
+
+376
+01:14:15,599 --> 01:14:25,860
+Okay, and then so we are looking at the distance vector between the profile, user profile vector and item profile vector.
+
+377
+01:14:25,860 --> 01:14:39,600
+And if the distance between these two vectors is small, then we say that, okay, so this could be one of the items that can be recommended to the user.
+
+378
+01:14:45,555 --> 01:15:06,115
+So, so therefore we are creating an item profile vector in this algorithm for each of the item. Okay, like by user, and then out of the item profile vector, we are creating the profile vector by taking the average of these item profile vector.
+
+379
+01:15:06,115 --> 01:15:31,355
+and after that what we are trying to do is we are comparing the item profile vector, user profile vector with every available item profile vector in the database and then we are recommending those ones that are close to the user profile vector.
+
+380
+01:15:36,819 --> 01:15:37,819
+Şimdi, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu böl
+
+381
+01:16:06,819 --> 01:16:16,479
+In that case, the features that we can pick in order to represent this particular item could be words.
+
+382
+01:16:17,379 --> 01:16:22,639
+These could be the words that are extracted from the article.
+
+383
+01:16:26,639 --> 01:16:36,519
+So in that case, we need to pick the words out of these articles that are important words.
+
+384
+01:16:36,519 --> 01:16:41,079
+So we cannot pick any word that are available in these articles.
+
+385
+01:16:41,659 --> 01:16:51,699
+So in that case, so what we are looking at is we are looking at a metric called TF-IDF, which we learned in the previous lectures.
+
+386
+01:16:53,279 --> 01:16:58,519
+TF-IDF is basically consist of two submetrics.
+
+387
+01:16:58,680 --> 01:17:00,139
+One is the turn frequency.
+
+388
+01:17:00,379 --> 01:17:03,539
+The other one is the inverse document frequency.
+
+389
+01:17:03,539 --> 01:17:05,879
+So what does turn frequency mean?
+
+390
+01:17:05,879 --> 01:17:11,439
+Turn frequency indicates the importance of a word in a given article.
+
+391
+01:17:12,699 --> 01:17:12,819
+Okay.
+
+392
+01:17:13,059 --> 01:17:19,959
+Now, if a word repeats many times in a given article,
+
+393
+01:17:20,219 --> 01:17:24,319
+then we say that that word is important in that article.
+
+394
+01:17:24,919 --> 01:17:25,180
+Okay.
+
+395
+01:17:25,180 --> 01:17:44,360
+So if the frequency of appearance, the frequency of occurrence of that word in that article is high, then the term frequency value will be high and it will tell us that, okay, that word is an important word in that article.
+
+396
+01:17:44,360 --> 01:18:07,140
+Inverse document frequency, if you have a document set collection, for example, if you have a document set collection which consists of 100 documents, okay, if that particular word appears in every document in that document collection, okay,
+
+397
+01:18:07,139 --> 01:18:17,299
+Then you can say that the value of that word in that document collection is not that high because it is everywhere.
+
+398
+01:18:17,979 --> 01:18:18,059
+Okay.
+
+399
+01:18:18,519 --> 01:18:33,199
+If the word appears only in few documents within the document collection, then you can say that that word is highly valuable because it can be rarely found.
+
+400
+01:18:33,199 --> 01:18:50,999
+If something is everywhere, its value is small. If something can rarely be found, in that case, the value of that something is high. You can memorize it in this way.
+
+401
+01:18:50,999 --> 01:19:08,579
+So in that case inverse document frequency, if that word, that particular word appears in many documents, okay, in many documents within a document collection, this n value that you see here will be high.
+
+402
+01:19:09,427 --> 01:19:11,987
+inverse document frequency will be low.
+
+403
+01:19:12,408 --> 01:19:12,487
+Okay.
+
+404
+01:19:13,087 --> 01:19:16,667
+If that document,
+
+405
+01:19:16,927 --> 01:19:18,487
+if that word appears
+
+406
+01:19:18,487 --> 01:19:20,207
+in only a few documents
+
+407
+01:19:20,207 --> 01:19:21,867
+within the whole document collection,
+
+408
+01:19:22,507 --> 01:19:25,827
+this sub i value will be small.
+
+409
+01:19:25,827 --> 01:19:26,768
+In that case,
+
+410
+01:19:26,927 --> 01:19:29,247
+inverse document frequency value will be high.
+
+411
+01:19:29,727 --> 01:19:29,787
+Okay.
+
+412
+01:19:30,268 --> 01:19:31,528
+So in that case,
+
+413
+01:19:32,067 --> 01:19:33,848
+so what we say is that
+
+414
+01:19:33,848 --> 01:19:37,768
+TF indicates the value of a word
+
+415
+01:19:37,768 --> 01:19:39,027
+within one document
+
+416
+01:19:39,027 --> 01:19:40,987
+IDF
+
+417
+01:19:40,987 --> 01:19:43,347
+indikates the value of a word
+
+418
+01:19:43,347 --> 01:19:44,947
+within a document collection.
+
+419
+01:19:45,507 --> 01:19:47,167
+Okay? And when we
+
+420
+01:19:47,167 --> 01:19:49,247
+calculate a value of
+
+421
+01:19:49,247 --> 01:19:51,108
+a word within a
+
+422
+01:19:51,108 --> 01:19:53,027
+document that is
+
+423
+01:19:53,027 --> 01:19:55,288
+within a document set, then
+
+424
+01:19:55,288 --> 01:19:57,468
+what we do is that we multiply
+
+425
+01:19:57,468 --> 01:19:59,647
+the value of term frequency
+
+426
+01:19:59,647 --> 01:20:01,627
+of that word
+
+427
+01:20:01,627 --> 01:20:03,567
+in that document and value
+
+428
+01:20:03,567 --> 01:20:05,327
+of inverse document
+
+429
+01:20:05,327 --> 01:20:06,667
+frequency. Okay?
+
+430
+01:20:06,667 --> 01:20:12,827
+Again, the term frequency indicates the value of a word within a document.
+
+431
+01:20:13,387 --> 01:20:19,527
+Inverse document frequency indicates the value of a word within a document collection.
+
+432
+01:20:20,008 --> 01:20:20,067
+Okay.
+
+433
+01:20:20,547 --> 01:20:29,887
+And once we find the value, the weight, then this also gives us the importance of a word within that document.
+
+434
+01:20:29,887 --> 01:20:37,047
+And we use these, the TF-IDF scores in order to identify the important words.
+
+435
+01:20:37,527 --> 01:20:37,648
+Okay.
+
+436
+01:20:37,887 --> 01:20:49,627
+So once we identify the important words, then so basically we can also use this as a within the future vector of an article.
+
+437
+01:20:55,155 --> 01:21:25,135
+okay now I said that when we calculate the user profile vectors we are calculating the average we are taking the average of the item profile vectors okay now this item profile so this average could be calculated in different ways you can take this simple average or you can take the weighted average of the items in order to calculate the user profile vectors.
+
+438
+01:21:25,155 --> 01:21:26,916
+with the profile vector.
+
+439
+01:21:26,916 --> 01:21:33,036
+There are different variations of this, but for now, let's just focus on the simple average
+
+440
+01:21:33,036 --> 01:21:42,596
+of the item profile vector, which would then give us the user profile vector.
+
+441
+01:21:47,507 --> 01:22:02,727
+Okay, now, so in this case, so let's say items are movies and the futures that we are considering is the actors, right?
+
+442
+01:22:02,727 --> 01:22:17,507
+So in that case, the item profile, when you calculate, when you write the item profile vector, so each feature in that item profile vector will be actor.
+
+443
+01:22:17,987 --> 01:22:24,847
+And if that actor plays in that movie, then we will have one, otherwise we will have zero.
+
+444
+01:22:24,847 --> 01:22:25,567
+Okay.
+
+445
+01:22:26,467 --> 01:22:30,307
+Now, so let's say, so we have a movie.
+
+446
+01:22:30,307 --> 01:22:38,868
+So we have five different movies, let's say, and we have two actors, right?
+
+447
+01:22:39,487 --> 01:22:50,228
+And so in that case, two movies, actor A is in two movies and actor B is in three movies.
+
+448
+01:22:50,228 --> 01:22:58,487
+And let's say, suppose that the user X watched these five different movies, right?
+
+449
+01:22:58,487 --> 01:23:23,847
+So in that case, so when you calculate the user profile vector, so when you calculate the user profile vector, so what you need to do, you need to take the average of five different item profile vector where each item profile vector will correspond to a particular movie, right?
+
+450
+01:23:23,847 --> 01:23:35,107
+Now, in that case, so one way to calculate the user profile vector, as I told you, you can take the simple average.
+
+451
+01:23:36,107 --> 01:23:46,387
+So for each item profile vector, you can take the average of the first elements of these vectors.
+
+452
+01:23:46,387 --> 01:23:50,867
+Then you can take the average of the second element of these five different vectors.
+
+453
+01:23:50,868 --> 01:23:56,388
+Third, take the average of third element of these five different vectors.
+
+454
+01:23:56,987 --> 01:24:01,588
+And then this will give you the user profile vector.
+
+455
+01:24:02,147 --> 01:24:02,207
+Okay.
+
+456
+01:24:02,927 --> 01:24:12,368
+But another way is, so basically you can take the weighted average when you calculate the user profile vector.
+
+457
+01:24:12,368 --> 01:24:28,427
+So in that case, you can say that, for example, the actor number A played in two movies out of five.
+
+458
+01:24:28,787 --> 01:24:31,308
+So therefore, its weight is 0.4.
+
+459
+01:24:32,007 --> 01:24:37,507
+Actor number B is played in three movies out of five.
+
+460
+01:24:37,847 --> 01:24:40,787
+So therefore, its weight is 0.6.
+
+461
+01:24:40,787 --> 01:25:02,467
+So in that case, when you calculate the user profile vector, in that case, if you wanted to take weighted average, then you can use these weighted averages, these weights for each of these features, for each of these actors in the movie or item profile vector.
+
+462
+01:25:02,467 --> 01:25:08,227
+you can use these weights in order to calculate the user profile vector.
+
+463
+01:25:08,707 --> 01:25:11,067
+Okay, so there are two different ways.
+
+464
+01:25:11,167 --> 01:25:12,747
+One, you can take the simple average.
+
+465
+01:25:12,887 --> 01:25:15,547
+The other one, you can use this weighted average.
+
+466
+01:25:15,667 --> 01:25:18,727
+And this is how you can calculate the weights.
+
+467
+01:25:26,836 --> 01:25:49,115
+Okay, now, so in this particular case, basically you can, the same example, so this time, so we have, instead of using the real numbers, this time we have star ratings from 1 to 5.
+
+468
+01:25:49,115 --> 01:25:57,235
+So in that case, actor A's movies rated 3 and 5 by this user, okay?
+
+469
+01:25:57,235 --> 01:26:00,955
+Because this user watched five different movies, right?
+
+470
+01:26:01,516 --> 01:26:06,595
+And in two of them, actor A is playing and three of them, actor B is playing.
+
+471
+01:26:07,235 --> 01:26:15,876
+And this user gave a rate number 3 and rate number 5 for the two movies where the actor A is playing.
+
+472
+01:26:15,875 --> 01:26:18,475
+ve 1, 2, 4
+
+473
+01:26:18,475 --> 01:26:20,475
+to the movies where the actor B
+
+474
+01:26:20,475 --> 01:26:21,035
+is playing.
+
+475
+01:26:21,775 --> 01:26:23,455
+Now in that case
+
+476
+01:26:23,455 --> 01:26:26,695
+what you can do
+
+477
+01:26:26,695 --> 01:26:28,735
+when you calculate
+
+478
+01:26:28,735 --> 01:26:30,295
+the profile weight
+
+479
+01:26:30,295 --> 01:26:32,235
+you can calculate the
+
+480
+01:26:32,235 --> 01:26:33,915
+normalized weights
+
+481
+01:26:33,915 --> 01:26:36,515
+for actor number A and actor
+
+482
+01:26:36,515 --> 01:26:37,115
+number B.
+
+483
+01:26:38,115 --> 01:26:39,975
+Previous version
+
+484
+01:26:39,975 --> 01:26:41,095
+in that case
+
+485
+01:26:41,095 --> 01:26:44,355
+we calculated the weights
+
+486
+01:26:44,355 --> 01:26:46,315
+without normalizing it.
+
+487
+01:26:46,415 --> 01:26:49,495
+But here, so we can do the normalization.
+
+488
+01:26:50,455 --> 01:26:53,995
+So how do we do that?
+
+489
+01:26:56,875 --> 01:27:02,655
+So how many rates that this user gave?
+
+490
+01:27:03,115 --> 01:27:04,515
+So five of them.
+
+491
+01:27:04,516 --> 01:27:16,636
+And the average of these ratings are, the user mean rating is 3.
+
+492
+01:27:17,336 --> 01:27:26,895
+If you add all these things up, so that's for this particular user,
+
+493
+01:27:26,895 --> 01:27:31,815
+and divide by the number of ratings that he gave,
+
+494
+01:27:31,815 --> 01:27:35,015
+then the user rating will be 5.
+
+495
+01:27:37,696 --> 01:27:39,836
+So how do I calculate this?
+
+496
+01:27:40,315 --> 01:27:46,235
+If you add 3, 5, 1, 2, 4,
+
+497
+01:27:46,715 --> 01:27:50,035
+the total value for the ratings is 15.
+
+498
+01:27:50,556 --> 01:27:53,355
+How many ratings that this person gave?
+
+499
+01:27:53,615 --> 01:27:55,215
+1, 2, 3, 4, 5.
+
+500
+01:27:55,696 --> 01:27:56,935
+Five different ratings.
+
+501
+01:27:57,415 --> 01:27:58,875
+15 divided by 5.
+
+502
+01:27:58,875 --> 01:28:05,015
+in average this person gave 3 as a rating to a movie.
+
+503
+01:28:05,515 --> 01:28:12,975
+So in that case, you can say that for the movies where actor A is playing,
+
+504
+01:28:12,975 --> 01:28:20,975
+if I subtract the average, and these would be the normalized ratings
+
+505
+01:28:20,975 --> 01:28:25,795
+that this user would give to the movie where actor A is playing.
+
+506
+01:28:25,795 --> 01:28:37,695
+And if I subtract 3 from these values, and these would be the ratings that this user would give to the movies where actor B is playing.
+
+507
+01:28:37,696 --> 01:28:44,436
+So in that case, if these are the values, then I can calculate the weight.
+
+508
+01:28:44,815 --> 01:28:55,856
+So for the actor A, I can calculate the average weight for the actor B.
+
+509
+01:28:55,955 --> 01:28:58,576
+Now these are the profile weights.
+
+510
+01:28:58,575 --> 01:29:10,435
+And basically by using these weights, I can take the weighted average for the, when I calculate the profile vector out of the item vector.
+
+511
+01:29:12,555 --> 01:29:12,815
+Okay.
+
+512
+01:29:12,815 --> 01:29:20,895
+Now, this is, this is, I just showed you how you can calculate.
+
+513
+01:29:21,328 --> 01:29:25,027
+the user profile vector out of item profile vector
+
+514
+01:29:25,027 --> 01:29:29,628
+by taking the simple average and also weighted average
+
+515
+01:29:29,628 --> 01:29:31,727
+and also normalized weighted average.
+
+516
+01:29:32,168 --> 01:29:34,847
+So after you calculate the user profile vector,
+
+517
+01:29:35,307 --> 01:29:37,187
+now what you need to do,
+
+518
+01:29:37,567 --> 01:29:40,107
+you need to compare the user profile vector
+
+519
+01:29:40,107 --> 01:29:43,168
+against every item profile vector
+
+520
+01:29:43,168 --> 01:29:44,867
+that is available in the database.
+
+521
+01:29:45,567 --> 01:29:45,707
+Okay.
+
+522
+01:29:45,707 --> 01:29:49,147
+And we need to compare
+
+523
+01:29:49,147 --> 01:29:54,048
+and calculate the distance between these two vectors.
+
+524
+01:29:54,728 --> 01:29:56,927
+If the distance is too small,
+
+525
+01:29:57,147 --> 01:29:57,887
+then you can say,
+
+526
+01:29:58,028 --> 01:30:00,087
+okay, these item profile vectors
+
+527
+01:30:00,087 --> 01:30:04,567
+are resembling to the user profile vector.
+
+528
+01:30:04,747 --> 01:30:06,967
+So we can recommend it.
+
+529
+01:30:07,487 --> 01:30:07,527
+Okay.
+
+530
+01:30:08,067 --> 01:30:09,947
+So if you have a two vector,
+
+531
+01:30:10,147 --> 01:30:15,147
+in that case, you can do the cosine similarity.
+
+532
+01:30:15,147 --> 01:30:22,587
+Basically, we are looking at the angle between these two vectors and we are taking cosines of it.
+
+533
+01:30:22,967 --> 01:30:24,587
+So this is the cosine similarity.
+
+534
+01:30:24,587 --> 01:30:35,087
+If the cosine similarity is small, then these two vectors are resembling to each other.
+
+535
+01:30:35,447 --> 01:30:36,988
+So they are almost the same.
+
+536
+01:30:36,987 --> 01:30:49,347
+If the value for cosine similarity is big, then so we are saying that so they are apart from each other, so they don't resemble.
+
+537
+01:30:49,867 --> 01:30:49,907
+Okay.
+
+538
+01:30:51,147 --> 01:30:54,828
+Now, so this is the content-based recommendation algorithm.
+
+539
+01:30:55,107 --> 01:30:55,347
+Okay.
+
+540
+01:30:55,767 --> 01:30:58,987
+And what are the advantages of this algorithm?
+
+541
+01:30:58,987 --> 01:31:08,087
+Basically, with this algorithm, there is no need for other users' data.
+
+542
+01:31:08,407 --> 01:31:13,328
+So you can basically recommend something to me by just analyzing my own data.
+
+543
+01:31:13,887 --> 01:31:13,967
+Okay?
+
+544
+01:31:15,007 --> 01:31:20,387
+And the other advantage is that you can do recommendations.
+
+545
+01:31:20,387 --> 01:31:24,267
+You can make recommendations to those people who have unique taste.
+
+546
+01:31:24,847 --> 01:31:25,087
+Okay?
+
+547
+01:31:25,087 --> 01:31:32,507
+And you can, so for example, people who like classical music, right?
+
+548
+01:31:32,647 --> 01:31:35,548
+People who just listen to classical music all the time.
+
+549
+01:31:35,548 --> 01:31:44,867
+So you can make specific classical music recommendations to those people which has unique taste, okay?
+
+550
+01:31:46,188 --> 01:31:54,567
+And so with this recommendation, you can recommend unpopular items as well.
+
+551
+01:31:54,567 --> 01:32:08,127
+So for example, a new item that comes into the store, so you can basically make a recommendation because we are only looking at the futures, the item profile vector of that particular item.
+
+552
+01:32:08,547 --> 01:32:13,727
+So therefore, we don't need the history attached to that particular item.
+
+553
+01:32:13,887 --> 01:32:16,867
+So we just need to know the futures of it.
+
+554
+01:32:16,867 --> 01:32:25,607
+Therefore, we can recommend new items to the user.
+
+555
+01:32:27,587 --> 01:32:36,048
+And so with this algorithm, so you can also explain the result of the algorithm in a clear way.
+
+556
+01:32:36,447 --> 01:32:40,467
+Because basically, when you do the recommendations, you can say that, okay,
+
+557
+01:32:40,467 --> 01:32:53,387
+Based on, by the analysis of what you have listened in the store or what you have purchased in the store or what you have watched in the store.
+
+558
+01:32:53,887 --> 01:32:56,387
+So we are making you this recommendation.
+
+559
+01:32:56,867 --> 01:32:57,007
+Okay.
+
+560
+01:32:57,287 --> 01:33:01,428
+Based on the user's own history, you are making this recommendation.
+
+561
+01:33:02,048 --> 01:33:08,067
+So therefore, it is easy to explain why you are making this recommendation.
+
+562
+01:33:08,067 --> 01:33:16,287
+But there are disadvantages with this algorithm as well.
+
+563
+01:33:16,287 --> 01:33:18,287
+So one is...
+
+564
+01:33:18,771 --> 01:33:23,132
+Yani, it is difficult to find a future vector for every item.
+
+565
+01:33:23,611 --> 01:33:23,712
+Okay.
+
+566
+01:33:23,971 --> 01:33:37,651
+For example, for a movie, I just gave you some features like the edit, the director of the movie or the actors that are playing in the movie or the genre or other things.
+
+567
+01:33:37,911 --> 01:33:38,091
+Okay.
+
+568
+01:33:38,491 --> 01:33:41,151
+But for example, let's consider the image.
+
+569
+01:33:41,511 --> 01:33:41,731
+Right.
+
+570
+01:33:42,051 --> 01:33:46,671
+So what kind of features that you are going to select for the image?
+
+571
+01:33:46,671 --> 01:33:49,211
+or there are other items
+
+572
+01:33:49,211 --> 01:33:50,371
+for example music
+
+573
+01:33:50,371 --> 01:33:52,531
+so for the music what kind of
+
+574
+01:33:52,531 --> 01:33:54,751
+features that
+
+575
+01:33:54,751 --> 01:33:57,112
+are most representative that you
+
+576
+01:33:57,112 --> 01:33:59,191
+can select related with the music
+
+577
+01:33:59,191 --> 01:34:00,851
+okay finding the
+
+578
+01:34:00,851 --> 01:34:02,632
+correct and appropriate
+
+579
+01:34:02,632 --> 01:34:04,771
+features are difficult
+
+580
+01:34:04,771 --> 01:34:07,011
+for item
+
+581
+01:34:07,011 --> 01:34:09,371
+profile vector but it is highly important
+
+582
+01:34:09,371 --> 01:34:11,011
+the
+
+583
+01:34:11,011 --> 01:34:13,371
+second disadvantage
+
+584
+01:34:13,371 --> 01:34:15,071
+with this algorithm is that
+
+585
+01:34:15,071 --> 01:34:17,051
+Overspecialization,
+
+586
+01:34:17,211 --> 01:34:19,312
+which means that you always
+
+587
+01:34:19,312 --> 01:34:21,191
+recommend the
+
+588
+01:34:21,191 --> 01:34:23,151
+kind of products that
+
+589
+01:34:23,151 --> 01:34:24,992
+this person already know.
+
+590
+01:34:26,032 --> 01:34:27,111
+Okay? For example,
+
+591
+01:34:27,251 --> 01:34:28,971
+I am a classical music listener.
+
+592
+01:34:29,411 --> 01:34:31,172
+You always recommend me
+
+593
+01:34:31,172 --> 01:34:32,952
+the kind of
+
+594
+01:34:32,952 --> 01:34:34,611
+music
+
+595
+01:34:34,611 --> 01:34:38,531
+that I have listened
+
+596
+01:34:38,531 --> 01:34:41,132
+all the time. So, you are
+
+597
+01:34:41,132 --> 01:34:42,911
+never recommending me
+
+598
+01:34:42,911 --> 01:34:47,271
+outside my own interest.
+
+599
+01:34:47,971 --> 01:34:48,032
+Okay?
+
+600
+01:34:48,731 --> 01:34:52,532
+So, but people might have multiple interests, right?
+
+601
+01:34:52,731 --> 01:34:58,431
+So even though I may listen to classical music on Spotify,
+
+602
+01:34:58,431 --> 01:35:00,791
+but this does not necessarily mean
+
+603
+01:35:00,791 --> 01:35:03,911
+that I don't like other kinds of music as well.
+
+604
+01:35:04,231 --> 01:35:04,331
+Okay?
+
+605
+01:35:04,812 --> 01:35:08,051
+So therefore, this recommendation algorithm
+
+606
+01:35:08,051 --> 01:35:14,151
+is only recommending within the user's content profile,
+
+607
+01:35:14,312 --> 01:35:15,611
+within the user's profile.
+
+608
+01:35:15,731 --> 01:35:20,691
+It never recommends something outside the user profile.
+
+609
+01:35:21,352 --> 01:35:21,411
+Okay?
+
+610
+01:35:22,452 --> 01:35:26,951
+The third problem, which is the most important problem,
+
+611
+01:35:27,031 --> 01:35:28,411
+is the cold start problem.
+
+612
+01:35:29,031 --> 01:35:32,632
+So we cannot make any recommendation to the user
+
+613
+01:35:32,632 --> 01:35:35,792
+who has not built a user profile,
+
+614
+01:35:35,792 --> 01:35:36,792
+Bu da birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birçok insanın birç
+
+615
+01:36:00,467 --> 01:36:04,948
+ok, so this is the content-based recommendation algorithm
+
+616
+01:36:11,315 --> 01:36:18,315
+Now, the second algorithm that we are going to talk about is
+
+617
+01:36:18,931 --> 01:36:23,971
+...is the collaborative filtering algorithm.
+
+618
+01:36:27,371 --> 01:36:30,312
+Now with the collaborative filtering algorithm,
+
+619
+01:36:30,711 --> 01:36:35,831
+so what we are doing is that we are looking at the preference of a user,
+
+620
+01:36:36,231 --> 01:36:44,251
+and then we are comparing that preference against the other user's preferences.
+
+621
+01:36:44,251 --> 01:36:45,251
+Okay.
+
+622
+01:36:45,811 --> 01:36:52,731
+And then we find those people that have the same preferences.
+
+623
+01:36:53,231 --> 01:36:53,931
+Okay.
+
+624
+01:36:54,012 --> 01:37:07,251
+Once we find those people that have the same preferences, then we go ahead and recommend the kind of items that the first user has not seen,
+
+625
+01:37:07,251 --> 01:37:15,792
+But other people who have the same similar interests or same preferences have seen to the first user.
+
+626
+01:37:16,551 --> 01:37:16,691
+Okay.
+
+627
+01:37:17,091 --> 01:37:28,491
+So again, so what we are doing is that first we are calculating the preference vector for the user that we want to do recommendations, that we want to do make recommendations.
+
+628
+01:37:29,092 --> 01:37:36,792
+And then we compare these preference vector with the preference vectors of other users in our database.
+
+629
+01:37:37,251 --> 01:37:43,692
+And we find the similar users which has the same preferences.
+
+630
+01:37:44,192 --> 01:37:59,872
+And then we take the items that this person X has not seen, but the people who have the similar preferences has seen as a recommendation to the person X.
+
+631
+01:37:59,871 --> 01:38:01,031
+ok
+
+632
+01:38:01,031 --> 01:38:03,571
+so basically what we are
+
+633
+01:38:03,571 --> 01:38:05,871
+looking what we are doing is that
+
+634
+01:38:05,871 --> 01:38:07,851
+so for example I am
+
+635
+01:38:07,851 --> 01:38:10,011
+a Netflix user
+
+636
+01:38:10,011 --> 01:38:13,851
+so I have some
+
+637
+01:38:13,851 --> 01:38:17,871
+interest some preferences for
+
+638
+01:38:17,871 --> 01:38:19,811
+the movies I like science fiction
+
+639
+01:38:19,811 --> 01:38:21,871
+movies I like history movies
+
+640
+01:38:21,871 --> 01:38:24,051
+etc and then
+
+641
+01:38:24,051 --> 01:38:26,071
+you search the user
+
+642
+01:38:26,071 --> 01:38:27,931
+database with the
+
+643
+01:38:27,931 --> 01:38:34,631
+similar interests and you find those people who have also liked science fiction and history movies
+
+644
+01:38:34,631 --> 01:38:44,792
+and then you you look at those people who have the similar preferences and you look at whether
+
+645
+01:38:44,792 --> 01:38:52,331
+they have seen some other movies other than the history and the science fiction okay and so for
+
+646
+01:38:52,331 --> 01:38:59,271
+For example, in addition to history and science fiction, they also like action movies, right?
+
+647
+01:38:59,271 --> 01:39:15,652
+In that case, you recommend action movies to me based on the fact that similar users, people who have similar preferences, have seen other movies in the action movie category, okay?
+
+648
+01:39:16,491 --> 01:39:21,231
+Basically, this recommendation algorithm is based on the surprise.
+
+649
+01:39:21,232 --> 01:39:33,612
+So the recommendation algorithm surprises me with a kind of item recommendation, which I have not seen so far.
+
+650
+01:39:34,351 --> 01:39:43,192
+But it's likely that I might also like, because people who have the same preferences also liked that movie.
+
+651
+01:39:49,652 --> 01:39:57,531
+Now let's take a look at how we are implementing these collaborative filtering algorithm.
+
+652
+01:39:58,912 --> 01:40:11,051
+Now, so here you see a utility metrics and you see I have four different users and I have seven different movies.
+
+653
+01:40:11,051 --> 01:40:15,211
+And these are the explicit feedbacks.
+
+654
+01:40:15,211 --> 01:40:21,051
+And these are the feedbacks, the star ratings that are given by these users to these movies.
+
+655
+01:40:22,271 --> 01:40:28,832
+Now, again, so what we are trying to find, we are trying to find these unknown values.
+
+656
+01:40:29,571 --> 01:40:31,111
+So that's our purpose.
+
+657
+01:40:31,512 --> 01:40:36,512
+And if we can calculate these unknown values by using the collaborative filtering algorithm,
+
+658
+01:40:36,512 --> 01:41:01,592
+Then whenever, for example, this user A comes to the store, for example, Netflix store, then among the ones that this user A has not seen, which in this case four different movies that user A has not seen, among the ones that he has not seen, we can recommend the ones which has the highest score.
+
+659
+01:41:01,591 --> 01:41:02,651
+Okay.
+
+660
+01:41:03,731 --> 01:41:12,491
+Now, how do we calculate these unknown values by using collaborative filtering algorithm?
+
+661
+01:41:13,451 --> 01:41:20,131
+So first of all, let's take a look at this data and make some observations.
+
+662
+01:41:21,071 --> 01:41:26,051
+For example, let's consider the user A and user B.
+
+663
+01:41:26,052 --> 01:41:35,192
+Now, the user A and user B, they both gave a rating to only one movie.
+
+664
+01:41:35,992 --> 01:41:36,092
+Okay.
+
+665
+01:41:36,592 --> 01:41:41,452
+So, and when they give a rating, you see that they gave high rating.
+
+666
+01:41:42,172 --> 01:41:47,632
+So, this means that they both liked the first movie, Harry Potter 1 movie.
+
+667
+01:41:48,172 --> 01:41:48,471
+Okay.
+
+668
+01:41:49,152 --> 01:41:53,732
+Now, let's take a look at the user number A and user number C.
+
+669
+01:41:53,731 --> 01:42:00,231
+Now, user number A and user number C, they both gave a rating to two movies.
+
+670
+01:42:00,751 --> 01:42:02,271
+The first one, Twilight Zone.
+
+671
+01:42:02,791 --> 01:42:07,191
+The second one, Star Wars 1.
+
+672
+01:42:07,671 --> 01:42:07,731
+Okay.
+
+673
+01:42:08,471 --> 01:42:14,551
+Now, so when you look at the ratings that these users gave to these two movies,
+
+674
+01:42:15,331 --> 01:42:22,631
+the user A liked the Twilight movie and disliked the Star Wars 1.
+
+675
+01:42:22,631 --> 01:42:29,951
+And user C liked Star Wars, but did not like Twilight.
+
+676
+01:42:30,831 --> 01:42:31,071
+Okay.
+
+677
+01:42:31,491 --> 01:42:43,652
+So, which means that the user A and user C has totally dissimilar preferences.
+
+678
+01:42:44,251 --> 01:42:44,491
+Okay.
+
+679
+01:42:44,491 --> 01:42:48,751
+So, for one movie, one of them likes, the other one dislikes.
+
+680
+01:42:48,891 --> 01:42:52,551
+For the other movie, one of them dislikes and the other one likes.
+
+681
+01:42:52,631 --> 01:43:04,311
+OK, so therefore the similarity between the A and B should be bigger than the similarity of preferences between the A and C, right?
+
+682
+01:43:04,391 --> 01:43:06,751
+Because we are talking about preferences.
+
+683
+01:43:06,751 --> 01:43:26,131
+Okay, so therefore by just analyzing these values by intuition, the similarity of preferences of user A and user B should be bigger than the similarity between the user A and C.
+
+684
+01:43:26,131 --> 01:43:40,071
+And what we are looking is, we are looking for the kind of distance function that can help us to capture this intuition.
+
+685
+01:43:40,551 --> 01:43:45,592
+So let's take a look at different distance functions that we have learned so far.
+
+686
+01:43:45,971 --> 01:43:53,811
+Now, one distance function that we have learned so far is Jaccard distance, Jaccard similarity metric.
+
+687
+01:43:54,091 --> 01:44:15,131
+Okay, remember the Jaccard similarity metric. Jaccard similarity metric tells us that if you have two vectors, okay, so basically you can calculate this in such a way that in denominator, you can take the intersection of these two vectors divided by, in the denominator,
+
+688
+01:44:15,131 --> 01:44:18,251
+You can take the union of these two vectors.
+
+689
+01:44:18,812 --> 01:44:18,891
+Okay.
+
+690
+01:44:19,271 --> 01:44:23,692
+So let's apply this Jekker similarity to this data.
+
+691
+01:44:24,352 --> 01:44:29,431
+Now we are trying to find the similarity between A and B by using the Jekker similarity.
+
+692
+01:44:30,192 --> 01:44:37,771
+How many movies that these both users watched together?
+
+693
+01:44:38,471 --> 01:44:43,071
+So what is the intersection of user A and user B?
+
+694
+01:44:43,071 --> 01:44:48,071
+They watched only one movie, okay?
+
+695
+01:44:48,652 --> 01:44:49,591
+Out of how many?
+
+696
+01:44:50,071 --> 01:44:53,891
+Five, because they watched altogether
+
+697
+01:44:53,891 --> 01:44:58,391
+one, two, three, four, five movies, okay?
+
+698
+01:44:58,711 --> 01:44:59,771
+Between the two of them.
+
+699
+01:45:00,412 --> 01:45:02,131
+So therefore, in the denominator,
+
+700
+01:45:02,652 --> 01:45:07,332
+the union of these user A, user B will be five.
+
+701
+01:45:07,332 --> 01:45:15,552
+And for the nominator, they both watched only one movie.
+
+702
+01:45:15,832 --> 01:45:16,872
+So 1 over 5.
+
+703
+01:45:17,431 --> 01:45:21,272
+That's the similarity between A and B based on the Jacquard similarity.
+
+704
+01:45:22,012 --> 01:45:27,391
+Now let's take a look at the similarity between A and C by using the Jacquard similarity.
+
+705
+01:45:28,311 --> 01:45:33,332
+And how many movies that they watched?
+
+706
+01:45:33,332 --> 01:45:45,652
+watched uh so here is one two three four okay a and c uh together they watched uh four different
+
+707
+01:45:45,652 --> 01:45:53,412
+movies okay therefore in the denominator i i i have four how many of them they watched together
+
+708
+01:45:53,412 --> 01:46:01,332
+okay they both um watched these movies so twilight and star wars so therefore we have two okay
+
+709
+01:46:01,332 --> 01:46:08,811
+Şimdi, if you look at the similarity metric, which is based on Jekyll's similarity,
+
+710
+01:46:09,591 --> 01:46:14,272
+so in that case, the similarity between A and C is bigger than A and B.
+
+711
+01:46:14,531 --> 01:46:17,171
+So this is not correct, okay?
+
+712
+01:46:17,471 --> 01:46:21,432
+This is not capturing what we are actually looking for.
+
+713
+01:46:21,531 --> 01:46:26,912
+This is not capturing this intuition that we have seen.
+
+714
+01:46:26,912 --> 01:46:30,192
+One of them likes one movie, the other one dislikes.
+
+715
+01:46:30,192 --> 01:46:32,471
+One of them dislikes, the other one likes.
+
+716
+01:46:32,832 --> 01:46:32,951
+Okay.
+
+717
+01:46:33,311 --> 01:46:46,311
+So we are expecting to find, we are expecting to find that the similarity between A and B should be much,
+
+718
+01:46:46,712 --> 01:46:53,811
+similarity between the A and B should be bigger than similarity between A and C.
+
+719
+01:46:54,212 --> 01:46:57,292
+So the Jekker similarity does not capture that.
+
+720
+01:46:57,292 --> 01:46:57,731
+Okay.
+
+721
+01:46:57,731 --> 01:47:08,671
+Therefore, we cannot use Jacquard similarity in order to find the similarity between the user preferences and between the user preferences.
+
+722
+01:47:10,996 --> 01:47:13,795
+Now let's take a look at the cosine similarity.
+
+723
+01:47:14,355 --> 01:47:14,476
+Okay.
+
+724
+01:47:15,075 --> 01:47:23,635
+So in that case, so let's, so we know the cosine similarity calculation.
+
+725
+01:47:23,635 --> 01:47:30,955
+So when you want to calculate the cosine similarity between the two user preferences,
+
+726
+01:47:31,355 --> 01:47:34,035
+you need to treat each of them as a vector.
+
+727
+01:47:34,555 --> 01:47:38,815
+So therefore, you need to put zero to the unknown values.
+
+728
+01:47:39,055 --> 01:47:39,235
+Okay.
+
+729
+01:47:39,235 --> 01:47:46,536
+If I put zeros to unknown values for user A and user B, then I can calculate the cosine similarity.
+
+730
+01:47:47,275 --> 01:47:56,076
+In that case, the cosine similarity, when you use the equation for the cosine similarity for these two vectors,
+
+731
+01:47:56,576 --> 01:48:00,615
+the value is going to be 0.38, okay?
+
+732
+01:48:00,615 --> 01:48:10,755
+And when you do the same thing for the similarity between A and C, the value will be 0.32.
+
+733
+01:48:11,755 --> 01:48:14,215
+Now, so this here is wrong.
+
+734
+01:48:15,115 --> 01:48:18,356
+Similarity A and B should be bigger than the similarity A and C.
+
+735
+01:48:18,856 --> 01:48:23,315
+But this still does not capture what we are looking for.
+
+736
+01:48:23,315 --> 01:48:23,595
+Okay.
+
+737
+01:48:23,595 --> 01:48:26,576
+Çünkü, if you look at it,
+
+738
+01:48:27,055 --> 01:48:31,255
+the value between the similarity of A and B
+
+739
+01:48:31,255 --> 01:48:34,176
+and the value of similarity A and C
+
+740
+01:48:34,176 --> 01:48:36,576
+is basically close to each other.
+
+741
+01:48:37,515 --> 01:48:39,155
+But what we want is that
+
+742
+01:48:39,155 --> 01:48:41,595
+these similarities should be apart from each other
+
+743
+01:48:41,595 --> 01:48:45,255
+because A and B are highly similar.
+
+744
+01:48:45,496 --> 01:48:47,436
+On the other hand, A and C,
+
+745
+01:48:48,115 --> 01:48:50,975
+the similarity of A and C
+
+746
+01:48:50,975 --> 01:48:55,975
+A and B'ye kadar daha az daha az daha az daha az daha az.
+
+747
+01:48:55,975 --> 01:48:58,955
+Çünkü, sizden görse,
+
+748
+01:48:58,955 --> 01:49:00,755
+aynı filmde de aynı filmde,
+
+749
+01:49:00,755 --> 01:49:03,975
+ama aynı zamanda daha az daha farklı.
+
+750
+01:49:03,975 --> 01:49:08,895
+Tamamen, bu cosignetimde
+
+751
+01:49:08,895 --> 01:49:11,975
+çok daha az daha az daha az.
+
+752
+01:49:11,975 --> 01:49:18,975
+Tamamen, bu yüzden daha az daha az daha az.
+
+753
+01:49:22,771 --> 01:49:23,771
+Şimdi, bu,
+
+754
+01:49:52,771 --> 01:50:01,091
+We are normalizing the ratings of the users by their raw mean.
+
+755
+01:50:01,551 --> 01:50:01,672
+Okay.
+
+756
+01:50:02,331 --> 01:50:03,431
+So what does this mean?
+
+757
+01:50:03,831 --> 01:50:06,051
+Now let's take a look at the user number A.
+
+758
+01:50:06,551 --> 01:50:12,391
+How many ratings that the user A gave to these movies?
+
+759
+01:50:12,571 --> 01:50:13,471
+Three of them, right?
+
+760
+01:50:13,792 --> 01:50:14,071
+Okay.
+
+761
+01:50:14,532 --> 01:50:17,452
+So what is the total ratings that this user gave?
+
+762
+01:50:17,691 --> 01:50:20,251
+Is 4 plus 5 plus 1.
+
+763
+01:50:20,331 --> 01:50:20,911
+That's 10.
+
+764
+01:50:21,231 --> 01:50:22,591
+10 points in total.
+
+765
+01:50:22,771 --> 01:50:31,992
+3. So, what is the average that user A gave to these movies? 10 over 3, right? 10 divided by 3.
+
+766
+01:50:32,291 --> 01:50:45,391
+Now, this is the raw mean for user A. Now, if I subtract 10 over 3 from every rating that user A gave,
+
+767
+01:50:45,391 --> 01:50:52,671
+And then the values will be like this, 2 over 3, 5 over 3, minus 7 over 3.
+
+768
+01:50:53,111 --> 01:50:53,251
+Okay.
+
+769
+01:50:53,571 --> 01:51:07,971
+Now, what I did right now is just I normalized it by subtracting the mean of the ratings that a user gave to all these movies.
+
+770
+01:51:08,731 --> 01:51:12,071
+And I'm going to do the same thing for the user number B.
+
+771
+01:51:12,071 --> 01:51:17,971
+how many ratings that the user gave, three of them.
+
+772
+01:51:19,231 --> 01:51:23,591
+And so what is the total number of ratings that this user gave?
+
+773
+01:51:24,911 --> 01:51:27,651
+14, 14 divided by three.
+
+774
+01:51:28,171 --> 01:51:33,831
+And then this is the 14 divided, three is the raw mean.
+
+775
+01:51:34,231 --> 01:51:38,271
+And then I will subtract this from five and write it here,
+
+776
+01:51:38,271 --> 01:51:40,871
+subtract from five, write it here,
+
+777
+01:51:40,871 --> 01:51:43,491
+subtracted from 4 and write a theory.
+
+778
+01:51:43,891 --> 01:51:47,091
+And I will do the same thing for the user C
+
+779
+01:51:47,091 --> 01:51:50,051
+and I will do the same thing for user D.
+
+780
+01:51:50,651 --> 01:51:53,271
+Now, in the utility matrix,
+
+781
+01:51:54,131 --> 01:51:56,311
+the ratings, the explicit ratings
+
+782
+01:51:56,311 --> 01:51:59,671
+are basically normalized ratings.
+
+783
+01:52:00,451 --> 01:52:00,551
+Okay?
+
+784
+01:52:01,271 --> 01:52:06,291
+Then I can do the cosine similarity.
+
+785
+01:52:06,291 --> 01:52:16,991
+After I normalize the utility matrix by the rho mean, I can do the cosine similarity.
+
+786
+01:52:17,531 --> 01:52:20,291
+So remember what I was doing for the cosine similarity?
+
+787
+01:52:20,491 --> 01:52:23,291
+I was putting zero to the unknown values here.
+
+788
+01:52:23,831 --> 01:52:30,531
+Okay, so once I do that, then I have two vectors and I can calculate the cosine similarity
+
+789
+01:52:30,531 --> 01:52:34,911
+between the rho A and rho B.
+
+790
+01:52:34,911 --> 01:52:40,051
+In this case, the similarity value is 0.09.
+
+791
+01:52:40,652 --> 01:52:42,372
+And I can calculate the similarity,
+
+792
+01:52:42,872 --> 01:52:45,372
+cosine similarity between rho A and rho C.
+
+793
+01:52:45,771 --> 01:52:48,872
+And that's minus 0.56.
+
+794
+01:52:49,971 --> 01:52:50,191
+Okay.
+
+795
+01:52:50,492 --> 01:52:53,731
+Now you can see that the similarity of AB,
+
+796
+01:52:53,731 --> 01:52:56,971
+again, is bigger than the similarity of AC.
+
+797
+01:52:57,451 --> 01:52:59,652
+But now the distance is much bigger.
+
+798
+01:53:00,340 --> 01:53:26,859
+remember previously if I didn't do the normalization, the difference between the similarities, two similarities are not that big, they are close to each other, but in fact they should be far away from each other, but now you see that I can capture the similarity difference as it should be between these two vectors.
+
+799
+01:53:26,859 --> 01:53:51,819
+vectors. Okay. Now, if I use the centered cosine similarity metric in order to calculate the similarity between the user preferences vectors, then the centered cosine similarity or Pearson correlation similarity metric is a good metric to use. Okay.
+
+800
+01:53:59,988 --> 01:54:08,067
+ok now before I go to the rating predictions i'm going to stop right now and give 10 minute break it's
+
+801
+01:54:12,147 --> 01:54:20,387
+so we have so we are going to meet at 11 o'clock sharp and then we will continue okay so i will give 10
+
+802
+01:54:20,387 --> 01:54:27,908
+minute break arkadaşlar on bir de tekrar devam ediyoruz
+
+803
+02:05:02,292 --> 02:05:08,931
+let's move forward. Arkadaşlar, sesim geliyorsa bir teyit eder misiniz? Rica ediyorum.
+
+804
+02:05:23,956 --> 02:05:28,075
+Sesim geliyorsa arkadaşlar ya mikrofonunuzu açın ya da çapten yazın.
+
+805
+02:05:28,456 --> 02:05:30,055
+Bir teyit edin. Öyle devam edeyim.
+
+806
+02:05:30,835 --> 02:05:31,975
+Ses geliyor hocam.
+
+807
+02:05:32,435 --> 02:05:32,995
+Tamam, ok.
+
+808
+02:05:35,635 --> 02:05:36,355
+Ok.
+
+809
+02:05:37,315 --> 02:05:48,556
+So, we said that Pearson correlation is a good similarity metric that we can use in order to compare the user preferences, right?
+
+810
+02:05:48,556 --> 02:06:00,595
+Now let's see how we can apply the Pearson correlation in order to find the unknown ratings.
+
+811
+02:06:00,595 --> 02:06:03,536
+Okay, I want to do this on an example.
+
+812
+02:06:03,695 --> 02:06:06,015
+So let's take a look at this particular example.
+
+813
+02:06:07,435 --> 02:06:11,036
+Now, the collaborative filtering can be used in two ways.
+
+814
+02:06:11,275 --> 02:06:16,615
+So you can do user-user-based collaborative filtering or item-item-based collaborative filtering.
+
+815
+02:06:16,615 --> 02:06:18,555
+It is the same thing.
+
+816
+02:06:19,156 --> 02:06:27,956
+The only difference is that if you do the user-based collaborative filtering,
+
+817
+02:06:28,435 --> 02:06:33,875
+the utility matrix that you are going to use in the roles section,
+
+818
+02:06:34,195 --> 02:06:36,935
+you need to have the users.
+
+819
+02:06:37,295 --> 02:06:40,475
+In the columns, you need to have the items.
+
+820
+02:06:41,316 --> 02:06:46,095
+So this is if you want to do the user collaborative filtering.
+
+821
+02:06:46,615 --> 02:06:55,475
+And if you want to do the item item based collaborative filtering, in that case in the rows you need to have items in this particular case items are movies.
+
+822
+02:06:56,456 --> 02:07:00,115
+In the columns you need to have users.
+
+823
+02:07:00,115 --> 02:07:06,015
+Now I'm going to show you the example on the item item based collaborative filtering.
+
+824
+02:07:06,015 --> 02:07:19,956
+Now, in each item, in each collaborative filtering, so we need to identify the neighborhood value.
+
+825
+02:07:19,956 --> 02:07:26,795
+So which is, in this case, the neighborhood value is 2 in this particular example.
+
+826
+02:07:26,795 --> 02:07:43,075
+So, which basically tells you that, okay, you are going to find the similar users with the similar preferences, okay, but how many users that you are going to look for the similar preferences?
+
+827
+02:07:43,075 --> 02:07:49,676
+In this case, so one of the parameters to this algorithm is the neighborhood value.
+
+828
+02:07:50,036 --> 02:07:59,255
+So which tells you the number of users that you are going to take into account when you find the unknown ratings.
+
+829
+02:07:59,615 --> 02:07:59,735
+Okay.
+
+830
+02:08:00,456 --> 02:08:01,695
+Now, so let's start.
+
+831
+02:08:01,695 --> 02:08:17,655
+So with this example, what I'm going to do is I'm going to find the unknown value for this particular user, for user number five.
+
+832
+02:08:18,075 --> 02:08:28,615
+And I'm going to calculate the unknown value for user number five for movie number one.
+
+833
+02:08:28,615 --> 02:08:37,295
+Okay, so what would user number five give rating for movie number one?
+
+834
+02:08:37,595 --> 02:08:41,255
+Okay, that's the unknown rating that I want to calculate.
+
+835
+02:08:41,915 --> 02:08:47,355
+Okay, now the first thing is that, so what I'm going to do,
+
+836
+02:08:47,355 --> 02:08:55,255
+I'm going to identify the closest to items,
+
+837
+02:08:56,335 --> 02:09:00,735
+closest to movies to movie number one.
+
+838
+02:09:01,255 --> 02:09:01,316
+Okay.
+
+839
+02:09:01,816 --> 02:09:06,795
+And how can I find these closest to movies?
+
+840
+02:09:06,795 --> 02:09:09,975
+I can use the Pearson's correlation metric.
+
+841
+02:09:11,095 --> 02:09:11,215
+Okay.
+
+842
+02:09:12,755 --> 02:09:16,495
+So let us find the Pearson correlation metric.
+
+843
+02:09:17,015 --> 02:09:17,155
+Okay.
+
+844
+02:09:17,663 --> 02:09:31,823
+So what I do is, the first thing that I do is, I compute the mean value for each row.
+
+845
+02:09:31,823 --> 02:09:32,463
+Okay.
+
+846
+02:09:33,323 --> 02:09:39,143
+For example, for the first row, the mean value is 3.6.
+
+847
+02:09:39,143 --> 02:09:49,623
+And then I subtract the mean value from every known metric that I have in the row number one.
+
+848
+02:09:49,623 --> 02:09:53,763
+And then in that case, the row number one becomes like this.
+
+849
+02:09:54,844 --> 02:09:54,943
+Okay.
+
+850
+02:09:56,103 --> 02:10:03,204
+And I do the same thing for row number two, row number three, four, five, six.
+
+851
+02:10:03,623 --> 02:10:03,923
+Okay.
+
+852
+02:10:03,923 --> 02:10:11,883
+So once I do this, now I have normalized version of the utility metrics.
+
+853
+02:10:12,603 --> 02:10:21,003
+And then I can do the cosine similarity between the row vectors by using the,
+
+854
+02:10:21,744 --> 02:10:27,763
+I can use the cosine similarity on the normalized utility metrics, okay?
+
+855
+02:10:27,763 --> 02:10:33,683
+And when I do that, in that case, I can find these similarity values, okay?
+
+856
+02:10:33,923 --> 02:10:38,543
+Now, so this is the similarity metric value,
+
+857
+02:10:39,503 --> 02:10:41,343
+cosine similarity metric value
+
+858
+02:10:41,343 --> 02:10:44,163
+between row number one and row number one.
+
+859
+02:10:44,443 --> 02:10:46,023
+So which means that basically,
+
+860
+02:10:46,343 --> 02:10:51,343
+so if two vectors are the same,
+
+861
+02:10:51,523 --> 02:10:54,223
+then the similarity metric will be one, okay?
+
+862
+02:10:55,243 --> 02:10:59,083
+And now, so this value is the similarity metric
+
+863
+02:10:59,083 --> 02:11:01,543
+between row number two and row number one.
+
+864
+02:11:01,543 --> 02:11:02,543
+ve bu bir
+
+865
+02:11:31,543 --> 02:11:58,623
+So, after I calculate the similarity matrix, cosine similarity matrix, centered cosine similarity matrix between the row vectors, between the each row vector and the first row vector.
+
+866
+02:11:58,623 --> 02:12:05,043
+Because remember, the unknown value that I want to calculate is in row number one.
+
+867
+02:12:05,883 --> 02:12:05,943
+Okay.
+
+868
+02:12:06,443 --> 02:12:14,923
+So then I find the closest, I find the two closest row vectors.
+
+869
+02:12:15,343 --> 02:12:15,523
+Okay.
+
+870
+02:12:15,883 --> 02:12:19,283
+So where do I get the value to?
+
+871
+02:12:19,383 --> 02:12:21,263
+Because it is given as a parameter.
+
+872
+02:12:21,263 --> 02:12:21,803
+Okay.
+
+873
+02:12:21,803 --> 02:12:33,223
+And I find these row vectors that has the highest similarity, which in this case row number three and row number six.
+
+874
+02:12:33,983 --> 02:12:45,984
+And I also want to make sure that in these row vectors, I have some values for user number five.
+
+875
+02:12:45,983 --> 02:12:55,183
+So, which means that user number 5 gave ratings to movie number 3 and movie number 6.
+
+876
+02:12:55,863 --> 02:12:55,963
+Okay?
+
+877
+02:12:57,443 --> 02:13:05,303
+And so, after that, what I do is that by using these two values,
+
+878
+02:13:05,403 --> 02:13:09,243
+I am going to calculate the unknown value.
+
+879
+02:13:09,603 --> 02:13:12,163
+So, which I initially wanted to calculate.
+
+880
+02:13:12,463 --> 02:13:12,723
+Okay?
+
+881
+02:13:12,843 --> 02:13:13,843
+How do I do that?
+
+882
+02:13:18,836 --> 02:13:31,375
+So remember, I calculated the similarity between row number 3 and row number 1, which was 0.41, and row number 6 and row number 1, which was 0.56.
+
+883
+02:13:31,375 --> 02:13:43,275
+Okay, now I'm going to calculate the weighted average of these two in order to calculate the unknown value.
+
+884
+02:13:43,436 --> 02:13:44,475
+How do I do that?
+
+885
+02:13:44,475 --> 02:13:48,235
+Okay.
+
+886
+02:13:48,715 --> 02:13:50,955
+As you see, I'm taking the weighted average.
+
+887
+02:13:51,536 --> 02:13:51,836
+Okay.
+
+888
+02:13:52,696 --> 02:13:55,035
+I'm taking the similarity
+
+889
+02:13:55,035 --> 02:14:00,376
+between the row number 3 and row number 1,
+
+890
+02:14:00,455 --> 02:14:01,775
+which is 0.41,
+
+891
+02:14:02,275 --> 02:14:03,895
+multiply with this value here,
+
+892
+02:14:04,575 --> 02:14:05,836
+taking the similarity
+
+893
+02:14:05,836 --> 02:14:09,035
+between the row number 6 and row number 1,
+
+894
+02:14:09,095 --> 02:14:10,935
+which was 0.56,
+
+895
+02:14:11,696 --> 02:14:13,516
+and multiply with this value 3.
+
+896
+02:14:13,516 --> 02:14:15,896
+Okay, that's in the denominator section.
+
+897
+02:14:16,115 --> 02:14:23,096
+In the denominator, I am adding the similarity values, 0.41 and 0.56.
+
+898
+02:14:23,715 --> 02:14:27,075
+That gives me the value 2.6.
+
+899
+02:14:27,416 --> 02:14:31,755
+And this is the unknown value that I wanted to calculate.
+
+900
+02:14:32,596 --> 02:14:40,276
+Now, similar to this, I am calculating the all unknown values that exist in the utility
+
+901
+02:14:40,276 --> 02:14:42,455
+matrix.
+
+902
+02:14:42,455 --> 02:14:43,295
+Okay.
+
+903
+02:14:43,516 --> 02:15:04,276
+Now, after I calculate all unknown values, so whenever, for example, user 5 comes into my movie store, then, so as you know, so these are the ones that this user number 5 already watched, okay?
+
+904
+02:15:04,275 --> 02:15:09,175
+So this one and this one are the ones that he didn't watch.
+
+905
+02:15:09,775 --> 02:15:09,915
+Okay.
+
+906
+02:15:10,335 --> 02:15:17,895
+So whichever unknown value is the highest, then I'm going to recommend that movie to that user.
+
+907
+02:15:18,395 --> 02:15:18,655
+Okay.
+
+908
+02:15:19,235 --> 02:15:20,575
+So I'm doing the same thing.
+
+909
+02:15:20,575 --> 02:15:25,555
+I'm going to calculate the unknown value for all the white squares here.
+
+910
+02:15:25,555 --> 02:15:36,655
+And then whenever that user comes to my store, whichever unknown calculated score is highest, then I'm going to recommend that movie to that user.
+
+911
+02:15:36,975 --> 02:15:37,075
+Okay.
+
+912
+02:15:37,535 --> 02:15:41,595
+So that's the collaborative filtering algorithm.
+
+913
+02:15:46,163 --> 02:15:52,743
+Now, as I said, so you can do this user-user collaborative filtering.
+
+914
+02:15:53,023 --> 02:16:00,603
+You can do this in two ways, user-user collaborative filtering or item-item collaborative filtering.
+
+915
+02:16:00,603 --> 02:16:12,584
+They both work, but in practice, item-item-based collaborative filtering performs better compared to user-user-based collaborative filtering.
+
+916
+02:16:12,584 --> 02:16:21,323
+The main thing is that here, as you see, in user-user-based collaborative filtering, we are comparing the users.
+
+917
+02:16:21,864 --> 02:16:26,763
+We are comparing the similarity between the user's raw vectors.
+
+918
+02:16:26,763 --> 02:16:47,283
+But when you are comparing the user's similarities, the user's preferences may differ in many different ways.
+
+919
+02:16:47,283 --> 02:16:56,803
+So for example, I might like classical music, at the same time I might also like rock music.
+
+920
+02:16:57,143 --> 02:17:03,384
+So I might have totally different preferences.
+
+921
+02:17:03,384 --> 02:17:28,384
+So since human health might have complex preferences, when you compare the two different person, the user-based collaborative filtering may not capture the preference similarity,
+
+922
+02:17:58,384 --> 02:18:05,723
+in much better way compared to the user user base collaborative filtering so therefore in practice
+
+923
+02:18:05,723 --> 02:18:13,223
+even though they the both methods are works fine item item based collaborative filtering
+
+924
+02:18:13,223 --> 02:18:20,984
+performs much better compared to user user base filtering collaborative filtering
+
+925
+02:18:20,983 --> 02:18:24,503
+Okay.
+
+926
+02:18:25,303 --> 02:18:28,703
+The last thing that I want to mention is that,
+
+927
+02:18:28,823 --> 02:18:34,243
+so remember when we first talked about these algorithms,
+
+928
+02:18:34,243 --> 02:18:38,563
+we said these recommendation algorithms,
+
+929
+02:18:38,863 --> 02:18:40,743
+we mentioned three different problems.
+
+930
+02:18:40,903 --> 02:18:45,223
+One problem was gathering the known metrics.
+
+931
+02:18:45,223 --> 02:18:54,363
+The second problem was how you can find the unknown values by using the recommendation algorithms.
+
+932
+02:18:54,983 --> 02:18:58,044
+For this, we learned two different methodologies.
+
+933
+02:18:58,223 --> 02:18:59,943
+One is content-based filtering.
+
+934
+02:19:00,123 --> 02:19:04,683
+The other one is collaborative filtering.
+
+935
+02:19:04,683 --> 02:19:11,384
+And for collaborative filtering, we talked about user-user-based collaborative filtering and item-eiting-based collaborative filtering.
+
+936
+02:19:11,384 --> 02:19:26,803
+Now the third problem is that after you find the unknown values, how can you understand the performance of a recommendation algorithm?
+
+937
+02:19:27,164 --> 02:19:32,104
+Now let's talk about evaluating the recommendation algorithm.
+
+938
+02:19:32,819 --> 02:19:39,339
+Okay, now this is the evaluation methodology.
+
+939
+02:19:39,579 --> 02:19:42,099
+For example, this is my utility metrics.
+
+940
+02:19:42,099 --> 02:19:49,019
+In this particular utility metrics, rows are users and the columns are items.
+
+941
+02:19:49,219 --> 02:19:50,920
+In this particular case, movies.
+
+942
+02:19:51,580 --> 02:19:56,559
+And these are known ratings.
+
+943
+02:19:56,559 --> 02:20:18,199
+Now, by using either the content-based filtering algorithm or the user-user-based collaborative filtering algorithm, I can compute the unknown values here.
+
+944
+02:20:18,199 --> 02:20:29,819
+Now, after I compute the unknown values, then I need to have a methodology for evaluating the performance of this algorithm.
+
+945
+02:20:30,839 --> 02:20:37,799
+Now, one way to evaluate these performance of recommendation algorithms is you can do a survey.
+
+946
+02:20:37,939 --> 02:20:43,019
+You can ask users to evaluate the result of the recommendation.
+
+947
+02:20:43,019 --> 02:20:48,519
+So you can say, okay, I'm going to recommend you five different movies.
+
+948
+02:20:48,739 --> 02:20:54,439
+Please tell me whether the recommendation that I provide you makes sense.
+
+949
+02:20:55,180 --> 02:20:58,979
+Do you like the recommendations that I provide to you?
+
+950
+02:20:59,139 --> 02:20:59,259
+Okay.
+
+951
+02:20:59,719 --> 02:21:03,799
+But getting feedback from the user is highly difficult.
+
+952
+02:21:04,159 --> 02:21:04,419
+Okay.
+
+953
+02:21:04,419 --> 02:21:12,519
+So therefore, we need to have other methodologies that can tell us how successful the recommendations are.
+
+954
+02:21:13,019 --> 02:21:25,479
+Now, in order to do this, one way is to identify a small portion of the utility metrics as the test data.
+
+955
+02:21:26,180 --> 02:21:33,699
+And as you see here, I have one, two, three, four, five known metrics, right?
+
+956
+02:21:34,159 --> 02:21:38,719
+And I identify this area as the test data.
+
+957
+02:21:38,719 --> 02:21:45,299
+And I know the values for these five different ratings.
+
+958
+02:21:45,939 --> 02:21:53,879
+But for the test data, I'm going to consider this as if I don't know these values.
+
+959
+02:21:54,939 --> 02:22:04,099
+And I will just put question mark here for the ratings that I already know.
+
+960
+02:22:04,099 --> 02:22:11,540
+And then I'm going to apply the both content-based filtering and user-user-based collaborative filtering algorithms.
+
+961
+02:22:11,779 --> 02:22:18,719
+And I will find the values for all unknown values, including the question marks.
+
+962
+02:22:19,379 --> 02:22:19,499
+Okay.
+
+963
+02:22:19,920 --> 02:22:27,019
+Now, in the test data, I have the known metrics, the ground truth data.
+
+964
+02:22:27,219 --> 02:22:30,620
+And also I have the calculated ratings.
+
+965
+02:22:30,620 --> 02:22:31,019
+Okay.
+
+966
+02:22:31,019 --> 02:22:36,620
+Kalkülültü based on the content base and user user collaborative filtering based algorithms.
+
+967
+02:22:36,999 --> 02:22:37,120
+Okay.
+
+968
+02:22:37,659 --> 02:22:41,040
+So once these values are calculated, then I can.
+
+969
+02:22:41,999 --> 02:22:44,599
+I can use the.
+
+970
+02:22:45,319 --> 02:22:48,659
+So it's one of the error.
+
+971
+02:22:52,019 --> 02:22:53,620
+Evaluating algorithms.
+
+972
+02:22:53,620 --> 02:23:05,400
+So I can basically use root mean square error, which will tell me the difference between the actual rating and the predicted rating.
+
+973
+02:23:05,720 --> 02:23:05,780
+Okay.
+
+974
+02:23:06,299 --> 02:23:11,620
+And so root mean square error is one of the error computation methodologies.
+
+975
+02:23:12,560 --> 02:23:21,500
+There are different versions as well, like mean average error or mean average percentage error.
+
+976
+02:23:21,499 --> 02:23:25,199
+These are other metrics other than the root mean square error.
+
+977
+02:23:25,600 --> 02:23:36,999
+okay, so this this will tell me that how is how different is the actual ratings than the calculated or predicted ratings okay.
+
+978
+02:23:36,999 --> 02:23:55,100
+Now if the root mean squared error is small and in that case I would say okay my recommendation algorithm provides a good recommendations if the root mean square error is big then I would say that okay my recommendation algorithm needs some optimizations.
+
+979
+02:23:59,924 --> 02:24:09,203
+okay and so again the root mean square error is a one way to evaluate the predictions the other
+
+980
+02:24:09,203 --> 02:24:18,083
+alternate other alternatives is based on the user surveys okay so in that case basically you get
+
+981
+02:24:18,083 --> 02:24:28,563
+the user's evaluations in order to compute the success of the recommendation algorithm okay
+
+982
+02:24:28,563 --> 02:24:40,623
+Now, I'm going to stop here and just talk about, again, the term projects.
+
+983
+02:24:41,623 --> 02:24:43,023
+So let me see.
+
+984
+02:25:57,652 --> 02:26:11,851
+ok. Now, you already, I assume you already submitted your term project proposal. Now, this is the first thing that you have done. Now, you need to start with your proposal as if I said, okay, all right.
+
+985
+02:26:11,851 --> 02:26:27,551
+for the project proposals that I need more clarification or I think there should be the project proposals should have more requirements in it.
+
+986
+02:26:27,551 --> 02:26:35,852
+In that case, I will get in touch with you. If you don't hear anything from me, you should assume that you need to start with your project immediately.
+
+987
+02:26:35,852 --> 02:26:45,692
+okay what i want you to do so at the end of the make sure that you have sent your project proposal to
+
+988
+02:26:45,692 --> 02:26:53,251
+this email today if you haven't sent it already by the end of day so i want you to send your project
+
+989
+02:26:53,251 --> 02:27:02,631
+proposal to that email address if you did not send your project proposal i will consider that you're
+
+990
+02:27:02,631 --> 02:27:09,331
+not going to do term project. The term project has 30% weight in your total grade, so it's highly
+
+991
+02:27:09,331 --> 02:27:18,011
+important, okay? Now, at the end of the semester, in the last week of the semester, what I will do, I will
+
+992
+02:27:18,011 --> 02:27:28,151
+go through each project team, and I will expect each project team to do a demonstration of the project,
+
+993
+02:27:28,152 --> 02:27:40,192
+and also give a small presentation to me, explain how their project code works and they will show me the codes and also the demo of the project.
+
+994
+02:27:40,192 --> 02:27:49,052
+So you have limited amount of time. So you should start immediately in order to complete it before the deadline.
+
+995
+02:27:49,051 --> 02:28:12,691
+Okay. And so, and again, you should not wait for my approval. You should start implementing your project immediately. And for the projects that needs additional requirements, I will get in touch with you unless you don't hear from me. So you should consider that your project is okay.
+
+996
+02:28:12,691 --> 02:28:22,271
+arkadaşlar sorunuz var mıdır projelerle ilgili yahut da sınavlarınızla ilgili?
+
+997
+02:28:34,164 --> 02:28:57,683
+Evet, soru yok anladığım kadarıyla. Again, if you don't sunumlar şu anlık sınıfta olacak diye düşünün arkadaşlar. Sınıfta olacak. Her projek grubunun yanına gideceğim. Öyle değerlendireceğim ama eğer bir değişiklik olursa sunumları çok rahatlıkla online de yapabiliriz.
+
+998
+02:29:04,340 --> 02:29:23,879
+okey, teşekkür ederim katılmanız için. Evet, şey, ayın son haftası oluyor bu dönemin bitişi. Dolayısıyla şey, son hafta çarşamba günü düşünebilirsiniz projenin demosu ve deadline için.
+
+999
+02:29:29,012 --> 02:29:33,251
+Tamamdır. Teşekkür ederim katılımınız için. İyi günler dilerim, iyi dersler dilerim arkadaşlar.

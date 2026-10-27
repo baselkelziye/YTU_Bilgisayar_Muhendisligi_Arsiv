@@ -392,6 +392,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1Y9GsiJLU9QwoG9uto5Qq4kadXJc4ya43?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Büyük Veri İşleme ve Analizi Ders Kayıtları Altyazıları](./B%C3%BCy%C3%BCk%20Veri%20%C4%B0%C5%9Fleme%20ve%20Analizi/ders_kayitlari/) ✨
 - 📄 **Proje:** [GitHub'dan örnek proje dökümanları](https://github.com/tahtaciburak/bigdata-term-project) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
