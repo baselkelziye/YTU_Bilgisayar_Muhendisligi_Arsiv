@@ -1,0 +1,2823 @@
+1
+00:00:05,331 --> 00:00:06,331
+Uf!
+
+2
+00:00:10,003 --> 00:00:10,363
+grup.
+
+3
+00:00:24,211 --> 00:00:26,211
+Evet, merhaba arkadaşlar.
+
+4
+00:00:30,211 --> 00:00:33,172
+Kaç kişiyse? 15 şey, bayağı varız.
+
+5
+00:00:34,871 --> 00:00:37,111
+Duyabiliyor musunuz? Herhangi bir tepki olmadığı için.
+
+6
+00:00:39,231 --> 00:00:40,431
+Canlı bir şey alayım.
+
+7
+00:00:40,431 --> 00:00:40,991
+Biliyoruz hocam.
+
+8
+00:00:41,571 --> 00:00:42,351
+Tamam, süper.
+
+9
+00:00:43,671 --> 00:00:44,632
+Görüntü geliyor.
+
+10
+00:00:45,831 --> 00:00:47,531
+Slideler geliyor. Değil mi?
+
+11
+00:00:48,571 --> 00:00:48,931
+Evet.
+
+12
+00:00:50,271 --> 00:00:51,091
+Tamam, süper.
+
+13
+00:00:51,091 --> 00:01:03,212
+Bir 3-5 dakika bekleyelim. Ders saati de tam gelmedi. 17'de olmadı galiba. 16-58 gibi bir şey görüyorum ben.
+
+14
+00:01:07,212 --> 00:01:10,612
+Bunu beklemen de katılım sesi biraz daha artsın. Onu beklelim.
+
+15
+00:05:53,747 --> 00:06:11,787
+Evet, merhaba arkadaşlar. Herkes burada herhalde. En azından çoğunluk burada herhalde. Dolayısıyla ufaktan başlayalım. Zaten kayıt alınıyor. En kötü ihtimal kaçıran arkadaşlar. Daha sonra yakalayacaktır.
+
+16
+00:06:13,307 --> 00:06:21,867
+Şimdi, geçen hafta bilgisayar ağlarıyla ilgili genel bir konuşma yapmıştık. Özellikler nasıl değerlendirdiğimiz, kategorizasyon vs.
+
+17
+00:06:23,747 --> 00:06:47,088
+Bu haftada aslında bununla ilgili biraz çalışacağız. Yani bir bilgisayar ağı dediğimiz zaman bu ağın özelliklerini, niteliklerini nasıl oluşturuyoruz, nasıl formülize ediyoruz, bu ağ içerisinde yapılması gereken işleri nasıl parçalara veriyoruz, bunu konuşacağız.
+
+18
+00:06:47,088 --> 00:06:49,347
+sonra da en temel kısımdan başlayacağız.
+
+19
+00:06:50,047 --> 00:06:52,907
+Yani aslında temel bilgiden başlayacağız.
+
+20
+00:06:53,428 --> 00:06:54,808
+Kodlama kısmından başlıyoruz.
+
+21
+00:06:54,948 --> 00:06:58,928
+Kodlama derken bu miniseriyon ortamında yaptığımız program geliştirme anlamında kodlama değil.
+
+22
+00:07:01,207 --> 00:07:03,567
+Sinyallerin kodlanmasını konuşacağız.
+
+23
+00:07:03,567 --> 00:07:13,567
+Yani şimdi normal şartlarda en alt network'ü tariflerken katman katman tariflediğimizi zaten konuşmuştuk.
+
+24
+00:07:13,567 --> 00:07:43,548
+konuşmuştuk. Akabinde de bununla ilgili çeşitli referans modelleri, başvur modelleri olduğunu konuşmuştuk. Bugün bu kapsamda OSI'yi konuşacağız. OSI'nin katmanlarını genel olarak konuşacağız. Sonra da adım adım bu katmanlara yönelik bu ders kapsamında konuşulması gereken kısımları konuşmaya başlıyoruz. Ama bununla ilgili temel bilgi aslında bizim sinyallerimiz, bu sinyalleri nasıl ifade ettiğimiz, bu ifadeler arasında nasıl dönüşümler sağlayabiliriz.
+
+25
+00:07:43,567 --> 00:07:57,548
+Çünkü hep ne demiştik katmanlı yapıyı konuşurken birinci katman yani fiziksel katman aslında bizim elimizdeki veriyi yani bilgisayar alanından bahsediyorsak veriden bahsediyoruz.
+
+26
+00:07:57,547 --> 00:08:10,547
+veriyi 0-1'lerden nasıl o hak üzerinde iletilebilecek sinyallere dönüştürmekten sorumluydu.
+
+27
+00:08:10,547 --> 00:08:21,747
+Aynı şekilde karşı tarafta da biri bitlerden sinyallere işaretlere dönüştürüyorsa diğer tarafında işaretlerden bitlere dönüştürüyor olması lazım.
+
+28
+00:08:21,747 --> 00:08:34,587
+Dolayısıyla bu yapı içerisinde sinyal kavramını, bu sinyallerin nasıl kodlanabileceğini vesaire konuşacağız temel olarak.
+
+29
+00:08:36,208 --> 00:08:42,628
+Bir saniye gene bunun fokusu kaydettiğimde şunu kapatayım. Ekranda fazla yer kapsıyor.
+
+30
+00:08:42,627 --> 00:08:51,647
+Şimdi baktığımız zaman referans modeli olarak günümüzde aslında iki tane referans modeli var.
+
+31
+00:08:51,647 --> 00:08:59,507
+Yani bunun hem tarihçesinde hem de politik yanlarını daha sonra oturup şey keyif için okuyabilirsiniz isterseniz ama
+
+32
+00:08:59,507 --> 00:09:12,007
+bu iki modelden bir tanesi OSI referans modeli yani Open System Interconnection
+
+33
+00:09:12,007 --> 00:09:22,667
+Bu başvuru modeli aslında ISO tarafından ortaya konmuş ve hani Dejur hatırlayın, Dejur 2'den standart vardı.
+
+34
+00:09:23,527 --> 00:09:29,968
+Bir standarttı. Dikkat edin bu bir iletişim kuralı değil, bir protokol de değil, bir başvuru modeli.
+
+35
+00:09:29,968 --> 00:09:39,007
+Yani bilgisayar aranı tasarım anlamında kolaylaştıracak bir model sunuyor size.
+
+36
+00:09:39,007 --> 00:09:51,687
+Bu modelde de diyor ki şu şu şu katmanlar vardır, bu katmanlar şu şu şu özelliklere sahip olmadır, şu fonksiyonu bu katmanda, bu fonksiyonu bu katmanda gerçekleştirilmelidir şeklinde.
+
+37
+00:09:52,371 --> 00:10:11,311
+bir yapı, bir başvuru modeli. Yani bir ağ tasarlayacaksınız. Bu modele göre tasarlayabilirsiniz. Şimdi aslına bakarsınız iki tane referans modeli var günümüzde. Bunlardan biri OSI, bir de TCP, IP.
+
+38
+00:10:11,311 --> 00:10:21,851
+Şimdi bekten diye ifade edilen o zamanki durumda aslında şeyi görülüyor.
+
+39
+00:10:24,271 --> 00:10:37,271
+İnternet öncesi çağ gitgide şey yaparken bilgisayar ağları yaygınlaşırken, gelişirken bir standartizasyon ihtiyacı doyuluyor.
+
+40
+00:10:37,271 --> 00:10:55,771
+Yani ne yapılması lazım? Farklı üreticiler, farklı yani hem donanım anlamında hem işletim sistemi anlamında farklı üreticiler var. Bu üreticilerin bir ağ üzerinde bir araya geldiklerinde çalışabilmeleri lazım.
+
+41
+00:10:55,771 --> 00:11:18,331
+Dolayısıyla esnek bir yapı lazım. Dolayısıyla açık bir yapı lazım. Interoperable bir yapı lazım. Herhangi bir zamanda kolay açıklanabilecek yani benim size anlatmam, sizin anlamanız ya da sizin o anladığınız bilgiyi bir baştasına aktarmasının kolay olacağı bir yapıya ihtiyaç var.
+
+42
+00:11:18,331 --> 00:11:29,991
+Bununla ilgili iki yol izleniyor. Biri işte OSI tarafından oluşturan, pardon ISO tarafından oluşturan OSI referans modeli.
+
+43
+00:11:32,691 --> 00:11:41,592
+Üreticilerin, organizasyonların vesairenin bir araya gelip o öyle olsun, bu böyle olsun, şu şöyle olsun falan diye tanımlamaya başlaması.
+
+44
+00:11:41,592 --> 00:11:49,632
+Diğeri de zaten var olan, yürümekte olan ve canlı olan TCP, IP'den bir referans modeli çıkartılması.
+
+45
+00:11:50,071 --> 00:11:52,952
+Dikkat edin iki referans model arasında çalışma ters yönde.
+
+46
+00:11:53,471 --> 00:11:59,592
+Yani normalde OSI referans modeli olması gerektiği gibi tasarlanmış bir model.
+
+47
+00:11:59,752 --> 00:12:09,592
+Yani bir insanların bir şey yapmadığınız için bir araya gelmesi, sorunların vesaireyi tespit etmesi, ona göre bir yapı oluşturması, sonra da implementasyon modeli.
+
+48
+00:12:09,592 --> 00:12:30,312
+ve fakat siz bu süreci politikayla kirletirsiniz, siz bu süreci olması gereken uzun bir şeyde tutarsanız ve bu işi de yaparken baştaki niyetinizden uzak bir şekilde bazı tasarım kararları alırsınız, işler sarpa sarar.
+
+49
+00:12:30,312 --> 00:12:49,972
+Misal zaten canlı olan, aktif olan, yürümekte olan bir IP implementasyonu var. Dolayısıyla o implementasyon hayatına devam edip yaygınlaşmış, de jür bir standart değil ama de facto bir standart haline gelmiş. Dolayısıyla da onun üzerinden bir referans modeli oluşturulmuş.
+
+50
+00:12:49,971 --> 00:13:12,091
+Günümüzde baktığınız zaman şeyin nedir o? OSI referans modelinin doğrudan kullanıldığı bir protokol pek yok. Yani token ringte, IBM'in token ringinde zamanında kullanılmış token ringte hala bir yerlerde kullanılıyor.
+
+51
+00:13:12,091 --> 00:13:19,111
+Yani birebir olmasa bile en azından çok yakın belli anlamlarda. Yani bu referans model baz alınarak yapılmış bir şey.
+
+52
+00:13:19,971 --> 00:13:39,971
+Ama TCP, IP her yerde kullanılıyor. Yani bazen çok formul olmak, her şeyi düzgün yapmaya çalışmak sizi geciktiriyor. Geciktirdiği zaman da hata olan Üsküdar'ı geçiyor. Ama bu TCP, IP'nin çok mükemmel bir protokolü.
+
+53
+00:13:40,500 --> 00:13:49,579
+bir, pardon, referans modeli olduğu anlamına gelmez. Protokol yiyemi olarak da, protokol stek olarak da oldukça sıkıntılı bir yapı.
+
+54
+00:13:49,579 --> 00:13:59,079
+Ve fakat şeyin avantajı önemli. Zaten çalışıyor ve hala hazırda var olmuş olması o dönemde önemli bir etken.
+
+55
+00:14:00,180 --> 00:14:08,439
+Dolayısıyla bu ders kapsamında da, daha sonra önümüzdeki bilgisayar ağlarında da, pardon Ağ Teknolojileri dersinde de,
+
+56
+00:14:08,439 --> 00:14:14,619
+Aslında hep OSI başvuru modeli, OSI referans modeli üzerinden konuşuyor olacağız.
+
+57
+00:14:16,159 --> 00:14:29,619
+Her ne kadar bu standartizasyon sürecinde yaşanan aksatlar vs. politik problemler de olsa hala OSI bazı temel hedeflerini tutturmuş durumda.
+
+58
+00:14:29,619 --> 00:14:43,979
+tasarım hedeflerine, mesela kolay anlatılabilen bir yapı. Belli anlamlarda birlikte işleyebilmeyi yani interoperable olmayı da oldukça temiz bir şekilde sağlayan bir yapı.
+
+59
+00:14:43,979 --> 00:14:52,759
+Dolayısıyla her yerde neredeyse yani bilimsel olarak olan her yerde OSI başvuru modeli üzerinden anlatım yapılır.
+
+60
+00:14:52,760 --> 00:14:55,840
+yani evrensel bir standart zaten işin sonunda.
+
+61
+00:14:55,980 --> 00:15:00,360
+Baktığınız zaman OSI referans modelinde 7 katman var diyoruz.
+
+62
+00:15:01,700 --> 00:15:07,660
+Bu 7 katman aşağıdan yukarı doğru bakacak olursanız sol tarafta İngilizceleri, sağ tarafta Türkçeleri var.
+
+63
+00:15:11,680 --> 00:15:22,120
+Fiziksel katman en altta, veri bağ katmanı, ağ katmanı, taşıma katmanı, oturum katmanı, sunu katmanı, uygulama katmanı.
+
+64
+00:15:22,119 --> 00:15:30,699
+İngilizcesinden bakacak olursak Physical Layer, Data Link Layer, Network Layer, Transport Layer, Session Layer, Presentation Layer, Application Layer.
+
+65
+00:15:30,859 --> 00:15:39,959
+Şimdi ilk başta bu modeli gördüğünüzde bu yedi tanesini nasıl aklınıza tutacağım vesaire falan diye bir sıkıntıya düşebilirsiniz.
+
+66
+00:15:40,919 --> 00:15:43,119
+Allah falan filan gibi bir şey olabilir.
+
+67
+00:15:44,819 --> 00:15:47,359
+Onun için güzel bir hile vardır aklınızda olsun.
+
+68
+00:15:47,599 --> 00:15:51,759
+Özellikle network ile çalışacak bir insanın zaten bu katmanları ezbere biliyor olması lazım.
+
+69
+00:15:52,119 --> 00:15:56,119
+gibi bilgisayar mühendislerinde bilmesinler için fayda var.
+
+70
+00:15:59,119 --> 00:16:01,559
+Şöyle her biri
+
+71
+00:16:05,460 --> 00:16:10,699
+bir katmanın isminin başlangıcına denk gelen bir phrase var.
+
+72
+00:16:18,932 --> 00:16:22,011
+Evet, doğru yazdım.
+
+73
+00:16:22,791 --> 00:16:46,671
+Please do not touch, sit here, pet, alligator. Çok da anlamlı olan bir cümle olmasına rağmen işte P, physical'ın, D, data link'lerin, N, network'lerin, touch, T yani transport'lerin, S, session'lerin, pet'in P'si presentation'ın, alligator'ın A'sı da application'in yeri ifade etmek için kullanılıyor.
+
+74
+00:16:46,671 --> 00:16:49,831
+Dolayısıyla bu şekilde bir şeyle de aklınızda tutabilirsiniz.
+
+75
+00:16:49,831 --> 00:17:01,851
+Şimdi bu katmanların bir kısmı aslında uçtan uca, uç birimden uç birime doğru çalışıyor.
+
+76
+00:17:04,311 --> 00:17:12,951
+Bunlar arasında üstten başlayacak olursak application layer, presentation layer, session layer ve transport layer var.
+
+77
+00:17:12,952 --> 00:17:19,031
+Bu aslında bilgisayarda veri haberleşmesi dediğimiz zaman şunu unutmamak lazım.
+
+78
+00:17:19,711 --> 00:17:29,391
+Bir bilgisayardan diğer bilgisayara bilgiyi gönderiyorsunuz ve fakat aslında iki bilgisayar arasında haberleşmeyi bilgisayar kendi yapmıyor.
+
+79
+00:17:29,391 --> 00:17:35,152
+Yani böyle sizin bilgisayarınız canı sıkıldığı için gidip başka bir bilgisayarla konuşmuyor.
+
+80
+00:17:35,552 --> 00:17:41,211
+Aslında o bilgisayarın üzerinde çalıştırdığınız bir servis ya da bir uygulama var.
+
+81
+00:17:41,211 --> 00:18:01,531
+o uygulama bir başka uygulamayla konuşma ihtiyacı duyuyor. O zaman oraya gidiyor. Dolayısıyla da aslında bu uçudan uca birim dediğimiz yapılar şeyi tarifliyor. İki ayrı cihaz üzerindeki proseslerin haberleşmesini tarifliyor.
+
+82
+00:18:01,531 --> 00:18:13,091
+Network Layer'da ise aslında mesela TCP, IP'den örnek verecek olursam IP adresi sadece bir cihazın adresini ifade eder.
+
+83
+00:18:13,091 --> 00:18:19,152
+Yani sadece IP ile doğrudan aslında şeyi konuşturamazsınız.
+
+84
+00:18:19,792 --> 00:18:24,531
+Nedir o? İki bilgisayar arasındaki haberleşmeyi sağlayamazsınız.
+
+85
+00:18:25,211 --> 00:18:26,911
+Üzerinde bir katman daha gerekir.
+
+86
+00:18:26,911 --> 00:18:53,011
+Dikkat edin. Burada özellikle dikkat etmeniz gereken bir şey var. İki bilgisayar arasındaki haberleşmeden kastımız iki bin ayrı bilgisayar üzerinde çalışan prosesler. O proseslerin birbiriyle haberleşebilmesi için o proseslerin de adreslenebilir olması gerekir. A katmanı sadece cihazı adresler. E peki o adrese gönderdiğim bilgi ne oluyor? Kimseye gitmiyor mu diyeceksiniz. Hayır tabii ki gidiyor. Nereye gidiyor?
+
+87
+00:18:53,012 --> 00:19:19,512
+o bilgisayar üzerinde sizin mesela TCP, IP'den örnek veriyorduk. Dolayısıyla oradan devam ediyorum. IP siteğinizi adresliyorum. Sonuçta IP protocol'ın o siteğin çalışabilmesi için de bir proses var. Dolayısıyla doğrudan onu adreslemiş oluyorsunuz. Ancak herhangi bir sistem servisi ya da prosesin adreslenmesi için bir katlan daha üstte çıkıyor olmanız lazım.
+
+88
+00:19:19,512 --> 00:19:30,292
+Burada konuşurken bol miktarda şeyden de bahsedeceğiz. Burada olmayan bir katmandan da bahsedeceğiz.
+
+89
+00:19:30,292 --> 00:19:37,152
+Burada olmayan bir katman diyorum çünkü çoğu zaman o katman data link layer'ın içerisinde bir alt katman olarak implement ediliyor.
+
+90
+00:19:37,312 --> 00:19:48,512
+O da medium access control. Şimdi data link layer verinin düğümden düğüme aktarılmasından sonra yani aynı network içerisinde haberleşmeyi yapıyorsunuz.
+
+91
+00:19:48,512 --> 00:20:01,972
+Yani bir evde Ethernet şeyiniz var, Local Area Network'unuz var. O network içerisinde Ethernet frame'i gönderdiğiniz zaman zaten alın içerisindeki diğer adamlar bunu görüyor ve alıyor.
+
+92
+00:20:01,972 --> 00:20:13,972
+Bunun da sıkıntı yok. Ancak haberleşme ortamının doğası gereği bilginin gönderimi farklı şekillerde olabilir demiştik. Yani Unicast olabilir, Broadcast olabilir vs. demiştik.
+
+93
+00:20:15,220 --> 00:20:31,039
+Özellikle ortamın broadcast olduğu yapılarda neye ihtiyacınız var? Bu ağa kim, ne zaman, nasıl ilişirip bunu belirlemeye ihtiyacınız var. Bunun için de aslında ortama ilişimin kontrol edilmesi lazım. Yani medium, access, control.
+
+94
+00:20:31,039 --> 00:20:39,159
+Bu arada Maclier diyoruz. O Maclier de Data Linkleri'nin bir parçası içerisindeki bir yapı olarak kalıyor.
+
+95
+00:20:41,359 --> 00:20:45,759
+Burada katmanlı yapıda önemli şeylerden bir tanesi şu.
+
+96
+00:20:47,699 --> 00:20:50,539
+Her katman arasında, her iki katman arasında dikkat edin.
+
+97
+00:20:50,979 --> 00:20:55,319
+Mesela 6 ile 7 arasında 6-7 arayüzü ya da 6-7 interface yazıyor.
+
+98
+00:20:55,319 --> 00:21:09,179
+Bu ne demek? Bu katmanlar arasında bir arayüz var ve bu arayüz üzerinden bir haberleşme, bir iletişim gerçekleşiyor. Peki bu iletişim nasıl gerçekleştiriliyor?
+
+99
+00:21:09,959 --> 00:21:23,919
+Örnek olarak herhangi bir katman yani eninci katman dersek kendisinden aşağıdaki katmanın verdiği servisleri kullanıyor, kendisinin üstündeki katmana da servis veriyor.
+
+100
+00:21:23,919 --> 00:21:31,259
+yani örnek olarak dördüncü katmana bakacak olursak ya da üçüncü katmana bakalım daha değişik olsun biraz daha aşağıda olsun.
+
+101
+00:21:31,859 --> 00:21:36,839
+İkinci katmandan servis alıyor yani network layer, data link layer'dan servis alıyor.
+
+102
+00:21:37,479 --> 00:21:39,359
+Transport katmanına da servis veriyor.
+
+103
+00:21:39,739 --> 00:21:41,499
+Üste doğru devamlı servis veriyoruz.
+
+104
+00:21:42,659 --> 00:21:53,299
+Bu arada şey yapısında bu katmanları gruplarken Amerikalılar her şeye tanım isim koymakta vesaire de çok meraklıdırlar.
+
+105
+00:21:53,299 --> 00:22:02,359
+Bu katmanların üst tarafı için 7, 6 ve 5 kullanıcıya daha yakın oldukları için kullanıcı destek katmanları
+
+106
+00:22:02,359 --> 00:22:11,519
+Alt taraf yani 1, 2 ve 3. katmana ise donanıma daha yakın oldukları için
+
+107
+00:22:11,519 --> 00:22:16,959
+A'nın kendisine fiziksel haline daha yakın olduğu için A destek katmanları denir
+
+108
+00:22:16,959 --> 00:22:30,979
+dördüncü katma ise tam böyle ağ destek katmanlarıyla kullanıcı destek katmanları arasında bir geçiş noktası olduğu için oraya da servis katmanı dedin.
+
+109
+00:22:30,979 --> 00:22:37,699
+Ama bu servis katmanların birbirinden aldıkları servislerle karıştırmayın lütfen.
+
+110
+00:22:37,699 --> 00:22:43,919
+Bunları zaten konuştuk, geçelim.
+
+111
+00:22:44,739 --> 00:22:45,619
+Bunu da konuştuk.
+
+112
+00:22:45,819 --> 00:22:49,239
+Ben konuşup slide'ları bayağı sonra geçmişim aslında.
+
+113
+00:22:51,839 --> 00:22:59,499
+Şimdi her katman baktığınız zaman ne yapıyor olması lazım?
+
+114
+00:23:00,499 --> 00:23:05,559
+Diyelim ki yukarıda bir uygulama seviyesinden bir bilgi oluşturduğumuz.
+
+115
+00:23:05,559 --> 00:23:13,440
+o bilgiyi karşı tarafa aktarmaya çalışıyorsunuz. Bilginizi bir alt katmanı vereceksiniz. Yani yedinci katman altıncı katmanı bilgiyi attıracak.
+
+116
+00:23:15,699 --> 00:23:31,859
+Altıncı katmanda bu bilgiyi bir alt katmanı attıracak. Altı beşe, beş dörde, üçe derken, üç ikiye falan derken en son hatta çıkacak. Böyle sıfır birilerden ya da oradaki sinyal neyse ondan oluşan bir şeye dönüşecek.
+
+117
+00:23:31,859 --> 00:23:44,839
+ve fakat her katmanın kendi yerine getirmesi gereken bazı neleri var? İşleri var. Bu işleri yerine getirebilmek için de aslında onların da kendi bilgilerini aktarması,
+
+118
+00:23:45,759 --> 00:23:55,919
+yani uygulamadan gelen raw data'ya, ham bilgiye bazı ek bilgiler eklemeleri, kontrol bilgileri eklemeleri lazım.
+
+119
+00:23:55,919 --> 00:24:05,419
+Dolayısıyla da bu genellikle bilginin önüne eklenen bir header şeklinde oluşturulur.
+
+120
+00:24:05,419 --> 00:24:08,899
+Yani application, demonstration'a aktarıyorsanız
+
+121
+00:24:10,612 --> 00:24:37,532
+session katmanı, o application'ın önüne, application'dan gelen verinin önüne bir başlık bilgisi var. Ya da transporttan aktardığınız zaman da, transporttan network aktardığınızda, orada da transport katmanının aktardığı verinin üzerine network layer önüne daha doğrusu bir bilgi header ekleyecektir.
+
+122
+00:24:37,532 --> 00:24:50,751
+Bunun bir istisnası var, ikinci katman, yani Data Link Layer, kendisine üçüncü katmandan gelen bilginin önüne header eklediği gibi sonuna da bir de trailer ekliyor.
+
+123
+00:24:50,751 --> 00:24:57,292
+Bunu niye ekliyor? Trailer genellikle hata kontrolü için eklenir, yani orada bir checksum vardır.
+
+124
+00:24:58,372 --> 00:25:01,351
+Hata kontrolü daha önce konuşmuştuk sanki bir önceki derste.
+
+125
+00:25:01,531 --> 00:25:06,372
+Aslında tek bir katmanda tek başına gerçekleştirilen bir işlem değil.
+
+126
+00:25:06,371 --> 00:25:18,692
+farklı katmanlarda gerçekleştirilen bir işlem. Zaten makul ve mantıklı olması daha doğrusu efektif olabilmesi için böyle de yapılması lazım.
+
+127
+00:25:18,692 --> 00:25:35,151
+Bu hani şey aktarımı bilginin üst katmandan altı doğru aktarımı ve en sonunda hattan öbür tarafa ulaşması durumunda bu sefer bilgi ters yönde yukarı doğru çıkacak.
+
+128
+00:25:35,152 --> 00:25:46,112
+her çıkışta da aslında her katmanda bir önceki katmanın header'ı bu bilgiden ayıklanacak ve yukarı doğru sadece o katmanla ilgili bilgi kısmı aktarılacaktır.
+
+129
+00:25:46,171 --> 00:25:51,412
+Yani baktığınız zaman işte yedinci katmanda sadece biriniz var kullanıcı katınız.
+
+130
+00:25:51,512 --> 00:25:53,431
+Altıncı katmanda ne oluyor?
+
+131
+00:25:54,091 --> 00:25:56,472
+Yedinin bilgisi artı altının header'ı.
+
+132
+00:25:56,912 --> 00:25:59,211
+Bir altta beşinde header'ı geliyor.
+
+133
+00:26:00,591 --> 00:26:01,931
+Dördün de header'ı geliyor.
+
+134
+00:26:02,031 --> 00:26:02,891
+Üçün de ikinin de.
+
+135
+00:26:02,891 --> 00:26:10,652
+tersi giderken de bu açıla açıla, soyula soyula yapılacak bir şey.
+
+136
+00:26:10,751 --> 00:26:11,692
+Aslında biz ne yapıyoruz?
+
+137
+00:26:11,851 --> 00:26:19,091
+Her katmanda bir önceki katmanın bilgisini enkapsüle ediyoruz.
+
+138
+00:26:19,231 --> 00:26:20,891
+Başka bir şeyin içerisine yerleştiriyoruz.
+
+139
+00:26:21,052 --> 00:26:25,291
+Tam böyle matruşlukka bebekleri gibi aç aç bitmiyor durumu.
+
+140
+00:26:25,291 --> 00:26:46,311
+Şimdi bu katmanlara bakacak olursak en alttan başlayalım, üstte doğru gidelim. Fiziksel katmanımız var. Fiziksel katmanın temel işi aslında bizi iletim ortamına bağlıyor.
+
+141
+00:26:46,311 --> 00:27:02,552
+Dolayısıyla eldeki verinin yani bitlerin iletim ortamı üzerinden aktarılabilecek hale gelmesini sağlaması lazım.
+
+142
+00:27:09,587 --> 00:27:30,768
+Bunu aslında şeyde daha net konuşacağız. Yani bu kafanızda şu an canlanmamış olabilir ama sinyalleri konuştuğumuz zaman hani o bitlerin, bit diziliminin mesela 0100001 falan gibi bir bit diziliminin sinyale nasıl çevrileceği, çevirirken başımıza neler geleceği birazdan konuşacağız. Oraya kadar bir şey yapın.
+
+143
+00:27:30,768 --> 00:27:50,808
+aklınızda olsun bekleyin. Fiziksel bağlantının tipine ve şekline bağlı olarak yani fiziksel bağlantı bir kablo üzerinden gerçekleştirilebileceği gibi farklı şeyler üzerinden de gerçekleştirilebilir ortamlar üzerinden de. Mesela hava bunlardan bir tanesi.
+
+144
+00:27:50,807 --> 00:28:09,927
+Hava dediğimiz zaman işte radyo sinyali de var, infrared de var, farklı frekanslar da işin içerisine geliyor. Dolayısıyla bu noktada çeşitlilik gösterebilir özellikleri.
+
+145
+00:28:09,928 --> 00:28:29,528
+Misal fiziksel katmanımız multiple yani birden fazla bağlantının olduğu aynı nodundan çıkan birden fazla bağlantının olduğu bir yapıysa yani yönsel directional bir yapı varsa diyeyim birden fazla bağlantı diyeyim o biraz kafa karıştırabilir, yanlış yere gidebilir.
+
+146
+00:28:29,527 --> 00:28:39,527
+yönlü bir iletim söz konusuysa mesela iletimin hangi yöne yapılacağına karar veriyor olması lazım.
+
+147
+00:28:41,527 --> 00:28:59,227
+Bu dönüşüm işini yaparken aslında dönüşüm için doğrudan kendisini yapacak ama dönüşüm işi işte şeyle mi yapılıyor, amplitude ile mi yapılıyor, genlikle mi yapılıyor, frekansla mı yapılıyor, fazla mı yapılıyor, başka bir şeyle mi yapılıyor?
+
+148
+00:28:59,227 --> 00:29:27,608
+buna göre bu dönüşümü gerçekleştiriyor olması lazım. Bir başka nokta aslında belki de duruma göre çıkış gücü üzerinde doğrudan oynuyor olması lazım. Bunların hepsi fiziksel katmanın işi ve parçası. Şimdi veri bağı katmanı yani Data Link Layer'da aslında 3 tane temel şeyden sorumlu. 3 tane temel görevi var veri bağı katmanı.
+
+149
+00:29:29,227 --> 00:29:34,468
+Bunları yapabilmek için yapması gereken bazı başka şeyler de var.
+
+150
+00:29:35,567 --> 00:29:40,367
+Ama hani bu üç temel noktalardan bir tanesi şu.
+
+151
+00:29:42,227 --> 00:29:44,948
+Veriyi bir çerçeveye oturtmak zorunda.
+
+152
+00:29:45,688 --> 00:29:51,448
+Şöyle düşünün, iki kişiyiz ya da iki, tabii iki kişiyiz.
+
+153
+00:29:51,567 --> 00:29:52,668
+Konuşmaya başlıyoruz.
+
+154
+00:29:53,468 --> 00:29:57,367
+Konuşmanın nerede başlayıp bittiğini belirten aslında nelerimiz var?
+
+155
+00:29:57,367 --> 00:30:02,767
+bazen mimiklerimiz var, bazen nefesimiz var, bazen duraksamamız var.
+
+156
+00:30:02,767 --> 00:30:08,828
+Yani ben cümle bittiği zaman duruyorum ve sonraki cümleye başlıyorum.
+
+157
+00:30:08,907 --> 00:30:10,087
+Bu mesela bir yöntem.
+
+158
+00:30:10,487 --> 00:30:17,028
+Şeydeki de bu telgrafla haberleşirken yapılan şeylerden bir tanesi de bu cümle alanı.
+
+159
+00:30:17,127 --> 00:30:19,147
+Mesela stopla belirtiyorsunuz.
+
+160
+00:30:19,207 --> 00:30:20,388
+Stop diye ayrı bir kod var.
+
+161
+00:30:20,528 --> 00:30:22,108
+Hani bitti, yeniden başlıyorum.
+
+162
+00:30:22,528 --> 00:30:22,808
+Neden?
+
+163
+00:30:22,808 --> 00:30:30,087
+eğer veri içerisinde, veriye aktardığınız hat içerisinde bir bozulma olursak ne olacaktır?
+
+164
+00:30:30,087 --> 00:30:34,587
+Bu bilgi nereden başlıyor? Ne söyleniyor? Ne oldu belli değil.
+
+165
+00:30:34,707 --> 00:30:37,128
+Senkronu bir kere kaçırdınız, patır patır gidiyor.
+
+166
+00:30:37,628 --> 00:30:44,408
+Frame aslında hem çerçeveyi oluşturuyorsunuz, yani ben sana bunu göndereceğim diyebilmek için
+
+167
+00:30:44,408 --> 00:30:51,347
+hem de olası bir hatada bir yerden tekrar başlayabilmek, senkrona girebilmek için önemli.
+
+168
+00:30:51,347 --> 00:31:02,067
+Bunun dışında neye ihtiyaç var? Hata kontrolüne ihtiyaç var.
+
+169
+00:31:02,579 --> 00:31:18,259
+yani bilginin hatasız bir şekilde bir noktadan diğerine aynı ağ içerisinde tabii ki aktarılabiliyor olması lazım. Dolayısıyla burada veri bağı katmanının error kontrol yapıyor olması lazım.
+
+170
+00:31:18,500 --> 00:31:21,920
+Correction ya da detection olabilir. Bunun detayına daha sonra bakacağız.
+
+171
+00:31:23,059 --> 00:31:31,359
+Bunun dışında neye ihtiyaç var? Bir akış kontrolü ihtiyaç var. Akış kontrolü dediğimiz zaman neden bahsediyoruz?
+
+172
+00:31:31,359 --> 00:31:37,299
+bir ağa içerisinde iki tane düğün var. Doğrudan tek popta böyle pıp devirip birilerine erişebiliyorlar.
+
+173
+00:31:37,839 --> 00:31:43,440
+Şimdi bu adamlardan bir tanesi çok hızlı konuşuyor, diğeri az duyuyorsa büyük sıkıntı.
+
+174
+00:31:44,659 --> 00:31:49,539
+Çok hızlı konuşan adamın üçü söylediğinden ikisi zaten karşı taraflarında anlaşılmıyor.
+
+175
+00:31:50,219 --> 00:31:55,999
+Karşı taraf devamlı overflow halinde ya da böyle bır bır bır bır bır çok hızlı konuşan bir arkadaşınızı düşünün.
+
+176
+00:31:55,999 --> 00:31:58,159
+arada cümleleri yakalayamıyorsunuz.
+
+177
+00:31:58,319 --> 00:32:02,559
+Ya da bir şey yapın, özellikle de başka bir dildeki bir filmi falan filan için
+
+178
+00:32:02,559 --> 00:32:07,219
+adamın çok hızlı konuşması durumunda arada bazı cümleler kaçabiliyor.
+
+179
+00:32:07,679 --> 00:32:10,300
+Bu veri iletiminde çok kabul edilebilecek bir durum değil.
+
+180
+00:32:10,459 --> 00:32:11,779
+Bizim ne yapıyor olmamız lazım?
+
+181
+00:32:14,879 --> 00:32:18,879
+Veri iletiminde bu tip bir durum şu demek, sizin buffer overflow olmanız,
+
+182
+00:32:18,999 --> 00:32:22,379
+yani aldığınız veriyi kenara koymaya çalışıyorsunuz ama
+
+183
+00:32:22,379 --> 00:32:43,919
+Sanki nerede? Siz onu işleyip de açana kadar adam size daha çok bilgi gönderiyor. Dolayısıyla son noktada ne hale geleceksiniz? Alınan bilgiyi drop etmeye başlayacaksınız, kullanamaya başlayacaksınız. Bu da sizi şey yapacak, tıklayacak. Dolayısıyla aramızda bir akış kontrolü, flow kontrolü oluyor olması lazım.
+
+184
+00:32:43,919 --> 00:32:50,359
+Yani benim size biraz yavaş bir dur falan gibi yönlendiriyor olmam lazım.
+
+185
+00:32:50,539 --> 00:32:55,979
+Akış kontrolü genelde alıcı tarafından gerçekleştirilen bir şey.
+
+186
+00:32:56,099 --> 00:33:00,759
+Daha doğrusu alıcının geri dönüşleriyle gerçekleştirilen bir şey.
+
+187
+00:33:01,599 --> 00:33:05,539
+Karşı tarafa bilgi gitti mi, gitmedi mi, ne oldu, en son ne gitti.
+
+188
+00:33:05,859 --> 00:33:10,119
+Bunu takip etmek için alıcı tarafın geri dönüşüne ihtiyacımız var.
+
+189
+00:33:10,120 --> 00:33:30,839
+Bunun dışında veri bağı katmanı aslında neden de sorumlu? Erişim kontrolünden de sorumlu. Yani A paylaşımlı bir durum varsa, paylaşılarak bulunan bir ortam varsa kim tarafından hangi koşullarda yapılacağını belirlemek lazım. Ama ne dedik? Bu genelde medium access kontrol katmanı olarak ayrı bir katman da tarifleniyor.
+
+190
+00:33:30,839 --> 00:33:41,899
+Önce konuşup sonra slide'ı geçince şey olmadı. Çok senkron gitmiyor ama.
+
+191
+00:33:44,479 --> 00:33:52,879
+Bunu da genelde Logical Link Control ve Media Access Control olmak üzere iki parçaya bölerek implement ediyorlar.
+
+192
+00:33:52,959 --> 00:33:59,679
+Referanslarda yani de referans modellerde ya da doğru referans modellerden implement edilen protokollerde.
+
+193
+00:33:59,679 --> 00:34:01,999
+bunları da anlatmış oldum.
+
+194
+00:34:01,999 --> 00:34:03,479
+Bunları da geçtik.
+
+195
+00:34:03,619 --> 00:34:05,379
+Akış kontrolü, H2H,
+
+196
+00:34:06,119 --> 00:34:07,699
+onlayın, sinkrizasyonu var.
+
+197
+00:34:12,199 --> 00:34:15,179
+A katmanına gelecek olursak,
+
+198
+00:34:17,319 --> 00:34:24,699
+A katmanı aslında bir paketin ki artık A katmanına geldiğimiz zaman paket diyoruz.
+
+199
+00:34:24,879 --> 00:34:29,119
+Yani Data Link Layer'da frame dediğimiz, çerçeve dediğimiz yapıya
+
+200
+00:34:29,119 --> 00:34:35,119
+A katmanına geldiğimiz zaman paket diyoruz. Transport katmanına geldiğimiz zaman da segment diyeceğiz.
+
+201
+00:34:36,259 --> 00:34:45,159
+Her katmanda oluşturulan verenin ayrı bir ismi var. Aklınızda olsun.
+
+202
+00:34:45,159 --> 00:34:54,279
+Frame, packet, segment diye gidiyor. Derdimiz ne? Biz kendi lokal ağımızdaki cihazlarla haberleşmiyoruz.
+
+203
+00:34:54,359 --> 00:34:58,279
+Daha doğrusu haberleşiyoruz da sadece onlarla haberleşmiyoruz. Bizim derdimiz,
+
+204
+00:34:58,672 --> 00:35:06,892
+herkesi birbirine bağlayabilmek, herkesle konuşabilmek, ağır büyütebilmek. Ama ağlar ne özellikler gösteriyor? Uniform özellikler göstermiyor.
+
+205
+00:35:07,351 --> 00:35:16,631
+Heterojen bir yapı var. Dolayısıyla bir ağın özelliği diğerinden farklı olabilir, yapısı farklı olabilir. Birbirine bağlantı şekli farklı olabilir.
+
+206
+00:35:18,012 --> 00:35:26,391
+Dolayısıyla eğer bütün dünya aynı ağın içerisinde olsaydı ve tek hopta falan onlara ulaşabiliyor olsaydık,
+
+207
+00:35:26,391 --> 00:35:31,392
+data linkleriyle herkesi birbirine bağlardık ve fakat olmuyor.
+
+208
+00:35:32,291 --> 00:35:34,212
+Olmadığı için de neye ihtiyacımız var?
+
+209
+00:35:34,212 --> 00:35:49,911
+Bu bağlantıları uçtan uca yapabilecek yani bir kaynaktan bir hedefe doğru farklı ağ yapıları üzerinden paketlerin iletilmesini sağlayacak bir yapıya ihtiyaç var.
+
+210
+00:35:49,911 --> 00:36:07,291
+Deminki referans modelini hatırlayın sağda ve solda 7 katman vardı ama ortada da A cihazları vardı. Onların nedeni önde ise 3 seviye cihazlar vardı. 3. seviyeye kadar çıkan routerlar vardı.
+
+211
+00:36:07,291 --> 00:36:36,351
+Şimdi onların 3. seviyeye kadar çıkıyor olmasının temel nedenlerinden bir tanesi aslında şu biz bu end to end haberleşmeyi yaparken çoğu zaman ne yapıyoruz? Başka bir internet servis sağlayıcısından daha doğrusu ağ sağlayıcısından hizmet alıyoruz. Bizim için bu bizim özelliklerimizde bakacak olursanız benim için kablonet sizin için işte şey olabilir ADSL olabilir, başkası için fiber olabilir, başkası için şey bile olabilir.
+
+212
+00:36:37,291 --> 00:36:40,191
+Dial-Up bile olabilir.
+
+213
+00:36:40,191 --> 00:36:43,191
+Dolayısıyla...
+
+214
+00:36:47,635 --> 00:36:56,096
+bu aradaki geçişleri sağlamak için aslında ağ sağlayıcısının ne yapıyor olması lazım? Her yere cihaz koyuyor olması lazım.
+
+215
+00:36:57,016 --> 00:37:07,575
+Bu cihazın da belli yeteneklere sahip olması lazım. Ancak ve lakin hani 3. seviye değil, 4. seviye, 5. seviye, 6. seviye, 7. seviye bir cihaz da konabilir.
+
+216
+00:37:07,575 --> 00:37:10,295
+Ve fakat bunu böyle koyarsanız ne olur?
+
+217
+00:37:17,940 --> 00:37:40,940
+çok basit bir nedeni var. Her zaman olduğu gibi duygusal. Bunu üst seviyelerdeki cihazlar koyduğunuz zaman hani binlerce, milyonlarca cihazı çok daha maliyet bir şekilde üretmeniz lazım. Ancak bu dediket cihazı üçüncü seviyede tutarsanız, embedded cihazlar halinde gerçekleştirirseniz çok daha efektif işler yapmanız mümkün.
+
+218
+00:37:40,940 --> 00:37:53,739
+yani en basitinden oluşturduğunuz cihaz üzerinde yani o anahtarlama kapasitesi vesairesi aynı kaldığında bile 3. değil 4. katmına çıkmaya kalktığınızda çok daha maliyetli bir durum.
+
+219
+00:37:54,579 --> 00:38:01,559
+Dolayısıyla da o cihazları minimum seviyede tutma isteği var. O kadar da öyle alınmış bir durum.
+
+220
+00:38:01,559 --> 00:38:11,039
+3. seviye cihazlarla saldırıyoruz. Yani o cihazın üzerinde A katmanı var en fazla. Normal şartlarda özel bir cihazdan bahsetmiyoruz.
+
+221
+00:38:11,039 --> 00:38:24,959
+Şimdi A katmanı üzerinde yapılan şey ne? Kaynaktan çıkan verinin HDP doğru iletilmesi.
+
+222
+00:38:24,959 --> 00:38:44,239
+Bunu yaparken aslında ağ katmanı bize farklı şekillerde hizmet sunabilir. Hem bize farklı hizmet sunabilir hem aslında altta kullandığı ağın yapısı ona uygun şekilde farklı yapı geliştirmiş olabilir.
+
+223
+00:38:44,239 --> 00:38:51,319
+Ama bize sunduğu hizmet temel olarak circuit switching ya da packet switching adı verdiğimiz iki yapıdan birindedir.
+
+224
+00:38:52,239 --> 00:38:55,139
+Aslında switching burada anahtarlama olarak kullanılıyor.
+
+225
+00:38:56,639 --> 00:38:59,599
+Devre anahtarlama ya da paket anahtarlama olan kasıt da şu.
+
+226
+00:39:00,239 --> 00:39:06,959
+Ben bir paketi bir noktadan bir başka noktaya iletmekle sorumluyum.
+
+227
+00:39:06,959 --> 00:39:11,439
+Bunu da birden fazla zıplama ile yapacağım.
+
+228
+00:39:11,440 --> 00:39:29,279
+Dolayısıyla her zıplamada ben eğer paket anahtarlama yapıyorsam her gelen paket için bir şey kararı vermem lazım. Bu paketi nereye aktaracağıma doğru iletimle ilgili bir karar veriyor olmalı lazım.
+
+229
+00:39:29,279 --> 00:39:35,919
+Devre anahtarlamalı ise, bu geçen ders kesin vermişim gibi örneği, her şekilde bir kere veriyorum zaten
+
+230
+00:39:35,919 --> 00:39:40,399
+Bu eski filmlere falan bakarsanız, telefon hatları nasıl çalışıyor?
+
+231
+00:39:40,559 --> 00:39:45,499
+Açıyorsunuz, santral diyorsunuz, evet diyor, işte bana bir Adana bağla diyorsunuz
+
+232
+00:39:45,499 --> 00:39:47,279
+Peki diyor, kapatıyorsunuz
+
+233
+00:39:47,279 --> 00:39:54,139
+Şimdi öyle değil, şimdi açıyorsunuz, direkt numaranızı tuş tutuyorsunuz, çalışmaya başlıyor
+
+234
+00:39:54,139 --> 00:39:59,719
+ve fakat hani özellikle şunu söyleyebilmek için eskiden örnek verdim.
+
+235
+00:40:00,139 --> 00:40:09,699
+Orada santral başında bir kişinin böyle resmen kabloyla bir hattı bir başka hattı anahtarladığını görürsünüz.
+
+236
+00:40:09,699 --> 00:40:18,499
+Aslında o anahtarlana anahtarlana sizin başlangıç numaranızdan Adana'ya kadar bir bağlantı oluşsunuz.
+
+237
+00:40:18,600 --> 00:40:19,979
+Devre anahtarlaması yapın.
+
+238
+00:40:20,759 --> 00:40:24,039
+A katmanı da benzer bir kafayla çalışabilir.
+
+239
+00:40:24,139 --> 00:40:43,779
+Yani bir paket aktaracaksam A noktasından B noktasına önceden A ile B arasında full bir hat oluşturayım ve her paket buradan devam etsin. Aynı yoldan aynı şekilde devam etsin. Ya da daha esnek bir yapı olsun. Bu esnek yapının bize avantajı ne?
+
+240
+00:40:43,779 --> 00:40:51,279
+aslında herhangi bir topoloji değişikliğinde hala hayatımıza devam edebiliyoruz.
+
+241
+00:40:51,979 --> 00:40:53,619
+Bunu fark ettiğimiz anda.
+
+242
+00:40:53,999 --> 00:40:57,300
+Fark ettiğimiz anda hızlıca recover etme şansımız var.
+
+243
+00:40:57,300 --> 00:41:05,219
+Sövküs için bir kere kurduğunuz devreyi, başına bir şey geldiği zaman iş karmaşırma bir noktaya geliyor.
+
+244
+00:41:16,083 --> 00:41:35,323
+Burada veri A katmanında derdimiz ne? Uç noktalar arasında yani bir kaynaktan bir HDP doğru bilgi aktarmak. Buradaki kaynak ve hedef aslında A katmanındayız. Dolayısıyla şu an sadece cihazlar.
+
+245
+00:41:35,323 --> 00:41:45,063
+Yani sizin bilgisayarınızla karşıdaki bir sunucu, sizin bilgisayarınızla arkadaşınızın bilgisayarınızla iki host arasındaki aktarımı.
+
+246
+00:41:45,143 --> 00:41:55,723
+Bunlar için de neye ihtiyacımız var? Farklı adreslere ihtiyacımız var. Neden? Çünkü aynı lokal araya içerisinde değiller.
+
+247
+00:41:55,723 --> 00:42:03,523
+Data linklerindeki adres bilgisi sizin için burada artık geçerli değil. Adresler farklı ağlarda, farklı şekillerde üretiliyor.
+
+248
+00:42:03,523 --> 00:42:30,823
+Dolayısıyla burada ne yapıyor olmamız lazım? Bizi bundan soyutlayacak bir yapıya ihtiyacımız var. Dolayısıyla da burada aslında kullandığımız protokol neyse onun şeyini kullanıyoruz. Nedir o? Adreslerinin mekanizmasını kullanıyoruz. Mesela IP kullanıyorsak burada IP adreslerinden bahsediyoruz. Ama Data Link Layer'da Ethernet kullanıyorsak o zaman Ethernet adreslerinden bahsediyoruz ve birbirlerinden ayrı bunlar.
+
+249
+00:42:30,823 --> 00:42:40,783
+Şimdi ağ takmanına baktığımız zaman kısaca böyle bir toparlayacak olursak ne var? Kaynaktan varış noktasına paketleminden sorulma.
+
+250
+00:42:42,003 --> 00:42:48,383
+Yani farklı düğümler üzerinden atlama yaparak son noktaya erişmekten sorulma.
+
+251
+00:42:48,463 --> 00:42:55,263
+Mantıksal adresleme dedik demin. Bir şekilde birbirinden farklı ağları bir araya getiriyoruz.
+
+252
+00:42:55,264 --> 00:43:10,043
+Dolayısıyla bir abstraction lazım. O abstraction'ı da mantıklıksal adreslemeyle çözüyoruz. Dolayısıyla farklı ağları bütünleştirmek için bu katmanda bir ağ adresi kullanıyoruz. Rotolamadan yani routingten sorumlu.
+
+253
+00:43:17,235 --> 00:43:25,996
+hem Circuit Switching hem FACULT Switching'de aslında bir rotolama yapıyorsunuz. Nasıl bir rotolama yapıyorsunuz?
+
+254
+00:43:25,996 --> 00:43:37,095
+Circuit Switching'de bu işin başında yani ilk bağlantı isteği oluştuğu an bu rotolamayı yapıp uçtan uca bir hat oluşturmamız lazım.
+
+255
+00:43:37,795 --> 00:43:44,955
+Paket Switching'de ise gelen her paket için bir routing kararı veriyorsunuz. Bir yönlendirme rotolama kararı veriyorsunuz.
+
+256
+00:43:44,955 --> 00:44:07,675
+Bunun dışında neye ihtiyacınız var? Evet IP adreslerini kullanacağız, adreslemek için dedik ve fakat bu IP adreslerinin ne oluyor olması lazım? Kendi lokal arayarınızdan çıktınız, bir IP adresiniz var, karşı tarafa doğru gidiyorsunuz, gittiniz, onun olduğu ağa geldiniz, elinizde bir IP adresi var.
+
+257
+00:44:07,675 --> 00:44:31,135
+O IP adresine karşılık neye ihtiyacınız var? O ağın içine geldikten sonra artık fiziksel adresi biliyor olma ihtiyacınız var. Çünkü data linkleri de bu adama son toplamayı, atlamayı yapacaksınız. Onu söyleyebiliyor olmak lazım. Dolayısıyla bu adres dönüşümünü yapması gerekiyor.
+
+258
+00:44:31,136 --> 00:44:47,816
+Bir multiplexing ağ katmanı üzerinde yapılabilecek şeylerden biri. Eğer bir multiplexing yapılacaksa ağ katmanı tarafından yapılıyor olması lazım. Özellikle de optimizasyon olarak.
+
+259
+00:44:47,815 --> 00:45:06,655
+Yani üst tarafta aslında kaynak ve adep arasında birden fazla bağlantı isteği varsa, birden fazla paket gönderimi vs. varsa bunları birleştirmek ve uç noktada açmak da ağ katmanının görevi.
+
+260
+00:45:06,655 --> 00:45:21,495
+taşıma katmanı. Bir üst katmana çıktık artık. Bu arada herkes orada mı? Her şey yolunda mı? Böyle şeye doğru anlatınca, nedir o? Tamamen.
+
+261
+00:45:22,975 --> 00:45:23,695
+Buradayız.
+
+262
+00:45:23,695 --> 00:45:40,795
+Her şey yolunda mı? Takip edebiliyor musunuz? Kafanıza takılan bir şey var mı? Problem. Yüz yüze olduğu zaman, yüzünüze baktığın zaman bu çocuklar fiziken burada ama ruh hem burada değiller diyebiliyordum.
+
+263
+00:45:40,795 --> 00:45:59,295
+ya da işte ne bileyim veri benden çıktı ama karşı tarafta ilgili katmana gitmedi. Koptular, gittiler diye biliyordum. Şimdi bunları deme şansımız yok maalesef göremediğimiz için de. O yüzden böyle derin silsizlik olunca insan istir istemez bir paranoya kapılıyor.
+
+264
+00:45:59,295 --> 00:46:16,036
+Şimdi taşıma katmanı aslında ne yapıyor teknik olarak? Bir üst katmana servis veriyor, bir alt katmanla servis alıyor. Ama taşıma katmanının özelliği neydi? A destek ve kullanıcı destek arasında servis noktasıydı.
+
+265
+00:46:16,036 --> 00:46:33,776
+Yani taşıma katmanı kendi üstündeki oturum katmanına genel bilgileri ne yapacak? Alt tarafa doğru aktaracak ve fakat bu aktarmayı yaparken aslında bir segmentasyon yapması lazım.
+
+266
+00:46:33,775 --> 00:46:55,775
+Yani sizin uygulamanız doğrudan 10 MB'lik dosyayı göndermek istedi. Uygulama session'e gönderdi. Pardon presentation'e gönderdi. Presentation'dan çıktı bir session'e geldi. Session'da dedi ki taşıma katmana, taşıma katmana değil misin? İşinle taşı. 10 MB.
+
+267
+00:46:55,775 --> 00:47:10,775
+Biz 10 MB'lik bir yapıyı taşımıyoruz ki doğrudan. O zaman ne yapıyor olması lazım? Taşıma katmanın bu bilgiyi parçalara, segmentlere dönmesi lazım. O yüzden...
+
+268
+00:47:12,244 --> 00:47:37,063
+taşıma transport katmanındaki o paketlere, aslında veriye segment diyoruz. Segmentation'dan geliyor da. Ne yapıyor olması lazım? Büyük bir veriyi aldık, daha küçük parçalara böldü, segment etti. Bunları karşı tarafa aktaracak. Karşı tarafa aktardığı zaman da o bilginin tekrar ne oluyor olması lazım? Aynı şekilde yeniden oluşturuluyor olması lazım.
+
+269
+00:47:37,063 --> 00:47:43,143
+Bu birleştirme işleri ressembli diyoruz.
+
+270
+00:47:43,143 --> 00:47:47,464
+Bunu yapabilmek için ayırdığı her segmente ne yapması lazım?
+
+271
+00:47:47,584 --> 00:47:51,563
+Bir segment numarası, sequence number ya da segment number.
+
+272
+00:47:51,883 --> 00:47:53,663
+Neyse, öyle bir şey veriyor olması lazım.
+
+273
+00:47:55,863 --> 00:48:06,403
+Bu birleştirmeyi yapabilmek için yine bu segmentlerin her birini hatasız temiz bir şekilde karşıya iletebiliyor olması lazım.
+
+274
+00:48:07,063 --> 00:48:17,063
+Bunları da sıraya sokuyor olması lazım. Dolayısıyla bunların hepsi transport katmanının sorumlulukları arasında.
+
+275
+00:48:20,275 --> 00:48:30,036
+Şimdi, transport katmanı dediğimiz zaman hep şeyi söylemiştim.
+
+276
+00:48:33,555 --> 00:48:39,116
+Aslında burada haberleşen bilgisayarın kendisi değil, kendi kendine haberleşmiyor.
+
+277
+00:48:39,196 --> 00:48:44,456
+O bilgisayar sistemi üzerine çalışan bir uygulama karşı taraflı haberleşiyor.
+
+278
+00:48:45,175 --> 00:48:48,855
+Dolayısıyla şey sorusunun cevabını bulmamız lazım.
+
+279
+00:48:48,855 --> 00:48:54,435
+Ben bu bilgisayarını göndereceğim, bu bilgisayarın adresi de bu ama bu bilgisayarı da kime göndereceğim?
+
+280
+00:48:55,116 --> 00:49:05,116
+Şey gibi düşünün, bir apartmana bir şey gönderiyorsunuz, apartmanın da bir adresi var ve fakat aslında bir başka apartmanla haberleşmiyor.
+
+281
+00:49:05,676 --> 00:49:11,356
+Apartmanın içerisindeki insanlar haberleşiyor ve o insanların da daire numarası var.
+
+282
+00:49:11,355 --> 00:49:38,575
+Hatta bir şeye daha geçersek o aile içerisinde daha doğrusu o apartman dairesi içerisinde birden fazla da insan olabilir. Dolayısıyla herkesin bir de ismi var. Dolayısıyla daire numarası ve isim. Yani orada yaşayan kime geldi. Benzer bir yapı. Network adresi bizim cihazları adreslemek için kullandığımız yapı. Transport adresi ise o cihaz üzerinde çalışan servisi uygulamayı adreslemek için kullandığımız yapı.
+
+283
+00:49:38,575 --> 00:49:59,775
+Buna aslında bir service access point diyoruz. Bu service access point yani servis erişim, servis noktaları çoğu zaman port olarak isimlendiriliyor. Özellikle TCP, IP özelinde bakacak olursak orada portlardan bahsediyoruz.
+
+284
+00:49:59,775 --> 00:50:11,775
+O porta erişim için, o portu üzerinden bilgi alıp gönderebilmek için ise bir arayüz gerekiyor bize. Ona da soket diyoruz.
+
+285
+00:50:15,775 --> 00:50:20,475
+Slide'in altında bir yer kalmış. Neyse sonra şey yaparız.
+
+286
+00:50:22,055 --> 00:50:27,475
+Taşıma katmanında da baktığınız zaman aslında yine iki tür servis var.
+
+287
+00:50:27,475 --> 00:50:50,115
+Bunlardan bir tanesi connection'ımız, emin konuştuğumuz yapıya çok benzer, herhangi bir bağlantının olmadığı, ilk bağlantı oluşmayan yapı, bir arada connection oriental yapı, yani veri aktarmak için önce bir bağlantı kuruyorsunuz, arada bir hat oluşturuyorsunuz ve bilgiyi oradan taşıyorsunuz.
+
+288
+00:50:50,115 --> 00:51:03,395
+Yapı olarak baktığımızda connection oriented tam şeyin örneği, nedir o? Telefon haberleşmesinin örneği.
+
+289
+00:51:03,395 --> 00:51:08,716
+Connection ise posta sisteminin örneği.
+
+290
+00:51:14,195 --> 00:51:43,415
+O yüzden de hani posta sisteminde özellikle Telegram'da yani telgrafta telgraf çekilmesinde hatırlayın ne oluyor? Bir not yazdırıyorsunuz. O oradan oraya, oradan oraya, oradan oraya ekliyor. En son bir postacı ile geliyor. Bu izlediği yol bir sonraki telgrafta bambaşka bir şey üzerinden gidebilecek gibi getiren postacı da başka bir postacı olabilir.
+
+291
+00:51:43,415 --> 00:51:50,876
+yani her seferinde değişiyor. Dolayısıyla bu tip network'e de bir taraftan bu benzemeden dolayı datagram diyoruz.
+
+292
+00:51:52,195 --> 00:51:57,895
+Zaten transport katmanıyla ilgili özellikle TCP, IP ile konuşurken şeyi çokça duyacaksınız.
+
+293
+00:51:58,495 --> 00:52:05,815
+UDP'yi User Datagram Protocol. Yani connection'ımız bir yapı, bir haberleşme şekli.
+
+294
+00:52:05,815 --> 00:52:32,276
+Connection Oriented olduğunuz zaman ne oluyor? Connection nasıl olduğunuz zaman ne oluyor? Buna ne zaman nasıl karar veriyoruz? Biri diğerinden daha mı iyi? Biri diğerinden daha iyi değil. İkisi de birbirine göre avantajları olan, dezavantajları olan yapılar. Yapacağınız uygulamanın ne olduğuna, yapmak istediğiniz işin ne olduğuna bağlı olarak bunu tercih ediyor olmanız lazım.
+
+295
+00:52:32,276 --> 00:52:56,816
+Burada dikkat edilmesi gereken şeylerden bir tanesi de şu. Şimdi ağ katmanı da packet switching ya da socket switching çalışabilir mi? Yani uçtan uca haberleşmeyi sağlarken, düğümler arası haberleşmeyi sağlarken bunu önden bir connection oluşturup socket switching ile yapabilir ya da paket anahtarlamalı bir şekilde packet switching ile yapabilir dedik.
+
+296
+00:52:56,815 --> 00:53:24,855
+Bu yüzden alt katmanda nasıl bir servis verdiniz? Üst katmanda da ne kullanacağınızı biraz belirler. Alt tarafta shortcut switching bir yapı varken üst tarafta packet switching pardon connectionless yapacağım demek okey ama bir daha connectionle yapacağım demek okey mi? Ya da tam tersi aşağıda şey var connectionless bir yapı var.
+
+297
+00:53:24,856 --> 00:53:32,236
+üst tarafta da connection mısı takılacağım denir mi? Denir. Connection Oriented takılacağım denir mi?
+
+298
+00:53:39,188 --> 00:53:40,587
+Evet gençler, ne dersiniz?
+
+299
+00:53:46,387 --> 00:54:05,947
+hayır arkadaş kimse bir şey demeyecek herhalde. Ben değil. Vallahi şu an onu kullanıyoruz zaten. Şu an bu sunumun yapılmasını sağlayan şey de bu. Alt tarafta aslında ne kullanıyoruz? IP, mesela gerçek hayatta ne yapıyor? Paket anahtarları çalışıyor. Connection Oriented çalışmıyor.
+
+300
+00:54:05,947 --> 00:54:18,127
+şeyde çalışmaya, service switching için işbiliyordu. Ama üst tarafta transport katmanında mesela TCP kullanıyoruz. TCP kullandığımız zaman da connection oriented bir yapıdan bahsediyoruz.
+
+301
+00:54:19,447 --> 00:54:30,568
+Şimdi iletişim katmanının pardon taşıma katmanının genel şeylerine bakacak olursak ne oldu? Kaynak ve hedef arasında ileti aktarımını sağlamak.
+
+302
+00:54:30,568 --> 00:54:38,148
+Servis noktaları yardımıyla servis akses pointler var demiştik. Port ya da soket diye isimlenebilir demiştik.
+
+303
+00:54:38,867 --> 00:54:41,367
+Uygulamaları aslında adreslemiş olmak.
+
+304
+00:54:42,788 --> 00:54:45,068
+Üst katmandan gelen bilgiyi parçalamak.
+
+305
+00:54:45,068 --> 00:54:47,068
+O bilgiyi karşı tarafa aktarmak.
+
+306
+00:54:47,187 --> 00:54:50,748
+Bunu sıralı ve düzgün, daha doğrusu sıralı ve hatasız şekilde yapmak.
+
+307
+00:54:51,167 --> 00:54:53,847
+Karşı tarafta bunu tekrar birleştirmek.
+
+308
+00:54:54,108 --> 00:54:55,867
+Bunun dışında da ne iş var gene?
+
+309
+00:54:56,468 --> 00:54:58,328
+Bir flow kontrolü var.
+
+310
+00:55:00,568 --> 00:55:23,007
+Flow kontrolü niye var burada? Data linkleri de vardı. Burada niye var? Mesela gençler psikopatiz o yüzden var. Her şeyin yapılıp yapılmadığını kontrol etmek istiyoruz. Bu yüzden var. Ya da neden var? Daha muakul mantıklı bir nedeni var tahmin edeceğiniz üzere.
+
+311
+00:55:33,043 --> 00:56:02,923
+Alper Teoman Kolik. Orada mısın? Buradayım hocam. Peki, sence neden var burada da flow kontrol? Hocam, bilemedim şu an. Ya şöyle gençler, sorduğum soru doğru bildin, doğru bilmedin sorusu değil. Sorduğum soru mantık yürütmeniz, kafanızla hani
+
+312
+00:56:03,043 --> 00:56:05,323
+şeyi çözmeye çalışmamız.
+
+313
+00:56:05,604 --> 00:56:07,163
+Evet, bu adam dedi ki,
+
+314
+00:56:07,863 --> 00:56:09,683
+Dada Linkleri'de Flow Control var.
+
+315
+00:56:10,463 --> 00:56:13,084
+Ama diyor ki şimdi, taşıma katmanında da Flow Control.
+
+316
+00:56:13,404 --> 00:56:15,983
+Ben niye dönüp dönüp Flow Control yapıyorum, yahu!
+
+317
+00:56:17,424 --> 00:56:20,003
+diye hiçbir soru işareti olmadı mı dünyamızda?
+
+318
+00:56:21,624 --> 00:56:22,843
+Ne diyorsun İlayda?
+
+319
+00:56:31,891 --> 00:56:34,891
+Bak mesela İlay'da burada var gözüküyor ama aslında yok.
+
+320
+00:56:42,483 --> 00:56:47,563
+Evet, var mı fikri olan?
+
+321
+00:56:49,343 --> 00:56:51,423
+Tamam, şeye mi yazdım, çete mi yazdım?
+
+322
+00:56:53,103 --> 00:56:57,503
+Hocam buradayım, mikrofon açamıyorum. Peki, tamam oradan yaz o zaman. Sence neden var?
+
+323
+00:57:00,023 --> 00:57:05,824
+Bir dakika, biri daha yazmış. Pardon. Her katmanın kendine göre hataları olabilir diye düşünüyorum.
+
+324
+00:57:05,824 --> 00:57:09,063
+O nedenle flow of control olmalı diye tahmin ediyorum.
+
+325
+00:57:09,063 --> 00:57:28,283
+Güzel deneme önder. Hatasız katman olmaz. Her katmanı sevmek lazım falan gibi oldu ama tam olarak öyle değil. Şimdi şunu unutmamak lazım. Bunu bir parçanın elini hata durumunda eksikliğine yaşam olsun.
+
+326
+00:57:28,283 --> 00:57:51,643
+Şimdi bak o error kontrol öncelikle İlayda. Flow kontrol değil tam olarak. Flow kontrolden kastım akışın yani haberleşmedeki akışın hızın kontrol edilmesi. Bunu ne için yapıyoruz?
+
+327
+00:57:51,643 --> 00:58:15,083
+Data Link'leri de iki tane düğümümüz var. Handshake ile hiç alakası yok. Handshake ayrı connection ile kullandığımız bir durum. Data Link'leri de iki tane düğüm arasında haberleşiyoruz. Aynı network'ta var. Bu adamdan bu adama gönderiyorsunuz. Bunun yani çıkarttığı deriyi bu tak diye alıyor.
+
+328
+00:58:15,083 --> 00:58:33,223
+Arada zaten ortam var. Ortamdan daha hızlı gönderebilir misiniz? Hayır. Ortamın gönderimi hızı neyse, aklımız neyse o. Bu adam da alır o hızda. Ve fakat hatla aynı hızda paket işleyemeyebilir. Dolayısıyla durması, yavaşlaması, beklemesi gerekebilir. Geri bir dönüştür. Çok güzel.
+
+329
+00:58:33,564 --> 00:58:40,723
+Şimdi bu adamlar böyle aynı networkta ya. Bunların arasını açalım. Araya da 3-5 tane ayrı network koyalım.
+
+330
+00:58:46,003 --> 00:59:05,623
+araya neler girdi? Araya farklı farklı ağlar girdi. Ağın o anki durumunu bilmiyorsunuz. Siz bilgiyi gönderiyorsunuz. Sizin olduğunuz ağdan çıkıyor, başka bir ağa giriyor. Oradan çıkıyor, başka bir ağa giriyor. Oradan çıkıp başka bir ağa gidip o ağdaki node gidiyor.
+
+331
+00:59:05,623 --> 00:59:26,843
+Peki bu ağlardan herhangi birindeki aktif o ağ cihazlarından birinde bir problem olsa, bir congestion olsa, bir sıkışma olsa yani o ağ üzerinden geçen diğer traktörlerin de oluşturduğu bir yoğunluk olsa ne yapılması lazım?
+
+332
+00:59:26,844 --> 00:59:46,063
+Yani şöyle düşünün, işte buradan çıktınız, ara yollardan gidiyorsunuz, sonra bir ana yola bağlanıyorsunuz, sonra başka daha büyük bir yola bağlıyorsunuz, sonra daha büyük bir yola bağlanıyorsunuz, en sonunda temin üzerinde böyle arabanın içerisinde oturuyorsunuz.
+
+333
+00:59:46,063 --> 00:59:54,243
+Keş mekeş. Ne yapıyor olması lazım birilerinin? Bu keş mekeşi engelliyor olması lazım. Nasıl engelleyecek?
+
+334
+00:59:56,843 --> 00:59:59,863
+ağdaki kanıklığı çözüyor olmak lazım.
+
+335
+01:00:00,163 --> 01:00:06,383
+Kaşıma kalkmanındaki hedef ya da amaç aslında onu düzenlemek, yavaşlatmak.
+
+336
+01:00:10,387 --> 01:00:23,087
+Bu söylediğin şey hata kontrolü iddia et. Hani şu an şey olarak böyle random terörümler üretiyor musun gibi geliyor. Dur istersen. Daha çok kafa karıştırma.
+
+337
+01:00:23,087 --> 01:00:31,748
+Şimdi bunu da konuştuk. Oturum katmanında başka ne var?
+
+338
+01:00:33,167 --> 01:00:33,627
+Ha şey.
+
+339
+01:00:34,627 --> 01:00:35,847
+Katmanında konuştuk. Pardon.
+
+340
+01:00:37,847 --> 01:00:40,647
+Taşım katmanında konuştuk. Oturum katmanına geçeceğiz.
+
+341
+01:00:40,647 --> 01:00:45,507
+Şimdi oturum katmanı, şu katmanları bir bitirelim. Sonra bir ara veririz.
+
+342
+01:00:45,647 --> 01:00:47,568
+Çünkü ondan sonra işaretlere geçeceğiz.
+
+343
+01:00:47,568 --> 01:01:06,627
+Oturum katmanın olayı şu, iki düğüm, iki düğüm demeyeyim aslında, haberleşme yapan cihazlar arasında eş zamanlı an uyumluluğu sağlamak.
+
+344
+01:01:06,627 --> 01:01:11,527
+Bir taraftan. Yani...
+
+345
+01:01:16,724 --> 01:01:36,564
+Siz bir haberleşme başlattınız. Bunu başlattıktan sonra da belli işleri yerine getireceksiniz. Misal, eğer bir web sunucusuysanız ne olacak? Tahminen adamdan bir web sayfasını isteyeceksiniz. O size cevabını yollayacak. Sonra bir yere tıklayacaksınız, başka bir yere geçeceksiniz. Onun size cevabını yollayacak. Onu yapacak, bunu yapacak.
+
+346
+01:01:36,564 --> 01:01:40,084
+ya da bir yere erişmek isteyeceksiniz.
+
+347
+01:01:40,523 --> 01:01:43,904
+Orası için size bir şifre kullanıcı adı şifre ver sorması gelecek.
+
+348
+01:01:44,064 --> 01:01:45,224
+O bilgiyi göndereceksiniz.
+
+349
+01:01:45,224 --> 01:01:49,503
+Tamam dedikten sonra, karşı tarafı onayladıktan sonra size bilgi göndermeye devam edecek.
+
+350
+01:01:49,984 --> 01:01:51,703
+Siz de şey yapmaya devam edeceksiniz.
+
+351
+01:01:51,823 --> 01:01:54,444
+Orada gezinmeye vesaire devam edeceksiniz.
+
+352
+01:01:57,124 --> 01:02:01,503
+Tüm bu işin yapılmasından aslında oturum katmanısı oldu.
+
+353
+01:02:01,664 --> 01:02:03,984
+Bu mimaride, bu referans modelinde.
+
+354
+01:02:03,983 --> 01:02:10,583
+ve fakat bunu ek olarak şundan da sorumlu.
+
+355
+01:02:11,103 --> 01:02:14,563
+Bir şekilde siz sonuçta ayrı bir lokal arayadınız.
+
+356
+01:02:14,703 --> 01:02:15,904
+O bambaşka bir noktada.
+
+357
+01:02:16,803 --> 01:02:20,283
+Tam o sırada siz bazı işleri yaptınız, ettiniz.
+
+358
+01:02:20,543 --> 01:02:20,944
+Ne oldu?
+
+359
+01:02:21,724 --> 01:02:23,724
+Sizin bağlantınız anlık sekteye uğradı.
+
+360
+01:02:25,084 --> 01:02:27,563
+Sizin devam eden aktif bir oturumunuz vardı.
+
+361
+01:02:28,823 --> 01:02:29,724
+Ne lazım bize?
+
+362
+01:02:29,724 --> 01:02:33,603
+Bu oturumun minimum kesintiyle devam ediyor olması lazım.
+
+363
+01:02:33,603 --> 01:02:43,643
+Dolayısıyla bu oturum içerisinde böyle checkpointler oluşturup bir problem olduğu zaman o checkpointten devam edebilmeyi sağlamak.
+
+364
+01:02:45,343 --> 01:02:53,003
+O problemin hemen öncesindeki sağlıklı bir noktaya döndürmek de oturum katmanının görevi.
+
+365
+01:02:53,003 --> 01:03:22,143
+tabii ki herhangi bir şey durumunda da problem durumunda da ya da normal durumda da bu bağlantıyla ilgili bütün kaynakların release edildiği, problem durumunda da benzer şekilde release edildiği, yani problemde şey yapmaya çalışırsınız, toparlayıp devam etmeye çalışırsınız.
+
+366
+01:03:22,143 --> 01:03:28,843
+ama toparlanamıyorsa da bir yerden sonra da ne olması lazım? İşletim sisteminde falan da konuşuyoruz.
+
+367
+01:03:29,923 --> 01:03:38,604
+Graceful, shut down olması lazım. Yani her şeyi graceful bir şekilde kullanılan bütün kaynakları vesaireyi bırakarak devam ediyor olması lazım.
+
+368
+01:03:39,463 --> 01:03:49,884
+Bırakarak kapatıyor olması lazım. Sunuk atmanı presentation dayır. Bunun aslında canlı bir örneğini yaşıyoruz zaman zaman.
+
+369
+01:03:49,884 --> 01:03:52,783
+fakat doğru katmanda doğru şekilde değil.
+
+370
+01:03:52,944 --> 01:03:54,824
+Yani bu referans modeline uygun şekilde değil.
+
+371
+01:03:54,944 --> 01:03:57,003
+Sunu katmanında derdimiz ne?
+
+372
+01:03:59,404 --> 01:04:00,684
+Presentation layer'da.
+
+373
+01:04:00,684 --> 01:04:07,003
+Uygulamanın ürettiği veriyi aslında ne yapmak?
+
+374
+01:04:07,884 --> 01:04:11,224
+Farklı sistemler arasında uyumlu hale getirmek.
+
+375
+01:04:13,044 --> 01:04:18,684
+Diyelim ki bir tarafta şey cihazları kullanıyorsunuz.
+
+376
+01:04:19,883 --> 01:04:28,123
+nedir o? Çok basit hani nasıl farklı olabilir sorusuna cevap olsun diye gerçek araç duyulması üzerinden şey yapayım.
+
+377
+01:04:28,983 --> 01:04:44,823
+Kullandığınız mimari little end'in. Karşı taraftaki mimari big end'in. Yani iki byte ve daha uzun şeyler, veri tipleri için bunların memordaki sıralanması birbirinden farklı.
+
+378
+01:04:44,823 --> 01:05:08,903
+Dolayısıyla bunların ne yapılıyor olması lazım? Düzeltiliyor, toparlanıyor olması lazım. Ya da var mesela daha üst katmanla bunu yapacaksak, daha üst seviyede bir örnekle gideceksek, sizin kullandığınız kodlama tekniği farklı, karşı tarafın kullandığı kodlama tekniği farklı, dolayısıyla sizin A için belirlediğimiz ifade farklı, öbür tarafın farklı. Bunun da ne yapılıyor olması lazım?
+
+379
+01:05:08,903 --> 01:05:13,363
+üniform hale getirerek gerekli geçişlerin yapılıyor olması lazım. Bunun dışında
+
+380
+01:05:13,856 --> 01:05:32,895
+sunu katmanı içerisinde verinin güvenliğinden de sorumlu. Daha doğrusu doğrudan sorumlu değil de eğer bununla ilgili bir adım atılıyorsa bu encryption yani şıkkı ve açma işlemlerinin yapılmasından da sorumlu.
+
+381
+01:05:32,895 --> 01:05:45,215
+bu katmanda oluşturuluyor. Uygulama katmanına baktığınız zaman tamamen aslında kullanıcının veri aktarımını kolaylaştırmak üzerine tasarlanmış bir yapı.
+
+382
+01:05:47,216 --> 01:05:58,396
+Toplamda bir interface gibi düşünebilirsiniz. Bütün derdiniz şeyin oluşması.
+
+383
+01:05:58,395 --> 01:06:06,255
+mesela bir e-posta göndereceksiniz, bir dosya aktaracaksınız, uzaktaki bir yere remote login olacaksınız.
+
+384
+01:06:06,635 --> 01:06:11,575
+Bu ve benzeri uygulamaların kullanıcıya arayüz olarak sunulduğu yapı.
+
+385
+01:06:11,575 --> 01:06:14,655
+Bunun dışında, yani OSI dışında neler var?
+
+386
+01:06:14,775 --> 01:06:19,655
+Farklı standartlar da var, A modelleri da var.
+
+387
+01:06:20,255 --> 01:06:20,615
+Ne var?
+
+388
+01:06:22,216 --> 01:06:27,035
+SNA var, DNA var, IPX var, Apple Talk var, TCP, IP var.
+
+389
+01:06:27,036 --> 01:06:33,476
+Bunlardan tek kayda değeri şu an için günümüzde TCP, IP. Apple top oldukça uzun süre kullanıldı.
+
+390
+01:06:33,595 --> 01:06:41,796
+Novel ile beraber IPX, SPX çokça bir süre kullanıldı. DNA ve SNA'da zamanında bolca kullanılmış modeller, referans modeller.
+
+391
+01:06:43,576 --> 01:06:55,616
+Ve fakat bu ders kapsamında değil ama A-teknoloji ders kapsamında mesela en çok konuşacağımız şey, hatta tek konuşacağımız şey neredeyse TCP, IP olacak.
+
+392
+01:06:55,615 --> 01:07:13,555
+TCP, IP'nin özelliğinden bir standart ama de facto olarak oluşmuş bir standart. Üniversiteler içerisinde kullanıldığı, geliştirdiği, yaşadığı ve zaman içerisinde internetin ortaya çıktığı yer olduğu için.
+
+393
+01:07:14,995 --> 01:07:21,675
+OSI, TCP ve DNA, 3 farklı alım yapısına baktığımız zaman, referans bir tane. OSI'de ne demiştik?
+
+394
+01:07:21,675 --> 01:07:30,236
+ne demiştik? 7 tane katman var. Fiziksel katman, veri bağ katmanı, ağ katmanı, taşıma katmanı, oturum katmanı, sun katmanı, uygulama katmanı.
+
+395
+01:07:30,236 --> 01:07:44,775
+Buna karşı TCP, IP'ye baktığımız zaman aslında toploku 4 tane katman var. Bunlardan bir tanesi ağ erişim katmanı ki bu ağ erişim katmanı aslında üzerinde çalıştığı ağın ne olduğuna bağlı olarak değişir.
+
+396
+01:07:44,775 --> 01:07:52,975
+Yani Ethernet ise orada Ethernet, Wi-Fi ise işte 8211 sülalesinden bir şeyler vesaire var.
+
+397
+01:07:53,555 --> 01:07:58,856
+Üstünde ise internet katmanında ne kullanıyoruz? IP kullanıyoruz zaten. Yanında da ICMP kullanıyoruz.
+
+398
+01:08:00,076 --> 01:08:05,975
+Bir üstünde uygulamanıza bağlı olarak TCP, UDP, RTP vesaire kullanıyoruz.
+
+399
+01:08:05,975 --> 01:08:16,755
+Daha üstte ise yani OSI'de aslında uygulamasını ve oturum katmanıyla ifade ettiğimiz kısmı TCP, IP'de sadece uygulama katmanıyla karşılıyoruz.
+
+400
+01:08:18,216 --> 01:08:23,815
+O yüzden de katmanlar daha az, katmanların yapısı ve şekli biraz daha değişik.
+
+401
+01:08:24,035 --> 01:08:29,895
+OSI referans modülüne baktığımız zaman katmanlar belli anlamlarda daha şeydir, nedir o?
+
+402
+01:08:29,895 --> 01:08:44,935
+bir yerlere yığılmış durumdadır. Ama üst tarafa çıktıkça özellikle içi boşalır. TCP, IP'de de IP noktası, yani internet katmanı bunun dar noktasıdır.
+
+403
+01:08:44,935 --> 01:08:54,255
+Orada bir tek seçeneğimiz var. IP üst tarafına doğru gittiğiniz zaman da taşıma katmanı bayağı sıfışık olabilir.
+
+404
+01:08:54,255 --> 01:09:09,595
+Bunun dışında bu katmanlar arasında yani internet katmanıyla taşıma katmanı arasında neresinin de olduğu çok da net anlaşılamayan protokoller de vardır. Yani ikinci katman da diyebilirsiniz ama zaman zaman yaptığı şeyler üçüncü katmana girer.
+
+405
+01:09:10,195 --> 01:09:16,355
+O yüzden TCPIP böyle masa başında oturup planlanmış, oluşturulmuş bir model değil.
+
+406
+01:09:16,875 --> 01:09:22,635
+Olan bir implementasyonu modele çevirmiş hali. O yüzden bazı kendi içerisinde kabaca yamuklukları var.
+
+407
+01:09:24,116 --> 01:09:29,355
+Şimdi işaretlere geçeceğiz ama bir mola verelim. Ben bir sesimi, boğazımı dinlendireyim.
+
+408
+01:09:29,635 --> 01:09:35,075
+Birazdan geri başlıyor oluruz. Saat 6-7 geçiyor galiba benim saatim.
+
+409
+01:09:35,635 --> 01:09:39,695
+15 geçe başlıyoruz. Bir an önce şey konu toparlayalım.
+
+410
+01:17:09,363 --> 01:17:11,363
+Evet arkadaşlar, şimdi...
+
+411
+01:17:14,323 --> 01:17:23,363
+işaretleri konuşacağız demiştim. O işaretleri arasında işaretlerin tiplerini konuşacağız.
+
+412
+01:17:23,363 --> 01:17:30,383
+Hani terör diye, pardon. Örneksel ya da sayısal işaretleri konuşacağız. Onların özelliklerini konuşacağız.
+
+413
+01:17:30,483 --> 01:17:36,903
+Bunlar arasında nasıl dönüşüm yaparız, onları konuşacağız. Şimdi aslında neye ihtiyacımız var?
+
+414
+01:17:37,084 --> 01:17:41,084
+Elimizde bir veri var. Bu veriyi bir uçtan diğer ucu aktarmamız lazım.
+
+415
+01:17:41,084 --> 01:17:46,223
+o aktarımın ortamının da özelliklerine bağlı şekilde ifade ediyor olmamız lazım.
+
+416
+01:17:47,623 --> 01:17:50,724
+Örneklerine yazarken kullandığımız alfabet.
+
+417
+01:17:51,303 --> 01:17:55,684
+İşitme engelliler ne yapıyor? Kendi aralarında mı? Ve ev kol hareketleriyle anlaşıyorlar.
+
+418
+01:17:56,204 --> 01:18:01,623
+Ya da konuşurken ne yapıyoruz? Aslında konuşma kısmında şey gibi düşünün.
+
+419
+01:18:01,623 --> 01:18:07,024
+tamamen sesle olan, hani görselin olmadığı kısım düşünün.
+
+420
+01:18:07,063 --> 01:18:13,463
+Çünkü sesle haberleşmede karşılığı bir görüntü olması durumunda aslında bir de all of band konuşuyorsunuz.
+
+421
+01:18:13,463 --> 01:18:17,083
+İki farklı ortam üzerinden konuşuyorsunuz gibi bir durum var.
+
+422
+01:18:22,083 --> 01:18:25,044
+Bilgisayar sisteminde de benzer bir şeye ihtiyacımız var.
+
+423
+01:18:26,063 --> 01:18:27,223
+Ne yapıyor olmamız lazım?
+
+424
+01:18:27,224 --> 01:18:36,664
+deriyi, bilimizdeki sıfır milleri iletim ortamı üzerinden aktarabileceğimiz böyle işaretlere, ekran manyetik işaretlere dönüştürme ihtiyacımız var.
+
+425
+01:18:38,684 --> 01:18:45,484
+İşaretlere baktığımız zaman iki tip işaretimiz var.
+
+426
+01:18:45,624 --> 01:18:52,883
+Bir tanesi böyle devamlılık gösteren, bir devamlılığı, bağlılığı olan işaretler, kontinuslar.
+
+427
+01:18:52,883 --> 01:19:13,883
+Diğeri de diskret olan yani ayrık olan işaretler. Kontinuyos işaretleri aslında biz bir taraftan da ne diyoruz? Analog işaretler diyoruz.
+
+428
+01:19:13,883 --> 01:19:21,483
+yapıya baktığınız zaman bu grafikte olduğu gibi bir zaman grafiğine oturttuğunuzda böyle bir yapı görüyorsunuz.
+
+429
+01:19:21,544 --> 01:19:23,184
+Zamanlısı olarak devamlılığı var.
+
+430
+01:19:23,883 --> 01:19:24,423
+Kontinör.
+
+431
+01:19:24,904 --> 01:19:25,923
+Diğerine ne dedik?
+
+432
+01:19:26,423 --> 01:19:27,303
+Sayısal işaretler.
+
+433
+01:19:27,404 --> 01:19:29,624
+Sayısal işaretlerde yapı ne?
+
+434
+01:19:29,803 --> 01:19:30,843
+Kesiklik gösteriyor.
+
+435
+01:19:30,963 --> 01:19:32,743
+Bir kopukluk gösteriyor.
+
+436
+01:19:32,743 --> 01:19:37,743
+Bunlara aynı zamanda sayısal dijital diyoruz.
+
+437
+01:19:38,923 --> 01:19:40,723
+Diskret ol dediğimiz gibi.
+
+438
+01:19:53,844 --> 01:20:08,643
+Aslında bu kontinuyus olan, yani bir önceki slide'de gördüğümüz analog işaretler bizim için bir taraftan da örneksel işaret olarak ifade ettiğimiz yapılar.
+
+439
+01:20:08,643 --> 01:20:22,483
+neden örneksel diyoruz? Örneksel dümenizin temel bir nedeni var. O kontinuus olma halini bir şekilde
+
+440
+01:20:26,228 --> 01:20:44,447
+doğrudan bir formülle temiz ve net bir şekilde ifade etmemiz çoğu zaman mümkün değil. Ne demek istiyorum? Şunu demek istiyorum. Önce şu tanımı da ettim. Bu slide'da başka bir şey var. Pardon. Onu yapayım. Ondan sonra geçeyim.
+
+441
+01:20:45,387 --> 01:20:53,648
+İşaretlere baktığınız zaman ister örnekse olsun ister sayısı olsun iki temel grupta ayırabilirsiniz. Bir tanesi periyodik, bir tanesi de periyodik.
+
+442
+01:20:53,648 --> 01:21:00,748
+Periyodik olan şey tahmin edeceğiniz üzere bir şekilde kendini devamlı yenileyen işaretler.
+
+443
+01:21:00,748 --> 01:21:04,147
+Yani belli bir periyodu var, o periyod sonunda tekrar baş ediliyor.
+
+444
+01:21:04,268 --> 01:21:12,107
+Aperiyodik ise herhangi bir şeyin yenilenmesi olmayan işaretler.
+
+445
+01:21:12,628 --> 01:21:20,187
+Şimdi periyodik işaretlere baktığınız zaman bu solda olduğu gibi örneksel de olabilir,
+
+446
+01:21:20,187 --> 01:21:40,847
+sağda olduğu gibi sayısal da olabilir. İki türlü de olabilir. Aperi diye baktığınız zamansa sol tarafta gene şey var, elimizin altında örneksel bir işaret var. Sağ tarafta ise sayısal bir işaret var. Bir periyodikleri yok. En azından gördüğümüz kadar olan kısımda.
+
+447
+01:21:40,847 --> 01:21:50,387
+Şimdi örneksel işaretler genelde baktığınız zaman basit ya da karmaşık olarak sınıflandırabilirsiniz.
+
+448
+01:21:50,387 --> 01:22:01,187
+Basit olanlar zaten hani böyle çok temiz bir sinüs işareti şeklinde, sinüs dalgası şeklinde devam edenler olabilir.
+
+449
+01:22:01,187 --> 01:22:11,547
+ve fakat burada gördüğünüz soldaki gibi bir sinyali ya da periyodik olanı sinüs ya da kosünüsle ifade etme şansımız var.
+
+450
+01:22:12,047 --> 01:22:21,427
+Ama böyle olan bir örneksel sinyali ifade etmemiz doğrudan mümkün değil.
+
+451
+01:22:21,427 --> 01:22:23,607
+Bunun için ne yapıyor olmamız lazım?
+
+452
+01:22:23,607 --> 01:22:36,427
+onu belli aralıklarla daha basit sinyallerin parçası, her bir parçasını daha basit şekildeki sinyal üzerinden formüle edebilirsiniz.
+
+453
+01:22:36,608 --> 01:22:39,427
+Yani parça parça düşünüp birleştirebilirsiniz.
+
+454
+01:22:39,608 --> 01:22:40,647
+Bunun için de ne yapıyoruz?
+
+455
+01:22:41,287 --> 01:22:43,347
+Temel olarak furya dönüşünü yapıyoruz.
+
+456
+01:22:43,347 --> 01:22:55,168
+Aslında atölyodik işareti çok sayıda periyodik işareti bölüp her birinin bu sinyale etkisini de kat sayılarla ifade ediyoruz.
+
+457
+01:22:58,047 --> 01:23:06,547
+Baktığınız zaman aslında bütün şeyleri, nedir o, işaretleri o şekilde furyaya açabilirsiniz.
+
+458
+01:23:06,547 --> 01:23:27,967
+furiyeyi açtığımız zaman o kat sayılardan kaç tanesi elinizde varsa bu furiyeyi daha sonra ters furiyeye sokup aynı sinyali rekonstrakt edebilirsiniz. Elinizde şeyler fazlaysa, kat sayılar fazlaysa itkide orijinal sinyale benzeyen bir şey olacaktır. Azsa daha yamuk yamuk bir şey olacaktır.
+
+459
+01:23:27,967 --> 01:23:48,547
+Şimdi örneksel işaretlere baktığımız zaman aslında temel birkaç tane özellik var. Bir tanesi amplitude yani genliği. Bir diğeri frekansı, bir diğeri de fazı.
+
+460
+01:23:48,547 --> 01:23:57,207
+Şimdi şeye baktığımız zaman genlik işaretin eriştiği yükseklik olarak nitelendirilebilir.
+
+461
+01:23:57,207 --> 01:23:59,867
+Yani deminki bir sonraki grafikte var mı yok.
+
+462
+01:24:00,887 --> 01:24:12,007
+Bir öncekinde mesela burada sol taraftaki sinyale bakacak olursanız, parça parçada bakacak olursanız bunun genliği şu tepe noktası ile ifade edilir.
+
+463
+01:24:12,007 --> 01:24:17,547
+Bunun frekansına bakacak olursanız frekans dediğimiz şey bu sinyalin aslında
+
+464
+01:24:21,587 --> 01:24:32,567
+bir saniye süresince işaretin yaptığı dönüş sayısı olarak belirtebiliriz. Yani buradan kaç kere geçti, kaç kere döndü.
+
+465
+01:24:34,207 --> 01:24:43,247
+Şimdi bir de faz var. Faz ise dalga şeklinin, özellikle de periyodikli yapıdan bahsediyorsak ki,
+
+466
+01:24:43,247 --> 01:24:57,867
+aperiyodikler de periyodik cinsinden belirtebiliriz demiştik. Dolayısıyla faz o dalga şeklinin, mesela bir sinüs dalgasının nereden başlayıp nereden bittiğini ifade etmek için kullandığımız bir özellik.
+
+467
+01:24:57,867 --> 01:25:05,827
+Genlik kısmında volt, amper ya da watt kullanıyor olabiliriz. Sıklık için kullandığımız şey hertz.
+
+468
+01:25:05,827 --> 01:25:14,347
+Hz ile ilgili konuşurken aslında bir de periyoddan konuşuyor olmanız lazım.
+
+469
+01:25:14,947 --> 01:25:20,607
+Periyodla sıklık arasında bir ters ilişki var.
+
+470
+01:25:21,787 --> 01:25:30,507
+Dolayısıyla periyod aslında birim frekansa bölümü, bir bölü f eşittir bizim için t.
+
+471
+01:25:31,227 --> 01:25:34,087
+Şimdi sıklığı ifade ederken Hz'i kullanıyoruz.
+
+472
+01:25:34,087 --> 01:25:44,567
+karşılığında periyot olarak bakacak olursak da saniye, milisaniye, mikrosaniye, nanosaniye, pikosaniye gibi birimleri kullanıyor.
+
+473
+01:25:46,007 --> 01:25:48,967
+Fazla ilgili konuşurken söylediğim şey neydi?
+
+474
+01:25:49,587 --> 01:25:54,528
+Sinyalin aslında başlangıç noktasına göre durumu.
+
+475
+01:25:55,407 --> 01:26:03,687
+Yani siz soldaki gibi bir sinyali fazını 90 derece değiştirirseniz ne olacaktır?
+
+476
+01:26:04,087 --> 01:26:20,007
+360 içerisinde 90 bunun 1 bölü 4 kayması demek. 1 bölü 4 kaydıktan sonra bu sinyal yani ilk tepe noktasından başlayacak. Aşağı doğru tepe noktasına gidecek. Sonra yukarıdaki tepe noktasına doğru çıkacaktır. Yani sağdaki gibi olacaktır.
+
+477
+01:26:20,007 --> 01:26:33,507
+örneksel işaretlere baktığınız zaman bu üç özellikler bahsediyorduk sıklık, genlik ve faz bu sinyalde bu sinyal örneklerinde daha doğrusu neyi görüyorsunuz?
+
+478
+01:26:33,507 --> 01:26:44,808
+En üsttekinde sıklığın değişimi sinyalin oluşma şekli değişiyor genliğin değişimini görüyorsunuz sağdakinde ortadakinde ne oluyor?
+
+479
+01:26:44,808 --> 01:26:59,067
+tepe noktasında bir fark ulaşık oluyor. En alttakinde de faz değişimi görüyorsunuz. Sinyal aslında aynı sinyal belli açılardan ama başlama bitme noktaları değişiyor. Çünkü sinyal içerisinde aslında ne yapıyoruz? Kayıyoruz.
+
+480
+01:26:59,067 --> 01:27:09,007
+Sayısal işaretlere baktığımız zaman, dijital işaretlere baktığımız zaman ne var söyleyebileceğimiz?
+
+481
+01:27:10,948 --> 01:27:17,687
+Aslında bizim burada genlik, sıklık ya da faz gibi özelliklerimiz yok.
+
+482
+01:27:17,687 --> 01:27:27,387
+Daha farklı bir yapımız var. Zaten yapı olarak baktığımızda da aperiyodik özellikler göstermeleri söz konusu.
+
+483
+01:27:29,067 --> 01:27:39,967
+Dolayısıyla zaten bir sıklıktan bahsetmek çok mümkün değil. Burada sayısal işaretleri ifade etmek için bit hızı ve bit aralığı gibi kavramları kullanıyoruz.
+
+484
+01:27:41,347 --> 01:27:56,347
+Bu noktada bit hızının böyle hani illa bir ilişki kurmamız gerekiyorsa sayısal ve örneksel işaretler arasında bit hızının örneksel işaretlerde sıklık ile özdeş olduğunu düşünebiliriz.
+
+485
+01:27:56,347 --> 01:28:05,767
+bit aralığı ise bir bitin aktarımı için saniye cinsinden geçen süre iyi ifade ediyor.
+
+486
+01:28:11,796 --> 01:28:34,075
+Bu noktada sayısal bir işareti aslında yine hani furya üzerinden ifade etmek mümkün. Nasıl mümkün? Hani farklı genlik, sıklık ve faz özelliklerine sahip olan sinüs dalgalarını toplama olarak göstermek mümkün. Bunu anlatmak, açıklamak mümkün.
+
+487
+01:28:34,075 --> 01:28:49,895
+Baktığımız zaman, demin söylediğim bit aralığı ve bit hızı, veri aktarım için gerekli olan süre olarak bit aralığını söylemiştim.
+
+488
+01:28:57,492 --> 01:29:00,271
+burada da zaten grafikte o halini görüyorsunuz.
+
+489
+01:29:00,811 --> 01:29:07,752
+Şimdi haberleşme ile ilgili konuşmamız gereken şeylerden bir tanesi de haberleşmeyi olumsuz etkileyen unsurlar.
+
+490
+01:29:07,832 --> 01:29:10,711
+Yani haberleşmeyi bir ortam üzerinden gerçekleştiriyoruz.
+
+491
+01:29:10,832 --> 01:29:18,891
+Dolayısıyla bu ortam üzerinde haberleşmeyi bozacak olan farklı durumlar oluşabilir.
+
+492
+01:29:20,031 --> 01:29:27,412
+Bunlara ne diyoruz? Mesela sinyal zayıflaması var, otoneyeşim, gecikme var, delay, gürültü var, noise.
+
+493
+01:29:27,492 --> 01:29:34,492
+işte cross-talk dediğimiz böyle ses karışımı diyeceğim ama hani aslında çok da Türkçesi bence karşılamıyor.
+
+494
+01:29:34,971 --> 01:29:37,591
+Bunun dışında distortion olabilir.
+
+495
+01:29:39,012 --> 01:29:40,532
+Bunlar hangi ortamlarda var?
+
+496
+01:29:40,532 --> 01:29:44,032
+Aşağı yukarı her ortamda bu özellikler var.
+
+497
+01:29:44,191 --> 01:29:48,051
+Mesela kablo üzerinde konuşurken de bir gürültü mümkün.
+
+498
+01:29:48,631 --> 01:29:50,951
+Cross-talk fazla fazla mümkün.
+
+499
+01:29:51,471 --> 01:29:53,492
+Sinyalin zayıflaması çok olası.
+
+500
+01:29:53,492 --> 01:30:00,012
+yani o kablo üzerine aktardığımız sinyal zaman içerisinde kablo üzerinde ne olacaktır?
+
+501
+01:30:00,151 --> 01:30:01,892
+Güç kaybederek ilerleyecektir.
+
+502
+01:30:04,971 --> 01:30:10,591
+Telsiz haberleşmesine baktığımız zaman orada crosstalk yine mümkün.
+
+503
+01:30:11,012 --> 01:30:12,992
+Gürültü illa olabilir.
+
+504
+01:30:13,191 --> 01:30:20,932
+Yani ortamda nasıl bir gürültü olduğuna bağlar elektromanyetik bir gürültü varsa özellikle sizin gönderdiğiniz sinyali de bozacaktır.
+
+505
+01:30:21,492 --> 01:30:22,932
+Zayıflama tabii ki var.
+
+506
+01:30:22,931 --> 01:30:30,471
+o da şeyin bir yapısı. Bunun dışında ekstra gelecek olan yansımalar ve bozulmalar da var.
+
+507
+01:30:35,315 --> 01:31:00,595
+Şöyle, yani, cross-talk aslında tam sinyal karışımına da denk gelmiyor. Onun cross-talk denmesinin nedeni, tanımın geldiği yer, telsizde şeylerin karışması ya da radyoda frekansların karışması. Normalde aslında sinarıya bariyer frekanslar koyuyorsunuz. Doğru mu?
+
+508
+01:31:00,595 --> 01:31:07,775
+radyo frekansları mesela belli bir FM bandında bakacak olursanız arada bariyer band var aslında.
+
+509
+01:31:08,575 --> 01:31:10,895
+Doğrudan hepsi birbirinin üzerinde değil.
+
+510
+01:31:11,655 --> 01:31:13,415
+Ve fakat arada ne oluyor?
+
+511
+01:31:13,676 --> 01:31:19,635
+Sinyalde driftler olduğu için geçiş oluyor.
+
+512
+01:31:19,635 --> 01:31:25,755
+O geçişte de doğrudan konuşma şeyimiz var.
+
+513
+01:31:26,035 --> 01:31:26,415
+Nedir o?
+
+514
+01:31:26,415 --> 01:31:35,855
+bir hat yani normalde orada işte 100.6'yı dinliyor olmanız gereken yerde bir anda bir bakıyorsunuz 100.8'i dinliyorsunuz.
+
+515
+01:31:35,855 --> 01:31:47,775
+Aynı şey telsizde de var. Telsiz haberleşmesinde de var. O cross talk aslında oradan geliyor. Talk olduğu için de Türkçe'ye çevirirken ses karışımı gibi çeviriyorlar falan fıstık.
+
+516
+01:31:47,775 --> 01:31:59,515
+ama teknik olarak baktığınız zaman o haberleşme kanalının bir şekilde bir başka kanalla karışması.
+
+517
+01:31:59,515 --> 01:32:01,655
+Öyle düşünemez.
+
+518
+01:32:08,564 --> 01:32:30,484
+Şimdi, sinyal zayıfım, yani bu konuştuğumuz sorunlar nedir? Çözülemeyecek şeyler mi? Tabii ki çözülebilir şeyler. Ama çözümün de ne kadar efektif olduğuna bakmak lazım şu o zaman. Neden bahsediyorum? Mesela, sinyal iletimi sırasında mesafeye bağlı olarak sinyal sönümleniyor. Tamam, o zaman ne yapıyor olmamız lazım? Araya amplifier koyalım, geçelim.
+
+519
+01:32:30,484 --> 01:32:35,543
+güçlendirici kuralım en fayet ettiğimizde.
+
+520
+01:32:37,604 --> 01:32:40,303
+Bu şekilde ne olur? Sinyal zayıflasa bile
+
+521
+01:32:40,303 --> 01:32:48,824
+yine de ben konuşmaya, aktarmaya daha da ileri iletmeye devam edebilirim.
+
+522
+01:32:49,483 --> 01:32:56,564
+Ancak burada, bu özellikle analog sinyallerle ilgili olarak başımıza gelen şeylerden bir tanesi,
+
+523
+01:32:56,564 --> 01:33:05,584
+analog bir sinyal bozulduğu zaman, yani bir gürültüye maruz kaldığı zaman ve siz onu entrafaya ettiğiniz zaman ne yapıyorsunuz aslında?
+
+524
+01:33:06,064 --> 01:33:07,683
+Gürültüyü de entrafaya ediyorsunuz.
+
+525
+01:33:09,104 --> 01:33:14,183
+Dolayısıyla ne yapmak lazım?
+
+526
+01:33:14,303 --> 01:33:17,163
+Önce parazitten temizlemek, sonra entrafaya etmek lazım.
+
+527
+01:33:17,163 --> 01:33:21,244
+Bu da hani söylendiği kadar kolay olmuyor.
+
+528
+01:33:21,244 --> 01:33:30,303
+Özellikle bir sinyarın üretimi için kullandığınız bir ortamdan bahsediyorsak, gürültü o ortamda gürültü illa vardır.
+
+529
+01:33:30,303 --> 01:33:38,523
+Yani hattı birinin bir şeyler gönderiyor olması şart değil. Boş olduğunda bile bir şeyler vardır.
+
+530
+01:33:39,744 --> 01:33:49,123
+Bunun en canlı örneğinden bir tanesi şey yapın, bir osiloskop ayarlayın, kullanmadığınız bir kablo üzerinde tutun, bakalım ne oluyor?
+
+531
+01:33:49,123 --> 01:34:04,903
+Ne görüyorsunuz hatta? Dümdüz bomboş bir şey mi görüyorsunuz? Başka bir şeyler mi görüyorsunuz? Etrafta elektromanyetik sinyal çok. Dolayısıyla o sinyaller o kablo üzerinde bir şeylerin hareket etmesine, bir şeylerin oluşmasına neden olacaktır.
+
+532
+01:34:11,060 --> 01:34:12,979
+Şimdi
+
+533
+01:34:16,916 --> 01:34:36,916
+bir ortam üzerinde ne yapıyoruz? Bir uçtan diğer uca doğru veri aktarıyoruz. Bunun üzerinde farklı frekanslarda iletim yapıyor olabilirsiniz. Yani aynı kablo üzerinde 100 MHz'e de iletim yapabilirsiniz, 1000 MHz'e de iletim yapabilirsiniz.
+
+534
+01:34:36,916 --> 01:34:47,215
+ancak ve lakin letim hattınızda kullandığınız sinyalin frekansı değiştiği zaman bunun yayılma hızı da değişecektir.
+
+535
+01:34:47,215 --> 01:34:56,235
+Dolayısıyla o sinyalin frekansı nasıl ifade edeyim?
+
+536
+01:34:56,335 --> 01:35:06,855
+Furiye'yi açtığınız zaman o gördüğünüz bileşenler aslında farklı özellikler geçtirecek ve dolayısıyla karşı tarafa aktarımında farklı gecikmelere maruz.
+
+537
+01:35:06,916 --> 01:35:36,255
+Dolayısıyla bir propagation delay yaşayacaksınız. Bu da doğrudan eğitim kalitesine etki edecektir. Bunun dışında konuşmamız gereken ne var? Veri taşıma kapasitesi var. Veri taşıma kapasitesi için aslında iki tane teorem var. Bilmeniz, aklınızda olması gereken. İki teorem dene nedeni şu. Bir tanesi Nyquist teoremi, bir de Shannon'ın teoremi.
+
+538
+01:35:36,916 --> 01:36:01,316
+Şimdi bu iki teorem aslında Shannon değil de Shannon Hartley ama bir şekilde nedense hep Shannon diye söylüyoruz. Bir ikilinin teoremi. Nyquist aslında en böyle şey örneği verir. Nedir o? Optimum durumu anlatır bize. Nedir o?
+
+539
+01:36:01,315 --> 01:36:15,635
+bir bant genişliğiniz var, H. Bu iletim ortamında der ki diğer uca veri aktarabilmek için bant genişliğinin iki katı örnek alınması gerekir.
+
+540
+01:36:18,215 --> 01:36:22,815
+Şimdi bunu da nasıl ifade ediyor? 2H, log2V diye.
+
+541
+01:36:22,815 --> 01:36:36,355
+Bunu şeyden de hatırlıyor olmanız lazım. Soundlink rate'i konuşmuşuzdur bir yerlerde. Benle konuşmasanız bile gömülü sistemlerde vesaire de.
+
+542
+01:36:36,355 --> 01:36:45,775
+Bir sinyali solunsuz regenerate etmek için ne yapıyoruz? İki katı hızda sample ediyoruz.
+
+543
+01:36:51,315 --> 01:37:19,975
+neden? Yani 4 MHz'e, 8 MHz'e sampel ediyoruz. Geçişleri yakalayabilmek için. Burada da aynı şeyden bahsediyoruz aslında bir nevi. Bizim iletim hattı üzerimizde 0 ve 1'lerden oluşan bir veriyi aktarmamız gerekiyor. Dolayısıyla iki farklı voltaj seviyesi bizim için yeterli. Yani işte 0 ve 1 olabilir, eksi 1, 1 olabilir, vesaire olabilir. Fark etmez. İki seviye yeterli.
+
+544
+01:37:21,315 --> 01:37:35,676
+Bunun yerine siz iki seviye değil de üç seviye, beş seviye gibi tek sayıları çok kullanmazsınız ama dört seviye, sekiz seviye gibi sayıları kullanabilirsiniz.
+
+545
+01:37:36,235 --> 01:37:38,336
+Bunları aktardığınız zaman ne olacaktır?
+
+546
+01:37:39,996 --> 01:37:45,656
+Farklı voltaj seviyeleri, farklı değerleri iletebilmenizi sağlayacaktır.
+
+547
+01:37:45,656 --> 01:37:59,055
+Dolayısıyla işte 4 seviyeniz varsa herhangi bir T anında 0 ya da 1'i değil 0, 0, 0, 1, 1, 0 ya da 1, 1 gibi farklı kombinasyonlara aktarabilir hale geleceksiniz.
+
+548
+01:37:59,055 --> 01:38:10,095
+Zaten Nyquist'in formülünde kullanılan o V değeri de, şuradaki V değeri de sizin voltaj seviyenizi ifade etmek için kullanılır.
+
+549
+01:38:10,195 --> 01:38:14,076
+Biz şimdi bu formüle baktığınız zaman ikilik sistemde ne kullanıyoruz?
+
+550
+01:38:14,075 --> 01:38:21,455
+2H log 2V, buradaki V bizim için 2 olduğundan orası 1. Dolayısıyla veriyoruz eşittir 2H.
+
+551
+01:38:21,455 --> 01:38:39,115
+Ben bütün iki katı olabilir en fazla. Ve fakat bu taşıma kapasitesi hesabında noise hiçbir şekilde hesaba katılmış durumda değil.
+
+552
+01:38:39,115 --> 01:38:47,855
+Bir diğer şey, ne sıkıntısı var?
+
+553
+01:38:47,855 --> 01:38:52,795
+Yani gürültü hesabı katılmadığı için aslında bu farklı voltaj seviyeleri diyoruz.
+
+554
+01:38:53,215 --> 01:38:55,655
+Orada şuraya da gidiyoruz.
+
+555
+01:38:56,595 --> 01:39:00,335
+Tamam, 0 ve 5 volt kullanmayalım.
+
+556
+01:39:00,875 --> 01:39:02,415
+0, 5 ve 10 kullanalım.
+
+557
+01:39:03,095 --> 01:39:05,036
+0, 5, 10, 15 kullanalım.
+
+558
+01:39:05,036 --> 01:39:09,136
+ya da 0, 5, 10, 5, 10 kullanalım.
+
+559
+01:39:09,595 --> 01:39:11,256
+Farklı sinyal seviyelerine geçelim.
+
+560
+01:39:11,356 --> 01:39:12,556
+Burada ne sıkıntısı oluyor?
+
+561
+01:39:13,176 --> 01:39:14,916
+BBG'de de arada konuşuyoruz.
+
+562
+01:39:16,676 --> 01:39:18,215
+Farklı sinyal seviyelerimiz var.
+
+563
+01:39:18,676 --> 01:39:22,756
+Dolayısıyla bu sinyal seviyeleri arasında geçiş için süreye ihtiyacınız var.
+
+564
+01:39:23,896 --> 01:39:27,276
+Bu sürede sizin aslında ne yapmanızı engelliyor?
+
+565
+01:39:27,715 --> 01:39:28,955
+Hızlanmanızı engelliyor.
+
+566
+01:39:28,955 --> 01:39:32,315
+Evet, birim zamanda daha çok yere aktarıyorsunuz.
+
+567
+01:39:32,315 --> 01:40:02,196
+daha doğrusu tek bir sinyal seviyesiyle daha fazla yer arttırıyorsunuz. Kombinasyon artıyor. Ama hızınız azalıyor. 0-1 değilse nasıl bir güzellik var? Bir şey ya 0'dır ya 1'dir. Bir parasit ya da gürültü varsa arada bir yerlere çıkabilir. Tamam. Ama bunun içinde bir bariyerimiz var. Bariyer derken bir limitimiz var. Mesela 0 değil de 0,5 ise de biz bunu hala
+
+568
+01:40:02,195 --> 01:40:13,175
+sıfır kabul ediyoruz. Ama 3 voltsa yani 5 voltluk sistemden bahsediyorsak 2.7 ve üstü ise 1 diye kabul ediyoruz gibi.
+
+569
+01:40:13,175 --> 01:40:31,835
+Dolayısıyla parazite bozulmaya biraz daha neyiz? Dayanıklıyız. Ama aynı şeyde gerilim seviyesinde daha fazla aralık oluştursanız yani sıfırla beş arasında her bir volt için
+
+570
+01:40:31,835 --> 01:40:34,715
+ayrı bir şey oluşturacağım deseniz.
+
+571
+01:40:35,923 --> 01:40:53,323
+voltaj seviyesi oluşturacak mısınız? Yani 0, 1, 2, 3, 4 ve 5 için toplam 6 seviye oluşturacak mısınız? Bu sefer ne sıkıntı var? 4 seviyesinde bir parazit oldu. 5 mi dedi, 4 mi dedi? Anlamanız daha zor.
+
+572
+01:40:55,203 --> 01:41:02,104
+Ayrıca bunlar arasında geçiş yaparken ne olacak? Otomatikman bir parazit, bir şey oluşma ihtimali de daha yüksek olacak.
+
+573
+01:41:02,104 --> 01:41:13,004
+geçişleri yaparken daha hızlı davranamayacaksınız gibi problemler var. Neyse gürültüyü bu işin içerisine katıyorsak nasıl katıyor olmalı lazım?
+
+574
+01:41:13,004 --> 01:41:29,803
+Noise, gürültü noise olduğuna göre zaten ismi neye olarak gelecek? Noise. Ve fakat gürültüyü ifade ederken aslında işaret gücünün gürültüye oranı, signal to noise ratio, SNR ya da SN diye gördüğümüz bir kısım var.
+
+575
+01:41:29,803 --> 01:41:52,063
+formüle de öyle geliyor. Bir kere signal to noise ratio'nun hesaplanması lazım. Signal to noise ratio'yu da nasıl hesaplıyorsunuz? Bu da yukarıda gördüğünüz formüle. 10 log n, 10 çarpı log 10 tabanında S bölü n'le hesaplıyorsunuz.
+
+576
+01:41:52,063 --> 01:42:17,263
+Bunun sonucu yani SNR birimi dB-dB-dB diye geçiyor. Bunun üzerinden ifade ediliyor. Shannon Hartley'de sign-to-noise ratio'yu veri hızı formülüne eklemenin bir yolunu bulmuş. Nasıl bulmuşlar? Oturmuşlar, uğraşmışlar, bulmuşlar ölçümleri vesaire de yaparak.
+
+577
+01:42:17,263 --> 01:42:26,243
+Dolayısıyla H log 2 tabanında 1 artı S bölü N şeklinde bir formül ortaya çıkmış.
+
+578
+01:42:27,063 --> 01:42:29,503
+Bu formülü kullanarak ne yapabilirsiniz?
+
+579
+01:42:31,903 --> 01:42:36,383
+Veri aktarım hızınızın ne olabileceğini en yüksek bulabilirsiniz.
+
+580
+01:42:36,603 --> 01:42:37,503
+Nasıl bulacaksınız?
+
+581
+01:42:37,503 --> 01:42:56,463
+bakalım 3 ile 4 kHz arasında bulunan bir iletim kanalı üzerinde SNR değerinin 24 dB olduğu bilindiğine göre elde edilebilecek en yüksek hız ve iletim için kullanabilecek olan ayrık seviye sayısı nedir diye sormuşuz.
+
+582
+01:42:56,463 --> 01:43:06,283
+Şimdi signal to noise ratio'nuz 24 dB ise bunu o formüle göre hesaplıyor olmamız lazım.
+
+583
+01:43:06,284 --> 01:43:15,463
+signal to noise ratio'nun 24 olabilmesi için S bölü enin 10 üzeri 2.4 olması lazım.
+
+584
+01:43:15,603 --> 01:43:23,144
+Neden? Bir tarafı 10'a böldüğünüz 2.4 oldu. Logaritma 10 tabanında bunu 10'un üzeri gibi hesaplarsanız
+
+585
+01:43:23,144 --> 01:43:30,384
+S bölü ne eşittir? 10 üzeri 2.4 olacak. O da 251 falan gibi bir şeye denk düşüyor aşağı yukarı.
+
+586
+01:43:30,383 --> 01:43:41,423
+Bu 251 bilgisini alıp Shannon Hartley'in formülzasyonuna koyarsanız 8000 bitböre sekund ediyor.
+
+587
+01:43:44,884 --> 01:43:58,764
+Dolayısıyla buradan da devam edersek aynı şekilde neye varacağız? Bit seviyesine varacağız. Bit seviyesine varmak için de o 8000'i gene alıyoruz.
+
+588
+01:43:58,764 --> 01:44:03,203
+NYquist teorimine geri dönüyoruz.
+
+589
+01:44:03,203 --> 01:44:15,183
+NYquist teoriminden hesapladığımız zaman 2 çarpı bin log 2 üzeri ve hesabı yapın, hesabı kitabı yapın, çarpın, bölün ne olacak?
+
+590
+01:44:15,643 --> 01:44:18,444
+Ve 2 üzeri 4 yani 16 çıkacak.
+
+591
+01:44:24,243 --> 01:44:46,344
+Şimdi işaretlerin kodlanması. İşaretleri kodlamayı konuşacağımız zaman şunu biliyor olmamız lazım. Elimizde ne var? Örneksel işaretler var, sayısal işaretler var. Örneksel işaretler sayısal işaretler arasında ne yapıyor olabiliriz? Geçiş yapıya olabiliriz.
+
+592
+01:44:46,344 --> 01:45:00,663
+yani kodlama dediğimiz zaman örnekselden sayısala, sayısaldan örnekselden örnekselden sayısaldan sayısala bir şeyler yapıyor olabiliriz. Bunların hepsi mümkün. Dolayısıyla bunların hepsini konuşacağız.
+
+593
+01:45:00,663 --> 01:45:12,703
+misal sayısaldan sayısal veri akış ediyorsak aslında mesela bir bilgisayar sistemiyle çevre bilim arasındaki veri akışından bahsediyor olabiliriz.
+
+594
+01:45:13,083 --> 01:45:26,863
+Örneksel sayısaldan bahsediyorsak nasıl kontinuyus bir sinylden bahsediyoruz örneksel dediğimiz zaman bir sesin sample edilip bilgisayara aktarılması, bilgisayar ortamı dönüştürmesinden bahsediyor olabiliriz.
+
+595
+01:45:26,863 --> 01:45:51,023
+Tam tersi sayısaldan örnekseğe çevireceksek mesela şey üzerinden yaptığımız haberleşme, telefon hakkı üzerinden yaptığımız haberleşme buna çok güzel bir örnek. Sizin dijital bilginiz var 0-1 ne yapıyoruz? Sayısaldan örnekseğe çevirip şey hakkı üzerinden gönderiyoruz. Telefon hakkı üzerinden telefon siniriymiş gibi gönderiyoruz.
+
+596
+01:45:51,023 --> 01:46:11,563
+örneksel örneksel var. Aslında zaten örneksel yapıda olan bir bilgiyi mesela radyolardaki yayını ses bilgisi aldınız. Bunu yine örneksel olarak yayın yapan radyo üzerinden gönderdiniz. Yani orada da bir değişim yaptınız.
+
+597
+01:46:11,563 --> 01:46:21,004
+Şimdi tüm bu değişimlere baktığınız zaman kodlama tekniklerine böyle fantastik gruplar şeyler çıkartabilirsiniz.
+
+598
+01:46:21,203 --> 01:46:26,644
+Sayısal sayısal kodlamaya bakacak olursak bunun 3 tane temel çeşidi var.
+
+599
+01:46:26,644 --> 01:46:40,064
+Unipolar, Polar, Bipolar. Bunlar da kendi içerisinde aslında Polar kendi içerisinde non-return to zero, return to zero, B-face diye ayrılıyor.
+
+600
+01:46:40,063 --> 01:46:58,363
+Bipolarlar AMI, B8ZS, HDB3 falan gibi versiyonları vesairesi var. Yani altında da kategorize etmek mümkün.
+
+601
+01:46:58,363 --> 01:47:23,303
+Şimdi biz burada şeyden başlarız, Unipolar'dan başlarız. Unipolar ne ifade ediyor ya da ne demek? Aslında tek polarizasyon var. Yani dikkat edin sinyal nasıl? Sıfır için sıfır, bir içinde pozitif gerilimi kullanıyoruz.
+
+602
+01:47:23,303 --> 01:47:28,423
+sıfır için aslında idle bırakıyoruz.
+
+603
+01:47:28,563 --> 01:47:29,643
+Yani bir şey de yapmıyoruz.
+
+604
+01:47:29,643 --> 01:47:36,843
+Şimdi buradaki sıkıntılardan bir tanesinde oluşan sinyal nasıl bir durumda?
+
+605
+01:47:37,443 --> 01:47:42,184
+Bir için, içinde bir geçtiği zaman pozitif gerilim görüyor olmanız lazım hatta.
+
+606
+01:47:42,824 --> 01:47:49,063
+Dolayısıyla bu sinyali ortalamasına baktığınız zaman bir DC bileşen oluşacak.
+
+607
+01:47:49,063 --> 01:47:54,343
+ortalama genlik bir yeri var ve her zaman pozitif.
+
+608
+01:47:54,343 --> 01:47:59,803
+Yani frekansı sıfır olan DC bir bileşen oluşacak.
+
+609
+01:48:00,483 --> 01:48:03,763
+Şimdi bu teknik olarak neye yol açar?
+
+610
+01:48:05,883 --> 01:48:12,603
+Özellikle de uzun bir hat üzerinde aktarım yapıyorsanız başınıza problem alırsınız.
+
+611
+01:48:13,343 --> 01:48:17,903
+DC çünkü bileşen uzun hat üzerinden gitmez.
+
+612
+01:48:17,903 --> 01:48:23,863
+zayıflar, Söner. Dolayısıyla bu simyal çok uzun gitmez. Bir diğer şey an uyumluluk.
+
+613
+01:48:24,115 --> 01:48:31,395
+ne yapıyor olması lazım? Bu sinyalin bir noktadan çıkıp diğer tarafa erişiyor. Her iki tarafta aynı anlama geliyor olması lazım.
+
+614
+01:48:33,975 --> 01:48:44,015
+Ve fakat ne olacak? Belli bir süreniz var bir ve sıfırı ifade etmek için. Ancak ve lakin illa ve illa ne olacaktır?
+
+615
+01:48:44,475 --> 01:48:54,015
+Burada hani yeri bu kadar şey şekilde düzgün şekilde yayılmamış olacaktır. Ard arda birbirini takip eden uzun sıfırlar ya da birler oluşacaktır.
+
+616
+01:48:54,115 --> 01:49:04,696
+Geçen hafta konuştuğumuz şey, neyin nerede başlık, nerede bittiğini kaybedeceksiniz. İki sistem arasında zaten ortak bir saat durumu da yok.
+
+617
+01:49:08,656 --> 01:49:16,656
+Ha bu Unipolar kodlamanın yanına bir de saat koyup bu işi gönderebilirsiniz ama aynı sıkıntı saat içinde geçerli.
+
+618
+01:49:16,655 --> 01:49:24,735
+saatte zaten uzun bir hat üzerinde aradaki gecikmelerden vesaireden de drift olacaktır.
+
+619
+01:49:25,015 --> 01:49:30,695
+Birbirinden bağımsız saat kullanılması durumunda zaten onların senkronizasyonu ayrı bir problemdir.
+
+620
+01:49:30,695 --> 01:49:34,655
+Dolayısıyla bu Unipolar kodlamada temel iki problem var.
+
+621
+01:49:34,735 --> 01:49:36,955
+Biri DC birleşen, diğeri de Anun İblik.
+
+622
+01:49:37,495 --> 01:49:41,675
+O yüzden de biraz sıkıntılı bir yapı.
+
+623
+01:49:41,675 --> 01:50:05,315
+Unipolar kodlamada hep DC bileşen oluşuyor demiştik. Dolayısıyla alternatif olan yapıda ne yapıyor olmamız lazım? Bu polarizasyonu tek değil iki farklı şeye çeviriyor olmamız lazım. Yani baktığımızda iki farklı voltaj seviyesi kullanıyor olmamız lazım. Biri pozitiften birinin negatif olması lazım.
+
+624
+01:50:05,315 --> 01:50:12,235
+3 tane alternatif var içerisinde kullanabileceğiniz non-return to zero, return to zero ve b-phase.
+
+625
+01:50:12,875 --> 01:50:24,495
+Baktığımız zaman non-return to zero kodlama da aslında kendi içerisinde non-return to zero level, non-return to zero inverted gibi bir yapısı var.
+
+626
+01:50:24,495 --> 01:50:42,935
+dikkat edin bir dediğimiz zaman voltaj seviyesi yukarı çıkıyor sıfır dediğimiz zaman aşağı iniyor bir dediğimiz zaman tekrar yukarı çıkıyor yani sıfırdan devamlı geçiyor ama sıfırda durmuyor.
+
+627
+01:50:42,935 --> 01:50:49,615
+Burada ise non-returned to zero inverted'da ise yapı şu.
+
+628
+01:50:51,335 --> 01:50:56,415
+Birler için sinyalde polarizasyon değişikliği yapıyorsunuz.
+
+629
+01:50:56,415 --> 01:50:58,695
+Ama sıfırlar için hiçbir şey yapmıyorsunuz.
+
+630
+01:50:58,735 --> 01:51:01,315
+Yani sinyal bir devre pozitifte başlamış.
+
+631
+01:51:01,655 --> 01:51:03,815
+Sıfır geldiği zaman hala pozitif.
+
+632
+01:51:04,035 --> 01:51:05,775
+Bir geldiği zaman eksi bire indiniz.
+
+633
+01:51:05,915 --> 01:51:10,455
+Bir bir daha geldiği zaman şeye çıktınız.
+
+634
+01:51:12,935 --> 01:51:18,135
+Nedro 1'e çıktınız. Sonraki 0'da aynen kaldınız. Biri de tekrar değiştirdiniz.
+
+635
+01:51:39,699 --> 01:51:43,639
+Burada hala ne problemi var peki sizce?
+
+636
+01:51:52,372 --> 01:51:55,991
+Hala sinyalin bitip bitmediğini mi fark etmiyor hocam?
+
+637
+01:51:57,151 --> 01:52:02,372
+Bitip bitmediği değil de, yani hiçbir şey gelmezse kesilmiş olur da, ne sıkıntısı var?
+
+638
+01:52:02,651 --> 01:52:06,531
+Arda arda çok fazla sıfır gelirse ne olur?
+
+639
+01:52:07,691 --> 01:52:08,771
+Sağdaki senaryoda.
+
+640
+01:52:09,491 --> 01:52:14,171
+Sağdaki senaryoda hiçbir sinyal değişimi olmayı, sıfır gelirse.
+
+641
+01:52:14,851 --> 01:52:17,411
+Devamlı aynı sinyal devam edecek, doğru mu?
+
+642
+01:52:17,431 --> 01:52:18,372
+Aynen, aynen.
+
+643
+01:52:18,411 --> 01:52:20,951
+Dolayısıyla gene aynı problem var aslında.
+
+644
+01:52:22,372 --> 01:52:25,552
+Soldakinde durum ne?
+
+645
+01:52:27,952 --> 01:52:33,772
+Soldakinde her değişimde, farklı sayılar geldiğinde bu sefer çok sinyal değişim var.
+
+646
+01:52:33,772 --> 01:52:34,372
+Hayır, farklı sayılar değil.
+
+647
+01:52:35,611 --> 01:52:37,631
+Dikkat et, ne yapıyoruz soldakinde?
+
+648
+01:52:38,131 --> 01:52:41,331
+Bir ise pozitif voltajda, sıfırsa negatifde.
+
+649
+01:52:41,392 --> 01:52:46,872
+Dolayısıyla bir ya da sıfır fazla gelirse, arda arda, hep aynı seviyede kalacak yine, doğru mu?
+
+650
+01:52:47,372 --> 01:52:47,691
+Aynen.
+
+651
+01:52:48,251 --> 01:52:49,171
+Yine kayacak.
+
+652
+01:52:49,931 --> 01:52:50,191
+Aynen.
+
+653
+01:52:50,772 --> 01:52:52,171
+Yine kayma oluşacak.
+
+654
+01:52:52,171 --> 01:53:04,191
+Dolayısıyla bunların ikisi de aslında şeyi doğrudan çözmüyor. Burada alternatif olabilecek şeylerden bir tanesi ne? Return to zero. Return to zero'da ne yapıyoruz aslında?
+
+655
+01:53:04,191 --> 01:53:16,011
+an uyumluluğu sağlamak yani demin bahsettiğimiz bu problemi çözmek için 3 voltaj seviyesi kullanıyoruz.
+
+656
+01:53:16,011 --> 01:53:21,732
+Yani artı sıfır eksi. Bunu da nasıl yapıyoruz?
+
+657
+01:53:27,796 --> 01:53:53,775
+mesela biri ifade etmek için pozitiften başlıyoruz. Bit şeyinde ne duru? Bitin ortasında pat diye sıfıra iniyoruz. Sıfır için eksiden başlıyoruz. Pat diye ortada sıfıra iniyoruz. Böylece ardı ardı birden fazla sıfır gelse de ne olacak?
+
+658
+01:53:53,775 --> 01:54:08,636
+ben hep bir geçiş göreceğim. Yani eksiyle başlayacak, ortaya inecek, devam edecek sonra tekrar eksiye inecek. Yani bir hareketli, an uyumluluğu ne yapacağım? Sağlayacağım.
+
+659
+01:54:08,636 --> 01:54:27,915
+V-Face kodlama teknikleri var. V-Face kodlama tekniklerine baktığınız zaman Manchester ve Differential Manchester var. Bunların aslında şu an kullanılan sayısal sayısal kodlama teknikleri arasında en iyilerden bir tanesi.
+
+660
+01:54:27,915 --> 01:54:48,215
+Burada yapılan ya da yapılmaya çalışılan şey ne? Bir öncekinde ne yapıyorduk? Yarı zamana kadar işte birse pozitifte, sıfırsa negatifteyiz. Ondan sonra tekrar sıfıra dönüyoruz.
+
+661
+01:54:48,215 --> 01:55:11,855
+Şimdi orada da hala ne problemi var? Arda arda çok fazla sıfır gelmesi durumunda nasıl bir sinyalimiz olacak? Her bit aralığında yarıya kadar negatif sonra sıfır. Sonra tekrar yarıya kadar negatif sonra sıfır. Yani beraberinde bir de DC bileşen getirecek. Ortalaması ne olacak? Negatif bir voltaj gerilimi olacak.
+
+662
+01:55:11,855 --> 01:55:23,135
+Dolayısıyla bu şeyi azaltmak istiyoruz. Dertlerimizden bir tanesi. Bunu ortadan kaldırmak. DC birleşini tamamen ortadan kaldırmak.
+
+663
+01:55:23,135 --> 01:55:31,535
+Şimdi Manchester kodlamada bir değeri negatiften pozitife bir dönüşüm, sıfır değeri de pozitiften negatif bir dönüşüm ile ifade ediliyor.
+
+664
+01:55:34,615 --> 01:55:38,755
+Differansiyel Manchester kodlamada ise ne yapıyoruz?
+
+665
+01:55:45,427 --> 01:56:04,587
+bit aralığının başında dönüşüm yapıyoruz. Bununla sıfırı süreklilik ile de biri ifade ediyoruz. Şimdi böyle anlatınca çok şey olmamış olabilir. Grafik üzerinden bakacak. Nasıl ya? Bakamıyorum. Bakacak olursak.
+
+666
+01:56:04,587 --> 01:56:30,587
+Şimdi solda gördüğünüz Manchester kotlama. Manchester kotlamada ne yapıyorsunuz? Dikkat edin. Bir nereden başlıyor, nereye gidiyor? Negatiften pozitife bir dönüşüm yapıyor. Yani ilk birde nerede? Eksi de başlıyor, sıfıra geçiyor, pozitife geliyor, duruyor. Sıfır nerede başlıyor? Birin bıraktığı yerde aynen başlıyor, aşağı doğru iniyor negatife.
+
+667
+01:56:30,587 --> 01:56:39,587
+sonra tekrar biri gelmiş. Birden sonra biri geldiğinde nereye iniyor sinyal doğrudan? Eksiye iniyor. Tekrar artıya çıkıyor. Dolayısıyla böyle bir geçiş var.
+
+668
+01:56:41,587 --> 01:56:57,847
+Bu standart Manchester kodlaması. Sağda ise diferansiyel Manchester'ı görüyorsunuz. Peki diferansiyel Manchester'da ne yapıyoruz? Şunu yapıyoruz. Dikkat edin sinyalin nasıl değiştiğine.
+
+669
+01:57:00,587 --> 01:57:07,207
+bit aralığında bir dönüşüm varsa, yani daha doğrusu bit aralığında bir dönüşüm varsa o sıfırı ifade ediyor.
+
+670
+01:57:07,927 --> 01:57:11,107
+Süreklilik varsa o bir ile ifade ediliyor.
+
+671
+01:57:12,947 --> 01:57:15,527
+Yani birden başladım, bir ile başlamış.
+
+672
+01:57:15,667 --> 01:57:20,007
+Orijinalde sıfır da başlayacaktı zaten bir olsaydı normal meclisliğinde.
+
+673
+01:57:21,587 --> 01:57:23,987
+Eksiden başlamış, artıya gelmiş.
+
+674
+01:57:23,987 --> 01:57:29,007
+Sıfır olduğu zaman, o zaman dönüşüm yapıyorum.
+
+675
+01:57:30,587 --> 01:57:55,307
+Ne yapıyorum? Pozitiften negatife iniyorum. Tekrar pozitife çıktım. Bir de aynen devamlılık sağlıyorum. Kaldığım yerden şeyi değiştirmiyorum. Bir sonraki bir de kaldığı yerden negatiften tekrar pozitife çıktım. Sıfırda pozitiften negatife indim. Pozitife çıktım. Bir de devamlılığı sağlayacağım. Pozitiften negatife indim.
+
+676
+01:58:04,756 --> 01:58:05,756
+ve BİPOLAR.
+
+677
+01:58:11,283 --> 01:58:33,923
+Şimdi arkadaşlar, burada bir duralım. Hatta toptan bir duralım. Bugünlük bu kadar yeterliyim. Bu da bir keselim. Çünkü bunu sınıfta ne kadar ilerletebileceğimi bilmiyorum. Bir onu görmek istiyorum. Ona göre karar vermek istiyorum. Varsa bir sorunuzu onu alayım.
+
+678
+01:58:33,923 --> 01:58:42,624
+Hocam şu Manchester'la diferansiyel Manchester'ı bir daha anlatabilir misiniz? Benim kafam karıştı da.
+
+679
+01:58:43,603 --> 01:58:47,603
+Normal şey bir iş. Ekranı görüyor musun?
+
+680
+01:58:49,263 --> 01:58:50,883
+Evet hocam görüyorum şu anda.
+
+681
+01:58:51,004 --> 01:58:53,523
+Kapatmıştım paylaşım da tekrar açtım o yüzden söylüyorum.
+
+682
+01:58:54,144 --> 01:58:55,903
+Şimdi bak Manchester'da ne yapıyoruz?
+
+683
+01:58:59,504 --> 01:59:02,403
+Doğrudan sabit bir iş yapıyoruz.
+
+684
+01:59:02,403 --> 01:59:10,124
+bir değeri negatiftan pozitife bir dönüşüm demek. Böyle işte bir gördüğün zaman voltaj seviyesi nereden başlayacak?
+
+685
+01:59:10,263 --> 01:59:17,763
+Negatiften başlayacak, pozitife çıkacak. Doğru mu? Şimdi bütün birilerin durumuna bak. Hepsi aynı.
+
+686
+01:59:18,824 --> 01:59:25,803
+Eksiden başlıyor, artıya çıkıyor. Eksiden başlıyor, artıya çıkıyor. Önceki sinyal ne olursa olsun böyle yapıyor.
+
+687
+01:59:25,803 --> 01:59:45,683
+şeye bak 0, 1, 0, 1, 1 o arda arda gelen 2, 1'de de aslında ne oluyor? Sinyal doğrudan hemen artıdan devam etmiyor. Negatiften başlıyor pozitife geçiyor. Okey anladık mı bunu? Evet hocam anladım. Sıfırlarda tam tersi.
+
+688
+01:59:45,684 --> 01:59:57,423
+Sıfırlar da evet şeyden pozitiften negatife dönüşüm.
+
+689
+01:59:57,423 --> 02:00:00,824
+Şimdi Manchester'da böyle.
+
+690
+02:00:01,864 --> 02:00:04,324
+Differansiyel olduğu zaman şunu yapıyorsun.
+
+691
+02:00:05,224 --> 02:00:12,563
+Sabit bir şekilde ben birle şeyi daha doğrusu negatiften pozitife geçmeyi birle ifade edeyim.
+
+692
+02:00:12,563 --> 02:00:38,664
+pozitiften negatife geçmeyi sıfırla ifade edeyim demiyorsun. Tam tersi şunu yapıyorsun. Sıfır ve bir süreklilik ya da süreksizliği ifade ediyor. Yani tam tersini düşün. Ben sinyalin sürekliliğini bozuyorsam sıfırı ifade ediyorum. Sürekliliğini bozmuyorsam biri ifade ediyor.
+
+693
+02:00:38,663 --> 02:00:50,663
+Şimdi bak, hiçbir veri yoksa ilk bastığın bir ne olmak zorunda? Manchester'dan gelen bir alışkanlık, differential necidasında negatiften pozitif olmak zorunda, tamam mı?
+
+694
+02:00:50,943 --> 02:00:57,223
+Dolayısıyla hatta ilk çıkarttığın şey bir diyelim, sağ taraftakinde, negatiften başladı, pozitif de çıktı.
+
+695
+02:00:57,923 --> 02:01:04,003
+Sonrasında gelen şey ne? Sıfır. Sıfırla ne yapacağız? Dönüşüm yapacağız. Sürekliliği bozacağız.
+
+696
+02:01:04,004 --> 02:01:16,063
+sürekliliği bozmasaydık ne yapıyor olmalıydık? Pozitifte bitmiş olan biri pozitiften devam ettirip negatife indirecektik.
+
+697
+02:01:16,244 --> 02:01:22,423
+Ama bizim bu derdimiz ne? Sıfır ifade edeceğiz. Dolayısıyla sürekliliği bozmamız lazım. Nereye indik o yüzden de?
+
+698
+02:01:22,884 --> 02:01:28,244
+Bir de değil, pardon, artı da değil, eksiye indik. Doğrudan eksiden devam ediyoruz sıfır için.
+
+699
+02:01:28,243 --> 02:01:37,123
+sıfır nerede bitirdi? Pozistik de bitirdi. Sonrasında ne geliyor? Bir. Süreklilik ifade edeceğiz. Sinyali olduğu yerden alıp devam ediyoruz. Tamam mı?
+
+700
+02:01:38,443 --> 02:01:46,943
+Sonrasında bir ile ne oldu? Bu sefer eksiye indik. Eksideyken tekrar bir geldi. Kaldığı yerden aynen yukarı çıkartıp devam ettirdik.
+
+701
+02:01:47,443 --> 02:01:57,263
+Yani hep aynı sinyali şey yapıyoruz. Süreklilik ya da bozulma olarak kodluyoruz. Oturdu mu biraz kafada?
+
+702
+02:01:57,263 --> 02:01:59,463
+Şimdi oturdu hocam çok teşekkür ederim
+
+703
+02:01:59,463 --> 02:01:59,963
+Ne demek?
+
+704
+02:02:02,144 --> 02:02:05,563
+O zaman başka sorunuz yoksa arkadaşlar
+
+705
+02:02:05,563 --> 02:02:07,823
+Hepinize iyi akşamlar diyorum
+
+706
+02:02:07,823 --> 02:02:09,283
+Haftaya görüşmek üzere

@@ -1,0 +1,4391 @@
+1
+00:01:40,628 --> 00:01:48,387
+Evet, hepinize iyi dersler diyorum. Furkan, sen zaten host oldun galiba. Ben de müsaade istiyorum.
+
+2
+00:01:48,387 --> 00:01:48,767
+Evet, host oldum.
+
+3
+00:09:20,947 --> 00:09:37,288
+Evet arkadaşlar, cümleten iyi akşamlar. Bugün veri iletişiminin son dersini sizin sunumlarınızla beraber gerçekleştiriyor olacağız. Söz genel olarak sizde olacak.
+
+4
+00:09:37,288 --> 00:09:53,327
+60 kişi falan var zannediyor şu an güzel. Başlayabiliriz diye düşünüyorum. Şimdi şöyle ben bir dilerseniz ekran paylaşımı yapayım.
+
+5
+00:09:53,328 --> 00:10:07,388
+Şimdi kura çekerek o grupların anlatmasını istiyor olacağım. Şu zoomla ilgili şeyi de sağa sola sallarsak.
+
+6
+00:10:10,808 --> 00:10:23,047
+Şimdi temelde 8 tane konumuz vardı ve bu konuyu anlatması gereken çeşitli gruplar vardı. Herkes hazırlıklarını yaptı. Yüklemesi gereken şeyleri sisteme dün akşam yüklemiş oldu.
+
+7
+00:10:23,047 --> 00:10:24,947
+Bugün sunumlar gerçekleştiriliyor olacak.
+
+8
+00:10:25,547 --> 00:10:30,227
+Sırayla bir dört tane sunum, yani buradaki sunumları da rastgele seçiyor olacağım.
+
+9
+00:10:30,348 --> 00:10:36,647
+Dört tane sunum bir anlatıp sonra bir mola verip ondan sonra tekrardan dört tane sunum daha dinliyor olacağız.
+
+10
+00:10:37,367 --> 00:10:41,607
+Sunan takımların tamamının kameraları açık olsun.
+
+11
+00:10:41,808 --> 00:10:43,647
+Biz bir taraftan görüyor olalım onları.
+
+12
+00:10:44,927 --> 00:10:48,607
+Başkalarının sizin adına zah sunmadığını biliyor olalım.
+
+13
+00:10:49,808 --> 00:10:51,327
+Tekrardan hatırlatayım.
+
+14
+00:10:51,327 --> 00:11:06,947
+Bu bir vize notu yerine geçecek. Yani %30'luk bir ağırlığı söz konusu. O yüzden sunumunuzu efektif yapıyor olmanız sizin menfaatinize olacaktır.
+
+15
+00:11:07,327 --> 00:11:10,387
+Tabii hazırladığınız raporlarla beraber de değerlendirilecek.
+
+16
+00:11:10,387 --> 00:11:20,647
+Şimdi diyelim ki ilk baş mesela kura çektik ve asinkron transfer mod çıktı. Burada 3 numaralı 4 tane gruba bu atanmış durumda.
+
+17
+00:11:21,327 --> 00:11:31,767
+Bu 4 tane grup numarasından yine bir kura çekeceğiz. Hangisine kura çıkarsa tabii öncelikle 4'ü de burada mı onu kontrol edeceğiz.
+
+18
+00:11:32,407 --> 00:11:42,328
+Yani 4, 10, 18 ve 26 numaralı grupların tamamı burada mı dediğimde siz lütfen chatten grup numaralarınızı yazın.
+
+19
+00:11:42,328 --> 00:11:47,947
+Tamam burada mı dediğimde grup numaralarınızı yazın ki ben hangi takımdan kaç kişi burada bileyim.
+
+20
+00:11:47,947 --> 00:12:04,108
+Burada olmayan arkadaşlar sıfır alıyor olacaklar. Yani şu an hala hazırda mevcut olmayanlar anlatmayacak olsalar bile, kura da çıkmayacak olsalar bile vize anında diyelim mesela hazır bulunmadıkları için videoları değerlendirip ekstradan not verilmeyecek.
+
+21
+00:12:04,108 --> 00:12:25,947
+Onların eğer buradalarsa diyelim ki 4, 10, 18, 26 tamamı burada. Kura çektik 18 çıktı. 18. grup bize Asyonklon transfer mod konusunu anlatacak. Diğer 3 grubun yaptığı daha önceki hazırlıklardan izleyerek notlandırılıyor olacaklar. Ve yine geçen haftalarda da söyledim tekrar söylüyorum.
+
+22
+00:12:25,947 --> 00:12:32,567
+Burada arkadaşlarınızın anlattığı konulardan da finalde sorumlu olacaksınız.
+
+23
+00:12:33,007 --> 00:12:41,627
+Yani sadece kendi çalıştığınız konudan değil, diğer 7 konudan da, kendi çalıştığınız konuda dair 8 konudan finalde soru gelebilir.
+
+24
+00:12:41,968 --> 00:12:44,427
+Ona göre hazırlanmanızı tavsiye ederim.
+
+25
+00:12:44,427 --> 00:12:51,347
+Bu dersin videosu zaten kayıt altına alınıyor olacak. İzlediğinizde arkadaşların sunumlarını da izliyor olursunuz.
+
+26
+00:12:51,787 --> 00:12:54,888
+Başlamadan önce herhangi bir sorusu olan arkadaşımız var mı?
+
+27
+00:12:54,888 --> 00:12:56,727
+Hocam bir şey sorabilir miyim?
+
+28
+00:12:57,748 --> 00:12:58,548
+Tabii ki buyurun.
+
+29
+00:12:59,488 --> 00:13:00,988
+Gönüllü olabiliyor muyuz acaba?
+
+30
+00:13:02,808 --> 00:13:09,988
+Yani şu aşamada ilk dersin ilk dört grubu ile ilgili bir gönüllülük şey yapmıyorum.
+
+31
+00:13:09,988 --> 00:13:14,227
+Sizin aciliyetiniz mi var işiniz bakımından? Onun için mi gönüllü olmak istiyorsunuz?
+
+32
+00:13:14,548 --> 00:13:15,908
+Yok hocam öylesine sordum ben.
+
+33
+00:13:16,820 --> 00:13:28,579
+Tamam, yani geçtiğimiz yıllarda gönüllülüğü yaptık, sonra çok eleştiren arkadaşlar oldu onu. Şu ilk dört grupta en azından gönüllülük yapmayacağız. Hani iş olup da giden ekstradan yoksa.
+
+34
+00:13:29,059 --> 00:13:30,200
+Tamamdır hocam, sağ olun.
+
+35
+00:13:31,280 --> 00:13:36,199
+Tamamdır, Koray. Evet, Mevlana Halit'in de bir sorusu var.
+
+36
+00:13:36,899 --> 00:13:40,799
+Hocam, hani burada anlatılanlardan finalde sorumlu olacağımızı söylediniz ya.
+
+37
+00:13:41,399 --> 00:13:41,699
+Evet.
+
+38
+00:13:41,699 --> 00:13:49,279
+Bu ders kaydında anlatılanlardan sadece değil mi? Yani diğer arkadaşların hazırladıkları konu eksik olsa bile sorun olmayacak. Sadece bu ders kaydı.
+
+39
+00:13:51,040 --> 00:14:05,879
+Yani arkadaşların şöyle, şöyle. Diyelim ki Frame Relay'i anlatacak grubu 9 olarak seçtik. Anlattı. Çok çok eksik varsa ben yine başka bir grup da seçebilirim. Sen tekrar anlat bunu diyeceğim.
+
+40
+00:14:05,879 --> 00:14:29,859
+Sabah mesela öyle bir durum olmadı çok şükür. Ama daha önceki yıllarda olmuştu. Tamam sen tekrar anlat dediğim zamanlar oldu. Başka bir grup tekrar anlattı. Ufak tefek eksikler kaldıysa ben zaten sunum esnasında tamamlıyor olacağım. Bunun bu özelliği de vardır, şu da vardır, bu da var da tamamlıyor olacağım. O yüzden tabii ki bu ders kapsamında bu eksik bir şey bırakmamış olacağız yani.
+
+41
+00:14:31,099 --> 00:14:32,699
+Hocam ben de son bir şey sorsam.
+
+42
+00:14:32,699 --> 00:14:34,259
+Tabi buyurun
+
+43
+00:14:34,259 --> 00:14:52,439
+Şey konusunda hocam bugün şu anda sanırım hatta bilişim güvenliği sistemleri yanlış ölmüş olabilirim dersin ismini ama onun quizi varmış bizim gruptaki bir arkadaş şu an o quizde size bu konuda mail attı ama hani şimdiden şimdi bizde çıkar biz bunu açıklarız zaman kaybederiz diye şimdiden söylüyorum ne yapabiliriz bu konuda yani 3 kişi buradayız
+
+44
+00:14:52,439 --> 00:15:09,239
+Yani başka bir ders saatine nasıl kuyuz koyabiliyorlar onu anlayabilmiş değilim. Dersi var ve sınavı var. O yüzden bu resmi ders saati bu olduğu için tabii böyle şöyle de bir durum söz konusu oldu bu dönem.
+
+45
+00:15:09,239 --> 00:15:15,299
+online dersler çakışsa bile eğer ikinciye mi alıyorsan ne öyle bir durum söz konusu galiba.
+
+46
+00:15:16,299 --> 00:15:24,139
+O yüzden size kura çıkarsa yani o arkadaşı harici olarak tekrardan bir değerlendirmemiz gerekebilir.
+
+47
+00:15:24,479 --> 00:15:27,719
+Çok emin değilim şu an ne yapmamız gerektiğini yönetimi onu sorarız.
+
+48
+00:15:28,059 --> 00:15:29,540
+Tamamdır hocam bildirmiş olayım ben.
+
+49
+00:15:30,420 --> 00:15:32,599
+Tamam başka bir sorusu olan arkadaşımız var mı?
+
+50
+00:15:34,200 --> 00:15:34,999
+Yok.
+
+51
+00:15:34,999 --> 00:15:54,659
+mikrofonlarınızın hepsinizin açık olduğunu istiyorum. Kameralar açık olsun. Sizin sunum yaptığınızı biliyor olalım. Lütfen sunum sonunda ben hatırlatmadan diğer arkadaşlarımıza sorusu olan var mı diye, daha açıklamamızı istediğiniz bir nokta var mı diye siz sorun.
+
+52
+00:15:54,659 --> 00:16:06,919
+sorular varsa da ona göre tabii ki bildiğiniz ölçüde tüm soruları cevaplayabilecek kapasitede olmayabilirsiniz ama bildiğiniz ölçüde cevaplama yoluna gitmeniz gerekir.
+
+53
+00:16:06,919 --> 00:16:18,959
+Şimdi ilk konuyla başlıyoruz müsaadenizle. Dediğim gibi 8 tane konu var. Bastık. GSM. Tamam GSM konusunu seçmiş olduk.
+
+54
+00:16:18,959 --> 00:16:37,420
+GSM'de hangi numaralı takımlar var? Onlara bakalım beraber. 5, 13, 21, 29. Buraya da onları yazıyoruz. Bu arada herkes kendi şeyini yazsın ki bilelim kimler burada, kimler burada değil.
+
+55
+00:16:37,419 --> 00:16:49,059
+chatten yazıyorsunuz arkadaşlar. 5, 13, 21, 29. Bakalım.
+
+56
+00:16:49,059 --> 00:16:51,959
+Çete
+
+57
+00:16:51,959 --> 00:16:57,719
+Şimdi 5'ler var
+
+58
+00:16:57,719 --> 00:17:00,139
+21
+
+59
+00:17:00,139 --> 00:17:04,439
+21, 2 kişi herhalde
+
+60
+00:17:04,439 --> 00:17:09,919
+1, 2, 5, 13'ler var
+
+61
+00:17:09,919 --> 00:17:11,179
+Güzel
+
+62
+00:17:11,179 --> 00:17:15,259
+29, Muhammed Dağ Gökçen bir kişi misin sen?
+
+63
+00:17:22,099 --> 00:17:51,999
+Bazı gruplar tek kişilik. Hiçbir arkadaşlık dahil olmadığı için tek kişi olarak şey yapmışlardı. O yüzden bazı gruplar tek kişi olarak olabilirler. Sıkıntı yok. Tek kişi anlatabilirler. Onlar lütfen belirsinler. Biz dört kişilik bir grup olmuştuk ama diğer üçü bize dahil olmamıştı diye belirsinler.
+
+64
+00:17:52,099 --> 00:18:16,879
+Bakalım kurağımızı sizlerin önünde yine çekiyor. Tüm gruplar, çünkü buradaki olan tüm gruplar yazdılar. Evet, 5 numaralı grup bize anlatıyor olacak. 5 numaralı grup Aslı, soyadı gitmiş, nereye gitti bilmiyorum. Alperen, Yiğit, Mehmet, Semih bize anlatıyor olacaklar.
+
+65
+00:18:16,879 --> 00:18:28,460
+Burada mısınız? Ses verin. Ben şimdi paylaşım yetişisini size vereyim. Top sizde. Buyurun arkadaşlar. Tüm hazırlıklar dahil 15 dakikayı geçmesin lütfen.
+
+66
+00:18:39,284 --> 00:18:41,843
+sesim geliyor değil mi benim?
+
+67
+00:18:43,543 --> 00:18:43,784
+geliyor.
+
+68
+00:18:44,403 --> 00:18:46,103
+evet duyuyoruz sesini.
+
+69
+00:18:47,043 --> 00:18:47,284
+tamam.
+
+70
+00:18:49,423 --> 00:18:54,643
+bir saniye hemen bir ekran paylaşımı yapıyorum şu an geliyor sanırım.
+
+71
+00:18:57,023 --> 00:19:01,464
+ben de ekran paylaşımı durdurayım ki sadece seninkini görsünler.
+
+72
+00:19:02,243 --> 00:19:04,223
+tamamdır şu an görünüyor.
+
+73
+00:19:04,563 --> 00:19:06,263
+görünüyor değil mi tamam her şey sıkıntı yok.
+
+74
+00:19:06,643 --> 00:19:07,243
+evet geldi.
+
+75
+00:19:07,964 --> 00:19:08,483
+tamamdır.
+
+76
+00:19:08,483 --> 00:19:09,363
+Evet, görünüyor.
+
+77
+00:19:10,443 --> 00:19:21,103
+Bugün ben ve arkadaşlarım size GSM'i anlatacağız. Alperen ben bu arada. Ben GSM'in ne olduğunu ve kısaca tarihçesinden size bahsediyor olacağım.
+
+78
+00:19:22,284 --> 00:19:31,284
+GSM Global System for Mobile Communications yani dünyada kabul görmüş bir mobil iletişim sistemidir.
+
+79
+00:19:31,284 --> 00:19:41,624
+Avrupa Telekomünikasyon Standartı Enstitüsü tarafından el cihazları için üretilmiş ikinci nesil dijital hücresel ağları tanımlamak için bir standart.
+
+80
+00:19:42,543 --> 00:19:45,603
+GSM standartı çift yönlü olarak optimize edilmiş.
+
+81
+00:19:46,584 --> 00:19:48,144
+Devre anahtarlı ilk başta.
+
+82
+00:19:48,623 --> 00:19:56,964
+Ondan sonra GPRS ile veri aktarımına, paket veri aktarımına, sonra Edge ile de veri iletişimine içecek şekilde genişletiliyor.
+
+83
+00:19:57,743 --> 00:20:01,044
+Zamanla bu gelişiyor, onları anlatacağım.
+
+84
+00:20:01,284 --> 00:20:14,743
+Özellikle olarak açık kaynaklı bir sistem yani değiştirilebilme, düzeltilebilme özgürlüğü var. Kod erişimine izin veriyor. Bütün telefonda kullanılan operatörler bu standarda göre, GSM standartına göre çalışıyorlar.
+
+85
+00:20:15,523 --> 00:20:28,044
+900, 1800 ve 1900 MHz ağlar da çalışıyor ama 1800 MHz de optimize bir şekilde dijital iletişim sistemi yani DCS 1800 isminde ismi kullanıyor.
+
+86
+00:20:28,043 --> 00:20:49,043
+TDMA teknolojisi kullanıyor. Buna Air Interface standardı olarak kabul ediliyor. TDMA'de farklı zaman dilimlerinde tek bir frekansla UDP'ye ulaşmayı sağlıyor. Bu da iletişimde kolaylığı sağlıyor, hızlanmayı sağlıyor. TDMA teknolojisi de star ve mesh yapıda olabiliyor.
+
+87
+00:20:49,043 --> 00:21:14,144
+Şimdi tarihçisine gelecek olursak biraz bahsedelim. İlk olarak ABD'nin de AMPS ve TACS olmak üzere analog teknolojiler vardı ilk başta ama bu teknolojiler daha fazla kullanıcıyı kabul etmiyordu. Hani belli sayıda kullanıcı alabiliyordu. Bu eksiklikten kaynaklanarak uluslararası alanda kullanılan bir teknolojiye ihtiyaç duyuldu.
+
+88
+00:21:14,144 --> 00:21:23,183
+Bu amaçla da 1983 yılında CEPT bir topluluk kuruyor ve bu toplulukta diyor ki yeni geliştireceğimiz teknolojide şu standartlar olmalı
+
+89
+00:21:23,183 --> 00:21:32,304
+Uluslararası ağ desteği olsun, yüksek konuşma kalitesi olsun, el cihazlarının için destek ve düşük maliyet olsun diye kriterlerini sunuyor
+
+90
+00:21:32,304 --> 00:21:38,683
+Ve 1987 yılında Avrupa Birliği Avrupa'da zorunlu yasalar çıkarıyor GSM'in bir standart olmasına dair
+
+91
+00:21:38,683 --> 00:21:57,843
+Sonra 1989'da CEP'ten Avrupa Telekomünikasyon Standartı Enstitüsü'ne devrediliyor. GSM projesinin sorumluluğu. GSM tabanlı hizmetler 1991'de Finlandiya'da başlatılıyor. 900'den 1800 MHz'e bu yılda geçiliyor. Büyük bir hızlanma söz konusu.
+
+92
+00:21:57,843 --> 00:22:11,623
+93 yılında ilk 1800 MHz'a İngiltere'de çalışmaya başlıyor. DCS 1800 ismi ilk 93 yılında geçiyor. Bu yılda Telekom Avustralya'yla ilk GSM'i dağıtan operatör oluyor ve GSM cep telefonu kullanılabilir hale geliyor.
+
+93
+00:22:12,243 --> 00:22:21,903
+GSM sim kartları 96.000'e sunuluyor. 2000 yılında ilk ticari GPRS hizmetleri başlatılıyor. GPRS uyumlu ahizeler sunuluyor.
+
+94
+00:22:21,903 --> 00:22:38,763
+GPRS dediğimizde telefondan internete bağlanmayı sağlayan teknoloji. 2000 yılında herkesin evinde bulunan. 2002 yılında MMS yani multimedya görüntülü artık mesajlar 800 MHz frekans bandında faaliyete geçiyor.
+
+95
+00:22:39,155 --> 00:22:53,135
+Sonra, GPL'den sonra, Edge hizmetleri faaliyete geçiyor. Edge'de, birden fazla düğümden tek bir mantıksal uç noktaya, TDM teknolojisinden bahsetmiştik. Bu şekilde uygulamaları optimize etmenin bir teknolojisi Edge'de.
+
+96
+00:22:53,135 --> 00:23:02,135
+2005 yılında HSTP özellikle adı faaliyete geçiyor. Bu da 3G gönderim hızının standardı.
+
+97
+00:23:02,996 --> 00:23:08,135
+2011 yılında da artık bütün dünyanın kabul gördüğü bir ağ haline geliyor.
+
+98
+00:23:08,255 --> 00:23:15,095
+GSM Birliği bunu bütün dünyaya kabul ettiriyor ve bütün operatörler tarafından da GSM kullanılmaya başlıyor.
+
+99
+00:23:19,859 --> 00:23:24,479
+Evet, yani bu kısım hakkında herhangi bir soru, bir şey.
+
+100
+00:23:24,559 --> 00:23:26,559
+Soruları sonunda alalım.
+
+101
+00:23:26,659 --> 00:23:28,899
+Grup anlatımı bitirdikten sonra olsun.
+
+102
+00:23:29,259 --> 00:23:32,559
+Sıradaki parçayı kim anlatacaksa ona geçelim.
+
+103
+00:23:34,699 --> 00:23:36,460
+Benim ekranım geliyor mu şimdi?
+
+104
+00:23:39,759 --> 00:23:41,099
+GSM yapısı diye.
+
+105
+00:23:41,559 --> 00:23:41,759
+Tamam.
+
+106
+00:23:42,479 --> 00:23:43,799
+Merhaba, ben de Aslı.
+
+107
+00:23:43,960 --> 00:23:45,899
+Ben de size GSM'in yapısını anlatacağım.
+
+108
+00:23:45,999 --> 00:23:48,620
+GSM aslında dört ana birimin birleşmesiyle oluşuyor.
+
+109
+00:23:48,620 --> 00:23:56,519
+Bunlar mobil istasyon, baz istasyonu alt sistemi, anahtarlama alt sistemi ve operasyon denetleme alt sistemi.
+
+110
+00:23:56,999 --> 00:23:59,339
+Bunlar kendi aralarında da alt birimleri oluşuyor.
+
+111
+00:23:59,479 --> 00:24:01,339
+Mesela mobil istasyon iki birimden oluşuyor.
+
+112
+00:24:01,400 --> 00:24:02,859
+Birincisi mobil ekipmanı.
+
+113
+00:24:02,900 --> 00:24:04,339
+Bu bildiğimiz cihazın kendisi.
+
+114
+00:24:04,919 --> 00:24:10,059
+Her cihaz üretiminde ona bir uluslararası mobil ekipman kimliği numarası atanıyor.
+
+115
+00:24:10,200 --> 00:24:12,200
+Bu cihaza özel ve değişmeyen bir numara.
+
+116
+00:24:12,900 --> 00:24:17,200
+Cihazın çalıntı olup olmadığı durumlar bu numaraya bakılarak anlaşabiliyor.
+
+117
+00:24:18,100 --> 00:24:20,040
+İkincisi de abone kimlik modülü.
+
+118
+00:24:20,400 --> 00:24:21,580
+Yani bildiğimiz sim kartıdır.
+
+119
+00:24:21,639 --> 00:24:24,319
+Burada kullanıcı kimliğiyle alakalı bilgiler içeriyor.
+
+120
+00:24:24,440 --> 00:24:28,120
+Bu bilgilerden biri de uluslararası mobil abone kimlik numarasıdır.
+
+121
+00:24:28,520 --> 00:24:34,380
+Bu akıllı kart pin veya şifreyle konuluyor ve cihazın çağrı alıp göndermesi gibi görevleri gerçekleştiriyor.
+
+122
+00:24:36,300 --> 00:24:38,739
+İkinci ana birim de baz istasyonu alt sistemi.
+
+123
+00:24:38,839 --> 00:24:40,739
+Buna radyo alt sistemi de deniliyor.
+
+124
+00:24:40,739 --> 00:24:46,940
+Mobil istasyon ve mobil anahtarlama merkezi arasında bir radyo iletişimi sağlıyor.
+
+125
+00:24:46,940 --> 00:24:48,840
+Bunu iletişimi yönetiyor.
+
+126
+00:24:49,840 --> 00:24:54,459
+Mobil istasyon ile GSM'nin geri kalan alt sistemleri arasında da arayüzü yönetiyor.
+
+127
+00:24:55,060 --> 00:24:56,999
+Bu da kendi içerisinde iki bölümü ayrılıyor.
+
+128
+00:24:57,419 --> 00:25:03,540
+Baz alıcı verici istasyonu da veri iletişiminde bir alıcı bir de verici antenler bulunuyor.
+
+129
+00:25:04,200 --> 00:25:10,480
+BTS'de RF sinyallerini bu antenlere kodluyor, şifreliyor, çoğaltıyor, modül ediyor ve besliyor.
+
+130
+00:25:11,299 --> 00:25:17,219
+Mobil ekipman ile de radyo hava birimi ya da başka bir de işte UM arayüzü ile iletişimde oluyor.
+
+131
+00:25:18,259 --> 00:25:27,239
+Bazı istasyonunu denetleyicisi de radyo kaynakların yönetimini gerçekleştiriyor ve bölgede bulunan tüm mobil cihazlara zaman dilimlerini ve frekanslarını atıyor.
+
+132
+00:25:27,239 --> 00:25:34,759
+Bu da ABIS arayüzünü kullanarak baz alıcı verici istasyonu ve mobil servisler anahtarlama merkezi ile iletişim halinde.
+
+133
+00:25:35,800 --> 00:25:38,419
+Üçüncü ana birim de A anahtarlama alt sistemidir.
+
+134
+00:25:38,859 --> 00:25:40,239
+Buna çekirdek A da deniliyor.
+
+135
+00:25:40,479 --> 00:25:42,859
+anahtarlama işlemleri gerçekleşiyor.
+
+136
+00:25:43,080 --> 00:25:44,599
+İçinde bulunan mobil hizmetler
+
+137
+00:25:44,599 --> 00:25:46,919
+anahtarlama merkezi de onun ana unsurudur.
+
+138
+00:25:47,279 --> 00:25:48,720
+Burada çağrıyı yönlendirme,
+
+139
+00:25:48,839 --> 00:25:50,459
+çağrı kurma, kayıt
+
+140
+00:25:50,459 --> 00:25:52,679
+konum güncelleme, temel geçiş yönetme
+
+141
+00:25:52,679 --> 00:25:54,959
+gibi görevlerin yanı sıra
+
+142
+00:25:54,959 --> 00:25:56,499
+bazı istasyonu,
+
+143
+00:25:56,639 --> 00:25:58,699
+alt sistemi ve MSC arası
+
+144
+00:25:58,699 --> 00:26:00,499
+da çağrı aktarımı gerçekleştiriyor.
+
+145
+00:26:01,199 --> 00:26:02,699
+Bir de ev konum kayıtları
+
+146
+00:26:02,699 --> 00:26:04,779
+var. Bu da abonelerin son konumlarının
+
+147
+00:26:04,779 --> 00:26:06,939
+içinde bulundurduğu
+
+148
+00:26:06,939 --> 00:26:08,779
+bir veri tabanıdır. Bu veri
+
+149
+00:26:08,779 --> 00:26:13,940
+Tabanı sayesinde gelen çağrıyı gerekli baz istasyonlarına yönlendirebiliyoruz.
+
+150
+00:26:15,160 --> 00:26:22,220
+Ziyaretçi konum kayıtları da bu ev konum kayıtlarının seçtiği bilgileri içeren ayrı bir veri tabanıdır.
+
+151
+00:26:22,940 --> 00:26:27,740
+Bölgeye giren, yeni giren mobil cihazların son konumlarını içinde barındırıyor.
+
+152
+00:26:27,740 --> 00:26:34,339
+Böylece HLR üzerindeki sorgulama yükünü azaltıyor ve erişimi daha hızlı bir hale getirmiş oluyor.
+
+153
+00:26:34,339 --> 00:26:49,539
+Kimlik doğrulama merkezinde korumalı bir veri tarihinde. İçinde kimlik doğrulama ve sim kartındaki gizli anahtarlar bulunuyor. Bu sayede kimlik doğrulama işlemleri gerçekleştiriyor ve radyo kanalındaki şifrelemeler ve algoritmalar korunuyor.
+
+154
+00:26:49,539 --> 00:26:52,719
+ekipman kimlik kaydı da
+
+155
+00:26:52,719 --> 00:26:54,339
+biraz önce bahsettiğim her
+
+156
+00:26:54,339 --> 00:26:56,719
+cihazın bir uluslararası mobil abone
+
+157
+00:26:56,719 --> 00:26:58,899
+kimlik numarası bulunuyor demiştik
+
+158
+00:26:58,899 --> 00:27:00,199
+bu numaraya bakarak
+
+159
+00:27:00,199 --> 00:27:02,479
+mobil ekipmanın A erişimine
+
+160
+00:27:02,479 --> 00:27:04,179
+izin verip engelliyor
+
+161
+00:27:04,179 --> 00:27:06,899
+yani bunu sağlayan bir varlık
+
+162
+00:27:06,899 --> 00:27:08,839
+ya beyaz liste, kara liste veya gri liste
+
+163
+00:27:08,839 --> 00:27:10,899
+adlı listeye alıyor yani böylece
+
+164
+00:27:10,899 --> 00:27:12,459
+erişimi ya izin veriyor
+
+165
+00:27:12,459 --> 00:27:14,839
+ya engelliyor ya da olabilecek sorunlar
+
+166
+00:27:14,839 --> 00:27:16,819
+nedeniyle erişimi
+
+167
+00:27:16,819 --> 00:27:18,199
+gözetim altında tutuyor
+
+168
+00:27:18,199 --> 00:27:19,199
+Evet.
+
+169
+00:27:18,867 --> 00:27:34,647
+Bir de Ağ Geçidi, Mobil Anahtarların Merkezi var. Bu da ağlar arasındaki dönüm noktası kısmıdır. Son ana birim de Operasyonel Destek Alt Sistemi'dir. Bu da bazı istasyonu alt sisteminin yükünü hapikletiyor ve CSM şibirkelerini kontrol ediyor.
+
+170
+00:27:34,647 --> 00:27:43,087
+GSM'nin işletimini ve bakımıyla da ilgileniyor. GSM'nin içinde bulunan bir veya birden fazla operasyon bakım merkezini de destekliyor.
+
+171
+00:27:43,208 --> 00:27:52,068
+Bu operasyon bakım merkezleri de mobil istasyonu, bazı istasyonları denetleyicisini ve MSC'nin performanslarını gözetliyor.
+
+172
+00:27:52,068 --> 00:28:08,927
+İçerisinde birçok arayüz bulunuyor. Mesela Radyo Hava Arabirimi, MS ile BTS arasında, ABIS BTS, BSC arasında, A arayüzü de BSC, MSC arasında iletişimleri sağlıyor.
+
+173
+00:28:08,927 --> 00:28:20,347
+Bunun yanı sıra bir B arayüzü var. Bu da MSC ve ziyaretçi konum kayıtları arasında alanda bulunan MS'lerin bilgilerinin erişimini sağlıyor.
+
+174
+00:28:20,347 --> 00:28:30,067
+C arayüzü de HLR ve GMSC arasında bir ağ dışı arama geldiğinde bu aramayı tamamlamak için ağ geçidinden geçmesini sağlıyor.
+
+175
+00:28:30,747 --> 00:28:38,927
+D arayüzü de ziyaretçi konum kayıtlarıyla ev konum kayıtları arasındaki bilgilerin geçişini sağlıyor.
+
+176
+00:28:38,927 --> 00:28:45,507
+E arayüzü var. Bu da MSC'ler arasındaki bilgi alışverişini denetliyor.
+
+177
+00:28:45,507 --> 00:28:56,607
+F arayüzü de EIR'deki numarayı, işte MSC ile EIR arasındaki iletişimi sağlıyor.
+
+178
+00:28:57,527 --> 00:29:02,268
+IME numarasını doğrulaması burada gerçekleştiriliyor.
+
+179
+00:29:03,048 --> 00:29:09,088
+G arayüzü de farklı MSC'lerin VLR'l'si arasında iletişimi sağlıyor.
+
+180
+00:29:09,948 --> 00:29:13,228
+H arayüzü de kısa mesajların iletiminde kullanılıyor.
+
+181
+00:29:13,228 --> 00:29:18,827
+son olarak da bir de I arayüzü var. O da MSC ve M arasında iletişim sağlıyor.
+
+182
+00:29:18,827 --> 00:29:20,948
+O kadar.
+
+183
+00:29:22,948 --> 00:29:25,007
+Ben de paylaşıyorum hocam.
+
+184
+00:29:29,236 --> 00:29:43,995
+Şu anda gözüküyor değil mi? Evet. Ben de CSM bağlantı alanlarını, sonrasında CSM'in güvenliğini, ardından da CSM'in kısıtlarını ve CSM'in SM ile yani muadeli bir sistemle mukayesesini anlatacağım.
+
+185
+00:29:45,336 --> 00:29:56,815
+CSM bağlantı alanları dört tane temel bağlantı alanı üzerine oluşuyor. Bunlardan ilki alan hücreleri, sonrasında daha büyük bir alan, konum alanları, ardından mobil anahtarlama merkezi,
+
+186
+00:29:56,815 --> 00:30:03,816
+ziyaretçi konum rejisteri kayıtçısı, hizmet alanlarını ve kamu arazisi mobili alanlarını içerdiğini görüyoruz.
+
+187
+00:30:03,916 --> 00:30:07,236
+En büyük alan kamu arazisi mobil ağ alanları oluyor.
+
+188
+00:30:09,316 --> 00:30:13,855
+Hücre ile gösterilen alan bir alıcı bazı istasyonu tarafından kapsanı alandır.
+
+189
+00:30:14,355 --> 00:30:19,496
+GSMA her bir hücreyi o hücreye atanmış evrensel hücre kimliği, eşya ile tanımlar.
+
+190
+00:30:20,136 --> 00:30:22,175
+Konum alanı ise hücrelerin grubudur.
+
+191
+00:30:22,175 --> 00:30:24,715
+Konum alanı abonelerin çağrıldığı alandır.
+
+192
+00:30:24,715 --> 00:30:33,695
+Her bir konum alanında bir veya birden çok basitasyon denetleyicisi tarafından hizmet verilebilirken bu rakam mobil anahtarlama için yalnızca bir oluyor.
+
+193
+00:30:34,115 --> 00:30:37,776
+Her bir konum alanında bir konum alanı kimliği numarası atanıyor.
+
+194
+00:30:37,776 --> 00:30:43,636
+Bir mobil anahtarlama merkezi, ziyaretçi konum rejisteri, kayıtçısı hizmet alanı ise
+
+195
+00:30:43,636 --> 00:30:49,176
+GSMA'nın bir mobil anahtarlama merkezi tarafından kapsanan ve mobil anahtarlama merkezinin
+
+196
+00:30:49,176 --> 00:30:55,356
+ziyaretçi konum rejisteri, rejisterinde kayıtlı olduğu işin erişilebilir olan kısmını temsil ediyor.
+
+197
+00:30:56,096 --> 00:30:56,916
+Bir üst kadıma geçtik.
+
+198
+00:30:57,396 --> 00:31:05,256
+Bunun da üzerinde, mesela burada ABD'yi gösterilmiş, burada 5 tane farklı kamu arası mobil ağ alanı şeklinde tanımlanmış.
+
+199
+00:31:05,255 --> 00:31:09,575
+buralarda artık operatörler tarafından hizmet verilen alanlar altına girmiş oluyor.
+
+200
+00:31:10,915 --> 00:31:20,515
+Güvenlik detaylarına bakacak olursak, GSM tasarım itibariyle kablosuz bir tasarıma sahip, güvenli olarak tasarlanmaya çalışıyor.
+
+201
+00:31:20,515 --> 00:31:22,875
+Ancak buna rağmen saldırılara maruz kalabiliyor.
+
+202
+00:31:23,455 --> 00:31:32,736
+Bunun için GSM meydan okuma, yanıt kimlik yani Challenge Response Authentication yöntemini kullanan, kimlik doğrulama yöntemini kullanan bir yapıya sahip.
+
+203
+00:31:32,736 --> 00:31:44,836
+bu Challenge Response Authentication yönteminde kullanıcıya daha öncesinde bir şifre veriliyor ve bu şifre sorulan bir soruyla yeniden alınmaya çalışıyor diyelim kullanıcıdan.
+
+204
+00:31:45,316 --> 00:31:47,575
+Eğer doğru yanıtı verirse SAM çalışmaya devam ediyor.
+
+205
+00:31:48,635 --> 00:31:52,295
+Peki, devam edecek olursak güvenlik kısmına.
+
+206
+00:31:52,896 --> 00:32:00,375
+Basit metin dijitlerini yani plain text dijitleri şifreleyen akış şifreleri de dahil olmak üzere CSM'in kullandığı birkaç şifrelerine güvenlik algoritması var.
+
+207
+00:32:00,375 --> 00:32:12,976
+Bunlardan A5-1, A5-2 ve A5-3'den bahsedecek olursak A5-1 ve A5-2 daha öncesinde kırılmış olan şifreler böyle diyebiliriz.
+
+208
+00:32:12,976 --> 00:32:19,056
+Ve bu şifrelerin, bu algoritmaların yapıları kırıldıktan sonrasında da araştırmacılar tarafından yayınlanıyor.
+
+209
+00:32:19,635 --> 00:32:24,976
+Yani bundan ötürü GSM'in savunma mekanizması plain text saldırılara karşı hassas diyebilirim.
+
+210
+00:32:24,975 --> 00:32:33,995
+Verileri iletmek için ise GSM, yani webde gezinme gibi paket tabanlı bir iletişim hizmeti olan GPRS'i kullanıyor.
+
+211
+00:32:34,215 --> 00:32:41,855
+Fakat GPRS'in kullandığı şifreler olan G1 ve G2 de aynı zamanda kırılmış olan şifreler.
+
+212
+00:32:42,195 --> 00:32:45,175
+A5-1 ve AB-2 gibi daha öncesinde.
+
+213
+00:32:45,475 --> 00:32:47,815
+Ve bunlar da araştırmacılar tarafından 2011'de yayınlanıyor.
+
+214
+00:32:48,375 --> 00:32:53,695
+Şimdi durum böyle olunca GPRS ağındaki paketlere ulaşabilmek için açık kaynak yazımları da yayınlandığı için
+
+215
+00:32:53,695 --> 00:33:03,435
+GSM saldırılara maruz kalabilir bir yapıda olmuş oluyor. Sınırlarından bahsedecek olursak elektronik karışma kısmına gireceğim öncelikle.
+
+216
+00:33:03,955 --> 00:33:11,035
+GSM, Pulse Transmission teknolojisini kullanıyor ve bu teknolojinin işitme cihazları gibi elektronik cihazlara müdahale ettiği biliniyor.
+
+217
+00:33:11,035 --> 00:33:21,195
+Bu elektromanyetik parazit, elektromanyetik parazit oluşturuyor. Havaalanları, mezzet istasyonları ve hastaneler gibi bazı yerlerin cep telefonlarının kapatılmasının ana nedeni.
+
+218
+00:33:21,835 --> 00:33:23,095
+Hepimizin yaşadığı bir hadise.
+
+219
+00:33:23,551 --> 00:33:38,751
+bant genişliği gecikmesi CSM'de var. CSM teknolojilerini kullanırken birden fazla kullanıcı aynı bant genişliğine erişir, ulaşır ve bazen daha fazla kullanıcı ağa katıldıkça bu durum önemli gecikmelerine neden olur, bağlanılmaya neden olabiliyor.
+
+220
+00:33:39,351 --> 00:33:51,732
+Sınırlı veri aktarımı hızı CSM'de var. CSM biraz sınırlı bir veri aktarımı hızı sunuyor. Daha yüksek veri hızları elde etmek için kullanıcının daha gelişmiş CSM biçimlerine sahip bir cihaz, cihaza geçmesi gerekiyor.
+
+221
+00:33:51,732 --> 00:34:04,031
+Tekrarlayıcılardan, repeatersen kasıtta, GSM teknolojileri kapsama alanını arttırmak için taşıyıcıların tekrarlayıcıları ihtiyaç duyuyor.
+
+222
+00:34:04,112 --> 00:34:16,531
+Tekrarlayıcılar ne yapıyor? Amplifier gibi görev görüyor. Evimizdeki bu Wi-Fi sinyalini arttıran, bu sinyal arttırıcılar gibi bu repeaters de aynı şekilde GSM sinyalini arttırmış oluyor.
+
+223
+00:34:16,531 --> 00:34:45,831
+daha anı arttırmış oluyor. Karşılaştırmaya bakacak olursak GSM ile SM'yi karşılaştıracağım. SM'yi de Code Division Multiple Access olarak açılıma sahip. GSM ve SM arasındaki yaklaşım farkına bakacak olursak GSM'de bir sim kart üzerinden işlemler yürüyor. Yani siz cihazınıza bir sim kart takıyorsunuz ve GSM hizmetinden yararlanabiliyorsunuz. Fakat SM'yi de ahize yani telefon burada gördüğümüz gibi
+
+224
+00:34:45,831 --> 00:34:59,611
+esas olmuş oluyor. Böyle bir yaklaşım farkı var. Teknoloji olarak bakarsak GSM, FMI ve TDMI teknolojilerini kullanırken SM ise Code Division Multiple Access teknolojisini kullanıyor.
+
+225
+00:35:00,531 --> 00:35:11,431
+A açısından bakarsak GSM'de her hücrede bulunan A kulesi, hücreden kastımız az önceki bahsettiğimiz alanlardaki hücre, A kulesi o bölgenin cep telefonuna hizmet veriyor.
+
+226
+00:35:11,431 --> 00:35:16,571
+SME'de ise ağdaki her cihaz için fiziksel bir kanal ve özel bir kod bulunuyor.
+
+227
+00:35:17,391 --> 00:35:23,412
+İletim açısından ise CSM'de ses ve veri aktarımı aynı anda olabilirken SME'de bu aynı anda olmuyor.
+
+228
+00:35:23,412 --> 00:35:27,772
+Yani aynı anda ses ve aynı anda bir veri aktarımı yapamıyorsunuz.
+
+229
+00:35:28,391 --> 00:35:33,331
+CSM'de dolaşım dünya çapındayken SME'de ise dünya çapında bir dolaşım yok.
+
+230
+00:35:33,471 --> 00:35:35,251
+Daha sınırlı bir ulaşım var.
+
+231
+00:35:35,352 --> 00:35:40,731
+Veri hız açısından da bakarsak CSM daha yavaş iken SME çok daha hızlı oluyor CSM'e göre.
+
+232
+00:35:41,431 --> 00:35:46,831
+Evet 15 dakikayı doldurdunuz, hızlanmanız lazım. Bitirin bir an önce.
+
+233
+00:35:46,831 --> 00:35:53,831
+Biraz hızlanayım o zaman hocam ben. Bugün ben GSM'de kullanımdan... Saniye kanan gelmedi herhalde.
+
+234
+00:36:01,844 --> 00:36:08,304
+Hocam, bugün ben GSM'de kullanılan protokol yapısından ve kullanan adresleme metodlarından biraz bahsedeceğim.
+
+235
+00:36:09,284 --> 00:36:17,443
+Şimdi GSM'de temelde 3 katmanlı bir yapı kullanılır. Bu 3 katmanlı yapı içerisinde aynı zamanda birimlerin iletişim kurabilmesi için arayüzler bulunur.
+
+236
+00:36:18,444 --> 00:36:24,444
+Şimdi ilk katmanımızı inceledecek olursak fiziksel katman vardır. Bu kısımda FDMA, TDMA teknolojisi kullanılır.
+
+237
+00:36:26,703 --> 00:36:31,743
+Bu MS ve BTS arasında arayüz görevi görüyor. Yani UMA interface'in temelini oluşturur.
+
+238
+00:36:31,844 --> 00:36:40,184
+BTS MS'den bilgiyi alır ve 64 kilobit dijital formata çevirir. Daha sonra o da ABIS arayüzünü kullanarak BSC ile iletişim kurar.
+
+239
+00:36:41,544 --> 00:36:51,684
+Veri bağı katmanına gelecek olursak bu katmanın temel amacı bağlantının kurulup güvenli bir şekilde devam ettirmesi ve hata tespit işlemini gerçekleştirmesi diyebiliriz.
+
+240
+00:36:51,684 --> 00:37:05,083
+Burada LAPD ve LAPDM kullanılır. LAPDM aslında LAPD'nin CRC içermeyen biraz daha belli açılardan değiştirilmiş bir versiyonudur.
+
+241
+00:37:06,163 --> 00:37:14,963
+Üçüncü katman ise farklı servislerin çalıştırabilmesi için alt katmanları bölünmüştür. Bunlar Mobility Management, Connection Management ve Radio Resource Management olarak geçer.
+
+242
+00:37:14,963 --> 00:37:29,983
+Radio Resource kısmı MSI ile MSI arasındaki temel bağlantı sağlayan katmandır. Burada cihazların kullandıkları kaynakların yönetimi sağlanır.
+
+243
+00:37:30,863 --> 00:37:37,503
+Mobility Management kısmı ise hareketlilikle ilgili bir katmandır. Burada Mobile Station konumunu daima takip etmesi sağlanır.
+
+244
+00:37:37,503 --> 00:37:49,323
+Connection Management katmanı ise en üst seviyede yarar alır. Bu katman çağrı kontrolü SMS servisi ve başka bazı ek servislerin yönetiminden sorumludur.
+
+245
+00:37:52,003 --> 00:38:01,623
+Buralarda işlenen bilgiler BSC seviyesinde dediğim gibi ABIS aracılığıyla iletilir. Burada Radio Resource yerine BTSM isimli ayrı bir katman vardır.
+
+246
+00:38:01,623 --> 00:38:14,444
+BSC'den MSC'ye ise AR-100'lü geçiş yapılır. Burada da Radio Resource Yeni BSS Map vardır. Fakat Mobility Management ve Connection Management yine olduğu yerde duruyor.
+
+247
+00:38:15,263 --> 00:38:22,204
+Şimdi biraz daha adresleme metotlarından bahsedelim. Öncelikle her bir Mobile Station'a özel bir şekilde tanımlayın. E-mail numarası vardır.
+
+248
+00:38:22,204 --> 00:38:31,344
+Bu uluslararası bir geçerlikte her bir Mobile Station'a tanımlar ve artık kullanılan kalkmış çalıntı veya çalışmayan cihazlar bu şekilde ayırt edilebilir.
+
+249
+00:38:31,623 --> 00:38:37,504
+Mobile Subscriber Identity ise her bir aboneyi ayrı bir şekilde tanımlar ve bu da sim kartlarda yer alan bir bilgidir.
+
+250
+00:38:38,683 --> 00:38:44,603
+Mobile Subscriber ISDN numarı aslında bildiğimiz telefon numarasıdır. Bu da her bir sim karta özel olarak bulunur.
+
+251
+00:38:45,344 --> 00:38:54,144
+Mobile Station Roaming Numarı ise o bölgedeki sorunlu VLR tarafından atanmış o lokasyona bağlı geçici bir telefon numarası diyebiliriz.
+
+252
+00:38:54,263 --> 00:38:58,263
+Zaten MSISDN ile aynı temel yapıya sahiptir.
+
+253
+00:38:58,263 --> 00:39:05,784
+Location Area Identity her bir location area'yı özel olarak tanımlayan uluslararası standartta geçerli olan bir numaradır.
+
+254
+00:39:07,263 --> 00:39:11,403
+Temporary Mobile Subscriber Identity ise yine VLR tarafından atanan bir numaradır.
+
+255
+00:39:12,403 --> 00:39:16,603
+Bu sadece o bölgede geçerli olan bir numaradır ve HLR'a geçirilmez.
+
+256
+00:39:18,183 --> 00:39:23,603
+Local Mobile Subscriber Identity ise yine VLR tarafından atanabilen bir numaradır.
+
+257
+00:39:23,603 --> 00:39:31,543
+Bu temelde veri tabanındaki erişimi hızlandırmak için ve ek bir arama anahtarı olarak kullanılan bir numaradır her bir mobile station için
+
+258
+00:39:31,543 --> 00:39:38,123
+Cell Identifier ise location area'lar içerisindeki her bir hücreyi özel olarak tanınan yan numaradır
+
+259
+00:39:38,123 --> 00:39:45,823
+Location area numarası ile bir araya gelerek global cell identity oluşturur ve her bir hücreyi bu şekilde özel olarak tanınar
+
+260
+00:39:45,823 --> 00:39:49,943
+Sorusu olan var mı?
+
+261
+00:39:54,099 --> 00:39:56,419
+Bu da sesim geliyor mu?
+
+262
+00:39:57,199 --> 00:39:57,560
+Geliyor.
+
+263
+00:39:58,560 --> 00:40:09,839
+Sim teknolojisiyle alakalı bir şey gördünüz mü araştırmalarınızda? Yani şu anda kullanılan sim kartlar yerine yeni bir teknoloji çıkıyor. Bununla alakalı herhangi bir bilgi yarasadınız mı?
+
+264
+00:40:14,164 --> 00:40:38,504
+Biz CSM'i araştırdığımız için ben cevaplayayım hocam. CSM'i araştırırken genel olarak temel yapısından hani Set of Art yeni çıkan şeylere bakmadık da daha çok işte yapısı şu an ne? İlk bulundan beri nasıl bir yapısı var? Yani temel bir araştırma oldu bizimki. Çok detaylı bir şekilde yeni teknolojiler işte nereye evriliyor onları değerlendirmeyi inşallah. Çok uzun olacak diye.
+
+265
+00:40:39,203 --> 00:40:39,803
+Tamamdır.
+
+266
+00:40:39,803 --> 00:41:07,363
+Evet teşekkür ediyoruz kıymetli arkadaşlar. Şimdi bir sonraki gruba geçeceğiz. Ben ekran paylaşayım. Ama bir taraftan şunu söylüyor olayım. Çok uzattınız. İlk hani grupsunu diye burada ekstradan bir şey yapmayacağım ama bir sonraki gruplar ben harici arka tarafta süre tutuyor olacağım. 15 dakikayı geçtiği her dakika başına ekstradan puanınız kesiliyor olacak.
+
+267
+00:41:07,363 --> 00:41:15,203
+15 dakika içine sunumunuzu fit etmeniz lazım yoksa bütün gece burada sunumları dinlemek zorunda kalırız hep beraber.
+
+268
+00:41:16,043 --> 00:41:19,183
+İlk anlatan grubumuza da teşekkür ediyoruz.
+
+269
+00:41:19,423 --> 00:41:26,823
+GSM'i listeden çıkartıp tekrardan bir kura çekiyoruz ve EDSL geldi.
+
+270
+00:41:27,723 --> 00:41:31,243
+Şurada EDSL'i anlatacak gruplara bir bakalım.
+
+271
+00:41:31,244 --> 00:41:34,964
+13, 11, 19, 27
+
+272
+00:41:34,964 --> 00:41:37,564
+Bunları bir görelim, çete yazın lütfen
+
+273
+00:41:37,564 --> 00:41:40,284
+13 mi yine? Nasıl oldu ya?
+
+274
+00:41:40,763 --> 00:41:41,763
+Pardon o 2'ymiş
+
+275
+00:41:41,763 --> 00:41:52,764
+11, 19, 27
+
+276
+00:41:56,467 --> 00:42:13,167
+11, 11, 19, 27 yok mu? 27 numaralı grup. Tamam, 27 numaralı grup kıymetli arkadaşlar 0 alıyor. Ben hemen unutmadan notumu düşeyim.
+
+277
+00:42:24,788 --> 00:42:42,628
+Tamam, 27 yok. 11 ve 19 arasında doğal olarak kura çekiyor olacağız. Böyle olduğu için. Evet, 19. Evet, top 19 numaralı grupta sizleri dinliyoruz arkadaşlar.
+
+278
+00:42:51,764 --> 00:43:17,383
+ekran açıyorum hemen. Sesim düzgün geliyor mu bu arada? Evet, sesini duyabiliyoruz. Tamam. Bu şekilde göstersem olur mu tam ekran yapması? Tamam, nasıl rahat ediyorsan o şekilde gösterebilirsin. Şu an iki kişisiniz değil mi? Üç kişiyiz aslında ama. Ben üç kişi görüyorum, bir tek seni görüyorum şu an.
+
+279
+00:43:17,383 --> 00:43:23,083
+Hocam bir de ben varım ama kamerayı kapatmıştım
+
+280
+00:43:23,083 --> 00:43:25,903
+Tamam İrem iki, başka diğeri?
+
+281
+00:43:27,343 --> 00:43:29,383
+Hocam üçü de ben varım, Noriyetin Osmanlı
+
+282
+00:43:29,383 --> 00:43:36,243
+Tamam süper, üçü de buradaysa çok güzel, başlayabilirsiniz buyurun 15 dakika
+
+283
+00:43:36,243 --> 00:43:41,403
+Merhaba, biz bugün EDS ile anlatacağız
+
+284
+00:43:41,403 --> 00:43:44,563
+Ben EDS'nin tarihinden başlayacağım
+
+285
+00:43:48,052 --> 00:44:02,851
+Kısaca bahsedeyim önce EDSL'den. Geleneksel telefon hatları üzerinden kurulan internete kıyasla daha yüksek bağlantınızı sunabilen bir iletişim teknolojisi ve dünya çapında birçok internet bağlantısı sağlayabiliyor.
+
+286
+00:44:03,611 --> 00:44:15,052
+Fiber optik kablolar gerektiren yeni teknolojilere kıyasla daha esnek. 10 yıllardır sabit hatlar arasında sesli aramalar yapan aynı bakır telde hatlar üzerinden çalışıyor.
+
+287
+00:44:15,052 --> 00:44:25,932
+çalışıyor. EDSL dijital verileri aynı haklı üzerinden yüksek hızda ileterek e-posta okumaktan ya da görüntülemekten video izlemeye kadar her şeyi yapmamızı sağlıyor.
+
+288
+00:44:27,151 --> 00:44:43,151
+İlk olarak ben koru çalışanları telefon santralleri ve müşteriler arasında geleneksel hükümet çift kablolamada taşınan mevcut temel bant analatı ses sinyalinin üzerindeki frekanslarda geniş bant dijital sinyalı yerleştirerek EDSL'i geliştiriyorlar.
+
+289
+00:44:43,151 --> 00:44:46,531
+ve 1988 yılında patentini alıyorlar.
+
+290
+00:44:47,291 --> 00:44:53,171
+Ama o dönemdeki maliyetlerden dolayı tam olarak etkili bir şekilde ulaşamıyor.
+
+291
+00:44:53,431 --> 00:44:55,171
+Gelecek yıllarda daha etkili oluyor.
+
+292
+00:44:58,311 --> 00:45:05,132
+1990'larda ise telefon şirketleri bakır hatları üzerine terbir hizmeti sunmak için HTSL kullanmaya başlıyorlar.
+
+293
+00:45:06,232 --> 00:45:11,511
+İlk olarak küçük santraller arasına tekrar eden kullanma asrafları olmadan bu işlemler tamamlanıyor.
+
+294
+00:45:11,511 --> 00:45:22,052
+Daha sonra telefon şirketleri zaman geçtikçe küçük şirketler için HDS'li, hanelerde ise internete erişmek için HDS'li tanıtmaya başlıyorlar.
+
+295
+00:45:23,431 --> 00:45:31,732
+1995'de ise yenilikçi şirketler HDS'li daha hızlı internet erişim ihtiyacının karşılanabilmesi için gerekli bir yol olarak görmeye başlıyorlar.
+
+296
+00:45:33,092 --> 00:45:34,831
+Hani bir zorunluluk gibi olmuş oluyor.
+
+297
+00:45:34,831 --> 00:45:47,691
+T1-413 adlı EDSS standart spesifikasyonu ilk olarak 1995 yılında ENSI T1-E1 Konfirmesi tarafından yayınlanıyor.
+
+298
+00:45:47,691 --> 00:45:58,552
+Ve yakın zamanda ITUT tarafından G992 ve G992.2 olmak üzere iki versiyonu standartize ediliyor.
+
+299
+00:45:58,552 --> 00:46:07,891
+1998'de discrete multi-tone ENSI T1-413 teknik standartını izleyen hemen hemen tüm satıcılar tarafından benimseniyor.
+
+300
+00:46:08,792 --> 00:46:22,652
+Discrete multi-tone modülasyonu bir alıcı verizin, EDSR ve güç hattı gibi kablolu kanallardaki performansını optimize etmek için çeşitli yükleme algoritmalarıyla ilişkili bir ortogonal fraganslı division multiplexing çeşidi.
+
+301
+00:46:22,651 --> 00:46:33,271
+Yaygınlaşması ise 1990'larda ilk olarak Amerika'da ülke çapında yayılmaya başlıyor. Daha sonra 2000'lerde ise genel olarak yaygınlaşıyor.
+
+302
+00:46:33,951 --> 00:46:41,891
+Günümüzdeki kristal telefon santralleri genelde daha eski teknolojilere yönelik olmasına rağmen EDS'i destekleyecek şekilde geliştiriliyor.
+
+303
+00:46:41,891 --> 00:46:46,711
+Bu değişiklikler aynı zamanda fiber gibi çağdaş teknolojileri de destekliyor.
+
+304
+00:46:46,711 --> 00:47:02,051
+Daha eski EDSS standartları müşteriye yaklaşık 2 km bükümlü çift bakır tel üzerinden 8 MB test edebilirken yeni varyantlar bu oranları iyileştiriyor. Benim kısmım bu kadar. Benden sonra nöretim devam ettik.
+
+305
+00:47:05,844 --> 00:47:08,403
+İrem sen devam edebiliyor musun sunumu ben anlatsam?
+
+306
+00:47:11,103 --> 00:47:12,844
+Ekrem Halef'in devam edebiliyor musun?
+
+307
+00:47:14,184 --> 00:47:14,724
+Tabii.
+
+308
+00:47:18,900 --> 00:47:24,019
+Evet Nurettin görelim de bakalım seni. Kimmişsin?
+
+309
+00:47:28,403 --> 00:47:30,563
+Tamam, süper.
+
+310
+00:47:31,663 --> 00:47:32,703
+Başlatıyorum o zaman.
+
+311
+00:47:35,923 --> 00:47:39,143
+Hocam, benim kısmım HDS'nin ne olduğu ve çalışma mantığında.
+
+312
+00:47:41,183 --> 00:47:46,803
+HDSL asimetrik ve dijital abone hattıdır. Bir tür dijital abone hattı diye DDSL teknolojisidir.
+
+313
+00:47:46,803 --> 00:47:57,164
+Bakır telefon hatları üzerinde geleneksel bir ses bandı modeminin sağlayabileceği veri iletiminden daha hızlı bir iletişim sağlayan bir iletişim teknolojisidir. Geçebilir miyiz?
+
+314
+00:47:58,403 --> 00:48:05,683
+EDSR nasıl çalışıyor? EDSR telefon cülyeşmelerinde hocam, kuvandığımız bandı üzerinde de spektrumu kullanarak çalışıyor.
+
+315
+00:48:05,903 --> 00:48:14,084
+Ayrıcı olarak adlandıran bir DCR bitresiyle frekant banları izole ediyor ve aynı zamanda hem EDSR hizmeti hem de telefon cülyeşmeler için tek bir telefon altın kovulmasına izin veriyor.
+
+316
+00:48:16,223 --> 00:48:22,944
+Bunu yapmak için EDSR bir bakır kabuğu telefonu için maksimum 1 MHz band genişliğini 4 JHz olan kanallara böler.
+
+317
+00:48:22,943 --> 00:48:29,263
+Pot telefon sistemi konuşmaları, faxvanı bakmadan verileri gibi işlemler için N6'cı 4 kez kanalını kullanır.
+
+318
+00:48:29,723 --> 00:48:33,183
+Diğer 256 kez kanal, paralel dijital iletişim için kullanılır.
+
+319
+00:48:33,863 --> 00:48:40,943
+Asimetrik olduğundan doğayı downlink için 190. kanal, april 2. sadece 64 kanal kullanılır 4 kez kanal.
+
+320
+00:48:43,643 --> 00:48:47,543
+EDSL genellikle telefon santralinden kısa misafirler için uygundur.
+
+321
+00:48:47,543 --> 00:48:50,503
+Ortalama 4 geometreden daha kısa misafirler için kurulur.
+
+322
+00:48:50,503 --> 00:48:55,563
+Ancak döşenilen orijinal kablo ölçüsü izin veriyorsa bu bağlantı 8 km aşabilmekte.
+
+323
+00:48:56,223 --> 00:49:02,923
+EDS'li muvzul etkilen faktörler telefon santraniğinin uzaklık, kablo özellikleri, EM radyosu sanatlarından kaynaklanan parazitler,
+
+324
+00:49:03,003 --> 00:49:06,823
+modern bulunduğu yerleşik parazitler, yerel parazitler, elektrik yöldüsüdür.
+
+325
+00:49:09,003 --> 00:49:17,403
+EDS'lin avantajları mevcut telefon bağlantılarını bozmadan tek bir çift telefon kabloları üzerinden kullanabiliyoruz.
+
+326
+00:49:17,403 --> 00:49:32,463
+Bu EDSL hizmetini savunmak için ek hatta okumak gerekmedi anlamına geliyor. Bu EDSL'in bir avantajı. Bir de geleneksel bir ses bandı modeminin savunabileceğinden daha hızlı veri iletişim savuyoruz EDSL ile. Hocam benim kısımda bu kadardı. Sonra İrem devam ediyor.
+
+327
+00:49:34,963 --> 00:49:46,103
+Merhaba hocam. Ben de bu kısımda günümüzde EDSL'den, literatürde yapılmış bazı çalışmalardan, bir de EDSL'in kullanım alanlarından bahsedeceğim Türkiye özelinde de.
+
+328
+00:49:47,403 --> 00:50:01,883
+Yapılan çalışmalardan birinde örneğin şöyle ki ADSL'de sesin iletimiyle ilgili en büyük sıkıntı diğer uygulamalardan gelen verinin trafiği olabiliyor.
+
+329
+00:50:03,443 --> 00:50:09,683
+Bunu bu durumun yaşattığı zorluğu en aza indirgemek için bir çalışma önerisinde bulunulmuş.
+
+330
+00:50:09,683 --> 00:50:23,424
+Yazarlar bu yaklaşımda simülasyonlar yoluyla araştırma yaparak asimetrik sayısal abone hattının yukarı akış bit hızını arttırmasa bile ses trafiği performansının diğer veri trafiğine göre arttığını göstermişler.
+
+331
+00:50:24,083 --> 00:50:34,504
+Bir de şöyle söyleyebilirim aslında literatürde yapılan çalışmaların çoğu biraz daha eskide kalan çalışmalar, son yıllarda da genelde farklı teknik ve yöntemlerle yapılan çalışmalar var.
+
+332
+00:50:34,624 --> 00:50:39,363
+Örneğin işte makine öğrenmesi ya da derin öğrenme üzerinde yapılan çalışmalar var.
+
+333
+00:50:39,683 --> 00:50:51,163
+Ama bunun biraz daha azaldığını söyleyebiliriz. Benim sunduklarım da genelde 2010-2011 gibi yıllarda yapılan çalışmalar. Bir de yine 2021 yılında yapılan bir çalışma var. Ondan da bahsedeceğim.
+
+334
+00:50:52,264 --> 00:51:05,204
+Yapılan başka bir çalışmada da örneğin dermatoloğa erişimin zor olduğu ve telekomünikasyon aracılığıyla iletişim kurması gereken bölgelerde, EDSR aracılığıyla hizmet sağlanması üzerine.
+
+335
+00:51:05,203 --> 00:51:23,843
+yazarlar geliştirdikleri yöntem çalışmanın sonunda aslında geleneksel yolla yani yüzde yapılan bir muayeneden daha efektif şekilde uzaktan görüşme aracılığıyla da hastalarla görüşülebileceği ve bunanda verim alınabileceği üzerine bir çıkarımda bulunmuş.
+
+336
+00:51:25,460 --> 00:51:33,539
+Bir de yakın zamanda bulduğum başka bir çalışmada, burada da makine öğrenmesine dayalı haberleşme sisteminde kablo arıza test kiti üzerine.
+
+337
+00:51:34,279 --> 00:51:41,139
+Burada yapılan şey, kablo arıza durumunu sınıflandırması ve tahminlemesi için bir makine öğrenmesi modelinin geliştirilmesi.
+
+338
+00:51:42,119 --> 00:51:47,599
+Yazarlarda burada en iyi makine öğrenmesi algoritmasına sahip olduklarını iddia etmişler diğer çalışmalara göre.
+
+339
+00:51:47,599 --> 00:51:57,099
+Başlangıçta deneysel olarak emirasyon, kablo hata sınıflandırma doğruluğunu değerlendirmek için makine öğrenimi uygulanmadan önce gerçekleştirilmiş.
+
+340
+00:51:57,099 --> 00:52:10,219
+Kablo durumu verilerinin tahmini karar ağaçları, kain yakın komşu, çok hatmanlı algılayıcı, naive BS ve random forest gibi makine öğrenmesi algoritmalarına dayanan VK yazılımı kullanılarak simüle edilmiş.
+
+341
+00:52:10,219 --> 00:52:18,859
+Günümüzde EDSL'in kullanımına baktığımızda aslında hala birçok evde EDSL'den yararlanıldığını söyleyebiliriz.
+
+342
+00:52:18,859 --> 00:52:22,319
+Her ne kadar fiber optik kablolar yerlerini almış olsa da.
+
+343
+00:52:23,299 --> 00:52:24,739
+Bunun da belli sebepleri var.
+
+344
+00:52:25,439 --> 00:52:31,919
+Birincisi hala dünyada da bazı bölgelerde fiber optik kablonun sağlanamamış olması.
+
+345
+00:52:32,779 --> 00:52:39,339
+İkinci olarak bazı evlerde her ne kadar teknoloji gelişmiş olsa da yüksek hızda internete ihtiyaç duyulmaması.
+
+346
+00:52:39,339 --> 00:52:45,419
+ve bir de tabii ki de EDS'nin fiyat bakımından diğer rakiplerine göre biraz daha uygun olması diyebiliriz.
+
+347
+00:52:46,999 --> 00:52:49,759
+Ama tabii ki EDS'nin de bazı dezavantajları var.
+
+348
+00:52:50,180 --> 00:52:53,019
+Sesi sadece bana mı gelmiyor arkadaşlar? Siz duyabiliyor musunuz?
+
+349
+00:52:53,859 --> 00:52:55,439
+Biz duyuyoruz hocam.
+
+350
+00:52:55,439 --> 00:52:57,279
+Geliyor hocam ses.
+
+351
+00:53:01,811 --> 00:53:03,411
+Tamamdır, devam edelim lütfen.
+
+352
+00:53:03,992 --> 00:53:18,992
+Tamam hocam. EDS'nin bazı dezavantajları da vardır demiştim. Buradaki dezavantaj olarak en büyük şey diyebileceğimiz günümüzde, internet sağlayıcı merkezi olan uzaklığın, kullanıcıların internet hızını çok yüksek oranda etkilemesi.
+
+353
+00:53:18,992 --> 00:53:32,471
+Türkiye'de ise baktığımızda EDSL hizmeti veren internet sağlayıcı servislerini Türk Telekom, Türksel, Süper Online, TürkNet ve Millenikom diye örnek verebilirim
+
+354
+00:53:33,911 --> 00:53:41,752
+Sonuç olarak baktığımızda da şöyle diyebiliriz ki EDSL günümüzde hala tercih edilen güvenli bir bağlantı tekniği
+
+355
+00:53:41,751 --> 00:53:52,191
+Biz de yaptığımız bu projede çalışmada EDSL'in tarihçesine, tekniğin kendisine, çalışma prensibine, literatürdeki yerine ve kullanım alanlarına değindik.
+
+356
+00:53:53,191 --> 00:54:07,571
+Her ne kadar son yıllarda diğer modern teknikler, dediğim gibi F-Varotik kablo gibi, BDSR gibi yöntemler, EDSL'in yerini almaya başlasa da EDSL'in yine önümüzdeki yıllarda da kullanılmaya devam edebileceğini öngörüyoruz biz de yaptığımız araçlarında.
+
+357
+00:54:07,572 --> 00:54:13,192
+Bizim sunumumuz bu kadardı. Dinlediğiniz için teşekkür ederim.
+
+358
+00:54:14,192 --> 00:54:15,932
+Soruyoruzlar, sorabiliriz.
+
+359
+00:54:21,492 --> 00:54:25,771
+Evet, sorusu olan yok herhalde. Çok teşekkür ediyoruz kıymetli arkadaşlar.
+
+360
+00:54:25,771 --> 00:54:37,051
+Şimdi bir sonraki gruba geçiyor olalım. Şu listeden yine ADSL'i de çıkartıyoruz.
+
+361
+00:54:37,051 --> 00:54:47,252
+Evet, ISDN anlatılıyor olacak. ISDN'de 1, 7, 15, 23.
+
+362
+00:54:47,252 --> 00:55:11,651
+1, 7, 15 ve 23 numaralı gruplar olması lazım. 15 var, 23, 7. Evet hepsinin burada olduğunu kabaca görüyorum. O zaman kuramımızı çekiyoruz ve 23 numaralı grup. Şanslı grubumuz 23 numaralı grup.
+
+363
+00:55:11,651 --> 00:55:19,532
+Ben ekran paylaşımını durduruyorum ve topu size bırakıyorum. Buyurun kolay gelsin.
+
+364
+00:55:19,532 --> 00:55:23,091
+Merhaba.
+
+365
+00:55:29,268 --> 00:55:30,587
+Merhaba, duyururuz seni.
+
+366
+00:55:32,087 --> 00:55:44,907
+Benim konum Integration Service Digital Network. İsmi Muratcan Öztürk. Yüksek lisans bilimsel hazırlık öğrencisiyim. Diğer arkadaşlara ulaşamadığım için tek başıma hazırladım.
+
+367
+00:55:47,067 --> 00:55:49,427
+Tamamdır, buyurun lütfen, söz siz de.
+
+368
+00:55:49,427 --> 00:55:57,727
+Integration Service Digital Network baş harflerinin kısaltılmasıyla ISDN olarak kısaltılıyor.
+
+369
+00:55:57,727 --> 00:56:06,367
+Türkçe karşılığı da bütünleştirilmiş sayısal ağ hizmetleri olarak çevriliyor.
+
+370
+00:56:07,467 --> 00:56:14,927
+Bu veri aktarımının sayısal bir ortamda aynı ağ üzerinde iletilmesini sağlayan bir haberleşme ağı teknolojisi.
+
+371
+00:56:14,927 --> 00:56:23,848
+ISDM teknolojisi analog hatlarda farklı olarak sayısal ve temiz bir ses kanalı sağlanmasının yanında
+
+372
+00:56:23,848 --> 00:56:28,867
+aynı anda hem veri iletimi sağlamak üzere kuruluyor.
+
+373
+00:56:30,247 --> 00:56:34,007
+Bu sayede veri, ses, görüntü aynı anda iletilebiliyor.
+
+374
+00:56:34,007 --> 00:56:50,768
+Tarihçesine kısaca bakmak gerekirse ISDN konsepti analog post yani eski telefon sistemleri zamanından beri olan teknolojileri bir uzantısı olarak geçiyor.
+
+375
+00:56:50,768 --> 00:57:08,507
+kökenin telgraf günlerine kadar uzanıyor. Dünya çapında birçok alanda kullanılıyor ama ADSL'in piyasaya sürülmesiyle birlikte güçlü bir rekabet karşısında kalıyor ve çoğu ülkede daha kullanılamadan çok yaygınlaşamıyor.
+
+376
+00:57:08,507 --> 00:57:26,948
+Örnek alarak Amerika'da ISDN neredeyse hiç kullanılmıyor. Japonya'da 1990'ların sonlarında ADSL'i geliştirilmesiyle birlikte rağbeti azalıyor ama yine de popüler bir şekilde kullanılmakta.
+
+377
+00:57:26,948 --> 00:57:38,967
+Yani kısaca artık ADSL, DSL veya fiber bağlantıların tercih edilmeyen kısımlarda bu teknoloji kullanılıyor.
+
+378
+00:57:40,307 --> 00:57:45,967
+ISD'in sisteminde ise bilgi son kullanıcıya kadar sayısal olarak taşınıyor.
+
+379
+00:57:47,547 --> 00:57:54,208
+Ve kullanıcının telefon makinesi veya santral tarafından kullanılıp algılayabileceği analog sinyale çevriliyor.
+
+380
+00:57:54,208 --> 00:58:18,848
+Bilginin sayısal olarak taşımasının iki önemli avantajı var. Bunlardan birisi bilgilerin gürültüden daha az etkilenir yani ses kalitesini yükseltmek. Diğer bir avantajı ise bilgi son noktaya kadar sayısal olarak geldiği için üzerinde farklı uygulamalar yani görüntü, ses, veri gibi uygulamalar koşturulabiliyor.
+
+381
+00:58:18,848 --> 00:58:27,208
+ISDN bağlantısının kurulması ve verilerin iletilmesi için kanallar kullanılıyor.
+
+382
+00:58:27,208 --> 00:58:34,068
+Bu kanallar aslında iki çeşit B kanalları ve D kanalları olarak karşımıza çıkıyor.
+
+383
+00:58:34,887 --> 00:58:40,907
+B kanalların özellikleri bu kanallar ISDN sisteminin temelini oluşturuyor.
+
+384
+00:58:41,268 --> 00:58:44,467
+Her bir kanal 64 kilobit per second bilgi taşıyor.
+
+385
+00:58:44,467 --> 00:58:51,447
+ve bu kanallar üzerinde sayısal ses, görüntü gibi birçok farklı bilgi iletişimini sağlıyor.
+
+386
+00:58:52,467 --> 00:59:03,727
+B kanalları sayı olarak 2 ile 23 veya daha üst grup şeklinde olabiliyor ama kesinlikle iletişim kontrolü için D kanallarına ihtiyaç duyuyor.
+
+387
+00:59:04,727 --> 00:59:11,727
+D kanallarına geçecek olursak D kanalları iletişimin denetlenmesi için kullanılıyor.
+
+388
+00:59:11,727 --> 00:59:25,127
+hat açma-kapama, gerekli sinyallerin alınıp gönderilmesi görevlerine üstlenerek bant genişliği gibi konularda iletişim için kullanılmasını sağlıyor.
+
+389
+00:59:26,771 --> 00:59:38,152
+D kanalın büyüklüğü, B kanalın sayısını belirliyor ve B kanalın sayısı arttıkça da kontrol sinyallerinin hat ihtiyacı artacağı için hat ihtiyacını arttırıyor.
+
+390
+00:59:40,192 --> 00:59:45,771
+ISDN cihazlarına bakacak olursak dört temel başlık altında sınıflandırabiliyoruz.
+
+391
+00:59:46,891 --> 00:59:56,011
+Terminal adaptörleri, A sonlandırma cihazları, hat sonlandırma ekipmanları, değişim sonlandırma ekipmanları olarak karşımıza çıkıyor.
+
+392
+00:59:56,771 --> 01:00:07,711
+Terminal adaptörleri genelde 4 telli, A sonlandırma cihazları da genelde hat sonlandırma ekipmanları da 2 telli olarak karşımıza çıkıyor.
+
+393
+01:00:10,112 --> 01:00:15,431
+Diğer bir konu ise Basic Red Interface yani temel oran arayüzü konusu.
+
+394
+01:00:15,651 --> 01:00:20,151
+Bu genel olarak küçük işletmelerde ve ev kullanıcıları için tasarlanmış bir model.
+
+395
+01:00:21,151 --> 01:00:26,291
+Burada iki tane B kanalı, bir tane de D kanalı ile bu hizmeti sunuyor.
+
+396
+01:00:26,771 --> 01:00:34,952
+ve B kanalı hizmeti 64 kbps'de çalışıyor ve kullanıcıların verinin taşıması amaçlanıyor.
+
+397
+01:00:35,691 --> 01:00:49,572
+D kanalı ise 16 kbps'de çalışıp belirli koşullar altında kullanıcı verilerin iletilmesini ve desteklenmesini sağlıyor ve aynı zamanda kontrol ve sinyalleme bilgilerinin taşınması amaçlanıyor.
+
+398
+01:00:49,571 --> 01:00:58,391
+sağ tarafta da bu Basic Rate Interface'in bir şematik gösterimi mevcut.
+
+399
+01:01:01,011 --> 01:01:07,931
+Bir diğer özelliği de Primary Rate Interface, birinci oran arayüzü.
+
+400
+01:01:08,551 --> 01:01:11,531
+Bu ise büyük işletmeler için tasarlanıyor.
+
+401
+01:01:11,531 --> 01:01:21,391
+Japonya'da, Kuzey Amerika'da 23B kanalı ve bir tane D kanalı hizmet sunuyor.
+
+402
+01:01:21,951 --> 01:01:31,331
+Avrupa, Avustralya ve dünyanın diğer bölgelerinde ise 30B kanalı artı bir tane D kanalı ile hizmet sunuyor.
+
+403
+01:01:32,771 --> 01:01:36,271
+Sol tarafta da bunun bir şematik gösterimi var.
+
+404
+01:01:36,271 --> 01:01:38,712
+primary rate interfacing.
+
+405
+01:01:40,932 --> 01:01:43,951
+ISD'ye baktığımızda üç katmandan oluşuyor.
+
+406
+01:01:44,432 --> 01:01:46,212
+Birinci katman fiziksel katman.
+
+407
+01:01:47,372 --> 01:01:48,992
+Çerçeve yani frame biçimleri.
+
+408
+01:01:49,232 --> 01:01:53,471
+Çerçevenin giden veya gelen olmasına bağlı olarak farklılık gösteriyor.
+
+409
+01:01:53,471 --> 01:01:58,492
+Yani terminalden A mı ya da A'dan terminali oluşuna göre farklılık oluşuyor.
+
+410
+01:01:59,292 --> 01:02:05,051
+Çerçeveler 48 bit uzunluğunda ve bunların 36 biti veriyi temsil ediyor.
+
+411
+01:02:06,271 --> 01:02:14,471
+Birden fazla ISDN kullanıcı cihazı bir devrede fiziksel olarak bağlanabiliyor. Böyle bir imkan var.
+
+412
+01:02:14,471 --> 01:02:24,891
+Karşı yan tarafta da bu bitlerin anlamları ve ne olduklarını açıklayan küçük bir şema var.
+
+413
+01:02:24,891 --> 01:02:39,551
+İkinci katman, ikinci katman sinyalleştirme, ISD'nin sinyalleşme protokolünün ikinci katmanı, yani bağlantı erişim prosedürü D kanalı ile oluşuyor.
+
+414
+01:02:39,551 --> 01:02:49,451
+Buna LAPTİ diyoruz. LAPTİ üst düzey veri bağlantı kontrolü ve bağlantı erişim prosedürü ile benzerlik gösteriyor.
+
+415
+01:02:49,451 --> 01:03:00,491
+Bu katmanda kontrol ve sinyalleme bilgilerinin doğru bir şekilde aktarılması ve alınmasını sağlamak için D kanalı boyunca kullanılıyor.
+
+416
+01:03:01,411 --> 01:03:07,231
+Burada labdi adres alanı 1 ya da 2 byte uzunluğunda olabiliyor.
+
+417
+01:03:07,591 --> 01:03:14,911
+İlk byte'ın genişletilmiş adres biti ayarlanmışsa adres byte'i 1 byte, ayarlanmamışsa 2 byte olarak kullanılıyor.
+
+418
+01:03:17,844 --> 01:03:30,224
+Katman 3, Katman 3 de bu protokollerle birlikte kullanıcıdan kullanıcıya devre anahtarlamalı ve paket anahtarlamalı bağlantıları destekliyor.
+
+419
+01:03:30,224 --> 01:03:44,104
+Yani kurulum, bağlan, kullanıcı bilgileri, iptal durum, bağlantı kes gibi dahil olmak üzere birçok çağrı oluşturma, çağrı sonlandırma ya da bilgi ve çeşitli mesajlar bu katmanda belirleniyor.
+
+420
+01:03:44,104 --> 01:03:50,344
+Bu da katmanda bir flow chart olarak akışını gösteriyor.
+
+421
+01:03:54,771 --> 01:04:12,151
+Integrated Service Digital Network'ün avantajlarına gelecek olursak, en büyük sağladığı avantajlardan birisi, videolarda paket anahtarlamalı veriyle telefon ağı hizmeti için tüm dijital olanaklara erişim sağlama imkanı sağlıyor bize.
+
+422
+01:04:12,151 --> 01:04:19,851
+bant taşı kanal sinyalizasyonunu kullanarak çok daha hızlı bir çağrı kurulumu hizmeti sunuyor.
+
+423
+01:04:21,091 --> 01:04:32,551
+Taşıyıcı B kanalı yani taşıyıcı B kanalı servislerini kullanarak kanal başına 64 kbps'den çok daha hızlı bir veri iletim imkanı sağlıyor.
+
+424
+01:04:33,651 --> 01:04:40,391
+Daha önce de söylediğim gibi videoyu sesi, metni ve verilerin hepsini aynı anda çalıştırabilme imkanı sağlıyor.
+
+425
+01:04:40,391 --> 01:04:56,011
+iki kanala sahip olsa dahi telefon bağlantı olanı da sağlıyor ve tamamen dijital hizmetler sağlıyor. Bu nedenle hata olasılığı da çok düşük bir seviyede tutmuş oluyor.
+
+426
+01:04:56,011 --> 01:05:06,171
+Bu kullandığım referanslar. İlediğiniz için teşekkürler. Sorusu olan varsa soruları da alabilirim.
+
+427
+01:05:06,411 --> 01:05:08,992
+Ben bir şey sorabilir miyim? Alperen ben.
+
+428
+01:05:08,992 --> 01:05:34,011
+Slide'da geçmediği için soracağım. Bu slide'ın başında hani ADSL çıktığı zaman, ADSL teknolojiden sonra ISD'nin kullanımının azaldığını söyledin. Ama yine de Japonya'da hala popüler bir şekilde kullanılıyormuş. Yani bunun bir özelliği hani maliyetsel mi, tağı mı hızlı hani bir özelliği mi var? Niye hala kullanılıyor? Niye cool ADSL'e geçilmemiş?
+
+429
+01:05:34,011 --> 01:05:45,632
+Soru için teşekkür ederim. Bu bildiğim kadarıyla Amerika'da ADSL'in daha önce arkadaşlar da anlattığı 1990'ların başında kullanılmaya başlıyor.
+
+430
+01:05:45,632 --> 01:05:53,132
+Ama diğer ülkelere yayılması 1990'ların sonu 2000'lerin başı şekilde düşünebiliriz.
+
+431
+01:05:53,132 --> 01:05:57,632
+ve Amerika'da o yüzden mesela yaygın bir şekilde kullanılamıyor.
+
+432
+01:05:57,892 --> 01:06:06,592
+Ama Japonya'da sonuçta bir altyapı oluşturulduğu için ADSL ile birlikte de kullanılmaya devam edildi diye biliyorum ben.
+
+433
+01:06:07,331 --> 01:06:09,251
+Teşekkür ederim. Sağ olun.
+
+434
+01:06:11,092 --> 01:06:14,951
+Evet, çok teşekkür ediyoruz Muratcan. Ağzına sağlık.
+
+435
+01:06:15,012 --> 01:06:15,592
+Teşekkür ederim.
+
+436
+01:06:16,132 --> 01:06:21,292
+Sunumun dersin başında bir grubumuz gönüllü olmuştu. Onların konusu anlatıldı mı?
+
+437
+01:06:23,132 --> 01:06:25,072
+Yok hocam anlatılmadı
+
+438
+01:06:25,072 --> 01:06:29,852
+Tamam o zaman Mithat siz gönüllüydünüz hala gönüllüyseniz sizi dinleyelim
+
+439
+01:06:29,852 --> 01:06:35,212
+Hocam gönüllüyüz de bir arkadaş galiba yok şu an
+
+440
+01:06:35,212 --> 01:06:39,471
+Tamam bir gönüllü olduğunuzda var mıydı o arkadaş?
+
+441
+01:06:39,932 --> 01:06:41,212
+Evet vardı hocam
+
+442
+01:06:41,212 --> 01:06:42,611
+Tamam o zaman
+
+443
+01:06:42,611 --> 01:06:45,251
+Ama ben onun yerini de anlatabilirim o kısmı sıkıntı yok
+
+444
+01:06:45,251 --> 01:06:52,792
+Tamam hızlıca gelecekse sizi dinleyelim o zaman hazır gönüllüsünüz gönüllü olmak pozitif bir avantajı sağlayacaktır size illa ki
+
+445
+01:06:52,791 --> 01:06:57,671
+Tamam hocam o zaman ben başlayayım. Tamam buyurun topu size veriyorum.
+
+446
+01:07:03,764 --> 01:07:04,764
+Kameramdaçi.
+
+447
+01:07:11,380 --> 01:07:31,800
+Ben Mithat Koray Hamşioğlu, biz Frame Relay teknolojisini anlatacağız. Ben bir giriş yapacağım, arkadaşlar devamını getirecek. Öncelikle Frame Relay nedir? Frame Relay büyük verileri, paketler, çerçeveler halinde, geniş alan ağları üzerinden yüksek hız ve verimlilikle ileten bir veri iletişim teknolojisi.
+
+448
+01:07:31,800 --> 01:07:39,439
+genellikle kullanımın %90'ı LAN ağlarının, yerel alan ağlarının bağlantısını sağlamak üzerine.
+
+449
+01:07:40,659 --> 01:07:46,280
+Veriler paketler halinde iletildiğinden, yani paket anahtarlamalı bir şekilde iletildiğinden
+
+450
+01:07:46,280 --> 01:07:51,420
+bir at birden çok kullanıcı, birden çok ağ tarafından, LAN ağ tarafından kullanılabiliyor.
+
+451
+01:07:52,820 --> 01:07:54,420
+Veride hata kontrolü yapmıyor.
+
+452
+01:07:55,079 --> 01:08:00,140
+Bu sebeple verideki hata kontrolünden verinin gideceği ağ, verinin gideceği nokta sorumlu.
+
+453
+01:08:01,799 --> 01:08:17,399
+Frame'de bir takım avantajları var. Bu avantajlardan biri 45 Mbps'e kadar hız sağlayabiliyor. Hatta fiber bağlantılarla beraber 2.4 Gbps'e kadar hız sağlayabiliyor.
+
+454
+01:08:17,399 --> 01:08:36,419
+Kiralı kat maliyetlerini %50 oranında azaltıyor. Yine düşük gecikme ve yine bahsettiğim gibi yüksek verimlilikle çalışıyor. 4096 byte boyuta kadar olan frameleri, çerçeveleri işleyip iletebiliyor. Yani yüksek hacimli verilerin iletimi için gayet iyi bir yöntem.
+
+455
+01:08:36,420 --> 01:09:00,619
+Dezavantaj olarak söyleyebileceğim, ses iletişimi için uygun değil. Neden uygun değil? Değişken boyutta verileri işlediği için kullanıcılarda değişken gecikmelere sebebiyet verebiliyor. Bu sebeple sesli videolu konferans, gerçek zamanlı sesli videolu konferans görüşmeleri için pek uygun değil.
+
+456
+01:09:00,619 --> 01:09:17,560
+Bir de güvenilirliği düşük. Güvenli bir ağ değil. Neden güvenli ağ değil? Şifrelenmemiş. Bu sebeple eski bir teknoloji zaten. Eskiden kullanılıyordu genellikle. Şu an günümüzde yerine VPN teknolojisi kullanılıyor. Devamını Hakan arkadaşım anlatacak.
+
+457
+01:09:19,159 --> 01:09:20,299
+Hemen ekran paylaşıyorum.
+
+458
+01:09:25,492 --> 01:09:26,771
+Ekran paylaşımı geldi mi?
+
+459
+01:09:31,572 --> 01:09:39,491
+geldi, evet. Tamam, teşekkür ederim. Ben devam ediyorum. Ben frame relay'in yapısından, mimarisinden bahsedeceğim.
+
+460
+01:09:41,731 --> 01:09:52,231
+Örneğin ekranda beş tane cihaz var. Bu cihazlar birbirlerine frame relay üzerinden bağlanıyor. Her cihaz frame relay katmanına access link üzerinden ulaşıyor.
+
+461
+01:09:52,231 --> 01:10:20,292
+Bu cihazların DTA denen yani Data Terminal Equipment denen görevi var. Bu görev kullanıcı verisinin paketlenerek çıkışını sağlamak. Access linklere gelirsek access linkler her bir access link frame delay'e içerisindeki switchlere bağlanıyor. DCA denen bu switchler frame delay katmanının sunumunu yapıyorlar. Aynı zamanda gerekli bir interhap geldiğinde hattın kesimini de sağlayabiliyorlar.
+
+462
+01:10:20,291 --> 01:10:27,311
+Akses linklerin üzerinde aynı zamanda LMI denen link management interface yapısı da bulunuyor.
+
+463
+01:10:28,331 --> 01:10:36,111
+Bu arayüz yapısı gelen verinin geçerli bir adresi içerip içermediğini sorguluyor.
+
+464
+01:10:37,111 --> 01:10:38,671
+Bu sonucu çıkarıyor aynı zamanda.
+
+465
+01:10:39,271 --> 01:10:46,091
+Frame relay aracılığıyla cihazlar birbirlerine veri göndermek istediğinde bu verinin bu katmana uygun hale gelmesi gerekiyor.
+
+466
+01:10:46,091 --> 01:10:47,751
+Yani enkapsül edilmesi gerekiyor.
+
+467
+01:10:47,752 --> 01:10:52,472
+Enkapsül edilmeyen veriler A'a kabul edilmiyor.
+
+468
+01:10:52,911 --> 01:10:54,351
+Varış noktasına doğru geri gönderiliyor.
+
+469
+01:10:55,572 --> 01:10:56,572
+Benim anlatacaklarım bu kadar.
+
+470
+01:10:56,711 --> 01:10:57,631
+Yani yapısı bu kadar.
+
+471
+01:10:58,152 --> 01:10:59,332
+Devamını Emre anlatacak.
+
+472
+01:11:10,195 --> 01:11:11,195
+Ekremim görüyor mu?
+
+473
+01:11:13,156 --> 01:11:13,595
+Müziküyor.
+
+474
+01:11:13,695 --> 01:11:14,335
+Evet, geldi.
+
+475
+01:11:14,415 --> 01:11:14,775
+Müziküyor.
+
+476
+01:11:19,188 --> 01:11:35,267
+Benim konum veri aktarımı. Veri aktarımı paketler halinde gerçekleşir. Hakan arkadaşımızın dediği gibi enkapsüle edilmiş paketler. Bu paketlerin her iki tarafında flagler bulunur, adresler bulunur, veriler bulunur ve aynı zamanda PCS dediğimiz frame check sequence bulunur.
+
+477
+01:11:35,267 --> 01:11:43,228
+Adres kısmına gelecek olursak DLCI yani Data Link Connection Identifier bu bizim gideceğimiz yolu belirtir.
+
+478
+01:11:43,228 --> 01:11:53,507
+Bir routerdan diğer routura veri aktarımı sırasında gidilecek yolu ve aktaracağımız routerın bilgileri burada saklanır.
+
+479
+01:11:54,567 --> 01:12:01,307
+Frame Check Sequence ise şudur. Biz bir routerdan diğer routura aktarırken switchleri kullanıyoruz.
+
+480
+01:12:01,307 --> 01:12:26,787
+Switch'lere kullandığımız zaman bir matematiksel işlemlerden geçiriyoruz verimizi. Karşı taraf veriyi aldığı zaman aynı matematiksel işlemlerden geçiriyor. Ve iki işlem sonucu birbiriyle uyuyorsa veri doğru alınmıştır. Eğer uymuyorsa o veri tekrar alınacaktır. Bunun da bilgisi feedback olarak belirtiliyor. O verinin yeniden alınmasını sağlanıyor.
+
+481
+01:12:26,787 --> 01:12:41,467
+Gördüğümüz PECN ve BECN'de error notificationlarımız bunlar bir hata durumunda uyarıya sağlıyor ve hatanın çözümlenmesi için elinden geleni yapıyor.
+
+482
+01:12:43,027 --> 01:12:50,927
+Aynı şekilde dediğim gibi routerlar switchlere, switchlerde bir sanal yol oluşturarak diğer routere yollanıyor.
+
+483
+01:12:51,487 --> 01:12:55,868
+Burada bir router birden fazla routere veri aktarımı sağlayabilir.
+
+484
+01:12:55,868 --> 01:13:18,827
+Fakat aynı anda sağlayamaz. Bu bir belir olarak gerçekleştiriyor. Bunları gerçekleştirmesi için DLCI kullanılıyor. DLCI'ler genellikle 10 bitlerden oluşuyor. Bunlar unikler her biri için. Geri kalan kısmı yani bizim sanal yollarımızın nasıl oluştuğunu Beşir arkadaşımız arkadaş anlatacaktır.
+
+485
+01:13:21,548 --> 01:13:22,348
+Beşir?
+
+486
+01:13:28,724 --> 01:13:35,763
+Merhabalar arkadaşlar. Sesim geliyor değil mi? Sesim geliyor değil mi?
+
+487
+01:13:35,763 --> 01:13:36,503
+Geliyor.
+
+488
+01:13:38,403 --> 01:13:43,423
+Ben İngilizce anlatacağım. Olur değil mi İngilizce dilinde?
+
+489
+01:13:44,904 --> 01:13:47,603
+Olur. İngilizce anlatabilirsin.
+
+490
+01:13:48,244 --> 01:13:49,423
+Tamam. Teşekkür ederim.
+
+491
+01:13:50,423 --> 01:13:53,763
+Virtual circuits in the computer networking...
+
+492
+01:13:54,443 --> 01:13:58,064
+First of all, I will try to explain about virtual circuits.
+
+493
+01:13:58,724 --> 01:14:00,724
+ve virtual circuits.
+
+494
+01:14:00,724 --> 01:14:02,724
+Virtual circuits
+
+495
+01:14:02,724 --> 01:14:04,724
+is a computer network
+
+496
+01:14:04,724 --> 01:14:06,724
+providing connection-oriented service.
+
+497
+01:14:06,724 --> 01:14:08,724
+It is a connection-oriented network.
+
+498
+01:14:12,724 --> 01:14:14,724
+Virtual circuit resources
+
+499
+01:14:14,724 --> 01:14:16,724
+are reserved for the time
+
+500
+01:14:16,724 --> 01:14:18,724
+interval of data transmission
+
+501
+01:14:18,724 --> 01:14:20,724
+between two nodes.
+
+502
+01:14:23,724 --> 01:14:24,724
+This network
+
+503
+01:14:24,724 --> 01:14:26,724
+is a highly reliable medium of transfer.
+
+504
+01:14:26,724 --> 01:14:29,964
+Virtual circuits are costly to implement.
+
+505
+01:14:29,964 --> 01:14:35,404
+Virtual circuits provide bidirectional communication path
+
+506
+01:14:35,404 --> 01:14:40,603
+and are uniquely identified by data link connection identifier.
+
+507
+01:14:40,603 --> 01:14:48,203
+A number of virtual circuits can be multiplixted into a single physical circuit for transmission.
+
+508
+01:14:48,203 --> 01:15:15,203
+Açıkçası ve
+
+509
+01:15:15,203 --> 01:15:22,203
+ve
+
+510
+01:15:22,203 --> 01:15:44,203
+birçok
+
+511
+01:15:44,203 --> 01:15:47,203
+Devices across the frame-reli network.
+
+512
+01:15:47,203 --> 01:15:52,203
+Data terminal equipment devices can begin transferring data
+
+513
+01:15:52,203 --> 01:15:54,203
+whenever they are ready
+
+514
+01:15:54,203 --> 01:15:58,203
+because the circuit is permanently established.
+
+515
+01:15:58,203 --> 01:16:02,203
+Communication across permanent virtual circuits
+
+516
+01:16:02,203 --> 01:16:06,203
+does not require the call setup and the termination states
+
+517
+01:16:06,203 --> 01:16:10,203
+that are used with switched virtual circuits.
+
+518
+01:16:10,203 --> 01:16:13,903
+Next page is resources.
+
+519
+01:16:14,643 --> 01:16:15,023
+Can you
+
+520
+01:16:15,023 --> 01:16:17,783
+sonraki slide'a geçebilir misin?
+
+521
+01:16:18,023 --> 01:16:18,143
+Pardon.
+
+522
+01:16:19,263 --> 01:16:19,863
+Zaten
+
+523
+01:16:19,863 --> 01:16:22,224
+yok.
+
+524
+01:16:23,224 --> 01:16:24,423
+Resources vardı.
+
+525
+01:16:24,423 --> 01:16:25,703
+Tamam. Neyse.
+
+526
+01:16:26,724 --> 01:16:27,683
+Teşekkür ederim.
+
+527
+01:16:28,444 --> 01:16:29,523
+Referansla. Evet.
+
+528
+01:16:30,823 --> 01:16:31,843
+Teşekkür ederim herkese.
+
+529
+01:16:37,939 --> 01:16:40,380
+Sorusu olan varsa alabiliriz bu arada.
+
+530
+01:16:43,380 --> 01:16:47,740
+Evet, sorusu olan yoksa çok teşekkür ediyoruz arkadaşlar.
+
+531
+01:16:48,659 --> 01:16:49,759
+Biz teşekkür ederiz hocam.
+
+532
+01:16:50,799 --> 01:16:58,700
+Saat 6'yı 10 geçiyor. 25 geçe burada olalım tekrar. Geri kalan 4 grupla devam ediyor olacağız.
+
+533
+01:16:59,679 --> 01:17:00,899
+Tamam, teşekkür ederim hocam.
+
+534
+01:17:01,959 --> 01:17:03,159
+Hocam bir şey sorabilir miyim?
+
+535
+01:17:04,419 --> 01:17:05,539
+Tabii buyurun.
+
+536
+01:17:05,539 --> 01:17:09,659
+Gönüllü olabilir miyiz? Çünkü benim gidiş saatim çok geçe kalmış oluyor.
+
+537
+01:17:10,699 --> 01:17:12,939
+Tamam, başladığı anda gönüllü olabilirsiniz.
+
+538
+01:17:13,539 --> 01:17:14,579
+Tamam, teşekkür ederiz.
+
+539
+01:33:51,252 --> 01:33:57,391
+Evet, arayı tamamlayalım böylece arkadaşlar. Günülle olan bir arkadaş vardı.
+
+540
+01:34:00,172 --> 01:34:00,931
+Evet hocam, benim.
+
+541
+01:34:02,212 --> 01:34:08,051
+Tamam. Siz kendi konunuz ve gruplarınızla beraber.
+
+542
+01:34:09,531 --> 01:34:13,771
+Gruptaki diğer arkadaşlardan sadece birini ulaşabildim, o da bırakmış. Ben yüksek lisans öğrencisiyim.
+
+543
+01:34:14,651 --> 01:34:19,311
+Grup numaramı yazayım, 26. ATM, aslında eslamansız aktarım moduna.
+
+544
+01:34:19,311 --> 01:34:25,131
+Tamam, ATM'de diğer arkadaşlar da grubu yazsın. Sizin kaçtı? 26
+
+545
+01:34:25,131 --> 01:34:30,292
+26. Diğer arkadaşlar da yazsın. Teşekkürler, söz sizde buyurun.
+
+546
+01:34:31,951 --> 01:34:34,792
+Tamam, ekranımda bir sorun yok şu an.
+
+547
+01:34:36,411 --> 01:34:37,792
+Geldi ekranın, evet.
+
+548
+01:34:39,271 --> 01:34:46,612
+O zaman başlıyorum. Ben size ATM, yani eş zamansız aktarım modundan bahsedeceğim. İngilizce haliyle, asekonus transfer modda.
+
+549
+01:34:46,612 --> 01:34:56,031
+sunumun boyunca sırasıyla ATM'in gelişimi, hücre yapısı, anahtarlanması, bağlantıları, referans modeli, avantajları ve dezavantajları
+
+550
+01:34:56,031 --> 01:34:58,951
+son olarak da uygulama alanlarından bahsederek sunumumu bitireceğim.
+
+551
+01:35:01,391 --> 01:35:03,811
+Teknoloji hemen hemen her noktada kullanılır oldu.
+
+552
+01:35:03,912 --> 01:35:05,932
+Kurumlar, organizasyonlar, insanlar arasında.
+
+553
+01:35:06,552 --> 01:35:09,491
+Ve buna teknolojiyle iletişim de dahil.
+
+554
+01:35:09,491 --> 01:35:14,351
+Bu noktada aslında teknoloji sadece iletişim için değil, birçok noktada kullanılıyor.
+
+555
+01:35:14,351 --> 01:35:20,591
+elimizdeki veriler veri elde etmek için de kullanıyor. Kusura bakmayın ben şirketteyim artık geç olduğu için yavaş yavaş ışık kapatıp açıyorlar.
+
+556
+01:35:22,731 --> 01:35:25,351
+Tamam siz devam edin lütfen.
+
+557
+01:35:28,011 --> 01:35:37,612
+Bu veriler elde edildiğindeki boyutlar da gittiği büyüyor. En basitinden bir fotoğraf makinesinin çözünürlüğü artırarak videoların boyutları da büyümüş oluyor aslında.
+
+558
+01:35:37,612 --> 01:35:41,752
+Bunların iletimi için gereken ortamlarda zor sağlanıyor eskiden.
+
+559
+01:35:41,752 --> 01:35:53,131
+IT-IYOT'i buna 1980'lerde bir standart getirerek Uluslararası Telekombinasyon 1'li bunun daha kolay, hızlı ve daha az kayıplattırılmasını sağlamaya çalışmış.
+
+560
+01:35:54,211 --> 01:36:02,531
+Buna da oluşturduğu standart ilk olarak ISDN standartı, Integrated Switched Digital Networks'u oluşturuyor.
+
+561
+01:36:02,531 --> 01:36:06,671
+Fakat bu standarttan yeterli verimi alamıyor. Zaten Murat Can da benden önce bahsetti.
+
+562
+01:36:06,671 --> 01:36:14,252
+bu standartla yeterli verim alınamadığı için daha sonra Broadcast ISD yani standartını geliştiriyor.
+
+563
+01:36:14,391 --> 01:36:17,071
+ATM'de bu standartın uygulaması da diyebiliriz.
+
+564
+01:36:19,171 --> 01:36:26,311
+Ben ATM'in hücre, anahtar ve benzeri kavramlarının yapılarına geçmeden önce bir genel olarak ATM'i kafamızda oluşturmak istiyorum.
+
+565
+01:36:26,912 --> 01:36:28,931
+ATM elimizdeki veriyi hücreleri bölüyor.
+
+566
+01:36:28,931 --> 01:36:31,231
+Bunu sanal kanal ve yollar aracılığıyla anahtara gönderiyor.
+
+567
+01:36:31,231 --> 01:36:38,731
+anahtarda onu gene belli sanal kanal ve yollar aracılığıyla ulaştırmak istediğimiz noktaya ulaştırıyor aslında.
+
+568
+01:36:40,731 --> 01:36:48,871
+Genel olarak bir ATM hücre yapısına bakar isek, ATM hücresi nasıl oluşuyor ondan bahsedeceğim.
+
+569
+01:36:48,951 --> 01:36:55,891
+ATM elimizdeki verinin 53 byte olarak bölünmesiyle oluşuyor.
+
+570
+01:36:56,131 --> 01:37:00,371
+Neden 53 olacak olursa bu ATM uygulamasını Japonlar geliştiriyor.
+
+571
+01:37:00,371 --> 01:37:03,731
+onlar diyor ki 48 olsun, Avrupa diyor ki 63 yanlış bilmemiz lazım olsun.
+
+572
+01:37:04,332 --> 01:37:08,511
+Orta nokta olarak elton 53'te anlaşılıyor. 48, 5 byte'da başlığa gidiyor.
+
+573
+01:37:09,511 --> 01:37:12,112
+Bu 53'ün tamamı bizim verimizden oluşmuyor.
+
+574
+01:37:12,231 --> 01:37:15,411
+Yalnızca 48 byte'ı payload dediğimiz kısım veriden oluşuyor.
+
+575
+01:37:16,091 --> 01:37:18,771
+Kalan 5 byte ise başlık header kısımdan oluşuyor.
+
+576
+01:37:18,771 --> 01:37:20,671
+Bu başlığın içerisinde fonksiyonlar tanımlı.
+
+577
+01:37:21,631 --> 01:37:28,511
+Genel akış fonksiyonu, sanal kanal belirleyici, yol belirleyici, yük tipi, hücre kaybörlülüğü ve başlık hata kontrolü fonksiyonları tanımlı.
+
+578
+01:37:28,511 --> 01:37:50,411
+Bu fonksiyonlar arayüzlere göre bir tane fonksiyon da bir değişiklik oluyor. Kullanıcı A arayüzü ile AA arayüzü arasında genel akış kontrolü pozisinde bir farklılık var. Genel akış kontrolü yalnızca kullanıcı A arayüzünde bulunuyor. Genel akış kontrolü aslında A üzerindeki anahtarları tanımlıyor. Bu durumda AA arayüzlerinde bu tanımlı değil mi? Tanımlı. Sanayi yol belirleyicileri içerisinde tanımlı.
+
+579
+01:37:50,868 --> 01:38:04,328
+Hatta bunun 4 bitlik bir alanı var. Normalde kullanıcı AA arayüzünde 4 bit CFC'ye 12 bit de VPI'ye ait. AA arayüzünde VPI'nin 16 bitlik bir alanı var.
+
+580
+01:38:05,567 --> 01:38:13,548
+Şimdi sanal kanal belirleyicilerimiz aslında verinin, hücrenin bir sonraki durakla hangi anahtara gitmesi gerektiğini tanımlıyor.
+
+581
+01:38:14,507 --> 01:38:16,068
+Sanaryo beliriciler de öyle aslında.
+
+582
+01:38:16,427 --> 01:38:18,947
+Ama bunlar birçok sanal kanal birbirinden farklı da olabilir.
+
+583
+01:38:19,088 --> 01:38:21,447
+Sanal kanalların bir araya gelmesiyle oluşuyor.
+
+584
+01:38:21,987 --> 01:38:23,808
+Bunların ikisi de rota açılıyor gibi düşünebiliriz.
+
+585
+01:38:24,487 --> 01:38:27,487
+Yük tipi dediğimiz şey hücrenin taşıdığı yükün cinsini belirtiyor.
+
+586
+01:38:27,787 --> 01:38:31,927
+Bunlar kontrol verisi olabilir, bakım anarım olabilir, kullanıcı verisi olabilir.
+
+587
+01:38:32,408 --> 01:38:34,187
+Yük tipi belli bir kodlaması var.
+
+588
+01:38:34,268 --> 01:38:37,548
+Mesela 0000 kullanıcı verisi gibi bir kodlaması var.
+
+589
+01:38:37,548 --> 01:38:40,088
+Onun çok detaya girdiği için onu burada bahsetmeyeceğim.
+
+590
+01:38:40,308 --> 01:38:42,027
+Bu slaytları ben mi değiştiriyorum?
+
+591
+01:38:43,548 --> 01:38:47,187
+Tamam. Hücre kaybı önceli dediğimiz şey sterlos priority.
+
+592
+01:38:48,568 --> 01:38:55,827
+Bu ne demek oluyor? Hattaki herhangi bir yoğunluk anında bu hücrenin kaybedilip kaybedilemediğini aslında önemini gösteriyor diyebiliriz.
+
+593
+01:38:56,327 --> 01:39:00,588
+CRP eşittir 1 ise bu hücre kaybedilebilir, 0 ise kaybedilemez anlamına geliyor.
+
+594
+01:39:00,588 --> 01:39:03,588
+Başlık hata kontrolü de çevrim hatalarını denetliyor.
+
+595
+01:39:05,427 --> 01:39:07,308
+ATM anahtarlamadan bahsedeceğim.
+
+596
+01:39:07,307 --> 01:39:10,187
+ATM anahtarlamada
+
+597
+01:39:10,187 --> 01:39:12,607
+VPI dediğimiz
+
+598
+01:39:12,607 --> 01:39:14,247
+VCR dediğimiz bir sonraki anahtarı
+
+599
+01:39:14,247 --> 01:39:16,227
+gösteriyordu. VPI de bunların bir araya gelmesinden
+
+600
+01:39:16,227 --> 01:39:18,407
+oluşan bir sanal
+
+601
+01:39:18,407 --> 01:39:19,927
+yoldu. Burada VPI
+
+602
+01:39:19,927 --> 01:39:22,607
+mesela port birden anlatırsak
+
+603
+01:39:22,607 --> 01:39:24,387
+6 ve 4 gelmiş. Bu aslında
+
+604
+01:39:24,387 --> 01:39:26,267
+buraya bir sonraki
+
+605
+01:39:26,267 --> 01:39:28,267
+anahtarı tanımlıyor. Bu hangi çıkacağı
+
+606
+01:39:28,267 --> 01:39:30,227
+anahtar yollarını tanımlamış olur. Bu şekilde
+
+607
+01:39:30,227 --> 01:39:32,527
+anahtar bunu yönlendirebiliyor ama yönlendirmeden önce de
+
+608
+01:39:32,527 --> 01:39:34,167
+bunun üzerindeki etiketleri değiştiriyor.
+
+609
+01:39:34,267 --> 01:39:36,307
+Mesela port 3'ü yönlendirmiş. Sonra demiş ki
+
+610
+01:39:36,307 --> 01:39:39,967
+Buraya iki ve dokuz yap ki gittiği anahtarda bir sonrakini yönlendirebilsin diye.
+
+611
+01:39:40,047 --> 01:39:43,887
+Bunu etiketle ekleyip oradaki VPI ve VCI alanlarını değiştiriyor.
+
+612
+01:39:44,767 --> 01:39:49,627
+Şimdi anahtarlamadan bahsederken bu paket anahtarlamamı, devre anahtarlamamı ona da bir anlatmamız gerekiyor.
+
+613
+01:39:50,427 --> 01:39:53,887
+Paket anahtarlamamı gibi duruyor çünkü hücrelere bölüyor veriyi.
+
+614
+01:39:54,547 --> 01:39:56,047
+Ama biraz sonra da göreceğiz.
+
+615
+01:39:56,167 --> 01:39:57,607
+Aslında sanal devreler kullanıyor.
+
+616
+01:39:58,127 --> 01:40:00,327
+Bu durumda da devre anahtarlamaya girmiş oluyor.
+
+617
+01:40:00,427 --> 01:40:04,107
+Hangisi diye soracak olursak ikisi de aslında ikisinin dolumlu yanlarını kullanarak
+
+618
+01:40:04,107 --> 01:40:06,387
+daha verimli bir sonuç almayı sağlıyor.
+
+619
+01:40:06,707 --> 01:40:08,327
+Yani ATM hem paket anahtarlama
+
+620
+01:40:08,327 --> 01:40:09,907
+hem de evre anahtarlamayı kullanıyor.
+
+621
+01:40:11,187 --> 01:40:12,307
+ATM bağlantılarına
+
+622
+01:40:12,307 --> 01:40:13,227
+gelecek olursak
+
+623
+01:40:13,227 --> 01:40:15,507
+iki iletim noktası arasında
+
+624
+01:40:15,507 --> 01:40:17,947
+iletim sağlandığında sanal kanal oluşuyor.
+
+625
+01:40:18,067 --> 01:40:20,147
+Sanal kanallar, sanal yollar oluşuyor.
+
+626
+01:40:20,147 --> 01:40:22,427
+Sanayi yolların içinde birden fazla sanal kanallar
+
+627
+01:40:22,427 --> 01:40:24,287
+yani sanayi yollar da bir sanal devre
+
+628
+01:40:24,287 --> 01:40:25,827
+bağlantısını oluşturuyor. Bunun sayesinde
+
+629
+01:40:25,827 --> 01:40:27,507
+devre anahtarlamaya da girmiş oluyor zaten.
+
+630
+01:40:28,587 --> 01:40:30,107
+Sanal kanalların yollarını bulmasında
+
+631
+01:40:30,107 --> 01:40:32,307
+VCI'ler etkili, sanayi yollarına da VPI'ler
+
+632
+01:40:32,308 --> 01:40:34,188
+etkili. Bunların görebiliyoruz diye düşünüyorum.
+
+633
+01:40:35,808 --> 01:40:36,647
+ATM arayüzlerine
+
+634
+01:40:36,647 --> 01:40:38,207
+gelecek olursak, ATM'de 3 tip
+
+635
+01:40:38,207 --> 01:40:39,888
+arayüz kullanılıyor. Bunların ilki
+
+636
+01:40:39,888 --> 01:40:41,528
+kullanıcı A arayüzü,
+
+637
+01:40:42,048 --> 01:40:43,868
+AA arayüzü ve geniş bant ara
+
+638
+01:40:43,868 --> 01:40:45,388
+taşıyıcı arayüz.
+
+639
+01:40:47,007 --> 01:40:48,207
+Kullanıcı AA arayüzünde
+
+640
+01:40:48,207 --> 01:40:50,228
+ATM uç noktası ile anahtarın birbirine
+
+641
+01:40:50,228 --> 01:40:52,347
+bağlandığını görüyoruz. Bunlar bu tarz arayüzlere
+
+642
+01:40:52,347 --> 01:40:53,588
+kullanıcı AA arayüzü önünüyor.
+
+643
+01:40:54,868 --> 01:40:56,347
+Bu da kendi içerisinde ikiye ayrılıyor.
+
+644
+01:40:56,528 --> 01:40:58,168
+Özel kullanıcı A ve genel
+
+645
+01:40:58,168 --> 01:40:59,468
+kullanıcı A arayüzleri diye.
+
+646
+01:41:00,448 --> 01:41:02,028
+Özel kullanıcı A arayüzü
+
+647
+01:41:02,027 --> 01:41:08,647
+özel ATM network'ler içerisindeki uç noktayla anahtarın birbirine bağlanmasıyla oluşuyor.
+
+648
+01:41:08,647 --> 01:41:13,647
+Genel kullanıcı A arayüzü ise özel ATM network içerisindeki uç nokta veya anahtarın
+
+649
+01:41:14,267 --> 01:41:19,167
+genel network içerisindeki bir anahtara bağlanmasıyla oluşuyor.
+
+650
+01:41:20,707 --> 01:41:24,067
+AA arayüzü dediğimiz şey iki anahtarın birbirine bağlanmasını tanımıyor aslında.
+
+651
+01:41:24,807 --> 01:41:26,167
+Bu da kendi içerisinde ikiye ayrılıyor.
+
+652
+01:41:26,287 --> 01:41:29,027
+Özel AA arayüzü ve genel AA arayüzü.
+
+653
+01:41:29,027 --> 01:41:45,387
+Özel AAR 100 dediğimiz şey özel ATM network'lar içerisindeki iki anahtarın birbirine bağlanması. Genel AAR 100 dediğimiz şey de özel network içerisindeki iki anahtarın birbirine bağlanması.
+
+654
+01:41:47,283 --> 01:42:01,343
+Network'ü diyorum sürekli ama onu anlamışızdır. Geniş bant ara taşıyıcı ara yüzünden bahsedecek olursak bu da iki genel ATM ağındaki anahtarların birbirine bağlanması. İki genel birbirinden farklı ATM ağ.
+
+655
+01:42:02,923 --> 01:42:13,464
+ATM mimarisine yani referans modeline geldiğimizde üç katmandan oluşuyor. Bunların ilki fiziksel katman, ikincisi ATM katmanı, üçüncüsü de ATM adaptasyon, uyum katmanı.
+
+656
+01:42:13,464 --> 01:42:22,763
+Öncelikle ATM uyum katmanından bahsedeceğim. ATM uyum katmanı kullanıcıdan gelen verinin aslında bölünmesini, tersi yönde de yani size geliyorsa veride toplanmasını sağlıyor.
+
+657
+01:42:23,283 --> 01:42:31,304
+ATM katmanı ise buna başlık ekliyor, başlığın kontrolünü sağlıyor, çevrimli VPR, VCR gibi kontrolleri sağlıyor, genel akış kontrolünü sağlıyor.
+
+658
+01:42:32,163 --> 01:42:41,943
+Fiziksel katman ise çerçeve üretimini yapıyor, buna adaptasyon ediyor, hücre bitimi kontrol yapıyor ve fiziksel yapıyı da kontrol ediyor diyebiliriz genel olarak.
+
+659
+01:42:43,464 --> 01:42:49,243
+ATM avantaj ve dezavantajlarından bahsedecek olursak önce dezavantajlarından bahsedinmek istiyorum ben.
+
+660
+01:42:49,943 --> 01:42:56,184
+ATM yüksek maliyetli bir altyapıda istiyor aslında o yüzden biraz kullanımı az diyebiliriz.
+
+661
+01:42:56,763 --> 01:43:07,903
+Bir de bazı görüşlere göre ATM standartları nispeten yeni olduğu için tam olarak oturmadığını dolayısıyla da onu dokunulacak altyapı ve donanımların tam olarak belirlenemediği için kullanılmadığına dair bir görüşlerde var.
+
+662
+01:43:07,903 --> 01:43:17,383
+ATM'in avantajlarına gelecek olursak ATM var olan sistemlere çok rahat adapte edilebiliyor. O yüzden günümüzde kullanılan birçok sistemin omurgasında ATM'i rastlıyoruz.
+
+663
+01:43:19,183 --> 01:43:29,483
+Ortaya çıkış amacı olan yüksek hızlardaki iletimi sağlıyor. Büyük veri boyutlarında yüksek hızlarda iletimi sağlıyor. Zaten bunun için üretilmiş bir transfer modeliydi.
+
+664
+01:43:30,463 --> 01:43:34,603
+Güvenilir iletim ortamı sağlıyor. A-bant gelişinin etkin kullanılığını da sağlıyor.
+
+665
+01:43:34,603 --> 01:43:46,103
+ATM'in uygulama alanlarına gelecek olursak kampüs ağları, fremley omurgaları, internet omurgaları, yerleşik alanlardaki geniş bant ağları gibi birçok uygulama alanı var aslında bunlar sadece birkaçı.
+
+666
+01:43:46,623 --> 01:44:00,463
+ATM'in tam olarak bunlara adapte ediliyor, kullanılıyor olmasının sebebi de az önce de bahsettim çok kolay adapte edilebiliyor, çok hızlı veri akışını sağlıyor özellikle trafik yoğunluğunun çok fazla olduğu kullanım alanlarında mesela özel internet gibi.
+
+667
+01:44:00,463 --> 01:44:06,323
+ATM'in kullanılması ona bir avantaj sağlıyor ve güvenilir olması da aslında sağlıyor diyebiliriz.
+
+668
+01:44:07,503 --> 01:44:14,083
+Benim anlatacaklarım bu kadar. Sorusu olan varsa cevaplamak isterim. Yoksa teşekkür ederim.
+
+669
+01:44:17,811 --> 01:44:34,832
+Evet, çok teşekkür ediyoruz Büşra. Ağzına sağlık. Genel bir ben şimdiye kadar anlatılan bu 5 sunumda değerlendirme yapmış olayım. Şimdi arkadaşlar işe gireceksiniz, işte iş mülakatlarına gideceksiniz. Sizden çeşitli durumlarda sunum yapmanız istenecek.
+
+670
+01:44:34,832 --> 01:44:44,912
+Bir slide'ın içerisine bir metin yerleştirip çıkıp bu metni okumak kadar kötü bir şey kendinize yapamazsınız.
+
+671
+01:44:45,672 --> 01:44:54,111
+Tekrar söylüyorum. Slide'ın içerisine bir paragraf yerleştirip çıkıp bunu okumak kadar kendinize kötü bir şey yapamazsınız.
+
+672
+01:44:54,672 --> 01:45:02,752
+Sizden beklenilen şey slide daha fazla görsel ağırlıklı olsun ve size anlatacağınız şeyi hatırlatan birkaç kelime içersin.
+
+673
+01:45:02,751 --> 01:45:10,171
+Sizin zaten konuya hakim olmanız lazım. O manada Büşra'nın sunumu güzeldi. Teşekkür ediyoruz.
+
+674
+01:45:11,611 --> 01:45:14,911
+Ben teşekkür ederim. Hocam benim de çıkıp girmem gerekiyor.
+
+675
+01:45:15,591 --> 01:45:27,131
+Tamam, tamam. Siz halledin. Şimdi bir sonraki artık vatandaşları anlatacak kişileri seçiyor olacağız.
+
+676
+01:45:27,931 --> 01:45:30,532
+Hocam ben araya giriyorum ama bir şey sorabilir miyim acaba?
+
+677
+01:45:30,532 --> 01:45:31,892
+Tabii ki buyurun
+
+678
+01:45:31,892 --> 01:45:37,112
+Biz çete grup yazmadık bir anda kuralsız bir anda sunum yaptığımız için sorun olur mu?
+
+679
+01:45:38,992 --> 01:45:41,091
+Yani siz hangi konuyu anlatıyordunuz?
+
+680
+01:45:41,271 --> 01:45:43,091
+Framer'i de anlattık gönüllü olarak
+
+681
+01:45:43,091 --> 01:45:47,112
+Tamam yok sıkıntı olmaz siz kendiniz anlattıysanız sıkıntı yok
+
+682
+01:45:47,112 --> 01:45:48,392
+Tamamdır hocam sağ olun
+
+683
+01:45:48,392 --> 01:45:55,392
+Zannımca bu 3 grup kaldı X25, Community Antenne Television ve WiMAX olarak
+
+684
+01:45:55,392 --> 01:45:58,712
+Bunlar arasında bir kura çekiyoruz
+
+685
+01:45:58,712 --> 01:46:19,151
+ve evet Cat TV çıkmış oldu. Cat TV için gruplarımıza bakıyor olalım. 12, 20 ve 28 numaralı gruplar olması lazım.
+
+686
+01:46:20,731 --> 01:46:25,151
+Evet 12'yi görüyorum. 20 ve 28 nerededir acaba?
+
+687
+01:46:29,268 --> 01:46:52,567
+12 var, 20 ve 28. Tamam, yok. O yüzden kura çekmiyorum. 20 ve 28'in direkt arkadaşlar, denk gelirse söylersiniz, sıfır aldılar. Eğer teslim ettilerse bile raporlarını sıfır aldılar. 12 numaralı grup tek siz kaldığınız için size sözü bırakıyorum. Buyurun lütfen.
+
+688
+01:46:56,948 --> 01:47:00,267
+İletişim ve Altyazı M.
+
+689
+01:47:02,131 --> 01:47:03,451
+İlker paylaşabilir misin?
+
+690
+01:47:05,311 --> 01:47:08,491
+Sen paylaşsan olur mu ya? O kısımda biraz sıkıntım var.
+
+691
+01:47:15,123 --> 01:47:18,883
+gözüküyor mu acaba şuan? Evet, geldi.
+
+692
+01:47:31,412 --> 01:47:48,651
+Tekrardan merhaba arkadaşlar. Biz bugün kablo televizyon sistemlerini anlatacağız size. İlk olarak konuya ben giriş yapacağım. Sonra arkadaşlarım devam edecek. Ben nedir? Yani bu kablo televizyon sistemleri nedir? Nasıl çalışır? Nasıl dağıtılır? Ben zehirli konulardan bahsedeceğim.
+
+693
+01:47:48,651 --> 01:47:54,092
+Şimdi küçük bir google'lama yaptığınızda bulabileceğiniz ilk önce nedir kısmını bir tanımlayalım.
+
+694
+01:47:54,912 --> 01:48:03,112
+Kablo televizyon sistemi, radyo yayını veya uydu tarafından sağlanan programları koaksiyel veya fiberotik kablo aracıyla insanların evlerine bırakan bir iletişim sistemidir.
+
+695
+01:48:03,112 --> 01:48:17,992
+Peki bunun başlıca temel özellikleri nelerdir? Broadcast sinyalleri alan, alabilen daha doğrusu dijital veya analog yayını yapan çok sayıda televizyon ve radyo konan iletimini sağlayan yüksek kalitede fiberotik ve koaksiyel kablo üzerinden görüntü ve ses ileten çok kanallı bir televizyon sistemidir.
+
+696
+01:48:18,651 --> 01:48:46,511
+Peki bunun görevi nedir? Bu birkaç farklı kaynaklanan görüntü ve ses sinyallerine bu kablo televizyon sistemi abonelerinin televizyon ve radyo alıcı sistemlerine dağıtılmasıdır. Başlıca üç bölümde inceleniyor. Merkez dediğimiz, ana şebeke dediğimiz ve ev içi dağıtım şebekesi dediğimiz bölümlerden. Şimdi ilerleyecek olursak. Burada bir şey görüntü üstünden klasik bir özetini görebiliriz. Uyudan gelen sinyali Çanak Antan alıyor.
+
+697
+01:48:46,511 --> 01:49:04,171
+Daha sonra head-end dediğimiz merkezler, illerde kurulan merkezlere bu sinyal gidiyor ve orada bir takım işlemlerden geçtikten sonra dağıtım şebekesine geliyor. Dağıtım şebekesinden de yine yükselteşler veya ara frekans direniğindirgeçleriyle daire içi dağıtıma doğru iletiliyor.
+
+698
+01:49:04,691 --> 01:49:05,992
+Slide ilerlemiyor sanırım.
+
+699
+01:49:07,272 --> 01:49:08,092
+İlerlemiyor mu şu an?
+
+700
+01:49:10,871 --> 01:49:15,791
+Yok ben şu an ana sanki ilk sayfayı görüyorum. Bir numaralı slide'ı görüyorum.
+
+701
+01:49:15,791 --> 01:49:25,751
+Ben de. Şu an geçtim acaba? Pencereyi paylaştın sanırım. Ekranı değil de pencereyi paylaştın diye tahmin ediyorum. Çok pardon.
+
+702
+01:49:33,524 --> 01:49:34,603
+Şu an geliyor mu acaba?
+
+703
+01:49:36,603 --> 01:49:38,944
+Hala aynı. Şu an düzeldi, evet.
+
+704
+01:49:39,543 --> 01:49:40,623
+Fotoğraf var değil mi şu an?
+
+705
+01:49:40,763 --> 01:49:41,083
+Evet.
+
+706
+01:49:41,824 --> 01:49:56,944
+Tamam, tekrar bahsedeyim, çok özür dilerim. Uydudan gelen sinyal, Çanakal'tan alıyor. Daha sonra illerde kullanılan merkezler dediğimiz yerler var. Bu merkezlerde oraya gidiyor bu sinyal. Sonra merkezden belli işlemler uygulanarak dağıtım şebekesine iletiliyor.
+
+707
+01:49:56,944 --> 01:50:05,303
+dağıtım şebekesinden de yüksek yine gerekli yükselteşler veya frekans seviyesinde indirgeçlerle daire içi dağıtıma yol almak üzere ilerliyor.
+
+708
+01:50:07,784 --> 01:50:18,524
+Şimdi merkez HEDANT. Merkez dediğim gibi illerde kurulan ve bu abonelerin evlerine sinyali dağıtmak için kurulan yerler.
+
+709
+01:50:19,424 --> 01:50:26,643
+Bunlar ne yapar? Temel olarak işte boyutlar doğru seçilmiş, parabolik bir anten uyudan aldığı sinyalleri anten besleme ünitesine odaklayıp
+
+710
+01:50:26,643 --> 01:50:32,564
+oradan da düşük gürültülü yükseltece gönderir. Bu yükselteç radyo frekans seviyesinde gelen sinyali yükseltir.
+
+711
+01:50:32,843 --> 01:50:36,524
+Daha sonra frekansını düşürmek üzere alt çeviriciye gönderir. Peki bunu neden yapıyoruz?
+
+712
+01:50:36,524 --> 01:50:42,583
+Çünkü yüksek frekans şeyi sinyali taşımak, taşıyamıyoruz uzun mesafelere.
+
+713
+01:50:42,903 --> 01:50:46,303
+Bunu taşımak için sinyali frekansını düşürmemiz gerekiyor.
+
+714
+01:50:46,863 --> 01:50:50,623
+Artık sinyal frekansı çok bağlı olmayan bir koaksal kabloda yetebilecek kadar düşüyor.
+
+715
+01:50:50,783 --> 01:50:55,943
+En son uydu alıcısı bu sinyali televizyon için uygun sinyallere görüntü ve söz olarak dönüştürerek yolluyor.
+
+716
+01:50:56,643 --> 01:51:13,763
+Ana şebeke bölümünde merkezde birleştirilen televizyon sinyallerinin ana hat üstünden uzak mesajlara taşınması gerçekleşiyor. Burada taşıma yaparken dikkat etmemiz gereken bazı şeyler var. İşte bunlardan bahsedeceğiz. Mesela kaybın ve kazancın eşit olmasına dikkat edilmesi gerekiyor.
+
+717
+01:51:13,763 --> 01:51:41,983
+kablodaki kayıp frekansa bağlı. Bu kaybı telafi etmek için her ana hat yükselticisinin girişine zıt frekanslı, zıt frekans tepkili bir eşitleyici devresi konuyor. Böylece yükselticinin aktif katlarına her seviyesinde bütün frekanslarda eşit olan sinyal gidiyor. Ayrıca kablodaki kayıp sıcaklığa da bağlı. Her derece Celsius'te sıcaklık %0.2 olarak değişiyor. Burada bahsetmediğim bazı şeyler de var. Kısım kısa olsun diye özet geçiyorum.
+
+718
+01:51:41,983 --> 01:52:05,903
+Burada görebileceğiniz 47 ve 450 MHz bandı gidiş yolu olarak biliniyor. Çünkü iletilen kanalların merkezden abone gidiş yolu bu bantta. Bir de modern kablo televizyon sistemlerinde dönüş yolu diyebileceğimiz bir bant var. 5 ile 20 MHz arasında kullanılan. Bu adından anlaşılabileceği üzere ters yönde bilgi gönderebiliyor. Bu durumda trunk ve talih hatlarda yükseltici kutularından birbirlerinden bir filtre ile ayrılmış iki yükseltici bulunuyor.
+
+719
+01:52:05,903 --> 01:52:28,703
+dönüş yolunda ödemeli TV'nin veri bilgileri iletiliyor. Yani bu ödemeli TV için kullanılan bir sistem olarak düşünebiliriz. Peki ödemeli TV ne? Ödemeli TV Avrupa ve Amerika'da yaygın olarak verilen bir hizmet. Bu hizmet abonelerin seyrettikleri kadar para ödedikleri bir sistem. Dönüş yolundan alınan verileye göre bir bilgisayar yardımıyla yine abonelerin hangi ödemeli TV kanalını ve ne kadar izlediğini saptanıyor ve ona göre ücretlendirme gerçekleşiyor.
+
+720
+01:52:28,703 --> 01:52:44,663
+Trank kablosu yani ana hat dediğimiz kablonun uzunluğunu belirleyen bazı değişkenler var. Burada onlardan bahsettim. İşte her bir yükselticin maksimum çıkış seviyesi, gürültü figürü, genlik ve frekans tepkisi, sonra her bir yükselticin kazancı ve Trank kablosunun birim uzunluktaki zayıflama miktarı. Zayıflamasıdır.
+
+721
+01:52:44,663 --> 01:53:14,464
+En son ev içi dağıtım çebekesi. Ev içi dağıtım çebekesi de en basit haliyle bize gerekli olan bir kablo ve televizyon prizi. Yani bu anlattığımız kablo televizyon sistemi böyle gerçekleşiyor. Bununla beraber birkaç prizin beslenmesi gerekiyorsa ev içinde de yükselteci gerekebiliyor. Bugün günümüzde bina içi dağıtımda en uygun metot yıldız bağlantı olarak tercih ediliyorum sanırım. Emin değilim. Bu bağlantıda binanın girişine kadar gelen harcı tip kablo bir bölücüyle sonlandırılıyor ve daire ve kat sayısına uygun olarak kullanılan
+
+722
+01:53:14,464 --> 01:53:24,464
+bölcülerle her daireye ayrı bir kablo çekiliyor. Bu şöyle kullanılabilir seviyede oluyor. Her daireye farklı kablo çekmek olası...
+
+723
+01:53:24,832 --> 01:53:40,832
+sinyal kesintilerinde diğer dairelerin bundan etkilenmemesini sağlıyor. Ama yine her daireye farklı kablo ve yükselteş kullanmak maliyeti arttırıyor. Bu yüzden yine de sinyal kesilmediği için kullanılan bir tercih.
+
+724
+01:53:40,832 --> 01:53:45,712
+ve iyi bir görüntü ve ses elde etmek için prizdeki sinyal seviyesi 60-80 dBV arasında olması lazım.
+
+725
+01:53:47,051 --> 01:53:51,592
+Şimdi buraya kadar anlattığım şeyler klasik bir kablo televizyon sistemi hakkındaydı.
+
+726
+01:53:51,592 --> 01:53:56,672
+Yani iletişimin her aşamasında analog sinyallerin dolayısıyla koaksiyel alt yapının kullanıldığı sistemdi.
+
+727
+01:53:57,192 --> 01:54:07,271
+Fakat Avrupa ve Amerika'da kablo televizyon sistemin can damarının koaksiyel kablo olması bunun için tercih edilen en uygun kablo olduğu manasına gelmiyor.
+
+728
+01:54:07,271 --> 01:54:15,211
+Çünkü fiber optik kablo kullanmak trunk maliyetini azaltacak ve zayıflamayı son derece düşüreceği için kalitenin artmasını sağlayacaktır.
+
+729
+01:54:15,311 --> 01:54:25,332
+Ama yine de fiber optik kablo, aksiyon kablolara göre daha maliyetli olduğundan ötürü var olan altyapıyı değiştirmek ekstra maliyet gerekiyor.
+
+730
+01:54:25,332 --> 01:54:31,332
+O yüzden genellikle tercih etmiyorlar ve kullandıkları için yeterli olarak görüyorlar. O yüzden onlar böyle tercih ediyor.
+
+731
+01:54:31,772 --> 01:54:37,031
+Şimdi blok diagramından bahsetmek için ben arkadaşıma sözü bırakıyorum. Teşekkür ederim.
+
+732
+01:54:41,076 --> 01:54:56,435
+Merhabalar. Doktor Diagramından kısaca bahsetmek gerekirse televizyon kanalı yayını gönderdikten sonra çeşitli kanallardan, kaynaklarda UC sisteminden alınan bu sinyaller modül edilerek ağda birleştiriliyor.
+
+733
+01:54:56,435 --> 01:55:13,096
+Bu adı birleştirme işleminden sonra taşınma ve transferi sürecinde doğal olarak çeşitli kayıplara uğrayabiliriz. Bu nedenle de amplifier'lar ve ecolizer'lar kullanıyoruz.
+
+734
+01:55:13,096 --> 01:55:27,096
+En son da bu dağıtım merkezine getirebildikten sonra latamızı da tran katlarla en son tüketiciye ya da evlere aktarıyoruz diyebiliriz.
+
+735
+01:55:28,675 --> 01:55:30,516
+Bir sonraki saite geçelim.
+
+736
+01:55:32,296 --> 01:55:34,855
+Burada birleşenleri göreceğiz. Bir sonrakine geçelim.
+
+737
+01:55:34,855 --> 01:56:01,555
+Burada da bütün beleşenleri, daha doğrusu en önemli beleşenimiz Hedent'ti. Onu Fatih anlattı. Hedent dışındaki en önemli beleşenlerimiz de trunklar ve yolun son kısmını tüketiciye geçiş kısmına trunklara bir ihtiyaç duyuyoruz. O yüzden trunkların üstünden biraz geçeceğiz.
+
+738
+01:56:01,555 --> 01:56:15,815
+Bunun yanında koaksiyel kabloyu anlatacağız. Ayrıca de bu fire'larla HFC'ye değineceğiz. Geçelim burada.
+
+739
+01:56:15,815 --> 01:56:27,715
+birden fazla kablo yapısı var aslında koaksiyel kabloda ama bu çeşidi değiştiren önemli mesele o tipik bir koaksiyel kablo.
+
+740
+01:56:27,715 --> 01:56:30,395
+En iç kısmında veri iletimi sağlayan bakır bir tel.
+
+741
+01:56:30,695 --> 01:56:35,076
+Onun etrafında plastik bir kablo ve onun etrafında da koruyucu bir kılıf var.
+
+742
+01:56:35,076 --> 01:56:45,315
+ve bu üç yapının cinsine, sarım sayısına ve sahibi bağlı olarak kablonun kalitesi ve özellikleri değişir.
+
+743
+01:56:45,436 --> 01:56:47,035
+En temel olarak böyle anlatabiliriz.
+
+744
+01:56:48,415 --> 01:56:50,296
+Ardından geçelim bir sonrakine.
+
+745
+01:56:50,536 --> 01:57:02,076
+Trunk file'e geçtiğimizde bu da koaksiyel kablodan geçerken sinyaller zayıfladığından ötürü onu arttırmak için kullandığımız bir yapı.
+
+746
+01:57:02,076 --> 01:57:14,296
+Keza bir sorunlukla geçelim, Line, Extender, Ampifier da aynısı ancak bu daha büyük maliyelerde yani daha büyük ölçekler için kullandığımız bir Ampifier türü.
+
+747
+01:57:16,176 --> 01:57:25,915
+Bir sonrakine geçtiğimizde spitterları göreceğiz. Bunlar da bir sinyali birden fazla yere yönlendirmek için kullandığımız bir bileşen.
+
+748
+01:57:25,915 --> 01:57:38,275
+Ardından TAPS'te sinyal işte örneğin bir binaya geldiği zaman her bir dayanenin her bir kullanıcının yani ayrı ayrı sinyali alabilmesi için kullandığımız bir eleman
+
+749
+01:57:38,275 --> 01:57:48,635
+Drop Cable'da en son kullanıcı evimizde geldiğinde kullandığımız kablo türü en kısa ifadeyle
+
+750
+01:57:48,635 --> 01:58:05,995
+son olarak da hibrit fiber koaks yapıya bahsedelim. Bu yapı hem fiber optik hem de koaksiyel kablo içerir. Bunun içerisindeki hem internet bağıntısını hem de kablo TV bağıntısını aynı anda sağlayabiliyoruz.
+
+751
+01:58:05,995 --> 01:58:24,855
+Sonuncu kısmına geçeyim ben. Burada da gördüğümüz üzere uzaktan gelirken Fiberi tercih ediyoruz. Hızı vesairesi dediği ile. Ancak binalara girdikten sonra Kalksiyer kablo daha çok tercih edilmekte. Ben burada sözü Hasan'a bırakayım.
+
+752
+01:58:26,076 --> 01:58:35,915
+Merhaba. Ben CATV sistemlerinde kullanılan bazı temel teknolojilerden bahsedeceğim. İlk olarak Cable telefonundan başlarsak bir sonraki slide'da.
+
+753
+01:58:36,340 --> 01:58:40,519
+Bu telefonu görüşmeni iletmek için bir kablo telefonun bağlantısının kullanılması.
+
+754
+01:58:41,179 --> 01:58:46,119
+Kablo telefonu interneti kullanmasa da ve bu nedenle internet telefonundan farklı olsa da
+
+755
+01:58:46,119 --> 01:58:49,619
+kablo internet bağlantısına benzer bir şekilde veri göndermekle almak için
+
+756
+01:58:49,619 --> 01:58:51,279
+gerail kablo anı kullanıyor.
+
+757
+01:58:52,579 --> 01:58:55,979
+Kablo hatları üzerinden gönderilen veri sıkıştırma yeteneği nedeniyle
+
+758
+01:58:55,979 --> 01:59:00,899
+kablo telefon geleneksel sabit hat bağlantılarında olmayan güvenlik sorunlarından müzdarip olsa da
+
+759
+01:59:00,899 --> 01:59:04,340
+geleneksel telefonlardan daha verimli bir band genişliği kullanımı sağlıyor.
+
+760
+01:59:05,180 --> 01:59:07,840
+Ek olarak başlıca yararlarından bahsedersek,
+
+761
+01:59:07,979 --> 01:59:13,200
+geneliksel bir telefon aynı miktarda veriyi iletmek için çok daha az band genişliği gerektiriyor.
+
+762
+01:59:13,720 --> 01:59:20,439
+Dijital kablolu televizyona benzer şekilde kablo ağ üzerinden hareket eden bu veri sıkıştırması
+
+763
+01:59:20,439 --> 01:59:25,139
+ağın eski teknolojiyle mümkün olduğundan daha fazla veriyi bir kerede taşınması mümkün kılıyor.
+
+764
+01:59:26,380 --> 01:59:30,159
+Band genişliğinin bu daha verimli kullanımı daha yüksek ses kalitesi sağlayabiliyor.
+
+765
+01:59:30,159 --> 01:59:37,779
+Kablo telefon, kablo internet balantıları ve kablo televizyon ile aynı ağa kullandığından bazı kablosuz etkileri bu hizmetleri bir arada sunuyor.
+
+766
+01:59:37,880 --> 01:59:42,079
+Bu telefon, internet ve televizyon hizmetlerini ayrı ayrı almaktan daha ucuz olabiliyor.
+
+767
+01:59:42,899 --> 01:59:47,619
+Bir sonraki teknolojiye geçersek analog ve dijital video sunabiliyor.
+
+768
+01:59:48,520 --> 01:59:55,799
+Analog video bir resmin parlık ve renk bilgilerini temsil ediyor ve hızla değişen bir analog sinyal içeriyor.
+
+769
+01:59:55,799 --> 02:00:02,999
+Bir video resminin gönderilmesi frame adı verilen bir dizi bağımsız fotoğrafın oluşturulmasını ve aktarılmasını içeriyor.
+
+770
+02:00:03,060 --> 02:00:06,039
+Her çerçeve yani frame yatay ve dikey çizgilerle ayrılıyor.
+
+771
+02:00:06,679 --> 02:00:10,459
+Ve televizyonda tek bir frame resmi oluşturmak için satır satır çiziliyor.
+
+772
+02:00:10,619 --> 02:00:14,020
+Dijital video ise zaten piksel gruplarıyla temsil edilen resimler oluyor.
+
+773
+02:00:14,920 --> 02:00:16,479
+Diğer teknolojiye geçersek.
+
+774
+02:00:17,999 --> 02:00:22,380
+İnternet Protocol Television, IPTV olarak deniliyor.
+
+775
+02:00:23,079 --> 02:00:36,060
+Televizyon yayınlığı kablolu TV veya uydu sinyallerinin aksine iletin kontrol protokolü ya da internet protokolü yani TCP IP paketini kullanarak televizyon programlaması ve diğer video içeriği sağlayan bir hizmet.
+
+776
+02:00:36,740 --> 02:00:41,679
+Genellikle bir hizmet sağlayıcı tarafından dağıtılıyor bu IP TV hizmeti.
+
+777
+02:00:41,679 --> 02:00:46,099
+IP ağlar aracıyla canlı TV programları veya isteğe bağlı video içeriği sunabiliyor.
+
+778
+02:00:46,099 --> 02:00:52,700
+Bir kuruluşta özel bir ağ üzerinden video içeriği sağlamak için bir IPTV sistemi kullanılabilir.
+
+779
+02:00:53,219 --> 02:00:58,399
+Ancak bu tür uygulamalar karmaşıklık ve ağ gecikmesi ölçekleme sorunları nedeniyle
+
+780
+02:00:58,399 --> 02:01:01,399
+abone tabanlı modellerden çok daha az yaygın oluyor.
+
+781
+02:01:02,619 --> 02:01:05,259
+Bir sonraki teknolojiye geçersek o da HDTV.
+
+782
+02:01:05,759 --> 02:01:11,019
+Zaten büyük ekran tv'lerin çoğalmasıyla beraber geleneksel standart definition tv'ler
+
+783
+02:01:11,019 --> 02:01:13,579
+yani standart definition yetersiz kalmaya başlıyor.
+
+784
+02:01:14,219 --> 02:01:17,879
+HD'li bir televizyon HD TV kanallarında daha iyi gösteremez.
+
+785
+02:01:18,179 --> 02:01:22,399
+Bu sebeple mükemmel görüntü elde etmek için HD sinyal veren kaynaklar gerekiyor.
+
+786
+02:01:22,859 --> 02:01:26,059
+Bu kaynaklardan biri de kablo TV üzerinden gelen sinyaller.
+
+787
+02:01:26,839 --> 02:01:29,579
+Dijital yayınlarla birlikte HD yayınlar da mümkün oluyor.
+
+788
+02:01:29,579 --> 02:01:33,799
+Bu yayınların izlenilmesi için harici ve dahili alıcılar gerekiyor.
+
+789
+02:01:35,559 --> 02:01:37,919
+Bir sonraki saate geçersek.
+
+790
+02:01:38,079 --> 02:01:38,939
+Wireless Cable.
+
+791
+02:01:38,939 --> 02:01:47,559
+Bu kablosuz TV bir akılcazlarla bilgisayarın televizyonu kablo olmadan fotoğraf, video, diğer ortamları göndermek için kullanılan yönel bitirim.
+
+792
+02:01:48,099 --> 02:01:52,859
+Kablosuz iletişim kullanıp uzak konulara kablo TV sinyalleri sağlama yeteneği.
+
+793
+02:01:52,979 --> 02:01:57,499
+Bu sinyaller MMDS ve LMDS olarak ayrılıyor.
+
+794
+02:01:57,639 --> 02:01:59,819
+Bu transmitter yardımıyla gerçekleşiyor.
+
+795
+02:02:00,519 --> 02:02:04,099
+MMDS, Multi Channel Multipoint Distribution Service olarak geçiyor.
+
+796
+02:02:04,099 --> 02:02:06,840
+Diğeri ise LMDS'se
+
+797
+02:02:06,840 --> 02:02:08,939
+Local Multipoint Distribution
+
+798
+02:02:08,939 --> 02:02:11,019
+Servis olarak geçiyor. Birisi çok kanallı
+
+799
+02:02:11,019 --> 02:02:12,779
+çok nokta oldu altın hizmeti. Diğeri yere
+
+800
+02:02:12,779 --> 02:02:14,179
+çok nokta oldu altın hizmeti.
+
+801
+02:02:15,679 --> 02:02:17,200
+Diğer teknolojiye geçersek
+
+802
+02:02:17,200 --> 02:02:18,979
+o da interaktif televizyon.
+
+803
+02:02:20,579 --> 02:02:21,340
+İzleyicilerin
+
+804
+02:02:21,340 --> 02:02:22,999
+medya programlarıyla ilgili bilgileri
+
+805
+02:02:22,999 --> 02:02:25,099
+seçmesine, değiştirmesine veya girmesine
+
+806
+02:02:25,099 --> 02:02:25,579
+izin veriyor.
+
+807
+02:02:26,131 --> 02:02:30,051
+İzleyici izleme deneyimini değiştirebilmeli bu teknolojide.
+
+808
+02:02:30,131 --> 02:02:34,611
+Örneğin bir futbol maçını hangi açıdan izleyeceğini seçebilmeli veya yayıncıya bilgi verebilmeli.
+
+809
+02:02:34,611 --> 02:02:45,392
+Bu dönüş yolu, dönüş kanalı veya geri kanal, telefon, mobil SMS, radyo, dizici, telefonu hatları veya kablo TV yoluyla alınabiliyor.
+
+810
+02:02:46,111 --> 02:02:55,892
+Kablo TV izleyicileri programlarını bir kablo üzerinde alıyorlar ve entegre kablo dönüş yolu özellikli platformlarla dönüş yolu return pad olarak aynı kabloyu kullanıyor.
+
+811
+02:02:56,131 --> 02:03:00,512
+Benim mantıcılıklarım bu kadar gerisine arkadaşım olacak.
+
+812
+02:03:01,231 --> 02:03:05,731
+Herkese merhaba ben de Kavlo TV servislerinden bahsedeceğim öncelikle.
+
+813
+02:03:06,571 --> 02:03:09,551
+Çeşitli amaçlarla kullanılan Kavlo TV servisleri var.
+
+814
+02:03:10,212 --> 02:03:16,751
+Bunlardan bazıları televizyon programcılığı, izleme başına ödeme, reklam, veri servisleri, telefon izletleri,
+
+815
+02:03:17,271 --> 02:03:19,571
+T-commerce dediğimiz bir servis daha var.
+
+816
+02:03:20,032 --> 02:03:21,591
+Bunları teker teker anlatacağım.
+
+817
+02:03:22,251 --> 02:03:22,892
+Geçebiliriz.
+
+818
+02:03:23,671 --> 02:03:31,271
+Televizyon programcılığında genel olarak bir medya içerinin planlanması ve bunun kaynaktan izleyicilere aktarılması şeklinde oluyor.
+
+819
+02:03:31,271 --> 02:03:35,591
+Aynı zamanda bu programcılığın içinde çeşitli hizmetler de oluyor.
+
+820
+02:03:36,231 --> 02:03:40,971
+Bu tabloda görüldüğü gibi mesela çeşitli planlar şeklinde ödeme yapılarak hizmet alınabiliyor.
+
+821
+02:03:42,091 --> 02:03:42,771
+Geçebiliriz.
+
+822
+02:03:44,471 --> 02:03:52,631
+İzleme başına ödeme servisinde bir müşteri görüntülemek istedikleri bireysel video seçimleri için ödeme yapıyorlar.
+
+823
+02:03:52,891 --> 02:04:02,031
+kanallara. Bunlar da izleyicilere ulaşıyor. Bu şekilde izleme başına para ödedikleri için bu şekilde ilerliyorlar.
+
+824
+02:04:03,651 --> 02:04:04,331
+Geçebiliriz.
+
+825
+02:04:06,091 --> 02:04:12,091
+Reklam tabii bir veya daha fazla potansiyel müşteriye bir medya içeriğinin sunulması genel olarak.
+
+826
+02:04:12,651 --> 02:04:19,391
+Bunun bir sürü çeşidi var. A reklamcılığı, doğrusu ağ reklam, isteğe bağlı reklamcılık, geliştirilmiş reklamcılık,
+
+827
+02:04:19,571 --> 02:04:22,611
+etkileşim reklamcılık gibi çeşitli reklam türleri var.
+
+828
+02:04:22,891 --> 02:04:32,471
+Bunlardan en aslında bakacak olursak en gelişmiş dediğimiz kısmı izleyiciye göre oluşturulan reklamlar.
+
+829
+02:04:32,611 --> 02:04:40,411
+Bunlar izleyiciye daha fazla etkileşimli bir şekilde reklam aktarılabiliyor.
+
+830
+02:04:40,551 --> 02:04:42,971
+Bu sayede bu reklam daha başarılı olabiliyor.
+
+831
+02:04:45,671 --> 02:04:50,951
+Veri servisleri genel olarak müşterilere veri aktarma olanları sağlıyor.
+
+832
+02:04:50,951 --> 02:04:59,911
+Bunların başında hepimizin bildiği internet erişimi, çeşitli internet servis sağlayıcılarından internet erişimini alabiliyoruz.
+
+833
+02:04:59,971 --> 02:05:04,891
+Çeşitli paketlerle, çeşitli kullanım gibi şeylerle alabiliyoruz.
+
+834
+02:05:05,251 --> 02:05:09,631
+Aynı zamanda bunlar veri hattı kiralama gibi çeşitli hizmetleri sağlayabiliyorlar.
+
+835
+02:05:09,631 --> 02:05:21,372
+Burada paketlerde gördüğümüz gibi mesela çeşitli şekilde hızına göre, ücretine, kotasına göre gibi şeylere göre değişebiliyor.
+
+836
+02:05:23,452 --> 02:05:32,171
+Telefon servisleri kullanıcıların kablo bağlantıları aracılığıyla telefon aramaları almalarını sağlıyor.
+
+837
+02:05:32,171 --> 02:05:46,371
+Bu şekilde insanlar iletişim kurabiliyor ama bu hizmet için, bu servis için standart telefon sinyallerini kablolu televizyon sistemine aktarılayan bir kablolu telefon adaptör kutusunun olması gerekiyor.
+
+838
+02:05:46,771 --> 02:05:50,171
+Olmazsa bu servis sağlanamıyor maalesef.
+
+839
+02:05:51,911 --> 02:06:02,031
+T-Commerce servisinde öncelikli olarak satılacak ürünleri sunmak, sipariş almak ve ödeme işlemlerini tamamlayabilmek için televizyon anı kullanıyor.
+
+840
+02:06:02,171 --> 02:06:07,051
+Tabi bu günümüzde çok da yaygın değil aslında ama yine de hala kullanılıyor.
+
+841
+02:06:07,711 --> 02:06:13,291
+Burada gördüğünüz gibi öncelikle ürünün tanıtımını yapılıyor.
+
+842
+02:06:13,471 --> 02:06:22,231
+Sonra eğer almak isteyen olursa sipariş alıp ve ödeme işlemleri bu şekilde televizyon üzerinden yine tamamlanabiliyor.
+
+843
+02:06:25,747 --> 02:06:28,807
+Evet, benim anlayacaklarım da bu kadardı. Teşekkür ediyorum.
+
+844
+02:06:30,307 --> 02:06:32,387
+Sorumuz varsa da soru alabiliriz.
+
+845
+02:06:35,227 --> 02:06:38,227
+Evet, teşekkür ediyoruz kıymetli arkadaşlar.
+
+846
+02:06:38,807 --> 02:06:52,088
+Sonuç için ağzınıza sağlık. Ben tekrardan paylaşım yapayım. Bir diğer konumuzu seçiyor olalım. Bu da gitti. Son kurağımız olacak bu.
+
+847
+02:06:52,088 --> 02:06:53,608
+Evet, YMAX
+
+848
+02:06:53,608 --> 02:06:55,327
+YMAX'de kimler var?
+
+849
+02:06:55,788 --> 02:07:00,347
+Hocam, biz X25'teyiz de, acaba bizim anlatmanız mümkün mü?
+
+850
+02:07:03,468 --> 02:07:04,307
+Mümkün
+
+851
+02:07:04,307 --> 02:07:06,928
+Mümkün, gönüllü olarak siz mi anlatıyorsun?
+
+852
+02:07:06,928 --> 02:07:08,788
+Evet, biz anlatalım
+
+853
+02:07:08,788 --> 02:07:15,727
+Tamam, YMAX'den ekstra farklı bir yorum gelmezse size anlatıralım
+
+854
+02:07:15,727 --> 02:07:21,727
+O zaman X25 olarak siz hangi grupsunuz bana söyleyin
+
+855
+02:07:21,727 --> 02:07:44,227
+diğer iki grupları da isimlerini yazsın bakalım. Bu numaralarını pardon yazsınlar ki görelim. Kimler var? X25'te. 24, 2, 16. Tamam güzel. 2. Buyurun arkadaşlar söz sizde.
+
+856
+02:07:44,227 --> 02:07:57,227
+Çok pardon, öncesinde 24 olarak yazdık, yok olan arkadaşlı grup da 24'te onu isterseniz, not almak isterseniz diye hani quizi var, çakışıyor, bilginiz olsun. Bora ismi.
+
+857
+02:07:58,827 --> 02:08:01,247
+Ben hala, ben dediğinizi anlamadım, pardon.
+
+858
+02:08:01,247 --> 02:08:14,648
+Kusura bakmayın. Başta söylemiştim. Bir arkadaşın bilişim sistemleri güvenliğiyle çakışıyor. Bizim grup gelirse eğer anlatamayacağız falan. Yani anlatamayacağız değil de arkadaş yok diye söylemiştim. O grup 24. grup. Not almak istersiniz belki diye.
+
+859
+02:08:15,048 --> 02:08:16,428
+Tamam. Şu an geldi mi o arkadaş?
+
+860
+02:08:16,887 --> 02:08:21,008
+Gelmedi. Ama biz yazdıkça 3 kişi olarak. 4. arkadaş da sizinle iletişime geçecek.
+
+861
+02:08:21,567 --> 02:08:22,288
+Tamam. Tamam.
+
+862
+02:08:22,307 --> 02:08:23,067
+Tamam. Sağ olun hocam.
+
+863
+02:08:23,727 --> 02:08:24,408
+Kolay gelsin.
+
+864
+02:08:30,547 --> 02:08:32,607
+Evet, Osman'ın arkadaşımıza bahşiş yapıyoruz.
+
+865
+02:08:38,195 --> 02:08:40,515
+sunumu sen mi açarsın ben mi açayım?
+
+866
+02:08:41,916 --> 02:08:43,176
+ben açtım istersen bana
+
+867
+02:08:43,176 --> 02:08:44,616
+tamamdır
+
+868
+02:08:44,616 --> 02:08:49,175
+hocam bu arada ben size de e-post'a atmıştım da bir covid durumu var
+
+869
+02:08:49,175 --> 02:08:51,195
+sesim biraz kötü oluyor yüzden kusura bakmayın
+
+870
+02:08:51,195 --> 02:08:53,135
+çok geçmiş olsun
+
+871
+02:08:53,135 --> 02:08:57,235
+iyileşip eski sağlığından daha iyi bir sağlığa kavuşursun inşallah
+
+872
+02:08:57,235 --> 02:08:59,595
+kendini çok yorma
+
+873
+02:08:59,595 --> 02:09:02,195
+diğer arkadaşlara da pastayabilirsin durumu
+
+874
+02:09:02,195 --> 02:09:04,075
+yok hocam yine şey yapayım
+
+875
+02:09:04,075 --> 02:09:06,155
+ben görevimi yerine getireyim
+
+876
+02:09:11,859 --> 02:09:13,100
+sunum açabilirsin Önder.
+
+877
+02:09:19,731 --> 02:09:20,472
+Görüyor musun?
+
+878
+02:09:22,051 --> 02:09:22,631
+Yok.
+
+879
+02:09:23,212 --> 02:09:24,571
+En az önce gelmedi.
+
+880
+02:09:25,172 --> 02:09:26,491
+Yanlış ekranı mı görüyorsun?
+
+881
+02:09:27,031 --> 02:09:28,371
+Gösteriyorum acaba. Tamam.
+
+882
+02:09:29,572 --> 02:09:31,231
+Hocam, bir saniye.
+
+883
+02:09:33,751 --> 02:09:35,371
+Şimdi görüyor olmanız lazım.
+
+884
+02:09:35,912 --> 02:09:36,431
+Evet, geliyor.
+
+885
+02:09:36,811 --> 02:09:38,291
+Evet, geldi şimdi. Buyurun lütfen.
+
+886
+02:09:38,891 --> 02:09:42,931
+Ben Batuhan Hangun. Bugün size X25 adlı protokolden bahsedeceğiz.
+
+887
+02:09:43,191 --> 02:09:48,652
+Öncelikle bu protokolün tarihsel gelişimi ve temellerinden bahsedip,
+
+888
+02:09:48,652 --> 02:09:52,472
+Ardından da bu protokole ait bazı teknik ayrıntılara gireceğiz.
+
+889
+02:09:52,812 --> 02:10:02,871
+Bu ayrıntılarda bu mimarinin ayrıntıları, kullandığı katmanlar ve derste gördüğümüz katmanlarla benzer kısımlarını göreceğiz.
+
+890
+02:10:04,752 --> 02:10:13,752
+X25 adlı protokol, International Telecommunication Union veya ITUET adı verilen kurum tarafından ortak olmuş bir protokoller dizisidir.
+
+891
+02:10:13,752 --> 02:10:22,391
+İlk olarak 1970'lerde geliştirilmeye başlanmış ve ilk standardı 1976 yılında yenilenmiştir
+
+892
+02:10:22,391 --> 02:10:28,231
+X25'in önemli bir özelliği paket anahtarlamalı protokollerin ilklerinden olmasıdır
+
+893
+02:10:28,231 --> 02:10:36,971
+Genel olarak kendisinde kullanım alan olarak bulduğu yer geniş alan ağları veya wide area network dediğimiz alan ağları olmuştur
+
+894
+02:10:36,971 --> 02:10:44,971
+Bir önemli özelliği ise WAN protokolleri için bir standarda bağlanan ilk protokollerden bir tanesidir.
+
+895
+02:10:45,971 --> 02:10:56,471
+Hata kontrolü yapmaya imkan tanıması nedeniyle de veri güvenliği ve verinin başarılı bir şekilde iletilmesi konusunda önemli bir yere sahip.
+
+896
+02:10:56,471 --> 02:11:11,031
+Tabii 1970'lerde geliştirilmeye başlansa da aslında ITVT yaklaşık 4 yıllık periyotlarla bir araya gelip bu farklı periyotlarda daha güncel sürümlerini piyasaya sürmüştür.
+
+897
+02:11:11,031 --> 02:11:24,651
+Buradaki amaç elde edilen yeni protokoller sayesinde hali hazırda piyasada kullanılan daha güncel ağlarla uyumunun sağlanması ve güncel sistemlerde daha başarılı bir şekilde çalıştırılmasıdır.
+
+898
+02:11:26,471 --> 02:11:41,452
+Derste bahsettiğimiz OSI referans modelinden bir önemli farkıysa OSI referans modelinden yaklaşık 8 yıl daha önce piyasaya sunulmuş olması aslında kendisinin ne kadar eski bir protokol olduğunu göstermekte.
+
+899
+02:11:42,011 --> 02:11:51,751
+Daha çok kullanılan olarak kendisine havacılık, ödeme sektörü, askeri sektör ve telekomünikasyonunda yer bulmuştur.
+
+900
+02:11:51,751 --> 02:12:05,591
+Her ne kadar şu an günümüzde havacılık alanında kullanılsa da kullanımına 2015'te son verilmiştir ve Fransa bu protokolü son kullanan devletlerden bir tanesidir.
+
+901
+02:12:05,591 --> 02:12:17,911
+2012 yılında kullanıma son verdiği anda bildirdiği rapora göre hali hazırda yaklaşık 800 bin terminalin o anlarda X-25'te çalıştığı bildirilmiştir.
+
+902
+02:12:17,911 --> 02:12:37,451
+Her ne kadar eski zamanlarda ATM gibi cihazlarda veya kredi kartı ödemeceliğinde sıklıkla kullanılırsa da şu an havacılık sektörünün bazı ölçüde kısımları da kullanılmaktadır. Bunun dışında kullanımı pek devam etmemektedir. Buradan sonra sözü öndere bırakıyorum.
+
+903
+02:12:37,452 --> 02:12:47,871
+Merhabalar, ben size biraz daha X25 protokolünün ağ yapısından bahsedeceğim, ağda bulunan cihazlardan bahsedeceğim.
+
+904
+02:12:49,071 --> 02:12:53,491
+Şekilde gördüğünüz gibi bir ağ yapısı mevcut X25 protokolünde.
+
+905
+02:12:55,431 --> 02:13:05,672
+Burada bulunan cihazlardan biraz bahsetmek gerekirse, data terminal equipment dediğimiz cihazlar, uç noktada bulunan cihazlardır.
+
+906
+02:13:05,672 --> 02:13:11,571
+A'da bulunan terminal, PC, printer ve router gibi cihazlardan oluşurlar.
+
+907
+02:13:14,228 --> 02:13:23,087
+Data Circuit Terminating Equipment dediğimiz cihazlar ise DTE ile PSE arasında bulunan arayüz haberleşme cihazlarındır.
+
+908
+02:13:23,688 --> 02:13:29,967
+Yani servis sağlayıcılardan hizmet almak için kullanılan modemler ve paket anahtarlama cihazlarından oluşurlar.
+
+909
+02:13:33,367 --> 02:13:42,307
+Paket Switching Exchange dediğimiz cihazlar ise PSE'ler X25A'nın iskeletini oluşturan cihazlardır diyebiliriz.
+
+910
+02:13:42,307 --> 02:13:52,967
+Bunlar paket switch network kullanılarak verilerin bir DT cihazından başka bir DT cihazlarına X25 ağ üzerinden aktarılmasından sorumludurlar.
+
+911
+02:13:54,667 --> 02:13:58,867
+Ağın backbone'u diyebiliriz. Bu şekilde ifade edebiliriz.
+
+912
+02:14:00,027 --> 02:14:07,268
+Paket assembler ve disassembler dediğimiz PET cihazlar ise çok kullanılan cihazlar olmamakla birlikte
+
+913
+02:14:07,267 --> 02:14:20,287
+DTE cihazların paket modunda çalışmadığında kullanılması gereken cihazlardır. Bu cihazlar kendisine gelen veriyi tamponlamaktan sorumlulardır.
+
+914
+02:14:21,287 --> 02:14:29,047
+Kendisine gelen veriyi parçalamaktan ve DTE cihazını anlayabileceği dile hale getirmekten sorumlulardır.
+
+915
+02:14:29,047 --> 02:14:38,728
+ve DTE cihazının respons olarak ürettiği cevapları birleştirerek DTE'lerini anlayabileceği dile çevirmekten sorumlu olan cihazlardır.
+
+916
+02:14:39,867 --> 02:14:43,847
+Bu noktadan sonra Batuhan arkadaşımız anlatacak, Samet arkadaşımız anlatacak.
+
+917
+02:14:44,647 --> 02:14:49,487
+Teşekkür ederim Önder. Ben de X25 protokolünün daha çok katmanını anlatacağım.
+
+918
+02:14:50,247 --> 02:14:55,467
+X25 protokolü tabii önceden daha önce geliştirilmiş bir model ve katmanları vardır.
+
+919
+02:14:55,467 --> 02:15:06,327
+OSI referans modeline baktığımız zaman aslında bu ilk üç katmanına denk gelmektir. Bunun ilki olarak fiziksel katman, ikincisi olarak data link katmanı, üçüncü olarak da paket katmanıdır.
+
+920
+02:15:06,327 --> 02:15:13,728
+Ayrı ayrı hep bu katmanlarda tabii bir standart ve protokoller uygulanmaktadır. Sonrasında detaylı olanlar çıkmama kısaca isimlerini verecek olursak,
+
+921
+02:15:13,728 --> 02:15:24,888
+Fiziksel katmanında X21, Data Link'de ise Link Access Procedure, paket katmanında ise paket katmanı protokolü kullanılmaktadır.
+
+922
+02:15:25,688 --> 02:15:34,767
+Fiziksel katmandan başlayacak olursak aslında son kullanıcı kısmı olan PC, router veya printer gibi kısımları DT dediğimiz kısımlarla
+
+923
+02:15:34,767 --> 02:15:44,487
+DC bu servis hizmetini daha doğrusu servis hizmetinde aldığımız, yaralanabilmiş için kullandığımız cihazı olan DC arasındaki fiziksel bağ kurmaya yarar.
+
+924
+02:15:44,487 --> 02:15:49,827
+Bu fiziksel bağ kurmayı da aslında biz X21 standartıyla sağlıyoruz.
+
+925
+02:15:50,687 --> 02:15:59,887
+İşte bu standart da bu ikisi arasındaki elektriksel sinyalin akışını sağlayan bir standartlı protokoldür aslında.
+
+926
+02:15:59,888 --> 02:16:29,708
+Kısaca X-21'i şöyle de diyebiliriz. Aslında mesela burada 15 bin connector denmiş. Aslında bu bir kablo olarak düşünüyor. Aslında bu bir kablo. Uyucu işte bunun 15 tane bir delikten oluşuyor. Aslında farklı RS-232'den üretilmiştir bu. Yani buna bir referans alınmıştır. Bu şeylere göre veri iletimi daha fazla olabiliyor. Artabiliyor, eksilebiliyor. X-21'de bu 2 megapikete kadar çıkabiliyor.
+
+927
+02:16:29,887 --> 02:16:41,267
+Data Link Layer'ı da anlatacak olursak buradaki aslında temel şeyde kullandığımız protokol Link Access Procedürü'dür.
+
+928
+02:16:41,267 --> 02:16:51,687
+Aslında bu high level Data Link protokolünden türetilmiş bir protokoldür. Bit oriented tabanlı bir protokoldür.
+
+929
+02:16:51,687 --> 02:17:07,887
+Aslında bu protokol bize ne sağlar? Verenin, daha doğrusu fremlerin, çünkü paket anahtarlı bir protokol olduğu için bu fremlerin çerçevelerin sıralı şekilde doğru, hatasız bir şekilde iletilmesini sağlıyor bu protokol.
+
+930
+02:17:08,384 --> 02:17:19,724
+sağlıyor bu protokol. Bit oryantitleminin sebebi ise bu iletilen verilerin, çerçevelerin bir sonuçta göreceğiz. Belli bir yapısı var. Bunların bitlerden oluşmasından dolayı da bit oryantit denmiştir.
+
+931
+02:17:21,063 --> 02:17:34,363
+Bu çerçevede görüntü veri iletişimde bu çerçeveyi gördüğümüz zaman aslında flaglerden, adres, kontrol, data ve frame check 800 yani kontrol dizisinden oluşmaktadır.
+
+932
+02:17:34,363 --> 02:17:53,043
+bir çerçeve yollandığı zaman başına ve sonuna flagler ekleniyor. Adres dediğimizde aslında alıcının, yollayacağımız için alıcının adresini içermektedir. Kontrolde ise veriyi ilettiğimiz zaman bu akıştaki bu flow kontrol veya hata kontrol dediğimiz şeylerin bilgisini tutmaktadır.
+
+933
+02:17:53,043 --> 02:18:11,623
+Datada dediğimiz zaten iletilen verenin bilgisini tutmakta. Check, check, and dediğimizde iletimde bir hata oluşup oluşmadığına dair bir bilgi edinebilmek adına buradaki bu veriyi tutan yapıdır. Bundan sonra Enes'i arkadaşımıza bırakıyorum. Teşekkür ederim.
+
+934
+02:18:11,623 --> 02:18:26,023
+Ben de X25 protokolünün 3. katmanı olan paket layer'ı anlatacağım. Paket layer protokol kullanarak mantıksal bağlantılarla aboneler yani son kullanıcılar arasında dataların üretimi sağlanır.
+
+935
+02:18:26,703 --> 02:18:37,403
+Bağlantı kurmaktan, bağlantı sonlandırmaktan sorumludur genel olarak. Yani bir DT ve DEC arasında sanal devreler oluşturmaktan yani virtual source oluşturmaktan sorumlu katmandır.
+
+936
+02:18:37,403 --> 02:18:52,423
+Şimdi paketleri protokol kendi içerisinde 5 tane mod bulunduruyor. Bunlara sırayla bakacak olursak call setup, switch virtual circuit'ın kurulması için kullanılıyor. Data transfer, SVC ve PVC'lerde verinin aktarılması için kullanılır.
+
+937
+02:18:52,424 --> 02:18:59,884
+IDLE dediğimiz SVC bağlantısı kuruluktan sonra herhangi bir data gönderilmeden önceki durumda kullanılır. Yani bekleme durumunda, boş durumda.
+
+938
+02:19:00,703 --> 02:19:08,644
+Call clearing, SVC kullanılırken DT'ler arasında bağlantının solandırılması için, yani iletişimin solandırılması için kullanılıyor.
+
+939
+02:19:09,544 --> 02:19:13,023
+Restarting DT ve DC arasındaki senkronizasyonu sağlanıyor.
+
+940
+02:19:14,843 --> 02:19:21,684
+Virtual circuit tarafına bakacak olursak kendi içerisinde ikiye ayrılıyor. Permanent virtual circuit ve switch virtual circuit.
+
+941
+02:19:21,684 --> 02:19:25,223
+Permanent zaten isim olarak da daimi sürekli anlamına geliyor.
+
+942
+02:19:25,704 --> 02:19:32,124
+PVC'ler sıkı tutarlı veri aktarımları için kullanılan kalıcı olarak kurulmuş bağlantılarda kalıcı bu önemli detay burası.
+
+943
+02:19:32,124 --> 02:19:37,204
+Bu bağlantı türü Packet Switch Network Administration tarafından kalıcı olarak tahsis edilir.
+
+944
+02:19:37,604 --> 02:19:42,964
+Herhangi bir çağrı ayarına gerek kalmadan verinin her zaman gönderebilmesini sağlayan bir bağlantı türüdür.
+
+945
+02:19:43,083 --> 02:19:45,324
+Burada derse de bahsetmiştik.
+
+946
+02:19:45,324 --> 02:19:51,924
+Buradaki sorumluluk servis sağlayıcı tarafında yani her kullanıcının herhangi bir bağlantı kurması olandırma o sorunlarla ilgilenmiyor.
+
+947
+02:19:52,564 --> 02:19:59,124
+Switch Virtual Circuit tarafına geçtiğimizde SVC'ler düzensiz veri aktarımları için kullanılan geçici sanal bağlantılardır.
+
+948
+02:19:59,824 --> 02:20:03,104
+A'da bulunan her bir DT cihazına eşsiz bir adres numarası verilir.
+
+949
+02:20:03,663 --> 02:20:07,184
+Telefonla aramaya çok benzer bir yapıdadır ve 3 aşamada bunu ele alabiliriz.
+
+950
+02:20:07,184 --> 02:20:13,384
+DT cihazına bağlantı için oturum oluşturmak, veri transfer etmek ve DT cihazını bağlantısını sorulandırmak.
+
+951
+02:20:13,384 --> 02:20:20,003
+Burada da eğer bağlantıda herhangi bir sorunla karşılaşırsak sonlandırıp virtual circle'ın tekrar kurulması gerekiyor.
+
+952
+02:20:21,783 --> 02:20:26,464
+Eral control iki tane katmanda sağlanıyor. Birincisi packet layer, ikincisi data link layer.
+
+953
+02:20:26,464 --> 02:20:32,324
+Bilgi akışını yeniden sekronize etmekten sorumlu olan packet layer. Kurtalamayacak düzeyde sorumlu çağrıları temizler.
+
+954
+02:20:32,523 --> 02:20:41,143
+Bunu da ayrıca packet layer da sağlıyoruz. Data link layer da hata durumunda datanın tekrar gönderilmesinden yani bilgini güvenliğinden sorumlu.
+
+955
+02:20:41,143 --> 02:20:48,983
+X-25 protokolü geliştirilirken çok yüksek hata oranları oluşacağı varsayarak error handling ve error recovery'e odaklanılmıştır.
+
+956
+02:20:48,983 --> 02:20:52,623
+Bu nedenle benzerlerine göre daha yavaş bir çalışma altyapısı sunar.
+
+957
+02:20:54,708 --> 02:21:11,747
+Özetlemek gerekirse çok eski bir protokoldür. Günümüzde geçmişten kalan kullanım alanları, havacılık ve askereyi örnek verebiliriz güvenlik açısından. Yaygın olarak kullanılmamakta şu an bunların dışında. Hata kontrol mekanizmaları nedeniyle yavaştır. Diğer paket switch protokolü için referans oluşturulmuştur diyebiliriz.
+
+958
+02:21:13,927 --> 02:21:18,347
+Referanslarımız ve bizi dinlediğiniz için teşekkür ederiz. Sorunuz varsa alabiliriz.
+
+959
+02:21:22,484 --> 02:21:47,343
+Evet arkadaşlar, çok teşekkür ediyoruz. Ağzınıza sağlık. Şimdi son konumuz Vimex. Vimex'teki yine gruplara bir bakalım. Beraber dilerseniz şuradan. Vimex 6, 14, 22, 30. Bunlardan olanlar yazsınlar.
+
+960
+02:21:47,343 --> 02:21:53,623
+6, 14, 22, 30
+
+961
+02:21:53,623 --> 02:21:57,723
+30 yok herhalde
+
+962
+02:21:57,723 --> 02:21:59,263
+buradan onu anlıyorum
+
+963
+02:21:59,263 --> 02:22:01,344
+6 var, 14 var, 22 var
+
+964
+02:22:01,344 --> 02:22:03,703
+hemen 30'u not alayım
+
+965
+02:22:03,703 --> 02:22:14,164
+burada o zaman bu çetede yazan arkadaşlar arasından bir kura çekiyor olacağız
+
+966
+02:22:14,164 --> 02:22:15,863
+6, 14, 22
+
+967
+02:22:15,863 --> 02:22:17,863
+Ben birisi
+
+968
+02:22:17,863 --> 02:22:21,243
+2
+
+969
+02:22:21,243 --> 02:22:29,643
+Evet 6 numaralı grup çıktı. Sözü size bırakıyorum sayın arkadaşlar.
+
+970
+02:22:34,548 --> 02:22:41,787
+Hocam, bizim bir arkadaşımız rahatsızlandı da size rapor olacak, şey yapacak, gönderecek.
+
+971
+02:22:45,268 --> 02:22:56,087
+Tamam, rapor olduktan sonra tabii ki çok geçmiş olsun diyoruz. O arkadaşın ismini de bana siz söylerseniz ben onu da not alayım, rapor bekleyeyim ondan.
+
+972
+02:22:59,207 --> 02:23:00,207
+Sesim geliyor mu şu an?
+
+973
+02:23:00,707 --> 02:23:01,268
+Evet, geliyor.
+
+974
+02:23:02,087 --> 02:23:04,807
+Bir saniye, görüntümü de vermeye çalışıyorum ben.
+
+975
+02:23:07,608 --> 02:23:09,307
+Nedir o arkadaşın adı?
+
+976
+02:23:10,387 --> 02:23:11,688
+Alper Tömenkolik.
+
+977
+02:23:13,007 --> 02:23:13,587
+Alper?
+
+978
+02:23:15,268 --> 02:23:33,708
+Roman, Kolik. Tamam. Siz başlayabilirsiniz. Tamam. O arkadaşın anlatacağı kısmı ilk kısımda. Biz de bildiğimiz kadarıyla o kısmı anlatacağız. Ben anlatacağım daha doğrusu. Tamam. Tamam.
+
+979
+02:23:43,860 --> 02:23:46,799
+şu an başladı mı? Herhangi bir sıkıntı var mı?
+
+980
+02:23:47,039 --> 02:23:52,660
+hengereyi paylaştın sanırım yine. Ekranı paylaşırsan şu anda sadece slide açmadan önceki halini görüyoruz.
+
+981
+02:23:52,879 --> 02:23:55,759
+pardon, hemen ayarlamaya çalışıyorum.
+
+982
+02:24:01,012 --> 02:24:02,132
+Şu an görüyoruz sanki.
+
+983
+02:24:03,271 --> 02:24:05,091
+Şey ikinciye geçme.
+
+984
+02:24:05,091 --> 02:24:05,311
+Aynen.
+
+985
+02:24:07,391 --> 02:24:10,651
+Diğer şekliyle yapamadım ama şu an böyle kalma sıkıntı olur mu hocam?
+
+986
+02:24:11,312 --> 02:24:12,972
+Tam böyle kalsın. Sıkıntı yok.
+
+987
+02:24:13,371 --> 02:24:14,751
+Tamam, sıkıntı yok. Buyurun.
+
+988
+02:24:15,871 --> 02:24:19,012
+Vimex, öncelikle Vimex'ten bahsedeceğim. Vimex nedir?
+
+989
+02:24:19,012 --> 02:24:29,531
+Vimex, sabit ve mobil erişim noktaları destekleyen, Metropolyon Arian Network için kullanılan bir geniş bant kablosuz erişim teknolojisidir.
+
+990
+02:24:29,531 --> 02:24:41,192
+görüş hattı veya görüş hattı olmadan noktadan noktaya, noktadan çok noktaya ve çok noktadan çok noktaya bağlantılar desteklemektedir.
+
+991
+02:24:42,872 --> 02:24:49,491
+Uygun şartlarda şu an ben de şey ekranla şey yapmasana bir dakika.
+
+992
+02:24:53,876 --> 02:25:03,296
+içerisinde maksimum 75 megabit saniye hızında veri, ses, görüntü, hizmet kalitesi ve güvenlik gereklerini sağlayarak taşıyıp dağıtabilmektedir.
+
+993
+02:25:03,695 --> 02:25:09,995
+Yani şöyle, WiMAX daha geniş bir alanda Wi-Fi gibi düşünebiliriz.
+
+994
+02:25:10,075 --> 02:25:17,415
+Tabii daha farklı ama daha geniş alanlara erişim sağlayan 50 km gibi metropolitan area network olarak geçer.
+
+995
+02:25:17,415 --> 02:25:28,535
+ve bu hani şu an maksimum 75 megabit saniyede hız veriliyor ama bu uzaklaştıkça işte büyüdükçe alan bu 1 megabitlere kadar düşebilir.
+
+996
+02:25:29,755 --> 02:25:31,775
+İkinci şeye geçebilir misin?
+
+997
+02:25:33,416 --> 02:25:43,416
+Burada da bu Vimex'in aslında bir şeyi Forum Network Working Group tarafından hazırlanan
+
+998
+02:25:43,415 --> 02:25:50,415
+hazırlanan ekipman ve araçları arasındaki birlikte çalışılabilir arttırmak amacıyla oluşturulmuş bir model bu.
+
+999
+02:25:50,415 --> 02:25:58,915
+Bu modelde MS ile gösterilen kısım mobil station yani end user'ların network'e bağlanmasını sağlayan kısım.
+
+1000
+02:25:59,475 --> 02:26:12,815
+Burada ASN ile gösterilen kısım temel görevi radyo erişim anı oluşturan bir veya birden daha fazla base station ve aynı zamanda ASV geçitlerini kendi içinde barındırabiliyor.
+
+1001
+02:26:12,815 --> 02:26:31,615
+Access Network servis birleşenlerini. Onun yanındaki Connectivity Service Network ise IP bağlantılarını ve tüm temel IPA işlevlerini gerçekleştirmekle sorumlu şekilde özetleyebiliriz.
+
+1002
+02:26:31,675 --> 02:26:37,335
+Bu kısım Alper'in kısmıydı. Ben bildiğim kadarıyla anlattım. Şimdi sıradaki arkadaşımız devam edecek.
+
+1003
+02:26:37,335 --> 02:26:42,615
+Merhaba hocam ben devam edeceğim şimdi.
+
+1004
+02:26:42,615 --> 02:26:45,615
+Bir saniye.
+
+1005
+02:26:47,115 --> 02:26:53,935
+Şimdi 802 protokolünün birer kolu olan 802.16'yı kullanan Wimax'in türlerini inceleyeceğiz.
+
+1006
+02:26:58,100 --> 02:27:11,419
+802.16 standartı ilk olarak 2001'de Vima teknolojisini kullanılarak yani şehir, alan ağı olarak geniş bant ve kablosuz bir şekilde veri sağlamak amacıyla ortaya çıkıyor.
+
+1007
+02:27:11,419 --> 02:27:18,399
+802.16 standartı ilk versiyonda 10 ile 66 GHz arasında frekans sağlarken
+
+1008
+02:27:18,399 --> 02:27:26,399
+2000 yılının başında geliştirilen versiyonunda 2 ile 11 GHz frekans aralığına kapsayacak şekilde değiştirilerek
+
+1009
+02:27:26,399 --> 02:27:30,559
+802.16a versiyonu olarak adlandırılıyor.
+
+1010
+02:27:30,559 --> 02:27:40,919
+Bu versiyonun bir öncekinden temel çıkışının aslında farkı görüş hattı destekleme gerektirmemesi
+
+1011
+02:27:40,919 --> 02:27:59,640
+daha doğrusu görüş hattı gerektirmemesi özelliği oluyor. Çünkü bu özellik daha doğrusu görüş hattı gerekmemesi demek araya ne girerse girsin bina olabilir, ağaç olabilir hiçbir sıkıntı yok demek değil elbette. Teoride de böyle olmuyor. Ama sonuçta eski versiyona göre büyük bir fark olmuş oluyor.
+
+1012
+02:27:59,639 --> 02:28:26,960
+Daha sonra yaklaşık bundan bir yıl sonra dev versiyonu ile birlikte bakır kablonun olmadığı veya bakır kablo döşemenin ekonomik olmadığı yerlerde köy olabilir ya da büyük iş olayları olabilir diye geniş bant hizmeti sağlamak veya mevcut DSL teknolojisine rakip olarak bir geniş bant standardı olarak gelişiyor.
+
+1013
+02:28:26,960 --> 02:28:39,540
+Bu versiyonda yine D versiyonunda eksik olan taşınabilirlik 802.16E versiyonuyla birlikte 2005 aralığında nihayet tam mobiliteyi amaçlayan bir geniş band standartı oluyor.
+
+1014
+02:28:40,600 --> 02:28:53,500
+Böylece 802.16E versiyonunda bahsettiğim görüş hattı kapsamasından sonra büyük bir gelişme olarak da sonuç olarak 802.16E'de mobiliteye de kavuşuyor.
+
+1015
+02:28:53,499 --> 02:28:58,839
+ve bu versiyon aynı zamanda BMAX 1.0 olarak da adlandırılıyor.
+
+1016
+02:29:00,339 --> 02:29:09,339
+Bu standart hızı önceki standartlara göre burada da belirttiğimiz üzere 15 değeriyle daha düşük olsa da mobilte özelliği sayesinde
+
+1017
+02:29:09,339 --> 02:29:16,979
+ve 6 ve daha az GHz'deki frekans ararılığını kapsaması sebebiyle yaygın olarak kullanılmaktı.
+
+1018
+02:29:18,559 --> 02:29:21,359
+Şimdi diğer arkadaşım devam edecek.
+
+1019
+02:29:21,359 --> 02:29:25,799
+Evet buradan sonraki kısmı ben anlatacağım. Sesim geliyor mu?
+
+1020
+02:29:27,579 --> 02:29:28,339
+Evet.
+
+1021
+02:29:29,559 --> 02:29:34,639
+Şimdi bundan önce YMAX'in kullandığı standartları kısaca bir özetleyip karşılaştırmak istersek eğer
+
+1022
+02:29:34,639 --> 02:29:40,979
+8.2.16 ilk çıkan, 2001'de çıkan ilk versiyondu ve görüş hattı gerektiren versiyon.
+
+1023
+02:29:40,979 --> 02:29:44,439
+Bundan sonra 16A ile birlikte görüş hattı gerektirdiği ortadan kalkıyor.
+
+1024
+02:29:45,379 --> 02:29:49,559
+Bundan sonra 16D ile birlikte 16A'nın yerine geçen 2004'de çıkan versiyon.
+
+1025
+02:29:49,559 --> 02:29:53,779
+ve en son 16'ya ile birlikte mobilite desteği de gelmiş oluyor.
+
+1026
+02:29:54,599 --> 02:29:55,719
+Sonraki sıraya da geçebilir miyiz?
+
+1027
+02:29:57,499 --> 02:30:01,039
+Burada WiMAX'in yılları şimdiki gelişimini kısaca görebiliyoruz.
+
+1028
+02:30:01,099 --> 02:30:02,959
+Ne kadar popüler olduğunu, ne kadar kullanıldığını.
+
+1029
+02:30:03,739 --> 02:30:06,539
+16, 16A ve 16D çıkıyor sırayla.
+
+1030
+02:30:06,599 --> 02:30:10,159
+Ondan sonra 16'ya'nın çıkmasıyla beraber WiMAX'in popülerliği biraz da artmaya başlıyor
+
+1031
+02:30:10,159 --> 02:30:16,379
+ve laptop gibi cihazlar 16'ya desteğiyle beraber piyasaya çıkmaya başlıyor aslında.
+
+1032
+02:30:17,159 --> 02:30:18,559
+Sonraki sıraya geçelim.
+
+1033
+02:30:19,559 --> 02:30:22,479
+Biraz da kısaca YMX 1.5'dan bahsedelim.
+
+1034
+02:30:24,659 --> 02:30:29,239
+8.2.16-2009 standartını kullanıyor ve 8.4'ün çevrenin tamamlanıyor.
+
+1035
+02:30:29,439 --> 02:30:35,579
+125 Mbps hızlarına kadar oluşabiliyor ve Frequency Division Doublex'in ki kullanıyordu.
+
+1036
+02:30:35,739 --> 02:30:38,899
+Ve bundan sonra YMX 2.0 2011 yılının Mart elinde çıkıyor.
+
+1037
+02:30:40,339 --> 02:30:43,339
+Bunun amacı I&T Advanced gereksinlerini karşılamak.
+
+1038
+02:30:43,339 --> 02:30:45,479
+I&T Advanced gereksinleri nedir ondan biraz bahsedeyim.
+
+1039
+02:30:45,479 --> 02:30:52,479
+IT tarafından, International Telecommunication Union tarafından ortaya atılan ve 4G resimlerini...
+
+1040
+02:30:53,012 --> 02:31:03,432
+ortaya koyan ve 4G'ye olan çalışmaları hızlandırmaya başlayan bir girişim. Sabit notar için, 1Gb, hareket notar için ise 100Mb hız gereksinimi koyuyor.
+
+1041
+02:31:03,631 --> 02:31:10,532
+YMX'in 0'da bunları desteklediği için bu hızları sağlıyor ve önceki YMX versiyonlarına göre çok daha hızlı.
+
+1042
+02:31:12,471 --> 02:31:14,811
+Evet, bundan sonraki kısmı da Rüsuf arkadaşım anlatacak.
+
+1043
+02:31:15,551 --> 02:31:22,991
+Tekrardan merhaba. Şimdi YMX ve diğer internet sağlayıcılarını karşılaştıracağız.
+
+1044
+02:31:23,012 --> 02:31:50,291
+Wi-Fi ile başlayalım. Wi-Fi, IEEE standartlarında 802, 11X gibi başlıyor. 11A, 11AX, 11B gibi. Wi-Max'de 802, 16A ve X türevleri gibi bu bantta. A türü olarak Wi-Fi daha küçük alanlarda işte ev, ofis gibi, local area network iken Wi-Max'de daha büyük alanlarda etkili, metropolitan area network geniş alanlarda etkili.
+
+1045
+02:31:50,291 --> 02:31:55,231
+Wi-Fi'de quality of service garantisi yokken Wi-Max'de bu garanti var.
+
+1046
+02:31:55,631 --> 02:32:03,151
+Ve çalıştığı frekans pandı olarak Wi-Fi 2.4 GHz ve 5 GHz arasındayken Wi-Max'de 2 ile 11 GHz arasında.
+
+1047
+02:32:03,151 --> 02:32:05,771
+Burada ekip bir bilgi olarak şunu söyleyebiliriz.
+
+1048
+02:32:06,552 --> 02:32:13,911
+Wi-Fi'de lisans gerektirmeyen frekans aralıklarında çalıştığı için diğer kablosuz cihazlarda örnek vermek gerekirse
+
+1049
+02:32:13,912 --> 02:32:22,992
+Bluetooth kulaklık gibi cihazlarda 2.4 GHz çakıştığında bu birbirlerinin iletişimini engelleyebilir ve çalışmasına sıkıntı oluşturabilir.
+
+1050
+02:32:23,512 --> 02:32:29,892
+Bu problem WiMAX'de olmuyor çünkü lisanslı veya lisansız olarak iki tane ayrı frekans aralıkla çalıştığı için.
+
+1051
+02:32:30,831 --> 02:32:40,772
+Kanal genişliği olarak burada 20-25 MHz ve 1.25-20 MHz arasında ve güvenlik olarak da Wi-Fi'ye göre daha yüksek güvenlik sunuyor WiMAX.
+
+1052
+02:32:40,771 --> 02:32:53,091
+Bir sonraki şeyde zaten grafik olarak görüyoruz güvenliğini, mobilite olarak daha kullanışlı olduğunu ve maliyet olarak da Wi-Fi'den daha ucuz olduğunu
+
+1053
+02:32:53,091 --> 02:32:59,271
+Bir sonraki de Hyperman'la kıyaslıyoruz WiMAX'i
+
+1054
+02:32:59,271 --> 02:33:06,271
+Aslında Hyperman WiMAX'in alternatif Avrupa standları diyebiliriz
+
+1055
+02:33:06,271 --> 02:33:09,872
+pek çok açıdan birbiriyle aynıdır teknolojik olarak.
+
+1056
+02:33:09,872 --> 02:33:15,611
+Kullanılan katman yakınlamaları, hizmet planlaması birbiriyle çok benzeridir.
+
+1057
+02:33:16,232 --> 02:33:23,791
+Hyper-Hyperman'in kısaltılmış High Performance Radyo Metropolitan Area Network'ları kısaltması,
+
+1058
+02:33:24,291 --> 02:33:26,051
+bunun kısaltması olarak geçer.
+
+1059
+02:33:26,971 --> 02:33:35,391
+İşte Avrupa Telecommunication Standartlar Endüstri tarafından Metropolitan Area Network'ları olarak geliştiren kablosuz olarak
+
+1060
+02:33:35,391 --> 02:33:39,811
+2-11 GHz frekans alanında bağlantı kurmaya hedefleyen bir teknolojidir.
+
+1061
+02:33:39,911 --> 02:33:41,731
+WiMAX'de de bu aralıkta çalışıyor.
+
+1062
+02:33:41,731 --> 02:33:45,331
+Bu yönüyle WiMAX'ın teknolojisiyle benzerlik gösterir.
+
+1063
+02:33:45,731 --> 02:33:48,911
+Onun kapsamında olduğu için onunla birlikte gelişir.
+
+1064
+02:33:49,451 --> 02:33:56,031
+Yine aynı IEEE standartında benzer şekilde hızlı bağlantı, kontrol yönetimi, güçlü güvenlik kodlamaya, hızlı uyum,
+
+1065
+02:33:57,191 --> 02:34:01,911
+propagasyon koşullarını biçimlendirme ve iletim gücünü sağlamanın yanı sıra
+
+1066
+02:34:01,911 --> 02:34:06,851
+hem Time Division Duplex hem de Frequency Division Duplex desteğini sağlamaktadır.
+
+1067
+02:34:08,251 --> 02:34:11,031
+Pek çok açıdan da Wimax'e benzerlik gösterir.
+
+1068
+02:34:12,791 --> 02:34:13,851
+Bir sonrakine geçelim.
+
+1069
+02:34:14,971 --> 02:34:18,171
+Burada da UMTS'i karşılaştıracağız Wimax ile.
+
+1070
+02:34:18,171 --> 02:34:23,391
+Aslında şu ana kadar gördüklerimizin hepsi Wi-Fi ve Hyperman IP tabanlı teknolojilerdi.
+
+1071
+02:34:23,691 --> 02:34:26,531
+Ama UMTS biraz daha farklı GSM teknolojisi.
+
+1072
+02:34:26,991 --> 02:34:28,951
+Yani bildiğimiz 3G aslında UMTS.
+
+1073
+02:34:29,091 --> 02:34:30,711
+3G'nin diğer adı UMTS.
+
+1074
+02:34:31,911 --> 02:34:46,411
+YMAX alternatifi olan başka bir teknoloji, evrensel hareketli haberleşme sistemi, UMTS. UMTS klasik frekans ve zaman çoklu iletişim tekniklerinden prensip olan çok farklı olan, yani YMAX ve Hiperman'dan farklı olarak
+
+1075
+02:34:47,796 --> 02:35:04,716
+kod bölmeli çoklu iletişim teknolojisini kullanır. Bu bir tür daha ne frekans tekniği olan bu teknolojide kullanıcılar 5 milyar genişliğindeki aynı banktan haberleşir. Bizim diyeceklerimiz bu kadar dinlediğiniz için teşekkür ederiz. Sorusu olmarsa alabiliriz.
+
+1076
+02:35:08,628 --> 02:35:14,847
+Hocam ben kısaca şeyden de bahsetmek istiyorum da kapatmadan. Arkadaşımız hasta olduğu için o kısma biraz o değinecekti.
+
+1077
+02:35:16,068 --> 02:35:23,487
+Vimex'in Türkiye'de kullanım alanı olarak çok detaylı bilgi bulamadık ancak 2009-2010'a kadar çok fazla bilgi vardı.
+
+1078
+02:35:24,287 --> 02:35:35,667
+İstanbul'da Fatih Belediyesi MOBESA kameralarının görüntülerini almak için mesela bunu kullanmış ya da bunun genel kullanım mantığı olarak mesela bir köye internet vermek amaçlı olarak düşünebiliriz.
+
+1079
+02:35:35,667 --> 02:35:44,447
+hızın yüksekliğinden öte daha uzaktan ve çoğunluğa hizmeti sağlamak amaçlı bir kullanım var. Özellikle mesela Wi-Fi ile karşılaştırmak gerekirse.
+
+1080
+02:35:46,067 --> 02:35:57,628
+Evet, teşekkür ediyoruz. Sorusu olan arkadaşımız yok zannımca. Böylece bu konuların tamamını bitirmiş olduk diye gözlemliyorum ben.
+
+1081
+02:35:57,628 --> 02:36:02,767
+Hepsinin notlarını tutmuş oldum çünkü. Anlatan arkadaşların ağızlarına sağlık.
+
+1082
+02:36:02,767 --> 02:36:12,028
+Geri kalan arkadaşlarınki de dediğim gibi videolardan değerlendiriliyor olacak. Bu anlatan arkadaşların raporları da ayrıca değerlendiriliyor olacak.
+
+1083
+02:36:13,607 --> 02:36:22,867
+Finalden önce notlarınızı açıklarız diye ümit ediyorum. Öyle söyleyeyim. Sizin bir sorunuz var mı yoksa bu dersi burada noktalandırabiliriz.
+
+1084
+02:36:27,156 --> 02:36:33,295
+Evet, çok teşekkür ediyorum. Cümleten hayırlı akşamlar. Kendinize iyi bakın. Sağlıcakla kalın.
+
+1085
+02:36:33,415 --> 02:36:34,455
+Hocam, bir şey sorabilir miyim?
+
+1086
+02:36:34,715 --> 02:36:36,916
+Şimdiden başarılar diliyorum. Buyurun Alperen.
+
+1087
+02:36:37,395 --> 02:36:46,775
+Hocam, şimdi sınavda hani dediniz ya, bu konulardan sorumlusunuz, işte anlatıldığı kadar veya eksikse çalışın falan filan dediniz ya.
+
+1088
+02:36:47,115 --> 02:36:52,435
+Peki bu dersli gördüğümüz konularla karmaşık bir şekilde mi yoksa sadece bu konularla ilgili sorularımız gelecek?
+
+1089
+02:36:52,435 --> 02:36:58,655
+Bu konuda ayrı yani ADSL'le ilgili, ADSL'nin özellikleriyle ilgili bir soru sorarız.
+
+1090
+02:36:59,195 --> 02:37:04,075
+Veya işte ne bileyim ATM'le ilgili çeşitli böyle kavramlardan bahsedildi.
+
+1091
+02:37:04,475 --> 02:37:07,195
+Bunlarla ilgili özellikleriyle ilgili bir soru sorarız.
+
+1092
+02:37:07,815 --> 02:37:13,235
+Yani veya işte sallıyorum X25 anlatılırken bir özellik anlatıldı.
+
+1093
+02:37:13,336 --> 02:37:17,355
+Bu X25'in hangi katmanındadır diye sorarız gibi gibi öyle söyleyeyim.
+
+1094
+02:37:18,055 --> 02:37:21,516
+Bir de bir arkadaş da sordu. Çoktan çok seçmeli mi olacak finalde?
+
+1095
+02:37:21,516 --> 02:37:23,676
+Evet, finalde vize gibi olacak.
+
+1096
+02:37:24,916 --> 02:37:26,755
+Tamamdır. Teşekkür ederim.
+
+1097
+02:37:27,455 --> 02:37:31,036
+İyi akşamlar diliyorum. Kendinize iyi bakın. Sağlıcakla kalın arkadaşlar.
+
+1098
+02:37:31,115 --> 02:37:32,096
+İyi akşamlar hocam sizle.

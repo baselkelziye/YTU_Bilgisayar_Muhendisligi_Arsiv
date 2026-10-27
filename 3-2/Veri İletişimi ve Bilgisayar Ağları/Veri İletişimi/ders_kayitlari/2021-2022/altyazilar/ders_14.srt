@@ -1,0 +1,2375 @@
+1
+00:05:52,372 --> 00:06:08,571
+Evet, merhaba kıymetli arkadaşlar. Bu haftadan itibaren dersi ben anlatıyor olacağım. Vize haftasına kadar Cihan Hoca yürütmüştü. Bu grubu ortak beraber yürütüyoruz. Bu haftadan sonra da kalan konuları ben anlatıyor olacağım.
+
+2
+00:06:08,571 --> 00:06:22,531
+İsmim Furkan Çakmak. Hali hazırda pazartesi sabahtan olan grup 2'yi ben yürütüyordum. Grup 1'i salı günü olan Cihan Hoca yürütüyordu. Bu grubu da bu şekilde ortak beraber yürütüyoruz.
+
+3
+00:06:25,311 --> 00:06:38,011
+Geçtiğimiz hafta sınavları yapmış olduk. Sınavlarla ilgili bir sorunuz varsa onları alabilirim. Cihan Hoca notları ilan etti mi bilmiyorum.
+
+4
+00:06:38,011 --> 00:06:57,272
+O edecekti. Etti ise onlarla ilgili belki konuşmak istediğiniz şeyler varsa onları konuşabiliriz. Yoksa bu hafta Cihan Hoca'nın bıraktığı yerden devam ediyor olacağız. Bundan sonra dönem sonuna kadar dersleri ben anlatıyor olacağım.
+
+5
+00:06:57,272 --> 00:07:13,331
+Oda numaram D122, birinci katta bölüm sekreterliğinin olduğu katta. Eğer derste ilgili veya farklı sebeplerle görüşmek isterseniz oradan oraya gelebilirsiniz ya da öncesinde mail atabilirsiniz, randevuluşabiliriz.
+
+6
+00:07:13,331 --> 00:07:19,791
+Evet, şimdi şuradan bakalım.
+
+7
+00:07:21,372 --> 00:07:32,751
+En son Cihan Hoca ile konuştuğumuz kadarıyla şu 6. haftada olan data link kontrol teknik ve flow kontrolü anlattığını söylemişti Cihan Hoca.
+
+8
+00:07:33,891 --> 00:07:39,812
+Asenkron ve senksron data link protokollerine gelmiştim orada kalmıştı dedi.
+
+9
+00:07:40,271 --> 00:07:41,592
+Bu hafta onları anlatacağım ben.
+
+10
+00:07:41,592 --> 00:07:54,272
+Bir hafta geride olduğumuz için bunları bu hafta birleştirerek anlatıyor olacağım ki önümüzdeki hafta LAN teknolojisine yani I-TRAP'li'nin 802 projesine başlayabilelim.
+
+11
+00:07:54,812 --> 00:08:05,592
+Arada sorunuz olduğunda böyle bilirsiniz. Yani dersin sonunu veya araları molaları beklemenize gerek yok. O şekilde konuşarak ilerleyebiliriz.
+
+12
+00:08:05,592 --> 00:08:08,592
+Evet, şimdi...
+
+13
+00:08:09,492 --> 00:08:15,511
+Data Link kontrol protokolleri niçin gerekliydi hatırlarsanız.
+
+14
+00:08:15,511 --> 00:08:23,912
+Şu an, şimdi şöyle bir özet geçelim. Dersin ilk haftalarında OSI referans modelini anlatmıştık. Yedi katmandan oluşuyordu.
+
+15
+00:08:24,492 --> 00:08:30,811
+Bu yedi katmanın kablolamayla ilgili fiziksel işlemleri gerçekleştirdiği bir katman vardı. Physical Layer.
+
+16
+00:08:31,391 --> 00:08:35,491
+Onunla ilgili çeşitli şeyler anlattık. Ondan sonra Data Link Layer anlattık.
+
+17
+00:08:35,491 --> 00:08:41,611
+Burada hep Data Link Layer'dan gidiyor olacağız bu hafta önümüzdeki hafta sonrasında hep Data Link Layer'dan gidiyor olacağız
+
+18
+00:08:41,611 --> 00:08:52,572
+Son haftalara doğru biraz Network Layer'ın içerisine giriyor olacağız ama Network Layer'ın detaylı kısmı başka bir derste A teknolojileri dersinde anlatılıyor olacak
+
+19
+00:08:52,572 --> 00:09:00,151
+O yüzden hala daha bu haftada anlattığımız şeylerin tamamı Data Link Layer'ın içerisinde gerçekleştirilen şeyler
+
+20
+00:09:00,151 --> 00:09:03,551
+Bunları böyle bir hani kısaca özet geçmiş olalım
+
+21
+00:09:03,551 --> 00:09:22,931
+Tabi Data Link Layer'da veri gönderimi için çeşitli operasyonlar gerçekleştiriliyor ve bu verinin akışının her iki point için senkron veya asenkron gerçekleştirilmesi gibi iki opsiyon var bu kavramlardan bu hafta bahsediyor olacağız
+
+22
+00:09:22,931 --> 00:09:28,651
+Datalin kontrol protokolleri gördüğünüz gibi asenkron ve senkron olarak ikiye ayrılıyor.
+
+23
+00:09:28,651 --> 00:09:34,491
+Senkron modeller üzerinde genellikle çalışacağız bu hafta.
+
+24
+00:09:34,651 --> 00:09:41,251
+Yani senkron modeller hali hazırda gündelik hayatta veri iletim teknikleri açısından kullanılan teknikler.
+
+25
+00:09:41,331 --> 00:09:42,931
+Özellikle bit-oriented kısımları.
+
+26
+00:09:43,491 --> 00:09:47,491
+Senkron modelleri de byte-oriented ve bit-oriented olarak ikiye ayıracağız.
+
+27
+00:09:47,951 --> 00:09:52,551
+Hatta benim şu an sesimi duyuyorsunuz, görüntümü görüyorsunuz, ekran paylaşımımı görüyorsunuz.
+
+28
+00:09:52,551 --> 00:10:00,891
+bunların hepsi işte data link layer kısmında alt tarafta senkron muhtemelen de bit or yantı şekilde size ulaşıyor diyebiliriz.
+
+29
+00:10:00,891 --> 00:10:09,352
+Şimdi data link kontrol bunun hem yazılımsal hem donanımsal çeşitli tabii ekipmanları var.
+
+30
+00:10:10,531 --> 00:10:18,271
+Bizim biz hani bu ders kapsamında yazılımsal tarafta bu akışın kontrolü için flow kontrolü için neler gerçekleştiriliyor?
+
+31
+00:10:18,731 --> 00:10:20,691
+Temelde onlara bakıyor olacağız.
+
+32
+00:10:20,691 --> 00:10:25,652
+veri iletişimi, telekomünikasyon aynı zamanda donansal da bir konu.
+
+33
+00:10:25,731 --> 00:10:31,991
+Onunla ilgili de işte elektronik telekomünikasyon mühendisliği altında belki donansal konuları daha detaylı işleniyor olabilir.
+
+34
+00:10:32,152 --> 00:10:37,652
+Biz burada daha çok yazılımsal taraf üzerinde veya protokol tarafı üzerinde duruyor olacağız.
+
+35
+00:10:38,212 --> 00:10:39,372
+Ne tarz görevlerimiz var?
+
+36
+00:10:39,491 --> 00:10:44,311
+Senkron transmission gerçekleştirmek istiyorsak bir physical layer'da hatırlarsanız
+
+37
+00:10:44,311 --> 00:10:54,671
+Common Timing sinyalimiz vardı ve bu sinyal üzerinden karşılıklı iki tane point birbirlerine senkron olabiliyordu.
+
+38
+00:10:54,671 --> 00:11:02,551
+Bunun için ayrı bir hat gerekirse teşkil ediliyordu ve bu şekilde senkronizasyon sağlanabiliyordu.
+
+39
+00:11:02,551 --> 00:11:15,491
+Logical seviyede ise biz karşı tarafla senkron olabilmek için bizim gönderdiğimiz frame'in nerede başladığını, nerede bittiğini söylediğimiz özel bitler veya bit dizileri
+
+40
+00:11:16,115 --> 00:11:38,495
+vardı ve bu sayede biz akış kontrolünü sağlayabiliyorduk. Akış kontrolü ne? Ondan bahsediyor olalım. Bir taraf diyelim ki point to point çalışıyoruz. Yani ben veriyi gönderiyorum, karşı tarafta veriyi alıyor. Ben veriyi gönderirim, karşı taraf benim gönderdiğim veriyi aldığını bana söylerse ben tekrardan gönderebilirim.
+
+41
+00:11:38,495 --> 00:11:40,995
+veya ben çok hızlı gönderme kapasitesine sahibimdir.
+
+42
+00:11:41,095 --> 00:11:45,755
+Karşı taraf daha düşük kapasitede alması özelliği vardır.
+
+43
+00:11:45,755 --> 00:11:47,915
+Ve böyle olunca ne olacak?
+
+44
+00:11:48,415 --> 00:11:51,935
+Benim hızıma o yetişemediği için yine bir problem gerçekleşiyor olacak.
+
+45
+00:11:52,415 --> 00:11:56,656
+Tüm bunların kontrolüne biz işte akış kontrolü diyoruz.
+
+46
+00:11:57,055 --> 00:12:02,115
+Ben bir veri göndermişim ve veri karşı tarafa ulaşmış ama hatalı ulaşmış.
+
+47
+00:12:02,555 --> 00:12:06,455
+O veriyi benden gerekirse tekrar istemesi gibi çeşitli şeyler.
+
+48
+00:12:06,456 --> 00:12:12,316
+İşte error control hani onu slide'da çıkmadan önce söylemiş olduk
+
+49
+00:12:12,316 --> 00:12:16,075
+Bir de tabii ki transmission kuralları var
+
+50
+00:12:16,075 --> 00:12:17,696
+Bunların bazıları çok basit
+
+51
+00:12:17,696 --> 00:12:19,215
+Yani kim gönderici kim alıcı
+
+52
+00:12:19,215 --> 00:12:21,836
+Ne şekilde gönderecek
+
+53
+00:12:21,836 --> 00:12:24,755
+Benim gönderdiğim frame'in tipi ne olacak
+
+54
+00:12:24,755 --> 00:12:29,136
+Yani ben karşıya bir data içeren bir şey mi göndereceğim
+
+55
+00:12:29,136 --> 00:12:31,016
+Yoksa datayı aldım
+
+56
+00:12:31,016 --> 00:12:36,976
+senin gönderdiğin datayı aldım diye bir bilgilendirme mesajımı göndereceğim.
+
+57
+00:12:37,476 --> 00:12:44,496
+Veya işte o hattın işleviyle ilgili, işlevselliğiyle ilgili çeşitli frame tipleri var.
+
+58
+00:12:44,496 --> 00:12:51,075
+Yani operasyonun sağlanması, zamanın senkronize edilmesi her iki taraflı da ilgili çeşitli frame tipleri var.
+
+59
+00:12:51,156 --> 00:12:52,236
+Bu derste göreceğiz onları.
+
+60
+00:12:52,776 --> 00:12:55,516
+Bunun için mi bir veri gönderiyorum?
+
+61
+00:12:55,615 --> 00:12:57,516
+Gönderdiğim frame'in tam olarak amacı ne?
+
+62
+00:12:57,976 --> 00:13:00,696
+Bunların hepsine transmission kuralları deniliyor.
+
+63
+00:13:01,015 --> 00:13:05,175
+ve bu derste bunları detaylı bir şekilde görüyor olacağız.
+
+64
+00:13:05,175 --> 00:13:20,195
+Asenkron protokoller bizim gündelik hayatta belki çok sık şu an kullanmadığımız şeyler fakat modemlerle yapılan bağlantılarda önceden kullanılıyordu.
+
+65
+00:13:20,435 --> 00:13:22,535
+Hatırlarsınız belki bazılarınız bunları.
+
+66
+00:13:23,175 --> 00:13:26,295
+Asenkron protokollerde şunu bilmemiz gerekiyor.
+
+67
+00:13:26,495 --> 00:13:30,575
+Senkronla asenkron arasındaki farkı söylemiş olalım.
+
+68
+00:13:30,575 --> 00:13:44,035
+Ben karşı tarafa hangi zaman diliminde ve gönderdiğim mesajın, frame'in daha doğrusu şu an data link seviyesinde olduğumuz için frame diyoruz buna
+
+69
+00:13:44,035 --> 00:13:52,735
+gönderdiğim frame'in ne zaman başladığı, ne zaman bittiğini karşı tarafa söylediğim bir durum, senkron olduğumuz durum
+
+70
+00:13:52,735 --> 00:13:58,235
+ve karşı tarafın benim gönderdiğim frame'i alıp almadığından haberdar olduğum bir durum
+
+71
+00:13:58,235 --> 00:14:23,175
+Yani tabi haberdar olamaya da bilirim. Ne demek istiyorum? Ben karşı tarafa bir frame gönderdim. Framing başına yolda bir şey geldi. Bir kollijine uğradı veya bir ettenuation sinyal zayıflamasından dolayı karşı tarafa doğru bir şekilde ulaşamadı. Hiç ulaşamamış da olabilir. Doğru bir şekilde ulaşamamış da olabilir. Hiç ulaşamadığı durumda karşı taraf benim ona mesaj göndereceğimden bile habersiz olabilir.
+
+72
+00:14:23,175 --> 00:14:33,295
+Böyle bir durumda da işte timeout mekanizmalarının çalışıp benim mesajı tekrar, frame'i tekrar gönderebilmek için çeşitli işlevler falan gerçekleştiriliyor senkron tarafta.
+
+73
+00:14:33,295 --> 00:14:38,295
+asenkron taraftaysa biz karşı tarafa...
+
+74
+00:14:38,515 --> 00:15:03,356
+her zaman diliminde yani bir hat düşünelim. Bu hat içerisinden bana veri gelebilir asenkron çalışıyorsak. Veri geldiğinde ben bana verinin ne zaman geldiğinden ziyade veri geldiği anda nasıl başladığını bir başlangıç bitiyle nasıl bittiğini de bir bitiş bitiyle anlayabildiğim duruma ben
+
+75
+00:15:03,356 --> 00:15:10,755
+Logical seviyede bir kontrol diyorum asenkron tarafta.
+
+76
+00:15:10,755 --> 00:15:15,655
+Tabi burada veri belirli periyotlarla gelmiyor.
+
+77
+00:15:16,216 --> 00:15:20,815
+Veri karşı taraftan gönderilmek istendiğinde bana ulaşıyor.
+
+78
+00:15:20,916 --> 00:15:26,895
+Böyle olunca hattın içerisinde farklı boyutlarda boşluklar oluşuyor.
+
+79
+00:15:26,895 --> 00:15:34,575
+bu da tabii ki hiç kuşkusuz line utilization'ı yani hattın kullanım oranının düşmesine sebebiyet veriyor.
+
+80
+00:15:35,315 --> 00:15:45,215
+Temel avantajlarından bahsedecek temel avantaj ve dezavantajların hani şey yapıyor neden onu konuşuyor olursak
+
+81
+00:15:45,215 --> 00:15:54,355
+işte modemlerde çok uzun yıllar farklı tekniklerle farklı isimlerde kullanılmış bir şey asenkron protokoller
+
+82
+00:15:54,355 --> 00:16:10,895
+Ama bizim her bir göndereceğimiz byte için byte'ın önüne arkasına birer başlama ve bitme kontrolleri veya her göndereceğimiz iki byte için başlama ve bitme kontrolleri gönderdiğimden ötürü ekstradan data eklemiş oluyorum.
+
+83
+00:16:10,895 --> 00:16:21,155
+Bu da tabii ki gönderdiğim yani karşı tarafa 10 byte veri ulaşıyorsa bunun 3 byte'ı sadece kontrol için 7 byte'ı data içeriyor.
+
+84
+00:16:21,236 --> 00:16:26,135
+Bu da çok yüksek bir oran %30'lık %40'lık duruma göre değişen çeşitli oranları var.
+
+85
+00:16:26,135 --> 00:16:29,595
+Additional data buradaki en büyük problemlerden birisi.
+
+86
+00:16:29,595 --> 00:16:44,655
+bir diğeri de tabii ki benim gönderdiğim frame'ler arasında çok fazla boşluk olabileceği durumlar olduğu için nispeten senkron protokollere göre yavaş olduğunu söyleyebiliriz.
+
+87
+00:16:44,655 --> 00:16:56,395
+Senkron protokoller tarafına geçecek olursak burada başlangıç ve bitiş için logical seviyede birer bit belirlenmiyor da birer flag belirleniyor.
+
+88
+00:16:56,395 --> 00:17:17,615
+yani bunlar birer byte aslında. Özel dizilimlere sahip byte'lar. Bunlara burada flag diyoruz. Bir byte 8 bit. 8 bit'in farklı bir kombinasyonuyla oluşturulmuş bir veriyi düşünün. Yani diyelim ki 137'ye karşılık gelen bir byte'ın işte bir flag karşılığı var. Onun belli bir anlamı var.
+
+89
+00:17:17,615 --> 00:17:31,655
+Diyelim ki bizim veriye şeyin başına koyduğumuz, göndereceğimiz frame'in başına koyduğumuz SYN fileyi bunun başlandığı manasına geliyor
+
+90
+00:17:31,655 --> 00:17:37,555
+Veya end of transmission yani successor file ise bunun bittiği manasına geliyor
+
+91
+00:17:37,555 --> 00:17:43,075
+Tabi ki özel bir dediğimiz gibi bit dizilimi, bir byte o şekilde düşünebiliriz
+
+92
+00:17:43,075 --> 00:17:56,355
+Temelde yine iki tipi var. Physical layer'da gerçekleştirilen common clock signal ile beraber farklı bir hat üzerinden bizim zamanlarımızın aynı olması durumu söz konusu.
+
+93
+00:17:56,956 --> 00:17:59,615
+Tabi Cihan Hoca derste bahsetti mi bilmiyorum.
+
+94
+00:18:00,243 --> 00:18:23,763
+Şimdi zamanın aynı olması bir problem. Ne demek istiyoruz? Milisaniyeden daha hassas bir şekilde zamanlarımızın ortak olması lazım. Bizim makinelerimiz, bunlar illa bilgisayar olmak zorunda değil, işte bugün iletişime geçtiğimiz robot süpürgeler, buzdolapları, kahve makineleri neyse bunların hepsinin bir zamanı var.
+
+95
+00:18:23,763 --> 00:18:52,763
+Bu zamanlar diyelim ki işte elektrik kesintisine uğruyor, bir şey oluyor bizden farklı olabilir ama hiç elektrik kesintisine uğramasa bile her donanım biriminin zamanı sayan o timer elemanının nasıl söyleyeyim doğruluğu yani hata payı mükemmel değil bir hata payıyla çalışıyor bunlar ve doğal olarak mesela bunu şeyde de yakalıyorsunuzdur otomobillerde falan çok olur bir ay sonra 2-3 dakika bazen
+
+96
+00:18:53,764 --> 00:19:00,563
+hani tabii otomobilin kalitesine göre değişir kullandıkları sensöre göre de zaman kaymış olabiliyor.
+
+97
+00:19:01,464 --> 00:19:03,483
+Bazen telefonlarımız da dahi olabiliyor.
+
+98
+00:19:03,584 --> 00:19:06,464
+İnternetten güncelleme yapmadığımız durumlar için söylüyorum.
+
+99
+00:19:07,163 --> 00:19:09,843
+Bir de temel sıkıntı şu.
+
+100
+00:19:11,904 --> 00:19:15,364
+Bir gün tam 24 saat değil.
+
+101
+00:19:15,784 --> 00:19:16,784
+Yani ne demek istiyorum?
+
+102
+00:19:17,404 --> 00:19:22,843
+Saat olarak düşündüğümüzde böyle, dakika olarak düşündüğümüzde böyle ama milisaniye ve altı hassasiyetlere düştüğümüzde
+
+103
+00:19:22,843 --> 00:19:33,583
+her gün birbirinden farklı uzunlukta ve işte bunlar artıyor artıyor artıyor birikiyor hani şöyle bir şey var biliyorsunuz 4 yılda bir o kadar şey birikiyor begin oluyor falan.
+
+104
+00:19:33,583 --> 00:19:43,803
+O yüzden yani temelde bizim her günümüz 24 saat de değil bu zamanın sürekli cihazlar arasında senkron olması lazım.
+
+105
+00:19:43,803 --> 00:20:09,503
+İşte Common Clock signal de benim zamanımla karşı tarafın zamanını senkronize edebilmemizi sağlayan bir hat o şekilde söyleyebiliriz. Bu fizikal seviyede tabii ki bir hat olduğu için bir de lojikal seviyede senkronizasyon ki bu derste asıl odaklanacağımız nokta o. Data link değer'in içerisinde gerçekleştiriliyor ve flagler kullanılıyor.
+
+106
+00:20:09,503 --> 00:20:21,964
+Tabii bizim nasıl söyleyelim asenkron tarafa göre birazdan göreceğiz niye böyle olduğunu daha hızlı bir transmission gerçekleştirebiliyoruz.
+
+107
+00:20:21,964 --> 00:20:36,763
+Çünkü asenkron tarafta tam olarak ortak bir senkronizasyonu sağlamak için yapımız olmadığı için karşı tarafa verinin gönderilmesi ve alınması arasındaki boşluklar fazla olabiliyordu.
+
+108
+00:20:36,763 --> 00:20:43,803
+Buradaysa yani zamanı biliyoruz ne zaman gelmiş ne şekilde iletilmiş gibi durumlar bizim avantajımıza oluyor.
+
+109
+00:20:44,543 --> 00:20:51,643
+Lokal area networklerde işte metropoline tutanlarda ve wide area networklerde kullanılan teknolojiler bunlar.
+
+110
+00:20:51,643 --> 00:21:01,643
+LAN dediğimizde ne anlıyoruz? Günümüzde işte kullandığımız ya Ethernet protokolleri kablolu olarak bağlı olmuş olabilirsiniz internete ya da kablosuz olarak Wi-Fi'den bağlı olabilirsiniz.
+
+111
+00:21:01,643 --> 00:21:25,923
+bunların hepsi birer LAN teknolojisi onu söyleyebiliriz. Byte-oriented tarafta tabii byte-oriented olarak biz bunu gerçekleştiriyorsak bizim bir byte'mız 8 bit 2 üzeri 8'den 256 farklı bayrağımız olabilir.
+
+112
+00:21:25,923 --> 00:21:45,263
+Yani işte transmission'ı başlatıyorum, transmission'ı bitiriyorum, şimdi göndereceğim bir kontrol bayrağıdır, zamanımızı ortak yapalım, gönderdiğini almadım, sen bana bir şey gönderdin mi gibi çeşitli ifadeleri kullanabileceğimiz 256 tane bayrak tanımlayabiliriz eğer ASKİ tablosundaki coding sistemini kullanıyorsak.
+
+113
+00:21:45,263 --> 00:21:52,423
+Tabii ki burada takdir edersiniz ki karşı tarafa göndereceğimiz her şey bir bayrak olmak zorunda değil.
+
+114
+00:21:52,852 --> 00:22:00,711
+bazıları, nasıl söyleyeyim? Mesela ASCII tablosunu düşünelim. Farklı kodink teknikleri var bu arada bunu kodlamak için.
+
+115
+00:22:01,352 --> 00:22:07,812
+Bazıları ASCII tablosunda printable karakterler, rakamlar, noktalama işaretleri, harfler printable karakter.
+
+116
+00:22:07,812 --> 00:22:19,491
+Bazıları da unprintable karakterler. Yani enter'ı ekranda göremeyiz, işte boşluğu ekranda göremeyiz, null karakterini ekranda göremeyiz gibi unprintable karakterler var.
+
+117
+00:22:19,491 --> 00:22:24,251
+Bunların her birisinin farklı manalara geldiğini birazdan görüyor olacağız.
+
+118
+00:22:24,391 --> 00:22:25,751
+Byte-oriented tarafta.
+
+119
+00:22:26,331 --> 00:22:31,811
+Byte-oriented taraf bizim için ASCII tablosundaki direkt karşılıkları kullanıldığı için
+
+120
+00:22:31,811 --> 00:22:35,511
+karakter-oriented diye de anılabiliyor.
+
+121
+00:22:35,712 --> 00:22:40,951
+Yani bazı kaynaklarda çalışmak isterseniz byte-oriented değil, karakter-oriented diye geçer.
+
+122
+00:22:40,951 --> 00:22:43,212
+Onu söylemek isterim.
+
+123
+00:22:43,212 --> 00:22:56,032
+Şimdi ASCII tablosundan örnekleme yapılmış bizim byte-oriented bir senkron protokolümüzde, data-in-control protokolünde
+
+124
+00:22:56,032 --> 00:23:03,411
+Bakın farklı kontrol karakterleri ne anlamlarda kullanılıyor? Bunları dile getireyim
+
+125
+00:23:03,411 --> 00:23:10,032
+Tabi bunlardan daha fazla da olabilir kullandığımız protokolün yeni yeni versiyonlarına göre
+
+126
+00:23:10,032 --> 00:23:27,972
+her seferinde detaylı bir şekilde bunu anlatmayacağım ama bu sefer şöyle bir üzerinden özet geçeyim neler var bilin istiyorum ki bundan sonra bazılarını işte daha öncekine benzer farklı isimlerde burada kontrol karakterleri var diyeceğim.
+
+127
+00:23:27,971 --> 00:23:30,071
+her seferinde anlatmak çok uzun sürüyor çünkü.
+
+128
+00:23:30,631 --> 00:23:34,611
+İşte az önce de gördük, SYN, Synchronous Idol.
+
+129
+00:23:34,611 --> 00:23:47,931
+Yani bizim kanalımızı müsait veri iletişimine müsait bir şekilde olduğunu veya olmasını sağlayacak bir kontrol karakteri.
+
+130
+00:23:48,191 --> 00:23:52,751
+Veya padding, biz mesajımızı çeşitli frame'lere bölüyorduk.
+
+131
+00:23:53,291 --> 00:23:57,311
+Eğer ki bizim böldüğümüz, mesela diyelim ki, şöyle örnek verelim.
+
+132
+00:23:57,311 --> 00:24:22,872
+250 byte'lık bir şeyi 40'lık frame'lere bölüyor olacağız. Hepsi 40-40-40 gitti. En son da bir tane 10'luk bir parça kalıyor. Onu da eğer ki göndereceğimiz frame'in boyutu standartsa, yani geri kalanı 30'a da bir padding uygulamamız, tamamlayıcı bir şey uygulamamız lazım. Onun için kullanılan bir frame'imiz var bakın.
+
+133
+00:24:22,872 --> 00:24:43,512
+Data Link Escape karakterimiz var. Escape karakter ne işe yarıyor biliyorsunuz. Kullandığımızda özel manaya gelen bir karakteri yazı içerisinde kullanmamız gerektiği durumlarda Escape karakterler kullanmamız gerekiyordu. Programlamadan hatırlarsanız.
+
+134
+00:24:43,512 --> 00:24:53,051
+Burada da yine Escape karakter veri ile ilgili. Çok özür diliyorum bir kapı çalıyor. Hemen geliyorum.
+
+135
+00:25:13,236 --> 00:25:40,736
+Evet, kusura bakmayın, online derslerde bu tarz şeyler olabiliyor. Şimdi şuradan devam edelim. Şuraya girmeyelim. Çok özür diliyorum. Böyle bir escape karakterimiz var. Bir diğeri inquiry. Yani biz karşı tarafa çeşitli request'ler gönderebiliyoruz. Hatırlarsanız primary, secondary cihazlar vardı. Ya bana bir şey göndermek istiyor musun diye karşı tarafa sorduğumuz durumlar oluyordu. Bunu gerçekleştireceğimiz çeşitli kontrol karakterleri var burada gördüğünüz gibi.
+
+136
+00:25:40,736 --> 00:25:45,936
+veya bizim göndereceğimiz frame'in bir tekst tarafı.
+
+137
+00:25:45,936 --> 00:25:54,475
+Bu tekst tarafına ek olarak bir de heading tarafı yani çeşitli bilgileri içeren header tarafı olabilir.
+
+138
+00:25:54,956 --> 00:25:59,375
+Bu header'ın ne zaman başlayacağını söyleyen özel bir karakterimiz.
+
+139
+00:26:05,587 --> 00:26:32,848
+Şimdi bir arkadaşımız soru sormuş. Sorularınızı lütfen chatten sormayın. Konuşarak sorarsanız daha aktif bir şekilde ilerlemiş oluruz. Şimdi bir byte, arkadaşımızın sorusunu cevaplayalım öncelikle. Bir byte göndereceğim zaman karşı tarafa, bu byte'ın birisi ilk biti, başlangıç, son biti, bitiş olduğu zamanı düşünün. Ki genellikle böyle değildir. İki tane başlangıç biti, bir tane de bitiş biti vardır.
+
+140
+00:26:32,848 --> 00:27:00,268
+Yani 8 tane bitiniz var, bunlardan 3 tanesi kontrole gitti. %35, %40'lık bir kayıp var. Burada ise benim göndereceğim frame'in uzunluğu data konusunda 1400 byte, 1500 byte duruma göre değişecek ama sadece başlangıç için birkaç tane byte gönderiyorum. Yani kıyaslanmayacak ölçü de daha avantajlı. Ben her byte göndereceğim zaman onun başına bu tarz kontrol byte'ları eklemiyorum.
+
+141
+00:27:00,268 --> 00:27:22,448
+Göndereceğim frame dediğim gibi bin byte uzunluğunda olabilir. Senkron bir şekilde çalıştığım için ben nerede başladığını söylemiş olmam yeterli olacaktır karşı tarafa. O yüzden bit asenkron tarafa göre çok daha elverişli oluyor senkron tarafa.
+
+142
+00:27:22,948 --> 00:27:24,507
+Tamamdır hocam, teşekkürler.
+
+143
+00:27:24,507 --> 00:27:52,347
+Ben teşekkür ederim. Şimdi tabii burada karakter oryantı dediğimiz için biz dataya text diye bakıyoruz. Çünkü bu yöntemler ilk çıktığında da karşı tarafa bir mesaj göndermek istiyorsak o mesaj ses veya işte şey olmuyor. Nasıl söyleyelim? Görüntü olmuyor. Onun yerine text based yani bir A4 sayfasına yazmışsın göndermişsin. O şekilde oluyor. Öyle düşünebilirsiniz. O yüzden start of text karakteri var.
+
+144
+00:27:52,347 --> 00:28:21,467
+ve bizim göndereceğimiz frame farklı bloklardan oluşmuş olabilir. Eğer ki bizim göndereceğimiz frame diyelim ki 1000 byte'dan oluşuyorsa data kısmı ve 1000 byte'ın hata kontrolü için bizim içerisinde bulunduğumuz o hatta üretilecek işte CRC polinomlarıyla üretilecek hata kontrolü teknikleri çok uzunsa
+
+145
+00:28:21,467 --> 00:28:35,447
+32'lik yerine 16'lık CRC ile bir şeyler yapmak isteniyorsa 1000 byte fazla oluyor. Böyle olunca intermediate bloklar oluşturuluyor. O intermediate blokların her birisinin de ayrı kontrol byte'ları oluyor.
+
+146
+00:28:35,448 --> 00:28:44,468
+İşte bizim göndereceğimiz frameleri çeşitli intermediate bloklara bölebiliyoruz ve bu intermediate bloklar nerede başlıyor, nerede bitiyor?
+
+147
+00:28:44,468 --> 00:29:01,468
+Onun için mesela bitişi için yine ITB komutu, transmission'ın bittiği manasına gelen ETB karakteri veya bizim işte tekstimizin sonlandığı, burası artık tekstin son noktası dediğimiz ETX karakteri.
+
+148
+00:29:01,467 --> 00:29:10,747
+End of Transmission yani bunu sınavda da sorduk. End of Transmission artık şeyi sonlandırıyorum. Transmission'ı sonlandırıyorum manasında.
+
+149
+00:29:10,747 --> 00:29:20,747
+İşte eğer ki LRC kullanıyorsak 1 byte, CRC kullanıyorsak 2 byte boyutunda bir blockchain count değeri
+
+150
+00:29:20,747 --> 00:29:29,507
+Acknowledgement gönderiyorsak karşı tarafa ki genellikle eğer ki biz stop and wait yöntemi kullanıyorsak
+
+151
+00:29:29,507 --> 00:29:36,527
+Yani ne vardı hatırlarsanız karşı tarafa mesajı gönderiyoruz cevabı aldım mesajını aldım diye cevap bekliyoruz
+
+152
+00:29:36,528 --> 00:29:43,287
+sonra tekrar gönderiyoruz, tekrar bekliyorduk. Öyle bir durumda ACK sıfır yani sıfır numaralı frame aldım biri gönder.
+
+153
+00:29:43,968 --> 00:29:48,408
+Ardından biri gönderiyorum biri aldım tekrar sıfırı gönder. Yani bir sonraki sıfırı gönder.
+
+154
+00:29:48,408 --> 00:29:59,668
+Sanki sliding window tekniğinde düşündüğümüzde iki pencerelik bir windowmuş gibi davranan işte iki tane kontrol karakterimiz var.
+
+155
+00:30:00,000 --> 00:30:11,139
+işte transmission'ı bekleyen bir kontrol karakterimiz. Yani bana bir şey göndermeni bekliyorum demek istediğinizde kullanacağınız bir kontrol karakteri.
+
+156
+00:30:11,139 --> 00:30:24,180
+işte bufferdan aldığınız çeşitli bufferladığınız verileri işlemek veya verileri artık buffer alıyorum demek için kullanacağınız çeşitli kontrol karakterleri
+
+157
+00:30:24,180 --> 00:30:34,479
+veya işte hiçbir işe ne denir ona bir veri gönderiyorsunuz karşı tarafa ama göndereceğiniz veri sadece hattı meşgul etsin.
+
+158
+00:30:34,479 --> 00:30:39,479
+Ekstradan bir manaya gelmesin diye gönderebileceğiniz null karakteri.
+
+159
+00:30:39,479 --> 00:31:03,500
+Bir de işte urgent response. Yani ben şu an senden çok acil cevap bekliyorum. Bak bana bir sürü mesaj göndermek isteyen makineler var. Onları bekletiyorum. Senden cevap bekliyorum. Göndereceksen cevabını gönder veya işte paketini gönder gibi böyle biraz acil olsun diye kullanabileceğimiz çeşitli karakterler var.
+
+160
+00:31:03,500 --> 00:31:19,540
+Hani böyle bir detaylı bir şekilde bunları böyle üzerinden geçmiş oldum. Bunları hani bir sonraki anlatacağımız protokollerde de bu tarz şeyler var. Bit oriyantıtlarda da farklı bit dizilimleriyle bazı şeyler oluyor olacak. Göreceksiniz.
+
+161
+00:31:19,540 --> 00:31:36,139
+orada da genel olarak bilin ne tarz işler yapabilecek kontrol karakterleri var. Çünkü karşıya gönderdiğimiz şeyler her daim bir veri olmuyor. O veriyi göndermek için karşı tarafa çeşitli kontroller gerçekleştirmemiz gerekiyor. Bunlar da kontrol karakterleri.
+
+162
+00:31:36,139 --> 00:31:39,979
+gördüğünüz gibi bir kontrol frame bir de data frame var.
+
+163
+00:31:40,559 --> 00:31:44,760
+Şimdi az önce arkadaşımızın sorduğu soruya bir örnek olsun diye.
+
+164
+00:31:45,720 --> 00:31:49,559
+Biz burada gördüğünüz tamamen bir frame.
+
+165
+00:31:49,559 --> 00:31:53,900
+Yani şu altta gördüğünüz ortasında data yazan şey bir frame.
+
+166
+00:31:53,899 --> 00:32:15,879
+Öncelikle iki tane bizim öncül olarak hattın boş olduğunda göndermeye müsait kılan iki tane byte gönderiyorum. Bunlar birer byte arkadaşlar. Bunlar hep böyle başlar. Göndereceğim tüm frame'ler SYN, SYN ile başlar.
+
+167
+00:32:15,879 --> 00:32:45,859
+Ardından STX gelmiş hemen şuradan bakıyoruz start of text datanın başladığı nokta datamız artık kaç bytesa özellikle çizmedim bakın protokole göre 30 byte olduğu durumlar da var 1000 byte 1400 byte olduğu çeşitli durumlar da vardır değişebilir protokole göre değişebilir ardından end of text nerede o end of text işte şurada end of text yani datam bitti bakın şurada başladı başladığını söylüyoruz başladı bundan sonra yani datanın başladığı ne demek bundan sonra
+
+168
+00:32:45,879 --> 00:32:51,459
+Sonra gelecek byte'lar bir data. Ona göre değerlendir manasında. Ondan sonra bitti.
+
+169
+00:32:51,939 --> 00:32:56,879
+Tabi bu data karşı tarafa doğru bir şekilde ulaşılmış mı, ulaşılmamış mı diye hatırlarsanız yine
+
+170
+00:32:56,879 --> 00:33:06,199
+data link layer'da bir hata kontrolü teknikleri kullanarak sonuna kod ekliyorduk.
+
+171
+00:33:06,199 --> 00:33:15,199
+Eğer ki işte LRC kullanıyorsak bir byte, CRC kullanıyorsak iki byte'lık bir veri de bunun için karşıya ekliyoruz ki
+
+172
+00:33:15,199 --> 00:33:21,419
+karşı tarafa ulaştığında adam bunları kullanarak data doğru bir şekilde bana ulaşmış mı diye kontrol etsin.
+
+173
+00:33:23,316 --> 00:33:31,035
+Şimdi pekala header kullanıldığı durumda bakın nasıl oluyor. Başlangıç karakterlerimizi karşıya gönderdik. Start of header. Bir headerımız var.
+
+174
+00:33:31,195 --> 00:33:38,776
+Headermizde çeşitli dataya dair içsel bilgiler içerebilir. Başlıyor. Biliyorsunuz yani ne olduğunu. Ardından textimiz başlıyor.
+
+175
+00:33:38,776 --> 00:33:48,035
+Datayı gönderiyoruz. Datamız bitiyor ve ondan sonra kontroller. Şimdi tabii burada önemli hususlardan birisi şu.
+
+176
+00:33:48,035 --> 00:33:56,775
+karşıya gönderdiğimiz datanın içerisinde bizim kontrol karakterlerimizden birisi olabilir.
+
+177
+00:33:56,775 --> 00:33:58,996
+Ne demek istiyorum? Şunu demek istiyorum.
+
+178
+00:33:59,496 --> 00:34:06,356
+Şimdi başlangıçta olayı hani şu data transparency nedir onu anlatıyorum.
+
+179
+00:34:06,455 --> 00:34:07,575
+Bu çok önemli bir kavram.
+
+180
+00:34:08,295 --> 00:34:11,915
+Farklı zamanlarda da karşınıza çıkacaktır data transparency nedir diye.
+
+181
+00:34:12,255 --> 00:34:14,895
+O yüzden lütfen güzel dinleyin bu data transparency'yi.
+
+182
+00:34:14,895 --> 00:34:32,015
+Şimdi ben bir datanın içerisinde text göndermek istediğimi düşünüyorum karşı tarafa. Ki bu teknikleri geliştirildiğinde genelde böyle text gönderiliyor, text-based teknikler. İşte kullanacağım şeyler neler? Rakamlar, harfler, noktalama işaretleri.
+
+183
+00:34:32,015 --> 00:34:44,176
+ASCII tablosunda geri kalan unprintable olan karakterleri bu datanın içerisinde kullanmama gerek yok. Ama zamanla neler çıkıyor?
+
+184
+00:34:44,896 --> 00:34:51,996
+Genelde de tabi bu kontrol karakterleri de o unprintable, tekstin içinde olmayacak karakterlerden belirlenmiş
+
+185
+00:34:51,996 --> 00:34:55,815
+Ama zamanla ben ses datası gönderiyorum, görüntü datası gönderiyorum
+
+186
+00:34:55,815 --> 00:34:58,936
+Mesela gri seviye bir resim gönderiyorum karşı tarafa
+
+187
+00:34:58,936 --> 00:35:03,696
+Sıfırdan 255'e kadar olan farklı karakterler gri'nin farklı tonlarını ifade ediyor
+
+188
+00:35:03,696 --> 00:35:07,235
+Yani öyle bir gri'nin tonuna denk gelmiş olabilirim ki
+
+189
+00:35:07,235 --> 00:35:18,115
+datanın içerisinde bakın şu data datanın içerisinde bir tane byte benim bir kontrol karakterime karşılık geliyor olabilir.
+
+190
+00:35:18,115 --> 00:35:29,896
+Hatta bu örnekte bakın end of text karakterine karşılık gelmiş. Oysa ki bu datanın içinde kontrol karakteri olarak kullanılmaması gereken bir şey.
+
+191
+00:35:29,895 --> 00:35:37,975
+İşte bu tarz durumların üstesinden gelebilmek için geliştirilen bir teknik var.
+
+192
+00:35:38,195 --> 00:35:46,515
+Az önce söylemiştik. Escape karakter kullanmak ve böyle bir problemle karşılaşma ise data transparency diyoruz işte.
+
+193
+00:35:46,515 --> 00:35:52,875
+Onun için önüne kontrol karakteri koyuyoruz. D, L, E. Birazdan örneklerde göreceğiz herhalde.
+
+194
+00:35:52,875 --> 00:36:13,976
+Bakın DLE ben şeyler için kullandığım kontrol karakterleri şurada yazan STX, ETX, ETB, ITB ve SOH karakterlerinin önüne bir escape karakter koyarak gönderiyorum bunu.
+
+195
+00:36:13,976 --> 00:36:34,136
+Böyle olunca o escape karakter olmadan datanın içerisinde bir end of text komutu gelmişse bu benim için bir datanın byte'ıdır, bir kontrol karakteri değildir diyorum
+
+196
+00:36:34,135 --> 00:36:41,715
+Başında DLE varsa şurada olduğu gibi tamam artık bundan sonuna gelen şey bir kontrol karakteridir diyorum
+
+197
+00:36:41,715 --> 00:36:45,415
+Böyle olunca şu dataya işte transparency deniliyor
+
+198
+00:36:45,415 --> 00:36:47,915
+Ama data böyle de gelmiş oluyor
+
+199
+00:36:47,915 --> 00:36:51,455
+Öyle bir fotoğraf gönderiyorsunuz ki yani denk gelmiş
+
+200
+00:36:51,455 --> 00:36:54,495
+Belki milyonda bir ihtimal bilmiyorum
+
+201
+00:36:54,495 --> 00:37:04,055
+Ama denk gelmiş yani datanın içerisinde escape karakterle beraber bir kontrol karakteri var
+
+202
+00:37:04,135 --> 00:37:19,875
+Olabilir. Böyle bir şeye de denk gelebilir. Böyle durumdaysa bunun başına bir escape karakteri koyuyoruz. Ona bir örnek verelim. Evet. Şuraya escape karakteri koyuyoruz. Tamam. Yani ne olmuş oldu böylece? Artık şu, şu.
+
+203
+00:37:20,500 --> 00:37:46,979
+İki tane var bakın burada. İlkini gördüm. İlkini gördükten sonra artık şu ikisi benim datamın elemanları diyoruz. Tamam şu datanın elemanı değil. Ben onu oraya yerleştirdim. Ben koydum. Ama şu o datanın elemanı. Tabii veriyi göndermeden önce bakın byte byte inceliyor. Tamam byte byte inceliyor. Bu tarz durumlar var mı diye.
+
+204
+00:37:46,979 --> 00:38:12,779
+pekala hocam yani milyon dediniz tamam milyara çıkartalım. Üç tanesi arda arda gelmiş olsun işte bir tane daha koyuyor. Dört tanesi geldiyse bir tane daha başına koyuyor. Anlatabiliyor muyum? Burada hani escape karakter, ilki escape karakter olmuş oluyor. Ben çünkü gönderen taraf olduğum için datanın tam olarak ne olduğunu biliyorum. Alan taraf bilemeyebilir. Ama ben gönderen tarafım datanın ne olduğunu biliyorum.
+
+205
+00:38:12,779 --> 00:38:19,699
+Bu tarz bir durumla karşılaştığım durumda göndereceğim zaman önüne bir tane escape karakter koyuyorum
+
+206
+00:38:19,699 --> 00:38:24,360
+Karşı taraf bir tane escape karakter karşısına çıktığında tamam bundan sonra gelen şeyler
+
+207
+00:38:24,360 --> 00:38:29,300
+Tabii DL, DL, DL diye gidecek
+
+208
+00:38:29,300 --> 00:38:38,220
+Bundan sonra gelen şeyler benim ne denir ona datamın kendi içeriği diyebiliyoruz
+
+209
+00:38:38,220 --> 00:38:41,379
+Tamam bu data transferansi olayı önemli
+
+210
+00:38:41,379 --> 00:39:00,379
+Şimdi tabii az önce söylediğimiz gibi bazı frame'ler çok uzun boyutlu oluyor protokollere göre değişiklik göstermekle beraber. Çok uzun boyutlu frame'lerde hata kontrol tekniklerinin uygulanması işlemsel olarak biraz zaman alabilir.
+
+211
+00:39:00,379 --> 00:39:21,439
+Hele donanım kısıtlıysa. Yani düşünün 16'lık dereceden bir polinom veya 32'lik bir polinomla çalıştığınızı düşünün. Bu tamamen computational power'dan yiyor. O sebeple bunları böyle daha küçük parçalara bölüp daha küçük parçaların üzerinden işlem gerçekleştirmek bazen daha mantıklı olabiliyor.
+
+212
+00:39:21,439 --> 00:39:44,479
+Yani bizim frame'imizin içerisinde bulunan datayı da intermediate block'lara, yani bizim frame'imizin içerisinde bir data var, 100 byte, 25'er byte'lık 4 bloğu bölüyorum mesela. Bunu da gerçekleştirebiliyorum. İşte o nasıl oluyor? Bakın, text başlıyor, datamın ilk bloğu, intermediate block end, bitişi yani, şurası.
+
+213
+00:39:44,479 --> 00:39:55,679
+her blok için ayrıca bir kontrol yani hata kontrol byte'ı da veya byte'ları da kullandığımız tekniğe göre ekliyorum.
+
+214
+00:39:56,000 --> 00:40:02,639
+Ardından tekrardan text başlıyor, gönderiyorum. Bakın burada bir blok bitişi var, şu da text'in bitişi.
+
+215
+00:40:02,979 --> 00:40:08,819
+Yani şuradaki data iki bloğa bölünmüş. İki bloktan daha fazla bloğa da bölünebilir.
+
+216
+00:40:08,819 --> 00:40:22,179
+tabi bu örnekte sadece öyle olmuş. Şuna bir bakalım. Karşı tarafa işte senkronizasyon başlangıcı yani verinin başlangıcı için iki tane SYN gönderdim.
+
+217
+00:40:22,179 --> 00:40:30,639
+Header'ın başlangıcını söyledim, data'nın başlangıcını söyledim. Intermediate block gönderdim bakın. Bir tane intermediate block end gönderdim.
+
+218
+00:40:31,019 --> 00:40:37,959
+Hata kontrol kısmını gönderdim. Tekrardan datam başladı. Gitti. End of block. Tamam mı?
+
+219
+00:40:37,959 --> 00:40:49,219
+Bu sefer bunu koydum. Karşıya gönderdim. Bu bir frame. Karşı taraf dedi ki 0 numaralı frame'ini aldım. ACK 1 ne demek? 0 numaralı frame'i aldım. 1'i bekliyorum.
+
+220
+00:40:49,844 --> 00:41:12,323
+Tabii şöyle gidiyor. Önce bu, sonra bu, sonra bu geliyor. Şunların ikisi hep standart. Tamam bu da kontrol biri. ACK1 diye bir şey olduğunu söylemiştik. 3 byte'lik bir veri gönderiyor adam karşıya yani. Ne diyor? Tekrar söyleyelim ne dediğini. Sıfır aldım, bana biri gönder. Tamam mı? Adam tekrar artık datanın devamını gönderiyor. Bakın bu sefer header göndermiyor.
+
+221
+00:41:12,323 --> 00:41:42,204
+yani pardon header gönderiyor, header ile başlamış, şurası header olacak, çok özür diliyorum, burada yanlış bir yazım var kıymetli arkadaşlar, şurası header olacak, ardından text başlamış, karşı tarafa gitmiş, intermediate block gitmiş, ondan sonra şurada tabii burada da hata kontrol kısmı vardı, burada da hata kontrol kısmı var, end of block, yani bizim yine karşıya gönderdiğimiz block,
+
+222
+00:41:42,323 --> 00:41:50,684
+diyor ki 1'i aldım, 0'ı gönder, gönderdik. Bakın tek farkı ne? Burada bloklar bitiyordu, burada da text bitiyor.
+
+223
+00:41:51,723 --> 00:41:58,384
+Tamam. Yani gönderiyorum, şunu aldığımızda ne anlıyoruz bakımımız arkadaşlar? Şu frame'i aldığımızda.
+
+224
+00:41:58,384 --> 00:42:06,803
+Adam bana data gönderiyor ama daha da gönderecek. Tamam. Çünkü end of text değil sonu. Daha da gönderecek. Daha da gönderecek.
+
+225
+00:42:06,803 --> 00:42:12,683
+artık bitti gibi o şekilde düşünebilirsiniz.
+
+226
+00:42:12,943 --> 00:42:17,424
+Hocam, bütün header bilgileri farklı mı orada her blok için?
+
+227
+00:42:18,424 --> 00:42:22,443
+Header'ın içerisinde olan şeyler datanın içeriğiyle ilgili.
+
+228
+00:42:23,043 --> 00:42:29,144
+Data öyle bir şey olmuş olabilir ki, denk gelmiş olabilir ki aynı da olabilir, farklı da olabilir.
+
+229
+00:42:29,144 --> 00:42:32,583
+Bununla ilgili net bir şey söyleyemeyiz yani. Geleceğiz ama onlara da.
+
+230
+00:42:33,043 --> 00:42:34,303
+Tamamdır hocam. Sağ olun.
+
+231
+00:42:34,303 --> 00:42:35,564
+Şükür ederiz soru için
+
+232
+00:42:35,564 --> 00:42:44,244
+Şimdi tabii bir data frame'inin olduğundan bahsettik bir de control frame'i var dedik
+
+233
+00:42:44,244 --> 00:42:49,003
+Control frame'inin içeriği nasıl pekala onu söylemiş olalım
+
+234
+00:42:49,003 --> 00:42:55,103
+Yine başlangıç için kullandığımız iki tane karakter
+
+235
+00:42:55,103 --> 00:43:03,083
+Daha sonra ne ile ilgili bir kontrol bilgisi göndereceksem uzunluğu değişiklik gösterebilir
+
+236
+00:43:03,083 --> 00:43:10,383
+o bilgi ardından bu da sonuçta bir data onunla ilgili bir hata kontrol byte grubu.
+
+237
+00:43:11,223 --> 00:43:21,183
+Şimdi bu byte oriented tekniklerde binary synchronization communication denilen IBM'in geliştirdiği bir teknik var.
+
+238
+00:43:21,823 --> 00:43:25,043
+1960'ların sonlarına doğru geliştiriliyor.
+
+239
+00:43:25,663 --> 00:43:28,383
+Hem point to point hem de multipoint kullanılıyor.
+
+240
+00:43:28,383 --> 00:43:30,023
+Point to point demek ne demek?
+
+241
+00:43:31,003 --> 00:43:32,523
+İki tane taraf var sadece.
+
+242
+00:43:32,523 --> 00:43:59,923
+ben ona gönderiyorum, o bana gönderiyor. Basit gibi geliyor, sınavda yapamamışsınız. İki taraf varsa ben ona gönderiyorsam, o bana gönderiyorsa sadece mesela adres yani point to point tekniklerde alıcılığın veya göndericinin adresine gerek yok. Zaten iki kişi var. Yok ona ona ona adrese gerek yok. Ama multipoint çalışıyorsak ben karşımda 15 kişi var, muhatabım onlarda onlardan birisine göndereceğim. Adresini söylemem lazım.
+
+243
+00:43:59,924 --> 00:44:29,023
+ve kendi adresimi de yazmam lazım. O da bilmesi lazım. O diğer 14 kişiden veya 15 kişiden hangisi gönderdi bana diye. Tamam. Bu binary synchronization communication tank diye hem point to point hem de multipoint çalışmaya elverişli. Half duplex bir şekilde çalışıyor. Half duplex neydi? Ben karşı tarafa veri gönderirken aynı anda karşı tarafta bana veri gönderemiyor. Polis telsizi gibi düşünün. Ben telsizin tuşuna bastım, konuşuyorum. O an konuşamıyor.
+
+244
+00:44:29,023 --> 00:44:31,023
+Bütün her yerde benim sesim duyuluyor.
+
+245
+00:44:31,391 --> 00:44:36,631
+o konuşmayı bitirdikten sonra ben basıyorum, ben konuşuyorum. O basıyor, o konuşuyor, ben basıyorum, ben konuşuyorum.
+
+246
+00:44:37,251 --> 00:44:43,272
+Duplex neydi? Bizim telefon konuşmamız. Ben birisine telefon ediyorum, ben telefonda konuşurken o da konuşabiliyor.
+
+247
+00:44:43,451 --> 00:44:49,072
+Ben de konuşuyorum, o da konuşuyor. O şekilde düşünün. İşte bu teknik half duplex çalışmak için kullanılmış.
+
+248
+00:44:49,072 --> 00:44:59,411
+Stop and wait tekniğinde, akış kontrol tekniğinde ve otomatik repeat request kontrolünde kullanılıyor.
+
+249
+00:44:59,411 --> 00:45:06,951
+Tabii ki kod bağımlı yani az önce gördüğünüz gibi bunlar birer karakter ve karakterleri bağımlı bir şekilde hareket ediyor
+
+250
+00:45:06,951 --> 00:45:10,891
+Kullandığımız şey ASCII ise 256 tane karakteriniz var
+
+251
+00:45:10,891 --> 00:45:17,991
+Sadece bunlarla siz karşı tarafa söylemek istediğiniz şeyi söylüyor olmanız gerekiyor
+
+252
+00:45:17,991 --> 00:45:26,531
+Yani synchrome protokollerin byte oryantıtlarından en popüleri olan bu olduğu için genel olarak bunun özelliklerinden bahsetmiş olduk
+
+253
+00:45:26,531 --> 00:45:28,791
+Şimdi bir de bit oryantıt tarafı var
+
+254
+00:45:28,791 --> 00:45:32,131
+Bitoriented tarafında detaylı bir şekilde duracağız kıymetli arkadaşlar.
+
+255
+00:45:33,031 --> 00:45:48,811
+Byteoriented olanlara göre veri gönderim hızı ve frameleme işlemleri daha efektif gerçekleştirildiğinden ötürü daha yaygın bir şekilde kullanılan bir teknik bu.
+
+256
+00:45:49,431 --> 00:45:51,151
+Frame size'ı birazdan göreceğiz.
+
+257
+00:45:51,151 --> 00:45:55,752
+Daha nedeni ona küçük bir şekilde karşı tarafa frame'ler gönderebiliyoruz.
+
+258
+00:45:55,752 --> 00:46:04,231
+ve byte-oriented yani karakter tabanlı bir şey olmadığı için data transparency problemiyle neredeyse hiç karşılaşmıyoruz.
+
+259
+00:46:04,351 --> 00:46:07,192
+Karşılaştığımız çeşitli özel durumlar olacak, onlardan bahsedeceğiz.
+
+260
+00:46:07,692 --> 00:46:12,211
+Burada en yaygın bir şekilde kullanılan high-level data link kontrol protokolü.
+
+261
+00:46:12,211 --> 00:46:14,012
+ISO standardı bu.
+
+262
+00:46:15,252 --> 00:46:25,052
+Şu an hala daha bizim byte-oriented çalıştığımız durumda HDLC yönteminin yeni yeni çıkan versiyonları,
+
+263
+00:46:25,051 --> 00:46:38,651
+yani hepsi bunu base alıyor. Bunun üzerine çeşitli özellikler eklenerek kullanılan çeşitli yöntemler var. Biz onlardan birisiyle muhtemelen sizinle şu an iletişim kuruyoruzdur. Point to point ve multi point konuşabiliyoruz.
+
+264
+00:46:39,191 --> 00:46:51,552
+Duplex ve half duplex konuşabiliyoruz. Daha çok sliding window, akış kontrol ve automatic repeat request, sliding window, automatic repeat request kısmında kullanılıyor.
+
+265
+00:46:51,552 --> 00:47:14,332
+Diğeri neydi? Stop and wait. O yüzden iki tane karakter var. Yani sliding window'da ACK0 ve ACK1 olamaz. Çünkü window boyutumuz 15 ise ACK2 nerede diye söyleyebilirsiniz. O yüzden stop and wait o. Her seferinde tek bir şey gönderiyorum. Yani hattın niye kullanım oranının düşük olduğunu da anlayabiliyorsunuz değil mi?
+
+266
+00:47:14,332 --> 00:47:37,192
+hattım bir kilometrelik bir hat var. Bir kilometrelik hatta sadece gönderdiğim şey bir frame. Tek seferde o hattın içinde bir frame. Karşıya gönderdim, karşı aldı, işledi, bana aldım diye cevap gönderiyor. Ama sliding window da neydi? Benim windowum eğer 20 ise ben 19 tane frame'i hiç onay almadan karşı taraftan hatta gönderebiliyordum.
+
+267
+00:47:37,192 --> 00:48:01,811
+kod bağımsız yani az önceki nasıl ASCII tablosundaki kodlara bağımlı karakterler karşı tarafa gönderilebiliyordu. Burada öyle bir şey yok çünkü bitlerle uğraşıyoruz. Bit seviyesinde sıfır ve bir seviyesinde uğraşıyoruz. Bit-oriented yapılar işte synchronization data link kontrol ile başlayacağız. Biraz bundan bahsedeceğiz. Daha çok high level data link kontrol üzerinde duruyor olacağız.
+
+268
+00:48:01,811 --> 00:48:19,311
+ve bu high level data link kontrol üzerine eklenerek oluşturulmuş birçok link akses prosedürleri var. Bunlardan da belki kabaca değiniyor olacağız ama daha çok high level data link kontrol üzerinde bu sunumda duruyor olacağız.
+
+269
+00:48:20,179 --> 00:48:38,559
+ISO gibi OSI gibi conception bir use. Yani tam olarak hayata geçirilecek tekniklerin buradan esinlenmesi için geliştirilmiş bir teknik. Öyle söyleyelim. Ama temelde çoğu bunu base alıyor.
+
+270
+00:48:38,559 --> 00:49:08,540
+kullanılan tabi istasyon tipleri var. Yani her bir point için bir istasyon kavramını kullanırsak primary veya secondary olabiliyordu hatırlarsanız. Bir network içerisinde primary cihazlar daha çok olayın akışını yönetiyordu. Secondary cihazlarsa bu olayın akışının içerisinde aktör olmasa da figüran belki olan çeşitli cihazlardı. Station type'larda primary, secondary veya combined duruma göre primary, duruma göre secondary olabiliyordu.
+
+271
+00:49:08,559 --> 00:49:19,139
+olabiliyor. Konfigürasyon kısmına baktığımızda ise unbalanced yani bizim mesela primary ve secondary yaklaşımını düşünün.
+
+272
+00:49:19,139 --> 00:49:29,799
+Primary'nin üzerinde nasıl bir yük fazlalığı söz konusuysa, yetki fazlalığı söz konusuysa secondary'de daha az olmuş oluyor.
+
+273
+00:49:30,119 --> 00:49:35,679
+Ama duruma göre herçinin combine olduğu durumda belki yükler eşit dağılabilir.
+
+274
+00:49:35,679 --> 00:49:47,959
+Balanced olduğu durum HDLC'nin default versiyonunda geçerli değil. Yani tanımlanmamış ama yeni yeni çıkan versiyonlarında tanımlanmış olabilir. Ama unbalance durumu tanımlanmış durumda.
+
+275
+00:49:47,959 --> 00:50:16,639
+Tabi 3 çeşit temelde modu var HDLC'de 3 çeşit mod var Bunlardan birisi normal response mod Unbalanced diyoruz buna biz aynı zamanda Yani unbalanced bir mod Bizim normal response modumuz Primary ile secondary cihazlar arasında olan iş Nasıldı hatırlarsanız Pol ve Selek kavramları vardı
+
+276
+00:50:16,639 --> 00:50:24,940
+Ben primary cihazım, secondary cihazlardan birisi bana bir viri göndermek istiyor mu diye onu pol ediyordum
+
+277
+00:50:24,940 --> 00:50:30,420
+Mesela 5 tane secondary cihazım var, 3 numaraya gidiyorum diyorum ki bana bir şey göndermek istiyor musun?
+
+278
+00:50:31,179 --> 00:50:32,579
+Tamam bu pol etmekti
+
+279
+00:50:32,579 --> 00:50:38,819
+Veya select ediyordum, 5 numarayı select edip sana bir şey göndereceğim diyordum
+
+280
+00:50:38,819 --> 00:50:41,419
+Tamam bu işte normal response mode
+
+281
+00:50:41,419 --> 00:50:45,859
+Tamam mı? Bunu o şekilde söyleyebiliyoruz
+
+282
+00:50:45,859 --> 00:51:14,819
+Asenkron response moddaysa ikincil cihazlar eğer ki hat müsaitse tamam mı ben az önce söylediğim gibi ben primary'yim eğer ki asenkron response modda çalışıyorsak ben primary'yim 5 tane de secondary var hat müsaitse secondary'ler kendi arasında benden onay almadan konuşabiliyorlar öyle söyleyelim
+
+283
+00:51:15,859 --> 00:51:34,679
+şeyde ise ne denir ona eğer hat müsaitse müsait değil olduğu durumda sen konuş sen sus sen konuş sen sus diye primary karar veriyor. Asynkron balans modda ise bütün cihazların tipi combined ve hepsinin ortak primary ve secondary gibi davranma yetkileri söz konusu.
+
+284
+00:51:34,679 --> 00:51:41,200
+Burada da kısaca bunun özet tablosunu vermişiz
+
+285
+00:51:41,200 --> 00:51:47,120
+Tabi burada HDLC'de bir frame structure var
+
+286
+00:51:47,120 --> 00:51:49,540
+Kısaca bunlardan özetçe bahsedeyim
+
+287
+00:51:49,540 --> 00:51:51,599
+Dersin geri kalan kısmında bunları anlatacağım ama
+
+288
+00:51:51,599 --> 00:51:53,560
+Özet olarak şunları bir anlatayım
+
+289
+00:51:53,560 --> 00:51:56,120
+Ondan sonra bir ara verelim kıymetli arkadaşlar
+
+290
+00:51:56,120 --> 00:52:02,400
+3 tip frame gönderebiliyorum
+
+291
+00:52:02,400 --> 00:52:05,079
+Bunlardan birisi iFrame
+
+292
+00:52:05,748 --> 00:52:13,487
+iframe ile karşı tarafa göndereceğim datayı iframe'in içine koyup da karşı tarafa gönderiyorum.
+
+293
+00:52:13,487 --> 00:52:22,387
+Yani tabii bu frame ise frame'in öncüleri, sonucuları, kontrolleri için çeşitli sağdan sonuna bitler bitler ekliyor olacağım.
+
+294
+00:52:22,848 --> 00:52:28,307
+Ama datayı iframe tipiyle karşı tarafa gönderiyorum. Bir diğeri s-frame.
+
+295
+00:52:28,307 --> 00:52:56,687
+S-Frame'de bizim işte Supervisor yaptığımız çeşitli fonksiyonlar var. Error kontrolü ile ilgili. Birazdan çok daha detaylı bir şekilde göreceğiz. Veya akış kontrolü. Tamam senin gönderdiğin şeyi aldım diyeceğiz karşı tarafa. Mesela bunu S-Frame üzerinden gönderiyoruz. Yani adam bana I-Frame ile bir veri gönderiyor. Ben ona aldım mesajını S-Frame ile gönderiyorum.
+
+296
+00:52:56,687 --> 00:53:04,887
+Eğer ki piggybacking yapmadıysam, piggybacking neydi? Piggybacking, hatırlayın yine Cihan Hoca'nın anlatımlarından
+
+297
+00:53:04,887 --> 00:53:14,587
+Ben karşı tarafa bir mesaj gönderdim, o bana aldığım mesajını kendi mesajının içerisine saklayarak gönderiyorsa
+
+298
+00:53:14,587 --> 00:53:20,248
+Aldım diye biz buna piggybacking diyorduk, yer tasarrufu yani, hat tasarrufu
+
+299
+00:53:20,248 --> 00:53:24,807
+Öyle yapıyorsa yine iframe üzerinden gönderecek bana
+
+300
+00:53:24,807 --> 00:53:29,887
+ama öyle yapmadığı durumda adam bana bir şey söylüyor ama benim ona söyleyecek bir şeyim yoksa ne oluyor?
+
+301
+00:53:30,367 --> 00:53:34,987
+Ben gönderiyorum iframe, o bana sframe, ben iframe, o sframe gönderiyor.
+
+302
+00:53:34,987 --> 00:53:46,307
+Bir de tabii hattın yönetimiyle ilgili, hattın sürdürülebilirliğiyle ilgili özel tanımlanmış yönetici frameleri var.
+
+303
+00:53:46,407 --> 00:53:50,587
+Bunlar da uframe. Bunların da neler olduğuna detaylı bir şekilde bakacağız.
+
+304
+00:53:50,587 --> 00:54:12,027
+32 çeşit burada HDLC'de UFrame var. Onları görüyor olacağız. Bir frame yapısına daha detaylı bir şekilde bakarsak iFrame'ler bakın nasıl çalışıyor. Artık point to point ve multipoint çalışmaya el verdiği için adres bilgileri de var.
+
+305
+00:54:12,027 --> 00:54:20,988
+Öncelikle bir başlangıç fileyi ben veri göndermeye başlıyorum diye ve bunun bir iframe olduğunu söyleyen bir flag
+
+306
+00:54:20,988 --> 00:54:27,587
+Burada bu byte olmak zorunda değil bir bit dizisi de olabilir byte'dan daha kısa ve daha uzun
+
+307
+00:54:27,587 --> 00:54:29,328
+Birazdan göreceğiz bunların detaylarını
+
+308
+00:54:29,328 --> 00:54:31,608
+Ardından bir adres nereye gidiyor?
+
+309
+00:54:32,087 --> 00:54:37,387
+Ardından kontrolle ilgili çeşitli işlevler yani bu kontrolle ilgili işlevleri de görüyoruz
+
+310
+00:54:37,387 --> 00:54:41,968
+Bunların her birisini birazdan dersini değerleyen saatlerinde detaylı bir şekilde görüyor olacağız
+
+311
+00:54:41,968 --> 00:55:00,628
+Ardından bizim datamız, ardından kontrol ile ilgili ve şeyin sonlandırılmasıyla ilgili, frame'in sonlandırılmasıyla ilgili ve hata kontrolüyle ilgili bir veri dizisi tekrardan gönderiyoruz
+
+312
+00:55:00,628 --> 00:55:10,387
+I-frame'de bakın böyle, S-frame'de ise şu data kısmı yok, sadece karşı tarafa bilgilendirme amacıyla gönderdiğim bir kısım var
+
+313
+00:55:10,387 --> 00:55:18,647
+Şurada Uframe'de ise data kısmının içerisinde ne tarz işler gerçekleştireceğim
+
+314
+00:55:18,647 --> 00:55:22,268
+Burası kontrolle beraber birleşiyor
+
+315
+00:55:22,268 --> 00:55:22,887
+Birazdan göreceğiz
+
+316
+00:55:22,887 --> 00:55:24,387
+Bir byte boyutunda burası
+
+317
+00:55:24,387 --> 00:55:26,988
+Burası mesela çok uzun olabilir
+
+318
+00:55:26,988 --> 00:55:29,488
+Yani yüzlerce bit olabilir
+
+319
+00:55:29,488 --> 00:55:34,507
+Şurası ise kontrolle beraber information kısmı sadece bir byte uzunluğunda olacak
+
+320
+00:55:34,507 --> 00:55:37,527
+Buna da Uframe diyoruz
+
+321
+00:55:37,527 --> 00:55:38,768
+Kıymetli arkadaşlar
+
+322
+00:55:38,767 --> 00:55:55,047
+Evet flag fiyatlarına geçmeden bir mola verelim. Şu an 50 geçiyor. 5 geçe burada olalım. 6'yı 5 geçe burada olalım. Soruları olanlar varsa başladığımızda sorularla beraber başlıyor olalım.
+
+323
+01:09:51,891 --> 01:10:11,851
+Evet, tekrardan merhaba kıymetli arkadaşlar. Şimdi Bit-Oriented Synchron Protokollerden HDLC'nin frame yapısına devam ediyoruz. Bir flag alanı vardı hatırlarsınız. Şurada hatta bakalım direkt bir dakika.
+
+324
+01:10:11,851 --> 01:10:34,891
+Şurada bir flag alanı vardı. Bu flag sabit bir sekansdan oluşuyor. 0, 6 tane 1, sonra tekrardan 0'dan oluşuyor. Her flag gördüğünüz yerde bunu söyleyebiliriz. Başlangıç ve bitiş noktasını o frame'in belli etmek amacıyla doğal olarak senkronizasyon amacıyla kullanılıyor.
+
+325
+01:10:34,891 --> 01:10:48,792
+Tabii böyle bir şey kullandığımızda hatırlarsanız karakter oryantı da hepsine flag diyorduk ve oradaki çeşitli karakterler için datanın içerisine geçen çeşitli karakterler için data transferansi problemi vardı.
+
+326
+01:10:48,791 --> 01:11:06,252
+Burada da data transferisi problem olabilir. Eğer ki işte bizim verimizin içerisinde bitiş manasına gelen bir data, şey flag manasına gelen bir ifade olursa kullanılan bir teknikle bu problemi çözüyoruz. Nasıl ki?
+
+327
+01:11:06,252 --> 01:11:20,631
+Eğer ki bir tane sıfırdan sonra beş tane bir geldiyse ve yedinci bit sıfır geldiyse sıfır alıyoruz ve bu bir datanın parçasıdır deyip devam ediyoruz.
+
+328
+01:11:20,631 --> 01:11:35,671
+Zaten altı tane bir gelmedi bakın. Eğer ki beş tane birden sonra bir tane daha bir gelirse ve bu birden sonra bir tane sıfır gelirse bu bir flagdir diyoruz ve flag olarak algılıyoruz.
+
+329
+01:11:35,671 --> 01:11:51,472
+artık sonlandırma manasına geliyor. Pekala bir tane sıfır, beş tane bir, sonra tekrardan birden sonra tekrardan bir bir gelirse bundan sonra gelen yeni bir bir görünceye kadar sıfırları sayıyoruz.
+
+330
+01:11:51,471 --> 01:12:11,251
+Eğer ki bu sıfırların değeri 15'den küçükse bu herhangi bir manaya gelmiyor, datadır diyoruz. Eğer ki 15'den büyükse hat şu an müsaittir. Hatta gönderilmek istenen herhangi bir şey yok manasına geliyor.
+
+331
+01:12:11,252 --> 01:12:34,052
+Yani data transferensi problemini ortadan kaldırmak için kullanılan bir tane flag var çünkü böyle bir yola gitmişler. Basit bir hani şematize edilmiş hali burada gördüğünüz şey. Bir diğeri address field yani şu tablodaki teker teker field'ları inceliyoruz bakın kıymetli arkadaşlar. Flag, address, control hepsine geliyor olacağız. Bir diğeri address field.
+
+332
+01:12:34,052 --> 01:12:47,432
+Adresfield ikinci cihazların adreslerini içeriyor. Burada temelde üçüncül katmanımız Network Layer'dı hatırlarsanız.
+
+333
+01:12:47,432 --> 01:12:56,352
+Buradaki adres datası, adres bilgisi Network Layer'daki adres bilgisi yani o şekilde düşünebilirsiniz.
+
+334
+01:12:56,351 --> 01:13:20,671
+Bizim göndereceğimiz adresle ilgili çeşitli ifadeler bunun bir adresle ilgili yazdığımız şey third level yani bir de physical layout falan da MAC adresler oluyordu o adresi kastetmiyoruz yani network layer'deki adresler ve kontrol kısmı var.
+
+335
+01:13:20,671 --> 01:13:29,231
+kontrol kısmındaysa bizim göndereceğimiz veri bir komut mudur veya bir cevap mıdır bunu bildiriyoruz.
+
+336
+01:13:29,231 --> 01:13:36,511
+Mesela single byte addressing yaptığımız durumda en sonuncusu bir.
+
+337
+01:13:37,171 --> 01:13:54,092
+bir ve yani 8 tane bitten oluşuyor. En sonuncusu her daim bir. 7 bitte bir adresleme gerçekleştiriyoruz. Yani böyle bir durumda bizim network'ümüzün içerisinde 2 üzeri 7'den 128 tane cihaz olabilir.
+
+338
+01:13:54,092 --> 01:13:55,651
+adres verdiğim.
+
+339
+01:13:56,012 --> 01:14:00,772
+Tabii 2 byte'lık adres kullanma durumum da söz konusu olabiliyor.
+
+340
+01:14:00,772 --> 01:14:06,512
+İlk 7 byte, ardından bir tane 0, ondan sonra da 7 byte adres alanı.
+
+341
+01:14:06,611 --> 01:14:18,911
+Toplam 14 byte'lık bir adres alanı 2 üzeri 14 tane cihaza burada bir network içerisinde iletişim kurabileceğim bir adresleme tarafı.
+
+342
+01:14:18,971 --> 01:14:21,012
+O şekilde düşünebilirsiniz.
+
+343
+01:14:21,012 --> 01:14:39,712
+Kontrol Filt'e gelecek olursak duruma göre 1 veya 2 byte olabiliyor. Eğer ki sliding window'un boyutu 7 ise boyutu 1, 127 ise window boyutu, kontrol Filt'ı da 2 byte uzunluğunda oluyor.
+
+344
+01:14:39,711 --> 01:14:59,651
+Bizim işte One gibi, Wide Area Network gibi şeylerde, applicationlarda şey One Area Network gibi ne denir ona? Highland delay yani çok gecikme olan belki çeşitli tekniklerde de kullanılması 127 frame'in kullanılması mantıklı oluyor.
+
+345
+01:14:59,651 --> 01:15:26,411
+Şimdi şöyle düşünün, sliding window'da window'un boyutu neyle alakalı? Bizim kullanacağımız üzerinde bulunduğumuz bir gönderim tekniği, iki datayı göndereceğimiz hattın fiziksel kapasitesi, hatayla karşılaşılma oranı, mesafesi bunların hepsi bizim window'umuzun boyutuna bir göstergesi olmuş oluyor.
+
+346
+01:15:26,411 --> 01:15:38,811
+Bizim windowumuzun boyutu eğer ki büyükse ve hatta da hata alma olasılığı çok yüksekse o windowu belki zaman zaman daha küçültmek elverişli olabiliyor
+
+347
+01:15:38,811 --> 01:15:45,211
+Bununla ilgili öncesinden belirlenmiş çeşitli tanımlar olabiliyor, yöntemden yönteme göre değişiyor
+
+348
+01:15:45,211 --> 01:15:53,532
+Diyelim ki bizim control field'ımız, sliding window tekniğimize göre, kullanılan uzunluğa göre değişiyor
+
+349
+01:15:53,532 --> 01:15:59,811
+ve kontrol field'ın başında bunun ne tarz bir frame olduğunu söylüyoruz.
+
+350
+01:16:00,252 --> 01:16:01,931
+3 tip frame'imiz vardı.
+
+351
+01:16:02,112 --> 01:16:04,011
+I-frame, S-frame, U-frame.
+
+352
+01:16:04,571 --> 01:16:12,571
+Eğer ki kontrol field'ın ilk biti 0 ise bu bir I-frame olduğu manasına geliyor.
+
+353
+01:16:13,392 --> 01:16:18,071
+Eğer ki ilk biti 1 ise S-frame veya U-frame olabilir.
+
+354
+01:16:18,071 --> 01:16:26,651
+yani ne denir ona? 3 frame'imiz olduğu için 3 farklı şeyi adresleyebiliyoruz 2 bit de sizin de görebildiğiniz üzere.
+
+355
+01:16:27,131 --> 01:16:34,071
+İlk biti 1, ikinci biti 0 ise bu bir iframe. Bakın kontrol field'ını açtık. Diğerleri sabit zaten.
+
+356
+01:16:35,611 --> 01:16:41,411
+Bize gelen frame'in ne frame'i olduğunu anlamaya çalışıyoruz diyelim ki.
+
+357
+01:16:41,871 --> 01:16:47,531
+Eğer ki 0 ise iframe, ilk 2 biti 1 ve 0'dan oluşuyorsa bu bir s-frame.
+
+358
+01:16:48,071 --> 01:16:53,491
+bir ve birden oluşuyorsa bu da bir U-frame olduğu manasına geliyor.
+
+359
+01:16:53,991 --> 01:16:57,151
+I-frame ile başlayalım kıymetli arkadaşlar.
+
+360
+01:16:57,151 --> 01:17:08,051
+Şimdi I-frame'in eğer ki window boyutumuz sliding window'da 7 ise ilki zaten 0'dı.
+
+361
+01:17:08,131 --> 01:17:09,811
+0 ise bu ne manaya geliyordu?
+
+362
+01:17:09,931 --> 01:17:12,931
+Bunun bir I-frame olduğu manasına geliyordu.
+
+363
+01:17:13,331 --> 01:17:17,511
+Bakın bunun bir I-frame olduğu manasına geliyordu.
+
+364
+01:17:17,511 --> 01:17:30,112
+ve iFrame iki tane üç bitlik akış kontrolünü sağlamak için alandan oluşuyor. Bakın şurası üç bit, şurası üç bit gördüğünüz gibi.
+
+365
+01:17:30,707 --> 01:17:50,388
+3 bit, 3 bit. Bir de parity ile ilgili bir şey var. Parity diyorum. Poll ile ilgili bir bit var. Şu tek bit, şu da bir bit. Toplam 2 bit etti. Şu bir byte olduğu için geriye 6 bit kaldı. 3 burada, 3 burada.
+
+366
+01:17:50,388 --> 01:18:12,468
+İşte iframe içerisinde piggybacking yapmak için kullandığımız mesela alan. Tamam mı? Yani ACK için. Ben senin mesajını aldım. Mesela NS kısmına onu yazıyoruz. Buraya diyelim ki 7 yerleştirdiysek ben 6'ya kadar olan frameleri aldım. Bana 7'yi yolla demek istiyoruz.
+
+367
+01:18:12,467 --> 01:18:18,507
+ve tabii gönderici taraf da bu manaya geliyor.
+
+368
+01:18:18,507 --> 01:18:21,087
+Tabii bu da bir de alıcı tarafı var.
+
+369
+01:18:21,247 --> 01:18:38,507
+Eğer ki siz bir şeyi receive yapıyorsanız, alıyorsanız bu tarafta eğer ki en sonuncu frame hatasız bir şekilde geldiyse size bir sonraki frame'in numarasını buraya yazıyorsunuz.
+
+370
+01:18:38,507 --> 01:18:47,007
+veya aldığınız en sonuncu frame'de hata varsa hata hangi frame'de ise onun numarasını buraya yazıyorsunuz.
+
+371
+01:18:47,067 --> 01:19:02,247
+Yani bakın information flay'inin içerisinde veri gönderdiğimiz flay'in içerisinde kontrol bloğunda sıfırla başladığı için bunun bir iframe olduğunu anladım ve geri kalan kısımları ise piggybacking olarak kullanıyorum.
+
+372
+01:19:02,248 --> 01:19:08,968
+Doğal olarak 7 ise boyutum 2 üzeri 8'den, 2 üzeri 3'den, pardon şunlar 3 ya
+
+373
+01:19:08,968 --> 01:19:14,388
+Evet 0, 1, 2, 3, 4, 5, 6, 7'yi ifade edebilirim ama 127 ise
+
+374
+01:19:14,388 --> 01:19:22,228
+Değil mi? Burada 2 tane 7 bitlik bloktan oluşuyor
+
+375
+01:19:22,228 --> 01:19:24,267
+Aynı şekilde gerçekleşiyor bu işlem
+
+376
+01:19:24,267 --> 01:19:34,068
+orada ne denir ona? Daha fazla frame numaralandırılması gerekeceği için daha fazla bir alan var. Onu söyleyebiliriz temelde.
+
+377
+01:19:34,068 --> 01:19:51,307
+S-Frame'e baktığımızda ise S-Frame'in temel amacı ben senin gönderdiğim mesajı aldım veya almadım veya şu mesajı senden bekliyorum hala şunu niye göndermiyorsun gibi çeşitli işler için ilk iki biti 1 ve 0'dı.
+
+378
+01:19:51,307 --> 01:20:20,247
+Bakın ilk iki biti 1.0. Bu zaten standart. Bunun bir S-Frame olduğunun bir göstergesi. Ardından bir kod iki bitlik buraya geliyor. Bunun ne olduğuna birazdan bakacağız. Yine bir pole filleyi. Bunun da ne olduğuna birazdan bakacağız. Yani bunu ne için kullanıyoruz genelde? Şöyle söyleyelim. Gönderilen tekstin bitip bitmediğini de bu S-Frame'de veya I-Frame içerisinde bulunan P'den anlayabiliyoruz.
+
+379
+01:20:20,247 --> 01:20:24,647
+Bir de tabii ki az önceki gibi kullanılan NR fileyi
+
+380
+01:20:24,647 --> 01:20:32,607
+Şimdi kontrol fileinde 1 ve 0'dan oluşuyorsa buna bir S frame diyorduk
+
+381
+01:20:32,607 --> 01:20:37,207
+Ve 1 ve 0'dan sonra gelen kod, 2 bitlik bir kod dedik bakalım
+
+382
+01:20:37,207 --> 01:20:39,727
+Bakın 0, 0 ise bunun receive ready
+
+383
+01:20:39,727 --> 01:20:44,067
+Yani bana mesaj göndermeye hazırım sinyali gönderiyorsun S frame ile
+
+384
+01:20:44,067 --> 01:20:46,207
+Eğer şuraya 0, 0 koyuyorsan
+
+385
+01:20:46,207 --> 01:20:50,207
+0-1 koyuyorsan senin aldığın...
+
+386
+01:20:50,707 --> 01:21:14,247
+şu senden aldığım şu numaralı frey alamadım, hatalı aldım bir şey oldu bana tekrar gönder diyorsun. Reject. Reject yazdığında şunu da yazıyorsun bakın. Şu da önemli. Receiving not ready. Sana bir şey sordu. Dedi ki ya sana bir şey gönderelim hazır mısın? Receiving not ready sinyali bakın S frame ile gönderiyorsun. 1 ve 0 yazarak kod kısmına veya selektif reject yapacaksın. Nasıl yapıyordun?
+
+387
+01:21:14,247 --> 01:21:36,248
+Ben 3 numaralı frame'i mesela almadım ama 7'ye kadar aldım. 3 numaralı frame'de hata var. Eğer ki siz buraya bakın selektif reject yaptığınız durumda şuraya 1-1 yazmanız gerekiyor ve hangi frame'i reject ediyorsanız o frame'in numarasını da buraya belirtiyorsunuz.
+
+388
+01:21:36,247 --> 01:21:53,387
+Yani dediğim biraz detaya iniyoruz U-Frame'de bu kadar detaya inmeyeceğim. Şu an bunlar basit olduğu için ve işte Receive Ready nedir, S-Reject nedir, Reject nedir bunları bilin istediğim için böyle detaylıca biraz anlatıyorum. Her sifarında bu kadar dediğim gibi detaya girmeyeceğim.
+
+389
+01:21:53,388 --> 01:22:07,167
+Eğer ki benim göndereceğim S-Frame, bir Receive Ready sinyali ise, bakın S-Frame, Receive Ready sinyali ise bu ACK yani bir acknowledgement için kullanılabilir.
+
+390
+01:22:07,167 --> 01:22:31,428
+Eğer ki pol biti 1 ise veya pol bitini 1 yapıp gönderiyorsam, şurası 0-0, bakın 1-0-0-0, polü de 1 yaptıysam bir primary cihazın sekinderi numarası verilmiş, şurada numarası verilmiş, bir sekinderi cihaza pol yapma neticesinde oluşuyor bu.
+
+391
+01:22:31,428 --> 01:22:47,148
+Tamam mı? Yani bakın bütün diziyi oluşturduk. 3 numaralı cihaz, P'si 1, primary cihaz bunu gönderiyor. Kodu da 0, 0 ise pol manasına geliyor. Tamam mı?
+
+392
+01:22:47,147 --> 01:23:15,327
+veya ben secondary cihazım, polü reject ediyorum. Tamam mı? Primary pol yapıyordu. Polü reject ediyorum. O zaman yine burası bir oluyor. Bakın P ve F birisi bir, birisi sıfır manasına gelmiyor. Farklı tarafların göndermesine göre P veya F diyoruz biz buna. Eğer ki F bir oluyorsa secondary cihaz aynı dizimde polü reject ettiği manasına geliyor.
+
+393
+01:23:17,148 --> 01:23:35,707
+Bir de şöyle bir durum söz konusuydu. Bana birincil cihaz select ile sana veri göndereceğim diye bir talepte bulunabiliyordu. Eğer ki biz bunu kabul etmek istiyorsak yine F1 yapıyoruz ve gönderiyoruz. Secondary'den primary'e gidiyor.
+
+394
+01:23:35,707 --> 01:23:49,088
+Bakın Recepol ile Exep Select arasında bit dizimi olarak hiçbir fark yok. Fakat onun öncesinde kendisine primary'den gelen mesajın içeriğine cevap veriyor.
+
+395
+01:23:49,487 --> 01:23:57,907
+Tamam yani primary açıp baktığında lan bu ne demiş yani Recepol mü Exepol mü demiş anlayamadım demiyor çünkü kendisi onun ne sorduğunu biliyor.
+
+396
+01:23:57,907 --> 01:24:06,288
+o şekilde düşünün lütfen bunu. Şurada birkaç örnek üzerinden böyle biraz anlatma yapalım dilerseniz.
+
+397
+01:24:07,068 --> 01:24:16,368
+Diyelim ki Receive Read'i P1 yaparak karşıya gönderdim. Pol yapıyorum. Bakın şurada pol. Receive Read'i P1 yaparak karşı tarafa gönderdim.
+
+398
+01:24:17,288 --> 01:24:24,588
+Dataları karşı tarafa gönderiyorum. Data gönderirken S-Frame değil ne gönderiyoruz datayı? I-Frame ile gönderiyoruz.
+
+399
+01:24:24,587 --> 01:24:38,407
+iFrame'in içerisinde bir kontrol kısmı var. O kontrol kısmında bulunan P ve F kısmında F, 0 ise sana datayı parçalayarak gönderdim.
+
+400
+01:24:38,868 --> 01:24:51,347
+şu an gönderdiğim bu parça en son parça değil manasında kullanılıyor. F1 olduğundaysa en son parça artık bu. Bundan daha fazla bu datayla ilgili sana parça göndermeyeceğim diyor.
+
+401
+01:24:53,847 --> 01:25:06,628
+Egzepol yaptı bakın. Egzepol yapınca doğal olarak veri karşıdan gelmeye başladı. Recepol'de ise hayır sana gönderecek hiçbir şeyim yok manasında kullanılıyor.
+
+402
+01:25:06,628 --> 01:25:14,248
+sorusu olan varsa arada sorabilir tabii. Böyle anlatıyorum da online derste sorusu olan var mı var mı var mı diye soruyoruz.
+
+403
+01:25:14,248 --> 01:25:23,967
+Kimse soru sormuyor. O sebeple ekstradan sormuyorum. Ama siz sorunuz varsa lütfen sormak istediğiniz zaman çekinmeden sorabilirsiniz.
+
+404
+01:25:25,388 --> 01:25:30,708
+Yine S-Frame'den devam edelim. Receive not ready olması durumunda nasıl oluyordu?
+
+405
+01:25:30,708 --> 01:25:46,088
+Şöyle biraz geri gelelim. Receive not ready. 1 ve 0 olduğunda yani gelen kontrol bloğu 1-0 şu kodda 1-0 ise artık bu receive not ready manasına geliyor ve temelde 3 farklı kullanımı var.
+
+406
+01:25:46,088 --> 01:25:58,168
+Ya ACK için yani ekle oluşmuk ne? Hazır değilim şu an manasında bir ekle oluşmuk için. Ya select yapmak için ya da select'ı reject yapmak için.
+
+407
+01:25:58,167 --> 01:26:23,487
+Receive Ready ile beraber yani 0-1 ile beraber pol yapıyordum. Bakın 1-0 ile beraberse select yapıyorum veya select'i reject yapıyorum. O şekilde düşünün. Receive Not Ready'i P1 olarak gönderdiğimde sana bir şey göndereceğim demek oluyor. Receive Ready ile beraber P1'i gönderecek gönderdiğimde ise bana bir şey göndermek ister misin diye soruyorum.
+
+408
+01:26:23,487 --> 01:26:33,247
+Tekrar söylüyoruz bakın, receive not ready ile beraber P1 karşıya giderse, primary'den secondary'e sana bir şey göndereceğim, uygun musun?
+
+409
+01:26:33,987 --> 01:26:39,327
+Receive ready ile beraber P1 giderse bana göndermek istediğin bir şey var mı? Demek
+
+410
+01:26:40,707 --> 01:26:49,887
+Eğer ki secondary'de receive ready sinyali ile beraber P1 gönderiyorsa tamam, kabul ettim, okey
+
+411
+01:26:49,888 --> 01:26:56,287
+veya resim not ready sinyaliyle beraber F'yi bir gönderiyse reject ediyor. Tamam.
+
+412
+01:26:59,408 --> 01:27:05,988
+Tamam. Bir de tabii reject ve selective reject kısmı söz konusu hatırlarsanız.
+
+413
+01:27:06,468 --> 01:27:14,328
+Go back and automatic request repeat. Bir de selective reject, automatic request repeat vardı hatırlarsanız.
+
+414
+01:27:14,868 --> 01:27:18,568
+Bunlar neydi? Bunları kısaca şöyle tekrardan özetlemiş olalım.
+
+415
+01:27:18,567 --> 01:27:30,588
+Go Back And tekniğinde reddetme mesajı yani bana bir frame hatalı geldi ise hatalı gelen frame'den sonra da bana başka frame'ler gelmiş olabilir.
+
+416
+01:27:30,588 --> 01:27:39,827
+O frame'lerin hatalı mı hatasız mı geldiğini hiç kontrol etmeden bana 3 numaralı frame hatalı geldi, 3'den sonrasını tekrar gönder.
+
+417
+01:27:39,827 --> 01:27:51,487
+dediğim teknik go back and RQ. Selective Reject ise bana mesela 7'ye kadar frame'ler gelmiş olsun, 4 numaralı frame hatalı gelmiş olsun.
+
+418
+01:27:51,487 --> 01:28:04,947
+Ben Selective Reject 4 yaptığımda bana sadece 4'ü gönder. Ondan sonra gönderdiklerinde sıkıntı yok veya onlarla ilgili mesajı daha sonra ileteceğim sana.
+
+419
+01:28:04,948 --> 01:28:18,448
+Bana şimdilik sadece 4'ü gönder demek için kullanılan bir teknik. Bunları da böyle anlatmış olalım. Bir diğeri tabii ki U-Frame. Bakın neden bahsettik? I-Frame.
+
+420
+01:28:19,347 --> 01:28:47,887
+sıfırla başlıyorsa IFrame'di, S-frame, bir sıfırla başlıyorsa kontrol bloğu S-frame'di, bir bir ile başlıyorsa da U-frame, session'ın kontrolü için çeşitli yönetimsel işlerde kullanılıyor. Bakın bir bir ile başlıyor. Yine bir P ve F biti var. Üç, üçüncü bitte burada. Bir, iki, üç. Şu bir byte olduğuna göre, sekiz bit yani, üç biti çıkart, geriye beş bit kaldı.
+
+421
+01:28:49,347 --> 01:29:13,947
+2 bit burada, 3 bit burada olmak üzere 5 tane bit var. Farklı kontrol işlemleri için kullanılıyor. Yönetimsel kontrol işlemleri için kullanılıyor. 2 üzeri 5'den 32 farklı işlem gerçekleştirebiliyorum burada. Evet, burada onu anlatmışız zaten. Bu 32 farklı işlemi 5 kategoride gruplandırabiliyoruz.
+
+422
+01:29:13,947 --> 01:29:20,447
+İşte modu seçeceğiz veya işte çeşitli alışveriş, bilgi alışverişi gerçekleştireceğiz.
+
+423
+01:29:20,827 --> 01:29:28,388
+Bağlantıyı sonlandıracağız, bağlantıyı başlatacağız ve işte çeşitli bunlara ek kontrol işlemleri.
+
+424
+01:29:28,487 --> 01:29:35,428
+Birazdan bunların detaylarına çok girmeyeceğim ama yüzeysel olarak neler olduğunu sizlere söylemeye çalışacağım.
+
+425
+01:29:35,428 --> 01:29:45,347
+Ben karşı tarafa göndereceğim Transmission'a başlamadan önce U-Frame ile Transmission'ın nasıl olacağını karşı tarafa söylüyorum
+
+426
+01:29:45,347 --> 01:29:53,928
+Bakın karşı tarafa ilettiğim U-Frame'in içerisinde 5 bitlik bir değer gönderiyorum ya
+
+427
+01:29:53,928 --> 01:30:04,008
+Bu 5 bitlik değer bu sekansda olursa normal response modda çalışacağım ama window size'm 7 olacak diyorum
+
+428
+01:30:04,007 --> 01:30:18,387
+Eğer şu sekansda o 5 biti gönderirsem asenkron balans modda çalışacağım ve Windows size'ım 7 demiş oluyorum. Bunların aynılarının 127 Windows size'ı olduğu durumları da var.
+
+429
+01:30:18,388 --> 01:30:23,688
+Bakın modun ne olduğunu daha veri göndermeye başlamıyorum
+
+430
+01:30:23,688 --> 01:30:27,708
+Uframe ile yönetimsel işler dedik ya hangi modda çalışacağız?
+
+431
+01:30:28,467 --> 01:30:31,347
+Bunu Uframe ile söylüyorum
+
+432
+01:30:31,347 --> 01:30:38,827
+Veya işte karşı tarafa ne denir ona bir request atacağım
+
+433
+01:30:38,827 --> 01:30:41,388
+Mesela poll request'i tamam mı?
+
+434
+01:30:41,467 --> 01:30:43,687
+Bir information değişimi yapacağız
+
+435
+01:30:43,687 --> 01:30:45,627
+Zamanı ayarlayacağız mesela
+
+436
+01:30:45,627 --> 01:30:58,027
+işte burada gördüğünüz sekansı gönderiyorum. İşte mesela pardon zamanı ayarlamak için sıfır sıfır doğru bunu gönderiyorum birbirimize hadi senkronize olalım demek için.
+
+437
+01:30:58,448 --> 01:31:07,228
+Bu tabii bir komand da olabilir. Saatini şuraya şunu ayarla bir sonra information flay'ın içerisine saat gönderecek belki.
+
+438
+01:31:07,788 --> 01:31:14,807
+Şunu ayarla diye bir komand da olabilir veya senin saatin kaç diye sorup ona gelen bir cevap da olabilir.
+
+439
+01:31:14,807 --> 01:31:44,547
+burada onu anlatıyor. Tabii bir bizim bize gönderilen U-Frame ile bir yönetimsel işlemin sonucunda biz bir cevap da karşı tarafa aldım. Senin saatini şuna ayarla dediğini aldım gibi çeşitli komutlarda gönderebiliyoruz. Tamam mı? Üç tanesi de bu işler için. Bakın ayrılmış. Disconnection. Tamam mı? Bunun için de üç tip bağlantıyı sonlandırma,
+
+440
+01:31:44,807 --> 01:32:14,787
+yöntemi var. Eğer ki şu kombinasyondaysa, tabii bunlar 32 tane olduğu için bakın bunların hepsine birer ad verilmiş. UP, kısa adları var. UA, UI. Hatta ilk gördüğümüz o beşinin de adı vardır muhtemelen. SRRM. Bakın görüyorsunuz. Hepsine bir kısaltma ad verilmiş. Bu bit kombinasyonunu söylemektense daha güzel anlaşılır diye. Eğer ki veriyi, iletişimi ilk başlayan taraf, bütün her şeyin bittiğinde
+
+441
+01:32:14,787 --> 01:32:19,107
+aynı anlamda yıp connection'ı sonlandıracaksa işte disk.
+
+442
+01:32:20,435 --> 01:32:40,956
+Uframe'ini gönderiyor. Veya, evet, yani ikinci cihazın işte connection artık sonlandır demek için gönderdiği medenurona bir komut söz konusu. Bakalım bu neydi? Bunu ben de hatırlamıyorum. Bir baka.
+
+443
+01:32:44,851 --> 01:32:48,312
+Hocam, birinci satırdaki de ikinci satırdakinin kodu aynı ama
+
+444
+01:32:48,312 --> 01:33:00,812
+Evet, özür dilerim, orada bir yanlışlık olmuş, onu düzeltelim, tamam mı? Şu an hatırlamıyorum kodunun ne olduğunu
+
+445
+01:33:00,812 --> 01:33:06,591
+Bunların kodunun da aynı olmaması gerekiyor, çok doğru söylüyorsun, ben ona bir bakayım, tamam mı?
+
+446
+01:33:06,591 --> 01:33:11,951
+Ara verirsek, aradan sonra yoksa önümüzdeki hafta onu bir düzeltelim, uyardığın için çok teşekkür ediyorum
+
+447
+01:33:11,951 --> 01:33:16,891
+Yani 5'i de aslında farklı olacak. Tamam? 5'i de farklı olacak. Buyurun.
+
+448
+01:33:16,911 --> 01:33:24,571
+Hocam, bir tarafından yollandığına göre belki ilişki olabilir mi? Birinci de birinci taraftan, ikinci de ikinci taraftan yollanıyor. Aynı kod.
+
+449
+01:33:25,911 --> 01:33:36,691
+Bir bakalım. Doğru söylüyorsun. Doğru söylüyorsun. Send by the first side. Evet. İletişimi ilk kuran station tarafından. To terminate the connection A'dır. Aynen.
+
+450
+01:33:36,692 --> 01:34:04,392
+Aynen. Senin dediğin gibi de olabilir. Burayı çok hatırlamıyorum açıkçası. Senin dediğin gibi de olabilir. Ben buna bir bakayım. Tamam? Ben buna bir bakayım. Saydığımızda 33 tane çıkıyorsa birisi bundan olabilir ama yine de bir bakayım. Özel ayrı ayrı çeşitli durumlarda ayrı ayrı şeyler kullanıyorlar çünkü. Burada öyle de olabilir, öyle olmaya da olabilir. Niye böyle yazmışım bilmiyorum.
+
+451
+01:34:04,392 --> 01:34:12,231
+ama birisi birinci, birisi de ikinci cihazın olayı sonlandırmasıyla ilgili bir durum açıkçası burada.
+
+452
+01:34:13,311 --> 01:34:17,171
+Evet, disconnection böyle, ona bir bakacağım dediğim gibi.
+
+453
+01:34:17,171 --> 01:34:18,911
+Bir de initialization var.
+
+454
+01:34:20,051 --> 01:34:31,171
+Yine initialization da ben nedeni ona göndermeye, veri göndermeye başlayacağım sana demek için kullanılan bir ifade.
+
+455
+01:34:31,171 --> 01:34:44,252
+birincilden ikinci cihaza gönderiyorum ben bunu. Ben işte sana veri göndermeye başlayacağım veya işte sen bana veri gönderecek misin gibi çeşitli işler oluyordu ya.
+
+456
+01:34:44,252 --> 01:34:59,991
+Bunun için bir initialization, bir başlangıç işlemi uygulamak lazım bu şekilde. Bir de tabii initialization'ın ben senden başlangıç bekliyorum diye bir hali de var.
+
+457
+01:34:59,991 --> 01:35:22,691
+Bak az önce hangi arkadaşımız konuştu bilmiyorum ama şeydi doğru söylemiş. Buradaki olunca da hatırladım. Evet bu ikisi gönderen tarafa göre farklılık gösteriyor. Yani eğer primary gönderiyorsa aynı dizinin farklı bir manaya geliyor. Secondary aynı dizini gönderiyorsa farklı bir manaya geliyor. O arkadaşımıza teşekkür ediyorum. Çünkü aynı durum burada da var. İkisini de yanlış almış olamam yani.
+
+458
+01:35:22,691 --> 01:35:44,591
+bakın burada işte ben initialization'ı başlatıyorum demek için bu. Bu da senin initialization'ı başlatmanı bekliyorum demek için olan dizin. Yani farklı taraflar gönderdiğinde aynı U-Frame'i farklı mana ifade ediyor. Oradaki uyarısı için arkadaşımıza da teşekkür ediyoruz.
+
+459
+01:35:44,591 --> 01:35:45,591
+tabi ben çeşitli problemler oldu bazı şeyleri artık reset diyeceğim yani tekrardan bir işlemi başlatalım mesela şöyle bir şey olabilir diyelim ki benim bir connection'ım söz konusu ve bu connection'da artık frame window'da ben hangi yerdeyim işte hangisini aldım ne yaptım her şey birbirine girmiş karışmış olabilir çeşitli problemlerden dolayı ya kardeşim şu işi bir daha gel başlatalım baştan baştan reset'in ne maneviye
+
+460
+01:36:14,591 --> 01:36:18,931
+geldiğini biliyorsunuz. Onun için de bir gördüğünüz gibi special sequence var.
+
+461
+01:36:19,411 --> 01:36:25,351
+Diğer detayları bunlar uzayıp gidiyor çünkü. Çok detaylı bir şekilde değinmeyeyim.
+
+462
+01:36:25,511 --> 01:36:30,211
+Sadece örnekler üzerinden gideyim. Kapı çünkü çok yorulmasın sizin de.
+
+463
+01:36:30,211 --> 01:36:39,431
+Şimdi kabaca, kabaca şunları söyleyebiliriz. Kabaca. Uframe yönetimsel işler için kullanılıyor.
+
+464
+01:36:39,432 --> 01:36:42,672
+iFrame veriyi gönderiyorum.
+
+465
+01:36:43,039 --> 01:36:55,439
+iframe'in içerisinde piggy bank ve eclonishment da gönderebilirim. S-frame'le de ben karşı tarafa veriyi alıp almadığıma dair veya aldıysam hangilerini aldığıma dair bir bilgi gönderiyorum.
+
+466
+01:36:55,559 --> 01:37:03,659
+Tamam mı? Bu frame çeşitlerinin ne manaya geldiğini bu şekilde gruplayalım. Yani detaylı bir şekilde hiçbir zaman şunu sormayız, yanlış anlaşılmasın.
+
+467
+01:37:03,659 --> 01:37:12,880
+Şu bit sekansı ne manaya gelir? Böyle bu kadar detaylı bir şekilde öğrenmeyin. Sadece bilin. Yani kabaca neler var? Bakın.
+
+468
+01:37:13,039 --> 01:37:41,979
+İşte mod selection gerçekleştiriyoruz. Hani şuradaki özelliklerin neler? Yani onu bilmek lazım. Yoksa teker teker şu sekans şu manaya gelir böyle lütfen uğraşmayın. Bakın ben de bilmiyorum ama ne iş yaptığını kabaca bilmemiz burada önemli olan şey. Yoksa hepsini öğrenebilmemizin hakikaten imkanı yok. İhtiyacımız olduğunda biz de sizin gibi açıp bakıyoruz.
+
+469
+01:37:41,979 --> 01:37:56,539
+Şimdi pol ve final file'inin kullanımı ise bu eğer birincilden ikincile giden bir mesajsa buna ben pol biti diyorum.
+
+470
+01:37:56,539 --> 01:38:04,199
+Eğer ki ikincilden birincile gelen bir mesajsa buna ise final file'i diyorum.
+
+471
+01:38:04,199 --> 01:38:14,039
+Yani her iki durumda da bir olabilir ama nereden nereye geldiğine göre pole veya final olarak değişiklik gösterebiliyor
+
+472
+01:38:14,039 --> 01:38:19,239
+Burada özetlemiş miyiz olayı?
+
+473
+01:38:19,239 --> 01:38:30,279
+Tamam, dedik ya 3 frame tipi var, I frame, U frame, S frame, bu frame'leri kullanarak ben 3 fazlı bir mekanizmayla bu işi gerçekleştiriyorum
+
+474
+01:38:30,279 --> 01:38:46,439
+Bunlardan ilk fazı connection'ın başlatılması, bir linking kurulması, ardından akış kontrolü de kullanarak iletmek istediğim datanın karşı tarafa iletilmesi ve en sonunda connection'ın sonlandırılması
+
+475
+01:38:46,439 --> 01:38:49,400
+Temelde 3 fazımız var bunun içerisinde
+
+476
+01:38:49,400 --> 01:38:55,200
+Bakın şöyle biraz görselden örnekle bu işi gerçekleştirelim
+
+477
+01:38:55,200 --> 01:39:10,080
+Şimdi bir A saytımız bir de B saytımız var A'dan B'ye bir şeyler göndereceğiz veya işte yönetimsel veya işte veriyle ilgili bakalım ne tarz bir iş yapacağız
+
+478
+01:39:10,080 --> 01:39:18,980
+Karşı tarafa connection'ı başlatmak için bir işte kullanacağımız modu da söyleyen bakın bir mesaj gönderiyoruz
+
+479
+01:39:18,980 --> 01:39:48,539
+Bunu nasıl gönderiyoruz? Flame'i standart. 1, 5, 6 tane şey 0, 6 tane 1, 1 tane de 0. Bakın B'ye gönderiyorum. Ben A'yım ya B'ye gönderiyorum. Tamam mı? Ve bunun bir U-frame olduğunu nereden anlıyorum? İlk 2 biti 1, 2. Tamam mı? 1, 2. 2 biti 1 ise bu bir U-frame. Yani şuraya biz anlaşılsın diye U-frame yazmışız ama ilk 2 biti 1 ise çok özür diliyorum.
+
+480
+01:39:48,980 --> 01:39:52,620
+İlk 2 biti 1 ise buradan ben anlıyorum ki bu bir Uframe
+
+481
+01:39:52,620 --> 01:39:57,459
+Connection'ı başlatacağım diye mesaj gönderdim buraya
+
+482
+01:39:57,459 --> 01:39:59,739
+Burası 1 ama P iken 1
+
+483
+01:40:00,000 --> 01:40:24,399
+secondary buna karşılık verdi. Tamam, okey, connection'ı başlatabiliriz diye. Bu sefer F1 geliyor. Tamam ama bakın kodları, şu alandaki şeyleri başka. Ardından bir bağlantımız var. Aktif bir bağlantımız var. Bu bağlantıda tabii veriler gelip gidiyor. Resetler gelebilir. Yine U-frame'lerle, S-frame'ler, I-frame'ler geldi gitti. Bir zamanın akışı var.
+
+484
+01:40:24,399 --> 01:40:32,459
+Ardından biz yine başlatan taraf olarak diskle sonlandırma talebinde bulunuyoruz
+
+485
+01:40:32,459 --> 01:40:40,239
+O da bize sonlandırmamızı kabul etme isteği gönderiyor
+
+486
+01:40:40,239 --> 01:40:42,959
+Mesela bu şekilde temelde ilerliyor
+
+487
+01:40:42,959 --> 01:40:47,979
+Biraz daha detaylı bir örnek üzerinden bakalım kıymetli arkadaşlar
+
+488
+01:40:47,979 --> 01:40:53,099
+Diyelim ki ben karşıya bir iframe gönderiyorum
+
+489
+01:40:53,099 --> 01:41:17,500
+iFrame ne demek? Data gönderiyorum. Nasıl gönderiyorum? Bu frame'de kontrol kısmında bakın şurada hangi frame'i gönderiyorum, hangi frame'i senden aldım onları söylüyorduk hatırlarsanız. Ben diyorum ki karşı tarafa sana sıfır numaralı frame'i gönderiyorum, senden de sıfırı bekliyorum.
+
+490
+01:41:17,500 --> 01:41:36,000
+Tamam mı? Sana 0 numaralı frame'i gönderiyorum. Şurada 0 yazıyor. Senden de 0'ı bekliyorum. Karşı taraf bana bu sefer alıcı taraf bakın. Karşı taraf bana sana 0 numaralı frame'i gönderiyorum. Senden 0 aldım 1'i bekliyorum.
+
+491
+01:41:36,000 --> 01:42:03,540
+dedi. Ondan sonra burası sana bir numaralı frame'i gönderiyorum, senden sıfır aldım, biri bekliyorum diyor. Böyle sırasıyla akış gitmek zorunda değil. Birisi daha fazla da gönderebilir. Çünkü B, C'le de konuşuyor olabilir aynı zamanda. Hep A'ya vakit ayıramıyor olabilir ama A hep B'le konuşuyordur. Daha fazla gönderebiliyordur. Bakın ardı ardına iki kere A gönderiyor.
+
+492
+01:42:03,540 --> 01:42:29,960
+A diyor ki bak burada biri göndermişti, burada ikiyi gönderiyor. Sana ikiyi gönderiyorum ve senden bir numaralı frame'i bekliyorum diyor. Ondan sonra B cevap veriyor. Sana bir numaralı frame'i gönderiyorum, senden ikiyi de aldım, üçü bekliyorum. Bu ne demek? İkiyi de aldım, üçü bekliyorum demek ne demek? Biri de ikiyi de almış. Biri için ayrıca göndermemiş oluyor böylece. Sliding window ya.
+
+493
+01:42:29,959 --> 01:42:49,779
+Ardından connection'ın çok özür diliyorum. Ardından bir S-frame bakın S-frame şey için ne denir ona? Şurada bu işi göndermemiz neydi? Gönderdim aldım piggyback'in şuraya yerleştirmeyi.
+
+494
+01:42:49,779 --> 01:43:00,179
+Bakın artık A'dan B'ye gönderilecek bir mesaj data kalmadığı için bir data kalmadığı için I frame ile değil S frame ile gönderiyor
+
+495
+01:43:00,179 --> 01:43:08,800
+Receive Ready ile beraber senden 2 numaralı frame'i almaya hazırım yani 1'e kadar olanları aldım 2'yi almaya hazırım
+
+496
+01:43:08,800 --> 01:43:13,100
+Daha gönderecek datası kalmamış çünkü o yüzden S frame ile gönderiyor
+
+497
+01:43:13,099 --> 01:43:20,179
+Bu aradaki piggybackingli olayı anlıyorsunuzdur diye ümit ediyorum. Anlamıyorsanız sorun lütfen.
+
+498
+01:43:21,379 --> 01:43:33,619
+Yine bir akış, bu akışların üzerinden biraz geçiyorum ki güzel böyle bir şeyler anlaşılabilsin. Anlamadığınız yer olursa lütfen sorun.
+
+499
+01:43:33,619 --> 01:43:39,259
+Hocam, piggybacking neydi? Söylemişsiniz ama ben kaçırdım.
+
+500
+01:43:39,259 --> 01:43:54,199
+Şimdi piggybacking nedir? Onu tekrardan söyleyelim. Ben karşı tarafa bir mesaj gönderiyorum. Karşı tarafta bana o mesajı aldım veya o mesajı hatalı aldım.
+
+501
+01:43:54,676 --> 01:44:17,415
+veya o mesajı gönder gibi bir bilgilendirme mesajı gönderiyor. Bu sistemde ben karşı tarafa veri göndermek için kullandığım frame, iframe ve ona cevap olarak yani tamam aldım veya işte tekrar gönder, reject gibi yani işler içinse s-frame'i kullanıyorum.
+
+502
+01:44:17,415 --> 01:44:33,016
+Fakat ben ona mesaj göndereceksem, şimdi burada ne var? Hatırlarsanız bundan bir önce byte oriented da half doublex'ti. Burada doublex. Yani ben veri gönderiyorken karşıya o da bana gönderiyor. Ben gönderiyorum, o gönderiyor. Ben gönderiyorum, o gönderiyor.
+
+503
+01:44:33,016 --> 01:45:02,396
+İşte piggybacking ne? Piggybacking domuz kuyruğu. Yani hani öyle düşünün domuz kuyruğu. Domuz kocaman bir şey. Kuyruğu da ufacık bir şey ya. Siz işte göndereceğiniz iframe'de datanın içerisine ben şuraya kadar olanları aldım diye s-frame'i gömerek gönderiyorsunuz sanki. Buna piggybacking deniliyor. Yani şuradaki bütün iframe'lerin içerisinde s-frame var aslında.
+
+504
+01:45:03,015 --> 01:45:07,895
+Tamam? ACK'yı iframe'in içine yedirmeye piggybacking diyoruz
+
+505
+01:45:07,895 --> 01:45:10,855
+Tamamdır hocam teşekkür ederim
+
+506
+01:45:10,855 --> 01:45:12,555
+Ben teşekkür ederim
+
+507
+01:45:12,555 --> 01:45:17,655
+Şimdi bunu anlatmaya başlamadım herhalde o yüzden baştan başlıyorum şuradan
+
+508
+01:45:17,655 --> 01:45:24,655
+Ne demiş? BA'ya tamam mı? Bu bir önceki slide'ın akışı olmak zorunda değil illa yanlış anlaşılmasın
+
+509
+01:45:24,655 --> 01:45:31,695
+Yani başka bir veri gönderimin parçası gibi düşünün bunu
+
+510
+01:45:31,695 --> 01:46:00,495
+Burada diyor ki ben sana ne denir ona 3'ü gönderiyorum. Senden 0 numaralı frame'i bekliyorum. Onu söylüyor. Daha A, B'ye hiçbir şey göndermemiş olabilir. Şimdi karşı tarafaysa ne söylüyor? Sana göndereceğim herhangi bir şey yok. Sana göndereceğim herhangi bir şey yok. 4'ü aldım. Tamam. S frame ile gönderiyor bunu.
+
+511
+01:46:00,495 --> 01:46:23,256
+Ondan sonra bana göndermek istediğin bir şey var mı? diye soruyor. Bakın S-Frame ile soruyor bu sefer. Bunu da gönderecek hiçbir şey yok. Artık beğenin de kalmamış demek ki. Bana göndermek istediğin bir şey var mı? Hayır yok. En son 4'ü aldım. Yine hatırlatıyorum. Bana göndermek istediğin bir şey var mı? Hayır yok. Diye tekrardan söylüyor. Ama bak bu sefer ne söylüyor?
+
+512
+01:46:23,256 --> 01:46:32,556
+Bundan önce şuraya kadar olan kısımlarda 3'ü aldım, 4'ü de alacağım ama almaya henüz hazır değilimle geliyordu
+
+513
+01:46:32,556 --> 01:46:35,676
+Şimdi ise ne söylemiş? Receive ready gelmiş
+
+514
+01:46:35,676 --> 01:46:39,436
+Yani receive not ready, receive not ready, receive ready geldiğimde ne diyor?
+
+515
+01:46:40,136 --> 01:46:48,496
+Bu sefer şunu söylüyor, tamam 3'e kadar olanları almıştım, bundan önce de hazır değildim almaya ama şu an almaya hazırım
+
+516
+01:46:48,496 --> 01:46:52,256
+Hazır olduğu için bu da tak tekrardan 4'ü gönderiyor
+
+517
+01:46:52,256 --> 01:47:22,235
+Yani şurada her seferinde soruyor hazır mısın hazır mısın yollayayım mı ne haber falan diye burada sürekli dürtüyor hazır değilim hazır değilim niye hazır değildir yani iki cihaz birbiriyle konuşuyor niye hazır değildir multipoint bir şey yapıyoruz A B ile konuşurken aynı zamanda şu timeline'ında biz burada görmüyoruz ama A başka birisiyle de konuşuyor olabilir yani böyle olunca sen bir senden veri almayayım sen bir sus şunu bir halledeyim onun prioritisi daha yüksek olabilir mesela o yüzden hazır olmayabilir kendisi arka tarafta işlemler.
+
+518
+01:47:22,256 --> 01:47:37,155
+gerçekleştiriyor olabilir. Buffer'ı dolmuştur, temizlemeye çalışıyordu. Çeşitli sebeplerle hazır olmayabilir. Hazır olduğundaysa tamam hazırım diye bakın gönderiyor ve o da iFrame'ini yollamış oluyor. Mesaj içeren frame'ini yollamış oluyor.
+
+519
+01:47:38,836 --> 01:47:43,936
+Tabii her daim durum böyle güllük gülistanlık değil. Ne demek istiyorum?
+
+520
+01:47:46,100 --> 01:48:10,319
+Framelerin başına yolda bir şeyler gelebilir. Yani ben karşı tarafa frame'i gönderiyorum ama o frame karşı tarafa ulaşmamış olabilir. Yolda başına bir şey gelmiş olabilir. Tamam. O anlık bir şey yani. Ve böyle olunca karşı tarafın bu durumdan haberi olması lazım. Nasıl olacak? Bakın. A'dan B'ye tekrardan information flag'li, iFrame'le beraber bir mesaj gönderiyoruz.
+
+521
+01:48:10,319 --> 01:48:17,419
+diyorum ki sana 3 numaralı sekanstaki şeyimi gönderiyorum, frame'imi gönderiyorum.
+
+522
+01:48:17,719 --> 01:48:19,699
+Göndereceksen senden de 0'ı bekliyorum.
+
+523
+01:48:20,440 --> 01:48:22,239
+4'ü gönderiyorum, 5'i gönderiyorum.
+
+524
+01:48:22,839 --> 01:48:25,979
+Bakın 4 biz buradan görüyoruz dışarıdan.
+
+525
+01:48:26,320 --> 01:48:32,899
+Başına bir şey gelmiş ama B şu zaman diliminde gittiği için B göremiyor yani ne oldu başına.
+
+526
+01:48:32,899 --> 01:48:37,039
+Ne zaman anlıyor? En son 3'ü aldı bir de 5 geldi şimdi.
+
+527
+01:48:37,259 --> 01:48:39,339
+Allah Allah 4 nerede? Değil mi yani?
+
+528
+01:48:39,339 --> 01:49:00,659
+Hani 3'ü almışsın, 5'ü almışsın, 4 nerede? Anlıyor. Hemen bakın reject sinyali gönderiyor. S frame ile beraber reject sinyali gönderiyor. Reject sinyali neydi? Ben, çok özür diliyorum. Ben 4'ü almadım. Bana 4 ve 4'ten sonra başka da gönderdiklerim varsa hepsini gönder.
+
+529
+01:49:00,659 --> 01:49:22,519
+Bakın burada 5'i almış görünüyor. Sadece o frame'in 5 numaralı frame olduğunu anladıktan sonra hemen reject sinyali gönderdi. Böyle olunca frame'in içerisinde 5 numaralı frame'in içerisinde datasını açıp bu datada hata kontrolü yapayım şununla bununla hiç uğraşmıyor. Tamam mı?
+
+530
+01:49:22,519 --> 01:49:42,259
+4'ten sonrasını tekrar gönder bakacağız duruma diyor. Bu adam 4'ten sonrasını tekrar gönderiyor. Recek değil de selektif recek yapsaydı ne olacaktı? Diyecekti ki 4 numaralı frame selektif recek sadece 4'ü bana tekrar gönder demek istiyor.
+
+531
+01:49:42,259 --> 01:49:53,459
+5 numaralı frame'i o ara açıp kendisi kontrol edecek hata kontrolleri falan filan 5'i başarılı aldıysa bir süre sonra onu da başarılı aldım diye karşı tarafa söyleyecek.
+
+532
+01:49:53,839 --> 01:50:04,139
+Almamış da olabilir. Yani bir şeyin bana bütün bitlerinin net bir şekilde gelmesi açıp baktıktan sonra hata kontrol tekniklerini uyguladıktan sonra anlayabileceğim bir şey.
+
+533
+01:50:04,139 --> 01:50:05,040
+Tamam.
+
+534
+01:50:06,839 --> 01:50:09,899
+Tamam multipoint çalışalım. Mesela bir yapıda.
+
+535
+01:50:09,900 --> 01:50:31,780
+Bu da bir örnek olsun. Bundan sonra da çeşitli örnekler var. Tam devam ediyor. Hadi şu örneği de bir yapalım. Zanımca olay anlaşılmıştır gibi hissediyorum. Siz bakabilirsiniz diğer örneklere. Şimdi bakın Primary Station yani Pols de A bizim birinci bir tane cihazımız. İki tane de sekunderimiz var. Sekunderimiz A ve B.
+
+536
+01:50:31,779 --> 01:50:54,239
+A'ya pol yapıyor. Pol yapmak demek ne demek? Bana göndermek istediğin bir şey var mı? Diye soruyor. Bakın bana göndermek istediğin bir şey var mı? Diye soruyor. Neyle soruyor? S-frame ile. Tamam mı? S-frame'deki ilgili alanlar doğru şekilde dizildiğinde bu ne demek? Bana göndermek istediğin bir şey var mı?
+
+537
+01:50:54,239 --> 01:51:02,180
+A-Station'ı daha göndermek istediği bir şey varmış. Demek ki ki iframe gönderiyor.
+
+538
+01:51:03,719 --> 01:51:10,079
+Iframe işte sana şu datayı göndereceğim. Tabii başına sonuna şunu bunu ekliyor.
+
+539
+01:51:10,499 --> 01:51:14,159
+Sana şu datayı göndereceğim. Gönderdi, karşı tarafa gitti.
+
+540
+01:51:16,083 --> 01:51:42,083
+burada bakın şu kısım önemli, şu kısım önemli. Burada iki farklı şey var. Ben size söyledim ya, göndermek istediğim diyelim ki bir resim, bir fotoğraf. Bu fotoğrafı böyle tek parçada mesela diyelim ki 64 MB'lik bir fotoğraf göndereceksiniz. Tek parçada karşıya gitmeyecek, bölünecek datalara. Yani bu A primary'e böyle büyük bir dosya göndereceği zaman onu işte birkaç parçaya bölüyor.
+
+541
+01:51:42,083 --> 01:51:49,543
+Bakın gönderdi bir data gönderirken buraya F diyorduk secondary primary'e gönderirken P değil de F oluyordu
+
+542
+01:51:49,543 --> 01:52:00,484
+F sıfırsa iframe'de bu şu manaya geliyor sana data gönderiyorum ama bu büyük o verinin son data parçası değil daha da göndereceğim
+
+543
+01:52:00,484 --> 01:52:08,083
+F bir olduğu durumda bu son data parçası bundan sonra daha göndermeyeceğim demek manasına geliyor
+
+544
+01:52:08,083 --> 01:52:15,843
+Bu kısımda bu F'in 1 olmasına lütfen önemle dikkat edin
+
+545
+01:52:15,843 --> 01:52:24,244
+Ardından primary A'ya tamam, her şey çok güzel
+
+546
+01:52:24,244 --> 01:52:30,844
+2'ye kadar olanların hepsini senden başarılı bir şekilde aldım
+
+547
+01:52:30,844 --> 01:52:37,783
+Senden de daha başka bir şey beklemiyorum diyerek Receive Not Ready ile beraber olayı sonlandırmış oluyor
+
+548
+01:52:37,783 --> 01:52:45,583
+Hocam, ikinci, üçüncü satırda adres olarak A yazmış. O primary'nin adresini vermesi gerekmiyor mu?
+
+549
+01:52:45,583 --> 01:53:03,143
+Yok, primary'nin adresi standart. Bakın bu ilişkide primary-secondary ilişkisinde primary zaten belli. Hangi cihazın primary olduğunu secondary'lerin hepsi biliyor. Tamam mı? Primary bilindiği için primary'ye gelen mesaj nereden geldiğini söylüyor burada.
+
+550
+01:53:03,143 --> 01:53:04,804
+Anladım
+
+551
+01:53:04,804 --> 01:53:06,963
+A'dan geliyor yani
+
+552
+01:53:06,963 --> 01:53:08,923
+Buraya gelmiş ama nereden gelmiş? A'dan geliyor
+
+553
+01:53:08,923 --> 01:53:10,603
+Primary'i herkes biliyor
+
+554
+01:53:10,603 --> 01:53:13,403
+Öyle söyleyeyim ama birçok sekunderi var
+
+555
+01:53:13,403 --> 01:53:15,543
+A ile B ilişki kuracaksa da
+
+556
+01:53:15,543 --> 01:53:17,603
+Güne zaten primary'in üzerinden olduğu için
+
+557
+01:53:17,603 --> 01:53:19,423
+Tabii primary'in üzerinden oluyor
+
+558
+01:53:19,423 --> 01:53:21,403
+Yani A primary'e diyor ki
+
+559
+01:53:21,403 --> 01:53:22,783
+Ben B'ye bir şey göndereceğim
+
+560
+01:53:22,783 --> 01:53:24,464
+Git sor bakalım müsait mi?
+
+561
+01:53:24,944 --> 01:53:26,664
+Primary B'ye soruyor müsait misin?
+
+562
+01:53:27,384 --> 01:53:29,964
+Ondan sonra eğer B müsaitim derse
+
+563
+01:53:29,964 --> 01:53:31,323
+Primary A'ya diyor ki
+
+564
+01:53:31,323 --> 01:53:32,763
+Müsaitmiş gönder abi
+
+565
+01:53:32,763 --> 01:53:39,083
+A primary'ye gönderiyor, primary B'ye gönderiyor. Tamam mı? Bu primary secondary ilişkisinde bu şekilde çalışıyor.
+
+566
+01:53:39,743 --> 01:53:41,183
+Anladım hocam. Tamamdır.
+
+567
+01:53:41,823 --> 01:53:55,683
+Tamam. Bunları şey yaptık mı? Yaptık herhalde. Şuraya da bir bakalım. Bunlar hani dediğim gibi örnekler S frame, I frame, U frame'in farklı kullanılış şekilleri. Tamam mı?
+
+568
+01:53:55,683 --> 01:54:07,523
+Primary, B'yi sana data göndereceğim diye seçiyor. Bakın, resim natredi ile beraber. Sana data göndereceğim diye seçiyor.
+
+569
+01:54:09,123 --> 01:54:25,123
+Station B, inform the primary, detiz natredi resim. Ben bakın, senden mesaj almaya hazırım. Yani secondary'nin şu hakkı var. Primary, sana mesaj göndereceğim dediğinde,
+
+570
+01:54:25,683 --> 01:54:51,143
+senden mesaj göndermeye hazırım veya değilim diyebiliyor. Bunu da yine bakın bir S-Frame ile bildiriyor. Ama S-Frame ile bildiriyor da her iki tarafta da B yazıyor. İşte primary de B'ye gönderse böyle yazıyor. Buraya B konuluyor adres kısmına. Secondary primary'ye de gönderse ben B'yim diye söylüyor. Zaten ilişki multipoint ama primary ile secondary de sanki point to point gibi düşünün.
+
+571
+01:54:51,143 --> 01:54:58,703
+Ardından bir iframe gidiyor. Bakın primary start send to data station B göndermiş.
+
+572
+01:54:59,923 --> 01:55:24,463
+Tamam. Yani burada eğer ki P sıfır olduğu durumda ne olduğunu biliyorsunuz zaten. Gönderecek veriyle ilgili. Burada henüz o şekilde kullanılmamış. Öyle söyleyelim. Yani bittiğinde bir olacak. Göndereceği veri. Ardından yine bir ne geliyor? Bizim S-Frame'miz geliyor.
+
+573
+01:55:32,435 --> 01:56:00,875
+yani hatırlarsanız az önce piggybacking'i anlatırken şunu söylemiştim. O size veri gönderiyor. Sizin ona göndereceğiniz veri yoksa ona bir acknowledgement bildirmeniz lazım. O acknowledgement'ı işte S-Frame ile bildiriyorsunuz. Burada senden biri aldım. Yani senin gönderdiğin o ilk frame'i aldım, biri bekliyorum diye B-Station'ı da primary'e böyle bir frame ile S-Frame ile durumu bildiriyor.
+
+574
+01:56:00,875 --> 01:56:04,575
+Hocam bu iFrame ile de gerçekleşebilir miydi?
+
+575
+01:56:05,435 --> 01:56:11,595
+Gerçekleşebilirdi ama iFrame'i ne zaman kullanıyoruz? Primary bana bir şey gönderiyor şu an.
+
+576
+01:56:11,595 --> 01:56:22,355
+Okey, ben de aynı zamanda primary'e bir şey gönderiyorsam cevap olarak, yani konuşuyoruz mesela o bana sesini gönderiyor, ben ona gönderiyorum, o bana gönderiyor, ben ona gönderiyorum.
+
+577
+01:56:22,735 --> 01:56:30,335
+İşte o zaman iFrame'in içerisinde piggybacking ile evet senden şunu aldım diyebilirdim.
+
+578
+01:56:30,875 --> 01:56:47,235
+Ama gönderecek hiçbir şey yokmuş. Burada B station'ının primary'e. O yüzden sadece ondan gelenleri aldım diye onaylama mesajı veya alamadım diye reddetme mesajı kullanıyor S-Frame'le.
+
+579
+01:56:48,255 --> 01:56:49,455
+Anladım hocam, teşekkür ederim.
+
+580
+01:56:49,455 --> 01:56:50,815
+Ben teşekkür ederim.
+
+581
+01:56:50,815 --> 01:57:20,715
+Tamam yani burada böyle detaylı bir şekilde açıklamış bir daha bir örnek bunlar bunlara siz bakarsınız bakın önce Uframe'le olayı kurgulamaya çalışıyor yani karşı tarafa Uframe'i yönlendirdi initialization'ı başlatıyor tamam hadi başlatabiliriz okey diyor ondan sonra datalar karşı tarafa gidiyor gidiyor gidiyor gidiyor bakın tabii gidiyor dediğim hep karşı tarafa gitmiyor şuradaki adreslere bakın ne olduğu değişiyor birisi gidiyor
+
+582
+01:57:20,715 --> 01:57:49,435
+birisi geliyor. A, B'ye sıfırıncı frame'i nedendir ona? İşte gönderiyor. İşte buradan da B, A'ya hem inform ediyor senden aldım diye hem de kendisi de datasını ekleyip karşı tarafa gönderiyor. En sonundaysa işte bir S frame ile beraber artık senden alacağım hiçbir data yok. Sen bana şunu göndereceksen gönder demek istiyor. Onu söyleyebiliriz yani.
+
+583
+01:57:50,715 --> 01:57:55,555
+Evet, tamam. Sorusu olan var mı kıymetli arkadaşlar?
+
+584
+01:58:00,275 --> 01:58:28,315
+Tamam, yok. Şimdi dersin başlangıcında 28 kişiydik, şimdi 26 kişiyiz. Bu dersi online'de 100 küsur kişi alıyor. Bunlar sonradan dinleyecekler inşallah diye ümit ediyorum. Kaydoluyor çünkü. Yani biraz böyle dinlemeden, bakmadan biraz sıkıntı oluyor. Notlar, sınavın ortalaması 42. 42. 40'ın altı otomatik kalıyor. Yani şu an dersi alan 200 küsur öğrenci var, 100 tanesi falan kalacak yani.
+
+585
+01:58:28,315 --> 01:58:43,956
+Lütfen o yüzden biraz daha özen gösterirsek sizin adınıza iyi olur. Sınavlar açıklanmadı mı şu an? Önder bir şey yazmıştı ama dersin başında sordum açıklandı falan dedim hiçbirisi hayır açıklanmadı demedi bana hiçbir arkadaş.
+
+586
+01:58:46,735 --> 01:58:48,535
+Cihan Hoca açıklamadı hocam.
+
+587
+01:58:49,295 --> 01:58:58,295
+Cihan Hoca açıklamadı mı? Evet. Sınav notlarınız belli tamam mı? Sınav notlarınız belli. Cihan Hoca en yakın,
+
+588
+01:58:58,315 --> 01:59:14,935
+zamanda açıklayacaktır diye ümit ediyorum. Yani ben ona göndermiştim. Pekala sadece bilimsel hazırlıklar mı açıklanmadı? Normal şey alanlar açıklandı mı? Normal dönemde alanlar OBS üzerinden. Onlar biliyor mu notlarını?
+
+589
+01:59:16,375 --> 01:59:17,015
+Hayır hocam.
+
+590
+01:59:17,555 --> 01:59:18,615
+Yok hocam bilmiyoruz.
+
+591
+01:59:18,615 --> 01:59:28,295
+Siz de bilmiyorsunuz. Evet hepsini o zaman toplan bir açıklayacak. Geçen hafta çünkü onları şey yapmıştık okumuştuk. Ortalamalar düşük biraz. O yüzden gayret gösterir.
+
+592
+01:59:28,316 --> 01:59:44,316
+Bu haftalık anlatacaklarımız bu kadar. Önümüzdeki hafta LAN teknolojisini yine bu saatte anlatıyor olacağız. Sorunuz yoksa kendinize iyi bakın diyorum. Hayırlı akşamlar. Görüşmek üzere.
+
+593
+01:59:46,156 --> 01:59:47,015
+İyi akşamlar hocam.
+
+594
+01:59:47,656 --> 01:59:48,335
+İyi akşamlar.

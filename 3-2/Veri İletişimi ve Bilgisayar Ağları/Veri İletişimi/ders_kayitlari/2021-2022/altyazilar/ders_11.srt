@@ -1,0 +1,1899 @@
+1
+00:00:18,196 --> 00:00:48,175
+İletişimi,
+
+2
+00:00:42,899 --> 00:01:05,339
+Merhaba arkadaşlar. Görüntü geliyor, ses geliyor diye umut ediyorum. Evet hocam. Süper. Ama benim görüntüm gelemeyecek. Bilmiyorum neden ama bugün Macbook nazlanıyor. Kamerası, üzerindeki kamerayı görmemeyi tercih ediyor. Görmememezden geliyor. O yüzden kamera açamıyorum.
+
+3
+00:01:05,339 --> 00:01:12,419
+İnşallah yarın öbür gün çözülecek de gereksiz bir masraf kapısı olmayacak bize.
+
+4
+00:01:12,419 --> 00:01:17,839
+Şimdi biraz bekleyelim zaten bir 5 dakika daha var dersin başlamasına teknik olarak.
+
+5
+00:01:18,580 --> 00:01:20,719
+Topu topu ben dahil 3 kişiyiz zaten.
+
+6
+00:01:21,940 --> 00:01:24,179
+Çok böyle baş başa bir ders olmasın.
+
+7
+00:01:24,279 --> 00:01:26,179
+Biraz bekleyelim arkadaşların gelmesini.
+
+8
+00:01:27,559 --> 00:01:28,819
+Sonra başlarız.
+
+9
+00:01:28,919 --> 00:01:29,659
+Bu arada ben buradayım.
+
+10
+00:01:29,799 --> 00:01:33,339
+Hani aklınıza takılan bir şey varsa, sormak istediğiniz bir şey varsa buyurun sorun.
+
+11
+00:01:35,339 --> 00:01:36,839
+şey yaparız, konuşuruz.
+
+12
+00:09:34,515 --> 00:09:41,215
+Evet arkadaşlar, belli bir sayıya ulaştık. Ufaktan başlayalım. Diğer arkadaşlar da yavaş yavaş gelin.
+
+13
+00:09:41,835 --> 00:09:42,875
+Bugün ne konuşacağız?
+
+14
+00:09:44,936 --> 00:09:54,675
+Geçen hafta konuşmaya başladığımız ve belli bir kısmını bitirdiğimiz aslında iletişim ortamıyla, iletim ortamıyla ilgili kalan kısmı konuşacağız.
+
+15
+00:09:54,795 --> 00:09:58,395
+Yani yönlendirilmiş konuşmuştuk, yönlendirilmemiş iletim ortamını konuşacağız.
+
+16
+00:09:58,475 --> 00:10:02,595
+Orada da aslında radyo dalgaları, mikrodalga, kızı ötesi bunların özelliklerini konuşacağız.
+
+17
+00:10:02,595 --> 00:10:05,975
+Bir diğer şey çoklama üzerine konuşuyoruz.
+
+18
+00:10:06,036 --> 00:10:12,596
+Çoklama dediğimiz yapı aslında multiplexing ve demultiplexing nedir?
+
+19
+00:10:15,775 --> 00:10:20,955
+Kaşımak istediğimiz veriyi aslında ne yapıyoruz?
+
+20
+00:10:21,236 --> 00:10:28,395
+Haberleşme hatları olarak baktığınız zaman farklı farklı uç notlardan oluşan bilgiyi bir yerde toplayıp
+
+21
+00:10:28,395 --> 00:10:32,675
+daha yüksek kapasiteli bir hat üzerinden aktarmaya çalışıyoruz.
+
+22
+00:10:32,795 --> 00:10:34,795
+Dolayısıyla elimizde ne var?
+
+23
+00:10:34,935 --> 00:10:37,995
+Daha düşük kapasiteli hatları kullanan istenciler var.
+
+24
+00:10:38,555 --> 00:10:44,235
+Bunları bir şekilde daha yüksek kapasiteli tek bir hat üzerinden aktarmanın yolunu arıyoruz.
+
+25
+00:10:44,395 --> 00:10:50,155
+Bunu da iletim ortamının özelliğine bağlı olarak farklı farklı tekniklerle yapabiliriz.
+
+26
+00:10:50,155 --> 00:10:53,095
+Frekans tabanlı olarak yapabiliriz.
+
+27
+00:10:53,376 --> 00:10:55,175
+Zaman tabanlı olarak yapabiliriz.
+
+28
+00:10:55,215 --> 00:10:57,095
+Ya da dalga boyu üzerinden yapabiliriz.
+
+29
+00:10:57,096 --> 00:11:09,636
+Bu teknikleri bir konuşacağız. Bundan sonra da aslında data linklerin yerine getirmesi gereken özelliklerden bir de olan hata kontrolü üzerine konuşacağız.
+
+30
+00:11:09,756 --> 00:11:15,376
+Yani hatayı nasıl anlarsınız? Hatayı düzeltmek için ne yapabilirsiniz? Bunların üzerinden bir geçeceğiz.
+
+31
+00:11:15,376 --> 00:11:17,176
+Şimdi ufaktan başlayalım.
+
+32
+00:11:18,935 --> 00:11:36,096
+Şimdi yönlendirilmemiş ortam dediğimiz zaman aslında elektromanyetik tayfiyle tanımlanmış olan ve atmosferi kullanmayı hedefleyen teknolojilerden bahsediyoruz.
+
+33
+00:11:36,596 --> 00:11:43,195
+Atmosferi kullanmayı hedefleyen derken atmosferin katmanlarını hatırlıyor musunuz bilmiyorum.
+
+34
+00:11:43,195 --> 00:11:45,295
+Ben bir kısmını hatırlamıyorum. Arada unutuyorum.
+
+35
+00:11:45,376 --> 00:11:51,195
+Ama atmosferik yapı farklı katmanlarda oluşuyor.
+
+36
+00:11:51,336 --> 00:11:55,855
+Özellikle bizi ilgilendiren kısım çoğu zaman ionosfer.
+
+37
+00:11:56,075 --> 00:12:02,775
+Ionosferin üzerindeki değişimler bize iletim hatlarında sıkıntı olarak çoğu zaman geri yansıyor.
+
+38
+00:12:03,915 --> 00:12:08,376
+Fakat her zaman ionosferi kadar çıkan şeylerde konuşmuyoruz.
+
+39
+00:12:09,376 --> 00:12:11,515
+Yapılar üzerinden konuşmuyoruz.
+
+40
+00:12:11,515 --> 00:12:18,415
+Daha çok aslında trafosfer ya da stratosfer üzerinde konuşuyoruz.
+
+41
+00:12:18,515 --> 00:12:24,495
+Aslında baktığınız zaman bizim kullandığımız, günlük hayatta kullandığımız yapıya baktığımız zaman ise
+
+42
+00:12:24,495 --> 00:12:28,435
+doğrudan ground wave diye isimlendirilen,
+
+43
+00:12:28,575 --> 00:12:33,215
+hani yeryüzüne yakın olan radyo dalgalarını kullanıyoruz.
+
+44
+00:12:33,855 --> 00:12:39,055
+Radyo dalgalarını kullanıyoruz derken aslında ne yapıyoruz?
+
+45
+00:12:39,055 --> 00:12:55,795
+Farklı frekanslara bağlı olarak kullandığımız elektromanyetik tayfta kullandığımız sinyal aralıkları farklı isimlerle isimlendiriyoruz.
+
+46
+00:12:55,795 --> 00:13:13,456
+Misal frekansa baktığınız zaman yani elektronik netik tayfa baktığınız zaman işte frekans aralığına bağlı olarak bir banda radyo frekansi diyoruz, diğer banda mikroway diyoruz, diğer banda infrared diyoruz.
+
+47
+00:13:13,975 --> 00:13:22,876
+Burada zaten şey olarak yapı olarak ya da isim olarak size tanıdık gelen yapılar da var.
+
+48
+00:13:22,876 --> 00:13:25,316
+misal AM Radio'yu
+
+49
+00:13:25,316 --> 00:13:27,256
+görüyorsunuz. Televizyonu
+
+50
+00:13:27,256 --> 00:13:28,935
+ve FM'i görüyorsunuz. Mesela
+
+51
+00:13:28,935 --> 00:13:30,956
+1 GHz bandına kadar olan
+
+52
+00:13:30,956 --> 00:13:32,855
+kısım aslında
+
+53
+00:13:32,855 --> 00:13:33,655
+baktığınız zaman
+
+54
+00:13:36,851 --> 00:13:40,291
+Doğrudan radyo dalgası olarak isimlendiriliyor zaten.
+
+55
+00:13:45,011 --> 00:13:49,991
+Bu teknolojileri niye kullanmak istiyoruz? Ya da bu teknolojileri niye yöneliyoruz?
+
+56
+00:13:50,471 --> 00:14:00,952
+Çoğu zaman ihtiyacımız olan mobility'yi sağlamak için, yani bir bağlantı sağlamak için guided ortama ihtiyacınız varsa,
+
+57
+00:14:00,952 --> 00:14:06,411
+o zaman mobility şansınız çok limitli. Yani kablonunuzun mesafesi kadar hareket ediyorsunuz.
+
+58
+00:14:06,411 --> 00:14:13,631
+ama yönlendirilmemiş ortam size ne sağlıyor? Mobility noktasında rahat etmeni de sağlıyor.
+
+59
+00:14:13,631 --> 00:14:33,871
+Ayrıca ne gibi bir özelliği ya da yapısı var? Teknik olarak baktığınız zaman kurulum anlamında herhangi bir kablolama çalışması, maliyeti vesairesi olmadığı için çok daha efektif.
+
+60
+00:14:33,872 --> 00:14:47,512
+özellikle de böyle nasıl diyeyim kenar kıyı olan bölgelere servis verilmesi, haberleşmene sağlanabilmesi için çokça tercih edilen bir yapı.
+
+61
+00:14:48,811 --> 00:14:52,811
+Radyo dalgaları ile ilgili bilmemiz gereken bir iki özellik var tabii ki.
+
+62
+00:14:52,811 --> 00:15:01,231
+Bunlardan en önemlisi radyo dalgalarının only directional olduğu.
+
+63
+00:15:01,231 --> 00:15:10,371
+Yani aslında baktığınız zaman normal şartlarda radyo dalgalarını biz hep böyle bir yuvarlakla gösteriyoruz.
+
+64
+00:15:10,371 --> 00:15:18,351
+Yani aslında çıkış noktasının her bir tarafına eşit şekilde yayılır gibi gösteriyoruz.
+
+65
+00:15:18,491 --> 00:15:27,271
+Gerçekten her zaman bu böyle değil. Bu antenin bir yüzü daha geniş bir çember, bir yüzü daha dar bir çember, daha oval bir yapılıyor aslında.
+
+66
+00:15:27,271 --> 00:15:36,712
+ve fakat genel olarak kabul edilen bunu bir yuvarlık olarak değerlendirmek. Bunun dışında neyi biliyoruz?
+
+67
+00:15:37,591 --> 00:15:45,771
+Radyo dalgaları özellikle düşük ve orta sıklık değerlerine sahip olanlar ne yapabiliyor?
+
+68
+00:15:46,712 --> 00:15:52,031
+Engellerin içerisinden geçebiliyor. Engellerden sekmek yerine içinden devam edebiliyorlar.
+
+69
+00:15:52,031 --> 00:16:03,031
+Bu sayede mesela özellikle AM frekansında yayın yapan bir radyoyu dünyanın neredeyse diğer ucundan izleyebiliyorsunuz ya da takip edebiliyorsunuz.
+
+70
+00:16:08,031 --> 00:16:14,611
+Dolayısıyla da şey anlamında daha güzel, kapsam alanında daha güzel.
+
+71
+00:16:14,611 --> 00:16:19,951
+Kötü tarafı ne? Dış frekanslarda yayın yaptığınız için, engellerin içinden geçebiliyorsunuz.
+
+72
+00:16:19,951 --> 00:16:25,791
+Dolayısıyla aslında fiziksel mekan doğrudan size bir izolasyon sağlamıyor. Birbirinden ayırt edemiyorsunuz.
+
+73
+00:16:26,291 --> 00:16:34,711
+Misal şu an evde kullandığınız şeylere baktığınız zaman, modemlere baktığınız zaman onların da Wi-Fi interfazları var.
+
+74
+00:16:34,831 --> 00:16:40,391
+2.4 GHz'ler geldi. Biraz daha yukarıdılar. Ama ona rağmen neyi görüyorsunuz?
+
+75
+00:16:42,071 --> 00:16:44,391
+Şey olarak, yapı olarak...
+
+76
+00:16:47,892 --> 00:16:57,892
+Wifi interfazinizi açtığınız zaman kolu, komşu, çoluk, çocuk, kim varsa, iş yeri, bilmem ne herkesin Wifi network'ünü görebilir hale geliyorsunuz.
+
+77
+00:16:58,451 --> 00:17:06,892
+Oradaki şeylerden bir tanesi şu, yayın gücünü biraz azaltacaksınız ya da eğer cihazınız destekliyorsa 5 gigaerse geçeceksiniz.
+
+78
+00:17:06,892 --> 00:17:12,111
+O zaman otomatikman ne oluyor? Tapsam alanınız daralıyor, frekansınızı arttırıyorsunuz.
+
+79
+00:17:12,111 --> 00:17:25,451
+sinyalinizin şeyi artıyor. Yapısallığı artıyor. Daha yüksek bir frekansı geçtiği için daha böyle bir engelleyim içinden geçen değil de engelden seken hale geliyor.
+
+80
+00:17:28,351 --> 00:17:36,551
+Tabii hani cihazınız 5 gigahertz'ı destekliyorsa geçersiniz ama aslında sadece cihazınızın desteklemesi yetmiyor.
+
+81
+00:17:36,551 --> 00:17:52,192
+elektromayenetik tarif üzerinde herhangi bir noktada yayın yapacaksanız aslında uymanız gereken kurallar var, standartlar var. Bunları takip ediyor olmanız lazım.
+
+82
+00:17:53,851 --> 00:18:02,572
+Bu standartlar da nedir? Her ülkenin genel olarak ülke, ulusal bazda bu standartlar ya da yapılar denilenir.
+
+83
+00:18:02,572 --> 00:18:07,392
+farklı frekans aralıklarını atadığı farklı kullanım alanları var.
+
+84
+00:18:07,392 --> 00:18:12,072
+Mesela belli bir alan tamamen askeri kullanıma ayrılmış oluyor.
+
+85
+00:18:12,131 --> 00:18:16,871
+Belli bir alan FM bandına ayrılmış oluyor.
+
+86
+00:18:16,991 --> 00:18:24,371
+Belli bir alan bizim de evlilerimizde kullanabilmemizi sağlayan,
+
+87
+00:18:24,531 --> 00:18:30,652
+rahat rahat takılabildiğimiz ISM diye isimlendirilen,
+
+88
+00:18:30,651 --> 00:18:37,291
+lisans gerektirmeyen band olarak ayrılıyor. Ama bunlar ülkeden ülkeye farklılık gösterebilir.
+
+89
+00:18:37,391 --> 00:18:50,911
+Mesela bizde ISM bandı 2.4 GHz ve fakat şeyde Amerika'da 5 GHz seviyesi ve fakat tabii hani siz kendi evinizde
+
+90
+00:18:50,911 --> 00:19:00,311
+2.4 yerine 5 GHz kullandığınızda kimse eve gelip basmıyor tabii ki. Ama buradaki sıkıntı ya da şey ne, dert ne?
+
+91
+00:19:00,311 --> 00:19:10,131
+şu. Aynı band üzerinde haberleşme yapan insanlarla çıkışmaya başladığınız zaman problem yaşarsınız.
+
+92
+00:19:10,311 --> 00:19:19,651
+Misal şimdi bunun çeşitli örnekleri var. İlk şey kurulumunu yaptıkları zaman çok kötü bir örnek olabilir.
+
+93
+00:19:19,651 --> 00:19:28,851
+Şimdi de doğru düzgün çalışmıyor ama B blokta wifi cihazlarını yerleştirdikleri zaman
+
+94
+00:19:28,851 --> 00:19:36,311
+her kata ikişer tane cihaz yerleştirdiler. Alt alt üst üstte altı katı doldurdular.
+
+95
+00:19:37,751 --> 00:19:40,011
+Doldurduktan sonra da hiçbir şey doğru düzgün çalışmadı.
+
+96
+00:19:40,651 --> 00:19:44,151
+Çünkü aslında ne olması lazım?
+
+97
+00:19:44,791 --> 00:19:48,531
+Şimdi aynı hatta yayın yapan birden fazla istasyon var.
+
+98
+00:19:48,531 --> 00:19:52,991
+Ve bu istasyonların hepsi aynı kanal üzerinden yayın yapıyor.
+
+99
+00:19:53,431 --> 00:19:55,431
+Böyle olunca da birbirleriyle çakışıyorlar.
+
+100
+00:19:55,431 --> 00:20:01,591
+aslında kanalları paylaşıyor, belli bir sistematik'e göre bölüşüyor olmaları lazım.
+
+101
+00:20:01,731 --> 00:20:04,491
+Bunun ayarlanması gerekiyordu. Ayarladılar, çalışmaya başladı.
+
+102
+00:20:04,491 --> 00:20:10,751
+Ya da Bluetooth bunun örneklerinden biri. Bluetooth'a baktığınız zaman 802.11 ile aynı frekansta, 2.4 GHz.
+
+103
+00:20:11,431 --> 00:20:21,511
+İlk çıkan Bluetooth modüllerine baktığınız zaman Bluetooth protokol yapısı olarak işte 1.0, 2.0, 3.0, 4.0 böyle 0'a karşı sonsuz derecede zafer kazana kazana gidiyor da
+
+104
+00:20:21,511 --> 00:20:39,091
+ilk versiyonunda şey sıkıntısı vardı. Frequency hopping yapmıyordu. Daha doğrusu yapamıyordu. Doğru düzgün yapamıyordu. O yüzden de üzerindeki Wi-Fi modülü de Bluetooth cihazı çıkışıyordu. Çekıştığı için de ikisi de doğru düzgün performans vermiyordu. Sonra şunu yaptılar.
+
+105
+00:20:39,604 --> 00:20:59,043
+Frequency Hopping, daha doğrusu bulunduğu kanalı dinliyor. Orada bir başka yayın varsa hemen başka bir kanala geçiyor. Bunu da şey üzerinden yapıyor. Nedro. Karşılıklı hem şey tarafı, master tarafı hem slave tarafı.
+
+106
+00:20:59,043 --> 00:21:12,503
+önceden belirli bir kanal atlama listesi var. Kanalların biri doluysa diğer öbürüne geçiyor. Doluysa öbürüne geçiyor. Bu şekilde birbirlerini bulabiliyorlar. Takip edebiliyorlar. Yani adaptif bir atlama yapıyor.
+
+107
+00:21:12,503 --> 00:21:28,143
+Şimdi mikrodalgaya baktığınız zaman aslında genelde radyo frekansının bir gigahertz derseniz sınırına mikrodalgaya da bir ile üç yüz gigahertz arasındaki kısmı söyleyebiliriz.
+
+108
+00:21:28,143 --> 00:21:32,803
+bunlar kesin kurallar değil, illa buradan ayrılır diyebileceğimiz yerler değil.
+
+109
+00:21:32,803 --> 00:21:52,443
+Ama baktığımız zaman mikrodalga genelde yerden uzay arasında kullanılan bir haberleşme teknolojisi.
+
+110
+00:21:52,443 --> 00:22:03,723
+sıkıntısı yani demin bahsetmiştim mesela atmosfer katmanlarındaki değişimlerden vesaireden ciddi anlamda etkilenebiliyor.
+
+111
+00:22:03,723 --> 00:22:08,883
+Bu saat mertebesinde çalışamama, devre dışı kalma gibi durumları da var.
+
+112
+00:22:14,283 --> 00:22:17,803
+Baktığımız zaman birkaç tane zayıf noktası da var.
+
+113
+00:22:18,763 --> 00:22:22,104
+Teknik olarak yüksek bandwidth sağlayabiliyor.
+
+114
+00:22:22,443 --> 00:22:28,503
+ve fakat genelde tek yönlü antenler kullanıyoruz.
+
+115
+00:22:29,183 --> 00:22:33,663
+Özel çift yönlü antenler bulabilir mi diye hatırlamaya çalışıyorum.
+
+116
+00:22:33,763 --> 00:22:37,223
+Microwave'da yok galiba. İki ayrı antenle yapım var.
+
+117
+00:22:37,323 --> 00:22:39,423
+Yani unit direction aslında bir yapı.
+
+118
+00:22:40,063 --> 00:22:42,983
+Bir line of sight gereksinimi var.
+
+119
+00:22:43,143 --> 00:22:47,883
+Yani haberleşeceğiniz adamı bir şekilde görebiliyor olmanız lazım.
+
+120
+00:22:47,883 --> 00:22:51,783
+Görebilmekten kasıt yani aramızda bir engelin olmaması.
+
+121
+00:22:52,443 --> 00:23:15,063
+Yani çevresel kısıtlardan etkileniyor. Bir diğer şey, bir ses mi geldi? Bana mı öyle geldi? Yok herhalde. Zaten yüksek frekansta olduğunuz için herhangi bir yeri penetre etmeniz vs. çok mümkün değil.
+
+122
+00:23:15,063 --> 00:23:35,203
+Bir diğer şey daha var. Bu yüksek frekans özellikle de kullanılan güce bağlı olarak yani haberleşme mesafesini arttırmak için güce arttırdığınızda mikrodalga haberleşmesi teknik olarak canlı sağlığı için sıkıntılı.
+
+123
+00:23:35,203 --> 00:23:58,103
+Bunları zaten konuştuk. Kızıl ötesi zaten hani kızıl ötesi kullanmayanız yok gibi bir şeydir diye tahmin ediyorum. Bugün günlük hayatımızda şeyden müzik setinden tut işte televizyona kadar birçok şeyin kumandası, kombinin kumandası, klimanın kullanılması infrared kullanıyor.
+
+124
+00:23:58,104 --> 00:24:16,163
+sıkıntı şu intro red konusunda en azından bir sebebi. Doğru düzgün hiçbir protokol yok. Yani herkes kafasına göre bir protokol kullanıyor. Klimaları ya da işte televizyonları ya da müzik setlerine baktığınız zaman tam bir ucube teknoloji. Hepsi birbirinden bağımsız.
+
+125
+00:24:16,163 --> 00:24:30,803
+bunları birleştirme ya da birbirine denk getirmek gibi fanteziler var, projeler var ama her canı çeken kendisine göre bir şey üretip devam ettiği için de bir araya gelmiyor.
+
+126
+00:24:32,484 --> 00:24:35,764
+Güzel tarafı point to point.
+
+127
+00:24:36,980 --> 00:25:02,719
+genellikle. Dolayısıyla araya girilmesi, tel atılması vesairesi çok kolay değil aslında. Özellikle point to point şey yapıldıysa. Sıkıntılardan bir tanesi dış ortam etkilerine çok açık. Bunun da temel dediğini şu, güneşli bir alanda infrared ile herhangi bir şey kontrol etmeniz neredeyse mümkün değil. Çünkü güneş ışınlarının içerisinde de infrared var.
+
+128
+00:25:02,719 --> 00:25:23,799
+Dolayısıyla sizin göndermeye çalıştığınız sinyali bastırabilecek çok daha yüksek, güçlü başka bir sinyal ortada alın size kolajın dolayısıyla sadece gürültü duyuyor karşı taraf. Dolayısıyla da çok kolay bir şey değil bunu yapıyor olmanız. Bunları da konuşmayalım.
+
+129
+00:25:23,799 --> 00:25:43,160
+Şimdi frekans aralıklarına göre hangi frekansın ismine, hangi frekans aralığını kullanılıyor, etki alanı ne kadar, hangi alanda kullanılıyor diye bakacak olursak
+
+130
+00:25:43,160 --> 00:25:53,600
+işte low frequency, extremely low frequency, super low frequency, ultra low frequency, very low frequency'den başlıyor.
+
+131
+00:25:54,520 --> 00:26:07,759
+Burada tabii sıkıntı şu bu teknolojiler ilk ortaya atıldığı zaman hani oluşan şeyle ilgili teknolojinin mimarlarının biraz vizyonu sınırlıymış.
+
+132
+00:26:07,759 --> 00:26:26,499
+O yüzden de böyle low frequency 300 kHz'e kadar, medium frequency 3 MHz'e kadar, high frequency'yi de 30 MHz'e kadar almışlar. Dolayısıyla sonraki isimler ve bunun altındaki isimler böyle saçma sapan bir hale gelmiş.
+
+133
+00:26:26,499 --> 00:26:33,439
+bizim otel reklamları gibi olmuş, all exclusive, inclusive falan gibi bir mantığa gelmiş.
+
+134
+00:26:34,259 --> 00:26:44,119
+Very high frequency olduğu için very high, sonra ultra high, sonra super high, extremely high, tremendously high falan diye böyle tuhaf isimlerle gitmeye başlıyor.
+
+135
+00:26:44,799 --> 00:26:47,799
+Ama baktığınız zaman en düşük frekanslar nerede?
+
+136
+00:26:47,799 --> 00:27:01,659
+iletimin en zor olduğu yerde yani su altında kullanılırken frekansları arttırdıkça aslında üst katmanlara, atmosferde üst katmanlara doğru gidiyoruz.
+
+137
+00:27:01,819 --> 00:27:05,199
+En sonunda da uzaya kadar gidiyoruz baktığınızda.
+
+138
+00:27:05,199 --> 00:27:17,239
+Şimdi çoklama konusu aslında dersin en başında da söylediğim nokta nedir?
+
+139
+00:27:17,799 --> 00:27:43,379
+en basiti evde kullandığınız bir internet bağlantınız var. Misal kablo modeliniz var. Misal EDSM'iniz var. Ne yapıyoruz? Bir grup aboneyi bir merkeze bağlıyoruz. Mesela kablo model için hiçbir şey yoksa apartmanımızda bir tane kablo model kutusu var. O kutudan normalde eternetteki switch gibi düşünün.
+
+140
+00:27:43,379 --> 00:27:46,659
+herkese ayrı bir bağlantı yapıyor.
+
+141
+00:27:46,779 --> 00:27:48,700
+Ha, Switch'den farklı olarak nedir?
+
+142
+00:27:49,139 --> 00:27:53,399
+Bu bağlantının üçlerindeki adamların kendi aralarında konuşmasına doğrudan izin vermiyorsunuz.
+
+143
+00:27:53,399 --> 00:27:59,539
+Ama derdimiz ne? O cihazın orada durmasının nedeni de o cihazı bir üst noktaya bağlamak.
+
+144
+00:27:59,599 --> 00:28:06,259
+Yani sizin apartman, yan apartman, öbür apartman, şu apartman, bu apartman derken tüm o hatları tekrar bir noktaya getirmek.
+
+145
+00:28:06,379 --> 00:28:08,859
+Sonra onu bir daha üste çıkartmak.
+
+146
+00:28:08,859 --> 00:28:14,639
+Nereye kadar? Çok özür dilerim. Bir telefona bakmam lazım. Geliyorum hemen.
+
+147
+00:29:55,284 --> 00:30:22,643
+pardon arkadaşlar. Şimdi derdimiz aslında bu bağlantı noktalarının her birinden gelen trafiği ne yapmak? Tek bir hat üzerinden bir üste taşımak. Neden? Çünkü her seferinde her bağlantı için en baştan üst noktaya, backbone'a kadar gidecek olan ayrı ayrı hatlar çekmek maliyetli, sıkıntılı.
+
+148
+00:30:22,643 --> 00:30:37,383
+bunun yerine yüksek kapasiteye sahip başka bir hat, mümkünse tek hat kullanmak ve o hat üzerinde o daha düşük kapasiteyle hatların ürettiği trafiği taşımak istiyoruz.
+
+149
+00:30:39,903 --> 00:30:43,503
+Bunu da yapmak için multiplexing'den yararlanıyoruz.
+
+150
+00:30:43,903 --> 00:30:46,343
+Ama multiplexing aslında tek taraflı değil.
+
+151
+00:30:46,343 --> 00:30:51,223
+Bir tarafta multiplex yapıyorsanız diğer tarafta de multiplex yapılamanız lazım.
+
+152
+00:30:51,223 --> 00:31:14,743
+Yani şöyle ki bu biraz da bir şey bir yaklaşım nedir o? Naif bir yaklaşım. Normal şartlarda şu sağdaki bir diyelim sizin apartmanınız içerisinde herkesin ayrı ablamayı var. Cihazı buraya yerleştiriyorsunuz multiplexer'ı. Buradan gelen her bir hattı aslında tek hat üzerinden doğrudan bu tarafa aktarmıyoruz.
+
+153
+00:31:14,743 --> 00:31:37,903
+diğer son uzmanıcılar gibi düşünmeyin. Bunu bir üst bağlantı noktasına aktarıyoruz. Bu bağlantı noktasına tabii ki başka bağlantılar da geliyor. Onları da birleştirip bir üstte aktarıyoruz. Nereye kadar? En üst, bet bana kadar. Trafik geri gelirken de aslında burada arada kocaman bir bulut da olması lazım belki bu aktarmaları gösterebilmek adına.
+
+154
+00:31:37,903 --> 00:31:46,443
+ne oluyor? Her seferinde ana üst hattan alttaki hatta geçerek tam altı direkt dinlenerek aktarılıyor.
+
+155
+00:31:47,963 --> 00:31:52,723
+Ve sonunda da sizin istediğiniz, hedeflediğiniz noktaya geliyor.
+
+156
+00:32:01,723 --> 00:32:07,183
+Şimdi şey olarak bakabilirsiniz. Farklı farklı motivasyonlar bulmak mümkün.
+
+157
+00:32:07,183 --> 00:32:20,903
+aslında. Zaman zaman yani bu anlattığım şey bir ISP mantığı içerisinde multiplexing ama benzer şekilde bunu şey olarak da düşünebilirsiniz.
+
+158
+00:32:22,083 --> 00:32:34,504
+Mesela farklı noktalarda ofisleri olan bir şirketin iç networking'deki trafiği dışarı çıkartırken uygulayacağı bir yapı olarak da düşünebilirsiniz.
+
+159
+00:32:34,504 --> 00:32:53,923
+Teknik olarak baktığınız zaman yüksek kapasiteli bir hatt yaşıyorsunuz. Bu hattın kapasitenin kullanılması lazım. Multiplexing doğrudan bunu size sağlayabilecek yöntemlerden biri. Neden? Çünkü daha düşük kapasiteli ama çok sayıdaki hattın oluşturduğu trafiği buraya taşıyorsunuz.
+
+160
+00:32:53,923 --> 00:33:10,043
+bunun en güzel örneklerinden bir tanesi eski tip şeylere bakacak olursak telefon tabanlı sistemlere baktığınız zaman 9600'da 64 kb arasında değişen kapasiteleri var, bağlantı kapasiteleri var.
+
+161
+00:33:10,043 --> 00:33:19,983
+Ama bu santrale bağlı cihazların trafiğini bir üstte aktarmak için T1 bağlantıları var. T1'in kapasite 1.5 mb.
+
+162
+00:33:19,983 --> 00:33:42,983
+Yani çok sayıda bağlantıyı bir anda yukarı aktarabiliyorsunuz. Siz şimdi yaş olarak şey yapmazsınız, ne dur o? Yakaladığınız bir durum değil haliyle. Ama mesela eskiden bu dial-up networkler varken şey...
+
+163
+00:33:43,071 --> 00:34:11,731
+deniyordu. İnternet için başvuru yapıyordun. Santralde yeriniz yok deniyordu. O da şu demek, zaten alt tarafta belli bir miktarda bir abone var ama üst taraftaki T1 hat ya da hatlarının kapasitesi verilen toplam kapasitenin sınırında. Dolayısıyla yeni bir abonelik verdiği zaman aslında yukarıdaki hattan daha fazla çıkmış olacak. O yüzden de vermiyorlardı. Böyle bir şey vardı, yapı vardı.
+
+164
+00:34:13,072 --> 00:34:34,092
+Şimdi çoklamaya baktığımız zaman aslında toplamda 3 tane farklı yöntem var. Bunlardan 2 tanesi en temeli. 3.sü daha sonra ortaya çıkmış bir yapı. Ama onu da kullanıyor muyuz? Gayet kullanıyoruz. Çok da hayatımızın önemli bir noktasıdır. Sadece evde kullanmıyoruz.
+
+165
+00:34:34,092 --> 00:34:58,211
+Bunlardan bir tanesi Frequency Division Multiplex'in. Yani frekansa göre çoklama yapmak. Frekansa göre çoklama yapmaktan kısıt şu belli bir bant aralığınız var kullanabildiğiniz. Bunu farklı frekans aralıklarını farklı insanlara assign etmek ve öyle kullanmak. Bunun en güzel örneği zaten ne?
+
+166
+00:35:01,652 --> 00:35:07,451
+hep verdiğimiz örneklerden bir tanesi aslında. Gene aynı şeyi söyleyeceğim. Radyo. Ne yapıyorsunuz?
+
+167
+00:35:11,471 --> 00:35:19,611
+Dinlediğiniz radyo frekansı neyse onu ayarlıyorsunuz. Radyonuzu da dinlemeye başlıyorsunuz. Biraz sağ, biraz sola yaptığınız zaman önce bir cızırtı gelir.
+
+168
+00:35:19,611 --> 00:35:31,611
+Sonra bir sonraki kanala geçmiş olursunuz. O aradaki cızırtı vesaire de aslında o iki alok edilmiş frekans arasında böyle bir guard bandı var.
+
+169
+00:35:31,652 --> 00:35:53,391
+olur da biraz kayar bir şey olur vs. olursa direkt diğer istasyona geçmeyin diye bunu kullanıyoruz. Bir diğer şey ne olabilir? Time Division Multiplex'in. Time Division Multiplex'in baktığınız zaman adı üstünde kanalın kullanımını zamana göre vermek.
+
+170
+00:35:53,391 --> 00:35:58,651
+yani bu kanalı kullanılacak adam işte bir interval belirliyorsunuz.
+
+171
+00:35:58,731 --> 00:36:02,391
+Diyelim ki bir milisaniye, diyelim ki on milisaniye, diyelim ki beş saniye.
+
+172
+00:36:02,831 --> 00:36:06,491
+Beş saniye boyunca hat senin diyorsunuz, bitince öbür adama geçiyorsunuz gibi.
+
+173
+00:36:08,091 --> 00:36:15,931
+Bir başka yapı gelişen zaman içerisinde gelişen dediğimiz wavelength yani dalga boyuna göre multiplexing yapmak.
+
+174
+00:36:16,131 --> 00:36:20,571
+Dalga boyuna göre multiplexing ne demek aslında?
+
+175
+00:36:20,571 --> 00:36:38,791
+Şunu düşünebilirsiniz, farklı bir özelliği kullanıyoruz burada. Normalde frekans ya da zamana bağlı bölmek yerine hattım kullanımını, özellikle optik konularda ne yapıyoruz? Işık kullanıyoruz. Işığın nasıl bir özelliği var?
+
+176
+00:36:38,791 --> 00:37:08,271
+belli bir spektrumu var. Yani taşıdığınız ışık ne yapıyor? O spektrumun üzerinde farklı noktalara düşebiliyor. Dolayısıyla farklı dalga boylarını farklı kişilerin kullanması için tahsis edebiliyorsunuz. Yapı bunun üzerine kurulun. Yani her seferinde aslında hattın farklı bir özelliğini hattın kapasitesinin parçalanması, dağıtılması için kullanıyorsunuz.
+
+177
+00:37:08,791 --> 00:37:22,791
+Ne yapmanız lazım ya da neye ihtiyacınız var? Frequency Division Multiplexing yapacak mısınız?
+
+178
+00:37:32,692 --> 00:37:43,391
+kaç tane göndericiniz varsa her biri için farklı bir taşıyıcı işaret kullanmanız lazım.
+
+179
+00:37:43,391 --> 00:37:55,051
+Ve onun göndereceği sinyali işareti bu farklı taşıyıcı işaretle bir şekilde entegre ediyor olmanız lazım.
+
+180
+00:38:04,307 --> 00:38:08,467
+Burada tabii sıkıntılardan biri, demin radyodan örnek verirken söyledim.
+
+181
+00:38:10,087 --> 00:38:14,387
+Şey yapmak gerekiyor, nedir o?
+
+182
+00:38:15,627 --> 00:38:27,467
+Frekans üzerinden oynadığınız için bu frekansların aralığına aslında belli bir guard yerleştirmeniz, belli bir şey koymanız gerekiyor.
+
+183
+00:38:27,467 --> 00:38:35,347
+koruyucu alan koymanız gerek yok ki birbirine karışıklık olmasın.
+
+184
+00:38:35,347 --> 00:38:39,348
+Fakat burada...
+
+185
+00:38:43,795 --> 00:38:45,295
+çok özür dilerim, Nisan Bey.
+
+186
+00:38:49,295 --> 00:38:57,795
+FDM yaparken aslında kullanabileceğiniz farklı...
+
+187
+00:39:02,036 --> 00:39:04,036
+Teknikler de mevcut.
+
+188
+00:39:04,036 --> 00:39:26,036
+Sadece frekansı, frekansa göre bölerken hani en temel yapabileceğiniz şey bunu tamamen birbirinden izole tutarak yapmak ve fakat aslında buradaki hattın kullanımını arttıracak şeyi,
+
+189
+00:39:26,036 --> 00:39:32,495
+bölebileceğiniz parça sayısını arttıracak teknikler de var.
+
+190
+00:39:34,036 --> 00:39:42,235
+Normal şartlarda hep frekans banklarının arasında bir bariyer, bir engel koymaktan bahsediyoruz.
+
+191
+00:39:42,235 --> 00:39:52,256
+Ama bunun üzerine mesela geliştirilmiş OFTM diye bir yapı da var.
+
+192
+00:39:52,255 --> 00:40:18,635
+ortagonal frequency division multiplexing diye geçiyor. Ne yapıyorsunuz? Sinyalin tepe orta noktalarını çakışmayacak şekilde birbirlerinin üzerine bindiriyorsunuz. Böylece aslında ne yapmış oluyorsunuz? Kanal sayısını arttırmış oluyorsunuz. Bu tabii ki bazı zorlukları da beraberinde getiriyor.
+
+193
+00:40:18,635 --> 00:40:22,015
+her an her yerde kullanabileceğiniz bir şey değil.
+
+194
+00:40:22,135 --> 00:40:25,955
+Bunu yapabilmek için biraz daha fazla emek ve para gerekiyor.
+
+195
+00:40:26,036 --> 00:40:27,735
+Ama böyle bir teknik de var.
+
+196
+00:40:27,896 --> 00:40:28,936
+Bunu da biliyor olun.
+
+197
+00:40:31,735 --> 00:40:38,355
+FDM için baktığımız zaman radyo ve yayınlarını konuşabiliriz.
+
+198
+00:40:38,435 --> 00:40:40,335
+Televizyon yayınlarını konuşabiliriz.
+
+199
+00:40:40,495 --> 00:40:41,915
+Zaten örneğini de vermiştik.
+
+200
+00:40:42,616 --> 00:40:44,055
+Boşlukları da konuşmuştuk.
+
+201
+00:40:44,055 --> 00:41:05,995
+Time Division Multiplexing içinse olay zaten bu işi nasıl yapmak? Zamana göre bölerek yapmak. Nasıl bölüyoruz? İşte herkese belli bir zaman ayırıyoruz ve o zaman içerisinde bilgisini göndermeyi bekliyoruz.
+
+202
+00:41:05,995 --> 00:41:10,556
+Böyle yaptığımız zaman sıkıntılardan bir tanesi ne?
+
+203
+00:41:11,196 --> 00:41:27,275
+Kanalı kaça böldüyseniz ve ne kadar süre verdiyseniz her bir parça için aslında özel ayrı bir şey kullanmadıysanız, bir yapı kullanmadıysanız tahminen round rod'un şeklinde bir multiplexing yapıyorsunuz.
+
+204
+00:41:27,275 --> 00:41:34,675
+Yani elinizde en tane kullanıcı varsa önce 1, 2, 3, 4, 5, 6 vs. diye gidiyorsunuz.
+
+205
+00:41:34,675 --> 00:41:42,075
+birincisinin tekrar hattı kullanmasını enden sonra oluyor. Dolayısıyla herkesin aslında uzun süre beklemesi lazım.
+
+206
+00:41:42,256 --> 00:41:54,396
+Hele ki hattı kullanma zamanı geldiğinde elinde bir bilgi yokken ama hemen kullanım hakkı kendisinden geçtikten sonra bir bilgi gönderme ihtiyacı olduğunda ne yapıyoruz?
+
+207
+00:41:54,396 --> 00:42:02,515
+Çok çılgınca uzun bir süre beklememiz gerekiyor. Mesela böyle bir problemi ya da sıkıntısı da var.
+
+208
+00:42:13,043 --> 00:42:16,123
+TVM'i eş zamanlı ya da
+
+209
+00:42:20,851 --> 00:42:47,371
+şey, eş zamansız yani senkron ya da asenkron gerçekleyebilirsiniz. Şimdi eş zamanlı gerçeklemekten kasıt aslında demin tarif ettiğim yapı. Yani herkes için diyelim ki n tane kullanıcınız var, n tane slot oluşturduğunuz. Herkesin slotu belli. Gönderse de göndermese de o slot ona ait. Dolayısıyla statik bir yapı.
+
+210
+00:42:47,371 --> 00:43:07,892
+Şimdi buradaki problem ya da sıkıntı ne? Aslında şey problemimiz var. Hani hattı gönderecek bir şey olmayan adımı da bekliyoruz. Dolayısıyla o anlamda çok efektif değil.
+
+211
+00:43:07,891 --> 00:43:22,511
+aynı zamanda da neye ihtiyacımız var? Multiplexing yaparken bir şekilde göndereceğimiz bilgileri bir çerçeveye oturtmaya ihtiyacımız var.
+
+212
+00:43:22,511 --> 00:43:36,851
+Yani buradaki grafikte belki daha iyi görüyorsunuz. A, B, C, D olarak dört tane ayrı kullanacağım var. Multiplexing yapıyorum.
+
+213
+00:43:36,851 --> 00:43:40,932
+önce A1, B1, C1, D1'in olduğu bir frame gönderiyorum.
+
+214
+00:43:41,131 --> 00:43:45,472
+Sonra A2, B2 ve C2'nin gönderecekleri var.
+
+215
+00:43:45,911 --> 00:43:47,951
+Onların olduğu bir başka frame gönderiyorum.
+
+216
+00:43:48,152 --> 00:43:50,771
+Sonra sadece A3 ve C3'ün bilgileri var.
+
+217
+00:43:50,851 --> 00:43:51,612
+Onu gönderiyorum.
+
+218
+00:43:54,892 --> 00:43:57,691
+Dolayısıyla ne oluyor?
+
+219
+00:43:57,691 --> 00:44:07,811
+buraya baktığınız zaman toplamda aslında 16 slot kullanıyorum ama bunların sadece ve sadece 10 tanesini dolu olarak iletiyorum.
+
+220
+00:44:07,811 --> 00:44:17,591
+Dolayısıyla ben 10 bölü 16. Yani neredeyse %50. Hadi %60 diyelim.
+
+221
+00:44:17,591 --> 00:44:33,971
+Bunun yerine ne yapabilirim? Bu işi biraz daha böyle nedir o? Efektif hale getirmek için.
+
+222
+00:44:37,588 --> 00:44:39,588
+S zamansız
+
+223
+00:44:39,588 --> 00:44:41,588
+TDM yani
+
+224
+00:44:41,588 --> 00:44:44,588
+asenkron, aslında buradaki S zamansızı
+
+225
+00:44:44,588 --> 00:44:48,588
+istatistiksel diyorlar yani Statistical Time Division Multiplaxing
+
+226
+00:44:48,588 --> 00:44:51,588
+STDM diye de görürsünüz.
+
+227
+00:44:51,588 --> 00:44:55,588
+...
+
+228
+00:44:57,396 --> 00:45:09,896
+Burada yaptığımız şey zaman aralığı miktarını giriş sayısından az olduğunu kabul etmek.
+
+229
+00:45:15,076 --> 00:45:24,455
+Yani şeyde olduğu gibi, eş zamanlıda olduğu gibi önceden herkes için bir son ayırmak yerine ne yapıyoruz?
+
+230
+00:45:24,455 --> 00:45:39,275
+çerçevelerimizi dolduruyoruz ama bilgi fark yani olması deminki sırada round robin sırasında gelmesi gerektiği gibi değil. Nasıl doldurabiliyorsak o şekilde doldurma üzerine kurdu. Misafırı da daha iyi göreceksiniz.
+
+231
+00:45:39,936 --> 00:45:47,775
+Şimdi aynı yapıyı istatistiksel olarak kurduğumuzda dikkat edin 4 frame değil 3 frame ile işi çözdük.
+
+232
+00:45:47,775 --> 00:45:51,175
+A1, B2
+
+233
+00:45:51,175 --> 00:45:57,175
+Pardon, yanlış olmuş. Şurası yanlış olmuş.
+
+234
+00:45:57,935 --> 00:46:00,215
+A1, B1 olması lazım.
+
+235
+00:46:02,315 --> 00:46:05,295
+Bu indeksenin hepsi yanlış olmuş. Bir şeyler kaymış.
+
+236
+00:46:06,295 --> 00:46:09,415
+Bunun A1, B1, C1, D1 olması lazım.
+
+237
+00:46:09,415 --> 00:46:12,195
+Yani şu ilk adımda mevcutların hepsi.
+
+238
+00:46:12,195 --> 00:46:21,195
+sonra A2, B2, C2 sonra burada zaten A3 var onun olması lazım.
+
+239
+00:46:21,835 --> 00:46:31,015
+Sonrasında A4 yani aslında C3 sonra A4 şeklinde olması lazım.
+
+240
+00:46:37,588 --> 00:46:59,268
+Buradaki sıkıntı ne? Remlerin her rem içerisinde aslında bir önceki yapıdan farklı olarak ne yapıyoruz? Standart bilginin kimden geldiği belli değil. Yani kaynağı doğrudan belli değil. O zaman ne yapmamız lazım? Ekstra bir de adres bilgisi eklememiz lazım.
+
+241
+00:46:59,268 --> 00:47:13,848
+Adres bilgisine ekleyeceğiz. Adres bilgisinin boyutu da bir ek yük getirir ama toplamda aktardığınız birinin miktarıyla karşılaştırıldığı zaman bu adres bilgisi özellikle çok büyük bir adres bilgisi değilse ne olacaktır?
+
+242
+00:47:13,848 --> 00:47:28,848
+Çok daha efektif bir noktaya gelecektir. Şimdi kullandığımız bir diğer yapı ne demiştik? FTDM yani wavelength division mantıklı.
+
+243
+00:47:29,268 --> 00:47:52,668
+Bunu zaten kullanabileceğimiz yer belli açılardan sınırlı. Belli açılardan sınırlı derken aslında neyi kastediyoruz? Fiber optik kablo üzerinden ışıkla haberleşiyoruz. Dolayısıyla orada kullanabiliriz. Oradaki özellikle zaten ışığı farklı tayetlara ayrılması üzerine konulabilir.
+
+244
+00:47:52,668 --> 00:48:09,068
+Şimdi hata, anlama ve düzenme üzerine biraz konuşacağız. Neden hata oluşuyor hatta? Farklı nedenlerle oluşabilir. Bir, sinyalin zayıflaması bunlardan bir tanesi.
+
+245
+00:48:09,067 --> 00:48:18,387
+Yani uzak mesafeye özellikle elektromanyetik bir işareti aktarıyorsanız uzak mesafeye aktarıyorsanız ne olacaktır?
+
+246
+00:48:18,387 --> 00:48:33,847
+Dış ortam etkilerinden vesaireden bağımsız. Sadece bir iletkenin üzerinde ilerlediği için ve mesafe ile bu iletkenin üzerinde bir iletkenin bir trenç göstereceği için sinyal seviyesinde bir düşüş olabilir.
+
+247
+00:48:33,847 --> 00:48:44,347
+Yani işaret zayıfladığı zaman mesela hatırlayın RS-232'yi vesaireyi konuşurken ne dedik?
+
+248
+00:48:44,347 --> 00:49:03,407
+Eksi 5 ile eksi 15 arası ve artı 5 ile artı 15 arası. Diyelim ki siz öyle bir noktaya geldiniz ki sizin sinyal orijinalde hakikaten böyle jilet gibi 15 volttu ama öyle bir noktaya geldiniz ki 4.8 volta düştü. Dolayısıyla artık sıfır olarak değerlendi.
+
+249
+00:49:03,407 --> 00:49:09,547
+sıfır olarak değerlendiği zaman da ne olacak? Hata olmuş olacak. Dolayısıyla olabilir.
+
+250
+00:49:13,547 --> 00:49:26,667
+Bir diğer şey, bir işaret, bir sinyal yolluyoruz. Baktığımız zaman bu sinyalin tabii ki bir,
+
+251
+00:49:26,668 --> 00:49:56,267
+Furiye'de açtığım zaman görüyorsunuz bir bileşen grubu var ve bazı bileşenler işte mesela 3, 5, 7 genelde sıkıntıya neden olabiliyor. Nasıl sıkıntıya şey oluyor nedir o yaratabiliyor? Bir hatta gecikme olmasına neden oluyor. Bu gecikme de aslında bilginin bozulmasına neden olabiliyor.
+
+252
+00:49:56,668 --> 00:50:03,487
+Bunun dışında yani bunlar hep bizim gönderdiğimiz sinyale bağlı olan şeydi.
+
+253
+00:50:04,448 --> 00:50:11,507
+Oluşan etkilerdi. Bunun dışında da şeyler var. Etmenler var. Bir tanesi termal gürültü.
+
+254
+00:50:11,668 --> 00:50:20,987
+Yani kabloyu ısıttığınız ya da soğuttuğunuz zaman bile aslında kablo üzerinde bir gürültü oluşturursunuz.
+
+255
+00:50:21,707 --> 00:50:24,628
+Dolayısıyla bunun etkisi olabilir. Özellikle çok uzun bir kabloda.
+
+256
+00:50:24,627 --> 00:50:25,767
+Bunun dışında
+
+257
+00:50:27,380 --> 00:50:36,739
+modülasyon noktasında bir gürültü oluşabilir. Bunun dışında çapraz konuşma, crosstalk'tan bahsedebiliriz.
+
+258
+00:50:36,739 --> 00:50:48,239
+Crosstalk, Ethernet'i konuşurken, paylar arasında da, hani lokal uçta, şey, crosstalk, uzak uçta crosstalk vs. diye konuşmuştuk.
+
+259
+00:50:48,380 --> 00:50:55,899
+Bunun dışında da doğrudan başka gürültü mümkün. Mesela endüstriyel bir ortamda, kocaman motorların çalıştığı bir yerde,
+
+260
+00:50:55,899 --> 00:51:03,699
+illa elektromanyetik gürültü olacaktır. Dolayısıyla onların da sizin hattınız üzerinde bir etkisi olacaktır.
+
+261
+00:51:04,259 --> 00:51:11,699
+Şimdi hata, tiplerinin neden olduğuna baktık ama bu nedenlere bağlı olarak oluşan hataların da tipleri var.
+
+262
+00:51:13,779 --> 00:51:25,459
+Baktığımız zaman aslında 3'ü ayırabiliriz ve fakat gerçekçi olan çoğu zaman gördüğümüz şey tabii ki bunlar arasında en kötü olanıdır.
+
+263
+00:51:25,900 --> 00:51:31,839
+Yani şöyle sınıflandırmak istediğiniz zaman hataları bir bitlik hatalardan bahsederiz.
+
+264
+00:51:31,839 --> 00:51:33,299
+Tek başına oluşan.
+
+265
+00:51:35,219 --> 00:51:37,320
+Bunu mesela en çok şeyde görürüz.
+
+266
+00:51:37,400 --> 00:51:45,880
+Haberleşme dediğimiz zaman hep aklınıza kablo üzerinden ya da işte yönlendirilmemiş üzerinden gönderilen şeyler geliyor ama
+
+267
+00:51:45,880 --> 00:51:50,939
+bu bir bitlik hatalar genelde memori de çokça başımıza gelebilecek şeylerdir.
+
+268
+00:51:50,939 --> 00:52:02,079
+yani yandaki bitin yazılması sırasında bozulan ya da işte bir şekilde oradaki artık nasıl implement edilse kullanılan
+
+269
+00:52:02,079 --> 00:52:13,559
+integratif sorduktaki bir hatadan dolayı yazılamayan sıfırda yazsanız bir de yazsanız bir olarak kalan hücreler mevcut olabiliyor.
+
+270
+00:52:13,560 --> 00:52:37,359
+Oysa buradaki yapı sadece tek bir bitin bozuk olması. Bir diğer şey belli bir veri bütünü içerisinde birden fazla hata anlaması. Genelde bunlar ayrı noktalarda falan olması bekleniyor. Ancak ve lakin gerçek hatalar genelde böyle olmuyor. Gerçekte hatalar burst şeklinde geliyor. O yüzden hata patlamalı demişiz.
+
+271
+00:52:37,359 --> 00:52:45,859
+Börst şeklinde geldiği zaman da verinin birçok yerini aynı anda bozan, değiştiren hatalardan bahsediyoruz.
+
+272
+00:52:49,639 --> 00:52:55,100
+Yani mesela sol tarafta işte görüyoruz 1, 0, 0, 0, 1, 1, 1 verilmiş.
+
+273
+00:52:55,479 --> 00:52:57,880
+Tek bir hata bunun herhangi bir bitinin değişmesi.
+
+274
+00:52:57,999 --> 00:53:03,399
+Çok bir hata bağımsız bir iki bitinin iki ya da daha fazla bitinin değişmesi.
+
+275
+00:53:03,399 --> 00:53:11,339
+hata patlaması ise böyle arda arda birbirini takip eden bitlerin üzerinde değişim olması durumu.
+
+276
+00:53:12,559 --> 00:53:16,119
+Şimdi hatayı nasıl algılayacağız ya da tespit edeceğiz?
+
+277
+00:53:16,119 --> 00:53:20,819
+Güzel tarafı şu, daha doğrusu kolay tarafı şu olurdu.
+
+278
+00:53:21,419 --> 00:53:27,299
+Gönderdiğimiz veriyi ve alınan veriyi biliyor olsak karşılaştırarak ne yapabiliriz?
+
+279
+00:53:27,359 --> 00:53:28,959
+Hata alıp olmadığını söyleyebiliriz.
+
+280
+00:53:28,960 --> 00:53:41,159
+ancak ve lakin bilgiyi alan kısmı bunu yapabilme şansı yok. Alternatif ne olabilir? Bilginin bir kere daha gönderilmesi, iki bilginin karşılaştırılması.
+
+281
+00:53:41,159 --> 00:53:53,640
+Fakat orada da şöyle bir sıkıntı var. Veri her seferinde aynı şekilde bozuluyor olabilir. Dolayısıyla bu aynı zamanda şey açısından da efektif değil.
+
+282
+00:53:53,639 --> 00:54:03,639
+aynı bilgiyi iki kere aktarıyorsunuz. Aslında zam olarak da iki katı zamak kullanıyorsunuz. Bunun için...
+
+283
+00:54:07,476 --> 00:54:15,575
+en böyle hani olabilir denilecek ya da en günümüzde kullandığımızda efektif diyebileceğimiz yöntem ne peki?
+
+284
+00:54:16,196 --> 00:54:23,615
+Veriyi gönderirken karşı tarafa bu veriyle ilgili bir kontrol bilgisinin üretilmesi ve bunun da gönderilmesi.
+
+285
+00:54:24,435 --> 00:54:30,396
+Karşı tarafında veriyi ve kontrol bilgisini aldıktan sonra aynı şekilde kontrol bilgisini üretmesi,
+
+286
+00:54:30,396 --> 00:54:37,275
+o veriden ürettiği kontrol bilgisiyle kendisine gönderen kontrol bilgisini karşılaştırması.
+
+287
+00:54:37,275 --> 00:54:40,016
+Eğer her şey birbirine tutuyorsa veriyi kabul etmesi.
+
+288
+00:54:40,115 --> 00:54:42,056
+Yani verinin bozulmadığına karar vermesi.
+
+289
+00:54:43,275 --> 00:54:46,615
+Genel olarak şey nedir o?
+
+290
+00:54:47,255 --> 00:54:49,595
+Günümüzde çalışma sistemimiz bu.
+
+291
+00:54:49,595 --> 00:54:52,535
+Baktığımı zaman bununla ilgili
+
+292
+00:54:52,535 --> 00:55:02,315
+Hobbit'in en azından dört farklı teknik konusunu konuşacağız.
+
+293
+00:55:02,315 --> 00:55:04,615
+Öyle söyleyeyim.
+
+294
+00:55:06,115 --> 00:55:09,156
+Bunlardan bir tanesi vertical redundancy code,
+
+295
+00:55:09,375 --> 00:55:18,056
+diğeri longitude yok, söyleyemedim, LRC diyeyim ben, sizi oradan anlayayım.
+
+296
+00:55:18,056 --> 00:55:40,316
+redundancy kod yani gene. Diğeri cyclic redundancy check, CRC yani. Bir diğeri de çokça aslında bildiğiniz, duyduğunuz check sum yapısı. Bunların hepsi hatayı algılama üzerine. Yani hatayı kontrol ediyorsunuz. Hata var mı, yok mu? Bunu tespit ediyorsunuz.
+
+297
+00:55:40,315 --> 00:55:49,115
+Fakat burada aslında tespitten öte zaman zaman hatayı doğrudan düzeltmek de isteyebiliriz.
+
+298
+00:55:49,215 --> 00:55:52,935
+Onun için de ne yöntemlerini kullanıyoruz?
+
+299
+00:55:53,755 --> 00:55:56,955
+Error correction yöntemlerini kullanıyoruz.
+
+300
+00:55:57,055 --> 00:55:58,135
+Onu daha sonra konuşacağız.
+
+301
+00:55:58,235 --> 00:55:58,915
+Biraz daha sonra.
+
+302
+00:55:59,035 --> 00:56:00,515
+Bunlardan hemen sonra konuşacağız.
+
+303
+00:56:00,515 --> 00:56:05,335
+Şimdi VRC'de WordCore'yı da kodda yaptığımız şey ne?
+
+304
+00:56:06,195 --> 00:56:07,476
+Elimizde bir veri var.
+
+305
+00:56:07,775 --> 00:56:08,815
+Gönderilen veri bakın.
+
+306
+00:56:08,815 --> 00:56:35,696
+sol tarafta görüyorsunuz. 0, 1, 0, 0, 1, 1, 0 şeklinde. Bu bitleri birbiriyle XOR'ladığınız zaman ne olacaktır? 0'ı 1 ile XOR'ladınız, sonucu 0 ile XOR'ladınız, sonucu 0 ile XOR'ladınız, 1 ile XOR'ladınız, bir daha 1 ile XOR'ladınız, bir daha 0 ile XOR'ladınız. Sonuç 1 olacak.
+
+307
+00:56:35,696 --> 00:56:45,175
+neden? O ilk zor işlemi aslında uç noktada baktığınızda neyi sağlıyor? Birilerinin sayısının çift olmasını sağlıyor.
+
+308
+00:56:49,115 --> 00:57:00,996
+Karşı tarafın yapması gereken şey ne? Aynı işlemi yaptığı zaman bu kontrol bilgisini de içine kattığında sonucun ne olması lazım? Sıfır olması lazım.
+
+309
+00:57:00,995 --> 00:57:09,855
+Şimdi iyi güzel hoş gibi gözükse de şöyle bir problem var.
+
+310
+00:57:12,135 --> 00:57:28,715
+Hata sayısı yani gönderilen veri üzerindeki hata sayısı tekse şurada mesela bakın gönderilen veri bu 0 1 0 0 1 1 0 alınan da 0 1 burası 0 yerine 1 olmuş 0 1 1 0.
+
+311
+00:57:28,715 --> 00:57:36,715
+Böyle bir yapıda evet hatanın hata olduğunu anlıyorsunuz. Nerede olduğunu anlayamıyorsunuz ama hatayı anlıyorsunuz.
+
+312
+00:57:37,235 --> 00:57:45,075
+Fakat ne sıkıntısı var? Bu hata iki farklı noktada gerçekleştiyse o zaman bir şey anlamanız mümkün değil.
+
+313
+00:57:45,855 --> 00:57:49,675
+Dolayısıyla bilgi hatalı olsaydı bunu doğru kabul edeceksiniz.
+
+314
+00:57:49,675 --> 00:58:06,315
+Tabii böyle bir hatanın oluşmaya ihtimali nedir ne değildir o da ayrı bir tartışma konusu ama bunun yerine kullanabileceğimiz daha sağlam yapılar, mekanizmalar var.
+
+315
+00:58:06,612 --> 00:58:18,492
+Bunlardan bir tanesi LRC. LRC ile yapılmaya çalışılan ne? Bu işi iki farklı boyut üzerinde yapmak.
+
+316
+00:58:18,492 --> 00:58:36,251
+Yani varsın mesela sizin bir gönderdiğiniz byte stream varsa, yani byte'larda oluşmuş bir yapı varsa, bu byte stream içerisinde aslında hata böyle birinci byte'in bir kısmında sonra öbür tarafta vesaire de olmuyor.
+
+317
+00:58:36,612 --> 00:58:47,071
+uzunlamasına büyük bir burst şeklinde oluyor diye konuşmuştuk. Bunu yapar, bunu engellemek ya da bunu kontrol edebilmek adına
+
+318
+00:58:47,071 --> 00:59:01,332
+DRC'de yapıyı aslında iki eksin üzerine oturtuyorsunuz. Dikkat edin. Birinci byte, ikinci byte, üçüncü byte, dördüncü byte. Bunlara ait, her bir byte'e ait ne yaptınız?
+
+319
+00:59:01,331 --> 00:59:14,431
+ilk zor sonucunu byte'ın sonuna koydunuz. Bir de bu byte'ların her birinin birinci bitlerini, ikinci bitlerini, üçüncü, dördüncü, beşinci, altını, yedi, sekizinci bitlerini bir daha kodluyorsunuz.
+
+320
+00:59:14,431 --> 00:59:29,791
+Orada da bir kod oluşturuyorsunuz. Bilgiyi gönderirken de gönderdiğiniz her bir byte'ın sonuna bu byte'ın oluşturduğu kodunu, dikkat edin, buraya da 0 gelmiş.
+
+321
+00:59:29,792 --> 00:59:43,431
+sonunda da LRC oluşan son kodunu Airbyte'a ait bitkiler üzerinde oluşturduğumuz kodu artı bunun da kontrolü için oluşturduğunuz, XOR'ladığınız kodu yerleştirip ölebilirsiniz.
+
+322
+00:59:44,232 --> 00:59:47,652
+Tabii ki böyle bir şey yaptığınız zaman ne oluyor?
+
+323
+00:59:52,211 --> 01:00:08,732
+belli açılardan çok daha güvenli hale geliyorsunuz. Tabii ki hani şey miktarı nasıl diyeyim gönderdiğiniz veri miktarı bu kadar az olduğu zaman biraz fazla overhead'ınız var ama genelde bu kadar az veri üzerinde kullanılmıyor zaten.
+
+324
+01:00:08,732 --> 01:00:26,211
+Burada sadece 4 byte'a karşılık 1 byte veri üretilmiş ama bu genelde 16, 32 ya da 64 byte üzerinden yapılıyor ki biraz daha ratio'su efektif ya da düzgün olsun.
+
+325
+01:00:26,211 --> 01:00:47,211
+Şimdi buradaki sıkıntılardan bir tanesi belli açılardan daha güvenli. Her byte'in sonunda bir kontrol bilginiz var. Artı hepsinin birden kontrol edildiği başka bir kontrol byte'ınız var. Dolayısıyla bayağı önlem almış durumdasınız.
+
+326
+01:00:47,211 --> 01:01:02,631
+ve fakat böyle çok senkron bir şekilde iki tane byte'ın aynı bitlerinde iki tane hata olursa,
+
+327
+01:01:02,631 --> 01:01:31,351
+VARİZ misal, ikinci byte'ın işte birinci bitiyle yedinci biti, dördüncü byte'ın ikinci bitiyle yedinci biti. İkisinin iki byte'ın da aynı iki bitinde hata olursa bunu gene yakalama şansınız yok. Ne olacaktır? Şurada bir örneği olması lazım. Bakın şimdi ikinci byte'ın hem bu bitinde hem bu bitinde hata var. Dolayısıyla buradaki kodun zaten bu hatayı yakalaması mümkün değil.
+
+328
+01:01:31,351 --> 01:01:46,911
+Ketay'da baktığınız zaman dörtte de mesela dört üzerinde yapmışsınız. Aynı yerlerde hata var. Dolayısıyla bu kodların da değişme durumu yok. Bunlar da aynı denk gelecek. Dolayısıyla bu hatayı mesela algılama şansımız yok.
+
+329
+01:01:46,911 --> 01:02:02,611
+bize bir miktar daha şey vermiş olsa da kullanım anlamında güvenlik vermiş olsa da aslında bu da tam olarak yeterli değil bizim için.
+
+330
+01:02:03,691 --> 01:02:07,451
+Hala böyle bu sistemi atlatabilecek hatalar var.
+
+331
+01:02:07,451 --> 01:02:17,071
+Şimdi bu noktada şey midro
+
+332
+01:02:23,699 --> 01:02:30,059
+hata kontrolü için kullandığımız
+
+333
+01:02:37,876 --> 01:03:06,296
+yöntemlerden bir diğeri, Cyclic Redundancy Check. Bunu aslında şeyde de kullanıyoruz. Nedro. Günümüzde çok etkin ve efektif bir şekilde de kullanıyoruz. Nerede kullanıyoruz? Mesela Ethernet içerisinde kullanıyoruz. Ethernet içerisinde kullandığımız 802 içerisinde kullandığımız. Yani 32. dereceden bir polinom. Yaptığımız şey şu. Asal bir polinom buluyorsunuz.
+
+334
+01:03:06,296 --> 01:03:27,795
+artık nereden biliyorsanız çok hızlı bir şekilde. Elinizde göndereceğiniz veriyi de bu poynama bölüyorsunuz. Nasıl böldüğümüzü birazdan konuşacağız. Kalan değeri de şey olarak yerleştiriyorsunuz. Kontrol bilgisi olarak yerleştiriyorsunuz.
+
+335
+01:03:27,795 --> 01:03:45,035
+Karşı tarafta bilgiyi alan adam aynı bilgiyi aynı polinoma bölüyor kalanı da eklediğiniz haliyle beraber. Dolayısıyla sonuç sıfır olursa her şeyi temizliyorsunuz.
+
+336
+01:03:45,035 --> 01:03:56,635
+Baktığınız zaman genelde işte 13, 17, 33 bitlik polinomlar var. Ethernet kapsamında kullanılan 33'lük bir tanesi.
+
+337
+01:03:56,635 --> 01:04:14,115
+X 32, X 26, X 23, X 22, 16, 12, 11, 10, 8, 7, 5, 4, 2, 1 ve X 0 yani 1 olması lazım.
+
+338
+01:04:15,035 --> 01:04:40,655
+Bu polinom, yani burada şey yazmışız ama tespit edilemeyecek hata sayısı neredeyse sıfır yazmışız ama neredeyse sıfır yani sıfır değil. İlla her şeyi yakalırız gibi bir durum yok. Hatta bununla ilgili bir nedir o çalışma vardı.
+
+339
+01:04:47,987 --> 01:04:50,107
+yanlış hatırlamıyorsam
+
+340
+01:04:50,107 --> 01:04:54,167
+ııı
+
+341
+01:04:54,612 --> 01:05:22,231
+Neyse, hatırlayamadım kimin olduğunu. Buradaki şeyin kullanılgu I-TRAPİ standartı CRC32'nin aslında Hamming Distance'ın 4 olduğu, bunun daha uygun bir polinomunun Hamming Distance olarak 6 değerine sahip olduğu ile ilgili 2000'li yılların başlarında bir yayın da vardı.
+
+342
+01:05:22,231 --> 01:05:26,351
+Şimdi Saikolik Rhinanda'sı çek nasıl çalışıyor?
+
+343
+01:05:32,275 --> 01:05:42,536
+Öncelikle göndereceğiniz verinin sonuna bir miktar sıfır ekliyorsunuz. Ne miktar? Kaç bitlik polinom kullanıyorsanız, onun kadar. Ona eşdeğer olacak şekilde. n-1 kadar.
+
+344
+01:05:44,915 --> 01:06:01,375
+Bölme işlemini XOR'la yapıyorsunuz. En sonunda n-1 bitlik bir şey kalıyor. Kalan kısmı kalıyor. Bunu da verinin kontrolü için sonuna ekliyorsunuz. Böylece o başta eklediğiniz sıfır yerine bunu koymuş oluyorsunuz.
+
+345
+01:06:02,275 --> 01:06:32,036
+Böylece karşı taraf aldığı zaman bir şey eklemesine vesaireye gerek yok. Sadece koninama bölmesi yeterli oluyor. Yani veriyi alıyorsunuz. N-1'lik 0'a ekliyorsunuz. Böldüğünüz şeyi, böldükten sonra kalan kısmı kontrol biti olarak veriye ekliyorsunuz. Karşı taraf doğrudan bunu bölüp kullanıyor. Kalan yoksa, yani kalan 0 ise bilgi tamamdır diyor. Değilse sıkıntı çıkartıyor.
+
+346
+01:06:32,035 --> 01:06:53,035
+Şimdi örnek olsun diye, bakın burada 3. dereceden bir polinom var. 3, 2, x'in kendisi yok ve sonra da oradan 1 var. Yani 4 terim var. Yani 4 aslında burada. O yüzden 3 tane 0 eklenmişsiniz. Sonra neye bölüyorsunuz? Bu polinomun kendisine 1, 1, 0, 1'e yani.
+
+347
+01:06:53,035 --> 01:07:18,675
+X3 için 1 var, X2 için 1 var, X üzeri 1 için olmadığından denklem içerisinde 0 var, 1 için de tekrar 1 var. Bu XOR'la bu işi yaptığınız zaman elinizde çıkan CRC ne? 0, 0, 1. Yani bilgiyi gönderirken göndereceğiniz bilgi 1, 0, 0, 1, 0, 0 ise sonuna 0, 0, 1'i ekleyip öyle gönderiyorsunuz.
+
+348
+01:07:23,035 --> 01:07:28,175
+karşı tarafta bunu kullanarak bölmeyi yaptığı zaman sonucu sıfır buluyor.
+
+349
+01:07:28,595 --> 01:07:30,555
+Her şeyin normal çalışıyor olması lazım.
+
+350
+01:07:30,555 --> 01:07:35,835
+Kullanılan CRC kodlarının en yaygın olanlarını burada verdim.
+
+351
+01:07:35,915 --> 01:07:41,735
+Demin söylediğim işte CRC32 olarak geçen şey bu.
+
+352
+01:07:41,996 --> 01:07:46,595
+32, 26, 23, 22, 16, 12, 11, 10.
+
+353
+01:07:47,496 --> 01:07:49,135
+Baya bir şey yapmışım yani.
+
+354
+01:07:49,735 --> 01:07:50,555
+İyiye ezberlemişim.
+
+355
+01:07:51,595 --> 01:07:52,655
+İlginç bir şekilde.
+
+356
+01:07:53,035 --> 01:08:03,855
+Bunların hepsi var. Bir diğer yöntem CheckSum. CheckSum dediğimiz şey aslında
+
+357
+01:08:10,036 --> 01:08:11,555
+verinin içerisine
+
+358
+01:08:14,996 --> 01:08:18,195
+doğrudan
+
+359
+01:08:24,243 --> 01:08:28,843
+ekstra kontrol bitleri enjekte etmek. Ama bunu yaparken
+
+360
+01:08:31,164 --> 01:08:33,963
+şöyle bir yapı oluşturuyoruz.
+
+361
+01:08:36,023 --> 01:08:39,603
+Grafik üzerinden anlatsam belki daha iyi olur.
+
+362
+01:08:41,143 --> 01:08:43,443
+Burada bir grafik daha olması lazım.
+
+363
+01:08:44,203 --> 01:08:45,743
+Yokmuş.
+
+364
+01:08:46,264 --> 01:08:48,823
+Yaptığımız şey şu.
+
+365
+01:08:48,823 --> 01:08:59,243
+Sonuçta elimizde uzun bir bitstream var tahminen ya da bytestream var. Büyük bir bilgiyi aktarmaya çalışıyoruz.
+
+366
+01:08:59,243 --> 01:09:07,163
+Önce parçalara bölüyoruz. Mbit'lik. 8 bit olabilir, 16 bit olabilir vs. olabilir. Daha fazla da olabilir.
+
+367
+01:09:07,383 --> 01:09:16,043
+Çünkü genelde checksum'ı aslında alt seviyede değil, doğrudan datacık değerinde değil, transport takmanında vs. de kullanıyoruz.
+
+368
+01:09:16,043 --> 01:09:22,924
+o zaman daha büyük segmentler üzerinde çalışıyor olabiliriz. Yani o nokta değil de daha yüksek bitler üzerinde çalışıyor olabiliriz.
+
+369
+01:09:22,924 --> 01:09:25,924
+Bu noktada...
+
+370
+01:09:30,195 --> 01:09:37,095
+her bir parçayı bire tümleyen öğretmesine göre topluyoruz.
+
+371
+01:09:37,095 --> 01:09:45,935
+ve elde ettiğimiz böyle mbit uzunluğunda bir değer oluşmuş oluyor.
+
+372
+01:09:48,755 --> 01:09:56,536
+elde ettiğimiz sonuçla bu sefer ikiye göre tümleyen olarak yollanacak bilginin sonuna ekliyoruz.
+
+373
+01:09:56,536 --> 01:10:03,195
+alıcı tarafta gelen bilgileri ne yapıyor? Mbit'lik parçalar halinde toplayarak almaya başlıyor.
+
+374
+01:10:04,716 --> 01:10:09,155
+Elde ettiği sonuç 0 ise bilginin hatasız geldiğini kabul ediyor.
+
+375
+01:10:09,896 --> 01:10:12,475
+Aksi halde de hata var diye kabul ediyor.
+
+376
+01:10:12,475 --> 01:10:17,475
+Bakın yaptığı şey şu Mbit'lik 16 bit ya da 32 bit parçaları bölüyorsunuz.
+
+377
+01:10:18,115 --> 01:10:21,475
+Alt alta koyuyorsunuz. Toplaya toplaya devam ediyorsunuz.
+
+378
+01:10:21,475 --> 01:10:35,695
+bunu ikiye tümleyip ekliyorsunuz. Sağlama olarak döndürüyorsunuz. Karşı tarafta bunların hepsini topluyor. Sıfırı buluyorsa hata yoktur diyor. Varsa hata var, sıkıntı var diyor.
+
+379
+01:10:35,695 --> 01:10:44,995
+Şimdi hata düzeltti. Yani buraya kadar hep hatayı tespitli konuştuk. Yani veride hata var mı yok mu bunu algılamak tarifindeydik.
+
+380
+01:10:44,995 --> 01:10:55,275
+Bu şey için yeterli. Nedir o? Eğer aldığınız bilgide hata varsa ne yapabilirsiniz?
+
+381
+01:10:55,275 --> 01:11:01,435
+Kurduğunuz mekanizma üzerinden bilgide hata var diye göndericiyi bilgilendirirsiniz.
+
+382
+01:11:01,995 --> 01:11:06,295
+Bilgi göndericisi de aynı biriyi tekrar gönderir.
+
+383
+01:11:06,915 --> 01:11:11,775
+Hata olursa tekrar istersiniz, tekrar alırsınız. Bu şekilde bir yöne geçer.
+
+384
+01:11:11,975 --> 01:11:14,575
+Ama alternatif ne olabilir?
+
+385
+01:11:14,995 --> 01:11:26,395
+gelen veri içerisinde bir hata varsa bu hatanın tespit edilmesi artı düzeltilmesi olabilir.
+
+386
+01:11:26,395 --> 01:11:35,255
+Peki ne zaman düzeltmek isteriz? Ne zaman tespit etmek isteriz?
+
+387
+01:11:45,171 --> 01:12:10,531
+Ben Emrah Hocam. Hatanın yerini biliyorsak düzeltmek isteriz. Hatanın yerini biliyorsak? Eminsek yani tam olarak. Eminsek. Sen gelenlerin hatalı olduğunu nereden... Yani şimdi bak elinde bir veri var. Uzun böyle hani. Diyelim ki 1K'lık bir veri. Yani hatanın yerini bilmek çok büyük lüks.
+
+388
+01:12:10,531 --> 01:12:14,711
+tespit edebiliyorsak düzeltmeye çabalarız herhalde.
+
+389
+01:12:16,271 --> 01:12:18,411
+İmkan verilirse yaparız diyorsun.
+
+390
+01:12:19,731 --> 01:12:21,791
+Ama işte hayat öyle bir şey değil.
+
+391
+01:12:22,171 --> 01:12:23,771
+Elinde bir kalıp bir bilgi var.
+
+392
+01:12:24,131 --> 01:12:32,191
+Bunu düzeltebilmek için zaten hatalı olup olmadığını data önemlisi düzeltmeye çalışıyoruz.
+
+393
+01:12:32,811 --> 01:12:34,691
+Data ne zaman önemli olur?
+
+394
+01:12:40,212 --> 01:13:08,191
+diskart ettim. Çok güzel. Önemsizse. Ses aktarımında ki ben. Ses aktarımında herhangi bir bilgi önemli ya da önemsiz değildir ki. Zamanlı ya da zamansızdır. Yani timeliz vardır ya da yoktur. Misal iki frame önce gelmesi gereken ses bilgisi iki frame sonra gelirse o hani önemli önemsizden öte artık gereği kalmadığı için özellikle real time'dan bahsediyoruz.
+
+395
+01:13:08,191 --> 01:13:23,471
+O yüzden dikkat edilir. Ama burada söylediğimiz şey zamanlı ya da zamansız gelmesi değil, gelen verinin hatalı olup olmadığını bilmiyorsunuz.
+
+396
+01:13:23,471 --> 01:13:37,871
+Ama o hat üzerinde hata düzeltme mi uygulamalamak istiyorsunuz? Yoksa hatayı sadece tespit edip, tespit ettiğiniz hata için göndericiye haber verip bilginin tekrar gönderilmesini mi istiyorsunuz?
+
+397
+01:13:37,871 --> 01:13:41,151
+Yani bu iki yaklaşımdan hangisini tercih ediyorsunuz diye soruyorum.
+
+398
+01:13:49,171 --> 01:14:00,171
+Yani şöyle söyleyeyim, o zaman data'nın üretim maliyetiyle data'nın önemi arasında bir ilişki varsa, şu an evde hepinizin ürettiği data çok önemli.
+
+399
+01:14:05,811 --> 01:14:10,752
+Çünkü hepiniz gereğinden fazla para veriyorsunuz ISP'lere.
+
+400
+01:14:14,195 --> 01:14:31,075
+maliyeti fazla yani. Gereğinden fazla şu an. Ama benim sorduğum soruyu hani evet çoğu zaman söylüyorum her şeyin ucu paraya dayanıyor da her şeyin ucu paraya daha farklı yollardan dayanabilir. Burada biraz daha üzerine düşünmeniz lazım bence.
+
+401
+01:14:38,547 --> 01:14:43,547
+Yani doğrudan paraya bağlamak yerine biraz dolaylı yoldan paraya bağlamak lazım.
+
+402
+01:14:56,948 --> 01:15:07,147
+ortamları konuşurken hatadan bahsettik. Hatırlıyor musunuz? İletim ortamlarını konuşurken karşılaştırdıydık. Mesela bakır kabloyu, fiber kabloyu vesaireyi.
+
+403
+01:15:09,387 --> 01:15:16,227
+Eee? Yani onunla burası arasında bir ilişki kurmanızı istesem. Ne dersiniz?
+
+404
+01:15:28,083 --> 01:15:44,323
+Aman hocam sen de diyorsunuz. Yani hata olmuşsa olmuş. Hatasız kul olmaz devam edelim diyorsunuz. Olur öyle. Bilgisayar da sonuçta bir can hani çok da yüklenmemek lazım mı diyorsunuz. Ne diyorsunuz?
+
+405
+01:15:55,859 --> 01:15:58,359
+Şöyle düşünsek, olur mu?
+
+406
+01:16:02,959 --> 01:16:12,079
+Bir hattınız var, bu bakır kablo olabilir, fiber kablo olabilir, bunu döşediğiniz bir ortam var, dış ortam.
+
+407
+01:16:12,519 --> 01:16:15,639
+Gürültü fazla olabilir, endüstriyel bir ortam olabilir.
+
+408
+01:16:16,219 --> 01:16:19,479
+Cillok gibi tertemiz bir ortam olabilir, hiçbir gürültün olmadı.
+
+409
+01:16:20,280 --> 01:16:24,219
+Kablonuzun izolasyonu muhteşem olabilir, kablonuzun izolasyonu dandik olabilir.
+
+410
+01:16:24,219 --> 01:16:32,259
+Fiberli kabludur, elektromanyedi şeylerden etkilenmiyordur istiyorsan yüksek gerilim aklının üstüne döşe hiçbir problem olmuyordur.
+
+411
+01:16:33,439 --> 01:16:41,400
+Buna bağlı olarak ne olacaktır? Bu hattaki hata ihtimali değişkenlik gösterecektir. Doğru mu?
+
+412
+01:16:47,091 --> 01:17:10,451
+çok güzel. Allah muhteşemsin Ahmet. Her şey evet, evet, evet diye girdi. On puan, on puan, on puan. Dolayısıyla hata ihtimaliniz değişkenlik gösteriyorsa hataya bakış açınız ya da hatayı kontrol etme yapınızda farklılaşması lazım.
+
+413
+01:17:10,451 --> 01:17:18,531
+Hata ihtimali fazla olunca hata düzeltmeye daha fazla gerek olur. Evet, peki neden?
+
+414
+01:17:21,452 --> 01:17:32,571
+Hata ihtimali fazla olursa ne olur? Sadece detection yapıyorsam, yani hatanın farkına varıp göndereceğini tekrar göndermesini istiyorsam ne olur?
+
+415
+01:17:33,571 --> 01:17:39,031
+Ahmet Sayın, iletim hızı düşerden önce.
+
+416
+01:17:42,996 --> 01:17:48,315
+o illa düşecek, o Allah'ın emrede. Ne olur arkadaşlar?
+
+417
+01:17:51,296 --> 01:17:55,275
+Hah bak biri, dur Murat Can Öztük. Çok güzel cevabı verdi.
+
+418
+01:17:56,376 --> 01:18:03,155
+İkinci gönderilen veri de bozuk gelebilir. Buradaki D yalnız ayrı yazılır aklımda olsun. Takıntılı adamın.
+
+419
+01:18:03,155 --> 01:18:14,735
+çok doğru. Yani ilk gönderdiğimiz veri nasıl bozuk geldiyse bir daha kendisinin tekrarı için gönderilen veri de bozuk gelebilir.
+
+420
+01:18:22,868 --> 01:18:45,407
+Ahmet ne demek istediğini hiç anlamadım. Yok özür dilerim, takıntılı adam olduğum için söyledim Burak. Ama doğru cevap bu. Yani dolayısıyla benim eğer hattaki hata oranım yüksekse neyi biliyorum? Gönderdiğim fraymin bozulma ihtimali yani hata oluşma ihtimali yüksek.
+
+421
+01:18:45,407 --> 01:19:03,548
+Dolayısıyla ben bunu tekrar retransmit istersem başıma tekrar aynı şey gelecek. Onun yerine ne yapabilirim? Bunu düzeltmeyi deneyebilirim. Böylece frame'i kurtarırım. Aksi taktirde aynı şeyleri yapıp farklı sonuç bekleyen adam durumuna düşersiniz.
+
+422
+01:19:03,548 --> 01:19:17,987
+O zaman da mesela şunu konuşuyor olacağız. Hata oranı düşükse yani hata çok zayıf ihtimalle oluşuyorsa bu hatayı düzeltmeye uğraşmak vesaire yerine ne yapabilirim?
+
+423
+01:19:19,388 --> 01:19:29,048
+Yeniden gönderilmesini isteyebilirim. Yani yıldırım aynı yere iki kere çarpmaz misali. Yeni hata olduysa bir daha hata olmayacaktım nasıl olsa diye bakıyor olabilirim.
+
+424
+01:19:29,048 --> 01:19:42,948
+Dolayısıyla hata düzeltmemi, hata fark etmemi kullanacağınız aslında hata kullandığınız karakterin, kullandığınız hattın hata karakteriyle doğrudan alakalı.
+
+425
+01:19:42,948 --> 01:19:49,948
+Bunu uygun yapıyı seçiyor olmalı zaten. Şimdi hata düzeltme için...
+
+426
+01:19:54,836 --> 01:20:20,836
+ne yapmamız lazım? Yollanan birinin içerisine hata düzeltmeyi sağlayacak ekstra kod düklü olmamız lazım. Zaten hatayı tespit için de benzer bir şey yapıyoruz. Ama burada hatanın düzeltilmesi için düzeltmek istediğiniz hata miktarına da bağlı olarak eklemeye çalıştığınız şey kod oldukça artacaktır.
+
+427
+01:20:20,836 --> 01:20:24,936
+satacaktır. Misal. Şöyle yapayım bir saniye ekranı görüyorum.
+
+428
+01:20:30,771 --> 01:20:55,351
+teknik olarak baktığınız zaman M bitlik bir şeyiniz varsa, mesajınız varsa ne olabilir? Bu bitlerin hepsinde hata olabilir. Yani birinci de olabilir, ikinci de olabilir, üçte, dörtte, beşte, M'inci de olabilir. Bir de haliyle hiç hata olmama durumu toplam M artı bir tane durum var.
+
+429
+01:20:55,351 --> 01:21:13,132
+Bunu şey yapabilmek için, kontrol edebilmek için, yani hata olup olmadığını, olduysa hangi bitti olduğunu anlayabilmek için logaritma 2 tabanında m artı bir tane kontrol koyuyor olmanız lazım.
+
+430
+01:21:13,132 --> 01:21:40,852
+Bu kontrolü koymak için mesela M bitiniz varsa bunları şey yapacak şekilde kontrol edebilecek bir şekilde en az logaritma 2 tabanında M artı bir tane bit koyuyor olmanız lazım. Yani 7 bitlik bir veriniz var. 7 artı bir 8. Logaritma 2 tabanında 3. En az 3 tane bit yerleştirme lazım. Ve fakat burada unutmamamız gereken şey şu. Hata sadece veri bitinde olmaz. Kontrol bitinde de olabilir.
+
+431
+01:21:40,852 --> 01:21:55,271
+Dolayısıyla siz buraya şey koyacaksınız, nedir o? Ekstra bit koyacaksınız. Bu bitlerde de hata oluşabilme ihtimali var. Dolayısıyla aslında yapmanız gereken aritmetik şu.
+
+432
+01:21:55,271 --> 01:22:16,771
+böyle bir ekstra bit değeri bulacaksınız ki bunu mesajın kendi içerisine de koyduğunuz zaman yani M artı bir değil de M artı R artı bir olarak değerlendirdinizde bu logotmi 2'ye göre hesapladığınızda R'nin bu değerden büyük olması gerekiyor.
+
+433
+01:22:16,771 --> 01:22:34,992
+Yani şurada bir tane slide'lara şey koymuştum yanlış hatırlamıyorsam. Örnek koymuştum. Mesela demeyim ki gibi 7 bit bir veriyi kodlayacaksanız 7 artı 1'den hesapla R'nin 3 olması gerekiyor.
+
+434
+01:22:34,991 --> 01:22:43,911
+ve fakat 3 bit daha koyduğunuz zaman buna aslında 10 bit de gelmiş oluyorsunuz.
+
+435
+01:22:43,971 --> 01:22:53,951
+Artı 1 de var 11. Dolayısıyla burada koymanız gereken şey logaritma 2 tabanında M artı R artı 1'in R'den küçük eşit olması.
+
+436
+01:22:53,951 --> 01:23:00,911
+Bunu sağlayabilecek ilk tam sayıda 4 zaten. 4 artı 7, 11 artı 1 da 12.
+
+437
+01:23:00,911 --> 01:23:13,811
+R4 olursa zaten 16 olması gerekiyordu. Dolayısıyla karşılıyor rahat rahat. Dolayısıyla ekstradan 4 tane bit koyuyor olmanız lazım.
+
+438
+01:23:13,992 --> 01:23:22,391
+Sıkıntılardan bir tanesi şu bu 4 biti nereye koyacaksınız? Hani sona mı, başa mı, etraf içeriye dağıtarak mı koyacaksınız?
+
+439
+01:23:22,391 --> 01:23:34,391
+Buradaki şey yaklaşım şu genelde ikinin katlarına koyarlar yani 1, 2, 4, 8 o bitlere yerleştiririz.
+
+440
+01:23:34,391 --> 01:23:43,151
+Dolayısıyla şurada aşağıdaki tabloya baktığınız zaman bitler, bitleri bit pozisyonlarını ifade ediyor.
+
+441
+01:23:43,291 --> 01:23:48,531
+Alttaki R'ler bizim koyduğumuz kodları D'ler de datanın kendisini ifade ediyor.
+
+442
+01:23:48,531 --> 01:24:11,712
+yani birinci, ikinci pozisyona koymuşuz. Sonra veriyi koymuşuz. Sonra üçe kod koymuşuz. Sonra dörde kod koymuşuz. Sonra beş, altı, yediye data koymuşuz. Sekize tekrar kod koymuşuz. Sonra gene datayı yerleştirmişiz. Bu şekilde bir yaklaşım sergilemişiz.
+
+443
+01:24:20,564 --> 01:24:29,223
+şimdi şey güzel yerleştirirken böyle yerleştirdik ama bu bitlerin hesaplarını nasıl yapacağız?
+
+444
+01:24:33,183 --> 01:24:39,383
+hesap için genelde birincisi 1, 3, 5, 7, 9, 11 şeklinde gidiyor.
+
+445
+01:24:40,543 --> 01:24:42,023
+Tekleri aldı.
+
+446
+01:24:42,023 --> 01:24:57,703
+Diğeri ikincisi ikiden başlayarak 2, 3, 6, 7, 10, 11'i aldı. Daha önce belirlenmiş bir şey nedir o? Sekans aslında doğrudan. Bu sekans üzerinden hesaplama yapılıyor.
+
+447
+01:24:57,703 --> 01:25:06,583
+Karşı tarafta da benzer şekilde alınan kontrol bitleriyle beraber tersten hesabı yapıyorsunuz. Ne olması lazım?
+
+448
+01:25:06,584 --> 01:25:15,223
+karşılık gelen hesabı yaptığınız zaman gene zaten XOR işlemi yapıyorsunuz.
+
+449
+01:25:15,223 --> 01:25:21,683
+Dolayısıyla karşı taraf aktarıldığında tekrar XOR'a girdiğinde bunların hepsinin sıfıra denk geliyor olması lazım.
+
+450
+01:25:21,683 --> 01:25:29,203
+Şimdi bu bütün yaptığımız şey, iş neye karşılık geldi aslında?
+
+451
+01:25:30,224 --> 01:25:31,483
+Şuna karşılık geldi.
+
+452
+01:25:32,483 --> 01:25:33,663
+Bir saniye.
+
+453
+01:25:38,003 --> 01:25:44,484
+bu veri üzerinde, yani 7 bitkileri üzerinde bir tane hatanın bulunmasına denk geldi.
+
+454
+01:25:45,303 --> 01:25:54,883
+Bütün olası hataları bulmak isterseniz aslında 1'li, 2'li, 3'lü, 4'lü, 5'li, 6'lı, N'li bütün kombinasyonları bulmanız lazım.
+
+455
+01:25:54,883 --> 01:25:59,803
+Bunu yapmaya kalktığınız zaman da fantastik bir noktaya gidiyorsunuz.
+
+456
+01:25:59,803 --> 01:26:08,903
+yani kombinasyon o kadar çok oluyor ki bunun için koymanız gereken kontrol miktarı uçuk kaçık bir noktaya geliyor.
+
+457
+01:26:10,063 --> 01:26:20,184
+O yüzden de genelde hata kontrolüne ilişkin yani hatayı düzeltmeye ilişkin noktalarda şey yapılır.
+
+458
+01:26:21,083 --> 01:26:22,563
+Belli bir sınırla gidilir.
+
+459
+01:26:22,563 --> 01:26:29,303
+Yani ben 7 bitlik bir bilgi gönderiyorsam ya bir hatayı ya en fazla iki hatayı kontrol ederim.
+
+460
+01:26:29,803 --> 01:26:57,423
+bunun üstüne çıkmam. Ya da en azından Hamming için böyle. Bunun dışında alternatif başka yöntemler de var. Mesela binary, formal, regional codes var, read Solomon kodları var. Low density, parity check kodu var. Bunların hepsinin arkasındaki aritmetik biraz karışık. Dolayısıyla doğrudan bu dersin şeyi değil, içeriği değil. O yüzden de girmeyeceğiz. Ama hani tabii ki daha maliyetli yapılar olduğunu unutmayın.
+
+461
+01:26:57,423 --> 01:27:18,224
+Şimdi bu hafta aslında konuşacaklarımız bu kadar. Burada duracağız. Önümüzdeki hafta data link kontrolüyle devam ediyoruz. Bağlantı yönetimi vs. flow control kısmına geçeceğiz.
+
+462
+01:27:18,224 --> 01:27:28,484
+Ama şimdi bu kadar. Bu hafta bir şekilde diğer gruplarda synchronizasyonumuzu sağlamamız lazım. O yüzden burada duracağız arkadaşlar. Varsa bir sorunuzu onu alayım.
+
+463
+01:27:37,747 --> 01:27:42,407
+Tamam, o zaman yoksa hepinize iyi akşamlar diliyorum. Haftaya görüşmek üzere.
+
+464
+01:27:44,208 --> 01:27:45,607
+İyi akşamlar hocam.
+
+465
+01:27:46,168 --> 01:27:53,247
+Bu arada şeyi de söyleyeyim. Bu hafta 6. haftaydı, değil mi?
+
+466
+01:27:57,247 --> 01:28:03,287
+Bizi haftası 8. haftaymış. Yani önümüzdeki haftada konu anlatım olacak.
+
+467
+01:28:03,287 --> 01:28:16,387
+şey yapacağız. Sonrasındaki hafta vizeyi yapıyor olacağız. Vizeden sonra artık benle devam etmeyeceksiniz.
+
+468
+01:28:16,387 --> 01:28:26,367
+Grubu devrediyor olacağım. Yani 8 hafta kısmı tamamlamış olacağız. Aklınızda olsun. Şaşırmayın. Bir anda Cihan Hoca çok değişmiş durumu oluşmasın.
+
+469
+01:28:26,367 --> 01:28:51,108
+önden haber vereyim. Bu arada bize için de Furkan Hoca'nıza, diğer vurgun hocasıyla konuştuk. Bir derslik olmazsa test şeklinde yapacağız. Çoktan çok seçmeli olacak. Çoktan çok seçmeli. Başka derslerde şey yapmışsınızdır. En azından benim ya da Gökhan Hoca'nın verdiği derslerde ama kısaca söyleyeyim.
+
+470
+01:28:51,108 --> 01:28:57,368
+soruların şıkları var ve fakat doğru cevap bir tane olmak zorunda değil.
+
+471
+01:28:57,487 --> 01:28:58,887
+Birden fazla doğru cevap bulabilir.
+
+472
+01:28:59,167 --> 01:29:01,567
+Doğru cevapları işaretlediğiniz sürece sıkıntı yok.
+
+473
+01:29:01,567 --> 01:29:12,288
+Ama yanlış cevabı işaretlediğiniz zaman herhangi bir yanlışı yani 3 doğru cevabı olan bir soruda 2 doğru bir yanlış işaretlediyseniz sorunuz yanlış sayılıyor.
+
+474
+01:29:13,027 --> 01:29:19,508
+Test sınavlarında her zaman olduğu gibi yanlışlar doğruları götürüyor şık sayısına bağlı olarak.
+
+475
+01:29:19,507 --> 01:29:44,707
+Dolayısıyla dört şekli bir sistemde üç yanlış bir doğruyu götürecektir. Bunların hepsi zaten sınavda da karşınızda olacak, söylenecek vs. ama ben şimdiden haber vereyim. Duymadık, görmedik, bilmiyorduk durumu olmasın diye şey yapıyorum. Abi bir dakika chatten birileri yazmış. Pardon görmedim. İyi akşamlar yazmışlar. Sağ olun. Size de iyi akşamlar. Haftaya görüşmek üzere.

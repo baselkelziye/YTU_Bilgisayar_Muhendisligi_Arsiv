@@ -1,0 +1,1903 @@
+1
+00:00:01,524 --> 00:00:02,524
+Ders noktanı.
+
+2
+00:00:03,343 --> 00:00:04,443
+Tamamdır hocam.
+
+3
+00:00:05,063 --> 00:00:05,984
+Sen nereye geldin?
+
+4
+00:01:16,915 --> 00:01:32,435
+Evet, merhaba arkadaşlar. Biraz geciktik, kusura bakmayın. Hemen başlayabiliriz. Slaytımızı bulalım. Geçtiğimiz haftalarla ilgili sorusu olan arkadaşlarımız varsa bu arada sorabilirler tabii ki. Biz bakarken.
+
+5
+00:01:38,260 --> 00:01:58,639
+Tamam. Biraz sabahtan beri hiçbir şey yoktu. Maalesef evde bugün bu saatten sonra ustalar çalışmaya karar verdi. Biraz gürültülü olabilir. Alt katta bir çalışma var. Anlayamadığınız yerlerde lütfen uyarın. Ben tekrar ederim oraları. Dinlemeniz. Sesin azalmasını bekleriz yani.
+
+6
+00:01:58,639 --> 00:02:08,919
+Şimdi geçtiğimiz hafta 802.4'ü daha önce 3'e anlatmıştık, 4'ü anlattık, 5'i anlattık.
+
+7
+00:02:09,659 --> 00:02:17,940
+Şimdi de hatta belki aynı anda anlattık. 3, 4, 5'i anlattık. 802.11'e bugün değiniyor olacağız.
+
+8
+00:02:17,940 --> 00:02:23,719
+Sıkça kullandığımız Wi-Fi LAN teknolojisi, IWD'nin bir protokolü.
+
+9
+00:02:23,719 --> 00:02:51,079
+farklı farklı versiyonları var. A'dan başlıyor, Z'ye kadar gidiyor, ikili harfli olan çeşitli versiyonları var. Buna kabaca değiniyor olacağız. Normalde hani Connections ve Connections Oriental Service'e ve Swinching'e geçecektik ama bu önümüzdeki haftaya kalıyor olacak. Kıymetli arkadaşlar. Evet, şimdi bazı şeyler beni rahatsız ediyor uzunluğuna ilgili. Onları şöyle ilgili yerlere gönderirsem daha güzel göreceğim ekranı. Süper.
+
+10
+00:02:51,079 --> 00:03:06,459
+Şimdi IEEE standartlarından 802.11'e geldik. Kablosuz iletişim. Şimdiye kadar kablolu yapıda işler nasıl çalışıyor onu görmüştük. Burada kablosuz iletişimi gördük. Ne dönür onu görüyor olacağız.
+
+11
+00:03:06,459 --> 00:03:13,940
+bildiğiniz gibi bir frekans bandı üzerinden yine yayın yapılıyor.
+
+12
+00:03:13,999 --> 00:03:15,799
+Bir dalga boyu oluyor.
+
+13
+00:03:15,799 --> 00:03:19,959
+Radyo frekansları üzerinden yapılan çeşitli versiyonları var.
+
+14
+00:03:20,039 --> 00:03:23,480
+Bizim evimizde mesela en basitinden söyleyelim bir modemimiz var.
+
+15
+00:03:24,039 --> 00:03:35,019
+Bu modemimiz bir A isimlendirilmiş SSID'si belli olan bir A yayıyor ve hepimiz ona bağlanarak bir LAN oluşturmuş oluyoruz.
+
+16
+00:03:35,019 --> 00:03:43,119
+ve internetimiz olmasa bile o modeme bağlı herkes tarafından veri paylaşımı gerçekleştirilebiliyor.
+
+17
+00:03:43,239 --> 00:03:44,119
+O şekilde düşünelim.
+
+18
+00:03:44,839 --> 00:03:49,739
+Bir de tabii infrared ile yapılan çeşitli versiyonlar söz konusu.
+
+19
+00:03:50,239 --> 00:03:56,399
+Infrared de kızıl ötesi bir ışık ve infrared teknolojisinde daha çok her iki tarafın,
+
+20
+00:03:56,459 --> 00:04:01,339
+göndericinin ve alıcının antenlerinin doğrudan birbirini görmesi üzerine kurgulanmış bir yapı var.
+
+21
+00:04:01,340 --> 00:04:18,920
+RF'de ise doğrudan görmesine gerek yok. Bir arkasında yani duvarın arkasında da olabilir. Tabii dalga boyuna göre her dalga boyu duvardan geçecek diye bir şey yok. Veya her duvarın da tabii özelliğine göre kurşundan duvar yapmışsanız geçmeyecektir.
+
+22
+00:04:18,920 --> 00:04:24,039
+Ama evlerimizi düşünelim, klasik tuğladan, betondan örülen evlerimizi düşünelim
+
+23
+00:04:24,039 --> 00:04:29,020
+Farklı bir odada modem varken biz bağlantı kurabiliyoruz
+
+24
+00:04:29,020 --> 00:04:32,380
+Ama eski özellikle televizyonlarımızı düşünelim
+
+25
+00:04:32,380 --> 00:04:36,360
+Televizyonun tam olarak televizyonu tutmadan kumandamızda kız ötesi olarak
+
+26
+00:04:36,360 --> 00:04:39,459
+Televizyonun kanallarını değiştirme işlemi gerçekleştiremiyorduk
+
+27
+00:04:39,459 --> 00:04:43,080
+En önemli özelliklerinden birisi mobil olması
+
+28
+00:04:43,080 --> 00:04:47,319
+Yani mobilden kastımız ne? Mobil hareket eden demek temelde
+
+29
+00:04:47,319 --> 00:04:49,939
+kablolu olduğumuz yapıyı düşünün.
+
+30
+00:04:50,675 --> 00:05:00,215
+siz hareket ettiği eğer kablolu yapıda da tabii ki laptopu kablo bağlıyorsunuz. Evinin içerisinde 10 metrede kabloları istediğiniz yerde dolaşabilirsiniz ama çok efektif olmayacaktır.
+
+31
+00:05:00,596 --> 00:05:10,615
+Fakat cep telefonlarımızı düşünün. Ben şu an işte Wi-Fi'den bağlanıyorum, bu dersi anlatıyorum size ve herhangi bir şekilde laptopuma bir LAN kablosu falan bağlı değil.
+
+32
+00:05:11,115 --> 00:05:14,856
+Mobil bir şekilde istediğim yere laptop alıp belki kucağımda bile ders anlatabilirim.
+
+33
+00:05:14,856 --> 00:05:20,475
+Yani bu kısımlar göz önünde bulundurulduğunda en önemli avantajlarından birisi mobilite.
+
+34
+00:05:20,675 --> 00:05:37,196
+Tabi mobilite dediğimizde ise rooming kısmı önemli. Rooming kısmını belki yurt dışına giden arkadaşlarımız varsa orada karşılarına çıkmışlardır. GSM için söylüyorum. Yani bizim normal mobil telefonlarımızın hatları için söylüyorum.
+
+35
+00:05:37,196 --> 00:05:55,415
+Yurt dışına gittiğinizde mesela hali hazırda o çekme bölümünde telefonun sağ üst tarafında yer alan işte LTE gibi, H gibi, H plus gibi veya 4.5G gibi, 4G gibi çeşitli ifadeler yazarken yurt dışına gittiğinizde R yazmaya başlıyor. Yani rooming oluyorsunuz.
+
+36
+00:05:55,415 --> 00:06:05,576
+Servis aldığınız operatörün dışında farklı bir operatörden hizmet alıyorsunuz ve o operatörler arasındaki anlaşmalar çerçevesinde ücretlendiriliyorsunuz.
+
+37
+00:06:05,576 --> 00:06:17,936
+Yani aslında bakıldığında koskoca yani Türk Telekom'un altyapısı bir networkse ondan çıkıp başka bir networkten bir nedenör ona iletişim kurmaya çalışıyorsunuz.
+
+38
+00:06:17,936 --> 00:06:32,216
+Burada bakıldığında ise Rooming'i şöyle düşünebilirsiniz. Rooming yapısı var. Ne demek Rooming? Mesela bizim Davutbaş'a Wi-Fi'yi düşünelim. Giriyorsunuz kampüste geldiğinizde Davutbaş'a Wi-Fi diye bir Wi-Fi var.
+
+39
+00:06:32,216 --> 00:06:44,076
+Tabii çok verimli belki bağlanamıyorsunuz, belki hiç bağlanamıyorsunuz. Onun iyileştirilmesiyle ilgili dönemin başında çalışmalar başlatıldı. Hatta fakültede de kablolamaları falan bayağıdır görmüşsünüzdü. Son birkaç haftadır onunla uğraşıyorlar.
+
+40
+00:06:44,656 --> 00:07:01,996
+Bittiğinde ve güzel çalıştığında, yani kampüs içerisinde bir router'dan, bir modemden diyelim, güzel anlayın, siz o ağa bağlanacaksınız ve mesela fakültedeyken belli bir modemden, farklı bir sınıfa geçtiğinizde size daha yakın modemden bağlanacaksınız.
+
+41
+00:07:02,215 --> 00:07:16,175
+yemekhaneye gideceksiniz. Aynı Wi-Fi anına farklı bir modemden bağlayacaksınız. Yani o an içerisinde bir dolaşım gerçekleştireceksiniz. Şeyi dolaşım tabii direkt Türkçe'ye çevirirsek dolaşım yapabileceğiniz bir yapıda çalışıyor.
+
+42
+00:07:16,175 --> 00:07:38,635
+Tabi az önce söylediğim gibi görüş menzilinde olmasa bile yani siz iletişim kurabiliyorsunuz fakat tabi ki çok kısıtlı yani GSM kısmını, LTE kısmını veya 2G kısmını düşündüğümüzde kilometrelerce mesafelere veri iletimi veya o ağın oluşturulabilmesi söz konusuyken
+
+43
+00:07:38,635 --> 00:07:57,895
+Burada maksimum açık alan için söylüyorum 100 metre. Yani 100 metrelik bir mesafeden Wi-Fi'yı görebiliyorsunuz. Kapalı alanda ise bu en iyimser durumlarda 30 metreye falan çıkabiliyor. Genellikle ise 15-20 metreler seviyelerinde kalıyor.
+
+44
+00:07:57,896 --> 00:08:19,815
+Şimdi Ethernet'in tabii ki devam edilmiş hali. Size hatırlarsanız Ethernet anlatırken Create Sense Multiple Access'in Collision Detection versiyonu vardı. Güzel bir versiyon olduğunu söylemiştik. Collision'ları detekt ederek onu temizleyip ve performansı, line utility'yi arttırdığını söylemiştik.
+
+45
+00:08:19,815 --> 00:08:31,696
+Bunun bir gelişmiş versiyonu Collision Avoidance burada tekniği kullanılıyor. O da işte temelde Collision'ı aza indirmek veya azaltmak.
+
+46
+00:08:32,080 --> 00:08:57,399
+veya minimize etmek için hangi terörü kullanırsanız gerçekleştiriliyor. Antenler harf doublex yapıda çalışıyor. Yani veri ya gönderiyor ya alıyor. Gönderirken aynı zamanda almak gibi herhangi bir durumu söz konusu değil. Anten yani bu wifi yayan, bu ağı yayan antenden uzaklaştıkça uzaklaştığınız metrenin karesi cinsinden sinyalini zayıflıyor.
+
+47
+00:08:57,399 --> 00:09:21,519
+Bu çok önemli bir bilgi. Siz ne kadar yakın olursanız o kadar daha yüksek performansla erişiyorsunuz. Sinyaliniz daha yüksek oluyor. Bir metre uzaklaştığınızda dört kat daha sinyaliniz zayıflamış oluyor. İki metre uzaklaştığınızda on altı kat sinyaliniz zayıflamış oluyor. Bu da yine dikkat edilmesi gereken hususlardan birisi.
+
+48
+00:09:21,519 --> 00:09:43,479
+E tabi burada da en önemli faktörlerden birisi gürültü. Gürültü dediğimizde hatırlarsanız kablolu tarafı düşünün. Physical layer'da gürültüler nelerden bahsetmiştik gürültü olarak. İşte kablonun elektromanyetik etkisinden atomlar böyle kıpırdaşıyordu, bir ısı yayıyordu, elektronlar falan kıpırdaşıyordu. Termal noise diyorduk buna, termal nojden bahsetmiştik.
+
+49
+00:09:43,480 --> 00:09:48,139
+veya işte kablonun üzerinden bir araba geçiyordu, yine bir etkisi oluyordu.
+
+50
+00:09:48,520 --> 00:09:53,719
+Buradaysa gürültü kanalların birbirleri üzerine biniyor olması.
+
+51
+00:09:53,719 --> 00:09:58,920
+Yani siz belli bir, işte 2.4 GHz'in belli bir kanalından yayın yapıyorsunuz.
+
+52
+00:09:59,200 --> 00:10:06,560
+Aynı kanaldan çok daha yüksek bir güçle yayın yapan çeşitli ağlar varsa size bir gürültü olarak dönüyor bu.
+
+53
+00:10:07,080 --> 00:10:12,740
+Yani tabii belki yaşadığınız çevrede çok fazla Wi-Fi ağı yoktur, performanslı bir şekilde bağlanabiliyorsunuzdur.
+
+54
+00:10:12,739 --> 00:10:24,979
+Ama mesela ne bileyim bir fuara gidiyorsunuz, bir yarışma alanına gidiyorsunuz muhteşem bir wifi ağı kalabalığı oluyor. Bu tarz durumlarda gürültü olması kaşınılmaz oluyor.
+
+55
+00:10:24,979 --> 00:10:43,859
+Tabii gürültü bizim verimizin performanslı bir şekilde karşıya tam doğru bir şekilde ulaştırılması noktasında sıkıntılara sebebi veriyor. Veriyi tekrar tekrar göndermemiz gereken durumlar oluyor. Bu da verinin veri gönderim hızını oldukça düşürüyor açıkçası.
+
+56
+00:10:43,859 --> 00:10:51,219
+Tabii collision detection kısmı ne denir ona?
+
+57
+00:10:51,979 --> 00:10:55,199
+Ve collision'ın oluşması çok az, onu söyleyelim.
+
+58
+00:10:55,199 --> 00:11:04,460
+Collision'ın detect edilmesi kısmındaysa ben collision'dan kaçındığım, kaçın, birazdan anlatacağız, kaçınacak çeşitli teknikler geliştirdiğim için
+
+59
+00:11:04,459 --> 00:11:14,559
+Collision olduğu durumda da Collision sadece küçük bir boyutlu frame'ler üzerinden bir Collision gerçekleşeceği için
+
+60
+00:11:14,559 --> 00:11:22,639
+Collision'dan kaçınılmak biraz zor, kaçınılmak mümkün ama Collision'in dedektedilmesiyle ilgili çeşitli problemler var.
+
+61
+00:11:22,639 --> 00:11:32,579
+Onları yine görüyor olacağız. Burada işte IEEE 802.11'in Media Access Control kısmında çeşitli teknikler var.
+
+62
+00:11:32,580 --> 00:11:56,139
+Bunlardan birisi Distributed Coordination Function. Bunu detaylı bir şekilde size anlatacağız. Nasıl çalışıyor onu göreceğiz. Çeşitli yaklaşımlar söz konusu. Bir diğeri de Pulling'i gerçekleştirdiğimiz Point Coordination Function. Şimdi bu Distributed Coordination Function nasıl çalışıyor DCF? Ona hani temelde beraber bakıyor olacağız.
+
+63
+00:11:56,139 --> 00:12:03,380
+Ethernet tarafını base alıyor dedik ya, Ethernet tarafında düşünün ne yapıyordu oradaki teknikler?
+
+64
+00:12:03,779 --> 00:12:06,639
+Öncelikle hattın boş olup olmadığını kontrol ediyordu.
+
+65
+00:12:06,639 --> 00:12:13,699
+Eğer ki hat boşsa yaptığı çeşitli aksiyonlar vardı, hat doluysa, meşgulse yani çeşitli aksiyonlar vardı.
+
+66
+00:12:14,719 --> 00:12:18,639
+Burada da öncelikle hattın boş veya dolu olduğu kontrol ediliyor.
+
+67
+00:12:19,135 --> 00:12:37,215
+Eğer ki hat boş ise belirli bir süre, yani distributed coordination function, interframe space kadar, diffs kadar diyelim, diffs kadar bekliyor belirli bir süre ve modunu transmission moduna dönüştürüyor.
+
+68
+00:12:37,355 --> 00:12:47,396
+Veri aktarım moduna dönüştürüyor. Tekrar söyleyelim, hani çok basit temelde ama burada beklediği süreler birazdan farklı farklı parametrik bekleme süreleri söylüyor olacağız.
+
+69
+00:12:47,396 --> 00:13:04,635
+O yüzden buradaki sürenin ne olduğunu söyleyelim. Hatta dinliyorum. Eğer ki hat müsaitse, müsait olmadığı durumda da beklemeler gerçekleştireceğim. Eğer ki hat müsaitse diff süresi kadar bekliyorum ve transmission'a geçiyorum.
+
+70
+00:13:04,635 --> 00:13:16,935
+pek hala hat müsait değilse ne yapıyorum? Benim kendi transmission'ımı şu an hali hazırdaki transmission veri aktarımı bitinceye kadar erteliyorum.
+
+71
+00:13:17,336 --> 00:13:26,755
+Yani nasıl söyleyeyim? Bir buna back off, geri çekilme diyorlar. Bir işte yine diff süresi kadar kendimi geri çekiyorum.
+
+72
+00:13:26,755 --> 00:13:40,775
+tamam göndereceğim ama şu an göndermeyim hat müsait değil diye olaya yaklaşıyorum. Bu dif süresi işte birazdan tekniklerinden bahsedeceğiz nasıl hesaplandığından.
+
+73
+00:13:40,775 --> 00:14:07,595
+Mesela bir W değeri söz konusu oluyor. Bu W değeri 4'ten başlıyor. 2 üzeri 4, 16. 16'dan geriye doğru sayarak bir clock oluşturuyor. Sanki bir kronometreymiş gibi. Her 16 time birimlik, buradaki zaman birimi mikrosaniyede olabilir, nanosaniyede olabilir.
+
+74
+00:14:07,595 --> 00:14:37,576
+artık ben time slotu diyeyim siz anlayayım geriye doğru sayıyor ve sıfır olduğu anda artık kendisi iletime geçebilecek birazdan böyle grafiklerle daha güzel anlaşılacak bu diyelim ki iletime geçtiği durumda çeşitli kollijinlara sebebiyet verdi bu sefer W değeri sıfırdan şey dörtten beşe çıkartılıyor iki üzeri beş bu sefer otuz ikilik bir dilimde bekliyor altıya çıkartılıyor yediye çıkartılıyor böyle
+
+75
+00:14:37,595 --> 00:14:48,235
+yükselerek giden çeşitli durumlar söz konusu. Bunu söyledik. Yani geri çekilme zamanı sona erdiğinde sıfır olduğunda veri göndermeye artık başlıyoruz.
+
+76
+00:14:48,595 --> 00:15:06,275
+Tabii her bir neden rona zaman diliminden sonra biz çeşitli yaptığımız aksiyonlar var. Eğer ki dif süremiz henüz sıfır olmadıysa o time slotta dif süremizi bir tane azaltacak.
+
+77
+00:15:06,275 --> 00:15:08,915
+14'gen 10'caya çekecek işlemler gerçekleştiriyoruz.
+
+78
+00:15:09,296 --> 00:15:12,815
+Sıfır olduğu durumdaysa hatta veriyi biz basıyoruz.
+
+79
+00:15:13,035 --> 00:15:14,255
+Kolijon olma ihtimali var.
+
+80
+00:15:14,376 --> 00:15:16,936
+Birazdan ne tarz durumlarla karşılaşacağımızı göreceğiz.
+
+81
+00:15:17,535 --> 00:15:21,016
+Ben karşı tarafa bir frame gönderdim.
+
+82
+00:15:21,095 --> 00:15:23,236
+Onun karşılığındaysa bana bir ACK gelecek.
+
+83
+00:15:23,456 --> 00:15:25,796
+Yani aldım, almadım, hatta al aldım neyse.
+
+84
+00:15:25,895 --> 00:15:27,915
+Bunlara genel olarak ACK diyorduk hatırlarsanız.
+
+85
+00:15:28,356 --> 00:15:29,236
+ACK gelecek.
+
+86
+00:15:29,235 --> 00:15:39,455
+o karşı taraf bana bu ACK'yı göndermeden bir short interframe space, SIFS kadar süre beklemiş oluyor.
+
+87
+00:15:39,835 --> 00:15:46,515
+Ve bu SIFS süresi bizim DIF süremizden daha kısa olarak genellikle kurgulanmış oluyor.
+
+88
+00:15:46,515 --> 00:15:55,155
+Collision olduğu durumdaysa frameler extended interframe space süresi kadar beklemiş oluyor.
+
+89
+00:15:55,155 --> 00:16:04,555
+bunu da aslında temelde W değerini yükselterek daha süre onları bekleyecek şekilde cezalandırarak gerçekleştiriyoruz.
+
+90
+00:16:04,915 --> 00:16:09,495
+Birkaç grafik üzerinden bu işin nasıl gerçekleştiğini detaylı bir şekilde anlatalım.
+
+91
+00:16:09,855 --> 00:16:12,435
+Bir gönderici bir de alıcı olduğunu düşünelim.
+
+92
+00:16:12,795 --> 00:16:15,995
+Tabii bir sürü farklı farklı stationlarda söz konusu olabilir.
+
+93
+00:16:15,996 --> 00:16:17,016
+gönderici.
+
+94
+00:16:17,844 --> 00:16:41,383
+göndermeye karar veriyor ve işte hattı dinliyor, dinliyor. Müsaitse belli bir dif süresi kadar bekleyip hatta frame'ini yolluyor, datasını yolluyor. Alıcı taraf tabii biz gönderirken alıcı taraf da bir taraftan şu zaman slotunda belki çok az bir ötelenme ile bunu alıyor.
+
+95
+00:16:41,383 --> 00:16:53,323
+çeşitli kontrollerden geçiriyor hata kontrolü gibi düşünün integrity işlerinden geçiriyor ve buna işte başarılı aldım almadım gibi bir cevap gönderecek bir ACK
+
+96
+00:16:53,323 --> 00:17:04,923
+alması bittiği andan itibaren bir sift süresi kadar bekleyip o ACK'yı yolluyor karşı tarafa yani bu zamanla ilgili bir durum söz konusu burada
+
+97
+00:17:04,923 --> 00:17:13,463
+her ikisi de gönderiyor, bu da gönderiyor, bu da gönderiyor. Şu sürenin ise şu süreden daha küçük olduğunu tekrardan dile getirmiş olalım.
+
+98
+00:17:13,823 --> 00:17:23,424
+Bittikten sonra hat artık müsait, müsait olduğu için belli bir süre tekrardan bekleniyor ve bundan sonra contention başlıyor.
+
+99
+00:17:23,503 --> 00:17:30,303
+Contention ne? Rekabet. Yani yok sen göndereceğim, ben göndereceğim, olmaz, ben göndereceğim gibi bir rekabet başlıyor.
+
+100
+00:17:30,303 --> 00:17:41,223
+bu kontensiyonun nasıl olduğunu da birazdan anlatacağım. Az önce söylediğim W ve W değeri ve CW değeri üzerinden gerçekleştiriliyor.
+
+101
+00:17:41,863 --> 00:17:48,943
+Şimdi biraz daha detayına inmiş olalım nasıl gerçekleştiğine dair.
+
+102
+00:17:49,743 --> 00:17:54,863
+Dediğim gibi grafikler üzerinden anlaşılması bazen daha kolay oluyor. O yüzden grafikleri veriyorum.
+
+103
+00:17:54,863 --> 00:18:15,683
+Şimdi biz yine immediate access kısmında şey yapıyoruz, neden üruna, hat müsait, belli bir zamandan daha fazla hattın müsait olduğu durumda artık hattı meşgul edebilecek bir neden üruna biz ya veri gönderiyoruz ya da işte başka birisi veri gönderebiliyor.
+
+104
+00:18:15,683 --> 00:18:41,823
+Bu gelen verinin tipine göre bu bir ACK'da olabilir, bu bizim data frame'imiz de olabilir. Çeşitli farklı sürelerde bekliyoruz ve bu sürelerin sonundaysa herkesin, her makinenin veri göndermekle ilgili işlem gerçekleştirmek istenen her point'in diyelim biz daha doğru olsun point'in bir nasıl söyleyeyim back of window'u çalışmaya başlıyor.
+
+105
+00:18:41,823 --> 00:18:54,183
+buna contention diyoruz çekişme. Her birisi belli bir değerden sonra geriye doğru saymaya başlıyor ve en çabuk sıfıra ulaşan o contention'ı kazanmış oluyor.
+
+106
+00:18:54,564 --> 00:19:01,463
+Ve contention'ı kazanan bir sonraki zaman slotunda veriyi göndermeye hak edecek kişi.
+
+107
+00:19:01,463 --> 00:19:07,423
+Şimdi burada daha detaylı bir şekilde anlıyor olacağız diye ümit ediyorum nasıl oluyor bu işler.
+
+108
+00:19:07,424 --> 00:19:26,364
+bizim işte media access kontrol kısmına bir frame eriştiğinde şu okla görselleştirmişiz bunu. Şuradaki 3 station'dan öncelikle gördüğünüz gibi station 3'e erişmiş bu veri. Bunun üzerine bu bir aksiyon gerçekleştiriyor olacak.
+
+109
+00:19:26,363 --> 00:19:41,323
+bakın W değeri 5, 2 üzeri 5, 32, 0'dan 31'e kadar değerler alabiliyor. Yani burada 31'den başlayıp 0'a kadar sayılabilecek şekilde bir bizim CW değerimiz söz konusu.
+
+110
+00:19:41,323 --> 00:19:54,083
+Tabii herhangi bir şekilde ben şu an veri gönderme ile ilgili başka talepler olmadığı için, contention söz konusu olmadığı için benim değerim sıfır olmuş oluyor.
+
+111
+00:19:54,163 --> 00:19:59,323
+Birazdan şuna bağlı çeşitli değerler önceliklendirme ile ilgili çeşitli değerler olmuş olacak.
+
+112
+00:20:00,323 --> 00:20:01,323
+Ardından...
+
+113
+00:20:02,163 --> 00:20:12,303
+ben veriyi gönderiyorum, frame'i gönderiyorum. Yani hattı meşgul ediyorum. Meşgul ettikten sonra verimin gönderilmesi bir süre sonra bitiyor.
+
+114
+00:20:12,883 --> 00:20:21,883
+Tabii bittiği anda şu an dikkat edilmesi gereken nokta şu. Ben veriyi gönderirken, hattı meşgul ederken belli bir zaman aralığında
+
+115
+00:20:21,883 --> 00:20:31,283
+istasyon 1 ve istasyon 2'de benim veri göndermem bitmeden önce Media Access Controller kısımları işte veri iletimi gerçekleştireceğiz diye
+
+116
+00:20:31,283 --> 00:20:41,363
+onlara da bir nedenur ona bilgi geliyor. Hani buradaki noktaları zamana göre önemli. T buradan başlayıp şuraya doğru artarak gidiyor tahmin edebileceğiniz üzere.
+
+117
+00:20:41,363 --> 00:20:53,243
+Belli bir süre sonra tabii ki bakın ne oluyor? Benim hattı meşgul etmem sona eriyor ve tüm cihazlar bir dif süresi kadar bekliyor. Bu süre standart, sabit bir süre.
+
+118
+00:20:53,243 --> 00:21:19,943
+ardından contention başlıyor. Contention'da da şöyle işlem gerçekleştiriliyor. Bizim işte nasıl söyleyelim bir CW değerimiz var 31 ve bir de BO değerimiz var. Bu da bizim önceliğimize göre maksimum CW değerine değeri olacak şekilde bir nasıl söyleyelim değer.
+
+119
+00:21:19,943 --> 00:21:41,163
+Burada mesela öncesi ve sonrası belki var yok bilmiyorum 10 olarak alınmış durumda bu. Burada 19 şurada ise 25 olarak alınmış. Her birisi belli bir zaman dilimi içerisinde geriye doğru sayıyor. Az önce bahsetmiştim ilk sıfıra inen kazanıyor ve hattı meşgul ediyor.
+
+120
+00:21:41,163 --> 00:22:09,964
+Çeşitli göndereceği işler varsa onları gerçekleştiriyor. Daha sonra hat müsait olduğu andan itibaren tekrar herkes belli bir süre sayıyor. En son bu boğ değeri nerede kaldıysa bakın burada sıfırdı tekrardan başlıyor belli bir değerden itibaren. Nerede kaldıysa ondan itibaren başlıyor. Mesela 15'den kalmış 14, 9'da kalmış 8. Devam eder hep hepsi azalarak geliyor bakın.
+
+121
+00:22:09,963 --> 00:22:39,143
+Sıfıra ilk kim ulaşırsa o kazanıyor. Sıfıra ulaşmış. Tamam benim hakkım diyor adam göndermeye başlıyor. Çünkü sıfıra ulaştıktan sonra da ufak bir kontrol ediyor. Bir şeyler var mı? Veri gönderiliyor mu diye. Hayır gönderilmediğini ikisi de aynı anda bu işlemi gerçekleştirdiği için düşündüklerinden ikisi de hatta veri göndermeye başlıyor ve collision olmuş oluyor. Yani böyle bir durumda collision olma ihtimali tabii ki var. Collision worst case. Yani karşı taraf collision olduğu için benim ona veri göndermek istediğimi bile bilmiyor olabilir.
+
+122
+00:22:39,143 --> 00:22:44,744
+Ama kollijini bu tekniği uygulayarak amacımız ne?
+
+123
+00:22:44,783 --> 00:22:45,783
+Kollijinden kaçınmak.
+
+124
+00:22:46,083 --> 00:22:53,363
+Ama kollijin olduğu durumdaysa bu makineler biraz daha bu kollijine karıştığı için onları cezalandıralım gibisinden bir mantık var.
+
+125
+00:22:54,024 --> 00:22:56,143
+CV değeri, W değeri 5'ti.
+
+126
+00:22:56,263 --> 00:22:57,803
+Burada W değeri 6 olmuş oluyor.
+
+127
+00:22:57,884 --> 00:23:05,024
+2 üzeri 6, 64'ten 64'e kadar değer alabilecek farklı öncelik mekanizmalarına göre bir şeyler üretilmiş oluyor.
+
+128
+00:23:05,024 --> 00:23:13,324
+mesela buradaki Station 1 52 time slotluk bekleyecek. Şeyse ne denir ona?
+
+129
+00:23:13,940 --> 00:23:34,999
+Station 2 ise 43 times dotluk bekliyor olacak. Bunlar geriye doğru saymaya başlıyor. Bu ise en son 6'da kalmıştı. 6'dan itibaren sayıyor. Bakın 0'a ulaştık andan itibaren hattı kendisi kullanıma alıyor. Bunlar da bu kullanım bittikten sonra 37 ve 45'den devam ediyor olacaklar.
+
+130
+00:23:34,999 --> 00:23:57,639
+Bu ise hala işte CW değeri 31 yani 32, 2 üzeri 5 gibi düşünün dan tekrardan sıfırdan itibaren saymaya başlayacak. Bu noktadan sonra bir sonraki nasıl söyleyelim çevrimde yine maksimum 31 değerini alabileceği için bu ki önceliğine veya rastgele belirlenmesine göre herhangi bir değer alıyor.
+
+131
+00:23:57,640 --> 00:24:13,520
+bakın burada 31'e kadar 0 ile 31 arasında 25 değerini almış. Burada da maksimum 31 alacağına göre bunların en küçüğü de 36'tan başlayacağına göre bir sonraki zaman diliminde eğer ki yine Station 3 veri göndermek istiyorsa Station 3'te böyle bir hak olacak.
+
+132
+00:24:13,519 --> 00:24:27,620
+yani anlayacağınız üzere şurada kollijına sebebiyet verenler herhangi bir şekilde mesela iki kere ardı ardına Station 3 gönderim yaparken kendileri herhangi bir şekilde gönderim yapamayacaklar.
+
+133
+00:24:28,139 --> 00:24:30,160
+Bu da onların biraz beklemesini sağlıyor.
+
+134
+00:24:30,239 --> 00:24:32,639
+Tabii sorusu olan arkadaşlarımız varsa alabiliriz.
+
+135
+00:24:33,499 --> 00:24:36,899
+Bunu soruyorum hani biraz online'da çok şey olmuyor.
+
+136
+00:24:36,959 --> 00:24:40,359
+Gündüz dersinde çok güzel hani interaktif bir şekilde işliyoruz.
+
+137
+00:24:40,359 --> 00:24:41,459
+Orada soru oluyor.
+
+138
+00:24:41,599 --> 00:24:42,699
+Burada da tabii biz soralım.
+
+139
+00:24:42,699 --> 00:24:45,159
+sorusu olan arkadaşlarımız var. Her daim cevaplarız.
+
+140
+00:24:45,519 --> 00:24:49,039
+Hocam CV değeri ne işe yarıyordu onu tamamlayamadım ben.
+
+141
+00:24:50,059 --> 00:24:57,819
+Tamam. Şimdi CV değeri şöyle kıymetli Arda. Bizim bir W değerimiz var. Tamam mı?
+
+142
+00:24:57,819 --> 00:25:09,639
+Bu başlangıçta diyelim ki 4. Her station için başlangıçta 4. 2 üzeri 4, 16. 0'dan 16'ya kadar rastgele bir değer.
+
+143
+00:25:09,639 --> 00:25:16,259
+ama eğer ki önceliği de varsa geçen hafta mesela önceliği olan çeşitli sistemlerden bahsetmiştim.
+
+144
+00:25:16,620 --> 00:25:20,779
+Eğer ki önceliği varsa 0 ile 16 arasından daha düşük bir değer.
+
+145
+00:25:20,919 --> 00:25:24,240
+Mesela 5'e kadar 0 ile 5 arasında bir değer belki seçiliyor.
+
+146
+00:25:24,520 --> 00:25:26,579
+Ama önceliği yoksa rastgele bir değer seçiliyor.
+
+147
+00:25:27,300 --> 00:25:28,800
+Tamam rastgele bir değer seçildi.
+
+148
+00:25:28,800 --> 00:25:31,779
+Burada mesela artık 4'ü atlamışlar.
+
+149
+00:25:31,880 --> 00:25:36,419
+Belki bu zamanın öncesinde hepsi birer ceza aldığında bu W değeri yükseliyor.
+
+150
+00:25:37,079 --> 00:25:37,679
+Yükseldi.
+
+151
+00:25:37,679 --> 00:25:43,599
+W değeri yükseldiğinde 5 olmuş mesela burada görüyorsun 2 üzeri 5'ten 31, 31, 31.
+
+152
+00:25:44,019 --> 00:25:46,279
+Hepsinin maksimum alabileceği değer bu.
+
+153
+00:25:46,599 --> 00:25:49,099
+Hiç öncelik mekanizması olmadığını düşünüyorlar.
+
+154
+00:25:49,199 --> 00:25:54,539
+Rastgele 31'e kadar değer seçildi 10, rastgele seçildi 19, rastgele seçildi 25.
+
+155
+00:25:54,919 --> 00:25:57,559
+Yani bu 10 zaman dilimi beklemesi lazım.
+
+156
+00:25:57,699 --> 00:26:00,839
+Bu 19, bu da 25 zaman dilimi beklemesi lazım.
+
+157
+00:26:00,839 --> 00:26:11,839
+Pekala işte böyle kollijin olduğu durumda veya işte ardı ardına bazıları çok sıkıntılı bir şekilde fazla fazla veri gönderdiği durumda ne oluyor?
+
+158
+00:26:11,839 --> 00:26:20,579
+O W değeri bir üst değere çıkıyor. Dörtgen beş oluyor. İki üzeri beşten bakın bu sefer altmış dörde kadar olan sayılardan bir random sayı seçilmiş olunuyor.
+
+159
+00:26:20,579 --> 00:26:36,479
+Yani bekleme süresi arttırılmış oluyor. Bu da gördüğün değer sıfırla bunun arasında bu da dahil rastgele bekleme süresi üretmek için priviliç yoksa varsa tabii ona göre de işlem yapılıyor. Yoksa üretmek için olan bir değer.
+
+160
+00:26:37,899 --> 00:26:39,160
+Tamam hocam teşekkür ederim.
+
+161
+00:26:39,520 --> 00:26:42,219
+Ben teşekkür ederim. Başka soru soran arkadaşımız var mı?
+
+162
+00:26:45,100 --> 00:26:45,699
+Yok.
+
+163
+00:26:47,220 --> 00:27:11,259
+Devam edelim. Burada yine iki tane temel kavramımız var. Birisi request to send, birisi de clear to send. Bunu şunun için kullanıyoruz arkadaşlar. Ben diyelim ki request to send 5 alandan, clear to send de 4 alandan oluşuyor. Şimdi alanlarıyla ilgili çeşitli şeyleri söyleyelim. Ben A cihazıyım. İçinde neler barındırıyor onu söyleyeyim. A cihazıyım, B'ye veri göndermek istiyorum. Aynı network içerisinde.
+
+164
+00:27:11,259 --> 00:27:26,739
+Request to send frame'i gönderiyorum. Tamam mı? Ben A'yım, B'ye mesaj göndermek istiyorum. Request to send frame'i gidiyor. Bu frame'in içerisinde ona ne muhteviyatta ve ne kadar süreli bir şey göndereceğim bilgisi de söz konusu.
+
+165
+00:27:27,239 --> 00:27:40,080
+B'ye bu geldi, B aldı, değerlendirme yapıyor, kabul de edebilir, meşguldür, redde edebilir. Eğer ki kabul ediyorsa veya işte kabul etmiyorsa durumunu clear to send frame'iyle bildiriyor.
+
+166
+00:27:40,080 --> 00:27:45,740
+ve Clear to Send Framing'in içerisinde bir alan var ki o alan şu ilin için kullanılıyor.
+
+167
+00:27:46,300 --> 00:27:49,440
+A mesela A B'ye gönderdi ya B söylüyor bunu.
+
+168
+00:27:49,980 --> 00:27:54,559
+A bana şu kadar süre boyunca veri gönderecek haberiniz olsun.
+
+169
+00:27:55,220 --> 00:28:02,940
+Diğerleri de o kadar süre boyunca herhangi bir şekilde ekstradan hattı meşgul mü diye bile kontrol etmelerine gerek yok.
+
+170
+00:28:02,940 --> 00:28:10,520
+İşte diğerleri o süreyi alıp network allocation vektörlerine kaydediyorlar nav olarak
+
+171
+00:28:10,520 --> 00:28:18,020
+Yani clear to sendin içerisinde gelen o veriyi diğer stationlar nav olarak kaydediyorlar
+
+172
+00:28:18,020 --> 00:28:25,760
+Ve o süre bittikten sonra artık işlem gerçekleştireceklerse yani göndermek veya almak istedikleri bir şey varsa
+
+173
+00:28:25,760 --> 00:28:29,319
+Network meşgul mi değil mi diye kontrol ediyorlar
+
+174
+00:28:29,319 --> 00:28:32,859
+Burada temelde iki tane problemimiz var onu söyleyelim
+
+175
+00:28:32,859 --> 00:28:58,139
+Birisi hidden note. Hidden note nasıl bir şey? Diyelim ki A, B ve C istasyonlarımız var. Kablosuz A'lar üzerinde konuşuyoruz zaten. A'nın kapsama alanında sadece B. B'nin kapsama alanında hem A hem C. C'nin kapsama alanında ise sadece B'nin olduğu versiyonu düşünüyor olalım. O şekilde bir A yapısı kurulmuş olsun.
+
+176
+00:28:58,139 --> 00:29:28,119
+Şimdi diyelim ki ben A'yım ve B'ye bir şey göndermek istiyorum veya B'yim A'ya göndermek istiyorum hiç fark etmez diyelim ki B'yim A'ya bir şey göndermek istiyorum tabi burada şöyle bir durum söz konusu A'nın nerede olduğunu bilip ona göre göndermiyorum cihazlar mobil ben belli bir çember içerisinde o ağı zaten şu an yayılıyor sürekli öyle bir ağ var o ağın içerisine ben mesaj gönderiyorum bir kere hiç sinyalliyorum
+
+177
+00:29:28,139 --> 00:29:57,139
+zaten var, carrier var yani. O an içine bir sinyal gönderiyorum. Doğal olarak o ağın içerisinde 30 tane cihaz varsa eğer Wi-Fi'ye bağlı benim gönderdiğime dair bir veri olduğunu hepsi duyabiliyor. Yani muhteviyatını data gönderiyorsam bilemeyebilir, bilmemesi lazım. Ona göre şifrelenmesi lazım. A ile B arasında peer-to-peer şifrelenmesi lazım. Ama ona bir mesaj gönderdiğimi headerları mederları açıp fark edebilirler.
+
+178
+00:29:57,139 --> 00:30:25,940
+bilirler. Diyelim ki ben işte B'den A'ya mesaj göndermek istiyorum. B'den A'ya RST, Request to Send Frame'i gitti. A müsait olduğu için Clear to Send Frame'i gönderdi. Ama bakın A'nın kapsamında sadece B var. Yani A'nın yayınladığı şeyleri C duyamıyor. Pekala A'nın yayınladığı şeyleri C duyamıyorsa A'da Clear to Send Frame'inin içerisinde şu kadar süre boyunca
+
+179
+00:30:26,867 --> 00:30:54,747
+hattı B'ye bana bir şey göndererek meşgul edecek mesajını C'ye ulaştıramadıysa C, B'ye mesaj göndermek istediği zaman tak diye göndermeye çalışıyor. Ama aynı ağın içerisindeler. Bu sefer B'nin buralarda bir kollijin meydana geliyor ve bu bir problem. Yani ağın içerisinde iletişim kurduğunuz cihazın haricinde diğer cihazları göremiyorsanız bu bir problem.
+
+180
+00:30:54,747 --> 00:31:19,647
+Bir diğeri de exposed note problemi. Hidden note anlaşıldı herhalde. Yani buradaki C, A için hidden note. Öyle söyleyelim. Bir de exposed note problemi söz konusu. Burada collision durumu söz konusuyken burada veri göndermeyi engelleyen bir durumla karşılaşıyoruz. Nasıl bir şey? Örnek verelim.
+
+181
+00:31:19,647 --> 00:31:45,507
+Mesela diyelim ki ben A'yım ve B'ye mesaj göndereceğim. Bu sefer öyle olmuş olsun. Ben A'yım, B'ye mesaj göndereceğim. Aynı şekilde C'de D'ye mesaj göndermek istesin. A, B'ye mesaj göndermek istiyor. C'de D'ye mesaj göndermek istiyor. Ben A, mesaj göndereceğim. Request to send frame'i yolluyorum. B alıyor. Bakın B aldı.
+
+182
+00:31:45,507 --> 00:32:14,728
+Tabi burada yine benzer durum var. A'nın kapsama alanı içerisinde sadece B var. B'nin kapsama alanı içerisinde sadece A ve C var. C'nin kapsama alanı içerisinde sadece B ve D var. D'nin kapsama alanı içerisinde sadece C var. Hani o şekilde düşünün. Şu görselleştirme onu anlatmaya çalışıyor açıkçası. Ben A'dan B'ye mesaj göndermek istedim. Bu arada benden birkaç milisaniye sonra diyelim ki C'de D'ye mesaj göndermek istedi.
+
+183
+00:32:14,728 --> 00:32:44,707
+İstedi yani o an ama henüz daha karşıya request to send göndermedi. Sonuçta ben A'dan B'ye mesaj gönderirken benim herhangi bir şekilde etkilediğim ne denir ona A'dan B'ye mesaj gönderirken C ve D olayı duymadığı için yani o mesajların kendilerine kadar ulaşmadığı için herhangi bir şekilde A ile B arasındaki etkileşimde
+
+184
+00:32:44,728 --> 00:32:50,948
+iletişim, veri aktarımı C ile D arasındaki veri aktarımını engellemeyecek.
+
+185
+00:32:51,047 --> 00:32:52,948
+Kollijina sebebiyet vermeyecek yani.
+
+186
+00:32:53,328 --> 00:32:54,287
+Onu söylemek istiyoruz.
+
+187
+00:32:54,867 --> 00:32:58,987
+A, ben B'ye mesaj göndereceğim dediği anda B'de yayın yapıyor.
+
+188
+00:32:59,647 --> 00:33:02,007
+Diyor ki A bana mesaj gönderecek.
+
+189
+00:33:02,688 --> 00:33:06,547
+Şu kadar süreyle network allocation vektörlerinizi set edin.
+
+190
+00:33:07,707 --> 00:33:08,308
+Set ettik.
+
+191
+00:33:08,308 --> 00:33:12,028
+E, A bana mesaj gönderiyor.
+
+192
+00:33:12,028 --> 00:33:41,987
+ya ben C'ydim bak B'nin kapsama alanında olduğum için bana da geldi o ben artık kitlenmiş durumdayım yani bir mesaj gelecek network'e ben de bir sıkıntıya sebebiyet vermeyim diye uğraşacağım ama kitlenmiş durumdayım oysaki bana D'ye mesaj gönderebilirdim ben de D'ye mesaj gönderebilirdim fakat B'nin böyle bir yayınından sonra ben artık ne dönür ona kendim ortadan hani isteğimi
+
+193
+00:33:41,987 --> 00:33:54,047
+geri çekiyorum ve boş boş yere bekliyorum. Bunu da exposed note diyorlar kıymetli arkadaşlar. Temelde gördüğünüz gibi iki tane problem var. Bunları anlamadıysanız tabii ki sorabilirsiniz.
+
+194
+00:33:56,927 --> 00:34:09,427
+Tabii nasıl servis alanları var? Onlardan bahsediyor olalım. Bakalım saat kaç? Ara verir miyiz? Vereceğiz saate geldik mi diye bakıyorum da. Ara vermeden de devam edebiliriz. Belki biraz uzayabilir ama neyse.
+
+195
+00:34:09,427 --> 00:34:11,448
+Bizim
+
+196
+00:34:12,115 --> 00:34:30,456
+Basic Service Arayalarımız var. Yani bir network düşünün, bir Wi-Fi ağı düşünün, 10 tane cihaz, evimizde belki daha fazla, daha az bilmiyorum, bağlı. Buna işte biz Basic Service Arayalar diyoruz. Fakat bunlar 3 tane node olduğunu düşünün, birbirleriyle konuşuyorlar. O kadar.
+
+197
+00:34:30,456 --> 00:34:40,255
+Onun haricinde başka basic service area'larla konuşmak için işte extended service area'lar söz konusu oluyor.
+
+198
+00:34:40,255 --> 00:34:50,456
+Diyelim ki harici harici birbirlerinin kapsama alanlarıyla kesişmeyen bu şekilde servis alanları olmuş olsun.
+
+199
+00:34:50,456 --> 00:35:04,516
+İşte bu servis alanlarının içerisinde çeşitli şöyle bizim belki router diye isimlendirebileceğimiz çeşitli makinelerle bir hop gerçekleştirerek iletişim kurabiliyoruz.
+
+200
+00:35:04,555 --> 00:35:15,415
+Yani ben şu makineyim mesela, şu makineyim. Şuna mesaj göndermek istiyorum. Yaptığım işlem şu, ben buyum, buna gönderiyorum. Bu buna gönderiyor, bu da buna gönderiyor. Tamam mı?
+
+201
+00:35:15,415 --> 00:35:19,275
+1, 2, 3 hopla buraya mesaj gönderebiliyorum.
+
+202
+00:35:19,775 --> 00:35:21,376
+Veya işte ben buna gönderiyorum.
+
+203
+00:35:21,516 --> 00:35:24,435
+Bunun da bir tane anteni olmuş olsaydı tamam mı?
+
+204
+00:35:25,016 --> 00:35:26,916
+O da ona gönderecekti.
+
+205
+00:35:27,215 --> 00:35:30,135
+O da sadece uç terminal'e gönderecekti.
+
+206
+00:35:30,135 --> 00:35:37,035
+Bu şekilde bizim Basin Service arayalarımızın genişletilmiş hallerine Extendent Service araya diyoruz.
+
+207
+00:35:37,476 --> 00:35:38,575
+Kanal kullanımı.
+
+208
+00:35:39,516 --> 00:35:42,315
+Bu hani kanal kullanımı uzun uza diye anlatacağım.
+
+209
+00:35:42,575 --> 00:35:44,395
+Sorusu olan yoksa burada bir ara verelim.
+
+210
+00:35:44,395 --> 00:35:49,035
+10 dakika. Ondan sonra buraya devam edeyim. Sorusu olan var mı?
+
+211
+00:35:50,836 --> 00:35:55,935
+Hocam, hidden node A'nın C'yi görememesi değil mi?
+
+212
+00:35:56,875 --> 00:36:01,075
+Evet, A'nın C'yi, C'nin de A'yı tabii ki doğal olarak görememesi.
+
+213
+00:36:03,196 --> 00:36:07,995
+Onun için hidden olmuş oluyor yani. Network'ta öyle bir cihazın olup olmadığından bir haber yani adam.
+
+214
+00:36:10,135 --> 00:36:11,976
+Başka sorusu olan arkadaşımız var mı?
+
+215
+00:36:11,976 --> 00:36:16,075
+Tamam bir ara verelim arkadaşlar
+
+216
+00:36:16,075 --> 00:36:18,855
+55 geçe burada olalım
+
+217
+00:36:18,855 --> 00:36:22,776
+Oradan kanal kullanımıyla devam ediyor olalım
+
+218
+00:36:22,776 --> 00:36:25,136
+Ben tabi mouse'umu göremedim
+
+219
+00:51:31,956 --> 00:51:39,755
+Evet, tekrardan merhaba arkadaşlar. Kalan parçasıyla dersin devam ediyor olalım.
+
+220
+00:51:41,756 --> 00:51:42,916
+Slaytımızı bulalım.
+
+221
+00:51:48,947 --> 00:51:56,667
+Şimdi, bakın, Channel Usage kısmında kalmıştık diye hatırlıyorum.
+
+222
+00:51:58,427 --> 00:52:00,788
+Kapanmış da slide'ı, o yüzden tekrar açtım.
+
+223
+00:52:02,187 --> 00:52:03,408
+Şöyle paylaşalım.
+
+224
+00:52:04,707 --> 00:52:06,868
+Bakalım, nasıl bir şey.
+
+225
+00:52:07,128 --> 00:52:11,907
+Şimdi tabii, biz diyelim ki 2.4 GHz'de çalışıyoruz.
+
+226
+00:52:12,767 --> 00:52:17,247
+Modemlerimiz şu an 2.4 GHz'de veya 5 GHz'de yayın yapabiliyorlar.
+
+227
+00:52:17,407 --> 00:52:18,487
+Sizin de bildiğiniz gibi.
+
+228
+00:52:18,947 --> 00:52:26,727
+2.4 GHz'de çalıştığımız durumda belli frekans aralıkları belli kanallara ayrılmış oluyor.
+
+229
+00:52:26,968 --> 00:52:33,128
+Mesela 5 MHz farklılıkla bu frekanslar bölündüğünü düşünelim.
+
+230
+00:52:33,587 --> 00:52:35,767
+Bunu aslında siz radyoda da yaşarsınız.
+
+231
+00:52:35,907 --> 00:52:37,687
+Mesela FM radyo dinliyorsunuz.
+
+232
+00:52:38,128 --> 00:52:42,447
+90.5'i dinliyorsunuz.
+
+233
+00:52:42,447 --> 00:52:47,507
+Bir sonraki 90.50'yi dinlerken bir sonraki 90.51 olmuyor, 52 olmuyor.
+
+234
+00:52:47,507 --> 00:52:53,488
+arada birbirlerine kanallar karışmasın diye belirli frekanslık değer boşlukları bırakıyorlar.
+
+235
+00:52:53,488 --> 00:53:00,487
+Burada da aynı şekilde 5 MHz'lik bir boşlukla çeşitli kanallar oluşturuyorlar.
+
+236
+00:53:01,247 --> 00:53:03,927
+Ortalama 13'te 15 kanal arasında kanal oluyor.
+
+237
+00:53:04,467 --> 00:53:17,187
+Şimdi şuradaki 2.4 GHz'lik kısma bir bakın ilk kanal 2.412 frekansından GHz'den yayın yapıyor.
+
+238
+00:53:17,187 --> 00:53:24,247
+Arada beşer beşer boşluklar var. En sonuncusu da 2.472'den yayın yapıyor.
+
+239
+00:53:24,607 --> 00:53:29,147
+Tabii başlangıçtan itibaren yayın yapmamasının bu orta noktasının sebebi ne?
+
+240
+00:53:29,488 --> 00:53:37,067
+Belli bir değer. Yani her birisinin şöyle genişliği 22 MHz'i buluyor.
+
+241
+00:53:37,887 --> 00:53:41,687
+Siz işte bunun yarısı 11 anca başına doğru sürüklemiş oluyor.
+
+242
+00:53:41,687 --> 00:53:44,127
+Yani 2.4'ün başından başlamış oluyorsunuz.
+
+243
+00:53:44,128 --> 00:53:55,628
+Temelde iki farklı biz bu kanalları kullanma durumumuz söz konusu. Bunlardan birisi Frequency Hopping Separate Spectrum.
+
+244
+00:53:56,267 --> 00:54:05,207
+Diyelim ki bu arada sizin hali hazırda kullandığınız modemlerde otomatik veya siz manuel olarak bu kanalları seçebiliyorsunuz.
+
+245
+00:54:05,207 --> 00:54:15,607
+Siz diyelim ki 1, 2, 3, 4 numaralı kanalların herhangi birisinden yayın yapacaksınız veya 3 tane kanaldan yayın yapan bir yapınız var
+
+246
+00:54:15,607 --> 00:54:25,487
+Mesela 1 numaralı kanaldan veri gönderdiniz ve yolda başına bir sıkıntı geldi, kollijin oldu veya 1 numaralı kanaldan veri gönderdiğiniz durumlarda
+
+247
+00:54:25,487 --> 00:54:37,407
+karşı taraf size veriyi hatalı aldım mesajı gönderiyor. Siz bir numaralı kanallıdan eğer ki veriyi hatalı gönderdiyseniz tekrar göndermeniz gerekiyor.
+
+248
+00:54:37,487 --> 00:54:44,367
+Biliyorsunuz recent yapmanız gerekiyor. Onu mesela iki numaralı kanaldan yapabilirsiniz veya üç numaralı kanaldan yapabilirsiniz.
+
+249
+00:54:44,367 --> 00:54:54,007
+Ama burada bakın şöyle bir durum söz konusu. Bir numaralı kanalın frekansının diğer frekanslar üzerindeki etkisi
+
+250
+00:54:54,007 --> 00:54:58,867
+2 numaralı kanal, 3 numaralı kanal ve 4 numaralı kanala kadar geliyor bakın.
+
+251
+00:54:59,748 --> 00:55:00,447
+Görüyor musunuz?
+
+252
+00:55:01,207 --> 00:55:02,507
+Hatta 5'e bile geliyor.
+
+253
+00:55:02,608 --> 00:55:05,047
+5 çünkü şuradan başlıyor, şöyle geliyor.
+
+254
+00:55:05,547 --> 00:55:07,767
+5 ile bile kesiştiği çeşitli noktalar var.
+
+255
+00:55:07,767 --> 00:55:14,127
+Siz 1 numaralı kanaldan yayın yapıp 5 numaralı kanaldan yaptığınız yayın bunlar kesişebilirler.
+
+256
+00:55:14,427 --> 00:55:16,227
+Daha az oranda kesişiyorlar.
+
+257
+00:55:16,528 --> 00:55:18,028
+Ama kesişme ihtimalleri var.
+
+258
+00:55:18,407 --> 00:55:22,748
+Eğer ki böyle 3 ayrı kesişmeyen kanal kullanacaksanız bakın
+
+259
+00:55:22,747 --> 00:55:30,767
+Burada koyu ile işaretlenmiş 1, 6 ve 11 numaralı kanallar kullanılıyor.
+
+260
+00:55:31,219 --> 00:55:38,719
+yani şimdi işte 3 farklı kanalınız varsa bu 3 farklı kanaldan birisinden kollijin oluyorsa diğerinden gönderebilirsiniz.
+
+261
+00:55:38,859 --> 00:55:45,879
+Öteki türlü burada kollijin varsa o kollijin temizlenmeden 2'den gönderiyorsunuz. Zaten çok büyük bir kısmı kesişen bir alan.
+
+262
+00:55:46,479 --> 00:55:56,480
+Direct Sequence Spectrum, şey Separate Spectrum'daysa siz gönderdiğiniz veriyi aynı anda birçok kanaldan gönderiyorsunuz.
+
+263
+00:55:56,480 --> 00:56:03,539
+Paralel bir şekilde düşünmeyin. Bunu paralel bir şekilde gönderebilmek için birçok fazla farklı antenim olması lazım ve göndermem lazım.
+
+264
+00:56:04,780 --> 00:56:13,719
+Gönderdiğiniz şey, ne denir ona? Frame veya mesaj hangi şekilde isimlendirirseniz gönderdiğinizde tüm kanalların içerisinde bulunmuş oluyor.
+
+265
+00:56:14,219 --> 00:56:23,800
+Hangi alıcı tarafta hangi tarafta daha yüksek, hangi kanaldan daha yüksek sinyal alıyorsa o kanalın içerisinden o veriyi alabiliyor.
+
+266
+00:56:23,799 --> 00:56:26,499
+İki farklı teknikte de yaklaşımlar söz konusu
+
+267
+00:56:26,499 --> 00:56:27,999
+Hocam bir şey sorabilir miyim?
+
+268
+00:56:28,019 --> 00:56:28,719
+Tabii ki buyurun
+
+269
+00:56:28,719 --> 00:56:33,499
+Niye kanal kullanımını bu aralıkta tutuyorlar? Daha geniş yapamazlar mı yani?
+
+270
+00:56:33,879 --> 00:56:45,679
+Yapamıyorlar yani 2.4 GHz'in çevresi belli bir noktaya kadar ve 5.0 GHz'in çevresi belli bir noktaya kadar yasal ücretsiz kullanıma açılmış durumda
+
+271
+00:56:45,679 --> 00:56:51,800
+Çok çok büyük bir kısmı devletlerin kendi kullanımında askeri kullanımlar için özellikle ayrılmış durumda
+
+272
+00:56:51,800 --> 00:56:53,399
+Sen herhangi bir şekilde müdahale edemiyorsun
+
+273
+00:56:53,400 --> 00:57:01,319
+bir kısmı ise ticari sen o frekans bandını kullanman için satın alman gerekiyor. İşte radyo kanalları gibi.
+
+274
+00:57:02,219 --> 00:57:06,940
+Anladım. Fiziksel bir sıkıntı değil yani. Daha çok yasal bir zorundalık var.
+
+275
+00:57:07,080 --> 00:57:13,699
+Tabii. Yasal bir zorundalık var. Yani her şeyi kafana göre kullanılmıyorsun. Belki hani regulasyonlar değişir.
+
+276
+00:57:13,699 --> 00:57:21,039
+5-0 tarafları mesela önce diyen herhalde zannımca yine askeriye taraflarındaydı. Sonradan eklendi mesela.
+
+277
+00:57:21,039 --> 00:57:49,460
+ama hani yenileri de eklenebilir zaman içerisinde değişiklik de gösterebilir. Buradaki önemli husus bunlar izin verilen yani otoriteler tarafından halkın ücretsiz kullanımına izin verilen şeyler. Niye? Yani sen bir modemin var yayın yapıyorsun. Devlet diyor ki ya benim havada benim havamda yayın yapamaz. Tamam mı? Ben buna karışırım diyor.
+
+278
+00:57:49,459 --> 00:58:14,999
+benim sadece söylediğim şekilde ilen yapabilirsin diyor. Sadece tabii ki Türk devleti için söylemiyorum. Bize bu işler çok sonraları geliyor. Daha çok yurt dışında. Tüm devletler bu şekilde yaklaşıyor olaya tabii ki. Bizim kendi kontrolümüzde benim polis telsizim var, askeri sistemlerimin birbirleriyle haberleşme şeyleri var, şu var bu var. O yüzden kafana göre bu frekansları kullanamazsın. Sadece sana belirttiğim aralığı kullanırsın diyor.
+
+279
+00:58:14,999 --> 00:58:20,940
+temelde o yüzden bizim için sadece bu aralıklar söz konusu.
+
+280
+00:58:22,580 --> 00:58:28,839
+IEEE'nin 802 projesinin 11'in farklı farklı versiyonları var.
+
+281
+00:58:28,919 --> 00:58:30,539
+Burada olmayan da bir sürü versiyonu var.
+
+282
+00:58:30,639 --> 00:58:33,979
+Bir kısmı hem 2.4 GHz hem 5 GHz'i destekliyor.
+
+283
+00:58:34,059 --> 00:58:39,100
+Birisi sadece 5 GHz'i farklı bant genişliği ve hızlarda destekliyor.
+
+284
+00:58:39,100 --> 00:58:43,719
+Tabii ki farklı modülasyon ve örtüşmeyen kanal sayılarını muhteva edecek şekilde.
+
+285
+00:58:43,719 --> 00:58:53,559
+Mesela 802.11n çok kullanıyoruz. Örtüşmeyen 3 veya 11 kanalı olabilecek şekilde modülasyon yapılabiliyormuş bunun içerisinde.
+
+286
+00:58:53,899 --> 00:59:00,759
+Çünkü işte 3 veya 11 demesinin sebebi hem 2.4 GHz yayın yapıyor hem de 5 GHz yayın yapıyor.
+
+287
+00:59:00,759 --> 00:59:10,759
+2.4 GHz yaptığında örtüşmeyen 3 tane kanal varken 5 GHz yaptığında bakın örtüşmeyen 11 tane kanalın söz konusu olduğundan buradan bahsedebiliriz.
+
+288
+00:59:10,759 --> 00:59:14,639
+bahsedebiliriz. Bluetooth ve diğerlerinde bahsediyor olacağız. Şimdi
+
+289
+00:59:15,860 --> 00:59:29,280
+bunların erişim mesafelerine şuradan bakalım. Bir Wi-Fi ağının ortalama, işte bizim 802.11 enini saymıyorsak ve enin fraksiyonlarını saymıyorsak, dış ortamda 100 metreye kadar bir erişimi söz konusu.
+
+290
+00:59:29,280 --> 00:59:44,959
+100 metre nedir diye soracak olursak, bizim bölümü düşünün. Mesela işte hani laboratuvarların bir üst katını veya laboratuvar katını düşünün. Fotokopiciden diğer uçtaki mescide kadar olan alan 40 metre.
+
+291
+00:59:45,860 --> 01:00:12,279
+Tamam laboratuvarların olduğu katı düşünün. Fotokopi merkezinden diğer üstteki mescid olarak kadar olan alan 40 metre. Yani onun 2,5 katı demek 100 metre. 100 metre dış ortamda çekebileceği yani tabii maksimum seviyeler bunlar söz konusu ama iç ortamda, iç ortamın özelliklerine göre değişmekle birlikte çekim kapasitesi maksimum 20 metre civarında.
+
+292
+01:00:12,279 --> 01:00:29,119
+Bu tabi bu bir ev içerisinde eğer ki evin duvarları uygun imkanlara sahipse 20 metre çok rahat evin içerisinde kullanabiliyorsunuz. Mesela farklı dalga boyları farklı şeylerden ne denir ona?
+
+293
+01:00:29,120 --> 01:00:35,459
+farklı yapılardan veya farklı elementlerin içerisinden geçemeyebiliyor.
+
+294
+01:00:36,100 --> 01:00:42,720
+5.0 GHz yayın yapıyor modemleriniz mesela veya 2.4 GHz yapıyor.
+
+295
+01:00:42,720 --> 01:00:52,980
+Bazı modemler her ikisinde de yayın yapabiliyor ve siz 2.4 GHz'lik bir Wi-Fi ağı ve 5.0 GHz'lik bir Wi-Fi ağı kurabiliyorsunuz.
+
+296
+01:00:52,979 --> 01:01:03,899
+5.0 GHz'de tabii daha hızlı verim aktarımı sağlayabilirken dalga boyunu küçüldüğü için daha kısa mesafede gönderim yapabiliyorsunuz.
+
+297
+01:01:03,959 --> 01:01:07,439
+2.4 GHz'de ise daha uzun mesafede gönderim yapabilirsiniz.
+
+298
+01:01:07,559 --> 01:01:14,119
+Mesela şöyle düşünün evinizde bir modeminiz var ve bir odadan işte 5 GHz'e bağlanıyorsunuz o süper veri indiriyorum.
+
+299
+01:01:14,119 --> 01:01:23,219
+Fakat uçtaki bir odemden, modeme uzak bir odadan bağlanmaya çalışıyorsanız ve 5 GHz çekmiyorsa 2.4 GHz çekecektir.
+
+300
+01:01:23,619 --> 01:01:29,979
+Çünkü dalga boyu daha uzaklara 5.0 GHz'e göre erişmeye imkan tanıyor.
+
+301
+01:01:30,139 --> 01:01:33,919
+Tabii bununla beraber bu slide hazırlandığında Bluetooth version 3 varmış.
+
+302
+01:01:33,919 --> 01:01:40,619
+Şimdi 5'in çeşitli fraksiyonları var, ikisi 3 falan var herhalde, 6 var mı bilmiyorum, belki bilenleriniz vardır, 6 da olabilir.
+
+303
+01:01:40,619 --> 01:01:46,799
+sürekli geliştiriliyor. Tabi Bluetooth belki Wi-Fi standartlarından bile hızlı geliştiriliyor.
+
+304
+01:01:46,939 --> 01:01:50,979
+Çünkü artık biz Wi-Fi'den ziyade belki daha çok Bluetooth kullanıyoruz.
+
+305
+01:01:50,979 --> 01:01:55,519
+Ben telefonumu düşüneyim. Kaç tane Wi-Fi ağına bağlandığını düşünüyorum.
+
+306
+01:01:55,899 --> 01:02:00,539
+Evimdeki, iş yerindekini kullanmıyorum. O zaman genellikle mobil ağ kullanıyorum.
+
+307
+01:02:00,979 --> 01:02:04,080
+Belki hani memlekte gidince oradaki bir ağ kullanıyorumdur.
+
+308
+01:02:04,479 --> 01:02:08,319
+Ama Bluetooth'um işte saatimle entegre bir şekilde çalışıyor.
+
+309
+01:02:08,319 --> 01:02:25,599
+arabaya biniyorum, arabanın bluetooth'una bağlanıyor. Evimde akıllı ampul varsa ona bağlanıyor. Akıllı elektronik cihazlar varsa ona bağlanıyor. Telefonumu, televizyondan otomatik böyle yansıtacağım, mirror yapacağım, aynalayacağım. Yine bluetooth üzerinden bu işlem gerçekleşiyor.
+
+310
+01:02:25,599 --> 01:02:29,959
+Wi-Fi üzerinden biri gönderiliyor ama senkronizasyon yine Bluetooth verisinden yapılıyor.
+
+311
+01:02:30,339 --> 01:02:34,459
+Bu yüzden Bluetooth muhteşem bir şekilde artık kullanılıyor Revaç'ta.
+
+312
+01:02:34,819 --> 01:02:39,139
+4.0'la beraber low energy versiyonlara geçilmiş oldu.
+
+313
+01:02:39,679 --> 01:02:44,879
+Ve 4.0'la beraber artık daha az enerji harcar hale gelmiş oldu.
+
+314
+01:02:44,879 --> 01:02:47,959
+Çünkü ben Bluetooth'u çok fazla cihazda kullanıyorum.
+
+315
+01:02:48,059 --> 01:02:51,619
+Düşünün müzik dinleyeceğim kulaklığım Bluetooth'la bağlı artık kablosu olduğu için.
+
+316
+01:02:51,619 --> 01:02:53,819
+ve Bluetooth sensörüm benim.
+
+317
+01:02:54,440 --> 01:02:55,619
+Eğer ki...
+
+318
+01:02:56,244 --> 01:03:13,123
+çok enerji harcıyorsa telefonda ufacık bir bluetooth işlemi gerçekleştirirken yani bir belki MP3 bile dinlerken bir sürü şarj harcamış olacağım. Bunu gördükleri için daha çok bluetooth'ta son versiyonlarda low enerji üzerine yoğunlaşmış oldular.
+
+319
+01:03:13,123 --> 01:03:30,063
+HOMARF dediğimiz ve birazdan göreceğimiz çeşitli kavramlar var. Bunlarsa temelde bizim şey için artık IoT yani bu ufak cihazlarla haberleşmek, akıllı evler falan bunları IoT kavramları içerisinde inceliyorlar.
+
+320
+01:03:30,063 --> 01:03:48,563
+internet of things kavramı içerisinde inceliyorlar ve işte radyo sinyalleri üzerinden ev içerisinde ufak cihazlara mesela işte sadece sıcaklığı ölçüyor, nemi ölçüyor gibi cihazlara bağlanıp veri alınmak için böyle bir teknoloji kullanabilir miyim gibi bir şey standartalize edilmişti.
+
+321
+01:03:48,563 --> 01:04:01,244
+fakat yaklaşık yani 2003-2004 yıllarında artık çok fazla kullanılmasının imkanı diğer teknolojilerin gelişmesi ve açığı kapatmasıyla beraber gerek olmadığı kanaatine verilip devam ettirilmedi.
+
+322
+01:04:01,244 --> 01:04:30,443
+HyperLAN'larsa benim işte şu an hali hazırda bir personal area network veya işte LAN olarak kullandığım şeyleri, local area network olarak kullandığım bu hizmeti genişletip yani sonuçta local area network dediğim şey 100 metrelik veya 3-5 yazlık bir şey bunu genişletip işte bir kampüsün tamamı bir local area network içerisinde olsun gibi HyperLAN'lar ortaya atıldı.
+
+323
+01:04:30,443 --> 01:04:38,663
+Bunlar da tabii gelişen teknoloji ve farklı standartların performansının öne çıkmasıyla beraber şu an hali hazırda çok kullanılamıyor.
+
+324
+01:04:39,343 --> 01:04:43,383
+Yine grafikler üzerinden gidecek olursak channel usage'ı nasıl inceleyebiliriz?
+
+325
+01:04:44,183 --> 01:04:52,623
+Öncelikle kullanılan farklı kablosuz haberleşme tekniklerinin hem data rate cinsinden, bit per second cinsinden
+
+326
+01:04:52,623 --> 01:04:59,663
+hem de ne kadar mesafeye ulaşım sağlayabildikleri cinsinden şöyle inceleme gerçekleştirelim.
+
+327
+01:04:59,663 --> 01:05:20,723
+2G dediğimiz şey herhangi bir şekilde telefondan önceden tuşlu telefonlar vardı hatırlarsanız internete falan bağlanmıyordu. İşte onlar 2G. Ondan sonra 3G çıkmış oldu. Artık internete de bağlanabiliyordu telefonlar. H, H plus yazan şeyler 3G. İşte bazen 3G ile de telefonlarınız bağlanıyordu çekmediği durumlarda.
+
+328
+01:05:20,723 --> 01:05:39,643
+daha sonra 4, biz atladık 4.5 geldi direk 4.5G ile beraber işte veri gönderim hızları daha da arttı. Bakın 2G biraz daha şuradan fazla tabii yaklaşık 10.000 feet 3.000 metre yani 3 kilometre falan yapıyor şurası.
+
+329
+01:05:39,643 --> 01:05:56,483
+yaklaşık 5 kilometreye kadar belki daha fazla da olabiliyordu çeşitli durumlar gibi ama şurada hani yorumlarsak şunu 5 kilometreye kadar sizin 2G'li baz istasyonunuz size çekim sağlayabiliyor ama veri aktarımı çok düşük.
+
+330
+01:05:56,483 --> 01:06:15,663
+Çok düşük. Yani burada ne gönderiyorsun? Bir sesini gönderiyorsun, bir de kısa mesaj gönderiyorsun. Öyle video izleyeceksin, görüntülü görüşme yapacaksın veya bir video içeriği, fotoğraf içeriği karşı tarafa göndereceksin. Bunların tabii ki bu data ratelerde imkanının olmadığını söyleyebiliriz.
+
+331
+01:06:15,663 --> 01:06:29,663
+3G'ye geçildiğinde temel artan şey tabii Datoright çok yükselmiş oldu ve tabii ki dalga boyu daha da küçüldüğü için gönderilebilecek maksimum mesafe azaldı.
+
+332
+01:06:29,764 --> 01:06:38,583
+Yani baz istasyonu sayısı arttı. Siz belki 10 kilometreden baz istasyonuna bağlanırken artık belki 6 belki 5 kilometrede bağlanma ihtiyacı hissettiniz.
+
+333
+01:06:38,583 --> 01:06:43,904
+Burada 4-4.5G yok ama onlar da daha küçük. Şöyle söyleyeyim şöyle.
+
+334
+01:06:44,820 --> 01:07:14,519
+sistemler. Yine tabii ki data rate'i daha yüksek ama modeme bağlı olduğunuz durumda daha fazla modeme baz istasyonuna yakın olmanız gerekiyor. 5G'ye kullanan hali hazırda kullanmaya başlayan ülkeler var. 6G ile uğraşıyorlar. Biz de 5G geçtik, geçeceğiz falan filan modunda. Çeşitli reklamları bile çıkıyor operatörlerin. 5G ise işte daha artık dalga boyayacak işliyor. Mikro ve mikrodalga diyorlar yani.
+
+335
+01:07:14,820 --> 01:07:29,299
+mikrodalgaya geçiliyor. Tabii ki yüksek, belki daha kesintisiz iletişim sağlanıyor olacak ama baz istasyonların bize daha da yakın olmasını gerektirecek bu.
+
+336
+01:07:29,299 --> 01:07:40,379
+Hatta 6'ya geçildiğimde ise her bir cihazın aynı zamanda bir baz istasyonu olması bekleniyor. Yani telefonumuz aynı zamanda baz istasyonu olacak.
+
+337
+01:07:40,379 --> 01:07:55,959
+benim telefonum üzerimden birileri haberleşme kuruyor olacaklar. Çünkü dalga boyu çok küçüldüğü için her evin tepesine de veya her dairenin içerisine de baz istasyonu kuramayacağına göre böyle bir mantık üzerinde çalışıyorlar.
+
+338
+01:07:55,959 --> 01:08:06,879
+Tabii mikrodalga olacak. Kışın telefonlarımız bizi ısıtabilir baz istasyonu olduğunda ama yazın tabii ki nasıl bir problem olur orasını bilemem.
+
+339
+01:08:06,879 --> 01:08:25,439
+6'da yakındır yani maksimum herhalde bir 10 yıl içerisinde hepimiz 6'da 6G'de konuşuyor ve çalışıyor oluruz herhalde. Bununla beraber işte 802.11 bizim Wi-Fi tarafımız görüyorsunuz outdoor ve indoor olmak üzere.
+
+340
+01:08:25,439 --> 01:08:45,039
+HomeRF'den bahsettik. Bluetooth'unsa menzili bakın ne kadar az. Hani taş çatlasın. Hani 100 metrelere falan belki açık alanda çıkabilir ama Bluetooth'dan veri aktarımı gerçekleştirecekseniz Wi-Fi'den bile daha kısa menzili olduğunu buradan görüyorsunuzdur diye düşünüyorum.
+
+341
+01:08:45,039 --> 01:08:54,979
+Tabii 802.11 projesinin hız ve performansı artan çeşitli versiyonlarında daha da gördüğünüz gibi mesafe daralıyor.
+
+342
+01:08:55,079 --> 01:08:57,659
+Yani hızın arttırılması için dalga boyunun küçültülmesi lazım.
+
+343
+01:08:57,759 --> 01:09:04,919
+Yüksek frekansa göndermek için dalga boyu küçüldüğü için de ise gönderebileceğiniz mesafe azalmış oluyor.
+
+344
+01:09:04,919 --> 01:09:08,359
+Daha önce size vilanlardan bahsetmiştim.
+
+345
+01:09:08,359 --> 01:09:24,659
+çok yüksek yani menzillerde çok yüksek hızlarda bir veri gönderme sistemi kurgulanmıştı. Hayata tabii prototipler üretildi, standart geliştirildi ama hayata henüz geçirilmedi.
+
+346
+01:09:24,659 --> 01:09:35,159
+Çünkü onun yerini aktif bir şekilde işte 40G'ler, 5G'ler, 6G'ler aldı. Nasıl bir sistem? Diyelim ki Davutpaşa kampüsünün orta bahçesine bir direk dikiliyor devasa ve bir anten bu.
+
+347
+01:09:35,159 --> 01:09:40,980
+Wi-Fi yayıyor ve 10 kilometre, 50 kilometre belki 100 kilometre şapta herkes ona bağlanıyor.
+
+348
+01:09:40,980 --> 01:09:42,339
+Böyle bir hayal.
+
+349
+01:09:43,059 --> 01:09:47,219
+Tabii çeşitli prototipleri, denemeleri ortaya çıkartıldı ama bunun maliyeti ve işte
+
+350
+01:09:47,219 --> 01:09:50,939
+feasibility'si herhalde ticari bakış açısıyla bakıyorlar.
+
+351
+01:09:51,459 --> 01:09:55,839
+Bakımından çok neden rona revaçta olmadı.
+
+352
+01:09:56,180 --> 01:09:57,499
+Kullanmıyoruz yani şu an.
+
+353
+01:09:57,719 --> 01:09:59,119
+Sizin de tahmin edebileceğiniz üzere.
+
+354
+01:10:00,000 --> 01:10:23,500
+Bununla beraber işte farklı standartlar var. Bunlardan bir diğeri de Bluetooth. Bluetooth 802.15 projesi. Version 1'i Ericsson tarafından yazıyor. Ericsson tarafından çıkartılıyor 1994 yılında. Şu an işte ben dediğim gibi 5'i biliyorum. Belki 6-7'yi de siz biliyorsunuzdur. Bilmiyorum. Bluetooth Special Interest Group tarafından geliştiriliyor.
+
+355
+01:10:23,500 --> 01:10:33,340
+2.45 GHz'in kanallarında, 90 küsur tane kanalı var, kanallarında şey yapıyor, yayın yapıyor.
+
+356
+01:10:33,919 --> 01:10:37,939
+Separate Spectrum Frequency Hopping mantığında kanalları kullanıyor.
+
+357
+01:10:38,319 --> 01:10:47,879
+İşte 10 metreden 100 metreye kadar antenin gücüne göre yayın yapabiliyor ve ilk versiyonu 24 Mbps'e kadar veri aktarım hızlarına ulaşabiliyor.
+
+358
+01:10:47,879 --> 01:10:55,319
+Tabi bluetooth cihazları nasıl çalışıyor hatırlarsanız mesela kulaklığınızda bağlantı kurmaya çalıştığınızı düşünün
+
+359
+01:10:55,319 --> 01:11:05,899
+Payr oluyorsunuz eşleştiriyorsun yani bir şifre oluyor sen o şifreyi giriyorsun diğeri de giriyor artık Payr olduğunuz için birbirlerine veri gönderebilir oluyorsunuz kulaklıksa bu dinliyorsun
+
+360
+01:11:05,899 --> 01:11:13,259
+İşte başka bir arkadaşının telefonuyla Payr olduğunda veri dosya aktarımı yapabiliyorsun veya bilgisayarına dosya aktarımı yapabiliyorsun
+
+361
+01:11:13,260 --> 01:11:36,919
+Fakat bu şekilde pairing sistemiyle çalışıyor. Bundan bir ağ kullanabilmek nasıl olacak point to point çalıştığında. İşte Piconet bunun için kuruluyor. Piconet ise Bluetooth cihazlardan oluşan bir ağ. Bu ağın içerisinde veri göndermeyen ama ağ bağlı maksimum 255 tane cihaz olabilirken aktif bir şekilde veri gönderen 8 tane cihaz olabiliyor.
+
+362
+01:11:36,919 --> 01:11:50,439
+SCARNET ise dediğimiz gibi aktif 8 tane cihazım var nasıl olacak bu iş SCARNET ise Piconet'lerin bir araya gelerek oluşturduğu aya SCATTERNET pardon SCATTERNET diyoruz biz.
+
+363
+01:11:50,860 --> 01:12:06,899
+Zigbee, Zigbee dediğimizde ise Bluetooth'un bir versiyonu Zigbee daha düşük enerjili daha düşük donanımlı bir versiyon özellikle düşük frekansta ve düşük hacimde veri gönderilmesi istenildiğinde veya veri işlenmesi istenildiğinde
+
+364
+01:12:06,899 --> 01:12:34,439
+denildiği durumda bu sensörlü makineler kullanılıyor. Mesela ZigBee dediğinizde aklınıza ne gelsin? Bir Seradasınız. Seranın sıcaklığını, nemini ölçen ve saatte bir kez merkeze gönderen bir yapınız olsun. Yani çalışma frekansı bir tane byte gönderecek ve saatte bir kere. Yani gönderebileceği, göndereceği şeyin hızını düşünün. Ne kadar hızlı olmasına gerek var.
+
+365
+01:12:34,440 --> 01:12:51,919
+İşte bu tarz şeyler düşünüyorsanız ama bundan tabii 300 tane, 1000 tane olması lazım belki. Ucuz maliyetli, bluetooth, temelde altyapısını kullanan ama yüksek frekanslarda yüksek veri aktarımına elverişli olmayan, ihtiyaç gereği zaten ihtiyaç da duyulmayan.
+
+366
+01:12:51,919 --> 01:13:02,059
+Çünkü ben ne denir ona? Eğer yüksek veri aktarımı kullanacaksam bu teknoloji değil, başka şeyler kullanmam lazım. Ama IoT'de sıkça kullanılan bir teknoloji.
+
+367
+01:13:02,059 --> 01:13:06,160
+HOMARF'ten ve Hyperland'dan bahsetmiştim zaten.
+
+368
+01:13:07,507 --> 01:13:33,688
+Tabi wireless networkler için net şekilde tehlikeler söz konusu. Birisi işte sen bunu gidip dinleyebiliyorsun. Kablolu kısımları düşünün, wireless networkleri düşünün. Kabloyu dinlemek için ne yapman lazım? Ya kabloyu kesip T'ye atacaksın, kendine doğru bir kablo çekeceksin, yayın gelecek ya da oradan geçen akımı, akımın yarattığı elektromanyetik etkiyi ölçen böyle cihazlar var.
+
+369
+01:13:33,688 --> 01:13:41,388
+Yani sizin bir kablonuz var, kablonun üzerine telefon gibi bir cihaz koyuyorsunuz, oradan geçen veriyi size tespit etmiş oluyor
+
+370
+01:13:41,388 --> 01:13:48,127
+Tabi eğer ki veri şifreli değilse birebir dinleyebiliyorsunuz, wireless'da da, wireless'da da, wireless'da da bu böyle
+
+371
+01:13:48,127 --> 01:13:55,268
+Wireless'da işte dinlemek için ya bu tarz bir donanımınız olması lazım ya da kabloyu keseceksin, adam dinlendiğini anlayabilir
+
+372
+01:13:55,268 --> 01:14:02,467
+Lan kablo kesilmiş ne oluyor diyebilir ama wireless'da böyle bir şey yok, siz zaten yayın yapıyorsunuz, herkese yayın yapıyorsunuz
+
+373
+01:14:02,467 --> 01:14:21,647
+ağınız açık. Üst kattaki komşuda benim ağımı görüyor. Şifresi olmasın bağlanır. Security seviyesi olmasın, düşük olsun veya buna sızar, bağlanır. O yüzden yani buradaki en büyük problemlerden birisi böyle herkesin bunu dinleyebiliyor olması ve izinsiz erişimler durumu.
+
+374
+01:14:21,647 --> 01:14:30,728
+izinsiz erişimler işte mesaj gönderebilir, sizinkini alabilir, değiştirebilir veya gönderilen mesajı değiştirip başka bir mesaj onun yerine koyabilir.
+
+375
+01:14:31,107 --> 01:14:35,048
+Mesela ne tarz şeyler oluyor onu söyleyelim. Buradaki en büyük problemlerden birisi.
+
+376
+01:14:35,048 --> 01:14:43,607
+Benim etrafımda ben şu an telefonumun wifi'ini açsam işte bu kaldığım sitede bir sürü wifi ağır görürüm.
+
+377
+01:14:43,967 --> 01:14:50,448
+Onlardan herhangi birisine bağlanıp en basitinden hani veri çalmayacaksınız belki internet hizmetinden yararlanmak istiyorsun.
+
+378
+01:14:50,447 --> 01:14:58,247
+Adam parasını ödemiş, interneti almış, senin de internetin yok, böyle bir şeyden yararlanmak istiyorsun
+
+379
+01:14:58,247 --> 01:15:05,127
+Yani eğer ki otorizasyon konusunda çeşitli sıkıntılar varsa böyle bir sızıntıyla beraber senin ağına girebilir
+
+380
+01:15:05,127 --> 01:15:08,927
+Mesela nasıl yapılıyor? Burada hani onlardan bahsetmiş miyiz?
+
+381
+01:15:09,007 --> 01:15:16,368
+Authentication kısmında şu tarz böyle trikler söz konusu, onlara anlatalım nasıl olduğunu
+
+382
+01:15:16,368 --> 01:15:41,907
+Mesela diyelim ki benim komşumun bir ağı var. Tamam mı? İsmi de Furkan. Ben görüyorum. Furkan. Bir güvenlik protokolü var tabii ki. Ben o ağa bağlanmak istediğimde, Furkan isimli ağa bağlanmak istediğimde bana şifreyi soruyor. Tamam mı? Veya kullanıcı adı ve şifreyi soruyor. Duruma göre ne tarz bir protokolüyle bağlanıyorsak kullanıcı adı ve şifreyi soruyor.
+
+383
+01:15:41,907 --> 01:15:48,967
+tabi ben bilmediğim için bağlanamıyorum bağlanamadığım için de OA içinde bulunamadığımdan da çeşitli hizmetleri alamıyorum
+
+384
+01:15:48,967 --> 01:16:00,047
+bunu ne yapıyorlar mesela diyelim ki üst kat komşum hani yapın diye doğrudan söylemiyorum yanlış anlaşılmasın da hani ne tarz yaklaşımlar sergiliyorlar onu anlatmaya çalışıyorum
+
+385
+01:16:00,047 --> 01:16:10,507
+üst kat komşumun ağını görüyorum muhtemelen modemi salonda benim de hemen altında salonum var ve çok yüksek bir şekilde
+
+386
+01:16:10,507 --> 01:16:17,728
+yüksek çekim gücüyle bağlanabiliyorum. Bağlanabilsem yüksek çekim gücüyle bağlanabileceğim.
+
+387
+01:16:17,828 --> 01:16:23,267
+Hemen modemin altında olduğum için. Şimdi ben bunun şifresini öğrenmem lazım.
+
+388
+01:16:23,907 --> 01:16:30,028
+Brutforce yani kaba güçle şifreyi deneyerek bulmak yıllar sürüyor tahmin edebileceğiniz üzere artık.
+
+389
+01:16:30,028 --> 01:16:35,108
+Ne tarz teknikler kullanıyorlar? Ben mesela o kişinin cep telefonu var.
+
+390
+01:16:35,107 --> 01:16:43,647
+yatak odasına gittiğinde doğal olarak modeminden veya işte evde uzak bir yere gittiğinde modeminden uzaklaşıyor ve daha az çekmeye başlıyor.
+
+391
+01:16:43,647 --> 01:16:56,027
+Siz kendi yatak odanızda onun yatak odasının tam altında olduğunu düşünelim. Siz aynı isimde komşunuzun Wi-Fi ağıyla aynı isimde bir ağ yayıyorsunuz.
+
+392
+01:16:56,027 --> 01:17:03,207
+Yine ismi Furkan ve o telefon kendi Furkan ağına bağlanacağı yere sizin ağınıza bağlanıyor.
+
+393
+01:17:04,247 --> 01:17:07,047
+Bağlanmaya çalışıyor. Çünkü ismi aynı. SSID'si aynı.
+
+394
+01:17:07,456 --> 01:17:36,675
+bağlanmaya çalışıyor ve ne oluyor? Bağlanmaya çalışırken şifresini ve kullanıcı adını bilmediği için adam ekranına bir pop-up çıkıyor. Şifreni gir, kullanıcı adını gir. Adam zannediyor ki ya herhalde bir sıkıntı oldu. Tamam benim şifreni ve kullanıcı adımı gireyim. Giriyor, submit ediyor. Artık kullanıcı adı ve şifresi sizde var. Sizde hemen kendi modeminizi, bütün sisteminizi kapatıyorsunuz. Adam kendi ağına bağlanıyor. Ama artık neyi biliyorsunuz? Şifresini ve kullanıcı adı varsa onu biliyorsunuz.
+
+395
+01:17:36,675 --> 01:17:38,956
+siz de adamınkine böylece bağlanabiliyorsunuz.
+
+396
+01:17:39,195 --> 01:17:47,575
+O yüzden bu authentication olayları da çok dikkat edilmesi gereken olaylar, bu tarz böyle sıkıntılar çıkabiliyor.
+
+397
+01:17:48,075 --> 01:17:49,935
+Bir diğeri tabii ki interference.
+
+398
+01:17:51,335 --> 01:17:52,435
+Interference ne?
+
+399
+01:17:53,095 --> 01:18:00,136
+Kanalların az önce size gösterdiğim birbirlerinin üzerine etki bırakması.
+
+400
+01:18:00,136 --> 01:18:12,216
+Ben bir kanalda yayın yapıyorum ve yayın yaptığım aletin anteni çok yüksek bir wattta çalışıyorsa
+
+401
+01:18:12,216 --> 01:18:19,856
+aynı kanalda farklı networklerde yayın yapanların bile birbirleriyle konuşabilmesi imkanı yok.
+
+402
+01:18:19,856 --> 01:18:24,716
+Yani bir boru düşünün, herkes birbiriyle konuşuyor farklı borulardan, duyabiliyor.
+
+403
+01:18:24,715 --> 01:18:38,475
+Ama ben öyle yüksek bağırıyorum ki benim bağırışımın dışında yüksek güçlü bir anten kullanılıyorsa benim bağırışımın dışında hiçbirisinin söylediği anlaşılmıyor. İşte bu durumda interference söz konusu olabilir.
+
+404
+01:18:38,475 --> 01:18:47,355
+Jamming ise anlatmıştık bir sinyalin hiç yokmuş gibi başka bir sinyal tarafından, Jamming sinyali tarafından kesiliyor olması.
+
+405
+01:18:47,956 --> 01:18:58,775
+Tabii ki bir diğeri de fiziksel tehditler. Yani kediniz, köpeğiniz alıp modeminizi başka bir yere giderse sizin işinizde çeşitli problemlere sebebiyet verebilir.
+
+406
+01:18:59,075 --> 01:19:07,816
+Security kısmındaysa o yüzden işte authentication sistemlerinin güzel kurulması lazım. Bu tarz az önce anlattığım dolandırıcı şey çok yapılıyordu.
+
+407
+01:19:07,816 --> 01:19:14,976
+işte bunun üstesinden gelen çeşitli yöntemler geliştirildi. Belki hala daha o yöntemleri kullanmayanlarınız vardır. Onları kullanın.
+
+408
+01:19:15,375 --> 01:19:27,215
+Encryption yani adam benim mesajımı kulak misafiri olup dinlese bile yani mesajın uçtan uca şifresini bilmediği zaman onun için hiçbir anlam ifade edemesin.
+
+409
+01:19:27,215 --> 01:19:35,276
+IS de şifrelenmişse eğer onu çözmesi yani yüzyıllar sürer. O sebeple şifreleme kısmı önemli.
+
+410
+01:19:35,275 --> 01:19:57,435
+Security tiplerinde modem ayarları eğer yapmışsanız bunları görmüşsünüzdür. Web, WPA, WPA2 gibi çeşitli teknikler var. İşte bir de 2008'de artık güvenilir olmadığı için modemlerde kaldırılan TKIP diye bir yöntem var. Burada sızılması neredeyse sızılmamasının imkanı yok gibi öyle düşünün. Çok basit.
+
+411
+01:19:57,435 --> 01:20:03,355
+yine webde çok weakti, encryption'ın weak olduğu için burada da çok çeşitli sıkıntılar çıkıyordu.
+
+412
+01:20:03,795 --> 01:20:07,275
+Fakat VPA2'de artık Advanced Encryption Standart kullanılıyor.
+
+413
+01:20:07,775 --> 01:20:12,635
+Bazı VPA'lar da size seçtiriyor DES mi, AS mi diye.
+
+414
+01:20:12,775 --> 01:20:17,775
+DES ise Data Encryption Standart, AS ise Advanced Encryption Standart.
+
+415
+01:20:17,775 --> 01:20:22,595
+AS tabii çok çok daha gelişmiş bir şifreleme tekniği.
+
+416
+01:20:22,595 --> 01:20:34,756
+O yüzden siz böyle bir durumda ISE seçmenizi tavsiye ederim ve bakın authentication ile az önceki problemleri yaşamamak için işte Extensible Authentication Protocol diye bir protokol var.
+
+417
+01:20:34,756 --> 01:20:46,355
+WPA2'de eğer siz bu security şeylerinizi ayarlamış olursanız daha performanslı sonuçlar alacaksınızdır diye ümit ediyorum.
+
+418
+01:20:46,355 --> 01:20:55,655
+Tabii son olarak da buraya kadar sorusu olan var mı? Onları soralım. Ondan sonra bir karşılaştırma yaparak noktalandırıyor olacağım.
+
+419
+01:20:59,220 --> 01:21:07,680
+yok, güzel. Şimdiye kadar anlattığımız ağları şöyle bir avantaj ve dezavantajlar göz önünde bulundurarak karşılaştıracak olursak.
+
+420
+01:21:08,079 --> 01:21:23,739
+802.3 Ethernet, 802.4 TokenBus, 802.5 TokenRing, Fiber FTDI ve VLAN, bugün anlattığımız wireless LAN'ların avantaj ve dezavantajlarını konuşacak olursak.
+
+421
+01:21:23,739 --> 01:21:35,019
+802.3 çok yaygın kullanılıyor Ethernet protokolü. Çok basit bir algoritması var, basit bir kurulumu var. Yıldız topolojisinde yeni bir bilgisayar eklemek çok rahat oluyor.
+
+422
+01:21:35,479 --> 01:21:53,599
+İşte nedenler ona sayısal yani analog sayısal teknikler kullanılıyor. Dijital teknikler kullanılarak least significant bir öncelikli veri iletimi gerçekleştiriliyor ve Manchester'ı hatırlayın hakikaten çeşitli konularda problemleri çözüyordu.
+
+423
+01:21:53,599 --> 01:22:03,679
+bir de differential mempistir vardı. O bundan bir tık daha iyiydi hatırlarsanız. Düşük yüklerde neredeyse sıfıra yakın gecikmeyle Ethernet'in çalışması mümkün.
+
+424
+01:22:03,679 --> 01:22:14,459
+Fakat Collision Detection donanımı örneksel bir donanım yani analog bir donanım. O yüzden Collision Detection performansı negatif yani düşük.
+
+425
+01:22:15,019 --> 01:22:23,580
+Collision Detection yapamadığında da tabii line utilization iyice düşmüş oluyor. Çok yüklü çalışması durumunda hani işte bunun sonucunu,
+
+426
+01:22:23,599 --> 01:22:38,479
+da kollijin olma olasılığı iyice artıyor. Gerçek zamanlı uygulamalar için kesinlikle ideal değil. Yani bir verinin karşıya muhakkak iletilmesi gereken durumlar, askeri durumlar söz konusu olsun mesela buradan oraya kesinlikle iletilecek.
+
+427
+01:22:38,479 --> 01:22:51,159
+Ve ya işte gerçek zamanlı durum dediğimizde ilk aklınıza artık gelen şey streaming yapıları. Yani birisi canlı video akışı yapıyor, bir oyunu işte canlı olarak izliyorsun veya sen oynuyorsun.
+
+428
+01:22:51,159 --> 01:22:56,459
+muhakkak real-time bir şekilde verinin karşı tarafa aktarılması lazım.
+
+429
+01:22:56,619 --> 01:23:01,519
+O yüzden diğerlerine göre, tokenbust ve tokenring'e göre performansının bu konuda daha düşük olduğunu söyleyebiliriz.
+
+430
+01:23:01,999 --> 01:23:03,959
+Öncelik mekanizması mevcut değil.
+
+431
+01:23:04,139 --> 01:23:09,279
+Yine tokenring'de ve tokenbust da öncelik mekanizmasının olduğundan söz etmiştik.
+
+432
+01:23:09,279 --> 01:23:13,940
+En az 64 byte'lık çerçeve büyüklüğü söz konusu.
+
+433
+01:23:13,940 --> 01:23:29,999
+yine tokenbuzz, tokenlink de binli byte'larda çerçeve büyüklüklerinden bahsediyorduk. Bu da bizim için bir dezavantaj. Ethernet'in çerçeve büyüklüğünün küçük olması yani dezavantaj.
+
+434
+01:23:29,999 --> 01:23:49,139
+tokenbuzz'a geçtiğimizde ise oldukça kararlı bir performans ortaya koyuyor ve öncelik mekanizması bizim için önemli. Bazı network içerisinde bulunan cihazlar eğer real-time işlemler gerçekleştirmek istiyorlarsa öncelik mekanizması kurarak bunlara önce hak tanınması kesinlikle güzel bir şey.
+
+435
+01:23:49,139 --> 01:23:57,600
+yüklü çalışmalarda mükemmel sonuç veriyorken birazdan göreceğiz düşük veri yüklerde gecikmeleri artırıyor.
+
+436
+01:23:58,100 --> 01:24:09,660
+Düşünün bir frame 2000 byte'lık veri alabiliyor ama siz yani frame'in içerisine 2-3 byte koyup gönderiyorsunuz ve onun gitmesi bekleniyor falan.
+
+437
+01:24:09,660 --> 01:24:21,720
+o yüzden yüksek yüklerde çalışması çok daha elverişli ve birden fazla kanal üzerinden örneksel yani analog kanal üzerinden erişim imkanı sağlanıyor.
+
+438
+01:24:21,720 --> 01:24:36,680
+Tabii yani örneksel dediğimiz şey analog. Örneksel olmasının tez avantajları var. İşte modemin çevri veya işte o network'un içerisindeki donamsal elemanların hep şey olması lazım. Ne denir ona?
+
+439
+01:24:36,679 --> 01:24:38,679
+net...
+
+440
+01:24:38,703 --> 01:25:01,964
+analok çalışıyor olması lazım. Bu da bir problem. Son derece karmaşık bir protokol yapısı vardı. Hatırlarsınız. Özellikle MAC kısmında, 802.4'ün düşük yüklerde az önce söyledik gecikmesi artıyor ve fiber altyapısının kullanımına herhangi bir şekilde müsait değil. Bu da artık günümüzde bunu bir dezavantajlı konuma koymuş oluyor.
+
+441
+01:25:01,964 --> 01:25:16,323
+Token Ring'e geldiğimizde ise öncelik mekanizması 8 seviyeli çalışıyordu. Rezervasyon imkanı önemli imkanlardan birisiydi. Differential Manchester tekniğiyle bizim Most Significant Bit öncelikli gönderiliyordu.
+
+442
+01:25:16,323 --> 01:25:26,143
+ki bu da performansı, sekronizasyon ve DC komponent problemlerini ortadan kaldırdığı için başarımı arttıran bir şeydi.
+
+443
+01:25:26,564 --> 01:25:30,083
+Yüksek çalışmada yüksek verim söz konusuydu.
+
+444
+01:25:30,523 --> 01:25:39,163
+Çok farklı iletim ortamlarında yani sadece bakır kablo üzerindeki iletim ortamında değil, çok farklı iletim ortamlarında çalışmaya imkan tanıyordu.
+
+445
+01:25:39,163 --> 01:25:43,064
+Kısa ve uzun çerçeve yapılarında kullanılabiliyordu.
+
+446
+01:25:43,064 --> 01:25:51,123
+yani Ethernet kısa çerçevelerde de performans yüksekken tokenboss'ın uzun çerçevelerde çalışmasında performans yüksekti.
+
+447
+01:25:51,224 --> 01:25:55,263
+Token ring'de ise hem uzun hem kısa çerçeve yapısında kullanımı söz konusu.
+
+448
+01:25:55,663 --> 01:25:57,983
+Aynı şekilde tokenboss gibi kararlı bir yapısı var.
+
+449
+01:25:58,324 --> 01:26:02,464
+Burada dezavantaj olarak söyleyeceğimiz şey avantajlarından birisi aslında.
+
+450
+01:26:03,163 --> 01:26:07,784
+Hatırlarsanız orphan frame ve no frame problemleri vardı.
+
+451
+01:26:07,783 --> 01:26:23,963
+Bunların oluşumunu izleyen monitoring device vardı ve bu monitoring device olayı monitör ettiği için tabii ki çeşitli gecikmelere sebebiyet veriyor ve birisinin bununla harici olarak ilgilenip bununla ilgili geliştirmelerin yapması gerekiyor.
+
+452
+01:26:23,963 --> 01:26:35,023
+Bunu bir dezavantaj olarak burada söyleyebiliriz. Tabii düşük yüklerde jeton iletiminde yaşanan çeşitli gecikmelerde token ringte meydana geliyormuş. Bu da bir dezavantajı.
+
+453
+01:26:35,023 --> 01:26:49,584
+Fiber'e geçtiğimiz zaman en önemli avantajı zamana duyarlı yani gerçek zamanla çalışması gereken çeşitli verileriniz varsa bunlar hakikaten bu Fiber kısmına daha hızlı iletiliyor.
+
+454
+01:26:49,584 --> 01:26:57,683
+Çift halka kullanımı yine performansı arttırıyordu. Bir halkada problem olduğunda diğer halka üzerinden veri gönderimi devam edebiliyordu.
+
+455
+01:26:57,763 --> 01:27:03,163
+Hatırlarsınız network cihazları olarak DAS'lar ve SAS'lar vardı. Dual çalışanlar ve single çalışanlar.
+
+456
+01:27:03,163 --> 01:27:06,623
+doğal çalışanlar üzerinde çift hat kurulabiliyordu.
+
+457
+01:27:06,623 --> 01:27:11,523
+Fiber kullanımı ile kapsadığı mesafe oldukça artırılıyor.
+
+458
+01:27:12,083 --> 01:27:17,623
+Yani bakır kabloda veri elektriğin iletimini düşünün.
+
+459
+01:27:18,383 --> 01:27:22,543
+İşte ışığın iletilebileceği bir ortamda ışığın iletim hızını düşünün.
+
+460
+01:27:22,903 --> 01:27:24,503
+Ne kadar mesafelere çıkabilir?
+
+461
+01:27:25,063 --> 01:27:29,403
+O da fiber tarafta hakikaten güzel bir şey.
+
+462
+01:27:29,403 --> 01:27:45,703
+ama donanımsal olarak yani FDD donanımsal olarak maksimum desteklenebilecek hızlar gelişirken bu yöntem hala daha kendisini o kadar da geliştirememiş durumda.
+
+463
+01:27:46,203 --> 01:27:48,763
+Remel'de öyle bir problem var.
+
+464
+01:27:49,235 --> 01:28:12,935
+VLAN'a geçtiğimizde ise en büyük avantaj mobil olması. Yani herhangi bir şekilde kabloya bağlı olmama ihtiyacı. Yani VLAN mesela en son belki hayatımıza giren teknoloji ama her daim bunu kullanacağız diye bir şey yok. Ben evdeyim, oyun oynayacağım, performansı daha yüksek olsun diye takıyorum bilgisayarıma kabloyu, o şekilde oynuyorum. Ama kablo taktığınız andan itibaren mobil olmuyorsunuz. Nasıl hareket edebilir? Olmuyorsunuz.
+
+465
+01:28:12,935 --> 01:28:35,515
+o yüzden VLAN'ın en büyük avantajının mobil olması olduğunu söyleyebiliriz. Özellikle kablo çekilmesi imkanı olmayan yerlerde kullanmak hakikaten güzel. Ama diğerlerine göre mesafesi çok kısıtlı. İşte maksimum 802.11n'de 250 metre dış ortamda mesafeye yarıştırabiliyor. Onun haricinde bir ağ kurabilmenin imkanı yok.
+
+466
+01:28:35,515 --> 01:28:44,695
+ve kablolu ağlara nazaran iletişim hızları düşük. Bu da bir dezavantaj olarak söyleyebiliriz.
+
+467
+01:28:45,375 --> 01:28:51,115
+Evet, kısaca böyle bir özet geçtikten sonra bugünkü anlatacağım konuları noktalamış oldum kıymetli arkadaşlar.
+
+468
+01:28:51,315 --> 01:28:53,515
+Sizlerin sorularınız varsa alabilirim.
+
+469
+01:28:55,875 --> 01:29:00,235
+Hocam bu token bus, token ring kullanılıyor mu yani bildiğimiz bir yerlerde hiç?
+
+470
+01:29:00,235 --> 01:29:05,475
+Tabii, tabii. Kullanılıyor. Ethernet de kullanılıyor, bunlar da kullanılıyor.
+
+471
+01:29:05,515 --> 01:29:24,515
+Arka tarafta çalışıyor. Yani data link layer'da çalışan şeyler bunlar. Media access controller kısmında. Yani şeyi de anlattık. Data link layer'da işte flow kontrol, akış kontrolü, HDLC gibi tekniklerle yapıyorduk. İşte bunlar onların evrimleşmiş veya onu baz alarak geliştirilmiş tekniklerde bunlar kullanılıyor yani.
+
+472
+01:29:25,355 --> 01:29:25,916
+Tamamdır hocam.
+
+473
+01:29:27,596 --> 01:29:29,635
+Evet. Başka sorusu olan arkadaşımız var mı?
+
+474
+01:29:34,068 --> 01:30:01,427
+Tamam, o zaman bu akşam projelerin son halleri açıklanmış olacak. Lütfen takip edin. Son hafta ise sunumlarınız gerçekleştiriliyor olacak. Oradaki gerekli duyuruları takip edin. Proje gruplarında çeşitli sıkıntılar vardı. O yüzden biraz geciktik. Proje grubu oluşturmayan arkadaşlar da gruplara atanıp bugün ilanı yapıyor olacağız. Haftaya görüşürüz saat beşte. Kendinize iyi bakın. Sağlıcakla kalın.
+
+475
+01:30:01,427 --> 01:30:03,547
+İyi akşamlar hocam sizden
+
+476
+01:30:03,547 --> 01:30:04,067
+İyi akşamlar
