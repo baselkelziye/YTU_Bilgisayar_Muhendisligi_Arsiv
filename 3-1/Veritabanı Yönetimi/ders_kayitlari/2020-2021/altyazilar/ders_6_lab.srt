@@ -1,0 +1,3616 @@
+1
+00:05:04,779 --> 00:05:11,120
+Evet, selamlar herkese. Uğraşıyor muyuz, yapabiliyor muyuz?
+
+2
+00:05:11,120 --> 00:05:14,660
+Az kaldı hocam, bitiriyorum.
+
+3
+00:05:14,660 --> 00:05:27,120
+Hadi bakalım.
+
+4
+00:05:27,120 --> 00:05:31,959
+Hocam, merhaba. Bir tablo mu verdiniz? Ben bir iki dakika geç girebildim ama.
+
+5
+00:05:31,959 --> 00:05:38,120
+Bu hep kullanacağız demiştim ya, company diye bir tabloları geçen hafta bahsetmiştik.
+
+6
+00:05:38,120 --> 00:05:40,120
+Geçen haftaki derse katılmış mıydın?
+
+7
+00:05:40,120 --> 00:05:43,639
+Kaçırmışım galiba orasını.
+
+8
+00:05:43,639 --> 00:05:47,639
+Nereden indirebiliriz acaba?
+
+9
+00:05:47,800 --> 00:05:51,399
+Benim Avesis sayfama girin. [öğrenci] güveyi Avesis.
+
+10
+00:05:51,399 --> 00:05:53,399
+Amin.
+
+11
+00:05:53,399 --> 00:05:56,399
+Orada companydb diye bir duyuru olacak.
+
+12
+00:05:56,399 --> 00:06:38,689
+Derste gelmeden önce buradan tabloları indirip siz de pg admin'e yüklerseniz iyi olur.
+
+13
+00:06:38,689 --> 00:06:41,689
+Böyle dersteki örnekleri daha iyi takip etmiş olursunuz.
+
+14
+00:06:41,689 --> 00:07:37,220
+Evet, sonuç plan yok mu da o zaman ben bir yandan tabloları nasıl pg admin'e import ettik onu göstereyim.
+
+15
+00:07:37,220 --> 00:07:40,220
+Siz uğraşanlara uğraşmaya devam etsin.
+
+16
+00:07:59,759 --> 00:08:02,759
+Şimdi pg admin'i açtığımızda şuradan ne yapıyorduk?
+
+17
+00:08:02,759 --> 00:08:04,759
+Database'den.
+
+18
+00:08:04,759 --> 00:08:09,259
+Evet, create'ten bir tane database oluşturuyorduk.
+
+19
+00:08:09,259 --> 00:08:11,259
+Database isim veriyorum.
+
+20
+00:08:11,259 --> 00:08:15,800
+İstediğiniz bir adı verebilirsiniz burada.
+
+21
+00:08:15,800 --> 00:08:17,800
+Ben companydb dedim.
+
+22
+00:08:17,800 --> 00:08:21,800
+Kaydet dedim. Sonra şimdi el tabanım oluştu.
+
+23
+00:08:21,800 --> 00:08:25,800
+Şu an boş bir halde. Buna tabloları ekleyeceğim.
+
+24
+00:08:25,800 --> 00:08:30,800
+O dediğim Avesis sayfasından indirmiş olmanız lazım.
+
+25
+00:08:38,379 --> 00:08:42,070
+Şimdi okuyorum.
+
+26
+00:08:42,070 --> 00:08:48,629
+Tam olarak böyle değil. Anlatacağım ben şimdi çözümü.
+
+27
+00:08:48,629 --> 00:08:51,629
+Super SSN'den aynen oradan gideceğiz.
+
+28
+00:08:51,629 --> 00:08:58,029
+Onu ne anlama geldiğini de detaylı açıklayacağım şimdi.
+
+29
+00:08:58,029 --> 00:09:05,029
+Şuradan tablolardan dedik database oluşturduktan sonra tabloları buradan nasıl ekliyorduk.
+
+30
+00:09:05,029 --> 00:09:07,029
+Şuradan bir tane sayfa oluştureyim.
+
+31
+00:09:07,029 --> 00:09:09,029
+Buna tıkladığım zaman boş bir sayfa açıldı.
+
+32
+00:09:09,029 --> 00:09:11,029
+Boş bir editor sayfası.
+
+33
+00:09:11,029 --> 00:09:13,029
+Buradan.
+
+34
+00:09:13,789 --> 00:09:17,789
+İndirdiğiniz tabloları şimdi dosya simgesine tıklıyorum.
+
+35
+00:09:17,789 --> 00:09:21,789
+Siz nereye indirirseniz artık onun dosya yolunu verirsiniz buraya.
+
+36
+00:09:21,789 --> 00:09:23,789
+Orada bir companydb olacak benim Avesis sayfamda.
+
+37
+00:09:23,789 --> 00:09:26,789
+Bir zip dosyası. İçini açtığınızda şu ikisinin çıkması lazım.
+
+38
+00:09:26,789 --> 00:09:29,789
+Zipi açıp bırakın desk tapınızda.
+
+39
+00:09:29,789 --> 00:09:32,789
+İçini açtığınızda şu iki dosya çıkacak.
+
+40
+00:09:32,789 --> 00:09:38,789
+Önce şema dosyasını seçiyorum ki tabloları oluşturabileyim.
+
+41
+00:09:38,789 --> 00:09:47,639
+Hocam ben yaptım sanırım.
+
+42
+00:09:47,639 --> 00:09:49,639
+Cevap ne çıktı?
+
+43
+00:09:50,399 --> 00:09:53,399
+Cevap Franklin Wong.
+
+44
+00:09:53,399 --> 00:10:00,919
+İç içe sorgularla olmuş.
+
+45
+00:10:00,919 --> 00:10:06,919
+Tamam şimdi onu iç içe sorgu kullanmadan nasıl yaptığımızı göreceğiz.
+
+46
+00:10:06,919 --> 00:10:08,919
+Tamam onu da deneyebilirim.
+
+47
+00:10:08,919 --> 00:10:10,919
+Tamam bakalım şimdi.
+
+48
+00:10:10,919 --> 00:10:14,919
+Ben buradan dedim ki şemayı seçtim.
+
+49
+00:10:14,919 --> 00:10:21,919
+Şimdi onun tablolarını oluşturduğu, öbrede şeyler geldiği şemada tablo oluşturma komutları var.
+
+50
+00:10:22,679 --> 00:10:24,679
+Bunlar geldi bunları aldım buraya.
+
+51
+00:10:24,679 --> 00:10:28,679
+Şuraya çalıştır dediğimde bu tabloları attı.
+
+52
+00:10:28,679 --> 00:10:31,679
+Bu arada bu tablolar dediğim geçen hafta olmayanları şöyle bir göstereyim.
+
+53
+00:10:31,679 --> 00:10:35,679
+Companydb diye bir databaseimiz var. Bir şirket veri tabanı burası.
+
+54
+00:10:35,679 --> 00:10:38,679
+Böyle 6 tane tablosu var.
+
+55
+00:10:38,679 --> 00:10:44,679
+Erders bunun üzerinden örnekler yapacağımız için o companydb'yi Erdas böyle kuracağız.
+
+56
+00:10:44,679 --> 00:10:47,679
+Erdas onun üzerinde örneklerimizi yazıp çözeceğiz.
+
+57
+00:10:47,679 --> 00:10:49,679
+Tabloları böyle 6 tane.
+
+58
+00:10:50,440 --> 00:10:56,440
+Şimdi ben onların o şema dosyasını yazıp çalıştırdığım taktirde bunların tablolarını oluşturmuş oldum.
+
+59
+00:10:56,440 --> 00:10:59,440
+Ondan sonra bu tabloların bir de verileri var.
+
+60
+00:10:59,440 --> 00:11:01,440
+Onlar da hazır elimizde varlar.
+
+61
+00:11:01,440 --> 00:11:05,440
+Şurayı komple sileyim.
+
+62
+00:11:05,440 --> 00:11:07,440
+Şimdi bir de o.
+
+63
+00:11:07,440 --> 00:11:11,440
+Data dosyasını seçeyim oradan şeyleri alayım.
+
+64
+00:11:12,200 --> 00:11:16,200
+Insert int'larla veriler kaydedilmiş bu databasese.
+
+65
+00:11:16,200 --> 00:11:20,200
+Bunları almak için de bu dosyayı buraya almış oldum.
+
+66
+00:11:20,200 --> 00:11:24,200
+Şimdi bunu da çalıştır dediğimde gerekli eklemeleri yaptı.
+
+67
+00:11:24,200 --> 00:11:32,200
+Artık tablolarım ve içindeki verileri dolu dolu önümde istediğim gibi işlem yapabilecek durumdayım.
+
+68
+00:11:32,200 --> 00:11:35,200
+Şimdi sorumuza gelelim.
+
+69
+00:11:35,960 --> 00:11:37,960
+Tablolarımızı aldık.
+
+70
+00:11:37,960 --> 00:11:49,899
+Bir tane daha employ'dan 2 tane kullanacağız.
+
+71
+00:12:20,850 --> 00:12:22,850
+Şimdi sorumuza dönecek olursak.
+
+72
+00:12:22,850 --> 00:12:31,740
+Dedik ki Elizabeth ismin de akrabası olan çalışanın yöneticisinin adını ve sayadını.
+
+73
+00:12:32,500 --> 00:12:38,830
+Şimdi bunun şöyle tabloyu gösterelim.
+
+74
+00:12:38,830 --> 00:12:40,830
+Tablo üzerinden açıklayalım.
+
+75
+00:12:40,830 --> 00:12:44,830
+Diyorum ki Elizabeth isimli akrabası olan kişinin.
+
+76
+00:12:44,830 --> 00:12:46,830
+Bu tabi dependent tablosunda alacağım bir bilgi.
+
+77
+00:12:46,830 --> 00:12:48,830
+Çünkü akraba isimleri burada.
+
+78
+00:12:48,830 --> 00:12:52,830
+Şurada da dependent tablosunda ESSM bu.
+
+79
+00:12:52,830 --> 00:12:54,830
+O çalışanın kimlik numarası.
+
+80
+00:12:54,830 --> 00:12:56,830
+Geçen hafta tabloları hatırlıyoruz değil mi?
+
+81
+00:12:56,830 --> 00:12:58,830
+Employee tablosu vardı mesela.
+
+82
+00:12:58,830 --> 00:13:00,830
+Burada çalışanlarla ilgili veriler vardı.
+
+83
+00:13:01,590 --> 00:13:03,590
+O çalışanın adı, soyadı, ESSM dediğimiz.
+
+84
+00:13:03,590 --> 00:13:09,590
+İşte social security number'ın kısaltması bir kimlik numarası gibi düşünebiliriz.
+
+85
+00:13:09,590 --> 00:13:11,590
+Ve bu kişiyle ilgili diğer bilgiler vardı.
+
+86
+00:13:11,590 --> 00:13:13,590
+Doğum tarihi, adresi, cinsiyeti, maaşı.
+
+87
+00:13:13,590 --> 00:13:21,590
+Yöneticisinin ESSM, yöneticisinin kimlik numarası ve o kişinin bağlı olduğu departmanın numarası vardı.
+
+88
+00:13:21,590 --> 00:13:25,590
+Ve sonra bu çalışanla ilgili diğer tablolarımız vardı.
+
+89
+00:13:25,590 --> 00:13:27,590
+Dependent da bunlardan biri.
+
+90
+00:13:27,590 --> 00:13:30,590
+Bu çalışanın akraba bilgilerini tutuyor.
+
+91
+00:13:31,350 --> 00:13:35,350
+ESSM dediğim, burada o çalışan kişinin kimlik numarası.
+
+92
+00:13:35,350 --> 00:13:38,350
+Yanında Dependent neyim dediğimde, onun işte akrabasının adı.
+
+93
+00:13:38,350 --> 00:13:41,350
+Ve geri kalanlarda o akrabayla ilgili bilgiler olmuş oluyor.
+
+94
+00:13:41,350 --> 00:13:43,350
+Benim sorduğum şey neydi?
+
+95
+00:13:43,350 --> 00:13:46,350
+Elizabeth isimli akrabası olan kişinin.
+
+96
+00:13:46,350 --> 00:13:48,350
+Tabii başka olsaydı onları da alacaktık.
+
+97
+00:13:48,350 --> 00:13:52,350
+Ama burada sanıyorum bir tane vardı Elizabeth isimli akraba.
+
+98
+00:13:52,350 --> 00:13:55,350
+Bu kişinin Elizabeth isimli akrabası olan kişi.
+
+99
+00:13:55,350 --> 00:13:57,350
+O kim? ESSM'in şu olan kişi.
+
+100
+00:13:57,350 --> 00:14:00,350
+Bunun neyini soruyor bana?
+
+101
+00:14:01,110 --> 00:14:03,110
+Yöneticisinin adını soyadını.
+
+102
+00:14:03,110 --> 00:14:07,110
+Şimdi ben bunun kimlik numarasını alıp buraya geldiğimde
+
+103
+00:14:07,110 --> 00:14:10,110
+direkt tek bir employee tablosuna baktığımda
+
+104
+00:14:10,110 --> 00:14:13,110
+onu giderim hemen şurada ESSM'de bulurum.
+
+105
+00:14:13,110 --> 00:14:17,110
+Ha o kişinin adını bulurum, soyadını bulurum, doğum tarihini vesairesini bulurum.
+
+106
+00:14:17,110 --> 00:14:23,110
+Bir de o kişinin çalışan bağlı olduğu yöneticisinin kimlik numarasını bulurum.
+
+107
+00:14:23,110 --> 00:14:27,549
+Şimdi süper ESSM dediğimiz şey ne dedik?
+
+108
+00:14:27,549 --> 00:14:30,549
+O çalışanın yöneticisinin kimlik numarası.
+
+109
+00:14:31,789 --> 00:14:34,789
+Burada dikkat etmemiz gereken şöyle bir şey var.
+
+110
+00:14:34,789 --> 00:14:36,789
+Bu kafanızı karıştırabilir.
+
+111
+00:14:36,789 --> 00:14:38,789
+Bir arkadaşım galiba öyle yapmıştı.
+
+112
+00:14:38,789 --> 00:14:40,789
+Department tablosundan mı?
+
+113
+00:14:40,789 --> 00:14:42,789
+Dean Ambrose üzerinden bir şey yapmaya çalışmıştı.
+
+114
+00:14:42,789 --> 00:14:46,789
+Şimdi burada yönetici dediğimiz olan, bakın şurada da yöneticiler var.
+
+115
+00:14:46,789 --> 00:14:50,789
+Mesela burada da işte departman yöneticilerinin numaraları var.
+
+116
+00:14:50,789 --> 00:14:55,789
+Ama bir kişi illa yöneticiyse bir departman yöneticisi olmak zorunda değil.
+
+117
+00:14:55,789 --> 00:14:57,789
+Oradaki 3-5 kişinin de yöneticisi olabilir.
+
+118
+00:14:57,789 --> 00:14:59,789
+Bir takımın da yöneticisi olabilir.
+
+119
+00:14:59,789 --> 00:15:07,789
+O yüzden süper ESSM kısmında, hani yönetici ESSM kısmında olan herkes burada olacak diye de bir mantığımız oluşmayacak.
+
+120
+00:15:07,789 --> 00:15:09,789
+Yani hani bir şey gibi düşünün.
+
+121
+00:15:09,789 --> 00:15:11,789
+Bir [öğrenci] ve [öğrenci] bir çalışan var.
+
+122
+00:15:11,789 --> 00:15:13,789
+Onun bir yöneticisi var.
+
+123
+00:15:13,789 --> 00:15:16,789
+Ama o yöneticinin de üstünde bir yönetici var.
+
+124
+00:15:16,789 --> 00:15:19,789
+Onun da en üstünde zaten departman yöneticileri geliyor.
+
+125
+00:15:19,789 --> 00:15:23,789
+O yüzden burada kalkıp şöyle bir mantık kurmamız hatalı olabilir.
+
+126
+00:15:23,789 --> 00:15:25,789
+O kişiyi bulduktan sonra buraya geleyim.
+
+127
+00:15:25,789 --> 00:15:27,789
+İşte oradan departman numarasını alayım.
+
+128
+00:15:27,789 --> 00:15:29,789
+Gideyim oradan menajerinin SSL'ini bulayım.
+
+129
+00:15:29,789 --> 00:15:31,789
+O departmanın yöneticisi kimse onu bulayım falan.
+
+130
+00:15:31,789 --> 00:15:33,789
+Sonra da geleyim tekrar buraya.
+
+131
+00:15:33,789 --> 00:15:34,789
+Yapmayacağız.
+
+132
+00:15:34,789 --> 00:15:37,789
+Burada kullanacağımız şöyle bir mantık olacak.
+
+133
+00:15:37,789 --> 00:15:40,789
+İki tane employee tablosu kullanmış olacağız.
+
+134
+00:15:40,789 --> 00:15:42,789
+Hemen sorgusunu açıp göstereyim.
+
+135
+00:15:44,789 --> 00:15:48,789
+Şimdi başlangıç noktamız ne dedik?
+
+136
+00:15:48,789 --> 00:15:49,789
+Dependent'tan başlıyoruz.
+
+137
+00:15:49,789 --> 00:15:51,789
+From Dependent diyeceğiz.
+
+138
+00:15:51,789 --> 00:15:53,789
+Oradan çünkü neye alacağız?
+
+139
+00:15:53,789 --> 00:15:56,789
+Dependent name'e Elizabeth olan kaydı bulacağım.
+
+140
+00:15:56,789 --> 00:16:01,789
+Sonra oradan o kayıta ESS'ni almış olacağım.
+
+141
+00:16:01,789 --> 00:16:03,789
+Şurada Elizabeth'i buldum.
+
+142
+00:16:03,789 --> 00:16:09,789
+Şuradaki ESS'ni gidip employee'deki SSL'ni ne yapmam gerekiyor?
+
+143
+00:16:09,789 --> 00:16:10,789
+Eşlemem gerekiyor.
+
+144
+00:16:10,789 --> 00:16:12,789
+Evet o işlemi de burada yaptım.
+
+145
+00:16:12,789 --> 00:16:14,789
+ESS'nin eşittir.
+
+146
+00:16:14,789 --> 00:16:18,789
+Employ'den employee E1 dedim buna.
+
+147
+00:16:18,789 --> 00:16:20,789
+Böyle kısaplar verebiliyorduk biliyorsunuz.
+
+148
+00:16:20,789 --> 00:16:24,789
+E1 dedim employee nokta SSL'nin.
+
+149
+00:16:24,789 --> 00:16:25,789
+Onun SSL'ini aldım.
+
+150
+00:16:25,789 --> 00:16:27,789
+Tamam buldum şimdi o kişiyi buldum.
+
+151
+00:16:27,789 --> 00:16:31,789
+Daha sonra şöyle düşünün.
+
+152
+00:16:31,789 --> 00:16:33,789
+Şimdi şurası E1 tablosu olsun diyelim.
+
+153
+00:16:33,789 --> 00:16:37,789
+Ben orada E1 tablosu ilk tablodaki o kaydı buldum.
+
+154
+00:16:37,789 --> 00:16:42,789
+O kişinin, o işte akrabası Elizabeth olan kişinin adını biliyorum.
+
+155
+00:16:42,789 --> 00:16:43,789
+İşte soy adını biliyorum vesaire vesaire.
+
+156
+00:16:43,789 --> 00:16:45,789
+Bu kişinin süper SSL'ini biliyorum.
+
+157
+00:16:45,789 --> 00:16:47,789
+Yani o kişinin yöneticisinin adını biliyorum.
+
+158
+00:16:47,789 --> 00:16:53,789
+O zaman bu yönetici adını bir başka employee tablosuna daha gelirim.
+
+159
+00:16:53,789 --> 00:16:55,789
+Employee tablosundan bir tane daha tanımladım.
+
+160
+00:16:55,789 --> 00:16:57,789
+Aynı tablo değişik bir şey yok.
+
+161
+00:16:57,789 --> 00:17:01,789
+Orada da bu süper SSL'nin SSL'ni eşlerim ki.
+
+162
+00:17:01,789 --> 00:17:03,789
+Çünkü her yönetici aslında o da bir işçi.
+
+163
+00:17:03,789 --> 00:17:08,789
+Yani yöneticinin kaydını görmek istediğimde adamın adı vardır soy adı vardır SSL'ni vardır.
+
+164
+00:17:08,789 --> 00:17:13,789
+Yani bu kişinin yönetici numarası aslında bir başka kişinin ne olacak?
+
+165
+00:17:13,789 --> 00:17:16,789
+Buradaki kayıttaki SSL'ni oluşturmuş olacak.
+
+166
+00:17:16,789 --> 00:17:20,789
+O yüzden buraya ikinci bir employee tablosu daha tanımadım.
+
+167
+00:17:20,789 --> 00:17:22,789
+Employee E2 dedim.
+
+168
+00:17:22,789 --> 00:17:24,789
+Aynı tablo dediğim gibi.
+
+169
+00:17:24,789 --> 00:17:32,789
+Sadece ilk tabloda gelip o kişinin süper SSL'ini aldıktan sonra ikincisine gidip orada neyle buna eşlemem gerekiyor?
+
+170
+00:17:32,789 --> 00:17:34,789
+SSL'le eşlemem gerekiyor.
+
+171
+00:17:34,789 --> 00:17:40,789
+İşte bu yüzden o E1 tablosunun süper SSL'ni eşittir E2.
+
+172
+00:17:40,789 --> 00:17:44,789
+SSL diyorum ki artık buraya geldim son noktada nedir?
+
+173
+00:17:45,789 --> 00:17:53,789
+F name ve last name dediğim şeyler o E2'nin F name ve last name'i bana artık yöneticinin adımı ve soy adını vermiş olacak.
+
+174
+00:17:53,789 --> 00:18:02,859
+Anlaşıldı mı?
+
+175
+00:18:02,859 --> 00:18:05,859
+Biraz karışık gelebilir.
+
+176
+00:18:05,859 --> 00:18:07,859
+Bir şey sorabilir miyim?
+
+177
+00:18:07,859 --> 00:18:08,859
+Hı hı tabi.
+
+178
+00:18:08,859 --> 00:18:17,859
+Hocam burada dependent tablosunda mesela Elizabeth'in yan tarafındaki SSL bizim o şu an sorda bahsettiğimiz çalışılım mı SSL ne oluyor?
+
+179
+00:18:17,859 --> 00:18:20,859
+Aynen bunlar çalışan kişinin SSL'ni.
+
+180
+00:18:20,859 --> 00:18:26,859
+Şuradan sonraki diğer kayıtlar o akrabayla alakalı bilgiler.
+
+181
+00:18:26,859 --> 00:18:29,859
+Anladım yani onların hepsini değil.
+
+182
+00:18:29,859 --> 00:18:31,859
+Yok o kişiler çalışmıyor burada.
+
+183
+00:18:31,859 --> 00:18:34,859
+Bunlar sadece işte bu çalışan kişinin akrabaları.
+
+184
+00:18:34,859 --> 00:18:36,859
+Ben buradan ne yapıyorum?
+
+185
+00:18:36,859 --> 00:18:45,859
+Bu ESSM dediğim kısım zaten şuradaki SSL'ne eşleştirdiğim zaman hop bu tablodaki ilgili kayda ulaşmış olabiliyorum.
+
+186
+00:18:45,859 --> 00:18:55,970
+Bu bugün işleyeceğimiz baya bir konum var.
+
+187
+00:18:55,970 --> 00:19:01,970
+O yüzden ilerleyen şeylerde de zaten olacak buna benzer birkaç tablolu şey örnek.
+
+188
+00:19:01,970 --> 00:19:03,970
+O yüzden devam edelim.
+
+189
+00:19:03,970 --> 00:19:07,970
+Bu da biraz daha tekrar ettiğinizde oturur diye düşünüyorum.
+
+190
+00:19:07,970 --> 00:19:11,970
+Evet geçen hafta da şöyle bir tekrar etmiş olduk.
+
+191
+00:19:11,970 --> 00:19:13,970
+Üç tabloda neler yapıyorduk nasıl yapıyorduk.
+
+192
+00:19:13,970 --> 00:19:16,970
+Bu da böyle bir örneğimizde.
+
+193
+00:19:16,970 --> 00:19:20,970
+Şimdi bu haftaki konularımız kısıtları göreceğiz.
+
+194
+00:19:20,970 --> 00:19:29,970
+View Sequence oluşturmayı ve tablolarda birleşim, kesişim ve fark alma işlemlerini göreceğiz.
+
+195
+00:19:29,970 --> 00:19:41,410
+Kısıtlar dediğimiz veri tabanımızda bizim verilerimizi tuttuğumuz yerde bu verilerin doğruluklarına bütün yüklerine zarar gelsin istemiyoruz.
+
+196
+00:19:41,410 --> 00:19:44,410
+Şimdi tablolarda farklı farklı gördük az önce.
+
+197
+00:19:44,410 --> 00:19:46,410
+Gördük az önce mesela ESSMler değil mi?
+
+198
+00:19:46,410 --> 00:19:50,410
+Birkaç tabloda bulunabiliyorlardı veya farklı böyle yine ortak sütunlar var.
+
+199
+00:19:50,410 --> 00:19:55,410
+Bunların birinde değişiklik yaptığında diğerindeki verinin anlamsız olmaması gerekiyor.
+
+200
+00:19:55,410 --> 00:20:00,410
+Bu yüzden ben bu sütunları oluştururken birtakım kısıtlar belirliyorum.
+
+201
+00:20:00,410 --> 00:20:05,410
+Mesela ne demişiz işte project tablosundaki.
+
+202
+00:20:05,410 --> 00:20:12,410
+Ben bu kısıtları belirlemesem hiçbir şekilde şunlara anahtar değerler verip bir işlemde bulunmasam.
+
+203
+00:20:12,410 --> 00:20:16,410
+Mesela project tablosuna geldim diyelim burada neler vardı?
+
+204
+00:20:16,410 --> 00:20:20,410
+Projelerin numaraları vardı ve isimleri vardı.
+
+205
+00:20:20,410 --> 00:20:26,410
+Şimdi ben P number dediğim kısmı bakıyorum bir de şurada bir ilişki tablosu vardı work zone.
+
+206
+00:20:26,410 --> 00:20:28,410
+Burada da orası yer alıyor.
+
+207
+00:20:28,410 --> 00:20:30,410
+Bu tablo hatta ne yapıyordu?
+
+208
+00:20:30,410 --> 00:20:37,410
+Employee tablosundan çalışanların kimlik numaralarını ve buradan da project tablosundan da P number'ı alıyordu.
+
+209
+00:20:37,410 --> 00:20:41,410
+İşte diyordu şu numaralı çalışan şu numaralı projede çalışıyor.
+
+210
+00:20:41,410 --> 00:20:47,410
+Şimdi ben gidip mesela kafama göre buradaki P number'ları değiştirsem,
+
+211
+00:20:47,410 --> 00:20:56,410
+işte desem ki şu operating system projesi artık 61 numara değil de 65 numara yaptım ben bunu.
+
+212
+00:20:56,410 --> 00:21:01,410
+Şimdi ben bunu kafama göre değiştirdiğim zaman buradaki adam 61 numaralı projede çalışıyor görünüyor.
+
+213
+00:21:01,410 --> 00:21:02,410
+O zaman bu boşta kalmış oluyor.
+
+214
+00:21:02,410 --> 00:21:06,410
+Bunun hangi projede çalıştığını görmen bilmem mümkün değil.
+
+215
+00:21:06,410 --> 00:21:12,410
+Bu sebepten bu tutarsızlıkları önlemek adına bu ilişkinin daha sağlam devam edebilmesi için ne yapıyoruz?
+
+216
+00:21:12,410 --> 00:21:14,410
+Bazı anahtar kısıtları getirmemiz gerekiyor.
+
+217
+00:21:14,410 --> 00:21:19,410
+Bu önemli sistemlere, farklı tablolarda kullandığımız bu sistemlere kısıtlar getiriyoruz.
+
+218
+00:21:19,410 --> 00:21:24,549
+Şimdi bakalım nasılmış kısıtlarımız.
+
+219
+00:21:24,549 --> 00:21:28,549
+Bu derste göreceğimiz kısıtlar anahtarlar üzerinden olacak.
+
+220
+00:21:28,549 --> 00:21:31,549
+Primary key ve Forenky oluşturmayı göreceğiz.
+
+221
+00:21:32,549 --> 00:21:34,549
+Bunu da bir örnek üzerinden anlatacağız.
+
+222
+00:21:34,549 --> 00:21:39,549
+Şimdi bizim tablolarımızda bir tane employee tablomuz vardı.
+
+223
+00:21:39,549 --> 00:21:44,549
+Şurada çalışanların bilgilerinin olduğu bir employee tablom var.
+
+224
+00:21:44,549 --> 00:21:48,549
+Şimdi istiyorum ki bir tane de takım tablosu kurayım.
+
+225
+00:21:48,549 --> 00:21:50,549
+Burada hani şöyle hayal edeceğiz.
+
+226
+00:21:50,549 --> 00:21:53,549
+Şirket çalışanları bir basketbol takımı kurmuşlar.
+
+227
+00:21:53,549 --> 00:21:57,549
+Ve team isimli bir tablo oluşturmamız isteniyor bizden.
+
+228
+00:21:58,549 --> 00:22:02,549
+Bunun da bu tablonun da bakıyorum nasıl oluşturmuşuz.
+
+229
+00:22:02,549 --> 00:22:06,549
+İki tane su tunu var tablomuzun bir team number bir de team name.
+
+230
+00:22:06,549 --> 00:22:10,549
+Yani bir takımların numarasını tutayım bir de o takımın ismini tutayım.
+
+231
+00:22:10,549 --> 00:22:13,549
+İki su tununu bir tablo oluşturacağım.
+
+232
+00:22:13,549 --> 00:22:15,549
+Takım numaraları iki aneli olacakmış.
+
+233
+00:22:15,549 --> 00:22:20,549
+Team name dediğim takım ismi de 15 karaktere kadar sınırın varmış.
+
+234
+00:22:20,549 --> 00:22:25,549
+Bunun için diyorum ki primary key dediğim alan
+
+235
+00:22:25,549 --> 00:22:33,549
+Yani o tabloya özgü özel oradaki bir başka kayıtta asla tekrar olmayacak alan team number olsun.
+
+236
+00:22:33,549 --> 00:22:37,549
+Yani bir takım numarasında sadece bir tane olması lazım.
+
+237
+00:22:37,549 --> 00:22:43,549
+Mesela şuradaki employee tablosunda da SSN dediğimiz yer.
+
+238
+00:22:43,549 --> 00:22:49,549
+O tablonun company şema dosyasına baktığınız zaman detaylı görürsünüz.
+
+239
+00:22:49,549 --> 00:22:51,549
+SSN orada primary key olarak tanımlanır.
+
+240
+00:22:51,549 --> 00:22:55,549
+Niye? Çünkü kimlik numarası o kişiye özel ve tanımlayıcıdır.
+
+241
+00:22:55,549 --> 00:23:00,549
+Başka tablolarda da kullanacağım ve o tablo için de özel olmasını özerk olmasını istiyorum.
+
+242
+00:23:00,549 --> 00:23:04,549
+Farklı kayıtlarda aynı kimlik numaralı insanın olmaması gerekiyor.
+
+243
+00:23:04,549 --> 00:23:08,549
+Üniversitede mesela bunu öğrenci numarası olarak düşünebilirsiniz.
+
+244
+00:23:08,549 --> 00:23:12,549
+Bir ülkede TC kimlik numarası vs. Bunların hepsi aslında birer ne oluyor?
+
+245
+00:23:12,549 --> 00:23:13,549
+Primary key oluyor.
+
+246
+00:23:13,549 --> 00:23:17,549
+Şimdi ben bu tabloyu oluştururken bu primary key tanımlığını nasıl yapıyorum?
+
+247
+00:23:17,549 --> 00:23:20,549
+Burada iki tane yönteminden bahsetmişiz.
+
+248
+00:23:20,549 --> 00:23:30,549
+Ülk yöntemde demişiz ki şu şekilde başına constraint getirip bu key wordu getirip constraint key wordunu kullanıp
+
+249
+00:23:30,549 --> 00:23:36,549
+o kiye bir isim verip bu da tkaltr team demişim.
+
+250
+00:23:36,549 --> 00:23:38,549
+Buraya herhangi bir isim verebiliriz.
+
+251
+00:23:38,549 --> 00:23:43,549
+Bu ismi vermemiz sebebi de daha sonra ben bunu bakın silmek isteyebilirim, değiştirmek isteyebilirim.
+
+252
+00:23:43,549 --> 00:23:45,549
+Onun için bu da bir isim olsun.
+
+253
+00:23:45,549 --> 00:23:51,549
+Benim bildiğim bir isim olsun ki eğer bu primary key kaldırmak istersem ileride sadece alter table komutunu kullanarak
+
+254
+00:23:51,549 --> 00:23:53,549
+bunu kaldırabileyim diyeceğim.
+
+255
+00:23:53,549 --> 00:24:00,549
+Constraint dedim bir isim attım ve dedim ki bu primary key bu tablo için konuşuyorum.
+
+256
+00:24:00,549 --> 00:24:02,549
+Daha bakın tablonun tanımlanması içindeyim.
+
+257
+00:24:02,549 --> 00:24:08,549
+Bir primary key olsun ve hangi stun primary key olacak?
+
+258
+00:24:08,549 --> 00:24:10,549
+T number dediğim stun.
+
+259
+00:24:10,549 --> 00:24:12,549
+Bu stun benim primary keyim olacak.
+
+260
+00:24:12,549 --> 00:24:17,549
+Onun için bu primary keyi açtım parantezi ve içine yazmış oldum.
+
+261
+00:24:17,549 --> 00:24:23,549
+Eğer ben bu kısıtı silmek isteseydim daha sonra alter table diyecektim.
+
+262
+00:24:23,549 --> 00:24:33,549
+Tablonun adını verecektim daha sonra drop constraint deyip o verdiğim ismi yazdığım takdirde bu kısıtı kaldırmış olacaktı.
+
+263
+00:24:33,549 --> 00:24:36,549
+Bu primary key anahtarını o stundan kaldırmış olacaktı.
+
+264
+00:24:37,549 --> 00:24:42,549
+Bunun diğer bir yöntemi ise şu aşağıda gördüğünüz hatta bu ilk derste de bir slide'da
+
+265
+00:24:42,549 --> 00:24:47,549
+bunu create table komutunu anlatırken koymuştuk göstermiştik.
+
+266
+00:24:47,549 --> 00:24:53,549
+Direkt stunla ilgili tanımlamayı yaparken işte stunun adını verdim tipini verdim.
+
+267
+00:24:53,549 --> 00:24:59,549
+Hemen yanıma şu primary key keywordini eklediğim takdirde de bunu aslında ne yapabiliyor?
+
+268
+00:24:59,549 --> 00:25:03,549
+Bir primary key olarak algılıyor ve o şekilde kaydetmiş oluyor.
+
+269
+00:25:03,549 --> 00:25:05,549
+Bu şekilde bir primary key oluşturmuş oluyor.
+
+270
+00:25:06,549 --> 00:25:13,549
+Peki biz bunu silmek istediğimizde yani ben bu stundan primary key özelliğini kaldırmak istediğimde ne yapacağım?
+
+271
+00:25:13,549 --> 00:25:15,549
+Yine alter table'u kullanacağım.
+
+272
+00:25:15,549 --> 00:25:17,549
+Yukarıda ne yapmıştım alter table ile?
+
+273
+00:25:17,549 --> 00:25:23,549
+Kendi verdiğim bir isim vardı drop constraint dedikten sonra direkt o ismi yazmıştım ve silmiştim.
+
+274
+00:25:23,549 --> 00:25:29,549
+Şimdi de aynısını kullanacağım alter table diyeceğim tablonun adını vereceğim drop constraint diyeceğim.
+
+275
+00:25:29,549 --> 00:25:33,549
+Bu sefer o benim için otomatik olarak bir isim oluşturmuş olacak.
+
+276
+00:25:33,549 --> 00:25:35,549
+Benim yazdığım bir isim değil bu.
+
+277
+00:25:35,549 --> 00:25:38,549
+Ama onun otomatik olarak oluşturduğu bir isim var.
+
+278
+00:25:38,549 --> 00:25:40,549
+Bunu da neye göre oluşturuyor?
+
+279
+00:25:40,549 --> 00:25:47,549
+Tablo adı alter pk olarak bana bir isim oluşturmuş oluyor.
+
+280
+00:25:47,549 --> 00:25:49,549
+Bu kısa isim otomatik olarak oluşturuluyor.
+
+281
+00:25:49,549 --> 00:25:59,549
+Tablonun adı team'de ve yaptığım şeyde bir primary key tanımı olduğu için team alter pk olarak bana bir adı constraint oluşturmuş oldu.
+
+282
+00:25:59,549 --> 00:26:04,549
+Silmek isteseydim de yine bu şekilde ne yapacaktım?
+
+283
+00:26:04,549 --> 00:26:09,180
+Constraint kaldırmış olacaktım.
+
+284
+00:26:09,180 --> 00:26:11,180
+Şimdi team tablosunu bu şekilde oluşturdum.
+
+285
+00:26:11,180 --> 00:26:13,180
+Dedim iki tane sunum var.
+
+286
+00:26:13,180 --> 00:26:17,180
+Biri team number, biri team name ve team number'a geldim ne yaptım?
+
+287
+00:26:17,180 --> 00:26:20,180
+Bir primary key özelliği atadım.
+
+288
+00:26:20,180 --> 00:26:22,180
+Bakın buradan tabloları da görelim.
+
+289
+00:26:22,180 --> 00:26:24,180
+Bu employee tablomuzdu.
+
+290
+00:26:24,180 --> 00:26:27,180
+Company diye bildik ki bildiğimiz tablomuz.
+
+291
+00:26:27,180 --> 00:26:35,180
+Bu az önce şimdi oluşturduğum net team tablosu ve şimdi bir de bir ilişki tablosu oluşturmamı istenecek.
+
+292
+00:26:35,180 --> 00:26:39,180
+Bu da team employee isminde bir ilişki tablosu olacak.
+
+293
+00:26:39,180 --> 00:26:41,180
+Bu tabloda da ne verisini tutacağım?
+
+294
+00:26:41,180 --> 00:26:48,180
+Hangi takım numarasında, hangi çalışan, hangi takımda oynuyor ve kaç hafta oynuyor?
+
+295
+00:26:48,180 --> 00:26:52,180
+Bunun bilgilerine olduğu üçsü tunluk bir tablo daha oluşturacağım.
+
+296
+00:26:52,180 --> 00:26:57,180
+Ve bu tabloyu oluştururken benden bazı kısıtlar girmemi isteyecek.
+
+297
+00:26:57,180 --> 00:27:00,180
+Hemen bakalım bu tabloyu nasıl oluşturuyormuşum?
+
+298
+00:27:00,180 --> 00:27:02,180
+Team employee'i.
+
+299
+00:27:02,180 --> 00:27:07,180
+Geldim ve dedik employee ve team tabloları için team employee'i oluşturacağız.
+
+300
+00:27:07,180 --> 00:27:10,180
+Bu tablonun üç tane sunum var.
+
+301
+00:27:10,180 --> 00:27:14,180
+Tino, ESSM ve Playtime.
+
+302
+00:27:14,180 --> 00:27:17,180
+Bunların tiplerinin yanlarına yazdım.
+
+303
+00:27:17,180 --> 00:27:19,180
+Tino dediğim numarik.
+
+304
+00:27:19,180 --> 00:27:21,180
+Diğer içeri öbürü de numarik olacakmış.
+
+305
+00:27:21,180 --> 00:27:27,180
+Ve şimdi benden istediklerini tek tek istediği kısıtları yazıyorum.
+
+306
+00:27:27,180 --> 00:27:34,180
+Şimdi de ilk olarak bana diyor ki bu işçilerin tek bir takımda oynama zorunluluğu yokmuş.
+
+307
+00:27:34,180 --> 00:27:41,180
+Yani şurada tabloda dedik ya hangi işçi hangi takımda oynuyor bunun verisi olacak.
+
+308
+00:27:41,180 --> 00:27:47,180
+Burada bir işte atıyorum 100 numaralı 1000 numaralı bir çalışan var.
+
+309
+00:27:47,180 --> 00:27:49,180
+O gidip 5 numaralı takımda da oynayabilir.
+
+310
+00:27:49,180 --> 00:27:52,180
+15 numaralı takımda da oynayabilir.
+
+311
+00:27:52,180 --> 00:28:01,180
+O zaman diyorum ki ben burası için bir primary key belirleyeceksen bir özel alan belirleyeceksen burada ne demiş?
+
+312
+00:28:01,180 --> 00:28:04,180
+Tino ve ESSM'i birlikte primary key yapacağım.
+
+313
+00:28:04,180 --> 00:28:06,180
+Bu da bir özellik mesela.
+
+314
+00:28:06,180 --> 00:28:12,180
+Sadece illa tek bir sütün primary key olmak zorunda değil iki sütün beraber primary key olabilir.
+
+315
+00:28:12,180 --> 00:28:18,180
+Yani bu ikisi aynı anda farklı kayıtlarda tekrar etmeyecek.
+
+316
+00:28:18,180 --> 00:28:21,529
+Bu şekilde düşünebilirim.
+
+317
+00:28:21,529 --> 00:28:27,529
+Bakın Tino ve ESSM ikisi beraber bir primary key olacak özel bir alan olacak.
+
+318
+00:28:27,529 --> 00:28:29,529
+Onun tanımına asıl oluyor.
+
+319
+00:28:29,529 --> 00:28:32,529
+Az önce gördüğümüz gibi constraint diyorum.
+
+320
+00:28:32,529 --> 00:28:41,529
+Sonra ona bir isim veriyorum bu ismi ben vermişim ve primary key deyip hangi sütunların primary key olduğunu yazıyorum.
+
+321
+00:28:41,529 --> 00:28:48,940
+Eğer isim vermek istemeseydim onun default olarak bana isimlendirmesini isteseydim.
+
+322
+00:28:48,940 --> 00:28:52,940
+Sadece gelirdim şuraya eklerdim en sona primary key derdim.
+
+323
+00:28:52,940 --> 00:28:56,940
+Başına bunları yazmasaydım direkt alta geçer bunu yazardım tek bir şekilde.
+
+324
+00:28:56,940 --> 00:29:00,940
+Ondan sonra bana yine aynı default isimlendirmesini yapardım.
+
+325
+00:29:00,940 --> 00:29:03,940
+Şimdi bu tablonun primary key ise okey.
+
+326
+00:29:03,940 --> 00:29:06,940
+Sonra istediği neymiş bakalım.
+
+327
+00:29:06,940 --> 00:29:15,890
+Tino dediği alan diyor team tablosundaki t number'ı referans almalı.
+
+328
+00:29:15,890 --> 00:29:21,890
+Yani şimdi t number daha önceden burada tanımlanmıştı ve primary key de özel bir alandı.
+
+329
+00:29:21,890 --> 00:29:23,890
+Birincili bir anahtardı.
+
+330
+00:29:23,890 --> 00:29:29,890
+Bu burada artık bir tablonun primary key ise öbür tabloda bir primary key olacak.
+
+331
+00:29:29,890 --> 00:29:39,890
+Burada bir anahtar değeri oluşturacak ve diyor ki burada bir değer silindiği zaman ben gelip team tablosunda birtakım değişiklik yapacağım.
+
+332
+00:29:39,890 --> 00:29:43,890
+O zaman burada da ilgilik kayıtların silinmesi lazım.
+
+333
+00:29:43,890 --> 00:29:45,890
+Benden böyle bir özellik istiyor.
+
+334
+00:29:45,890 --> 00:29:55,890
+Team tablosundaki t number'ı referans alsın ve team tablosuna o satırı sildiğinde buna ait tno satırlar da buradan silinsin.
+
+335
+00:29:55,890 --> 00:29:58,890
+Onun için de şöyle bir ifade kullanıyorum.
+
+336
+00:29:58,890 --> 00:30:00,890
+Constraint dedim klasik.
+
+337
+00:30:00,890 --> 00:30:02,890
+Sonra ona bir isim verdim.
+
+338
+00:30:02,890 --> 00:30:04,890
+Bu sefer artık yapacağım şey bir forenky.
+
+339
+00:30:04,890 --> 00:30:08,890
+Artık bir yere referans vereceğim çünkü sıfırdan primary key değil.
+
+340
+00:30:08,890 --> 00:30:11,890
+Bu zaten başka bir tablonun primary keysiydi.
+
+341
+00:30:11,890 --> 00:30:15,890
+Artık burada forenky ikincili yabancı bir anahtar olacak.
+
+342
+00:30:15,890 --> 00:30:17,890
+Forenky diyorum ve tno diyorum.
+
+343
+00:30:17,890 --> 00:30:20,890
+Belirtiyorum hangisi bunun forenky olacağını.
+
+344
+00:30:20,890 --> 00:30:22,890
+Ve sonra bu nereye referans veriyor?
+
+345
+00:30:22,890 --> 00:30:25,890
+Referanssız hangi tablonun hangi sütün o?
+
+346
+00:30:25,890 --> 00:30:28,890
+Team tablosunun t number sütününe referans vereyim.
+
+347
+00:30:28,890 --> 00:30:30,890
+Oradaki bir primary key'i aldım.
+
+348
+00:30:30,890 --> 00:30:37,890
+Ve en sonuna şu ifadeyi ekleyerek de diyorum ki bu tabloda bir silme yapıldığında on the let cascade ile
+
+349
+00:30:37,890 --> 00:30:42,890
+bunu eklediği zaman buradaki silinme de artık burada da değer silinebilirsin.
+
+350
+00:30:42,890 --> 00:30:45,890
+Yoksa bunu yazmasam burada bir silmeye izin vermez.
+
+351
+00:30:45,890 --> 00:30:49,890
+Der ki bu başka bir tabloda da geçiyor bu sütün.
+
+352
+00:30:49,890 --> 00:30:50,890
+Bana hata verir.
+
+353
+00:30:50,890 --> 00:30:57,890
+Ama bunu yazdığım takdirde artık ben burada bir silme yaptığımda sıkıntısı bir şekilde buradaki kayıtları da silebilir.
+
+354
+00:30:57,890 --> 00:31:04,890
+Bu sütün sütün sütün sütün sütün sütün sütün sütün sütün sütün sütün sütün sütün sütün sütün sütün
+
+355
+00:31:04,890 --> 00:31:07,890
+Sıkıntısı bir şekilde buradaki kayıtları da silebilirim.
+
+356
+00:31:07,890 --> 00:31:10,890
+O ilişki tablosunu da silebiliyorum.
+
+357
+00:31:10,890 --> 00:31:20,220
+Sonrasında ESSM dediğiyle ilgili de aslında onunla da aynı şeyi istiyor.
+
+358
+00:31:20,220 --> 00:31:27,220
+Diyor ki şuradaki diyor senin oluşturduğun ilişki tablosunun ESSM'i de
+
+359
+00:31:27,220 --> 00:31:31,220
+hani team tablosunun t number'ını almıştı.
+
+360
+00:31:31,220 --> 00:31:33,220
+ESSM dediğinde diyor.
+
+361
+00:31:33,220 --> 00:31:37,220
+Geçsin employunun SSL'ini alsın ona referans etsin.
+
+362
+00:31:37,220 --> 00:31:40,220
+Onunla alakalı bir sütun burası.
+
+363
+00:31:40,220 --> 00:31:48,220
+Onun da yine yazımı yukarıdakiyle aynı şekilde constraint dedim bir isim verdim.
+
+364
+00:31:48,220 --> 00:31:51,220
+Daha sonra bunun forenk olduğunu söylüyorum.
+
+365
+00:31:51,220 --> 00:31:53,220
+Tablonun sütünün adını da belirtiyorum.
+
+366
+00:31:53,220 --> 00:31:59,220
+Daha sonra references dedim ve hangi tablonun hangi sütünle referans veriyorum.
+
+367
+00:32:00,220 --> 00:32:02,220
+Neyi işaret ettiğimi burada söyledim.
+
+368
+00:32:02,220 --> 00:32:04,220
+Bundan da aynı özelliği istemiş.
+
+369
+00:32:04,220 --> 00:32:07,220
+Burada employunun satırı sildiğimde bu da silensin dediğine göre.
+
+370
+00:32:07,220 --> 00:32:11,220
+On the left cascade ile bunu da yazmış oluyor.
+
+371
+00:32:11,220 --> 00:32:14,220
+Diğer kısıtım da bu şekildeydi.
+
+372
+00:32:14,220 --> 00:32:18,220
+Ve son olarak bir kısıt daha istemiş.
+
+373
+00:32:18,220 --> 00:32:25,220
+Bir çalışan diyor bir takım da 12 haftadan uzun süre oynayamaz.
+
+374
+00:32:25,220 --> 00:32:29,220
+Bir çalışan bir takım da 12 haftadan uzun oynayamaz.
+
+375
+00:32:29,220 --> 00:32:34,220
+Çalışanların oynama süreleri de playtime sütununda yer alıyordu.
+
+376
+00:32:34,220 --> 00:32:38,220
+Burada iki haneli bunlar hafta olarak geçiyor.
+
+377
+00:32:38,220 --> 00:32:42,220
+Şimdi bir çalışalım 12 haftadan uzun oynamaması ne demek?
+
+378
+00:32:42,220 --> 00:32:45,220
+Buranın 13'den küçük olması demek playtime kısmı.
+
+379
+00:32:45,220 --> 00:32:50,220
+Bunun da kontrolünü yapacak şöyle kısıtı nasıl belirledik tanımlıyorduk.
+
+380
+00:32:50,220 --> 00:32:52,220
+Constraint dedim.
+
+381
+00:32:52,220 --> 00:32:54,220
+Buna bir isim verdim.
+
+382
+00:32:54,220 --> 00:33:00,220
+Daha sonra check keyword'ını kullandım ve playtime 13'den küçük olacak dedim.
+
+383
+00:33:00,220 --> 00:33:04,220
+Bunu da bu şekilde yazmış oluyorum.
+
+384
+00:33:04,220 --> 00:33:07,220
+Ve bütün bunları yazıp çalıştırdığımda ne oluyor?
+
+385
+00:33:07,220 --> 00:33:13,220
+Bu tablom istenen kısıtlara göre doğru bir şekilde oluşmuş oluyor.
+
+386
+00:33:13,220 --> 00:33:20,970
+Evet şu şekilde tablolarımız oluşmuş oldu.
+
+387
+00:33:20,970 --> 00:33:22,970
+Var mı kafanıza takılan bir şey?
+
+388
+00:33:22,970 --> 00:33:27,470
+Hocam bir şeyle ilgili bir şey sormak istiyorum.
+
+389
+00:33:27,470 --> 00:33:33,470
+OnCascade Delay ile ilgili orayı eklemediğimiz zaman hata vereceğini söylediniz.
+
+390
+00:33:33,470 --> 00:33:37,470
+Biz foreign key olarak eklediğimizde hangisini silersek hata alırız.
+
+391
+00:33:37,470 --> 00:33:42,470
+Yani ana tablodakini silince mi foreign key hata veriyor?
+
+392
+00:33:42,470 --> 00:33:46,470
+Yoksa foreign key'deki bir elemanı silince mi diğeri hata veriyor?
+
+393
+00:33:46,470 --> 00:33:51,470
+Şimdi ana tablodakini sildiğin zaman dolayı olarak öbürü ilişki tablosu oldu.
+
+394
+00:33:51,470 --> 00:33:53,470
+O hata verecek yani sildirtmeyecek sana.
+
+395
+00:33:53,470 --> 00:33:56,470
+Ama ilişki tablosundakini silebilirsin.
+
+396
+00:33:56,470 --> 00:33:58,470
+Çünkü orada özgürsün.
+
+397
+00:33:58,470 --> 00:34:01,470
+Ana tabloya bir şey vermiyorsun orada.
+
+398
+00:34:01,470 --> 00:34:03,470
+Silemiyoruz yani.
+
+399
+00:34:03,470 --> 00:34:05,470
+Hata veriyor direkt silemiyoruz.
+
+400
+00:34:05,470 --> 00:34:08,469
+Ana tabloyu silemezsin eğer on the led kasketi eklemezse.
+
+401
+00:34:08,469 --> 00:34:11,469
+Ana tabludan o kayıt silinmez.
+
+402
+00:34:11,469 --> 00:34:14,469
+Yani ben şey gibi düşündüm.
+
+403
+00:34:14,469 --> 00:34:16,469
+Silebiliyoruz ama silince boşluğa düşüyor.
+
+404
+00:34:16,469 --> 00:34:17,469
+Hatalı çalışıyor.
+
+405
+00:34:17,469 --> 00:34:18,469
+Ama çalışıyor.
+
+406
+00:34:18,469 --> 00:34:22,070
+Şimdi selam.
+
+407
+00:34:22,070 --> 00:34:25,070
+Yani bir takımın ismi var.
+
+408
+00:34:25,070 --> 00:34:26,070
+Takımında 10 tane oyuncusu var.
+
+409
+00:34:26,070 --> 00:34:28,070
+Ben takımı siliyorum.
+
+410
+00:34:28,070 --> 00:34:35,070
+Takım oyuncuları tablosundan oyuncuları teker teker silmediğim için yani on the led kasketi yapmadığım için onlar orada boşlukta kaldı.
+
+411
+00:34:35,070 --> 00:34:39,070
+Ama sonuçta takım oyuncuları orada hala duruyor.
+
+412
+00:34:39,070 --> 00:34:41,070
+Takımı da silebildim.
+
+413
+00:34:41,070 --> 00:34:46,070
+Şimdi mesela kampanyanın üzerinden anlatayım onu.
+
+414
+00:34:46,070 --> 00:34:51,070
+Burada bizim hep kullandığımız works on tablosu mesela ilişki tablosu.
+
+415
+00:34:51,070 --> 00:34:56,070
+Şimdi yaptığımız bu takım, employee vs. şeyin olayı aslında burada projekte employee arasında vardı ya.
+
+416
+00:34:56,070 --> 00:34:58,070
+Burada proje isimleri var.
+
+417
+00:34:58,070 --> 00:35:00,070
+Burada işte employee isimleri var.
+
+418
+00:35:00,070 --> 00:35:03,070
+Burada hangi employee hangi projede çalışmış.
+
+419
+00:35:03,070 --> 00:35:13,070
+Şimdi mesela bu ilişki tablosunda benim herhangi bir kaydı silmem, kayıt eklemem bir sıkıntı çıkarmayacaktır.
+
+420
+00:35:13,070 --> 00:35:21,070
+Ama gidip ben buradan bir projeyi uçurduğum zaman burada o numaralı bir proje kalmamış oluyor.
+
+421
+00:35:21,070 --> 00:35:26,070
+Hani boşluğa düşmediği, ben ona referans verdiğim zaman buna bana izin vermeyecek.
+
+422
+00:35:26,070 --> 00:35:28,070
+Bunu yapmama izin vermemesi gerekiyor.
+
+423
+00:35:28,070 --> 00:35:30,070
+Yani istediğim gibi veri tabanı bozma.
+
+424
+00:35:30,070 --> 00:35:32,070
+Bana bu işlemi yaptırmaz en başından.
+
+425
+00:35:32,070 --> 00:35:33,070
+Tamam.
+
+426
+00:35:33,070 --> 00:35:36,860
+O kıstık koyduğum için bu şekilde.
+
+427
+00:35:36,860 --> 00:35:41,719
+Evet bu örneğimizde de ne yaptık?
+
+428
+00:35:41,719 --> 00:35:44,719
+Forenky oluşturmayı gördük aslında.
+
+429
+00:35:44,719 --> 00:35:46,719
+Forenky'lerimizi.
+
+430
+00:35:46,719 --> 00:35:48,719
+Şimdi primary'leri hatırlayalım tekrar.
+
+431
+00:35:48,719 --> 00:35:53,719
+Primary 2 oluştururken gayet constraint dedik.
+
+432
+00:35:53,719 --> 00:35:54,719
+İsim verdik.
+
+433
+00:35:54,719 --> 00:35:55,719
+Primary 2 dedik.
+
+434
+00:35:55,719 --> 00:36:01,719
+Ama Forenky oluştururken sonuçta başka bir tabloyu referans ettiğinden dolayı ne yaptım?
+
+435
+00:36:01,719 --> 00:36:03,719
+Onu nereye referans ettiğini yazdım.
+
+436
+00:36:03,719 --> 00:36:05,719
+O constraint'i oluşturdum.
+
+437
+00:36:05,719 --> 00:36:06,719
+Forenky'i dedim.
+
+438
+00:36:06,719 --> 00:36:12,719
+Sonra referans edip hangi tablonun hangi sütumu oluşturduğumu orada belirtmem gerekti.
+
+439
+00:36:12,719 --> 00:36:18,579
+Şimdi Forenky'i oluşturmanın da diğer yöntemleri neler?
+
+440
+00:36:18,579 --> 00:36:24,579
+Biz burada direkt constraint deyip isim verip en böyle uzun uzun en sağlam versiyonunu gördük.
+
+441
+00:36:24,579 --> 00:36:31,579
+Ama kısaca mesela bir tablo oluştururken create table deyip tablonun adını yazdıktan sonra
+
+442
+00:36:31,579 --> 00:36:37,579
+o sütunun adını verip tipini verip daha sonra references deyip de
+
+443
+00:36:37,579 --> 00:36:40,579
+aslında bir Forenky tanım yapmış oluyorum bu şekilde.
+
+444
+00:36:40,579 --> 00:36:46,579
+Reference deyip bu sütunun hangi tablonun hangi sütunla işaret ettiğini söylediğimde de
+
+445
+00:36:46,579 --> 00:36:48,579
+bu tanımlamayı yapmış oluyorum.
+
+446
+00:36:48,579 --> 00:36:56,579
+Burada da aynı şekilde diğer bir yöntemde de diyelim satırı yazdık, tipini belirledik sütunu yazdık.
+
+447
+00:36:56,579 --> 00:37:02,579
+Daha sonra altına geçip Forenky yukarıda belirttiğim sütunun adı
+
+448
+00:37:02,579 --> 00:37:08,579
+referans versin hangi tablonun hangi sütunu diye burada da belirtebiliyorum.
+
+449
+00:37:08,579 --> 00:37:16,579
+Böyle yazdığımızdaki olay ne demiştik hani şu versiyonda constraint yazdıktan hemen sonra bir isim veriyordum
+
+450
+00:37:16,579 --> 00:37:20,579
+daha sonrasında verdiğim isim üzerinden onu değiştirip slip kaldırabiliyordum.
+
+451
+00:37:20,579 --> 00:37:26,579
+Burada ama ne yapıyordu o kendi eğer ben bir isim vermeden oluşturmuşsam bu keyleri
+
+452
+00:37:26,579 --> 00:37:31,579
+o kendi otomatik olarak bir isimlendirme yapıyordu bir default isimlendirme yapıyordu.
+
+453
+00:37:32,579 --> 00:37:42,579
+Primary key'de direkt tablo adı altı dire fk'de şimdi pardon primary versiyonu direkt tablonun adı altı dire pk olarak veriyor.
+
+454
+00:37:42,579 --> 00:37:49,579
+Şimdi de tablonun adı altı dire sütunun adı ve fk olarak belirtmem gerekiyor.
+
+455
+00:37:49,579 --> 00:37:55,579
+Mesela ben burada oluşturdum bu Forenky'leri
+
+456
+00:37:55,579 --> 00:38:01,579
+altır table silmek istedim diyelim burada oluşturduğum bu keyi altır table diyorum
+
+457
+00:38:01,579 --> 00:38:10,579
+tablomun adını yazdım ve o kısıtı kaldır bu tablonun tino'su forenky'de
+
+458
+00:38:10,579 --> 00:38:16,579
+tino dedim altı dire dedim fk dedi böyle yazdım takdirde bu anlıyor ki
+
+459
+00:38:16,579 --> 00:38:22,579
+benim bu tablomdaki o sütun bir forenky ve ben onun üzerinde bir işlem yapmak istiyorum.
+
+460
+00:38:22,579 --> 00:38:33,429
+Son olarak da tabloları oluşturduk diyelim create table'ları yazdık açtık parantezi kapattık parantezi içinde doldurduk bütün sütunları
+
+461
+00:38:33,429 --> 00:38:40,429
+hallettik bitti ama daha sonradan bir değişiklik yapmak istiyoruz daha sonradan bir kısıt bir key eklemek istiyoruz.
+
+462
+00:38:40,429 --> 00:38:47,429
+veya şöyle bir durumda oluşabilir tabloları biz tabi sonuçta altı altı yazıyoruz işte create table create table.
+
+463
+00:38:47,429 --> 00:38:55,429
+Ben bir tabloyu oluşturduğum zaman bu tablo gidecek başka bir tabloyu tam referans verecek oradaki sütun ama da
+
+464
+00:38:55,429 --> 00:39:01,429
+öbür tabloyu oluşturmamış olabilirim sonuçta bu işlemler sıra sıra ilerliyor derleci bu sıra sıra okuyor.
+
+465
+00:39:01,429 --> 00:39:07,429
+Eğer ben daha referans vereceğim tabloyu oluşturmamışsam o zaman önce bir sıra sıra tablolarımı oluştururum
+
+466
+00:39:07,429 --> 00:39:14,429
+sonra gelirim burada altır table komutunu kullanarak kısıt ekleme işlemini gerçekleştiriyorum.
+
+467
+00:39:14,429 --> 00:39:22,429
+Yani tablo oluşturmalarım bitmiştir artık sonra derim ki evet şimdi sıra sıra burada işte ilişkilerini belirleyebilirim keylerini belirleyebilirim.
+
+468
+00:39:22,429 --> 00:39:34,429
+O zaman da bu altır table komutuyla ne yapabiliyorum altır table tablonun adı add constraint o vereceğim kısıtın ismi işte
+
+469
+00:39:34,429 --> 00:39:48,349
+for enki hangi sütunu olacağı ve referansta da nereyi hangi tablonun hangi sütununu referans edeceğine bu şekilde kısıtla belirtmiş oluyorum.
+
+470
+00:39:48,349 --> 00:39:53,349
+Evet for enkiyle de yöntemlerimiz bu şekildeydi.
+
+471
+00:39:53,349 --> 00:40:03,349
+Evet bu dersimizde kısıtlarla ilgili anlatacağımız konuşacağımız bu primary ve for enki oluşturma adımlarımızdı.
+
+472
+00:40:03,349 --> 00:40:17,300
+Sormak istediğiniz bir şey var mı? Ben yine sorayım buradan direkt tetikleyici de eklenebiliyor mu? Önceki gibi satırın sonuna direkt tetikleyiciyi ekleyebiliyor muyuz?
+
+473
+00:40:17,300 --> 00:40:33,340
+Evet şimdi kısıtlarla ilgili bahsedeceğimiz kısım bu kadardı.
+
+474
+00:40:33,340 --> 00:40:40,869
+View oluşturmayı göreceğiz. View ve sekvastan bahsedeceğiz demiştik.
+
+475
+00:40:40,869 --> 00:40:50,869
+View bizim aslında bir sorgunun sonucuna verdiğimiz bir sorguya verdiğimiz isim gibi de düşünebilirsiniz.
+
+476
+00:40:50,869 --> 00:40:58,869
+Şimdi biz select from where ile işte bazı sorgular yazıyoruz ekrana istediğimiz bir şey döndürmesini istediğinde bunları yazıyoruz çağırıyoruz.
+
+477
+00:40:58,869 --> 00:41:06,869
+Bazen sorgularımız uzun sürüyor değil mi? Ya da işte yazması veya sürekli yazısı kısa kullandığımız sorgularımız olabiliyor.
+
+478
+00:41:06,869 --> 00:41:20,869
+Bunları bir view adı altında kaydedersek bir creative view deyip işte as şu sorguyu bu creative view'a kaydedeyim taktirde biz sanal bir tablo oluşturuyoruz aslında.
+
+479
+00:41:20,869 --> 00:41:34,869
+Yani bu sorguya kaba tabiyle bir isim vermiş oluyoruz ve daha sonrasında da biz o sorguyu her defasında sürekli tekrar tekrar yazmak yerine sadece şu view'u çağırdığımda
+
+480
+00:41:34,869 --> 00:41:39,869
+O biliyor ki ben şu sorgudan bahsediyorum ve ekrana hemen onu getirmiş oluyor.
+
+481
+00:41:39,869 --> 00:41:42,869
+Size örnek üzerinde gösterelim daha anlaşılır olsun.
+
+482
+00:41:42,869 --> 00:41:48,869
+Şimdi sorumuz klasik işte bizden istediği bir sorgu var.
+
+483
+00:41:48,869 --> 00:41:52,869
+Maaş 20.000 ile 40.000 arasında olan çalışanları istiyor benden.
+
+484
+00:41:52,869 --> 00:41:56,869
+Bu nerede biliyordum ben? Maaş bilgisi.
+
+485
+00:41:56,869 --> 00:42:02,869
+Şurada göstereyim. Employee tablosundaydı bütün maaş bilgileri.
+
+486
+00:42:02,869 --> 00:42:08,869
+F name, last name ve şuradaki salari kısmında çalışanların adı soyadı ve maaşı Employee tablosundaydı.
+
+487
+00:42:08,869 --> 00:42:14,869
+Benden de şimdi maaşı şuna şunun arasında olanların ismini ve maaşını istemiş.
+
+488
+00:42:14,869 --> 00:42:18,869
+Sorgu şuradan aslında basitçi görünüyor.
+
+489
+00:42:18,869 --> 00:42:26,869
+Employee tablosuna gideceğim. Oradan salarinin between 20.000 ile 40.000 olarak koşulumu belirleyeceğim.
+
+490
+00:42:26,869 --> 00:42:32,869
+Ve bu koşulu sağlayan kayıtların F name, last name ve salarisini almış olacağım.
+
+491
+00:42:32,869 --> 00:42:39,869
+İşte ben bunu bir view olarak oluşturduğumda direkt şöyle bir işlem yapıyorum.
+
+492
+00:42:39,869 --> 00:42:42,869
+Create View diyorum. O view'e bir tane isim veriyorum.
+
+493
+00:42:42,869 --> 00:42:44,869
+İstediğiniz bir isim verebilirsiniz.
+
+494
+00:42:45,869 --> 00:42:48,869
+As diyorum ve bula bula sorgu mu yazıyorum.
+
+495
+00:42:48,869 --> 00:42:52,869
+Daha sonrasında bu sorgunun sonucunu dedik bu view'e attık.
+
+496
+00:42:52,869 --> 00:43:04,869
+Bunu çağırmak istediğimde ise direkt şöyle basitçe select yıldız from maaşlar dediğimde ekrana şu sorgunun ne döndürüyorsa onu bana getiriyor.
+
+497
+00:43:04,869 --> 00:43:10,869
+Burada tabi ki ben Employee tablosunda bir takım değişiklikler yapabilirim.
+
+498
+00:43:10,869 --> 00:43:16,869
+Bu kişilerin maaşını güncellerim vesaire. O zaman view de otomatik olarak güncellenecek.
+
+499
+00:43:16,869 --> 00:43:19,869
+Yani dinamik bir olay buradaki.
+
+500
+00:43:19,869 --> 00:43:25,869
+Tamamen o sorguya bağlı olarak buradaki değişiklik ne olursa o da otomatikman kendini değiştiriyor.
+
+501
+00:43:25,869 --> 00:43:33,869
+View'un Employee'yi de bu kadar basit bir şekilde isimlendirmiş oluyoruz, sorgumuzu diyebiliyoruz.
+
+502
+00:43:33,869 --> 00:43:42,530
+Sonra view'dan bahsettik. Bir de sequence oluşturma olayımız var.
+
+503
+00:43:42,530 --> 00:43:48,530
+Sequence'de de create sequence komutuyla ilerliyoruz.
+
+504
+00:43:48,530 --> 00:43:55,530
+View oluştururken create view demiştik. Sequence'de de create sequence diyoruz ve ona bir isim veriyoruz.
+
+505
+00:43:55,530 --> 00:44:02,530
+Sequence'ın olay ne? Sequence bazı durumlarda sayısal değerler üretmek isteriz.
+
+506
+00:44:02,530 --> 00:44:08,530
+Ne bileyim birer birer arasında, ikişer ikişer arasında otomatik id'ler atamak isteriz belki veri tabanında.
+
+507
+00:44:08,530 --> 00:44:15,530
+O kendi otomatik bir şekilde gelecek bir sonraki kaydın değerini bulsun dediğimizde orada bir sequence oluşturabiliriz.
+
+508
+00:44:15,530 --> 00:44:23,530
+İstediğimiz değerleri içeri istediğimiz kadar artan, istediğimiz değerden başlayıp istediğimiz değerden biten ona bazı özellikler verebiliyoruz.
+
+509
+00:44:23,530 --> 00:44:27,530
+Mesela şu örneği anlatayım sonra buraya geri döneyim.
+
+510
+00:44:27,530 --> 00:44:33,530
+Burada demişim ki 9'dan başlayıp 99'a kadar birer birer artan bir sequence yaz.
+
+511
+00:44:34,530 --> 00:44:41,530
+Şimdi istediğim numarik bir dizi aslında 9, 10, 11, 12, 99'a kadar gitsin.
+
+512
+00:44:41,530 --> 00:44:46,530
+Bunu yapmak için şu komutu kullanıyorum. Create Sequence deyip ona bir tane isim veriyorum.
+
+513
+00:44:46,530 --> 00:44:51,530
+Bu istediğiniz bir isim verebilirsiniz. Sonra istediğim özelliklerine tek tek yazıyorum.
+
+514
+00:44:51,530 --> 00:44:55,530
+Mesela işte 9'dan başladığı için min value 9 olsun.
+
+515
+00:44:55,530 --> 00:45:00,530
+99'a kadar dedim max value 99. Ne kadarsın? Birer birer artsın.
+
+516
+00:45:00,530 --> 00:45:05,530
+Burada işte 2'şer, 3'şer, 3'şer de diyorsam increment bayı o kadar yazabilirim.
+
+517
+00:45:05,530 --> 00:45:10,530
+Diğer özellikleri işte şundan başlasın diyebilirim.
+
+518
+00:45:10,530 --> 00:45:14,530
+Max value veya no max value de yazabilirim.
+
+519
+00:45:14,530 --> 00:45:18,530
+İşte hiçbir son devre olmasın veya cycle yapabilirim.
+
+520
+00:45:18,530 --> 00:45:23,530
+Cycle adı ne var? Cycle yazdığım taktirde bittiği anda tekrar başa dönsün.
+
+521
+00:45:23,530 --> 00:45:28,530
+Eğer böyle bir özellik istemiyorsam da yine no cycle yazabiliyorum.
+
+522
+00:45:28,530 --> 00:45:35,530
+Böyle create sequence'e bazı özelliklerine göre o numeri kısa dizisinde oluşturabiliyorum.
+
+523
+00:45:35,530 --> 00:45:41,530
+Bu sequence'ın hakkında bu bilgiyi almak için de gelip select from sec yazdım.
+
+524
+00:45:41,530 --> 00:45:44,530
+Burada ben sec diye bir isim vermiştim.
+
+525
+00:45:44,530 --> 00:45:48,530
+Bunu yazdığım taktirde bana hemen onunla alakalı bilgiyi böyle tek bir satırda veriyor.
+
+526
+00:45:48,530 --> 00:45:50,530
+Başlangıcı bu.
+
+527
+00:45:50,530 --> 00:45:53,530
+Şu anki last value dediğimizde şu anki değeri bu.
+
+528
+00:45:53,530 --> 00:45:55,530
+9'dan başladığı için 9.
+
+529
+00:45:55,530 --> 00:45:59,530
+Sequence'i her bir çağırdığımda bunun değeri biri biri artacaktır.
+
+530
+00:45:59,530 --> 00:46:02,530
+İşte şundan başlasın, şundan bitsin vesaire.
+
+531
+00:46:02,530 --> 00:46:05,530
+Bu tarz özellikleri oluyor.
+
+532
+00:46:05,530 --> 00:46:10,530
+Sequence'i peki nasıl tabloya atıyorum, tabloya ekliyorum?
+
+533
+00:46:10,530 --> 00:46:15,530
+Burada diyelim ki employee tablosuna yeni bir kayıt ekleyeceğim.
+
+534
+00:46:15,530 --> 00:46:19,530
+İşte insert into dedim, employee dedim.
+
+535
+00:46:19,530 --> 00:46:23,530
+Sadece Fnem ve SSN kısımlarına diyelim ki bir ekleme yapıyorum.
+
+536
+00:46:23,530 --> 00:46:29,530
+Value'su dedim, burada ismi verdiğim yanında şu ifadeyi kullanarak
+
+537
+00:46:29,530 --> 00:46:32,530
+Sequence'ın bir sonraki delilini alıyoruz.
+
+538
+00:46:32,530 --> 00:46:34,530
+Yani next var.
+
+539
+00:46:34,530 --> 00:46:40,530
+Değil, paranızı açıp o Sequence'e verdiğim ismi yazdığımda artık burası 9 muydu?
+
+540
+00:46:40,530 --> 00:46:42,530
+Aslında burası şu an 9 demek.
+
+541
+00:46:42,530 --> 00:46:48,530
+Bu kayıttan bir tane daha insert yapıp John'da James, next var dediğimde
+
+542
+00:46:48,530 --> 00:46:52,530
+artık o next var ikinci çağırışımda ne olacak bunun değeri?
+
+543
+00:46:52,530 --> 00:46:54,530
+Artık 9 delil 10 olacak.
+
+544
+00:46:54,530 --> 00:46:59,530
+Şu next var'ı her çağırdığımda bu Sequence'in değeri bir bir artıyor.
+
+545
+00:46:59,530 --> 00:47:04,530
+Bakın şunu dediğim takdirde select, next var ve tırnak işaretleşimini istek.
+
+546
+00:47:04,530 --> 00:47:08,530
+İşte onun ismini verdiğim o Sequence oluşturduğum Sequence'in ismini verdiğimde
+
+547
+00:47:08,530 --> 00:47:12,530
+Bunu her çağırdığımda sıra sıra bir artış ola next var.
+
+548
+00:47:12,530 --> 00:47:17,530
+Her çağırıldığında o artık ben birer birer mi dedim, ikişer ikişer mi dedim
+
+549
+00:47:17,530 --> 00:47:24,530
+nasıl bir ifade kullanmışsam ona göre bu numelik sayı dizisinin artışını sağlamış oluyor.
+
+550
+00:47:24,530 --> 00:47:31,530
+Bu da dediğimiz gibi tablolara belki otomatik bir eleman ekleme numara atamamız gerektiğinde
+
+551
+00:47:31,530 --> 00:47:34,530
+işimize yarayacak bir şey olabiliyor Sequence'lerde.
+
+552
+00:47:34,530 --> 00:47:41,380
+Evet View ve Sequence'lar basitçe bu şekilde oluşturuluyor dedik.
+
+553
+00:47:41,380 --> 00:47:43,380
+Her ikisinde de tekrar edelim.
+
+554
+00:47:43,380 --> 00:47:50,380
+Sequence oluştururken Create Sequence diyoruz ve istediğimiz özellikleri yazıyoruz.
+
+555
+00:47:50,380 --> 00:47:53,380
+Create Sequence dediğim özellikleri yazdım.
+
+556
+00:47:53,380 --> 00:47:55,380
+View'e tekrar hatırlayalım.
+
+557
+00:47:55,380 --> 00:48:02,380
+View'de de Create View deyip ona bir isim verip as kullanıp sorguyu yazıyordum
+
+558
+00:48:02,380 --> 00:48:05,380
+ve bu şekilde de View oluşturmuş oluyordu.
+
+559
+00:48:05,380 --> 00:48:09,380
+Bunlar da bize pratiklik kazandıracak özellikleri bir taban.
+
+560
+00:48:09,380 --> 00:48:21,030
+Şimdi bu hafta eşleyeceğimiz diğer bir konuda tablolardaki kesişim, birleşim ve farklar.
+
+561
+00:48:21,030 --> 00:48:25,030
+Union, Intersect ve Accept dediğimiz kısımlar.
+
+562
+00:48:25,030 --> 00:48:31,030
+Şimdi biz bazen tablolarımızda şöyle sorgular, şöyle sonuçlar isteyebiliriz.
+
+563
+00:48:31,030 --> 00:48:37,030
+İşte şurada çalışan ama atıyorum şurada oturmayan kişilere,
+
+564
+00:48:37,030 --> 00:48:42,030
+işte hem şunu yapan, hem şöyle akrabası olan kişilere vesaire.
+
+565
+00:48:42,030 --> 00:48:47,030
+Bazı kesişimler, birleşimler istediğimiz durumlar olabilir.
+
+566
+00:48:47,030 --> 00:48:49,030
+Bunları listelememiz gerekebilir.
+
+567
+00:48:49,030 --> 00:48:54,030
+Bu durumlarda sorgular üzerinde bazı işlemler yapabiliyoruz.
+
+568
+00:48:54,030 --> 00:49:01,030
+Bunlar aslında bu kümeler konusunu hatırlarsınız ilkokul, ortaokul'dan beri gördüğünüz.
+
+569
+00:49:01,030 --> 00:49:11,030
+Kümelerdeki gibi mesela birleşim işlemi, her iki sorgunun tüm kayıt değerlerini aldığımda YIN YIN demek oluyor.
+
+570
+00:49:11,030 --> 00:49:18,030
+İşte iki tane sorgunun hem şu hem şu ortak bir şey alıyorsam Intersect'le oraya kesişimi yapıyorum.
+
+571
+00:49:18,030 --> 00:49:22,030
+Veya şunu şöyle olan ama şu su olmayan atıyorum.
+
+572
+00:49:22,030 --> 00:49:27,030
+Böyle bir şey dediğimde de orada bir fark işlemi yapmış oluyorum, bir accept işlemi yapmış oluyorum.
+
+573
+00:49:27,030 --> 00:49:31,030
+Mesela bunu örnek üzerinden görelim o zaman daha iyi oturur.
+
+574
+00:49:31,030 --> 00:49:40,030
+Şimdi desen ki Operating System isimli projede ve software departmanda çalışanlar.
+
+575
+00:49:40,030 --> 00:49:52,030
+İki farklı şey istiyorum. Bir çalışanın adımı soyadın istiyorum ama bu kişi hem operating system projesinde çalışsın hem de software departmanda çalışsın.
+
+576
+00:49:52,030 --> 00:50:01,030
+Şimdi geçen hafta da bu tarz örnekleri yapmıştık ama hatırlayalım nasıl bulacaktım.
+
+577
+00:50:01,030 --> 00:50:05,030
+Önce yapacağım şey aslında temel olarak şu.
+
+578
+00:50:05,030 --> 00:50:12,030
+Burada benden istediği bakıyorum iki tane sorgu var aslında iki farklı sorgu. Bunları ortak bir kesişimini istiyor.
+
+579
+00:50:12,030 --> 00:50:15,030
+Aslında ayrı ayrı yazacağım iki tane sorgu var.
+
+580
+00:50:15,030 --> 00:50:21,030
+Daha sonra bunları kesiştireceğim. Her bir sorgu sonucunda dönen kayıtların kesişim kümesini alacak.
+
+581
+00:50:21,030 --> 00:50:26,030
+Çünkü hem bu projede çalışan bir de bu departmanda çalışanları istiyor.
+
+582
+00:50:26,030 --> 00:50:30,030
+Mesela Operating System projesine gelelim.
+
+583
+00:50:30,030 --> 00:50:38,820
+Bu projede çalışanların bilgisine ben nasıl ulaşıyordum? Bu projede çalışanların ad soyadına nereden geliyordum?
+
+584
+00:50:38,820 --> 00:50:45,820
+Buraya geliyordum project tablosuna. Buradan buluyordum PName'i Operating System olanlar diyordum.
+
+585
+00:50:45,820 --> 00:50:55,820
+Buradan PName'den direkt adamın hangi projede çalışıyor oradan gideyim employee'da onu bulayım böyle bir şey yapmam mümkün değil.
+
+586
+00:50:55,820 --> 00:51:03,820
+Niye? Çünkü PName'de project tablosunda sadece PName var ve burada bunu eşleştirebileceğim bir alan yok.
+
+587
+00:51:03,820 --> 00:51:08,820
+Neydi benim kullanmam gereken tablo? Work Zone tablosuydu ilişki tablosu.
+
+588
+00:51:08,820 --> 00:51:17,820
+Buradaki proje adında o projenin numarasını buluyordum. O numarayı o PNumber'ı da gelip burada aratıyordu.
+
+589
+00:51:17,820 --> 00:51:22,820
+O PNumber demek bu ne demek? Bu kimlik numaralı kişi bu numaralı projede çalışıyor.
+
+590
+00:51:22,820 --> 00:51:28,820
+Orada kişinin kimlik numarasını bulup oradan buraya gidiyordum. Buradaki SSN'iyle eşliyordum.
+
+591
+00:51:28,820 --> 00:51:36,820
+Daha sonra ne olmuş oluyordu? O çalışanım adını soyadını bütün verilerini erişmiş ulaşmış olabiliyordu.
+
+592
+00:51:36,820 --> 00:51:43,820
+Şimdi ben Operating System projesinde çalışanların ad soyadını o zaman nasıl bulacağım?
+
+593
+00:51:43,820 --> 00:51:50,820
+Bir kere 3 tane tablo kullanacağım. Project'ı kullanacağım, Work Zone'ı kullanacağım bir de employee'ı kullanacağım.
+
+594
+00:51:51,820 --> 00:51:56,820
+Hemen gelelim sorguya bakalım. Project'ı dedim, Work Zone'ı dedim, Employ'ı dedim.
+
+595
+00:51:56,820 --> 00:52:03,820
+Koşulum ne? PName'i Operating System olanlar ve ne yapıyorduk?
+
+596
+00:52:03,820 --> 00:52:13,820
+Şuradaki alan eşlemeleri. PNumber'ı PNoy'la eşliyorum. Daha sonra bulduğum kayıttan da ESSN'i SSN'le eşliyorum.
+
+597
+00:52:13,820 --> 00:52:22,820
+Böyle tabloları ne yapıyorum? Şu alanlar üzerinden join'lemiş bu alanları eşlenik kayıtları bulup çekip alıyorum.
+
+598
+00:52:22,820 --> 00:52:31,820
+Şimdi bu yazdığım sorgu bana ne getirecekti? Operating System isimli projede çalışanların bilgisini getirecekti.
+
+599
+00:52:31,820 --> 00:52:36,820
+Benden bir de ne istiyor? Software departmanında çalışanları.
+
+600
+00:52:36,820 --> 00:52:44,820
+O da nasıl bir başka, ikinci bir farklı sorgu aslında. Software departmanında çalışanı nasıl buluyordu?
+
+601
+00:52:44,820 --> 00:52:53,820
+Geliyordum ona da. Şimdi employee tablosunda insanların departmanıyla alakalı sadece Dino bilgisi var.
+
+602
+00:52:53,820 --> 00:52:57,820
+Benimse bana verilmiş bir software departman ismi var.
+
+603
+00:52:57,820 --> 00:53:04,820
+Bunu departman tablosuna gidiyorum o zaman. Diyorum ki software ismi departmanın numarası kaç?
+
+604
+00:53:04,820 --> 00:53:12,820
+6. Burada çünkü departman numaraları burada var. O zaman bu 6'yı ben gelip şuradaki Dino alanında ararım.
+
+605
+00:53:12,820 --> 00:53:18,820
+Onu bulduğum takdirde tamam dedim. Buradaki kişinin adı sayıdı bu. Bu departmanda çalışan bu.
+
+606
+00:53:18,820 --> 00:53:26,820
+O zaman şu iki tabloyu join'liyorum, birleştiriyorum. Hangi alanlar üzerinden birleştireceğim dediğimiz gibi Dino'lar üzerinden.
+
+607
+00:53:26,820 --> 00:53:31,820
+Buradaki Dino ile buradaki Dino'lar üzerinden. Birleştireceğim bunları.
+
+608
+00:53:31,820 --> 00:53:41,820
+Ve Dname'i software olanın ne yapacağım istediği bilgilerini buradan numarasından buraya gelip burada eşleştirir.
+
+609
+00:53:41,820 --> 00:53:44,820
+Daha sonra adamın adına soyadına ulaşabiliyorum.
+
+610
+00:53:44,820 --> 00:53:51,820
+Bakın sorguma bakıyorum. From dedim departman, employee bu iki tabloyu kullanacaktım.
+
+611
+00:53:51,820 --> 00:53:56,820
+Ve Dname software olanlar software departmanda çalıştığını söylüyor çünkü.
+
+612
+00:53:56,820 --> 00:54:03,820
+Ve D number eşittir Dino diyerek hangi sütü üzerinden eşleyeceğimi de belirtiyorum.
+
+613
+00:54:03,820 --> 00:54:09,820
+Şimdi burada software ile çalışanları buldum. Burada Operating'de çalışanları buldum.
+
+614
+00:54:09,820 --> 00:54:12,820
+Burada bir kayıtlar listelendi. Burada ayrı kayıtlar listelendi.
+
+615
+00:54:12,820 --> 00:54:19,820
+Her ikisinde ortak olan kayıtları bulmak istediğimde işte ne yapıyorum? Intersect kullanıyorum.
+
+616
+00:54:19,820 --> 00:54:24,820
+Çünkü burada ben de V dedi, kesişim istiyorum dedi. Hem bu hem bu olsun.
+
+617
+00:54:24,820 --> 00:54:29,820
+O zaman bu sorgulu yazdım, intersect dedim ve diğer sorgumu yazdım.
+
+618
+00:54:29,820 --> 00:54:35,820
+Bunu çalıştırdığımda istenen koşuluşu sağlayan kayıtları bana döndürecek.
+
+619
+00:54:35,820 --> 00:54:40,820
+Bu kesişim ve birazdan yine o birleşimi farkını hep göreceğiz.
+
+620
+00:54:40,820 --> 00:54:49,820
+Değişen tek şey yine sorguları böyle ayrı ayrı yazıp aralarına kesişim mi istiyor, birleşim mi istiyor, fark mı istiyor, uygun key word'ı koymam gerekecek.
+
+621
+00:54:49,820 --> 00:54:52,820
+Burada önemli konu şu.
+
+622
+00:54:52,820 --> 00:55:00,820
+Select dedikten sonra her iki sorguda da aynı stunları, aynı isimli stunları istemem lazım.
+
+623
+00:55:00,820 --> 00:55:05,820
+Yani burada kalkıp Select Dname, bilmem ne bir şey deyip de buraya kalkıp Self Fname diyemem.
+
+624
+00:55:05,820 --> 00:55:13,820
+Çünkü o belli bu stunlar üzerinden bir kesişim arıyor. Aynı stunları ona seçtirmem lazım, almam gerekiyor o yüzden.
+
+625
+00:55:13,820 --> 00:55:17,820
+Buraların Select'den sonraki kısımların aynı olması lazım.
+
+626
+00:55:18,820 --> 00:55:25,820
+Bu kesişim işlemiydi dedik. Bir tablo, bir sorgu istiyor benden.
+
+627
+00:55:25,820 --> 00:55:27,820
+Diğer sorgu ile kesişimini buluyorum.
+
+628
+00:55:27,820 --> 00:55:37,820
+Aynı örneğin deseydi ki bana bu isimli projede çalışan veya software departmanında çalışanları.
+
+629
+00:55:37,820 --> 00:55:42,820
+Ve ya dediği zaman ne yapıyorduk? Birleşim işlemi oluyordu.
+
+630
+00:55:42,820 --> 00:55:46,820
+Şuradaki union'a giriyor ve ya kelimesi.
+
+631
+00:55:46,820 --> 00:55:50,820
+Her ikisini de istiyorum aslında. Bütün kayıtları istiyorum.
+
+632
+00:55:50,820 --> 00:55:56,820
+Bu olur veya bu olur demek birinci sorgunun kayıtlarını da getir, ikinci sorgunun kayıtlarını da bana getir demek.
+
+633
+00:55:56,820 --> 00:56:01,820
+Bunun içinde sorgularımız az önceki ile birebir aynı.
+
+634
+00:56:01,820 --> 00:56:08,820
+Operating sistemde çalışanlar burada, software departmanında çalışanlar burada.
+
+635
+00:56:08,820 --> 00:56:15,820
+Ve bütün hepsini istediğim için ne kullanıyorum? Union anahtar sözcüğünü kullanıyorum.
+
+636
+00:56:16,820 --> 00:56:21,820
+Operating te veya burada dediği için burada union'i kullanıyorum.
+
+637
+00:56:21,820 --> 00:56:37,159
+Ve dediği zaman intersect veya dediği zaman union kullanıyorum.
+
+638
+00:56:37,159 --> 00:56:40,159
+Peki bir de fark örneğini görelim.
+
+639
+00:56:40,159 --> 00:56:50,159
+Deseydik ki operating sistem projesinde çalışıp software departmanında çalışmayanların adımı soyadımı.
+
+640
+00:56:50,159 --> 00:56:57,159
+O zaman yapacağımız şey yine aynen sorguyu yazıp burada operating sistemde çalışanları bulup,
+
+641
+00:56:57,159 --> 00:57:02,159
+altında da softwarede çalışanları bulup bu sefer dışlama yapıyorum. Accept diyorum.
+
+642
+00:57:02,159 --> 00:57:04,159
+Bunun dışındakiler.
+
+643
+00:57:04,159 --> 00:57:08,590
+Hocam bir soru sorabilir miyim burada?
+
+644
+00:57:08,590 --> 00:57:10,590
+Tabii ki.
+
+645
+00:57:10,590 --> 00:57:14,590
+Aynı isim ve soyutma göre fitriliyor değil mi bunu?
+
+646
+00:57:14,590 --> 00:57:20,590
+Hani mesela aynı isim ve soyusunda iki çalışan varsa o zaman bir hata olabilir mi burada?
+
+647
+00:57:20,590 --> 00:57:22,590
+Yok hata olmuyor.
+
+648
+00:57:22,590 --> 00:57:26,590
+Şöyle mesela güzel bir soru sordum.
+
+649
+00:57:26,590 --> 00:57:30,590
+Aynı isim ve şuradaki örnekten gidelim.
+
+650
+00:57:30,590 --> 00:57:35,590
+Şimdi dedi ki mesela hem bu projede çalışan hem bu departmanda çalışan dedi.
+
+651
+00:57:35,590 --> 00:57:37,590
+Ben FN MNAS neyimi istiyorum?
+
+652
+00:57:37,590 --> 00:57:40,590
+Aynı isimle iki tane adam var diyelim.
+
+653
+00:57:40,590 --> 00:57:43,590
+Ama bunlar tabi ben biliyorum. Farklı kayıtlar bunlar employee tablosunda.
+
+654
+00:57:43,590 --> 00:57:46,590
+Çünkü hepsinin kimlik numarası farklı. Sadece adres soyatları haline.
+
+655
+00:57:46,590 --> 00:57:51,590
+Mesela bu sorgu sonucunda adımını da atıyorum.
+
+656
+00:57:51,590 --> 00:57:54,590
+İşte Jared James böyle bir kayıt var.
+
+657
+00:57:54,590 --> 00:57:59,590
+O Jared James'i FN MNAS neyimi istiyor mu? Jared James'i sadece bir tane geçirir.
+
+658
+00:57:59,590 --> 00:58:01,590
+Ama ben burada mesela şey deseydim.
+
+659
+00:58:01,590 --> 00:58:05,590
+İşte bunların hem adını söyle hem de SSN'lerini listele deseydim.
+
+660
+00:58:05,590 --> 00:58:07,590
+Hem adını hem söyle hem SSN'ini.
+
+661
+00:58:07,590 --> 00:58:10,590
+O zaman gelen kayıtta iki tane Jared James olurdu.
+
+662
+00:58:10,590 --> 00:58:12,590
+Yanlarında da böyle SSN'lerini yazardı.
+
+663
+00:58:12,590 --> 00:58:15,590
+İşte birinin 1001 birinin 1500 falan diye böyle.
+
+664
+00:58:15,590 --> 00:58:18,590
+O zaman ona iki farklı kayıt olduğu için altı hata listeleniyordu.
+
+665
+00:58:18,590 --> 00:58:23,590
+Ama hata vermiyor dediğim gibi sadece tek bir şekilde bir değerimi alıyor.
+
+666
+00:58:23,590 --> 00:58:26,590
+Yani iki tane varsa altı hata iki tane Jared James yazmaz bu durumda.
+
+667
+00:58:26,590 --> 00:58:28,590
+Sadece bir tane Jared James yazar.
+
+668
+00:58:28,590 --> 00:58:30,590
+O şekilde geçer.
+
+669
+00:58:30,590 --> 00:58:34,590
+Farklı bir SSN bilgisi istediğimde o zaman her iki kaydı da yazar ama.
+
+670
+00:58:34,590 --> 00:58:37,590
+Adını soyadını kimlik numarasını o şekilde gösterir.
+
+671
+00:58:38,590 --> 00:58:50,909
+Evet tabularımızda kesişim, birleşim ve farkını alma olayları bu şekildeydi.
+
+672
+00:58:50,909 --> 00:59:01,690
+Şimdi dersin sonlarına doğru biraz daha kafamızı bulandırmaya devam edelim.
+
+673
+00:59:01,690 --> 00:59:14,690
+Bu örneğimizde de bir başka keyword olan exist veya not exist kullanımını göreceğiz sorgularımızda.
+
+674
+00:59:15,690 --> 00:59:17,690
+İçerme ve içermeme durumu.
+
+675
+00:59:17,690 --> 00:59:19,690
+Şimdi örneğe bakalım.
+
+676
+00:59:19,690 --> 00:59:27,690
+Örnek bize diyor ki hiçbir departmanın veya hiçbir çalışanın yöneticisi olmayan çalışan var.
+
+677
+00:59:27,690 --> 00:59:31,690
+Şimdi bir çalışan ismi istiyor benden.
+
+678
+00:59:31,690 --> 00:59:33,690
+F.Neyim, Nasneyim istiyor.
+
+679
+00:59:33,690 --> 00:59:35,690
+Adı soyad istiyor.
+
+680
+00:59:35,690 --> 00:59:37,690
+Ama bu kişi hiçbir şekilde yönetici olmasın.
+
+681
+00:59:37,690 --> 00:59:40,690
+Ne bir çalışanın yöneticisi olsun ne de bir departmanın.
+
+682
+00:59:40,690 --> 00:59:43,690
+Dersin başında hatırlarsanız demiştim ki.
+
+683
+00:59:43,690 --> 00:59:48,690
+Şimdi şurada departman tablosunda yöneticilerin kimlik numaraları var.
+
+684
+00:59:48,690 --> 00:59:49,690
+Evet.
+
+685
+00:59:49,690 --> 00:59:54,690
+Ama burada sadece 6 tane yönetici yok bu şirkette.
+
+686
+00:59:54,690 --> 00:59:58,690
+Bir kişi oradaki 3-5 kişinin de yöneticisi olabilir.
+
+687
+00:59:58,690 --> 01:00:00,690
+İlla departman yöneticisi olmak zorunda değil.
+
+688
+01:00:00,690 --> 01:00:04,690
+Bu kişiler de yine süper asesan kısmında onların numaraları geçiyor.
+
+689
+01:00:04,690 --> 01:00:12,690
+Şimdi soru benden diyor ki hiçbir şekilde ne bir departman yöneticisi olsun ne de bir çalışanın yöneticisi olsun.
+
+690
+01:00:12,690 --> 01:00:18,690
+O zaman burada bir not exist olayını kullanmam gerekecek.
+
+691
+01:00:18,690 --> 01:00:20,690
+Yani diyeceğim ki.
+
+692
+01:00:20,690 --> 01:00:23,690
+Employee'ye git.
+
+693
+01:00:23,690 --> 01:00:26,690
+Bunu şimdi aslında bir de iç içe sorgulara girmiş oluyoruz.
+
+694
+01:00:26,690 --> 01:00:33,309
+Bunu şeyde mi yazsam ya yazı yazı gidelim soruyu alalım.
+
+695
+01:00:33,309 --> 01:00:50,800
+Şimdi tabloları atmıştım zaten.
+
+696
+01:00:50,800 --> 01:00:53,800
+Ben de istediğine dedim.
+
+697
+01:00:53,800 --> 01:00:56,800
+Hiçbir şekilde yönetici olmayan kişileri istiyor.
+
+698
+01:00:56,800 --> 01:01:05,800
+Şimdi Employee'de bizim bir sürü ne var çalışanlar var.
+
+699
+01:01:05,800 --> 01:01:14,219
+Employee'den F name last name'leri çektiğimde ne yapar bu?
+
+700
+01:01:14,219 --> 01:01:16,219
+Bana bütün çalışanların adını soyadını getirir.
+
+701
+01:01:16,219 --> 01:01:17,219
+Ama ben istiyorum ki ondan.
+
+702
+01:01:17,219 --> 01:01:21,500
+Oradaki şu Employee'deki.
+
+703
+01:01:21,500 --> 01:01:28,260
+Employee'de öyle kayıtlar var ki.
+
+704
+01:01:28,260 --> 01:01:33,260
+Bu Employee'deki kayıtlarda süper esesen kısmı.
+
+705
+01:01:33,260 --> 01:01:38,260
+Hatta Employee'de bir görelim.
+
+706
+01:01:38,260 --> 01:01:41,260
+Şurada şemalar.
+
+707
+01:01:41,260 --> 01:01:43,260
+Table'lere geldiğimizde.
+
+708
+01:01:43,260 --> 01:01:46,260
+Görüyorduk tablolarımızı.
+
+709
+01:01:46,260 --> 01:01:51,260
+View edit data dediğimde de bu şekilde gösteriyor ekrana getiriyor.
+
+710
+01:01:51,260 --> 01:01:56,849
+Şimdi bu benim Employee tablam.
+
+711
+01:01:56,849 --> 01:02:01,849
+Ben öyle kayıtlar istiyorum ki Employee tablosunda.
+
+712
+01:02:01,849 --> 01:02:07,849
+Burada şu süper esesen kısmı.
+
+713
+01:02:07,849 --> 01:02:12,849
+Neydi bunlar yönetici olan insanların kimlik numaralarıydı.
+
+714
+01:02:12,849 --> 01:02:14,849
+Bu kişiler olmasın istiyorum.
+
+715
+01:02:14,849 --> 01:02:18,849
+Bu esesenli kişiler benim döndüreceğim tabloda içerilmesin.
+
+716
+01:02:18,849 --> 01:02:20,849
+Onlar olmasın istiyorum.
+
+717
+01:02:20,849 --> 01:02:24,849
+O yüzden bunları bir şekilde ne yapmam lazım?
+
+718
+01:02:24,849 --> 01:02:26,849
+Dışlamam lazım.
+
+719
+01:02:26,849 --> 01:02:29,849
+Bunların olmayanlarını seçmem gerekecek.
+
+720
+01:02:29,849 --> 01:02:34,849
+O yüzden bir de neydi?
+
+721
+01:02:34,849 --> 01:02:36,849
+Department tablosu da vardı.
+
+722
+01:02:36,849 --> 01:02:37,849
+Onu da açalım.
+
+723
+01:02:37,849 --> 01:02:41,849
+Department'da da department yöneticileri vardı yine.
+
+724
+01:02:41,849 --> 01:02:45,849
+Ve bu esesenlerin de bulunmasını istemiyorum.
+
+725
+01:02:46,849 --> 01:02:56,849
+O zaman ben şu Employee tablosundan diyorum ki şu özelliği sağlayan kayıtları çıkar.
+
+726
+01:02:56,849 --> 01:02:58,849
+Hangi özelliği sağlayanlar?
+
+727
+01:02:58,849 --> 01:03:03,849
+Hemen orada ikinci bir sorgu yazacağım.
+
+728
+01:03:03,849 --> 01:03:11,849
+Diyeceğim ki mesela department tablosunda esesenli olan kişileri ben istemiyorum bu kaydın içinde.
+
+729
+01:03:11,849 --> 01:03:18,849
+Şu department tablosunda NGR esesenli olan kişileri ben bu Employee'nin içinde istemiyorum.
+
+730
+01:03:18,849 --> 01:03:24,849
+O zaman diyeceğim ki o kayıtlara şurayı yıldız atayım şimdilik.
+
+731
+01:03:24,849 --> 01:03:28,849
+From the department'a git.
+
+732
+01:03:28,849 --> 01:03:34,449
+Orada şu Employee'yi E diye kısaltayım.
+
+733
+01:03:34,449 --> 01:03:42,449
+Çünkü birazdan o Employee'nin kendi içinde de yine süper esesenleri olanları elemek için E2 yapmam gerekecek.
+
+734
+01:03:42,449 --> 01:03:44,449
+O yüzden E dedim.
+
+735
+01:03:44,449 --> 01:03:46,449
+Burada ne yapayım?
+
+736
+01:03:46,449 --> 01:03:50,449
+O NGR esesenli bir stümyon var.
+
+737
+01:03:50,449 --> 01:03:55,449
+Onunla bu E'deki esesenli alayım.
+
+738
+01:03:55,449 --> 01:04:02,449
+Şimdi şu sorgu aslında neyi bana döndürür?
+
+739
+01:04:02,449 --> 01:04:05,449
+Mesela git ne demiş oldum ben buna?
+
+740
+01:04:05,449 --> 01:04:10,449
+Employee'nin esesenliyle işte departmentdaki NGR esesenli eşle.
+
+741
+01:04:10,449 --> 01:04:16,449
+Şu bana oradaki menajerlerin numaralarını buluyor getiriyor.
+
+742
+01:04:16,449 --> 01:04:21,449
+Menajer olan, şurada department yöneticisi olan kayıtları buluyor getiriyor.
+
+743
+01:04:21,449 --> 01:04:29,449
+Ben bunları işte bu esesenli kişilerin burada istemediğim için başına not exist hold.
+
+744
+01:04:29,449 --> 01:04:32,449
+Bu kayıtları burada istemiyorum.
+
+745
+01:04:32,449 --> 01:04:39,449
+İç içe sorgularda bakın biz from'dan sonra tabloların adını tek tek yazıyorduk şu tablo bu tablo.
+
+746
+01:04:39,449 --> 01:04:42,449
+Şimdi burada iç içe bir sorguya girdiğim için from employee dedim.
+
+747
+01:04:42,449 --> 01:04:47,449
+Employee'yi bir kere burada yazdığım için buraya gelip tekrar from employee department yapmama gerek yok.
+
+748
+01:04:47,449 --> 01:04:53,449
+Bu artık bu esesenin bu nereden geldiğini biliyor şuradaki employee'den alacağım diyor.
+
+749
+01:04:53,449 --> 01:05:01,449
+İşte bunu ne diyorum bu kayıtları şu bulduğun o employee'deki kayıtlarını artık çıkar.
+
+750
+01:05:01,449 --> 01:05:05,449
+Bu esesenli olan o kayıtları ben buna istemiyorum artık.
+
+751
+01:05:05,449 --> 01:05:15,449
+Sonra bir de dedik ki tamam department yöneticileri yönetici bir de böyle daha küçük çablu yöneticiler vardı.
+
+752
+01:05:15,449 --> 01:05:22,449
+Onlar da yine employee'deki süper esesen alanında isimleri süper esesen kısmında onların numaraları vardı yine.
+
+753
+01:05:22,449 --> 01:05:31,449
+O yüzden onları da istemediğim için ne yapacağım onları bu sefer iki tane employee tablosunu birleştiriyor gibi düşünün.
+
+754
+01:05:31,449 --> 01:05:41,449
+Birinin eseseniyle diğerinin süper esesenini eşleyeceğim ve işte bu kişi bir yönetici ve ben bu kişinin bilgisini istemiyorum diyeceğim.
+
+755
+01:05:41,449 --> 01:05:47,449
+Şu tablodaki süper esesenleri düşünün sonra bir ikinci tablodan bir tablo düşünün.
+
+756
+01:05:47,449 --> 01:05:55,449
+Ondaki esesenlerle eşleyeceğim çünkü süper esesen dediğim bir kişinin kimlik numarası var yönetici de olsa bir kimlik numarası var.
+
+757
+01:05:55,449 --> 01:06:03,449
+Bu süper eseseni ikinci tablonun esesenleri arasında aradığımda diyeceğim ki bu adam bir yönetici ve ben bunu istemiyorum.
+
+758
+01:06:03,449 --> 01:06:05,449
+Bunun kayıtlarını da istemiyorum.
+
+759
+01:06:05,449 --> 01:06:10,449
+O zaman buraya gelip yine istemediğim kayıtları yazıyorum.
+
+760
+01:06:10,449 --> 01:06:14,449
+Bu sefer dedim ya ikinci bir employee kullanıyorum.
+
+761
+01:06:14,449 --> 01:06:16,449
+Ver dedim.
+
+762
+01:06:16,449 --> 01:06:18,449
+Ne yapıyorum şimdi?
+
+763
+01:06:18,449 --> 01:06:27,980
+Benim bu ilk tabloda aldığım esesenle ne yapıyorum?
+
+764
+01:06:27,980 --> 01:06:45,489
+İlk tablonun esesenini ne yapacağım süper esesenini alacağım.
+
+765
+01:06:55,599 --> 01:06:59,599
+Ve diyorum ki artık ben bunu da istemiyorum.
+
+766
+01:06:59,599 --> 01:07:03,599
+Bunun da olan kayıtları istemiyorum.
+
+767
+01:07:03,599 --> 01:07:05,599
+Bunlar da çünkü ne?
+
+768
+01:07:05,599 --> 01:07:13,940
+Şuradaki süper esesenler bunlar çalışanların yöneticileri.
+
+769
+01:07:13,940 --> 01:07:39,559
+Hocam bağlantımı kesildi.
+
+770
+01:07:39,559 --> 01:07:44,030
+Gençler size varsa bir açsana.
+
+771
+01:07:44,030 --> 01:07:46,030
+Bende de yok bağlantı.
+
+772
+01:07:46,030 --> 01:07:48,030
+Tamam geldi yani.
+
+773
+01:07:48,030 --> 01:07:52,300
+Yok şu an geldi.
+
+774
+01:07:52,300 --> 01:08:08,420
+Bir anlık gitti galiba.
+
+775
+01:08:08,420 --> 01:08:11,420
+Ama siz benim son konuştuklarımı duyduğunuz herhalde değil mi?
+
+776
+01:08:11,420 --> 01:08:13,420
+Evet son kısmı duyduk.
+
+777
+01:08:13,420 --> 01:08:15,420
+Şu an ekranınızı göremiyoruz sadece.
+
+778
+01:08:15,420 --> 01:08:17,420
+Aa ekran paylaşımı gitmiş.
+
+779
+01:08:17,420 --> 01:08:36,340
+Tamam.
+
+780
+01:08:44,710 --> 01:08:48,710
+Evet anlaşılımız, sorgumuz bu şekilde oluyordu.
+
+781
+01:08:48,710 --> 01:08:54,069
+Şimdi ben orada yıldız koydum.
+
+782
+01:08:54,069 --> 01:08:56,069
+Ama ne yaparım?
+
+783
+01:08:56,069 --> 01:08:58,069
+Şöyle nal da diyebilirim aslında.
+
+784
+01:08:58,069 --> 01:09:07,069
+Çünkü benim kayıtlarla kaydı görmem gibi bir durum daha doğrusu onun ne getirdiği benim için çok önemli değil.
+
+785
+01:09:07,069 --> 01:09:13,069
+O yüzden buraya nal ifadesini kullanmam da aynı sonucu verecektir.
+
+786
+01:09:13,069 --> 01:09:15,069
+Hocam bir soru sorabilir miyim?
+
+787
+01:09:15,069 --> 01:09:17,069
+Tabii.
+
+788
+01:09:17,069 --> 01:09:21,069
+Embloyu E ve E2 yapmamızın sebebi neydi?
+
+789
+01:09:21,069 --> 01:09:23,069
+Eğer tek E olsaydı ne olurdu?
+
+790
+01:09:23,069 --> 01:09:25,069
+Ne fark olurdu?
+
+791
+01:09:25,069 --> 01:09:30,069
+Şimdi şöyle bu tabloyu kopyalıyorum.
+
+792
+01:09:30,069 --> 01:09:32,069
+Yani şöyle düşün.
+
+793
+01:09:32,069 --> 01:09:35,069
+Bundan bir tane daha kullanmam gerekiyor.
+
+794
+01:09:35,069 --> 01:09:39,069
+Bir tane daha employee tablosu kullanmam gerekiyor yanımda.
+
+795
+01:09:39,069 --> 01:09:48,069
+Çünkü buna gelip bu employee'nin tam bir kayıtlarını listeledim ya.
+
+796
+01:09:48,069 --> 01:09:52,069
+Orada onun süper SSL'nin dediğim yöneticisi'nin süper SSL.
+
+797
+01:09:52,069 --> 01:09:54,069
+Yöneticisi'nin kimlik numarası.
+
+798
+01:09:54,069 --> 01:09:57,069
+Ben bu kişinin dersin başına yaptığım örnekte mesela neydi?
+
+799
+01:09:57,069 --> 01:10:04,069
+Yöneticinin SSL'ine ulaşmak istediğimde bu süper SSL'ne hop ikinci employee tablosuna gidip
+
+800
+01:10:04,069 --> 01:10:09,069
+oradaki SSL'ne bu süper SSL'ni eşlemem gerekiyordu ki onu bulabileyim.
+
+801
+01:10:09,069 --> 01:10:12,069
+Aynen teşekkür ederim.
+
+802
+01:10:12,069 --> 01:10:18,069
+Burası bu şekilde oluyormuş.
+
+803
+01:10:18,069 --> 01:10:23,069
+Süper SSL yöneticilerin ve her yöneticinin de kendi kaydında dedik ki
+
+804
+01:10:23,069 --> 01:10:27,069
+onun da SSL'nin sonuçta kendi kimlik numarası.
+
+805
+01:10:27,069 --> 01:10:32,069
+Ben bir başkasının kaydındaki süper SSL'ne gidip bu ikinci tablo da SSL'ni eşlediğimde
+
+806
+01:10:32,069 --> 01:10:36,069
+o şekilde kaydı bana döndürmüş oluyor.
+
+807
+01:10:38,319 --> 01:10:41,319
+Şimdi iç içe sorgulardan bir tane daha örnek gösterelim.
+
+808
+01:10:41,319 --> 01:10:47,319
+Bu da in kullanarak bu da yine çok popüler bir kullanım.
+
+809
+01:10:47,319 --> 01:10:53,319
+Mesela bu örneğimizde biz basitçe şu örneklerimizi gördük.
+
+810
+01:10:53,319 --> 01:10:57,319
+İşte ismi şu olan kişinin çalıştığı departmanı ismi John olan işçinin
+
+811
+01:10:57,319 --> 01:11:00,319
+çalıştığı departmanın ismini bulmak.
+
+812
+01:11:00,319 --> 01:11:06,319
+Bunu biz normalde yazmak istesek basitçe gideriz deriz ki işte iki tane tablo kullandı.
+
+813
+01:11:06,319 --> 01:11:08,319
+Şimdi şuradan gösterelim.
+
+814
+01:11:08,319 --> 01:11:10,319
+Mesela soru ne dedi bana?
+
+815
+01:11:10,319 --> 01:11:12,319
+İsmi John olan kişinin departmanının adı.
+
+816
+01:11:12,319 --> 01:11:17,319
+İç içe sorgulamayacağım. Normalde mantık yazarken ne yapıyorum?
+
+817
+01:11:17,319 --> 01:11:19,319
+Biliyorum.
+
+818
+01:11:19,319 --> 01:11:25,319
+İsmi John, FNM John olsun bu kişinin çalıştığı departmanın adı dediğimde
+
+819
+01:11:25,319 --> 01:11:29,319
+önce employee tablosundan Dino'yu buluyorum.
+
+820
+01:11:29,319 --> 01:11:33,319
+Ona gidiyorum departmandaki D number ile eşliyorum.
+
+821
+01:11:33,319 --> 01:11:38,319
+Ondan sonra diyorum ki he buradaki o adamın Dino'su atıyorum.
+
+822
+01:11:38,319 --> 01:11:42,319
+Kartçıklı yeriydi. O burada gelip eşlendiği zaman o zaman Dino'ya
+
+823
+01:11:42,319 --> 01:11:46,319
+buradan ulaşabilirim ve hemen hardware olduğunu yazmış olurum.
+
+824
+01:11:46,319 --> 01:11:51,319
+Yani iki tabloyu birleştirerek D number'lar D number ve Dino üzerinden iki tabloyu
+
+825
+01:11:51,319 --> 01:11:56,319
+birleştirdiğim takdirde ilgili alanlara, ilgili sistemlere ulaşabiliyordum.
+
+826
+01:11:56,319 --> 01:12:01,319
+Ama şimdi burada mesela in kullanarak yapmamı istediğinde şöyle bir yazımı olacak.
+
+827
+01:12:02,319 --> 01:12:05,319
+Ben şimdi istediğim şey ne? Departman ismi.
+
+828
+01:12:05,319 --> 01:12:07,319
+O zaman select Dino'yu. Tamam.
+
+829
+01:12:07,319 --> 01:12:11,319
+Sonra nereden istenir Dino'yu? Departman tablosundan istenir tabii ki.
+
+830
+01:12:11,319 --> 01:12:16,319
+Departman tablosunu yazdım. Çünkü Dino'yla bir tek departman tablosunda bulunuyor.
+
+831
+01:12:16,319 --> 01:12:24,319
+Sonra koşulum şu. Ver D number dediğim sütün nerede olsun?
+
+832
+01:12:24,319 --> 01:12:26,319
+İn diyorum. İçinde.
+
+833
+01:12:26,319 --> 01:12:33,319
+Şu sorgunu, şu sorguda. Ben yine ondan bazı departman numaraları isteyeceğim.
+
+834
+01:12:33,319 --> 01:12:37,319
+Onun içinde bulunsun. Onun içinde olsun.
+
+835
+01:12:37,319 --> 01:12:42,319
+Şimdi select diyorum. Burada D number istemiştim ya.
+
+836
+01:12:42,319 --> 01:12:44,319
+O zaman select'e de Dino seçmem lazım.
+
+837
+01:12:44,319 --> 01:12:47,319
+Ortak şey olması lazım bunları. Ne istiyorsam.
+
+838
+01:12:47,319 --> 01:12:50,319
+İn dedikten sonra select'e onu seçmem lazım.
+
+839
+01:12:51,319 --> 01:12:54,319
+Sonra from dedim. Ne istiyorum?
+
+840
+01:12:54,319 --> 01:12:56,319
+Şuradaki sorgunun mantığı şu.
+
+841
+01:12:56,319 --> 01:13:00,319
+İsmi John olan kişilerin departman numaralarını alacağım.
+
+842
+01:13:00,319 --> 01:13:04,319
+Sonra onu da D number'da bulmaya çalışacağım.
+
+843
+01:13:04,319 --> 01:13:08,319
+Şuradaki D number'da onu bulup hop oradan D name'e ulaşacağım.
+
+844
+01:13:08,319 --> 01:13:12,319
+Amacım bu. Şuradaki John olan kişinin önce departman numaralarını alacağım.
+
+845
+01:13:12,319 --> 01:13:17,319
+O departman numarasının da hop geleceğim burada olmasını isteyeceğim.
+
+846
+01:13:17,319 --> 01:13:19,319
+O yüzden D number in dedim.
+
+847
+01:13:19,319 --> 01:13:22,319
+Parantezimi açtım. Sorgumu yazıyorum.
+
+848
+01:13:22,319 --> 01:13:26,319
+Select Dino. Şurada tamamen employee'de işim var.
+
+849
+01:13:26,319 --> 01:13:28,319
+Employ'den Dino'ları al.
+
+850
+01:13:28,319 --> 01:13:31,319
+Koşulun kim? F name'e John olan kişiler.
+
+851
+01:13:31,319 --> 01:13:37,319
+Bunları aldım. Burada Dino'lar listeleyecek bana F name'e John olan kişilerin Dino'ları.
+
+852
+01:13:37,319 --> 01:13:44,319
+İşte ben bunları da buradaki D number'la eşleyip o kişiyle o kayıtların D name'lerini çıkarmış hocam.
+
+853
+01:13:44,319 --> 01:13:46,319
+İn kullanımı da bu şekilde oluyor.
+
+854
+01:13:46,319 --> 01:13:56,090
+Evet. Son bir örneğimizde de bazı fonksiyonları göreceğiz.
+
+855
+01:13:56,090 --> 01:14:02,090
+Bunlar da yine bizim sorgularımızda pratikçe kullanabileceğimiz şeyler.
+
+856
+01:14:02,090 --> 01:14:07,090
+Mesela maaşlar üzerine bana bazı şeyler sorulmuş.
+
+857
+01:14:07,090 --> 01:14:11,090
+İşte en düşük maaş, en yüksek maaş, toplam maaş, ortalamaş.
+
+858
+01:14:11,090 --> 01:14:19,090
+Yani aslında istediği şey bir situndaki değerlerin belli bir sorgu sonucunda listelenen bir sürü kayıtlar oluyor.
+
+859
+01:14:19,090 --> 01:14:24,090
+O kayıtlardaki belli bir situndaki değerleri ortalaması nasıl alır?
+
+860
+01:14:24,090 --> 01:14:28,090
+İşte mini, mini, max nasıl hesaplar?
+
+861
+01:14:28,090 --> 01:14:32,090
+Ve count diye de bir fonksiyonumuz var.
+
+862
+01:14:32,090 --> 01:14:38,090
+Bu da mesela bir sorgu sonucunda sıra sıra sıra sıra bir sürü kayıt listelenen orada kaç tane kayıt var?
+
+863
+01:14:38,090 --> 01:14:43,090
+Bunu da yine count yıldızla listelenen kayıt sayısını bulabiliyoruz.
+
+864
+01:14:43,090 --> 01:14:46,090
+Mesela bana buradaki soru ne diyor?
+
+865
+01:14:46,090 --> 01:14:50,090
+Sales departmanında kaç kişi çalışıyor?
+
+866
+01:14:50,090 --> 01:14:53,090
+Sales departmanı neredeydi?
+
+867
+01:14:53,090 --> 01:14:54,090
+Burada.
+
+868
+01:14:54,090 --> 01:15:02,090
+Sales de çalışan kişiler bulmam için buradan employee'ye gitmem gerekiyordu ki burada maaşını alayım.
+
+869
+01:15:02,090 --> 01:15:04,090
+İşte burayı ne yaptım?
+
+870
+01:15:04,090 --> 01:15:06,090
+D number'ları, Dino'ları üzerinden eşledim.
+
+871
+01:15:06,090 --> 01:15:08,090
+İki tablo kullanacağım derdim.
+
+872
+01:15:08,090 --> 01:15:12,090
+Department employee, D name sales olanlar.
+
+873
+01:15:12,090 --> 01:15:17,090
+D number'ları da Dino'ya eşitledim.
+
+874
+01:15:17,090 --> 01:15:20,090
+Şimdi bu kayıtların ben neyini istiyorum?
+
+875
+01:15:20,090 --> 01:15:25,090
+Salary maaşla ilgili kısımda şimdi bu sorgu sonucunda bana bir sürü kayıt listelenecek.
+
+876
+01:15:25,090 --> 01:15:31,090
+Her birinin işte ne bileyim bütün kayıtları isteseydim select yıldız demiş olsaydım değil mi?
+
+877
+01:15:31,090 --> 01:15:34,090
+Altı soy altı işte maaşı vesaire hepsi sıra sıra gelecekti.
+
+878
+01:15:34,090 --> 01:15:38,090
+Ama ben sadece diyorum ki bana maaş maaşı seç getir.
+
+879
+01:15:38,090 --> 01:15:40,090
+Maaş sütununu da toplamını al.
+
+880
+01:15:40,090 --> 01:15:42,090
+O zaman sal al.
+
+881
+01:15:43,090 --> 01:15:45,090
+Maksimum için böyle bir gösterim.
+
+882
+01:15:45,090 --> 01:15:48,090
+Minimum değer için o sütündeki minimum değer için bu.
+
+883
+01:15:48,090 --> 01:15:54,090
+Ve ortalama değer için bunu giriyorum ve kaç satır listelenmiş bu sorgu sonucunda?
+
+884
+01:15:54,090 --> 01:15:58,090
+Onlardan onun için de count değişkin, count sonsiyonunu kullanıyorum.
+
+885
+01:15:58,090 --> 01:16:03,090
+Ve ekrana şöyle tek satırlık bir cevap dönmüş oluyor.
+
+886
+01:16:03,090 --> 01:16:09,090
+Toplamonu ve istediğim diğer değerleri bana bu şekilde bulup döndürmüş oluyor.
+
+887
+01:16:09,090 --> 01:16:16,199
+Evet bu akşam konuşacağımız bahsedeceğimiz örnekler bu kadardı.
+
+888
+01:16:16,199 --> 01:16:21,199
+Şurada surunun sonunda bazı kaynaklar internet siteleri koydum.
+
+889
+01:16:21,199 --> 01:16:23,199
+Şunu otokoloca önermişti.
+
+890
+01:16:23,199 --> 01:16:25,199
+Öğrencilerle paylaşırsınız demişti.
+
+891
+01:16:25,199 --> 01:16:28,199
+Baktığınız olursa oraya da bakabilirsiniz.
+
+892
+01:16:28,199 --> 01:16:30,199
+İnternetteki online kaynaklar.
+
+893
+01:16:30,199 --> 01:16:35,989
+Evet bu dersimizi anlatacaklarımız bu kadar.
+
+894
+01:16:36,989 --> 01:16:39,989
+Dinlediğiniz için teşekkür ediyorum.
+
+895
+01:16:39,989 --> 01:16:41,989
+Biz de çok teşekkür ederiz hocam.
+
+896
+01:16:41,989 --> 01:16:45,560
+Teşekkürler hocam.
+
+897
+01:16:45,560 --> 01:16:47,939
+Biraz karışıktı.
+
+898
+01:16:47,939 --> 01:16:50,939
+Tekrar ettiğinizde inşallah oturur.
+
+899
+01:16:50,939 --> 01:16:51,939
+Gayet güzeldi hocam.
+
+900
+01:16:51,939 --> 01:16:53,939
+Ağzınızı sağlık.
+
+901
+01:16:53,939 --> 01:16:54,939
+Sizler de sağ olun.
+
+902
+01:16:54,939 --> 01:16:57,939
+Dinlediğiniz için ben teşekkür ediyorum.
+
+903
+01:16:57,939 --> 01:17:00,939
+Haftaya görüşmek üzere inşallah.
+
+904
+01:17:00,939 --> 01:17:05,979
+İnşallah hocam görüşmek üzere.
+

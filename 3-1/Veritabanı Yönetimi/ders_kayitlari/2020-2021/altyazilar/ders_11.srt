@@ -1,0 +1,2848 @@
+1
+00:03:27,469 --> 00:03:29,870
+Evet arkadaşlar, hoş geldiniz.
+
+2
+00:03:30,469 --> 00:03:33,669
+Hepiniz iyisinizdir inşallah. Sağ olun, sıhhatiniz.
+
+3
+00:03:37,750 --> 00:03:39,949
+Teşekkür ederiz hocam. Sizi sormalı.
+
+4
+00:03:40,150 --> 00:03:42,349
+İyiyim, ben de çok şükür. Sağ olun.
+
+5
+00:03:49,729 --> 00:03:53,530
+Bugün artık son lab dersinizi yapacağız inşallah.
+
+6
+00:03:54,729 --> 00:03:58,729
+Yüzdük yüzdük kuyruğuna geldik. Artık company dv ile vedalaşıyoruz.
+
+7
+00:04:04,310 --> 00:04:06,310
+Teşekkürler [öğrenci], ben de iyiyim.
+
+8
+00:04:09,520 --> 00:04:12,919
+Kişi sayımız bayağı bir süredir. 50'yi geçemedi.
+
+9
+00:04:15,090 --> 00:04:16,689
+Şimdi geçeceğiz gibi ama.
+
+10
+00:04:19,579 --> 00:04:20,579
+Bir kişi kaldı.
+
+11
+00:04:20,579 --> 00:04:21,579
+Kırk dokuzda kaldık.
+
+12
+00:04:21,579 --> 00:04:26,300
+Evet, bugün son dersimiz.
+
+13
+00:04:28,550 --> 00:04:31,550
+Biraz değişik bir konu, xquery'den bahsedeceğiz.
+
+14
+00:04:31,550 --> 00:04:37,730
+Bu da bir bilgi olsun yarın bir gün kullanmanız gerektiğinde.
+
+15
+00:04:38,730 --> 00:04:45,730
+Tekrar dönüp abi böyle bir şey de vardı işte görmüştük şunu, şunu kullanıyorduk deyip araştırıp uygularsınız.
+
+16
+00:04:53,610 --> 00:04:55,610
+Biz yavaştan başlayalım.
+
+17
+00:04:56,610 --> 00:05:00,610
+Dedik ki bugün xquery'den bahsedeceğiz. Nedir xquery?
+
+18
+00:05:01,610 --> 00:05:04,610
+Şimdi biz bu zamana kadar hep neydi? Veri tabanımız vardı.
+
+19
+00:05:05,610 --> 00:05:07,610
+Tablonlarımız, kayıtlarımız.
+
+20
+00:05:07,610 --> 00:05:14,610
+Bunun için bunu oluşturma, kayıt ekleme, kayıtları çekmek, göstermek, listelemek için hep bir sorgu dili kullanmıştık.
+
+21
+00:05:14,610 --> 00:05:16,610
+Sorgulama dili, SQL'dı bu.
+
+22
+00:05:17,610 --> 00:05:21,610
+Şimdi xquery'de nasıl veriti tabanında biz SQL kullanmışsak,
+
+23
+00:05:22,610 --> 00:05:31,610
+İgzemel tipinde dosyalar için de bu dosyalar üzerinde verileri çekmek, listelemek, belki ekleme vesairesi için xquery'i kullanacağız.
+
+24
+00:05:32,610 --> 00:05:34,610
+xquery'de bir sorgulama dili.
+
+25
+00:05:36,610 --> 00:05:41,610
+Şimdi ıgzemel dosyası demişken onun hemen bir örneğine bakalım şurada.
+
+26
+00:05:42,610 --> 00:05:45,610
+İgzemel dosyalarının yapıları şöyle oluşuyor.
+
+27
+00:05:46,610 --> 00:05:48,610
+Bir ağaç yer aşısı gibi düşünün.
+
+28
+00:05:49,610 --> 00:05:51,610
+Çeşitli tagler, elementler var şurada.
+
+29
+00:05:52,610 --> 00:05:55,610
+Bunların her biri, her birinin altında bir child var.
+
+30
+00:05:56,610 --> 00:06:00,610
+Ve bunlar böyle eleman eleman listeleniyor.
+
+31
+00:06:01,610 --> 00:06:06,610
+Burada mesela bir bookstore var, bir kitap satış yeri.
+
+32
+00:06:07,610 --> 00:06:09,610
+Bunun elemanları mesela neler?
+
+33
+00:06:09,610 --> 00:06:11,610
+Bu şey gibi düşünün.
+
+34
+00:06:11,610 --> 00:06:13,610
+Bookstore database'in adı olur.
+
+35
+00:06:14,610 --> 00:06:20,610
+Bunlardaki tabloların adı gibidir normal, o klasik bizim ilişkissel modeller.
+
+36
+00:06:21,610 --> 00:06:26,610
+İşte buradaki olay, bunların böyle bir hiyerarşi içerisinde yazı olması.
+
+37
+00:06:27,610 --> 00:06:29,610
+Mesela burada işte book var.
+
+38
+00:06:29,610 --> 00:06:31,610
+Book'un altında da title, auto.
+
+39
+00:06:31,610 --> 00:06:36,610
+Bunlar da hani şeyin üstünleri gibi düşünülebilirsiniz veri tabanındaki tablonun üstünleri gibi.
+
+40
+00:06:36,610 --> 00:06:38,610
+Bu şekilde listelenen bir dosya.
+
+41
+00:06:38,610 --> 00:06:40,610
+Birazdan bu detaylı göreceğiz.
+
+42
+00:06:41,610 --> 00:06:50,610
+Şimdi dedik ki xQuery işte bu tip dosyaların üzerinde böyle examen dosyaları üzerindeki verileri çekmemizi, listelememizi vesaire sağlıyor.
+
+43
+00:06:53,850 --> 00:06:55,850
+Bu ifadelerin hepsini xQuery'de gerçekleyebiliyoruz.
+
+44
+00:06:56,850 --> 00:06:58,850
+Web servisleri için daha kullanışlı dedik.
+
+45
+00:06:59,850 --> 00:07:03,850
+Tagler arasındaki işte o bilgileri istelememizi sağlıyordu.
+
+46
+00:07:04,850 --> 00:07:07,850
+Bu şekilde bir dil, xQuery'de bir sorgu dili.
+
+47
+00:07:10,259 --> 00:07:18,259
+Biz xQuery'yi kullanırken, xQuery sorguları yazarken basics isimli programı kullanacağız bu labımızda.
+
+48
+00:07:18,259 --> 00:07:19,259
+Onu göstereceğiz.
+
+49
+00:07:19,259 --> 00:07:20,259
+Onun üzerine yazacağız.
+
+50
+00:07:21,259 --> 00:07:23,259
+Onu da şu siteden indirebilirsiniz.
+
+51
+00:07:23,259 --> 00:07:28,259
+Direkt çalışabilir halde ki jar dosyası, executable dosyası vesairesi bulunuyor.
+
+52
+00:07:33,480 --> 00:07:36,480
+Şimdi bu hiyerarşide bazı isimlendirmeler yapılıyor.
+
+53
+00:07:36,480 --> 00:07:40,480
+Mesela şu en baştaki ne? root element demişler.
+
+54
+00:07:40,480 --> 00:07:42,480
+Şu taglerin her birine element diyoruz.
+
+55
+00:07:42,480 --> 00:07:43,480
+Baştaki ne? root element demişler.
+
+56
+00:07:43,480 --> 00:07:45,480
+Bookstore bir root elementmiş, kökmüş.
+
+57
+00:07:46,480 --> 00:07:50,480
+Diğer bunun altında olanların hepsine element demişler.
+
+58
+00:07:50,480 --> 00:07:54,480
+Bunlar tabii kendi aralarında parent ve children olma durumları var.
+
+59
+00:07:54,480 --> 00:07:57,480
+Mesela burada nedir? title.
+
+60
+00:07:57,480 --> 00:08:00,480
+İşte bir children'dır, child'dır.
+
+61
+00:08:00,480 --> 00:08:03,480
+Nedir? Book'da burada bir parent'dır.
+
+62
+00:08:04,480 --> 00:08:06,480
+Şu diğerleri child'dır.
+
+63
+00:08:07,480 --> 00:08:08,480
+Book'da bir parent'dır.
+
+64
+00:08:09,480 --> 00:08:11,480
+Bunların arasında da nedir?
+
+65
+00:08:11,480 --> 00:08:14,480
+Aynı seviyede oldukları için bunlar bir kardeşlik ilişkisi.
+
+66
+00:08:14,480 --> 00:08:16,480
+Onlara da sibling gibi öyle bir şey deniyordu.
+
+67
+00:08:17,480 --> 00:08:19,480
+Onlar da bir şekilde isimlendiriliyor.
+
+68
+00:08:20,480 --> 00:08:25,139
+Sonra bir de attribute olayımız var.
+
+69
+00:08:25,139 --> 00:08:34,139
+O da şuradaki taglerin içerisinde ekstradan bir bilgiyi vermek istiyorsak,
+
+70
+00:08:34,139 --> 00:08:38,139
+bunu da kenarına yazıyorsa bu da kategori attribute olarak verilmiş.
+
+71
+00:08:38,139 --> 00:08:44,139
+İsteseydi bunu da bunun altında bir element olarak bir ayrı kategori isimli bir tag açıp yazabilirdi.
+
+72
+00:08:44,139 --> 00:08:46,139
+Ama onu yapmamış.
+
+73
+00:08:46,139 --> 00:08:47,139
+Ne yapmış bunu mesela?
+
+74
+00:08:47,139 --> 00:08:50,139
+Attribute olarak tanımlamış ve bu şekilde değerini vermiş.
+
+75
+00:08:50,139 --> 00:08:52,139
+Böyle de bir gösteri ifadesi olabiliyor.
+
+76
+00:08:53,139 --> 00:09:04,860
+Şimdi bizim laptopu zamana kadar gördüğümüz bir company database'miz vardı.
+
+77
+00:09:05,860 --> 00:09:08,860
+Onun bakın XML hali nasılmış onu inceleyelim.
+
+78
+00:09:08,860 --> 00:09:13,320
+Company'nin XML hali şöyle.
+
+79
+00:09:13,320 --> 00:09:16,320
+Bir kere route elementimiz company olarak verilmiş.
+
+80
+00:09:17,320 --> 00:09:19,320
+Onun altında da neler var?
+
+81
+00:09:19,320 --> 00:09:21,320
+Onun elementleri.
+
+82
+00:09:21,320 --> 00:09:23,320
+İşte employee var.
+
+83
+00:09:23,320 --> 00:09:27,320
+Burası da employee deyip tag açıp employee deyip tag kapadığımda içerisinde böyle yazdığım bilgiler.
+
+84
+00:09:27,320 --> 00:09:28,320
+Bakın hep ne?
+
+85
+00:09:28,320 --> 00:09:29,320
+Onun da alt elementleri.
+
+86
+00:09:29,320 --> 00:09:32,320
+Hep o bizim kullandığımız aslında sütün isimleri.
+
+87
+00:09:33,320 --> 00:09:36,320
+Bakın SSD'nin de ne olarak varmış mesela?
+
+88
+00:09:36,320 --> 00:09:39,320
+Bir element olarak yine tag açıp devirebilecekken,
+
+89
+00:09:39,320 --> 00:09:42,320
+gelmiş buraya attribute olarak koymuş.
+
+90
+00:09:42,320 --> 00:09:44,320
+SSD'nin de attribute olarak koymuş.
+
+91
+00:09:45,320 --> 00:09:46,320
+Company diye bildim.
+
+92
+00:09:46,320 --> 00:09:50,320
+Genel bu examen şeyini tamamında göstermiş olayım.
+
+93
+00:09:51,320 --> 00:10:04,860
+Mesela bütün employee kayıtları böyle tek tek şu şekilde her ürünün özellikleri belirtecek şekilde veriliyor.
+
+94
+00:10:04,860 --> 00:10:07,860
+Her biri employee için veriler paylaşılıyor.
+
+95
+00:10:08,860 --> 00:10:11,860
+Diğer tablolarımız da var aynı şekilde.
+
+96
+00:10:11,860 --> 00:10:13,860
+Mesela department tablosu.
+
+97
+00:10:13,860 --> 00:10:15,860
+Onun sütunları neydi bunlardı?
+
+98
+00:10:15,860 --> 00:10:21,139
+Mesela department tablosu da D number'ı attribute olarak vermiş.
+
+99
+00:10:21,139 --> 00:10:24,139
+Bu da belki de biraz gösterimi oluşturmak istenmiş olabilir.
+
+100
+00:10:24,139 --> 00:10:27,139
+Bunlar hani normalde bizim SSN'lı, SSN'lı olur.
+
+101
+00:10:27,139 --> 00:10:28,139
+İşte buradaki D number olur.
+
+102
+00:10:28,139 --> 00:10:31,139
+O tablo yazgı primary key'lerde.
+
+103
+00:10:31,139 --> 00:10:35,139
+Belki onları bütün kana çıkarmak adına bu şekilde bir attribute olarak tanımlanabilir.
+
+104
+00:10:35,139 --> 00:10:36,139
+Ama tekrar söylüyoruz.
+
+105
+00:10:36,139 --> 00:10:39,139
+Yani attribute'un primary key gibi bir mantığı yok.
+
+106
+00:10:39,139 --> 00:10:41,139
+Yani ben böyle D number 5 verdim.
+
+107
+00:10:41,139 --> 00:10:46,139
+Gidip başka bir kayıtta D number 5 veremem gibi bir şeyimiz kısıtımız kısıtısımız olmayacaktır.
+
+108
+00:10:46,139 --> 00:10:49,139
+Bunu buraya bu şekilde belirtilmiş.
+
+109
+00:10:49,139 --> 00:10:52,139
+Dediğimiz gibi buraya da bir tag açık verilebilir de.
+
+110
+00:10:52,139 --> 00:10:56,139
+Bu şekilde ilk zaman dosyası gördüğünüz gibi oluşturulmuş.
+
+111
+00:10:56,139 --> 00:11:00,139
+Mesela dep locations'da bütün o iki tane sütun var.
+
+112
+00:11:00,139 --> 00:11:01,139
+İkisini de ne olarak vermiş?
+
+113
+00:11:01,139 --> 00:11:04,139
+Attribute olarak vermiş.
+
+114
+00:11:04,139 --> 00:11:07,139
+Evet, bunu da route'u company'i, elementleri saydıklarımız.
+
+115
+00:11:07,139 --> 00:11:11,139
+Attribute'ları da şu taglerin içerisinde yazılanlar demiş olduk.
+
+116
+00:11:11,139 --> 00:11:16,860
+Temel yapısını gördük.
+
+117
+00:11:16,860 --> 00:11:19,860
+Bir ekzemen dosyasını.
+
+118
+00:11:19,860 --> 00:11:22,860
+Şimdi biz ekzemen dosyalarına nasıl ulaşacağız?
+
+119
+00:11:22,860 --> 00:11:26,860
+Onlar üzerinde nasıl sorgulayacağız?
+
+120
+00:11:26,860 --> 00:11:32,860
+Bir kere bir dosya yolu belirtip gitmek istediğimiz eleman hangisiyse.
+
+121
+00:11:32,860 --> 00:11:34,860
+Onun yolunu şu şekilde belirtiyoruz.
+
+122
+00:11:34,860 --> 00:11:36,860
+Neye ulaşmak istiyorsak?
+
+123
+00:11:36,860 --> 00:11:41,860
+Mesela burada katalog diye bir dosya varmış.
+
+124
+00:11:41,860 --> 00:11:44,860
+Ve katalog bunun en şey elementiymiş.
+
+125
+00:11:44,860 --> 00:11:46,860
+En tepedeki.
+
+126
+00:11:46,860 --> 00:11:53,860
+Bir kere bir dosya yolu belirtip gitmek istediğimiz eleman hangisiyse.
+
+127
+00:11:53,860 --> 00:11:55,860
+En şey elementiymiş.
+
+128
+00:11:55,860 --> 00:11:56,860
+En tepedeki.
+
+129
+00:11:56,860 --> 00:11:58,860
+Bizim işte company gibi düşünün.
+
+130
+00:11:58,860 --> 00:12:02,860
+Yani ben bir dosyanın adını verdikten sonra şöyle bir tek slash atmışsam eğer,
+
+131
+00:12:02,860 --> 00:12:06,860
+bundan sonra sıra sıra takip etmem gereken bir dosya yolu var.
+
+132
+00:12:06,860 --> 00:12:08,860
+İşte bu company için nedir?
+
+133
+00:12:08,860 --> 00:12:10,860
+Mesela company zemallerim.
+
+134
+00:12:10,860 --> 00:12:11,860
+Slash atarım.
+
+135
+00:12:11,860 --> 00:12:12,860
+Buraya company yazarım.
+
+136
+00:12:12,860 --> 00:12:13,860
+Sonra slash atarım.
+
+137
+00:12:13,860 --> 00:12:17,860
+Employee taglerine ulaşmak istiyorsam bir slash'tan sonra employee yazarım.
+
+138
+00:12:17,860 --> 00:12:20,860
+Ve sayramı şu şekilde ilerletirim.
+
+139
+00:12:20,860 --> 00:12:25,860
+Eğer isteğim, direkt böyle tek slash'larla gitmek yerine.
+
+140
+00:12:25,860 --> 00:12:29,860
+Çünkü böyle dediğimiz gibi sıra sıra takip etmek zorundayız o hierarşiyi.
+
+141
+00:12:29,860 --> 00:12:31,860
+Mesela şöyle de bir gösteririm var.
+
+142
+00:12:31,860 --> 00:12:36,860
+İki tane slash attığınız zaman yazdığınız tag ismi neyse,
+
+143
+00:12:36,860 --> 00:12:39,860
+yazdığınız eleman ismi neyse direkt gidiyor onu buluyor.
+
+144
+00:12:39,860 --> 00:12:44,860
+Mesela burada aslında product katalogdan sonra gelen bir şey hierarşide.
+
+145
+00:12:44,860 --> 00:12:50,860
+Ama iki tane slash atıp yazdıktan sonra direkt o gidip product taglerine odaklanmış oluyor.
+
+146
+00:12:50,860 --> 00:12:52,860
+Böyle bir olayı var.
+
+147
+00:12:52,860 --> 00:12:58,860
+Daha sonra mesela attribute'lere nasıl ulaşıyormuşuz?
+
+148
+00:12:58,860 --> 00:13:00,860
+Attribute'lere ulaşırken şuna dikkat edelim.
+
+149
+00:13:00,860 --> 00:13:03,860
+Başlarına et işareti koyuyoruz.
+
+150
+00:13:03,860 --> 00:13:08,860
+Yani burada attribute olmayan bir tag'e ulaşacak olsaydı normal bir elemat.
+
+151
+00:13:08,860 --> 00:13:12,860
+Onu direkt yazıyordum ama bu bir attribute olduğu için başına et koymam gerekiyor.
+
+152
+00:13:13,860 --> 00:13:20,860
+Daha sonra eğer tüm child'larına ulaşmak istiyorsam bakın yıldız atıyormuşum bu yeterli oluyormuş.
+
+153
+00:13:20,860 --> 00:13:22,860
+Bu ne diyor?
+
+154
+00:13:22,860 --> 00:13:27,860
+Bütün, burada da dosya yolunda yazdım.
+
+155
+00:13:27,860 --> 00:13:30,860
+Sonra en temel elementi, root elementi yazdım.
+
+156
+00:13:30,860 --> 00:13:32,860
+Ondan sonra yıldız attım.
+
+157
+00:13:32,860 --> 00:13:34,860
+Onun diyorum ki git bütün çocuklarına bak.
+
+158
+00:13:34,860 --> 00:13:37,860
+Ve oralarda number ismi table.
+
+159
+00:13:37,860 --> 00:13:43,860
+Yani kataloğun, grandchildren'ın, number olan elementleri bu şekilde buluyoruz.
+
+160
+00:13:43,860 --> 00:13:45,860
+Şimdi örnekte zaten onu da göstereceğiz.
+
+161
+00:13:45,860 --> 00:13:48,860
+Yazdığımızda ne çıkıyor ad company zemende.
+
+162
+00:13:48,860 --> 00:13:50,860
+İncelemiş olacağız.
+
+163
+00:13:50,860 --> 00:14:00,399
+Xsquare'de sıklıkla kullanılan 5 tane ifade var.
+
+164
+00:14:00,399 --> 00:14:06,399
+Bunlar bizim veriyi listelememiz, değişken tanımlamamız, çeşitli şartlar koymamız için.
+
+165
+00:14:06,399 --> 00:14:14,399
+Bunları kısaltmaları F, L, W, O, O, R'dan flower gibi bir okunuşuyla şu şekilde yapmışlar.
+
+166
+00:14:14,399 --> 00:14:17,399
+Tanındık geliyordu bunlar değil mi?
+
+167
+00:14:17,399 --> 00:14:19,399
+Mesela ver ile biz koşullar belirtiyorduk.
+
+168
+00:14:19,399 --> 00:14:22,399
+Burada da aynı şeyleri yapacağız birazdan sorgularımızı yazarken.
+
+169
+00:14:22,399 --> 00:14:24,399
+Order'la sıralayacağız.
+
+170
+00:14:24,399 --> 00:14:26,399
+Return'la sonuç döndüreceğiz.
+
+171
+00:14:26,399 --> 00:14:30,399
+For'la yine öyle klasik satır satır okumalarımızı yapacağız.
+
+172
+00:14:31,399 --> 00:14:34,399
+Let ile de bir değişken tanımlayacağız.
+
+173
+00:14:34,399 --> 00:14:36,399
+Onu nasıl tanımladığımızı göreceğiz.
+
+174
+00:14:36,399 --> 00:14:48,570
+Şimdi programını bir tanıyalım.
+
+175
+00:14:48,570 --> 00:14:52,570
+Basics'e nasıl bir program, nasıl kullanıyoruz.
+
+176
+00:14:52,570 --> 00:14:58,570
+Şuradan tıklayıp çalıştırdığımızda şöyle bir ekran açılıyor.
+
+177
+00:14:58,570 --> 00:15:01,570
+Şöyle arayüzümüz.
+
+178
+00:15:01,570 --> 00:15:06,200
+Basics programımızın olayı dedik ki,
+
+179
+00:15:06,200 --> 00:15:11,200
+X-Square'e sorgularımızı yazmamıza izin veriyordu.
+
+180
+00:15:11,200 --> 00:15:14,200
+Gelen ekranda şurada bir editor penceresi var.
+
+181
+00:15:14,200 --> 00:15:17,200
+Burası sorgularını yazacağım yer.
+
+182
+00:15:17,200 --> 00:15:21,200
+Burası output'ların, çıktıkların görünceye yer olacak.
+
+183
+00:15:21,200 --> 00:15:24,200
+Şuradan çalıştırıyoruz.
+
+184
+00:15:24,200 --> 00:15:27,200
+Buradan dosyayı kaydetmeye yeni dosyalar açma.
+
+185
+00:15:27,200 --> 00:15:30,200
+Dostyalar açılmaz bir file geliyor istersek.
+
+186
+00:15:30,200 --> 00:15:33,200
+Buradan dosyaların sayısını arttırabiliyoruz.
+
+187
+00:15:34,200 --> 00:15:37,200
+Bu şekilde bir arayüz.
+
+188
+00:15:37,200 --> 00:15:39,200
+Şimdi ben buradan.
+
+189
+00:15:39,200 --> 00:15:43,200
+Benim company-examel dosyam şurada.
+
+190
+00:15:43,200 --> 00:15:45,200
+Desktabımdan.
+
+191
+00:15:45,200 --> 00:15:48,200
+Bu file'lar da desktop'a kaydediliyor.
+
+192
+00:15:48,200 --> 00:15:50,200
+Buna da dikkat edin.
+
+193
+00:15:50,200 --> 00:15:55,200
+Company-exameli koyduğunuz yerle, şu file'lerin kayda olduğu yerin aynı olması lazım.
+
+194
+00:15:55,200 --> 00:15:58,200
+Onların nereye kayda olduğunu da hemen şuradan görebilirsiniz.
+
+195
+00:15:58,200 --> 00:16:00,200
+Bakın bu file desktop'a kayda olacak.
+
+196
+00:16:00,200 --> 00:16:03,200
+Benim company-examelim de zaten desktop'ta.
+
+197
+00:16:03,200 --> 00:16:06,200
+O yüzden ben burada artık.
+
+198
+00:16:06,200 --> 00:16:08,200
+Ona şunu tanımlatabiliyorum.
+
+199
+00:16:08,200 --> 00:16:22,620
+Şu dosya yolunu verdiğim zaman.
+
+200
+00:16:22,620 --> 00:16:24,620
+Şimdi mesela bu ne yapacak?
+
+201
+00:16:24,620 --> 00:16:26,620
+Company-examel dosyasına gidecek.
+
+202
+00:16:26,620 --> 00:16:29,620
+Company-examel dosyamız şuydu.
+
+203
+00:16:29,620 --> 00:16:33,620
+Orada diyorum ki ben ona employee'ye git, employee'in de.
+
+204
+00:16:33,620 --> 00:16:36,620
+Sadece şuan company'den employee'ye git demiştik mesela.
+
+205
+00:16:36,620 --> 00:16:38,620
+Bunu çalıştırdığım zaman.
+
+206
+00:16:38,620 --> 00:16:40,620
+Company-examel result kısmında.
+
+207
+00:16:40,620 --> 00:16:43,620
+Employee tagindekileri o kayıtları bana listeliyor.
+
+208
+00:16:43,620 --> 00:16:45,620
+Bakın tek tek, her bir kaydı şu şekilde.
+
+209
+00:16:45,620 --> 00:16:47,620
+Böyle getiriyor.
+
+210
+00:16:47,620 --> 00:16:49,620
+Daha dedik spesifik olarak bunu.
+
+211
+00:16:49,620 --> 00:16:52,620
+Sadece efnevleri listele de diyebiliyorum.
+
+212
+00:16:52,620 --> 00:16:55,620
+O zaman sadece neleri çıkarıyor, efnevleri çıkarıyor.
+
+213
+00:16:55,620 --> 00:16:57,620
+Bir de ne demiştik?
+
+214
+00:16:57,620 --> 00:17:00,620
+Eğer böyle sıra sıra ekmek istemiyorsam.
+
+215
+00:17:00,620 --> 00:17:02,620
+Çift slash atıyordum.
+
+216
+00:17:02,620 --> 00:17:04,619
+Direkt istediğim elemente yazıyordum.
+
+217
+00:17:04,619 --> 00:17:06,619
+İstediğim tege yazıyordum.
+
+218
+00:17:06,619 --> 00:17:08,619
+Yine aynen döndürdü.
+
+219
+00:17:08,619 --> 00:17:11,619
+Bu şekilde işlemler yapabiliyorum.
+
+220
+00:17:11,619 --> 00:17:14,619
+Dosyalımı bulma noktasında.
+
+221
+00:17:14,619 --> 00:17:23,339
+Şimdi bir ilk örneği buradan gösterelim.
+
+222
+00:17:23,339 --> 00:17:26,339
+Dedik ki böyle diyeyim.
+
+223
+00:17:26,339 --> 00:17:28,339
+Şu dosyalımızla ulaştık.
+
+224
+00:17:28,339 --> 00:17:33,339
+Şimdi örneğimizi, birinci örneğimizi buradan gösterelim bakalım.
+
+225
+00:17:33,339 --> 00:17:40,690
+Sizden ne istemiş birinci örnek?
+
+226
+00:17:40,690 --> 00:17:44,690
+Tüm çalışanların bilgilerini XPAT ve XQuery'de.
+
+227
+00:17:44,690 --> 00:17:49,690
+Şimdi normalde ben employee tablosundaki verileri listele deseydim.
+
+228
+00:17:49,690 --> 00:17:51,690
+Kayıtları listele deseydim.
+
+229
+00:17:51,690 --> 00:17:53,690
+SQL'de şu ifadeyi kullanıyordum.
+
+230
+00:17:53,690 --> 00:17:55,690
+Selek Yıldız from employee diyordum.
+
+231
+00:17:55,690 --> 00:17:58,690
+Şimdi XQuery'de yapacağımız olay.
+
+232
+00:17:58,690 --> 00:18:01,690
+Şu pet dediğimiz olay XPAT içerisinde tanımlı bir durum.
+
+233
+00:18:01,690 --> 00:18:04,690
+Aynen biz bunun XQuery içinde kullanıyoruz bu XPAT'i.
+
+234
+00:18:04,690 --> 00:18:06,690
+Ve şu şekilde yazıyoruz.
+
+235
+00:18:06,690 --> 00:18:09,690
+Yani şuraya git, şu yola git.
+
+236
+00:18:09,690 --> 00:18:11,690
+Buradan employee taglerini bul.
+
+237
+00:18:11,690 --> 00:18:14,690
+Ve bunu map bakımının en yapmış for ile yapıyoruz.
+
+238
+00:18:14,690 --> 00:18:20,690
+Yani for dedikten sonra şurada bir değişken tanımı var.
+
+239
+00:18:20,690 --> 00:18:25,690
+Değişken tanımlarının başına bir dolar işareti atıp gösteriyoruz.
+
+240
+00:18:25,690 --> 00:18:29,690
+Bu bizim klasik for döndüğümüzdeyken aslında imlecimiz olur diye böyle.
+
+241
+00:18:29,690 --> 00:18:34,690
+Neyin içinde olacaksa sıra sıra onu tarardı.
+
+242
+00:18:34,690 --> 00:18:37,690
+O imleç her döngü bittikçe bir alta inerdi.
+
+243
+00:18:37,690 --> 00:18:38,690
+Onu listelerdi.
+
+244
+00:18:38,690 --> 00:18:39,690
+Aynı olay var.
+
+245
+00:18:39,690 --> 00:18:41,690
+Şöyle bir X imlecim var gibi düşünün.
+
+246
+00:18:41,690 --> 00:18:45,690
+Bunu şuradaki verileri üzerinde tek tek okut diyorum.
+
+247
+00:18:45,690 --> 00:18:48,690
+Her defasında bu son açı olarak ne diyorum?
+
+248
+00:18:48,690 --> 00:18:51,690
+İşte okuduğun değerleri ekrana yazdır.
+
+249
+00:18:51,690 --> 00:18:57,309
+Şimdi ilk zamanlı dosyamda bunu çalıştırayım.
+
+250
+00:18:57,309 --> 00:19:05,309
+Bu arada yorum satırı yapmak için bu XQuery'de Basics'te şu iki tane gülen surat kullanıyorsunuz.
+
+251
+00:19:05,309 --> 00:19:09,309
+Şöyle iki gülen surat arasına yazdıklarınız.
+
+252
+00:19:09,309 --> 00:19:12,309
+Bunlar okunuyor yorum satırı olmuş oluyor.
+
+253
+00:19:12,309 --> 00:19:15,309
+Şimdi ben sorgumu yazdım buraya.
+
+254
+00:19:15,309 --> 00:19:19,309
+Bunu çalıştır dediğimde ne yapacak bana istediğim?
+
+255
+00:19:19,309 --> 00:19:21,309
+Employee kayıtlarını listelemez.
+
+256
+00:19:21,309 --> 00:19:27,309
+Ve onlar, o employee'ler, o düğümler değil bunların altı ekrana döndürdü.
+
+257
+00:19:27,309 --> 00:19:30,309
+Olay bu şekilde.
+
+258
+00:19:30,309 --> 00:19:40,549
+Daha sonra örneklerimizi artırarak devam edelim.
+
+259
+00:19:40,549 --> 00:19:42,549
+Neler yapabiliyormuşuz görelim.
+
+260
+00:19:43,549 --> 00:19:48,549
+Diğer soruda da bize diyor ki departmanların isimlerini bul.
+
+261
+00:19:48,549 --> 00:19:56,549
+Burada da normalde SQL'le yazsaydım departman isimlerini bulmak için departman tablosuna gider.
+
+262
+00:19:56,549 --> 00:19:58,549
+Select DNA'yım derdim.
+
+263
+00:19:58,549 --> 00:20:03,549
+Burada da yine şu dosyayı takip edeceğim.
+
+264
+00:20:03,549 --> 00:20:05,549
+Bunun içerisinde arayacağım.
+
+265
+00:20:05,549 --> 00:20:07,549
+Departman tag'leri içerisinde arayacağım.
+
+266
+00:20:07,549 --> 00:20:09,549
+Şu X'le böyle sıra sıra okuyacağım.
+
+267
+00:20:09,549 --> 00:20:11,549
+Hep bu inlecim olacak.
+
+268
+00:20:11,549 --> 00:20:13,549
+Ve en sonunda neyi döndüreceğim?
+
+269
+00:20:13,549 --> 00:20:15,549
+O okuduğum X'in içerisinde.
+
+270
+00:20:15,549 --> 00:20:18,549
+Çünkü X bana neydi? Departman tablosundaki bir düğüm.
+
+271
+00:20:18,549 --> 00:20:20,549
+İçeride bütün bilgiler listeyecek.
+
+272
+00:20:20,549 --> 00:20:24,549
+Departmanın adı, numarası, yöneticisinin SSN vesairesi.
+
+273
+00:20:24,549 --> 00:20:25,549
+Bunlar geliyor da.
+
+274
+00:20:25,549 --> 00:20:27,549
+Fakat ona ne diyorum?
+
+275
+00:20:27,549 --> 00:20:33,549
+Sadece isim istediği için o X'in içinde bulduğun teklerden DNA'yımları sadece döndür.
+
+276
+00:20:33,549 --> 00:20:35,549
+Yani return şu şekilde.
+
+277
+00:20:35,549 --> 00:20:40,549
+O X'in DNA'yımları dediğim zaman orada da yapacağı işlem.
+
+278
+00:20:40,549 --> 00:20:43,549
+Sadece bana gidip DNA'yımları listelemek olacak.
+
+279
+00:20:43,549 --> 00:20:50,019
+Bakın şu şekilde DNA'yımları getirmiş oldum.
+
+280
+00:20:50,019 --> 00:21:00,750
+Diğer bir örneğimize bakalım.
+
+281
+00:21:02,750 --> 00:21:04,750
+Burada ne diyor bize?
+
+282
+00:21:04,750 --> 00:21:09,750
+Seattle'da oturan işçinin, işçilerin adını ve doğum tarihini listeyen sorgu.
+
+283
+00:21:10,750 --> 00:21:12,750
+Bu örnekler zaten bizim derslerde.
+
+284
+00:21:12,750 --> 00:21:14,750
+Röntgen boyunca yaptığımız örneklerde.
+
+285
+00:21:14,750 --> 00:21:17,750
+Mesela biz bunu SQL'da nasıl diyorduk?
+
+286
+00:21:17,750 --> 00:21:20,750
+İşte şurada oturan kişi dediği zaman.
+
+287
+00:21:20,750 --> 00:21:24,750
+Diyorduk ki bunun koşulu şu adres sütununda.
+
+288
+00:21:24,750 --> 00:21:27,750
+Hatırlayın adres sütunundaki veriler.
+
+289
+00:21:27,750 --> 00:21:30,750
+İşte cadde adı, numarası vesairesi bir sürü bilgi vardı.
+
+290
+00:21:30,750 --> 00:21:33,750
+Bir de şehirin adı vardı, eyaletin adı vardı.
+
+291
+00:21:33,750 --> 00:21:37,750
+O yüzden diyorduk ki adres içerisindeki bilgilerde şunu içeren.
+
+292
+00:21:37,750 --> 00:21:39,750
+Seattle'ı içeren kayıtları bu.
+
+293
+00:21:39,750 --> 00:21:43,750
+Onu şöyle yüzdelik işaretler arasında yazıp gösteriyorduk.
+
+294
+00:21:43,750 --> 00:21:45,750
+Bunu da hatırlamış olalı.
+
+295
+00:21:45,750 --> 00:21:47,750
+Onun sentaksı bu şekildeydi.
+
+296
+00:21:47,750 --> 00:21:49,750
+Şimdi normal SQL'de bakın böyle yazıyormuşum.
+
+297
+00:21:49,750 --> 00:21:51,750
+Adı ve doğum tarihi bul, employee'den.
+
+298
+00:21:51,750 --> 00:21:53,750
+İşte adresi şu şekilde olan.
+
+299
+00:21:53,750 --> 00:21:56,750
+XQuery'de bunu nasıl yapıyormuşum?
+
+300
+00:21:56,750 --> 00:21:58,750
+Yine for kullandım.
+
+301
+00:21:58,750 --> 00:22:00,750
+Değişkini mix.
+
+302
+00:22:00,750 --> 00:22:01,750
+Bunu nerede alıyorum?
+
+303
+00:22:01,750 --> 00:22:03,750
+Şu losya yolunda, employee'de.
+
+304
+00:22:03,750 --> 00:22:06,750
+Evet, burada da bu XQuery'ye özgü bir fonksiyon.
+
+305
+00:22:06,750 --> 00:22:08,750
+Matches fonksiyonu.
+
+306
+00:22:08,750 --> 00:22:13,740
+Bunu kullanarak ne yapıyorum?
+
+307
+00:22:13,740 --> 00:22:18,740
+O adres taginde Seattle olan o duymları onlar istiyorum.
+
+308
+00:22:18,740 --> 00:22:21,740
+O kayıtları istediğimi söylüyorum.
+
+309
+00:22:21,740 --> 00:22:23,740
+Yine özel bir fonksiyon.
+
+310
+00:22:23,740 --> 00:22:24,740
+İçerisinde tanımlı.
+
+311
+00:22:24,740 --> 00:22:26,740
+Bunu kullanarak ne yapıyorum?
+
+312
+00:22:26,740 --> 00:22:29,740
+Adres taginde Seattle içerenleri bunlar üzerinde araştır.
+
+313
+00:22:29,740 --> 00:22:31,740
+Bunlar üzerinde bu.
+
+314
+00:22:31,740 --> 00:22:33,740
+Image Döndür yürütlüyorum.
+
+315
+00:22:33,740 --> 00:22:38,740
+Ve en sonunda istediğim o gidilen duymlardaki FN ve VDET kısımları.
+
+316
+00:22:38,740 --> 00:22:40,740
+Bu tagler arasındaki bilgiler.
+
+317
+00:22:40,740 --> 00:22:43,740
+Bunu döndürüzeyim de bakın ekrana da.
+
+318
+00:22:43,740 --> 00:22:44,740
+Ne yapıyormuş?
+
+319
+00:22:44,740 --> 00:22:46,740
+İki tane kayıt dönmüş.
+
+320
+00:22:46,740 --> 00:22:48,740
+İkisini de bu şekilde yazdırmış.
+
+321
+00:22:48,740 --> 00:22:51,740
+Ekstra bir bilgi olarak.
+
+322
+00:22:51,740 --> 00:22:53,740
+Şimdi sonuçlar bizde hep neydi?
+
+323
+00:22:53,740 --> 00:22:55,740
+Böyle tagli bir şekilde gösteriliyordu.
+
+324
+00:22:55,740 --> 00:22:59,740
+Eğer ben otlaştık sonundaki tagleri istemiyorsam.
+
+325
+00:22:59,740 --> 00:23:01,740
+Sadece datayı istiyorsam.
+
+326
+00:23:01,740 --> 00:23:03,740
+Zaten şöyle bir ifadeyle de.
+
+327
+00:23:03,740 --> 00:23:05,740
+Şu return dediğim kısmı.
+
+328
+00:23:06,740 --> 00:23:08,740
+Parantez içine alıp gösterdiğimde.
+
+329
+00:23:08,740 --> 00:23:10,740
+Bu şekilde data dediğimde başına.
+
+330
+00:23:10,740 --> 00:23:11,740
+Ne yapıyormuş?
+
+331
+00:23:11,740 --> 00:23:13,740
+Sadece datasını yazdırıyormuş.
+
+332
+00:23:13,740 --> 00:23:17,180
+Bu da bu şekilde.
+
+333
+00:23:17,180 --> 00:23:33,029
+Şimdi diğer bir örneğimize bakalım.
+
+334
+00:23:33,029 --> 00:23:41,210
+Burada artık iki tablo kullanımına geçiyoruz.
+
+335
+00:23:41,210 --> 00:23:43,210
+Soruyu inceleyelim.
+
+336
+00:23:43,210 --> 00:23:45,210
+SQL çözümüne bakalım.
+
+337
+00:23:45,210 --> 00:23:47,210
+Bize bir isim veriyor.
+
+338
+00:23:47,210 --> 00:23:50,210
+Bu çalışanın çalıştığı projelerin numarasını iste.
+
+339
+00:23:50,210 --> 00:23:53,210
+Çalışanın çalıştığı projelerin numarası.
+
+340
+00:23:53,210 --> 00:23:54,210
+Neydi o?
+
+341
+00:23:54,210 --> 00:23:56,210
+Employee tablosunda.
+
+342
+00:23:56,210 --> 00:23:59,210
+Adı verilen çalışanın çalıştığı projenin numarasını
+
+343
+00:23:59,210 --> 00:24:03,210
+olmak için SSN'ler üzerinden tabloları joinlerdim.
+
+344
+00:24:03,210 --> 00:24:04,210
+Bu adamları eşitlerdim.
+
+345
+00:24:04,210 --> 00:24:06,210
+Pinoy'a giderdim.
+
+346
+00:24:06,210 --> 00:24:09,210
+Aynen öyle SSN'leri eşitledim.
+
+347
+00:24:09,210 --> 00:24:10,210
+Şart kısımında.
+
+348
+00:24:10,210 --> 00:24:13,210
+Adı da o Franklin Bonk olarak verdiği için bunları yazdım.
+
+349
+00:24:13,210 --> 00:24:15,210
+Pinoy'u seçtim.
+
+350
+00:24:15,210 --> 00:24:18,210
+Şimdi bunu x squared'e nasıl yazıyorum?
+
+351
+00:24:18,210 --> 00:24:24,490
+Önce ilgili alanları çekip almak adına iki tane forum var.
+
+352
+00:24:24,490 --> 00:24:27,490
+Bunların bir tanesi Employee tablosunda gidecek.
+
+353
+00:24:27,490 --> 00:24:29,490
+İşte o SSN'i çekecek.
+
+354
+00:24:29,490 --> 00:24:31,490
+FNM'i, NASNM'i çekecek oradan.
+
+355
+00:24:31,490 --> 00:24:36,490
+D&D Microsoft'a gidip SSN'i çekecek ki ben şu ver kısmında
+
+356
+00:24:36,490 --> 00:24:38,490
+onları bir eşleyeyim.
+
+357
+00:24:38,490 --> 00:24:39,490
+Birleştireyim.
+
+358
+00:24:39,490 --> 00:24:41,490
+Bu x squared'e eşit olan kayıtları alayım.
+
+359
+00:24:41,490 --> 00:24:43,490
+Bu arada bir koşul söyleyebileyim ona.
+
+360
+00:24:43,490 --> 00:24:45,490
+O yüzden şimdi sıra sıra bakın ne yapıyorum?
+
+361
+00:24:45,490 --> 00:24:48,490
+Bir kere az önce biz ne yapıyorduk hep?
+
+362
+00:24:48,490 --> 00:24:53,490
+For'da şurayı for x in dediğimiz zaman yolu böyle uzun uzun yazıyorduk.
+
+363
+00:24:53,490 --> 00:24:56,490
+Şimdi bunu her defasında böyle uzun uzun diye yazmak yerine
+
+364
+00:24:56,490 --> 00:25:00,490
+şu tamamını bir değişkene atarsak işimiz kolaylaşır.
+
+365
+00:25:00,490 --> 00:25:04,490
+O yüzden şu dosyayı diyorum com isimini bir değişkene atayım.
+
+366
+00:25:04,490 --> 00:25:07,490
+Değişken tanımamak için de let ile bunu yapıyorum.
+
+367
+00:25:07,490 --> 00:25:09,490
+Dolar işaretimle bir isim veriyorum.
+
+368
+00:25:09,490 --> 00:25:11,490
+Bu şekilde atamamı yaptım.
+
+369
+00:25:11,490 --> 00:25:16,490
+Şimdi artık bundan sonra bu oluşturacağım ümileşler
+
+370
+00:25:16,490 --> 00:25:20,490
+For döngüsündeki bu satır okuyucuları her defasında uzun uzun
+
+371
+00:25:20,490 --> 00:25:22,490
+ok ve serde yazmama gerek kalmayacak.
+
+372
+00:25:22,490 --> 00:25:26,490
+Sadece o değişkenin adını verip hangi taglere gitmesini istediğimi de
+
+373
+00:25:26,490 --> 00:25:27,490
+bakın iki slash attım.
+
+374
+00:25:27,490 --> 00:25:29,490
+Bu şekilde gösterebiliyorum.
+
+375
+00:25:29,490 --> 00:25:33,490
+Şimdi ilk for'da amp dedim.
+
+376
+00:25:33,490 --> 00:25:35,490
+Bunu amp olarak isimlendirmişim.
+
+377
+00:25:35,490 --> 00:25:39,490
+Gitsin employee taglerini okusun yani employee düğümlerini okusun tek tek.
+
+378
+00:25:39,490 --> 00:25:42,490
+Oralardan at diye bir değişken tanımadım.
+
+379
+00:25:42,490 --> 00:25:43,490
+F name'ı oraya atasın.
+
+380
+00:25:43,490 --> 00:25:46,490
+Soyat dedim last name'i alsın atasın.
+
+381
+00:25:46,490 --> 00:25:48,490
+İşte TCA dedim.
+
+382
+00:25:48,490 --> 00:25:53,490
+O da kimlik umasını şey yapsın diye temsil etsin diye böyle bir ifade kullanmış.
+
+383
+00:25:53,490 --> 00:25:55,490
+Onu da neye atıyorum?
+
+384
+00:25:55,490 --> 00:25:56,490
+Ss'ye atıyorum.
+
+385
+00:25:56,490 --> 00:25:57,490
+Yine dikkat.
+
+386
+00:25:57,490 --> 00:26:00,490
+Attribute'lar at ile belirtilmeli.
+
+387
+00:26:00,490 --> 00:26:02,490
+Bu mutlaka at'e koyuyorum.
+
+388
+00:26:02,490 --> 00:26:07,490
+Ondan sonra bunun attribute olduğunu beleşek şekilde yazıyorum.
+
+389
+00:26:07,490 --> 00:26:11,490
+Şimdi bu her bir düğümdeki bu atamaları yaptım.
+
+390
+00:26:11,490 --> 00:26:12,490
+Aldım atosat vesaireyi.
+
+391
+00:26:12,490 --> 00:26:15,490
+Daha sonra ikinci tablam neydi?
+
+392
+00:26:15,490 --> 00:26:16,490
+Workzone tablasıydı.
+
+393
+00:26:16,490 --> 00:26:18,490
+Aynı olayı onda yapıyorum.
+
+394
+00:26:18,490 --> 00:26:19,490
+Dosyam belli.
+
+395
+00:26:19,490 --> 00:26:21,490
+Company example şurdurken.
+
+396
+00:26:21,490 --> 00:26:23,490
+O gitsin ne yapsın?
+
+397
+00:26:23,490 --> 00:26:25,490
+Workzone taglerini bulsun.
+
+398
+00:26:25,490 --> 00:26:28,490
+Workzone tablası tüle alakalı kısımları.
+
+399
+00:26:28,490 --> 00:26:30,490
+Oralardan neler istiyorum?
+
+400
+00:26:30,490 --> 00:26:31,490
+ESSM'leri.
+
+401
+00:26:31,490 --> 00:26:35,490
+Onlar yine attribute olarak tanımlı olduğu için böyle bir at kullanıyorum.
+
+402
+00:26:35,490 --> 00:26:39,490
+Başına bu şekilde çekiyorum o verileri.
+
+403
+00:26:40,490 --> 00:26:42,490
+Şimdi istediğim veriler elimde.
+
+404
+00:26:42,490 --> 00:26:45,490
+Sıra geldi bunların koşulluğunu sağlamaya.
+
+405
+00:26:45,490 --> 00:26:48,490
+At dediğim Franklin olsun diyorum.
+
+406
+00:26:48,490 --> 00:26:50,490
+Soyat dediğim Long olsun.
+
+407
+00:26:50,490 --> 00:26:52,490
+Çünkü koşullarım öyleydi.
+
+408
+00:26:52,490 --> 00:26:58,490
+Ve bir de şunun TC dediğim tanımladığım kısmıyla bunun ETC dediğim kısmı.
+
+409
+00:26:58,490 --> 00:27:00,490
+Bunlar birbirine eşit olsun.
+
+410
+00:27:00,490 --> 00:27:05,490
+Bu kayıt benim aradım sonuçları getirecek.
+
+411
+00:27:05,490 --> 00:27:08,490
+Bu şartı sağlayan kayıt bana aradım sonuçları getirecek diyorum.
+
+412
+00:27:08,490 --> 00:27:12,490
+Daha sonra neyi döndürmesini istiyorum bu arada?
+
+413
+00:27:12,490 --> 00:27:15,490
+Bu gelen düğümde çünkü şu an bir sürü bilgi var.
+
+414
+00:27:15,490 --> 00:27:17,490
+Okişi ile alakalı.
+
+415
+00:27:17,490 --> 00:27:19,490
+Ben buradan neyi istemişim?
+
+416
+00:27:19,490 --> 00:27:25,490
+O şurada tanımladığımın Pino olsun eyse bana onu getirsin.
+
+417
+00:27:25,490 --> 00:27:29,490
+Ola yine bir attribute olduğu için At Pino demişim.
+
+418
+00:27:29,490 --> 00:27:35,490
+Return olarak At Pino'yu döndürmesini istiyorum.
+
+419
+00:27:35,490 --> 00:27:39,089
+Bu şekilde tek tek aldım.
+
+420
+00:27:39,089 --> 00:27:42,089
+Şartları sağlayanları yazdım.
+
+421
+00:27:42,089 --> 00:27:48,089
+En son da neyi döndürmesini istiyorsam onu belirtmiş oluyorum.
+
+422
+00:27:48,089 --> 00:28:00,809
+Diğer bir örneğimiz.
+
+423
+00:28:00,809 --> 00:28:05,809
+Bu da yine iki tablo kullanacağımız bir örnek.
+
+424
+00:28:05,809 --> 00:28:07,809
+Burada ne demiş bize?
+
+425
+00:28:07,809 --> 00:28:12,809
+Şirketin satış departmanının her şeride ofisa olduğundan sorgu.
+
+426
+00:28:12,809 --> 00:28:15,809
+Departman adından ne yapıyorum?
+
+427
+00:28:15,809 --> 00:28:18,809
+Açalım şuradan göstermiş olalım.
+
+428
+00:28:18,809 --> 00:28:21,809
+Seris Departmanının nerelerde ofisi var?
+
+429
+00:28:21,809 --> 00:28:23,809
+Onu istiyorsa ne yapıyorduk?
+
+430
+00:28:23,809 --> 00:28:27,809
+Şuradaki dinandırlardan gidiyorduk, eşliyorduk burayı.
+
+431
+00:28:27,809 --> 00:28:30,809
+Ve bunları buluyorduk, listeliyorduk.
+
+432
+00:28:30,809 --> 00:28:34,539
+Bunları bulmamı istiyor.
+
+433
+00:28:34,539 --> 00:28:38,539
+Bir de bunları alfabetik olarak sıralamamı istiyor.
+
+434
+00:28:38,539 --> 00:28:47,539
+Şimdi bulma kısmında az önce yaptığımız örnekler tablolar ise oradan alacağım ileride eşlemek üzere.
+
+435
+00:28:47,539 --> 00:28:49,539
+Bazı verileri seçmem gerekecek.
+
+436
+00:28:49,539 --> 00:28:53,539
+Bir kere Departman tablosuna gidiyorum.
+
+437
+00:28:53,539 --> 00:28:56,539
+Oralardan Departman ismini alıyorum.
+
+438
+00:28:56,539 --> 00:29:00,539
+Çünkü Departman ismi sales mi ver kısmına bunu yazacağım.
+
+439
+00:29:00,539 --> 00:29:02,539
+Ve isimi buna atadım.
+
+440
+00:29:02,539 --> 00:29:04,539
+Sonra din number'ı alıyorum.
+
+441
+00:29:04,539 --> 00:29:05,539
+Din number benim için önemli olacak.
+
+442
+00:29:05,539 --> 00:29:08,539
+Çünkü eşleme yapacağım onları yine ver koşulunda.
+
+443
+00:29:08,539 --> 00:29:10,539
+Ona DN1 demişim.
+
+444
+00:29:10,539 --> 00:29:15,539
+Diğer tabloda dep location tablosu için olana DN2 demişim.
+
+445
+00:29:15,539 --> 00:29:16,539
+Öyle tanımlamışım.
+
+446
+00:29:16,539 --> 00:29:19,539
+Bunları da ileride eşleyeceğim için din number'ları aldım.
+
+447
+00:29:19,539 --> 00:29:21,539
+Bu değişkenleri atadım.
+
+448
+00:29:21,539 --> 00:29:28,539
+Ve bir de burada en son ne döndüreceksem onu da burada tanımlayabilirim.
+
+449
+00:29:28,539 --> 00:29:31,539
+En son return'de direkt onun adını yazmak adına.
+
+450
+00:29:31,539 --> 00:29:37,539
+Hani yukarıda mesela bir önceki örnekte Pinot'u uzun uzun yazmıştım.
+
+451
+00:29:37,539 --> 00:29:40,539
+Şunun bulduğum Pinot'ya git şeklinde.
+
+452
+00:29:40,539 --> 00:29:45,539
+Ama bunu şuranın içerisinde bir değişken tanımlayıp atasaydım şu ifadeyi.
+
+453
+00:29:45,539 --> 00:29:49,539
+En son yine sadece o değişkenin adını yazıp return diyebilirdim.
+
+454
+00:29:49,539 --> 00:29:51,539
+Burada onu yapmışız aslında.
+
+455
+00:29:51,539 --> 00:29:53,539
+Bu da d-log diye bir değişken tanımla.
+
+456
+00:29:53,539 --> 00:29:57,539
+Location'ı da ona attı demişim ki ileride sen bunu zaten return edeceksin.
+
+457
+00:29:57,539 --> 00:29:59,539
+O yüzden elinde hazır bulunsun.
+
+458
+00:29:59,539 --> 00:30:03,539
+Şimdi buradaki yapacağım eşlemeler ver koşulunda.
+
+459
+00:30:03,539 --> 00:30:06,539
+Şartım ne ile ismi sales olacaktı.
+
+460
+00:30:06,539 --> 00:30:11,539
+Ve şu ikisi de birbiriyle din number'lar birbiriyle eşlenecekti.
+
+461
+00:30:12,539 --> 00:30:17,539
+Bunu bulan bu eşlenmeyi sağlayan o notları bana döndürecek.
+
+462
+00:30:17,539 --> 00:30:22,539
+Burada da bir sıralama istemiş benden alfabetik bir sıralama yaptırmış.
+
+463
+00:30:22,539 --> 00:30:23,539
+Onu da neyle yapıyor?
+
+464
+00:30:23,539 --> 00:30:28,539
+Order bar ile yapıyor ve bu şekilde d-log isimlerine göre,
+
+465
+00:30:28,539 --> 00:30:38,910
+location isimlerine göre sıralı bir şekilde ristelemiş oluyoruz.
+
+466
+00:30:38,910 --> 00:30:40,910
+Bu örneğimiz de bu şekilde.
+
+467
+00:30:52,299 --> 00:30:58,299
+Evet bir sonraki örneğimizde artık tablosu sayımız 3'e çıkıyor.
+
+468
+00:30:58,299 --> 00:31:02,299
+Bu da daha önceki statlarımızda olan bir örnekte.
+
+469
+00:31:02,299 --> 00:31:04,299
+Ne diyor?
+
+470
+00:31:04,299 --> 00:31:11,299
+Elizabeth isimli akrabası olan çalışanın yöneticisinin adının soyadını bulan sorgu.
+
+471
+00:31:11,299 --> 00:31:14,299
+Tablodan hatırlayalım.
+
+472
+00:31:14,299 --> 00:31:21,730
+Elizabeth isimli akrabası olan çalışan kim?
+
+473
+00:31:22,730 --> 00:31:27,730
+Şu bu kişinin, o kişiyle geleceğimlerden buradan bulacağım.
+
+474
+00:31:27,730 --> 00:31:33,730
+Bu kişinin yöneticisinin ismi dediğine göre onun süper aseslerini bulup,
+
+475
+00:31:33,730 --> 00:31:40,730
+o süper asesine ait FNM vs. artık bana neyi sormuşsa orada onlara ulaşacağım.
+
+476
+00:31:40,730 --> 00:31:46,099
+Şimdi normalde bunu SQL sorgusuyla nasıl yazıyorduk?
+
+477
+00:31:46,099 --> 00:31:49,099
+Geride demiştik ki iki tane employ kullanacağız.
+
+478
+00:31:49,099 --> 00:31:51,099
+Çünkü şöyleydi.
+
+479
+00:31:51,099 --> 00:31:57,099
+Ben Tandem'den kalkıp bir kere employee'ye gittiğimde,
+
+480
+00:31:57,099 --> 00:32:02,099
+evet ilk etapta SSN'lere eşlediğimde o çalışanın kaydını bulacaktım.
+
+481
+00:32:02,099 --> 00:32:07,099
+Ama çalışanın şu yöneticisinin süper SSN'den, yöneticisinin bu kaydından,
+
+482
+00:32:07,099 --> 00:32:11,099
+kimlik numarasına tekrar o yöneticinin adına soyadımı ulaşmak için demiştim ki
+
+483
+00:32:11,099 --> 00:32:15,099
+bir tane daha employee tablosu kullanacağım ki
+
+484
+00:32:15,099 --> 00:32:18,099
+o süper SSN'i gidip buradaki SSN'de bulacağım.
+
+485
+00:32:18,099 --> 00:32:20,099
+O adamın kaydına erişeceğim.
+
+486
+00:32:20,099 --> 00:32:27,099
+O halde bunun için iki tane employee tablosu kullanmıştık ve zaten dependent tablomuz var demiştik.
+
+487
+00:32:27,099 --> 00:32:31,099
+Oralarda şartımızı nasıl sağlıyorduk?
+
+488
+00:32:31,099 --> 00:32:33,099
+Dependent name Elizabeth olacaktı.
+
+489
+00:32:33,099 --> 00:32:41,099
+İlk etapta Dependent'taki iyi SSN ile o ilk employee tablosunun SSN'i eşleyecektim.
+
+490
+00:32:41,099 --> 00:32:47,099
+Sonraki aşamada da o ilk employee'deki süper SSN'i gidip
+
+491
+00:32:47,099 --> 00:32:50,099
+ikinci employee'nin SSN'i ile eşleyecektim ki
+
+492
+00:32:50,099 --> 00:32:54,099
+artık o yöneticinin bütün bilgileri,
+
+493
+00:32:54,099 --> 00:32:56,099
+o da sonuçta bir çalışandı o yöneticide,
+
+494
+00:32:56,099 --> 00:32:58,099
+onun da bilgileri yer alıyordu o tabloda.
+
+495
+00:32:58,099 --> 00:33:00,099
+Bu şekilde erişebiliyordu.
+
+496
+00:33:00,099 --> 00:33:05,099
+Şimdi bunu X square'de yaparken
+
+497
+00:33:05,099 --> 00:33:10,099
+tablo sayım 3 olduğuma göre her 3 tablodan da alacağım.
+
+498
+00:33:10,099 --> 00:33:12,099
+Veriler var.
+
+499
+00:33:12,099 --> 00:33:14,099
+Bu modları bu şekilde okumam gerekiyor.
+
+500
+00:33:14,099 --> 00:33:21,099
+Diyorum ki employee'ye git bir
+
+501
+00:33:21,099 --> 00:33:25,099
+etece yine SSN olarak düşünelim.
+
+502
+00:33:25,099 --> 00:33:27,099
+SSN'ini al, bunu at.
+
+503
+00:33:27,099 --> 00:33:31,099
+Sonra onun süper SSN'ini al,
+
+504
+00:33:31,099 --> 00:33:33,099
+bu değişkeni at.
+
+505
+00:33:33,099 --> 00:33:36,099
+Diğer employee'den de ne yap?
+
+506
+00:33:36,099 --> 00:33:38,099
+SSN'ini al, bunu at.
+
+507
+00:33:38,099 --> 00:33:43,099
+Çünkü ileride şu süper SSN ile bunu eşitleyeceğiz.
+
+508
+00:33:43,099 --> 00:33:47,099
+Daha sonra benden bir de çıktığı olarak
+
+509
+00:33:47,099 --> 00:33:50,099
+o yöneticinin adını ve sualinin istediğine göre
+
+510
+00:33:50,099 --> 00:33:53,099
+onları da alıp şu değişkenleri atıyabiliyorum.
+
+511
+00:33:53,099 --> 00:33:56,099
+Bir de tabii dependent almam lazım.
+
+512
+00:33:56,099 --> 00:33:58,099
+Bana bir dependent ismi verdiğine göre
+
+513
+00:33:58,099 --> 00:34:00,099
+dependent name'i alacağım.
+
+514
+00:34:00,099 --> 00:34:02,099
+Şunu anlatırdım bu da eşken olarak.
+
+515
+00:34:02,099 --> 00:34:04,099
+Bir de onun ESSN'ini alıyorum,
+
+516
+00:34:04,099 --> 00:34:06,099
+onu da bunu atacağım ki ileride onu da neyle?
+
+517
+00:34:06,099 --> 00:34:11,099
+Diğer koşulunla şunlarla şu iki de eşkeni eşleyeceğim.
+
+518
+00:34:11,099 --> 00:34:15,099
+Bu şekilde ilgili alanları çektim çıkardım.
+
+519
+00:34:15,099 --> 00:34:17,099
+Sıra kaldı bunları eşlemeye.
+
+520
+00:34:17,099 --> 00:34:19,099
+İsm-Elizabeth,
+
+521
+00:34:19,099 --> 00:34:22,099
+TCL yani SSN'ler dediğim,
+
+522
+00:34:22,099 --> 00:34:25,099
+dependent'taki ile birinci employee'deki
+
+523
+00:34:25,099 --> 00:34:29,099
+ve o birinci employee'deki süper SSN alanı ile
+
+524
+00:34:29,099 --> 00:34:31,099
+diğer kullandığım employee'deki de
+
+525
+00:34:31,099 --> 00:34:34,099
+direkt SSN alanının eşlenmesi şeklinde.
+
+526
+00:34:35,099 --> 00:34:38,099
+Buradan daha sonra döndüreceğim şey ne olacaktı?
+
+527
+00:34:38,099 --> 00:34:42,099
+En son kullandığım employee tablosuna
+
+528
+00:34:42,099 --> 00:34:47,099
+Fname, lastname yani adı ve soyadını almak olacaktı.
+
+529
+00:34:47,099 --> 00:34:50,099
+Bu şekilde yazdığım zaman da
+
+530
+00:34:50,099 --> 00:34:51,099
+neyi çıkarıyor bana?
+
+531
+00:34:51,099 --> 00:34:54,099
+O kişinin ilgili SSN'in ilgili yöneticinin
+
+532
+00:34:54,099 --> 00:34:56,099
+adını ve soyadını istediği.
+
+533
+00:34:56,099 --> 00:35:01,610
+Evet, temel sentaksı bu şekilde bu x-query sorgularını.
+
+534
+00:35:01,610 --> 00:35:07,900
+Son bir örneğimizle de
+
+535
+00:35:07,900 --> 00:35:10,900
+daha fazla daha karmaşık durumdan alınıyor.
+
+536
+00:35:10,900 --> 00:35:12,900
+Mantık yine değişmiyor.
+
+537
+00:35:12,900 --> 00:35:15,900
+Bu yine daha önceki derslerimizde gördüğümüz
+
+538
+00:35:15,900 --> 00:35:17,900
+bir yapıyı da hatırlarsanız
+
+539
+00:35:17,900 --> 00:35:19,900
+kesişimler alıyorduk sorgularda.
+
+540
+00:35:19,900 --> 00:35:22,900
+İşte Operating System Projesi'nde çalışanla
+
+541
+00:35:22,900 --> 00:35:25,900
+Software Departma'nda çalışan iki ayrı sorgu vardı.
+
+542
+00:35:25,900 --> 00:35:27,900
+Bunları kesiştiriyorduk.
+
+543
+00:35:27,900 --> 00:35:29,900
+Hem o sorgunun hem birinci sorgunun
+
+544
+00:35:29,900 --> 00:35:31,900
+sunula çıkan kayıtlarda bu adamın
+
+545
+00:35:31,900 --> 00:35:33,900
+ilk ayda olsun hem de ikinci sorgunun
+
+546
+00:35:33,900 --> 00:35:35,900
+sunarında çıkan kayıtlarda
+
+547
+00:35:35,900 --> 00:35:38,900
+aynı kişi olabilsin diye kesişim yapıyorduk.
+
+548
+00:35:38,900 --> 00:35:40,900
+Bunun için mesela önce neydi?
+
+549
+00:35:40,900 --> 00:35:42,900
+Operating System'da çalışanların
+
+550
+00:35:42,900 --> 00:35:44,900
+adını soyadını buluyorduk burada.
+
+551
+00:35:44,900 --> 00:35:47,900
+Bunda da ikinci sorguda da neydi?
+
+552
+00:35:47,900 --> 00:35:49,900
+Software Departma'nda çalışanların
+
+553
+00:35:49,900 --> 00:35:50,900
+adını soyadını buluyorduk.
+
+554
+00:35:50,900 --> 00:35:52,900
+Ve intersect dediğimizde
+
+555
+00:35:52,900 --> 00:35:54,900
+SQL versiyonu böyleydi.
+
+556
+00:35:54,900 --> 00:35:58,900
+X-query'de de ver koşulunda
+
+557
+00:35:58,900 --> 00:36:01,900
+tek tek bütün bu şuradaki verlerde
+
+558
+00:36:01,900 --> 00:36:04,900
+neleri eşliyorsam bunları bulup
+
+559
+00:36:04,900 --> 00:36:08,900
+ver koşulunda hepsini eşitliyorum.
+
+560
+00:36:08,900 --> 00:36:11,900
+O yüzden sıra sıra hangi tablolardan
+
+561
+00:36:11,900 --> 00:36:13,900
+hangi veriler çekilmesi gerekiyorsa
+
+562
+00:36:13,900 --> 00:36:14,900
+hepsini alıyorum.
+
+563
+00:36:14,900 --> 00:36:18,900
+Mesela şimdi ilk sorgu için düşünün.
+
+564
+00:36:18,900 --> 00:36:20,900
+Proje adı verdiğine göre
+
+565
+00:36:20,900 --> 00:36:22,900
+proje adını çekeyim.
+
+566
+00:36:22,900 --> 00:36:24,900
+İleride koşulda bunu yazacağım
+
+567
+00:36:24,900 --> 00:36:26,900
+çünkü proje adı şu olanlar diyeceğim.
+
+568
+00:36:26,900 --> 00:36:29,900
+Daha sonra projenin numarasını da
+
+569
+00:36:29,900 --> 00:36:32,900
+çekeyim çünkü proje numarasından
+
+570
+00:36:32,900 --> 00:36:35,900
+çıkıp, böyle hatırlayalım,
+
+571
+00:36:35,900 --> 00:36:37,900
+proje numarasından çıkıp
+
+572
+00:36:37,900 --> 00:36:39,900
+P&O'ya gideceğim.
+
+573
+00:36:39,900 --> 00:36:41,900
+Buradaki SSN'den de buraya geleceğim
+
+574
+00:36:41,900 --> 00:36:44,900
+ki kişinin adını soyadına ulaşabileyim.
+
+575
+00:36:44,900 --> 00:36:47,900
+O yüzden projenin de numarasını aldım.
+
+576
+00:36:47,900 --> 00:36:49,900
+Daha sonra aradaki employee ile
+
+577
+00:36:49,900 --> 00:36:50,900
+bağlantımı sağlayacak
+
+578
+00:36:50,900 --> 00:36:53,900
+work zone tablosundan P&O'yu çektim.
+
+579
+00:36:53,900 --> 00:36:55,900
+İleride dediğimiz gibi
+
+580
+00:36:55,900 --> 00:36:57,900
+P&O'ları eşleyebilmek için.
+
+581
+00:36:57,900 --> 00:37:00,900
+Ve bunun da yine SSN'i aldım buradan.
+
+582
+00:37:00,900 --> 00:37:02,900
+Bakalımlar yine attribute olduğu için
+
+583
+00:37:02,900 --> 00:37:04,900
+adı koymuşlar başına.
+
+584
+00:37:04,900 --> 00:37:07,900
+Bunu da yine bölgelerine atadım.
+
+585
+00:37:07,900 --> 00:37:09,900
+Daha sonra employee tablosundayım.
+
+586
+00:37:09,900 --> 00:37:11,900
+Oradan da çekeceğim şeyler.
+
+587
+00:37:11,900 --> 00:37:13,900
+İleride listelemek üzere at soyadı.
+
+588
+00:37:13,900 --> 00:37:15,900
+Fname lastname'i aldım.
+
+589
+00:37:15,900 --> 00:37:18,900
+SSN'i de aldım çünkü şu.
+
+590
+00:37:18,900 --> 00:37:21,900
+Ve work zone'daki SSN'le eşleyeceğim
+
+591
+00:37:21,900 --> 00:37:23,900
+onu da ver koşulumla.
+
+592
+00:37:23,900 --> 00:37:26,900
+Ve diğer sorgu için
+
+593
+00:37:26,900 --> 00:37:29,900
+artık yine bir ikinci sorgum vardı şurada.
+
+594
+00:37:29,900 --> 00:37:31,900
+Orada ne istiyordu benden?
+
+595
+00:37:31,900 --> 00:37:33,900
+Software departmanda çalışanlar.
+
+596
+00:37:33,900 --> 00:37:35,900
+O yüzden oradaki eşlemeleri yapmak için
+
+597
+00:37:35,900 --> 00:37:37,900
+de bir Dino'yu çekiyorum.
+
+598
+00:37:37,900 --> 00:37:41,900
+Ki software departmanda çalışanı nasıl buluyorduk?
+
+599
+00:37:41,900 --> 00:37:43,900
+Onu da kısaca hatırlayalım.
+
+600
+00:37:43,900 --> 00:37:46,900
+Software departmanda çalışanı bulmak için de
+
+601
+00:37:46,900 --> 00:37:51,900
+D number üzerinden SSN employee tablosuna gidiyorduk.
+
+602
+00:37:51,900 --> 00:37:53,900
+O yüzden şu iki tabloyu kullanarak
+
+603
+00:37:53,900 --> 00:37:54,900
+ne yapıyordu?
+
+604
+00:37:54,900 --> 00:37:56,900
+Bir ismi verilen bir departmanda
+
+605
+00:37:56,900 --> 00:37:58,900
+çalışanları bulabiliyorduk.
+
+606
+00:37:59,900 --> 00:38:02,900
+Bunun için Dino'lar üzerinden eşlemeyi yapacağım için de
+
+607
+00:38:02,900 --> 00:38:04,900
+employee'de ne yapıyorum?
+
+608
+00:38:04,900 --> 00:38:05,900
+Dino'yu da alıyorum.
+
+609
+00:38:05,900 --> 00:38:07,900
+Şu eşkini atıyorum.
+
+610
+00:38:07,900 --> 00:38:10,900
+Daha sonra son olarak departmanda tablosundan
+
+611
+00:38:10,900 --> 00:38:11,900
+ne isteyeceğim?
+
+612
+00:38:11,900 --> 00:38:12,900
+Dino'ya bir çekeceğim.
+
+613
+00:38:12,900 --> 00:38:15,900
+Çünkü onu da verdiği isme software'e eşleyeceğim
+
+614
+00:38:15,900 --> 00:38:16,900
+ver koşulumla.
+
+615
+00:38:16,900 --> 00:38:18,900
+Ve D number'ı da çekiyorum ki
+
+616
+00:38:18,900 --> 00:38:20,900
+employee'nin Dino'su ile
+
+617
+00:38:20,900 --> 00:38:22,900
+aynı olan kayıtı,
+
+618
+00:38:22,900 --> 00:38:24,900
+aynı olan düğünü bana bulsun diye.
+
+619
+00:38:24,900 --> 00:38:26,900
+Ver koşulumuna geldiğimde
+
+620
+00:38:26,900 --> 00:38:29,900
+sıra sıra şu iki sorgudaki aslında kayıtları
+
+621
+00:38:29,900 --> 00:38:31,900
+sıralama yapmış oluyorum.
+
+622
+00:38:31,900 --> 00:38:36,900
+Projenin ismi Operating System, departmanda ismi software.
+
+623
+00:38:36,900 --> 00:38:39,900
+Projenin oğullarını eşliyorum.
+
+624
+00:38:39,900 --> 00:38:41,900
+Ve daha sonrasında belki sonuna
+
+625
+00:38:41,900 --> 00:38:43,900
+employee'nin SSN'lerini eşliyorum.
+
+626
+00:38:43,900 --> 00:38:49,409
+Dediğim gibi software ismini eşledim buradan.
+
+627
+00:38:49,409 --> 00:38:52,409
+Bunun için de yine o Dino'yla
+
+628
+00:38:52,409 --> 00:38:55,409
+employee'deki departmanda eşliyorum.
+
+629
+00:38:55,409 --> 00:38:58,409
+Burada bütün eşlemelerimi yaptıktan sonra
+
+630
+00:38:58,409 --> 00:39:00,409
+artık return'de ne istiyorum?
+
+631
+00:39:00,409 --> 00:39:02,409
+At ve soy at.
+
+632
+00:39:02,409 --> 00:39:05,409
+Onunla da etmelerine lastiğimi alması gerektiğini
+
+633
+00:39:05,409 --> 00:39:07,409
+söyleyerek şuradan tanımlamıştım.
+
+634
+00:39:07,409 --> 00:39:11,940
+Evet bu şekilde bunda yazıp çalıştırdığımızda
+
+635
+00:39:11,940 --> 00:39:14,940
+istemen verileri döndürmüş oluyor.
+
+636
+00:39:14,940 --> 00:39:17,940
+XQuery temel olarak böyle,
+
+637
+00:39:17,940 --> 00:39:20,940
+temel olarak sorgulama bu şekilde oluyor.
+
+638
+00:39:20,940 --> 00:39:23,940
+Daha detaylarını tabii ki siz işiniz düştükçe,
+
+639
+00:39:23,940 --> 00:39:25,940
+gerek oldukça araştırarak
+
+640
+00:39:25,940 --> 00:39:28,940
+bakarak gelişip ulaşabilirsiniz.
+
+641
+00:39:28,940 --> 00:39:33,539
+Evet var mı eklemek istediğiniz?
+
+642
+00:39:33,539 --> 00:39:35,539
+Sormak istediğiniz?
+
+643
+00:39:35,539 --> 00:39:44,369
+Bugünkü dersimiz bu şekildeydi.
+
+644
+00:39:44,369 --> 00:39:46,369
+Son laba tabi değil mi?
+
+645
+00:39:46,369 --> 00:39:48,369
+Efendim?
+
+646
+00:39:48,369 --> 00:39:49,369
+Son laba tabi.
+
+647
+00:39:49,369 --> 00:39:53,340
+Bir daha söyle.
+
+648
+00:39:53,340 --> 00:39:55,340
+Son laba tabi.
+
+649
+00:39:55,340 --> 00:39:56,340
+Evet evet.
+
+650
+00:39:56,340 --> 00:39:58,340
+Aynen haftaya labamız yok arkadaşlar.
+
+651
+00:39:58,340 --> 00:40:00,340
+Bu son dersimizdi.
+
+652
+00:40:00,340 --> 00:40:02,340
+Ondan sonraki haftada
+
+653
+00:40:02,340 --> 00:40:04,340
+projelerinizi
+
+654
+00:40:04,340 --> 00:40:06,340
+Pazar günü en geç
+
+655
+00:40:06,340 --> 00:40:08,340
+teslim etmeniz gerekecek.
+
+656
+00:40:08,340 --> 00:40:11,340
+Yakınlaşınca zamanı bir form oluşturup
+
+657
+00:40:11,340 --> 00:40:13,340
+duyurursunu yapacağım zaten.
+
+658
+00:40:13,340 --> 00:40:17,340
+Pazar testi günü için de yine böyle bir randevu saatleri
+
+659
+00:40:17,340 --> 00:40:19,340
+belirleyeceğim oradan.
+
+660
+00:40:19,340 --> 00:40:22,340
+Aldığınız randevu saatinde böyle 10-15 dakikalık
+
+661
+00:40:22,340 --> 00:40:25,340
+uzun bağlantıları yapacağız sizinle.
+
+662
+00:40:25,340 --> 00:40:27,340
+Herkes grup grup bağlanacak.
+
+663
+00:40:27,340 --> 00:40:29,340
+O şekilde sunacaksınız.
+
+664
+00:40:29,340 --> 00:40:31,340
+Pazar testi günü düşünüyorum.
+
+665
+00:40:31,340 --> 00:40:34,590
+Onda iki hafta sonra.
+
+666
+00:40:34,590 --> 00:40:36,590
+Ben kendi adıma Elçin hocam
+
+667
+00:40:36,590 --> 00:40:38,590
+duru ve öz anlatıyorsunuz.
+
+668
+00:40:38,590 --> 00:40:40,590
+Hani pozitif eleştir alsın.
+
+669
+00:40:40,590 --> 00:40:42,590
+Güzel bir anlatımdı.
+
+670
+00:40:42,590 --> 00:40:44,590
+Şeyimi en genel manada.
+
+671
+00:40:44,590 --> 00:40:48,590
+İnşallah faydalı olabiliyorsan.
+
+672
+00:40:48,590 --> 00:40:50,590
+Biraz böyle hızlı geçilmiş oluyor.
+
+673
+00:40:50,590 --> 00:40:53,590
+Labda olsaydık daha böyle sindire sindire giriyor.
+
+674
+00:40:53,590 --> 00:40:55,590
+Siz işte uğraşıyorsunuz, yazıyorsunuz falan.
+
+675
+00:40:55,590 --> 00:40:59,590
+Ben böyle pır pır hızlı hızlı gitmiş de oluyorum diye bazen korkuyorum.
+
+676
+00:40:59,590 --> 00:41:01,590
+Ama inşallah.
+
+677
+00:41:01,590 --> 00:41:05,590
+Biz biraz çete falan yazıyoruz ama.
+
+678
+00:41:05,590 --> 00:41:08,590
+Ben bir sürü ders alıyorum.
+
+679
+00:41:08,590 --> 00:41:10,590
+Doktoradan falan da alıyorum.
+
+680
+00:41:10,590 --> 00:41:15,590
+Az ve net vermek istediğiniz şeyi veriyorsunuz.
+
+681
+00:41:15,590 --> 00:41:17,590
+O yönden takdir ettiğimi belirtmek isterim.
+
+682
+00:41:17,590 --> 00:41:19,590
+Teşekkür ederim.
+
+683
+00:41:19,590 --> 00:41:21,590
+Mutlu oluyorum böyle geri dönüşler alınca.
+
+684
+00:41:23,590 --> 00:41:25,590
+Biri soru sormuş chatte ama bir de.
+
+685
+00:41:26,590 --> 00:41:28,590
+Evet ona bakıyorum şimdi.
+
+686
+00:41:28,590 --> 00:41:30,590
+Bunu hocaya sorsanız daha iyi olur arkadaşlar.
+
+687
+00:41:30,590 --> 00:41:32,590
+Ben hiç bilmiyorum.
+
+688
+00:41:32,590 --> 00:41:35,590
+Normalde ben bu labda anlattığım zaman bir quiz yapardık.
+
+689
+00:41:35,590 --> 00:41:38,590
+Orada yine sorardım x-query ile ilgili bir soru.
+
+690
+00:41:38,590 --> 00:41:41,590
+Ama mesela şu an projenizde bunu kullanacağınız bir şey yok.
+
+691
+00:41:41,590 --> 00:41:45,590
+Ama hoca derste bunu sorar mı anlattım onu tam bilemiyorum ben.
+
+692
+00:41:45,590 --> 00:41:48,590
+Onu hocaya sorarsınız.
+
+693
+00:41:48,590 --> 00:41:52,590
+Eğer derste anlatmadıysa ama sormaz yani öyle söyleyeyim.
+
+694
+00:41:52,590 --> 00:41:54,590
+Sınavımız galiba bu cuma mı?
+
+695
+00:41:54,590 --> 00:41:56,590
+İkinci sınav var herhalde.
+
+696
+00:41:57,590 --> 00:41:59,590
+Cuma günü ver tamam.
+
+697
+00:42:00,590 --> 00:42:03,590
+Derste anlatmadığınızı sormaz hocam.
+
+698
+00:42:03,590 --> 00:42:11,500
+Derste herhalde genel egzemele ait bir şeylerden bahsediliyor ama.
+
+699
+00:42:11,500 --> 00:42:13,500
+Bilemiyorum tam.
+
+700
+00:42:13,500 --> 00:42:16,500
+Şu anda egzemel işleniyor da.
+
+701
+00:42:16,500 --> 00:42:20,500
+Bu kısma geldi miydik ben egzemenin başındayız diye hatırlıyorum.
+
+702
+00:42:24,500 --> 00:42:27,500
+Dediğim gibi sizi ben yine yanlış yönlendirmeyeyim.
+
+703
+00:42:27,500 --> 00:42:37,130
+Hoca ile görüşseniz daha iyi olur.
+
+704
+00:42:37,130 --> 00:42:44,820
+Bu şekilde başka eklemeleriniz yoksa böyle dağlaşabiliriz.
+
+705
+00:42:44,820 --> 00:42:52,550
+İyi akşamlar hocam.
+
+706
+00:42:52,550 --> 00:42:53,550
+İyi akşamlar hocam.
+
+707
+00:42:53,550 --> 00:42:56,550
+İyi akşamlar diliyorum hepinize sınavınızda başarılar.
+
+708
+00:42:56,550 --> 00:42:57,550
+Sağ olun.
+
+709
+00:42:57,550 --> 00:42:59,550
+Projenizde başarılar kolaylıklar.
+
+710
+00:42:59,550 --> 00:43:04,460
+Teşekkürler.
+
+711
+00:43:04,460 --> 00:43:06,460
+Görüşmek üzere.
+
+712
+00:43:06,460 --> 00:43:07,460
+Görüşmek üzere.
+
