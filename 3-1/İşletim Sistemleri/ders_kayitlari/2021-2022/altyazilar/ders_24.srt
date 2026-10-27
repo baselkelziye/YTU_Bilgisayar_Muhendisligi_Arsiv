@@ -1,0 +1,1519 @@
+1
+00:02:03,668 --> 00:02:12,947
+Merhaba arkadaşlar. Şey, şu anda sunumu görebiliyor musunuz? Yoksa ne görüyorsunuz bir? Çekilebilir miyiz?
+
+2
+00:02:17,587 --> 00:02:39,327
+Sunumu görüyoruz hocam. Sorun yok değil mi? Yok. Sesiniz de geliyor. Tamam. Bir de hani sunucu sayfası var ya siyah. Onu görmüyorsunuz değil mi? Ana ekranı görüyorsunuz. İki ekran kullanıyorum da hangisini görüyorsunuz? Sadece slide'ı görüyoruz hocam. İşletim sistemleri uygulama yazıyor. Tamamdır. Teşekkür ederim.
+
+3
+00:02:39,327 --> 00:02:47,207
+11 kişi var. Bu artar mı yoksa başlayalım mı? Genelde ne kadar oluyor acaba?
+
+4
+00:02:53,716 --> 00:03:02,795
+neyse nasıl olsa kaydoluyor. Biz başlayalım o zaman. Bu hafta semaphorelere, threadlere birlikte bakacağız. Anlamaya çalışacağız.
+
+5
+00:03:12,723 --> 00:03:23,223
+semaphore dediğimiz yapıdan birazcık bahsedelim. Semaphorelar birçok proses tarafından paylaşılabilen bir structure aslında, bir yapıdır.
+
+6
+00:03:24,263 --> 00:03:31,543
+Hocam, linki daha yeni paylaştım da WhatsApp grubunda. İsterseniz biraz bekleyelim, belki gelen olur. Daha yeni açıldı zaten.
+
+7
+00:03:32,043 --> 00:03:38,144
+Tamam o zaman. Bir beşe on dakika bekleyelim. On dakika yapmayalım da beş dakika bekleyelim.
+
+8
+00:03:38,144 --> 00:03:50,463
+Hocam o arada ben de bir şey sorayım. Bir hafta gecikmeli gidiyoruz sanırım laboratuvarlarda. Kernel modülünün gerçeklenmesiyle alakalı lab olacak mı haftaya?
+
+9
+00:03:51,723 --> 00:03:55,883
+Onunla alakalı Cihan Hoca'ya sorsanız daha iyi olur ama sanırım olmayacak.
+
+10
+00:03:56,444 --> 00:03:58,003
+Peki hocam ödev verilecek mi?
+
+11
+00:03:58,703 --> 00:04:00,584
+O konuyla alakalı da bir bilgim yok.
+
+12
+00:04:04,532 --> 00:04:27,411
+Cehan Hoca'ya sorsanız aslında daha iyi olur. Anladım. Geçen hafta sanırım internette ya da bilgisayarda bir problem olmuş. Bir hafta daha önce hatta. O uygulamayı tam like ile yapamadığınız için geçen hafta devam ettiniz. Tekrar aynı uygulamayı yaptınız. Bizim laboratuvarda bir hafta sarkmış oldu.
+
+13
+00:04:27,411 --> 00:04:46,032
+En sonunda yani bu hafta şimdi semafor işlerken kernel modülü işleyecektik. Onun yerine bunu yaptığımız için herhalde o olmayacak diye biliyorum ama ödevlerle alakalı kısmını Cihan Hoca daha iyi bilir. Yanıtmış olmayayım sizi yani.
+
+14
+00:04:47,871 --> 00:04:50,831
+Anladım hocam. Çok da bir vakit kalmadı o yüzden sorayım dedim.
+
+15
+00:04:51,471 --> 00:04:54,431
+Büyük ihtimalle olmayacaktır ama yine de siz sordun.
+
+16
+00:04:54,431 --> 00:04:56,691
+Tamamdır. Teşekkürler.
+
+17
+00:04:56,691 --> 00:05:04,212
+Gizade edelim. Ders nasıl gidiyor? Sınavlarınız nasıl gidiyor? Biraz dertleşelim bari arkadaşlar.
+
+18
+00:05:04,212 --> 00:05:05,151
+Gelece kadar.
+
+19
+00:05:11,348 --> 00:05:15,708
+İşletim Sistemlerinin sınavına girmiştim. Evet, gördüm sizi birazcık.
+
+20
+00:05:44,788 --> 00:05:46,788
+Umarım güzel şekilde sonuçlanır.
+
+21
+00:05:49,007 --> 00:05:52,507
+Ne kadar kaldı şimdi? Kaç hafta kaldı dönemin bitmesine?
+
+22
+00:05:55,607 --> 00:05:56,767
+Üç hafta kaldı hocam.
+
+23
+00:05:57,088 --> 00:05:57,748
+Üç hafta.
+
+24
+00:05:59,128 --> 00:06:01,587
+Evet, bu haftayı saymazsak üç hafta.
+
+25
+00:06:02,288 --> 00:06:04,808
+Hadi gözümüz aydın bitmiş, az kalmış.
+
+26
+00:06:28,403 --> 00:06:30,884
+Çeyrek geçiyor artık biz başlayalım isterseniz.
+
+27
+00:06:31,124 --> 00:06:33,923
+Kaydediliyor. Kaçıralda tekrardan açıp izleyebilir.
+
+28
+00:06:36,803 --> 00:06:38,723
+Semaforlardan bahsediyorduk.
+
+29
+00:06:39,864 --> 00:06:42,263
+Semafor için bir veri yapısı dedik.
+
+30
+00:06:43,103 --> 00:06:47,023
+Birçok proses tarafından paylaşılabilen bir yapı.
+
+31
+00:06:47,803 --> 00:06:50,183
+Bu yapılara neden ihtiyaç duyuyoruz?
+
+32
+00:06:50,183 --> 00:07:01,264
+Birden fazla prosesin bir kaynağı ortak olarak kullandığı problemlerde o kaynağın senkronize nasıl diyebiliriz?
+
+33
+00:07:01,383 --> 00:07:05,743
+Senkronizasyonu sağlanarak paylaştırılabilmesi için aslında biz semaforlara ihtiyaç duyuyoruz.
+
+34
+00:07:05,803 --> 00:07:08,603
+Mesela burada şekilde gördüğünüz gibi dört tane prosesimiz var.
+
+35
+00:07:09,023 --> 00:07:11,643
+Hepsi aynı kaynak üzerinde değişiklik yapmak istiyor.
+
+36
+00:07:11,643 --> 00:07:16,723
+Ama mesela ikisi de aynı anda bir değişiklik yapmaya çalışırsa,
+
+37
+00:07:17,263 --> 00:07:22,363
+proses 2'nin yaptığı değişiklik, proses 4'ün yapacağı değişikliği etkileyebileceği için
+
+38
+00:07:22,363 --> 00:07:29,683
+biz bu kaynağın ne bir şekilde yani senkronizasyonu sağlanarak proseslere verilmesini sağlamaya çalışıyoruz.
+
+39
+00:07:29,783 --> 00:07:31,903
+Aslında semoforları bu yüzden ihtiyaç duyuyoruz.
+
+40
+00:07:31,983 --> 00:07:35,363
+Mesela bir ED counter değişkenini arttırdığımızı düşünelim.
+
+41
+00:07:36,023 --> 00:07:41,063
+P2 prosesi 2 arttırıyor, P4 prosesi de 1 arttırıyor diyelim.
+
+42
+00:07:41,063 --> 00:07:51,303
+Ama P2 o andaki değerini 2 arttırırken P4 de aynı değeri okuyup 1 arttırıp eşitlediği zaman ikisinin de aynı anda biri 2 arttıracakken biri 1 arttırıyor.
+
+43
+00:07:51,363 --> 00:07:55,963
+Aslında P2 ve P4'ün çalıştıktan sonraki değerinin sonucunda biz ne görmek isteriz?
+
+44
+00:07:56,063 --> 00:08:00,923
+Biri 2, biri 1 arttırıyorsa counter değişkeni 3 artmış olması lazım.
+
+45
+00:08:01,523 --> 00:08:02,923
+Ama ikisi de aynı anda erişiyor.
+
+46
+00:08:03,383 --> 00:08:05,063
+İkisinden birininki etkiyebilir.
+
+47
+00:08:05,063 --> 00:08:09,423
+Yani aslında öngörülebilirlik azalıyor.
+
+48
+00:08:09,423 --> 00:08:11,643
+aynı kaynağı, aynı anda erişen
+
+49
+00:08:11,643 --> 00:08:13,883
+prosesler var oldukça.
+
+50
+00:08:14,503 --> 00:08:15,843
+Yani iki de arttırılmış
+
+51
+00:08:15,843 --> 00:08:17,663
+olabilir, bir de arttırılmış olabilir.
+
+52
+00:08:17,883 --> 00:08:19,843
+İkisi de milisaniyelerle
+
+53
+00:08:20,503 --> 00:08:21,723
+peş peşe de çalışmış
+
+54
+00:08:21,723 --> 00:08:23,863
+olabilir. Bunu bilemeyeceğimiz için
+
+55
+00:08:23,863 --> 00:08:25,683
+bizim programımızın öngörülebilir
+
+56
+00:08:25,683 --> 00:08:27,903
+olması için biz bu senkronizasyonu
+
+57
+00:08:27,903 --> 00:08:29,863
+sağladığımızdan emin olmak istiyoruz ve
+
+58
+00:08:29,863 --> 00:08:32,003
+bu senkronizasyonu sağlarken
+
+59
+00:08:32,003 --> 00:08:33,823
+semafor yapılarına ihtiyacımız
+
+60
+00:08:33,823 --> 00:08:34,543
+var. Tamam mı?
+
+61
+00:08:35,943 --> 00:08:37,643
+Bu problemleri çözerken yani
+
+62
+00:08:37,643 --> 00:08:42,723
+kaynak paylaştırma problemini çözerken iki tane senaryodan uzak durmaya çalışıyoruz.
+
+63
+00:08:42,823 --> 00:08:47,803
+Bir tanesi starvation yani açlık, bir tanesi de deadlock yani ölümcül kilitlenmeden.
+
+64
+00:08:48,263 --> 00:08:50,943
+Bunlar ne? Birazcık onları açıklayalım.
+
+65
+00:08:51,083 --> 00:08:54,243
+Yani bu problemlerden kaçmaya çalışıyoruz ama bunlar aslında ne?
+
+66
+00:08:54,803 --> 00:08:56,723
+İlk önce starvation'dan başlayalım.
+
+67
+00:08:57,663 --> 00:09:01,663
+Yine senaryomuz aynı kaynakları kullanan prosesler üzerinden.
+
+68
+00:09:02,143 --> 00:09:03,623
+Düşünün ki açlık ne demek?
+
+69
+00:09:03,623 --> 00:09:07,583
+Yani kaynağı bekliyor proses ama bir türlü o kaynak gelmiyor.
+
+70
+00:09:07,643 --> 00:09:09,563
+yani ölümüne bekliyor ve
+
+71
+00:09:09,563 --> 00:09:11,703
+kaynağa erişemediği için proses hiçbir şekilde
+
+72
+00:09:11,703 --> 00:09:13,743
+işlemini devam ettiremiyor. Tamam mı?
+
+73
+00:09:13,743 --> 00:09:15,903
+Starvation dediğimiz açlık senaryosu bu.
+
+74
+00:09:18,163 --> 00:09:20,023
+Deadlock'ta da durum ne?
+
+75
+00:09:20,503 --> 00:09:21,903
+Şurada bu görseli
+
+76
+00:09:21,903 --> 00:09:23,903
+hoş buldum. Anlatmak için
+
+77
+00:09:23,903 --> 00:09:25,863
+aslında güzel bir örnek
+
+78
+00:09:25,863 --> 00:09:27,803
+olmuş. Çok fazla da görüntü
+
+79
+00:09:27,803 --> 00:09:29,303
+yoktu bu konuyla alakalı.
+
+80
+00:09:29,983 --> 00:09:31,643
+Şimdi dört tane prosesimiz var.
+
+81
+00:09:31,763 --> 00:09:33,603
+Bunları araba şu anda gördüğümüz ekranda
+
+82
+00:09:33,603 --> 00:09:35,023
+gördüğümüz arabalar gibi düşünelim.
+
+83
+00:09:35,763 --> 00:09:37,543
+Dördü de yani şu arabaları
+
+84
+00:09:37,543 --> 00:09:42,704
+için konuşursak B eee figüründeki yola dümdüz devam
+
+85
+00:09:42,704 --> 00:09:45,223
+edebildiklerini düşünün bu arabaların geri gidemiyorlar.
+
+86
+00:09:45,223 --> 00:09:49,543
+Dördünün de yola devam edebilmeleri için bir tanesinin
+
+87
+00:09:49,543 --> 00:09:53,144
+ortadan kalkması lazım değil mi? Yani biri diğerinin yolunu
+
+88
+00:09:53,144 --> 00:09:56,863
+kesiyor. Bu duruma dedlock diyoruz işte. Prosesler için
+
+89
+00:09:56,863 --> 00:10:01,424
+bakacak olursak da bir prosesin kullanacağı kaynağı P1
+
+90
+00:10:01,424 --> 00:10:05,504
+prosesinin kullanacağı kaynağı P2'nin tuttuğunu P2'nin
+
+91
+00:10:05,503 --> 00:10:08,003
+beklediği kaynağı P3'ün tuttuğunu
+
+92
+00:10:08,003 --> 00:10:09,743
+P3'ün tuttuğu şey beklediği
+
+93
+00:10:09,743 --> 00:10:11,643
+kaynağı da P4'ün tuttuğunu varsa
+
+94
+00:10:11,643 --> 00:10:13,823
+yani her biri birbirinin beklediği
+
+95
+00:10:13,823 --> 00:10:15,903
+kaynağı tutuyor.
+
+96
+00:10:16,903 --> 00:10:17,883
+Böylelikle ne oluyor?
+
+97
+00:10:18,003 --> 00:10:19,903
+Hiçbiri bırakmadığı için beklediği
+
+98
+00:10:19,903 --> 00:10:21,603
+kaynak gelmeden kendi
+
+99
+00:10:21,603 --> 00:10:24,203
+kaynağını bırakmadığı için birbirlerini
+
+100
+00:10:24,203 --> 00:10:25,443
+ölümüne bekliyorlar.
+
+101
+00:10:26,643 --> 00:10:27,863
+Bunu da deadlock diyoruz.
+
+102
+00:10:28,224 --> 00:10:31,603
+Anlaşıldı mı? Yani izah edebilmişim umarım.
+
+103
+00:10:37,875 --> 00:10:39,595
+Şimdi semaforlara biraz daha bakalım.
+
+104
+00:10:39,775 --> 00:10:42,095
+POSIX semafor dediğimiz yapılara.
+
+105
+00:10:44,175 --> 00:10:47,495
+İşletim sistem düzeyinde yaratılırlar semaforlar.
+
+106
+00:10:47,756 --> 00:10:50,455
+Bir tam sayı ve bir işaretçi alanına sahiptirler.
+
+107
+00:10:50,615 --> 00:10:51,875
+Görselde gördüğünüz gibi.
+
+108
+00:10:52,735 --> 00:10:54,915
+Şurada bir tam sayı değişken tutarlar.
+
+109
+00:10:55,035 --> 00:10:57,216
+Burada da bir proses işaretçisi var.
+
+110
+00:10:57,355 --> 00:11:00,415
+Başlangıçta bu proses işaretçisinin değeri nul olur.
+
+111
+00:11:00,535 --> 00:11:01,476
+Yani nul olur, boş.
+
+112
+00:11:01,655 --> 00:11:02,915
+Hiçbir şeyi göstermediği için.
+
+113
+00:11:02,915 --> 00:11:07,995
+şurada tanımladığımız integer sayı değeri var ya
+
+114
+00:11:07,995 --> 00:11:09,975
+şeyin semaforun
+
+115
+00:11:09,975 --> 00:11:13,835
+bu sayı hiçbir zaman sıfırın altında olamaz.
+
+116
+00:11:14,615 --> 00:11:15,255
+Hiçbir zaman.
+
+117
+00:11:15,416 --> 00:11:18,635
+Çünkü bu semaforları biz birer anahtar gibi düşünebiliriz.
+
+118
+00:11:19,315 --> 00:11:22,955
+Eğer bir proses bir kaynak odasına giriş yapmak istediğinde
+
+119
+00:11:22,955 --> 00:11:27,075
+semaforda anahtar varsa o kaynak odasına giriş yapabilir.
+
+120
+00:11:27,075 --> 00:11:30,175
+Eğer anahtar yoksa yani eksi anahtar deyip değer olamaz.
+
+121
+00:11:30,795 --> 00:11:33,015
+Orada anahtar yoksa o kaynağı bekler.
+
+122
+00:11:33,155 --> 00:11:37,315
+Yani orada anahtar olana kadar o proses o kaynak odasına girmek için dışarıda bekler.
+
+123
+00:11:37,615 --> 00:11:38,175
+Anlaştık mı?
+
+124
+00:11:38,556 --> 00:11:40,236
+Eksi anahtar diye bir şey olamaz.
+
+125
+00:11:40,675 --> 00:11:43,575
+Semaforları bir anahtara benzetecek olursak tamam mı?
+
+126
+00:11:44,236 --> 00:11:45,416
+Eksi değer alamıyor.
+
+127
+00:11:46,416 --> 00:11:52,676
+İşaretçi bir proses kuyruğuna işaretçi başlangıçta null değerini taşır dedik.
+
+128
+00:11:52,676 --> 00:11:53,056
+Okey.
+
+129
+00:11:54,916 --> 00:11:58,655
+Bu semaforlarda hem isimli hem de isimsiz olarak yaratılabiliyorlar.
+
+130
+00:11:58,736 --> 00:11:59,635
+Bunlara biraz bakalım.
+
+131
+00:12:00,175 --> 00:12:06,895
+Şimdi isimli semaforlarda yani isimle yaratılıyorlar tamam mı?
+
+132
+00:12:06,955 --> 00:12:08,315
+İsimleriyle çağrılıyorlar.
+
+133
+00:12:09,795 --> 00:12:11,635
+Kullanılıyorlar semaforlar.
+
+134
+00:12:12,455 --> 00:12:13,755
+Beş tane fonksiyonları var.
+
+135
+00:12:13,875 --> 00:12:16,275
+Open, post, be, close ve unlink olmak üzere.
+
+136
+00:12:16,895 --> 00:12:23,755
+Şimdi open fonksiyonu bir semafor ile bir prosesin arasında bir bağlantı oluşturuyor.
+
+137
+00:12:24,875 --> 00:12:25,375
+Tamam mı?
+
+138
+00:12:26,215 --> 00:12:28,615
+Post fonksiyonu ise ne yapıyor?
+
+139
+00:12:28,615 --> 00:12:32,355
+Öncelikle weight'i açıklayayım.
+
+140
+00:12:34,155 --> 00:12:40,795
+Semafor weight fonksiyonu, demin bahsettiğim anahtar örneği vardı ya, semafordan anahtar istiyor.
+
+141
+00:12:40,916 --> 00:12:49,596
+Eğer anahtar yoksa, yani semaforun değeri sıfırsa, hiç anahtar yoksa, o semaforun değeri, yani orada da anahtar olana kadar o semaforu bekliyor.
+
+142
+00:12:50,495 --> 00:12:51,456
+Proses, tamam mı?
+
+143
+00:12:52,115 --> 00:12:55,816
+Sempost fonksiyonunda, yani bu semweight fonksiyonu ne yapıyor mantık olarak?
+
+144
+00:12:55,816 --> 00:12:58,176
+semaforun değerini bir azaltıyor.
+
+145
+00:12:58,495 --> 00:12:59,956
+Değil mi eğer sıfırdan büyükse?
+
+146
+00:13:00,836 --> 00:13:02,256
+Sıfırdan büyük değilse de
+
+147
+00:13:02,256 --> 00:13:04,196
+semaforun değeri sıfırdan büyük
+
+148
+00:13:04,196 --> 00:13:06,116
+oluncaya kadar bekliyor ve
+
+149
+00:13:06,116 --> 00:13:07,636
+semaforun değerini bir azaltıyor.
+
+150
+00:13:07,995 --> 00:13:08,956
+Temelde yaptığı bu.
+
+151
+00:13:09,636 --> 00:13:12,316
+Post fonksiyonu da tam tersi
+
+152
+00:13:12,316 --> 00:13:14,155
+anahtarla işi bittiği zaman
+
+153
+00:13:14,155 --> 00:13:16,176
+semaforun anahtarını
+
+154
+00:13:16,176 --> 00:13:18,036
+yerine bırakıyor. Yani işi
+
+155
+00:13:18,036 --> 00:13:20,075
+bittiğinde kaynakla, paylaşılan
+
+156
+00:13:20,075 --> 00:13:21,896
+kaynakla işi bittiği zaman
+
+157
+00:13:21,896 --> 00:13:24,075
+semaforun o intijeri tutan değeri
+
+158
+00:13:24,075 --> 00:13:26,155
+vardı ya o değeri bir arttırıyor
+
+159
+00:13:26,155 --> 00:13:27,956
+ve semaforla olan işi
+
+160
+00:13:27,956 --> 00:13:29,975
+kaynakla olan işi bitiyor.
+
+161
+00:13:30,715 --> 00:13:31,316
+Anlaştık mı?
+
+162
+00:13:32,316 --> 00:13:33,736
+sem close fonksiyonu
+
+163
+00:13:33,736 --> 00:13:35,816
+semaforu komple sonlandırıyor.
+
+164
+00:13:37,015 --> 00:13:38,435
+sem unlink fonksiyonu
+
+165
+00:13:38,435 --> 00:13:39,036
+da
+
+166
+00:13:39,036 --> 00:13:41,036
+hani semaforla
+
+167
+00:13:41,036 --> 00:13:43,676
+sem open fonksiyonuyla bir
+
+168
+00:13:43,676 --> 00:13:46,036
+prosesle semaforu ilişkilendirmiştik ya
+
+169
+00:13:46,036 --> 00:13:48,195
+bu sem unlink fonksiyonu
+
+170
+00:13:48,195 --> 00:13:50,375
+da o aradaki ilişkiyi
+
+171
+00:13:50,375 --> 00:13:51,215
+kaldırıyor.
+
+172
+00:13:52,475 --> 00:13:53,115
+Anlaştık mı?
+
+173
+00:13:56,947 --> 00:13:59,447
+mikrofon sesi duydum soru mu soracaktım?
+
+174
+00:14:08,788 --> 00:14:24,847
+önemsemaforlardan bahsedecek olursak da bu semaphorelarında isimleri yok. Bu yüzden global olarak tanımlanırlar ve çalışacakları proseslerle aynı hafıza biriminde yer almaları gerekiyor çalışabilmeleri için. Tamam.
+
+175
+00:14:30,196 --> 00:14:53,296
+anemdinde fonksiyonları yine aynı şekilde sadece anemdinde fonksiyonu yok. Bir de isimleri değişiyor. Sem init fonksiyonu yaratılmasına ilişkilendirilmesini sağlıyor. Sem destroy fonksiyonu da semaphore ortadan kaldırıyor. Post ve wait aynı şekilde. Post bir arttırıyor değerini semaphore'ın. Wait de bir azaltıyor. Şimdi burada bir örneğimiz var.
+
+176
+00:14:53,296 --> 00:15:20,895
+Öncelikle inceleyelim bakalım ne oluyor. Semaphore'u yaratıyor burada semopen fonksiyonuyla. Semaphore'un ismini vermiş. Portunu değişkenlerini gönderiyor tamam mı? Yani mutex artık bizim semaforumuz. Eğer açılamasaydı hata verecekti burayı geçtik. Şimdi mutex'in değerini de bir olarak
+
+177
+00:15:20,896 --> 00:15:25,236
+atamışlar. Şimdi
+
+178
+00:15:25,236 --> 00:15:34,916
+semaphore fonksiyonuyla mutex'in değerini bir azaltıyor. Eğer değeri sıfırdan büyükse ki bir olarak tanımladık.
+
+179
+00:15:34,916 --> 00:15:39,435
+O anda çalıştığı saati bize ekrana print edecek.
+
+180
+00:15:40,615 --> 00:15:44,155
+Proses A critical section'a şu anda girdi diye.
+
+181
+00:15:46,276 --> 00:15:49,416
+Ondan sonrasında çıkış saatini gösterecek.
+
+182
+00:15:49,416 --> 00:16:10,155
+sonra semaforu boş bırakacak ve 3 saniye bekleyip tekrar aynı işi 10 kere yapacak. Tamam mıyız? Burada ne yapıyor? Bu sefer de proses beynin çalıştığı zaman aralıklarını gösterecek. Yani nasıl çalıştıklarına bakalım örnekte.
+
+183
+00:16:10,155 --> 00:16:21,035
+yani bu saati birazcık anlaşılabilir şekilde yazmadıkları için senkronizasyonlu çalıştığını görebiliyoruz ama son basamaklarına bakarak.
+
+184
+00:16:21,575 --> 00:16:33,315
+Bir tanesi başlayıp bitir. Yani ikisinde de 54'ü göremiyoruz. Fark ettiniz mi? Critical section'da mesela A başlamış ve bitmiş. 54'te başlamış. Yine 54'te aynı şeyle bitirmiş.
+
+185
+00:16:33,315 --> 00:16:40,115
+Ama burada 54'te başlayan bir proses göremiyoruz. Çünkü ikisi senkronizeli bir şekilde çalışıyor.
+
+186
+00:16:40,155 --> 00:16:52,175
+A bitmeden zaten B çalışamayacak. Aynı zaman skalasında çalışamıyorlar. Hep birbirleriyle senkronize şekilde. Anlaştık mı? Yapmaya çalıştığımız şey de buydu zaten.
+
+187
+00:16:57,427 --> 00:17:22,688
+Şimdi mesaj kuyruklarından birazcık bahsedelim. FIPOLAR gibi mesaj kuyrukları da başlangıçta oluşturulması ve artık gerekmediğinde silinmesi gereken kalıcı nesnelerdir. Tamam mı? Belirtilen maksimum mesaj boyutu ve maksimum mesaj sayısı ile oluşturulan yani ne kadar mesaj tutacağı ve tutacağı mesajın boyutunun başlangıçta belirli olması gerekiyor.
+
+188
+00:17:22,688 --> 00:17:37,688
+mesaj kuyrukları mqopen sistem çağrısı kullanılarak oluşturulur ve açılırlar. Bu fonksiyonları zaten inceleyeceğiz. Kaç tane? Sekiz tane fonksiyonu var. Bunlara bakacağız.
+
+189
+00:17:40,868 --> 00:17:48,227
+Oluşturmak için bu fonksiyon kullanılıyor. Burada parametrelerin, flagların hepsinin özellikleri aslında yazıyor.
+
+190
+00:17:48,227 --> 00:18:11,347
+Bu mesela mesaj kuyruğu oluşturmak için bu eğer hali hazırda bu mesaj kuyruğu yaratılmışsa hata verecek. Yani bu kuyruk eğer varsa hata vermesi için gerekli bayrağı gönderiyor oluşturulurken tamam mı?
+
+191
+00:18:11,347 --> 00:18:15,968
+Bu da her zaman kullanılan diye yazmışlar.
+
+192
+00:18:15,968 --> 00:18:21,747
+Nand block yani bloklamıyor, hiçbir şekilde bayrak oluşturmuyor demek ki.
+
+193
+00:18:26,307 --> 00:18:33,907
+İsminin slash ile başlaması gerektiğini ve başka slash içermediğini söylüyor burada da.
+
+194
+00:18:35,347 --> 00:18:35,947
+Devam edelim.
+
+195
+00:18:44,307 --> 00:19:06,908
+Burada attributların dört tane olduğunu görüyoruz. Burada hangileri, bu attributların ne için kullanıldığını görüyoruz. Flaglar, demin gördüğümüz flaglar olabiliyor. Bu ikinci parametremiz de mesajın kuyruk içerisindeki mesaj sayısını veriyor. Tamam mı?
+
+196
+00:19:06,908 --> 00:19:17,348
+üçüncü kuyruğun içerisinde tutulan mesajların maksimum boyutunu söylüyor bize. Yani mesela 100 bytelik mesajları tutan bir kuyruk düşünün.
+
+197
+00:19:17,348 --> 00:19:29,528
+İşinde de 100 tane mesaj tutabiliyor. Her bir mesajın boyutu da 100 byte sallıyorum şu an. En sondaki parametrede o kuyrukta şu anda ne kadar mesaj var onu gösteren parametre. Tamam mı?
+
+198
+00:19:34,067 --> 00:19:51,427
+close fonksiyonumuzda bu fonksiyonu çağırdıktan sonra mesaj kuyruğu silinmiyor komple. Yani bu çağrı aslında mesaj kuyruğuyla komple bizim işimiz bittikten sonra çağrılması gereken bir fonksiyon.
+
+199
+00:19:51,588 --> 00:19:59,307
+İçindeki tüm mesajlar silinene kadar bu mesaj kuyruğu kapatılmıyor zaten tamam mı? Çağırsan bile kapatılmıyor.
+
+200
+00:19:59,307 --> 00:20:11,047
+yani her işlem yapan kişi message queue close fonksiyonunu çağırırsa o mesaj kuyruğunda hiçbir mesaj kalmadığı zaman o mesaj kuyruğu silinecek demek oluyor tamam mı?
+
+201
+00:20:13,108 --> 00:20:17,487
+Unning fonksiyonu da yine mesaj kuyruğunu kaldırmak için kullanılıyor.
+
+202
+00:20:18,087 --> 00:20:22,267
+Silme işlemi mesaj kuyruğundaki tüm mesajlar tüketilene kadar erteleniyor.
+
+203
+00:20:22,268 --> 00:20:31,308
+mesaj kuyruğunu kullanarak iletişim kurmak isteyen tüm işlemler açıldıktan hemen sonra MQ Unlink'i çağırmak genellikle iyi uygulamadır.
+
+204
+00:20:31,308 --> 00:20:39,648
+Yani bir önceki close'a göre SHQ Unlink daha iyi bir uygulama. Bu şekilde son işlem biterlikle mesaj kuyruğu kapatılıyor. Tamam mı?
+
+205
+00:20:43,316 --> 00:20:47,555
+Burada da özelliklerinden bahsediyor. Mesaj kuru kalıcıdır. Yani
+
+206
+00:20:52,372 --> 00:21:21,311
+Tifolardan farklı olarak sakladıkları mesajlar da kalıcıdır. Bir okuyucu ve bir yazarın aynı anda mesaj kuyruğunu açması gerekli değildir. Bir tanesi kapatıyor, daha sonra diğeri açtığında o mesajlar gene o kutunun içerisinde kalmış oluyor. Özetle bir yazar bir kuyruk açabilir veya oluşturabilir ve buna mesajlar yazabiliyor aynı şekilde. Ardından kapatabilir ve sonlandırabilir. Daha sonra bir okuyucu bu kuyruğu tekrar açıp içindeki mesajları okuyabilir.
+
+207
+00:21:21,311 --> 00:21:22,231
+Come on, amor
+
+208
+00:21:28,500 --> 00:21:47,260
+mq send fonksiyonu da bu içeride gördüğümüz mq des parametresi var ya yani bu göndereceği kuyruğun destination aslında message queue destination parametresi göndereceği mesaj göndereceği kuyruğu burada belirtiriz.
+
+209
+00:21:49,260 --> 00:21:56,439
+message ptr'da message bufferını işaret eder yani göndereceğimiz message bufferını burada ifade ederiz.
+
+210
+00:21:56,439 --> 00:22:00,799
+message land mesajın uzunluğunu içerir.
+
+211
+00:22:02,959 --> 00:22:13,579
+Mesajın boyutu kuyruğun tanımlanan mesaj boyutundan, mesaj uzunluğundan küçük ya da ona eşit olması gerekiyor.
+
+212
+00:22:13,739 --> 00:22:16,819
+Zaten mantıken çünkü aksi takdirde sığmayacaktır.
+
+213
+00:22:17,579 --> 00:22:22,299
+Message priori de priority aslında yani öncelik özelliği.
+
+214
+00:22:22,299 --> 00:22:28,139
+mesajın önceliğini belirtir. Negatif olmayan bir sayı olan mesaj önceliklidir.
+
+215
+00:22:36,660 --> 00:23:00,260
+kuyruk doluysa mesaj kuyruğu için non-block bayrağı etkileştirilmelidir. Etkileştirilmediği sürece kuyrukta boşluk kalana kadar mesajlar engellenir. Burada non-block fly'ı da açıklanmış oldu. Şurada görmüştük ne olduğunu usual interpretation yazmışlar.
+
+216
+00:23:00,260 --> 00:23:09,259
+bu numblock flag'ın da aslında eğer bu flag kaldırılmazsa mesaj kuyruğu doluysa
+
+217
+00:23:20,500 --> 00:23:21,000
+tem.
+
+218
+00:23:25,779 --> 00:23:33,939
+numolog bayrağı etkinleştirilmediği sürece message q send fonksiyonu kuyrukta boşluk kalana kadar engelleniyor. Tamam mı?
+
+219
+00:23:42,708 --> 00:24:12,687
+message queue receive aynı şekilde message queue destination içine koyduğumuz şey ona geliyor mesaj. Mesaj almak için kullanılıyor. Diğer parametre de aynı şekilde biri mesaj tutmak için biri uzunluğu bir tanesi prioritiesi. Şimdi burada bir örnek göreceğiz. Burada bakıyoruz bir mesaj oluşturuluyor tamam mı? Bu dosya çalıştırıldığı zaman prioritiesi on bir olan bir mesaj oluşturuluyor.
+
+220
+00:24:12,708 --> 00:24:41,347
+priority'si 110 olan ve 17 olan 3 tane ayrı mesaj oluşturuluyor tamam mı? Burada bakabiliriz. Gördüğünüz gibi o anki süreyi alarak mesaj gönderecek karşı tarafa. Ve o anki priority'sini gösterecek anladığım kadarıyla. Burası sender fonksiyonu tamam mı?
+
+221
+00:24:42,708 --> 00:25:06,907
+Receiver kısmına baktığımız zaman da gördüğünüz gibi 110, prioritisi 110 olanda bir mesaj geldi. Hello from process bilmem bilmem ve en sonunda da tarih var. Burada gönderdiği şey hello from process ve tarihi göndermişti hatırladığımız kadarıyla.
+
+222
+00:25:06,907 --> 00:25:11,727
+burada da karşıladığı priorities'i en yüksek gördüğünüz gibi
+
+223
+00:25:11,727 --> 00:25:13,787
+kurutlu hold three message diyor.
+
+224
+00:25:13,907 --> 00:25:21,407
+Yani üç tane mesaj tuttuğunu buldu, görüyor ve en yüksek priorities olanı seçiyor.
+
+225
+00:25:22,267 --> 00:25:23,307
+Ve onu bize print etti.
+
+226
+00:25:23,428 --> 00:25:24,587
+Sadece en yüksek olanı.
+
+227
+00:25:24,987 --> 00:25:25,187
+Tamam.
+
+228
+00:25:34,387 --> 00:26:00,587
+Şimdi burada fork fonksiyonunun mesaj kuyrukları üzerindeki etkisinden birazcık bahsedeceğiz. Açık bir mesaj kuyruğu fork fonksiyonu tarafından oluşturulan bir alt süreçler tarafından devranılamaz. Normalde biz bir thread'i fork'la oluşturduğumuz zaman, kopyadığımız zaman içindeki bütün elemanları kopyalayarak oluşturuyoruz ya.
+
+229
+00:26:00,587 --> 00:26:22,887
+işte burada message queue'lar aynı şekilde kopyalanarak aşağıya inherit edilmiyor. Devralanamıyor. Tamam mı? Bunun yerine bir alt proses bir mesaj kuyruğu tanımlayıcısı elde etmek için mesaj kuyruğunu açıkça mqopen fonksiyonunu kullanarak istek göndermedim ve bu mesaj kuyruğu açmalı. Tamam mı?
+
+230
+00:26:29,652 --> 00:26:52,431
+Şimdi detecting non-empty cues. Bakalım buna. Normalde message cue receive fonksiyonu boş bir kuyruktan mesaj okumaya çalışırsa ne olabilir? Mesaj gelene kadar bu fonksiyon ertelenebilir değil mi? Yani bu mesaj kuyruğuna bakıyor. Mesaj kuyruğunda hiç mesaj yok. O zaman engellenebiliyor bu fonksiyon.
+
+231
+00:26:52,431 --> 00:27:11,652
+ve bu durum istenmeyebilir değil mi? Çünkü işlemciyi yoracak bir şey sürekli. Mesaj kuyruğu boşsa engellenecek, tekrar isteyecek mesaj kuyruğu boş. Bu davranışı önlemek için kuyruğa non-block flow uygulanabilir. Tamam mı?
+
+232
+00:27:11,652 --> 00:27:20,652
+bu durumda MQ receive çağrısı yani mesaj okumaya çalışan fonksiyon eksi bir döneceği için
+
+233
+00:27:20,652 --> 00:27:30,832
+yani boş olduğunu anlayacak. Eksi bir döndüğünü anlayacak ve mesaj kuyruğunda bir
+
+234
+00:27:30,832 --> 00:27:36,671
+mesaj olmadığını anlayacak ve daha sonrasında bu isteğini tekrar edebilir. Artık ne kadar bir
+
+235
+00:27:36,671 --> 00:28:06,251
+delay olması gerekiyorsa bilemeyiz o anki programın ihtiyacına göre. Ama bu durum işlemciyi meşgul eder değil mi? Sürekli mesaj kutusunu kontrol et, sürekli mesaj kutusunu kontrol et. Bunun yerine MQ Notify fonksiyonuyla mesaj kuyruğuna bir mesaj geldiği zaman o prosesi tetikle diye kurabileceğimiz bir fonksiyon.
+
+236
+00:28:06,671 --> 00:28:35,512
+oluşturmuşlar. MQ Notify diye. Sürekli biz o mesaj kuyruğunu yani bir while döngüsü düşünün. Eksi bir dönmeyene kadar sürekli o kuyruktan mesaj okumaya çalış diye bir satır yazdığınızı düşünün. E ne olacak? İşlemci o mesaj gelene kadar orada sürekli bir şeyi deneyecek ve ilerleyemeyecek. Hem bir iş yapamayacak hem de meşgul olacak. Yani o anda işlemciyi çalıştırıyor olacaksınız. Bunu engellemek için de Notify diye bir fonksiyon oluşturulmuş.
+
+237
+00:28:35,512 --> 00:28:53,112
+ne yapıyor bu fonksiyon? Mesaj kuyruğuyla prosesi birbirine bağlıyor, ilişkilendiriyor. Böylece mesaj kuyruğuna bir mesaj geldiği zaman o prosese ilgi gönderiliyor ve uyandırılıyor. Proses işlemi almıyor. Tamam mı?
+
+238
+00:28:56,627 --> 00:29:06,067
+kuyruk durumu değiştiğinde bu değişikliği iletmesi için SIGER diye bir değişken oluşturmuşlar, yapı oluşturulmuşlar.
+
+239
+00:29:07,887 --> 00:29:21,927
+Bildirim gönderildikten sonra bildirim mekanizması ortadan kaldırılıyor. Yani bir sonraki durum değişikliğinin bildirilmesi için tekrardan bu notify fonksiyonunun set edilmesi gerekiyor.
+
+240
+00:29:27,059 --> 00:29:41,259
+mesaj kuyruğuna da mesaj geldiğinde uyarılacak prosesin değiştirmesini istendiği zaman yani atıyorum ben iki tane prosesim var p1 ve p2 ben mesaj kuyruğunu p1'i uyarması için set etmiştim ama şimdi p2'yi uyarmasını istiyorum.
+
+241
+00:29:41,259 --> 00:29:58,580
+bu zamanda bir önceki uyarılacak prosesi MQ Notify fonksiyonunu null olarak çağıracağız. Daha sonra bir sonraki yani P2 prosesi için tekrar başta yaptığımız gibi P1-P2 prosesini göndererek bu ilişkiyi kuracağız. Tamam mı?
+
+242
+00:30:02,387 --> 00:30:10,707
+bu attribute'lerin set ve get fonksiyonları var. Bunları detaylı anlatmaya gerek yok. İhtiyaç oldukça öğrenilebilecek şeyler.
+
+243
+00:30:13,607 --> 00:30:23,068
+Time, send and receive fonksiyonları var. Bunlar da diğerlerine ek olarak sadece süreli olarak şey yapılıyor.
+
+244
+00:30:23,068 --> 00:30:36,347
+yani bir süre bekle iptal et ya da bir süre bekle gönder şeklinde fonksiyonlara ekleme yapabildiğimiz bir yardımcı fonksiyon diyebiliriz.
+
+245
+00:30:37,507 --> 00:30:40,068
+Şimdi shared memory kısmına geldik.
+
+246
+00:30:42,428 --> 00:30:48,068
+Şimdi paylaşılan bellek modelinde bellek işbirliği süreçleri tarafından paylaşılır.
+
+247
+00:30:48,068 --> 00:31:00,248
+paylaştır. Bellek işbirliği, prosesler tarafından paylaştır. Tamam. Bizim mesela burada görselde baktığımız ne? Message Q kullanarak yaptığımız çözüm.
+
+248
+00:31:00,387 --> 00:31:13,788
+Proses A ve proses B. Message Q'lar üzerinden belleği paylaşıyorlar. Yani ilgili alanı. Ama şehit memori de proses A ve proses B direkt o alana erişerek işlemlerini hallediyor.
+
+249
+00:31:13,788 --> 00:31:39,707
+görselden anladığımız üzere. Yani message queue'larda bilgi alışverişi yapıyorlar ama şehit memory kısmında süreçleri eş zamanlı olarak çalıştırmaya yardımcı oluyor şehit memory. Ancak message passing yapamaz. Yani message queue'daki gibi birbirlerine mesaj gönderme gibi bir işlem yapamaz.
+
+250
+00:31:39,707 --> 00:31:40,868
+Tamam mı?
+
+251
+00:31:52,692 --> 00:32:08,771
+shared memory sistemlerde mesela sistem çağrısı sadece o alanı oluşturmak için, shared memory kısmını oluşturmak için kullanılıyor. Ama message queue'da sürekli her işlemde sistem çağrısını kullandığımız için aslında işlemci daha çok yoruluyor. Sistemi daha çok meşgul etmiş oluyoruz.
+
+252
+00:32:10,351 --> 00:32:18,891
+shared memory oluşturulduktan sonra tüm girişler rutin bellek erişimi olarak kabul edilebilir ve çekirdekten yardım istenmiyor artık. Tamam mı?
+
+253
+00:32:18,891 --> 00:32:40,651
+bilgisayar içinde bellek hızlarında yapılan iletişimin maksimum hızına ve rahatlığına izin verir daha hızlıdır. Diğer message q gibi çözümlere göre daha hızlı bir çözüm shared memory. Fonksiyonları da yine beş tane fonksiyonu var. Tek tek bunlara bakacağız.
+
+254
+00:32:40,651 --> 00:33:10,632
+shared memory oluşturuyor. Eğer oluşturamazsa eksi bir dönüyor. Paylaşılan bellek nesnesi zaten varsa şu zero trunk muhabbeti var ya en sondaki parametreden başladım. Eğer paylaşılan bellek nesnesi zaten varsa bunu sıfır bayta kısallar.
+
+255
+00:33:10,651 --> 00:33:38,811
+tamam mı? Bir üstündeki ne diyor? Eğer zaten varsa fail yapıyor, direkt hata veriyor. Eğer gerekliyse yeni bir nesne oluşturuyor. Read write komutuna izin veriyor. Şehir memori de read write yapma şeyini veriyor. İznini veriyor. Read only de sadece okunabilir bir memori alanı olduğunu işaretliyor tamam mı?
+
+256
+00:33:40,651 --> 00:33:55,872
+Bu fonksiyonda eğer dosya içerisine gönderilen len parametresi var ya of t diye of alt t diye o len parametresinden daha büyükse fazlalık atılıyor.
+
+257
+00:33:57,571 --> 00:34:03,772
+Kısaltıyor yani. Eğer len boyutundan daha kısaysa da içerisine sıfır byte'lar ekleniyor.
+
+258
+00:34:03,772 --> 00:34:10,192
+Yani o uzunluğa eşit uzunluğa gelene kadar sıfır byte'lar içeriği sıfır olan byte'lar ekleniyor.
+
+259
+00:34:10,651 --> 00:34:36,551
+m-map paylaşılan bellek nesnesinin içerisinde gördüğümüz eft parametresi var ya bir bölgesini işlemin adres alanını eşlemek için kullanır. Yani bir alan eşitleyeceğiz. Eşlenen bölge belirsilen offsetten başlayarak verilen uzunluk kadar karşılıklı eşleştirilir. Tamam mı?
+
+260
+00:34:36,552 --> 00:34:59,492
+normalde burada söylediği nasıl ifade edebiliriz? ADDR parametresi var ya bu normalde sıfır. Bir işletim sisteminin bölgeyi nereye eşleyeceğine karar vermesine izin verir. Gerekirse bu açıkça belirtilebilir. Yani hangi alana gidip eşleşme yapacağını belirtebiliriz.
+
+261
+00:35:06,516 --> 00:35:34,936
+bu şekil üzerinde anlatacak olursak daha açıklayıcı olabilir. Bu EDDR dedik ya, o alandan başlıyor. Verilen uzunluk kadar alanı bu prosesi de eşitliyor. Share it memory objecti. Anlaştık mı? Yani diyor ki bu proses bu kadar alana ihtiyaç duyuyor. O zaman diyor bu kadar alanı, ihtiyaç duyduğu alanı bu prosesin içerisine eşitleyelim diyor.
+
+262
+00:35:34,936 --> 00:36:01,035
+ve eşitlediği alanı bu fonksiyon eşitlediği alanı return yapıyor. Anlaştık mı? Yani böyle bakınca çok karmaşık gibi duruyor aslında ama totalde mantığı çok ihtiyaç doğrultusunda yaratılan şeyler olduğu için aslında bunlar bir problemlerin çözümü doğrultusunda oluşturulan fonksiyonlar olduğu için her biri bir problemin çözümü aslında.
+
+263
+00:36:01,036 --> 00:36:08,036
+Burada yine parametreleri açıklamışız.
+
+264
+00:36:11,443 --> 00:36:27,683
+manmap fonksiyonu belirtilen adresler arasındaki eşleşmeleri kaldırıyor. Demin yaptığımız eşleşmenin tam tersini yapıyor. Yani eşleşmeleri kaldırıyor. Bu işlem çok kullanılmaz. Çoğu işlemin sonunda kullanılan bellekle işimiz bittiğinde
+
+265
+00:36:27,683 --> 00:36:41,343
+shared memory unlink fonksiyonunu çağırırsak aradaki ilişkiyi kaldırmış. Aslında bu çok efektif olarak kullanılan bir fonksiyon değil. Demek ki üzerine daha güzel bir fonksiyon geliştirmişler ve
+
+266
+00:36:41,343 --> 00:36:49,964
+diğeri artık tedaviden katmış. Shade memory ending fonksiyonu daha çok kullanılan bir fonksiyon. Ne yapıyor? Aradaki bağlantıyı direkt kaldırıyor.
+
+267
+00:36:57,523 --> 00:37:27,083
+Şimdi şurada şöyle bir durum var. Eğer bunlar nesneye olan diğer olağanüstü bağlantılar ise yani bağlantılardan bahsediyoruz. Nesnenin kendisi var olmaya devam eder. Eğer benim shade memory ending fonksiyonunu çağırdığım proseste bu nesneyle bağlı olan son ilişkili prosesse bu fonksiyondan sonra nesne siliniyor. Çünkü başka bir prosesin üzerinde bir işlem yapmadığı nesne artık tutunuyor ve siliniyor.
+
+268
+00:37:27,083 --> 00:37:27,623
+Tamam mı?
+
+269
+00:37:29,364 --> 00:37:31,783
+Şimdi bununla alakalı bir örnek daha var.
+
+270
+00:37:41,940 --> 00:38:02,099
+bir tane paylaşılan bellek alanı yaratıyoruz. 56 byte. Burada da receive kısmı var. Burada ne diyor? Oluşturduğu mesajı buraya tekrar gönderiyor. Biraz daha bakalım nasıl bir mantıkla yazılmış.
+
+271
+00:38:10,452 --> 00:38:15,892
+alanının içerisinde shared memory segment allocated correctly ve segment size'ını gönderiyor.
+
+272
+00:38:20,148 --> 00:38:30,587
+pardon, şurayı yazıyor içerisine. Shareit memory'nin içerisinde yazdığı mesaj my message type ve uzunluğu da diğer numara da random olarak atılmış.
+
+273
+00:38:31,267 --> 00:38:39,168
+Message'in type'ı sadece. Gerçi type de random olarak atılmış. Zaten ben bunu çalıştırmıştım. Her süperinde farklı geliyor da. Evet, randomluk varmış.
+
+274
+00:38:43,767 --> 00:38:49,807
+Burada da receive aldığı message type'ı random olarak belirlemiş. Onu almış.
+
+275
+00:38:50,148 --> 00:39:07,668
+aslında biz bunu gönderebilmiş olduk yani. Küçük bir örnek. Diğerinden çok bir farklıymış gibi durmuyor sadece bir mesaj gönderdiğimiz için ama sistem kısmında baktığımız zaman bu şekilde yapılan paylaşım daha efektif oluyor. Tamam mı? Şehit memory.
+
+276
+00:39:12,788 --> 00:39:21,267
+Şimdi thread ve prosesler arasındaki farklılıklara bakalım. Fork fonksiyonundan daha önce de bahsetmiştim.
+
+277
+00:39:22,447 --> 00:39:28,307
+Şimdi çok maliyetli olabiliyor fork fonksiyonu. Şu görsel üzerinde bakalım.
+
+278
+00:39:29,628 --> 00:39:41,628
+Bir prosesi fork fonksiyonuyla başka bir prosesi türettiğimiz zaman bu prosesin içerisinde sahip olduğu global variablesları, kodu ve siteyi yani hafıza birimi
+
+279
+00:39:41,628 --> 00:40:05,508
+hepsi proses B'ye aynı şekilde kopyalanmış oluyor. Bu da çok fazla maliyet demek bizim açımızdan değil. Bu yüzden thread yaratıyoruz. Yani thread yaratmak daha maliyetsiz oluyor. Fork yaparak bir thread'i kopyalamak yerine yeni bir thread oluşturmak daha az maliyetli oluyor.
+
+280
+00:40:05,507 --> 00:40:26,307
+her işlem birçok iş parçacı içerebilir demişiz. Yani bir thread başka bir thread'i yaratabilir, o thread başka bir thread'i yaratabilir ve böylelikle bir işlem birçok thread'e, bir proses birçok thread'e sahip olabilir.
+
+281
+00:40:26,307 --> 00:40:52,827
+Her bir thread bir belleğe dosya soket tanımlayıcılarına sinyal pardon yanlış söyledim fiil olarak bellek dosya soket tanımlayıcıların sinyal işleyicilerini ve sinyal düzenlemelerini çalışma ortamlarına paylaşırlar tamam mı? Bu tüm iş parçacıkları birbirlerine söylerler. Aralarında alışveriş yapabilirler.
+
+282
+00:40:52,828 --> 00:41:03,588
+ve her bir thread içerisinde stack registersları ve program counter olan bir yapıdır. ID'si olan bir yapıdır.
+
+283
+00:41:03,768 --> 00:41:09,048
+Stack dediğim zaman stackten ne anlıyoruz? Hafıza birimi değil mi? Siteğin içerisinde bilgi tutarız.
+
+284
+00:41:11,548 --> 00:41:13,808
+Program counter deyince ne anlıyoruz?
+
+285
+00:41:13,807 --> 00:41:26,948
+program counter dediğimizde aslında biz bir programı değerlediğimiz zaman satır satır hangi kodun çalışacağını belirleyen aslında onu takip etmesini sağlayan program counter değil mi?
+
+286
+00:41:27,987 --> 00:41:37,868
+Değerlendiği zaman program counter hangi satır işaret ediyorsa o satır çalışır daha sonra program counter bir artırılır ve bir sonraki gösterdiği satır çalışır.
+
+287
+00:41:37,868 --> 00:41:38,868
+Tamam mı? Yani threadlerin içerisinde de bir program counter, registers ve stackleri varmış. Siteyi varmış. Değil mi? Bu işlem nasıl da diyelim bu thread yaratımlarının iş paylaşımlarının çok dikkatli bir şekilde yapılması gerekiyor. Çünkü o paralellik bizim düşündüğümüz şeyle yani tek düzen için tek bir main fonksiyonu
+
+288
+00:42:07,868 --> 00:42:16,748
+program yazmaya alışmış bir programcının bir anda paralel programlamaya geçiyor olması onu sıkıntıya sokabilir.
+
+289
+00:42:16,868 --> 00:42:23,448
+Genelde threadle çalışıldığı zaman compile error vermediği için sıkıntının nerede olduğunu bulmak çok zor olabiliyor.
+
+290
+00:42:24,067 --> 00:42:25,868
+Yani compile error vermiyor ne demek?
+
+291
+00:42:26,127 --> 00:42:33,127
+Çalıştırıyorsun, tek bir satırda bir şurada şunu yanlış yapmışsın diye sana bir uyarı veren bir gösterge yok.
+
+292
+00:42:33,127 --> 00:42:44,307
+tamamen sen yaptığın işlemi paralel düzeyde düşünerek yani sanki sana önce bu yapmıştı sonra diğeri yapmış önce bu satır çalışmış sonra şu satır çalışacak gibi geliyor.
+
+293
+00:42:45,396 --> 00:43:03,576
+ama paralel bir problemi, paralel prosesleri kullanarak çözümleyebilmek gerçekten zihni çok yoran bir olay. O yüzden programlaması güç ve hatayı ayıklayabilmesi, nerede sıkıntı olduğunu anlayabilmesi zor bir alan.
+
+294
+00:43:03,576 --> 00:43:16,776
+paralel programlama dersi almıştım. Ödev yaparken zorlanmıştım ama çok keyifli. Paralel programlama insanı daha çok düşündürdüğü için daha çok geliştiriyor bence.
+
+295
+00:43:26,452 --> 00:43:52,151
+fonksiyonu thread'in oluşmasını sağlıyor. Içerisinde parametre var. İhtiyaç duyduğumuz parametre gönderiyoruz. Eğer fonksiyon başarılı olursa sıfır değil dönüyor. Thread'in ID'si verilen değişken içinde tutuluyor. Verilen değişken dediğimiz neyi burada çünkü pointer olarak veriyoruz ya TID dediğimiz. Burada thread'in ID'si verdiğimiz bu parametrenin içerisinde tutuluyor.
+
+296
+00:43:56,019 --> 00:44:07,799
+Burada yaratımını göstermiş fonksiyonda ne diyor? Söyledik thread'in ID'si burada tutulur diye.
+
+297
+00:44:14,164 --> 00:44:19,923
+Her bir thread bir ID'ye sahip, unique bir ID'ye benzersiz bir ID'ye sahip.
+
+298
+00:44:22,924 --> 00:44:28,923
+ID'si kullanılarak bu fonksiyonla threadler çağrılabiliyormuş.
+
+299
+00:44:31,344 --> 00:44:32,803
+Burada da bir örneğini vermişler.
+
+300
+00:44:47,219 --> 00:45:13,799
+thread'in içerisinde bir parametre sadece bir argue values'u ile gönderiliyor. Gönderilebiliyor. Tamam mı? Ancak sadece bir gönderebildiğimiz için çok fazla şey göndermek istediğimiz zaman nasıl bir yapıyla karşılaşacağız bakalım. Eğer kompleks bir parametre göndermek istiyorsak bunu bir structure'a dönüştürüp o structure'ı içerisine gönderiyoruz.
+
+301
+00:45:17,972 --> 00:45:18,972
+ve bu oluşturduğumuz structure'lar, local variable'lar olamıyormuş. Yani lokalde tanımlanmış olamıyor. Gördüğünüz gibi bir struct oluşturmuş. X'i ve Y'yi aynı anda gönderecek. Bir parametre oluşturuyor. Struct'ın iki int isminde struct olan bir yapı oluşturuyor fo adında. Tamam mı? Bunu da
+
+302
+00:45:50,324 --> 00:46:17,263
+kullanacak. Threadlerin lifespan'inden bahsedelim. Nasıl oluyormuş? Bir main fonksiyonun içerisinde başlıyormuş. Main fonksiyonu da bir thread'tir. O thread'in altında yeni thread'ler oluşabilir. Yeni bir thread oluşturuyor ve o thread'i start routine fonksiyonuyla başlatıyor.
+
+303
+00:46:17,263 --> 00:46:45,023
+exit fonksiyonuyla o thread'i terminate ediyor. Bu main fonksiyonu oluşturduğu thread'le birleşebilmek için join fonksiyonunu kullanarak o fonksiyon terminate olana kadar main fonksiyonu o thread'i bekliyor. Anlaştık mı? Join'le bu main thread bunu oluşturdu ya şimdi.
+
+304
+00:46:45,023 --> 00:47:14,363
+bu işlem bitene kadar burada onu bekliyor. Kendi işini yani şu arada yapması gereken işleri yaptı ve şurada artık bu thread'in paralel olarak çalışan main fonksiyonu paralel olarak çalışan bu thread'in işlemini bitirip artık bu noktada ana thread'e bağlanmasını bekliyoruz. Yani işini bitirip ana thread'in çalışmasına müsaade etmesini bekliyoruz artık.
+
+305
+00:47:15,023 --> 00:47:17,483
+ne dedik?
+
+306
+00:47:19,643 --> 00:47:21,943
+Create fonksiyonlarıyla yaratılırlar.
+
+307
+00:47:22,943 --> 00:47:29,303
+Eğer threadler terminator'sa yani sonlanırlarsa o fonksiyonundan geri dönerler.
+
+308
+00:47:35,284 --> 00:47:39,644
+thread exit fonksiyonuyla sonlandırılabilirler.
+
+309
+00:47:42,363 --> 00:47:47,284
+Yani bütün yaratılan thread sonlanmadan...
+
+310
+00:47:49,876 --> 00:47:50,675
+nedio?
+
+311
+00:47:58,291 --> 00:48:07,991
+main thread'den ya da herhangi bir thread'den exit komutu çağrıldığı zaman o threadler sonlandırılıyor.
+
+312
+00:48:15,795 --> 00:48:24,256
+Bu program mesela dört tane thread oluşturmuş. Her birini çalıştırıyor ve hepsinin sonlanmasını bekliyor. Kendisinin de sonlanması için. Tamam mı?
+
+313
+00:48:26,756 --> 00:48:31,415
+Burada örnekleri çok güzel açıklamışlar.
+
+314
+00:48:34,915 --> 00:48:45,415
+Ne yapıyor burada? Bir hello fonksiyonumuz var. İçerisine parametre alıyor ve thread'in id'sini basarak hello yazdırıyor.
+
+315
+00:48:45,795 --> 00:48:49,795
+anladığım kadarıyla ve daha sonra da bu thread'i sonlandırıyor.
+
+316
+00:48:49,795 --> 00:48:51,795
+Every start routine
+
+317
+00:48:55,315 --> 00:48:59,515
+Bu arada void return'üne sahip olması gerekiyor fonksiyonların.
+
+318
+00:49:09,012 --> 00:49:35,751
+thread numberlarını yani thread sayılarını tutan bir argument objemiz var. Öncelikle void bir parametreyi integer'a dönüştürüyor. Argument parametresini görüyorsunuz burada void. Mouse'umu kendi iki ekran kullanıyorum da diğer ekranda gösteriyormuşum. Void return type'ında olan bir argüment nesnesini öncelikle integer veritipine kesiyor.
+
+319
+00:49:42,675 --> 00:49:57,995
+bundan sonrasında integer değerini elde etmiş oluyor. Tamam mı? Sonrasında da exit fonksiyonunu çağırarak bu threadleri sonlandırıyor.
+
+320
+00:50:04,467 --> 00:50:22,408
+Burada thread id'lerini number of threads kadar mesela beş tane ise beş tane thread id tutacak bir erayı oluşturuyor. Ondan sonra her birinin parametresini tutması için bir argument dizisi oluşturuyor.
+
+321
+00:50:25,407 --> 00:50:28,228
+Bu attribute destesini oluşturuyor.
+
+322
+00:50:35,668 --> 00:50:36,168
+şimdi.
+
+323
+00:50:39,731 --> 00:51:09,551
+thread create fonksiyonunun içerisinde öncelikle bir thread'in id'sini gönderiyoruz. Değil mi? Daha sonra attribute'un attribute'lerini gönderiyoruz. Şurada default değerlerini okudu burada. Attribute init dedi. Attribute'un default değerlerini okudu. Buraya o değerleri gönderiyor. Sonra içinde kullanılacak fonksiyonunu gönderiyor. Hello fonksiyonunu. Onu da daha önce daha tanımlamıştık.
+
+324
+00:51:09,731 --> 00:51:17,932
+burada hello fonksiyonunu gönderiyor ve dördüncü olarak da
+
+325
+00:51:24,275 --> 00:51:30,855
+thread'in yani ininci thread'in argümanını gönderiyor. Onu ne diye tanımlamıştık.
+
+326
+00:51:41,364 --> 00:51:43,163
+Tamam, şimdi ileride görürüz.
+
+327
+00:51:51,315 --> 00:51:59,935
+thread join dediğimiz zaman ne oluyordu? Bir tanesinin bitmesi, diğerinin başlaması, yani diğerinin başlaması için bir tanesinin bitmesini bekliyoruz değil mi?
+
+328
+00:52:02,355 --> 00:52:09,855
+Wait for thread with thread ID. Yani onun terminate olmasını bekliyor, devam edebilmek için.
+
+329
+00:52:12,916 --> 00:52:14,315
+Eğer sonlanmazsa...
+
+330
+00:52:19,315 --> 00:52:20,315
+...
+
+331
+00:52:19,059 --> 00:52:21,099
+burada neyi kontrol ediyor?
+
+332
+00:52:25,684 --> 00:52:49,684
+sıfıra eşit değilse yani sonlandığı zaman sıfır return'ı dönüyordu ya o yüzden sıfırdan farklı değer dönerse demek ki bir sıkıntı olduğunu anlıyoruz. Sıfıra eşitse zaten buraya girmiyor ve bizim mesajımızı yayınlıyor. Tamam mı? Burada hani ilk gördüğümüz çıktı var ya aslında onun kodunu açıklıyor burada şurada gördüğümüz. Anlaştık değil mi?
+
+333
+00:52:55,092 --> 00:53:22,711
+Tamam, şimdi başka bir örnek inceleyeceğiz. Aynı şekilde paralel olarak bir stringin uzunluğunu hesaplayan, bir stringin içerisindeki boşluğu hesaplayan ve bir stringi büyük harfe çeviren bütün harflerini bir de bütün harflerini küçük harfe çeviren bir bir değil dört tane processi, thread'i aslında aynı anda koşturacağız ve bu sonuçlarına bakacağız. Neler oluyor?
+
+334
+00:53:22,711 --> 00:53:49,851
+Şimdi lentini hesaplayan fonksiyon burada. Gene return to void gördüğünüz üzere. Number of space'i hesaplayan fonksiyonumuz da burada. Return to void. Gene argument parametresi alıyor. Burada string okuduğumuz için bunu karakter dizisine çeviriyor. Çünkü tek tek harflerine erişmek istiyoruz. Boşluk mu değil mi diye ona bakacağız.
+
+335
+00:53:49,851 --> 00:54:13,111
+Burada da gördüğünüz gibi mesela PTR iyiye geliyor. Onun boşluğa eşit olup olmadığını konuşur diyor. Eşitse counter'ını bir arttırıyor ve bir sonraki elemana bakıyor. Tamam mı? En sonunda da number of space değişkenini de n'e eşitliyor. Bunlar da global değişkenler. Number of space, land ve
+
+336
+00:54:13,111 --> 00:54:17,251
+for the transfer of all.
+
+337
+00:54:17,511 --> 00:54:17,791
+Tamam.
+
+338
+00:54:19,411 --> 00:54:20,111
+Anlaştık.
+
+339
+00:54:20,211 --> 00:54:21,891
+Dört tane de threadimiz var.
+
+340
+00:54:24,271 --> 00:54:27,671
+Bakalım burada benim söylediğimden farklı bir şey söylemiş mi?
+
+341
+00:54:33,364 --> 00:54:34,364
+hakkı bir şey söylemiş. Tamam. Açıkladık. Şimdi step 1'de her bir parametre için dört kere o fonksiyonu çağırarak bir çözüm hazırlamış. Step 2'de de bu çözümü biraz daha efektif bir hale getirmiş. Öncelikle bir step 1'e bakalım. Daha sonrasında step 2'de nasıl güzelleştirmiş onu da anlamaya çalışırız. Şimdi number of thread sayımız dört'tü. Dört tane thread oluşturuyor. Dört tane
+
+342
+00:55:03,364 --> 00:55:04,364
+dedi tutan tid eleyi oluşturuyor. Daha sonra attribute'u gene oluşturdu. Default'unu aldı. Create'le her bir nesneyi o andaki ininci thread'i gönderiyor. Tamam mı? Ancak şöyle bir şey var. Biz her seferinde bu fonksiyon mesela lent ya. Biz dört tane farklı fonksiyon çalıştıracak
+
+343
+00:55:33,364 --> 00:55:40,444
+değil mi? Land numspace to uppercase lowercase değil mi? Dört tane fonksiyon çalışacağız.
+
+344
+00:55:40,544 --> 00:55:45,563
+Yani burada her birinde bu üç tane kısım aynı kalacak ama land tarafı var ya şurası.
+
+345
+00:55:46,364 --> 00:55:52,843
+Burası bir tanesinde land olacak. Sonra bu satırın bittikten sonra number of space fonksiyonunu buraya yazacağız.
+
+346
+00:55:52,843 --> 00:56:01,503
+O da bitecek. Uppercase, lowercase. Bunları çağıracağız ancak öyle dördünü de çalıştırmış olacağız.
+
+347
+00:56:01,503 --> 00:56:31,483
+yani bu satırı dört kere tekrar etmemiz gerekecek her farklı fonksiyon için. Ama burada main step two da ne yapmış? Bunlar için bir yapı oluşturmuş. Yani bu dört fonksiyonu tutan bir yapı oluşturmuş. Ve sonrasında onu da bir i parametresine bağladığı için tek bir satırda bu işlemi çözmüş bir döngüyle. Yani i sıfır olduğu zaman nasıl threadlerin id'sini bir array'de tuttuysak onu da bir array'in içerisinde
+
+348
+00:56:31,503 --> 00:56:36,823
+ve iyi değişkenine bağlamışlar. Çok güzel bir efektif bir çözüm olmuş.
+
+349
+00:56:51,059 --> 00:56:56,819
+yaptık. Sonucunu görelim. Mesela
+
+350
+00:57:01,972 --> 00:57:02,972
+plant'in sonucu 36. Number of space 5 geliyor. Her seferinde ama büyüktür, küçüktür fonksiyonu birbirleriyle yarıştığı için fark ettiğiniz gibi mesela şurada string yarısı büyük, yarısı küçük. Sonrasında mesela hepsi büyük burada büyük yap diyen thread daha hızlı çalışmış. Yarışı kazanmış. Mesela en sonunda hepsi küçük neredeyse sadece birkaç
+
+351
+00:57:31,972 --> 00:57:58,891
+tane harfi büyük kalmış. Yani hangisinin önce çalıştığını kestiremeyeceğiz, öngöremeyeceğiz dediğim olay aslında çok güzel bir örnek olmuş burada. Hesaplama yaparken birbirini etkiyen bir durum yok. 36 ve 5 sonuçları her şekilde aynı çıkıyor. Ama bir yandan cümleyi büyük harfe çevirmeye çalışırken ve bir yandan küçük harfe çevirmeye çalışırken sıkıntı yaşanmış oldu ve burada
+
+352
+00:57:58,891 --> 00:58:28,731
+proseslerin birbirleriyle nasıl yarıştığını ve öngörülebilirlik durumunun olmadığını görmüş olduk değil mi? Yani hangi prosesin önce çalışacağını biz karar vermediğimiz müddetçe hangisinin önce çalıştığını bilemeyeceğiz ve bu bilinmezlik bizim yaptığımız hesaplamalar için hiç iyi bir şey değil. Çünkü ben birle biri topladığında her zaman iki sonucunu göremek isterim. Birle biri topladığım zaman bir, bir keresinde iki, bir keresinde üç ama çoğunlukla iki görürüm ama bazen bir de görebilirim.
+
+353
+00:58:28,731 --> 00:58:37,851
+bazen 3'te görebilirim şeklinde bir sonucu kabul etmemiz mümkün değil. Bu durumla alakalı
+
+354
+00:58:54,804 --> 00:59:11,863
+deteç olarak yaratılan threadler hiçbir şekilde ana main'e geri dönüş yapamıyor, katılamıyor ama joinable threadler main'e kendi işleri bittiği zaman main'e katılabiliyorlar. Burada da ondan bahsetmiş.
+
+355
+00:59:11,863 --> 00:59:25,304
+nasıl detect edebileceğimizi burada göstermişler. Mesela fonksiyonu var. Set, detect, state diye bir fonksiyonu var. Bu şekilde kullanım sağlayabiliyormuş.
+
+356
+00:59:27,443 --> 00:59:40,704
+Şimdi paylaşılmış global değişkenlerde problem yaşanabilir dedik. Bu problemler mutex ve condition variables'larla çözümlenebilir.
+
+357
+00:59:40,703 --> 01:00:09,583
+Bu problemlerden kaçınmak istiyoruz tabii ki. Global değişkenlere aynı zamanda erişmeye çalıştıkları zaman hani bu örnekte gördük ya büyük küçük harf. Global bir stringimiz vardı. Hepsi aynı anda ona erişiyor. Ama biri büyüğe, biri küçüğe çevirmeye çalışıyor. Hangisi daha hızlı yani o anda hangisi işlemciden zaman çalabiliyorsa, işlemciyi kullanabiliyorsa o daha hızlı çalışıp sonucu etkileyebiliyor. Şimdi bu problemi çözmek için mutexler ve condition variable'ları kullanabildiğimizden bahsediyor.
+
+358
+01:00:10,704 --> 01:00:38,104
+Bunu ben demin zaten açıkladım. Öngörülebilirliği istiyoruz. Farklı sonuçlar görmek istemiyoruz diye tekrar aynı şeyleri söylemeyeceğim. Bu problemlerden kaçmak için karşılıklı dışlama bir çözüm olabilir. Karşılıklı dışlama ne demek? Bundan da bahsedeceğiz. Global değişkenlere erişmeden önce, şimdi karşılıklı dışlamadan bahsediyorum. Bir global değişkene erişmeden önce
+
+359
+01:00:38,103 --> 01:01:07,223
+o şeyi kitlemek ve işin bittiğinde açmak karşılıklı dışlama oluyor. Yani tuvalet kullandığımızı düşünelim. O tuvalete herkesin girip çıkması istemediğim için girdikten sonra arkadan kapıyı kitliyorum. İşin bittiği zaman kapıyı açıyorum ve çıkıyorum değil mi? Bu sayede ne oluyor? İçeriden bunu kitlediğim için dışarıdan kimse ben içerideyken ben o odayı kullanırken kimse gelip o odayı kullanamıyor. Anlaştık mı?
+
+360
+01:01:18,963 --> 01:01:24,763
+mutexlerin içerisinde oluşturduğu değişkenler statik olması gerekiyor. Tamam mı? Statik.
+
+361
+01:01:28,340 --> 01:01:39,779
+mutex lock ve mutex unlock olmak üzere iki tane fonksiyonları var. Bu fonksiyonların hepsi bloklama yapabiliyor.
+
+362
+01:01:41,364 --> 01:02:11,303
+condition variables'lar da şöyle. Mesela bu text'lerle çözdüğümüz sonuçlarda işte hani daha önce de bahsettiğimiz örneklerde illa ki söylemişimdir. Mesela bir nesne yani o odanın kapısı kapalı ya. O odanın kapısı kapalı. Her seferinde bunu kontrol etmek için kalkıyorum. Biliyorum odanın kapısı kapalı mı? Kapıyı açmaya çalışıyorum. Kontrol ediyorum. Kapısı kilitli açılmıyor. Ha diyorum tamam kilitli hala içeride biri var. Gidiyorum. Sonra tekrar geliyorum. Tekrar kapıyı açmaya çalışıyorum. Ha hala içeride birisi.
+
+363
+01:02:11,303 --> 01:02:12,303
+var. Bunu sürekli yaptığım zaman işlemciyi yoruyorum değil mi? Ama bir condition variable eklediğimiz zaman diyorum ki yani şöyle bir şey eklediğimizi düşünün. Tuvalet boşaldığı zaman zil çalsın. O zili duyduğum zaman diyeceğim ki haa tuvalet boşaldı ben o zaman gidip tuvalete kullanabilirim. Aynı şekilde bu condition variables'larda böyle bir şey meşgul bekleme problemini ortadan kaldırıyor. Eğer verdiğim işte parametre
+
+364
+01:02:41,303 --> 01:02:59,383
+atıyorum mutex'in değeri şu olduysa uyanmaktan yani o prosesi bekliyor ya o olayın çözülmesini. O prosesi uyandırıyor verdiği condition'a göre yani hangi şartı verdiyse o şart sağladığı zaman o prosesi uyandırıyor.
+
+365
+01:03:04,244 --> 01:03:08,403
+Burada da bu fonksiyonları göstermiş.
+
+366
+01:03:14,003 --> 01:03:16,363
+ve sunumumuz da burada bitti.
+
+367
+01:03:18,444 --> 01:03:22,384
+Sormak istediğiniz kafanızı karıştıran bir nokta oldu mu?
+
+368
+01:03:32,436 --> 01:03:40,436
+yoksa benim başka anlatacak bir konum yok. Bu kadardı. Neleri öğrendik? Semaphorelardan bahsettik.
+
+369
+01:03:41,936 --> 01:03:52,295
+Mesaj kuyruklarından bahsettik. Share memory'lerden bahsettik. Mutex'lerden bahsettik. Condition variables'lardan bahsettik.
+
+370
+01:03:52,295 --> 01:04:10,235
+aslında semaforlara yani bu paralel işlemlerin yapılırken bu paylaşılmış birimlerin neden senkronize şekilde çalışılması gerektiğini anlamış olmamız lazım bu dersin sonunda.
+
+371
+01:04:12,855 --> 01:04:16,635
+Condition Mary ebusları neden kullandığınızı anlamış olmamız lazım değil mi?
+
+372
+01:04:24,307 --> 01:04:53,307
+adım kadarıyla sorunuz yok. Benim de ekleyecek bir şeyim yok. Slide'ları paylaşacak mısınız? Ben bir hocaya sorayım. Paylaş derse paylaşırım. Hatta bu slide'a eklediğim şeyler, fonksiyonların her birinin bir örneği var. Ubuntu'da tekrardan çalıştırıp bunları gözlemlemek zor olacağı için burada çıktıları ve kodları çok güzel hazırlanmış. O yüzden üzerinden anlattım.
+
+373
+01:04:53,307 --> 01:04:55,367
+siz kendiniz deneyebilirsiniz de.
+
+374
+01:04:56,307 --> 01:04:58,287
+Hocaya sorayım eğer müsaade ederse.
+
+375
+01:04:58,708 --> 01:05:00,388
+Avesizimden paylaşmış olurum.
+
+376
+01:05:02,988 --> 01:05:04,188
+Teşekkürler hocam.
+
+377
+01:05:04,867 --> 01:05:05,848
+Rica ederim.
+
+378
+01:05:07,208 --> 01:05:08,367
+Ben teşekkür ederim.
+
+379
+01:05:08,727 --> 01:05:10,087
+Hepinize iyi akşamlar.
+
+380
+01:05:14,900 --> 01:05:17,219
+Umarım başarılı bir dönem olur. Görüşmek üzere.
