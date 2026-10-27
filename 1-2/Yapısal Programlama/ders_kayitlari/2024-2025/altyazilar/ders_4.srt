@@ -1748,11 +1748,11 @@ Evet, doğru sınıftasınız değil mi arkadaşlar? Geçen hafta çarşamba yap
 
 438
 01:29:51,507 --> 01:30:11,667
-Tamam, o şekilde de ben şundan bahsediyorum Doruk. Elbette değişiklik isteyeceğiz. Biz bunu bu şekilde tanımladıysak ve buradan böyle gönderiyorsak şurada pointer olarak almamız sıkıntı değil mi? Dizi olarak almamız gerekmiyor mu?
+Tamam, o şekilde de ben şundan bahsediyorum [öğrenci]. Elbette değişiklik isteyeceğiz. Biz bunu bu şekilde tanımladıysak ve buradan böyle gönderiyorsak şurada pointer olarak almamız sıkıntı değil mi? Dizi olarak almamız gerekmiyor mu?
 
 439
 01:30:19,507 --> 01:30:44,247
-Evet, array de bir pointer bir de. Array'in etiketi daha doğrusu. Bir de mesela burada Doruk sen söyledin ya, işte değer değişimlerini dışarıya çıkartacağız. Burada bir değer değişimi yapmıyoruz aslında. İki tane stringimiz var. Şu aradığım string, bunun içinde varsa adresini yoksa eksi bir gönderecekmiş. Dolayısıyla orijinal stringlerde herhangi bir değişiklik yapmıyoruz.
+Evet, array de bir pointer bir de. Array'in etiketi daha doğrusu. Bir de mesela burada [öğrenci] sen söyledin ya, işte değer değişimlerini dışarıya çıkartacağız. Burada bir değer değişimi yapmıyoruz aslında. İki tane stringimiz var. Şu aradığım string, bunun içinde varsa adresini yoksa eksi bir gönderecekmiş. Dolayısıyla orijinal stringlerde herhangi bir değişiklik yapmıyoruz.
 
 440
 01:30:44,247 --> 01:30:48,387

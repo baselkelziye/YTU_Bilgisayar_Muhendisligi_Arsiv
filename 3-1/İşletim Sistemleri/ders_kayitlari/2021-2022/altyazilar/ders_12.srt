@@ -20,7 +20,7 @@ Dediğim gibi buradayım, bekliyorum.
 
 6
 00:04:28,564 --> 00:04:48,783
-Merhaba Buğra. Şimdi fork komutunu tekrar etmeye bir anlamı yok. Şundan dolayı bugün konuşacağımız konular içerisinde zaten proses operasyonlarını konuşacağız. Onların başında da proses yaratılması gelecek. Dolayısıyla fork ile ilgili daha nasıl diyeyim spesifik konuşuyor olacağız. Daha detaylı konuşuyor olacağız.
+Merhaba [öğrenci]. Şimdi fork komutunu tekrar etmeye bir anlamı yok. Şundan dolayı bugün konuşacağımız konular içerisinde zaten proses operasyonlarını konuşacağız. Onların başında da proses yaratılması gelecek. Dolayısıyla fork ile ilgili daha nasıl diyeyim spesifik konuşuyor olacağız. Daha detaylı konuşuyor olacağız.
 
 7
 00:04:48,783 --> 00:05:13,424
@@ -420,7 +420,7 @@ başta güzel gözükebilir ve fakat şunu unutmamak lazım bir sistemde 32 pros
 
 106
 00:25:17,623 --> 00:25:44,383
-Burak. Tam da onun sorduğu sorunun karşılığına gelecek olan yerlere geldik gibi düşünün. Bunu konuşacağız örnekleriyle. Bir de ikinci temel operasyon termination yani bir proses başladı çalıştı bir yerde ne olacak? Ya kendi kendine kapatacak ya biz onu kapatacağız. Dolayısıyla bunların nasıl olabileceğini konuşuyor olacağız.
+[öğrenci]. Tam da onun sorduğu sorunun karşılığına gelecek olan yerlere geldik gibi düşünün. Bunu konuşacağız örnekleriyle. Bir de ikinci temel operasyon termination yani bir proses başladı çalıştı bir yerde ne olacak? Ya kendi kendine kapatacak ya biz onu kapatacağız. Dolayısıyla bunların nasıl olabileceğini konuşuyor olacağız.
 
 107
 00:25:47,623 --> 00:26:02,683
@@ -572,7 +572,7 @@ Fakat farklı olan aslında iki tane özellik var.
 
 144
 00:32:28,875 --> 00:32:31,115
-Bir tanesi Yusuf'un sorduğu soru.
+Bir tanesi [öğrenci]'un sorduğu soru.
 
 145
 00:32:31,595 --> 00:32:34,716
@@ -644,11 +644,11 @@ Bir tanesi idilleri farklı olduğuna göre.
 
 162
 00:33:59,476 --> 00:34:19,935
-Şimdi Süleyman sanırım şey mantığını anlamış değilsin. Şu grafiğe bakarsan böyle yazdığına göre. Fork dediğiniz andan itibaren prosesin birebir bir kopyası yaratılıyor diyoruz. Birebir aynı. Her şey aynı.
+Şimdi [öğrenci] sanırım şey mantığını anlamış değilsin. Şu grafiğe bakarsan böyle yazdığına göre. Fork dediğiniz andan itibaren prosesin birebir bir kopyası yaratılıyor diyoruz. Birebir aynı. Her şey aynı.
 
 163
 00:34:19,935 --> 00:34:41,095
-Fakat bu proseslerle ilgili iki tane temel bilginin farklı olması gerekir. Bir tanesi Yusuf'un sorduğu soruya karşılık söylediğim şey nedir o? Her prosesin bir ID'si olması lazım. Bunun da unique olması lazım. Dolayısıyla proses ID bilgisi farklı olacak.
+Fakat bu proseslerle ilgili iki tane temel bilginin farklı olması gerekir. Bir tanesi [öğrenci]'un sorduğu soruya karşılık söylediğim şey nedir o? Her prosesin bir ID'si olması lazım. Bunun da unique olması lazım. Dolayısıyla proses ID bilgisi farklı olacak.
 
 164
 00:34:45,076 --> 00:34:55,355
@@ -1152,7 +1152,7 @@ Arada bir arkadaşınız el kaldırdı ama sonra indirdi. Cümlem devam ediyordu
 
 289
 00:42:58,803 --> 00:42:59,723
-Ahmet.
+[öğrenci].
 
 290
 00:42:59,723 --> 00:43:01,463
@@ -1192,7 +1192,7 @@ PID ne zaman sıfır oluyor şimdi PID ne zaman sıfır olduğunu
 
 299
 00:43:58,291 --> 00:44:01,451
-Ahmet hayırdır? Bir şey daha mı söyleyeceğim? Anlamadım.
+[öğrenci] hayırdır? Bir şey daha mı söyleyeceğim? Anlamadım.
 
 300
 00:44:12,371 --> 00:44:18,571
@@ -1620,7 +1620,7 @@ Eğer derdim girilen bir komutu çalıştırmaksa yeni bir proses yarattıysam b
 
 406
 00:49:51,040 --> 00:50:02,500
-Şimdi demin soruyu soran arkadaş Ahmet kafanda netleşti mi yoksa hala böyle blur olan oturmayan yer var mı?
+Şimdi demin soruyu soran arkadaş [öğrenci] kafanda netleşti mi yoksa hala böyle blur olan oturmayan yer var mı?
 
 407
 00:50:07,668 --> 00:50:08,427

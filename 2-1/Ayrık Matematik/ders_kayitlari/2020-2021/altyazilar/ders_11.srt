@@ -1,0 +1,4447 @@
+1
+00:03:58,836 --> 00:03:59,555
+nereden hocam?
+
+2
+00:04:01,895 --> 00:04:03,836
+Size demin mail attım.
+
+3
+00:04:06,695 --> 00:04:08,895
+Ve sizden de rica edeceğim.
+
+4
+00:04:09,035 --> 00:04:13,115
+Bazen bu arkadaşlarınızın, bazı arkadaşların eline mail der geçmiyormuş.
+
+5
+00:04:13,315 --> 00:04:14,975
+Yani bana öyle mesajlar geliyor.
+
+6
+00:04:16,356 --> 00:04:18,275
+Belki speme düşüyor, bakmıyorlar.
+
+7
+00:04:18,676 --> 00:04:20,016
+O konuda bir bilgim yok.
+
+8
+00:04:21,275 --> 00:04:24,836
+1 Ocak, Cuma günü tatile geldiği için
+
+9
+00:04:24,836 --> 00:04:27,096
+biz o hafta ders yapamayacağız.
+
+10
+00:04:27,096 --> 00:04:37,255
+İkinci vize yapmaya karar verdik. Fakat her derste ikinci vize yapılmayacağı için bölüm bir takvim ilan etmeyecek.
+
+11
+00:04:37,255 --> 00:04:47,016
+Yani bölüm sayfasında vizelerle ilgili bir şey göremezsiniz. Derslerinizi takip edip derslerin hocalarından bu bilgiyi alacaksınız.
+
+12
+00:04:48,155 --> 00:04:56,376
+Ben kendi sayfamda da duyuracağım ama 8 Ocak Cuma günü test olarak size ikinci vize yapacağız.
+
+13
+00:04:57,095 --> 00:05:06,475
+Nasıl olacak test böyle bir dersin gerçekten bilmiyorum. Bugüne kadar hiç yapmadık. Olur herhalde diyoruz.
+
+14
+00:05:07,575 --> 00:05:17,315
+Ağırlıklı olarak ikinci vizeden, birinci vizeden sonraki konulara vereceğiz ama bazen konuların içerisinde ilintiler tabii ki olabilir.
+
+15
+00:05:17,315 --> 00:05:32,655
+hem finalinize hazırlanmış olacaksınız hem takıldığınız ya da bocaladığınız yerler neresiyse onları bu ikinci vizede keşfedeceksiniz ve onlara daha iyi bakarak devam edersiniz.
+
+16
+00:05:33,495 --> 00:05:40,375
+Bu arada akşamdan beri migrenim tuttu. Üç farklı ilaç aldım ama halen devam ediyor.
+
+17
+00:05:40,635 --> 00:05:47,135
+Bazen çok kötü artıyor. Olmadık bir anda bir ara verelim diyebilirim size. Panik olmayın.
+
+18
+00:05:47,315 --> 00:05:54,295
+çünkü son zamanlarda yaşadığım en büyük atağa yaşadım diyebilirim.
+
+19
+00:05:54,295 --> 00:06:07,556
+Şimdi konumuza geçeceğiz. Sanırsam kurskalda kalmıştık. Bugün ağaçları bitirmemiz, graflara başlamamız lazım. İnşallah becerebiliriz bunu.
+
+20
+00:06:08,315 --> 00:06:12,776
+Haftaya da graflar ve kromotik polinomlara geçeceğiz.
+
+21
+00:06:12,776 --> 00:06:22,416
+Kromatik polinomlar için video hazırlayacaktım ama yine çok emek vererek slide hazırladım.
+
+22
+00:06:23,315 --> 00:06:25,556
+Bakalım göreceğiz.
+
+23
+00:06:25,556 --> 00:06:31,895
+Şimdi evet 28 kişi siz de elinizi vicdanınıza koyun.
+
+24
+00:06:32,216 --> 00:06:42,196
+Bu kadar kişinin bir dersi alıp 28 kişinin hadi olsun 30 kişinin bu derse katılıyor olması beni gerçekten üzüyor.
+
+25
+00:06:42,776 --> 00:07:07,416
+bunları konuşmak istiyorum birbirinize de aktarın çünkü ben de sizin gibi bir insanım yani benim sizden hiçbir farkım yok uykusuz bir gece geçirdim gerçekten şu an bana belki inanmayacaksınız bakın başımdaki migren bağıntıyla oturuyorum
+
+26
+00:07:07,416 --> 00:07:16,595
+ve 9'da dersim var ve size olan saygımdan dolayı ben dersimi anlatmaya geçtim.
+
+27
+00:07:16,595 --> 00:07:25,475
+Yani ben de video çeker bunu koyar, istediğim haftanın istediğim saati çeker koyar izleyin derdim.
+
+28
+00:07:26,276 --> 00:07:30,496
+Yani sizler gibi sizler deyince kendi üzerinize alınmayın.
+
+29
+00:07:30,776 --> 00:07:33,255
+Yani kim alınması gerekiyorsa alınsın.
+
+30
+00:07:34,483 --> 00:07:51,723
+bunu sonradan izlerim diye dersin başına geçmemek gibi şeyler. Yani ne demek istediğimi gayet iyi anladınız. Bu sorumluluktur gerçekten ve inanın hayatınızın sonuna kadar sahip olduğunuz sorumlulukla devam edeceksiniz.
+
+31
+00:07:51,723 --> 00:07:59,803
+yani ben de evet bu mevki mevki değil de yani bu ünvanları almak da kolay bir şey değil.
+
+32
+00:08:00,403 --> 00:08:06,303
+Dişime tırnağıma takarak aldım ama hep bunu sorumluluk ve çalıştığım için aldım.
+
+33
+00:08:06,303 --> 00:08:14,003
+Yoksa çok zeki, çok parlak, her şeyi bilen öyle bir insan değilim.
+
+34
+00:08:14,103 --> 00:08:20,723
+Yani bunu hiçbir zamanda saklamadım ama çalışmak ve sorumluluk sahibi olmak gerçekten çok önemli.
+
+35
+00:08:21,723 --> 00:08:29,863
+bunu bilin siz kazanacaksınız ben hiçbir şey kazanmayacağım ama öteki türlü davranışlar insanları çok üzüyor
+
+36
+00:08:29,863 --> 00:08:38,683
+böyle aptal gibi hissediyorum kendimi bu süreç sizin gibi benim de hiç hoşuma gitmiyor artık çok sıkıldım ve bunaldım
+
+37
+00:08:38,683 --> 00:08:48,683
+bütün gün laptopun başında geçiyor ya bir iyi insan görmek istiyorsun bir yerde oturup bir şey yemek istiyorsun biraz özgürce hareket etmek istiyorsun
+
+38
+00:08:48,683 --> 00:09:11,403
+Yani belki içinizde bunları da tadanlar, isteyenler vardır. Sonuçta hepimiz insanız, hiçbir farkımız yok. Aradaki tek fark yaş farkı, biraz da tecrübe, başka da hiçbir şey yok. Benim tek beklentim bu dersten az da olsa hiçbir zaman inanmıyorum ben. Ben de öğrenciydim.
+
+39
+00:09:11,403 --> 00:09:19,363
+%100 dersin sonunda aklında kalmışsa bir sonraki sene her şeyi bilmesi yok.
+
+40
+00:09:19,583 --> 00:09:21,623
+Kullanmadığın bilgi unutulur.
+
+41
+00:09:22,123 --> 00:09:26,723
+Ama beyninin derinliklerinde kalır ve ihtiyacın olduğunda çıkarırsın.
+
+42
+00:09:28,003 --> 00:09:33,403
+Bu böyle yani yaşayacaksınız ve yaşadıkça anlayacaksınız.
+
+43
+00:09:34,263 --> 00:09:36,443
+Bazılarını belki hiç kullanmayacaksınız.
+
+44
+00:09:37,064 --> 00:09:38,403
+Kiminiz kullanacak, kiminiz kullanmayacak.
+
+45
+00:09:38,403 --> 00:09:40,403
+Başka yönlere gideceksiniz.
+
+46
+00:09:41,403 --> 00:09:50,364
+ama hayat bu. En güzeli bu hayatın içerisine çok sevdiğimiz bir şeyler varsa araları onları serpiştirmek.
+
+47
+00:09:50,443 --> 00:09:57,623
+Ben fotoğraf çekmeyi ve doğayı çok seviyorum. Elimden geldiği her fırsatta bunları yapmaya çalışıyorum.
+
+48
+00:09:58,144 --> 00:10:04,483
+Ve inanın o çok sevdiğim şeyi yaptığımda bütün sıkıntı, problem hiçbir şey aklıma gelmiyor.
+
+49
+00:10:04,483 --> 00:10:09,584
+Aile bir dünyada oluyorum. Çıktığım an her şey en baştan geliyor.
+
+50
+00:10:09,583 --> 00:10:17,343
+bu migren ağrıları da yine bir sıkıntıların tetiklenmesi sonucu çıkan şey ailenizde de mutlaka vardır.
+
+51
+00:10:17,343 --> 00:10:29,083
+Yani hayat öyle toz pembe falan değil. Öyledir diyen de yalan konuşuyor. Ben hiç toz pembe bir tarafını görmedim ama kendim güzelleştirmeye çalışıyorum.
+
+52
+00:10:29,683 --> 00:10:35,063
+Bilmiyorum ben sizleri görüp sizlerle bu kadar rahat konuşabilmek bile benim çok hoşuma gidiyor.
+
+53
+00:10:35,064 --> 00:10:47,623
+belki birçoğunuz dinlemiyorsunuz şu an bilmiyorum sıkılıyorsunuz bilmiyorum ama konuşmak anlatabilmek çok güzel duygular bunları hayatınızdan eksik etmeyin
+
+54
+00:10:47,623 --> 00:10:54,483
+evet büyük olarak yeterince konuştum birazcık içimi de anlatmak istedim
+
+55
+00:10:54,483 --> 00:11:02,603
+şimdi izninizle çok da uzatıp şu an kafam daha böyle iyi bu saatleri de sizden çalmayayım
+
+56
+00:11:02,603 --> 00:11:11,844
+Evet, şimdi sevgili arkadaşlar, öncelikle özür diliyorum, böyle bir içimi döktüm ama ne yapayım, arada bir geliyor
+
+57
+00:11:11,844 --> 00:11:13,643
+Evet, Kurskal
+
+58
+00:11:13,643 --> 00:11:14,483
+Geçmiş olsun hocam
+
+59
+00:11:14,483 --> 00:11:15,704
+Teşekkür ederim
+
+60
+00:11:15,704 --> 00:11:23,204
+Kurskal'dayız, Kurskal görebileceğiniz en kolay algoritmalardan biridir ve her zamanda
+
+61
+00:11:24,500 --> 00:11:41,819
+Kuruskalı, adamın soyadı, kıskanmışımdır. ya bu kadar basit şeyleri bunlar çıkarıyor da niye ben yapamadım gibi öyle bir şeyliğim de her zaman vardır. Kuruskal algoritması şunu yapar. Aslında benim amacım neydi hatırlıyorum.
+
+62
+00:11:41,819 --> 00:11:43,239
+ekran paylaşmadınız
+
+63
+00:11:43,239 --> 00:11:44,639
+özür dilerim
+
+64
+00:11:44,639 --> 00:11:48,219
+işte kafa bu kadar gördüğünüz gibi
+
+65
+00:11:48,219 --> 00:11:52,500
+ben böyle giderdim ha
+
+66
+00:11:52,500 --> 00:11:55,479
+nereye kadar gidersem artık giderdim
+
+67
+00:11:55,479 --> 00:11:56,939
+evet
+
+68
+00:11:56,939 --> 00:11:59,400
+şimdi tamam mı?
+
+69
+00:12:01,040 --> 00:12:01,639
+tamamdır
+
+70
+00:12:01,639 --> 00:12:05,819
+şimdi kurskal algoritması da
+
+71
+00:12:05,819 --> 00:12:09,659
+prim algoritmasının devamı
+
+72
+00:12:09,659 --> 00:12:24,340
+biz ne yapmak istiyorduk spanning trilerde? Amacımız şuydu, grafımızın, şimdi bu graf diyorum da trilerin altında niye grafı bahsediyor bu hoca diye sorabilirsiniz.
+
+73
+00:12:24,340 --> 00:12:37,040
+Neydi? Triler yani ağaçlar grafların özel bir haliydi. Eğer grafta döngü içermeyen bir durum oluşuyorsa bu otomatikman zaten tri oluyordu.
+
+74
+00:12:37,040 --> 00:12:51,739
+Spanning Tree'de neydi? Graftaki bütün düğümlerin gezilmesiydi. Farklı yollardan aynı düğümleri gezebilirim. Ama hepimiz farklı bir yolu seçebiliriz.
+
+75
+00:12:51,739 --> 00:13:06,739
+Prim algoritması bir minimum Spanning Tree algoritmaydı. Başına minimum gelmesi neydi? Ben graftaki bütün düğümleri gezeceğim ama gezerken en kısa yolu bulmaya çalışacağım.
+
+76
+00:13:07,040 --> 00:13:26,839
+yoksa çok farklı şekillerde gezebilirim. Ben Çengelköy'de oturuyorum. Buradan Davutpaşa'ya 10 türlü yoldan gidebilirim. Ama amaç nedir? En kısa yol. Gerçi benim için amaç en kısa yol değil. Trafiğin en az olduğu yol ama bu algoritmalar bu.
+
+77
+00:13:26,839 --> 00:13:40,720
+prim algoritmasının da şöyle neyse o dışkı da onu söyleyeyim tamam şimdi gelelim Kruzkal'a. Kruzkal algoritması da çok basit 3 adımdan oluşan bir algoritma.
+
+78
+00:13:40,720 --> 00:13:49,660
+Diyor ki grafınızın üzerindeki kenarların uzunluklarını en küçükten en büyük değere doğru sıralayın.
+
+79
+00:13:49,660 --> 00:14:00,059
+Eğer aynı değere sahip birden fazla kenar varsa bunlar zaten arka arkaya gelecek hangisini aldığının da bir önemi yok diyor.
+
+80
+00:14:00,480 --> 00:14:12,139
+İkinci adım diyor ki aldın aldın bu işleme bir sonraki bir sonraki diye devam ediyorsun ama bir şartın var diyor.
+
+81
+00:14:12,400 --> 00:14:15,900
+Seçtiğin kenar kapalı bir döngü oluşturmayacak.
+
+82
+00:14:15,899 --> 00:14:21,579
+kapalı bir döngü oluşturuyorsa o kenara alma, sıradaki kenara geç.
+
+83
+00:14:22,539 --> 00:14:30,959
+Üçüncü adım bu işlemleri graftaki bütün düğümler dolaşılıncaya kadar devam edeceksin.
+
+84
+00:14:30,959 --> 00:14:33,419
+Yani adım ikiye devam edeceğim.
+
+85
+00:14:34,299 --> 00:14:39,639
+Peki graftaki bütün düğümlerin durma noktasını nereden bileceğim?
+
+86
+00:14:39,639 --> 00:14:57,639
+aslında sana da diyor ki burada işte bir vime kullanıyorsun ne kullanacaksan en tane düğümün varsa en eksi bir tane kenar seçmişsen bütün düğümler geçilmiş demektir ve işlemin bitti demektir.
+
+87
+00:14:58,919 --> 00:15:03,100
+En düğüme en kenar seçersen döngü oluşturursun.
+
+88
+00:15:03,379 --> 00:15:33,259
+n düğüm için n eksi bir kenar seçimli. Hemen bir örnek verelim. Tabii şöyle bir hata da yapılıyor arkadaşlar. Şöyle, yani yazılı bir sınav yaptığımızda, sorduğumuzda, tabii graflarımızı çok küçük veriyoruz, büyük graflar vermiyoruz. Arkadaşlar gözüyle bakıyor, aşağıya sonucu yazıyor. Öyle olmaz. Yani algoritmanın işleyiş adımlarını göstermek gerekir.
+
+89
+00:15:33,379 --> 00:16:03,159
+çünkü hep şöyle düşünün böyle 5 düğümlü 6 düğümlü gerçek dünya problemlerimiz olmayacak bizim bunları rahatlıkla ben zaten gözümle bakarak söyleyebilirim sadece örneklerimiz böyle ne yapacaktık en küçükler hemen bakalım en küçük nedir bir öyleyse ben biri seçtim sırada 1, 2, 3, 4 tane 2 var ben bu ikilerden herhangi birini seçebilirim ama döngü olmayacak
+
+90
+00:16:03,159 --> 00:16:28,539
+Hangisini seçmişim? Canım bunu seçmek istemiş. Seçtim. Sıradaki 2'yi seçeceğim. Canım bunu seçmek istemiş. Seçtim. Bakın döngü oluşsaydı seçmeyecektim. Peki sırada ne var? Başka 2'ler var. Bu 2'yi de seçtim. Döngü oluşturmadı. Sırada başka 2 var. Bunu da seçtim. Döngü oluşturmadı.
+
+91
+00:16:28,539 --> 00:16:33,919
+Şimdi aslında ben gözümle baktığımda bütün düğümlerin gezilmiş olduğunu görüyorum.
+
+92
+00:16:34,479 --> 00:16:37,959
+Ama algoritmik olarak baktığımda kaç tane düğümüm var?
+
+93
+00:16:38,459 --> 00:16:41,379
+2, 4, 6, 7 düğümüm var.
+
+94
+00:16:41,539 --> 00:16:43,819
+6 tane kenardan geçmem gerekir.
+
+95
+00:16:44,159 --> 00:16:45,799
+Kaç kenarım var geçilmiş?
+
+96
+00:16:46,379 --> 00:16:48,319
+Pardon kaç düğümüm vardı?
+
+97
+00:16:48,939 --> 00:16:52,779
+1, 2, 3, 4, 5, 6, 7
+
+98
+00:16:52,779 --> 00:16:55,219
+Bu çok güzel bir örnek oldu.
+
+99
+00:16:55,699 --> 00:16:57,019
+Hemen kalemimi de alayım.
+
+100
+00:16:57,019 --> 00:17:00,180
+2, 4, 6, 7 tane düğüm var.
+
+101
+00:17:01,280 --> 00:17:03,859
+En eksi bir tane kenar gezmem lazım.
+
+102
+00:17:04,079 --> 00:17:06,079
+6 tane kenarım olması lazım.
+
+103
+00:17:06,320 --> 00:17:10,699
+1, 2, 3, 4, 5.
+
+104
+00:17:10,699 --> 00:17:13,299
+Daha 5 tane kenar gezmişim.
+
+105
+00:17:13,900 --> 00:17:15,880
+Eee hocam diyeceksiniz bana.
+
+106
+00:17:16,260 --> 00:17:17,960
+Bütün düğümleri dolaştım.
+
+107
+00:17:18,559 --> 00:17:19,960
+Dediğiniz şey tutmadı.
+
+108
+00:17:20,700 --> 00:17:21,939
+Şimdi bir bakın bakalım.
+
+109
+00:17:22,639 --> 00:17:24,320
+Şuraya bakıyorsunuz arkadaşlar.
+
+110
+00:17:24,320 --> 00:17:48,820
+bu kendi başına bağımsız bir türü, burası kendi başına bağımsız bir türü. Olmaz. Benim amacım bütün düğümleri birbirine de bağlayacağım aynı zamanda gezerek. Demek ki ben bir kenar daha seçmeliyim. O kenarla altı olacak ve aynı zamanda da bunlar birbirine bağlanmış olacak.
+
+111
+00:17:48,820 --> 00:17:58,880
+öyleyse bakın gördünüz mü? Burası çok önemli. Size yanıtmasın. Bütün düğümlerin geçilmiş olması olayının bittiğini göstermiyor.
+
+112
+00:17:58,880 --> 00:18:07,779
+Çünkü bu işlemi yaparken büyük bir ihtimalle matris kullanacaksın. Sen matrisle bakacaksın. Bütün düğümler üzerinde işlem yapılmış.
+
+113
+00:18:08,240 --> 00:18:17,880
+Oh işim bitti diyeceksin. Ama hayır. Birbirinden ayrı iki tane ağacın var. Öyleyse bunları birbirine bağlamam gerekecek.
+
+114
+00:18:17,880 --> 00:18:47,159
+öylesi ikiler bitti sırada üç var şimdi ben şu 3'ü seçsem mesela onu seçmişim seçtim bakın kenar sayım bir eksi oldu iki ağacı da birbirine bağladım artık benim işim bitti demektir bir başka örnek görelim olay biraz daha komplike hale geldi ve gelsin fark etmez çok hızlı olarak önce
+
+115
+00:18:47,159 --> 00:19:00,400
+önce birileri alayım bir tane biri var Pardon almış zaten bir tane biri var Tamam şunu şöyle seçtim sırada ikiler var şu ikiyi alayım
+
+116
+00:19:00,852 --> 00:19:29,571
+ondan sonra şurada bir iki var. Bu ikiyi alayım. Bütün düğümler seçildi mi? Hayır. Sırada üçler var. Ben hangi üçü alayım? Şu üçü alayım. Sonra şu üçü alayım. Burada çünkü bir düğüm var. Başka üç var mı? Evet üç var. Bu üçle de bu düğümü alabilirim. Aldım. Halen alınmamış düğüm var. Başka üç kalmadı. Şimdi sıra dörtleri alacağım. Yine dikkat edin arkadaşlar.
+
+117
+00:19:29,571 --> 00:19:57,852
+gidip şuradaki dördü alırsam ne olur? Kapalı bir çevrim olur. Bu dördü alamam. Peki şu dördü alırsam ne olur? Burada kapalı bir çevrim var. Alamam. Ben hangi dördü alabilirim? Çünkü burada yine iki tane ağaç var. Bir şöyle ağaç var gördüğünüz gibi. Bir de şöyle bir ağaç var. Başka bir dördü almalıyım. Şu dördü alırsam kapalı çevrim olur mu? Olmaz.
+
+118
+00:19:57,852 --> 00:20:27,831
+bu dördü pardon zaten açıkta bir dördü düğüm varmış ister istemez bu dördü almam gerekiyor bu dördü aldım halen ağaçlar birbirinden ayrı gördüğünüz gibi şu karalamalar çok aklı karıştırmasın şunları çizim peki tamam bütün düğümler gezildi fakat halen iki ayrı ağaç var bir tane ağaç şu şu taraf
+
+119
+00:20:27,852 --> 00:20:40,771
+bir tanesi de bu. Bunları birbirine bağlayacağım. 3, 6, 9, 8 tane kenarım olması lazım. 1, 2, 3, 4, 5, 6, 7. Benim bir kenara ihtiyacım var. Tamam.
+
+120
+00:20:42,512 --> 00:20:55,652
+Tamam. Şurayı çizmiyorum. Kapalı döngü oluşturur bu 4'ten. Şu 4'ü alamıyorum. Buradan kapalı döngü oluşturacak. Ondan sonra başka nerede 4 var?
+
+121
+00:20:55,651 --> 00:21:12,971
+Eğer şu yukaraki dördü alırsam mesela şuradaki ağaçla buradaki ağaç birbirine bağlandı ve aynı zamanda da ne oldu? Bütün düğümlerimde gezilmiş oldu. Ve aynı zamanda minimum yolu bulmuş oldu.
+
+122
+00:21:12,971 --> 00:21:32,191
+Arkada şu linkler halen aktifse bilmiyorum. Bakın bu linklerde Ford Fulkerson diye bir başka yöntem var. Biz Kurskal Prem'i gördük. Dishkstra'yı burada göstermeyeceğim. Graflarda göstereceğim.
+
+123
+00:21:32,191 --> 00:21:39,391
+bu two-face simplex ve bunların ne olduğunu da bilmiyorum. Çok fazla popüler şeyler değil.
+
+124
+00:21:39,951 --> 00:21:46,891
+Bunlara yine bir bakın. Burada yüzlerce, yüzlerce demeymiş de her bir örnek için konulmuş demolar var.
+
+125
+00:21:46,891 --> 00:21:54,012
+Bu demoları koyarsınız. Sadece bir tane örneği yapalım. Kenarları küçükten büyüğe doğru sıraladı.
+
+126
+00:21:54,012 --> 00:22:02,212
+U0, U1, orası 5, U3, U4, 5, sonra geçti 5'ten sonra neler var?
+
+127
+00:22:02,212 --> 00:22:17,012
+10'ları almış U1 ile U3, bir 10'da burada var U2 ile U3, sonra 15'leri almış U2, U4, U4, U5, sonra 20'leri ve sonra da 30'ları aldı.
+
+128
+00:22:17,131 --> 00:22:18,872
+Bizim gibi aynı şeyi yapıyor.
+
+129
+00:22:19,292 --> 00:22:21,792
+İlk önce U3 ve U4'ü çizdim.
+
+130
+00:22:21,792 --> 00:22:49,792
+Sırada U0, U1 var onu çizdi U1, U3 var çizdi U2, U3 var çizdi Hala açıkta düğüm var ve döngüm de yok U2, U4'e geldi eğer bunu çizerse ne oluyor burası? Kapalı döngü oluyor o zaman bunu çizmiyor kaldırdı U4, U5'i aldı evet bütün düğümler gezildi
+
+131
+00:22:49,792 --> 00:22:57,592
+seçildi. 5 tane kenar seçilmiş olacak. 2-4-5 tane de kenar seçildi ve kurska bitti.
+
+132
+00:22:57,940 --> 00:23:00,219
+Bu kadar basit bir algoritma.
+
+133
+00:23:00,619 --> 00:23:02,840
+Bu örnekleri sizler yapabilirsiniz.
+
+134
+00:23:04,679 --> 00:23:12,459
+Şimdi ağaçların çok önemli konularından bir tanesi karar ağaçları, decision triler.
+
+135
+00:23:12,459 --> 00:23:39,859
+O karar ağaçları sadece veri yapıları dersinde değil, ileride belki yüksek lisansta ya da lisansta da almış olduğumuz seçimlik derslerde decision tree algoritması, classification sınıflandırma algoritması olarak ya da random forest, rastgele ormanlar bir sınıflandırma algoritması olarak karşınıza çıkacak.
+
+136
+00:23:39,859 --> 00:23:47,099
+Veri madenciliği dersinde, yapay zeka dersinde, doğal delişleme dersi gibi derslerde çıkacağım.
+
+137
+00:23:47,859 --> 00:23:49,299
+Sınıflandırma nedir?
+
+138
+00:23:49,879 --> 00:23:51,379
+Önce bir kısaca onu verelim.
+
+139
+00:23:51,519 --> 00:23:52,919
+Aslında çok basit bir şey.
+
+140
+00:23:53,699 --> 00:23:59,319
+Sınıflandırma, masanın üzerinde düşünün silgiler ve kalemler var.
+
+141
+00:23:59,739 --> 00:24:06,199
+Sizlere deniyor ki bu şeyleri, eşyaları kalemler ve silgiler diye ayırın.
+
+142
+00:24:06,200 --> 00:24:11,660
+Bu kalemler dolma kalem, tükenmez kalem, boya kalemi bilmem ne kalemi olabilir.
+
+143
+00:24:11,859 --> 00:24:12,420
+Önemli değil.
+
+144
+00:24:12,560 --> 00:24:14,359
+Önemli olan onların kalem olması.
+
+145
+00:24:14,800 --> 00:24:16,140
+Onları bir sınıfa atıyorsun.
+
+146
+00:24:16,840 --> 00:24:24,820
+Öteki silgiler işte kurşun kalemi silen, tükenmezi silen, kokulu silgi, kokusuz silgi işte her neyse.
+
+147
+00:24:25,120 --> 00:24:27,100
+Onları da ayrı bir sınıfa ayırıyorsunuz.
+
+148
+00:24:27,700 --> 00:24:34,980
+Bu ayırma işlemi elemanların özelliklerine göre ayırma işlemi aynı bir ağaç üzerinde oluyor.
+
+149
+00:24:34,980 --> 00:24:37,499
+Şurada ben ağaçta bir soru soruyorum.
+
+150
+00:24:37,960 --> 00:24:41,399
+Bu sorunun cevabına göre dallara ayrılıyor.
+
+151
+00:24:41,960 --> 00:24:44,679
+Bunun illa binary türü olması gerekmiyor.
+
+152
+00:24:45,060 --> 00:24:48,800
+Bu çok farklı seçeneklere sahip ağaçlarda olabilir.
+
+153
+00:24:49,480 --> 00:24:51,300
+Burada bir başka soru soruyorum.
+
+154
+00:24:51,440 --> 00:24:53,560
+Bu sorunun cevabına göre ayrılıyor.
+
+155
+00:24:53,700 --> 00:24:55,340
+Burada başka bir soru soruyorum.
+
+156
+00:24:55,820 --> 00:24:58,020
+Bu sorunun cevabına göre ayrılıyor.
+
+157
+00:24:58,279 --> 00:25:03,380
+Ta ki yapraklara geldiğimde hepsi aynı olsun.
+
+158
+00:25:03,379 --> 00:25:08,039
+Yani ben kalemleri şey yapıyorum.
+
+159
+00:25:08,459 --> 00:25:10,959
+Şuraya geldiğimde bunların hepsi boya kalemi.
+
+160
+00:25:11,339 --> 00:25:14,039
+Buraya geldiğimde bunların hepsi tükenmez kalemi.
+
+161
+00:25:14,440 --> 00:25:18,899
+Buraya geldiğimde bunların hepsi ne kalemleri var bilmiyorum işte.
+
+162
+00:25:19,399 --> 00:25:21,119
+Tatlı kalemi diyelim.
+
+163
+00:25:21,419 --> 00:25:23,579
+Burası da imza kalemi diyelim.
+
+164
+00:25:24,239 --> 00:25:28,479
+Yani en alt kümede hepsi eşit özelliklere sahip.
+
+165
+00:25:28,479 --> 00:25:40,719
+Binary tree, karar ağaçları binary tree olup bir olayın sonuçlandırılmasında bir sorunun cevabına göre hareket eder diyor.
+
+166
+00:25:41,199 --> 00:25:44,279
+Ama illaki binary tree olması gerekmiyor.
+
+167
+00:25:45,039 --> 00:25:51,519
+Eğer ben binary search yapıyorsam, binary search yaptığım triler vardı, görmüştük geçen hafta.
+
+168
+00:25:51,519 --> 00:25:53,919
+Onlar da aslında bir karar ağacı.
+
+169
+00:25:54,299 --> 00:25:59,979
+Soruyorum şu sayıdan büyük mü, küçük mü?
+
+170
+00:25:59,979 --> 00:26:05,839
+Ama illa banyeri tiri gibi bir ağaç kullanmam gerekmeyecek.
+
+171
+00:26:06,019 --> 00:26:07,799
+Durumuma göre değişir.
+
+172
+00:26:08,859 --> 00:26:11,339
+Şimdi ilk örneğimiz şu olsun.
+
+173
+00:26:13,539 --> 00:26:15,519
+Tamam ona geçmeden evvel.
+
+174
+00:26:15,660 --> 00:26:18,619
+İşte karar ağacında diyor, elinde diyor örneklerin var.
+
+175
+00:26:19,179 --> 00:26:24,219
+Bu örneklere göre diyor, karar ağacında diyor bu örnekleri yerleştiriyorsun.
+
+176
+00:26:25,040 --> 00:26:27,300
+Dışarıdan bir tane yeni örnek geliyor.
+
+177
+00:26:27,940 --> 00:26:34,940
+Bu karar ağacına göre bakıyorsun, yerini belirliyorsun ve yeni örneğin de sınıfına karar veriyorsun.
+
+178
+00:26:35,320 --> 00:26:37,839
+Yaptığımız şeylerde bunu göreceğiz.
+
+179
+00:26:38,839 --> 00:26:44,339
+Şimdi önce her diskret kitabında olan genel bir örnekten başlayalım.
+
+180
+00:26:45,440 --> 00:26:49,759
+Görünüşleri birbirinin aynısı olan beş tane para var diyor.
+
+181
+00:26:49,960 --> 00:26:52,520
+Bu paralardan da bir tanesi sahte diyor.
+
+182
+00:26:53,236 --> 00:26:54,236
+dışarıdan baktığında satteyi göremiyorsun. sadece ağırlığına bakarak karar veriyorsun. tamam mı? şimdi bu satte para ve sana soruyorlar bu beş tane para var. bu beş tane paranın hangisi satte ve satte olan para acaba ağır olan mı yoksa hafif olan mı? satte para bir tane var. ya diğerlerinin en ağrıdır ya da diğerlerinin en hafif
+
+183
+00:27:23,236 --> 00:27:33,675
+bir tipidir ben buna karar vereceğim buna karar verirken de karar ağaçlarını kullanacağız şimdi bakalım bu
+
+184
+00:27:33,675 --> 00:27:45,375
+Ceyler coin para bozuk para elimde beş tane coin var bozuk para var ben şimdi başlıyorum tabii akşam bu konuların
+
+185
+00:27:45,375 --> 00:27:53,175
+üzerinden şöyle bir hızlı geçemediğim için başımdan dolayı hangi tarafın ne olduğunu şu an unutabilirim
+
+186
+00:27:53,175 --> 00:28:13,395
+bu aritmayı çalıştırırken hatırlarım ve düzeltirim yanlış söylediysem iki tane para alıyorum. Şimdi bu paralardan biri sahte olabilir ya da sahte de olmayabilir. Nedir? Ya bunların eşittir? Eşitse ağırlıkları C1 ve C2 sahte değil demektir.
+
+187
+00:28:13,395 --> 00:28:31,975
+Eğer C1, C2'den ağırsa bunlardan biri satte ama hangisinin şu an satte olduğunu bilmiyorum. Başka bir parayla karşılaştırma yapmam lazım. Ve ona göre ağır ya da ağır diyeceğim ya da hafif diyeceğim.
+
+188
+00:28:31,975 --> 00:28:49,475
+Eğer C2 ise bu taraf ağır olacak ama pardon burası ağırdı burası hafif olacak fakat hangisinden hafiflik geldiğini bilmiyorum C1'den mi C2'den mi ona göre ilerleyeceğim
+
+189
+00:28:49,475 --> 00:28:55,475
+Şimdi şöyle yapalım C1 ve C2 dengede değil bu tarafa geldik
+
+190
+00:28:55,475 --> 00:29:05,555
+Bunlardan bir tanesi mutlaka sahte ama artık biliyorum ki 3, 4, 5 sahte değil sahte bunlardan biri
+
+191
+00:29:05,555 --> 00:29:13,795
+O zaman sahte olmayanlardan olmadığından emin olduğum bir parayı alıyorum C5'i aldım
+
+192
+00:29:13,795 --> 00:29:33,795
+C1'i C5 ile karşılaştırıyorum. Eğer bunlar aynıysa sahte olan para hangisidir? Ağırlık tarafını bozan C2'dir. İşte sahte paraya C2 diyorum. Peki C2 hafif olduğundan mı ağır olduğundan mı bozuk?
+
+193
+00:29:33,795 --> 00:29:41,715
+C1 C2'den büyük olduğu için buraya gelmişti pardon ağır olduğu için buraya gelmişti
+
+194
+00:29:41,715 --> 00:29:47,236
+C1 C5 ile aynıysa demek ki C5 de ağır bir para
+
+195
+00:29:47,236 --> 00:29:54,255
+Saktı olan C2 ise C2'nin hafif saktı olduğunu söyleyebiliyorum
+
+196
+00:29:54,255 --> 00:30:03,715
+C1 C5 ile aynı değilse farklıysa C5'in ben artık saktı olmadığını biliyordum
+
+197
+00:30:03,715 --> 00:30:17,635
+Sattı olan para nedir? C1'dir. Buraya ne olarak gelmişti? Ağır olarak gelmişti. Yani hevi. Öyleyse C1'in sattı ve ağır olduğunu biliyorum.
+
+198
+00:30:19,135 --> 00:30:29,695
+Bu yoldan gidersem bitti. Artık yapraklarda bakın tek bir tane sonuç var ve sınıfı da belli. Başka buralarda bir şey kullanmama gerek yok.
+
+199
+00:30:29,695 --> 00:30:52,575
+Şimdi burayı alalım. C1 ve C2 dengede bunların saatte olduğunu olmadığını biliyorum. O zaman geriye kalan 3, 4, 5'ten biri saatte. C3 ile C4'e baktım. C3 ve C4 dengede ise saatte olan para nedir? C5'tir.
+
+200
+00:30:53,460 --> 00:30:55,359
+Oraya sonra gelmişim.
+
+201
+00:30:55,599 --> 00:30:56,420
+Çok özür dilerim.
+
+202
+00:30:56,499 --> 00:30:57,399
+Bu tarafa bakalım.
+
+203
+00:30:58,159 --> 00:31:00,339
+C1 ve C2 dengede değil.
+
+204
+00:31:01,059 --> 00:31:01,920
+Buraya geldi.
+
+205
+00:31:02,340 --> 00:31:04,979
+Bunlardan birinin sahte olduğunu biliyorum.
+
+206
+00:31:05,599 --> 00:31:08,619
+Sahte olmayan paralarla karşılaştırdım.
+
+207
+00:31:08,840 --> 00:31:11,060
+C5'i aldım yine sahte değil diye.
+
+208
+00:31:11,759 --> 00:31:17,499
+C1 ile C5 eğer dengedeyse sahte olan para hangisi oldu şimdi?
+
+209
+00:31:18,220 --> 00:31:20,779
+C2 sahte olan para oldu.
+
+210
+00:31:20,779 --> 00:31:26,779
+Çünkü bu tarafa girdiysem de C2 ağır olduğu için girdim.
+
+211
+00:31:27,439 --> 00:31:32,619
+Peki bu dengede değilse sahte paranın artık C1 olduğunu biliyorum.
+
+212
+00:31:33,300 --> 00:31:36,079
+O zaman bu tarafa geldik.
+
+213
+00:31:36,460 --> 00:31:46,640
+Dengede bu değilse ve burada C2 ağır olduğu için buraya girdiyse sahte para C1 o da tam tersi hafif olacaktır.
+
+214
+00:31:47,000 --> 00:31:47,779
+Burayı da bulduk.
+
+215
+00:31:47,779 --> 00:31:50,159
+Şimdi buraya gelmiştik.
+
+216
+00:31:50,159 --> 00:31:53,779
+C1 ve C2 sahte değil çünkü dengede.
+
+217
+00:31:54,299 --> 00:31:57,139
+O zaman diğer 3 paradan ikisini aldım.
+
+218
+00:31:57,319 --> 00:31:59,099
+C3 ve C4'e baktım.
+
+219
+00:31:59,739 --> 00:32:07,460
+C3 ve C4 farklıysa bunlardan bir tanesi sahte demektir.
+
+220
+00:32:08,099 --> 00:32:14,219
+Öyleyse bunlardan bir tanesi sahte, sahte olmayan bir parayla karşılaştırdım.
+
+221
+00:32:14,779 --> 00:32:17,119
+C3'ü C5 ile karşılaştırdım.
+
+222
+00:32:17,119 --> 00:32:21,959
+Eğer dengede ise sahte olan hangisidir? C4'dür.
+
+223
+00:32:22,359 --> 00:32:28,919
+C3 ağır olduğu için buraya girdiyse o zaman C4 hafif demektir.
+
+224
+00:32:30,019 --> 00:32:32,739
+C4 hafif olarak sahte oldu.
+
+225
+00:32:33,499 --> 00:32:37,939
+Eğer bu dengede değilse sahte olan para C3'dür.
+
+226
+00:32:38,539 --> 00:32:43,719
+C3 ağır olduğu için buraya geldiğimden C3 ağır diyorum.
+
+227
+00:32:43,719 --> 00:32:46,439
+Şimdi şu tarafa bakalım.
+
+228
+00:32:46,439 --> 00:32:48,179
+Sağ tarafa bakalım.
+
+229
+00:32:48,799 --> 00:32:50,519
+Masum yine yok oldu.
+
+230
+00:32:50,719 --> 00:32:51,099
+Nerede?
+
+231
+00:32:51,259 --> 00:32:52,859
+Sağ tarafa bakalım.
+
+232
+00:32:53,359 --> 00:32:55,099
+C3-C4 dengede değil.
+
+233
+00:32:55,879 --> 00:32:57,019
+O zaman nedir?
+
+234
+00:32:57,719 --> 00:32:59,499
+Bunlardan bir tanesi sahte.
+
+235
+00:33:00,039 --> 00:33:01,359
+Sahte olmayan bir para.
+
+236
+00:33:01,680 --> 00:33:04,519
+Ben nereye başlasam onun tam tersi geliyor.
+
+237
+00:33:04,960 --> 00:33:05,900
+Tamam oraya bakalım.
+
+238
+00:33:06,359 --> 00:33:08,939
+Sahte olmayan bir parayla karşılaştırdım.
+
+239
+00:33:09,460 --> 00:33:12,820
+Bunlar dengede ise sahte olan hangisi olacak?
+
+240
+00:33:13,519 --> 00:33:15,539
+C4 olacak sahte olan.
+
+241
+00:33:15,540 --> 00:33:25,879
+Buraya C4 A diye geldiği için satte para C4 ve ır.
+
+242
+00:33:26,540 --> 00:33:30,099
+Eğer dengede değilse satte para ne oluyor?
+
+243
+00:33:30,439 --> 00:33:31,060
+C3.
+
+244
+00:33:31,460 --> 00:33:35,519
+C4 A diye geldiği için C3 hafif oldu.
+
+245
+00:33:37,120 --> 00:33:38,780
+En sonunda buraya geldim.
+
+246
+00:33:39,099 --> 00:33:43,079
+Bunlar dengedeyse artık bu da dengedeydi.
+
+247
+00:33:43,079 --> 00:33:44,120
+Bu da dengedeydi.
+
+248
+00:33:44,120 --> 00:33:46,940
+sahte olan paranın C5 olduğunu biliyorum.
+
+249
+00:33:47,159 --> 00:33:49,060
+Fakat ağır olduğu için mi?
+
+250
+00:33:49,460 --> 00:33:50,620
+Hafif olduğu için mi?
+
+251
+00:33:50,700 --> 00:33:51,180
+Bakıyorum.
+
+252
+00:33:51,760 --> 00:33:53,000
+C1 ile C5'e.
+
+253
+00:33:53,540 --> 00:33:55,879
+C1 bu tarafa kayıyorsa
+
+254
+00:33:55,879 --> 00:33:58,460
+ağırsa o zaman sahte para
+
+255
+00:33:58,460 --> 00:34:00,379
+C5 ve hafiftir.
+
+256
+00:34:00,820 --> 00:34:02,340
+Bu tarafa kayıyorsa
+
+257
+00:34:02,340 --> 00:34:04,120
+C5 sahte paranın
+
+258
+00:34:04,120 --> 00:34:06,480
+C5 olduğunu ve C5'in
+
+259
+00:34:06,480 --> 00:34:08,519
+ağır olduğunu söyleyebilirim.
+
+260
+00:34:08,519 --> 00:34:10,500
+Şimdi neden
+
+261
+00:34:10,500 --> 00:34:11,900
+karar ağaçları?
+
+262
+00:34:12,320 --> 00:34:13,280
+Bu bir ağaç.
+
+263
+00:34:14,119 --> 00:34:25,559
+Neden adı karar? Her bir gözde bir ifim var. Bir olayı, bir soru soruyorum. Bu sorunun durumuna göre bir sonuca ulaşıyorum.
+
+264
+00:34:26,639 --> 00:34:34,819
+Bu ağacın derinliği elimdeki farklı sınıf sayılarına göre, örnek sayılarına göre değişecek.
+
+265
+00:34:34,819 --> 00:34:43,499
+Tek bir amacım var. Yapraklarda olan her şey tek bir sınıfa ait olacak. Burada iki tane sınıf var.
+
+266
+00:34:43,499 --> 00:34:49,439
+Hileli bir para var ama bu hileli para ağır mı yoksa hafif mi?
+
+267
+00:34:50,228 --> 00:35:12,228
+bunlar bana sınıfın özelliğini bu C1 bunlar da sınıfın etiketini gösteriyor. Karar ağaçlarımız bu şekilde oluşuyor. Karar ağaçlarını çok fazla karar ağacı algoritması görürsünüz. C4.5, ID3 falan filan.
+
+268
+00:35:12,228 --> 00:35:23,687
+Sebebi nedir? Sebebi de şudur. Eğer elinizdeki verinin hepsi nümerik değerlerden oluşuyorsa aynı mantıkta ufak bir değişiklik yapıyorlar.
+
+269
+00:35:24,187 --> 00:35:27,647
+Nümerik sayılarla daha hızlı çalışan bir ağacın oluyor.
+
+270
+00:35:27,647 --> 00:35:39,887
+Ya da kategorik veriler varsa elinde, yani bunlar bir kategorik veri, C1, C2 diyorum. Sayısal bir değer değil.
+
+271
+00:35:39,887 --> 00:36:08,668
+kategorik verilerle çalışmasını istiyorsan özelliklerle ilgili bir değişiklik yapıyorlar. Yani ana fikir aynı bazı modifiye şeyler yapıyorlar daha hızlı çalışsın diye. Elimde karışık bir veri seti varsa, nümerik sayılar, kategorik değerler, real sayılar varsa algoritmunun adında ufak bir değişiklik daha iyi çalışması için.
+
+272
+00:36:08,667 --> 00:36:13,247
+yani farklı karar ağaçları görmenizin sebebi bu olabilir.
+
+273
+00:36:14,267 --> 00:36:18,087
+Şimdi gerçek dünyayla ilgili bir örnek yapalım.
+
+274
+00:36:19,867 --> 00:36:23,107
+Tabii bu örnekleri nasıl aklımızda tutacağız bilmiyorum.
+
+275
+00:36:23,427 --> 00:36:25,047
+Bunun bir çıktısı vardı bende.
+
+276
+00:36:25,207 --> 00:36:27,647
+Tahtada anlatırken bunu elime alıyordum.
+
+277
+00:36:27,867 --> 00:36:29,327
+Dönüp dönüp bakacağız o zaman.
+
+278
+00:36:30,087 --> 00:36:30,887
+Şöyle deniyor.
+
+279
+00:36:32,427 --> 00:36:34,167
+Beş tane özelliğimiz var.
+
+280
+00:36:34,707 --> 00:36:35,327
+Ağatlık.
+
+281
+00:36:35,827 --> 00:36:37,327
+Havanın durumunu veriyor bana.
+
+282
+00:36:37,327 --> 00:36:45,887
+Hava güneşli olabilir, parçalı bulutlu olabilir, bugünkü gibi, overcast veya yağmurlu olabilir
+
+283
+00:36:45,887 --> 00:36:54,067
+Bir başka özelliyim var ısı, hava sıcak olabilir, hava ılman olabilir, hava serin olabilir
+
+284
+00:36:54,067 --> 00:37:03,467
+Bir başka özelliyim var humanity, nem, yüksek nemli, normal ya da düşük nemli olabilir, nemi düşük olabilir
+
+285
+00:37:03,467 --> 00:37:05,907
+Burada öyle bir şey yokmuş ama olabilir
+
+286
+00:37:05,907 --> 00:37:20,307
+[öğrenci] zayıf eser, kuvvetli eser ve ben bu özelliklere bakarak dışarıda açık havada tenis oynayabilir miyim oynayamaz mıyım diye sorulmuş
+
+287
+00:37:20,307 --> 00:37:31,127
+Yani eğer hava güneşli, sıcak, nem yüksek, rüzgar azsa sen tenis oynayamazsın diyor
+
+288
+00:37:31,127 --> 00:37:36,607
+Yani sıcak havada ve yüksek bir nemde tenis oynamak yorucudur
+
+289
+00:37:36,607 --> 00:37:47,127
+İşte şunu alalım, hava yağmurlu, serin, nem normal, rüzgar yavaşsa tenis oynayabiliyoruz
+
+290
+00:37:47,127 --> 00:37:53,147
+Şu satırların her biri benim örnek sayım, benim bir sürü örneklerim var
+
+291
+00:37:53,147 --> 00:37:56,127
+Şunlar özelliklerim
+
+292
+00:37:56,127 --> 00:37:59,448
+Şunlar da sınıf etiketim
+
+293
+00:37:59,448 --> 00:38:20,927
+tenisi oynayacağım, oynamayacağım. Yani biri bana gelip diyecek ki hava burada olmayan bir örnek. Burada kaç tane değişken var? Dört tane değişken var. Bu dört tane değişkenin her birinin farklı durumları var. O kadar farklı kombinasyon karşıma gelir.
+
+294
+00:38:20,927 --> 00:38:32,007
+Bu kombinasyonların dışında bir sonuç geldiğinde ben ağaca sokacağım, o şartlarda tenise oynayıp oynamadığına karar vereceğim
+
+295
+00:38:32,007 --> 00:38:33,927
+İşte bu bir sınıflandırma problemi
+
+296
+00:38:34,547 --> 00:38:39,507
+Elinizde bir veri setiniz var, bu benim veri setim
+
+297
+00:38:41,556 --> 00:39:01,635
+tabi gerçek dünyada aslında veri setleri mesela bir hastaneye düşünün. Hastanedeki her hasta bir veri setindeki bir örnek. Her hastanın durumu farklı. Bunlar da benim alınmış olan test sonuçlarım olsun.
+
+298
+00:39:01,635 --> 00:39:13,795
+işte sedimantasyon, karaciğer enzimleri, başka da bir şey bilmiyorum, ne bileyim kolesterol, odur budur bir sürü bir sürü özellikler var.
+
+299
+00:39:13,795 --> 00:39:26,575
+Sınıf etiketimde bu kişi hastadır ya da hasta değildir. Ben test sonucumu veriyorum karar ağacıma, benim değerlerime bakarak benim hasta olup olmadığımı bana söylüyor.
+
+300
+00:39:26,576 --> 00:39:38,456
+Şimdi böyle bir veri setim var. Bu veri setini ezbere bilmiyoruz ama şöyle bir şey yaparsanız çok sevinirim arkadaşlar.
+
+301
+00:39:38,456 --> 00:39:52,456
+Bunu sileyim. Şunu bir print screen ile alın. Bir dosyanın içine koyun. Yeri geldiğinde oradan da bakabilelim. Tamam mı?
+
+302
+00:39:52,456 --> 00:39:58,056
+Şimdi bu benim veri setim
+
+303
+00:39:58,056 --> 00:40:01,636
+Şöyle bir örnek yapalım
+
+304
+00:40:01,636 --> 00:40:03,676
+Kayar ağacına yerleştireceğim
+
+305
+00:40:03,676 --> 00:40:06,835
+Bu özelliklerden birini kök seçeceğim
+
+306
+00:40:06,835 --> 00:40:08,776
+Dört tane özelliği vardı
+
+307
+00:40:08,776 --> 00:40:12,076
+Canım nemi seçmek istedi
+
+308
+00:40:12,076 --> 00:40:16,255
+Nemin iki tane durumu var elimizdeki veri setinde
+
+309
+00:40:16,255 --> 00:40:19,475
+Ya yüksek oluyor nem ya da normal oluyor
+
+310
+00:40:19,475 --> 00:40:30,995
+Yüksek olduğu veriler 1, 2, 3, 4, 8, 12 ve 14. sıradaki örneklerde nem yüksek, geri kalan örneklerde de nem normal
+
+311
+00:40:30,995 --> 00:40:40,315
+Şimdi ben sadece nemin yüksek olduğuna bakarak tenis oynayıp oynamayacağıma karar verebilir miyim?
+
+312
+00:40:40,315 --> 00:40:53,395
+Örneklere baktığımızda 1, 2, 3, 4, 8 bakın 1 no'muş, 2 no'muş, 3 yes, 4 yes, 8 no
+
+313
+00:40:53,395 --> 00:41:05,115
+Yani şu dağdaki etiketlerin bazıları yes oynayabilirsin diyor bazıları no oynayamazsın diyor bir karar veremiyorum
+
+314
+00:41:05,115 --> 00:41:12,436
+Benim amacım en son yaprağa geldiğimde rahatlıkla karar verebilme durumu
+
+315
+00:41:12,436 --> 00:41:16,235
+O zaman burada benim başka bir soru sormam lazım
+
+316
+00:41:16,235 --> 00:41:18,675
+Burada başka bir soru soruyorum
+
+317
+00:41:18,675 --> 00:41:20,175
+[öğrenci]'ı soruyorum
+
+318
+00:41:20,175 --> 00:41:22,835
+[öğrenci]'ın iki tane durumu vardı
+
+319
+00:41:22,835 --> 00:41:25,535
+Ya zayıf esiyordu rüzgar ya kuvvetli
+
+320
+00:41:25,535 --> 00:41:31,295
+Bu örneklerden hangisinde rüzgar zayıfmış?
+
+321
+00:41:31,295 --> 00:41:48,435
+1, 3, 4 ve 8. örneklerde rüzgar zayıfmış. Geri kalanlarında da rüzgar kuvvetli. Peki 1, 3, 4 ve 8 sınıf olarak hep aynı etiketi mi veriyor?
+
+322
+00:41:49,115 --> 00:42:01,035
+Şu an bilmiyorum. Bu tarafa da rüzgarı koymuşum. Bu 5, 6, 7 bilmem ne normal olan örneklerden rüzgarı zayıf olan örnekler bu.
+
+323
+00:42:01,295 --> 00:42:11,215
+rüzgarı kuvvetli olan örnekler de bu. Buraya rüzgarı koydum diye buraya rüzgarı koymak zorunluluğunda değilim. İstediğimi koyabilirim.
+
+324
+00:42:12,371 --> 00:42:42,191
+sonra bakıyorum buradaki örneklerin hepsi aynı sınıftan değilmiş. Buraya bir başka özelliği koyuyorum. Outlook'u koymuşum. Outlook'ta üç tane durum vardı. Sunny, Overcast ve Rainey. Bu örneklerden yani nemi yüksek, rüzgar zayıf ve 1 ve 8 numaralı örnekte de Outlook Sunny ise bunların cevabı tenis oynayamazsınmış.
+
+325
+00:42:42,371 --> 00:42:53,412
+nemi yüksek, rüzgarı zayıf, 3 numaralı örnek eğer hava parçalı bulunduysa tenis oynayabilirmişim.
+
+326
+00:42:53,412 --> 00:43:02,471
+Yani gördüğünüz gibi yapraklara geldiğimde tek bir sınıfa sahip. 1 ve 8 tek bir sınıf. İkisi de no.
+
+327
+00:43:02,471 --> 00:43:21,291
+Yalnız hani dedim ya şu aynı seviyede olan yerlere illa aynı özellikleri koymam gerekmiyor ama şu sırada ilerlerken şurada bir kere humanity wind kullandım buraya gidip bir daha humanity kullanamazsın yani hiçbir anlamı yok
+
+328
+00:43:21,291 --> 00:43:30,831
+Bu yol üzerinde yani kökten bir yaprağa gittiğim yol üzerinde bir özellik sadece bir kez kullanılıyor
+
+329
+00:43:30,831 --> 00:43:42,831
+Sonra burayı ilerleyelim. Burada da Alpuk geldiğinde 2.12.14 diye ayrılıyor özelliklerine göre. Yes, yes, no diye olmuş.
+
+330
+00:43:43,351 --> 00:43:49,151
+Buraları yerleştirdiğimde de gördüğünüz gibi yaprakların hepsine tek bir sınıf geldi.
+
+331
+00:43:49,151 --> 00:44:10,391
+Biri bana gelip diyor ki ya [öğrenci] diyor eğer diyor şey normalse nem rüzgarda zayıfsa havada yağmurluysa ben tenis oynayabilir miyim diyor. Ha tamam bakalım diyorum algoritma bakıyor. Ha nem normal rüzgar zayıf hava yağmurlu evet oynayabilirsin diyorum.
+
+332
+00:44:10,391 --> 00:44:18,951
+Yani elimde bu yol üzerindeki bilgilere sahip bir örnek de olmayabilir
+
+333
+00:44:18,951 --> 00:44:22,952
+Burada da bir yolla bana tarif edecek
+
+334
+00:44:22,952 --> 00:44:27,191
+Şimdi buradaki ağacın seviyesi nedir arkadaşlar?
+
+335
+00:44:27,592 --> 00:44:32,831
+Bir burası var, iki burası var, üçte burası var, seviye üç
+
+336
+00:44:32,831 --> 00:44:38,032
+Şimdi benim aynı zamanda da şöyle bir kuralımın olması gerekir
+
+337
+00:44:38,032 --> 00:44:44,412
+Bu ağacın boyu da yapabiliyorsan minimum yükseklikte olması lazım.
+
+338
+00:44:45,232 --> 00:44:50,472
+Ağacımın boyu ne kadar yüksek olursa ben o kadar soru soruyorum demektir.
+
+339
+00:44:50,812 --> 00:44:53,211
+Az soru sorayım. Niye çok soru soruyorum?
+
+340
+00:44:53,732 --> 00:44:58,392
+Ve bunları kafama göre verdim. Hiçbir özelliğe göre vermedim.
+
+341
+00:44:59,071 --> 00:45:02,032
+İçinizden biri çıkar da...
+
+342
+00:45:03,112 --> 00:45:04,612
+O niye yok? Bir dakika.
+
+343
+00:45:08,032 --> 00:45:32,931
+böyle bir örneğimin olması lazımdı. Neyse biriniz çıkardan şöyle dese bana ya buraya niye hocam adını söyle nemi koydun? Buraya git rüzgarı koy. Evet koyabilirsin ben karışamam. Buraya git başka şeyi koy. Evet koyabilirsin ben karışamam.
+
+344
+00:45:32,931 --> 00:45:36,931
+Ama optimum çözümü mü elde ediyoruz acaba?
+
+345
+00:45:37,532 --> 00:45:48,172
+Kimimiz öyle bir ağaç oluştururuz ki seviyesi 4 olur, kimimiz 3'te bütün bu yaprakları aynı sınıfta bulurken kimimiz 2'de buluruz.
+
+346
+00:45:48,532 --> 00:45:50,331
+Yani tesadüfen buluruz.
+
+347
+00:45:50,871 --> 00:45:53,911
+O zaman bunun bir dayanağının olması lazım.
+
+348
+00:45:53,911 --> 00:45:58,752
+Yani şuraya koymam gereken özellik bunlardan hangisi olmalı?
+
+349
+00:45:59,151 --> 00:46:01,911
+Buraya koymam gereken hangisi olmalı?
+
+350
+00:46:01,911 --> 00:46:03,871
+bunları bulmam gerekir.
+
+351
+00:46:04,311 --> 00:46:06,051
+Bunları bulmak için de
+
+352
+00:46:06,867 --> 00:46:35,867
+karşımıza burada her ne kadar çok karışık gibi gözükse çok basit, çok faydalı ve çok önemli bir olay var. Entropi kavramı. Entropiyi duydunuz mu bilmiyorum ama size çok basit şekilde anlatacağım. Bu anlatacağımız yöntem Information Gain, maksimum kazanç. Yani hangi özellikten maksimum kazancı elde edebiliyorsan o özelliği kullanacaksın.
+
+353
+00:46:36,867 --> 00:46:58,548
+Şimdi önce entropiden bahsedelim. Entropi sözlük anlamı karmaşıklık demektir. Ama entropi fizikte ayrı kullanılır, kimyada, bizim alanımızda, farklı bilim, fenle ilgili farklı dallarda hatta işletme, sosyal alanlarda da entropi vardır.
+
+354
+00:46:58,548 --> 00:47:13,048
+Şimdi size şöyle anlatayım olayı. Entropy, information theory dediğimiz bilgi teorisinin önemli bir kavramıdır.
+
+355
+00:47:13,048 --> 00:47:39,507
+Tamam şimdi şöyle örnek veriyorum. Köpek geldi beni ısırdı. Davut Paşa kampüsünde köpek beni ısırdı. Yani çok büyük bir olay mıdır bu? Olasılığı zayıf mıdır yüksek midir? Olasılık yüksektir. Yani o kadar köpeğin olduğu bir yerde köpeğin beni ısırmasının olasılığı yüksektir.
+
+356
+00:47:39,507 --> 00:47:43,747
+Peki bunun taşıdığı bilgi önemli midir?
+
+357
+00:47:43,827 --> 00:47:50,527
+Ya köpektir. Gittin köpeğe sataştın, tekme attın, bir şey yaptın, kötü davrandın, o da geldi seni ısırdı.
+
+358
+00:47:50,908 --> 00:47:57,308
+Yani bu gayet normal. Olasılık yüksek, taşıdığı bilgi zayıf.
+
+359
+00:47:57,847 --> 00:48:01,287
+Bu probability P, bu I'da information.
+
+360
+00:48:01,287 --> 00:48:04,187
+Şimdi bunun tam tersini düşünelim.
+
+361
+00:48:04,187 --> 00:48:28,668
+Bana Hoca gitti köpeği ısırdı. Şimdi bunun olasılığı nedir? Yani aklımdan zorum yoksa gidip köpeği ısırmam. Olasılığı çok düşük. Ama bir de düşünün gitmişim gerçekten köpeği ısırmışım. Bütün üniversite beni konuşur. Bunun da taşıdığı bilgi nedir? Yüksektir.
+
+362
+00:48:28,668 --> 00:48:41,108
+Öyleyse entropi dediğimiz olayda olasılıkla bir olayın olasılığıyla o olayın taşıdığı bilgi arasında ters bir orantı vardır
+
+363
+00:48:41,108 --> 00:48:48,007
+30 derece sıcaklıktaki bir havada kar yağmaz olasılığı düşüktür
+
+364
+00:48:48,007 --> 00:48:57,408
+Eğer kar yağarsa dünyanın sonuna geldik bir takım bir şeyler oluyor taşıdan bilgi yüksektir
+
+365
+00:48:57,407 --> 00:49:10,167
+ya da tam tersi sıfır derece hava kar yağdı. Çok mu şaşırırız? Hayır. Olasılık çok yüksek. Bilgi önemsiz ya. Zaten karın yanmasını bekliyorum.
+
+366
+00:49:11,167 --> 00:49:23,347
+Her zaman olasılıkla bilgi arasında ters bir orantı vardır. Peki bu nedir? İşte bu entropi denilen şey bunu kullanır.
+
+367
+00:49:23,347 --> 00:49:49,607
+Entropi der, burada E ile kullanmış ama kitapların birçoğu bunu H ile gösterir ama oradaki H neye karşılık gelir? Hiç o konuda bir şey yoktur. Entropi E diyelim. Bir olayın entropisi. Buradaki olay nedir? Köpekle benim aramdaki bir olay. Buradaki olay nedir? Havanın ısısıyla karını yağıp yağmama durumudur.
+
+368
+00:49:49,607 --> 00:50:00,447
+Bir olayın entropisi o olayın olasılığıyla o olayın taşıdığı bilginin çarpımına eşittir. Entropi budur.
+
+369
+00:50:00,447 --> 00:50:04,147
+Peki olasılık dediğimiz şey
+
+370
+00:50:05,780 --> 00:50:35,120
+sıfırla bir arasında sayısal bir değer. Yani çok rahatlıkla bunu sayısal olarak ifade edebiliyorum. Ama bilgi, ben bilgiyi nasıl ölçeceğim? Bilgi somut bir kavramdır. Ben sizin bu derste aldığınız bilgiyi bana diyorsunuz ki evet ben bu derste çok şey öğrendim. Ne kadar çok şey öğrendim? Bana öğrendim demeniz soyut.
+
+371
+00:50:35,780 --> 00:50:48,379
+Yani soyut, elle tutulur bir şey yok. Bunu somut hale getirmek için bu bilgiyi ne yapıyoruz? İşte ödev veriyoruz, sınav veriyoruz, bunu ölçmeye çalışıyoruz.
+
+372
+00:50:48,379 --> 00:51:08,379
+Öyleyse ben buradaki bu bilgiyi somut hale getirmeliyim. Buradaki bilgi de şu demektir. Bilgi de bir bölü olasılıktır.
+
+373
+00:51:08,379 --> 00:51:13,979
+Logaritma diyeyim şuraya logaritması var.
+
+374
+00:51:14,479 --> 00:51:25,259
+Bir bölü bir olayın bilgisi o olayın taşıdığı olasılığın bir bölü olasılık iki tabanında da logaritmadır.
+
+375
+00:51:25,259 --> 00:51:26,419
+Neden iki tabanında?
+
+376
+00:51:27,000 --> 00:51:28,919
+Biz bilgisayarcıyız.
+
+377
+00:51:29,079 --> 00:51:30,039
+Her şey bizim için.
+
+378
+00:51:30,179 --> 00:51:31,179
+Bir ve sıfırdır.
+
+379
+00:51:32,679 --> 00:51:36,140
+Ve bunu iki tabanındaki logaritmayla ölçüyoruz.
+
+380
+00:51:36,140 --> 00:51:48,739
+Peki bu P'yi yukarı çıkarırsam ne olur? Yukarı çıkarırsam log 2 ekside başında var P diye yazarım değil mi?
+
+381
+00:51:49,260 --> 00:52:01,599
+Şimdi o zaman şurayı temizleyeyim ben bir pardon silgi alayım şuraya yeniden kaleme geçiyorum
+
+382
+00:52:01,599 --> 00:52:27,280
+başıma. Yeriden kaleme geçiyorum. Entropi dedik. Entropi olasılıkla taşıdığı bilgi dedik. Bu bir tane olay için. En tane olayım olabilir. Mesela benim veri setimde ne vardı arkadaşlar? En tane olay var. Bir, iki, üç, dört, beş bir sürü olayım var.
+
+383
+00:52:27,280 --> 00:52:31,600
+Tamam, şimdi oralara girmeyelim, bu olayın üzerinde eğilelim
+
+384
+00:52:31,600 --> 00:52:34,940
+Olasılığı ölçebiliyorduk sayısal bir değer olarak
+
+385
+00:52:34,940 --> 00:52:39,160
+P'yi yazdık, çarpı dedik
+
+386
+00:52:39,160 --> 00:52:44,220
+Bilgiyi dedik, soyuttur, somut hale getireceğiz
+
+387
+00:52:44,220 --> 00:52:51,660
+Bilginin somut hale gelmesi demek, olasılığın tersinin logaritmasını almak demektir
+
+388
+00:52:51,659 --> 00:52:57,899
+Yani burası da log 2, 1 bölü P demektir.
+
+389
+00:52:58,459 --> 00:53:00,399
+Okey, eşittir diyelim.
+
+390
+00:53:01,039 --> 00:53:02,179
+Burası P oldu.
+
+391
+00:53:02,839 --> 00:53:07,399
+Çarpı, bunu şey yapalım, yukarıya çıkaralım.
+
+392
+00:53:08,279 --> 00:53:15,279
+Eksi oldu, eksi, log 2, yazmak ne kadar zor, P dedik.
+
+393
+00:53:16,259 --> 00:53:16,859
+Tamam mı?
+
+394
+00:53:17,679 --> 00:53:18,919
+Bu bir entropi.
+
+395
+00:53:18,919 --> 00:53:38,580
+Şimdi bu bir entropi ama entropi dediğim şey de bir kazançtır. Kazanç da negatif olmaz. Yani bunun önünde bu eksiyi kaldırmak gerekir. Aslında bu eksiyi kaldırmayalım da şöyle yapalım.
+
+396
+00:53:38,579 --> 00:54:03,399
+bu eksi nasıl diyeceğim size tamam şimdilik böyle bilelim buradaki şeyi neydi information'ı bilgiyi somut olarak anlattık ve bu bir tane olayım var şimdi benim elimdeki örneğim neydi tenis oynayacağım
+
+397
+00:54:03,956 --> 00:54:11,956
+ve tenis oynamayacağım. İki tane olayım var. Buradaki tenis oynama olayını şöyle artı ile gösterdim.
+
+398
+00:54:11,956 --> 00:54:21,956
+Tenis oynamama olayının no'yu da şöyle eksik gibi gösterdim. Şimdi birinci entropim nedir benim?
+
+399
+00:54:21,956 --> 00:54:50,956
+şu. Tenis oynamanın olasılığı çarpı tenis oynamanın bilgisi. Bilgiyi de nasıl yazıyorduk? Log 2p önünde de eksisi var. Tamam mı? İkinci olayım da nedir benim? Tenis oynamamak. Onu da bu olarak aldım. Tenis oynamamayı. O da nedir? Tenis oynamamanın olasılığı negatiflerin.
+
+400
+00:54:50,956 --> 00:55:10,136
+yani no olanların olasılığı çarpı onların bilgisi. Bilgiyi de eksi log 2 P olarak yazdım. Elimde bir sürü olay olabilir. Hepsini böyle sırasıyla mı ekleyeceğim? Hayır. O zaman bunlar şu şekilde yazılır.
+
+401
+00:55:10,136 --> 00:55:21,775
+Entropi Sigma 1'den n'e kadar benim en tane sınıfım olabilir.
+
+402
+00:55:21,775 --> 00:55:26,515
+Size verdiğim örnekte iki sınıfım var. Oynuyorum ya da oynamıyorum.
+
+403
+00:55:27,396 --> 00:55:39,415
+En tane sınıfım olabilir. O zaman her bir sınıf için o sınıfın olasılığı çarpı o sınıfın bilgisi.
+
+404
+00:55:40,136 --> 00:55:49,936
+Bunlardan ne geliyordu hep? Şundan negatif geldiği için hep negatif, negatif, negatif, negatif, negatif, negatif
+
+405
+00:55:49,936 --> 00:56:04,676
+Bir şey maksimum kazançtan bahsediyorsam negatif olmayacak. Bütün bu negatifliği de ortadan kaldırmak için önüne eksi koyuyorum. Bu entropinin en genel formülü oluyor.
+
+406
+00:56:04,675 --> 00:56:10,255
+Şunu da yanınızda bir kağıt kalem varsa şunu da yazın
+
+407
+00:56:10,255 --> 00:56:13,515
+Buradaki iyi demem her biri olay
+
+408
+00:56:13,515 --> 00:56:17,595
+Benim elimde ne var? İki tane sınıf var verdiğim örnekte
+
+409
+00:56:17,595 --> 00:56:19,935
+Tenis oynarım, tenis oynama
+
+410
+00:56:19,935 --> 00:56:28,555
+Tenis oynamanın olasılığı çarpı bilgisi artı tenis oynamamanın olasılığı çarpı bilgisi
+
+411
+00:56:28,555 --> 00:56:48,075
+Ben hastanedeyim 6 farklı hastalık için testler yapılmış öyleyse 6 sınıfım var burada 6 farklı hastalık için olasılık ve o hastalığın bilgisinin çarpımını almam gerekiyor
+
+412
+00:56:48,075 --> 00:56:55,215
+Şimdi entropi dediğimiz şeyde 0 ile 1 arasında çıkan bir değer
+
+413
+00:56:55,215 --> 00:57:17,615
+Bunu da şöyle gösterelim. Nasıl yapalım? Eğer entropi sıfırsa, şurasıysa, elimdeki veri homojendir. Yani hepsi aynı sınıftadır. Hemen bir örnekli bunu gösterelim.
+
+414
+00:57:27,476 --> 00:57:57,455
+tamam, silinmiyor. şimdi şöyle düşünün elinizde 10 tane örnek var 10 tane örnek var ve hepsinin sınıfı da yes tamam mı hepsi de yes sınıfında yani iyi bir ne olur olasılık hepsi yes ise 10 bölü 10 çarpı logaritma
+
+415
+00:57:57,476 --> 00:58:27,336
+iki tabanına göre 10 bölü 10'dur. 10 bölü 10, 1, logaritma 1, 0, çarptım, 0. İşte entropi 0'dır bu. Örneklerin hepsi aynı sınıfa aitse entropi 0'dır. Örneklerin hepsi yes ise, örneklerin hepsi no ise budur.
+
+416
+00:58:27,476 --> 00:58:36,656
+Peki eşit dağılmışsa 10 tane örneğim var 5 tanesi yes 5 tanesi de no
+
+417
+00:58:36,656 --> 00:58:42,715
+Ne olacak? Entropi dışında bir eksi var
+
+418
+00:58:42,715 --> 00:58:45,476
+Önce yes olanını yapalım
+
+419
+00:58:45,476 --> 00:58:50,836
+10 tane örneğin 5 tanesi yes ise 5 bölü 10
+
+420
+00:58:50,836 --> 00:58:54,476
+Logaritma 2 tabanına göre 5 bölü 10
+
+421
+00:58:54,476 --> 00:58:57,236
+Şunun şurasında eksisi var
+
+422
+00:58:57,235 --> 00:59:12,795
+eksi geri kalan no'lar kaç tane olasılığı? 5 bölü 10, log 2, 5 bölü 10 dersem bu işlemleri yaparsam bunun sonucu da 1 çıkacak.
+
+423
+00:59:12,795 --> 00:59:14,675
+Orası da burası
+
+424
+00:59:14,675 --> 00:59:20,516
+Eğer benim entropim 1 ise örneklerim eşit dağılmış
+
+425
+00:59:20,516 --> 00:59:29,115
+Entropim 0 ile şu aralıktaysa bir sınıf daha fazla yoğunlukta
+
+426
+00:59:29,115 --> 00:59:32,795
+Bu aralıktaysa diğer sınıf daha fazla yoğunlukta
+
+427
+00:59:33,355 --> 00:59:40,755
+Sadece no'lar varsa entropi 0, sadece yes'ler varsa entropi 1
+
+428
+00:59:40,755 --> 00:59:46,395
+pardon entropi yine sıfır diye geçecek.
+
+429
+00:59:46,395 --> 00:59:50,095
+Tamam. Şimdi gelelim kendi örneğimize.
+
+430
+00:59:52,716 --> 00:59:56,056
+Benim elimdeki örneklerimize bakarsak
+
+431
+00:59:59,539 --> 01:00:13,099
+bunu anlatan örnek vermiş. 9 tanesi yes, 5 tanesi no ise entropin 0940 çıkacak. 7-7 ise entropin 1 çıkacak diye.
+
+432
+01:00:13,099 --> 01:00:25,939
+Şimdi gelelim hani ben deminki örnekte şey yaptım ya neyi koydum? Humanity mi koymuştum en başa? Ne mi koymuştum?
+
+433
+01:00:25,939 --> 01:00:29,359
+ya da bir başka bir örneğe siz koyabilirsiniz dedik.
+
+434
+01:00:29,359 --> 01:00:39,459
+Şimdi ben ruta ve altındaki her bir seviyeye hangi örneği koyacağımı dedik ki information gain yöntemiyle buluruz.
+
+435
+01:00:40,319 --> 01:00:43,979
+Information gain yöntemi formülü nedir?
+
+436
+01:00:44,620 --> 01:00:46,639
+Bu S benim veri setim.
+
+437
+01:00:47,039 --> 01:00:48,859
+Setin S'si.
+
+438
+01:00:49,959 --> 01:00:53,760
+A'lar da benim attribute'larım yani özelliklerim.
+
+439
+01:00:53,759 --> 01:01:03,999
+Benim kaç tane özelliğim vardı? Nem, rüzgar, hava sıcaklığı, başka ne vardı? Havanın durumu
+
+440
+01:01:03,999 --> 01:01:14,779
+Demek ki bu dört özellik için gain'i hesaplayacağım. En büyük gain'i hangisi verdiyse onu gideceğim, ruta yerleştireceğim
+
+441
+01:01:14,779 --> 01:01:21,459
+Gain'i nasıl hesaplıyorum? Gidiyorum bütün veri setinin bir entropisini hesaplıyorum
+
+442
+01:01:21,459 --> 01:01:38,319
+sonra çıkaracağım. Neyi çıkaracağım? Sırasıyla hangi özellikte çalışıyorum? Birinci özelliğim diyelim ki nemi aldım. Bu nemin sahip olduğu bir takım value'lar vardı.
+
+443
+01:01:38,319 --> 01:01:49,400
+Nem neydi? Ya yüksekti ya da normaldi. Bir yüksek olanın olasılığını, yüksek olanın entropisini çarpıyorum.
+
+444
+01:01:49,999 --> 01:02:06,980
+Artı nem düşük müydü? Düşük vardı galiba. Onun olasılığı çarpı onun entropisini toplama ekleyip bundan çıkarıyorum ve nemin gidiyorum information gain'ini buluyorum.
+
+445
+01:02:06,979 --> 01:02:18,159
+Şu olasılığı nasıl hesaplıyorum? Bu olasılıkta neydi bu benim özelliğim? Atribütüm nemdi? Özelliğim de yüksek olsun.
+
+446
+01:02:18,159 --> 01:02:30,519
+Veri setinde kaç tane yüksek olan değer varsa veri setinin tamamına oranlıyorum ve onun değerini buluyorum.
+
+447
+01:02:30,659 --> 01:02:32,719
+Şimdi örnekler üzerinde bunu göreceğiz.
+
+448
+01:02:32,719 --> 01:02:44,719
+Hadi başlayalım. Ben ağacımı çizeceğim. Ağacımın köküne hangisini koyayım? Wind'imi, humidity'imi, temperature'imi, altlık'ımı?
+
+449
+01:02:44,719 --> 01:02:53,999
+Gainlerini hesaplamak zorundayım. En yüksek hangisi ise gideceğim köke onu koyacağım. Peki benim formülümde neydi?
+
+450
+01:02:53,999 --> 01:02:55,699
+formülüm de şuydu.
+
+451
+01:02:57,359 --> 01:02:59,859
+Euler sistemin entropisine ihtiyacım var.
+
+452
+01:02:59,859 --> 01:03:06,959
+Ondan sonra da hangi atribütle çalışıyorsam onların değerlerini.
+
+453
+01:03:07,479 --> 01:03:11,099
+O zaman ben ilk önce sistemimin entropisini hesaplayayım.
+
+454
+01:03:11,619 --> 01:03:15,299
+Sistemimde 9 tane yes, 5 tane de no vardı.
+
+455
+01:03:16,279 --> 01:03:17,439
+Entropim ne oldu?
+
+456
+01:03:17,439 --> 01:03:35,079
+9 bölü 14 yani ben eğer 9 bölü 14 log 2 9 bölü 14 bunun başında eksi var yeslerin şeyini buldum entropisini.
+
+457
+01:03:35,079 --> 01:03:55,739
+İkinci örneğimde neydi? No'lar. Elimde 5 tane no var. 14 tane örnek var. 5 bölü 14 log 2 5 bölü 14 dedim. Topladım. Eksi yaptım önüne. Negatiflikler gitsin diye. Ve entropi dedim. Bu entropi 0.940 çıkacak.
+
+458
+01:03:56,563 --> 01:04:06,563
+bunu hepsinde kullanıyorum. Neden hepsinde kullanıyorum? Çünkü hepsinin başında sistemin entropisi var. Bunu bir kere hesapladım.
+
+459
+01:04:06,563 --> 01:04:23,063
+şimdi, Vint'e hesaplayalım diyor. Diyor ki, Vint'e diyor, weak var, strong var. 6 tane, weak'in 6 tanesinde yes'dir diyor.
+
+460
+01:04:23,063 --> 01:04:51,904
+pikni tenis oynanır. İki tanesinde ne olur diyor. Strongların üç tanesinde tenis oynanır, üç tanesinde oynanmaz diyor. Bunları toplasak zaten 14 etti. 6, iki daha 8, üç daha 11, üç daha 14. Benim elimde zaten 14 örnek var. Bu örneklerin V kolanlarda kaç tanesi tenis oynuyordu, kaç tanesi oynayamıyordu. Strong olanların kaç tanesi oynuyordu,
+
+461
+01:04:51,904 --> 01:05:07,703
+kaç tanesi oynamıyordu. Şimdi bunu çözüyor. Sistemin entropisini aldı neydi? 0940 geldi buraya koydu. Eksi bu benim sigma işaretimin olduğu yer.
+
+462
+01:05:07,703 --> 01:05:19,784
+Şimdi wind'de ne var? Bir weak olan durum var. Bir de strong olan durum var. Önce weak olan durumu yazıyor.
+
+463
+01:05:19,784 --> 01:05:41,843
+Weed'de kaç tane örnek var? 8 tane örnek var. Bu 8 tanenin 6 tanesi yes, 2 tanesi no. Şimdi geldi buraya. Weed'de 8 tane örnek var. 14 tane toplam örneği vardı. Bunun olasılığı ne oldu? 8 bölüm.
+
+464
+01:05:41,843 --> 01:05:44,784
+Ne mouse gitti ya
+
+465
+01:05:44,784 --> 01:05:47,604
+Toplam 8
+
+466
+01:05:47,604 --> 01:05:56,663
+14 tane örneğin 8 tanesi windin zayıf olduğunu gösteriyor
+
+467
+01:05:56,663 --> 01:06:02,083
+Bu 8 tane örneğinde 6 tanesi yes, 2 tanesi no
+
+468
+01:06:02,083 --> 01:06:11,644
+Burada da 6 bölü 8, log 2 6 bölü 8, eksi 2 bölü 8, log 2 2 bölü 8
+
+469
+01:06:11,644 --> 01:06:30,144
+Yani şurası weekend tenise gitmemenin entropisi weekend tenisi oynamanın entropisi bu. Bu ilk baştaki şeyde hani formülümüzün şurasında vardı ya PV işte bu PV'yi yapıyoruz.
+
+470
+01:06:35,027 --> 01:07:02,747
+Sonra, Strong olan kısma geldi. 6 tane Strong var. 14 tane örneğin 6 tanesi Strong. Bu Strongların 3 tanesi yes. 3 tanesi de no. 3 bölü 6 log 2, 3 bölü 6 negatifi koyduk. 3 bölü 6 log 2, 3 bölü 6. Bakın buradaki negatifler neydi? Şuradaki logaritma negatif olduğu için, pozitif yapmak için
+
+471
+01:07:02,747 --> 01:07:12,647
+Bunlar da en dıştaki şunlar, şu eksiler parantez açıldığı için bunun önüne geldi, bunun önüne geldi
+
+472
+01:07:12,647 --> 01:07:18,827
+Buraya eğer mavi parantez koymuşsam bu bunun dışındaysa burasının artı olması gerekir
+
+473
+01:07:18,827 --> 01:07:24,327
+Parantez koymadan yazarsam şu parantezler açıldığı için bunların içine geldi
+
+474
+01:07:24,327 --> 01:07:27,327
+Wind ne çıkmış? 0.048
+
+475
+01:07:27,327 --> 01:07:33,407
+Şimdi ben aynı şeyi humidity için yapmışım 0.15
+
+476
+01:07:33,407 --> 01:07:37,527
+Aynı şeyi temperature için yapmışım 0.29
+
+477
+01:07:37,527 --> 01:07:43,047
+Aynı şeyi outlook için yapmışım 0.246
+
+478
+01:07:43,047 --> 01:07:45,208
+Hangisi daha büyük?
+
+479
+01:07:46,647 --> 01:07:48,208
+Bakıyorum bunların içinden
+
+480
+01:07:48,208 --> 01:07:49,608
+Wind
+
+481
+01:07:49,608 --> 01:07:51,328
+O zaman gidiyorum
+
+482
+01:07:51,328 --> 01:07:53,468
+Pardon ya
+
+483
+01:07:58,739 --> 01:08:08,339
+wind büyük diyorum outlook büyük 0246 zaten kırmızıyla da boyamışım. gidiyorum tepeye outlook'u yerleştiriyorum.
+
+484
+01:08:08,339 --> 01:08:22,859
+outlook'un 3 tane durumu var. sunny, overcast ve rainy. hangi örneklerde sunny veri setime bakıyorum 1, 8, 9, 11'de outlook sunny'miş.
+
+485
+01:08:22,859 --> 01:08:50,339
+7-12'de overcast, 4-5-6-10-14'de de reyne. Bunların sınıflara göre dağılımı nedir? Bunların içinden iki tanesi tenis oynatıyor, üç tanesi oynatmıyor. Dört tanesinde tenis oynanıyor, sıfır tanesinde oynanmıyor. Bakın burası bitti. Hepsi aynı sınıftan. Ben eğer Outlook'a bakar, overcast cevabımı görürsem başka soru sormama gerek yok.
+
+486
+01:08:50,339 --> 01:09:12,079
+Hemen ne diyorum? Tenis oynayabilirsin. Reyni'ye bakıyorum. 5 örnek var. 3 tanesi şey artı, 2 tanesi eksi. Burası bitti. Yes, overkeste hava, hiç diğer örnekleri sorgulamama gerek yok. Ama buralarda yeni bir sorgu koymam lazım.
+
+487
+01:09:12,079 --> 01:09:40,059
+Çünkü aynı sınıf etiketinde değil. Hangi sorguları koyacağım? O zaman ben yeniden işlem yapacağım. Fakat yeniden işlem yaparken artık ben Sunny kolundayım. Sistemin entropisini değil, Sunny'nin entropisini kullanmalıyım. Ben burada artık Rain'in kolundayım. Artık sistemin entropisini değil, Rain'in entropisini kullanmalıyım.
+
+488
+01:09:40,059 --> 01:09:50,339
+Sistemin entropisini değil, sani'nin entropisini kullanmak nedir? Şudur. Burada 5 tane örnek var. İkisi yes, 3'ü ne olmuş?
+
+489
+01:09:51,680 --> 01:10:02,939
+Öyleyse e sani ne olacak? 2 bölü 5 log 2, 2 bölü 5, 3 bölü 5 log 2, 3 bölü 5. Başlarında da eksileri var. 0, 97.
+
+490
+01:10:02,939 --> 01:10:21,759
+Ben artık bu sistemin değil bu Sunny ise bu Sunny'dan sonra neyi koymalıyım diye bakacağım. Sunny'dan sonra humanity mi gelsin? Sunny'dan sonra temp mi gelsin? Sunny'dan sonra wind mi gelsin? Bunları bulmalıyım.
+
+491
+01:10:21,760 --> 01:10:36,879
+Şimdi Sunny'nin entropisini bulmuşum. Diğerlerini hesaplayalım. Humanity'yi hesaplayacağız. Burada neyi gördük? Sunny'nin entropisi 0.97 idi. Artık sistemin değil bunu koyduk.
+
+492
+01:10:36,879 --> 01:10:56,219
+Buradaki 2 bölü 5 artık nedir? 2 bölü 5 şudur. Benim kaç tane örneğim vardı? 5 tane. Bunun 2 tanesi yes'te. 2 bölü 5 oradan gelecek. Yes sınıfından 3 bölü 5'te no sınıfından gelecek.
+
+493
+01:10:56,219 --> 01:11:03,559
+Buradaki gelen 2 bölü 5 yes sınıfı, 3 bölü 5 de no sınıfı
+
+494
+01:11:03,559 --> 01:11:11,859
+Şimdi bu iki tane örneğin yes'lerdeki dağılımı nedir, no'lardaki dağılımı nedir?
+
+495
+01:11:11,859 --> 01:11:20,719
+Bu iki tane örneğin iki tanesi yes sınıfında, geri kalan sıfır tanesi de no sınıfında oluyor.
+
+496
+01:11:20,719 --> 01:11:26,019
+Bunların da 2 bölü 2 yes sınıfının entropisi, no sınıfının entropisi
+
+497
+01:11:26,019 --> 01:11:39,039
+Buradaki 3 tane örneğin de veri setine baktığınızda siz hava güneşli ve nemin biri yüksek biri de neydi nemin normal miydi?
+
+498
+01:11:39,039 --> 01:11:43,039
+normal olan durumlara baktığınızda bu normalde
+
+499
+01:11:43,604 --> 01:11:53,203
+üç tane örnek görüyorsunuz. Bu üç tane örneğin üçü de ya Y sınıfında ya da NO sınıfında. Diğeri de diğer sınıftaymış. Yani sıfır.
+
+500
+01:11:53,203 --> 01:12:07,104
+tın tın koyduğunda bunun da 0.97 olduğunu göreceğiz. Aynı şekilde venti hesapladık, tempe hesapladık ve bunun altına baktığınızda en yüksek hangisi?
+
+501
+01:12:07,104 --> 01:12:33,604
+0.97 öyleyse sunny'nin altına nem gelecek. Sunny'nin altına nemi koyduk. Nem yüksek ve normal diye ayrılıyordu. Sunny ise hava, neme bakıyorum. Nem yüksekse bunun üçü de neymiş? Tenis oynayamazsın. Bitti. Hepsi aynı sınıfta. Bunun ikisi de neymiş? Tenis oynayabilirsin.
+
+502
+01:12:33,604 --> 01:12:59,364
+Bunlar da aynı sınıftan bitti. Aynı şeyi şimdi Rainy için yapıyorum. Rainy'de 3'ü yes, ikisi no olan 5 tane örnek var. Gidiyorum. Rainy için humanity, time, winter hesaplıyorum. Bunların değerleri de bulunuyor aynı şekilde. Yerleştiriyorsun. Ve bu oluyor.
+
+503
+01:12:59,363 --> 01:13:20,423
+Şimdi size çok karışık geldiğini biliyorum. Aslında kendiniz üzerinden gittiğinizde çok daha kolay olduğunu göreceksiniz. Ama ara vermeden önce şöyle bir şey yapmak istiyorum. Nasıl yapalım? Şunu önce anladık mı?
+
+504
+01:13:28,275 --> 01:13:43,375
+bakın, bu orijinalde kafama göre attığımda ağacın şey neydi yüksekliği üçtü. Ama Information Gain'i kullandığımda benim ağacımın yüksekliği ne çıktı? Ağacımın yüksekliği bu çıktı.
+
+505
+01:13:43,375 --> 01:13:56,315
+2. 3 iken 2'ye düşürdüm. Yani 3 tane soru sorarak değil 2 tane soru sorarak cevaplandırdım.
+
+506
+01:13:56,315 --> 01:14:03,195
+He de bir de hava overkesse başka soru sormama bile gerek kalmadı bulduk.
+
+507
+01:14:04,116 --> 01:14:11,155
+Şimdi ara vermeden önce demiştik. Bunlar size çok saçma değil de zor gelmiş olabilir.
+
+508
+01:14:11,155 --> 01:14:20,915
+ilk defa gördüğünüz için aslında zor. Şimdi isterseniz bu örnek üzerinde yapalım. Ben bu sistemin entropisini hesaplamak istiyorum.
+
+509
+01:14:21,095 --> 01:14:27,915
+Bütün bu sistemin entropisi. Sistemin entropisini hesaplamak demek şu sınıflara göre dağılımını bulmak demek.
+
+510
+01:14:28,675 --> 01:14:36,535
+Tamam mı? Yine masum nerede? E dedim. Kaç tane sınıfım var benim arkadaşlar?
+
+511
+01:14:36,536 --> 01:14:57,296
+arkadaşlar 2 tane sınıfım var yani 2 tane olayım var ilk önce yes olayını yapalım kaç tane yes var 3, 4, 5, 6, 7, 8, 9, 10 tane olayın 14 tane olayın 9 tanesi yesmiş olasılığı 9 bölü 14 log 2 9 bölü 14
+
+512
+01:14:57,295 --> 01:15:20,636
+Ondan sonra bunun önünde eksim var. Sonra ötekinin de kaç tane no var? 4, 5, 5 bölü 14, log 2, 5 bölü 14 dedik. Tamam mı? Bundan nasıl bir sonuç çıkmıştı? Şurada onun sonucu vardı.
+
+513
+01:15:20,636 --> 01:15:31,176
+o böyle hayat çok zorlanacak 0.97 idi biliyorum 0.97 idi galiba 0.97 tamam mı
+
+514
+01:15:31,176 --> 01:15:39,975
+sonraki adımda ne yaptım ben root'a outlook mu koymalıyım temperature'ımı koymalıyım humidity'imi koymalıyım
+
+515
+01:15:39,975 --> 01:15:47,516
+wind'imi koymalıyım bunların her birini hesaplamam gerekiyor dedim gain dedim ben dedim bu gain'de
+
+516
+01:15:47,515 --> 01:15:53,335
+Acaba benim sistemimin ilk şeyi Outlook mu olmalı dedim. Outlook'u hesapladım.
+
+517
+01:15:54,115 --> 01:16:03,335
+Outlook'u hesaplarken formülüm neydi? Sistemin entropisini yaz. Yani 0.97'yi yazdım.
+
+518
+01:16:03,335 --> 01:16:11,775
+0.97'yi yazdım. Sonra bunun başında eksi vardı. Parantezimi açtım.
+
+519
+01:16:11,775 --> 01:16:32,195
+Altlook'u yazacağım. Altlook'ta kaç tane özellik var? Sunny var, Rainy var ve Overcast var. Hem Sunny hem Overcast hem de Rainy'nin durumlarına baktım. Altlook'ta kaç tane Sunny var? Kaç tane Sunny olduğunu sayalım.
+
+520
+01:16:32,195 --> 01:16:58,876
+1, 2, 3, 4, 5 tane Sunny var. Bu 5 tanenin kaç tanesi Yes? 2 tane No var Sunny'de, 3 tane No var, 1 tane Yes var, 2 tane Yes var. Bunun 3 tanesi No'muş, 2 tanesi de Yes'miş. Bu bilgiyi aldım.
+
+521
+01:16:58,875 --> 01:17:25,815
+Altlık'un başka hangi durumu var? Overcast durumu var. Overcast'te kaç tane overcast var? 1, 2, 3, 4 tane overcast var. Bu 4 tane overcast'in kaç tanesi yes, kaç tanesi no? 2 tane yes var, 3 tane yes var, 4 tane yes var. 4'ü de yes, 0 tane de no var.
+
+522
+01:17:26,260 --> 01:17:44,260
+bunu da yazdım bir kenara. Akluk'un başka hangi özelliği var? Reyni özelliği var. Kaç tane reyni var Akluk'ta? 1, 2, 3, 4, 5. Yalnız saymadıysam 5 tane reyni var. Bunun kaç tanesi yes, kaç tanesi no?
+
+523
+01:17:44,260 --> 01:17:57,120
+2 reyni burada var, 2 yes var, 1 no var, 3 yes var, 3 tane yes varmış, 3 tane yes, o zaman 2 tane de no olur.
+
+524
+01:17:58,039 --> 01:18:03,520
+Şimdi sistemin entropisini yazdım, 0.97 idi, tamam mı?
+
+525
+01:18:03,520 --> 01:18:10,800
+Eksi dedim, şimdi Sunny'nin entropisini yazıyorum. Sunny'nin entropisini de nasıl yazıyorduk?
+
+526
+01:18:10,799 --> 01:18:18,999
+bunun da bir eksisi var. Açtım parantez. 5 tane sani var. 5 bölü 14.
+
+527
+01:18:23,444 --> 01:18:51,843
+sonra, pardon burada artı var, bunun önünde eksi var. Sonra burada neler var? Bunun kaç tanesi? 3'e 2. Burası 5 tane örneğin. 3 bölü 5, log 2, 3 bölü 5, artı 2 bölü 5, log 2, 2 bölü 5. Bu birincisi bitti. Buraya artı koydum. Sonra kime geldim? Overcaste. 4. 4 tane örnek.
+
+528
+01:18:53,444 --> 01:19:19,263
+kaç tane örneğin 4 tanesi overcast? 14. 4 bölü 14. Bunların kaç tanesi yes? 4'ü de 4 bölü 4, log 2, 4 bölü 4. Artı kaç tanesi no? 0. 0 bölü 4, log 2, 0 bölü 4. Sonra geldik reyniye. 5 tane reyni var. Burası ne oldu? 5 bölü 14.
+
+529
+01:19:19,263 --> 01:19:24,644
+parantez içerisinde bu 5 tanenin de yes ve no'ya göre dağılımlarını alıyorduk.
+
+530
+01:19:24,644 --> 01:19:29,463
+3 bölü 5, log 2, 3 bölü 5, 2 bölü 5, log 2, 2 bölü 5.
+
+531
+01:19:29,564 --> 01:19:31,143
+Buradan bir sonuç çıkardım.
+
+532
+01:19:31,403 --> 01:19:35,463
+Aynı şeyi temperature, humidity, wind için yaptım.
+
+533
+01:19:36,704 --> 01:19:38,963
+Bunları tek tek yaparsanız görürsünüz.
+
+534
+01:19:39,944 --> 01:19:42,563
+Yaptığımda şu sonuçları elde ettim.
+
+535
+01:19:43,263 --> 01:19:43,884
+Hepsi için.
+
+536
+01:19:44,683 --> 01:19:46,503
+En yüksek alt look'u buldum.
+
+537
+01:19:46,503 --> 01:19:54,323
+Outlook'u gittim buraya yerleştirdim. Outlook'un dedim üç tane durumu var. Şimdi bunların altına ne gelecek?
+
+538
+01:19:55,063 --> 01:20:05,963
+Aynı formülü kullanıyorum ama tek bir farkla artık sistemin değil, benim sistemim sadece şu örneklerden oluşuyormuş gibi hareket ediyorum.
+
+539
+01:20:05,963 --> 01:20:17,123
+buranın entropisini bulup bunları kendi içerisinde acaba saniyeden sonra altlık mı gelir, temperature mi, humidity mi gelir diye hesaplıyorum.
+
+540
+01:20:18,263 --> 01:20:22,023
+Hepsinin bir tane örneği için açık yapılmışı var.
+
+541
+01:20:22,843 --> 01:20:27,783
+Diğerlerini de aynı şekilde yerine koyarak rahatlıkla bulabilirsiniz arkadaşlar.
+
+542
+01:20:27,783 --> 01:20:32,423
+Lütfen deneyip aynı sonuçları elde edebildiğinizi görün.
+
+543
+01:20:32,423 --> 01:20:44,164
+Ama önemli olan entropi, önemli olan information, bunlar nasıl entropi haline geldi, bir sistemin entropisini nasıl hesaplıyorsunuz budur
+
+544
+01:20:44,164 --> 01:20:51,923
+Şimdi bir ara veriyorum ve ağaçların son konusuna geçeceğiz
+
+545
+01:20:51,923 --> 01:20:56,664
+15 dakika ara veriyorum, 10.35'te bir araya gelelim
+
+546
+01:20:56,664 --> 01:20:58,843
+Biri evet ya da hayır desin
+
+547
+01:20:58,843 --> 01:20:59,423
+Tamam hocam
+
+548
+01:20:59,423 --> 01:21:01,423
+Tamam, hadi hoşçakalın
+
+549
+01:38:41,427 --> 01:38:43,427
+evet biraz geciktim özür dilerim
+
+550
+01:38:47,828 --> 01:39:10,707
+hızlı hareket edemiyorum çünkü. Kahvaltı ettim, etmemiştim. Şimdilik arkadaşlar, bir ses, birinden bir ses. Buradayız hocam. Buradayız hocam. Şimdi en kolay şeylere geldik bu bölümün. İzomorfizm. İzomorfizm, benzerlik demek.
+
+551
+01:39:10,707 --> 01:39:17,727
+Ağaçlar şekil olarak baktığımızda görsel olarak birbirine benzemiyor.
+
+552
+01:39:17,847 --> 01:39:21,188
+Görsek de acaba bu ağaçlar birbirine benzer mi?
+
+553
+01:39:21,188 --> 01:39:26,807
+Eğer ağaçlar birbirine benzerse onlar üzerinde ortak hareketler yapabiliriz.
+
+554
+01:39:28,688 --> 01:39:32,407
+Mesela iki tane ağaç vermiş burada T1 ve T2.
+
+555
+01:39:33,167 --> 01:39:36,487
+Görsel olarak baktığımda bunlar hiç birbirine benzemiyor.
+
+556
+01:39:36,887 --> 01:39:39,587
+Ama bu iki ağaç izomorfiktir diyor.
+
+557
+01:39:40,707 --> 01:39:50,427
+Bir ağacın izomorfik özelliğini sağlayabilmesi için bu ağaçların birebir ve örten fonksiyon özelliklerini göstermesi gerekir.
+
+558
+01:39:51,167 --> 01:39:53,487
+Birebir ve örten fonksiyonlar neydi?
+
+559
+01:39:54,067 --> 01:39:56,787
+Domain ve range diye iki tane kümen vardı.
+
+560
+01:39:57,427 --> 01:40:05,167
+Domain'deki her bir eleman range'deki bir elemana karşılık geliyor ve range'de de açıkta bir eleman kalmıyordu.
+
+561
+01:40:05,167 --> 01:40:07,887
+Burada da aynı şeyi düşüneceğiz.
+
+562
+01:40:07,887 --> 01:40:17,607
+düğüm sayılarının aynı olması, kenar sayılarının aynı olması, her bir düğümün dereceleri vardı.
+
+563
+01:40:18,067 --> 01:40:23,188
+Bir düğümün derecesi neydi? O düğüme giren, çıkan kenarların toplamıydı.
+
+564
+01:40:24,467 --> 01:40:29,347
+Bunlardan yararlanarak ağaçlardaki benzerlikler üzerinden gideceğiz.
+
+565
+01:40:30,567 --> 01:40:31,707
+Evet bu yine dönmüyor.
+
+566
+01:40:35,539 --> 01:40:37,199
+Niye böyle oluyor?
+
+567
+01:40:38,280 --> 01:40:39,000
+Tamam.
+
+568
+01:40:40,079 --> 01:40:43,379
+Şimdi önce ağaçların köklü olma durumuna bakalım.
+
+569
+01:40:43,579 --> 01:40:46,699
+Biliyorsunuz ağaçlar köklü de olabilir, köksüz de olabilir.
+
+570
+01:40:46,880 --> 01:40:50,460
+Köklü ise bana o ağacın köklü olduğu bilgisinin verilmesi lazım.
+
+571
+01:40:50,879 --> 01:40:51,839
+Burada verilmiş.
+
+572
+01:40:52,519 --> 01:40:55,880
+Bu ağacın kökü R1, bu ağacın kökü de R2.
+
+573
+01:40:56,739 --> 01:41:00,979
+T1 ve T2, R1 ve R2 kök değerlerine sahip.
+
+574
+01:41:01,099 --> 01:41:02,399
+Köklü iki ağaç olsun.
+
+575
+01:41:02,399 --> 01:41:12,679
+Eğer bunlar birebir fonksiyon özelliğine mevcut ise köklü bir ağaç olarak izomorfiktir diyoruz.
+
+576
+01:41:13,139 --> 01:41:15,400
+Birebir özelliğine mevcutluğuna bakıyorduk.
+
+577
+01:41:16,059 --> 01:41:17,459
+Ağaçların düğümlerine.
+
+578
+01:41:17,959 --> 01:41:21,319
+Buradaki ağacın kaç tane düğümü var sol taraftakinin?
+
+579
+01:41:21,459 --> 01:41:22,379
+2, 4, 5.
+
+580
+01:41:22,919 --> 01:41:24,479
+Sağ taraftakine bakıyoruz.
+
+581
+01:41:25,039 --> 01:41:26,419
+2, 4 ve 5.
+
+582
+01:41:27,379 --> 01:41:29,319
+Düğümler birebir aynı.
+
+583
+01:41:30,019 --> 01:41:31,279
+Köklerimiz var.
+
+584
+01:41:31,279 --> 01:41:33,859
+ve bu ağaçlarımıza
+
+585
+01:41:33,859 --> 01:41:35,759
+izomorfiktir diyoruz.
+
+586
+01:41:35,839 --> 01:41:38,219
+Şimdi gittikçe çıtayı birazcık yükselteceğiz.
+
+587
+01:41:39,199 --> 01:41:39,479
+Yine
+
+588
+01:41:39,479 --> 01:41:41,799
+aşağıda iki tane ağaç olsun.
+
+589
+01:41:42,339 --> 01:41:42,819
+Bunlar
+
+590
+01:41:42,819 --> 01:41:46,019
+kökleri de R1 ve R2 olarak
+
+591
+01:41:46,019 --> 01:41:48,260
+verilmişse bunlar izomorfik
+
+592
+01:41:48,260 --> 01:41:50,120
+midir? Ha bir bakalım
+
+593
+01:41:50,120 --> 01:41:52,019
+evet ikisi de köklü. Tamam.
+
+594
+01:41:52,659 --> 01:41:54,120
+2-4-5 tane düğüm
+
+595
+01:41:54,120 --> 01:41:56,079
+var. 2-4-5 tane düğüm
+
+596
+01:41:56,079 --> 01:41:57,839
+var. Kenar sayısı
+
+597
+01:41:57,839 --> 01:41:59,699
+bunda da 4, bunda da 4.
+
+598
+01:41:59,699 --> 01:42:04,279
+Evet bunlar izomorfiktir diyebiliriz burada olduğu gibi.
+
+599
+01:42:04,999 --> 01:42:06,979
+Nerede? Yine kalem gitti.
+
+600
+01:42:08,019 --> 01:42:08,759
+Olduğu gibi.
+
+601
+01:42:09,579 --> 01:42:21,079
+Fakat eğer bana köklü olmayla birlikte ikinci bir bilgi verilmiş olsaydı, binary tree olarak verilmiş T1 ve T2 ağacı denseydi,
+
+602
+01:42:21,839 --> 01:42:23,459
+binary tree'nin özelliği neydi?
+
+603
+01:42:23,579 --> 01:42:27,759
+Bir düğümden maksimum iki tane ya da hiç kenar çıkmayacağım.
+
+604
+01:42:27,760 --> 01:42:41,279
+Binary olarak bunlar izomorfik midir diye sorulduğunda düğüm sayıları aynı, kenar sayıları aynı olmalarına rağmen bunlar izomorfik değildir diyecektik.
+
+605
+01:42:41,279 --> 01:42:53,319
+Sebep nedir? Şuradaki binary tree'e bakın. Buradaki binary tree sağa doğru ilerliyor. Buradaki binary tree ise sola doğru genişliyor.
+
+606
+01:42:53,319 --> 01:43:02,379
+Eğer binary tree varsa ağaçların genişleme yani derinleşme yönlerinin de aynı yönde olması gerekir.
+
+607
+01:43:02,760 --> 01:43:08,340
+O zaman bunlar binary tree olarak izomorfik değildir diyebiliyoruz.
+
+608
+01:43:09,340 --> 01:43:12,679
+O zaman ne kadar çok o zaman kelimesini kullandım.
+
+609
+01:43:13,179 --> 01:43:15,299
+Üç türlü izomorfizm var.
+
+610
+01:43:16,379 --> 01:43:19,859
+Sana diyorlar ki ağaçlarda izomorfizm var mı?
+
+611
+01:43:20,120 --> 01:43:21,959
+Hiç kök mök bilgisi yok.
+
+612
+01:43:21,959 --> 01:43:33,659
+Tamam mı? Bakıyorsun düğüm sayısına, kenar sayısına, evet diyorsun izomorfizm var.
+
+613
+01:43:34,340 --> 01:43:37,120
+Köklü ağaçlarda izomorfizm var mı?
+
+614
+01:43:37,560 --> 01:43:45,340
+Köklü ağaçlardaki izomorfizmde de düğüm sayısına bakıyorsun, kenar sayısına bakıyorsun, düğüm derecesine bakıyorsun.
+
+615
+01:43:45,939 --> 01:43:48,319
+Evet, aynıysa var diyorsun.
+
+616
+01:43:48,319 --> 01:43:58,359
+Banyuritri'de izomorfizm var mı diye bakınca banyuritri'de de ağaçların yönlerine dallanma yönlerine göre bakıyoruz.
+
+617
+01:43:58,840 --> 01:44:02,760
+Mesela işte yeniden örnek bunlar root'u var.
+
+618
+01:44:03,599 --> 01:44:12,560
+Dört düğüm dört düğüm üç kenar üç kenar izomorfizm fakat banyuritri bilgisi verildiğinde hayır diyorum.
+
+619
+01:44:12,560 --> 01:44:14,779
+Bir de derecelerden bahsettik.
+
+620
+01:44:14,859 --> 01:44:16,239
+Ne demek istiyorum mesela?
+
+621
+01:44:16,239 --> 01:44:19,599
+buradaki şeyin derecesi nedir?
+
+622
+01:44:20,219 --> 01:44:21,579
+Bu düğümün derecesi 1.
+
+623
+01:44:22,200 --> 01:44:23,539
+Bir tane kenar çıkmış.
+
+624
+01:44:23,599 --> 01:44:25,340
+Şu düğümün derecesi nedir? 3.
+
+625
+01:44:26,059 --> 01:44:27,579
+3 tane kenar çıkmış.
+
+626
+01:44:27,900 --> 01:44:29,239
+Şu düğümün derecesi 1.
+
+627
+01:44:29,599 --> 01:44:30,980
+Bu düğümün derecesi 1.
+
+628
+01:44:30,980 --> 01:44:33,679
+Yani buradaki düğümlerin dereceleri
+
+629
+01:44:33,679 --> 01:44:34,819
+1, 3
+
+630
+01:44:35,247 --> 01:45:04,787
+1, 1 diyebiliriz. Buradakilerine bakalım. Bunun derecesi 1, bunun derecesi 3, bunun derecesi 1, bunun da derecesi 1, bunun da düğüm derecelerini yazarsak 1, 3, 1, 1. Bakın bu dereceler olarak da aynı. Yani izomorfizmde düğüm sayısı, kenar sayısı ve dereceler dedik. Eğer binary gibi bir özellik verildiyse de bu alt ağaçların ne tarafa doğru,
+
+631
+01:45:04,787 --> 01:45:09,127
+bu yöneldikleri bilgisini de kullanmamız gerekir.
+
+632
+01:45:10,288 --> 01:45:16,007
+Şimdi aslında gerçek dünyada da şöyle bir durum vardır.
+
+633
+01:45:16,588 --> 01:45:24,227
+Bir şeyin olduğunu ispatlamaktansa bir şeyin olmadığını ispatlamak daha kolaydır.
+
+634
+01:45:24,227 --> 01:45:41,227
+Ne demek istiyorum? Bir şeyin var olduğunu ispatlayabilmek için belki yüzlerce soruya cevap vermen gerekir. Ancak o yüz sorunun yüzü de okeyse o bir şey vardır.
+
+635
+01:45:41,227 --> 01:46:02,867
+ben de diyorum ki o üç tane şeyi ile uğraşacağım ama bir tane olmayan bir şey bulayım ve otomatikman o şey o şey değildir diyeyim. Ne kadar güzel anlattım değil mi? Hani bizim for every kavramımız vardı, for every bir de ne vardı? For some vardı. Onlar gibi düşünün.
+
+636
+01:46:02,867 --> 01:46:11,407
+For every neydi? Bütün o kümeyi sağlayan bütün elemanlar için bunun sağlanması gerekiyordu.
+
+637
+01:46:12,047 --> 01:46:17,107
+For some için ise en az bir tanenin sağlanması yeterliydi.
+
+638
+01:46:17,107 --> 01:46:22,807
+Ben bir tane sağlanmayan bulursam ona for every demiyorum.
+
+639
+01:46:24,687 --> 01:46:25,307
+Tamam mı?
+
+640
+01:46:25,607 --> 01:46:32,647
+Burada da bir şeyin izomorfizm olduğunu, yani bu ağaç olabilir, bu bir graf olabilir,
+
+641
+01:46:32,867 --> 01:46:40,847
+İzomorfizm olduğunu söylemektense izomorfizm olmadığını söylemek çok daha kolaydır.
+
+642
+01:46:42,467 --> 01:46:45,387
+Burada en kısa özetimiz var.
+
+643
+01:46:45,968 --> 01:46:51,667
+İki ağaç arasında izomorfizm aramak için aşağıdaki şartların oluşması gerekiyor.
+
+644
+01:46:51,667 --> 01:46:53,927
+Düğüm sayıları aynı olmalı.
+
+645
+01:46:54,207 --> 01:46:59,087
+Ben bunun aynı olmadığını görüyorsam hiç diğer şartlara bakmama gerek yok.
+
+646
+01:47:00,047 --> 01:47:01,927
+Kenar sayıları aynı olmalı.
+
+647
+01:47:02,867 --> 01:47:06,707
+karşılıklı düğümlerin dereceleri aynı olmalı.
+
+648
+01:47:07,787 --> 01:47:10,527
+Kökten köke eşleme yapılmalı.
+
+649
+01:47:11,307 --> 01:47:14,647
+Root tree de kökten köke eşleme olmalı.
+
+650
+01:47:14,647 --> 01:47:28,127
+Yani ağaçların köklerini bir tutup üzüm salkımı gibi salladığı vakit çık çık çık çık aynı düğümler aynı kenarlar varmış havasında sallanacak.
+
+651
+01:47:28,327 --> 01:47:30,847
+Boyu uzun olmuş kısa olmuş bunların önemi yok.
+
+652
+01:47:30,847 --> 01:47:39,007
+Binary Tree'den de bahsediyorsak izomorfizmde çaytların pozisyonları da aynı olmalıdır
+
+653
+01:47:39,007 --> 01:47:41,827
+Şimdi bakalım
+
+654
+01:47:41,827 --> 01:47:44,947
+4 tane ağaç verilmiş
+
+655
+01:47:44,947 --> 01:47:50,887
+Bu ağaçlarında en tepedeki düğümlerinin root olduğunu kabul edelim diyor
+
+656
+01:47:50,887 --> 01:47:54,507
+Bu ağaçlarda izomorfizm var mıdır?
+
+657
+01:47:55,127 --> 01:47:57,167
+Şimdi bakalım Binary Tree dememiş
+
+658
+01:47:57,167 --> 01:47:58,767
+Köklü ağaç demiş
+
+659
+01:47:58,767 --> 01:48:13,007
+bunda 4 düğüm var, bunda 4 düğüm, bunda 4 düğüm, bunda 4 düğüm var, bunda 3 kenar var, bunda 3 kenar var, bunda 3 kenar var, bunda 3 kenar var
+
+660
+01:48:13,427 --> 01:48:34,787
+ondan sonra peki düğüm derecelerine bakalım. Derecesi 1, 1, 1 ve 3. Derecesi 1, 1, 1 ve 3. Derecesi 1, 2, 1 ve 2. Derecesi 1, 2, 2 ve 1.
+
+661
+01:48:34,787 --> 01:48:47,127
+Derecelere baktığımda ben sadece şu ağaçla şu ağacın izomorfik bu iki ağacın da kendi aralarında izomorfik olduğunu söylüyorum.
+
+662
+01:48:48,967 --> 01:48:58,147
+Ben sadece düğüm derecelerine baksaydım yanılırdım. Sadece kenarlara bakmış olsaydım yanılırdım. Düğüm derecelerine de bakıyoruz.
+
+663
+01:48:58,147 --> 01:49:23,347
+Bu ise son slide'mız eğer binary tree'den bahsediyorsak bir binary tree'de kaç tane izomorfik olmayan ağaç yazılır diyor. Örnek burada vermiş. Mesela en bildiğimiz klasik binary tree gösterelimi 3 düğümlüyle şu ortadakini gösteririz biz.
+
+664
+01:49:23,347 --> 01:49:33,267
+Bu da üç düğüm iki kenarlı bir başka binary tree, bu bir başka binary tree, bu bir başka binary tree, bu da bir başka binary tree
+
+665
+01:49:33,267 --> 01:49:42,087
+Bunlar izomorfik değil çünkü binary trilerde çaytların pozisyonlarının aynı olması gerekir dedik
+
+666
+01:49:42,087 --> 01:49:45,027
+Peki kaç tane farklı yazabiliriz?
+
+667
+01:49:45,027 --> 01:49:56,947
+İşte kaç tane düğüm var? 3 tane düğüm varsa kombinasyon 6,3 bölü 3, bir daha 4
+
+668
+01:49:56,947 --> 01:50:09,087
+Burası ne oldu? 6! çarpı 6-3, 3! bölü 3! 4
+
+669
+01:50:09,087 --> 01:50:12,907
+şunlar gitti, şurası 6 ve 5
+
+670
+01:50:18,547 --> 01:50:20,547
+neyi hatalı yaptım?
+
+671
+01:50:24,148 --> 01:50:48,988
+burası hatalı tabi bu böyle yazılmaz ki başım şu an o kadar ağrıyor ki 6! bölü 6-3 4! çarpı n'i koyduk 3! bölü 4! dedik şunu 6 5 4! diye açalım 4!
+
+672
+01:50:48,988 --> 01:51:18,287
+Faktöriyeller birbirini götürdü. 3! 6'dır. 6 ile birbirini götürdü. Ben halen yapamıyorum bu işi. Biri bana yardım etsin. Nerede ben hata yapıyorum? Allah Allah. En yerine 3 koydum. 3 x 2 6. 6, 3'ün kombinasyonu. Ölü 3 artı 1 4. 3'ün kombinasyonu nedir? 6!
+
+673
+01:51:18,287 --> 01:51:48,267
+bölü m-n, 6-3, 3! bölü, hep buraya 4 yazıyorum, 3! bir de ne var? 4 var, tamam, şunu 6, 5, 4, 3! diye açayım, bu 3! ile bu 3! gitti, burası 6'dır gitti, 4'ler gitti ve 5 kaldı.
+
+674
+01:51:48,287 --> 01:51:51,408
+5 tane de ağaç yazabilirim.
+
+675
+01:51:51,787 --> 01:51:53,287
+Kimse de beni uyarmıyor.
+
+676
+01:51:53,387 --> 01:51:56,567
+Hocam 6'dan 3'ü çıkarıp nasıl 4 yazdınız diye.
+
+677
+01:51:57,347 --> 01:51:58,588
+Hayret bir şeysiniz.
+
+678
+01:51:59,927 --> 01:52:00,167
+Evet.
+
+679
+01:52:01,008 --> 01:52:03,567
+Şimdi tirelerimiz bitti.
+
+680
+01:52:06,067 --> 01:52:07,368
+Kapatalım bunu.
+
+681
+01:52:13,332 --> 01:52:15,332
+graflara geçiyoruz.
+
+682
+01:52:15,332 --> 01:52:17,332
+aa pardon
+
+683
+01:52:17,332 --> 01:52:20,332
+ekranı görüyor musunuz?
+
+684
+01:52:20,332 --> 01:52:22,332
+gözüküyor hocam
+
+685
+01:52:22,332 --> 01:52:24,332
+tamam
+
+686
+01:52:24,332 --> 01:52:26,332
+şimdi
+
+687
+01:52:26,332 --> 01:52:33,332
+graf teorisi de aslında trilerden sonra biraz size hafif gelecek
+
+688
+01:52:33,332 --> 01:52:36,332
+çünkü trilerde çok çok fazla şey var
+
+689
+01:52:36,332 --> 01:52:41,332
+çünkü trilerde aslında bir nevi graf
+
+690
+01:52:41,332 --> 01:53:11,311
+ama graflar tri değil bunu biliyoruz birçok şeyin benzeri olarak göreceğiz peki grafın tek farkı kapalı döngü oluşturabilmesi ama trilerde yani ağaçlarda bir graf illa graflar kapalı döngü oluşturmaz ama oluşturabilirdi bir doçantlık sınavında bu çok ünlüdür işte doçant olacak olan adaya jüriler soruyor bize graflar
+
+691
+01:53:11,332 --> 01:53:22,772
+grafı tarif et. Hoca anlatıyor, anlatıyor, anlatıyor, yok diyorlar, olmadı. Ne biliyorsa adam dökmüş böyle ve kişilerin beklediği tek şey şuymuş.
+
+692
+01:53:22,772 --> 01:53:35,151
+Ay kalemi açalım. Kişilerin dediğim, hocaların beklediği tek şey şuymuş. Graf, düğün ve kenarlardan oluşan bir topluluktur.
+
+693
+01:53:35,151 --> 01:53:41,952
+V dediğimiz şey vertis yani bu vertex diye de geçer.
+
+694
+01:53:42,092 --> 01:53:47,651
+Vertis, E dediğimiz şey de edge, kenar.
+
+695
+01:53:48,832 --> 01:53:56,272
+Bir grafın düğümlerini yazmak istiyorsak vertis eşittir süslü parantez içerisine bütün düğümleri yazıyorsun.
+
+696
+01:53:57,232 --> 01:54:02,651
+Kenarları yazmak istiyorsan süslü parantez içerisinde ikili çiftleri yazıyorsun.
+
+697
+01:54:02,651 --> 01:54:19,211
+ne demek ikili çiftler? Hangi kenarlar var? V, W, W, Y, Y, Z, U, Z, U, Y, S, U, S, Y, S, V, S, W, S, X, X, V, X, V, X, V, X, V. Bunları yazıyorsunuz.
+
+698
+01:54:19,211 --> 01:54:24,751
+Graf budur. Ve bazı durumlarda kapalı döngüler oluşturabilir.
+
+699
+01:54:24,751 --> 01:54:48,212
+Ağaçlardan farkı neydi? Ağaçlarda bir düğümden diğer düğüme gitmek için sadece bir tane yol varken grafta ben V'den W'ye gitmek isteyeyim, buradan gidebilirim veya böyle bir yol çizelim veya şöyle bir yol çizip gidebilirim veya ne bileyim şöyle her türlü pisliği yapabilirsiniz.
+
+700
+01:54:48,211 --> 01:54:55,071
+birden fazla, hele döngülü bir yapı varsa çok fazla alternatifiniz var demektir.
+
+701
+01:54:56,511 --> 01:54:59,971
+Şimdi grafların çok terminolojisi geniş.
+
+702
+01:55:01,031 --> 01:55:06,471
+Eğer bir graf sadece tek bir düğümden oluşuyorsa bu da bir graftır.
+
+703
+01:55:06,471 --> 01:55:09,551
+Bu noktasal graf olarak geçer.
+
+704
+01:55:10,131 --> 01:55:15,971
+Bunu aynı zamanda da düğüm olarak adlandırılırken de isolated vertex diyoruz.
+
+705
+01:55:15,971 --> 01:55:21,932
+yani izole edilmiş, kimseyle hiçbir bağlantısı olmayan bir düğüm.
+
+706
+01:55:23,231 --> 01:55:28,072
+Graflardaki kenarların özel halleri var, özel isimleri var.
+
+707
+01:55:28,272 --> 01:55:30,671
+Mesela paralel kenarlı graflar var.
+
+708
+01:55:30,932 --> 01:55:32,932
+Ne demek paralel kenarlı graflar?
+
+709
+01:55:33,572 --> 01:55:40,111
+Bir düğümden bir düğüme giden birden fazla yol varsa bunlar paralel kenardır.
+
+710
+01:55:40,111 --> 01:55:45,591
+Mesela A ve B paralel kenarlı bir düğüm çiftidir.
+
+711
+01:55:45,971 --> 01:56:08,272
+Bu graflarda illa yön olması gerekmiyor. Yön de olabilir, yönsüz de olabilir. Yani ben A'dan B'ye giden iki tane kenarım da olabilir. Mesafeleri farklıdır. Biri A'dan B'ye giderken biri B'den A'ya gidebilir. Ya da bunlarda hiç yön olmayabilir. Bana yön verilmediği müddetçe bu.
+
+712
+01:56:09,619 --> 01:56:11,279
+Graflar yonsuzdur.
+
+713
+01:56:11,399 --> 01:56:14,979
+Yönlü graf deniyorsa mutlaka yönün belirtilmesi gerekir.
+
+714
+01:56:15,479 --> 01:56:16,959
+Neyse konuyu dağıtmayalım.
+
+715
+01:56:17,399 --> 01:56:22,960
+Eğer bir graf noktadan oluşuyorsa bu noktasal graf isolated vertex diyoruz.
+
+716
+01:56:22,960 --> 01:56:30,960
+Eğer iki düğüm çifti arasında birden fazla yol varsa buna paralel kenar diyoruz.
+
+717
+01:56:31,479 --> 01:56:34,880
+Eğer bir düğümden çıkıp o düğüme giren
+
+718
+01:56:34,880 --> 01:56:38,300
+Allah'ım nerede bu kalem yine gitti.
+
+719
+01:56:39,619 --> 01:56:46,200
+Bir düğümden çıkıp o düğme giren bir kenar varsa biz buna döngü diyoruz.
+
+720
+01:56:46,759 --> 01:56:47,800
+Yani loop.
+
+721
+01:56:49,880 --> 01:57:02,179
+Bir graf eğer yönsüzse bir graf paralel kenar içermiyorsa, bir graf döngü içermiyorsa buna basit graf denir.
+
+722
+01:57:02,179 --> 01:57:09,480
+Bakın yön yok, paralel kenar yok ve döngü yok.
+
+723
+01:57:09,619 --> 01:57:12,279
+Yani kapalı çevrimden bahsetmiyorum.
+
+724
+01:57:12,460 --> 01:57:18,819
+Döngü bu düğümden çıkıp aynı düğme başka hiçbir düğme uğramadan gitmektir.
+
+725
+01:57:19,099 --> 01:57:20,399
+Bu bir basit graftır.
+
+726
+01:57:21,599 --> 01:57:28,800
+Eğer basit grafların yeterli olmadığı durumlarda kullanılan diğer graflara da multigraf denir.
+
+727
+01:57:29,560 --> 01:57:37,219
+Eğer yönsüzse paralel kenarı olan ve döngü içermeyen graflara da multigraf diyoruz.
+
+728
+01:57:37,219 --> 01:57:38,439
+Bu bir multigraf.
+
+729
+01:57:38,439 --> 01:57:53,060
+Yön yok. Döngü içermiyor. Bir düğümden çıkıp başka hiçbir düğüme dolaşmadan kendisine gidiyorsa döngüydü. Döngü yok. Fakat paralel kenar var. Öyleyse bu multigraftır.
+
+730
+01:57:53,059 --> 01:58:06,139
+Peki şöyle bir notumuz var. Basit graflar bir multigraftır fakat multigraflar basit graf değildir.
+
+731
+01:58:06,139 --> 01:58:17,840
+Yani basit graflarda hiçbir zaman paralel kenar olmaz ama bir graf için multigraf denmişse üzerinde paralel kenar olabilir de olmayabilir de.
+
+732
+01:58:17,840 --> 01:58:27,119
+Pesodograflar, sözde graflar bunlar da çoklu grafların yeterli olmadığı durumlarda kullanılıyor.
+
+733
+01:58:27,519 --> 01:58:28,500
+Yine yönsüz.
+
+734
+01:58:29,160 --> 01:58:30,420
+Paralel kenarı var.
+
+735
+01:58:31,019 --> 01:58:35,039
+Multigrafın üstüne bir de döngü ekliyorlar.
+
+736
+01:58:35,539 --> 01:58:37,019
+Sadece yön yok.
+
+737
+01:58:38,220 --> 01:58:43,840
+Yön yok, paralel kenar yok, döngü yoksa basit graf.
+
+738
+01:58:43,840 --> 01:59:03,000
+Paralel kenar ekliyorsam, paralel kenar ve döngü yoksa bu paralel kenar.
+
+739
+01:59:03,280 --> 01:59:07,879
+Buna bir de döngü ekliyorsam bunlar da pseudograf oluyor.
+
+740
+01:59:08,299 --> 01:59:10,700
+Yönsüz graflarında en temel hali bu.
+
+741
+01:59:11,660 --> 01:59:15,060
+Demek ki bir de yön yön yön diyoruz.
+
+742
+01:59:15,319 --> 01:59:16,480
+Bunlar hep yönsüzdü.
+
+743
+01:59:16,599 --> 01:59:18,200
+Bir de yönlü graflar var.
+
+744
+01:59:19,459 --> 01:59:23,140
+Yönlü graflara girmeden evvel ağırlıklı graflar da varmış.
+
+745
+01:59:23,140 --> 01:59:29,319
+Eğer kenarların üzerinde bir ağırlık değeri verilmişse, sayısal bir takım değerler varsa,
+
+746
+01:59:29,500 --> 01:59:34,019
+nasıl prim algoritmasında kullanmıştık, kenarlara bir takım ağırlıklar vermiştik,
+
+747
+01:59:34,480 --> 01:59:36,819
+bunlar da ağırlıklı graflar adını alıyor.
+
+748
+01:59:37,160 --> 01:59:38,440
+Bu da ağırlıklı graf.
+
+749
+01:59:38,439 --> 01:59:45,939
+Yönlü graflar ise directed graf olarak geçer ya da digraf olarak belirlenir.
+
+750
+01:59:46,579 --> 01:59:55,859
+Digraf ya da yönlü graflarda her bir kenar sıralı bir düğüm çifti ile ilişkilendirilmiş ve her kenarı da yönlüdür.
+
+751
+01:59:55,859 --> 02:00:00,739
+Artık hangi düğümden hangi düğüme gidilebileceği belli.
+
+752
+02:00:00,739 --> 02:00:02,659
+Mesela B'den C'ye
+
+753
+02:00:03,220 --> 02:00:12,579
+giden bir yol var mı? Ben B'den C'ye direkt gidemiyorum. B'den C'ye gitmek için B'den D'ye, D'den C'ye gitmem gerekiyor.
+
+754
+02:00:12,759 --> 02:00:23,919
+yönlü graflarda aynı özellikle Anadolu yakasında çok fazla şeyler vardır. Tek yönlü yollar vardır. Ana caddeye çıkabilmek için.
+
+755
+02:00:23,919 --> 02:00:28,519
+onlar tamamıyla yönlü graf olarak dizayn edilmiş olanlar.
+
+756
+02:00:28,739 --> 02:00:31,399
+Bazen iki yönlü ok vardır.
+
+757
+02:00:31,599 --> 02:00:35,239
+Bunun anlamı da buradan hem gidiş var hem geliş var.
+
+758
+02:00:35,659 --> 02:00:39,239
+Bunu ister öyle yaparsın yani ister bunu böyle yaparsın.
+
+759
+02:00:39,639 --> 02:00:43,720
+İstersen buna paralel kenar ekler bu şekilde de gösterebilirsin.
+
+760
+02:00:43,919 --> 02:00:46,319
+O zaman buradan da bunu silmiş olursun.
+
+761
+02:00:46,319 --> 02:00:54,859
+hepsini özetleyeceksek basit grafımız çoklu graf, pesodograf, yönlü graf ve yönlü çoklu graf var.
+
+762
+02:00:55,319 --> 02:00:59,879
+Şimdi bunlar zaten yönlü olmayanların hiçbirinde yön yok.
+
+763
+02:01:00,419 --> 02:01:02,559
+Yönlü olanlarda zaten yön var.
+
+764
+02:01:03,299 --> 02:01:06,359
+Basit grafta çoklu kenara izin yok.
+
+765
+02:01:07,019 --> 02:01:09,639
+Çoklu grafta çoklu kenara izin var.
+
+766
+02:01:10,179 --> 02:01:14,639
+Pesodograf zaten onun bir üst versiyonu olduğu için izin var.
+
+767
+02:01:14,639 --> 02:01:20,220
+Döngüye basitte çoklu da yok sadece pösetografda döngüye izin var
+
+768
+02:01:20,220 --> 02:01:36,279
+Yönlü graflarda çoklu kenara izin yok çünkü yönler yani şöyle söyleyeyim çoklu kenara izin vermek istiyorsan bu yönlü çoklu graf adını alıyor
+
+769
+02:01:36,279 --> 02:01:39,639
+her ikisinde de döngüye izin var.
+
+770
+02:01:40,639 --> 02:01:50,859
+Şimdi graflardaki benzerlik diyeceğim ama bu benzerlik izomorfizm olan benzerlik değil, similarity olan benzerlik.
+
+771
+02:01:52,919 --> 02:01:56,199
+Bunu bir örnekle size anlatmak istiyorum.
+
+772
+02:01:57,039 --> 02:02:05,239
+Problemimiz şu, nesneleri değişik özelliklere referans alınarak nesneleri sınıflandırmak istiyoruz.
+
+773
+02:02:05,239 --> 02:02:16,959
+Örnek verelim, elimizde bir sürü kod olsun, program kodu ve ben bu program kodunu belirlediğim bazı özelliklere göre sınıflanırmak istiyorum
+
+774
+02:02:16,959 --> 02:02:24,679
+Şu şu şu özellikler varsa kodun içerisinde onlar bir sınıf, şu şu şu özellikler varsa da bir sınıf olsun istiyorum
+
+775
+02:02:24,679 --> 02:02:30,539
+Nedir bu özelliklerimiz? Bu özelliklerimizde 3 tane özelliğim olsun
+
+776
+02:02:30,539 --> 02:02:42,119
+programdaki satır sayısı bu line of code diye geçer, L-O-C, kullanılan return sayısı ve çağrılan fonksiyon sayısı.
+
+777
+02:02:42,119 --> 02:02:51,539
+Her bir kod parçasından bu üç tane özelliğin sayısal değerlerini alacağım. Daha sonra bu grafların benzerliğini ölçeceğim.
+
+778
+02:02:51,539 --> 02:02:56,479
+5 tane program parçası vermişler bize
+
+779
+02:02:56,479 --> 02:03:03,659
+number of line sayısı, koddaki satır sayısı bunlar
+
+780
+02:03:03,659 --> 02:03:09,559
+kullanılan return'lerin sayısı ve çağrılan fonksiyonların sayıları da bunlar
+
+781
+02:03:09,559 --> 02:03:20,119
+şu özelliklere göre acaba bu program kodlarını hangisi hangisine daha çok benzer bunu bulmaya çalışacağız
+
+782
+02:03:20,119 --> 02:03:44,179
+Şimdi graflardaki benzerlik başlıyorum konuyu anlatmaya. İşte benim grafım 5 tane düğümden verilmiş. Neden? 5 tane program vardı. Her bir programı bir düğüm olarak kabul ediyorum. Programlar arasında benzerlikler varsa bu düğümleri birbirlerine bir kenarla bağlayacağım.
+
+783
+02:03:44,179 --> 02:03:54,539
+Her düğümde üç tane özellik olduğu için bir tübülle, yani bir üçlü setle gerçekleştiriyorum.
+
+784
+02:03:54,539 --> 02:03:56,739
+Birinci şeyim
+
+785
+02:03:57,844 --> 02:04:26,323
+düğümün birinci program kümesi elemanları 66-21. İkinci düğüm, ikinci program elemanlarım yani özelliklerim 41-10 ve 2. Bunlar bunlardan çıkarılmış değerler. Bunlar düğümlerim. Şimdi ben öyle bir similarit kullanacağım ki bu düğümlerin birbirlerine benzerliklerini bulacağım. Bu benzerliklere göre yakın olan düğümleri birbiriyle birleştireceğim.
+
+786
+02:04:26,323 --> 02:04:34,684
+o zaman diyeceğim ki bu iki düğüm arasını kenarla birleştiriyorsam bu iki düğüm program parçası aynı küme içerisinde olabilir.
+
+787
+02:04:35,544 --> 02:04:40,864
+Peki bu benzerlik denilen, similarity denilen şeyi nasıl ölçümleyeceğim?
+
+788
+02:04:41,364 --> 02:04:51,043
+Burada da çok farklı similarity metrikleri var.
+
+789
+02:04:51,403 --> 02:04:54,363
+Her kitapta, her kanalda farklı görebilirsiniz.
+
+790
+02:04:54,364 --> 02:05:02,763
+Bunlardan bir tanesini seçtik. Bunlardan bir tanesi de similarity değil dissimilarity'yi ölçümledik.
+
+791
+02:05:02,763 --> 02:05:14,464
+Benzer olmayan bir fonksiyonu bulacağım. Hani bir şey diyorduk ya bir şeyin benzerliğini, izomorfizmini bulmak, izomorfizm olmadığını ispatlamaktan daha zordur.
+
+792
+02:05:14,844 --> 02:05:20,604
+Burada da dissimilarity'den yararlanıyorum. Dissimilarity'yi ölçen formül de bu.
+
+793
+02:05:20,603 --> 02:05:26,643
+buradaki V bir kod, W da bir başka kod.
+
+794
+02:05:26,643 --> 02:05:30,423
+Bu iki kodun birbirine olan dissimilaritesini ölçüyorum.
+
+795
+02:05:30,943 --> 02:05:39,143
+Ölçerken de diyor ki bu her iki düğümün karşılıklı olan elemanlarının mutlak değerce farklarını al, topla diyor.
+
+796
+02:05:39,963 --> 02:05:47,343
+Her birinde üç tane özellik olduğu için birden üçe kadar her bir düğümün karşılıklı eleman değerleri,
+
+797
+02:05:47,344 --> 02:05:56,803
+bunu P bunu Q ile gösterdiğim için PK'dan QK'ların farklarının mutlak değerce toplamı bana dissimilarity veriyor.
+
+798
+02:05:57,924 --> 02:06:01,623
+Fakat bir de threshold değerine ihtiyacım var.
+
+799
+02:06:02,244 --> 02:06:13,344
+Neyin altında neyin üstünde olanlar diye eğer diyor hesapladığım dissimilarity değeri belirlediğin şu N değerinden küçükse diyor
+
+800
+02:06:13,344 --> 02:06:30,483
+Sen diyor bu V ile W düğüm arasına bir kenar ekleyebilirsin. Bunlar birbirine bağlanabilir. Eğer büyükse bunlar disimulatidir. Birbirlerine benzemiyordur. Bunları birbirlerine bağlamayacaksın diyor.
+
+801
+02:06:30,483 --> 02:06:33,543
+Öyleyse ben de gidip ölçüyorum
+
+802
+02:06:33,543 --> 02:06:37,504
+Tabii bunları nasıl ölçtük
+
+803
+02:06:37,504 --> 02:06:45,163
+Şimdi sayısal değerleri nasıl ben aklımda tutacağım tutamayacağım büyük bir ihtimalle
+
+804
+02:06:45,163 --> 02:06:47,644
+Şuraya bir alıyorum kendi kağıdıma
+
+805
+02:06:47,644 --> 02:06:51,784
+66, 21, 41, 12
+
+806
+02:06:51,784 --> 02:06:56,823
+Bunları tatlı da anlatırken tabii kolay tatlının sol tarafında ya da sağında kalıyor
+
+807
+02:06:56,823 --> 02:07:01,424
+34, 5, 75, 12, 14
+
+808
+02:07:01,424 --> 02:07:08,284
+Şimdi kalem kalem
+
+809
+02:07:08,284 --> 02:07:09,883
+Kalemim nerede?
+
+810
+02:07:13,883 --> 02:07:15,784
+Kalem gelmedi
+
+811
+02:07:15,784 --> 02:07:18,483
+60
+
+812
+02:07:18,483 --> 02:07:21,163
+20
+
+813
+02:07:21,163 --> 02:07:22,643
+1
+
+814
+02:07:22,643 --> 02:07:24,763
+41
+
+815
+02:07:24,763 --> 02:07:46,603
+1, 10 ve 2, 68, 5, 8, 90, bu 90 olacak, 90, 34 ve 5, 75, 12 ve 14
+
+816
+02:07:47,072 --> 02:08:15,752
+benim 5 tane düğümüm vardı v1 v2 v3 v4 v5 ben ne yapacağım bunu da bir matriz gibi düşünün v2 v3 v4 v5 bunun burası da v1 v2 v3 v4 v5 diyagonal zaten 0 olur birbirlerine bunlar aynıdır benzerdir disminarity arıyoruz
+
+817
+02:08:15,752 --> 02:08:21,292
+Bu V1, V2'ye ne kadar benziyorsa V2 de V1'e o kadar benzeyecektir.
+
+818
+02:08:21,671 --> 02:08:24,832
+Öyleyse bu da nedir? Birbirinin simetriyidir.
+
+819
+02:08:25,252 --> 02:08:27,391
+Ben neleri hesaplamam gerekiyor benim?
+
+820
+02:08:27,792 --> 02:08:29,691
+V1, V2'yi hesaplayacağım.
+
+821
+02:08:30,171 --> 02:08:44,131
+V1, V3, V1, V4, V1, V5'i, V2, V3'ü, V2, V4, V5'i, V3, V4, V3, V5'i hesaplayacağım.
+
+822
+02:08:44,131 --> 02:08:46,691
+işte bunlar da hesaplanmış değerleri.
+
+823
+02:08:47,211 --> 02:08:49,411
+Şimdi V1 ve V2'yi hesaplayalım.
+
+824
+02:08:49,411 --> 02:08:54,031
+Neydi? Şu benim V1'im, şu da V2'mdi.
+
+825
+02:08:54,511 --> 02:09:01,072
+Karşılıklı elemanların mutlak değerce farklarının toplamıydı.
+
+826
+02:09:01,611 --> 02:09:04,631
+60-41 ne eder?
+
+827
+02:09:05,611 --> 02:09:06,211
+19.
+
+828
+02:09:08,371 --> 02:09:09,991
+Hocam bu nasıl? 66 normalde.
+
+829
+02:09:10,371 --> 02:09:11,211
+66 mı?
+
+830
+02:09:11,851 --> 02:09:12,811
+Evet.
+
+831
+02:09:12,811 --> 02:09:35,072
+teşekkür ederim. 66, 41 daha ne etti? 25. 20-10 ne etti? 10. 1-2-1 mutlak değerci 1. Etti 36. İşte bu 36'yı buraya yazdım. Bunların aynısını yapıyorum.
+
+832
+02:09:35,072 --> 02:10:04,172
+mesela bu neydi? V4 ile V5'i yapın. 90, 75 daha 15. Bu ne bu? 34. 34 daha 12. 22. 22 geldi. 5 artı 5 eksi 4. Bu da 9 oldu. Burası ne oldu? 15. 20 olsa 35. 35, 37. 47, 46 olacak.
+
+833
+02:10:04,171 --> 02:10:32,891
+İşte burası da 46. Şimdi benim bir threshold değeri belirlemem gerekiyor. Eni 25 almışım. Bu 25'i tabii ben pat diye almıyorum. Ben gerçekten böyle bir alanda çalışıyorsam bir takım denemeler yapıp en iyi, en değerini benim belirlemem lazım. Ondan sonra diyeceğim ki bu tip alanda çalışanlar en değerini bu alsın. Bunu alsınlar ve kullansınlar.
+
+834
+02:10:32,891 --> 02:10:53,611
+Şimdi n 25 ise bakıyorum benim şartım neydi arkadaşlar burada? Şuradaki değerin n'den küçük olanlarını bulacağım. 25'ten küçük olan ne var? Şu var. 25'ten küçük olan ne var? Şu var. Yani v3 ile v5, v1 ile v3.
+
+835
+02:10:53,611 --> 02:10:58,291
+V3 ile V5, V1 ile V3
+
+836
+02:10:58,291 --> 02:11:03,851
+O zaman ben diyorum ki bu şekilde çizdiğimde 3 tane sınıf var.
+
+837
+02:11:03,851 --> 02:11:08,931
+V1, V3, V5 birbirine benzeyen 3 kod.
+
+838
+02:11:09,311 --> 02:11:13,911
+V2 tamamıyla farklı, diğer 5'ine hiç benzemiyor 4'üne.
+
+839
+02:11:14,551 --> 02:11:19,631
+V4 de farklı, diğer 4'üne hiç benzemiyor diyoruz.
+
+840
+02:11:19,631 --> 02:11:23,652
+ve bu da similarity graph diye karşıma çıkıyor.
+
+841
+02:11:24,152 --> 02:11:30,631
+Buradaki similarity graph oturup bana verilebilir, bu bir similarity graftır denebilir.
+
+842
+02:11:31,391 --> 02:11:32,691
+O zaman ben şunu anlarım.
+
+843
+02:11:32,991 --> 02:11:37,932
+V1, V3, V5 sahip olduğu özellikler olarak birbirine benziyor.
+
+844
+02:11:38,072 --> 02:11:40,031
+V2 ve V4 benzemiyor.
+
+845
+02:11:40,211 --> 02:11:44,971
+Onlar ayrı bir sınıf olarak kabul edebilirim.
+
+846
+02:11:46,547 --> 02:11:56,367
+Şimdi gelelim graflerimizi biraz daha kompleks hale getirelim.
+
+847
+02:11:56,367 --> 02:12:03,827
+Burada göreceğimiz şeyleri haftaya kromatik polinomları anlatırken karşımıza çıkacak.
+
+848
+02:12:05,187 --> 02:12:11,007
+Bir grafın kompleit olması, tam olması ne demek?
+
+849
+02:12:11,007 --> 02:12:18,847
+Bir grafın komplit olması o grafın K grafı olarak adlandırılması demektir.
+
+850
+02:12:19,667 --> 02:12:24,467
+Bir graf tam graf ise bunun adı K graftır.
+
+851
+02:12:25,207 --> 02:12:28,687
+Buradaki n düğüm derecesini gösterir.
+
+852
+02:12:29,127 --> 02:12:30,707
+Mesela bu kaç düğümlü?
+
+853
+02:12:31,147 --> 02:12:32,347
+2, 4, 5.
+
+854
+02:12:32,787 --> 02:12:35,167
+Bu bir K5 grafıdır.
+
+855
+02:12:35,167 --> 02:12:41,467
+Ve en değeri 3'e eşit ve 3'den büyük olması gerekir.
+
+856
+02:12:41,847 --> 02:12:43,867
+2, bir k grafı olamaz.
+
+857
+02:12:44,047 --> 02:12:45,167
+2 düğümlü bir graf.
+
+858
+02:12:45,307 --> 02:12:47,667
+1 düğümlü bir graf, k grafı olamaz.
+
+859
+02:12:47,847 --> 02:12:50,247
+Peki, kompleyt olması ne demek?
+
+860
+02:12:51,268 --> 02:12:59,567
+Graf üzerindeki her düğüm kendisinin dışındaki bütün düğümlerle bağlantısının olması gerekir.
+
+861
+02:12:59,567 --> 02:13:04,908
+Bakın, A'nın diğer bütün düğümlerle bağlantısı var.
+
+862
+02:13:05,167 --> 02:13:09,627
+B'nin diğer bütün düğümlerle bağlantısı var.
+
+863
+02:13:10,007 --> 02:13:14,247
+C'nin diğer bütün düğümlerle bağlantısı var.
+
+864
+02:13:14,747 --> 02:13:17,607
+D'nin diğer bütün düğümlerle bağlantısı var.
+
+865
+02:13:18,047 --> 02:13:23,167
+Bir düğümün kendisi dışındaki bütün düğümlerle bağlantısı varsa,
+
+866
+02:13:23,687 --> 02:13:31,307
+ben buna K grafı diyorum ve altındaki M'de düğüm sayısını gösteriyor.
+
+867
+02:13:31,907 --> 02:13:34,107
+N 3'e eşit ve 3'den büyük.
+
+868
+02:13:34,107 --> 02:13:36,287
+K3'ü çiz diyorlar bana.
+
+869
+02:13:36,768 --> 02:13:38,187
+3 tane düğümüm var.
+
+870
+02:13:40,347 --> 02:13:42,967
+Her düğüm kendisi dışındakilerine bağlı.
+
+871
+02:13:44,268 --> 02:13:46,487
+Bu da buna buna buna bağlanacak.
+
+872
+02:13:46,667 --> 02:13:47,787
+Bu da ikisine bağlı.
+
+873
+02:13:47,947 --> 02:13:50,227
+İşte bu bir K3 grafıdır.
+
+874
+02:13:51,467 --> 02:13:52,527
+K4 grafı.
+
+875
+02:13:52,647 --> 02:13:53,667
+4 tane düğüm.
+
+876
+02:13:55,628 --> 02:13:56,287
+Complete.
+
+877
+02:13:56,848 --> 02:13:59,567
+Buna, buna ve buna bağlı.
+
+878
+02:14:00,408 --> 02:14:01,227
+Buna alacağım.
+
+879
+02:14:04,107 --> 02:14:05,867
+Bu zaten bağlı.
+
+880
+02:14:06,527 --> 02:14:07,467
+Eksik olarak
+
+881
+02:14:07,467 --> 02:14:11,848
+kırmızım eksik.
+
+882
+02:14:15,539 --> 02:14:16,539
+tamam bu ve buna bağlı buna bağlı başka hangi düğüm kaldı şuna bakalım buna bağlı buna bağlı buna bağlı bu düğme bakalım bağlanması gereken her yere bağlanmış işte bu da k4 grafı k6 grafı 4 tane 5 tane 6 tane düğüm var bunun hepsine bağladın diğerini aldın
+
+883
+02:14:45,539 --> 02:15:00,479
+olanlara bağladın, buna geldin, buna bağladın, buna bağladın ve buna bağladın, buna geldin, buna bağladın, buna bağladın.
+
+884
+02:15:00,479 --> 02:15:07,720
+Olayın rengi gittikçe değişiyor, çok karışıyor, buna bağladın. Hepsi birbirine bağlı. Complete graph bu demek.
+
+885
+02:15:07,720 --> 02:15:32,099
+CYCLE GRAF, ÇEMBER GRAF, C ile gösteriliyor. Yine altındaki indiz bu graftaki düğüm sayısını bana veriyor. Bu bir C3 GRAF'ı. C3 GRAF'ı yine en 3'ten büyük ve eşit olacak. CYCLE GRAF'ında ise en tane düğüm varsa düğüm çiftlerim şu. Bir döngü var bakın.
+
+886
+02:15:32,099 --> 02:15:43,599
+V1, V2 ile V2, V3 ile V3, V4 ile Vn-1, Vn ile Vn yine gidiyor, V1 ile birleşiyor.
+
+887
+02:15:43,599 --> 02:15:55,679
+Şimdi ben buraları 1, 2, 3 yapayım. Ne var? 1 ile 2 var, 2 ile 3 var ve 3 ile 1 var.
+
+888
+02:15:56,219 --> 02:16:01,799
+Bu buradan böyle bir kapalı döngü oluşturuyor. Bu da C3 grafı.
+
+889
+02:16:02,099 --> 02:16:18,939
+C4'ü çizmek çok kolay. 4 tane düğüm koy, böyle çevir, al sana bu C4. 5 tane düğüm koy, al sana çevir, bu bir C5 grafı. Aynı şekilde C6 grafı da var.
+
+890
+02:16:18,939 --> 02:16:43,699
+K grafı bir noktasal graf var hiçbir kenarı yok. Aslında bir de şöyle bir şey var burada göstermedik ama şöyle bir grafım da olabilir. Hep N3'den büyük ve eşit diyorum. N2 olursa ne olacak? Olabilir. Bu da çizgisel graftır. Yani kenar dediğim şey çizgisel graftır.
+
+891
+02:16:43,700 --> 02:16:50,459
+noktada bir graftır tek düğümü bu da noktasal graftır
+
+892
+02:16:50,459 --> 02:17:01,120
+genelde graft çizerken bir insan bir nokta koymuyor ya da graft çizerken bir tane kenar çizmediği için bunlar pek dikkate alınmıyor
+
+893
+02:17:01,120 --> 02:17:07,099
+en büyük diyor düğüm 3'ten büyük olursa ben bunları graft olarak adlandırabilirim diyor
+
+894
+02:17:07,099 --> 02:17:13,900
+K graf her düğüm kendisinin dışındakilerle komşu, C graf da işte böyle bir döngü oluyor.
+
+895
+02:17:15,019 --> 02:17:19,560
+Şimdi dırıdıt dıt, heel graf, tekerlek graf.
+
+896
+02:17:20,779 --> 02:17:25,459
+Bunu bu şekilde yazdım ama şöyle düşünün bu heelin h'si.
+
+897
+02:17:26,079 --> 02:17:28,260
+Bu yine en ama buradaki en önemli.
+
+898
+02:17:28,760 --> 02:17:30,559
+At arabalarını belki hatırlarsınız.
+
+899
+02:17:31,559 --> 02:17:34,540
+At arabalarının şöyle ortada bir tane şeyi olur.
+
+900
+02:17:34,540 --> 02:17:49,799
+şuralara tahtalar bağlıdır. Artık böyle atarabaları da yok. Otomobil lastiğini koyuyorlar. Buralarda işte bunlar kenetlenmiştir. Bunlar bir bağlantı noktalarıdır.
+
+901
+02:17:53,396 --> 02:18:20,455
+burası da ortada bir nokta. Bu aslında hil graf, tekerle graf. Gerçek dünyadaki at arabasının tekerleği aslında bir hil graf. Hil graf, dikkat edin, cycle grafına yani C grafına ek bir düğüm eklenerek oluşturulur. Şu bir cycle grafıydı. Ortaya ek bir düğüm ekliyorsun. Bu ek düğüm.
+
+902
+02:18:20,455 --> 02:18:24,475
+eklenen yeni düğüm diğer bütün düğümlere bağlanır.
+
+903
+02:18:24,475 --> 02:18:25,875
+İşte bağlandı.
+
+904
+02:18:26,555 --> 02:18:29,135
+Mesela şu C3 grafı nasıldı?
+
+905
+02:18:29,515 --> 02:18:30,475
+C3 grafı.
+
+906
+02:18:30,555 --> 02:18:31,855
+3 tane düğüm çizdim.
+
+907
+02:18:32,015 --> 02:18:33,936
+Bu bir C3 grafıydı.
+
+908
+02:18:35,236 --> 02:18:36,695
+Ortaya bir düğüm ekliyorum.
+
+909
+02:18:37,675 --> 02:18:42,335
+Eklediğim düğüm diğer düğümlere bağlanıyorsa bu bir hil grafıdır.
+
+910
+02:18:42,855 --> 02:18:45,695
+İlla bu düğümü ortaya eklemek zorunda değilim.
+
+911
+02:18:45,695 --> 02:18:52,736
+ben gider bu düğümü şöyle bir yere de ekleyebilirim.
+
+912
+02:18:53,135 --> 02:18:55,675
+Buradan gider bütün düğümlere bağlarım.
+
+913
+02:18:55,975 --> 02:18:57,275
+Bu da bir hil grafıdır.
+
+914
+02:18:58,076 --> 02:18:58,635
+Tamam mı?
+
+915
+02:18:59,076 --> 02:19:07,095
+Eğer bir grafın hil graf olduğu verilmişse düğüm sayısının bir eksiği ile adlandırılır.
+
+916
+02:19:08,135 --> 02:19:13,535
+1, 2, 3, 4 tane vardır düğüm ama burası n-1 yazılır.
+
+917
+02:19:13,535 --> 02:19:28,196
+size V3 grafı verilmişse bunun anlamı bu aslında bir C3 grafı ben C3 grafını çizeceğim ekstradan bir düğüm ekleyip onu diğer düğümlere bağlayacağım.
+
+918
+02:19:28,196 --> 02:19:35,155
+Ben benden W6 isteniyorsa ben o zaman bir C6 grafı çizeceğim.
+
+919
+02:19:35,436 --> 02:19:37,875
+İşte bu bir C6 grafı çizdim.
+
+920
+02:19:38,235 --> 02:19:40,775
+C6 güzel çizemedim ama çizdim.
+
+921
+02:19:40,775 --> 02:20:02,276
+Hil ise bu bir tane fazladan ekleyip diğer bütün düğümlere bağlayacağım demektir. Tamam mı? Hil grafı mevcut düğümün bir eksiği olarak adlandırılıyor. Bu verilmiş olanın da bir fazlasını düğüm olarak ekleyip diğer bütün düğümlere bağlıyorsunuz.
+
+922
+02:20:02,275 --> 02:20:23,155
+En son graf modelimiz küp graf. Küpe benzediği için küp graf. Buna Q grafı diyoruz. Buradaki en sayısı çok önemli. Bu da şu demektir bu en. Şu küp grafında kaç tane düğüm var?
+
+923
+02:20:23,155 --> 02:20:30,015
+1, 2, 3, 4, 5, 6, 7 ve 8
+
+924
+02:20:30,015 --> 02:20:34,375
+2 üzeri n eşittir 8
+
+925
+02:20:34,375 --> 02:20:37,815
+n ne olmalıdır? 3
+
+926
+02:20:37,815 --> 02:20:42,415
+Öyleyse bu graf Q3 grafıdır
+
+927
+02:20:42,415 --> 02:20:53,935
+bir Q grafı verildiyse bu N değeri 2'nin eninci kuvvetini alarak o kadar düğme sahip olduğunu bana gösteriyor.
+
+928
+02:20:53,935 --> 02:20:58,995
+Bu o zaman Q3 grafı.
+
+929
+02:20:59,635 --> 02:21:04,895
+Bu grafın buradaki koyu yazılmış şeyleri dikkate almayın.
+
+930
+02:21:05,455 --> 02:21:07,375
+Okları falan da dikkate almayın.
+
+931
+02:21:07,695 --> 02:21:09,315
+Daha onları anlatmadım.
+
+932
+02:21:09,315 --> 02:21:14,776
+ama karşımıza bir yerde çıkacak o zaman bu şekil aklımıza gelsin.
+
+933
+02:21:15,955 --> 02:21:31,396
+Burada grafın düğümlerini etiketlerken düğümleri öyle etiketli ki diyor bir düğümden diğer düğüme geçerken sadece bir bitim yeri değişsin.
+
+934
+02:21:31,396 --> 02:21:34,636
+mesela şuraya 0,0 vermişiz
+
+935
+02:21:34,636 --> 02:21:38,216
+0,0
+
+936
+02:21:38,216 --> 02:21:40,996
+bir tane bitin yeri değişti
+
+937
+02:21:40,996 --> 02:21:41,756
+1,1
+
+938
+02:21:41,756 --> 02:21:45,075
+yukarı çıktım bir tane bitin yeri değişti
+
+939
+02:21:45,075 --> 02:21:46,235
+şu değişti
+
+940
+02:21:46,235 --> 02:21:49,636
+buraya geldim bir tane bitin yeri değişti
+
+941
+02:21:50,079 --> 02:21:51,079
+sadece şunu birken sıfır yaptım. buraya gittim şu sıfırken soldaki bir oldu. buraya gittim sağdaki bir oldu. aşağıya geldim ortadaki değişti. buraya gittim şu sağdaki sıfır oldu ve başladığım noktaya geldim. şimdi bakın farklı yerlerden gidin buradan buraya geçiyorum bir bit değişmiş. buradan buraya gidiyorum bir bit. şundan şuna git bir bit. hangi köşeden hangi köşeye giderken
+
+942
+02:22:20,079 --> 02:22:38,940
+gidiyorsanız sadece bir bitin yeri değişiyor. Bunların da bir önemi ileride olacak. Şimdi Q1 grafını çiz diyor bana. Q1. Bu neydi? 2 üzeri 1. Yani iki düğümlü bir graf çizeceğim.
+
+943
+02:22:38,940 --> 02:22:55,020
+öyleyse benim şu çizgisel grafım bir Q1 grafı aynı zamanda. Q2 olsun diyor. 2 üzeri 2'den 4. 4 düğümlü bir graf çizeceğim.
+
+944
+02:22:58,772 --> 02:23:28,751
+işte bu Q2 grafı. bunu etiketlendirelim. burası 00 gray kodlama kullanacağım. bir tane bitin yeri değişti 01 bir tane bitin yeri değişti 11 bir tane birin yeri değişti 1 0 oldu. her bir göze bakarsanız aslında her geçişte bir tane bit değiştirdi. burada yapalım bu 0 burası 1 olacak. bir tane 1 değişti. şu n değeri neyse?
+
+945
+02:23:28,751 --> 02:23:37,231
+etiketlerimde o kadar bitlik olacak. Bu Q3 3 bitlik, Q2 2 bitlik, Q1 1 bitlik. Bunu da unutmayalım.
+
+946
+02:23:38,751 --> 02:23:57,672
+Noktasal graf, çizgisel graf, çizgisel graf aynı zamanda Q1 hali çizgisel grafta olabiliyormuş. Ne vardı? K graf, hil graf, saykıl graf ve küp grafımız var.
+
+947
+02:23:57,671 --> 02:23:58,731
+Peki
+
+948
+02:23:58,731 --> 02:24:06,711
+Yani Q3'den büyük graflarda olabilir mi? Elbette olabilir
+
+949
+02:24:06,711 --> 02:24:10,091
+Fakat biz bu dersin içinde bunları görmeyeceğiz
+
+950
+02:24:10,091 --> 02:24:12,291
+Bunlardan bir tanesi Hypercube
+
+951
+02:24:12,291 --> 02:24:13,992
+Yani Q4
+
+952
+02:24:13,992 --> 02:24:15,891
+Q4 ise ne oluyordu?
+
+953
+02:24:16,551 --> 02:24:20,051
+2 üzeri 4'ten 16 tane düğüm
+
+954
+02:24:20,051 --> 02:24:22,331
+İç içe 2 tane küp girmiş
+
+955
+02:24:22,331 --> 02:24:24,211
+İçteki 8 dıştaki 8
+
+956
+02:24:24,211 --> 02:24:27,531
+Bunlar da kendi aralarında şöyle bağlanmış
+
+957
+02:24:27,531 --> 02:24:31,531
+bunları da etiketlersem 4 bitti olarak etiketleyebilirim.
+
+958
+02:24:32,291 --> 02:24:38,831
+Ben bunu Q5, Q6 yapabilirim ama iş çok daha komplike ve karışık hale geliyor.
+
+959
+02:24:40,771 --> 02:24:44,391
+Şimdi gelelim iki parçalı graflara.
+
+960
+02:24:45,771 --> 02:24:48,691
+Oda üstünde grafı iki parçaya ayırıyorum.
+
+961
+02:24:49,111 --> 02:24:52,411
+Ama bir grafı iki parçaya ayırmak öyle keyfi değil.
+
+962
+02:24:52,871 --> 02:24:53,731
+Bir kuralım var.
+
+963
+02:24:54,651 --> 02:24:56,051
+Öncelikle şöyle diyelim.
+
+964
+02:24:56,051 --> 02:25:08,691
+senin diyor iki tane grafın var biri G1 grafı biri G2 grafı olsun bu iki grafın düğümlerinin birleşimi de senin G grafını oluşturuyor.
+
+965
+02:25:10,012 --> 02:25:18,212
+Bu G grafını oluşturan G1 grafının düğümleri M olsun G2 grafının da düğümleri N olsun.
+
+966
+02:25:18,212 --> 02:25:28,152
+Bu eğer diyor bir partiti grafsa diyor bu iki grafın düğümlerinin kesişiminin boş küme olması gerekiyor diyor
+
+967
+02:25:28,152 --> 02:25:37,772
+İşte şu iki grafın düğümlerinin kesişiminin boş küme olması bana bu grafın bir partiti olduğunu gösteriyor
+
+968
+02:25:37,772 --> 02:25:44,452
+Ne demek? Sadece şu yuvarlak çizilmiş dairelerin olmadığını düşünün
+
+969
+02:25:44,451 --> 02:26:08,191
+Sadece yine mouse gitti ya. Artık sabrını zorluyor insanın. Sadece şunları düşünün. 6 tane değil 5 tane düğüm var. Ondan sonra ve ben bunları şu düğümle şunu bağlamışım. İşte bununla bunu, bununla bunu ve bununla bunu bağlamışım. Sadece bu kısmı düşünün.
+
+970
+02:26:08,191 --> 02:26:24,272
+ve silim ki çok kötü oldu. Bunu düşünün. Bu bir graf. Eğer bu grafı öyle iki parçaya böleceksiniz ki diyor, öyle iki grafa böleceksiniz ki diyor, bu grafların düğümleri kesişmeyecek.
+
+971
+02:26:24,272 --> 02:26:40,012
+İşte bu da diyor ki ben şurayı bir graf olarak alırsam bölebilirsem bu düğümleri iki parçaya bu grafta bir partiti graftır diyor.
+
+972
+02:26:40,451 --> 02:26:47,012
+Burada ABC var, burada DE var. Birbiriyle çakışmayacak şekilde ben bunları bölebiliyorum.
+
+973
+02:26:47,011 --> 02:26:54,451
+Kısacası bu ayırımda izlenecek yol bir kenar ile
+
+974
+02:26:55,028 --> 02:27:03,587
+birbirine bağlanabilecek durumda olan düğümleri aynı küme içerisine yerleştirmemek.
+
+975
+02:27:03,587 --> 02:27:16,387
+Şimdi bakın bu kümede A, B, C var. A'nın B'yi direkt bağlantısı var mı? Grafta yok. A'nın C'ye var mı? Yok. B'nin C'ye var mı? Yok. O zaman A, B, C bir graf kümesi.
+
+976
+02:27:16,387 --> 02:27:20,947
+D ve D arasında bağlantı var mı? Yok. O zaman bu da bir graf kümesi.
+
+977
+02:27:21,447 --> 02:27:32,407
+Ben bir grafı öyle iki düğüm parçasına bölüyorum ki onların birbirine bağlantısı yoksa bunlar bir partiti graf adını alıyor.
+
+978
+02:27:32,407 --> 02:27:40,187
+Peki soruyorum size K3 grafı bir partiti graf mıdır?
+
+979
+02:27:41,447 --> 02:27:45,547
+Hemen K3 grafını çizmeniz lazım. 3 tane düğüm.
+
+980
+02:27:46,388 --> 02:28:02,388
+K3 grafı neydi? Her düğüm kendisinin dışında olan bütün düğümlere bağlı. Burası 1, burası 2, burası 3. Düğümleri birbiriyle bağlantısı olmayacak şekilde iki kümeye bölebilir misiniz?
+
+981
+02:28:11,347 --> 02:28:39,407
+1'i ayrı koysam, 2-3'ü ayrı koysam, 2 ile 3'ün bağlantısı var, olmaz. 1'i 3 ile koysam, 2'yi ayırsam, 1'in 3 ile bağlantısı var, olmaz. 1 ile 2'yi aynı koysam, 3'ü ayırsam, 1 ile 2'nin bağlantısı var, olmaz. 1'i ayrı, 2'yi ayrı, 3'ü ayrı koysam, 1 partiti 2 kümeye böleceğim, 3 kümeye bölemem.
+
+982
+02:28:39,407 --> 02:28:58,667
+öyleyse nedir bu? Bir partiti graf değildir. Peki C6 bir partiti graf mıdır? C6 saykıldı. 6 tane düğümüm olsun. Bunları saykıl olacak şekilde bağlıyorum.
+
+983
+02:29:02,451 --> 02:29:15,731
+bunlara da numara verdik. 1, 2, 3, 4, 5 ve 6. Bunu iki parçaya bölebilir misiniz düğümleri?
+
+984
+02:29:18,675 --> 02:29:44,675
+şimdi mesela ben 1'i bu kümeye koyduysam 2'yi ve 6'yı bu kümeye koyamam çünkü 1 ile bağlantısı var. 2 ve 6'yı bu kümeye koysam 2 ile 6'nın direkt bağlantısı yok. Doğru. 3'ü nereye koyarım? 3'ün 2 ile bağlantısı olduğu için buraya koyamayacağıma göre 3'ü 1'e koyabilirim çünkü 1 ile bağlantısı yok.
+
+985
+02:29:44,675 --> 02:30:04,875
+4'e gelelim. 4'ü 3'ün olduğu yere koyamam. 4'ü 1'e koyabilirim ama 3 var burada. 4'ü 2 ile bağlantısı yok. 4'ün 6 ile bağlantısı yok. 4'ü o zaman buraya koyabilirim.
+
+986
+02:30:04,876 --> 02:30:08,916
+5'i 6 ve 1'in olduğu yere koyamam
+
+987
+02:30:08,916 --> 02:30:17,016
+bu 1 mi bu? bu kaç? bu 4? 5'i 4'ün ve 6'nın olduğu yere koyamam
+
+988
+02:30:17,016 --> 02:30:18,815
+4 ve 6 buradaysa
+
+989
+02:30:18,815 --> 02:30:20,915
+buraya 5'i koyabilir miyim?
+
+990
+02:30:22,376 --> 02:30:22,796
+bakalım
+
+991
+02:30:22,796 --> 02:30:25,256
+1 ve 3 ile bağlantısı yok
+
+992
+02:30:25,256 --> 02:30:26,436
+koyabilirim
+
+993
+02:30:26,436 --> 02:30:28,536
+öyleyse bunu ben 2 kümeye ayırdım
+
+994
+02:30:28,536 --> 02:30:29,436
+bu 1
+
+995
+02:30:29,436 --> 02:30:31,415
+bir partiti graftır
+
+996
+02:30:31,415 --> 02:30:32,716
+1, 3, 5
+
+997
+02:30:32,716 --> 02:30:34,716
+2, 4, 6
+
+998
+02:30:34,716 --> 02:30:56,735
+diyebiliriz. Peki bu bir bir partiti graf mıdır? Bir bakın mesela test sorusu. Bir graf verdim. Bu grafın nasıl bir graf olduğunu soruyorum. İşte K grafı mı? Bir partiti graf mı? Efendim ne grafı? Soruyorum.
+
+999
+02:30:56,735 --> 02:31:00,775
+şıklarda da bir partiti var.
+
+1000
+02:31:07,540 --> 02:31:08,540
+cevap
+
+1001
+02:31:08,540 --> 02:31:12,420
+hocam F hepsiyle bağlantılı olduğu için olmayabilir
+
+1002
+02:31:12,420 --> 02:31:16,380
+şimdi olmayabilir diye bir cevap olmaz arkadaşlar
+
+1003
+02:31:16,380 --> 02:31:19,420
+bir şey ya oluyordur ya olmuyordur
+
+1004
+02:31:19,420 --> 02:31:28,699
+cevabı zaten verdim ben F'yi A'la B'le E'le D'le C'yle bir kümeye koyamam
+
+1005
+02:31:28,699 --> 02:31:33,979
+F bu tarafta A, B, C, D, E bu tarafta olması lazım
+
+1006
+02:31:33,979 --> 02:31:42,459
+A'nın da diğerleriyle C'nin de diğerleriyle bağlantısı olduğuna göre bu bir bir partiti graf olamaz.
+
+1007
+02:31:42,459 --> 02:31:45,540
+Peki bu? İyi bakın.
+
+1008
+02:32:03,188 --> 02:32:31,188
+şimdi şuradan gidelim bir bakın G, F ve E birbirine bağlı değil değil mi? Ne G'nin F'ye, E'ye, ne F'nin E'ye ya da G'ye yok. Ben eğer G'yi, F'yi ve E'ye bir kümeye koyarsam geri kalan ABC'de bir kümede olabilir mi? Bakıyorum A'yı B ile aynı kümeye koyabilirim.
+
+1009
+02:32:31,188 --> 02:32:37,068
+ama A'yı C ile aynı kümeye koyamam.
+
+1010
+02:32:42,164 --> 02:32:45,164
+bu yemedi
+
+1011
+02:32:47,123 --> 02:32:49,123
+bu şekilde düşüneceksiniz.
+
+1012
+02:32:55,796 --> 02:33:05,796
+O yüzden bu gibi şeylerde algoritma yazmak en güzelidir. Bunu bir matris gibi düşünün. Kimin kiminle bağlantısı olduğunu görebilirsiniz.
+
+1013
+02:33:05,796 --> 02:33:15,796
+Ama şimdi dersimiz algoritma değil. Biz daha bunu görsel olarak göremiyoruz. Düşünün. Bir de bu işlerin çok düğümlü olduğunu varsayın.
+
+1014
+02:33:31,219 --> 02:33:33,920
+%50 şansınız var, atın.
+
+1015
+02:33:37,907 --> 02:33:41,907
+bir hoca atın dedi ya, bulunmaz bir nimet.
+
+1016
+02:33:43,907 --> 02:33:47,907
+Hocam ABD'yi bir kümeye atın, geri kalanlarınla kümeye.
+
+1017
+02:33:47,907 --> 02:33:49,907
+Ama hiç duymuyorum ki.
+
+1018
+02:33:51,907 --> 02:33:53,907
+ABD'yi bir kümeye atsak hocam.
+
+1019
+02:33:53,907 --> 02:33:59,907
+Tamam bakalım, bir dakika kalem, ay doğruymuş kalemi açana kadar kalemle değildi, evet.
+
+1020
+02:33:59,907 --> 02:34:02,907
+ABD'yi bir kümeye aldı arkadaşımız.
+
+1021
+02:34:02,907 --> 02:34:25,707
+A'nın B'yle, A'nın D'yle, B'nin D'yle falan ilişkisi yok. Geri kalanlarda diğer kümede kalacak. Bunlar arasında ilişki var mı? C'nin G'yle, F'yle, E'yle bir ilişkisi yok. E'nin de F'yle, G'yle, C'yle bir bağımsızı yok. F'nin de yok. Ben bu şekilde rahatlıkla ayırabilirim.
+
+1022
+02:34:25,707 --> 02:34:55,687
+ve mesela şunu yapın boş vaktiniz olursa ya da işte sömestr arasında falan ya ben bunu gözle bile görürken problem yaşıyorum ben bunun algoritmasını yapmaya kalksam kurmaya nasıl kuracağım yapacağımız şey bu kaç düğümlü 4-3-7 7'ye 7'lik bir matriz şeyler kenarları olanlara bir kenarları olmayanlara bir
+
+1023
+02:34:55,707 --> 02:35:14,847
+ve onun üzerinde bir algoritma kuracaksın. Bir partiti matrisi bulmak için. Ya da mutlaka algoritma internette vardır. Alıp onu inceleyeceksin. Ama önce kendinin kurmaya çalışması, kendini geliştirmen aşaması için çok daha önemlidir.
+
+1024
+02:35:15,307 --> 02:35:16,287
+Hocam bir şey sorabilir miyim?
+
+1025
+02:35:16,627 --> 02:35:17,027
+Evet.
+
+1026
+02:35:17,447 --> 02:35:23,547
+Hocam şimdi burada iki tane komşu var diyelim. Bu komşunun ortak bir komşusu varsa bir partiti graf olamıyor mu?
+
+1027
+02:35:23,547 --> 02:35:44,227
+Bana çizdi. Yani bir daha söyle bakayım çizebilecek mi? Mesela şöyle yukarıda A ile B komşu ya. Evet. A ile B'nin ortak komşusu var F. Ama aşağıda öyle bir durum aradım bulamadım. Acaba diyorum hani A ile B komşu olduğu için ortak komşusu olursa bir partikli graf olamıyor gibi bu durum var mı?
+
+1028
+02:35:44,227 --> 02:35:48,228
+A ile B
+
+1029
+02:35:48,228 --> 02:35:51,928
+A ile B komşu
+
+1030
+02:35:51,928 --> 02:35:53,947
+Ve bunların ortak bir komşusu varsa
+
+1031
+02:35:53,947 --> 02:35:57,687
+Tamam o zaman senin dediğin şu
+
+1032
+02:35:57,687 --> 02:36:05,807
+Şu A, şu B bunlar komşu bunların da ortak komşusu C
+
+1033
+02:36:05,807 --> 02:36:08,648
+Bu bir nedir C3 grafıdır
+
+1034
+02:36:08,648 --> 02:36:10,607
+Bu bir partiti graf olamaz
+
+1035
+02:36:10,607 --> 02:36:13,008
+Yani böyle bir şey zaten hani
+
+1036
+02:36:13,007 --> 02:36:27,547
+Olamaz. Mesela K grafı bir partide graf olabilir mi? Her düğüm kendisinin dışındaki düğümlerle komşuysa K grafında, K grafının bir partide olabilme imkanı var mı olasılığı?
+
+1037
+02:36:27,547 --> 02:36:28,787
+Yok hocam.
+
+1038
+02:36:28,807 --> 02:36:29,127
+Yok.
+
+1039
+02:36:29,887 --> 02:36:31,047
+Anlarım hocam sağ olun.
+
+1040
+02:36:31,127 --> 02:36:31,287
+Tamam.
+
+1041
+02:36:33,607 --> 02:36:41,907
+Buradaki son şey kompleyt bir partitiler. Kompleyt bir partide aslında bir partidinin gelişmişi.
+
+1042
+02:36:41,907 --> 02:36:51,607
+Complete'in anlamı neydi? Tamdı. Bir partide neydi? Elimizdeki grafı iki ayrı parçaya ayırıyorduk.
+
+1043
+02:36:51,607 --> 02:36:59,307
+Ama tam olması ayırdığım şu parçalar var ya mesela şurası üçlü, şurası ikili.
+
+1044
+02:37:00,107 --> 02:37:05,547
+Bir öncekinde bir partide grafta anlatamıyorum da güzel artık yoruldum.
+
+1045
+02:37:06,087 --> 02:37:11,547
+Bir partideyi açalım şurada. Mesela şu örnekte ne görüyordunuz? Sileyim şurayı da.
+
+1046
+02:37:11,907 --> 02:37:23,708
+Bu bir partite. Şu var ve şu var. Bu complete değil. Neden değil? A'nın D'ye de olması lazım komşusunun.
+
+1047
+02:37:24,180 --> 02:37:43,299
+C'nin E'ye de komşusunun olması lazım. Eğer olsaydı bunlar kompleit bir partiti graftı. Olmadığı için bunlar kompleit bir partiti graft değil. Anlatabildim mi? Şurası eksik. Şu bağlantı eksik. Şu bağlantı da eksik.
+
+1048
+02:37:43,299 --> 02:38:04,680
+Burada da bize diyor ki eğer diyor bir partiti bir graf bir de her iki tarafta ayırmış olduğum düğümlerin hepsi karşı taraftaki düğümlerin hepsiyle komşuluğu varsa bu kompleit bir partiti diyor.
+
+1049
+02:38:04,680 --> 02:38:14,739
+Yani şuradaki eleman sayısı m, şuradaki eleman sayısı n ise kaç tane kenar olmak zorunda?
+
+1050
+02:38:16,180 --> 02:38:18,279
+6 tane, m çarpı n tane.
+
+1051
+02:38:18,799 --> 02:38:25,639
+m çarpı n tane kenar varsa bu kompleyt bir partiti graftır.
+
+1052
+02:38:25,639 --> 02:38:28,980
+Örnek, bu kompleyt bir partiti graft.
+
+1053
+02:38:29,779 --> 02:38:33,459
+Şu iki düğüm bir küme, aralarında bağlantı yok.
+
+1054
+02:38:33,459 --> 02:38:38,159
+Şu üçü ayrı bir küme, aralarında bağlantı yok
+
+1055
+02:38:38,159 --> 02:38:44,220
+M, N, yukarısı M2, aşağısı N3
+
+1056
+02:38:44,220 --> 02:38:49,120
+Bunlardan 6 tane kenar çıkması lazım çarpımı
+
+1057
+02:38:49,120 --> 02:38:53,939
+6 tane kenar var mı? 3, 4, 5, 6 var
+
+1058
+02:38:53,939 --> 02:38:56,699
+Öyleyse bu kompleit bir partiti
+
+1059
+02:38:56,699 --> 02:39:02,040
+Buna bakıyoruz, şu üçü hiçbiriyle alakası yok
+
+1060
+02:39:02,040 --> 02:39:27,340
+bu üçünün de yok. M3, N'de 3. Bir partiti. Peki complete mi? Çarpımı 9. Burada 9 tane kenar olacak. 3 bunun kenarı, 3 bunun kenarı, 3 de bunun kenarı. 9 tane kenar var. Complete bir partiti. Burada 2 tane var. Burada 6 tane var kümede. Evet bu bir partiti.
+
+1061
+02:39:27,339 --> 02:39:46,540
+Fakat complete mi? 2 çarpı 6, 12 tane kenar olması lazım. Bakarsak 2, 4, 6, 8, 10, 12, 12 tane de kenar var. Öyleyse bu da complete bir partiti graf. Bir partiden farkı, bir partiti graf neydi?
+
+1062
+02:39:46,540 --> 02:39:54,599
+o kümenin içerisindeki düğümlerin birbiriyle bağlantısı olmayacak şekilde grafı iki parçaya ayırmak,
+
+1063
+02:39:55,159 --> 02:40:02,819
+kompleyt ise ayrılan iki parça içerisindeki eleman sayılarının çarpımı kadar kenar olacak.
+
+1064
+02:40:02,819 --> 02:40:06,319
+O zaman da kompleyt bir partiti diyoruz.
+
+1065
+02:40:07,000 --> 02:40:09,959
+Bunu anlatarak bugünü bitireceğim.
+
+1066
+02:40:10,260 --> 02:40:15,220
+Haftaya bu kaldığımız yerden ve kromatik polinomlardan devam edeceğiz.
+
+1067
+02:40:15,219 --> 02:40:28,919
+Mesela bize deniyor ki sana diyor bir KN, CN, V, N, K, M, N ve Q, N diye graflarını bana nasıl formüle edersin diyor.
+
+1068
+02:40:28,919 --> 02:40:42,839
+M ve N değerlerini verdiğimde öyle bir formül kullan ki düğüm sayısını bulayım, öyle bir formül kullan ki kenar sayısını bulayım.
+
+1069
+02:40:42,839 --> 02:41:11,459
+Birinci örneği ben yapayım. Eğer senin diyor KN grafın varsa bu grafta en tane düğüm olur. Bunu biliyoruz. Hemen bir tane K4 grafını örnek çizelim. K4 grafı neydi? Dört tane düğüm. Her düğüm kendisinin dışındaki bütün düğümlere bağlanacak. Yani bu. Tamam mı? Bu bir K4 grafı.
+
+1070
+02:41:12,755 --> 02:41:24,755
+şimdi ben n'e bağlı düğüm sayısını verecek n, 4 ise burası kn'de, n 4 ise 4 tane de düğüm var. Düğüm sayısını n'e bağlı olarak verdim.
+
+1071
+02:41:25,335 --> 02:41:41,295
+kenar sayısı da diyor n çarpı n-1 bölü 2'dir. Kaç tane kenarım var? 6 tane kenarım var. n yerine 4 koyarsam 4 çarpı 3 12 bölü 2 6 kenar var.
+
+1072
+02:41:41,295 --> 02:41:57,995
+bunu sağlıyor. Peki grafım C'nse. C3 grafını çizelim. C3 grafı bu. Buna bağlı olarak bana söyleyin bakalım. Düğüm sayısı en cinsinden nedir?
+
+1073
+02:42:02,036 --> 02:42:31,315
+endir hocam. endir. peki kenar sayısı? o da endir hocam. yes. peki W n olsun. W n neydi? bir fazlasını yapıyordum. mesela W 3. 3 taneyi çiziyordum bir C grafı olarak. ortaya fazladan bir graf koyup diğerleriyle bağlantırıyordum.
+
+1074
+02:42:32,036 --> 02:42:35,616
+Eğer böyleyse düğüm sayısı nedir?
+
+1075
+02:42:39,347 --> 02:42:41,627
+n artı bir
+
+1076
+02:42:41,627 --> 02:42:42,887
+kenar sayısı
+
+1077
+02:42:42,887 --> 02:42:45,467
+iki çarpı n eksi bir mi oluyor hocam?
+
+1078
+02:42:46,627 --> 02:42:48,867
+iki n oluyormuş hocam
+
+1079
+02:42:48,867 --> 02:42:50,907
+bakalım iki n mi oluyor?
+
+1080
+02:42:51,747 --> 02:42:54,728
+bütün düğümlere bağlandığı için
+
+1081
+02:42:54,728 --> 02:42:58,347
+düğüm sayısı kadar kenar eklenecek demektir
+
+1082
+02:42:58,347 --> 02:43:00,667
+o yüzden iki ile çarptık
+
+1083
+02:43:00,667 --> 02:43:02,747
+peki k m n'e bakalım
+
+1084
+02:43:02,747 --> 02:43:05,227
+bunu zaten yaptık gibi
+
+1085
+02:43:05,227 --> 02:43:07,587
+kaç tane düğüm var?
+
+1086
+02:43:15,636 --> 02:43:21,636
+ama hadi ikiye üç yapıyorduk nasıldı? yukarıda iki aşağıda... m artı n hocam
+
+1087
+02:43:21,636 --> 02:43:33,636
+bir daha söyle m artı n evet kenar sayısı da ne olur? çarkımları deminden beri söylüyoruz. buradaki en zor olanı qn
+
+1088
+02:43:33,636 --> 02:43:44,636
+ama düğüm sayısını rahatlıkla söyleyebiliriz. düğüm sayısı ne oluyordu? 2 üzeri n oluyordu düğüm sayısı. hatırladınız?
+
+1089
+02:43:44,636 --> 02:43:49,476
+Evet hocam.
+
+1090
+02:43:50,055 --> 02:43:56,536
+Ama kenar sayısı n çarpı 2 üzeri n eksi bir kenar oluyormuş.
+
+1091
+02:43:57,476 --> 02:43:59,875
+Bunu çıkarmak uzun çıkarmıyorum o yüzden.
+
+1092
+02:44:00,595 --> 02:44:07,655
+Şimdi haftaya pet dediğimiz pet ve saykıllar bunlardan bahsedeceğim.
+
+1093
+02:44:07,656 --> 02:44:17,976
+ondan sonra grafların derecelerinden, grafların izomorfizminden, diş kısırı algoritmasından bahsedeceğim.
+
+1094
+02:44:17,976 --> 02:44:29,095
+Çıktık, çıktık, çıktık, çıktık. Allah Allah. Graf modelleri deyip, izomorfizm deyip bitireceğiz ve kromotik polinomlara geçeceğiz.
+
+1095
+02:44:29,436 --> 02:44:31,356
+Sorunuz var mı bugün anlattıklarımla ilgili?
+
+1096
+02:44:31,356 --> 02:45:01,036
+Tamam. İkinci hafta pardon ikinci vizemiz test usulü olacak. Neden bunu da itiraf edelim test usulü olacağını? Klasik sınavları bilgisayar üzerinden okumak çok zor. Gerçekten çok zor. Ve hemen arkasındaki hafta final olacak. Ve bizim iki tane klasik sınavı arka arkaya okumamız çok zor. Yani ders sayımız da fazla zor.
+
+1097
+02:45:01,356 --> 02:45:12,076
+O yüzden ikinci sınavda test usulü gibi yapıp birinci vize sonrası konulara ağırlık vereceğiz ki böylece finale de hazırlanmış olun diye.
+
+1098
+02:45:12,076 --> 02:45:22,936
+Bir de bu diskret diğer derslerde yani ben vizenin ortalamasını, birinci vizenin ortalamasını daha yüksek bekliyordum.
+
+1099
+02:45:22,935 --> 02:45:27,235
+Nerelerde takıldığınızı biliyorsunuz
+
+1100
+02:45:27,235 --> 02:45:32,755
+Size onu derste de, vizeden sonraki hafta da anlattım
+
+1101
+02:45:32,755 --> 02:45:35,975
+İsterseniz o kayıtları bir daha izleyin
+
+1102
+02:45:35,975 --> 02:45:38,735
+Nerelerde en çok hata yapıldığını söyledim
+
+1103
+02:45:38,735 --> 02:45:42,055
+Oradaki eksikliklerinize de bakın vizeye çalışırken
+
+1104
+02:45:42,055 --> 02:45:45,356
+Söyleyeceğiniz bir şey varsa sorun arkadaşlar
+
+1105
+02:45:45,356 --> 02:45:48,535
+Yoksa dersimizi bugün burada bitiriyorum
+
+1106
+02:45:48,535 --> 02:45:51,735
+Var mı?
+
+1107
+02:45:52,936 --> 02:45:57,236
+Peki, biri hoşçakalın desin
+
+1108
+02:45:57,236 --> 02:45:58,396
+İyi günler hocam
+
+1109
+02:45:58,396 --> 02:45:59,176
+İyi günler
+
+1110
+02:45:59,176 --> 02:46:00,835
+İyi günler hocam
+
+1111
+02:46:00,835 --> 02:46:02,156
+İyi günler
+
+1112
+02:46:02,156 --> 02:46:03,415
+Hoşçakalın

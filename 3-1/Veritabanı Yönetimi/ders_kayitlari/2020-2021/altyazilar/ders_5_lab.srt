@@ -136,7 +136,7 @@ Ve bunlara da örnek olsun diye üç tane veri girmiş.
 
 35
 00:07:09,790 --> 00:07:17,790
-Şimdi ben bir soruda size desem ki, işte ismi Ali olan öğrencilerin öğrenci numaralarını listeleyin.
+Şimdi ben bir soruda size desem ki, işte ismi [öğrenci] olan öğrencilerin öğrenci numaralarını listeleyin.
 
 36
 00:07:17,790 --> 00:07:20,790
@@ -208,11 +208,11 @@ Ver'den sonra da koşulum neydi benim istediğim?
 
 53
 00:07:59,790 --> 00:08:01,790
-Ismi Ali olan kişiler.
+Ismi [öğrenci] olan kişiler.
 
 54
 00:08:01,790 --> 00:08:04,790
-Yani first name'i Ali olan kişiler.
+Yani first name'i [öğrenci] olan kişiler.
 
 55
 00:08:04,790 --> 00:08:09,790
@@ -220,7 +220,7 @@ Ben bunu yazıp çalıştırdığımda bakın bana ne yapacak?
 
 56
 00:08:09,790 --> 00:08:17,790
-Gidecek bu veri tabanına ilgili tabloya, stun'un tablosuna sıra sıra kayıtlara bakarken ismi Ali olan kayıtları bulacak.
+Gidecek bu veri tabanına ilgili tabloya, stun'un tablosuna sıra sıra kayıtlara bakarken ismi [öğrenci] olan kayıtları bulacak.
 
 57
 00:08:17,790 --> 00:08:20,790
@@ -244,7 +244,7 @@ Eğer select'den sonra belli bir stun adı vermeyip sadece yıldız bıraksaydı
 
 62
 00:08:39,789 --> 00:08:41,789
-100 Ali Demir, 150 Ali Tunç.
+100 [öğrenci], 150 [öğrenci].
 
 63
 00:08:41,789 --> 00:08:49,789
@@ -964,7 +964,7 @@ Bununla alakalı kodlarınızı Avesis sayfama koydum.
 
 242
 00:20:29,250 --> 00:20:30,250
-Elçin görevi.
+[öğrenci] görevi.
 
 243
 00:20:30,250 --> 00:20:34,250
@@ -1360,7 +1360,7 @@ Dersi ilk 5 dakikası yoktum ben.
 
 341
 00:27:16,980 --> 00:27:19,980
-OASIS sayfamda Elçin Güve'yi,
+OASIS sayfamda [öğrenci]'yi,
 
 342
 00:27:19,980 --> 00:27:25,980
@@ -3432,7 +3432,7 @@ Bir tablom tamamıyla.
 
 859
 01:00:10,789 --> 01:00:12,789
-Ahmet Yaman mikrofonunu kapatabilir miyim?
+[öğrenci] mikrofonunu kapatabilir miyim?
 
 860
 01:00:12,789 --> 01:00:17,670
@@ -3824,7 +3824,7 @@ Hiçbir şey uyarı vermiyor bilmiyorum.
 
 957
 01:09:14,310 --> 01:09:18,310
-Bekir aldığın hata ne? Hatanın kodu ne yani nedir hata?
+[öğrenci] aldığın hata ne? Hatanın kodu ne yani nedir hata?
 
 958
 01:09:18,310 --> 01:09:23,310

@@ -1,0 +1,1563 @@
+1
+00:02:44,723 --> 00:03:08,543
+Merhaba hocam. Merhabalar Elçin. Günaydın. Günaydın. Biraz şey katılım az oluyor son haftalarda. Bugün de bayram öncesi bakalım. Biraz daha artsın öyle ben şey yapayım. Tamam hocam.
+
+2
+00:03:13,716 --> 00:03:20,335
+Çeyrek geçeye kadar başlayabiliyoruz çünkü. Biraz artınca ben başlatırım o zaman.
+
+3
+00:03:21,015 --> 00:03:21,656
+Tamam hocam.
+
+4
+00:03:42,419 --> 00:04:02,059
+bugün uygulama yapılacak. Elçin Hanım bekliyor derse başlamak için. Daha arkadaşlarınızı bekliyoruz geçiş yapmak için ama projelerinizle ilişkili sorunuz var mı? Bu arada başladınız mı projelerinize?
+
+5
+00:04:44,980 --> 00:04:58,719
+ders duvarından kontrol etmiştiniz değil mi? Proje gruplarınızı. Bir problem yok veya medya takibe geçmek isteyen varsa demiştim. Öyle bir konu değiştirmek isteyen yok.
+
+6
+00:05:29,620 --> 00:05:33,319
+çeyrek geçeğe kadar bekleyelim. Belki birkaç arkadaşınız daha katılır.
+
+7
+00:05:58,259 --> 00:06:01,759
+Önümüzdeki hafta sınav için tarihine baktınız değil mi?
+
+8
+00:06:39,603 --> 00:06:40,563
+Hangi gündü?
+
+9
+00:06:48,468 --> 00:06:57,487
+Evet, ders gününden farklı değil. Çok değişiklik olmamış. Saatine bakmadım ama.
+
+10
+00:07:04,468 --> 00:07:06,047
+Evet, tam ders saatindeymiş.
+
+11
+00:07:16,180 --> 00:07:29,079
+test yapacağız. Yalnız bu diagramlardan sizin çizmenizi istediğimiz şeyler olabilir. Yani onunla karışık olabilir. Diagram çizimi ve test şeklinde.
+
+12
+00:08:06,899 --> 00:08:35,139
+Evet, dokuzu çeyrek geçtiği için artık derste başlayabiliriz. Daha önceki haftalarda da söylemiştim. Sınavdan önce bir hafta uygulama gerçekleştireceğiz diye. Bu hafta Elçin Hanım bu dönemde nesneye yönelik analiz, tasarımla ilişkili diagramları size bugün gösterecek.
+
+13
+00:08:35,139 --> 00:08:37,899
+onlarla ilgili uygulama yapacak.
+
+14
+00:08:38,500 --> 00:08:42,600
+Derste bunlarla ilgili konuları görmüştük.
+
+15
+00:08:43,300 --> 00:09:02,779
+Yine de bu uygulama sırasında sınava hazırlık olarak da aklınıza takılan bu diagramlarla ilgili şeyleri Elçin Hanım'a sorabilirsiniz ve onun oluşturacağı bir uygulama üzerinde çalışacaksınız.
+
+16
+00:09:02,779 --> 00:09:13,499
+[öğrenci] çok teşekkürler ben seni şey olarak tanımlıyım oturum yöneticisi olarak
+
+17
+00:09:32,788 --> 00:09:36,327
+tamamdır hocam. Kolay gelsin. Teşekkürler.
+
+18
+00:09:40,724 --> 00:09:43,323
+Ben ekranımı paylaşarak başlayayım.
+
+19
+00:09:50,740 --> 00:10:12,379
+Evet arkadaşlar, hepinize selamlar, hoş geldiniz. Bugün Oya Hocam'ın da dediği gibi bir örnek, case üzerinden, bir gerçekleştirecek proje metni üzerinden biz bazı analiz UML'lerini çizeceğiz bugün.
+
+20
+00:10:12,379 --> 00:10:36,740
+bunlar neler olacak? Öncelikle bizim senaryomuz bir hastanenin kayıt sistemi işte hastaların randevu olabildiği, doktorların o randevuları görüntüleyebildiği, hastaların bilgilerini girebildiği yine işte farklı görevlerin farklı işlemler yapabildiği bir sistem olacak ve bunun üzerinden biz bazı işte UML'leri çizeceğiz. Neler olacak bunlar?
+
+21
+00:10:36,740 --> 00:10:47,799
+bir use case çizeceğiz. Daha sonra bu use case'de bir iki senaryo için bunların kullanım senaryosunu yazacağız.
+
+22
+00:10:47,920 --> 00:10:55,760
+Bir iki aktivite için kullanım senaryosu yazacağız. Ve de yine bu sistemin class diagramını çizmiş olacağız.
+
+23
+00:10:57,219 --> 00:11:06,280
+Öncelikle bizim konumuz neymiş onu bir okuyarak anlayarak başlayalım. Sistemi anlayarak başlayalım. Daha sonrasında da çizimlerini göstereceğiz beraber.
+
+24
+00:11:06,740 --> 00:11:14,199
+Şimdi diyor ki yeni açılan polikliniğimiz için bir hasta ve çalışan yönetimi yazılımına ihtiyacımız vardır.
+
+25
+00:11:15,680 --> 00:11:20,900
+Programın çalışan yönetimi bölümde her çalışan için şu bilgiler saklanmalıdır.
+
+26
+00:11:21,219 --> 00:11:35,900
+Çalışanlar için saklayacağın bilgiler adları, soyadları, kimlik numaraları, işe başlama tarihleri, çalıştıkları birim, eğer bu kişi işten ayrılmışsa ayrılma tarihi gibi çalışanlarla ilgili fiks bazı bilgiler tutacakmışız.
+
+27
+00:11:36,740 --> 00:11:43,619
+Bunlara ek olarak da bu çalışanların erişim bilgilerinin olmasını istiyoruz, kayıt altında tutulmasını istiyoruz
+
+28
+00:11:43,619 --> 00:11:48,119
+İkamet adresidir, telefon numaralarıdır, hem işini hem cep telefonunu istiyoruz
+
+29
+00:11:48,119 --> 00:11:51,079
+Bu şekilde çalışan bilgilerini tutacağız
+
+30
+00:11:51,079 --> 00:11:55,600
+Ve çalışanlar kaç tip olabiliyor? Dört tür çalışan bulunacakmış
+
+31
+00:11:55,600 --> 00:12:00,120
+Doktorlar, hemşireler, hizmetler ve güvenlik görevlileri şeklinde
+
+32
+00:12:00,119 --> 00:12:14,599
+bunların çalışanların tabi şu işte at soyat gibi, kimlik gibi, işte iletişim adresi gibi hepsinin fix olacak bilgileri ve bir de doktorların ek olarak diploma numaralarını da tutmak istiyormuşuz.
+
+33
+00:12:15,759 --> 00:12:22,739
+Doktorlar sistemde ne yapabiliyormuş? Uygun günlerini, randevularını ve hastalarının tedavi işlemlerini yönetebilmeli.
+
+34
+00:12:22,839 --> 00:12:29,539
+Bir hastayla ilgili işte reçete oluşturmaları, tedavi bilgi girişi yapmaları gibi şeyleri halledebilmeli sistemden.
+
+35
+00:12:29,540 --> 00:12:36,600
+ve bazı doktorlar yani bir doktor ne olabiliyor hastanede başhekim olarak görev yapıyor.
+
+36
+00:12:36,740 --> 00:12:43,939
+Başhekim de hastayla ilgilenmenin yanı sıra idari bazı işlerden de hastanenin yönetiminden de sorumlu oluyor.
+
+37
+00:12:45,700 --> 00:12:50,720
+Çalışanlar kısmı bu şekilde bir de hasta bölümü var hasta izleme bölümü.
+
+38
+00:12:50,719 --> 00:13:01,539
+Burada da hastalar için yine aynı şekilde ad soyad kimlik numarası çeşitli iletişim erişim bilgileri adresi telefonları bunları tutmak istiyoruz
+
+39
+00:13:01,539 --> 00:13:11,479
+Sistemde yeni hasta kaydı oluşturma ve randevu işlemleri yine yapılabilmeli ve bu kayıtlar görüntülenip güncellenebilmeli
+
+40
+00:13:11,479 --> 00:13:16,979
+Hastalar da sisteme girip randevu alabilmeli hastanın da yine sistemi bir kullanıma olacak
+
+41
+00:13:16,979 --> 00:13:24,559
+ve ne yapıyor hasta? Randevu günü geldiğinde hastaneye gidiyor, bankodan ücretini ödüyor.
+
+42
+00:13:25,875 --> 00:13:52,675
+Bu noktada şöyle bir ekstant var. Nedir o? Eğer hastanın çalıştığı kurumun poliklinikle bir anlaşması varsa buradaki ödeme de belli bir indirim yapılıyor. Yani herkesin fiks bir ücreti var. Kimlere daha indirimli bu hizmeti alabilecek. Daha sonra hasta ödemeyi yaptıktan sonra ne yapıyor? Kayıt görevlisi hastanın artık sistemde kaydını açıyor. Hasta bundan sonra muayene sırasını beklemeye başlıyor.
+
+43
+00:13:52,675 --> 00:14:03,855
+bir hastanın o kaydında her şeyi tutacaklar, neyi tutacaklar, doktorun girdiği bu tedavisi nedir, hastalığı nedir, buna ilgili ilaçlar kullanmış vs.
+
+44
+00:14:04,695 --> 00:14:06,435
+bunlar hakkında bilgiler bulunacak.
+
+45
+00:14:07,135 --> 00:14:14,776
+hastanın başvurduğu birim, tedavine zaman başladı, doktor kimdi, ilaç neydi, tanı neydi bu bilgilerin de tutulmasını istiyoruz.
+
+46
+00:14:14,775 --> 00:14:23,235
+kabataslak bir hastane planı. Bizim de zaten günlük hayattan çok uzak olmadığımız gayet aşina olduğumuz bir sistem.
+
+47
+00:14:24,235 --> 00:14:31,875
+Bunu şimdi adım adım bu üç maddeyi gerçekleyerek gidelim. Öncelikle bizden ne istiyor?
+
+48
+00:14:32,415 --> 00:14:39,295
+Olası kullanıcı öykülerini belirleyerek bir kullanım şeması yani UML yüz kez şemayı çiziniz diyor.
+
+49
+00:14:40,715 --> 00:14:44,415
+Ben çizimlerimi Violet UML üzerinde yapacağım.
+
+50
+00:14:44,776 --> 00:14:50,335
+geldim burada yüz case diagram seçiyorum.
+
+51
+00:14:51,816 --> 00:14:59,356
+Yüz case dediğimiz bu şu çop adamlı UML diye tabir ettiğimiz kendi aramızda.
+
+52
+00:15:00,475 --> 00:15:02,835
+UML çeşidi burada neler var?
+
+53
+00:15:02,835 --> 00:15:07,195
+Aktörler var ve aktiviteler var, yüz case'lerimiz var.
+
+54
+00:15:07,356 --> 00:15:10,596
+Her bir aktöründe bir yüz case'le ne var?
+
+55
+00:15:10,736 --> 00:15:11,676
+Interaction var.
+
+56
+00:15:11,675 --> 00:15:18,855
+ve bunlar arasında yine use case'ler arasında bazı extantler include'lar var.
+
+57
+00:15:18,855 --> 00:15:31,695
+Yani bir use case diğeriyle genişletilebilir, ek bir özellik ilklenebilir veya bir use case'in gerçekleşmesi için bir aktivitenin oluşması için bir başka use case'in daha önceden olmuş olması gerekir.
+
+58
+00:15:31,775 --> 00:15:38,975
+Bunu da include deriz. Bu iş, bu işi include eder. Bu bundan önce olmuş olmalıdır gibi bir mantığı vardır.
+
+59
+00:15:38,975 --> 00:15:56,095
+ve bir de generalization vardır. Bunun da örneğini göreceğiz. Bir aktörün daha spesifik bir alt aktörünü yapmışsak bu aslında onun üstündeki onun generalization'ıdır diye bir mantığımız olacak.
+
+60
+00:15:56,095 --> 00:16:07,855
+Şimdi biz adımını çizerek gidelim hastane yönetimimize. Önce sistemin aktörleri bunlar kişilerdir. Bu sistemi kullanacak kişiler nelerdir bunlar?
+
+61
+00:16:07,855 --> 00:16:23,215
+bir tanesi şöyle ben buna tıkladım aktöre tıkladım buraya gelip herhangi biri bastığımda aktörümü oluşturdu üstüne çift tıkladığım zaman da bunun ismini girebiliyorum mesela hasta ile başlayalım
+
+62
+00:16:23,215 --> 00:16:31,975
+hasta sistemin bir aktörü hasta sistemde hangi işleri yapabiliyordu sistem üzerinden
+
+63
+00:16:31,975 --> 00:16:39,215
+ona bir yüz case koyalım.
+
+64
+00:16:42,515 --> 00:16:48,835
+Mesela hastanın yine bunu açık tıklıyorum. Yapabildiği işlerden biri neydi? Rendevu olabiliyordu.
+
+65
+00:16:52,724 --> 00:17:14,463
+hasta randevusunu alıyordu ve buna da bir interaction'ı koyalım. Interaction'ı seçtim. Hastadan tutup sürüklediğimde hasta randevu alır. Basitçe gösterdim. Başka neler yapabiliyordu hasta? Sistemde kendi üzerinden girilmiş o tedavi bilgilerini görüntüleyebilmeliydi.
+
+66
+00:17:24,147 --> 00:17:37,587
+hasta tedavi bilgisinde görüntülüyordu. Ve bir de artık randevusunu almış hastaneye geliyor. Ne yapıyordu hasta? Burada bir ücret ödemesi vardı hastanın.
+
+67
+00:17:37,587 --> 00:17:50,227
+Ücret ödedikten sonra kayıt görevlisi tarafından kaydı açılacaktı. Şimdi sistemde böyle iki tane iş var. Hasta ücret ödeyecek. Sonra da kayıt görevlisi onun sistemden kaydını açacak.
+
+68
+00:17:50,227 --> 00:18:01,147
+hastanın ücret ödemesi alınacak sonra da kayıt açılacak hasta üzerinden. Burada o zaman şöyle bir iletişim olacak burada bir kayıt görevlisi olacak onun aktörünü koyayım.
+
+69
+00:18:12,852 --> 00:18:15,871
+ne yapacak dedik hasta bir kere ücret ödeyecek.
+
+70
+00:18:22,963 --> 00:18:24,643
+interakşonu verelim.
+
+71
+00:18:29,299 --> 00:18:43,599
+kayıt görevlisi de ne yapıyor? Hasta kaydı açıyor. Hasta kaydını yapacak burada. Hastanın girişini yapacak. Onu da interaction koyalım.
+
+72
+00:18:44,519 --> 00:18:54,480
+Ve bu iki iş arasında biz diyoruz ki hasta önce ücret ödemesi alınmış olmalı sistemde, daha sonra kaydı açılmalı.
+
+73
+00:18:54,480 --> 00:19:16,179
+o zaman burada nasıl bir ilişki var? Bir iş diğer işi asla inkülüt ediyor değil mi? Yani hasta kaydı açabilmem için ücret ödeminin yapılmış olması gerektiğinden dolayı ben diyorum ki o zaman hasta kaydı ücret ödemeyi inkülüt eder.
+
+74
+00:19:16,179 --> 00:19:33,839
+hasta kaydının içinde ücret ödeme iş önce gerçekleşmiş olmalı ki daha sonra bu görevli bu kaydı açabilsin. Şurayı da daha düzgün hale getirelim düz bir şekilde ilerlesinler. Bu şekilde gösterebiliyorum.
+
+75
+00:19:33,840 --> 00:19:57,499
+sonra ücret ödeme için şöyle bir olay vardı demiştik ki hani polikliniğe eğer bir anlaşması varsa bu kliniğin bir kurumla çalışıyor hastanın çalıştığı kurumla o zaman ücret ödeme kısmında hani herkese fix bir ücret çıkarımdan ziyade farklı bir ücret ödemesi alınabiliyordu daha indirimli olabiliyordu belli indirim oranında
+
+76
+00:19:57,499 --> 00:20:02,499
+o zaman bu ücret ödemesinde alternatif bir durum var.
+
+77
+00:20:03,660 --> 00:20:05,160
+Bunu da neyle gösteriyoruz?
+
+78
+00:20:05,499 --> 00:20:13,959
+Bu işin, bu aktivitenin, bu use case'in bir tık farklı bir durumu olabilir dediğimiz zaman bunu da extend etmiş oluyoruz.
+
+79
+00:20:13,959 --> 00:20:18,599
+Onu da şöyle bir use case'i şuraya koyalım diyelim ki.
+
+80
+00:20:24,819 --> 00:20:29,499
+anlaşmalı kurum indirimi yapılacak.
+
+81
+00:20:35,220 --> 00:21:05,199
+O zaman diyorum ki, anlaşmalı kurum indirimi dediğim şey, ücret ödemenin ekstant edilmiş hali. Ben ücret ödemeyi bu şekilde ekstant ederek ne yaparım? Genişletirim. Yani onun üzerine bir özellik daha eklemiş gibi bir şey olurum. Buradaki ekstant kafanızı şeyle karıştırmasın. Nesne yönelik programlamadaki o işte birbirinden kalıtımla aldık ettik gibi bir şey değil. Bu sadece hani bu işi bir tık genişlettim. Buna ne yaptım? Ne ekleyebilirim? Bir de işte anlaşmalı kurum indirimi.
+
+82
+00:21:05,199 --> 00:21:34,599
+olursa bir alternatif akışa girer bu durum. Ücret ödümü bu şekilde ek bir özellik eklenebiliyor. Orada bir farklılık oluşabiliyor diyebilirim. Bunu da bu şekilde gösterdikten sonra ne yaptım? Hastayla ilgili birçok kısmı yapmış, halletmiş oldum. Şimdi gelelim sistemin diğer aktörü. En baş aktörümüz bundan sonrakilerden hangisi olacak sizce? Şimdi kimi yazalım.
+
+83
+00:21:46,067 --> 00:21:47,688
+doktorla devam edelim değil mi?
+
+84
+00:21:52,660 --> 00:21:58,719
+Şimdi hekimler ne yapacaktı? Hastanın tedavisiyle ilgili bilgilerin girişini yapacaktı.
+
+85
+00:22:04,147 --> 00:22:26,227
+hasta bilgisi görüntüleyebilir. Onu yazalım. Böyle alt başlıklar halinde yani daha doğrusu mantıklı kategorize etmek bu işi daha düzgün olur. Hekim hasta bilgisi görüntüler. Sonra neler yapar? İşte hastanın tedavi bilgilerini girer.
+
+86
+00:22:32,788 --> 00:22:35,587
+tedavi bilgilerini girer, başka ne yapar?
+
+87
+00:22:36,807 --> 00:22:42,647
+kendi günlük randevuları nelerdir? Bunları görüntüler, kendi programına girerler.
+
+88
+00:22:47,635 --> 00:22:49,395
+görüntülemediğiyle.
+
+89
+00:22:53,044 --> 00:23:02,563
+Hekim de bunları yapabiliyor. Şöyle getirdiğim zaman hekime de bunlarla interakşonunu verelim yaptığı işleri.
+
+90
+00:23:05,563 --> 00:23:09,644
+Tedavi girişi yapıyor, hasta bilgisi görüntülüyor, randevu görüntülüyor.
+
+91
+00:23:11,023 --> 00:23:16,703
+Şimdi şu iki yüz case arasında da ben bir bağlantı kurabilirim.
+
+92
+00:23:16,703 --> 00:23:25,884
+şöyle ki bir hastanın tedavi bilgisini görüntülemesi için hekimin sonuçta bir giriş yapmış olması lazım.
+
+93
+00:23:26,023 --> 00:23:28,624
+Tedavi bilgisinin girişini yapılmış olması lazım.
+
+94
+00:23:29,564 --> 00:23:32,584
+Bununla bunun arasında o zaman ne ilişkisi kuracağım?
+
+95
+00:23:32,863 --> 00:23:33,843
+Ne yazacağım buna?
+
+96
+00:23:34,663 --> 00:23:37,764
+Tedavi bilgisi görüntüleme ne yapar tedavi bilgisi girişini?
+
+97
+00:23:43,251 --> 00:23:45,251
+Extent mi inkluyot mu?
+
+98
+00:23:55,124 --> 00:24:06,924
+aynen inkülöt eder değil mi? Bu iş, bu işi inkülöt eder. Yani tedavi bilgisi görüntülemek istiyorsam bunun içinde mutlaka tedavi bilgisi girişi yapılmış olması gerekir ki hasta bunu görüntüleyebilsin.
+
+99
+00:24:08,703 --> 00:24:22,923
+Şimdi hekimi yazdık. Hekimin bir de ne vardı? Başhekim denen bir daha spesifik ve kendine bazı görevler yapan bir durumu vardı o aktörün.
+
+100
+00:24:22,923 --> 00:24:27,923
+o zaman ben burada bir de aktör olarak başhekimi yazmalıyım.
+
+101
+00:24:31,363 --> 00:24:35,484
+Hekim var bir de başhekim var.
+
+102
+00:24:42,516 --> 00:25:07,715
+Şimdi burada da generalization dediğim olayı kullanacağım aslında. Çünkü bu hekim dediğim kısım, başhekim dediğim aktör, hekim aktöründen gelmiş. Bu bunun daha genel hali, daha özel hali. O onun yaptığı her şeyi yapıyor. Bir de bunu ek olarak neler yapıyor dedik. Yönetimden sorumlu. Hastane yönetiminden sorumlu. Hemen onun da kendine az yüz kesleri olacak.
+
+103
+00:25:07,715 --> 00:25:11,155
+diyeceğim ki işte planlama yapar.
+
+104
+00:25:15,316 --> 00:25:27,435
+ne yapar? Hasta bilgilerini belki, çalışan bilgilerini burada görür. Çalışanlarla ilgili planlamalar yapar. Çalışan bilgisi, görüntüler.
+
+105
+00:25:29,556 --> 00:25:31,556
+bu şekilde yazdıktan sonra
+
+106
+00:25:31,556 --> 00:25:35,295
+onlara da şöyle
+
+107
+00:25:35,295 --> 00:25:37,496
+interakşınlarını verelim.
+
+108
+00:25:40,075 --> 00:25:41,655
+Başhekimin yapabilecekleri de
+
+109
+00:25:41,655 --> 00:25:42,695
+böyleydi.
+
+110
+00:25:43,755 --> 00:25:45,976
+Bir de sistemimizin bir aktörü daha var.
+
+111
+00:25:46,255 --> 00:25:47,556
+Onun yazı olarak
+
+112
+00:25:47,556 --> 00:25:50,455
+görevini belki net yazmamışım
+
+113
+00:25:50,455 --> 00:25:51,795
+ana metinde ama
+
+114
+00:25:51,795 --> 00:25:54,435
+şuraya eklemek istiyorum onu.
+
+115
+00:25:56,295 --> 00:25:57,855
+O da güvenlik görevlisi.
+
+116
+00:25:57,855 --> 00:25:59,355
+Onunla ilgili de
+
+117
+00:25:59,556 --> 00:26:18,636
+şöyle bir şey yazabilirim. Hastanelerde doktorların bir beyaz kod verme durumu var. Nedir işte bir hasta veya hasta yakını ile alakalı güvenliği tehdit eden bir durum oluşmuşsa hekim kod veriyor ve bu uyarı koduyla ne yapıyor?
+
+118
+00:26:18,635 --> 00:26:26,995
+güvenlik oraya geliyor işte odaya müdahale ediyor. Onlar arasında da şu hekim ve güvenlik görevlisi arasında şöyle bir interaction kurabilirim.
+
+119
+00:26:27,175 --> 00:26:33,155
+Hekim beyaz kodu verir, güvenlik görevlisi de beyaz kodu alır ve gereken işi yapar.
+
+120
+00:26:37,491 --> 00:26:56,611
+Tedavi bilgisi kısmında bir de şunu eklememiz gerekiyor. Bazı tedavilerde evet hasta ayaktan tedavi alır ve gider ama nedir? Doktorun bazen de hastanın durumunu ağır görür ve yatarak tedavi olmasına karar verir.
+
+121
+00:26:56,611 --> 00:27:10,611
+Burada da bu tedavi kısmı, tedavi bilgisi girişi kısmında o zaman ekstra verilebilecek bir karar var. O da yatarak tedaviye karar verilmesi. O da bu işin...
+
+122
+00:27:14,195 --> 00:27:40,215
+yatarak tedavi diyelim. Bu da tedavi girişinin neyidir? Aslında bir ekstendidir. Yatarak tedavi. Bu yüz case'in bir tek ekstendi olmuş hal ki, hani alternatif bir akışı var. Bu iş yapılırken böyle bir karar verilebilir, bu iş yapılabilir şeklinde söylediğimiz durumlarda da ekstendi kullanıyoruz.
+
+123
+00:27:44,307 --> 00:27:59,107
+Evet, genel olarak dedik ki, use case diagramımız bu şekildeydi. Aktörlerimiz var, use case'lerimiz var, interaction'larımız var ve yine use case'ler arasında extent ve include ilişkileri bulunabiliyor.
+
+124
+00:28:02,007 --> 00:28:06,328
+Burayla ilgili sorusu olan var mı use case ile ilgili sormak istediğim?
+
+125
+00:28:11,380 --> 00:28:38,679
+Eğer sorumuz yoksa, şimdi ikinci kısma geçeceğiz. Biz de soruda ikinci kısımda ne istiyordu? Kullanım öyküsünü istiyor, kullanım senaryosunu istiyor. Neyle ilgili diyor? İşte burada spesifik bir şekilde vermiş olabilir. Doktorun hastaya ait tedavi bilgisi girişiyle ilgili kullanım senaryosunu yazın. Şimdi şunlar bizim her biri birer yüz case'imiz.
+
+126
+00:28:38,679 --> 00:28:56,519
+Bunlarla ilgili biz ne yapabiliriz? Her biriyle ilgili şu işle ilgili bir kullanım senaryosu yazıyoruz. Tek tek adım adım işte bu senaryonun aktörü kim? Bundan ilgilenenler kim? Burada akış nasıl işliyor? Madde madde bunları yazdığımız bir senaryomuz oluyor.
+
+127
+00:28:56,519 --> 00:29:07,299
+Şimdi ben bununla ilgili tedavi bilgisi girişini de yazacağım. Ücret ödemeyi de yazacağım. İki tane farklı use case için nasıl yazıyoruz? Göstereceğim.
+
+128
+00:29:07,299 --> 00:29:14,739
+o zaman tedavi bilgisi girişiyle nasıl yazıyoruz tedavi bilgisi girişi yüz case'inin kullanım senaryosunu görelim.
+
+129
+00:29:15,799 --> 00:29:18,699
+Kabaca şöyle bir tablomuz var aslında bunu dolduracağız.
+
+130
+00:29:18,699 --> 00:29:20,460
+Kullanım senaryosu bu şekilde.
+
+131
+00:29:21,159 --> 00:29:26,699
+Şimdi benim senaryumun ismi yani yüz case'imin ismi ve yüz case ismini direkt giriyorsunuz.
+
+132
+00:29:27,919 --> 00:29:29,439
+Tedavi bilgisi girişi.
+
+133
+00:29:33,107 --> 00:29:55,067
+tedavi bilgisi girişinde birinci aktörümüz kim? Bu işi direkt yapan hekim. Direkt o işle ilgili olan hekim. Daha sonra ilgililer ve beklentileri bu işten etkilenecek kişiler kimler olacak? Buna doğrudan ve dolaylı olarak kimler ilgilileri?
+
+134
+00:29:55,067 --> 00:30:18,747
+Burada tabii ki yine baş aktörümüz ilk ilgilimiz oluyor. Hekim ne yapmak ister? Hasta bilgilerine ulaşmak. Ulaşıp ne yapmak ister? Kararlaştırdığı tedavi vardır. Buna dair bilgileri, tedaviye dair bilgileri girmek ister.
+
+135
+00:30:22,900 --> 00:30:24,199
+sisteme girmek isterim.
+
+136
+00:30:25,299 --> 00:30:27,519
+Hasta ne ister bu kısımda?
+
+137
+00:30:27,639 --> 00:30:28,219
+Hasta da
+
+138
+00:30:31,892 --> 00:30:33,611
+sistemden bilgilerini
+
+139
+00:30:37,076 --> 00:30:46,555
+görebilmek ve reçetesine ulaşabilmek ister.
+
+140
+00:30:49,155 --> 00:30:51,515
+Tedavi bilgisi girişi sonrası.
+
+141
+00:30:52,635 --> 00:30:56,676
+Şimdi bu işin, bu use case'in ön koşulu nedir?
+
+142
+00:30:57,015 --> 00:31:01,836
+Tedavi bilgisi yapabilmek istiyorsa bir hekim, önce bir sisteme giriş yapması lazım.
+
+143
+00:31:01,836 --> 00:31:13,636
+hekim kendi işte kendisinin kullanıcı adı vardır şifresi vardır bu kendisine ait kullanıcı bilgileriyle ne yapar sisteme giriş yapar.
+
+144
+00:31:17,107 --> 00:31:35,107
+daha sonra ne yapar? Diğer ön koşulum ne? Bu sefer de sisteme girdim. İlgili hastaya ait bir TC kimliktir veya bir at soyattır bir şey girecek ki hastanın ekranına ulaşsın. Hastanın bu sefer kimlik bilgisini girerek...
+
+145
+00:31:38,259 --> 00:32:00,579
+girerek hasta ekranına ulaşır. İlgili hastanın ekranına ulaşır. Ön koşullarım sağlandı artık hastanın ekranındayım ve ne yapabilirim? Ne yapabilir hekim? Artık hastayla ilgili tedavi bilgisine girebilir.
+
+146
+00:32:00,579 --> 00:32:07,959
+yapılacak işleri ana senarda madde madde yazacağım. İşin tamamlandığını nereden anlayacağım?
+
+147
+00:32:07,959 --> 00:32:27,639
+Yani son yapılan şey eğer şu da yapılmışsa artık iş bitmiştir dediğim şey ne olacak? Reçetenin oluşturulması olacak. Reçete oluşturulur ve yine girilen bilgiler bu planlanan tedaviye dair bilgiler kayıt altına alınmış olur.
+
+148
+00:32:31,988 --> 00:32:41,908
+kaydedilmelidir. Bu bilgiler kaydedilir, reçetesi oluşturuldu. Bunlar benim son koşulum. Bunlar gerçekleşmişse tamamlıyorum, işlem yapılmıştır.
+
+149
+00:32:41,908 --> 00:32:59,227
+Şimdi madde madde ana senaryomu yazacağım. Öncelikle birinci maddede geldim. Ne yapmıştı doktor? Girmişti. Kullanıcı bilgileriniz sisteme girdi. Hastanın ekranına ulaştı. Artık orada şöyle bir modül vardır, bir buton vardır.
+
+150
+00:32:59,227 --> 00:33:11,828
+nedir tedavi bilgisi girişi yap şeklinde hekim de buna basar ve nedir hekim hasta için tedavi girişi yapmayı seçer.
+
+151
+00:33:15,220 --> 00:33:41,560
+ikinci madde de ne yapar? Açılan ekranda artık teşhis koyduğu hastalık neyse. Teşhis edilen hastalığı burada yazar, belirtir. Daha sonra ne yapar? Bununla alakalı bir ilaç verecektir. Reçete hazırlar. Reçete için ilaçları girer. İlaçları ve dozlarını girer.
+
+152
+00:33:45,364 --> 00:33:55,603
+daha sonra ne olur? Sistem reçeteyi onaylar. Sistemler reçetenin onayı yapılır. İlgili reçete hastaya verilir.
+
+153
+00:34:01,748 --> 00:34:24,008
+onayı yapılır ve hastaya verilir. Ana senaryom bu şekilde. Ne yaptım? Tedavi bilgisinde tedavi bilgisi girişi yapmayı seçtim. Seçti doktor, teşhis edilen hastalığı belirtti. Daha sonra reçeteyi yazdı ve en sonunda onayla dedi.
+
+154
+00:34:24,008 --> 00:34:36,128
+Buradaki onaylanın amacı şu eğer işte oradaki ilaçlar bazı ilaçlar bazen raporlar gerektirir ekstra kişinin o reçeteyi alabilmesi için ya da bir de rapor götürmesi gerekir atıyorum eczanede
+
+155
+00:34:36,128 --> 00:34:45,347
+Bunun için rapor gerekecek mi gerekmeyecek mi sistem burada son aşamada bu onayı yap dediğimizde bize bunu belirtecektir
+
+156
+00:34:45,347 --> 00:34:52,847
+Şimdi ana senaryo bu şekildedir bir de bu ana senaryoya ek olarak alternatif akış dediğimiz bir kısım var
+
+157
+00:34:52,847 --> 00:35:05,788
+Şuradaki maddelerden birine alakalı yaşanabilecek bir sıkıntı veya yapılabilecek ekstra bir iş varsa ana senaryodan buna bir böyle bir alt başlık açıyor gibi düşünün.
+
+158
+00:35:06,428 --> 00:35:10,987
+Bu da olursa şu yapılsın şeklinde bir alternatif sunuyoruz.
+
+159
+00:35:10,987 --> 00:35:24,928
+Burada mesela şuraya geldiğimde ikinci maddede dehşit edilen hastalığın orada yazılması hastalığın kayıt altına alınması sırasında doktor ne yapabilir demiştik biz şurada yüz case'mize gelelim
+
+160
+00:35:24,928 --> 00:35:28,647
+Yatarak tedaviye karar verebilirdi o noktada
+
+161
+00:35:28,647 --> 00:35:37,828
+Normal hani default sanki bunu ayaktan tedavi gibi düşünün ama bazı durumlarda yatarak tedaviye karar verdiğimde ne yapacağım?
+
+162
+00:35:37,827 --> 00:36:05,827
+o zaman şunu onu şöyle göstereceğim. Diyeceğim ki o ikinci maddede mesela şöyle bir durum olabilir. A diyeyim buna. Nedir? Hastanın durumu ağırdır. Bu oluştuysa, bu durum oluştuysa yapılacak iş şu. Gelsin, akış şöyle ilerlesin. Şimdi madde madde şu olsun bu olsun diye yazıyorum. Bir. Hastanın durumu ağırsa ne yapılsın? Yatarak.
+
+163
+00:36:07,827 --> 00:36:34,647
+tedavi alması kararlaştırılır. Şu ikinci maddede ne olursa şöyle bir durum olursa bu kararlaştırılır. Burada da bu akışı detaylandırmak istiyorsam ikiye şu yapılır, üç bu yapılır diye devam ederim ama ben tek maddede yazarak bitirebiliyorsam aşka da yazmama gerek yok. Yatarak tedavi alması kararlaştırılır deyip bırakabilirim.
+
+164
+00:36:34,647 --> 00:36:55,627
+Burayla ilgili bir durum budur. Başka bir durum olsaydı 2B deyip işte hastanın refactçisi yoktur gibi bir şeyle belki devam edip hani burada olacak şeyler nedir alternatif olarak A bu olursa B bu olursa C olursa şöyle ilerlerim deyip altına yine madde madde yapılacak işi yazabilirim.
+
+165
+00:36:55,627 --> 00:37:09,587
+sistem böyle ilerliyor. Bu gösterim bu şekilde devam ediyor. Yine bir başka madde için mesela dedik ya şu sonda bir rapor isteyebilir sistem onaylamak için ilaçları, reçeteyi.
+
+166
+00:37:09,587 --> 00:37:32,027
+Bu noktada da o zaman şöyle dedim dördüncü madde için şöyle bir durum oluştuğunda reçetedeki ilaçlardan biri veya birkaçı için özel rapor gerekiyor özel rapor gerekiyordur
+
+167
+00:37:35,860 --> 00:37:44,999
+Bu durumda ne yapılır? Gelirim şöyle alt bir maddede yazarım. Derim ki hekim raporu hazırlar.
+
+168
+00:37:46,799 --> 00:38:04,999
+Buna ikinci madde olarak da şey diyelim, işte raporu hazırladı, raporu sisteme kaydeder deyip böyle hekimin bu noktada yapacağı işleri yazabilirim, söyleyebilirim.
+
+169
+00:38:05,860 --> 00:38:11,459
+bu şekilde de ana akıştaki bir madde için alternatif akışını veriyorum.
+
+170
+00:38:12,040 --> 00:38:18,599
+Genelde burada alternatif akışta yazdığımız şeyleri aslında en doğrusu ve güzelliğidir.
+
+171
+00:38:18,599 --> 00:38:21,440
+Ekstant olarak burada da gösteriyor olmamız.
+
+172
+00:38:21,540 --> 00:38:23,380
+Biz yeterak tedaviyi gösterdik.
+
+173
+00:38:23,979 --> 00:38:30,819
+Burada bir ekstant olarak işte tedavi bilgisine belki özel rapor hazırlanması deyip
+
+174
+00:38:30,819 --> 00:38:35,939
+bunun da bir use case'inin ekstant olarak gösterilmesi daha mantıklı bir konu oluyor.
+
+175
+00:38:36,339 --> 00:38:39,580
+Biz çünkü hem use case'den hem senaryodan çıkarım yapıyoruz.
+
+176
+00:38:39,679 --> 00:38:41,779
+Diyoruz ki bakın burada böyle bir ekstantlik var.
+
+177
+00:38:41,879 --> 00:38:44,400
+Bu iş böyle genişleyebiliyor.
+
+178
+00:38:44,559 --> 00:38:46,800
+Başka bir akışa girebiliyor.
+
+179
+00:38:48,979 --> 00:38:53,239
+Evet kullanım senaryosu örneği de bir tanesi için böyleydi.
+
+180
+00:38:53,339 --> 00:38:55,919
+Tedavi bilgisi girişi için bu şekildeydi.
+
+181
+00:38:57,360 --> 00:38:58,819
+Biz bir tane daha yazalım.
+
+182
+00:38:58,819 --> 00:39:09,339
+Şuradaki ne ile ilgili? Ücret ödeme ile ilgili bir kullanım senaryosu daha yazalım. Pekiştirmiş olalım senaryo yazma işine.
+
+183
+00:39:17,268 --> 00:39:18,407
+yeni sayfa da atayım.
+
+184
+00:39:21,447 --> 00:39:22,927
+Kulalım senaryom artık ne?
+
+185
+00:39:23,127 --> 00:39:23,967
+Ücret ödeme.
+
+186
+00:39:29,012 --> 00:39:33,972
+ücret ödemedeki birinci aktörüm kim? Burada baktığınız zaman
+
+187
+00:39:37,780 --> 00:39:40,679
+kimi yazacağım birinci laktör olarak ücret ödemeye?
+
+188
+00:39:53,811 --> 00:40:09,811
+hasta yazıyorum. Evet hasta benim birinci laktörüm. Şimdi diğer ilgililerim kimler? Bir tanesi zaten fikstir hasta ilgilim olacak.
+
+189
+00:40:12,532 --> 00:40:21,532
+diğer ilgili kimdir bu noktada? ücret ödeme kısmında ilgili olarak başka hangi aktörü görüyorum?
+
+190
+00:40:32,820 --> 00:40:43,820
+Evet, kayıt görevlisi değil mi? Onunla zaten ilişkili olabilecek bir kayıt görevlisi var. Şimdi bunların...
+
+191
+00:40:45,907 --> 00:40:56,708
+beklentilerini yazılım. Hastanın ne yapmak ister? Ödemesini yapmak ister. Ödemesini yapıp muayeneye geçmek ister, muayene olmak ister.
+
+192
+00:40:58,288 --> 00:41:06,588
+Kayıt görevlisi ne yapmak ister? O da hastanın ödemesini alıp sisteme işler.
+
+193
+00:41:14,931 --> 00:41:38,431
+Buradaki ön koşulu hastanın ne yapması lazım? Hastaneye fiziksel olarak gelmiş olması lazım muayene günü. Ve öncesinde de istediğimiz hastanın randevu alması. Hasta randevu almıştır. Ve hasta randevu günü polikliniğe gelmiştir.
+
+194
+00:41:44,755 --> 00:41:59,075
+Hasta randosunu aldı ve kliniğe geldi. Bunlar ön koşulmuş. Şimdi ne yapacağım? Son koşulum yazacağım. Yani bu işin doğru şekilde tamamlandığını nereden bileceğim? Ödemenin başarıyla alınmış olması lazım.
+
+195
+00:41:59,075 --> 00:42:06,516
+alınıp faturanın fatura hazırlanması gerekir.
+
+196
+00:42:08,515 --> 00:42:12,815
+Ve hastanın da artık muayene sırasına girebiliyor olması lazım.
+
+197
+00:42:13,995 --> 00:42:20,715
+Muayeneye alınır. Bunlar benim işin tamamlandığını gösteren kısımlarım.
+
+198
+00:42:20,715 --> 00:42:23,315
+Şimdi senaryomu yazmaya başlıyorum.
+
+199
+00:42:23,315 --> 00:42:25,675
+öncelikle hasta geldi.
+
+200
+00:42:26,555 --> 00:42:28,335
+Sistemde artık neyi görecek?
+
+201
+00:42:28,335 --> 00:42:30,995
+Sistem hastanın
+
+202
+00:42:34,963 --> 00:42:51,183
+aldığı randevuya göre, belki ünvanlara göre bir şey vardır, ücret değişiyordur. Prof ayrıdır, doçent ayrıdır. Burada hastanın aldığı randevuya göre ne yapsın? Ödenecek tutarı göstersin.
+
+203
+00:42:51,183 --> 00:43:14,423
+bunu gösterdi. Daha sonra hasta ne yaptı? Hasta ödemeyi yapar ve sistem ne yapar? Ödeme yapıldığına dair faturayı oluşturur.
+
+204
+00:43:14,423 --> 00:43:35,363
+Şimdi ana akışım böyle. Ücretimi gördüm, ödememi yaptım, faturamı aldım. Burada biz alternatif olarak 100 case'de gösterdiğimiz bir şey vardı. Neydi ödeme kısmında? Extant olayım vardı. Anlaşmalı kurumla ilgili bir extant.
+
+205
+00:43:35,363 --> 00:43:37,363
+Şimdi geleyim
+
+206
+00:43:37,363 --> 00:43:40,363
+Deyim ki
+
+207
+00:43:40,363 --> 00:43:42,563
+Hasta
+
+208
+00:43:46,195 --> 00:44:04,536
+poliklinikle anlaşmalı bir kurumda çalışıyordur. O zaman ne yapacağım? Akışım şöyle ilerleyecek.
+
+209
+00:44:04,536 --> 00:44:16,095
+belirlenen indirim oranı indirim oranında ücret alınacak. İndirim oranı uygulanarak ücret alınacak.
+
+210
+00:44:17,376 --> 00:44:27,596
+Ücret alınır diye daha doğru bir ifade. Böyle bir anlaşmalı kurum varsa indirim oranında ne yaptım? Ücreti aldım.
+
+211
+00:44:27,595 --> 00:44:36,575
+Bir diğer nokta ödeme ile ilgili işte hasta kart ile ödeme yapmaya çalışıyordur.
+
+212
+00:44:36,575 --> 00:44:44,435
+Orada mesela şunu yazabilirim. Bu da hani farklı bir maddeyi bundan başka bir case oluşursa nasıl gösteriyoruz onu söylemek için.
+
+213
+00:44:44,595 --> 00:44:55,175
+Şöyle yazabilirim. 2B diyorum bu sefer. Bu yine iki numaralı akışta. Bir başka bundan başka bir şey oluyor.
+
+214
+00:44:55,175 --> 00:44:58,815
+O da nedir? Ücret ödeme de sorun yaşanması.
+
+215
+00:44:59,075 --> 00:45:00,635
+Katile ödeme alırken
+
+216
+00:45:05,427 --> 00:45:06,067
+oluşur.
+
+217
+00:45:09,492 --> 00:45:16,492
+O noktada da ne yapılır? Ödemenin vakit yapılması istenir.
+
+218
+00:45:24,596 --> 00:45:51,596
+bu şekilde yazdığımda da dediğim gibi bir madde için böyle olursa bir A diyorum onun akışını veriyorum 1-2-3 aynı madde için bambaşka bir durum oluşmuşsam B diyorum onun akışını veriyorum işte 1-2-3 ben burada 2-3'leri yazmama gerek kalmadı tek madde de yapılacak işi yazabildim.
+
+219
+00:45:48,596 --> 00:46:11,335
+Evet, kullanım senaryosu örneğimiz de bu şekildeydi. Bu senaryoyu nasıl yazdık, görmüş olduk. Şunları mutlaka bilmem gerekiyor. Bir senaryoda neler yazılmalı? Aşte birinci laktörüm, ilgili beklentim kim? Hoşolarım. Ana ve alternatif senaryolarımı vermem gerekiyor.
+
+220
+00:46:16,275 --> 00:46:30,275
+Şimdi soruda iki maddeyi tamamladık. Yus case çizdik, senaryoyu yazdık. Şimdi sırada da class diagramımız var. Sınıf diagramımız.
+
+221
+00:46:33,275 --> 00:46:43,275
+Geldim bu bölgede yine bu, Violet'ta. Yeni diyorum, ne oluşturacağım? Class diagramı seçtim.
+
+222
+00:46:47,155 --> 00:47:04,435
+Şimdi sınıf diagramları nesne yönelik programlamadan aşina olduğumuz diagramlar. Orada biz sürekli bir sistemi gerçeklerken sınıf diagramı üzerinden gidiyorduk. Çünkü sınıf diagramlarında biz birçok bilgiyi görebiliyorduk. O sınıfla alakalı. Ve bunların içini dolduruyorduk.
+
+223
+00:47:04,435 --> 00:47:16,375
+Şimdi bir sınıf diagramı şurada class dediğim kısımdan sistemdeki bir sınıf nelere sahiptir neleri tutar?
+
+224
+00:47:16,375 --> 00:47:28,955
+Mesela ilk olarak ben çalışan modülü çalışan kısmını yazarak gitmek istiyorum. Bunun için çalışan isimli bir tane sınıf oluşturacağım.
+
+225
+00:47:28,955 --> 00:47:51,415
+Bizim sınıf diagramlarında neydi? Üç bölüme ayrılırdı. İlk yukarıda biz çalışanın sınıfın ismini yazardık. Orta kısımda değişkenler olurdu. Sınıf değişkenleri, attribütler dediğimiz bu sınıftan üretilen bir nesnenin sahip olduğu özelliklerdik nevi.
+
+226
+00:47:51,416 --> 00:48:07,935
+ve en alt kısımda neleri yazardık? Metotlarını yazardık bu sınıfın. Biz şimdi bir sistemin diagrama dökülürken analist tarafında olduğumuz için şu an metot detayına girmeyeceğiz.
+
+227
+00:48:07,935 --> 00:48:15,736
+Bu kısmı yazmayacağız. Class diagramımız da şu an sınıfın ismini vereceğiz ve attribütlerini belirteceğiz.
+
+228
+00:48:15,736 --> 00:48:27,075
+Şimdi benim çalışanlarım için tuttuğum bazı bilgiler vardı. Göreve başlama tarihleri vardı mesela.
+
+229
+00:48:30,931 --> 00:48:32,371
+benden diyordu bunları tut.
+
+230
+00:48:33,831 --> 00:48:34,431
+Sonra
+
+231
+00:48:38,099 --> 00:48:46,259
+eğer bu kişi ayrılmışsa, görevden ayrılma vardı. Eğer ayrılmamışsa da bu zaten mal bir değer olur.
+
+232
+00:48:49,119 --> 00:49:05,539
+Ve bazı iletişim bilgileri tutmamı istiyordu. İşte temel kimlik bilgileri yanı sıra işte atı soyattır, TC kimliktir. Bir de adres telefon bilgilerini tutmamı istiyordu ama onları buraya böyle kalkıp tek tek yazmak istemiyorum atı soyatçı durumudur.
+
+233
+00:49:05,539 --> 00:49:15,059
+çünkü çalışanlarda da bu bilgileri tutacağım. Bir de hasta tarafı var. Hastalarda da tutacağım bu bilgileri. O yüzden ben şöyle bir tasarım yapmak istiyorum.
+
+234
+00:49:16,299 --> 00:49:24,499
+İletişim bilgileri, erişim bilgileri diye bir sınıf yaparım diyorum. O sınıfın nesnesi işte soyattır, iletişim bilgileridir. Bunlara sahip olur.
+
+235
+00:49:24,499 --> 00:49:34,319
+ve işte hasta da çalışan da bu sınıfla bir association kurarım, bir ilişki kurarım.
+
+236
+00:49:34,319 --> 00:49:39,959
+O sınıfta nesne kullanır ve onlar da bu şekilde nedir? Bir attribute'ünü alır.
+
+237
+00:49:40,119 --> 00:49:47,320
+Bir özellik olarak o iletişim bilgileri işte birkaç böyle file 5-6 tane veriyi bu şekilde tutabilirim.
+
+238
+00:49:48,139 --> 00:49:50,439
+Diyorum o yüzden onları buraya yazmıyorum şimdi.
+
+239
+00:49:51,479 --> 00:49:52,919
+Bunu okeyliyorum.
+
+240
+00:49:54,500 --> 00:50:00,659
+Evet, 3 bölümlü class diagramım oluştu.
+
+241
+00:50:01,559 --> 00:50:07,540
+Şimdi benim ney vardı sistemimde? 4 tip çalışandan bahsetmişti bana.
+
+242
+00:50:08,540 --> 00:50:15,699
+Doktoru, hemşiresi, güvenliği, hizmetlileri. Bunların her birini her sınıf olarak yazıyorum.
+
+243
+00:50:20,148 --> 00:50:22,148
+ve geçiririm.
+
+244
+00:50:25,108 --> 00:50:29,568
+ve hepsinin hızlıca isimlerini yazayım.
+
+245
+00:50:31,487 --> 00:50:32,667
+Hemşire vardı.
+
+246
+00:50:39,987 --> 00:50:41,867
+güvenlik görevlimiz vardı.
+
+247
+00:50:45,684 --> 00:50:47,924
+ve izmetli.
+
+248
+00:50:52,755 --> 00:51:00,515
+Şimdi burada bu klaslar, biz kalıtıma hatırlayın ne yapıyorduk?
+
+249
+00:51:01,855 --> 00:51:14,315
+Eğer birden fazla bir sınıf yukarıdaki bir üst sınıftan aynı özellikleri kullanacaksa, biz bunların her birine tek tek işte hekimin de ayrılış tarihi göreme başlama tarihi yemişlerinin de şusu busu demek yerine
+
+250
+00:51:14,315 --> 00:51:21,615
+bir sınıf yapıp buradan kalıtımla diyorduk ki ben bunun bütün özelliklerini kullanabilir hale geleyim.
+
+251
+00:51:21,615 --> 00:51:24,135
+Tek tek her bir için ayrı ayrı yazmayayım.
+
+252
+00:51:25,755 --> 00:51:30,455
+O zaman bunun için de inherits dediğim kısmı kullanıyorum.
+
+253
+00:51:30,755 --> 00:51:34,976
+Hekim çalışandan inherit olmuştur, kalıtımla gelmiştir.
+
+254
+00:51:34,975 --> 00:51:44,335
+aynı şekilde diğerleri de bu şekilde oluşmuştur diyorum.
+
+255
+00:51:58,132 --> 00:52:23,351
+gösterelim. Bunlar bu dördü bu sınıftan oluşmuştur. Ama bana soru da bir de doktorla ilgili ekstra bir alandan daha bahsediyordu. Diyordu ki dört türü çalışan var. Doktorların bir de diploma numaraları bulunmalı. Demek ki bunlara ek olarak doktorun bir de nesi olacakmış? Diploman olsa olacakmış.
+
+256
+00:52:23,351 --> 00:52:31,071
+burada da değişkenin, attribute'in ismi ve neyini verirdik, tipini verirdik.
+
+257
+00:52:31,071 --> 00:52:32,571
+Bu da bir integer değişken olsun.
+
+258
+00:52:34,352 --> 00:52:35,352
+Bu özelliklere ek.
+
+259
+00:52:35,911 --> 00:52:37,411
+Doktor'da bir de diploma no'su var.
+
+260
+00:52:37,551 --> 00:52:39,611
+Diğerleri bunların hepsini kullanıyor.
+
+261
+00:52:41,091 --> 00:52:43,731
+Şimdi dedik ki erişim bilgilerini ben ayrı bir sınıfta tutacağım.
+
+262
+00:52:43,871 --> 00:52:44,812
+Onu da yazayım burada.
+
+263
+00:52:48,659 --> 00:52:57,819
+şöyle geleyim diyeyim ki, erişim isimli bir sınıfım olsun. Burada bu bilgileri tutayım kişiyle ilgili. Adı olsun kişinin.
+
+264
+00:53:02,516 --> 00:53:04,835
+soyadını tutayım.
+
+265
+00:53:07,775 --> 00:53:10,496
+Kimlik, noosunu tutayım.
+
+266
+00:53:14,931 --> 00:53:33,772
+telefon numarası tutacağım. Burada telefonun birden fazla bir değeri olabilir. Nedir? İş telefonu olacak, cep telefonu, ev telefonu gibi farklı telefonlar. Bunlar o zaman bir dizide tutayım istiyorum bunları.
+
+267
+00:53:36,291 --> 00:53:38,971
+Dizi gösteririm. Şöyle yapabilirim.
+
+268
+00:53:42,452 --> 00:53:49,611
+bir de adres tutacağım bu kişiyle ilgili ev adresi. O da yine string tipinde olsun.
+
+269
+00:53:52,191 --> 00:54:04,671
+Şimdi ben bunları dedim ki ayrı bir sınıf olarak yazmam. İleride burada bir hasta sınıfı yaptığımda hasta da buradan nesnen kullanır deyip, çalışan da buradan kullanır deyip çok rahatlıkla bir association kurmamı sağlayacaktı.
+
+270
+00:54:04,671 --> 00:54:09,551
+hemen yeri gelmişken o ilişkiyi de gösterelim.
+
+271
+00:54:10,151 --> 00:54:12,551
+Biz burada sınıflar arasında ne yapıyorduk?
+
+272
+00:54:12,632 --> 00:54:13,711
+İlişkilerini kuruyorduk.
+
+273
+00:54:13,711 --> 00:54:19,792
+Diyorduk ki bir sınıf diğerinin nesnesini kullanıyorsa şöyle gösteriyorum.
+
+274
+00:54:20,952 --> 00:54:25,132
+Bununla asıl şey çalışan erişimin nesnesini kullanır.
+
+275
+00:54:25,231 --> 00:54:27,031
+Bunu dedikten sonra buraya da geleyim.
+
+276
+00:54:27,632 --> 00:54:29,651
+Çift tıklayarak değişimi yapabiliyorum.
+
+277
+00:54:29,652 --> 00:54:39,251
+Şuraya yazayım diyeyim ki çalışan sınıfı erişim sınıfından bir nesne kullanacak.
+
+278
+00:54:41,632 --> 00:54:49,532
+Erişim nesne, erişim tipinde, sınıfın tipinde, isimde erişim isimli bir nevmi olacak, attributum olacak.
+
+279
+00:54:49,691 --> 00:54:51,812
+Onun içinde de şu bilgiler tutulacak.
+
+280
+00:54:53,011 --> 00:54:54,431
+Bunları tutuyorum.
+
+281
+00:54:54,431 --> 00:55:15,251
+Burada nedir? Bir çalışanın bir erişim bilgisi olacağı için bu ilişkiyi ben birebir kurgulayacağım. Şunun ilişki üzerine de çift tıkladığımda association üzerine yazabilirim. Start label dediği okum başladığı uç ve end label dediği bittiği uç birebir.
+
+282
+00:55:15,251 --> 00:55:25,531
+ortaya işte bir açıklama yazmak istiyorsak genelde bu bunu kullanır işte bundan nesne alır gibi şeylerde bu ortaya yazabiliyoruz.
+
+283
+00:55:26,251 --> 00:55:29,271
+Ben yazmıyorum direkt birebir ilişkiyi gösterdim bu şekilde.
+
+284
+00:55:32,471 --> 00:55:36,811
+Şimdi geleyim hastayı da göstereyim şuradan.
+
+285
+00:55:40,244 --> 00:55:43,443
+hastada erişim bilgisi olacak.
+
+286
+00:55:45,303 --> 00:55:52,343
+hasta sınıfında da erişimi tuttuğum bir bilgi olacak ama burada şunu istiyorum.
+
+287
+00:55:53,263 --> 00:55:55,023
+şöyle yapmak istiyorum yani tasarımı.
+
+288
+00:55:56,664 --> 00:56:02,683
+şimdi ben iki sınıf arasındaki bu association'ı kurduğumda yine geldim association'da.
+
+289
+00:56:03,643 --> 00:56:06,043
+yine buna da birebir ilişki diyeceğim.
+
+290
+00:56:06,623 --> 00:56:09,063
+bir hastanın bir iletişim, erişim bilgisi olur.
+
+291
+00:56:09,063 --> 00:56:15,644
+Ben bunu yazdıktan sonra şuradaki gibi illa şeyi göstermek zorunda değilim
+
+292
+00:56:15,644 --> 00:56:21,683
+Mesela hasta işte erişim nesnesi kullanır, burada bir attribute vardır gibi bir şey göstermeme gerek yok
+
+293
+00:56:21,683 --> 00:56:23,924
+Biz buna hidden information diyoruz
+
+294
+00:56:23,924 --> 00:56:31,744
+Ben şu UML'e baktığım zaman bu sınıfla bu sınıf arasında bir ilişki görünüyorsa o zaman ben şunu zaten çıkarımlı yaparım
+
+295
+00:56:31,744 --> 00:56:37,324
+Hasta sınıfı bir erişim nesnesi kullanıyor, buradan bir nesne oluşturup kullanıyor derim
+
+296
+00:56:37,323 --> 00:56:57,523
+şu UML'deki bu ilişki bana bunu gösterir. Bunu yazmak veya yazmamak burada bir opsiyonel oluyor. UML'den çıkarabiliyorsam o zaman buna diyorum ki bu bir gizli bilgi ben bunu UML'den çıkarabiliyorum. Burada açık açık göstermeme gerek kalmıyor. O yüzden burada mesela bunu yazmayacağım. Bu ifade bunun buradan nesine kullandığını bana gösterecek.
+
+297
+00:56:57,523 --> 00:57:14,803
+hastayı yazdıktan sonra hasta bir de nedir? Randevu alır hastanın olayı. Oraya gelip şurada da bir randevu sınıfı, randevularla ilgili bilgilerin tutulduğu sınıfı yazdığımda.
+
+298
+00:57:14,803 --> 00:57:35,283
+Burada da şöyle bir ilişki kuracağım. Bir hastanın birden fazla randevusu olabilir. O zaman ne diyorum? Bir hasta birden fazla randevu alabilir ilişkisi nasıl gösteriliyordu?
+
+299
+00:57:35,284 --> 00:57:50,744
+start kısmı bir en okun uç kısmı da yıldız attığım zaman neydi? Bir veya birden çok randevusu olabilirdi bir hastam. Böyle bir gösterimle verebiliyorum.
+
+300
+00:57:52,824 --> 00:58:03,824
+Aynı şekilde şurada hasta ve hekim arasında bir reçete isimli bir sınıf olursa ben orada da nedir? Tedavi ile ilgili bilgileri görüntülediğim aslında.
+
+301
+00:58:03,824 --> 00:58:15,824
+bakalım işte ilaçlar nedir işte reçete nasıl oluşturulmuştur kim oluşturmuştur bunları görüntüleyebildiğim bir sınıf olsa o da mantıklı olacak onda geliyorum şuraya bir reçete sınıfı koyuyorum.
+
+302
+00:58:23,380 --> 00:58:40,019
+Reçete ile ilgili bazı detaylı bilgiler gireceğim. Şimdi sınıf değişkenleri, attribütleri neler olur? Reçetenin bir numarası olur. Daha sonra onu bir düzenleyen bir hekim vardır. Hekim tipindedir.
+
+303
+00:58:42,759 --> 00:58:47,499
+Daha sonra o reçetenin bir düzenlendiği tarih vardır.
+
+304
+00:58:52,052 --> 00:59:16,052
+Bu arada şuraya koyduğum tireleri hatırlayalım ne anlama geliyordu? Bunlar bu değişkenlerin, bu attributelerin private olduğunu gösteriyor. Yani sınıf içerisinden erişilebiliniyordu. Artı olsaydı işte metotlarda genelde artı koyarak artı işte şunu yap bunu yap şeklinde yazardık. Onlar public oldukları için öyleydi. Tire koymamızın sebebi de private olduklarından dolayıydı.
+
+305
+00:59:16,052 --> 00:59:32,912
+Reçetenin başka neleri var? İşte bu reçeteki bir hasta üzerine sonuçta yapılıyor. O hastanın kim olduğu ve ilaçlarımız var. Reçetedeki bulunan ilaçlar.
+
+306
+00:59:32,912 --> 00:59:46,831
+İlaçları da ben ayrı bir sınıfta tutmak istiyorum. Çünkü her bir ilaçın nedir bir sürü şey vardır, kendine ait bilgileri vardır, adı vardır, içeriği vardır, kullanıldığı hastalık vardır gibi gibi.
+
+307
+00:59:47,752 --> 00:59:53,392
+Bunun için de ben bir sınıf kullanacağım, ilaç sınıfı yapacağım şimdi, yazacağım.
+
+308
+00:59:53,392 --> 01:00:02,132
+bu ilaçlar dediğimde ilaç sınıfından bu ilaç tipindeki nesneleri tutan bir dizi olsun istiyorum aslında.
+
+309
+01:00:02,531 --> 01:00:04,452
+O yüzden onu da şöyle gösterdim.
+
+310
+01:00:04,571 --> 01:00:09,732
+Reçetenin içinde bir de ilaç tipinde nesneleri tutan bir ilaçlar dizisi olacak.
+
+311
+01:00:09,732 --> 01:00:13,971
+Dediğim gibi her bir ilaç için bilgilerim burada tutuldu.
+
+312
+01:00:14,092 --> 01:00:20,052
+Ayrı bir sınıf yapacağım ki daha böyle sistemi düzgün şekilde kurgulamış olalım.
+
+313
+01:00:20,151 --> 01:00:20,931
+Buna okey dedim.
+
+314
+01:00:22,011 --> 01:00:22,831
+Şimdi geliyorum.
+
+315
+01:00:23,391 --> 01:00:35,511
+Şuraya bir tane daha klas yapacağım dedim. İlaçları burada tutacağım. İlaçların burada ayrı bir şekilde tutulmasını istiyorum.
+
+316
+01:00:35,511 --> 01:00:48,111
+Burada hızlıca bir özellik ekleyelim. İlacın bir adı vardır. Dediğimiz gibi daha detaylandırılır. Ben şimdi pratik olarak bir özellik yazıp geçiyorum.
+
+317
+01:00:48,111 --> 01:01:17,951
+şimdi ilacı da yazdım bunların arasında şimdi şöyle bir ilişki kurmak istiyorum bir reçetede nedir bir veya birden fazla ilaç olur o ilaçlar burada şeyi verebiliriz evet şurada yaptığımız gibi bire çok ilişki kurarız bir reçetede ok çıkarırım birden çok ilaç olur diyebilirim ama burada
+
+318
+01:01:17,951 --> 01:01:35,991
+ilişki bir tık daha böyle o reçeteye özel işte o reçete 4 tane ilaç var 4 ilaç o reçeteye özel başka bir reçetede işte 3 ilaç var o reçeteye özel işte o ilaç da orada bulunuyor gibi bir tık böyle bir kuvvetli bir ilişki var.
+
+319
+01:01:36,552 --> 01:01:47,931
+Hatırlayalım Java'da nesne yönelik programlamada şundan bahsediyorduk ilişkiler böyle temelde 3 çeşit demiştik bir association vardı şurada gösterdiğimiz direkt bir ucu normal başlamıştık.
+
+320
+01:01:47,951 --> 01:02:06,911
+başlayıp diğerine okla bitirdiğim. Bunlar association'larda en temel ilişki tipi. Bu bir tık daha daraldığında, bir tık kuvvetlendiğinde aggregation yapıyorduk. Yani bir araya getirilme. Burada da mesela ilaçlar bir reçete üzerinde bir araya getirilmiş diyorum. Ben burada yüzden aggregation kullanmak istiyorum.
+
+321
+01:02:06,912 --> 01:02:27,412
+Aggregation'da şuradaki ne yapıyor? Is an aggregate of reçete. İlaç dediğim şey burada reçetede toplanmıştır manasında. Şöyle içi boş bir elmas çiziyordum.
+
+322
+01:02:27,412 --> 01:02:44,031
+bunun olayı şu taraf küçük parçalar burası da bütün bütün tarafında oluyordu elmasın ucu bir reçete de birden fazla ilaç bulunur o reçete özelliğinde işte o ilaçlar bir araya toplanmış getirilmiş olur diyordum
+
+323
+01:02:45,012 --> 01:03:02,012
+Burada tekrar ediyorum, şu şekilde bir ilişki kurmakta da herhangi bir sorun yok. Yani işte bir reçete de birden çok olur, ilaç olur demekte de bir sorun yok ama burada bir tık daha reçete özelinde bir gruplama olduğu için böyle yazmak daha doğru bir tasarım oluşturuyor.
+
+324
+01:03:02,012 --> 01:03:19,012
+oluşuyor. Şurada da ilişkilerimi kurayım yine burada mesela normal bir association kuracağım yine bir hastanın üzerinde düzenlenmiş birden fazla reçete olabilir. Bu da yine bire çok bir ilişki.
+
+325
+01:03:22,452 --> 01:03:31,872
+bir hastanın birden çok reçetesi olur dedim. Ve aynı şekilde bir hekim de birden çok ne yapmıştır? Reçete düzenlemiştir.
+
+326
+01:03:31,872 --> 01:03:48,372
+Bunu da yine bir de çok gösterdim. Bu şekilde oluşturduğumda hekimin birden çok reçetesi, hastanın birden çok reçetesi bulunuyor diyebiliyorum.
+
+327
+01:03:48,372 --> 01:03:53,591
+hemen şu hekimi yapmışken bir de bizim başhekimimiz vardı.
+
+328
+01:03:53,591 --> 01:03:56,672
+Onunla ilgili de ayrı bir sınıf oluşturmam gerekiyor.
+
+329
+01:03:56,792 --> 01:04:04,871
+Çünkü başhekiminde gerçekleştirdiği şu an metotları görmüyoruz ama bu sınıfların gerçekleştirdiği işler metotlarında bulunuyor.
+
+330
+01:04:04,952 --> 01:04:08,191
+Hekimin de başhekiminde gerçekleştirdiği ayrı işler vardı.
+
+331
+01:04:08,792 --> 01:04:11,071
+O yüzden ayrı bir sınıf olarak onu gösteriyorum.
+
+332
+01:04:11,712 --> 01:04:14,071
+Ve o da artık nedir?
+
+333
+01:04:14,191 --> 01:04:15,731
+Inherits'tir.
+
+334
+01:04:15,831 --> 01:04:16,312
+Nereden?
+
+335
+01:04:17,292 --> 01:04:18,331
+Kalıtımla gelmiştir.
+
+336
+01:04:18,371 --> 01:04:20,952
+hekimden kalıtımla oluşmuştur başhekimler.
+
+337
+01:04:26,003 --> 01:04:48,003
+Şimdi bu kısmı yazdım. Bir de şunu eklemek istiyorum. Şu sağ taraftaki boşluğa. Bir hastane var. O hastanenin bölümleri var. Ve o bölümlerde çalışan, çalışanlar var. Onu da detaylı şekilde göstermek istiyorum. Şöyle geldim. Diyorum ki bir hastane.
+
+338
+01:04:48,003 --> 01:04:59,143
+Bu hastane ile ilgili tutacağım tabi ki bilgiler var. O hastanenin işte adı var. Kuruluş tarihi var.
+
+339
+01:05:03,219 --> 01:05:13,299
+bu şekilde hastanenin bilgileri olsun. Ve bu hastanenin neleri var? Bölümler var. Şimdi bölümleri de yazayım ki ilişkilendireyim aradan.
+
+340
+01:05:14,319 --> 01:05:19,719
+Hastanenin bölümleri dediğimiz her bir branş işte kadın doğum vardır, kulak burun boğaz vardır vs.
+
+341
+01:05:21,719 --> 01:05:24,039
+Bu bölümlerin de bir bölüm adı vardır.
+
+342
+01:05:30,579 --> 01:05:42,759
+ve bu bölümlerde neler vardır? Çalışanlar vardır değil mi? Bölümler neyi tutar? Çalışan tipinde aslında nesneleri tutar.
+
+343
+01:05:42,759 --> 01:05:54,039
+Yani ben burada basitçe bir dizide göstereceğim. Mesela diyeceğim ki bu bölüme ait çalışanlar isimli bir dizi olsun. Çalışan tipinde, şu sınıf tipinde de nesneleri tutsun.
+
+344
+01:05:58,003 --> 01:06:03,083
+Bunu dediğim zaman bir bölümün işte adı var ve çalışanları var şekline göstermiş oluyorum.
+
+345
+01:06:03,223 --> 01:06:08,384
+Şimdi gelelim bunun arasındaki bu ilişkiyi kurmaya.
+
+346
+01:06:08,623 --> 01:06:11,964
+Nasıl bir association, aggregation yoksa composition kuruyorum.
+
+347
+01:06:13,363 --> 01:06:19,104
+Şimdi şurada dedik ya ilaç ve reçete arasında bir tık kuvvetliydi ilişki.
+
+348
+01:06:19,483 --> 01:06:20,863
+Orada aggregation yaptım.
+
+349
+01:06:21,803 --> 01:06:26,924
+Buradaki ilişki, hastane ve bölüm arasındaki ilişki bunun da bir tık üstünde bir kuvvetli.
+
+350
+01:06:26,924 --> 01:06:27,363
+Neden?
+
+351
+01:06:28,003 --> 01:06:40,323
+Çünkü şuradaki ilişkide reçeteyi ortadan kaldırırsanız o reçete silinsin gitsin olmasın ilaçlar var olmaya devam eder.
+
+352
+01:06:40,443 --> 01:06:43,443
+Yani ilaç nesneleri tanımlı olarak vardır şu ilaç bu ilaç diye.
+
+353
+01:06:44,383 --> 01:06:50,323
+Ama burada hastane olmazsa bölüm diye bir şey de olmaz.
+
+354
+01:06:51,103 --> 01:06:55,323
+O yüzden bölüm ve hastane arasında çok kuvvetli bir ilişki var.
+
+355
+01:06:55,323 --> 01:06:58,283
+Yani bu bölüm direkt bu hastaneye ait bir bölüm.
+
+356
+01:06:59,524 --> 01:07:08,164
+Hastane gittiği zaman bölüm de gitmeli şeklinde bir mantık oluşursa biz burada kompozisyon dediğimiz ilişkiyi kuruyoruz.
+
+357
+01:07:09,084 --> 01:07:11,864
+Buradaki elmasın içi bu sefer dolu oluyor.
+
+358
+01:07:13,103 --> 01:07:19,044
+Burada bölüm nesneleri var evet ama o nesneler tek başlarına var olabilen bir şey değiller.
+
+359
+01:07:19,044 --> 01:07:30,584
+ancak hastane altında oluşturulmuş hastaneye birebir ilişkiyle onun bir parçası olacak şekilde oluşturulmuş nesneler olduğu için burada kompozisyon ilişkisi kurdu.
+
+360
+01:07:32,524 --> 01:07:36,044
+Bu da yine dediğimiz gibi bireçok bir ilişki versiyonu.
+
+361
+01:07:36,823 --> 01:07:40,343
+Bir hastane burası bir olan kısımda elmasın ucu görünüyor.
+
+362
+01:07:40,603 --> 01:07:43,603
+Birden çok bölümü vardır ama kuvvetli bir ilişki.
+
+363
+01:07:43,743 --> 01:07:46,364
+Bu bölümler direkt o hastaneye aittir.
+
+364
+01:07:46,364 --> 01:07:53,024
+Bunu dedikten sonra mesela burada şunu da yine tekrar edelim.
+
+365
+01:07:53,423 --> 01:07:59,243
+Burada bölümler diye bir aslında dizi de tutacağım ama bunu burada yazmadım.
+
+366
+01:07:59,383 --> 01:08:02,444
+Neden? Çünkü bu YML'den bunun çıkarımını yapabilirim.
+
+367
+01:08:02,544 --> 01:08:05,283
+Yani bir hastane altında evet bölümler isimli bir dizi var.
+
+368
+01:08:05,384 --> 01:08:08,983
+Bu arada bölüm isimlerini tutuyorum ama bunu burada göstermedim.
+
+369
+01:08:09,063 --> 01:08:11,923
+Çünkü bu ilişki bana zaten böyle bir şeyin olduğunu söylüyor.
+
+370
+01:08:11,923 --> 01:08:18,224
+Diğer tarafta şurada çalışan ve bölüm arasında dizisini yazdım.
+
+371
+01:08:18,423 --> 01:08:21,183
+Dedim ki bölümde çalışan tipinde nesnelere tutacak.
+
+372
+01:08:21,763 --> 01:08:28,563
+Bunların arasındaki ilişki aggregation'a daha uygun.
+
+373
+01:08:28,724 --> 01:08:29,703
+Neden daha uygun?
+
+374
+01:08:30,063 --> 01:08:36,283
+Çünkü bir çalışan ve bölüm arasına baktığımız zaman bir çalışan başlı başına var olabilen bir nesne.
+
+375
+01:08:36,283 --> 01:08:40,763
+Bir bölüm kapatıldığı zaman bir bölümün hemşiresi ne yapar?
+
+376
+01:08:40,763 --> 01:08:44,183
+başka bölüme verilir. O çalışanı bize val gelmez.
+
+377
+01:08:44,763 --> 01:08:46,323
+Ama şu an için evet çok kuvvetli.
+
+378
+01:08:46,323 --> 01:08:49,243
+Yani asoş yaşına göre daha bir tık kuvvetli bir ilişki.
+
+379
+01:08:49,663 --> 01:08:55,183
+Ama kompozisyon kadarda ona aitlik başka bir yerde kullanılmama gibi bir durum olmadığı için
+
+380
+01:08:55,183 --> 01:08:58,444
+burada ben aggregation kullanacağım.
+
+381
+01:09:02,131 --> 01:09:04,572
+şöyle düzeltelim diyarımı biraz.
+
+382
+01:09:07,691 --> 01:09:10,852
+Burada kullanacağım ilişki dedim ki aggregation.
+
+383
+01:09:12,271 --> 01:09:15,731
+Çalışanlar evet bu bölüme ait ama nedir?
+
+384
+01:09:15,731 --> 01:09:19,691
+Bölüm kapanırsa, bölüm nesnesi silinirse buradaki çalışana bize var.
+
+385
+01:09:20,171 --> 01:09:23,591
+Gelmiyor, o çalışan başka bölüme aktarılabiliniyor.
+
+386
+01:09:23,591 --> 01:09:40,591
+Evet sınıflar içinde genel olarak tasarımımızı bu şekilde gösterebiliyoruz. Başka göstermediğimiz oksuz ilişkisiz bir sınıf kalmamış. Hepsine ilişkilerini göstermişiz.
+
+387
+01:09:40,591 --> 01:09:56,091
+Evet benim bakıyorum başka göstereceğim bir şey kaldı mı? Kalmamış bugün anlatacaklarım bu kadardı sizin sormak eklemek istedikleriniz varsa alabilirim
+
+388
+01:10:06,355 --> 01:10:24,435
+Bugün uygulamamızda ne yaptık? use case şemamızı çizdik, senaryo yazdık ve bir de class diagramımızı oluşturmuş olduk. Bu şekilde uygulamamız.
+
+389
+01:10:26,228 --> 01:10:36,307
+sorunuz yoksa arkadaşlar ben bugünkü dersi bitiriyorum. Bu dosyaları AVS sayfamda paylaşacağım. Oradan indirebilirsiniz.
+
+390
+01:10:41,908 --> 01:10:51,368
+sorusu olan da yoksa hepinize katıldığınız için teşekkür ediyorum. İyi bayramlar diliyorum şimdiden. Sınavlarınızda da başarılar.
+
+391
+01:11:16,787 --> 01:11:18,827
+İyi bayramlar, görüşmek üzere

@@ -1,0 +1,1963 @@
+1
+00:00:18,420 --> 00:00:26,159
+Merhabalar, bugün ders yapacağız, uygulama yapacağız diye konuşmuştuk. Haftaya tekrar bıraktık uygulamayı.
+
+2
+00:00:29,220 --> 00:00:39,199
+Bugün geri kalan konulardan hem geçen haftaki yazılım kalite yönetimi ve test konusunu tekrarlayacağız.
+
+3
+00:00:39,199 --> 00:00:48,099
+hem de proje yönetimiyle ilişkili, yazılım proje yönetimiyle ilişkili konulara geçeceğiz bugün.
+
+4
+00:00:48,099 --> 00:00:57,059
+Biraz daha arkadaşlarınızın katılmasını bekliyorum. Derse başlayacağım şimdi.
+
+5
+00:03:24,403 --> 00:03:29,223
+daha eklenen olmadı derse onun için başlayalım.
+
+6
+00:03:32,979 --> 00:03:37,579
+Geçen haftaki derste olmayan arkadaşlarınız var mıydı?
+
+7
+00:03:42,451 --> 00:03:46,631
+yazılım kalitesiyle ilişkili bölümün üzerinden şöyle bir geçelim mi?
+
+8
+00:03:50,484 --> 00:04:03,803
+yoksa herkes vardı ise yeni konuya mı geçeyim? şöyle bir üzerinden geçelim o zaman.
+
+9
+00:04:10,867 --> 00:04:12,467
+Evet, ekran paylaşacağım şimdi.
+
+10
+00:05:11,956 --> 00:05:16,936
+Öncelikle geçen haftaki konularımızın üzerinden hızlıca gidelim.
+
+11
+00:05:17,655 --> 00:05:27,135
+Öncelikle yazılım mühendisliği için ilk derslerde bir tanım yapmıştık.
+
+12
+00:05:27,135 --> 00:05:50,555
+Yazılım mühendisliği dediğimiz zaman çok kısa ve özet tanımının üzerinden geçersem yazılım mühendisliği kaliteli yazılımı en ekonomik olarak elde etmek üzere kullanılan mühendislik yaklaşımı,
+
+13
+00:05:50,555 --> 00:06:01,636
+mühendislik araç ve yöntemlerinin kullanılmasını sağlayan bilim dalı olarak
+
+14
+00:06:01,636 --> 00:06:06,395
+işte üç anahtar kelimeyi birleştirmiş oluyoruz.
+
+15
+00:06:06,395 --> 00:06:12,695
+Kaliteli yazılım, en ekonomik ve mühendislik yaklaşımının yöntemlerinin kullanılması,
+
+16
+00:06:12,835 --> 00:06:14,495
+yazılım geliştirirken.
+
+17
+00:06:14,495 --> 00:06:28,295
+Bunları açtığımız zaman da yazılım hazırlayacağız ama herhangi bir yazılım değil, kaliteli yazılım.
+
+18
+00:06:28,775 --> 00:06:36,695
+İşte kaliteli yazılımın burada anlatmış olduk geçen hafta.
+
+19
+00:06:37,555 --> 00:06:41,095
+Beklentilerimiz nelerdir kaliteli yazılımdan?
+
+20
+00:06:41,095 --> 00:06:47,875
+İkinci anahtar kelimemiz en ekonomik olarak elde etmekte.
+
+21
+00:06:47,875 --> 00:07:09,316
+En ekonomik olarak elde etmekte bugünkü dersimizde açacağımız konu yazılım proje yönetimiyle hem maliyeti ekonomik olarak elde etmek, maliyet fayda analizinin oluşturulması,
+
+22
+00:07:09,316 --> 00:07:18,676
+hem de zaman açısından istenilen zamanda, istenilen kapsamda elde edilmesi.
+
+23
+00:07:19,015 --> 00:07:21,855
+İşte bugün bu konular üzerinde duracağız.
+
+24
+00:07:22,795 --> 00:07:25,795
+Mühendislik araç ve yöntemlerinin kullanılması da
+
+25
+00:07:25,795 --> 00:07:30,916
+mühendislik dediğimiz zaman iki temel kavram var.
+
+26
+00:07:31,056 --> 00:07:33,456
+Bir tanesi tasarım, diğeri ölçüm.
+
+27
+00:07:33,976 --> 00:07:37,696
+Tasarım nasıl yazılımı tasarlayacağız?
+
+28
+00:07:37,695 --> 00:07:45,075
+Tasarım gerçekleştirmeden yazılımın kodunun oluşturulması diye bir şey yok.
+
+29
+00:07:46,855 --> 00:07:53,495
+Bunları yani tasarımla ilişkili ayrıntıları nesne yönelik tasarım kapsamında bu derste gördük.
+
+30
+00:07:54,615 --> 00:07:57,315
+Tasarım kalıpları üzerinde durduk.
+
+31
+00:07:57,395 --> 00:07:59,875
+Reusability kavramını biliyoruz.
+
+32
+00:08:02,915 --> 00:08:04,855
+Bunları gördük.
+
+33
+00:08:04,855 --> 00:08:11,535
+İkinci anahtar kelimesi mühendislik kavramının bu da ölçme.
+
+34
+00:08:12,195 --> 00:08:14,115
+Ölçemediğinizi yönetemezsiniz.
+
+35
+00:08:17,115 --> 00:08:25,195
+Mühendis ölçüm gerçekleştiren kişidir dedik ilk derslerimizde.
+
+36
+00:08:26,815 --> 00:08:32,275
+Mühendislik araç ve yöntemlerin kullanılmasında bunu kast ediyoruz.
+
+37
+00:08:32,275 --> 00:08:38,275
+Şimdi o zaman kaliteli yazılımı geçen haftada başlamıştık, anlatmıştık.
+
+38
+00:08:39,595 --> 00:08:40,275
+Onu özetleyelim.
+
+39
+00:08:41,495 --> 00:08:53,275
+Kaliteli yazılımı bütün özellikler açısından sıralarsak yazılım kalitesini oluşturan faktörleri ISO 9126'da görebiliyoruz.
+
+40
+00:08:53,275 --> 00:09:10,275
+ISO 9126'ya göre doğru olması yani spesifikasyonlara ilk baştaki müşteri isteklerine uygun olması, bu istekleri karşılama derecesinin ne olduğu, güvenirlik, ne kadar hassasiyetle bu...
+
+41
+00:09:10,803 --> 00:09:28,763
+işlevleri yerine getiriyor. Reliability kavramı, güvenlikle karıştırmayın, güvenirliği. Verimlilik, etkinlik, programın işlevlerini yerine getirebilmesi için kullandığı kaynakların miktarı.
+
+42
+00:09:28,763 --> 00:09:50,484
+güvenlik yetkisiz kişilerin yazılıma müdahale etmemesinin sağlanması bu da security, integrity, kullanışlılık, öğrenme, işletme, girdi hazırlama, çıktı yorumlamanın kolay olması.
+
+43
+00:09:51,484 --> 00:09:57,503
+User friendly ya da usability olarak kullanıyoruz bunu da.
+
+44
+00:09:58,763 --> 00:10:06,164
+hata bulma kolaylığı, hatanın yerinin kolay bulunması ve düzeltilmesinin sağlanması.
+
+45
+00:10:06,903 --> 00:10:12,783
+Esneklik, esneklik dediğimizde burada
+
+46
+00:10:18,035 --> 00:10:32,135
+esneklik kavramında yazılımda kolay değişiklik yapma imkanı. Bu arada ekranı görmekte bir probleminiz var mı?
+
+47
+00:10:32,135 --> 00:10:36,395
+paylaştım
+
+48
+00:10:36,395 --> 00:10:40,135
+teşekkürler
+
+49
+00:10:46,868 --> 00:11:13,788
+Teşekkür ederim. Sınama kolaylığı, yazılımın takip edilmesi, test edilmesinin kolay olması, taşınabilirlik bir yerden bir yere aktarılması, yani bir sistemden başka bir sisteme aktarılmasının kolaylığı, tekrar kullanılabilirlik, işte zaten bütün bu tasarımı gerçekleştirirken dikkate aldığımız
+
+50
+00:11:13,788 --> 00:11:25,228
+yazılımın tamamının ya da bir bölümünün farklı uygulamalarda kullanılabilme olanağı.
+
+51
+00:11:27,147 --> 00:11:31,667
+Bağlanabilirlik olarak Türkçe eleştirdiğimizi de geçen hafta da söylemiştim.
+
+52
+00:11:32,487 --> 00:11:39,548
+Interoperability aslında bu bağlanabilirlik ile birlikte çalışabilirlik özelliği.
+
+53
+00:11:39,548 --> 00:11:46,147
+başka bir sistemle veri alışverişini kolay yapabilmesi.
+
+54
+00:11:46,147 --> 00:12:07,147
+Şimdi bütün bu özellikleri MacCall yardımıyla, MacCall'un oluşturduğu model ile 3'e ayırıyoruz böyle bir üçgen şeklinde.
+
+55
+00:12:07,147 --> 00:12:22,187
+bir tarafında bir bakış açısı kullanıcı bakış açısı. Bir bakış açısı kullanırken destek olan kişilerin, operatörlerin bakış açısı.
+
+56
+00:12:22,187 --> 00:12:42,287
+diğer bir tarafta bir hata olduğunda onun bakımını yapacak kişiler yani yine yazılım geliştiriciler kendi yazılımı olsun ya da başkasının yazılımı üzerinde düzeltmeler yapacak olsun.
+
+57
+00:12:42,287 --> 00:12:46,448
+bunların bakış açısıyla kaliteli yazılım ne demektir?
+
+58
+00:12:47,607 --> 00:12:57,967
+İlk başta saydıklarımız şurada doğruluk, güvenirlik, verimlilik, güvenlik, kullanışlılık.
+
+59
+00:12:57,967 --> 00:13:09,187
+Buraya kadar şunlar doğruluk, güvenirlik, verimlilik, güvenlik, kullanışlılık.
+
+60
+00:13:09,187 --> 00:13:30,407
+Bunlar kullanıcı bakış açısı. Yani kullanıcı olarak da siz bir yazılıma bilgisayarınıza yüklediğinizde doğru çalışmasını istersiniz. Bu doğruluğun istenilen duyarlılıkta olmasını istersiniz. Kaynakları iyi kullanmasını istersiniz.
+
+61
+00:13:30,407 --> 00:13:37,087
+güvenli yani başkalarının müdahale etmeyeceği şekilde kullanılsın istersiniz.
+
+62
+00:13:37,087 --> 00:13:45,427
+Ve öğrenmeniz, işletmeniz, girdi girmeniz, çıktı yorumlamanız kolay olsun istersiniz.
+
+63
+00:13:46,547 --> 00:13:52,027
+Bunlar kullanıcı açısından önemli olan şeyler.
+
+64
+00:13:52,027 --> 00:14:11,627
+İkincisi aslında bazı kaynaklarda da iç kalite özellikleri dış kalite özellikleri de bu operatörler bakış açısından olanları da iç kalite özelliği olarak sayar.
+
+65
+00:14:11,627 --> 00:14:20,707
+Burada interoperability
+
+66
+00:14:21,427 --> 00:14:32,308
+taşınabilirlik ve tekrar kullanılabilirlik. Bu yazılımı çalıştıranlar açısından önemli olan özellikler.
+
+67
+00:14:32,308 --> 00:14:49,507
+Yazılımın hata olduğunda veya başka şekillerde bakım yapılması istendiğinde bakım yapacak yazılım uzmanlarının istediği şeylerde sınama kolaylığı, esneklik, hata bulma kolaylığı.
+
+68
+00:14:49,507 --> 00:15:03,407
+Bunlar da diğer bakış açısıyla yani bakım yapan kişiler açısından önemli olan özellikler.
+
+69
+00:15:03,407 --> 00:15:13,407
+Tabii ki bunlar birer yazılımın kalite faktörü F'si
+
+70
+00:15:13,407 --> 00:15:26,527
+İşte McCall bunları bu şekilde kalite faktörleri F'i doğrudan ölçülmeyeyim bunlar daha tanımsal değerlerdir
+
+71
+00:15:26,527 --> 00:15:55,067
+Bunları daha ölçülebilir hale getirmek için Fi eşittir C1M1 artı C2M2 işte bu şekilde giden her bir yazılım kalite faktörü hangi metriklerle ölçülebiliyorsa belirli kat sayılar dahilinde etkileyecek şekilde bu faktörü metriklerle elde edilir.
+
+72
+00:15:55,067 --> 00:16:21,828
+bir diskriminant fonksiyonuyla tahmin edilmektedir bu kalite özelliği diye kalite özelliklerini bu şekilde şu faktörün herhangi bir kalite faktörünün farklı metrikler vasıtasıyla ölçülebilir hale getirilmesine de
+
+73
+00:16:21,827 --> 00:16:28,407
+Maccol'un kalite modeli olarak tanımlıyoruz.
+
+74
+00:16:28,407 --> 00:16:34,407
+Peki tamam bu kaliteli yazılım bu şekilde ifade edebiliyoruz.
+
+75
+00:16:35,127 --> 00:16:44,827
+Kaliteli yazılımı nasıl sağlayabiliyoruz?
+
+76
+00:16:44,827 --> 00:16:55,827
+yani bir yazılımı geliştirirken kaliteli olmasını nasıl sağlayacağız?
+
+77
+00:16:58,327 --> 00:17:06,067
+Bir defa tasarımı iyi yapılacak.
+
+78
+00:17:07,347 --> 00:17:14,047
+Gereksinim analizi sırasında müşteriyle iyi görüşmeler, bilgi alma gerçekleşecek.
+
+79
+00:17:14,047 --> 00:17:35,607
+Yani yazılımı geliştirme sürecinde kurallara bağlı bir geliştirme süreci yaşanacak. O zaman bir model seçilecek, bu model takip edilecek. Yani ister waterfall olsun, ister Scrum olsun, ister başka bir model olsun.
+
+80
+00:17:35,607 --> 00:17:53,627
+seçilen modelin uygulanması ve kurallı geliştirilmesi yani analiz aşaması, tasarım aşaması geçirilecek ondan sonra bir kodlama aşamasına geçirecek özelliklerine dikkat edilmesi.
+
+81
+00:17:56,387 --> 00:18:05,147
+Test aşamasında da performans, doğruluk gibi faktörlerin ölçümüne çaba gösterilmesi.
+
+82
+00:18:05,607 --> 00:18:13,067
+gerekiyor. Kaliteyi sağlamak üzere.
+
+83
+00:18:13,652 --> 00:18:29,631
+gerçekleştirilen işler neler? Geçen hafta da bu şeklin üzerinde durduk. İlk başta yakalanan hatalar daha kolay düzeltilebiliyor ve daha az maliyetle düzeltilebiliyor.
+
+84
+00:18:29,631 --> 00:18:39,091
+O zaman demek ki kaliteyi sağlamak için önce bir modeli takip edeceğiz, süreç modelini, bunu uygulayacağız.
+
+85
+00:18:39,091 --> 00:18:59,031
+İkincisi bu yazılımı gözden geçirme gerçekleştireceğiz. Şu hatayı erken yakalayabilmek için erken zamanlardan itibaren review gerçekleştireceğiz.
+
+86
+00:18:59,031 --> 00:19:14,711
+gözden geçirme. Birinci kaliteyi sağlamak için birinci kural bir süreç modeli kullanmak. İkincisi bu süreç modeli dahilinde milestone'larda review gerçekleştirmek.
+
+87
+00:19:14,711 --> 00:19:29,911
+üçüncüsü review olan milestone'larda gözden geçirme yapmak ama arada inspection'da gerçekleştirmek.
+
+88
+00:19:29,911 --> 00:19:40,012
+Yani inspection inceleme, gözden geçirmenin daha kurallı ve daha yoğun yapılması.
+
+89
+00:19:44,564 --> 00:20:09,503
+Evet, durak noktaları deneyim milestone'lar. Yani milestone'ları şey olarak sayarsak, yazılım geliştirme sürecinde mesela gereksinim analisi bitti, tasarım bitti gibi önemli aşamalarda, önemli adımlarda gözden geçirme yapılması önerilir.
+
+90
+00:20:09,503 --> 00:20:20,263
+üretim aşamasında, üretim aşamasındayken kalite kontrolü denir.
+
+91
+00:20:20,263 --> 00:20:29,363
+Bunun için de bu kalite kontrolün planlanması gerekiyor. Ne zamanlarda ve hangi koşullarda yapılacak?
+
+92
+00:20:29,363 --> 00:20:41,123
+yani kalite kontrolüne gözden geçirmeye kimler katılacak bu kuralların belirlenmesi gerekiyor.
+
+93
+00:20:41,123 --> 00:20:51,183
+Aynı şekilde kaynak program yazılırken, kodlar yazılırken de bunların gerçekleştirilmesi gerekiyor.
+
+94
+00:20:51,604 --> 00:20:57,463
+Kalitenin sağlanması için demek ki bir modeli takip edeceğiz.
+
+95
+00:20:57,464 --> 00:21:12,444
+gözden geçirme review yapacağız, inceleme yapacağız, inspection yapacağız ve daha sonra da tabii ki yazılım kalitesinin sağlanması için en bilinen şey test, sınama.
+
+96
+00:21:12,443 --> 00:21:30,323
+işte burada da yazılım sınanması, yazılımın test edilmesi, programda gözden geçirmelere rağmen hata kalmışsa bu hatayı test etmek, bu hatayı bulmak için test işlemi yapmak.
+
+97
+00:21:30,323 --> 00:21:54,823
+geçen hafta da söyledik test sadece hatayı bulma aşaması hatanın yerini hatanın tipini bulma aşaması düzeltme teste dahil değil debug işlemi ayrıca gerçekleştiriliyor fonksiyonel hatalar yani işlem hataları bulunmalı
+
+98
+00:21:54,823 --> 00:22:15,663
+performans testleriyle performans hataları bulunmalı. Dayanıklılık testi ve yapısal testlerde yazılım işleminin mantığının, mantıksal yolların test edilmesi.
+
+99
+00:22:15,663 --> 00:22:30,963
+yazılım test stratejisi. Burada yazılım sınama basamakları dedik. Yani bir yazılım geliştiriliyor. Bu yazılımı hangi sırada test ederiz?
+
+100
+00:22:30,963 --> 00:22:49,203
+bu sıralama üzerinde geçen hafta durduk yazılımı kodlarken her bir kod tamamlandığında birim testi en küçük birim olan birim testi gerçekleştiriyoruz.
+
+101
+00:22:49,203 --> 00:23:06,203
+sonra işte burada birim testi, bütünlük testi, onaylama testi, sistem testi bunların ikisi yer değiştirebilir çünkü sistem testi de yapılır sonra müşteriye teslim edilir.
+
+102
+00:23:06,203 --> 00:23:18,164
+Bunların bu helezon yapısında şurada helezon yapısında en içteki şey kodlama.
+
+103
+00:23:18,924 --> 00:23:22,483
+Kodladığımız her birime birim testi, ünite testi yapıyoruz.
+
+104
+00:23:22,483 --> 00:23:27,944
+Sonra kodlamadan önce tasarım gerçekleştiriyoruz.
+
+105
+00:23:28,483 --> 00:23:33,584
+İşte bu tasarımı bütünlük testiyle bakıyoruz.
+
+106
+00:23:33,583 --> 00:23:41,543
+nasıl bir tasarım var, modüller nasıl bağlanıyor birbirine ona göre birleştirip test edelim.
+
+107
+00:23:44,660 --> 00:23:49,719
+Sistem testinde sistem gereksinimlerine göre bakılır.
+
+108
+00:23:50,179 --> 00:23:57,359
+Aynı şekilde onaylama testinde de müşteri istekleri denenmiş olur.
+
+109
+00:23:57,359 --> 00:24:06,039
+Bu şekilde birim testinde kontrol yapılarını yani iç yapıyı daha çok test ediyoruz.
+
+110
+00:24:07,679 --> 00:24:13,559
+Bu arada geçen hafta bir de şey üzerinde durduk.
+
+111
+00:24:14,660 --> 00:24:21,000
+Bütünlük testinde arttırmalı sınama gerçekleştiriyorduk test işlemini.
+
+112
+00:24:21,000 --> 00:24:30,000
+Bu arada bir de test tipi olarak bunlar aşamalarıydı.
+
+113
+00:24:32,740 --> 00:24:35,000
+Sistem testi üzerinde durduk.
+
+114
+00:24:35,000 --> 00:24:49,999
+Burada sistem testi dediğimizde güvenlik, dayanıklılık, performans bunlar sistem testleriyle gerçekleştiriliyor.
+
+115
+00:24:49,999 --> 00:25:09,999
+Ve farklı test tipleri nedir? Test yöntemleri, test tipleri, kara kutu testi, saydam kutu testi.
+
+116
+00:25:10,939 --> 00:25:19,199
+Yani test adımları dediğimizde bilim test sırayla hangi testleri yaparız?
+
+117
+00:25:19,279 --> 00:25:21,699
+Bir yazılım önünüze geldi test etmek için.
+
+118
+00:25:22,099 --> 00:25:25,359
+Bir defa kodu yazan kişi bilim testi de yapar.
+
+119
+00:25:25,660 --> 00:25:27,279
+Yani test ekibi yapmaz.
+
+120
+00:25:27,719 --> 00:25:30,459
+Geliştirme ekibi yapar bilim testi.
+
+121
+00:25:30,459 --> 00:25:35,459
+Bilim testten çıkınca bütünlük testini bazen test ekibi gerçekleştirir.
+
+122
+00:25:36,799 --> 00:25:38,719
+Bazen geliştirme ekibi.
+
+123
+00:25:39,999 --> 00:25:55,419
+Bu test edilmiş birimler bir araya getirilir. Bir araya getirildiğinde problem var mı diye test edilir. Bu da bütünlük testidir. Bütünlük testinden sonra da sistem testi yapılır.
+
+124
+00:25:55,419 --> 00:26:04,380
+Sistemle ilişkileri nasıl? Veri tabanı yönetim sistemi, işletim sistemi bunlarla ilişkili test yapılır.
+
+125
+00:26:05,799 --> 00:26:18,239
+Daha sonra da kullanıcı testi. Az önce gördüğümüz gibi şurada onay testi gerçekleştirilir.
+
+126
+00:26:18,240 --> 00:26:26,799
+Kara kutu testi, saydam kutu testi ve gri kutu testi test tipleri.
+
+127
+00:26:27,520 --> 00:26:30,160
+Saydam kutuda iç yapı test edilir.
+
+128
+00:26:30,779 --> 00:26:35,059
+Kara kutuda dış yapı test edilir iç yapıyı görmeden.
+
+129
+00:26:35,799 --> 00:26:45,740
+Saydam kutu test tipleri dediğimizde iç yapıyı nasıl, iç yapının elemanları nelerdir?
+
+130
+00:26:45,740 --> 00:26:54,340
+İşte döngü yapıları, kontrol yapıları, kaç tane akış grafında kaç tane yol var.
+
+131
+00:26:55,240 --> 00:27:02,840
+Bu yolun her birini test etmemiz gerektiği için temel yol testi, döngü testi, saydam kutu test tiplerinden.
+
+132
+00:27:04,359 --> 00:27:08,200
+Peki kara kutu testi nasıldır?
+
+133
+00:27:08,199 --> 00:27:21,219
+Karakutu testinde de dışarıdan baktığımızda istediğimiz girdilere, istediğimiz çıktıları elde edebiliyor muyuz?
+
+134
+00:27:21,339 --> 00:27:27,719
+Bunun test edilmesi, performans hatası var mı, başlama bitirme hatası var mı?
+
+135
+00:27:27,719 --> 00:27:31,579
+Bunun için de girdileri nasıl planlayacağız?
+
+136
+00:27:31,579 --> 00:27:33,339
+girdileri
+
+137
+00:27:33,339 --> 00:27:36,079
+oluşturma
+
+138
+00:27:36,079 --> 00:27:37,660
+kapsamında
+
+139
+00:27:38,132 --> 00:28:00,392
+işte bu kara kutu testinde girdi verileri sisteme verilir, yazılım sistemine çıktılar elde edilir bu girdilere karşı ama sistemin iç yapısını görmüyoruz. Bu yapıda modüllerin iç yapısı görülmüyor, dışarıdan biliyoruz.
+
+140
+00:28:00,392 --> 00:28:13,571
+eş değerli bölümleme ve sınır değer analizi ile biz dışarıdan gördüğümüz sisteme veri girişinde daha sağlıklı veri üretebiliriz ve test edebiliriz.
+
+141
+00:28:13,571 --> 00:28:28,411
+Eş değerli bölümleme veri uzayını bölümlere ayırıp her bölümden bir tane test gerçekleştirmek, her bölümdeki veri ile test gerçekleştirmek.
+
+142
+00:28:28,411 --> 00:28:45,091
+sınır değer analizinde genelde hatalar sınırdadır deyip boundary value analizi oluşturmak diyebiliriz sınır değer analizine de.
+
+143
+00:28:45,091 --> 00:28:52,691
+bunun için graflar oluşturulur.
+
+144
+00:28:54,072 --> 00:29:11,751
+Neden sonuç grafı da olabilir fakat daha çok bizim eş değerli bölümlememiz Bondöre Value Analizi test işleminde kullanacağımız test tipleridir diyoruz.
+
+145
+00:29:11,751 --> 00:29:30,931
+Evet geçen hafta bunları gördük. Şimdi bu hafta göreceğimiz kısmı yazılım proje yönetimi. Biz şimdi bunu kapatıyorum. Başka bir paylaşım gerçekleştireceğim.
+
+146
+00:29:48,339 --> 00:29:50,979
+şu anda ekranı görüyor musunuz?
+
+147
+00:29:52,679 --> 00:29:55,019
+proje yönetimine girişi
+
+148
+00:29:55,019 --> 00:29:57,619
+evet hocam
+
+149
+00:29:57,619 --> 00:29:59,819
+iyi tekrarlamayın bir zaman
+
+150
+00:29:59,819 --> 00:30:03,699
+evet
+
+151
+00:30:09,460 --> 00:30:27,460
+Evet, proje yönetimi. Şimdi ilk derslerimizde biz yazılım mühendisliğini tarif ettik ne olduğunu ve daha sonra da yazılım mühendisliğinin temel kitaplarını söyledim.
+
+152
+00:30:27,460 --> 00:30:37,460
+işte Roger Pressman'ın kitabı, Ayn Summerville'in kitabı ve bunları da dedik kısımlar halinde yazılım mühendisliğini bölmüştür.
+
+153
+00:30:37,460 --> 00:30:50,779
+Bir, ilk giriş bölümü yazılım nedir? Yazılım mühendisliği nedir? Yazılımla ilişkili sınıflamalar nelerdir?
+
+154
+00:30:50,779 --> 00:31:10,779
+ve işte SMMI gibi yazılımın yetkinlik derecesinin ölçülmesi, yazılım ve yazılım mühendisliği hakkında yazılım süreç modelleri nelerdir?
+
+155
+00:31:10,779 --> 00:31:18,960
+yazılım, yazılım mühendisliği, yazılım geliştirme konusunda temel bilgiler verilmesi.
+
+156
+00:31:18,960 --> 00:31:44,779
+ikincisi ikinci kısım analiz tasarım ve gerçekleştirme aşamasında nasıl bir yöntem izliyoruz hangi modelleri kullanıyoruz ve analizde tasarımda gereksinim analizinde tasarımda
+
+157
+00:31:44,779 --> 00:31:49,820
+hangi yapıları kullanıyoruz?
+
+158
+00:31:50,839 --> 00:31:57,720
+İşte bu noktada da nesneye yönelik analiz tasarım kapsamında bu derste gördük.
+
+159
+00:31:58,140 --> 00:32:02,479
+Gereksinim analizini nasıl yapıyoruz? Hangi diagramları kullanıyoruz?
+
+160
+00:32:03,199 --> 00:32:06,540
+Tasarımı nasıl yapıyoruz? Hangi diagramları kullanıyoruz?
+
+161
+00:32:07,979 --> 00:32:12,400
+Bunları neden kullanıyoruz? Neyi tarif etmek için kullanıyoruz?
+
+162
+00:32:12,399 --> 00:32:37,059
+Bu kendi aramızdaki analiz tasarım aşamasındaki notasyonları ve gerçekleştirme yollarını gördük. Bu da genel olarak ikinci kısmı dersin. Üçüncü kısmı kalite yönetimi ve test teknikleri. Bunu da geçen hafta gördük, bu hafta tekrar ettik.
+
+163
+00:32:37,059 --> 00:33:01,239
+dördüncü kısmı da proje yönetimi yazılım mühendisliğinde özellikle 2000'li yıllardan itibaren başarısız projelerin çok olduğu görüldü ve proje yönetimi konusunda destek verildi yazılım geliştirme ekiplerine.
+
+164
+00:33:01,239 --> 00:33:18,199
+önem kazandı ve PMI diye bir enstitü var. Project Management Enstitü. PMI Project Management Enstitü.
+
+165
+00:33:18,199 --> 00:33:34,419
+Türkiye PMI'ın toplantılarının dergilerini izlediğinizde de katılımcılarına baktığınızda en fazla yazılım geliştiriciler bu konuya ağırlık veriyor.
+
+166
+00:33:34,419 --> 00:33:41,499
+Bir başka ağırlık verenler de inşaat mühendisliği grubu. Onlarda da proje yönetimi önemli.
+
+167
+00:33:41,499 --> 00:34:01,379
+çünkü büyük projeler var. Bizim projelerimiz de büyük ve zamanında başarısız olmuş projeler. O nedenle başarılı olması için proje yönetimine ağırlık verilmiş. Hatta belki çalışan arkadaşlarınızdan duymuşsunuzdur. PMP sertifikaları var.
+
+168
+00:34:06,420 --> 00:34:18,539
+Software Engineering için bu özellikle önemli. Project Management Professional profesyoneli olma sertifikası.
+
+169
+00:34:18,539 --> 00:34:33,940
+hatta agile projeler, agile yazılım geliştirme modelleri çok fazla ağırlıklı kullanılınca
+
+170
+00:34:33,940 --> 00:34:41,399
+agile PMP sertifikası da ayrıca verilmeye başlandı.
+
+171
+00:34:41,399 --> 00:34:58,159
+Şimdi demek ki proje yönetimi konusu özellikle büyük projelerde bu projeye hangi süreç modeli uygun?
+
+172
+00:34:58,159 --> 00:35:09,719
+Bu projenin kapsamı nedir? Bu projenin katılımcıları kimlerdir? Projenin yani paydaşları?
+
+173
+00:35:09,719 --> 00:35:23,879
+bu projenin zaman planı nedir, kaynak planı nedir bunları belirleyip sonra da bunu belirledik hep böyle kalacak diye bir şey yok.
+
+174
+00:35:23,879 --> 00:35:35,839
+Bir yerde başarısız olursa dinamik olmalı bu ki agile proje yönetiminde bu dinamikliği sağlandığını görüyoruz.
+
+175
+00:35:35,839 --> 00:35:45,100
+işte bugün de bu proje yönetimi içine neler giriyor?
+
+176
+00:35:45,100 --> 00:35:48,439
+Yani sadece planı yapmak değil proje yönetimi.
+
+177
+00:35:48,939 --> 00:35:53,319
+Proje yönetimi önce projeye bir başlangıç yapmak.
+
+178
+00:35:54,179 --> 00:36:01,100
+Başlangıç yapıp projenin tanımını anlamak, projeyi tanımlayabilmek.
+
+179
+00:36:02,179 --> 00:36:05,199
+Daha sonra planı yapmak, proje planını yapmak.
+
+180
+00:36:05,839 --> 00:36:35,819
+proje planını yaptık bitti değil plan dinamik olabilir B planı olabilir planın takip edilmesi yani bir proje önerisi veriliyor örneğin TÜBİTA sponsor olarak ya da sanayi bakanlığına proje desteklenmeye layık görülüyor ondan sonra işte iki senemi sürecek proje bir buçuk senemi sürecek altı ay
+
+181
+00:36:35,819 --> 00:36:57,779
+o süre zarfında bu projeyi takip ediyor. Hem sponsor hem içeriden proje ekibi. Bu takibin faydası ne? Geldiğimiz yere kadar hedeflerimiz tuttu mu? Yani plan hedeflerimiz tuttu mu?
+
+182
+00:36:57,780 --> 00:37:02,179
+tutmadıysa neleri değiştireceğiz?
+
+183
+00:37:02,559 --> 00:37:04,380
+Planda neleri değiştireceğiz?
+
+184
+00:37:06,160 --> 00:37:08,280
+Zaman planımız değişecek mi?
+
+185
+00:37:08,839 --> 00:37:10,360
+Öyle bir imkanımız var mı?
+
+186
+00:37:11,119 --> 00:37:14,000
+Bunların kontrolünün yapılması.
+
+187
+00:37:14,000 --> 00:37:25,339
+İşte bu iş takip işi de proje yönetiminin bir parçası.
+
+188
+00:37:25,339 --> 00:37:54,059
+daha sonra da projenin sonuçlandırılması, proje bitti, projenin ölçümü, proje çıktılarının ölçümü, projenin arşiv bilgilerinin veritabanına aktarılması, arşivlenmesi, bu bilgilerin daha sonra kullanılacak ortak havuza atılması, bütün bunlar da kapanış aşaması.
+
+189
+00:37:54,059 --> 00:38:01,920
+Yani proje yönetimi eşittir projeyi planlama değil, proje planlama proje yönetiminin bir parçası
+
+190
+00:38:02,420 --> 00:38:29,180
+proje yönetimi, başlangıç aşaması, proje yönetimine giriş, proje tanımlama, projeyi planlama, projeyi takip etme, çalıştırma ve daha sonra projeyi kapatma.
+
+191
+00:38:29,180 --> 00:38:44,180
+Bunların hepsi birden proje yönetimi. Yazılım proje yönetimi dediğimiz zaman öncelikle geliştirme modeli olarak hangi modeli seçmemiz uygun olur buna kafa yormak.
+
+192
+00:38:44,179 --> 00:38:57,519
+daha sonra da ölçüm için hangi ölçümleri yapacağız bunları belirlemek.
+
+193
+00:38:58,059 --> 00:39:02,239
+Yazılım ekibinin diğer ekiplerden farkı var mı?
+
+194
+00:39:03,459 --> 00:39:14,159
+Ekibin yönetiminde farklılıklar olabilir, organizasyonunda farklılıklar olabilir, kaynak yönetiminde farklılıklar olabilir.
+
+195
+00:39:14,180 --> 00:39:32,260
+Çünkü başka projelerde ekipman maliyeti daha fazla ağırlık verirken bizde kafa işi, insan gücü daha fazla. Bunun farklılığı olabilir. Personelle ilişkili şeyler öne çıkabilir.
+
+196
+00:39:32,259 --> 00:40:02,239
+mesela proje yönetimi içinde gerçekleştirdiğimiz işlerden bir tanesi risk yönetimi işte risk yönetiminde yine insan tarafı daha fazla ağırlık basar yani genel proje yönetimini bileceğiz genel proje yönetimindeki tanımlamalar yazılım proje yönetiminde bazı farklılıklar gösteriyorsa biz bunları da işaret edeceğiz.
+
+197
+00:40:02,259 --> 00:40:27,879
+Şimdi proje yönetimi nedir? Proje planlama nedir? Projenin önce sınırlarını belirleyin. Yani kapsam. Projede ne isteniyor? Ama sınırlar ne?
+
+198
+00:40:27,879 --> 00:40:37,819
+gereksiz ayrıntılarla uğraşmayın. Müşteri ne istemiş önce onun özünü kapsayın ve müşteriyle önce kapsam konusunda anlaşın.
+
+199
+00:40:37,819 --> 00:40:57,239
+Müşteriyi planlama eylemlerine katın. Müşteri planlama sırasında yapılacaklara adım adım onay versin ve bildiklerimizi kullanarak tahminlerde bulunun.
+
+200
+00:40:57,879 --> 00:41:09,919
+bu tahminlerin doğru olması önemli. Bir de risk değerlendirmesi önemli. Gerçekçi olmak önemli proje yönetiminde.
+
+201
+00:41:12,059 --> 00:41:15,339
+Planlama ilkeleri nelerdir?
+
+202
+00:41:16,939 --> 00:41:25,419
+Tabii ki şimdi proje planı derken ölçek önemli.
+
+203
+00:41:25,420 --> 00:41:29,300
+yani nerede ince ayrıntılara gireceğiz.
+
+204
+00:41:31,940 --> 00:41:38,420
+Büyük bir proje için önce genel yapıyı oluşturup sonra her...
+
+205
+00:41:39,987 --> 00:42:07,847
+madde için daha ayrıntıları düşünebiliriz. Planın gidişinin takip edilmesi gerekir. Her aşamada yani milestone'larda değerlendirme yapın, review yapın. Plan içinde review gerçekleştirme. Kaliteyi sağlama içinde yine plan gerçekleştirme. Yani sizin proje planınızda bir kalite planı da olsun.
+
+206
+00:42:07,847 --> 00:42:24,967
+Müşteri değişiklikler isteyecektir. Bu değişiklik önemli. Yazılım projelerinde özellikle. Müşteri kafasında canlandıramaz. Sonradan sonradan eklemeler değişiklikler yapabilir.
+
+207
+00:42:24,967 --> 00:42:45,388
+İşte bunu kayıt altına alınması gerekir proje planlamada. Müşteri hangi koşullarla değişiklik yapabilir ve bu değişiklikte yeni bir maliyet planı da nasıl gösterilebilir?
+
+208
+00:42:45,388 --> 00:42:58,328
+Projenin ölçülmesi ve sürecin ölçülmesi proje yönetiminde sağlanabilir. Bunun ayrıntısına girmeyeceğim.
+
+209
+00:42:58,328 --> 00:43:05,547
+Proje yönetiminde ölçümü nasıl gerçekleştiriyoruz?
+
+210
+00:43:05,547 --> 00:43:23,848
+İşte kişilerin yeteneklerini hangi alanda çalışmak istediğini, hangi alanda daha başarılı olduğunu ölçmemiz gerekir.
+
+211
+00:43:23,848 --> 00:43:41,187
+ürünün ölçümü, teknoloji ölçümü, müşterinin özellikleri, iş koşulları bunları ölçersek kaliteyi etkileyecektir.
+
+212
+00:43:52,083 --> 00:44:20,703
+süreç üzerinde de yani şimdi bir süre kullanıldı ne kadar hata çıktı? Hatayı gidermek için neler yapılır? Hata sayısının proje boyutuna oranı doğruluğu verir. Bakım kolaylığı bir hatanın bulunması ve giderilmesi için geçen zamanla ölçülür.
+
+213
+00:44:20,703 --> 00:44:30,243
+Yani neyi nasıl ölçeriz yazılımı geliştirirken bunu da bilmemiz gerekiyor
+
+214
+00:44:30,243 --> 00:44:39,103
+İsterseniz biraz fazla böyle anlatarak gittik
+
+215
+00:44:39,103 --> 00:44:42,903
+Geçen haftayı da özetledik
+
+216
+00:44:42,903 --> 00:44:44,323
+Bir ara verelim
+
+217
+00:44:53,523 --> 00:45:09,023
+10 dakika ara veriyorum. Ondan sonra proje yönetimine devam edeceğiz. Buraya kadar sorunuz var mı ara vermeden önce?
+
+218
+00:45:12,500 --> 00:45:20,379
+Neyse, tekrar başladığımızda sorunuz varsa sorabilirsiniz.
+
+219
+00:52:43,764 --> 00:53:12,203
+Evet, devam ediyoruz şimdi. Yazılım proje yönetimine devam ediyoruz. Yazılım proje yönetiminde ölçüm önemlidir demiştik. Ölçümlerin bir süreci, bir de proje ile ilişkili proje ölçümü, yazılım ölçülmesi, yazılım geliştirme sürecinin ölçülmesi olarak
+
+220
+00:53:12,203 --> 00:53:17,043
+iki farklı açıdan değerlendirebiliriz.
+
+221
+00:53:18,043 --> 00:53:31,583
+Yazılımın ölçülmesi, yani yazılımın kalite, iç kalite özelliklerinin ne durumda olduğunun bakılması,
+
+222
+00:53:33,423 --> 00:53:40,223
+süreç ölçümü ise yazılım geliştirme sürecinin ölçülmesi.
+
+223
+00:53:40,223 --> 00:54:09,704
+Burada baktığımızda kaliteyle ilişkili etkenlere baktığımızda kişileri, ürünü, teknolojiyi, çevre koşulları ve müşterinin özelliğine bakarak hangi ölçümleri yapacağımıza karar verebiliriz.
+
+224
+00:54:10,223 --> 00:54:26,383
+Şimdi süreç ölçütlerine baktığımızda hata sayısı, hata giderme etkinliği, doğruluk, bakım kolaylığı bunlar süreçle ilişkili ölçütlerdir diyebiliriz.
+
+225
+00:54:26,383 --> 00:54:44,603
+projeyle ilişkili ölçütler dediğimizde yazılımın iç yapısıyla ilişkili özellikleri ölçebileceğimizi söyleriz.
+
+226
+00:54:44,603 --> 00:54:56,543
+Yazılım proje planında neler olmalı bir yazılım proje planında?
+
+227
+00:54:56,543 --> 00:55:13,603
+Yazılım proje planında öncelikle projenin amacı, kapsamı ve projede hangi işlerin gerçekleştirileceği?
+
+228
+00:55:13,603 --> 00:55:26,003
+tabi bu işlerin gerçekleştirilmesi yazılımın hangi süreç modeliyle geliştirildiğine bağlı.
+
+229
+00:55:26,003 --> 00:55:38,903
+O süreç modeline göre hangi aşamalar varsa bunlar iş aktiviteler olarak belirtilir.
+
+230
+00:55:38,903 --> 00:55:48,163
+ki iş listesi dediğimiz iş kırılım listesi, work breakdown structure yapısı işte süreç modeline göre belirlenir.
+
+231
+00:55:48,163 --> 00:56:11,303
+ve daha sonra bu maddeler üzerinden de yazılım projesinde hangi işler gerçekleştirecek, hangi zamanda, zaman planı, hangi kaynaklarla, kaynak planı.
+
+232
+00:56:11,303 --> 00:56:28,423
+bunlar için MS Project veya Gantt diagramıyla bu takibi gerçekleştirebiliriz. Bunları geçen sene de görmüştük sistem analizi dersinde.
+
+233
+00:56:31,956 --> 00:56:55,376
+burada işte zaman fizibilitesi olarak görmüştük. Zaman planı, proje planı içindeki zaman planını oluşturmak için yine böyle bir zaman takip diagramı, Gantt diagramı kullanmamız gerekecek.
+
+234
+00:56:55,376 --> 00:57:21,155
+Proje planının içinde kalite planı, risk planı, projede riskler dışında projedeki kabullerimiz, varsayımlarımız ve projedeki kısıtlarımız yer alır.
+
+235
+00:57:21,156 --> 00:57:45,476
+daha sonra da projedeki iş listesi, iş listesindeki öncelikler ve projede takip edeceğimiz zaman planı, milestones, kilometre taşları bulunmalı bir proje planında.
+
+236
+00:57:45,475 --> 00:58:00,415
+Bunun için bir yazılım proje planında hangi yapı olmalıdırı tarif eden bir IEEE standartı da var.
+
+237
+00:58:00,415 --> 00:58:10,215
+Bu standartta gösteriyor proje planında neler olmalıdır şeklinde bir başlıklar listesi şeklinde.
+
+238
+00:58:10,215 --> 00:58:16,295
+buna da uymamız gerekiyor.
+
+239
+00:58:16,295 --> 00:58:34,915
+Şimdi proje planı içinde de yer alması gereken, proje yönetimi altında da risk yönetimi olarak olması gereken risk yönetim yapısı üzerinde duralım.
+
+240
+00:58:34,915 --> 00:58:39,595
+Risk yönetimi, risk nedir bir defa?
+
+241
+00:58:40,215 --> 00:58:46,295
+şurada
+
+242
+00:58:51,411 --> 00:59:21,271
+üç tane temel şey var. Olasılık, risk tanımı içinde. Olasılık, kayıp ve gelecek. Yani risk dediğimiz zaman bir kayıp olacak, ortaya çıktığında istenmeyen sonuçlar doğacağı belirleniyor.
+
+243
+00:59:21,271 --> 00:59:49,931
+yani bir kayıp olacak ama şu anda değil gelecekte yani şu anda olan bir durum yok gelecekte olacak bir durum bir de olasılık yani belirli bir risk ortaya çıkabilir olma yüzdesi nedir risk dediğimiz şey yüzde yüz ortaya çıkacak diyemeyiz ama bunun olasılığı yüksek olabilir
+
+244
+00:59:49,932 --> 01:00:03,411
+daha düşük olabilir. Olduğunda yıkımı daha fazla olabilir, daha az olabilir. Buna göre riskin önem derecesi üzerinde duruyoruz.
+
+245
+01:00:05,011 --> 01:00:17,812
+Risk ile risk yönetimi, risk ile başa çıkma taktikleri. Bu önceden risk gerçekleştirmeden önlemler almak.
+
+246
+01:00:17,812 --> 01:00:33,032
+Risk gerçekleşince çözmek üzere planlar yapmak, B planı oluşturmak. Bununla ilişkili risk yönetim planlarını oluşturabiliyoruz.
+
+247
+01:00:33,032 --> 01:00:44,691
+Risk çeşitleri, proje riskleri, teknik riskler, iş riskleri gibi risklerden söz edebiliriz.
+
+248
+01:00:44,691 --> 01:01:14,292
+proje riski dediğimiz projede gerçekleştirilen işler açısından belirlenen mesela bütçe riski, zaman riski, personel riski, teknik riskler üretilen yazılımla yazılım geliştirme süreç modeliyle ilişkili riskler işte örneğin yeni bir case aracı kullanıyorsunuz bunun riski vardır.
+
+249
+01:01:14,291 --> 01:01:41,451
+yeni bir dil kullanıyorsunuz bunun riski vardır gibi teknik riskler. Pazar riski, satış riski bu da başka bir risk grubu yani işletme riskleri. İşletme risklerine pazar riski, satış riski bunlar giriyor.
+
+250
+01:01:41,451 --> 01:02:08,711
+bir yazılım hazırlandı ama bunun talebi ne olur gibi sorular. Bu son yıllarda özellikle gündeme geldi. O yüzden yazılım firmalarında diğer firmalar gibi pazarlama bilgisine ve yazılım bilgisine sahip kişilerin de olması gerekiyor.
+
+251
+01:02:08,712 --> 01:02:31,512
+acaba hangi yazılımlara ihtiyaç var o konuda yazılım geliştirelim ya da yapılan yazılımı hangi firmalara satabiliriz düşüncesinin daha planlı ve sistemli geliştirilmesi.
+
+252
+01:02:35,219 --> 01:02:55,279
+Şimdi risk tablosu diye bir şey var. Risk tablosu nasıl oluşturulur? Risk için şöyle bir tanım getirdik az önce. Şu anda tehlike olmayan ama gelecekte tehlike olacak.
+
+253
+01:02:55,279 --> 01:03:18,279
+%100 olması söz konusu olmayan ama olasılıklara bağlı olan, olma olasılıklara ve bu her bir riskinde bir kayıp getireceği,
+
+254
+01:03:18,279 --> 01:03:27,759
+bu kayıbın ne olduğu ile ilişkili de değerlendirmeler yapılması gerekiyor.
+
+255
+01:03:27,879 --> 01:03:30,739
+İşte risk tanımını bu şekilde gösterdik.
+
+256
+01:03:31,399 --> 01:03:36,219
+Şimdi risk tablosunu nasıl oluşturacağız?
+
+257
+01:03:36,219 --> 01:03:48,239
+Risk tablosunu oluştururken öncelikle riskleri tanımlayacağız.
+
+258
+01:03:48,279 --> 01:04:05,940
+riskler tanımlanacak. Bu riskin kategorisi nedir? Mesela bir personelin işten ayrılması olasılığı. Bu bir proje riski.
+
+259
+01:04:05,940 --> 01:04:13,840
+personel ile ilişkili bir proje riski, kategorisi proje riski.
+
+260
+01:04:13,840 --> 01:04:26,400
+Bu riskin olma olasılığı nedir? Olduğunda etkisi ne olacaktır?
+
+261
+01:04:26,400 --> 01:04:36,120
+ve böylece bu riskin büyüklüğü, önemi nedir?
+
+262
+01:04:36,120 --> 01:04:50,119
+O zaman risk tablosunda düşük, orta, yüksek gibi olasılıklar belirleyebiliriz.
+
+263
+01:04:50,119 --> 01:05:07,559
+ve olma olasılığı etkisi nedir? Etkisi düşük, orta yüksek olabilir. O zaman bu ikisinin çarpımı da büyüklüğünü verecektir.
+
+264
+01:05:07,559 --> 01:05:34,300
+Örnek bir özet risk tablosuna baktığımızda risk numarası, adı, hangi tür risk, organizasyonla ilişkili bir risk, proje kategorisinde etkisi orta, olasılığı yüksek
+
+265
+01:05:34,300 --> 01:06:03,240
+ikisini çarptığımız zaman şu aşağıdaki şeyde diagramda büyük, küçük, şurada da düşük olasılığı düşük yüksek olarak böyle bir yapıda değerlendirebiliriz.
+
+266
+01:06:04,300 --> 01:06:21,260
+işte iki numaralı risk tahmin riski projedeki tahminlerle ilişkili etkisi büyük olasılığı düşük gibi gösterebiliriz.
+
+267
+01:06:21,260 --> 01:06:28,180
+Mesela personel önemli bir personelin işten ayrılması proje riskidir.
+
+268
+01:06:28,179 --> 01:06:31,299
+ya da
+
+269
+01:06:31,599 --> 01:06:55,499
+personel riske, personelin bilgisiyle ilişkili problem olma riski, yani bazı temel bilgileri bilmediği yetersizliğiyle ilişkili risk, etkisi nedir, olasılığı nedir gibi değerlendiriyoruz.
+
+270
+01:06:55,499 --> 01:07:07,839
+ve sonuçta şurada etkisi küçük olasılığı düşükse bunları takip etmeye gerek yok.
+
+271
+01:07:07,839 --> 01:07:25,140
+Ama etkisi büyük olasılığı düşükse ya da olasılığı yüksek ama etkisi küçükse bunlar takip edilebilir.
+
+272
+01:07:25,499 --> 01:07:37,859
+ama etkisi küçük, olasılığı düşük olan 4, 7, 8 ve 6 numaralı riskleri izlememize gerek yok.
+
+273
+01:07:38,019 --> 01:07:39,999
+Ama diğerlerini takip edeceğiz.
+
+274
+01:07:40,159 --> 01:07:41,519
+Nasıl takip edeceğiz?
+
+275
+01:07:42,019 --> 01:07:45,839
+Bu risklerin takip edilmesi nedir?
+
+276
+01:07:47,519 --> 01:07:50,539
+Bunları takip etme şu şekilde.
+
+277
+01:07:50,539 --> 01:08:10,539
+belirli milestone'larda bu riskler için özel bir tablo oluşturarak işte şu tarihte mesela gereksinim analizini bitirdik şu sınırdayız şu kilometre taşındayız.
+
+278
+01:08:10,539 --> 01:08:29,379
+gereksinim analizini bitirdiğimizde iki numaralı proje riski hala olasılığı düşük mü yoksa olasılığı yükseldi mi ya da orta mı?
+
+279
+01:08:29,379 --> 01:08:42,499
+etkisi aynı mı yine ve bunun için nasıl bir önlem alınması gerekiyor?
+
+280
+01:08:42,499 --> 01:08:53,820
+Yani her bir risk için daha ayrıntılı bir tablo oluşturmamız gerekiyor.
+
+281
+01:08:53,820 --> 01:09:06,799
+Bu tabloya baktığımızda her bir risk için işte risk mesela pazarlama riski olasılığı yüksek.
+
+282
+01:09:06,799 --> 01:09:17,640
+Bir pazarlama uzmanımız yok olasılığı yüksek etkisi büyük ticari risklerde işletme risklerinde.
+
+283
+01:09:17,639 --> 01:09:24,259
+firmada sadece yazılım geliştiricilerden oluşan bir çekirdek kadro var.
+
+284
+01:09:24,259 --> 01:09:30,399
+Ama bu yazılımın piyasada çok fazla alternatifi var.
+
+285
+01:09:31,519 --> 01:09:35,499
+Bunun işaretleri nedir?
+
+286
+01:09:35,499 --> 01:10:04,019
+İşte bu ürünün satışının yapılamaması, burada bakım aşamasında da fiyatlandırmanın iyi yapılmaması, bu riskin şu andaki her andaki durumu nedir?
+
+287
+01:10:04,019 --> 01:10:22,460
+Bunlara karşılık önlemler alınacak. Bir yazılımcıya pazarlama konusunda MBA yaptırmak, gereksinim mühendisliği aşamasında konu uzmanlığıyla ilişkili danışmanlık hizmeti almak.
+
+288
+01:10:22,460 --> 01:10:29,760
+Yani hangi alanda geliştirilmişse yazılım, o alanda bilgi sahibi olmak.
+
+289
+01:10:30,095 --> 01:10:50,415
+bir de pazarlamayı daha iyi yapabilmek için bir iki firmayı pilot olarak alıp bu firmalara alan bilgisi verdikleri için daha uygun fiyata yazılım geliştirmek gibi önlemler.
+
+290
+01:10:50,415 --> 01:11:15,415
+yani bu her bir önlem bedava olmuyor tabii bir maliyeti var o zaman önlemleri maliyetleriyle birlikte düşüneceğiz hangi risk için hangi önlemlerin yani şuradaki şu önlem kavramı
+
+291
+01:11:15,415 --> 01:11:20,535
+önlem bizim için önemli.
+
+292
+01:11:21,215 --> 01:11:32,816
+Her bir önleme bakıp yani şuradaki riskin olmaması için alınacak önlemler bu önleme bakıp bunun maliyetini bulmak gerekiyor.
+
+293
+01:11:32,816 --> 01:11:39,075
+Ona göre bu yola gidelim mi gitmeyelim mi?
+
+294
+01:11:40,095 --> 01:11:42,715
+Hangi önlemi alalım?
+
+295
+01:11:42,715 --> 01:11:49,935
+hangi önlemin maliyeti nedir onun kontrol edilmesi gerekiyor.
+
+296
+01:11:49,935 --> 01:12:15,535
+İşte her bir risk için bilgi sayfası var. Bir de ilk başta ve daha sonra da bu risklerin genel olarak belirlenmesi
+
+297
+01:12:19,380 --> 01:12:32,439
+CISK'in tanımlanması, şurada, kategorisinin bulunması, etkisinin tahmin edilmesi, olasılığının tahmin edilmesi.
+
+298
+01:12:32,439 --> 01:12:43,679
+Bunlar ilk başta risklerin derecelendirilmesini sağlıyor.
+
+299
+01:12:43,679 --> 01:12:57,839
+hangi riskleri sıkı takip etmeliyiz hangilerini sadece bilip arada hala bu risk var mı diye bakmamız söz konusu olacak.
+
+300
+01:12:57,839 --> 01:13:08,920
+etki ve olasılığı birlikte düşünüp riskin önemini ona göre belirliyoruz.
+
+301
+01:13:08,920 --> 01:13:17,639
+Ve önem derecesine göre her birinin de önleminin ne olduğuna bakıyoruz.
+
+302
+01:13:18,179 --> 01:13:23,100
+Bu önlem çerçevesinde de maliyetine bakıyoruz her bir önlemin.
+
+303
+01:13:23,519 --> 01:13:27,820
+Ona göre bir yol haritası oluşturuyoruz risk yönetimi.
+
+304
+01:13:27,839 --> 01:13:29,060
+açısından.
+
+305
+01:13:29,899 --> 01:13:31,619
+Buraya kadar sorunuz var mı?
+
+306
+01:13:38,323 --> 01:13:39,544
+sorunuz var mı?
+
+307
+01:13:45,684 --> 01:14:04,364
+projelerinizde de risk tablosu oluşturmanızı da istiyoruz. İstediğimiz maddeler arasında var. Sizin projenizin yapısına uygun olan bir risk tablosu oluşturmanızı isteyeceğiz.
+
+308
+01:14:26,836 --> 01:14:45,235
+Risk yönetimi için söyleyeceklerim bunlar. Risk yönetimi ile hangi bilim dalı yakından ilişkili acaba?
+
+309
+01:14:54,515 --> 01:15:06,476
+Aleyna söyleyebilir misin? Risk yönetimi gerçekleştirirken hangi bilim dalıyla yakın ilişki?
+
+310
+01:15:06,476 --> 01:15:08,215
+Bilmiyorum maalesef.
+
+311
+01:15:08,775 --> 01:15:14,955
+Yani tahmin yürüteceksiniz. [öğrenci] sen bir tahmin yürütebilir misin?
+
+312
+01:15:21,203 --> 01:15:23,843
+Mahmed [öğrenci]
+
+313
+01:15:34,452 --> 01:15:37,011
+[öğrenci]
+
+314
+01:15:37,011 --> 01:15:41,131
+soru neydi? Hangi meslek konusundu?
+
+315
+01:15:41,131 --> 01:15:55,771
+şöyle, risk yönetimi gerçekleştirilecek. Risk yönetimi gerçekleştirirken, tabii ki yazılım konusunda da bilgisi olacak ama yazılım geliştirme konusunda.
+
+316
+01:15:57,052 --> 01:16:03,511
+risk yönetimini gerçekleştirirken hangi bilim dalına ihtiyacımız var daha çok?
+
+317
+01:16:04,452 --> 01:16:11,271
+Yani hocam maliyet analizi falan geldi aklıma şu anda bilemedim tam
+
+318
+01:16:15,699 --> 01:16:34,859
+Şimdi burada en önemli şey olacak olayın, yani olması ihtimali olan olay, risk, hangi kayıpları getirecek, olasılık ve istatistik önemli risk yönetimi için.
+
+319
+01:16:34,859 --> 01:16:51,259
+Yani yazılımda risk yönetimi önemli, yazılım projelerinde ama genel olarak bir risk değerlendirme uzmanının istatistik olasılık bilmesi gerekir.
+
+320
+01:16:51,259 --> 01:17:01,859
+Çünkü ilk başta bakın her bir riski tanımlıyoruz, olasılığını tanımlıyoruz, etkisini tanımlıyoruz.
+
+321
+01:17:01,859 --> 01:17:18,859
+olduğunda etkisi ne olacaktır? Olasılığı nedir? Bunu belirleyebilmek için istatistikle ilişkili değerlendirmeler yapılması gerekir.
+
+322
+01:17:18,859 --> 01:17:46,560
+gerekir. Veri biliminde de aynı şekilde istatistikle ilişkili şeyler çok, veri madenciliği kapsamında da. O yüzden bilgisayar mühendisliğinde de temel istatistik ve istatistikle ilişkili istatistiksel veri analizi gibi dersleri mutlaka okutulduğunu görüyoruz.
+
+323
+01:17:50,804 --> 01:17:57,203
+Evet, şimdi ölçme konusunda
+
+324
+01:18:03,412 --> 01:18:16,051
+yazılım üzerinde mühendislik işlemlerinden bir tanesi de yapılması gereken ölçüm, software matrix kavramı.
+
+325
+01:18:17,131 --> 01:18:27,811
+Burada bir ölçme işlemi var. Bir de bu ölçmenin ne cinsinden olduğu.
+
+326
+01:18:27,811 --> 01:18:39,351
+mesela boy santimetre ile ölçülüyor, hava sıcaklığı santigrat ile ölçülüyor. Bir de derecelendirmek var. İlk sınava göre ikinci sınavın zorluğu gibi.
+
+327
+01:18:41,191 --> 01:18:53,551
+Ölçüt, metrik bu ölçmenin birimini gösteriyor. Mesafe ölçütü, sıcaklık ölçütü gibi.
+
+328
+01:18:53,551 --> 01:19:02,932
+Peki bizim yazılım kavramları içinde hangi ölçütler var?
+
+329
+01:19:04,932 --> 01:19:23,272
+Karmaşıklık ölçütü, algoritma karmaşıklığı, büyüklük ölçütü, işte satır sayısı gibi, kaç kod satırı gibi ölçütlerimiz var.
+
+330
+01:19:23,551 --> 01:19:39,092
+burada ölçme işini neden yaparız? Bir, şu anda yaptığımız işin çalışan personelin kalitesini değerlendirmek için yaparız.
+
+331
+01:19:39,092 --> 01:20:00,092
+ikincisi de bundan sonra gerçekleşecek uygulamaların, projelerin maliyet tahminlerini, büyüklük tahminlerini daha doğru yapabilmek için yine ölçme işlemi gerçekleştiririz.
+
+332
+01:20:01,092 --> 01:20:08,151
+Biraz daha bu ölçme ile ilişkili konuları açacağız.
+
+333
+01:20:09,092 --> 01:20:20,331
+Şimdi bir 10 dakika ara veriyorum yine ondan sonra devam edeceğiz
+
+334
+01:20:20,331 --> 01:20:23,031
+Hocam bir şey sorabilir miyim?
+
+335
+01:20:23,232 --> 01:20:23,512
+Tabii
+
+336
+01:20:23,512 --> 01:20:33,311
+Hocam bizim projemizde iş planlarının sistem üzerinden yapılması diyor da iş planı olarak ne yapmamız gerekiyor? Onun hakkında bilgi alabilir miyim?
+
+337
+01:20:33,311 --> 01:20:45,371
+İş planı yani siz hangi süreç modelini kullanıyorsunuz? Az önce de proje planında olması gerekenleri söylemiştim.
+
+338
+01:20:45,371 --> 01:21:13,611
+projenizin planı hangi aktiviteler var başlangıçtan bitişe kadar mesela bir ekip çalışması yapıyorsunuz iş paylaşımı görev paylaşımı yapıyorsunuz ama hangi iş adımlarınız var mesela waterfall ile mi gidiyor yoksa Scrum ile mi gidiyor
+
+339
+01:21:13,611 --> 01:21:31,591
+yoksa Rapid Application Development modelle mi gidiyor? Bunların her birisi için iş aktiviteleri farklı yani aynı işler yapılır ama farklı sırada, farklı işleyişte yürür.
+
+340
+01:21:31,591 --> 01:21:42,912
+mesela waterfall kullanılıyorsa iş listesi, iş aktivitelerin nelerdir, aktivite listeniz nelerdir?
+
+341
+01:21:43,912 --> 01:21:50,351
+1-0 analiz, gereksinim analizi, 2-0 tasarım.
+
+342
+01:21:50,899 --> 01:22:16,619
+3-0 gerçekleme olacaktır. Ama bunları hiyerarşik olarak work breakdown structure yapısıyla oluşturduğumuzda 1-0 analiz ise, gereksinim analizi ise 1-1 veri toplama, 1-2 modelleme, 1-3 bu
+
+343
+01:22:16,619 --> 01:22:23,080
+yaptığımız işin raporunu yazma.
+
+344
+01:22:23,420 --> 01:22:24,420
+Yani kısaca bu.
+
+345
+01:22:24,420 --> 01:22:28,420
+Aslında gereksinim analizi konusunu biliyorsunuz.
+
+346
+01:22:29,059 --> 01:22:31,419
+Biz 8 alt bölüme ayırdık.
+
+347
+01:22:32,260 --> 01:22:37,620
+Ama kabaca sistem analizinde gördüğümüz gibi 3 alt birime ayırdık burada.
+
+348
+01:22:39,279 --> 01:22:41,379
+İşte 2-0 tasarım demiştik.
+
+349
+01:22:41,839 --> 01:22:43,419
+Tasarımın alt başlıkları.
+
+350
+01:22:43,420 --> 01:23:11,239
+2-1 genel tasarım ya da ön tasarım, 2-2 ayrıntılı tasarım, 2-2'nin altında ayrıntılı tasarımın alt başlıklarına baktığımızda 2-2-1 girdi tasarımı, 2-2-2 çıktı tasarımı, 2-2-3 veri tabanı tasarımı,
+
+351
+01:23:13,419 --> 01:23:24,219
+2-2-4 işlem tasarımı gibi veya ara birim tasarımı gibi alt başlıklar oluşturabiliriz.
+
+352
+01:23:24,439 --> 01:23:26,719
+Bu da bizim iş kırılım listemiz.
+
+353
+01:23:26,719 --> 01:23:40,199
+Yani hiyerarşik olarak gerçekleştireceğimiz işi alt maddelere bölerek planlamak.
+
+354
+01:23:41,359 --> 01:23:43,059
+Çok teşekkür ederim hocam sağ olun.
+
+355
+01:23:43,419 --> 01:23:48,539
+Yani burada da öncelikle hangi süreç modelini kullanıyorsunuz?
+
+356
+01:23:48,539 --> 01:23:57,760
+İşte Scrum ise Scrum'da waterfall'a göre ne farklılıklar var işin ilerlemesi açısından?
+
+357
+01:23:58,199 --> 01:24:01,459
+Yani böyle ardışık olarak biri bittiğinde biri mi başlıyor?
+
+358
+01:24:01,959 --> 01:24:05,539
+Yoksa önce parçalara ayırıyorsunuz?
+
+359
+01:24:06,439 --> 01:24:11,999
+Bu parçalar üzerinden mi aşağıda waterfall'a doğru gidiyor?
+
+360
+01:24:13,420 --> 01:24:18,420
+buna karar verip öyle iş istenizi oluşturuyorsunuz.
+
+361
+01:24:19,679 --> 01:24:21,179
+Çok teşekkür ederim hocam sağ olun.
+
+362
+01:24:21,739 --> 01:24:22,459
+Tamamdır.
+
+363
+01:24:23,580 --> 01:24:26,660
+Evet o zaman şimdi bir 10 dakika ara verelim.
+
+364
+01:24:27,380 --> 01:24:31,600
+Sonra tekrar devam edeceğiz.
+
+365
+01:40:49,108 --> 01:40:52,807
+yeni bir paylaşım yaptın. Takip edebiliyorsunuz herhalde değil mi?
+
+366
+01:41:00,756 --> 01:41:02,095
+proje planı için
+
+367
+01:41:02,095 --> 01:41:05,256
+bir
+
+368
+01:41:05,256 --> 01:41:07,455
+örnek
+
+369
+01:41:07,455 --> 01:41:09,035
+bir
+
+370
+01:41:13,171 --> 01:41:21,112
+adımlar, proje plan içerik bilgisi paylaştım şu anda.
+
+371
+01:41:24,431 --> 01:41:26,971
+Takip edebiliyorsunuz değil mi?
+
+372
+01:41:35,060 --> 01:42:02,959
+tamam, teşekkürler. Proje planında ayrıntılı olarak neler olmalı? Önce bir giriş, proje planının amacı, bu projenin amacı. Sonra projenin genel amacı, projenin alanı, projede teslim edilecekler nelerdir?
+
+373
+01:42:02,959 --> 01:42:06,080
+projedeki finansal beklentiler.
+
+374
+01:42:06,080 --> 01:42:14,699
+Yani şurası biraz fazla ayrıntılı görünüyor ama kısa kısa projenin genel amacı nedir?
+
+375
+01:42:15,159 --> 01:42:17,979
+Proje hangi alanda geliştiriliyor?
+
+376
+01:42:19,659 --> 01:42:22,819
+Temel teslim edilecekler nelerdir?
+
+377
+01:42:23,579 --> 01:42:25,999
+Sonra tamamlanma kriteri.
+
+378
+01:42:26,119 --> 01:42:30,140
+Bu her zaman olmayabilir, ihmal edilebilir.
+
+379
+01:42:30,139 --> 01:42:56,060
+kabuller ve kısıtlar. Kabuller bu projeyi geliştirirken şu kabuller varsayılarak yapıldı. Kısıtlar ise bu projede hangi sınırlamalar var bu proje kısıtı ya da teknik kısıt olabilir.
+
+380
+01:42:56,060 --> 01:43:16,960
+Yani aynı riskler gibi projeyle ilişkili, proje geliştirme süreçleriyle ilişkili ya da teknik kullanılan araçlar, proje kısıtı olarak personel kısıtı olabilir veya kabuller olabilir.
+
+381
+01:43:24,340 --> 01:43:27,279
+bunlar kaydedilecek.
+
+382
+01:43:32,180 --> 01:43:53,280
+sonra iş planı. Az önce arkadaşınızla konuştuğumuz iş planı. Öncelikle teslim edilecekler. Sonra genel yaklaşım. Work breakdown structure, iş kırılım yapısı. Bunun üzerinde az önce durduk.
+
+383
+01:43:53,280 --> 01:44:05,360
+kullanacağınız yazılım geliştirme süreç modeline göre bunun work breakdown structure yapısında olması için
+
+384
+01:44:05,360 --> 01:44:12,599
+hiyerarşik yapıda mesela az önce sözlü olarak tanımladım.
+
+385
+01:44:12,599 --> 01:44:26,180
+işte 1.0 waterfall için 1.0 analiz 2.0 tasarım gibi ve bunların alt başlıklarını vererek gösterilmesi work breakdown structure yapısı.
+
+386
+01:44:26,180 --> 01:44:30,659
+Sonra zaman listesi.
+
+387
+01:44:41,268 --> 01:45:04,747
+Şimdi arkadaşınız vizelerle ilişkili bir soru sormuş. Herkes için geçerli bu soru herhalde. Birinci vizenin etkisi yüzde kırk değil projeyle beraber. İkisi toplam yüzde altmış. Onun üzerinde daha sonra duracağız. Yani nasıl paylaşacağımıza karar vereceğiz.
+
+388
+01:45:04,747 --> 01:45:16,747
+finalin etkisi yüzde kırk. Final sınavında yönetim baştan yüz yüze olacağını söylemişti.
+
+389
+01:45:16,747 --> 01:45:33,827
+Şimdi arada bölüm yönetiminden arkadaşlarla konuştum. Özellikle final sınav programınızı önümüzdeki hafta belirleyecekler.
+
+390
+01:45:33,827 --> 01:45:54,367
+ki kendinizi ayarlamanız için sınavlara, yüz yüze sınavlara girmek üzere. Sonuçlarınız da belli. Ben geçen hafta sisteme gireceğimi söylemiştim ama bazı şeyler de ekleyeceğim için henüz sisteme girmedim.
+
+391
+01:45:58,739 --> 01:46:27,580
+test yaptığım için tabii ki belli sonuçlarınız ama sisteme girmedim henüz. Bu konuda final test olmayabilir. Çünkü bazı modellemeler, problemler falan onları test değil yazarak yapmanız daha iyi olacaktır.
+
+392
+01:46:28,739 --> 01:46:33,920
+yani çok büyük bir değişiklik olmazsa test olmayacaklar.
+
+393
+01:46:35,080 --> 01:46:39,359
+Evet başka bu konuda sorusu olan var mı?
+
+394
+01:46:48,340 --> 01:47:14,479
+Evet, yani burada en önemli şey söylediklerim aslında iki şey var. Bir tanesi ara dönem notunuz yüzde 60 ama bunun yarısı proje, yarısı test sınavınız olabilir. Ama bunu sizin lehinize değiştirebiliriz oranlarını.
+
+395
+01:47:14,479 --> 01:47:24,599
+ama şu anda yarı yarıya gibi bilin. Daha sonra belki ufak bir değişiklik yapabiliriz.
+
+396
+01:47:25,639 --> 01:47:33,579
+Final sınavlarınızda yüz yüze olacak ve büyük bir ihtimalle test olmayacak.
+
+397
+01:47:34,539 --> 01:47:36,020
+Yüzde kırk da etkisi var.
+
+398
+01:47:38,099 --> 01:47:40,599
+Evet şimdi devam edelim.
+
+399
+01:47:40,599 --> 01:47:47,840
+proje planına, proje planında work breakdown structure yapısını anladık, örnekledik.
+
+400
+01:47:48,419 --> 01:48:01,739
+Milestone dediğimiz zaman bu work breakdown structure'da hangi adımlarda dönüm noktalarımız var onları işaretliyoruz.
+
+401
+01:48:01,819 --> 01:48:03,879
+Milestone adını veriyoruz bunlara.
+
+402
+01:48:03,880 --> 01:48:26,140
+tahmin etmek ve bütçeleme yapmak, zaman tahmini ve kaynak tahmini, nakit akışı analizi işte ne kadar gerekli olacak, ne kadar da kar sağlanacak bu yapılan işten.
+
+403
+01:48:26,139 --> 01:48:37,099
+proje organizasyonu ve görevlendirme. Bunun üzerinde de durmamıştık. Proje planı deyince, proje yönetimi ve proje planlama deyince
+
+404
+01:48:37,099 --> 01:48:50,779
+tabii ki ekip yapısı nasıl oluşturulacak? Bu ekip yapısında görevlendirme nasıl olacak?
+
+405
+01:48:50,779 --> 01:49:19,700
+ekip yapısı hiyerarşik olabilir, demokratik olabilir ya da şeflik sistemi olabilir. Şeflik sistemi daha az kişi varsa olur. Mesela 10 kişiden sonrası demokratik yapıda ya da şeflik sisteminde olmaz da hiyerarşik düzende olması daha doğru olur gibi
+
+406
+01:49:20,780 --> 01:49:24,740
+bir yaklaşım söyleyebiliriz.
+
+407
+01:49:34,420 --> 01:49:58,879
+ayrıntılı adımlar, işte majör adımlar ve bunun alt başlıkları tanımlanır. Bu yukarıdaki proje, şurada Work Breakdown Structure yapısındaki alt başlıkların tanımlanması,
+
+408
+01:49:58,879 --> 01:50:23,739
+görevlendirme gereksinimleri yani hangi sistem analisti, yazılım geliştirici, kullanıcı testi gerçekleştiren gibi farklı iş gruplarının gereksinimleri nelerdir, hangi yeteneklerde olması bekleniyor.
+
+409
+01:50:23,739 --> 01:50:47,399
+alan yönetim planı, alan yönetim proje alanı, projedeki teslim edilecekler, projenin hedefi, proje teslim edileceklerinin ayrıntılı olarak açıklanması.
+
+410
+01:50:47,399 --> 01:51:03,259
+burada çok fazla alt başlık verilmiş. Siz sadece alan yönetimi, alandaki değişiklikler nasıl yönetilecek? Bu da önemli.
+
+411
+01:51:03,259 --> 01:51:22,199
+çünkü müşteri siz planı yaparken bir şeyler istemiştir ama daha sonra gereksinim analizi ayrıntılarını gördükçe daha fazla şey isteyebilir, hatalı anlattıklarını düzeltebilir, ek isteyebilir.
+
+412
+01:51:22,199 --> 01:51:34,199
+İşte bu değişikliklerin onayı nasıl verilecek, alan değişiklikleri nasıl tanımlanacak bunun belirtilmesi gerekir
+
+413
+01:51:38,996 --> 01:51:56,996
+daha sonra da iş listesi yönetim planı. Yani iş listesinde kaymalar olduğunda bu kaymalar nasıl yönetilecek?
+
+414
+01:51:56,996 --> 01:52:10,696
+mesela zaman kayması yaşandı. Bunun önlemlerinin nasıl alınacağı da sizin planınızda olabilir.
+
+415
+01:52:10,695 --> 01:52:38,695
+tabi bu çok kapsamlı bir proje planı mutlaka olması gerekenler maliyet yönetim planı hangi maliyet kalemleri yani bütçe bütçenin oluşturulması ve risk yönetim planı riskler nelerdir az önce konuştuğumuz konu iletişim yönetimi
+
+416
+01:52:38,695 --> 01:52:49,775
+burada iletişim yönetimi derken ekip içindeki iletişim nasıl kademelendirilerek gerçekleştirilecek?
+
+417
+01:52:49,775 --> 01:53:15,455
+Burada bu iletişim planından özellikle kastedilen bir kötü durum senaryosu olduğunda bunun daha önceden haberdar olması için nasıl bir iletişim planının olması gerekliliği,
+
+418
+01:53:15,455 --> 01:53:25,415
+kalite yönetim planı. Burada da temel birkaç hedef var aslında. Burada çok maddeler var.
+
+419
+01:53:25,415 --> 01:53:44,296
+Kalite yönetim planı dediğimizde kaliteyi sağlamak için gerçekleştirecek gözden geçirmelerin zamanı ve bu kalite takibinde,
+
+420
+01:53:44,295 --> 01:53:57,775
+kalite değerlendirmesinde kimler olacak gözden geçirmede kimler olacak bunun planlanması diyebiliriz.
+
+421
+01:54:05,524 --> 01:54:25,883
+kalite yönetimi ve kalite yönetim planı. Özellikle kalite gözden geçirmelerin yapılacağı zamanlar ve bu zamanlarda milestonelarda mı gözden geçirme yapılacak yoksa başka zamanlarda da yapılacak mı?
+
+422
+01:54:25,883 --> 01:54:42,623
+bunun belirtilmesi ve kalite yönetimindeki hedeflerin, ölçülerin belirlenmesi bulunmalı.
+
+423
+01:54:42,623 --> 01:55:01,583
+proje organizasyonu, projedeki roller, sorumluluklar ve proje yöneticisi çerçevesinde nasıl bir yapılanma var bunun görülmesi.
+
+424
+01:55:01,583 --> 01:55:29,903
+Bu faturalandırma süreçleri hem ürünle ilişkili alımlar, kaynakların alınması, elde etme planları hem de danışmanlarla yapılan anlaşmalardaki alt yüklenicilerle olan
+
+425
+01:55:31,583 --> 01:55:37,283
+ücret ödemelerindeki faturalandırma kuralları.
+
+426
+01:55:37,283 --> 01:55:44,884
+Evet dediğim gibi bu çok kapsamlı ama mutlaka olması gerekenler neler?
+
+427
+01:55:46,003 --> 01:55:56,843
+Mutlaka olması gereken bir proje planında projenin yani şu projenin amacı girmeye gerek yok.
+
+428
+01:55:56,843 --> 01:56:15,163
+proje amacı, proje alanı, projede teslim edilecekler. Temel olarak bunlar gerekli. Projenin kabul ve kısıtları, projede neleri kabul ediyoruz, neleri kısıt olarak belirliyoruz.
+
+429
+01:56:15,163 --> 01:56:40,763
+proje iş listesi, work breakdown structure yapısı, projedeki alt başlıklar, Gantt diagramının oluşturulması, Gantt diagramını ister MS Project'e ister başka bir araçla yapabilirsiniz.
+
+430
+01:56:45,163 --> 01:56:53,744
+alan yönetimini, alandaki değişiklikleri nasıl yapacağınız yine belirtiliyor.
+
+431
+01:56:59,539 --> 01:57:27,119
+proje planında iş listesindeki kaymalar nasıl yönetilecek? Bir de bütçe nasıl oluşturulacak? Risk yönetim planı bunlar olmalı. Bir de kalite gözden geçirmesinde kimler olacak? Hangi tarihlerde gözden geçirme yapılacak?
+
+432
+01:57:27,119 --> 01:57:41,159
+kalite yönetim planı ve proje ekip hiyerarşik yapısının proje organizasyonunun gösterilmesi diyebiliriz.
+
+433
+01:57:41,159 --> 01:57:44,499
+Buraya kadar sorunuz var mı?
+
+434
+01:57:44,499 --> 01:57:57,279
+Bu özellikle ara verdim ve şu ayrıntılı proje plan yapısını görmenizi istedim.
+
+435
+01:58:01,011 --> 01:58:29,251
+Evet, running kitle project dediğim, yani şurada bir de şunu görmenizi istiyorum. Proje yönetimi sadece proje planlama sözlü olarak söylemiştim. Proje planlama değildir. Projeyi anlama, projeyi tanımlama, projeyi planlama, projeyi çalıştırma ve projeyi kapatma aşamaları olmak üzere dört ya da beş adımdan oluşur.
+
+436
+01:58:29,251 --> 01:58:33,971
+Bu adımlardan bir tanesi de projeyi planlamadır.
+
+437
+01:58:43,796 --> 01:58:46,735
+Evet, burada sorunuz var mı?
+
+438
+01:58:55,539 --> 01:58:57,280
+Hocam bir şey sorabilir miyim?
+
+439
+01:58:57,319 --> 01:58:57,559
+Tabii.
+
+440
+01:58:58,159 --> 01:59:03,800
+Geçen hafta bu hafta için uygulama olacağını söylemiştiniz de. Uygulama haftayı mı ertelendi?
+
+441
+01:59:03,880 --> 01:59:07,479
+Haftaya ertelendi. Onu ilk derste başladığımızda söyledim.
+
+442
+01:59:07,719 --> 01:59:08,719
+Tamam, kaçırmış.
+
+443
+01:59:08,719 --> 01:59:25,519
+Genel planımızda öyle olduğu için onu planlayamadık. Sizin projeleriniz için bu hafta olmasının daha iyi olacağını söylüyordum ama ilk başta diğer türlü planladığımız için onu değiştiremedik maalesef.
+
+444
+01:59:25,539 --> 01:59:26,900
+tamamdır hocam.
+
+445
+01:59:26,900 --> 01:59:29,400
+Arkadaşların başka işleri nedeniyle.
+
+446
+01:59:31,319 --> 01:59:35,159
+O yüzden aslında bu hafta son dersimiz oluyor.
+
+447
+01:59:36,159 --> 01:59:45,479
+Çünkü önümüzdeki hafta uygulama, sonraki iki haftada da sizlerin projelerinin anlatımı var.
+
+448
+01:59:45,479 --> 01:59:58,879
+Bu proje anlatımlarında da sınıfta yapmak isteyen grup varsa sınıfta yapabilir.
+
+449
+02:00:01,279 --> 02:00:04,819
+Değilse devam zorunluluğunuz yok bu dönem.
+
+450
+02:00:05,419 --> 02:00:11,279
+Online yapabilirsiniz ama bütün şeylerin katılması gerekiyor.
+
+451
+02:00:11,279 --> 02:00:16,039
+ve sorulara cevap vermesi gerekiyor.
+
+452
+02:00:17,400 --> 02:00:20,159
+Online'da da katılımımız çok düşük çünkü.
+
+453
+02:00:21,439 --> 02:00:23,819
+Grubun bütün üyelerinin katılması gerekiyor.
+
+454
+02:00:25,220 --> 02:00:26,879
+Başka soru?
+
+455
+02:00:29,439 --> 02:00:31,679
+Yani önümüzdeki hafta bir uygulamamız var.
+
+456
+02:00:37,011 --> 02:00:55,411
+bana mail atın. İlk hafta, yani önümüzdeki hafta değil, ondan sonraki hafta sunmak isteyen varsa, gruplarda, istekli gruplara diğer arkadaşlar biliyordur. Biraz daha fazla puan veriyorum.
+
+457
+02:00:55,411 --> 02:01:14,151
+bu ilk hafta sunacağız diye bana mail atabilirsiniz ona göre programı yaparım değilse rastgele bir ikiye bölüp bir şey oluşturacağım.
+
+458
+02:01:18,387 --> 02:01:20,347
+Evet, başka sorunuz var mı?
+
+459
+02:01:22,307 --> 02:01:26,247
+Gantt diagramını sistem analizi görmeyenler için şöyle bir hatırlatayım.
+
+460
+02:01:26,348 --> 02:01:27,507
+Milestone nedir?
+
+461
+02:01:29,827 --> 02:01:31,327
+Şey nedir?
+
+462
+02:01:32,827 --> 02:01:35,427
+Gantt diagramı nedir?
+
+463
+02:01:35,427 --> 02:01:37,648
+Evet.
+
+464
+02:01:53,587 --> 02:02:04,807
+çarptı. Şöyle bir yapı oluşuyor. Birazcık büyüteyim.
+
+465
+02:02:18,452 --> 02:02:34,332
+bir, şurada iş listesi, work breakdown structure yapısını, Gantt diagramı çerçevesinde görüyoruz.
+
+466
+02:02:34,332 --> 02:02:46,071
+şunlar iş adımları, temel iş adımı, işte bu alt adımları olduğu için alt adımları gösteriyor.
+
+467
+02:02:46,891 --> 02:02:56,931
+Kendi altında başka kırılımlar varsa onları koyu renkte görüyoruz.
+
+468
+02:02:56,931 --> 02:03:16,731
+İşte bu alt işlemler eşkener dörtgenle gösterilen bir milestone şu temel iş kırılımının altındaki alt başlıklardan birisinin de alt başlığı var
+
+469
+02:03:16,731 --> 02:03:21,251
+Şuraya kadar onu görüyoruz 4 altı başlıkta
+
+470
+02:03:21,251 --> 02:03:23,371
+Sonra bir milestone var
+
+471
+02:03:23,371 --> 02:03:28,011
+Sonra diğer bir iş parçasını görüyoruz
+
+472
+02:03:28,011 --> 02:03:30,431
+Böylece iş kırılım listesi
+
+473
+02:03:30,431 --> 02:03:33,211
+Gant diagramı
+
+474
+02:03:33,211 --> 02:03:35,992
+Örnek bir Gant diagramı
+
+475
+02:03:35,992 --> 02:03:38,452
+Gördük
+
+476
+02:03:38,452 --> 02:03:42,971
+Project management yazılımları
+
+477
+02:03:42,971 --> 02:03:44,111
+Çok fazla var
+
+478
+02:03:44,111 --> 02:03:45,992
+Bir tane örneği MS Project
+
+479
+02:03:45,992 --> 02:04:05,931
+ama onun dışında açık kaynaklı birçok yazılım var. Bu yazılımlar ne yapıyor? İş kırılım listesi oluşturduğunuzda bilgileri girdiğinizde Gant diagramına ve PERT diagramına çizilmesine yardımcı oluyorlar.
+
+480
+02:04:05,931 --> 02:04:18,931
+ayrıca takip ve proje planıyla gerçekleşen takibini ve kaynak şeyini de gerçekleştirmiş oluyorlar.
+
+481
+02:04:20,591 --> 02:04:33,071
+Özellikle sistem analizi dersi almayanlar için bu araçları da gözden geçirmenizi tavsiye ederim.
+
+482
+02:04:38,036 --> 02:04:40,496
+Başka aklına soru gelen var mı?
+
+483
+02:05:10,515 --> 02:05:35,035
+milestone kavramını gördük. Evet, bu dönemde size büyüklük ölçümü, büyüklük ölçüm sistemleri konusunda bilgi vermedim. Onu diğer sınıfla da konuşurum. Eğer Yunus anlatmışsa,
+
+484
+02:05:35,035 --> 02:05:45,055
+daha sonra sizin anlatımlarınız sırasında da arada anlatırım.
+
+485
+02:05:45,495 --> 02:05:49,335
+Yani bir projenin büyüklüğünü nasıl ölçüyoruz.
+
+486
+02:05:52,675 --> 02:05:52,975
+Evet.
+
+487
+02:05:55,475 --> 02:05:58,495
+Bu hafta işleyeceklerim bunlar.
+
+488
+02:05:59,115 --> 02:06:01,855
+Yazılım proje yönetimini özetlemiş olduk.
+
+489
+02:06:01,856 --> 02:06:08,076
+sorunuz var mı? Tekrar sorayım.
+
+490
+02:06:12,948 --> 02:06:17,908
+projelerinizle ilişkili sunum konusunda bana mail atın.
+
+491
+02:06:24,051 --> 02:06:35,852
+önümüzdeki haftada zaten dersin başında görüşmüş olacağız. İyi haftalar diliyorum. Dersi bitiriyorum.

@@ -1,0 +1,1735 @@
+1
+00:00:31,987 --> 00:00:37,087
+Evet, günaydın. Biraz daha arkadaşlarınızı eklensiz diye bekliyorum.
+
+2
+00:01:17,331 --> 00:01:21,772
+Kullandığım bazı slide'ları ders duvarına yükleyeceğim.
+
+3
+00:01:28,436 --> 00:01:42,155
+önümüzdeki haftaya kadar yüklemiş olurum. Bu arada ders duvarında proje gruplarınız vardı, incelediniz mi?
+
+4
+00:01:54,067 --> 00:01:59,687
+herhangi bir problem olan var mı?
+
+5
+00:02:07,956 --> 00:02:32,195
+Peki, konu olarak biraz fazla oldu aslında Çelebi Tur Programı ve YSoft Yazılım Evi İnsan Kaynakları. Yalnız diğer konuyu seçen daha az kişi oldu.
+
+6
+00:02:32,195 --> 00:02:53,975
+Şimdi çok fazla şey yapmadım, konu değişikliği yapmadım, yalnız daha başlamamış olanlardan konusunu değiştirip medya beş duyu konusunu seçecek olan var mı?
+
+7
+00:03:06,292 --> 00:03:08,611
+var mı değiştirecek olan?
+
+8
+00:03:22,195 --> 00:03:39,195
+Evet, o zaman derse başlayalım ama 13 kişi oldu henüz. Bugün biraz geçen haftakileri hem tekrar edip hem de farklı örneklerle üzerinde duracağız.
+
+9
+00:03:49,972 --> 00:03:55,571
+üzerinde durmamızı istediğiniz bir konu var mı? Üzerinden geçmemizi istediğiniz?
+
+10
+00:04:05,427 --> 00:04:21,407
+Şimdi birazdan ders içeriği konusunda bölüm ve üniversite tarafından yapılan değişiklik üzerinde duracağız.
+
+11
+00:04:23,108 --> 00:04:26,567
+Ders planı üzerinde duracağım birazdan.
+
+12
+00:04:43,956 --> 00:04:52,155
+Evet, şimdi başlayalım.
+
+13
+00:05:44,660 --> 00:05:52,079
+yazılım mühendisliği ders planı üzerinde daha önce durmuştuk. Şu anda ekranı görüyorsunuz değil mi?
+
+14
+00:05:56,084 --> 00:05:58,524
+Ders içeriği ekranını görüyor musunuz?
+
+15
+00:05:59,723 --> 00:06:00,544
+Görünüyor hocam.
+
+16
+00:06:00,903 --> 00:06:18,084
+Tamam. Evet. İlk hafta dersin hem içeriğini tanıttık hem de yazılım mühendisliği kavrama üzerinde durduk. Yazılımı etkileyen genel bilgiler üzerinde durduk.
+
+17
+00:06:18,084 --> 00:06:37,543
+yazılım nedir, yazılım mühendisliği nedir, yazılım süreç modeli nedir, yazılım geliştirme alt başlıkları nelerdir ve case kavramı nedir?
+
+18
+00:06:37,543 --> 00:06:41,863
+Case kavramı nedir hatırlayan var mı?
+
+19
+00:06:47,187 --> 00:06:55,427
+staj yaptığınız yerde case kullanacağız dediklerinde cevabınız ne olacaktır? Case nedir dediklerinde?
+
+20
+00:07:01,043 --> 00:07:11,844
+[öğrenci] söyler misiniz? Bilgisayar destekli yazılım mühendisliği şeklinde. Evet. Yani biraz bir cümleyle anlatır mısın?
+
+21
+00:07:11,844 --> 00:07:30,843
+Bu UML diagramları program vasıtasıyla oluşturmak için kullanan programlar galiba. Yani şu anda mesela sadece analiz ve tasarım aşamasındaki desteğini söylüyorsunuz.
+
+22
+00:07:31,043 --> 00:07:45,683
+UML diagramlarının çizimi, UML diagramlarının kontrolü hem daha hızlı ve otomatik çizilmesi hem de kontrol edilmesini içeriyor.
+
+23
+00:07:45,683 --> 00:08:14,603
+Bunun dışında daha yazılım geliştirme sırasındaki kodlamada, konfigürasyon yönetiminde, test aşamasında hem kullanıcı testi hem bütünleşik test hem sistem testinde her aşamada biz bu araçların kullanıldığını görüyoruz.
+
+24
+00:08:14,603 --> 00:08:43,603
+yani yardımcı olacak yazılım araçlarının kullanıldığını görüyoruz. Bu çerçevede de case araçları yazılım geliştirme sürecinin her evresinde yazılım geliştiricilere destek olacak, onların işlerini hızlandıracak ve daha kontrollü yapılmasını sağlayacak yazılımlar diyoruz.
+
+25
+00:08:44,603 --> 00:08:58,503
+bunun da işte bir bütünleşik case araçları ya da sadece belli bir aşamada daha küçük case araçları olarak görmüştük.
+
+26
+00:08:58,503 --> 00:09:09,783
+Tabii ki bütün yazılımlarda olduğu gibi bunlarda da yine açık kaynaklı olanlar var.
+
+27
+00:09:09,783 --> 00:09:23,783
+ama tabii ki daha profesyonel olanların daha büyük yazılımlarda kullanılanların ücretli olduğunu ve çok pahalı ürünler olduğunu da biliyoruz.
+
+28
+00:09:23,783 --> 00:09:31,163
+Evet şimdi daha sonraki haftada yazılım geliştirme süreç modelleri üzerinde durduk.
+
+29
+00:09:31,243 --> 00:09:37,523
+Yazılım geliştirme süreç modellerini önce klasik süreç modelleri diye gördük.
+
+30
+00:09:37,523 --> 00:09:56,943
+şelale yani waterfall, prototip, ön ürün diye de Türkçeleştirebiliriz, RAD, Rapid Application Development, bileşen bazlı yani komponent based yaklaşımla yapılmış olan kazan kazan üzerinde durmadık, spiral model üzerinde durduk.
+
+31
+00:09:56,943 --> 00:10:09,143
+bir de ayrıca spiral modelinin artımlı yapısının ilk örneği olan inkrementer artımlı yaklaşımı gördük.
+
+32
+00:10:09,143 --> 00:10:32,143
+Ayrıca bir de gördüğümüz süreç modellerinden bir tanesi bizim unified process model IBM'in daha sonradan satın aldığı case aracı olan şu anda IBM'in bir platformu halinde bulunan
+
+33
+00:10:32,143 --> 00:10:48,003
+Unified Process yaklaşımının, Rational Unified Process Roup yapısının
+
+34
+00:10:48,532 --> 00:11:09,751
+olduğunu da biliyoruz. Buna uygun olan yazılım geliştirme süreç modeli de unified process model. Bunun üzerinde de durduk. Bu da çünkü geçiş sürecinde özellikle büyük firmalar tarafından çok kullanılan bir yazılım geliştirme süreç modeli.
+
+35
+00:11:09,751 --> 00:11:22,851
+Bir de şu anda tabii bütün özellikle orta boy küçük yazılım şirketlerinde kullanılmaya başladı ilk başta
+
+36
+00:11:22,851 --> 00:11:33,971
+Ve şu anda büyük askeri yazılımlarda bile kullanılan çevik modeller, agile süreçler üzerinde durduk
+
+37
+00:11:33,971 --> 00:11:48,411
+agile süreçler üzerinden gittiğimizde XP ve Scrum üzerinde durduk. Bir de Kanban var agile süreçler içinde ama XP ve Scrum üzerinde durmuştuk.
+
+38
+00:11:48,411 --> 00:12:03,351
+Bu süreç modelleri için bir özet bunların şekillerinden oluşan bir özet slide yine ders duvarına yerleştireceğim.
+
+39
+00:12:03,971 --> 00:12:33,951
+ve bu aşamada süreçleri iyileştirmek için, proje yönetimini iyileştirmek için, hatta yazılım geliştiriciler, çalışanlarla ilişkili olanakları da kontrol eden ve bunlara göre derecelendiren yazılım geliştirme ortamını veya yazılım evini,
+
+40
+00:12:33,971 --> 00:12:53,411
+ya da yazılım geliştirme birimini bir sertifikasyondan söz etmiştik. Bu sertifikasyon CMMI sertifikasyonu. Bu noktada derste gördüklerimizi bir tekrar ediyorum öncelikle.
+
+41
+00:12:53,411 --> 00:13:07,051
+çünkü bizim önümüzdeki hafta şurada yedinci hafta yapacağımız bir laboratuvar çalışması vardı.
+
+42
+00:13:08,112 --> 00:13:17,311
+Sınavları dokuzuncu haftaya erteleyince laboratuvar çalışmamızda sekizinci haftaya yerleşti.
+
+43
+00:13:17,311 --> 00:13:28,632
+Bugün sınavdan önceki son dersimiz önümüzdeki hafta ders yardımcısı olan arkadaşlar uygulama yapacaklar
+
+44
+00:13:28,632 --> 00:13:44,571
+Bu daha önce de sormuştunuz buradaki laboratuvar çalışması diye geçiyor ama bir uygulama çalışması yani nasıl biz dersi uzaktan da işleyebiliyorsak
+
+45
+00:13:44,571 --> 00:13:53,791
+aynı şekilde arkadaşlar da örnek problemleri yine uzaktan çözecekler sizinle çalışacaklar.
+
+46
+00:13:54,811 --> 00:14:04,752
+Yani laboratuvarda zaten olmayacaktı ders planımızda yaptığımız değişiklikten beri geçen seneden beri.
+
+47
+00:14:05,131 --> 00:14:09,532
+Yani yüz yüze de yapsak sınıfta yapacağımız bir uygulamaydı.
+
+48
+00:14:09,631 --> 00:14:11,171
+Laboratuvarda yapmayacaktı.
+
+49
+00:14:11,171 --> 00:14:24,451
+Şimdi, SMMI konusunu hatırlayan var mı? SMMI süreç sertifikasyonu. Bu konuda açıklama yapmak isteyen var mı?
+
+50
+00:14:28,788 --> 00:14:41,628
+SMMI nedir? SMMI'nin kaç evresi vardır? Hangi sertifikasyonlar alınabilir? SMMI nedir? İsterseniz ben Türkçesini de söyleyeyim.
+
+51
+00:14:43,467 --> 00:14:50,628
+SMMI'nin Capability Majority Model Integration açılımı.
+
+52
+00:14:50,628 --> 00:14:58,628
+yetkinlik olgunluk modeli, bütünleşik yetkinlik olgunluk modeli.
+
+53
+00:15:11,251 --> 00:15:23,331
+[öğrenci], Sememay nedir? Kaç düzey vardı? Şimdi ben açılımını söyledim.
+
+54
+00:15:24,431 --> 00:15:29,451
+Hocam yazılmıyorsam A6 düzey vardı ama tam olarak açıklayabileceğimi sanmıyorum ama.
+
+55
+00:15:29,451 --> 00:15:37,811
+Tamam. [öğrenci] sen açıklayabilir misin? [öğrenci]?
+
+56
+00:15:37,811 --> 00:15:41,291
+Yok hocam ben de açıklayabileceğimi sanıyorum
+
+57
+00:15:41,291 --> 00:15:43,211
+Emre Kütük
+
+58
+00:15:43,211 --> 00:15:47,171
+Maalesef hocam
+
+59
+00:15:47,171 --> 00:15:50,092
+[öğrenci]
+
+60
+00:15:50,092 --> 00:15:56,612
+Hocam yani biraz seviyeleri söyleyebilirim
+
+61
+00:15:56,612 --> 00:15:56,991
+Evet
+
+62
+00:15:56,991 --> 00:16:01,571
+Gidişte daha bir şey yapılmıyordu yanlış hatırlamıyorsam
+
+63
+00:16:01,571 --> 00:16:02,591
+Evet sıfırda
+
+64
+00:16:02,591 --> 00:16:06,211
+Sonra yürütülmeye başlanıyor
+
+65
+00:16:06,211 --> 00:16:08,952
+birinci seviyede.
+
+66
+00:16:10,371 --> 00:16:13,311
+Bir de hazırlık aşaması, iki de başlıyor esas.
+
+67
+00:16:14,151 --> 00:16:18,491
+İşte evet hazırlıkta iki de bir yönetim başlıyordu yanlışlıkla proje falan.
+
+68
+00:16:19,491 --> 00:16:23,432
+Sonra belge hazırlanıyordu, reseres belgesi.
+
+69
+00:16:23,432 --> 00:16:24,271
+Evet.
+
+70
+00:16:25,751 --> 00:16:26,991
+Ondan sonra.
+
+71
+00:16:28,871 --> 00:16:31,351
+Yani bu seviyeler nasıl oluşturuluyor?
+
+72
+00:16:31,511 --> 00:16:34,052
+Onu [öğrenci] ile beraber açıklayalım.
+
+73
+00:16:34,051 --> 00:16:51,691
+bu hani seviyelendiriyoruz ikinci düzey, üçüncü düzey, dördüncü düzey, beşinci düzey, beş tane düzey var. Bu düzeylerden ikincisinde bu şirket, bu yazılım şirketi ikinci düzeydedir dediğimizde bunun anlamı şu oluyor.
+
+74
+00:16:51,691 --> 00:17:04,811
+Bu yazılım evim gerçekleştirdikleri projelerde bir gereksinim analizi oluşturuyorlar.
+
+75
+00:17:04,811 --> 00:17:18,451
+Gereksinim analizi sonucunda SRS belgesi tasarım sonucunda tasarım belgesi oluşturuyorlar ve çalışmaları bu anlamda kontrol altında tutuluyor.
+
+76
+00:17:18,451 --> 00:17:26,931
+bir proje planı yapılıyor ve bir konfigürasyon yönetimi gerçekleştiriliyor.
+
+77
+00:17:28,071 --> 00:17:30,832
+Yani konfigürasyon yönetiminden kastımız ne?
+
+78
+00:17:31,451 --> 00:17:33,711
+Yazılım konfigürasyon yönetiminden.
+
+79
+00:17:34,632 --> 00:17:40,031
+Yazılımın her aşamadaki elde edilen ürünleri nelerdir?
+
+80
+00:17:40,031 --> 00:17:46,791
+Bu elde edilen ürünlerinin yapısı konusunda bir veri tabanı oluşturuluyor.
+
+81
+00:17:46,791 --> 00:18:04,211
+bu ister kullanılan platformla otomatik oluşturulsun ister bu alanda bir yazılım geliştirilerek kullanılarak oluşturulsun bu yazılım elemanlarını takibe yarıyor.
+
+82
+00:18:05,131 --> 00:18:11,271
+Yazılım elemanlarının her versiyonda hangi durumda olduklarını gösteren bir tanım.
+
+83
+00:18:11,271 --> 00:18:35,951
+dolayısıyla ikinci düzeyden itibaren buna çaba gösteriliyor. Üçüncü düzeyde bir adım daha ileriye gidilmiş oluyor. Üçüncü düzeyde olan bir firmada veya yazılım biriminde burada gerçekleştirilecek işlemler bu yazılım biriminde risk yönetimi gerçekleştiriliyor.
+
+84
+00:18:35,951 --> 00:19:00,251
+yazılım risk yönetimi gerçekleştiriliyor. Yazılımın bütün bitmiş projelerde yazılımdaki bütün bitmiş projelerde bir aynı yapıda bir gereksinim belgesi bulunuyoruz.
+
+85
+00:19:00,251 --> 00:19:10,251
+Yani sadece gereksinin belgesi tutmak değil, bu gereksinin belgesinin bütün projelerde aynı şekilde takip edilmesi
+
+86
+00:19:10,836 --> 00:19:33,135
+söz konusu oluyor. Bu çerçevede de üçüncü düzeyde şirket çerçevesinde bir ortaklık söz konusu. Bütün projelerde aynı seviyede aynı belgelemeleri gerçekleştirilmesi söz konusu.
+
+87
+00:19:33,135 --> 00:19:40,875
+Ayrıca risk yönetiminin de yapılmasını sağlandığını görüyoruz.
+
+88
+00:19:40,875 --> 00:20:08,775
+ve son 2018'deki çalışmalardan sonra CMM aya bu bütünleşik yapısına projeyle ilişkili teknik yazılım geliştirme süreçleriyle ilişkili proje yönetimiyle ilişkili bütün ilerlemeler eklenmiş ve bütünleşik denmişti daha önce 2000'li yılların başında.
+
+89
+00:20:08,775 --> 00:20:19,455
+2018'den itibaren de insan kaynağı konusundaki yetkinlikler de ilave edilmiş oldu bütünleşik yapıya.
+
+90
+00:20:19,455 --> 00:20:38,276
+Yani projelere yazılım geliştirici alımı, yeteneklerinin kullanımı, kariyer planlarının yapımı eğer şirket bunları da aynı aşamalarda sağlıyorsa bütünleşik düzeyde 3'e 4'e çıkabiliyor.
+
+91
+00:20:38,775 --> 00:20:45,775
+bu çerçevede Sememay'ı da hatırlamış olduk.
+
+92
+00:20:47,775 --> 00:20:52,775
+Hatırlayan var mı? Türkiye'de Sememay'ı alan firmalar.
+
+93
+00:21:00,115 --> 00:21:01,955
+Serumay nereden veriliyor?
+
+94
+00:21:02,735 --> 00:21:04,795
+Koç sistem ve İtia'da vardı yatırıyorum.
+
+95
+00:21:05,355 --> 00:21:05,975
+Efendim?
+
+96
+00:21:06,835 --> 00:21:08,695
+Koç sistem vardı, İtia vardı.
+
+97
+00:21:08,695 --> 00:21:20,075
+Evet, Koç sistem var, İtia var. Zaten bu askeri yazılımları oluşturan Milsoft sürekli beşinci düzeyde olan firma.
+
+98
+00:21:20,075 --> 00:21:33,095
+diğer yazılımları üreten firmalar yine dördüncü düzeyde en az bulunuyor.
+
+99
+00:21:33,095 --> 00:21:47,255
+Ama bir kural olarak da bu alanda kullanılacak olan yazılımların, üretildiği firmaların en az üçüncü düzeyde olması gibi bir şart da var.
+
+100
+00:21:47,255 --> 00:21:57,695
+Evet şimdi dördüncü haftada ne üzerinde durduk ona bakalım
+
+101
+00:22:01,203 --> 00:22:16,743
+Gereksinim Mühendisliği. Bugün bir gereksinim belgesi üzerinde duracağız. Daha önceki öğrencilerimin oluşturduğu bir SRS belgesi üzerinde duracağız. Biraz daha kafanızda şekillenmesi için.
+
+102
+00:22:16,743 --> 00:22:28,943
+ve SRS belgesi ve bütün dokümanlar için yazılım mühendisliği standartları diye bir şey var.
+
+103
+00:22:29,044 --> 00:22:37,343
+Yazılım mühendisliği standartları yazılım geliştirme sürecinde elde edilen belgelerin aslında formatını gösteriyor.
+
+104
+00:22:37,343 --> 00:22:46,084
+Bu noktada da gereksinim analizi sonucunda üretilen belgenin formatı üzerinde duracağız.
+
+105
+00:22:46,083 --> 00:23:00,923
+kullanım senaryolarını gördük. Kullanım senaryosu yani use case'lerin hem metinlerini, dokümanlarını hem de diagramlarını gördük.
+
+106
+00:23:01,663 --> 00:23:14,643
+Sınıf şaması, zaten bu sınıf şaması UML altında bulunan nesne yönelik dersinde de gördüğünüz diagramlardı.
+
+107
+00:23:14,643 --> 00:23:22,823
+ama biz bunların üzerinde de yine durduk bu dersi almamış arkadaşlarımız için.
+
+108
+00:23:23,983 --> 00:23:28,543
+Tasarım süreçlerinde UML sınıf şeması üzerinde durduk.
+
+109
+00:23:28,603 --> 00:23:33,643
+Sequence diagramları yani sıralı ardışıl diagramlar üzerinde durduk.
+
+110
+00:23:34,503 --> 00:23:36,923
+Etkinlik ve durum şemaları üzerinde durduk.
+
+111
+00:23:36,923 --> 00:23:43,663
+Etkinlik şemaları üzerinde bugün bir tane daha örnek yapacağız.
+
+112
+00:23:44,643 --> 00:24:00,243
+Çünkü seconds ve UML diagramlarını, sınıf diagramlarını daha fazla diğer derslerde, diğer şeylerde de kullanıyorsunuz eğitimlerde
+
+113
+00:24:00,243 --> 00:24:07,403
+Ama etkinlik şaması, activity diagramların üzerinde bir tane daha örnek yapacağız
+
+114
+00:24:07,403 --> 00:24:22,803
+Ayrıca önümüzdeki haftada yine arkadaşlar size bu diagramlarla özellikle etkinlik şaması, sınıf şaması, diğer analiz ve tasarımdaki diagramlar konusunda bilgi verecekler
+
+115
+00:24:22,803 --> 00:24:29,004
+Daha sonra geçen hafta tasarım kalıpları üzerinde durduk
+
+116
+00:24:29,004 --> 00:24:47,004
+tasarım kalıpları, golf kalıpları, Gang of War kalıpları diye bilinen Gang of War dört yazılım uzmanı tarafından geliştirilen 2000'li yılların başında bir yapı.
+
+117
+00:24:47,004 --> 00:25:10,043
+Tasarım kalıbı dediğimizde ne anlıyoruz? Design pattern ya da tasarım kalıbı. Tasarım kalıbı size ne anlatıyor? Kısaca ne dersiniz tasarım kalıbı dendiğinde?
+
+118
+00:25:10,043 --> 00:25:15,303
+bir defa reusability'yi sağlıyor.
+
+119
+00:25:15,523 --> 00:25:21,924
+Yeniden kullanılabilirliği sağlayan en önemli etkenlerden bir tanesi tasarım kalıpları.
+
+120
+00:25:27,284 --> 00:25:28,823
+[öğrenci]
+
+121
+00:25:34,483 --> 00:25:37,323
+Design pattern nedir? Neden kullanırız?
+
+122
+00:25:47,220 --> 00:25:48,320
+[öğrenci]
+
+123
+00:25:53,172 --> 00:25:55,771
+[öğrenci], [öğrenci]
+
+124
+00:26:01,587 --> 00:26:02,907
+[öğrenci]
+
+125
+00:26:08,307 --> 00:26:11,967
+Design pattern deyince ne anlıyorsunuz?
+
+126
+00:26:17,203 --> 00:26:24,603
+[öğrenci], [öğrenci], evet,
+
+127
+00:26:31,476 --> 00:26:37,535
+[öğrenci], kısaca yazabilir misin? Nedir tasarım kalıbı?
+
+128
+00:26:59,892 --> 00:27:10,892
+tasarım kalıbı nedir? Geçen hafta bayağı durduk üzerinde. Onun için bunu sizin...
+
+129
+00:27:14,163 --> 00:27:17,063
+bu konuda bilgi edinmenizi bırakıyorum.
+
+130
+00:27:21,460 --> 00:27:23,219
+açıklayacak olan var mı?
+
+131
+00:27:28,403 --> 00:27:42,903
+tam net hatırlamıyorum ama bu sınıf tasarımlarında daha evvel yapılmış, verimliliği ispatlanmış bazı kalıpların kalıp olarak kullanılması şeklinde.
+
+132
+00:27:42,903 --> 00:27:57,903
+Evet, yani her açıdan sınıf diagramlarında, seconds diagramlarında, sınıf üzerinde gerçekleştirilecek işlemler kapsamında,
+
+133
+00:27:58,403 --> 00:28:17,764
+daha önceden çözümü bulunmuş ve tanımlanmış algoritmaların, yapıların hazır hale getirilip bu çözüm yolunun sürekli kullanılacak şekilde tutulmasına biz tasarım kalıbı diyoruz.
+
+134
+00:28:17,764 --> 00:28:46,103
+Bu tasarım kalıbı aslında geçen haftada söylemiştim aklın yolu birdir mantığında bir kez uğraşıp çözüm bulduğumuz bir problemi tekrar tekrar uğraşmayalım bu problemle karşılaşanların kullanacağı bir şey olarak çözüm grubu olarak kalıp olarak saklanmasını sağlayalım
+
+135
+00:28:46,103 --> 00:28:54,283
+ve bunun sürekli kullanımını oluşturalım dediğimizde tasarım kalıpları oluyor.
+
+136
+00:28:55,183 --> 00:29:01,383
+Tasarım kalıpları ilk sonradan da eklenen tasarım kalıpları olmuştur.
+
+137
+00:29:01,383 --> 00:29:06,943
+İlk kullanımında 26 tane tanımlamış bu 4 yazılım uzmanı.
+
+138
+00:29:06,944 --> 00:29:19,344
+bunların tanımladığı temel yazılım kalıplarından en fazla kullanılan dokuz tanesinin üzerinden de geçen hafta geçtik.
+
+139
+00:29:19,344 --> 00:29:26,344
+Hatta birkaç tane de bizim sistem analizi ve tasarımı kitabımızda örnek verdik.
+
+140
+00:29:26,343 --> 00:29:49,863
+Sistem Analizi ve Tasarımı kitabı daha önceki yıllarda sistem analizi alan arkadaşlarınızın kullandığı, derste kullandığınız kitapta bununla ilişkili olan bölümden size paylaşmıştım ilgili örnekleri.
+
+141
+00:29:49,863 --> 00:30:09,863
+Evet, UML durum ve etkinlik diagramları üzerinde de durduk yine geçen hafta bu diagramlar üzerinde durduk state diagram durum diagramı ve etkinlik şeması aktivite diagramları üzerinde durduk
+
+142
+00:30:09,863 --> 00:30:35,123
+Şimdi tekrar söylüyorum sınavı online olarak 9. hafta gerçekleştireceğiz ve bizim şurada belirttiğimiz ilk başta ilk vize ve ikinci vize tanımını yapmıştık sadece tek vize yapacağız
+
+143
+00:30:35,124 --> 00:31:03,183
+bu vizedeki notları da birleştireceğiz. Bu çerçevede proje notunun üzerinde de biraz daha düşüneceğiz. Yani %25'e mi çıkaralım? %35 ve 25 mi yapalım şeklinde. Bunu size daha sonra duyuracağız. Daha sonra da final sınavlarınız olacak.
+
+144
+00:31:05,124 --> 00:31:07,084
+Evet buraya kadar bir sorunuz var mı?
+
+145
+00:31:09,924 --> 00:31:12,903
+Tekrar eklenen arkadaşlarınız olduğu için soruyorum.
+
+146
+00:31:13,523 --> 00:31:17,204
+Proje gruplarınıza ders duvarından baktığınız var.
+
+147
+00:31:17,724 --> 00:31:22,803
+Proje gruplarınızı sizin önerilerinizi dikkate alarak oluşturdum.
+
+148
+00:31:23,152 --> 00:31:51,572
+ama bu gruplarda konu seçiminde bir medya konusunu, medya takip konusunu seçen çok az oldu. Şu anda değiştirmek isteyen gruplar varsa, çünkü henüz çalışmaya başladığınızı zannetmiyorum, konusunu değiştirmek isteyen varsa bana mail atabilir gruplar.
+
+149
+00:31:51,572 --> 00:31:56,192
+grup arkadaşlarınıza da söyleyin ona göre bana mail atabilirsiniz.
+
+150
+00:31:57,652 --> 00:32:01,052
+Konu değişikliği medya takibe çevirmek üzere yapabilirim.
+
+151
+00:32:03,211 --> 00:32:03,912
+Evet şimdi.
+
+152
+00:32:20,147 --> 00:32:28,227
+Şimdi bu program dosyasını değiştiriyorum.
+
+153
+00:33:02,516 --> 00:33:08,275
+Şurada sohbet bölümünde yazayım, daha pratik olsun.
+
+154
+00:33:08,275 --> 00:33:11,776
+S-R-S
+
+155
+00:33:11,776 --> 00:33:14,316
+Software
+
+156
+00:33:19,827 --> 00:33:20,787
+requirement
+
+157
+00:33:27,347 --> 00:33:34,347
+ve bu konuları,
+
+158
+00:33:35,827 --> 00:33:57,508
+Spesifikasyon biliyorsunuz ayrıntılı açıklama demek. Yazılım gereksinimlerinin ayrıntılı açıklaması olan belge, SRS belgesi. Bu SRS belgesinde gereksinim analizinde yaptığınız çalışmaların dokümante edilmiş hali bulunuyor.
+
+159
+00:33:57,508 --> 00:34:10,807
+Bu bir etkinlik duyuru sistemi diye bir proje için hazırlanan SRS belgesi üzerinde duralım şimdi.
+
+160
+00:34:10,807 --> 00:34:23,868
+Bu arada bu belge şey tarafından tanımlanmış bir belge.
+
+161
+00:34:23,867 --> 00:34:42,707
+yani şuradaki içerik listesi, buradaki içerik listesi IEEE software standartları içinde 830 numaralı standartta belirtilen içerik kapsamında oluşturulmuş bir belge.
+
+162
+00:34:42,707 --> 00:34:58,607
+standartın içeriği bu şekilde. Bu içeriğe uygun hazırlanmış olan işte ilk önce giriş, sonra amaç, kapsam, tanımlar, kısaltmalar, referanslar,
+
+163
+00:34:59,207 --> 00:35:11,707
+dökümana genel bakış gibi bir resmi giriş bölümü var. Daha sonra ürünün hangi alt parçalardan oluştuğunu belirten ve bu alt parçalara
+
+164
+00:35:11,707 --> 00:35:22,987
+göre tanımlarının yapıldığı, kullanıcı, istek tanımlarının yapıldığı bölüm, ürüne bakış bu yazılı olarak yapılan bir şey.
+
+165
+00:35:23,987 --> 00:35:35,007
+Daha sonra gereksinimlerin tanımları da yine bu yapıda oluşturuluyor.
+
+166
+00:35:35,007 --> 00:35:36,267
+Şimdi bakalım.
+
+167
+00:35:42,452 --> 00:35:48,971
+Gereksinim tanımları için giriş, amaç, kapsam, etkinlik duyuru sistemi dendiğinde ne anlıyoruz?
+
+168
+00:35:50,351 --> 00:36:06,731
+Etkinlik duyuru ile ilişkili bir site ve bu site içine bilgi girişi idari personelin yapabildiği bir uygulama.
+
+169
+00:36:06,731 --> 00:36:24,571
+burada SRS belgesi içinde kullanılacak kısaltmalar nelerse onlar veriliyor kısaltma listesi şeklinde referanslarda evet burada da yazılmış zaten şu şunu büyütelim.
+
+170
+00:36:38,739 --> 00:37:04,239
+Evet, IEEE standartlarından 830, 1998'de ilk hali oluşturulmuş bir belge standartı. Software requirements specifications için önerilen yapı olarak da tanımlayabiliriz.
+
+171
+00:37:04,239 --> 00:37:25,199
+IEEE 830'du, standart 830'du. Bu belgede hangi bölümler var? Belgeye bakış şeklinde. Etkinlik duyuruş sistemi projesinin gereksinim açıklamaları var.
+
+172
+00:37:25,199 --> 00:37:36,639
+ve bu gereksinimlerin açıklaması olan bölüm, birinci bölüm, burada bir sayfa atlaması olmuş.
+
+173
+00:37:36,639 --> 00:37:46,139
+İkinci bölümde genel tanım, üründe hangi özellikler var, hangi gereksinimler var, bunlar belirtilmiş.
+
+174
+00:37:46,140 --> 00:38:12,480
+İşte bu ürüne bakış neler yani bir blok diagramda bu sistemde hangi özellikler olacak ve nasıl bir blok diagramla çalışma şeyi çalışma sırası nasıl olacak?
+
+175
+00:38:12,479 --> 00:38:25,279
+Önce etkinlik arama, etkinlik listeleme, etkinliğin detaylarına gerekirse bu bazı etkinliklerin satın almasının yapılması diye bir sistem
+
+176
+00:38:25,279 --> 00:38:37,199
+Sistemin arayüzleri neler? Kullanıcı arayüzleri neler? Sistemin kullanıcı arayüzlerinin tanımlanması
+
+177
+00:38:37,199 --> 00:38:46,019
+ve burada mesela gereksinim belgesindeki fonksiyonel gereksinimleri sıralamaya başlamışız.
+
+178
+00:38:46,019 --> 00:39:02,699
+Burada arayüzler, donanım arayüzleri, yazılım arayüzleri, neler gerçekleştirecek, hangi gereksinimler var?
+
+179
+00:39:02,699 --> 00:39:22,419
+Fonksiyonel açıdan bu yazılımda olması gereken özellikler, işlemler nelerdir? Bunları bir sıralama kodlaması şeklinde sıralıyoruz.
+
+180
+00:39:22,419 --> 00:39:44,599
+ürünün işlevleri neler olacak bu üründe hangi işlemler gerçekleştirecek sonra burada özel gereksinimler dermiş buradaki özel gereksinimler işte işlevsel gereksinimler
+
+181
+00:39:51,699 --> 00:39:57,759
+etkinlik silme işlemi yapılacak, güncelleme işlemi yapılacak, listeleme işlemi yapılacak gibi.
+
+182
+00:40:00,979 --> 00:40:12,179
+Daha sonra da performans gereksinimleri, buna ek olarak use case diagramlarını da verebilirsiniz.
+
+183
+00:40:12,179 --> 00:40:18,179
+UML, use case diagramlarında zaten gereksinim analizinin modellemesi bulunuyor.
+
+184
+00:40:18,999 --> 00:40:30,159
+Burada performans gereksinimleri olarak verilen de fonksiyonel olmayan gereksinimlerdir.
+
+185
+00:40:30,159 --> 00:40:36,979
+Fonksiyonel olmayan gereksinimlerde bu yapı çerçevesinde tanımlanıyor.
+
+186
+00:40:36,979 --> 00:40:52,579
+işte IR diagramları var, tasarım kısıtları var, hangi tasarım kısıtları olacaktır?
+
+187
+00:40:52,579 --> 00:41:08,359
+kalite özellikleri aslında bu kalite özellikleri de fonksiyonel olmayan gereksinimler içinde aslında performans yapısı da yine bunun içinde yer alabilir.
+
+188
+00:41:08,359 --> 00:41:25,139
+şu kalite özellikleri kısmına non-functional requirement yani işlevsel olmayan özellikler, işlevsel olmayan gereksinimler tanımını da getirebiliriz.
+
+189
+00:41:25,139 --> 00:41:41,239
+gereksinimlerin izlenebilirliği nasıl sağlanacaktır şeklinde ve sonra da ekran yapısında nasıl olacağı konulmuş.
+
+190
+00:41:43,239 --> 00:41:52,239
+Burada özellikle bir use case diagramı şu altta var zaten.
+
+191
+00:41:55,139 --> 00:42:06,179
+ekran yapıları, use case tanım şablonları, use case diagramlarını da şöyle bir tekrar etmiş oluyoruz.
+
+192
+00:42:06,819 --> 00:42:11,739
+SRS belgesinde use case belgeleri bulunacak.
+
+193
+00:42:12,739 --> 00:42:14,399
+Ne için bulunacak?
+
+194
+00:42:14,399 --> 00:42:21,339
+Use case belgesinde biz fonksiyonel gereksinimleri tanımlıyoruz, madde madde yazıyoruz.
+
+195
+00:42:21,339 --> 00:42:39,060
+1, 1, 1, 2, 1, 3 gibi ama ayrıca belgeleri de ekleyerek her birinin hangi grup içinde nasıl tanımlandığını da gösteriyoruz.
+
+196
+00:42:42,931 --> 00:43:04,891
+Kaç tane? Her bir işlev için bir use case diagramı var. Use case belgesi var, pardon. Use case belgelerinin yapısının üzerinde durmamıza gerek var mı? Zaten birkaç hafta buna örnekledik.
+
+197
+00:43:04,891 --> 00:43:23,191
+use case belgesinin numarası, adı, kimin çizdiği, aktörler kimler, bu aktörlerin birinci laktörünü de burada açıklamak gerekiyor.
+
+198
+00:43:23,191 --> 00:43:24,451
+Burada açıklanmamış.
+
+199
+00:43:25,731 --> 00:43:31,951
+Ön koşul ne? İşin başlaması için ön koşul, işin bittiğini belirten son koşul.
+
+200
+00:43:31,952 --> 00:43:38,931
+kullanım sıklığı ve önceliği diye bir tanımlama da yapılmış. Biz yapmamıştık bunu daha önce.
+
+201
+00:43:38,931 --> 00:43:45,192
+Ana akış sistemin algoritması düzenli gittiğinde işte 12 tane adımı var.
+
+202
+00:43:45,692 --> 00:43:53,931
+Alternatif akış bu adımlardan herhangi birinde bir durma söz konusu olursa bir problem söz konusu olursa nereye dönecek?
+
+203
+00:43:54,391 --> 00:43:58,811
+Bunun tanımlanması işte belgenin yapısı bu.
+
+204
+00:43:58,811 --> 00:44:10,471
+her bir gereksinim bloğu için bir use case belgesi oluşturmak gerekiyor.
+
+205
+00:44:11,011 --> 00:44:14,811
+Evet, çünkü sürekli geçiriyoruz bu SRS belgesini.
+
+206
+00:44:14,951 --> 00:44:16,411
+SRS belgesi nedir?
+
+207
+00:44:16,792 --> 00:44:19,451
+Yapısı bu şekilde.
+
+208
+00:44:20,731 --> 00:44:23,211
+Sorunuz var mı SRS belgesiyle ilişkili?
+
+209
+00:44:26,996 --> 00:44:28,356
+sorusu olan var mı?
+
+210
+00:44:36,371 --> 00:44:38,971
+Evet, birkaç haftadır zaten bunun üzerinde duruyoruz.
+
+211
+00:44:44,275 --> 00:44:48,955
+Evet, şimdi paylaştığım dokümanı değiştiriyorum.
+
+212
+00:45:17,364 --> 00:45:30,324
+Aktivite diagramlarını görebiliyor musunuz? Şu anda yeni bir slide paylaştım. Aktivite diagramları ile ilişkili. Görünüyor. Tamamdır.
+
+213
+00:45:50,132 --> 00:46:17,951
+Evet, bu diagram örnekleri üzerinde daha önce de durmuştuk. Aktivite diagramları, sembolleri. Her bir aktivite bir elipsle gösteriliyordu burada da. Başlangıç noktası içi dolu bir yuvarlakla bir daire içindeki içi dolu yuvarlakta bittiği bitişini gösteriyordu.
+
+214
+00:46:17,951 --> 00:46:32,152
+ve hangi kullanıcı grubu tarafından bu işin yapıldığını belirten bir üst başlık bulunuyordu.
+
+215
+00:46:32,152 --> 00:46:38,472
+Yine bu şey içinde, bu aktivite diagramı içinde.
+
+216
+00:46:39,591 --> 00:46:46,032
+Senkronizasyon çubuğu aktivite diagramlarında bulunuyor.
+
+217
+00:46:46,031 --> 00:47:15,511
+mesela bir noktadan itibaren iki tarafta gerçekleşen işlemler olarak ayrıldığında çatal yapısı, split yapı bir noktada bir giden işlemin iki ayrı yapıda gerçekleştiğini gösteriyordu.
+
+218
+00:47:16,032 --> 00:47:35,911
+aynı şekilde join yapısı da kaynaştırma yapısı da iki ayrı tarafta giden işlemleri birleşerek artık bundan sonra tek tarafta gideceğini gösteren bir yapıydı.
+
+219
+00:47:35,911 --> 00:47:50,411
+yine aktivite diagramında karar yapısı için eşkenar dörtgeni kullanıyoruz.
+
+220
+00:47:51,191 --> 00:48:02,072
+Bir noktada karar verilmesi gerektiğinde eşkenar dörtgene karar cümlesini yazıyoruz.
+
+221
+00:48:02,072 --> 00:48:14,712
+bunu bazen başka bir şekilde gösterildiğinde elips üzerinden de karar mekanizmasını gösterebiliyoruz.
+
+222
+00:48:14,712 --> 00:48:26,632
+Şimdi bunlarla ilgili iki örnek daha doğrusu aynı örneği biraz daha farklılaştırarak aynı konudaki iki örnek üzerinde duracağız.
+
+223
+00:48:26,632 --> 00:48:29,952
+Bu örnek üzerinde durmadan önce
+
+224
+00:48:38,963 --> 00:48:42,163
+ve o
+
+225
+00:48:45,588 --> 00:48:47,367
+10 dakika ara veriyorum.
+
+226
+00:48:57,012 --> 00:48:59,571
+10 dakika sonra devam edeceğiz.
+
+227
+00:57:07,315 --> 00:57:09,715
+tekrar derse devam ediyoruz.
+
+228
+00:57:24,115 --> 00:57:49,255
+Şimdi aktivite diagramlarından geçen hafta da bahsetmiştim. Daha önce de tanıtmıştık ama esas geçen hafta üzerinde daha fazla durmuştuk. Bir önceki haftada başlangıcını yapmıştım. Özellikle demiştim, iki örnekte bu tarafını daha iyi anlatıyor aktivite diagramının.
+
+229
+00:57:49,255 --> 00:58:06,095
+biz mesela ardışıl diagramlar çiziyoruz işte yüz kez diagramları çiziyoruz ama esas ardışıl diagramları çiziyoruz kullanıcılar hangi kullanıcılar hangi işleri yapıyorlar
+
+230
+00:58:06,095 --> 00:58:19,535
+Bunu oluşturduktan sonra o işle ilişkili detayı almak üzere o kullanıcıya gidebiliriz soru sorma anlamında
+
+231
+00:58:19,535 --> 00:58:35,615
+Şimdi bir satış işleminde satıcı tarafı var, müşteri tarafı var, teknik uzman tarafı var bir de sistemde gerçekleştirilen işlemler var
+
+232
+00:58:35,615 --> 00:58:57,615
+Biliyorsunuz insan kullanıcısının dışında bir donanım sistemi, yazılım sistemi gibi bir yapıda yine sistemin arasında bulunabiliyordu nesneleri arasında
+
+233
+00:58:57,615 --> 00:59:04,476
+bir müşterinin gelmesiyle işe başladı.
+
+234
+00:59:04,476 --> 00:59:07,276
+İşte kota isteği var.
+
+235
+00:59:08,876 --> 00:59:26,656
+Gereksinimlerini satıcı, gereksinimlerini not aldı ve yardım desteği isteyip istemediğini sordu.
+
+236
+00:59:26,656 --> 00:59:47,056
+Eğer istiyorsa onu teknik uzmana yönlendirdi. Gereksinimlerini bu teknik uzman değerlendirdi ve sisteme bu gereksinimlerle ilişkili bilgi girişi yaptı.
+
+237
+00:59:47,056 --> 00:59:54,095
+Teknik uzman gereksinimlerinin neler olduğunu anlayıp ve kotayı hesapladı.
+
+238
+00:59:54,095 --> 01:00:21,095
+başka bir şeyde yardıma ihtiyacı yoksa eğer o zaman sisteme veri girişini kendisi girecek ve kotayı hesaplayacak ve müşteriye bu hesaplamadan sonra ister bu şekilde gitsin ister diğer bir şekilde gitsin yani teknik uzmana uğrasın ya da uğramasın
+
+239
+01:00:21,095 --> 01:00:29,635
+hesaplama işlemi yapıldıktan sonra müşteriye geri dönecek ve bunu gözden geçirmesi istenecek.
+
+240
+01:00:29,995 --> 01:00:34,395
+Değişiklik istiyor mu istemiyor mu istiyorsa en başa dönecek.
+
+241
+01:00:36,535 --> 01:00:43,855
+Değilse bu siparişi kabul edecek ve işlem sonlanacak.
+
+242
+01:00:43,855 --> 01:01:05,155
+Bu aktivite diagramda esas burada göstermek istediğimiz şey farklı bakış açılarıyla, farklı kullanıcı taraflarıyla gerçekleşen işlemler hangi tarafta hangi işlemler gerçekleşiyor?
+
+243
+01:01:05,155 --> 01:01:19,155
+use case diagramından farklı olarak gördüğünüz gibi her bir farklı grupla yapılan işlemi ayrı bir
+
+244
+01:01:20,884 --> 01:01:36,683
+alanda göstererek bu farklılaşmayı daha iyi anlatmaya yarıyor aktivite diagramları. Yani hangi kullanıcılar hangi aktiviteleri yerine getiriyorlar buna göre tanımlama yapmış oluyoruz.
+
+245
+01:01:36,683 --> 01:01:42,163
+mesela bir sipariş alma işleminde
+
+246
+01:01:47,860 --> 01:02:15,360
+bir sipariş alma işleminde. Sipariş alma işlemi başlıyor. Kim tarafından başlıyor? Satıcı tarafından. Siparişi kabul et, siparişi oluştur ve bu siparişe göre mühendislik tanım tarafındaki kişilerde bu siparişte belirtilenleri gerçekleştir.
+
+247
+01:02:17,860 --> 01:02:24,139
+yani ne istendiğini oluştur, spesifikasyonları oluştur.
+
+248
+01:02:24,459 --> 01:02:28,999
+Buna göre satın alma tarafındaki ürünleri alsın.
+
+249
+01:02:28,999 --> 01:02:37,339
+Üretim tarafındaki de bunun üretimini gerçekleştirsin.
+
+250
+01:02:37,339 --> 01:03:06,279
+ve bunun nasıl yapılacağı konusunda da buradan birleşip devam ederek yani şu noktada mühendislik tarafında tek taraftan gelen işlem ya satın alma ya da üretim tarafında devam edecek
+
+251
+01:03:06,279 --> 01:03:23,479
+ve her iki taraftaki işlemler bitince de scheduling tarafında işleme son verilecek. İkisi birleşerek schedule üretme işi tamamlanacak.
+
+252
+01:03:23,479 --> 01:03:37,219
+Burada modeli oluşturmak için aktivite diagramının çizildiğini görüyoruz.
+
+253
+01:03:37,220 --> 01:03:58,820
+tabi ki bunu çizdiğimizde aslında use case diagramından başlayarak use case diagramının biraz daha açıklanmış hali yani gereksinim analizinden bir adım sonra biz aktivite diagramlarını çiziyoruz use case diagramının gelişmişi olarak
+
+254
+01:03:58,819 --> 01:04:21,819
+bu noktada da bilgi almak için kapalı uçlu, açık uçlu sorular sorarak veya anketler dağıtarak daha fazla bilgi almak yoluna da gidebiliyoruz.
+
+255
+01:04:21,819 --> 01:04:25,459
+farklı kullanıcı tiplerinden.
+
+256
+01:04:25,459 --> 01:04:41,239
+Yani daha gereksinim analizini, use case diagramlarını çizerek oluşturduktan sonraki aşamada, tasarıma geçiş aşamasında biz aktivite diagramlarımızı çizerek
+
+257
+01:04:41,239 --> 01:04:55,399
+sistemin hangi kullanıcı çarşavesinde hangi işlemleri gerçekleştirdiğini daha rahat gösterebiliyoruz.
+
+258
+01:04:57,019 --> 01:05:03,859
+Burada sorunuz var mı? Daha önceden de üzerinde durmuştuk aktivite diagramlarının.
+
+259
+01:05:16,788 --> 01:05:18,247
+sorusu olan var mı?
+
+260
+01:05:29,748 --> 01:05:44,067
+O zaman şimdi biraz geçen hafta gördüğümüz tasarım kalıpları üzerinde biraz daha duralım.
+
+261
+01:08:15,827 --> 01:08:43,807
+Evet, geçen hafta gördüğümüz tasarım kalıpları üzerinde biraz daha duralım. Çünkü bu konuda çok şey alamadım. Tasarım kalıplarını, evet, 26 demiştim, 23 tane ilk Gama, Helm, Johnson, Willis Cides tarafından ortaya koyulan golf kalıpları, tasarım kalıpları.
+
+262
+01:08:45,827 --> 01:08:53,427
+hangi işlemleri yapan tasarım kalıpları vardı? Bunu bizim kitabımızdan bir kontrol edelim.
+
+263
+01:08:53,427 --> 01:09:07,387
+Yaratıcı tasarım kalıbını gördük. Creator bir sınıftan nesne yaratma sorumluluğunun kime verileceğini belirleyen kalıptı.
+
+264
+01:09:07,387 --> 01:09:20,767
+Creator, yaratıcı kalıbı, bilginin uzmanı kalıbı, ekspert kalıbı, nesnelere göre sorumlulukları atamanın temel prensibi nelerdir?
+
+265
+01:09:20,767 --> 01:09:38,767
+Yani hangi sınıfa hangi işi atayalım mesajlarıyla ilişkili gerçekleştireceği işlemlerle ilişkili çözüm getiren bir tasarım kalıbı
+
+266
+01:09:38,767 --> 01:10:01,107
+az bağımlılık low coupling tasarım kalıbı. Burada da diğer sınıflarda olabilecek değişimlerden en az etkilenmeyi ve yeniden kullanılabilirliği tabii birbirine bağımsız oldukça yeniden kullanılabilirlik daha artacaktır.
+
+267
+01:10:01,107 --> 01:10:24,147
+bunu sağlama açısından yardımcı olan tasarım kalıbı, az bağımlılık, low coupling, dördüncüsü denetçi kontrolür, sistem olaylarını alma, kontrol etme sınıfı, iyi uyum, high cohesion,
+
+268
+01:10:24,147 --> 01:10:39,947
+bu high cohesion da sınıfın nesnenin kendi içinde kendi sorumluluklarını iyi yapabilmesi yani kendi sorumluluklarına yoğunlaşması yapısı.
+
+269
+01:10:40,847 --> 01:10:44,987
+Eğer bir sınıf çok fazla iş yapıyorsa bu iyi değil.
+
+270
+01:10:46,387 --> 01:10:50,467
+Sorumlulukları açısından dağınıklık olabilir.
+
+271
+01:10:50,467 --> 01:10:52,587
+Bu sınıfta uyum kötüdür.
+
+272
+01:10:54,147 --> 01:11:10,067
+ve yeniden kullanımda zorlaşır. İyi uyum, high cohesion. Zaten tasarımı iyileştirmek için tasarımda kalitede baktığımız üzerinde durduğumuz işlerden bir tanesi.
+
+273
+01:11:10,067 --> 01:11:15,427
+bunu da bir tasarım kalıbı olarak tanımlandığını görüyoruz.
+
+274
+01:11:16,547 --> 01:11:31,067
+Polimorfizm çok şekillilik birbiriyle ilgili ancak tiplere göre değişiklik gösteren davranışları tasarlarken çok şekilli metotlar.
+
+275
+01:11:31,787 --> 01:11:36,327
+Yani polimorfizm çok şekillilik tasarım kalıbı.
+
+276
+01:11:40,020 --> 01:11:55,480
+Yapay sınıf, pure fabrication tasarım kalıbı. Hangi uzman kalıbının getirdiği çözümler, iyi uyum, az bağımlılık kavramlarıyla çelişiyor.
+
+277
+01:11:57,479 --> 01:11:59,399
+Bağımlılıkları azaltıyorsa,
+
+278
+01:12:03,028 --> 01:12:15,567
+o zaman yapay sınıflar kullanılır. Gerçek dünyadaki varlıklarla benzerliği olan bunlara göre yaratılan yapay sınıflar.
+
+279
+01:12:18,567 --> 01:12:29,567
+Dolaylılık, ara birim, indirection, kolaylıkla değişebilecek yapılar arasındaki bağımlılığı azaltmak gerekir.
+
+280
+01:12:29,567 --> 01:12:41,368
+gerekir. Çünkü bu da yeniden kullanılabilirliği arttıracaktır. Bu dolaylılık ara birimde bunu sağlayan bir yapı.
+
+281
+01:12:47,572 --> 01:12:53,911
+dış değişimlerden etkilenmelerini daha azaltacaktır sınıfların.
+
+282
+01:12:59,188 --> 01:13:22,727
+değişimlerden korunma, protect variation, dikkat edilmesi gereken tasarım prensiplerinden sonuncusu, değişimlerden korunma, protect variation, bir sistemdeki her bir alt sistem üzerinde kararsızlık olabilir.
+
+283
+01:13:22,727 --> 01:13:35,688
+Bunların diğer birimlere etkisinin minimumda tutulması için yapılacak işlemler değişimlerden korunma yapısı
+
+284
+01:13:43,412 --> 01:14:10,551
+daha kararlı sistem oluşturmanın bir gereği. Biz yine geçen hafta bunlar üzerinde durduk, bunları tanıttık daha ayrıntılı olarak ve burada aynı zamanda şey üzerinde durduk, bir etkileşim diagramında nasıl kullanacağız?
+
+285
+01:14:10,551 --> 01:14:24,671
+biz bu işte genel etkileşim diagramının yapısını biliyoruz biz ki etkileşim diagramı dediğimizde genelleştirmiş oluyoruz.
+
+286
+01:14:24,671 --> 01:14:26,511
+Collaboration diagramlar da var.
+
+287
+01:14:27,452 --> 01:14:34,551
+Buradaki anladığımız anlamda etkileşim diagramı aslında seconds, artificial diagram.
+
+288
+01:14:34,551 --> 01:14:57,212
+yukarıda nesneleri işleme giriş sırasıyla tanımladığımız altta da aynı sırada bu noktaya gelene kadar hangi işlemler gerçekleşti, bundan sonra hangi işlemler gerçekleşecek bunun belirtildiği diagramlar.
+
+289
+01:15:05,460 --> 01:15:21,779
+buraya kadar sınavdan önce bir tekrar yapmış olduk. Şimdi daha sonraki haftalarda da üzerinde duracağımız, genişleteceğimiz bir kodu var.
+
+290
+01:15:21,779 --> 01:15:38,820
+Yani sınavdan sonraki haftada üzerinde duracağımız yazılım kalitesi ve test teknikleri
+
+291
+01:15:38,820 --> 01:16:03,460
+Şimdi test bölümü sınavlara dahil değil ama testi o yüzden sınavdan sonraki haftada esas işleyeceğiz ama yazılım kalitesi dediğimizde kalite özellikleri nelerdir bunlardan bugün bahsedeceğim ve bu da dahil bu dönemdeki şey içine
+
+292
+01:16:03,460 --> 01:16:13,620
+zaten bizim bir seçimlik dersimiz son sınıfta olan kalite ve test teknikleri.
+
+293
+01:16:16,180 --> 01:16:20,159
+Önce kalite, kalite yönetimi sonra test teknikleri.
+
+294
+01:16:20,299 --> 01:16:26,879
+Bu kalite yönetimi içindeki işlemlerden en kapsamlısı olan test üzerinde duruyoruz.
+
+295
+01:16:26,979 --> 01:16:30,739
+Test aslında yazılım geliştirme süreç adımlarından da birisi.
+
+296
+01:16:30,739 --> 01:16:36,579
+ama bunu ayrı bir bölüm olarak görüyoruz.
+
+297
+01:16:36,579 --> 01:16:40,900
+Şimdi onunla ilgili bir slide paylaşacağım.
+
+298
+01:16:57,939 --> 01:17:02,779
+Evet, yazılım kalite yönetimi.
+
+299
+01:17:02,779 --> 01:17:04,759
+Bu
+
+300
+01:17:09,555 --> 01:17:26,316
+çok eski bir sunumda bir slide. Kalite yönetimi dediğimiz zaman ne anlıyoruz? Önce yazılım kalite özellikleri nelerdir? Ki bugün bu kalite özelliklerinden bahsedeceğiz.
+
+301
+01:17:26,316 --> 01:17:49,335
+yazılım kalitesini nasıl ölçeriz? Yazılım kalitesini nasıl sağlarız? Yazılımın test edilmesi nerededir? Yani yazılım kalitesinin sağlanması için yapılan işlerden bir tanesi de yazılımın sınanması, test edilmesi.
+
+302
+01:17:49,335 --> 01:17:54,835
+İşte bu test teknikleri nelerdir bu bölümün konusu
+
+303
+01:17:54,835 --> 01:18:04,195
+Bu bölüm içinde sadece biz bugün yazılım kalite özellikleri üzerinde duracağız
+
+304
+01:18:04,195 --> 01:18:07,795
+Yazılım kalite yönetimi kapsamındaki işlerden
+
+305
+01:18:07,795 --> 01:18:11,995
+Kalite ölçümü, kalitenin sağlanması, kalitenin sınanması
+
+306
+01:18:11,995 --> 01:18:32,055
+bunlar sınavdan sonraki haftalarda üzerinde duracağız ama kalite özelliklerini yazılımla ilişkili genel bilgiler sırasında da görebileceğimiz kadar genel bir bilgi.
+
+307
+01:18:32,055 --> 01:18:34,795
+O yüzden sınava bu konuda dahil.
+
+308
+01:18:44,948 --> 01:18:57,868
+yazılım kalite özellikleri dediğimizde bir yazılımı hangi özelliklerde olmasını isteriz kaliteli diyebilmek için.
+
+309
+01:19:00,448 --> 01:19:12,807
+Buna biz McColl'un tanımlamasıyla farklı bakış açılarıyla değerlendiriyoruz.
+
+310
+01:19:12,807 --> 01:19:41,987
+1. Kullanıcı bakış açısıyla 2. Daha sonra bakım yapacak yazılım uzmanlarının bakış açısıyla 3. Yazılımın kullanımı sırasında işletimini sağlayan kişiler açısından bakarak kalite konusunda bilgi alabiliyoruz.
+
+311
+01:19:42,808 --> 01:19:55,047
+yazılım kalite özellikleri doğruluk nedir? Yazılımdan biz ne bekledik? Gereksinim spesifikasyonunda bunu belirttik.
+
+312
+01:19:55,047 --> 01:20:09,547
+İşte bu spesifikasyonlara uyarak müşteri isteklerini ne kadar karşılıyor? Denilenleri ne kadar yapıyorsa o kadar doğru çalışan bir yazılımdan söz ediyoruz.
+
+313
+01:20:09,547 --> 01:20:16,427
+Güvenirlik tasarlanan işlevleri istenilen duyarlılıkta yerine getirme olanağı
+
+314
+01:20:16,427 --> 01:20:29,507
+Mesela işte bir yazılımın muhasebe yazılımının çalıştığında gerçekleştirdiği işlemler şunlardır şunları doğru olarak yapıyor
+
+315
+01:20:29,507 --> 01:20:34,668
+ama bu doğruluk yüzde kaç güvenirlikle sağlanıyor?
+
+316
+01:20:34,767 --> 01:20:36,607
+Yüzde doksan dokuz güvenirlik mi?
+
+317
+01:20:37,207 --> 01:20:40,427
+Yüzde doksan dokuz nokta sekiz güvenirlikle mi?
+
+318
+01:20:41,107 --> 01:20:44,207
+İşte reliability kavramı bu.
+
+319
+01:20:45,308 --> 01:20:57,987
+Tasarlanan işlevleri, istenilen duyarlılıkta yerine getirme olanı, doğruluktan başka bir şey, güvenlikten de başka bir şey, sadece kelime benzerliği var.
+
+320
+01:20:57,987 --> 01:21:13,987
+güvenirlik dediğimiz zaman bu yazılımcı hazırladığı yazılıma ne kadar güveniliyor, ne kadar duyarlılık, elde ettiğimiz sonuç yüzde kaç doğrudur?
+
+321
+01:21:13,987 --> 01:21:17,007
+Bunu gösteriyor.
+
+322
+01:21:17,907 --> 01:21:22,707
+Bağlanabilirlik bir sistemin diğerine bağlanabilme olanağı.
+
+323
+01:21:22,707 --> 01:21:51,707
+Bu da interoperability özelliği. Interoperability özelliği iki sistemin birlikte çalışabilme kolaylığı, birbirinden veri alışverişini nasıl gerçekleştirecek, verimlilik programın işlevlerini yerine getirebilmesi için gerekli.
+
+324
+01:21:52,707 --> 01:22:10,527
+bilgi işlem kaynaklarını ve kodlamanın gideri, güvenlik, yetkisiz kişilerin yazılıma veri girişini önleme olanı, kullanışlılıkta öğrenme, işletme, girdi hazırlama ve çıktı yorumlama kolaylık derecesi.
+
+325
+01:22:10,528 --> 01:22:29,408
+Şimdi bunlara baktığımızda şuraya kadar ilk 6 tane özellik, kalite özelliği kullanıcı için önemli şeyler.
+
+326
+01:22:31,408 --> 01:22:33,468
+Kullanıcı bakış açısıyla.
+
+327
+01:22:34,068 --> 01:22:50,807
+önemli olanlar. McCall bunları bu şekilde kullanıcı bakış açısı, çalıştırıcı bakış açısı ve değişiklik yapan bakış açısı olmak üzere 3 grubun bakış açısına göre ayırmış sınıflara.
+
+328
+01:22:50,807 --> 01:23:01,068
+IEEE standartları pardon ISO standartları
+
+329
+01:23:01,068 --> 01:23:07,807
+IEEE içinde de var böyle bir standart ama ISO standartlarına göre
+
+330
+01:23:13,235 --> 01:23:42,235
+kaliteli yazılım özellikleri nelerdir dediğimizde bu özelliklerde yine böyle bir sınıflama olmadan geliyor. Benzer özellikler yani kullanıcı bakış açısı, çalıştırıcı bakış açısı ve düzenleyici, düzeltici bakış açısı diye ayırmadan bütün özellikler sıralanmış ISO standartlarında.
+
+331
+01:23:43,235 --> 01:23:52,256
+Şimdi bakalım kullanıcı için önemli olanlar verimlilik, güvenlik, kullanışlılık, kullanıcı dostu olması yani
+
+332
+01:23:59,347 --> 01:24:03,667
+doğruluk, güvenirlik ve birlikte çalışabilirlik.
+
+333
+01:24:08,547 --> 01:24:15,807
+Düzeltici bakış açısıyla hata bulma kolaylığı, esneklik, test etme kolaylığı.
+
+334
+01:24:15,807 --> 01:24:25,608
+Bunlar da değiştirici bakış açısıyla taşınabilirlik ve tekrar kullanılabilirlik.
+
+335
+01:24:25,608 --> 01:24:35,127
+Taşınabilirlik programın farklı donanımlarda ve değişik yazılım sistemi ortamlarında kullanılabilme olanağı.
+
+336
+01:24:36,048 --> 01:24:40,167
+Yeniden kullanılabilirlik nedir? Bu zaten çok geçti.
+
+337
+01:24:41,167 --> 01:24:50,227
+Yeniden kullanılabilirlik programın tamamının veya bir bölümünün başka bir uygulamada kullanılma olanağı nedir?
+
+338
+01:24:50,227 --> 01:25:05,667
+Burada hem yazılımı geliştirene ne kadar güveniyorsunuz hem de siz burada gerekli küçük değişiklikleri de bundan sonra kendiniz yapabilecek misiniz?
+
+339
+01:25:06,387 --> 01:25:09,827
+Bu ikisi bu aşağıdan önem kazanıyor.
+
+340
+01:25:14,644 --> 01:25:37,083
+Reusability taşınabilirlik ve reusability kavramlarını gördük en son. Reusability tekrar kullanılabilme, yeniden kullanılabilirlik dediğimizde bunun pek çok gerekliliği var.
+
+341
+01:25:37,083 --> 01:25:49,163
+Yani ne yapmak gerekir? Yeniden kullanılabilirliği sağlamak için ne yapmak gerekir acaba? Bu soruya cevap verecek olan var mı?
+
+342
+01:25:54,292 --> 01:26:00,051
+Yeniden kullanılabilirliği sağlamak üzere neler yapılması gerekir?
+
+343
+01:26:01,571 --> 01:26:08,091
+Hocam iş kodlarımızı mesela iş kodlarımızı bağımsız tutabiliriz.
+
+344
+01:26:08,091 --> 01:26:11,871
+Yani core işlerimizi ayrı tutabiliriz.
+
+345
+01:26:12,431 --> 01:26:20,171
+Mesela veritabanı herhangi bir data ekleme çıkarma kodlarını bağımsız tutabiliriz.
+
+346
+01:26:20,171 --> 01:26:24,331
+başka
+
+347
+01:26:24,331 --> 01:26:28,411
+loglama
+
+348
+01:26:28,411 --> 01:26:30,591
+authentication bu tip işleri de
+
+349
+01:26:30,591 --> 01:26:32,111
+bağımsız tutabiliriz
+
+350
+01:26:32,111 --> 01:26:32,551
+evet
+
+351
+01:26:32,551 --> 01:26:36,071
+low coupling yani tasarım sırasında
+
+352
+01:26:36,071 --> 01:26:38,251
+tasarım sırasında low coupling
+
+353
+01:26:38,251 --> 01:26:40,292
+high cohesion gerçekleştirerek
+
+354
+01:26:40,292 --> 01:26:42,472
+yazılım
+
+355
+01:26:42,472 --> 01:26:44,451
+kalitesini sağlayabiliriz
+
+356
+01:26:44,451 --> 01:26:46,911
+modüllerin bağımsızlığını
+
+357
+01:26:46,911 --> 01:26:47,851
+ya da
+
+358
+01:26:47,851 --> 01:26:50,211
+sınıf yapısı çerçevesinde
+
+359
+01:26:50,211 --> 01:26:51,651
+sınıfların bağımsızlığını
+
+360
+01:26:51,651 --> 01:26:52,991
+sağlayabiliriz.
+
+361
+01:26:53,671 --> 01:26:55,691
+Böylece yeniden
+
+362
+01:26:55,691 --> 01:26:57,871
+kullanılabilirlik bağımsızlık
+
+363
+01:26:57,871 --> 01:26:58,731
+arttıkça
+
+364
+01:26:58,731 --> 01:27:01,571
+yapılardaki bağımsızlık arttıkça
+
+365
+01:27:01,571 --> 01:27:03,851
+yeniden kullanılabilirlik özelliği de
+
+366
+01:27:03,851 --> 01:27:06,012
+artacaktır. Bunu da
+
+367
+01:27:06,012 --> 01:27:07,292
+sağlayabiliriz.
+
+368
+01:27:08,571 --> 01:27:09,451
+Başka yeniden
+
+369
+01:27:09,451 --> 01:27:11,691
+kullanılabilirliği sağlayan yapılar
+
+370
+01:27:11,691 --> 01:27:12,411
+nelerdir?
+
+371
+01:27:14,431 --> 01:27:15,331
+Mesela nesneye
+
+372
+01:27:15,331 --> 01:27:17,152
+dayalı uygulamalarda
+
+373
+01:27:17,152 --> 01:27:23,431
+modülerlik
+
+374
+01:27:23,431 --> 01:27:24,052
+evet
+
+375
+01:27:24,052 --> 01:27:27,812
+low coupling
+
+376
+01:27:27,812 --> 01:27:29,372
+high hook cohesion
+
+377
+01:27:29,372 --> 01:27:31,292
+yani
+
+378
+01:27:31,292 --> 01:27:33,972
+yeniden kullanılabilirlik eşittir
+
+379
+01:27:33,972 --> 01:27:35,512
+sadece modülerlik değil
+
+380
+01:27:35,512 --> 01:27:37,912
+yeniden
+
+381
+01:27:37,912 --> 01:27:39,891
+kullanılabilirliği sağlayan
+
+382
+01:27:39,891 --> 01:27:41,412
+yazılım
+
+383
+01:27:41,412 --> 01:27:43,351
+özellikleri
+
+384
+01:27:43,351 --> 01:27:44,552
+modülerlik
+
+385
+01:27:44,551 --> 01:27:47,991
+low coupling ve high cohesion da bunu sağlıyor
+
+386
+01:27:47,991 --> 01:27:50,031
+başka
+
+387
+01:27:50,031 --> 01:27:54,491
+başka ne sağlıyor yeniden kullanılabilirliğini
+
+388
+01:28:00,467 --> 01:28:04,208
+yeniden kullanılabilirlik, tekrar kullanılabilme demişiz burada.
+
+389
+01:28:11,988 --> 01:28:41,727
+tasarım kalıpları. Tasarım kalıpları bir probleme bir kez çözüm getirmişsek bunu defalarca kullanabilmek mümkün oluyor. Bunun dışında yazılım kütüphaneleri bir fonksiyon veya programı yazıp genelleştirirsek, bunu bir kütüphane yapısı oluşturursak bu bir şirket içinde olabilir veya bir dil derleyicisi içinde olabilir.
+
+390
+01:28:41,988 --> 01:28:54,047
+genel amaçlı herkes tarafından kullanılacak yapılar, kütüphaneler bunlar olabilir.
+
+391
+01:28:54,047 --> 01:29:02,427
+Nesneye dayalı yaklaşımın kullanılması zaten ilk başta bir yeniden kullanılabilirliği sağlayacak bir özelliktir.
+
+392
+01:29:02,427 --> 01:29:12,747
+İşte bunlar yeniden kullanılabilirliği sağlayan yapılar ya da çözümler diyebiliriz.
+
+393
+01:29:14,988 --> 01:29:17,988
+Evet buna başka ekleyeceği bir şey olan var mı?
+
+394
+01:29:21,716 --> 01:29:22,216
+tamam.
+
+395
+01:29:27,828 --> 01:29:55,828
+Şimdi, yazılım geliştirme sürecinde kaliteyi sağlamak için yapılacaklar. Mesela gereksinim analizi aşamasında sistemin kolayca öğrenilir olmasına çaba gösterilmesi, modüllere ayırmada taşınabilirlik ve bağlanabilirlik yani birlikte çalışabilirlik, interoperability özelliğine önem verilmesi,
+
+396
+01:29:55,828 --> 01:30:11,467
+ayrıntılı tasarımda doğruluk faktörüne ağırlık verilmesi yani algoritmaları oluştururken ayrıntılı tasarımda bizden istenilenleri adım adım yerine getirdik mi ona bakmak lazım.
+
+397
+01:30:11,467 --> 01:30:27,207
+test aşamasında yine doğruluk ve performans gibi diğer faktörlerin ölçümüne çaba gösterilmesi de yine kaliteyi sağlama örnekleri olarak karşımıza çıkıyor.
+
+398
+01:30:27,207 --> 01:30:36,807
+Tabi ki burada yazılım kalitesini sağlamak için hata ve eksiklerin anında bulunması ve düzeltilmesi gerekiyor.
+
+399
+01:30:36,807 --> 01:30:57,807
+şu hiçbir zaman için gözümüzün önünden gitmemeli. Kalite dediğimiz anda hata bulma gideri ve hata bulma olasılığı.
+
+400
+01:30:57,807 --> 01:31:23,347
+iki tane diagramımız var. Yazılım geliştirme süreci geçtikçe hata bulma gideri artar. Daha fazla maliyete neden olur. Kaliteli yazılımı sağlayalım. Yazılımda hatalar var. Hataları bulalım dediğimiz zaman hemen bulursak daha az para harcarız.
+
+401
+01:31:23,347 --> 01:31:30,167
+hemen bulamazsak süreç ilerleyince daha çok para harcamamız gerekir.
+
+402
+01:31:30,847 --> 01:31:40,268
+Aynı şekilde hata bulma olasılığı da ilk başta daha çokken zaman geçtikçe bu oran azalabilir.
+
+403
+01:31:40,268 --> 01:31:56,228
+Bunu dikkate alarak yazılım kalitesini sağlamak için bu iki şekli gördüğünüzde yazılım geliştirme süreci içinde ne yapmamız gerekir? Önerisi olan var mı?
+
+404
+01:32:00,884 --> 01:32:02,384
+önerisi olan var mı?
+
+405
+01:32:08,916 --> 01:32:13,035
+bir önerisi olan var mı?
+
+406
+01:32:13,896 --> 01:32:14,995
+Bilim testi miydi?
+
+407
+01:32:15,955 --> 01:32:35,416
+Bilim testi, evet. Bilim testi yaparız ama geliştirdikçe, kodlama oldukça. İlk evrelerde ne yapıyoruz? Mesela gereksinim analizi yapıyoruz, tasarım yapıyoruz. Her bir milestone'da review yapmamız gerekiyor, gözden geçirme yapmamız gerekiyor.
+
+408
+01:32:35,416 --> 01:32:57,575
+ama gözden geçirme, analizde gözden geçirme, tasarımda gözden geçirme ve geliştirdiğimiz belgeleri, kodları, code inspection gerçekleşerek daha ayrıntılı çalıştırmadan inceleme yapmamız gerekiyor.
+
+409
+01:32:57,575 --> 01:33:11,655
+bir de daha geliştirmeye başlamadan önce bir tane kurallı bir yazılım geliştirme süreç modeli seçmemiz gerekiyor ve bu modele uymamız gerekiyor.
+
+410
+01:33:11,655 --> 01:33:40,655
+bundan sonra geliştireceğimiz yazılımlarda hangi daha doğrusu bu projede her proje için farklı seçilebilir bu projede hangi yazılım geliştirme süreç modelini seçiyoruz buna karar verip ondan sonra ilerlemek daha kolaylaşacaktır çünkü kendi içinde bir modelin kontrolları olacaktır.
+
+411
+01:33:41,655 --> 01:33:46,655
+Bu konuda başka ekleyeceği bir şey olan var mı?
+
+412
+01:33:51,539 --> 01:33:55,199
+bu noktada
+
+413
+01:34:02,804 --> 01:34:25,603
+yazılım kalitesini nasıl sağlıyoruz? yazılım kalitesi aşamaları, geliştirmenin planlanmasında kalite kontrolü, yöntem ve araçlarının belirlenmesi, geliştirme sürecinde durak noktalarda yapılan gözden geçirmeler, kaynak programının sınanması,
+
+414
+01:34:25,603 --> 01:34:38,844
+sınama teknikleri de saydam kutu ve kara kutu testi olarak iki çerçevede yapılıyor.
+
+415
+01:34:38,844 --> 01:34:43,183
+Yine konfigürasyon yönetim sistemi önemli.
+
+416
+01:34:44,304 --> 01:34:54,143
+Yazılım geliştirmede kalitenin sağlanması için konfigürasyonun kurulması, değişikliklerin kontrolü, rapor düzenleme.
+
+417
+01:34:54,144 --> 01:35:06,204
+Bu da bizim daha kaliteli yazılım geliştirmemize neden olacak bir özellik
+
+418
+01:35:06,204 --> 01:35:13,324
+Az önce zaten dersin başında ilk derste konfigürasyon yönetiminden söz etmiştim
+
+419
+01:35:13,323 --> 01:35:24,583
+konfigürasyon yönetimi nedir diye bunları sağlanması gerekiyor.
+
+420
+01:35:42,963 --> 01:35:43,783
+Bugün için
+
+421
+01:35:49,460 --> 01:35:51,460
+sorunuz var mı?
+
+422
+01:35:55,380 --> 01:36:07,019
+yazılım kalitesi ile ilişkili diğer konulara şimdiden geçmek istemiyorum. Şu noktada bırakalım.
+
+423
+01:36:09,159 --> 01:36:17,819
+Test, yazılım test teknikleri dediğimizde iki teknik var.
+
+424
+01:36:17,819 --> 01:36:33,899
+Aslında bu üçüncü bir tip daha var. White box testing, saydam kutu testi, black box testing, kara kutu testi, bir de gray box test.
+
+425
+01:36:33,899 --> 01:36:41,759
+Bu özellikle daha sonraki yıllarda gray box test üzerine daha fazla çalışmalar yapıldı.
+
+426
+01:36:41,759 --> 01:36:54,199
+Gray box test, yazılımın test edilmesi, saydam kutu, kara kutu ve gri kutu testleriyle
+
+427
+01:36:54,199 --> 01:37:03,539
+Yazılım test süreci adımları da hangi adımlarda olur test süreci?
+
+428
+01:37:03,539 --> 01:37:31,439
+yazılımın birim testinin yapılması, bütünlük testinin yapılması, sistem testinin yapılması ve kullanıcı testi user acceptance test olmak üzere dört adım test işlemi için gerçekleştirilir.
+
+429
+01:37:33,539 --> 01:37:40,299
+Evet bugün için dersi tamamlıyoruz sorunuz var mı?
+
+430
+01:37:45,235 --> 01:38:15,215
+önümüzdeki hafta uygulama yapılacak. Bir sonraki haftada sınavlarınız var. Özellikle bugün, şimdiye kadar hangi konuları işledik ve hangi konuları daha sonra işleyeceğiz ve sorumluluklarınız neler olacak bir daha üzerinden geçtik.
+
+431
+01:38:15,235 --> 01:38:18,535
+Bu çerçevede sorunuz var mı?
+
+432
+01:38:24,659 --> 01:38:26,559
+o zaman dersi bitirebilirim.
+
+433
+01:38:30,292 --> 01:38:34,792
+bitirmeden önce sorusu olan varsa sorabilir.
+
+434
+01:38:49,427 --> 01:38:59,547
+Evet. O zaman iyi haftalar diliyorum. İyi günler hocam. İyi günler.

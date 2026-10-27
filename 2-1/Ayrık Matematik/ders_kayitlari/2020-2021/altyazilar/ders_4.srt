@@ -1,0 +1,4739 @@
+1
+00:02:28,788 --> 00:02:30,788
+günaydın.
+
+2
+00:02:30,788 --> 00:02:32,788
+nasılız?
+
+3
+00:02:38,580 --> 00:02:42,980
+iyi miyiz? ha aşağıda yazmış günaydın
+
+4
+00:02:46,804 --> 00:02:57,804
+derse aynı isimler mi katılıyor? Hiçbir değişme yok. Bir meraktan şey yapacağım. Günaydın [öğrenci]. Bir yoklamayı alıp bakacağım gerçekten.
+
+5
+00:02:57,804 --> 00:03:11,123
+o o. Günaydınlar hocam nasılsınız? Günaydın. İyiyim Raşit. Şimdi bana günaydın diyenlere bir bakayım. [öğrenci], [öğrenci], [öğrenci], [öğrenci],
+
+6
+00:03:11,123 --> 00:03:31,963
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], Oruş. Size de günaydın. [öğrenci] bir bak şeyini sen açıyorsun ha evladım. Senin gülce malini görüyorum. Bak eskiler böyle konuşurdu. Gülce malini görmek yani güzel yüzünü görüyorum.
+
+7
+00:03:31,963 --> 00:03:41,263
+nasıl geçti bayramınız? Cumhuriyet bayramınız kutlu olsun. Geçmiş oldu ama olsun. Nice güzel bayramlarımız olur inşallah.
+
+8
+00:03:42,623 --> 00:03:51,323
+Ben şimdi sınıfın sayısı artarak kadar biraz konuşayım tabii ki. Bu bizim dördüncü haftamız mı? Sanırsam.
+
+9
+00:03:51,323 --> 00:04:12,823
+sanamıyorum bile dördüncü haftamı galiba dördüncü hafta. Peki bu haftada bölüm dördü anlatacağım. Bölüm dört birazcık biraz uzun bir bölüm. İki haftaya yayılabilir. Zaten diğer grupla da birlikte gidiyoruz.
+
+10
+00:04:12,823 --> 00:04:17,323
+Ondan sonra araya algoritmaları alacağız.
+
+11
+00:04:18,263 --> 00:04:24,103
+Algoritmalardan sonra bir konu var ama biz bu sene konuları yetiştirebilir miyiz bilmiyorum.
+
+12
+00:04:24,323 --> 00:04:26,123
+Onu bir Ahmet Hoca ile konuşacağım.
+
+13
+00:04:26,703 --> 00:04:27,343
+Olmadı.
+
+14
+00:04:28,423 --> 00:04:29,923
+Çok hızlı geçeriz o bölümü.
+
+15
+00:04:29,923 --> 00:04:38,823
+Ondan sonra kromatik polinomlar gelebilir ya da ağaçlar, sonra graflar ve otomatlar.
+
+16
+00:04:38,823 --> 00:05:03,503
+Yani bizim dizeye kadar şöyle elde tutulur konularımızın olması gerekiyor. Bakıyor musunuz geçmişe dönerek notlarımıza? Bakmıyorsunuz. Evet. Bakmayın. Bir gece önceden bakarsınız. Bonus sorusu vardı size gönderdiğim. İlk üç kişiye demiştim ama hoşuma gitti.
+
+17
+00:05:03,503 --> 00:05:09,143
+bazı arkadaşınız göndermiş ama o anla benim de bir heyecanım vardı.
+
+18
+00:05:09,143 --> 00:05:12,283
+Yani heyecanım dediğim daha ilk bonusumdu.
+
+19
+00:05:12,664 --> 00:05:15,563
+O yüzden doğru gönderen herkese kabul ettim.
+
+20
+00:05:16,143 --> 00:05:19,703
+Ama ağırlığını biraz düşük vereceğim çünkü çok basit bir şeydi.
+
+21
+00:05:19,823 --> 00:05:28,203
+Benim bir boş anıma geldi derste zaman kaybetmeyeyim diye hadi bu sizin bonusunuz olsun dediğim bir soru oldu.
+
+22
+00:05:28,203 --> 00:05:40,763
+Peki, peki, isterseniz yavaş yavaş geçeyim diyorum ama yani şu bir kırka gelsin ben tamam beş geçe kadar şey olsun
+
+23
+00:05:40,763 --> 00:05:50,303
+Bana sorusu olan var mı arkadaşlar? Ödevler başladı mı? İkinci sınıf nasıl bir şey? Birçoğunuz ikinci sınıfsınız
+
+24
+00:05:50,303 --> 00:05:58,003
+Birinci sınıftan biraz farklıdır derslerin adedi, yelpazesine bakarsak. Doğru mu?
+
+25
+00:05:58,203 --> 00:06:02,563
+sesi bile açmaya üşeniyorsunuz.
+
+26
+00:06:04,183 --> 00:06:06,883
+Whatsapp'tan yazar gibi çete yazıyorsunuz.
+
+27
+00:06:08,823 --> 00:06:11,503
+Hadi kırk olsun cevap gelsin.
+
+28
+00:06:12,024 --> 00:06:14,923
+Hocam bu dersin fotokopisi var mı? Nereden ulaşacağız bu ders katolabisine?
+
+29
+00:06:16,863 --> 00:06:22,024
+Şimdi dersin fotokopisi var mı sorusu hocaya sorulacak bir soru mu kardeşim?
+
+30
+00:06:22,663 --> 00:06:25,703
+Dersin videosu var. Fotokopisini ne yapacaksın?
+
+31
+00:06:25,703 --> 00:06:39,583
+Dersin videosunda benim söylediğim her şey böyle konuşmalar bile videonun içerisinde yer alıyor. Bende fotokopisi yok. Ama eskiden bu dersin fotokopisi fotokopicilerde vardı.
+
+32
+00:06:40,435 --> 00:06:49,435
+oradan arkadaşlar alıyordu ama yine şunu söyleyeyim size online'e geçince biz konu sayısını arttırdık.
+
+33
+00:06:49,435 --> 00:06:58,435
+Çünkü konular daha hızlı geçiyor. Yani koymadığımız konuları da koyduk. O yüzden fotokopide onlar olmayabilir.
+
+34
+00:06:58,435 --> 00:07:27,215
+mesela bul cebre yoktu öyle bir konu giriş bölümü o kadar uzun bir giriş yapmıyordum daha yüzeysel olarak geçiyorduk ama videolar var fotokopiye gerek yok bence başka soru var mı? Evet 41 olduk ben yavaş yavaş bu çetteki soru ne? Yok o şey sorusu değil geçiyorum o zaman share screen yapalım
+
+35
+00:07:28,435 --> 00:07:43,956
+ama bu derse bu kadar geç geliniyorsa ben bunu da anlamıyorum. Yani birçoğunuz evinizde oturuyorsunuz. Yani derste bir insan niçin geç gelir? Hiç anlayamıyorum. Neyse anlamam da gerekmiyor zaten.
+
+36
+00:07:43,956 --> 00:07:56,976
+Şimdi ekran paylaşımı yapalım. Şurası. Sadece geçen hafta bir takım problemler yaşamıştım. Görüyor musunuz?
+
+37
+00:07:58,435 --> 00:07:59,196
+Evet hocam
+
+38
+00:07:59,196 --> 00:08:00,336
+Tamam peki
+
+39
+00:08:00,336 --> 00:08:02,815
+Bak bu da dili
+
+40
+00:08:02,815 --> 00:08:04,096
+Dildir bu
+
+41
+00:08:04,096 --> 00:08:06,796
+Bunlar da matematik kitapları
+
+42
+00:08:06,796 --> 00:08:07,855
+Matematiğin dili
+
+43
+00:08:07,855 --> 00:08:10,516
+Aslında ismin böyle olduğuna bakmayın
+
+44
+00:08:10,516 --> 00:08:13,915
+Yine çok konsept olan kavramları göreceğiz
+
+45
+00:08:13,915 --> 00:08:17,575
+Nedir bu konsept olan kavramlar?
+
+46
+00:08:18,995 --> 00:08:21,935
+Keşke alplarların ne olduğunu yazsaydık
+
+47
+00:08:21,935 --> 00:08:24,736
+Neyse kümeler, fonksiyonlar
+
+48
+00:08:24,735 --> 00:08:37,335
+fonksiyonların bazı özellikleri birleştirilmiş bazı isimlere geliyor bunlar. Şöyle bir hızla baksam başka böyle de çok uzun sürebilecek.
+
+49
+00:08:37,335 --> 00:08:52,555
+Hiç duymadığınız hasse diagramları ondan sonra tut bakalım. Aşkı neler var? İşte önemli algoritma var, Marshall algoritması.
+
+50
+00:08:52,555 --> 00:09:14,595
+Evet bunlar belki birçoğunu şey olarak hatırlıyorsunuz adını söyleyin liseden oradan buradan fakat ben bunların arasında da bazı şeyleri kodlamaya kalkarsak nasıl kodlarız diye size soracağım amacımız da neydi bu derste öyle ya da böyle algoritmamızı biraz ileriye taşımak.
+
+51
+00:09:14,596 --> 00:09:31,376
+Peki başlayalım. Önce küme nedir? Küme set diyoruz. Ayrık nesnelerden oluşmuş topluluğa küme diyoruz. Kümenin elemanlarına da element diyoruz. Önemli olan bir küme nasıl gösterilir?
+
+52
+00:09:31,376 --> 00:09:37,236
+Bize ilkokuldan beri öğretilen şey şudur.
+
+53
+00:09:37,376 --> 00:09:38,796
+İşte bir ağ kümesi var.
+
+54
+00:09:38,956 --> 00:09:43,075
+Elemanları 1, 3, 5, 7 süslü parantez içerisinde veriyoruz.
+
+55
+00:09:43,736 --> 00:09:47,215
+Kümenin ismi her zaman büyük harf içinde olması lazım.
+
+56
+00:09:47,796 --> 00:09:49,616
+Elemanları da küçük olabilir.
+
+57
+00:09:49,616 --> 00:09:59,616
+Şimdi matematik kitaplarına baktığınız vakit ya da bir akademik yayına baktığınız vakit hiçbir zaman küme elemanını bu şekilde size göstermez.
+
+58
+00:09:59,615 --> 00:10:23,755
+göstermez. Dediğim gibi bu biraz ilkokul vari bir format. Ama biz örneklerde evet bunu kullanırız ama kitaplara baktığınızda şunu görürsünüz. Şu yukarkinin hemen hemen aynısı. Aynısı hemen hemen demeyeyim aynısı. Bunu böyle mi yazarsınız böyle mi? Sıradan insanlar bunu böyle yazar.
+
+59
+00:10:23,755 --> 00:10:32,695
+fakat daha böyle akademik, daha bilimsel ya da herhangi bir kitap yazıyorsanız matematik kitabı şu aşağıdaki gibi olur.
+
+60
+00:10:32,695 --> 00:10:38,075
+Benim öyle bir hükümem var. Hüküme öyle x elemanlarından oluşuyor ki
+
+61
+00:10:38,707 --> 00:10:49,867
+k parametrisi sıfırla kapalı aralık üç arasında sıfır üç kapalı aralığında bunlarda da eşittir varsa okurken küçük eşittir diye okunmaz.
+
+62
+00:10:49,867 --> 00:11:05,947
+kapalı aralığı içerisindeki k sayısı iki k artı birdir. Bu kümenin elemanları nedir diye bana sorulduğunda sıfır koysam x bir bakın yukarkiyle aynı yeniden şu olaylarıma geçeyim.
+
+63
+00:11:05,947 --> 00:11:21,867
+K'ya 1 verdiğim vakit 3, K'ya 2 verdiğim vakit 5, K'ya 3 verdiğim vakit 7. Yani kümeyi tanım şeklinde kullanmak daha akademiktir. Diğeri normal sıradan kullanım şeklidir.
+
+64
+00:11:23,068 --> 00:11:24,347
+Bu sefer...
+
+65
+00:11:24,347 --> 00:11:27,207
+K'nın da tam sayı olduğunu belirtmesi gerekmiyor mu kümenin içinde?
+
+66
+00:11:28,307 --> 00:11:34,547
+Elbette doğru. Burada onu yazmadım. Şunun dışında da şuraya bir parantez açarsın.
+
+67
+00:11:34,548 --> 00:11:38,987
+K tam sayılar kümesinin elemanıdır.
+
+68
+00:11:39,268 --> 00:11:44,648
+Aslında tam sayılar kümesi dersen bu da eksi bir falan diye geçer ama hiç ona gerek yok.
+
+69
+00:11:44,648 --> 00:11:45,928
+Onu da yazmama gerek yok.
+
+70
+00:11:46,027 --> 00:11:47,968
+Tam sayılar kümesi demem yeterli.
+
+71
+00:11:48,068 --> 00:11:50,267
+Çünkü burada zaten sınırlandırmışım.
+
+72
+00:11:50,667 --> 00:11:52,728
+Sıfırla üç arasındaki tam sayılar.
+
+73
+00:11:53,047 --> 00:11:56,868
+Arkadaşınız çok güzel bir noktaya parmak bastı.
+
+74
+00:11:57,288 --> 00:12:02,648
+Ben burada K'nın ne olduğunu söylemezsem ben buradaki K'yı real bir sayıda alabilirim.
+
+75
+00:12:02,647 --> 00:12:20,607
+0 ile 3 arasında sonsuz sayı var ve benim yazacağım B kümesi sonsuz elemanlı bir küme olabilir. Teşekkür ederim. Bunu buradan çıkartmadan nedense anlayamıyorum bu sayfa niye geri dönmüyor. Bu sefer de Enter ile döndü. Tamam.
+
+76
+00:12:20,608 --> 00:12:35,108
+sonra kümelerimiz var dedik sonlu ve sonsuz kümeler aslında demin ağzımdan da kaçırdım eğer k real sayı olsaydı orada yazacağım b kümesi sonsuz elemanlardan oluşacaktı
+
+77
+00:12:35,108 --> 00:12:50,448
+kümelerim sonlu finite sonsuz infinite diye ikiye ayırıyorum sonlu kümelere örnek verdik işte mesela bakın burada olduğu gibi b kümem öyle elemanlardan oluşuyor ki x'lerden
+
+78
+00:12:50,447 --> 00:12:58,987
+x bir integer sayı 1 ile 4 kapalı aralığında yer alıyor. Bu da sonlu bir küme. Sonsuz kümelere geçelim.
+
+79
+00:12:58,987 --> 00:13:09,347
+Z kümesine integer dersem bu şekilde de bir gösterim yapabilirim. Bütün integer sayıları kasteder. Eksi sonsuzdan artı sonsuza kadar.
+
+80
+00:13:09,347 --> 00:13:18,487
+veya S kümesi öyle X'lerden oluşuyor ki X bir real sayı ve buradaki V bağlacı var.
+
+81
+00:13:18,887 --> 00:13:21,347
+X bir ve dört kapalı aralığında.
+
+82
+00:13:21,868 --> 00:13:23,788
+Bunu da bu şekilde gösterebiliriz.
+
+83
+00:13:24,167 --> 00:13:26,327
+Kapalı aralıklar köşeli parantez.
+
+84
+00:13:26,868 --> 00:13:34,347
+Normal parantez kullanırsam aslında sıfır ve dört dahil değildir anlamına gelir.
+
+85
+00:13:34,347 --> 00:13:53,347
+bazen bir taraf şey mesela şurası şöyle olmuş olsaydı kalemi alalım şurası şöyle bir parantez olsaydı sıfır açık aralığı dört kapalı aralığı diye okurdum o zaman sıfır dahil olmazdı.
+
+86
+00:13:53,347 --> 00:14:10,127
+dahil olmazdı. Yine şu mürekkepleri silelim. İlerleyelim. Bazı kümelerimiz var. Bu kümelerden bir tanesi de boş küme, diğeri de evrensel küme.
+
+87
+00:14:10,127 --> 00:14:18,667
+boş gümeyi gösterirken niye beni sinir ediyor?
+
+88
+00:14:18,667 --> 00:14:20,847
+boş gümeyi gösterirken
+
+89
+00:14:22,227 --> 00:14:40,227
+neyse ben gösterene kadar siz zaten gördünüz bu arada yeni mouse aldım nerede bakın yeni mouse demek ki çok kötüydü ve kablosuz aldım ama yine o problem yaşıyorum gördüğünüz gibi demek ki mouse da değil sorun bendeymiş.
+
+90
+00:14:40,227 --> 00:14:47,227
+boş kümem ya bu işaret ya da şu şekilde gösterebiliriz. null set veya void set denilir.
+
+91
+00:14:47,227 --> 00:15:08,047
+C'de hatırlarsınız bazen void kullanırdınız parametre döndürmediği anlamına geliyordu. Açık kapa parantez void diyorduk. Burada da kümenin boş olduğunu gösteriyor. Evrensel kümemiz var. Hangi sayılarla çalışıyorsam o sayıların hepsini içeren küme demektir.
+
+92
+00:15:08,047 --> 00:15:21,167
+işte bütün doğal sayılar, bütün real sayılar veya benim öyle bir evrensel kümen var ki x doğal sayılardan oluşuyor ve 1 ile 10 kapalı aralığında bulunuyor.
+
+93
+00:15:24,687 --> 00:15:29,388
+Şu şuna eşit değildir. Neden değildir?
+
+94
+00:15:29,387 --> 00:15:43,407
+Sol taraf sadece boş kümeyi gösteriyor. Küme işareti içerisinde olan boş küme ise bir elemandır. Yani benim kümemin elemanlarından biri boş küme olabilir.
+
+95
+00:15:44,667 --> 00:15:56,027
+Bu kümenin eleman olduğu için ve parantez içerisinde gözüktüğü için ben bu bir eleman. Bu ise kümenin tamamıyla boş olduğunu gösteriyor.
+
+96
+00:15:56,027 --> 00:16:01,307
+bunların birbirine eşit olmadığını rahatlıkla söyleyebilmeliyiz.
+
+97
+00:16:02,487 --> 00:16:05,187
+Bir sonraki kavram kardinaliti.
+
+98
+00:16:05,867 --> 00:16:08,207
+Bunu Türkçe'ye çeviremedim.
+
+99
+00:16:08,807 --> 00:16:12,827
+Aslında kardinaliti şu demekti, bir kümenin eleman sayısı.
+
+100
+00:16:13,867 --> 00:16:22,867
+Ben eleman sayısını farklı kaynaklarda ya da biz yazarken farklı türlü de yazabiliriz, onları da bilir.
+
+101
+00:16:22,867 --> 00:16:42,048
+Eğer başına küçük bir S, böyle de yazabilirim. A kümesinin eleman sayısı ya da mutlak değer işareti gibi ya da pipe işaretinin arasında A'yı yazdığında anlamı bu kümenin eleman sayısı demektir.
+
+102
+00:16:42,047 --> 00:16:49,367
+bir gün vizede bir öğrenci bunu mutlak değer olarak algıladığını iddia etti.
+
+103
+00:16:50,327 --> 00:17:01,347
+Şimdi bu yani mutlak değer olarak gözükebilir ama soruya baktığında okuyorsun soruyu onun bir kümenin elemanı olduğu bilgisi sana veriliyor.
+
+104
+00:17:01,907 --> 00:17:07,387
+Yani burada A kardinalite eşittir, 5 yazılmış.
+
+105
+00:17:07,607 --> 00:17:10,147
+Yani A'nın eleman sayısı 5 demektir.
+
+106
+00:17:10,147 --> 00:17:17,728
+A'nın mutlak değeri 5 eşittir desen yine burada A'ya eksi 5 olacak ya da artı 5 olacak.
+
+107
+00:17:18,028 --> 00:17:20,748
+Neyse yani lüzumsuz bir itirazdı, önemi yok.
+
+108
+00:17:21,608 --> 00:17:23,707
+Her iki şekilde de gösterebiliriz.
+
+109
+00:17:24,427 --> 00:17:28,267
+Örnek verelim mesela.
+
+110
+00:17:28,967 --> 00:17:30,608
+Şöyle bir A kümen var.
+
+111
+00:17:30,787 --> 00:17:31,707
+A kümesi var.
+
+112
+00:17:31,847 --> 00:17:33,248
+Eleman sayısı nedir?
+
+113
+00:17:33,487 --> 00:17:33,767
+3.
+
+114
+00:17:34,707 --> 00:17:36,187
+Şöyle bir B kümen var.
+
+115
+00:17:36,187 --> 00:17:38,047
+Doğal sayılardan oluşuyor.
+
+116
+00:17:38,047 --> 00:17:44,727
+şu en kısmı olmasaydı bu kümenin eleman sayısı bana sorulsaydı söyleyemezdim.
+
+117
+00:17:45,267 --> 00:17:46,387
+Sonsuz sayıda var.
+
+118
+00:17:47,007 --> 00:17:49,967
+Ama V bağlacıyla sınırlandırmış.
+
+119
+00:17:50,327 --> 00:17:52,407
+1-9 kapalı aralığında demiş.
+
+120
+00:17:52,547 --> 00:17:54,667
+Öyleyse B kümesinin eleman sayısı 9.
+
+121
+00:17:55,387 --> 00:18:00,207
+İnfinite yani sonsuz kümelerde eleman sayısı nedir?
+
+122
+00:18:00,207 --> 00:18:02,207
+Yani bunlar
+
+123
+00:18:02,804 --> 00:18:12,804
+zor eleman sayısını söyleyemeyiz. Çünkü kümeler mesela bir real sayılardan oluşan bir küme olsun. Uncountable'dır, sayılamayandır.
+
+124
+00:18:13,703 --> 00:18:25,363
+Çünkü en azından mesela doğal sayıları 1, 2, 3, 4, 5, 4, 4 diye sayabiliyorum. Bir countable durumu vardır ama real sayılar uncountable bir durumdur.
+
+125
+00:18:25,363 --> 00:18:33,123
+1 ile 2 arasında bile sonsuz sayı var. Yani ben birden 2'ye kadar bile geçiş rahatlıkla yapamıyorum.
+
+126
+00:18:34,003 --> 00:18:44,223
+Peki şimdi bunlara herhangi biriniz fark etmez hanginizin olduğu ama böyle farklı ağızlarla derse katılım olursa sevinirim.
+
+127
+00:18:44,223 --> 00:18:48,704
+Bu kümenin eleman sayısı nedir? Yani S'nin kardinalitisi nedir?
+
+128
+00:18:50,344 --> 00:18:50,743
+3.
+
+129
+00:18:50,743 --> 00:18:54,603
+3. Bunu çok düşünmemize gerek yok. Peki bunun?
+
+130
+00:18:57,603 --> 00:18:58,603
+Bir hocam.
+
+131
+00:19:00,523 --> 00:19:01,984
+5 diyen var mı?
+
+132
+00:19:04,623 --> 00:19:09,203
+Peki 5 diyen yoksa 1 diyen arkadaş neden 1 dediğini söyleyebilir mi?
+
+133
+00:19:09,804 --> 00:19:11,083
+S'in tek elemanı 3.
+
+134
+00:19:12,203 --> 00:19:17,183
+Evet. Bir küme içerisinde bir... Haydi bu yine çalışmıyor.
+
+135
+00:19:17,183 --> 00:19:25,403
+ben bunları şey yaparken bazılarına tıklama ile bazılarına enter ile demişim o yüzden bazıları gitmiyor
+
+136
+00:19:25,403 --> 00:19:30,503
+aynı elemanlar varsa bir küme içerisinde bu tek eleman sayılıyor
+
+137
+00:19:30,503 --> 00:19:35,743
+peki buradaki S kümesinin kardinalitesi nedir?
+
+138
+00:19:37,083 --> 00:19:38,903
+sıfır
+
+139
+00:19:38,903 --> 00:19:40,943
+hiç elemanı yok çünkü
+
+140
+00:19:40,943 --> 00:19:42,943
+bu kümenin
+
+141
+00:19:42,943 --> 00:19:45,343
+çok dikkatli olun
+
+142
+00:19:45,344 --> 00:19:48,763
+Bu kümenin eleman sayısı nedir?
+
+143
+00:19:50,164 --> 00:19:50,443
+3
+
+144
+00:19:50,443 --> 00:20:00,844
+Elemanlar birbiriyle virgülle ayrılıyordu. Birincisi şu boş küme. İkincisi şu olduğu gibi bir eleman 2
+
+145
+00:20:00,844 --> 00:20:09,844
+Üçüncüsü de şu dış parantez kısmına bakıyorum bu. Bunların içinde bunu bunu ayrı olarak saymamız gerekmiyor.
+
+146
+00:20:09,844 --> 00:20:23,063
+1, 2 ve 3. Eleman sayımız 3. Burada böyle bir küme verildiğinde ne diyeceğiz? Eleman sayısı sonsuzdur. Herhangi bir şey söyleyemeyiz.
+
+147
+00:20:24,264 --> 00:20:33,983
+Şimdi gelelim alt kümelere. Subset. Yine hatırlıyorsunuzdur bir küme kavramımız var. Bir de alt küme kavramımız var.
+
+148
+00:20:33,983 --> 00:20:47,183
+Alt küme dediğimiz şey nedir? Eğer X kümesinin bütün elemanları Y kümesi içerisinde yer alıyorsa X'e Y kümesinin bir alt kümesidir denir.
+
+149
+00:20:47,183 --> 00:20:57,223
+Yani en büyük küme hangisi burada? Y kümesi. X kümesi Y kümesinin içerisinde yer alıyor. Bunun gösterilimi de şu.
+
+150
+00:20:57,223 --> 00:21:10,964
+Bunu okurken de şöyle okumamız lazım. Şu şeyin bu kapsama işaretinin içi nereye bakıyorsa o taraf en büyük küme demektir.
+
+151
+00:21:10,964 --> 00:21:21,404
+Y, X'i kapsıyor. Y, X'i kapsıyor. Yani X'in elemanları Y'nin içerisinde de var.
+
+152
+00:21:21,403 --> 00:21:36,083
+Eğer bunun altında çizgi varsa y kapsar eşittir diye okuyoruz. Bu da y kümesi x'i kapsıyor. Evet x y'nin alt kümesi fakat aynı elemana sahipler.
+
+153
+00:21:36,083 --> 00:21:41,223
+Kümelerde eşitlik, kümelerdeki eşitlik nedir?
+
+154
+00:21:41,223 --> 00:21:49,443
+X kümesi, Y kümesine eşit olması, şu yukarıya bakalım, aynı şekilde okuyalım, eleman sayıları eşit demektir.
+
+155
+00:21:50,063 --> 00:21:57,304
+Öyleyse hep YX'i kapsıyor ve XY'yi kapsıyor.
+
+156
+00:21:57,779 --> 00:22:04,819
+buradaki AND'in true olması durumu neydi? Girişlerin her ikisinin de true olması gerekiyordu.
+
+157
+00:22:05,459 --> 00:22:14,259
+y x'i kapsıyor, x de y'yi kapsıyorsa her ikisi de aynı şartlarda x y'yi eşit demektir.
+
+158
+00:22:14,259 --> 00:22:16,839
+Bir başka kavrama geçelim.
+
+159
+00:22:16,839 --> 00:22:44,640
+Eğer x kümesi y kümesinin bir alt kümesi iken y kümesi x kümesinin bir alt kümesi değilse yani şu iki şartın ikisi de doğru değilse
+
+160
+00:22:44,640 --> 00:22:48,640
+x, y kümeleri birbirine eşit değildir.
+
+161
+00:22:49,340 --> 00:22:53,879
+x kümesi y kümesinin bir öz alt kümesidir.
+
+162
+00:22:54,439 --> 00:22:57,980
+Öz alt kümeye de proper subset diyoruz.
+
+163
+00:22:57,980 --> 00:23:00,379
+Yani şuraya bakalım.
+
+164
+00:23:01,059 --> 00:23:07,199
+y, x'i kapsıyor fakat x, y'yi kapsamıyor.
+
+165
+00:23:07,199 --> 00:23:15,259
+boş kümede her kümenin bir alt kümesi olarak kabul edildiğini biliyoruz.
+
+166
+00:23:16,000 --> 00:23:26,339
+Aslında bir saniye arkadaş bir saniye sesin zaten bir garip geldi bir saniye bir şeyi orada mı anlatayım diye baktım yok onu burada anlatacağım.
+
+167
+00:23:26,339 --> 00:23:27,599
+Efendim şimdi söyle.
+
+168
+00:23:28,960 --> 00:23:30,659
+Bir sonraki sıra burada hocam.
+
+169
+00:23:30,659 --> 00:23:40,519
+eşitlik başlığında hocam eğer x eşittir y, x, şurası mı kastediyorsun?
+
+170
+00:23:40,519 --> 00:23:49,239
+Evet. Hem kapsıyor hem eşitse ikisini de neden gösteriyoruz? Kapsayıp eşitse zaten bir tanesi yeterli değil mi?
+
+171
+00:23:52,739 --> 00:23:56,539
+Genel olarak bunu böyle vermiş. Yani şunu demek istiyorum.
+
+172
+00:23:56,539 --> 00:24:24,299
+şimdi hayır hayır şöyle düşün ama y x'i kapsar eşit yani ben bu şekilde kullanabilirim x ve y kümelerinin elemanlarını bilmiyorum ki eşit olmayabilir bu kapsar eşit'i veya gibi düşünün yani y x'i kapsıyor pardon y x'i kapsıyor veya x ve y eşit de olabilir
+
+173
+00:24:24,300 --> 00:24:35,460
+Ben elimdeki örneklerimi bilmeden y'nin x'i kapsadığını hatta ikisinin eleman sayılarının aynı olup eşit olduğunu bilemiyorum
+
+174
+00:24:35,460 --> 00:24:40,980
+Ama diyorum iki küme eğer eşitse öyle ya da böyle
+
+175
+00:24:40,980 --> 00:24:48,720
+İleride ben bu kümelere eleman ataması yapacaksam şu eşitlik kavramı varsa buna göre yapmalıyım
+
+176
+00:24:48,720 --> 00:24:50,520
+Mesela şöyle olsun
+
+177
+00:24:50,520 --> 00:24:53,300
+Şu eşittir hiç olmasın
+
+178
+00:24:53,299 --> 00:25:03,879
+yuvası x kümesinde 1, 2, 3 var y kümesinde de 1, 2, 3 var ve şu işaret yok aşağısındaki eşittir işareti.
+
+179
+00:25:05,159 --> 00:25:09,119
+O zaman ben bu iki kümeye eşittir diyemem.
+
+180
+00:25:09,499 --> 00:25:13,039
+Yani bu anlam şudur y x'i içine alıyor.
+
+181
+00:25:14,139 --> 00:25:18,219
+y'de aslında x'den daha farklı elemanlar da olabilir.
+
+182
+00:25:18,220 --> 00:25:24,160
+atanması gerekiyorsa y'ye daha farklı elemanlar ben itiraz etmeyeceğim.
+
+183
+00:25:24,839 --> 00:25:32,520
+Ama şöyle bir şey bana verilmiş olsaydı başlangıçta x'in değeri de 1, 2, 3, y'nin değeri de 1, 2, 3.
+
+184
+00:25:33,720 --> 00:25:40,619
+Ve eşittir dediğimde x'e de bir değer geldiğinde bu değer y'ye de gelebilirdi.
+
+185
+00:25:42,619 --> 00:25:47,899
+Tam anlatamadım size ama bir dakika kalemimi alayım.
+
+186
+00:25:48,220 --> 00:25:56,720
+kalemimi alayım. Eğer ben şöyle bir şey yazsaydım.
+
+187
+00:25:58,132 --> 00:26:22,052
+bunun anlamı nedir? Şu benim y küme, şu da benim x küme. x y'yi kapsıyor. Olayım bu. Şimdi bana dışarıdan birtakım inputlar geliyor. x kümesine bir geldi. Bunun anlamı y'de de bir var demektir. x'e iki geldi. Bunun anlamı y'de de iki var demektir.
+
+188
+00:26:22,052 --> 00:26:36,532
+Ama y'ye 3 geldiğinde x'in içinde 3 yok. Ama buraya şu işareti koyduğumda ben x'in içinde de 3 olurdu. Anlatabildim mi?
+
+189
+00:26:39,572 --> 00:26:48,611
+Anladım hocam. O zaman eşit olduğunda ben şeyi hala anlamadım ama eşit olduğunda sadece bir tanesinin olması yeterli değil mi?
+
+190
+00:26:48,611 --> 00:27:15,312
+çünkü eşitler. Zaten o alttaki eşit. Şöyle söyleyeyim. X kümesi, Y kümesi ne eşit? Hiç bunları yazma. Niye yazıyorum? X kümesi, Y'ye eşit. Bunları yazmıyorum. Bunları neden yazdık? Biz alt kümeler kavramını anlatıyorum. Ben X'in Y'ye eşitliğini alt kümeler kavramıyla anlatmak istiyorsam,
+
+191
+00:27:15,312 --> 00:27:24,532
+şu tanımı x'in y'ye eşit olma tanımını alt kümelerle yapmak zorundaysak şu ifadeyi kullanmalıyım.
+
+192
+00:27:24,532 --> 00:27:32,072
+y, x'i kapsar ve x de y'yi kapsar.
+
+193
+00:27:32,852 --> 00:27:34,271
+Eşitliğin kavramı budur.
+
+194
+00:27:34,691 --> 00:27:43,812
+Eğer buraya ben ent değil or yazmış olsaydım, bu eşitliğin kümeler arasındaki eşitliğin kavramı olmayacaktı.
+
+195
+00:27:43,892 --> 00:27:45,091
+Anlamış olacaktı.
+
+196
+00:27:45,312 --> 00:28:01,172
+sadece y, x'i kapsıyor. Şurası olması. Böyle bir şey yazdım. Evet, x, y'nin bir alt kümesi x eşittir y yazabilirim. Ama bu eksik bir tanım oluyor.
+
+197
+00:28:02,292 --> 00:28:14,031
+Eğer alt küme kavramlarıyla bunu yazacaksam ve bu tanımın tam bir tanım olabilmesi için eşitlik tanımı bunun tam tersini de yazıp bunu end ile bağlamam gerekir.
+
+198
+00:28:15,311 --> 00:28:18,291
+Tamamdır hocam
+
+199
+00:28:18,291 --> 00:28:23,391
+Yine tam ikna seni edemedim ama yeniden söyleyeyim
+
+200
+00:28:23,391 --> 00:28:28,491
+Çok bazen bazı kavramları başka kavramlarla ifade ediyoruz
+
+201
+00:28:28,491 --> 00:28:36,651
+Bakın arkadaşlar ben alt kümeyi anlatmasaydım, x eşittir y deseydim bu iki küme birbirine eşit olacaktı
+
+202
+00:28:36,651 --> 00:28:39,411
+Ama ben şu an alt kümeleri anlatıyorum
+
+203
+00:28:39,411 --> 00:28:44,951
+Alt kümeler kavramını kullanarak iki kümenin eşitliğini anlatmak istiyorsan
+
+204
+00:28:44,951 --> 00:28:58,511
+bu şekilde anlatmam lazım. Yani bunu mast olarak bağlamalıyım. Şult değil. Sadece bu bunu içine almış olarak diye yazamıyorum. Tam tersini de mutlaka yazmalıyım.
+
+205
+00:28:58,511 --> 00:29:14,311
+Şimdi mesela şuraya geçin. Özalt kümesidir. Yani X kümesi, Y kümesinin bir alt kümesi. Hemen yazalım. Şurası Y, şurası da X. Şekil üzerinden bakalım.
+
+206
+00:29:14,311 --> 00:29:29,491
+X kümesi Y kümesinin bir alt kümesi iken Y kümesi X kümesinin bir alt kümesi değilse yani şu eşitlik yoksa yani bu nedir?
+
+207
+00:29:29,492 --> 00:29:55,492
+X kapsar Y ise X kümesi Y kümesinin bir öz alt kümesidir. Yani şu X kümesi Y kümesinin bir öz alt kümesidir. Buna da proper subset diyoruz. Nasıl göstermişim? X, Y'yi kapsıyor, kapsar eşittir yazsam bile
+
+208
+00:29:55,935 --> 00:30:04,495
+çünkü ikisi de birbirinin aynısı olabilir dediğim gibi fakat bunun tam tersi söz konusu değil.
+
+209
+00:30:09,295 --> 00:30:23,935
+Burada ne var? Bu çok klasik bildiğimiz şeyler. Şunları da açalım. Bunun anlamı bir şey görürseniz x, s kümesinin bir elemanıdır. x, s kümesinin bir elemanı değildir.
+
+210
+00:30:23,935 --> 00:30:36,915
+A'da B kümesinin bir alt kümesidir. Bakın bunu sözlü olarak bu şekilde söylüyorum ama yazılı olarak yazdığımda bu şekilde de yazabiliyorum.
+
+211
+00:30:37,735 --> 00:30:46,196
+Aslında hani bazen matematiksel notasyonlar beni korkutuyor. Çok karışık işlemler var diyoruz. Aslında karışık işlem falan yok.
+
+212
+00:30:46,195 --> 00:30:59,435
+Şurada yazılan şey şu yukarıdakinin aynısı. Bütün x'ler x a'nın elemanı iken b'nin de elemanıdır.
+
+213
+00:30:59,435 --> 00:31:11,075
+İşte şu şekle bakalım. Şu en dışarıdaki bizim aslında evrensel kümemiz bir b kümen var. Bu b kümesi a kümesini içine alıyor.
+
+214
+00:31:11,075 --> 00:31:37,336
+Yani B kümesi kapsıyor A'yı, kapsar eşittir. Bu kapsar eşitleri neden koyuyorum şu eşitleri? Sadece A kümesinin elemanları olabilir, şu B'dekiler olmayabilir. Ama bu A'nın B'nin A kümesi olma özelliğini değiştirmiyor. Ben daha sonra B'ye de bir takım elemanlar koyabilirim.
+
+215
+00:31:37,336 --> 00:31:53,236
+İşte bunu matematiksel olarak şöyle de gösteriyoruz. Bütün x'ler, her x, A kümesinin elemanı ise yani şunlar A kümesinin elemanı ise aynı zamanda bunlar B kümesinin elemanıdır.
+
+216
+00:31:53,895 --> 00:32:01,135
+Şöyle yazmış olduğum, sözlü olarak söylemiş olduğum şeyin aslında matematiksel gösterilimi de bu.
+
+217
+00:32:01,135 --> 00:32:08,915
+Devam edelim. Bu ben diagramı. Bunu artık biliyoruz ben diagramı olduğunu.
+
+218
+00:32:08,915 --> 00:32:22,335
+Şimdi power set kavramı var. Burada yine size bir bonus sorusu gelecek. Ama bu bonus sorusunda çok ciddiyim.
+
+219
+00:32:22,335 --> 00:32:48,795
+İlk beşi istiyorum. İlk beş. Bir de şöyle bir problem oldu geçen sefer. Bazılarınızın mailleri spam'e düşmüş. Ben onları bir sonra gördüm. Her ne kadar spamdakilerini oraya attım da o tarihleri biliyorum ama işlemiş oldum. İlk inbox'ımda olanları. Sonra haksızlık olmasın diye öyle de bir genelleme yaptım.
+
+220
+00:32:48,796 --> 00:33:16,635
+Şimdi sorumuz buradan gelecek. Bana diyor ki senin diyor bir A kümen var. Bu A kümesi X kümesinin bir alt kümesi. Okey bunu biliyorum. X kümesi 1, 2, 3 elemanlarından oluşuyorsa şu alt kümesi nelerden oluşur? Hangi elemanlardan oluşur? Power seti nedir? Ne dersin?
+
+221
+00:33:16,635 --> 00:33:36,395
+Bir boş küme bu kümenin elemanı olabilir. Bu kümenin birli olan elemanları bir tane elemanlar 1, 2, 3. Sonra kümenin ikili kombinasyonlarını alabilirim. 1, 2, 1, 3, 2, 3. Sonra kümenin üçlü kombinasyonlarını alırım. 1, 2, 3.
+
+222
+00:33:37,491 --> 00:34:05,491
+eğer burada 4 olsaydı, burada bile 4. eleman olsaydı neler eklenecekti? Şuraya bir tane 4 eklenecekti, şuraya bir tane 1-4 eklenecekti, sonra 2-4 eklenecekti, sonra ne eklenecekti? 3-4 eklenecekti, sonra üçlüler gelecekti, 1-2-3, 1-2-4,
+
+223
+00:34:05,491 --> 00:34:18,651
+1, 3, 4, sonra atlamayayım 1, 3, 4 olacaktı. Sonra ne olacaktı? 2, 3, 4, atladıklarım olabilir. 1, 2, 3, 4. Bütün kombinasyonlar olacaktı.
+
+224
+00:34:18,651 --> 00:34:33,572
+Yani eğer benim elimde kümemde 3 elemanım varsa power setin eleman sayısı yani yazabileceğim power set kümesinin eleman sayısı 2 üzeri 3'ten 8 olacaktı.
+
+225
+00:34:33,571 --> 00:34:53,931
+Şimdi burada kaç tane var? 2, 4, 6, 8. 4 elemanım olsaydı 16 tane olacaktı. Burada 8 var. Bunu yazdım. 9, 10, 11, 12, 13, 14, 15. Bir tane eksik yazmışım. Hangisi eksik? Ne eksik?
+
+226
+00:34:54,411 --> 00:34:58,931
+1, 2, 3. Evet. 1, 2, 3 burada var ama. Onu buradan yazdım.
+
+227
+00:34:58,931 --> 00:35:00,411
+1, 2, 3, 4.
+
+228
+00:35:00,411 --> 00:35:06,892
+haa bir iki üç dört eksik tamam bir iki üç dört eksik bunlar olacaktı.
+
+229
+00:35:07,651 --> 00:35:27,051
+Demek ki power set dediğim şey is kümesinde yazılabilen boş küme tek elemanlı iki elemanlı işte üç elemanlı nokta nokta n'e gidene kadar olan kümelerin hepsi benim power setimi oluşturuyor.
+
+230
+00:35:27,051 --> 00:35:46,311
+Şimdi sorum size şu, şurayı temizliyorum, temizlemeyi becerebilirsem temizliyorum, sorum şu, size deniyor ki bir input verildiğinde yani bir küme verildiğinde bu kümenin power setlerini bulan algoritmayı yazın
+
+231
+00:35:46,311 --> 00:35:58,991
+Şimdi düşünelim. Nasıl yazarım? Nasıl yazabilirim? Ve en basit, en kolay şekilde nasıl yazabilirim?
+
+232
+00:35:58,991 --> 00:36:09,371
+Bunu yazabilirsiniz belki ama şunu düşünün. Biz bu dersi niye görüyorduk? Olaylarımızı ayrık düşünebilelim.
+
+233
+00:36:09,371 --> 00:36:15,931
+B-by gördüğümüz bir kavramı bir başka problemimizi çözebilmek için kullanalım.
+
+234
+00:36:15,931 --> 00:36:22,991
+Şimdi bu soruyu size çözüm desem ve ben ekranda da şeyleri görmek istiyorum.
+
+235
+00:36:23,311 --> 00:36:31,171
+İşte 1-2-3 diye eleman verdim. Outputta 0, 1-2-3 bunların böyle yazılmış olmasını da istiyorum.
+
+236
+00:36:32,091 --> 00:36:34,651
+40 tane soru gelecek aklınıza.
+
+237
+00:36:34,652 --> 00:36:39,652
+Ben stringlerle işlem yapmayı bilmiyorum. Bunları böyle nasıl yazacağım?
+
+238
+00:36:42,492 --> 00:36:48,652
+Yani ya da sayısal olarak düşüneceksiniz. Fakat burada bir sürü kontroller yapmamız gerekecek.
+
+239
+00:36:49,352 --> 00:36:53,372
+Çok fazla if olacak. Bunları kenara atalım.
+
+240
+00:36:53,952 --> 00:37:01,392
+Ben bu derste şimdiye kadar gördüğüm şeyleri düşünerek böyle bir problemi çözebilir miyim?
+
+241
+00:37:01,391 --> 00:37:14,691
+Böyle bir problemi çözebilmek için mürekkeu açıklamına çıkmak istiyor musunuz? Saklama çıkar.
+
+242
+00:37:15,271 --> 00:37:19,511
+Böyle bir problemi çözebilmek için şuraya bir New Slide açıyorum.
+
+243
+00:37:20,791 --> 00:37:22,931
+Hatta şunları da kaldırıyorum.
+
+244
+00:37:23,931 --> 00:37:26,411
+Ondan sonra şöyle yapıyoruz.
+
+245
+00:37:26,411 --> 00:37:27,231
+Dur bakalım.
+
+246
+00:37:28,151 --> 00:37:30,411
+Kalemimizi de elimizi alıyoruz.
+
+247
+00:37:31,391 --> 00:37:33,212
+kalemi de aldık
+
+248
+00:37:33,811 --> 00:38:00,811
+yani benim elemanlarım 1, 2, 3 olsun ve neydi? Boş küme vardı. 1 vardı, 2 vardı, 3 vardı. Yine apuk supuk yazmaya başladım. Neler vardı? 1, 3 vardı. Sonra 1, 2 vardı. Sonra 2, 3 vardı. Pardon orada virgül yok. Sonra 1, 2, 3 vardı.
+
+249
+00:38:00,811 --> 00:38:26,051
+çok kötü oldu ama aklımızda kalsın diye. 8 tane var mı? 2, 4, 6, 8. Evet. Ben şimdi bunu nasıl kodlarım? Şöyle bir şey yapsam size. 1, 2, benim 3 tane değişkenim var ki 8 tane farklı durumum var. Tamam mı?
+
+250
+00:38:26,051 --> 00:38:51,151
+Bunları binary olarak nasıl yazıyordum? 0, 1, 0, 1, 0, 1, 8 tane durum oldu mu? 2, 4, 6 olmadı. 0 ve 1. Sonra ne geliyordu? 2 tane 0, 2 tane 1, 2 tane 0, 2 tane 1. Bunları gördük.
+
+251
+00:38:51,151 --> 00:39:01,791
+sonra 4 tane 0. Şu yazıyı yazmak o kadar zor ki. 4 tane 0, 4 tane de 1. Buraya kadar bir problem var mı? Yok.
+
+252
+00:39:03,111 --> 00:39:11,791
+Peki ben değişkenlerim. Birinci değişkenim, ikinci, üçüncü değişkenim. Bandir olarak kodladım. Yani doğruluk tablomu oluşturdum.
+
+253
+00:39:11,791 --> 00:39:15,151
+Eee buradan ben nasıl bir çözüme gideceğim?
+
+254
+00:39:15,651 --> 00:39:23,111
+Şimdi bakın 3 elemanın 3'ü de yoksa 1 de yok, 2 de yok, 3 de yok.
+
+255
+00:39:23,211 --> 00:39:24,831
+Bu nedir? Boş kümedir.
+
+256
+00:39:26,171 --> 00:39:29,651
+Burada sadece ne var? 3 var. Eleman 3.
+
+257
+00:39:30,351 --> 00:39:33,671
+Burada sadece ne var? 2 var. Eleman 2.
+
+258
+00:39:33,671 --> 00:39:39,971
+Burada sadece ne var? 2 ve 3 var. Eleman 2 ve 3.
+
+259
+00:39:39,971 --> 00:40:03,311
+Burada sadece ne var? 1 var. 1. Burada ne var? 1 ve 3 var. 1 ve 3. Burada ne var? 1 ile 2 var. 1, 2. Burada ne var? 3'ü de var. 1, 2 ve 3.
+
+260
+00:40:03,811 --> 00:40:08,331
+Bunların hepsi benim power setimi oluşturmuyor mu? Oluşturuyor.
+
+261
+00:40:08,331 --> 00:40:13,011
+Öyleyse ben bu algoritmayı nasıl yazabilirim arkadaşlar?
+
+262
+00:40:14,191 --> 00:40:19,331
+3 tane değişkenim varsa 8 durum 0'dan 8'e kadar yazacağım
+
+263
+00:40:19,331 --> 00:40:33,331
+Sadece yapacağım şey 0'dan 7'ye kadar olan sayıların binary halini çeviren bir fonksiyon yazmam yeterli
+
+264
+00:40:33,331 --> 00:40:40,491
+çevirdim 3 tane 0, 3'ü de 0 ise burada hiçbir değişkenim yok, boş kümedir.
+
+265
+00:40:41,011 --> 00:40:50,711
+Hangi gözde 1 varsa o gözün değişkenini print ediyorum.
+
+266
+00:40:51,131 --> 00:40:52,731
+Ve power setimi buluyorum.
+
+267
+00:40:52,731 --> 00:41:03,752
+Şimdi bunun 6 elemanlı bir küme olduğunu düşünün ve diyorlar ki bu 6 tane kümenin ama 6 tane elemanı göre power seti oluştur.
+
+268
+00:41:03,752 --> 00:41:20,912
+Yani bunun kodunu yazarken de gerçekten zorlanırsınız. Belki hani bir tanesi yazdım üçlü için bu altılı için de aynısı çalışacak ama doğruluğunu kontrol etmeniz bile zorlaşıyor.
+
+269
+00:41:20,911 --> 00:41:30,191
+Halbuki bu 2 üzeri 6'dan ne etti? 32, 64. 0'dan 65'e kadar binary sayılarım.
+
+270
+00:41:30,516 --> 00:42:00,335
+karşılıkları, bir olan değerleri benim o sıradaki değişkenime karşılık gelecek. Ha sen değişkenlerini bir dizide 1, 2, 3 diye yazarsın. Diyelim şunu alalım. Bu da altının banyeri karşılığı. Onu da ayrı bir dizide yazdın. 1, 1, 0. Tamam mı? Bunu entledin. Sıfırdan farklı. Bu eleman var demektir. Bunu entledin sıfırdan farklı.
+
+271
+00:42:00,335 --> 00:42:10,975
+yani 2 ile 1'i çarptım, 2 sıfırdan farklı bu eleman var demektir. 3 ile 0'ı çarptım, 0 demek ki 3. eleman yok demektir.
+
+272
+00:42:10,975 --> 00:42:22,795
+Hop, 1-2 çıktı. Yani burada aklınıza gelebilecek her türlü varyasyonları yapabilirsiniz. Bu tamamıyla sizin algoritmik düşüncenize bağlı.
+
+273
+00:42:22,795 --> 00:42:26,115
+ama burada göstermek ve söylemek istediğim şuydu.
+
+274
+00:42:26,856 --> 00:42:31,655
+Ben bunları evet gördük ama hay beye görmüş olmayalım.
+
+275
+00:42:32,095 --> 00:42:34,775
+Gördük böyle kenarda kalmış olmasın.
+
+276
+00:42:34,895 --> 00:42:38,755
+Ben bunu bir problemimin çözümünde pat diye kullanayım.
+
+277
+00:42:39,556 --> 00:42:41,456
+İleride bir şey geldi karşına.
+
+278
+00:42:41,456 --> 00:42:46,795
+Öyle bir şey geldi ki karnı diagramlarında mesela grey kodlamayı gördük.
+
+279
+00:42:47,135 --> 00:42:48,295
+Neydi grey kodlama?
+
+280
+00:42:48,855 --> 00:42:52,575
+Aynı anda sadece bir tane bitin yeri değişiyordu.
+
+281
+00:42:52,795 --> 00:43:01,416
+böyle bir şey vardı. Bu problem benim bu problemimi çözmek için kullanılabilir. Bunu burada kullanayım.
+
+282
+00:43:01,876 --> 00:43:08,775
+Bu şekilde düşünmenizi istiyorum. Aslında bu derste gördüğünüz her şey tek başına bir anlam ifade etmeyebilir.
+
+283
+00:43:09,196 --> 00:43:14,035
+Ama mutlaka bir başka problemin içerisinde size yardımcı olacaktır.
+
+284
+00:43:14,035 --> 00:43:38,135
+Şimdi sizden istediğim nedir? Minimum kodla yani kod satırı line of kod dediğimiz kod satırı az olacak şekilde ve şu mantığı kullanarak hangi dilde kodlarsan kodla algoritmayı yazıp output olarak şunları bana göster. Şu çıkışları bana göster.
+
+285
+00:43:38,135 --> 00:43:43,195
+bana bir A4'ün içerisine önce kodunu koy.
+
+286
+00:43:43,975 --> 00:43:47,075
+Yani ben algoritmayı çalıştırmak istemiyorum.
+
+287
+00:43:47,195 --> 00:43:51,415
+O koda baktığım vakit zaten ben onun doğru çalışıp çalışmadığını anlarım.
+
+288
+00:43:51,495 --> 00:43:52,995
+Çünkü bu çok kısa bir kod.
+
+289
+00:43:53,655 --> 00:44:01,075
+Ve almış olduğun output çıkışlarının da print screen'ini al, ekrana koy.
+
+290
+00:44:01,075 --> 00:44:07,215
+Ve üstüne adını, soyadını, numaranı yaz, bana gönder. İstediğim bu.
+
+291
+00:44:08,135 --> 00:44:36,035
+Source kodun zaten çok uzun bir source da sen benim istediğim şeyi yapmadın demektir. Onu göndermeye zahmet etme. Şu şekilde problemi çöz. Bu anlattığım şekilde. Print screen ile de output'unu al ve bana gönder. İlk 5. Şuraya not yazıyorum ki unutmayayım. İlk 5. Okey mi? Peki. Şimdi.
+
+292
+00:44:36,035 --> 00:44:38,195
+Soru anlaşıldı mı arkadaşlar?
+
+293
+00:44:40,715 --> 00:44:41,355
+Evet hocam.
+
+294
+00:44:41,895 --> 00:44:50,135
+Peki bir kişi anladı. Burası böyle boş kalsın. Devam edelim diyeceğim ama bu da yine devam etmedi.
+
+295
+00:44:52,075 --> 00:44:59,475
+Şimdi burada yine örnekler vermişiz. Şöyle bir hepsini açalım. Üzerinden hızlıca geçelim.
+
+296
+00:44:59,475 --> 00:45:11,335
+X, S'nin bir alt kümesi ise bunun power seti 250S diye gösteriliyor power seti.
+
+297
+00:45:11,335 --> 00:45:13,395
+Yani bunu da gösterilir mi böyle?
+
+298
+00:45:15,135 --> 00:45:21,415
+Görürseniz kümem sadece A'dan oluşuyorsa çıktılarım nedir?
+
+299
+00:45:21,635 --> 00:45:24,635
+Boş küme ve bir elemanlı A'nın kendisi.
+
+300
+00:45:24,755 --> 00:45:26,795
+Bakın bunu süslü paranteze aldım.
+
+301
+00:45:26,931 --> 00:45:43,931
+A ve B varsa boş küme sadece A sadece B ve AB'nin birlikte olması. Genelde ben bunları anlatırken hep şuralara parantez koyuyorum. Yani süslü parantez. Bu süslü parantezı çizmek bana çok zor geldiği için öyle yapıyorum.
+
+302
+00:45:43,931 --> 00:45:54,651
+boş küme ise yazılabilecek tek bir power setim var o da şu olan birinci elemanı olan boş küme başka bir şey yok
+
+303
+00:45:54,651 --> 00:46:03,512
+şöyle bir kümen varsa bu kümenin birinci elemanı boş küme ikinci elemanı ise sadece bu
+
+304
+00:46:03,512 --> 00:46:07,931
+öyleyse benim yazacaklarım bu ikisinin kombinasyonu
+
+305
+00:46:07,931 --> 00:46:10,091
+birileri yazıyorum bu
+
+306
+00:46:10,091 --> 00:46:12,171
+Bu, birileri yazıyorum bu
+
+307
+00:46:12,171 --> 00:46:18,751
+Ondan sonra çok özür dilerim bu boş küme bu değil
+
+308
+00:46:18,751 --> 00:46:22,991
+Bir dakika hemen bunları geri alayım sonra hoca yanlış olur
+
+309
+00:46:22,991 --> 00:46:27,031
+Neyse hepsini sildim
+
+310
+00:46:27,031 --> 00:46:31,592
+Şunu yazıyorum ilk önce boş kümem var boş kümeyi yazdım
+
+311
+00:46:31,592 --> 00:46:36,311
+Birinci kümem boş elemandı küme işaretiyle bunu yazdım
+
+312
+00:46:36,311 --> 00:47:03,111
+İkinci elemanım şuydu. Şunu küme işaretine koyup yazdım. Sonra ikilileri yapacağım. Şu dış küme elemanın işareti içinde bir bu var. Bir de ikinci elemanım şu var. Bu da pardon şu şunun ki. Şu da şu dışarıdaki kümeninki. Artık zaten power set kavramını da görmüş olduk.
+
+313
+00:47:03,112 --> 00:47:05,391
+Şimdi devam edelim
+
+314
+00:47:05,391 --> 00:47:16,071
+Bu iki kümeli ise 2 üzeri 2'den 4 tane eleman yazılacak
+
+315
+00:47:16,071 --> 00:47:17,351
+Bu da onu söylüyor
+
+316
+00:47:17,351 --> 00:47:23,512
+Peki şu Venn şamalarını da görüp bir ara verelim
+
+317
+00:47:23,512 --> 00:47:30,351
+Şimdi kümelerle işlem yaparken aslında gösterelim de Venn şamalarını kullanmak en kolay yoldur
+
+318
+00:47:30,351 --> 00:47:35,131
+ve aşaması üzerinde iki kümenin birleşimini yapabilirim.
+
+319
+00:47:35,952 --> 00:47:38,312
+İki kümenin kesişimini alabilirim.
+
+320
+00:47:38,732 --> 00:47:41,191
+Intersection kesişim, birleşim, union.
+
+321
+00:47:41,812 --> 00:47:44,391
+İki kümenin farkını alabilirim, difference.
+
+322
+00:47:45,171 --> 00:47:47,851
+İki kümenin simetrik farkını alabilirim.
+
+323
+00:47:47,851 --> 00:47:50,771
+Belki bu simetrik farkı şimdiye kadar duymadınız.
+
+324
+00:47:50,931 --> 00:47:52,551
+Simetrik difference diyoruz.
+
+325
+00:47:52,991 --> 00:47:54,592
+Ve tümleyenini alabiliriz.
+
+326
+00:47:54,891 --> 00:47:57,331
+Bu da komplement olarak tanımlanıyor.
+
+327
+00:47:58,592 --> 00:47:58,831
+Peki.
+
+328
+00:47:58,831 --> 00:48:02,811
+Peki iki kümenin birleşimini nasıl alırız?
+
+329
+00:48:04,391 --> 00:48:14,991
+Neyse şimdi bakalım iki tane kümen var x y biz genelde birleşimi bu şekilde gösteriyoruz ama hemen bunu matematik diliyle gösterelim.
+
+330
+00:48:14,991 --> 00:48:39,592
+X birleşim Y öyle X'lerden oluşuyor ki şu ikisini karıştırmayın arkadaşlar. Şu küçük X ile büyük X aynı şey değildir. Kümelerde kullanılan semboller case sensitive'tir. Yani büyük küçük arka karşı duyarlıdır. Kümenin elemanları küçüktür. Kümenin isimleri de büyüktür.
+
+331
+00:48:39,591 --> 00:49:06,271
+Öyleyse bu ikisi aynı şey değil. X birleşim y kümesi nelerden oluşuyor? Öyle x'lerden oluşuyor ki x büyük x kümesinin elemanı veya x y kümesinin elemanı. Birleşim bu. Birleşimin bul cevrinde de ora karşılık geldiğini biliyorduk. Birleşim aynı zamanda neydi? Toplama işlemiydi.
+
+332
+00:49:06,271 --> 00:49:16,092
+Şu kümenin birleşimini almak istiyorum. Birleşimi nedir? Şunun tamamında yer alan elemanlar.
+
+333
+00:49:16,916 --> 00:49:31,916
+artık bunu biliyoruz. işte x, [öğrenci], [öğrenci], [öğrenci], y, [öğrenci], Denizse birleşimi nedir? Lale buradaki kesişen eleman olduğu için bir kez alıyorum. Bütün elemanların toplamı oluyor. Hiçbir problem yok.
+
+334
+00:49:31,916 --> 00:49:40,916
+kesişime gelelim. intersection. intersection dediğimiz şey neydi? Yine bu şekilde gösteriyorduk kesişimi.
+
+335
+00:49:40,916 --> 00:49:54,575
+Ama bu kesişim öyle x'lerden oluşuyor ki x büyük x kümesinin elemanı ve aynı zamanda da y'nin elemanı olacak
+
+336
+00:49:54,575 --> 00:49:58,816
+Kesişimde kümenin şurasındaki elemanlar
+
+337
+00:49:58,816 --> 00:50:06,375
+x [öğrenci], [öğrenci], [öğrenci]'ten oluşuyorsa y'de [öğrenci] ve [öğrenci]'den oluşuyorsa ortak olan nedir? Lale
+
+338
+00:50:06,375 --> 00:50:16,916
+öyleyse kesişimde laledir. Şu yazılımları kesinlikle unutmayın ama birleşimde or dedik, kesişimde end dedik.
+
+339
+00:50:16,916 --> 00:50:29,535
+Bu kümeyle, elemanların bu kümeleri nasıl temsil ettiğini görüyoruz. Peki burada ne var? Burada karşıma birinizin mikrofonu açık arkadaşlar.
+
+340
+00:50:29,535 --> 00:50:50,835
+kapatabilir mi? Burada ayrı küme kavramını görüyoruz. X ve Y diye iki tane kümen verilmiş olsun. Bu iki kümenin kesişime, boş küme ise, bakın kesişimleri yok, boş küme ise X ve Y kümeleri ayrı küme diyoruz.
+
+341
+00:50:50,835 --> 00:51:02,475
+Ayrık kümeyi disjoint ya da pairwise kümeler olarak da geçebilir. İki kümenin kesişimi eğer boş küme ise bunlar ayrık kümelerdir.
+
+342
+00:51:02,475 --> 00:51:15,655
+Bu örnek biraz size garip gelebilir ama kitaptan alınmış bir örnek. Bir x kümen var. Bu x kümesinin içerisindeki z elemanı diyor ki z rektördür diyor.
+
+343
+00:51:15,655 --> 00:51:22,935
+Y kümesi de bir Z elemanına eşit buradaki Z'de Z bu sınıfta oturuyor.
+
+344
+00:51:22,935 --> 00:51:28,296
+X kesişim Y kümesini almak istiyorsam
+
+345
+00:51:31,668 --> 00:51:43,668
+bu iki kümenin kesişimi boş küme olur mu? Boş kümedir. Yani hiçbir zaman gelip de bir rektör bir dersi dinlemek için sınıfta oturmaz.
+
+346
+00:51:43,668 --> 00:51:58,168
+Yani bu çok saçma bir örnek ama saçma olduğu için zaten buraya koydum. Aslında şöyle düşünün, niye bir rektör geldi, ziyaret etti, bir sınıfa geldi, oturdu.
+
+347
+00:51:58,168 --> 00:52:02,807
+Ama bu küme kavramında şöyle bir şey var
+
+348
+00:52:02,807 --> 00:52:16,127
+Şuradaki z eğer öğrenciyi temsil ediyorsa rektörde hiçbir zaman bir öğrenci olmayacağı için zaten bu kümenin keseşimi de boş küme olacaktır
+
+349
+00:52:16,127 --> 00:52:23,647
+Ya da hiç bu örneği düşünmeyin iki kümenin keseşimi boş küme ise bu iki küme birbirinden ayrı kümelerdir
+
+350
+00:52:23,647 --> 00:52:41,047
+X kümesi tek sayılardan, Y kümesi çift sayılardan olursa bu iki küme ayrıktır. Peki X kümesi tek sayılardan oluşsun, Y kümesi de asal sayılardan oluşsun. Bu iki küme ayrık küme midir?
+
+351
+00:52:41,047 --> 00:53:01,807
+Şu x kümesi tek sayılardan oluştu. Tek sayılar. Y kümesi de asal sayılardan oluştu. Ayrı küme midir? Hayır hocam. Hayır hocam. Peki burası tek sayılar değil çift sayılar olsaydı?
+
+352
+00:53:05,972 --> 00:53:06,891
+Yine hayır hocam.
+
+353
+00:53:08,011 --> 00:53:09,031
+Hayırı bozan ne?
+
+354
+00:53:10,171 --> 00:53:10,472
+İki.
+
+355
+00:53:10,472 --> 00:53:11,872
+Evet.
+
+356
+00:53:13,291 --> 00:53:13,871
+Tamam.
+
+357
+00:53:15,211 --> 00:53:17,691
+Karalayarak ilerliyoruz ama neyse.
+
+358
+00:53:18,751 --> 00:53:20,331
+Tümleyen kavramına gelelim.
+
+359
+00:53:20,451 --> 00:53:22,871
+Tümleyen komplementti.
+
+360
+00:53:23,851 --> 00:53:30,511
+Kümelerde de bir kümenin tümleyeni o kümenin elemanları dışında olanlardır.
+
+361
+00:53:30,691 --> 00:53:34,551
+Bir X kümesi uzun boynulardan oluşuyor.
+
+362
+00:53:34,551 --> 00:53:40,911
+Bu kümenin tümleri nedir? Uzun boylu olmayanlardan oluşmasıdır.
+
+363
+00:53:41,431 --> 00:53:46,571
+Böyle cümle olarak verdiğimizde çok anlamsız geliyor bunlar.
+
+364
+00:53:47,552 --> 00:53:51,512
+İnşallah şurada bir örneğim vardır. Hiç örnekte koymamışız.
+
+365
+00:53:51,951 --> 00:53:58,832
+Peki benim x kümem çift sayılardan oluşsun.
+
+366
+00:53:58,832 --> 00:54:11,552
+X kümesi çift sayılardan olsun. Bu da tam sayılar olsun. Evrensel kümede tam sayılar. X kümesi çift sayılar.
+
+367
+00:54:11,552 --> 00:54:20,512
+X kümesinin tümleyeni nedir dersem neler olur? Çiftin dışında kalan sayılar yani tek sayılar olur.
+
+368
+00:54:20,512 --> 00:54:24,492
+Öyleyse bunun da matematiksel ifadesini şöyle yazacağız.
+
+369
+00:54:24,872 --> 00:54:37,092
+Bir x kümesinin tümleyenini yazmak istiyorsa bu tümleyen kümesi öyle z'lerden oluşacak ki bu z'ler x kümesinin elemanı olmayacak.
+
+370
+00:54:38,251 --> 00:54:41,852
+Yine tümleyenle ilgili şu kavramı verelim ifadeyi.
+
+371
+00:54:41,851 --> 00:54:54,911
+Boş kümenin tümleyeni, masum nadesim, boş kümenin tümleyeni evrensel kümenin kendisi, evrensel kümenin tümleyeni de boş kümenin kendisidir.
+
+372
+00:54:55,231 --> 00:54:57,891
+Bunlar birbirlerinin tümleyenleridir.
+
+373
+00:55:02,491 --> 00:55:06,111
+İki kümenin farkına gelelim.
+
+374
+00:55:06,111 --> 00:55:10,051
+İki kümenin farkı ne demek?
+
+375
+00:55:10,531 --> 00:55:11,192
+Difference.
+
+376
+00:55:11,851 --> 00:55:14,931
+x eksi y diye yazıyoruz.
+
+377
+00:55:15,412 --> 00:55:17,451
+x fark y.
+
+378
+00:55:18,132 --> 00:55:21,692
+Peki bunu nasıl okuyacağım?
+
+379
+00:55:22,291 --> 00:55:27,951
+x fark y'nin matematikte dili, matematik dili dememin sebebi o.
+
+380
+00:55:28,272 --> 00:55:31,852
+Yani şu kavramı matematik dilinde nasıl yazarız?
+
+381
+00:55:31,852 --> 00:55:33,332
+Şöyle yazarız.
+
+382
+00:55:33,332 --> 00:55:47,792
+X fark Y kümesi öyle X'lerden oluşacak ki bu X, X kümesinin elemanı iken Y kümesinin elemanı olmayacak.
+
+383
+00:55:48,792 --> 00:55:59,912
+X fark Y öyle X'lerden oluşacak ki bu küme X'in elemanı iken Y'nin elemanı olmayacak.
+
+384
+00:55:59,912 --> 00:56:07,732
+Tamam. Şimdi bunu şeyde gösterelim. Şama ile gösterelim.
+
+385
+00:56:07,832 --> 00:56:08,751
+Ben diagramıyla.
+
+386
+00:56:09,772 --> 00:56:11,352
+Mouse. Mouse neredeyse.
+
+387
+00:56:11,872 --> 00:56:13,552
+Bu benim evrensel kümem.
+
+388
+00:56:14,292 --> 00:56:16,152
+Dın dın. Evrensel kümem.
+
+389
+00:56:16,951 --> 00:56:20,352
+Tamam. Şu x kümem. Bu da y kümem.
+
+390
+00:56:20,811 --> 00:56:27,012
+Şimdi ben x fark y'nin neresi olduğunu bulup tarama yapmam lazım.
+
+391
+00:56:27,012 --> 00:56:28,451
+Ne diyor?
+
+392
+00:56:28,451 --> 00:56:33,571
+Öyle x'lerden oluşacak ki x fark y kümesi x'in elemanı olacak.
+
+393
+00:56:33,811 --> 00:56:35,351
+x'in elemanları neresi?
+
+394
+00:56:35,751 --> 00:56:36,231
+Buraları.
+
+395
+00:56:37,031 --> 00:56:39,552
+Şurası x'in elemanların olduğu yer.
+
+396
+00:56:40,011 --> 00:56:43,231
+Ve y'nin elemanı olmayacak.
+
+397
+00:56:43,692 --> 00:56:44,871
+O zaman ne olacak?
+
+398
+00:56:45,151 --> 00:56:47,632
+Şurasının çıkarılmış olması lazım.
+
+399
+00:56:48,731 --> 00:56:52,651
+Hemen slide'daki mürekkepleri silelim.
+
+400
+00:56:53,211 --> 00:56:53,931
+Neresi olacak?
+
+401
+00:56:54,211 --> 00:56:54,611
+Burası.
+
+402
+00:56:55,151 --> 00:56:56,231
+Şu tanıma bakıyorum.
+
+403
+00:56:56,231 --> 00:57:01,271
+X fark Y kümesi, X'in elemanları olacak.
+
+404
+00:57:02,068 --> 00:57:13,068
+ve y'nin elemanı olmayacak. x'in elemanı olup y'nin elemanı olmaması kuralından dolayı şuranın çıkarılması gerekiyor.
+
+405
+00:57:13,068 --> 00:57:24,068
+Öyleyse aslında şunu şöyle düşünün. Şu x kümesi içinden y'yi çıkar diyor. y'yi olduğu gibi çıkarıyorum.
+
+406
+00:57:24,068 --> 00:57:29,588
+Yani şurayı siliyorum, Y kümesini olduğu gibi siliyorum bütün elemanlarını
+
+407
+00:57:29,588 --> 00:57:36,187
+Geriye kalan şu sarı şimşekler X fark Y'yi bana veriyor
+
+408
+00:57:36,187 --> 00:57:42,068
+Peki şöyle bir örnek yapsam
+
+409
+00:57:42,807 --> 00:57:51,767
+Desem ki X kümesi 1, 2, 3, 4, 5'ten oluşuyor
+
+410
+00:57:51,768 --> 00:58:02,088
+Y kümesi de 2, 5, 7 ve 10'dan oluşuyor.
+
+411
+00:58:03,308 --> 00:58:08,487
+X fark Y kümesi hangi elemanlardan oluşuyor?
+
+412
+00:58:08,928 --> 00:58:09,807
+Ne yapıyorduk?
+
+413
+00:58:10,267 --> 00:58:12,948
+X'in içerisinden Y'leri çıkaracağım.
+
+414
+00:58:13,088 --> 00:58:15,667
+Y'lerde 2 ve 5 vardı ortak olan.
+
+415
+00:58:15,828 --> 00:58:17,228
+2 ve 5'i çıkardım.
+
+416
+00:58:17,328 --> 00:58:18,347
+Geriye ne kaldı?
+
+417
+00:58:18,347 --> 00:58:21,347
+1, 3 ve 4 kaldı.
+
+418
+00:58:21,767 --> 00:58:33,187
+x fark y de bu demektir. Peki sanırım son kümelerle ilgili kavramımız simetrik fark.
+
+419
+00:58:34,267 --> 00:58:40,027
+Bunu duyduğunuzu düşünmüyorum. Belki duymuşsunuzdur ama simetrik fark ne demek?
+
+420
+00:58:40,027 --> 00:58:55,907
+iki tane kümen var x ve y kümesi şu simetrik fark olarak işaret fakat bul cebrinde ben bu işareti aynı zamanda ilk egzor olarak size göstermiştim.
+
+421
+00:58:56,568 --> 00:58:59,547
+Egzor bu şekilde de kullanılır demiştik.
+
+422
+00:58:59,547 --> 00:59:03,307
+Egzor'un nasıl çalıştığını hatırlıyor musunuz arkadaşlar?
+
+423
+00:59:03,307 --> 00:59:23,047
+Ekzor'u yapalım. Girişler 0-0, girişler 0-1, 1-0 ve 1-1'di. Ekzor'um nasıl çalışıyordu? Ekzor deyince aklıma ne gelecekti? Subtraktor. Yani çıkarma gelecekti. Tamam mı?
+
+424
+00:59:23,047 --> 00:59:35,827
+Çıkarma işleminde de neydi? Girişler aynıysa çıkış sıfırdı. Girişler aynıysa çıkış sıfırdı. Diğer durumlarda da birdi. Hatırladık mı?
+
+425
+00:59:36,527 --> 00:59:45,827
+Egzor. Simetrik farkın işareti budur. Bu işaret egzordur. Egzor çıkarma işlemi gibi çalışıyordu.
+
+426
+00:59:45,827 --> 00:59:57,847
+ekzorun doğruluk tablosu neydi? Girişler aynıysa çıkış sıfır. Çıkarma gibi çalışıyor dememin sebebi de bu. Girişler aynıysa çıkarıyor sıfır. Diğer durumlar da bir.
+
+427
+00:59:57,847 --> 01:00:15,527
+Peki şimdi buradan simetrik farka geçelim. X simetrik fark Y kümesi nedir? Şuymuş. X fark Y birleşim, Y fark X.
+
+428
+01:00:15,527 --> 01:00:17,247
+Allah Allah
+
+429
+01:00:17,247 --> 01:00:20,827
+x fark y nasıl yazılıyordu?
+
+430
+01:00:21,627 --> 01:00:25,647
+Bir önceki slide'a bakarsak x fark y
+
+431
+01:00:25,647 --> 01:00:31,527
+x'in elemanı ve y'nin elemanı değil
+
+432
+01:00:31,527 --> 01:00:34,527
+Buraya geldim x fark y'yi yazıyorum
+
+433
+01:00:35,107 --> 01:00:40,527
+Benim x fark y simetrik fark kümürüm elemanları z olsun
+
+434
+01:00:41,087 --> 01:00:42,547
+Ne diyorum z?
+
+435
+01:00:42,547 --> 01:00:49,428
+x'in elemanı v yani and z y'nin elemanı değil.
+
+436
+01:00:49,428 --> 01:00:52,127
+Buradaki birleşim yerine
+
+437
+01:00:52,543 --> 01:01:05,023
+Veya oru koydum. Şimdi bunu yazalım. Y fark X. O zaman ne diyeceğim? Z, Y'nin elemanı ve Z, Y'nin elemanı değil.
+
+438
+01:01:07,023 --> 01:01:19,464
+Şimdi aslında burası ne oldu? Z, X'de var, Y'de yok. Z, Y'de var, X'de yok. Hangi durumlar? Şu durumlar.
+
+439
+01:01:19,464 --> 01:01:23,724
+Yani bunların bir olduğu durumları yazdık
+
+440
+01:01:23,724 --> 01:01:29,783
+Simetrik fark egzorun bir olan durumları nedir?
+
+441
+01:01:29,783 --> 01:01:42,663
+Kümeyi oluşturan elemanlar z, x'in elemanı y'nin elemanı değil veya y'nin elemanı x'in elemanı değil
+
+442
+01:01:42,663 --> 01:01:49,904
+simetrik farkın ben tablosunu yapsam elimde iki tane kümen var.
+
+443
+01:01:49,904 --> 01:01:53,404
+Burada o var mı bakayım?
+
+444
+01:01:55,523 --> 01:01:56,283
+Varmış.
+
+445
+01:02:00,115 --> 01:02:13,115
+nereleri olacak? x fark y. ilk önüne ne yapıyordum? x kümesi içerisinden y'yi çıkarıyordum. y'yi çıkardığımda geriye kalan kısım şurası oldu.
+
+446
+01:02:13,115 --> 01:02:24,115
+sonra veya y'den x'i çıkarıyordum. y'den de x kümesini çıkarırsam kalan yer sadece burası.
+
+447
+01:02:24,115 --> 01:02:34,175
+birleşimini aldığım vakit x, y simetrik fark sadece y'de ve sadece x'de olan elemanlardan oluşuyor.
+
+448
+01:02:34,355 --> 01:02:38,136
+Ketişim kısmı bunlardan çıkarılıyor.
+
+449
+01:02:38,996 --> 01:02:42,275
+Burada da eksklusiv ora benzer diye anlattık.
+
+450
+01:02:42,855 --> 01:02:49,595
+Yani aklınızda da simetrik fark egzorda inputların bir olduğu durum.
+
+451
+01:02:49,595 --> 01:02:50,935
+Ama hiç gerek yok.
+
+452
+01:02:50,935 --> 01:03:00,115
+Zaten şunu da biliyorsam simetrik fark x'in y'den farkıyla y'den x'in farkının birleşimi.
+
+453
+01:03:00,575 --> 01:03:02,136
+Bunların ne olduğunu biliyorum.
+
+454
+01:03:02,915 --> 01:03:07,776
+x'in elemanı olacak, y'nin olmayacak, y'nin olacak, x'in olmayacak.
+
+455
+01:03:08,035 --> 01:03:11,935
+Birleşimde zaten V'ya karşılık geldi.
+
+456
+01:03:13,016 --> 01:03:15,235
+Bu komplementi görmüştük.
+
+457
+01:03:15,635 --> 01:03:18,416
+A kümesinin komplementi nedir?
+
+458
+01:03:18,415 --> 01:03:30,855
+bütün evrensel kümeden şu ağayı çıkarırsam geriye kalan şu sarı alan ağının komplementini oluşturuyor.
+
+459
+01:03:31,855 --> 01:03:34,935
+Evet bir ara veriyorum arkadaşlar.
+
+460
+01:03:36,055 --> 01:03:40,035
+Onu çeyrek geçe yine derste olalım.
+
+461
+01:03:40,595 --> 01:03:41,215
+Anlaştık?
+
+462
+01:03:42,515 --> 01:03:43,855
+Biri evet desin.
+
+463
+01:03:44,235 --> 01:03:45,115
+Anlaştık hocam.
+
+464
+01:03:45,295 --> 01:03:46,275
+Tamam hocam anlaştık.
+
+465
+01:03:46,275 --> 01:03:48,475
+Hadi hoşçakalın. Görüşmek üzere.
+
+466
+01:16:50,707 --> 01:17:18,707
+evet, geldim. Yoksa bu arada kodu yazan oldu mu? Hayatta inanmam zaten öyle bir şeyin olduğuna. Öyle konuştum. Tamam, şimdi kaldığımız yerden devam edelim. Devam edelim. Ayy neler açık arkada?
+
+467
+01:17:23,188 --> 01:17:24,188
+tamam
+
+468
+01:17:24,188 --> 01:17:30,188
+başlıyorum bir ses en azından bir kişi oturuyor olsun
+
+469
+01:17:30,188 --> 01:17:34,188
+hiç kimsey yok
+
+470
+01:17:34,188 --> 01:17:36,188
+buradasınız peki
+
+471
+01:17:36,188 --> 01:17:39,188
+tamamdır
+
+472
+01:17:39,188 --> 01:17:42,188
+eee
+
+473
+01:17:44,307 --> 01:17:46,427
+Küme işlemlerinin özellikleri.
+
+474
+01:17:46,528 --> 01:17:49,867
+Bunlar artık hemen hemen aynı şeyler.
+
+475
+01:17:50,728 --> 01:17:52,927
+Bul cevrinde de gördüğünüz gibi.
+
+476
+01:17:53,247 --> 01:17:56,567
+Her küme üzerinde birleşim özelliği vardır.
+
+477
+01:17:57,307 --> 01:17:59,707
+İşte şurada örneklerini görüyorsunuz.
+
+478
+01:18:00,287 --> 01:18:01,488
+Sonuç değişmez.
+
+479
+01:18:02,467 --> 01:18:04,328
+Değişim özelliği vardır.
+
+480
+01:18:05,488 --> 01:18:07,908
+A kümesiyle B kümesini birleştirdin.
+
+481
+01:18:07,967 --> 01:18:09,687
+B ile A'yı birleştirdin.
+
+482
+01:18:09,687 --> 01:18:11,447
+Yine sonuç değişmez.
+
+483
+01:18:11,447 --> 01:18:19,047
+Ondan sonra dağılma özellikleri, kümeler üzerinde dağılma özellikleri vardır.
+
+484
+01:18:20,648 --> 01:18:22,607
+Aynen bu örneklerde olduğu gibi.
+
+485
+01:18:23,367 --> 01:18:25,907
+Özleştik özelliği, bir buna bakalım.
+
+486
+01:18:26,687 --> 01:18:31,407
+A kümesiyle bir evrensel kümenin kesişimi A kümesidir.
+
+487
+01:18:32,247 --> 01:18:38,607
+A kümesiyle bir boş kümenin birleşimi de yine A kümesinin kendisidir.
+
+488
+01:18:38,607 --> 01:18:44,067
+Yani gözümüze hemen Venn diagramını getirerek rahatlıkla bunları takip edebiliriz.
+
+489
+01:18:45,067 --> 01:18:46,387
+Şuna gelelim.
+
+490
+01:18:46,807 --> 01:18:50,007
+Bir kümenin komplementi neydi?
+
+491
+01:18:50,947 --> 01:18:54,888
+U kümesi içerisinden kendisinin çıkarılmış haliydi.
+
+492
+01:18:55,547 --> 01:19:02,028
+Öyleyse bir kümenin kendisiyle komplementinin birleşimi evrensel kümeyi verecektir.
+
+493
+01:19:02,988 --> 01:19:06,807
+Bir kümenin komplementi kendisi dışında olan her şeydi.
+
+494
+01:19:06,807 --> 01:19:11,087
+Öyleyse bunların kesişimi de bana boş kümeyi verecektir.
+
+495
+01:19:11,907 --> 01:19:13,947
+Bunları rahatlıkla söyleyebiliriz.
+
+496
+01:19:14,928 --> 01:19:19,848
+[öğrenci] potent kavramı bu bul cebrinde de vardı hatırlarsanız.
+
+497
+01:19:21,307 --> 01:19:22,927
+Neydi bul cebrindeki şey?
+
+498
+01:19:23,687 --> 01:19:25,888
+A artı bir A'dı.
+
+499
+01:19:26,668 --> 01:19:29,687
+A çarpı bir yani end A'dı.
+
+500
+01:19:29,827 --> 01:19:32,608
+Bunu da öyle düşünelim küme işlemlerinde.
+
+501
+01:19:32,607 --> 01:19:42,127
+bir kümenin kendisiyle birleşimi yine kümenin kendisini, bir kümenin kendisiyle kesişimi yine kümenin kendisini verir.
+
+502
+01:19:43,347 --> 01:19:49,927
+Bu band, yani bunu sınır kanunu deniyor.
+
+503
+01:19:50,247 --> 01:19:53,528
+Bazı şeyleri Türkçe'ye çevirmekte gerçekten zorlanıyorum.
+
+504
+01:19:54,347 --> 01:20:01,047
+Ama sadece şu şeylerin doğru olabildiğini görmüş olmak benim için yeterli.
+
+505
+01:20:01,047 --> 01:20:03,647
+Bir evrensel kümen var.
+
+506
+01:20:04,987 --> 01:20:06,747
+Çok özür dilerim.
+
+507
+01:20:07,887 --> 01:20:09,587
+Kalemim nerede? Kalemim burada.
+
+508
+01:20:09,727 --> 01:20:11,727
+Bir tane evrensel kümen var.
+
+509
+01:20:12,247 --> 01:20:13,907
+Bir tane de A kümem olsun.
+
+510
+01:20:14,507 --> 01:20:17,847
+A kümesi mutlaka evrensel kümenin içerisinde olacak.
+
+511
+01:20:18,427 --> 01:20:21,827
+Öyleyse evrensel küme ile A kümesinin birleşimi nedir?
+
+512
+01:20:22,787 --> 01:20:24,827
+Evrensel kümenin kendisidir.
+
+513
+01:20:25,627 --> 01:20:27,727
+Bir boş küme var, hiçbir şey değil.
+
+514
+01:20:28,207 --> 01:20:29,987
+Bir tane de A kümen var.
+
+515
+01:20:29,987 --> 01:20:35,367
+Al kümesiyle boş kümenin de kesişime boş küme olacaktı.
+
+516
+01:20:35,487 --> 01:20:37,887
+Çünkü ortada kesiştirilecek bir şey yok.
+
+517
+01:20:38,867 --> 01:20:40,687
+İçine alma, absorption.
+
+518
+01:20:41,587 --> 01:20:45,767
+Aslında bunları hadi şöyle yapmaya çalışalım.
+
+519
+01:20:46,767 --> 01:20:48,267
+Silelim şunları.
+
+520
+01:20:49,487 --> 01:20:51,347
+Çıkçık, çırk.
+
+521
+01:20:52,587 --> 01:20:54,927
+Yine kalemimizi alalım.
+
+522
+01:20:56,547 --> 01:20:59,087
+Şu gerçekten doğru mu?
+
+523
+01:20:59,087 --> 01:21:03,748
+Nasıl bul cevrinde şöyle bir şeyler yapıyorduk.
+
+524
+01:21:04,127 --> 01:21:04,927
+Ne yapıyorduk?
+
+525
+01:21:05,367 --> 01:21:14,007
+Var olan bul özdeşliklerini kullanarak ben bana verilmiş olan bir ifadenin doğruluğunu ispatlamaya çalışıyordum.
+
+526
+01:21:14,587 --> 01:21:21,947
+Burada da kümeler üzerinde yani kümeleri çizerek ben bunun doğruluğunu ispatlamaya çalışabilirim.
+
+527
+01:21:22,587 --> 01:21:24,028
+İki tane kümem olsun.
+
+528
+01:21:24,028 --> 01:21:25,968
+A ve B kümesi çizelim.
+
+529
+01:21:26,067 --> 01:21:28,447
+Şu benim A kümem, bu da B kümem.
+
+530
+01:21:29,087 --> 01:21:31,947
+Çok garip oldu. Önemli değil. Şu A, şu B.
+
+531
+01:21:32,168 --> 01:21:35,007
+Şimdi bakalım. Diyor ki A ile B'nin kesişimi.
+
+532
+01:21:35,468 --> 01:21:37,147
+A ile B'nin kesişimi şurası.
+
+533
+01:21:40,067 --> 01:21:40,968
+Birleşim A.
+
+534
+01:21:42,644 --> 01:22:12,283
+A da burası. Bu ikisinin birleşimi ne oldu? A'nın kendisi oldu. Tamam, doğru. Şimdi buraya bakalım. Şu A kümesi, bu da B kümesi. A ile B kümesinin birleşimi neydi? Bunun tamamı. Bunun tamamı A ile B kümesinin birleşimi. Kesişimini alacağım. Kiminle kesişimini alıyorum? A ile. Şurası da A olsa. A kümesi ile kesişimini alırsam,
+
+535
+01:22:12,644 --> 01:22:31,523
+iki kere taranmış olan neresidir? A'dır. İşte bunun da sonucu A. Ben bunu yine aynı bul cebriindeki ispatlar gibi bu kümeler için verilmiş olan şu ön sayfalardaki kavramları kullanarak aslında çok özür dilerim.
+
+536
+01:22:35,572 --> 01:22:37,371
+kullanarak çıkarabilirim.
+
+537
+01:22:39,411 --> 01:22:40,711
+Bir de
+
+538
+01:22:40,711 --> 01:22:42,971
+şunlar var. Bir şeyin
+
+539
+01:22:42,971 --> 01:22:45,271
+komplementinin komplementi bul cebinde
+
+540
+01:22:45,271 --> 01:22:46,992
+de görmüştük. Kendisiydi.
+
+541
+01:22:47,572 --> 01:22:48,771
+Öyleyse bir kümenin
+
+542
+01:22:48,771 --> 01:22:50,952
+komplementinin komplementi yine
+
+543
+01:22:50,952 --> 01:22:52,291
+kendisini verecek.
+
+544
+01:22:53,012 --> 01:22:55,511
+Boş kümenin komplementi evrensel
+
+545
+01:22:55,511 --> 01:22:57,252
+küme. Evrensel kümenin
+
+546
+01:22:57,252 --> 01:22:58,752
+komplementi boş küme.
+
+547
+01:22:59,591 --> 01:23:01,451
+Aynı bul cebinde olduğu gibi
+
+548
+01:23:01,451 --> 01:23:03,431
+kümelerde de dem organı var.
+
+549
+01:23:04,471 --> 01:23:05,271
+Parantezin
+
+550
+01:23:05,271 --> 01:23:08,551
+komplementini alıyorsam
+
+551
+01:23:08,551 --> 01:23:10,752
+ne oluyor? Her bir kümenin
+
+552
+01:23:10,752 --> 01:23:12,551
+komplementi A komplement
+
+553
+01:23:12,551 --> 01:23:14,791
+ortadaki işlemin tersi
+
+554
+01:23:14,791 --> 01:23:16,371
+yani birleşimse
+
+555
+01:23:16,371 --> 01:23:18,891
+kesişim ve B'nin komplementi
+
+556
+01:23:18,891 --> 01:23:20,871
+diyoruz. Demorgun
+
+557
+01:23:20,871 --> 01:23:22,771
+kuralı da aynı şekilde
+
+558
+01:23:22,771 --> 01:23:23,811
+işliyor.
+
+559
+01:23:25,451 --> 01:23:26,891
+Bir şey yok.
+
+560
+01:23:28,031 --> 01:23:28,311
+Peki.
+
+561
+01:23:28,951 --> 01:23:29,851
+Şimdi gelelim
+
+562
+01:23:29,851 --> 01:23:32,911
+kartezyen
+
+563
+01:23:32,911 --> 01:23:34,971
+çarpımına. Burada bir takım
+
+564
+01:23:34,971 --> 01:23:39,271
+Örneklerin olması lazımdı. O örnekler niye çıkmadı? Neyse.
+
+565
+01:23:39,911 --> 01:23:43,871
+Evet ileride çıkacak ya da bu konunun soru cevaplarında çıkacak.
+
+566
+01:23:46,072 --> 01:23:47,792
+Kartezyen çarpımına geçelim.
+
+567
+01:23:48,331 --> 01:23:53,751
+Verilen iki kümenin kartezyen çarpımı buna da kartezyen product diyoruz.
+
+568
+01:23:54,411 --> 01:23:58,171
+Bu product kelimesini geçen haftaki slide'ımızda da vardı.
+
+569
+01:23:58,932 --> 01:24:01,671
+And bazen product diye de geçiyor.
+
+570
+01:24:01,671 --> 01:24:03,871
+Neyse kartezyen product nedir?
+
+571
+01:24:03,871 --> 01:24:06,311
+çarpıyla gösteriyorum.
+
+572
+01:24:06,491 --> 01:24:07,831
+A kartezyen B
+
+573
+01:24:07,831 --> 01:24:10,391
+öyle ikililerden oluşuyor ki
+
+574
+01:24:10,391 --> 01:24:12,571
+A, B ikililerinden oluşuyor ki
+
+575
+01:24:12,571 --> 01:24:14,451
+A birinci eleman
+
+576
+01:24:14,451 --> 01:24:16,631
+A kümesinin elemanı
+
+577
+01:24:16,631 --> 01:24:19,031
+ve ikinci eleman
+
+578
+01:24:19,031 --> 01:24:20,011
+yani B de
+
+579
+01:24:20,011 --> 01:24:22,311
+B kümesinin elemanı olacak.
+
+580
+01:24:23,091 --> 01:24:23,251
+Okey.
+
+581
+01:24:24,031 --> 01:24:26,591
+A kartezyen B, B kartezyen
+
+582
+01:24:26,591 --> 01:24:28,091
+A'dan farklıdır.
+
+583
+01:24:28,631 --> 01:24:30,171
+Eşit değildir. Demek ki
+
+584
+01:24:30,171 --> 01:24:32,551
+kartezyen produkta
+
+585
+01:24:32,551 --> 01:24:34,571
+değişme özelliği yok.
+
+586
+01:24:35,171 --> 01:24:36,771
+A kartezyen B'nin
+
+587
+01:24:36,771 --> 01:24:38,431
+kardinalitisi
+
+588
+01:24:38,431 --> 01:24:40,031
+eleman sayısı
+
+589
+01:24:40,031 --> 01:24:42,631
+A kümesinin eleman sayısıyla
+
+590
+01:24:42,631 --> 01:24:45,131
+B kümesinin eleman sayısının
+
+591
+01:24:45,131 --> 01:24:46,491
+çarpımı olacak.
+
+592
+01:24:47,311 --> 01:24:49,171
+Arkadaki örnek değilse
+
+593
+01:24:49,171 --> 01:24:50,512
+örneği ben yapayım.
+
+594
+01:24:50,751 --> 01:24:51,831
+Evet örnekmiş.
+
+595
+01:24:52,311 --> 01:24:54,572
+A kümen var. [öğrenci], [öğrenci],
+
+596
+01:24:54,732 --> 01:24:56,451
+Lamia. Bu isimleri de
+
+597
+01:24:56,451 --> 01:24:57,711
+nereden bulduysam.
+
+598
+01:24:58,191 --> 01:24:59,891
+B'de [öğrenci] ve [öğrenci].
+
+599
+01:24:59,891 --> 01:25:01,711
+Şimdi kartezyen
+
+600
+01:25:01,711 --> 01:25:03,932
+çarpımı yapıyorum. Ben ikililer
+
+601
+01:25:03,932 --> 01:25:06,072
+yazacağım. Benim ikililerim
+
+602
+01:25:06,072 --> 01:25:07,911
+neler? Şunlar.
+
+603
+01:25:08,911 --> 01:25:11,391
+Şu bir ikili.
+
+604
+01:25:12,072 --> 01:25:13,652
+Birinci ikili A kümesinin
+
+605
+01:25:13,652 --> 01:25:15,631
+elemanı olacak. İkinci ikili de
+
+606
+01:25:15,631 --> 01:25:17,251
+B kümesinin elemanı olacak.
+
+607
+01:25:17,551 --> 01:25:19,051
+Öyleyse şöyle çarpalım.
+
+608
+01:25:19,572 --> 01:25:21,771
+Çarpalım diyorum. [öğrenci]
+
+609
+01:25:21,771 --> 01:25:23,971
+[öğrenci]. [öğrenci]
+
+610
+01:25:23,971 --> 01:25:25,251
+var. Sonra
+
+611
+01:25:25,251 --> 01:25:27,892
+[öğrenci]
+
+612
+01:25:27,892 --> 01:25:29,751
+olacak. [öğrenci]
+
+613
+01:25:29,751 --> 01:25:31,691
+da burada var. Lale
+
+614
+01:25:31,691 --> 01:25:33,631
+[öğrenci]. Lale [öğrenci] burada.
+
+615
+01:25:34,351 --> 01:25:35,371
+Lale [öğrenci].
+
+616
+01:25:35,731 --> 01:25:37,091
+Lale [öğrenci] da burada.
+
+617
+01:25:37,871 --> 01:25:39,291
+Lamia [öğrenci].
+
+618
+01:25:39,591 --> 01:25:41,011
+Lamia [öğrenci] burada.
+
+619
+01:25:41,851 --> 01:25:43,491
+Ve Lamia [öğrenci].
+
+620
+01:25:43,671 --> 01:25:45,131
+Lamia [öğrenci] da burada.
+
+621
+01:25:46,031 --> 01:25:47,631
+Yani A kümesinin
+
+622
+01:25:47,631 --> 01:25:49,791
+ilk elemanını B kümesinin
+
+623
+01:25:49,791 --> 01:25:51,411
+bütün elemanlarıyla sonra
+
+624
+01:25:51,411 --> 01:25:53,351
+ikinci elemanını B kümesinin
+
+625
+01:25:53,351 --> 01:25:55,191
+bütün elemanlarıyla yazarak
+
+626
+01:25:55,191 --> 01:25:57,531
+Kartezden Product'ı elde
+
+627
+01:25:57,531 --> 01:25:59,411
+ediyorum. Peki ben
+
+628
+01:25:59,411 --> 01:26:03,891
+B karteziyen A'yı yazsaydım ne olurdu?
+
+629
+01:26:04,251 --> 01:26:06,432
+B karteziyen A'da şu olacaktı.
+
+630
+01:26:06,551 --> 01:26:14,331
+Banu [öğrenci], Banu [öğrenci], Banu Lamiya, [öğrenci], [öğrenci], [öğrenci] olacaktı.
+
+631
+01:26:14,911 --> 01:26:18,932
+Eleman sayıları aynı olabilir fakat ikililer aynı değil.
+
+632
+01:26:19,191 --> 01:26:19,871
+Tam ters.
+
+633
+01:26:20,191 --> 01:26:28,331
+O zaman A karteziyen B, B karteziyen A'ya eşit olmadığını göreceğiz.
+
+634
+01:26:28,819 --> 01:26:58,619
+Peki, bir önceki slide'da şu vardı. A kartezyen B'nin kardinalitesi, eleman sayısı, şu an nedir bunun eleman sayısı? 1, 2, 3, 4, 5 ve 6. Neydi? A kardinalite ile çarpı B'ninkinin çarpımıydı. A'da kaç tane eleman var? 3. B'de kaç tane eleman var? 2. Öyleyse bunların çarpımı da 6 diyoruz.
+
+635
+01:26:58,819 --> 01:27:03,099
+Şimdi bunları biraz daha geliştirerek gelelim.
+
+636
+01:27:03,579 --> 01:27:06,380
+Genelleştirilmiş birleşim ve kesişim nedir?
+
+637
+01:27:07,459 --> 01:27:20,299
+Eğer ben en tane kümenin birleşimini yazıyorsam birden n'e kadar birleşim ordu toplama işlemiydi.
+
+638
+01:27:20,299 --> 01:27:22,199
+O yüzden burada sigma var.
+
+639
+01:27:22,639 --> 01:27:25,099
+Birden n'e kadar a'i diyorum.
+
+640
+01:27:25,319 --> 01:27:25,939
+Bu da nedir?
+
+641
+01:27:25,939 --> 01:27:35,079
+Birinci A kümesinin elemanı toplama olduğu için or birleşim, ikinci birleşim, üçüncü N'e kadar gidiyor.
+
+642
+01:27:35,799 --> 01:27:40,900
+Kesişimleri yazmak istiyorsan birden N'e kadar kesişimler.
+
+643
+01:27:41,260 --> 01:27:45,439
+Kesişimler neydi? Ent'ti. Ent neydi? Çarpıydı.
+
+644
+01:27:45,900 --> 01:27:50,059
+Buradaki P'de neyi sembolize ediyor? Çarpmayı sembolize ediyor.
+
+645
+01:27:50,059 --> 01:28:00,619
+1'den N'e kadar A, İ kümelerinin çarpımı yani entlenmesi, ent deneydi, kesişim işlemine karşılık geliyor.
+
+646
+01:28:01,619 --> 01:28:08,599
+Peki birleşim ve kesişim kümelerinin eleman sayısını ben nasıl hesaplarım?
+
+647
+01:28:08,599 --> 01:28:18,499
+Yani ben A ve B kümesinin eleman sayısını hesaplamak istiyorsam, bakın burada S'yi kullanmışım, istersen buraya ne diyebilirim böyle?
+
+648
+01:28:18,500 --> 01:28:46,939
+kardinalite diyebilirim. Eleman sayısı nedir? A'nın eleman sayısı artı B'nin eleman sayısı. Bu ikisinde ortak olan varsa kümelerin içerisinde geçmiyordu birleşimde yazarken. Ne yapıyorum? A kesişim B diye ortak olanları çıkarıyorum. En azından bir kez kullanılsın. Yani A kümesinin içinde de o sayı var.
+
+649
+01:28:46,939 --> 01:28:54,919
+B kümesinin içerisinde de o sayı var. Bir kez kullanılmasını istiyorsan A kesişim B'yi çıkarıyorum.
+
+650
+01:28:55,419 --> 01:29:10,919
+Şimdi şöyle bir sorumuz olsun. Bilgisayar bilimlerinde 217 öğrenci var. 157 kişi 125 kotlu dersi, 145 kişi 173 kotlu dersi alıyor. 98 kişi de her iki dersi alıyor.
+
+651
+01:29:10,919 --> 01:29:15,759
+kaç kişi bu iki dersi de almıyor?
+
+652
+01:29:16,979 --> 01:29:17,679
+Tamam mı?
+
+653
+01:29:18,079 --> 01:29:19,779
+Benim buna ihtiyacım var.
+
+654
+01:29:20,739 --> 01:29:21,859
+Nasıl çözeceğim?
+
+655
+01:29:22,999 --> 01:29:26,039
+Biz siz de önünüzde kağıt kalem inşallah vardır.
+
+656
+01:29:26,179 --> 01:29:29,979
+Böyle ayaklarınızı uzatmış kanepede mi dinliyorsunuz bu dersi?
+
+657
+01:29:30,019 --> 01:29:30,639
+Bilemiyorum.
+
+658
+01:29:31,559 --> 01:29:34,579
+Belki kamerasını açmayanlar öyle yapıyor.
+
+659
+01:29:34,899 --> 01:29:36,119
+Hiçbir fikrimiz yok.
+
+660
+01:29:36,120 --> 01:30:03,120
+Evet bölümde 217 tane öğrencim var 157'si işte BBG'yi aldı 145'i ayrığı aldı 98 kişi de her iki dersi de alıyor kaç kişi bu dersi almıyor yani ya bu dersi çakışmadan dolayı alamıyor ya da bu dersleri geçtiler almıyorlar bunları bulacağız ne yaparız?
+
+661
+01:30:03,119 --> 01:30:27,759
+bulan var mı? 13 buldum hocam ama. Bilmiyorum bakalım 13 mu oluyor? 13. Ama benim şimdi buraya şöyle bir formül yazmam lazım. Şu formülüm neydi? İki kümenin birleşimi, A'nın eleman sayısı, B'nin eleman sayısı.
+
+662
+01:30:28,256 --> 01:30:36,256
+iki dersi birlikte alanları çıkardığımda A'la ve B dersini kaç kişinin aldığını buluyorum.
+
+663
+01:30:36,256 --> 01:30:46,256
+öyleyse 157 kişine 125 numaralı dersi alıyor. 145 kişi de B'yi alıyor.
+
+664
+01:30:46,256 --> 01:30:51,256
+ha yine gittim ağusuna. B'yi alıyor. Okey.
+
+665
+01:30:51,256 --> 01:31:01,296
+98 kişi de her iki dersi alıyor. Aslında bu 98 kişi hem bu 157'nin içinde var hem de 145'in içinde var.
+
+666
+01:31:01,296 --> 01:31:15,116
+Bu ikisini toplayıp çıkardığım vakit bu bana neyi veriyordu? CS 125 ile CS 1 diyelim birinci dersle ikinci dersi alanın birleşimini veriyor.
+
+667
+01:31:15,116 --> 01:31:19,196
+Bu iki dersi alan şuradaki sayı
+
+668
+01:31:19,196 --> 01:31:22,936
+İkisini birden alan değil
+
+669
+01:31:22,936 --> 01:31:31,035
+Ya 157 ya da 145'i birlikte alanlar ya da ayrı alanların toplamı şuradaki değer
+
+670
+01:31:31,035 --> 01:31:34,756
+Bu bölümde kaç öğrenci vardı? 217 öğrenci
+
+671
+01:31:34,756 --> 01:31:43,955
+217'den çıkardığımda bu geri kalan 13 kişi kantinde oturuyor ya da evde duruyor
+
+672
+01:31:43,955 --> 01:31:58,515
+ya da bu dersi geçmiş. Ne bileyim işte nasıl hayal ediyorsanız o. Elimde iki kümem değil, üç kümem olursam nasıl yaparım? Dört küme olursam nasıl yaparım? Onların hepsi bundan türetilecek.
+
+673
+01:31:58,515 --> 01:32:11,535
+Bu dersin en sonundaki slide'ların da onlarla ilgili örneklerimiz olacak. Ama burada bunları genelleştirerek yazıyoruz.
+
+674
+01:32:11,535 --> 01:32:34,055
+3 küme olsa ne yapılır? 3'ünü de toplayacaksın. İlk önce ikili kesişimleri çıkarıp sonra 3. kesişim var o çıkarılacak. Sonra evrensel kümeden çıkaracağız. Geri kalan aynı sonucu verecek. Değişen bir şeyimiz yok.
+
+675
+01:32:34,055 --> 01:32:57,415
+Burada da Venn diagramı ile göstermişiz. 59'da 98'i toplarsam 157'yi, 98'de 47'yi toplarsam 145'i veriyor. Bu çünkü kesişim. Bunların hepsini toplayıp neredeyse 217'den çıkardığımda da 13 olarak bu dersi almayanların sayısını bulmuş oluyorum.
+
+676
+01:32:57,416 --> 01:33:22,895
+meğer slide'ımızda varmış. 3 tane kümen var. Önce A kümen var. Ekledim. B kümesini ekledim. C kümesini ekledim. A kümesini ekledim deyince şunun tamamındaki eleman sayısını ekliyorum. B kümesi deyince şunun tamamını ekledim. C kümesi deyince şunun tamamını ekledim.
+
+677
+01:33:22,895 --> 01:33:35,595
+Şimdi şurası iki kere kullanıldı. Şurası iki kere. Şurası iki kere. Şu bölge ise hem bunda hem bunda hem bunda var.
+
+678
+01:33:36,735 --> 01:33:40,756
+Şimdi önce bu kümeleri yaptık. Sonra kesişimlerini çıkaralım.
+
+679
+01:33:41,336 --> 01:33:46,875
+A ile B'nin kesişimini çıkarmak demek yani A ile B'nin kesişimi burası.
+
+680
+01:33:46,875 --> 01:34:04,955
+A ile C'nin kesişimi burası da gitti. B ile C'nin kesişimi burası da gitti. Sonra A kesişimi, B kesişimi, C kesişimi de ekledim.
+
+681
+01:34:04,955 --> 01:34:25,955
+Neden burayı ekliyorum? Çünkü bu buradaki kısım buralardan gidince şimdi burayı yok ettim A ve C'den, burayı yok ettim A ve B'den, burayı yok ettim B ve C'den ama ortadaki kısım
+
+682
+01:34:26,323 --> 01:34:40,443
+iki kere gitmiş oldu. Yani şu ortadaki kısmı yeniden katmam gerekiyor. A kesişim, B kesişim, C olarak orayı katıyorum ve A, B, C'nin birleşimini bulmuş oluyorum.
+
+683
+01:34:42,143 --> 01:34:47,263
+Bu kısmı da, buraya kadar sorusu olan var mı? Öncelikle onu sorayım.
+
+684
+01:34:49,723 --> 01:34:50,323
+Peki.
+
+685
+01:34:51,004 --> 01:34:52,203
+Hocam ben bir şey sorabilir miyim?
+
+686
+01:34:52,763 --> 01:34:54,523
+Evet. Hep sen soruyorsun ya.
+
+687
+01:34:54,523 --> 01:34:56,863
+Yok hocam ben ilk defa soruyorum
+
+688
+01:34:56,863 --> 01:34:59,243
+Sesleriniz çok benziyor birbirine
+
+689
+01:34:59,243 --> 01:35:00,423
+Evet sor bakalım
+
+690
+01:35:00,423 --> 01:35:06,343
+Hocam power setle az önce biz eleman sayısını bulurken gösterirken iki tane çizgiyle gösterdik ya
+
+691
+01:35:06,343 --> 01:35:08,543
+Power setle de aynı şeyi gösteriyorduk nasıl farkını anlayacağız
+
+692
+01:35:08,543 --> 01:35:12,823
+Ne demek istedin ya
+
+693
+01:35:12,823 --> 01:35:13,923
+Hocam şöyle
+
+694
+01:35:13,923 --> 01:35:15,163
+Şundan mı bahsediyorsun
+
+695
+01:35:15,163 --> 01:35:19,343
+Yok o değil power setle yanında iki tane çizgi vardı ya sağda sola mutlak değer gibi
+
+696
+01:35:19,343 --> 01:35:24,383
+Bir dakika bir gelin oraya ben bir anlayayım ne demek istediğini
+
+697
+01:35:24,383 --> 01:35:28,323
+Kartezyan çarpıma gelseniz olur Kartezyan çarpıma
+
+698
+01:35:28,323 --> 01:35:32,283
+Öyle kolay değil oraya gelmek tık tık tık yapıyorsun kırk kere
+
+699
+01:35:32,283 --> 01:35:33,963
+En iyisi şuradan çıksam
+
+700
+01:35:33,963 --> 01:35:37,603
+Bu ne bu mürekkep sakları çıkar
+
+701
+01:35:37,603 --> 01:35:42,404
+Hangisi? Dur de bana
+
+702
+01:35:42,404 --> 01:35:46,363
+Kartezyan çarpım direkt
+
+703
+01:35:46,363 --> 01:35:49,403
+Kartezyan
+
+704
+01:35:49,403 --> 01:35:51,863
+Acaba ne sormak?
+
+705
+01:35:51,863 --> 01:35:52,563
+23'te hocam
+
+706
+01:35:52,563 --> 01:35:54,363
+Tamam tamam çok merak ediyorum
+
+707
+01:35:54,364 --> 01:35:56,584
+sormak istediğini.
+
+708
+01:35:58,203 --> 01:35:59,463
+Evet, sor.
+
+709
+01:35:59,664 --> 01:36:03,783
+Hocam şimdi KTZ'nin çarpımda bu yanında iki tane çizgi var ya mutlak değer gibi.
+
+710
+01:36:03,923 --> 01:36:04,923
+A'nın yanında ve ben yanında.
+
+711
+01:36:05,063 --> 01:36:07,364
+İşte bunlar burada şeyi ifade ediyor.
+
+712
+01:36:07,463 --> 01:36:08,944
+Kümenin eleman sayısını ifade ediyor değil mi?
+
+713
+01:36:09,084 --> 01:36:09,463
+Evet.
+
+714
+01:36:10,124 --> 01:36:11,844
+İşte power set var bir de.
+
+715
+01:36:12,124 --> 01:36:16,344
+Orada da kümenin eleman sayısını değil şeyi ifade etmiyor muydu?
+
+716
+01:36:16,423 --> 01:36:18,224
+Toplam işte alt küme sayısını ifade etmiyor muydu?
+
+717
+01:36:18,224 --> 01:36:19,643
+Hani bunun farkını nasıl anlayacağız?
+
+718
+01:36:19,743 --> 01:36:20,143
+Bunu soracağım.
+
+719
+01:36:21,103 --> 01:36:22,923
+Aa yani bu soru mu?
+
+720
+01:36:24,364 --> 01:36:38,284
+Dur şimdi onu göstereyim. Nerede? O power seti bulalım. Şimdi bir dakika ne kadar zormuş bunlar ya böyle bulmakta bir şeyi. Bunu diyorsun. Evet hocam.
+
+721
+01:36:38,284 --> 01:36:53,144
+Ya bu demek değil ki. Bu da eleman sayısını soruyor. Yani power setin eleman sayısı ne olacak? Üç tane elemanın varsa iki yüzleri sekiz tane olacak diyor. İkisi de eleman sayısı.
+
+722
+01:36:54,363 --> 01:36:59,883
+Yani sana şunu diyor, şuraya okursan şu mouse'umu görüyor musun?
+
+723
+01:37:01,563 --> 01:37:02,343
+Evet hocam
+
+724
+01:37:02,343 --> 01:37:10,803
+Bu şu, Px'in kaç tane elemanı olacak? Kaç tane var yukarıda? 2, 2, 4, 6, 8
+
+725
+01:37:10,803 --> 01:37:16,544
+Kaç eleman olacakmış? 2'nin 3. kuvveti çünkü 3 tane elemanı olacak 8
+
+726
+01:37:16,544 --> 01:37:20,423
+İkisi de eleman sayısı, senin burada aklını karıştıran ne oldu?
+
+727
+01:37:20,423 --> 01:37:23,483
+Hocam işte ben şeyi karıştırdı aklımı
+
+728
+01:37:23,483 --> 01:37:29,503
+Bir yerde power seti hani dediniz ya birisi şeyi sordu mutlak değer falan saçmaz bir işte şey yaptı dediniz
+
+729
+01:37:29,503 --> 01:37:32,023
+O duruma düşürmek için böyle bir soru
+
+730
+01:37:32,023 --> 01:37:35,663
+O duruma düşmezsin evladım o derse gelmeyen bir çocuktu
+
+731
+01:37:35,663 --> 01:37:43,503
+Derse gelmediği için onu mutlak değer olarak biliyor aklımda kalmış öyle yani mutlak değer
+
+732
+01:37:43,503 --> 01:37:47,323
+Eleman sayısı için hep S'yi kullanmışlar lisede falan
+
+733
+01:37:47,323 --> 01:38:02,963
+bunu birdenbire görünce eleman sayısı dedi. Ya da bilmiyorum sırf bana gıcıklık olsun diye de diyebilir. Sırf dersi tiye almak için de diyebilir. Ama böyle ağzım açık baktığımı hatırlıyorum bir anı olarak onu paylaştım.
+
+734
+01:38:03,723 --> 01:38:04,764
+Anlarım canım sağ olun.
+
+735
+01:38:04,764 --> 01:38:16,704
+Tamam. Şimdi nerede kaldık? Hadi bakalım. Kaçınca bu bitti? Bu çok önemli. Şimdi nedir bunun önemli olanı?
+
+736
+01:38:17,323 --> 01:38:25,883
+Yine şunu söylüyorum gördüğümüz şeyleri bir başka uygulamada kullanabilelim.
+
+737
+01:38:26,192 --> 01:38:33,192
+ne diyorlar? Size diyorlar ki senin bir evrensel kümen var şu şu elemanlardan oluşuyor.
+
+738
+01:38:33,192 --> 01:38:42,192
+A kümen de bu, B kümen de bu. Bu iki kümenin birleşimini bul, bu iki kümenin kesişimini bul diyorlar.
+
+739
+01:38:42,192 --> 01:38:50,192
+Belki böyle soru çözdünüz. Çözdünüz mü? BBG'de iki kümenin birleşimini al ya da kesişimini bul.
+
+740
+01:38:51,192 --> 01:38:54,192
+Cevap? Çözmüştüm hocam evet.
+
+741
+01:38:54,192 --> 01:39:13,311
+ne yapıyordunuz? Kendinizce yaptınız bir şeyler. Ama belki bu şekilde yapan da vardı şimdi kimsenin günahını almayayım. Ama bu işi çok basit bir şekilde yapabilirim. Benim kaç tane elemanım var? Yine çok bağlarak konuştum susacağım. 6 tane elemanım var. Tamam mı? 6.
+
+742
+01:39:13,311 --> 01:39:35,992
+A kümesine bakıyorum. X1 var. Yazdım. X2 yok. 0 dedim. X3 var. 1. X4 yok. X5 ve X6 var. 1. Sonra B'ye geldim. Sadece 2, 3 ve 6 var. 1'e 0 dedim. 2 ve 3'e 1 dedim. 4, 5'e 0 dedim. 6'ya da 1 dedim.
+
+743
+01:39:35,991 --> 01:39:43,951
+Buraya kadar herhangi bir sorun var mı? Yok çok basit. Hangi elemanlar varsa dizinin o gözlerine bir koydum.
+
+744
+01:39:44,171 --> 01:39:53,371
+Şimdi bu iki kümenin birleşimini alayım. Birleşim neydi? Toplama yani ordu. Orada nasıl işlem yapıyorduk?
+
+745
+01:39:53,372 --> 01:40:07,272
+1, or, 0 ya da 1 veya 0, 1. 0 veya 1, 1. 1, 1 daha 1. 0, 0 daha 0. 1, 0 daha 1. 1, 1 daha 1.
+
+746
+01:40:07,272 --> 01:40:16,971
+Buraya kadar olan şey tamamıyla, tamamıyla olacak inşallah, tamamıyla or tablosu.
+
+747
+01:40:16,971 --> 01:40:34,251
+Şimdi N'de bakalım. Kesişim N'de işlemiydi. Çarpalım. 1, 0 daha 0, 0, 1 daha 0, 1, 1 daha 1, 0, 0 daha 0, 1, 1 daha 1. Bu da N tablosu.
+
+748
+01:40:34,251 --> 01:40:43,951
+Buraya kadar olan şey benim bul cebri'nde geçen hafta gösterdiğim şeyler. Problem ne? Hemen programlama dillerine geçtik.
+
+749
+01:40:43,951 --> 01:40:52,311
+iki kümenin kesişimini ve birleşimini bulun. Tamam ben bulan yazabilirim ama bunu en efektif şekilde nasıl yazarım?
+
+750
+01:40:52,311 --> 01:41:05,651
+Aa biz bu derste bul cevrini gördük. Neydi? Buydu. Entledim, orladım. Şimdi bana bu iki kümenin, şu iki kümenin birleşimi nedir diye sorsalar ne diyeceksiniz?
+
+751
+01:41:05,651 --> 01:41:28,991
+X1 var birleşimi. Başka ne var? X2 var. Başka ne var? X3 ikisinde de var. Bir kere yazıyorum. X4 yok. Sonra X5 var ve X6 var. X4 haricinde her şey. Şu ora bakın. X4 haricinde hepsi bir.
+
+752
+01:41:28,992 --> 01:41:36,992
+O zaman ben iki kümenin birleşimi deyince x1, x2, x3, x5, x6 diyebilirim
+
+753
+01:41:37,592 --> 01:41:48,592
+Kesişimine bakın, kesişim neydi? Her ikisinde ortak olan ne var? x2 yok, x3 var her ikisinde de ortak olan bir de x6 var
+
+754
+01:41:48,592 --> 01:41:55,632
+Hemen şuraya bakın kesişime, ortak olan nedir x3, ortak olan nedir x6
+
+755
+01:41:55,632 --> 01:42:06,132
+O kadar az line of code yazarak bir kümenin kesişimini ve birleşimini alabilirim ki
+
+756
+01:42:06,132 --> 01:42:13,632
+Çok basit. Halbuki ben böyle düşünmeyerek iki kümenin birleşimini alsam ne yapacaktım?
+
+757
+01:42:14,412 --> 01:42:21,152
+Şöyle yapmışsınızdır belki. X1. Bunda var mı?
+
+758
+01:42:21,680 --> 01:42:48,399
+yok x1 yazdım. Sonra x3 aldım. Bunda var mı? Var. x3'ü buradan sildin, yazdın. Sonra x5 aldım. Burada var mı diye aradım. Yok, yazdın. Sonra x6'ya baktım. Burada var mı diye? Var. Burayı sildin, x6'yı yazdın. Sonra baktım burada tek başına kalan eleman hangisi? x2. x2'yi buraya yazdın.
+
+759
+01:42:48,399 --> 01:43:00,659
+kaç tane karşılaştırma yaptın, if yaptın? Bir de eğer bunları sıralı yazarsam işim daha kolay olur.
+
+760
+01:43:00,659 --> 01:43:10,799
+Yani nedir? Mesela x1 geldim, x1 burada yok, x2 hiç gerisine bakmıyorum.
+
+761
+01:43:10,799 --> 01:43:17,139
+x1, x2'den daha küçük bir sayı olduğu için burada yoksa gerisine hiç bakmam.
+
+762
+01:43:17,399 --> 01:43:19,799
+Bu şekilde de algoritmanızı yazabilirsiniz.
+
+763
+01:43:20,239 --> 01:43:23,419
+Mesela geldim ben x3'ü arıyorum.
+
+764
+01:43:24,019 --> 01:43:28,419
+Baktım x3, x2'den büyük, x3, x3'e eşit.
+
+765
+01:43:28,819 --> 01:43:31,720
+Tamam, bundan sonrasına hiç bakmam.
+
+766
+01:43:31,819 --> 01:43:36,180
+Bilerim ki bundan sonraki sayılar x3 sayısından büyüktür.
+
+767
+01:43:36,180 --> 01:43:43,819
+Yani ben burada birleşim kümesini yaparken önceden bunları sıralarsam birleşimimi daha hızlı yaparım
+
+768
+01:43:43,819 --> 01:43:49,340
+Ama diyebilirsiniz ki hocam sıralama içinde bir emek harcayacağım
+
+769
+01:43:49,340 --> 01:43:53,120
+Doğru sıralama içinde bir emek harcayabilirsin
+
+770
+01:43:53,120 --> 01:43:57,340
+Orada mesela ne bileyim bir quick sort'u kullanırsın
+
+771
+01:43:57,340 --> 01:44:01,180
+Daha logan zamanda bir sıralama yaparsın
+
+772
+01:44:01,180 --> 01:44:03,840
+Bu işlemdeki süren daha azalır
+
+773
+01:44:03,839 --> 01:44:31,299
+Burada hangi soru algoritmasını kullanmış olduğunda önemli tabii. Ya da kesişimde ne yapıyorsun? X1. Burada X1 var mı diye bakıyorsun. X2. X1 bundan daha küçüktü. Bundan sonra hiçbir zaman X1 olmayacak diye sıralı olsa bakmazsın. X3 gelirsin. X2'den büyük. Evet. X3 burada var. Kesişime yazdım X3'ü. Gerisine bakmazsın.
+
+774
+01:44:31,299 --> 01:44:44,419
+x5 ben artık x3'te kalmıştım x3'ün önündekiler her zaman x5'ten küçük olacağım için kaldığım yerden devam ederek x5 var mı diye bakardım
+
+775
+01:44:44,419 --> 01:44:52,299
+x6 x5'ten büyük bunun gerisinde de x5 olmaz derdim
+
+776
+01:44:52,299 --> 01:45:01,199
+Anlatabildim mi? Yani bir soruyu çözebilmek için çok farklı yollar var. Hiç sıralama yapmadan çözebilirsin.
+
+777
+01:45:01,839 --> 01:45:09,900
+Sıralama yapıp çözebilirsin ya da tamamıyla burada wool cevrini kullanarak bu problemi çözebilirsin.
+
+778
+01:45:10,239 --> 01:45:21,239
+Ha birileri çıkar. Kullandığı fonksiyonun intersection ya da union diye kütüphaneleri vardır. Onları kullanır, sıfır puan alır.
+
+779
+01:45:21,239 --> 01:45:42,419
+Eğer soru bana zaten kesişimi ve birleşimi bulsa benim hazır kütüphane kullanmamam gerekir. Ama büyük problemin içerisinde bunların yapılması gereken alt işlemlerse ben bu kütüphaneleri kullanabilirim. Bunu lütfen birbiriyle karıştırmayın.
+
+780
+01:45:42,419 --> 01:45:55,699
+yani tekerleği yeniden icat etmem gerekmesin bir araba yapılırken ama bana bu tekerleğe benzer yeni bir tekerlek yap derlerse o zaman kütüphaneyi kullanmamam gerekiyor.
+
+781
+01:45:55,699 --> 01:46:03,979
+Şimdi yeniden konumuza dönelim. Şurada yapmak istediğimiz anlaşıldı mı? Bence anlaşılmış olması da. Efendim?
+
+782
+01:46:04,199 --> 01:46:07,119
+Burada ilk zor yapıyoruz ya hani sırayla anladık.
+
+783
+01:46:07,119 --> 01:46:07,639
+Zor mu yapıyoruz?
+
+784
+01:46:08,399 --> 01:46:12,299
+Bit by zor yapıyoruz ya hani bir ve sıfır yaptık biri olduğunu anladık.
+
+785
+01:46:12,419 --> 01:46:17,759
+Ama önceden B'de X1'in olmadığını bulmak için tekrar kontrol etmemiz gerekmiyor mu zaten?
+
+786
+01:46:18,099 --> 01:46:19,259
+Hani oraya sıfır yazmak için
+
+787
+01:46:20,627 --> 01:46:23,387
+şimdi x1 şeyinde b'ye 0 yazmışlar ya
+
+788
+01:46:23,387 --> 01:46:25,347
+şundan mı bahsediyorsun?
+
+789
+01:46:25,647 --> 01:46:26,407
+aynen ondan bahsediyoruz
+
+790
+01:46:26,407 --> 01:46:26,707
+evet
+
+791
+01:46:26,707 --> 01:46:30,947
+onu öğrenmek için zaten b'de bir kere onu araştırmak gerekmiyor mu?
+
+792
+01:46:31,667 --> 01:46:32,687
+ya bu işlemi yapmadan önce
+
+793
+01:46:32,687 --> 01:46:35,847
+yavrucuğum zaten bak şöyle düşünelim
+
+794
+01:46:35,847 --> 01:46:41,327
+a kümen senin çok kısa şeyler vereyim
+
+795
+01:46:41,327 --> 01:46:42,207
+1 ve 3
+
+796
+01:46:42,207 --> 01:46:45,548
+b kümende 4 ve 5
+
+797
+01:46:45,548 --> 01:46:47,687
+en büyük nedir 5?
+
+798
+01:46:47,787 --> 01:46:49,567
+ben 5'lik bir dizi açarım
+
+799
+01:46:49,567 --> 01:47:10,947
+1'den 5'e kadar. 5, 4, 3, 2, 1. A'da 1 varmış şuraya koyarım. 2, 3 var. 3. indisine 1 koyarım kümenin. Sonra B için açtım. B'de 4 var. 4 numaralı indise 1 koyarım. B'de 5 var. Dizinin 5. gözüne 1 koyarım.
+
+800
+01:47:12,087 --> 01:47:16,447
+Tamam yani bir kere kontrol etmek gerekiyor ama yani en başta. Onun için dedim.
+
+801
+01:47:16,447 --> 01:47:25,168
+Kontrol etmekte ne demek istediğini anlayamıyorum. Yani ben bu kümenin elemanlarını mutlaka bir diziye yerleştirmem lazım.
+
+802
+01:47:25,168 --> 01:47:36,607
+Dizinin elemanını o dizinin indis numarası olarak alacağım, o göze bir koyacağım. Başka türlü dizimin elemanlarını yani kümemin elemanlarını bir yere yerleştiremem.
+
+803
+01:47:36,607 --> 01:47:47,327
+Burada yaptığım şey bir, birinci göze dizinin bir koydum. Üç, dizinin üç numaralı indisine bir koydum. Ondan sonra işlemimizi yapıyoruz.
+
+804
+01:47:49,187 --> 01:47:54,887
+Tamamdır. Biz silelim buraları. Çok karıştı ortalık. Peki. Bundan sonra ne varmış?
+
+805
+01:47:57,587 --> 01:48:05,427
+Bu yine biraz sıkıcı. Sıkıcı yani. Neden sıkıcı diyorum? Biraz anlamsız gibi geliyor ama kitapta olan bir bölüm.
+
+806
+01:48:06,607 --> 01:48:23,647
+Seriler bunlara sekans diyoruz. Diziler bunları da string diyoruz. Düzenli dizi yani sekans sıralı bir listeyi göstermek için kullanılan ayrık yapıya denir. En elemanlı bir dizinin gösterilimi de şu şekilde.
+
+807
+01:48:23,647 --> 01:48:36,587
+Esen diyorum. Esen bir seri, sekans, en elemanlı 1, 2, 3. Önemli olan bu sekans nelerden oluşuyor? Bunları buraya uyarlayabilmek.
+
+808
+01:48:36,587 --> 01:48:45,467
+Bunu nasıl okuyorum? Bu birse imdiz, sekansın birinci elemanı, iki ise ikinci elemanı, üç ise üçüncü elemanı gibi.
+
+809
+01:48:45,467 --> 01:49:06,027
+bunu da geç orada bir şey yok. Örnek verelim. Diyor ki senin diyor bir S sekansın var diyor. Bu S sekansında S ne eşittir? Sende bir bölü nedir? N de doğal sayılardan oluşuyor. Bu kümenin elemanları nedir?
+
+810
+01:49:06,027 --> 01:49:14,447
+en yerine 1 koydun 1, en yerine 2 koydun 1 bölü 2, 3 koydun 1 bölü 3, 4 koydun 1 bölü 4 diye gitti.
+
+811
+01:49:15,307 --> 01:49:22,207
+Bir başkası geldi. Senin bir sekansın var esen. Bu esenin açılımı en kare artı 1.
+
+812
+01:49:22,987 --> 01:49:29,907
+En ne? Doğal sayılardan oluşuyor. Artık buna ne veriyorsan, riyasayı verirsin, ne bileyim.
+
+813
+01:49:29,907 --> 01:49:58,867
+çift sayılar, tek sayılar nasıl tanımlamışsan önemli olan sırasıyla her bir elemanı birinciyi mi aldın koydun birin karesi artı bir iki öyleyse s1'in değeri iki ikiyi koydum beş s2'nin değeri beş böyle gider sekans dediğimiz şey bu sekanslar increasing veya decreasing olarak gidebilir
+
+814
+01:49:58,867 --> 01:50:02,347
+ya artan dizilerdir ya da azalan dizilerdir.
+
+815
+01:50:02,627 --> 01:50:04,147
+Artan dizi nedir?
+
+816
+01:50:04,967 --> 01:50:12,747
+Esende bir sonraki eleman her zaman bir önceki elemandan ya büyüktür ya da eşittir.
+
+817
+01:50:13,647 --> 01:50:18,987
+Azalanda ise bir sonraki eleman bir önceki elemandan.
+
+818
+01:50:19,296 --> 01:50:44,495
+ya küçüktür ya da eşittir. tüm n değerleri için. mesela örnek verelim bana bir sekans verildi. sekansım 4-n. n değerleri 1-2-3. n yerine 1 koydum 2. n yerine 2 koydum 0. n yerine 3 koydum eksi 2. 4 koydum eksi 4.
+
+819
+01:50:44,495 --> 01:51:13,615
+Bu nasıl bir dizi? Azalan bir dizi. Sekansım 2n-1 olsun. n yerine 1, 2, 3 koyacağım. 1 koydum 1, 2 koydum 3, 3 koydum 5. Bu nasıl bir dizi? Azalan bir dizi. Bunları niye şimdi veriyoruz? Bir dizi bu düzenin azalan ya da artan olması beni nereye götürecek? Alt serilere götürecek. Bunlara da sap sekans diyoruz.
+
+820
+01:51:14,495 --> 01:51:36,235
+Burada çok önemli bir ayrıntı var. Buna lütfen dikkat edelim. Bir S sekansının alt sekansını TN ile gösterelim. Yani benim bir sekansım var. S, SN ile ifade ediyorum. Bunun alt sekansına da T diyelim. Bunu da TN ile gösterelim.
+
+821
+01:51:36,235 --> 01:51:54,855
+Sıralama düzeni aynı kalmak şartıyla burada önemli olan bu sıralama düzeni aynı kalmak şartıyla S sekansının elemanlarından elde edilen sekansa alt sekans diyormuş.
+
+822
+01:51:54,855 --> 01:52:13,455
+Yani elimde bir S sekansı var. Bu sekansın içerisinden bir alt sekans elde edeceğim. Bu alt sekans S'nin içindeki elemanlardan oluşacak fakat sıralama düzeni bozulmayacak.
+
+823
+01:52:13,455 --> 01:52:41,236
+Benim bir sekansım olsun. 1, 2, 3, 4 ve 5. Alt sekansım 1, 5 ve 3 olsun. Olabilir mi? Olamaz. Neden olamaz? Sıralama bozuldu. 1, 5, 3 değil. Önce 3 var, 5. Bunun şu şekilde olması lazım ki buna alt sekans diyebilelim.
+
+824
+01:52:41,236 --> 01:52:43,476
+sıralamanın bozulmaması lazım.
+
+825
+01:52:43,756 --> 01:52:45,056
+Öylesi örnek verelim.
+
+826
+01:52:45,696 --> 01:52:47,456
+Bir esen sekansım var.
+
+827
+01:52:48,116 --> 01:52:50,715
+1, 2, 3 diye gidiyor elemanlar.
+
+828
+01:52:50,715 --> 01:52:55,635
+Esen sekansım neyse elemanlarım 1, 2, 3, 4, 5, 8 diye geçecek.
+
+829
+01:52:56,135 --> 01:52:58,116
+Bir tane alt sekant yazdım.
+
+830
+01:52:58,495 --> 01:53:00,495
+Çift sayılardan oluşuyor TN.
+
+831
+01:53:01,016 --> 01:53:03,376
+En 1, 2, 3 olursa bu ne olur?
+
+832
+01:53:03,536 --> 01:53:05,536
+2, 4, 6, 8, 10, 12 olur.
+
+833
+01:53:06,195 --> 01:53:10,275
+Bu yukarki sıralamadan çıkarılmış bir dizi.
+
+834
+01:53:10,275 --> 01:53:24,475
+sıralama bozuluyor mu? Hayır. 2, 4, 6, 8, 12, 14 diye gidiyor. Öyleyse ben bu TN, S'nin alt sekansıdır diyebilirim.
+
+835
+01:53:24,475 --> 01:53:33,456
+Sıralama kesinlikle bozulmayacak. Bozulursa alt sekans kavramı hatalı olur.
+
+836
+01:53:33,455 --> 01:53:39,055
+Sigma işaretinin toplama işareti olduğunu biliyoruz.
+
+837
+01:53:39,055 --> 01:53:50,115
+Birden N'e kadar, bu da bir sekans, birden M'e kadar A değerlerinin sembollerinin toplamını şu şekilde gösterebiliriz.
+
+838
+01:53:52,495 --> 01:53:58,515
+Bu zaten Yunan alfabesinde de Sigma S harfine karşılık geliyor, oradan geliyor.
+
+839
+01:53:58,516 --> 01:54:17,495
+çarpım P bu da yine P diye okumuyor ama P harfine karşılık geliyor Greek harfimizin de. Ondan sonra bu sekansda bu elemanların çarpımı işte elemanları çarptım onu da bu şekilde gösterdim.
+
+840
+01:54:19,380 --> 01:54:26,380
+peki şöyle bir ifadenin sonucu ne olur?
+
+841
+01:54:46,484 --> 01:54:51,484
+ben de bir su içeyim. Bunun sonucunu bekliyorum sizden.
+
+842
+01:55:02,836 --> 01:55:04,836
+evet, yok mu?
+
+843
+01:55:04,836 --> 01:55:06,836
+hocam bir
+
+844
+01:55:06,836 --> 01:55:08,836
+eksi bir mi artı bir mi?
+
+845
+01:55:08,836 --> 01:55:15,836
+artı bir hocam çünkü en başta pozitifle başlıyor, her eleman birbirini götürüyor, en sonunda pozitifle hep diyor.
+
+846
+01:55:15,836 --> 01:55:17,836
+ondan dolayı bir
+
+847
+01:55:17,836 --> 01:55:18,836
+bir
+
+848
+01:55:18,836 --> 01:55:24,836
+şu sessiz olan grup, bir grup var, çok sessiz
+
+849
+01:55:24,836 --> 01:55:30,836
+niye hiç ses çıkmıyor?
+
+850
+01:55:31,412 --> 01:55:36,631
+ben şimdi sizin sesinizi çıkarırım merak etmeyin dur bakayım nasıl çıkarsam ses
+
+851
+01:55:43,796 --> 01:55:45,455
+Sezer Ensari.
+
+852
+01:55:47,215 --> 01:55:47,715
+Sesfer.
+
+853
+01:55:50,915 --> 01:55:51,796
+Sezer Bey.
+
+854
+01:55:57,524 --> 01:56:11,923
+ya bakın zorla hayal gücümü kullandırmaya çalışıyorsunuz. Ben şuna inanıyorum dersi açıyor ve gidiyor. Yok bilgisayarın başında değil.
+
+855
+01:56:15,283 --> 01:56:25,283
+alo? ha niye bu kadar geç cevap verdin Sezer? arkandan konuşuyorum. hocam donmuşum. uyumuş musun?
+
+856
+01:56:25,283 --> 01:56:38,723
+evet. Allah seni ne yapmışsın? yani Allah seni ne yapmışsın? aslında hakla benim de uykum var ama çok konuştuğum için uyuyamıyorum şu an. peki kaçırdın, olsun bakalım.
+
+857
+01:56:38,723 --> 01:56:43,783
+Ceza bunun sigma işareti olduğunu biliyorsun
+
+858
+01:56:43,783 --> 01:56:44,743
+Evet hocam
+
+859
+01:56:44,743 --> 01:56:49,263
+4'den 8'e kadar eksi 1 üzeri k'ları toplayacak
+
+860
+01:56:49,263 --> 01:56:51,283
+Bunun sonucu da 1 olacak dedi
+
+861
+01:56:51,283 --> 01:56:52,883
+Ben de sana şunu sordum
+
+862
+01:56:52,883 --> 01:56:57,723
+Şimdi biraz kağıt kalem kullanman gerekiyor
+
+863
+01:56:58,343 --> 01:57:00,843
+Bir yapabilir misin?
+
+864
+01:57:01,623 --> 01:57:02,223
+Benim olayım
+
+865
+01:57:02,223 --> 01:57:03,243
+Tamam
+
+866
+01:57:03,243 --> 01:57:04,723
+Sesi kapa şu an
+
+867
+01:57:04,723 --> 01:57:29,923
+Bu arada Sezer arkada televizyon açık. Önde ben konuşuyorum ve sen uyuyorsun. Bravo sana. Diğer grup yani Sezer'in komplementi olanlar size de bu soru gelebilir. Sezer yanlış cevap verirse sizlerden birine soracağım. Lütfen yapar mısınız?
+
+868
+01:58:36,819 --> 01:58:38,819
+tamam mı? çözüldü mü?
+
+869
+01:58:38,819 --> 01:58:42,819
+Sezer
+
+870
+01:58:46,804 --> 01:58:48,003
+Hocam, yapamadın mı?
+
+871
+01:58:48,623 --> 01:58:55,083
+Yapamadın hocam. Lütfen bu küreltüde nasıl uyuyorsun? Arkada televizyon da çalışıyor.
+
+872
+01:58:58,243 --> 01:59:11,144
+Tamam, peki. Şimdi arkadaşlar, bu tip konuşmalar yapmam benim hiç hoşuma gitmiyor. Şöyle hoşuma gitmiyor. Hepiniz minimum 17 yaşındasınız ve daha üzerindesiniz.
+
+873
+01:59:11,144 --> 01:59:15,824
+Yani derse gelmişsin, gelmemişsin, dinlemişsin, dinlememişsin
+
+874
+01:59:15,824 --> 01:59:22,504
+Bana şey gibi geliyor, bana birilerinin böyle bir şeyler söylemesi hoşuma gitmez
+
+875
+01:59:22,504 --> 01:59:25,423
+Hocam o zaman niye söylüyorsunuz diye sorabilirsiniz
+
+876
+01:59:25,423 --> 01:59:32,144
+Ben şunu istiyorum sadece, bu dersten rahatlıkla geçebilirsiniz
+
+877
+01:59:32,144 --> 01:59:36,804
+Çok zor bir ders değil, sizi zorlayacak bir ders değil
+
+878
+01:59:36,804 --> 01:59:43,463
+eğer dersi dersle dinlerseniz bu dersi yapamamak diye bir şey olmaz.
+
+879
+01:59:44,184 --> 01:59:50,543
+Dersi dinlemeyip her şeyi vizeden önceki güne bıraktığınızda şu oluyor.
+
+880
+01:59:50,543 --> 01:59:54,043
+Ya sonuçta bir insanız, robot değiliz.
+
+881
+01:59:54,443 --> 01:59:57,443
+Çok fazla konu var, çok fazla konu olacak.
+
+882
+01:59:58,123 --> 02:00:04,484
+Bu konuların hepsini öyle bir gecede üzerinden geçmek gerçekten zor.
+
+883
+02:00:04,744 --> 02:00:05,623
+Ben yapamam.
+
+884
+02:00:05,623 --> 02:00:17,424
+Şimdi ben yapamayacağım için sizlerin de zorlanacağını düşünüyorum. Belki sizler yapabiliyorsunuz. Ama yapılabilmiş olsaydı bu dersten de kalanlar olmazdı diye düşünüyorum.
+
+885
+02:00:18,043 --> 02:00:28,783
+Yapmayın. Hayatınızı harcamayın. En güzel yıllarınız. Yani ben çok isterdim bütün diplomalarımı vereyim. Bir sürü diploma var.
+
+886
+02:00:28,783 --> 02:00:37,063
+verin şu gençlik yıllarıma geri döneyim. Yani daha farklı hayatımı düzenlemeye çalışabilirdim.
+
+887
+02:00:37,063 --> 02:00:53,863
+Yine söylüyorum bakın şimdiden söylüyorum size hatta emrediyorum hayatınızın içerisine işinizin dışında mutlaka bir hobi, bir ilgi alanı katın.
+
+888
+02:00:53,863 --> 02:01:23,643
+hayat çok zor ve acımasız bazen sıkıldığımız anlar oluyor o zaman sığınabileceğimiz bir şeyin olması lazım o bizi o problemimizden uzaklaştırıyor o sıkıntıya o problemi dinlemiyorsunuz düşünmüyorsunuz o işe kanalize oluyorsunuz benim yokmuş benim tek derdim hep çalışmakmış hep okul çalış işte geç bilmem ne bilmem ne
+
+889
+02:01:23,643 --> 02:01:30,643
+hiç mi diye soruyorum kendine bağlı senin hiç mi bir yeteneğin olamaz mutlaka vardır çünkü bulup çıkarmamışım
+
+890
+02:01:30,643 --> 02:01:43,623
+yeni yeni bir şeylerin farkına varıyorum bunlara zaman ayırmaya çalışıyorum ama işler o kadar yoğunlaşıyor ki bir şeye sıfırdan belirli bir yaştan sonra başlamak gerçekten zor
+
+891
+02:01:43,623 --> 02:01:52,983
+onu da şu an ne kadar derslerimiz zor yoğun deseniz de bu hayat sizin hayatınız başka hiç kimsenin hayatı değil
+
+892
+02:01:52,983 --> 02:01:58,123
+ve hayatınızı çok güzel bir şekilde modelleyin.
+
+893
+02:01:59,683 --> 02:02:05,503
+Yani yaşadığımız her şey iyisi kötüsü ise benim seçimin, başkasının seçimi değil.
+
+894
+02:02:05,763 --> 02:02:10,723
+Çünkü ben kendi hayatımda başkalarının şeylerine fazla önem veren bir insan değilim.
+
+895
+02:02:10,723 --> 02:02:20,483
+Yani bu diyeceklerimi anne babalar duymasın aktarmayın da ben çok fazla annem ya da babamın dediğini yapan bir insan olmadım.
+
+896
+02:02:20,483 --> 02:02:29,283
+Dinledim, kendim de fikirlerimi söyledim, onlardan da çok şey aldım ama hep kararlarımı kendim vermeye çalıştım.
+
+897
+02:02:29,283 --> 02:02:31,203
+Çünkü
+
+898
+02:02:32,212 --> 02:02:43,231
+başkalarını suçlamıyorsunuz o zaman. Yoksa hep karşınızdakini suçluyorsunuz. Senin yüzünden oldu. Hayır, ben yaptım. Bu benim yüzümden oldu. Sonuçlarına ben katlanacağım.
+
+899
+02:02:43,771 --> 02:02:54,731
+İyiyim mi, doğrumu kendim bulmalıyım. Bakın şimdi söylüyorum. Büyük bir yanlışım varmış. Hayatımın içine mesleğimin ya da işimin dışında bir şey koymamışım.
+
+900
+02:02:54,731 --> 02:03:09,291
+bir bunu koyun. İki dersleri derste dinleyin daha az çalışmaya vakit ayırın. Sadece o kalan vaktinizi kendinizi farklı alanlarda bu işinizle de ilgili olur.
+
+901
+02:03:09,291 --> 02:03:19,831
+ona ayırın. Her şey derslerde verilmiyor. Yani okulda almış olduğunuz eğitim aslında dış hayatınızda hepsini kullanmıyorsunuz.
+
+902
+02:03:20,171 --> 02:03:29,451
+Kullanılmadığını göreceksiniz. Siz sadece öğrenmeyi, ilişki çıkarmayı ve kavramları derslerde görüyorsunuz.
+
+903
+02:03:29,451 --> 02:03:55,471
+dış hayat inanın biraz daha fazla. O yüzden okuyun, dinleyin. Bir takım kurslar var konunuzla ilgili ilgi alanlarınız olabilir. Yani bilgisayar mühendisliği çok geniş bir konu. Şu an sizin için erken ama üçüncü sınıfta hangi alana kaymak istediğinizde karar verdiğiniz vakit kurslar var online. Onları dinleyin. İnanın çok şey kazanırsınız. Bakış açınız değişir.
+
+904
+02:03:55,471 --> 02:04:02,151
+dar bir açıdan bakmakla geniş bir açıdan bakmak çok çok farklı birbirinden
+
+905
+02:04:02,151 --> 02:04:09,751
+bilmiyorum belki çok daha sizden uzun yıllar yaşadığım için bunları farkına varıyorum
+
+906
+02:04:09,751 --> 02:04:12,191
+yanlışlarımı ya da eksiklerimi görüyorum
+
+907
+02:04:12,191 --> 02:04:15,391
+akıl vermek gibi bunu hiç algılamayın
+
+908
+02:04:15,391 --> 02:04:19,131
+sadece yaşamış olduğum deneyimi aktarmak istiyorum
+
+909
+02:04:19,131 --> 02:04:23,571
+o yüzden yeniden buraya bağlayayım
+
+910
+02:04:23,572 --> 02:04:34,771
+dersi derste dinlerseniz vizelere çok az vakit ayırırsınız. Çünkü bildiğiniz şeyler şöyle bir yüzeysel olarak geçtiğiniz vakit her şey aklınıza pat pat pat gelir.
+
+911
+02:04:35,792 --> 02:04:43,891
+Yoksa bana ne sen sabaha kadar oturmuşsun gözüm pıtlamış kanlamış öyle sınava girmiş yani beni ilgilendirmiyor.
+
+912
+02:04:43,891 --> 02:04:54,351
+Ama istemiyorum yani sizleri şu an nasıl diyeyim yani bizlerin çocukları yaşlarındasınız hatta daha küçüksünüz
+
+913
+02:04:54,351 --> 02:05:03,391
+Gelecekte de meslektaşım olacaksınız aynı pencerenin içindeyiz birbirimizi korumak ve kollamak zorundayız diye düşünüyorum
+
+914
+02:05:03,391 --> 02:05:11,731
+Evet şimdi bunu yapan bu kadar konuşma üzerine yapan biri yine çıkmamıştır olsun çıkmasın ne yaparız?
+
+915
+02:05:11,731 --> 02:05:40,251
+hep şöyle düşünün bu soruda da iç içe parantez varmış gibi düşünelim benim ilk önce yapmam gereken şey şu içteki sigma i'ye bir verdiğimde pardon j'ye bir verdiğimde ne olacak bir tane i j'ye iki olduğunda artı ikiyi ekleyeceğim j'ye üç olduğunda artı üç j'ye ekleyeceğim bakayım eklenmişi var mı e haydi neyse
+
+916
+02:05:40,251 --> 02:05:58,851
+Şimdi içteki ile başladım, i'ye bir verdim, pardon j'ye bir verdim, i, j 2 oldu, 2 i, j 3 oldu, 3 i, dışarıdaki sigma dış parantez duruyor
+
+917
+02:05:58,851 --> 02:06:17,851
+sonra şu içeriği toplayalım 3İ, 3İ daha 6İ şimdi İ'leri yerine koyalım 1 koydum 6, 2 koydum 12, 3 koydum 18 en son sınıf nedir 4, 4 koydum 24 topladım 60 bu sorunun cevabı da 60'mış
+
+918
+02:06:17,851 --> 02:06:24,851
+peki bunun piylisinin olması gerekiyordu bir de bunun piylisi vardı
+
+919
+02:06:26,003 --> 02:06:52,083
+Peki piyi de ben vereyim. Mesela bu birden beşe kadar olsun ve bana ikiyi soruluyor. Ne yapacağım? İ yerine bir koydum, iki çarpı. İ yerine iki koydum, dört çarpı. Ay şurasını beş yapmayayım, üç yapayım. İ yerine üç koydum, altı eşittir.
+
+920
+02:06:52,083 --> 02:06:59,163
+2 kere 4 8 6 kere 8 48 bunun da sonucu 48 olacak.
+
+921
+02:07:00,724 --> 02:07:02,603
+Peki devam edelim.
+
+922
+02:07:04,423 --> 02:07:05,483
+Ara verelim mi?
+
+923
+02:07:09,235 --> 02:07:10,735
+bari buna cevap verelim.
+
+924
+02:07:10,735 --> 02:07:12,135
+verelim hocam.
+
+925
+02:07:13,415 --> 02:07:15,935
+biri gerek yok dedi, biri verelim dedi.
+
+926
+02:07:16,935 --> 02:07:18,955
+ders uzayacaksa vermeyeyim.
+
+927
+02:07:18,955 --> 02:07:22,656
+ders falan uzaması falan yok. dersi aynı saatte bitireceğim.
+
+928
+02:07:22,656 --> 02:07:24,295
+o zaman verelim hocam.
+
+929
+02:07:26,435 --> 02:07:31,775
+tamam peki. yani ne kadar demokratik olarak size sorsam da
+
+930
+02:07:31,775 --> 02:07:36,555
+yine son kararı ben veriyorum ama elimdeki şeyi biliyorum.
+
+931
+02:07:36,555 --> 02:07:42,215
+bu gidebildiği kadar gider ders saatini de bırakacağım çünkü bu bölüm çok uzun bir bölüm zaten bitmez.
+
+932
+02:07:42,795 --> 02:07:46,936
+Kısa bir ara olsun beş geçiyor çeyrek geçe burada olalım tamam mı?
+
+933
+02:07:47,975 --> 02:07:48,875
+Tamam hocam.
+
+934
+02:07:48,875 --> 02:07:50,195
+Okey hadi görüşürüz.
+
+935
+02:18:46,260 --> 02:19:15,859
+gençler bu chatte bu chatte herkes şey yazmış soruların cevaplarını yazmış ben fullscreen olunca bu chati göremiyorum. Evet sınav online mı? Ya hayatımız online oldu bilmiyorum ki sınav online mı onu o zaman yaşayacağız bilmiyorum. Ondan sonra boşver sınav nereden nereye kadar?
+
+936
+02:19:15,859 --> 02:19:22,440
+sınav online mı? Bu soruları sormayalım. Bilmiyoruz yarnımızın ne olacağı hakkında en ufak bir fikrimiz yok.
+
+937
+02:19:22,859 --> 02:19:34,159
+Biz bugünümüzü yaşayalım. Üçüncü dersimize girdik. Ekranımı paylaşıyorum. Şurada kalmıştık mıydık? Burasını geçtik mi bilmiyorum.
+
+938
+02:19:34,159 --> 02:19:45,459
+Bu da bazen... Çok da atlamış olabilirim. Hayır atlamamışım. Tamam. Ben yine boşluğa konuşmuyorum değil mi?
+
+939
+02:19:45,459 --> 02:19:46,939
+Bir cevap versin
+
+940
+02:19:46,939 --> 02:19:48,579
+Buradayız hocam
+
+941
+02:19:48,579 --> 02:19:49,379
+Tamam peki
+
+942
+02:19:49,379 --> 02:19:54,079
+Şimdi yine burada çok da o kadar önemli olmayan bir şey
+
+943
+02:19:54,079 --> 02:19:56,760
+İşte bir şey var, x kümen var
+
+944
+02:19:56,760 --> 02:19:57,919
+Bu x kümenle
+
+945
+02:19:57,919 --> 02:20:00,519
+Aslında şöyle önemli olmayan demeyeyim de
+
+946
+02:20:00,519 --> 02:20:07,260
+Hani sizin programlama dillerinde bir değişkeni string olarak tanımlıyorsunuz
+
+947
+02:20:07,260 --> 02:20:12,379
+Ve bir değişkeni string olarak tanımladığınızda onun maksimum bir uzunluğu var
+
+948
+02:20:12,379 --> 02:20:14,079
+İşte o uzunluğu geçemiyorsun
+
+949
+02:20:14,079 --> 02:20:25,020
+bu da hem onlar hem de birazcık tabi burada onları göstermedik ama regular expression'larla ilgili bir takım şeyler var.
+
+950
+02:20:26,440 --> 02:20:30,139
+Ama regular expression kısmı burada yok. Yani nedir? Düzenli ifadeler.
+
+951
+02:20:30,879 --> 02:20:34,379
+Onlardan da genel kültür olsun diye size de birazcık bahsedelim.
+
+952
+02:20:34,379 --> 02:20:43,840
+Bir x kümem var abc. Bu abc ile yazabileceğim stringler var. İstediğim her türlü stringi yazabilirim. Bunlardan bir tanesi bu.
+
+953
+02:20:44,079 --> 02:21:00,080
+Bu stringi daha kısa olarak gösterir. Üstel şekillerde de yazabilirim. Aynen burada olduğu gibi. Ama şu stringin regular expression ile gösterilimi de şudur.
+
+954
+02:21:00,080 --> 02:21:06,080
+Şu stringi aslında ben şunu
+
+955
+02:21:11,412 --> 02:21:23,811
+B yıldız, B yıldız diyemem, pardon. Bu artı olsun. B artı, A ve C artı diye yazabilirim Regular Expression'da.
+
+956
+02:21:23,811 --> 02:21:33,752
+Şimdi bu ne demek? Regular Expression düzenli ifadelerde aslında ilerleyen yıllarda projelerinizde de kullanmanız gerekecek.
+
+957
+02:21:33,752 --> 02:21:44,172
+regx diye bir dil var. Bu regx, reg, Reg'ların reki, ekste, e, ekste, böyle konuşacağımı şuraya yazayım.
+
+958
+02:21:48,211 --> 02:21:59,811
+REGEX diye bir dil var. Bu REGEX, Regular, EXPERSION, Regular Expression kullanarak bir dil. Bana çok büyük kolaylıklar sağlıyor.
+
+959
+02:22:00,331 --> 02:22:11,851
+Mesela ben bir döküman içerisinde bütün e-mail adreslerini arıyorum. Ne olursa olsun, bütün e-mail adreslerine HTML sayfaları benim karşıma geliyor.
+
+960
+02:22:11,851 --> 02:22:16,431
+bu HTML sayfaları içerisinde diyelim ki e-mail adreslerini arıyorum.
+
+961
+02:22:16,711 --> 02:22:27,072
+Diyelim ki telefon numaralarını, yerli, yabancı, cep telefonu, normal, haklı telefon, ne olursa olsun bunları arıyorum.
+
+962
+02:22:27,531 --> 02:22:29,671
+Yani çok farklı formatlarda yazılır.
+
+963
+02:22:29,811 --> 02:22:30,871
+Adresleri arıyorum.
+
+964
+02:22:31,072 --> 02:22:33,531
+Adresler çok farklı formatlarda yazılır.
+
+965
+02:22:33,531 --> 02:22:50,292
+Ben öyle regular expression'lar yazıyorum ki bu regular expression'lar farklı şekillerde yazılmış bütün e-mail adreslerini, telefon numaralarını, adresleri, ev adreslerini bana buluyor, bulabilen
+
+966
+02:22:50,292 --> 02:22:56,872
+Ne kadar mükemmel yazarsam o kadar fazlasını bulur, ne kadar eksik yazarsam o kadar eksik bulur
+
+967
+02:22:56,872 --> 02:23:00,211
+Neyse regular expression'ı anlatmıyorum
+
+968
+02:23:00,211 --> 02:23:22,752
+orada kullanılan iki tane komut var. Bunlardan bir tanesi artı, bir tanesi de çarpıdır. Şimdi çarpı komutu nedir? Çarpı komutu şudur. Ya hiç ya da olabildiği kadar. Artının anlamı da şudur. En az bir ya da olduğu kadar. Ne demek istiyorum?
+
+969
+02:23:22,752 --> 02:23:39,832
+A yıldız yazalım. A yıldızla yazabileceğim şey neydi? Yıldız neydi? Hiç, hiç dediğim şey sigma, lambda, boş küme ya da yazabildiğim her şey.
+
+970
+02:23:39,831 --> 02:23:56,151
+tek bir ağ yazabilirim, iki tane ağ yazabilirim, yazmayı başarırsam üç tane ağ yazabilirim, işte dört tane ağ yazabilirim, nokta nokta beş tane altı, yedi, sekiz, dokuz, sınırım yok gelebildiği kadar.
+
+971
+02:23:56,951 --> 02:24:08,231
+Artıyla bahsettiğim şey ise şudur, artı en az bir kez olduğu için kesinlikle boş küme yoktur ve en az bir kere bunu göreceğim.
+
+972
+02:24:08,232 --> 02:24:17,332
+Yıldız olursa hiç karşıma gelmeyebilir. Artı olursa en az bir kez veya 2, 3, 4, 5 gibi.
+
+973
+02:24:17,332 --> 02:24:24,332
+O yüzden şurada verilmiş olan string ifadesini regular expression ile yazdım.
+
+974
+02:24:24,851 --> 02:24:36,551
+B artı A, C artı dedim. Anlamı şu. A ne olursa olsun her zaman var. Tamam mı?
+
+975
+02:24:36,551 --> 02:24:51,851
+B, 2 olabilir, 3 olabilir, 4 olabilir, C de öyle olabilir. Bunlarda da en az bir kere koydum. 2B, 3B, 4B olabilir. En az bir tane C koydum. 2C, 3C, 4C olabilir.
+
+976
+02:24:51,851 --> 02:25:18,551
+Bana şunu diyebilirsiniz. Hocam A'nın en az bir kez olduğunu nereden biliyorsunuz? Şuradaki ifade şöyle olabilirdi. B, B, B, B, A, A, 3 tane A, sonra da 3, 4, 5 tane C. O zaman yanlış olurdu. O zaman ne yapmam gerekir? Buraya da artı koymam lazım.
+
+977
+02:25:18,551 --> 02:25:34,512
+Artı koyduğum vakit bunlar en az bir kez ama bu sırada gelecek yani B, A, C sırasında gelecek A, C, B sırası değil o tamamıyla yanlış bir ifade olur bu sırada gelecek
+
+978
+02:25:34,511 --> 02:25:38,511
+Eğer ben bunların başına yıldız koyarsam
+
+979
+02:25:40,051 --> 02:25:54,751
+şu olabilir, şunlar yazılabilir. B, B iki kere gelmiş, A hiç gelmemiş, sadece C gelmiş. A burada hiç yok. Ama A varsa da o zaman bu ifadede bunu tanımaz.
+
+980
+02:25:55,311 --> 02:26:06,791
+Kısacası bana şöyle bir bilgi verilmesi gerekir. Senin bu kümeden yazacağın bütün alfaların içerisinde A, B, C olabilir.
+
+981
+02:26:06,791 --> 02:26:13,651
+ya da der ki A en az bir kez gelecek B ve C işte şu kadar olabilir.
+
+982
+02:26:14,351 --> 02:26:20,711
+Bana kurallar verilirse ben bu kurallara göre regex ifademi yazabilirim.
+
+983
+02:26:24,915 --> 02:26:52,915
+yazabilirim. Ondan sonra cuma şunu kenara alalım. Yine kardinalite kavramı var. Bir stringin boyutunu bana söylüyor. Bu yazılmış ifademin kardinalitesini alırsam nedir? Kaç tane eleman var? Üstlerini toplarım. 2, ağda 1 var, 3, 3 de burada var, 6. Hiçbir eleman içermiyorsa null string deriz. Onu da bu şekilde gösterebiliriz.
+
+984
+02:26:52,915 --> 02:27:13,915
+Peki size şuraya bir örnek verelim. Benim elimdeki elemanlar ABC olsun. Bir tane stringim var alfa birim sadece A'dan oluşuyor.
+
+985
+02:27:13,915 --> 02:27:19,756
+alfa 2 stringim var
+
+986
+02:27:19,756 --> 02:27:20,956
+B
+
+987
+02:27:24,948 --> 02:27:34,307
+AA'dan oluşuyor. Alfa 3 stringim var. Şu an atıyorum ama böyle uygun atmak için bekliyorum.
+
+988
+02:27:34,307 --> 02:27:40,387
+B
+
+989
+02:27:40,180 --> 02:28:04,959
+A, C, C, C olsun. Tamam mı? Şu üç tane stringi yazabilecek bir tane regular expression yazalım. Yani ben öyle bir regular expression yazayım ki bunun için doğru olsun, alfa 1 için, alfa 2 için doğru olsun, alfa 3 için doğru olsun.
+
+990
+02:28:04,959 --> 02:28:29,159
+Şimdi bir bakalım ne olabilir? Bir kere hepsi B ile başlıyor. Diyeceksiniz ki alfa 1'de B yok. Tamam olmasın ben bunu B ile başlatayım. Başına yıldız koyayım. Yıldız neydi? Ya hiç lambda ya da olabildiği kadar.
+
+991
+02:28:29,159 --> 02:28:41,099
+alfa 1'i yazarken B yıldız olur. Hiç kullanılmaz. Alfa 2'de B bir kere kullanılır. Alfa 3'te de B bir kere kullanılır. Sonra A geliyor.
+
+992
+02:28:42,799 --> 02:28:54,739
+A için ne yazabilirim? Yıldız yazabilir miyim? Hiç gelmeme durumu A'da söz konusu değil. Ama bir kez mutlaka geliyor.
+
+993
+02:28:54,739 --> 02:29:10,959
+Buna A artı diyeyim. Bu iki kez de tekrar edebilir. Tamam. Sonra C geliyor. C birinci de yok, ikinci de yok. Üçüncüsünde sayısı fazla. O zaman C'ye de yıldız koyarım.
+
+994
+02:29:10,959 --> 02:29:22,760
+Şimdi birincisini yazabilir miyim A'yı? B yıldızı hiç almam lambda A'yı bir kere alırım C yıldızı hiç almam lambda sadece A'yı yazabilirim
+
+995
+02:29:22,760 --> 02:29:34,499
+BAA'yı yazabilir miyim? Yıldızdan B'yi bir kere alabilirim A iki kere en az A bir kere gelecekmiş iki kere A yazılabilir
+
+996
+02:29:34,499 --> 02:29:58,620
+C'yi hiç almam öyleyse bunu da yazarım. Bunu yazabilir miyim? B yıldızdan hiç ya da istediğim kadar bir kez almışım. A artı en az bir kez A olacak. Evet. Sonra C yıldız ya hiç yok ya da yazabildiğim kadar 3 tane C yazdım. Bunların 3'ünü de sağlıyor.
+
+997
+02:29:58,620 --> 02:30:08,860
+Peki alfa 4 diye bir string yazayım. Bunu sağlıyor mu sağlamıyor mu söyleyeyim bana. Elimde şöyle bir değer var.
+
+998
+02:30:16,147 --> 02:30:18,147
+bir dakika
+
+999
+02:30:18,147 --> 02:30:26,147
+şu yok şunu siliyorum
+
+1000
+02:30:26,147 --> 02:30:27,147
+bu
+
+1001
+02:30:28,531 --> 02:30:55,952
+kalemi aldım. Çok iyi bakın. Şöyle bir şeyim var. Alfa 5'de C ve B. Şu regular expression C4'ünü sağlar mı? Şimdi bakalım. Burası ne diyor? B olacak ya da olmayacak. Tamam, B'yi almadım.
+
+1002
+02:30:55,952 --> 02:31:13,411
+A en az bir kez olacak. Benim burada bir A görmem lazım. En az bir kez var. Ondan sonra C gelir ya da gelmez. O zaman alfa dördü bu regex ne yapar? Sağlamaz.
+
+1003
+02:31:13,411 --> 02:31:28,411
+Peki bunu sağlar mı? B gelmeyecek. Tamam B gelmesin ama A var. Kesinlikle A gelmesi lazım. Burada A yok. O zaman bunu da sağlamaz.
+
+1004
+02:31:28,411 --> 02:31:32,712
+Peki ben bir de A6 yazayım
+
+1005
+02:31:32,712 --> 02:31:38,171
+A, C, B var
+
+1006
+02:31:38,171 --> 02:31:40,892
+Bunu sağlar mı? Geldim
+
+1007
+02:31:40,892 --> 02:31:42,171
+B olmayacak
+
+1008
+02:31:42,171 --> 02:31:43,771
+Tamam B olmasın
+
+1009
+02:31:43,771 --> 02:31:46,791
+A'dan bir kez olacak en az
+
+1010
+02:31:46,791 --> 02:31:48,491
+En az bir tane A var
+
+1011
+02:31:48,491 --> 02:31:49,931
+C yıldız
+
+1012
+02:31:49,931 --> 02:31:54,291
+Hiç ya da yazabildiğim kadar bir tane yazdım
+
+1013
+02:31:54,291 --> 02:31:56,091
+Arkasında B var
+
+1014
+02:31:56,091 --> 02:31:57,971
+Ama bu ifade bitti
+
+1015
+02:31:57,971 --> 02:32:19,751
+burada B yok. Öyleyse bu stringi de yazamam. Demek ki ben ya yazmış olduğum bu regular expression'lara yine mouse'um kayboldu. Bu regular expression'lara uygun alfalar yazacağım. Yani ne diyeyim stringler yazacağım.
+
+1016
+02:32:19,752 --> 02:32:24,491
+ya da bu stringleri sağlayan regular expression yazacağım.
+
+1017
+02:32:25,932 --> 02:32:32,332
+Yani iki yönlü de yapabilirim ama regular expression ile ne demek istediğimi herhalde anladın.
+
+1018
+02:32:32,332 --> 02:32:44,772
+Onlarca yüzlerce ifadeyi tek bir yazılım şekliyle yazıp bundan yüzlerce bu kuralı sağlayan stringler çıkarabilirim.
+
+1019
+02:32:45,852 --> 02:32:47,992
+Her stringi bu kural sağlamaz.
+
+1020
+02:32:47,991 --> 02:32:57,171
+Bütün yazılabilecek stringleri sağlayan bir kural yazmak istiyorsak belki şöyle yazmam gerekir
+
+1021
+02:32:57,171 --> 02:33:10,371
+A yıldız, B yıldız, C yıldız, A'ç parantez, C yıldız koyarsın
+
+1022
+02:33:10,371 --> 02:33:39,651
+Ha bakalım şunu yazabilir miyim? Bir kere bu yıldıza girdim. A'yı hiç almadım. B'yi hiç almadım. C'yi yazdım. Yazabilirim. Şunu yazabilir miyim? Yıldızla içeri girdim. A'yı hiç almadım. B'yi almadım. C'yi aldım. Parantezden çıktım. Yıldız olduğu için bir daha bu paranteze girdim. A'yı almadım. B'yi aldım. C'yi almadım. Bunu da yazarım.
+
+1023
+02:33:40,371 --> 02:33:57,771
+Bunu yazabilir miyim? Bu paranteze yıldızla içeri girdim, A'yı aldım, B'yi almadım, C'yi aldım, çıktım, yıldızla içeri girdim, A'yı almadım, B'yi aldım, C'yi almadım, yazabilirim
+
+1024
+02:33:57,771 --> 02:34:04,211
+Ama bu bütün üşengeç ve tembellerin kullanacağı bir notasyon, her türlü şey yazılır
+
+1025
+02:34:04,211 --> 02:34:16,171
+ama genelde bana bir olay verilir. Bu olayın karşılıkları ya da karşılıklar verilir. Bunları sağlayan ifadeyi yazmam istenir.
+
+1026
+02:34:17,251 --> 02:34:18,571
+Sorusu olan var mı burada?
+
+1027
+02:34:23,379 --> 02:34:26,699
+Peki sormayı
+
+1028
+02:34:26,699 --> 02:34:41,820
+Bu aslında demin anlattığım şey yıldız boş küme dahil her şey artı her şeyin içinden boş kümeyi çıkarıyorum en az bir kez olacak.
+
+1029
+02:34:41,820 --> 02:34:49,499
+iki farklı stringi concat edebiliyorum. concat etmek demek arka arkayı birleştirmek demek.
+
+1030
+02:34:49,499 --> 02:35:18,859
+alfa ve beta 2 stringim var birleştirdim bu şekilde yazdım alfa beta birleştirilmiş stringim boyu ne olur alfanın boyu neyse b'nin de boyu neyse bunların toplamı alfa betayı verir alfada 2 4 6 var 2 4 5 var 6 artı 5 11 olacak üstleri topla 2 3 7 8 9 10 11 üstler de 11'i verdi
+
+1031
+02:35:19,499 --> 02:35:37,060
+Şimdi sayı sistemlerine geçelim. Bu sayı sistemleri artık hepinizin bildiği olduğunu düşünüyorum. Yani ben bunları sıfırdan vermek olarak değil, hatırlatmak amacıyla yüzeysel olarak geçmek istiyorum.
+
+1032
+02:35:37,060 --> 02:35:45,519
+Bildiğiniz gibi biz günlük hayatımızda 10 tabanında, lojik ve mantıkta 2 tabanında kullanıyoruz.
+
+1033
+02:35:46,199 --> 02:36:00,519
+Ama SM'li dilinde, alçak seviyeli dillerde ya da bir kodu makine dilinde trace ederken 16 tabanında işlemler görüyoruz.
+
+1034
+02:36:00,519 --> 02:36:03,699
+SM'li dersinde bu dönem alıyordunuz herhalde.
+
+1035
+02:36:03,699 --> 02:36:10,799
+debug ettiğiniz vakit yazdığınız bir kodu. Heksadesimal karşılıklarını göreceksiniz 10 tabanında.
+
+1036
+02:36:11,439 --> 02:36:20,040
+Bir de oktali 8 tabanı var. Bu genelde fen alanlarında kullanılan bir taban. Pek bizimle ilişkisi olmayan bir şey.
+
+1037
+02:36:20,659 --> 02:36:29,600
+Çünkü her taban var. 2, 3, 4, 5, 6, 7, 8 bazıları bazı alanlarda kullanıldığı için özel isimler verilmiş.
+
+1038
+02:36:29,599 --> 02:36:43,059
+işte buna binary, buna hexadecimal, buna oktal gibi. Bu oktal falan da bilmiyorum başka bir dilde 8'in karşılığıdır diye düşünüyorum.
+
+1039
+02:36:43,059 --> 02:36:58,579
+Burada mesela 45.238 sayısı var. Bu 45 virgül şey değil, 238 diye iki sayı değil. Burada aslında bu da yanlış, bu virgül.
+
+1040
+02:36:58,579 --> 02:37:11,559
+nokta olması lazım. Biz Türkçe'de yani Türkçe'de doğru basamakları ayırırken nokta, küsuratı verirken virgül kullanıyoruz.
+
+1041
+02:37:11,799 --> 02:37:17,859
+İngilizce'de ise tam tersi. Bu yine kitaptan alınmış bir örnek olduğu için böyle kalmış.
+
+1042
+02:37:17,859 --> 02:37:21,059
+bunu değiştirmem gerekirdi ama değiştirmemişim.
+
+1043
+02:37:21,059 --> 02:37:30,339
+10 tabanında bir sayı ise şurası 10'un sıfırıncı kuvveti hatırlıyorsunuz.
+
+1044
+02:37:30,759 --> 02:37:38,579
+Şurası 10'un birinci kuvveti, şurası 10'un ikinci, 10'un üçüncü ve 10'un dördüncü kuvvetiyle çarpılıyor.
+
+1045
+02:37:38,579 --> 02:37:54,059
+İşte birinci kuvvetiyle çarptık, onun sıfırıncı kuvvetiyle çarptım, bir, sekiz, birinci kuvvetiyle çarptım, üçü, on, ikinci kuvvetiyle çarptım, yüzü, ikiyle, üçüncü kuvveti, bin, dördüncü kuvveti, on, bin
+
+1046
+02:37:54,059 --> 02:38:01,899
+bu dijitleri çarptığım vakitte bunları da topladığımda 45.238 sayısı karşıma çıktı.
+
+1047
+02:38:01,899 --> 02:38:08,379
+Demek ki bana 10 tabanında verilmiş olan bir sayıyı 2 tabanına
+
+1048
+02:38:09,876 --> 02:38:13,856
+Çevirmem için yapmam gereken bir işlem var.
+
+1049
+02:38:14,376 --> 02:38:20,716
+İki tabanındaki bir sayı on tabanına çevirmek için de yapmam gereken bir işlem var.
+
+1050
+02:38:20,836 --> 02:38:22,455
+Şimdi bunları hatırlayalım.
+
+1051
+02:38:22,935 --> 02:38:30,575
+Burada sadece on tabanındaki bir sayı, on tabanı ise onun katlarıyla çarpılıyor buradaki dijital.
+
+1052
+02:38:31,015 --> 02:38:34,255
+Burası dokuz tabanında olabilir.
+
+1053
+02:38:34,255 --> 02:38:35,255
+Neden?
+
+1054
+02:38:35,255 --> 02:38:41,135
+her taban kendisinden küçük olan sayılarla ifade edebilir mi?
+
+1055
+02:38:41,376 --> 02:38:42,995
+Buraya 8 tabanı diyemem.
+
+1056
+02:38:43,095 --> 02:38:44,515
+Neden? İçinde 8 var.
+
+1057
+02:38:44,615 --> 02:38:45,675
+Buraya 7 diyemem.
+
+1058
+02:38:45,775 --> 02:38:47,255
+Neden? İçinde 8 var.
+
+1059
+02:38:47,615 --> 02:38:49,736
+Buraya ancak 9 tabanı diyebilirim.
+
+1060
+02:38:50,056 --> 02:38:51,855
+Kendisinden küçük sayılar var.
+
+1061
+02:38:52,255 --> 02:38:53,975
+Buraya neden 10 tabanı diyorum?
+
+1062
+02:38:53,975 --> 02:38:59,975
+Çünkü 10'dan küçük olan 0 ile 9 arasındaki sayılardan oluştuğu için.
+
+1063
+02:39:01,236 --> 02:39:04,535
+Şimdi binary bir sayı verilmiş olsun bize.
+
+1064
+02:39:04,535 --> 02:39:07,355
+binary sayımız, nada yine mouse'um yok oldu.
+
+1065
+02:39:07,776 --> 02:39:09,376
+Binary sayım verilmiş olsun.
+
+1066
+02:39:09,495 --> 02:39:12,675
+Bu binary sayıyı 10 tabanına çevirmek istiyorum.
+
+1067
+02:39:12,896 --> 02:39:19,816
+Yani bana şurası 2 tabanında verilmiş ve bana soruluyor ki bunun 10 tabanındaki karşılığı nedir?
+
+1068
+02:39:20,355 --> 02:39:21,056
+Ne yapıyoruz?
+
+1069
+02:39:21,975 --> 02:39:24,295
+Burası 2'nin sıfırıncı kuvveti.
+
+1070
+02:39:25,036 --> 02:39:27,255
+Burası 2'nin birinci kuvveti.
+
+1071
+02:39:27,255 --> 02:39:34,955
+2. 3. 4. 5. ve burası da 2'nin 6. kuvveti olarak bu sayılarla çarpıyoruz.
+
+1072
+02:39:35,775 --> 02:39:39,535
+1'i aldı 2'nin 0. kuvvetiyle çarptım.
+
+1073
+02:39:39,995 --> 02:39:43,335
+1'i aldım 2'nin 1. kuvvetiyle çarptım.
+
+1074
+02:39:43,495 --> 02:39:46,655
+0'ı aldım 2'nin 4. kuvveti.
+
+1075
+02:39:46,736 --> 02:39:48,335
+1'i aldım 2'nin 3.
+
+1076
+02:39:48,815 --> 02:39:50,835
+0'ı aldım 2'nin 4.
+
+1077
+02:39:51,195 --> 02:39:53,175
+1'i aldım 2'nin 5.
+
+1078
+02:39:53,655 --> 02:39:55,255
+Şuradaki 1'i aldım.
+
+1079
+02:39:55,255 --> 02:39:57,615
+2002'nin 6. kuvvetiyle
+
+1080
+02:39:57,615 --> 02:39:59,995
+çarptım. Bunları topladığımda
+
+1081
+02:39:59,995 --> 02:40:01,775
+da 107 sayısı
+
+1082
+02:40:01,775 --> 02:40:02,895
+bana çıktı.
+
+1083
+02:40:03,675 --> 02:40:05,736
+Peki bunun tam tersini yapmak
+
+1084
+02:40:05,736 --> 02:40:08,195
+istiyorsam 107 sayısı
+
+1085
+02:40:08,195 --> 02:40:09,255
+10 tabanında
+
+1086
+02:40:09,255 --> 02:40:11,555
+2 tabanındaki diğerini bulmak
+
+1087
+02:40:11,555 --> 02:40:13,555
+istiyorsam da ne yapmam lazım?
+
+1088
+02:40:13,855 --> 02:40:15,355
+Bu işlemin tam tersi.
+
+1089
+02:40:15,355 --> 02:40:17,315
+Şimdi 2 ile
+
+1090
+02:40:17,315 --> 02:40:19,236
+çarpıyorsam o zaman da
+
+1091
+02:40:19,236 --> 02:40:20,855
+ne yapacağım? 2'ye
+
+1092
+02:40:20,855 --> 02:40:23,415
+böleceğim. Bu da o
+
+1093
+02:40:23,415 --> 02:40:26,615
+Mesela 73 sayısı var 10 tabanında.
+
+1094
+02:40:27,155 --> 02:40:31,315
+Bunun 2 tabanındaki karşılığını almak istiyorsam ne oldu?
+
+1095
+02:40:31,595 --> 02:40:35,455
+13, 2 ger 6 12 kaldı 1.
+
+1096
+02:40:36,015 --> 02:40:38,135
+İşte şu kalan şu 1.
+
+1097
+02:40:39,295 --> 02:40:40,315
+Bu da 36.
+
+1098
+02:40:40,935 --> 02:40:42,815
+36 çarpı 2 73.
+
+1099
+02:40:43,376 --> 02:40:45,876
+Sonra aldım 36'yı 2'ye böldüm.
+
+1100
+02:40:46,596 --> 02:40:48,815
+1, 2 16 8.
+
+1101
+02:40:49,515 --> 02:40:50,355
+Burası ne oldu?
+
+1102
+02:40:50,515 --> 02:40:50,855
+0.
+
+1103
+02:40:51,395 --> 02:40:52,175
+Kalan 0.
+
+1104
+02:40:52,176 --> 02:40:55,355
+İşte şu 0 kalan şuradaki 0.
+
+1105
+02:40:55,836 --> 02:40:58,236
+18 2'ye böldüm.
+
+1106
+02:40:58,636 --> 02:41:01,616
+9 burada yine 0 kaldı.
+
+1107
+02:41:01,995 --> 02:41:03,956
+İşte şu kalan bu 0.
+
+1108
+02:41:04,696 --> 02:41:06,176
+9'u 2'ye böldüm.
+
+1109
+02:41:07,176 --> 02:41:10,176
+4 8 burada 1 kaldı.
+
+1110
+02:41:10,575 --> 02:41:12,136
+Şu kalan bu kalan.
+
+1111
+02:41:12,715 --> 02:41:14,196
+4'ü 2'ye böldüm.
+
+1112
+02:41:14,515 --> 02:41:16,935
+2 burada 0 kaldı.
+
+1113
+02:41:17,295 --> 02:41:19,575
+Bu kalan işte bu kalan.
+
+1114
+02:41:19,575 --> 02:41:46,756
+İkiyi ikiye böldüm. Bir. Burada sıfır kaldı. Bu kalan işte bu kalan. En sondaki bir de buraya konuluyor. Okurken sondan başlıyorum. Başa doğru okuyorum. Bir. İşte bu. İki tane sıfır. İki tane sıfır. Bir. İşte bu. İki tane sıfır. İki tane sıfır. Bir. İşte bu.
+
+1115
+02:41:46,755 --> 02:42:00,555
+Binary'i resim halden binary'e çevirirken ikiye bölüyorum ve sondan başlayarak en son bölümde kalanlarla yazıyorum.
+
+1116
+02:42:02,899 --> 02:42:03,899
+73, 10 tabanına da ki bir sayıyı 2 tabanına değil de diyelim ki ben bunu 3 tabanına çevirseydim ne olacaktı? 73'ü 3'e bölerek gidecektim. Yine sondan başlayarak alacaktım. Bunun 73 olduğunu nereden biliyorum? Şurayı 2 üzeri 0 ile burayı 2 üzeri 1 ile burayı 2 üzeri 2 ile
+
+1117
+02:42:32,899 --> 02:42:43,780
+2 üzeri 3 ile 2 üzeri 4, 2 üzeri 5, 2 üzeri 6 ile çarptığımda bunun sonucunun da 73 çıkacağını biliyorum.
+
+1118
+02:42:43,780 --> 02:42:45,659
+Bu F değil 73.
+
+1119
+02:42:46,260 --> 02:42:53,339
+Demek ki 10 tabanından hangi tabana çevirmek istiyorsam 10'a bölüyorum.
+
+1120
+02:42:53,580 --> 02:42:57,580
+Yani o çevirmek istediğim tabana bölüyorum ve sondan alıyorum yazmaya.
+
+1121
+02:42:57,580 --> 02:43:04,879
+10 tabanından diğer tabanlara çevirmek istiyorsam da o tabanların katlarıyla çarpıyorum.
+
+1122
+02:43:05,339 --> 02:43:06,719
+Aynen burada olduğu gibi.
+
+1123
+02:43:06,719 --> 02:43:09,120
+Peki şöyle bir şey bize sorulsam.
+
+1124
+02:43:10,219 --> 02:43:22,060
+17 tabanında 8 tabanında 17 bunun 2 tabanındaki karşılığı nedir?
+
+1125
+02:43:22,059 --> 02:43:38,399
+Bu bir tane parantez işte nokta nokta nedir? Burada da yapacağım şey önce 8 tabanını 10 tabanına çevireceğim sonra 10 tabanını 2 tabanına çevireceğim
+
+1126
+02:43:38,399 --> 02:43:49,939
+10 tabanı benim arada kullandığım bir taban 8'i 10'a onu da 2'ye çevirmem gerekiyor. Bunları BBG1'de görmüş olmanızı umuyorum.
+
+1127
+02:43:49,940 --> 02:43:53,660
+Yani bunu zaten biliyor da olmanız gerekir
+
+1128
+02:43:53,660 --> 02:43:59,800
+Banneri toplama tablosu or işlemini yaparken hep biz ne diyorduk?
+
+1129
+02:43:59,800 --> 02:44:07,880
+Bir ile biri topladık, bir yazıyorduk ama ben işlem yaparken bu nedir?
+
+1130
+02:44:07,959 --> 02:44:13,480
+Bir ile biri topladım, ikidir ama iki tabanında iki yazamıyorum
+
+1131
+02:44:13,480 --> 02:44:25,459
+elde bir var diyorum sıfır oluyor. Burası benim sum'ım oluyor yani toplamım. Burası da benim carry yani eldem oluyor.
+
+1132
+02:44:29,060 --> 02:44:38,819
+Şunu egzor işaretiyle karıştırmayalım. Yani egzor'un aynısı ama niye buraya bunu koymuş? Bu da yine kitaptan alınmış olan bir şey.
+
+1133
+02:44:38,819 --> 02:44:58,719
+yani burada bir egzor işlemi yok. Aslında şöyle de düşünebilirsin. Girişler aynıysa sıfır. Girişler aynıysa sıfır. Ama burada bir tane de elden oluşuyor. Ama yani ikili toplama. Ben mesela şöyle bir şeyi toplasaydım. Nasıl toplayacaktım?
+
+1134
+02:44:58,719 --> 02:45:05,879
+1, 2, 1 daha 3, 2 tabanında işlem yapıyorum.
+
+1135
+02:45:05,879 --> 02:45:11,019
+O zaman 2'yi çıkardım 3'den, 1 kaldı, 1 tane de elde.
+
+1136
+02:45:11,479 --> 02:45:22,199
+Aynı 9 ile 2'yi topluyorum 11, 10 tabanında işlem yapınca 10'u çıkarıp 1 elde var 1 demem gibi burası da aynı oluyor.
+
+1137
+02:45:22,200 --> 02:45:32,920
+Ütebayları sayılarda toplama 1, 1 daha 2, 0 yazdım, elde 1'i buraya koydum.
+
+1138
+02:45:33,459 --> 02:45:40,099
+0, 1 daha 1, elde de 1 vardı 2, 0'ı buraya yazdım, elde 1'i buraya koydum.
+
+1139
+02:45:40,099 --> 02:45:47,039
+1, 0 daha 1, elde 1 vardı 2, buraya yazdım, elde 1'i buraya koydum.
+
+1140
+02:45:47,039 --> 02:46:02,359
+0 artı 0, 0, elde 1 vardı 1, buraya yazdım artık eldem yok. 0 ile 1'i topladım 1, 1 ile 1'i topladım 2, 0, elde var 1, o biri de buraya yazdım.
+
+1141
+02:46:02,672 --> 02:46:06,672
+Bu da benim iki tabanımda toplama halim.
+
+1142
+02:46:06,672 --> 02:46:22,672
+Hexadesimal sayılarımıza bakalım. Hexadesimal sayı 16 tabanıdır. 0'dan 15'e kadar sayılarım var. Fakat 9'dan sonra sayılara başka semboller atıyorum.
+
+1143
+02:46:22,672 --> 02:46:39,471
+A 10 demek B 11, C 12, D 13, E 14, F 15. Yani ben şöyle bir sayı görüyorsam bunu ne anlayacağım?
+
+1144
+02:46:39,471 --> 02:46:48,512
+16 tabanında işlem yapıyorum çünkü bunun artık tabanı 16, F15 sayısı ise burası 16 demektir.
+
+1145
+02:46:49,071 --> 02:47:00,892
+15, 2 daha nedir? 17'dir. 16 elde 1'i çıkardım. Burası 1, burası da 1'dir. Elde de 1 var. Burası da 16 tabanıdır.
+
+1146
+02:47:00,891 --> 02:47:23,811
+Burası neydi? 16'nın sıfırıncı kuvveti. Burası neydi? 16'nın birinci kuvvetiydi. 16'nın birinci kuvveti 16 çarpı 1 çarpı 1 16 artı 16'nın sıfırıncı kuvveti 1 1 çarpı 1 1 ekledim buraya. Ne etti? 17 etti.
+
+1147
+02:47:23,811 --> 02:47:38,011
+F15'te 2'de 2'de 17 eder. İşte sana 17. Heksadesimal sayılarda 16 taban olduğu için elimde 0'dan 15'e kadar sayılar olacak.
+
+1148
+02:47:38,011 --> 02:47:49,691
+Fakat 0 ile 15 arasını tek bir sembolle ifade etmem gerekiyor. Aynen bunlarda olduğu gibi bunun içinde de A'dan F'ye kadar olan sayıları kullanıyoruz.
+
+1149
+02:47:49,691 --> 02:48:00,851
+3 sılaj sonra dersi bitireceğim. Çünkü önümüzdeki hafta bununla başlarız.
+
+1150
+02:48:04,755 --> 02:48:34,735
+tamam buraya geçelim işte hexadesimal sayıları nasıl buluruz ona gelelim elimde şöyle bir sayı var bunun desimal karşılığı nedir ne yapıyordum 16'nın 0. kuvveti 16'nın 1. kuvveti 16'nın 2. kuvveti 16'nın da 3. kuvveti diyorduk 16'nın 3. kuvvetini 3 ile 16'nın 2. kuvvetini 10 ile çünkü buradaki a nedir?
+
+1151
+02:48:34,755 --> 02:49:03,915
+11. kuvvetini 0 ile burada 0 var. 16'nın 0. kuvvetini de B ile B'de neydi? B'de 11'di. Yazdık 11, 0, 2506, 12288 topladım 14859. Şu hexadesimal sayının desimal karşılığı 14859.
+
+1152
+02:49:03,915 --> 02:49:32,735
+Bu verilip bana bunun 16 tabanındaki sorun sayıda ne yapacaktı? 14.859'u alacaktı. 16'ya böleceğim. Burada bir kalan olacak. Sonra buradaki sayıyı alacağım. 16'ya böleceğim. Burada bir kalan olacak. Burada bir kalan. Buradaki sayı gidecek. Sonra sondan başlayacağım okumaya. O zaman da şu sayıyı elde edeceğim.
+
+1153
+02:49:32,735 --> 02:49:36,055
+Her şey artık birbirinin aynısı
+
+1154
+02:49:36,055 --> 02:49:41,875
+İşte burada da o demin yaptığımı anlatıyor
+
+1155
+02:49:41,875 --> 02:49:44,795
+Heksadesimaldan heksadesimale
+
+1156
+02:49:44,795 --> 02:49:49,395
+Bu sayıyı alıyor 16'ya bölüyor 146 kalanı 9
+
+1157
+02:49:49,395 --> 02:49:54,235
+Sonra 146'ya alıyor 16'ya bölüyor 9 kalanı 2
+
+1158
+02:49:54,235 --> 02:49:57,255
+Artık 9'u 16'ya bölemez küçük
+
+1159
+02:49:57,255 --> 02:49:58,755
+Nasıl okuyor?
+
+1160
+02:49:59,955 --> 02:50:01,155
+Şimdi burası ne oldu?
+
+1161
+02:50:01,155 --> 02:50:30,315
+23, 45'i 16'ya böldü burası 146 kalanım nedir 9 sonra burayı 16'ya böldü kalanım nedir pardon burası nedir 9 burası 2 artık burayı 16'ya bölemiyor çünkü 16'dan küçük bir sayı sondan başlıyor okumaya 9, 2, 9 bu da benim
+
+1162
+02:50:31,155 --> 02:50:55,195
+16 tabanındaki karşılığım bakın hepsi 16'dan küçük sayılar. Bu da benim desimal karşılığım. Bunu 16'ya çevirdirse böldük. Bunu 10 tabanına çevirdirse ne yapacaksın? 16'nın sıfırıncısıyla, 16'nın birincisiyle, 16'nın ikincisiyle çarpacaksın. 2345 sayısını elde edeceğiz.
+
+1163
+02:50:55,196 --> 02:51:00,436
+Son olarak da bu heksadesimal sayıları toplayalım
+
+1164
+02:51:00,436 --> 02:51:02,815
+A neydi? 10'du
+
+1165
+02:51:02,815 --> 02:51:06,235
+F neydi? 15'ti
+
+1166
+02:51:06,235 --> 02:51:08,656
+10-15, 25
+
+1167
+02:51:08,656 --> 02:51:11,735
+16 tabanında işlem yapıyorum
+
+1168
+02:51:11,735 --> 02:51:14,196
+16'yı çıkarayım 5'ten
+
+1169
+02:51:14,196 --> 02:51:15,735
+9 kaldı
+
+1170
+02:51:15,735 --> 02:51:18,556
+Elde ne var? 1 var
+
+1171
+02:51:18,556 --> 02:51:19,655
+Yani
+
+1172
+02:51:19,655 --> 02:51:24,955
+8, 3 daha 11
+
+1173
+02:51:24,955 --> 02:51:47,935
+elde 1 var 12, 12 neydi? C'di. Sonra 2'ye indirdim, indirdim. İşte hexadesimal sayılarımızı da topladık. Evet arkadaşlar bu haftayı burada bitiriyorum. Önümüzdeki hafta şunları da unutmadan hepsini bir sileyim.
+
+1174
+02:51:47,935 --> 02:51:58,555
+niye silmiyor sildi mi hayır tamam o neyse
+
+1175
+02:52:00,275 --> 02:52:11,795
+önümüzdeki hafta fonksiyonlarla devam edeceğiz. Herhalde slide'ın geri kalan taraflarını da bitirmiş olacağım. Yani olacağımı düşünüyorum.
+
+1176
+02:52:11,795 --> 02:52:27,036
+Şuradan da çıkamadım yalnız. Alo, ay alo diyorum pardon. Ziyan boş bulundum. Ay sizi kaybettim zannettim buradasınız. Tamamdır.
+
+1177
+02:52:27,036 --> 02:52:38,136
+fonksiyonlardan devam edeceğim. O sınıfın mevcutu daha da azalmış. Evet bu yolda ilerleyin arkadaşlar. Birbirinize WhatsApp gruplarınız vardır. Yazın.
+
+1178
+02:52:38,136 --> 02:52:52,435
+Hoca bu yolda ilerleyelim. Son hafta 2-3 kişiyle ders yapmak istiyormuş diye yazın. İroni yapıyorum birazcık. Anlamadığınız yerler olursa lütfen bakın. Dersin başında bana sorarsınız.
+
+1179
+02:52:52,435 --> 02:53:00,755
+bonus sorum vardı ilk beş kişi için bugün içinde gönderilenlerinkine bakacağım ilk beşe.
+
+1180
+02:53:00,755 --> 02:53:09,316
+Tabii hiç bugün göndermeyip yarın gönderirseniz göndermeyin bugün için çünkü bunlar anlık sorular ve çok basit bir soru o.
+
+1181
+02:53:10,335 --> 02:53:16,856
+Başka ne söyleyebilirim? Sağlığınız, kendinize iyi bakın ve iyi hafta sonları diliyorum size.
+
+1182
+02:53:17,735 --> 02:53:18,415
+Hoşçakalın.
+
+1183
+02:53:18,835 --> 02:53:20,136
+Teşekkürler hocam görüşürüz.
+
+1184
+02:53:21,535 --> 02:53:22,115
+Görüşürüz.
+
+1185
+02:53:22,435 --> 02:53:23,275
+hoşçakalın

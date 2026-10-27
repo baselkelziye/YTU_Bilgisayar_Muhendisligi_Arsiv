@@ -1,0 +1,6067 @@
+1
+00:01:50,036 --> 00:01:52,036
+günaydın arkadaşlar.
+
+2
+00:01:52,036 --> 00:01:55,036
+günaydınlar hocam nasılsınız?
+
+3
+00:01:55,036 --> 00:01:57,036
+iyiyim sizden nasılsınız?
+
+4
+00:01:57,036 --> 00:01:59,036
+teşekkür ederiz hocam.
+
+5
+00:01:59,036 --> 00:02:05,036
+birazcık bekliyorum 5 dakika gibi ancak bağlanıyorlar.
+
+6
+00:02:05,036 --> 00:02:14,036
+şöyle bir bakalım neler var kimler var yeni isimler görüyor muyum?
+
+7
+00:02:21,843 --> 00:02:28,023
+yeni biri eklenince ekranda değişiyormuş. Aynı isimliye her iki tarafta da var dedim.
+
+8
+00:02:29,763 --> 00:02:39,063
+Tık. Eee bu kaçıncı haftamız? Üçüncü haftamız bitiyor. Daha yarıya gelemedik ama.
+
+9
+00:02:42,143 --> 00:02:49,843
+Bu şey yapıyor musunuz? Yani nasıl geçiyor hayatınız bilmiyorum. Mesela dersi dinliyorsunuz.
+
+10
+00:02:49,843 --> 00:02:59,843
+Yollarda git gidiniz yok mesela şu an işte trafik problemi yok yolda gidip gelme yok bu süreleri ne ile geçiriyorsunuz?
+
+11
+00:03:01,403 --> 00:03:02,244
+Çalışarak mı?
+
+12
+00:03:04,283 --> 00:03:06,024
+Derse tekrar ederek mi?
+
+13
+00:03:06,583 --> 00:03:08,223
+Ne yapıyorsunuz? Merak ettim.
+
+14
+00:03:12,500 --> 00:03:17,319
+aa sarı gibi saklanıyor. Peki. Öyle olsun.
+
+15
+00:03:18,859 --> 00:03:21,139
+Derslere daha fazla vaktimiz kalıyor hocam.
+
+16
+00:03:21,559 --> 00:03:22,880
+Ne geliyor? Bir tane söyleyin.
+
+17
+00:03:25,679 --> 00:03:26,399
+Duymadım.
+
+18
+00:03:29,159 --> 00:03:34,659
+Hocam, derslere daha fazla vaktimiz kalıyor tabii ki. Yani iyi oldu o konuda da.
+
+19
+00:03:35,859 --> 00:03:36,899
+Ya da dedi.
+
+20
+00:03:38,039 --> 00:03:39,879
+Yok, iyi oldu o konuda dedim.
+
+21
+00:03:39,879 --> 00:03:43,759
+Böyle sanki ama gibi bir şey duydum
+
+22
+00:03:43,759 --> 00:03:46,779
+Yok yok, daha dedim sonunda
+
+23
+00:03:52,659 --> 00:04:00,779
+Ahmet Hoca acaba diğer bölümlere kadar gelmiş ben [öğrenci] ile konuşamadım birkaç günden beri ona soramadım haberiniz var mı
+
+24
+00:04:08,819 --> 00:04:32,979
+haberiniz yok. peki 35 oldu. 5 geçe de oldu. Tamam. Şimdi biz neler yaptık? İlk önce onlardan birazcık bahsedelim. İlk hafta bir ayrık matematik nedir? Kullanım alanları nereleridir? Nerelerde ihtiyaç duyulur? Bunları gördük.
+
+25
+00:04:32,979 --> 00:04:51,360
+Sonra ikinci hafta biz kaçıncı şeydeyiz? Üçüncü bölümdeyiz. İkinci haftada mantık ve ispatı gördük ikinci ve üçüncü haftalarda. Burada aklınızda en çok kalan hangi konu oldu?
+
+26
+00:04:56,788 --> 00:05:05,788
+yine bilmiyorsunuz. Peki mantıksal kapıları gördük çok önemli bizim için. Yani aslında önermenin ne olduğunu gördük.
+
+27
+00:05:05,788 --> 00:05:15,788
+sonucu true veya false olan ifadeleri önerme diyorduk. Önermeleri birbirleriyle birleştirerek mantıksal ifadeler yazabiliyorduk.
+
+28
+00:05:15,788 --> 00:05:25,788
+bugünkü dersin sonunda da bu mantıksal ifadelerin ya da fonksiyonların nasıl sadeleştirildiğini göreceğiz.
+
+29
+00:05:25,788 --> 00:05:52,767
+sizler için video çektim. 4 tane falan videomuz var. O videoları izleteceğim. Çektim diyorum çünkü onları adım adım anlatmam gerekiyor. Slide üzerinden anlatım zor olduğu için tahtaya yapıyormuş gibi kağıdı açızarak videoyu aldım. Video tamamlandıktan sonra ya da eğer videoyu durdurup arada soru sorma imkanı oluyor mu sistemde bilmiyorum.
+
+30
+00:05:52,767 --> 00:06:18,228
+onu da kontrol ederek aralarda soruları da alabiliriz. End kapısını, or kapısını gördük. End kapısı çarpma işlemini yapıyordu. Neydi end kapısı? Girişlerden bir tanesinin false olması, çıkışı false yapıyordu. Or kapısı da, hadi ilk başta bir görüntümü açayım. Or kapısı da toplama işlemini yapıyordu.
+
+31
+00:06:18,227 --> 00:06:41,467
+Toplumda işlemi de neydi? Girişlerden bir tanesinin turu olması çıkışı turu yapmaya yeterliydi. Arkasından nap kapısını gördük. Nap kapısı giriş neyse çıkışımız o oluyordu, tersi oluyordu. Arkasından egzoru gördük. Egzor deyince aklımıza gelen şey neydi? Çıkarma işlemiydi.
+
+32
+00:06:41,468 --> 00:06:53,808
+çıkarmadan aklımızda kalsın demiştik. Girişlerin her ikisi de aynıysa çıkış sıfırdı. Ondan sonra ise kapısı vardı.
+
+33
+00:06:53,808 --> 00:07:04,927
+If, P, then, Q yapısıydı. Bunun doğruluk tablosu neydi? Birincisi true, ikincisi false, çıkış false, geri kalanlar da true'ydu.
+
+34
+00:07:04,927 --> 00:07:28,707
+arkasından ancak ve ancak geldi çift taraflı önerme if and only if diye okuyorduk bunun doğruluk tablosu da egzorun tam tersi olsun dedik girişlerin her ikisi de aynıysa çıkışımız true'ydu arkasından mantıksal denkliği gördük
+
+35
+00:07:28,707 --> 00:07:42,847
+Mantıksal denklik neydi? Girişleri aynı olmak koşuluyla iki tane farklı ya da ikiden fazla farklı önermem olsun aynı sonucu veriyorsa bunlara mantıksal olarak denktir diyorduk.
+
+36
+00:07:43,508 --> 00:07:48,847
+Arkasından tabii unutuyorum neler olduğunu sırasında converse vardı.
+
+37
+00:07:48,847 --> 00:07:58,127
+P ise Q, Q ise P olarak adlandırıyorduk. Sonra contradiction vardı.
+
+38
+00:07:58,707 --> 00:07:59,207
+Bu neydi?
+
+39
+00:08:00,800 --> 00:08:13,479
+P ise Q'nun tersini alıp onun da inversini alıyordu. Q ise, pardon, Q ise P iseydi. Başka ne kavramları vardı? Contradiction ile totoloji vardı.
+
+40
+00:08:13,479 --> 00:08:23,959
+girişler ne olursa olsun, çıkış her zaman biri veriyorsa totoloji, giriş ne olursa olsun, çıkış hepsi sıfırsa, Contradiction'dı.
+
+41
+00:08:23,959 --> 00:08:36,380
+Arkada neler vardı hatırlayamıyorum şimdi. Arkasından ispatları gördük. İspatlar doğrudan ve dolaylı ispatlar bir de tümevarımsal ispat vardı.
+
+42
+00:08:36,380 --> 00:08:45,719
+Doğrudan ispat neydi? P'nin doğru olduğunu kabul ederek Q'yu ispatlamaya çalışıyorduk.
+
+43
+00:08:45,719 --> 00:08:55,739
+dolaylı ispat ise P'nin doğruluğunu ispatlayamadığımız durumlarda olayın çelişkisinden yola çıkıyorduk.
+
+44
+00:08:55,739 --> 00:09:03,160
+Yani o zaman Q ise değildir'i doğru kabul edip P ise değildir'i ispatlıyorduk.
+
+45
+00:09:03,339 --> 00:09:08,299
+Bu ispat doğru olursa tam tersinin de doğru olduğunu kabul ediyorduk.
+
+46
+00:09:08,759 --> 00:09:11,339
+Tümevarımsal ispatta ne yapıyorduk?
+
+47
+00:09:11,340 --> 00:09:32,660
+tümevarımsal ispatta da ilk önce önermeye bir değerini verip doğru olduğunu kabul edip aradan bir K değerini alıp K'nın değerini alıp K'da bu doğruysa K artı birinci değerde de doğrudur deyip ispatlamaya çalışıyorduk.
+
+48
+00:09:32,660 --> 00:09:54,079
+Başka bu bölümde ne vardı? Başka bir şey olduğunu hatırlamıyorum. Sadece belki bana bir paragraf, bir takım olaylar verilir. Bu olayları ayırabildiğim kadar önermeleri ayırır. Belki de bir teksti matematiksel önermelerle yazabiliyordum.
+
+49
+00:09:54,079 --> 00:10:02,520
+Yine önemli bir noktamız vardı. Önermelerimiz hiçbir zaman negatif olmuyordu. Önermelerimiz pozitif olmak zorundaydı.
+
+50
+00:10:03,679 --> 00:10:11,999
+Evet, şimdi bu haftamıza bakalım. Şimdi bu haftada Bul Cebrin'i göreceğiz.
+
+51
+00:10:12,719 --> 00:10:18,139
+Bul Cebrin'de şöyle bir başlık koymuş. Burasını Ahmet Hoca hazırladı.
+
+52
+00:10:18,139 --> 00:10:31,240
+kendinizi lojik dersinde falan zannetmeyin. Orada iki dönemde göreceğiniz, bir dönemde göreceğiniz olayı şurada on dakika içerisinde bir özetleyeceğiz.
+
+53
+00:10:31,699 --> 00:10:43,240
+Ayrık matematik ne dedik aslında? Computer Science'daki bilgisayar bilimlerindeki birçok konunun bir introsu, girizgığı.
+
+54
+00:10:43,240 --> 00:10:54,779
+yani ben olaylarımı ayrık sonlu bir şeyden dijital sayısal bir kavrama nasıl çeviriyorum bunları görüyoruz.
+
+55
+00:10:55,160 --> 00:11:03,439
+Şimdi full screen'imize geçelim. Ben size ekran paylaşımı yaptım mı? Şu an ekranı görüyor musunuz?
+
+56
+00:11:04,840 --> 00:11:05,219
+Hayır.
+
+57
+00:11:05,219 --> 00:11:10,719
+Hayır görmüyorsunuz. Ben boşuna konuştum yine bunların üzerinden. Bir dakika.
+
+58
+00:11:10,719 --> 00:11:21,699
+ekran, evet share screen dedik. Şimdi göreceksiniz nerede? Burada. Şimdi tamam mı? Ses?
+
+59
+00:11:22,520 --> 00:11:23,139
+Geliyor hocam.
+
+60
+00:11:23,320 --> 00:11:23,719
+Tamam.
+
+61
+00:11:26,240 --> 00:11:28,279
+Hadi full screen'e geç.
+
+62
+00:11:30,799 --> 00:11:34,279
+Bu bilgisayara virüs girdi birisinden bile çok şüpheliyim.
+
+63
+00:11:36,059 --> 00:11:36,999
+Allah Allah.
+
+64
+00:11:36,999 --> 00:11:41,999
+yine de bindi bu niye açılmıyor
+
+65
+00:11:45,620 --> 00:11:52,939
+bir saniye full screen yap hiçbir şey yapmıyor
+
+66
+00:11:57,587 --> 00:12:01,587
+yorumu olan var mı arkadaşlar?
+
+67
+00:12:04,244 --> 00:12:10,303
+şu an ekranı görebiliyoruz hocam da. görüyorsunuz ama ben şu sol taraftaki şeyleri görmek istemiyorum.
+
+68
+00:12:10,303 --> 00:12:18,483
+bunu tam ekrana almak istiyorum. o da şu tam ekran ha şimdik olacak. benim mouse'u değiştirmem lazım kesin.
+
+69
+00:12:18,483 --> 00:12:26,244
+evet şimdi aslında şuradaki kapılar şu or toplama işlemini işte yapmış.
+
+70
+00:12:26,244 --> 00:12:41,744
+çarpma işlemini yapıyor. Bu da nat kapısı. Şimdi bul çevre dediğimiz ifade, ifade diyorum kavram, bu Claude Shannon tarafından ortaya atılmış.
+
+71
+00:12:41,744 --> 00:12:54,183
+Çok eski bir tarihlerde değil aslında. 1916'da bu zat-ı muhterem doğmuş olduğuna göre, doğar doğmaz da ortaya bul çevrini atmadığına göre,
+
+72
+00:12:54,183 --> 00:12:56,883
+yani yüzyılımızın içindeki bir şey.
+
+73
+00:12:58,143 --> 00:13:06,443
+Bul fonksiyonları, bul fonksiyonlarını gösterelimi, mantık kapıları ve karno diagramları diye ben söyleyeceğim.
+
+74
+00:13:06,563 --> 00:13:08,023
+Dilim hep ona alışmış.
+
+75
+00:13:08,604 --> 00:13:12,803
+Aslında haritaları çünkü İngilizcesi de karno meptir.
+
+76
+00:13:13,363 --> 00:13:17,063
+Demek ki lojik dersimize gelen bir hoca hep diagram dedi.
+
+77
+00:13:17,363 --> 00:13:18,803
+O bende öyle kaldı.
+
+78
+00:13:18,863 --> 00:13:20,424
+Bir türlü bunu değiştiremiyorum.
+
+79
+00:13:20,424 --> 00:13:49,563
+bul cebriyi şöyle bir hızla yapalım çünkü bunların hepsini bir önceki slide'larımızda görmüştük. Ben kapıların işleyişinde sadece 0-1 üzerinde çalışıyor. Ben bul cebri üzerinde toplama yapabilirim, çarpma yapabilirim. Bu çarpma end'dir. Fakat end diye geçmez de bul'un product diye de geçebilir. Şaşırmayın. Yani buradaki bul'un product end'e karşılık geliyor.
+
+80
+00:13:49,563 --> 00:14:00,483
+komplement de tersinin alınması yine bu komplement işaretinin çok farklı gösterimlerinden size bahsetmiştim o şekilde de gelebilir
+
+81
+00:14:00,483 --> 00:14:03,803
+peki toplama işlemini nasıl yapıyoruz?
+
+82
+00:14:04,583 --> 00:14:12,464
+aslına bakarsanız bu bizim kapımızın bir önceki slide'daki or kapısının nasıl çalıştığını gösteriyor
+
+83
+00:14:12,464 --> 00:14:18,023
+True, True, True, True, True, False, True, False, True, False, False, False
+
+84
+00:14:18,023 --> 00:14:24,303
+Girişlerden bir tanesinin True olması çıkışın True olmasını sağlıyor.
+
+85
+00:14:24,803 --> 00:14:31,824
+Şimdi buradaki toplama işlemi aslında ben 0, 1 üzerinde işlem yaptığım için iki tabanında işlem yapıyorum.
+
+86
+00:14:31,824 --> 00:14:39,184
+1 artı 1, 2'dir. İki tabanında işlem yaptığım için bir tane elde oluyor.
+
+87
+00:14:39,184 --> 00:14:46,244
+2'yi çıkarıyorum. 0 ve elde 1 diye kalıyor. Ben toplama yaptığımda bunu bu şekilde yapacağım.
+
+88
+00:14:46,424 --> 00:14:55,784
+Ama bul cevrinde turu ve turu bana turuyu veriyor. Çünkü burası veya, o veya bu. Bir tanesinin olması yeterli.
+
+89
+00:14:56,184 --> 00:15:03,383
+Peki size şöyle bir soru sorsam. Ben arama motorundayım. Bir sorgu kelimesi gönderdim.
+
+90
+00:15:03,383 --> 00:15:18,383
+sorgu kelimelerimi arada or bağlacıyla gönderdim. Yani diyorum ki Yıldız, yok tek verelim, İstanbul, or, Ankara dedim ve gönderdim.
+
+91
+00:15:19,643 --> 00:15:26,283
+Karşıma hangi sayfaların gelmesi gerekir? İçinde sadece İstanbul geçenler gelebilir.
+
+92
+00:15:26,283 --> 00:15:37,783
+İçinde sadece Ankara kelimesi geçenler gelebilir. Or dediğim için içinde hem İstanbul hem de Ankara kelimesi geçen sayfalar gelecektir.
+
+93
+00:15:37,783 --> 00:15:41,483
+Eğer ben oraya İstanbul, and
+
+94
+00:15:41,971 --> 00:15:50,971
+Ankara deseydim bana gelen sayfaların içerisinde hem İstanbul hem de Ankara'nın olması gerekiyordu.
+
+95
+00:15:50,971 --> 00:16:00,971
+Aslında bu arama yaptığım, arama motorlarındaki arama işlemi Information Retrieval işlemidir. Yani bilgi getirimi işlemidir.
+
+96
+00:16:00,971 --> 00:16:09,971
+O bilgi getiriminin arkasında da kullanılan modellerde mantıksal modeller de var, başka türlü modeller de var.
+
+97
+00:16:09,971 --> 00:16:16,911
+ilk çıkışları arama motorlarının bu mantıksal modellerleydi.
+
+98
+00:16:16,911 --> 00:16:23,231
+Yani ben iki tane şey ararken araya ya artı ya çarpı, ent ya da or koyuyordum.
+
+99
+00:16:23,391 --> 00:16:25,431
+Şu an bunların hiçbirini yapmıyoruz.
+
+100
+00:16:26,211 --> 00:16:29,911
+Şimdi gelelim old product yani ent işlemine.
+
+101
+00:16:31,171 --> 00:16:35,091
+Ent işleminin nasıl çalıştığını geçen haftada hatırlıyoruz.
+
+102
+00:16:35,091 --> 00:16:50,332
+girişlerden bir tanesi false'da çıkış mutlaka false olacak. Komplemente bakalım. Neyse onun tam tersini alıyoruz. Bakın burada da komplementi üzerinde inverse gibi göstermişiz.
+
+103
+00:16:50,332 --> 00:17:02,091
+Yani bunları alışalım. Karşımızda şöyle bir örnek verilsin. Bunun sonucu nedir diye sorulsun. Bunun sonucunu yapabilmem için ne yapmam gerekecek ilk önce?
+
+104
+00:17:02,091 --> 00:17:11,031
+parantez içerisi yapılacak. İşlem önceliğini hatırlayın. Nasıl programlama dillerinde işlem önceliği var?
+
+105
+00:17:11,031 --> 00:17:20,751
+Üst, parantez, parantezin dışında bir üst varsa önce bu işlem yapılacak. Burada da demorgan kuralı var aslında.
+
+106
+00:17:21,491 --> 00:17:30,631
+Demorgan demeyelim de komplement kuralı var. Komplement kuralını uygulayacağız. Yine işlemlerimizi soldan sağa yapabiliriz.
+
+107
+00:17:30,631 --> 00:17:39,951
+Önce şuraya bakalım o zaman bunun içi ne olacak or varsa 1 tersini aldım burası 0 oldu
+
+108
+00:17:44,019 --> 00:17:53,499
+E, bir tersini aldım, sıfır. Bu aşağıdaki çözüm, dur bakayım, çok farklı bir şey oldu. Slide'lara bakmadan girdim.
+
+109
+00:17:54,299 --> 00:18:07,759
+1, and, sıfır. Burası ne oldu? Sıfır oldu. Ha doğru, doğru, sıfır. Burası bir, komplementini aldım, sıfır. Sıfır artı sıfır, sıfırı bana verdi.
+
+110
+00:18:07,759 --> 00:18:17,220
+şuraları açık açık yazdığı için birden panik oldum bu nereden çıktı diye. Sıfır oldu. Peki ilerleyelim.
+
+111
+00:18:19,040 --> 00:18:28,959
+Bul ifadeleri ve bul fonksiyonlarına gelelim. Şimdi bir takım ifadelerim var. Daha sonra ben bunlardan fonksiyonlar oluşturacağım.
+
+112
+00:18:28,959 --> 00:18:34,159
+tanım bir B kümem olsun sıfır ve bir elemanlarından oluşuyor.
+
+113
+00:18:35,219 --> 00:18:37,899
+B üzeri N diye bir fonksiyonum var.
+
+114
+00:18:39,119 --> 00:18:41,519
+Eninci dereceden bir bul fonksiyonu.
+
+115
+00:18:41,979 --> 00:18:47,719
+Elemanlarım X1'den XN'e kadar yeni bir şey öğrendim hemen onu da kullanayım.
+
+116
+00:18:48,159 --> 00:18:56,380
+Elemanlarım X1'den XN'e kadar her bir eleman B kümesinin elemanı ve her biri de
+
+117
+00:18:56,380 --> 00:19:01,219
+iyi değeri de şu indislerde birden n'e kadar yazılmış.
+
+118
+00:19:01,540 --> 00:19:05,320
+Biz aslında şu formları yazmayı hiç sevmeyiz.
+
+119
+00:19:06,880 --> 00:19:13,140
+Böyle şeyler gördüğümüz vakit yazılmış ifadeler bize çok korkunç şeylermiş gibi gelir.
+
+120
+00:19:13,140 --> 00:19:21,960
+Halbuki bu benim sözel olarak söylediğim şeyi anlatan bir yayın yazdığınız vakit ya da akademik bir makale okuduğunuzda,
+
+121
+00:19:21,959 --> 00:19:28,179
+akademik bir yayın yazdığınızda öyle sözlü olarak bir şeyleri insanlar ifade etmezler.
+
+122
+00:19:28,579 --> 00:19:31,279
+Hemen matematiksel gösterilimini yaparlar.
+
+123
+00:19:31,699 --> 00:19:35,399
+Bir vakaleye de baktığınızda böyle aklınız karışıyor.
+
+124
+00:19:35,519 --> 00:19:37,919
+Ne kadar karışık matematiksel şeyler var.
+
+125
+00:19:38,259 --> 00:19:39,179
+Aslında değil.
+
+126
+00:19:39,519 --> 00:19:40,739
+Sizi korkutmasın.
+
+127
+00:19:41,039 --> 00:19:43,959
+Arada da böyle şeyler size söyleyeyim.
+
+128
+00:19:44,919 --> 00:19:47,739
+Kulağınızın bir kenarında, aklınızın bir kenarında dursun.
+
+129
+00:19:47,739 --> 00:19:49,759
+Evet bir B kümen var.
+
+130
+00:19:49,759 --> 00:19:58,600
+B kümesinin elemanlarına x, i diyorum. x, i'ler 1 ile n arasında değişebiliyor. Onlar da x, 1, x'en olarak gösteriyorum.
+
+131
+00:19:59,139 --> 00:20:10,699
+0 ve 1'lerden oluşan tüm enbitlik değerlerin kümesi olsun. Herhangi bir x değişkeninin değeri B kümesinden ise alabileceği değerler 0 veya 1 olur.
+
+132
+00:20:10,699 --> 00:20:20,539
+x değişkenine bul'un değişkeni b üzeri n'den b'ye olan fonksiyonu da n. dereceden bul fonksiyonu denir diyor.
+
+133
+00:20:21,619 --> 00:20:25,059
+Şimdi bir fonksiyonun değerini nasıl hesaplarız?
+
+134
+00:20:25,059 --> 00:20:32,659
+Bunları yine geçen haftadan nazarlarını çok yaptık.
+
+135
+00:20:32,879 --> 00:20:36,139
+Çok yapmadık da gördük ilk defa karşımıza gelmiyor.
+
+136
+00:20:36,779 --> 00:20:39,239
+3 değişkenli bir fonksiyon bana verilmiş.
+
+137
+00:20:39,240 --> 00:20:42,159
+bu fonksiyonun sonucu nedir diyor.
+
+138
+00:20:42,719 --> 00:20:49,159
+Şimdi ben bu fonksiyonun sonucunu kafamdan şu tablo olmadan da söyleyebilirim.
+
+139
+00:20:49,340 --> 00:20:53,460
+Ama hata yapma olasılığım artabilir.
+
+140
+00:20:53,460 --> 00:21:02,380
+Eğer buradaki değişkenlerim şöyle iki tane elemandan değil de on tane eleman olsa peş peşe eklenmiş.
+
+141
+00:21:02,980 --> 00:21:06,199
+Bunları akıldan yapmak birazcık zor olabilir.
+
+142
+00:21:06,199 --> 00:21:19,379
+Bunları çok daha kolay bir şekilde tablo haline getirir. X'in, Y'nin, Z'nin alabileceği tüm durumlarda fonksiyonun hangi değer olduğunu rahatlıkla söyleyebilirim.
+
+143
+00:21:19,379 --> 00:21:31,459
+3 tane değişkenim varsa kaç farklı durumumuz oluyordu? 2 üzeri 3'ten 8 farklı durum. Burası bu. Bu durumları nasıl oluşturuyorduk arkadaşlar?
+
+144
+00:21:31,460 --> 00:21:41,019
+nasıl oluşturuyorduk arkadaşlar? Bu kalem de değil, bu da kalem değil. Bir dakika.
+
+145
+00:21:41,556 --> 00:21:52,955
+kalem bu. Şurası ikinin sıfırıncı kuvveti, şurası ikinin birinci kuvveti, çok zor yazmak, ikinin ikinci kuvveti olacak şekilde
+
+146
+00:21:52,955 --> 00:22:02,595
+desimal olarak yerleştiriyordum. Aslında burası sıfır, burası bir, dın dın dın dın, burada da yedi yazıyor.
+
+147
+00:22:02,595 --> 00:22:13,935
+Neden bunları sıfırdan başlayıp 7 diye yazmazlar da 7'den başlayıp sıfıra doğru gider kitaplar bunu gerçekten anlamış değilim
+
+148
+00:22:13,935 --> 00:22:23,015
+Belki her şeye olumlu başlamak istiyorlar ama bunlar da nasıl sıralanıyor çok daha rahat aklımızda kalsın
+
+149
+00:22:23,015 --> 00:22:31,695
+Eğer burası sıfırıncı kuvvetse 1 ve sıfırın değişimi 2 üzeri 0 1 olduğu için birer birer değişiyor
+
+150
+00:22:31,695 --> 00:22:44,015
+2 üzeri 1 2 olduğu için 2 1 2 0, 2 üzeri 2 olduğu için 4 0 4 1, 2 üzeri 3 4. bir değişken olsaydı 4 1 4 0 diye gidecekti.
+
+151
+00:22:44,015 --> 00:22:54,575
+Ama siz doğruluk tablosunu çizerken lütfen 0'dan başlayın. Yani 0 0 0 0 0 1 diye gidebilirsiniz.
+
+152
+00:22:54,575 --> 00:23:02,755
+Şimdi neye ihtiyacım var benim? İlk önce x çarpı y'ye geldim burada x çarpı y'yi hesapladım
+
+153
+00:23:03,895 --> 00:23:18,835
+Şurada bir kere hepsinde bir 1 olduğu için girişlerden en az bir tanesi 1 olduğu için ya da pardon bu çarpma işlemi şu ikisinde bir 0 olduğu için bunların sonucunun 0 olacağını biliyorum
+
+154
+00:23:18,835 --> 00:23:27,935
+şurada ise hepsinde bir sıfır olduğu için bunların her zaman sonucunun sıfır olacağını görüyorum.
+
+155
+00:23:27,935 --> 00:23:39,155
+Sonra Zet'in üniversitesine ihtiyacım var. Buradaki kolonu tamamıyla tersine alıyorum. Sonra bana diyor ki bu ikisini orla, şu ikisini orluyorum.
+
+156
+00:23:39,155 --> 00:23:51,975
+Burada sadece girişlerden ikisinin de sıfır olduğu değer şurası olduğu için sadece buralarda sıfır, şurada da varmış sıfır, diğerlerinde de durum bir olacak.
+
+157
+00:23:52,675 --> 00:23:58,436
+Şimdi, e hocam bu çok basit, bize niye böyle bir şey gösteriyorsunuz diyebilirsiniz.
+
+158
+00:23:59,115 --> 00:24:05,136
+Mesela size desem ki, size desem ki belki de öyle bir şey söyleyeceğim.
+
+159
+00:24:09,155 --> 00:24:10,195
+benim
+
+160
+00:24:13,587 --> 00:24:30,587
+elimde şöyle olsun, şu şeyin adı nedir ya? dezenfektan olsun x. y maske olsun z de özel arabam olsun.
+
+161
+00:24:30,587 --> 00:24:42,147
+Şimdi ben dışarıya çıktığımda minimum riske maruz kalıyor muyum kalmıyor muyum?
+
+162
+00:24:43,027 --> 00:24:51,367
+Hangi durumlarda riske maruz kalıyorum? Hangi durumlarda riske maruz kalmıyorum diye bir fonksiyon çıkartmanız isteniyor.
+
+163
+00:24:51,367 --> 00:25:00,687
+Şimdi ne yapacaksın? Şu X neydi? Dezenfekten. Bu Y neydi? Maske. Bu Z de senin araban olsun.
+
+164
+00:25:01,807 --> 00:25:08,747
+Bu üç tane duruma, üç tane değişken için benim sekiz tane farklı durumum olabilir.
+
+165
+00:25:08,747 --> 00:25:16,147
+Hem dezenfektenim olabilir, hem maskem olabilir, hem de arabam olabilir.
+
+166
+00:25:16,147 --> 00:25:18,067
+veya şuraya gelelim.
+
+167
+00:25:18,448 --> 00:25:23,327
+Dezenfektenim yok, maskem yok ve arabam yok.
+
+168
+00:25:24,047 --> 00:25:24,768
+Peki tamam.
+
+169
+00:25:25,187 --> 00:25:27,287
+Var olan bütün 8 durumum var.
+
+170
+00:25:27,287 --> 00:25:35,467
+Şimdi ben size diyorum ki bana öyle bir fonksiyon çıkarın ki riskli durumlarımı ben bileyim.
+
+171
+00:25:35,987 --> 00:25:39,127
+O zaman bana bir takım bilgiler verilmesi lazım.
+
+172
+00:25:39,128 --> 00:25:49,768
+bana diyecek ki masken yok, dezenfektenin yok ama arabayla gidiyorsun geliyorsun iki evin arasında gidiyorsun diyelim kendi evlerinin.
+
+173
+00:25:50,187 --> 00:25:57,708
+Bu riskli bir durum oluşturmaz. Riskli bir durum oluşturmazsa sen ona gideceksin sıfır değerini koyacaksın.
+
+174
+00:25:58,528 --> 00:26:06,087
+Diyorsun ki masken de var, dezenfektenin de var ama araban yok. Bu da riskli bir durum oluşturmaz.
+
+175
+00:26:06,087 --> 00:26:08,587
+onun da çıktısına sıfır koyacaksın.
+
+176
+00:26:09,287 --> 00:26:13,348
+Masken yok, araban yok ama dezenfektenin var.
+
+177
+00:26:13,348 --> 00:26:15,268
+Bu riskli bir durumdur.
+
+178
+00:26:15,587 --> 00:26:18,727
+O zaman o fonksiyona da bir değerini koyacaksın.
+
+179
+00:26:19,727 --> 00:26:20,948
+Eee ne oldu?
+
+180
+00:26:21,547 --> 00:26:24,408
+Şimdiye kadar yapmış olduğum şey şu oldu.
+
+181
+00:26:24,828 --> 00:26:26,308
+Elimde üç değişkenim var.
+
+182
+00:26:26,668 --> 00:26:32,507
+Hani biz hep bunları böyle matematik gibi x, y, z diyoruz ama gerçek dünyaya bunu aktaralım.
+
+183
+00:26:33,028 --> 00:26:34,528
+Üç tane değişkenim vardı.
+
+184
+00:26:34,528 --> 00:26:42,427
+bu üç tane değişkenim yani desenfektan maske ve araba sekiz farklı durumda ben bunlara sahip olabilirim.
+
+185
+00:26:42,707 --> 00:26:45,227
+Ben demeyeyim de herhangi bir vatandaş.
+
+186
+00:26:45,647 --> 00:26:52,188
+Peki bu vatandaşın kendini riskli duruma sokup sokmadığının da kısıtları, kuralları bana veriliyor.
+
+187
+00:26:52,188 --> 00:27:01,707
+Bu kurallara bakarak ben de fonksiyonumun değerinin, değerinin yapamıyorum, mouse gelmiyor, Allah Allah.
+
+188
+00:27:01,707 --> 00:27:06,407
+değerinin bir olup olmadığına karar veriyorum.
+
+189
+00:27:06,407 --> 00:27:08,647
+Eee sonra ne olacak?
+
+190
+00:27:09,267 --> 00:27:15,207
+Şimdi ondan sonra ben bu olayın matematiksel olarak ifade edeceğim.
+
+191
+00:27:15,808 --> 00:27:18,967
+x, y, z diyeceğim ve ben bu fonksiyonu yazacağım.
+
+192
+00:27:18,967 --> 00:27:30,167
+Bu fonksiyonu yazarken fonksiyonumun bir olduğu değerleri alacağım.
+
+193
+00:27:30,267 --> 00:27:32,387
+Buraya artıyla bağlayarak yazacağım.
+
+194
+00:27:33,307 --> 00:27:34,587
+Yine bana sorabilirsiniz.
+
+195
+00:27:35,067 --> 00:27:44,347
+Hocam niye burada bir, iki, üç, dört, beş tane bir değeri var da niye buraya beş tane terim yazmadınız?
+
+196
+00:27:44,347 --> 00:27:56,787
+yazabilirsin bu beş tane terimi ama o beş tane terimi yazdığında denktir dersem buna mantıksal olarak denk çıkacak.
+
+197
+00:27:56,787 --> 00:28:11,967
+Burada kaç tane derim var? Yani şu an mesela bir tane yazayım. Şurası ne var? X var, Y var, Z var. Tamam mı? Artı ne var başka? X var, Y var.
+
+198
+00:28:12,336 --> 00:28:20,336
+hayat çok zor, Z var. yazmak çok zor, uzatmıyorum, nokta nokta nokta. bütün birileri yazdım.
+
+199
+00:28:20,336 --> 00:28:35,336
+bu, buna mantıksal olarak denk. e nereden biliyoruz mantıksal olarak denk olduğunu? ben bunları da yazarak bu tabloda işlem yapsam yine şuradaki çıktıları elde edeceğim.
+
+200
+00:28:35,336 --> 00:28:51,596
+Ama yine bu kadar kolayını nasıl yapıyorum? İşte bu dersin sonunda göreceğimiz karno haritaları ya da karno mepler bana buradaki fonksiyonu sadeleştirerek bunu verecek.
+
+201
+00:28:51,596 --> 00:28:57,736
+Ve ben bu kadar uzun uzun bunlarla uğraşacağıma kısa halini kullanacağım.
+
+202
+00:28:57,735 --> 00:29:14,815
+Ben o zaman buradaki fonksiyonlarımı böyle yazarım, karno diagramıyla da sadeleştiririm ve kişiye söylerim ki bu üç değişken için bana kurmuş olduğum bu senaryoyu sağlayan fonksiyon budur.
+
+203
+00:29:16,416 --> 00:29:23,075
+Aslında bunların gerçek dünyada nasıl kullanıldığını anlatmaya çalıştım.
+
+204
+00:29:23,075 --> 00:29:25,395
+Yani ters bir taraf var mı?
+
+205
+00:29:27,736 --> 00:29:39,155
+var diyorsanız açıklayalım. Ama yok. Yani bunlar kağıt üzerinde böyle kalan şeyler değil. Ben birçok problemimi bu şekilde modelleyebilirim.
+
+206
+00:29:39,395 --> 00:29:51,035
+Şimdi burayı temizliyorum. Temizledim. İşte bunu çıkardım. Bunu dersin sonunda karnodiyagramlarıyla sadeleştireceğim.
+
+207
+00:29:51,035 --> 00:29:54,915
+ve bu olayı anlatan bir matematiksel modelim olacak.
+
+208
+00:29:55,155 --> 00:30:01,975
+Bundan sonra bana hangi inputla kişi gelirse gelsin fonksiyonda yerine koyacağım.
+
+209
+00:30:01,975 --> 00:30:08,935
+X, bir, y, bir, z şuysa dırt diye koydum hop sonuç çıksın olacak.
+
+210
+00:30:10,056 --> 00:30:11,275
+Peki ilerleyelim.
+
+211
+00:30:12,355 --> 00:30:13,355
+Burada ne demişiz?
+
+212
+00:30:14,435 --> 00:30:20,035
+F gibi bir bul fonksiyonunun komplementini alıyorsun.
+
+213
+00:30:20,035 --> 00:30:24,836
+komplementi fonksiyonun kendisinin tersi olarak gösteriliyor.
+
+214
+00:30:24,836 --> 00:30:35,836
+En değişkenden oluşan iki bul fonksiyonu olan F ve G eşit kabul edilebilmesi için B1, Bn, B kümesinin elemanları olduğunda
+
+215
+00:30:36,355 --> 00:30:43,175
+F, B1'den Bn'e, G'de B1'den Bn'e eşitliği sağlanmalıdır.
+
+216
+00:30:43,175 --> 00:31:01,196
+Yani iki tane F fonksiyonum var F ve G ikisi de aynı kümenin elemanlarını kullanıyor. Yani biri gidip farklı kümenin elemanlarını kullanmış olsaydı benim bunlar arasındaki bir eşitlikten bahsedebilmem imkansız olacaktı.
+
+217
+00:31:01,196 --> 00:31:20,196
+x, y, x, y artı sıfır yani şu ayrı bir eleman, şu ayrı bir eleman ya da eleman demeyeyim ayrı bir fonksiyon x, y çarpı bir ayrı bir fonksiyon bu üç farklı bul ifadesi birbirine denktir.
+
+218
+00:31:20,196 --> 00:31:39,515
+Ne demek istedin? X'e ve y'ye 1 vereyim. X, 1, 1 sonucu 1'dir. Şurası 1 artı 0 bunun da sonucu 1'dir. Şurası 1 de ant 1 bunun da sonucu 1'dir.
+
+219
+00:31:39,776 --> 00:31:47,076
+Bunlar çok farklı fonksiyonlar olsa bile görsel olarak bunlar birbirine denktir diyebiliyorum.
+
+220
+00:31:47,075 --> 00:32:01,795
+İki tane bul fonksiyonunu toplayacaksam nasıl yaparım? Bunların elemanları zaten aynıysa f ve g'nin toplamı demek bu fonksiyonların aynı olan elemanlarını toplayacağım.
+
+221
+00:32:02,228 --> 00:32:07,927
+Entliyorsam bu iki fonksiyonun çarpımı bu iki fonksiyonu da çarparım.
+
+222
+00:32:08,087 --> 00:32:14,228
+Yani eğer aynı eleman kümesini kullanıyorsa bunları rahatlıkla yapabilirim.
+
+223
+00:32:15,847 --> 00:32:18,707
+Burada ne demişler bir bakalım.
+
+224
+00:32:19,887 --> 00:32:21,927
+Örnek veriyor.
+
+225
+00:32:22,408 --> 00:32:27,687
+N'in değerine göre kaç farklı bul fonksiyonu vardır?
+
+226
+00:32:27,687 --> 00:32:37,627
+Şimdi en bir olduğunda ben kaç tane bul fonksiyonu yazabilirim?
+
+227
+00:32:37,747 --> 00:32:39,287
+İki olduğunda kaç tane?
+
+228
+00:32:39,447 --> 00:32:40,908
+Üç olduğunda kaç tane?
+
+229
+00:32:41,068 --> 00:32:44,307
+Şuradaki tablo bana bunu söylüyor.
+
+230
+00:32:45,768 --> 00:32:51,247
+Bu mouse'un yine Allah'ın çok gıcık bir durum yalnız mouse'u göremeyince.
+
+231
+00:32:51,707 --> 00:32:53,827
+Şu tablo bana bunu söylüyor.
+
+232
+00:32:53,827 --> 00:33:16,347
+Aşağısı da diyor ki saymanın temel ilkelerinden çarpma ilkesine göre sıfır ve birlerden oluşan birbirinden farklı enlik dizilerin sayısı 2 üzeri endir ve 2 üzeri en tane de eninci dereceden wool fonksiyonu vardır.
+
+233
+00:33:16,347 --> 00:33:24,747
+Şimdi ikinci dereceden bir bul fonksiyonunun tanım kümesi dört farklı ikiliden oluşur.
+
+234
+00:33:25,087 --> 00:33:25,987
+Bunu biliyoruz.
+
+235
+00:33:26,507 --> 00:33:30,387
+Yani ikinci dereceden bir fonksiyonum var.
+
+236
+00:33:31,247 --> 00:33:32,027
+X ve Y.
+
+237
+00:33:32,607 --> 00:33:35,427
+Bu fonksiyonla kaç tane değer yazabiliyordum?
+
+238
+00:33:36,707 --> 00:33:42,687
+İşte 1, 1, 1, 0, 0, 1, 0, 0, 0, 4 tane değer yazabiliyorum.
+
+239
+00:33:42,687 --> 00:33:47,588
+Peki kaç tane bul fonksiyonu yazabilirim?
+
+240
+00:33:48,588 --> 00:33:50,047
+E'nin yerine 2 koyun.
+
+241
+00:33:50,187 --> 00:33:52,607
+2 üzeri 2, 4'tür.
+
+242
+00:33:52,948 --> 00:33:55,067
+2 üzeri 4'te 16'dır.
+
+243
+00:33:55,487 --> 00:34:04,507
+Burada da gördüğünüz gibi f1'den f16'ya kadar 16 farklı fonksiyon yazabilirim.
+
+244
+00:34:05,448 --> 00:34:06,327
+Ne demek bu?
+
+245
+00:34:06,707 --> 00:34:07,687
+Bunları nasıl çıkardık?
+
+246
+00:34:08,588 --> 00:34:09,728
+Şöyle çıkardık.
+
+247
+00:34:09,728 --> 00:34:12,948
+mesela 1 1'in
+
+248
+00:34:12,948 --> 00:34:14,567
+olduğu durumda
+
+249
+00:34:14,567 --> 00:34:17,007
+yani x'ye 1 1 iken
+
+250
+00:34:17,007 --> 00:34:18,968
+f 1'in hepsi
+
+251
+00:34:18,968 --> 00:34:20,108
+1 olabilir.
+
+252
+00:34:21,188 --> 00:34:23,108
+Yani f 1 demeyelim de
+
+253
+00:34:23,108 --> 00:34:24,567
+hepsi 1 olabilir.
+
+254
+00:34:25,067 --> 00:34:27,048
+Ya da 3 tane 1 0 olabilir.
+
+255
+00:34:28,108 --> 00:34:28,888
+Bunu size nasıl
+
+256
+00:34:28,888 --> 00:34:30,847
+anlatayım? Şöyle anlatalım.
+
+257
+00:34:31,407 --> 00:34:32,207
+Şurada da
+
+258
+00:34:32,207 --> 00:34:33,948
+kalem alıyorum.
+
+259
+00:34:35,567 --> 00:34:37,228
+Şöyle anlatayım.
+
+260
+00:34:38,308 --> 00:34:38,528
+Şimdi
+
+261
+00:34:38,528 --> 00:34:40,588
+iki tane değişkenim varsa
+
+262
+00:34:40,588 --> 00:34:42,748
+kaç tane farklı
+
+263
+00:34:42,748 --> 00:34:44,128
+durum yazıyordum arkadaşlar?
+
+264
+00:34:44,688 --> 00:34:46,507
+Dört tane farklı durum yazıyordum.
+
+265
+00:34:46,908 --> 00:34:48,647
+Dört tane. Birinci
+
+266
+00:34:48,647 --> 00:34:50,608
+durum bu. İkinci durum bu.
+
+267
+00:34:51,128 --> 00:34:52,628
+Üç bu. Dört bu.
+
+268
+00:34:53,328 --> 00:34:54,748
+Peki kaç tane
+
+269
+00:34:54,748 --> 00:34:56,927
+farklı bul fonksiyonu
+
+270
+00:34:56,927 --> 00:34:58,867
+yazarım? Onu da
+
+271
+00:34:58,867 --> 00:35:00,507
+yine gitti.
+
+272
+00:35:02,088 --> 00:35:02,748
+Allah'ım.
+
+273
+00:35:04,548 --> 00:35:06,888
+Onu da buradan yazacağım. Kaç tane
+
+274
+00:35:06,887 --> 00:35:08,807
+farklı bul fonksiyonu olduğunu
+
+275
+00:35:08,807 --> 00:35:11,207
+en yerine 2 koydum 4
+
+276
+00:35:11,207 --> 00:35:12,667
+2 üzeri 4
+
+277
+00:35:12,667 --> 00:35:15,267
+16. Bu 16 nedir?
+
+278
+00:35:15,767 --> 00:35:17,967
+Onu da bu tabloyu da
+
+279
+00:35:17,967 --> 00:35:19,647
+soldan sağa doğru
+
+280
+00:35:19,647 --> 00:35:20,627
+yani şunu
+
+281
+00:35:20,627 --> 00:35:23,067
+90 derece döndürün
+
+282
+00:35:23,067 --> 00:35:25,647
+sanki benim 4 tane değişkenim var
+
+283
+00:35:25,647 --> 00:35:26,967
+birinci değişkenim bu
+
+284
+00:35:26,967 --> 00:35:28,727
+ikinci değişkenim
+
+285
+00:35:28,727 --> 00:35:31,827
+üçüncü değişkenim ve dördüncü değişkenim
+
+286
+00:35:31,827 --> 00:35:33,787
+buymuş gibi düşünün
+
+287
+00:35:33,787 --> 00:35:36,167
+ve şu tabloya bakın
+
+288
+00:35:36,168 --> 00:35:37,968
+sadece
+
+289
+00:35:37,968 --> 00:35:41,228
+1 0 1 0
+
+290
+00:35:41,228 --> 00:35:43,408
+1 0 1 0 diye gitti.
+
+291
+00:35:43,988 --> 00:35:44,948
+2 tane 1
+
+292
+00:35:44,948 --> 00:35:46,028
+2 tane 0
+
+293
+00:35:46,028 --> 00:35:48,248
+2 tane 1 2 0 diye gidiyor.
+
+294
+00:35:48,847 --> 00:35:50,067
+4 tane 1
+
+295
+00:35:50,067 --> 00:35:51,548
+4 tane 0
+
+296
+00:35:51,548 --> 00:35:54,427
+4 tane 1 4 tane 0
+
+297
+00:35:54,427 --> 00:35:56,627
+Burada da 8 tane 1
+
+298
+00:35:56,627 --> 00:35:58,728
+8 tane 0 diye gitti.
+
+299
+00:35:59,315 --> 00:36:29,295
+yani bu iki değişkenim varken dört tane farklı durumum oluşuyor. Bu dört tane farklı durumdan da on altı tane farklı bul fonksiyonu yazıyorum. Bu bul fonksiyonlarını da yaparken şöyle yapın. Nasıl iki tane değişkenim olunca dört tane durumum oluyorsa bu taraftan baktığımda da benim dört tane değişkenim var.
+
+300
+00:36:29,315 --> 00:36:38,375
+Bu dört tane değişkende bul fonksiyonlarının alabileceği durumları da tablomu bu şekilde oluşturdum.
+
+301
+00:36:38,375 --> 00:36:46,915
+Yani benim birinci bul fonksiyonum hepsine 16 değeri var.
+
+302
+00:36:46,915 --> 00:37:10,176
+şurada 15 yazıyor desimal olarak. Burada 16 tane değil. Burada 15 yazıyor. Burada 14. Burada 13, 12, 11, 10, 9, 8. Bakın burada 8 yazıyor. 7, 6, 5, 4. Burada desimal olarak 4 yazıyor. 3, 2, 1 ve 0. Burada desimal olarak 0 yazıyor.
+
+303
+00:37:10,176 --> 00:37:17,476
+Yani ben bir boğulun ifadesinden boğulun fonksiyonlarına bu şekilde geçebiliyorum
+
+304
+00:37:17,476 --> 00:37:23,155
+Burada neler var?
+
+305
+00:37:23,155 --> 00:37:36,655
+Şimdi bu adamcağız boğulun ilk başta ilk sayfada gördüğümüz kişi yani sadece sıfırla sıfırı topladı sıfır, birle biri topladı bir bunları değil
+
+306
+00:37:36,655 --> 00:37:43,655
+bu cebrindeki özdeşlikleri de bize hediye etti.
+
+307
+00:37:44,275 --> 00:37:47,275
+Şunlar çok önemli kavramlar.
+
+308
+00:37:48,355 --> 00:37:53,275
+Bunların birçoğunu şey yapıyoruz, biliyoruz.
+
+309
+00:37:54,115 --> 00:37:57,055
+Mesela şunu yine sileyim.
+
+310
+00:37:57,055 --> 00:38:00,335
+Şuradaki
+
+311
+00:38:00,335 --> 00:38:21,696
+Şu draw nedir acaba? Korkuyorum onun ne olduğunu. Bu da değil, bu da değil. Şöyle büyük bir şey vardı onu bulmaya çalışıyor. Bu mouse neyi gösteriyor? Yok. Draw bir saniye. Bunlar nedir ki ya?
+
+312
+00:38:21,695 --> 00:38:26,995
+boşver ben yine bunu alayım
+
+313
+00:38:32,659 --> 00:38:35,599
+Şimdi şu birincisine bakalım.
+
+314
+00:38:36,599 --> 00:38:41,299
+Bir şeyin, bu bir şey x, değerinin değili kendisidir.
+
+315
+00:38:42,500 --> 00:38:44,179
+x'in 1 olduğunu düşünün.
+
+316
+00:38:44,500 --> 00:38:51,420
+Değilini aldık 0, 0'ın değerini aldık 1 olduğu için x'in değerinin değili kendisidir.
+
+317
+00:38:52,059 --> 00:38:56,179
+Bu double complement kanunu olarak geçer.
+
+318
+00:38:56,739 --> 00:38:58,779
+Şimdi gelelim şuna.
+
+319
+00:38:58,779 --> 00:39:02,739
+Bu aydan potent kanunu.
+
+320
+00:39:03,519 --> 00:39:04,279
+Bu da nedir?
+
+321
+00:39:04,680 --> 00:39:06,899
+x artı x x'dir.
+
+322
+00:39:07,319 --> 00:39:11,399
+x çarpı x x'dir.
+
+323
+00:39:12,379 --> 00:39:13,999
+Bakalım öyle mi?
+
+324
+00:39:14,679 --> 00:39:16,079
+x'e sıfır verdim.
+
+325
+00:39:16,239 --> 00:39:18,079
+Sıfır artı sıfır sıfırdır.
+
+326
+00:39:18,539 --> 00:39:19,959
+Yani x'in kendisi.
+
+327
+00:39:20,459 --> 00:39:21,539
+x'e bir verin.
+
+328
+00:39:21,899 --> 00:39:23,380
+Bir artı bir birdir.
+
+329
+00:39:23,599 --> 00:39:24,939
+Yani x'in kendisi.
+
+330
+00:39:25,879 --> 00:39:27,459
+Sıfırı sıfırla çarpın.
+
+331
+00:39:27,459 --> 00:39:30,799
+entlay'in sıfırdır yani kendisi.
+
+332
+00:39:31,259 --> 00:39:34,439
+Biri birle entlay'in birdir yani kendisi.
+
+333
+00:39:35,000 --> 00:39:37,819
+Bu da etkisiz eleman kanunu.
+
+334
+00:39:38,899 --> 00:39:40,060
+Şimdi gelelim buraya.
+
+335
+00:39:40,799 --> 00:39:43,340
+Buna rahatsızlık da ihtiyacımız olacak ileride.
+
+336
+00:39:44,840 --> 00:39:48,020
+x artı sıfır x demişiz.
+
+337
+00:39:48,240 --> 00:39:49,240
+Bakalım öyle mi?
+
+338
+00:39:49,240 --> 00:39:54,719
+x ile ben sıfır versem sıfır artı sıfır sıfırdır.
+
+339
+00:39:54,859 --> 00:39:56,319
+Yani x'in kendisi.
+
+340
+00:39:56,319 --> 00:40:03,239
+x'e 1 versem 1 artı 0 1'dir yani x'in kendisi.
+
+341
+00:40:03,679 --> 00:40:11,399
+x'e 0 verelim and 1 0'dır x'in kendisi.
+
+342
+00:40:11,779 --> 00:40:17,079
+x'e 1 verelim 1 and 1 1'dir x'in kendisi.
+
+343
+00:40:17,599 --> 00:40:20,799
+Bu da birim eleman kanunudur.
+
+344
+00:40:20,799 --> 00:40:23,299
+Şimdi gelelim aşağıdakine.
+
+345
+00:40:23,299 --> 00:40:26,420
+x artı 1, 1'dir.
+
+346
+00:40:27,219 --> 00:40:29,380
+x, yani 0, 0'dır.
+
+347
+00:40:29,479 --> 00:40:29,960
+Doğru mu?
+
+348
+00:40:30,159 --> 00:40:34,499
+x'e 0'da versen, x'e 1'de versen bu 1'dir.
+
+349
+00:40:35,119 --> 00:40:39,560
+x'e 0'da versen, x'e 1'de versen bu 0'dır.
+
+350
+00:40:40,219 --> 00:40:40,980
+Bu da nedir?
+
+351
+00:40:41,400 --> 00:40:42,760
+Yutan aleman olayı.
+
+352
+00:40:43,619 --> 00:40:45,119
+Şimdi gelelim şuraya.
+
+353
+00:40:46,960 --> 00:40:50,719
+x artı y ile y artı x eşittir.
+
+354
+00:40:51,579 --> 00:40:54,180
+Toplamada değişme özelliği var.
+
+355
+00:40:54,779 --> 00:40:58,100
+x and y, y and x'dir.
+
+356
+00:40:58,680 --> 00:41:01,199
+Çarpmada da değişme özelliği var.
+
+357
+00:41:01,680 --> 00:41:05,960
+Bu komitatif law da değişme özelliğidir.
+
+358
+00:41:06,619 --> 00:41:07,839
+Şimdi gelelim buraya.
+
+359
+00:41:08,499 --> 00:41:09,799
+Burada ne yapmışız?
+
+360
+00:41:11,359 --> 00:41:13,299
+Parantezleri değiştiriyoruz.
+
+361
+00:41:13,299 --> 00:41:20,380
+x artı y'yi toplayıp sonra z ile toplasam da sonuç değişmez.
+
+362
+00:41:20,719 --> 00:41:27,100
+x'i y ile entleyip sonra da z ile entlesem yine değişmez.
+
+363
+00:41:27,520 --> 00:41:29,799
+Bu da birleşme özelliğidir.
+
+364
+00:41:31,339 --> 00:41:32,699
+Burada ne yapmış?
+
+365
+00:41:33,699 --> 00:41:36,240
+Bu dağılma özelliğini almış.
+
+366
+00:41:36,240 --> 00:41:44,639
+Dağılma özelliğini alırken tabi bunu soldan sağ değil de sağdan sola şöyle bakalım dağılma özelliğini aldık.
+
+367
+00:41:44,639 --> 00:41:52,279
+x'i y ile entledim artı x'i z ile entledim.
+
+368
+00:41:52,639 --> 00:41:54,659
+Peki bu nasıl oldu?
+
+369
+00:41:55,159 --> 00:41:56,499
+Bu da aslında şöyle oldu.
+
+370
+00:41:56,619 --> 00:41:58,419
+Şunu açmaya çalışın arkadaşlar.
+
+371
+00:41:58,740 --> 00:41:59,179
+Ne oldu?
+
+372
+00:41:59,179 --> 00:42:22,859
+x çarpı x artı x çarpı z artı x çarpı y şunları yaptım bu sefer.
+
+373
+00:42:22,859 --> 00:42:26,139
+Evet x çarpı y değişme özelliği vardır.
+
+374
+00:42:26,139 --> 00:42:28,100
+ve Y, A, Z
+
+375
+00:42:37,588 --> 00:43:06,327
+Burada neler yapabiliriz biz? Aslında x artı x neydi? Şu yukarıda var x'dir. Burası x. Ben bunu x parantezine alsam, burası ne olur? x parantezine alsam, x artı x parantezine alsam x artı buradan gidersem yanlış oldu. Şunu silelim.
+
+376
+00:43:07,588 --> 00:43:22,247
+Silgim nerede? Silgi, şurayı silelim. Silgi de var, çok hoşuma gitti ya. Elinde çocukluğum tuttu, çok güzel siliyor.
+
+377
+00:43:22,247 --> 00:43:30,327
+Evet şimdi ne yapıyorduk biz? Bir daha gelelim şu kaleme
+
+378
+00:43:30,327 --> 00:43:39,027
+Neredeydik? Allah'ım neredeydik? Ha şunu yapıyorduk
+
+379
+00:43:39,027 --> 00:43:41,467
+Hayır bu değil
+
+380
+00:43:41,467 --> 00:43:46,107
+Ben hangisini yapıyordum?
+
+381
+00:43:47,367 --> 00:43:50,567
+Dağılma özelliğini yapıyorduk
+
+382
+00:43:50,567 --> 00:43:56,927
+şunu çözmeye çalışıyorduk. Bunu çözmeye çalışıyorduk. Bunu aslında
+
+383
+00:44:03,188 --> 00:44:32,767
+şu yukarıdaki kuralları kullanarak ben bunun buna eşit olduğunu söyleyebiliyorum ama bunlarla bunu yazarken kaçırdım şeyi yani hangi kuralları kullanmam gerektiğini kaçırdım siz de bir kalem kağıt oynatın bakalım bunun buna eşit olduğunu şu yukarıdaki kuralları kullanarak nasıl söyleyebilirim x artı x dedim x oldu x artı z dedim kendi kendime konuşuyorum y x dedim
+
+384
+00:44:32,767 --> 00:44:37,147
+bu böyle olmaz da bunu ben nasıl yapabilirim?
+
+385
+00:44:37,647 --> 00:44:41,307
+y artı z'te bir desem bu bunun kendisi mi kalır?
+
+386
+00:44:41,307 --> 00:44:46,307
+Bu birazcık zamanımı alabilir benim bunun ispatını keşke önceden yapsaydım.
+
+387
+00:44:47,427 --> 00:44:54,987
+y artı z'te mesela bir eklediğimde y artı z ne olursa bu sonuç her zaman bir olur.
+
+388
+00:44:55,107 --> 00:44:57,807
+Bunu buraya koyamam sıfır koysam bu da olmaz.
+
+389
+00:45:00,627 --> 00:45:02,447
+Yine silgimizi alalım.
+
+390
+00:45:02,767 --> 00:45:04,507
+bunun hadi ispatını yapalım.
+
+391
+00:45:04,587 --> 00:45:09,447
+Bunu şimdi karno diagramıyla ispatlarım da ben şeyle ispatlamam lazım.
+
+392
+00:45:09,567 --> 00:45:12,307
+Bul cebinin özellikleriyle ispatlamam lazım.
+
+393
+00:45:12,307 --> 00:45:16,247
+Yani bu slide'da bunun böyle yapılması gerekiyor.
+
+394
+00:45:19,027 --> 00:45:20,507
+Şunu atlıyorum.
+
+395
+00:45:20,647 --> 00:45:22,347
+Şimdi burada vakit kaybetmeyeyim.
+
+396
+00:45:22,427 --> 00:45:23,567
+Ben arada buna bakacağım.
+
+397
+00:45:23,707 --> 00:45:24,188
+Tamam mı?
+
+398
+00:45:25,347 --> 00:45:26,947
+Bu mouse'larla çözemiyorum.
+
+399
+00:45:26,947 --> 00:45:38,327
+Yani şurada şunun ispatını ben şu yukaraki kurallarla bunu rahatlıkla yapabilirim. Ama hiçbir zaman oturup bunlarla ben bunu ispatlamam.
+
+400
+00:45:38,747 --> 00:45:48,087
+Bunun karno diagramlarıyla ya da doğruluk tablosunu çıkararak rahatlıkla gösterebilirim. Ama şu an takıldım. Buna bakacağız. İlerleyelim aşağıya.
+
+401
+00:45:48,087 --> 00:46:05,327
+Aşağıda Demorgan kuralı vardı. Nasıl çalışıyordu Demorgan kuralı? Birincinin inversi ortadaki şey neyse, and ise or, or ise and, ikincinin tersi, burada da aynı şekilde orlar and'leniyor. Bu da Demorgan kuralıydı.
+
+402
+00:46:05,327 --> 00:46:17,967
+bu absorption kuralı ise bu da aynı onun gibi bunun da tablo ile ispatı çok kolay.
+
+403
+00:46:18,747 --> 00:46:20,227
+Bunu da nasıl yapabilirim?
+
+404
+00:46:20,768 --> 00:46:24,587
+X'ye dersem bunları böyle değil bunların bir açılma şeyleri vardı.
+
+405
+00:46:29,652 --> 00:46:58,051
+şimdi gözüm yani hemen göremiyorum olayları. Bunu x parantezine alsam bir artı, bir artı, şunu da bırakıyorum, bunu da yapıp size vereceğim. Tamam mı? Bunu da yapıp size vereceğim. Şu kolaylarını hemen hızla yapalım. Bu da nedir? Bu birdir. x değer, x ister sıfır ister bir olsun. Tam komplementini aldığım için onun bir tarafı mutlaka bir olacaktır.
+
+406
+00:46:58,051 --> 00:47:14,711
+o yüzden bu her zaman bir şeyini verecek. Burada da x ister 0 ister 1 olsun komplementini aldığım vakit bu x'lerden bir tanesi 0 kalacağı için bunun sonucu da 0 olacak. Şu iki tane şeye bakacağım size geri dönüş yapacağım tamam mı?
+
+407
+00:47:16,152 --> 00:47:22,811
+Şimdi zaten bir bundan sonraya bakayım onunla da bir ara veririz. Burada kaç tane slide'ım var daha benim?
+
+408
+00:47:27,380 --> 00:47:56,419
+bakın aslında hani şu vardı ya ispatlar işte bu şekilde ispatlanması lazım orada o yüzden bunları dağınık dağınık yapamadım. Şöyle yapalım bir ara veriyorum çünkü bu uzunmuş bu slide'ı bitiremeyeceğim bir ara verelim. Nerede kaldık? Bir ara verelim şunları eğer bu arada hemen yapabilirsem size yapayım.
+
+409
+00:47:56,419 --> 00:48:05,959
+Yok yetiştiremezsem arada bunları çözüm yapar, Yusistan size atarım. Beş geçe burada olalım tekrardan.
+
+410
+00:48:05,979 --> 00:48:12,479
+Hocam bir şey sorabilir miyim ben hocam? Bir sonraki slide'ı yüklememişsiniz de onu yükleme imkanınız var mı hocam?
+
+411
+00:48:12,699 --> 00:48:13,759
+Bunu mu yüklememişim?
+
+412
+00:48:14,100 --> 00:48:16,019
+Yok dördüncüyü, bundan sonrakini.
+
+413
+00:48:17,139 --> 00:48:20,959
+Bundan sonraki slide yok, videolar, videoları yükleyemiyorum.
+
+414
+00:48:21,880 --> 00:48:22,719
+Tamam hocam.
+
+415
+00:48:22,720 --> 00:48:45,219
+onları ne yaptım ben? Onları çektim YouTube'a koyacaktım YouTube linkini sizinle paylaşacaktım fakat çok uzun sürdü sonra Drive'a koyarım oraya erişim şeyi veririm dedim yani kendi hayalim buydu oradan indirirsiniz olur mu?
+
+416
+00:48:46,159 --> 00:48:47,659
+Tamam hocam sağ ol hocam teşekkür ederim.
+
+417
+00:48:47,659 --> 00:48:50,939
+Tamam şimdi beş geçe kadar bir ara verelim.
+
+418
+00:48:52,719 --> 00:48:59,179
+Stop şey ediyorum. Saat kaç? 9.50. 15 geçe buradayız.
+
+419
+01:04:24,244 --> 01:04:27,244
+Evet, geldim geri
+
+420
+01:04:40,179 --> 01:04:54,179
+Arkadaşlar, şu video olayı da biraz beni heyecanlandırıyor. Zoom'un içinden çalıştırabilecek miyim bilmiyorum. Birçok deneyimi ilk defa yapıyorum.
+
+421
+01:04:54,179 --> 01:05:06,179
+Şimdi yeniden şeye dönelim, share screen diyelim. Siz ara verirken ben oturdum, çalıştım.
+
+422
+01:05:06,179 --> 01:05:08,360
+Şimdi neredeyiz?
+
+423
+01:05:08,360 --> 01:05:10,780
+Şu size
+
+424
+01:05:10,780 --> 01:05:14,099
+Hadi yine başladı
+
+425
+01:05:20,724 --> 01:05:28,164
+F5'e basınca oluyor herhalde hocam yine. Ya şuna basınca niye olmuyor? Hani 40 yıllık olan şey.
+
+426
+01:05:30,804 --> 01:05:43,163
+ne oldu? yine bak kaldığı yerde kalmadı neyse neyse neyse neyse ah pardon şunu kapatayım
+
+427
+01:05:51,668 --> 01:05:52,668
+yazdım şimdi nasıl yaptığımızı. Bir şunları yapamamıştım. x artı ikiyeyle bu. Şu ikisi. Bir de şu yukarıda var bir tane. Onun da tablosu var. Şimdi buna bakıyorum. Şu birincisini aldım. Yine şuradan neyi alayım? Lazeri alalım. Şu x artı xye eşittir x ve şu ikincisi. Bunları ben aslında bu bul özdeşlikleriyle
+
+428
+01:06:21,668 --> 01:06:29,888
+üzeriyle de yapabilirim. Tablomu çıkararak da yapabilirim veya işte karno diagramını alarak da yapabilirim.
+
+429
+01:06:30,227 --> 01:06:40,848
+Şimdi şunu nasıl yapmışım? Şu birincisi x artı x'ye eşittir x'i. x ortak parantezini aldım. 1 artı y eşittir x oldu.
+
+430
+01:06:40,848 --> 01:07:08,708
+1 artı Y şu yukarıda neydi? Ne olursa olsun sonuç 1'di. Şurası ne gelecek? 1 gelecek. X çarpı 1 şu yukarıda vardı. X çarpı 1'de X. X. Sol ve sağ taraf birbirinin aynısı. Demek ki X artı X'ye X'e denktir. Yani inputlarım ne olursa olsun bunlar mantıksal olarak da denktir diyebiliriz.
+
+431
+01:07:08,708 --> 01:07:13,587
+Şimdi ikincisini alalım şu aşağıdakine bunu yapalım
+
+432
+01:07:13,587 --> 01:07:27,727
+Şuradaki x'i dağıttım x çarpı x dedim x artı y dedim eşitti x x ortak parantezini aldım 1 artı y dedim
+
+433
+01:07:27,727 --> 01:07:38,428
+1 artı y ne oldu şu yukarıda vardı yine 1'dir 1 artı y yerine 1 geldi x ile de çarptım şuradaki kanun
+
+434
+01:07:38,427 --> 01:08:06,787
+burada da bana x'i verdi x eşittir x dedik şimdi bunları slide'dan silmek istiyorum kalmasın böyle neyse kalsınlar şimdi gelelim şuna bu değildi hangisiydi şu şu hayır yukarıdakiydi bunu da yapamamıştım şu birincisini de yapamamıştım
+
+435
+01:08:06,787 --> 01:08:28,947
+şu ikincisi üzerinden gidelim aslında bu çok kolay x'e artı x'e dağılma özelliğini yaptık bunu ben böyle yaptım doğru mudur diyor yani şunu demek istiyor ben şuradaki kuralları bilmiyorum bakarak kontrol edemiyorum böyle bir ifade verildiğinde bu doğru mudur değil midir?
+
+436
+01:08:28,947 --> 01:08:42,828
+tek yapacağım şey ya tablosunu oluşturacağım ya da her ikisinin de bu tabloya göre karno diagramını çizip bunlardan bir tanesini elde edeceğim.
+
+437
+01:08:42,968 --> 01:08:49,347
+Çünkü sadeleştirdiğim vakit bunu görürsem bu ikisinin birbirine mantıksal olarak eş olduğunu göreceğiz.
+
+438
+01:08:49,347 --> 01:08:54,847
+İşte üç değişken olduğu için tablomda üç değişkenimin sekiz farklı durumu var.
+
+439
+01:08:54,847 --> 01:09:22,707
+y artı z'yi hesaplamam lazım. Buraya koydum. Burada da x'ye var. x'ye'lerin entlenmiş hali. x'ye'lerin entlenmiş hali. Şimdi sol tarafta ne var? y artı z ile x'i çarpacağım. y artı z kolonuyla x'in kolonunu çarptım. Şuraya yazdım. Burası da x'ye ile x'etin çarpımlarının toplamını alacağım. Şu iki kolonu toplayarak da buraya yazdım.
+
+440
+01:09:22,707 --> 01:09:29,907
+Bakıyorum sol taraf sağ tarafa eşit olduğu için buna mantıksal olarak eşittir diyorum.
+
+441
+01:09:30,587 --> 01:09:42,047
+Aynı şeyi şu birincisi içinde bu tabloda gösterebilirim ama şu birincisini şu kurallarla yani özdeşliklerle de çözebilirim.
+
+442
+01:09:42,047 --> 01:09:44,507
+Fakat şu aradığını çözemedim.
+
+443
+01:09:46,868 --> 01:09:52,987
+ben internete de baksak bunun çözümünü görürüz ama biz kendimiz de çözebiliriz.
+
+444
+01:09:52,987 --> 01:10:06,868
+bunu ben de deneyin siz de deneyin ama hiç oturup bunlarla denememizin de bir esprisi yok çünkü çok el oyalıyor oturup böyle yapmak bu çok basit bir örnek de çok zaman alıyor.
+
+445
+01:10:06,868 --> 01:10:11,868
+ben bunları karno diagramlarıyla çok hızlı bir şekilde halledebiliyorum.
+
+446
+01:10:11,868 --> 01:10:21,647
+ama yine de aklımızda bulunsun hangisiydi şu üstteki dağılmanın birincisini bu özdeşlikleriyle ispatlayabiliriz.
+
+447
+01:10:24,048 --> 01:10:25,868
+İyi hadi şöyle yapayım.
+
+448
+01:10:25,868 --> 01:10:26,487
+Hocam.
+
+449
+01:10:26,507 --> 01:10:26,948
+Efendim?
+
+450
+01:10:27,548 --> 01:10:33,048
+Şey o dağıtıp daha sonra absorpsiyon kuralını uyguladığımıza çıkıyor o özdeşlik.
+
+451
+01:10:33,147 --> 01:10:35,807
+Dur dur dur söyleme söyleme bana da söyleme.
+
+452
+01:10:35,987 --> 01:10:36,228
+Tamam.
+
+453
+01:10:36,228 --> 01:11:03,327
+Şöyle yapıyorum. Arada bir bu derste bonuslar vereceğim dedim. Bunu şu benim de şu an pat diye göremediğim yani bazen bakıp da göremiyorum çünkü. Bunu bana gönderen ilk üçe, ilk üçe diyorum. Gmail adresime gönderen ilk üçe bonus var. Hemen listeye yazacağım. Evet.
+
+454
+01:11:07,828 --> 01:11:11,828
+şuraya yazayım ki sonra bunlar nedir demeyeyim
+
+455
+01:11:14,676 --> 01:11:42,436
+ve notumu aldım. peki şimdi ilerliyorum. bu aslında bir önceki sayfanın aynısı. nedir farklı olan? oradaki artı ve noktalar yerine buradaki veya ve ve bağlaçlarını kullanmış yine aynı şeyler. dağılma özelliği, değişimi, birleşimi, tümleyen ve birim kuralları hiçbir farkı yok.
+
+456
+01:11:42,436 --> 01:11:52,155
+oradaki noktalar yerine ve artılar yerine veya kullanarak bu tabloyu yeniden oluşturmuşlar.
+
+457
+01:11:53,176 --> 01:11:56,735
+Şimdi bunun da gerisi yok.
+
+458
+01:11:56,735 --> 01:11:57,115
+Hadi.
+
+459
+01:11:59,516 --> 01:12:01,275
+Bugün enteresan bugün.
+
+460
+01:12:01,475 --> 01:12:03,315
+13 Cuma falan değil değil mi bugün?
+
+461
+01:12:03,536 --> 01:12:04,375
+Tamam neyse.
+
+462
+01:12:05,196 --> 01:12:05,955
+Burada ne diyor?
+
+463
+01:12:06,176 --> 01:12:12,396
+O tabloda verilmiş olan f ve g fonksiyonlarını tanımlayan bu ifadesini bulunuz.
+
+464
+01:12:12,435 --> 01:12:20,835
+bu çok tamam iyi bunun gözükmemesi çok güzel bu soruda demek istenen şey nedir?
+
+465
+01:12:20,835 --> 01:12:39,595
+Hani bir tane size örnekle anlattım ya x, y, z diye üç değişkenin var sana deniyor ki bir tane de olay verilmiş bu olay göre sen bu f'yi ve g'nin var ya da yok durumlarını oluşturuyorsun sana verilen kısıtlara göre.
+
+466
+01:12:39,595 --> 01:12:59,896
+Öyleyse benim fonksiyonlarım ne olur? Hemen bakıyorum F fonksiyonum ne zaman bir değerini almış? Burada. Hangi durumda? X var, Y yok ve Z'in olduğu durum. İşte bak burada o durum çıkmış. Peki G hangi durumda olacak? G'yi nasıl yazacağım?
+
+467
+01:12:59,896 --> 01:13:05,415
+G'yi nasıl yazacağım?
+
+468
+01:13:05,415 --> 01:13:07,036
+Hemen buraya bakıyorum.
+
+469
+01:13:07,635 --> 01:13:12,256
+X var, Y var, artı, G başka ne var?
+
+470
+01:13:12,396 --> 01:13:14,536
+Şurada var, sadece Y var.
+
+471
+01:13:15,016 --> 01:13:16,156
+Y'yi de yazdım.
+
+472
+01:13:16,495 --> 01:13:18,716
+Bu tek başına bir anlam ifade etmez.
+
+473
+01:13:19,116 --> 01:13:26,716
+Bunun başına G fonksiyonu deyip değişkenlerini de mutlaka X, Y, Z diye yazmamız gerekir.
+
+474
+01:13:26,715 --> 01:13:46,795
+Burada bir olayı anlatmışızdır. Bu olayın fonksiyonu nedir dersem işte bu olayın fonksiyonu bu. Bu x ve y'lerde neyse, olay neye karşılık geliyorsa işte dedik ya dezenfektan ya da bilmem ne araba ben burada onu okuyacağım.
+
+475
+01:13:46,795 --> 01:14:00,495
+mesela öyle okuyalım dezenfektanın ve şeyin varsa maskem varsa veya sadece maskem varsa işte problemli bir durum yok demektir.
+
+476
+01:14:00,676 --> 01:14:03,135
+Çünkü bunların hepsinin toplamı bir.
+
+477
+01:14:05,055 --> 01:14:07,555
+Peki ilerleyelim.
+
+478
+01:14:08,555 --> 01:14:10,955
+Çarpımların toplamının açılımı.
+
+479
+01:14:13,595 --> 01:14:15,415
+Mini terimler.
+
+480
+01:14:15,415 --> 01:14:24,295
+Şimdi aslında bu mini terimler, bu slide'ları ben hazırlamadığım için birdenbire şöyle karşılaşınca dınk diye kalıyorum.
+
+481
+01:14:24,815 --> 01:14:28,995
+Bu mini terimleri ben videoda çok güzel anlattığıma inanıyorum.
+
+482
+01:14:30,075 --> 01:14:32,695
+Ama burada yazı olarak ne denmiş?
+
+483
+01:14:32,775 --> 01:14:35,655
+Bir değişken veya tümleyenin ö denir.
+
+484
+01:14:35,815 --> 01:14:42,655
+Bul değişkenleri bla bla bla y, e, x, e ve x'in anı sağlayan çarpımlarına mini terim denilir.
+
+485
+01:14:42,655 --> 01:14:51,435
+Tamam şöyle anlatayım bu yine videomda olacak ama videoya geçmeden evvel şöyle bir şey diyelim
+
+486
+01:14:51,435 --> 01:15:04,635
+Ben şimdi kalemle niye çizemedim bu sefer? Kalem diyorum. Bir takım tablolar çizeceğim size işte karno diagramları diye
+
+487
+01:15:04,635 --> 01:15:10,655
+bu tablolarda şu gözler aslında şu yukarıda ve
+
+488
+01:15:11,252 --> 01:15:21,611
+sol tarafta yer alan değişkenleri sembolize ediyor. Yani diyelim ki burada bir değişken var adı A, burada bir değişken var adı da B.
+
+489
+01:15:22,672 --> 01:15:31,071
+A'da B'nin de 1 olma durumu. A'da ve B'de 1 ise nedir? Bunun decimal karşılığı 3'tür.
+
+490
+01:15:31,071 --> 01:15:43,131
+İşte şuradaki şu kareciğin üst köşesine 3 yazıyoruz ve ben oturup bu değişkeni A, B diye okumuyorum böyle uzun uzun.
+
+491
+01:15:43,772 --> 01:15:47,051
+Bunun mini terimi 3'tür diyorum ve adam anlıyor.
+
+492
+01:15:47,051 --> 01:15:54,051
+Bunun mini terimi 3 ise bu demektir ki A'da true, B'de true yani A ve B'de var.
+
+493
+01:15:54,571 --> 01:15:59,311
+Bunlar 1, 1. Bunun desimal karşılığı 3'tür. O 3'tür.
+
+494
+01:15:59,311 --> 01:16:17,811
+bul fonksiyonlarında bunları da mini terim adı veriliyor bu değişkenlerin çarpımlarına. Mini terim adı veriliyor. Bu slide'da da bu anlatılmış. Ama videomda çok reklamımı yaptım videomun. Videomda iyi anlattığına inanıyorum. Anlamazsınız orada sorarsınız.
+
+495
+01:16:17,811 --> 01:16:30,151
+Bu slide'da ne var? Bakalım f fonksiyonu verilmiş bize x artı y z fonksiyonu için toplamların çarpımı açılımını bulunuz.
+
+496
+01:16:30,451 --> 01:16:42,752
+Burada galiba şeyler kaymış birazcık. Adını söyleyin. Şunun yanındakiler mi? Bu z fonksiyonun toplamların çarpımı açılımını bulunuyor.
+
+497
+01:16:42,752 --> 01:16:50,192
+Tamam elimde şöyle bir fonksiyonum var fxy fonksiyonunun bir olduğu değerler alındığında diyor
+
+498
+01:16:50,192 --> 01:16:53,071
+Şimdi şuraya bakalım
+
+499
+01:16:53,071 --> 01:16:55,771
+Burada tamam soru şu
+
+500
+01:16:55,771 --> 01:16:59,692
+Elimde diyor bir fxyz diye bir fonksiyonum var
+
+501
+01:16:59,692 --> 01:17:01,671
+Öyleyse benim 3 tane değişkenim var
+
+502
+01:17:01,671 --> 01:17:05,271
+Bu 3 tane değişkenin aldığı 8 tane farklı durum bu
+
+503
+01:17:05,271 --> 01:17:07,571
+Bir fonksiyonum şu
+
+504
+01:17:07,571 --> 01:17:18,071
+X artı Y bu aşağıya kaymış şurada bir çarpı var. Yani Z'in fonksiyonu. Bunun bu yukarıda yazılı olması lazım.
+
+505
+01:17:18,071 --> 01:17:33,072
+Ben nasıl çözeceğim? Bir X artı Y'nin toplamı olan değerleri aldım. Burada toplayarak. Sonra Z'nin komplementi var. Z'nin komplementini aldım. Z kolonunun tamamıyla tersini aldım.
+
+506
+01:17:37,363 --> 01:18:01,143
+bunun andusu da yok mu ya? Neyse, z'nin tam tersini aldım. Sonra yapacağım şey nedir? Şu ikisinin toplamını almak. Peki. Ve bana diyor ki, bu fonksiyonun sonucunun bir olduğu değerler nedir?
+
+507
+01:18:01,143 --> 01:18:06,963
+ne yaparsın bir olduğunun değerlerini bulmak için yani fonksiyonun değerini bulmak için?
+
+508
+01:18:07,383 --> 01:18:16,643
+Şuradaki bir olan yer hangisi? Şurası. Bir olan yer hangisi? Şurası. Hiç düzgün çizemiyorum pardon.
+
+509
+01:18:17,243 --> 01:18:22,163
+Bir olan yer neresi? Burası. Hangi değerler? X var, Y var, Z yok.
+
+510
+01:18:22,163 --> 01:18:26,863
+X var, Y var, Z yok. Hangi değerler? X var, Y yok, Z yok.
+
+511
+01:18:26,863 --> 01:18:53,503
+X var, Y yok, Z yok. Hangi değerler? X yok, Y yok, Z var. Bir, şuraya bakalım. X yok, Z yok, Y var. Burası. Ya bunu tabloyu çizer, bu şekilde yazarsın ya da şunu elde edebilmek için iki slide önceki wall cebini kullanarak böyle açarak bunu yazarsın.
+
+512
+01:18:53,503 --> 01:19:05,423
+inanın bunu böyle yazmak çok zahmetli. Bazen oluyor göremiyorsunuz ya da bir yanlış yapıyorsunuz ve buradaki fonksiyonu yanlış elde edebiliyorsunuz.
+
+513
+01:19:05,423 --> 01:19:14,024
+Fakat tablo yaparsanız bunu yanlış olarak görebilme ihtimaliniz çok çok çok düşüyor. Peki burada ne yapmış?
+
+514
+01:19:14,023 --> 01:19:34,903
+ilk önce dağılma özelliğini uygulayayım diyor. Z üstünü dağıtmış. X z üstü artı y z üstü demiş. Sonra özdeşlik kurallarını kullanayım. Özdeşlik kuralları neydi? Özdeşlik kuralını hemen hatırlayalım.
+
+515
+01:19:34,904 --> 01:19:38,884
+döndük.
+
+516
+01:19:43,667 --> 01:19:45,667
+özdeşlik nerede?
+
+517
+01:19:53,363 --> 01:20:14,044
+kuraldı. Ailen titri olsa mı diyor hocam özdeşlik acaba? Biriyle çarpıyor ya orada da. Ya bunların da böyle Türkçeleri çevrilince böyle oluyor. Bir dakika şuraya bakayım onun ne olduğunu anlayayım. Özdeşlik deyince XZ var. Etkisiz eleman gibi koyuyor bir. Burada neye karşılık geldi özdeşlik? Bakalım.
+
+518
+01:20:19,796 --> 01:20:22,735
+Allah Allah, ben niye göremiyorum?
+
+519
+01:20:23,296 --> 01:20:24,776
+Identity Loss'da yazıyor hocam.
+
+520
+01:20:24,796 --> 01:20:27,296
+Identity Loss, evet, evet, tamam, özdeştik.
+
+521
+01:20:27,695 --> 01:20:33,136
+Identity Loss, burası bir, x'i bir ile çarpıyor, kendisidir diyor.
+
+522
+01:20:33,716 --> 01:20:37,595
+Yani değişmedi, ben hep şu sıfırı görüyorum da bununla alaka diyorum.
+
+523
+01:20:38,115 --> 01:20:43,495
+Bir ile çarptığımda etkisiz eleman olduğu için bir sonucu değiştirmiyor.
+
+524
+01:20:43,495 --> 01:20:46,056
+Buraya geliyoruz, buraya geliyoruz.
+
+525
+01:20:46,955 --> 01:20:47,775
+Geldik.
+
+526
+01:20:47,775 --> 01:20:56,375
+Bunları bir ile çarpsam sonuç değişmeyecek özdeşlik kuralını buraya ekledi
+
+527
+01:20:56,375 --> 01:21:09,976
+Peki bunları bir ile çarpmasının sebebi aslında şu bu bir de ne oluyordu yine arka sayfaya dönmeyeyim bir değişkeni kendi komplementiyle topladığımda biri veriyordu
+
+528
+01:21:09,976 --> 01:21:19,156
+Hatırlayalım y0 ise 0 artı 1 sonuç 1'dir y1 ise 1 artı 0 sonuç yine 1'dir
+
+529
+01:21:19,156 --> 01:21:23,836
+O yüzden buradaki bir yerine neden y'yi koyuyorum?
+
+530
+01:21:23,836 --> 01:21:32,115
+Benim değişkenim 3 değişkenli x, y, z burada olmayan nedir? y değişkenler arasında
+
+531
+01:21:32,115 --> 01:21:41,775
+o yüzden burada önceden y artı y üstü varmış da bunun sonucu 1 olarak dönüştü.
+
+532
+01:21:41,775 --> 01:21:42,836
+Aslında bu.
+
+533
+01:21:43,876 --> 01:21:44,796
+Geldik buraya.
+
+534
+01:21:45,156 --> 01:21:45,995
+Burası neydi?
+
+535
+01:21:46,535 --> 01:21:47,056
+y, z.
+
+536
+01:21:47,615 --> 01:21:50,196
+Buraya da özdeşlik kuralıyla 1 çarpmıştık.
+
+537
+01:21:50,315 --> 01:21:51,435
+Eksik olan hangisi?
+
+538
+01:21:51,575 --> 01:21:52,516
+X değişkeni.
+
+539
+01:21:52,935 --> 01:21:55,016
+Öyleyse x değişkenini ekledim.
+
+540
+01:21:55,016 --> 01:22:08,636
+kendisi ve kendisinin komplementi birim özelliği kuralında biri vermiş olduğu için x'e 0'da versem bunun içi 1, x'e 1'de versem içi 1.
+
+541
+01:22:08,636 --> 01:22:14,016
+Burası 1 olduğu için zaten bu yine y çarpı z üstü olduğu için üsttekini elde edeceğim.
+
+542
+01:22:14,476 --> 01:22:16,355
+Buraya da x'i koydum.
+
+543
+01:22:17,495 --> 01:22:21,556
+Aslında bu soruda bir öncekinin de kopyasını vermiş olduk.
+
+544
+01:22:22,156 --> 01:22:23,715
+Şimdi oldu bende.
+
+545
+01:22:23,715 --> 01:22:31,995
+birim özelliğini verdik. Peki şimdi ne yapacağız? Şurasını yine silelim. Dağılma özelliğini uyguluyorum.
+
+546
+01:22:31,995 --> 01:22:41,236
+X, Y, Z üstü, X, Y üstü, Z üstü, X, Y, Z üstü, X üstü, Y, Z üstü.
+
+547
+01:22:41,236 --> 01:22:56,596
+burada da bir hata var ya
+
+548
+01:22:56,596 --> 01:23:02,956
+ah ah kendi notunu kendin hazırlamayınca böyle oluyor
+
+549
+01:23:02,956 --> 01:23:06,195
+x, y, z üstü
+
+550
+01:23:06,195 --> 01:23:10,816
+x üstü şu arada y olacak arkadaşlar
+
+551
+01:23:10,815 --> 01:23:33,095
+y, z üstü çünkü dağılma özelliğini yaptık. Şurada y'imiz olacak bizim. Sonra geldik x, y, z üstü, x, y üstü, z üstü. Aslında değişmezlik kuralını kullanmış. x üstü burada da bir değişmezlik kuralını neydi? Onu hatırlayalım.
+
+552
+01:23:33,096 --> 01:23:39,855
+değişmezlik kuralı
+
+553
+01:23:39,855 --> 01:23:44,215
+tabi acaba burada neyi değişmezlik olarak değiştirdi Türkçesini
+
+554
+01:23:44,215 --> 01:23:46,256
+değişmezlik
+
+555
+01:23:46,256 --> 01:23:48,376
+x artı x x eşit ya
+
+556
+01:23:48,376 --> 01:23:50,456
+şu, şu, [öğrenci]
+
+557
+01:23:50,456 --> 01:23:54,935
+[öğrenci] de değişmezlikmiş
+
+558
+01:23:54,935 --> 01:23:57,776
+hep İngilizcesini kullanıyoruz aslında
+
+559
+01:23:57,776 --> 01:24:00,056
+Türkçeye çevirince böyle kalıyorum
+
+560
+01:24:00,056 --> 01:24:02,156
+çok pardon aslında bu benim ayıbım
+
+561
+01:24:02,156 --> 01:24:03,635
+Türkçesini de bilmem lazım.
+
+562
+01:24:04,296 --> 01:24:06,156
+Evet, ne oldu?
+
+563
+01:24:06,963 --> 01:24:24,963
+burada da o kuralı kullandığım vakit bunu elde ettim. Şimdi ne gördük aslında? Şu yukarıda tablodan çıkarmış olduğumla şurada bul özdeşliklerini kullanarak, kurallarını kullanarak çıkarmış olduğum şey aynı.
+
+564
+01:24:24,963 --> 01:24:33,583
+ama örnek olarak beni alın tabloda yaparken hiç feyil etmedim ama burada yaparken feyil ettim.
+
+565
+01:24:33,583 --> 01:24:39,283
+Çünkü tabi buradaki şu isimlerin Türkçe olması birazcık beni zorladı.
+
+566
+01:24:39,743 --> 01:24:44,304
+Bu kuralları eğer tablo karşımda olsa çok daha rahat yapabilirdim.
+
+567
+01:24:44,963 --> 01:24:49,623
+Evet o kural vardı bu kural vardı diye koyabilirdim tabloya bağlı olarak.
+
+568
+01:24:50,283 --> 01:24:53,504
+Ama beni zorladı çok gitgeller yaptım.
+
+569
+01:24:53,503 --> 01:25:11,263
+tabloda hiç böyle bir şey yaşamayacağım. Size şimdi sorulsa bunun denkliği nedir diye yazsan yine gerçekten bunları sadeleştirmeye çalışıp bu hale peki buradan geriye giderek bunu elde edebilir misin?
+
+570
+01:25:11,263 --> 01:25:25,763
+ha işte bu daha da zor. Buradan buna dönmek daha zor. Buradan buna yine o özdeşlikleri kullanarak dönebilirsin ama karno diagramıyla o kadar hızlı döneceğim ki hiç bunlarla uğraşmayacağım.
+
+571
+01:25:25,763 --> 01:25:37,143
+O yüzden zaten onlarda bulunmuş bu işlemleri kolaylaştırmak amacıyla. Hiç böyle kullanmadığım için birazcık bocaladım.
+
+572
+01:25:37,144 --> 01:25:50,904
+yani isterseniz bütün bu bulduğumuz şeyleri o özdeşlikleri kullanarak kendinizde doğrulayabilirsiniz ama birinciden sonra sıkılacağınıza eminim.
+
+573
+01:25:52,483 --> 01:25:56,283
+Peki devam ediyoruz.
+
+574
+01:25:57,144 --> 01:26:01,843
+Bu mantık kapıları bunu da çok gereksiz koymuş Ahmet Hocam.
+
+575
+01:26:01,843 --> 01:26:18,844
+bu şudur işte bunları da logic dersinde yine göreceksiniz bu or kapısı, end kapısı, inverter kapısı or kapısı iki girişçidir ama benim üç tane girişim olsa bile ben bunu bu şekilde gösterebilirim
+
+576
+01:26:18,844 --> 01:26:30,764
+ya da bu ikisini toplayıp bunu üçüncü bir değişken alır yeniden bir or kapısına sokabilirim işte bu bir or kapısı oldu bu da benim üçüncü değişkenim olsun
+
+577
+01:26:30,764 --> 01:26:33,424
+ya da bu şekilde de gösterebilirim.
+
+578
+01:26:34,184 --> 01:26:39,583
+Ama dediğim gibi bunlar bu dersin pek içerisinde olması gerekmeyen şeyler.
+
+579
+01:26:40,984 --> 01:26:45,864
+Şöyle bir ifade varsa bunu mantıksal kapılarla nasıl gösterirsin diyor.
+
+580
+01:26:46,324 --> 01:26:47,844
+Burada bir end işlemi var.
+
+581
+01:26:48,004 --> 01:26:49,984
+İşte bunu end kapısıyla aldım.
+
+582
+01:26:50,864 --> 01:26:52,764
+Burada x'in tersi alınacak.
+
+583
+01:26:53,204 --> 01:26:55,463
+Siz lojik dersine gideceksiniz.
+
+584
+01:26:55,463 --> 01:26:58,764
+X'in tersini almak için bir inverter koyacaksınız.
+
+585
+01:26:58,764 --> 01:27:09,764
+x'i y ile çarpacaksınız bir end kapısıyla bunu çarptın. Şu ikisinin sonucunu da toplamaya sokacaksın. Şu ikisinden gelen sonucu da topladın.
+
+586
+01:27:10,364 --> 01:27:23,504
+Şimdi bu karno diyagramları falan neden ihtiyacınız olacak? Elinizde mesela şu örneği verelim. Şurada şöyle bir ifade var.
+
+587
+01:27:23,503 --> 01:27:35,223
+şu ifadede iki tane ork kapısına ihtiyacım var ama elinde iki tane ork kapısı yok kaldın ya da şuraya bakıyorsun iki, dört, beş tane
+
+588
+01:27:35,680 --> 01:28:00,119
+NAT kapısına ihtiyacım var. 5 tane de NAT kapısı yok. Bu kadar bolluk yok. O zaman işte ben bu fonksiyonları sadeleştireceğim. Bu fonksiyonu sadeleştirdiğimde benim birdenbire OR kapım 1'e, NAT kapım 1'e, AND kapım 1 taneye düşecek. Burada kaç tane AND kapısına ihtiyacım var? Şunu AND'ledim 1, şunu AND'ledim 2, şunları AND'ledim 3.
+
+589
+01:28:00,119 --> 01:28:06,539
+bu kadar bol bol malzemeler kullandığınızda bortun üzerinde de yer kalmaz.
+
+590
+01:28:06,539 --> 01:28:10,719
+O yüzden bu fonksiyonları sadeleştirerek kullanmamız gerekir.
+
+591
+01:28:11,019 --> 01:28:14,680
+Karna diagramları da zaten bu işe yarıyor.
+
+592
+01:28:15,540 --> 01:28:24,779
+O yüzden buralarda da ne kadar sade ifadeleri ben oluşturursam onları gerçeklemeye çalışacağım.
+
+593
+01:28:25,319 --> 01:28:26,959
+Burada ne yapmış mesela?
+
+594
+01:28:26,959 --> 01:28:30,259
+bunun niye böyle göstermiş?
+
+595
+01:28:30,439 --> 01:28:32,680
+Bunun bir başka gösterilimi.
+
+596
+01:28:33,419 --> 01:28:35,180
+Bunun bu başka gösterilimi.
+
+597
+01:28:35,259 --> 01:28:37,139
+İki tane x girişim var.
+
+598
+01:28:37,139 --> 01:28:39,739
+Bir daha dışarıdan bir x giriş girmemiş.
+
+599
+01:28:39,860 --> 01:28:41,419
+Bunu almış yukarıdan.
+
+600
+01:28:41,879 --> 01:28:43,540
+Bu x'i buraya.
+
+601
+01:28:44,159 --> 01:28:45,879
+Şuradan da bu y'yi almış.
+
+602
+01:28:46,079 --> 01:28:47,059
+Buraya bağlamış.
+
+603
+01:28:47,699 --> 01:28:50,860
+Yani dört tane girişe gerek yok.
+
+604
+01:28:51,019 --> 01:28:51,799
+Buradan aldık.
+
+605
+01:28:51,900 --> 01:28:53,180
+Şunun anlamı da nedir?
+
+606
+01:28:53,180 --> 01:29:08,580
+bunun anlamı sen bunun üstünden pat diye geçersen bu böyle olmaz bunun bununla nasıl denilir bağlanmış olduğu anlaşılır yani bunun üstünden geçiriyorsun bu ikisi birbirine çarpmıyor
+
+607
+01:29:08,580 --> 01:29:21,879
+yine bunlar yani çok detaylı anlamsız ama neyse şuraya da hızla bakalım ne var x'e y'yi topladım işte topladım x'in inversini aldım
+
+608
+01:29:21,879 --> 01:29:49,919
+bunları çarptım. B'yi bakalım. X'in inversini aldım. Bu güzel örnek. Şimdi burada bir komplement olayı var. Y'yi Z'nin inversini aldı, topladı. Burada komplementini inverterla aldı. Ondan sonra topladı. Bunu böyle yapmak zorunda mısın? Hayır. Sen gider bunu açabilirsin. Yani bunu Y'nin inversi artıysa çarpı,
+
+609
+01:29:49,919 --> 01:30:03,639
+Eğer inversinin inversi z olursa o zaman sen burada şu işlem yerine sadece şu işlemi ve bunu da x'in inverti ile çarpma işlemini kullanabilirsin.
+
+610
+01:30:03,799 --> 01:30:07,899
+Buralarda esnekleriniz çok fazla. İstediğiniz gibi yapabilirsiniz.
+
+611
+01:30:07,899 --> 01:30:15,019
+Şu aşağıya bakalım. x, y, z'i topladı. İşte üçünü topladı. Bir ende gönderecek.
+
+612
+01:30:15,019 --> 01:30:23,699
+N'de göndermeden evvel x, y, z'lerin inversleri alındı, entlendi. Sonra bunlar da çarpılarak entlendi.
+
+613
+01:30:25,480 --> 01:30:36,519
+Buralarda bir şey yok. Devre örnekleri vermiş. Bu bir örnek. Bu diyor ki iki bittik yarı toplayıcı. Bunları gördünüz mü?
+
+614
+01:30:37,260 --> 01:30:42,479
+Şu an lojik ders alıyor musunuz arkadaşlar? Ya da adı ne oldu şu an? Sayısal tasarım.
+
+615
+01:30:42,480 --> 01:30:43,480
+tam buralardayız hocam lojik devrede tam buralardasınız karnaları gördünüz mü çizimleri gördük ama böyle devre devre çok görmedik yani ama yani parçaları gördük tek tek iyi tamam peki şimdi orada yine göreceksiniz full header devresi tasarlayacaksınız half header devresi subtractor yani bir çıkarma falan bu half header full header nedir half header iki bitir
+
+616
+01:31:12,479 --> 01:31:16,679
+toplayan, full ether 3 biti toplayan bir devre.
+
+617
+01:31:16,679 --> 01:31:19,399
+Şimdi ben bunun bir toplamasına bakalım.
+
+618
+01:31:19,699 --> 01:31:22,179
+X ve Y iki tane değişkenim var.
+
+619
+01:31:23,039 --> 01:31:30,459
+Ben bu iki değişkeni topladığımda bir sum oluşacak toplam bir de kere oluşacak elde.
+
+620
+01:31:30,559 --> 01:31:31,219
+Bu da kere.
+
+621
+01:31:32,148 --> 01:32:02,007
+Kerry yazalım. Yazması çok zor. İşte bu Kerry. 1 ile 1'i topladım. 2. 2 üzerinde, 2'li tabanda işlem yapıyorsan elde 1 oldu. Buraya 0 yazdım. Aynen şöyle düşünün. 9'u 2 ile topluyorsun. 11. 10 tabanında işlem yapınca elde 1 var. 1 yazdığım gibi. 1 ile 1'i topladım. 2. Elde 1 var. 0.
+
+622
+01:32:02,148 --> 01:32:08,247
+1 ile 0'ı topladım 1, 0 ile 1'i topladım 1, 0 ile 0'ı topladım 0.
+
+623
+01:32:08,988 --> 01:32:11,328
+Diğerlerinde zaten elde var.
+
+624
+01:32:11,747 --> 01:32:21,228
+Şimdi benim bu devreyi tasarlayabilmem için de yapmam gereken şey bir şuradaki samı sağlayan bir devrem olacak
+
+625
+01:32:21,228 --> 01:32:24,787
+bir de şuradaki kereyi sağlayan bir devrem olacak.
+
+626
+01:32:25,488 --> 01:32:27,648
+Kere hangi durumda var?
+
+627
+01:32:28,067 --> 01:32:30,368
+X'in ve Y'nin 1 olduğu durumlar.
+
+628
+01:32:30,367 --> 01:32:41,087
+İşte x'in ve y'nin 1 olduğu durumları aldım. Toplamda ne olacak? x ile y'yi toplayacağım.
+
+629
+01:32:41,087 --> 01:32:55,067
+Şimdi hadi şuna bir bakalım. X'e 1, Y'ye 0 verelim. 1, 0 daha topladım. Burası 1. 1 ile 0'ı çarptım. Burası 0.
+
+630
+01:32:55,067 --> 01:33:21,008
+yok bir ile sıfırı çaktım. Evet burası sıfır. Inverter'dan geçirdim. Burası bir oldu. Bir ile biri topladım. Burası aslında bunun gösterilimi böyle ama bir ile biri ne yap bu? Kivrisi? Bu da topla. Ben hiç bunlara girmeyeyim. Çünkü bunu lojikte size farklı anlatacaklar.
+
+631
+01:33:21,008 --> 01:33:50,508
+burada aslında şöyle özetleyeyim size burada yapılan şey iki tane sizin çıktınız olacak bir tanesi size kereyi veren çıktı olacak bir tanesi de samı veren çıktı olacak burada neden şey kapısı kullanılmış end kapısı bunu aslında o derste hocanız bunun ne olduğunu anlatacak şimdi ben bu dersin içerisinde niye bunları koydu hala anlamıyorum yani
+
+632
+01:33:50,508 --> 01:34:15,608
+[öğrenci] de güzellik yapmış. Burada bir kere çıktınız bir de sam çıktınız olacak. Siz lojikte okurken bir samdaki çıkışı bir de keredeki çıkışı okuyacaksınız. Ama tablolarımızda aynen bu şekilde sam'ı ayrı dizayn ediyorsun. Kereyi de ayrı. Bu ikisini birlikte kullanıyorsun. İnşallah bundan sonra full header'ı koymamıştır.
+
+633
+01:34:15,607 --> 01:34:41,507
+koymamış. Şimdi karno diagramlarına biz geçeceğiz. Burada aslında bir arkadaşınız bana sormuştu. Bakın ben YouTube'a bunları indirmişim. Yani şöyle. Valla indirmişim de bunları sizlerin erişimine açtım mı bilmiyorum. Ben bunları bilgisayarımdan göstereceğim. Bu adresi kopyaladığınızda görebiliyor musunuz? Biriniz deneyebilir mi?
+
+634
+01:34:41,508 --> 01:34:43,168
+Hadi ya
+
+635
+01:34:43,168 --> 01:34:44,328
+Ben de mi?
+
+636
+01:34:45,047 --> 01:34:45,668
+İyi tamam
+
+637
+01:34:45,668 --> 01:34:49,528
+Hocam linkleri chat'e de atabilir misiniz? Buradan kopyalanmıyor da pdf kan
+
+638
+01:34:53,011 --> 01:35:21,011
+sen de çok az acısın ya. Otur yaz. Kopyalaman mı gerekiyor? Öyle benden zor şeyler isteme. Şimdi buradan ay dört dakika şimdi bu mürekkepleri saklamak istiyor musunuz? Hayır saklamak istemiyorum. Şunu aldım. Ctrl C ile. Şimdi chat'e geldim. Chat'e neler yazdınız?
+
+639
+01:35:21,011 --> 01:35:28,872
+tablet problemleri gönderdim.
+
+640
+01:35:31,412 --> 01:35:36,912
+Şimdi ben belki de sizden yardım isteyeceğim şu an.
+
+641
+01:35:36,912 --> 01:35:39,631
+Yardımım nasıl olacak?
+
+642
+01:35:40,852 --> 01:35:42,451
+Yardımım şöyle olacak.
+
+643
+01:35:42,451 --> 01:36:04,171
+yani yardımın. Ben ekran paylaşımı yaptıktan sonra bunları nereye geçmem gerekiyor şu an benim? Şöyle yapayım bir dakika çok özür dilerim arkadaşlar. Gerçekten beni bu olaylar zorluyor.
+
+644
+01:36:04,171 --> 01:36:27,371
+klasörümü açayım. Ekran paylaşımımı ondan sonra yapayım ki. Bir dakika. Ondan sonra yapayım ki ekranımı. Şimdiki ekranımı paylaşayım. Nerede açtıklarım? Burada. Şimdi karno değişken A, B.
+
+645
+01:36:27,372 --> 01:36:43,232
+ha değişken ağaç, iki değişken, çok büyüktü bunları bölmek zorunda kaldım. Üçüncü değişken, dördüncü değişkenin karnı dördüncü değişken ve bu da A. Allah Allah.
+
+646
+01:36:43,931 --> 01:36:50,192
+Neyse yavaş yavaş anlarım bunların ne olduğunu. Hangisinin hangisi olduğunu. Değişken iki. Tamam.
+
+647
+01:36:50,192 --> 01:36:55,052
+Şimdi bu videoyu biri bana görüyor musunuz?
+
+648
+01:36:56,331 --> 01:36:56,672
+Hayır.
+
+649
+01:36:56,671 --> 01:36:59,211
+Hayır mı? Hayır hocam
+
+650
+01:36:59,211 --> 01:37:02,531
+Klasörü paylaşıyorsunuz şu an
+
+651
+01:37:02,531 --> 01:37:08,452
+Bir dakika bende video çalışıyor
+
+652
+01:37:08,452 --> 01:37:13,611
+Bunu nasıl kapatacağımı da bilmiyorum bir dakika bir saniye
+
+653
+01:37:13,611 --> 01:37:19,172
+Peki şimdi bana sorun ben klasörü açtım
+
+654
+01:37:19,172 --> 01:37:23,631
+Klasörü niye gördünüz niye videoyu görmediniz
+
+655
+01:37:23,631 --> 01:37:26,232
+Şimdi ben
+
+656
+01:37:26,232 --> 01:37:31,711
+Hocam videoyu açtıktan sonra videoya tıklayıp paylaş demeniz gerekiyor
+
+657
+01:37:31,711 --> 01:37:34,511
+Bir de altta iki tane seçenek var biz sesi duyamıyoruz
+
+658
+01:37:34,511 --> 01:37:38,631
+Share Computer Sound var bir de Optimize for Video Sharing var
+
+659
+01:37:38,631 --> 01:37:43,671
+Ya ben bu işlemleri yaparken bana sesli şey verebilir misiniz?
+
+660
+01:37:43,831 --> 01:37:46,232
+Şimdi ben Share Screen yaptım
+
+661
+01:37:46,232 --> 01:37:48,631
+Şu an video açık mı?
+
+662
+01:37:49,191 --> 01:37:49,791
+Kapalı
+
+663
+01:37:49,791 --> 01:37:51,671
+Açık olması gerekiyor
+
+664
+01:37:51,671 --> 01:38:03,511
+Bir dakika evladım bir dakika şimdi ayrıt matematik klasörümün içine girildim videoma klikledim videom açık şimdi videomun altında neler var?
+
+665
+01:38:06,611 --> 01:38:12,671
+Burada yok hocam sizin ilk başta paylaşım ekranında seçmeniz gerekiyor onları burada şu an biz klasör görüyoruz mesela
+
+666
+01:38:14,491 --> 01:38:17,671
+Peki nasıl yapacağım ya anlamıyorum vallahi anlamıyorum
+
+667
+01:38:17,671 --> 01:38:28,331
+Şimdi video açıktan zoom'a gelip oradan video ekranını paylaşmanız gerekiyor şehir screen'den. Arkada video açık olsun orada seçenek çıkacak size video ekranını paylaşırken.
+
+668
+01:38:28,331 --> 01:38:39,231
+İyi tamam bir dakika tamam. Allah razı olsun sizlerden ya valla bir saniye arkadaşlar. Kaydetmediğim o kadar şey açık ki arkada ne yaptığımı bilmiyorum artık.
+
+669
+01:38:39,232 --> 01:38:48,131
+rezillik, rezillik. Şimdi videomu açtım. Evet açık video.
+
+670
+01:38:48,979 --> 01:38:57,979
+şimdi Zoom'a gelip Share Screen'den videoyu paylaşma seçeneği olması lazım orada. Şimdi ekranınızda değil de videoyu zaten.
+
+671
+01:38:57,979 --> 01:39:11,979
+Tamam şu an şeye geldim, Zoom'a geçtim. Burada nerede yazıyor? Share Screen'de. Share Screen'in şeyini açayım.
+
+672
+01:39:11,979 --> 01:39:14,439
+Advan sharing option var.
+
+673
+01:39:15,740 --> 01:39:17,920
+Start some management at the same time.
+
+674
+01:39:17,920 --> 01:39:18,379
+Multiple.
+
+675
+01:39:20,240 --> 01:39:20,680
+Yok.
+
+676
+01:39:21,840 --> 01:39:24,039
+Who can start some of the all participants?
+
+677
+01:39:29,043 --> 01:39:37,243
+Peki, ben ekranımı share ettiğim vakit siz benim ekranımdaki şeyi niye göremiyorsunuz?
+
+678
+01:39:38,924 --> 01:39:42,863
+Sadece klasör penceresini paylaşıyorsunuz çünkü ekranın tamamını değil.
+
+679
+01:39:44,464 --> 01:39:51,863
+Peki ben şu an zoomdayım tamam mı? Share screen'e giriyorum ya da şöyle yapayım.
+
+680
+01:40:03,123 --> 01:40:15,843
+şimdi, şimdi, şimdi, evet görüyorum. Allah'ıma çok şükür. Eninde sonunda oluyormuş. Şimdi susuyorum ve yeniden başlatıyorum. Tamam mı?
+
+681
+01:40:15,843 --> 01:40:22,243
+hocam ama biz duymuyoruz sesi. Videonun sesini duymuyoruz. Onu nasıl yapacağım?
+
+682
+01:40:22,243 --> 01:40:29,583
+paylaşırken aşağıda iki seçenek var. İkisini de şey yapmanız lazım, açmanız lazım. Allah Allah.
+
+683
+01:40:34,644 --> 01:40:40,644
+ama benim şehrimde niye çıkmıyor böyle bir şey? Ha şehir kompütüresan ha
+
+684
+01:40:40,644 --> 01:40:57,644
+Evet onu da yaptım. Okey. Şimdi tamamdır. Allah'a çok şükür. Tamam. Karno diagramları, Karno map'in ne olduğundan bahsedeceğiz.
+
+685
+01:40:57,644 --> 01:41:05,504
+örnekler yapacağız bununla ilgili. Nedir karnomep ya da karnodiagramları dediğimiz şey?
+
+686
+01:41:06,243 --> 01:41:12,083
+Bol cebdindeki ifadeleri sadeleştirmek için kullanılan bir yöntemdir.
+
+687
+01:41:13,263 --> 01:41:24,383
+Elimdeki ifadeler dediğimiz şey bir fonksiyon. Bu fonksiyon 1, 2, 3, 4, 5, 6 değişkenli olabilir.
+
+688
+01:41:24,383 --> 01:41:38,603
+bu fonksiyonlarımız daha az terimle ifade edebilecek şekilde basitleştirerek kullanabilirsek işlerimiz daha çok kolaylaşacak.
+
+689
+01:41:38,603 --> 01:41:42,963
+Bir fonksiyonu sağdurileştirmek neden önemlidir?
+
+690
+01:41:43,563 --> 01:41:52,943
+Daha az terim, daha az değişkenle hareket etmek işlerimizi daha çok kolaylaştıracağı için önemlidir.
+
+691
+01:41:52,943 --> 01:42:10,943
+Ben fonksiyonlarımı bul cebrik kurallarıyla sadeleştirebilirim fakat daha zahmetli olabilir, hata yapma ihtimalim daha yüksek olabilir, olması gereken sadeleştirilme sonucunu elde edemeyebilirim
+
+692
+01:42:10,943 --> 01:42:22,263
+fakat karno diagramları yardımıyla bunu daha hızlandırabilir, hatadan daha arındırılmış olarak kullanabilirim
+
+693
+01:42:22,263 --> 01:42:31,223
+Carnot diagramları ortaya atan Morris Carnot 1953 yılında ortaya atmış.
+
+694
+01:42:31,583 --> 01:42:37,903
+Aslında bunu önceden 1952 yılında Edward Wage tarafından keşfedilmiş.
+
+695
+01:42:38,443 --> 01:42:46,203
+Morris bunu biraz daha geliştirmiş ve bizlerin kullanımına sunmuş.
+
+696
+01:42:46,203 --> 01:42:49,603
+Şimdi şöyle başlayalım.
+
+697
+01:42:49,603 --> 01:43:19,103
+bir fonksiyonumuz olsun bu fonksiyonumuz tek bir değişkenli bu fonksiyonun değeri de a bunun basitleştirilmesi sadeleştirilmesi diye bir şey olabilir mi yok bunu daha nasıl sadeleştireceğim öyleyse bir fonksiyonun minimum iki değişkenli maksimum daha fazla değişkenli olabilir
+
+698
+01:43:19,103 --> 01:43:23,243
+ama karnav diagramları 6 değişkene kadar kullanılıyor.
+
+699
+01:43:23,803 --> 01:43:30,643
+Biz bu dersimizin içeriğinde yani ayrık matematikte 4 değişkene kadar göstereceğiz.
+
+700
+01:43:31,043 --> 01:43:38,303
+Bunun ilerisi lojik dersinde ya da sayısal tasarım derslerinde göreceksiniz.
+
+701
+01:43:38,303 --> 01:43:43,143
+Peki ben fonksiyonumu 2 değişkenle vereyim.
+
+702
+01:43:44,063 --> 01:43:46,443
+Değişkenlerim a ve b olsun.
+
+703
+01:43:46,444 --> 01:43:54,004
+ve ben bu fonksiyona öyle terimlerden olursun ki A ve B'nin farklı kombinasyonları olsun.
+
+704
+01:43:54,224 --> 01:43:59,244
+İşte AB var ve A değil B var.
+
+705
+01:43:59,824 --> 01:44:01,004
+Böyle bir fonksiyon.
+
+706
+01:44:01,464 --> 01:44:08,324
+Böyle bir fonksiyonu sadeleştirmek istersem bolcı evrinden de yararlanarak sadeleştirme yapabilirim.
+
+707
+01:44:08,563 --> 01:44:12,604
+Ya da karno diagramlarını da kullanabilirim.
+
+708
+01:44:16,443 --> 01:44:30,183
+2 tane değişkenim varsa benim yani değişken sayım 2 ise kaç farklı durum yazabilirdim? 2 üzeri m'den 2 üzeri 2, 4 farklı durum yazılabilir.
+
+709
+01:44:30,752 --> 01:44:50,752
+yani değişkenlerim benim A ve B ise yazabileceğim durumlar nedir? A ve B'nin olması, A'nın olması, B'nin olmaması, A'nın olmaması, B'nin olması, A'nın da B'nin de olmaması.
+
+710
+01:44:50,752 --> 01:44:52,411
+4 tane durum var.
+
+711
+01:44:53,352 --> 01:44:54,971
+Bunun dışında bir durum olamaz.
+
+712
+01:44:55,512 --> 01:45:03,652
+Öyleyse iki değişkenli bir fonksiyonu bu 4 durumun birini ya da 4ünü de içerebilir.
+
+713
+01:45:03,991 --> 01:45:06,171
+4ünü içerirse ne olur?
+
+714
+01:45:06,632 --> 01:45:10,191
+Bunu ilerleyen örneklerde gösterebiliriz.
+
+715
+01:45:10,411 --> 01:45:11,152
+Göstereceğim.
+
+716
+01:45:11,152 --> 01:45:15,851
+Burada ise iki tane değişkenimiz, terimimiz var.
+
+717
+01:45:15,851 --> 01:45:35,891
+Peki ben bul cebri'ni kullanmış olsaydım bunu nasıl şey yapardım? Sadeleştirirdim. Diyelim ki bir ortak parantezini aldım. Burası A artı A inverse oldu. A artı A inverse olma durumu nedir?
+
+718
+01:45:35,891 --> 01:45:56,891
+B'dir. Nedir? Eğer A sıfır ise sıfır artı A'nın tersi 1. A eğer 1 ise 1 artı A'nın tersi 0, 1. Yani A ne olursa olsun ister sıfır ister bir olsun bunun değeri nedir? 1'dir.
+
+719
+01:45:56,891 --> 01:46:00,451
+Öyleyse burası B çarpı 1
+
+720
+01:46:00,451 --> 01:46:03,152
+Bunun sonucu da nedir? B'dir
+
+721
+01:46:03,152 --> 01:46:12,311
+İki tane değişkenim olan AB fonksiyonunun sadeleştirilmiş haline ben B diyorum
+
+722
+01:46:12,311 --> 01:46:16,912
+Bu işlemi bu şekilde yapmak çok kolay oldu
+
+723
+01:46:16,912 --> 01:46:18,871
+Çünkü terim sayım az
+
+724
+01:46:18,871 --> 01:46:28,111
+Fakat terif sayım fazla olduğunda bu kadar hızlı bu işlemi yapabilmem kolay değil.
+
+725
+01:46:28,591 --> 01:46:31,131
+O yüzden karno diagramları kullanılır.
+
+726
+01:46:31,511 --> 01:46:35,411
+Peki ben bu işlemi karno diagramlarını kullanarak yapayım.
+
+727
+01:46:35,651 --> 01:46:38,431
+Bakalım aynı sonucu alabilecek miyiz?
+
+728
+01:46:40,711 --> 01:46:42,811
+Karno diagramı diyoruz.
+
+729
+01:46:42,951 --> 01:46:44,151
+Yani karno map.
+
+730
+01:46:45,091 --> 01:46:48,271
+Bir map demek ki bir diagram, bir şey çizmeliyim.
+
+731
+01:46:48,272 --> 01:46:49,552
+Bunu çizelim
+
+732
+01:46:49,552 --> 01:46:52,212
+Eğer iki tane değişkenim varsa benim
+
+733
+01:46:52,212 --> 01:46:53,412
+Biri A
+
+734
+01:46:53,412 --> 01:46:54,832
+Diğeri de B
+
+735
+01:46:59,891 --> 01:47:11,111
+sorun durumları alabilir A olmaz ya da A vardır B yoktur ya da B vardır iki tane durum
+
+736
+01:47:14,612 --> 01:47:34,891
+çiziyoruz. farklı bir kalemle şöyle de etiketlendirebilirim. A'nın olmaması durumu 0, A'nın olması durumu 1, B'nin olmaması durumu 0, B'nin olması durumuna da 1 verelim.
+
+737
+01:47:34,891 --> 01:47:39,411
+İşte bu benim karno diagramım
+
+738
+01:47:39,411 --> 01:47:45,531
+Bu karno diagramının içine verilmiş olan fonksiyonumu yerleştireceğim
+
+739
+01:47:45,531 --> 01:47:48,972
+Fonksiyonum neydi benim? Şuraya alalım aynı fonksiyonu
+
+740
+01:47:48,972 --> 01:47:51,292
+AB demiştik
+
+741
+01:47:51,292 --> 01:47:55,511
+AB artı A inverse B dedik
+
+742
+01:47:55,511 --> 01:47:58,951
+Şimdi bunu karno diagramımıza yerleştirelim
+
+743
+01:47:58,951 --> 01:48:00,711
+Birinci terime bakalım
+
+744
+01:48:00,711 --> 01:48:03,251
+A var ve B var
+
+745
+01:48:03,251 --> 01:48:07,091
+A'nın da B'nin de olduğu gözü bulalım
+
+746
+01:48:07,091 --> 01:48:09,431
+A'nın olduğu yer burası
+
+747
+01:48:09,431 --> 01:48:12,191
+B'nin olduğu yer de burası
+
+748
+01:48:12,191 --> 01:48:17,391
+A'nın ve B'nin her ikisinin de var olduğu yer neresi? Bu göz
+
+749
+01:48:17,391 --> 01:48:22,512
+Öyleyse buraya bu terimin var olduğunu göstermek amacıyla bir koyuyorum
+
+750
+01:48:22,512 --> 01:48:25,371
+Şimdi ikinci terime gelelim
+
+751
+01:48:25,371 --> 01:48:27,552
+A yok, B var
+
+752
+01:48:27,552 --> 01:48:30,612
+A'nın olmadığı yer şurası
+
+753
+01:48:30,612 --> 01:48:31,891
+A burada yok
+
+754
+01:48:31,891 --> 01:48:41,491
+B'nin olduğu yerde neresi? Bu satır. A'nın olmadığı ve B'nin olduğu yer bu göz olduğu için buraya da 1 koyuyorum.
+
+755
+01:48:43,652 --> 01:48:48,552
+Yerleri sıfır. Çünkü bu elemanlar benim fonksiyonumda yok.
+
+756
+01:48:49,951 --> 01:48:55,631
+Sadeleştirmeye başlamadan evvel bir kavramdan daha söz etmek istiyorum.
+
+757
+01:48:55,631 --> 01:48:58,571
+Bu da mini terimler.
+
+758
+01:48:59,891 --> 01:49:01,071
+Mini terim diyelim.
+
+759
+01:49:01,891 --> 01:49:22,292
+Mini terim nedir? Mini terim de aslında bu map'teki, diagramdaki her bir elemanın yerleşirken bu gözlere bu değişkenlerin decimal karşılıklarının ne olduğudur?
+
+760
+01:49:22,292 --> 01:49:26,772
+Şu sol üst kısımlara mini terim değerlerini koyacağım.
+
+761
+01:49:27,391 --> 01:49:29,791
+Şimdi buraya bakalım. Burada nedir?
+
+762
+01:49:29,791 --> 01:49:31,791
+değişkenlerim benim neydi?
+
+763
+01:49:31,951 --> 01:49:33,831
+A, B sırasında vermiştim.
+
+764
+01:49:34,531 --> 01:49:35,311
+A burada yok.
+
+765
+01:49:39,764 --> 01:50:07,843
+evet şimdi inşallah başarabileceğim. Bunu kapattım. Şimdi yeniden share screen diyorum. Buraya geleceğim. İki değişkenli A ve B bunu yapıyorum. Görüyor musunuz? Evet. A ve B nedir? Görüyor musunuz? Burada A'nın başarılı bir durum.
+
+766
+01:50:07,843 --> 01:50:17,563
+sıfır. Bunun desimal karşılığı nedir? Sıfır. Siz yardımcı olmayı bu sefer. Gelelim buraya.
+
+767
+01:50:22,452 --> 01:50:29,731
+arkada videoyu açın dediniz bana, açtım. Sonra zoom'a geç dediniz.
+
+768
+01:50:29,731 --> 01:50:31,332
+A ve B nedir?
+
+769
+01:50:31,332 --> 01:50:35,171
+Burada A'nın da olmadığı, B'nin de olmadığı durum.
+
+770
+01:50:35,171 --> 01:50:40,691
+Şimdi Neveşehir, optimal bunlar var, şehir diyorum.
+
+771
+01:50:40,691 --> 01:50:42,691
+Şimdi?
+
+772
+01:50:45,011 --> 01:50:45,571
+Evet.
+
+773
+01:50:45,571 --> 01:50:47,171
+Sadece ses geliyor.
+
+774
+01:50:47,171 --> 01:50:47,811
+Nedir?
+
+775
+01:50:47,811 --> 01:50:49,411
+Burada A'nın da olmadığı durum.
+
+776
+01:50:49,411 --> 01:50:51,491
+Sadece ses geliyor ama video yok.
+
+777
+01:50:51,491 --> 01:50:52,372
+Allah'ım ya.
+
+778
+01:50:52,372 --> 01:51:07,551
+sıfır bunun desimal karşılığı nedir sıfır ama şey öyleyse buranın militerin değeri sıfır gelelim buraya a yok yani sıfır ve b niye başaramıyorum ben bunu
+
+779
+01:51:12,532 --> 01:51:40,611
+çok da heyecanlı bir yerde kalmıştık. Yine bana söylesenize, şimdi ben arkada videom açık. Zoom'a geçtim. Share screen dedim. Şeyin olduğu yere videoya aşağı 0 1 geldi hocam görüyoruz. Görüyor musunuz? Evet. O zaman dur başı alayım. Tamam.
+
+780
+01:51:42,532 --> 01:51:50,712
+Evet A ve B nedir? Burada A'nın olmadığı B'nin de olmadığı durum 0
+
+781
+01:51:50,712 --> 01:51:54,532
+Bunun desimal karşılığı nedir? 0
+
+782
+01:51:54,532 --> 01:51:58,212
+Ha öyleyse buranın mini terim değeri 0
+
+783
+01:51:58,212 --> 01:52:03,552
+Gelelim buraya A yok yani 0 ve B var
+
+784
+01:52:03,552 --> 01:52:06,831
+Desimal karşılığı nedir bunun? 1
+
+785
+01:52:06,831 --> 01:52:08,631
+Öyleyse mini terimi 1
+
+786
+01:52:08,631 --> 01:52:11,971
+Gelelim buraya A var
+
+787
+01:52:11,971 --> 01:52:40,551
+B yok. Burası nedir? 2. Mini terim 2. A var, B var. Yani şurası A'nın olduğu ve B'nin olduğu yer. 1, 1. Desimal karşılığı 3. Öyleyse buranın mini terimi 3. Yukarıdan aşağı 0, 1, 2, 3 diye gidiyor. Bazı durumlarda bunda tabii bir değişiklik olacak. Onu yeri geldiğinde göstereceğim.
+
+788
+01:52:40,551 --> 01:52:43,351
+bu mini terimlerin neden ihtiyacı var?
+
+789
+01:52:43,731 --> 01:52:47,551
+ben şu fonksiyonumu şu şekilde de gösterebilirim
+
+790
+01:52:47,551 --> 01:52:52,511
+öyle bir AB fonksiyonum var ki mini terimler toplamı
+
+791
+01:52:52,511 --> 01:52:55,371
+A ve B'nin olduğu yer nedir?
+
+792
+01:52:56,571 --> 01:52:56,892
+3
+
+793
+01:52:56,892 --> 01:53:00,392
+A'nın olmayıp B'nin olduğu yer nedir?
+
+794
+01:53:00,751 --> 01:53:01,131
+1
+
+795
+01:53:01,131 --> 01:53:04,871
+1 ve 3. mini terimler
+
+796
+01:53:04,871 --> 01:53:10,631
+Ben oturup uzun uzun bu şekilde yazmayarak bu şekilde de verebilirim
+
+797
+01:53:10,631 --> 01:53:14,291
+Birinci mini terimdeki değer A yok B var
+
+798
+01:53:14,291 --> 01:53:16,351
+Sigma topladım
+
+799
+01:53:16,351 --> 01:53:20,191
+İkinci terimde nedir? A'nın ve B'nin olduğu 3
+
+800
+01:53:20,191 --> 01:53:22,771
+Onu da buraya yazdım
+
+801
+01:53:22,771 --> 01:53:27,451
+Evet şimdi gelelim nasıl sadeleştireceğiz?
+
+802
+01:53:28,351 --> 01:53:30,472
+Sadeleştirmedeki amaç nedir?
+
+803
+01:53:30,472 --> 01:53:58,811
+sadeleştirmedeki amaç şu görmüş olduğum map'te diagramda iki tane 0, iki tane 1 var. Amacım birileri gruplandırmak. Fakat birileri gruplandırırken de öyle kafama göre aklımın estiği gibi gruplandırmıyorum. İkinin kuvvetleri cinsinden olabilecek en büyük grupları oluşturmaya çalışıyorum.
+
+804
+01:53:58,811 --> 01:54:06,552
+Elimde kaç tane değişkenim vardı? 2 tane değişkenim vardı. 2 üzeri 2'den 4
+
+805
+01:54:06,552 --> 01:54:16,011
+Öyleyse önce 4'lü bir grup var mı? Yani içinde 4 tane 1 olabilecek bir grubum olabilir mi?
+
+806
+01:54:16,011 --> 01:54:26,552
+Örneğime bakıyorum. Olamaz. Öyleyse bir aşağı indim. En değerini bir azalttım. 2 üzeri 1, 2. Bu da 2'nin birinci kuvveti.
+
+807
+01:54:26,551 --> 01:54:35,011
+iki tane bir içine alabilen bir grup var mı? Evet var. Hangisi? İşte bu.
+
+808
+01:54:37,351 --> 01:54:46,211
+Gruplarım her zaman ya satır ya da sütun olarak düz kare şeklinde olması gerekir.
+
+809
+01:54:46,211 --> 01:54:52,731
+Öyle birbiriyle 90 derece yapabilecek grupların olmaması lazım.
+
+810
+01:54:52,731 --> 01:55:04,252
+ne demek 90 derece olacak gruplar? Mesela öyle bir şey oldu ki ben şöyle bir grup alamıyorum. Şurada bir olsun bir olsun şöyle bir olsun. Alamam.
+
+811
+01:55:06,003 --> 01:55:07,003
+bakın ikinin katı şeklinde 4 tane 1 var fakat böyle bir grup alamam ya da 1, 1, 1, 1, diagonal olarak bir grup alamam. örneklerde bunları göreceğiz. peki işleme devam edecek miyim? hayır çünkü bu işlem açıkta 1 kalmayıncaya kadar devam eder. açıkta da hiçbir 1 kalmadı. bitti. eee?
+
+812
+01:55:36,003 --> 01:55:38,003
+ne oldu şimdi diyeceğiz.
+
+813
+01:55:38,663 --> 01:55:40,204
+Tamam sadeleştirdik.
+
+814
+01:55:40,323 --> 01:55:43,003
+Öyleyse sadeleştirdiğimiz şeyi okuyalım.
+
+815
+01:55:44,764 --> 01:55:46,003
+Şu gruba bir isim vereceğiz.
+
+816
+01:55:47,044 --> 01:55:47,724
+Nedir bu?
+
+817
+01:55:48,483 --> 01:55:54,224
+Grubun içerisinde yer alan elemanlardan yukarı doğru çıkıyorum.
+
+818
+01:55:55,163 --> 01:55:57,563
+Bakıyorum ortak olan bir değer var mı?
+
+819
+01:55:57,703 --> 01:55:57,943
+Yok.
+
+820
+01:55:58,224 --> 01:56:00,184
+Birinde A var birinde A yok.
+
+821
+01:56:00,184 --> 01:56:02,103
+Ortak olan bir eleman yok.
+
+822
+01:56:02,823 --> 01:56:04,243
+Satırdan geldim.
+
+823
+01:56:04,643 --> 01:56:05,584
+Satır şurası.
+
+824
+01:56:05,583 --> 01:56:28,403
+H ikisinde de ortak olan nedir? B'nin olması. Öyleyse bunun değeri B'dir. Sadeleştirilmiş hali ne olacak? Benim fonksiyonumun. Sadece B. Ben yukarıda da ne buldum? Bul cevriyle yaparken B'yi buldum. Burada da neyi buldum? B'yi buldum.
+
+825
+01:56:28,404 --> 01:56:32,184
+Peki şimdi başka bir örnek yapalım
+
+826
+01:56:32,184 --> 01:56:40,024
+Fonksiyonumuz şu olsun yine iki değişkenli bir fonksiyon
+
+827
+01:56:40,024 --> 01:56:43,724
+Fonksiyonumu mini terimler cinsinden verelim
+
+828
+01:56:43,724 --> 01:56:50,323
+Sıfır var, iki var ve üç var
+
+829
+01:56:50,323 --> 01:56:54,444
+Bunu mini terimler cinsinde yazmazsam nasıl yazardım?
+
+830
+01:56:54,444 --> 01:56:55,963
+Sıfırıncı terim nedir?
+
+831
+01:56:55,963 --> 01:57:00,143
+A'nın ve B'nin olmama durumu sıfırıncı mini terim.
+
+832
+01:57:00,584 --> 01:57:03,503
+Öylesi burası A yok, B yok.
+
+833
+01:57:03,503 --> 01:57:06,304
+Artı ikinci mini terim nedir?
+
+834
+01:57:06,743 --> 01:57:09,743
+A'nın olduğu, B'nin olmadığı durum.
+
+835
+01:57:12,923 --> 01:57:14,483
+Üçüncü terim nedir?
+
+836
+01:57:14,944 --> 01:57:15,283
+Üç.
+
+837
+01:57:15,683 --> 01:57:18,703
+Yani üçüncü mini terim A var, B var.
+
+838
+01:57:18,944 --> 01:57:22,263
+Buraya da A var, B var'ı ekledim.
+
+839
+01:57:22,263 --> 01:57:40,383
+Şimdi ben şu fonksiyonu sadeleştirmek istiyorum. Bunu yine bul cebri ile sadeleştirebiliriz. Fakat buradaki terim sayısı arttıkça bu iş daha zorlaşacağını görürüz. Biz yine bunu karno diagramı ile sadeleştirelim.
+
+840
+01:57:40,383 --> 01:57:54,063
+iki tane değişkenim var standart karno diagramımı çizdim artık biliyorum A yok A var B yok B var
+
+841
+01:58:00,692 --> 01:58:27,692
+miniterimleri de yerleştirelim. 0, 1, 2 ve 3. Hangi elemanlar var benim elimde? Hangi elemanlar var? 0 var. Buraya 1 koydum. 2 var, 1 koydum. 3 var, 1 koydum. 1 numaralı miniterim var mı? Yok. Öyleyse bu da nedir? 0. Şimdi burayı sadeleştirelim. 2 değişkenim var.
+
+842
+01:58:27,692 --> 01:58:55,032
+4'lü bir grup yapabilir miyim? Hayır. Çünkü 4 tane 1 zaten yok. Değişken sayımı 1 azalttım. 2 üzeri 1. İkili bir grup yapabilir miyim? Evet yapabilirim. Mesela şu ikilik bir grup. İşim bitti mi? Hayır. Çünkü daha ortada gruplanmamış bir 1 kaldı. Devam etmeliyim.
+
+843
+01:58:55,032 --> 01:59:05,492
+Peki devam ederken hemen en sayısını azaltıp ikinin sıfırıncı kuvveti bir birli bir grup var mı diye mi bakmalıyım?
+
+844
+01:59:06,352 --> 01:59:17,531
+Yoksa alabildiğim en büyük grupları almak benim amacım olduğu için başka ikili grup alabilir miyim diye sormalı mıyım kendime?
+
+845
+01:59:18,192 --> 01:59:22,492
+Sormalıyım. Başka ikili bir grup oluşturabilir miyim?
+
+846
+01:59:22,491 --> 01:59:49,891
+oluşturabilirim. Ama diyeceksiniz açıkta kalan bir tane bir var. Nasıl bunu ikili bir grup alacağım? İşte burada karşıma yeni bir kural çıkıyor. Eğer alabileceğim en büyük grubu almama yardımcı oluyorsa daha önce gruplandırılmış olan elemanlardan birini diğer grup için kullanabilirim.
+
+847
+01:59:49,891 --> 02:00:01,491
+şimdi açıkta kalan bir bu şu var bunu ikili bir grup olarak gruplandırmak istiyorsam şöyle bir diagonal alabilir miyim?
+
+848
+02:00:02,411 --> 02:00:13,072
+hayır alamam ne yapıyordum? yukarıda da göstermiştik şöyle bir 90 derecelik açı oluşturacak ya da diagonal olacak gruplar almıyorum
+
+849
+02:00:13,071 --> 02:00:20,871
+Öyleyse ne yapacağız? Bunu yukarıki ile birleştirerek bir ikili grup alacağız
+
+850
+02:00:20,871 --> 02:00:28,671
+Bu ikisinde de geçiyor. Bunu aynen ortak paranteze alınmış bir ifade olarak düşünün
+
+851
+02:00:28,671 --> 02:00:33,431
+Açıkta bir kaldı mı? Hayır kalmadı
+
+852
+02:00:33,431 --> 02:00:36,691
+Öyleyse benim sadeleştirme işim bitti
+
+853
+02:00:36,691 --> 02:00:39,531
+Ama şöyle bir şey yapamazsınız
+
+854
+02:00:39,531 --> 02:00:42,571
+Mesela bir tane şuraya koyalım
+
+855
+02:00:42,571 --> 02:00:52,671
+dörtlü bir grup aldınız. Şunlarda dört tane bir vardı. Sonra gittiniz bir ikili grup daha aldınız. Böyle bir şey olamaz.
+
+856
+02:00:53,511 --> 02:01:02,311
+Çünkü grup içinde grup oluyor. Olduğu gibi hepsini kapsıyor. Burada olduğu gibi bir kapsama yok. Gördüğünüz gibi.
+
+857
+02:01:02,311 --> 02:01:05,052
+Peki bu grupları okuyalım
+
+858
+02:01:05,052 --> 02:01:06,851
+Şu kolonu okuyalım
+
+859
+02:01:06,851 --> 02:01:09,171
+Ne yapıyorduk? Kolondan yukarı çıkıyoruz
+
+860
+02:01:09,171 --> 02:01:12,671
+Ortak olan ne var? Her iki terim içinde A var
+
+861
+02:01:12,671 --> 02:01:16,192
+Satırlardan geldiğimizde ortak olan var mı? Yok
+
+862
+02:01:16,192 --> 02:01:18,651
+Öyleyse bunun değeri A
+
+863
+02:01:18,651 --> 02:01:21,132
+Şu grubu okuyalım
+
+864
+02:01:21,132 --> 02:01:23,291
+Kolonlardan yukarı çıktık
+
+865
+02:01:23,291 --> 02:01:26,651
+Ortak olan bir eleman var mı? İki terimde de yok
+
+866
+02:01:26,651 --> 02:01:28,651
+Satırlardan geldik
+
+867
+02:01:28,651 --> 02:01:32,171
+Ortak olan var mı? B'nin olmamı
+
+868
+02:01:32,171 --> 02:01:43,711
+Öyleyse benim şu fonksiyonumun sadeleştirilmiş hali nedir? A var, B yok
+
+869
+02:01:43,711 --> 02:01:49,931
+Tamam, şimdi bununla ilgili son bir örnek yapalım
+
+870
+02:01:49,931 --> 02:01:54,571
+Bana şu verilmiş olsun
+
+871
+02:01:55,891 --> 02:02:14,152
+A ve B dedik. Mini terimler toplamı 0, 1, 2 ve 3. Hepsi var. Yani ben karno diagramımı çizdim. A yok A var. B yok B var.
+
+872
+02:02:17,332 --> 02:02:28,071
+mini terimleri yerleştirdim. 0, 1, 2 ve 3. elemanlarım nedir? 0 var, 1 var, 2 var, 3 var.
+
+873
+02:02:29,151 --> 02:02:38,332
+hadi bakalım 2'nin ikinci kuvveti 4. 4 tane 1'i içine alan bir grup var mı? Evet var.
+
+874
+02:02:38,332 --> 02:02:39,611
+işte bu.
+
+875
+02:02:40,631 --> 02:02:46,252
+açıkta bir var mı? Hayır yok. gruplandırmam bitti mi? Evet bitti.
+
+876
+02:02:47,332 --> 02:03:02,091
+sahip olduğum değişkenlerle yazabileceğim bütün durumlar içeriliyorsa aynen burada olduğu gibi bu ifadenin sadeleştirilmiş hali birdir.
+
+877
+02:03:02,891 --> 02:03:08,012
+Evet şimdiye kadar yaptıklarımızın üzerinden bir özet geçelim.
+
+878
+02:03:08,012 --> 02:03:22,851
+Karna diagramları bana verilmiş olan bir fonksiyonu bul cebri kurallarını kullanarak sadeleştirmemde yardımcı olan bir yöntem
+
+879
+02:03:22,851 --> 02:03:31,171
+Karna diagramlarını biz bu derste 2, 3 ve 4 değişkenli olarak göreceğiz
+
+880
+02:03:31,171 --> 02:03:35,711
+Önce 2 değişkenliği gördük
+
+881
+02:03:35,711 --> 02:03:38,871
+İki değişkenli kurallarım neydi?
+
+882
+02:03:39,351 --> 02:03:43,731
+4 tane farklı durum olduğu için zaten 4 tane kutucuğum var
+
+883
+02:03:43,731 --> 02:03:50,471
+Bunlar A'nın olmaması, A'nın olması, B'nin olmaması, B'nin olması dedik
+
+884
+02:03:50,471 --> 02:03:53,052
+Bunları da belirli bir kural da koyacağım
+
+885
+02:03:53,052 --> 02:03:59,511
+Yani ben buraya gidip A'nın olmaması buraya A, buraya B, buraya B'nin olmaması dersem
+
+886
+02:03:59,511 --> 02:04:03,171
+Bu mini terimler bu şekilde düzgün yerleşmez
+
+887
+02:04:03,171 --> 02:04:16,491
+ve ben bunları da düzgün yerleştirirsem neredeydi? Şurada olduğu gibi mini terimler cinsinden verirsem tak tak tak rahatlıkla yerleştirebilirim.
+
+888
+02:04:17,591 --> 02:04:25,871
+Mini terimler neydi? Buraya gelen değişkenlerin almış olduğu 0-1 durumlarının decimal karşılıklarını yazıyorduk.
+
+889
+02:04:25,871 --> 02:04:32,351
+Bana fonksiyonum açık haliyle verilebilir ya da mini terimler cinsiyle verilebilir.
+
+890
+02:04:32,352 --> 02:04:41,232
+Fonksiyonun verilmiş olduğu terimlerine 1, olmayanları 0 veriyorum ve haritamı oluşturuyorum
+
+891
+02:04:41,232 --> 02:04:52,751
+Haritamı sadeleştirmek isterken de en büyük değişken sayısı 2'nin kuvveti olacak şekilde o sayıda grup var mı diye bakıyorum
+
+892
+02:04:52,751 --> 02:04:54,452
+Varsa gruplandırıyorum
+
+893
+02:04:54,452 --> 02:04:58,592
+O sayıda illa bir tane grup çıkacak diye bir şey yok
+
+894
+02:04:58,591 --> 02:05:02,832
+Aynı sayıda 2 tane, 3 tane, 4 tane de grup çıkabilir
+
+895
+02:05:02,832 --> 02:05:12,511
+Önemli olan bu bulduğum aynı sayıdaki grupların birbiriyle iç içe örtüşmeyecek şekilde gruplandırılması
+
+896
+02:05:12,511 --> 02:05:19,591
+Diagonal ya da 90 derecelik açı verecek şekilde bir gruplandırma yapmıyorum
+
+897
+02:05:19,591 --> 02:05:24,071
+Başka ne söyleyebiliriz?
+
+898
+02:05:24,071 --> 02:05:33,391
+Evet gruplandırma yaptıktan sonra gruplarımızı okurken de grupta bir kolondan bir de satırdan çıkıyorum.
+
+899
+02:05:33,391 --> 02:05:36,791
+ortak olan elemanları entliyorum.
+
+900
+02:05:36,791 --> 02:05:41,991
+her bir grubu da orlayarak sadeleştirmiş halini buluyoruz.
+
+901
+02:05:49,140 --> 02:06:07,580
+Arkadaşlar, devam edeyim mi? Ara istiyor musunuz? Devam mı edeyim? Edebiliriz hocam. Tamam, peki. İnşallah bu sefer bir kere de başaracağım. Dur bakalım.
+
+902
+02:06:07,580 --> 02:06:10,459
+şimdik
+
+903
+02:06:10,459 --> 02:06:13,320
+hadi bakalım
+
+904
+02:06:13,320 --> 02:06:17,219
+hocam ekranda video varken kameranız gözüküyor ama haberiniz olsun
+
+905
+02:06:17,219 --> 02:06:19,459
+tamam gözüksün
+
+906
+02:06:19,459 --> 02:06:24,419
+hocam bir de diğer videoyu geçerken direkt videoyu açarsanız belki paylaşır
+
+907
+02:06:24,419 --> 02:06:26,959
+bu prosedüre tekrar ihtiyacınız olmaz
+
+908
+02:06:26,959 --> 02:06:30,340
+yani diğer videoyu kapatmadan direkt alttan diğer videoyu açın
+
+909
+02:06:30,340 --> 02:06:32,739
+ay bunu ne diyorsunuz diyorsunuz da
+
+910
+02:06:32,739 --> 02:06:38,939
+Ben acaba onları anlıyor muyum?
+
+911
+02:06:39,679 --> 02:06:40,559
+Şimdi bir dakika.
+
+912
+02:06:42,019 --> 02:06:44,239
+Bir alıştığım yolda gideyim.
+
+913
+02:06:44,859 --> 02:06:46,879
+Yeniden klasürüme geçtim.
+
+914
+02:06:46,879 --> 02:06:51,279
+Bu sefer üçüncü değişkene geçtim.
+
+915
+02:06:52,459 --> 02:06:59,039
+Bir önceki videomuzu iki değişkenli karno diagramını anlatarak tamamladık.
+
+916
+02:06:59,040 --> 02:07:03,160
+Şimdi sıra 3 değişkenli karno diagramlarına geldi.
+
+917
+02:07:03,160 --> 02:07:03,480
+Geldi mi?
+
+918
+02:07:04,699 --> 02:07:06,160
+Bir önceki bir şey.
+
+919
+02:07:06,720 --> 02:07:11,279
+2 değişkenli karno diagramını anlatarak tamamladık.
+
+920
+02:07:11,279 --> 02:07:15,459
+Şimdi sıra 3 değişkenli karno diagramlarına gelsin.
+
+921
+02:07:16,199 --> 02:07:19,160
+3 değişken demek neydi?
+
+922
+02:07:19,459 --> 02:07:19,860
+Şimdi?
+
+923
+02:07:20,180 --> 02:07:21,059
+Eğer 3 ise?
+
+924
+02:07:21,779 --> 02:07:22,440
+Geldi hocam.
+
+925
+02:07:23,160 --> 02:07:26,180
+Neyse sizin de bana ders vermeniz gerekiyor yani.
+
+926
+02:07:26,180 --> 02:07:33,400
+Bir önceki videomuzu iki değişkenli karno diagramını anlatarak tamamladık.
+
+927
+02:07:33,739 --> 02:07:37,599
+Şimdi sıra üç değişkenli karno diagramlarına gelsin.
+
+928
+02:07:38,220 --> 02:07:41,120
+Üç değişken demek neydi?
+
+929
+02:07:41,459 --> 02:07:51,860
+Enim benim eğer üçse öyle bir fonksiyon yazacağım ki bu fonksiyonumda sekiz tane terim olabilir maksimum.
+
+930
+02:07:51,860 --> 02:07:55,800
+Peki fonksiyonumuz ne olsun?
+
+931
+02:07:55,799 --> 02:07:58,659
+F eşittir.
+
+932
+02:07:58,659 --> 02:08:02,000
+A, B ve C.
+
+933
+02:08:02,779 --> 02:08:05,000
+Buna da bir takım değerler verelim.
+
+934
+02:08:05,199 --> 02:08:06,399
+Ne verelim biz buna?
+
+935
+02:08:07,539 --> 02:08:08,159
+Atıyorum.
+
+936
+02:08:09,000 --> 02:08:10,140
+AB verdim.
+
+937
+02:08:11,559 --> 02:08:13,179
+A üstü B verdim.
+
+938
+02:08:14,059 --> 02:08:16,300
+Bir de AC verdim.
+
+939
+02:08:16,959 --> 02:08:23,220
+Gördüğünüz gibi 3 değişkenli olsa bile her bir terim 3 tane değişkeni içermesi gerekmiyor.
+
+940
+02:08:23,220 --> 02:08:49,759
+Peki ne demek istiyoruz? Mesela şu AC'yi alalım. Aslında bu AC nedir? AB'de var ortasında. AB yok. C var. Bu da neydi? AC ortak parantezini alırsam B artı B üstüydü. Burasının bir olduğunu bir önceki videoda görmüştük. Sonuçta AC idi.
+
+941
+02:08:49,759 --> 02:08:57,179
+İşte buradaki AC hem B hem de B'nin olmama durumunun içerisinde barındırıyor
+
+942
+02:08:57,179 --> 02:09:01,959
+Peki 3 değişkenli bir karno diagramını nasıl çizeriz?
+
+943
+02:09:03,459 --> 02:09:08,759
+İlk 2 değişkeni yukarı sonra buraya C'yi koyduk
+
+944
+02:09:09,279 --> 02:09:18,479
+AB ile yazılacak olan durum şuraya 00, 01, 11, 10 diyelim
+
+945
+02:09:18,479 --> 02:09:30,399
+A'nın olmaması, B'nin olmaması, A'nın olmaması, B'nin olması, A, B'nin olması, A'nın ve B'nin olmaması.
+
+946
+02:09:30,399 --> 02:09:36,599
+Burası da C'nin olmaması ve C diye. Burası sıfır, burası bir diye var.
+
+947
+02:09:37,839 --> 02:09:43,259
+Peki, keşke daha düzgün çizebilseydim ama çizemedim.
+
+948
+02:09:44,860 --> 02:09:44,979
+Bu.
+
+949
+02:09:45,939 --> 02:09:48,039
+Şimdi bana şöyle bir soru sorabilirsiniz.
+
+950
+02:09:48,595 --> 02:09:51,316
+Şunların decimal karşılıkları da nedir?
+
+951
+02:09:51,615 --> 02:09:56,095
+0, burası 1, burası 3, burası da 2.
+
+952
+02:09:56,675 --> 02:10:03,355
+Hocam niye bunları 0, 1, 2, 3 diye yazıp yerleştirmediniz bu değişkenleri de?
+
+953
+02:10:03,635 --> 02:10:05,415
+0, 1, 3, 2 diye yazdınız.
+
+954
+02:10:06,155 --> 02:10:09,575
+İşte burada karşımıza grey kodlama çıkıyor.
+
+955
+02:10:10,196 --> 02:10:11,455
+Grey kodlama nedir?
+
+956
+02:10:11,936 --> 02:10:14,335
+Önce bir binary kodlamadan bahsedelim.
+
+957
+02:10:14,335 --> 02:10:16,175
+hepinizin hatırladığı gibi
+
+958
+02:10:16,175 --> 02:10:18,436
+baneri kodu
+
+959
+02:10:18,436 --> 02:10:21,976
+3 deşit için yazalım
+
+960
+02:10:21,976 --> 02:10:23,155
+0
+
+961
+02:10:23,155 --> 02:10:25,176
+1
+
+962
+02:10:25,176 --> 02:10:26,956
+2
+
+963
+02:10:26,956 --> 02:10:28,575
+3
+
+964
+02:10:28,575 --> 02:10:30,375
+4
+
+965
+02:10:30,375 --> 02:10:32,436
+ve
+
+966
+02:10:32,436 --> 02:10:35,835
+5 olsun
+
+967
+02:10:35,835 --> 02:10:39,755
+bir de grey kodu yazalım
+
+968
+02:10:39,755 --> 02:10:43,375
+yalnız baneri kodda ne görüyoruz
+
+969
+02:10:43,375 --> 02:10:51,695
+Bir durumdan diğer duruma geçerken aynı anda bazen 1 bitti bazen 2 bitti bazen 3 bitti değişiklikler var.
+
+970
+02:10:52,075 --> 02:10:53,975
+Mesela şurada 1 bit değişmiş.
+
+971
+02:10:54,456 --> 02:10:57,695
+2'den 3'e geçerken 2 tane bitti değişiklik var.
+
+972
+02:10:58,335 --> 02:11:00,855
+3'den 4'e geçerken sadece 1 bitti.
+
+973
+02:11:01,495 --> 02:11:05,695
+4'den 5'e geçerken 1, 2, 3, 3 bitti değişmiş.
+
+974
+02:11:05,816 --> 02:11:08,676
+1'ken 0, 1'ken 0, 0'ken 1 olmuş.
+
+975
+02:11:08,676 --> 02:11:15,836
+Gray kodlamada ise bir durumdan diğer duruma geçerken sadece bir bitte değişiklik oluyor.
+
+976
+02:11:16,076 --> 02:11:16,616
+Ne demek?
+
+977
+02:11:17,976 --> 02:11:18,956
+0,0 olsun.
+
+978
+02:11:19,816 --> 02:11:23,695
+Bir bitte değişiklik olacak ve bu değişiklikleri sağdan başlıyorum.
+
+979
+02:11:24,735 --> 02:11:26,155
+Bir bitte değişiklik oldu.
+
+980
+02:11:26,936 --> 02:11:31,055
+Bir başka kodu yazacaksam bir bitte değişiklik olması lazım.
+
+981
+02:11:31,336 --> 02:11:34,076
+Şunu değiştirirsem yukarkinin aynısı olacak.
+
+982
+02:11:34,235 --> 02:11:35,396
+Öyleyse burası aynı.
+
+983
+02:11:36,036 --> 02:11:36,996
+Şurası 1 oldu.
+
+984
+02:11:36,996 --> 02:11:38,396
+Burası 0 oldu.
+
+985
+02:11:38,675 --> 02:11:41,155
+Sadece bir bitte değişim oldu.
+
+986
+02:11:41,995 --> 02:11:44,215
+Farklı kalemlerle de gösterelim.
+
+987
+02:11:44,555 --> 02:11:46,555
+Şurada sadece burada değişiklik.
+
+988
+02:11:47,155 --> 02:11:49,175
+Burada sadece burada değişiklik.
+
+989
+02:11:49,695 --> 02:11:53,795
+Bir sonraki kodu yazarsam sağdan başlıyorum.
+
+990
+02:11:54,015 --> 02:11:55,155
+Şunu sıfır yazarım.
+
+991
+02:11:55,635 --> 02:11:56,175
+Şunu bir.
+
+992
+02:11:56,395 --> 02:11:57,435
+Bunu sıfır yaparım.
+
+993
+02:11:57,895 --> 02:11:58,335
+Ne oldu?
+
+994
+02:11:58,975 --> 02:12:01,335
+Sadece bir bitte değişiklik oldu.
+
+995
+02:12:01,935 --> 02:12:06,795
+Bir sonraki durumda bunu bir yaparsam önceki durumla aynı olur.
+
+996
+02:12:06,795 --> 02:12:09,415
+Bu o zaman 0 kalacak.
+
+997
+02:12:09,795 --> 02:12:13,855
+Bunu 0 yaparsam bir önceki ilk duruma dönecek.
+
+998
+02:12:14,036 --> 02:12:15,316
+Burası da aynı kalacak.
+
+999
+02:12:15,475 --> 02:12:17,935
+Öyleyse şu 0'ı 1 yapabilirim.
+
+1000
+02:12:18,495 --> 02:12:18,995
+Ne oldu?
+
+1001
+02:12:19,475 --> 02:12:23,275
+Şu durumdan şu duruma geçerken de bir tane bit değişti.
+
+1002
+02:12:24,235 --> 02:12:29,935
+Eğer ben karno diagramında gerçek bir sadeleştirme yapmak istiyorsam
+
+1003
+02:12:29,935 --> 02:12:35,435
+şuradaki değişkenlerimi de yerleştirirken grey kodlamaya göre yerleştirmeliyim.
+
+1004
+02:12:35,435 --> 02:12:38,775
+Sadece 1 bitte değişiklik olacak şekilde.
+
+1005
+02:12:38,915 --> 02:12:41,536
+Şimdi bakın 0 0 1 bit değişti.
+
+1006
+02:12:42,396 --> 02:12:45,256
+1 bit değiştiği için buraya 1 1 geldi.
+
+1007
+02:12:45,935 --> 02:12:49,015
+Sonra 1 bit değiştiği için buraya 1 0 geldi.
+
+1008
+02:12:49,935 --> 02:12:50,475
+Tamam mı?
+
+1009
+02:12:50,655 --> 02:12:52,375
+Yani kafama göre bunu koymuyorum.
+
+1010
+02:12:53,135 --> 02:12:56,235
+Mini terimleri yerleştirirken yerleştirelim.
+
+1011
+02:12:56,615 --> 02:12:57,355
+Burası nedir?
+
+1012
+02:12:57,456 --> 02:12:58,215
+3'ü de 0.
+
+1013
+02:12:58,536 --> 02:12:59,395
+Burası 0.
+
+1014
+02:13:00,275 --> 02:13:01,435
+A ve B 0.
+
+1015
+02:13:01,915 --> 02:13:02,975
+C 1 ise nedir?
+
+1016
+02:13:03,095 --> 02:13:03,895
+Burası 1.
+
+1017
+02:13:03,896 --> 02:13:06,075
+0 1
+
+1018
+02:13:06,075 --> 02:13:09,256
+2 3 diye gidiyordu.
+
+1019
+02:13:09,735 --> 02:13:12,295
+Fakat burada bir yer değiştirme olduğu için
+
+1020
+02:13:12,295 --> 02:13:13,795
+4 burası
+
+1021
+02:13:13,795 --> 02:13:15,316
+5 burası
+
+1022
+02:13:15,316 --> 02:13:17,075
+6 burası
+
+1023
+02:13:17,075 --> 02:13:18,416
+7 de burası.
+
+1024
+02:13:19,095 --> 02:13:20,696
+Gerçekten burası 7 mi?
+
+1025
+02:13:21,336 --> 02:13:22,816
+A, B ve C
+
+1026
+02:13:22,816 --> 02:13:25,215
+1. 3 tane 1
+
+1027
+02:13:25,215 --> 02:13:26,515
+3, 1
+
+1028
+02:13:26,515 --> 02:13:28,655
+7'dir.
+
+1029
+02:13:28,655 --> 02:13:30,896
+Burası gerçekten 5 mi?
+
+1030
+02:13:31,976 --> 02:13:32,276
+A
+
+1031
+02:13:32,275 --> 02:13:33,275
+Evet.
+
+1032
+02:13:32,819 --> 02:13:51,699
+var, B yok ve C'de var. Burası 1, burası 0, burası 1. Desimal karşılığı nedir? 5. İşte burası da 5. Yani şu kolonla şu kolon yer değiştiği için barneri koddan dolayı mini terimleri de yer değişti.
+
+1033
+02:13:51,699 --> 02:13:55,999
+Şimdi yukarıki fonksiyonumuzu buraya yerleştirelim
+
+1034
+02:13:55,999 --> 02:14:02,779
+Ne diyor? A'nın ve B'nin olduğu kolon burası
+
+1035
+02:14:02,779 --> 02:14:06,099
+Burada ne eksik? C
+
+1036
+02:14:06,099 --> 02:14:10,180
+Biz buna ne demiştik? Burada C'nin eksik olması demek
+
+1037
+02:14:10,180 --> 02:14:17,759
+C üstü ve C varmış ki onları AB ortak parantezine aldığımızda 1 diye gitti
+
+1038
+02:14:17,759 --> 02:14:24,759
+A ve B'nin ortak olduğu yer C'nin esamlesi bile yok. Öyleyse buralara bir koyduk.
+
+1039
+02:14:25,739 --> 02:14:39,400
+Geldik. A'nın olmadığı yer ve B'nin olduğu yer. A'nın olmadığı kolon burası ve B'nin de olduğu kolon burası.
+
+1040
+02:14:40,479 --> 02:14:46,419
+C hakkında bir şey yok. Öyleyse hem C var hem de C yoktur. Buralara bir demektir.
+
+1041
+02:14:46,419 --> 02:14:49,139
+A ve C'nin olduğu yer
+
+1042
+02:14:49,139 --> 02:14:51,720
+Burada da ne yok? B yok
+
+1043
+02:14:51,720 --> 02:14:55,819
+Şimdi A'nın olduğu kolonlar hangi kolonlar? Şunlar
+
+1044
+02:14:55,819 --> 02:14:57,860
+A'nın olduğu kolonlar
+
+1045
+02:14:57,860 --> 02:15:00,500
+Şurası ve şurası
+
+1046
+02:15:00,500 --> 02:15:01,919
+A buralarda var
+
+1047
+02:15:01,919 --> 02:15:04,019
+B'nin kendisi yok
+
+1048
+02:15:04,019 --> 02:15:06,859
+B'nin her iki durumu da var demektir
+
+1049
+02:15:06,859 --> 02:15:07,719
+Ve C
+
+1050
+02:15:07,719 --> 02:15:09,979
+C'nin olduğu yer de burası
+
+1051
+02:15:09,979 --> 02:15:15,859
+A'nın ve B'nin olduğu ve C'nin olduğu yerler 7 ve 5. mini terimler
+
+1052
+02:15:16,419 --> 02:15:20,559
+7'de zaten seçilmiş 5'i koydu.
+
+1053
+02:15:21,959 --> 02:15:22,220
+Bu.
+
+1054
+02:15:22,759 --> 02:15:25,720
+Bunun böyle olup olmadığını nasıl görebiliriz?
+
+1055
+02:15:26,059 --> 02:15:28,199
+Bunu mini terimler cinsinden yazalım.
+
+1056
+02:15:28,779 --> 02:15:29,819
+A, B var.
+
+1057
+02:15:30,439 --> 02:15:33,439
+Burada C olacak ve olmayacak.
+
+1058
+02:15:33,900 --> 02:15:35,680
+C olursa burası ne olur?
+
+1059
+02:15:36,079 --> 02:15:36,540
+7.
+
+1060
+02:15:37,479 --> 02:15:39,819
+Burada C olmazsa burası ne olur?
+
+1061
+02:15:41,819 --> 02:15:45,059
+1, 0, 1, 2.
+
+1062
+02:15:45,059 --> 02:16:02,279
+burası da 4, 5 olur. Şimdi gelelim buraya. A yok B var. Bunun sonunda C olacak. C olmayacak. Bunun sonunda C olursa burası 3'dir. Bunun sonunda C olmazsa burası 2'dir.
+
+1063
+02:16:02,279 --> 02:16:19,739
+Burada sadece AC var, B yok. Bunun içinde B var diye koyarsam ABC burası 7 olacak. 7 zaten burada var. B'nin olmaması durumunu koyarsam da burası 5 olacak. Zaten burada 5 var.
+
+1064
+02:16:19,739 --> 02:16:29,840
+Öyleyse benim mini terimlerim nedir? 2, 3, 5, 7
+
+1065
+02:16:29,840 --> 02:16:34,200
+6'yı niye koymamışız? Bakalım burada 6 da olması lazım
+
+1066
+02:16:34,200 --> 02:16:41,040
+A'nın ve B'nin olduğu durumda C'nin olmaması 4, 5, 6'dır
+
+1067
+02:16:41,040 --> 02:16:42,579
+Buraya bir de 6 gelecek
+
+1068
+02:16:42,579 --> 02:16:47,739
+Bunları genelde küçükten büyüğe doğru sıralı yazsak
+
+1069
+02:16:47,739 --> 02:17:15,620
+yani şöyle yazsak yerleştirirken de her zaman kolaylık çekeriz. Tamam. Bu geri kalanlar nedir? 0. Şimdi ben gruplandırma yapacağım. Gruplandırma yaparken kaç değişkenim vardı? 3 değişkenim. Ne diyordum? 2 üzeri 3. 8'li bir grup oluşturabilir miyim? Yani içerisine 8 tane 1'in girdiği bir grup oluşturabilir miyim? Hayır. 8 tane 1 yok.
+
+1070
+02:17:15,619 --> 02:17:29,159
+yok. Öyleyse en sayısını azalttım. 2 dedim. Dörtlü bir grup oluşturabilir miyim? İçinde 4 tane 1 olan bir grup oluşturabilir miyim? Evet oluşturabiliriz. Şu.
+
+1071
+02:17:30,932 --> 02:17:57,171
+başka bir dörtlü oluşturabilir miyim? Hayır. Gidip şunu şunu yani şöyle söyleyeyim şu ikiyi şöyle ve şöyle alıp şu olmayıp şöyle bir dörtlü alabilir miyim? Hayır. Öyle yılan gibi 90 derece köşeleri olan bir şeyler almıyorum. Şekiller almıyorum. Öyleyse başka dörtlü yok.
+
+1072
+02:17:57,171 --> 02:18:24,112
+en sayısını 1 yaptım 2 ikili bir grup oluşturabilir miyim şimdi bakıyorum evet açıkta iki tane bir yok nasıl ikili bir grup oluşturacağım ama kuralım neydi eğer alabileceğim en büyük grubu almaya çalışıyorsam açıkta kalan biri daha önceden gruplandırılmış birbiriyle yeniden gruplandırmaya sokabilirim
+
+1073
+02:18:24,112 --> 02:18:29,672
+Öyleyse ben şu biri şununla bir grup olarak alabilirim
+
+1074
+02:18:29,672 --> 02:18:33,571
+Bakın şöyle diagonal almadım çünkü diagonal alamıyorduk
+
+1075
+02:18:33,571 --> 02:18:35,171
+Şöyle bir grup aldık
+
+1076
+02:18:35,171 --> 02:18:38,171
+Açıkta kaldı mı başka bir? Kalmadı
+
+1077
+02:18:38,171 --> 02:18:39,351
+Öyleyse bitti
+
+1078
+02:18:39,351 --> 02:18:41,711
+Şimdi bunu okuyalım
+
+1079
+02:18:41,711 --> 02:18:42,732
+Sadeleştirelim
+
+1080
+02:18:42,732 --> 02:18:45,152
+Şu büyük kareyi okuyalım
+
+1081
+02:18:45,152 --> 02:18:46,251
+Bakalım
+
+1082
+02:18:46,251 --> 02:18:49,051
+Kolonlardan yukarı çıktık
+
+1083
+02:18:49,051 --> 02:18:50,332
+Ortak olan nedir?
+
+1084
+02:18:50,832 --> 02:18:52,872
+Her iki kolonda da olan B'dir
+
+1085
+02:18:52,871 --> 02:19:22,051
+satırlardan geldik orta kolan var mı yok öyleyse bunun değeri B'dir şimdi şu grubu okuyalım satırlardan yukarı çıktık orta kolan nedir A kolonlardan geldik orta kolan nedir C öyleyse bunun sonucu C'dir benim şu yukarki fonksiyonumun sadeleştirilmiş hali öyleyse AC artı B'dir
+
+1086
+02:19:22,051 --> 02:19:33,891
+3 tane değişkenim vardı 2 değişkene terime düştü pardon 3 terimim vardı 2 terime düştü ama değişken sayılarımda baya bir azalma oldu
+
+1087
+02:19:33,891 --> 02:19:39,652
+Şimdi başka bir örnek yapalım başka bir örnekle devam edelim
+
+1088
+02:19:39,652 --> 02:19:43,811
+Elimde yine 3 değişkenli bir fonksiyonum olsun
+
+1089
+02:19:43,811 --> 02:19:54,311
+Bu fonksiyonun mini terimleri toplamı 0, 1, 4, 5, 6 ve 7 olsun
+
+1090
+02:19:54,311 --> 02:19:57,191
+Ve bu fonksiyonu sadeleştireceğiz
+
+1091
+02:19:57,191 --> 02:20:03,471
+3 tane değişkenim varsa ben yine 3 değişkenli karnımı yapıyorum
+
+1092
+02:20:03,471 --> 02:20:08,751
+A yok, B yok
+
+1093
+02:20:08,751 --> 02:20:29,031
+A var, pardon A yok, B var, A var, B var, A var, B yok, burası da zaten C yok, C var.
+
+1094
+02:20:29,031 --> 02:20:40,871
+ben bunları ağ var ağ yok gibi yazacağım ama şöyle yazmak çok daha kolay geliyor 0 1 0 0 0 1 1 1 1 0
+
+1095
+02:20:40,871 --> 02:20:47,471
+aslında ben örneklerimi bundan sonra bu şekilde anlatayım bunların da bunlara karşılık geldiğini biliyoruz
+
+1096
+02:20:47,471 --> 02:20:57,751
+mini terimleri yerleştirelim 0 1 2 3 burada kolonlar yer değiştirmişti 4 5 6 ve 7
+
+1097
+02:20:57,751 --> 02:21:09,331
+Bana hangi terimler verilmiş? 0, 1, 4, 5, 6, 7, 2 ve 3 yok
+
+1098
+02:21:09,331 --> 02:21:18,331
+En büyük grup nedir? 2 üzeri 3'ten 8'lik bir grup olabilir mi? Olamaz çünkü 8 tane bir yok
+
+1099
+02:21:18,331 --> 02:21:25,531
+Bir aşağı düştüm, dörtlü bir grup olabilir mi? Şurada bir dörtlü grup görebiliyorum güzellikle
+
+1100
+02:21:25,531 --> 02:21:29,511
+bunu aldım. Peki başka dörtlü grup var mı?
+
+1101
+02:21:30,004 --> 02:21:42,344
+bakarsanız başka dörtlü bir grup olmadığını söyleyebilirsiniz. Ama var. Öyleyse onu da şu şekilde size anlatayım.
+
+1102
+02:21:47,219 --> 02:21:57,219
+şu şekilde gösterelim. Şu benim karno diagramım olsun. Bunu şöyle düşünün. Burada reklama da girdi ama yapacak bir şey yok.
+
+1103
+02:21:57,219 --> 02:22:10,219
+Bu karno diagramlarını sadeleştirirken alt satırla üç satırı şu şekilde birleştirip bunları bir grup gibi düşünebilirim.
+
+1104
+02:22:10,219 --> 02:22:37,219
+kolonları sol tarafta sağ tarafa birleştirip şu şekilde bir grup alabilirim veya boşça yapabilirim düz n ve m eşitse yani satır ve sütun sayısı eşitse şunları da şöyle birleştirip becerebilirsem şurayı da birleştirdiğimizi düşünelim
+
+1105
+02:22:37,219 --> 02:22:43,339
+bu şekilde 4 köşeyi bir araya getirerek bir grup oluşturabilirim.
+
+1106
+02:22:43,339 --> 02:22:46,240
+Şimdi ona göre buraya bakalım.
+
+1107
+02:22:46,879 --> 02:22:54,819
+Ben bunun sağını ve solunu birbiriyle katlarsam şuradaki iki bir ile şuradaki iki bir komşu olur.
+
+1108
+02:22:55,339 --> 02:23:06,660
+Öyleyse bunları da öyle katladığımı düşünürsem, şöyle katladığımı düşünürsem, şu kenarla bu kenar komşu olacağı için buradan da bir dörtlü çıkacaktır.
+
+1109
+02:23:06,659 --> 02:23:36,619
+Açıkta başka bir kaldı mı? Kalmadı. Hadi sadeleştirelim. Şuradaki dörtlüyü alalım. Kolonlardan yukarıya çıktık. Ortak olan nedir? A. Satırlardan geldik. Ortak olan nedir? Yok. Öyleyse bu sadece A'dır. Şu sağdan ve soldan birleştirdiğimiz gruba bakalım. Kolonlardan yukarı çıktık. Ortak olan B'nin olmaması. Satırlardan geldik. Ortak olan yok. Öyleyse B'nin olmaması.
+
+1110
+02:23:36,659 --> 02:23:48,159
+benim şu fonksiyonumun sadeleştirilmiş hali A, B, C diyelim sadeleştirilmiş hali A ve B üssü
+
+1111
+02:23:48,159 --> 02:23:57,160
+bakın bir de bunları uzun uzun yazdığımı düşünün 2, 4, 6 tane terim her biri 3 değişkenli yazılmış
+
+1112
+02:23:57,160 --> 02:24:03,359
+halbuki bunun sadeleştirilmiş hali bu çok daha hızlı hareket edebiliyorum
+
+1113
+02:24:03,359 --> 02:24:12,359
+Bu biraz uzun bir video oldu ama olsun üçlüye bir örnek daha yapmak istiyorum
+
+1114
+02:24:12,359 --> 02:24:29,160
+hemen şöyle verelim abc olsun 00 01 11 10 Bunlar benim a ve b'yi nasıl okuyacağımı söylüyordu
+
+1115
+02:24:29,160 --> 02:24:58,800
+burası 0 ve burası 1 benim fonksiyonlarım da şöyle olsun burası var var var var var var var ve burası var bir tane sıfırım var nasıl sadeleştiririm 8 grup var mı bakıyorum neden 8'lik 273'ten 8 hayır yok bir aşağı indim dörtlük grup var mı Evet
+
+1116
+02:24:59,160 --> 02:25:26,040
+dörtlük grup var. Nedir? Dörtlük grup. Şunu bir dörtlük grup olarak alabilirim. Doğru mu? Doğru. Açıkta bir kaldı mı? Kaldı. Devam ediyorum. Başka dörtlük bir grup oluşturabilir miyim? Şimdi bakıyorum. Üç tane açıkta bir kaldı. Böyle bir dörtlük gruba zaten girmez. Bir de böyle yamuk bir grup zaten alamazdım.
+
+1117
+02:25:26,039 --> 02:25:38,039
+gruplandırılmamış biriler büyük bir gruba girebilecekse daha önceden gruplandırılmış birileri kullanabiliriz demiştik.
+
+1118
+02:25:38,039 --> 02:25:45,199
+Öyleyse bunu da şu kalemle yapalım. Şöyle bir dörtlük alabiliriz. Bakın.
+
+1119
+02:25:46,195 --> 02:25:52,955
+şu iki tane biri bir dörtlük gruba soktum ama daha önceden gruplandırılmış bir biri kullanarak
+
+1120
+02:25:52,955 --> 02:25:57,595
+peki açıkta bir kaldı mı? evet kaldı burası kaldı
+
+1121
+02:25:57,595 --> 02:25:59,435
+devam edeceğim
+
+1122
+02:25:59,435 --> 02:26:14,315
+başka dörtlük var mı? yoksa bir aşağı inip ikilik grup mu ağırlayacağım? boş bulunup ikilik bir grup arasanız boş bulunup bunu ikinin sıfırıncı kuvvetinden birli bir grup alırsanız yanlış yapmış olursunuz
+
+1123
+02:26:14,315 --> 02:26:28,315
+Başka dörtlüyüm var mı? Evet var. Nedir? Şu biri bir dörtlü gruba sokmak için daha önceden gruplandırılmış birilerle birlikte alabilirim. İşte bu. Aldım.
+
+1124
+02:26:30,155 --> 02:26:41,775
+Dörtlük. Açıkta bir kaldı mı? Kalmadı. Haydi okuyalım. Şu dörtlüyü okuyoruz. Kolonlardan yukarı çıktık. Sadece A ortak. Satırlardan geldik. Ortak olan yok.
+
+1125
+02:26:41,775 --> 02:27:11,755
+şu ortadaki grubu alıyoruz kolonlardan yukarı çıktık ortak olan B satırlardan geldim yok burası B şu yatay olanı okuyoruz 4 tane kolonu var kolonlardan yukarı çıktım dördünde de ortak olan yok satırda geldim ortak olan sadece C var öyleyse şu fonksiyonun mini terimler toplamı cinsinden de yazalım şurası 0
+
+1126
+02:27:11,755 --> 02:27:18,035
+1, 2, 3, 4, 5, 6 ve 7
+
+1127
+02:27:18,035 --> 02:27:19,955
+Elimde hangi terimler varmış?
+
+1128
+02:27:20,056 --> 02:27:25,315
+1, 2, 3, 4, 5, 6 ve 7
+
+1129
+02:27:25,315 --> 02:27:28,155
+Ve bunu şimdi sadeleştirdim
+
+1130
+02:27:28,155 --> 02:27:30,556
+Ne çıktı karşıma?
+
+1131
+02:27:31,195 --> 02:27:33,855
+A, B ve C
+
+1132
+02:27:33,855 --> 02:27:38,935
+Size bir tane ödev veriyorum
+
+1133
+02:27:38,935 --> 02:27:40,795
+Bu ödevi de siz yapın
+
+1134
+02:27:40,795 --> 02:27:56,136
+öyle bir fonksiyonum olsun ki bu fonksiyonumda mini terimler toplamı 0, 6, 4, 3 ve 7.
+
+1135
+02:27:57,035 --> 02:28:02,856
+Bu fonksiyonun sadeleştirilmiş hali nedir?
+
+1136
+02:28:03,975 --> 02:28:04,356
+Evet.
+
+1137
+02:28:05,835 --> 02:28:08,035
+Bu videomuzu da burada tamamlıyoruz.
+
+1138
+02:28:12,852 --> 02:28:18,051
+Şimdi bana ne dediniz? Bu video oynatılırken diğerine mi geçin demiştiniz?
+
+1139
+02:28:21,692 --> 02:28:22,652
+Evet hocam, sağ olun.
+
+1140
+02:28:23,571 --> 02:28:29,251
+Direkt basın diğer videoya bunu kapatmadan. Öyle oluyor başka platformlarda ama burada olur mu bilmiyorum.
+
+1141
+02:28:29,612 --> 02:28:31,952
+Ben yaparsam hiçbir şey olmayabilir.
+
+1142
+02:28:31,952 --> 02:28:41,852
+Şimdi zaten burada bir 4 var, bir de 4A var. Allah'ım ne demek acaba? Hangisi daha öncenin?
+
+1143
+02:28:42,852 --> 02:28:55,331
+Bu örnekmiş. Tamam. Peki şöyle yapayım. Burada sola doğru gitti next video var. Belki o next videoya basarsam diğeri gelecek. Bir bakalım.
+
+1144
+02:28:56,331 --> 02:29:08,511
+Olabilir mi? Evet. Bu serinin son videosu. Dört değişkenli fonksiyonların sadeleştirmesinden bahsedeceğiz. Artık işimiz çok kolay. Üçlü çünkü her şeyi artık öğrendik.
+
+1145
+02:29:08,511 --> 02:29:12,932
+daha az örnekle bunu rahatlıkla tamamlayabiliriz.
+
+1146
+02:29:12,932 --> 02:29:18,551
+4 tane değişkenim varsa benim 16 tane farklı terimim olabilir.
+
+1147
+02:29:19,292 --> 02:29:21,032
+Bir fonksiyon yazalım.
+
+1148
+02:29:22,292 --> 02:29:25,631
+A, B, C ve D.
+
+1149
+02:29:26,032 --> 02:29:29,911
+Burada terim uydurmakta bile artık zorlanıyorum gördüğünüz gibi.
+
+1150
+02:29:31,752 --> 02:29:32,551
+A, B, C.
+
+1151
+02:29:34,051 --> 02:29:37,212
+A, B üstü, C üstü, D olsun.
+
+1152
+02:29:37,212 --> 02:29:43,171
+A, D olsun, A, B üstü, C olsun.
+
+1153
+02:29:43,671 --> 02:29:45,972
+Mesela bunlar da bir tanesi.
+
+1154
+02:29:47,012 --> 02:29:49,512
+Peki 4 değişkenliği nasıl yazacağız?
+
+1155
+02:29:50,451 --> 02:29:55,712
+A, B yukarıda, C, D de aşağıda olacak şekilde.
+
+1156
+02:30:00,000 --> 02:30:29,979
+nasıl yazmıştık burasını? 00, 01 grey kodlamayla 11, 10 yani A yok, B yok, A yok, B var, A ve B var, A var, B yoktu. Aynı şeyi burada C ve D için uygulayacağım. Yani 00, 01, 11, 10 olacak şekilde yazalım. C yok, D yok, C yok, D var.
+
+1157
+02:30:30,000 --> 02:30:42,759
+var, C var, D var, C var ve D yok. Şunları kapatalım. Gözlerini oluşturalım.
+
+1158
+02:30:45,876 --> 02:31:15,855
+hiçbir zaman düzgün çizemiyorum. Evet şimdi mini terimleri yerleştirelim isterseniz. Nasıl ışküde şurada bir atlama olduğu için, grey koda göre, ne yapıyorduk? mini terimleri kolonları da atlatıyorduk. Burada da satırlar üçüncü ve dördüncü satırda bir değişim olduğu için mini terimleri yerleştirirken de burada bir azaltma yapıyoruz. 0, 1,
+
+1159
+02:31:15,876 --> 02:31:32,376
+2, 3, 4, 5, atladım 6, 7, kolon atladım 8, 9, satır atladım 10, 11, 12, 13, 14, 15
+
+1160
+02:31:32,376 --> 02:31:36,155
+Doğruluğunu test edelim. Burası gerçekten 15 mi?
+
+1161
+02:31:36,155 --> 02:31:41,855
+A, B, C ve D, 4'ü de birse evet bu 15'tir.
+
+1162
+02:31:41,855 --> 02:31:57,215
+Burası gerçekten 10 mu? A var, B yok, C var, D yok. Yani nedir? Bu 8, 2 daha desimal olarak 10. İşte burada da 10 var.
+
+1163
+02:31:57,215 --> 02:32:06,435
+Şimdi yukarıdaki fonksiyonu yerleştirmeyelim de militerimler cinsinden şuraya bir fonksiyon hemen ben koyayım
+
+1164
+02:32:06,435 --> 02:32:12,275
+Daha düzgün bir örnek olsun diye yani hile yapıyorum
+
+1165
+02:32:12,275 --> 02:32:25,735
+Örneklerim şu olsun bir var 5, 7, 9, 11, 10, 13 ve 15'i vermişim
+
+1166
+02:32:25,736 --> 02:32:49,236
+tamam hadi yerleştirelim bir var 5 var 7 var 9 var 10 şurasına 10 diyeyim şuraya da 11 diyelim 10 var 11 var 13 var ve 15 var geri kalanlar nedir 0
+
+1167
+02:32:49,236 --> 02:33:16,135
+gruplandıracağız. 4 tane değişkenim var. 2 üzeri 4'ten 16'lık bir grup çıkabilir mi? Çıkmaz. 16 tane bir yok. 1 azalttım. 3, 2 üzeri 3. 8'lik bir grup oluşturabilir miyim? 8'lik bir grup da oluşturamam. 1 azalttım. 2, 2 üzeri 2'den 4'lük bir grup oluşturabilir miyim? Evet. Mesela şu bir 4'lük grup.
+
+1168
+02:33:16,135 --> 02:33:32,635
+Açıkta bir kaldı devam edeceğim. Başka dörtlük bir grup oluşturabilir miyim? Evet. Bu. Açıkta bir kaldı başka dörtlük bir grup oluşturabilir miyim? Evet. Nesidir? Şu.
+
+1169
+02:33:32,635 --> 02:33:43,255
+bu. Açıkta bir kaldı. Başka bir dörtlük grup oluşturabilir miyim? Hayır oluşturamam. El sayısını
+
+1170
+02:33:43,255 --> 02:33:50,635
+bir azalttım. 1, 2 üzeri 1. İkilik bir grup oluşturabilir miyim? Bu bir. Maksimum grup olan ikiyi
+
+1171
+02:33:50,635 --> 02:33:57,475
+alabilmem için daha önce alınmış olan bir bir ile gruplandırabilirim. Gruplandırdım. Açıkta bir kaldı mı?
+
+1172
+02:33:57,475 --> 02:34:27,455
+Hayır öyleyse işlemin bitti Haydi okuyalım Şuradaki dörtlüyü okuyorum şu dörtlüyü okuyorum kolonlardan yukarı çıktım ortak olan A geldim satırlardan ortak olan nedir D yani A ve D şunu okuyalım kolonlardan yukarı çıktım ortak olan B satırlardan geldim ortak olan D burası da B'de şu uzunu okuyalım kolonlardan yukarı çıktım
+
+1173
+02:34:27,456 --> 02:34:39,995
+yaptım 4 kolonda da ortak olan var mı yok satırdan geldim ortak olan hepsinde C'nin olmaması D'nin olması bir de şuradaki küçük ikili var
+
+1174
+02:34:39,984 --> 02:34:48,103
+kolonlardan yukarı çıkardım. Her ikisinde de ortak olan A var B yok. Şu ikisinin satırından geldim.
+
+1175
+02:34:48,103 --> 02:34:57,103
+Ortak olan nedir her iki satırda da? C'nin olması. Öyleyse benim yukarıdaki şu fonksiyonumun
+
+1176
+02:34:57,103 --> 02:35:11,803
+sadeleşmiş hali ad artı a pardon pardon şu yok a b üstü c artı b d artı c üstü d'dir
+
+1177
+02:35:11,803 --> 02:35:19,603
+şimdi bunu anlayıp anlamadığımızı görmek amacıyla
+
+1178
+02:35:19,603 --> 02:35:26,803
+bir tane daha örnek yapalım yine mini terimler cinsinden vereyim ben
+
+1179
+02:35:26,803 --> 02:35:35,803
+ne olsun 0 2
+
+1180
+02:35:41,492 --> 02:35:43,492
+sekiz
+
+1181
+02:35:46,195 --> 02:35:50,556
+10 olsun
+
+1182
+02:35:52,595 --> 02:35:55,915
+4, 5, 7
+
+1183
+02:35:57,295 --> 02:36:04,075
+4, 5, 7, 8 ve 10 diyelim. Evet bu.
+
+1184
+02:36:05,876 --> 02:36:09,495
+Hemen grafimizi çizelim. Şöyle açalım.
+
+1185
+02:36:11,036 --> 02:36:14,095
+A, B, C'de
+
+1186
+02:36:16,195 --> 02:36:24,195
+00, 01, 11, 10, 00, 01, 11, 10
+
+1187
+02:36:24,195 --> 02:36:25,195
+dedik
+
+1188
+02:36:33,652 --> 02:36:58,851
+mini terimleri yerleştirdik. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ve 15. Bakın videonun sonunda size soracağım örneklerle.
+
+1189
+02:36:58,851 --> 02:37:21,152
+anlamadığınız yer neresi diye onları lütfen yazın sesli olarak bana dersin sonunda sorun şimdi hangi mini terimler verilmiş bana 024 024578 ve 10 başka da yok 0 bunların hepsi 0
+
+1190
+02:37:21,152 --> 02:37:33,152
+hadi bakalım sadeleştirelim 16'lık bir grup var mı? Hayır yok bir aşağı indim 8'lik bir grup çıkar mı buradan?
+
+1191
+02:37:35,152 --> 02:37:48,152
+çıkmaz görüyoruz dörtlük grup çıkar mı? şimdi birçoğunuz hayır çıkmaz diyeceksiniz ama ne yapıyorduk biz bu diagramları
+
+1192
+02:37:48,152 --> 02:38:06,391
+bunları kolunlar sağ ve sol bir araya alt ve üst bir araya getirecek şekilde katladığımızda bohça şeklini alıyor demiştik bir şekilde size göstermiştim onu yeniden göstereyim şurada bir saniye
+
+1193
+02:38:11,156 --> 02:38:13,156
+mesela böyleydi
+
+1194
+02:38:13,156 --> 02:38:14,795
+bu benim
+
+1195
+02:38:19,219 --> 02:38:37,219
+alt ve üstü soldan ve sağdan birleştirdik. bunu daha düzgün katlanmış olduğunu kabul edin. şu köşeler ne oldu? şey, komşu oldu. öyleyse ben bunu bohça gibi kapladığımda şu kenar
+
+1196
+02:38:37,219 --> 02:39:06,499
+Şurayla, şurası şurayla, şurası şurayla gelecek. Yani bunlar hem böyle hem de böyle katlandığında şunlar bir dörtlü grup oluşturacak. Başka dörtlü grup var mı? Başka dörtlü grup yok. Öyleyse bir azalttım. 2 üzeri 1. İkili grup çıkar mı? Şimdi burada önemli bir soru var. Mesela ikili grup olarak ben
+
+1197
+02:39:07,219 --> 02:39:09,019
+Şunu aldım
+
+1198
+02:39:12,691 --> 02:39:14,471
+Başka ikili grup var mı?
+
+1199
+02:39:15,291 --> 02:39:23,191
+İstersem şunu alabilirim ikili grup olarak gördüğünüz gibi veya ikili grup olarak bunu alabilirim.
+
+1200
+02:39:23,831 --> 02:39:24,831
+Bana kalmış bir şey.
+
+1201
+02:39:25,011 --> 02:39:27,551
+İkisini birden kesinlikle almıyorum.
+
+1202
+02:39:27,551 --> 02:39:43,951
+Yani daha önceden grupların içinde bulunmuş biriler bir başka biri gruplandırmak için kullanılmıyorsa gruplandırılmış bir şeyi bir daha gruplandıramam.
+
+1203
+02:39:44,392 --> 02:39:50,451
+Yani bu açıkta kalan biri ister şöyle bir ikili alabilirim ister de şöyle bir ikili alabilirim.
+
+1204
+02:39:50,511 --> 02:39:53,451
+Bu bana kalmış ama canım şöyle almak istedi.
+
+1205
+02:39:53,851 --> 02:39:54,571
+Böyle alayım.
+
+1206
+02:39:54,571 --> 02:39:56,571
+Başka açıkta yok.
+
+1207
+02:39:57,231 --> 02:39:59,291
+Öyleyse hemen sadeleştirelim.
+
+1208
+02:39:59,391 --> 02:40:01,331
+Şu borçaları sadeleştirelim.
+
+1209
+02:40:01,871 --> 02:40:03,651
+Kolonlardan yukarı çıktım.
+
+1210
+02:40:03,771 --> 02:40:04,811
+Ortak olan nedir?
+
+1211
+02:40:04,971 --> 02:40:06,071
+B'nin olmaması.
+
+1212
+02:40:06,571 --> 02:40:07,911
+Satırlardan geldim.
+
+1213
+02:40:08,071 --> 02:40:09,331
+Ortak olan nedir?
+
+1214
+02:40:09,831 --> 02:40:10,811
+D'nin olması.
+
+1215
+02:40:11,111 --> 02:40:14,771
+Yani B'nin olmaması ve D'nin olması.
+
+1216
+02:40:15,391 --> 02:40:16,531
+Şuraya geldim.
+
+1217
+02:40:17,111 --> 02:40:18,131
+Yukarı çıktım.
+
+1218
+02:40:18,611 --> 02:40:19,391
+A yok.
+
+1219
+02:40:19,731 --> 02:40:20,531
+B var.
+
+1220
+02:40:20,531 --> 02:40:22,951
+Şu ikiden satırlardan geldim.
+
+1221
+02:40:22,952 --> 02:40:25,151
+Sadece D ortak
+
+1222
+02:40:25,151 --> 02:40:26,712
+Şuraya geldim
+
+1223
+02:40:26,712 --> 02:40:28,572
+Kolonlardan çıktım
+
+1224
+02:40:28,572 --> 02:40:30,872
+A yok B var
+
+1225
+02:40:30,872 --> 02:40:33,052
+Satırlardan geldim
+
+1226
+02:40:33,052 --> 02:40:34,952
+Sadece C yok
+
+1227
+02:40:34,952 --> 02:40:36,212
+Öyleyse
+
+1228
+02:40:36,212 --> 02:40:38,952
+Benim bu fonksiyonumun
+
+1229
+02:40:39,572 --> 02:40:40,952
+Sadeleştirilmiş hali
+
+1230
+02:40:41,492 --> 02:40:43,391
+A yok B var
+
+1231
+02:40:43,391 --> 02:40:44,191
+C yok
+
+1232
+02:40:44,191 --> 02:40:46,151
+B yok D var
+
+1233
+02:40:46,151 --> 02:40:47,592
+A yok
+
+1234
+02:40:47,592 --> 02:40:49,792
+B ve D var
+
+1235
+02:40:49,792 --> 02:40:52,792
+Sesini duyuyor musunuz?
+
+1236
+02:40:52,951 --> 02:40:53,351
+Peki.
+
+1237
+02:40:54,911 --> 02:40:56,871
+O da hata yapmışım.
+
+1238
+02:40:57,511 --> 02:40:58,231
+Gördünüz mü?
+
+1239
+02:40:58,851 --> 02:40:59,091
+Evet.
+
+1240
+02:41:00,091 --> 02:41:01,871
+Dönü dolmaması oldu.
+
+1241
+02:41:02,451 --> 02:41:04,471
+Sonra video bitiminde
+
+1242
+02:41:04,471 --> 02:41:06,131
+bunun üzerinde konuşalım.
+
+1243
+02:41:06,131 --> 02:41:07,031
+Ay rezillik.
+
+1244
+02:41:08,131 --> 02:41:09,651
+Geriye alıp durdurabilir misiniz?
+
+1245
+02:41:09,651 --> 02:41:12,231
+Bir dakika.
+
+1246
+02:41:12,671 --> 02:41:14,371
+Çok zor şey istedim benden.
+
+1247
+02:41:14,951 --> 02:41:17,071
+Şöyle geriye alıyorum arkadaşlar.
+
+1248
+02:41:17,791 --> 02:41:19,351
+Hatta yaptığınız yerde durdurabilirsiniz.
+
+1249
+02:41:19,631 --> 02:41:19,911
+Tamam.
+
+1250
+02:41:20,151 --> 02:41:21,412
+B var. C yok.
+
+1251
+02:41:21,412 --> 02:41:23,191
+B yok. D yok.
+
+1252
+02:41:23,191 --> 02:41:24,732
+Orta kolan nedir? B'nin olması.
+
+1253
+02:41:25,732 --> 02:41:27,111
+Satırlardan geldim.
+
+1254
+02:41:27,272 --> 02:41:28,531
+Orta kolan nedir?
+
+1255
+02:41:29,012 --> 02:41:30,012
+D'nin olması.
+
+1256
+02:41:30,331 --> 02:41:33,531
+Yani D'nin olması diyorum.
+
+1257
+02:41:33,691 --> 02:41:35,652
+Göz göre göre D yokken.
+
+1258
+02:41:37,712 --> 02:41:39,132
+Burada satırlarda
+
+1259
+02:41:39,132 --> 02:41:41,412
+mouse'u göremiyorsunuz.
+
+1260
+02:41:41,492 --> 02:41:42,712
+Görüyor musunuz mouse'u?
+
+1261
+02:41:43,191 --> 02:41:43,891
+Görüyoruz hocam.
+
+1262
+02:41:44,352 --> 02:41:45,951
+Şurada da D yok.
+
+1263
+02:41:46,272 --> 02:41:47,451
+Burada da D yok.
+
+1264
+02:41:47,451 --> 02:41:49,611
+Göre göre D'nin olması
+
+1265
+02:41:49,611 --> 02:41:51,632
+deyip oraya D yazıyorum.
+
+1266
+02:41:51,772 --> 02:41:52,971
+O D'nin inverse.
+
+1267
+02:41:54,971 --> 02:41:57,751
+Tabi bu videoyu sonradan izleyenler
+
+1268
+02:41:57,751 --> 02:41:59,191
+bunu yanlış görecek.
+
+1269
+02:41:59,572 --> 02:42:01,391
+Neyse siz kulaktan kulağa bunu
+
+1270
+02:42:01,391 --> 02:42:02,132
+duyuyorsunuz.
+
+1271
+02:42:02,132 --> 02:42:04,731
+B'nin olmaması ve D'nin olması.
+
+1272
+02:42:05,352 --> 02:42:08,072
+Şuraya geldim. Yukarı çıktım.
+
+1273
+02:42:08,572 --> 02:42:09,331
+A yok.
+
+1274
+02:42:09,331 --> 02:42:10,492
+B var.
+
+1275
+02:42:10,811 --> 02:42:12,912
+Şu ikiden satırlardan geldim.
+
+1276
+02:42:13,132 --> 02:42:15,072
+Sadece D ortak.
+
+1277
+02:42:15,572 --> 02:42:16,611
+Şuraya geldim.
+
+1278
+02:42:17,011 --> 02:42:18,471
+Kolonlardan çıktım.
+
+1279
+02:42:18,471 --> 02:42:20,831
+A yok B var.
+
+1280
+02:42:21,511 --> 02:42:22,992
+Satırlardan geldim.
+
+1281
+02:42:23,371 --> 02:42:24,871
+Sadece C yok.
+
+1282
+02:42:25,371 --> 02:42:36,111
+Öyleyse benim bu fonksiyonumun sadeleştirilmiş hali A yok B var C yok B yok D var.
+
+1283
+02:42:36,831 --> 02:42:39,691
+A yok B ve D var.
+
+1284
+02:42:42,412 --> 02:42:46,231
+Peki bir iki tane örnek verelim size.
+
+1285
+02:42:46,231 --> 02:42:48,171
+hatta
+
+1286
+02:42:48,171 --> 02:42:50,711
+şimdi kendiniz çözün
+
+1287
+02:42:50,711 --> 02:42:53,251
+ve dersten sonra
+
+1288
+02:42:53,251 --> 02:42:54,431
+yani video bitiminde
+
+1289
+02:42:54,431 --> 02:42:56,631
+bunlar üzerinde konuşalım
+
+1290
+02:42:56,631 --> 02:42:58,631
+evet bu arada siz
+
+1291
+02:42:58,631 --> 02:43:00,051
+bunları çözmeye çalışın
+
+1292
+02:43:00,051 --> 02:43:01,551
+şunlar olsun
+
+1293
+02:43:01,551 --> 02:43:04,571
+mini terimler toplamı
+
+1294
+02:43:04,571 --> 02:43:06,851
+karışık verin
+
+1295
+02:43:06,851 --> 02:43:09,071
+bunları illa sırayla vermem gerekmiyor
+
+1296
+02:43:09,071 --> 02:43:10,151
+1-3
+
+1297
+02:43:10,151 --> 02:43:12,091
+5-7
+
+1298
+02:43:12,091 --> 02:43:13,091
+Evet.
+
+1299
+02:43:13,363 --> 02:43:43,263
+9, 11, 13, 15, 4 ve 6. Bu arada da bazen görüntü kötü oluyormuş. Bir başka örnek verelim. A, B, C, D diye. Bu örneklerimde 1, 3, 9, 11, 13, 15,
+
+1300
+02:43:43,363 --> 02:44:09,643
+son bir örnek daha verdim abcd diyelim bu örneğimizde ne olsun 2 7 13 8 12 14 ve 10 mi Evet
+
+1301
+02:44:09,643 --> 02:44:33,623
+Evet arkadaşlar dersimiz uzadı ama size 5 dakika süre veriyorum. Bu karno diagramlarını bir sadeleştirin bakalım bu fonksiyonları. Bu arada ben de Yusis üzerinden unutmadan mail atayım. Bugün dersi dinlemeyenler bilsin orada o hatanın olduğunu. Tamam mı?
+
+1302
+02:44:36,084 --> 02:44:37,423
+Tamam hocam.
+
+1303
+02:44:37,423 --> 02:44:41,423
+5 dakika sonra çözümlü şeyini göstereceğim
+
+1304
+02:44:43,423 --> 02:44:45,423
+ben de Yusis'e geçeyim
+
+1305
+02:50:00,404 --> 02:50:02,404
+Doldu mu 5 dakika?
+
+1306
+02:50:08,628 --> 02:50:10,628
+herkes gitti mi?
+
+1307
+02:50:13,459 --> 02:50:15,459
+Yıldız'ın başında.
+
+1308
+02:50:15,459 --> 02:50:27,459
+Tamam. Mail gönderdim gruba. Elinize gelir herhalde. Bu arada arkadaşlar bana bazen yıldız üzerinden atmış olduğunuz mailler spam'e düşüyor.
+
+1309
+02:50:27,459 --> 02:50:41,459
+Spam'e her gün bakmaya çalışıyorum ama bazen unutuyorum. Bazı böyle önemli mailleriniz böyle cevapsız kalıyorsa bir daha göndermeye çalışın tamam mı?
+
+1310
+02:50:41,459 --> 02:50:46,660
+şimdi yeniden şu next video olayını yapıyorum
+
+1311
+02:50:46,660 --> 02:50:49,759
+3 tane soru sormuştuk size
+
+1312
+02:50:49,759 --> 02:50:53,680
+normal mi?
+
+1313
+02:50:53,680 --> 02:50:55,459
+tamam
+
+1314
+02:50:55,459 --> 02:50:57,360
+bilmiyorum
+
+1315
+02:50:57,360 --> 02:51:00,180
+birinci fonksiyonla miniteremler diyor ki
+
+1316
+02:51:00,180 --> 02:51:03,699
+1, 3, 5, 7, 9, 11, 13, 15, 4 ve 6
+
+1317
+02:51:03,699 --> 02:51:07,059
+hop diagramımızı aldık
+
+1318
+02:51:07,059 --> 02:51:22,359
+1, 3, 4, 5, 7, 6, 9, 11, 13, 15, 1 koyduk. Diğerleri de nedir? 0. Kurşun kalemle yapıyorum ki bunları çizeceğim. Sileceğim sonra ikinci örneği yapacağız.
+
+1319
+02:51:22,360 --> 02:51:47,239
+Şimdi bakıyoruz 16'lık bir grubumuz var mı? Hayır yok. Bir aşağıya indik. İkinin kuvvetleri cinsinden iniyoruz. 8'lik bir grubumuz var mı? Var. Nerede var? İşte şurada var. Bu bir 8'lik grup. Açıkta bir var mı? Evet var. Devam edeceğim. Başka 8'lik grup alabilir miyim? Hayır alamam.
+
+1320
+02:51:47,239 --> 02:52:12,000
+Dörtlük bir grup var mı? Açıktaki birileri içine alacak. Daha önceden gruplanmış biri de kullanarak bir dörtlük yapabilir miyim? Evet yapabilirim. Nerede? İşte burada. Açıkta başka bir kaldı mı? Hayır. Öyleyse okuyalım. Şuraya bakalım. Dört kolondan da yukarı gittiğimde ortak olan bir şey var mı? Yok.
+
+1321
+02:52:12,000 --> 02:52:15,159
+satırlardan geldiğimde ortak olan nedir?
+
+1322
+02:52:15,159 --> 02:52:17,739
+sadece D'nin olması
+
+1323
+02:52:17,739 --> 02:52:20,360
+buraya bakıyoruz
+
+1324
+02:52:20,360 --> 02:52:24,320
+kolonlardan yukarı çıktım
+
+1325
+02:52:24,320 --> 02:52:26,379
+dördünde de ortak olan nedir?
+
+1326
+02:52:26,579 --> 02:52:28,900
+A'nın olmaması, B'nin olması
+
+1327
+02:52:28,900 --> 02:52:33,099
+dördünden de satırlarda gelirsem ortak olan var mı?
+
+1328
+02:52:33,760 --> 02:52:34,780
+hayır, yok
+
+1329
+02:52:34,780 --> 02:52:37,840
+öyleyse birinci sorunun
+
+1330
+02:52:37,840 --> 02:52:39,500
+yani şu sorunun
+
+1331
+02:52:39,500 --> 02:52:41,620
+sadeleştirilmiş hali
+
+1332
+02:52:41,620 --> 02:52:46,159
+A üstü B artı D'dir.
+
+1333
+02:52:46,159 --> 02:52:48,620
+Şimdi geçelim ikinci örneğe.
+
+1334
+02:52:48,920 --> 02:52:51,700
+Soru var mı arkadaşlar? Yanlı çözen olmuş mu?
+
+1335
+02:52:52,820 --> 02:52:53,540
+İçinizde.
+
+1336
+02:53:02,484 --> 02:53:04,484
+herkes doğru mu çözdü?
+
+1337
+02:53:04,484 --> 02:53:09,484
+hocam ben daha çözememiştim 5 dakika çizmeye yedi sadece benim için
+
+1338
+02:53:09,484 --> 02:53:24,484
+Allah seni ne yapmasın ben de sonradan akıllandım gördüğüm gibi silerek tabloları kullanmaya başladım ama kendini anlayarak çözmeye devam et tamam mı?
+
+1339
+02:53:24,484 --> 02:53:29,484
+öyle yapacağım hocam da çözümleri şimdi sadece sonuçlarını yazdım tabloyu yoksa tekrar çizip uğraşacağım
+
+1340
+02:53:29,484 --> 02:53:35,603
+tamam peki şimdi devam ediyoruz ikinci örneği hemen bunları siliyorum
+
+1341
+02:53:38,603 --> 02:53:49,463
+vefalarca çizleyelim tatlı silme özlemini de böylece gidermiş oldum Evet şimdi ikinci bize bakalım ikinci mizde
+
+1342
+02:53:49,463 --> 02:54:09,463
+1, 3, 9, 1 var, 3 var, 9 var, 11 var, başka ne var, başka ne var, 11, 13 var, 15 var, 12 var ve 14 var. Evet, bunlar. Diğerleri yok. 0.
+
+1343
+02:54:13,523 --> 02:54:36,683
+Haydi, 16'lık bir grup var mı? Yok. 8'lik bir grup var mı? 8'lik bir grup yok. 4'lük bir grup var mı? Burada çok önemli bir şey karşımıza çıkacak. Nedir o? Mesela şöyle bir şey.
+
+1344
+02:54:36,683 --> 02:54:53,683
+yanlış yapmak istiyorum şöyle bir dörtlük aldım dörtlük mü Evet dörtlük başka dörtlük grup var mı var şöyle bir dörtlük aldım
+
+1345
+02:54:53,683 --> 02:55:08,023
+başka bir dörtlük var mı? Bunların sağ ve solunu katladığım vakit komşu olan şu iki, şu birler bir araya geldiğinde şöyle bir dörtlük olur.
+
+1346
+02:55:09,104 --> 02:55:18,964
+Ooo açıkta bir yok. Bitti. Ben bunu doğru sadeleştirdim diyebilir miyim? Bir bakın. Burada fazla bir gruplandırma var mı?
+
+1347
+02:55:18,963 --> 02:55:24,443
+var. Şunu çıkarırsam eğer şuradan
+
+1348
+02:55:24,443 --> 02:55:45,463
+bir anlamı yok. Ben şöyle bir dörtlüğü aldım. Şuradaki dörtlüğü görmeden şu dörtlüğü alıp al sonra bu birileri de şu dörtlüğü ile alırım desem şu ortada fazladan bir gruplandırma yapmış olabilirim.
+
+1349
+02:55:45,463 --> 02:56:14,663
+Sadeleştirdiğim dediğim fonksiyon bir terim fazla sadeleşmiş olur. Bu da problemdir. Öyleyse iki tane gruba düştük. Bunu nasıl okuyorduk? Ortak olan yukarıda A ve B var. Satırlarda yok. Şunu okuyalım. Kolonlardan yukarı çıktık. Ortak olan B'nin olmaması. Satırlardan geldik. Ortak olan nedir? D. İşte bunu da sadeleştirmiş hali bu. Şu yukarıya çıkıyorum.
+
+1350
+02:56:14,663 --> 02:56:18,803
+A, B, B üstü D
+
+1351
+02:56:18,803 --> 02:56:37,544
+Arkadaşlar buradaki problemi çok önemli bir problem. Bu genelde yapılan bir hata. Yani hemen gördüğünüzde grupları pat pat diye almayın. Şöyle bir bakın. Fazladan almış olduğunuz grubunuz var mı?
+
+1352
+02:56:37,544 --> 02:56:49,844
+bu silmiş olduğum grup ilk önce gördüğüm ve işaretlediğim bir grup. Daha sonra gruplandırmalar yapınca o grubun şöyle baktığınızda anlamsız olduğunu görüyorsunuz.
+
+1353
+02:56:49,904 --> 02:56:58,904
+O zaman ben sadeleştirme yapmış olamam. Yani hatalı bir fonksiyon elde ederim. O da fonksiyonun sadeleşmiş hali olmaz.
+
+1354
+02:56:58,903 --> 02:57:08,083
+olamaz. Lütfen bunlara dikkat edin. Özellikle bu şeyin oluşmasını istedim bu örnekte. Devam ediyorum.
+
+1355
+02:57:08,083 --> 02:57:23,323
+Şimdi üçüncü soruyu yapalım. Bakın burada yeniden söylüyorum. Oldu ya ben şu dörtlüyü görmeden şuradaki bir dörtlüyü aldım.
+
+1356
+02:57:23,324 --> 02:57:26,363
+Sonra gittin bunu ikili aldın
+
+1357
+02:57:26,363 --> 02:57:29,083
+Yalnız sadeleştirmiş olursun
+
+1358
+02:57:29,083 --> 02:57:31,443
+Şuradaki dörtlüyü aldın
+
+1359
+02:57:31,443 --> 02:57:33,984
+Sonra şurada da bir dörtlü gördün
+
+1360
+02:57:33,984 --> 02:57:35,663
+Şu dörtlüyü de aldın
+
+1361
+02:57:35,663 --> 02:57:37,784
+Yalnız sadeleştirmiş olursun
+
+1362
+02:57:37,784 --> 02:57:40,544
+Amacım minimum grup
+
+1363
+02:57:40,544 --> 02:57:49,824
+Ve alabileceğim maksimum ikinin kuvvetleri cinsinden gruplar oluşturabilmek
+
+1364
+02:57:49,824 --> 02:57:52,824
+Şimdi bunu yeniden siliyoruz
+
+1365
+02:58:01,556 --> 02:58:02,435
+evet
+
+1366
+02:58:05,523 --> 02:58:21,723
+üçüncü örneğimizi yapalım. üçüncü örneğimiz ne diyor? 2, 7, 13. 2, 7, 13, 8, 12, 14 ve 10. oldukça kötü bir fonksiyon.
+
+1367
+02:58:21,723 --> 02:58:24,143
+Hadi bakalım
+
+1368
+02:58:24,143 --> 02:58:26,843
+8'lik bir gruplandırma var mı?
+
+1369
+02:58:27,723 --> 02:58:30,083
+Çok pardon 16'lık yok
+
+1370
+02:58:30,083 --> 02:58:33,443
+8'lik var mı? Yok
+
+1371
+02:58:33,443 --> 02:58:37,683
+4'lük var mı? Evet var
+
+1372
+02:58:37,683 --> 02:58:40,884
+Bununla bu 4'lük olur
+
+1373
+02:58:40,884 --> 02:58:44,963
+Başka 4'lük var mı? Yok
+
+1374
+02:58:44,963 --> 02:58:46,943
+2'lik alacağız
+
+1375
+02:58:46,943 --> 02:58:50,903
+2'lik ne var? Sadece şu var
+
+1376
+02:58:50,903 --> 02:58:55,643
+Başka ikilik var mı? Bunu böyle alamazsın
+
+1377
+02:58:55,643 --> 02:59:00,883
+Başka ikilik var mı? Şununla şunu da tek taraflı alamazsın
+
+1378
+02:59:00,883 --> 02:59:03,023
+İlla bu borça şeklinde olacak
+
+1379
+02:59:03,023 --> 02:59:03,683
+Yok
+
+1380
+02:59:03,683 --> 02:59:06,303
+Öyleyse birliklere geldik
+
+1381
+02:59:06,303 --> 02:59:07,943
+Bir tane bu birlik var
+
+1382
+02:59:07,943 --> 02:59:09,963
+Bir tane de bu birlik var
+
+1383
+02:59:09,963 --> 02:59:11,543
+Okuyalım şunu
+
+1384
+02:59:11,543 --> 02:59:14,503
+Şununla kolonlardan yukarı çıktım
+
+1385
+02:59:14,503 --> 02:59:15,583
+Ortak olan A
+
+1386
+02:59:15,583 --> 02:59:17,063
+Satırlardan geldim
+
+1387
+02:59:17,063 --> 02:59:20,303
+Ortak olan D'nin olmaması
+
+1388
+02:59:20,303 --> 02:59:23,704
+bu kolonlardan yukarı çıktım.
+
+1389
+02:59:23,903 --> 02:59:24,884
+A, B ve B.
+
+1390
+02:59:25,263 --> 02:59:26,704
+Satırlardan geldim.
+
+1391
+02:59:27,043 --> 02:59:28,263
+C'nin olmaması.
+
+1392
+02:59:28,903 --> 02:59:31,003
+Burası A yok.
+
+1393
+02:59:31,803 --> 02:59:32,863
+B var.
+
+1394
+02:59:33,623 --> 02:59:34,443
+C ve D.
+
+1395
+02:59:34,964 --> 02:59:39,043
+Burası da A yok.
+
+1396
+02:59:39,663 --> 02:59:40,643
+B yok.
+
+1397
+02:59:42,043 --> 02:59:43,204
+Ortak olan ne var?
+
+1398
+02:59:43,363 --> 02:59:44,023
+C var.
+
+1399
+02:59:44,023 --> 02:59:45,523
+D'nin olmaması.
+
+1400
+02:59:46,163 --> 02:59:48,503
+Yani şuraya da çıkarsak.
+
+1401
+02:59:48,503 --> 02:59:57,563
+Orada da A yok olacak ama A'nın üstüne koymamışım. Artık bunları siz anlıyorsunuz bu işi, öğrendiniz diye düşünüyorum.
+
+1402
+02:59:57,703 --> 02:59:59,003
+Hocam bir şey sorabilir miyim?
+
+1403
+02:59:59,343 --> 02:59:59,703
+Evet.
+
+1404
+03:00:00,303 --> 03:00:07,203
+Sol alttakini alırken sağ ve solu birleştirseydik ikili grup olmaz mıydı sol alttaki ile sağ alttaki?
+
+1405
+03:00:08,323 --> 03:00:11,083
+Geriye alayım neyi sorduğuna bir bakalım.
+
+1406
+03:00:11,943 --> 03:00:13,083
+2 ile 10'u diyor hocam.
+
+1407
+03:00:13,083 --> 03:00:17,223
+A yok, B yok.
+
+1408
+03:00:18,503 --> 03:00:21,483
+Orta kolon L var, C var, D'nin olmaması
+
+1409
+03:00:21,483 --> 03:00:23,683
+Siz bunu çok iyi anlamışsınız arkadaşlar
+
+1410
+03:00:23,683 --> 03:00:26,163
+Şuraya da çıkarsak yazacağım şey
+
+1411
+03:00:26,163 --> 03:00:27,884
+A devüsü
+
+1412
+03:00:27,884 --> 03:00:30,003
+A, B, C'sü
+
+1413
+03:00:30,003 --> 03:00:31,983
+B yok
+
+1414
+03:00:31,983 --> 03:00:34,923
+Bunu birili gördüm
+
+1415
+03:00:34,923 --> 03:00:37,023
+Evet bu da yanlış
+
+1416
+03:00:37,023 --> 03:00:39,823
+Bunları inşallah ben koymadım bir yerlere
+
+1417
+03:00:39,823 --> 03:00:41,583
+Bu da yanlış
+
+1418
+03:00:41,583 --> 03:00:43,023
+Bunu böyle düşünmeyin
+
+1419
+03:00:43,023 --> 03:00:45,203
+Doğru bunu teklik alamayız
+
+1420
+03:00:45,203 --> 03:00:55,523
+bunu 2 ve 10 birleştirdiğim vakit başka bir şey olur mu? Bir daha bir bakayım. Yok. Evet bunu da 2 ile 10'u birleştirerek alıyoruz.
+
+1421
+03:00:57,263 --> 03:01:07,083
+Yani bunun en son terimimiz ne olacak? Yukarıya çıktım. B'nin olmaması. Satırlardan geldim. B yok, C var, D yok olacak.
+
+1422
+03:01:07,083 --> 03:01:10,563
+ortak olan ne var? C var. D'nin olmanızı.
+
+1423
+03:01:10,563 --> 03:01:12,843
+Bu size çepten göndermiş oldum.
+
+1424
+03:01:12,884 --> 03:01:15,343
+Şuraya da çıkarsak yazacağım şey.
+
+1425
+03:01:15,684 --> 03:01:17,983
+Çepte göndermiş oldum linkte bu var.
+
+1426
+03:01:17,983 --> 03:01:25,623
+A üstü, A, B, C üstü, artı, A üstü, B, C, D, artı, A, B üstü, C, D üstü.
+
+1427
+03:01:25,623 --> 03:01:27,583
+Neyse ben bir daha mail yazacağım.
+
+1428
+03:01:28,003 --> 03:01:28,684
+Bunu düzeltmek için.
+
+1429
+03:01:28,684 --> 03:01:29,523
+Gördüğünüz gibi.
+
+1430
+03:01:30,263 --> 03:01:31,964
+Ama çok hoşuma gitti bu.
+
+1431
+03:01:31,983 --> 03:01:35,483
+Karna diagramlarını kullanarak sadeleştirmelerimiz bu.
+
+1432
+03:01:35,483 --> 03:01:52,123
+Bu benimle hep aynı kişiler konuşuyor. Diğerleri hakkında bir yorum bilmiyorum. Onlar da bu hataları gördüler mi? Onlar dediğim hiç kimse yok mu? İki kişi mi kaldınız?
+
+1433
+03:01:53,268 --> 03:01:53,987
+yok hocam
+
+1434
+03:01:53,987 --> 03:02:09,927
+ne olur bir tepki de verin yani bakın o kadar hoşuma gitti ki yani çok hoşuma gitti çok teşekkür ediyorum bu videoları ben kaç kere çektim biliyor musunuz?
+
+1435
+03:02:09,927 --> 03:02:23,167
+Allah'ım tam çekiyorum ezan okunuyor tam çekiyorum evde eşim bir gürültü yapıyor defalarca aynı şeyleri söylemekten yoruldum ve böyle hata yapmış olmama da çok sevindim
+
+1436
+03:02:23,167 --> 03:02:45,967
+bunu gördüğünüz an Allah'ım diyor bak verdiğim emekler boşa gitmedi çok çok sevindim keşke herkes görebilmiş olsaydı bu son örnek yanlış bu son örneğinde çözümünü ben mail ile yine Yusis grubuna atayım başka var mı başka bir yerde hata yaptın mı önce onu sorayım
+
+1437
+03:02:45,967 --> 03:02:50,907
+Aklıma takılan bir şey var da videonun başını açar mısınız ilk soruya?
+
+1438
+03:02:50,927 --> 03:02:51,407
+En başına.
+
+1439
+03:02:51,687 --> 03:02:52,947
+Evet ilk soruda şey.
+
+1440
+03:02:52,967 --> 03:02:54,447
+Orada da mı hata var? Dur bakalım.
+
+1441
+03:02:55,407 --> 03:02:56,407
+Bundan sonraki.
+
+1442
+03:02:56,507 --> 03:02:58,847
+Bir dakika. Biraz daha mı ilerleyeyim?
+
+1443
+03:02:59,707 --> 03:03:00,987
+Bir tane ABC.
+
+1444
+03:03:02,128 --> 03:03:03,227
+Sonuca mı gelin?
+
+1445
+03:03:05,067 --> 03:03:06,427
+Bu soru hangisiydi ya?
+
+1446
+03:03:07,687 --> 03:03:10,167
+Önceki videoda mı ilerledi? Dörtlüye burada geçtik değil mi?
+
+1447
+03:03:10,167 --> 03:03:13,007
+Hayır burada örnekler verdik.
+
+1448
+03:03:13,007 --> 03:03:20,448
+dörtlü burada başladı. Bunun sonunda bir tane hatam vardı. Onu yazdım Yususe.
+
+1449
+03:03:21,047 --> 03:03:25,547
+Şey değil hocam yok. Başta bir ABC'li olan vardı ya en başta şeyde.
+
+1450
+03:03:25,547 --> 03:03:29,327
+Ama bana söyledi.
+
+1451
+03:03:29,327 --> 03:03:31,187
+Bir başka bir gruplandırma.
+
+1452
+03:03:31,247 --> 03:03:33,707
+İki dakikanın orada olması lazım. İki ya da üçüncü dakikan.
+
+1453
+03:03:34,567 --> 03:03:36,727
+Hayır. Dört değişkenli de mi?
+
+1454
+03:03:37,167 --> 03:03:38,367
+Evet evet. Dört değişkenli.
+
+1455
+03:03:38,947 --> 03:03:40,687
+Tamam. Şöyle gelelim.
+
+1456
+03:03:40,687 --> 03:03:45,507
+Hocam burada grafiği çizerken şu ilk başta ABC artı yazıyor ya
+
+1457
+03:03:45,507 --> 03:03:52,687
+Ha sonra şey burada dedim ya şurada şöyle bir cümle kurdum arkadaşlar o cümleye geleyim
+
+1458
+03:03:53,567 --> 03:03:55,547
+Hocam ondan o da ileride
+
+1459
+03:03:55,547 --> 03:04:06,988
+Burada bunu çizmedim bunu buraya geçirmek bana çok zor geldi şimdi bunları hesaplamak bu örneği bıraktım buraya yeni yazdım ve bunu çözdüm
+
+1460
+03:04:06,988 --> 03:04:08,387
+Ha okey tamam o zaman
+
+1461
+03:04:08,387 --> 03:04:30,387
+Tamam mı? Şu yukarıdakini çözme. Orada bir cümle kurdum. O cümleyi kaçırmışsın. Şimdi otur bunun arasındaki eksikleri bul, hangi mini terime denk geliyor falan filan. Üşendim. O yüzden genelde insanlar hep böyle mini terimler cinsinden fonksiyonları yazmak çok daha kolaydır. Hiç hata yapma olasılığın kalmıyor çünkü.
+
+1462
+03:04:30,387 --> 03:04:49,067
+Tamam, önemi yok. Burada bir tane neydi? Hatam olmuştu. D olmayacak olacak ama çözümdeki en son örneğim olduğu gibi feyletmiş. Onu şimdi Yusis'ten yine size göndereceğim. Başka sorusu olan var mı?
+
+1463
+03:04:53,940 --> 03:05:04,780
+var mı? bende açılmadı da yükleyebilir misiniz? bir daha söyle bu videodan önceki videoyu dörtlüde
+
+1464
+03:05:04,780 --> 03:05:19,940
+dörtlüde videoyu bende açılmadı evet onu bilmiyorum diğer arkadaşlarımda açıldı mı? dördü bir denesenize arkadaşlar bu soru çözdüğüm değil dördüncü karnoyu iki link birleşik ne demek ya?
+
+1465
+03:05:19,940 --> 03:05:23,919
+O ne demek?
+
+1466
+03:05:25,960 --> 03:05:27,059
+Şurada bir ev duruyor
+
+1467
+03:05:27,059 --> 03:05:30,980
+Hocam yan yana yazmışsınız da boşluksuz o yüzden ayrılmamış
+
+1468
+03:05:30,980 --> 03:05:33,539
+[öğrenci]
+
+1469
+03:05:33,539 --> 03:05:35,759
+Doğru oldu hocam
+
+1470
+03:05:35,759 --> 03:05:38,280
+Tamam peki
+
+1471
+03:05:38,280 --> 03:05:42,319
+Böyle küçük problemleri lütfen bana taşımayın
+
+1472
+03:05:42,319 --> 03:05:44,739
+Ben sizden bak videonuzu kullanılır
+
+1473
+03:05:44,739 --> 03:05:47,379
+Hayatımda hiç yapmadığım şeyleri yapıyorum
+
+1474
+03:05:47,379 --> 03:05:49,679
+Nasıl video çektim biliyor musun?
+
+1475
+03:05:49,679 --> 03:06:14,079
+altına cep telefonunu bir kutuya bantladım. Kutu böyle yüksek duruyor. Altına kağıdı koyup çektim ama bazen kameranın dışında kaldı kağıtlar. Ben onu sonra fark ettim. İkinci kez çektim. Giyak kağıtları oynatıyorum ama bazen yine sonunda kalıyor ama senarist değiliz. Ne yapalım ben senarist diyorum. Yönetmen değiliz. Bu kadar oluyor.
+
+1476
+03:06:14,079 --> 03:06:37,059
+Peki bugün dersimiz uzadı ama bence karnoları anladığınızı düşünüyorum. Bunu öyle slide'larla anlatamazdım. Çünkü çok zor bence slide'lar anlatmak. Hatamı yine düzeltiyorum. Bonus gelmişse ilk üç bonus o verdiğim bul cebri ile ilgili sürekli de kim arıyor telefonla Allah'ım yarabbim.
+
+1477
+03:06:37,059 --> 03:06:42,399
+onu da ilk üçünü alacağım herhalde bugün içinde gönderilmiştir
+
+1478
+03:06:42,399 --> 03:06:46,419
+hepinize iyi hafta sonları diliyorum
+
+1479
+03:06:46,419 --> 03:06:48,059
+hoşçakalın
+
+1480
+03:06:48,059 --> 03:06:49,999
+hoşçakalın hocam
+
+1481
+03:06:49,999 --> 03:06:51,999
+hocam kapatmadan bir şey söyleyebilir miyim?
+
+1482
+03:06:51,999 --> 03:06:52,239
+doğru
+
+1483
+03:06:52,239 --> 03:07:01,979
+hocam bu hataları yaptık ya isterseniz YouTube yorumlarına timestamp bırakarak oraya belirtebiliriz sonradan izleyecek arkadaşlar için
+
+1484
+03:07:01,979 --> 03:07:03,819
+eğer YouTube videosu paylaştık
+
+1485
+03:07:03,819 --> 03:07:04,999
+onu benim mi yapmam lazım?
+
+1486
+03:07:04,999 --> 03:07:12,279
+Şu an herhangi biri ekleyebilir siz hangi açıklamayı yazmak istediğinizi söyleyin oraya bir zaman olarak ekleyelim
+
+1487
+03:07:12,279 --> 03:07:15,880
+Şimdi ben şöyle bir şeyde var mı hadi bunu da sorayım
+
+1488
+03:07:15,880 --> 03:07:27,639
+Şimdi ben YouTube'a bir şey ekledim ben o YouTube'u şu şu kişiler o videoyu izlesin ya da herkese kapalı olsun diye bir şeyim var mı?
+
+1489
+03:07:27,639 --> 03:07:36,639
+Hocam zaten şu an linki bilmeyen kimse izleyemiyor liste dışı. Sadece linki paylaştığınız kişiler izleyebilir şu an videolarımızı.
+
+1490
+03:07:36,639 --> 03:07:52,100
+Tamam. Yani ben sınıfın dışındaki kişilerin izlemesini istemiyorum. Neden istemiyorum? Ben dersteymiş gibi doğaçlama mesela konuşuyorum. Onun böyle ulu orta ortada olmasını istemiyorum.
+
+1491
+03:07:52,099 --> 03:07:56,199
+Biz böyle aynı aile sınıfın içindeki biz
+
+1492
+03:07:56,199 --> 03:08:00,979
+Kimse bunu dışarıdan biri dinlediğinde ben orada işte da da da diyorum
+
+1493
+03:08:00,979 --> 03:08:03,659
+Haydi bakalım diyorum bilmem bir şeyler
+
+1494
+03:08:03,659 --> 03:08:06,039
+Bunlar pek yakışık olmayabilir
+
+1495
+03:08:06,039 --> 03:08:08,319
+Sizin içinizde kalırsa sevinirim
+
+1496
+03:08:08,319 --> 03:08:09,619
+Tamam mı?
+
+1497
+03:08:10,559 --> 03:08:14,059
+Hocam diğer sınıftan arkadaşlar da izliyor videoları ama
+
+1498
+03:08:14,059 --> 03:08:16,599
+Biliyorum onlarla da paylaştım
+
+1499
+03:08:16,599 --> 03:08:18,119
+Hayır bu
+
+1500
+03:08:18,119 --> 03:08:20,439
+Okul dışı mı demek istiyorsunuz?
+
+1501
+03:08:20,440 --> 03:08:31,859
+Hayır şey demek istedim X1'i bizim bölümün dışındaki X1'i onlara linki vermezseniz izleyemez değil mi şu an? İzleyemez hocam
+
+1502
+03:08:31,859 --> 03:08:34,719
+O zaman tamam problem yok
+
+1503
+03:08:34,719 --> 03:08:37,899
+Tamam problem yok o zaman
+
+1504
+03:08:38,355 --> 03:08:46,795
+meselesi şu an YouTube'da bu link olmadan biri girip karno diagramları dese benim videom çıkar mı?
+
+1505
+03:08:46,795 --> 03:08:52,236
+hayır hocam çıkmıyor sizin kanalınızda da çıkmıyor şu anda sadece linke tıklayıp yarışebiliyorlar.
+
+1506
+03:08:52,236 --> 03:09:04,475
+ama çok sevindim çünkü bilmiyorum öyle YouTube kanalı nasıl aktif edilir falan filan sevindim tamam link kimdeyse o dinlesin link olanlar zaten yabancı kişiler değil bizim çocuklarımız
+
+1507
+03:09:04,475 --> 03:09:09,715
+diyorum. Tamam. Tamam o zaman. Başka sorusu olan var mı?
+
+1508
+03:09:09,915 --> 03:09:11,075
+Hocam bir şey sorabilir miyim?
+
+1509
+03:09:11,075 --> 03:09:11,295
+Sor.
+
+1510
+03:09:12,415 --> 03:09:16,716
+O bonus için o ispatı diri et, yıldız ediyor mu atıyorduk?
+
+1511
+03:09:17,155 --> 03:09:23,036
+Ona da atın, Gmail'ime de atın. Ben spamlere de bakacağım. Çünkü mutlaka spam ede düşecek.
+
+1512
+03:09:23,036 --> 03:09:25,115
+Hocam Gmail'inizi söyleyebilir misiniz?
+
+1513
+03:09:25,115 --> 03:09:31,255
+DR, doktorun DR'si. Pardon onu yazabilirim. Burada artık o olayları biliyorum.
+
+1514
+03:09:31,255 --> 03:09:43,155
+Bak mesela böyle cık cık diyorum. Böyle bir şeyin internette gezmesini istemem. Ben derste de böyle konuşuyorum. Yazdım çete.
+
+1515
+03:09:45,295 --> 03:09:46,555
+Teşekkür ederim hocam.
+
+1516
+03:09:46,716 --> 03:09:48,995
+Tamam. Başka soru var mı?
+
+1517
+03:09:53,523 --> 03:10:07,163
+yok. Peki, iyi hafta sonları diliyorum artık. Hadi iyi hafta sonları hepinize. İyi tatiller hocam. İyi tatil, bir sürü işim var. Hadi hoşçakalın. Öyle olsun, tatil olsun, güzel.

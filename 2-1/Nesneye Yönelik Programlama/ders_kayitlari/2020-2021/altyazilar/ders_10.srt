@@ -1040,7 +1040,7 @@ Buyrun açık kaldı galiba.
 
 261
 00:34:45,579 --> 00:34:46,339
-Mustafa Nur'un.
+[öğrenci]'un.
 
 262
 00:34:47,719 --> 00:34:48,739
@@ -1400,7 +1400,7 @@ Veya şöyle diyelim.
 
 351
 00:49:19,731 --> 00:49:37,311
-Kalıtım hiyerarşisi gereği, Kadir soruna cevap vereceğim. Önce new student oluşturulmadan önce gidiyor student'ın üst sınıfına bakıyor. Student'ın üst sınıfı person. Person da şu değişkenleri oluşturuyor arkadaşlar.
+Kalıtım hiyerarşisi gereği, [öğrenci] soruna cevap vereceğim. Önce new student oluşturulmadan önce gidiyor student'ın üst sınıfına bakıyor. Student'ın üst sınıfı person. Person da şu değişkenleri oluşturuyor arkadaşlar.
 
 352
 00:49:37,311 --> 00:50:07,211
@@ -1424,7 +1424,7 @@ Peki bu segment null pointer exception ne? Yani biz 10 elemanlık bir dizi oluş
 
 357
 00:51:36,356 --> 00:51:51,716
-halledelim. Student P eşittir, new student ile person P, new student arasında bizim ne gibi kullanım farkımız var? Yani tam olarak ne için böyle bir şekilde yapabiliyoruz? Tam farkını anlamadım. Şimdi Kadir, üst sınıfımız burada person, alt sınıfımız student, teacher ve emekli.
+halledelim. Student P eşittir, new student ile person P, new student arasında bizim ne gibi kullanım farkımız var? Yani tam olarak ne için böyle bir şekilde yapabiliyoruz? Tam farkını anlamadım. Şimdi [öğrenci], üst sınıfımız burada person, alt sınıfımız student, teacher ve emekli.
 
 358
 00:51:51,716 --> 00:51:53,596

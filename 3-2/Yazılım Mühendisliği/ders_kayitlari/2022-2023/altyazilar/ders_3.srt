@@ -1,0 +1,2403 @@
+1
+00:01:35,635 --> 00:01:58,635
+Evet, katılımcı sayısı 30 aştı. Başlayabiliriz. Öncelikle şimdiye kadar gerçekleştirdiğimiz iki ders sonrasında hangi konular üzerinde durduk?
+
+2
+00:01:58,635 --> 00:02:07,896
+ilk hafta ders içeriği üzerinde durduk tekrar gözden geçirelim
+
+3
+00:02:11,828 --> 00:02:22,828
+yazılım mühendisliği kavramları üzerinde durduk. Yazılım geliştirme süreç modelleri üzerinde durduk.
+
+4
+00:02:22,828 --> 00:02:41,047
+Ve ecel metotlar üzerinde durduk. Gereksinim mühendisliği üzerinde duracağız daha sonra. Tasarım üzerinde duracağız.
+
+5
+00:02:41,828 --> 00:02:57,447
+ve bu derste şimdiye kadar bir belirsizlik olduğu için size hiç bahsetmedim sınav durumunda ama her sene iki tane sınav yapıyoruz biz.
+
+6
+00:02:57,447 --> 00:03:13,267
+Bir tanesi genel sınav, birinci ara sınavımız, uygulamaların da sorulduğu, gereksinim analizi aşamasına kadar olan
+
+7
+00:03:13,267 --> 00:03:29,487
+ve daha sonra uygulama kapsamında da sorular sorduğumuz bir genel ara sınav oluyor.
+
+8
+00:03:30,487 --> 00:03:32,307
+Bir de kısa sınavımız var.
+
+9
+00:03:33,447 --> 00:03:35,268
+Bu kısa sınavda test sınavı.
+
+10
+00:03:36,467 --> 00:03:39,467
+İkinci sınav haftasına denk geliyor.
+
+11
+00:03:39,467 --> 00:04:00,868
+Ama sizin bir projeniz olacak biliyorsunuz. Bu projelerde sunumlarınız var ve bir ekip kurmanız gerekiyor. Bu hafta bu projeleriniz konusunda bilgi vereceğim ve projelerinizi online yıldıza yükleyeceğim.
+
+12
+00:04:00,868 --> 00:04:06,787
+proje seçiminizi gerçekleştireceksiniz.
+
+13
+00:04:06,787 --> 00:04:23,048
+Proje seçiminizde de hangi grup hangi numaralı uygulamayı yapacak, konuyu yapacak onu yazacaksınız.
+
+14
+00:04:23,048 --> 00:04:38,288
+burada bir süre veriyoruz ama bu süreye kadar önce gönderenler istediği konuyu seçiyor. Daha sonra üçünün de aynı seviyede olmasını istiyoruz.
+
+15
+00:04:38,287 --> 00:05:06,047
+Şimdi proje tanımına geçeceğim o zaman üzerinde dururuz şu anda sınav konusunda hiç konuşmamıştım yani bir normal vize sınavımız bir de ağırlığı daha az olan birinci vizenin yüzde 25 ikinci vizenin yüzde 15 olacak ağırlığı ara sınavı olarak
+
+16
+00:05:06,048 --> 00:05:28,768
+projeleriniz %20 etkileyecek. Final zaten %40 biliyorsunuz. Bu projelerinizle ilişkili konuşmadan önce sınavlar konusunda da şu anda bir belirsizlik var biliyorsunuz nasıl devam edeceği konusunda.
+
+17
+00:05:28,768 --> 00:05:35,268
+bu devama göre belki güncelleyebiliriz bu durumda.
+
+18
+00:05:35,387 --> 00:05:43,688
+O yüzden hiç size paylaşmamıştım bu ağırlıkları ve nasıl sınav yapacağımızı.
+
+19
+00:05:43,688 --> 00:05:59,727
+birinci vizeyi genellikle genel sorular ve bir uygulamada soracağımız sınav şeklinde genelde klasik sınav şeklinde yapıyoruz.
+
+20
+00:06:00,947 --> 00:06:03,747
+İkinci sınavımız da test sınavı oluyor.
+
+21
+00:06:04,648 --> 00:06:09,247
+Tüm konularla ilişkili kısa sorular sorduğumuz.
+
+22
+00:06:09,247 --> 00:06:11,027
+Şimdi.
+
+23
+00:06:11,572 --> 00:06:16,052
+proje konumuza geçebiliriz.
+
+24
+00:07:05,651 --> 00:07:12,671
+Evet, proje tanımıyla ilişkili ekranı görebiliyorsunuz herhalde değil mi?
+
+25
+00:07:14,271 --> 00:07:15,032
+Evet hocam
+
+26
+00:07:15,032 --> 00:07:29,671
+Tamam, teşekkürler. Şimdi yazılım mühendisliği dersinde her dönem, her sene proje veriyoruz ama sistem analizi dersindeki gibi değil.
+
+27
+00:07:29,671 --> 00:07:37,211
+sistem analizi dersinde grupları oluşturup konu teklifini siz yapıyordunuz.
+
+28
+00:07:37,931 --> 00:07:48,111
+Bu derste konu teklifini biz yapıyoruz ve 3 farklı konumuz olacak.
+
+29
+00:07:48,111 --> 00:08:03,591
+Biliyorsunuz dersin ilk başında da söylemiştim. Bu derste sistem analizinde sizi serbest bırakıyorduk. İster klasik yolla ister nesneye yönelik.
+
+30
+00:08:03,591 --> 00:08:12,071
+Ki nesneye yönelik programlamada gördüğünüz için çoğunuz nesneye yönelik gerçekleştirdiniz sistem analizinde de.
+
+31
+00:08:12,071 --> 00:08:31,071
+Burada tasarım, analiz, tasarım, modellemeyi ve uygulamayı, yazılım geliştirmeyi, program kodlamasını nesneye yönelik olarak gerçekleştiriyorsunuz.
+
+32
+00:08:31,071 --> 00:08:43,791
+tasarım prensiplerinde hep nesneye yönelik kullanıyorsunuz ve seçtiğiniz en az bir modülü kodlayacaksınız.
+
+33
+00:08:43,791 --> 00:08:51,891
+Şimdi konuları görünce bu konuların altında farklı modüller hazırlayacaksınız.
+
+34
+00:08:52,411 --> 00:08:53,891
+Bunu da göreceksiniz.
+
+35
+00:08:54,551 --> 00:08:59,891
+Biz neler istiyoruz bu projeyi hazırladığınızda?
+
+36
+00:08:59,891 --> 00:09:18,831
+Bir defa yazılım mühendisliği dersinde göreceğimiz proje planı, projenin kabul kısıtları, proje alanı, proje iş zaman çizelgesi, sistem analizi dersinde görmüştük Gant diagramı nasıl çiziliyor diye.
+
+37
+00:09:18,831 --> 00:09:29,131
+ekip organizasyon tablosu, risk tablosu bunları görmek istiyoruz ve istekleri modellemeniz isteniyor.
+
+38
+00:09:29,131 --> 00:09:44,131
+Kullanım senaryosu yani gereksinim analizi sonucunda yaptığınız bir kullanım senaryosu oluşturacaksınız.
+
+39
+00:09:44,131 --> 00:10:00,611
+kullanım senaryosunda hem kullanım senaryo belgesi hem de diagramı oluşturmanızı istiyoruz.
+
+40
+00:10:00,611 --> 00:10:06,012
+Ve sınıf diagramı hazırlamanızı isteyeceğiz.
+
+41
+00:10:06,012 --> 00:10:20,291
+Sınıf diagramını, class diagram, UML çizimleri kapsamında yine Nesneyi Ünelik Analiz dersinde görmüştünüz.
+
+42
+00:10:20,291 --> 00:10:28,411
+O dersi görmeyenler de o açıklarını tamamlayacaklar. Bu derste de genel bir bilgi vereceğiz.
+
+43
+00:10:28,411 --> 00:10:46,592
+nesneye dayalı tasarım gerçekleştirdiğinizde senaryoları sınıf diagramı ve sequence diagram, activity diagram ve state diagramlarıyla zenginleştireceksiniz tasarımı.
+
+44
+00:10:46,592 --> 00:10:55,991
+ve burada tasarım kalıbı kullandıysanız hangisini kullandığınızı belirteceksiniz.
+
+45
+00:10:55,991 --> 00:11:03,991
+Biz bunların üzerinden geçeceğiz derste ve iki tane de...
+
+46
+00:11:04,628 --> 00:11:28,507
+araştırma görevlisi arkadaşlarıyla yapacağınız uygulamalar olacak. Bu uygulamalarda da yine aynı şekilde. Bu tasarım için sequence diagram, aktivite diagram. Sequence diagramı yine diğer derslerinizden biliyorsunuz ama
+
+47
+00:11:28,507 --> 00:11:49,427
+aktivite diagram ve state diagramları bu derste görecek olabilirsiniz. Bir birim testi gerçekleştirmenizi istiyoruz. Nesneye dayalı kodlama diline uygun olan şekilde.
+
+48
+00:11:49,427 --> 00:12:07,727
+burada kodlanan modül için iki tane birim test tasarlayacaksınız ve bu testleri de kaynak kodların raporlarına ekleyeceksiniz.
+
+49
+00:12:12,724 --> 00:12:16,464
+raporda da bununla ilişkili bilgi vereceksiniz.
+
+50
+00:12:19,903 --> 00:12:20,603
+Aha, evet.
+
+51
+00:12:21,724 --> 00:12:27,863
+Bunu biz, yani öneriyoruz, UML şemalarını çizerken.
+
+52
+00:12:29,883 --> 00:12:33,744
+Daha önce derslerimizde biliyorsunuz, case kavramından bahsetmiştim.
+
+53
+00:12:35,843 --> 00:12:38,363
+Computer Aided Software Engineering.
+
+54
+00:12:38,363 --> 00:12:56,523
+Bu derste çok basit bir UML şeması hazırlamak için yardımcı olacak bir case aracı seçip kullanabilirsiniz.
+
+55
+00:12:57,343 --> 00:13:05,363
+Yani başka bir şey de kullanabilirsiniz isterseniz ama bizim önerdiğimiz valet açık kaynaklı olarak bulabiliyorsunuz.
+
+56
+00:13:05,363 --> 00:13:10,843
+şu açıdan istiyoruz bunu kullanmanızı.
+
+57
+00:13:11,224 --> 00:13:17,423
+Diagramlarınızı elle standart olmayan bir şekilde çizmemeniz için.
+
+58
+00:13:18,524 --> 00:13:27,843
+Ayrıca bir kontrol mesela analizden tasarıma geçerken sınıf diagramı ile use case diagramı,
+
+59
+00:13:27,843 --> 00:13:42,303
+sınıf diagramı ile özellikle sınıf diagramı ile seconds diagram arasında bir doğru geçişi sağlamak için böyle araçlar faydalı oluyor.
+
+60
+00:13:42,303 --> 00:13:53,023
+Yani hem çiziminizi standartlaştırmak hem de diagramdan diagrama geçişteki kontrolları da sağlamak için bundan faydalanıyoruz.
+
+61
+00:13:53,023 --> 00:14:03,843
+ve projelerinizde Violet UML'li kullanmanızı öneriyoruz.
+
+62
+00:14:06,903 --> 00:14:11,003
+Projeyi gerçekleştirmek için, buraya kadar sorunuz var mı?
+
+63
+00:14:21,364 --> 00:14:27,723
+konulara geçerken bu varsayım ve yapılanlarla ilişkili ayrıntılar üzerinde duracağım.
+
+64
+00:14:28,763 --> 00:14:29,923
+Hocam bir şey sorabilir miyim?
+
+65
+00:14:30,143 --> 00:14:30,664
+Tabii ki.
+
+66
+00:14:31,183 --> 00:14:36,463
+Şimdi anladığım kadarıyla şey mi olacak mesela? 50 tane konu olacak, gruplar bunları seçecek mi gibi mi olacak?
+
+67
+00:14:36,883 --> 00:14:37,423
+3 tane.
+
+68
+00:14:39,083 --> 00:14:42,303
+Yani herkes toplam 3 konu mu? Herkes o 3 konuyu mu yapacak yani?
+
+69
+00:14:42,823 --> 00:14:46,963
+Hayır. Şimdi 3 farklı konumuz var. Bu konular üzerinde duracağız.
+
+70
+00:14:46,963 --> 00:14:54,583
+beşer kişilik gruplar oluşturacaksınız ve hangi konuyu seçeceğinizi bana mail atacaksınız.
+
+71
+00:14:54,583 --> 00:14:57,763
+Anladım. Yani bir konuda insan sınırı olmayacak yani.
+
+72
+00:14:58,063 --> 00:14:58,523
+Hayır.
+
+73
+00:14:58,583 --> 00:14:58,883
+Öyle mi?
+
+74
+00:14:59,203 --> 00:15:07,403
+Ama mesela işte sınıfta doksandan fazla kişi var ama devam edenler çok fazla değil.
+
+75
+00:15:07,983 --> 00:15:10,724
+Kaç tane grup teklif yapacak diyelim ki?
+
+76
+00:15:10,724 --> 00:15:17,003
+bu teklif yapanlar için de eşit sayıya ulaşmak istiyoruz.
+
+77
+00:15:17,003 --> 00:15:26,063
+Yani bir projeyi 6 grupta yapabilir, 8 grupta yapabilir ama onu eşitleyeceğim.
+
+78
+00:15:26,904 --> 00:15:30,843
+Şimdi size teklif için son tarihi vereceğim.
+
+79
+00:15:30,843 --> 00:15:47,123
+ve bu da bu teklif için vereceğimiz son tarihte siz şey yapacaksınız yani Nisan'ın ilk haftasında 4 Nisan olarak belirledik bunu.
+
+80
+00:15:48,343 --> 00:15:54,183
+Aynı ekipte kimler olacak ve hangi konuyu seçtiniz?
+
+81
+00:15:54,183 --> 00:16:02,823
+bunu bana e-mail ile göndereceksiniz ve ben bir sıralama yapacağım.
+
+82
+00:16:03,323 --> 00:16:21,423
+İlk seçenlere göre istedikleri konuyu vereceğim ama bir eşleştirme yaptığımda bir süre sonra hep herkes aynı konuyu almışsa ilk alanları bırakıp diğerlerine başka konu almalarını önereceğim.
+
+83
+00:16:24,183 --> 00:16:27,343
+Evet [öğrenci] bir şey mi soracaksın?
+
+84
+00:16:28,544 --> 00:16:32,843
+Günaydın hocam bu konular nereden ilan edilecek diye soracaktım ben
+
+85
+00:16:32,843 --> 00:16:36,483
+Şimdi ilan edeceğim sonra da online yıldızı yerleştireceğim
+
+86
+00:16:36,483 --> 00:16:38,184
+Tamam teşekkür ederim hocam
+
+87
+00:16:38,184 --> 00:16:38,843
+Tamamdır
+
+88
+00:16:38,843 --> 00:16:43,884
+Evet yani ders konularından önce bunun üzerinde durayım ki dedim
+
+89
+00:16:43,884 --> 00:16:52,684
+Bir an önce konularınızı ve projenizin sınırlarını bilip başlayın diye
+
+90
+00:16:52,683 --> 00:17:22,023
+Evet şimdi devam ediyoruz o zaman proje ekipleri beşer kişiden oluşacak ama işte biz altı kişiyiz ayrılamıyoruz derseniz biraz daha kapsam genişletip belki iki şey oluşturarak biraz daha büyüterek veya kodunu bir modülün daha gerçekleştirerek
+
+91
+00:17:22,023 --> 00:17:37,783
+6 kişi de olabilirsiniz. Bunu 4 Nisan'a kadar belirteceksiniz. Daha önceden belirtlerseniz konu seçiminde daha şey olabilir.
+
+92
+00:17:39,783 --> 00:17:51,083
+Evet mutlaka teklif şeyinizde, mailinizde öğrenci numaralarınız, isim, soyadlarınız ve hangi konuyu istediğinizi yazacaksınız.
+
+93
+00:17:51,084 --> 00:18:08,283
+4 Nisan'a kadar. Yani grup bu önemli. Hani şey değil, grup bildirilemeyenlere ben eşleştirip proje ataması yapacağım diye bir şey yok. Bundan siz sorumlusunuz.
+
+94
+00:18:08,283 --> 00:18:14,823
+ama hani bir grup oluşturamadım diyenler için derste
+
+95
+00:18:17,172 --> 00:18:33,391
+grupsuz kalmış olanları birleştirme konusunda dersin bir bölümünde 4 Nisan'da şey yapabilirim, 4 Nisan'dan önceki hafta. Ama 4 Nisan bunun için son tarih.
+
+96
+00:18:38,771 --> 00:18:56,771
+evet burada da bunu yazdık zaten. İlk bildiren ekiplere öncelik tanınacak. Bu Avesis sayfası ya da online yıldızın duyuru sayfası, duvar sayfası olabilir duyurum. Avesis'ten olmayabilir.
+
+97
+00:18:56,771 --> 00:19:07,771
+Hazırlanan projenin raporu da 15 Mayıs'ta tamamlanmış olmak zorunda.
+
+98
+00:19:11,155 --> 00:19:15,075
+Evet, online yıldıza bu şeyi yükleyeceğim ödev olarak.
+
+99
+00:19:18,740 --> 00:19:23,899
+proje kodunu ve raporunu ayrı ayrı ödevler olarak vereceğim.
+
+100
+00:19:28,531 --> 00:19:52,771
+bakmak daha kolay oluyor. O yüzden iki ayrı yere yükleme yapmanız gerekiyor. Kodları ve şeyi. Ve sunumlarınız olacak. Biliyorsunuz sistem analizinden de grup sunumlarınızı. Bu grup sunumlarında herkes her soruya cevap verecek şey de olmalı.
+
+101
+00:19:52,771 --> 00:20:19,491
+yani grubun yaptığından da birbirinizin yaptığından da haberdar olmalısınız. Yani çok büyük şeyler olmuyor ama zaman zaman da farklı notlar alabiliyorsunuz o sorduğum sorulara göre veya program kodunu kontrol eden arkadaşların sorularına göre
+
+102
+00:20:19,491 --> 00:20:41,871
+grubun içinde herkes aynı notu alacak diye bir şey yok. Daha sunum sırasında, katkı sırasında, sunuma gelmediği veya sorulara cevap veremeyenlerden notları farklı olacaktır gruptan.
+
+103
+00:20:41,871 --> 00:20:52,471
+sunumlarımız iki hafta sürecek. Birinci sunum günü test sınavıyla aynı günde olacak. Test sınavı zaten kısa süreceği için.
+
+104
+00:20:52,471 --> 00:21:09,851
+Evet şimdi konulara bakalım. Konu tanımlarını oldukça geniş verdik. Burada özellikle işte konu tanımlarının hepsini okumayacağım şimdi. Zaten şeye yükleyeceğim.
+
+105
+00:21:09,851 --> 00:21:27,871
+online yıldıza bir seyahat ajentesi bilet ve tatil sistemi. Burada seyahat ajentesinin kuralları var. Bizim verdiğimiz kurallar var.
+
+106
+00:21:27,871 --> 00:21:49,311
+ama varsayımlara bazı yani küçük varsayımlar yapabilirsiniz ama tamamen projeyi küçültecek veya projeyi çok etkileyecek değişiklikleri ben böyle varsaydım diye yazmayın.
+
+107
+00:21:49,311 --> 00:22:01,671
+ve işte bazı açıklamalar burada hem havayolu hem demiryolu hem tur bileti satılıyor.
+
+108
+00:22:03,252 --> 00:22:09,472
+Başka firmaların da biletleri satılacak daha sonra hani buraya da bir açık şey bırakıyoruz.
+
+109
+00:22:09,472 --> 00:22:16,871
+bilet almak istediğinde bu nasıl davranıyor?
+
+110
+00:22:16,871 --> 00:22:24,492
+Bunu okuyarak konu hakkında daha ayrıntılı bilgi sahibi olabilirsiniz.
+
+111
+00:22:24,792 --> 00:22:26,772
+İşte bir puan sistemi var.
+
+112
+00:22:29,792 --> 00:22:35,412
+Puan toplayabiliyorsunuz tatile gittikçe veya bilet aldıkça.
+
+113
+00:22:35,411 --> 00:22:49,351
+ödeme türü olarak nakit kredi kartı çek kabul ediliyor ve biriken puanları da kullanabiliyorlar.
+
+114
+00:22:49,351 --> 00:22:52,511
+Bu puan sistemini de eklemenizi istiyoruz yani.
+
+115
+00:22:52,511 --> 00:23:16,351
+Ama dediğim gibi yani küçük böyle her anlayamadığınız şeyi buradaki detayı sormak yerine varsayım ve kabuller veya kısıtlar ekleyebilirsiniz ki bu önemli çünkü bir projeyi
+
+116
+00:23:17,811 --> 00:23:37,732
+6 grup, 7 grup yapacak belki. Herkesin küçük bu kabulleri, kısıtları farklı olabilir. Kullanacakları şeyler farklı olabilir. Altyapıda kullanacakları şeyler. Orada çok büyük sınırlar getirmiyoruz çünkü.
+
+117
+00:23:37,732 --> 00:23:56,152
+Evet birinci şey tatil sistemiydi. İkincisi yazılım evi insan kaynakları sistemi. Yani yazılım evi yönetimi için insan kaynakları yönetimi için çalışanlar hakkında bilgi tutuluyor.
+
+118
+00:23:56,152 --> 00:24:18,011
+çalışanları uygun projeler yerleştirmekte ve işte maaş tazminat işlemi gibi şeyler. Burada yine burada değiş üzerinde durmadığımız kurallar, ayrıntılar proje gruplarına bırakıldı.
+
+119
+00:24:18,011 --> 00:24:31,172
+ama yine şey yani çok büyük ölçekli ben böyle varsaydım ben böyle bir kısıt koydum deyip projeyi küçültmenizi istemiyoruz.
+
+120
+00:24:32,451 --> 00:24:43,071
+Şirkette başlatıp bitirilmek kararları yönetim tarafından verilen projeler yürütülüyor.
+
+121
+00:24:43,071 --> 00:24:56,531
+ve bu yazılım evi insan kaynakları ama biliyorsunuz yazılım evlerinde projeler yürütülüyor ve projelerin takibi de gerçekleştirilecek.
+
+122
+00:24:56,531 --> 00:25:07,471
+Her projenin projenin takibi ama projenin insan kaynağı takibi gerçekleştirilecek ve görev farklılıkları var.
+
+123
+00:25:07,471 --> 00:25:32,752
+analiz, tasarımcı, programcı, yönetici. Bu görev bilgileri de takip edilecek. Ve çalışanlar sisteme çalışan kaydı yapılıyor ve hangi projeye atanacağı belirleniyor.
+
+124
+00:25:32,752 --> 00:25:48,591
+bir proje bittiğinde başka bir projeye atanıyor ama mutlaka herkes yeni bir projeye atanacak diye bir şey yok işten çıkarılanlar da oluyor çalışanların tazminatları hesaplanıyor
+
+125
+00:26:00,531 --> 00:26:14,091
+şu anda bu tazminat hesabı için yani şöyle söyleyeyim bu insan kaynakları yazılımı çerçevesinde bırakıyoruz.
+
+126
+00:26:14,091 --> 00:26:25,811
+mesela tazminat hesabı, maaşla ilişkili çok detaylı hesaplar, mali uygulamayı yazan gruba bırakılıyor.
+
+127
+00:26:25,811 --> 00:26:55,651
+burada siz tazminat hesabı, maaş hesabı gibi şeylere girmeyeceksiniz onu belirtmiş oluyoruz burada yine muhasebe programlarıyla hesaplanıyor sadece burada iki tür çalışan olabilir
+
+128
+00:26:55,651 --> 00:27:02,911
+ve maaş hesaplamaları farklı programlar tarafından yapılabiliyor.
+
+129
+00:27:03,051 --> 00:27:07,572
+Bunu atıyorsunuz siz hangi grupta olduğunu.
+
+130
+00:27:09,171 --> 00:27:12,791
+Yani yine maaş hesabını siz yapmıyorsunuz program içinde.
+
+131
+00:27:12,791 --> 00:27:14,651
+Evet bu konuda böyle.
+
+132
+00:27:14,651 --> 00:27:29,591
+yani temel olarak bir yazılım şirketinin insan kaynaklarıyla ilişkili ve projelere çalışanların atanmasıyla ilişkili bir uygulama.
+
+133
+00:27:31,531 --> 00:27:40,291
+Çok ince detaylarıyla ilişkili şeyleri küçük varsayımlar, kabuller diye tanımlayabiliyorsunuz.
+
+134
+00:27:40,291 --> 00:27:57,211
+üçüncü konuda biliyorsunuz bu medya takip şirketleri var medyadaki haberleri izleyip müşterilerle ilişkili haberleri onlara rapor ediyorlar
+
+135
+00:27:57,211 --> 00:28:06,211
+böyle bir uygulama geliştirmenizi istiyoruz böyle bir şirket için yazılım yaptığınızı düşünüyorsunuz
+
+136
+00:28:06,212 --> 00:28:33,132
+bilgisayar ortamında bu işi gerçekleştirmek planlanıyor. Burada yine bütün projeler için şu cümleler aynı zaten. Burada temel kuralları veriyoruz ama bu kurallar içinde çok ayrıntıları varsayımlarınız olarak gruba belirtiyoruz.
+
+137
+00:28:33,131 --> 00:28:44,851
+mutlaka hepinizin projelerinde başlangıçta işte varsayımlar, kabuller bunlar, kısıtlar bunlar diye bir şey olacak.
+
+138
+00:28:45,071 --> 00:28:47,111
+Ama yine hepsini de tekrarlıyorum.
+
+139
+00:28:50,631 --> 00:28:56,611
+Çok büyük ölçekli bir özellik eklemeyin.
+
+140
+00:28:57,491 --> 00:28:59,611
+Şimdi neler yapacak?
+
+141
+00:28:59,612 --> 00:29:03,772
+şirkette çeşitli tipte medya organları takip ediyor.
+
+142
+00:29:03,892 --> 00:29:06,492
+Radyolar, televizyonlar, gazeteler, dergiler.
+
+143
+00:29:07,392 --> 00:29:09,612
+Başka şeyler de eklenebilir.
+
+144
+00:29:10,492 --> 00:29:15,112
+Mesela günümüzde internet siteleri, blog sayfaları bunları da ekleyebilirsiniz.
+
+145
+00:29:16,112 --> 00:29:19,671
+Her tipte değişik sayıda yayın takip ediliyor.
+
+146
+00:29:20,772 --> 00:29:24,472
+Haber takibi isteyen müşteriler ve şahıs olabilir.
+
+147
+00:29:24,472 --> 00:29:53,192
+başka bir müşteri tipi yok şirket müşterileri için standart olarak günlük haftalık aylık raporlar hazırlanıyor müşteri özel raporu ise değişik periyotlar belirleyebilir standart raporlarının fiyatları belli
+
+148
+00:29:54,471 --> 00:29:58,591
+ama özel raporlar istenmişse
+
+149
+00:30:00,948 --> 00:30:07,127
+bu da belirleniyor anlaşma imzalanırken ve bu değişmiyor daha sonra.
+
+150
+00:30:10,627 --> 00:30:15,587
+Şirket yönetimi şöyle bir şeyi var.
+
+151
+00:30:17,227 --> 00:30:19,368
+Hangi medyayı takip ediyor?
+
+152
+00:30:20,468 --> 00:30:24,448
+Yeni çıkan medya varsa bunu da yani bu bir şey olacak.
+
+153
+00:30:24,448 --> 00:30:31,107
+bu bir veri tabanında olacak ekleme çıkarma yapılabilecek takip edilen medya organları.
+
+154
+00:30:31,907 --> 00:30:35,607
+Değişenler güncellenecek, kapananlar silinecek.
+
+155
+00:30:36,867 --> 00:30:47,727
+Şirket müşterilerinin itibarı bilinirliği konularında ve benzeri konularda anketler düzenleyip sonuçlarını müşterilere bildirir.
+
+156
+00:30:48,587 --> 00:30:51,267
+Yani böyle bir şey de olacak programımızda.
+
+157
+00:30:54,963 --> 00:31:02,183
+bunu ayrı olarak ücretlendirip kayıtlı anketörlerin iş planının sistem üzerinde yapılması bekleniyor.
+
+158
+00:31:02,283 --> 00:31:09,884
+Yani böyle bir anket hizmetinin de organize edilmesi yine sistemin içinde olacak.
+
+159
+00:31:12,123 --> 00:31:16,743
+Medya organlarını takip için ortak bir arayüz kullanılıyor.
+
+160
+00:31:17,403 --> 00:31:23,943
+Bir müşteriyle ilgili rapor hazırlanacağı zaman sistem haberleri bu arayüzle sorgulanıyor.
+
+161
+00:31:24,963 --> 00:31:31,864
+sonuçları da bir belge halinde hazırlanarak müşteriye gönderiliyor.
+
+162
+00:31:33,824 --> 00:31:40,484
+Evet, konuların üçünün de açıklamaları bunlar.
+
+163
+00:31:40,484 --> 00:31:56,283
+Şimdi bunları çok acele etmeden grubunuzu kurup, üçünü de okuyup hangisi size uygun geliyorsa onun adını yazıp bana göndereceksiniz.
+
+164
+00:31:56,283 --> 00:32:11,523
+bunun içinde son tarih 4 Nisan 4 Nisan'a kadar da önümüzde 2 haftadan fazla zaman var
+
+165
+00:32:11,523 --> 00:32:25,103
+bu arada dediğim gibi yani önümüzdeki hafta daha sonraki hafta olan derste grubu olmayanlar için
+
+166
+00:32:25,103 --> 00:32:34,623
+derste yapacağımız bir anonsla grup kurmanıza yardımcı olabilirim.
+
+167
+00:32:34,724 --> 00:32:40,504
+Ama bunun dışında ben listeden grup oluşturmayacağım.
+
+168
+00:32:42,624 --> 00:32:48,203
+Çünkü bu derste devamla da ilişkili bir şey.
+
+169
+00:32:49,203 --> 00:32:54,864
+Ve grup kararlarınızı da sizin vermenizi istiyorum.
+
+170
+00:32:55,103 --> 00:33:21,303
+Çünkü burada biliyorsunuz başka derslerin projelerinden yine sistem analizi dersinin projesinden proje grubunu kurarken herkes derste devam edeceğim diye kuruyor ama sonra dersi bırakanlar veya projeyle ilgilenmeyen arkadaşlarınız çıkabilir
+
+171
+00:33:21,303 --> 00:33:28,003
+burada tamamen sorumluluk grubun içinde çözülecek.
+
+172
+00:33:28,963 --> 00:33:31,764
+İşte iki kişi kalmışsa iki kişi bitirecek her şeyi.
+
+173
+00:33:34,023 --> 00:33:39,963
+Bir de şu özelliği var sizden aldığım katılımcı listesinin.
+
+174
+00:33:39,963 --> 00:33:56,723
+bana teslim ettiğiniz grup üyeleri sonradan yani bu doğal bir şey ama hani böyle bir şey hiç aklınıza gelmesin sonradan grup sayısı proje sunumu sırasında artamaz.
+
+175
+00:33:56,723 --> 00:34:04,603
+Yani daha önce de artamaz. Teklif ettiğiniz kişiler sadece projeden zorunlu olacak.
+
+176
+00:34:04,603 --> 00:34:17,863
+sonradan kendi şeyinizle kişi ekleyemezsiniz. Evet bu şeyden sonra tanıtımdan sonra sorularınız var mı?
+
+177
+00:34:18,824 --> 00:34:20,443
+Hocam bir şey sorabilir miyim?
+
+178
+00:34:20,443 --> 00:34:20,723
+Tabii.
+
+179
+00:34:21,204 --> 00:34:25,223
+Peki Yunus Hoca'dan öğrencilerinden grup alabilir miyiz?
+
+180
+00:34:25,223 --> 00:34:34,483
+Yok o zor oluyor yani onu çok istemiyoruz onu
+
+181
+00:34:34,483 --> 00:34:36,223
+Tamam teşekkürler
+
+182
+00:34:36,223 --> 00:34:41,443
+Teşekkür ederim yani her grup kendi içinde olmalı
+
+183
+00:34:41,443 --> 00:34:53,543
+Yani çok özel bir durumda bir tane öğrenci oradan katılacaksa belki olabilir ama çok istemiyoruz bunu
+
+184
+00:34:56,179 --> 00:34:58,620
+sonra bizim notlandırmamız zorlaşıyor.
+
+185
+00:34:59,879 --> 00:35:02,399
+Hocam, projeden bağımsız bir şey sorabilir miyim?
+
+186
+00:35:02,579 --> 00:35:02,779
+Tabii.
+
+187
+00:35:03,499 --> 00:35:05,919
+Bu uygulama olacak dediniz ya iki tane.
+
+188
+00:35:05,919 --> 00:35:06,440
+Evet.
+
+189
+00:35:06,679 --> 00:35:08,179
+O ne zaman olacak?
+
+190
+00:35:10,399 --> 00:35:17,100
+Şimdi proje şeyinde vardı bu, tarihleri.
+
+191
+00:35:19,440 --> 00:35:21,940
+Yani değişebilir diye çok şey yapmıyorum ama.
+
+192
+00:35:23,020 --> 00:35:23,959
+Bir dakika.
+
+193
+00:35:30,291 --> 00:35:36,651
+şeyde geçti az önce ders tanımında. Tekrar oraya döneceğim şimdi.
+
+194
+00:35:37,171 --> 00:35:41,731
+Anlamacağım, kaçırdım herhalde onu da. Hocam içeriğinde ne olacak yani uygulamama?
+
+195
+00:35:42,672 --> 00:35:52,431
+Şimdi derslerde görüyoruz ya, bu şemaları, diagramları, kurallarını, çizimini, tek tek bağımsız örnekler.
+
+196
+00:36:48,148 --> 00:36:54,347
+Evet, şimdi görebiliyorsunuz değil mi Excel?
+
+197
+00:36:54,347 --> 00:36:55,887
+Görülüyor, görülüyor hocam.
+
+198
+00:36:55,887 --> 00:37:00,068
+Evet, şimdi üçüncü haftadayız.
+
+199
+00:37:03,847 --> 00:37:18,127
+Aslında biz biraz hızlı gittik. Aradaki şeyleri bugün eklemeler falan yapacağım ve gereksinim mühendisliği önümüzdeki hafta ama biraz modellemeye gireceğim bu hafta.
+
+200
+00:37:18,148 --> 00:37:35,148
+Şimdiye kadar yazılım mühendisliğine giriş ve tanımları yaptık. Süreçlerle ilişkili tanımlamalar yaptık. Yazılım geliştirme süreç modelleri üzerinde durduk.
+
+201
+00:37:35,148 --> 00:37:44,947
+gereksinim mühendisliği ve şu şemalara gireceğiz.
+
+202
+00:37:44,947 --> 00:38:03,448
+Senaryo, use case diagramları, sınıf şeması, UML kavramları bunları farkındaysanız gereksinim analizini tanımlama ve bunlar konusunda bilgi vermeyi biz de daha hızlı veriyoruz bu derste.
+
+203
+00:38:03,447 --> 00:38:21,827
+UML durum şeması, etkinlik şeması bu lap çalışması diye geçiyor ama bu bir uygulama yani o haftalarda uzaktan yapıyorsak arkadaşlar size anlatacak
+
+204
+00:38:21,828 --> 00:38:35,948
+eğer sınıf içinde yapıyorsak sınıfta yine aynı şekilde uygulamaları baştan sona kadar bir uygulamada
+
+205
+00:38:43,251 --> 00:39:07,092
+burada mesela gereksinim analizi tarafında olan diagramlarla örnekler yapacak. Bu laplar özellikle nesneye yönelik yaklaşım programlama dersi almamışlar için daha fazla önem kazanıyor.
+
+206
+00:39:07,092 --> 00:39:37,071
+nesneye yönelik yaklaşımla problem çözümü ve bunların diagramlara aktarılmasıyla ilişkili aslında bu projelerinizde bu lap çalışması aslında bunu bir yöntemizde
+
+207
+00:39:37,092 --> 00:39:47,472
+Yunus'la da konuşayım bu 17'sinde 12. hafta demişiz ama aslında bunu 11. haftayla yer değiştirsek daha iyi.
+
+208
+00:39:47,591 --> 00:39:54,991
+Çünkü projelerinizi yaparken bu lap çalışmasında geçen şeylere ihtiyacınız olabilir.
+
+209
+00:39:55,891 --> 00:39:58,311
+Belki şu iki haftayı yer değiştirebiliriz.
+
+210
+00:40:01,491 --> 00:40:02,631
+Anlaşıldı mı?
+
+211
+00:40:04,552 --> 00:40:05,811
+Evet hocam teşekkür ederim.
+
+212
+00:40:07,091 --> 00:40:24,691
+Yani hedef sizin projelerinizde bütün analiz sırasında, tasarım sırasında modellemeleri yapmanızı istiyoruz.
+
+213
+00:40:24,691 --> 00:40:36,371
+Bu modellemelere örnek teşkil edecek şeyler, problem çözümleri yapmalarını istiyoruz arkadaşlardan.
+
+214
+00:40:41,235 --> 00:41:07,815
+Evet ama birlikte buna baktığımız tekrar iyi oldu. Sizin bir hafta daha önce bu konuyu almanız, yazılım ölçütleri nasıl olsa bu diagramların çizimiyle ilişkili değil, bağımsız bir konu. Şu ikisini yer değiştirmek daha iyi olacak.
+
+215
+00:41:07,815 --> 00:41:21,675
+Evet onu bir aramızda konuşacağız biz hem araştırma görevlileriyle hem de diğer grupla 11 ve 12. haftanın yerini değiştirmek daha iyi olacak.
+
+216
+00:41:22,675 --> 00:41:24,256
+Evet başka sorunuz var mı?
+
+217
+00:41:28,115 --> 00:41:30,495
+notlandırma üzerinde de durmuştuk.
+
+218
+00:41:32,955 --> 00:41:35,335
+Hocam, merhabalar, bir şey sorabilir miyim?
+
+219
+00:41:35,695 --> 00:41:35,995
+Evet.
+
+220
+00:41:37,255 --> 00:41:42,475
+Malumunuz bilimsel hazırlık öğrencileri de var. Daha önce bu tarz ödem vs. proje yapmamış.
+
+221
+00:41:42,675 --> 00:41:51,275
+Onu daha aydınlatmak adına soruyorum. Özellikle proje ödemi için galiba bir uygulama olacak. Böyle butonu olan vs. değil mi?
+
+222
+00:41:51,275 --> 00:42:07,215
+Tabii ama şöyle yani uygulama olacak ama mesela bunlar büyük projeler bir tane modülünü seçip onun kodlanması yeterli olacak
+
+223
+00:42:10,931 --> 00:42:11,871
+Anladım hocam.
+
+224
+00:42:12,751 --> 00:42:18,931
+Yani yukarıdan girişi olacak tabii sisteme ama aşağıda bir tanesi çalışacak.
+
+225
+00:42:22,835 --> 00:42:24,615
+bir tanesi, modülün bir tanesi.
+
+226
+00:42:24,615 --> 00:42:26,355
+Evet, evet, evet.
+
+227
+00:42:28,135 --> 00:42:52,756
+Mesela işte şey, seyahat ajantası tarafında yukarıdan programa girişte her şeyle önlendirme yapacak ama biz şu modülü seçtik, bu modülü kodladık diyerek programı çalıştırırken
+
+228
+00:42:52,835 --> 00:42:59,955
+dönem sonunda arkadaşlara onun çalıştırılmasını göstereceksiniz.
+
+229
+00:43:01,395 --> 00:43:02,635
+Tamam hocam teşekkür ederim.
+
+230
+00:43:08,596 --> 00:43:17,816
+bir daha şeye dönelim. Orada da görün. Sonra çünkü projenin şeyi önemli.
+
+231
+00:43:45,108 --> 00:43:51,528
+Evet, projeye tekrar görüyorsunuz değil mi proje ödevlerini?
+
+232
+00:43:52,127 --> 00:43:52,707
+Evet hocam.
+
+233
+00:43:52,707 --> 00:44:14,307
+Projenin temel amacı nesneye dayalı yönteme göre analiz ve modellemenin ve tasarımın yapılması ama bu tasarımı yaptıktan sonra seçilen en az bir modül istenilen bir dilde ve pro platformda kodlanacak ve test edilecek.
+
+234
+00:44:14,307 --> 00:44:21,987
+Yani tamamı çalışmasın ama bir bölümünü çalışır hale getireceksiniz.
+
+235
+00:44:21,987 --> 00:44:24,627
+Hani süre de çok fazla değil.
+
+236
+00:44:26,288 --> 00:44:38,367
+Bir de yani uzaktan bir şeyleri ekip olarak yapmanız da daha uzun sürebilir anlaşmanız falan.
+
+237
+00:44:38,367 --> 00:45:01,867
+ama mesela az önce bahsettiğimde oydu biz 5 kişi değil de 6 kişi çalışıyoruz o zaman yani bu kodlama yapacağınız en az bir modül dedik ya hani seçtiğiniz modül de tabii daha kapsamlı tek modül ya da iki küçük modül olabilir.
+
+238
+00:45:01,867 --> 00:45:12,207
+bu uygulamaların hepsinde bunu belirleyip ona göre çalışacaksınız.
+
+239
+00:45:12,207 --> 00:45:18,547
+Hocam mesela seyahat ajentesi konusu için modüller o aşağıdaki şeyler mi?
+
+240
+00:45:20,667 --> 00:45:30,427
+Modüller aşağıda şöyle.
+
+241
+00:45:31,867 --> 00:45:44,247
+bu firmaların otobüs, havayolu ve biletleri satılıyor. Burada aslında her biri bir modül değil.
+
+242
+00:45:44,247 --> 00:45:46,707
+Evet her biri bir modül değil orada.
+
+243
+00:45:46,907 --> 00:46:00,828
+Her biri bir modül değil. Özellikle bu modülleri siz belirleyeceksiniz. Burada verdiklerimiz bu uygulamada yani üzerinde bizim açıklama yapmak zorunda
+
+244
+00:46:00,828 --> 00:46:02,247
+hissettiğimiz şeyler.
+
+245
+00:46:04,507 --> 00:46:10,968
+Hani bizim verdiğimiz böyle bir uygulama için bizim verdiğimiz ipuçları.
+
+246
+00:46:11,527 --> 00:46:13,848
+Yani mesela çok özür dilerim lafınızı bölüyorum.
+
+247
+00:46:14,468 --> 00:46:17,747
+Bunun için ödeme modülü olabilir veya rezervasyon modülü olabilir.
+
+248
+00:46:17,867 --> 00:46:18,747
+O tarz şeyler olabilir.
+
+249
+00:46:18,747 --> 00:46:20,287
+Evet, evet, evet.
+
+250
+00:46:21,188 --> 00:46:23,988
+Veya işte puanlama sistemi olabilir.
+
+251
+00:46:23,987 --> 00:46:36,027
+Ama bu bilet alırken daha sonra bilet tekrar bilet alırken bu puanların kullandırılması bunlar da işin içinde olacak yani
+
+252
+00:46:36,027 --> 00:46:37,987
+Tamam teşekkür ederim hocam
+
+253
+00:46:37,987 --> 00:46:53,967
+Yoksa biz size modülleri vermiyoruz zaten hani siz böyle bir uygulamayı gördüğünüzde bunun altında hangi modüller var bunu siz oluşturacaksınız zaten
+
+254
+00:46:58,867 --> 00:47:13,467
+yani bütün uygulamalar için aynı şey. Mesela insan kaynakları sistemi. Burada verdiklerimiz varsayımlar, özelliklerin anlatılması, biraz daha açıklanması bunlar.
+
+255
+00:47:13,467 --> 00:47:27,267
+Yoksa biz size alt modülleri vermiyoruz. İstediğimiz şu işin yapılması, bu işi yaparken de bunlara önem vereceksiniz.
+
+256
+00:47:27,267 --> 00:47:35,947
+sizde bazı sistemin şeklini çok değiştirmeyecek varsayımlar ve kısıtlar ekleyebilirsiniz.
+
+257
+00:47:37,647 --> 00:47:41,228
+Hocam modül için bir örnek verebilir misiniz herhangi birisi için?
+
+258
+00:47:41,627 --> 00:47:43,287
+Tam kafada canlanması adına.
+
+259
+00:47:55,987 --> 00:48:14,127
+Mesela burada medya takip sisteminde bir defa şeylerin üzerinde duracak. Hangi müşteriler takip edilecek? Müşterilerle yapılan anlaşmalar.
+
+260
+00:48:19,155 --> 00:48:38,595
+takip edilecek medya organlarının seçilmesi, bunların belirlenmesi, iki tarafın eşleştirilmesi, bunların temel alt işlemleri bu şekilde oluşturulabilir.
+
+261
+00:48:51,059 --> 00:48:54,179
+Evet. Başka soru var mı?
+
+262
+00:49:07,219 --> 00:49:31,480
+Evet, ben bu hafta sonunda falan yükleyeceğim bu şeyi. 15 Mayıs'ta, yani aslında 14 Mayıs akşamında bitirmeniz gerekiyor raporlarınızı. Ve sunum listesine göre sunmanız gerekiyor.
+
+263
+00:49:31,480 --> 00:49:55,679
+Bu bir de diagramlarınızı biz Violet'ı öneriyoruz. Başka bir şeyle de hazırlayabilirsiniz ama mutlaka bir araç kullanmanızı istiyoruz.
+
+264
+00:49:58,080 --> 00:50:00,120
+Başka sorunuz var mı?
+
+265
+00:50:08,659 --> 00:50:19,019
+Evet, o zaman şeye geçebiliriz, analizle ilişkili bunların başlangıcına.
+
+266
+00:51:35,123 --> 00:52:03,863
+Şimdi, bu analiz ve tasarım sırasında neler yapıyoruz ve analizin önemi, tasarımın önemi nedir? Bir defa bir bilgi sistemi, özellikle bir yazılım sisteminin iyi oluşturulması için ilk başta ne istendiğini anlamamız gerekiyor.
+
+267
+00:52:03,863 --> 00:52:16,363
+Bunu ben sistem analizi ve tasarımı dersinde de zaman zaman gösterdiğim bir çok klişe olan bir örnekle başlayacağım
+
+268
+00:52:16,363 --> 00:52:25,603
+Daha sonra requirement analizi, gereksinim analizi, gereksinim mühendisliği konusuna gireceğiz
+
+269
+00:52:25,603 --> 00:52:37,563
+ama analiz ve tasarım neden ilk başta önemli, neden modellemeyi yapıp ondan sonra program yazımına başlıyoruz?
+
+270
+00:52:37,563 --> 00:53:03,603
+bunu oluşturmak için. Müşteri ne istiyor? Bunu iyi anlamak, müşterinin burada görevini, analizi yapan kişinin görevini, tasarımı yapan kişinin görevini ve aradaki iletişim neden önemli?
+
+271
+00:53:03,603 --> 00:53:11,783
+basit olarak önce bunun üzerinde durup daha sonra gereksinim analizine geçmek istiyorum.
+
+272
+00:53:11,783 --> 00:53:22,543
+Bir defa müşteri ilk başta bütün detayları çok fazla açıklama yapmamalı.
+
+273
+00:53:22,543 --> 00:53:36,984
+Geçen hafta çevik yöntemleri gördüğümüzde basitlik ilkesini de çevik prensiplerinin içinde söylemiştik.
+
+274
+00:53:38,503 --> 00:53:45,943
+Çok fazla ayrıntıya boğulmadan önce ne istendiğini, ne yapılacağını düşünmek gerekir diye.
+
+275
+00:53:45,943 --> 00:53:52,423
+müşteri ilk etapta yaptığı işi çok karmaşık, çok bütün ayrıntılarıyla anlatırsa
+
+276
+00:53:52,423 --> 00:54:00,103
+hedef mesela sadece ağaçta bir basit salıncak yapmakken
+
+277
+00:54:00,103 --> 00:54:06,383
+bunu istemesi ve doğru çalışır hale getirmesi istenirken
+
+278
+00:54:06,383 --> 00:54:14,503
+çok kapsamlı karmaşık şeyler anlatırsa
+
+279
+00:54:14,503 --> 00:54:18,163
+böyle bir şey algılanabilir.
+
+280
+00:54:19,663 --> 00:54:40,443
+Proje lideri bunun nasıl yapılacağını müşteriden anlayıp ama doğru planlamalarla doğru anlatması gerekir.
+
+281
+00:54:40,443 --> 00:55:04,163
+analist gereksinim analizini yaparken müşterinin çok detaylı anlattıklarını daha karmaşık halde anlatıp bunun tasarımını sağlarken
+
+282
+00:55:04,163 --> 00:55:19,363
+tasarımını tamamen hatalı oluşturabilir ve böyle istenmeyen bir sonuç çıkabilir.
+
+283
+00:55:19,363 --> 00:55:34,363
+Eğer yapılanlar programcıya da hatalı anlatılırsa programcıda bambaşka bir...
+
+284
+00:55:35,188 --> 00:55:37,327
+sonuç çıkartabilir.
+
+285
+00:55:40,247 --> 00:55:55,767
+Ve bütün bunları yaparken eğer belgeleme yapılmamışsa, proje dokümentasyonu yapılmamışsa, bu nasıl düzeltilecek, ne yapılacak?
+
+286
+00:55:55,767 --> 00:56:12,768
+Eğer bir sınıf diagramı, ER diagramı, varlıklar arasındaki ilişkiler, veri tabanı yapısı nasıl gibi kavramlar yoksa, proje dökümanı yoksa
+
+287
+00:56:12,768 --> 00:56:24,768
+o zaman daha sonra üzerinde çalışacaklar hiçbir şekilde buna müdahale edemeyecektir veya çok zorlanacaktır.
+
+288
+00:56:25,767 --> 00:56:36,707
+bir takım software re-engineering işlemlerini gerçekleştirmek durumda kalacaklardır.
+
+289
+00:56:36,707 --> 00:56:53,927
+Aslında müşterinin ihtiyacı olan şöyle basit bir şey ama kendi yaptıklarını anlatırken o kadar kendi dünyası etrafında dönüp karmaşık anlatıyor ki
+
+290
+00:56:53,927 --> 00:57:14,707
+bu anlatımlardan tamamen analist de proje lideriyle beraber çalışmalarında tamamen kafası karışıp yanlış bir tasarım gerçekleştirebiliyor.
+
+291
+00:57:14,707 --> 00:57:22,107
+ve programcıya da bunu hatalı aktarabiliyor.
+
+292
+00:57:22,107 --> 00:57:44,107
+Aslında ilk müşteri daha gerçekçi istediklerini basitten karmaşa doğru gerekli yerlerde soruldukça karmaşık süreçleri anlatırsa her şey daha kolaylaşacaktı.
+
+293
+00:57:44,708 --> 00:58:06,208
+herkes için. Bu nedenle bu işlemlerde daha anlaşılır iletişim kurmaya çok ihtiyaç var.
+
+294
+00:58:06,207 --> 00:58:35,087
+ve gereksinim analizinde bizim ne istediğini müşterinin iyi anlatmasına analizi gerçekleştiren kişilerin de iletişim ve soru sorma konusunda
+
+295
+00:58:35,087 --> 00:59:01,307
+başarılı olmasına ihtiyaç duyulacaktır. Bu kavramlar yanlış anlaşıldıkça sistemin doğru çalışan bir sistem olması da sağlanamayacaktır.
+
+296
+00:59:01,307 --> 00:59:17,167
+Şimdi biz gereksinim analizinde hangi işlemleri gerçekleştiriyoruz?
+
+297
+00:59:26,547 --> 00:59:29,248
+bunlar üzerinde duralım.
+
+298
+00:59:34,387 --> 00:59:41,828
+Bir defa bir sistem yapısını anlamamız gerekiyor.
+
+299
+00:59:42,787 --> 00:59:58,247
+Geçen hafta söylediğim gibi yazılımı geliştirirken yazılımı bir kurum içinde yaşayan bir sistem olarak görmemiz gerekiyor.
+
+300
+00:59:58,247 --> 01:00:14,267
+Önce kurumun yapısı, daha sonra kurumda nasıl bir çalışma sistemi var bunu görmek gerekiyor.
+
+301
+01:00:14,267 --> 01:00:38,267
+Ve bu sistem içinde hangi teknikler var, hangi uygulamalar var, ihtiyaç olan sıralama nedir, önce hangi uygulamalara ihtiyaç var, bunun belirlenmesi gerekiyor.
+
+302
+01:00:38,267 --> 01:00:56,347
+Sistem geliştirme yaşam döngüsü ve yazılım geliştirme yaşam döngüsü içinde bunlara ihtiyacımız olacak.
+
+303
+01:00:56,347 --> 01:01:18,307
+Sistem geliştirme bir proje aslında planlanmış bir başlangıca sonu olan ve bu sonuca ulaşmak için gerçekleştirilen işlemler.
+
+304
+01:01:18,307 --> 01:01:32,787
+Bir bilgi sistemi geliştirme projesi de bu bilgi sistemini üretmek üzere planlanmış alt işlemlere diyoruz.
+
+305
+01:01:32,787 --> 01:01:42,567
+Temel aktiviteleri yeni sistemi geliştirmenin analiz, tasarım ve implementasyon.
+
+306
+01:01:42,567 --> 01:01:55,307
+Bu implementasyon aşaması, kodlama, veri tabanının hazırlanması ve birim testlerin yapılması.
+
+307
+01:01:55,307 --> 01:02:23,627
+Analiz aşamasında bu bilgi ihtiyaçları neler, hangi işler gerçekleştiriliyor sistemde ve bu işlemlerle veri arasında nasıl bir ilişki var bunu anlamamız gerekiyor.
+
+308
+01:02:23,627 --> 01:02:28,047
+ve bununla ilişkili çalışmalar gerçekleştirmemiz gerekiyor.
+
+309
+01:02:29,447 --> 01:02:37,467
+Sistem geliştirme, bilgi sistemi geliştirme yaşam döngüsü diye baktığımızda
+
+310
+01:02:37,467 --> 01:02:49,687
+bir genel terim, sistem geliştirme yaşam döngüsü, donanım, yazılım
+
+311
+01:02:49,688 --> 01:02:56,468
+Bu hep birlikte bir bilgi sistemi projesinin geliştirilmesi.
+
+312
+01:03:03,027 --> 01:03:14,427
+bir temel yapı sağlıyor, yöntemler kullanılıyor ve nasıl kontrol edileceği, nasıl bir checklist oluşturulacağı veriliyor.
+
+313
+01:03:14,427 --> 01:03:29,087
+Bu sistem geliştirme sırasında yazılım sisteminin geliştirilmesiyle ilişkili temel işlemler nelerdir?
+
+314
+01:03:29,087 --> 01:03:32,427
+geçen haftadan hatırlayan var mı?
+
+315
+01:03:40,500 --> 01:03:42,839
+[öğrenci]
+
+316
+01:03:42,839 --> 01:03:46,599
+Merhaba. Merhabalar.
+
+317
+01:03:47,399 --> 01:03:50,159
+Önce gereksinim analiziydi. Evet.
+
+318
+01:03:51,239 --> 01:03:55,079
+Sonra tasarım yapılıyor. Evet.
+
+319
+01:03:56,119 --> 01:04:01,579
+Sonra kodlama yani gerçeklendirme olması lazım. Evet, gerçeklendirme.
+
+320
+01:04:01,579 --> 01:04:06,340
+En sonunda risk test aşaması.
+
+321
+01:04:06,340 --> 01:04:30,099
+Test aşaması. Bunlar temel işlemler. Software Development Lifecycle içinde. Burada şimdi ekranda gördüğünüz System Development Lifecycle. Bütün bilgi sisteminin geliştirilmesi. Software Development Lifecycle'da yazılımın geliştirilmesi yaşam döngüsü.
+
+322
+01:04:30,099 --> 01:04:45,199
+ve burada bunlar temel işlemlerimizde [öğrenci]'nin söylediği doğru. Bunları destek sağlayan aktiviteleri hatırlayan var mı?
+
+323
+01:04:45,199 --> 01:05:01,679
+yani iyi bir analiz, iyi bir tasarım ve gerçekleme yapmak için şemsiye aktiviteler, umbrella activities bunlardan bahsettik.
+
+324
+01:05:01,679 --> 01:05:11,459
+Bunların nasıl yapıldığı konusunda neler yapıyoruz bunları daha iyileştirmek için?
+
+325
+01:05:11,459 --> 01:05:16,540
+birkaç tane onlardan bilgi verebilir misiniz?
+
+326
+01:05:18,159 --> 01:05:19,519
+Hocam cevap verebilir miyim?
+
+327
+01:05:19,919 --> 01:05:20,220
+Tamam.
+
+328
+01:05:21,099 --> 01:05:22,139
+Şımak değil mi?
+
+329
+01:05:22,540 --> 01:05:22,900
+Evet.
+
+330
+01:05:23,300 --> 01:05:25,159
+Proje planları vardı.
+
+331
+01:05:25,339 --> 01:05:25,680
+Evet.
+
+332
+01:05:26,440 --> 01:05:27,519
+Kölite yönetimi.
+
+333
+01:05:27,900 --> 01:05:28,220
+Evet.
+
+334
+01:05:29,059 --> 01:05:30,239
+Risk analize.
+
+335
+01:05:30,239 --> 01:05:30,919
+Evet.
+
+336
+01:05:32,059 --> 01:05:35,879
+Bir de yazılım konfigürasyon yönetimi vardı.
+
+337
+01:05:35,940 --> 01:05:36,119
+Evet.
+
+338
+01:05:36,360 --> 01:05:38,159
+Yazılım konfigürasyon yönetimi.
+
+339
+01:05:38,680 --> 01:05:40,360
+Bunlar iyileştirmek için.
+
+340
+01:05:40,360 --> 01:06:04,899
+yani bir yazılım geliştirmeyi bir proje olarak düşündüğümüzde ki büyük projeler yazılım geliştirme işleri burada önce bir plan yapalım sonra bu planı takip edelim dediğimizde bütün hepsine birden planın yapılması takip edilmesi kapatılması bütün hepsi bunların proje yönetimi.
+
+341
+01:06:04,899 --> 01:06:16,599
+Bunun dışında proje yönetimi kapsamına da giren risk yönetimi yani neler var risk bunları takip edelim işi
+
+342
+01:06:16,599 --> 01:06:25,159
+Kalite yönetimi daha kaliteli olması için nasıl gözden geçirmeler yapalım bunların planlanması
+
+343
+01:06:25,160 --> 01:06:52,020
+ve konfigürasyon yönetimi değişiklik oldukça biz bunları takip edelim elemanlar arasındaki ilişkileri takip edelim bu da bizim konfigürasyon yönetimimiz ayrıca bir de ölçme demiştik temel işlemlerinden daha önceki derslerde hep mühendislik tanımını öne çıkarmıştım
+
+344
+01:06:52,019 --> 01:07:02,299
+bu mühendislik tanımı kapsamında da ölçme ve tasarım ön plana çıkıyor demiştim.
+
+345
+01:07:02,300 --> 01:07:27,059
+ve ölçme ve tasarımda da bizim bir tasarımı zaten bir temel madde olarak alıyoruz yazılım geliştirme süreç döngüsünde.
+
+346
+01:07:27,059 --> 01:07:32,300
+ölçmede her aşamada yaptıklarımızı
+
+347
+01:07:32,755 --> 01:07:51,395
+işte karmaşıklık ölçüsü, program karmaşıklık, algoritma karmaşıklık ölçüsü, program karmaşıklığı, program büyüklüğü, kod büyüklüğü bunların hepsi bizim için yapılması gereken şeyler.
+
+348
+01:07:51,395 --> 01:08:09,075
+ölçme başka hangi işe yarıyor? Çalışanların veriminin ölçülmesi ve yine gerçekleştirilen işin büyüklüğünün ölçülmesi.
+
+349
+01:08:09,075 --> 01:08:29,875
+daha sonra bunu nerede kullanıyoruz yeni bir işe başlayacağımız zaman bu eski ölçüm sonuçlarını kullanarak maliyet tahmini yapmakta da kullanabiliyoruz. Bunlar bizim için hepsi önemli.
+
+350
+01:08:29,875 --> 01:08:39,196
+Şimdi planlama aşamasında neler yapıyoruz? Proje yönetimi kapsamında bunlara daha sonra değineceğiz.
+
+351
+01:08:41,196 --> 01:08:52,855
+Yazılım geliştirme süreci içinde yine önem verdiğimiz başka şeyler var.
+
+352
+01:08:52,855 --> 01:08:59,055
+kaliteyi sağlamak için nasıl bir sertifikasyon yapıyoruz, yazılım evinin sertifikasyonu nedir?
+
+353
+01:09:00,095 --> 01:09:06,675
+Şimdi bunlar üzerinde duracağım başka bir slide kullanarak.
+
+354
+01:09:07,635 --> 01:09:15,436
+Bir ara verelim ama şurada 10 dakika ara veriyoruz.
+
+355
+01:26:10,228 --> 01:26:11,767
+Evet, derse devam ediyoruz.
+
+356
+01:26:18,515 --> 01:26:40,515
+biraz arayı uzattık. En son [öğrenci] ve [öğrenci] ile beraber geçen haftalarda üzerinde durduğumuz yazılım geliştirme süreci, destek aktiviteleri ve temel aktiviteleri üzerinde durduk.
+
+357
+01:26:40,515 --> 01:27:07,335
+durduk. Temel aktivitelerin neler olduğu, daha sonra da geliştirme sürecindeki destek aktivitelerinin neler olduğu üzerinde durduk. Arkadaşlarınız tekrar ettiler. Bu süreci iyileştirmek ve daha standartlaştırmak için case araçları kullandığımızdan bahsetmiştim.
+
+358
+01:27:07,335 --> 01:27:36,335
+bu case kavramı Computer Aided Software Engineering yazılım mühendisliği işlerinin bilgisayar yardımıyla gerçekleştirilmesi ve bu case ortamı temel adımlarımızı ve destek adımlarımızı daha iyileştirmeyi sağlıyor.
+
+359
+01:27:37,335 --> 01:27:47,056
+Bunu sağlarken de bir grafik görüntü sağlayacak ortam olmalı
+
+360
+01:27:47,056 --> 01:27:52,355
+Üst case, orta case ve alt case bunlar nedir?
+
+361
+01:27:52,355 --> 01:27:57,715
+Üst tarafta diagram çizimi ve tanımlama araçları olmalı
+
+362
+01:27:57,715 --> 01:28:25,215
+tasarımı gerçekleştirecek analiz ve tasarımda sizin de kullanmanızı istediğim çok basit kısmı tabii ki bu bütünleşik case araçlarından bahsederken biz mesela bir Rational Unified Process'i bahsediyoruz ya da HP'nin temel yazılım geliştirme alt ürününden bahsediyoruz.
+
+363
+01:28:25,215 --> 01:28:52,736
+bunlar bütün yazılım sistemini geliştirirken bize her aşamada destek olacak araçlar. Test sırasında da kullanılan bölümleri var. Bir de case araçlarının belli evrelerde bize destek olacak daha küçültülmüş kısımları, açık kaynaklı olanları var.
+
+364
+01:28:52,736 --> 01:29:10,695
+tabi diğer bahsettiğim RUP ve HP'nin temel destek aracı bunlar büyük projelerde kurumsal firmalar tarafından ancak satın alınabilecek güçte ürünler.
+
+365
+01:29:10,695 --> 01:29:24,535
+işlemleri yapmakta yazılım geliştirme sürecini düzenliyor. Projenin gerektirdiği standart tasarım teknik yöntemlerini kullanılıyor.
+
+366
+01:29:24,535 --> 01:29:42,535
+ve yazılımı geliştirmekte yani bir takım tanımlamalar yaptıktan sonra altta istediğimiz kod üreten kod üreticiler şeklinde farklı yazılım geliştirme yazılımlarından söz edebiliriz.
+
+367
+01:29:44,535 --> 01:29:50,815
+Diagram çizimi, tasarım, kodlama işlemlerini gerçekleştirebilmektedirler.
+
+368
+01:29:50,815 --> 01:30:00,015
+Tabii ki bütün bunları yapabilmek için bir ansiklopedik arşivleri var, veri modelleri, veri sözlüğü, işler
+
+369
+01:30:00,000 --> 01:30:25,659
+sistemler, fonksiyonlar bunlardan destek alıyorlar. Ve bu üç aşamada kod çevirici olarak ya da tasarım analiz gerçekleştirerek ve diagramları çizerken bize yardımcı olan araçlar diyebiliriz case araçları için.
+
+370
+01:30:25,659 --> 01:30:43,260
+Burada bu kod üreticilerden bahsettiğimizde yazılımı hızlandırmak için dördüncü kuşak dillerinde kullanımı söz konusu olabilir.
+
+371
+01:30:43,259 --> 01:30:50,439
+yine tabii bizim çizdiğimiz algoritma yoluyla gidecekler.
+
+372
+01:30:50,439 --> 01:31:03,119
+O yüzden bizim gerçekleştirdiğimiz analiz tasarım evrelerine bu dördüncü kuşak dilleri kullandığımızda da ihtiyacımız var.
+
+373
+01:31:03,119 --> 01:31:23,680
+Şimdi bir de ders programımız çerçevesinde biz bu işte yazılımı geliştirirken belli bir standardı yakalamak için bu case araçlarını kullanabiliyoruz. Standartlarımız var. Bunlardan kalite yönetimi sırasında bahsedeceğim.
+
+374
+01:31:23,680 --> 01:31:29,900
+Ama yazılımla ilişkili pek çok şeyden bahsettik
+
+375
+01:31:29,900 --> 01:31:34,639
+İşte temel yazılım tipleri nelerdir?
+
+376
+01:31:36,220 --> 01:31:46,680
+Bu yazılım tiplerini geliştirirken farklı kişiler, paydaşlar, nasıl yanılgılarda bulunur gibi konular üzerinde durduk
+
+377
+01:31:46,680 --> 01:32:07,779
+Bizim bir de yazılım geliştiren ortamlarda nasıl bir standartlaşma, nasıl bir iyileşme sağlanıyor biraz da bunun üzerinde duralım
+
+378
+01:32:07,779 --> 01:32:23,179
+yazılım geliştirme sürecinden bahsettiğimizde bu işi gerçekleştiren yazılım evlerinin çalışmalarını da göz ardı edemeyiz.
+
+379
+01:32:23,179 --> 01:32:27,239
+Bunlarda nasıl bir iyileştirme yapmak söz konusu?
+
+380
+01:32:27,239 --> 01:32:51,919
+bu yazılım geliştirme sürecinde yazılım standartlarını kullanarak hem gereksinim analizinde hem tasarımda hem kodlamada bu standartlara uyarak yaptığımız işi iyileştirebiliyoruz.
+
+381
+01:32:51,919 --> 01:33:06,080
+Ama nasıl ki ben hep bunu anlatırken şeyle karşılaştırıyorum kalite dersinde de
+
+382
+01:33:06,080 --> 01:33:20,660
+Üniversiteler için bölümlerin iyiliğini ne kadar iyi bir bölüm olduğunu belirtmek için bazı sertifikasyonlar var müdek gibi duymuşsunuzdur belki
+
+383
+01:33:20,659 --> 01:33:23,699
+bizim
+
+384
+01:33:25,876 --> 01:33:44,335
+yazılım geliştiren kurumlarda da yazılım geliştiren kurum ne kadar iyi bir kurum, ne kadar standart bir kurum bunu belirtmek üzere bir süreç sertifikasyonundan bahsedebiliriz.
+
+385
+01:33:44,335 --> 01:34:07,315
+Bu aslında yazılım kalite yönetimi ile ilişkili bir konu ama yazılım tanımını yaparken yazılım geliştirme işinin iyileştirilmesi için yazılım evlerinde nasıl bir süreç sertifikasyonu işliyor
+
+386
+01:34:07,315 --> 01:34:15,455
+bunu da bu başlangıç aşamasında bilmekte fayda var.
+
+387
+01:34:18,455 --> 01:34:34,635
+Bu farklı kurumlar tarafından veriliyor ama temel olarak bir Avrupa'da verilen bir süreç sertifikasyonu sistemi var.
+
+388
+01:34:34,636 --> 01:34:52,136
+bir de Amerika'da verilen bir sistem var. SMMI Amerika'da verilen bu sertifikasyon. SMMI Capability Majority Model Integration.
+
+389
+01:34:52,135 --> 01:35:18,175
+İlk başlangıcında daha sonra söz edeceğiz ondan. İlk başlangıcında biz bunu SMM olarak görüyorduk. Capability majority model. Daha sonra bu yazılım evlerinde geliştirilen her türlü aktiviteyi içine alarak bütünleşik SMM kavramı ortaya çıktı.
+
+390
+01:35:18,175 --> 01:35:35,515
+bir yazılım firması, şimdi madem ki süreçlerden bahsediyoruz, yazılım geliştirme süreç modellerinden bahsettik, geçen hafta ayrıntılı olarak süreç adımlarından bahsediyoruz.
+
+391
+01:35:35,515 --> 01:35:57,635
+Bu yazılım firması süreçleri yeterince uyguluyor mu? Bunu bağımsız kurumlara onaylatabilir ve bir sertifika alabilir. Bu sertifika ne işe yarıyor derseniz bir takım ihalelere girmesini kolaylaştırıyor.
+
+392
+01:35:57,635 --> 01:36:09,855
+özellikle mesela askeri yazılımları yapabilir olması için işte CMMI 3'te olması şarttı gibi bir şartlar var.
+
+393
+01:36:10,015 --> 01:36:19,415
+Bazı yazılım ihalelerinde de bu şekilde gelecek yazılım firmalarının süreç sertifikasyonu aranabilir.
+
+394
+01:36:19,415 --> 01:36:45,315
+Evet bir de sertifikalı yazılım firmaları ile çalışmak şartı olabilir yani askeri yazılımların dışında da ama şimdi buna demiyoruz ki çok küçük yazılım evleri mutlaka böyle bir sertifikasyon alma yüküne girsin böyle bir şey zorunluluk yok
+
+395
+01:36:45,316 --> 01:36:55,696
+bu burada kendilerine hedef olarak başka standartları koyabilirler ama onların da ne işine yarayabilir?
+
+396
+01:36:55,696 --> 01:37:03,855
+SMMI süreçlerini inceleyerek kendilerine göre yorumlayıp kullanabilirler.
+
+397
+01:37:03,855 --> 01:37:13,096
+burada yani bunun dışında sertifikasyonlar
+
+398
+01:37:14,644 --> 01:37:34,703
+işte bir takım standartlar, ISO 9001 standartları gibi, yazılım geliştirme süreci ile ilişkili standartlar, proje yönetimi içinde Project Management Institution tarafından geliştirilmiş şeyler var.
+
+399
+01:37:34,703 --> 01:37:44,183
+Bunları proje yönetimi sırasında göreceğiz. Şimdi CMMI konusunda biraz bilgi vermek istiyorum.
+
+400
+01:38:03,155 --> 01:38:15,395
+evet, öncelikle SMA'yı görelim. SMA her düzeyde belirli bir süreç alanını kapsıyor olması isteniyor.
+
+401
+01:38:15,395 --> 01:38:25,496
+yani düzeyler belirtilmiş. birinci düzey, ikinci düzey, üçüncü düzey, dördüncü düzey, beşinci düzey diye.
+
+402
+01:38:25,955 --> 01:38:30,755
+bir sonra o düzeylerde neler isteniyor onları göstereceğim.
+
+403
+01:38:30,755 --> 01:38:40,955
+yazılım geliştirme, servis, ürün hizmet alımı bunlar işte hepsi birleştirilmiş.
+
+404
+01:38:40,955 --> 01:38:58,435
+CMM'de sadece süreç yazılım geliştirme standartı iken CMM'i da hem development hem servis hem ürün ve hizmet alımı için standartlar ortaya konulmuş.
+
+405
+01:38:58,435 --> 01:39:14,855
+Her firma gerekli süreçleri kendi uygulamalarında sağlamayı hedefliyor ve bununla ilişkili çalışmalar sürdürülüyor.
+
+406
+01:39:14,855 --> 01:39:30,295
+her üç alan CMMI'da 2018'de tek bir olgunluk modelinde birleştirildi. O yüzden CMMI'den CMMI'ye geçildi.
+
+407
+01:39:30,295 --> 01:39:44,635
+Aslında yeni bir versiyon daha oluşturuldu CMMI'da. Bu da CMMI People tarafı ayrı yürütülüyordu.
+
+408
+01:39:44,855 --> 01:40:03,635
+son yıllarda CM&People da CM&Y'in içine katıldı. Yani CM&Y Development, CM&Y Service, CM&Y Ürün Hizmet Alımı dışında CM&People da buna katıldı.
+
+409
+01:40:03,635 --> 01:40:16,516
+Bu ne demek? Yani yazılım evi süreçleri uyguluyor. Hizmet sunumunu, yönetimini SMA standartlarına göre gerçekleştiriyor.
+
+410
+01:40:16,516 --> 01:40:37,696
+ama çalışanlara sağladığı olanaklar, çalışanların kariyer planları konusunda, çalışanların hakları konusunda da düzeylere göre iyileştirme yapılması gerekiyor ki
+
+411
+01:40:37,695 --> 01:40:59,735
+CMMI istenilen düzeyinde olabilsin firma. Dolayısıyla tarihçesine baktığımızda ilk başta biz CMMI olarak anlatıyorduk bunu 97'ye kadar. Sonra CMMI ortaya çıktı. Yani ortaya çıktı dediğim bütün bunlar birleştirildi.
+
+412
+01:40:59,736 --> 01:41:05,116
+Çevik süreçleri desteklemeye başladı 2010'dan itibaren
+
+413
+01:41:05,116 --> 01:41:16,616
+2018'de de daha sürekli iyileştirme hedeflerine göre çalışmaya başlandı
+
+414
+01:41:16,616 --> 01:41:27,376
+ve CMM People'da daha sonra bunun içine eklenmiş oldu
+
+415
+01:41:27,376 --> 01:41:32,736
+CMM People'da da ayrıca katmanlar belirtiyorduk.
+
+416
+01:41:32,736 --> 01:41:56,956
+Mesela işte CMM People ikinci düzeyde olması için çalışanların işe alım süreçleri, doğru göreve yerleştirilmesi gibi haklar daha sonra da kişilere kariyer planı yapıyor mu, ölçümleme yapıyor mu gibi değerlendirmeler ekliyorduk.
+
+417
+01:41:56,955 --> 01:41:59,875
+tabi ki bu ücretli bir
+
+418
+01:42:02,068 --> 01:42:20,748
+sistem. Yazılım evinin ölçülmesini ve bir sertifikasyon almasını isteyen başvuruyor. Kurallarını yerine getirmeye çalışıyor. Bu kurallar nedir? Şimdi onu görelim. Buraya kadar sorunuz var mı?
+
+419
+01:42:28,819 --> 01:42:30,259
+sorusu olan var mı?
+
+420
+01:42:44,083 --> 01:43:02,863
+Peki şimdi SEMM ay üzerine konuşuyoruz ama bundan önce case aracı üzerinde konuştuk. Case aracında [öğrenci], [öğrenci] çok varmış. [öğrenci] burada mı?
+
+421
+01:43:11,444 --> 01:43:12,863
+[öğrenci]
+
+422
+01:43:25,716 --> 01:43:28,515
+[öğrenci], duyuyor musun?
+
+423
+01:43:40,787 --> 01:44:08,287
+Evet, şimdi case aracıyla ilişkili bir şey sorayım. Hiç bu nesneye yönelik çalışmalar yaparken, mesela ben şimdi violet kullanmanızı istedim. Bunun dışında modellemeyi gerçekleştirirken size destek olacak herhangi bir başka ürün
+
+424
+01:44:10,787 --> 01:44:17,508
+bilen var mı? Örnek vermek isteyen var mı?
+
+425
+01:44:25,971 --> 01:44:53,251
+MS Project aslında şöyle, şimdi MS Project sadece bir yazılım geliştirmekle ilişkili bir şey değil. Soner Küp, evet, test konusunda bize bilgi sağlayan, bilgi sağlayan demeyeyim de destek sağlayan bir ürün.
+
+426
+01:44:53,251 --> 01:45:05,511
+az önce söylediğim gibi yani bütünleşik case araçları adım adım bütün aşamalarda bize destek sağlıyor.
+
+427
+01:45:05,511 --> 01:45:15,971
+Ama sadece analiz diagramlarını, tasarım diagramlarını çizmek için hazırlanmış olanları da var.
+
+428
+01:45:15,971 --> 01:45:38,171
+Sadece test için oluşturulmuş olanları var, soner küp gibi. Sadece tanımlanan algoritmaya göre kod üreticiler var. Yani böyle belli parçalarını gerçekleştiren ürünler de var.
+
+429
+01:45:38,171 --> 01:45:53,671
+MS Project bu noktada bize planlama konusunda Gant diagramı, PERT diagramı çizme konusunda yardımcı oluyor ama bunlar genel amaçlı bütün projelere destek sağlayan araçlar.
+
+430
+01:45:53,671 --> 01:46:03,832
+Yani yazılım geliştirme süreci yardımcısı diyemeyiz MS Project'e. Proje yönetim aracı diyebiliriz.
+
+431
+01:46:08,659 --> 01:46:19,139
+Evet, [öğrenci], IO'yu kullandın mı yoksa duydun mu, stajda falan mı kullandın?
+
+432
+01:46:55,188 --> 01:47:00,867
+Siz [öğrenci], lisans üstü hazırlık sınıfında mısınız?
+
+433
+01:47:08,180 --> 01:47:08,599
+tamam.
+
+434
+01:47:19,123 --> 01:47:40,343
+Bu case konusunda biraz daha tamam. Teşekkürler. Case konusunda bir arada arada hatırlatmak istiyorum.
+
+435
+01:47:40,343 --> 01:47:53,344
+Çünkü yazılı mühendisliği dersinde böyle araçlar kullanarak işimizi kolaylaştırabiliyoruz.
+
+436
+01:47:54,563 --> 01:48:02,164
+Bunun bilerek devam etmenizi istiyorum.
+
+437
+01:48:02,164 --> 01:48:09,103
+Şimdi S&Y düzeyleri üzerinde duralım.
+
+438
+01:48:09,103 --> 01:48:11,004
+hangi düzeyler var?
+
+439
+01:48:12,063 --> 01:48:20,403
+SMA düzeyleri dediğimizde sıfırdan itibaren sıfırıncı düzey, birinci düzey, ikinci, beşe kadar gidiyor.
+
+440
+01:48:21,043 --> 01:48:23,963
+Beşe kadar gidiyor ne?
+
+441
+01:48:24,664 --> 01:48:28,984
+Sıfırıncı düzey hiç müracaat edilmemiş ve böyle bir niyet de yok henüz.
+
+442
+01:48:30,123 --> 01:48:35,243
+Ama belki şirkette bir niyet var.
+
+443
+01:48:35,243 --> 01:48:43,763
+Birinci düzey, giriş düzeyi tamamen etkinlikler yürütülüyor.
+
+444
+01:48:43,763 --> 01:48:59,683
+Yani bütün projelerde bir analiz aşaması, tasarım aşaması, gerçekleştirme aşaması diye adımlar kullanılıyor, süreçler kullanılıyor.
+
+445
+01:48:59,683 --> 01:49:06,883
+ama bunların standartlaşmasıyla ilişkili bir şey yok.
+
+446
+01:49:07,003 --> 01:49:12,823
+Her seferinde farklı analiz, tasarım, gerçekleştirme hedefleriyle yürüyor.
+
+447
+01:49:14,443 --> 01:49:20,403
+Burada bir çalışma başlatılmış durumda olabilir.
+
+448
+01:49:20,403 --> 01:49:41,984
+biz bu süreçleri yürütüyoruz ama biraz daha standartlaşalım bir sertifika alalım diye çalışma başlatılmış olabilir birinci seviyede ve ikinci düzey yönetilebilir.
+
+449
+01:49:41,984 --> 01:49:50,103
+SMM'de aşamasında repeatable tekrarlanabilir düzey dediğimiz düzey.
+
+450
+01:49:50,724 --> 01:50:11,103
+Burada temel planlama izleme yöntemleri kullanılarak önceki projelerdeki başarılar yeni projelerde tekrarlanabilir ya da önceki projelerde başarı hikayeleri, başarısızlık hikayeleri varsa onlar dikkate alınarak devam edebilir.
+
+451
+01:50:11,984 --> 01:50:35,784
+devam edilebilir. Üçüncü düzey tanımlanmış defined düzey. Burada kişi ve risk yönetimiyle ilgili projenin yönetimi iyileştirilir. Tüm organizasyonda standart süreçler tanımlanmıştır.
+
+452
+01:50:35,783 --> 01:50:58,183
+yani hep üzerine katarak standartlaştırma ve iyileştirme süreci geçiyor. İkinci düzeyde bu projeler tekrar etmeye çalışıyorlar.
+
+453
+01:50:58,183 --> 01:51:11,943
+Ama üçüncü düzeyde daha tanımlı bir hal var. Burada projenin yönetimi iyileştiriliyor. Tüm organizasyonda standart süreçler tanımlanıyor.
+
+454
+01:51:15,891 --> 01:51:23,591
+Bu üçüncü düzeyden itibaren ihalelerde falan üçüncü düzeyde olma isteği gelir.
+
+455
+01:51:24,991 --> 01:51:31,831
+Mesela üçüncü düzeyden itibaren risk yönetimi yapılır.
+
+456
+01:51:33,771 --> 01:51:37,871
+İkinci düzeyde temel işlemler vardır.
+
+457
+01:51:37,871 --> 01:51:43,251
+Yani bir proje planlama vardır ikinci düzeyde de.
+
+458
+01:51:43,251 --> 01:51:48,732
+analiz, tasarım belgeleri geliştirilir.
+
+459
+01:51:50,051 --> 01:51:56,211
+Hatta konfigürasyon yönetimi mutlaka yapılır ikinci düzeyde olan bir firmada.
+
+460
+01:51:56,211 --> 01:52:01,432
+Ama üçüncü düzeyde ise risk yönetimi de gerçekleştirilir.
+
+461
+01:52:02,411 --> 01:52:09,211
+Dördüncü düzeyde olan bir firma sayısal yönetilebilir.
+
+462
+01:52:09,891 --> 01:52:11,911
+Nedir bu sayısal yönetilebilir?
+
+463
+01:52:11,912 --> 01:52:20,972
+İlk başta mühendis tanımında ben ölçme gerçekleştirilir diye bir tanımlama yapmıştım.
+
+464
+01:52:22,351 --> 01:52:34,912
+Burada da dördüncü düzeyde yazılım geliştirme sürecinde ölçütler kullanılarak ölçme işlemi yapılır ve kalite yönetimi gerçekleştirilir.
+
+465
+01:52:34,911 --> 01:52:44,171
+İlerlemeler sürekli izlenir. Bütçe ve zaman hedeflerinden sapmalar daha erken belirlenir.
+
+466
+01:52:46,271 --> 01:52:57,351
+Quantitatively managed sayısal yönetilebilir olduğunu belirten düzeydir firmanın, yazılım firmasının.
+
+467
+01:52:57,351 --> 01:53:13,491
+Burada hem proje açısından bütçe ve zaman hedefleri ve buradan sapmalar göz önünde bulundurulur.
+
+468
+01:53:14,112 --> 01:53:23,692
+Hem de geliştirilen yazılımla ilişkili hep ölçme işlemi gerçekleştirilir.
+
+469
+01:53:23,691 --> 01:53:28,571
+Bu yazılımla ilişkili ölçme işlemleri nelerdir?
+
+470
+01:53:29,511 --> 01:53:42,031
+Mesela işte büyüklük ilk aklımıza gelen ve daha sonra bu büyüklükteki bir projeyi ne kadar sürede geliştirdik?
+
+471
+01:53:42,891 --> 01:53:46,171
+Ne kadar iş gücüyle geliştirdik?
+
+472
+01:53:46,171 --> 01:54:10,511
+O zaman planlamada da maliyet tahmininde özellikle rastgele tahminler sadece kişilerin kafasından kendi deneyiminden tahminleri değil de proje planlamada da sayısal yönetime geçilmiş olur.
+
+473
+01:54:10,511 --> 01:54:26,351
+Yani daha önceki projeler veri tabanına bakarak yeni projelerle ilişkili daha destekli tahminler gerçekleştirmek yoluna gidilebilir.
+
+474
+01:54:27,071 --> 01:54:35,451
+Bu yüzden dördüncü düzeye sayısal yönetilebilir düzey diyoruz.
+
+475
+01:54:35,451 --> 01:54:48,972
+5. düzeyde iyileştirilmiş optimizing kavramı süreç yönetimi geçmiş deneyimlerin ışığında sürekli iyileştirilir.
+
+476
+01:54:48,972 --> 01:55:08,371
+Yani burada hep bir şey yeni fikirler optimize edilmesi, yazılım geliştirme süreçleri için, kullanılan teknikler için, kullanılan araçlar için daha iyileştirme nasıl yapılır?
+
+477
+01:55:10,868 --> 01:55:25,047
+çalışanlardan gelen yeni fikirlerin değerlendirilmesi. Bu da yine iyileştirilmiş düzeyde sağlanan özelliklerden bir tanesi.
+
+478
+01:55:25,047 --> 01:55:33,227
+Baktığınız zaman hep sıfırıncı düzey, birinci düzey üzerine eklenerek gidiyor.
+
+479
+01:55:33,227 --> 01:55:39,327
+yani buradan zaten anlaşılmıştır.
+
+480
+01:55:40,127 --> 01:55:45,447
+Dördüncü düzeyde olan bir firma ilk üç düzeyde yapılanları zaten yapıyor.
+
+481
+01:55:45,447 --> 01:56:00,368
+Burada yapılanlar için hani neler yapılıyor, neler gerçekleştiriliyor bunu belirlemek için şeyler var.
+
+482
+01:56:00,368 --> 01:56:19,687
+key process area, key pay'ler var. Yani anahtar süreç alanları. Hangi düzeyde olduğunu belirlemek için bir yazılım evinin anahtar süreç alanlara bakılıyor.
+
+483
+01:56:19,687 --> 01:56:30,287
+Yani birinci düzeydeyim diyorsa burada sonrası için bir hazırlık planları var mı ona bakmak lazım
+
+484
+01:56:30,287 --> 01:56:44,287
+Şu anda var olan durumda her bir projede bu yazılım geliştirme süreç adımlarını yürütüyorlar mı buna bakmak lazım
+
+485
+01:56:44,287 --> 01:56:56,048
+ikinci düzeydeyim diyorsa o firmanın bütün süreç adımlarını işlemiş olduğunun belgesi gerekir.
+
+486
+01:56:56,048 --> 01:57:04,827
+ve önceki projelerde geri besleme alınmaya başlanmış mı?
+
+487
+01:57:04,827 --> 01:57:31,047
+ve geliştirilen bütün yazılımlarda acaba o yazılımların hangi aşamalardan geçtiği, hangi yarı ürünleri ürettiği ile ilişkili bir takip değişiklik yönetimi sistemi var mı?
+
+488
+01:57:31,047 --> 01:57:44,368
+yani konfigürasyon yönetimi sistemi var mı? İkinci düzeyde tekrar edilebilir, yönetilebilir olması için konfigürasyon yönetimi şart ikinci düzeyden itibaren olmalı.
+
+489
+01:57:44,368 --> 01:58:05,007
+üçüncü düzeyde de risk olmalı ve üçüncü düzeyde organizasyonun hepsinde standart süreç adımları, süreç modeli takibi yapılıyorsa üçüncü düzeydedir diyebiliriz.
+
+490
+01:58:05,007 --> 01:58:10,168
+süreç modelleri üzerinde geçen hafta durduk.
+
+491
+01:58:10,168 --> 01:58:13,248
+Süreç modelleri hakkında sorusu olan var mı?
+
+492
+01:58:14,108 --> 01:58:16,728
+Bu noktada aklıma gelmişken sorayım.
+
+493
+01:58:17,528 --> 01:58:26,948
+Yazılım geliştirme süreç modelleri, klasik modeller, evrimsel modeller, artımlı modeller, çevik modeller.
+
+494
+01:58:26,948 --> 01:58:30,528
+Çevik modellerden birçoğu artımlı model zaten.
+
+495
+01:58:35,796 --> 01:58:38,796
+aklına gelen soru, aklına gelen var mı?
+
+496
+01:58:52,020 --> 01:59:18,659
+Evet, bir de Türkiye'deki kısmına bakalım. Türkiye'de durum nedir? Yani burada önemli olan sertifika düzeyinin 3 ve sonrası olan kurumlar. Bu Milsoft, military software zaten Ankara'daki bir firma. O sürekli 5. düzeyde.
+
+497
+01:59:18,659 --> 01:59:23,379
+TÜBİTAK, BİLGEM 5. düzeydeydi.
+
+498
+01:59:24,579 --> 01:59:30,459
+ASELSAN, CYBERSOFT, HAVELSAN, COÇ SİSTEM 3. düzeydeydi.
+
+499
+01:59:30,459 --> 01:59:43,399
+COÇ SİSTEM'de bu uzunca seneler kalite grubu çalışmalar yapmıştır.
+
+500
+01:59:43,399 --> 01:59:50,159
+benim de oradan çok eski yıllardan yüksek lisans öğrencilerim vardı.
+
+501
+01:59:52,979 --> 01:59:58,479
+Şeyde Siemens'de burada olmayan bir şirket listesi.
+
+502
+01:59:58,479 --> 02:00:09,339
+Siemens'de şu anda SMMI kullanılıyor.
+
+503
+02:00:09,339 --> 02:00:30,479
+Ayrıca test işlemleri için TMMI test üzerine test işlemlerinde yeterli olgunluk ve iyileştirme gerçekleştiriliyor mu?
+
+504
+02:00:30,479 --> 02:00:35,539
+bunun da sertifikasyonunu almış durumdalar.
+
+505
+02:00:35,939 --> 02:00:47,240
+Hatta çevik yaklaşımlar içinde TMMI 5'i şu anda uygulama aşamasındalar Siemens'de.
+
+506
+02:00:47,240 --> 02:01:14,139
+Cybersoft bir şey firması bankacılık yazılımı yapan bir firma ve bankacılık yazılımı yapıyor ama şirket sahipleri kendileri de yazılı mühendisi ve süreçlere önem vererek çalışmalarını sürdürüyorlar.
+
+507
+02:01:14,139 --> 02:01:28,259
+Havelsan yine bir zaten askeri firma olduğu için yazılım firması. Yazılım ürünlerini de yine seviye 3'te götürüyor.
+
+508
+02:01:28,259 --> 02:01:50,739
+Etia'da 2020'de almıştı yine Teknopark'ta yazılım geliştiren bir takım firmalarda seviye 3'ü ona göre çalışmalarını gerçekleştiriyor olabilirler.
+
+509
+02:01:50,740 --> 02:01:59,060
+Bu şeyle ilişkili, SMA ile ilişkili sorunuz var mı?
+
+510
+02:01:59,060 --> 02:02:12,100
+Bu yaklaşım konusunda bir hedefleri konusunda bir soru işareti var mı kafanızda?
+
+511
+02:02:26,996 --> 02:02:37,715
+Evet, önümüzdeki hafta gereksinim analizine Presman'ın kitabından devam edeceğiz adımları göstermek için.
+
+512
+02:02:37,715 --> 02:03:00,775
+ama ona bir ön bilgi olarak yani öyle kuramsal adımları anlatmadan önce nesne konusunda nesne yönelik analiz konusunda biraz bir giriş yapmak istiyorum.
+
+513
+02:03:00,775 --> 02:03:06,176
+Onun için bu slide'ı değiştireceğim. Bu slide'la ilişkili sorusu olan var mı?
+
+514
+02:03:07,715 --> 02:03:09,855
+case ve stemmi.
+
+515
+02:05:31,444 --> 02:05:50,303
+Evet, bir LARMA'nın hazırladığı farklı şeyler var. Web üzerinde de sunumlar var.
+
+516
+02:05:50,303 --> 02:06:08,603
+LARMA'nın kitapları üzerinden de temel nesneye yönelik analiz ve tasarım konusunda faydalanabileceğinizi söylemiştim.
+
+517
+02:06:08,603 --> 02:06:29,883
+Bunlardan bir örnek bu ilk başta gereksinim analizi sırasında temel olarak kullanıcı hikayelerini nasıl alıyoruz ve bunları nasıl kullanıyoruz,
+
+518
+02:06:29,883 --> 02:06:34,304
+Yuz case'leri nasıl oluşturuyoruz?
+
+519
+02:06:36,524 --> 02:06:52,603
+Fonksiyonel gereksinimleri yakalamanın bir yolu kullanıcı hikayelerini dinlemek ve kullanıcı hikayeleri nedir?
+
+520
+02:06:52,603 --> 02:07:17,783
+Siz bir yazılım geliştireceğiniz zaman o yazılımı geliştireceğiniz sistem hakkında bilgi almalısınız ve farklı seviyelerde bunlara ayrıntılar istemelisiniz
+
+521
+02:07:17,783 --> 02:07:35,363
+yani ecel yaklaşımda da basitten başlayın diyorduk. Bu derste başlarken de kullanıcının çok karmaşık hikayelerini anlatması tehlikelidir diye başladım bir örnek vererek bu salıncak hikayesini.
+
+522
+02:07:35,363 --> 02:07:56,423
+önce temel olarak ne istiyor? Daha sonra bunun use case'ini oluşturup, diagramda da temel bir diagram oluşturup daha sonra ondan başlayarak kademe kademe ayrıntıya girmemiz gerekiyor.
+
+523
+02:07:56,423 --> 02:08:19,743
+o yüzden burada farklı use case seviyelerini tanımlayın diyoruz ve bu use case'lere kullanıcı hikayelerini temel formatta yazmanız gerekiyor.
+
+524
+02:08:19,744 --> 02:08:31,764
+ve diagramları da okuyup yazabilecek durumda. Yani birisi size bir use case diagramı vermişse bunu okumak yani ne dediğini anlamak durumdasınız.
+
+525
+02:08:31,764 --> 02:08:47,204
+Bir de size bir müşteri bir şeyler anlattığında veya iş analisti bir şeyler anlattığında siz onu dinlerken use case diagramını yazabilecek durumda olmalısınız.
+
+526
+02:08:47,203 --> 02:08:58,063
+veya sizin için daha önemli olan biz sınavda bir soru sorduğumuzda onun use case diagramını ve belgesini yazabilecek durumda olmalısınız.
+
+527
+02:08:58,063 --> 02:09:11,643
+Burada işte bu konudaki kitaplar Larman'ın yazdığı.
+
+528
+02:09:17,652 --> 02:09:35,791
+use case bir hedefi gerçekleştirmek için bu sistemi kullananlar neler yapıyorlar gerçek hayatta? Bunun anlaması.
+
+529
+02:09:35,791 --> 02:09:59,171
+Burada bir klasik bir şey var daha sonra da bizim kullanacağımız işte bir kiralama şirketi video kiralama şirketi biz de başka bir uygulama üzerinde bunu temel olarak göstereceğiz.
+
+530
+02:09:59,172 --> 02:10:19,211
+Öncelikle primary aktörler kimlerdir bu hikayede? Dış elemanlar kimlerdir? Destek aktörleri kimlerdir? Yani bir hikaye anlatıldığında bu işi gerçekleştiren kimdir?
+
+531
+02:10:19,211 --> 02:10:44,211
+Bir önce bir kısa tanımı alınır olayın yani müşteriden dinlerken bu iş nedir? İşte müşteri gelir video kiralamak ister, görevli onun ID'sinin kimliğini girer, her bir videonun ID'sini girer
+
+532
+02:10:44,211 --> 02:10:56,372
+ve bunları sistem çıktı olarak da verecek durumda olur ve bir kiralama raporu bu sistemden isteyebilir.
+
+533
+02:10:57,152 --> 02:11:06,691
+Kimler kiralamış sistem bunu çıktı olarak verebilecek durumda olmalıdır.
+
+534
+02:11:06,692 --> 02:11:10,632
+hangi müşteriler hangi videoları satın aldı gibi raporlar.
+
+535
+02:11:10,632 --> 02:11:26,092
+Yani burada yazılım sistemi nasıl çalışacak, ne alacak bilgi olarak, ne işleyecek, ne verecek sonra bu hikayeden bunları çıkarabilmeniz gerekiyor.
+
+536
+02:11:26,092 --> 02:11:38,532
+ve formal olmayan bir senaryoda spesifik bir sıra vardır.
+
+537
+02:11:38,532 --> 02:11:42,211
+Hangi eylemler sırayla gerçekleşiyor?
+
+538
+02:11:42,211 --> 02:12:04,411
+sizin bir use case'i tamamlayabilmek için bu anlatım olarak verilen paragraftan sırayla gerçekleşen iş adımlarını çıkartmanız ve buradaki aktörler kimlerdir onları çıkartmanız gerekir.
+
+539
+02:12:04,411 --> 02:12:16,491
+bir yüz kezde yol nasıl işliyor? Yani iş adımları nasıl işliyor?
+
+540
+02:12:16,491 --> 02:12:33,491
+Ve bu sistemin hedefi sağlamak için gerçekleştireceği işlemler nelerdir? Bunları belirlemek gerekiyor.
+
+541
+02:12:34,411 --> 02:12:48,411
+yani sadece object oriented olanlarda değil her aşamada use case'leri kullanabiliriz.
+
+542
+02:12:48,411 --> 02:12:57,731
+biliriz ama UML yaklaşımıyla gerçekleştirmeden önce sınıf diagramlarını
+
+543
+02:12:58,239 --> 02:13:18,639
+ve diğer sequence diagramlarını yani hangi aktörler hangi işleri sırasıyla gerçekleştirdi. Bu kullanıcı hikayelerini kullandıktan sonra bir,
+
+544
+02:13:22,739 --> 02:13:33,239
+use case diagramı çizerek daha hedeflerimize daha çabuk ulaşabiliriz.
+
+545
+02:13:35,979 --> 02:13:47,420
+Burada bir gereksinim analizinde yapmamız gereken şey use case diagramlarını çizmek.
+
+546
+02:13:47,420 --> 02:14:12,420
+gereksinim analizinde de sırayla önce bilgi toplarız, sonra bu topladığımız bilgiyi modelleriz, işte use case diagramını çizeriz ama bu diagramı çizdikten sonra
+
+547
+02:14:12,420 --> 02:14:18,059
+farklı bakış açılarına bu diagramı sunarız.
+
+548
+02:14:18,059 --> 02:14:39,420
+Farklı bakış açıları yani müşteri tarafı, müşterinin farklı tarafları, mesela bir sipariş satış sipariş işlemi varsa stokta çalışan, fatura kesen ve müşteri temsilcisi hepsi farklı açılardan bilgi verebilir bize.
+
+549
+02:14:39,420 --> 02:14:44,979
+bunların her birinin verdiği bilginin birbiriyle tutarlı olmasını sağlayabiliriz.
+
+550
+02:14:44,979 --> 02:15:01,939
+Ve bunu sağlamak için de bütün paydaşların fikrini almamız gerekir.
+
+551
+02:15:01,939 --> 02:15:19,939
+bütün use case'ler faydalı mıdır? Daha karmaşık problemleri ilk başta çok karmaşık bütün hepsini hedef olarak alan bir use case çizmememiz gerekiyor.
+
+552
+02:15:19,939 --> 02:15:45,239
+Bütün organizasyonu alan temel işlemleri gösteren bir diagram oluşturmamız gerekiyor ve bu diagramı alt diagramlarla daha ayrıntılı hale getirmemiz gerekiyor.
+
+553
+02:15:45,239 --> 02:15:50,439
+tek bir adım değil yani.
+
+554
+02:15:51,620 --> 02:16:02,239
+Adım adım basitten daha ayrıntıya doğru gider durumda olması gerekiyor.
+
+555
+02:16:04,079 --> 02:16:08,439
+Şeylerin, diagramların, use case diagramların.
+
+556
+02:16:13,587 --> 02:16:30,447
+Dolayısıyla önce bir veri akış diagramlarında olduğu gibi önce bir özet diagram taslak demeyeyim de özet diagram oluşturmamız gerekiyor.
+
+557
+02:16:30,447 --> 02:16:42,287
+Daha sonra bundan daha ayrıntılı diagramlar çıkarmamız gerekiyor.
+
+558
+02:16:43,587 --> 02:16:44,087
+burada
+
+559
+02:16:54,484 --> 02:17:14,744
+şurada işte videoların kiralanması kimler var? Bu bir taslak diagram yapısında. Daha sonra bunu use case'ler neler, aktörler neler bunları belirlememiz gerekiyor.
+
+560
+02:17:14,744 --> 02:17:26,524
+ve ayrıntılı analiz yaptıkça daha alt şeylere geçebiliyoruz.
+
+561
+02:17:26,524 --> 02:17:33,303
+Şimdi burada önümüzdeki hafta daha ayrıntılı göreceğiz.
+
+562
+02:17:34,924 --> 02:17:39,524
+Şu fonksiyonel gereksinimler kavramı.
+
+563
+02:17:40,303 --> 02:17:42,263
+Functional requirements.
+
+564
+02:17:42,783 --> 02:17:44,443
+Fonksiyonel gereksinimler.
+
+565
+02:17:44,743 --> 02:18:02,064
+nedir? Fonksiyonel gereksinimler bu sistemde bizim yazılım hazırlamamızı istenilen sistemde neler yapılıyor? Hangi işlemler yapılıyor? Bunların belirtilmesi.
+
+566
+02:18:02,064 --> 02:18:07,303
+bu yapılan temel işlemlere de fonksiyonel gereksinimler diyoruz.
+
+567
+02:18:07,303 --> 02:18:20,803
+Ve fonksiyonel gereksinimlerde işi kademe kademe nasıl yaptığımızı anlattığımız gereksinimler.
+
+568
+02:18:21,924 --> 02:18:28,303
+Bir de şurada son slide'da...
+
+569
+02:18:36,852 --> 02:18:40,651
+fonksiyonel olmayan gereksinimler var.
+
+570
+02:18:41,651 --> 02:18:47,852
+fonksiyonel olmayan gereksinimlerde de
+
+571
+02:18:51,219 --> 02:18:59,019
+bizim daha genel yaklaşımları söylememiz gerekiyor.
+
+572
+02:19:07,379 --> 02:19:31,579
+teknik olmayan gereksinimler, fonksiyonel gereksinimler, daha teknik kuralları, standartlara uygun hareket etmemizi sağlayan kurallara da non-functional requirementlar, yani kalite ile ilişkili.
+
+573
+02:19:31,579 --> 02:19:51,579
+mesela performansı iyi olacak, geri dönüş hızı daha iyi olacak, güvenliği şu şekilde sağlayacak gibi kavramlar
+
+574
+02:19:51,580 --> 02:20:03,199
+bizim için fonksiyonel olmayan gereksinimler olarak karşımıza çıkıyor.
+
+575
+02:20:11,252 --> 02:20:37,191
+non-functional requirement'lar, fonksiyonel olmayan gereksinimler, gereksinim analizinde hem fonksiyonel gereksinimleri hem de fonksiyonel olmayan gereksinimleri her ikisini de ayrıntılı bir analiz sonucunda ortaya çıkarmamız gerekiyor.
+
+576
+02:20:37,191 --> 02:20:52,971
+Evet önümüzdeki hafta gereksinim analizine başlayacağız. Use case diagramının genel yapısı şu şekilde.
+
+577
+02:20:52,971 --> 02:21:19,291
+İşte use case'in adı nedir? İşte video kiralama, seviye hangi seviyede? Kullanıcı hedefini belirleme seviyesinde, primary aktör kimdir? İşte buradaki görevli, ön koşullar, görevli kendini tanıtmış ve bilgisayarını açmış olmalı,
+
+578
+02:21:19,292 --> 02:21:35,252
+paydaşlar neler ve ilgili kişiler tabii ki görevli ve ne ister bunlar doğru ve hızlı bir giriş sağlamak istiyor.
+
+579
+02:21:35,252 --> 02:21:42,872
+Müşteri videoları hızlı servis edilmesini ve çok fazla uğraştırmamalarını istiyor.
+
+580
+02:21:42,871 --> 02:21:51,391
+muhasebe tarafı kayıtları doğru olarak girilmesini istiyor.
+
+581
+02:21:51,391 --> 02:21:53,751
+Pazarlama tarafı da şunu istiyor.
+
+582
+02:21:54,511 --> 02:22:01,291
+Basit bir firmaysa zaten şu muhasebe ve pazarlama kısmı olmayacak.
+
+583
+02:22:01,911 --> 02:22:06,031
+Sadece kendisi görevli takip edecek.
+
+584
+02:22:06,031 --> 02:22:31,811
+buradaki temel senaryo yani şu işte bizim use case belgemiz. Use case belgesinde use case'in adı primary aktör, ön koşullar nelerdir bunun başlaması için, diğer paydaşlar nelerdir ilgililer ve bunlar ne istiyorlar sistemden
+
+585
+02:22:31,811 --> 02:22:44,351
+ve sırayla gerçekleştirecek işlemleri algoritma düzeyinde verilmesi. Bunlar isteniyor ve bunlar da sırayla yazılıyor.
+
+586
+02:22:44,351 --> 02:23:00,851
+Bu bir ve iki slide bize use case belgesini veriyor. Use case belgesini paralel olarak önce diagramı mı yazacaksınız, belgeyi mi yazacaksınız, karar veriyorsunuz.
+
+587
+02:23:00,851 --> 02:23:06,091
+ama ilk başta basit taslak bir diagramla başlıyorsunuz.
+
+588
+02:23:06,091 --> 02:23:16,251
+Sonra ayrıntılı diagramınızı çizebilirsiniz veya belgenizde iyileştirmeler yapabilirsiniz.
+
+589
+02:23:17,471 --> 02:23:30,511
+Bu da use case hikayeleri anlatımını sağlayan bir yol bizim için.
+
+590
+02:23:37,971 --> 02:23:44,831
+Bunun için de denemeler yapmanız gerekir. Gereksinimleri iyi belirlemek için.
+
+591
+02:23:44,831 --> 02:24:01,211
+Evet, bu hafta bir ön gereksinim analizi teorisine girmeden önce nesneye yönelik yaklaşımla çalışacağımızı bildirdim.
+
+592
+02:24:01,211 --> 02:24:10,152
+use case'lerin kullanıcı hikayelerinin alınması ile başlayacağını belirttim.
+
+593
+02:24:10,152 --> 02:24:15,052
+Ama gereksinim analizinde önce bilgi toplama aşaması var.
+
+594
+02:24:15,172 --> 02:24:29,872
+Önümüzdeki hafta buradan başlayarak gereksinim mühendisliği diye geçen şeyde Presman'ın kitabında ve Summerville'in kitabında olan bölümleri
+
+595
+02:24:29,871 --> 02:24:34,311
+o kitaptan işleyeceğiz. Sorunuz var mı?
+
+596
+02:24:39,796 --> 02:24:48,735
+sorusu olan var mı dersi bitirmeden önce? Projeyle ilişkili soru kaldı mı kafanızda?
+
+597
+02:24:58,420 --> 02:25:00,939
+Evet, iyi haftalar diliyorum o zaman.
+
+598
+02:25:03,920 --> 02:25:06,079
+İyi günler hocam.
+
+599
+02:25:06,459 --> 02:25:07,340
+Hoşçakalın.
+
+600
+02:25:08,619 --> 02:25:09,639
+İyi günler hocam.
+
+601
+02:25:10,159 --> 02:25:11,019
+Teşekkürler.
