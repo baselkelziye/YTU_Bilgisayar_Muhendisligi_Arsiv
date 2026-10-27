@@ -1,0 +1,3095 @@
+1
+00:02:46,963 --> 00:02:48,963
+or color search engine.
+
+2
+00:03:00,020 --> 00:03:05,139
+Günaydın. Şimdi yankı yapmıyor diye emin ediyorum. Az önceki yankı.
+
+3
+00:03:08,788 --> 00:03:11,807
+Sesim geliyor, bir teyit eder misiniz? Süper, tamam.
+
+4
+00:05:05,908 --> 00:05:07,128
+Evet, herkese günaydın.
+
+5
+00:05:10,836 --> 00:05:30,096
+Arkadaşlar bugün işleyeceğimiz konu Association Rules and Sequential Patterns konusu. Chapter 2. Dersin sayfası, dersin textbookunun sayfasına.
+
+6
+00:05:30,096 --> 00:05:47,295
+şimdi sizlere chatten paylaşacağım aynı zamanda dersimizin sayfasında da olacak dersimizin sayfasını sizlere iletecek dinlememizi iletemedim bunu yapacağım
+
+7
+00:05:47,295 --> 00:05:52,215
+öncelikle şunu buradan iletebilirim ona bir bakalım
+
+8
+00:06:03,091 --> 00:06:07,171
+Okey, buradan bunu ileteceğim ama şimdi siz de notunu alabilirsiniz.
+
+9
+00:06:10,291 --> 00:06:18,891
+Burada chapter, bütün textbook'un chapter'larını kitaba bağlı kalarak işlemeye devam edeceğim.
+
+10
+00:06:19,551 --> 00:06:21,512
+Chapter 2'nin slide'larını bulabilirsiniz.
+
+11
+00:06:23,791 --> 00:06:31,211
+Yine kitabın tamamının PDF'ini indirebilirsiniz.
+
+12
+00:06:31,211 --> 00:06:32,751
+kitabın
+
+13
+00:06:40,915 --> 00:06:46,515
+chapter chapter olarak da bulabiliyorsunuz sanırım. Tamamını da PDF olarak bulabiliyorsunuz.
+
+14
+00:06:50,115 --> 00:06:56,235
+Bu böyle. Onun dışında sizinle paylaşacağım diğer bir konu.
+
+15
+00:07:06,067 --> 00:07:08,528
+the key PDF's part of the show we see there.
+
+16
+00:07:15,283 --> 00:07:34,884
+Bugün öncelikle Association Rule Mining ve Sequential Pattern Mining web mining alanında nerelerde kullanılıyor? Bunun application'ları nedir? Bu algoritmaları kullanmak için motivasyonumuz nedir? Bunlardan bahsedeceğim.
+
+17
+00:07:34,884 --> 00:07:43,124
+Ondan sonra Association Rule Mining'de yaygın olarak kullandığımız Apriori algoritmasından bahsedeceğim.
+
+18
+00:07:43,124 --> 00:07:46,164
+Data formatlarından bahsedeceğim
+
+19
+00:07:46,164 --> 00:07:52,723
+Ondan sonra da Association Rule Mining'i
+
+20
+00:07:52,723 --> 00:07:59,563
+Class etiketi olan veriler üzerinden nasıl uyguladığımızdan bir an bahsedeceğim
+
+21
+00:07:59,563 --> 00:08:06,624
+Bugün için vakit kalmasına bağlı olarak da sequential pattern mining konusuna gireceğim
+
+22
+00:08:10,963 --> 00:08:33,323
+Bir diğer göstereceğim şey de Project Proposal format. Biliyorsunuz dersin başında size şey demiştim, derste bir tane term projeniz olacak. Bu zaten derste alacağınız notu üç tane şey etkiliyor. Bir tane vize olacak, bir tane dönem projesi olacak, bir de final olacak.
+
+23
+00:08:33,323 --> 00:08:49,943
+vize ve dönem projesinin katkısı eşit olacak. Dönem içi aktiviteleriniz için oluşacak kümülatik puanda her iki kriterin de katkısı eşit olacak.
+
+24
+00:08:50,943 --> 00:08:58,043
+Dolayısıyla dönem projesi önemli. Dönem projesini bir kişi de iki kişi yapabileceğinizi söylemiştim.
+
+25
+00:08:58,043 --> 00:09:07,563
+Sizden 5. haftayla birlikte bir tane şurada gördüğünüz project proposal formasına uygun bir sayfalık
+
+26
+00:09:07,563 --> 00:09:18,123
+Hangi konuda çalışacaksınız? Ne yapacaksınız? Bunu nasıl değerlendireceksiniz?
+
+27
+00:09:19,123 --> 00:09:24,263
+Bir de bunu hangi zaman, hangi iş planına göre yapacaksınız?
+
+28
+00:09:24,263 --> 00:09:34,923
+Çünkü 5. haftadan sonra geriye kalan 2 aylık zaman zarfında hangi haftalarda ne yapacağınızı bir iş planına bağlı olarak görmek istiyorum
+
+29
+00:09:34,923 --> 00:09:40,803
+Bunu bir sayfalık proje formatı halinde hazırlamanızı istiyorum
+
+30
+00:09:40,803 --> 00:09:52,483
+5. haftayla birlikte herkese, her öğrenci grubuna, her proje grubuna 5'er dakikalık süre vererek
+
+31
+00:09:52,483 --> 00:10:08,043
+projelerinizi anlatmanızı isteyeceğim. Söz alacaksınız sırasıyla. Bu projede ne yapmak istiyorsunuz? Proje önerinizi ekrana yansıtacaksınız ya da bana gönderecekseniz ben yansıtacağım.
+
+32
+00:10:09,403 --> 00:10:21,363
+Teker teker ne yapmak istediğinizi anlatacaksınız. Kiminizin eksikleri olacak, kiminizin tamamıyla projesinin değişmesi gerekecek. Bunların üzerinden gideceğiz arkadaşlar.
+
+33
+00:10:35,892 --> 00:11:01,652
+link varsa atılabilir. Herhalde şey linkini soruyorsunuz. Ben aynı zamanda arkadaşlar chat'e bakıyorum. Chat'te Ömer Burak az önce gösterdiğim sayfanın linkini istemiş. Ömer linki paylaştım chat'ten. Tarık da bonus olacak mı demiş. Bonusdan neyi kastediyorsun Tarık?
+
+34
+00:11:03,652 --> 00:11:04,131
+Tarık?
+
+35
+00:11:07,379 --> 00:11:36,439
+Evet, projede bonus puan olacak. Bu yapacağınız projeyi eğer bir cloud ortamında sanallaştırma teknolojileri yaparak yani normalde projenin gereksinimlerinin dışında sanallaştırma teknolojileri Docker gibi, Docker Swarm gibi teknolojiler kullanarak Amazon AVS yahut da işte
+
+36
+00:11:37,379 --> 00:12:02,100
+Azure, Google Cloud gibi ortamlarda eğer çalıştırırsanız yani kendi lokaldeki geliştirme ortamınızın dışında ölçeklenebilir bir Cloud ortamında sanallaştırma teknolojilerini kullanarak çalışır hale getirir gösterecek olursanız projeyle ilgili bonusunuz olacak.
+
+37
+00:12:03,379 --> 00:12:04,479
+Güzel soru.
+
+38
+00:12:09,652 --> 00:12:11,652
+Evet, tamam
+
+39
+00:12:28,211 --> 00:12:32,211
+We're going to discuss association rule mining and sequential pattern mining.
+
+40
+00:12:33,211 --> 00:12:42,211
+Now we are going to talk about why we are using association rule mining in general and
+
+41
+00:12:43,211 --> 00:12:55,211
+and so what are the motivating cases, applications in industry that motivates us to work on these algorithms.
+
+42
+00:12:58,211 --> 00:13:04,052
+Okay, so I'll start with basic concepts of association rule mining
+
+43
+00:13:07,092 --> 00:13:16,052
+First of all associations and finding the associations highly important especially in retail markets
+
+44
+00:13:17,892 --> 00:13:27,252
+We know this as we go to any supermarket that's near us it could be Emigros or Carrefour or if we
+
+45
+00:13:28,211 --> 00:13:50,232
+do shopping online if we go Hipsyborda or Enombir, any e-commerce websites in which we buy products, we see that there are some items put together being sold at a sale price.
+
+46
+00:13:50,231 --> 00:14:19,231
+okay so the retail market companies they bring several items together and they put a sale on that package and they try to sell us. Now how do you think that they come up that they should put together certain items together and sell them together okay.
+
+47
+00:14:20,231 --> 00:14:28,191
+Now, in marketing, what do they call this kind of selling activity is cross-sell
+
+48
+00:14:28,191 --> 00:14:37,251
+Now, you pick an item that is popular and that is being sold to many customers
+
+49
+00:14:37,251 --> 00:14:41,211
+and you pick another item that's not that popular
+
+50
+00:14:41,211 --> 00:14:46,851
+You put them together, you package them together and you try to sell them
+
+51
+00:14:46,851 --> 00:15:02,812
+okay and the first item which is popular people want to have that particular popular item okay they don't care less whether or not the second item is in that package okay now that's what we call cross-sell.
+
+52
+00:15:03,831 --> 00:15:07,432
+Now there is also another term called upsell.
+
+53
+00:15:08,751 --> 00:15:09,171
+Okay.
+
+54
+00:15:11,331 --> 00:15:15,411
+In particular in service industry, which means that so.
+
+55
+00:15:16,851 --> 00:15:46,831
+if you buy service instead of buying a product you buy service he's mid-sector okay now you may subscribe to certain service okay and that service could be at a certain level okay it could be a regular membership for example regular membership to use certain service from
+
+56
+00:15:46,831 --> 00:16:00,191
+certain company. Now, sometimes companies who buy service to their customers, they come up with new
+
+57
+00:16:00,191 --> 00:16:12,171
+marketing ideas and they put a sell to a higher membership of their service and they try to sell
+
+58
+00:16:12,171 --> 00:16:19,291
+customers to the upgraded version of the service that the customer is using.
+
+59
+00:16:19,291 --> 00:16:20,131
+Okay.
+
+60
+00:16:20,659 --> 00:16:36,219
+So therefore, it's highly important that how many customers are using, so if you have a bunch of different kinds of services with different membership levels, okay.
+
+61
+00:16:36,219 --> 00:17:06,200
+so in that case you would like to find out so what are the membership types for certain types of services are popular amongst the customers okay and if you could find out that then you can upgrade those to a higher level membership and then you can make a sale on that membership and you can try
+
+62
+00:17:06,199 --> 00:17:19,199
+you can try to sell a better, better, you can try to sell the higher level membership at a decent price.
+
+63
+00:17:20,019 --> 00:17:31,099
+Okay. Now, in marketing, this kind of activity is called upsell. Okay. So therefore, we have cross-sell and upsell in marketing.
+
+64
+00:17:31,099 --> 00:17:40,559
+and in essential what the marketing people are trying to do, they are trying to increase the profit of the company.
+
+65
+00:17:40,559 --> 00:17:55,319
+In order to do this, they are expecting the IT people to find popular and frequently sold items to the customers.
+
+66
+00:17:55,319 --> 00:18:11,499
+Okay, so what are the popular items that are being sold together. If they can find that information, and they can come up with these cross-sell and up-sell marketing strategies.
+
+67
+00:18:11,499 --> 00:18:32,479
+So therefore, what computer science and data science is trying to do, so we are working on different kinds of algorithms that can analyze the data and they can find the popular items that are being sold together.
+
+68
+00:18:33,919 --> 00:18:34,639
+Okay.
+
+69
+00:18:37,279 --> 00:18:38,699
+Let me see.
+
+70
+00:18:47,220 --> 00:18:57,140
+okay now the first kind of this algorithm uh the the the first algorithm in this category was
+
+71
+00:18:57,140 --> 00:19:08,659
+proposed in 1993 by a researcher named agrava and as he was introducing this algorithm so he also
+
+72
+00:19:08,659 --> 00:19:20,339
+named the problem as market basket analysis problem okay and the idea behind this problem
+
+73
+00:19:20,339 --> 00:19:28,179
+is that as he was introducing this algorithm he was stating that customers who
+
+74
+00:19:28,179 --> 00:19:40,199
+so the items which are bought by customers are related so which means that if many customers
+
+75
+00:19:40,199 --> 00:19:50,739
+are buying certain particular items together then those items are related okay and if you find
+
+76
+00:19:50,740 --> 00:20:00,900
+items that are related, then you would like to put those items in close proximity in the
+
+77
+00:20:00,900 --> 00:20:09,740
+retail markets. And you may want to do a cross-sell or up-sell on those kinds of products.
+
+78
+00:20:09,739 --> 00:20:31,539
+Our job is to work on kinds of algorithms that would be popular by customers, products that are purchased by many different customers.
+
+79
+00:20:31,539 --> 00:20:40,959
+and these kind of kinds of algorithms uh the the resulting output of these kind of algorithms is
+
+80
+00:20:40,959 --> 00:20:49,940
+um as you see in the slide at the end of the slide so there is a rule okay this rule tells
+
+81
+00:20:49,940 --> 00:20:57,720
+you that so if you buy bread uh you know you you are likely to buy milk as well okay and we are
+
+82
+00:20:57,720 --> 00:21:06,199
+after finding rules like this okay and if we can find rules like this then uh so the marketing
+
+83
+00:21:06,199 --> 00:21:15,880
+people can use this as a starting point for cross-sell marketing activity okay and these
+
+84
+00:21:15,880 --> 00:21:25,880
+algorithms obviously when they so when they find these rules okay they also have some metrics which
+
+85
+00:21:25,880 --> 00:21:35,480
+tells us the quality of this rule okay for example here i have two metrics one is support the other
+
+86
+00:21:35,480 --> 00:21:47,240
+one is confidence so what support is that so so you have a number of transactions right among the
+
+87
+00:21:47,240 --> 00:21:55,080
+number of transactions to total number of transactions how many of them have both breath
+
+88
+00:21:55,080 --> 00:21:56,839
+and milk products together.
+
+89
+00:21:58,639 --> 00:22:04,839
+Okay, so which means that 5% of the total number of transactions
+
+90
+00:22:05,240 --> 00:22:09,119
+have both bread and milk in it.
+
+91
+00:22:10,359 --> 00:22:15,520
+In other words, 5% of total transactions is supporting this rule.
+
+92
+00:22:15,839 --> 00:22:18,399
+Okay, that's why it has a name of support.
+
+93
+00:22:18,399 --> 00:22:24,759
+Okay, 5% of whole transactions are supporting this particular rule.
+
+94
+00:22:25,080 --> 00:22:32,320
+Okay, now so what is the confidence? The confidence is how can I trust this rule? Okay.
+
+95
+00:22:33,960 --> 00:22:38,919
+And in calculating the confidence this time the way to calculate is that
+
+96
+00:22:38,919 --> 00:22:46,699
+among the transaction that includes bread, how many of them includes also milk?
+
+97
+00:22:47,220 --> 00:23:14,779
+Okay. So, so I'll repeat this again. So you have transactions that includes only bread. Okay. So among the transactions that include bread, how many of them also include milk? Okay. So this means that basically, yeah, so you are in, you are using this metric in order to talk about
+
+98
+00:23:14,779 --> 00:23:39,260
+confidence, how can I, or trust to this rule. Okay. So as we are going to learn these algorithms, we are going to learn that these algorithms are using these support and confidence values and in order to generate these association rules.
+
+99
+00:23:39,259 --> 00:23:57,479
+Okay. Now, before we start with the algorithm, so we need to learn the notation. Here you see the notation for market basket analysis problem.
+
+100
+00:24:01,172 --> 00:24:08,311
+you see that we use capital I in order to represent all the items in the transaction database.
+
+101
+00:24:10,531 --> 00:24:16,451
+And so you see we have ISUB1, ISUB2, all the way to IM.
+
+102
+00:24:16,451 --> 00:24:21,371
+So these are the items that are available in the transaction store.
+
+103
+00:24:21,852 --> 00:24:27,551
+So if you think of a retail store, physical retail store such as Migros,
+
+104
+00:24:27,551 --> 00:24:35,071
+all the items that are available in that particular store would be here, okay, in capital I.
+
+105
+00:24:36,852 --> 00:24:49,491
+And transaction, transaction is the whole, so we use capital T in order to indicate the
+
+106
+00:24:49,491 --> 00:24:58,672
+whole transactions that are happening in a retail store. For example, if you go to a Migros
+
+107
+00:24:58,672 --> 00:25:07,252
+or Carrefour, you can buy certain products and when you come to cashier, what you're going to do,
+
+108
+00:25:07,252 --> 00:25:11,532
+you are going to pay for those items and you are going to purchase them.
+
+109
+00:25:11,532 --> 00:25:22,231
+and in return you are getting a receipt and in receipt you will see all a list of all the items
+
+110
+00:25:22,231 --> 00:25:29,472
+that you purchased in that transaction okay so which means that when you buy something when you
+
+111
+00:25:29,472 --> 00:25:41,172
+pay something okay all the products that are being purchased in that activity is so it's called
+
+112
+00:25:41,172 --> 00:25:50,271
+transaction. So here you see that if you go to Migros three times a day, for example, this means
+
+113
+00:25:50,271 --> 00:25:58,511
+that you will create three different transactions. Okay. Every time that you pay, so that becomes
+
+114
+00:25:58,511 --> 00:26:06,932
+transactions. You see that in a transaction database, I may have numbers of transactions
+
+115
+00:26:06,931 --> 00:26:13,951
+and each transaction has certain number of items in it okay
+
+116
+00:26:13,951 --> 00:26:23,991
+you see that here I have n different transactions as I told you in each transaction I have
+
+117
+00:26:23,991 --> 00:26:28,251
+different number of items in it okay
+
+118
+00:26:28,252 --> 00:26:40,112
+uh an item as i said it's an item in your basket a capital i indicates to all items
+
+119
+00:26:40,112 --> 00:26:46,311
+being sold in that store okay and transaction transaction indicates
+
+120
+00:26:46,311 --> 00:26:51,332
+the items that are being purchased in a basket okay
+
+121
+00:26:51,332 --> 00:27:02,212
+and each transaction have a transaction id and all the transactions
+
+122
+00:27:02,212 --> 00:27:14,352
+then you put them together and it becomes a transactional data set okay usually retail
+
+123
+00:27:14,351 --> 00:27:24,051
+stores, it could be an online retail store such as Hepsi Verda or a physical retail store such as
+
+124
+00:27:24,051 --> 00:27:31,091
+Migros or Carrefour. They are keeping their transaction data sets on a daily basis.
+
+125
+00:27:31,651 --> 00:27:37,111
+And obviously, all the transactions that are happening on a daily basis,
+
+126
+00:27:37,112 --> 00:27:42,572
+they are being sent to the central location
+
+127
+00:27:42,572 --> 00:27:46,472
+in which all the transactions
+
+128
+00:27:46,472 --> 00:27:49,532
+are being processed altogether.
+
+129
+00:27:51,796 --> 00:28:10,075
+And as the number of transactions increase, obviously the number of entries in the datasets gets also increased. And then, so this in turn becomes a large scale data.
+
+130
+00:28:15,220 --> 00:28:21,039
+Okay, let's see if I have any questions from you.
+
+131
+00:28:25,107 --> 00:28:54,627
+okay if you have any questions just turn on your computer because I may miss the chat box as I am giving you the lecture just turn on your computer and ask questions that you have okay I'll stop and answer your question
+
+132
+00:28:54,644 --> 00:28:55,063
+Okay.
+
+133
+00:28:58,771 --> 00:29:06,111
+Now, initially, this problem came from the retail stores.
+
+134
+00:29:06,411 --> 00:29:28,571
+So when the problem was firstly introduced in 1993, there were physical retail stores and people were wondering how they can process the transaction data sets in physical retail stores so that they could come up with popular products that are being sold together.
+
+135
+00:29:28,771 --> 00:29:54,291
+And later when the web was commonly being used, so people saw that the e-commerce websites, the online retail stores became a huge hit and people started using online e-commerce websites.
+
+136
+00:29:54,292 --> 00:30:12,751
+Okay. Now, and then, so all the algorithms that have been developed up to that point, they started being used on top of the transactional data for e-commerce websites.
+
+137
+00:30:12,751 --> 00:30:35,491
+And at some point, the researchers also realized that they could make an analogy between market basket data analysis and also web data mining, which is analyzing the documents that are available on the web.
+
+138
+00:30:35,492 --> 00:30:59,471
+And this is a problem that you see, how we can analyze a set of documents, how we can find out what are the popular topics or what are the popular keywords that are being mentioned in a set of documents.
+
+139
+00:30:59,471 --> 00:31:16,591
+As you see, you see a set of documents. So in this toy example, we have only seven documents. And the question is, can you find the popular keywords that are being mentioned in majority of these documents?
+
+140
+00:31:16,591 --> 00:31:25,211
+okay you see the problem is the same in market data market basket data analysis problem
+
+141
+00:31:25,211 --> 00:31:32,831
+so here we had transactions and here we had items and we were trying to find the items
+
+142
+00:31:32,831 --> 00:31:38,911
+that are popular in many of the transactions okay but this time we are trying to find the
+
+143
+00:31:38,911 --> 00:31:45,251
+keywords that are being mentioned in many of the documents so therefore the same algorithms
+
+144
+00:31:45,251 --> 00:31:51,331
+they started to be used in this problem as well.
+
+145
+00:31:51,331 --> 00:31:53,951
+So in this problem, as you see,
+
+146
+00:31:55,331 --> 00:32:05,251
+so you can look at the popularly mentioned items or keywords
+
+147
+00:32:05,251 --> 00:32:07,411
+in many of the documents, and then you can say,
+
+148
+00:32:07,571 --> 00:32:11,551
+okay, this document set is particularly talking
+
+149
+00:32:11,551 --> 00:32:15,132
+or focusing on these keywords.
+
+150
+00:32:15,251 --> 00:32:15,871
+Okay.
+
+151
+00:32:22,228 --> 00:32:37,067
+Now, as I said in the beginning, algorithms that are doing association rule mining, at the end of it, what they're trying to reach is that they're producing rules.
+
+152
+00:32:38,947 --> 00:32:43,027
+And rules, when I say rules, it looks like this.
+
+153
+00:32:44,248 --> 00:32:51,648
+So on the left side of the rule, so we have capital X. On the right side of the rule, we have capital Y.
+
+154
+00:32:52,228 --> 00:33:01,787
+Now X indicates, both capital X and capital Y indicates the set of items.
+
+155
+00:33:03,228 --> 00:33:17,387
+Okay, which means that capital X is a set of items put together and capital Y is set of items put together, which means they are not, they could be only one item as well.
+
+156
+00:33:17,387 --> 00:33:25,647
+but so we should be thinking that it could also have multiple items.
+
+157
+00:33:26,088 --> 00:33:31,467
+As you see in this particular example, capital X has multiple items in it.
+
+158
+00:33:31,607 --> 00:33:37,628
+So therefore, when we call this capital X and capital Y, we call them as item set.
+
+159
+00:33:38,507 --> 00:33:38,588
+Okay.
+
+160
+00:33:39,147 --> 00:33:44,628
+As you see, a transaction T contains capital X, which is a set of items.
+
+161
+00:33:44,628 --> 00:33:49,668
+in other words x's item set okay
+
+162
+00:33:52,228 --> 00:34:00,948
+now um by running the association rule mining on top of the transactional data set we are going to
+
+163
+00:34:00,948 --> 00:34:10,147
+find rules like this okay and both capital x and capital y is a subset of capital i which
+
+164
+00:34:10,147 --> 00:34:18,948
+which indicates the total items in our database okay total items which are being sold in a
+
+165
+00:34:18,948 --> 00:34:29,267
+supermarket okay and both capital x and capital y they don't include the same items so their
+
+166
+00:34:29,268 --> 00:34:40,468
+intersection is empty okay so therefore so uh what we are going to find uh by running the association
+
+167
+00:34:40,468 --> 00:34:48,308
+rule mining algorithms we are going to find rules like that okay and both x and y are item sets
+
+168
+00:34:48,308 --> 00:34:53,108
+their intersection is empty set
+
+169
+00:34:53,108 --> 00:34:58,028
+and both X and Y are subset of capital I
+
+170
+00:34:58,028 --> 00:35:01,088
+so which capital I remember
+
+171
+00:35:01,088 --> 00:35:03,228
+includes all the item sets
+
+172
+00:35:03,228 --> 00:35:07,847
+in a physical store.
+
+173
+00:35:09,448 --> 00:35:09,507
+Okay.
+
+174
+00:35:10,988 --> 00:35:12,608
+And as for the notation
+
+175
+00:35:12,608 --> 00:35:15,808
+we are when we call an item set
+
+176
+00:35:15,808 --> 00:35:22,867
+we are calling with the numbers of items that are included in that item set.
+
+177
+00:35:23,207 --> 00:35:27,528
+For example, here I have this item set has three members,
+
+178
+00:35:27,787 --> 00:35:31,528
+so therefore I'm going to call this as three item sets.
+
+179
+00:35:32,108 --> 00:35:35,948
+If I had only one item here, I would call one item set.
+
+180
+00:35:43,891 --> 00:35:59,431
+So earlier in the slides, I told you that when we are talking about rules, we are using two different metrics, one support, the other one confidence in order to talk about the strength of a rule.
+
+181
+00:35:59,431 --> 00:36:22,471
+Okay. Now, support, as I was telling you, is that the number of items in, sorry, the number of transactions that include both the items in X and Y divided by total number of transactions.
+
+182
+00:36:22,471 --> 00:36:31,631
+okay in other words the percentage of the transactions which includes both items in
+
+183
+00:36:31,631 --> 00:36:39,691
+capital x and capital y okay so that's the support how many of the transactions
+
+184
+00:36:39,691 --> 00:36:46,831
+what percentage of the transactions are supporting this particular rule so that's what that's how
+
+185
+00:36:46,831 --> 00:36:48,951
+you can remember
+
+186
+00:36:48,951 --> 00:36:53,231
+what this rule is doing.
+
+187
+00:36:55,151 --> 00:36:57,891
+The confidence is the other metric.
+
+188
+00:36:59,191 --> 00:37:01,711
+Now the confidence tells you that
+
+189
+00:37:01,711 --> 00:37:04,131
+how can you trust this rule,
+
+190
+00:37:04,131 --> 00:37:07,191
+which means that the number of transactions
+
+191
+00:37:07,191 --> 00:37:13,351
+that includes X also includes Y.
+
+192
+00:37:13,351 --> 00:37:22,652
+Okay, so in other words, first you need to count the number of transactions that includes X.
+
+193
+00:37:24,031 --> 00:37:31,451
+Okay, then amongst the transactions that includes X, how many of them includes Y?
+
+194
+00:37:31,451 --> 00:37:51,472
+Okay, so, and you can divide, you can divide the number of interactions, the number of transactions that includes both X and Y to the number of transactions that includes only X.
+
+195
+00:37:51,591 --> 00:37:55,071
+That would give you the confidence of this rule.
+
+196
+00:37:55,911 --> 00:37:56,291
+Okay.
+
+197
+00:37:59,731 --> 00:38:27,731
+Now here is the, I just told you verbally, now you can see it in these two equations, okay? If you have a rule, so remember the rule that we were talking about was like this, just to remind you, okay, this was our rule.
+
+198
+00:38:39,795 --> 00:39:07,195
+Okay, so this was our rule and if you wanted to calculate the support and confidence values, okay, for the support value, so first you need to count the number of transactions that includes both items in X and items in Y, okay,
+
+199
+00:39:07,195 --> 00:39:15,615
+transactions that includes both x and y to total number of transactions.
+
+200
+00:39:16,935 --> 00:39:17,016
+Okay.
+
+201
+00:39:18,575 --> 00:39:25,255
+Hocam şu experience oranında bu toplam değil de kesişim olması gerekmiyor mu?
+
+202
+00:39:27,755 --> 00:39:33,355
+Değil. Hem x'i hem y'yi içer misini istiyoruz.
+
+203
+00:39:33,355 --> 00:39:39,255
+Yani biz zaten kesişiminin olmayacağını demiştik ya, kesişimi empty set demiştik
+
+204
+00:39:39,255 --> 00:39:40,195
+Evet hocam
+
+205
+00:39:40,195 --> 00:39:52,535
+Yani daha baştan hani kuralı söylerken dedik ki hani X X X birden fazla elemandan oluşabilir, Y birden fazla oluşabilir ama bunların aynı şeyleri içermeyecek dedik
+
+206
+00:39:52,535 --> 00:40:05,175
+Ama dedik bu X'in içerdikleri de Y'nin içerdikleri de totaldeki bütün itemleri içeren item setten onların subset'i olacak dedik
+
+207
+00:40:05,175 --> 00:40:10,376
+Ondan sonra dedik ki tamam öyle bir kural bulduğumuzu söyleyelim
+
+208
+00:40:10,376 --> 00:40:16,595
+Burada diyelim ki iki tane var burada üç tane var ya da burada dört tane var şurada bir tane var
+
+209
+00:40:16,595 --> 00:40:18,315
+Böyle bir kural bulduğumuzu düşünelim
+
+210
+00:40:18,315 --> 00:40:43,455
+Sonra soruyoruz soruyor. Bu bulduğumuz kuralın support değeri nedir? O durumda bu ikisindeki totaldeki hem bunda olan hem bunda olan itemların hepsini içeren transactionları bir bulalım. O da X, Union, Y. Bunların sayısını buluyoruz. Denominator'da aşağıdaysa total transaction sayısı.
+
+211
+00:40:45,595 --> 00:40:46,455
+Tamam?
+
+212
+00:40:46,915 --> 00:40:47,615
+Tamam hocam.
+
+213
+00:40:48,316 --> 00:40:59,075
+Confidence states, arkadaşlar, hani öncelikle bütün transaction'lara bakıyoruz, bütün transaction'lar içerisinden
+
+214
+00:40:59,075 --> 00:41:07,056
+how many of them includes items in X, how many of them includes the capital X?
+
+215
+00:41:08,276 --> 00:41:10,056
+First, we are going to find that.
+
+216
+00:41:10,055 --> 00:41:22,055
+and then in the nominator section we are going to find how many of the transactions or includes both X and Y together.
+
+217
+00:41:22,055 --> 00:41:36,055
+Okay, so we are going to then divide the total number of transactions that includes X and Y together to a number of transactions that only include X that's indicates the confidence.
+
+218
+00:41:36,055 --> 00:41:38,055
+Okay.
+
+219
+00:41:41,907 --> 00:41:56,907
+Now the goal in association rule mining algorithms is to find the rules that would satisfy both minimum support and minimum confidence. Okay. Now any association rule mining algorithm
+
+220
+00:41:56,907 --> 00:42:11,907
+that you work, so it will ask you to these the values of these two metrics, which is minimum support and minimum confidence values. Okay.
+
+221
+00:42:11,907 --> 00:42:28,907
+and as these association rule mining algorithms, the quality of these algorithms is defined by as this.
+
+222
+00:42:28,907 --> 00:42:37,007
+First of all, these algorithms are trying to find all possible rules that may be available in the data,
+
+223
+00:42:37,007 --> 00:42:45,607
+supporting, where the support and confidence values above minimum support and minimum confidence
+
+224
+00:42:45,607 --> 00:42:53,488
+and obviously there is no target or there is no label on the right hand side which is
+
+225
+00:42:53,488 --> 00:43:03,647
+both hand side of the rules both here and here we have items, okay, no label or
+
+226
+00:43:03,647 --> 00:43:07,987
+no target. It's just the items.
+
+227
+00:43:12,148 --> 00:43:19,187
+Okay, take a look at this example. In this particular example, we have five different transactions.
+
+228
+00:43:20,627 --> 00:43:24,207
+And in each transaction, I have different items bought.
+
+229
+00:43:25,347 --> 00:43:34,307
+Okay. And here I am given a minimum support value 50% and minimum confidence value 50%.
+
+230
+00:43:34,307 --> 00:43:44,307
+okay now here what I'm what I'm being asked is that can you produce association rules from the status set okay
+
+231
+00:43:48,052 --> 00:43:52,552
+Now, as you see, the first thing that I do, I'm starting from the single elements.
+
+232
+00:43:53,171 --> 00:43:59,651
+OK, I'm going to write the counts of the single elements that are being bought in many of the transactions.
+
+233
+00:44:00,651 --> 00:44:04,232
+As you see, A includes in three different transactions.
+
+234
+00:44:04,892 --> 00:44:10,711
+OK, three divided by five is 60, which is above 50 percent.
+
+235
+00:44:10,711 --> 00:44:11,972
+So I'm going to write it.
+
+236
+00:44:12,831 --> 00:44:17,892
+B is being you can see that B is available in three of them.
+
+237
+00:44:18,052 --> 00:44:22,092
+So therefore, 3 over 5 is above 50%.
+
+238
+00:44:22,092 --> 00:44:24,132
+So I'm writing this here.
+
+239
+00:44:25,031 --> 00:44:27,812
+D, again, is available in four of them.
+
+240
+00:44:28,211 --> 00:44:30,871
+So it's above minimum support value.
+
+241
+00:44:31,191 --> 00:44:32,311
+That therefore is here.
+
+242
+00:44:33,011 --> 00:44:36,312
+Similarly, E is also the same.
+
+243
+00:44:36,471 --> 00:44:38,151
+It's available in transactions.
+
+244
+00:44:38,572 --> 00:44:40,312
+Therefore, I'm going to write it here.
+
+245
+00:44:40,671 --> 00:44:46,291
+As you see, all the single item sets, okay,
+
+246
+00:44:46,291 --> 00:44:50,071
+item sets that only have one item,
+
+247
+00:44:50,931 --> 00:44:54,111
+which are above minimum support value,
+
+248
+00:44:54,251 --> 00:44:55,011
+are listed here.
+
+249
+00:44:56,851 --> 00:44:57,092
+Okay.
+
+250
+00:44:57,371 --> 00:45:03,052
+Then I'm going to go to the item sets
+
+251
+00:45:03,052 --> 00:45:05,611
+that includes two items.
+
+252
+00:45:06,311 --> 00:45:06,651
+Okay.
+
+253
+00:45:06,651 --> 00:45:08,651
+Now this time, as you see,
+
+254
+00:45:09,912 --> 00:45:15,772
+AD is available in three different transactions.
+
+255
+00:45:16,291 --> 00:45:21,131
+So therefore, 3 over 5 is above 50%.
+
+256
+00:45:21,131 --> 00:45:23,991
+Okay, therefore, I'm going to list it here.
+
+257
+00:45:24,592 --> 00:45:33,291
+Okay, now, here are, so I may continue, but I'm going to stop here.
+
+258
+00:45:33,632 --> 00:45:41,272
+Okay, so these are the frequent patterns that I find in this data set.
+
+259
+00:45:41,272 --> 00:45:48,172
+okay now now starting from this i'm i i'm going to write the association rules
+
+260
+00:45:48,172 --> 00:45:58,292
+now as you see if i have only one item obviously uh there is nothing that i can do because
+
+261
+00:45:58,292 --> 00:46:05,531
+any rule has two sides one on the left and one on the right so therefore i can only
+
+262
+00:46:05,531 --> 00:46:14,772
+write rules for the item sets that includes items more than two. So therefore I have only one
+
+263
+00:46:14,772 --> 00:46:24,391
+item set, therefore only I have two item sets here, only one two item sets,
+
+264
+00:46:24,632 --> 00:46:29,632
+which includes two items. So therefore I'm going to write my rules for this one.
+
+265
+00:46:30,471 --> 00:46:33,531
+So there may be two possibilities for the rules.
+
+266
+00:46:34,232 --> 00:46:37,652
+A on the left-hand side, D on the right-hand side.
+
+267
+00:46:37,751 --> 00:46:41,831
+The other possibility, D on the left-hand side, A on the right-hand side.
+
+268
+00:46:42,132 --> 00:46:44,072
+So let's consider the first one.
+
+269
+00:46:45,031 --> 00:46:50,372
+So I know that the support value for both rules are the same.
+
+270
+00:46:50,831 --> 00:46:51,171
+Why?
+
+271
+00:46:51,171 --> 00:47:04,272
+Because support says that the number of transactions that includes both A and D divided by the total number of transactions.
+
+272
+00:47:05,831 --> 00:47:08,631
+Now, this is the same for both of them.
+
+273
+00:47:08,751 --> 00:47:12,391
+So, therefore, it's 60% for both rules, the support value.
+
+274
+00:47:13,052 --> 00:47:15,851
+But the confidence values differ.
+
+275
+00:47:16,351 --> 00:47:17,251
+How do they differ?
+
+276
+00:47:17,851 --> 00:47:19,931
+So, let's look at the first one.
+
+277
+00:47:19,931 --> 00:47:28,791
+now the number of transactions that includes a how many of them as you see i have three
+
+278
+00:47:28,791 --> 00:47:36,951
+transactions that includes f so that goes to denominator okay now the number of transactions
+
+279
+00:47:36,951 --> 00:47:40,791
+that includes both a and d
+
+280
+00:47:40,791 --> 00:48:10,772
+Thank you.
+
+281
+00:47:41,235 --> 00:48:03,336
+How many of them available? 1, 2, 3. So 3 of them. So 3 divided 3. So you see that confidence for this rule is 100%. Now let's take a look at this one. Now what are the number of transactions that includes D? As you see, I have 4 of them.
+
+282
+00:48:03,336 --> 00:48:29,416
+So denominator will be four. And so how many of those have both DNA, as you see DNA are available in three of them. So therefore three over four, 75%. Okay. That's the confidence of this rule. That's how, how can I, how much I can trust to this rule or, okay.
+
+283
+00:48:29,416 --> 00:48:52,435
+So as you see, I am first starting from the rules or item sets that includes more than one item. For each of them, I am writing all the possible rules. After I write all possible rules, then I'm calculating their support values.
+
+284
+00:48:52,435 --> 00:49:11,555
+Okay, and since as a confidence value, since the confidence values are above the minimum confidence value here. Okay, I can use this as the resulting rule set. Okay, now this is how I approach to the problem.
+
+285
+00:49:11,555 --> 00:49:21,075
+so you will see that the way that I approach the problem is the same approach that a priori algorithm is using.
+
+286
+00:49:21,255 --> 00:49:34,075
+Now here obviously we had a toy example which has a very small number of transactions and very small number of items in it.
+
+287
+00:49:34,075 --> 00:49:44,895
+but usually in transactions, data sets, we have millions of transactions and also thousands of products in it.
+
+288
+00:49:44,895 --> 00:50:03,075
+If it was a case such as Amazon or any other similar big e-commerce websites, we have billions of transactions
+
+289
+00:50:03,075 --> 00:50:24,735
+and we have millions of products. So therefore, so we need algorithms that can scale to high number of transactions and also we need algorithms whose accuracy is high enough so that we can find rules that are available in the transaction dataset.
+
+290
+00:50:24,735 --> 00:50:26,096
+Okay
+
+291
+00:50:26,096 --> 00:50:36,116
+Before I move forward let's see if you guys have any questions
+
+292
+00:50:36,116 --> 00:50:44,795
+Hocam benim geçenki slide'dan bir sorum vardı da şu support'un %60 olma kısmını anlayamadım
+
+293
+00:50:44,795 --> 00:50:50,676
+Hani birleşim diyoruz X ve Y'nin ama 5 tane mesela şeyimiz var
+
+294
+00:50:50,676 --> 00:50:55,836
+%80 çıkması gerekiyor diye düşünüyorum ama niye? 60 çıkıyor orayı anlayamadım da.
+
+295
+00:50:56,655 --> 00:51:11,235
+Şimdi ne demiştik? Hem kuralın hem sol ve sağ tarafındaki elemanların union'ının totaldeki transaction sayısına oranı dedik.
+
+296
+00:51:11,235 --> 00:51:38,575
+yani mesela A varsa D de olacaktır kuralına bakıyoruz ya bu kuralda sol tarafta A elemanı var sağ tarafta D elemanı var. Bu durumda şunu düşünüyoruz. Her iki tarafta da olan elemanları içeren transaction sayısını bir bulalım. Kaç tane? Üç tane. Totaldeki transaction sayısı nedir? Beş tane. Üç bölü beş.
+
+297
+00:51:40,947 --> 00:51:50,007
+Ama şurada birleşim yazmışız ya ben o yüzden işte şey sanmıştım hani D'nin tek olduklarını da alacağız diye düşünmüştüm ondan tamamdır hocam anlatım.
+
+298
+00:51:50,047 --> 00:51:55,387
+Yani hani birleşimden kısıt hani her ikisinin de olduğunu söylüyoruz.
+
+299
+00:51:55,747 --> 00:51:57,487
+Tamam tamamdır hocam anlatım.
+
+300
+00:52:03,827 --> 00:52:27,008
+So here's, there is another example. Again, I have seven different transactions in this particular example. And in this transaction data, and as you see, I found the frequent item sets.
+
+301
+00:52:27,008 --> 00:52:33,768
+And this particular frequent item set, as you see, the largest frequent item set.
+
+302
+00:52:35,268 --> 00:52:50,607
+Now, you can say that the subset of this frequent item set, that's also frequent, which means that this item set has three items in it.
+
+303
+00:52:50,607 --> 00:52:56,427
+what are the subsets of this chicken, chicken clothes, or clothes milk?
+
+304
+00:52:57,008 --> 00:53:00,707
+These are the subsets of this frequent item sets.
+
+305
+00:53:01,307 --> 00:53:04,107
+And you can say that, okay, those are also frequent.
+
+306
+00:53:05,008 --> 00:53:12,048
+But here in this example, I'm only interested in the largest possible frequent item sets.
+
+307
+00:53:13,627 --> 00:53:20,167
+Somehow, I have an algorithm, and I run this algorithm on top of this data set,
+
+308
+00:53:20,167 --> 00:53:27,467
+and this algorithm produced the largest frequent item sets that's possible on this transaction.
+
+309
+00:53:28,467 --> 00:53:36,167
+Algoritma bana içerisinde maximum elemanı olan frequent item seti bulmuş, getirmiş.
+
+310
+00:53:37,188 --> 00:53:40,327
+Benim şimdi bundan sonra yapacaklarım da bunun üzerinde.
+
+311
+00:53:40,627 --> 00:53:43,227
+Largest possible frequent item set.
+
+312
+00:53:43,228 --> 00:53:51,908
+now why is it this frequent item set why do i call frequent items that the reason is that
+
+313
+00:53:51,908 --> 00:53:59,247
+now the support value for this frequent item set is above the minimum support value which is given
+
+314
+00:53:59,247 --> 00:54:10,247
+in the problem okay three of the transactions here includes uh this one chicken close milk
+
+315
+00:54:10,247 --> 00:54:19,587
+this one okay and this one three of the transactions out of seven transactions
+
+316
+00:54:19,587 --> 00:54:30,867
+includes this particular items in it okay now once the algorithm gives me the frequent item
+
+317
+00:54:30,867 --> 00:54:38,807
+says then I can extract association rules now when I extract association rules I'm supposed
+
+318
+00:54:38,807 --> 00:54:49,847
+to write first all possible association rules that I can extract. So put the clothes on the
+
+319
+00:54:49,847 --> 00:54:55,188
+left-hand side, put the rest of them to the right, and put milk here, put the rest of them on the
+
+320
+00:54:55,188 --> 00:55:00,167
+right-hand side. Put chicken here, put the rest of them on the right-hand side. Then go to the
+
+321
+00:55:00,167 --> 00:55:06,488
+two items, okay? Put clothes, chicken on the left-hand side, the rest of them to the right-hand
+
+322
+00:55:06,487 --> 00:55:14,987
+side. Okay, this way I can write all possible rules that I can extract from this. Then I need to
+
+323
+00:55:14,987 --> 00:55:22,707
+start calculating the confidence values, okay, and making sure that the confidence value of the
+
+324
+00:55:22,707 --> 00:55:28,987
+disassociation rules should be above the minimum confidence value, okay, and I'm going to eliminate
+
+325
+00:55:28,987 --> 00:55:32,867
+to those that do not meet to this condition.
+
+326
+00:55:33,807 --> 00:55:33,867
+Okay.
+
+327
+00:55:34,167 --> 00:55:35,527
+Now you see that.
+
+328
+00:55:36,107 --> 00:55:41,927
+So what was the confidence value, confidence equation?
+
+329
+00:55:44,627 --> 00:55:49,167
+Count the number of transactions that only includes close.
+
+330
+00:55:49,707 --> 00:55:50,007
+Okay.
+
+331
+00:55:50,567 --> 00:55:53,707
+And so you see that one, two, three.
+
+332
+00:55:54,087 --> 00:55:55,167
+So I have three.
+
+333
+00:55:55,827 --> 00:56:09,947
+and count those equations, transactions that includes both items from X from the left hand side and the right hand side. And that's three, three divided three, that's 100 percent, which is above minimum confidence value.
+
+334
+00:56:10,607 --> 00:56:22,967
+Okay, now this way I need to calculate the confidence value for each possible rules. And if the confidence value is above 80 percent, then I'm going to keep those. Otherwise, I'm going to eliminate.
+
+335
+00:56:22,967 --> 00:56:52,947
+okay now as you see in the previous example in the previous example the way that I calculated the association rules okay first I counted the single items and then I counted the two item item sets okay and so once I found the frequent patterns and from those I by using the
+
+336
+00:56:52,947 --> 00:56:58,848
+and the largest possible frequent item sets, I wrote all the association rules.
+
+337
+00:57:00,387 --> 00:57:11,287
+And here, again, I started with the largest possible frequent item sets and I wrote all possible association rules.
+
+338
+00:57:11,287 --> 00:57:15,268
+And for each association rules, I counted the confidence values.
+
+339
+00:57:15,267 --> 00:57:31,107
+okay and those rules that have confidence value above minimum confidence I said that those are the association rules that I can use okay
+
+340
+00:57:31,107 --> 00:57:33,647
+Hocam ben bir şey sorabilir miyim?
+
+341
+00:57:33,827 --> 00:57:34,267
+Tabi ki
+
+342
+00:57:34,267 --> 00:57:44,167
+O örnekte chicken and milk sol tarafta olsaydı farklı mı olacaktı? Confidence ve support onu bir yapabilir miyiz? Chicken ile milk solda, Claude sağda mesela
+
+343
+00:57:44,167 --> 00:57:45,987
+Okey alalım
+
+344
+00:57:45,987 --> 00:57:49,067
+Chicken ve milk burada olsun
+
+345
+00:57:49,067 --> 00:57:51,487
+Şu arkadaşı buraya alalım
+
+346
+00:57:59,315 --> 00:58:17,156
+Şimdi bu durumda ne olurdu? Milk ve Chicken'ın geçmiş olduğu transaction'lara bakmam gerekir. Bir tane bu, iki bu, üç bu, dört bu. Dört tane farklı transaction'da geçiyor.
+
+347
+00:58:20,820 --> 00:58:31,120
+Bunların arasından her ikisinin de her iki tarafın elemanlarında da içerenlere bakalım. Bunların sayısının da üç tane olduğunu biliyorum.
+
+348
+00:58:32,700 --> 00:58:39,899
+Dolayısıyla confidence ne çıkıyor? Yüzde yetmiş beş çıkıyor. Confidence yüzde yetmiş beş çıktığı için de bunu alamıyorum.
+
+349
+00:58:39,899 --> 00:58:45,399
+Çünkü minimum confidence'ın yüzde seksen ve üzerinde olmasını diye belirtmiş en başında.
+
+350
+00:58:45,399 --> 00:58:55,700
+yani bizden şeyi isteyen yani bizden association rule çıkartmamızı isteyen kişi, marketingdeki kişi bunu böyle belirtmiş.
+
+351
+00:58:55,779 --> 00:58:58,040
+O yüzden şu kuralı alamıyorum.
+
+352
+00:59:00,520 --> 00:59:01,559
+Şu ne demek?
+
+353
+00:59:02,119 --> 00:59:04,540
+Ben bu kurala ne kadar güvenebilirim demek.
+
+354
+00:59:04,539 --> 00:59:20,539
+Yani birisi milk ve chicken eğer almış ise veriye bakaraktan bu kişinin clouds da alacağını ne güvenilirlikte bilebilirim?
+
+355
+00:59:21,579 --> 00:59:32,219
+Mesela burada veriye bakarak clouds almış bir kişinin milk ve chicken alacağını yüzde yüz biliyorum.
+
+356
+00:59:32,220 --> 00:59:37,440
+çünkü daha önce gerçekleşmiş olan durumlar, verideki durumların hepsi diyor ki
+
+357
+00:59:37,440 --> 00:59:42,639
+close almış bir kişi aynı zamanda milk ve chicken da almıştır arkadaş diyor.
+
+358
+00:59:43,480 --> 00:59:52,279
+Ama burada ise milk ve chicken almış kişilerin close da aldığını ancak %75 oranında söylemiş veri bana.
+
+359
+00:59:52,279 --> 01:00:00,060
+Yani bunun güvenilirliği diyor daha önce gerçekleşen benzeri olaylara baktığımda %75'inde olmuş.
+
+360
+01:00:00,059 --> 01:00:15,219
+Ama bize en başta diyor ki bunu isteyen bana öyle kurallar bul ki geçmişteki gerçekleşen olaylara bakıldığında minimum yüzde sekseni bana bu kuralın işleyeceğini söylesin diyor
+
+361
+01:00:15,219 --> 01:00:39,399
+genelde de hani kuralların confidence değerleri büyük olur şeyde ama support değerleri düşük olur. Yani olabildiğince farklı, olabildiğince çok frequent item set bulunsun ister şey. Ama bunların içerisinde de kuralların gerçekleşen durumlar içerisinde en yüksek güvenilirlikte kurallar olması istenir.
+
+362
+01:00:41,239 --> 01:00:42,939
+Sorunu yanıtladı mı bu?
+
+363
+01:00:43,839 --> 01:00:44,779
+Anladım hocam sağ olun.
+
+364
+01:00:45,219 --> 01:01:05,379
+Şimdi devam edelim. Bakalım bu arada bizim ne kadarlık bir vaktimiz var. Daha iki dakikalık bir vaktimiz var. Dersi kırk beş dakikalık sesyonlar halinde işleyip biraz ara verip ondan sonra tekrar devam edeceğim arkadaşlar.
+
+365
+01:01:09,139 --> 01:01:22,980
+In a transaction datasets usually we have more information than what we what I have shown so far. For example, now is you see that in this particular toy example.
+
+366
+01:01:24,100 --> 01:01:30,579
+You for for each transaction you only see the transaction ID or transaction.
+
+367
+01:01:30,579 --> 01:01:36,399
+as a symbol that indicates the item.
+
+368
+01:01:36,399 --> 01:01:41,799
+But usually we have much more information than that.
+
+369
+01:01:41,939 --> 01:01:44,759
+So we have, for example, quantity.
+
+370
+01:01:46,599 --> 01:01:48,459
+We have price.
+
+371
+01:01:49,719 --> 01:01:59,919
+And we have other attributes that may be associated with that items, with that particular item.
+
+372
+01:01:59,919 --> 01:02:18,479
+So in a transaction database, you have much more information than that. And usually the newer version of association rule mining algorithms also take into account these additional attributes.
+
+373
+01:02:18,479 --> 01:02:36,239
+but now that we are learning the essentials of the association rule mining we are just going to treat that treat this problem as if we only have the transaction in a transaction ID we only have the item IDs okay
+
+374
+01:02:36,239 --> 01:02:44,479
+so that therefore we have the simplistic view of the shopping basket
+
+375
+01:02:48,820 --> 01:03:13,679
+Now this problem is, as I have told you, is a popular problem. So anywhere you go where there's an e-commerce shop or where there's a retail market, either which has a physical store or an online store, now they're doing, they're working on this problem on a daily basis.
+
+376
+01:03:13,679 --> 01:03:43,659
+okay so they are running different association rule mining algorithms now there are software packages both closed code and open source code okay they're working on this problem okay they are particularly implemented to solve this problem okay so therefore we have many many of the association rule mining algorithms
+
+377
+01:03:43,680 --> 01:04:03,720
+algorithms. And we are going to today study the Apriori algorithm. But first I want to give a break. Arkadaşlar ara verelim. Şu anda 7 geçiyor. 13 dakikalık bir ara verelim. 10'a 20 geçe bir araya gelelim.
+
+378
+01:04:11,380 --> 01:04:32,939
+Okey. Tarık'ın bir sorusu olmuş. Ara verdik. Sizler şey yapabilirsiniz. Çıkmanıza gerek yok. Bilgisayarınızı açık bırakın. Ben de bu arada Tarık'ın sorusunu yönetleyeyim. Confidence değeri için demiştik. Evet. Condition notasyonu ile.
+
+379
+01:04:46,547 --> 01:05:08,447
+Okey, doğru haklısın. O notasyonda X'i içeren transaction'lar içerisinde kaç tanesi hem X'i hem Y'i içeriyor demiştik. Orada slide'da geçen senin de Tarık notunda yazdığın şey güncel değil, senin yazdığın şekilde olmalı.
+
+380
+01:05:08,447 --> 01:05:17,267
+yani conditional probability'nin nominator kısmında hem Y hem de X'i içeren olmalı.
+
+381
+01:05:17,327 --> 01:05:22,228
+Ben de bunu not alayım. Bu slide'ı düzeltayım. Teşekkür ederim.
+
+382
+01:18:27,028 --> 01:18:28,467
+Tekrardan merhaba arkadaşlar.
+
+383
+01:19:00,051 --> 01:19:03,651
+Sesim geliyor mu? Bir tekrardan teyit edebilir misiniz?
+
+384
+01:19:04,452 --> 01:19:05,171
+Geliyorum hocam.
+
+385
+01:19:05,731 --> 01:19:06,431
+Süper, tamam.
+
+386
+01:19:09,071 --> 01:19:14,131
+Okay, now we are going to go into details of the a priori algorithm.
+
+387
+01:19:14,631 --> 01:19:14,771
+Okay.
+
+388
+01:19:16,191 --> 01:19:30,031
+Now, given the transaction dataset T, minimum support and minimum confidence, the set of association rules existing in T is uniquely determined.
+
+389
+01:19:30,051 --> 01:19:54,051
+requirements. So that's what a priori algorithm is doing. So we give the transaction dataset T as an input. We also indicate minimum support and minimum confidence values. And as a result, association rules that meet with the initial conditions of support and confidence are produced.
+
+390
+01:20:00,083 --> 01:20:14,083
+Now this is a well-known algorithm in data mining, okay, in particular the association rule mining. It includes two steps. The first step is finding the frequent item sets.
+
+391
+01:20:14,083 --> 01:20:27,083
+And remember, when we say frequent item sets, we are talking about the large item sets where the support value is above minimum support value, okay.
+
+392
+01:20:27,083 --> 01:20:32,924
+and find all item sets, frequent item sets that have minimum support.
+
+393
+01:20:33,804 --> 01:20:49,883
+So we are after finding the frequent item sets, in other words, largest item sets that has largest possible items and also above minimum support threshold.
+
+394
+01:20:49,883 --> 01:21:03,083
+Now that's the first step. The second step after we find that, after we find the frequent item sets, we use this in order to generate rules. Okay.
+
+395
+01:21:04,683 --> 01:21:17,783
+And here, so this is the example from the previous slides. So we found the frequent item sets, which has three items. And then we started writing all possible association rules.
+
+396
+01:21:17,783 --> 01:21:28,243
+okay and as we write all possible association rules and we eliminated those that has lower confidence values okay
+
+397
+01:21:28,243 --> 01:21:43,763
+now here is an the idea here is how we are going to go about finding the frequent item sets for the first step
+
+398
+01:21:43,764 --> 01:21:48,764
+Hold on for a second, give me a minute please
+
+399
+01:22:29,492 --> 01:22:30,931
+Let's start my watch.
+
+400
+01:22:37,619 --> 01:22:38,539
+Perfect.
+
+401
+01:22:43,123 --> 01:22:57,443
+Okay, now, so the, as we are finding the all frequent item sets, and the idea here is that
+
+402
+01:22:57,443 --> 01:23:03,044
+frequent item sets is the item sets whose support is minimum support value. That's
+
+403
+01:23:04,804 --> 01:23:11,763
+what we are going to find in this algorithm. And also this algorithm says that
+
+404
+01:23:12,723 --> 01:23:21,683
+in order for a frequent an item set to be a frequent item set it has to support the a priori
+
+405
+01:23:21,683 --> 01:23:29,844
+property which in other words called downward closure property and which means that if you
+
+406
+01:23:29,844 --> 01:23:38,243
+say that an item set is a frequent item set okay this means that all the subset of the item sets
+
+407
+01:23:38,243 --> 01:23:47,344
+has to be frequent. Okay. Now, if you say, for example, in this particular example, ABD item set,
+
+408
+01:23:48,183 --> 01:23:57,823
+okay, so this item set, which includes ABD, is a frequent item set. In this case, it has to
+
+409
+01:23:57,823 --> 01:24:07,344
+meet the two conditions. The first condition is its support value has to be above minimum
+
+410
+01:24:07,344 --> 01:24:15,104
+support value that's the first condition now the second condition is that all of its subsets
+
+411
+01:24:15,984 --> 01:24:24,623
+has to be frequent which means in other words all of its subsets and the the support value of all
+
+412
+01:24:24,623 --> 01:24:32,543
+of its subsets has to be frequent okay it so this means that in order one item says to be a frequent
+
+413
+01:24:32,543 --> 01:24:39,903
+item says it has to meet to the two conditions which means the first its support value should
+
+414
+01:24:39,903 --> 01:24:50,623
+be minimum above minimum support value and also all of its subsets has to be also frequent okay
+
+415
+01:24:50,623 --> 01:25:00,463
+now this is the idea for a priori algorithm now the algorithm works like this okay now initially
+
+416
+01:25:00,463 --> 01:25:08,064
+So first of all, so this is an iterative algorithm. So which means that, so remember in an iterative
+
+417
+01:25:08,064 --> 01:25:15,743
+algorithm, so we have a loop. Okay, there is also a recursive algorithm in this case. So the algorithm
+
+418
+01:25:15,743 --> 01:25:22,623
+is calling itself all the time. So see this is an iterative algorithm and what it's doing is then
+
+419
+01:25:22,623 --> 01:25:33,724
+it's doing a level-wise search. Now this algorithm is going to start with a bottom-up,
+
+420
+01:25:33,724 --> 01:25:41,944
+which means that it's going to first count one item item sets, find the frequent ones,
+
+421
+01:25:42,204 --> 01:25:50,484
+use the frequent ones in order to find possible frequent item sets, which has two items,
+
+422
+01:25:50,484 --> 01:25:57,344
+and then check whether those possible two item item sets are frequent item sets.
+
+423
+01:25:58,803 --> 01:26:04,424
+And then it will find actual two item frequent item sets
+
+424
+01:26:04,424 --> 01:26:08,103
+and then use those actual frequent item sets
+
+425
+01:26:08,103 --> 01:26:14,023
+in order to generate all possible three item item sets.
+
+426
+01:26:14,023 --> 01:26:21,123
+and then check whether those possible three item item sets
+
+427
+01:26:21,123 --> 01:26:25,103
+are actually frequent three item item sets.
+
+428
+01:26:25,103 --> 01:26:29,083
+This is the way how it operates.
+
+429
+01:26:29,823 --> 01:26:29,863
+Okay.
+
+430
+01:26:30,243 --> 01:26:33,283
+Now, as you see, so this is the pseudocode
+
+431
+01:26:33,283 --> 01:26:36,643
+for the simplified pseudocode of the algorithm.
+
+432
+01:26:39,083 --> 01:26:42,003
+So at the beginning, the algorithm
+
+433
+01:26:42,003 --> 01:26:43,003
+So,
+
+434
+01:26:42,416 --> 01:26:44,715
+is going to do a pass,
+
+435
+01:26:45,755 --> 01:26:49,655
+which means that it's going to read all the transactions
+
+436
+01:26:49,655 --> 01:26:52,355
+in the transaction data set.
+
+437
+01:26:52,815 --> 01:26:59,235
+You can think of the transaction data sets as a huge table.
+
+438
+01:27:00,075 --> 01:27:04,475
+And this table has millions of lines.
+
+439
+01:27:04,475 --> 01:27:09,195
+And each line is an entry for a particular transaction.
+
+440
+01:27:09,195 --> 01:27:19,435
+and in each line you have a list of items that are bought for that transaction okay now this
+
+441
+01:27:19,435 --> 01:27:25,695
+algorithm is going to do a pass for all the transactions in the transaction data set
+
+442
+01:27:25,695 --> 01:27:34,235
+now obviously this algorithm takes input as the support and confidence value it will take
+
+443
+01:27:34,235 --> 01:27:39,875
+the support value as the input now it will count
+
+444
+01:27:39,875 --> 01:27:49,816
+the appearance or it would it will count all the items in the transaction data sets okay for each
+
+445
+01:27:49,816 --> 01:27:58,115
+of the item it will write the count how many times that each item is appearing in transactions
+
+446
+01:27:58,115 --> 01:28:20,835
+Okay. Now it will find those candidate one item frequent item sets. Okay. And then it will eliminate those items that are less than minimum support value. Okay.
+
+447
+01:28:20,835 --> 01:28:26,335
+Which means that capital F is the actual frequent item sets.
+
+448
+01:28:26,916 --> 01:28:26,975
+Okay.
+
+449
+01:28:27,175 --> 01:28:31,695
+So that's why it's a capital F, which means frequent item sets.
+
+450
+01:28:31,875 --> 01:28:32,035
+Okay.
+
+451
+01:28:32,075 --> 01:28:33,956
+It's the actual frequent item set.
+
+452
+01:28:34,776 --> 01:28:46,955
+And you see that here, I will have, I will, so later in the algorithm, I will also have another notation, capital C, which is candidate item sets.
+
+453
+01:28:47,136 --> 01:28:47,735
+Okay.
+
+454
+01:28:47,735 --> 01:28:57,035
+which is item sets that are found, okay, but we don't know actually whether they're actual frequent item sets, okay.
+
+455
+01:28:57,595 --> 01:29:04,916
+Now, at the beginning, the algorithm, what it will do, it will just do a pass on all transactions.
+
+456
+01:29:04,916 --> 01:29:13,296
+it will count the number of times each item is appearing in the transactions,
+
+457
+01:29:13,975 --> 01:29:21,095
+and it will find the items whose numbers are above the minimum support threshold,
+
+458
+01:29:21,255 --> 01:29:25,496
+and it will call this items F1, okay?
+
+459
+01:29:26,055 --> 01:29:32,776
+So that's, which means that frequent one item item sets, okay?
+
+460
+01:29:32,776 --> 01:29:43,296
+then it will go to a loop okay now in the loop it will start from k equal to 2 okay and it will go
+
+461
+01:29:43,296 --> 01:29:52,516
+to for example k equal to for the sake of discussion let's say k equal to 10 okay
+
+462
+01:29:52,516 --> 01:30:01,916
+now first what it's going to do starting from one item frequent item sets it will find it will
+
+463
+01:30:01,916 --> 01:30:11,835
+generate all possible two item candidate item sets. It's going to do exactly like this. If you
+
+464
+01:30:11,835 --> 01:30:21,916
+if you think that A and B and D are the one item frequent item sets, it's going to use these and
+
+465
+01:30:21,916 --> 01:30:31,516
+generate as you see all possible two item item sets. Okay and this what we are going to this
+
+466
+01:30:31,515 --> 01:30:39,995
+whole thing this whole line that we are going to call as candidate two item item sets okay
+
+467
+01:30:40,979 --> 01:30:47,319
+Then what it's going to do, it's going to do another pass on the database.
+
+468
+01:30:48,379 --> 01:30:49,860
+That's the second pass.
+
+469
+01:30:50,740 --> 01:30:55,940
+And this time it's going to count two item item sets.
+
+470
+01:30:57,459 --> 01:31:02,859
+It's going to count this one, this one, this one, this one, this one, this one.
+
+471
+01:31:03,179 --> 01:31:09,079
+It's going to count in how many transactions that these two appear together.
+
+472
+01:31:09,079 --> 01:31:20,279
+okay now once it completes the second pass okay and it will know which ones are actually
+
+473
+01:31:20,279 --> 01:31:29,359
+frequent as you see it found that that a b a d and b d appear together okay in uh
+
+474
+01:31:29,359 --> 01:31:38,119
+in in the number of transactions that's above the minimum support value okay so therefore you see
+
+475
+01:31:38,119 --> 01:31:46,119
+that it's going to find so once it's complete the second pass it's going to find those items
+
+476
+01:31:47,479 --> 01:31:56,280
+item sets that are actually frequent okay then it will go back to the beginning of the loop
+
+477
+01:31:56,280 --> 01:32:06,840
+okay it will increment this to three and again by using the two item frequent item sets is going to
+
+478
+01:32:06,840 --> 01:32:12,719
+generate three item, all possible three item candidates.
+
+479
+01:32:13,880 --> 01:32:17,560
+So it's going, what it's going to do now, this, if this is the
+
+480
+01:32:17,560 --> 01:32:20,700
+frequent two item, this is the frequent two item, this is the
+
+481
+01:32:20,700 --> 01:32:25,259
+frequent two item, it's going to use these and generate all
+
+482
+01:32:25,259 --> 01:32:28,140
+possible three item frequent item sets.
+
+483
+01:32:28,799 --> 01:32:29,219
+Okay.
+
+484
+01:32:31,500 --> 01:32:36,600
+And then, uh, it's going to do, and that again, uh, one more
+
+485
+01:32:36,599 --> 01:32:46,279
+pass okay and this time it's going to count the three item item sets it's going to count the
+
+486
+01:32:46,279 --> 01:32:55,259
+number of transactions that includes abc that includes abd acd etc and eventually it will find
+
+487
+01:32:55,259 --> 01:33:03,920
+since it's since at the end of the loop since it already has seen the data sets again it will know
+
+488
+01:33:03,920 --> 01:33:11,200
+how many of the transaction entries includes the three item item sets and it will know
+
+489
+01:33:11,200 --> 01:33:20,520
+the three item item sets that are actually frequent. As you see, amongst the four possible
+
+490
+01:33:20,520 --> 01:33:28,200
+candidates, only one of them turned out to be frequent. Okay. And it will come back to the
+
+491
+01:33:28,200 --> 01:33:33,340
+beginning of the loop and it will do the same thing for k equal to four all the way to k equal
+
+492
+01:33:33,340 --> 01:33:43,360
+to 10 okay and as a result what we are after is we want to find the frequent item sets that has
+
+493
+01:33:43,360 --> 01:33:54,340
+largest possible items in it okay that's how a priori algorithm works okay now this is so a toy
+
+494
+01:33:54,340 --> 01:34:00,580
+example it has four transactions these are the items and this is the minimum support value
+
+495
+01:34:00,579 --> 01:34:08,879
+so at the initial condition so at the before before do and entering the loop algorithm is doing
+
+496
+01:34:08,879 --> 01:34:18,899
+one pass okay it's actually finally counting all the number of transactions that each one item
+
+497
+01:34:18,899 --> 01:34:26,739
+item sets appear and then it's going to eliminate those which has lower than minimum support value
+
+498
+01:34:26,739 --> 01:34:32,359
+In this particular case, 50%, which is at least one item.
+
+499
+01:34:32,759 --> 01:34:38,039
+In order one item to be frequent, it should appear at least two and more transactions.
+
+500
+01:34:38,644 --> 01:34:50,944
+Okay, as you see it already found the actual frequent one item item sets. Then it's going to go into the loop. Okay, so as you see here at the beginning of the loop.
+
+501
+01:34:52,323 --> 01:35:06,723
+Starting from k equal to two, it will find all possible candidate two item item sets. These are the candidates. Okay, we don't know whether they are actually frequent, then it will do a second scan.
+
+502
+01:35:06,723 --> 01:35:10,423
+as it will read the data set again.
+
+503
+01:35:10,943 --> 01:35:11,063
+Okay.
+
+504
+01:35:11,243 --> 01:35:19,603
+And this time when it reads, it's going to count the number of transactions that includes both of these items.
+
+505
+01:35:19,603 --> 01:35:20,044
+Okay.
+
+506
+01:35:20,423 --> 01:35:29,783
+As you see, at the end of the reading, the data sets, it already wrote all the number of transactions for each of them.
+
+507
+01:35:30,383 --> 01:35:36,663
+And as you see, it eliminated those that are less than minimum support.
+
+508
+01:35:36,723 --> 01:35:42,724
+value, then it will go and go back to the beginning of the loop.
+
+509
+01:35:43,083 --> 01:35:43,483
+Okay.
+
+510
+01:35:43,563 --> 01:35:49,684
+And it will again generate the three item possible candidates.
+
+511
+01:35:49,923 --> 01:35:50,283
+Okay.
+
+512
+01:35:50,324 --> 01:35:51,783
+And it will continue like this.
+
+513
+01:35:53,283 --> 01:35:53,623
+Okay.
+
+514
+01:35:58,036 --> 01:36:26,036
+Now, one thing that you should be realizing that if these are the two item frequent actual frequent item sets, if you are to generate the candidates, there should be more three items here. For example,
+
+515
+01:36:30,547 --> 01:36:33,647
+for example, you don't see.
+
+516
+01:36:34,747 --> 01:36:35,347
+One.
+
+517
+01:36:36,547 --> 01:36:37,247
+Two.
+
+518
+01:36:38,047 --> 01:36:38,747
+Three here.
+
+519
+01:36:40,047 --> 01:36:41,947
+See one, two, three here.
+
+520
+01:36:42,848 --> 01:36:44,047
+You only see this one.
+
+521
+01:36:45,347 --> 01:36:47,347
+And for example,
+
+522
+01:36:48,547 --> 01:36:49,747
+you don't see.
+
+523
+01:36:55,447 --> 01:36:57,447
+One, three, five.
+
+524
+01:37:07,220 --> 01:37:07,720
+see
+
+525
+01:37:15,475 --> 01:37:32,055
+Now, if you use these two item item sets in order to generate these three possible three item item sets, you would expect that these two should be here too as well, right?
+
+526
+01:37:32,755 --> 01:37:42,695
+But remember, when we talked about a priori algorithm, we said that it should satisfy two things.
+
+527
+01:37:42,695 --> 01:37:54,156
+one thing is that now a item set in order an item set to be a frequent item set the first condition
+
+528
+01:37:54,156 --> 01:38:03,935
+is that the the support value for this item set should be above minimum support value okay now at
+
+529
+01:38:03,935 --> 01:38:11,675
+this at this time we don't know whether this one this one and this one has a support value which
+
+530
+01:38:11,675 --> 01:38:18,255
+is above minimum support value because we haven't done the third scan okay we haven't checked the
+
+531
+01:38:18,255 --> 01:38:26,315
+database whether these three items appear together in transactions more than minimum support value
+
+532
+01:38:26,315 --> 01:38:33,935
+but we can check here what we can check is the second condition what was the second condition
+
+533
+01:38:33,935 --> 01:38:41,655
+let's go and back and let's remember the second condition the download closure property okay
+
+534
+01:38:41,656 --> 01:38:45,355
+That's the second condition for being a frequent item set,
+
+535
+01:38:45,575 --> 01:38:50,916
+which means that any subsets of the frequent item sets has to be also frequent item set.
+
+536
+01:38:53,376 --> 01:38:58,416
+Now, which means that by using these two item item sets,
+
+537
+01:38:58,535 --> 01:39:01,595
+we are able to generate these three item item sets.
+
+538
+01:39:01,876 --> 01:39:04,556
+Obviously, these are possible three item item sets.
+
+539
+01:39:04,736 --> 01:39:06,215
+We don't know whether they are frequent.
+
+540
+01:39:07,156 --> 01:39:09,395
+And so we can check the second condition.
+
+541
+01:39:09,395 --> 01:39:14,775
+We can check whether the subsets of this three item item set is also frequent.
+
+542
+01:39:15,575 --> 01:39:19,495
+Now, let's say two and three, two and three here is frequent.
+
+543
+01:39:20,016 --> 01:39:22,755
+Two and five, two and five is frequent.
+
+544
+01:39:23,836 --> 01:39:26,475
+Okay, three and five, three and five is frequent.
+
+545
+01:39:26,836 --> 01:39:32,636
+So this means that this is okay because it is supporting the second condition.
+
+546
+01:39:33,776 --> 01:39:36,776
+Okay, all the subsets of it is also frequent.
+
+547
+01:39:37,035 --> 01:39:38,076
+Let's check this one.
+
+548
+01:39:38,075 --> 01:39:48,675
+now one two oops one two we don't have it here okay so which means that now this this one this
+
+549
+01:39:48,675 --> 01:39:56,195
+possible three item item since it did not satisfy the second condition i'm going to remove it
+
+550
+01:39:56,195 --> 01:40:04,475
+now let's check the uh the this this possible candidate one three is there good three five
+
+551
+01:40:04,475 --> 01:40:12,095
+is there good one five no one five we don't have it here so therefore i i have to remove this
+
+552
+01:40:12,095 --> 01:40:23,515
+okay now you see that by doing this okay when i'm going to do a third scan okay when i'm going
+
+553
+01:40:23,515 --> 01:40:34,995
+to do the third scan what will happen is that i will count less number of three item item sets by
+
+554
+01:40:34,995 --> 01:40:42,915
+doing this i will count less item of three item item sets because i am only going to count the
+
+555
+01:40:42,915 --> 01:40:51,315
+ones that satisfy the second condition okay those that do not satisfy the second condition i'm not
+
+556
+01:40:51,315 --> 01:40:56,675
+going to count do count for them okay
+
+557
+01:40:58,675 --> 01:41:04,755
+now this is the detail this is the actual pseudocode for the algorithm
+
+558
+01:41:04,755 --> 01:41:09,075
+as you see at the beginning i'm doing an initial pass on the
+
+559
+01:41:09,075 --> 01:41:15,715
+data set and i'm going to have a count for one item item sets
+
+560
+01:41:14,420 --> 01:41:25,499
+Then I'm going to eliminate those that has less than minimum support value and find actual one item item sets, one item frequent item sets.
+
+561
+01:41:26,059 --> 01:41:28,179
+And I'm going to do a loop.
+
+562
+01:41:28,800 --> 01:41:33,539
+And in this loop, I will start from k equal to 2.
+
+563
+01:41:34,100 --> 01:41:43,059
+First, I'm going to use the one item frequent item set in order to generate two item candidate item sets.
+
+564
+01:41:43,059 --> 01:41:51,239
+then here i'm going to read the data set again for count to count two item item sets
+
+565
+01:41:51,239 --> 01:41:59,719
+for each of the two item item sets i will find the count and then i will eliminate those two
+
+566
+01:41:59,719 --> 01:42:08,619
+item item sets that has less than minimum support value okay then i will go back to the loop
+
+567
+01:42:08,619 --> 01:42:15,939
+I will use the two item frequent item sets and generate three item possible candidates.
+
+568
+01:42:16,739 --> 01:42:27,299
+And I will keep doing this until I reach the largest possible frequent item sets that I would like to find.
+
+569
+01:42:28,439 --> 01:42:28,659
+Okay.
+
+570
+01:42:29,019 --> 01:42:34,939
+Now, how many passes that this algorithm is doing on the database?
+
+571
+01:42:35,359 --> 01:42:36,039
+K types.
+
+572
+01:42:36,039 --> 01:42:36,939
+Okay.
+
+573
+01:42:36,939 --> 01:42:56,659
+If your algorithm is searching for k item sets, k frequent item sets, this means that your apriori algorithm will do k times passes on the data set.
+
+574
+01:42:58,319 --> 01:42:58,999
+Okay.
+
+575
+01:42:59,339 --> 01:43:03,839
+Now, take a look at this candidate generation function.
+
+576
+01:43:03,839 --> 01:43:07,320
+So let's go into details of the candidate generation function.
+
+577
+01:43:07,820 --> 01:43:10,979
+Now, the candidate generation function is doing two steps.
+
+578
+01:43:11,299 --> 01:43:12,780
+One is the join step.
+
+579
+01:43:13,239 --> 01:43:15,059
+The second one is the prune step.
+
+580
+01:43:15,500 --> 01:43:24,739
+Now, if you remember this, the candidate generation is the join step is this step.
+
+581
+01:43:24,899 --> 01:43:31,780
+You know, it's actually taking the candidate frequent item sets and it is joining them.
+
+582
+01:43:31,780 --> 01:43:47,520
+Sorry, so it is taking the actual frequent item sets, it is joining them, it is finding them possible, all possible candidate item sets.
+
+583
+01:43:47,520 --> 01:43:58,559
+Then in the prune step, it is removing those that are not meeting the second criteria of a priori algorithm, which was downward closure property.
+
+584
+01:43:58,559 --> 01:44:05,759
+Okay, now let's take a look at the candidate generation algorithm.
+
+585
+01:44:06,239 --> 01:44:17,660
+So as you see, this algorithm is taking the candidate actual frequent item sets.
+
+586
+01:44:18,599 --> 01:44:24,699
+Okay, and by using the actual frequent item sets, what it's doing here, it's doing the join step.
+
+587
+01:44:24,699 --> 01:44:29,599
+and it's finding the all possible candidates.
+
+588
+01:44:30,520 --> 01:44:35,099
+Then in the second stage, it's doing the prune state,
+
+589
+01:44:35,099 --> 01:44:40,920
+which means that it's checking for the second condition of the a priori,
+
+590
+01:44:41,000 --> 01:44:44,099
+which was the download closure property.
+
+591
+01:44:44,879 --> 01:44:52,319
+It's checking whether all the subsets of the candidate item set is also frequent.
+
+592
+01:44:52,319 --> 01:45:01,379
+okay if if the subsets of a given candidate item set is not frequent then it's going to delete this
+
+593
+01:45:01,379 --> 01:45:08,939
+okay so therefore when the candidate generation algorithm right here when the generate generated
+
+594
+01:45:08,939 --> 01:45:09,420
+function
+
+595
+01:45:09,876 --> 01:45:35,636
+is returning its results. Okay. It's only returning the candidate item sets that support the second property of a priori algorithm. And then we are going to do the count and on the transaction data sets and we are going to check whether this candidates that we found here,
+
+596
+01:45:35,636 --> 01:45:45,535
+they're also above minimum support value. If yes, then we are able to find the pre-cooked K item item sets.
+
+597
+01:45:49,140 --> 01:45:55,040
+Okay, so far any questions? Let's see.
+
+598
+01:46:01,363 --> 01:46:02,984
+Okay, do we have any questions?
+
+599
+01:46:09,555 --> 01:46:22,075
+Okey. Sorumuz yok. Devam ediyorum. Sesim geliyor değil mi arkadaşlar? Aralarda siz şey yapın. Sesim tamam okey.
+
+600
+01:46:26,387 --> 01:46:29,407
+Şimdi tekrardan slide'larımıza dönelim.
+
+601
+01:46:36,564 --> 01:46:51,923
+Okay, now this is what I explained before, how the prune step is happening. So let's say, so this is three item, actual frequent item set.
+
+602
+01:46:52,783 --> 01:47:04,263
+Okay, now after the join operation, the frequent candidate chain, gen algorithm is finding all these, as you see, possible candidates.
+
+603
+01:47:04,263 --> 01:47:33,863
+okay now after the in the prune step is checking whether the four item item sets are actually supporting the second criteria of a priori algorithm okay now how does it check this it's it's check whether all the subsets are in the three item frequent item sets one two three is here
+
+604
+01:47:34,263 --> 01:47:56,123
+2, 3, 4 is here, 1, 2, 4 is here, 1, 3, 4 is here, so this is okay, and let's check this one, 1, 2, 3 is here, that's fine, 2, 3, 5, that's not available here, so we are going to eliminate this,
+
+605
+01:47:56,123 --> 01:48:24,743
+1, 3, 4 is here, 3, 4, 5 is not here, so therefore we are going to eliminate this, okay, so therefore as you see only one of the candidates are supporting the second property of the a priori algorithm, so therefore candidate gen function is going to return only one candidate, okay.
+
+606
+01:48:30,547 --> 01:48:50,287
+Now, as we said, after we find the frequent item set, which was the largest possible item set that is frequent, we are going to use this in order to generate the association rules.
+
+607
+01:48:50,287 --> 01:48:58,007
+and as you remembered an association rule uh looks like this okay there's a left hand side
+
+608
+01:48:58,007 --> 01:49:05,408
+and there's a right hand side okay and and as we are reading this rule we are saying that
+
+609
+01:49:05,408 --> 01:49:16,768
+if somebody buys items a item set a he or she is likely to buy item set b okay now
+
+610
+01:49:16,767 --> 01:49:24,427
+Now, so this is the frequent item set that the a priori algorithm is generating.
+
+611
+01:49:24,947 --> 01:49:25,027
+Okay.
+
+612
+01:49:25,587 --> 01:49:32,547
+The item sets, so this is the largest possible item set that is frequent.
+
+613
+01:49:33,207 --> 01:49:38,847
+Now, by using this, I need to generate rules in this format.
+
+614
+01:49:39,307 --> 01:49:39,547
+Okay.
+
+615
+01:49:39,927 --> 01:49:42,627
+And what can I do in order to do this?
+
+616
+01:49:42,628 --> 01:49:49,128
+I can pick a subset of X and put it into the left hand side.
+
+617
+01:49:49,467 --> 01:49:54,448
+And I can pick the rest of X and I can put it in on the right hand side.
+
+618
+01:49:55,507 --> 01:49:56,128
+Okay.
+
+619
+01:49:56,428 --> 01:49:59,708
+That way I can end up with rules like this.
+
+620
+01:50:01,308 --> 01:50:01,908
+Okay.
+
+621
+01:50:02,448 --> 01:50:12,068
+Now, and I need to find, obviously, I know that the support value for this role.
+
+622
+01:50:12,627 --> 01:50:20,927
+So what would be the support value for this rule is the support value for this frequent item set.
+
+623
+01:50:20,927 --> 01:50:21,627
+Okay.
+
+624
+01:50:21,927 --> 01:50:29,547
+I already know that this is a frequent because its support value is above minimum threshold.
+
+625
+01:50:29,827 --> 01:50:33,027
+And I also know the actual support value of it.
+
+626
+01:50:33,467 --> 01:50:33,707
+Okay.
+
+627
+01:50:33,947 --> 01:50:40,487
+So therefore, the support value of X is actually the support value for this particular rule.
+
+628
+01:50:40,488 --> 01:50:50,148
+because union of a and b is equal to x okay but what i don't know is the confidence value because
+
+629
+01:50:50,148 --> 01:50:57,027
+remember when i generate a rule i also need to calculate the confidence value okay now
+
+630
+01:50:57,027 --> 01:51:02,068
+how can i calculate the confidence value i can use this this notation here
+
+631
+01:51:02,067 --> 01:51:14,307
+okay in the denominator I can use the support value for a union b which would be the support
+
+632
+01:51:14,307 --> 01:51:22,687
+value of x in the denominator I can use the support value of the length left hand side
+
+633
+01:51:22,687 --> 01:51:29,787
+okay so which means that in order to calculate the confidence I'm going I'm basically using the
+
+634
+01:51:29,787 --> 01:51:34,887
+support values. Okay. Now let's take a look at an example.
+
+635
+01:51:40,243 --> 01:51:54,843
+Now, let's say I am given a frequent item set, okay, which is generated by April algorithm, okay, 3, 2, 4, okay.
+
+636
+01:51:55,843 --> 01:52:04,783
+And I also know the support value for this one, okay, I also know the support value for this one, which is 50%.
+
+637
+01:52:04,783 --> 01:52:17,084
+now i also give you the support values for all of its subsets two three two four three four
+
+638
+01:52:17,084 --> 01:52:25,943
+and obviously two is also a subset two three four as you see one two three four five six
+
+639
+01:52:25,943 --> 01:52:34,183
+different subsets and for six of them i also give you the support values okay now what i'm
+
+640
+01:52:34,183 --> 01:52:43,303
+is asking you to write all possible rules that you can generate from this and write me the confidence
+
+641
+01:52:43,303 --> 01:52:54,643
+values okay now and so in order to do this the only way and so here you see that i'm not giving
+
+642
+01:52:54,643 --> 01:53:01,043
+you the transaction data set you don't know how many total transactions are that you don't know
+
+643
+01:53:01,043 --> 01:53:05,463
+how many times that the left hand side appear in the transactions.
+
+644
+01:53:06,043 --> 01:53:07,863
+I'm only giving you support values.
+
+645
+01:53:08,183 --> 01:53:11,403
+So you have no choice of using this equation.
+
+646
+01:53:12,203 --> 01:53:12,423
+Okay.
+
+647
+01:53:13,623 --> 01:53:16,623
+You have no choice but using this equation.
+
+648
+01:53:16,883 --> 01:53:17,103
+Sorry.
+
+649
+01:53:19,503 --> 01:53:21,703
+Now take a look at the first rule.
+
+650
+01:53:23,283 --> 01:53:28,603
+So first, without calculating the confidence value,
+
+651
+01:53:28,603 --> 01:53:30,443
+I'm going to write all possible rules.
+
+652
+01:53:30,443 --> 01:53:38,104
+okay now uh on the left hand side i'm going to pick these two and on the right hand side i'm
+
+653
+01:53:38,104 --> 01:53:44,383
+going to write the rest of them pick two and four and on the right hand side write rest of them pick
+
+654
+01:53:44,383 --> 01:53:52,343
+three and four right hand side write the rest of them then i will pick two and on the right hand
+
+655
+01:53:52,343 --> 01:53:58,343
+write the rest of them and likewise I will do for the rest of the one items.
+
+656
+01:53:58,343 --> 01:54:04,883
+Now once I have all possible rules then I'm going to count calculate it's their
+
+657
+01:54:04,883 --> 01:54:10,963
+confidence values. Now remember the confidence value for a rule okay by the
+
+658
+01:54:10,963 --> 01:54:21,503
+equation that I just showed you in denominator the support value for the
+
+659
+01:54:21,503 --> 01:54:29,583
+whole thing okay support value for the union of left hand side and right hand side
+
+660
+01:54:31,903 --> 01:54:39,503
+in the denominator the support value of the left hand side okay and in this particular case two
+
+661
+01:54:39,503 --> 01:54:47,663
+three four has a support value 50 left hand side has a support value 50 50 divided by 50
+
+662
+01:54:47,663 --> 01:54:56,783
+percent that's 100 percent likewise it's the same for this rule two four has a support value for 50
+
+663
+01:54:56,783 --> 01:55:05,104
+percent two four three has a support value of 50 percent if you divide them uh so you end up with
+
+664
+01:55:05,104 --> 01:55:13,184
+100 you can go like this and you can find a confidence value for each of them okay and if
+
+665
+01:55:13,184 --> 01:55:19,583
+if you are asked to find association rules where the confidence value is above 50 percent
+
+666
+01:55:19,583 --> 01:55:26,464
+you are supposed to write every everything here okay and if you are asked to write confidence
+
+667
+01:55:27,023 --> 01:55:33,824
+rules that is above 80 percent confidence rules so you are supposed to write only two of them
+
+668
+01:55:36,784 --> 01:55:41,184
+okay
+
+669
+01:55:45,332 --> 01:56:01,852
+So therefore, in order to generate rules, all you need to have for a rule like this, all you need to have the support value for A union B, which means the support value for the frequent item set.
+
+670
+01:56:02,852 --> 01:56:15,051
+Remember, A union B is generated from the frequent item sets, which means that A union B is the frequent item sets, actually.
+
+671
+01:56:15,332 --> 01:56:21,571
+okay all you need the support value for the frequent item sets and also the support value
+
+672
+01:56:21,571 --> 01:56:26,131
+for the left hand side okay you don't need anything else you don't need the total number
+
+673
+01:56:26,131 --> 01:56:35,811
+of transactions you don't need the number of transactions that includes left hand side etc
+
+674
+01:56:35,811 --> 01:56:41,891
+if you are giving the support value of a for a rule like this you can go ahead and find the confidence
+
+675
+01:56:41,891 --> 01:56:43,891
+okay
+
+676
+01:56:48,212 --> 01:56:58,691
+And interestingly, all required information for calculating the confidence value is already being calculated during the a priori algorithm.
+
+677
+01:56:58,691 --> 01:57:24,691
+So remember, as the apriori algorithm is running, starting from bottom up, support values for one item, one item item sets, two item item sets, three item item sets, they all are being calculated.
+
+678
+01:57:24,691 --> 01:57:30,951
+calculated. So at the end of it, when you find the largest possible frequent item sets,
+
+679
+01:57:30,951 --> 01:57:38,752
+you can have a table that has the support values for one item item sets, two item item sets,
+
+680
+01:57:39,252 --> 01:57:45,271
+okay, three item frequent item sets. You can have a table that includes all of them.
+
+681
+01:57:46,191 --> 01:57:53,271
+So therefore, you don't need any additional information. By the end of the execution of
+
+682
+01:57:53,271 --> 01:57:59,871
+a priori algorithm, you have all required information that you need. Therefore, you don't
+
+683
+01:57:59,871 --> 01:58:05,212
+need to go to the transaction data sets and calculate the confidence value. You can use
+
+684
+01:58:05,212 --> 01:58:12,311
+the support values that already in that hash table and you can use the support value for
+
+685
+01:58:12,311 --> 01:58:20,771
+a frequent item set and you can calculate all possible confidence rules for all possible
+
+686
+01:58:23,271 --> 01:58:25,831
+association rules.
+
+687
+01:58:27,971 --> 01:58:30,072
+Arkadaşlar bu kısmı anlıyor muyuz?
+
+688
+01:58:30,392 --> 01:58:31,252
+Bu kısım önemli.
+
+689
+01:58:32,291 --> 01:58:33,651
+Burada söylemeye çalıştığım
+
+690
+01:58:33,651 --> 01:58:36,231
+a priori algoritm
+
+691
+01:58:36,231 --> 01:58:37,771
+tamamlandıktan sonra
+
+692
+01:58:37,771 --> 01:58:38,712
+bize
+
+693
+01:58:38,712 --> 01:58:42,131
+largest possible item
+
+694
+01:58:42,131 --> 01:58:44,171
+içeren frequent item seti veriyor.
+
+695
+01:58:45,511 --> 01:58:45,911
+Ve ben
+
+696
+01:58:45,911 --> 01:58:47,251
+bundan yola çıkartan
+
+697
+01:58:47,251 --> 01:58:49,771
+olabilecek bütün kuralları yazabiliyorum.
+
+698
+01:58:50,991 --> 01:58:52,271
+Ben bu kuralların
+
+699
+01:58:52,271 --> 01:58:56,271
+The support value is the support value.
+
+700
+01:58:56,271 --> 01:58:57,271
+So this is the three of the three, the three of the three, the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of the three of
+
+701
+01:59:26,271 --> 01:59:32,251
+1 item frequent item set, 2 item frequent item set, 3 item frequent item set.
+
+702
+01:59:32,631 --> 01:59:35,991
+Yani, all the possible possible item set of possible item set,
+
+703
+01:59:36,351 --> 01:59:40,592
+I'm going to go ahead and go ahead and go ahead.
+
+704
+01:59:40,691 --> 01:59:43,731
+So, I'm going to go ahead and go ahead and go ahead.
+
+705
+01:59:43,731 --> 01:59:46,652
+A, B, D'nin support value.
+
+706
+01:59:48,592 --> 01:59:51,331
+A, B, A, D, B, D'nin support value.
+
+707
+01:59:51,331 --> 02:00:21,311
+I think that's the one item frequent item set.
+
+708
+02:00:21,331 --> 02:00:30,331
+I can go back to transaction database and the code of confidence values,
+
+709
+02:00:30,331 --> 02:00:34,331
+I can use the hash table to use the hash table.
+
+710
+02:00:34,331 --> 02:00:45,331
+This is the algorithm that I can use the code of confidence and support values.
+
+711
+02:00:45,331 --> 02:01:15,312
+Thank you.
+
+712
+02:00:47,252 --> 02:01:00,731
+Okay, so therefore, all required information for confidence computation has already been recorded in the item set generation. Okay, there is no need to see the data transiting anymore. Okay.
+
+713
+02:01:07,060 --> 02:01:16,060
+Now what this algorithm has done is level by search. Bottom up, it started from the one item item sets, it went all the way up.
+
+714
+02:01:17,060 --> 02:01:24,060
+And what it did is that it found the K size of largest item set.
+
+715
+02:01:24,060 --> 02:01:28,060
+Now, you can ask this question.
+
+716
+02:01:28,060 --> 02:01:55,420
+Now, we are doing K passes on the data set, okay, and the data set could be highly large. For example, if you consider the last, you know, six months of the transaction data sets of the old Carrefour stores across the country, now the number of transactions will be high.
+
+717
+02:01:55,420 --> 02:02:25,399
+so therefore if you have too many passes on the data sets that's too much which means that the algorithm will take way too much time so therefore in usual in practice the K is bounded okay the largest possible K frequent item sets is bounded by an upper number and this is usually 10 okay.
+
+718
+02:02:25,420 --> 02:02:34,600
+Zaten arkadaşlar bunu niçin yapıyorduk? Popüler birlikte satılan itemları tespit etmek için yapıyorduk.
+
+719
+02:02:34,600 --> 02:02:43,600
+Ve popüler birlikte satılan itemlardan genellikle 2, 3, 4 tane birlikte satılan itemi bulmamız yeterli.
+
+720
+02:02:44,339 --> 02:02:49,240
+Hani burada ona kadar götürüyoruz ama sadece böyle bir durum var.
+
+721
+02:03:04,435 --> 02:03:08,475
+Sesim geliyor mu? Az olunca sanki sesim kesildi gibi. Bir saniye.
+
+722
+02:03:09,215 --> 02:03:10,115
+Şu an geliyor hocam.
+
+723
+02:03:10,575 --> 02:03:11,455
+Şu an geliyor, tamam.
+
+724
+02:03:12,816 --> 02:03:27,135
+Benim kullandığım laptop'un mikropunun da bir sıkıntı var. O yüzden cep telefonundan ses için bağlanıyorum. Görüntü için de laptop'tan bağlanıyorum. O yüzden sesle bir kesiklik olursa hemen chatten yazın arkadaşlar.
+
+725
+02:03:27,915 --> 02:03:30,375
+Chat'i açtım çünkü. Oradan da takip ediyorum.
+
+726
+02:03:33,844 --> 02:03:36,003
+Pardon, şunu yutelim bakalım.
+
+727
+02:03:45,652 --> 02:04:09,551
+Okey. Yani ne diyoruz? Demek ki pratikte de benim 10 tane item'ın birlikte satıldığını tespit etmemelerin çok mantığı yok. İki tane, üç tane birlikte satılan item'ı tespit edersem ne yapabilirim? Ben bu item'ları fiziksel mağazada yan yana koyabilirim.
+
+728
+02:04:09,551 --> 02:04:16,152
+Bunların birlikte satıldığını bildiğim için insanlar daha kolay bir şekilde bunu alsın diyebilirim.
+
+729
+02:04:16,231 --> 02:04:21,271
+Ya da bunların birlikte satıldığını bildiğim için bunları çok uzak noktalara koyabilirim.
+
+730
+02:04:21,711 --> 02:04:25,492
+Aralara da başka satmak istediğim diğer ürünleri koyarım.
+
+731
+02:04:25,492 --> 02:04:31,251
+Hani şu düşünceyle kişi geldiğinde zaten bu işte ürünleri alacak.
+
+732
+02:04:31,512 --> 02:04:36,012
+Bunları alırken benim mağazamdaki diğer ürünleri de görsün, dolaşsın diye yapabilirim.
+
+733
+02:04:36,012 --> 02:04:43,652
+ya da bu ürünleri bildiğim için bu ürünlerin yanına bunlar popüler olarak birlikte satılıyorlar.
+
+734
+02:04:43,652 --> 02:04:48,451
+Başka ürünleri de ekleyip işte insanlar bu üç tane ürünü alıyorlar.
+
+735
+02:04:48,712 --> 02:04:52,172
+Bunların yanına çok daha az satılan dördüncü ürünü ekleyeyim.
+
+736
+02:04:52,532 --> 02:04:54,851
+Böyle bir cross-sell çalışması da yapabilirim.
+
+737
+02:04:55,431 --> 02:05:01,192
+Ama yani on tane popüler itemin birlikte satıldığını bulmak bizim için çok ilginç değil.
+
+738
+02:05:01,291 --> 02:05:03,552
+O yüzden bu işin bir upper bound'u var.
+
+739
+02:05:04,692 --> 02:05:04,812
+Okey.
+
+740
+02:05:04,811 --> 02:05:22,551
+algoritmanın kendisi hızlı çalışıyor ama algoritmanın her iterasyonunda database'e bir IO access var. IO access demek cost'u yüksek bir operasyon demek. Memory operasyonuna göre.
+
+741
+02:05:22,552 --> 02:05:36,272
+ve her seferinde IO access yaptığında da database'deki bütün transaction'ları sequential bir şekilde okumak zorunda olduğu için esas zamanı alan bu okuma kısmı.
+
+742
+02:05:42,931 --> 02:06:05,231
+Okey. Bu farklı data formatlarını biz transaction dataset'lerinde görebiliyoruz. Normalde a priori algoritması ve benzeri algoritmaların görmek istediği format şuradaki format. Yani her bir satır bir tane transaction'a ifade ediyor.
+
+743
+02:06:05,231 --> 02:06:12,831
+ve transaction'lardaki elemanlar da satılan itemlar da bu satırdaki değerler.
+
+744
+02:06:12,831 --> 02:06:25,112
+Ama kimi zaman şey olabiliyor, böylesi bir formatta da transaction database olabiliyor.
+
+745
+02:06:25,751 --> 02:06:33,951
+Hani o durumda bu formatı tekrardan şöylesi bir formatı, şöyle bir transaction formatına dönüştürmem gerekiyor.
+
+746
+02:06:33,952 --> 02:06:45,891
+ikili elemanları dönüştürmüşüm. Attribute 1A, Attribute 2B, Attribute 3D böyle bir transaction formatına dönüştürdükten sonra
+
+747
+02:06:45,891 --> 02:06:50,512
+AppRory ve benzeri algoritmalara bunu input olarak verebilirim.
+
+748
+02:06:56,212 --> 02:07:00,791
+Okay, so let's see what are we doing from the time perspective.
+
+749
+02:07:04,595 --> 02:07:29,155
+Okay, I'm about to finish the second big section. Okay, what I'm going to do, I'm going to stop now. I'm going to continue next week because the rest of the algorithm, sequential pattern mining in particular, is important,
+
+750
+02:07:29,155 --> 02:07:35,895
+is almost as important like the first part of the lecture.
+
+751
+02:07:36,035 --> 02:07:39,535
+So I want to make sure that I spent enough time.
+
+752
+02:07:39,535 --> 02:07:42,095
+Burada duruyorum arkadaşlar.
+
+753
+02:07:43,496 --> 02:07:53,276
+Dersin başında bahsettiğim kaçıran arkadaşlar için tekrardan ekran paylaşımıyla göstereyim.
+
+754
+02:07:53,795 --> 02:07:57,316
+Sizlerden şöyle bir şey isteyeceğim.
+
+755
+02:08:04,340 --> 02:08:24,180
+Beşinci haftayla birlikte sizlerden bir project proposal formatı isteyeceğim. Bu isminiz olacak, kimler bunu yapıyor? Bir sayfalık bir proje formatı olacak. Bunun içinde ne yapıyorsunuz, neden bunu yapıyorsunuz bu projeyi? Bununla bahsedeceksiniz.
+
+756
+02:08:24,180 --> 02:08:44,399
+Dataset'ini nereden alıyorsunuz? Dataset'in linki olacak. Ondan sonra Dataset'le ilgili bilgi olacak. Ne yapıyorsunuz? Bundan bahsedeceksiniz. Ondan sonra bunu yapmak için şu anda bizim dersimizde dersin kitabını biliyorsunuz.
+
+757
+02:08:44,399 --> 02:08:55,399
+bu dersin içeriğinden hangi çeptirdeki hangi konuyla ilgili olarak bunu geliştireceksiniz.
+
+758
+02:08:55,399 --> 02:09:01,899
+Bu projeyi yapacaksınız. Bundan bahsedeceksiniz. Ve bunu hangi çalışma planına göre yapacaksınız?
+
+759
+02:09:02,059 --> 02:09:09,739
+Yani iş planınız ne olacak? O iki aylık zaman diliminde hangi haftada ne yapacaksınız?
+
+760
+02:09:09,740 --> 02:09:37,100
+onu belirten bir sayfalık bir project proposal yapmanızı istiyorum. Onun için şimdiden hazırlığa başlayın. Bana sorularınız olabilir. Şey diyebilirsiniz hocam siz daha dersin başındasınız. Hani bilmediğimiz konular var. Bilmediğimiz konularla ilgili nasıl proje kurgulayalım diye. Bu ilgili chapter'ların introduction'larına hızlıca gidip bakabilirsiniz.
+
+761
+02:09:37,099 --> 02:10:00,299
+illa oradaki algoritmaların detaylarını bilmenize gerek yok. Dersin başında hangi çeptörleri işleyeceğimizi konuştuk. Hızlıca bir değerlendirip ben işte şey yapacağım. İşte bir crawler yazacağım. Ya da işte ben bir hibrit search engine yazacağım.
+
+762
+02:10:00,299 --> 02:10:29,299
+ondan sonra ya da işte ben bir network datası bulacağım bunun üzerinde sosyal network analizi yapan bir uygulama yapacağım görselleştirme yapacağım ondan sonra ben bir network yapacağım onun üzerine community discovery algoritması çalıştıracağım ya da işte web usage mining yapacağım gideceğim ben log dosyası bulacağım bu log dosyası üzerinde insanlar
+
+763
+02:10:29,299 --> 02:10:36,239
+şeyi nasıl kullanmışlar, web sitesini nasıl kullanmışlar, onunla ilgili analiz yapan bir tane uygulama yapacağım.
+
+764
+02:10:36,899 --> 02:10:47,299
+Bunu yapabilirsiniz. Sonuçta ara projelerinizi, bitirme projelerinizi de akademisyen projesi seçmemişseniz yine kendiniz belirliyorsunuz.
+
+765
+02:10:48,459 --> 02:10:53,999
+Bunun araştırmasını beşinci haftaya kadar yapmak sizler için zor değil arkadaşlar, yapabilirsiniz.
+
+766
+02:10:54,299 --> 02:10:58,319
+Kim, kimle çalışacak, tek kişi mi çalışacaksınız bunları bilmek istiyorum.
+
+767
+02:10:58,319 --> 02:11:13,299
+bir de bir project proposal'ı sizden dinlemek istiyorum. Dediğim gibi bu project proposal'ınızı eklemeler yapabilirim. Karar veremediyseniz benden ofis ağrıma gelip şey yapabilirsiniz.
+
+768
+02:11:13,299 --> 02:11:30,679
+Office hour'ları yapış şeklinde şey olacak derslerden sonra ayrı bir zoom sesini olarak yarım saat bir saat benimle konuşabilir olacaksınız. Bu hafta için olamayacak ama gelecek haftalardan sonra bunu benden talep edebilirsiniz arkadaşlar.
+
+769
+02:11:34,292 --> 02:11:40,131
+Okey, benim bugün için anlatacaklarım bu kadar. Sorusu olan var mıdır?
+
+770
+02:11:44,404 --> 02:11:46,743
+Mikrofonunuzu açabilirsiniz sorunuz varsa
+
+771
+02:11:51,956 --> 02:11:55,115
+Yok sanırım. Teşekkür ederim.
+
+772
+02:11:56,295 --> 02:11:57,275
+Biz teşekkür ederiz.
+
+773
+02:11:58,956 --> 02:12:03,495
+Kendinize iyi bakın, sağlıklı kalın. Haftaya yine derste beraberiz.
+
+774
+02:12:05,275 --> 02:12:06,055
+İyi günler dilerim.

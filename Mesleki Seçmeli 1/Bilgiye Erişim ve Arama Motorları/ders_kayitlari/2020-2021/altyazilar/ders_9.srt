@@ -1,0 +1,3495 @@
+1
+00:04:10,675 --> 00:04:11,975
+Arkadaşlar günaydın.
+
+2
+00:04:16,692 --> 00:04:18,692
+Sesim geliyor mu? Bir teyit eder misiniz?
+
+3
+00:04:21,211 --> 00:04:22,132
+Geliyor hocam.
+
+4
+00:04:22,831 --> 00:04:23,311
+Tamamdır.
+
+5
+00:04:36,947 --> 00:05:03,247
+Okey arkadaşlar gelene kadar birkaç dakika ben de burada olanlar için projelerle ilgili yayınladığım dosyayı gösteriyorum. Burada her projeyle ilgili birkaç not bıraktım. Bunu yayınladıktan sonra bana gönderilen e-mailler var. Hani onları bakıp bu dosyayı güncelleme fırsatım olmadı.
+
+6
+00:05:03,247 --> 00:05:28,747
+ama temelde şeyleri not aldım. Proposal'larda eksik gördüğüm kısımları not aldım. Proposal'larınızı güncelleyin. Özellikle proposal'larınızı bana tekrardan göndermenize gerek yok ama sunum sırasında sizlerden ne bekleyeceğimi buradan görebilirsiniz.
+
+7
+00:05:28,747 --> 00:05:55,467
+Eğer hangi sınıflandırma algoritmalarını belirtmemişseniz o sınıflandırma algoritmalarının neler olabileceğini buraya ben yazmışım. Kaç tane sınıflandırma algoritmasını kullanmanız gerektiğini belirtmişim. Arkadaşlarınıza vermiş olduğum notlardan da nasıl bir proje beklediğimi sizlerden çıkartabilirsiniz.
+
+8
+00:05:55,467 --> 00:06:03,207
+kimileri hiç göndermiş onların zaten göndermesi gerekiyor.
+
+9
+00:06:03,207 --> 00:06:09,547
+Dediğim gibi bunu yayınladıktan sonra bana gelen e-mailler var ama detaylı bir şekilde bunlara bakamadım.
+
+10
+00:06:09,987 --> 00:06:12,387
+Bunlara bakıp bu dosyayı tekrardan güncelleyeceğim.
+
+11
+00:06:13,167 --> 00:06:20,107
+Yine bu eklemeleri yaptıktan sonra proposunu tekrardan göndermek isteyen varsa gönderebilir.
+
+12
+00:06:37,651 --> 00:06:38,591
+Hocam merhaba.
+
+13
+00:06:39,471 --> 00:06:39,811
+Merhaba.
+
+14
+00:06:40,451 --> 00:06:45,612
+Bu proposal'lar o zaman kabul edildi olarak varsayılabilir mi? Yani o eklemeler yapıldıktan sonra.
+
+15
+00:06:46,851 --> 00:06:58,992
+Evet. Yani bazıları için bazı proposal'larda hiçbir şey yoktu. Yani kabul edilmeyenler özellikle belirttiğim şeyler var.
+
+16
+00:06:58,992 --> 00:07:19,232
+onlarda hani düzeltme yapılabilecek hiçbir şey olmadığı için proposal kabul edilmedi. Yani hiç şey birer satır şey yazılmış gönderilmiş ama onun dışında yorum yazdığım projeler kabul edildi.
+
+17
+00:07:19,231 --> 00:07:25,011
+sadece proposal'larında yapacakları çalışma ile ilgili eksiklikler var.
+
+18
+00:07:25,931 --> 00:07:31,491
+Ya hangi veri setini kullanacağını belirtmiyor ya hangi algoritmaları kullanacağını belirtmiyor.
+
+19
+00:07:32,231 --> 00:07:33,571
+Onları belirtmesini istiyorum.
+
+20
+00:07:34,711 --> 00:07:35,651
+Tamam teşekkürler.
+
+21
+00:07:41,459 --> 00:07:57,900
+Okey, bugün web crawling chapter'ını konuşacağım. Vakit kaldığı ölçüde de sosyal network analizine gireceğim. Bunların chapter'ları da kitapta, textbookta, chapter 8 ve chapter 7 arkadaşlar.
+
+22
+00:08:43,347 --> 00:09:11,347
+Okay, I'm going to start with chapter 8, which is web crawling chapter. In this chapter, I'm going to discuss the details of how you would implement an a-crawler application. This is an important topic for most of the term projects because most of the term projects are implementing a web crawler.
+
+23
+00:09:17,491 --> 00:09:30,051
+Okay, today I'm going to talk about the motivation and taxonomy of crawlers. What kind of crawlers are there? Why do we have crawlers? We will talk about that topic.
+
+24
+00:09:30,051 --> 00:09:38,512
+and then we will talk I will show you and implement this logical flow of a basic crawler
+
+25
+00:09:38,512 --> 00:09:46,551
+and I will talk about the basic modules of a crawler and then we will go into details of
+
+26
+00:09:46,551 --> 00:09:57,352
+implementation issues okay and we will also talk about universal crawlers so universal crawlers
+
+27
+00:09:57,352 --> 00:10:01,392
+are the crawler applications that support search engines.
+
+28
+00:10:02,192 --> 00:10:07,432
+We will talk about the implementation issues related to universal crawlers.
+
+29
+00:10:08,232 --> 00:10:11,911
+And then we will go into specific types of crawlers,
+
+30
+00:10:12,032 --> 00:10:14,072
+which we call preferential crawlers.
+
+31
+00:10:14,731 --> 00:10:21,112
+And these types of crawlers have two different kinds of crawler,
+
+32
+00:10:21,512 --> 00:10:23,072
+focused and topical crawlers.
+
+33
+00:10:23,072 --> 00:10:26,792
+We will talk about each of the crawler type.
+
+34
+00:10:30,292 --> 00:10:36,071
+Okay, here is a picture of how you search the web.
+
+35
+00:10:36,491 --> 00:10:43,471
+So you enter a keyword and then the search engine gives you a set of results, right?
+
+36
+00:10:43,471 --> 00:10:50,571
+In order to search to happen, search engine using a crawler application.
+
+37
+00:10:51,392 --> 00:10:58,951
+Okay, now crawler application runs on the background and it runs before the search happens.
+
+38
+00:10:58,951 --> 00:11:03,872
+OK, so this means that the crawler application runs every day.
+
+39
+00:11:04,751 --> 00:11:13,431
+OK, and it crawls the web and it brings the data, which is HTML pages.
+
+40
+00:11:14,012 --> 00:11:18,372
+OK, sitting in different HTTP servers.
+
+41
+00:11:18,792 --> 00:11:21,512
+OK, on the Internet environment.
+
+42
+00:11:21,511 --> 00:11:33,011
+it downloads all the html content okay into a centralized location and then it allows the
+
+43
+00:11:33,011 --> 00:11:43,351
+search engine to index all these web pages and conduct conduct search okay now as you see in
+
+44
+00:11:43,351 --> 00:11:54,131
+order to find this particular web page that belongs to this keyword, crawler application
+
+45
+00:11:54,131 --> 00:12:00,691
+had to download a number of pages. So let's take a look at how the crawler application
+
+46
+00:12:00,691 --> 00:12:09,211
+works. Now the crawler application starts with a seed URL. As an input to the crawler application,
+
+47
+00:12:09,211 --> 00:12:13,571
+we give a set of URL, which we call seed URLs.
+
+48
+00:12:15,051 --> 00:12:15,171
+Okay.
+
+49
+00:12:15,731 --> 00:12:27,131
+Now, what crawler application is doing is it's doing an HTTP request for each of the URL to the HTTP servers.
+
+50
+00:12:27,372 --> 00:12:28,031
+Okay.
+
+51
+00:12:28,431 --> 00:12:34,972
+Where the HTML documents corresponding to these URLs are located.
+
+52
+00:12:35,531 --> 00:12:35,951
+Okay.
+
+53
+00:12:36,331 --> 00:12:37,571
+Now, let's see.
+
+54
+00:12:39,211 --> 00:12:42,051
+These seed URLs is from Yahoo page.
+
+55
+00:12:43,292 --> 00:12:43,411
+Okay.
+
+56
+00:12:43,911 --> 00:12:53,891
+Now the crawler application, what it did is it, so we gave an input URL set to this crawler application.
+
+57
+00:12:54,512 --> 00:12:54,631
+Okay.
+
+58
+00:12:55,232 --> 00:13:01,111
+It sent, it constructed HTTP request with each URL.
+
+59
+00:13:01,471 --> 00:13:09,111
+It sent these HTTP requests to the HTTP servers where the HTML pages are located.
+
+60
+00:13:09,211 --> 00:13:16,952
+and then it retrieved the HTML documents
+
+61
+00:13:16,952 --> 00:13:18,771
+in response to this request.
+
+62
+00:13:19,831 --> 00:13:19,891
+Okay.
+
+63
+00:13:20,152 --> 00:13:21,372
+Now, as you see,
+
+64
+00:13:21,672 --> 00:13:27,012
+so we have these HTML documents,
+
+65
+00:13:27,292 --> 00:13:30,491
+okay, retrieved from the HTTP servers.
+
+66
+00:13:31,431 --> 00:13:33,491
+Now, what it's going to do,
+
+67
+00:13:33,491 --> 00:13:36,071
+it's going to extract the URLs
+
+68
+00:13:36,071 --> 00:13:45,611
+from the content of html pages okay it downloaded three html pages and then it will extract new
+
+69
+00:13:45,611 --> 00:13:54,631
+urls from these html pages okay now you see that one of the html documents downloaded is
+
+70
+00:13:54,631 --> 00:14:05,872
+yahoo entertainment page now you see uh so it extracted new urls okay and then after
+
+71
+00:14:05,872 --> 00:14:14,112
+extracting the new urls it again constructed the http request and send it to the http servers where
+
+72
+00:14:14,112 --> 00:14:23,232
+the html documents are located located and then it also downloaded these newly this new html documents
+
+73
+00:14:24,592 --> 00:14:29,631
+now it will keep repeating doing this until a stopping condition
+
+74
+00:14:30,899 --> 00:14:34,899
+Okay, it will keep doing this until a stopping condition.
+
+75
+00:14:36,519 --> 00:14:56,339
+Now, what could be the stopping condition? So, so, so what is the condition that the crawler will stop crawling the web? Okay, now there may be different stopping condition. For example, you may say that, okay, and my, my crawler application will stop.
+
+76
+00:14:56,339 --> 00:15:01,279
+if the crawler application downloaded certain number of pages.
+
+77
+00:15:03,139 --> 00:15:16,659
+Another stupid condition could be my crawler application will stop if the number of levels starting from the seed URL reaches two, two, three.
+
+78
+00:15:17,819 --> 00:15:20,779
+So this is the root seed URLs.
+
+79
+00:15:21,319 --> 00:15:23,959
+So one level, second level and third level.
+
+80
+00:15:23,959 --> 00:15:37,639
+okay so you can say that after third level of crawling the web my crawler application will stop okay so therefore you may have a different stopping condition for your crawler
+
+81
+00:15:40,519 --> 00:15:49,479
+okay as you see in the previous page I showed you a search and we were looking for this particular
+
+82
+00:15:49,480 --> 00:16:05,480
+web page, okay, among the search results, and you see the crawler application had to download all these pages in order for us, in order to show us this particular web page.
+
+83
+00:16:10,964 --> 00:16:39,763
+okay. Now the crawler applications are running on on the on a daily basis okay and obviously not only the big search engines have their crawlers but also the there are different types of crawlers that are running on a regular basis. Okay now all these crawler applications have
+
+84
+00:16:40,964 --> 00:17:01,943
+may have different names. They may have different names, but they refer to the same thing. Crawler, spider, robot, web agent. You may see applications on the web which have these names, but they refer to the same thing.
+
+85
+00:17:01,943 --> 00:17:16,603
+famous crawler applications like Google crawler applications is Googlebot, MSN, Bing spoiler, crawler applications is MSNbot, etc.
+
+86
+00:17:16,603 --> 00:17:31,923
+Okay, now by estimation, 60% of the internet bandwidth is consumed by the crawlers, okay, because they constantly keep
+
+87
+00:17:31,923 --> 00:17:58,463
+downloading the websites from different HTTP servers. Okay. And they're doing this all the time because they want to keep their index as large as possible and also as fresh as possible. So what does fresh means here? So they want to keep their index up to date. Okay.
+
+88
+00:18:05,460 --> 00:18:13,059
+The next question is, why do we have crawlers? Why do we need crawler applications? Okay.
+
+89
+00:18:14,439 --> 00:18:21,139
+First off, so all of us are using search applications in order to search the web.
+
+90
+00:18:22,019 --> 00:18:33,939
+So therefore, in order to support the search engines, we need crawler applications because the crawler applications are downloading the HTML pages into a central location
+
+91
+00:18:33,939 --> 00:18:35,999
+and allows us to create index.
+
+92
+00:18:36,640 --> 00:18:36,759
+Okay.
+
+93
+00:18:36,980 --> 00:18:37,919
+And remember,
+
+94
+00:18:38,160 --> 00:18:40,759
+when we were covering the information retrieval
+
+95
+00:18:40,759 --> 00:18:41,759
+and web search engine,
+
+96
+00:18:41,899 --> 00:18:43,259
+which was the previous chapter,
+
+97
+00:18:44,039 --> 00:18:47,680
+we said that all the search on real time
+
+98
+00:18:47,680 --> 00:18:49,519
+is happening on the index.
+
+99
+00:18:50,079 --> 00:18:50,419
+Okay.
+
+100
+00:18:50,699 --> 00:18:51,360
+So therefore,
+
+101
+00:18:51,360 --> 00:18:54,339
+we should be able to create an index
+
+102
+00:18:54,339 --> 00:18:56,640
+so that a search can be done.
+
+103
+00:18:57,460 --> 00:19:01,460
+So crawlers are allowing us to create an index,
+
+104
+00:19:02,180 --> 00:19:03,099
+inverted index.
+
+105
+00:19:03,939 --> 00:19:13,339
+Okay, now, in addition to supporting the universal search engines, there are also other types of crawlers, for example.
+
+106
+00:19:14,540 --> 00:19:20,839
+So there are vertical or specialized crawlers for different websites.
+
+107
+00:19:20,839 --> 00:19:28,699
+For example, there are specialized crawlers for news websites.
+
+108
+00:19:29,599 --> 00:19:33,659
+Okay, there are specialized crawlers for shopping websites.
+
+109
+00:19:33,939 --> 00:19:38,099
+for papers, for recipes, for reviews, okay?
+
+110
+00:19:39,039 --> 00:19:41,839
+And some of you, some of the projects,
+
+111
+00:19:42,319 --> 00:19:46,099
+term projects, so we'll implement a crawler, okay?
+
+112
+00:19:46,279 --> 00:19:50,679
+Because you want to have a specialized website
+
+113
+00:19:50,679 --> 00:19:56,079
+which will go and extract information from other websites
+
+114
+00:19:56,079 --> 00:20:00,839
+and present to the user in a hybrid manner, okay?
+
+115
+00:20:00,839 --> 00:20:09,379
+So therefore, some of you picked the topic of implementing a vertical crawler, okay?
+
+116
+00:20:11,219 --> 00:20:12,460
+Crawler application.
+
+117
+00:20:13,719 --> 00:20:20,099
+Now, what are the reasons that we might want to have a crawler application?
+
+118
+00:20:20,460 --> 00:20:22,040
+Business intelligence, okay?
+
+119
+00:20:22,359 --> 00:20:29,219
+For example, if you are in a business and you would like to find out what your competitors are doing,
+
+120
+00:20:29,219 --> 00:20:37,139
+then you would use a crawler application okay what crawler application is doing in this
+
+121
+00:20:38,099 --> 00:20:46,019
+in this case they are crawling the web for your competitors and find out what other activities are
+
+122
+00:20:46,019 --> 00:20:58,340
+doing okay another reason for crawlers is you would like to monitor some websites for that you
+
+123
+00:20:58,340 --> 00:21:04,820
+are interested in okay you would like to monitor if there are new activities on the website so what
+
+124
+00:21:04,820 --> 00:21:12,099
+are they doing are there are there new updates on their websites you can use your crawler in order
+
+125
+00:21:12,099 --> 00:21:21,700
+to do that and also there are crawlers that specifically use for spamming okay and these
+
+126
+00:21:21,700 --> 00:21:30,780
+types of crawlers are harvesting emails from the web so in other words they're finding the emails
+
+127
+00:21:30,780 --> 00:21:38,219
+belongs to the users and they're creating an email database okay and once they have this email
+
+128
+00:21:38,219 --> 00:21:43,419
+database they can use it for different purposes they can use it for spamming they can use it for
+
+129
+00:21:43,419 --> 00:21:52,219
+phishing etc
+
+130
+00:21:48,660 --> 00:22:13,859
+Okay, I have shown you this picture before and so remember when in this picture before we focused on web content mining which means that after all the websites are downloaded into a central location we conducted a text analysis and created an inverted index.
+
+131
+00:22:13,859 --> 00:22:22,119
+and the search happened on top of the inverted index in which created the HITS that correspond to the search.
+
+132
+00:22:22,499 --> 00:22:23,139
+Okay.
+
+133
+00:22:23,679 --> 00:22:28,779
+Now, this is what we covered when we learned the web content mind.
+
+134
+00:22:29,379 --> 00:22:33,340
+Now, here you see that another application here, which is a crawler.
+
+135
+00:22:33,660 --> 00:22:37,539
+Now, this is the application that we are going to talk about.
+
+136
+00:22:37,539 --> 00:22:54,579
+now the crawler is responsible for finding the html documents on the web downloading it and and storing on a centralized page repository okay
+
+137
+00:22:58,996 --> 00:23:02,216
+Now, obviously, there are different types of crawlers.
+
+138
+00:23:02,895 --> 00:23:03,035
+Okay.
+
+139
+00:23:03,135 --> 00:23:10,815
+And this picture shows you the different types of crawlers that are being used.
+
+140
+00:23:11,655 --> 00:23:11,895
+Okay.
+
+141
+00:23:11,895 --> 00:23:16,775
+Now, so let's look at the categories of the crawlers.
+
+142
+00:23:17,176 --> 00:23:23,695
+First, crawlers can be categorized under two main categories.
+
+143
+00:23:23,836 --> 00:23:25,615
+One of them is universal crawlers.
+
+144
+00:23:25,855 --> 00:23:27,635
+The other one is preferential crawlers.
+
+145
+00:23:27,635 --> 00:23:34,815
+So universal crawlers are the crawlers that are supporting the general search engines.
+
+146
+00:23:35,555 --> 00:23:41,516
+And these types of crawlers are responsible for finding any types of HTML documents.
+
+147
+00:23:42,575 --> 00:23:53,235
+Now the preferential crawlers is different because they're only finding the HTML documents that is in certain topic.
+
+148
+00:23:53,235 --> 00:24:05,435
+Okay, preferential crawlers are only finding HTML documents that are in certain topic, but universal crawlers are finding any kinds of HTML pages.
+
+149
+00:24:06,576 --> 00:24:11,655
+Now the preferential crawlers can also be devised under two categories.
+
+150
+00:24:11,655 --> 00:24:23,175
+So the first one is focus crawler. Now the focus crawler is responsible for creating an index again for certain topic.
+
+151
+00:24:23,235 --> 00:24:32,695
+For example, if you have a focus crawler, this means that you want to create an index on certain topic.
+
+152
+00:24:32,955 --> 00:24:42,195
+For example, you may want to have a focus crawler for electronics e-commerce websites.
+
+153
+00:24:43,195 --> 00:24:53,035
+Okay, so which means that you want to create an index of electronics e-commerce websites.
+
+154
+00:24:53,235 --> 00:25:08,175
+Okay, and this means that you will support a focused search engine. Your search engine will only enable search on top of e-commerce websites, electronics e-commerce websites. Okay.
+
+155
+00:25:08,175 --> 00:25:15,795
+And the other types of crawler is topical crawler.
+
+156
+00:25:16,355 --> 00:25:21,135
+In topical crawler, we don't create an index.
+
+157
+00:25:22,615 --> 00:25:22,755
+Okay.
+
+158
+00:25:23,875 --> 00:25:35,675
+Instead, when we conduct the search, the crawler starts crawling the web, which means that we are crawling the web during the search.
+
+159
+00:25:36,795 --> 00:25:42,296
+Okay.
+
+160
+00:25:43,455 --> 00:25:50,275
+What happens here is that you enter a search query and enter the search button.
+
+161
+00:25:51,175 --> 00:25:51,315
+Okay.
+
+162
+00:25:51,615 --> 00:26:05,235
+And as soon as you start the search, the topical crawler starts looking for HTML pages that matches to this topic.
+
+163
+00:26:05,755 --> 00:26:06,515
+Okay.
+
+164
+00:26:06,515 --> 00:26:21,515
+And as it is searching the web for this topic, once the crawler finds corresponding topics, it downloads them.
+
+165
+00:26:22,135 --> 00:26:31,855
+And then it shows the results on the graphical user interface to the end user.
+
+166
+00:26:31,856 --> 00:26:45,856
+Now the topical crawler can also be categorized under two categories based on the type that it is searching the web.
+
+167
+00:26:46,644 --> 00:27:13,324
+Okay, now the first one is adaptable topical crawler. The second one is static topical crawler. Now the static topical crawler is traversing the web based on certain algorithms, which means that static topical crawler is searching the web based on predefined crawling algorithms.
+
+168
+00:27:13,324 --> 00:27:22,383
+okay it can search the web based on a page rank traversal algorithm best first traversal algorithm
+
+169
+00:27:22,383 --> 00:27:31,544
+breadth first or depth first as a traversal algorithm okay now these algorithms are already
+
+170
+00:27:31,544 --> 00:27:40,283
+defining the way that crawler is going to search the web now the second type of crawler is adoptical
+
+171
+00:27:40,283 --> 00:27:48,803
+tropical crawler and here as we are crawling the web okay let's say we started with a keyword
+
+172
+00:27:48,803 --> 00:27:57,563
+okay keyword which means that web data mining okay now as we are crawling the web we will
+
+173
+00:27:57,563 --> 00:28:05,103
+encounter with new html pages and from these html pages we will extract new keywords
+
+174
+00:28:05,103 --> 00:28:18,364
+For example, as we are searching the web data mining, we encountered a web page where there is also information retrieval keywords.
+
+175
+00:28:19,023 --> 00:28:27,584
+And the information retrieval keywords have high frequency in that HTML page.
+
+176
+00:28:27,583 --> 00:28:41,083
+In that case, what adaptive topical crawler is going to do is going to add the information retrieval keywords to the web data mining keyword.
+
+177
+00:28:41,083 --> 00:28:52,083
+And from that point forward, it's going to search not only web data mining, and it's going to search web data mining and information retrieval.
+
+178
+00:28:52,083 --> 00:29:01,004
+retrieval. So which means that this type of crawler is learning from the HTML pages that it crawls on
+
+179
+00:29:01,004 --> 00:29:10,563
+real time. So that's therefore it is adaptive. Okay. And this adaptable crawler has also different
+
+180
+00:29:10,563 --> 00:29:21,663
+types. So which are in doing the same thing. They are learning from the HTML page pages that are
+
+181
+00:29:21,663 --> 00:29:23,863
+being crawled in real time.
+
+182
+00:29:33,076 --> 00:29:47,076
+Okay. Now let's talk about a basic crawler and I will introduce the modules of a basic crawler and then we will go into details of implementation.
+
+183
+00:29:50,195 --> 00:29:53,275
+Now, this is a basic sequential crawler.
+
+184
+00:29:54,475 --> 00:30:01,215
+And so let us see how this particular crawler is working.
+
+185
+00:30:01,775 --> 00:30:09,575
+Now, you see the rectangle shapes figures here.
+
+186
+00:30:10,195 --> 00:30:10,315
+Okay.
+
+187
+00:30:10,616 --> 00:30:15,015
+Now, these rectangle-shaped figures are indicating the modules.
+
+188
+00:30:15,635 --> 00:30:15,775
+Okay.
+
+189
+00:30:15,775 --> 00:30:21,995
+And here, so there is another type of figure here, which indicates the input.
+
+190
+00:30:22,736 --> 00:30:29,175
+In this particular case, the input to the crawler applications is the seed URLs.
+
+191
+00:30:31,216 --> 00:30:31,515
+Okay.
+
+192
+00:30:31,956 --> 00:30:39,135
+Now, every crawler application at the beginning is receiving a seed URLs from the user.
+
+193
+00:30:39,135 --> 00:30:48,275
+Now, let's see how the basic crawler works, starting from the first module, which is initialize frontier.
+
+194
+00:30:49,035 --> 00:30:57,195
+Now, this particular module is taking the C2 URLs, and it's creating a frontier list.
+
+195
+00:30:58,515 --> 00:31:02,815
+And this is usually implemented by using a linked list.
+
+196
+00:31:02,815 --> 00:31:09,735
+okay and the linked list is usually kept in the physical memory
+
+197
+00:31:09,735 --> 00:31:20,155
+okay now then there is another module which is responsible for taking the head of the linked list
+
+198
+00:31:20,155 --> 00:31:31,855
+which is the head of the frontier list okay and then creates extracts the url
+
+199
+00:31:31,855 --> 00:31:34,615
+from this node.
+
+200
+00:31:35,735 --> 00:31:40,995
+And then it gives that URL to the next module.
+
+201
+00:31:40,995 --> 00:31:46,735
+Now, this module is responsible for taking the head
+
+202
+00:31:46,735 --> 00:31:51,155
+from the frontier list and extracting the URL
+
+203
+00:31:51,155 --> 00:31:52,455
+from that head node.
+
+204
+00:31:53,575 --> 00:31:59,755
+Now, this particular node is retrieving the URL
+
+205
+00:31:59,755 --> 00:32:02,735
+from the previous module.
+
+206
+00:32:03,115 --> 00:32:05,916
+And then after it retrieves the URL,
+
+207
+00:32:06,175 --> 00:32:09,655
+what it does is it constructs an HTTP request
+
+208
+00:32:09,655 --> 00:32:15,216
+and it sends the HTTP request via internet
+
+209
+00:32:15,216 --> 00:32:18,515
+to the HTTP server, okay,
+
+210
+00:32:18,515 --> 00:32:21,515
+where this URL is pointing to.
+
+211
+00:32:22,776 --> 00:32:26,015
+And then it retrieves the HTML page
+
+212
+00:32:26,015 --> 00:32:28,655
+by HTTP response object.
+
+213
+00:32:29,755 --> 00:32:40,235
+Okay, so once it retrieves the HTTP response object, it extracts the HTML page and it gives the HTML page to the next node.
+
+214
+00:32:42,335 --> 00:32:56,076
+Okay, now this node is responsible, fetch node is responsible for conducting the HTTP request and resolving the HTTP response object.
+
+215
+00:32:56,075 --> 00:33:00,795
+It extracts the HTML document and it gives to the next node.
+
+216
+00:33:02,555 --> 00:33:10,735
+As you see, this particular module is responsible for extracting the URLs from the HTML documents.
+
+217
+00:33:11,675 --> 00:33:11,775
+Okay.
+
+218
+00:33:12,175 --> 00:33:22,295
+Every HTML document which is handed over by the previous module is processed for extracting the URLs.
+
+219
+00:33:22,295 --> 00:33:32,075
+Once the URLs are extracted, then this module is responsible for putting these URLs back into the frontier list.
+
+220
+00:33:33,475 --> 00:33:33,595
+Okay.
+
+221
+00:33:35,975 --> 00:33:46,595
+Now, after this, what this module is doing, it's handing over the HTML documents to the next module.
+
+222
+00:33:47,635 --> 00:33:55,415
+And next module is taking the HTML documents and it is responsible for storing the HTML documents into the repository.
+
+223
+00:33:56,035 --> 00:33:56,755
+Okay.
+
+224
+00:33:57,275 --> 00:34:07,615
+Which means that the crawler applications not only is responsible for extracting the URLs to find out which next URLs that it's going to go.
+
+225
+00:34:07,795 --> 00:34:16,715
+In addition, it is responsible for creating the HTML document repository so that the index can be created.
+
+226
+00:34:16,715 --> 00:34:26,016
+Remember, the index is created by using all the HTML documents which are crawled by the crawler application.
+
+227
+00:34:28,016 --> 00:34:36,635
+After the storage is conducted, we check whether we achieve the stopping criteria.
+
+228
+00:34:36,635 --> 00:34:46,295
+If not, we go back to the DQ module, which is responsible for retrieving another URL from the frontier list.
+
+229
+00:34:46,715 --> 00:35:00,535
+Okay, now we may keep going until there is no URLs in the frontier list, we may keep going until we reach maximum number of URLs that we are supposed to retrieve.
+
+230
+00:35:00,535 --> 00:35:07,195
+Okay, the stupid criteria could differ.
+
+231
+00:35:09,535 --> 00:35:15,795
+Now, obviously, there are different ways for traversing the web graph.
+
+232
+00:35:15,795 --> 00:35:23,675
+Okay, this means that there are different ways for implementing the crawler.
+
+233
+00:35:23,676 --> 00:35:36,356
+see so these are the two static crawlers and widely used static crawlers now the first one
+
+234
+00:35:36,356 --> 00:35:45,115
+is traversing the web breadth breadth wise which means that so it is searching the web
+
+235
+00:35:45,115 --> 00:35:53,955
+web level-wise, okay, until it reaches the end nodes, which is the leaf nodes, okay.
+
+236
+00:35:54,295 --> 00:36:04,296
+Now, breadth-first search is also known as first-in-first-out type traversal, okay,
+
+237
+00:36:04,296 --> 00:36:21,775
+In other words, which means that if you put the node firstly into the frontier list, that node will be extracted firstly again from the frontier list.
+
+238
+00:36:22,275 --> 00:36:23,775
+Okay, first in, first out.
+
+239
+00:36:24,676 --> 00:36:32,376
+Now, here you see that, so this illustrates a graph from the web.
+
+240
+00:36:32,375 --> 00:36:40,295
+and at the beginning so you have the seed urls which it turned out to be the root node of your
+
+241
+00:36:40,295 --> 00:36:47,975
+crawled web tree okay this means that you are going to start crawling the web starting from
+
+242
+00:36:47,975 --> 00:36:56,395
+this node okay and so you retrieve this node you extracted the urls and now it turns out that there
+
+243
+00:36:56,395 --> 00:37:06,715
+two URLs. Okay now the bread first search what it is going to do it's going to first download this
+
+244
+00:37:06,715 --> 00:37:14,315
+node and then next it will download this node. Okay and then what it's going to do it's going to
+
+245
+00:37:14,315 --> 00:37:22,715
+extract the URLs from this node and this node as well. Okay then it will start downloading
+
+246
+00:37:22,716 --> 00:37:28,555
+the child nodes of this node, okay?
+
+247
+00:37:29,275 --> 00:37:34,475
+And when it completes that, it will go back to this node,
+
+248
+00:37:34,555 --> 00:37:37,335
+and it will download the child node of this one.
+
+249
+00:37:37,796 --> 00:37:41,415
+And as you can see, with breadth-first search, okay,
+
+250
+00:37:41,716 --> 00:37:44,856
+it's going to crawl the web level-wise.
+
+251
+00:37:45,748 --> 00:37:59,047
+Okay, that's why we are going to call it first in first off. And let's look at the depth first search, which is the second type of static graph traversal algorithm.
+
+252
+00:37:59,047 --> 00:38:06,067
+and in this particular algorithm as you see so we downloaded the first node which is the root node
+
+253
+00:38:06,067 --> 00:38:13,667
+it has two child nodes and this time we are starting from the first node okay and we are
+
+254
+00:38:13,667 --> 00:38:21,987
+downloading it it turns out that it has two childs and then we we go and download its first child
+
+255
+00:38:21,987 --> 00:38:30,067
+okay and it turns out that this one has two charts and then we go and download a
+
+256
+00:38:31,267 --> 00:38:38,307
+chart of this note okay and then it turns out that this has not chart notes and then we go
+
+257
+00:38:38,307 --> 00:38:45,827
+one level back and then download the second chart so once we consume all the children of this note
+
+258
+00:38:45,827 --> 00:38:54,547
+and we go one level back and then we go the uh to the next note which is the children of the upper
+
+259
+00:38:54,547 --> 00:39:03,507
+level nodes okay and this way what we are trying to do we are consuming all the nodes or all the
+
+260
+00:39:03,507 --> 00:39:09,587
+branch nodes uh all the nodes under one branch once we complete downloading all the
+
+261
+00:39:09,587 --> 00:39:19,187
+nodes under the first branch, then we go to the second branch. Then we similarly download
+
+262
+00:39:19,187 --> 00:39:27,507
+all the nodes in the second branch. Now this type of graph traversal is implementing the
+
+263
+00:39:27,507 --> 00:39:35,587
+last in first out. If you remember your data structure course, the first in first out
+
+264
+00:39:35,587 --> 00:39:43,427
+type of implementation is we are using Q for this implementation. Last in first out type
+
+265
+00:39:43,427 --> 00:39:49,827
+implementation we are using stack. These are two different data structures that we are using. Okay.
+
+266
+00:39:54,996 --> 00:40:22,996
+Now this is a simple implementation of a crawler and this implementation is in Perl programming language. And as you see, so it's very simple to read. Okay. It's not complicated. Now, let us start how the how we are implementing this sequential crawler in Perl.
+
+267
+00:40:27,347 --> 00:40:34,547
+Now, as you see, we have a set of URLs, which is in a file.
+
+268
+00:40:35,547 --> 00:40:35,667
+Okay.
+
+269
+00:40:36,047 --> 00:40:51,287
+And all the URLs located in that file is being read, and they are inserted into the frontier list.
+
+270
+00:40:51,287 --> 00:41:02,667
+OK, remember that this is the frontier list, which we will keep using in order to find out which URLs to crawl next.
+
+271
+00:41:04,667 --> 00:41:16,247
+OK, now once the frontier list is constructed, then we have a while loop and we have to do this while loop until the stopic condition.
+
+272
+00:41:16,247 --> 00:41:24,247
+So in this particular case, stoping condition is the total number of URLs that needs to be downloaded.
+
+273
+00:41:25,307 --> 00:41:25,907
+Okay.
+
+274
+00:41:26,147 --> 00:41:30,727
+The total number of URLs that needs to be downloaded should be less than maximum.
+
+275
+00:41:31,367 --> 00:41:31,528
+Okay.
+
+276
+00:41:31,787 --> 00:41:34,247
+So which in this case is configurable.
+
+277
+00:41:34,727 --> 00:41:42,247
+And so you need to also, in addition to the seed URLs, you need to also give this to your crawler application.
+
+278
+00:41:42,568 --> 00:41:42,847
+Okay.
+
+279
+00:41:43,047 --> 00:41:46,007
+So what is the maximum stopping condition?
+
+280
+00:41:46,007 --> 00:41:48,547
+what is the maximum number of URLs to be crawled.
+
+281
+00:41:49,907 --> 00:41:53,747
+Okay, now in this while loop, what we are going to do,
+
+282
+00:41:53,847 --> 00:42:00,107
+we are going to continue this while loop until there is no URL left in the frontier list
+
+283
+00:42:00,107 --> 00:42:06,307
+or until we reach the maximum number of URLs that we are supposed to crawl.
+
+284
+00:42:07,227 --> 00:42:09,127
+So let's take a look at the while loop.
+
+285
+00:42:09,127 --> 00:42:22,507
+At the beginning, what we are doing is we are taking the first URL from the frontier list and putting and assigning into a temporary variable, which is here is the next link.
+
+286
+00:42:23,028 --> 00:42:23,127
+Okay.
+
+287
+00:42:23,248 --> 00:42:27,667
+This is the URL that needs to be crawled.
+
+288
+00:42:28,847 --> 00:42:29,447
+Okay.
+
+289
+00:42:29,708 --> 00:42:35,788
+Now, here is you see there is a fetch function, which takes the URL to be downloaded.
+
+290
+00:42:36,368 --> 00:42:36,687
+Okay.
+
+291
+00:42:36,687 --> 00:42:46,208
+So this function is downloading the HTML page that is corresponding to this link.
+
+292
+00:42:47,307 --> 00:42:53,708
+And here you see the HTML page is assigned to this temporary variable.
+
+293
+00:42:54,967 --> 00:43:01,627
+Now you see that here we are adding this HTML page into our repository.
+
+294
+00:43:01,627 --> 00:43:05,948
+and also what we are going to do,
+
+295
+00:43:06,088 --> 00:43:11,047
+we are going to extract the links from this HTML page.
+
+296
+00:43:11,568 --> 00:43:14,907
+But as we are extracting the HTML page,
+
+297
+00:43:15,568 --> 00:43:17,728
+URLs from this HTML page,
+
+298
+00:43:18,127 --> 00:43:21,948
+we want to make sure that the URLs that we are extracting,
+
+299
+00:43:22,767 --> 00:43:25,208
+among the URL that we are extracting,
+
+300
+00:43:25,827 --> 00:43:28,167
+there is no next link.
+
+301
+00:43:28,167 --> 00:43:33,367
+So which means that we don't want to extract the URL of the parent page.
+
+302
+00:43:34,447 --> 00:43:34,567
+Okay.
+
+303
+00:43:34,687 --> 00:43:38,527
+We don't want to keep downloading the same page.
+
+304
+00:43:39,067 --> 00:43:51,487
+So therefore, when we extract links, we want to make sure that among the links that we are extracting, there is no URL of the current page.
+
+305
+00:43:51,487 --> 00:44:00,708
+okay now all the urls that are extracted extracted are assigned to another temporary variable links
+
+306
+00:44:00,708 --> 00:44:08,928
+and then what we are going to do next we are going to put the urls in this temporary variable
+
+307
+00:44:08,928 --> 00:44:15,728
+back to the frontier list okay we are going to push all the urls to back to the frontier list
+
+308
+00:44:15,727 --> 00:44:19,487
+And then we will go back and we will do this.
+
+309
+00:44:20,576 --> 00:44:31,435
+again, until we reach this stupid condition or until there is no URLs left in the frontier list. So this is the simplest implementation of a crawler.
+
+310
+00:44:33,515 --> 00:44:48,035
+Okay, but obviously, even though it looks simple, there are implementation issues that needs to be solved in each step of this crawler application.
+
+311
+00:44:48,035 --> 00:44:56,035
+We will talk about these implementation issues in detail.
+
+312
+00:45:02,036 --> 00:45:06,335
+Now, one of the implementation issues, we don't want to fetch the same page.
+
+313
+00:45:07,036 --> 00:45:07,835
+Okay.
+
+314
+00:45:08,375 --> 00:45:17,395
+So this means that we want to keep a table that will show us the visited web pages.
+
+315
+00:45:18,515 --> 00:45:18,835
+Okay.
+
+316
+00:45:19,536 --> 00:45:26,475
+So remember, I had this, right?
+
+317
+00:45:26,475 --> 00:45:40,475
+So when I wanted to extract the URLs from an HTML page, I wanted to make sure that among the URLs that I am retrieving, there is no URL of the current page.
+
+318
+00:45:42,175 --> 00:45:54,155
+Okay, if I put the URL of the current page into the frontier list, okay, then this means that my crawler application will retrieve the same document again.
+
+319
+00:45:54,335 --> 00:45:56,155
+So we don't want to do this.
+
+320
+00:45:56,475 --> 00:46:09,355
+So therefore, so we want to, before we put any URL back to the frontier list, we want to check whether that URL is already downloaded.
+
+321
+00:46:10,295 --> 00:46:10,635
+Okay.
+
+322
+00:46:11,855 --> 00:46:18,875
+Now, the second implementation issue is that frontier list grows very fast.
+
+323
+00:46:19,815 --> 00:46:19,995
+Okay.
+
+324
+00:46:20,195 --> 00:46:22,455
+So which means that every time.
+
+325
+00:46:24,855 --> 00:46:25,575
+Okay.
+
+326
+00:46:25,576 --> 00:46:33,696
+Every time I download a page, I will extract many URLs and I will put it back to FrontierList.
+
+327
+00:46:34,196 --> 00:46:39,855
+And then from one URL, I will retrieve many URLs.
+
+328
+00:46:41,095 --> 00:46:44,916
+One URL will create many different URLs.
+
+329
+00:46:45,256 --> 00:46:50,775
+And so if you keep doing this, the FrontierList will grow very fast.
+
+330
+00:46:50,775 --> 00:47:16,995
+So in order to provide a solution to this, okay, now we want to crawl as many pages as possible, given a certain time, obviously, but at the same time, we want to crawl highly important pages.
+
+331
+00:47:16,995 --> 00:47:37,435
+So which means that now as we are putting the URLs back into the frontier list, okay, newly extracted URLs into the frontier list, we want to put the URLs in a order where we can prioritize the importance of the URLs.
+
+332
+00:47:37,435 --> 00:47:53,175
+Okay, so we want to put the highly important URLs at the head of the frontier list so that during the time that we will crawl the web, we can crawl highly important pages.
+
+333
+00:47:53,175 --> 00:48:17,015
+Okay, so therefore, since the frontier list will grow very fast, we don't want to crawl unimportant pages. So we want to put the URLs with high importance to the head of the URL frontier list so that we can keep crawling the highly important pages.
+
+334
+00:48:17,015 --> 00:48:25,175
+Okay. The other implementation issue is related with the fetcher.
+
+335
+00:48:27,015 --> 00:48:34,536
+Okay. Now, as you see in this crawler application, so one module is responsible for fetching the
+
+336
+00:48:34,536 --> 00:48:43,495
+URLs from the web environment. Now, when the fetcher is running, it will create an HTTP request,
+
+337
+00:48:43,495 --> 00:48:48,695
+send it to the http server it is it will receive an http response object
+
+338
+00:48:49,415 --> 00:48:57,495
+as you see now this process includes the network latency
+
+339
+00:48:54,804 --> 00:49:15,564
+And the network latency sometimes could be high because the HTTP server might be in some location on the web where the network latency to reach that HTTP server will be very high.
+
+340
+00:49:16,103 --> 00:49:20,804
+And maybe the bandwidth to that HTTP server will be limited.
+
+341
+00:49:20,804 --> 00:49:30,963
+Okay, so therefore the fetcher might wait long time for some pages.
+
+342
+00:49:32,164 --> 00:49:38,503
+Okay, fetcher might have to wait to retrieve some pages for a long time.
+
+343
+00:49:38,984 --> 00:49:40,263
+And we don't want that.
+
+344
+00:49:41,024 --> 00:49:44,003
+We want the fetcher to wait limited time.
+
+345
+00:49:44,644 --> 00:49:48,984
+Okay, which means that we will put a timeout when we implement the fetcher.
+
+346
+00:49:48,984 --> 00:50:13,384
+In other words, when the feature runs okay so when it sends an HTTP request to an HTTP server, if the HTTP response is not coming back after certain timeout time, then a feature will give up for retrieving that page it will move to another URL.
+
+347
+00:50:13,384 --> 00:50:24,384
+Okay. So therefore the feature and not feature module has to be robots and we have to have a timeout mechanism.
+
+348
+00:50:24,383 --> 00:50:36,643
+And also, we don't want to download any type of documents from the web.
+
+349
+00:50:36,643 --> 00:50:42,903
+We only download the documents that we can index.
+
+350
+00:50:43,283 --> 00:50:44,863
+We can parse and index.
+
+351
+00:50:45,503 --> 00:50:52,803
+So this means that there are different types of documents on the web, okay, which have different extensions.
+
+352
+00:50:52,804 --> 00:51:04,804
+And so therefore, we only want to download the HTML documents, Word documents, text documents, which we can parse and index.
+
+353
+00:51:04,804 --> 00:51:25,643
+Now, in order to distinguish whether a document is a type that we want, so first what we are going to do, we are going to issue an HTTP command, which will get the content type of the document.
+
+354
+00:51:25,643 --> 00:51:32,643
+and we will check with the content type of the document,
+
+355
+00:51:33,604 --> 00:51:36,744
+whether it is something that we can parse.
+
+356
+00:51:36,744 --> 00:51:42,623
+If yes, then we will issue another HTTP request
+
+357
+00:51:42,623 --> 00:51:46,583
+to retrieve the HTML document.
+
+358
+00:51:47,464 --> 00:51:51,804
+And the command for retrieving the HTML document
+
+359
+00:51:51,804 --> 00:51:52,903
+is usually get.
+
+360
+00:51:55,643 --> 00:52:04,744
+So instead of hat, so we will be using get as for retrieving the HTML document.
+
+361
+00:52:04,744 --> 00:52:17,063
+But first, we are going to issue a hat HTTP command, which will in return return the type of the document that we want to crawl.
+
+362
+00:52:17,063 --> 00:52:25,743
+okay now for the feature we said that we will we will use a timeout mechanism
+
+363
+00:52:25,743 --> 00:52:30,743
+and also in addition to that we can also
+
+364
+00:52:30,743 --> 00:52:40,244
+we can also put another rule which says that we will only download documents which has
+
+365
+00:52:40,244 --> 00:52:45,603
+up to 100 kilobytes size okay
+
+366
+00:52:46,195 --> 00:53:09,135
+sometimes there may be documents which are HTML documents or Word documents that we could download. But if it turns out that that particular document is way too large, okay, in that particular case, we can decide. We can say if the document size is above 100k, I will not download it.
+
+367
+00:53:09,135 --> 00:53:25,695
+or we can say I will only download up to 100k size of any document which means that instead of downloading the whole document you are downloading the portion of the document.
+
+368
+00:53:28,495 --> 00:53:35,376
+Okay now another implementation issue is related with parsing so remember here
+
+369
+00:53:35,376 --> 00:53:47,975
+when we fetch the page here, we need to parse the HTML document in order to retrieve the, in order to extract the URLs, right?
+
+370
+00:53:51,956 --> 00:54:11,615
+Okay, but HTML documents usually on the web are not written very well, which means that all the HTML documents, they need to follow some grammar rules.
+
+371
+00:54:11,615 --> 00:54:28,956
+And they need to have certain tags in it so that the parsers can understand the content of the HTML in a proper way.
+
+372
+00:54:29,555 --> 00:54:30,275
+Okay.
+
+373
+00:54:30,935 --> 00:54:39,996
+Now, most of the time, HTML documents are not written very well.
+
+374
+00:54:39,995 --> 00:54:44,375
+it's either related the people or the authors of the websites.
+
+375
+00:54:44,715 --> 00:54:46,855
+They are not using the editors.
+
+376
+00:54:47,215 --> 00:54:52,155
+They're writing their websites manually,
+
+377
+00:54:52,555 --> 00:54:55,135
+or there could be other reasons,
+
+378
+00:54:55,735 --> 00:55:03,415
+but they are missing some tags that are important for the parsers
+
+379
+00:55:03,415 --> 00:55:06,275
+to understand the content of the HTML documents.
+
+380
+00:55:07,215 --> 00:55:07,316
+Okay.
+
+381
+00:55:07,316 --> 00:55:28,996
+Now, so this is highly important. For example, browsers that we are currently using, Google Chrome, Microsoft Edge, etc., they can parse the HTML documents even though they have some missing elements in it.
+
+382
+00:55:28,996 --> 00:55:50,256
+Okay, which means that they are intelligently so understand the missing parts of the HTML documents, and they can construct the HTML and render the HTML and show to the end user, regardless of the missing parts.
+
+383
+00:55:50,255 --> 00:56:08,255
+And so this means that our parser should also work the same way. Our crawler should include a parser which can understand the HTML documents, even though they may somehow have missing elements.
+
+384
+00:56:08,256 --> 00:56:27,375
+Okay, so in order to do this, what the parse in parser implementations, we are using a document object model three, and we are trying to construct a tree which is called DOM tree out of the HTML documents.
+
+385
+00:56:27,375 --> 00:56:35,855
+and once we constructed the DOM tree, okay, and then we can parse the content of it, okay, and by
+
+386
+00:56:35,855 --> 00:56:45,875
+parsing the content of the HTML document, we can extract the URLs that are embedded in the HTML
+
+387
+00:56:45,875 --> 00:56:46,336
+document.
+
+388
+00:56:50,099 --> 00:57:11,799
+Okay. Now, so far we have talked about, okay, the implementation issue related to the frontier list. Okay. So how we are going to take the URLs from the frontier list.
+
+389
+00:57:11,799 --> 00:57:16,579
+how are we going to put the URLs into the frontier list?
+
+390
+00:57:17,299 --> 00:57:17,439
+Okay.
+
+391
+00:57:18,159 --> 00:57:21,459
+And so we talked about the fetcher.
+
+392
+00:57:21,639 --> 00:57:23,539
+We said that it needs to be robust.
+
+393
+00:57:23,839 --> 00:57:28,079
+We talked about different implementation techniques
+
+394
+00:57:28,079 --> 00:57:31,019
+that we can use in order to make the fetcher robust.
+
+395
+00:57:31,659 --> 00:57:35,019
+We talked about that we can create a DOM tree
+
+396
+00:57:35,019 --> 00:57:39,819
+in order to create a sophisticated parser
+
+397
+00:57:39,819 --> 00:57:44,299
+that can extract the URLs from the HTML pages.
+
+398
+00:57:45,439 --> 00:57:51,059
+Now, so we are going to be talking this repository,
+
+399
+00:57:51,059 --> 00:57:57,059
+which we are creating out of the HTML pages.
+
+400
+00:57:57,579 --> 00:58:02,899
+Now, sometimes crawlers are inserting the HTML documents
+
+401
+00:58:02,899 --> 00:58:04,499
+as is into the repository,
+
+402
+00:58:05,139 --> 00:58:07,599
+and then process the repository afterwards
+
+403
+00:58:07,599 --> 00:58:09,279
+for creating the index.
+
+404
+00:58:09,820 --> 00:58:25,180
+Okay, and or sometimes when storing the HTML page into the repository, we can extract the, extract the content from HTML page and store the content into the repository.
+
+405
+00:58:25,179 --> 00:58:28,239
+Okay, and as we are doing this.
+
+406
+00:58:29,739 --> 00:58:47,859
+We also need to pay attention how we are extracting the keywords from the HTML documents because we don't want to extract everything every keyword from the HTML documents so this means that we need to remove the stop words that are relevant.
+
+407
+00:58:47,859 --> 00:58:53,819
+Okay, that are not relevant to the topic of that web page.
+
+408
+00:58:55,179 --> 00:58:57,979
+That's the stop word, removal.
+
+409
+00:59:00,299 --> 00:59:00,460
+Okay.
+
+410
+00:59:01,460 --> 00:59:23,979
+And also, in order to allow the search engine and web content mining module to create a smaller size index, okay, when we insert the content of the web page to the repository, we might also
+
+411
+00:59:23,979 --> 00:59:32,399
+So we might emerge the keywords that have similar meanings.
+
+412
+00:59:32,399 --> 00:59:49,039
+For example, if you encounter these keywords in the HTML document, okay, and you can, instead of putting all these different keywords, you can insert one keyword that represents all of them.
+
+413
+00:59:49,899 --> 00:59:50,019
+Okay.
+
+414
+00:59:50,019 --> 01:00:00,180
+and that so therefore this way so we can uh create the we can use the uh one word for
+
+415
+01:00:00,180 --> 01:00:12,019
+synonym words okay and remember in some crawlers okay we uh uh in in in fact more in most of the
+
+416
+01:00:12,019 --> 01:00:18,359
+crawlers we are storing the html documents as is without making any changes into repository
+
+417
+01:00:18,359 --> 01:00:35,359
+And afterwards, we are doing a text analysis on the repository and we are doing stop word removal and also the synonym and also the...
+
+418
+01:00:36,755 --> 01:00:57,155
+conflation and synonym keyword processing on top of the repository. Okay. So the crawlers are usually storing the web pages as is without any changes.
+
+419
+01:00:57,155 --> 01:01:25,336
+Another implementation issue is related with stemming and remember stemming instead of storing the keywords that have the same meaning so we are finding the stem or the root of that keyword and we are storing that keyword into the index.
+
+420
+01:01:25,335 --> 01:01:52,575
+index. Okay, that's stemming, conflation, and synonym processing, and stopwatch removal. These three processing usually happens after this repository is constructed. And we are applying these three processes on top of the repository when we are creating the index. Okay.
+
+421
+01:02:01,748 --> 01:02:11,467
+Okay, I want to give five minutes break, so then I will continue other implementation issues when we implement a crawler. Okay.
+
+422
+01:02:14,027 --> 01:02:26,387
+Just don't close your application, just put it into mute. So after five minutes, which is five after ten, I will start again.
+
+423
+01:08:23,828 --> 01:08:27,828
+Okay, let us move forward.
+
+424
+01:08:30,420 --> 01:08:40,779
+So what are the other implementation issues?
+
+425
+01:08:42,059 --> 01:08:48,959
+So one of them is when you extract the URLs from an HTML page,
+
+426
+01:08:48,959 --> 01:08:52,939
+you will see that there are some URLs that are absolute URLs.
+
+427
+01:08:53,219 --> 01:08:55,100
+Some of them are relative URLs.
+
+428
+01:08:55,379 --> 01:08:56,680
+So what is the difference?
+
+429
+01:08:57,279 --> 01:08:59,199
+So you can see here an example.
+
+430
+01:08:59,199 --> 01:09:27,519
+Now here, so you see that there is intlHTML, and this is an absolute URL to intlHTML document, okay, which means that starting from the HTTP, so this URL is, so when you click on it, so you know that browser will take you to this website, okay.
+
+431
+01:09:27,519 --> 01:09:43,399
+But sometimes the editor of the HTML document might put a relative URL if that particular URL is within the same domain.
+
+432
+01:09:44,159 --> 01:09:44,259
+Okay.
+
+433
+01:09:44,500 --> 01:09:55,119
+In that case, instead of using the absolute URL, so the editor could insert a relative URL into the HTML document.
+
+434
+01:09:55,360 --> 01:09:56,159
+Okay.
+
+435
+01:09:56,159 --> 01:10:10,879
+Okay. And so therefore, when you are parsing the HTML document, you need to pay attention whether the URL that you are encountering is a relative URL or absolute URL.
+
+436
+01:10:10,879 --> 01:10:26,140
+If it is a relative URL, what you need to do, you need to add this particular URL into the base URL, which is the website of that parent page.
+
+437
+01:10:26,920 --> 01:10:30,399
+And then you need to add this particular relative URL.
+
+438
+01:10:30,780 --> 01:10:37,239
+You need to append this to the base URL so that you can end up with an absolute URL.
+
+439
+01:10:37,239 --> 01:10:43,339
+All the URLs that needs to be put into the frontier list must be absolute URL.
+
+440
+01:10:48,884 --> 01:11:03,183
+Okay. And sometimes you may encounter different types of same URL. For example, now all the four URLs that you see are the same thing. Okay.
+
+441
+01:11:03,183 --> 01:11:19,503
+But in the HTML page, so the author of the HTML page, for different reasons, might enter these URLs, even though they correspond to the same page.
+
+442
+01:11:20,543 --> 01:11:25,363
+So here you see the small letters are used to refer to the same page.
+
+443
+01:11:25,963 --> 01:11:28,903
+Capital letters are used here.
+
+444
+01:11:28,904 --> 01:11:33,043
+even though the port number is not necessary.
+
+445
+01:11:33,744 --> 01:11:37,824
+So they entered the port number.
+
+446
+01:11:38,703 --> 01:11:38,824
+Okay.
+
+447
+01:11:39,244 --> 01:11:40,863
+And here you see that.
+
+448
+01:11:41,564 --> 01:11:43,924
+So even though,
+
+449
+01:11:44,343 --> 01:11:46,884
+so they're talking about,
+
+450
+01:11:49,163 --> 01:11:53,884
+so this says that first you need to go to the one level
+
+451
+01:11:53,884 --> 01:11:57,064
+into the website,
+
+452
+01:11:57,064 --> 01:12:08,824
+then go back to the parent level and then write this directory so that you can go to this webpage.
+
+453
+01:12:08,824 --> 01:12:15,863
+All of them are the same. So what we need to do when we parse the URLs from the HTML page,
+
+454
+01:12:15,863 --> 01:12:23,064
+we need to come up with a canonical form. Okay, canonical form will allow us to
+
+455
+01:12:23,064 --> 01:12:32,303
+extract only one URL that corresponds to these two, all of them.
+
+456
+01:12:32,303 --> 01:12:32,824
+Okay.
+
+457
+01:12:35,044 --> 01:12:43,363
+And here you see that some canonical URL that examples of canonical URLs.
+
+458
+01:12:43,363 --> 01:12:59,363
+So here you see the versions that do not comply with canonical URL form and the versions that comply with canonical form.
+
+459
+01:13:00,483 --> 01:13:00,563
+Okay.
+
+460
+01:13:01,003 --> 01:13:08,363
+And all the URLs that needs to be inserted into the frontier list should be in canonical form.
+
+461
+01:13:11,143 --> 01:13:11,363
+Okay.
+
+462
+01:13:11,363 --> 01:13:29,843
+Okay. Now, the other thing that we need to pay attention is the spider traps. Okay. So when we insert a URL into the frontier list, we must ensure that the URL is not a part of a spider trap.
+
+463
+01:13:29,843 --> 01:13:54,083
+And usually SpiderTraps has CGI scripts in it or different types of scripts. CGI scripts is one of them. Okay. Now, what happens is that every time you click on a URL, now these scripts are generating different types of URLs inside the HTML page.
+
+464
+01:13:54,083 --> 01:14:05,703
+and these newly created urls are again are have cgi scripts and so when you click on them again
+
+465
+01:14:05,703 --> 01:14:13,184
+they will create other types of cgi urls which the purpose of this is that they want you they
+
+466
+01:14:13,184 --> 01:14:19,843
+want your crawler application to crawl within the same trap okay within the same subdomain okay
+
+467
+01:14:19,843 --> 01:14:25,823
+and in order to prevent this what you can do when you extract the URL you can
+
+468
+01:14:25,823 --> 01:14:31,323
+pay you can count the number of characters in that URL
+
+469
+01:14:30,100 --> 01:14:48,899
+if there are, and you can insert a threshold, which in this case 128 characters is the threshold. If it is above the threshold, which means that if there are more characters than 128, then you can just disregard this URL.
+
+470
+01:14:48,899 --> 01:15:18,719
+you don't in that case you would not put that URL into the frontier list okay that's a so one implementation issue that you need to pay attention in order to in order your crawler to avoid spider traps okay the other implementation is related with with the storage okay remember the basic crawler
+
+471
+01:15:18,899 --> 01:15:32,179
+okay so we talked about the implementation issues related with the extract the parser here now you are talking about the implementation issues related with the storage.
+
+472
+01:15:34,680 --> 01:15:43,600
+Now you can store the HTML pages as a separate files in the file system.
+
+473
+01:15:43,600 --> 01:16:04,600
+okay and when you name these HTML files you can name based on the URL of that HTML. How you can do that you can map the URL into a file name by using a hashing function.
+
+474
+01:16:04,600 --> 01:16:15,239
+So in that particular case, every HTML document will get a name which is hashed from a URL.
+
+475
+01:16:16,439 --> 01:16:16,760
+Okay.
+
+476
+01:16:17,680 --> 01:16:30,820
+And this obviously will generate high number of files because usually we will be, so in a small type, even with the small type of crawler, we will end up millions of web pages.
+
+477
+01:16:30,819 --> 01:16:45,820
+So this means that millions of files that is sitting on the file system, it is difficult to manage. So therefore, there are other types of storing the HTML documents. One of them is using XML.
+
+478
+01:16:45,820 --> 01:16:58,820
+if you use XML what will happen is that you will insert the HTML documents in inner tags of one big XML document.
+
+479
+01:16:58,820 --> 01:17:14,820
+Okay and so if you do that then you will end up with a large single XML document which will keep the content of all the HTML documents that you want to store.
+
+480
+01:17:14,820 --> 01:17:29,820
+Okay, or you can use a database, obviously using relational database management systems such as SQL Server, they have large overheads.
+
+481
+01:17:29,820 --> 01:17:49,200
+So therefore, what is recommended is to use a lightweight database such as Berkeley database that are dedicated to store these HTML pages.
+
+482
+01:17:53,908 --> 01:18:01,467
+Okay, now the sequential crawler that I have shown you so far is running on a single thread.
+
+483
+01:18:02,727 --> 01:18:12,107
+Obviously, when we want to download, when we want to crawl web pages from the web, we want to do this in a short amount of time.
+
+484
+01:18:12,847 --> 01:18:21,207
+Okay, so therefore we need to implement a concurrent or parallel version of crawler applications.
+
+485
+01:18:21,207 --> 01:18:46,207
+And when we do that, we need to pay attention. What are the parts of the sequential crawler that takes so much time, for example. So remember the fetcher module, the fetcher module is responsible for retrieving an HTML document corresponds to a URL right that was its purpose.
+
+486
+01:18:46,207 --> 01:18:53,948
+And what it was doing is that it was first taking the URL and it was sending a DNS server.
+
+487
+01:18:54,727 --> 01:18:59,948
+And the DNS server is sending back the IP address.
+
+488
+01:19:00,287 --> 01:19:05,327
+And then it was using this IP address in order to construct the HTTP request.
+
+489
+01:19:06,387 --> 01:19:06,467
+Okay.
+
+490
+01:19:06,887 --> 01:19:14,287
+Now, asking the DNS server for the IP address takes time.
+
+491
+01:19:14,287 --> 01:19:31,287
+And it has to do this for all the URLs. So therefore, that's something that we need to see if we can speed up the process for DNS name resolving.
+
+492
+01:19:31,287 --> 01:19:50,027
+The second thing that we need to pay attention, when you use network communication, you have to use one of the libraries that allows you to create a TCP IP connection.
+
+493
+01:19:50,027 --> 01:19:57,387
+now there are different libraries there are c libraries there are c sharp libraries java libraries
+
+494
+01:19:57,387 --> 01:20:08,047
+python libraries they all are using the tcp ip protocol in order for you to create an http
+
+495
+01:20:08,047 --> 01:20:17,027
+request and send it to the user and in order for http request first what they need to do
+
+496
+01:20:17,027 --> 01:20:24,247
+these libraries have a class called sockets okay and they need to create a socket class
+
+497
+01:20:24,247 --> 01:20:32,567
+okay and when they create a socket class in that socket class they need to identify the ip address
+
+498
+01:20:32,567 --> 01:20:38,287
+which the communication will happen and also the port address the
+
+499
+01:20:38,287 --> 01:20:44,947
+to the destination machine.
+
+500
+01:20:45,467 --> 01:20:45,627
+Okay.
+
+501
+01:20:46,307 --> 01:20:49,247
+IP address and the port address needs to be defined.
+
+502
+01:20:50,167 --> 01:20:55,807
+And obviously when these socket classes has different types,
+
+503
+01:20:56,147 --> 01:20:58,227
+one of them is synchronous socket class.
+
+504
+01:20:59,107 --> 01:21:02,867
+So when you create a socket object of the socket class,
+
+505
+01:21:03,187 --> 01:21:04,367
+if it is a synchronous,
+
+506
+01:21:04,367 --> 01:21:13,807
+this means that the client application which is using the socket class is going to wait until
+
+507
+01:21:13,807 --> 01:21:21,747
+the response object is retrieved okay now that's the synchronous version of the socket class the
+
+508
+01:21:21,747 --> 01:21:28,987
+other version of the socket class is asynchronous socket classes okay in that particular case when
+
+509
+01:21:28,988 --> 01:21:37,148
+you create an object of the asynchronous socket class so you can send the http request and you
+
+510
+01:21:37,148 --> 01:21:46,247
+don't have to wait until the response is retrieved so you can then that socket class can be used by
+
+511
+01:21:46,247 --> 01:21:52,268
+another thread application okay for retrieving another html page
+
+512
+01:21:52,851 --> 01:22:02,891
+So therefore, so creating a socket also creating a synchronous socket also a problem, we need to also solve this problem.
+
+513
+01:22:04,171 --> 01:22:10,272
+And obviously receiving a requested page in response, that also takes time.
+
+514
+01:22:10,651 --> 01:22:13,891
+So that's connected with the socket issue.
+
+515
+01:22:13,891 --> 01:22:22,531
+issue if we can make the socket asynchronous in some way in that particular case so we don't have
+
+516
+01:22:22,531 --> 01:22:35,572
+to wait for a requested page okay now so let us see so what are the solution and what are the
+
+517
+01:22:35,571 --> 01:22:43,891
+techniques that we are using in concurrent crawler or parallel crawler. Okay. Now, as you see,
+
+518
+01:22:43,891 --> 01:22:51,871
+so this is a multi-threaded version of a sequential crawler. And you see that again,
+
+519
+01:22:52,011 --> 01:22:58,491
+in this application, in this software architecture, you see that there is an input,
+
+520
+01:22:58,491 --> 01:23:07,011
+which is the seed URLs. Okay. And there is a frontier manager. Okay. So in sequential
+
+521
+01:23:07,011 --> 01:23:15,392
+crawler, this was initialized frontier module. Now this frontier manager, what it's going to do,
+
+522
+01:23:15,432 --> 01:23:21,011
+it's going to take the seed URLs as an input and it will put into the frontier list.
+
+523
+01:23:22,011 --> 01:23:27,491
+Frontier list will remain the same. Again, it's a data structure. It's usually implemented by using
+
+524
+01:23:27,491 --> 01:23:38,051
+a link list. Okay. Then the frontier manager, so we'll start all the crawler threads. Now you see
+
+525
+01:23:38,051 --> 01:23:48,911
+that every rectangle shape with gray background, so here you see every one of them is a crawler
+
+526
+01:23:48,911 --> 01:23:55,311
+application and it is implemented as a thread. Okay. Now let's take a look at one of them.
+
+527
+01:23:55,311 --> 01:24:05,592
+Now, this particular thread, what it's going to do when it is started, it's going to go to the frontier list through the frontier manager.
+
+528
+01:24:06,072 --> 01:24:09,771
+It's going to ask for one URL to download.
+
+529
+01:24:10,671 --> 01:24:15,311
+And the frontier manager will take the URL and give it back to it.
+
+530
+01:24:16,292 --> 01:24:22,771
+And then this URL will be handed over to Fetcher.
+
+531
+01:24:22,771 --> 01:24:29,671
+Fetcher will be responsible for retrieving this URL from the web.
+
+532
+01:24:30,891 --> 01:24:38,491
+It will retrieve the HTML document and it will hand over to next module, which is parser.
+
+533
+01:24:38,491 --> 01:24:44,551
+parser will extract the urls okay and it will again
+
+534
+01:24:44,551 --> 01:24:52,891
+go to the frontier manager and ask to put these urls back into the frontier
+
+535
+01:24:52,891 --> 01:25:01,311
+list okay so once the parser is done it will hand over the html document into the
+
+536
+01:25:01,311 --> 01:25:08,531
+storage module and the storage module will store the html document into the repository
+
+537
+01:25:08,531 --> 01:25:14,051
+and then it will check whether this that this thread will check whether it's done
+
+538
+01:25:14,051 --> 01:25:21,871
+if it is not done it will keep doing the same thing now imagine that so you have hundreds
+
+539
+01:25:21,871 --> 01:25:28,271
+different threads this means that these hundreds different threads will keep doing the same things
+
+540
+01:25:28,271 --> 01:25:34,251
+simultaneously until there is no URLs left in the frontier list.
+
+541
+01:25:34,251 --> 01:25:35,591
+Okay?
+
+542
+01:25:39,028 --> 01:26:07,827
+So when we implement the concurrent crawler, so we have to use multi-processing and multi-threading. Okay. So we can do it either way. Okay. So either way is okay. And again, each process or thread will work like a sequential crawler. Okay. Each thread will include the steps of sequential crawler.
+
+543
+01:26:07,827 --> 01:26:37,687
+but the only difference is that they will all the threads will share the shared data structure frontier and repository. Okay now in our implementation what we are what we need to pay attention is that frontier and repository is the shared data structure. Okay now as for the repository so obviously so we have a we need to have a way to check whether
+
+544
+01:26:37,687 --> 01:27:04,807
+we are downloading the same page twice. If we have a way to check whether we have a, we are not downloading the pages simultaneously, the same page twice, in that case, writing the repository different HTML documents will not be a problem. Okay, because every time we write, we will write different HTML page.
+
+545
+01:27:04,807 --> 01:27:25,807
+this means that there will be no right conflict. Okay but here when we access to the frontier list in order to extract the URL there needs to be a synchronization because there may be more than one thread which are accessing to the frontier list in order to extract a URL.
+
+546
+01:27:25,807 --> 01:27:34,327
+so therefore so we have to do the synchronization in this particular case the synchronization is done on the frontier manager
+
+547
+01:27:34,327 --> 01:27:37,267
+okay
+
+548
+01:27:41,300 --> 01:27:55,939
+Now, today, all the crawlers obviously are implemented, multi-threaded, which means in a concurrent manner. Now let's just take a look at the universal crawlers.
+
+549
+01:27:55,939 --> 01:28:11,820
+Now the universal crawlers are the crawlers that are supporting the search engines, universal search engines. So Google, Bing, Yahoo, Yandex, they all have their own universal crawlers.
+
+550
+01:28:13,279 --> 01:28:15,379
+Arkadaşlar bir saniye bana müsaade edin.
+
+551
+01:29:14,323 --> 01:29:29,103
+Okay. Universal crawlers, they are large scale. As I said previously, they consume a high portion of the network bandwidth.
+
+552
+01:29:29,103 --> 01:29:38,603
+okay and when they are downloading the html pages so these crawlers they're not
+
+553
+01:29:38,603 --> 01:29:47,443
+creating the index from scratch the index are created incrementally okay
+
+554
+01:29:47,443 --> 01:29:57,083
+Okay, now with these crawlers, we have two, we have a trade-off.
+
+555
+01:29:57,843 --> 01:30:02,203
+The trade-off is related with performance and the policy.
+
+556
+01:30:03,983 --> 01:30:08,823
+So the performance trade-off is this.
+
+557
+01:30:09,383 --> 01:30:14,364
+So when you have a crawler, you would like to scale that crawler to billions of pages,
+
+558
+01:30:14,363 --> 01:30:21,483
+which means that you would like to have an index where the size of the index has as big as possible.
+
+559
+01:30:22,203 --> 01:30:26,623
+Okay, that's how you measure the performance of a crawler.
+
+560
+01:30:27,723 --> 01:30:31,203
+Whether that crawler is covering the large portion of the web.
+
+561
+01:30:32,003 --> 01:30:33,463
+That's the first policy.
+
+562
+01:30:34,343 --> 01:30:42,603
+Okay, you can implement your crawler so that given the time, it will crawl as many pages as possible.
+
+563
+01:30:42,603 --> 01:30:54,004
+Now, the second policy is related with the freshness, which means that whether the URLs in your index will be up to date.
+
+564
+01:30:55,184 --> 01:30:55,343
+Okay.
+
+565
+01:30:55,864 --> 01:31:02,483
+In other words, you can create an index where the URLs are not up to date.
+
+566
+01:31:02,483 --> 01:31:10,904
+For example, you downloaded an HTML page two months ago and you insert it into your index.
+
+567
+01:31:10,903 --> 01:31:13,723
+but the content of that web page
+
+568
+01:31:13,723 --> 01:31:16,483
+since within the two months
+
+569
+01:31:16,483 --> 01:31:18,683
+changed a lot
+
+570
+01:31:18,683 --> 01:31:21,703
+and you did not crawl
+
+571
+01:31:21,703 --> 01:31:24,963
+the same page again
+
+572
+01:31:24,963 --> 01:31:27,983
+and therefore you index that URL
+
+573
+01:31:27,983 --> 01:31:30,103
+in your index table
+
+574
+01:31:30,103 --> 01:31:32,544
+but with the wrong content
+
+575
+01:31:32,544 --> 01:31:35,523
+because the current content
+
+576
+01:31:35,523 --> 01:31:37,703
+of that web page is updated.
+
+577
+01:31:39,103 --> 01:31:39,703
+So therefore,
+
+578
+01:31:39,703 --> 01:32:04,343
+Or in order to keep your index table fresh, in order to keep an updated index table, instead of crawling more pages, what you can do, you can crawl the same pages again with a certain frequency so that you can keep your index table up to date.
+
+579
+01:32:04,343 --> 01:32:16,063
+So one trade-off is you would like to cover the content of the web as much as possible.
+
+580
+01:32:16,983 --> 01:32:24,563
+Okay, so this means that you will conduct your HTTP request to different web pages all the time.
+
+581
+01:32:24,563 --> 01:32:41,963
+The other trade-off is that you can create an index. It could be a smaller index, but what you need to do, you will spend your effort in order to keep this content of the index up to date.
+
+582
+01:32:41,963 --> 01:32:59,963
+OK, so therefore, so it's a trade off. So you can scale up to billions of pages or you can you can keep only the up to date index.
+
+583
+01:32:59,963 --> 01:33:04,643
+index. Okay. So therefore the major, uh, uh, uh,
+
+584
+01:33:04,643 --> 01:33:09,624
+universal crawlers are implementing our configuring there.
+
+585
+01:33:09,624 --> 01:33:12,264
+Um, uh, uh,
+
+586
+01:33:12,640 --> 01:33:19,640
+their implementation between these two issues.
+
+587
+01:33:21,619 --> 01:33:32,420
+okay and as i said before so when you implement a crawler there are different
+
+588
+01:33:34,819 --> 01:33:44,179
+parts of the crawler which takes time so one of them is the dns server the other one is the storage
+
+589
+01:33:44,179 --> 01:34:01,179
+Another one is the use of sockets. Now large scale crawlers, they're using asynchronous sockets, which allows them to not to block when there is an HTTP request is conducted.
+
+590
+01:34:01,179 --> 01:34:10,699
+it also they they have solutions for dns lookups as well as they have solutions for
+
+591
+01:34:11,819 --> 01:34:19,899
+io storage so let's take a look at their solutions for example as you see so this is the same thing
+
+592
+01:34:20,619 --> 01:34:28,779
+for concurrent crawler but the only difference is that when you look at inside of one threat
+
+593
+01:34:28,779 --> 01:34:40,979
+here. Within this thread, you see that when you do a, so you see the difference in fetcher.
+
+594
+01:34:41,339 --> 01:34:48,919
+Okay, let's take a look at the inside of a fetcher here. Inside the fetcher, you see that there is a
+
+595
+01:34:48,919 --> 01:34:56,719
+resolved DNS subcomponent. Now, this subcomponent is responsible for finding the IP address
+
+596
+01:34:56,719 --> 01:34:58,520
+corresponding to the URL.
+
+597
+01:34:59,679 --> 01:35:02,419
+Now, in their solution, in the universal crawlers,
+
+598
+01:35:02,559 --> 01:35:11,459
+are using cache mechanism, which allows them to retrieve the IP addresses
+
+599
+01:35:11,459 --> 01:35:15,160
+from the cache instead of asking the DNS.
+
+600
+01:35:15,919 --> 01:35:16,060
+Okay?
+
+601
+01:35:16,060 --> 01:35:22,200
+So they have this caching mechanism integrated with the DNS servers.
+
+602
+01:35:22,199 --> 01:35:29,999
+and also instead of using synchronous sockets the universal crawlers are using asynchronous sockets
+
+603
+01:35:29,999 --> 01:35:40,340
+okay and in addition to that so they have they are using software-based network switches which in turn
+
+604
+01:35:40,340 --> 01:35:50,399
+will improve the latency for retrieving the hdml documents from the web
+
+605
+01:35:50,399 --> 01:36:01,280
+and also they have when when when they when they try to store an html document into a storage
+
+606
+01:36:01,280 --> 01:36:08,739
+they have a software base storage switches which allows them to store html document in a
+
+607
+01:36:08,739 --> 01:36:17,220
+in a fast manner okay so therefore um uh previously we talked about uh the uh the processing
+
+608
+01:36:17,219 --> 01:36:24,019
+in the sequential crawler where it takes time.
+
+609
+01:36:24,499 --> 01:36:27,719
+And you see that universal crawlers are actually not only
+
+610
+01:36:27,719 --> 01:36:33,279
+implementing the concurrent crawler version of the sequential crawler,
+
+611
+01:36:33,279 --> 01:36:38,119
+but also finding solutions to these processing segments,
+
+612
+01:36:38,259 --> 01:36:39,819
+which requires more time.
+
+613
+01:36:41,739 --> 01:36:46,019
+We talked about the trade-off between coverage and freshness.
+
+614
+01:36:47,796 --> 01:37:10,175
+Okay, this is an example of an index size of a crawler. As you see, from year to year, these index sizes may differ. Again, because of the trade-off that I have mentioned to you, these, so in some years you may pay attention to coverage, in some years you may pay attention to freshness.
+
+615
+01:37:10,175 --> 01:37:21,395
+so in turn this makes this will affect the size of the index that you have in the universal crawler.
+
+616
+01:37:25,684 --> 01:37:52,743
+And so how do you define the freshness of a web page? We use last modified and expires elements in the HTTP header. By utilizing these elements, we can understand when the HTML page was lastly updated.
+
+617
+01:37:52,743 --> 01:38:22,663
+So based on that we can understand whether or not that so we need to the downloaded HTML page is up to date page and we can also understand what time or what date that we need to go and recrawl that webpage because so if there is an expires element in the HTML document and which gives a date which means
+
+618
+01:38:22,663 --> 01:38:39,663
+means that after certain time that the content of the webpage will be expired which means that the author of that webpage will update that webpage. So we have to go and retrieve the content of that webpage on the expired date.
+
+619
+01:38:43,347 --> 01:38:53,108
+Okay, I will skip some of the slides because it talks about this more details of the same thing.
+
+620
+01:38:53,847 --> 01:38:57,407
+Now, let us take a look at the preferential crawlers.
+
+621
+01:38:57,407 --> 01:39:14,407
+Now, the preferential crawler is responsible for creating or supporting search engines that are conducting search on a particular topic.
+
+622
+01:39:14,407 --> 01:39:37,107
+Okay, so in other words, so when we create a frontier list, we want to create a frontier list where we are prioritizing the HTML documents, which are in the same content as the topic of that crawler.
+
+623
+01:39:37,107 --> 01:39:55,428
+Now, every preferential crawler will have a topic, which means that you may have a recipe preferential crawler. You may have a news preferential crawler. You may have a e-commerce preferential crawler.
+
+624
+01:39:55,428 --> 01:40:01,428
+OK, some of you in your term project decided to do a crawler application.
+
+625
+01:40:02,048 --> 01:40:07,548
+OK, and those of you who will do that are actually doing a preferential crawler.
+
+626
+01:40:07,868 --> 01:40:17,068
+OK, in particular, some of you mentioned that you want to do a preferential crawler, particularly for television sets.
+
+627
+01:40:17,388 --> 01:40:22,847
+Or some of you said that I want to do a preferential crawler for iPhone.
+
+628
+01:40:22,847 --> 01:40:33,047
+So which means that what you are going to do, you are going to go to the e-commerce websites, in this case, more than one website particularly.
+
+629
+01:40:33,047 --> 01:40:52,767
+You will retrieve the web pages from those websites and as you are putting into the frontier list, you will put those web pages based on how the content of that web page is similar to the topic of that Chrome.
+
+630
+01:40:52,847 --> 01:40:55,407
+okay
+
+631
+01:41:10,963 --> 01:41:19,523
+Now the preferential crawler again, so they are retrieving the web pages relevant to a topic.
+
+632
+01:41:20,163 --> 01:41:28,083
+Okay, now we can categorize the preferential crawlers under two categories. One is focus
+
+633
+01:41:28,083 --> 01:41:36,644
+crawler, the second one is tropical crawler. Now in the focus crawler, what we can do, we need to
+
+634
+01:41:36,644 --> 01:41:43,644
+to decide whether or not that the downloaded content
+
+635
+01:41:45,083 --> 01:41:48,623
+is in the topic that we are interested in.
+
+636
+01:41:48,623 --> 01:41:53,623
+So therefore we may want to classify the downloaded content
+
+637
+01:41:54,763 --> 01:41:58,523
+to find out its label, okay?
+
+638
+01:42:00,644 --> 01:42:03,224
+Now in the focus crawler also,
+
+639
+01:42:03,223 --> 01:42:08,223
+we may create an index of the content
+
+640
+01:42:09,303 --> 01:42:12,523
+that we are downloading so that the focus,
+
+641
+01:42:12,523 --> 01:42:16,723
+there could be a search engine that is conducting search
+
+642
+01:42:16,723 --> 01:42:20,423
+on the index created by focus crawler.
+
+643
+01:42:22,243 --> 01:42:25,163
+Okay, so therefore in the focus crawler,
+
+644
+01:42:25,163 --> 01:42:29,163
+we are creating an index just like the regular crawlers
+
+645
+01:42:31,544 --> 01:42:33,083
+that we have covered so far.
+
+646
+01:42:33,223 --> 01:42:41,863
+In focus crawler, we are creating an index of HTML documents, but all the HTML documents has to be on the same topic.
+
+647
+01:42:42,883 --> 01:42:43,103
+Okay.
+
+648
+01:42:43,543 --> 01:42:46,783
+Now, the second type of crawler is the topical crawler.
+
+649
+01:42:46,783 --> 01:42:51,183
+Now, the topical crawler is not creating an index.
+
+650
+01:42:52,143 --> 01:42:57,603
+Instead, topical crawler is searching the web during the search time.
+
+651
+01:42:57,603 --> 01:43:07,864
+So, in other words, when you enter a keyword and when you click the search button, if you are using a topical crawler, it will start to crawl the web.
+
+652
+01:43:08,824 --> 01:43:13,764
+After you click the search button, it will crawl the web during the search.
+
+653
+01:43:14,764 --> 01:43:22,743
+Okay, and as it finds the HTML documents, it will compare the content of the HTML document to the topic of the topical crawler.
+
+654
+01:43:22,743 --> 01:43:40,883
+And if the similarity is high, then it will keep continue extracting the URLs coming from that HTML document and it will keep continue following those URLs extracted from the parent HTML.
+
+655
+01:43:40,883 --> 01:43:49,003
+and or and if the similarity between the topic and the hdml downloaded hdml document is small
+
+656
+01:43:49,003 --> 01:43:58,503
+smaller than the threshold it will not continue following the urls extracted from that page
+
+657
+01:43:58,503 --> 01:44:10,423
+page. Okay. And the topical crawler has also a version of the topical crawler also called
+
+658
+01:44:10,423 --> 01:44:17,143
+adaptive crawler. In the adaptive crawlers, adaptive topical crawlers, what happens is that
+
+659
+01:44:17,143 --> 01:44:24,843
+when you download an HTML document and when you compare the similarity between the HTML document
+
+660
+01:44:24,843 --> 01:44:33,983
+and the topic, if the similarity is above certain threshold, what you can do, you can also extract the
+
+661
+01:44:33,983 --> 01:44:42,183
+keywords from that HTML document and use that keywords in addition to the topic.
+
+662
+01:44:43,523 --> 01:44:49,743
+Again, I gave you this example earlier in the slides. I said that if you want to do a search
+
+663
+01:44:49,743 --> 01:44:51,324
+by using web data mining.
+
+664
+01:44:52,283 --> 01:44:54,064
+And if you have a topical crawler
+
+665
+01:44:54,064 --> 01:44:56,044
+and topical crawler,
+
+666
+01:44:56,163 --> 01:44:57,803
+let's say downloaded a page,
+
+667
+01:44:58,684 --> 01:45:02,064
+okay, and you compare the similarity
+
+668
+01:45:02,064 --> 01:45:04,743
+between that content of the web page
+
+669
+01:45:04,743 --> 01:45:08,344
+and the web data mining keywords.
+
+670
+01:45:09,555 --> 01:45:15,675
+Now, if the similarity between the web data mining keywords and the content of the page is high,
+
+671
+01:45:17,275 --> 01:45:28,275
+then what the adaptive topical crawler is doing, it's extracting the other keywords which has high frequency from that page.
+
+672
+01:45:28,755 --> 01:45:35,615
+Let's say there is also information retrieval keywords which has high frequency within that page.
+
+673
+01:45:35,615 --> 01:45:41,415
+it will extract information retrieval and it will add to the web data mining.
+
+674
+01:45:42,035 --> 01:45:48,495
+And then from that point forward, it will use these two different keyword groups,
+
+675
+01:45:48,975 --> 01:45:51,615
+web data mining and information retrieval together,
+
+676
+01:45:52,276 --> 01:45:58,815
+in order to, when comparing the similarity between the HTML document and topic,
+
+677
+01:45:58,815 --> 01:46:06,795
+which means that it will learn from the similar topic HTML documents.
+
+678
+01:46:07,295 --> 01:46:11,175
+Therefore, we are calling it adaptive topical crawler.
+
+679
+01:46:13,395 --> 01:46:16,815
+Now, there are different preferential crawling algorithms.
+
+680
+01:46:18,475 --> 01:46:21,535
+One of them is best and first, okay,
+
+681
+01:46:21,835 --> 01:46:25,815
+which means that what we are doing is that we are putting the
+
+682
+01:46:25,815 --> 01:46:31,155
+So breadth first search is just here as a benchmark.
+
+683
+01:46:31,595 --> 01:46:35,735
+Okay, breadth first search, depth first search, they are static crawlers.
+
+684
+01:46:36,375 --> 01:46:47,895
+Best and first, we are putting the HTML documents based on their similarity to the topic into the priority queue.
+
+685
+01:46:47,895 --> 01:47:01,755
+and since we have a multi-threaded crawler we can crawl first and urls at the same time so
+
+686
+01:47:01,755 --> 01:47:09,115
+therefore we are calling this best and first because we are crawling and urls at the same time
+
+687
+01:47:09,115 --> 01:47:16,935
+and when we are putting the urls into the purity queue we are sorting the purity queue based on
+
+688
+01:47:16,935 --> 01:47:22,095
+how similar the URLs are to the topic.
+
+689
+01:47:23,115 --> 01:47:23,235
+Okay.
+
+690
+01:47:24,916 --> 01:47:30,136
+And another preferential crawler algorithm is page rank.
+
+691
+01:47:30,695 --> 01:47:32,875
+And when we use page rank this time,
+
+692
+01:47:32,875 --> 01:47:40,496
+we are inserting the URLs into the frontier list
+
+693
+01:47:40,496 --> 01:47:42,895
+based on their page rank values.
+
+694
+01:47:43,216 --> 01:47:45,375
+You haven't learned what page rank is,
+
+695
+01:47:45,375 --> 01:47:49,215
+but it's a link-based popularity algorithm.
+
+696
+01:47:49,615 --> 01:47:52,435
+It tells you the popularity of each URL.
+
+697
+01:47:53,495 --> 01:47:53,555
+Okay.
+
+698
+01:47:55,615 --> 01:48:00,635
+Another algorithm for preferential crawling algorithm
+
+699
+01:48:00,635 --> 01:48:01,635
+is shark search.
+
+700
+01:48:02,575 --> 01:48:08,455
+And this shark search is combining the similarity
+
+701
+01:48:08,455 --> 01:48:22,435
+similarity of the text of the URL and also the similarity of the parent from which that URL is
+
+702
+01:48:22,435 --> 01:48:31,395
+extracted. I say it again, SharkSearch is analyzing the content of the URL itself,
+
+703
+01:48:31,395 --> 01:48:38,496
+because you can extract the keywords from the URL itself also.
+
+704
+01:48:39,295 --> 01:48:48,515
+And in addition, it also looks at the content of the parent page from which that URL is extracted.
+
+705
+01:48:49,655 --> 01:48:55,416
+It looks at the content of the URL, which we call anchor text.
+
+706
+01:48:55,416 --> 01:49:06,055
+It looks at the content of the parent page and it checks the similarity between the topic and the anchor text and the parent content.
+
+707
+01:49:06,776 --> 01:49:06,916
+Okay.
+
+708
+01:49:07,636 --> 01:49:18,215
+And based on that, it finds a similarity value and it reorders the frontier list based on the similarity value.
+
+709
+01:49:19,775 --> 01:49:24,056
+InfoSpider is another preferential crawling algorithm.
+
+710
+01:49:24,056 --> 01:49:30,495
+Again, this algorithm is dealing with topical crawler.
+
+711
+01:49:30,495 --> 01:49:37,775
+it does not create an index and this algorithm is learning from the html documents that it
+
+712
+01:49:37,775 --> 01:49:44,735
+retrieves it extracts more keywords from these html documents obviously if they are similar
+
+713
+01:49:44,735 --> 01:49:52,015
+and it is adding these newly extracted keywords into the topic and from that point forward it is
+
+714
+01:49:52,015 --> 01:49:58,735
+not only checking the similarity with the topic keywords and it is also checking the similarity
+
+715
+01:49:58,735 --> 01:50:02,495
+extracted from the similar HTML documents.
+
+716
+01:50:04,655 --> 01:50:05,055
+Okay.
+
+717
+01:50:06,855 --> 01:50:09,935
+Now, this is a figure that tells you how you can
+
+718
+01:50:10,735 --> 01:50:15,095
+check the performance of different crawlers, different preferential crawlers.
+
+719
+01:50:15,655 --> 01:50:22,015
+Now, here you see that I saw the X axis indicates the crawl size.
+
+720
+01:50:22,015 --> 01:50:24,055
+Y axis indicates the recall.
+
+721
+01:50:24,055 --> 01:50:33,816
+remember what recall is recall was the number of relevant pages okay number of total relevant pages
+
+722
+01:50:33,816 --> 01:50:42,735
+to a topic okay now let's say i have a topic a preferential crawler and i i i have a topic
+
+723
+01:50:42,735 --> 01:50:50,816
+okay let's say web data mining okay and i have three versions uh four different versions of
+
+724
+01:50:50,816 --> 01:50:59,515
+crawlers. The first crawler is random crawler, which means that it will pick any URL to download
+
+725
+01:50:59,515 --> 01:51:06,136
+from the frontier list. The second crawler is using breadth-first search, which means that
+
+726
+01:51:06,136 --> 01:51:20,615
+first-in-first-out, which means that it will traverse the web graph level-wise.
+
+727
+01:51:20,815 --> 01:51:40,015
+Okay. And another crawling algorithm is backlink. This, this will, what, what it will do, it will reorder the URLs in the frontier list based on the number of links that each URL is receiving.
+
+728
+01:51:40,015 --> 01:51:43,615
+based on the number of their backlinks.
+
+729
+01:51:44,735 --> 01:51:49,395
+Now, another crawler algorithm is using page rank,
+
+730
+01:51:49,515 --> 01:51:54,115
+which means that it is reordering the frontier list
+
+731
+01:51:54,115 --> 01:51:56,695
+based on the page rank value.
+
+732
+01:51:57,615 --> 01:52:01,415
+So you can see that these four different algorithms
+
+733
+01:52:01,415 --> 01:52:05,675
+is handling the way that you insert the URLs
+
+734
+01:52:05,675 --> 01:52:06,855
+in the frontier list.
+
+735
+01:52:06,856 --> 01:52:15,055
+OK, and because the order of in the frontier list defined.
+
+736
+01:52:16,016 --> 01:52:20,076
+In what order that URLs will be retrieved.
+
+737
+01:52:20,796 --> 01:52:23,296
+OK, now look at this this graph.
+
+738
+01:52:23,856 --> 01:52:33,456
+Now you see that when you crawl everything, when you crawl 100 percent of the data, all the algorithms will have recalled 100 percent.
+
+739
+01:52:33,455 --> 01:52:43,455
+This is obvious because this means that by the time you retrieve everything, you will retrieve also the all relevant documents.
+
+740
+01:52:44,735 --> 01:52:44,935
+Okay.
+
+741
+01:52:45,315 --> 01:52:48,515
+Now, let's look at the 20% size.
+
+742
+01:52:48,515 --> 01:52:56,295
+okay when you retrieve the 20 percent of the total documents that you are supposed to retrieve
+
+743
+01:52:56,295 --> 01:53:07,095
+you see that one of the algorithms page rank okay retrieved six almost 60 percent of the relevant page
+
+744
+01:53:08,340 --> 01:53:37,799
+Okay, now this means that PageRank based algorithm, if you compare these four algorithms, PageRank is more successful compared to other three because even though it is starting from the beginning with the small crawl size, with the 20% of the crawl size, it was able to catch 60% of the relevant pages.
+
+745
+01:53:38,340 --> 01:54:04,740
+okay so therefore when we compare the success or the when we evaluate the preferential crawlers we will use crawl size recall graphs okay and so we will try to see whether the crawler algorithm is able to retrieve the most relevant pages even with the small crawl sizes okay
+
+746
+01:54:04,739 --> 01:54:31,739
+We talked about topical crawlers and this is an example graphical user interface for a topical crawler. You see that you enter a keyword at as soon as you start the crawler it begins it begins crawling the web and it finds the URLs that matches to the topic.
+
+747
+01:54:31,740 --> 01:54:46,259
+topic, okay, and based on how similar they are, it gives also a score into it, and it reorders the results based on their similarity score, okay.
+
+748
+01:54:51,604 --> 01:55:18,923
+So we talked about topical crawler. I will not go into details of this. Okay. Now there are different reference libraries that you can use for crawlers. Okay. And these crawlers are helpful for you to implement your crawler applications. So these are underlying libraries, obviously.
+
+749
+01:55:18,923 --> 01:55:46,763
+so you can add so there's a there's a pearl version java version there are also c-sharp versions of them which are not here so I recommend you to take a look at notch so this has a nice crawler again implemented in java okay so all these open source tools allows you to
+
+750
+01:55:46,763 --> 01:56:03,684
+crawl web pages based and they all are implemented as concurrent crawlers and they also implement the implementation issues that I have discussed so far.
+
+751
+01:56:03,684 --> 01:56:07,243
+Okay. Arkadaşlar burada duracağım.
+
+752
+01:56:09,423 --> 01:56:15,863
+Sizlere sonradan gelenler var. Dersin başında biraz bahsetmiş oldum.
+
+753
+01:56:16,763 --> 01:56:38,983
+Şimdi projelerinizle ilgili dosyayı ben yayınladım. Projelerinizi eğer bunu kabul edilmedi diye özellikle yazmadıysam projelerinizde bir sıkıntı yok ama proje proposanızda görmediğim eksiklikler var.
+
+754
+01:56:38,983 --> 01:56:54,464
+Burada kimisinde dataset belirtilmemiş, kimisinde hangi algoritmalar kullanılacağı belirtilmemiş, ondan sonra kimisinde sadece tek bir algoritma kullanılacağından bahsedilmiş
+
+755
+01:56:54,464 --> 01:57:01,964
+Bunların ne şekilde güncellenmesi gerektiğini ben burada belirttim
+
+756
+01:57:01,964 --> 01:57:16,863
+bana onun dışında hiç proposal'unu göndermeyen ya da bir şeyler gönderip ama sadece göndermiş olmak için gönderen bazı gruplar olmuş.
+
+757
+01:57:17,643 --> 01:57:26,383
+Onları tekrar ya kabul etmedim ya da eksikliklerini belirttim.
+
+758
+01:57:26,383 --> 01:57:47,464
+Bana tekrardan proposal'larınızı göndermek zorunda değilsiniz ama ben bu dosyaya bakaraktan, kendi yazdığım komentlere bakaraktan sunumlarınız sırasında bunları yapmış mısınız ona bakacağım şimdiden belirtiyorum
+
+759
+01:57:47,464 --> 01:58:02,404
+Okey. Az önce crawler chapter'ını işledik. Aranızda farklı projelerde web crawler application'ı yapacağını söyleyen arkadaşlar var. Onlar için söylüyorum bunu.
+
+760
+01:58:03,404 --> 01:58:11,863
+Şimdi yapacağınız çalışmalarda mesela burada Fatih Mustafa ile Eren'in projesini örnek olarak şey yapayım.
+
+761
+01:58:11,863 --> 01:58:32,663
+Diyorsunuz ki geri planda farklı e-ticaret siteleri var. Bu e-ticaret sitelerinde ürünler var. Siz özellikle tek bir ürün üzerine odaklanmışsınız. iPhone. Aslında sizin projenizde iPhone'un belli bir ürünü vardı ama ben bütün iPhone ürünlerini getirmenizi istiyorum.
+
+762
+01:58:32,663 --> 01:58:47,163
+bu e-ticari sitelerinden belirli aralıklarla bu belirli aralık her 5 dakika olabilir her gün olabilir bu da konfigüre edilebilir olsun gidip
+
+763
+01:58:47,507 --> 01:59:07,967
+verileri getirip verilerin içerisinde neler olmalı? Fiyat bilgisi olmalı, adet bilgisi olmalı, ürünün özellikleri olmalı. Bunları her bir siteden getirmiş olduğunuz ürünü bir tablonun satırı gibi düşünün.
+
+764
+01:59:07,967 --> 01:59:18,787
+satırımdaki kolonlar ve o ürünün yanındaki kolonlarda o ürünün özelliklerini, adedini, fiyatını vs. belirtin.
+
+765
+01:59:18,787 --> 01:59:25,567
+Aynı şekilde o ürünün bilgisini hangi sayfadan getirdiğinizi görelim.
+
+766
+01:59:26,347 --> 01:59:32,907
+O linke bastığımız zaman mesela o sayfanın ilgili ürün sayfasına götürebilsin.
+
+767
+01:59:33,507 --> 01:59:37,368
+Diyelim ki MediaMarkt'dan bir tane entry getirdiniz. O bir satır olacak.
+
+768
+01:59:37,967 --> 01:59:52,827
+bimax'den bir entry getirdiniz o başka bir satır olacak. Ve sizin uygulamanız bir uygulamanız olacak. Geri planda gelmiş olan datayı bize gösterimine yapılacak bir uygulama olacak. Onun üzerine filtreleme yapabilelim.
+
+769
+01:59:52,827 --> 01:59:59,368
+filtrelemeden kasıp diyelim ki ben fiyatlarına göre sıralandırabileyim.
+
+770
+02:00:00,507 --> 02:00:02,827
+Adetlere göre sıralandırabileyim.
+
+771
+02:00:03,548 --> 02:00:06,408
+Ondan sonra özelliklere göre sıralandırabileyim.
+
+772
+02:00:07,048 --> 02:00:21,987
+Buradaki sizin uygulamanız bu crawler'ı implement etmek ya da bir crawler kütüphanesini kullanarak onun üzerine sizin crawler için yapacağınız modülü implement etmek.
+
+773
+02:00:21,987 --> 02:00:42,027
+ikincisi bir parser implement etmek çünkü sizin HDMI indireceğiniz bu e-ticaret sitesinden alacağınız verileri parse edip içerisinden ilgili kontenti çıkartmanız gerekiyor ki kendi hibrit uygulamanıza bunu ekleyebilir.
+
+774
+02:00:42,027 --> 02:01:08,347
+Benzer şekilde farklı şeyler var. Yani kimisi iPhone ürün demiş, kimisi işte kitaplar için demiş. Ondan sonra kimisi NBA sitelerinden oyuncu verisi çekmek istemiş. Okey. Ama geri planda hepiniz birer crawler ve parser alt modülleri içeren bir uygulama geliştireceksiniz.
+
+775
+02:01:08,347 --> 02:01:18,467
+ve kullanıcı arayüzünüzde de bu sitelerden gelen verileri filtrelenebilecek bir gösterimle göstereceksiniz.
+
+776
+02:01:22,407 --> 02:01:29,647
+Bunun dışında bana bu dosyayı ben yayınladıktan sonra e-mail atan arkadaşlar var.
+
+777
+02:01:29,647 --> 02:01:40,987
+ben bunu o e-mailleri bakma fırsatım olmadı. Bu dosyanı tekrardan güncelleyeceğim. O gelen e-maillerde olur şimdi.
+
+778
+02:01:41,507 --> 02:01:43,427
+Hocam bir soru sorabilir miyim acaba?
+
+779
+02:01:43,907 --> 02:01:44,368
+Evet ben.
+
+780
+02:01:44,847 --> 02:01:50,448
+Hocam bizim mesela dediniz ya bu e-ticari sitelerinde bazı kategorileri göre çekeceğiz. Mesela iPhone ürünleri gibi.
+
+781
+02:01:50,448 --> 02:01:54,707
+Bunu çekerken e-ticari sitesinin ana sayfasında mı başlamalıyız hocam?
+
+782
+02:01:54,707 --> 02:02:00,787
+yoksa hani bu eticaret sitede böyle belli kategoriler altında işte telefon kategorilerinden de crawl işlemini başlatabilir miyiz?
+
+783
+02:02:02,427 --> 02:02:09,668
+Başlatıp yani şöyle hani ana sayfalarının üzerinde şeyler vardır bunların.
+
+784
+02:02:11,107 --> 02:02:15,747
+Onların kendi search etme kullanıcı arayüzleri vardır.
+
+785
+02:02:16,647 --> 02:02:20,187
+Search etme kullanıcı arayüzleri için script yazıp,
+
+786
+02:02:20,187 --> 02:02:35,667
+diyeyim ki mesela sizin aradığınız ürünleri search ettirip bir result set oluşturmasını sağlayıp oluşturulmuş olan result set içerisinden de o ürünü çekebilirsiniz.
+
+787
+02:02:35,667 --> 02:02:45,867
+Ya da hiç onların kullanıcı arayüzü üzerindeki browsing ile ilgili şeyi kullanmadan
+
+788
+02:02:46,484 --> 02:03:09,703
+ana sayfalarındaki URL'den başlayaraktan alt sayfalarını tamamını crawl ettirebilirsiniz. Çünkü bazı sayfalar RESTful API interfazı sağlayaraktan bu kullanıcı arayüzünün özelliklerini uzaktan da şey yapmanıza izin veriyor. Bunu tabii ki manuel yapmayacaksınız.
+
+789
+02:03:09,703 --> 02:03:20,623
+yani gidip de hani siz kendiniz bir ürünü search ettirip result seti çıkartıp o result seti şey yapmaya çalışmayın.
+
+790
+02:03:20,623 --> 02:03:40,623
+ya senin dediğin gibi ana sayfanın yörelinden başlayarak o ana sayfanın yörelini verip alt sayfalardaki bütün alt sayfaları search ettirip onlar içerisinden sizin istediğiniz tipteki ürünleri sayfalarını şey yapacaksınız.
+
+791
+02:03:41,623 --> 02:03:43,423
+Kendiniz indeksleyeceksiniz.
+
+792
+02:03:43,423 --> 02:03:59,043
+ya da eğer sayfa öyle bir olanak sağlamışsa yani programlama arayüzüyle, Resul arayüzüyle eğer siz onların filtreleme servisini kullanabiliyorsanız onu da yapabilirsiniz.
+
+793
+02:04:00,103 --> 02:04:01,243
+Tamamdır hocam. Teşekkürler.
+
+794
+02:04:02,303 --> 02:04:02,823
+Hocam.
+
+795
+02:04:04,363 --> 02:04:04,723
+Evet.
+
+796
+02:04:04,723 --> 02:04:34,223
+Yani demin dediniz ya işte REST ve biz direkt o sundukları sayfa yerine API gibi bir şeyi de kullanmamıza izin veriyor musunuz? Yani search'ı sayfadan script gibi yapmak yerine o HTML'i crawl etmekten ziyade çünkü daha kolay olur. Bir de çok fazla sitelerinin dinamik ve JavaScript ile çalıştığı için hani sayfalarda
+
+797
+02:04:34,723 --> 02:04:40,863
+html'i kural etmek yeterince efektif olamıyor ya çok zor olabilir.
+
+798
+02:04:40,863 --> 02:04:47,064
+Yani şöyle hani her sitenin öyle bir html yani rsul interfez sağladığını düşünmüyorum.
+
+799
+02:04:47,923 --> 02:04:54,803
+Yani Bimax, Teknos'a vesaire kendi rsul interfezlerini kendi kullanıcı arayüzlerini kullandırıyorlar.
+
+800
+02:04:55,623 --> 02:05:00,443
+O rsul interfezleri belki sen şeyden yakalayabilirsin.
+
+801
+02:05:00,443 --> 02:05:12,043
+yani giden HTTP requestleri monitör edip oradan yakalayabilirsin ama bu sefer de IP şeye sınırlaması getiriyorlar.
+
+802
+02:05:12,403 --> 02:05:17,543
+Yani oraya göndereceğin request farklı bir IP'den geliyorsa respons vermiyorlar.
+
+803
+02:05:17,543 --> 02:05:30,003
+Yani eğer RESTful Interface sağlıyorlarsa ki hani düşük ihtimal oradan gelen RESTful Interface
+
+804
+02:05:30,003 --> 02:05:59,983
+üzerinde gelen sonuçları da yine bir şekilde parse etmen gerekecek. Kendi sayfana entegre edebilmek için. Orada yine parser kullanmak durumundasın. Ama benim önerim, tercihim crawler kullanmak. Yani az önce size bahsettiğim implementation issue'ları içeren belli bir seed yörelden başlayıp diğer yörelleri şey yapan crawler kullanmak.
+
+805
+02:06:00,003 --> 02:06:10,203
+sonuçta içerisinde javascript olsa bile mutlaka HTTP content yani contenti bu şey yakalıyor.
+
+806
+02:06:10,203 --> 02:06:17,623
+Yani sonuçta browser'ın render ederek bize göstermiş olduğu contenti crawler yakalıyor.
+
+807
+02:06:19,503 --> 02:06:28,403
+Okey. Yani RESTful Interface neredeyse çok az sayfa yapıyordur. O da benim bildiğim yok yani.
+
+808
+02:06:30,003 --> 02:06:37,503
+kendi proje verdiğim, sunduğumla ilgili bir şey sorabilirim.
+
+809
+02:06:38,804 --> 02:06:57,443
+Onu şey genel soruları aldıktan sonra yapalım. Yani şimdi bir yere gitmeyeceğim. Dersi bitireceğim. Arkadaşların ayrılabileceğini söyleyeceğim. Ondan sonra kalırsın sorarsın. Başka arkadaşlar varsa aynı şekilde. Dersle ilgili yahut da genel olarak projeyle ilgili sorusu olan var mı?
+
+810
+02:07:00,183 --> 02:07:04,203
+Hocam ben dersle alakalı, projeyle alakalı olan soru soru deneyim.
+
+811
+02:07:04,403 --> 02:07:05,043
+Tamam lütfen.
+
+812
+02:07:06,023 --> 02:07:07,003
+Sesim geliyor mu acaba?
+
+813
+02:07:07,484 --> 02:07:08,003
+Evet geliyor.
+
+814
+02:07:08,804 --> 02:07:32,583
+Hocam şimdi biz bahsettiğimiz kadarıyla hep şöyle oldu, crawlerımız HTML'i aldı ve bir sonraki sayfayı hani A tag'in içinden falan bulup o bir sonraki sayfaya devam etti ama bazı sayfalar var mesela Trendyol'un ürünleri gibi onlar da dinamik olarak sayfa aşağıya kaydırdıkça yenileniyor.
+
+815
+02:07:32,583 --> 02:07:47,844
+yani bir kere gelen iki HTML içerisinde bütün ürünler olmuyor. Yeni tagler biz aşağı doğru kaydedikçe geliyor. Bununla alakalı bir yol gösterebilir misiniz? Ben bunu araştırdım ama bir kavram olarak bir ismini bulamadım ne olduğunu.
+
+816
+02:07:47,844 --> 02:08:17,824
+Tamam.
+
+817
+02:08:17,844 --> 02:08:46,723
+gösterilmesi crawlerlar içinde bir problem. Şimdi bu Natch'ın son versiyonunu kullanırsanız bu tür sayfaları da crawl eden özellikler getirmiş olmaları gerekiyor. Ben son versiyonuna bakmadım ama benim önerim bu proje için kullanacağınız e-ticaret sitesileri
+
+818
+02:08:47,843 --> 02:08:57,683
+minimum JavaScript kullanan daha çok HTML dokümanlarıyla ürünlerini tanıtan sayfalar olsun.
+
+819
+02:08:57,683 --> 02:09:07,263
+Yani trend yol, hepsi bu arada gibi sayfalar biraz daha ağırlıklı olarak JavaScript kullanaraktan content paylaşımı yapıyorsa
+
+820
+02:09:07,263 --> 02:09:21,223
+biraz daha şey yapın hani Google Meyendisliği yapıp crawlerınızın HTML kontenti daha iyi yakalayabileceği web sayfalarını geri planda crawl edin.
+
+821
+02:09:22,503 --> 02:09:22,763
+Okey?
+
+822
+02:09:25,343 --> 02:09:26,143
+Teşekkür ederim.
+
+823
+02:09:26,143 --> 02:09:32,283
+Sizin kullanacağınız mesela Java farklı tipte crawlerlar var.
+
+824
+02:09:32,283 --> 02:09:55,903
+Ben burada çok kompleks bir açık kaynaklı crawler uygulaması da kütüphanesi de kullanmanız yerine biraz daha az önceki size simple software architecture'ını göstermiş olduğum crawler'ı implement eden mesela crawler4j diye bir tane Java kütüphanesi var.
+
+825
+02:09:55,903 --> 02:10:09,943
+daha basit implementasyon olsun ki implementasyon detaylarında çok kaybolmadan kendi modülünüzü bu alt kütüphanenin üzerine yerleştirebilin.
+
+826
+02:10:14,484 --> 02:10:15,023
+teşekkür ederim.
+
+827
+02:10:17,944 --> 02:10:31,643
+Bir de dataset kullanarak projesini yapacak olan arkadaşlar var. Yani crawler değil de ben diyor şuradaki dataset'i indireceğim. Bunun üzerinde şöyle bir classification çalışacağım.
+
+828
+02:10:32,484 --> 02:10:35,263
+Classification algoritmalarım da şunlardır.
+
+829
+02:10:36,643 --> 02:10:39,223
+Şimdi bu arkadaşlar için söylüyorum.
+
+830
+02:10:39,223 --> 02:10:45,763
+Arkadaşlar bunun demosunu yaparken Jupyter Notebook üzerinde bunu göstermeyeceksiniz.
+
+831
+02:10:46,203 --> 02:10:56,064
+Yahut da işte bir editör açıp bu editörün üzerinde konsolda sonuçlar gözükecek şekilde şey yapmayacaksınız.
+
+832
+02:10:56,143 --> 02:10:57,564
+Ya da slide göstermeyeceksiniz.
+
+833
+02:10:57,683 --> 02:11:00,824
+Sizden bir kullanıcı arayüzü oluşturmanızı istiyorum.
+
+834
+02:11:00,824 --> 02:11:19,723
+Bu kullanıcı arayüzü üzerinde dataset'i seçebilelim, algoritmayı seçebilelim, ondan sonra % kaç oranında, %70 oranında mı training datası olacak, %30 oranında mı olacak onu seçebilelim
+
+835
+02:11:19,723 --> 02:11:22,903
+Ondan sonra da öğrenmeyi başlatalım
+
+836
+02:11:22,903 --> 02:11:32,463
+öğrenmeyi başlattıktan sonra model oluşsun orada hangi diyelim ki üç tane farklı sınıflandırıcım var.
+
+837
+02:11:32,463 --> 02:11:46,603
+Üç tane farklı sınıflandırıcı modeli oluştuktan sonra bu modeller test datası üzerinde sonuçları göstersin kullanıcı arayüzünüz üzerinde.
+
+838
+02:11:46,603 --> 02:12:03,063
+Nedir sonuçlar mesela? Burada yüzde kaç oranında accuracy ile doğru tahminler yaptı? İşte F1 skor değeri nedir? Recall precision değerleri nedir? Aynı şekilde orada confusion matrisi de gösterebilirsiniz.
+
+839
+02:12:03,063 --> 02:12:13,763
+Confusion matrisi de göstererek acaba bu sınıflandırıcılar bu test verisi üzerinde ne kadar başarılı bir şekilde şeyi yaptılar.
+
+840
+02:12:14,463 --> 02:12:16,363
+Sınıflandırma işlemini yaptılar.
+
+841
+02:12:17,363 --> 02:12:22,483
+Bazı arkadaşlarımız mesela clustering algoritmaları çalıştırmak istemiş.
+
+842
+02:12:23,083 --> 02:12:25,343
+Bu clustering algoritmaları da aynı şekilde.
+
+843
+02:12:26,343 --> 02:12:28,863
+İşte üç tane clustering algoritmanız var.
+
+844
+02:12:28,984 --> 02:12:32,263
+Kullanıcı arayüzünüzden clustering algoritmasını seçeceğiz.
+
+845
+02:12:33,064 --> 02:12:42,484
+ondan sonra clustering algoritması için diyelim ki partition tabanlı bir clustering algoritması ise K-Mins ise K değerini mesela seçebileceğiz.
+
+846
+02:12:43,164 --> 02:12:50,304
+Ondan sonra clustering'i gerçekleştirecek, oluşturulacak olan clustering sonuçlarını bize görselleştirerek mesela gösterecek.
+
+847
+02:12:50,303 --> 02:13:15,083
+ok tekrar ediyorum hani bir background'da bir veri analizi yapmışsınız da o veri analizinin sonuçlarını sanki anlatıyorsunuz şeklinde olmuyor. Bir uygulama istiyorum yani bir demo istiyorum. Bir application ortaya çıkacak. Bu bütün projeler için geçerli. Olmadığı vakit projenizi notlandıramam.
+
+848
+02:13:21,811 --> 02:13:39,191
+Tamam. Bugünlük bu kadar arkadaşlar. Katılımınız için hepinize teşekkür ediyorum. Ayrılabilirsiniz. Onun dışında spesifik olarak kendi projesiyle ilgili sorusu olanlar varsa kalsın sadece. Onun dışında sizler ayrılabilirsiniz. Gelecek hafta link analizinden devam edeceğim.
+
+849
+02:13:40,131 --> 02:13:48,152
+Hocam ben spesifik değil de bu sunum tarihi hakkında bir şey söylediniz mi? Ben kaçırdım da galiba o kısmını. Ya da teslim tarihi hakkında projenin.
+
+850
+02:13:48,152 --> 02:13:54,251
+Teslim tarihi dönemin son haftasında olacak arkadaşlar.
+
+851
+02:13:56,451 --> 02:14:01,672
+Dönemin son haftasının hangi hafta olacağını da akademik takvimden bakabilirsiniz.
+
+852
+02:14:02,591 --> 02:14:11,871
+Ben onu yine web sayfada duyururum ama sizin, siz şu anda benim duyurmama gerek kalmadan şu anda söylüyorum.
+
+853
+02:14:11,871 --> 02:14:41,191
+dönemin son haftası son haftadan sonra zaten final haftası başlayacak dönemin son haftası perşembe günü demolar olacak o günkü ders biraz saat 9'da başlayacak saat 1'e kadar devam edebilir sınırlı zaman olacak herkesin projesini 15-20 dakika içerisinde hızlıca şey alacaksınız ekran görüntüsü alacaksınız ekran görüntüsü paylaşacaksınız
+
+854
+02:14:41,871 --> 02:14:54,532
+projenizin demosunu göstereceksiniz. Nasıl yaptığınızı anlatacaksınız. Belki de sizi editörünüze açtırıp hani kodları nasıl yazdığınızla ilgili birkaç bir şey sorabilirim. Demolar bu şekilde olacak.
+
+855
+02:15:02,579 --> 02:15:15,099
+Hocam merhaba. Benim de başka bir sorum vardı da. Tamam sor. Bizim dalgınlığımıza gelmiş ekte deyip ekte şey eklememişiz dokümanı. Tamam.
+
+856
+02:15:15,099 --> 02:15:30,719
+Bununla ilgili ne zaman geri bildirim alabilirim? Ben dediğim gibi bu dosyayı yayınladıktan sonra bana gönderilmiş e-mail'lere bakma fırsatım olmadı. O e-mail'leri inceleyip ondan sonra bu dokümanı güncelliyorum. Tamam teşekkür ederim.
+
+857
+02:15:30,719 --> 02:15:32,159
+Tamam
+
+858
+02:15:35,699 --> 02:15:40,479
+Tamamdır arkadaşlar. Kendinize iyi bakın. Neğer sorun var mı? Sor.
+
+859
+02:15:40,479 --> 02:15:50,899
+Evet hocam ben şey soracaktım hocam. Bizim projenin başladığınızda hocam biz mesela bir şey demiştik, price monitoring ve ürün önerme sistemi diye bir şey düşünmüştük hocam.
+
+860
+02:15:55,919 --> 02:16:21,920
+yani kullanıcı herhangi bir ürünün linkini alacak hocam biz ona işte bir fiyat girmesini talep edeceğiz işte bu fiyatın altına düşündü ona bir bildirim gönderecektik sizin hocam proje önerinizde bize şey verdiniz hocam işte bir iphone veriset üzerinden crawl over yapmamızı istediniz şu sağ tarafta da hocam şey demişsiniz yani önerinizi bir tek kategori üzerinden yapın demişsiniz şu an bir tek kategori üzerinden önermeyi nasıl yapacağız zaten iphone ürünü de çekiyoruz yani
+
+861
+02:16:21,919 --> 02:16:46,879
+Evet ben siz iPhone demişsiniz zaten okey doğrusunuz yani ben başka bir gruba yazdığım kontenti buraya kopyalamış olabilirim sizde de şey siz özellikle projeleri dökümanınızda iPhone belirtmiştiniz değil mi?
+
+862
+02:16:46,879 --> 02:16:48,439
+Yok hocam belirtmemiştik iPhone.
+
+863
+02:16:48,439 --> 02:17:09,719
+O zaman şöyle, şöyle diyeyim. Yani ben şöyle düşündüm. Sizin projenizden o şekilde anladım. Siz geri planlı bir crawler çalıştıracaksınız. Bu yapacağınız crawler da e-ticari sitesindeki bütün ürünleri yapacaksınız diye düşündüm.
+
+864
+02:17:09,719 --> 02:17:17,479
+o da sizin elde edeceğiniz verinin ve indeksleyeceğiniz verinin çok büyük olmasına sebep olur diye düşündüm.
+
+865
+02:17:17,559 --> 02:17:19,560
+O yüzden bir yönlendirme yapmaya çalıştım.
+
+866
+02:17:19,700 --> 02:17:22,899
+Yani burada iPhone sadece bir örnekti yani.
+
+867
+02:17:32,159 --> 02:17:37,359
+ben bununla ilgili en ucuz ürünleri gösteren sayfaları göstereceğim diyorsanız bu okey.
+
+868
+02:17:37,359 --> 02:17:38,459
+Onda sorun yok yani.
+
+869
+02:17:38,459 --> 02:17:52,299
+Ben sadece şey yapmaya çalıştım. Hani çok fazla kaybolmanız için yönlendirme yapmaya çalıştım ama olur. Şey yok yani.
+
+870
+02:17:52,839 --> 02:17:54,759
+Tamamdır hocam. Teşekkür ederim.
+
+871
+02:17:55,039 --> 02:17:57,499
+Bu söylediğiniz tarzdaki uygulama gayet güzel yani.
+
+872
+02:17:57,920 --> 02:17:58,560
+Tamamdır hocam.
+
+873
+02:18:01,940 --> 02:18:15,400
+Tamamdır arkadaşlar. Kendinize iyi bakın. Haftaya parşembe dersimiz var. Unutmayın. Link analiz konusu önemli bir konu. Sınavda da çıkacak bir konu. Lütfen katılın. İyi günler dilerim size.
+
+874
+02:18:19,924 --> 02:18:20,823
+İyi günler hocam.

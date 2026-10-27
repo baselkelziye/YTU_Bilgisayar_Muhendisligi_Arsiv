@@ -1,0 +1,4423 @@
+1
+00:11:05,620 --> 00:11:07,059
+Herkese günaydın arkadaşlar.
+
+2
+00:11:09,340 --> 00:11:10,319
+Günaydın hocam.
+
+3
+00:11:15,860 --> 00:11:43,780
+İsterseniz başlayalım. Bugün işlemek istediğim konu sayısı biraz yoğun. O yüzden başlayalım. Eğer mümkünse 3 sesyon halinde yapalım. Tekrardan hatırlatma olsun diye dersin başında nerede olduğumuzu bir göstereyim ve nasıl gidiyoruz onu da bir anlatmış olayım.
+
+4
+00:11:45,860 --> 00:11:55,459
+Dersin kitabı Web Data Mining kitabıydı. Hatırlıyorsunuz dersin kitabının adresini daha önceden sizinle paylaşmıştık.
+
+5
+00:11:56,400 --> 00:12:06,099
+Chapterları işlemeye devam ediyoruz. Ders kapsamında olabildiğince chapterı cover etmeye çalışacağız.
+
+6
+00:12:06,099 --> 00:12:19,359
+geçen hafta Association Rule Mining ile ilgili konuları işlemiştik. Arkadan araya tatil girmişti Perşembe günü.
+
+7
+00:12:20,179 --> 00:12:31,259
+Şimdi de Sequential Rule Mining'den biraz bahsedip ondan sonra Supervised Learning bir de vakit kaldığı ölçüde Unsupervised Learning konularını review etmek istiyorum.
+
+8
+00:12:31,260 --> 00:12:38,800
+Bu konular, association rule mining, sequential pattern mining ve unsupervised learning
+
+9
+00:12:38,800 --> 00:12:48,260
+Daha sonra işleyeceğimiz olan ana web mining konularının prerequisite olduğu için bunları review etmek durumundayım
+
+10
+00:12:49,179 --> 00:12:53,020
+Bazılarınız aynı zamanda data mining dersini de alıyor
+
+11
+00:12:53,020 --> 00:13:01,059
+O yüzden bu konuları bazılarınız zaten data mining kapsamında da gördü ama görmeyenleriniz de var
+
+12
+00:13:01,059 --> 00:13:07,419
+ilk defa bu konuları öğrenenleriniz de var. O yüzden bunları review ediyorum.
+
+13
+00:13:10,964 --> 00:13:34,304
+Okey. Sesim gelmediği zaman, beni duyamadığınız zaman chatten lütfen yazın. Aksi taktirde ben sesimin net bir şekilde size geldiğini varsayıyorum. Buradan ayrı bir ekrandan da takip ediyorum. Beni duyamadığınız zaman lütfen yazın.
+
+14
+00:13:34,304 --> 00:13:45,144
+sorunuz olduğu zaman da aynı şekilde yazın. Mikrofonunuzu açabilirsiniz. Hocam şu slide'da bir sorun var diye belirtebilirsiniz.
+
+15
+00:13:46,144 --> 00:14:03,243
+Okay, let's switch back to English. We were at sequential pattern mining. Previously we discussed how we can extract association rules out of log files.
+
+16
+00:14:03,243 --> 00:14:06,863
+Now we are going to talk about sequential pattern mining
+
+17
+00:14:06,863 --> 00:14:17,603
+Now, so remember, so when we were doing the association rule mining, we were considering the transactions
+
+18
+00:14:17,603 --> 00:14:26,603
+Okay, so remember, so what was the transaction data? Transaction data looked like this
+
+19
+00:14:26,603 --> 00:14:52,644
+just to remind you, let's go back. Yeah, so transaction data look like this. As you can see, each transaction has a transaction ID and in each transaction, so we have different items and when you apply, so and we have a high number of transactions and when you apply association rule mining algorithm,
+
+20
+00:14:52,644 --> 00:15:21,984
+system. So what it does is it first finds the frequent item sets, as you can see here, and it uses the largest possible frequent item sets. And from this, it extracts the association rules that you can use. Okay. And it does not. So, so in association rule mining, it does not pay attention to the order of the items that are bought. Okay.
+
+21
+00:15:21,984 --> 00:15:27,404
+It just pays attention whether or not these items are bought within the same transaction.
+
+22
+00:15:27,404 --> 00:15:40,243
+Now we are going to talk about another types of algorithm which will pay attention to the order of the items that are bought.
+
+23
+00:15:40,603 --> 00:15:47,264
+And so this type of algorithm is in sequential pattern mining category.
+
+24
+00:15:47,264 --> 00:15:55,264
+okay so in many applications such an ordering is important
+
+25
+00:15:56,628 --> 00:16:08,128
+So in market basket data analysis, it's interesting because you might want to find out in what sequence people are buying items.
+
+26
+00:16:08,508 --> 00:16:22,548
+But especially in web data mining, so it's particularly important to us because we are working on the web data, which means we are working on the click stream data.
+
+27
+00:16:22,548 --> 00:16:31,087
+okay every click that user is doing on a website is a data for us okay and we want to find out the
+
+28
+00:16:31,087 --> 00:16:38,348
+navigational pattern that user is creating okay so what does navigational pattern so user starts
+
+29
+00:16:38,348 --> 00:16:46,947
+with the home page of a website okay and it clicks on a link and it goes to another as another site
+
+30
+00:16:46,947 --> 00:16:50,988
+another page on that site.
+
+31
+00:16:51,468 --> 00:16:51,547
+Okay.
+
+32
+00:16:51,767 --> 00:16:53,787
+And it moves like that.
+
+33
+00:16:53,988 --> 00:16:58,328
+So user follows a navigational pattern.
+
+34
+00:16:58,707 --> 00:16:58,887
+Okay.
+
+35
+00:16:59,567 --> 00:17:03,988
+So it navigates through the web pages on that website.
+
+36
+00:17:04,708 --> 00:17:10,168
+And what if we can find the frequent navigational pattern.
+
+37
+00:17:10,168 --> 00:17:10,727
+Okay.
+
+38
+00:17:10,967 --> 00:17:15,128
+Then we can understand what is the next move of that user.
+
+39
+00:17:15,128 --> 00:17:18,108
+So we can predict the next move of that user.
+
+40
+00:17:18,587 --> 00:17:24,248
+So based on that, we can do some marketing actions, etc.
+
+41
+00:17:26,367 --> 00:17:26,647
+Okay.
+
+42
+00:17:27,947 --> 00:17:32,788
+So the sequence of the items in the transactions is important.
+
+43
+00:17:33,047 --> 00:17:36,587
+So that's why we are using the sequential pattern mining algorithms.
+
+44
+00:17:37,068 --> 00:17:37,168
+Okay.
+
+45
+00:17:37,428 --> 00:17:42,547
+Now, in order to understand the algorithms in this category, as you see,
+
+46
+00:17:43,388 --> 00:17:44,888
+so we have a notation.
+
+47
+00:17:45,128 --> 00:17:50,967
+just like we had notation in association rule mining and as you see we have
+
+48
+00:17:53,687 --> 00:18:00,568
+items just like the association rule mining and so we donate capital i in order to indicate the
+
+49
+00:18:00,568 --> 00:18:09,607
+set of items okay and again we have item sets just like so what we had in association rule mining and
+
+50
+00:18:09,607 --> 00:18:13,807
+and we use capital X in order to identify the item set.
+
+51
+00:18:14,427 --> 00:18:18,147
+Now we have a different notation, what we call sequence,
+
+52
+00:18:18,307 --> 00:18:21,687
+and sequence, as you can see, is donated like this.
+
+53
+00:18:21,687 --> 00:18:29,087
+Now every element in a sequence is an item set,
+
+54
+00:18:29,288 --> 00:18:34,288
+which means that A1 consists of one or more items.
+
+55
+00:18:34,947 --> 00:18:38,527
+A2 consists of one or more items.
+
+56
+00:18:38,527 --> 00:19:07,687
+Okay, now every element that you see in a sequence is a it could be a set of items. Okay, now, when you see elements like this in a sequence, you should understand that first, these items were purchased. And right after that, these items were purchased. And at last, these items were purchased. Okay, so there is a sequence between the
+
+57
+00:19:07,687 --> 00:19:13,167
+there's a SQL between the elements of a sequence.
+
+58
+00:19:13,167 --> 00:19:13,667
+Okay.
+
+59
+00:19:14,467 --> 00:19:21,167
+Now, so we already talked that an item set X
+
+60
+00:19:21,167 --> 00:19:23,848
+is a set of elements.
+
+61
+00:19:24,288 --> 00:19:24,467
+Okay.
+
+62
+00:19:24,667 --> 00:19:27,667
+So we already knew from association rule mining.
+
+63
+00:19:28,068 --> 00:19:28,147
+Okay.
+
+64
+00:19:29,407 --> 00:19:29,928
+And
+
+65
+00:19:29,927 --> 00:19:30,967
+uh
+
+66
+00:19:34,900 --> 00:19:57,839
+What is the notation that we have? So we use the size of a sequence. Okay, so what is the size of a sequence? For example, so let's take a look at this one. So this is a sequence and the size of a sequence is the number of elements in that sequence.
+
+67
+00:19:57,839 --> 00:20:00,459
+How many elements do I have in this sequence?
+
+68
+00:20:00,699 --> 00:20:04,539
+1, 2, 3, 4, all the way to R.
+
+69
+00:20:04,739 --> 00:20:08,719
+So which means I have R elements in this sequence.
+
+70
+00:20:09,279 --> 00:20:09,499
+Okay.
+
+71
+00:20:09,859 --> 00:20:13,459
+Now, how many items do I have in this sequence?
+
+72
+00:20:14,039 --> 00:20:20,440
+So when I say items in a sequence, I'm talking about the total number of items.
+
+73
+00:20:20,580 --> 00:20:21,019
+Okay.
+
+74
+00:20:21,379 --> 00:20:22,679
+That's available here.
+
+75
+00:20:22,679 --> 00:20:26,039
+So A1 might have items in it.
+
+76
+00:20:26,039 --> 00:20:28,879
+A2 might have items in it.
+
+77
+00:20:29,120 --> 00:20:31,059
+AR might have items in it.
+
+78
+00:20:31,400 --> 00:20:35,719
+So therefore, so when I talk about the number of items
+
+79
+00:20:35,719 --> 00:20:40,879
+that all these item sets, A1, A2, AR, all together have,
+
+80
+00:20:41,519 --> 00:20:44,900
+so that will give me the length of a sequence.
+
+81
+00:20:45,319 --> 00:20:48,440
+So you can see in this particular example.
+
+82
+00:20:49,219 --> 00:20:55,499
+So let's say this is the total number of items in my item sets.
+
+83
+00:20:55,499 --> 00:21:01,839
+So these are the items that are being sold in a market, just for the sake of discussion.
+
+84
+00:21:02,760 --> 00:21:02,959
+Okay.
+
+85
+00:21:03,199 --> 00:21:04,800
+Now, this is a sequence.
+
+86
+00:21:04,980 --> 00:21:08,299
+As you see, you have three elements in this sequence.
+
+87
+00:21:08,859 --> 00:21:14,879
+So this is your first element, and this is your second element, and this is your third element.
+
+88
+00:21:15,840 --> 00:21:16,099
+Okay.
+
+89
+00:21:17,919 --> 00:21:21,159
+And so what is the size of the sequence?
+
+90
+00:21:21,319 --> 00:21:23,419
+The size of the sequence is three.
+
+91
+00:21:23,959 --> 00:21:24,559
+Okay.
+
+92
+00:21:24,559 --> 00:21:33,179
+now what is the length of the sequence so remember each element of the sequence has
+
+93
+00:21:33,179 --> 00:21:41,479
+might have one or more elements in it okay each items in it each element of the sequence might
+
+94
+00:21:41,479 --> 00:21:48,419
+have one or more items in it so this one has one this one is two which means three items this one
+
+95
+00:21:48,420 --> 00:21:55,120
+is one which means four items now four is the length of the sequence okay so this this is the
+
+96
+00:21:55,120 --> 00:22:01,319
+notation that we are going to be using so there is a size of a sequence and there is a length of
+
+97
+00:22:01,319 --> 00:22:09,679
+the sequence okay now there is another notation that we need to learn is a subsequence or super
+
+98
+00:22:09,679 --> 00:22:17,920
+sequence okay so let's let's say i have two sequences one is s1 and the other one is s2
+
+99
+00:22:17,920 --> 00:22:30,000
+okay now as you see um in order to say s1 is is a subsequence of s2 so it needs to
+
+100
+00:22:29,999 --> 00:22:42,799
+support a condition which says that all the elements of a first sequence must be a subsequence
+
+101
+00:22:42,799 --> 00:22:51,839
+of the of one elements of s2 next sequence so what do i mean okay so you see that i have r
+
+102
+00:22:51,840 --> 00:23:03,700
+elements here, right? So if S1 is a subsequence S2, in this particular case, A1 must be subset of
+
+103
+00:23:03,700 --> 00:23:14,080
+an element in S2. A2 should be subset of an element of S2.
+
+104
+00:23:14,579 --> 00:23:39,180
+A3, A4 and all the way to AR must be subset of a separate element in S2. If each element is a subset of another element in S2, in this particular case that I can say S1 is a subsequence of S2.
+
+105
+00:23:39,180 --> 00:24:03,179
+okay I can say the other way around I can say S2 is a super sequence is S1 if it supports this condition okay now this is another notation that we need to remember okay now
+
+106
+00:24:03,179 --> 00:24:06,099
+Hocam bir şey sorabilir miyim?
+
+107
+00:24:06,599 --> 00:24:06,859
+Evet
+
+108
+00:24:06,859 --> 00:24:09,760
+Tekrar 40'a gelebilir misin acaba?
+
+109
+00:24:13,523 --> 00:24:14,884
+Bir önceki slide'mışı mı?
+
+110
+00:24:15,363 --> 00:24:23,503
+Evet. Hocam şimdi burada S1'deki A1, A2, A3 diye gidiyor ya, bunun sıralı bir şekilde mi S2'nin alt üniversitesi olması gerekiyor?
+
+111
+00:24:23,603 --> 00:24:25,904
+Yani A2'de herhangi bir eleman eksip olmayacak, tamam mı?
+
+112
+00:24:25,904 --> 00:24:37,683
+Evet, evet. Yani bunu S1'un, S2'nun subsequence olduğunu söyleyebilmek için A1'ın içindeki elementlerin buradaki bir elemanın alt şeyler olacak.
+
+113
+00:24:37,683 --> 00:24:44,624
+Aynı şekilde bundan bir sonraki elemanın da bundan bir sonraki elemanın subsequence olacak.
+
+114
+00:24:44,803 --> 00:24:50,523
+Hani bu subsequence derken yani mesela A2 ile B2'nun elemanları birbirine eşit de olabilir.
+
+115
+00:24:50,843 --> 00:24:57,343
+Ama kapsaması önemli yani B2'nun içindeki itemların A2'yu kapsaması önemli.
+
+116
+00:24:58,123 --> 00:25:02,003
+Hocam burada size'larda eşit olması gerekiyor diye bir çıkarım yapabilir miyiz?
+
+117
+00:25:02,003 --> 00:25:08,224
+Tabii. Çünkü hepsinin separate elemanların alt sequosu olduğunu söylüyoruz.
+
+118
+00:25:08,224 --> 00:25:09,143
+Tamam hocam.
+
+119
+00:25:09,583 --> 00:25:10,343
+Teşekkürler hocam.
+
+120
+00:25:14,259 --> 00:25:28,999
+Okay, now given an input data sequences, our problem is we want to find the sequential patterns, okay, given that given a user specified minimum support.
+
+121
+00:25:28,999 --> 00:25:39,780
+Okay, now remember in association rule mining, we were trying to find the largest possible frequent item sets.
+
+122
+00:25:40,039 --> 00:25:45,459
+So we were trying to find item set that has the largest possible items in it.
+
+123
+00:25:45,579 --> 00:25:54,079
+And once we found the largest possible item sets, from that we were able to extract the association rules.
+
+124
+00:25:54,079 --> 00:26:00,179
+Now, in this particular case, we are trying to find the largest possible sequential patterns.
+
+125
+00:26:03,379 --> 00:26:12,020
+Okay, now this is a transaction data that you see that you can find in a store.
+
+126
+00:26:12,600 --> 00:26:18,899
+As you see, customer number one has two transactions in two different days.
+
+127
+00:26:18,899 --> 00:26:27,219
+in the first day so he or she bought one items and then one item in the other day and customer
+
+128
+00:26:27,219 --> 00:26:34,899
+number two in the first day uh two items were both second day one and third day three items
+
+129
+00:26:34,899 --> 00:26:41,139
+were both okay now this is the kind of transactions that you would you can see now what we need to do
+
+130
+00:26:41,139 --> 00:26:48,179
+we need to convert this into this okay now now you see that customer number one
+
+131
+00:26:48,179 --> 00:27:00,239
+has a sequence of the items that uh that are both okay and you see and so so this notation that you
+
+132
+00:27:00,239 --> 00:27:06,759
+you just learned is a notation of a sequence which means that all the elements of a sequence
+
+133
+00:27:06,759 --> 00:27:08,840
+are both in an order, okay?
+
+134
+00:27:10,300 --> 00:27:14,679
+And as you see, in some sequences,
+
+135
+00:27:15,179 --> 00:27:18,999
+you see there are more than one elements, obviously.
+
+136
+00:27:19,899 --> 00:27:24,219
+And so this means that, so all the elements
+
+137
+00:27:24,219 --> 00:27:29,959
+of elements in a sequence, okay, so there is an order.
+
+138
+00:27:29,959 --> 00:27:39,099
+So this 40, 60, 70 is purchased right after 30.
+
+139
+00:27:39,560 --> 00:27:39,659
+Okay.
+
+140
+00:27:40,259 --> 00:27:42,039
+And we don't know for sure.
+
+141
+00:27:42,439 --> 00:27:49,920
+So which, whether 40, 60, 70, the order between the 40, 60, 70.
+
+142
+00:27:49,920 --> 00:28:00,480
+But we know from this notation that, so this element, which includes 40, 60, 70, were purchased after this element 30.
+
+143
+00:28:00,860 --> 00:28:03,179
+Now, this is my transaction data set.
+
+144
+00:28:03,819 --> 00:28:16,220
+Now, what I'm trying to find, I'm trying to find the largest possible sequence, which in this particular case, three sequence, that includes this.
+
+145
+00:28:16,219 --> 00:28:25,219
+Okay. Now, if you look at this, so you'll see that 30, 40, 70 is above 25%.
+
+146
+00:28:25,819 --> 00:28:39,399
+Okay. So which you can see if it is available in more than two transactions out of five, then so you would say that, okay, so this is frequent.
+
+147
+00:28:39,399 --> 00:28:46,620
+For example, so you see 30, 40, 70, and you also see 30, 40, 70.
+
+148
+00:28:47,019 --> 00:28:47,140
+Okay.
+
+149
+00:28:47,579 --> 00:28:50,620
+Now you can see that.
+
+150
+00:28:51,019 --> 00:29:01,060
+So this guy is a subsequence of this one, and this is a subsequence of this one, and this one.
+
+151
+00:29:01,239 --> 00:29:01,360
+Okay.
+
+152
+00:29:01,359 --> 00:29:08,279
+Now, similar to association rule mining, similar to association rule mining.
+
+153
+00:29:09,395 --> 00:29:22,615
+So I have shown you the a priori algorithm, so I'm going to go back and show you again the a priori algorithm again so that you can see the similarity between these two algorithms.
+
+154
+00:29:22,615 --> 00:29:25,675
+Okay, there it is.
+
+155
+00:29:26,496 --> 00:29:29,935
+Okay, now remember this was the a priori algorithm.
+
+156
+00:29:30,275 --> 00:29:38,755
+In the a priori algorithm, we were doing a pass on the data set at the first time.
+
+157
+00:29:38,755 --> 00:29:43,736
+we were finding the count of the one element item sets.
+
+158
+00:29:44,095 --> 00:29:46,576
+And then starting from that,
+
+159
+00:29:46,756 --> 00:29:54,035
+we were finding the candidate two element item sets.
+
+160
+00:29:54,535 --> 00:29:56,735
+And then we were doing the second pass.
+
+161
+00:29:57,135 --> 00:30:01,495
+So remember, we were doing the second pass on the data sets
+
+162
+00:30:01,495 --> 00:30:06,235
+and then counting the number of appearances
+
+163
+00:30:06,235 --> 00:30:08,215
+of the two item item sets.
+
+164
+00:30:08,215 --> 00:30:15,836
+And then once we do that, and then we check whether the two item item sets are actually frequent,
+
+165
+00:30:15,976 --> 00:30:17,495
+and we were going back to the loop.
+
+166
+00:30:17,836 --> 00:30:19,875
+Now, this was the apriori algorithm.
+
+167
+00:30:20,315 --> 00:30:22,515
+Now, look at the GSP algorithm.
+
+168
+00:30:27,859 --> 00:30:55,639
+Okay, now do you see the similarity? Okay, it is the same thing. Again, we are going to do one pass, okay, and we are going to count one item sequences, okay, and once we find the one item frequent sequences, then we go into the loop, and then we get again, this has also a candidate generation function in it,
+
+169
+00:30:55,639 --> 00:31:23,879
+and we find the two item frequent item sets, candidate two item frequent sequences and then we do a scan of the data set again and we count the number of appearances that two element sequences, okay, and then we check whether these two element sequences are actually frequent and then we go back to the beginning of the loop, okay.
+
+170
+00:31:23,880 --> 00:31:47,779
+starting from the one sequence, okay, and so we go to the second sequence and we go to the third sequence. By the time we finish this algorithm, okay, it will generate the most frequent largest possible sequence that you can find and from this you can generate again the sequential rules.
+
+171
+00:31:47,779 --> 00:31:59,900
+so which means that you can say that so when 30 happens right after that 40 and 70 will happen.
+
+172
+00:31:59,900 --> 00:32:17,580
+Okay so there's a similarity most of the sequential pattern mining algorithms are derivatives of the a priori algorithm so they are similar to the a priori algorithm.
+
+173
+00:32:17,580 --> 00:32:40,800
+so it's easy to understand and so many of these algorithms are currently being used in order to understand the behavior of the users on a website. Okay, so to, so let's see if I can better illustrate this.
+
+174
+00:33:05,556 --> 00:33:12,556
+Just to give you illustration of so where it is being used.
+
+175
+00:33:18,932 --> 00:33:48,831
+Okay, I think this is a good illustration for you. Okay. Now, in this picture, for example, you see that now this is a browsing data. Okay, this is so what is a browsing data. Now, A is, let's say, homepage of a website. Okay, and then user one user comes in and first refreshes the homepage, then user clicks on a link and
+
+176
+00:33:48,831 --> 00:34:07,231
+moves to second page which turns out to be B and refreshes again and then user clicks on a link and goes to another site, see, under the same website it goes to another web page, it refreshes again.
+
+177
+00:34:07,231 --> 00:34:23,232
+As you see, as the user is moving along in the website, user is generating browsing data. Now, you can also see this right here.
+
+178
+00:34:29,396 --> 00:34:37,635
+okay you see that the first column here indicates the session okay now the first user is in the
+
+179
+00:34:37,635 --> 00:34:48,675
+session number zero it first at time zero it goes to page a at time 3t it refreshes the page a
+
+180
+00:34:48,675 --> 00:34:59,095
+at time for t it goes to page b and you as you see user one is doing different activities in
+
+181
+00:34:59,095 --> 00:35:05,235
+session number zero and this is the browsing data that that tells you that now if you apply
+
+182
+00:35:05,235 --> 00:35:13,055
+sequential pattern mining okay eventually it will find something like this so what's the sequential
+
+183
+00:35:13,055 --> 00:35:22,175
+pattern mining says okay now if you consider all the sessions all the sessions okay now each session
+
+184
+00:35:22,175 --> 00:35:30,015
+belongs to uh so one transaction okay so this is a transaction and this is a transaction
+
+185
+00:35:30,015 --> 00:35:37,056
+and as you can see these are the activities within the transaction if you apply sequential
+
+186
+00:35:37,055 --> 00:35:45,855
+pattern mining now these are the different patterns okay frequent patterns that many of
+
+187
+00:35:45,855 --> 00:35:53,455
+the users are creating okay so this means that if you see a so this is a one element
+
+188
+00:35:54,255 --> 00:36:04,896
+frequent sequence and this is for example three a sequence with it a length three this is a
+
+189
+00:36:04,896 --> 00:36:13,775
+frequent sequence with a length too okay now this is how we are using sequential pattern
+
+190
+00:36:13,775 --> 00:36:19,855
+mining algorithms on a real data sets on a real click stream data sets collected from a website
+
+191
+00:36:19,855 --> 00:36:32,896
+okay this is just one example
+
+192
+00:36:25,331 --> 00:36:36,531
+Okay. Now, what I want to do, I want to move to next chapter that I want to cover, which is supervised learning.
+
+193
+00:36:36,831 --> 00:36:45,672
+Now, this is another important topic that we are going to be using in web data mining.
+
+194
+00:36:45,672 --> 00:36:58,712
+Okay. So let's again show you the chapter that I'm going to talk. I'm talking about the chapter number three. Okay.
+
+195
+00:37:00,412 --> 00:37:07,031
+And so remember, you can find all the slides that I'm covering here on the book website.
+
+196
+00:37:07,571 --> 00:37:14,271
+And also the PDFs of the chapters all available on the website.
+
+197
+00:37:15,672 --> 00:37:18,672
+Okay, supervised learning.
+
+198
+00:37:20,672 --> 00:37:29,592
+Now, with the supervised learning, we are trying to predict a label of a data.
+
+199
+00:37:30,492 --> 00:37:35,931
+And we are trying to create and learn from a data which has labels in it.
+
+200
+00:37:36,352 --> 00:37:40,611
+And we are trying to predict the type of a new data.
+
+201
+00:37:40,611 --> 00:38:03,071
+Okay. Now, so let's talk about a simple example. So here, there is an emergency room. And in this emergency room, so we can only, we have high risk patients and low risk patients. Okay. And we have limited number of spots in the intensive care unit. Okay.
+
+202
+00:38:03,071 --> 00:38:09,571
+So we need to pay attention which patients that we are accepting to the emergency room.
+
+203
+00:38:10,031 --> 00:38:10,071
+Okay.
+
+204
+00:38:10,531 --> 00:38:14,711
+So therefore, so we need to have a model that makes a decision.
+
+205
+00:38:15,131 --> 00:38:15,451
+Okay.
+
+206
+00:38:15,692 --> 00:38:21,751
+If the person is a high risk patient, in that case, we will accept it.
+
+207
+00:38:21,912 --> 00:38:25,811
+Otherwise, so we will not accept it in the intensive care unit.
+
+208
+00:38:26,151 --> 00:38:30,011
+So this is an example of where the supervised learning is being used.
+
+209
+00:38:30,431 --> 00:38:31,771
+Another application.
+
+210
+00:38:31,771 --> 00:38:39,692
+so uh so we have credit card applications and so each credit card applications may have
+
+211
+00:38:39,692 --> 00:38:47,851
+a data like this okay age of the person marital status annals salary etc and we are going to
+
+212
+00:38:47,851 --> 00:38:57,151
+decide whether or not we will approve um the application of the user okay so we have we need
+
+213
+00:38:57,151 --> 00:39:03,471
+make binary decision approved or not approved okay so so here it is another application where
+
+214
+00:39:03,471 --> 00:39:12,831
+the supervised learning is being used okay and um we are using supervised learning because
+
+215
+00:39:13,391 --> 00:39:21,871
+supervised learning allows us to learn from past experiences okay and so learn so we are creating
+
+216
+00:39:21,871 --> 00:39:30,751
+a model that learns from the past experiences and then we are going to use this model in order to
+
+217
+00:39:30,751 --> 00:39:38,831
+find the result of a target function. The target function in this particular case prediction.
+
+218
+00:39:38,831 --> 00:39:45,391
+Okay and the result could be binary in this particular case approve or not approve
+
+219
+00:39:45,391 --> 00:39:54,511
+for the credit card application or for the for the emergency room application high risk or low risk.
+
+220
+00:39:54,511 --> 00:40:04,591
+Okay now let's take a look at how but so how the data looks like in supervised learning.
+
+221
+00:40:05,311 --> 00:40:10,992
+Now this is an example data you see that so I have different attributes here
+
+222
+00:40:10,991 --> 00:40:19,271
+and I have 15 different data items and you see that I have a label.
+
+223
+00:40:19,764 --> 00:40:27,523
+for each data item and this is so this is also class okay label class means the same thing
+
+224
+00:40:27,523 --> 00:40:36,063
+and as you see i have two types of uh so uh so uh classes here yes sir yes or no okay
+
+225
+00:40:36,063 --> 00:40:45,823
+now this is the data that i will use in order to train my model okay i will use this as a training
+
+226
+00:40:45,823 --> 00:40:55,743
+the data okay now as you see after i learn from this data after i learned this from data i will
+
+227
+00:40:55,743 --> 00:41:04,143
+create a model and then i will use this model in order to predict the label of this particular
+
+228
+00:41:04,863 --> 00:41:12,143
+data item so this is a new data item it has also four attributes and i know the values of these
+
+229
+00:41:12,143 --> 00:41:17,023
+attributes for this item and I need to predict its class. Okay.
+
+230
+00:41:19,423 --> 00:41:29,103
+Now since we are learning from the data, the labeled data, we are calling this as supervised
+
+231
+00:41:29,103 --> 00:41:35,984
+learning. Okay, so this supervision part comes from the labeled data. Okay, now there is also
+
+232
+00:41:35,984 --> 00:41:42,784
+another type of machine learning algorithms called unsupervised learning. In unsupervised
+
+233
+00:41:43,344 --> 00:41:49,183
+learning we don't have any labels, okay, and we're still trying to understand the
+
+234
+00:41:51,903 --> 00:41:57,823
+data, so we have algorithms to do that, but we don't have labels in unsupervised learning.
+
+235
+00:41:57,823 --> 00:42:09,223
+Now, in supervised learning, I showed you the types of data that we are going to be using.
+
+236
+00:42:09,643 --> 00:42:12,083
+It has attributes and a label.
+
+237
+00:42:13,003 --> 00:42:19,863
+And we are going to learn different kinds of algorithms, supervised learning algorithms.
+
+238
+00:42:20,203 --> 00:42:24,363
+By applying these algorithms on data, we are going to be creating a model.
+
+239
+00:42:24,363 --> 00:42:28,564
+I will also show how the model looks like.
+
+240
+00:42:29,223 --> 00:42:32,803
+Then we are going to use this model on a test data.
+
+241
+00:42:33,223 --> 00:42:41,064
+Now the test data is similar to the training data because it also has a label in it.
+
+242
+00:42:41,823 --> 00:42:44,424
+Now we know the labels of the data.
+
+243
+00:42:45,103 --> 00:42:52,704
+And now we are going to use the model to predict the labels of each data item
+
+244
+00:42:52,704 --> 00:42:54,704
+as if we don't know its label.
+
+245
+00:42:55,183 --> 00:42:57,463
+And then we are going to check
+
+246
+00:42:57,463 --> 00:42:59,644
+whether our predicted label
+
+247
+00:42:59,644 --> 00:43:02,924
+is the same thing as the actual label.
+
+248
+00:43:03,644 --> 00:43:04,883
+And based on that,
+
+249
+00:43:04,944 --> 00:43:06,043
+we will find the accuracy
+
+250
+00:43:06,043 --> 00:43:08,784
+of the supervised learning algorithm
+
+251
+00:43:08,784 --> 00:43:12,084
+or supervised learning model
+
+252
+00:43:12,084 --> 00:43:13,264
+that we are using.
+
+253
+00:43:13,924 --> 00:43:15,764
+So in order to find the accuracy,
+
+254
+00:43:16,183 --> 00:43:19,124
+the number of correct classifications
+
+255
+00:43:19,124 --> 00:43:22,043
+divided by total number of test cases.
+
+256
+00:43:22,704 --> 00:43:38,864
+Okay, so we are finding the accuracy based on the test data. How many of the data items did I find correctly divided by, so how many items that I have in the test case.
+
+257
+00:43:38,863 --> 00:43:52,943
+Okay. And usually what we are doing, so if this is the total data that we have, so we are selecting some portion of it as a training data and the remainder portion of it as a test data.
+
+258
+00:43:53,483 --> 00:44:06,363
+So usually we choose 70% of the data as the training data or 80% and the remaining 20 or 30% is being used as the test data.
+
+259
+00:44:07,203 --> 00:44:07,843
+Okay.
+
+260
+00:44:13,364 --> 00:44:38,443
+Now, obviously what do we mean by learning? So we have the data set D, we have the task T, and we are going to learn, so we have the performance measured M, and we are going to say that a computer system or software is set to learn from data set D to perform task T.
+
+261
+00:44:38,443 --> 00:44:43,904
+if after learning the system's performance on T improves as measured by M.
+
+262
+00:44:43,904 --> 00:45:05,783
+So which means that if the task T, which is learning from this data set, is a successful task, if and only if, if this task is successful, better than to no learning.
+
+263
+00:45:05,783 --> 00:45:07,423
+So what does this mean?
+
+264
+00:45:08,443 --> 00:45:32,044
+say, say for particularly for this data. So how many labels do I have? Two. Okay. Now, if you predict the label of this new data, you have two chances, right? So you can say yes or no. So which means that without any learning, by 50%, you can predict the label of this data in a correct way.
+
+265
+00:45:32,044 --> 00:45:54,804
+okay now if in order to say that I created a model learned from this data this the prediction of the model has to be bigger than 50 percent so has to be better than no learning case okay
+
+266
+00:45:54,803 --> 00:46:22,943
+Eğer ben %50 şansla zaten bunun etiketini tahmin edebiliyorsam hiçbir öğrenme yapmadan bu durumda eğer benim bir datadan öğrenme görevini yapabildiğimi söylemem için benim modelimin bu hiçbir öğrenme yapmadan yapmış olduğum tahminden daha iyi olmasını bekliyorum.
+
+267
+00:46:22,944 --> 00:46:48,923
+obviously it should be much better. It should be 80% or 90% because the no learning case is already 50%. Therefore, we are saying that the learned model helps the system to perform task T, which is the learned learning from the data, better as compared to no learning.
+
+268
+00:46:55,188 --> 00:47:03,267
+okay now in this particular case in the example that i have shown you loan is the application
+
+269
+00:47:03,267 --> 00:47:11,188
+data task is predicting predicting whether a loan should be approved or not and the performance
+
+270
+00:47:11,188 --> 00:47:22,067
+measure is the accuracy and obviously no learning case is so you just say yes or no which is 50
+
+271
+00:47:22,067 --> 00:47:35,908
+percent uh so uh and um is um in order to classify all future applications oh okay so it says that
+
+272
+00:47:35,908 --> 00:47:43,908
+the majority of the class uh uh so says yes um so therefore so by just looking at the majority of
+
+273
+00:47:43,907 --> 00:47:52,947
+the class so you are saying that okay next data could be yes so therefore so you just predict the
+
+274
+00:47:54,307 --> 00:48:01,267
+data as as being yes in this particular example if you use this asset the whole thing as the test
+
+275
+00:48:01,267 --> 00:48:12,627
+data out of 15 data items nine nine of them is yes so in this particular data sets you can have
+
+276
+00:48:12,627 --> 00:48:22,627
+60 percent accuracy okay if you choose the yes as the predicting label that's a no learning case
+
+277
+00:48:22,627 --> 00:48:31,907
+so therefore we need to do better than 60 percent by using a supervised learning algorithm okay
+
+278
+00:48:34,547 --> 00:48:41,427
+now in supervised learning algorithms obviously we are learning from the training data and then
+
+279
+00:48:41,427 --> 00:48:50,548
+we are going to create a model and we are going to use that model in order to test its success
+
+280
+00:48:50,548 --> 00:49:00,067
+on the test data. But when we do that, we need to make sure that the distribution of the data in
+
+281
+00:49:00,067 --> 00:49:08,227
+training examples is identical to the distribution of the data in test data. In other words,
+
+282
+00:49:08,227 --> 00:49:19,927
+So you see that here I'm using the training data, apply one of the supervised learning algorithms, which you will learn, and we will create a model.
+
+283
+00:49:20,387 --> 00:49:28,347
+And then we will use this model to understand whether it is a successful model on the test data.
+
+284
+00:49:28,887 --> 00:49:37,847
+Now, the test data, the distribution of the data items should be similar to the distribution of the data items in the trading data.
+
+285
+00:49:37,848 --> 00:49:42,988
+Otherwise, we will not understand the actual performance of the model.
+
+286
+00:49:43,548 --> 00:49:45,428
+So that's highly important.
+
+287
+00:49:51,128 --> 00:49:58,668
+So therefore, in order to achieve the good evaluation of the model,
+
+288
+00:49:58,667 --> 00:50:10,367
+So we need to make sure that test data must sufficiently, so it should be good representative of the training data.
+
+289
+00:50:11,587 --> 00:50:11,787
+Okay.
+
+290
+00:50:12,067 --> 00:50:14,987
+Now, there are different algorithms in supervised learning.
+
+291
+00:50:15,507 --> 00:50:23,927
+And so obviously, so you will learn some of these in this course, and you will learn some of these in data mining course.
+
+292
+00:50:23,927 --> 00:50:30,807
+and also so if you take machine learning course you will learn more of these supervised learning
+
+293
+00:50:30,807 --> 00:50:38,167
+algorithms. I will just show you some of the algorithms so that you can use these algorithms
+
+294
+00:50:38,727 --> 00:50:46,887
+on the web data. When you choose your term projects, if you want to use a supervised learning
+
+295
+00:50:46,887 --> 00:50:52,647
+algorithm on the web data that you will collect.
+
+296
+00:50:53,139 --> 00:50:56,120
+So you can use one of these algorithms.
+
+297
+00:50:57,479 --> 00:50:57,659
+Okay.
+
+298
+00:50:58,639 --> 00:51:06,279
+Now let's start with the first algorithm, which is called decision tree supervised learning algorithm.
+
+299
+00:51:06,839 --> 00:51:06,959
+Okay.
+
+300
+00:51:07,560 --> 00:51:15,900
+Now the decision tree supervised algorithm is one of the effective algorithms that we are using.
+
+301
+00:51:15,900 --> 00:51:23,779
+and effective and easy to implement algorithms in supervised learning algorithms category.
+
+302
+00:51:24,539 --> 00:51:31,739
+Okay. Now, so remember, this was the data that you were working on. You see that I have 15 items,
+
+303
+00:51:32,119 --> 00:51:38,619
+nine of them has a class label, yes, and six of them has a class label, no. Okay.
+
+304
+00:51:38,619 --> 00:51:50,719
+now in decision tree algorithm what we are going to do we are going to create a tree okay now the
+
+305
+00:51:50,719 --> 00:51:57,879
+model that we are going to create is actually a data structure so which is a tree data structure
+
+306
+00:51:57,879 --> 00:52:04,339
+okay you all have taken a data structure course so if you are familiar with the different
+
+307
+00:52:04,339 --> 00:52:16,500
+tree data structures okay you can use any kind of tree data structure but so so what's important
+
+308
+00:52:16,500 --> 00:52:24,679
+here that how we are going to fill the nodes of the tree and so what will go to the branches of
+
+309
+00:52:24,679 --> 00:52:32,779
+the tree okay now so let us construct the tree from this training data okay step by step so what
+
+310
+00:52:32,779 --> 00:52:41,139
+we are going to do so we are going to put the attributes that you see here the attributes that
+
+311
+00:52:41,139 --> 00:52:48,400
+you see here into the nodes of the tree so how many nodes do i have in this particular tree i
+
+312
+00:52:48,400 --> 00:52:58,639
+have four one root node and two branch nodes okay three branch nodes so it's in total four okay
+
+313
+00:52:58,639 --> 00:53:02,819
+And you also see the leaf nodes.
+
+314
+00:53:03,800 --> 00:53:09,539
+So I have one, two, three, four, five, six, seven leaf nodes.
+
+315
+00:53:09,539 --> 00:53:14,759
+And the leaf nodes will take the class label.
+
+316
+00:53:16,139 --> 00:53:21,800
+So I have two different class labels, which means that leaf nodes could be yes or no.
+
+317
+00:53:21,800 --> 00:53:30,360
+Okay. Now, how do I distribute these attributes into these nodes?
+
+318
+00:53:31,000 --> 00:53:40,139
+Okay. Now, at the beginning, I will consider that all the data that I have is here at the root node.
+
+319
+00:53:40,400 --> 00:53:45,460
+Okay. I don't have any, I haven't decided which attribute that I'm going to put here.
+
+320
+00:53:45,459 --> 00:54:01,219
+Okay, now what I'm going to do, I'm going to use one of the importance measurement metrics, so which you will learn in a minute, information gain or gain ratio.
+
+321
+00:54:01,220 --> 00:54:07,220
+there are different metrics that will measure the importance of an attribute.
+
+322
+00:54:08,020 --> 00:54:08,059
+Okay.
+
+323
+00:54:08,639 --> 00:54:21,820
+Now, so basically, these metrics measure how well this attribute distributes the data among its branches.
+
+324
+00:54:22,479 --> 00:54:22,600
+Okay.
+
+325
+00:54:23,139 --> 00:54:29,300
+Yani elimde datam böylesi bir ağacı oluştururken, ilk başta root node'u seçerken,
+
+326
+00:54:29,299 --> 00:54:39,539
+I'm saying that the 4 attributes of the data is the same way.
+
+327
+00:54:40,139 --> 00:54:41,939
+This is the way to think.
+
+328
+00:54:42,279 --> 00:54:46,019
+So, information gain, gain ratio, etc.
+
+329
+00:54:46,499 --> 00:54:48,559
+There are some metrics that we can talk about.
+
+330
+00:54:48,559 --> 00:54:50,699
+We can talk about them.
+
+331
+00:54:51,860 --> 00:54:53,279
+Information gain'i.
+
+332
+00:54:55,379 --> 00:55:00,120
+Buna göre her bir attribute'un önem değerini buluyoruz.
+
+333
+00:55:00,439 --> 00:55:03,019
+Information gain metri açısından örneğin,
+
+334
+00:55:04,039 --> 00:55:05,419
+önem değerini buluyoruz.
+
+335
+00:55:05,579 --> 00:55:08,200
+En önemli olan attribute root node'a geliyor.
+
+336
+00:55:08,839 --> 00:55:12,679
+Arkasından önem değerine göre bunları sıralandırdığımız için
+
+337
+00:55:12,679 --> 00:55:15,139
+has, job, all, house, credit rating.
+
+338
+00:55:15,620 --> 00:55:19,019
+Bunu eğer root node'a en önemlisini koyuyorsak
+
+339
+00:55:19,019 --> 00:55:27,019
+onun birinci child branchine ikincisini, üçüncüsünü, dördüncüsünü koyuyorum.
+
+340
+00:55:27,019 --> 00:55:34,999
+Now, after I put the attributes into the nodes of this tree,
+
+341
+00:55:35,499 --> 00:55:41,659
+what I'm going to do, I'm going to now distribute the 15 data items,
+
+342
+00:55:41,799 --> 00:55:42,779
+which is right here.
+
+343
+00:55:42,779 --> 00:56:04,919
+So based on the answers that I get from each attribute, as you see, each attribute has a question mark, which means that when I come to this attribute, I will say, so what is the age of, so basically the data item has some answers in it.
+
+344
+00:56:04,919 --> 00:56:09,739
+So I will distribute these data items amongst the three possible answers.
+
+345
+00:56:10,119 --> 00:56:10,259
+Okay.
+
+346
+00:56:10,259 --> 00:56:21,879
+So let's say I have, so these five initial data items has young value in it.
+
+347
+00:56:22,239 --> 00:56:26,319
+So therefore all those five items will come here.
+
+348
+00:56:26,659 --> 00:56:26,779
+Okay.
+
+349
+00:56:26,919 --> 00:56:29,899
+Now I have five data items at this node.
+
+350
+00:56:30,419 --> 00:56:30,639
+Okay.
+
+351
+00:56:30,639 --> 00:56:36,999
+Now here as you see has job attribute and has job attribute has true or false.
+
+352
+00:56:37,379 --> 00:56:40,580
+Now I will go to the values has job.
+
+353
+00:56:40,940 --> 00:56:44,779
+You see that these five data items were at that node.
+
+354
+00:56:45,279 --> 00:56:50,059
+And you see that for these five data items some of them has false.
+
+355
+00:56:51,339 --> 00:56:54,779
+Some of them has true for has job attribute.
+
+356
+00:56:54,779 --> 00:57:02,919
+And then I will distribute these data items based on their values for has job.
+
+357
+00:57:03,419 --> 00:57:09,880
+As you see, two of them ended up in this branch, in this leaf node, and three of them ended up in this leaf node.
+
+358
+00:57:09,880 --> 00:57:10,380
+Okay.
+
+359
+00:57:11,160 --> 00:57:24,479
+And so once I distribute all the data items, as you see, into the branches, and then I will look at the majority of the labels that fall into this category.
+
+360
+00:57:24,779 --> 00:57:30,300
+bu kategori için, iki tane data item var.
+
+361
+00:57:30,300 --> 00:57:34,139
+Bu kategori için 3 ve 4.
+
+362
+00:57:34,139 --> 00:57:36,779
+As you see, bu kategori için,
+
+363
+00:57:36,779 --> 00:57:40,380
+bu kategori için, bu kategori için,
+
+364
+00:57:40,380 --> 00:57:51,979
+bu kategori için,
+
+365
+00:57:51,979 --> 00:58:00,519
+ve bu
+
+366
+00:58:00,519 --> 00:58:21,639
+bu
+
+367
+00:58:21,639 --> 00:58:27,960
+Ok, so once I have this tree, I will call this as a model.
+
+368
+00:58:27,960 --> 00:58:28,919
+So remember.
+
+369
+00:58:32,980 --> 00:58:43,980
+I told you that so given the training data I am going to use a supervised learning algorithm which in this case is the decision tree algorithm and it will create a model.
+
+370
+00:58:43,980 --> 00:58:49,980
+As you see the model here is a tree data structure okay for decision tree algorithm.
+
+371
+00:58:51,980 --> 00:59:01,980
+And after I create this model so whenever a new data item comes okay and I'm going to use this model in order to predict this label.
+
+372
+00:59:01,980 --> 00:59:31,899
+So how do I use this model? So I basically starting from the root node all the way to the leaf, I'm going to add, I'm going to check the values of the new data item that I want to predict. Okay, now, so you see that H is young, so it comes to this node, and then has job as false, it comes to this node, it comes to this leaf node, and the label of this leaf node is node, so therefore
+
+373
+00:59:31,899 --> 00:59:34,899
+therefore I will predict that the answer is no.
+
+374
+00:59:34,899 --> 00:59:35,899
+Okay.
+
+375
+00:59:35,899 --> 00:59:46,899
+Now decision tree algorithm is one of the well-known and widely used effective supervised learning algorithm.
+
+376
+00:59:46,899 --> 00:59:56,899
+Now, as you see, there is no one perfect tree when you create a decision tree.
+
+377
+00:59:56,899 --> 01:00:00,899
+So from the same data you can create another tree just like this.
+
+378
+01:00:00,899 --> 01:00:14,340
+Okay? In this particular case, what will change? So the metric that you are using, which you will decide the importance of the metrics, it will change.
+
+379
+01:00:14,539 --> 01:00:27,660
+Az önce mesela information gain metriğine dayalı olarak ben en önemli attribute'ü root node olarak seçtim ya da attribute'lerin sıralamasını information gain'e yaptım, güne yaptım.
+
+380
+01:00:27,660 --> 01:00:36,819
+başka bir metrik kullanarak sıraladığımda root nota gelecek attribute farklılaşabilir.
+
+381
+01:00:36,819 --> 01:00:37,299
+Okey?
+
+382
+01:00:38,500 --> 01:00:49,819
+Demek ki decision tree algoritmasını uygularken parametrik bir algoritma kullanmış olduğumuz attribute importance metrikleri farklılaşabiliyor.
+
+383
+01:00:49,819 --> 01:01:19,799
+dolayısıyla bir tek doğru algoritma decision tree vardır diyemiyoruz. Birden fazla tree oluşturabiliriz. Hangisinin, her birisinin farklı doğrulukta tahminleri olacaktır. Burada da mesela farklı bir tree yaratmışım. İki tane decision nodu olan, üç tane de leaf'i olan bir tane decision tree.
+
+384
+01:01:19,819 --> 01:01:49,799
+Okay. Now, I can use the decision tree as a tree data structure in the memory or I can extract some rules as you remember class association rules from the previous lecture. I can extract association rules from a given tree decision tree and I can utilize
+
+385
+01:01:49,799 --> 01:02:19,099
+these rules in order as a model. Kimi zamanda bu decision tree'den çıkarmış olduğum kuralları sıralandırılmış bir şekilde yazarım. Birinci root'tan çıkarmış olduğum kurallar, arkasından ikinci onun branşları olan decision notelardan çıkarmış olduğum kurallar. Daha sonra bu kurallar zincirini kullanaraktan yeni gelmiş olan datanın etiketini tahmin edebilirim.
+
+386
+01:02:19,799 --> 01:02:47,239
+The next step is to make sure the
+
+387
+01:02:23,284 --> 01:02:40,523
+The algorithm for decision tree learning is a divide and contour algorithm. So if you haven't taken the algorithm design course yet from Elif Hoca, so you will take it.
+
+388
+01:02:40,523 --> 01:02:57,243
+So divide and conquer algorithm is one of the algorithms that divides the data into two at every stage and applies the same procedure to every data part.
+
+389
+01:02:57,603 --> 01:02:57,663
+Okay.
+
+390
+01:02:58,243 --> 01:03:01,324
+And again and again until it reaches to a solution.
+
+391
+01:03:01,763 --> 01:03:01,803
+Okay.
+
+392
+01:03:02,464 --> 01:03:07,623
+And in this particular algorithm, so we are doing the same thing.
+
+393
+01:03:07,623 --> 01:03:09,223
+We are dividing the data.
+
+394
+01:03:09,223 --> 01:03:14,163
+As you see, we are dividing the data at every stage.
+
+395
+01:03:14,843 --> 01:03:23,823
+So here, we are dividing data whether or not their age label is young, middle, or old.
+
+396
+01:03:24,043 --> 01:03:29,903
+And after that, we are going to repeat the same thing for the decision notes.
+
+397
+01:03:30,284 --> 01:03:34,403
+So that's why it's a divide and contour algorithm.
+
+398
+01:03:34,403 --> 01:03:42,243
+and we might have a different attribute importance matrix which you can also call
+
+399
+01:03:42,243 --> 01:03:50,643
+impurity function okay we have different importance matrix one of them is information
+
+400
+01:03:50,643 --> 01:03:58,723
+gain okay and in this particular algorithm the stopping condition is that all the examples of
+
+401
+01:03:58,723 --> 01:04:06,083
+belong to all the given examples belong to the same stakes class there are no remaining attributes
+
+402
+01:04:06,083 --> 01:04:16,003
+left so for example so you run the algorithm and created this decision tree as you can see
+
+403
+01:04:16,003 --> 01:04:21,683
+all the data attributes now distributed and they belong to the same class okay
+
+404
+01:04:21,683 --> 01:04:35,163
+In this particular example, all the data attributes are distributed into branches, and in each branch, all the data items belong to the same class, as you see.
+
+405
+01:04:35,163 --> 01:04:38,583
+So this is the stopping condition for the algorithm.
+
+406
+01:04:39,004 --> 01:04:47,383
+And there are obviously no remaining attributes left, and there are no examples left.
+
+407
+01:04:47,383 --> 01:04:56,283
+In this case, one of the conditions that are here are met, so then the algorithm will stop.
+
+408
+01:04:56,683 --> 01:05:00,283
+So this is the pseudocode of the algorithm.
+
+409
+01:05:00,463 --> 01:05:04,983
+I just repeated what this algorithm told you in the previous slide.
+
+410
+01:05:07,263 --> 01:05:12,303
+And I told you the information gain metric and the gain.
+
+411
+01:05:12,303 --> 01:05:21,743
+And so there is also a gain ratio metric and other metrics that will identify the importance of an attribute.
+
+412
+01:05:22,383 --> 01:05:22,423
+Okay.
+
+413
+01:05:23,003 --> 01:05:30,263
+And so we are using this as part of the decision tree algorithm.
+
+414
+01:05:34,739 --> 01:05:40,220
+Okay
+
+415
+01:05:41,619 --> 01:05:59,499
+So this is a simple example. So this illustrates better, whether or not, so which node, for example, at this particular decision node, you are going to select one of the attributes.
+
+416
+01:05:59,499 --> 01:06:13,460
+For example, if you chose the attribute age, if you distribute the data among the age, you see that some five of the data items will end up here.
+
+417
+01:06:14,179 --> 01:06:17,279
+Five of them will end up here. Five of them will end up here.
+
+418
+01:06:17,279 --> 01:06:37,759
+Okay, now, so when you decide the label in right here, so you need to select the majority, the labels for the majority in this particular case, no, in this particular case, yes, in this particular case, yes.
+
+419
+01:06:37,759 --> 01:07:00,779
+Now that you selected the labels for each of the sub-branches, you need to select the number of data items that were misplaced, that are not the same as the majority class label.
+
+420
+01:07:00,779 --> 01:07:19,759
+So in this particular case, you have two here, two, one, and in total five, which means that if you choose age, okay, here in this particular decision note, you will misplace five data items, okay, incorrectly, okay, you will misplace five data items.
+
+421
+01:07:19,759 --> 01:07:27,359
+and if you choose on house in this particular decision node okay if you distribute all the
+
+422
+01:07:27,359 --> 01:07:35,780
+nodes here you see that six no six data items will end up here nine data items will end up here
+
+423
+01:07:35,780 --> 01:07:43,039
+and so you will choose the majority label for each of the leaf branch in this particular case
+
+424
+01:07:43,039 --> 01:07:54,140
+yes is the majority label here no is the majority label now let us calculate the total number of
+
+425
+01:07:54,140 --> 01:08:02,899
+misplaced items so here zero okay because everything is as the same label as the majority
+
+426
+01:08:02,899 --> 01:08:12,780
+and here you see that's three misplaced items so therefore so here if you use own house here
+
+427
+01:08:12,780 --> 01:08:19,780
+you will misplace three data items. If you use H here, you will misplace five different data items.
+
+428
+01:08:20,200 --> 01:08:28,459
+So that's how you decide whether or not which one to choose at a given decision node.
+
+429
+01:08:31,140 --> 01:08:39,700
+Okay, now decision tree, I just showed you the pseudocode and also I showed you how we are
+
+430
+01:08:39,700 --> 01:08:45,060
+creating the decision tree model and how we are using the decision tree in order to predict the
+
+431
+01:08:45,060 --> 01:08:53,619
+data label of a given data item. Now, classification using association rules
+
+432
+01:08:53,619 --> 01:09:01,280
+is similar to the decision tree. As I said, we are extracting the, we are using association rule
+
+433
+01:09:01,280 --> 01:09:07,539
+mining algorithms and in order to extract the association rules and then we are using the set
+
+434
+01:09:07,539 --> 01:09:11,459
+of class association rules in order to as a model.
+
+435
+01:09:11,459 --> 01:09:12,079
+Okay.
+
+436
+01:09:14,195 --> 01:09:39,695
+So you remember from the previous chapter, we had a class association rule mining algorithm, which were creating a number of class association rules given a support and confidence value. Okay. And then we can use these class association rules in order to predict the label of a new item.
+
+437
+01:09:39,695 --> 01:10:00,236
+So here is the data that I have. Given the minimum support and minimum confidence value, I can extract all these class association rules by using the class association rule algorithms that we covered in the previous chapter.
+
+438
+01:10:00,235 --> 01:10:18,495
+Now all these rules have an order starting from the first rule then you go to the second rule, third rule you check whether the new data item can be answered by using any of the rules in the same order
+
+439
+01:10:18,495 --> 01:10:47,495
+Burada da class association rule'ları ne yapıyoruz? Bir önceki chapterdaki öğrendiğimiz association rule mining algoritmalarıyla algoritmasını kullanaraktan çıkartıyoruz ve çıkartmış olduğumuz association rule algoritmalarını support ve confidence değerlerine göre
+
+440
+01:10:47,495 --> 01:10:56,915
+yukarıdan aşağıya sıralıyoruz ve bizim karşımıza çıkan yeni bir data item'ı ilk kural acaba yakalayabiliyor mu?
+
+441
+01:10:56,915 --> 01:11:02,915
+Yani yeni gelen data item konusunda bir yanıt veriyor mu? Vermiyorsa bir sorakine, vermiyorsa bir sorakine.
+
+442
+01:11:03,435 --> 01:11:12,675
+Bu şekilde çıkartmış olduğumuz model, Class Association Rule Mining kullanılarak yapılan Supervised Learning'de
+
+443
+01:11:12,675 --> 01:11:28,695
+içerisinde rullardan oluşan bir model. Bir önceki içerisinde bir decision tree olan bir modeldi. Bunda ise içerisinde rullardan oluşan bir modelden bahsediyoruz.
+
+444
+01:11:32,148 --> 01:11:57,287
+OK. Class Association Rule Based algoritmda biz dediğim gibi rule'ları büyükten küçüğe sıralandırılmış bir şekilde tutuyoruz. Eğer hiçbir rule tarafından yanıtlanamayacak bir tane şeyim varsa elimde, verim varsa bu durumda bir tane default class seçiyorum.
+
+445
+01:11:57,287 --> 01:12:12,008
+yani yes ya da no bir yanıt verme durumum, zorunluluğum olduğu için ve hiçbir kural tarafından yanıtlayamıyorsam bu default class tarafından kullanaraktan yanıt veriyorum.
+
+446
+01:12:14,127 --> 01:12:16,287
+Bir saniye müsaadenizi istiyorum.
+
+447
+01:12:45,939 --> 01:13:02,259
+Okay, now this is a class association rule mining algorithm that I covered from the previous lecture.
+
+448
+01:13:02,259 --> 01:13:06,439
+So this is one of the class association rule mining algorithms.
+
+449
+01:13:06,960 --> 01:13:12,879
+I have shown you the C45, which is the pseudocode for decision tree algorithm.
+
+450
+01:13:13,039 --> 01:13:15,599
+And this is an example pseudocode.
+
+451
+01:13:15,939 --> 01:13:18,820
+for class association rule algorithms.
+
+452
+01:13:20,739 --> 01:13:21,059
+Okay.
+
+453
+01:13:23,059 --> 01:13:25,539
+And now I'm going to show you another,
+
+454
+01:13:27,780 --> 01:13:36,099
+the third supervised learning algorithm. Now this is using statistics in order to create a model.
+
+455
+01:13:36,099 --> 01:13:39,139
+Okay. Now the first model decision tree
+
+456
+01:13:39,139 --> 01:13:47,559
+supervised learning algorithm used a three data structure as a model the second one
+
+457
+01:13:47,559 --> 01:13:57,959
+class association rule mining used the set of rules as the model now here so you will see that
+
+458
+01:13:57,959 --> 01:14:07,659
+so we are going to use some of statistics equations and so in order to create a model
+
+459
+01:14:07,660 --> 01:14:20,120
+Now, here is another example dataset. As you see in this particular dataset, I have four different attributes.
+
+460
+01:14:21,139 --> 01:14:30,520
+And the label is whether buys computer no or buys computer yes. So whether or not a person is buying a computer.
+
+461
+01:14:30,519 --> 01:14:44,479
+Okay. And here is you see that there is a data sample in this particular data sample. So I have, again, four attributes and I need to decide the label for this new data item.
+
+462
+01:14:44,480 --> 01:14:56,119
+So I need to apply this Naive, this third algorithm, Naive-Payacin, which is called Naive-Payacin algorithm, on this data set, and it will create a model.
+
+463
+01:14:56,240 --> 01:15:05,260
+Then I will use this model in order to predict the data label for this item.
+
+464
+01:15:06,119 --> 01:15:06,219
+Okay.
+
+465
+01:15:06,600 --> 01:15:08,119
+Now, how do I do that?
+
+466
+01:15:08,119 --> 01:15:16,179
+Now, there are some probabilities that I need to calculate in order to do that.
+
+467
+01:15:17,119 --> 01:15:19,239
+So what are these probabilities?
+
+468
+01:15:19,719 --> 01:15:27,319
+So one probability is the probability of classes that you see in the data set.
+
+469
+01:15:27,319 --> 01:15:37,479
+and so you also need to calculate the probability of observing x given that
+
+470
+01:15:37,479 --> 01:15:44,839
+that class label okay so so so so this is the probability of the class
+
+471
+01:15:44,839 --> 01:15:55,439
+okay and this is the probability of observing an item x which is the item that i want to predict
+
+472
+01:15:55,439 --> 01:15:57,660
+under the given class.
+
+473
+01:15:58,300 --> 01:16:02,160
+Now, eventually, what I would like to calculate
+
+474
+01:16:02,160 --> 01:16:05,020
+the probability of giving X,
+
+475
+01:16:05,300 --> 01:16:08,100
+so what is the label of this X?
+
+476
+01:16:08,100 --> 01:16:12,499
+This is eventually what I intend to calculate.
+
+477
+01:16:12,999 --> 01:16:15,820
+Let's calculate these things.
+
+478
+01:16:17,460 --> 01:16:20,799
+So remember, this is what I wanted to calculate.
+
+479
+01:16:21,960 --> 01:16:26,460
+Given that item X, so what is the class label?
+
+480
+01:16:26,880 --> 01:16:30,759
+So whether bias computer, yes, or bias computer, no.
+
+481
+01:16:31,019 --> 01:16:36,279
+Okay, so you can see that I have two class labels here, C1 and C2.
+
+482
+01:16:36,659 --> 01:16:39,599
+C1 is bias computer, yes, and bias computer, no.
+
+483
+01:16:39,599 --> 01:16:44,960
+Now, so here, in order to calculate these two probabilities,
+
+484
+01:16:44,960 --> 01:16:51,160
+So we are using the Biosyn theorem and the Biosyn theorem has this equality.
+
+485
+01:16:52,879 --> 01:17:14,839
+So as you equation, as you see that given the class label, the probability of observing X multiplied by the probability of observing a particular class label divided by probability of observing X in the
+
+486
+01:17:14,960 --> 01:17:24,760
+dataset. Okay, this is a well-known equation coming from the Bayesian theorem. And you see that if I
+
+487
+01:17:24,760 --> 01:17:33,599
+have two classes, then this means that I can write this equation in this way. I can write this
+
+488
+01:17:33,599 --> 01:17:40,500
+equation for class number one and for class number two. Okay, now what I'm going to do is I'm going
+
+489
+01:17:40,500 --> 01:17:46,720
+to calculate this equation for class number one and for class number two and I'm going to compare
+
+490
+01:17:46,720 --> 01:17:55,839
+which one is bigger. Okay if c1 is bigger which means that x will belong to c1. Okay if bias
+
+491
+01:17:55,839 --> 01:18:04,599
+computer yes the probability of the given that data item x the probability of a bias computer yes
+
+492
+01:18:04,599 --> 01:18:09,779
+within this data is bigger than given that data item X,
+
+493
+01:18:10,059 --> 01:18:11,839
+probability of bias computer no,
+
+494
+01:18:12,019 --> 01:18:14,839
+then this means that I will choose bias computer yes.
+
+495
+01:18:15,519 --> 01:18:15,640
+Okay.
+
+496
+01:18:16,439 --> 01:18:21,879
+So therefore, I need to calculate these two different equations.
+
+497
+01:18:22,500 --> 01:18:25,879
+And as you see, if you look at these two different equations,
+
+498
+01:18:25,879 --> 01:18:29,700
+there is one item that is similar.
+
+499
+01:18:31,599 --> 01:18:31,699
+Okay.
+
+500
+01:18:31,699 --> 01:18:38,759
+If you look at this dominator, p of x is the same in both of them.
+
+501
+01:18:38,759 --> 01:18:44,039
+So since I'm going to do the comparison, I can just remove p of x.
+
+502
+01:18:44,040 --> 01:18:44,700
+Okay.
+
+503
+01:18:45,120 --> 01:19:05,060
+Hani burada benim hesaplamaya çalıştığım X'in X itemı için X'in bu dataset içerisinde X için X verildiğinde bu dataset içerisinde X'in classının bias computer yes olma olasılığını hesaplıyorum.
+
+504
+01:19:05,059 --> 01:19:15,639
+Bir de bu x verildiği zaman verilen bir x için bu x'in label'ının bias computer no olması için olasılığı hesaplıyorum.
+
+505
+01:19:15,779 --> 01:19:22,259
+Yani iki tane durum için verilen bir x'in sınıfının ne olacağını hesaplıyorum.
+
+506
+01:19:22,519 --> 01:19:25,119
+Birinci durumda nasıl bunu hesapladım?
+
+507
+01:19:25,639 --> 01:19:30,739
+Dedim ki bias'in teoremle beraber gelen equation'ı kullanıyorum.
+
+508
+01:19:30,739 --> 01:19:45,620
+C, Bios Computer Yes'in bu veride görülme olasılığı çarpı, Bios Computer Yes durumu için X'i görme olasılığım nedir?
+
+509
+01:19:45,719 --> 01:19:47,019
+Bunu da çarpıyorum, bölü.
+
+510
+01:19:47,699 --> 01:19:51,879
+Bu dataset içerisinde X'i görme olasılığımı bölüyorum.
+
+511
+01:19:52,579 --> 01:19:55,019
+Aynı şeyi Bios Computer No için de yapıyorum.
+
+512
+01:19:55,019 --> 01:19:57,279
+Şimdi bu ikisini karşılaştıracağım.
+
+513
+01:19:57,279 --> 01:19:58,279
+I would say that the biggest thing is that I would say that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest thing is that the biggest
+
+514
+01:20:00,000 --> 01:20:19,039
+O zaman X, Bias Computer, Yes'e aittir ya da No'ya aittir. Yani bunun labelını tahmin edeceğim. Bu ikisini madem ki karşılaştırıyorum, bu ikisinin paydasında aynı şey var. Demek ki P of X'i hesaplamama gerek kalmadan sadece bunların paylarını hesaplayıp karşılaştırabilirim.
+
+515
+01:20:19,039 --> 01:20:36,099
+Yani yapmaya çalıştığım şu x verildiği zaman bunun sınafının c1 mi c2 mi olduğunu hesaplarken şuradaki kısmı yani bu az önce gösterdiğimiz formüldeki payı hesaplamaya çalışıyorum
+
+516
+01:20:36,099 --> 01:20:45,519
+Şimdi buna baktığım zaman bunun iki tane elemanı var yani buradaki equation'ı bu simplification'ı yaptıktan sonra
+
+517
+01:20:45,520 --> 01:20:56,919
+bir tanesi data içerisinde C1 sınıfının ya da C2 sınıfının görülme olasılığı. Bunu hesaplayabilir miyim? Çok kolay.
+
+518
+01:20:57,340 --> 01:21:03,279
+Buradaki şeylere bakacağım. Toplamda 14 tane data var. Bunların içerisinden kaç tane bias computer yes?
+
+519
+01:21:03,279 --> 01:21:12,599
+O zaman P of C1 işte 3, 4, 5, 6, 7, 8, 9. Hani 9 bölü 14.
+
+520
+01:21:12,599 --> 01:21:24,559
+bu P of C1, Vice Computer Yes. Hani geriye kalan 5 tanesi 2, 4, 5, 5 bölü 14'te ne olmuş oldu?
+
+521
+01:21:24,639 --> 01:21:29,779
+Vice Computer ne olmuş oldu? Yani şunu hemen hesaplayabildim. Şuradaki değeri.
+
+522
+01:21:30,540 --> 01:21:38,639
+Diğerisi ne? Diğerisi de Vice Computer Yes olmuş olduğu durumlar içerisinde X'in görülme olasılığı.
+
+523
+01:21:38,639 --> 01:21:49,979
+yani BIOS Computer ES kaç taneydi? 9 taneydi. Bunların içerisinde ki şu datada bu X'i görme olasılığım nedir? Şimdi onu nasıl hesaplayacağız? Ona bakalım.
+
+524
+01:21:49,979 --> 01:22:19,139
+Okay, now you see that given that a class label, okay, I can calculate the appearance probability of a data item x. How do I do that? I am going to say that I can consider each attribute of this data item as a separate item, okay, and I can calculate their appearance
+
+525
+01:22:19,979 --> 01:22:48,399
+probability given that class name. So given that class name, for example, bias computer yes, what is the probability of observing the first attribute? Given that class name bias computer yes, what is the probability of observing second attribute? Okay. Now, so let's come back to here. So I have nine bias computer yes data items here.
+
+526
+01:22:48,399 --> 01:23:15,379
+okay out of nine how many of them has the first attribute H less than 30 okay now I'm going to go and count less than 30 so none of here okay not so I don't have it here as you see one data item I have it here second I have it here so which means that two out of nine
+
+527
+01:23:15,379 --> 01:23:41,619
+okay which means that two out of nine is the probability given that bias computer is the probability of observing the first attribute. Similar to I can calculate the rest of the probabilities by multiplying that I can find the probability of observing X given that class name bias computer yes or bias computer no.
+
+528
+01:23:41,619 --> 01:23:56,019
+okay now I know how to calculate now this this probability here and I also know the how to calculate this probability now if I can
+
+529
+01:23:56,304 --> 01:24:03,843
+multiply these two, I will end up with this probability, which is that given the data item
+
+530
+01:24:03,843 --> 01:24:11,323
+X belongs to bias computer yes or bias computer no. Okay. And I will do this for bias computer
+
+531
+01:24:11,323 --> 01:24:16,904
+yes condition, bias computer no condition, and I will compare these two probabilities.
+
+532
+01:24:16,904 --> 01:24:25,863
+So let's do it here. Okay. Now, as you see that I have done this right here.
+
+533
+01:24:26,304 --> 01:24:31,903
+Okay, so this is the eventual thing that I want to find.
+
+534
+01:24:31,903 --> 01:24:41,384
+So given that bias computer, so given that bias computer yes condition, okay.
+
+535
+01:24:43,723 --> 01:24:45,363
+Let's go back, okay.
+
+536
+01:24:45,844 --> 01:24:55,704
+Now given that bias computer yes condition, probability of seeing X multiply by bias computer yes probability.
+
+537
+01:24:55,703 --> 01:24:59,743
+Now, bias computer yes probability is simple.
+
+538
+01:25:00,503 --> 01:25:03,823
+9 out of, divided by 14.
+
+539
+01:25:04,183 --> 01:25:04,323
+Okay.
+
+540
+01:25:04,863 --> 01:25:09,063
+So as you see, I calculated this guy here.
+
+541
+01:25:11,143 --> 01:25:11,983
+Okay.
+
+542
+01:25:12,283 --> 01:25:13,983
+This is easy to calculate.
+
+543
+01:25:15,603 --> 01:25:15,923
+Okay.
+
+544
+01:25:16,443 --> 01:25:21,563
+Now, so given that bias computer says yes,
+
+545
+01:25:21,563 --> 01:25:23,863
+the probability of observing X.
+
+546
+01:25:23,863 --> 01:25:29,923
+Now this guy right here, and I also learned how to calculate this.
+
+547
+01:25:31,563 --> 01:25:45,283
+Okay, so remember, given that bias computer, yes, observing the item x.
+
+548
+01:25:45,283 --> 01:25:57,443
+In order to do that, so what I did is I computed the appearance, the probability of observing each of the attributes separately.
+
+549
+01:25:58,003 --> 01:26:08,623
+Okay, I have shown you the example of observing H less than 30, given that vice computer yes condition 2 divided by 9.
+
+550
+01:26:08,623 --> 01:26:10,543
+So I have shown you in the example.
+
+551
+01:26:11,043 --> 01:26:14,943
+Similarly, you will calculate the other attribute,
+
+552
+01:26:16,223 --> 01:26:18,683
+this probability for the other attributes,
+
+553
+01:26:18,903 --> 01:26:21,023
+and you will multiply all of them.
+
+554
+01:26:21,463 --> 01:26:24,843
+And this will give you the probability
+
+555
+01:26:24,843 --> 01:26:30,243
+of observing X under bias computer S.
+
+556
+01:26:31,243 --> 01:26:31,503
+Okay.
+
+557
+01:26:31,503 --> 01:26:34,883
+Now, you already calculate the,
+
+558
+01:26:34,884 --> 01:26:45,104
+So this probability, I have shown you how we calculated this probability as well.
+
+559
+01:26:46,524 --> 01:26:51,044
+And if you multiply these two, and you will end up with a number.
+
+560
+01:26:52,083 --> 01:27:00,324
+And you will do the same thing with the bias computer no condition, and you will end up with another number.
+
+561
+01:27:00,884 --> 01:27:03,404
+Now, then you will compare these two.
+
+562
+01:27:03,403 --> 01:27:09,643
+which one is bigger so this one is bigger and then you will say okay x belongs to bias computer
+
+563
+01:27:09,643 --> 01:27:19,663
+yes okay so this is also an easy to learn easy to implement this algorithm supervised learning
+
+564
+01:27:19,663 --> 01:27:25,303
+algorithm again all you need to do all you need to calculate
+
+565
+01:27:26,868 --> 01:27:28,967
+this and this probability.
+
+566
+01:27:29,348 --> 01:27:32,747
+And you can calculate these two probabilities out of what?
+
+567
+01:27:32,848 --> 01:27:34,027
+Out of given data.
+
+568
+01:27:34,467 --> 01:27:34,587
+Okay.
+
+569
+01:27:35,027 --> 01:27:38,507
+And if you calculate these two group probabilities,
+
+570
+01:27:39,288 --> 01:27:42,847
+and so given that,
+
+571
+01:27:43,048 --> 01:27:50,548
+you can immediately find the label of a given data item.
+
+572
+01:27:50,548 --> 01:27:53,788
+Now, this is called Naive Bayesian Classifier.
+
+573
+01:27:54,227 --> 01:27:54,307
+Okay.
+
+574
+01:27:54,307 --> 01:28:03,787
+Now, the first classified or supervised learning algorithm that we learned was decision tree.
+
+575
+01:28:04,387 --> 01:28:07,567
+And here the model was a data structure decision tree.
+
+576
+01:28:07,967 --> 01:28:12,947
+Then the second model that we learned is association rules, class association rules.
+
+577
+01:28:13,368 --> 01:28:21,607
+In order to create this association rules, we use class association rule mining algorithm that we learned from previous chapter.
+
+578
+01:28:21,607 --> 01:28:28,747
+and in this type of algorithm the model was set of rules okay and the third algorithm that we used
+
+579
+01:28:28,747 --> 01:28:35,067
+learned is the naive Bayesian classification and here the model is set of probabilities
+
+580
+01:28:35,067 --> 01:28:42,427
+calculated from the data okay now three different supervised learning models okay
+
+581
+01:28:42,427 --> 01:28:48,408
+Now, I'm going to go and talk about k nearest neighbor.
+
+582
+01:28:51,048 --> 01:28:51,728
+Okay.
+
+583
+01:28:52,107 --> 01:29:00,368
+Now, this is a third type of classifier, but this is different than the first three.
+
+584
+01:29:01,267 --> 01:29:01,387
+Okay.
+
+585
+01:29:01,687 --> 01:29:07,307
+Now, the first three, they're creating a model, but this one is not creating a model.
+
+586
+01:29:07,427 --> 01:29:12,007
+This one is using the data as the model.
+
+587
+01:29:12,007 --> 01:29:27,487
+So which means that every time a new item comes in, this algorithm goes back to the data and finds some items from the data that it can use in order to predict the label of an if data item.
+
+588
+01:29:27,987 --> 01:29:29,847
+Okay, how does it do that?
+
+589
+01:29:29,847 --> 01:29:39,187
+okay so what it does is in this particular algorithm uh you at the beginning you say that
+
+590
+01:29:39,187 --> 01:29:48,407
+okay i will choose k is equal to six for example so so that's why it is uh it's named as k nearest
+
+591
+01:29:48,407 --> 01:29:55,887
+neighbor so you have to give a k value okay let's say you give a value of six okay so which means
+
+592
+01:29:55,888 --> 01:30:01,408
+that when a new data item comes in, in this particular case, the new data item is this
+
+593
+01:30:01,408 --> 01:30:14,988
+point that you see here, okay, now what it does is it calculates the closest six data points to
+
+594
+01:30:14,988 --> 01:30:23,968
+this one, okay, and it finds the closest six data points, okay, to this one by using a distance
+
+595
+01:30:23,967 --> 01:30:35,567
+function okay as you see and after it finds the six uh closest data points and it looks at the
+
+596
+01:30:35,567 --> 01:30:45,247
+majority of the class labels in the amongst the k or six data points which in this particular case
+
+597
+01:30:46,047 --> 01:30:52,847
+green and based on the majority of the class labels it selects or it predicts the label of
+
+598
+01:30:52,847 --> 01:31:01,567
+the new data item that it wants to predict. Okay now so remember the previous three algorithms that
+
+599
+01:31:01,567 --> 01:31:06,847
+I have shown you
+
+600
+01:31:08,148 --> 01:31:11,487
+We're using a model.
+
+601
+01:31:12,927 --> 01:31:13,568
+Okay.
+
+602
+01:31:13,967 --> 01:31:16,927
+Now, the decision tree algorithm,
+
+603
+01:31:17,967 --> 01:31:21,787
+classification rule algorithm,
+
+604
+01:31:22,267 --> 01:31:24,367
+and also naive-wise scene algorithm,
+
+605
+01:31:24,828 --> 01:31:27,467
+when you apply to training data,
+
+606
+01:31:27,587 --> 01:31:28,627
+they created the model,
+
+607
+01:31:28,748 --> 01:31:32,307
+and they used the training model in order to test data.
+
+608
+01:31:32,307 --> 01:31:37,307
+But now, k-nearest neighbor classifier
+
+609
+01:31:37,307 --> 01:31:46,668
+is not creating a model and every time you ask basically a new so basically in k nearest neighbor
+
+610
+01:31:46,668 --> 01:31:55,707
+these two things are integrated it does not create a model okay so whenever a new data is given
+
+611
+01:31:55,707 --> 01:32:06,427
+it uses the training data in order to find the label of the new data item okay always it goes
+
+612
+01:32:06,427 --> 01:32:14,247
+back to the training data. So therefore, the k-nearest neighbor algorithm is different than
+
+613
+01:32:14,247 --> 01:32:23,008
+the first three algorithms that I have mentioned to you. This algorithm is basically using the data
+
+614
+01:32:23,008 --> 01:32:30,287
+as its model. Okay. So this is the pseudocode for this algorithm. So you need to give the data set.
+
+615
+01:32:30,287 --> 01:32:41,967
+you need to give also data item that you want to predict.
+
+616
+01:32:41,967 --> 01:32:44,627
+Also, you need to give a K value,
+
+617
+01:32:45,188 --> 01:32:53,048
+which will tell the algorithm that find the K nearest neighbor to this data item D,
+
+618
+01:32:53,347 --> 01:32:56,747
+and by using those K nearest data items,
+
+619
+01:32:56,747 --> 01:33:00,787
+find the class label for this data item D.
+
+620
+01:33:00,787 --> 01:33:04,987
+Okay, so it computes the distance between D
+
+621
+01:33:04,987 --> 01:33:08,368
+and every data item in the data sets.
+
+622
+01:33:08,927 --> 01:33:13,487
+And also it uses the K examples in D
+
+623
+01:33:13,487 --> 01:33:15,567
+that is nearest to the data item D.
+
+624
+01:33:16,027 --> 01:33:19,907
+And then it assigns the majority class labels
+
+625
+01:33:19,907 --> 01:33:23,427
+that it found in the K nearest data items
+
+626
+01:33:23,427 --> 01:33:25,967
+and assigns it to data item D.
+
+627
+01:33:26,747 --> 01:33:27,047
+Okay?
+
+628
+01:33:31,028 --> 01:33:54,667
+Okay. So now I'm going to stop, give a break for 10 minutes and then I will start with the enterprise learning algorithms in the next session. So right now it's 10.27. So let us get together at 10.40.
+
+629
+01:33:54,667 --> 01:34:01,667
+okay give it 13 minute break and then so we'll start at 10.40
+
+630
+01:34:05,555 --> 01:34:16,735
+sorusu olan varsa arada bana sorabilir. Bilgisayarlarınızı kapatmayın sadece sessiz alın. Saat 13 dakika sonra tekrar devam ediyorum.
+
+631
+01:46:33,171 --> 01:46:37,031
+Evet devam ediyorum arkadaşlar. Sesim geliyor mu? Bir teyit eder misiniz?
+
+632
+01:46:37,671 --> 01:46:38,291
+Geliyor hocam.
+
+633
+01:46:38,871 --> 01:46:39,491
+Tamam süper.
+
+634
+01:46:44,180 --> 01:47:08,379
+Bu arada ben iki account'tan bağlanıyorum. Bilgisayarımın mikrofonunda bir sorun var. Cep telefonumun mikrofonunu kullanarak bağlanıyorum. Bir arkadaşınız kameranızı açabilir misiniz diye sormuş. Açık şu anda. Ama sesin geldiği yeri herhalde aktif yapıyoruz. O yüzden şey gözükmüyor olabilirim. Ama diğer account'ta kameram açık.
+
+635
+01:47:12,724 --> 01:47:30,523
+Okay. Now let us talk about unsupervised learning. Now, different from the supervised learning, in unsupervised learning, the data that we are going to use don't have labels.
+
+636
+01:47:30,523 --> 01:47:58,444
+Okay. So in supervised learning, we said that, so we are learning from the data. Data is the teacher, so to say. So it's supervised learning. So because the data has a label, but in unsupervised learning, the data has no label.
+
+637
+01:48:00,523 --> 01:48:06,843
+in other words no target attribute target attribute is the same thing as the label
+
+638
+01:48:09,724 --> 01:48:16,764
+in clustering what we are trying to do we are trying to find the groups of data items okay we
+
+639
+01:48:16,764 --> 01:48:25,084
+are trying to discover the items that can be grouped together okay and in unsupervised learning
+
+640
+01:48:25,084 --> 01:48:28,043
+There are different unsupervised learning algorithms, obviously.
+
+641
+01:48:28,224 --> 01:48:30,143
+We will take a look at them.
+
+642
+01:48:31,283 --> 01:48:39,344
+But the idea here is that we are trying to discover the groups of data that can be found in a dataset.
+
+643
+01:48:40,744 --> 01:48:43,463
+So this is just a toy example.
+
+644
+01:48:43,844 --> 01:48:49,944
+In this particular example, I only have data items which has two dimensions.
+
+645
+01:48:49,944 --> 01:49:03,584
+Okay, so therefore, if you have a two dimension or three dimension, you can visualize the data and you can actually see whether there is an obvious groups of data.
+
+646
+01:49:04,003 --> 01:49:13,084
+Okay, so in this particular examples, we have two natural groups of data.
+
+647
+01:49:13,563 --> 01:49:15,984
+So two natural clusters.
+
+648
+01:49:15,984 --> 01:49:19,604
+Okay, a group of data is called a cluster.
+
+649
+01:49:19,943 --> 01:49:42,203
+Okay, now, obviously, in a real data set, so we have n number of dimensions, which means that each data point has high number of dimensions, which makes it so difficult for us to visualize and see whether there are clusters in it.
+
+650
+01:49:42,203 --> 01:49:51,763
+Okay, so therefore we have to rely on different clustering algorithms in order to find groups of data points. Okay.
+
+651
+01:49:53,203 --> 01:50:03,763
+So why we are using clustering in the first place? Okay, so we are trying to use clustering because we are trying to understand
+
+652
+01:50:03,763 --> 01:50:09,224
+so what kind of structure there are in the data
+
+653
+01:50:09,224 --> 01:50:12,663
+so that we can do different kinds of actions
+
+654
+01:50:12,663 --> 01:50:13,703
+such as marketing.
+
+655
+01:50:15,703 --> 01:50:15,863
+Okay.
+
+656
+01:50:17,224 --> 01:50:20,224
+So if you are in production business,
+
+657
+01:50:20,724 --> 01:50:24,423
+we can produce products based on the groups of people.
+
+658
+01:50:24,923 --> 01:50:25,043
+Okay.
+
+659
+01:50:25,543 --> 01:50:28,243
+So if you are producing t-shirts,
+
+660
+01:50:28,243 --> 01:50:29,923
+you would like to know
+
+661
+01:50:29,923 --> 01:50:36,343
+So what kind of t-shirt sizes that people would like to wear.
+
+662
+01:50:36,664 --> 01:50:42,224
+So based on that, you can decide on the different sizes that you want to produce.
+
+663
+01:50:42,763 --> 01:50:51,203
+Or if you are in marketing, you would like to do marketing based on the certain segments of the customers.
+
+664
+01:50:51,743 --> 01:50:56,304
+And you would like to find what kind of segments are there in your customers.
+
+665
+01:50:59,220 --> 01:51:19,400
+Okay, so where else do we use clustering? So if you have a set of documents, for example, set of Word documents, text documents, or documents, HTML documents, and you would like to put them into categories, and based on their content, again, you can use clustering.
+
+666
+01:51:19,400 --> 01:51:28,019
+Clustering is a very important topic in web data mining.
+
+667
+01:51:28,879 --> 01:51:37,080
+We are going to be using clustering in order to understand the user behavior on a website.
+
+668
+01:51:37,080 --> 01:51:46,339
+We are going to use clustering in order to understand the hotspots on a website, which
+
+669
+01:51:46,339 --> 01:51:59,319
+In other words, we are going to use that in order to understand which functionalities or which web pages of a website is highly being used by the users.
+
+670
+01:52:02,580 --> 01:52:07,319
+Now, there are different categories of clustering algorithms.
+
+671
+01:52:07,599 --> 01:52:11,199
+So one of them is a partition based clustering algorithm.
+
+672
+01:52:11,440 --> 01:52:14,779
+The other one is hierarchical clustering.
+
+673
+01:52:14,779 --> 01:52:19,339
+So this is distribution-based clustering algorithms.
+
+674
+01:52:19,940 --> 01:52:20,019
+Okay.
+
+675
+01:52:20,319 --> 01:52:28,479
+And there are also different types, but we are going to be focused on partition-based clustering and distribution-based clustering.
+
+676
+01:52:29,359 --> 01:52:38,339
+And so we are going to be learning representative algorithms for these categories.
+
+677
+01:52:38,339 --> 01:52:47,999
+okay and when you do a clustering obviously you will end up let's say in this particular example
+
+678
+01:52:47,999 --> 01:52:54,639
+that I have shown you you end up with three clusters right and you might end up four clusters
+
+679
+01:52:54,639 --> 01:53:02,079
+five clusters and cluster okay but eventually so you need to calculate the quality of the
+
+680
+01:53:02,080 --> 01:53:08,639
+clustering result okay so here i have three clusters but if you so i apply a clustering
+
+681
+01:53:08,639 --> 01:53:14,800
+algorithm on the data sets and it generated three clusters and then you can ask me what is the
+
+682
+01:53:14,800 --> 01:53:21,639
+quality of this clustering algorithm so is so is the cluster that you are showing um based on the
+
+683
+01:53:21,639 --> 01:53:28,179
+clustering algorithm is the best cluster okay so in order to do this so we have some metrics that
+
+684
+01:53:28,179 --> 01:53:33,239
+we can use in order to find the quality of this clustering. So one of them is inter-cluster
+
+685
+01:53:33,239 --> 01:53:42,179
+distance. Okay, now inter-cluster distance is the distance between the separate clusters. Okay,
+
+686
+01:53:42,239 --> 01:53:48,639
+as you see the distance between the separate clusters. And the intra-cluster distance is the
+
+687
+01:53:48,639 --> 01:53:57,319
+average distance between the elements of the nodes within a cluster. Okay, average distance between
+
+688
+01:53:57,319 --> 01:54:05,239
+the elements of the nodes within the cluster. So which means that you would like the intra-cluster
+
+689
+01:54:05,799 --> 01:54:13,879
+distance to be as small as possible. So you would like to catch clusters as dense as possible.
+
+690
+01:54:13,879 --> 01:54:21,879
+All the nodes should be as close to each other as possible. And you would like to find clusters
+
+691
+01:54:21,879 --> 01:54:27,319
+that are separate from each other which means that inter-cluster distance should be as um
+
+692
+01:54:28,839 --> 01:54:30,199
+as big as as possible
+
+693
+01:54:32,759 --> 01:54:38,279
+okay so you would like uh inter-cluster distance minimized and you would like
+
+694
+01:54:38,279 --> 01:54:44,919
+entire cluster distance maximized okay uh obviously the quality of the clustering
+
+695
+01:54:44,919 --> 01:54:50,839
+algorithm based on the clustering algorithm that you use on that data set okay now there is no one
+
+696
+01:54:51,879 --> 01:54:54,279
+perfect clustering algorithm that can
+
+697
+01:54:54,644 --> 01:55:01,523
+do good clustering on every data set. So therefore, so on different types of data sets,
+
+698
+01:55:01,963 --> 01:55:09,303
+we will use different types of clustering algorithms. Okay. And also the quality of the
+
+699
+01:55:09,303 --> 01:55:14,783
+clustering is also based on the distance function, because you will see that in clustering algorithms,
+
+700
+01:55:14,783 --> 01:55:23,423
+the distance functions has highly important factor. Okay. Now let us start with a representative
+
+701
+01:55:23,423 --> 01:55:35,423
+Partitional based algorithms work which is K means algorithm so you may have heard K means algorithm in different courses so far, so this is just the review.
+
+702
+01:55:35,423 --> 01:55:39,423
+Now K means is a partition clustering algorithm.
+
+703
+01:55:39,423 --> 01:55:48,423
+Okay, so what we are trying to do given a data set D where the data set D has a n number of instances.
+
+704
+01:55:48,423 --> 01:55:59,224
+okay the data sent d might have instances in it and each data instance have a vector
+
+705
+01:55:59,224 --> 01:56:07,923
+is a vector which as you see this vector in this particular case has a r dimension okay
+
+706
+01:56:07,923 --> 01:56:18,203
+as you see the data set d has n data instance and each data instance as you see has a
+
+707
+01:56:18,203 --> 01:56:25,883
+r dimension okay and the example the toy example that i have just shown you had two dimensions but
+
+708
+01:56:25,883 --> 01:56:34,523
+usually in a real data sets in particular web data mining has high number of dimensions okay
+
+709
+01:56:35,803 --> 01:56:44,683
+now what we are going to try and we are going to try to cluster these instances where each instance
+
+710
+01:56:44,684 --> 01:56:53,963
+has a high number of dimensions okay now this algorithm k-means algorithm is an algorithm which
+
+711
+01:56:53,963 --> 01:57:02,364
+expects the user to enter the number of clusters that it should find okay this algorithm wants you
+
+712
+01:57:02,364 --> 01:57:10,843
+to initially tell how many cluster that it should find so in this particular case so we use the
+
+713
+01:57:10,843 --> 01:57:21,804
+parameter key okay now what this algorithm is doing uh it it clusters uh the data points okay
+
+714
+01:57:21,804 --> 01:57:29,243
+around centroids okay it finds k centroids and it's try to clusters the data points around these
+
+715
+01:57:29,243 --> 01:57:39,724
+centroids how does do that now the k-means algorithm uh basically is an iterative algorithm
+
+716
+01:57:39,724 --> 01:57:48,983
+so what it does is it beginning given the value k it finds k different data points as the initial
+
+717
+01:57:48,983 --> 01:57:59,203
+centroids okay we call this seeds okay initial centroids and after that it goes to a loop
+
+718
+01:57:59,203 --> 01:58:01,563
+it goes to a for loop
+
+719
+01:58:01,563 --> 01:58:03,383
+okay and
+
+720
+01:58:03,383 --> 01:58:05,683
+what it does is it first scan
+
+721
+01:58:05,683 --> 01:58:06,703
+the whole data set
+
+722
+01:58:06,703 --> 01:58:09,783
+okay and it
+
+723
+01:58:09,783 --> 01:58:11,683
+assigns every data
+
+724
+01:58:11,683 --> 01:58:13,724
+set in every
+
+725
+01:58:13,724 --> 01:58:15,823
+data item in the data sets into
+
+726
+01:58:15,823 --> 01:58:17,483
+one of these centroids
+
+727
+01:58:17,483 --> 01:58:19,063
+okay
+
+728
+01:58:19,063 --> 01:58:20,323
+and then
+
+729
+01:58:20,323 --> 01:58:23,144
+it calculates
+
+730
+01:58:23,144 --> 01:58:25,724
+the centroids of
+
+731
+01:58:25,724 --> 01:58:27,084
+the new
+
+732
+01:58:27,084 --> 01:58:29,144
+cluster
+
+733
+01:58:29,144 --> 01:58:38,744
+OK, and then if a conversion create criteria is not met, that it goes to the beginning of the loop.
+
+734
+01:58:38,744 --> 01:58:43,444
+So I will just I will tell you in a minute what the convergence criteria is.
+
+735
+01:58:43,823 --> 01:58:48,683
+Okay, and I will explain how this for loop is going to work.
+
+736
+01:58:49,023 --> 01:58:52,603
+Okay, now this is the pseudocode of the k-means algorithm.
+
+737
+01:58:52,803 --> 01:58:55,863
+It takes the value of k and it takes the data set.
+
+738
+01:58:56,403 --> 01:59:07,504
+But so let us see how the algorithm runs on an example.
+
+739
+01:59:08,063 --> 01:59:11,283
+Now, initially, so these are the data points.
+
+740
+01:59:11,283 --> 01:59:16,403
+this is the visualization of the data points in the data sets. So this is a toy example,
+
+741
+01:59:16,403 --> 01:59:24,164
+so therefore it has two dimensions. Every data point has two dimensions. Now, as you see,
+
+742
+01:59:24,164 --> 01:59:31,443
+the algorithm at the beginning, before it goes to loop, it selects two data points as initial data
+
+743
+01:59:31,443 --> 01:59:40,483
+points. K is equal to two in this case, so we know that there will be two clusters at the end.
+
+744
+01:59:40,483 --> 01:59:42,724
+So we gave k equal to two.
+
+745
+01:59:43,803 --> 01:59:49,404
+And what it does, it randomly selects two data points
+
+746
+01:59:49,404 --> 01:59:51,904
+as the key initial points as centroids.
+
+747
+01:59:51,904 --> 01:59:55,203
+It selected this one, and it selected this one.
+
+748
+01:59:56,023 --> 01:59:56,783
+So, okay.
+
+749
+01:59:59,343 --> 02:00:02,703
+Now, it goes to a loop.
+
+750
+02:00:03,603 --> 02:00:05,143
+Now, at the beginning of the loop,
+
+751
+02:00:05,143 --> 02:00:22,364
+So what it does is that it goes through the whole data set in the database and it assigns every data item one by one to the closest centroid.
+
+752
+02:00:22,724 --> 02:00:30,143
+As you see, these four data points closer to this centroid, therefore they were assigned to this one.
+
+753
+02:00:30,143 --> 02:00:37,283
+and the rest of the data points are closer to this data item, to this centroid.
+
+754
+02:00:37,923 --> 02:00:38,044
+Okay.
+
+755
+02:00:38,303 --> 02:00:40,663
+So therefore, they are assigned to this one.
+
+756
+02:00:41,203 --> 02:00:41,364
+Okay.
+
+757
+02:00:41,944 --> 02:00:50,523
+So as the algorithm moves in the data set,
+
+758
+02:00:50,523 --> 02:00:55,883
+it checks the distance between every data item to the centroid
+
+759
+02:00:55,883 --> 02:00:58,124
+and then it decides which one is closer.
+
+760
+02:00:58,704 --> 02:00:58,803
+Okay.
+
+761
+02:00:58,803 --> 02:01:08,023
+and after that within the for loop what it does is after this assignment it recalculates the
+
+762
+02:01:08,023 --> 02:01:19,343
+centroids okay and as you see now based on these new assigned values it recalculates the centroids
+
+763
+02:01:19,343 --> 02:01:27,764
+which is the mean value of all the data points here okay mean value for the x axis and mean value
+
+764
+02:01:27,764 --> 02:01:37,864
+for the y-axis and now it finds a data point. It finds a virtual point which is not the actual
+
+765
+02:01:37,864 --> 02:01:43,984
+data point, okay, which represents the centroid and you see that it finds a virtual data point,
+
+766
+02:01:43,984 --> 02:01:51,184
+okay, which represents the centroid. Initially, it selected actual data point as the initial
+
+767
+02:01:51,184 --> 02:02:00,323
+centroid but after the first loop okay you see that it found the virtual centroid okay now
+
+768
+02:02:00,323 --> 02:02:10,323
+now this is the this is what happened after the first execution of the loop now what it will do
+
+769
+02:02:10,323 --> 02:02:16,303
+it will go back to the beginning of the loop so when it goes back to the beginning of the loop
+
+770
+02:02:16,303 --> 02:02:20,303
+Again, it will do another scan on the database.
+
+771
+02:02:20,303 --> 02:02:25,303
+It will assign every data point in the database to the closest centroids.
+
+772
+02:02:25,303 --> 02:02:31,303
+Okay, as you see, so these are the data points that are assigned to this centroid.
+
+773
+02:02:31,303 --> 02:02:35,303
+These are the data points that are assigned to this centroid.
+
+774
+02:02:35,303 --> 02:02:42,303
+Okay, now in the second loop, next, what it's going to do, it's going to recalculate the centroids.
+
+775
+02:02:42,591 --> 02:02:57,271
+As you see, after this initial assignment in the second loop done, it will recalculate the centroids. As you see, it recalculated the centroid points, and then it will go back to the beginning of the loop.
+
+776
+02:02:57,271 --> 02:03:06,731
+okay so at beginning of the loop again it will start doing a third scan in the data set and it
+
+777
+02:03:06,731 --> 02:03:13,491
+will assign all the data points to the closest centroid as you see these are the data points
+
+778
+02:03:13,491 --> 02:03:18,831
+that are assigned to this one these are the data points that are assigned to this one okay and then
+
+779
+02:03:18,831 --> 02:03:26,772
+it will recompute the centroid points now you see that you know at the third loop
+
+780
+02:03:26,772 --> 02:03:32,071
+the location of the virtual centroids did not change.
+
+781
+02:03:32,812 --> 02:03:32,852
+Okay.
+
+782
+02:03:34,792 --> 02:03:41,852
+And so this is one of the stopping criteria
+
+783
+02:03:41,852 --> 02:03:44,492
+of the k-means algorithm.
+
+784
+02:03:45,112 --> 02:03:45,331
+Okay.
+
+785
+02:03:45,672 --> 02:03:48,772
+Now let's go back to the pseudocode.
+
+786
+02:03:49,331 --> 02:03:49,471
+Okay.
+
+787
+02:03:50,151 --> 02:03:52,931
+Now, so this algorithm takes the data set
+
+788
+02:03:52,931 --> 02:03:54,551
+and also the value k,
+
+789
+02:03:54,551 --> 02:03:59,711
+which indicates the number of clusters that it should find on the data.
+
+790
+02:04:00,812 --> 02:04:07,351
+So what it does is it first chooses k data points as the initial centroids,
+
+791
+02:04:07,691 --> 02:04:09,532
+and it goes to a loop.
+
+792
+02:04:10,471 --> 02:04:13,431
+And within the loop, you see there is an inner loop.
+
+793
+02:04:13,772 --> 02:04:17,571
+And within this inner loop, what it does is that it goes through
+
+794
+02:04:17,571 --> 02:04:20,911
+all the data items in the datasets,
+
+795
+02:04:20,911 --> 02:04:30,752
+and it calculates the distance between item X, okay, and also the centroid, okay, you know that,
+
+796
+02:04:30,931 --> 02:04:38,931
+so we chose initial centroids, and now what it's going to do, it's going to calculate the distance
+
+797
+02:04:38,931 --> 02:04:47,411
+between every data item and also the, between the every data item and centroids, and it will choose
+
+798
+02:04:47,411 --> 02:04:53,032
+the closest one and it will assign the data item to the closest centroid.
+
+799
+02:04:54,231 --> 02:05:01,392
+Once the for loop gets completed and then it will recompute the centroids for the cluster based on
+
+800
+02:05:01,392 --> 02:05:06,711
+the cluster membership. Okay. And then after that, it will go back to the beginning of the loop.
+
+801
+02:05:06,711 --> 02:05:11,832
+Okay. This is exactly what I just described, how the algorithm
+
+802
+02:05:11,831 --> 02:05:23,431
+executes okay now as I mentioned after every loop after every loop before it goes back to
+
+803
+02:05:23,431 --> 02:05:29,711
+the beginning of the loop it needs to check whether or not the algorithm is completed
+
+804
+02:05:29,711 --> 02:05:37,871
+to do this it checks the stopping or convergence criteria okay now there are three different
+
+805
+02:05:37,871 --> 02:05:45,571
+criterias that it can use. So one of them is there is no or minimum reassignments of the data points
+
+806
+02:05:45,571 --> 02:05:52,091
+to different clusters. For example, in this particular example, if this was the stopping
+
+807
+02:05:52,091 --> 02:06:01,711
+criteria, then in this particular case, I would, in this particular case, as you see,
+
+808
+02:06:01,711 --> 02:06:05,431
+So this is the initial cluster.
+
+809
+02:06:07,431 --> 02:06:11,391
+So in the second loop, this is the cluster assignment.
+
+810
+02:06:11,611 --> 02:06:13,672
+This is the recomputing the centroids.
+
+811
+02:06:14,251 --> 02:06:20,351
+And at the beginning of the loop, again, in third loop, I am doing the reassignment.
+
+812
+02:06:21,076 --> 02:06:24,316
+to the newly computed centroids.
+
+813
+02:06:24,316 --> 02:06:32,115
+As you see that there is no reassignment of the actual data points.
+
+814
+02:06:32,295 --> 02:06:38,715
+It is the same nodes which were assigned to the cluster previously.
+
+815
+02:06:39,076 --> 02:06:40,096
+So there is no change.
+
+816
+02:06:40,576 --> 02:06:48,095
+So therefore, I can stop my iteration here.
+
+817
+02:06:48,095 --> 02:06:51,875
+or the second stopping criteria,
+
+818
+02:06:53,375 --> 02:06:55,915
+no or minimum change of centroids.
+
+819
+02:06:56,355 --> 02:06:59,135
+If I use this stopping criteria, for example,
+
+820
+02:06:59,315 --> 02:07:02,135
+I have to stop here because, as you see,
+
+821
+02:07:02,655 --> 02:07:06,915
+after the assignment, I'm recomputing the centroids.
+
+822
+02:07:06,915 --> 02:07:10,035
+As you see, after recomputation of the centroids,
+
+823
+02:07:10,175 --> 02:07:12,355
+the values of the centroids do not change.
+
+824
+02:07:13,035 --> 02:07:15,555
+So therefore, if I use the second stopping criteria,
+
+825
+02:07:15,555 --> 02:07:26,175
+that I can use I can stop it stop the iteration here okay now the third stopping criteria is the
+
+826
+02:07:26,175 --> 02:07:33,016
+minimum decrease in the sum of squared errors as you see for all the clusters that I have
+
+827
+02:07:33,016 --> 02:07:40,175
+I am calculating the distance between the centroid of that cluster and also the element of the
+
+828
+02:07:40,175 --> 02:07:47,775
+clusters. So I'm calculating distance and getting the power of two. And I'm doing this for all the
+
+829
+02:07:47,775 --> 02:07:53,576
+available nodes and adding the results. And that will give me the sum of square root error. So what
+
+830
+02:07:53,576 --> 02:08:00,395
+does this mean? So this means that, so after this loop gets completed, at the end of the loop, what
+
+831
+02:08:00,395 --> 02:08:06,675
+I'm going to do, I'm going to calculate the distance between every node in a cluster, between
+
+832
+02:08:06,675 --> 02:08:14,436
+the node and also the centroid. I will calculate the distance, get the power of two of that value,
+
+833
+02:08:14,436 --> 02:08:20,436
+okay, and I will do it for the cluster number one and repeat it for cluster number two,
+
+834
+02:08:20,436 --> 02:08:28,035
+and I will add everything that will give me the sum of squared error, and that will give me a value.
+
+835
+02:08:28,035 --> 02:08:34,995
+And next, I will do it in the at the end of the second loop for this case, and that will give me
+
+836
+02:08:34,995 --> 02:08:41,156
+another sum of squared error and the if the change between the sum of the squared error is minimum
+
+837
+02:08:41,796 --> 02:08:49,635
+okay in this case i will stop the iteration so you see that there are different stopping criteria
+
+838
+02:08:49,635 --> 02:08:58,915
+i can use one of them in order to stop the iteration as you see the outer for loop is
+
+839
+02:08:58,915 --> 02:09:02,436
+is the stopping criteria is right here.
+
+840
+02:09:02,436 --> 02:09:04,315
+So therefore this is a pseudocode,
+
+841
+02:09:04,315 --> 02:09:07,156
+so I can use one of the stopping criteria
+
+842
+02:09:07,156 --> 02:09:09,395
+when I implement the K-means algorithm.
+
+843
+02:09:12,296 --> 02:09:13,135
+Okay.
+
+844
+02:09:16,156 --> 02:09:18,395
+Now the distance function is highly important
+
+845
+02:09:18,395 --> 02:09:23,395
+because as you see, in order to calculate the distance,
+
+846
+02:09:24,936 --> 02:09:28,495
+so I need to choose a distance function, okay?
+
+847
+02:09:28,495 --> 02:09:32,936
+for between the centroid and every data points in a cluster.
+
+848
+02:09:32,936 --> 02:09:34,695
+So I'm calculating the distance.
+
+849
+02:09:34,695 --> 02:09:38,436
+So therefore I need to choose a distance function.
+
+850
+02:09:38,436 --> 02:09:40,876
+So there are different distance functions.
+
+851
+02:09:40,876 --> 02:09:43,436
+So one of the commonly used distance function
+
+852
+02:09:43,436 --> 02:09:46,775
+is the Euclidean distance function.
+
+853
+02:09:47,915 --> 02:09:49,055
+Okay.
+
+854
+02:09:49,055 --> 02:09:54,055
+Obviously it assumes that all the values
+
+855
+02:09:54,436 --> 02:09:57,855
+of the attributes are numerical values
+
+856
+02:09:57,855 --> 02:10:01,535
+And based on that, you can calculate the mean
+
+857
+02:10:01,535 --> 02:10:03,755
+between the data points.
+
+858
+02:10:03,755 --> 02:10:06,096
+So this is one of the equations,
+
+859
+02:10:06,096 --> 02:10:09,016
+Euclidean distance metric is one of the equations
+
+860
+02:10:09,016 --> 02:10:10,975
+that you are already familiar with.
+
+861
+02:10:10,975 --> 02:10:15,215
+So I won't repeat how we are calculating it.
+
+862
+02:10:15,215 --> 02:10:16,055
+Okay.
+
+863
+02:10:20,051 --> 02:10:29,691
+Now, this algorithm, the K-Means algorithm, is one of the algorithms that can scale into high number of nodes in the data sets.
+
+864
+02:10:29,691 --> 02:10:31,551
+So how does it do that?
+
+865
+02:10:32,851 --> 02:10:41,892
+So you do not have to bring all the data set into a memory in order to run the K-Means algorithm.
+
+866
+02:10:41,892 --> 02:10:50,211
+So your data can sit in the physical data storage and you can still run your K-means algorithm on top of that.
+
+867
+02:10:50,772 --> 02:10:52,412
+So let's see how you do that.
+
+868
+02:10:53,191 --> 02:10:58,632
+So you choose initial centroid points at the beginning.
+
+869
+02:10:59,791 --> 02:11:00,151
+Okay.
+
+870
+02:11:00,691 --> 02:11:02,691
+So let's call this M-M-J.
+
+871
+02:11:03,251 --> 02:11:05,072
+And so you have K clusters.
+
+872
+02:11:05,471 --> 02:11:09,452
+And for each cluster, you choose a centroid data point.
+
+873
+02:11:09,451 --> 02:11:15,511
+And so we called it M corresponding to each of the clusters.
+
+874
+02:11:16,131 --> 02:11:18,371
+And then you start in the outer loop.
+
+875
+02:11:18,931 --> 02:11:21,331
+So you go into outer loop.
+
+876
+02:11:21,851 --> 02:11:21,971
+Okay.
+
+877
+02:11:22,151 --> 02:11:28,111
+And then you initialize two values, one for sum and one for count.
+
+878
+02:11:28,412 --> 02:11:28,691
+Okay.
+
+879
+02:11:29,111 --> 02:11:32,031
+And for each of the clusters that you are going to do that.
+
+880
+02:11:32,331 --> 02:11:34,811
+And what you are going to do in the inner loop,
+
+881
+02:11:34,812 --> 02:11:39,871
+you are going to do a pass on the data set.
+
+882
+02:11:40,732 --> 02:11:44,312
+And so when you do a pass on the data sets
+
+883
+02:11:44,312 --> 02:11:46,992
+and for each data item in the data set,
+
+884
+02:11:47,232 --> 02:11:49,812
+you are going to calculate the distance
+
+885
+02:11:49,812 --> 02:11:52,652
+between the data item and the centroid.
+
+886
+02:11:53,212 --> 02:11:54,992
+Okay, how many centrodes you have?
+
+887
+02:11:55,032 --> 02:11:56,792
+You have k centroids,
+
+888
+02:11:56,871 --> 02:11:58,412
+which means that you need to calculate
+
+889
+02:11:58,412 --> 02:12:02,312
+k different distance between the data item
+
+890
+02:12:02,312 --> 02:12:03,432
+and their centroids.
+
+891
+02:12:03,431 --> 02:12:09,912
+and so you will end up with k different values and you need to choose the minimum one okay you
+
+892
+02:12:09,912 --> 02:12:16,191
+need to choose because you are going to assign this value x to one of these clusters okay so
+
+893
+02:12:16,191 --> 02:12:27,791
+once you choose the minimum distance for a cluster then you need to assign this value x to that
+
+894
+02:12:27,791 --> 02:12:35,572
+cluster okay and once you do that then for that particular clusters now that you assign that
+
+895
+02:12:35,572 --> 02:12:44,272
+item x to that cluster you need to update the sum value for that cluster and you need to update the
+
+896
+02:12:44,272 --> 02:12:50,511
+count value for that cluster and then you will go back to the beginning of the loop do it again
+
+897
+02:12:50,511 --> 02:12:56,551
+for the second item do it again for the third item do it again for the fourth item and you will
+
+898
+02:12:56,551 --> 02:13:04,471
+repeat for all the items in the data sets. Once you complete all the data sets then you will what
+
+899
+02:13:04,471 --> 02:13:13,111
+you will do you will calculate the new centroid points by dividing the sum value corresponding to
+
+900
+02:13:13,111 --> 02:13:20,152
+each cluster divided by the count value for corresponding to that cluster. So that way
+
+901
+02:13:20,151 --> 02:13:27,631
+by the end of it for all the clusters that you have you can find the new centroids and then you
+
+902
+02:13:27,631 --> 02:13:33,251
+will check whether the stopping criteria is met otherwise and then you will go back to the beginning
+
+903
+02:13:33,251 --> 02:13:43,111
+of the loop okay now this means that even the data points is so big so that you can not bring it into
+
+904
+02:13:43,111 --> 02:13:51,751
+the physical memory so the data can sit in the data set in the database and you can still run
+
+905
+02:13:51,751 --> 02:14:00,151
+the k-means algorithm okay now remember this is an iterative algorithm so which means that
+
+906
+02:14:00,151 --> 02:14:06,632
+you will repeat this algorithm until the stopping criteria is met and you don't know how many times
+
+907
+02:14:06,632 --> 02:14:12,951
+that you have to run this algorithm you how many times you have to repeat this algorithm in order
+
+908
+02:14:12,951 --> 02:14:15,471
+to meet with the stopping criteria.
+
+909
+02:14:15,471 --> 02:14:19,471
+So therefore, there is the iteration number, which is t.
+
+910
+02:14:20,083 --> 02:14:25,064
+Okay, so one of the parameters that we use in order to find the time complexity.
+
+911
+02:14:25,883 --> 02:14:34,303
+Now, remember, in every scan on the data set, so we are doing k different comparisons.
+
+912
+02:14:34,623 --> 02:14:40,083
+We are comparing x with each centroid that we have.
+
+913
+02:14:40,703 --> 02:14:43,283
+Okay, so which means how many centroids do we have?
+
+914
+02:14:43,283 --> 02:14:51,063
+k so which means that we are going to calculate the distance between x and every centroid which
+
+915
+02:14:51,063 --> 02:14:58,543
+is k centroid and then we will choose one of them since we are going to we are doing k
+
+916
+02:14:58,543 --> 02:15:06,163
+different operations here so therefore k is another parameter okay and how many times we
+
+917
+02:15:06,163 --> 02:15:13,563
+are doing this we are doing this n times because the data set has n items in it so therefore
+
+918
+02:15:13,563 --> 02:15:24,283
+the time complexity is t multiply k multiply n okay now so t is the number of iterations k is
+
+919
+02:15:24,283 --> 02:15:31,083
+the number of clusters n is the number of data points okay now so we we expect the k and the t
+
+920
+02:15:31,083 --> 02:15:38,363
+are small to be small and therefore k-means algorithm is a linear algorithm basically so
+
+921
+02:15:38,363 --> 02:15:49,643
+what it says that it's time complexity is dependent on the number of data items so so which is an
+
+922
+02:15:50,844 --> 02:15:56,283
+effective algorithm okay it's easy to understand and it's easy to implement
+
+923
+02:15:56,283 --> 02:16:05,163
+but it has also weakness the weakness of this algorithm is that you need to decide what kind
+
+924
+02:16:05,163 --> 02:16:11,444
+of k that you need to give to this algorithm okay so which means that you need to have a
+
+925
+02:16:11,444 --> 02:16:20,563
+prior knowledge about the possible clusters that you can find on the data set okay so but this is
+
+926
+02:16:20,563 --> 02:16:26,983
+difficult to do because before analyzing the data sets how can you know the total number of
+
+927
+02:16:26,983 --> 02:16:34,283
+clusters that you you will find okay so that's one of the weakness so therefore before k-means
+
+928
+02:16:34,283 --> 02:16:43,323
+algorithms we run other algorithms in order to find optimum k value okay now the second weakness
+
+929
+02:16:43,323 --> 02:16:51,083
+another weakness is that outliers okay which means that when when you run the k-means algorithm
+
+930
+02:16:51,083 --> 02:16:57,583
+if there is an outlier in the data it affects the results of the k-means algorithm okay
+
+931
+02:16:57,583 --> 02:17:06,343
+and another weakness is that algorithm can also be applied to the data where the mean value between
+
+932
+02:17:06,343 --> 02:17:16,503
+the data points can be calculated, okay, which is the data has should have numerical,
+
+933
+02:17:18,503 --> 02:17:25,703
+the data should have attributes with numerical values, okay. Now these are sort of limitations
+
+934
+02:17:25,703 --> 02:17:32,183
+of the k-means algorithm. For example, take a look at the weakness related with the outlier. Now
+
+935
+02:17:32,183 --> 02:17:36,903
+Now, if you look at this data set, obviously it has two natural clusters.
+
+936
+02:17:37,623 --> 02:17:40,943
+So here, one of them, the second one is this one.
+
+937
+02:17:41,143 --> 02:17:41,243
+Okay.
+
+938
+02:17:41,363 --> 02:17:52,823
+But since there is an outlier in the data set, okay, K-means algorithm, if you run the K-means algorithm on the status sets, it will find two clusters like this, which is not correct.
+
+939
+02:17:53,223 --> 02:17:53,743
+Okay.
+
+940
+02:17:54,203 --> 02:18:01,583
+The ideal data cluster is like this, and there should be one outlier which cannot fit in any of the clusters.
+
+941
+02:18:01,583 --> 02:18:11,384
+OK, so therefore, before we apply K-means algorithm, we need to apply outlier detection and removal algorithms.
+
+942
+02:18:11,983 --> 02:18:17,363
+OK, so before K-means algorithm, we need to apply optimum K.
+
+943
+02:18:18,324 --> 02:18:32,324
+finding algorithms and we need to apply outlier detection and removal algorithms so that we can run the K-means algorithm and find the desirable clusters.
+
+944
+02:18:38,131 --> 02:18:49,131
+Now, finding the outlier data points and removing them is one of the methods. The other method to deal with the outlier problem is
+
+945
+02:18:51,131 --> 02:19:06,131
+you do a random sampling first and then you apply the clustering on the random sample and then you assign the rest of the remaining data points into the
+
+946
+02:19:08,131 --> 02:19:37,172
+clusters. Burada diyelim ki elimde bir milyon tane data point var. Ben bu bir milyon içerisinde outlier'larım var. Ben bunun içerisinden yüzde onunu seçiyorum. Yüzde onunu in memory'e getiriyorum ve bunlar üzerinde öncelikle cluster'larımı buluyorum. Diyelim ki beş tane cluster buldum. Ve bu beş tane cluster'ın centroid'lerini de biliyorum. Geriye kalan datayı bu beş tane cluster'a dağıtıyorum.
+
+947
+02:19:38,131 --> 02:19:59,111
+yani geriye kalan data için tekrardan clustering algoritması çalıştırmıyorum. Sadece random sampling için çalıştırıyorum. Geriye kalanı assignment yapıyorum. Ve burada diyorum ki bu bir milyon tane data içerisinde outlier olabilir ama benim seçeceğim yüzde on tanesi içerisinde, random seçeceğim yüzde on tanesi içerisinde bulunma olasılığı düşüktür.
+
+948
+02:19:59,111 --> 02:20:17,411
+Bundan dolayı ben ne yapıyorum? Random sampling ile çözüyorum. Diğer metot ise bu 1 milyon data içerisinde öncelikle bir outlier detection yapıp outlier noktaları bulup datadan çıkartıp ondan sonra clustering'i uygulamak.
+
+949
+02:20:23,092 --> 02:20:52,991
+Another weakness. So one of the weaknesses that I told you is that you have to choose a value K. Okay. And I told you in order to, you know, solve this problem. So we have optimum K finding algorithm, such as ELBOV algorithm or Suleid algorithm. So I won't go into details of this, but so these are the algorithms that are available to us that we can use
+
+950
+02:20:52,991 --> 02:20:56,492
+in order to find optimum K before we run K-means algorithm.
+
+951
+02:20:57,651 --> 02:21:17,831
+But even we find K value, even we know the optimum K value, we also need to select the initial centroids in a correct way so that we can end up with the correct clustering results.
+
+952
+02:21:17,831 --> 02:21:36,952
+which means that how we choose initial seeds is highly important. For example, take a look at this example. In this particular case, so obviously you see that there are two obvious clusters, right, in this particular two-dimensional example.
+
+953
+02:21:36,952 --> 02:21:52,471
+So at the beginning, so we choose these two data points as the initial seeds and we run the K-means algorithm and as a result of the K-means algorithm, you see that the algorithm finds these two clusters.
+
+954
+02:21:53,472 --> 02:21:58,291
+But as you see that these are not the clusters that we should expect.
+
+955
+02:21:58,291 --> 02:22:17,991
+effect. Now, if we were to choose different initial data seeds at the beginning as the centroid points, the K-means algorithm would find these clusters, which is, as you see, it was able to find the natural clusters.
+
+956
+02:22:17,991 --> 02:22:24,651
+So therefore finding the initial seeds is highly important.
+
+957
+02:22:27,251 --> 02:22:45,971
+Burada uyguladığımız yöntemde yani key'yi bulduktan sonra hangi data pointları initial seed olarak seçeceğimiz noktasında uygulayacağımız yöntemde öncelikle bir tane dataset içerisinde bir tane data item'ı seçiyoruz.
+
+958
+02:22:45,971 --> 02:23:10,691
+initial seed olarak. İkincisini seçerken birincisinden en uzakta olan data item'ı seçiyoruz. Yani datayı bir sken ediyoruz. İlk seçtiğimiz initial seed ile data item'ları bir karşılaştırıyoruz, uzaklığını buluyoruz. Birinci data item'dan en uzakta olan data item'ı bulup onu ikinci initial seed olarak buluyoruz.
+
+959
+02:23:10,691 --> 02:23:37,771
+Eğer bir tane daha varsa yani üçüncü K eşittir 3 diye başlamışsak üçüncü initial seed'i bulmak için bir daha tekrardan scan yapıyoruz. Bu sefer de birinci ve ikinci seçtiğimizden her ikisinden de ortalamada en uzakta olan data item'ı seçiyoruz. Birbirinden en uzaktaki data item'ları initial seed seçtikten sonra K-Mins algoritmasını çalıştırıyoruz.
+
+960
+02:23:37,771 --> 02:23:47,551
+Demek ki bizim K-Means algoritmasını optimum bir şekilde kullanmamız için yapmamız gereken neler var?
+
+961
+02:23:47,991 --> 02:23:54,251
+Birincisi datayı bir scan edip eğer burada outlier'lar varsa bunları remove etmemiz lazım.
+
+962
+02:23:54,251 --> 02:24:01,471
+Eğer outlier removal ile uğraşmak istemiyorsak o durumda data içerisinden random sampling yapmamız gerekiyor.
+
+963
+02:24:01,471 --> 02:24:16,711
+yaptığımız random sampling üzerinde clustering'i uygulayıp daha sonra da geriye kalan data itemları clustering'e tekrardan sokmadan mevcutta oluşturulmuş random sampling üzerinde oluşturulmuş cluster'ları atayacağız.
+
+964
+02:24:17,523 --> 02:24:35,964
+Diğer bir şey bu algoritması K'yi seçer seçmemiz gerekiyor. Bunun içinde optimum K bulma algoritmaları var. Bunlardan bir tanesini kullanaraktan elbow ya da siluet algoritmasını kullanaraktan biz optimum K'yi buluyoruz.
+
+965
+02:24:35,964 --> 02:24:54,964
+Bu algoritmaların da çalışma şekli şu, K'yı 2'den başlataraktan 2, 3, 4, 5, 6, 7, 8, 9 devam edip en yüksek kalitede clustering'i veren K değerini bulmaya çalışıyor.
+
+966
+02:24:54,964 --> 02:25:05,663
+Ve optimum K değerini bulduktan sonra ben artık bu clustering'i çalıştırabilirim. Yani K-Means clustering'i çalıştırabilirim.
+
+967
+02:25:05,963 --> 02:25:31,903
+Bir diğer dikkat etmemiz gereken şey, optimum key değerini bulduktan sonra initial seedleri de seçerken öncelikle bir tane data point'i seçiyorum. İkinci initial data point'i yani ikinci centroid'i seçerken birincisinden olabildiğince olan uzaktaki data point'i seçiyorum. Üçüncü de de aynı şekilde ikisinden olabildiğince uzaktaki data point'i seçiyorum.
+
+968
+02:25:31,903 --> 02:26:01,403
+okay if we can do this then we can run the k-means algorithm and we can find optimum clusters but still the k-means algorithm is not finding is not able to find all possible shapes so for instance as you see that there so there are two obvious clusters here so now this one this cluster and also this cluster okay but if you apply
+
+969
+02:26:01,903 --> 02:26:16,643
+k-means algorithm, it will find even after all by removing all the weaknesses of the k-means algorithm, you will find two clusters like this.
+
+970
+02:26:17,223 --> 02:26:17,323
+Okay.
+
+971
+02:26:17,443 --> 02:26:22,043
+And these are not the desirable clusters that we find, we would like to see.
+
+972
+02:26:22,043 --> 02:26:51,143
+Okay, so therefore K-means algorithm or partition clustering algorithms, K-means is one representative of the partition clustering algorithms, they can only find elliptic shapes, okay, elliptic shapes or round shapes clusters, okay, so they are not able to find clusters like these shapes,
+
+973
+02:26:51,143 --> 02:26:53,303
+different than elliptic shapes.
+
+974
+02:26:54,083 --> 02:26:54,183
+Okay.
+
+975
+02:26:55,523 --> 02:27:05,043
+So therefore, there are other clustering algorithms like hierarchical clustering, which is based on the distribution of the data.
+
+976
+02:27:05,823 --> 02:27:05,923
+Okay.
+
+977
+02:27:06,384 --> 02:27:15,603
+Now, before I go to the details of the hierarchical clustering, so let us see.
+
+978
+02:27:23,059 --> 02:27:25,619
+Okay, clustering
+
+979
+02:27:26,819 --> 02:27:27,699
+Yaparken
+
+980
+02:27:28,500 --> 02:27:33,299
+Elde edeceğimiz clusterların elliptic shape olup olmadığını nasıl anlayacağız diye bir soru var.
+
+981
+02:27:35,459 --> 02:27:51,059
+We do not know this information beforehand. Okay, so therefore what we are going to do when we do clustering
+
+982
+02:27:47,827 --> 02:27:51,827
+What we usually do, so let me show you.
+
+983
+02:27:57,427 --> 02:28:07,367
+Since, so now this is, this is an example of the result of clustering, as you see.
+
+984
+02:28:07,848 --> 02:28:21,487
+So here, before you apply the clustering, so you do not know whether or not you will end up with elliptic shapes or non-elliptic shapes.
+
+985
+02:28:21,487 --> 02:28:30,448
+So therefore, what you need to do, you need to apply different representative algorithms from different categories.
+
+986
+02:28:30,828 --> 02:28:33,047
+So you need to apply K-means algorithms.
+
+987
+02:28:33,547 --> 02:28:38,487
+You need to apply hierarchical clustering algorithms like bisecting K-means.
+
+988
+02:28:38,747 --> 02:28:38,867
+Okay.
+
+989
+02:28:39,328 --> 02:28:43,087
+You need to apply agglomative clustering algorithm.
+
+990
+02:28:43,087 --> 02:28:56,487
+For example, that's also another hierarchical clustering, which means that before you see the results, you don't know which algorithm is going to find the best clustering.
+
+991
+02:28:56,968 --> 02:29:04,527
+You don't know whether there will be a round shape or non-round shape, elliptic or non-elliptic shape clusters.
+
+992
+02:29:04,527 --> 02:29:14,847
+Okay, so therefore the best way to do when you do clustering, you need to pick representative algorithms from different categories and use them on the data set.
+
+993
+02:29:15,667 --> 02:29:21,788
+And as you do it, you also need to choose different distance metrics.
+
+994
+02:29:22,527 --> 02:29:31,648
+Okay, you need to choose, you need to apply different distance metrics to see whether or not you can end up with a better clustering result.
+
+995
+02:29:31,648 --> 02:29:45,908
+Okay. And so therefore, in order to see the actual clustering result is the best clustering result. So you need to apply clustering algorithms from different categories.
+
+996
+02:29:45,907 --> 02:29:58,027
+Now, in your project, if you choose to do a clustering on a data set, which is a data, web data data sets.
+
+997
+02:29:58,027 --> 02:30:07,407
+So I also expect you to experiment by using different types of clustering algorithms.
+
+998
+02:30:07,827 --> 02:30:17,927
+And by using different types of distance metrics and evaluate the results of the clustering by using different metrics.
+
+999
+02:30:23,347 --> 02:30:29,887
+Now, after you find the clusters, you need to represent the clusters.
+
+1000
+02:30:31,187 --> 02:30:31,867
+Right.
+
+1001
+02:30:32,127 --> 02:30:34,427
+That's another thing.
+
+1002
+02:30:34,648 --> 02:30:38,547
+So let's say you find a clustering result like this.
+
+1003
+02:30:39,087 --> 02:30:39,427
+Okay.
+
+1004
+02:30:41,927 --> 02:30:45,087
+So you find clustering result like this.
+
+1005
+02:30:45,087 --> 02:30:54,127
+you need to represent it because we do not keep all the data items in the memory.
+
+1006
+02:30:54,868 --> 02:30:59,068
+We know that there are two clusters in the data set,
+
+1007
+02:30:59,248 --> 02:31:02,087
+and we do not keep all the data items in memory.
+
+1008
+02:31:02,547 --> 02:31:06,547
+So therefore, we need to have a way to represent this cluster.
+
+1009
+02:31:06,548 --> 02:31:16,307
+We should be able to define this particular cluster so that we can show it to the user.
+
+1010
+02:31:17,167 --> 02:31:18,487
+How do you do that?
+
+1011
+02:31:18,947 --> 02:31:27,428
+So one thing that you can do, you can use the centroid of each cluster and the radius of that cluster.
+
+1012
+02:31:28,608 --> 02:31:33,847
+So the centroid point and the radius, and that can represent the cluster.
+
+1013
+02:31:33,847 --> 02:31:53,827
+Okay. Another thing, for example, you can use the, for each of the axes, for each of the dimensions of the data points, you can use the border points.
+
+1014
+02:31:53,827 --> 02:31:58,947
+for the values.
+
+1015
+02:31:58,947 --> 02:32:02,347
+For example, so this is a two-dimensional space,
+
+1016
+02:32:02,807 --> 02:32:06,107
+which means that every data point here,
+
+1017
+02:32:06,267 --> 02:32:07,987
+so I have three data points here,
+
+1018
+02:32:08,447 --> 02:32:13,807
+every data point has both X and Y values.
+
+1019
+02:32:14,527 --> 02:32:17,427
+And obviously, after doing the clusters,
+
+1020
+02:32:17,847 --> 02:32:19,027
+clustering algorithm,
+
+1021
+02:32:19,187 --> 02:32:22,167
+so you see that I ended up with three clusters.
+
+1022
+02:32:22,167 --> 02:32:35,807
+And in order to represent the first cluster, you see that I'm saying that for this particular cluster, for every data point has a X axis value less than two.
+
+1023
+02:32:36,648 --> 02:32:46,267
+And for this cluster, every data point in this cluster has X values bigger than two and Y values bigger than 1.5.
+
+1024
+02:32:46,267 --> 02:33:05,047
+So you see that in order to represent a cluster, I can either use the centroid and the radius, or I can use the border points for the attribute values in order to represent these clusters.
+
+1025
+02:33:05,047 --> 02:33:20,568
+So remember, we do not keep all the data items of a cluster in the memory. We will only use information about the clusters that will represent available clusters in the dataset.
+
+1026
+02:33:20,568 --> 02:33:41,267
+Okay, now, sometimes we might, when we represent the clusters, we might say that, so the highly frequent element in the data sets, we can use the highly frequently appearing element as the representative of the data sets.
+
+1027
+02:33:41,267 --> 02:34:09,887
+Sometimes we will use, when we do the text clustering, if we have, for example, 100 documents, and we may do the text clustering, and if we, let's say, find three different clusters in the 100 document document set, in that case, for each of these three clusters, when we represent it, we will look at the highly frequent words that appear in those clusters.
+
+1028
+02:34:09,887 --> 02:34:17,567
+okay and those frequent words will be the representative of of those clusters
+
+1029
+02:34:20,244 --> 02:34:32,423
+Now, clustering for different shapes, as you see, I have shapes different than elliptic shapes or round shapes.
+
+1030
+02:34:33,423 --> 02:34:44,703
+So I can apply another type of algorithm, which I will call hierarchical clustering algorithm, in order to find these shapes.
+
+1031
+02:34:44,703 --> 02:34:47,363
+And this is different than the k-means algorithm.
+
+1032
+02:34:47,363 --> 02:35:08,203
+I will cover this in the next lecture. Today, I want to stop here. And so currently, I'm at the fourth chapter. So next lecture, I'm going to finish the unsupervised learning by talking about hierarchical clustering.
+
+1033
+02:35:08,203 --> 02:35:12,604
+and then I will move to chapter six, which is information retrieval and web search.
+
+1034
+02:35:13,264 --> 02:35:16,464
+Now, this chapter is the web content mining chapter.
+
+1035
+02:35:16,943 --> 02:35:20,284
+Okay, here we will talk content mining,
+
+1036
+02:35:20,284 --> 02:35:25,343
+and then I will move to link web structure mining,
+
+1037
+02:35:25,644 --> 02:35:33,223
+which is the network analysis and link analysis.
+
+1038
+02:35:34,083 --> 02:35:37,583
+And then I will move on to web crawling,
+
+1039
+02:35:37,583 --> 02:35:44,943
+how we crawl the data and i will continue all the way to web usage mining okay now what i would like
+
+1040
+02:35:44,943 --> 02:35:54,143
+to do is i would like to remind you that next week i expect you to think of a project proposal and i
+
+1041
+02:35:54,143 --> 02:36:01,023
+i need i need you to tell me next week i need you to give me a project proposal with one page
+
+1042
+02:36:01,824 --> 02:36:09,184
+where you need to identify the members of your group your group can only have maximum two people
+
+1043
+02:36:09,184 --> 02:36:15,343
+you can do it by yourself or you can have a friend classmate that you can work on this project
+
+1044
+02:36:17,263 --> 02:36:24,464
+now you need to uh i want what i want you to do for the rest of the class there will be two main
+
+1045
+02:36:24,463 --> 02:36:33,383
+topics. So one of them is web usage mining. One of them is web content mining. And the other,
+
+1046
+02:36:33,583 --> 02:36:41,163
+another one is web link analysis, web structure mining, and also so web crawlers. Okay. Now you
+
+1047
+02:36:41,163 --> 02:36:49,744
+can, and these, these four different, if we have time, so we will talk also about opinion mining
+
+1048
+02:36:49,744 --> 02:36:52,523
+and sentiment analysis, there are four or five topics.
+
+1049
+02:36:53,383 --> 02:36:57,984
+They are using association rule mining, sequential pattern mining,
+
+1050
+02:36:58,484 --> 02:37:01,264
+supervised learning, and unsupervised learning in them.
+
+1051
+02:37:01,723 --> 02:37:07,324
+We are applying these techniques and also some other algorithms on web data.
+
+1052
+02:37:08,044 --> 02:37:16,964
+So what I want you to do, I want you to decide,
+
+1053
+02:37:16,964 --> 02:37:28,324
+Even though you don't know some of the algorithms that we are going to cover here, at least you know some of the basic algorithms that we have learned so far.
+
+1054
+02:37:28,324 --> 02:37:39,044
+And so you can use these algorithms, you can utilize these algorithms on different types of web data mining categories.
+
+1055
+02:37:50,523 --> 02:38:03,663
+And I want you to come up with one page project proposal that tells me why do you choose this idea, why it is important.
+
+1056
+02:38:03,663 --> 02:38:08,023
+and so exactly what are you proposing?
+
+1057
+02:38:08,523 --> 02:38:11,544
+From where are you going to use the data sets?
+
+1058
+02:38:11,684 --> 02:38:13,803
+What kind of data sets that you are going to use?
+
+1059
+02:38:14,803 --> 02:38:18,104
+And how are you going to evaluate your idea?
+
+1060
+02:38:18,528 --> 02:38:48,507
+Okay, you will write code and you will you need to evaluate your project. Okay. And so what is the timeline? Okay, I want you to tell so I will spend one week to learn more about this topic, I will use three weeks or four weeks to implement it. I will use two or three weeks in order to evaluate your project.
+
+1061
+02:38:48,528 --> 02:39:16,907
+evaluate its performance and write report. I want you to give me the timeline as well. And also in your project proposal format, there should be also the members of your group. Okay. Now, you might, I will also post this. So there are some example ideas that you can
+
+1062
+02:39:18,528 --> 02:39:47,748
+use. You could write a crawler, you could do a content, you can do clustering on the document sets that you extract from the web, or you can do a supervised learning application that will learn from the
+
+1063
+02:39:47,748 --> 02:40:11,208
+user data. For example, so I'll show you another example. So one of the previous students that did that, for example, so what they did is, as you see, so they collected URLs, as you see.
+
+1064
+02:40:11,208 --> 02:40:37,067
+so this is an example dynamic URL and they were able to find the label for each of the URLs okay and first they labeled it manually by themselves and then they applied so an algorithm that splits the parts of the URL just like this
+
+1065
+02:40:37,067 --> 02:41:07,047
+and they used a word to vec algorithm in order to map these words into a vector and on top of the vector what they did is that as you see they used word to vec one of the open source libraries in order to obtain the vector and on top of this vector for all the dynamic URLs they created vector
+
+1066
+02:41:07,067 --> 02:41:15,067
+each representing the dynamic URL and they applied clustering algorithms.
+
+1067
+02:41:15,067 --> 02:41:28,067
+As you see, they applied partition-based clustering algorithm and they also applied a hierarchical representative hierarchical clustering algorithm and they used different distance metrics.
+
+1068
+02:41:28,827 --> 02:41:35,967
+And based on that, they did the visualization of the resulting clusters.
+
+1069
+02:41:35,968 --> 02:41:59,667
+and they also measured their performance. Now these are fourth year students and they were able to also write a nice paper, Yasin and Ramazan. Now what I would like you to do, I would like you to think about a possible project idea and next week I want you to,
+
+1070
+02:41:59,667 --> 02:42:16,167
+so after I put my plan is next week to complete the unsupervised learning and if possible I want to cover as much as possible the chapter six and I then I will give you I will go
+
+1071
+02:42:19,347 --> 02:42:40,207
+over every project idea that you are going to prepare. Gelecek hafta arkadaşlar sırasıyla projelerinizi değerlendirelim. Eksiği olan projelere eklemeler yapacağım. Ya da arkadaşların tekrardan farklı bir proje fikri düşünmelerini isteyeceğim.
+
+1072
+02:42:40,207 --> 02:42:47,687
+ama gelecek hafta bir sayfalık project proposal formatı hazırlayıp getirmenizi istiyorum.
+
+1073
+02:42:47,687 --> 02:42:50,807
+Derste bunları beraber konuşacağız.
+
+1074
+02:42:54,708 --> 02:42:56,007
+Sorusu olan var mıdır?
+
+1075
+02:43:07,572 --> 02:43:10,951
+Hocam, proposal'ları göndermek için mail paylaşacak mısınız?
+
+1076
+02:43:12,751 --> 02:43:29,111
+Şöyle yapalım, ben mail paylaşacağım. Bunu da bu Project Proposal formatı, Project Ideas dokümanı, az önce size göstermiş olduğum Project Ideas dokümanı, bu sadece size fikir vermek için.
+
+1077
+02:43:29,111 --> 02:43:39,231
+ben bugün içerisinde Google Drive'a koyup sizlerle paylaşırım. Bunu da toplu e-mail gönderme tool'u üzerinden yaparım.
+
+1078
+02:43:41,331 --> 02:43:52,831
+Eğer sorusu olan olursa yani hocam ben tam olarak kafamda proje fikrini oluşturamadım, görüşebilir miyiz diyen olursa bana e-mail atsın.
+
+1079
+02:43:52,831 --> 02:43:57,231
+hemen bir Office Hour şey yapalım.
+
+1080
+02:43:57,331 --> 02:43:58,631
+Yine Zoom üzerinden yaparız.
+
+1081
+02:43:58,711 --> 02:44:00,891
+Ben size bir Zoom linki veririm.
+
+1082
+02:44:01,271 --> 02:44:02,752
+Onun üzerinden konuşuyor oluruz.
+
+1083
+02:44:02,752 --> 02:44:06,252
+Bir arkadaşınız Beyza Nur sormuş.
+
+1084
+02:44:07,131 --> 02:44:11,531
+Beyza Office Hour'ım bugün okula gitmem gerekiyor.
+
+1085
+02:44:11,671 --> 02:44:14,171
+Şu anda ben evden veriyorum şu anda dersi.
+
+1086
+02:44:15,752 --> 02:44:18,991
+Okula gittikten sonra öğleden sonra vaktim olacak.
+
+1087
+02:44:18,991 --> 02:44:30,112
+sen bana bir e-mail atabilirsen aktas.yıldız.tr'den bir hatırlat lütfen seninle bir ofis haro yapabiliriz.
+
+1088
+02:44:31,011 --> 02:44:39,591
+Diğer arkadaşlar için de yani öncelikle düşünün ondan sonra hani böyle bir fikrim var olur mu diye şey yapabilirsiniz.
+
+1089
+02:44:39,591 --> 02:44:47,572
+Ama dediğim gibi hani bu opinion mining çeptlerine bakın, web crawling çeptlerine bakın.
+
+1090
+02:44:48,991 --> 02:45:07,711
+ondan sonra link analizi çeptarına bir göz atın. Content mining çeptarına bir hızlıca göz atın. Bunların şu ana kadar öğrenmiş olduğunuz hani yöntemleri, algoritmaları web datası üzerinde şey yapacağız. Nedir web datası?
+
+1091
+02:45:22,951 --> 02:45:27,291
+onlar üzerinde ya da bir web crawling uygulaması yazabilirsiniz.
+
+1092
+02:45:27,291 --> 02:45:34,631
+İşte gerçek şey belli bir crawling algoritmasına dayalı olarak webten veri indiren.
+
+1093
+02:45:35,171 --> 02:45:37,931
+Hibrit bir search algoritması şeyi yapabilirsiniz.
+
+1094
+02:45:38,931 --> 02:45:52,291
+Yani sayfanız geri planda Bimax'den yahut da işte N11'den hepsi bu aradadan işte ne bileyim televizyonla ilgili bütün ürünleri çekip bunları böyle karşılaştık.
+
+1095
+02:45:52,292 --> 02:46:13,592
+listeleme şeklinde gösterebilir. Hani her ürün için yanına hepsi bu arada satılıyor. İşte N11'de satılıyor diye bir tane bilgi olur. Fiyatları olur. Ürüne tıkladığımızda ilgili sayfaya götürür. Hani böylesi bir hibrit olabilir. Geri planda sürekli crawling yapmış olursunuz.
+
+1096
+02:46:13,591 --> 02:46:27,851
+yani yapmanızı istediğim web data ile uğraşacaksınız. İsterseniz gerçek zamanlı olarak bunu veriyesiz crawl edip crawl ettiğiniz veri üzerinde bu bahsettiğim hibrid search gibi bir şey yapabilirsiniz.
+
+1097
+02:46:27,851 --> 02:46:38,551
+yahut da internette indirilmiş, hazırlanmış üzerinde algoritmaları çalıştırabileceğiniz web dataları var.
+
+1098
+02:46:38,551 --> 02:46:49,172
+Bu web datalarını kullanaraktan burada chapterlarda bahsedilen tipteki uygulamaları biz hocam geliştireceğiz diyebilirsiniz.
+
+1099
+02:46:50,592 --> 02:46:53,611
+Bunu da bugünden gelecek haftaya kadar düşünmenizi istiyorum.
+
+1100
+02:46:53,732 --> 02:46:57,691
+Gelecek hafta proposal'larınızın üzerinden gideceğiz.
+
+1101
+02:46:57,851 --> 02:47:27,832
+Thank you
+
+1102
+02:47:03,219 --> 02:47:24,999
+sorusu olan var mıdır arkadaşlar? Yoksa bugünlük şey yapalım, burada duralım dediğim gibi eğer hocam görüşebilir miyiz diyenler varsa benim okul e-mail adresime lütfen e-mail atsın. Bir tane şey yapalım, zoom toplantısı yapalım arkadaşlar.
+
+1103
+02:47:24,999 --> 02:47:42,900
+Bugünlük bu kadar. Gelecek hafta için dediğim gibi Unsupervised Learning'in kalan Hierarchical Clustering algoritmasını da konuşup ondan sonra da Chapter 6'e başlamayı düşünüyorum. Bir de sizin projelerinizi konuşmayı planlıyorum.
+
+1104
+02:47:46,579 --> 02:48:05,719
+Tamamdır arkadaşlar. Soru yok gibi. Chatten de ben yeni soru görmedim. Proje konusunda konuşabilir miyiz dendi. Onu da konuşmuş olduk. Okey. Kendinize iyi bakın. Gelecek hafta yine derse devam ediyoruz.
+
+1105
+02:48:06,239 --> 02:48:07,059
+İyi günler hocam.
+
+1106
+02:48:07,379 --> 02:48:08,159
+İyi günler arkadaşlar.

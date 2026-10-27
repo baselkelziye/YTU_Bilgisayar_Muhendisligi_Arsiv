@@ -223,6 +223,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1KJOrUtZvDwiccQprOmxQYl-NZYp-P90m?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Bilgiye Erişim ve Arama Motorları Ders Kayıtları Altyazıları](./Bilgiye%20Eri%C5%9Fim%20ve%20Arama%20Motorlar%C4%B1/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

@@ -1,0 +1,3679 @@
+1
+00:08:48,403 --> 00:08:49,483
+Arkadaşlar günaydın.
+
+2
+00:08:52,603 --> 00:08:54,763
+Sesim geliyorsa bir teyit eder misiniz lütfen?
+
+3
+00:09:03,251 --> 00:09:05,891
+Okey, geliyormuş
+
+4
+00:09:25,268 --> 00:09:25,647
+Okay
+
+5
+00:09:36,884 --> 00:10:02,644
+Derse kaldığımız yerden devam edelim. Bu arada ben iki bağlantıyla bağlanıyorum. Bir bağlantıda kameram açık, diğerinde sesim geliyor. Eğer beni de ekranda görmek istiyorsanız ona göre şey yapabilirsiniz. Diğer kamera görüntüsünü gönderdiğim ekranı da uygulama üzerinde göstertebilirsiniz.
+
+6
+00:10:02,644 --> 00:10:29,604
+Okay, I will go back to where I left from previous lecture. So we were studying the clustering topic. We discussed the k-means algorithm and we also talked about the representations of clusters.
+
+7
+00:10:29,603 --> 00:10:41,643
+clusters. Now we are going to talk about clustering, distance function, and cluster evaluation. Right after that, I will start with information retrieval chapter. Okay.
+
+8
+00:10:41,644 --> 00:10:45,483
+hierarchical clustering.
+
+9
+00:10:47,864 --> 00:11:01,343
+Now, so remember, in k-means clustering, k-means was based on a partition, k-means is a partition-based clustering,
+
+10
+00:11:01,343 --> 00:11:11,023
+which means that at the beginning of the algorithm, you have to tell k-means algorithm the number of clusters.
+
+11
+00:11:11,023 --> 00:11:29,023
+Okay. In addition to that, K-means algorithm has a weakness which cannot find non-elliptic or non-round shapes. Okay. If you have a shape like this.
+
+12
+00:11:29,023 --> 00:11:43,384
+Okay. If you, so let me, let me make sure that you can see my screen. Hold on for a second.
+
+13
+00:12:01,139 --> 00:12:11,499
+If you have a shape like this, K-means algorithm is not able to find the obvious clusters like you see here.
+
+14
+00:12:11,499 --> 00:12:19,799
+So normally, so you have one cluster here, another cluster that surrounds the inner one.
+
+15
+00:12:20,160 --> 00:12:28,779
+OK. But if you apply K-means algorithm, K-means algorithm will find these two clusters, which are not the ideal clusters.
+
+16
+00:12:28,779 --> 00:12:39,439
+okay so therefore so one thing that that is missing in k-means clustering is it cannot find
+
+17
+00:12:39,439 --> 00:12:46,579
+non-elliptic shapes like this one and you and the other weakness is that you have to tell
+
+18
+00:12:46,579 --> 00:12:54,479
+the number of clusters up front so that k-means can find those clusters okay
+
+19
+00:12:54,480 --> 00:13:06,580
+Okay. Hierarchical clustering is a solution to that. So it is another category of clustering.
+
+20
+00:13:06,579 --> 00:13:15,559
+Okay, so this clustering uses a data structure called Dendogram.
+
+21
+00:13:16,699 --> 00:13:27,319
+And this, by using this data structure, as you apply the clustering algorithm on top of data sets, you create the status structure.
+
+22
+00:13:27,459 --> 00:13:33,539
+And by using the status structure, you can find the available clusters in that data set.
+
+23
+00:13:33,540 --> 00:13:39,779
+Okay, now I will show you how the dendogram works.
+
+24
+00:13:41,820 --> 00:13:46,599
+But let's take a look at the types of hierarchical clustering.
+
+25
+00:13:48,040 --> 00:13:52,800
+Okay, so we have two types of hierarchical clustering.
+
+26
+00:13:53,020 --> 00:13:56,660
+One is bottom-up clustering, the other one top-down clustering.
+
+27
+00:13:57,059 --> 00:13:59,820
+Bottom-up is also known agglomerative clustering.
+
+28
+00:13:59,820 --> 00:14:11,380
+A-clustering starts from bottom, it goes all the way up, which means that it considers
+
+29
+00:14:11,380 --> 00:14:22,500
+every data item in the data sets as a cluster at the beginning and it merges these one-item
+
+30
+00:14:22,500 --> 00:14:32,100
+clusters and it continues like this all the way to stopping condition and the top-down clustering
+
+31
+00:14:32,100 --> 00:14:38,259
+is on the header hand it starts with the whole data sets and it goes all the way
+
+32
+00:14:40,100 --> 00:14:46,979
+all the way down to one item so we are going to cover a good native clustering because this is
+
+33
+00:14:46,979 --> 00:14:51,739
+is one of so widely used hierarchical clustering.
+
+34
+00:14:51,739 --> 00:14:53,459
+So there is one question, I guess.
+
+35
+00:14:53,459 --> 00:14:54,059
+Let's see.
+
+36
+00:14:59,339 --> 00:15:05,519
+I will go through your projects proposal
+
+37
+00:15:05,519 --> 00:15:07,300
+right after the lecture.
+
+38
+00:15:07,300 --> 00:15:10,779
+So given permitted the time, I will talk about your projects.
+
+39
+00:15:10,779 --> 00:15:11,319
+OK.
+
+40
+00:15:11,319 --> 00:15:16,979
+I received so many of you sent me the project proposals.
+
+41
+00:15:16,979 --> 00:15:21,259
+But first, I want to cover as much content as possible.
+
+42
+00:15:21,419 --> 00:15:24,440
+Then we can discuss your project proposals.
+
+43
+00:15:26,300 --> 00:15:34,339
+Okay, agglomative clustering is a popular hierarchical clustering algorithm.
+
+44
+00:15:34,899 --> 00:15:44,659
+Now, with this algorithm, so what we do, so let's work on an example that you can understand better.
+
+45
+00:15:44,659 --> 00:15:51,659
+Here is a dataset which is visualized on a two-dimensional space.
+
+46
+00:15:51,659 --> 00:15:57,659
+You see that we have five different data sets here.
+
+47
+00:15:57,659 --> 00:16:00,659
+Five different data items in our datasets.
+
+48
+00:16:01,364 --> 00:16:10,383
+Now, with this algorithm, what we are doing at the beginning, we are considering every data item as a cluster.
+
+49
+00:16:10,903 --> 00:16:17,884
+So we are saying that at the beginning of the algorithm, every data item will be a cluster, one item cluster.
+
+50
+00:16:18,683 --> 00:16:26,383
+And then we are going to calculate the distance between every possible clusters.
+
+51
+00:16:26,383 --> 00:16:35,903
+So we are going to calculate the distance between P1 and P2, P1 and P3, P1 and P4, P1 and P5.
+
+52
+00:16:36,343 --> 00:16:41,364
+Similarly, we'll do the same thing for P2, P2 and P3, PT and P4.
+
+53
+00:16:41,743 --> 00:16:50,103
+We'll continue doing this until we calculate the distance, pairwise distance, all possible pairwise distances.
+
+54
+00:16:50,103 --> 00:16:57,103
+Then we are going to merge the nearest possible clusters.
+
+55
+00:16:57,103 --> 00:17:07,103
+So at the beginning, in this particular case, it turns out that P1 and P2, they are the closest ones.
+
+56
+00:17:07,103 --> 00:17:16,103
+So therefore, I'm going to merge P1 and P2 together and I'm going to create another cluster, which has two item cluster.
+
+57
+00:17:16,103 --> 00:17:19,323
+you see that there is two item cluster.
+
+58
+00:17:19,904 --> 00:17:22,623
+And then now that I have one two item cluster
+
+59
+00:17:22,623 --> 00:17:25,063
+and three one item clusters,
+
+60
+00:17:25,063 --> 00:17:30,623
+I have this cluster, which I called one,
+
+61
+00:17:31,183 --> 00:17:34,444
+and I have P3 and I have P4 and I have P5.
+
+62
+00:17:34,944 --> 00:17:37,923
+Okay, then I'll do the same thing.
+
+63
+00:17:38,023 --> 00:17:41,983
+I'm going to calculate pairwise distances
+
+64
+00:17:41,983 --> 00:17:47,103
+between all possible pairs, okay?
+
+65
+00:17:47,443 --> 00:17:52,803
+Between one and P3, one and P4, one and P5, okay?
+
+66
+00:17:53,163 --> 00:17:56,663
+And do the same thing for P3 and P4, et cetera.
+
+67
+00:17:56,663 --> 00:18:02,403
+And then I will find the closest cluster again.
+
+68
+00:18:02,783 --> 00:18:03,923
+In this particular case,
+
+69
+00:18:04,023 --> 00:18:07,963
+it turns out that next closest cluster, P3 and P4.
+
+70
+00:18:08,503 --> 00:18:11,323
+And as you see, I'm going to merge them.
+
+71
+00:18:11,323 --> 00:18:17,463
+and I call this newly constructed two-item cluster as two.
+
+72
+00:18:18,243 --> 00:18:23,403
+Now, you see that as I iterate on the algorithm,
+
+73
+00:18:23,583 --> 00:18:26,203
+I also create this data structure in the memory,
+
+74
+00:18:26,443 --> 00:18:29,843
+which means that this algorithm uses a data structure
+
+75
+00:18:29,843 --> 00:18:38,203
+in order to run this clustering algorithm.
+
+76
+00:18:38,203 --> 00:18:42,243
+Okay, now I have two, two item clusters.
+
+77
+00:18:43,024 --> 00:18:49,084
+Okay, that's, this is the first one, and this is the second one, and I have one, one item cluster.
+
+78
+00:18:49,423 --> 00:18:58,323
+Okay, then I will calculate the distance between one and P3, one and two, and P3 and two.
+
+79
+00:18:58,584 --> 00:19:06,783
+Okay, and so once I do that, and then I will find the closest possible distance.
+
+80
+00:19:06,783 --> 00:19:16,244
+okay and which in in this case uh between one and p3 so one and p3 is the closest so therefore i'm
+
+81
+00:19:16,244 --> 00:19:22,664
+going to merge these uh together and i'm going to construct another cluster which i will call
+
+82
+00:19:22,664 --> 00:19:29,224
+three and finally this algorithm what it does is since it needs to construct the whole dendogram
+
+83
+00:19:29,224 --> 00:19:36,664
+tree so it's going to merge everything and create only one cluster okay now once you have the
+
+84
+00:19:36,664 --> 00:19:45,063
+dendrogram okay what you can do what we need to do so we are going to
+
+85
+00:19:46,184 --> 00:19:53,543
+starting from top all the way to bottom so we are going to look whether or not
+
+86
+00:19:53,543 --> 00:19:59,864
+So which clusters, at what stage the cluster
+
+87
+00:20:00,000 --> 00:20:06,799
+algorithm produces the best results. Okay, so we are going to look at this stage. In this stage,
+
+88
+00:20:06,799 --> 00:20:13,359
+for example, we have two clusters. One is this one and the second one this one. Okay,
+
+89
+00:20:13,359 --> 00:20:21,920
+so if I had two clusters and then I will apply the clustering evaluation algorithm which we will
+
+90
+00:20:21,920 --> 00:20:25,920
+We'll talk a little bit later.
+
+91
+00:20:25,920 --> 00:20:30,920
+So we talked at the beginning of the clustering chapter.
+
+92
+00:20:30,920 --> 00:20:34,919
+So there is one, intra-clustering,
+
+93
+00:20:34,919 --> 00:20:39,919
+intra-cluster distance metric.
+
+94
+00:20:39,919 --> 00:20:43,919
+There is another one, inter-cluster distance metric.
+
+95
+00:20:43,919 --> 00:20:51,919
+Okay. These will give us a quality value.
+
+96
+00:20:51,919 --> 00:20:57,919
+so which we can use whether or not this clustering is good or not. Okay, and then we will go to the
+
+97
+00:20:57,919 --> 00:21:07,919
+next stage and we will look at this stage. So in this particular stage we have one, two, three
+
+98
+00:21:07,919 --> 00:21:16,799
+clusters and then we will apply the same quality evaluation metric and find out if the clustering
+
+99
+00:21:16,799 --> 00:21:19,579
+at this stage is any better than the previous one.
+
+100
+00:21:19,879 --> 00:21:19,939
+Okay.
+
+101
+00:21:20,159 --> 00:21:23,939
+And this way from top to bottom, okay,
+
+102
+00:21:24,419 --> 00:21:29,499
+we will look at the different stages of the dendogram
+
+103
+00:21:29,499 --> 00:21:34,739
+and pick the one stage
+
+104
+00:21:34,739 --> 00:21:37,899
+which will give us the best clustering evaluation results.
+
+105
+00:21:38,159 --> 00:21:38,259
+Okay.
+
+106
+00:21:38,799 --> 00:21:41,199
+If this stage, as you see,
+
+107
+00:21:41,699 --> 00:21:44,699
+if this stage gives us the better quality,
+
+108
+00:21:44,699 --> 00:21:45,739
+then we will say, okay,
+
+109
+00:21:45,739 --> 00:21:53,739
+this is the finalizing clustering for the affirmative clustering algorithm.
+
+110
+00:21:56,059 --> 00:22:04,379
+Okay and so in this particular algorithm as you see so we take the data sets as an input okay and
+
+111
+00:22:04,379 --> 00:22:12,779
+then we make each data point in the data sets as a cluster and we compute all pairwise distances
+
+112
+00:22:12,779 --> 00:22:15,339
+and then we go into loop.
+
+113
+00:22:15,740 --> 00:22:20,459
+And we find two clusters that are nearest to each other.
+
+114
+00:22:20,660 --> 00:22:25,059
+We merge them together and form another cluster.
+
+115
+00:22:25,059 --> 00:22:33,619
+And then we compute the distance from the newly constructed cluster
+
+116
+00:22:33,619 --> 00:22:36,179
+to all possible other clusters.
+
+117
+00:22:36,559 --> 00:22:40,500
+And then we will go back to the beginning of the loop.
+
+118
+00:22:40,500 --> 00:22:48,440
+and then we will find, we will repeat the same thing, okay, until there is only one cluster left.
+
+119
+00:22:48,779 --> 00:22:53,619
+And so by the time we finish this for loop, we will construct the dendogram.
+
+120
+00:22:53,800 --> 00:22:59,979
+And by using the dendogram, we will also be able to find the best possible clustering algorithm.
+
+121
+00:23:00,500 --> 00:23:05,839
+So I'll, I'll, I'll just give you how to do, example of how to do that.
+
+122
+00:23:06,360 --> 00:23:06,639
+Okay.
+
+123
+00:23:06,639 --> 00:23:13,940
+and so this is the explanation of the pseudocode this one slide before is the explanation of the
+
+124
+00:23:13,940 --> 00:23:23,940
+pseudocode and here is our pseudocode okay now um as you see in the pseudocode you see that
+
+125
+00:23:23,940 --> 00:23:32,720
+we are finding um the pairwise distances between the one item clusters and okay so there there
+
+126
+00:23:32,720 --> 00:23:41,919
+needs to be a distance function which we can use in order to find the distance between the clusters.
+
+127
+00:23:42,559 --> 00:23:47,360
+The clusters could be one item clusters, two item clusters, three item clusters.
+
+128
+00:23:48,080 --> 00:23:56,080
+So we need to find the methodology to calculate the distance between multi-item clusters.
+
+129
+00:23:59,155 --> 00:24:12,036
+Now, there are different distance metrics. So one of them is single link, the other one complete link, and there is another one average link, and there is also centroid.
+
+130
+00:24:12,795 --> 00:24:21,215
+Now, all these are the variations of the distance metrics that we are going to use. So let us take a look at one by one.
+
+131
+00:24:21,215 --> 00:24:32,095
+okay single link method now with the single link method when you calculate the distance between the
+
+132
+00:24:32,095 --> 00:24:39,115
+two clusters what you're going to do so let's go back to this example now in this particular example
+
+133
+00:24:39,115 --> 00:24:48,315
+now so here you see that i have a cluster which is two item cluster which is one here and there is
+
+134
+00:24:48,315 --> 00:24:54,876
+one item cluster P3. Now if I wanted to calculate the distance between P3
+
+135
+00:24:54,876 --> 00:25:04,975
+and one here by using the single link distance metric, okay, now I need to calculate the distance
+
+136
+00:25:04,975 --> 00:25:13,596
+between the closest possible items between the two clusters, which means that from one,
+
+137
+00:25:13,595 --> 00:25:24,175
+cluster one so what is the closest possible data item p2 and p3 is already a one item cluster so
+
+138
+00:25:24,175 --> 00:25:32,435
+i need to calculate the distance between p2 and p3 okay now so let's take a look at another example
+
+139
+00:25:32,435 --> 00:25:40,915
+so here you see a three item cluster which includes p1 p2 p3 and you see here two item clusters
+
+140
+00:25:40,915 --> 00:25:49,675
+p4 and p5 now if i wanted to calculate the distance between three so this cluster number
+
+141
+00:25:49,675 --> 00:25:56,475
+three and cluster number two i need to pick the closest two items from two different clusters
+
+142
+00:25:56,475 --> 00:26:06,695
+in this particular case p2 and p5 okay these are the closest possible data items from two different
+
+143
+00:26:06,696 --> 00:26:14,275
+clusters okay and then if i calculate the distance between two p2 and p5 that will give me the
+
+144
+00:26:14,275 --> 00:26:23,835
+distance between these two clusters so this is the single link method okay and there is also a
+
+145
+00:26:23,835 --> 00:26:30,476
+complete link method in in the complete link method what we are going to do we are going to pick
+
+146
+00:26:30,475 --> 00:26:36,895
+the furthest possible data points from two different clusters.
+
+147
+00:26:36,895 --> 00:26:40,115
+So which in this case, P1 and P4,
+
+148
+00:26:40,455 --> 00:26:46,915
+they are the furthest possible two points from these two clusters.
+
+149
+00:26:47,435 --> 00:26:52,295
+And when I calculate the distance between the two of these clusters,
+
+150
+00:26:52,495 --> 00:26:54,395
+I will use P1 and P4.
+
+151
+00:26:55,395 --> 00:26:59,175
+So that's the complete link method.
+
+152
+00:27:00,475 --> 00:27:03,495
+And the third one is the average link.
+
+153
+00:27:03,895 --> 00:27:08,275
+So in this particular case, when you calculate the average link,
+
+154
+00:27:09,175 --> 00:27:14,835
+so if you have three item clusters in cluster three,
+
+155
+00:27:15,375 --> 00:27:18,235
+two item cluster in cluster number two,
+
+156
+00:27:18,235 --> 00:27:22,895
+if you wanted to calculate the distance between them,
+
+157
+00:27:23,255 --> 00:27:27,335
+what you need to do, you need to find all possible.
+
+158
+00:27:27,743 --> 00:27:35,363
+pairwise distances between two of these clusters. So here you have two data items. You need to
+
+159
+00:27:35,363 --> 00:27:43,723
+calculate the distances between P5 and P1, P5 and P2, P5 and P3. Similarly, calculate the distance
+
+160
+00:27:43,723 --> 00:27:53,303
+between P4 and P1, P4 and P2, P4 and P3. And then take the average of all of these distances.
+
+161
+00:27:53,303 --> 00:28:01,464
+Okay, that's the average link. Okay, that will also give you the distance metric between these two.
+
+162
+00:28:02,903 --> 00:28:08,223
+And there is also another one, which is centroid-based distance calculation.
+
+163
+00:28:08,643 --> 00:28:22,903
+In this particular case, you calculate the centroid point for this cluster, and you calculate the centroid points for this cluster, and then you measure the distance between the centroids.
+
+164
+00:28:22,903 --> 00:28:45,883
+Okay, that's another distance metric. Now, these distance metrics, so as you run the clustering algorithm, you need to pick the correct distance metric in order to produce the best clustering results.
+
+165
+00:28:45,883 --> 00:28:52,144
+but you don't know what is the perfect distance metric at the beginning.
+
+166
+00:28:52,504 --> 00:28:53,943
+So therefore what you need to do,
+
+167
+00:28:54,023 --> 00:28:59,403
+you need to try all possible distance metrics that you have on your data sets,
+
+168
+00:28:59,403 --> 00:29:05,223
+which means you need to run your algorithm for the first distance metrics
+
+169
+00:29:05,223 --> 00:29:07,863
+and come up with the clustering result.
+
+170
+00:29:08,503 --> 00:29:14,243
+And you need to run the algorithm for the second distance metric
+
+171
+00:29:14,243 --> 00:29:17,284
+and you will end up another clustering result.
+
+172
+00:29:17,864 --> 00:29:24,604
+And then you will compare the quality of the clustering results
+
+173
+00:29:24,604 --> 00:29:26,924
+from each of your tries,
+
+174
+00:29:27,623 --> 00:29:34,063
+which in turn will tell you which distance metric
+
+175
+00:29:34,063 --> 00:29:35,063
+that you should be using.
+
+176
+00:29:41,652 --> 00:29:43,652
+Okay?
+
+177
+00:29:47,380 --> 00:29:59,239
+So we have different distance functions. Obviously, single link method, average link method, and complete link method.
+
+178
+00:29:59,680 --> 00:30:05,560
+And they're telling you which data points that you should pick in order to find the distance.
+
+179
+00:30:05,560 --> 00:30:15,760
+OK, so we talked about the single link. It chooses the closest data points, complete link. It chooses the two furthest points, average link.
+
+180
+00:30:16,359 --> 00:30:22,439
+It takes the average of all possible pairwise distances between the data points in two clusters.
+
+181
+00:30:23,039 --> 00:30:27,420
+And centroid, it calculates the distance between the two clusters.
+
+182
+00:30:27,420 --> 00:30:39,320
+Okay, all these four different methods tells you which data points that you should be using in order to find the distance between two clusters.
+
+183
+00:30:39,859 --> 00:30:45,119
+But it does not tell you which distance function that you are going to use.
+
+184
+00:30:45,560 --> 00:30:50,240
+Okay, and there are different types of distance functions.
+
+185
+00:30:50,239 --> 00:30:58,699
+There is one for numeric data, okay, where the values of the attributes are real number.
+
+186
+00:30:59,419 --> 00:31:07,919
+And there is also distance functions for nominal data, where the values of attributes are categorical or discrete values.
+
+187
+00:31:08,740 --> 00:31:08,919
+Okay.
+
+188
+00:31:09,279 --> 00:31:13,740
+Now, let's take a look at some of the distance functions that we are using.
+
+189
+00:31:13,740 --> 00:31:28,140
+so this distance matrix that metric that you see here is the abstract version of many
+
+190
+00:31:28,140 --> 00:31:35,920
+different distance metrics so it's a generalized version of many distance metrics as you see
+
+191
+00:31:35,920 --> 00:31:38,820
+This is Minkowski distance metric.
+
+192
+00:31:39,820 --> 00:31:46,119
+And so we can specialize this distance metrics in different ways.
+
+193
+00:31:46,119 --> 00:31:55,939
+So if you put two in this particular case, if you put two instead of H, then it will give you the Euclidean distance metric.
+
+194
+00:31:56,260 --> 00:31:56,359
+Okay.
+
+195
+00:31:56,859 --> 00:32:01,159
+Euclidean distance metric is one of the commonly used distance metrics.
+
+196
+00:32:01,340 --> 00:32:03,460
+So in clustering algorithms.
+
+197
+00:32:03,460 --> 00:32:08,499
+and if you put one in that calculation
+
+198
+00:32:08,499 --> 00:32:12,700
+then that equation has a different name
+
+199
+00:32:12,700 --> 00:32:14,799
+it's called Manhattan distance
+
+200
+00:32:14,799 --> 00:32:19,279
+as you see it's the same metric
+
+201
+00:32:19,279 --> 00:32:22,400
+but you just put one instead of H
+
+202
+00:32:22,400 --> 00:32:24,680
+that gives you the Manhattan distance
+
+203
+00:32:24,680 --> 00:32:27,859
+and so if you want to give weights
+
+204
+00:32:27,859 --> 00:32:34,039
+to the differences to the Euclidean distance.
+
+205
+00:32:34,039 --> 00:32:40,039
+So then it becomes the Euclidean distance metric,
+
+206
+00:32:40,600 --> 00:32:42,219
+rated Euclidean distance metric.
+
+207
+00:32:43,219 --> 00:32:47,820
+And if you wanted to give more importance
+
+208
+00:32:47,820 --> 00:32:55,040
+on data points that are further apart in your calculation,
+
+209
+00:32:55,759 --> 00:33:05,279
+then you can use this computation. So as you see, you're taking the power of two of the
+
+210
+00:33:05,279 --> 00:33:13,759
+differences of the attributes for each data point. This is the case where you want to give
+
+211
+00:33:13,759 --> 00:33:16,119
+a bigger
+
+212
+00:33:16,119 --> 00:33:17,959
+rate on data points that are
+
+213
+00:33:17,959 --> 00:33:18,719
+further apart.
+
+214
+00:33:19,135 --> 00:33:46,476
+Okay. And so there is another distance metric that we use, Chebyshev distance metric. And if you want to say that two data points are different, if they are different on any of the attributes, as you see, one data item may have many dimensions or many attributes. So you need to compute the delta for each of the attributes.
+
+215
+00:33:46,476 --> 00:34:14,716
+okay and so you can take the maximum of these deltas and the maximum of these differences and assign it to the distance between these two data points. Now all these different distance metrics are can be used in clustering algorithms and usually these distance metrics are parameterized okay so let's go back to the algorithm again.
+
+216
+00:34:18,708 --> 00:34:46,307
+So as you see that here it says that compute all pairwise distances. Obviously this is pseudocode, but when you implement this, when you calculate the distance, okay, you can apply different distance computation strategy, single link, complete link, average link, centroid. Okay. And also in these, in one of, in each of these
+
+217
+00:34:46,307 --> 00:34:54,847
+and then you can choose a distance computation strategy. You can choose different types of distance metric.
+
+218
+00:34:55,687 --> 00:35:00,587
+Okay. Now you can choose single link metric and you can apply Chebyshev distance metric.
+
+219
+00:35:01,247 --> 00:35:06,647
+You can choose single link and then you can apply Euclidean distance metric. Okay.
+
+220
+00:35:06,647 --> 00:35:14,787
+So therefore, all of this should be parameterized. Okay. Do we know which one would give you the best results
+
+221
+00:35:14,787 --> 00:35:27,907
+So therefore we need to try different distance calculation strategy along with different distance metrics.
+
+222
+00:35:36,851 --> 00:35:57,612
+Now, all the distance metrics that I have shown you, Chebyshev distance, Squart, Euclidean distance, weighted Euclidean distance, Manhattan distance, Euclidean distance, all of them, they are applied on numerical data, where the values of the attributes of a data point are real number.
+
+223
+00:35:57,612 --> 00:36:11,112
+Okay. But in some cases, we might have data points that have attributes with binary values or categorial values.
+
+224
+00:36:11,572 --> 00:36:20,331
+Okay. So in this particular case, so we have a binary attribute in this particular case, gender is one of the attributes of the data point.
+
+225
+00:36:20,831 --> 00:36:25,432
+And so it could be male, female. Okay. So this is one example.
+
+226
+00:36:25,431 --> 00:36:35,011
+And so if this is the case, how can we calculate the distance between these two data points?
+
+227
+00:36:35,431 --> 00:36:38,271
+There are also distance metrics for that.
+
+228
+00:36:38,811 --> 00:36:50,331
+Now, in order to apply these distance metrics, we are going to be using a matrix called confusion matrix.
+
+229
+00:36:50,331 --> 00:36:59,511
+Confusion matrix is also being used in calculating the quality of the supervised learning algorithms.
+
+230
+00:36:59,871 --> 00:37:07,751
+But in this particular case, we are going to be using confusion matrix in calculating the value of the distance metric.
+
+231
+00:37:07,751 --> 00:37:20,211
+Okay. Now, the first distance metric that we are going to use for the binary attributes is the simple matching coefficient.
+
+232
+00:37:20,331 --> 00:37:27,571
+okay now so let's take a look at an example so that you can better understand now as you see
+
+233
+00:37:27,571 --> 00:37:37,091
+so we have two data points here and each data point has seven attributes so first one two
+
+234
+00:37:37,091 --> 00:37:42,871
+all the way to seven okay these are the attributes okay and you see the values of the attributes
+
+235
+00:37:42,871 --> 00:37:50,031
+is either one or zero okay and I have two data points and I would like to compute the distance
+
+236
+00:37:50,031 --> 00:37:57,331
+between these two by using the simple matching coefficient.
+
+237
+00:37:57,991 --> 00:37:58,031
+Okay.
+
+238
+00:37:58,451 --> 00:38:01,851
+Now, the simple matching coefficient simply tells you
+
+239
+00:38:01,851 --> 00:38:04,251
+that the total number of mismatches
+
+240
+00:38:04,251 --> 00:38:07,951
+divided by the total number of available attributes.
+
+241
+00:38:08,291 --> 00:38:09,551
+So let's go back here.
+
+242
+00:38:10,131 --> 00:38:13,711
+As you see, so this is my data point one,
+
+243
+00:38:13,771 --> 00:38:15,531
+and this is the data point two.
+
+244
+00:38:15,531 --> 00:38:28,491
+And you see that since this is the attributes have nominal values, so therefore I have 0 and 1 here and 0 and 1 here.
+
+245
+00:38:29,111 --> 00:38:40,191
+Now what I need to do, I need to count the number of the attributes that have both ones.
+
+246
+00:38:40,191 --> 00:38:42,051
+And I will write the number here.
+
+247
+00:38:42,051 --> 00:38:49,572
+the number of attributes that the first item has one and the second item has zero and I will write
+
+248
+00:38:49,572 --> 00:38:55,491
+the number here the number of attributes that the first data item zero and the second one has one
+
+249
+00:38:55,491 --> 00:39:02,072
+I will write the values here and the both of them are zero I will write the number here okay
+
+250
+00:39:02,072 --> 00:39:04,311
+now if you look at here
+
+251
+00:39:04,311 --> 00:39:34,291
+Thank you.
+
+252
+00:39:04,659 --> 00:39:25,959
+So B represents the mismatch. B and C represent the number of attributes that mismatch. So you see that the first data point zero, second data point one. Okay. And first data point one and second one zero. So that's also mismatch.
+
+253
+00:39:25,959 --> 00:39:30,959
+So which means that B plus C is the total number of mismatches.
+
+254
+00:39:31,719 --> 00:39:31,859
+Okay.
+
+255
+00:39:32,099 --> 00:39:38,179
+And if I divide this to A plus B plus C plus D,
+
+256
+00:39:38,319 --> 00:39:43,380
+this means that I'm going to divide this to total number of attributes.
+
+257
+00:39:44,159 --> 00:39:46,560
+And here is the equation for that.
+
+258
+00:39:46,819 --> 00:39:50,279
+So you see that simple coefficient,
+
+259
+00:39:50,279 --> 00:39:59,899
+simple matching coefficient is the proportion of mismatches of the values. So the nominator
+
+260
+00:39:59,899 --> 00:40:07,439
+has the total number of mismatched attributes. Denominator has the total number of attributes.
+
+261
+00:40:08,399 --> 00:40:15,240
+Okay. So therefore, if I give you two data points like this, and if I ask you to calculate
+
+262
+00:40:15,240 --> 00:40:21,740
+the distance between two of them by using simple matching coefficients. What you need to do,
+
+263
+00:40:21,740 --> 00:40:31,200
+you need to use the simple matching coefficient equation, and in the denominator, you need to
+
+264
+00:40:31,200 --> 00:40:36,740
+write the total number of mismatches in this particular case. So this is a mismatch, one and
+
+265
+00:40:36,739 --> 00:40:44,399
+zero that's one this is a mismatch one and zero that's two and this is a mismatch zero and one
+
+266
+00:40:44,399 --> 00:40:51,539
+that's three okay so therefore you have nominator as three and in the denominator that's the total
+
+267
+00:40:51,539 --> 00:40:58,779
+number of attributes so you have two four six seven so therefore seven three over seven that
+
+268
+00:40:58,779 --> 00:41:02,539
+gives you the simple matching coefficient value.
+
+269
+00:41:05,099 --> 00:41:05,939
+Okay.
+
+270
+00:41:06,419 --> 00:41:17,520
+Sometimes there may be some cases that attributes may have nominal values, but you will be also
+
+271
+00:41:17,520 --> 00:41:22,859
+told that one state represents, one state is more important than the other.
+
+272
+00:41:22,859 --> 00:41:33,100
+okay and then in this case for these binary attributes so which we are going to call for
+
+273
+00:41:33,100 --> 00:41:40,299
+this kind of binary attributes asymmetric binary attributes okay so in this particular case when we
+
+274
+00:41:40,299 --> 00:41:46,859
+calculate the distance between two data points that have asymmetric binary attributes so we are
+
+275
+00:41:46,859 --> 00:41:55,039
+going to use jacquard coefficient okay and jacquard coefficient distance metric is exactly the same
+
+276
+00:41:55,039 --> 00:42:01,339
+as simple matching coefficient but the only difference is that the in the denominator
+
+277
+00:42:01,339 --> 00:42:13,259
+so we don't count the unimportant state so we in this particular case one is more important than
+
+278
+00:42:13,259 --> 00:42:24,939
+the zero then so when I so therefore the case where both data items are zero so the case where
+
+279
+00:42:24,939 --> 00:42:30,939
+the both data the attribute value of both data items is zero in this particular case you see
+
+280
+00:42:30,939 --> 00:42:35,299
+I'm referring to d okay the value of d
+
+281
+00:42:35,731 --> 00:42:42,571
+So therefore, when we calculate the Jekyll coefficient in the denominator, we don't consider that.
+
+282
+00:42:42,571 --> 00:42:57,451
+We only add together, we sum all the attributes except the attribute, so where the attribute values 0 and 0.
+
+283
+00:42:57,992 --> 00:43:02,031
+Okay, so B plus C divided by A plus B plus C.
+
+284
+00:43:02,551 --> 00:43:04,131
+So what was the B plus C?
+
+285
+00:43:04,131 --> 00:43:11,412
+number of mismatch attributes. What was the A plus B plus C? All the attributes except
+
+286
+00:43:11,412 --> 00:43:21,231
+the one where the attribute value both zero and for the both data items are zero.
+
+287
+00:43:22,072 --> 00:43:30,111
+Okay. So if I wanted to use Jaccard's coefficient in this particular case,
+
+288
+00:43:30,111 --> 00:43:33,711
+in order to compute the distance between X1 and X2.
+
+289
+00:43:33,711 --> 00:43:36,851
+In this case, nominators will still be three
+
+290
+00:43:36,851 --> 00:43:39,031
+because in the nominator section,
+
+291
+00:43:39,571 --> 00:43:42,551
+we will have the number of mismatches divided by,
+
+292
+00:43:42,971 --> 00:43:45,651
+not the total of attributes instead.
+
+293
+00:43:47,011 --> 00:43:49,631
+So we were not going to count the case
+
+294
+00:43:49,631 --> 00:43:52,631
+where both the values of the attributes are zero.
+
+295
+00:43:53,031 --> 00:43:55,171
+We are going to calculate compute.
+
+296
+00:43:55,171 --> 00:44:04,071
+we are considered all attributes except the one which where the attribute values both zero.
+
+297
+00:44:04,211 --> 00:44:07,211
+So therefore in the denominator I would have six.
+
+298
+00:44:07,851 --> 00:44:07,991
+Okay.
+
+299
+00:44:08,511 --> 00:44:10,151
+Three over six for the what?
+
+300
+00:44:11,071 --> 00:44:14,691
+Distance metric for the Jaccard coefficient distance metric.
+
+301
+00:44:15,331 --> 00:44:15,451
+Okay.
+
+302
+00:44:18,091 --> 00:44:24,971
+Now there may also be cases where the values of the attributes are nominal.
+
+303
+00:44:25,171 --> 00:44:33,451
+attributes. Okay. Now in this particular case, so, so let's say the value of an attribute,
+
+304
+00:44:33,451 --> 00:44:40,911
+it could be a weekday. Okay. Monday, Tuesday, Wednesday, all the way to Sunday. Okay. And it
+
+305
+00:44:40,911 --> 00:44:51,011
+could be, for example, the color. So green, red, yellow, all these are attributes with nominal
+
+306
+00:44:51,011 --> 00:44:59,032
+values, okay, categorical values. So if you have attributes like this and if you want to compare
+
+307
+00:44:59,032 --> 00:45:06,051
+the distance between the two data items which has nominal attributes, then in this case you can use
+
+308
+00:45:06,051 --> 00:45:14,291
+again the simple matching coefficient for the nominal values. So just like the
+
+309
+00:45:14,291 --> 00:45:21,092
+binary attributes, in the nominal attributes, in the nominator section, you will have the number
+
+310
+00:45:21,092 --> 00:45:28,931
+of mismatches divided by total number of attributes. Okay, R refers to the total number of attributes,
+
+311
+00:45:29,612 --> 00:45:37,892
+Q refers to the number of matches, so R minus Q will give you the number of mismatches
+
+312
+00:45:37,891 --> 00:45:44,711
+divided by the total number of attributes, which means that it is similar to this equation.
+
+313
+00:45:44,711 --> 00:45:45,231
+Okay.
+
+314
+00:45:45,811 --> 00:45:51,311
+The number of mismatches divided by the total number of attributes is the same thing.
+
+315
+00:45:51,591 --> 00:45:58,551
+But this time we are doing this for the nominal attributes, attributes which has more than two states.
+
+316
+00:46:02,483 --> 00:46:02,963
+Okay.
+
+317
+00:46:04,143 --> 00:46:07,884
+Now, we also have distance functions for text documents.
+
+318
+00:46:08,303 --> 00:46:14,763
+And so, in the next lectures, so we are going to talk about this a lot.
+
+319
+00:46:14,763 --> 00:46:21,683
+We are going to compare the distance between the documents and the queries, for example.
+
+320
+00:46:22,584 --> 00:46:29,443
+And in order to do that, we need to first convert the documents into vectors.
+
+321
+00:46:30,143 --> 00:46:30,283
+Okay.
+
+322
+00:46:30,283 --> 00:46:36,623
+We will talk about how we are going to convert a document to a vector.
+
+323
+00:46:36,923 --> 00:46:43,303
+But let's just consider that we are able to convert a document to a vector
+
+324
+00:46:43,303 --> 00:46:46,303
+by using a method called bag of words.
+
+325
+00:46:47,563 --> 00:46:51,923
+And in this particular case, I have two different vectors.
+
+326
+00:46:51,923 --> 00:46:57,524
+And one, for example, belongs to the document number one,
+
+327
+00:46:57,523 --> 00:47:00,643
+and the second belongs to the document number two.
+
+328
+00:47:01,843 --> 00:47:05,703
+And since I represented both documents as a vector,
+
+329
+00:47:05,703 --> 00:47:09,543
+now I need to compute the distance between them.
+
+330
+00:47:09,543 --> 00:47:10,803
+In this particular case,
+
+331
+00:47:10,803 --> 00:47:13,943
+I can use the cosine similarity metric.
+
+332
+00:47:13,943 --> 00:47:16,704
+Because cosine similarity is a metric
+
+333
+00:47:16,704 --> 00:47:19,263
+that can be used to calculate the distance
+
+334
+00:47:19,263 --> 00:47:20,823
+between two vectors.
+
+335
+00:47:20,823 --> 00:47:39,303
+Okay. And I will go into details of this in the next chapter. But for you, just for you to know right now is that it's a distance metric that is being used for calculating distance between the documents.
+
+336
+00:47:39,303 --> 00:47:46,463
+Now, you have seen a number of different distance functions.
+
+337
+00:47:47,463 --> 00:47:56,723
+So these distance functions are in Euclidean space or in real numbers space.
+
+338
+00:47:57,064 --> 00:48:04,123
+They can compute the distances between data points where the values of the attributes are real numbers.
+
+339
+00:48:04,123 --> 00:48:15,403
+You have seen the distance metrics when you have the attribute values as binary attributes.
+
+340
+00:48:16,004 --> 00:48:26,263
+So if you have data points where the data points have binary attributes, you have seen two different distance metrics.
+
+341
+00:48:26,263 --> 00:48:39,004
+And I also showed you a distance metric where you have data points where the attributes of the data points have nominal attributes.
+
+342
+00:48:39,963 --> 00:48:40,004
+Okay.
+
+343
+00:48:40,584 --> 00:48:50,603
+And so at last, I also gave you another similarity function, cosine similarity, where you have to calculate the distance metric between two documents.
+
+344
+00:48:51,523 --> 00:48:51,743
+Okay.
+
+345
+00:48:51,743 --> 00:48:57,983
+Now, the distance metric and distance calculation strategies.
+
+346
+00:48:59,023 --> 00:49:08,223
+So you need to, when you do the clustering algorithm, you need to try a different combination
+
+347
+00:49:08,223 --> 00:49:12,943
+of these in order to find the best possible clustering result.
+
+348
+00:49:16,463 --> 00:49:19,583
+Now, which clustering algorithm that you should choose?
+
+349
+00:49:19,583 --> 00:49:27,263
+in order to answer this question you need to have a clustering evaluation method okay so what is a
+
+350
+00:49:28,143 --> 00:49:32,943
+clustering evaluation method okay so one clustering evaluation method is
+
+351
+00:49:35,903 --> 00:49:40,863
+i have shown it before inter-cluster
+
+352
+00:49:40,863 --> 00:49:51,783
+distance metric and inter-cluster distance metric. Okay. And so these distance metrics basically
+
+353
+00:49:51,783 --> 00:49:59,763
+is used in order to give you the compactness and isolation of the clusters. Okay. Now,
+
+354
+00:50:00,755 --> 00:50:17,895
+If you calculate the inter-cluster distance, you are going to calculate the distance between all possible data items in that cluster.
+
+355
+00:50:17,895 --> 00:50:20,635
+And that will give you a number.
+
+356
+00:50:21,495 --> 00:50:28,575
+And you need to do this for all possible clusters in that clustering result.
+
+357
+00:50:28,575 --> 00:50:41,296
+And also inter-cluster distance. And this time you need to compute the distance between all possible clusters in your clustering result.
+
+358
+00:50:41,296 --> 00:50:54,915
+Okay. Now, so this will give you a inter-cluster will give you a value which will represent the compactness of that cluster.
+
+359
+00:50:56,055 --> 00:51:06,215
+Inter-cluster distance will give you a value which will be representative of how isolate those clusters are in your clustering result.
+
+360
+00:51:06,215 --> 00:51:28,595
+Okay. So therefore, if you don't know anything else about the data items, so you can use these two different metrics. Okay. But if you already have a ground truth data, which means that if you already know which data items belong to which clusters.
+
+361
+00:51:28,595 --> 00:51:45,155
+In that case, by using that label, you can also compute the clustering evaluation by using different metrics such as entropy, purity, precision, recall, and f-score.
+
+362
+00:51:46,055 --> 00:51:52,575
+Usually, in clustering algorithms, in clustering problems, we don't have the labeled data.
+
+363
+00:51:52,575 --> 00:51:58,435
+So we don't know up front which data item belongs to which cluster.
+
+364
+00:51:58,595 --> 00:52:10,935
+So, therefore, usually we have to use this intercluster and intercluster distance calculation metrics.
+
+365
+00:52:11,476 --> 00:52:17,455
+But in some cases, we might have the label data, we might have the ground truth data.
+
+366
+00:52:18,035 --> 00:52:23,895
+So, if that's the case, then we can use the metrics like entropy and purity.
+
+367
+00:52:24,836 --> 00:52:28,395
+Let's take a look at entropy and purity.
+
+368
+00:52:28,595 --> 00:52:31,916
+Here you see the entropy computation.
+
+369
+00:52:33,196 --> 00:52:36,375
+And so entropy equation.
+
+370
+00:52:36,755 --> 00:52:39,556
+And you see the purity equation.
+
+371
+00:52:39,556 --> 00:52:56,336
+I don't want you to memorize these equations, but I can explain to you how you can comment on the values of the entropy and the purity metrics.
+
+372
+00:52:56,336 --> 00:53:04,216
+So in this particular case, I have 900 data items in my data set, 900.
+
+373
+00:53:04,735 --> 00:53:17,336
+And I already have a ground truth data, which means that I already have a label for each of the data points, which means I know which data point should go to which cluster.
+
+374
+00:53:17,336 --> 00:53:28,515
+Okay, so in this particular case, so as you see, I apply my clustering algorithm and my clustering algorithm found three clusters.
+
+375
+00:53:29,255 --> 00:53:33,655
+Okay, and if I look at each of these clusters, you see that.
+
+376
+00:53:34,612 --> 00:53:50,591
+So in my data set, 300 of them belongs to the science label, 300 of them belongs to the sports, and 300 of them belongs to the politics.
+
+377
+00:53:50,591 --> 00:54:11,292
+Okay. Now, what would be the perfect clusters if the cluster number one includes 300 of the same data items, cluster number two, if it included the other 300, and the third one, you'd include the other 300.
+
+378
+00:54:11,292 --> 00:54:19,711
+And each of them, if they had the same labels, that would be the perfect ideal clustering result.
+
+379
+00:54:20,112 --> 00:54:23,031
+But that didn't work out that way.
+
+380
+00:54:23,271 --> 00:54:33,931
+So after I applied the clustering algorithm, you see that in the first cluster, 250 of them turned out to be in science group.
+
+381
+00:54:34,351 --> 00:54:38,211
+Three of them turned out to be sports and 10 in politics.
+
+382
+00:54:38,211 --> 00:54:57,851
+Okay, now let's take a look at the entropy values. Now the entropy is a value that indicates the uncertainty. Okay, if the uncertainty is high, then the value of entropy is big, is higher.
+
+383
+00:54:57,851 --> 00:55:06,692
+If the uncertainty is low, then the value of entropy would be lower.
+
+384
+00:55:07,051 --> 00:55:24,192
+So in this particular case, if you look at this, so here the uncertainty is low because the majority of the data points in this cluster belongs to one label.
+
+385
+00:55:24,191 --> 00:55:36,571
+OK, if you if you want to pick one item from this cluster randomly, most likely that that one item will come out from this label.
+
+386
+00:55:37,191 --> 00:55:42,471
+OK, you see that the majority of the data items in that cluster belongs to one label.
+
+387
+00:55:42,471 --> 00:55:53,112
+So therefore, if you look at the distribution of the data items here, so you would say that uncertainty is low.
+
+388
+00:55:53,112 --> 00:56:19,852
+How about purity? Purity means that the distribution of the data items is homogeneous in this cluster. So if the homogen distribution, if most of the data items have the same labels, then the value of purity will be high.
+
+389
+00:56:19,851 --> 00:56:26,791
+OK, so the more homogen it gets, the higher purity value it will have.
+
+390
+00:56:27,351 --> 00:56:34,631
+So so therefore, if you look at the first cluster, the purity value should be high and the entropy value should be low.
+
+391
+00:56:35,231 --> 00:56:37,951
+Now, let's take a look at the cluster number three.
+
+392
+00:56:37,951 --> 00:56:42,211
+As you see, the uncertainty here.
+
+393
+00:56:42,579 --> 00:57:06,000
+Okay, uncertainty here is bigger compared to cluster number one. Okay, because if you wanted to pick one item from cluster number three, so it could come from politics, it could come from here, from politics, and it could also come from sports.
+
+394
+00:57:06,000 --> 00:57:17,480
+OK, so the uncertainty level of the cluster number three is bigger than the cluster number one.
+
+395
+00:57:17,600 --> 00:57:20,379
+So therefore, the entropy value will be higher.
+
+396
+00:57:21,179 --> 00:57:22,559
+OK, how about the purity?
+
+397
+00:57:22,980 --> 00:57:29,879
+As you see, the distribution of these data items is not as homogeneous as the cluster number one.
+
+398
+00:57:29,879 --> 00:57:37,699
+you see that so one third of the data items belongs to sports label the rest the two third
+
+399
+00:57:37,699 --> 00:57:44,979
+of them belongs to the politics label so it's it's not as homogeneous as the cluster number one
+
+400
+00:57:44,979 --> 00:57:54,300
+so therefore the purity value will be low okay so this is how you can remember how to interpret
+
+401
+00:57:54,300 --> 00:57:57,940
+and comment on the values of entropy and purity.
+
+402
+00:57:58,499 --> 00:58:05,899
+Now, this is the case where I already have ground truth data in my clustering.
+
+403
+00:58:06,300 --> 00:58:09,480
+So I have only shown you entropy and purity,
+
+404
+00:58:09,660 --> 00:58:15,940
+and there are also precision, recall, and F-score metrics that you can use in clustering.
+
+405
+00:58:16,120 --> 00:58:20,840
+But this is the only case where you have the ground truth data.
+
+406
+00:58:20,840 --> 00:58:23,919
+If you don't have the ground truth data, what you need to do,
+
+407
+00:58:23,919 --> 00:58:27,959
+you need to calculate the inter-cluster distance,
+
+408
+00:58:28,679 --> 00:58:34,199
+which will tell you how compact your clustering result is,
+
+409
+00:58:34,599 --> 00:58:37,099
+and inter-cluster distance,
+
+410
+00:58:37,339 --> 00:58:43,639
+which will tell you how to isolate your clusters in your clustering result.
+
+411
+00:58:44,459 --> 00:58:44,699
+Okay?
+
+412
+00:58:47,019 --> 00:58:50,819
+I'm going to stop now, and I will give a 10-minute break,
+
+413
+00:58:50,819 --> 00:58:53,219
+and then I will continue with the next chapter.
+
+414
+00:58:59,572 --> 00:59:12,171
+Arkadaşlar şu anda saat 9'u 51 geçiyor. Bir 10 dakika ara verelim. Onu bir geçe, iki geçe tekrardan bir sonraki chapterdan devam edeceğiz.
+
+415
+01:14:28,180 --> 01:14:56,959
+Evet arkadaşlar başlayalım. Arada sorular da gelmiş. Sorulardan bir tanesi. Evet projelerle ilgili proje önerilerinin dersini birçok arkadaşınız gönderdi arkadaşlar. Proje önerilerinizi benim e-mail adresime gönderin. Bugün Information Retrieval chapter'ına başlamak istiyorum. Chapter number six.
+
+416
+01:14:58,180 --> 01:15:07,580
+zaman kaldığı ölçüde konuşuyor oluruz yahut da bir sonraki hafta konuşuyorlarız ama bugün proje önerilerinizi bana göndermeniz gerekiyor.
+
+417
+01:15:09,520 --> 01:15:19,520
+Lütfen göndermeyenler varsa şimdi e-mail ile göndersinler. Bugün dersten vakit kaldığı süre içerisinde önerilerinize bakıyor oluruz.
+
+418
+01:15:19,520 --> 01:15:26,260
+Yoksa ben offline'de bugün dersten sonra bakarım gelecek haftada sizlerle bunu konuşuyor oluruz.
+
+419
+01:15:29,652 --> 01:15:50,811
+Okay, now we are going to talk about, so let's switch back to another.
+
+420
+01:15:50,811 --> 01:15:55,572
+So this is the course website.
+
+421
+01:15:55,791 --> 01:15:58,691
+So I sent you a link to it.
+
+422
+01:15:59,652 --> 01:16:05,791
+So via OSIS, you should be able to see the class announcement.
+
+423
+01:16:06,111 --> 01:16:09,032
+You should be able to see the syllabus.
+
+424
+01:16:09,732 --> 01:16:16,372
+So we are now moving forward to chapter number six, information retrieval and web search.
+
+425
+01:16:17,012 --> 01:16:22,912
+And you should be able to see all the documents, all the teaching materials here.
+
+426
+01:16:22,911 --> 01:16:25,351
+so I put
+
+427
+01:16:25,351 --> 01:16:26,811
+you know
+
+428
+01:16:26,811 --> 01:16:30,531
+the slides that I haven't covered yet
+
+429
+01:16:30,531 --> 01:16:32,471
+I also put slides that
+
+430
+01:16:32,471 --> 01:16:33,271
+I have covered
+
+431
+01:16:33,271 --> 01:16:35,591
+and in addition to do that
+
+432
+01:16:35,591 --> 01:16:37,471
+so you should be able to
+
+433
+01:16:37,471 --> 01:16:39,391
+so you can always
+
+434
+01:16:39,391 --> 01:16:41,791
+use the teaching materials
+
+435
+01:16:41,791 --> 01:16:44,071
+on the textbook website
+
+436
+01:16:44,071 --> 01:16:45,851
+so remember the textbook
+
+437
+01:16:45,851 --> 01:16:48,191
+website has all the lecture slides
+
+438
+01:16:48,191 --> 01:16:49,092
+but
+
+439
+01:16:49,092 --> 01:16:51,271
+so these lecture slides
+
+440
+01:16:51,271 --> 01:16:56,031
+might be more comprehensive than that I have.
+
+441
+01:16:57,151 --> 01:17:01,671
+So you will be responsible for the teaching materials
+
+442
+01:17:01,671 --> 01:17:03,731
+that I'm putting on my website.
+
+443
+01:17:04,311 --> 01:17:07,911
+But for you to know, you can always go to the book website
+
+444
+01:17:07,911 --> 01:17:11,431
+and download the PDF versions of each chapter.
+
+445
+01:17:11,951 --> 01:17:14,891
+And you can also look at the lecture slides and et cetera.
+
+446
+01:17:14,891 --> 01:17:28,551
+but for now, I put all the slides in PDF format in the course website.
+
+447
+01:17:29,691 --> 01:17:29,731
+Okay.
+
+448
+01:17:31,012 --> 01:17:36,652
+Now, so let's go back to the topic that I'm going to cover.
+
+449
+01:17:39,611 --> 01:17:40,372
+Okay.
+
+450
+01:17:41,251 --> 01:17:44,551
+Now, information retrieval and web search.
+
+451
+01:17:44,551 --> 01:17:53,471
+Now, remember when we talked about web data mining, we said that web data mining has three main categories.
+
+452
+01:17:53,751 --> 01:18:01,211
+One was web content mining, the other one was structure mining, and the third one was web usage mining.
+
+453
+01:18:01,211 --> 01:18:11,291
+and the web content mining was dealing with the finding the uh finding the documents and also
+
+454
+01:18:11,291 --> 01:18:19,872
+indexing the documents and being doing search on the index documents and returning the search
+
+455
+01:18:19,872 --> 01:18:25,032
+results to the user okay now we are going to talk how you can
+
+456
+01:18:25,031 --> 01:18:37,671
+process the content of the documents in order to create the index and also how you can search the
+
+457
+01:18:37,671 --> 01:18:48,631
+index table by using the queries from the users okay that all that so is included in the web
+
+458
+01:18:48,631 --> 01:18:55,611
+content mining. Now in the next chapter later on, so we are going to talk about how we can use the
+
+459
+01:18:55,611 --> 01:19:02,191
+link structure between the documents in order to improve the search results. Okay.
+
+460
+01:19:02,608 --> 01:19:22,247
+And later in the last segment of the course, we are talking about how we can analyze the user website interactions, which means the log files, which are generated based on the user website interactions.
+
+461
+01:19:22,608 --> 01:19:28,487
+How we can analyze the log files in order to understand the user behavior on the website.
+
+462
+01:19:28,788 --> 01:19:30,427
+So that's the web usage mining.
+
+463
+01:19:30,427 --> 01:19:47,087
+Okay, now we are going into the topic of web content mining. And so the first chapter that we are going to talk is the information retrieval and web search in web content mining segment.
+
+464
+01:19:47,087 --> 01:19:57,328
+okay now so this this web content mining is is dealing with the mostly text mining
+
+465
+01:19:57,328 --> 01:20:06,067
+which means that we are mining we are doing data mining using the text documents okay and
+
+466
+01:20:06,067 --> 01:20:13,887
+so what we are going to do in web content mining is that we are going to process the text
+
+467
+01:20:13,887 --> 01:20:17,987
+so that we can apply search on the text.
+
+468
+01:20:18,667 --> 01:20:18,707
+Okay.
+
+469
+01:20:19,427 --> 01:20:22,608
+And in order to do that,
+
+470
+01:20:22,788 --> 01:20:25,788
+we are going to use information retrieval methods.
+
+471
+01:20:26,108 --> 01:20:26,667
+Okay.
+
+472
+01:20:26,667 --> 01:20:28,267
+In order to do the text mining,
+
+473
+01:20:28,627 --> 01:20:31,408
+you are going to use information retrieval methods.
+
+474
+01:20:32,487 --> 01:20:36,367
+And so therefore,
+
+475
+01:20:36,727 --> 01:20:41,048
+we first need to understand what information retrieval
+
+476
+01:20:41,047 --> 01:20:45,387
+and how it differs from the database retrieval.
+
+477
+01:20:47,867 --> 01:20:53,767
+Now, information retrieval is the study for finding the information
+
+478
+01:20:53,767 --> 01:20:56,567
+amongst the documents.
+
+479
+01:20:58,707 --> 01:21:06,007
+And so here in information retrieval, our data is unstructured format.
+
+480
+01:21:06,007 --> 01:21:21,108
+Okay. And so which means that the data that we have is the different text documents, PDF documents, Word documents, etc. And the query that we have is expressed as keywords. Okay.
+
+481
+01:21:21,108 --> 01:21:39,428
+So we have keyword or keyword groups, okay, as queries, and we apply these queries on top of these documents, and we are trying to find the matching documents to those queries, okay?
+
+482
+01:21:39,647 --> 01:21:42,188
+So that's the job of information retrieval.
+
+483
+01:21:42,188 --> 01:21:46,867
+So in information retrieval, we have unstructured documents.
+
+484
+01:21:47,648 --> 01:21:47,708
+Okay.
+
+485
+01:21:48,268 --> 01:21:53,768
+And we have, so as the queries, we have keyword or keyword, keyword groups.
+
+486
+01:21:54,068 --> 01:22:07,527
+And our job in information retrieval, how we can match the documents to the queries so that user can find what they're looking for.
+
+487
+01:22:08,468 --> 01:22:09,227
+Okay.
+
+488
+01:22:09,227 --> 01:22:20,207
+now information retrieval deals with acquisition of the data okay organization of the data
+
+489
+01:22:20,207 --> 01:22:29,367
+storage of the data and retrieval and distribution of information okay so in other words acquisition
+
+490
+01:22:29,367 --> 01:22:36,427
+of the data which means that how you are going to collect this data and bring it to a centralized
+
+491
+01:22:36,427 --> 01:22:44,187
+database okay the second thing how you are going to organize this data which means how you will make it
+
+492
+01:22:45,867 --> 01:22:47,227
+possible so that you can
+
+493
+01:22:47,583 --> 01:22:54,024
+do search on top of it, which means that creating an index table.
+
+494
+01:22:54,983 --> 01:23:03,883
+Storage, how you can store this large-scale index tables on a large number of nodes.
+
+495
+01:23:04,723 --> 01:23:12,043
+Retrieval, how you can apply the keywords on top of this index table.
+
+496
+01:23:12,043 --> 01:23:14,103
+And distribution of information.
+
+497
+01:23:14,103 --> 01:23:19,943
+So once you retrieve the results, how you can distribute these results to the user.
+
+498
+01:23:20,243 --> 01:23:30,163
+So information retrieval handles with all stages of basically doing search on the unstructured document sets.
+
+499
+01:23:30,163 --> 01:23:30,903
+Okay.
+
+500
+01:23:30,903 --> 01:23:51,563
+Okay. So therefore, so we are saying that so information retrieval is a part of computer science and it studies the retrieval of information from collection of documents.
+
+501
+01:23:51,563 --> 01:24:03,344
+OK, and these retrieve documents based on a given query satisfies the user information needs.
+
+502
+01:24:03,823 --> 01:24:12,283
+OK. And so in information retrieval, we have unstructured documents, we have text documents.
+
+503
+01:24:12,283 --> 01:24:22,444
+and so we have large number of those okay and so what we are trying to do is an information retrieval
+
+504
+01:24:22,444 --> 01:24:28,643
+we are trying to satisfy the information need for users and information retrieval deals with
+
+505
+01:24:28,643 --> 01:24:36,163
+how you can collect the data how you can store the data how you can apply the search algorithms
+
+506
+01:24:36,163 --> 01:24:40,843
+on the data and how you can distribute the data how you can find the data for the user okay
+
+507
+01:24:40,843 --> 01:24:58,843
+And there are different kinds of information retrieval engines. So I can show you some of it. So let's see. So let's share this to you.
+
+508
+01:24:58,843 --> 01:25:07,183
+For example, now this is, so this is an information retrieval engine for IEEE explore.
+
+509
+01:25:07,683 --> 01:25:09,323
+Okay, so you see that.
+
+510
+01:25:09,523 --> 01:25:25,643
+So this particular information retrieval engine provides a number of different capabilities to the user so that user can do a complex search on the data.
+
+511
+01:25:25,643 --> 01:25:28,964
+And here is another information retrieval engine.
+
+512
+01:25:29,143 --> 01:25:30,384
+This is for ACM.
+
+513
+01:25:30,903 --> 01:25:37,623
+And user can use this capability, user interface,
+
+514
+01:25:37,804 --> 01:25:44,843
+in order to create complex search queries on the document datasets.
+
+515
+01:25:45,563 --> 01:25:47,244
+Obviously, so we have the Google.
+
+516
+01:25:47,423 --> 01:25:49,944
+Google provides a simple user interface.
+
+517
+01:25:50,823 --> 01:25:53,923
+So there is also advanced version of it,
+
+518
+01:25:53,923 --> 01:26:00,304
+But usually we use the simple user interface in order to search the web.
+
+519
+01:26:00,483 --> 01:26:07,063
+So there are also different types of information retrieval engines for different sites.
+
+520
+01:26:17,140 --> 01:26:22,580
+So this is a slide that I have shown you previously.
+
+521
+01:26:23,179 --> 01:26:31,879
+So in information retrieval terminology, the data that we are dealing is the raw web pages.
+
+522
+01:26:32,600 --> 01:26:38,519
+And once you apply your query and the information retrieval engine shows you the top 10 results,
+
+523
+01:26:38,519 --> 01:26:42,240
+then the list of the results that you are seeing is the information.
+
+524
+01:26:42,240 --> 01:26:50,520
+okay and if you uh let's say click on each link and each link will create a separate uh
+
+525
+01:26:50,520 --> 01:26:59,439
+it will open up in another browser okay and so basically when you analyze the content of each
+
+526
+01:26:59,439 --> 01:27:08,699
+link uh so at the end of analyzing all the results from the list of the query you will gain some
+
+527
+01:27:08,699 --> 01:27:13,979
+knowledge from the search engine okay so information was the result of the query the
+
+528
+01:27:13,979 --> 01:27:21,519
+list of the results but the knowledge after you analyze the the result set that will create an
+
+529
+01:27:21,519 --> 01:27:30,679
+image in your brain so about the query okay that's the knowledge okay and if many people
+
+530
+01:27:30,679 --> 01:27:38,039
+have the same knowledge extracted from the information then it becomes the wisdom so
+
+531
+01:27:38,040 --> 01:27:45,620
+that's the common terminology that we are using in information retrieval. You see that information
+
+532
+01:27:45,620 --> 01:27:51,599
+retrieval, so we have the document set and we apply query on the document set, which in turn
+
+533
+01:27:51,599 --> 01:28:00,919
+will bring us the results. Okay. And you see that there is no structure on the document set and
+
+534
+01:28:00,919 --> 01:28:07,099
+there is no structure on the queries. Okay. It's just set of keywords. Okay. And the result set
+
+535
+01:28:07,099 --> 01:28:13,900
+could include the html documents pdf documents and the word documents so there is no structure in the
+
+536
+01:28:14,699 --> 01:28:20,540
+documents as well but in the database retrieval in data retrieval and databases
+
+537
+01:28:21,979 --> 01:28:30,379
+both the data in the data storage is structured because it is kept as in in tables every table
+
+538
+01:28:30,379 --> 01:28:39,579
+has attributes every attribute has its values data types okay and also the queries are also
+
+539
+01:28:39,579 --> 01:28:48,939
+structured so you have to follow a sql structure in order to construct your query so therefore
+
+540
+01:28:49,739 --> 01:28:55,659
+both the query and the data and also the result set they all are
+
+541
+01:28:55,659 --> 01:29:06,859
+structured. So therefore information retrieval differs from database retrieval in a huge way.
+
+542
+01:29:10,859 --> 01:29:18,779
+A widely very well known example of information retrieval is a web search. So therefore information
+
+543
+01:29:18,779 --> 01:29:31,419
+retrieval engines allows you to do search on the document sets similar to as a sub-branch of
+
+544
+01:29:31,419 --> 01:29:38,399
+so information retrieval web search is also doing that but the web search has unique properties
+
+545
+01:29:38,399 --> 01:29:43,000
+okay different than the information retrieval so first of all it's
+
+546
+01:29:43,000 --> 01:29:48,000
+in web search domain, you can exploit the hyperlinks
+
+547
+01:29:51,179 --> 01:29:53,960
+between the HTML documents.
+
+548
+01:29:53,960 --> 01:29:57,880
+Okay, in information retrieval domain,
+
+549
+01:29:57,880 --> 01:30:01,020
+all we have is the documents that do not point to each other.
+
+550
+01:30:01,020 --> 01:30:05,180
+But in web search domain, we have HTML documents
+
+551
+01:30:05,180 --> 01:30:09,419
+that have hyperlinks, which in turn point to each other.
+
+552
+01:30:09,419 --> 01:30:11,819
+So we can exploit those links.
+
+553
+01:30:11,819 --> 01:30:15,899
+Okay, and in...
+
+554
+01:30:15,956 --> 01:30:25,815
+Web search domain, collecting, storing, and updating documents are difficult, much more difficult, because we are dealing with a large number of documents.
+
+555
+01:30:27,075 --> 01:30:39,415
+And also, in web search domain, many people are doing search simultaneously on the web.
+
+556
+01:30:39,415 --> 01:30:47,055
+So therefore, we need to provide fast response time to the user.
+
+557
+01:30:47,675 --> 01:30:55,655
+So therefore, also we need to scale to a high number of users and provide them a search engine.
+
+558
+01:30:56,636 --> 01:30:59,215
+And also in web search, there is a problem.
+
+559
+01:30:59,816 --> 01:31:01,335
+There is a spam problem.
+
+560
+01:31:01,595 --> 01:31:07,895
+This is different than the email spam that you see in your email account.
+
+561
+01:31:07,895 --> 01:31:32,896
+Okay, so the spam problem in web domain is so when you have a website and if you add different keywords, which is not related with the topic of your web page, okay, which means that you are turning your web page into a spam web page.
+
+562
+01:31:32,895 --> 01:31:41,595
+which means that in order to show up in the high-ranking results,
+
+563
+01:31:41,855 --> 01:31:51,275
+you are adding some new keywords that are not representing the general topic of your website.
+
+564
+01:31:51,815 --> 01:31:53,095
+That's the spam.
+
+565
+01:31:53,095 --> 01:32:10,176
+So therefore, many web pages put different keywords in order to show up for different keyword-based search on the web.
+
+566
+01:32:10,176 --> 01:32:29,176
+So the search engines should be able to understand that those web pages, they have some additional keywords that are not relevant with the content of the web page.
+
+567
+01:32:29,735 --> 01:32:33,235
+And so they need to have a ways to deal with the spam problem.
+
+568
+01:32:33,235 --> 01:32:50,956
+Okay, so therefore, because of these unique properties, so web search, even though it, so you can consider web search as an information retrieval engine, but it has unique problems that needs to be handled.
+
+569
+01:32:51,415 --> 01:32:56,015
+So that makes it different than from information retrieval engines.
+
+570
+01:32:57,295 --> 01:32:57,976
+Okay.
+
+571
+01:32:57,975 --> 01:33:05,975
+now in information retrieval engines each information retrieval engine has a
+
+572
+01:33:05,975 --> 01:33:17,075
+information retrieval model okay now information retrieval model allows us to apply a given query
+
+573
+01:33:17,075 --> 01:33:25,895
+on the document data set okay now an information model defines four different things so one of them
+
+574
+01:33:25,896 --> 01:33:30,256
+is the information retrieval is using a query language.
+
+575
+01:33:31,836 --> 01:33:31,976
+Okay.
+
+576
+01:33:32,235 --> 01:33:35,655
+Now this query language, I will show you another slide
+
+577
+01:33:35,655 --> 01:33:37,256
+which will make it much more clear.
+
+578
+01:33:37,716 --> 01:33:40,295
+It could be a simple keywords.
+
+579
+01:33:40,795 --> 01:33:40,896
+Okay.
+
+580
+01:33:41,056 --> 01:33:42,776
+It could be a phrase.
+
+581
+01:33:43,015 --> 01:33:48,336
+It could be a natural language statement.
+
+582
+01:33:48,776 --> 01:33:48,896
+Okay.
+
+583
+01:33:49,496 --> 01:33:53,355
+Every information retrieval engine
+
+584
+01:33:53,355 --> 01:33:55,755
+provides different
+
+585
+01:33:56,159 --> 01:34:02,719
+user interfaces in order for you to create a query.
+
+586
+01:34:03,299 --> 01:34:03,359
+Okay.
+
+587
+01:34:03,779 --> 01:34:09,819
+So therefore, information retrieval model will define and will use a query language.
+
+588
+01:34:10,479 --> 01:34:10,559
+Okay.
+
+589
+01:34:10,739 --> 01:34:18,539
+And once you create your query by using user interfaces provided by the information retrieval model,
+
+590
+01:34:19,099 --> 01:34:24,459
+so that query will be represented internally.
+
+591
+01:34:24,459 --> 01:34:25,219
+Okay.
+
+592
+01:34:25,219 --> 01:34:30,520
+So therefore, there needs to be have an internal representation for the queries.
+
+593
+01:34:31,360 --> 01:34:40,119
+Similar to that, the document set which you will apply your query on should also have an internal representation.
+
+594
+01:34:41,619 --> 01:34:50,619
+And lastly, there needs to be a comparison function so that you can compare the query and the document.
+
+595
+01:34:50,619 --> 01:34:58,799
+and find out whether the query matches the documents in your document set.
+
+596
+01:34:58,799 --> 01:35:06,919
+So this comparison function is also here, a ranking function, which I will discuss later in the slide.
+
+597
+01:35:07,999 --> 01:35:17,240
+Now, so you can see how the operation of an information retrieval works here.
+
+598
+01:35:17,240 --> 01:35:21,619
+you see that a query is given by the user.
+
+599
+01:35:22,280 --> 01:35:26,979
+And the information retrieval is providing the user interfaces,
+
+600
+01:35:27,460 --> 01:35:30,920
+which is defined by the query language.
+
+601
+01:35:31,780 --> 01:35:35,680
+And by using the user interfaces, user enters the query.
+
+602
+01:35:36,340 --> 01:35:40,900
+And then the query, the information retrieval model
+
+603
+01:35:40,900 --> 01:35:44,240
+is using an internal representation for the query.
+
+604
+01:35:44,239 --> 01:35:49,239
+and it represents the query based on that representation.
+
+605
+01:35:50,579 --> 01:35:53,539
+And also every information retrieval engine
+
+606
+01:35:53,539 --> 01:35:55,519
+has a document collection, okay?
+
+607
+01:35:55,959 --> 01:35:59,139
+And all these documents are being represented
+
+608
+01:35:59,139 --> 01:36:01,599
+with a representation methodology.
+
+609
+01:36:02,379 --> 01:36:05,739
+Again, an information model provides
+
+610
+01:36:05,739 --> 01:36:07,039
+an internal representation.
+
+611
+01:36:08,059 --> 01:36:11,239
+And then information retrieval also provides
+
+612
+01:36:11,240 --> 01:36:17,480
+a comparison function which compares the query against the documents and finds out
+
+613
+01:36:17,480 --> 01:36:23,559
+which documents are matching to the query and it will show the results to the user okay
+
+614
+01:36:25,880 --> 01:36:32,200
+now this is another modular diagram for the information retrieval architecture you see
+
+615
+01:36:32,200 --> 01:36:38,920
+here the document collection and so we each information retrieval engine has a indexer
+
+616
+01:36:38,919 --> 01:36:47,399
+which process the documents and creates an index on top of this index and as a search can be
+
+617
+01:36:47,399 --> 01:37:02,039
+conducted and here user is constructing the user query and by using the user interfaces
+
+618
+01:37:02,039 --> 01:37:06,099
+provided by the information retrieval engine.
+
+619
+01:37:06,779 --> 01:37:10,859
+Here you see that user can create an executable query.
+
+620
+01:37:12,419 --> 01:37:12,719
+Okay.
+
+621
+01:37:13,199 --> 01:37:16,979
+An executable query will then be retrieved
+
+622
+01:37:16,979 --> 01:37:18,279
+by the retrieval system
+
+623
+01:37:18,279 --> 01:37:22,819
+and it will be converted into internal representation
+
+624
+01:37:22,819 --> 01:37:25,779
+and internal representation of the query
+
+625
+01:37:25,779 --> 01:37:30,439
+will be compared against the internal representation
+
+626
+01:37:30,439 --> 01:37:32,499
+of the document in the document index.
+
+627
+01:37:33,279 --> 01:37:33,339
+Okay.
+
+628
+01:37:33,839 --> 01:37:37,020
+And so based on the result retrieved
+
+629
+01:37:37,020 --> 01:37:38,779
+from the retrieval system,
+
+630
+01:37:38,919 --> 01:37:42,559
+the results will be shown to the user.
+
+631
+01:37:43,059 --> 01:37:43,199
+Okay.
+
+632
+01:37:43,419 --> 01:37:48,079
+So usually we show top 10 results to the user.
+
+633
+01:37:49,419 --> 01:37:49,760
+Okay.
+
+634
+01:37:49,760 --> 01:37:53,279
+So this is the general information retrieval architecture.
+
+635
+01:37:55,923 --> 01:38:13,923
+Now, I told you that in information retrieval, so we are defining, we need to define a query language and this query language is usually a part of the information retrieval model and there are different queries that can be done in information retrieval.
+
+636
+01:38:13,923 --> 01:38:43,684
+so you can have a keyword queries okay you can just enter the keywords so basically when we use Google we mostly use keyboard based queries okay we just enter a keyword a keyword group to the search engine and we ask the search engine to complete the search on behalf of us okay another type of query is the boolean query and we use here and or not
+
+637
+01:38:43,683 --> 01:38:50,403
+operators in order to apply the query. I just showed you an example. Let me show you again.
+
+638
+01:38:52,003 --> 01:39:02,883
+Here you see, so here is the IEEE version is much better. So you see, so this is an example of this.
+
+639
+01:39:02,883 --> 01:39:14,563
+as I said, you can conduct boolean queries by using the information retrieval engine.
+
+640
+01:39:15,604 --> 01:39:20,163
+And you see that so we have three operator here.
+
+641
+01:39:20,163 --> 01:39:30,083
+You can enter a search term and indicate that this search term will be searched within certain category of the document.
+
+642
+01:39:30,083 --> 01:39:37,143
+and you can use the Boolean operator and apply another search term, another category, etc.
+
+643
+01:39:37,143 --> 01:39:54,143
+So once you create your search, what it will do, it will tell you the executable query of your final query and it will then apply that executable query on top of the document index.
+
+644
+01:39:58,452 --> 01:40:06,691
+okay uh so we talked about the keyword based queries i have just shown you the boolean
+
+645
+01:40:07,571 --> 01:40:16,851
+queries in boolean queries the results will only show the documents that exactly match to the query
+
+646
+01:40:17,571 --> 01:40:25,171
+okay so which means that you are say that you are looking for web and mining and and not
+
+647
+01:40:25,171 --> 01:40:35,172
+for example text so in that case it will show you the results which includes web and mining
+
+648
+01:40:35,172 --> 01:40:45,132
+but not include the text okay so which means that it will only show the documents that exactly match
+
+649
+01:40:45,132 --> 01:40:51,571
+to the query, okay, that makes the query true.
+
+650
+01:40:52,192 --> 01:40:55,472
+So if it makes the query false,
+
+651
+01:40:55,591 --> 01:40:58,751
+then it will not be visible in the search results.
+
+652
+01:40:59,771 --> 01:41:02,411
+Now, the third type of query is the phrase queries.
+
+653
+01:41:02,411 --> 01:41:05,731
+Phrase queries, when you put the keyword groups
+
+654
+01:41:05,731 --> 01:41:09,911
+into quotation mark, then it becomes a phrase query, okay?
+
+655
+01:41:10,212 --> 01:41:11,812
+So in this particular case,
+
+656
+01:41:11,812 --> 01:41:16,812
+So you will be searching for a particular phrase.
+
+657
+01:41:17,191 --> 01:41:20,212
+So let's say, let's go back here.
+
+658
+01:41:21,972 --> 01:41:22,312
+Okay.
+
+659
+01:41:22,551 --> 01:41:27,532
+If I wanted to say, if I wanted to do a phrase query.
+
+660
+01:41:29,952 --> 01:41:30,712
+Okay.
+
+661
+01:41:31,051 --> 01:41:37,151
+If I do this, then this means that I am particularly looking for a phrase,
+
+662
+01:41:37,151 --> 01:41:40,871
+which includes web data and mining words.
+
+663
+01:41:40,871 --> 01:41:49,471
+one after the other exactly this way okay now this is phrase query sometimes some search engines
+
+664
+01:41:49,471 --> 01:41:58,452
+provides a proximity query in the proximity query option if you choose that which in that
+
+665
+01:41:58,452 --> 01:42:04,491
+particular case you don't need to use the quotation mark what it does is that it finds
+
+666
+01:42:04,492 --> 01:42:11,371
+documents where the web data and mining, the first word, second word, and the third word,
+
+667
+01:42:11,711 --> 01:42:19,731
+okay, they do not have to be next to each other, but they are expected to be in the proximity of
+
+668
+01:42:19,731 --> 01:42:26,952
+each other, okay, so which means that web data mining, they do not have to be exactly this way,
+
+669
+01:42:26,952 --> 01:42:34,672
+but it will show you the documents that where these three keywords will be close to each other
+
+670
+01:42:34,672 --> 01:42:41,631
+in the documents. Okay. So they could be in the same sentence. They could be in the same paragraph.
+
+671
+01:42:41,631 --> 01:42:47,931
+The closer that they are, then the document will get a higher rank in the ranking results.
+
+672
+01:42:48,631 --> 01:42:56,931
+Those types of queries called proximity search. Okay. Proximity queries. Okay. So phrase queries,
+
+673
+01:42:56,952 --> 01:43:04,151
+we put the query in the quotation mark okay and then we exactly look for that particular phrase
+
+674
+01:43:04,151 --> 01:43:13,571
+proximity queries we are looking for documents where the keywords are close in close distance
+
+675
+01:43:13,571 --> 01:43:22,452
+to each other they are in close proximity full document queries so if you use google image search
+
+676
+01:43:22,452 --> 01:43:28,851
+you know what full document queries is you basically give the image to the search engine
+
+677
+01:43:28,851 --> 01:43:36,491
+and it finds the similar images to you or if you give the whole document to the
+
+678
+01:43:37,052 --> 01:43:43,332
+search engine and it finds the documents that are relevant to it for example
+
+679
+01:43:43,331 --> 01:43:50,371
+there are some plagiarism websites such as authenticate
+
+680
+01:43:50,371 --> 01:43:57,711
+so what they are doing is they are asking you to give the full documents
+
+681
+01:43:58,095 --> 01:44:08,056
+And they're searching against their online database and they're finding the documents that match to the document that you are giving as a query.
+
+682
+01:44:08,056 --> 01:44:12,955
+So these search engines gets the full documents as a query.
+
+683
+01:44:13,775 --> 01:44:19,955
+And also, there are natural language questions that can be used as a query.
+
+684
+01:44:20,356 --> 01:44:23,115
+For example, you can try this on Google.
+
+685
+01:44:23,115 --> 01:44:29,295
+you can say who is Joe Biden, for example.
+
+686
+01:44:29,935 --> 01:44:34,956
+And not only it will list the results for your search,
+
+687
+01:44:35,055 --> 01:44:40,975
+it will also give you the answer as a result of the query.
+
+688
+01:44:41,415 --> 01:44:44,835
+So which means that current search engines,
+
+689
+01:44:45,035 --> 01:44:49,095
+they also process the natural language questions.
+
+690
+01:44:49,695 --> 01:44:52,195
+In particular, there are some search engines
+
+691
+01:44:52,195 --> 01:44:56,295
+that exactly takes the natural language questions.
+
+692
+01:44:56,475 --> 01:44:59,215
+One of them, for example, Ask Dr. Gius.
+
+693
+01:44:59,475 --> 01:45:01,095
+So that's a search engine.
+
+694
+01:45:01,095 --> 01:45:05,375
+And they take the natural language questions
+
+695
+01:45:05,375 --> 01:45:09,676
+and provide answer to it.
+
+696
+01:45:09,755 --> 01:45:12,715
+So these are different types of queries.
+
+697
+01:45:13,235 --> 01:45:17,475
+And the user interface for the information retrieval engine
+
+698
+01:45:17,475 --> 01:45:21,335
+provides these different user interfaces
+
+699
+01:45:21,335 --> 01:45:30,776
+so that you can enter your query. So as you see if we go back, information retrieval engine provides
+
+700
+01:45:30,776 --> 01:45:37,335
+a query language so you can use different types of queries and information retrieval engine will
+
+701
+01:45:37,335 --> 01:45:43,816
+create an executable query and after that after the executable query is constructed then it will be
+
+702
+01:45:44,775 --> 01:45:49,015
+converted into internal representation of the queries.
+
+703
+01:45:51,335 --> 01:46:04,595
+Okay. Now, information retrieval engines, as I said, they are using information retrieval models and information retrieval models. So we have different information retrieval models.
+
+704
+01:46:04,595 --> 01:46:14,095
+One of them is Boolean information retrieval model, the other one is vector space information model, another one is statistical language information retrieval model.
+
+705
+01:46:14,295 --> 01:46:26,536
+Now, all these models, they manage how a document and query are represented, which means that they define the representation of the query and the document.
+
+706
+01:46:27,256 --> 01:46:34,295
+And they also manage how the relevance of a document to a user query is defined.
+
+707
+01:46:34,595 --> 01:46:47,056
+Okay, which means that they also define a comparison function, which you can use in order to compare the query and the document and find the similarities.
+
+708
+01:46:47,956 --> 01:46:57,676
+Okay, now, today we are going to talk about Boolean information retrieval model and vector space information retrieval model.
+
+709
+01:46:57,676 --> 01:47:07,715
+now in boolean information retrieval model each document is represented as a bag of words okay so
+
+710
+01:47:07,715 --> 01:47:15,256
+we call this bag of words because uh from each document we are extracting keywords that will
+
+711
+01:47:15,256 --> 01:47:27,416
+represent that document let's say i have a document set d okay and i want to represent
+
+712
+01:47:27,415 --> 01:47:35,135
+each document as a bag of words. How do I do that? Okay. Now, first thing that I need to do
+
+713
+01:47:35,135 --> 01:47:45,135
+for all the documents in my document sets, I need to create a vocabulary set. So which means that
+
+714
+01:47:45,135 --> 01:47:51,115
+I will find all distinctive words.
+
+715
+01:47:51,536 --> 01:47:58,036
+in all documents in my document sets, and I will call them as a vocabulary.
+
+716
+01:47:58,955 --> 01:47:59,195
+Okay.
+
+717
+01:47:59,395 --> 01:48:03,315
+Which means that I will first go to the first document, parse it,
+
+718
+01:48:03,655 --> 01:48:08,395
+and I will find the most distinctive keywords from that document.
+
+719
+01:48:08,835 --> 01:48:10,615
+And I will go to the second document.
+
+720
+01:48:10,835 --> 01:48:16,536
+I will do the same thing, third, fourth, and all the way to do the last document.
+
+721
+01:48:16,536 --> 01:48:17,175
+Okay.
+
+722
+01:48:17,175 --> 01:48:23,415
+And the terms that I extract from these documents will be my vocabulary.
+
+723
+01:48:25,095 --> 01:48:31,495
+Now, I can use this vocabulary in order to represent one document in that document set.
+
+724
+01:48:31,595 --> 01:48:33,576
+Let's say document j.
+
+725
+01:48:34,955 --> 01:48:36,155
+Document sub j.
+
+726
+01:48:37,015 --> 01:48:41,875
+Now, I'm going to represent this document sub j as a vector.
+
+727
+01:48:43,375 --> 01:48:46,256
+Now, what will be the dimension of this vector?
+
+728
+01:48:46,255 --> 01:48:51,575
+it will be the size of this vocabulary set.
+
+729
+01:48:52,675 --> 01:48:52,815
+Okay.
+
+730
+01:48:53,015 --> 01:48:56,955
+Remember, the vocabulary set includes the words
+
+731
+01:48:56,955 --> 01:49:02,375
+which are distinctive words extracted from all documents
+
+732
+01:49:02,375 --> 01:49:03,756
+from the document set.
+
+733
+01:49:04,835 --> 01:49:10,475
+So therefore, I can say that the size of the vocabulary
+
+734
+01:49:10,475 --> 01:49:14,235
+is the size of my dimension.
+
+735
+01:49:14,815 --> 01:49:15,536
+Okay.
+
+736
+01:49:16,256 --> 01:49:25,896
+So therefore, I can create a vector where the total size is the same as the vocabulary size.
+
+737
+01:49:26,896 --> 01:49:41,436
+And for a particular document, let's say for documents sub j, I can say if the keyword is included in that document, then there will be a one here.
+
+738
+01:49:41,435 --> 01:49:49,515
+if that keyword is not included in that document, then there will be a zero.
+
+739
+01:49:50,315 --> 01:49:50,355
+Okay.
+
+740
+01:49:50,995 --> 01:49:56,235
+So therefore, I can create these vectors for each document in the document set.
+
+741
+01:49:56,855 --> 01:49:56,995
+Okay.
+
+742
+01:49:57,295 --> 01:50:02,735
+If a word appears in that document, there will be a one.
+
+743
+01:50:02,915 --> 01:50:04,275
+Otherwise, there will be a zero.
+
+744
+01:50:08,275 --> 01:50:37,995
+Okay, now in a Boolean information retrieval model. Okay, so we can use a comparison function. Okay. And so we need to obviously represent the queries as well as the documents. Okay. And here as we represented, so we need to
+
+745
+01:50:38,275 --> 01:50:50,856
+apply in Boolean information retrieval, we use Boolean operators in order to put together the keywords entered by the user.
+
+746
+01:50:50,856 --> 01:50:51,335
+Okay.
+
+747
+01:50:51,856 --> 01:51:05,095
+As I've shown you, IEEE and ACM provides these Boolean operators so that you can construct a query based on the Boolean information retrieval model.
+
+748
+01:51:05,375 --> 01:51:05,595
+Okay.
+
+749
+01:51:05,595 --> 01:51:19,216
+Now, if you construct a query like this, which means that you are looking for documents that makes this statement true.
+
+750
+01:51:20,216 --> 01:51:24,816
+So all the documents that makes the statement true will be in the results.
+
+751
+01:51:25,195 --> 01:51:27,856
+Otherwise, they won't be in the results.
+
+752
+01:51:27,856 --> 01:51:32,115
+So therefore, this type of retrieval is called exact match.
+
+753
+01:51:38,131 --> 01:51:44,391
+Now, another information retrieval model is vector space model.
+
+754
+01:51:44,971 --> 01:51:49,951
+In vector space model, we are still using the bag of words representation.
+
+755
+01:51:50,491 --> 01:51:58,291
+But this time, when we represent a document based on the vector space model,
+
+756
+01:51:58,291 --> 01:52:09,891
+instead of writing 1 and 0, okay, for the terms, we are going to write here a different value.
+
+757
+01:52:10,352 --> 01:52:19,331
+And this different value will be written based on a similarity metric, okay, which is another
+
+758
+01:52:19,332 --> 01:52:29,032
+metric which is TF-IDF. Now TF-IDF has two segments. One of them is term frequency.
+
+759
+01:52:30,431 --> 01:52:34,812
+The second one is the inverse document frequency. So TF
+
+760
+01:52:34,812 --> 01:52:45,191
+includes two submetrics, term frequency and inverse document frequency. Now let's see
+
+761
+01:52:45,191 --> 01:52:49,151
+how we are calculating the TFI DF value.
+
+762
+01:52:49,711 --> 01:52:50,852
+Now, TF is simple.
+
+763
+01:52:51,191 --> 01:52:55,071
+TF is the term frequency of a document,
+
+764
+01:52:55,451 --> 01:52:58,352
+of a word within a document, okay?
+
+765
+01:52:58,891 --> 01:53:03,951
+And so basically, we are counting the number of times
+
+766
+01:53:03,951 --> 01:53:06,511
+that that word appeared in that document.
+
+767
+01:53:06,951 --> 01:53:11,451
+And we are dividing to maximum,
+
+768
+01:53:11,451 --> 01:53:21,752
+we are dividing that value to the maximum frequency of a word that may appear in that
+
+769
+01:53:21,752 --> 01:53:28,251
+document. Okay let's say in this particular case so we are looking for
+
+770
+01:53:28,251 --> 01:53:38,851
+term frequency for i in document j.
+
+771
+01:53:40,431 --> 01:53:43,171
+Okay, so in this particular case,
+
+772
+01:53:43,171 --> 01:53:47,492
+we are going to look for the number of times
+
+773
+01:53:47,492 --> 01:53:50,291
+that that particular word appeared
+
+774
+01:53:50,291 --> 01:53:53,931
+in that particular document, okay,
+
+775
+01:53:53,932 --> 01:54:09,292
+divided by the maximum number of times, divided by the number of maximum frequencies that may appear in that document.
+
+776
+01:54:09,292 --> 01:54:10,092
+Okay.
+
+777
+01:54:11,131 --> 01:54:20,271
+Tf hesaplarken arkadaşlar, and document c içerisinde bir kelime i için bir term frequency hesaplarken,
+
+778
+01:54:20,271 --> 01:54:25,271
+I'm looking at the document inside the whole sentence.
+
+779
+01:54:25,271 --> 01:54:30,271
+I'm looking at the denominator.
+
+780
+01:54:30,271 --> 01:54:34,271
+I'm looking at the document inside the document.
+
+781
+01:54:34,271 --> 01:54:35,271
+I think I can see the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the word in the
+
+782
+01:55:04,271 --> 01:55:10,271
+If a lot of documents are in the same way, this is a good word.
+
+783
+01:55:10,271 --> 01:55:15,271
+The other thing is, every place is a good thing.
+
+784
+01:55:15,271 --> 01:55:18,271
+But the other thing is a good thing.
+
+785
+01:55:18,836 --> 01:55:27,495
+Dolayısıyla eğer az sayıda dokümanda geçiyorsa bu i'ninci kelime bu değer düşük olacak.
+
+786
+01:55:27,495 --> 01:55:34,395
+Yani i'nin geçmiş olduğu doküman sayısı, document frequency değeri düşük olmuş olacak.
+
+787
+01:55:34,756 --> 01:55:39,235
+Dolayısıyla da IDF değeri inverse document frequency değeri büyük olacak.
+
+788
+01:55:40,415 --> 01:55:43,495
+N nedir? Total number of documents.
+
+789
+01:55:43,495 --> 01:55:50,895
+Yani benim doküman setimdeki tüm dokümanlar bölü i'nin geçmiş olduğu dokümanların logunu alıyorum.
+
+790
+01:55:51,056 --> 01:55:53,275
+Bu da bana inverse document frequency veriyor.
+
+791
+01:55:54,075 --> 01:56:02,736
+Tekrar edecek olursak TF kısmı yani TF-IDF'in TF kısmı i'ninci kelimenin bir doküman içerisindeki,
+
+792
+01:56:03,075 --> 01:56:05,535
+doküman j içerisindeki önemini belirtiyor.
+
+793
+01:56:05,635 --> 01:56:07,715
+Yani kaç defa tekrar etmiş bu kelime.
+
+794
+01:56:07,715 --> 01:56:13,336
+Onu da bulurken j'ninci doküman içerisinde bu i'nin tekrar etme sayısını buluyorum.
+
+795
+01:56:13,495 --> 01:56:14,915
+Bunu nominator yazıyorum.
+
+796
+01:56:15,255 --> 01:56:15,635
+Bölü.
+
+797
+01:56:16,995 --> 01:56:21,376
+J'nin içerisinde bulunan diğer kelimeler için frekansları buluyorum.
+
+798
+01:56:21,876 --> 01:56:23,876
+Ve bunlardan maksimumunu alıyorum.
+
+799
+01:56:24,475 --> 01:56:24,596
+Okey.
+
+800
+01:56:24,975 --> 01:56:27,516
+Maksimum frekanslı denominator'a şey yapıyorum.
+
+801
+01:56:27,795 --> 01:56:29,175
+Hani bu oran bana şunu veriyor.
+
+802
+01:56:29,295 --> 01:56:35,496
+Diyor ki ininci kelime j'ninci döküman içerisinde hani önem değeri şudur.
+
+803
+01:56:35,495 --> 01:56:46,435
+Yani şu en büyük tekrar etmiş kelime ile karşılaştırıldığında işte bunun oranı şudur.
+
+804
+01:56:47,735 --> 01:56:51,995
+Bu i'ninci kelimenin tekrar etme yoğunluğu oranı şudur.
+
+805
+01:56:52,135 --> 01:56:52,935
+Bunu ifade ediyor.
+
+806
+01:56:53,295 --> 01:56:57,935
+Bu değer yüksek olursa i'ninci kelimenin c'ninci dokümanda değeri büyüktür.
+
+807
+01:56:58,495 --> 01:57:02,275
+Düşük olursa i'ninci kelimenin c'ninci dokümanda değeri küçüktür.
+
+808
+01:57:02,635 --> 01:57:03,775
+IDF neyi gösteriyor?
+
+809
+01:57:03,775 --> 01:57:15,915
+Bu eğlenici kelime doküman setim içerisinde, elimdeki doküman setim içerisinde çok sayıda dokümanda geçecek olursa bu doküman frekonsi değerin büyük olacaktır.
+
+810
+01:57:16,935 --> 01:57:25,435
+Bu neydi? DF neydi? Eğlenici kelimenin geçtiği doküman sayısıydı. Bu büyük olacaktır. IDF değeri de küçük olacaktır.
+
+811
+01:57:25,435 --> 01:57:29,996
+Yani iğneninci kelime çok sayıda dökümanda geçiyorsa IDF değeri düşük olacak.
+
+812
+01:57:30,576 --> 01:57:36,556
+İğneninci kelime az sayıda dökümanda geçiyorsa yani DF değeri düşük olduğunda IDF değeri büyük olacak.
+
+813
+01:57:37,315 --> 01:57:41,795
+Biz burada TF ve IDF değerini çarpıyoruz.
+
+814
+01:57:41,996 --> 01:57:49,095
+Yani iğneninci kelime için TF ve IDF değerini çarparak iğneninci kelime için bir ağırlık buluyoruz.
+
+815
+01:57:50,056 --> 01:57:52,416
+Ve daha önce neyi yapmıştık biz?
+
+816
+01:57:52,416 --> 01:58:05,975
+Bir dökümanı, bir döküman seti içerisindeki bir dökümanı vektör olarak tanımlarken buraya şuradaki öncelikle bu dökümanın vektör olarak belirtmek istiyorduk.
+
+817
+01:58:06,076 --> 01:58:17,076
+Bu vektörün boyutunu da bu döküman seti içerisinden çıkarttığım bütün kelimelerin oluşturmuş olduğu vektörün büyüklüğü kadar düşünmüştük.
+
+818
+01:58:17,675 --> 01:58:20,716
+Eğer kelime varsa bir, kelime yoksa sıfır koyuyorduk.
+
+819
+01:58:20,715 --> 01:58:38,035
+Bu neydi? Boolean Information Retrieval modelde bir dökümanının internal representation. Şimdi ne yapıyoruz? Buradaki ağırlıklar yerine her kelime için birinci kelime, ikinci kelime, işte vn. kelime her kelime için TF-IDF değerini koyuyoruz.
+
+820
+01:58:38,035 --> 01:58:57,655
+Demek ki Vector Space Information Retrieval modelde biz bir kelimeyi, bir dökümanı tanımlarken kullanmış olduğumuz vektörde TF-IDF değerini kullanaraktan ağırlıkları belirliyoruz.
+
+821
+01:58:58,595 --> 01:59:05,955
+Aynı şekilde dökümanları tanımladığımız gibi aynı şekilde kuerileri de tanımlıyoruz.
+
+822
+01:59:07,859 --> 01:59:10,060
+Burada nasıl ki dökümanı tanımladık.
+
+823
+01:59:10,459 --> 01:59:15,399
+Aynı şekilde bize verilmiş olan kuyurileri de bir vektör olarak tanımlıyoruz.
+
+824
+01:59:16,099 --> 01:59:32,099
+Ondan sonra da biz bu iki tane vektör arasında yani verilmiş olan kuyuriyi de işte v dimension yani totaldeki distinctive keyword sayısı boyutundaki bir vektörle tanımlıyoruz.
+
+825
+01:59:32,099 --> 01:59:39,499
+Dökümanı da aynı uzukluktaki iki vektörün arasındaki uzaklığa bakıyoruz.
+
+826
+01:59:40,479 --> 01:59:42,619
+Şimdi elimde iki tane vektör var.
+
+827
+01:59:42,720 --> 01:59:48,659
+Bu iki tane vektörün arasındaki uzaklığa bakarken biz cosine similarity metriyi kullanıyoruz.
+
+828
+01:59:48,859 --> 01:59:55,879
+Hatırlayın cosine similarity metriyi iki döküman arasındaki uzaklığı bulmak için kullandığımızı söylemiştik.
+
+829
+01:59:56,379 --> 02:00:01,159
+Burada da bir tanesi query bir tanesi döküman arasındaki uzaklığı bulmaya çalışıyorum.
+
+830
+02:00:01,159 --> 02:00:09,819
+Bir cos similarity metriye saplanırken pi'de iki vektörün dot product'ını alıyorum.
+
+831
+02:00:10,679 --> 02:00:15,559
+Pi'de de her bir vektörün uzunluğunu bulup bu uzunlukları çarpıyorum.
+
+832
+02:00:15,819 --> 02:00:20,540
+Şuradaki formül sizin için daha çok karşılaşacağınız bir formül.
+
+833
+02:00:20,619 --> 02:00:23,279
+Bunu bilmenizde hatırlamanızda fayda görüyorum.
+
+834
+02:00:25,739 --> 02:00:27,580
+Şimdi bir örnek yapalım.
+
+835
+02:00:27,580 --> 02:00:40,419
+Buradaki örnekte elimde üç tane kelimeden oluşan bir tane şey var, vocabulary var.
+
+836
+02:00:40,819 --> 02:00:46,380
+Yani benim dökümanlarımdan çıkarttığım üç tane kelime varmış.
+
+837
+02:00:47,020 --> 02:00:49,600
+Elimde de hani dokuz tane döküman var.
+
+838
+02:00:50,220 --> 02:00:52,580
+Bu dökümanların vektörlerini görüyorsunuz.
+
+839
+02:00:52,580 --> 02:01:16,339
+Ve benim query'imde bu olsun. Hardware ve software olmuş olsun. Burada ben acaba Boolean Information Retrieval modeli kullansam hangi dokümanları alırım? Ondan sonra normal Vector Space Information Retrieval modeli kullansam hangi sonuçları alırım? Onlara bakalım.
+
+840
+02:01:16,339 --> 02:01:27,319
+Şimdi ben Boolean Information Retrieval modeli kullandığım zaman bu query'yi tanımlarken nasıl tanımlayacağım?
+
+841
+02:01:27,580 --> 02:01:31,940
+Hardware birinci kelimem, ikinci kelimem, üçüncü kelimem.
+
+842
+02:01:32,539 --> 02:01:36,459
+Biri ne olacak? Bir olacak. İkincisi için ikiyi koydum.
+
+843
+02:01:36,639 --> 02:01:43,639
+Üçüncüsünü bilmediğim için ben sadece query'imde bir ve birinci ve ikinci elemanı biliyorum.
+
+844
+02:01:43,639 --> 02:02:06,499
+Şimdi Boolean Information Retrieval modelde hardware ve software dediğim için araya end operasyonunu koyduğum için Boolean Information Retrieval neydi? Exact match'i getiriyordu. Yani benim vermiş olduğum bu query'yi true yapan sonuçları getiriyordu.
+
+845
+02:02:06,499 --> 02:02:20,699
+Bunu true yapan sonuçlar hangileri? Ben A4'ü görüyorum bir de A7'yi görüyorum. Onun dışındakiler true yapmıyor. Dolayısıyla Boolean Information Retrieval model kullanmış olsam sadece A4 ve A7'yi getiririm.
+
+846
+02:02:20,699 --> 02:02:37,300
+Eğer mesela bunu OR yapmış olsam, hardware OR software yapmış olsam, bu durumda A3 dışında geri kalan, ikisinin de 0 olduğu dışındaki hepsini getirmem gerekir.
+
+847
+02:02:38,479 --> 02:02:40,639
+Boolean Information Retrieval modeli kullansam.
+
+848
+02:02:41,639 --> 02:02:47,800
+Peki, Vector Space'i kullansam, Vector Space Information Retrieval modeli kullansam.
+
+849
+02:02:49,811 --> 02:03:07,811
+Bu şu anda anlattığım Boolean Information Retrieval modeldi. Eğer ben AND ile yapmış olsam yani Hardware and Software demiş olsam A4 ve A7 Hardware or Software demiş olsam bunların hepsini getirecek sadece A3'ü getirmeyecekti.
+
+850
+02:03:07,811 --> 02:03:36,652
+Şimdi bir de şey yapayım, vector space ile information activity modeli düşüneyim. Hani orada da ben ne yapıyorum? Cosine similarity kullanacağım. Oradaki hani yöntemde ben bir vektörle vektörü karşılaştırdığım için query'yi mutlaka yine vektör şeklinde tanımlamam gerekiyor.
+
+851
+02:03:36,652 --> 02:03:53,611
+buraya ya sıfır ya da bir ekleyeceğim. Yani bunu vektör haline getirebilmek için. Şimdi bana soruda hardware ve software'in dışında üçüncü bir bilgi verilmediği için dolaylı olarak ben üçüncü kelimenin karşılığına sıfır koymak zorundayım.
+
+852
+02:03:53,611 --> 02:04:09,532
+artık elimde bir tane query var. Şimdi bu query ile elimdeki dokümanları karşılaştırıyorum. Elimde dokuz tane doküman var. Bunları karşılaştırdığım zaman bana cosine similarity bir takım değerler veriyor.
+
+853
+02:04:09,532 --> 02:04:26,832
+Bu değerlere dayalı olarak da ben dokümanların verilmiş olan query'e ne kadar benzediğini bu cosine similarity sonucuna göre sıralandırılmış bir şekilde verebilirim arkadaşlar
+
+854
+02:04:35,636 --> 02:04:38,755
+Cosine similarity is not only the
+
+855
+02:04:38,755 --> 02:04:53,755
+There are different similarity functions. Cosine similarity is one of them. There is another one called Okapi similarity metric. Okay. That's also a similarity metric that gives
+
+856
+02:04:53,755 --> 02:05:04,675
+high quality results. Just like the distance metrics that we have learned in previous chapter in clustering chapter
+
+857
+02:05:04,675 --> 02:05:13,676
+you see that for similarity there are different similarity metrics like cosine similarity or copy similarity.
+
+858
+02:05:13,676 --> 02:05:29,676
+You don't have to memorize it but I just but cosine similarity is important but or copy similarity is just for you to know that there are different similarity functions that are being used in order to compute the similarity between the vectors.
+
+859
+02:05:29,675 --> 02:05:59,655
+okay and also so sometimes we use relevance feedback so what's relevance feedback is that so when you initially enter some search results search keywords and information retrieval applies that keywords on the documents and returns a result list okay and when you click on the result
+
+860
+02:05:59,655 --> 02:06:29,555
+list when you check the URLs that you think that are relevant to your query, what search engine is doing in the next time that you query, in addition to that keyword that you enter, what it does is that it goes to those relevant documents and it reads, retrieves the keywords that may be, that may represent those documents and it adds those documents
+
+861
+02:06:29,555 --> 02:06:53,535
+to your initial query. Bu relevance feedback'i kullanan information retrieval engine'lerin yaptığı şu, siz ilk başta bir tane keyword giriyorsunuz, buna karşılık size bir sonuç listesi getiriyor. Size diyor ki aynı zamanda sana göstermiş olduğum bu sonuç listesinden relevant olduğu düşündüklerinin yanına bir tane tik at.
+
+862
+02:06:53,535 --> 02:07:23,515
+Okey? Hani bu relevance feedback'i kullanan information retrieval soracak. Sen gidiyorsun hani ilgili olduğunu düşündüğün linklere tık atıyorsun. Arkasından diyor ki hani search'ü tekrarla. Search'ü tekrarlarken senin ilk başta girmiş olduğun kelimenin yanına gidiyor bu linklerin içerisindeki bu linklerin göstermiş olduğu dokümanlara gidip senin relevante işaretlediğin dokümanlara gidip onlarda çokça tekrar eden kelimeleri ekstra
+
+863
+02:07:23,515 --> 02:07:24,675
+and search engine.
+
+864
+02:07:25,175 --> 02:07:31,295
+Senin girmiş olduğun keyword'ün yanına o kelimeleri de koyuyor ve tekrardan bu sefer search yapıyor.
+
+865
+02:07:32,295 --> 02:07:43,835
+Ve bunun da bu şekilde yapılan aramalarda da kişinin yapmış olduğu aramaya daha kaliteli sonuçlar bulunabildiği ortaya konmuş.
+
+866
+02:07:43,955 --> 02:07:48,875
+Relevance feedback kullanan information retrieval engine'ler de buna dayalı.
+
+867
+02:07:52,532 --> 02:08:09,212
+Okey. Hani bu aşamadan sonra Text Pre-processing'e gireceğiz. Text Pre-processing'in detaylarını konuşacağız. Buna geçmeden önce ben durup projelerinizle ilgili konuşmak istiyorum arkadaşlar.
+
+868
+02:08:09,212 --> 02:08:24,892
+Öncelikle şu ekranı durduralım. Şimdi bana çoğunuz proje öneri dokümanlarınızı gönderdiniz.
+
+869
+02:08:26,892 --> 02:08:35,831
+Şimdi derste olup öneri dokümanını göndermemiş kaç arkadaşım var?
+
+870
+02:08:35,831 --> 02:08:47,392
+söyleyebilir misiniz? Mikrofonunuzu açıp söyleyebilirsiniz arkadaşlar. Sadece sayıyı almak istiyorum şu anda. Hani hocayla konuşurum öyle veririm diye düşünenler.
+
+871
+02:08:48,911 --> 02:08:52,971
+Hocam biz dersin başında gönderdik. Ama o sayıları...
+
+872
+02:08:52,971 --> 02:09:04,171
+Şey gönderdiyseniz tamam. Yani şu anda benim e-mail hesabımda varsınız. Sıkıntı yok. Kimler var? Mikrofonlarınızı açabilirsiniz arkadaşlar.
+
+873
+02:09:09,587 --> 02:09:10,747
+Herkes gönderdi mi?
+
+874
+02:09:11,627 --> 02:09:13,627
+Hocam iki kişi chatten yazmışlar ama.
+
+875
+02:09:14,767 --> 02:09:14,988
+Evet.
+
+876
+02:09:16,427 --> 02:09:19,027
+Ahmet Said Koçak göndermiş.
+
+877
+02:09:26,644 --> 02:09:27,923
+Buket göndermemiş.
+
+878
+02:09:29,463 --> 02:09:31,823
+Mehmet Emin göndermemiş.
+
+879
+02:09:32,243 --> 02:09:33,983
+Etti dört.
+
+880
+02:09:34,124 --> 02:09:34,963
+Yaren Yıldırım.
+
+881
+02:09:41,043 --> 02:09:42,404
+Beyza.
+
+882
+02:09:43,923 --> 02:09:48,123
+Hocam ben göndermemiş anladım. Ters mi söylediniz?
+
+883
+02:09:48,863 --> 02:10:07,123
+Ben göndermemişi sordum evet. Yani göndermeyenlerin sayısı. Çünkü gönderenler çok fazla. Hani onları saymayalım zaten. Şu anda Mehmet Sait göndermemiş, Buket göndermemiş, Mehmet Emin göndermedi, Yarın göndermedi, Beyza göndermedi, Uğur Keskin göndermedi.
+
+884
+02:10:12,307 --> 02:10:30,307
+Okey. Şimdi hani bu arkadaşlar ikili grup şeklinde mi çalışacaklar, tekli grup şeklinde mi çalışacaklar? O en azından belli mi? Yani...
+
+885
+02:10:31,028 --> 02:10:37,847
+O da belli değil. Arkadaşlar hani bunu hani gelecek haftaya kadar mutlaka belirlemenizi istiyorum.
+
+886
+02:10:40,448 --> 02:10:44,687
+Yaren'le Beyza berabermiş.
+
+887
+02:10:46,807 --> 02:10:47,048
+Okey.
+
+888
+02:10:48,227 --> 02:10:57,507
+Diğer arkadaşların da Fatih Mustafa Sağırsız. Fatih siz gönderdiniz herhalde projenizi, gönderdiniz.
+
+889
+02:10:57,507 --> 02:11:18,627
+ben şu anda hani göndermeyenler için diyorum. Yani göndermeyenler, gönderenler zaten proje gruplarını şey belirlemişlerdir. Onda bir sıkıntı yoktur. Göndermeyen arkadaşların da proje gruplarını oluşturup ondan sonra da proje proposunu yazmaları gerekiyor.
+
+890
+02:11:18,627 --> 02:11:45,287
+Şimdi ben projelerinize detaylı olarak arkadaşlar bakacağım. Bugün öğleden sonra bakıyor olurum. Projelerinizde bir tane Excel dosyası oluşturacağım. Proje gruplarını yazacağım. Yanlarına projelerinizin topiklerini bir de kısaca ne yapmak istiyorsunuz anladığım kadarıyla onu yanına yazacağım.
+
+891
+02:11:45,288 --> 02:11:57,188
+sonra projelerinizle ilgili kimisi tam beklediğim gibi olacak, kimisinde eksiklikler olacak, düzeltmesini istediğim yerler olacak arkadaşlarım.
+
+892
+02:11:57,847 --> 02:12:08,268
+Onları yanına yazıp onları size duyuracağım. Eksik proje önerisi göndermemiş olacak arkadaşların da bilgileri olacak oradan.
+
+893
+02:12:08,267 --> 02:12:11,467
+dersin sayfasındaki announcement'ları takip edin.
+
+894
+02:12:11,568 --> 02:12:13,667
+Oradan takip edebilirsiniz, görebilirsiniz.
+
+895
+02:12:14,327 --> 02:12:16,608
+Gelecek hafta da şey yapalım.
+
+896
+02:12:18,287 --> 02:12:19,487
+Üzerinden gidelim.
+
+897
+02:12:19,847 --> 02:12:28,827
+Eksik olduğunu düşündüğümüz arkadaşların ne eklemeleri gerek ya da konuyu nasıl değiştirmeleri gerek onu beraber konuşalım.
+
+898
+02:12:28,827 --> 02:12:52,507
+Şimdi teker teker sayımız fazla olduğu için hani şey kalan zaman içerisinde projelerinizin üzerinden beraber gitmemiz fırsatı olmayacak. Ben offline önce bir projelerinizi okuyayım. Ondan sonra da size bunun duyurusunu yapayım. Eksiklikleri olanlar, olduğu gibi başlayabilecek olanlar.
+
+899
+02:12:52,507 --> 02:13:07,307
+başlayabilecek olan arkadaşlarım hiç beklemeden projelerine başlasınlar. Ben duyuru yaptıktan sonra diğer arkadaşlarım da eksikleri olan arkadaşlarım da gelecek hafta konuşup o eksikleri tamamlayıp öyle başlasınlar.
+
+900
+02:13:07,307 --> 02:13:15,347
+Hiç projesini göndermemiş, proje proposal'ını göndermemiş arkadaşlarım da haftaya kadar bir proje önerisi düşünüp göndermelerini istiyorum.
+
+901
+02:13:15,347 --> 02:13:37,787
+bu önemli çünkü bize kadar etkiyor. Dolayısıyla ben proje yapmadan acaba bu dersi geçebilir miyim riskine girmeyin. İngilizce seçmeli hepinizin ihtiyacı olan derslerden bir tanesi. Bu derste mutlaka proje yapın. Yapmanızı bekliyorum yani.
+
+902
+02:13:37,787 --> 02:14:01,947
+Tamam. Benim söyleyeceklerim bu kadar bugün için. Gelecek hafta bir proje önerilerinizle ilgili ben değerlendirdikten sonra konuşuyor olalım. Ondan sonra da content mining kısmına devam edelim. Alper Rahatsi'nin sorunu var galiba. Lütfen.
+
+903
+02:14:01,947 --> 02:14:03,188
+Hocam sesim geliyor mu?
+
+904
+02:14:03,627 --> 02:14:04,667
+Geliyor gayet net.
+
+905
+02:14:05,227 --> 02:14:10,028
+Hocam şey bu proje önerilerine baktığınızda kabul etmediğiniz projeler olursa.
+
+906
+02:14:10,484 --> 02:14:15,163
+ona ne gibi şey yapacaksınız? Yeni proje önerisiyle mi geleceğiz eğer öyle bir durum olursa?
+
+907
+02:14:15,163 --> 02:14:31,783
+Bir hani sizinle mevcuttayız. Hani şu anda yazmış olduğunuz şeyler sizin yapmak istediğiniz şeyler. Yani siz baktınız, ettiniz, dataset buldunuz, işte hangi konuda yapacağınıza karar verdiniz.
+
+908
+02:14:31,783 --> 02:14:43,763
+Sizin yapmak istediğiniz alanda kalacak şekilde mevcuttaki içeriği nasıl bu dönemde bu projenin dersi olabilecek şekilde geliştirebiliriz bunu konuşacağız
+
+909
+02:14:43,763 --> 02:14:58,143
+Eğer bu mümkün olmuyorsa yani tamamıyla değiştirmek gerekiyorsa yine sizinle konuşup o şekilde ben farklı şunu yapabilirsiniz diye önereceğim
+
+910
+02:14:58,143 --> 02:15:00,223
+Siz de okey diyorsanız o şekilde devam edeceğiz
+
+911
+02:15:00,223 --> 02:15:02,683
+Anladım hocam. Teşekkürler.
+
+912
+02:15:02,683 --> 02:15:06,083
+Excel dosyası üzerinde siz yazacaksınız.
+
+913
+02:15:06,083 --> 02:15:14,503
+Evet. Ben orada konuşmamız gerekli diye not düşerim. Sonra siz o gruplarla konuşuruz.
+
+914
+02:15:14,503 --> 02:15:20,723
+Ben burada konuyu ben belirleyip hadi arkadaşlar şunun üzerinde proje yapın demek istemiyorum.
+
+915
+02:15:20,723 --> 02:15:30,543
+konuyu sizin belirlemenizi istiyorum ben sadece dersin içeriğiyle ilgili algoritmaları kullanabileceğiniz bir projeye dönüştürmek istiyorum
+
+916
+02:15:30,543 --> 02:15:32,863
+anladım hocam teşekkürler
+
+917
+02:15:32,863 --> 02:15:40,984
+tamamdır ben teşekkür ederim arkadaşlar katıldığınız için gelecek hafta derste görüşmek üzere
+
+918
+02:15:40,984 --> 02:15:43,984
+dediğim gibi dersin sayfasındaki announcement'u takip edin
+
+919
+02:15:47,315 --> 02:15:48,355
+İyi günler hocam
+
+920
+02:15:48,355 --> 02:15:51,095
+İyi günler, iyi dersler, iyi günler

@@ -1,0 +1,2395 @@
+1
+00:03:04,116 --> 00:03:06,116
+Günaydın arkadaşlar sesim geliyor mu?
+
+2
+00:03:14,740 --> 00:03:15,240
+Paolo
+
+3
+00:07:07,124 --> 00:07:08,323
+Evet herkese günaydın.
+
+4
+00:07:55,764 --> 00:07:58,984
+Evet, ekranını görebiliyorsunuz diye düşünüyorum.
+
+5
+00:08:24,148 --> 00:08:31,967
+Kaç dakika daha bekleyelim arkadaşlarımız da gelsin öyle başlayalım. Şu anda 28 kişi var.
+
+6
+00:12:01,076 --> 00:12:03,755
+Evet tekrar döngüle yayın arkadaşlar. Derse başlayalım.
+
+7
+00:12:07,187 --> 00:12:26,187
+Şimdi benim iki tane ekranım var. Diğer ekranda chat bölümünü açacağım. Eğer ders sesimi alamayan varsa, yankı varsa, slide'ları göremeyen varsa ya da konuyla ilgili herhangi bir sorusu olan varsa lütfen chat bölümünden yazsın.
+
+8
+00:12:26,187 --> 00:12:42,467
+Çek bölümünde yazdığınızı eğer görmemişsem o zaman mikrofonunuzu açın ve soru sorun. Şu anda herhangi bir geri dönüş olmadığı için beni rahat duyuyorsunuz, slide'ı görüyorsunuz. Her şey yolunda diye düşünüyorum.
+
+9
+00:12:49,971 --> 00:12:56,811
+Evet, şu anda dersin silibesini görüyorsunuz.
+
+10
+00:12:59,131 --> 00:13:06,392
+Bu ders kapsamında information retrieval konusunu konuşacağız.
+
+11
+00:13:07,312 --> 00:13:09,131
+Web arama motorlarını konuşacağız.
+
+12
+00:13:09,312 --> 00:13:10,652
+Dersi 60 kişi kayıtlı.
+
+13
+00:13:11,931 --> 00:13:16,111
+Önümüzdeki haftalar boyunca bu ders kapsamında neler işleyeceğimizi,
+
+14
+00:13:16,111 --> 00:13:20,951
+üzerinde çalışacağımız datanın ne tipi data olduğunu bugün konuşacağız.
+
+15
+00:13:21,091 --> 00:13:22,291
+Dersi İngilizce işleyeceğim.
+
+16
+00:13:24,171 --> 00:13:31,451
+İngilizce, Türkçe arasında sınıfın durumuna göre gidip gelmem gerekebilecek.
+
+17
+00:13:33,652 --> 00:13:38,291
+Sorunuz olduğu zaman lütfen bekletmeyin sorularınızı sorun arkadaşlar.
+
+18
+00:13:40,291 --> 00:13:42,271
+Okay, so let's get started.
+
+19
+00:13:42,271 --> 00:13:46,711
+So I'm going to first talk about the syllabus.
+
+20
+00:13:46,711 --> 00:13:55,431
+I'm going to talk about what kind of expectation that I will have from you regarding the course.
+
+21
+00:13:55,991 --> 00:13:59,731
+And then I will start what kind of data that we are going to study,
+
+22
+00:13:59,912 --> 00:14:05,152
+what kind of techniques or methodologies that we are going to study on top of that data
+
+23
+00:14:05,152 --> 00:14:08,711
+in order to do information retrieval.
+
+24
+00:14:08,711 --> 00:14:09,711
+ve bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları da bu tarzıları
+
+25
+00:14:38,711 --> 00:14:39,711
+Web data.
+
+26
+00:14:39,711 --> 00:14:47,711
+We are going to understand the unstructured and semi-structured information.
+
+27
+00:14:47,711 --> 00:14:52,711
+We are going to extract information from the web data.
+
+28
+00:14:52,711 --> 00:14:59,711
+And when we talk about the web data, it is different from the database data.
+
+29
+00:14:59,711 --> 00:15:04,711
+In other words, it is different from the relational databases.
+
+30
+00:15:04,711 --> 00:15:13,911
+Web data we have unstructured, semi-structured, hypertextual and distributed data.
+
+31
+00:15:13,911 --> 00:15:25,951
+And this distributed data is located on the application servers, HTTP servers in distributed environments.
+
+32
+00:15:25,951 --> 00:15:44,132
+Ok, now in this course we are going to be learning how we can crawl this data, ok, how we can get this data from the distributed databases onto local database so that we can process this data.
+
+33
+00:15:44,132 --> 00:15:48,372
+We are going to learn how we are going to index this data.
+
+34
+00:15:48,891 --> 00:15:52,552
+We are going to create a table out of this data
+
+35
+00:15:52,552 --> 00:15:55,952
+so that we can do a fast search on top of data.
+
+36
+00:15:56,552 --> 00:16:00,572
+We are going to learn how we can rank the data
+
+37
+00:16:00,572 --> 00:16:03,751
+that we retrieve from the web.
+
+38
+00:16:04,232 --> 00:16:09,352
+And we are going to learn different filtering algorithms
+
+39
+00:16:09,352 --> 00:16:11,692
+using text and link analysis.
+
+40
+00:16:11,692 --> 00:16:22,091
+And obviously, this course has lots of applications in different settings.
+
+41
+00:16:22,512 --> 00:16:24,832
+So we have applications in search.
+
+42
+00:16:25,231 --> 00:16:29,572
+We are going to learn how the search engines work.
+
+43
+00:16:30,432 --> 00:16:38,432
+This course has applications in classification category, tracking category, monitoring category, web intelligence category.
+
+44
+00:16:38,431 --> 00:16:44,751
+Ve bu metodolosu, bu metodolosu, bu metodolosu, bu metodolosu.
+
+45
+00:16:45,751 --> 00:16:48,451
+Şimdi, bir tekstbook.
+
+46
+00:16:49,395 --> 00:17:10,576
+I'm going to follow this textbook and chapter by chapter I will cover the topics in this textbook. Okay. As you see, these are the chapters from the book and you can search the title of this book, Web Data Mining by Bing Leo. You can find it on the web, the PDF
+
+47
+00:17:10,576 --> 00:17:32,455
+available on the web and you can also find the presentation slides that talk about each chapter. You can find it on the web. But I will make my slides and all the teaching materials that I'm teaching here available to you anyway.
+
+48
+00:17:32,455 --> 00:17:59,616
+Okay. Now, online.yelubis.edu has right now a user interface where I can upload some of the teaching materials there. In the past, I had a dedicated website for each of my courses. I was uploading the teaching materials to that website. I will decide what to do and I will let you know.
+
+49
+00:17:59,616 --> 00:18:28,296
+okay for now so you should just wait for an email from me about the location of the course website okay now the lecture will be on Thursdays and I will do a two sessions okay each session will be 50 minutes okay let me start my 50 minutes right now
+
+50
+00:18:29,616 --> 00:18:59,216
+okay and I will give 10 minute break and then after I will start with the next session okay now in this course you will have a midterm and one term project where you will have to do coding and there will be a final project now this is the grading as you see here but this grading may change because of the
+
+51
+00:18:59,616 --> 00:19:28,116
+the current online education. So last semester this was a different grading scheme decided by the university. Okay. But if the university does not tell us how we should grade, I'm going to be using this grading scheme. Okay. This means that during the semester you will have to work, you will have to study because 60% of your cumulative grade comes from
+
+52
+00:19:28,116 --> 00:19:37,556
+from the semester. Okay now attendance is important it's an online education.
+
+53
+00:19:41,476 --> 00:19:51,075
+Now the system is giving us a log file that tells you how many of the online lectures you have
+
+54
+00:19:51,075 --> 00:20:20,875
+attendance. Okay, now I'm expecting you to attend 70% of the lectures. Okay, I understand that lectures will be available afterwards for you to watch on online.yildizedutere, but I expect you to join the course, ask questions, listen to me online. Okay, and so this is one of the requirements of the department,
+
+55
+00:20:20,875 --> 00:20:23,535
+and requirement of me as well.
+
+56
+00:20:26,175 --> 00:20:26,775
+Okay.
+
+57
+00:20:31,923 --> 00:20:50,923
+Now today I'm going to be talking about what kind of data that we are going to study and what kind of techniques that we are going to learn on the status so that we can extract information. Okay.
+
+58
+00:21:02,195 --> 00:21:30,195
+Now the data that we are talking about is coming from the World Wide Web. Okay. Therefore we need to just look at how the World Wide Web started. So it started in 1990 at a research center called CERN by a researcher who was working at the time in CERN called Tim Berners-Lee.
+
+59
+00:21:32,195 --> 00:21:44,995
+and Tim Berners-Lee first wrote an application server, an HTTP server, and wrote a simple markup language.
+
+60
+00:21:45,655 --> 00:21:55,975
+And the reason that he wrote this application, this distributed application, he wanted to share information between the other project members that he is involved.
+
+61
+00:21:55,975 --> 00:22:11,575
+Okay. He wrote an application server, HTTP server, and using the command line, he sent his markup language through HTTP protocol to this HTTP server.
+
+62
+00:22:11,575 --> 00:22:25,095
+and so that other members of his team can publish or see what others want to share.
+
+63
+00:22:25,095 --> 00:22:29,375
+And this was 1990.
+
+64
+00:22:32,815 --> 00:22:33,135
+Okay.
+
+65
+00:22:34,695 --> 00:22:38,916
+Muhammed Faruk beni duyamıyor. Sizler duyuyor musunuz arkadaşlar?
+
+66
+00:22:43,220 --> 00:22:50,720
+Okey. Muhammed senin herhalde senin tarafta bir sorun var.
+
+67
+00:22:54,900 --> 00:22:58,900
+Okay, okay.
+
+68
+00:23:05,900 --> 00:23:16,900
+After the first implementation of transfer protocol, HTTP and HTTP web server and
+
+69
+00:23:16,900 --> 00:23:27,940
+and several years later first browsers, first graphical user interfaces were introduced in order to
+
+70
+00:23:30,019 --> 00:23:40,660
+in order to render the markup text and see what other people are sharing. Okay there were initial
+
+71
+00:23:40,659 --> 00:23:54,459
+graphical user interfaces. But the one which made the word wipe that commonly used was Mosaic. Okay. Mosaic was introduced at 1993.
+
+72
+00:23:54,459 --> 00:24:09,760
+And it was a hypertext query for X1 window system. And it was able to render HTML markup language. And this graphical user interface was also be able to send
+
+73
+00:24:09,760 --> 00:24:36,039
+and requests for HTML pages using HTTP. Okay. After the initial introduction of Mosaic and then web started to be used by many people across the universities, across the research institutions after 1993.
+
+74
+00:24:36,039 --> 00:25:05,200
+Now, the picture that you see right now, the picture that you see right now is drawn in 2000. Okay. It was from a paper that was showing the general structure, overview structure of the web.
+
+75
+00:25:05,200 --> 00:25:15,160
+okay and as you can see the the look of the structure looks like bow tie okay
+
+76
+00:25:15,160 --> 00:25:31,000
+and this research was done on top of the distributed data sets or distributed HTML pages located in different
+
+77
+00:25:30,999 --> 00:25:59,359
+and application servers across the globe. And what they did, they crawled all the pages that are available. And after they crawled, they looked at the link structure of these HTML pages. Okay. Now, as you can see, in the middle, there is a circle. And in this circle, what we call core, there are
+
+78
+00:25:59,359 --> 00:26:19,079
+and lots of pages that are highly connected, which means that pages are giving link to each other. Okay, back and forth. Now, these are the core consists of many pages, okay, that are giving links to each other.
+
+79
+00:26:19,079 --> 00:26:30,579
+Now also on the web, these two researchers realize that there are high number of pages that do not receive any link.
+
+80
+00:26:31,839 --> 00:26:42,479
+Okay, they don't have any in link, they do not receive any link from any other pages, but they give links to the pages that are in the core section.
+
+81
+00:26:43,827 --> 00:26:57,827
+Okay. And they also realize that similar to that, there are high number of pages. Okay. And that receive links from the pages that are within the core area. Okay.
+
+82
+00:26:57,827 --> 00:27:06,067
+And these pages over here, they do not give any links to outside.
+
+83
+00:27:06,067 --> 00:27:07,188
+Okay.
+
+84
+00:27:07,188 --> 00:27:12,868
+And they also realize that there are some islands on the web, which means that there
+
+85
+00:27:12,868 --> 00:27:21,147
+are some number of web pages that give to link, who give link to each other, but they
+
+86
+00:27:21,147 --> 00:27:26,467
+do not receive or give link to any other pages on the web.
+
+87
+00:27:26,467 --> 00:27:28,548
+And these are disconnected components.
+
+88
+00:27:29,528 --> 00:27:33,548
+And they also realize that there are also dendrites.
+
+89
+00:27:33,548 --> 00:27:37,368
+Okay, as you see, these are the web pages
+
+90
+00:27:37,368 --> 00:27:41,027
+similar to the disconnected components here.
+
+91
+00:27:41,027 --> 00:27:43,408
+They give links to each other,
+
+92
+00:27:43,408 --> 00:27:46,987
+but they only receive links from this section of the web,
+
+93
+00:27:46,987 --> 00:27:51,987
+from the pages who only give link to outside.
+
+94
+00:27:51,987 --> 00:27:53,867
+they give link to outside.
+
+95
+00:27:53,907 --> 00:27:59,707
+OK, and there are also dendrites who give links to each other, just like the
+
+96
+00:27:59,907 --> 00:28:06,027
+disconnected components here, but they also give a link to the pages that are in
+
+97
+00:28:06,227 --> 00:28:11,987
+this section. OK, now this structure that you see right now is similar to the
+
+98
+00:28:12,187 --> 00:28:17,307
+structure, the web structure that we are using.
+
+99
+00:28:17,507 --> 00:28:21,947
+Currently on the web, so it did not change.
+
+100
+00:28:24,435 --> 00:28:30,815
+Now, this is another picture that explains the web from different perspective.
+
+101
+00:28:31,635 --> 00:28:35,135
+Now, as you see here, you have different types of data.
+
+102
+00:28:35,255 --> 00:28:38,776
+You have the data for, this is the web data.
+
+103
+00:28:39,035 --> 00:28:51,715
+So this is, for example, if you are working for an institution, each institution has its own intranet,
+
+104
+00:28:51,715 --> 00:29:00,555
+which means that so they have their local network and on their local network they have a number of
+
+105
+00:29:00,555 --> 00:29:09,796
+web pages or it could be the pdf files it could be the html files or whatever so this is what
+
+106
+00:29:09,796 --> 00:29:16,435
+we call intranet and if you think of your personal computer all the data in your personal computer
+
+107
+00:29:16,435 --> 00:29:33,175
+Let's call this as the disk. And if you are using a digital library such as IEEE or ACM or say, so we have a library at our campus at Dawood Pasha.
+
+108
+00:29:33,175 --> 00:29:45,775
+And our library has a number of digital documents. Okay, you can consider this as a digital library, local digital library.
+
+109
+00:29:45,775 --> 00:29:49,695
+and all the data in your email, you can consider this here.
+
+110
+00:29:50,535 --> 00:29:55,135
+Now, if you look at the complexity from the complexity perspective,
+
+111
+00:29:55,135 --> 00:30:03,575
+you see that the data on the internet is much more complex to the rest of them
+
+112
+00:30:03,575 --> 00:30:11,455
+because the data on the internet, it could be a customer relation management CRM data.
+
+113
+00:30:11,455 --> 00:30:17,055
+It could be an ERP software data.
+
+114
+00:30:17,055 --> 00:30:20,735
+So therefore, this kind of data is a structured data.
+
+115
+00:30:21,855 --> 00:30:26,415
+It is kept in usually in relational databases.
+
+116
+00:30:26,415 --> 00:30:33,455
+So it's complex and the least complex of all this data is the emails that we are using.
+
+117
+00:30:33,455 --> 00:30:35,615
+Okay, that is somewhere in the middle.
+
+118
+00:30:36,415 --> 00:30:39,615
+So let's take a look at the from the volume perspective.
+
+119
+00:30:39,615 --> 00:30:46,255
+As you can imagine, obviously the web data is the highest data volume
+
+120
+00:30:47,375 --> 00:30:54,895
+and then we have the intranet and then if you go down you see that so our personal laptops currently
+
+121
+00:30:55,455 --> 00:31:03,855
+has disk space storage space in terabytes so this is outdated it shouldn't be gigabyte
+
+122
+00:31:03,855 --> 00:31:10,935
+and digital libraries as well the the size is in the terabytes and also the
+
+123
+00:31:10,935 --> 00:31:19,635
+least volume data is the email now this is another perspective if you look at it
+
+124
+00:31:19,635 --> 00:31:24,135
+now let's take a look at the from the private privacy perspective okay just
+
+125
+00:31:24,135 --> 00:31:31,455
+forget the adverse here a serial okay and from the privacy perspective and so
+
+126
+00:31:31,455 --> 00:31:38,575
+So this end of the arrow shows the low privacy and this end of the arrow shows the high privacy.
+
+127
+00:31:39,935 --> 00:31:41,015
+Vice versa.
+
+128
+00:31:41,275 --> 00:31:41,395
+Okay.
+
+129
+00:31:41,695 --> 00:31:45,195
+So this end shows the low privacy.
+
+130
+00:31:45,795 --> 00:31:47,835
+This end shows the high privacy.
+
+131
+00:31:48,375 --> 00:31:54,635
+So if you look at it, the data on the web is being viewed and shared by many people.
+
+132
+00:31:54,955 --> 00:31:56,755
+So therefore the privacy is low.
+
+133
+00:31:56,755 --> 00:32:03,115
+and digital libraries, so people who have access to digital library can see it.
+
+134
+00:32:03,115 --> 00:32:10,995
+If you go down, email, intranet, and here the privacy is high.
+
+135
+00:32:11,955 --> 00:32:18,675
+And if you look at from the adversarial perspective, what is adversarial?
+
+136
+00:32:18,675 --> 00:32:19,395
+Çeşitlilik.
+
+137
+00:32:19,827 --> 00:32:39,168
+Okay, if you look at it, so this side of the arrow means high, this side of the arrow means low. So the web has high adversarial, and if you go down all the way, internet has low adversarial.
+
+138
+00:32:39,168 --> 00:32:47,248
+because so in internet or email disk you only keep the types of data that you are interested in
+
+139
+00:32:47,248 --> 00:32:54,688
+but on the web you have the data coming from everyone okay now these are the different views
+
+140
+00:32:54,688 --> 00:33:03,807
+of the data now this picture here that you see looks at from a totally different perspective
+
+141
+00:33:03,807 --> 00:33:12,528
+Now on the web, you have HTML pages which has URLs. Okay.
+
+142
+00:33:14,287 --> 00:33:22,927
+A URL means a universal resource located. Okay. For example, this is a URL
+
+143
+00:33:24,368 --> 00:33:30,527
+for this particular resource. What is this resource? It's a PDF file. Okay.
+
+144
+00:33:30,527 --> 00:33:51,527
+Okay. Now, this red elliptic circle here indicates the static web of the kind of web pages all together, which can be accessed by an URL.
+
+145
+00:33:51,527 --> 00:34:09,627
+Okay. Now there is also another circle here. So it is a blue circle. Okay. Which is a blue circle. Now this what we call dynamic web. Now the dynamic web is also accessed by a URL.
+
+146
+00:34:09,627 --> 00:34:37,167
+but this type of web, in this type of web, the web pages does not exist. When you click on the link at the time that the HTTP server received this link, at that time, that web server is creating the web page
+
+147
+00:34:37,167 --> 00:34:41,307
+from the content of the web page from the databases.
+
+148
+00:34:42,107 --> 00:34:45,787
+And these are usually scripts.
+
+149
+00:34:46,087 --> 00:34:47,107
+It could be a JavaScript.
+
+150
+00:34:47,507 --> 00:34:49,387
+It could be a CGI script.
+
+151
+00:34:49,387 --> 00:34:52,367
+And so when you click on the link,
+
+152
+00:34:52,867 --> 00:34:56,408
+the content of the web page
+
+153
+00:34:56,408 --> 00:35:00,947
+is gathered from the databases on the server side.
+
+154
+00:35:01,488 --> 00:35:05,927
+Which means that if you go today and click on the link,
+
+155
+00:35:05,927 --> 00:35:17,907
+Okay, the content will be different than yesterday. If you go tomorrow, the content will be different. But in static pages, usually the content is changing rarely.
+
+156
+00:35:17,908 --> 00:35:23,188
+Okay. Now, especially the news websites,
+
+157
+00:35:25,508 --> 00:35:33,908
+websites that keeps changing the contents. For example, the websites for e-commerce sites and
+
+158
+00:35:33,908 --> 00:35:42,307
+Omvir, Hepsi Boroda, etc. They are changing their content because they are gathering their content
+
+159
+00:35:42,307 --> 00:35:50,548
+from the database okay on the other hand the wikipedia the content of the websites do not
+
+160
+00:35:50,548 --> 00:36:00,548
+change okay so therefore uh so this is why we are calling the so the these pages static web and these
+
+161
+00:36:00,548 --> 00:36:07,107
+uh pages in this area dynamic web now all together both static web and the dynamic web
+
+162
+00:36:07,107 --> 00:36:13,908
+when they come together what we call is the public web. Okay, the public web is the
+
+163
+00:36:13,908 --> 00:36:21,107
+kind of web that can be accessed by anyone.
+
+164
+00:36:17,684 --> 00:36:21,783
+Okay, by using a URL you can access to these pages
+
+165
+00:36:22,843 --> 00:36:26,043
+Okay, now if you look at it now
+
+166
+00:36:26,444 --> 00:36:29,463
+the pages that have static URL here are
+
+167
+00:36:30,684 --> 00:36:32,684
+indexed pages, which means that
+
+168
+00:36:33,644 --> 00:36:35,423
+search engines
+
+169
+00:36:35,423 --> 00:36:37,423
+they crawl the
+
+170
+00:36:37,843 --> 00:36:45,104
+Content of the static pages and they create a table which we will call inverted table
+
+171
+00:36:45,104 --> 00:36:53,743
+okay inverted index table and they are using this table when they are doing the search which means
+
+172
+00:36:53,743 --> 00:37:01,663
+that search is being done on a table okay and and the content of this table is gathered from the
+
+173
+00:37:02,303 --> 00:37:11,584
+html pages that are crawled from the web and also outside of this public web area you also see a
+
+174
+00:37:11,583 --> 00:37:18,303
+hidden web. Now the hidden web is the kind of web that can be only
+
+175
+00:37:18,303 --> 00:37:23,184
+accessed from a particular website. So let's think of
+
+176
+00:37:28,703 --> 00:37:34,303
+main page there are lots of sub pages, internal pages.
+
+177
+00:37:34,303 --> 00:37:54,343
+Okay, but you can only access to those internal pages by going to the main page of the Amazon and doing by doing the search on the Amazon website, you can you can see the availability of this pages and you can access them.
+
+178
+00:37:54,343 --> 00:38:12,403
+Okay, so which means that in on the web, there are also web pages, but those web pages can only be accessed through a particular website. So therefore we are calling them as hidden because they are not indexed by the search engines.
+
+179
+00:38:12,404 --> 00:38:28,404
+Okay, and there is another part of the web which we will call semantic web. Okay, and this so what is semantic web and every web page in order to be accessed has HTML pages. Okay.
+
+180
+00:38:28,404 --> 00:38:38,404
+Okay, and in addition to the HTML page, you might also have another type of file, which we will call RDF.
+
+181
+00:38:39,404 --> 00:38:41,404
+Or OVL.
+
+182
+00:38:43,404 --> 00:38:47,404
+These are the name. These are the extensions of the files.
+
+183
+00:38:47,404 --> 00:38:53,404
+Okay, and these types of files are being used in semantic web.
+
+184
+00:38:53,404 --> 00:39:16,484
+Okay, so what is the purpose of these files? So why do we need additional files in addition to the HTML page? Okay, the semantic web allows us to run intelligent agent applications. Okay, they can that that can interact with the web pages and extract information that are useful to us.
+
+185
+00:39:16,484 --> 00:39:34,664
+Okay. For example, just think of a doctor's website. On the doctor's website, in addition to the HTML page, there could be a semantic web file,.ovl file.
+
+186
+00:39:34,663 --> 00:39:45,463
+And this semantic web file can indicate that this doctor is particularly focused on certain fields.
+
+187
+00:39:46,163 --> 00:39:46,243
+Okay.
+
+188
+00:39:46,663 --> 00:39:52,503
+And then this doctor is particularly available, let's say, on Thursday mornings.
+
+189
+00:39:53,103 --> 00:39:53,423
+Okay.
+
+190
+00:39:53,423 --> 00:40:07,463
+And if you have a phone that is running this intelligent agent application, this phone can interact with available doctors' web pages that are in your area.
+
+191
+00:40:07,923 --> 00:40:13,183
+And this agent can access to these OVLA files and learn that.
+
+192
+00:40:13,519 --> 00:40:28,159
+whether that doctor is close to you, whether that doctor is working in the field that you are interested in, and whether that doctor is available on the timeframe that you are available.
+
+193
+00:40:28,959 --> 00:40:42,799
+And your intelligent agent can make an appointment with the doctor's web page without actually asking you. So therefore, semantic web files is different than
+
+194
+00:40:42,799 --> 00:40:54,319
+and the current web. And the reason that they are there because they are trying to enable intelligent agents so that we can interact with the web pages.
+
+195
+00:40:59,411 --> 00:41:06,911
+Okay, now this is obviously updated. So let's see. Let's
+
+196
+00:41:08,951 --> 00:41:14,771
+Stop sharing. Let's see. I'm going to show you this current
+
+197
+00:41:15,911 --> 00:41:17,411
+Version of the sites.
+
+198
+00:41:19,411 --> 00:41:19,911
+Okay.
+
+199
+00:41:25,139 --> 00:41:29,139
+Let's share the screen again.
+
+200
+00:41:50,139 --> 00:42:19,540
+Now, obviously, the so this site is doing this calculation, the size of the web based on the index sizes of the public or globally used search engines. One of them is Google and the other one is Bing. Okay, obviously, sometimes these, in addition to these, there are also other search engines being used. Okay.
+
+201
+00:42:19,539 --> 00:42:29,739
+and this site continuously shows the total number of available pages that can be viewed on the web.
+
+202
+00:42:30,139 --> 00:42:30,639
+Okay.
+
+203
+00:42:41,907 --> 00:42:56,087
+And the point of showing you how big of the web is that, so we are talking about large scale data, the data that cannot sit on a single node.
+
+204
+00:42:56,087 --> 00:43:07,647
+The data that can be, it is so difficult to crawl and it is so difficult to create an index of that data so that the search can be done.
+
+205
+00:43:07,647 --> 00:43:24,147
+So therefore available global search engines are using lots of data centers, which consists of thousands of computers, which are working to crawl the web data, to index the web data and to conduct the search.
+
+206
+00:43:26,607 --> 00:43:27,027
+Okay.
+
+207
+00:43:28,887 --> 00:43:29,407
+Now,
+
+208
+00:43:29,407 --> 00:43:40,128
+So what is the reason that we are studying this web data? I have shown you different
+
+209
+00:43:40,128 --> 00:43:50,708
+aspects of the web data so far. And now let us talk about why the main reason that we are
+
+210
+00:43:50,707 --> 00:44:02,147
+doing this. Okay. Now you can think of the web as an object. Okay. And we are using the web
+
+211
+00:44:02,147 --> 00:44:14,667
+in our daily life frequently, not only us as the computer people who are studying the computer
+
+212
+00:44:14,667 --> 00:44:22,627
+science, but many people. Okay. And by studying the web data and by studying the web data mining
+
+213
+00:44:22,627 --> 00:44:33,507
+techniques, what we intend to do first, we intend to enable better user-driven web designs so that
+
+214
+00:44:33,507 --> 00:44:41,827
+the people who are using the web can utilize these technologies in order to use better and
+
+215
+00:44:41,827 --> 00:44:48,308
+user-friendly applications. Okay. And we are going to learn techniques that can improve the
+
+216
+00:44:49,907 --> 00:44:56,387
+performance and quality of the web applications. We are learning web data mining in order to
+
+217
+00:44:56,387 --> 00:45:02,867
+understand what goes on in social networks, because we are also going to learn social network
+
+218
+00:45:02,867 --> 00:45:13,167
+techniques. Okay. So therefore, all the techniques that we are going to learn and the understanding
+
+219
+00:45:13,167 --> 00:45:25,567
+of the data that we have on the web will help us to enable applications that can create
+
+220
+00:45:25,567 --> 00:45:27,067
+better web applications.
+
+221
+00:45:33,108 --> 00:45:42,108
+Okey Ahmet Said'den bir soru var. Semantic data örneği verebilir misiniz?
+
+222
+00:45:44,755 --> 00:45:48,755
+Bir tane semantik data örneği gösterelim o zaman.
+
+223
+00:46:19,059 --> 00:46:42,179
+Evet, burada bir tane örnek veriyorsunuz. Bu bir OVL dosyası. Bu OVL dosyasında bir structured yapı var görüyorsunuz. Bu OVL dosyası içerisinde profesörün tanımlamış yani profesör dediğimiz bir resource.
+
+224
+00:46:42,179 --> 00:46:51,539
+bu profesörün ait olmuş olduğu bir başka bir kategori var.
+
+225
+00:46:51,899 --> 00:46:53,059
+Fakülti kategori.
+
+226
+00:46:53,779 --> 00:46:56,719
+Onun da dahil olmuş olduğu başka bir kategori var.
+
+227
+00:46:56,899 --> 00:46:57,639
+Employee var.
+
+228
+00:46:57,799 --> 00:47:01,420
+Onun da dahil olmuş olduğu başka bir kategori var.
+
+229
+00:47:01,519 --> 00:47:02,079
+Person var.
+
+230
+00:47:03,399 --> 00:47:07,280
+Baktığın vakit bir taksonomi oluşturuyorum.
+
+231
+00:47:07,280 --> 00:47:11,999
+Aynı şekilde bu profesörle ilgili restriction'lar da tanımlayabiliyorum.
+
+232
+00:47:11,999 --> 00:47:25,319
+diyorum ki bu restriction, bu profesör bir organizasyon için çalışıyor. Aynı şekilde bu profesörün bir dersin hocası olduğunu ve bir dersi öğrettiğini söyleyebiliyorum.
+
+233
+00:47:25,319 --> 00:47:40,599
+Bu sadece bir OVL dosyasının bir tane parçası. Şimdi burada profesör, bakın profesör var, fakülti var, collection var, person var, employee var, course var.
+
+234
+00:47:40,600 --> 00:48:02,580
+bunların hepsi bizim için birer resource. Bu resource'ları bir araya getirdiğimiz zaman böyle bir şey karşımıza çıkıyor. Şunların hepsi birer resource. İşte person, professor, student, university ve bunların arasında da az önce gösterdiğim örnekteki property'ler var.
+
+235
+00:48:02,579 --> 00:48:31,079
+Şimdi buna dayalı olarak oluşturulmuş olan OVL dosyaları üzerinde semantik ejentler reasoning yapabiliyorlar. Yani bu profesörün bu dataya bakaraktan işte bu profesörün bu bir template, bir OVL dosyası mesela bunu ben kendim için yaratmış olsam işte profesör benim datamda üniversite yerine Yıldız Teknik Üniversitesi yazacak, person yerine benim ismim yazacak.
+
+236
+00:48:31,080 --> 00:48:40,000
+ondan sonra işte profesör yerine associate profesör yazacak. Hangi dersi veriyorum? Şu anda information retrieval'ı veriyorum şeklinde.
+
+237
+00:48:40,000 --> 00:48:57,220
+Ve benim datama, benim bu OVL templateine göre oluşturulmuş datamı inceleyen bir semantic agent benim hangi dersleri verdiğimi, haftanın hangi saatleri ofis ağrımı olduğunu, hangi saatlerde ders verdiğimi çıkartabilir.
+
+238
+00:48:57,220 --> 00:49:11,199
+bunu bana sormadan ya da benim sayfamdaki HTML'li pars edip doğal dil işleme teknikleri kullanarak da anlamaya çalışmadan sadece bu data'ya bakarak çıkartabilir.
+
+239
+00:49:11,320 --> 00:49:13,940
+Semantic Web'in sağladığı avantaj bu.
+
+240
+00:49:20,596 --> 00:49:21,836
+Tekrardan dönelim.
+
+241
+00:50:10,579 --> 00:50:12,579
+Okay.
+
+242
+00:50:16,692 --> 00:50:21,331
+Now, what we are drinking on the web is we are doing.
+
+243
+00:50:24,331 --> 00:50:26,652
+We are using wisdom of crowds.
+
+244
+00:50:26,992 --> 00:50:32,431
+In other words, we are collecting data from many people.
+
+245
+00:50:33,032 --> 00:50:41,591
+OK, and we are extracting information from from those people that do not know each other.
+
+246
+00:50:41,591 --> 00:50:51,991
+And by using that information, then we are creating applications that could be useful for all individual people.
+
+247
+00:50:52,552 --> 00:50:54,251
+And this is wisdom of crowds.
+
+248
+00:50:56,092 --> 00:50:56,192
+Okay.
+
+249
+00:50:56,912 --> 00:51:05,912
+And so in order for you to understand this, so let's take a look at some examples.
+
+250
+00:51:06,471 --> 00:51:08,831
+Now, this is an example from Flickr.
+
+251
+00:51:08,831 --> 00:51:17,351
+Flickr is a website which are used by many people for sharing pictures.
+
+252
+00:51:17,351 --> 00:51:24,151
+Okay. And you take a picture if you like it, you share on the Flickr and you just
+
+253
+00:51:24,151 --> 00:51:30,192
+share it with your friends, etc. Okay. Now, similar to Flickr, there are many other
+
+254
+00:51:30,192 --> 00:51:36,272
+pages. Flickr is just one example. Now, take a look at these pictures and these
+
+255
+00:51:36,272 --> 00:51:47,872
+pictures contain the picture that has that you can call that this is a picture of Jaguar okay
+
+256
+00:51:48,432 --> 00:51:57,872
+Jaguar as you know it's a car brand it's also a wild animal it's also a guitar type
+
+257
+00:51:57,872 --> 00:52:10,352
+and it's also a fighter aircraft okay now just if you by looking at these pictures
+
+258
+00:52:10,352 --> 00:52:18,352
+if you try to classify them which means that if you try to group them together in a
+
+259
+00:52:19,151 --> 00:52:26,671
+understandable and a meaningful way it is so difficult because if you don't know the text of
+
+260
+00:52:26,671 --> 00:52:38,511
+these the labels of these pictures it is so hard to classify by using existing technologies because
+
+261
+00:52:38,511 --> 00:52:44,751
+the content of the pictures is hard to process currently we have image processing techniques
+
+262
+00:52:44,751 --> 00:52:52,671
+etc but as you look at these pictures it is so hard to process some of these pictures and say
+
+263
+00:52:52,671 --> 00:52:57,311
+that okay the the content of this paper includes um
+
+264
+00:52:57,311 --> 00:53:02,511
+wild animals or the content of this picture includes
+
+265
+00:53:02,511 --> 00:53:10,431
+an fighter aircraft okay so therefore we need labels
+
+266
+00:53:10,431 --> 00:53:13,552
+from the person who is uploading this picture
+
+267
+00:53:13,552 --> 00:53:17,711
+okay and obviously
+
+268
+00:53:17,711 --> 00:53:26,171
+these labels should come from all the people who are sharing pictures with
+
+269
+00:53:32,271 --> 00:53:37,891
+using the labels coming from these people you can classify them and you can
+
+270
+00:53:37,891 --> 00:53:42,271
+put a group them together in a meaningful way so you can see that
+
+271
+00:53:42,272 --> 00:53:50,272
+Filiqr has this application that categorize these pictures in a nice way
+
+272
+00:53:50,272 --> 00:53:54,272
+so that there is no mix-up, there is no mistake.
+
+273
+00:53:54,272 --> 00:54:01,272
+So the point that I'm making is that
+
+274
+00:53:59,775 --> 00:54:11,775
+here by using the wisdom of crowds, by using the wisdom that comes from, by using the labels that comes from many different people who do not know each other.
+
+275
+00:54:11,775 --> 00:54:24,775
+Okay, I can create an application like this, which can intelligently cluster these pictures without looking at the content of the picture, but just looking at the label of that picture.
+
+276
+00:54:24,775 --> 00:54:32,456
+that picture. Now this is another application from Filikl.
+
+277
+00:54:32,456 --> 00:54:37,335
+Okay, as so these are now this application is
+
+278
+00:54:37,335 --> 00:54:41,176
+running on the pictures which are being taken
+
+279
+00:54:41,176 --> 00:54:49,655
+from the phones, okay, smartphones. As you know, every time you take a
+
+280
+00:54:49,655 --> 00:54:57,735
+picture with your smartphone, your phone is
+
+281
+00:54:58,135 --> 00:55:04,455
+is putting an inner file called exit file into your picture which includes
+
+282
+00:55:04,455 --> 00:55:12,455
+the GPS location of the time and also the time that the picture is taking.
+
+283
+00:55:12,455 --> 00:55:16,615
+So which means that every time you share a picture with your friend
+
+284
+00:55:16,615 --> 00:55:23,415
+you are also sending information about where you took that picture
+
+285
+00:55:23,415 --> 00:55:29,815
+in addition when you took your picture okay so the person who receives your
+
+286
+00:55:29,815 --> 00:55:36,136
+picture can understand where and when that picture was taken
+
+287
+00:55:36,136 --> 00:55:39,975
+okay so because that information is being inserted
+
+288
+00:55:39,975 --> 00:55:45,975
+into the picture file now the flicker is using this information
+
+289
+00:55:45,975 --> 00:55:53,575
+basically all the tourists who visit a certain location they take pictures and they share that
+
+290
+00:55:53,575 --> 00:56:02,295
+picture uh so with filiker what filiker is doing as you see you see here uh the circle
+
+291
+00:56:03,815 --> 00:56:12,936
+red points and these are the points of locations where many uh you know people took pictures and
+
+292
+00:56:12,936 --> 00:56:23,335
+shared with um uh flicker at a certain time okay now this application tells you um it tells you
+
+293
+00:56:23,335 --> 00:56:33,016
+that okay these are the locations that uh that has nice um uh sighting areas and if you are limited
+
+294
+00:56:33,016 --> 00:56:39,656
+if you have a limited time i mean if you want to visit this location and these are the locations
+
+295
+00:56:39,655 --> 00:56:44,135
+that you should visit because many people prefer to visit those areas
+
+296
+00:56:44,135 --> 00:56:48,135
+okay now by gathering information from many
+
+297
+00:56:48,135 --> 00:56:52,135
+other people filiker creates this application so this is
+
+298
+00:56:52,135 --> 00:56:55,975
+wisdom of crowds applications
+
+299
+00:56:57,655 --> 00:57:03,735
+okay so these applications obviously looking at the popularity diversity
+
+300
+00:57:03,735 --> 00:57:09,415
+quality and coverage okay which all together so
+
+301
+00:57:09,415 --> 00:57:23,415
+so we call all this as as the long tail concept okay
+
+302
+00:57:20,115 --> 00:57:31,115
+By using the wisdom of crowds applications. So we can utilize the wisdom of crowds for search ranking.
+
+303
+00:57:32,115 --> 00:57:35,115
+We can use for
+
+304
+00:57:37,115 --> 00:57:47,115
+It can be used by web writers and editors. Okay. And it can be used by web publishers, web taggers.
+
+305
+00:57:47,115 --> 00:57:48,115
+triggers. Okay, we are also using wisdom of crowds for queries. Okay, for example, Google is creating reports of trends. Okay, for each month. And these trend information is coming from the queries entered by different users across the globe. Okay, so therefore what Google is doing is gathering the wisdom of crowds, gathering the commonly
+
+306
+00:58:17,115 --> 00:58:31,215
+conducted queries from by many peoples and creating trends of trending reports that includes the current trends.
+
+307
+00:58:34,156 --> 00:58:34,516
+Okay.
+
+308
+00:58:39,795 --> 00:58:42,776
+Okay, how we are doing? Any questions so far?
+
+309
+00:58:56,563 --> 00:58:57,983
+Okey sorusu olan var mı?
+
+310
+00:59:00,903 --> 00:59:02,823
+Beni duyuyorsunuz diye ümit ediyorum.
+
+311
+00:59:07,827 --> 00:59:09,827
+Okay.
+
+312
+00:59:12,827 --> 00:59:22,827
+I will go forward with information retrieval. All the slides that I'm showing right now is actually the preview of
+
+313
+00:59:24,827 --> 00:59:27,827
+the topics that we will cover in this lecture.
+
+314
+00:59:27,827 --> 00:59:34,827
+Okay, so therefore this is for you to understand what kind of data that you should expect in web data mining and what kind of
+
+315
+00:59:34,827 --> 00:59:40,987
+and what kind of methodologies that you should expect to learn during the web data mining.
+
+316
+00:59:42,188 --> 00:59:48,188
+Now we are going to learn in this core course information retrieval. Now the information
+
+317
+00:59:48,188 --> 00:59:58,347
+retrieval is the task to retrieve data from collection of documents. Now information
+
+318
+00:59:58,348 --> 01:00:04,508
+retrieval is different than the database retrieval. Database retrieval as you know
+
+319
+01:00:05,147 --> 01:00:12,988
+in databases we have relational databases, we have no SQL databases, okay, and in databases we are
+
+320
+01:00:12,988 --> 01:00:22,508
+keeping the data in a structured way, okay, but in information retrieval world the data is within
+
+321
+01:00:22,508 --> 01:00:27,067
+the documents. These documents could be PDF documents, HTML documents.
+
+322
+01:00:27,067 --> 01:00:33,707
+It could be any documents that we are currently using
+
+323
+01:00:33,707 --> 01:00:41,387
+by Office applications. Okay. And information retrieval allows us
+
+324
+01:00:41,387 --> 01:00:47,628
+to conduct search by giving, by using keywords.
+
+325
+01:00:47,627 --> 01:00:56,427
+and it information retrieval is focusing on the techniques that matches the keywords with the
+
+326
+01:00:56,427 --> 01:01:05,787
+documents okay and then as a result it brings a list of documents as the result of the search
+
+327
+01:01:06,747 --> 01:01:15,467
+okay and the current applications that we are using for search like google being these are
+
+328
+01:01:15,467 --> 01:01:24,827
+examples of information retrieval. Okay, but these are the advanced information retrieval search
+
+329
+01:01:24,827 --> 01:01:32,667
+engines which are capable of analyzing the whole web data. So therefore what Google or Bing is
+
+330
+01:01:32,667 --> 01:01:38,908
+doing is they are doing information retrieval but they are doing it on top of the large scale data.
+
+331
+01:01:41,467 --> 01:01:42,507
+Okay, now
+
+332
+01:01:45,467 --> 01:01:54,027
+We can categorize what we are trying to learn from the web data in this way.
+
+333
+01:01:54,727 --> 01:02:00,628
+The raw web pages, you can call the raw web pages as the data.
+
+334
+01:02:01,507 --> 01:02:12,428
+The result of a query, you can call this as the information, as you know, as you enter a keyword into a search engine.
+
+335
+01:02:12,427 --> 01:02:19,947
+when you click on the search button it gives you results and the first result
+
+336
+01:02:19,947 --> 01:02:28,847
+page usually includes 10 different links to the web pages now that list of web
+
+337
+01:02:28,847 --> 01:02:36,807
+pages is what we are going to call information okay and if you as a user
+
+338
+01:02:36,807 --> 01:02:43,408
+user, if you look. Every web page that is listed in that
+
+339
+01:02:43,408 --> 01:02:48,607
+list in that result of that query, if you look inside of
+
+340
+01:02:48,607 --> 01:02:54,607
+that web page, each web page and if you process each web page
+
+341
+01:02:54,607 --> 01:02:55,507
+one by one.
+
+342
+01:02:56,148 --> 01:03:14,947
+The information that you retrieve from all these results is called knowledge. OK, so which means information here is the result, the list of results. The knowledge is the result of processing the
+
+343
+01:03:14,947 --> 01:03:38,648
+all these web pages listed in the result list. Okay. Now this is the knowledge which is extracted by only one user. Okay. And if many people extracts the same knowledge from the same list of results, then it becomes a wisdom. Okay.
+
+344
+01:03:38,648 --> 01:04:05,387
+bilgilik diye çevirelim bunu. Bizim uğraştığımız ham dataya bu ders kapsamında biz HTML sayfaları data diyelim. Herhangi bir keyword'ü search engine'de girdiğimiz zaman elde ettiğimiz sonuçlara ilk 10 sonuca information diyelim. Yani bu listelenmiş sonuçlara.
+
+345
+01:04:05,387 --> 01:04:26,607
+Eğer bu listedeki her bir linke tıklayıp bu linkin içerisindeki website'ın size söylediklerinizi kafanızda proses etseniz ve bunu 10 tane farklı sayfa için yapsanız bu resultları proses etmenin sonucunda sizin kafanızda oluşan bu keyword ile ilgili kafanızda oluşan şekle ne oluş diyelim.
+
+346
+01:04:26,607 --> 01:04:47,387
+Eğer 100 tane farklı kişi bu keyword'e girerek web search engine'e bu prosesi yapmışsa ve herkesin kafasında da aynı resim oluşmuşsa bu oluşmuş olan resim çok sayıda kişide oluştuğu için buna da bilgilik diyelim, wisdom diyelim.
+
+347
+01:04:51,827 --> 01:04:59,907
+Now, I already explained the difference between information retrieval and database retrieval.
+
+348
+01:05:00,607 --> 01:05:05,007
+As you know, in databases, we are keeping the data in tables.
+
+349
+01:05:06,267 --> 01:05:06,407
+Okay.
+
+350
+01:05:06,927 --> 01:05:14,588
+And so we are using primary keys and foreign keys in order to create relationships between the tables.
+
+351
+01:05:15,067 --> 01:05:19,588
+And each table has a number of columns.
+
+352
+01:05:19,588 --> 01:05:24,588
+each correspond to an attribute.
+
+353
+01:05:24,588 --> 01:05:29,588
+OK, and if you want to conduct a search,
+
+354
+01:05:29,588 --> 01:05:34,588
+the select statement is also structured.
+
+355
+01:05:34,588 --> 01:05:37,588
+So you cannot write any types of query.
+
+356
+01:05:37,588 --> 01:05:40,588
+So the query should also be based on a structure.
+
+357
+01:05:40,588 --> 01:05:45,588
+So this dark form in database world, everything is structured.
+
+358
+01:05:45,588 --> 01:05:48,588
+OK, but in information retrieval,
+
+359
+01:05:48,587 --> 01:06:17,387
+the data is being kept in documents and the types of the documents differ. It could be a text file, it could be a PDF file, it could be HTML file. Okay. And, and the search is being done by using the keywords. So you just enter one keyword or keyword groups in order to do search. So therefore, there is also no structure in the keywords,
+
+360
+01:06:17,387 --> 01:06:24,407
+as well as the documents. Okay. So therefore information retrieval is much
+
+361
+01:06:24,407 --> 01:06:33,147
+difficult, much more difficult compared to retrieval on the databases.
+
+362
+01:06:33,147 --> 01:06:41,927
+Okay. As I said, the web search is a special version of information retrieval.
+
+363
+01:06:41,927 --> 01:06:52,807
+obviously uh it has many problems it has many challenges okay because um it has high number of
+
+364
+01:06:52,807 --> 01:07:01,447
+web pages and all these web pages are sitting on distributed http servers first you need to
+
+365
+01:07:01,447 --> 01:07:08,007
+collect all these web pages into a central location so that you can process them and
+
+366
+01:07:08,007 --> 01:07:13,527
+And collecting, storing, updating documents is highly difficult.
+
+367
+01:07:14,467 --> 01:07:20,627
+And also the number of users which are using the search engine is high,
+
+368
+01:07:20,947 --> 01:07:27,847
+which means that everybody simultaneously is being searched on the search engines.
+
+369
+01:07:28,747 --> 01:07:31,227
+So then you have a scalability problem.
+
+370
+01:07:31,227 --> 01:07:36,687
+Not only you have to scale to the size of the web,
+
+371
+01:07:36,688 --> 01:07:42,208
+you have to scale to the size of the users who are using the web search engine.
+
+372
+01:07:43,488 --> 01:07:51,967
+And on the web, spam is also a problem because there are lots of web pages that are using
+
+373
+01:07:51,967 --> 01:08:03,967
+keywords that are not representing them. So there are web pages who wants to be in the first
+
+374
+01:08:03,967 --> 01:08:12,208
+10 results in the search results so therefore they are using many keywords okay many keywords
+
+375
+01:08:12,848 --> 01:08:19,647
+in order to be visible in the search results and those web pages are the spam web pages
+
+376
+01:08:20,208 --> 01:08:30,367
+so therefore information retrieval so web search engines has to find solutions to all these problems
+
+377
+01:08:36,243 --> 01:08:59,903
+Ok, that is my watch. Arkadaşlar bir 10 dakika ara vereceğiz. Şimdi saati ben bakayım. Saat 10'u 4 geçiyor. 10'u çeyrek geçe 10-15'te tekrardan devam edeceğim.
+
+378
+01:08:59,903 --> 01:09:24,004
+kapatmayın lütfen. Ara veriyoruz. Aradan sonra 10-15'te devam edeceğim. Sayımız şu anda 48. 48 olarak devam etsin. Bu arada sorusu olan varsa dersle ilgili mikrofonunu açıp bana sorabilir. Şu anda buradayım. Bir yere gitmiyorum. Sadece ara verdim.
+
+379
+01:19:21,844 --> 01:19:25,963
+Evet tekrardan merhaba arkadaşlar. Sesim geliyor mu? Tekrardan bir teyit eder misiniz?
+
+380
+01:19:31,412 --> 01:19:33,412
+Ok
+
+381
+01:19:37,939 --> 01:19:44,420
+We left off at information retrieval models.
+
+382
+01:19:46,679 --> 01:19:51,919
+In this course, we are going to study information retrieval models.
+
+383
+01:19:52,939 --> 01:20:00,239
+Information retrieval model is what in each information retrieval engine is using
+
+384
+01:20:00,239 --> 01:20:07,659
+in order to execute its functionality.
+
+385
+01:20:07,939 --> 01:20:26,559
+Okay. In order to do search. Now, and what is an information model then? It defines a query language. Okay. It presents a representation of the queries. Okay.
+
+386
+01:20:26,559 --> 01:20:40,599
+As you see, it presents a representation of the queries and it presents a representation of the documents. So you are representing the document and you are representing the query.
+
+387
+01:20:40,599 --> 01:20:51,100
+And then it represents a function that matches these queries against the documents and finds a list of results.
+
+388
+01:20:52,100 --> 01:21:01,200
+And the information retrieval engine is also introducing a ranking mechanism that ranks the results.
+
+389
+01:21:01,199 --> 01:21:09,199
+Okay. Now this picture shows you what basically information retrieval model is doing.
+
+390
+01:21:10,199 --> 01:21:15,639
+And each information retrieval engine has a particular information retrieval model.
+
+391
+01:21:16,219 --> 01:21:19,659
+Now there are different types of information retrieval models.
+
+392
+01:21:20,399 --> 01:21:23,839
+There is a Boolean information retrieval model.
+
+393
+01:21:24,279 --> 01:21:27,139
+There is vector space information retrieval model.
+
+394
+01:21:27,139 --> 01:21:34,899
+there is a statistical based information retrieval models etc. But in this course we are going to look at
+
+395
+01:21:36,659 --> 01:21:39,859
+Boolean and vector space information models.
+
+396
+01:21:47,380 --> 01:21:54,899
+We are also going to learn how we can analyze the success of the information retrieval engines.
+
+397
+01:21:55,779 --> 01:22:02,979
+okay we are going to learn how the information retrieval engines work but in addition to that
+
+398
+01:22:02,979 --> 01:22:10,659
+we are going to learn how the quality of information retrieval engines okay now take
+
+399
+01:22:10,659 --> 01:22:22,499
+a look at this example here you see that i have a collection of web pages okay and obviously since
+
+400
+01:22:22,499 --> 01:22:33,179
+I circled the collection all the collection of documents I have I have them locally just for the
+
+401
+01:22:33,179 --> 01:22:43,759
+sake of this example okay I know what's inside of this collection okay now here you see a red
+
+402
+01:22:43,759 --> 01:22:54,619
+as you see the green elliptic circle okay and you have an information retrieval engine you give a
+
+403
+01:22:54,619 --> 01:23:03,739
+query to this information retrieval engine it returns you a result set okay now so this green
+
+404
+01:23:03,739 --> 01:23:13,459
+right here indicates the result set okay and usually we have in the result set the many
+
+405
+01:23:13,459 --> 01:23:20,899
+information retrieval engines show us the top 10 scores okay and so let's consider this as the top
+
+406
+01:23:20,899 --> 01:23:28,819
+10 a list of the results that matches to this query okay and this
+
+407
+01:23:30,579 --> 01:23:47,479
+This elliptic circle here is indicating the documents that matches to this query, which means that this elliptic circle has the documents that are relevant to this query.
+
+408
+01:23:47,479 --> 01:23:58,459
+okay now as you see the information retrieval engine retrieved top 10 results okay and some
+
+409
+01:23:58,459 --> 01:24:06,239
+of the results are relevant to this query but the rest of them are not relevant okay so this means
+
+410
+01:24:06,239 --> 01:24:13,959
+that the information retrieval engine was successful to show us some relevant results
+
+411
+01:24:13,959 --> 01:24:21,319
+in the result set but some of them are not relevant so therefore by using this information
+
+412
+01:24:21,319 --> 01:24:28,599
+so we can create we can utilize some quality metrics so there are two quality metrics one
+
+413
+01:24:28,599 --> 01:24:38,199
+of them is recall okay now the recall is amongst the retrieve documents okay amongst the three
+
+414
+01:24:38,199 --> 01:24:46,079
+retrieved documents. So what are the amongst the relevant documents that are retrieved?
+
+415
+01:24:46,279 --> 01:24:51,399
+OK. What are the portion of the relevant
+
+416
+01:24:51,599 --> 01:24:55,919
+retrieved documents to the total relevant documents? OK.
+
+417
+01:24:56,119 --> 01:24:59,919
+This is the recall and the precision.
+
+418
+01:25:00,119 --> 01:25:07,239
+And what are the proportion of the relevant retrieved documents?
+
+419
+01:25:07,239 --> 01:25:10,739
+Amongst the total retrieved documents. That's the precision.
+
+420
+01:25:11,859 --> 01:25:21,179
+Bana bir query, bir arama motorunda girdiğim zaman bana vermiş olduğu ilk 10 sonuç içerisinde relevant olanlarını,
+
+421
+01:25:21,779 --> 01:25:27,439
+bu ilk 10 sonuca böldüğüm zaman relevant olanlarının sayısını bu sonuç bana precision'i veriyor.
+
+422
+01:25:29,319 --> 01:25:34,179
+Bunu tutturma diye çeviriyor birçok yayın.
+
+423
+01:25:34,179 --> 01:25:49,180
+One of the recalls is that our first 10% of the relevant results are called recall.
+
+424
+01:25:49,180 --> 01:25:54,180
+This is the recall. Recall is called the recall.
+
+425
+01:25:54,179 --> 01:25:54,359
+Okay.
+
+426
+01:25:55,139 --> 01:25:59,059
+Now, normal web arama motorlarında
+
+427
+01:25:59,059 --> 01:26:01,259
+we're going to get a query in a query
+
+428
+01:26:01,259 --> 01:26:02,419
+and we're going to look at
+
+429
+01:26:02,419 --> 01:26:05,299
+all the relevant documents.
+
+430
+01:26:05,299 --> 01:26:06,099
+We don't know.
+
+431
+01:26:08,619 --> 01:26:09,499
+But,
+
+432
+01:26:10,219 --> 01:26:14,059
+the first 10% of the query
+
+433
+01:26:14,059 --> 01:26:16,059
+looks at the query
+
+434
+01:26:16,059 --> 01:26:17,939
+when we look at the query
+
+435
+01:26:17,939 --> 01:26:19,699
+and see how relevant
+
+436
+01:26:19,699 --> 01:26:20,539
+we can see.
+
+437
+01:26:20,539 --> 01:26:22,539
+Okay.
+
+438
+01:26:22,539 --> 01:26:30,939
+Dolayısıyla web arama motorlarının kalitesini ölçerken ağırlıklı olarak biz precision metricleri kullanıyoruz.
+
+439
+01:26:31,799 --> 01:26:38,759
+Ama eğer bu kullandığımız information retrieval web üzerinde değilse,
+
+440
+01:26:39,199 --> 01:26:44,399
+belli bir internet üzerindeyse, bir kurum için bir information retrievalımız varsa
+
+441
+01:26:44,399 --> 01:26:50,719
+ve bunun üzerinde kaliteyi ölçüyorsak o zaman recall metriclerini de kullanabiliriz.
+
+442
+01:26:52,539 --> 01:27:08,539
+Okay, now, precision metric has different types, you can have a precision for top 10, you can have a precision for top 20, top 30, etc. Okay, but the commonly used precision metric is precision top 10.
+
+443
+01:27:08,539 --> 01:27:27,539
+Okay, now, this is one of two quality metrics. Okay, but there are also other aspects of the search quality results. The other one is diversity. For example, let's take a look at this search.
+
+444
+01:27:28,659 --> 01:27:41,139
+Result, as you see, here you entered some keywords and you pressed on the search button and these are the results that comes from the search engine.
+
+445
+01:27:41,799 --> 01:27:41,939
+Okay.
+
+446
+01:27:42,399 --> 01:27:49,840
+And as you see, all the results are coming from the same website, which means that there is no diversity.
+
+447
+01:27:49,840 --> 01:28:05,979
+Okay, and this so this means that the search engine is gathering the information from a particular website and the search engine is showing you the point of view of the particular websites for this query.
+
+448
+01:28:07,060 --> 01:28:16,979
+So this is not what we expect from a search engine, but we expect we expect to see results coming from different websites.
+
+449
+01:28:16,979 --> 01:28:28,180
+Okay, so therefore the search engine is responsible of paying attention to diversity as well.
+
+450
+01:28:28,299 --> 01:28:34,560
+So therefore, when you talk about the quality, so not only we are going to look at the precision,
+
+451
+01:28:35,079 --> 01:28:37,340
+also we should also be looking at the diversity.
+
+452
+01:28:37,340 --> 01:28:55,340
+Okay. Now in this course, as I said that we are going to learn information retrieval and within the information retrieval, we are going to study how we can represent the documents.
+
+453
+01:28:55,340 --> 01:28:59,820
+documents and also how we can represent the data.
+
+454
+01:29:00,719 --> 01:29:01,119
+Okay.
+
+455
+01:29:01,359 --> 01:29:06,479
+Now, um, what we are going to learn, we are going to learn Begok
+
+456
+01:29:06,479 --> 01:29:11,520
+words representation, which means let's take a look at this example.
+
+457
+01:29:12,539 --> 01:29:14,200
+Here, there is a statement.
+
+458
+01:29:14,299 --> 01:29:15,520
+That's one step.
+
+459
+01:29:15,960 --> 01:29:20,020
+That's one small step for a man, a giant leap for mankind.
+
+460
+01:29:20,299 --> 01:29:20,560
+Okay.
+
+461
+01:29:20,560 --> 01:29:24,719
+This is, this statement can be represented like this.
+
+462
+01:29:25,340 --> 01:29:43,279
+Okay, as you see, I'm going to pick each word and put it into this representation. If the word has repetitions, then I'm going to indicate its count. Okay, this is one way for representing a document or a sentence.
+
+463
+01:29:43,279 --> 01:29:51,279
+Obviously, I mean, this backup representation has disadvantages and advantages.
+
+464
+01:29:51,279 --> 01:30:02,279
+Disadvantages is that if you do this, if you utilize this representation model, you are using the order of the words.
+
+465
+01:30:02,279 --> 01:30:07,279
+We are losing the order of the order of two words.
+
+466
+01:30:07,279 --> 01:30:13,759
+words and so obviously different documents have different structures.
+
+467
+01:30:14,959 --> 01:30:24,239
+Okay for example let's take a look at to this one. So by if you did not see the statement if you just
+
+468
+01:30:24,239 --> 01:30:31,039
+look at the this set of representation and this does not tell you much about
+
+469
+01:30:31,039 --> 01:30:42,639
+this statement, this representation. For example, some HTML documents, in HTML documents,
+
+470
+01:30:42,639 --> 01:30:48,559
+we have different tags. For example, we have hat, we have meta tag, we have body,
+
+471
+01:30:48,559 --> 01:30:59,119
+and within the body we are using different tags for bold, for italic, for headers. Now all these
+
+472
+01:30:59,119 --> 01:31:08,399
+tags gives some information about the importance of that word in that html page.
+
+473
+01:31:09,279 --> 01:31:16,479
+For example, if there was a word in an html page which has a header tag.
+
+474
+01:31:17,108 --> 01:31:32,267
+around it, then this means that that particular word is more important compared to the other words in that HTML page. So therefore, Beghoff representation does not capture
+
+475
+01:31:32,267 --> 01:31:39,948
+the importance of the word or it does not capture the document structure of the word.
+
+476
+01:31:39,948 --> 01:32:07,767
+Okay, and also the order gets lost. But at the same time, Beg of Words representation is highly simple. It is efficient for storage and retrieval. Okay, and because it's simple, information retrieval models that are using Beg of Words representation usually performs good,
+
+477
+01:32:07,767 --> 01:32:19,847
+but it needs some additional improvements so that information retrieval engines can perform much better.
+
+478
+01:32:24,595 --> 01:32:34,875
+And as you see in information retrieval, so we are using these bag of words representation.
+
+479
+01:32:35,775 --> 01:32:52,675
+And when using the bag of words representation, you can create a vector of zeros and ones that would indicate the bag of words representation.
+
+480
+01:32:52,675 --> 01:33:08,595
+In this particular example, here you see there is one vector and for each of the words that are that is available in the in the statement, I'm creating a vocabulary space.
+
+481
+01:33:08,595 --> 01:33:14,636
+And this is the space for all the vocabularies that are included in the document.
+
+482
+01:33:14,635 --> 01:33:24,315
+and by and these are my columns and so here you see that I'm using a vector representation
+
+483
+01:33:24,315 --> 01:33:29,635
+for the statement if the word is available here then I'm going to use one
+
+484
+01:33:29,635 --> 01:33:33,275
+if the word is not there then I'm going to use zero
+
+485
+01:33:33,275 --> 01:33:38,675
+if the word is available for more than one then I'm going to use
+
+486
+01:33:38,676 --> 01:33:43,676
+number two. OK. And similar, I can use the same representation
+
+487
+01:33:43,676 --> 01:33:50,676
+here for the statement. So this means that you see that I have two different statements.
+
+488
+01:33:50,676 --> 01:33:56,676
+All together, I am going to create a vector vocabulary space.
+
+489
+01:33:56,676 --> 01:34:07,676
+OK. And and then I'm going to look at the number of times that each word is appearing in each statement and I'm going to put a number here.
+
+490
+01:34:07,675 --> 01:34:16,075
+here so in that in that sense I can use these vectors of numbers that can
+
+491
+01:34:16,075 --> 01:34:21,275
+represent this particular statement okay so this makes my job a little bit
+
+492
+01:34:21,275 --> 01:34:26,955
+easier by using the in this vectors
+
+493
+01:34:30,131 --> 01:34:40,031
+Okay, in this course, we are we are going to use these terms that you see on your screen right now. And these terms are frequently
+
+494
+01:34:45,031 --> 01:34:46,431
+Confused people
+
+495
+01:34:48,431 --> 01:34:58,131
+So, for example, the internet and the web. Okay, many people are not distinguishing these two words.
+
+496
+01:34:58,131 --> 01:35:24,532
+obviously they differ. Internet is the infrastructure that we are using in order to communicate servers, okay, or in order to communicate our laptops, our phones with each other. So it's the infrastructure, okay. But the web is
+
+497
+01:35:24,531 --> 01:35:47,171
+is a software layer that is on top of the internet. Okay, the web cannot work unless there is a internet network underneath in it. Okay, the web consists of lots of web pages that provides links to each other.
+
+498
+01:35:47,172 --> 01:36:07,091
+and all these web pages are sitting on different application servers across the globe and the internet is allowing us creating a physical network underneath that soft network underneath that underneath the web.
+
+499
+01:36:07,091 --> 01:36:25,212
+Okay, so therefore the you can think of the internet as the enabling networking technology that would allow us to utilize web. Okay, now there is also a difference between link and hyperlink.
+
+500
+01:36:25,211 --> 01:36:36,891
+link is the URL that we utilize in order to go from one page to another. So let's say
+
+501
+01:36:55,796 --> 01:37:04,995
+Okay. Now, as you see, now this here is a text. Okay. Now, if I
+
+502
+01:37:04,995 --> 01:37:23,296
+Open this link. Now, this is a URL, right? This is a URL. And URL is the, or the link or the URL is the open form of the link, which can be used in the text
+
+503
+01:37:23,296 --> 01:37:53,275
+component of the browser so that you can make a HTTP request. But here you see that I'm only seeing a text, but it is a clickable text. If I click on it, it will take me from this location to another location. So therefore here I'm calling this hyperlink. Okay. The link is behind the text, but this is an actual link. So there is a difference between the actual link and the
+
+504
+01:37:53,275 --> 01:38:19,135
+hyperlink. Hypertext and hypermedia is the same thing. You can have a text that if you click on it, it will take you to someplace else. You can have a media, multimedia, you can click on it, it will take you someplace else. Okay. HTML, as you know, obviously you know what HTML is.
+
+505
+01:38:19,135 --> 01:38:27,735
+HTTP is the protocol, HTML is the hypertext that the browsers are rendering and showing us the content.
+
+506
+01:38:28,695 --> 01:38:28,815
+Okay.
+
+507
+01:38:29,375 --> 01:38:36,335
+And the URL is, I have just talked to you, show you what URL is.
+
+508
+01:38:36,335 --> 01:38:45,015
+Anchor text is the text that is visible on that URL.
+
+509
+01:38:45,016 --> 01:39:03,615
+So, so this master chief content is the anchor text. Okay. The, the text within that a hyperlink or to text within that clickable URL is called anchor text.
+
+510
+01:39:08,659 --> 01:39:13,479
+Okay, in this course, we are going to be talking about the major search engines.
+
+511
+01:39:13,640 --> 01:39:14,419
+How do they work?
+
+512
+01:39:15,019 --> 01:39:17,620
+How do they crawl the data?
+
+513
+01:39:17,939 --> 01:39:20,359
+How do they answer search engines?
+
+514
+01:39:20,899 --> 01:39:25,680
+How do they manage to scale to high number of users?
+
+515
+01:39:26,000 --> 01:39:28,899
+We are going to be talking all of that.
+
+516
+01:39:28,899 --> 01:39:35,099
+We are going to be, we will have a chapter that focuses on crawlers.
+
+517
+01:39:35,099 --> 01:39:42,819
+as you see uh so when you when you enter a keyword and when you do a search you see the
+
+518
+01:39:42,819 --> 01:39:51,219
+search results but these search results are being done on the inverted index okay it's not being
+
+519
+01:39:51,219 --> 01:39:59,700
+done on the actual web pages okay this means that all the web pages that you can search
+
+520
+01:39:59,699 --> 01:40:07,779
+are already crawled and downloaded to the local repository, local central repository,
+
+521
+01:40:08,219 --> 01:40:16,219
+and they are indexed into a table. When you do a search, you are doing a search on this table.
+
+522
+01:40:17,039 --> 01:40:27,219
+Okay. Now, this is the Google version from many years ago. As you see, if you look at it carefully,
+
+523
+01:40:27,219 --> 01:40:31,139
+It is different than the version that we currently are using.
+
+524
+01:40:31,819 --> 01:40:37,939
+As you see, you see there is a link called cached.
+
+525
+01:40:38,380 --> 01:40:40,840
+You see there is a link for similar pages.
+
+526
+01:40:41,719 --> 01:40:51,179
+In the previous versions of Google search engine, you were able to see the cache, the previous version of the website,
+
+527
+01:40:51,179 --> 01:40:56,880
+and you were able to see the similar pages that are similar to this one.
+
+528
+01:40:57,219 --> 01:41:07,119
+But the search engines are improving themselves and they're changing their functionalities based on the market and their customers' requests.
+
+529
+01:41:07,919 --> 01:41:08,559
+Okay.
+
+530
+01:41:08,880 --> 01:41:20,559
+Now, as you see, in order to download all the content from the different distributed HTTP servers, we are using crawler.
+
+531
+01:41:20,659 --> 01:41:23,240
+We are going to be talking how the crawler is working.
+
+532
+01:41:23,919 --> 01:41:24,139
+Okay.
+
+533
+01:41:24,199 --> 01:41:25,240
+You enter a keyword.
+
+534
+01:41:27,219 --> 01:41:29,520
+You search for many different pages.
+
+535
+01:41:30,040 --> 01:41:32,479
+So you download several pages.
+
+536
+01:41:33,059 --> 01:41:36,180
+And from those several pages, you extract other links.
+
+537
+01:41:36,939 --> 01:41:43,779
+And then your crawler is accessing to other HTTP servers and downloading some other documents
+
+538
+01:41:43,779 --> 01:41:48,759
+and extracting the links from those documents and then go to other HTTP servers.
+
+539
+01:41:48,759 --> 01:41:55,859
+This way, basically, the search engines crawling the web, jumping from one page to another.
+
+540
+01:41:56,600 --> 01:41:56,759
+Okay.
+
+541
+01:41:57,219 --> 01:42:03,020
+And once all the web pages are downloaded, then it creates an immersive index.
+
+542
+01:42:03,020 --> 01:42:06,299
+It creates a catalog and on top of this catalog.
+
+543
+01:42:07,180 --> 01:42:09,139
+So we are conducting the search.
+
+544
+01:42:09,259 --> 01:42:14,679
+So this is a nice picture that illustrates what I have just told you.
+
+545
+01:42:15,159 --> 01:42:19,679
+Here, every search engine has its own crawler.
+
+546
+01:42:20,559 --> 01:42:23,960
+Google has a crawler named Googlebot.
+
+547
+01:42:23,960 --> 01:42:31,600
+Bing has a crawler called MSNBot and all these crawlers are crawling the web every day.
+
+548
+01:42:32,920 --> 01:42:38,520
+Okay, now if you consider the bandwidth of the whole wide world, whole internet,
+
+549
+01:42:39,219 --> 01:42:46,460
+I think more than 60% of the whole bandwidth is being utilized by the search engines.
+
+550
+01:42:46,459 --> 01:42:56,359
+Okay, because they are crawling the web and their users are searching the web, searching the index of these search engines all the time.
+
+551
+01:42:57,171 --> 01:43:04,391
+As you see, so the crawler is scrolling the web and downloading the web pages.
+
+552
+01:43:04,391 --> 01:43:12,731
+And once the web pages are downloaded, and there is a text and link analysis which is done on these web pages.
+
+553
+01:43:13,891 --> 01:43:19,671
+And these crawlers are creating an inverted index.
+
+554
+01:43:19,671 --> 01:43:29,291
+and they also conduct a link analysis and create a ranking mechanism based on the popularity of the web page.
+
+555
+01:43:29,291 --> 01:43:32,852
+So we will talk about the page rank, we will talk about the link analysis,
+
+556
+01:43:33,212 --> 01:43:37,532
+and we will talk about how the inverted index is being constructed.
+
+557
+01:43:38,831 --> 01:43:46,512
+And once the inverted index is constructed, whenever you enter a keyword,
+
+558
+01:43:46,512 --> 01:43:53,512
+What search engine is doing, it is taking this keyword, it is looking at the index table,
+
+559
+01:43:53,512 --> 01:44:01,511
+okay, and it finds the results that corresponding to that particular entry of that index table.
+
+560
+01:44:01,511 --> 01:44:14,511
+It creates the results this way and it re-ranks the results based on the popularity information coming from the PageRank database.
+
+561
+01:44:14,511 --> 01:44:22,191
+database. Okay. And once the results are re-ranked and then you see them on the search results page.
+
+562
+01:44:25,311 --> 01:44:29,551
+Okay, in this course, we are going to also be talking about the social networks,
+
+563
+01:44:30,351 --> 01:44:40,111
+Facebook, Twitter, Skype, Instagram, all the social networks, we are going to be talking how do they
+
+564
+01:44:40,111 --> 01:44:50,511
+work. OK, we are going to talk about we are going to talk about the social media metrics,
+
+565
+01:44:50,511 --> 01:45:00,511
+social network metrics. What makes a particular actor of the social media important than the other
+
+566
+01:45:00,511 --> 01:45:11,631
+actors. So we are going to be talking about them. Okay. So overall, in the end, you can,
+
+567
+01:45:11,832 --> 01:45:19,511
+you can ask yourself, so you can ask that question to me as well. Why should I know
+
+568
+01:45:19,511 --> 01:45:24,011
+about information retrieval and web search engines? Why should I take this course?
+
+569
+01:45:24,011 --> 01:45:39,011
+First of so one reason obviously so you have to complete your credit requirements in order to graduate and this is one of the elective courses that you can take.
+
+570
+01:45:39,011 --> 01:45:54,951
+And in addition to that, once you graduate from the department, so you will see that majority of the businesses today are using unstructured information.
+
+571
+01:45:55,951 --> 01:46:05,311
+So the data that are being used in the relational database are right now a small percentage of the whole data.
+
+572
+01:46:05,311 --> 01:46:16,211
+So therefore, you will be using information retrieval engines one way or the other in the jobs that you will be working.
+
+573
+01:46:16,211 --> 01:46:33,332
+Okay. So in addition to that, there are lots of jobs right now that are trying to do search optimization, search engine optimization, social network optimization.
+
+574
+01:46:33,331 --> 01:46:41,331
+And right now computer engineers and computer scientists are dealing with the problems related to those areas.
+
+575
+01:46:42,331 --> 01:46:45,331
+OK, now.
+
+576
+01:46:49,619 --> 01:46:50,619
+This is the set of lectures that I want to talk today, talk about today. Again, I've started with the introduction. I talked about the what kind of expectation do I have from you during the course and starting from next chapter, I'm going to be starting from the chapter two, which is not here associated rule
+
+577
+01:47:19,619 --> 01:47:44,579
+mining and sequential rule mining on the web data. And I'm going to remind you some of the machine learning techniques, supervised learning and unsupervised learning. I will not spend much time here, but I want to, I will have to remind you what these techniques are. Then I'm going to go into hard topics of the web mining starting from information.
+
+578
+01:47:44,579 --> 01:48:13,579
+Evet arkadaşlar ben bugün burada duracağım. Sizlere yaklaşık ya dördüncü haftaya da beşinci hafta dönem projenizi tespit etmenizi isteyeceğim. Bunun için size bir tane dönem projesi öneri formu vereceğim. Siz bunu dolduracaksınız.
+
+579
+01:48:13,579 --> 01:48:37,239
+Bu dönem projesiyoneri formunda hangi projeyi yapacaksınız? Proje grupları iki kişiden oluşacak, kiminle yapacaksınız? Ondan sonra bu projenin çıktısı ne olacak? Hangi webmining tekniklerini kullanacaksınız? Hangi dataset'i kullanacaksınız? Bunları belirtmenizi isteyeceğim.
+
+580
+01:48:37,239 --> 01:48:52,439
+bunun içinde ben son tarihi dersin sayfasında belirteceğim ve ders projesi öneri formunu da yayınlayacağım. Bir sayfalık bir proje yapmanızı istiyorum.
+
+581
+01:48:52,439 --> 01:49:08,159
+bunu da sizin konuyu sizin belirlemenizi benim de onayından geçmesini istiyorum ki sevdiğiniz ve istediğiniz bir webmining yöntemini yine sizin bulacağınız bir webdatası üzerinde bu dönem boyunca çalışmanızı istiyorum.
+
+582
+01:49:08,319 --> 01:49:18,420
+Yani kod yazacaksınız bunun bir demosu olacak ve bu proje puanı da en az midterm kadar etkin olacak.
+
+583
+01:49:22,439 --> 01:49:38,819
+Dersle ilgili söyleyeceğim bu kadar bugün için. Sizlere dersin sayfasıyla ilgili bilgiyi USIS üzerinden göndereceğim. Dolayısıyla projeleriniz, USIS'ten gelen e-mailleri lütfen kontrol edin.
+
+584
+01:49:39,479 --> 01:49:46,979
+Evet, Ali Can bir soru soruyor. Hocam finalde proje mi olacak? Hayır. Ya şu an için öyle bir durum yok.
+
+585
+01:49:46,980 --> 01:50:04,399
+Web crawling uygulaması mı olacak diye Alper soruyor. Bu bir örnek olabilir. Yani web crawling uygulaması olabilir, web usage mining olabilir, link analizi uygulaması olabilir ya da bir hibrit search uygulaması olabilir.
+
+586
+01:50:04,399 --> 01:50:13,519
+sizlere farklı geçen senelerde yapılmış farklı webmiling uygulama örneklerinden bahsedeceğim.
+
+587
+01:50:14,879 --> 01:50:21,359
+Onlardan bir tanesini yahut da siz kendi istediğiniz dönem projesini seçebilirsiniz.
+
+588
+01:50:21,519 --> 01:50:28,299
+Ama proje grupları bir kişilik öğrenci grubu ya da iki kişilik olabilecek, üç kişi kesinlikle olmayacak.
+
+589
+01:50:29,519 --> 01:50:31,759
+Kod yazmanız gerekecek projeler bunlar.
+
+590
+01:50:34,399 --> 01:50:42,079
+Sadece tek bir dönem projesi olacak, ödev olmayacak, midterm olacak ve final olacak. Ahmet Barış'ın sorusu gibi.
+
+591
+01:50:45,332 --> 01:51:07,592
+Evet, dersi sonradan katılanlar için arkadaşlar dersin kaydını kaç kişi girmiş bunları şu anki sistem bize verebiliyor. Derse katılımınızı istiyorum. Dersin kaydını sonradan izleyebiliyorsunuz ama mutlaka online olarak derse katılımınızı istiyorum.
+
+592
+01:51:07,592 --> 01:51:22,012
+bunu sadece ben istemiyorum aynı zamanda bölüm de bunu bizlerden istiyor. Her şey kayıt altında olduğu için benim de bu konuda artık herhangi bir inisiyatif kullanma hakkımda kalmamış oluyor.
+
+593
+01:51:27,732 --> 01:51:33,512
+Teorisini de konuşacağız. Uygulama örneğini de yapacağız. Ali Can soru soruyor.
+
+594
+01:51:33,512 --> 01:51:42,892
+yani web mining ile ilgili sadece slide'ları mı anlatacaksınız yoksa kod gösterecek misiniz, algoritmu gösterecek misiniz onu soruyor. Evet o da olacak o da olacak.
+
+595
+01:51:50,292 --> 01:51:52,292
+Başka sorusu olan?
+
+596
+01:51:53,891 --> 01:52:02,292
+Evet onu söyledim Rea. Tek kişi yapabilirsiniz. İki kişilik grup da olabilir ama üç kişi olmayacak.
+
+597
+01:52:07,315 --> 01:52:24,375
+Bunun dışında dersle ilgili sorusu olan olursa Office Hour'larda bu Office Hour'ları da dersten sonra olacak şekilde bu hafta başlayamıyorum ama dersten sonra olacak şekilde düşüreceğim.
+
+598
+01:52:24,375 --> 01:52:38,255
+onun için de sorusu olan arkadaşlarla ayrı bir zoom toplantısı yaparaktan bir saat ya da işte telebe göre sorularınız varsa dersle ilgili bunları konuşabileceğiz.
+
+599
+01:52:42,836 --> 01:52:53,676
+Tamam galiba sorusu olan yok. Teşekkür ederim katıldığınız için. 49 kişiyiz. Kendinize iyi bakın arkadaşlar. İyi günler dilerim.

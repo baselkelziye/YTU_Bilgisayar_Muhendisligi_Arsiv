@@ -1,0 +1,3887 @@
+1
+00:23:54,355 --> 00:24:00,375
+Arkadaşlar herkese günaydın. Sesim geliyor mu? Bir teyhid eder misiniz lütfen?
+
+2
+00:24:02,656 --> 00:24:03,276
+Geliyordum.
+
+3
+00:24:04,156 --> 00:24:05,035
+Tamamdır. Süper.
+
+4
+00:24:08,819 --> 00:24:18,679
+Bugün konuşacağımız konu kitabın yedinci çeptere Social Network Analysis and Link Analysis konusunu konuşacağız.
+
+5
+00:24:21,959 --> 00:24:31,559
+Yine dersin sayfasında bu dersle ilgili slide'ları da dönemin başında post ettim. Oradan da takip edebilirsiniz.
+
+6
+00:24:31,559 --> 00:24:41,220
+Bugün amacım bu chapter'ın olabildiğince önemli bir kısmını işleyebilmek
+
+7
+00:24:48,243 --> 00:24:54,643
+Okay, let's get started.
+
+8
+00:24:56,115 --> 00:25:24,115
+Okay, today we are going to be talking about social network analysis. At first, let us start talking about why social network analysis is important for us. How do we use social network analysis in web mining?
+
+9
+00:25:19,476 --> 00:25:24,175
+Now, on the left-hand side, you see a complex network.
+
+10
+00:25:24,175 --> 00:25:32,175
+In a complex network, you have some nodes and you have links between the nodes.
+
+11
+00:25:32,835 --> 00:25:39,455
+And every node, every link between the nodes is created autonomously,
+
+12
+00:25:39,656 --> 00:25:46,255
+which means that there is no central location or central entity
+
+13
+00:25:46,255 --> 00:25:55,855
+that decides which relation has to be between the nodes. Okay now on the right hand side
+
+14
+00:25:55,855 --> 00:26:04,095
+there is a result of a social network analysis which means that a social network analysis
+
+15
+00:26:05,215 --> 00:26:14,415
+applied on the complex network and in turn a resulting report is produced on the right hand
+
+16
+00:26:14,415 --> 00:26:28,935
+side. As you see on the right hand side, most of the social network analysis reports are based on
+
+17
+00:26:28,935 --> 00:26:38,735
+visualization, which means that we are visualizing the result of the analysis. And you see a
+
+18
+00:26:38,735 --> 00:26:43,015
+visualization of a social network analysis report.
+
+19
+00:26:43,815 --> 00:26:47,615
+And you see some nodes are colored in different way.
+
+20
+00:26:48,135 --> 00:26:52,115
+You can see isolated subnetworks.
+
+21
+00:26:52,115 --> 00:26:55,155
+You can see a giant subnetwork.
+
+22
+00:26:56,875 --> 00:27:01,215
+You can see an island nodes,
+
+23
+00:27:01,375 --> 00:27:05,575
+which means that there are nodes that do not have any connection
+
+24
+00:27:05,575 --> 00:27:08,935
+with other nodes that are available.
+
+25
+00:27:09,935 --> 00:27:13,395
+Now, if you create such a report
+
+26
+00:27:13,395 --> 00:27:16,476
+by means of visualization,
+
+27
+00:27:17,295 --> 00:27:21,235
+you can have some knowledge
+
+28
+00:27:21,235 --> 00:27:23,755
+about what's going on in this complex network.
+
+29
+00:27:24,575 --> 00:27:27,875
+So this is what we are doing in social network analysis.
+
+30
+00:27:27,875 --> 00:27:31,795
+We are trying to understand a complex network
+
+31
+00:27:31,795 --> 00:27:37,695
+where the links between the nodes are created autonomously.
+
+32
+00:27:41,107 --> 00:27:42,107
+Okay. Now in computer science or in computer engineering we have been studying social network analysis but in fact social network analysis have been there for many years. Now you see a social network analysis report extracted from newspapers. Okay. Now as you see what they have done is that they created links
+
+33
+00:28:11,107 --> 00:28:20,107
+between the terminology, the finance terminology, unique terminology, obviously, and that appear in different newspapers.
+
+34
+00:28:21,227 --> 00:28:35,987
+Now, if the two term or if the two unique name is within the same paragraph or if it is within the same news article, now done, they create a link between them.
+
+35
+00:28:35,987 --> 00:29:01,587
+okay now this way by analyzing the news articles that appear in the newspapers they have been able to create a network that reflect how the terms or unique names in finance connected to each other okay this has been done even before
+
+36
+00:29:01,587 --> 00:29:07,487
+the social existing social networks that we know appear.
+
+37
+00:29:09,527 --> 00:29:10,687
+Okay.
+
+38
+00:29:11,507 --> 00:29:19,907
+And again, usually we are trying to understand the social networks through visualization.
+
+39
+00:29:21,567 --> 00:29:22,667
+Okay.
+
+40
+00:29:29,172 --> 00:29:33,632
+Okey büyütebilirim. Bir saniye o zaman şöyle yapalım.
+
+41
+00:29:37,203 --> 00:29:47,464
+Ahmet Karış dersin arasında ya da dersten sonra sorunu alacağım. Tamam mı? Şeyini gördüm, notunu gördüm.
+
+42
+00:29:54,228 --> 00:30:05,987
+Okay now you see a again a report of a social network analysis and this is for network.
+
+43
+00:30:07,027 --> 00:30:18,947
+Okay this is for communication network which is internet. Okay now it obviously so there is web
+
+44
+00:30:18,947 --> 00:30:25,827
+as we know it and there is internet and we we made it this we distinguish these two things
+
+45
+00:30:25,827 --> 00:30:31,427
+so internet is the communication network underlying communication network
+
+46
+00:30:31,427 --> 00:30:38,067
+and the web worldwide web on top of the communication network we have this
+
+47
+00:30:38,067 --> 00:30:45,027
+soft network where there is there are documents html documents when in in the html documents we
+
+48
+00:30:45,027 --> 00:30:52,927
+They have hyperlinks, you can call them as soft links, which are pointing one web page to another.
+
+49
+00:30:53,948 --> 00:30:54,088
+Okay.
+
+50
+00:30:54,307 --> 00:31:01,128
+And these HTML pages are sitting on top of HTTP servers or application servers.
+
+51
+00:31:02,067 --> 00:31:02,327
+Okay.
+
+52
+00:31:02,327 --> 00:31:09,668
+Now you can think that on the internet, there are lots of servers.
+
+53
+00:31:10,187 --> 00:31:10,287
+Okay.
+
+54
+00:31:10,287 --> 00:31:16,147
+they all are connected with underlying communication network.
+
+55
+00:31:16,627 --> 00:31:20,307
+And some of the servers have the web documents.
+
+56
+00:31:21,027 --> 00:31:21,088
+Okay.
+
+57
+00:31:21,487 --> 00:31:26,827
+So when you distinguish, you can distinguish it in the following way.
+
+58
+00:31:27,207 --> 00:31:33,728
+Internet is a communication network, world wide area network.
+
+59
+00:31:33,728 --> 00:31:44,348
+and the worldwide web is a is another community another network another complex network which is
+
+60
+00:31:44,348 --> 00:31:51,067
+sitting on top of the internet okay in the so this is how you can make the distinguish
+
+61
+00:31:51,067 --> 00:32:00,787
+you can distinguish these two networks okay now this is the visualization of internet visualization
+
+62
+00:32:00,787 --> 00:32:06,728
+of this connection network in the globe.
+
+63
+00:32:12,500 --> 00:32:18,679
+Now, this picture that you see is another social network analysis report.
+
+64
+00:32:18,980 --> 00:32:27,139
+Again, I want to remind you that all the pictures that you see is as a result of a social network analysis.
+
+65
+00:32:27,439 --> 00:32:31,699
+And all the reports of social network analysis is done via visualization.
+
+66
+00:32:31,699 --> 00:32:46,879
+Now, when you look at this picture, you see that it's a social network analysis based on the political views of the blog websites.
+
+67
+00:32:48,500 --> 00:32:57,719
+Now, you see that, especially these political blogs belong to the United States.
+
+68
+00:32:57,839 --> 00:33:01,119
+As you know, there are two different political views.
+
+69
+00:33:01,119 --> 00:33:05,919
+There are two major political views, Democrats and Republicans.
+
+70
+00:33:07,619 --> 00:33:22,379
+And by visualizing which political view that the bloc is reflecting, they created this social network analysis.
+
+71
+00:33:23,500 --> 00:33:28,919
+And as you see, some nodes are bigger than the other ones.
+
+72
+00:33:28,919 --> 00:33:35,419
+some circle are bigger than the other one so this means that now these blocks have
+
+73
+00:33:35,419 --> 00:33:42,959
+more connections okay or they have higher importance compared to the other ones
+
+74
+00:33:42,959 --> 00:33:50,440
+in their network the other interesting thing that that that you see all the blue ones they are
+
+75
+00:33:50,439 --> 00:33:59,319
+they're connecting to the blue ones and the red ones are clustered together. So which means that
+
+76
+00:33:59,319 --> 00:34:11,199
+now the same political view blog websites give links to the same political view. So they don't
+
+77
+00:34:11,199 --> 00:34:25,199
+actually give a link to the opposite political point of view. Okay, now this gives you an
+
+78
+00:34:25,199 --> 00:34:34,559
+understanding that if you believe in one political view, now since you there is no way that you will
+
+79
+00:34:34,559 --> 00:34:42,479
+be able to see other sites point of views because all the blue ones they are pointing to each other
+
+80
+00:34:42,479 --> 00:34:49,360
+and all the red ones they are pointing to each other now it is so rare that they're they're
+
+81
+00:34:49,360 --> 00:34:56,479
+actually giving links to the other point of view okay now that's something that
+
+82
+00:34:56,479 --> 00:35:00,399
+we are able to extract from the social network analysis okay
+
+83
+00:35:04,371 --> 00:35:15,371
+Now, the picture that you see right now is another result of social network analysis and this is done on the email data sets extracted from a company.
+
+84
+00:35:15,371 --> 00:35:30,371
+Okay, now, here you see that there are small clusters within the company that exchange emails frequently compared to others. Okay, so see, there are small
+
+85
+00:35:30,371 --> 00:35:33,751
+so let's
+
+86
+00:35:37,460 --> 00:35:38,179
+Sorry.
+
+87
+00:35:40,999 --> 00:36:05,659
+Okay, so there are small, small cross clusters that that give links to each other. And there are some notes actually, which are which have links to many other clusters. Okay, there are central notes that give links to many other sub clusters.
+
+88
+00:36:05,659 --> 00:36:31,919
+Now from this, so why do we need such a social network analysis on the email data sets? Because it will give you an idea how the company is interacting with each other. Now, if you are the CEO of the company, and if you have such a social network analysis results, you will be able to understand that
+
+89
+00:36:31,919 --> 00:36:41,079
+how the company previously in past year or past two years interacted with each other.
+
+90
+00:36:41,079 --> 00:36:41,720
+Okay.
+
+91
+00:36:42,680 --> 00:36:51,400
+So based on that, so you can understand the level of communication in the company via emails.
+
+92
+00:36:51,859 --> 00:36:57,719
+And if there is something that needs to be improved, okay, and you can take actions.
+
+93
+00:37:03,347 --> 00:37:07,227
+Now, this is another social network analysis report results.
+
+94
+00:37:08,387 --> 00:37:10,887
+And as you see, this is from Facebook.
+
+95
+00:37:11,927 --> 00:37:16,107
+And in Facebook, as you know, so we can create our profile.
+
+96
+00:37:16,247 --> 00:37:17,387
+We can have friends.
+
+97
+00:37:17,547 --> 00:37:20,067
+And we can also categorize our friends.
+
+98
+00:37:20,188 --> 00:37:28,448
+We can say close friends, friends from work, from friends from different networks, etc.
+
+99
+00:37:29,747 --> 00:37:30,047
+Okay.
+
+100
+00:37:30,047 --> 00:37:50,327
+And here a network is analyzed, a Facebook network is analyzed, and as you can see, different subnetworks here are colored in different ways.
+
+101
+00:37:50,327 --> 00:38:00,647
+OK, and by analyzing this, so you you will understand that there are different sub networks in this Facebook network data.
+
+102
+00:38:01,307 --> 00:38:10,367
+OK, and if you look at the size of the nodes, some nodes are bigger than the other ones.
+
+103
+00:38:11,008 --> 00:38:18,327
+Now, that gives you an idea that now these nodes are important compared to the other nodes in that network.
+
+104
+00:38:18,327 --> 00:38:26,607
+okay and and as you you also see that there are highly connected sub networks such as the red ones
+
+105
+00:38:26,607 --> 00:38:34,727
+okay such as the purple ones and also you see that there are there are networks like
+
+106
+00:38:34,727 --> 00:38:45,007
+like the one here and also there are ice there are isolated sub networks like the yellow ones here
+
+107
+00:38:45,007 --> 00:38:55,527
+And they are highly connected between them, but they are loosely connected with the giant subnetwork that you see here.
+
+108
+00:38:56,047 --> 00:39:04,767
+Now, this gives you an idea how the subnetworks of a given complex network is connected amongst them.
+
+109
+00:39:04,767 --> 00:39:16,327
+Okay. Now, this is another social network analysis, and this is done on the recipe websites.
+
+110
+00:39:16,327 --> 00:39:31,407
+okay now let's say your task is to understand a country's eating habits okay let's say
+
+111
+00:39:31,407 --> 00:39:45,008
+I give you a task to research Italian eating habits okay so what you can do you can go to the
+
+112
+00:39:45,008 --> 00:39:53,248
+recipe websites that belongs to Italy. Okay. And you can crawl all those websites.
+
+113
+00:39:54,248 --> 00:40:05,308
+And you can create a network. Okay. Of the recipe websites that point to each other.
+
+114
+00:40:05,307 --> 00:40:17,747
+Okay, and then you can extract the keywords from these websites and based on the frequency,
+
+115
+00:40:18,747 --> 00:40:24,047
+remember what frequency is, the number of times that term appears in that website,
+
+116
+00:40:24,387 --> 00:40:29,327
+based on the frequency of the keywords, you can make the keyword a little bit bigger.
+
+117
+00:40:29,327 --> 00:40:33,288
+You can make the font of the keyword bigger than the other.
+
+118
+00:40:34,227 --> 00:40:34,347
+Okay.
+
+119
+00:40:34,767 --> 00:40:40,847
+Then you can create a social network analysis based on this.
+
+120
+00:40:41,727 --> 00:40:55,247
+And by looking at this, I can understand that in Italian kitchen, what people are actually eating in majority compared to the other ingredients.
+
+121
+00:40:55,487 --> 00:40:58,687
+What ingredients in the recipes are important?
+
+122
+00:40:58,687 --> 00:41:03,687
+For example, if you look at this picture, you see that in this...
+
+123
+00:41:03,987 --> 00:41:15,927
+In this country's recipes, salt is important, egg is important, butter is important, onion is important.
+
+124
+00:41:15,927 --> 00:41:29,187
+So you can basically understand which ingredients are important in a given country's eating habits.
+
+125
+00:41:29,187 --> 00:41:51,187
+Okay. Now, all these social network analysis that I have shown you are important in order to understand the complex networks. And as again, I want to remind you that social network analysis reports are done by visualization in general.
+
+126
+00:41:51,188 --> 00:42:11,288
+Okay. Now, in web data mining, obviously, we are going to be learning the complex network created by HTML documents. Okay. So which means that World Wide Web is also a complex network. Okay.
+
+127
+00:42:11,287 --> 00:42:23,027
+And so we will be studying this complex network in order to understand how the ranking of the websites are done.
+
+128
+00:42:23,927 --> 00:42:23,987
+Okay.
+
+129
+00:42:24,867 --> 00:42:33,827
+But in addition to that, we will also learn the techniques that we are using in order to do social network analysis.
+
+130
+00:42:34,287 --> 00:42:39,507
+So we will learn how you can create such reports.
+
+131
+00:42:39,907 --> 00:42:40,627
+Okay.
+
+132
+00:42:41,287 --> 00:42:51,287
+Now, in order to understand that, first we need to understand the terminology that we are using in social network analysis.
+
+133
+00:42:51,287 --> 00:42:57,287
+As you see, in a complex network, we have nodes.
+
+134
+00:42:57,287 --> 00:43:05,287
+And we have links that connect these nodes.
+
+135
+00:43:05,287 --> 00:43:24,867
+Okay. And the social network analysis is a multidisciplinary topic. It is being studied in different science discipline. Mathematicians, they are studying the social network, complex networks.
+
+136
+00:43:24,867 --> 00:43:30,847
+Computer scientists are studying the complex networks.
+
+137
+00:43:31,167 --> 00:43:33,347
+Physicists and socialists.
+
+138
+00:43:34,327 --> 00:43:37,807
+Sociology is also studying the complex networks.
+
+139
+00:43:38,367 --> 00:43:41,647
+In math, we are calling the points vertices.
+
+140
+00:43:41,987 --> 00:43:43,387
+In computer science, nodes.
+
+141
+00:43:43,707 --> 00:43:45,447
+In physics, they are calling sites.
+
+142
+00:43:47,627 --> 00:43:51,527
+Sociology, calling the nodes as actors.
+
+143
+00:43:51,527 --> 00:44:03,847
+Okay. In computer science, obviously, we are calling the edges between the nodes links. And in different fields, they have different names for the links. Okay.
+
+144
+00:44:25,619 --> 00:44:34,619
+Now, let us move forward the terminology that we are using in order to understand the social network analysis.
+
+145
+00:44:38,619 --> 00:44:39,619
+In a, in a,
+
+146
+00:44:40,619 --> 00:44:54,619
+In a network, in a complex network, we can either have a directed network or undirected network. So what directed network is, if the links between the nodes have a direction, then we call this directed network.
+
+147
+00:44:55,619 --> 00:45:02,619
+If the links between the nodes have no direction, okay, then we call this undirected graph.
+
+148
+00:45:03,619 --> 00:45:07,619
+Now think of the social network analysis LinkedIn.
+
+149
+00:45:08,619 --> 00:45:14,619
+Okay, I believe most of you have a profile page in LinkedIn.
+
+150
+00:45:15,619 --> 00:45:21,619
+So what would you call LinkedIn? Is it a directed graph or undirected graph?
+
+151
+00:45:26,771 --> 00:45:35,572
+you can write your answers on the chat or or you can open your uh microphone so the question is
+
+152
+00:45:35,572 --> 00:45:42,291
+linkedin okay so there is one register it says undirected and it's an essay is undirected
+
+153
+00:45:44,372 --> 00:45:54,612
+uh ahmed says both okay okay in fact it is an undirected okay because you don't know
+
+154
+00:45:54,612 --> 00:46:02,371
+who started the connection okay you don't know uh so which person started the first
+
+155
+00:46:03,332 --> 00:46:12,852
+connection request you cannot understand that okay uh therefore when so uh in linkedin so we
+
+156
+00:46:12,852 --> 00:46:20,211
+say that it's an undirected graph but let's talk about twitter in twitter people are following
+
+157
+00:46:20,211 --> 00:46:25,651
+each other so therefore you can understand who is the follower and who is the follow-e
+
+158
+00:46:26,371 --> 00:46:34,132
+okay so therefore there is a directed graph so so take a facebook as an example in facebook normally
+
+159
+00:46:35,172 --> 00:46:41,571
+so it's an undirected because in also facebook you cannot understand who started the connection
+
+160
+00:46:41,571 --> 00:46:50,371
+but so in facebook there is also another feature which which has followed okay and so you can also
+
+161
+00:46:50,371 --> 00:46:59,011
+follow people's uh pages so therefore so for the for facebook you can say both it's both directed
+
+162
+00:46:59,011 --> 00:47:07,811
+and undirected graph okay so therefore when we look at a social network uh if if if if there is
+
+163
+00:47:07,812 --> 00:47:16,051
+a way to say to uh to understand that who is actually uh gave the first link to the other
+
+164
+00:47:16,051 --> 00:47:31,812
+person then we call that as a directed graph otherwise we call it as undirected graph
+
+165
+00:47:27,764 --> 00:47:55,264
+Okay. Now, in a social network analysis, as we said, we had nodes and we had links between the nodes. Okay. And for links, we have different attributes. Okay. The attribute could be a weight. It could be a ranking. It could be a type or it could be different properties.
+
+166
+00:47:55,264 --> 00:48:06,903
+For example, let's talk about one attribute. So you have two nodes, okay, and there is a link between these two nodes, okay.
+
+167
+00:48:06,903 --> 00:48:19,784
+Now, if these two nodes are, for example, they are communicating with each other and the frequency of communication is very high, then the weight of this link will be higher.
+
+168
+00:48:20,784 --> 00:48:20,923
+Okay.
+
+169
+00:48:21,083 --> 00:48:27,603
+If the communication between the two is low, then the weight of the link will be lower.
+
+170
+00:48:28,243 --> 00:48:28,563
+Okay.
+
+171
+00:48:28,764 --> 00:48:30,523
+So this is one example.
+
+172
+00:48:30,523 --> 00:48:45,103
+so you can so if this is a cdr data which means that the telecom data then the the frequency of
+
+173
+00:48:45,103 --> 00:48:52,643
+the phone calls that the the two person is exchanging okay so you that could be used as
+
+174
+00:48:52,643 --> 00:49:01,843
+weight okay if this is an email data sets the frequency of the emails exchange between the two
+
+175
+00:49:01,843 --> 00:49:11,283
+person could be used as weight okay now the second attribute could be ranking as you know in facebook
+
+176
+00:49:11,283 --> 00:49:21,183
+you can categorize so you can categorize the links that you are the connections that you have
+
+177
+00:49:21,183 --> 00:49:31,083
+You can categorize your connections as best friends, as close friends, as school friends, etc.
+
+178
+00:49:32,283 --> 00:49:32,484
+Okay.
+
+179
+00:49:33,903 --> 00:49:44,243
+And in fact, so this is the type attribute, categorizing your friend as friend, as best friend, as relative friend.
+
+180
+00:49:44,243 --> 00:49:54,204
+But within the same type, for example, the friend category, you can also give rankings to your friend.
+
+181
+00:49:54,323 --> 00:50:00,323
+You can say, okay, so this is my first best friend, second best friend, third best friend.
+
+182
+00:50:00,924 --> 00:50:06,003
+Not only you can categorize, also you can put ranking to the links.
+
+183
+00:50:06,003 --> 00:50:16,003
+Okay, now similar to weight ranking and type there are other properties that we can use in order to.
+
+184
+00:50:16,003 --> 00:50:22,003
+In order to talk about the link attributes.
+
+185
+00:50:22,003 --> 00:50:32,003
+Okay, now this is an example of how the ranking attribute is being used for example.
+
+186
+00:50:32,003 --> 00:50:45,003
+example, now this is a visualization of a social network from dormitory students. Okay. Now they
+
+187
+00:50:45,003 --> 00:50:54,503
+asked, they asked to dormitory students, which friends that they would like to sit in the dining
+
+188
+00:50:54,503 --> 00:51:04,343
+table okay now every person identifies their first choice and their second choice and based on that
+
+189
+00:51:04,343 --> 00:51:14,183
+so they create a network as you see every person has two links one indicates the best first choice
+
+190
+00:51:14,183 --> 00:51:17,223
+the second indicates the second choice
+
+191
+00:51:17,588 --> 00:51:44,947
+Okay. Now here you see that we are attribute, we are attribute, we are using the attribute that attached to link, which is the ranking. Okay. Every person gives an attribute to the link that they have a ranking attribute, one or two. And based on this, you can create a social network and you can analyze this.
+
+192
+00:51:44,947 --> 00:52:05,747
+and what this social network analysis shows you that there are several people that are highly popular like this one and this one and these people are being selected by many others for dining table partner.
+
+193
+00:52:10,387 --> 00:52:37,187
+Now this is another visualization and this visualization indicates the trust and distrust. Okay. Now again, here, this time we are attribute, we are using an attribute for the link between the nodes as trusted or untrusted or distrusted. Okay.
+
+194
+00:52:37,187 --> 00:53:05,027
+Now, the red ones indicate the distrust, okay, the blue ones indicate the trust, okay, now, based on, so, this whole social networks indicates the interactions between the human, interactions between people, and they ask each person whether they trust their
+
+195
+00:53:07,187 --> 00:53:26,167
+and they trust to the other person in their network. So based on that, they create a link. And as you see now in this organization, there is a distrust and a huge amount of distrust which needs to be solved.
+
+196
+00:53:36,307 --> 00:53:46,587
+Okay, now we talked about the nodes, we talked about the links that connect these nodes,
+
+197
+00:53:47,587 --> 00:53:55,228
+and then we talked about that we can add attributes to the links between the nodes,
+
+198
+00:53:55,867 --> 00:54:02,927
+okay, and we also talked about that we can use these attributes when we are visualizing the
+
+199
+00:54:02,927 --> 00:54:12,127
+social network analysis. Now let's talk about how we can represent a social network data.
+
+200
+00:54:12,927 --> 00:54:20,807
+Now there are three different ways that we can visualize the social network data.
+
+201
+00:54:21,327 --> 00:54:30,348
+One is we can use a matrix called adjacency matrix, komşuluk matrice. Okay. And another one
+
+202
+00:54:30,347 --> 00:54:37,227
+is edge list and the third one is adjacency list. Okay now let's take a look at the
+
+203
+00:54:38,347 --> 00:54:47,707
+adjacency matrix first. Now when we represent the social network we can use a matrix. Okay and in
+
+204
+00:54:47,707 --> 00:54:56,267
+this matrix if there is a link between two nodes such as here as you see i has a link to j.
+
+205
+00:54:56,267 --> 00:55:04,227
+if you see that there is a link between them then in the matrix you need to put one
+
+206
+00:55:04,227 --> 00:55:15,367
+to the entry a sub i j okay now if there is no link between the between i and j then
+
+207
+00:55:15,367 --> 00:55:25,507
+in the matrix for the end for the position a sub i j so we need to use zero okay
+
+208
+00:55:25,507 --> 00:55:44,347
+Okay, so, so if there is a link, then we are going to use one, otherwise we are going to use zero. Okay, now, in a social network, some nodes may have self loops. In other words, some nodes may point to itself.
+
+209
+00:55:44,347 --> 00:56:03,347
+Okay, so in that case, if that if you see is such thing in your social network, then the a sub ii, you need to put one in that position. Otherwise, you need to put zero. Okay, if there is no self loop.
+
+210
+00:56:03,347 --> 00:56:09,647
+So here you need to put zero. Otherwise, if there is a loop, then you need to put one.
+
+211
+00:56:11,347 --> 00:56:20,707
+And if your subnetwork, if your social network is undirected, which means that they both have links to each other.
+
+212
+00:56:20,707 --> 00:56:29,028
+OK, an undirected graph can be shown like this or you can it can be also.
+
+213
+00:56:32,107 --> 00:56:40,927
+It can be also between the two links that could be one straight line instead of a line with arrows.
+
+214
+00:56:41,327 --> 00:56:47,587
+OK, but this indicates that it's an undirected because they both give links to each other.
+
+215
+00:56:47,587 --> 00:56:59,867
+OK, so in that particular case, the values that you would have in A sub IJ and A sub JI will be the same.
+
+216
+00:57:00,168 --> 00:57:03,028
+They will be equal to each other. OK.
+
+217
+00:57:04,727 --> 00:57:11,127
+Now, this is a toy example that illustrates what I just told you.
+
+218
+00:57:11,127 --> 00:57:18,127
+As you see, I have five different nodes here, and so they somehow give links to each other.
+
+219
+00:57:18,127 --> 00:57:24,127
+And I want to use adjacency metrics in order to represent the social network.
+
+220
+00:57:24,403 --> 00:57:26,884
+And obviously you have five nodes.
+
+221
+00:57:26,884 --> 00:57:31,523
+So I should have five rows and five columns.
+
+222
+00:57:32,183 --> 00:57:32,303
+Okay.
+
+223
+00:57:32,563 --> 00:57:33,903
+Now let's pick one.
+
+224
+00:57:34,463 --> 00:57:36,763
+Let's pick the fifth node.
+
+225
+00:57:37,203 --> 00:57:37,463
+Okay.
+
+226
+00:57:37,703 --> 00:57:42,763
+And as you see, fifth node has a link to one and two.
+
+227
+00:57:43,263 --> 00:57:50,744
+As you see here, I have one, which indicates that fifth node gives link to first node.
+
+228
+00:57:50,744 --> 00:57:57,164
+and I have one here, which means that fifth node gives link to the second node.
+
+229
+00:57:57,723 --> 00:58:06,744
+And the rest of the values here are zero because five is only giving link to one and two.
+
+230
+00:58:07,783 --> 00:58:14,924
+So this way, and you see that zero is not giving any link to any other nodes.
+
+231
+00:58:14,924 --> 00:58:21,104
+So therefore, sorry, one is not giving any links to any other nodes.
+
+232
+00:58:21,563 --> 00:58:33,543
+So therefore, if you look at the entry or the row for one, all values has to be zero because one is not giving any links to any other nodes in the node network.
+
+233
+00:58:33,963 --> 00:58:37,383
+OK, so this way you can create your adjacency matrix.
+
+234
+00:58:37,383 --> 00:59:06,683
+Now adjacency matrix was the first representation data representation, the second data representation that we use edge list. Okay, now here, instead of using a matrix representation, we use a list based representation and we list all the links that that appear in the social network.
+
+235
+00:59:06,683 --> 00:59:20,903
+So how many links do I have? I have one, two, three, four, six, okay, seven in one direction, and eight in other direction, okay.
+
+236
+00:59:20,903 --> 00:59:25,484
+Now, let's take a look at the list.
+
+237
+00:59:25,963 --> 00:59:31,543
+So, you see 2, 3, okay?
+
+238
+00:59:31,903 --> 00:59:33,724
+So, that's one edge.
+
+239
+00:59:34,004 --> 00:59:35,463
+2, 4, okay?
+
+240
+00:59:35,784 --> 00:59:38,284
+That's another edge or link.
+
+241
+00:59:38,963 --> 00:59:40,243
+3, 2, okay?
+
+242
+00:59:40,543 --> 00:59:42,903
+That's the link in the other direction.
+
+243
+00:59:43,523 --> 00:59:45,383
+3, 4, there is this one.
+
+244
+00:59:45,823 --> 00:59:47,323
+4, 5, okay?
+
+245
+00:59:47,704 --> 00:59:50,743
+5, 2, and 5, 1, okay?
+
+246
+00:59:50,903 --> 01:00:00,344
+Basically what you are doing, you are listing all available links that appear in the network.
+
+247
+01:00:01,303 --> 01:00:10,183
+And as you list, okay, you are going from in the lexicographical order, you start with the
+
+248
+01:00:10,183 --> 01:00:20,903
+links where the first element is the smallest and in increasing order you go to the links
+
+249
+01:00:20,903 --> 01:00:29,784
+where the first element is the higher okay so this is how you list the available links or edges
+
+250
+01:00:29,784 --> 01:00:39,223
+okay now this is the second representation and the third representation is called adjacency list
+
+251
+01:00:39,223 --> 01:00:49,223
+Okay, now this time different from this one this time what we do we write the all available nodes.
+
+252
+01:00:49,223 --> 01:01:01,223
+Okay, as a list and we put column next to it and then we write if that node has links to other nodes then we write the values here.
+
+253
+01:01:01,223 --> 01:01:09,463
+values here. For example, one has no links to any other nodes, therefore after one we have
+
+254
+01:01:09,463 --> 01:01:15,223
+no nodes available. Two has two links to other nodes.
+
+255
+01:01:14,543 --> 01:01:42,743
+four and three, as you see. So therefore I write the notes that the links is giving link to. OK, similarly for three, four and four and four, five. OK, now this is the other, the third representation of data for social network analysis.
+
+256
+01:01:42,483 --> 01:01:51,324
+Okay, now when we have a social network, we have some metrics that will summarize what's going on in that network.
+
+257
+01:01:51,324 --> 01:01:56,444
+Okay, so one of them is degree and degree distribution.
+
+258
+01:01:56,963 --> 01:02:01,803
+So let's take a look at, I will take a look at degree and degree distribution.
+
+259
+01:02:02,283 --> 01:02:07,703
+The second one is the components, connected components in that social network.
+
+260
+01:02:08,443 --> 01:02:10,963
+Now let's take a look at the degree.
+
+261
+01:02:10,963 --> 01:02:15,664
+Now, degree tells you how many links that a node has.
+
+262
+01:02:16,923 --> 01:02:29,543
+For example, you see, so this is another social network analysis report, and you see that some nodes has higher number of links compared to the other ones.
+
+263
+01:02:29,844 --> 01:02:37,204
+Some nodes has one link, some nodes has, for example, two links, but some nodes has higher links.
+
+264
+01:02:37,203 --> 01:02:48,523
+OK, now when you do visualize it, if one note has a high, high number of links, then you visualize that note with a bigger circle.
+
+265
+01:02:49,204 --> 01:02:58,683
+OK, so therefore that indicates that that particular note has higher importance compared to the other notes that are available in the network.
+
+266
+01:02:58,683 --> 01:03:00,123
+Okay.
+
+267
+01:03:02,123 --> 01:03:12,963
+And you see that, so these nodes, which has bigger circles, which means that they have high number of degree.
+
+268
+01:03:13,483 --> 01:03:15,303
+In other words, high number of links.
+
+269
+01:03:15,903 --> 01:03:21,463
+So therefore, degree means that the number of links that each node has.
+
+270
+01:03:22,483 --> 01:03:23,163
+Okay.
+
+271
+01:03:23,164 --> 01:03:34,464
+and the degrees could be so in degree out degree if or if it is a undirected graph degree okay
+
+272
+01:03:34,464 --> 01:03:43,103
+in degree means in degree and out degree is used in the directed graphs degree is used
+
+273
+01:03:43,103 --> 01:03:51,043
+both in directed and undirected graph okay now let's let's look at the in degree in degree how
+
+274
+01:03:51,043 --> 01:03:58,004
+many number of links that a node is receiving from other nodes, the number of in-links,
+
+275
+01:03:58,204 --> 01:04:04,284
+in other words. In this particular example, the in-degree number is three for this particular
+
+276
+01:04:04,284 --> 01:04:10,864
+node. Out-degree means how many number of links that a node is giving to other nodes,
+
+277
+01:04:11,723 --> 01:04:17,583
+okay? In other words, the number of out-links. In this particular example, the number of
+
+278
+01:04:17,583 --> 01:04:25,263
+out degree is two. Now degree as we just said in the previous slide the number of links that each
+
+279
+01:04:25,263 --> 01:04:33,243
+note has regardless of their uh regardless of where they are pointing. Okay now in this particular
+
+280
+01:04:33,243 --> 01:04:39,983
+note this is a directed graph so three so this note is receiving three notes and it's giving
+
+281
+01:04:39,983 --> 01:04:48,004
+it's it's receiving three links and it is also giving out two links but its degree is five
+
+282
+01:04:48,004 --> 01:04:54,784
+because so degree means that number of links that each node has okay
+
+283
+01:05:01,427 --> 01:05:13,848
+What we are going to do, we are going to look at a degree in order to understand how a node in a graph is important.
+
+284
+01:05:14,027 --> 01:05:27,967
+But later on, we will also talk about there are other metrics that we can use to understand the importance of a node, such as betweenness and closeness.
+
+285
+01:05:27,967 --> 01:05:35,367
+But for now, we are going to use the degree as the sign of importance.
+
+286
+01:05:35,968 --> 01:05:40,127
+And we are going to call it centrality, degree centrality.
+
+287
+01:05:40,567 --> 01:05:40,727
+Okay.
+
+288
+01:05:41,627 --> 01:05:46,567
+Degree centrality or merkezilik metriyi.
+
+289
+01:05:47,247 --> 01:05:56,267
+So this will give us an idea to identify the important nodes in the network.
+
+290
+01:05:57,967 --> 01:06:07,907
+Now, so let's see how we can calculate the out degree and in degree from the adjacency matrix.
+
+291
+01:06:07,907 --> 01:06:16,507
+So remember, so we talked about adjacency matrix. Adjacency matrix is one way to represent the data.
+
+292
+01:06:17,387 --> 01:06:25,567
+And so this is here our toy example, remember. And from this, we created this adjacency matrix.
+
+293
+01:06:25,567 --> 01:06:34,527
+OK, now, so let us calculate the out degree for the node number three.
+
+294
+01:06:34,947 --> 01:06:41,008
+So for node number three, let us calculate the out degree by using the adjacency matrix.
+
+295
+01:06:41,007 --> 01:06:57,007
+Okay, now remember in the adjacency matrix, the rows are indicating the nodes that are giving the labels of the rows are indicating the nodes that are giving the link.
+
+296
+01:06:57,007 --> 01:07:03,107
+the labels of the columns are indicating the nodes that are receiving the link.
+
+297
+01:07:03,847 --> 01:07:03,967
+Okay.
+
+298
+01:07:04,287 --> 01:07:09,887
+Now, if there is a one from, if there is a one here,
+
+299
+01:07:10,027 --> 01:07:14,947
+this means that this node is giving a link to this node.
+
+300
+01:07:15,247 --> 01:07:18,767
+The node number five is giving a link to node number one.
+
+301
+01:07:19,267 --> 01:07:19,587
+Okay.
+
+302
+01:07:20,007 --> 01:07:25,167
+Now, if this is the case, if you look at every row,
+
+303
+01:07:25,167 --> 01:07:39,987
+This means that every row indicates the odd degree of a node, because if there are ones here, this means that these are the outlinks that this particular node is giving out.
+
+304
+01:07:40,907 --> 01:07:47,727
+Now, take a look at the row three, which means that here we are talking about the node number three.
+
+305
+01:07:47,728 --> 01:07:52,728
+and here you see two one in this row.
+
+306
+01:07:53,368 --> 01:07:55,567
+So which means that node number three
+
+307
+01:07:55,567 --> 01:07:57,308
+is giving out two links.
+
+308
+01:07:57,808 --> 01:07:59,748
+The first link that it is giving out
+
+309
+01:07:59,748 --> 01:08:01,508
+to node number two.
+
+310
+01:08:01,927 --> 01:08:03,888
+The second link that it is giving out
+
+311
+01:08:03,888 --> 01:08:05,688
+to node number four.
+
+312
+01:08:06,308 --> 01:08:06,408
+Okay.
+
+313
+01:08:07,588 --> 01:08:12,487
+Now by adding the values in this row,
+
+314
+01:08:12,608 --> 01:08:14,847
+you can calculate the out degree.
+
+315
+01:08:14,847 --> 01:08:38,327
+So therefore, to make this calculation simple, so we can show the odd degree computation in this way, okay, which means that the summation of the values in the same row will give the odd degree of that particular node.
+
+316
+01:08:38,327 --> 01:08:46,327
+Okay, similarly we can also calculate the in degree this time the summation of the column.
+
+317
+01:08:46,579 --> 01:09:12,760
+that belongs to a node will give you the in degree of that particular node. Okay. Because every one here indicates the in link that this node is receiving. Okay. In this particular case, node number three is receiving only one in link. Okay. So therefore its in degree will be one.
+
+318
+01:09:12,760 --> 01:09:25,559
+okay this is and this is how you can calculate the in degree of a one so this this tells you exactly what I just told you.
+
+319
+01:09:30,100 --> 01:09:39,320
+Okay, now we understood how to calculate the degree from adjacency matrix.
+
+320
+01:09:39,320 --> 01:09:57,199
+Okay, now if we can calculate the in-links or in-degree and out-degree of the nodes, okay, you can also write the in-degree sequences of a given network.
+
+321
+01:09:57,199 --> 01:10:03,439
+In this particular case, so we have a network which which have two isolated parts.
+
+322
+01:10:04,079 --> 01:10:07,199
+OK, now here you see one isolated part.
+
+323
+01:10:07,519 --> 01:10:09,399
+This is another isolated part.
+
+324
+01:10:09,399 --> 01:10:12,679
+But in total, this is a whole network.
+
+325
+01:10:12,919 --> 01:10:17,439
+OK, and in this network, I have eight different nodes.
+
+326
+01:10:17,879 --> 01:10:20,319
+OK, and I would like to.
+
+327
+01:10:21,359 --> 01:10:27,079
+Write down the in degree values of every node that I have available.
+
+328
+01:10:27,199 --> 01:10:39,579
+In this particular case, so these values indicate the in-degree values of the nodes in this network.
+
+329
+01:10:40,619 --> 01:10:46,999
+And so you see that I have three nodes that receives two links.
+
+330
+01:10:47,000 --> 01:10:58,239
+OK. And I have four nodes that receive only one link and I have one node which does not receive any link.
+
+331
+01:10:58,620 --> 01:11:02,140
+So this node, as you see, does not receive any link.
+
+332
+01:11:03,019 --> 01:11:06,140
+Similarly, I can do this for the odd degree as well.
+
+333
+01:11:06,559 --> 01:11:12,620
+OK. I can calculate the odd degree of every node in the network.
+
+334
+01:11:12,619 --> 01:11:20,659
+okay and I can write the number of alt degrees for each of the node and I can create the sequence
+
+335
+01:11:20,659 --> 01:11:27,879
+okay I have four nodes that have two alt links three nodes that have one alt link and one node
+
+336
+01:11:27,879 --> 01:11:34,059
+that does not give any link to any other one and this one okay this particular one does not give
+
+337
+01:11:34,059 --> 01:11:41,820
+any link to any other one and similarly I can also do it for the degree sequence as well you know
+
+338
+01:11:41,820 --> 01:11:55,879
+So in this particular case, so I will have to count the number of links that each node has, regardless of the direction of the link.
+
+339
+01:11:55,879 --> 01:11:56,739
+Okay.
+
+340
+01:11:58,659 --> 01:12:08,980
+Now, after I create this degree sequences, I can use this in order to write the degree distribution.
+
+341
+01:12:08,979 --> 01:12:25,179
+For example, and so I can create a degree distribution for in degree, which means that here you see the number of nodes that have two in-links is three.
+
+342
+01:12:26,139 --> 01:12:31,839
+Okay, I have three nodes that has in degree number of two.
+
+343
+01:12:31,839 --> 01:12:42,199
+OK. And you see that I have so I have four nodes that has in degree number of one.
+
+344
+01:12:42,419 --> 01:12:47,239
+OK. And I have one node that has in degree number of zero.
+
+345
+01:12:48,099 --> 01:12:55,119
+OK. As you see, by doing this, I am able to create the in degree distribution.
+
+346
+01:12:55,639 --> 01:12:59,239
+OK. And I can also do it for the odd degree distribution.
+
+347
+01:12:59,239 --> 01:13:05,980
+I can also do it for the undirected distribution.
+
+348
+01:13:06,879 --> 01:13:09,040
+Now, why do we need this?
+
+349
+01:13:09,180 --> 01:13:14,359
+Again, going back to the beginning of how I started.
+
+350
+01:13:16,275 --> 01:13:45,915
+Okay. In order to understand how the social network look like, in order to better understand how the connectivity of the social network looks like, I need, I can use the degree sequences and I can use the degree distribution graphs so that I can understand how the nodes in the social network are connected to each other.
+
+351
+01:13:46,275 --> 01:13:50,275
+Now the second metric that I can use is the connected components.
+
+352
+01:13:57,011 --> 01:14:05,892
+Okay, now the connected components gives you an idea whether everything is connected in that network.
+
+353
+01:14:05,892 --> 01:14:26,891
+Whether are there any isolated islands such as this one, are there any outlier nodes, okay, which do not give any link to any other nodes in the system, or are there, is there a highly connected and big component
+
+354
+01:14:26,891 --> 01:14:29,591
+which has big number of nodes in it.
+
+355
+01:14:29,591 --> 01:14:30,431
+Okay.
+
+356
+01:14:30,431 --> 01:14:32,711
+Now, in order to understand this,
+
+357
+01:14:34,411 --> 01:14:39,411
+so what we do is we use this metric,
+
+358
+01:14:41,692 --> 01:14:44,891
+which tells you the connected components.
+
+359
+01:14:44,891 --> 01:14:49,891
+And by calculating this metrics,
+
+360
+01:14:49,991 --> 01:14:53,711
+so we can identify the strongly connected components.
+
+361
+01:14:53,711 --> 01:14:56,471
+We can identify the weekly component,
+
+362
+01:14:56,471 --> 01:14:57,451
+connected components,
+
+363
+01:14:57,451 --> 01:15:00,551
+and we can identify the giant components.
+
+364
+01:15:00,551 --> 01:15:02,791
+Okay, we can identify three things,
+
+365
+01:15:02,791 --> 01:15:04,791
+strongly connected components,
+
+366
+01:15:04,791 --> 01:15:08,271
+weakly connected components, and giant components.
+
+367
+01:15:08,271 --> 01:15:13,271
+Now, let's take a look at this toy example again.
+
+368
+01:15:14,591 --> 01:15:17,651
+In this toy example, I have eight nodes.
+
+369
+01:15:17,651 --> 01:15:21,611
+And in this particular network,
+
+370
+01:15:21,611 --> 01:15:25,451
+I have two isolated subnetworks.
+
+371
+01:15:25,451 --> 01:15:28,232
+One is this one, the second one is this one.
+
+372
+01:15:29,891 --> 01:15:30,791
+Okay.
+
+373
+01:15:30,791 --> 01:15:34,071
+And now in order to identify
+
+374
+01:15:34,071 --> 01:15:35,991
+the strongly connected component,
+
+375
+01:15:35,991 --> 01:15:37,911
+let's take a look at the definition
+
+376
+01:15:37,911 --> 01:15:39,872
+of strongly connected component.
+
+377
+01:15:41,031 --> 01:15:44,092
+Each node within the component can be reached
+
+378
+01:15:44,092 --> 01:15:45,531
+from every other node,
+
+379
+01:15:45,531 --> 01:15:49,491
+which means that each component in the network
+
+380
+01:15:49,491 --> 01:15:54,491
+has to be reached by any other node in the network.
+
+381
+01:15:54,571 --> 01:15:57,111
+Now, if this is the definition,
+
+382
+01:15:57,951 --> 01:16:02,951
+then if you look at this B, E, D, C,
+
+383
+01:16:03,711 --> 01:16:07,131
+so this is a subnetwork, okay?
+
+384
+01:16:07,131 --> 01:16:10,631
+Now every node in this particular subnetwork
+
+385
+01:16:10,631 --> 01:16:15,631
+can be reached from every other node in the component.
+
+386
+01:16:15,911 --> 01:16:19,031
+So therefore, within this network,
+
+387
+01:16:19,032 --> 01:16:28,872
+this small subnetwork okay is strongly component strongly connected components okay now take a look
+
+388
+01:16:28,872 --> 01:16:40,151
+at this one j h these two every node from this small network small subnetwork okay every node
+
+389
+01:16:40,151 --> 01:16:45,912
+can be reached from every other node in the component so therefore j and h could be also
+
+390
+01:16:45,911 --> 01:16:47,051
+So a strongly component.
+
+391
+01:16:47,751 --> 01:16:51,271
+And obviously the remainder ones, A and F,
+
+392
+01:16:51,732 --> 01:16:53,991
+so they are single element components.
+
+393
+01:16:54,491 --> 01:16:57,551
+And obviously, so you can also consider
+
+394
+01:16:57,551 --> 01:17:00,711
+as a single element strongly component.
+
+395
+01:17:00,711 --> 01:17:01,431
+Okay.
+
+396
+01:17:01,711 --> 01:17:04,931
+Now let's take a look at how you can identify
+
+397
+01:17:04,931 --> 01:17:06,651
+the weakly connected components.
+
+398
+01:17:07,691 --> 01:17:07,811
+Okay.
+
+399
+01:17:08,251 --> 01:17:11,851
+Weakly connected components definition says that
+
+400
+01:17:11,851 --> 01:17:15,311
+every node can be reached from every other node
+
+401
+01:17:15,312 --> 01:17:17,851
+by following the links in one direction.
+
+402
+01:17:19,052 --> 01:17:21,892
+So if this is the definition,
+
+403
+01:17:22,472 --> 01:17:26,732
+then this, in the example,
+
+404
+01:17:27,332 --> 01:17:31,291
+this subnetwork could be a weakly connected component
+
+405
+01:17:31,291 --> 01:17:34,092
+because every node can be reached
+
+406
+01:17:34,092 --> 01:17:37,112
+from other nodes in the system
+
+407
+01:17:37,112 --> 01:17:38,972
+by following the links in one direction.
+
+408
+01:17:39,511 --> 01:17:42,711
+So A can be reached by other nodes
+
+409
+01:17:42,711 --> 01:17:47,092
+by following the links in...
+
+410
+01:17:48,404 --> 01:17:52,163
+in one direction, okay?
+
+411
+01:17:52,583 --> 01:17:55,163
+And B can be reached by other nodes.
+
+412
+01:17:55,384 --> 01:17:56,983
+C can be reached by other nodes.
+
+413
+01:17:57,164 --> 01:17:58,443
+D, other nodes.
+
+414
+01:17:58,583 --> 01:17:59,683
+E, other nodes, okay?
+
+415
+01:18:00,683 --> 01:18:04,404
+So therefore, so this is a weak D connected graph.
+
+416
+01:18:04,683 --> 01:18:08,103
+And also this one, if we start from F,
+
+417
+01:18:08,463 --> 01:18:11,203
+okay, you can reach H and G.
+
+418
+01:18:11,664 --> 01:18:14,883
+So therefore, this is also weak D connected component.
+
+419
+01:18:14,883 --> 01:18:35,003
+Now, by looking at the definition of the weakly connected component and strongly connected component, you can identify the subcomponents of a social network and you can say what type of component in terms of connectivity it is.
+
+420
+01:18:35,003 --> 01:18:53,963
+Okay. And the third component that we have is the giant component. Giant component tells you that if there is a sub network in your social network, which has significant amount of nodes in it, then it's called the giant component.
+
+421
+01:18:53,963 --> 01:19:09,984
+Okay, so therefore we can, so going back, so we can use these two metrics, the degree sequence and degree distribution in order to understand the connectivity of the network.
+
+422
+01:19:09,984 --> 01:19:35,344
+And also we can use the, we can identify the connected components, either strongly connected, weakly connected and giant component. And so this will give us an idea, even without visualizing the social network, by looking at the values of these two metrics, we can understand how the social network will look like.
+
+423
+01:19:37,344 --> 01:19:37,984
+Okay.
+
+424
+01:19:39,983 --> 01:19:50,463
+To recap, so far we have seen the three different representations of the social networks.
+
+425
+01:19:50,463 --> 01:20:07,803
+And also we have learned two different net computing metrics that will allow us to understand the connectivity of the social network analysis, of the social networks, even without visualizing them.
+
+426
+01:20:07,803 --> 01:20:12,063
+Okay, now I want to stop here and give 10 minutes break.
+
+427
+01:20:12,923 --> 01:20:15,923
+Okay, and then I will move forward.
+
+428
+01:33:07,699 --> 01:33:10,099
+Okay, let us move forward.
+
+429
+01:33:11,299 --> 01:33:13,999
+Arkadaşlar, sesimin geldiğini bir daha teyit edebilir misiniz?
+
+430
+01:33:15,259 --> 01:33:15,939
+Geliyor hocam.
+
+431
+01:33:16,479 --> 01:33:16,699
+Tamam.
+
+432
+01:33:18,500 --> 01:33:23,399
+Okay, so far we talked about why social network analysis are important.
+
+433
+01:33:24,079 --> 01:33:34,380
+We talked about how we are going to, what kind of data representation we are going to use in order to represent social networks.
+
+434
+01:33:34,380 --> 01:33:46,040
+We talked about what kind of metrics that we are using in order to understand social network, in order to understand how social network connectivity is.
+
+435
+01:33:46,299 --> 01:33:47,859
+We talked about degree.
+
+436
+01:33:48,019 --> 01:33:50,759
+We talked about components.
+
+437
+01:33:50,759 --> 01:34:04,280
+Now we are going to go into details of the metrics that we are using in order to identify the importance of the nodes in the social network.
+
+438
+01:34:04,380 --> 01:34:18,360
+OK. Now. So the so again, so we are going after the importance of each node. OK.
+
+439
+01:34:20,240 --> 01:34:32,280
+Now, so before I go into details of that, so let me give you some some introduction information to do link analysis or social network analysis.
+
+440
+01:34:32,280 --> 01:34:39,960
+Now, in particular, we are using these social network analysis on the web data in order to provide ranking.
+
+441
+01:34:39,960 --> 01:34:48,960
+OK. So remember, in the content mining chapter, which is the information retrieval in that chapter.
+
+442
+01:34:48,960 --> 01:35:00,519
+So chapter number six, we talked about similarity based ranking methodologies such as TF-IDF.
+
+443
+01:35:00,519 --> 01:35:22,360
+So remember, we talked about TF-IDF. In order to identify the similarity between the query and the document, we use the TF-IDF metric. And the TF-IDF gives a score each to do each document to show that how similar that document to that query.
+
+444
+01:35:22,360 --> 01:35:29,479
+So based on the TF-IDF values, we can rank the existing web pages.
+
+445
+01:35:30,280 --> 01:35:30,320
+Okay.
+
+446
+01:35:30,820 --> 01:35:35,060
+Now, this has been used in the search engines for many years.
+
+447
+01:35:35,960 --> 01:35:36,259
+Okay.
+
+448
+01:35:36,259 --> 01:35:52,140
+But up to 1997 and 1998, okay, the TF-IDF base ranking methodology, it worked, but it has some disadvantages.
+
+449
+01:35:52,360 --> 01:36:01,560
+so one important disadvantage is that we were not identified the spam pages
+
+450
+01:36:01,560 --> 01:36:10,759
+so what was spam page people are putting some keywords in their websites that do not represent
+
+451
+01:36:10,759 --> 01:36:17,160
+the website itself okay they were putting keywords so that they could show up in the
+
+452
+01:36:17,159 --> 01:36:22,159
+the search results of many different queries.
+
+453
+01:36:24,339 --> 01:36:26,299
+And at the same time,
+
+454
+01:36:26,299 --> 01:36:29,879
+so we were not able to identify
+
+455
+01:36:29,879 --> 01:36:34,019
+which ones are most popular among the web pages
+
+456
+01:36:34,019 --> 01:36:36,519
+that we see in the search results,
+
+457
+01:36:36,519 --> 01:36:41,139
+because we can rank them based on their similarity,
+
+458
+01:36:41,139 --> 01:36:46,139
+but how do you understand which one of them
+
+459
+01:36:46,140 --> 01:36:49,060
+is more popular compared to the other ones.
+
+460
+01:36:50,440 --> 01:36:56,280
+So therefore, in the year 1997 and in the year 1998,
+
+461
+01:36:57,280 --> 01:37:00,280
+people have worked on...
+
+462
+01:37:02,579 --> 01:37:23,579
+link analysis based ranking methodologies. Okay. And there were two different studies that came out at the beginning of 1997. So one book from Cornell, the second from the Stanford. Okay. So Cornell
+
+463
+01:37:23,579 --> 01:37:36,319
+introduced the HITS algorithm, which was later used by Yahoo, and Stanford introduced the PageRank algorithm, which was later used by Google.
+
+464
+01:37:36,319 --> 01:37:52,279
+Okay, they both are using the idea that if a page is receiving many links by many others, that page has higher prestige or higher authority.
+
+465
+01:37:53,579 --> 01:38:06,999
+Okay, which means that if you have search results, okay, matching to a query, if you want to rank them, you can rank them based on their prestige, based on their popularity.
+
+466
+01:38:06,999 --> 01:38:14,300
+Okay, now these two algorithms are calculating the prestige or popularity of the web pages.
+
+467
+01:38:14,300 --> 01:38:28,859
+Okay, now we are going to learn how the social network analysis metrics that are being used in order to calculate the prestige or the authority of web pages. Okay.
+
+468
+01:38:32,787 --> 01:38:48,527
+And obviously, we are using social network analysis in web data mining domain for ranking, but we can use social network analysis in different contexts as well.
+
+469
+01:38:48,527 --> 01:38:55,968
+For example, you can use it for community discovery. In a given social network, you can identify the sub-communities.
+
+470
+01:38:55,968 --> 01:39:07,767
+Okay. And as I have shown you the examples of different social network analysis, you can use social network analysis in order to analyze emails.
+
+471
+01:39:07,767 --> 01:39:29,887
+You can analyze the social networks such as Facebook or LinkedIn and to understand how people are connected, what are the subnetworks, what are the political views of the individual profiles in that social network, etc.
+
+472
+01:39:30,067 --> 01:39:31,587
+You can analyze all of them.
+
+473
+01:39:33,747 --> 01:39:34,547
+Okay.
+
+474
+01:39:34,547 --> 01:39:45,307
+Okay, now, in previous session, we talked about a social network is composed of nodes and the links.
+
+475
+01:39:45,907 --> 01:39:49,887
+There are nodes in the social network and also there are links in between them.
+
+476
+01:39:50,347 --> 01:40:03,508
+Okay, now, what we are trying to do, we are trying to, we are going to use some metrics in order to identify the importance of actors in that social network.
+
+477
+01:40:03,508 --> 01:40:20,927
+Okay. And in order to identify the importance of the nodes in the social network, we are going to be using two different metric category. One is the centrality metrics. The other one is the prestige metrics.
+
+478
+01:40:20,927 --> 01:40:33,907
+okay now as for the centrality matrix you have learned some of it okay and so we talked about
+
+479
+01:40:33,907 --> 01:40:43,707
+the degree centrality okay we talked about the in degree and out degree and in and also degree
+
+480
+01:40:43,707 --> 01:40:53,868
+matrix, okay, that is being used for centrality. So in order to better understand the centrality
+
+481
+01:40:53,868 --> 01:41:03,868
+matrix, so I'm going to share another set of slides. So let me first stop this share
+
+482
+01:41:03,868 --> 01:41:09,547
+and just stop this.
+
+483
+01:41:11,828 --> 01:41:15,187
+I need to go back to the centrality.
+
+484
+01:41:15,468 --> 01:41:17,267
+Okay, that's where I am.
+
+485
+01:41:19,668 --> 01:41:21,427
+Let's share the screen again.
+
+486
+01:41:25,811 --> 01:41:44,271
+Okay, now take a look at, let's take a look at the centrality metrics. Now, this is a visualization of a toy social network. As you see, two nodes in this network is bigger, is shown with bigger circles, Kimball and Gerard.
+
+487
+01:41:44,271 --> 01:41:53,091
+So obviously, so they are shown with bigger circles because they have higher importance compared to the other ones.
+
+488
+01:41:53,611 --> 01:41:57,071
+OK, now, so how do we understand this?
+
+489
+01:41:57,152 --> 01:42:01,511
+Because here we are using the degree centrality metric.
+
+490
+01:42:01,992 --> 01:42:09,492
+OK, so the more links that each node has, the bigger circle that it gets.
+
+491
+01:42:09,492 --> 01:42:13,711
+OK, now here you see another toy example.
+
+492
+01:42:13,711 --> 01:42:23,591
+again two nodes are drawn bigger compared to the other ones because they have high number of links
+
+493
+01:42:23,591 --> 01:42:34,251
+okay again if you look at this one again one node is much bigger compared to the other ones
+
+494
+01:42:34,251 --> 01:42:44,591
+In addition to that, you see some links between the nodes are drawn wider compared to the other ones.
+
+495
+01:42:45,071 --> 01:42:53,251
+The reason is that between this node and this node, the number of communication is higher compared to the other nodes.
+
+496
+01:42:53,991 --> 01:42:54,091
+Okay.
+
+497
+01:42:54,391 --> 01:42:58,551
+Remember, I mentioned that each link may have attributes.
+
+498
+01:42:58,551 --> 01:43:06,071
+You may have weight, you may have type, you may have ranking attribute associated to each link.
+
+499
+01:43:06,172 --> 01:43:12,551
+In this particular case, the weight is associated with the number of level of communication.
+
+500
+01:43:14,191 --> 01:43:14,311
+Okay.
+
+501
+01:43:17,611 --> 01:43:25,811
+Now, the question here is that, okay, we learned about the degree centrality metric.
+
+502
+01:43:25,811 --> 01:43:31,831
+Remember, the degree centrality metric is the number of links that each node has.
+
+503
+01:43:32,352 --> 01:43:34,472
+We learned that in the previous session.
+
+504
+01:43:35,052 --> 01:43:37,692
+That is one of the centrality metrics.
+
+505
+01:43:38,552 --> 01:43:41,332
+But there are two other centrality metrics.
+
+506
+01:43:41,651 --> 01:43:45,332
+In previous lecture, we talked about betweenness and closeness.
+
+507
+01:43:45,612 --> 01:43:46,951
+Now we are going to learn them.
+
+508
+01:43:47,892 --> 01:43:51,011
+There are three different centrality metrics.
+
+509
+01:43:51,252 --> 01:43:53,951
+One of them, degree centrality, you already learned that.
+
+510
+01:43:53,951 --> 01:44:00,832
+degree centrality means how many links that a node has. Okay, if this is a directed graph,
+
+511
+01:44:01,552 --> 01:44:10,112
+then the degree centrality means how many out links that a node has. Okay, but if it is an
+
+512
+01:44:10,112 --> 01:44:15,791
+undirected graph, how many total links that a node has, that shows the degree centrality.
+
+513
+01:44:16,672 --> 01:44:23,231
+But the degree centrality by itself is not enough. We also need two other centrality metrics.
+
+514
+01:44:23,231 --> 01:44:29,871
+between this and closeness. Now let's take a look at this example. In this example you see that there
+
+515
+01:44:29,871 --> 01:44:41,472
+is a node called Orkut and as you can see in this particular small graph Orkut has high number of
+
+516
+01:44:41,472 --> 01:44:48,112
+links compared to the other nodes. For example let's take a look at this red node here. It has
+
+517
+01:44:48,112 --> 01:44:57,951
+only three links but the ORCUT has a much higher links as attached to it. So therefore in this
+
+518
+01:44:57,951 --> 01:45:05,311
+small graph you can say that based on the degree centrality metric ORCUT has higher importance,
+
+519
+01:45:05,311 --> 01:45:13,632
+which is okay. But is this enough? Is this enough to tell the ORCUT is has high importance in the in
+
+520
+01:45:13,631 --> 01:45:27,631
+its network. Now this is the whole network. As you see ORCUT is in the edge of the network.
+
+521
+01:45:24,692 --> 01:45:38,112
+And you can see that the position that the ORCUT has is not as highly important as other ones that are in the center of the network.
+
+522
+01:45:38,971 --> 01:45:46,411
+So therefore, OK, ORCUT has a high number of edges.
+
+523
+01:45:46,631 --> 01:45:54,351
+Its degree centrality might be big, but it is not close to the rest of the remaining network.
+
+524
+01:45:54,692 --> 01:46:02,991
+And it is not in between many nodes within the majority of the network.
+
+525
+01:46:03,651 --> 01:46:04,372
+Okay.
+
+526
+01:46:04,851 --> 01:46:12,251
+So therefore, from this point forward, we are going to talk about the other two centrality techniques.
+
+527
+01:46:12,692 --> 01:46:12,952
+Okay.
+
+528
+01:46:13,251 --> 01:46:16,311
+Between the centrality and the closeness centrality.
+
+529
+01:46:16,811 --> 01:46:17,071
+Okay.
+
+530
+01:46:17,131 --> 01:46:19,631
+We already talked about the degree centrality.
+
+531
+01:46:19,631 --> 01:46:27,311
+and we said that degree centrality could be in degree centrality, out degree centrality, okay?
+
+532
+01:46:29,071 --> 01:46:39,311
+And usually in general we are using the out degree as for the degree centrality, which means that
+
+533
+01:46:39,311 --> 01:46:46,431
+we are using the number of links that a node is giving out, okay, as indication of its degree,
+
+534
+01:46:46,431 --> 01:46:54,831
+OK, so you see that we have degree centrality, we have betweenness centrality, we have closeness centrality.
+
+535
+01:46:56,991 --> 01:47:04,631
+OK, now, so this is the degree centrality where the degree is in degree.
+
+536
+01:47:04,631 --> 01:47:18,631
+Okay, now the number of degree centrality in this particular case for x would be 5, y would be 0, because y does not receive any in-link.
+
+537
+01:47:19,231 --> 01:47:21,731
+X receives 5 different in-links.
+
+538
+01:47:21,732 --> 01:47:35,591
+OK, now let's talk about the centrality degree that we are using the degree as the via in-links.
+
+539
+01:47:36,012 --> 01:47:42,611
+OK, now this is a graph that that is visualized by using the centrality degree.
+
+540
+01:47:42,611 --> 01:47:48,931
+Now, the graph indicates the trade in petroleum.
+
+541
+01:47:49,591 --> 01:47:49,651
+Okay.
+
+542
+01:47:50,212 --> 01:47:52,291
+And here each node is a country.
+
+543
+01:47:53,712 --> 01:47:57,431
+And as you see, some edges are wider than the other ones.
+
+544
+01:47:57,852 --> 01:47:59,111
+And this indicates that.
+
+545
+01:47:59,632 --> 01:48:09,731
+So the level of trade between the two countries higher, bigger compared to the other links.
+
+546
+01:48:10,451 --> 01:48:10,811
+Okay.
+
+547
+01:48:10,811 --> 01:48:25,192
+And from this, so you can understand that, so some countries, okay, are receiving more petroleum for certain countries.
+
+548
+01:48:25,451 --> 01:48:35,431
+For example, USA is receiving petroleum from Canada, Mexico, Venezuela, Iraq, Saudi Arabia, etc.
+
+549
+01:48:35,431 --> 01:48:45,171
+For example, if you look at Japan, Japan is receiving petroleum from Saudi Arabia and United Arab Emirates.
+
+550
+01:48:45,971 --> 01:48:46,051
+Okay.
+
+551
+01:48:46,791 --> 01:48:55,251
+Now, by analyzing this, just by using the degree centrality, you can answer questions like this.
+
+552
+01:48:55,551 --> 01:48:58,311
+Which countries have high in degree?
+
+553
+01:48:58,311 --> 01:48:59,371
+Okay.
+
+554
+01:48:59,371 --> 01:49:08,811
+So in this particular case, USA and Japan, so they have high degree.
+
+555
+01:49:11,923 --> 01:49:17,163
+And also you can calculate the degree centrality by using the ALT degree.
+
+556
+01:49:17,163 --> 01:49:23,483
+And in usual, in most of the cases, we are using ALT degree for degree centrality.
+
+557
+01:49:23,963 --> 01:49:24,023
+Okay.
+
+558
+01:49:24,463 --> 01:49:29,963
+Now, in this particular case, if you look at the importance level between the X and Y,
+
+559
+01:49:30,123 --> 01:49:36,604
+X is more important for the degree centrality because its degree centrality value is 5.
+
+560
+01:49:38,463 --> 01:49:38,743
+Okay.
+
+561
+01:49:38,743 --> 01:49:42,444
+and the degree centrality value for y is 1.
+
+562
+01:49:43,784 --> 01:49:43,903
+Okay.
+
+563
+01:49:45,383 --> 01:49:47,403
+Now, let's draw another,
+
+564
+01:49:48,124 --> 01:49:50,243
+so let's draw the same graph
+
+565
+01:49:50,243 --> 01:49:56,764
+from the alt degree centrality point of view.
+
+566
+01:49:57,104 --> 01:49:58,343
+In this particular case,
+
+567
+01:49:58,423 --> 01:50:02,703
+you see that Saudi Arabia is drawn as a bigger node
+
+568
+01:50:02,703 --> 01:50:06,423
+because from the perspective of the alt degree,
+
+569
+01:50:06,423 --> 01:50:18,983
+Saudi Arabia is has higher out higher number of outlinks okay because Saudi Arabia is
+
+570
+01:50:18,983 --> 01:50:28,184
+selling petroleum to many other countries and as you see the the length of the
+
+571
+01:50:28,183 --> 01:50:40,383
+As you see, as you look at the edges between the nodes, so some countries have higher petroleum exchange between them.
+
+572
+01:50:41,143 --> 01:50:53,703
+Saudi Arabia is selling Japan and USA in large amounts, okay, and also Venezuela is selling USA in large amounts, etc.
+
+573
+01:50:53,703 --> 01:51:16,903
+Okay. Now, the difference between this graph and the previous graph here, if the node has higher number of outlinks, it's drawn as a bigger node. Okay. In the previous graph, if a node is receiving a high number of inlinks, okay, then it is drawn as a bigger circle.
+
+574
+01:51:16,903 --> 01:51:34,483
+Now, in this particular case, you should understand that Saudi Arabia is the main petroleum seller in the world, because the number of outlinks that it has is much bigger compared to the other ones.
+
+575
+01:51:34,483 --> 01:51:54,883
+For example, Venezuela is only selling USA. So it's not selling to Japan. For example, United Arab Emirates is selling both Japan and Korea. Okay. So from this, you can understand the main sellers.
+
+576
+01:51:55,603 --> 01:52:01,923
+Okay, so which countries has low alt degree but exports significant amount of quantity?
+
+577
+01:52:01,923 --> 01:52:10,563
+In this particular case, you see Venezuela and United Arab Emirates. They have only few alt links.
+
+578
+01:52:10,563 --> 01:52:18,163
+They sell to Japan and Korea. Venezuela is selling to USA, but the quantities that they are selling
+
+579
+01:52:18,163 --> 01:52:29,203
+is big okay venezuela and also uh so united arab emirates is not indicated here but venezuela is
+
+580
+01:52:29,203 --> 01:52:34,243
+the correct answer
+
+581
+01:52:34,515 --> 01:52:39,875
+Okay, I'm going to do that. So let's put it into numbers. Now we are talking about
+
+582
+01:52:40,996 --> 01:52:46,995
+degree centrality again. Now, so here for the undirected graph,
+
+583
+01:52:49,235 --> 01:52:55,315
+we said that as for the degree centrality, degree centrality indicates the number of links
+
+584
+01:52:55,315 --> 01:53:01,875
+that each node has. Now for this particular node in the middle, what is the degree centrality? It's
+
+585
+01:53:01,875 --> 01:53:09,395
+five, right? Because it has five different links. And for the other nodes, their degree centrality
+
+586
+01:53:09,395 --> 01:53:19,155
+is one because they only have one links. Okay. So let's put it into numbers and also normalize them.
+
+587
+01:53:19,155 --> 01:53:26,355
+So you see here three toy examples. Okay. So let's start with this one. Again, it's the same thing,
+
+588
+01:53:26,356 --> 01:53:37,416
+But this time I divide the degree centrality value by n minus 1, okay, which is the number of nodes except itself, okay.
+
+589
+01:53:37,416 --> 01:53:46,495
+So I have here the degree centrality value was 5 divided by 6 minus 1, 5.
+
+590
+01:53:46,995 --> 01:53:47,895
+That would be 1.
+
+591
+01:53:48,536 --> 01:53:53,395
+And here the value of the degree centrality was 1 divided by n minus 1.
+
+592
+01:53:53,615 --> 01:53:55,335
+That's 5.
+
+593
+01:53:56,355 --> 01:54:02,435
+1 over 5, that's 0.2. Now let's take a look at this particular toy example.
+
+594
+01:54:04,035 --> 01:54:12,195
+Now how many links that this one has? 2. 2 divided by 6. Why is 6? Because in total I have 7 nodes.
+
+595
+01:54:12,195 --> 01:54:20,195
+7 minus 1, 6. 2 divided by 6. Now let's take a look at this toy example, and this particular
+
+596
+01:54:20,196 --> 01:54:27,895
+one in the middle has two links in it. Okay. How many nodes in total? I have five nodes.
+
+597
+01:54:28,515 --> 01:54:37,895
+Five minus one, four. Two divided by four, that's 0.5. Okay. Again, here is the same thing. It has
+
+598
+01:54:37,895 --> 01:54:47,195
+two links divided by four, that's 0.5. So this way, I can calculate the degree centrality value
+
+599
+01:54:47,195 --> 01:54:50,975
+for every node in my network.
+
+600
+01:54:54,452 --> 01:55:07,771
+Okay, now just like you can calculate the degree centrality value for each node, you can also calculate the degree centrality for the whole network.
+
+601
+01:55:08,731 --> 01:55:14,611
+Okay, and how do you calculate this?
+
+602
+01:55:14,611 --> 01:55:16,491
+So we use this formula here.
+
+603
+01:55:17,212 --> 01:55:24,271
+So what we do, we first find the maximum degree centrality value in this network.
+
+604
+01:55:24,452 --> 01:55:30,611
+for example this here is the maximum degree centrality and in this one this here is the
+
+605
+01:55:30,611 --> 01:55:37,571
+maximum degree centrality in this particular one this one okay and then we subtract the degree
+
+606
+01:55:37,571 --> 01:55:47,971
+centrality values for the remainder of the nodes in the system one by one and we sum up these
+
+607
+01:55:47,972 --> 01:56:01,492
+difference differences right so we subtract from one to zero point two from one again we repeat the
+
+608
+01:56:01,492 --> 01:56:07,892
+same thing we repeat the same thing and these sum up all the differences okay that's the
+
+609
+01:56:07,892 --> 01:56:15,492
+denominator and in the denominator we have n minus one multiplied by n minus two now that gives us
+
+610
+01:56:17,971 --> 01:56:24,111
+centralization, degree centralization value for the whole network. For example,
+
+611
+01:56:24,851 --> 01:56:34,051
+for the toy example like this one, the degree centralization value for the whole network is
+
+612
+01:56:34,051 --> 01:56:45,251
+one. Okay. Now, by looking at this example, you see that in this particular network,
+
+613
+01:56:45,251 --> 01:56:51,971
+it has only one major node and all the other nodes are around this major node.
+
+614
+01:56:53,411 --> 01:57:04,691
+Okay now here in this particular example the degree centralization for the network is small. It is
+
+615
+01:57:06,531 --> 01:57:12,931
+close to zero. Okay now the reason that it is small compared to this one
+
+616
+01:57:12,931 --> 01:57:23,571
+okay because you have a multiple nodes that have high importance value okay but in this particular
+
+617
+01:57:24,211 --> 01:57:30,612
+example you have one big node that has higher importance highest importance compared to any
+
+618
+01:57:30,612 --> 01:57:38,131
+other nodes in the system but here you have multiple high importance nodes in the system
+
+619
+01:57:38,131 --> 01:57:43,571
+So therefore, the degree centrality value becomes lesser.
+
+620
+01:57:45,031 --> 01:57:47,311
+And here, again, the same thing.
+
+621
+01:57:47,531 --> 01:57:52,651
+You see that you have multiple higher importance not in the system.
+
+622
+01:57:53,231 --> 01:58:00,171
+Therefore, the degree centrality is a little bit less compared to, so much lesser compared to this one.
+
+623
+01:58:01,111 --> 01:58:01,391
+Okay.
+
+624
+01:58:01,771 --> 01:58:06,151
+Now, so take a look at these two different examples.
+
+625
+01:58:06,151 --> 01:58:20,892
+Now, here in the first one on the left, you see that there is one big node that has highest degree centrality value.
+
+626
+01:58:21,791 --> 01:58:32,571
+Now, in this particular case, you would expect that degree centralization degree value for the whole network should be close to one.
+
+627
+01:58:32,571 --> 01:58:39,931
+because so remember this degree centralization value is normalized it is between zero and one
+
+628
+01:58:39,931 --> 01:58:45,211
+so therefore for this graph the degree centralization for the whole network should be
+
+629
+01:58:46,091 --> 01:59:00,571
+close to one look at on the graph on the left hand side you see that it has
+
+630
+01:58:54,899 --> 01:59:17,160
+multiple nodes, it has multiple nodes, which has a highest degree centrality value. Okay, at least three nodes that I see that has highest degree centrality value. So from this point, you can say that the degree centrality for the whole network should be smaller.
+
+631
+01:59:17,160 --> 01:59:32,519
+okay so so here you have seen the example if it's if it has multiple highest priority notes in that case the degree centrality value will be lower okay
+
+632
+01:59:37,876 --> 01:59:43,175
+Now, what does degree centrality not capture?
+
+633
+01:59:43,175 --> 02:00:04,935
+Okay, now, if you look at this, in the first toy example, there is one big node that is in the middle, okay, and everything is around it.
+
+634
+02:00:04,935 --> 02:00:10,135
+Okay, now degree centrality can capture the importance of this node.
+
+635
+02:00:10,795 --> 02:00:14,835
+In this particular small network is okay.
+
+636
+02:00:15,515 --> 02:00:17,515
+So let's take a look at this one.
+
+637
+02:00:18,556 --> 02:00:26,535
+Now, the centrality value is 2 here for the one in the middle.
+
+638
+02:00:27,056 --> 02:00:33,215
+And the other two nodes next to it has the centrality value 3.
+
+639
+02:00:33,216 --> 02:00:40,835
+Okay, but in fact the two has much more importance compared to these trees.
+
+640
+02:00:40,835 --> 02:00:48,075
+The reason is that two is in the middle of the many communication.
+
+641
+02:00:48,416 --> 02:01:00,396
+For example, now this node, if it wants to communicate with the rest of the nodes in this particular section, okay, that means three communication.
+
+642
+02:01:00,695 --> 02:01:02,376
+One, two, three.
+
+643
+02:01:02,376 --> 02:01:13,435
+Now, if this node wants to communicate with the other side of the network, again, this node needs to communicate with 1, 2, 3.
+
+644
+02:01:14,176 --> 02:01:15,475
+And similar to this one.
+
+645
+02:01:15,876 --> 02:01:23,636
+Now, this means that 2 is in the middle of 9 different communications between the pairs.
+
+646
+02:01:24,556 --> 02:01:24,676
+Okay.
+
+647
+02:01:27,195 --> 02:01:31,015
+But so let's compare it with this one.
+
+648
+02:01:31,015 --> 02:01:34,215
+And this is in the middle of communication.
+
+649
+02:01:35,115 --> 02:01:39,395
+For example, so two will need to communicate these four nodes.
+
+650
+02:01:40,215 --> 02:01:52,696
+And this two will need to communicate with these four nodes, which means that this particular tree, this particular node is in the middle of communication of eight different pairs.
+
+651
+02:01:53,196 --> 02:02:00,676
+But as I said before, this node is in the middle of nine different pairs.
+
+652
+02:02:01,015 --> 02:02:28,935
+Okay, so therefore this note should have higher importance compared to this one. Okay, and also if you start from this note, it is much more convenient to access to the remainder of notes, because this note is closer closer to the remainder of notes in average compared to this one.
+
+653
+02:02:28,935 --> 02:02:43,935
+Okay, so from two perspective, first one is between this this one is in the middle of many different communications and the second one closeness, this one is close to.
+
+654
+02:02:43,935 --> 02:02:54,335
+uh to other nodes in average okay so therefore the degree centrality does not capture the
+
+655
+02:02:54,335 --> 02:03:00,975
+betweenness and closeness property in this particular node and similar to a simple you can
+
+656
+02:03:00,975 --> 02:03:09,376
+see the similar thing in this small network as well so this node has the high same degree
+
+657
+02:03:09,376 --> 02:03:15,855
+centrality like this one and this one but this node should have higher centrality value because
+
+658
+02:03:15,855 --> 02:03:23,215
+as you see it is in the middle you can access to the remainder of nodes easily and it is also in
+
+659
+02:03:23,215 --> 02:03:29,935
+middle it is between the communication of many different pairs okay one is need to communicate
+
+660
+02:03:29,935 --> 02:03:31,775
+this one and this one true too.
+
+661
+02:03:32,144 --> 02:03:44,783
+through this one and this one is need to communicate this one and this one through this node. Okay. So therefore it is close to other nodes and it is in between many other pairs.
+
+662
+02:03:44,783 --> 02:04:03,983
+Okay. You can also see the same thing here. ORCUT has a high number of degree centrality, but it is not in between many other communications, many other links, and also it is not close to majority of the nodes in the system.
+
+663
+02:04:03,984 --> 02:04:17,383
+So therefore we say that in addition to degree centrality, we have, we should also calculate between the centrality and the closeness centrality's values.
+
+664
+02:04:21,076 --> 02:04:23,076
+Okay
+
+665
+02:04:26,739 --> 02:04:33,079
+Now, take a look at this small example, and you see that there are two nodes here.
+
+666
+02:04:33,759 --> 02:04:43,340
+And so if you look at it, which one is important, which one has higher importance, you can say that X has higher importance.
+
+667
+02:04:43,340 --> 02:04:50,539
+The reason is that now X is in the middle of four different pairs.
+
+668
+02:04:51,619 --> 02:04:55,139
+OK, so this one wants to communicate this one.
+
+669
+02:04:55,139 --> 02:05:01,920
+that's the first pair through x this one wants to communicate with this one that's the second pair
+
+670
+02:05:01,920 --> 02:05:12,019
+okay and node y wants to communicate these two other nodes okay through x this means that x is
+
+671
+02:05:12,019 --> 02:05:20,859
+in the middle of four different pairs so let's take a look at the y and y is in the middle of
+
+672
+02:05:20,859 --> 02:05:28,580
+three different pairs because this node will need to communicate this one and will need to
+
+673
+02:05:28,580 --> 02:05:34,359
+communicate this one and this one. So this means that Y is in the middle of three different pairs.
+
+674
+02:05:34,600 --> 02:05:42,719
+In addition, that node may skip Y and can directly communicate the remainder of three.
+
+675
+02:05:42,719 --> 02:05:51,439
+So this means that you may also consider that y is not in the middle of any of the pairs.
+
+676
+02:05:51,859 --> 02:06:03,439
+So therefore, you can understand that x has higher importance compared to y from the perspective of betweenness.
+
+677
+02:06:05,559 --> 02:06:06,399
+Okay.
+
+678
+02:06:11,572 --> 02:06:17,411
+Okay, when we calculate the betweenness centrality, we calculate the number of pairs that,
+
+679
+02:06:19,171 --> 02:06:25,731
+number of pairs of individual would have to go through in order to reach one another. For example,
+
+680
+02:06:27,171 --> 02:06:33,492
+let's calculate the betweenness value of x, okay. How many pairs that I have
+
+681
+02:06:33,492 --> 02:06:37,971
+that have to go through x in order to communicate.
+
+682
+02:06:38,631 --> 02:06:41,172
+Now, so this first node, okay.
+
+683
+02:06:44,371 --> 02:06:45,332
+Wait a minute.
+
+684
+02:06:47,731 --> 02:06:48,331
+Okay.
+
+685
+02:06:48,631 --> 02:06:54,432
+Now, this first node will need to communicate this one and this one through x.
+
+686
+02:06:55,231 --> 02:06:59,131
+So therefore, two, because of this one.
+
+687
+02:06:59,131 --> 02:07:03,971
+This one node is going to communicate this one and this one through X.
+
+688
+02:07:04,351 --> 02:07:06,971
+Therefore, two for this node.
+
+689
+02:07:07,451 --> 02:07:11,771
+In total, X is in the middle of four different pairs.
+
+690
+02:07:12,751 --> 02:07:12,851
+Okay.
+
+691
+02:07:14,231 --> 02:07:15,991
+Now, let's take a look at Y.
+
+692
+02:07:16,691 --> 02:07:25,251
+Now, this node will need to communicate this one, this one, this one, which means that Y is in the middle of three different pairs.
+
+693
+02:07:25,991 --> 02:07:26,131
+Okay.
+
+694
+02:07:26,131 --> 02:07:32,631
+Okay, X is in the middle of four different pairs, Y is in the middle of three different pairs.
+
+695
+02:07:32,752 --> 02:07:38,951
+Therefore, we say that X has higher importance compared to Y from the perspective of betweenness.
+
+696
+02:07:40,131 --> 02:07:45,671
+Okay, and this is the equation that we are using, okay.
+
+697
+02:07:46,711 --> 02:07:53,191
+We are saying that if there are two nodes in the network, if then they want to communicate,
+
+698
+02:07:53,191 --> 02:08:00,091
+how many are there that goes through the node i.
+
+699
+02:08:00,091 --> 02:08:07,431
+And we want to compute between the centrality value for node i.
+
+700
+02:08:07,971 --> 02:08:10,091
+And we say that in the network,
+
+701
+02:08:10,531 --> 02:08:15,091
+what are the total number of pairs that goes through i?
+
+702
+02:08:15,811 --> 02:08:17,951
+And we want to normalize this value
+
+703
+02:08:17,951 --> 02:08:26,851
+divided by the total number of all possible paths that between these two nodes.
+
+704
+02:08:27,251 --> 02:08:27,811
+Okay.
+
+705
+02:08:28,171 --> 02:08:33,471
+Some of the paths may go through node I.
+
+706
+02:08:33,732 --> 02:08:36,572
+Some of them, they don't have to go through I.
+
+707
+02:08:36,732 --> 02:08:36,932
+Okay.
+
+708
+02:08:37,152 --> 02:08:41,171
+So what are the total number of paths between J and K?
+
+709
+02:08:41,771 --> 02:08:45,911
+And among them, how many of them that go through the I?
+
+710
+02:08:46,372 --> 02:08:46,652
+Okay.
+
+711
+02:08:46,652 --> 02:09:02,452
+And we need to compute this for all possible pairs, and we need to add them up, and that will give you the betweenness value, betweenness centrality for number i.
+
+712
+02:09:02,451 --> 02:09:27,131
+Okay. And once I calculate, so once I calculate the between the centrality, then I can divide this with the total number of pairs that are available in that, in that network that would normalize the value of between the centrality.
+
+713
+02:09:27,131 --> 02:09:41,131
+So let's take a look at from examples. I don't want you to memorize the formulas, but I want you to understand how we are calculating the betweenness centrality.
+
+714
+02:09:41,131 --> 02:09:48,131
+So let's take a look at this toy example. Now I will calculate the betweenness centrality.
+
+715
+02:09:49,012 --> 02:10:04,792
+Now, so remember what was the betweenness centrality? It says that how many pairs in that network will have to go through that node that you are calculating, the betweenness centrality.
+
+716
+02:10:04,792 --> 02:10:08,531
+So we are going to calculate the betweenness centrality for this one.
+
+717
+02:10:08,531 --> 02:10:10,531
+okay now let's
+
+718
+02:10:10,452 --> 02:10:15,311
+count the number of pairs that will have to go through this one.
+
+719
+02:10:16,231 --> 02:10:18,792
+Okay, now this node, we need to call,
+
+720
+02:10:19,571 --> 02:10:24,332
+communicate this node, this node, this node, and this node,
+
+721
+02:10:24,431 --> 02:10:28,311
+which means that for this node, I have four different pairs
+
+722
+02:10:28,311 --> 02:10:32,472
+that have to go through to this one.
+
+723
+02:10:32,872 --> 02:10:38,111
+Okay, now I computed this one, so I'm going to forget about this one.
+
+724
+02:10:38,111 --> 02:10:39,391
+Let's go to this one.
+
+725
+02:10:39,391 --> 02:10:56,971
+Okay, for this node, this node is going to communicate this particular node, this particular node, this particular node through this one. Okay, that means three different pairs. Okay, so, and now I added three different pairs as well.
+
+726
+02:10:56,972 --> 02:11:24,511
+I started with four pairs, now three pairs. Now I computed this one, I can forget about this one. So let's start to talk about this one. This one, we're going to go talk this one and this one, that means the two pairs. And similarly, this node, we're going to talk with this one, that means one. So one, two, three, four, four different pairs. So in total, 10 different pairs.
+
+727
+02:11:24,511 --> 02:11:31,511
+So this node is in the middle of 10 different pairs of communication.
+
+728
+02:11:31,511 --> 02:11:33,511
+Okay.
+
+729
+02:11:33,511 --> 02:11:35,511
+And how about the rest of them?
+
+730
+02:11:35,511 --> 02:11:39,511
+As you see, they are not in the middle of any of the pairs.
+
+731
+02:11:39,511 --> 02:11:43,511
+So therefore, their between the centrality value is zero.
+
+732
+02:11:43,511 --> 02:11:45,511
+Okay.
+
+733
+02:11:45,511 --> 02:11:49,511
+Now, again, so this is non-normalized version.
+
+734
+02:11:49,511 --> 02:11:54,151
+So I did not divide two total number of edges.
+
+735
+02:11:54,771 --> 02:11:58,091
+OK, now take a look at this this toy example.
+
+736
+02:11:58,791 --> 02:12:02,031
+Now, let's calculate the between the centrality for C.
+
+737
+02:12:03,971 --> 02:12:10,231
+How many for how many pairs that this number C is in the middle?
+
+738
+02:12:10,691 --> 02:12:15,812
+OK, now A is going to talk to D and E through C.
+
+739
+02:12:16,131 --> 02:12:18,511
+So that's one and two pairs.
+
+740
+02:12:19,252 --> 02:12:22,631
+Now, B is going to talk with D and E.
+
+741
+02:12:22,972 --> 02:12:24,832
+That's one and two pairs.
+
+742
+02:12:25,231 --> 02:12:28,832
+This means that C is in the middle of four different pairs.
+
+743
+02:12:30,032 --> 02:12:30,211
+Okay.
+
+744
+02:12:30,411 --> 02:12:31,991
+Now, take a look at this one.
+
+745
+02:12:32,511 --> 02:12:38,191
+Now, B, what is the betweenness value, non-normalized version here?
+
+746
+02:12:38,691 --> 02:12:38,931
+Okay.
+
+747
+02:12:38,931 --> 02:12:42,871
+Now, A is going to talk to C, D, and E.
+
+748
+02:12:43,371 --> 02:12:45,252
+This means that three different pairs.
+
+749
+02:12:46,052 --> 02:12:52,212
+So the value for the betweenness value for non-normalized version is 3.
+
+750
+02:12:53,172 --> 02:13:02,371
+How about A? A is on the edge. It is not in the middle of any of the pairs. So therefore,
+
+751
+02:13:02,371 --> 02:13:13,492
+the betweenness value is 0. Okay, so let's calculate the betweenness centrality in this toy example.
+
+752
+02:13:14,351 --> 02:13:19,531
+Now, let's calculate between the centrality, the one in the middle.
+
+753
+02:13:20,171 --> 02:13:25,952
+Now, how many pairs have to go through this middle node?
+
+754
+02:13:26,452 --> 02:13:31,911
+Now, this node is going to need to talk to these three nodes, which means that there are three pairs.
+
+755
+02:13:32,871 --> 02:13:36,051
+This node is going to need to talk to these three nodes.
+
+756
+02:13:36,191 --> 02:13:37,031
+That's six.
+
+757
+02:13:37,751 --> 02:13:42,031
+And this one is going to talk to these three nodes.
+
+758
+02:13:42,131 --> 02:13:42,651
+That's six.
+
+759
+02:13:42,651 --> 02:13:48,471
+So therefore, this node is in the middle of six different pairs of communication.
+
+760
+02:13:49,131 --> 02:13:55,431
+So therefore, it's between this centrality, non-normalized version is nine.
+
+761
+02:13:56,011 --> 02:13:58,491
+Now, let's talk about this one.
+
+762
+02:13:58,752 --> 02:14:02,532
+This one is in the middle of how many communications.
+
+763
+02:14:02,991 --> 02:14:07,271
+Now, this will need to talk to these four nodes through this one.
+
+764
+02:14:07,631 --> 02:14:09,611
+And again, this will do the same thing.
+
+765
+02:14:10,471 --> 02:14:14,951
+It will go to, it will talk to four different nodes through this one.
+
+766
+02:14:15,371 --> 02:14:19,571
+So this means that this node is in the middle of eight different pairs.
+
+767
+02:14:20,972 --> 02:14:21,211
+Okay.
+
+768
+02:14:22,391 --> 02:14:29,131
+And the ones on the edges, so they are not in the middle of any communications.
+
+769
+02:14:29,472 --> 02:14:31,931
+Therefore, the values for those is zero.
+
+770
+02:14:33,871 --> 02:14:36,392
+Now, let's take a look at this toy example.
+
+771
+02:14:36,392 --> 02:14:47,392
+Now, as you see, some of the nodes, so I have already written their between the centrality values.
+
+772
+02:14:47,392 --> 02:14:55,392
+Well, let's take a look at the node A. It is not in the middle of any communication, so therefore between this value is zero.
+
+773
+02:14:55,392 --> 02:15:04,392
+Now, let's take a look at B. Now, B is in the middle of A is going to talk to this one, this one and this one.
+
+774
+02:15:04,391 --> 02:15:05,451
+this one and this one.
+
+775
+02:15:05,531 --> 02:15:08,351
+This means that B is in the middle of three pairs.
+
+776
+02:15:09,371 --> 02:15:12,651
+But as you see here, 3.5 is written.
+
+777
+02:15:13,551 --> 02:15:15,352
+So how come 3.5?
+
+778
+02:15:15,352 --> 02:15:18,352
+Now there is additional 0.5
+
+779
+02:15:18,352 --> 02:15:23,451
+because C and D can also talk through B.
+
+780
+02:15:24,751 --> 02:15:25,051
+Okay.
+
+781
+02:15:25,591 --> 02:15:31,131
+But why not adding one value?
+
+782
+02:15:31,131 --> 02:15:36,231
+why not instead of one I'm adding 0.5.
+
+783
+02:15:36,231 --> 02:15:42,411
+The reason is that C and D can have two choices.
+
+784
+02:15:43,011 --> 02:15:45,511
+They can communicate through node E
+
+785
+02:15:45,511 --> 02:15:48,251
+or they can communicate node B.
+
+786
+02:15:49,051 --> 02:15:53,651
+So therefore for this pair for C and D
+
+787
+02:15:53,651 --> 02:15:55,852
+I am going to add 0.5
+
+788
+02:15:55,852 --> 02:16:00,091
+because I have two possible ways to communicate.
+
+789
+02:16:00,091 --> 02:16:03,672
+I can only add 0.5 because of that.
+
+790
+02:16:04,172 --> 02:16:04,231
+Okay.
+
+791
+02:16:04,631 --> 02:16:11,651
+So therefore the value for the betweenness centrality 3.5 for B.
+
+792
+02:16:12,312 --> 02:16:21,811
+Now, what would you say the value for betweenness value for node E?
+
+793
+02:16:23,352 --> 02:16:24,072
+Okay.
+
+794
+02:16:24,391 --> 02:16:29,591
+Now, in this particular case, the betweenness value of E would be 0.5, right?
+
+795
+02:16:29,591 --> 02:16:33,991
+because it is in the middle of these two nodes communication,
+
+796
+02:16:34,871 --> 02:16:39,591
+but these two nodes can communicate via this node and via this node.
+
+797
+02:16:39,591 --> 02:16:44,391
+So therefore, if you calculate the betweenness value, it has to be 0.5.
+
+798
+02:16:45,991 --> 02:16:47,671
+Okay, we already talked about it.
+
+799
+02:16:50,231 --> 02:16:53,831
+Okay, now this is the social network analysis report
+
+800
+02:16:53,831 --> 02:17:01,191
+where we use the betweenness centrality degree.
+
+801
+02:17:01,751 --> 02:17:01,871
+Okay.
+
+802
+02:17:02,212 --> 02:17:06,051
+Every time when you do a social network analysis,
+
+803
+02:17:06,371 --> 02:17:08,792
+you need to pick one metric.
+
+804
+02:17:09,151 --> 02:17:12,171
+You can either pick degree centrality metric.
+
+805
+02:17:12,371 --> 02:17:17,572
+You can pick betweenness centrality metric.
+
+806
+02:17:17,572 --> 02:17:21,871
+Now, later we will learn the close centrality metric
+
+807
+02:17:21,871 --> 02:17:25,431
+and you can also select close and centrality.
+
+808
+02:17:25,551 --> 02:17:30,051
+In particular, this time, between the centrality metric is chosen
+
+809
+02:17:30,051 --> 02:17:35,771
+when this social network analysis is visualized.
+
+810
+02:17:36,551 --> 02:17:41,171
+Now, as you see, some nodes have a bigger circle.
+
+811
+02:17:41,171 --> 02:17:45,431
+This means that those nodes which have bigger circle
+
+812
+02:17:45,431 --> 02:17:48,871
+is in the middle of many pairs of communication.
+
+813
+02:17:48,871 --> 02:18:04,151
+Okay, some nodes have small circles because they are not in the middle of many pairs of communication.
+
+814
+02:18:07,603 --> 02:18:23,963
+Now, let's take a look at this example. And this example is telling you that find a node that has high betweenness degree, but centrality betweenness, but low degree centrality.
+
+815
+02:18:23,963 --> 02:18:43,943
+Okay. Now, if you look at it, so we are asking for a node which has a low degree and high betweenness. Obviously, when we talk about betweenness, you should look at the middle nodes. Okay. Now, I have two choices, G and H. Okay.
+
+816
+02:18:43,944 --> 02:18:55,603
+Now, so what would be, so as you see, their degree is the same because this has two links and this also has two links.
+
+817
+02:18:56,103 --> 02:18:56,223
+Okay.
+
+818
+02:18:56,304 --> 02:19:00,644
+Their degree is same and their degree is low.
+
+819
+02:19:00,903 --> 02:19:01,223
+Okay.
+
+820
+02:19:01,303 --> 02:19:03,504
+Compared to the other ones in the network.
+
+821
+02:19:04,124 --> 02:19:06,803
+And now take a look at their betweenness value.
+
+822
+02:19:06,803 --> 02:19:14,543
+Now, G is in the middle and there are six nodes here and there are five nodes here.
+
+823
+02:19:15,063 --> 02:19:24,443
+And these six nodes will need to communicate these five nodes, which means that there are six multiplied by 30 different pairs of communication for G.
+
+824
+02:19:25,163 --> 02:19:27,243
+OK, now let's take a look at H.
+
+825
+02:19:27,243 --> 02:19:31,103
+Now, there are eight nodes here and there are four nodes here.
+
+826
+02:19:31,663 --> 02:19:34,243
+Four multiply seven.
+
+827
+02:19:34,243 --> 02:19:41,703
+seven, that's 28, 28 different pairs of communication that goes through H.
+
+828
+02:19:42,243 --> 02:19:45,343
+Here is 30 and this is 28.
+
+829
+02:19:46,123 --> 02:19:46,243
+Okay.
+
+830
+02:19:46,504 --> 02:19:53,063
+So therefore we say that G has high betweenness value and low degree.
+
+831
+02:19:53,544 --> 02:19:53,863
+Okay.
+
+832
+02:19:54,703 --> 02:19:56,904
+This is how you would answer this question.
+
+833
+02:20:01,716 --> 02:20:10,636
+Now, we talked about the betweenness, so look, now let's talk about the clauses, okay?
+
+834
+02:20:11,655 --> 02:20:20,515
+Now, if you look at this example, you see that the purple node, okay, is not in the middle of many other nodes.
+
+835
+02:20:21,455 --> 02:20:26,175
+And also, you see that purple node has only one degree value, okay?
+
+836
+02:20:26,175 --> 02:20:35,896
+But again, the purple node is attached to the most important node in the network, which is this one.
+
+837
+02:20:37,015 --> 02:20:37,095
+Okay.
+
+838
+02:20:37,455 --> 02:20:45,875
+So therefore, we say that between the centrality and the degree centrality cannot capture the importance of this node.
+
+839
+02:20:45,875 --> 02:20:46,635
+Okay.
+
+840
+02:20:46,855 --> 02:20:51,576
+Because this node is much closer to the main node.
+
+841
+02:20:51,815 --> 02:20:52,175
+Okay.
+
+842
+02:20:52,216 --> 02:20:53,256
+Or central node.
+
+843
+02:20:53,535 --> 02:20:53,795
+Okay.
+
+844
+02:20:53,795 --> 02:21:01,435
+which is in between many other nodes, which has highest degree and which can,
+
+845
+02:21:02,635 --> 02:21:06,995
+so from which you can access to the remainder of nodes in an easy way.
+
+846
+02:21:07,515 --> 02:21:12,115
+So therefore, in order to capture the importance of this purple node here,
+
+847
+02:21:12,555 --> 02:21:15,436
+we use the closeness centrality value.
+
+848
+02:21:15,436 --> 02:21:26,836
+Okay, now the closest centrality is based on the length of average shortest paths between the node and all other nodes in the network. Okay.
+
+849
+02:21:27,495 --> 02:21:43,035
+In other words, so in order to find the closest property for this one, we need to calculate the shortest path, average shortest path of from this node to all other nodes in the system. Okay.
+
+850
+02:21:43,035 --> 02:21:48,055
+Okay, from this node to this node, from this node to this node, from this node to this node.
+
+851
+02:21:49,035 --> 02:21:53,796
+We need to keep repeating this for all the nodes in the network.
+
+852
+02:21:54,336 --> 02:21:54,415
+Okay.
+
+853
+02:21:56,275 --> 02:22:02,716
+And then we need to also normalize this by dividing to n minus 1.
+
+854
+02:22:03,016 --> 02:22:03,296
+Okay.
+
+855
+02:22:03,296 --> 02:22:10,156
+So let's take a look at an example of how we are calculating to close the centrality on a toy example.
+
+856
+02:22:11,335 --> 02:22:11,456
+Okay.
+
+857
+02:22:11,455 --> 02:22:19,035
+Now, let's calculate the closeness centrality for node A.
+
+858
+02:22:19,775 --> 02:22:30,615
+As I said, first, what we are doing, we are computing the distance from node A to all other nodes in the system.
+
+859
+02:22:30,835 --> 02:22:33,715
+So from this one to this one, there's one.
+
+860
+02:22:34,075 --> 02:22:39,855
+From this one to this one, there's two, three, and four.
+
+861
+02:22:39,855 --> 02:22:49,775
+OK. We are calculating the distance from the origin node to the remainder of nodes.
+
+862
+02:22:50,335 --> 02:23:00,876
+OK. And we add them up. OK. And we are normalizing it by dividing to the n minus one.
+
+863
+02:23:00,876 --> 02:23:08,615
+OK. The number of nodes except itself. And then we take the power of minus one.
+
+864
+02:23:08,615 --> 02:23:12,555
+that gives us the closeness centrality value.
+
+865
+02:23:13,275 --> 02:23:13,375
+Okay.
+
+866
+02:23:13,855 --> 02:23:19,135
+And similarly, we can do the same thing for the remainder of nodes.
+
+867
+02:23:19,775 --> 02:23:20,015
+Okay.
+
+868
+02:23:20,355 --> 02:23:24,175
+Now, by just looking at this picture, you can say that, okay,
+
+869
+02:23:24,175 --> 02:23:30,335
+the one in the middle should have the highest closeness centrality value
+
+870
+02:23:30,335 --> 02:23:36,015
+because if you start from this one, you can easily access to the remainder of nodes.
+
+871
+02:23:36,335 --> 02:23:37,755
+Yes, this is true.
+
+872
+02:23:37,755 --> 02:23:46,115
+So usually the closest property is the highest for the ones that are in the middle.
+
+873
+02:23:47,835 --> 02:23:54,615
+OK. So take a look at this example. Again, the closest property is 0.6 here.
+
+874
+02:23:55,735 --> 02:23:58,075
+So you see that.
+
+875
+02:23:58,432 --> 02:24:06,611
+So by just looking at this picture, because it's in the middle, if you start from this one, you can easily access to the remainder of nodes.
+
+876
+02:24:07,352 --> 02:24:16,452
+And for this particular one, the closeness centrality value for this one has to be bigger because so it has direct access.
+
+877
+02:24:16,452 --> 02:24:19,971
+You can access to the remainder of nodes easily.
+
+878
+02:24:19,971 --> 02:24:23,471
+for the other ones.
+
+879
+02:24:24,091 --> 02:24:29,791
+So obviously they all have the same closeness property
+
+880
+02:24:29,791 --> 02:24:34,051
+because the average path,
+
+881
+02:24:35,311 --> 02:24:40,131
+average distance from this node to the remainder of nodes
+
+882
+02:24:40,131 --> 02:24:44,011
+is the same for every other node.
+
+883
+02:24:45,871 --> 02:24:49,131
+Now, here is another example.
+
+884
+02:24:49,971 --> 02:24:52,611
+take a look at this question.
+
+885
+02:24:52,871 --> 02:24:56,811
+Each node has relatively high degree, but low closeness.
+
+886
+02:24:59,111 --> 02:25:02,291
+Now, if you look at this one, you see that,
+
+887
+02:25:03,491 --> 02:25:07,611
+obviously, when you say low closeness,
+
+888
+02:25:07,771 --> 02:25:13,371
+you need to look at the nodes that are far away from the central area.
+
+889
+02:25:13,891 --> 02:25:14,011
+Okay.
+
+890
+02:25:14,271 --> 02:25:17,851
+Now, you need to be looking for this node, this node, this node.
+
+891
+02:25:17,851 --> 02:25:25,671
+you need to be looking for to these nodes. Okay. Okay. And at the same time, it says that it should
+
+892
+02:25:25,671 --> 02:25:35,152
+have the high, relatively high degree. Okay. Now, if you look at these nodes here, you see that O,
+
+893
+02:25:35,152 --> 02:25:43,152
+not O, has three degrees, which is relatively high. Now, if you look at this group here,
+
+894
+02:25:43,152 --> 02:25:50,652
+you see that F has, again, three degrees.
+
+895
+02:25:50,972 --> 02:25:53,531
+It is relatively high, okay?
+
+896
+02:25:54,071 --> 02:25:58,932
+Now, I cannot say the same thing for E here
+
+897
+02:25:58,932 --> 02:26:02,872
+because E has a direct link to the central node, okay?
+
+898
+02:26:02,932 --> 02:26:04,312
+Most central node, okay?
+
+899
+02:26:04,812 --> 02:26:10,851
+But F, so from F to I, you need to go one, two links.
+
+900
+02:26:10,851 --> 02:26:13,571
+From F to I, you need to go one, two links.
+
+901
+02:26:13,751 --> 02:26:16,292
+From O to I, you need to go one, two links.
+
+902
+02:26:16,751 --> 02:26:16,771
+Okay.
+
+903
+02:26:17,391 --> 02:26:30,032
+Now, but you see that from F, I have two ways of accessing I, but from O, I have only one way of accessing one.
+
+904
+02:26:30,611 --> 02:26:30,932
+Okay.
+
+905
+02:26:30,932 --> 02:26:45,071
+So therefore you would say that, okay, all would be the correct answer because it has high number of degrees but low clauses.
+
+906
+02:26:45,071 --> 02:27:05,331
+Okay, I didn't pick F because you have two ways of going to I, which is the most central node, and it has the same degree as the O.
+
+907
+02:27:05,952 --> 02:27:11,312
+Okay, so therefore the correct answer would be O in this particular case.
+
+908
+02:27:11,311 --> 02:27:21,471
+Now, so far we talked about centrality metrics.
+
+909
+02:27:22,471 --> 02:27:22,591
+Okay.
+
+910
+02:27:23,251 --> 02:27:33,411
+And I told you that there are two different categories of the metrics that you are using in social network analysis.
+
+911
+02:27:33,411 --> 02:27:39,451
+And I have gone through the three different kinds of centrality metrics.
+
+912
+02:27:39,451 --> 02:27:44,411
+degree centrality between the centrality and closing centrality.
+
+913
+02:27:44,411 --> 02:27:45,071
+Okay.
+
+914
+02:27:46,932 --> 02:27:57,631
+Degree centrality, I already gave you examples, and I have shown you the equation for it.
+
+915
+02:27:57,631 --> 02:28:01,591
+This is just a reminder.
+
+916
+02:28:02,312 --> 02:28:14,852
+As you see, you can calculate the degree centrality on an undirected graph,
+
+917
+02:28:14,852 --> 02:28:20,312
+which is the number of links that node i has divided by n minus 1.
+
+918
+02:28:20,772 --> 02:28:24,891
+And if it is a directed graph for degree centrality,
+
+919
+02:28:25,211 --> 02:28:28,112
+we prefer to use the number of outlinks.
+
+920
+02:28:28,891 --> 02:28:33,832
+The number of outlinks that node i has divided by n minus 1,
+
+921
+02:28:33,991 --> 02:28:36,071
+that gives you the degree centrality.
+
+922
+02:28:37,311 --> 02:28:38,772
+And the closing centrality,
+
+923
+02:28:38,772 --> 02:28:44,911
+I have shown you the formula equation for the closeness centrality.
+
+924
+02:28:45,472 --> 02:28:55,071
+We basically compute the average, the total distance between node i and the remainder nodes.
+
+925
+02:28:55,631 --> 02:28:57,152
+And that is the denominator.
+
+926
+02:28:57,571 --> 02:29:00,811
+And for denominator, we have n minus 1.
+
+927
+02:29:02,952 --> 02:29:07,452
+And as for the betweenness centrality, we use this equation here.
+
+928
+02:29:07,451 --> 02:29:17,591
+we first calculate the number of pairs that i is in the middle of and also we divide that with the
+
+929
+02:29:17,591 --> 02:29:27,831
+total number of pairs that these two nodes are connected. Okay and we compute this value and
+
+930
+02:29:27,831 --> 02:29:34,111
+that is the nominator and the denominator is the total number of edges which is n minus 1
+
+931
+02:29:34,112 --> 02:29:36,811
+multiply n minus 2 divided by 2.
+
+932
+02:29:37,232 --> 02:29:43,112
+And here in this example, we put 2 on top.
+
+933
+02:29:43,112 --> 02:29:49,592
+So, but essentially, so we are dividing this value here
+
+934
+02:29:49,592 --> 02:29:52,071
+by the total number of edges,
+
+935
+02:29:52,211 --> 02:29:56,711
+which is n minus 1 multiplied by n minus 2 divided by 2.
+
+936
+02:29:57,611 --> 02:29:57,732
+Okay.
+
+937
+02:29:57,732 --> 02:30:08,152
+Now, this old, so, matrix, the degree centrality,
+
+938
+02:30:08,152 --> 02:30:13,692
+close centrality, and the between centrality,
+
+939
+02:30:13,692 --> 02:30:15,732
+these are centrality metrics.
+
+940
+02:30:16,491 --> 02:30:23,831
+And these metrics are telling you that all the links have equal weight.
+
+941
+02:30:24,732 --> 02:30:24,892
+Okay?
+
+942
+02:30:25,592 --> 02:30:27,392
+All the links have equal weight.
+
+943
+02:30:27,732 --> 02:30:34,851
+And the centrality metrics are focusing on in the directed graphs with the outlinks.
+
+944
+02:30:35,631 --> 02:30:37,771
+Okay, they are not focusing on the inlinks.
+
+945
+02:30:38,211 --> 02:30:42,911
+Now, there is another category of metrics, which is prestige metrics.
+
+946
+02:30:43,472 --> 02:30:46,532
+I will talk about the prestige metrics in the next lecture.
+
+947
+02:30:47,292 --> 02:30:52,392
+These prestige metrics are focusing on the inlinks.
+
+948
+02:30:52,392 --> 02:30:55,932
+Okay, and there are three different prestige metrics.
+
+949
+02:30:55,932 --> 02:31:03,611
+degree prestige proximity prestige and rank prestige and we will talk about the prestige
+
+950
+02:31:03,611 --> 02:31:09,532
+metrics in the next lecture and we will also talk about a co-citation and bibliographic
+
+951
+02:31:09,532 --> 02:31:19,872
+coupling metrics that we use in uh social network analysis okay then in the next lecture given the
+
+952
+02:31:19,872 --> 02:31:23,471
+time i will also start talking about the page rank algorithm
+
+953
+02:31:23,471 --> 02:31:53,451
+Thank you.
+
+954
+02:31:24,275 --> 02:31:48,275
+Okay, for now I want to stop here and all the slides that I have covered so far are available on the website. Again, I have covered the link analysis check chapter all the way to the prestige matrix. Next lecture I will start from prestige matrix and I will try to complete the link analysis chapter.
+
+955
+02:31:48,275 --> 02:31:56,636
+Okay. Today I want to stop here. If you have any questions, feel free to ask them.
+
+956
+02:31:58,136 --> 02:32:00,816
+Hocam ben ödevle alakalı bir soru soracaktım.
+
+957
+02:32:01,515 --> 02:32:02,395
+Evet sorabilirsin.
+
+958
+02:32:02,636 --> 02:32:08,956
+Hocam bizim ödevimiz şeydi. Farklı sitelerden ürün yorumlarını çekip tek bir sitede bunları göstermekte.
+
+959
+02:32:08,956 --> 02:32:15,735
+Ama biz bir crawler yazdık. Yani sadece hepsi buradaki tüm ürünümüzü crawl etmesi çok uzun süre alıyor.
+
+960
+02:32:15,735 --> 02:32:21,415
+bunun için tüm ürünler yerine kategorize etsek, sadece telefonlar gibi yapsak uygun olur mu?
+
+961
+02:32:21,415 --> 02:32:33,676
+Olur. Siz aslında bir crawler application yapıyorsunuz. Benim yayınladığım dokümanda benzer crawler application'ları için de aynı yorumu yazdım.
+
+962
+02:32:33,676 --> 02:32:45,076
+Yani bütün ürünler için değil, belli ürünler için odaklanın diye ve bu tür crawler yani başka sayfalardan ürün bilgisi alıp bunu tek bir hibrit sayfada,
+
+963
+02:32:45,075 --> 02:33:14,395
+yani tek bir sayfada hibrit bir şekilde gösteren uygulamalar için söylüyorum. Dönem projeleri için söylüyorum. En azından iki ya da üç tane farklı sayfadan veri toplamanızı istiyorum. Yani tek sayfadan değil. Siz televizyon seçebilirsiniz. Bir başka grup iPhone ürünü seçebilir. Bir başka grup farklı bir ürün seçebilir. Benim isteğim buradan gelen ürünleri farklı filtrelemeler yapılabilecek şekilde
+
+964
+02:33:14,395 --> 02:33:42,035
+tek bir sayfadan izleyebilmek. Ne filtreleme yapabilirim? Fiyata göre filtreleme yapabilirim. Ondan sonra stokta olup olmadığına göre filtreleme yapabilirim. Ondan sonra işte adede göre yapabilirim. Yani o ürünle ilgili farklı firmaların sayfalarında ürünün tanımlayan bütün bilgileri çekeceksiniz ve bunları sıralandıracaksınız.
+
+965
+02:33:42,035 --> 02:33:54,355
+tabi mesela hani gidip de televizyonun da tek bir modelini yapmanızı da istemiyorum. Televizyon yapacaksınız televizyonun bütün modelleri için olsun. iPhone yapacaksınız iPhone'un bütün modelleri için olsun.
+
+966
+02:33:55,895 --> 02:33:57,015
+Teşekkür ederim. Teşekkür ederim.
+
+967
+02:33:58,555 --> 02:34:00,515
+Rica ederim. Başka sorusu olan var mıdır?
+
+968
+02:34:06,100 --> 02:34:31,699
+Dersin online versiyonu şeyde online Yıldız Edüter'e kayıtlı olacak. Takıldığınız konu varsa tekrardan dersin ilgili kısmını dinleyebilirsiniz. Her chapter'ın dediğim gibi textbook'u takip ederek gidiyorum. Bu hafta ve önümüzdeki hafta link analysis chapter'ını tamamlıyor olacağım.
+
+969
+02:34:31,699 --> 02:34:40,939
+özellikle final sınavınızda da önemli bir chapter. Sorunuz varsa bu hafta olmasa da gelecek hafta olabilir. Mutlaka sorun arkadaşlar.
+
+970
+02:34:42,159 --> 02:34:45,579
+Derse katıldığınız için teşekkür ederim. Haftaya görüşmek üzere.
+
+971
+02:34:47,939 --> 02:34:49,359
+Görüşmek üzere hocam.
+
+972
+02:34:49,739 --> 02:34:51,359
+İyi günler.
