@@ -42,6 +42,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1USYM6BpcQYzJxxtQtGbPWs4Kw9cwtMsR?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Algoritma Analizi Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Elle çıkarılmış daha güzel 2 ders notu](./slaytlar_notlar/2019) ✨
 - 📄 **Not:** [Elle çıkarılmış ders notu](./slaytlar_notlar/2022/not.pdf) ✨
 - 📄 **Not:** [Nasırın el yazısı notu](./slaytlar_notlar/2021/nas%C4%B1r%C4%B1n%20el%20yaz%C4%B1s%C4%B1%20notu.pdf) ✨
