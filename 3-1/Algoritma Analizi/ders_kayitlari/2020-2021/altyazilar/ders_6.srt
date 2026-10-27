@@ -1,0 +1,1071 @@
+1
+00:01:10,227 --> 00:01:29,387
+Evet, arkadaşlar, sizi tekrar gördüğüm için tekrar hoş geldiniz diyorum. Öncelikle vakit ayırıp bu uygulama dersine de katılan arkadaşlara çok teşekkür ediyorum.
+
+2
+00:01:30,287 --> 00:01:40,087
+Uygulama dersinde yaptığımız problemlerle ilgili, öğrendiğimiz konularla ilgili birkaç soru örneği çözüyor olacağız.
+
+3
+00:01:40,227 --> 00:01:56,427
+İlk olarak backward substitution ile başlayacağız. Bir backward substitution problemi vereceğim şimdi size. Bir 5-6 dakikada zaman vereceğim. Bu süre içerisinde bu problemi çözmenizi bekleyeceğim. Arkasından birlikte aynı soruyu çözüyor olacağız.
+
+4
+00:01:56,428 --> 00:02:08,047
+Tabi bu problem çözdükten sonra genel olarak dersle ilgili sorularınız olursa sizlere cevap veriyor olacağım sorularınıza
+
+5
+00:02:08,047 --> 00:02:17,588
+Emre'ye de teşekkür ediyorum kamerasından Haleş'in yaptığı için en azından sadece bilgisayara karşı anlatmıyorum
+
+6
+00:02:17,588 --> 00:02:21,467
+Bir yüz görmüş oluyorum o yüzden çok teşekkür ver Emre
+
+7
+00:02:21,467 --> 00:02:24,628
+Sarıcan'ın bir sorusu olacak
+
+8
+00:02:24,628 --> 00:02:39,888
+Hocam, geçen soruda da, ondan önceki soruda da, bu en son bulduktan sonra karmaşıklığı, elemanıdır Theta log n dedik, ondan öncekinde de elemanıdır Theta n dedik, neden Theta'yı kullandığımızı anlamadım ben de
+
+9
+00:02:39,888 --> 00:02:53,228
+Bu noktada tabii biz, yani problemleri matematiksel olarak analiz ederken, problemlerin worst case'ini ve best case'ini, yani daha doğrusu worst case ve best case yanlış olacak
+
+10
+00:02:53,228 --> 00:03:07,647
+Upper bound'unu ve lower bound'unu analiz etmedik. Yani bunu ortaya koymadık. Bu problemlerde upper bound ve lower bound aynı noktaya denk geldikleri için tight bound olarak ifade edebiliyoruz.
+
+11
+00:03:07,647 --> 00:03:22,147
+Bu yüzden bu theta'yı kullanmış olduk. Onu ekstradan bir değerlendirmek gerekiyor, bakmak gerekiyor. Burada böyle olduğunu varsaydığımız için Sercan ifademizi bu şekilde yaptık ama
+
+12
+00:03:22,147 --> 00:03:26,007
+eğer hala anlaşılırken bir şey olursa mutlaka üzerinden geçeriz.
+
+13
+00:03:26,467 --> 00:03:27,687
+Evet, tamam, sağ olun.
+
+14
+00:03:29,127 --> 00:03:34,347
+Evet, başka bir soru yoksa bir örnek yazacağım şimdi size.
+
+15
+00:03:36,528 --> 00:03:38,627
+Örnek hangisi olsun bir bakalım.
+
+16
+00:03:40,388 --> 00:03:41,847
+İlk seçenekler içerisinde.
+
+17
+00:03:42,808 --> 00:03:44,187
+Şöyle bir soru vereyim.
+
+18
+00:03:49,139 --> 00:03:51,399
+Hocam ekran paylaşımını açabilir misiniz?
+
+19
+00:03:51,880 --> 00:03:56,219
+Tabii. Hemen açıyorum. Hatırlatma için teşekkürler.
+
+20
+00:04:06,900 --> 00:04:07,900
+şimdi xn eşittir xn eksi 1 artı n 4n büyük 0 için bunu backward substitution ile çözebilir misiniz?
+
+21
+00:04:36,084 --> 00:04:37,283
+yorum yapmak isteyen.
+
+22
+00:04:39,203 --> 00:04:41,343
+Hocam, Initial Condition'ın ne peki?
+
+23
+00:04:41,923 --> 00:04:42,863
+Evet, çok güzel.
+
+24
+00:04:44,323 --> 00:04:49,504
+Initial Condition'ı vermezsek bunu Backward Substitution'la çözemeyiz.
+
+25
+00:04:49,544 --> 00:04:55,283
+Çünkü şu anda sadece elimizde ne var? Recurrence Bound's var ama Initial Condition yok.
+
+26
+00:04:55,403 --> 00:04:56,863
+Hemen Initial Condition'ı veriyorum.
+
+27
+00:04:58,443 --> 00:05:05,123
+Şimdi artık bu elimizdeki Recurrence Bound'sını, Backward Substitution'la çözerek
+
+28
+00:05:05,123 --> 00:05:15,143
+ne elde ediyoruz bir görelim. Bir beş dakika süreniz var. Bu beş dakikalık süre içerisinde lütfen bunu daha önceki örneklere bakarak çözmeye çalışın.
+
+29
+00:06:24,627 --> 00:06:25,427
+Evet Ertuğrul.
+
+30
+00:06:27,707 --> 00:06:29,927
+N çarpı N artı 1 bölü 2 değil mi hocam?
+
+31
+00:06:31,207 --> 00:06:39,267
+Birazdan cevapları alacağım. Ya da hani birlikte değerlendiriyor olacağız. Herkes bir kendi tarafında soruyu çözmeye çalışsın. Doğru ya da yanlış oluyor.
+
+32
+00:06:39,287 --> 00:06:40,787
+Anlım için kaldırmıştım da Ertuğrul.
+
+33
+00:06:40,808 --> 00:06:45,867
+Çok teşekkür ederim. Yok sorun değil. Bakalım cevap doğru mu, yanlış mı. Birazdan bakacağız birlikte.
+
+34
+00:08:02,740 --> 00:08:03,740
+Evet Yasir
+
+35
+00:08:08,339 --> 00:08:21,639
+Hocam bir şey soracaktım, şey Initial Condition ile ilgili. Hocam Initial Condition siz mi şey normalde bir veriliyor mu yoksa biz de oradan başlayabiliriz? Mesela x1'e eşitir 1 olarak Initial Condition olarak başlayabiliyor muyuz?
+
+36
+00:08:21,639 --> 00:08:39,459
+Bu örnekte bu initial condition verilmiş, yani daha önceden bu çözümlenmiş bir ne diyelim rekürans bağımsızı ve initial condition'ı ama algoritmalarda bu initial condition'ı bizim bulmamız gerekiyor
+
+37
+00:08:39,459 --> 00:08:48,679
+Pekala hocam şey şu anda patent patent olarak mı anlatmamız gerekiyor yoksa cevaba göre falan cevap vermemiz gerekiyor sana buradan
+
+38
+00:08:48,680 --> 00:08:55,060
+Bunu adım adım çözümünü yazıp sonuca ulaşmamız gerekiyor. Şimdi birlikte yapıyor olacağız zaten.
+
+39
+00:08:55,560 --> 00:08:55,799
+Tamam.
+
+40
+00:09:05,107 --> 00:09:11,588
+Evet, sanırım genel olarak bir şeyler yapabilmişsinizdir diye düşünüyorum.
+
+41
+00:09:11,588 --> 00:09:19,827
+Bir ben çözeyim ilk etapta, sonraki sorularda belki bunu sizden isteyebilirim.
+
+42
+00:09:19,827 --> 00:09:29,827
+Öncelikle elimizde x n-1 artı n var. Burada bir ifade yazacağız.
+
+43
+00:09:29,827 --> 00:09:40,227
+x n-2, 6 n-1.
+
+44
+00:09:48,115 --> 00:09:57,115
+artı M. Bu nasıl olmuştu? Bunu sorayım size.
+
+45
+00:10:00,083 --> 00:10:02,363
+x n-1 yerine yazdık hocam onu.
+
+46
+00:10:02,923 --> 00:10:04,343
+x n-1 yerine yazdık.
+
+47
+00:10:04,403 --> 00:10:06,483
+x n-1'in karşılığı nedir tam olarak?
+
+48
+00:10:06,783 --> 00:10:08,863
+x n-2 artı n-1'dir.
+
+49
+00:10:09,384 --> 00:10:10,783
+Artı n-1'dir.
+
+50
+00:10:11,323 --> 00:10:12,623
+Bu eksi 1 nereden geliyor?
+
+51
+00:10:13,883 --> 00:10:14,323
+Çünkü
+
+52
+00:10:14,323 --> 00:10:16,663
+yukarıda ilk sen için yapmıştık.
+
+53
+00:10:16,743 --> 00:10:18,443
+En gördüğümüz yere n-1
+
+54
+00:10:18,443 --> 00:10:20,443
+yazmış olduk. Tamam. Çok teşekkür
+
+55
+00:10:20,443 --> 00:10:22,363
+ediyorum. Bunun çözüm ürünesini
+
+56
+00:10:22,363 --> 00:10:23,344
+yaptığımızda
+
+57
+00:10:23,344 --> 00:10:25,983
+x n-2
+
+58
+00:10:25,983 --> 00:10:28,803
+artı n-1
+
+59
+00:10:28,803 --> 00:10:31,004
+artı n oldu.
+
+60
+00:10:32,124 --> 00:10:33,264
+Bir adım daha ilerliyorum.
+
+61
+00:10:33,264 --> 00:10:36,124
+Bu sefer x'e eksi 2'nin yerine x'e eksi 3 yazıyorum.
+
+62
+00:10:37,784 --> 00:10:41,903
+Artı bu sefer n-2 yazıyorum.
+
+63
+00:10:43,524 --> 00:10:46,363
+Artı buraya ne yazacağım?
+
+64
+00:10:47,183 --> 00:10:53,183
+n-1 artı n yazacağım.
+
+65
+00:10:53,823 --> 00:10:54,764
+Şuradan geliyor.
+
+66
+00:10:54,764 --> 00:11:15,984
+Bu da bize x n-3 artı n-2 artı n-1 artı n ifadesini ortaya çıkartıyor.
+
+67
+00:11:15,984 --> 00:11:18,463
+Sonra aşağıya doğru devam ediyoruz.
+
+68
+00:11:18,463 --> 00:11:27,804
+Bu da xn-i artı buraya ne yazacağız?
+
+69
+00:11:41,139 --> 00:11:43,139
+i çarpen eksi i
+
+70
+00:11:43,139 --> 00:11:45,139
+Hayır
+
+71
+00:11:45,139 --> 00:11:48,419
+n-i artı 1
+
+72
+00:11:48,419 --> 00:11:52,899
+1, n-i artı 1, birinciyi yazdım, ikinciyi
+
+73
+00:11:52,899 --> 00:11:54,899
+3
+
+74
+00:11:56,884 --> 00:11:58,884
+n-1 artı 2
+
+75
+00:11:58,884 --> 00:12:02,884
+n-i artı 2
+
+76
+00:12:02,884 --> 00:12:03,884
+Evet
+
+77
+00:12:03,884 --> 00:12:05,884
+Devam edeceğim
+
+78
+00:12:05,884 --> 00:12:08,884
+n-i artı nereye kadar gideceğim
+
+79
+00:12:10,884 --> 00:12:11,884
+n
+
+80
+00:12:11,884 --> 00:12:13,884
+artı n'e kadar gideceğim
+
+81
+00:12:13,884 --> 00:12:14,884
+Evet
+
+82
+00:12:14,884 --> 00:12:16,884
+Formülü genelleştirdim
+
+83
+00:12:16,884 --> 00:12:20,884
+Burada yapmam gereken son adım nedir?
+
+84
+00:12:25,748 --> 00:12:51,827
+i'nin yerine ne koymaktı? N. Burada Initial Condition'i sağlamak adına i'nin yerine N koyuyorum. O zaman x 0 oluyor. O zaman burası ne oluyor? Artı 1. Sonra artı 2. Sonra artı 3. Artı 3. Artı yerine kadar. Artı yerine kadar. Burası neye denk geliyor?
+
+85
+00:12:51,827 --> 00:13:18,867
+n çarpı n artı 1 bölü 2. n çarpı n artı 1 bölü 2. x0'da ne var? 0. çarpma değil artı bu yüzden burası n artı 1 bölü 2 olarak çözümlenmiş oluyor bu rekürans bağımsızı. Buraya kadar soru sorular var mı?
+
+86
+00:13:24,083 --> 00:13:26,983
+Peki, yeni bir sayfa ekleyelim.
+
+87
+00:13:27,443 --> 00:13:28,663
+Hocam bir şey sorabilir miyim?
+
+88
+00:13:29,603 --> 00:13:29,903
+Evet.
+
+89
+00:13:30,564 --> 00:13:35,763
+Biraz geç kaldım ama. Burada bir önceki derste yaptığımız örnekte şey çıkmıştı.
+
+90
+00:13:37,143 --> 00:13:43,563
+M, N-I, artı I olmuştu. I'ler yerine N yazmıştık. İşte N falan kalmıştı örnekte.
+
+91
+00:13:44,083 --> 00:13:51,463
+Burada biz devam ettirdik. Hani 1, 2, 3, 4 falan bulana kadar, N'e kadar gittiği için N çarpı N artı bir bölü 2'yi bulduk.
+
+92
+00:13:51,463 --> 00:13:54,424
+Burada sabit kalıyordu
+
+93
+00:13:54,424 --> 00:13:57,723
+Buradaki rekürans pahantısı farklı
+
+94
+00:13:57,723 --> 00:14:01,503
+Bir önceki dersteki rekürans pahantısı
+
+95
+00:14:01,503 --> 00:14:04,764
+mn eşittir mn-1 artı 1'di
+
+96
+00:14:04,764 --> 00:14:06,764
+Burada artı n
+
+97
+00:14:06,764 --> 00:14:12,563
+Artı n olduğu için de otomatik olarak onu zaten yazmak zorundayız
+
+98
+00:14:12,563 --> 00:14:20,444
+En yazınca da n-i artı 1 ile başlayan ve sona kadar devam eden ifadeler
+
+99
+00:14:20,444 --> 00:14:22,223
+1, 2, 3, 4 sabit oluyor.
+
+100
+00:14:22,703 --> 00:14:23,984
+Ve bu n'e kadar gidiyor demek.
+
+101
+00:14:24,243 --> 00:14:30,124
+Bunların da zaten yazılış şekli, yani toplumun yazılış şekli n çarpı n artı bir break.
+
+102
+00:14:30,283 --> 00:14:32,844
+Bir öncekinde sabit bir sayı vardı, burada n var.
+
+103
+00:14:34,624 --> 00:14:34,984
+Anladım.
+
+104
+00:14:35,124 --> 00:14:38,744
+Hocam bir de kaybetmediysek bir önceki sayfaya gelebiliyor musunuz acaba?
+
+105
+00:14:39,524 --> 00:14:40,043
+Geldim.
+
+106
+00:14:40,043 --> 00:14:42,563
+Şey, hocam screenshot alacağım da o yüzden.
+
+107
+00:14:43,503 --> 00:14:44,444
+Ooo screenshot.
+
+108
+00:14:45,963 --> 00:14:48,683
+Evet hocam çözümle uğraşadım da yazamadım o yüzden.
+
+109
+00:14:49,183 --> 00:14:50,304
+Tamam şöyle söyleyeyim.
+
+110
+00:14:50,444 --> 00:14:59,564
+screenshot'ını da saç at da alabilirsiniz. Bir itirazım yok ama lütfen bunları yazarak bir defter oluşturmaya çalışırsanız memnun olurum.
+
+111
+00:15:00,043 --> 00:15:06,583
+Bundan da artık uan vereceğimi söylemiştim size. Herkesten yeri geldiğinde defter istiyor olacağım.
+
+112
+00:15:07,363 --> 00:15:08,223
+Tamam başkın.
+
+113
+00:15:08,704 --> 00:15:13,444
+Tercih sizin. Yani ders adında yazamayabilirsiniz, sonradan yazabilirsiniz. Yeter ki yazın.
+
+114
+00:15:13,744 --> 00:15:18,143
+Yeter ki siz kendi elinizle yazın. Öğrenmek için faydalı olacaktır.
+
+115
+00:15:18,143 --> 00:15:21,944
+Şimdi bakalım başka bir soru elimizde ne var diye
+
+116
+00:15:21,944 --> 00:15:25,903
+O zaman
+
+117
+00:15:25,903 --> 00:15:29,804
+Evet şöyle yapalım
+
+118
+00:15:34,100 --> 00:15:36,100
+İkinci örneğimize geçelim.
+
+119
+00:15:40,179 --> 00:15:42,499
+Şuraya x'a
+
+120
+00:15:46,419 --> 00:15:57,479
+n bölü 3, artı 1 olsun. Or, n büyük 1. Initial condition'da x1 eşittir 1 olsun.
+
+121
+00:15:59,119 --> 00:16:05,680
+Bunu çözerken de n'i 3 üzeri k olarak alabilirsiniz.
+
+122
+00:16:07,319 --> 00:16:12,819
+Evet, gelelim 5-6 dakika sürümüz var. Bunu lütfen çözmeye çalışalım.
+
+123
+00:16:26,035 --> 00:16:28,035
+Mikrofonları kapatalım arkadaşlar.
+
+124
+00:17:07,763 --> 00:17:15,583
+soruyu elle çözüp fotoğrafını çekip bana gönderebilirsiniz. O çözüm üzerinden de konuşabiliriz.
+
+125
+00:17:15,763 --> 00:17:25,284
+Bunu hani doğru yapan çıkacaktır mutlaka. Hızlıca çözümünüzü benimle paylaşabilirsiniz. Ben de o çözümü ekrana yansıtabilirim.
+
+126
+00:20:34,804 --> 00:20:39,463
+Hocam ben bir ekran görüntüsü attım chat kısmına. Onun üzerinden gidebilir miyiz?
+
+127
+00:20:40,503 --> 00:20:44,703
+Evet Ahmet gördüm. Teşekkür ederim. Eline sağlık. Birazdan paylaşacağım onu.
+
+128
+00:20:45,224 --> 00:20:46,283
+Tamam. Teşekkürler.
+
+129
+00:22:00,692 --> 00:22:18,171
+Evet arkadaşlar, kabaca çözmüş olmanızı bekliyorum. Ama arkadaşlarınızın gönderdiği iki tane çözüm var. Onlar üzerinden ilerleyelim. Öncelikle Ahmet Yaman. Teşekkür ediyorum gönderdiği çözüm için kendisine. Onun çözümünü ekrana yansıtacağım şimdi.
+
+130
+00:22:25,076 --> 00:22:26,076
+Evet.
+
+131
+00:22:30,771 --> 00:22:33,171
+Sanırım görebiliyorsunuz diye tahmin ediyorum.
+
+132
+00:22:34,971 --> 00:22:40,771
+Burada arkadaşımız McVert Subsidiarini şu şekilde uygulamış.
+
+133
+00:22:40,771 --> 00:22:45,771
+x üzeri, x n bölü 3 üzerinden ilerleyerek artı bir üzerinden.
+
+134
+00:22:45,771 --> 00:22:51,171
+x n bölü 9 demiş, n bölü 3'ün yerine koymuş, sonra ona artı bir demiş.
+
+135
+00:22:51,171 --> 00:22:56,171
+Sonra n bölü 3 üzeri 3 üzerinden ilerlemiş.
+
+136
+00:22:56,171 --> 00:23:00,171
+Sonra n bölü 3 üzeri 4 olarak artı bir şeklinde ilerleyerek ilerlemiş.
+
+137
+00:23:00,171 --> 00:23:25,251
+Bunu da m bölü 3i olarak ifade etmiş. Eklediği miktarı da artı i eksi 1 olarak ifade etmiş. En sonunda elinde logaritmaya geçmeden önce x 3k bölü 3k artı 1, 3k bölü 3k 1 olduğu için yerine 1 koymuş. x1 artı 1, artı k eksi 1'den elde ettiği sonuç k artı 1 olmuş.
+
+138
+00:23:25,251 --> 00:23:41,712
+tabi şu ifade yazmıyor burada onu da yazmış olalım hani siz not olarak alın. K'nın yerine ne koyacağız? Logaritma 3 tabanında n ifadesini koyacağız ve sonuç logaritma 3 tabanında n artı 1 olarak karşınıza çıkıyor olacak.
+
+139
+00:23:41,711 --> 00:23:46,711
+Bu bir çözüm şekli, doğru bir çözüm şekli
+
+140
+00:23:46,711 --> 00:23:57,711
+Şimdi bu ilgili çözümü not aldıysanız ikinci arkadaşınızın gönderdiği çözümü paylaşacağım
+
+141
+00:23:57,711 --> 00:24:04,411
+Aynı sonuca çıkıyorlar, biraz daha farklı bir ifadeyle bizim yaptığımız gibi çözmüş ikinci arkadaşımız
+
+142
+00:24:04,411 --> 00:24:05,711
+Bunu durduruyorum şimdi
+
+143
+00:24:05,711 --> 00:24:08,511
+Share screen diyelim
+
+144
+00:24:08,511 --> 00:24:37,531
+Umut Kayan'ın çözümünü paylaşıyor olacağım. Umut Kayan'ın çözümüne baktığımız zaman x n'in yerine 3 üzeri k'yı koyuyor. 3k boyu 3 diyor. Artı 1. Sonra bunu 3k-1 olarak ifade ediyor. Sonra x 3k-1'in yerine x 3k-2 artı 1 koyuyor. Bir tane de artı dışarıda kalıyor.
+
+145
+00:24:37,531 --> 00:24:53,811
+En sonunda bunu ilerlettiğinde aslında burada ufak bir olsa daha iyi olur dediğimiz 3k-i ifadesi var olması gerekiyor arada. 3k-i artı 1 artı buraya i yazması gerekiyor.
+
+146
+00:24:53,811 --> 00:25:02,931
+onun yerine i'lerin yerine k koyduğu zaman aslında otomatik olarak x1 artı k elde ediyor.
+
+147
+00:25:03,511 --> 00:25:07,811
+x1'in karşılığı 1, x1'den 1 geliyor, k artı 1 oluyor.
+
+148
+00:25:07,911 --> 00:25:15,311
+k'nın yerine de logaritma 3 tabanında n koyduğu zaman sonuç logaritma 3 tabanında n artı 1 oluyor.
+
+149
+00:25:15,311 --> 00:25:23,371
+Bu noktada şuradan x3k eksi i'den k koyduğunda x1 geliyor.
+
+150
+00:25:23,811 --> 00:25:37,491
+Bu geri kalan biriler de toplamda k adet oldukları için, burada k-1 var bir de buradan geliyor k oldukları için, artı k olarak şu aşağıdaki değeri elde etmiş oluyorsunuz.
+
+151
+00:25:37,611 --> 00:25:41,451
+İki arkadaşımıza da teşekkür ediyorum çözümü yapıp paylaştıkları için.
+
+152
+00:25:42,791 --> 00:25:44,471
+Buraya kadar sorusu olan var mı?
+
+153
+00:26:01,811 --> 00:26:12,591
+Evet, gördüğüm kadarıyla başka bir soru yok. Bir sonraki örneğe geçelim. O zaman bir sonraki örnek ne olsun diye bakalım.
+
+154
+00:26:19,763 --> 00:26:26,763
+Evet, sanırım bir sonraki örnek de şu olabilir.
+
+155
+00:26:29,763 --> 00:26:38,763
+Hemen ekran paylaşımla aktif hale getireyim. Kendi yazdığım vurgulamanın.
+
+156
+00:26:41,940 --> 00:27:10,139
+Evet, şu an görebiliyorsunuz sanırım. Exercise 3. Evet, neymiş? Summation i2'den n-1'e kadar giden bir toplam ifadesi var. Log i² olarak bir summation formülü veriyor.
+
+157
+00:27:10,139 --> 00:27:14,359
+bunun büyüme derecesini bulmanızı istiyorum.
+
+158
+00:27:41,556 --> 00:27:43,556
+Evet, bir 5 dakikalık suyumuz var.
+
+159
+00:27:58,099 --> 00:28:04,099
+Yine çözümü yapanlar paylaşımlar size çok memnun oldum. Kalkılarınız için şimdiden teşekkür ediyorum.
+
+160
+00:29:34,996 --> 00:29:38,195
+Şu an ekranımı görünüyorsunuz değil mi? Herhangi bir sıkıntı yok.
+
+161
+00:29:39,695 --> 00:29:41,695
+Görüyoruz hocam evet.
+
+162
+00:32:03,796 --> 00:32:06,796
+Evet, çözüm gerçekleştirebilen var mı arkadaşlar?
+
+163
+00:32:08,796 --> 00:32:13,796
+Bu Exercise 3'te Backward Substitution uygulamıyoruz biliyorsunuz.
+
+164
+00:32:13,796 --> 00:32:16,796
+Çünkü burada bir rekürans bountisi yok.
+
+165
+00:32:16,796 --> 00:32:25,796
+Burada sadece Summation, verilmiş Summation Formulan'ın açılarak
+
+166
+00:32:25,796 --> 00:32:32,796
+bu ifadenin büyüme derecesinin ne olduğunu bulmaya çalışıyoruz.
+
+167
+00:33:03,796 --> 00:33:05,796
+Limit kullanmaya gerek yok Burçin.
+
+168
+00:34:26,068 --> 00:34:37,028
+Başka çözebilen var mı? Bir Ahmet'ten cevap geldi. Onda da bazı eksiklikler var. Çözebilen var mı? Cevabını paylaşmasa da ben çözdüm diyen var mı?
+
+169
+00:34:39,667 --> 00:34:45,647
+Ben çözdüm hocam ama şu an paylaşamıyorum. Peki, çözümün cevabı nedir buldum canım?
+
+170
+00:34:47,408 --> 00:34:54,087
+Logaritma 2 tabında n-1 çarpı, logaritma 2 tabında n-1 artı 1.
+
+171
+00:34:54,087 --> 00:34:57,227
+Peki, teşekkür ederim Şafak
+
+172
+00:34:57,227 --> 00:35:01,287
+Umut'tan bir cevap geldi
+
+173
+00:35:01,287 --> 00:35:03,207
+Başka çözebilen var mı?
+
+174
+00:35:04,447 --> 00:35:07,147
+Hocam ben de çözüm Ahmet'le aynı
+
+175
+00:35:07,147 --> 00:35:08,187
+Büyük ihtimalle eksikleri var
+
+176
+00:35:08,187 --> 00:35:11,608
+Ben Ahmet'le çözdüm Ahmet gibi
+
+177
+00:35:11,608 --> 00:35:15,248
+Ondan sonra n! bölü n'e ayırdım onu
+
+178
+00:35:15,248 --> 00:35:20,767
+Daha sonra ikisini logaritma n! eksi logaritma n olarak yazdım
+
+179
+00:35:20,767 --> 00:35:33,767
+Daha sonra bunlardan birini önem derecesine göre eleyebiliyor olmamız lazım. Logaritma n'i eliyoruz çünkü n! daha karmaşık diye. Ondan sonra karmaşıklığı iki tabanında log n! oluyor diye düşündüm.
+
+180
+00:35:34,807 --> 00:35:38,928
+Peki, teşekkür ederim. Başka yorum yapmak isteyen?
+
+181
+00:35:42,547 --> 00:35:43,747
+İsterseniz bir...
+
+182
+00:35:43,747 --> 00:35:45,187
+Hocam, enlogen mi cevap?
+
+183
+00:35:46,008 --> 00:35:46,687
+Kimden geldi?
+
+184
+00:35:47,247 --> 00:35:47,627
+Benden.
+
+185
+00:35:48,427 --> 00:35:49,267
+Yani sen kimsin?
+
+186
+00:35:49,327 --> 00:35:49,727
+Servet.
+
+187
+00:35:50,247 --> 00:35:51,227
+Evet, tamam Servet.
+
+188
+00:35:51,787 --> 00:35:56,447
+Ya benim ekranda bir şekilde konuşan kişinin muhtemelen ekran paylaşımlarından dolayı kim olduğunu göremiyorum.
+
+189
+00:35:56,587 --> 00:35:59,827
+O yüzden konuşurken kim olduğunu söylerseniz memnun olurum.
+
+190
+00:35:59,888 --> 00:36:02,207
+Evet, Servet doğru cevabı söyledi. Enlogen olacak.
+
+191
+00:36:02,968 --> 00:36:03,947
+Nasıl bu enlogene?
+
+192
+00:36:04,388 --> 00:36:07,787
+Hocam, bir formül vardı bu logaritmanın toplamı.
+
+193
+00:36:07,907 --> 00:36:09,707
+Yaklaşık olarak enlogene eşit.
+
+194
+00:36:09,707 --> 00:36:23,268
+hani birden n'e kadar log i toplamını alırken burada topladığımız zaman şey çıkıyor 2 çarpı n-1 çarpı logaritma n-1 yaklaşık olarak o da n-logenlik bir karmaşıklık oluyor aşağıya.
+
+195
+00:36:23,268 --> 00:36:32,128
+Çok teşekkür ederim Sermet. Şimdi ben bu problemi tekrar ekranda çözmeye çalışacağım.
+
+196
+00:36:32,127 --> 00:36:49,787
+Burada yaptığım şeylerden bir tanesi, öncelikle sınırlara dokunmadan ilk etapta, en eksi bir, ikiyi başa almak, low iki tabanında iyi şeklinde yazmak.
+
+197
+00:36:49,787 --> 00:36:59,387
+Bunun arkasından ikiyi dışarı alıyorum, iyi eşittir, iki tane en eksi bir ve kadar olan nokta,
+
+198
+00:36:59,387 --> 00:37:02,967
+Logi tabanında iyi yazıyorum.
+
+199
+00:37:05,267 --> 00:37:11,267
+Şimdi buradan sonra nasıl bir şey yapsam böyle daha şık olur.
+
+200
+00:37:15,668 --> 00:37:20,427
+Hatırlarsanız sınırları değiştirebiliriz demiştik.
+
+201
+00:37:26,132 --> 00:37:30,811
+Hocam, i yerine başka bir değişken yazsak, onu da eşittir i-2 yapsak.
+
+202
+00:37:32,191 --> 00:37:32,971
+O zaman ne olacak?
+
+203
+00:37:34,771 --> 00:37:40,331
+Yani şey olacak, 2 toplam i eşittir, atıyorum k eşittir sıfırdan.
+
+204
+00:37:40,951 --> 00:37:43,991
+Yok, başka bir şeyi kullanmayalım, değişken kullanmayalım.
+
+205
+00:37:44,671 --> 00:37:49,411
+Hocam, sınırlardan 2 çıkaralım ilk taraftan da, i'ye 2 ekleyelim.
+
+206
+00:37:50,791 --> 00:37:55,171
+Yani sınırlar ne olacak bu durumda? Şöyle yazayım, 2.
+
+207
+00:37:55,171 --> 00:37:57,191
+i kaçtan başlıyor bu sefer?
+
+208
+00:37:59,871 --> 00:38:01,831
+Biz neyi sağlayan çalışıyoruz?
+
+209
+00:38:02,312 --> 00:38:07,011
+Biz aslında size daha önce verdiğim formüller vardı ya, o hale getirmeye çalışıyoruz.
+
+210
+00:38:07,571 --> 00:38:20,172
+Ben i'ye 1 desem, yukarıdaki en eksi 1'e de n desem, buraya da low 2 i yazsam, başka bu denkleme ne eklemem gerekir?
+
+211
+00:38:33,300 --> 00:38:35,300
+Hocam, sınırları değiştirebiliriz.
+
+212
+00:38:35,760 --> 00:38:37,259
+İşte ben sınırları değiştirdim şu anda.
+
+213
+00:38:38,359 --> 00:38:42,079
+Direkt logaritmayı götürerek değiştirebiliriz diye bir...
+
+214
+00:38:42,079 --> 00:38:48,019
+Ya farklı çözümleri vardır, doğrudur. Önce hani bu çözümü bir tamamlayalım, sonra tabii ki...
+
+215
+00:38:48,019 --> 00:38:49,459
+Eksi log n yapacağız bir dene.
+
+216
+00:38:50,980 --> 00:38:53,060
+Eksi log n...
+
+217
+00:38:53,060 --> 00:38:54,339
+Yok, n-1 değil mi?
+
+218
+00:38:54,779 --> 00:38:55,939
+Eksi log 1 değil mi?
+
+219
+00:38:56,199 --> 00:38:57,739
+Log 2 n yapacağız.
+
+220
+00:39:01,079 --> 00:39:03,099
+Çünkü 2 de baştan geliyor ya.
+
+221
+00:39:03,300 --> 00:39:20,820
+eksiçolken yapacağız demiştik. Bu sayede biz sınırları n-1'den bir yukarı taşıdık, n'e kadar götürdük. Aşağıda da 2'den 1'e indirdik ve bunun karşılığında da eksi log 2'ye yazarak yandaki eşitliği yeni bir şekilde ifade etmiş olduk.
+
+222
+00:39:20,820 --> 00:39:31,239
+Buradan şu gördüğünüz kısım zaten bildiğimiz kısım. Bunun karşılığı kaç? Hani derste görmüştük başta.
+
+223
+00:39:31,239 --> 00:39:33,499
+n-logan.
+
+224
+00:39:33,499 --> 00:39:36,279
+n-logan. O eşitliği var.
+
+225
+00:39:37,719 --> 00:39:39,499
+n-logan.
+
+226
+00:39:39,499 --> 00:39:41,840
+Hatta şunu düzeltelim pardon.
+
+227
+00:39:45,439 --> 00:39:47,399
+n-logan.
+
+228
+00:39:48,520 --> 00:39:50,359
+Eksi ne gelecek?
+
+229
+00:39:52,059 --> 00:39:52,419
+Logan.
+
+230
+00:39:56,020 --> 00:39:57,199
+Mi yoksa başka bir şey mi gelecek?
+
+231
+00:40:14,771 --> 00:40:22,771
+Buradan da küçük ifadeyi dışarı çıkardığınızda n, log n cevabına ulaşacaksınız.
+
+232
+00:40:24,591 --> 00:40:28,192
+Şimdi, birincisi, şu log n'e nasıl ulaştık?
+
+233
+00:40:29,091 --> 00:40:30,091
+Neden log n yazdım oraya?
+
+234
+00:40:35,507 --> 00:40:37,507
+Niye iki logem yazmadın?
+
+235
+00:40:39,827 --> 00:40:41,507
+Afribank değil mi hocam zaten?
+
+236
+00:40:42,067 --> 00:40:50,627
+Hayır, şu anlamda söylüyorum. Benim buradaki ifadede geri kalan sabitlerle işim yok. Doğru mu?
+
+237
+00:40:51,587 --> 00:40:57,507
+Evet. Bunun karşılığı Theta logem. Ama şu noktada
+
+238
+00:40:57,507 --> 00:41:15,927
+ki ifade, yani şöyle ifade edelim, şu matematiksel formülle birlikte bu ifade neye denk geliyor? Enlogene denk geliyor. Yani şu kısım. Bir kez daha şu maviyle göstereyim.
+
+239
+00:41:18,927 --> 00:41:25,807
+Şu kısım Enlogene denk geliyor. Bu iki ise bu Enlogene dışında kalıyor. O yüzden buraya bu ikiyi taşıdım.
+
+240
+00:41:25,807 --> 00:41:54,747
+Çok da bir önemi yok ama göstereyimde doğru olan şekli bu olduğu için bu şekilde gösteriyorum. Elimde iki Theta n-logen var bir de Theta-logen var. n-logen logenden daha büyük olduğu için artık logenin bir önemi kalmıyor. Otomatik olarak ben bunu eliyorum ve sonuç bu matematiksel ifadenin büyüme derecesi elimde Theta n-logen olarak kalıyor.
+
+241
+00:41:55,807 --> 00:41:59,587
+Et, şimdi sonuçlar var.
+
+242
+00:42:05,268 --> 00:42:07,867
+Hocam, bu soruyu baştan bir özet geçebilir miyiz?
+
+243
+00:42:07,867 --> 00:42:31,867
+Daha üzerinden geçelim. Şimdi, elimizde şöyle bir ifade vardı. Ben bunu aşağıya i karenin üzerindeki 2'yi buraya geçirdim. Sonra onu matematiksel ifadenin dışına aldım. Bütün matematiksel ifadeye uygulanıyor artık. Sadece elimde log 2 tabanında i kaldı.
+
+244
+00:42:31,867 --> 00:42:36,167
+Sınırlar i eşittir 2'den n-1'e kadardı.
+
+245
+00:42:37,627 --> 00:42:38,287
+Geldim buraya.
+
+246
+00:42:40,087 --> 00:42:43,107
+Sınırları i eşittir 1 yaptım.
+
+247
+00:42:44,327 --> 00:42:46,167
+Yani 2'den 1'e geri çektim.
+
+248
+00:42:46,167 --> 00:42:49,907
+Öbür tarafta da n-1'den n'e çıkarttım.
+
+249
+00:42:51,067 --> 00:42:59,887
+Bunun karşılığında elimde log 2 tabanında i, eksi log 2 tabanında n kaldı.
+
+250
+00:42:59,887 --> 00:43:06,727
+Log-2 tabanında n'i doğrudan log n olarak buraya taşıdım.
+
+251
+00:43:07,667 --> 00:43:10,287
+2'yi de sağ bit olarak olduğu için attım.
+
+252
+00:43:11,367 --> 00:43:17,107
+Ama şu gördüğünüz mavi ile çevirili kısmı matematiksel formülünü dersin başına yazmıştık.
+
+253
+00:43:17,107 --> 00:43:24,587
+Bu birden n'e kadar olan log-2 tabanında i için n log n elde ediyoruz yaklaşık olarak demiştik.
+
+254
+00:43:24,587 --> 00:43:36,488
+buraya taşıdım. Onun dışına da bütün toplamı etki ettiği için ikiyi dışına aldım. Çok önemli değil.
+
+255
+00:43:37,948 --> 00:43:52,607
+Eksi, Theta, Logan yazdım. Sonuçta Theta, Logan, N-Logenden daha küçük bir derece olduğu için bu fonksiyonun büyüme derecesini sabit de atarak Theta, Logan olarak ekrana yazmış oldum.
+
+256
+00:43:56,148 --> 00:43:57,607
+Umarım. Teşekkürler hocam.
+
+257
+00:43:57,747 --> 00:44:01,807
+Baranlaşılmıştır. Rica ederim. Başka sorusu olan var mı?
+
+258
+00:44:06,579 --> 00:44:30,420
+Peki. Şimdi arkadaşlar, bunu da durduralım. Öncelikle hepinize katıldığınız için teşekkür ediyorum bu haftaki derse. Bu arada bunu açmama rağmen beni görebiliyormuşsunuz bilmiyorum ama. Evet, şu anda sanırım düzenli.
+
+259
+00:44:30,420 --> 00:44:57,559
+Bu hafta non-recursive fonksiyonların ve rekürsif algoritmaların matematiksel anlarınızı nasıl yapılır onları gördük. Artı matematikteki bazı kullanılan kuralları ve formülleri hatırladık. Bununla ilgili çözümlerle kullandığımız rekürans fahaltısındadır, initial condition nedir, basic operation nedir? Bunlara baktık ve bunlarla ilgili çeşitli örnekler çözdük.
+
+260
+00:44:57,559 --> 00:45:07,079
+Önümüzdeki hafta divide and concure problemlerine geçeceğiz ve oradaki algoritmaları analiz ediyor olacağız.
+
+261
+00:45:07,079 --> 00:45:16,800
+Bildiğiniz birkaç algoritmayı göreceğiz. Onun ötesinde decrease and concure nedir? Divide and concure'dan farkı nedir? Bunları konuşuyor olacağız.
+
+262
+00:45:17,559 --> 00:45:27,520
+Bununla ilgili birkaç algoritma örneği analiz ediyor olacağız. Ondan sonra zaten muhtemelen önümüzdeki hafta ödev detaylarını konuşuruz herhalde.
+
+263
+00:45:27,559 --> 00:45:44,219
+diye tahmin ediyorum. Belki vaktimiz kalırsa da gene uygulama saatinde bir iki ekstra örnek çözeriz diye düşünüyorum. Hepinize ders için ve katıldığınız için çok teşekkür ediyorum. Kendinize iyi bakın. İyi haftalar diliyorum. Önümüzdeki hafta görüşmek üzere.
+
+264
+00:45:45,559 --> 00:45:46,779
+Hocam bir şey sorabilir miyim?
+
+265
+00:45:47,239 --> 00:45:47,739
+Tabii Metin.
+
+266
+00:45:48,479 --> 00:45:50,679
+Bu ödev süreleri belli mi acaba?
+
+267
+00:45:51,559 --> 00:45:55,859
+Ödevim kendisine bağlı olarak bir hafta ya da iki haftalık bir süre olacaktır.
+
+268
+00:45:56,459 --> 00:45:57,339
+Tamam teşekkür ederim.

@@ -1,0 +1,1895 @@
+1
+00:00:18,995 --> 00:00:29,495
+Evet arkadaşlar, gecikme için kusura bakmayın lütfen. Ufak bir teknik problem oldu bağlantıda. Anlayışınız için teşekkür ederim. Bir 5 dakika geç başlıyoruz.
+
+2
+00:00:30,215 --> 00:00:40,375
+Şimdi ikinci kısmını, dersin uygulama kısmını mümkün olduğunca hızlı toparlamaya çalışacağım konuları. Sonra varsa sorularınızı alacağım.
+
+3
+00:00:40,375 --> 00:00:47,375
+Quadratic Probing'i konuştuk, double hashing'i konuştuk, open addressing'i tamamladık.
+
+4
+00:00:47,375 --> 00:00:53,176
+Şimdi sırada separate chaining var.
+
+5
+00:00:54,356 --> 00:00:56,036
+Yavaş yavaş o tarafı doğru geçebiliriz.
+
+6
+00:01:22,995 --> 00:01:45,995
+Separate Chain Limit'e daha önce de bahsettiğimiz gibi aynı adrese başka bir eleman denk gelirse o zaman onu LinkedList yapısına ekleyerek saklamaya devam ediyoruz. En son noktada LinkedList'imiz null değerini gösteriyor. LinkedList'in bittiğini anlıyoruz.
+
+7
+00:01:45,995 --> 00:01:50,975
+konu, ki onutu olsun.
+
+8
+00:01:58,164 --> 00:02:00,164
+Kuteki bölmek.
+
+9
+00:02:04,852 --> 00:02:06,852
+Mod 6'dan bir olsun.
+
+10
+00:02:07,852 --> 00:02:08,852
+Ki bir olsun.
+
+11
+00:02:10,352 --> 00:02:11,852
+Bir mod 6'dan
+
+12
+00:02:13,352 --> 00:02:14,852
+gene bir gelsin.
+
+13
+00:02:16,352 --> 00:02:17,352
+En sonunda da
+
+14
+00:02:21,051 --> 00:02:22,551
+şöyle yapalım ki
+
+15
+00:02:23,551 --> 00:02:24,852
+daha güzel gözüksün.
+
+16
+00:02:31,764 --> 00:02:38,943
+3.5'dan alıyor istersen. 2.19 geldiğinde nereye yerleşir diye sorayım.
+
+17
+00:02:47,987 --> 00:02:50,287
+ki 19 geldiğinde nereye yerleşir?
+
+18
+00:03:01,075 --> 00:03:02,275
+Evet, Eren Tutuş.
+
+19
+00:03:06,515 --> 00:03:07,515
+Buyurun hocam.
+
+20
+00:03:09,515 --> 00:03:11,515
+Bilmiyorum hocam.
+
+21
+00:03:16,276 --> 00:03:44,036
+Sesim geliyor mu bilmiyorum ama. Sesim geliyor. Bilmiyorum hocam. Enteresan oldu da o yüzden. Şey yazıyordum da takip edemedim peki o yüzden herhalde oldu. Tekrar sorayım sorayım. 19 geldiğinde neye yerleşir? Şey yani 13'ün yanına yerleşir. Evet 13'ün yanına yerleşir. 13'ün ne tarafına yerleşir? Sağına.
+
+22
+00:03:46,276 --> 00:03:48,375
+derinlik çözümüdür.
+
+23
+00:03:52,692 --> 00:04:09,132
+Yani sıralama yapıyorsak verim değildir ama. Biz sıralama yapmıyoruz. O zaman verimlidir. Yani şey aslında başına da eklesik daha mantıklı olur gibi. Evet, ben de zaten bunu bekliyordum. Kusura atmayın hocam, dinleyemedim böyle bir şey oldu.
+
+24
+00:04:09,132 --> 00:04:24,671
+önemli değil. Burada link listenin sonuna eklemekten ise başına eklemek separate chaining yerleştirmesinde daha akıllıca olacaktır. Ama burada bir hata var. Bu hatayı kimse dile getirmedi. Serra'ya söz vereyim.
+
+25
+00:04:26,372 --> 00:04:30,431
+Hocam yerleştirme üçüncü hücreden değil de birinci hücreden başlamayacak mı?
+
+26
+00:04:30,431 --> 00:04:45,851
+Aynen öyle. Bunu bekliyordum. Buraya yerleşmeyecek. Nereye yerleşecek? Önce şöyle yerleştirelim. Şuradan şöyle gelsin. Bu da nalı göstersin.
+
+27
+00:04:50,163 --> 00:04:51,483
+Burada 1 olsun.
+
+28
+00:04:52,624 --> 00:04:53,023
+Buraya
+
+29
+00:04:53,023 --> 00:04:56,104
+19 geldiğinde
+
+30
+00:04:56,104 --> 00:04:58,023
+19
+
+31
+00:05:00,564 --> 00:05:12,383
+19, LinkedIn listenin sonuna kadar gitmek gereksiz bir maliyet getireceği için LinkedIn listenin başına adres doluysa bunu eklemek çok daha akıllıca olacaktır.
+
+32
+00:05:12,864 --> 00:05:16,383
+O yüzden Separate Chaining'de buna dikkat etmekte fayda var.
+
+33
+00:05:16,484 --> 00:05:26,803
+Peki Separate Chaining, M ile N arasındaki tablo boyutuyla eleman sayısı arasındaki hangi ilişkide kullanmak akıllıca olur?
+
+34
+00:05:32,915 --> 00:05:38,615
+Tekrar ediyorum, separate chainingi, M ile N arasında nasıl bir ilişki varsa kullanmak katılıcı olur.
+
+35
+00:05:48,596 --> 00:05:51,755
+L büyüktür, M iken
+
+36
+00:05:51,755 --> 00:05:56,115
+N büyüktür, M iken
+
+37
+00:05:56,115 --> 00:06:04,275
+Separate Chaining'i kullanmak akıllıcı olacaktır. Open addressing'e göre bunu tercih etmeliyiz diyoruz.
+
+38
+00:06:04,696 --> 00:06:08,875
+Peki, Separate Chaining'in karmaşıklığı nedir?
+
+39
+00:06:10,995 --> 00:06:16,655
+Separate Chaining çözümüne sahip olan hashleme yaklaşımındaki karmaşıklık nedir?
+
+40
+00:06:24,819 --> 00:06:26,359
+Eray, Zeki
+
+41
+00:06:26,359 --> 00:06:33,759
+Worst case'de hepsi aynı adresi denk geleceği için ON diyebiliriz.
+
+42
+00:06:34,539 --> 00:06:44,359
+Şimdi teorik olarak böyle. Gerçekten hepsi aynı adrese gelirse teori de ON'e çıkacaktır karmaşıklık.
+
+43
+00:06:44,359 --> 00:06:54,639
+Ancak pratikte hepsinin aynı adrese gelmesi ya siz çok kötü bir ne diyelim hash fonksiyonu seçmişsinizdir ya kötü bir
+
+44
+00:06:54,819 --> 00:07:06,500
+tablo boyutu seçmişsinizdir. Bunlar hepsi bir araya gelmeli ki pratikte de ON diyelim ama pratikte bunu hiçbir zaman ON olarak adlandırmıyoruz.
+
+45
+00:07:06,500 --> 00:07:20,519
+O1 olarak gene geçiyor separate chain de de ama bu 1 şöyle birir bunun çeşitli istatistiksel ve formüler ispatları da var.
+
+46
+00:07:20,519 --> 00:07:45,619
+var. Örneğin 10 aramada ulaşabiliyorsunuz. 50 aramada ulaşabiliyorsunuz. Ama hala ne üzerinden? n'e bağlı olmayan bir değer üzerinden. Yani diyelim ki 500 elemanınız var, siz 50. adımda ulaştınız. 5000 elemanınız var, 90. adımda ulaştınız. Bunların hepsi o bir düzeyinde kabul ediyor. n'e bağlı olmadığı için. Logen ya da n deniyoruz.
+
+47
+00:07:45,619 --> 00:07:57,299
+pratikte ON olarak gözükse de, pardon teorikte, pratikte O1 olarak karmaşıklık, separate chaining de geçiyor.
+
+48
+00:07:57,299 --> 00:08:14,339
+Şimdi, separate chaining de tabii çeşitli işlemler var. Bir tanesi insert, bir tanesi delete, diğeri search.
+
+49
+00:08:14,339 --> 00:08:26,339
+Bizim bu işlemleri gerçeklemek istediğimizde, kodunu yazmak istediğimizde bir struct yapısına ihtiyaç duyduğumuzu rahatlıkla söyleyebiliriz
+
+50
+00:08:26,339 --> 00:08:30,680
+Struct hash diyelim, struct hash'in içerisinde neyi kal etmeliyim?
+
+51
+00:08:37,460 --> 00:08:47,859
+Bir de şöyle bir şey yazayım. Belki daha kolay cevap verebilirsiniz. Struct node diyelim. Struct node'un içerisine neyi saklamalıyım?
+
+52
+00:08:47,859 --> 00:08:51,859
+Node üzerinden başlayalım, daha kolay olsun.
+
+53
+00:08:57,491 --> 00:09:05,111
+her bir elemanın bir düğme denk gelecek diye düşünebilirsiniz. Bu düğümde hangi bilgileri saklamalıyım?
+
+54
+00:09:06,431 --> 00:09:07,891
+Evet, Reha, Alper Reha.
+
+55
+00:09:09,131 --> 00:09:15,491
+Hocam, nodun içinde kendisinin değerini ve de sonrakinin next'inin değerini tutabiliriz.
+
+56
+00:09:16,351 --> 00:09:21,291
+Peki, kendisinin değerinden kastettiğimiz nedir? Mesela int key desem olur mu?
+
+57
+00:09:21,291 --> 00:09:46,331
+Evet. Mesela bizim bu yukarıdaki örnek için mesela 13 bir değerdir, 1 bir değerdir, 19 bir değerdir. Peki bir key değerimiz olsun bir de o ilgili key değere denk gelen value olsun. Burada name olarak kullanmış olduk. Artı bir de senin söylediğin gibi gelecek düğümün adresine ihtiyacımız var. Pointer'ına ihtiyacımız var evet.
+
+58
+00:09:46,332 --> 00:10:01,072
+Aynen öyle. O yüzden de type definition kullanmadım. Struct node kullandım. Type definition'de bunu yapma şansınız yok biliyorsunuz. Bunu da hatırlamış olduk. Bu doğrultuda struct hash neyi tutmamız gerekir?
+
+59
+00:10:02,352 --> 00:10:04,051
+Yine cevap verebiliyor muyum hocam?
+
+60
+00:10:04,432 --> 00:10:04,731
+Lütfen.
+
+61
+00:10:05,831 --> 00:10:16,311
+Bu sefer de bizim bu separate chain'de ne kadar uzunlukta bir dizi tutacağımıza bu notları tutacağız içerisinde. O yüzden kaç tane not tutacağımızı bir dizi şeklinde.
+
+62
+00:10:16,331 --> 00:10:17,371
+şeklinde tutmamız lazım.
+
+63
+00:10:18,171 --> 00:10:22,271
+Bunun üzerine şöyle yazsam, kaç tane tutacağımızı saklıyoruz ya.
+
+64
+00:10:23,391 --> 00:10:24,691
+Elimizde kaç tane olduğunu.
+
+65
+00:10:25,991 --> 00:10:26,811
+Count bir de.
+
+66
+00:10:27,811 --> 00:10:30,691
+Struct, node, head desem.
+
+67
+00:10:32,971 --> 00:10:33,811
+Olur mu?
+
+68
+00:10:34,391 --> 00:10:35,491
+Öyle daha efektif olur.
+
+69
+00:10:35,771 --> 00:10:37,431
+Ben de dizi şeklinde tutmayı düşünüyorum.
+
+70
+00:10:37,431 --> 00:10:37,671
+Olur.
+
+71
+00:10:37,911 --> 00:10:38,631
+O da olabilir.
+
+72
+00:10:39,311 --> 00:10:43,411
+Şimdi buradan yola çıkarak bir kod yazacak olsak.
+
+73
+00:10:43,411 --> 00:10:55,951
+struct, hash, yıldız, hash table isimli bir, struct hash tipinde bir hash table tanımlıyorum.
+
+74
+00:10:56,331 --> 00:10:57,611
+Kendisine null değeri veriyor.
+
+75
+00:10:58,751 --> 00:11:02,672
+Buraya şimdi hızlıca bir main fonksiyonu yazacağım.
+
+76
+00:11:06,803 --> 00:11:17,523
+int key, karakter name 47.
+
+77
+00:11:17,523 --> 00:11:24,883
+Henshtable'ımıza bir yer açmam lazım.
+
+78
+00:11:25,364 --> 00:11:35,364
+hash tıkmında bir yer açacağım. Strat, hash, yıldız, k-log. Boyut ne olacak? m.
+
+79
+00:11:35,364 --> 00:11:41,743
+size of, struct, hash, diyelim.
+
+80
+00:11:46,004 --> 00:11:51,004
+Tabii ki kontrol yapıyorum. Yer açılıp açılamadığını.
+
+81
+00:11:51,004 --> 00:12:05,303
+Eğer açılamadıysa printf yer açılamadığı mesajını veriyorum.
+
+82
+00:12:05,303 --> 00:12:12,783
+Doğal olarak el yazı zilte de bir çıkış yapıyorum.
+
+83
+00:12:12,783 --> 00:12:20,143
+Hocam ekranda ses şeyi var ama göremiyoruz yazdıklarınızı da
+
+84
+00:12:20,143 --> 00:12:21,903
+Ses neyi var?
+
+85
+00:12:22,743 --> 00:12:29,083
+Sesinizin ne kadar çıktığını galiba ölçen bir şey var ama ses ayarı yapıyorsunuz. Size görünmüyor mu?
+
+86
+00:12:29,663 --> 00:12:31,803
+Ben de gözükmüyorum. Şu an?
+
+87
+00:12:32,123 --> 00:12:33,783
+Şu an gitti aynen şimdi gitti.
+
+88
+00:12:34,803 --> 00:12:40,523
+Enteresan. Herhalde rica ederim ve ben teşekkür ederim bu yarıda bulunduğum için.
+
+89
+00:12:40,524 --> 00:12:53,063
+şu anda tespit etmiş olduğu konuda key name gönderiyoruz.
+
+90
+00:12:53,063 --> 00:13:02,024
+Search in hash dediğimiz zaman da sadece key değerini aktarıyoruz.
+
+91
+00:13:02,023 --> 00:13:12,743
+bir de delete from hash, oraya da key değerini aktarmış olduk.
+
+92
+00:13:14,183 --> 00:13:18,563
+Bu ana fonksiyonunu da kapatmış olduk.
+
+93
+00:13:18,643 --> 00:13:23,603
+Peki, insert to hash yaparken nasıl adımlardan geçmem gerekiyor?
+
+94
+00:13:25,943 --> 00:13:27,004
+Bana kim söylemek ister?
+
+95
+00:13:35,155 --> 00:13:36,155
+Evet.
+
+96
+00:13:44,340 --> 00:13:51,340
+Insert to hash yaparken, hangi adımlarla geçmem gerekiyor?
+
+97
+00:14:15,028 --> 00:14:15,907
+Mehmet Hayri Çakır
+
+98
+00:14:22,484 --> 00:14:23,484
+Mehmet Aya Çakır.
+
+99
+00:14:27,827 --> 00:14:32,308
+Peki, ders de yok. Mustafa Aylın.
+
+100
+00:14:36,788 --> 00:14:38,788
+Mustafa Aydın.
+
+101
+00:14:40,788 --> 00:14:42,788
+Peki, derste yok.
+
+102
+00:14:47,443 --> 00:14:48,643
+Sinan, Kızanlık.
+
+103
+00:14:54,740 --> 00:14:55,740
+Kızallık.
+
+104
+00:14:55,740 --> 00:14:56,740
+Peki.
+
+105
+00:14:56,740 --> 00:14:58,740
+Evet, o zaman buradaysam.
+
+106
+00:14:58,740 --> 00:15:01,740
+Sinan, mikrofonunu açmanı rücelerliyorum.
+
+107
+00:15:07,251 --> 00:15:09,251
+Sesini duyabilir miyim sınav?
+
+108
+00:15:14,899 --> 00:15:17,059
+Hocam merhaba. Merhaba Sinan.
+
+109
+00:15:18,739 --> 00:15:22,199
+Hocam, çok bir fikrim yok açıkçası. Ne yapıyoruz biz?
+
+110
+00:15:23,979 --> 00:15:29,679
+Hocam, doğal dil işleme dersine baktığım için çok burayı takip edemedim şu anda da. İki ders aynı anda çakışıyor.
+
+111
+00:15:31,279 --> 00:15:33,399
+Peki, o zaman buraya bağlanmak zorunda değilsin.
+
+112
+00:15:34,259 --> 00:15:37,339
+Yok, devam zorunluluğu varsa diye buraya da açıyordum da telefondan.
+
+113
+00:15:37,740 --> 00:15:42,499
+Yani iki ders alabildiğinize göre teknik olarak devam zorunluluğunun bir önemi yok. Yanılıyor muyum?
+
+114
+00:15:42,499 --> 00:15:46,439
+Doğru olabilir hocam da garanti alttan almak için giriyordu
+
+115
+00:15:46,439 --> 00:15:52,139
+Tamam peki yani kağıt üstünde burada olmamızın benim için hiçbir şey ifade etmediğini tekrar bulgulamış olayım
+
+116
+00:15:52,139 --> 00:15:52,899
+Teşekkür ederim
+
+117
+00:15:52,899 --> 00:15:55,459
+Özgür Yaylı
+
+118
+00:15:58,932 --> 00:16:10,932
+Evet buradayım hocam. Evet Özgür seni dinliyorum. Önce nereye koyacağımız kararlarımız lazım. Peki. Nasıl karar vereceğiz?
+
+119
+00:16:13,556 --> 00:16:15,955
+Separate chaining ile
+
+120
+00:16:15,955 --> 00:16:28,755
+Insert to hash fonksiyonunu yazmak istiyoruz. Insert to hash fonksiyonunu yazarken ne yapmamız gerektiğini konuşuyoruz.
+
+121
+00:16:31,275 --> 00:16:33,515
+İlk önce ne yapması gerekiyor?
+
+122
+00:16:39,635 --> 00:16:46,635
+Evet arkadaşlar, 47 kişisiniz. Bir cevap istiyorum. Hüma, lütfen.
+
+123
+00:16:46,635 --> 00:16:50,635
+Hocam, mod alacağız eme göre.
+
+124
+00:16:50,635 --> 00:16:55,635
+Yani önce bir hash index'i hesaplamamız gerekiyor, doğru mu?
+
+125
+00:16:55,635 --> 00:16:56,635
+Evet.
+
+126
+00:16:56,635 --> 00:17:08,635
+Peki, öncelikle bir hash index'ini hesaplayacağız. Yazalım. void insert to hash fonksiyonu.
+
+127
+00:17:08,635 --> 00:17:12,575
+fonksiyonu. Yuma buraya hangi parametreler aktarılacak?
+
+128
+00:17:14,476 --> 00:17:21,156
+M'yi aslında içeride de tanımlayabiliriz. Gönderirken yoktu sanırım.
+
+129
+00:17:21,695 --> 00:17:31,856
+Ama aktarabiliriz hiç fark etmez. Anahtarı göndermemiz gerekiyor dışarıdan aldığımız. Bu anahtara ait olan value'yu göndermemiz gerekiyor.
+
+130
+00:17:31,855 --> 00:17:33,775
+mail de gönderebiliriz sorun değil.
+
+131
+00:17:34,435 --> 00:17:36,095
+Bir tane hash index tanımladım.
+
+132
+00:17:37,775 --> 00:17:40,455
+Bu hash indexini hesaplamak istiyorum.
+
+133
+00:17:41,495 --> 00:17:42,715
+Hash index dedim.
+
+134
+00:17:44,816 --> 00:17:47,695
+Eşittir ki mod m dedim.
+
+135
+00:17:48,335 --> 00:17:49,255
+Bundan sonra ne yapacağım?
+
+136
+00:17:57,556 --> 00:18:09,155
+Ben söyleyeyim hocam. Söyleyebilirsin Hema, kimseden ses çıkmıyor zaten. Tabloda yerine gitmemiz gerekiyor. Link liste tutuyorduk. O yüzden tek gitmemiz gerekiyor. Tabloda yerine gitmemiz gerekiyor.
+
+137
+00:18:09,155 --> 00:18:18,556
+Ama burada önce şöyle bir şey yapacağım. Struct node, yıldız, near node diyeceğim. Genelde biliyorsunuz link listelerde bunu yapıyoruz.
+
+138
+00:18:18,556 --> 00:18:37,715
+Create node diye bir tane fonksiyon çağıracağım. O fonksiyona key ve name'i göndereceğim. Buradan bir tane ilgili eleman için yer açıyor olacağım. Sonra if diyeceğim.
+
+139
+00:18:37,715 --> 00:18:40,195
+H-Table
+
+140
+00:18:44,884 --> 00:18:46,083
+Cache index.
+
+141
+00:18:49,523 --> 00:18:54,523
+nokta, head diyeceğim. Bu kontrol ne yapıyor?
+
+142
+00:18:57,203 --> 00:19:04,203
+ne olabilir yani neyi kontrol ediyorlar diye. Kısaca yazdım açık olarak da yazabilirdim.
+
+143
+00:19:04,203 --> 00:19:12,203
+Şey, bitti mi, bitmedi mi, oluştu mu, oluşmadı mı tarzında bir kontrol sanırım.
+
+144
+00:19:12,203 --> 00:19:21,203
+Tam olarak değil. Biraz önce senin söylediğinle alakalı bir cevabı var. Hani dedin ya, hashtag'la giderim dedim. Şu anda hashtag'la gittim ben.
+
+145
+00:19:21,203 --> 00:19:24,203
+Evet.
+
+146
+00:19:24,596 --> 00:19:26,596
+Hashtag o da neye bakıyor?
+
+147
+00:19:30,644 --> 00:19:33,043
+Bilemedim hocam. Yerine geldik mi?
+
+148
+00:19:33,624 --> 00:19:38,483
+O zaman söz vereyim. Burada Okan'a söz vereyim.
+
+149
+00:19:39,923 --> 00:19:43,723
+Hocam o hash index'in de daha önce doldurulmuş mu diye bakıyor.
+
+150
+00:19:44,243 --> 00:19:53,043
+Evet, o hash index'in boş mu değil mi diye bakıyor. Yani ilk etapta hash table'daki ilgili göz dolu mu boş mu diye bakıyor. O yüzden e-head'e bakıyor.
+
+151
+00:19:53,043 --> 00:20:06,403
+Eğer boş ise o zaman hash table, hash index'e gidip head'ine neyi atıyoruz?
+
+152
+00:20:06,403 --> 00:20:08,023
+Near node'u atıyoruz.
+
+153
+00:20:10,103 --> 00:20:10,603
+Atadık.
+
+154
+00:20:11,203 --> 00:20:14,864
+Ve o aradaki count'u da
+
+155
+00:20:21,076 --> 00:20:39,016
+Hashtablen daha doğrusu, oradaki yanlış oldu. Count'u da bir yapıyoruz. Return diyoruz. Burada aslında elemanı ana tabloya yerleştirdiysek işimiz bitiyor. Yerleştiremediysek, doluysa Hashtablen ne yapacağız?
+
+156
+00:20:46,771 --> 00:20:49,971
+yapmak istiyahabı var mı?
+
+157
+00:20:51,604 --> 00:20:52,704
+Evet, Alper Reha.
+
+158
+00:20:54,403 --> 00:21:15,143
+Doluysa da HashTable'ın o HashIndex adresindeki kendine özel LinkedList'i tutan struct node'a gidip teker teker Next'ine giderek veya eğer biz başına ekleyerek gidiyorsak da direkt kendini kendisi yaparak LinkedList'e ekleme yapacağız.
+
+159
+00:21:15,623 --> 00:21:16,364
+Teşekkür ederim.
+
+160
+00:21:16,364 --> 00:21:23,163
+Eğer arkadan eklemeliyse de bu sefer de next, next, next en sonuna kadar gidip en sonuna ekleme yapacağız
+
+161
+00:21:23,163 --> 00:21:25,504
+Evet aynen öyle, teşekkür ederim
+
+162
+00:21:25,504 --> 00:21:33,364
+Peki en sonu eklemeli olsaydı hangi bilgiyi saklamak akıllıcı olurdu?
+
+163
+00:21:35,163 --> 00:21:44,364
+Bu sefer back, ilerisini ve gerisini saklayarak ilerleyebilirdik en arka tarafına gitmek istiyorum
+
+164
+00:21:44,363 --> 00:21:51,843
+Olabilir de double linked list diyorsun. Double linked list kullanmasayarak single linked list kullansaydık o zaman hangi bilgiyi saplama hakkıcı olurdu?
+
+165
+00:21:55,023 --> 00:22:00,803
+Head ve de bir de global bir current not olarak.
+
+166
+00:22:00,803 --> 00:22:10,243
+Global bir current değil. O zaman biz en son ekleyeceğimiz için linked listin direkt oradaki elemanın adresini yani tail'ı saklamamız gerekiyor.
+
+167
+00:22:10,243 --> 00:22:13,883
+Evet, tail'ı saklayarak
+
+168
+00:22:13,883 --> 00:22:16,464
+Bir tail'ı bilirsek oradan sonuna ekleyebiliriz
+
+169
+00:22:16,464 --> 00:22:16,964
+Evet
+
+170
+00:22:16,964 --> 00:22:19,123
+Teşekkür ediyorum, çok sağ ol
+
+171
+00:22:19,123 --> 00:22:19,803
+Rica ederim
+
+172
+00:22:19,803 --> 00:22:24,803
+Head and even nodu atadım
+
+173
+00:22:29,011 --> 00:22:30,191
+Alt'u bir arttıracağım.
+
+174
+00:22:33,131 --> 00:22:35,631
+Bu sefer bir arttırıyorum.
+
+175
+00:22:40,243 --> 00:23:08,924
+artı eşittim bir, return diyorum. Ve bu noktada insert to hash'i tamamlamış oluyor. Şimdi bir sonraki noktaya devam edeceğim. Burada biraz önce create node'u yazmıştık. Create node isimli fonksiyonu kodunu isimliyle paylaşayım. Buraya int key geliyordu.
+
+176
+00:23:10,243 --> 00:23:22,243
+Karakter dizisini aktarıyorduk. Karşılığında bunu pointer ile karşılayabiliriz. Bir tane node tipinde new node yaratacağım.
+
+177
+00:23:22,243 --> 00:23:30,243
+Sonra bunun için yer açacağım. Bunu yaparken malloc kullanıyorum.
+
+178
+00:23:30,243 --> 00:23:39,363
+struct mode, yielders, malloc,
+
+179
+00:23:42,740 --> 00:23:44,740
+Stratnorduro
+
+180
+00:23:49,844 --> 00:23:57,844
+Sonra new node yarattığım için artık keyine fonksiyona aktarılan key değerini koydum.
+
+181
+00:23:59,844 --> 00:24:01,844
+İşte örnek veriyorum.
+
+182
+00:24:02,844 --> 00:24:06,844
+Age'ine age değeri koydum.
+
+183
+00:24:06,844 --> 00:24:08,844
+Bu bir örnek sadece.
+
+184
+00:24:09,844 --> 00:24:11,844
+Buraya çünkü o değeri aktarmadık.
+
+185
+00:24:11,844 --> 00:24:16,844
+Normalde buraya bir tane string değer aktarmıştık.
+
+186
+00:24:16,844 --> 00:24:32,803
+yapıştık. Şunu düzeltelim. New node name'i kopyalıyorum. Ve sonra tabii ki new node'un next'ini
+
+187
+00:24:39,604 --> 00:24:54,203
+nulllamam gerekiyor. Ve en son olarak return new node diyorum. Bu da bir tane createNode yaratma işi. Peki, gelelim search işlemine.
+
+188
+00:24:54,203 --> 00:25:05,003
+Search işleminde voidSearchInHash hatırlarsanız ismini vermiştim ve sadece key-genom veriyorduk.
+
+189
+00:25:05,003 --> 00:25:10,604
+Burada yapılması gereken adımlar nelerdir? Metin bir soru var galiba
+
+190
+00:25:10,604 --> 00:25:16,284
+Hocam deminki sayfada M vardı ama geri dönebilir miyiz?
+
+191
+00:25:16,723 --> 00:25:17,144
+Tabii ki
+
+192
+00:25:22,355 --> 00:25:26,455
+Evet. Burada key mod m var. Orada m'i hiç tanımlamadık ama.
+
+193
+00:25:28,235 --> 00:25:34,455
+Yani burada tanımlamadık, onu mu söylüyorsun? Evet, burada tanımlamadık. Hani bu değişken mi olacak?
+
+194
+00:25:34,835 --> 00:25:42,835
+Bunu şöyle düşünebilirsiniz. Burada da alabilirsiniz. Bunu global bir değişken olarak da kabul edebilirsiniz. Ya da buraya int m diyebilirsiniz virgül.
+
+195
+00:25:44,055 --> 00:25:44,855
+Teşekkür ederim.
+
+196
+00:25:45,655 --> 00:25:47,875
+Rica ederim. Başka sorusu olan?
+
+197
+00:25:52,243 --> 00:26:08,363
+Peki. Search in hash'i konuşuyorduk. Key değeri gönderdik dedik. Bir hash index hesaplayacağız bunu gene. Biraz önce olduğu gibi. Bu hash'i hesapladıktan sonra yapmamız gereken nedir? Evet Efe.
+
+198
+00:26:09,363 --> 00:26:14,084
+Hocam, hash table ile ilgili index'in yerine gideceğiz.
+
+199
+00:26:14,504 --> 00:26:14,783
+Evet.
+
+200
+00:26:14,783 --> 00:26:23,463
+Sonra not, bu indeksteki notların içinde aynı k değeri var mı diye bakacağız
+
+201
+00:26:23,463 --> 00:26:29,183
+Peki ilk etapta hash table index head'e bakacağız doğru mu?
+
+202
+00:26:29,563 --> 00:26:29,903
+Evet
+
+203
+00:26:29,903 --> 00:26:35,424
+Sonra ne koşulu olduğu sürece devam edeceğiz bakmaya
+
+204
+00:26:35,424 --> 00:26:41,363
+Head'deki k ile bizim baktığımız k eşit değilse devam edeceğiz
+
+205
+00:26:41,363 --> 00:26:42,183
+Devam edeceğiz
+
+206
+00:26:42,183 --> 00:26:43,483
+Bir koşul daha var
+
+207
+00:26:43,483 --> 00:26:55,223
+koşulda head null değilse, head in next null değilse biz ona bakmaya devam edeceğiz. Çıktıktan sonra neyi kontrol etmemiz gerekiyor Efe?
+
+208
+00:26:56,543 --> 00:26:57,583
+Nereden sonra hocam?
+
+209
+00:26:58,104 --> 00:26:59,303
+Çıktıktan sonra döngüden.
+
+210
+00:27:00,623 --> 00:27:02,483
+Arama bittikten sonra?
+
+211
+00:27:03,423 --> 00:27:06,203
+Yok, şey evet araba bittikten sonra aynen öyle.
+
+212
+00:27:08,843 --> 00:27:11,983
+Arama bittikten sonra neyi kontrol edeceğiz?
+
+213
+00:27:13,483 --> 00:27:18,043
+Bulduğumuz değerde o değer eşit mi diye bakacağız
+
+214
+00:27:18,043 --> 00:27:24,163
+Bu kontrolü yapmamız lazım ki acaba değeri bulduk mu çıktık yoksa null'dan dolayı mı çıktık
+
+215
+00:27:24,163 --> 00:27:25,303
+O zaman?
+
+216
+00:27:26,903 --> 00:27:29,083
+Sadece bakacağımız diye bir tane flag tutacağız
+
+217
+00:27:29,083 --> 00:27:30,183
+Evet
+
+218
+00:27:30,183 --> 00:27:34,003
+Bu flag set edildiyse çıkışta flag'i kontrol edeceğiz
+
+219
+00:27:34,003 --> 00:27:36,303
+Bulduğumuz zaman bunu set edeceğiz
+
+220
+00:27:36,303 --> 00:27:39,324
+Değişken anladım tamam
+
+221
+00:27:39,324 --> 00:27:41,003
+Aynı bir flag kullanılıyor
+
+222
+00:27:41,003 --> 00:28:06,143
+İşte search in hash bu mantıkla çalışıyor arkadaşlar. Bunun kodunu uzun uzun uzun yazmıyor. Çünkü yapısı belli. Linkedin listede arama modetine sahip. Önce head'e bakıyorsunuz. Head eğer elemanı eşit değilse elemanı bulamadığınız süreci ya da sona gelmediğiniz süreci burada dönmeye devam edeceksiniz.
+
+223
+00:28:06,143 --> 00:28:16,523
+Yani hem nodunuzun null'dan farklı olması hem de aradığınız elemanı bulamamış olmanız döngüde kalmanızı sağlayacak
+
+224
+00:28:16,523 --> 00:28:19,903
+Döngüden çıktığınızda da flag'i kontrol edeceksiniz
+
+225
+00:28:19,903 --> 00:28:22,823
+Eğer flag set edilmişse elemanı bulmuş olacaksınız
+
+226
+00:28:22,823 --> 00:28:29,803
+Flag set edilmediyse aradığınız eleman bulunamadı diye bir mesaj döndürmeniz gerekiyor
+
+227
+00:28:29,803 --> 00:28:31,343
+Soru-sola var mı?
+
+228
+00:28:31,343 --> 00:28:34,583
+Artur'un
+
+229
+00:28:34,583 --> 00:28:47,043
+Hocam bu Open Addressing'in separate chaining'e göre bir avantajı var mı acaba? Hani burada hani onu kullanmamız gereken durumlar veya bunu kullanmamız gereken durumlar gibi
+
+230
+00:28:47,043 --> 00:28:54,443
+Aslında bunu kapalı olarak konuşmuştuk Artur'un. Hangi durumda biz separate chaining'i kullanmak mantıklı olur demiştik?
+
+231
+00:28:55,723 --> 00:28:58,163
+Valla orayı ben kaçırdım herhalde hatırlamıyorum hocam
+
+232
+00:28:58,163 --> 00:29:01,383
+Şimdi
+
+233
+00:29:06,771 --> 00:29:09,091
+Hatırladık mı? Ertuğrul?
+
+234
+00:29:09,992 --> 00:29:11,771
+Hocam, orayı hatırladım evet.
+
+235
+00:29:12,291 --> 00:29:20,671
+Hani M'den eğer küçükse, yani eleman sayımız fazlaysa, o zaman sepet şeyini kullanmak daha akıllıcı olur demiştik.
+
+236
+00:29:21,071 --> 00:29:24,231
+Diğer türlü open adresink üzerinden ilerlemeyi tavsiye etmiştik.
+
+237
+00:29:24,771 --> 00:29:26,071
+Tamam hocam, teşekkür ederim.
+
+238
+00:29:26,071 --> 00:29:29,931
+Rica ederim. Serra, hangi sayfayı istiyorsun?
+
+239
+00:29:36,884 --> 00:29:37,884
+Serra, orada mısın?
+
+240
+00:29:42,644 --> 00:29:47,483
+Pardon hocam, sesim gelmemiş sanırım. Ben aldım notları, sonra geri döndürüz arkadaşlar.
+
+241
+00:29:47,564 --> 00:29:49,003
+Tamam, peki. Teşekkür ederim.
+
+242
+00:29:49,003 --> 00:29:49,383
+Teşekkür ederim.
+
+243
+00:29:50,503 --> 00:30:03,824
+Bir de bunun arkadaşlar, Search'tan sonra Delay kısmı var. Delay kısmını siz düşünebilirsiniz. Delay kısmına biraz kafa yörebilirsiniz ama Search'in heşi nasıl yapacağımızı konuşmuş olduk. Bunların kodlarını yazarsanız güzel olur.
+
+244
+00:30:03,824 --> 00:30:20,544
+genel olarak separate chain ile ilgili kodları da yazmış olduk. Evet şimdi bir sonraki adıma geçelim. Bir de aslında
+
+245
+00:30:20,543 --> 00:30:31,403
+Burada Universal Hashing olarak adlandırdığımız bir yaklaşım daha var.
+
+246
+00:30:31,403 --> 00:30:42,163
+Bu yaklaşımda elimizde birden fazla hash fonksiyonu var.
+
+247
+00:30:45,811 --> 00:30:50,811
+ashe fonksiyonlardan oluşan bir küme olarak da düşünebilirsiniz.
+
+248
+00:30:50,811 --> 00:31:03,811
+Bu universal ashing yaklaşımında bu fonksiyonlardan bir tanesini rastgele seçiyoruz.
+
+249
+00:31:12,723 --> 00:31:16,023
+Burada AB, K diyelim.
+
+250
+00:31:22,451 --> 00:31:43,951
+A çarpı K artı B mod P ve mod B olsun. mod B olsun. A, B, P. Şanskıya seçiliyor.
+
+251
+00:31:58,259 --> 00:32:05,859
+Buradaki tek değişmeyen ve rastgele olmayan tablo size'ı
+
+252
+00:32:10,324 --> 00:32:36,963
+bir 8 değerini verdiğiniz zaman burada verilen değerler üzerinden hesaplama yaptığımızda 3x8 artı 4 mod 17 mod 6'dan 5 değerini elde etmiş oluyorsunuz. Bu Universal Hashing'in ne tür bir artısı odur?
+
+253
+00:32:47,827 --> 00:33:05,907
+yani bu ABP'yi rastgele olarak seçiyoruz ve doğal olarak hash fonksiyonumuzda rastgele değerler üzerinden oluşuyor. Neden böyle bir yapı oluşturulmuş olabilir?
+
+254
+00:33:07,923 --> 00:33:09,024
+Evet, Eraizaki.
+
+255
+00:33:10,703 --> 00:33:23,863
+Tam olarak bilmiyorum ama şu şekilde olabilir. Birbirine yakın değerleri hashlerken, hash table'da birbirlerine yakın olmasınlar diye olabilir. Yani daha rastgele bir şekilde dağılsınlar diye yakın değerler.
+
+256
+00:33:24,543 --> 00:33:29,083
+Evet, tabii bu bir gerekçelerden bir tanesi ama bir gerekçe daha var.
+
+257
+00:33:32,383 --> 00:33:33,283
+Yusuf Ziya.
+
+258
+00:33:34,463 --> 00:33:35,863
+Hocam, güvenlik için olabilir mi?
+
+259
+00:33:35,863 --> 00:33:36,243
+Evet.
+
+260
+00:33:36,243 --> 00:34:04,843
+Aynen öyle güvenlik için hash fonksiyonlarının kullandığı buradaki parametrelerin değişken olması özellikle kriptografi tarafında kullanan SHA yaklaşımda olduğu gibi one way password encryption yapıyorsanız bu noktada rastgele olarak değerleri daha doğrusu rastgele demeyelim de sakladığınız password'ü karşı tarafa aktarırken
+
+261
+00:34:04,843 --> 00:34:16,403
+siz one way enkript ederek bu fonksiyonla network üzerinden kriptik bir şekilde gitmesini sağlıyorsunuz.
+
+262
+00:34:16,843 --> 00:34:22,723
+Sunucu tarafında da bu fonksiyonu oynadığınızda aynı değer üretiliyorsa o zaman diyorsunuz ki bu password eşleşti.
+
+263
+00:34:22,723 --> 00:34:28,963
+Bu sırada hiç kimse bu password'ü görmemiş oluyor. Eşlenmiş bir şekilde network üzerinden taşınmış oluyor.
+
+264
+00:34:29,343 --> 00:34:30,423
+Selcan'ın bir sorusu var.
+
+265
+00:34:30,423 --> 00:34:38,644
+Hocam şimdi ama bu geri dönüşü yok değil mi? Zaten o sırada OneWay dediğiniz için indirdim illa aslında ama
+
+266
+00:34:38,644 --> 00:34:51,504
+Evet, geri dönüşü yok. Aynen öyle. Ve bu noktada istediğimiz şey mümkün olduğunca sekürtisi yüksek bir yapı oluşusu var.
+
+267
+00:34:53,604 --> 00:34:59,464
+Evet, şimdi bu kısmı da tamamlamış olalım.
+
+268
+00:35:00,423 --> 00:35:28,004
+Şimdi küçük küçük bilgiler vereceğim. Open addressing dedik. Open addressing M, N'den büyük olduğu durumlarda. Separate chaining M'nin N'den küçük olduğu, N'nin M'den büyük olduğu durumlarda. Şimdi alfa denilen bir parametremiz var. Buna load factor diyoruz.
+
+269
+00:35:30,423 --> 00:35:39,024
+ve bu alfanın genelde 0.5 düzeyinde olması istenir.
+
+270
+00:35:39,884 --> 00:35:41,864
+Hash yapısı kurulduğunda.
+
+271
+00:35:42,923 --> 00:35:47,983
+Bu alfaya dayalı olarak, şimdi bir gösterim yapacağız.
+
+272
+00:35:49,983 --> 00:35:55,504
+Alfanın 0.1 olduğu durumdan 0.9 olduğu duruma kadar.
+
+273
+00:35:56,123 --> 00:35:58,703
+Hocam pardon, yeşil dışında bir renk seçebilir misiniz?
+
+274
+00:35:58,703 --> 00:35:59,323
+Recaetan.
+
+275
+00:36:00,004 --> 00:36:00,483
+Tabii ki.
+
+276
+00:36:17,523 --> 00:36:20,723
+Bu average prop ne demek?
+
+277
+00:36:34,708 --> 00:36:42,208
+Alpha 0.1 iken ortalama neye bakıyoruz?
+
+278
+00:36:48,659 --> 00:36:51,859
+Group ne demek arkadaşlar?
+
+279
+00:36:55,507 --> 00:37:01,988
+Peki, deneme sayısı yerleştirme ya da arama için kullanılabilir.
+
+280
+00:37:01,988 --> 00:37:25,187
+1.11, 0.2'de 1.28, 0.3'de 1.52, 0.4'de 1.89, 0.5'de 2.5, 0.6'da 3.62,
+
+281
+00:37:25,507 --> 00:37:43,507
+0.8'e geldiğimizde 13 ve 0.9'a geldiğimizde 50.5 defa kontrol gerektiren bir yapı oluşturmuş oluyoruz.
+
+282
+00:37:45,507 --> 00:37:49,827
+Alfanın load faktörü olarak dolduk oranına bağlı olarak.
+
+283
+00:37:49,927 --> 00:37:53,307
+Peki open addressing için mi, separate chain için mi?
+
+284
+00:37:57,364 --> 00:37:58,364
+ve çarını var.
+
+285
+00:38:03,219 --> 00:38:06,940
+Human. Hocam ben ne yaptığımıza anlayamadım.
+
+286
+00:38:10,059 --> 00:38:21,499
+Tekrar baştan alalım. Alpha bir hash ile saklamak istediğiniz bir yapı oluşturduğunuzda n'nin m'ye oranını temsil ediyor.
+
+287
+00:38:21,499 --> 00:38:40,919
+load factor. Bu %10'una denk gelirse eleman sayısı tablonun, sizin bir arama yaptığınızda ya da bir insert işlemi yaptığınızda yaklaşık olarak kaç işlem sonucunda bu işi tamamlayabileceğinizi gösteriyor.
+
+288
+00:38:40,920 --> 00:39:09,600
+Yani 0.1'i dolu iken bir adımda çözüyorsunuz 0.2, 0.3 de öyle ama 0.5'e geldiğinizde 2.5 adım sürme ortalama ihtimali oluyor anlamına geliyor 0.9 dolu bir tablo üzerinde çalıştığınızda 50 adımlık bir kontrolden sonra çünkü muhtemelen koruyucu oluşacak ve bu koruyucunun sonucunda da bu kadar deneme yapmanız gerek.
+
+289
+00:39:09,599 --> 00:39:11,080
+Sen Ercan bir söz istemişti.
+
+290
+00:39:12,619 --> 00:39:14,979
+Şey, open addressing diyecektim ben.
+
+291
+00:39:15,659 --> 00:39:19,339
+Open addressing, neden open addressing dedim? Neyi bilgi olarak kullanayım?
+
+292
+00:39:19,959 --> 00:39:24,659
+Alfa değeri sıfırla bir arasında demek ki m değeri n değerinden büyük.
+
+293
+00:39:24,659 --> 00:39:27,399
+Teşekkür ederim. Aynen öyle, mantık basitti.
+
+294
+00:39:28,239 --> 00:39:37,339
+Burada open addressing'e ait olan deneme sayılarını yaklaşık olarak, ortalama olarak görüyorsunuz.
+
+295
+00:39:37,339 --> 00:39:40,239
+Peki, devam edeceğiz şimdi
+
+296
+00:39:43,987 --> 00:40:12,987
+Eküme anlaşıldı mı? Anlaşıldı hocam, teşekkür ederim. Rica ederim. Unsuccessful search. Şimdi, first location is occupied. Buna diyelim ki alfa değerini verdik. Bu biraz önceki alfadan farklı. Ona göre düşünülmüyorsunuz.
+
+297
+00:40:12,987 --> 00:40:16,267
+yapabilirsiniz şu an için. Emptisal.
+
+298
+00:40:20,851 --> 00:40:22,851
+boş olma olası nedir? 1-alfa.
+
+299
+00:40:26,643 --> 00:40:39,643
+Yani siz bir arama yaptığınız zaman ilk baktığınız bölgenin dolu olma ihtimali alfa. Bir önceki alfadan farklı mıdır?
+
+300
+00:40:47,476 --> 00:40:48,675
+Evet, siz deyin.
+
+301
+00:40:55,476 --> 00:40:58,476
+Hani bir önceki alfadan farklı dedim ya, doğru mu verdiğin ilgili?
+
+302
+00:41:00,476 --> 00:41:01,476
+Serra?
+
+303
+00:41:03,976 --> 00:41:08,476
+Farklıdır çünkü bir öncekinde her dönemeyi tutuyorduk. Bunda ilk değeri tutuyoruz.
+
+304
+00:41:08,476 --> 00:41:15,476
+Ama alfa değeri burada ne kadarının dolu olduğunu bize gösterse bir şey değişir mi acaba?
+
+305
+00:41:15,476 --> 00:41:26,656
+Yani %10'u doluyken ilk baktığımız lokasyonun dolu olma olasılığını halif olarak adlandırsak doğru olmaz mı?
+
+306
+00:41:30,739 --> 00:41:32,739
+Bilmem, emin olabilmem ne?
+
+307
+00:41:32,739 --> 00:41:41,739
+Alfa 0.1 olduğunda, o zaman ilk baktığımız lokasyonun occupied olma ihtimali de 0.1 değil midir?
+
+308
+00:41:42,739 --> 00:41:43,739
+Doğru.
+
+309
+00:41:43,739 --> 00:41:54,739
+Evet, o zaman bir önceki alfa ile aynı aslında alfayı kullanmış olacağız. Biraz önceki noktada kimse dikkat çekmeyince bir kez daha bunu vurgulamakta fayda var diye düşündüm.
+
+310
+00:41:54,739 --> 00:41:59,739
+Peki iki tanesinin occupied olma olasılığı nedir?
+
+311
+00:42:10,356 --> 00:42:12,596
+ilk ikisinin occupied olmasıdır.
+
+312
+00:42:21,364 --> 00:42:35,223
+mecburen Sercan. Hocam ben şöyle düştüm, %10'u doluyken doluya denk geldiğimize göre bundan sonra deneyebileceğimiz ve yakalanacağımız 9 tane var ama deneyebileceğimiz 99 tane var. Yani 1 bölü 11 olacak bu sefer diye düşündüm.
+
+313
+00:42:35,223 --> 00:42:38,843
+Yani kapıcı söylemek gerekirse alfa çarpı alfa diyebiliriz.
+
+314
+00:42:39,624 --> 00:42:40,183
+Tamam.
+
+315
+00:42:41,103 --> 00:42:43,683
+Çok o detayda uğraşmayalım.
+
+316
+00:42:44,583 --> 00:42:44,823
+P,
+
+317
+00:42:47,044 --> 00:42:47,603
+probun
+
+318
+00:42:47,603 --> 00:42:50,563
+ikinci turdan sonra
+
+319
+00:42:50,563 --> 00:43:07,123
+bittiği senaryoda o zaman first step alf olarak adlandırılırken ikincisi de 1-alf olarak adlandırılacak.
+
+320
+00:43:15,219 --> 00:43:25,219
+O zaman K-step'in sonunda sonlanma olasılığını yazacak olursak...
+
+321
+00:43:35,059 --> 00:43:55,059
+eşittir. Alfa üzeri k-1 çarpı 1 eksi alfa olarak formülü ifade etmiş olacağız. Buradan da average number of steps'e gelirsek.
+
+322
+00:44:01,652 --> 00:44:03,091
+K1'den başlasın.
+
+323
+00:44:04,092 --> 00:44:05,291
+Hemen kadar gitsin.
+
+324
+00:44:06,491 --> 00:44:16,011
+K çarpı alfa K-1 çarpı 1-alfalık bir formül çıkacak.
+
+325
+00:44:16,931 --> 00:44:17,811
+Bu da bizi
+
+326
+00:44:19,051 --> 00:44:21,371
+geometrik seri açılımına götürecek.
+
+327
+00:44:24,091 --> 00:44:25,211
+Ve buradan da
+
+328
+00:44:26,891 --> 00:44:27,531
+1
+
+329
+00:44:29,091 --> 00:44:29,891
+eksi
+
+330
+00:44:29,891 --> 00:44:32,492
+alfa gelmiş olacak.
+
+331
+00:44:33,992 --> 00:44:48,131
+Şimdi burada yaptığımız mantığımız önemli kez daha gidecek olursak ilk lokasyonun occupied olma olasılığı alfa, ilk lokasyonun empty olma olasılığı ise bir eksi alfa.
+
+332
+00:44:48,131 --> 00:45:05,332
+ilk iki baktığımız arka arkaya kontrol ettiğimiz değerin occupied olma olasılığı harfa çarpı harfa yani 0.1'i de oluyorsa 0.1 çarpı 0.1 ama 0.9 olsaydı o zaman 0.9 çarpı 0.9 diyecekti.
+
+333
+00:45:05,332 --> 00:45:31,631
+Bu denemelerin kaç step sürdüğünü hesaplamak için de eğer ikinci adımda sonlanıyorsa o zaman ilk adıma baktığınız occupied alfa ikinci adımda sonlandığı için empty sel denk geliyorsunuz. O zaman alfa çarpı bir eksi alfa dedik. İlk adım occupied olma durumu ikinci adımda empty sel olma durumu.
+
+334
+00:45:31,631 --> 00:45:36,211
+K adıma geçeceğiz buradan. İki adımdan K adıma geçeceğiz.
+
+335
+00:45:36,751 --> 00:45:41,971
+K adımda K-1 adımlarının hepsi occupied olma durumu.
+
+336
+00:45:41,971 --> 00:45:44,471
+O yüzden alfa üzeri K-1 diyoruz.
+
+337
+00:45:44,751 --> 00:45:47,611
+Çarpı son adımda M-S'de denk geliyorsunuz.
+
+338
+00:45:47,691 --> 00:45:49,291
+1-alfa.
+
+339
+00:45:49,951 --> 00:45:55,711
+Buradan da average number of steps formülüne geçiş yapmış oluyoruz.
+
+340
+00:46:01,139 --> 00:46:11,379
+Gelelim şimdi bir başka formüle
+
+341
+00:46:55,476 --> 00:47:03,615
+Bunlar da Successful Search ve Unsuccessful Search'un formülleri alfa üzerinden.
+
+342
+00:47:04,396 --> 00:47:11,916
+Bunun tabii teorik olarak matematiksel analizini göstermek gerekir ama şu an için buna vaktimiz yok.
+
+343
+00:47:12,656 --> 00:47:14,595
+Biraz da karışık bir gösterimi var.
+
+344
+00:47:15,076 --> 00:47:17,935
+Alfayı %50 olarak düşünebilirsiniz.
+
+345
+00:47:19,035 --> 00:47:21,195
+Alfayı %75 olarak düşünebilirsiniz.
+
+346
+00:47:21,195 --> 00:47:24,316
+Alfayı %90 olarak düşünebilirsiniz.
+
+347
+00:47:24,316 --> 00:47:31,816
+Bu şartlarda successful tarafına bakalım bir de unsuccessful tarafına bakalım
+
+348
+00:47:31,816 --> 00:47:40,215
+Successful tarafında 1.5 adımda unsuccessful tarafında 2.5 adımda ulaşıyorsunuz sonucu %50'si doluyken
+
+349
+00:47:40,215 --> 00:47:43,715
+%75'i doluyken 2.5 ve 8.5
+
+350
+00:47:43,715 --> 00:47:58,895
+ve %90 dolu iken Successful Search 5.5 adımda, UnSuccessful Search 50.5 adımda gerçekleşmiş oluyor.
+
+351
+00:47:59,295 --> 00:48:03,255
+Hatırlarsanız bu değeri daha önce dersin başında görmüştük.
+
+352
+00:48:03,255 --> 00:48:08,155
+Şimdi Successful Search ile UnSuccessful Search arasındaki fark neden kaynaklanıyor?
+
+353
+00:48:09,295 --> 00:48:12,775
+Niye aralarında bu kadar büyük bir fark oluşuyor %90 dolu olduğunda?
+
+354
+00:48:13,715 --> 00:48:15,715
+bunu kimyorun, Allah'a emanet olun.
+
+355
+00:48:27,411 --> 00:48:28,251
+Ertuğrul lütfen.
+
+356
+00:48:29,931 --> 00:48:39,191
+Hocam şimdi linkli liste yok. Doğru sonucu bulduğumuz zaman işlemi iki arada kesiyoruz ama unsuccessful'da sona kadar gitmemiz gerekiyor her seferinde.
+
+357
+00:48:39,191 --> 00:48:54,651
+Evet, buradaki önemli noktalardan bir tanesi biz burada open addressing kullandığımız noktada unsuccessful search'te arka arkaya neredeyse table boyutu kadar diyemeyeceğiz ama
+
+358
+00:48:54,651 --> 00:49:06,331
+olabildiğince fazla elemanın arka arkaya gelme olasılığını düşünerek 50 adım boyunca null görene kadar, empty cell görene kadar bu aramayı devam ettirmek zorundayız.
+
+359
+00:49:06,331 --> 00:49:14,331
+Successful Search'te gördüğünüz gibi %90 dolu olsa bile muhtemelen bu aramamız 5 adımda sonuçlanacak.
+
+360
+00:49:15,092 --> 00:49:23,691
+Ama arka arkaya gelen önekler birleştiğinde aradaki empty cell'lerin sayısı çok azaldığı için bir empty cell'e denk gelene kadar
+
+361
+00:49:23,691 --> 00:49:27,272
+yapacağımız kontrol doğal olarak biraz daha artmış oluyor.
+
+362
+00:49:27,272 --> 00:49:34,471
+Şimdi bu Open Addressing tarafı bir de Pardon Separate Chaining tarafı var.
+
+363
+00:49:39,891 --> 00:49:57,891
+Sepret chaining tarafını da konuşalım. Sepret chaining tarafındaki değerler için ne söylersiniz? Successful search'u, al successful search'u.
+
+364
+00:50:13,235 --> 00:50:15,235
+Bir düşünün isterseniz.
+
+365
+00:50:49,364 --> 00:50:56,364
+Evet, yorumu olan var mı? Separate Chaining tarafındaki Unsuccessful Search ve...
+
+366
+00:50:58,612 --> 00:51:05,691
+Successful Search'un analizinden ne kadarlık bir karmaşıklık çıkabileceğini konuşuyoruz.
+
+367
+00:51:12,211 --> 00:51:14,211
+Altun, Numan, Yıldız.
+
+368
+00:51:16,211 --> 00:51:17,331
+Sesim geliyor mu hocam?
+
+369
+00:51:17,331 --> 00:51:18,091
+Geliyor.
+
+370
+00:51:19,631 --> 00:51:21,632
+Fikrim yok açıkçası. Buradayım ama.
+
+371
+00:51:21,632 --> 00:51:23,132
+Fikir yürüt edersin.
+
+372
+00:51:24,632 --> 00:51:29,711
+Separate Chain'de bizim nodlarımız arasında işlemler olduğu için
+
+373
+00:51:29,711 --> 00:51:36,091
+Unsuccessful'da oranımız fazla olabilir.
+
+374
+00:51:36,091 --> 00:51:48,572
+Separate Chain'in kullandığımız zaman bir kere yaptığımız Successful Search'te birlik bir hash fonksiyonun işlemi var.
+
+375
+00:51:49,131 --> 00:51:54,851
+Artı bir de alfa bölü ikilik bir kontrol yapmamız gerekecek.
+
+376
+00:51:55,271 --> 00:51:59,551
+Unsuccessful Search için ise alfa için bir kontrol yapmamız gerekecek.
+
+377
+00:51:59,552 --> 00:52:04,371
+Peki bu alfa n bölü n değerinden hesaplandığında ne olabilir mesela?
+
+378
+00:52:04,792 --> 00:52:08,232
+Seprit çeydini düşündüğünüzde bana bir örnek verebilir misiniz?
+
+379
+00:52:08,552 --> 00:52:10,131
+n şu olsun, n bu olsun
+
+380
+00:52:31,315 --> 00:52:36,075
+Separate Chain olması için N ne olabilir? M ne olabilir?
+
+381
+00:52:38,739 --> 00:52:39,099
+Efe?
+
+382
+00:52:40,639 --> 00:52:44,999
+Hocam, separate chain linkli N değeri M'den daha büyük olacağı için
+
+383
+00:52:44,999 --> 00:52:48,120
+Alfa değeri de birden daha büyük bir değer çıkacak.
+
+384
+00:52:48,500 --> 00:52:50,179
+Tamam. Mesela N ne olsun?
+
+385
+00:52:50,739 --> 00:52:53,999
+Mesela M basitinde N'e iki M'e bir verirsek.
+
+386
+00:52:54,639 --> 00:52:54,879
+Evet.
+
+387
+00:52:56,879 --> 00:52:59,379
+O zaman mevdanini görüyoruz.
+
+388
+00:52:59,959 --> 00:53:03,000
+Alf, U, As-Saxe-Saxe-Saxe'ın kaç olduğunu görüyoruz?
+
+389
+00:53:03,639 --> 00:53:04,019
+İki.
+
+390
+00:53:04,639 --> 00:53:05,819
+İki olduğunu görüyoruz.
+
+391
+00:53:05,819 --> 00:53:10,199
+Diyelim ki eğer 3'e 1 olsaydı o zaman 3 olacaktı
+
+392
+00:53:10,199 --> 00:53:21,619
+Yani burada aslına bakarsan 3'e 1'lik bir orana baktığında biz 3 tane elemanı arka arkaya yerleştirmiş oluyoruz doğru mu?
+
+393
+00:53:22,100 --> 00:53:22,399
+Evet
+
+394
+00:53:22,399 --> 00:53:24,460
+Aynı göze denk gelmiş oluyor
+
+395
+00:53:24,460 --> 00:53:31,259
+Eğer elemanlar aynı göze denk gelirse o zaman doğal olarak unsuccessful search'in tüm elemanları gezmemiz gerekiyor
+
+396
+00:53:31,259 --> 00:53:32,799
+Evet
+
+397
+00:53:32,799 --> 00:53:45,899
+Peki, successful search için ortalama ne olacaktı? 1 artı, alfa bölü 2, alfa kaç? 3 diyelim, 3 bölü 2'den 1,5 olacaktı
+
+398
+00:53:45,899 --> 00:53:54,699
+Yani biz en kötü durum senaryosunu değil, average case senaryosunu düşünecek ve successful search'ta daha az adımda separate chain ile oluşacaktık
+
+399
+00:53:54,699 --> 00:54:00,219
+Örneğin, n 100 olsaydı arkadaşlar, m de 25 olsaydı
+
+400
+00:54:03,827 --> 00:54:29,427
+O zaman düşündüğünüzde unsuccessful search için ne olacaktı adım sayısı? 4 olacaktı. Successful search için ise 4 bölü 2'den 2, 3 olarak denk gelecekti. Efe hala kaldırıyor musun yoksa? Yok hocam, pardon kaldırıyorum. Tamam. Evet, sonuç itibariyle
+
+401
+00:54:29,427 --> 00:54:49,307
+separate chain tarafına baktığınızda hash işlemlerinde en emlem büyük olduğu durumda bile arka arkaya linkli listelerin oluşturulduğu bir noktada 100 tane eleman var, 25 tane de tablo var diyelim.
+
+402
+00:54:49,307 --> 00:54:57,427
+100 bölü 25'ten 4 tane elemanın arka arkaya gelme olasılığı olduğunu görüyorsunuz.
+
+403
+00:54:58,207 --> 00:55:07,847
+Bu da bize aslında teoride 100 tane elemanın arka arkaya gelme ihtimali gözükse de pratikte bunun olmadığını gösteriyor.
+
+404
+00:55:07,847 --> 00:55:16,167
+Bu yüzden eninden büyük olduğu durumlarda mutlaka ve mutlaka sakırtıç eğikten faydalanmak akıllıca gibi gözüküyor.
+
+405
+00:55:16,567 --> 00:55:18,327
+Son olarak bir grafik vereceğim.
+
+406
+00:55:19,307 --> 00:55:45,767
+Bu grafikte bir alfa değeri var. 0.2 ile başlıyor. 0.4, 0.6, 0.8 ve 1 olmak üzere. Buraya geliyor. Burada average number of props var. Deneme sayısı.
+
+407
+00:55:45,767 --> 00:55:49,227
+birden başlıyor.
+
+408
+00:55:49,227 --> 00:55:54,267
+Bir buçuk, iki, bu şekilde yukarı doğru devam ediyor.
+
+409
+00:55:55,207 --> 00:55:57,927
+İki tane grafik var. Bir tanesi bu.
+
+410
+00:55:59,307 --> 00:56:03,307
+Eğri var diyelim. Bir grafik, iki eğri var. Bir tanesi de bu.
+
+411
+00:56:06,507 --> 00:56:10,147
+Bunların hangi yöntemler olduğunu tahmin edebilir misiniz?
+
+412
+00:56:15,635 --> 00:56:20,635
+Ben şunu biraz daha düzgün çizeyim. Yanlış anlaşılım olmasın diye.
+
+413
+00:56:27,219 --> 00:56:54,779
+Bunlar hangi yöntemler olabilir? Gördüğümüz dersteki yöntemlerden iki tanesi. Bu Successful Search'e ait olan bir grafik. Successful Search'taki donluk oranlarına bağlı olarak denemelerin ne şekilde değiştiğini gösteren iki tane eğri var. Hangi yöntemlere ait olabilir?
+
+414
+00:57:00,148 --> 00:57:02,148
+Bu derste hangi yöntemleri gördük arkadaşlar?
+
+415
+00:57:04,327 --> 00:57:05,667
+Bugün derste. Tolga?
+
+416
+00:57:06,867 --> 00:57:10,148
+Kırmızı open addressing, mavi separate chaining olacak herhalde.
+
+417
+00:57:10,827 --> 00:57:11,767
+Kırmızı hangisi dedi?
+
+418
+00:57:12,307 --> 00:57:12,988
+Open addressing.
+
+419
+00:57:15,207 --> 00:57:18,787
+Şimdi bunu ikisini aynı grafikte gösteremeyiz. Neden?
+
+420
+00:57:20,068 --> 00:57:25,248
+Çünkü bizim grafiğimiz şu anda 0.1 ile sınırlı. Öyle düşünelim.
+
+421
+00:57:25,248 --> 00:57:31,088
+Ama iyi bir denemeydi teşekkür ediyorum
+
+422
+00:57:31,088 --> 00:57:40,087
+Evet bir ile sınırlı ve biz bu bire kadar sınırlı olduğuna göre bunların open addressing yöntemleri olduğunu rahatlıkla söyleyebiliriz
+
+423
+00:57:40,087 --> 00:57:44,268
+O zaman bunların open addressing yöntemleri ise birine birine olabilir
+
+424
+00:58:03,123 --> 00:58:04,703
+NSD'de oldu.
+
+425
+00:58:05,803 --> 00:58:09,604
+Hocam, emin olmamakla birlikte soldaki linear olabilir.
+
+426
+00:58:10,983 --> 00:58:11,663
+Kırmızı olan mı?
+
+427
+00:58:12,283 --> 00:58:13,584
+Evet.
+
+428
+00:58:15,323 --> 00:58:16,123
+Peki.
+
+429
+00:58:17,823 --> 00:58:18,183
+Diğeri?
+
+430
+00:58:18,383 --> 00:58:23,843
+Yani sağdaki de kuadratik de olabilir, double de olabilir.
+
+431
+00:58:24,743 --> 00:58:25,384
+Aynen öyle.
+
+432
+00:58:26,643 --> 00:58:29,243
+İkisi de olabilir ama burada verdiğim örnek de
+
+433
+00:58:29,243 --> 00:58:36,423
+kuadratik probing için vermiş olduğumuz successful search'un kaç adımda tamamlanacağını.
+
+434
+00:58:37,543 --> 00:58:47,003
+Arkadaşlar gördüğünüz gibi lineal probing de tablonun doluluk oranına bağlı olarak bir kesit aldığımızda, şöyle bir kesit alalım.
+
+435
+00:58:51,123 --> 00:58:57,243
+Linear Probing yaklaşımını kullandığınızda Successful Search için daha fazla deneme yapmanız gerekiyor.
+
+436
+00:58:58,084 --> 00:59:07,663
+Quadratic Probing'i kullanmak deneme sayısını azaltıyor. O yüzden Quadratic Probing, Linear Probing'e göre daha avantajlı olduğunu bu figürde de göstermiş oluyoruz.
+
+437
+00:59:08,884 --> 00:59:11,183
+Önemli olan noktalardan biri de buydu.
+
+438
+00:59:11,183 --> 00:59:24,164
+Quadratic Probing'in linear probing'e göre search işlemlerinde daha az adımda aynı doluk oranı olan iki tablo olduğunu düşünürsek gerçekleştiğini buyurmamız.
+
+439
+00:59:24,164 --> 00:59:31,763
+Evet, hash ile ilgili benim sizinle paylaşacağım ilgiler bu kadar. Şimdi sorularınız varsa sorularınızı alın.
+
+440
+00:59:40,659 --> 00:59:50,399
+bütün dersteki konularla ilgili geriye dönük olarak, hash ile ilgili soru soru yapabilirsiniz. Anlamadığınız bir yer varsa. Ben bununla bunu karıştırıyorum ya. Metin?
+
+441
+00:59:51,500 --> 00:59:58,059
+Hocam, ben derste işle alakalı değil de sınavda bu konudan da sorumluyuz herhalde değil mi? Onu soracaktım ama.
+
+442
+00:59:58,639 --> 01:00:04,159
+Evet, bunu ders başında vurgulamıştım. Hash konusu da sınavın içerisinde.
+
+443
+01:00:04,679 --> 01:00:05,580
+Tamam, teşekkür ederim.
+
+444
+01:00:05,959 --> 01:00:06,479
+Rica ederim.
+
+445
+01:00:10,195 --> 01:00:13,075
+Bugünkü derste ilgili soru sormak isteyen arkadaşımız var mı?
+
+446
+01:00:16,075 --> 01:00:16,755
+Çaza?
+
+447
+01:00:18,835 --> 01:00:24,295
+Evet hocam, soru değil de birkaç sayfa önce bakabilir miyim acaba?
+
+448
+01:00:24,295 --> 01:00:24,415
+Tabii.
+
+449
+01:00:27,415 --> 01:00:29,296
+Evet, burada.
+
+450
+01:00:31,015 --> 01:00:38,155
+Bunlar işte, işte Open Addressing ve Spread Chaining bu durumlarda, pardon bir sonraki sayfa.
+
+451
+01:00:41,940 --> 01:00:46,959
+Evet burada. Burada sadece bu durumlarda kullanılabiliriz, doğru mu?
+
+452
+01:00:47,739 --> 01:01:03,319
+Bu kullanılması mantıklı olan durumları gösteriyor. Ama bu bir şart değil. M, N'den büyük ise Open Addressing tavsiye ediliyor. Ama Separate Chain'in de kullanılabilir.
+
+453
+01:01:03,319 --> 01:01:10,339
+ama NM'den büyükse Open Address'inki kullanmak genelde pek mümkün olmaz.
+
+454
+01:01:10,459 --> 01:01:14,480
+Çünkü zaten büyük olasılıkla tablo dolacağı için hata olacaksınız.
+
+455
+01:01:14,959 --> 01:01:23,980
+O yüzden Open Address'in yine alternatif separate chain olabilir ama separate chain'in alternatifinin Open Address'in olması enin emden büyük olduğu durumlarda mümkün olmayabilir çizim.
+
+456
+01:01:26,099 --> 01:01:28,019
+Tamam hocam, teşekkür ederim.
+
+457
+01:01:28,239 --> 01:01:29,399
+Rica ederim. Ertuğrul?
+
+458
+01:01:29,399 --> 01:01:38,199
+Hocam bu sayfada da var mesela bazen mod 6'ya göre mod aldık. Hani hep asal say olması gerektiğini söylemişsiniz de
+
+459
+01:01:38,199 --> 01:01:56,819
+Evet. Bu tamamen kolaylaştırmak için verilmiş bir örnek. Yoksa şey değil yani hani o andaki seçilmiş sayının 6 olması. Yoksa tabii ki de tercih Prime 9 number olması, asal sayı olması.
+
+460
+01:01:57,499 --> 01:01:58,199
+Teşekkür ederim.
+
+461
+01:01:58,599 --> 01:01:59,259
+Rica ederim.
+
+462
+01:02:05,492 --> 01:02:07,492
+Başka bir soru var mı?
+
+463
+01:02:16,628 --> 01:02:28,628
+Evet, şimdi Yusuf Ziya'dan enteresan bir mesaj var. Elif Hoca dersi erken bitirmek zorunda kalmış. Open addressing işlenmiş en son orada. Peki Yusuf Ziya, buradan ne anlamam gerekiyor?
+
+464
+01:02:35,092 --> 01:02:39,472
+Hocam, tam sırasında yazmıştım da onu. Sınav nereye kadar çıkacak sorusundan sonra.
+
+465
+01:02:40,472 --> 01:02:59,791
+Şimdi, şöyle söyleyeyim. Ben derste olduğum için Elif Hoca ile konuşma şansım olmadı. Hani bilemiyorum onun nasıl bir durumla karşı karşıya olduğunu. O yüzden hani ben normalde onunla konuştuğumuz ve konu olarak hemfikir olduğumuz noktaları sizinle paylaştım.
+
+466
+01:02:59,791 --> 01:03:05,391
+ama aksi bir durum olursa onlar nereye kadar işlediler vs. onları bilmiyorum.
+
+467
+01:03:06,231 --> 01:03:08,851
+Siz planlamanızı isterseniz ona göre yapabilirsiniz.
+
+468
+01:03:09,031 --> 01:03:12,611
+Yani bu konuda şu anda bir yorum yapmam sağlıklı olmayacaktır Elif Hoca ile konuşmadan.
+
+469
+01:03:13,471 --> 01:03:13,871
+Sağlıyorum.
+
+470
+01:03:14,831 --> 01:03:17,551
+Çünkü şu an canlı yayında senden öğreniyorum böyle bir şey olduğunu.
+
+471
+01:03:20,980 --> 01:03:50,679
+Evet, başka sorusu olan. Ama ödeviniz büyük ihtimalle hash ile ilgili olacağı için zaten bu konulara genel olarak bir bakmanız gerekecek. Tamam, peki zorla soru sormanızı sağlamayacağım tabii ki de. Soru yoksa güzel, anlaşılır işlemektir. Hepinize bugünkü uzun ders boyunca katıldığınız için özellikle katkı sağlayanlara başta teşekkür ediyorum. Sabrınız için de, dinlediğiniz için de çok teşekkür ediyorum.
+
+472
+01:03:50,980 --> 01:03:59,639
+Önümüzdeki haftaki sınavlarınızda bol şans, başarılar, zor bir süreçte de sağlıklı günler diliyorum hepinize
+
+473
+01:03:59,639 --> 01:04:04,860
+Kendinize dikkat edin, umarım sınavlar istediğiniz gibi geçer
+
+474
+01:04:04,860 --> 01:04:07,020
+Görüşmek üzere diyorum, iyi haftalar

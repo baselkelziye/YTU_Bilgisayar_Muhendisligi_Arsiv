@@ -1,0 +1,1339 @@
+1
+00:00:01,459 --> 00:00:01,960
+Altyazı M.
+
+2
+00:00:53,396 --> 00:01:15,195
+Evet arkadaşlar, yeniden merhaba. Uygulama kısmına hoş geldiniz. Bugün uygulamayı yapmayacağız. Konu anlatımına devam edeceğiz. Çünkü konularımızda iki tane daha konu var. Onları tamamlayacağız. Merksort ve Quicksort'un matematiksel analizini yapacağız. Arkasından sorularınız varsa alıyor olacağım. Şimdi ekran yansıtmaya başlıyorum.
+
+3
+00:01:21,715 --> 00:01:37,335
+Şimdi ekranda geldiğini tahmin ediyorum. Merge Sort'u konuşacağız önce. Merge Sort'un enlogenlik bir karmaşıklık olduğunu söyledik ama Merge Sort'un kaç tane adımı var? Merge Sort'ta ne yapıyoruz?
+
+4
+00:01:46,644 --> 00:01:49,344
+Evet. Mörg's Orta ne yapıyoruz? Selcan?
+
+5
+00:01:51,544 --> 00:02:07,943
+Hocam, tek bir eleman kalana kadar verilen diziyi bölüyoruz. Sonra geri birleştirirken küçük mü büyük mü birleştireceğimiz dizideki o elemanların baş ve sondaki kısımları diye. Yani birindeki en küçük yerindeki en büyük elemana bakıyoruz. Küçük mü büyük mü diye sağ sol şeklinde yer değiştirerek geri yerine koyuyoruz.
+
+6
+00:02:07,943 --> 00:02:26,263
+Yani şöyle diyelim o son kısmında ufak bir ifadeyle değişiklik yapalım. Hepsi doğru genel olarak söylediklerini. İki en küçük parçaya ayırdığımız yani birer eleman bırakana kadar yaptığımızı ayrıştırma sonucunda elemanları kontrol ediyoruz.
+
+7
+00:02:26,263 --> 00:02:42,563
+birleştirdiğimizde iki eleman bir araya geldiğinde küçükten büyüğe sıralı oluyor. Sonra diğer ikiye böldüğümüz eleman grubu birleşme işine giriyor. Tekrar sıralı bir eleman oluşuyor. Bu şekilde yukarı doğru idareliyoruz. Yani her adımda bir merge işlemi yapmamız gerekiyor.
+
+8
+00:02:43,043 --> 00:02:54,203
+Teşekkür ediyorum açıklamanın için. Bu da şunu getiriyor. Biz bölerken aslında bir iş yapmıyoruz. Sadece ortadan ikiye ayırıyoruz. Esas işi birleştirirken yapıyoruz.
+
+9
+00:02:54,203 --> 00:03:06,783
+Biraz sonra göreceksiniz QuickSort'ta bu tam tersi şekilde gerçekleşecek. Ama önce MerckSort'un ilk bir soda kodunu yazalım. Rekürsif olarak yaptığımız çözümü. Ondan sonra
+
+10
+00:03:13,812 --> 00:03:25,812
+analizini birlikte yapacağız. Öncelikli olarak bizim bir tane dizimiz var.
+
+11
+00:03:28,147 --> 00:03:36,147
+ve bu sıfırdan n-1'e kadar n elemanlı bir dizi.
+
+12
+00:03:38,147 --> 00:03:47,147
+Ve buradaki durma koşulumuz n 1 olduğu takdirde duracağız. O yüzden n 1'den büyük olduğu sürece
+
+13
+00:03:50,147 --> 00:03:55,147
+yarısını alıyoruz dizinin.
+
+14
+00:03:59,699 --> 00:04:03,299
+ve yeni bir alana kopyalıyoruz. Yeni bir diziye.
+
+15
+00:04:13,556 --> 00:04:17,556
+Bunu ikinci kısmı için de gerçekleştiriyoruz.
+
+16
+00:04:17,556 --> 00:04:19,556
+A dizisini.
+
+17
+00:04:21,556 --> 00:04:31,556
+N bölü 2'den başlayarak, N-1'e kadar, kopyalama işini gerçekleştiriyoruz.
+
+18
+00:04:31,556 --> 00:04:37,556
+Bir saniyenizi rica ediyorum.
+
+19
+00:04:55,156 --> 00:05:02,715
+Evet kaldığım yerden devam edeceğim. İkinci bölümünü kopyaladım.
+
+20
+00:05:18,100 --> 00:05:29,539
+Sonra, doğal olarak kopyalama işimi tamamladıktan sonra tekrar kendisini çağırmam gerekiyor, NorthSort algoritmasının rekürsif bir yapıya sahip olduğu için.
+
+21
+00:05:29,539 --> 00:05:37,139
+NorthSort diyorum, bu sefer parametre olarak B dizisini paslıyorum.
+
+22
+00:05:38,940 --> 00:05:39,620
+Sıfırdan.
+
+23
+00:05:43,827 --> 00:05:56,827
+n bölü 2-1'e kadar ve doğal olarak diğer yarısı içinde tekrar fonksiyonu kendisine çağrılalım lazım. Bu sefer de C dizisini paslıyorum.
+
+24
+00:05:59,327 --> 00:06:06,827
+Bu sefer n bölü 2'den şunu düzeltelim.
+
+25
+00:06:13,716 --> 00:06:23,016
+eksi B'ye kadar gönderiyor. En son adımda ne kaldı? Genel algoritmanın sonuna ne yazmam gerekiyor?
+
+26
+00:06:29,555 --> 00:06:31,555
+Çövang.
+
+27
+00:06:35,028 --> 00:06:37,248
+Mergelememiz gerekiyor hocam.
+
+28
+00:06:37,248 --> 00:06:40,247
+Evet, bu iki parçayı birleştirmemiz gerekiyor.
+
+29
+00:06:42,827 --> 00:06:53,647
+B, C ve A olmak üzere bu iki parçayı birleştiren fonksiyonu çağırıyoruz. Peki bu fonksiyonu hatırlayan var mı?
+
+30
+00:06:55,487 --> 00:06:59,327
+Hemen şuraya şöyle bir sayfada açalım.
+
+31
+00:07:03,636 --> 00:07:19,636
+March fonksiyonu. March fonksiyonuna 3 tane parametre geliyor. B0'dan e-1'e kadar. C0'dan Q-1'e kadar.
+
+32
+00:07:19,636 --> 00:07:24,636
+Hocam, geçen sayfanın tam aşağısına yazılmadık tabii. Bunu nasıl yapalım?
+
+33
+00:07:24,636 --> 00:07:29,636
+Tabii ki, hemen geri gelebilirim. Bekliyorum yazmanızı.
+
+34
+00:08:00,564 --> 00:08:01,443
+Tamamdır hocam.
+
+35
+00:08:01,443 --> 00:08:19,064
+Tamam. Devam ediyorum. Q-1'e kadar dedik. A'da doğal olarak 0, tamam. Q-1'e kadar olacak.
+
+36
+00:08:20,283 --> 00:08:29,943
+Şimdi bu kısım zaten bildiğiniz bir kısım. Daha BBG2'de görmeye başladınız. Bazen BBG1'de görmeye başladınız bir kısım.
+
+37
+00:08:29,943 --> 00:08:35,283
+İki tane sıralı diziyi birleştirme işi
+
+38
+00:08:40,755 --> 00:08:53,755
+Sınırları geçip geçmediğimizi kontrol etmemiz gerekiyor. Bunun için while i küçük p and j küçük q diyoruz, do diyoruz.
+
+39
+00:08:53,755 --> 00:09:00,755
+If diyoruz iki taraftaki elemanları kontrol edeceğiz.
+
+40
+00:09:08,692 --> 00:09:21,692
+bunun arkasından küçüklük olma durumuna bağlanarak B'yi AK'ya atadım ve doğal olarak İ'yi 1 arttırdım.
+
+41
+00:09:21,692 --> 00:09:42,151
+as kolunda bu sefer A, K'ya C, J'yi atalım ve J'yi 1 arttırdım. Çıktıktan sonra burada K'yı 1 arttırıyorum.
+
+42
+00:09:42,151 --> 00:09:51,151
+Sonunda hangisi tamamlandıysa geri kalanı kopyalıyorum.
+
+43
+00:09:51,791 --> 00:09:52,872
+Tamamlanmamışlarını.
+
+44
+00:09:53,872 --> 00:09:57,491
+İşte İP'ye eşitse o zaman C dizisi tamamlanmamış demektir.
+
+45
+00:09:57,491 --> 00:10:03,311
+O zaman C dizisini C'den Q-1'e gidecek kadar.
+
+46
+00:10:15,155 --> 00:10:17,155
+as, kesim, da kopi duro.
+
+47
+00:10:22,323 --> 00:10:23,403
+P'x1
+
+48
+00:10:23,403 --> 00:10:25,284
+2
+
+49
+00:10:29,556 --> 00:10:43,035
+P-A-T-Q-1'e kadar, karmaşık operasyonunu da yazmış oldun. Şimdi sırada bunun çözümlenmesi var. Şimdi bana kim bağıntıyı yazdırmak ister?
+
+50
+00:10:46,868 --> 00:10:55,868
+Yani Mersort'un büyüme derecesini bulmak istiyorum. Bunun için de rekürans bağlantısını yazmam gerekiyor.
+
+51
+00:11:31,508 --> 00:11:33,508
+Muhammed, shah, amir fida.
+
+52
+00:11:37,812 --> 00:11:39,812
+Muhammed Şamil Fidan.
+
+53
+00:11:41,911 --> 00:11:43,531
+Peki, derste yok.
+
+54
+00:11:50,035 --> 00:11:51,475
+Zülfü Korkmaz
+
+55
+00:11:55,827 --> 00:12:06,147
+Zülfü Korkmaz. Peki, derste yok. Ömer Faruk Cebeci.
+
+56
+00:12:07,827 --> 00:12:09,827
+Hocam? Evet.
+
+57
+00:12:11,827 --> 00:12:16,827
+Hangi şeye göre yapacağız hocam? Bu master teoremi göre?
+
+58
+00:12:16,827 --> 00:12:19,827
+Şu an master teorembden önce bağıntıyı yazmamız gerekiyor.
+
+59
+00:12:20,827 --> 00:12:22,827
+Rekürans bağıntısını.
+
+60
+00:12:24,827 --> 00:12:32,827
+Yani master teoremi olması ya da backward substitution kullanıyor olmamızın bir önemi yok. Önce rekürans bağıntısını yazmamız gerekiyor.
+
+61
+00:12:36,724 --> 00:12:37,923
+Bilmiyorum hocam.
+
+62
+00:12:39,424 --> 00:12:43,923
+Bir önceki derste aşağı yukarı ne olduğunu yazmıştık.
+
+63
+00:12:46,024 --> 00:12:51,224
+Neyle başlayacağız? Buradaki işlem nedir Basic Operation?
+
+64
+00:12:53,824 --> 00:12:58,923
+Burada kopyalama ya da atama diyeceğiz de bence...
+
+65
+00:12:58,923 --> 00:13:04,923
+Yok, burada derken Merge Sort'un genel algoritmasını yazdık ya bir önceki slide'da.
+
+66
+00:13:04,923 --> 00:13:05,923
+Evet.
+
+67
+00:13:05,923 --> 00:13:11,283
+Buna göre düşünmen lazım. Buradaki basic operation nedir?
+
+68
+00:13:17,427 --> 00:13:19,427
+Keep sure with that.
+
+69
+00:13:22,676 --> 00:13:37,075
+Ertuğrul. Merge işlemi hocam. Merge işlemi yerine bildiğimiz basic operasyonları kullansak,
+
+70
+00:13:39,059 --> 00:13:40,059
+İmam?
+
+71
+00:13:42,459 --> 00:13:45,059
+Hocam, ifm büyük türü bir mi acaba?
+
+72
+00:13:46,059 --> 00:13:58,059
+Evet, burada bir komparizm ifadesi var. Her seferinde bunu yapıyoruz. O yüzden komparizmle başlayacağız. O yüzden bağıntımızı cn olarak yazmakta herhangi bir sakınca yok. Şimdi ne gelecek?
+
+73
+00:14:01,059 --> 00:14:07,059
+Rekürans mağaltısında. Çok basit. Binary soruşlarını da hatırlayacağınız gibi.
+
+74
+00:14:12,500 --> 00:14:24,300
+Yani bu dersin amacı bunu yazabiliyor olmak ve bu yazdıktan sonra algoritmanın verimliliğini ve algoritmanın büyüme derecesini, karmaşıklığını hesaplamak. Yoksa Mörg's ortu size öğretmek değil.
+
+75
+00:14:27,299 --> 00:14:28,719
+Efe'ye söz vereyim.
+
+76
+00:14:30,979 --> 00:14:33,139
+Hocam, J-verse mu yazacağız?
+
+77
+00:14:34,639 --> 00:14:36,299
+J-verse yazmamıza gerek var mı?
+
+78
+00:14:37,760 --> 00:14:38,920
+Şu anlık yok, evet.
+
+79
+00:14:39,260 --> 00:14:40,019
+Neden yok peki?
+
+80
+00:14:40,019 --> 00:14:44,059
+Yani en başta yazabilirdik ama zaten C yaz
+
+81
+00:14:44,059 --> 00:14:45,279
+O yüzden değil
+
+82
+00:14:45,279 --> 00:14:48,559
+Hepsi eşit olduğu için sıralamıyorum
+
+83
+00:14:48,559 --> 00:14:49,239
+Aynen
+
+84
+00:14:49,239 --> 00:14:50,599
+Tamam
+
+85
+00:14:50,599 --> 00:14:51,899
+Tamam, okey
+
+86
+00:14:51,899 --> 00:14:54,219
+Şafağa söz vereyim o zaman
+
+87
+00:14:54,219 --> 00:15:02,019
+Şu an hocam 2CN bölü 2 yazacağız
+
+88
+00:15:02,019 --> 00:15:03,239
+Tamam, bir kere bunu yazalım
+
+89
+00:15:03,239 --> 00:15:07,019
+Neden 2CN bölü 2 kısaca açıklanır mısın?
+
+90
+00:15:07,020 --> 00:15:27,419
+teki benim sub problemumu gösteriyor. Her seferinde iki R'e şey yapıyorum, sub R'e bölüyorum hocam. Aynı zamanda da bu sub R'yi bir önceki R'in boyutunun iki yani. Bu her bir sub R'nin boyutu da ikiye bölünerek gittiği için A ve B'de iki oluyor.
+
+91
+00:15:27,419 --> 00:15:52,979
+Yani orasını biraz toparlayayım. 2'ye bölerek bu problemi ele alıyorum. Doğru. Bu n bölü 2'nin ikisine denk geliyor. Instanslarımı 2'ye bölmüş oluyorum. Baştaki 2'de bu 2 grubu da çözmeye devam ediyorum. 2 instance grubunu da 2'ye bölmeye ve onlarla uğraşmaya devam ediyorum. Eğer bu binary search olsaydı C'nin başındaki 2 1 olacaktı.
+
+92
+00:15:52,979 --> 00:15:57,179
+Evet, artına gelecek arkadaşlar FM fonksiyon olarak
+
+93
+00:15:57,179 --> 00:16:00,659
+Kim sorar?
+
+94
+00:16:07,923 --> 00:16:12,923
+fn fonksiyonun yerine ne gelecek? Hangi işi yapıyoruz birleştirmek için?
+
+95
+00:16:21,491 --> 00:16:21,991
+Her tool.
+
+96
+00:16:23,311 --> 00:16:24,691
+N-log-m mi olacak hocam?
+
+97
+00:16:25,631 --> 00:16:28,491
+Yok, hayır. Ben büyüme derecesini falan sormuyorum.
+
+98
+00:16:29,811 --> 00:16:33,991
+Ben artı fn fonksiyonu için ne yazmamız gerekiyor? Hangi işi yapıyoruz?
+
+99
+00:16:40,692 --> 00:16:42,692
+c merge n
+
+100
+00:16:42,692 --> 00:16:51,211
+Niye? Çünkü merge yaptığımız bir fonksiyonumuz var.
+
+101
+00:16:52,131 --> 00:16:54,991
+Ve input aldığı input sayısındadır n tane input alıyor.
+
+102
+00:16:56,351 --> 00:17:00,731
+Burada for n büyüktür bir diyoruz.
+
+103
+00:17:01,051 --> 00:17:02,591
+Initial condition'ımıza geldik.
+
+104
+00:17:03,032 --> 00:17:04,271
+Initial condition'ımız ne olacak?
+
+105
+00:17:04,271 --> 00:17:06,271
+Evet.
+
+106
+00:17:08,564 --> 00:17:38,243
+Rabia Güleç. Buradayım hocam. Evet, ne olacak initial condition? Hangi noktada duracağım? Bir olana kadar. Güzel. Kaç olacak? Bir eleman kaldığında. Bir eleman kaldığında artık bir karşılaştırma yapmama gerek yok. Evet. O yüzden şu durum. Pardon, pardon. Doğru.
+
+107
+00:17:38,564 --> 00:17:40,023
+Peki, teşekkür ederim
+
+108
+00:17:40,023 --> 00:17:50,084
+Şimdi bunu genel olarak böyle yazdık ama genel olarak yazdıktan sonra worst case için hesaplıyorum şu anda
+
+109
+00:17:50,084 --> 00:17:56,203
+Bunun worst case için hesaplama sebebim de merge tarafının worst case'ini hesaplıyor olma
+
+110
+00:17:56,203 --> 00:18:05,183
+Yani genel bağıntıyı yukarıdaki gibi yazdım ama ikiye bölmede herhangi bir worst case olmasına rağmen
+
+111
+00:18:05,183 --> 00:18:19,823
+yani merge tarafında bir worst gecik durumu söz konusu. O yüzden C, worst, and diyorum. Buraya 2, C, worst, and böyle 2 diyorum. Şimdi buraya ne diyeceğim? C, merge kısmına.
+
+112
+00:18:28,051 --> 00:18:34,051
+Yani iki tane ereği birleştirdiğinizi düşünün.
+
+113
+00:18:42,355 --> 00:18:54,975
+Buradaki en kötü durum senaryosunda CM3 işleminin nasıl ifade edilmesi gerekiyor? Kaç tane işlem yapacağım?
+
+114
+00:18:59,508 --> 00:19:01,508
+karşılaştırma yapıyorsunuz.
+
+115
+00:19:01,508 --> 00:19:03,508
+Ersin tabi.
+
+116
+00:19:03,508 --> 00:19:05,508
+En tane.
+
+117
+00:19:05,508 --> 00:19:06,508
+Sercan.
+
+118
+00:19:06,508 --> 00:19:07,508
+Sercan mı dediniz?
+
+119
+00:19:07,508 --> 00:19:08,508
+Evet.
+
+120
+00:19:08,508 --> 00:19:18,508
+Hocam ben Vile'e QXP kadar girdiğimiz için öyle düşündüm ama, yani First Case'de Vile'ın tamamına kadar gireceğimiz için öyle saymayacağız mı?
+
+121
+00:19:18,508 --> 00:19:24,508
+Şöyle, dizinin bütünüyle yapmalıyız bunu. Dizinin bütününde en tane eleman var.
+
+122
+00:19:24,508 --> 00:19:47,408
+Bu en tane elemanı ikiye böldüğünüzde birbiriyle karşılaştırmak istiyorsunuz. Şöyle ifade edelim. Nasıl olsun? Bir saniye. 8, 3, 2, 9, 7, 1, 5, 4 olsun. Bunu ikiye böldüğünüzü varsayın.
+
+123
+00:19:47,407 --> 00:20:03,407
+Bu ikiye böldükten sonraki bu iki grubu birbiriyle sıralı bir şekilde yerleştirmek istediğinizde, merge etmek istediğinizde ki bunlar şu anda sıralı değil, şöyle olsaydı, 2, 3, 8, 9 olsaydı, 1, 4, 5, 7 olsaydı
+
+124
+00:20:03,407 --> 00:20:09,167
+Bu grupta en fazla, en kötü durumda kaç karşılaştırma yapmanız gerekecekti? Bunu soruyorum.
+
+125
+00:20:09,167 --> 00:20:27,107
+Bu da her iki gruptan da her seferinde birer eleman almanız anlamına geliyor. Bu da iki grubun birleştiğinde en eksi birlik bir en kötü durumda karşılaştırmadan geçmesi gerektiğini söylüyor.
+
+126
+00:20:27,927 --> 00:20:32,547
+Tekrar ediyorum. Siz şuradaki örneği silip yeni bir örnek vereyim.
+
+127
+00:20:32,548 --> 00:20:40,588
+Örneğin 2, 4, 6, 8, 1, 3, 5, 7'yi birleştirmek isteseydiniz
+
+128
+00:20:40,588 --> 00:20:44,567
+Önce 1 ile 2'yi karşılaştıracaktınız bir karşılaştırma
+
+129
+00:20:44,567 --> 00:20:54,088
+Sonra 2 ile 3'ü, sonra 3 ile 4'ü, sonra 4 ile 5'i, sonra 5 ile 6'ı, sonra 6 ile 7'yi, sonra 7 ile 8'i karşılaştıracaktınız
+
+130
+00:20:54,088 --> 00:20:59,128
+En kötü durumda Mert işleminde her iki taraflı da karşılaştıracaktınız
+
+131
+00:20:59,128 --> 00:21:02,207
+Ama şöyle bir şey olsaydı, bunun iyi durum senaryosu da var
+
+132
+00:21:02,207 --> 00:21:23,987
+1, 5, 10, 100 olsun. Bu tarafta da 1, 2, 3, 4 olsun. Böyle baktığınızda 1, 2, 3, 4 yaptığınızda 1, 2, 3, 4 yerleştirdikten sonra geri kalan 5'ten sonraki kısımlar otomatik olarak öbür tarafa kopyalanıyor olacak. O yüzden en eksi bir tane bir karmaşıklığa ihtiyacınız olmayacak.
+
+133
+00:21:23,987 --> 00:21:27,448
+Şimdi şunu sileyim
+
+134
+00:21:27,448 --> 00:21:34,107
+Buradan baktığımızda tekrar şöyle başka bir renkle gösterelim
+
+135
+00:21:34,107 --> 00:21:48,847
+Birinci karşılaştırma, ikinci karşılaştırma, üçüncü, dördüncü, beşinci, altıncı ve yedinci karşılaştırma sonunda elemanları yerleştirmiş oluyorsunuz
+
+136
+00:21:48,847 --> 00:22:11,527
+Bu da en eksi bir tane karşılaştırma işlemi yaptığınızı gösteriyor. Peki, şimdi artık bağıntımız var. Bunu isterseniz backward substitution ile çözersiniz, isterseniz master teoremi ile çözersiniz, divide and compute problemi olduğu için. Peki, master teoremi ile çözseydik A kaç olacaktı? Kim sormak ister?
+
+137
+00:22:15,700 --> 00:22:16,260
+Caza?
+
+138
+00:22:18,359 --> 00:22:20,299
+2, A2.
+
+139
+00:22:20,779 --> 00:22:22,200
+B kaç olacak Caza?
+
+140
+00:22:22,819 --> 00:22:23,119
+2.
+
+141
+00:22:23,839 --> 00:22:24,279
+D?
+
+142
+00:22:25,160 --> 00:22:25,479
+1.
+
+143
+00:22:25,939 --> 00:22:27,519
+1. Neden D1?
+
+144
+00:22:28,160 --> 00:22:33,720
+Çünkü en son kısmı N-1, N'in üzeri 1 olduğunu yazıyor.
+
+145
+00:22:33,720 --> 00:22:35,960
+Evet, aynen. Teşekkür ediyorum.
+
+146
+00:22:36,559 --> 00:22:36,960
+Rica ederim.
+
+147
+00:22:36,960 --> 00:22:45,359
+Şimdi buradan yola çıkarak biz formülümüz üzerinden gidecek olursak, bana kim yazdırmak ister koşulu?
+
+148
+00:22:45,700 --> 00:22:47,040
+sizin önünüzde vardır.
+
+149
+00:22:55,380 --> 00:22:56,539
+Başka bir kişi olsun.
+
+150
+00:22:59,679 --> 00:23:00,760
+Evet, Efe.
+
+151
+00:23:02,979 --> 00:23:10,300
+Hocam, B üzeri D olduğu için M.
+
+152
+00:23:11,019 --> 00:23:12,739
+Yani eşit, doğru mu?
+
+153
+00:23:12,739 --> 00:23:13,439
+Evet, eşit.
+
+154
+00:23:13,939 --> 00:23:19,380
+O zaman formülden ne geliyor? Theta, E, D, log N.
+
+155
+00:23:19,859 --> 00:23:20,179
+Evet.
+
+156
+00:23:21,459 --> 00:23:24,619
+Buradan yola çıktığımızda da D kaçtı? 1'di.
+
+157
+00:23:24,619 --> 00:23:53,240
+en üzeri bir log n. Yani biz sonuçta merge sort için elementler and log n diyoruz. Evet, merge sortun karmaşıklığını, büyüme derecesini analiz ederek, rekürans bağlantısını yazarak bulmuş olduk. Buraya kadar sorusu olan var mı? Sorunuz varsa lütfen sormaktan çekinmeyin.
+
+158
+00:23:53,240 --> 00:23:54,440
+Huma
+
+159
+00:23:54,440 --> 00:23:59,019
+Can, ben FN'i nasıl bulduğumuzu anlayamadım tam olarak
+
+160
+00:23:59,019 --> 00:24:02,240
+Kim söylemek ister yeniden bu kısmı?
+
+161
+00:24:04,240 --> 00:24:05,380
+FN'i nasıl bulduk?
+
+162
+00:24:06,360 --> 00:24:08,740
+Bizim için FN kısmı burası
+
+163
+00:24:08,740 --> 00:24:12,719
+Evet, kim söylemek ister?
+
+164
+00:24:17,460 --> 00:24:18,080
+Orkun?
+
+165
+00:24:20,659 --> 00:24:37,640
+Hocam, bizim basic işlemimiz olarak if işlemini almıştık. Biz kontrol ettiğimiz değerleri saymaya çalışıyoruz. En kötü durumda bizim elimizdeki değerlerin hepsi, sonuncusu hariç olmak üzere, hepsini sürekli birbiriyle karşılaştırmak zorunda kalacağız.
+
+166
+00:24:38,579 --> 00:24:45,399
+En bölü iki değeri karşı taraftaki en bölü iki değerle sürekli karşılaştırmak zorunda kalacağız. Vaya sürekli dönmek zorunda kalacak.
+
+167
+00:24:45,399 --> 00:24:53,960
+eksi bir olmasının sebebi de bizim herhangi bir tane dizinin sonuna geldiğimizde çıkıp geri kalanını kopyalıyor olmamız.
+
+168
+00:24:54,679 --> 00:25:03,199
+Tamam, elimizde o kaldı için. Teşekkür ediyorum. Peki bu fn fonksiyonunu merge fonksiyonundan elde etme şeklimizdi.
+
+169
+00:25:03,199 --> 00:25:09,099
+Yani niye verse case'de n-1 tane karşılaştırma yapıyoruz'un cevabıydı.
+
+170
+00:25:09,099 --> 00:25:29,519
+Fn'imiz n-1 olduğunda D neden 1 oluyor? Çünkü n üzeri 1. Biraz önce sabit bir sayı vardı, 1'di, o zaman n üzeri 0 demiştik. Şimdi n üzeri 1 olduğu için tabii ki eksi 1 kısmı düşüyor, onunla ilgilenmiyoruz, büyük dereceyle olan kısmı alıyoruz. O yüzden de D'yi 1 seçiyoruz. Hüme anlaşıldı mı?
+
+171
+00:25:30,579 --> 00:25:32,019
+Anlaşıldı hocam, teşekkürler.
+
+172
+00:25:32,019 --> 00:25:36,199
+Rica ederim. Başka sorusu olan Sercan bir şey sormak istiyordu.
+
+173
+00:25:36,199 --> 00:25:49,359
+Hocam şey söyleyeceğim ben. Normalde biz sort yapacağımızda bir dizinin en kötü halinin tersten sıralı olduğunu söyleriz ya. Bu merge için geçerli değil mi? Mesela biz diziyi sıralamak istiyoruz.
+
+174
+00:25:49,359 --> 00:25:55,639
+Güzel bir soru. Teşekkür ederim Sarpcığım. Söylediğini anladım. Başka ekleyeceğim bir şey var mı bu soruya?
+
+175
+00:25:56,939 --> 00:25:57,659
+Yok hocam.
+
+176
+00:25:58,139 --> 00:26:05,820
+Tamam. Şimdi biz burada worst case'den bahsederken merge operation'ın worst case'inden bahsediyoruz.
+
+177
+00:26:06,199 --> 00:26:25,139
+Merge Sort'un Sort kısmının verse case'inden bahsetmiyoruz. Ama en-1'i anlatırken ben bunu kullandım. Aşağıda şurada göstereyim. Şu kısımda anlatmaya çalıştığım en-1 adım kısmı işin merge operation'i yapılırken ki verse case'inde oluşabilecek adım sayısıydı.
+
+178
+00:26:25,140 --> 00:26:35,999
+Ama elimizdeki elemanların dizilimine bağlı olarak n bölü iki tane karşılaştırma yapıp geri kalanları otomatik olarak kopyalayabilirim
+
+179
+00:26:35,999 --> 00:26:40,200
+O zaman burası yukarıda gördüğünüz nokta n bölü iki olur
+
+180
+00:26:40,200 --> 00:26:44,439
+Ama ben buranın verse case'inin peşinde olduğum için böyle bir örnek verdim
+
+181
+00:26:44,439 --> 00:26:48,400
+Burada merge sort işleminin verse case'ini anlatmıyorum, vurgulamıyorum
+
+182
+00:26:48,400 --> 00:26:53,340
+Anlaşıldı, anlaşıldı hocam
+
+183
+00:26:53,340 --> 00:26:54,099
+Okey değil mi?
+
+184
+00:26:55,139 --> 00:27:11,439
+Yoksa senin söylediğin gibi WorldSort'ta da, Quicksort'ta da konuşacağız. Bir sortun en kötü durum senaryosu genellikle dizinin tersten sıralı bir şekilde verilmiş olmasıdır. Sıralamak istediğimiz yönün tersi şekilde.
+
+185
+00:27:11,439 --> 00:27:24,079
+Peki o zaman burada başka... Tabi bunu Backward Substitution'da da çözebileceğinizi unutmayın. Bu önemli bir nokta.
+
+186
+00:27:25,139 --> 00:27:35,799
+Bu arada Mertzort teorik olarak teorik minimuma en yakın sort algoritmasıdır.
+
+187
+00:27:36,659 --> 00:27:45,979
+Yani bir evvel teorik minimumda, endogende söylesek de average case'de o kadar bir adım sayısı yapmıyoruz.
+
+188
+00:27:46,079 --> 00:27:53,079
+Biraz daha fazla adım sayısı yapıyoruz ama teoriye en yakın Mertzort algoritmasını söyleyebiliriz.
+
+189
+00:27:53,079 --> 00:27:54,559
+Gelelim QuickSort'tan.
+
+190
+00:28:06,963 --> 00:28:12,463
+Evet, QuickSol'taki çalışma prensibini şöyle sizce bir hatırlayalım.
+
+191
+00:28:18,003 --> 00:28:22,404
+A-04.
+
+192
+00:28:58,036 --> 00:29:03,595
+Evet, buradaki QuickSword'taki temel mantık nedir? Hızlıca kim hatırlatmak ister?
+
+193
+00:29:15,763 --> 00:29:16,843
+Efe'ye söz vereyim.
+
+194
+00:29:18,783 --> 00:29:21,583
+Hocam ilk önce dizide bir tane eleman seçiyorduk.
+
+195
+00:29:22,483 --> 00:29:22,863
+Evet.
+
+196
+00:29:22,863 --> 00:29:30,863
+O elemanın, elemandan büyük olan elemanları, elemanları onun sağ tarafına, küçük olanları sol tarafına yerleştiriyorduk.
+
+197
+00:29:31,303 --> 00:29:31,583
+Evet.
+
+198
+00:29:32,903 --> 00:29:37,563
+Ondan sonra böldüğümüz her iki tarafta da yine ayrı eleman seçiyorduk.
+
+199
+00:29:37,563 --> 00:29:49,304
+onları da aynı şekilde yerleştirerek yani büyüklerini sağ küçüklerini sola bölüyorduk parçaları en son bir tane eleman kalana kadardı.
+
+200
+00:29:50,523 --> 00:29:54,624
+Ondan sonra da tek tek yerleştiriyorduk sıralı bir şekilde.
+
+201
+00:29:54,624 --> 00:29:59,783
+Çok doğru. Teşekkür ediyorum. Genel konsepti özetledin.
+
+202
+00:30:00,383 --> 00:30:03,183
+Şimdi bizim burada bir pivot elemana ihtiyacımız var.
+
+203
+00:30:03,183 --> 00:30:14,723
+pivot elemandan küçük olanları başa küçükten büyüye sıralıyorsak pivot elemandan büyük olanları da sona gidecek şekilde planlıyoruz.
+
+204
+00:30:14,723 --> 00:30:20,143
+Şimdi bunun için soldan ve sağdan birer indiz başlatıyoruz.
+
+205
+00:30:21,023 --> 00:30:22,923
+I ve J olduğunu varsayın.
+
+206
+00:30:22,923 --> 00:30:34,923
+Şu anda soldan sağa doğru ilerlerken bizim hedefimiz pivot elemandan daha büyük bir eleman bulmak ki ilk gördüğümüz yer 9
+
+207
+00:30:34,923 --> 00:30:41,223
+Sağdan sola ilerlerken de pivot elemandan daha küçük bir eleman bulmak o da 4
+
+208
+00:30:41,223 --> 00:30:49,043
+Bulduğunuz zaman ilerleme esnasında yaptığınız şey bunların yerlerini değiştirmek
+
+209
+00:30:49,043 --> 00:30:52,423
+4 buraya gelecek 9 buraya gelecek şekilde
+
+210
+00:30:52,423 --> 00:30:58,743
+İ ve J birbirlerinden büyük ve küçük oldukları sürece ilerlemeye devam ediyorsunuz.
+
+211
+00:30:59,623 --> 00:31:04,563
+Bir sonraki adımda 2 ile karşılaşıyorsunuz. 5'ten küçük, 8 ile karşılaşıyorsunuz.
+
+212
+00:31:04,883 --> 00:31:07,923
+5'ten büyük, bunların da yerlerini değiştiriyorsunuz.
+
+213
+00:31:07,923 --> 00:31:16,923
+En son olarak da İ ve J birbirine eşit olduğu takdirde ya da yerleri küçük büyük durumların değiştiği takdirde
+
+214
+00:31:16,923 --> 00:31:30,023
+2'yi başa alıyorsunuz. 3, 1, 4, 2'nin yerine 5'i koyuyorsunuz. 8, 9 ve 7 şeklinde yerleşmiş oluyor.
+
+215
+00:31:30,023 --> 00:31:37,543
+Bu sayede bir turda aslında iki tane en az elemanın yerini değiştirme şansına sahipsiniz.
+
+216
+00:31:37,543 --> 00:31:58,624
+Çünkü küçük olanı soldan başa doğru taşıyorsunuz. Büyük olanı da baştan sona doğru ikisiyle yer değiştirerek bir anda çok daha hızlı bir şekilde ilerleme kaydediyorsunuz. Peki şimdi gelelim bunun algoritmasına.
+
+217
+00:31:58,624 --> 00:32:16,663
+tabi burada bir pisoda kod vereceğim. Merge Sort'tan farkı neydi? Quick Sort'ta bölme işlemi sırasında aslında efor harcıyoruz. Birleştirme işlemi görece daha basit. Merge Sort'ta ise tam tersiydi.
+
+218
+00:32:16,663 --> 00:32:25,624
+birini ayırırken belirli bir prensibe göre ikiye bölüyorduk, hiçbir iş yapmıyorduk ama birleştirirken bir merge operasyonumuz vardı.
+
+219
+00:32:25,743 --> 00:32:32,523
+Burada fn fonksiyonunu quicksort'un ilk kısmı belirliyor olacak.
+
+220
+00:32:32,743 --> 00:32:36,343
+Şimdi öncelikle quicksort'un psodokodunu bir yazalım.
+
+221
+00:33:14,003 --> 00:33:16,464
+Hocam, şu an konuşuyorsanız hiç ses gelmiyor.
+
+222
+00:33:18,563 --> 00:33:20,903
+Hayır, konuşmuyorum şu anda. Sadece yazıyorum.
+
+223
+00:33:23,443 --> 00:33:24,924
+Tamamdır hocam. Bir teyit edeyim de.
+
+224
+00:33:47,188 --> 00:34:16,787
+Evet, buradaki koşul ne olacak? If L küçük R olduğu sürece burada bu rekürsif algoritmaya devam edeceğiz. Ve her seferinde kendi içerisinde alt problemleri sayıların yerlerini değiştirerek en aşağıya doğru ilerletiyor olacağız. Ve her adımda pivot elemanı olması gerektiği yere yerleştiriyor olacağız.
+
+225
+00:34:16,787 --> 00:34:25,307
+ve bölme işlemini de ortadan değil, ilgili pozisyondan gerçekleştirmiş olacağız.
+
+226
+00:34:25,527 --> 00:34:29,467
+S'in bulunduğu pozisyondan gerçekleştirmiş olacağız.
+
+227
+00:34:29,467 --> 00:34:34,067
+Bunun için tabii bu partitioning çeşitli algoritmalar var.
+
+228
+00:34:34,987 --> 00:34:39,188
+Bu algoritmalar birbirlerine göre artı ve eksiyonlar barındırıyorlar.
+
+229
+00:34:39,347 --> 00:34:43,747
+Biz Huare'nin algoritmasını implemente edeceğiz.
+
+230
+00:34:44,427 --> 00:34:45,767
+Hemen onu yazalım.
+
+231
+00:34:55,923 --> 00:35:17,583
+L'den R'ye kadar olan kısmı gönderiyoruz. Pivot elemanıma A, L diyorum. Pivotumu ilk eleman olarak seçtim, dizemin ilk elemanı olarak ama farklı yaklaşımlar uygulayabilirim algoritmanın efficiency'sini arttırmak için. Birazdan bunu soruyor olacağım sizlere.
+
+232
+00:36:30,195 --> 00:36:46,195
+Evet arkadaşlar, şimdi partitioning algoritmasını yazdım. Burada tamamlamamız gereken kısımlar var. Birlikte tamamlayalım. İlk repeat until'in until koşulu ne olması gerekiyor?
+
+233
+00:36:52,755 --> 00:36:53,755
+Enes?
+
+234
+00:36:53,755 --> 00:36:57,755
+İ'nin J'den büyük olması.
+
+235
+00:36:57,755 --> 00:37:02,755
+İ'nin J'den büyük olması değil.
+
+236
+00:37:05,715 --> 00:37:17,715
+Hani biraz önce sayı, pivot'a göre aradığım sayı soldaysa, şöyle sağdaysa böyle olmadı demiştim. Evet farklı bir arkadaşımız.
+
+237
+00:37:21,427 --> 00:37:22,347
+Alper Reha
+
+238
+00:37:22,347 --> 00:37:27,607
+Hocam bu algoritmayı bilmiyorum maalesef. Cevap veremeyeceğim bu soruyu.
+
+239
+00:37:28,388 --> 00:37:29,607
+Yani hatırlamıyorum.
+
+240
+00:37:30,167 --> 00:37:32,607
+Hatırlaman önemli değil. Burada yazıyor.
+
+241
+00:37:33,247 --> 00:37:35,087
+Quick-Sort için mi?
+
+242
+00:37:37,147 --> 00:37:44,307
+Quick-Sort'un bir parçası olan partitioning işlemini yaptığınız kısmı konuşuyoruz.
+
+243
+00:37:44,367 --> 00:37:50,827
+Hore partitioningi bilmek zorunda değilsin. Sadece biraz önce gösterdiğim adımları istinadadan tahmin edebilirsiniz.
+
+244
+00:37:50,827 --> 00:38:08,887
+Biz beşten olanları sola, beşten büyük olanları, beşten sağına koyuyoruz. Evet. O zaman i'yi soldan arttırıyoruz. Antil ne zamana kadar? Ne görene kadar?
+
+245
+00:38:08,887 --> 00:38:21,867
+Bu seçtiğimiz sayının indeksi soldan seçtiğimiz i'den eşit olduğu zamanda veya büyük olduğu zamanda. O zamana kadar devam etmesi lazım.
+
+246
+00:38:21,947 --> 00:38:32,767
+Primotumun değerinden daha büyük bir sayı arıyorum soldan ilerlerken. Kim söylemek ister? Peki, servet.
+
+247
+00:38:33,267 --> 00:38:37,587
+Hocam, a, i'nin p'den küçük olduğu durumda i sürekli artacak.
+
+248
+00:38:37,587 --> 00:38:51,847
+A, İ'nin P'den küçük olduğunda demeyelim de antil dediğimiz için tersini yazalım. Yani A, İ, P'den büyük ya da eşit olana kadar devam edeceğiz. Peki aşağıya ne yazacağız?
+
+249
+00:38:53,987 --> 00:38:57,947
+A, J küçüktür P galiba.
+
+250
+00:38:58,507 --> 00:39:06,027
+A, J küçük eşit P diyeceğiz. Doğru. Peki hemen altındaki satıra ne yazacağız arkadaşlar?
+
+251
+00:39:07,587 --> 00:39:12,467
+İkisini de bulduk. P'den büyük olanı ve P'den küçük olanı. Ne yapacağız?
+
+252
+00:39:20,628 --> 00:39:22,628
+Hani burada bulduğumuzda ne yapıyorduk?
+
+253
+00:39:22,628 --> 00:39:25,628
+Ertuğrul
+
+254
+00:39:30,420 --> 00:39:30,879
+Artur.
+
+255
+00:39:30,959 --> 00:39:32,040
+Sıfır yapacağız hocam.
+
+256
+00:39:32,679 --> 00:39:33,120
+Sıfır.
+
+257
+00:39:33,959 --> 00:39:34,259
+Güzel.
+
+258
+00:39:36,099 --> 00:39:36,979
+Ailen, Aji.
+
+259
+00:39:43,155 --> 00:40:04,455
+yaptık. Antil ne zaman ne kadar bu devam edecek? İ küçüktür, j iken yapacağız yani, j'yi geçmeyecek. Büyük eşit j olduğu süreli devam edeceğiz. Evet. Ya da while ilk tam tersini söyleyebiliriz. Aynen öyle senin söylediğin gibi. Son olarak, son adımda ne yapmamız gerekiyor?
+
+260
+00:40:08,403 --> 00:40:12,243
+Pivot'la yer değiştireceğiz onu. Pivot'un yeri neydi?
+
+261
+00:40:14,943 --> 00:40:19,963
+Saklanmıştık yukarıda. Eğdi herhalde. Yok, yeri yeri.
+
+262
+00:40:21,963 --> 00:40:24,783
+Pivot'un yeri. Yukarıda sakladık.
+
+263
+00:40:26,164 --> 00:40:26,504
+Gözüyor.
+
+264
+00:40:31,143 --> 00:40:34,923
+Biri el kaldırdı, göremedim. Bir daha el kaldırabilir mi? Enes.
+
+265
+00:40:34,923 --> 00:40:59,123
+A-L. Evet A-L. A-L ile A-J'yi en sonunda değiştiriyor olacağız. Evet bu da parti şirik işlemini gerçekleştirdiğimiz algoritma hem yerlerini değiştiriyoruz hem de hangi noktadan itibaren parti şirik yapacağımızı belirlemiş oluyoruz.
+
+266
+00:40:59,123 --> 00:41:07,023
+yani iyileceğinin buluştuğu noktayı bulmuş oluyoruz. Şimdi burada analiz kısmına geçiyorum.
+
+267
+00:41:11,476 --> 00:41:19,476
+gms yazıyor, n diyorum, ne yazıyor?
+
+268
+00:41:22,579 --> 00:41:24,579
+İlk kısmı kolay, kim söylemek ister?
+
+269
+00:41:34,387 --> 00:41:35,387
+Evet.
+
+270
+00:41:38,804 --> 00:42:05,644
+Orkun? Bizim base case'imizde dizi zaten sıralı olur. Biz de bütün elemanların üzerinden birer defa geçeriz. N diye düşünüyorum ben. Ama başlangıcı söylemedin teoremin. Ha, initial değil mi? Pardon. Aynen, initial değil. Teoremin kendi yani bizim QuickSort'a ait olan rekürsif bağlantıyı yazarken kullandığımız başında kullandığımız yapı var. Master teorem için gerekli olur.
+
+271
+00:42:05,644 --> 00:42:33,603
+Ben yazayım. Evet, üzgünüm. Evet, ben de üzgünüm. Sadece senin adına değil, kimsenin söylememiş olduğu için. Bu kısmı zaten otomatik olarak yazıyorsunuz. Çünkü problemi ikiye bölerek ve her iki tarafı çözdüğünüz için böyle yazdınız. Peki, artı FM fonksiyonumuz ne olacak? Tekrar söyler misin? Biraz önce söylemiştim Orkun.
+
+272
+00:42:35,644 --> 00:42:42,184
+Birer defa üzerinden geçiyoruz. Bir tık daha açarsan çok memnun olacağım.
+
+273
+00:42:45,003 --> 00:42:47,164
+Az önce söyledim mi baştan şey söyleyeyim.
+
+274
+00:42:47,524 --> 00:42:47,804
+Söyle.
+
+275
+00:42:49,363 --> 00:42:59,324
+Bizim elimizdeki en iyi durumda bütün elemanlar sıralı olmuş oluyor. Biz de bütün dizinin üzerinden sadece bir defa geçiyoruz. Sadece bir tane döngü yapıyoruz ve en defa geçiyoruz.
+
+276
+00:43:00,763 --> 00:43:02,244
+Bence böyle değil.
+
+277
+00:43:03,443 --> 00:43:03,683
+Tamam.
+
+278
+00:43:04,524 --> 00:43:05,443
+Ama teşekkür ederim.
+
+279
+00:43:05,643 --> 00:43:08,783
+Yani en iyi durum senaryosunu doğru ifade edebilik Yasir
+
+280
+00:43:08,783 --> 00:43:14,683
+Hocam n değil de Theta n olmayacak mı orada?
+
+281
+00:43:16,304 --> 00:43:19,643
+Yok hayır burası şu anda şöyle söyleyeyim
+
+282
+00:43:20,223 --> 00:43:23,763
+Burası fm fonksiyonu
+
+283
+00:43:23,763 --> 00:43:28,523
+Bu fm fonksiyonu yerine arkadaşınız n'yi yazmamız gerektiğini söyledi
+
+284
+00:43:28,523 --> 00:43:31,903
+Neden n'ye yazmamız gerekiyor diye soruyorum bütün sınıfa
+
+285
+00:43:46,452 --> 00:43:47,751
+Evet Yasir.
+
+286
+00:43:48,892 --> 00:43:59,151
+Hocam şey, neyi nedeni öyle diyoruz? Bence şey, pivot, orta bir eleman alsak diye, beş kez senaryo olmayacak mı yani?
+
+287
+00:44:00,251 --> 00:44:01,551
+Pivot alsak?
+
+288
+00:44:02,251 --> 00:44:04,972
+Yani orta bir eleman alsak, pivot olarak yani.
+
+289
+00:44:05,292 --> 00:44:05,571
+Evet.
+
+290
+00:44:06,792 --> 00:44:09,931
+İşte beş kez senaryo çıkmaz mı öyle yani işte? Anlatamıyorum.
+
+291
+00:44:09,931 --> 00:44:14,611
+Bunun ne demek olduğunu anlatabilir miyiz? Yani beş diyelim şuraya.
+
+292
+00:44:14,611 --> 00:44:27,331
+örnek veriyorum. Burada elemanın sağa bu tarafa doğru giderken, soldan sağa doğru ilerlerken bizim amacımız büyük sayıları öbür tarafa atmak. Doğru mu?
+
+293
+00:44:28,391 --> 00:44:28,652
+Tabii.
+
+294
+00:44:28,652 --> 00:44:40,931
+Tamam. O zaman böyle düşündüğünüzde de 4-3-2-1 diyebilirsiniz. Şimdi 1 ile 9'un yeri değişecek. 2 ile 8'in yeri değişecek.
+
+295
+00:44:47,315 --> 00:45:12,875
+Bu şekilde 3 ile 7'nin yeri değişecek ve en son 4 ile 6'nın yeri değişecek. Yaptığınız karşılaştırma sayısı ne kadar oluyor? En adet karşılaştırma yapıyorsunuz bu değişimi yaparken. Best case'de en adet karşılaştırma yapıyorsunuz. Ama best case olmasaydı, ortada buluşamasaydınız sizin dizinizin soluna ya da sağına doğru da ilerlemeniz gerekecekti. Hepsiyle karşılaştırmanız gerekecekti.
+
+296
+00:45:12,875 --> 00:45:18,375
+O zaman best case'den daha fazla bir karşılaştırma gerekiyordu ki onu worst case'de göreceğiz
+
+297
+00:45:18,375 --> 00:45:24,575
+Bu gördüğünüz best case yani her iki taraftan da ilerlerken yer değiştirerek ilerliyorsunuz
+
+298
+00:45:24,575 --> 00:45:29,255
+Bu da en defa karşılaştırma size imkanı sağlamış oluyor
+
+299
+00:45:29,255 --> 00:45:34,875
+Şimdi buradan yana çıkarak hem sağdan hem soldan karşılaştırdığınız için
+
+300
+00:45:34,875 --> 00:45:37,875
+M bölü 2, M bölü 2 daha toplamda N diyor arkadaşlar
+
+301
+00:45:37,875 --> 00:45:41,235
+Buradan size şuradaki değeri sinelim
+
+302
+00:45:41,235 --> 00:45:45,235
+F-N en olarak geliyor.
+
+303
+00:45:46,855 --> 00:45:51,475
+A-2, B-2, D-1.
+
+304
+00:45:52,375 --> 00:45:53,496
+Buradan ne çıkıyor arkadaşlar?
+
+305
+00:45:54,715 --> 00:45:55,735
+Master theorem'dan.
+
+306
+00:45:56,935 --> 00:45:57,695
+C-Best.
+
+307
+00:45:58,615 --> 00:45:59,215
+N-Log-N.
+
+308
+00:45:59,215 --> 00:46:00,715
+N-Log-N çıkıyor.
+
+309
+00:46:05,780 --> 00:46:08,299
+Evet. Buraya kadar soru sorun var mı?
+
+310
+00:46:11,039 --> 00:46:14,459
+Hocam ben A'nın neden 2 olduğunu tam anlayamadım.
+
+311
+00:46:15,459 --> 00:46:34,439
+A'nın neden 2 olduğunu. Ben pivot elemana göre 2'ye bölüyorum sayı grubumu. Instance sayıları her turda eşit olmak zorunda değil burada. Ama her iki grubu da çözmeye devam ediyorum.
+
+312
+00:46:35,780 --> 00:46:51,280
+Yani ben çözdüğüm sayıyı A olarak yazıyorum. Binary Search'te A'yı bir yazmıştım çünkü ikiye bölmeme rağmen bir grupta ilgilenmiyordum. Başka soru var mı?
+
+313
+00:46:57,652 --> 00:47:19,011
+Evet, şimdi 50 dakikayı bulduk ya da 45 dakikayı yaklaşık olarak. C-verse case'i henüz yapmadık. C-verse case'i bu hafta yapmayacağım. Çünkü bu hafta gördüğüm kadarıyla katılımda mevcut yüksek olmasına rağmen çok yüksektir. Derse katkıda bulunanlara tekrar çok tek tek teşekkür ediyorum.
+
+314
+00:47:19,011 --> 00:47:22,411
+önümüzdeki hafta worst case'i de çözeceğiz.
+
+315
+00:47:23,151 --> 00:47:24,911
+Average case'in formülünü yazacağız.
+
+316
+00:47:24,911 --> 00:47:32,991
+Ve divide and concur'daki temel iki problemin analizini tamamlamış olacağız.
+
+317
+00:47:33,711 --> 00:47:37,491
+Ondan sonra bir tane örnek bir uygulama sorusu çözeceğiz.
+
+318
+00:47:38,111 --> 00:47:44,571
+Ve asıl haftaya hash algoritmalarına, hashing konusuna geçiyor olacağız.
+
+319
+00:47:44,711 --> 00:47:45,931
+Ve oradan devam ediyor olacağız.
+
+320
+00:47:46,471 --> 00:47:47,711
+Şimdi tekrar sorayım.
+
+321
+00:47:47,711 --> 00:47:51,231
+bugünkü anlattıklarımla ilgili soru sormak isteyen var mı?
+
+322
+00:47:53,231 --> 00:47:55,571
+Ki bu algoritmaların detayını çok anlatmıyoruz.
+
+323
+00:47:55,711 --> 00:48:00,191
+Çünkü Merge Sort'u ve Quick Sort'u daha önce veri yapıları dersinde anlatmıştık.
+
+324
+00:48:05,460 --> 00:48:07,859
+Soru soru. Talha?
+
+325
+00:48:09,799 --> 00:48:14,619
+Hocam, bu master teoremi sadece divide and conquer'da mı kullanıyoruz?
+
+326
+00:48:14,779 --> 00:48:19,239
+Evet. Sadece divide and conquer rekürans pahantılarını kullanabiliyoruz.
+
+327
+00:48:19,639 --> 00:48:20,799
+Teşekkür ederim hocam.
+
+328
+00:48:20,960 --> 00:48:21,340
+Rica ederim.
+
+329
+00:48:24,916 --> 00:48:41,455
+Sanırım başka soru yok. Herkese katıldığı için teşekkür ediyorum. Hepinize iyi haftalar diliyorum. Cuma günü sabah ödeviniz verilecek ve cumartesi gece yarısına kadar süresi olacak. Lütfen unutmayın. Teşekkürler. İyi haftalar.
+
+330
+00:48:43,756 --> 00:48:44,256
+Rabia
+
+331
+00:48:44,256 --> 00:48:51,756
+Hocam, ödevi CD'linde kodlayacağız gibi düşünüyorum. Doğru mu?
+
+332
+00:48:51,756 --> 00:48:54,256
+Doğru, evet. Bunu zaten dokümanda yazacağız.
+
+333
+00:48:54,916 --> 00:48:55,916
+Tamam hocam sağ olun
+
+334
+00:48:55,916 --> 00:48:56,916
+Rica ederim
+
+335
+00:49:00,755 --> 00:49:02,755
+İyi günler Hoca. Hoşçakalın.

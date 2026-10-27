@@ -1,0 +1,1831 @@
+1
+00:00:47,188 --> 00:01:12,688
+Evet arkadaşlar, yeniden merhaba. Şimdi ekranı paylaştım, kendi videomu geriye alıyorum. Biz biraz önce Napsack problemini, dinamik programlama yaklaşımıyla çözmeye çalışıyorduk. Bu noktada aslında sizlerden birinin dikkatini çekmesini bekledim ama henüz kimseden öyle bir yorum gelmedi. Formül yazmaya çalışıyoruz, yani bir bağıntı kurmaya çalışıyoruz.
+
+2
+00:01:12,688 --> 00:01:22,868
+bu bağıntıyı kurarken tek bir bağıntımız olacak sonunda ama önce bir case için sonra diğer case için bağıntıyı kurmamız gerekiyor.
+
+3
+00:01:23,408 --> 00:01:31,588
+Case 1'imiz neydi? Item'ın alınması durumuydı. O yüzden ilk bağıntımızı item'ın alınması durumu için yapacağız.
+
+4
+00:01:31,588 --> 00:01:40,408
+Item'ın alınması demek de hani sorduğunuz gibi V neyi temsil ediyor diye ince item'ın value'sunu eklememiz lazım. O item alınıyor demek.
+
+5
+00:01:40,407 --> 00:01:50,567
+Peki o item alındıysa benim buradaki P fonksiyonuma neyi yazmam demek?
+
+6
+00:01:52,607 --> 00:01:54,707
+Alınan item'a neyi ekleyeceğim? Efe?
+
+7
+00:01:56,847 --> 00:01:59,188
+i-1, w-2
+
+8
+00:01:59,188 --> 00:02:01,927
+Çok bağlı ben kulaklığımı takmamışım.
+
+9
+00:02:02,667 --> 00:02:04,367
+Tekrar söyleyebilir misin Efe?
+
+10
+00:02:05,207 --> 00:02:08,067
+i-1, w-2
+
+11
+00:02:08,067 --> 00:02:26,067
+i-1 yani bir önceki turdaki elde ettiğim seçeneklere bakacağım. Virgül, w-2 değil, w genelleştirelim.
+
+12
+00:02:26,067 --> 00:02:28,707
+iyi diyeceğim.
+
+13
+00:02:29,067 --> 00:02:29,507
+Ha iyi.
+
+14
+00:02:30,187 --> 00:02:34,287
+Yani doğruydu özel söylediğin ama genelleştirirsek W iyi diyeceğim.
+
+15
+00:02:34,287 --> 00:02:36,427
+Çünkü ben iyinci item'ı aldım.
+
+16
+00:02:36,967 --> 00:02:43,027
+İyinci item'ı aldıysam onun ağırlığını 5'ten yani toplam W'den çıkarmam lazım.
+
+17
+00:02:43,987 --> 00:02:45,247
+O göze gitmem gerekiyor.
+
+18
+00:02:47,087 --> 00:02:50,627
+Ve bir önceki maksimum neydi?
+
+19
+00:02:50,908 --> 00:02:52,687
+i-1'e giderek de onu almış oluyorum.
+
+20
+00:02:54,067 --> 00:02:54,987
+Şimdi bu case 1.
+
+21
+00:02:59,955 --> 00:03:08,575
+Şimdi gelelim Case 2'yi yazmaya. O item'ı almamış olsaydım. O zaman ne yazacaktım?
+
+22
+00:03:13,876 --> 00:03:19,515
+Evet, kim söylemek ister? Bu çok daha kolay. Orkun?
+
+23
+00:03:21,836 --> 00:03:30,155
+P i-1, W. Evet, P i-1, W. Neden böyle söyledik Orkun? Onu da açıklayalım.
+
+24
+00:03:31,235 --> 00:03:33,815
+Çünkü elimizdeki item almadığımız için W azalmıyor.
+
+25
+00:03:34,755 --> 00:03:43,415
+Evet, elimizdeki item almadığımız için W azalmıyor. Doğal olarak bir üste çıkıyoruz ve o bulunduğumuz noktanın weightine gidiyoruz.
+
+26
+00:03:43,876 --> 00:03:47,576
+orada maksimum o ana kadar neyi elde ettiysek onu alacağız demek.
+
+27
+00:03:48,115 --> 00:03:50,376
+Eğer o item'ı almıyorsak.
+
+28
+00:03:50,436 --> 00:03:51,596
+Şimdi iki tane case'imiz var.
+
+29
+00:03:52,256 --> 00:03:57,475
+Peki bu case'leri tek bir noktada birleştirelim.
+
+30
+00:03:58,675 --> 00:04:02,335
+P, I, W diyelim.
+
+31
+00:04:04,236 --> 00:04:05,075
+Şöyle açalım.
+
+32
+00:04:09,075 --> 00:04:12,456
+Burada bir farklı durumumuz daha olacak.
+
+33
+00:04:13,876 --> 00:04:15,635
+O da ne olabilir?
+
+34
+00:04:23,507 --> 00:04:29,907
+tahmin edebilir misiniz? Bir case daha var aslında konuşulması gereken. Evet Umut?
+
+35
+00:04:30,807 --> 00:04:35,468
+Mathis'i hazırladığımıza göre i ve w'nun ikisinde sıfır olduğu değerleri de ilk olarak case olarak var.
+
+36
+00:04:35,468 --> 00:04:51,147
+Evet, onu initial condition olarak yapacağım. Hemen şuraya yazayım, çok haklısın. Onu hemen p0w0 diyelim, pi0 diyelim.
+
+37
+00:04:51,147 --> 00:04:52,327
+Buraya da
+
+38
+00:04:57,363 --> 00:05:08,903
+initial değerleri oluşturduğumuz nokta diyelim. Bu bir. İkincisi bir durumda daha, bir case'de daha kontrol etmemiz gerekiyor. O case de bizim için önemli. Burçin?
+
+39
+00:05:10,903 --> 00:05:15,483
+Item weightlerinin maksimum weight'ten fazla olduğu durum var.
+
+40
+00:05:15,544 --> 00:05:22,883
+Item weightlerinin maksimum weight'ten fazla olduğu durum. O noktada bunu bu renkle yazmayayım, hemen geri alalım.
+
+41
+00:05:22,883 --> 00:05:29,983
+P, I-1, W'yu alıyor olacağız.
+
+42
+00:05:29,983 --> 00:05:35,363
+Eğer V, I, W ise.
+
+43
+00:05:37,123 --> 00:05:43,483
+Eğer böyle bir sorunumuz yoksa o zaman biraz önceki iki tane case'imizi
+
+44
+00:05:43,483 --> 00:06:11,724
+P i-1, virgül ve w i'yi artı v i diyeceğiz. Virgül diyelim. P i-1, geri alalım. W diyeceğiz. Ve bunlardan birinin alınmasını sağlayacağız.
+
+45
+00:06:11,724 --> 00:06:14,243
+Buraya kadar sorusu olan var mı?
+
+46
+00:06:16,264 --> 00:06:21,363
+Bu bağıntıyı yazarken ben şurayı anlamadım niye böyle yapıyoruz?
+
+47
+00:06:22,143 --> 00:06:23,404
+Yani varsa lütfen sorsun.
+
+48
+00:06:23,863 --> 00:06:24,963
+Tekrar üzerinden geçelim.
+
+49
+00:06:29,076 --> 00:06:29,816
+Yasir.
+
+50
+00:06:31,015 --> 00:06:37,655
+Hocam, biraz tekrar üzerinden geçirsek çok iyi olur da oradan. Biraz karıştırdım. Max üzerinden şeyde.
+
+51
+00:06:38,215 --> 00:06:48,096
+Şimdi, şöyle yapalım. Birincisi, şuradaki Max'ı konuşuyorsak, önce bu kısmı bir kez daha söyleyelim.
+
+52
+00:06:48,836 --> 00:06:56,635
+Herhangi bir şekilde item toplam ağırlığımızdan fazlaysa, zaten onun için bir işlem yapmamıza gerek yok.
+
+53
+00:06:56,635 --> 00:07:03,875
+ona alma ihtimalimiz yok. Doğrudan bir önce kaldığımız maksimum değerine gidiyoruz. Aynı şurada olduğu gibi.
+
+54
+00:07:05,275 --> 00:07:17,215
+Eğer item'i alma ihtimalimiz varsa o zaman diyoruz ki o item'i alırsak o item'in ağırlığını çıkartıp bir önceki noktada o ağırlıktaki maksimum kaçtı buna ekleyelim.
+
+55
+00:07:17,215 --> 00:07:28,495
+ve o item'ı almadan ki durum neydi? Ona bakalım ikisinin içerisindeki maksimum hangisi ise yolumuza onunla devam edelim diyoruz.
+
+56
+00:07:28,495 --> 00:07:43,695
+Bunun örneğini şöyle yapacağız. Biraz önceki sayfaya gidecek olursak şurada bir silme işlemi yapayım. Burada göstermek daha rahat olacak.
+
+57
+00:07:51,444 --> 00:07:54,043
+şöyle diyelim
+
+58
+00:07:54,043 --> 00:07:56,563
+P
+
+59
+00:07:56,563 --> 00:07:58,203
+1-1
+
+60
+00:07:58,203 --> 00:08:01,843
+P
+
+61
+00:08:01,812 --> 00:08:08,431
+P11'in şu andaki değeri kaç? 0. Neden dolayı P11'in değeri 0?
+
+62
+00:08:13,108 --> 00:08:33,967
+Kim söylemek ister? Hangi koşuldan dolayı? Burçin'den farklı bir kişi olsun. Teşekkür ederim Burçin. Farklı bir kişi. P11'i niye sıfır seçtik arkadaşlar? Hangi koşula uygun olarak? Tolga?
+
+63
+00:08:33,967 --> 00:08:39,487
+Şu an sadece ilk ayetme bakıyoruz. Onları birden büyük olduğu için alamayacağız.
+
+64
+00:08:40,767 --> 00:08:48,707
+İki büyük bir olduğu için. Şuradaki şu koşul bizim için geçerli olacak.
+
+65
+00:08:48,707 --> 00:09:00,487
+V, I, W'dan büyük olduğu için. O yüzden biz burada iki birden büyük olduğu için onu almıyoruz ve doğrudan sıfırı aşağıya doğru ilerletmiş oluyoruz i-1'deki değeri.
+
+66
+00:09:00,487 --> 00:09:20,387
+buraya getirdik, kopyaladık. Şimdi gelelim P1-2'ye. P1-2'deyim. P1-2 için biraz önce bir önceki problemde yazmıştık. Burada da yazacağız. Ağırlıkla ilgili bir problem yok. Max diyeceğim. Max'ın içine ne yazacağım?
+
+67
+00:09:42,932 --> 00:09:43,932
+Evet.
+
+68
+00:09:47,668 --> 00:09:49,827
+Max'ın içerisine ne yazmam gerekiyor arkadaşlar?
+
+69
+00:09:53,395 --> 00:09:54,815
+Burayı hesaplamak istiyorum.
+
+70
+00:09:56,695 --> 00:09:58,015
+12 değerine nasıl ulaşıyorum?
+
+71
+00:10:01,435 --> 00:10:04,115
+Hüma
+
+72
+00:10:06,355 --> 00:10:10,015
+Evet, senden bir cevap alabilir miyim?
+
+73
+00:10:14,656 --> 00:10:21,015
+Formüle göre, hangisi maksimum ise onu alacağız hocam. P-i-1 yani
+
+74
+00:10:21,015 --> 00:10:32,235
+Formül üzerinden anlatma. Biz şu anda case'lerimiz üzerinden anlat. Item'ı alma durumuna bakıyoruz değil mi? Item'ı alabilir miyiz şu anda? Koşulu sağlıyor mu?
+
+75
+00:10:33,435 --> 00:10:35,435
+Evet, alabiliriz. Ve hiç sağlıyor.
+
+76
+00:10:35,435 --> 00:10:40,475
+ve hiç sağlıyor. O zaman ben şuraya 12 yazsam olur mu?
+
+77
+00:10:43,892 --> 00:10:52,291
+Doğru mu? Peki item'ı aldığıma göre artık 2 kiloluk barajımı kullandım değil mi? 2'den 2'yi çıkardım, 0 kaldı. O zaman nereye gideceğim?
+
+78
+00:10:55,591 --> 00:10:57,051
+P0, 0'a gideceğim, doğru mu?
+
+79
+00:10:57,852 --> 00:10:58,111
+Hı hı.
+
+80
+00:10:58,511 --> 00:11:07,851
+P0, 0'ın değeri de 0. 12 artı 0. Peki diğer seçenek item'ı almasaydım ne olacaktı? Nereye bakıyor olacaktım?
+
+81
+00:11:08,951 --> 00:11:09,871
+Bir üstüne.
+
+82
+00:11:09,871 --> 00:11:13,232
+Tamam, bir üstüne. Yani 0, 2'ye bakıyor olacaktım. Orası da 0.
+
+83
+00:11:13,892 --> 00:11:16,051
+Buradan max değeri 12 geldi. Doğru mu?
+
+84
+00:11:17,191 --> 00:11:17,491
+Hı hı.
+
+85
+00:11:17,671 --> 00:11:22,711
+Tamam. Peki şimdi seninle beraber o zaman mesela P2'ye 3'ü yapalım.
+
+86
+00:11:24,351 --> 00:11:24,851
+Tamam.
+
+87
+00:11:26,671 --> 00:11:29,472
+P2'ye 3'e bakalım şimdi. Neredeyiz?
+
+88
+00:11:29,631 --> 00:11:30,432
+Önce barajı.
+
+89
+00:11:31,152 --> 00:11:32,131
+Buradayız. Doğru mu?
+
+90
+00:11:32,811 --> 00:11:33,112
+Hı hı.
+
+91
+00:11:33,631 --> 00:11:36,432
+Tamam. Burayı hesaplamak istiyoruz. Evet. Seni dinliyorum.
+
+92
+00:11:37,031 --> 00:11:38,932
+Önce baraja bakacağız. Sağlıyor.
+
+93
+00:11:38,932 --> 00:11:39,732
+Okey.
+
+94
+00:11:39,732 --> 00:11:43,732
+1, 3'ten büyük olduğu için. Ondan sonra
+
+95
+00:11:43,732 --> 00:11:47,892
+i-1, ben yine formüle göre
+
+96
+00:11:47,892 --> 00:11:49,171
+gidiyorum, ister istemez.
+
+97
+00:11:51,171 --> 00:11:53,512
+Yani konuşalım, tamam. Önce söyle.
+
+98
+00:11:54,771 --> 00:11:56,332
+Yani hangi göze bakmam gerekiyor?
+
+99
+00:11:56,332 --> 00:11:59,951
+1'e 2 galiba.
+
+100
+00:12:03,112 --> 00:12:04,491
+1'e 2
+
+101
+00:12:04,491 --> 00:12:07,412
+Peki, artı?
+
+102
+00:12:07,411 --> 00:12:13,651
+artı işte V'si yani 10.
+
+103
+00:12:14,691 --> 00:12:15,991
+Artı 10.
+
+104
+00:12:16,791 --> 00:12:17,911
+V values'u.
+
+105
+00:12:19,271 --> 00:12:19,531
+Evet.
+
+106
+00:12:21,211 --> 00:12:23,191
+Veya.
+
+107
+00:12:24,651 --> 00:12:26,191
+Yani 12.
+
+108
+00:12:26,311 --> 00:12:28,252
+P 1'e 3 oluyor doğru mu?
+
+109
+00:12:29,731 --> 00:12:30,591
+O da 12 oluyor.
+
+110
+00:12:30,951 --> 00:12:31,211
+Evet.
+
+111
+00:12:31,231 --> 00:12:32,271
+P 1'e 2'de ne var?
+
+112
+00:12:33,951 --> 00:12:35,711
+1'e 2'de de 12 var.
+
+113
+00:12:35,711 --> 00:12:44,152
+12 artı 10'dan 22, elimizde 12 var, 22 var, P2 3, 22 olacak.
+
+114
+00:12:45,911 --> 00:12:58,192
+Evet, gördüğünüz gibi ya üstten değeri aşağıya maksimumsa alıyoruz, bir üst satırdan, aynı üstünden, çünkü o zaman item'ı eklememiş oluyoruz.
+
+115
+00:12:58,192 --> 00:13:09,972
+item'ı eklersek item'ın ağırlığını çıkartıp bir üst satırdaki ilgili item ağırlığını çıkarttıktan sonraki üstüne gidip bakıyoruz.
+
+116
+00:13:11,091 --> 00:13:12,072
+Temel prensip bu.
+
+117
+00:13:13,332 --> 00:13:24,832
+Bu sayede her adımda elimizdeki item ve alınabilecek kilo kadar kısıta ait en iyi sonucu hesaplamış oluyoruz.
+
+118
+00:13:24,832 --> 00:13:44,412
+Bir önceki adımda hesapladığımız sonuç en iyi olduğu için onu yukarıdan aşağıya taşıyoruz veya ilgili value eklediysek bir önceki satırdan geri kalan ağırlığın en iyi değerini toplayarak gene onu o anda bulunduğumuz göze ekliyoruz.
+
+119
+00:13:44,852 --> 00:13:46,272
+Buraya kadar sorusu olan var mı?
+
+120
+00:13:53,652 --> 00:14:17,791
+sormak isterseniz sorabilirsiniz. Ben bir soru sorabilir miyim? Tabii. W-W-E kısmını neden yaptınız? Ben çok kavrayamadım. Tamam, tekrar söyleyelim. Şimdi, case 1'de item'ı alıyoruz, doğru mu? Item'ı alıyorsak, item'ı almamız demek, bizim o item'ın kilogramını toplam kapasiteden çıkarmamız gerek.
+
+121
+00:14:17,791 --> 00:14:25,152
+çünkü bir önceki en iyiye bakacağımız zaman o kiloya kadar olan en iyiye bakmamız lazım.
+
+122
+00:14:25,152 --> 00:14:29,531
+Çünkü item'i aldık. Item'i almasaydık bu çıkarma işlerini yapmayacaktık.
+
+123
+00:14:33,299 --> 00:14:34,400
+Bilmem anlaşıldı mı?
+
+124
+00:14:36,159 --> 00:14:37,539
+Anladım hocam, teşekkür ederim.
+
+125
+00:14:37,559 --> 00:14:40,139
+Tam ikna olmadın gibi geldi, tekrar söyleyeyim.
+
+126
+00:14:41,079 --> 00:14:44,779
+Öncelerinizi anladın mı? Formüze edilişini çok kavrayamadım.
+
+127
+00:14:44,779 --> 00:14:48,099
+Sadece yaptığımız şey, şöyle göstereyim hatta çizerek.
+
+128
+00:14:50,019 --> 00:14:53,619
+Şimdi nereden geçelim şuraya?
+
+129
+00:14:55,119 --> 00:14:55,999
+Şuradan geçelim.
+
+130
+00:14:57,259 --> 00:14:58,899
+32 değerinden bahsediyoruz.
+
+131
+00:14:58,899 --> 00:15:08,759
+32 değerine giderken biz nereden 32 değerine ulaşmış olduk? Hangi toplamdan 32 değerine ulaştık? Ona bakalım.
+
+132
+00:15:10,679 --> 00:15:12,659
+20 ve 12 herhalde.
+
+133
+00:15:13,719 --> 00:15:14,919
+20 ve 12 doğru mu?
+
+134
+00:15:15,359 --> 00:15:15,639
+Evet.
+
+135
+00:15:16,639 --> 00:15:19,799
+Tamam. Biz şu anda 3. ayetindeyiz. 3. ayetimi aldık değil mi?
+
+136
+00:15:20,719 --> 00:15:24,639
+3. ayetimi aldığımız zaman 3. ayetimin kilosu kaçtı? 3'tü.
+
+137
+00:15:24,779 --> 00:15:27,639
+5'ten 3'ü çıkardık 2 kaldı. Doğru mu?
+
+138
+00:15:28,899 --> 00:15:33,899
+Bir önceki satıra gittim. İkinin olduğu yere geldim. 12. Demek ki 20'yi 12'ye ekleyecekmişim.
+
+139
+00:15:34,899 --> 00:15:37,239
+Hımm. Tamam hocam. Şimdi anladım.
+
+140
+00:15:37,799 --> 00:15:57,039
+Yani şöyle bağlantıyı göstereyim. Şu noktaya gitmiş oldum. Sebebi item'ı şunu aldım. Bunu aldığım için elimde 20'lik bir değer var. Ona ekleyeceğim ama 3 kilo hakkım gitti. 5-3.
+
+141
+00:15:57,039 --> 00:16:23,359
+2 kaldı elimde. O zaman diyorum ki bir önceki satırda benim 2 kiloya kadar olan maksimum değerimle onu 12 ekledim. 32 değerini elde ettim. Evet sanırım bu kısım anlaşılmıştır diye düşünüyorum. Eksik kalan nedir peki? Bizim şu ana kadar yaptığımız işte gene maksimumu bulduk. Ne eksik kaldı?
+
+142
+00:16:29,011 --> 00:16:29,951
+Kim söylemek ister?
+
+143
+00:16:38,740 --> 00:16:43,519
+Bu problemde maksimumu bulduk. Bulmamız gereken başka ne var?
+
+144
+00:16:46,680 --> 00:16:47,559
+Ertuğrul.
+
+145
+00:16:48,959 --> 00:16:51,700
+Hocam hangi elemanları kullanarak maksimumu bulduğumuzu?
+
+146
+00:16:51,719 --> 00:16:58,420
+Evet, teşekkür ederim. Hangi elemanları kullanarak maksimumu bulduğumuz bilgisine ihtiyacımız var.
+
+147
+00:16:58,420 --> 00:17:04,819
+Şimdi ben şunları hızlıca yazıyorum. Tekrar üzerinde konuşabilmek adına.
+
+148
+00:17:04,819 --> 00:17:28,179
+15, 25, 30, 37. Şimdi 2, 3, 4, 5, 1, 2, 3, 4. Biz bu noktadayız. Şuradayız. Ve buradan geriye doğru gitmek istiyoruz. Ne yapacağız?
+
+149
+00:17:28,179 --> 00:17:36,920
+Biraz önceki problemde çözerken uyguladığımız yaklaşım işe yarar mı? Umut.
+
+150
+00:17:38,299 --> 00:17:43,899
+Hocam öncelikle bulunduğumuz alanın item'ı kullanılmış mı? Kullanılmamış mı?
+
+151
+00:17:43,899 --> 00:17:50,799
+Bunu bir öğrenmemiz lazım. Eğer kullanılmışsa, devam edeyim ben anlatmaya.
+
+152
+00:17:51,039 --> 00:17:53,079
+Tabii, aynen öyle. Yok, ben dinliyorum seni.
+
+153
+00:17:53,079 --> 00:18:12,039
+Tamam. Eğer kullanılmışsa bu item, o itemın ağırlığını maksimum ağırlıktan çıkarıp kalan kısmın maksimum değerli olanını bulup oranın da hangi itemin roğunda olduğunu bulup bu şekilde sıfıra gelene kadar ilerleyeceğiz.
+
+154
+00:18:12,339 --> 00:18:18,719
+Çok güzel. Genel olarak doğru. Peki kullanılıp kullanılmadığını şu anda nasıl anlayabilirim? 37'deyim.
+
+155
+00:18:18,719 --> 00:18:31,719
+Sadece elimizde 37 değeri varken eğer matrisi oluşturmuşsak bir önceki değerle onun arasındaki farkı bulunduğumuz itemin ağırlığını eşit mi değil mi? Buna bakarak anlayabiliriz.
+
+156
+00:18:31,879 --> 00:18:34,299
+Peki ilk karşılaştırmayı neyle yapmalıyım?
+
+157
+00:18:35,740 --> 00:18:41,539
+O zaman bir önceki aynı satırdaki bir önceki elemanıyla yani 37 ve 30 şu an için.
+
+158
+00:18:42,579 --> 00:18:46,139
+Tam tersi olabilir mi acaba? 37-30 değil de.
+
+159
+00:18:46,139 --> 00:18:47,619
+32-37 mi?
+
+160
+00:18:47,619 --> 00:18:47,839
+Evet.
+
+161
+00:18:48,219 --> 00:18:48,859
+32-37.
+
+162
+00:18:48,879 --> 00:18:49,299
+Aynen, aynen.
+
+163
+00:18:49,600 --> 00:18:50,159
+Aynen, tamam.
+
+164
+00:18:50,399 --> 00:18:50,499
+Evet.
+
+165
+00:18:50,779 --> 00:18:54,319
+P, i, j, eşit mi?
+
+166
+00:18:54,960 --> 00:18:57,819
+P, i, eksi bir, j mi?
+
+167
+00:18:58,279 --> 00:18:58,859
+Yapmalıyım.
+
+168
+00:19:00,039 --> 00:19:02,919
+Eğer yaptıysam, yukarı doğru gideceğim.
+
+169
+00:19:03,059 --> 00:19:06,219
+Yani daha doğrusu yaptıysam derken, karşılaştırmam doğru çıktıysa.
+
+170
+00:19:06,819 --> 00:19:13,559
+Doğru çıkmadıysa, ki karşılaştırmamın doğru çıkması demek, onu kullanmadığım anlamına geliyor.
+
+171
+00:19:13,559 --> 00:19:16,599
+doğru çıkmadıysa ne tarafa ilerleyeceğim?
+
+172
+00:19:17,519 --> 00:19:24,119
+Onu kullandık demek oluyor bu da. Maximum weight'ten onun weight'ini çıkarmış olacağız.
+
+173
+00:19:24,119 --> 00:19:33,240
+Çok güzel. Mesela diyelim ki burada 5 numaralı item'ı kullanmışız gibi gözüküyor. Daha doğrusu 4 numaralı item'ı.
+
+174
+00:19:33,899 --> 00:19:35,379
+Eksi 1 üzerinden ilerleyelim.
+
+175
+00:19:37,539 --> 00:19:40,279
+4 numaralı item'ın ağırlığı kaç hocam tam hatırlayamadım.
+
+176
+00:19:40,519 --> 00:19:40,819
+15.
+
+177
+00:19:40,820 --> 00:19:42,200
+15 ise
+
+178
+00:19:42,200 --> 00:19:45,780
+Pardon özür dilerim ağırlığı diyorum. Ağırlığı 2 kilogramdı.
+
+179
+00:19:46,439 --> 00:19:51,939
+Ağırlığı 2 kilogram. O zaman 3. satır içerisindeki maksimum değeri arayacağız.
+
+180
+00:19:53,240 --> 00:19:56,740
+Maksimum değeri aramak değil de 2'yi çıkartacağız 5'ten.
+
+181
+00:19:58,519 --> 00:19:59,700
+Hemen şuan siledim şunu.
+
+182
+00:20:00,900 --> 00:20:01,700
+Şunu yazalım.
+
+183
+00:20:02,920 --> 00:20:08,340
+P, i-1'de, v-vi'ye gideceğiz.
+
+184
+00:20:08,339 --> 00:20:16,519
+Buradaki i doğal olarak 4 item idi. Biz 3'e ilerliyor olacağız.
+
+185
+00:20:18,039 --> 00:20:27,859
+f, i 4 item'ini almıştık. 4 item'in ağırlığı 2 idi. 5-2 yapacağız. O da 3'e çıkacak. O zaman 3'e 3'e geldik şu anda.
+
+186
+00:20:29,019 --> 00:20:34,079
+Elimizde hangi item var? 4 item var. Şimdi 22'deyiz. 22'de ne yapacağız?
+
+187
+00:20:36,084 --> 00:20:47,483
+Başka biri anlatsın. Çok teşekkür ederim. Başka birine söz verelim. Mehmet Ayrı de bugün bayağı bir konuştu. Farklı bir kişi olsun.
+
+188
+00:20:53,044 --> 00:20:55,044
+It's...
+
+189
+00:20:57,332 --> 00:21:01,591
+Orkun da konuştu. Mesela Özgür yaylı olsun.
+
+190
+00:21:03,931 --> 00:21:05,151
+Sesim geliyor mu hocam?
+
+191
+00:21:05,451 --> 00:21:05,792
+Geliyor.
+
+192
+00:21:07,391 --> 00:21:10,672
+Bu kısımda önce üsttekiyle kıyaslayacağız.
+
+193
+00:21:11,212 --> 00:21:11,431
+Güzel.
+
+194
+00:21:11,672 --> 00:21:14,071
+İki olduğu için üç alınmış üstlenemdir.
+
+195
+00:21:14,611 --> 00:21:16,791
+O zaman üçün alınmadığını söylüyoruz. Doğru mu?
+
+196
+00:21:17,332 --> 00:21:17,592
+Evet.
+
+197
+00:21:18,231 --> 00:21:20,832
+Tamam. Yukarı çıkacağız.
+
+198
+00:21:21,911 --> 00:21:22,551
+Evet, yukarı çıkıp...
+
+199
+00:21:22,551 --> 00:21:22,711
+Değil mi?
+
+200
+00:21:23,252 --> 00:21:23,551
+Evet.
+
+201
+00:21:24,551 --> 00:21:26,891
+Tamam. Şimdi geldik yukarıdayız. Sonra ne yapacağız?
+
+202
+00:21:27,332 --> 00:21:39,512
+üstteki ile kıyasladığımızda daha yüksek olduğu için iki alınmıştır ve bire bir kısmı...
+
+203
+00:21:39,512 --> 00:21:42,512
+İkinin ağırlığını söyleyeyim hemen. İkinin ağırlığı birde.
+
+204
+00:21:43,451 --> 00:21:47,571
+Bir ise bire iki. Birinci satır ikinci üstünde.
+
+205
+00:21:48,431 --> 00:21:50,512
+Yani biz şuraya geleceğiz doğru mu?
+
+206
+00:21:51,891 --> 00:21:52,192
+Evet.
+
+207
+00:21:52,832 --> 00:21:55,071
+Tamam buraya geldik. Edimizde on iki var.
+
+208
+00:21:56,291 --> 00:21:57,131
+Yukarı baktık.
+
+209
+00:21:57,332 --> 00:21:59,431
+eşit değil.
+
+210
+00:22:00,151 --> 00:22:00,372
+Evet.
+
+211
+00:22:02,512 --> 00:22:03,492
+Sonra ne yapacağız?
+
+212
+00:22:03,512 --> 00:22:04,471
+Sıfıra bakacağız.
+
+213
+00:22:05,031 --> 00:22:05,431
+Sonra.
+
+214
+00:22:06,351 --> 00:22:06,872
+Tamam.
+
+215
+00:22:08,671 --> 00:22:10,811
+Oraya geldiğimiz zaman biri de almış olacağız. Doğru mu?
+
+216
+00:22:11,952 --> 00:22:12,192
+Evet.
+
+217
+00:22:12,732 --> 00:22:15,512
+Çünkü ikisi de eşit değildi. Eşit olmadığından dolayı zaten biri aldık.
+
+218
+00:22:15,592 --> 00:22:16,671
+Geriye de kimse kalmadığı için.
+
+219
+00:22:17,171 --> 00:22:20,332
+4, 2, 1 değerlerini almış olacağız.
+
+220
+00:22:21,211 --> 00:22:22,971
+Buraya kadar anlaşılmayan bir kısım var mı?
+
+221
+00:22:27,859 --> 00:22:29,559
+sormak istediğiniz bir kısım var mı?
+
+222
+00:22:35,539 --> 00:22:55,039
+Peki. Şimdi o zaman başka bir probleme geçelim. Bir exercise olsun bu saatin bir exercise'ı. Ama ona geçmeden önce bir arkadaşınıza söz vermiştim. Sınavla ilgili bir soru sormak istiyordu. Önce onu alayım.
+
+223
+00:22:55,039 --> 00:22:56,839
+Evet hocam
+
+224
+00:22:56,839 --> 00:23:03,519
+Şey, sınav esnasında dosyayı yüklemekte ben bir problem yaşadım, yükleyemedim hatta son 5 dakika bunu ayırdım
+
+225
+00:23:03,519 --> 00:23:05,599
+Her şey bitirmişti, zipledim
+
+226
+00:23:05,599 --> 00:23:11,919
+Zaten mail de attım size, sınav biter etmez en yakın süre içerisinde size mail attım, zip dosyasını ve ekran görüntü
+
+227
+00:23:11,919 --> 00:23:12,419
+Son neydi?
+
+228
+00:23:13,419 --> 00:23:19,900
+Upload ederken hani dosya yükleniyor, yazısı yazıyor ya orada, o kaldı, şu şekilde yükleme işlemini bitiremedi
+
+229
+00:23:19,900 --> 00:23:23,959
+Peki süre dolduğu için mi bitiremedi yoksa daha sürenin dolmasına vakit var mıydı?
+
+230
+00:23:23,959 --> 00:23:27,839
+Vardı, 5 dakika kala başladım ben yüklemeye zaten, defalarca sayfayı yenileyecek
+
+231
+00:23:27,839 --> 00:23:30,339
+Ne kadarlık bir dosyayı yüklemeye çalışıyordun?
+
+232
+00:23:31,019 --> 00:23:31,899
+Boyut olarak?
+
+233
+00:23:32,759 --> 00:23:33,499
+Yaklaşık olarak
+
+234
+00:23:33,499 --> 00:23:36,579
+Yani 1 ya da 2 megabattir hani
+
+235
+00:23:36,579 --> 00:23:37,139
+Tamam
+
+236
+00:23:37,139 --> 00:23:42,359
+Yükleniyor yazı skalı ve yüklenmeden süre mi doldu?
+
+237
+00:23:42,459 --> 00:23:45,879
+Evet, hatta size ekran görüntüsünü de attım maille, zip dosyası kadar var
+
+238
+00:23:45,879 --> 00:23:46,419
+Tamam
+
+239
+00:23:46,419 --> 00:23:48,859
+Bu değerlendirilecek mi bu şekilde yoksa?
+
+240
+00:23:49,699 --> 00:23:52,939
+Şimdi bununla ilgili ortak bir bölümün karar almasını bekliyoruz
+
+241
+00:23:52,940 --> 00:24:10,560
+çünkü şu anda sistemsel bir hata varsa tabii ki değerlendirilir, bir sorun olmaz. Senin case'in için söylemiyorum ama başka case'ler de olduğu için söylüyorum ama burada sistemle ilgili bir hata yoksa, zamanında yüklenemişse o zaman nasıl bir karar alınacağını hep birlikte bekleyip göreceğiz.
+
+242
+00:24:10,559 --> 00:24:40,539
+Ben şu anda size bununla ilgili bir şey söyleyemiyorum çünkü daha bize ulaşmış bununla ilgili bir bilgi yok. Bazı sorunlar yaşandığını duydum sınavlarda. Benim diğer başka sınavımda da sorun oldu. Bu durumları UZM'e yazarsanız, UZM et yazı, SETR'ye en azından orada yükleme işlerinin başlayıp başlamadığını, log bilgileri vesaireler tutulduğu için sorunun sizden bir kaynaklan olduğunu, sistemsel bir sorun olup olmadığını oradan öğrenme şansınız.
+
+243
+00:24:40,559 --> 00:24:48,059
+en azından case'i de aktarmış olursunuz ki bir sonraki sınavda bir daha böyle bir sorun yaşanmasın ya da en az düzeyde yaşansın.
+
+244
+00:24:49,239 --> 00:24:50,639
+Tamam hocam çok teşekkürler.
+
+245
+00:24:50,919 --> 00:24:53,359
+Şu an endişe etmenizi gerektirecek bir durum yok.
+
+246
+00:24:54,039 --> 00:24:58,999
+Dediğim gibi sizden kaynaklı bir hata oluşmamışsa bir şekilde problem çözülecektir.
+
+247
+00:24:59,919 --> 00:25:00,120
+Evet.
+
+248
+00:25:01,039 --> 00:25:01,679
+Teşekkürler.
+
+249
+00:25:01,879 --> 00:25:02,319
+Rica ederim.
+
+250
+00:25:03,239 --> 00:25:05,120
+Şimdi remote coin collection problem.
+
+251
+00:25:07,200 --> 00:25:08,879
+Bir alan var.
+
+252
+00:25:09,079 --> 00:25:10,539
+Harita olarak düşünün burayı.
+
+253
+00:25:10,559 --> 00:25:15,799
+gridlere ayrılmış. Bu gridlere ayrılmış alanda
+
+254
+00:25:19,251 --> 00:25:21,251
+coinler var.
+
+255
+00:25:24,692 --> 00:25:28,172
+Ve bu coin'ler işte şurada bir coin var.
+
+256
+00:25:29,331 --> 00:25:30,431
+Burada bir coin var.
+
+257
+00:25:31,731 --> 00:25:33,251
+Burada bir tane, burada bir tane.
+
+258
+00:25:34,652 --> 00:25:37,131
+Burada bir tane, burada bir tane, burada bir tane.
+
+259
+00:25:39,971 --> 00:25:42,011
+Burada bir tane, bir de burada bir tane.
+
+260
+00:25:43,011 --> 00:25:45,431
+Robot buradan bir giriş yapıyor.
+
+261
+00:25:51,476 --> 00:26:08,576
+Burada da çıkış yapacak. Ve robot ya sağa gidebiliyor ya da aşağıya ilerleyebiliyor. Her hareketinde. İkisinden birini seçmek durumunda.
+
+262
+00:26:10,415 --> 00:26:20,695
+Buradan yola çıkarak robot bu haritada ilerlerken en fazla coin'i toplamanın peşinde. Ve haritada kendisine verilmiş.
+
+263
+00:26:21,476 --> 00:26:27,536
+ve yola çıkmadan önce izleyeceği rotayı belirlemek istiyor.
+
+264
+00:26:30,816 --> 00:26:34,795
+Nasıl bir mekanizma oluşturmamız lazım?
+
+265
+00:26:47,188 --> 00:26:48,147
+Ne söylersiniz?
+
+266
+00:26:57,203 --> 00:27:02,323
+Umut sen çok söz aldın. Başka biri fikir belirtsin sonra sana söz vereceğim.
+
+267
+00:27:05,619 --> 00:27:18,859
+Yani eline karar veriyor olsaydınız ne yapardınız? Önce onu konuşalım. Formülü falan istemiyorum ilk etapta. Hani robot buna bakıyor. Robot gözüyle baksanız nasıl ilerlersiniz?
+
+268
+00:27:22,451 --> 00:27:24,451
+Sağa gidebiliyor, aşağıya gidebiliyor.
+
+269
+00:27:31,316 --> 00:27:36,515
+Evet, Burçin de çok konuştu bugün. Başka kişilere söz verelim. Mesela Yusuf daha var.
+
+270
+00:27:40,564 --> 00:27:50,843
+Yusuf da aramızda mı? Yok. Peki Hüma sen az konuştun sana söz vereyim.
+
+271
+00:27:52,703 --> 00:28:01,664
+Hocam sadece sağ ve aşağı gidebiliyorsa yukarı gidemediği için öncelikle satırın tamamını bitirmesi gerekiyor aşağı geçmek için.
+
+272
+00:28:01,664 --> 00:28:14,663
+Şöyle yani buna bakabilir şu an zaten gitmeyeceği için daha yani bunları kontrol etmesi gerekecek ama nasıl yapmalı yani ekleme işlemini?
+
+273
+00:28:17,064 --> 00:28:18,784
+Ekleme işleminden kastınız?
+
+274
+00:28:18,784 --> 00:28:25,784
+Ekleme işleminden kastettiğim coin toplayacak ya hani her bir coin'i birer artı bir olarak düşünebilirsin.
+
+275
+00:28:25,783 --> 00:28:31,083
+Bilemedim hocam
+
+276
+00:28:31,083 --> 00:28:33,963
+Şöyle yapalım, ben bir yardımcı olayım
+
+277
+00:28:33,963 --> 00:28:38,883
+Bir tane daha 5'e 6'lık bir şey çizeyim
+
+278
+00:28:46,163 --> 00:29:03,163
+Şöyle yapalım. Bu noktada ilk kısmı yazıyorum. 0, 0 ve 0. Buraya geldiği zaman değer 1 oldu. Doğru mu? Sağa gitseydi değer kaç olacaktı Hüma?
+
+279
+00:29:06,163 --> 00:29:08,323
+Bir sağ mı? Bir daha mı sağ? Evet.
+
+280
+00:29:08,323 --> 00:29:10,584
+1 olarak devam edecek o zaman
+
+281
+00:29:10,584 --> 00:29:11,983
+Tamam, 1 olarak devam edecek, güzel
+
+282
+00:29:11,983 --> 00:29:17,844
+Peki aşağıya gitseydi, 0, 0, 0, 0, burası 1 olacaktı, doğru mu?
+
+283
+00:29:18,423 --> 00:29:18,744
+Hı hı
+
+284
+00:29:18,744 --> 00:29:22,823
+Şimdi bana söyler misin bundan sonraki satırda ne olacak?
+
+285
+00:29:25,123 --> 00:29:25,963
+Burası için
+
+286
+00:29:25,963 --> 00:29:30,463
+Nereden devam edeceğiz o zaman? İlk önce sağ gittiği yerde
+
+287
+00:29:30,463 --> 00:29:32,323
+Hı hı
+
+288
+00:29:32,323 --> 00:29:36,723
+Sıfır olacak, pardon, 1 olacak
+
+289
+00:29:36,723 --> 00:29:38,943
+1 olacak. Sonra yana doğru gidiyorum.
+
+290
+00:29:39,603 --> 00:29:41,423
+1 devam edecek.
+
+291
+00:29:41,703 --> 00:29:42,383
+Buraya geldim.
+
+292
+00:29:42,743 --> 00:29:45,623
+Sonra bir tane daha gördüğü için 2 olacak.
+
+293
+00:29:46,483 --> 00:29:48,103
+2 oldu. Buraya geldim.
+
+294
+00:29:50,243 --> 00:29:53,663
+Yana yine 2 diye gidecek. Ya da 3 olacak.
+
+295
+00:29:54,783 --> 00:29:55,543
+Nasıl 3 olabilir?
+
+296
+00:29:56,543 --> 00:29:59,524
+Yukarıdakinin nasıl etkileyeceğini de satmamız lazım.
+
+297
+00:29:59,623 --> 00:30:05,623
+Şimdi yine biraz önceki nebseg problemindeki mantıkla düşünürsen biz hemen geri alayım şunu.
+
+298
+00:30:05,623 --> 00:30:06,903
+Bir mi gelecek?
+
+299
+00:30:07,443 --> 00:30:19,723
+Yok. Şöyle yapayım. Şuradaki yazmıştım. Şimdi bu noktadayız değil mi? Robot yukarıdan gelmiş olabilir, soldan gelmiş olabilir. O zaman hangisini alacağız?
+
+300
+00:30:20,083 --> 00:30:21,844
+Minimumunu alacağız o zaman.
+
+301
+00:30:22,024 --> 00:30:23,403
+Biz maksimumun peşindeyiz.
+
+302
+00:30:24,003 --> 00:30:24,964
+Ha maksimumun peşindeyiz.
+
+303
+00:30:24,964 --> 00:30:27,823
+Çünkü hani en fazla ile toplu çalışıyoruz ya coin'e.
+
+304
+00:30:27,823 --> 00:30:28,123
+Doğru.
+
+305
+00:30:28,844 --> 00:30:29,844
+O zaman iki yazacağım değil mi?
+
+306
+00:30:30,283 --> 00:30:30,763
+Evet.
+
+307
+00:30:31,083 --> 00:30:32,623
+Buraya geldiğimde gene iki yazacağım.
+
+308
+00:30:33,123 --> 00:30:33,464
+Evet.
+
+309
+00:30:33,463 --> 00:30:48,103
+Tamam. Şimdi başka bir arkadaşımız bana yardımcı olsun. Bir altı satıra geçtim. Farklı bir kişi. Tekrar tekrar el kaldıranlara çok teşekkür ediyorum. Farklı bir kişi.
+
+310
+00:30:50,103 --> 00:30:50,963
+Eri Zeki.
+
+311
+00:30:54,932 --> 00:31:10,911
+Evet hocam. Evet sen deyim. Şu an 2'ye 1'deyiz değil mi? 2'ye 1'deyiz. Yazayım şuraya da. 1, 2, 3, 4, 5. Yani ben şu anda 2'ye 1 değil, 3'e 2 oluyor. Böyle yazdım.
+
+312
+00:31:10,911 --> 00:31:22,251
+Evet. 1 olacak. 3'e 2. 3'e 3 de 1 olacak. 1 olsun. 3 olacak.
+
+313
+00:31:22,251 --> 00:31:26,331
+3 olacak. Hangisiyle hangisini topladın?
+
+314
+00:31:28,911 --> 00:31:31,491
+Üsttekini aldım. Bir de kendi üzerimizde 1 vardı.
+
+315
+00:31:31,891 --> 00:31:34,191
+Tamam. Yani en büyük olanı aldın sanırım.
+
+316
+00:31:34,991 --> 00:31:38,711
+Evet. Üstteki ve soldakinden büyük olan artı kendisi şeklinde.
+
+317
+00:31:38,792 --> 00:31:40,391
+Tamam. Çok güzel. Sonra?
+
+318
+00:31:41,091 --> 00:31:45,191
+3 ve 4.
+
+319
+00:31:45,972 --> 00:31:47,771
+Güzel. Bir sonraki satırda hızlıca söyler misin?
+
+320
+00:31:47,772 --> 00:32:00,472
+1, 2, 3, 5
+
+321
+00:32:00,472 --> 00:32:03,911
+Güzel. Son satırda ben yazayım. Teşekkür ediyorum.
+
+322
+00:32:05,551 --> 00:32:09,432
+Buraya 2 yazmayacağım tabii ki. Çünkü burada hiçbir eleman yok.
+
+323
+00:32:09,432 --> 00:32:36,612
+1, 2, 3, 4, 5 şekle geçeceğiz ve bu robot burada ilerleseydi ne yapabilirdi? 5 tane maksimum koyun toplayabilirdi. Peki bu 5 tane maksimum koyunu nasıl toplayabilirdi? 5'e 5 bakıyoruz. Demek ki buradan gelmiş şu noktada. Yine yukarı ilerleyeceğiz. Hangi tarafa gitmemiz gerekiyor? Bir tarafta 5'e 3 var, bir tarafta 5'e 4 var.
+
+324
+00:32:36,612 --> 00:32:39,131
+4'e doğru ilerlememiz gerekiyor.
+
+325
+00:32:39,232 --> 00:32:40,832
+Çünkü bir tane coin'e eklemişiz.
+
+326
+00:32:42,432 --> 00:32:43,592
+4'ten sonra ne yapacağız?
+
+327
+00:32:45,952 --> 00:32:47,491
+Bu tarafa doğru ilerleyeceğiz.
+
+328
+00:32:50,432 --> 00:32:52,332
+Sonra buraya geleceğiz.
+
+329
+00:32:54,211 --> 00:32:56,512
+Ondan sonra buraya ilerleyeceğiz.
+
+330
+00:32:57,571 --> 00:32:59,692
+Sonra iki tane seçeneğimiz var.
+
+331
+00:33:00,411 --> 00:33:05,131
+Ya böyle geleceğiz ya da böyle geleceğiz arkadaşlar.
+
+332
+00:33:05,131 --> 00:33:21,771
+İkisi de mümkün. Çünkü şurada baktığınızda bir değeri var. Buradan da gelmiş olabilirsiniz, buradan da gelmiş olabilirsiniz. Her ikisi de olasılık dahilinde. Bu yüzden iki alternatif yolu gözüküyor şu anda robotun.
+
+333
+00:33:21,771 --> 00:33:35,451
+önce sağa gidip sonra aşağı inip sonra sağa aşağı sağa aşağı aşağı ya da önce aşağı sonra sağa sağa aşağı aşağı aşağı aşağı şeklinde gidiyor.
+
+334
+00:33:35,451 --> 00:33:47,531
+Peki bunu formülize etseydik nasıl formülize ederdik bir oraya bakacağız. Bir de bunun time complex complex ve space complex nedir onu sorayım.
+
+335
+00:33:47,531 --> 00:33:54,331
+bu problemi dinamik programlamıyla çözmemizin maliyeti nedir?
+
+336
+00:34:14,708 --> 00:34:15,328
+Evet, Umut.
+
+337
+00:34:16,847 --> 00:34:25,907
+Matrix'in uzunluğu çarpı yüksekliği bizim time complexity'miz olacak. Örnek veriyorum burası için 6x530 oluyor.
+
+338
+00:34:26,787 --> 00:34:30,347
+Peki, bu time complexity diyelim. Space complexity?
+
+339
+00:34:31,968 --> 00:34:33,327
+Ondan emin değilim.
+
+340
+00:34:34,048 --> 00:34:37,527
+Neden tereddüt ediyorsun? Kullandığımız space belli değil mi?
+
+341
+00:34:38,667 --> 00:34:41,267
+Aynen gerçi aynı oluyor sanırım.
+
+342
+00:34:42,847 --> 00:34:44,607
+Yani n ve m değerleri.
+
+343
+00:34:44,708 --> 00:34:47,588
+Aynen, NVM değerleriyle. N çarpı M.
+
+344
+00:34:49,447 --> 00:35:05,907
+Peki, tabii bir de şöyle bir şey var. Burada bazı durumlarda birden fazla yol çıkıyor. Birden fazla yol çıkmasaydı bunu belki de farklı şekilde değerlendirmemiz gerekecekti.
+
+345
+00:35:05,907 --> 00:35:12,748
+Bu bölüme belki sonra bakarız hesaplama yaparken. Çünkü geriye dönüşte bir hesaplama yapmamız gerekiyor.
+
+346
+00:35:12,747 --> 00:35:21,787
+biz şu anda maksimum değeri hesaplarken ki aslında karmaşıklıkları konuşmuş olduk.
+
+347
+00:35:22,208 --> 00:35:24,307
+Bir de bunun reconstruction'ı var.
+
+348
+00:35:25,087 --> 00:35:28,547
+Reconstruction'ı şuraya da yazalım.
+
+349
+00:35:32,547 --> 00:35:37,387
+Reconstruction of optimal solution.
+
+350
+00:35:41,780 --> 00:36:00,239
+o da şurada gördüğünüz yola denk geliyor. Şimdi buradan yola çıkacak olursak, biz karmaşıklığı da ifade ettik. Acaba nasıl formülüze edebiliriz bunu? Fikri olan var mı?
+
+351
+00:36:06,579 --> 00:36:11,960
+Buna F matrisi deyin, buna da C matrisi deyin.
+
+352
+00:36:20,659 --> 00:36:36,319
+Öncelikle F11 ve neyi atayacağız? C11'i atayacağız. Çünkü başlangıç noktamız orası. İnişal noktamız. Sonra ne olabilir? Efe?
+
+353
+00:36:37,319 --> 00:36:47,259
+Hocam ben onu söylemeyeceğim de şeyi söyleyeceğim. Tersten bakarsak 5'teyiz mesela. Yani en maksimum kısımdayız.
+
+354
+00:36:47,259 --> 00:36:51,679
+tersine gidersek solundaki ya da yukarısındakine gitmek zorundayız her zaman.
+
+355
+00:36:52,119 --> 00:36:54,619
+Yani o ikisinden büyük olana gitmemiz gerekmiyor ama.
+
+356
+00:36:55,259 --> 00:36:57,179
+Yani çözümü bulmaya çalışırken.
+
+357
+00:36:58,279 --> 00:36:59,659
+Evet öyle gözüküyor, aynen öyle.
+
+358
+00:36:59,659 --> 00:37:03,919
+Tamam o zaman ben onu bir de tersine düşünürsem cevap gelecek.
+
+359
+00:37:05,099 --> 00:37:09,639
+Çünkü eşitlik durumunun ötesinde eşitlik olmayan durumlar da var.
+
+360
+00:37:09,819 --> 00:37:12,619
+Buradaki case biraz farklı bir önceki yaptığımız probleme göre.
+
+361
+00:37:12,619 --> 00:37:23,159
+Burada bir üst kısma çıktığımızda yani şuraya geldiğimizde nereye gideceğimizi hangisinin büyük olduğu belirliyor.
+
+362
+00:37:23,619 --> 00:37:23,840
+Evet.
+
+363
+00:37:24,479 --> 00:37:26,259
+Aynen öyle senin tespitin gibi. Doğru.
+
+364
+00:37:27,859 --> 00:37:32,740
+Evet şimdi burada ne yapabiliriz noktasında?
+
+365
+00:37:34,679 --> 00:37:38,939
+Belki de şöyle yazalım. Bunun PISODO kodunu da yazmak mümkün.
+
+366
+00:37:38,939 --> 00:37:44,399
+Pissoda kodu da şu şekilde ifade edersem ilk atamayı yaptım zaten
+
+367
+00:37:44,399 --> 00:37:52,779
+For J2'den M'e kadar doğru diyorum
+
+368
+00:37:52,779 --> 00:37:58,059
+F1J ne yapacağım?
+
+369
+00:37:58,840 --> 00:38:06,119
+F1J-1 artı C1J yazacağım
+
+370
+00:38:11,891 --> 00:38:33,331
+Yani her seferinde aynı satır üzerinde şu bölgede ilerlemiş oldum. Bunu yaptım. Şimdi gelelim bir sonraki adıma. Burada nasıl bir aslında bir sayfaya daha ihtiyacım var ama şöyle bir şey yapacağım.
+
+371
+00:38:33,331 --> 00:38:36,731
+daha rahat gözükmesi için.
+
+372
+00:38:39,511 --> 00:38:41,891
+Şu right ve down'ı sileyim. Şuraları sileyim.
+
+373
+00:38:44,551 --> 00:38:46,031
+Şunları sileyim.
+
+374
+00:38:48,252 --> 00:38:50,151
+Şuradan ilerlemeye çalışayım.
+
+375
+00:38:51,151 --> 00:38:54,252
+Şu noktadayım. Şu 1'i şuraya getiriyorum.
+
+376
+00:38:54,971 --> 00:38:56,011
+Buradan devam edeceğim.
+
+377
+00:38:56,231 --> 00:38:58,331
+For, bu sefer
+
+378
+00:38:58,331 --> 00:39:00,851
+i, 2, to and dedim.
+
+379
+00:39:01,811 --> 00:39:02,211
+Do dedim.
+
+380
+00:39:03,331 --> 00:39:09,111
+Bu sefer F-İ-1 diyorum
+
+381
+00:39:12,692 --> 00:39:34,872
+F-I-1, 1 diyorum. Artı C-I1 diyorum. Şimdi burada ilerleyeceğim. Ama bunu adım adım yapacağım. İlk bir seferde bitirmiştim yukarıdaki satırı hatırlarsanız. Şimdi sütun üzerinde ilerlerken bir tane daha formü üstü açıyorum.
+
+382
+00:39:42,356 --> 00:39:53,075
+C2 diyorum, to M diyorum, do diyorum. Şu anda dıştaki for'un içine girdim. Esas kritik nokta burası. Şimdi ben buraya ne yazacağım?
+
+383
+00:39:58,516 --> 00:40:05,235
+her bir FEJ için. Yani aslında bu bahsettiğimiz size biraz önceki formülü yazalım demiştik ya.
+
+384
+00:40:06,415 --> 00:40:09,655
+Forun içerisinde yazdığımız zaman ortaya çıkacak. FEJ.
+
+385
+00:40:12,195 --> 00:40:16,415
+Buraya şunu diyeceğimiz aşikar, hatta eşittir kaldırayım.
+
+386
+00:40:19,016 --> 00:40:23,196
+Buraya bir max diyeceğim. Max'ın içine ne yazacağım?
+
+387
+00:40:29,556 --> 00:40:36,195
+Evet, Rafet. Hocam, üst hücre ve sol hücreyi karşılaştıracağız. Bunların maksimumunu alacağız.
+
+388
+00:40:36,875 --> 00:40:46,056
+F, i, eksi, bir, j, virgül. F, i, virgül, j, eksi, bir. Diyeceğim. Başka?
+
+389
+00:40:46,076 --> 00:40:59,396
+Bunun üstüne de C, i, j'yi ekleyeceğiz. C, i, j'yi ekleyeceğiz. Ve içteki for döngüsü de dönecek. En son dış for döngüsünden çıktıktan sonra da return diyeceğiz. Ne yazacağım?
+
+390
+00:41:05,556 --> 00:41:06,755
+Rafet, sen söyler misin?
+
+391
+00:41:07,756 --> 00:41:09,036
+Return, diyeceğiz.
+
+392
+00:41:09,675 --> 00:41:10,195
+Şeyim.
+
+393
+00:41:10,855 --> 00:41:11,895
+F, N, M.
+
+394
+00:41:12,435 --> 00:41:12,715
+Evet.
+
+395
+00:41:13,395 --> 00:41:14,556
+Teşekkür ediyorum.
+
+396
+00:41:15,915 --> 00:41:20,775
+Gördüğünüz gibi, bizim için kritik olan kısım şu kısımdı.
+
+397
+00:41:22,095 --> 00:41:23,015
+Bu kısmı yazdık.
+
+398
+00:41:23,695 --> 00:41:28,595
+Önce ilk satırı, ilk döngüde tamamladık.
+
+399
+00:41:28,595 --> 00:41:30,515
+Sonra iç içe döngü yaptık.
+
+400
+00:41:31,415 --> 00:41:32,435
+Buradan başladık.
+
+401
+00:41:32,435 --> 00:41:36,655
+bu döngü içerisinde sütunlarda ilerledik.
+
+402
+00:41:37,015 --> 00:41:37,975
+Sonra bir alta indik.
+
+403
+00:41:38,096 --> 00:41:39,315
+Tekrar sütunlarda ilerledik.
+
+404
+00:41:39,435 --> 00:41:43,695
+Sonra normal matrisi gezer şekilde aşağıya doğru adım adım ilerledik.
+
+405
+00:41:43,695 --> 00:41:48,916
+Ve en sonunda da return fnm diyerek problemimizi tamamladık.
+
+406
+00:41:49,335 --> 00:41:50,736
+Buraya kadar sorusu olan var mı?
+
+407
+00:41:57,172 --> 00:42:27,151
+Bir önceki değerlerden yararlandık gene farkındaysanız. Ya üsttekinden ya alttakinden ama maksimum olanı aşağıya taşıdık. Hangi yoldan gelmişsek ona göre kararlayacağız. Çünkü reconstruct ederken, şurada, şu kısmı üzerine bir kez daha açtıklayalım. Bunu daha önce de yapmıştık. Nepsek'te de, diğer problemlerde de. Yani hangi elemanları aldık? Burada da hangi yoldan geldiği, hangi noktalara uğradığı bulurken,
+
+408
+00:42:27,172 --> 00:42:49,231
+bizim geriye dönmemiz lazım. En son noktadan başlıyoruz. En büyük üst mü sol mu bakıyoruz. Hangisi büyükse o tarafa doğru ilerliyoruz ve o kısmı o kısımdan geldiğimizi işaretlemiş oluyoruz. Burada herhangi bir noktayı işaretlememek gibi bir durumumuz var mı? Herhangi bir noktayı almamak gibi.
+
+409
+00:42:54,420 --> 00:43:01,019
+Tekrar sorayım. Bu problemde herhangi bir noktayı, elemanı almamak gibi bir olasılığımız var mı?
+
+410
+00:43:02,800 --> 00:43:13,440
+Teknik olarak atlayarak gitmiyoruz. Mutlaka ya yukarıdan ya soldan bir grid hücresine uğramış oluyoruz.
+
+411
+00:43:13,559 --> 00:43:22,159
+O yüzden bir önceki problemde NAPSEC'te her noktayı gezmek zorunda değildik ama burada sola ya da sağa mutlaka uğramak zorundayız.
+
+412
+00:43:22,159 --> 00:43:44,539
+atlamalı bir şekilde gidiyorduk. Bir önceki satıra uğruyorduk ama bir önceki sütun olmak zorunda değildi. Evet, sorunuz var mı? Sınavla ilgili iletmek istediğiniz bir görüş var mı? İlk ders aktaramayan ya da aklına bir şey gelmiş olan.
+
+413
+00:43:45,859 --> 00:43:47,439
+Hocam sesim geliyor mu?
+
+414
+00:43:47,839 --> 00:43:49,219
+Evet, şuan da duyuyorum seni, geliyor.
+
+415
+00:43:49,219 --> 00:44:06,259
+Hocam sınavla ilgili değil, Odev ilgili konuşacaktım. Ben dersi ilk yarım saatinde geç kaldım. Ondan dolayı duyamadım. Odev bugün teslim değil mi?
+
+416
+00:44:06,659 --> 00:44:07,780
+Doğru, bugün teslim.
+
+417
+00:44:08,179 --> 00:44:13,399
+Ertenenebilir mi acaba? Yani çok kısa bir zaman verdiniz.
+
+418
+00:44:13,399 --> 00:44:19,419
+Şöyle, yani cuma günü saat beşte vermiştik, beş çeyrek diye de.
+
+419
+00:44:19,419 --> 00:44:19,899
+Evet.
+
+420
+00:44:21,119 --> 00:44:26,119
+Ödev, açıkçası hani hesabını, kitabını yaptık, yetişmeyecek bir ödev değil, çaza.
+
+421
+00:44:27,659 --> 00:44:32,579
+Yani hash ile ilgili, double hashing ile ilgili vs. bunların hepsini zaten uygulamalı olarak görmüştünüz.
+
+422
+00:44:33,379 --> 00:44:37,339
+Sadece bunların formülüze edilmesi gerekiyordu. Maalesef böyle bir şey yapma şansınız yok.
+
+423
+00:44:37,339 --> 00:44:55,280
+Yani üzgünüm. Zaten diğer grupla da bu saatte konuşma şansımız yok. Daha önceden çok sayıda talepkasıydı belki göz önünde bulundurabilirdik ama hakikaten bunu gerektirecek bir durum olduğunu düşünmüyorum ödevin kompleksiz anlamında.
+
+424
+00:44:55,280 --> 00:45:14,220
+Yani şey mesela bizim zamanımız kalmadı yani tamam pazartesi, pazar ve cumartesi çalıştık da ama diğer günlerde derslerimiz oluyor ondan dolayı şey yani yani yetişemedim yani yarısını yaptım da
+
+425
+00:45:14,220 --> 00:45:16,179
+Yapabildiğini kadarını lütfen gönder
+
+426
+00:45:16,179 --> 00:45:17,160
+Nasıl?
+
+427
+00:45:17,759 --> 00:45:19,280
+Yapabildiğini kadarını gönder lütfen
+
+428
+00:45:19,280 --> 00:45:20,360
+Tabii ki
+
+429
+00:45:20,360 --> 00:45:33,500
+bir sonraki turda biraz daha uzun bir süre vermeye çalışırız ama normal şartlarda hafta sonu bitirebileceğiniz bir ödevde öyle söyleyeyim.
+
+430
+00:45:33,500 --> 00:45:50,300
+Yani biz pazar akşamına kadar süre vermedik özellikle bazı eksiklikler kalabilir akşamları tamamlayabilirsiniz diye biliyorum gün içinde ders alıyorsunuz programda yoğun olabilir ama hani en azından kabası hafta sonu bitip sadece düzeltmeleri
+
+431
+00:45:50,299 --> 00:45:53,819
+Pazartesi, Salı ve Çarşamba günleri yapabilirsiniz diye düşündük.
+
+432
+00:45:54,559 --> 00:45:56,599
+Tabii ki bunun değerlendirmesini yine yaparız.
+
+433
+00:45:57,399 --> 00:46:01,559
+Herkes aynı fikirse bir sonraki ödevde biraz daha uzun bir süreyi gündeme alırız.
+
+434
+00:46:02,139 --> 00:46:02,779
+Tamam, okey.
+
+435
+00:46:02,779 --> 00:46:05,039
+Teşekkür ederim eleştirin için çok sağ ol.
+
+436
+00:46:05,359 --> 00:46:05,879
+Ertuğrul?
+
+437
+00:46:06,859 --> 00:46:09,399
+Hocam kaç ödev daha vereceksiniz? 10 soracaktım.
+
+438
+00:46:10,059 --> 00:46:18,099
+Net değil ama net bir ödev daha vereceğiz, bir proje daha vereceğiz ama belki iki ödev bir proje olabilir.
+
+439
+00:46:18,659 --> 00:46:19,239
+Böyle gözüküyor.
+
+440
+00:46:19,239 --> 00:46:21,139
+Tamam hocam teşekkür ederim
+
+441
+00:46:21,139 --> 00:46:22,019
+Mücadel, Metin?
+
+442
+00:46:23,119 --> 00:46:27,119
+Hocam ben ilk derste dediğinizi duydum ama tam anlayamadım orayı
+
+443
+00:46:27,119 --> 00:46:32,359
+İlk gönderdiğimiz birinci ödevler değerlendirilmeyecek mi, değerlendirilecek mi onu tam anlayamadım
+
+444
+00:46:32,359 --> 00:46:35,999
+Metin birinci ödevler niye değerlendirilmesi?
+
+445
+00:46:36,420 --> 00:46:41,359
+Yok hani toplu yükleme yoktu ya hani sistem geldikten sonra eskiler toplu yüklenebiliyor mu diye düşündüm
+
+446
+00:46:41,359 --> 00:46:47,179
+Şunu demek istedim biz tek tek indirmek çok uzun zaman aldığı için
+
+447
+00:46:47,635 --> 00:47:09,495
+80 küsur kişi var. Zamanı efektif kullanmak adına bu modülün açılmasını bekledik. Şimdi tek bir tuşla indirebiliyoruz. Sadece ödevler kontrol edilecek. Sadece bu sürede ödevlerinizi kontrol edemedik bu modülün eksikliğinden dolayı. Sizinle paylaşmak istedim. Tabii ki değerlendirecek herhangi bir sıkıntı yok. Endişe etme.
+
+448
+00:47:09,495 --> 00:47:10,355
+Tamam, teşekkür ederim.
+
+449
+00:47:10,355 --> 00:47:14,515
+Başka var mı eklemek isteyen bir şey?
+
+450
+00:47:16,575 --> 00:47:25,775
+O zaman hepinize çok teşekkür ediyorum. Özellikle bugün hassasiyet gösterip belli bir süreden sonra çok katkıda bulunan arkadaşlar oldu. Onlara da çok teşekkür ediyorum.
+
+451
+00:47:27,795 --> 00:47:37,915
+Umarım dinamik programlama ile ilgili konular sizin için netleşmiştir. Ama bu programlama mantığını oturtmak biraz zaman alabilir.
+
+452
+00:47:37,915 --> 00:47:44,535
+hemen göremeyebilirsiniz. Fakat bu örnekleri çok yapmak istememiz her sene konuşulur, daha çok örnek çözelim diye.
+
+453
+00:47:44,535 --> 00:47:49,575
+İşte bu sene uygulama saatlerinde hep örnek çözmeye çalışıyoruz. Sebebi bu. Oturacaktır mutlaka.
+
+454
+00:47:49,695 --> 00:47:54,615
+Bununla ilgili muhtemelen dinamik programlamayla ilgili bir ödev gelecek önümüzdeki günlerde.
+
+455
+00:47:54,755 --> 00:48:03,955
+Sizi mail ile bilgilendiririz. Önümüzdeki hafta Edit Distance algoritmasını, daha doğrusu Levenstein diye de geçiyor literatürde.
+
+456
+00:48:03,955 --> 00:48:30,655
+birlikte yapıyor olacağız. Ondan sonra longest common subsequence problemi var. Ona bakacağız. Benzer işler yapıyor olacağız bu haftaki işlere. Onlar da bittikten sonra artık graflara geçeceğiz. Graflardaki algoritma analiziyle ilgili yapılabilecek kompleksli problemlerini değerlendiriyor olacağız. Hepinize sağlıklı günler diliyorum. Kendinize iyi bakın. Haftaya görüşmek üzere.
+
+457
+00:48:32,275 --> 00:48:33,335
+Görüşmek üzere hocam.
+
+458
+00:48:33,955 --> 00:48:35,955
+İyi günler olun.

@@ -1,0 +1,1547 @@
+1
+00:03:04,372 --> 00:03:10,411
+Evet arkadaşlar, hepinize merhaba. Sesim geliyor mu? Öncelikle onu sorayım.
+
+2
+00:03:13,212 --> 00:03:15,991
+Geliyor hocam.
+
+3
+00:03:16,551 --> 00:03:24,231
+Bugün maalesef bulunduğum alanda bir elektrik çalışması yapıldığı için evde elektrikler yok şu anda.
+
+4
+00:03:24,231 --> 00:03:34,171
+Konum değiştirme şansım da olmadı bu haberi aldıktan sonra. O yüzden bağlantımı şu anda telefon üzerinden sağlıyorum.
+
+5
+00:03:34,372 --> 00:03:53,212
+O yüzden biraz sonra kameramı da kapatacağım. Zaten ekran paylaşım yapacağım. O zaman da genelde kameramı kapatıyordum. Ama bağlantıda herhangi bir sıkıntı olursa lütfen beni uyarın ya da sesle ilgili bir problem olursa. Bugün maalesef bu şartlarda yapmaya çalışacağız dersi.
+
+6
+00:03:53,212 --> 00:04:00,351
+Şimdi öncelikle bugünkü lab saati için birkaç açıklama yapmak istiyorum
+
+7
+00:04:00,351 --> 00:04:05,331
+Bugün lab saatinde size bir link göndereceğim
+
+8
+00:04:05,331 --> 00:04:10,032
+Bu link birinci grubun linki olacak
+
+9
+00:04:10,032 --> 00:04:14,452
+Siz lab saatinde bu gönderdiğim linke bağlanacaksınız
+
+10
+00:04:14,452 --> 00:04:19,732
+Ve bu link üzerinden hem birinci grup hem de ikinci grup birlikte
+
+11
+00:04:19,732 --> 00:04:44,232
+geçtiğimiz günlerde verdiğimiz ödevin çözümünü dinleyeceksiniz. Bugün size Sevgi Hoca yardımcı olacak. Soruları çözecek. Sorularınız varsa kendisine yoğunlendireceksiniz. Böylece verdiğimiz ödevle ilgili aklınıza takılan kısımları da aydınlatmış olacağımızı ümit ediyorum. Öncelikle bunu sizinle paylaşmış olayım. Tekrar ediyorum.
+
+12
+00:04:44,232 --> 00:05:11,611
+Bugün lap saatinde bizim kendi grup 2 üzerinden bağlanmayacaksınız. Ben size bir zoom linki paylaşacağım. O link üzerinden grup 1'in dersine bağlanacaksınız ve onların lap dersi üzerinden bugün ilk verdiğimiz ödevin sorularını çözüyor olacaksınız sevgili hocayla birlikte.
+
+13
+00:05:11,611 --> 00:05:32,711
+Şimdi birazdan ya dersin başında ya dersin ortalarında sizinle bir anket linki paylaşacağım. Ödevi değerlendirmenizi isteyeceğim. Bir dakikanızı alacak. Ödevin süresiyle ilgili ya da eklemek istediğiniz varsa yorumla ilgili bir kısım var.
+
+14
+00:05:32,711 --> 00:05:46,092
+oraya ödevle ilgili bu 5-6 soruluk şıkları doldurmanızı isteyeceğim ki genel olarak nasıl bir reaksiyon alacağız görmek istiyoruz.
+
+15
+00:05:46,831 --> 00:05:56,211
+Tabii ki objektif olmanız önemli. Önemli olan objektif olursanız bundan sonraki süreçte de bize olumlu geri dönüşler olacaktır dersimizle ilgili olarak.
+
+16
+00:05:56,211 --> 00:06:03,891
+Onun dışında bugün geçtiğimiz hafta kaldığımız divide and concur'da quicksort kısmında kalmıştık
+
+17
+00:06:03,891 --> 00:06:05,491
+Onun üzerinden devam ediyor olacağız
+
+18
+00:06:05,491 --> 00:06:10,691
+Ve hash algoritmalarına başlayacağız
+
+19
+00:06:10,691 --> 00:06:15,891
+Bu hafta ve önümüzdeki hafta hashingle ilgili konuları anlatacağız
+
+20
+00:06:15,891 --> 00:06:22,732
+Önümüzdeki hafta muhtemelen lab saatinde hash ile ilgili birkaç örnek çözeriz
+
+21
+00:06:22,732 --> 00:06:29,892
+ve sonra yine bir ödev daha vereceğiz. Muhtemelen hash ile ilgili olacak diye tahmin ediyorum.
+
+22
+00:06:32,092 --> 00:06:41,892
+Şimdilik benim ders girişimde söyleyeceklerim bu kadar. Sizlerden bir soru ya da herhangi bir şekilde aktarmak istediğiniz bir şey varsa dinleyebilirim.
+
+23
+00:06:42,892 --> 00:06:43,291
+Hızlıca.
+
+24
+00:06:47,283 --> 00:06:51,163
+Yorumda bulunmak isteyen var mı? Ödevle ilgili ya da derse ilgili.
+
+25
+00:06:54,183 --> 00:07:15,723
+Metin, Binbir'in sorusu var. Tek vize olacaksa ikinci vize haftasında mı olacak vize? Bunun bilgisi maalesef vize hala ulaşmadı. Sınav haftası için belirsizlik devam ediyor. Biz de bilmiyoruz. Ortak bir karar alınacak mı? Bekliyoruz. Karar alınır alınmaz ya da bilgi sahibi olur olmaz. Sizleri bilgilendireceğiz.
+
+26
+00:07:15,723 --> 00:07:20,583
+şu anda bu konuyla ilgili daha fazla bir bilgi verme maalesef mümkün değil.
+
+27
+00:07:23,283 --> 00:07:24,423
+Başka sorusu olan?
+
+28
+00:07:29,908 --> 00:07:36,868
+Peki, şimdi dersimize başlayabiliriz. Ben ekran paylaşımını aktif hale getireceğim.
+
+29
+00:07:45,300 --> 00:07:48,839
+sanırım şu anda görebiliyorsunuzdur diye tahmin ediyorum.
+
+30
+00:07:51,379 --> 00:08:02,339
+Tabii ben aynı zamanda katılanları ve chat ortamını da aktif hale getireyim kendi ekranımda.
+
+31
+00:08:03,099 --> 00:08:05,720
+Çünkü bilgisayar değişikliğine de gitmek zorunda kaldım.
+
+32
+00:08:06,599 --> 00:08:10,300
+Evet, burada şu anda aktif olarak sizi takip edebiliyorum chat ortamında da.
+
+33
+00:08:11,439 --> 00:08:13,939
+Bu geçtiğimiz hafta kaldığımız noktaydı.
+
+34
+00:08:13,939 --> 00:08:18,719
+Core Partition algoritmasını konuşmuştuk.
+
+35
+00:08:18,719 --> 00:08:26,359
+Divide and Conquer algoritmalar içerisinde QuickSort'ta çok temel kullanılan yaklaşımlardan,
+
+36
+00:08:27,059 --> 00:08:30,499
+daha doğrusu kullanılan algoritmalardan bir tanesi bu temel yaklaşımı kullanan.
+
+37
+00:08:31,020 --> 00:08:33,919
+Burada bölme işlemi için efor harcıyorduk.
+
+38
+00:08:34,959 --> 00:08:38,319
+Birleştirme işlemi için özel bir efor harcamamıza gerek kalmıyordu.
+
+39
+00:08:40,379 --> 00:08:43,679
+Öte yanda MergeSort'ta ise tam tersi bir durum söz konusuydu.
+
+40
+00:08:43,679 --> 00:09:00,119
+bunları geçtiğimiz hafta konuşmuştuk. En son noktada Best Gaze'i konuşmuştuk arkadaşlar. Best Gaze üzerinde birkaç yorum yapmıştık. Peki şimdi Best Gaze'i şöyle bir başlayalım.
+
+41
+00:09:03,668 --> 00:09:13,668
+Bu arada, Best Case'in hangi durumda olduğunu bana kim söyleyebilir? Hangi şartta Best Case'e sahibizdir?
+
+42
+00:09:17,011 --> 00:09:19,011
+İnkantra, raknut fan.
+
+43
+00:09:22,836 --> 00:09:29,055
+QuickSort'ta ikiye ayırmak istiyoruz. Hangi durumda best case oluşur?
+
+44
+00:09:34,292 --> 00:09:35,512
+Evet, Alper Reha.
+
+45
+00:09:37,731 --> 00:09:46,712
+Quicksort için zaten dizi sıralı verildiyse bizim ona tek bir döngüyle kontrol ederek en iyi durumu elde edebiliriz hocam.
+
+46
+00:09:47,771 --> 00:09:48,951
+Pek doğru olmadı gibi.
+
+47
+00:09:52,271 --> 00:09:53,611
+Mahmut Murat Aktan.
+
+48
+00:09:54,892 --> 00:10:00,052
+Hocam, pivotun tam ortada yer seçersek en best case olur.
+
+49
+00:10:00,052 --> 00:10:06,951
+kivotun ortada olması her seferinde yani medyana olması bizim için best case oluşturacak.
+
+50
+00:10:06,951 --> 00:10:07,672
+Evet Sercan.
+
+51
+00:10:10,771 --> 00:10:14,611
+Ben benzer bir şey söyleyecektim de galiba elim havada kaldı hocam.
+
+52
+00:10:14,872 --> 00:10:17,911
+Evet galiba biraz bazen gecikmeli geliyor olabilir.
+
+53
+00:10:18,091 --> 00:10:20,431
+O yüzden okey aynı şeyi söyleyeceksek.
+
+54
+00:10:20,531 --> 00:10:24,692
+Ben şimdi bunu kural olarak yazıyorum şu anda ekrana.
+
+55
+00:10:27,132 --> 00:10:28,372
+Burası önemli.
+
+56
+00:10:30,051 --> 00:10:38,811
+Pivot'un orta noktada bir değeri temsil ediyor olması bize best-gauge durumunu oluşturuyor.
+
+57
+00:11:06,100 --> 00:11:13,699
+Evet, şimdi o zaman şunu da yazalım.
+
+58
+00:11:22,419 --> 00:11:46,479
+c-best dedik, n dedik, ikiye bölüyorduk problemdeki instansları ve bunun her iki tarafını da çözüyorduk. Bu kısım zaten standart bir kısım. Artı bir fn fonksiyonumuz vardı. Birleştirme, ayırma işlemlerini yaptığımız işlere verdiğimiz attı.
+
+59
+00:11:46,479 --> 00:12:07,100
+Bu noktada n birden büyük olduğu sürece diyoruz. Biraz sonra initial case'da söyleyeceğiz. Bizim en iyi durumdaki karşılaştırma sayımız kaç olacak? Geçtiğimiz haftadan da gördüğünüz gibi. Evet Efe.
+
+60
+00:12:08,479 --> 00:12:09,039
+n olacak.
+
+61
+00:12:09,799 --> 00:12:12,339
+Peki neden n olacak? Onu da biz de bir kez daha hatırlatır mısın?
+
+62
+00:12:12,339 --> 00:12:17,159
+Bir saniye hocam. Korlu açayım.
+
+63
+00:12:28,980 --> 00:12:31,139
+Olam, şu anda kodu bulamadım da.
+
+64
+00:12:32,419 --> 00:12:33,920
+Kodu olmasına gerek yok.
+
+65
+00:12:36,759 --> 00:12:37,759
+Başka kim söylemek ister?
+
+66
+00:12:44,659 --> 00:12:47,479
+Yani galiba hatırladığım kadarıyla hocam.
+
+67
+00:12:49,620 --> 00:12:57,479
+En defa böldükten sonra zaten orta noktalarına göre böldüğümüz için zaten dizi sıralı bir şekilde olmuş olacaktı.
+
+68
+00:12:58,519 --> 00:13:01,100
+Onu da tek bir seferde alacaktık diye hatırlıyorum.
+
+69
+00:13:02,279 --> 00:13:04,039
+Dizi nasıl sıralı bir şekilde oluyor?
+
+70
+00:13:05,459 --> 00:13:09,539
+Yani orta noktalarına böldüğümüz için dersi efendide sol ve sağ tarafta
+
+71
+00:13:09,539 --> 00:13:16,299
+zaten büyük ve küçük değerleri olmuş olacak.
+
+72
+00:13:17,099 --> 00:13:20,200
+Yani çok bu benim için tasvinkar bir açıklama olmadı.
+
+73
+00:13:31,091 --> 00:13:41,352
+Bu tarafa doğru, soldan ve sağa doğru ilerliyorduk. 9, 5'ten büyük mü? Büyük. 1, 5'ten küçük mü? Küçük. Bunların yerleri değişiyordu.
+
+74
+00:13:42,411 --> 00:13:49,551
+5, 1, 9 oluyordu. Diğerleri aynı kalıyordu. Bir sonraki turda 5, 1, 2, 8 oluyordu.
+
+75
+00:13:49,551 --> 00:14:19,272
+bir sonraki turda 5, 1, 2, 3, 6, 4, 7 oluyordu hatırlarsanız. Bu şekilde aşağıya doğru devam ediyor. Durma noktası neresi oluyordu? Durma noktası tam ortası oluyordu. Biraz sonra verse case'de de göreceksiniz. Verse case'de durma noktası ortası olmayacak. Ortası olduğu için de bunun adenizini ikiye bölerek yaptığınızda totalde
+
+76
+00:14:19,272 --> 00:14:24,612
+karşılaştırma sayınız N olacak. Burada master teoreme göre
+
+77
+00:14:36,563 --> 00:14:45,303
+A'nın 2 olduğunu biliyoruz. B'nin 2 olduğunu biliyoruz. D'nin de 1 olduğunu biliyoruz.
+
+78
+00:14:46,303 --> 00:14:50,563
+Buradan bize C best...
+
+79
+00:14:56,980 --> 00:15:00,079
+ve yönet,
+
+80
+00:15:00,980 --> 00:15:02,179
+Şunu şöyle yazalım.
+
+81
+00:15:05,099 --> 00:15:10,299
+NMA, N, LO, 2N çıkacak.
+
+82
+00:15:11,099 --> 00:15:18,480
+Buraya başına NMA, N, LO, 2N'i koyabiliriz.
+
+83
+00:15:20,099 --> 00:15:29,740
+Şimdi, tabii bunu master theorem'u çözmeyip backward substitution kullansaydık, o zaman en üzeri 2K diyecektik.
+
+84
+00:15:29,740 --> 00:15:33,340
+O da yine çözüldüğünde
+
+85
+00:15:38,836 --> 00:16:00,455
+n log 2 n'i gidecekti. Bu arada ben burada cevabınızı merak ediyorum. Bu brute force olmayan çözümde, verimli yüksek çözümde, ödevde, birinci soruda, minimum distance'ı bulurken, karmaşıklıkla ne buldunuz?
+
+86
+00:16:07,635 --> 00:16:08,835
+And log n buldum.
+
+87
+00:16:09,895 --> 00:16:11,435
+Peki açık hale nedir?
+
+88
+00:16:14,655 --> 00:16:15,215
+Kalmışlık.
+
+89
+00:16:26,163 --> 00:16:30,163
+ödevi yapanlar vardı diye hatırlıyorum istedi.
+
+90
+00:16:30,783 --> 00:16:31,783
+Enlogen Artı En.
+
+91
+00:16:32,663 --> 00:16:33,383
+Efendim?
+
+92
+00:16:34,124 --> 00:16:35,143
+Enlogen Artı En.
+
+93
+00:16:35,843 --> 00:16:37,084
+Neden Enlogen Artı En?
+
+94
+00:16:37,943 --> 00:16:41,703
+Hocam sonra karşılaştırma yapıyoruz sırayla.
+
+95
+00:16:42,243 --> 00:16:43,203
+İlk önce ne yapıyoruz?
+
+96
+00:16:44,043 --> 00:16:45,443
+İlk önce Sort yapıyoruz.
+
+97
+00:16:46,123 --> 00:16:51,584
+Evet, bu pre-sorting yaklaşımlarından bir tanesiydi kullanılabileceğiniz.
+
+98
+00:16:51,584 --> 00:17:07,184
+O yüzden aslında açılmış hali Enrogen artı en olacaktı. Ama tabii ki Enrogen daha büyük olduğu için en'i düşürüyoruz ve Enrogen kalmış oluyor. Şimdi gelelim biz worst case'i konuşmaya Quicksort'ta.
+
+99
+00:17:18,324 --> 00:17:20,324
+Evet, ilk kez de
+
+100
+00:17:23,316 --> 00:17:26,915
+1, 2, 3, 4, 5, 6, 7 olsun.
+
+101
+00:17:29,915 --> 00:17:34,316
+Buradaki worst case senaryosunu bana kim analiz ederek gösterir?
+
+102
+00:17:35,915 --> 00:17:38,316
+Pivotun 1 olduğu durumda.
+
+103
+00:17:52,276 --> 00:17:56,256
+Worst case dizinin tersten sıralı mı olması yoksa dizinin sıralı mı olması?
+
+104
+00:17:57,975 --> 00:17:59,675
+Dizinin sıralı olması hocam.
+
+105
+00:18:00,455 --> 00:18:10,575
+Dizinin sıralı olması. Peki, 1, 2, 3, 4, 5, 6, 7 Ertuğrul sanırım cevap vermişti. Buradaki bana karşılaştırmaları söyleyebilir misin?
+
+106
+00:18:11,515 --> 00:18:20,616
+Hocam, 1'e baktığımız zaman, pivot aldığımız zaman önce 2 ile 7'ye bakıyoruz. Onları karşılaştırıyoruz. Onlar aynı kalıyor.
+
+107
+00:18:20,616 --> 00:18:37,216
+3'den 6'yı karşılaştırıyoruz aynı kalıyor. 4 ile 5'i karşılaştırıyoruz yine aynı kalıyor. Bu durumda biri yerinden değiştirmemiz gerekiyor. Yine aynı yerde kalması gerekiyor. Sonrasında 2'ye geçiyoruz yine aynı işlemi yapıyoruz.
+
+108
+00:18:37,215 --> 00:18:58,115
+Yani her seferinde karşılaştırmaları yer değiştirmeden ilerleyemiz için en artı birlik bir işlem yapmış oluyoruz totalde ve her turda bu değişerek devam ediyor. Şimdi burada left to right scan var.
+
+109
+00:19:29,652 --> 00:19:33,251
+Hatta şöyle diyelim, düzeltelim.
+
+110
+00:19:52,243 --> 00:19:59,224
+Evet, şimdi buradan baktığınızda, acaba biraz önce konuştuklarımız doğru muydu diye bir kez daha size sorayım.
+
+111
+00:20:09,683 --> 00:20:10,483
+Evet efendim.
+
+112
+00:20:11,843 --> 00:20:21,183
+Hocam ben bir şey sormak istiyorum da, biz burada pivotu en küçük değer olarak seçtik. En büyük değer olarak seçseydik de yine aynı sonuca ulaşmayacak mıydı?
+
+113
+00:20:22,463 --> 00:20:26,163
+Şu anda biz en küçük değer üzerinden bir analizimizi tamamlayalım, sonrasına bakalım.
+
+114
+00:20:26,663 --> 00:20:26,883
+Tamam.
+
+115
+00:20:28,723 --> 00:20:38,163
+Evet, en küçük değer de biraz önce arkadaşımızın anlattığı yaklaşım doğru mudur, yanlış mıdır? Acaba durma noktaları 4-5'e mi gidecek, ne olacak?
+
+116
+00:20:42,996 --> 00:21:12,975
+Evet arkadaşlar, geçtiğimiz haftada birazcık açıkçası size serzenişte bulunmuştum, derse katılmıyorsunuz diye. Maalesef birinci ve ikinci sınıfta bu işler çok daha farklı oluyor. Hele şu anda online'ı geçtiğimizden beri üçüncü sınıfların performansından pek mutlu değilim. Bu derste de yani bazı şeyleri anlamıyor olabilirsiniz, o zaman sorabilirsiniz ama katkı sağlamadan ders ilerletmeyeceksiniz.
+
+117
+00:21:12,996 --> 00:21:42,356
+tekrar ediyorum. Mutlaka birilerinin söz alması gerekiyor. Geçen hafta 15 kişiye sordum. 10'u yoktu zaten derste. Bunu bana yaptırmayın. Ders katkıda bulun. Çok zor bir şey sormuyorum. Böyle bir kez de B-Boot'un 1 olduğu durumda analizi yaptığımızda neyle karşılaşacağız diyorum. Ertuğrul biraz önce bir senaryo söyledi. Sanki doğruymuş gibi gözüküyordu. Ama şu anda left to right scan ve right to left scan'i bir kez daha konuştuğumuzda acaba doğru mu diye bir kez daha soruyorum.
+
+118
+00:21:42,996 --> 00:21:45,815
+Evet Rabia
+
+119
+00:21:45,815 --> 00:21:48,576
+Evet
+
+120
+00:21:48,576 --> 00:21:55,036
+Soldan sağa giderken A1'de yani 2S durur
+
+121
+00:21:55,036 --> 00:22:01,875
+Sağdan sola giderken de doğrudan 1'e kadar gelir orada durur
+
+122
+00:22:01,875 --> 00:22:02,996
+Evet
+
+123
+00:22:02,996 --> 00:22:03,875
+Şimdi
+
+124
+00:22:03,875 --> 00:22:06,815
+Soldan çok teşekkür ederim Rabia
+
+125
+00:22:06,815 --> 00:22:08,315
+Soldan sağa giderken
+
+126
+00:22:08,315 --> 00:22:11,996
+A1'e kadar
+
+127
+00:22:11,996 --> 00:22:23,996
+Pardon A1'de duruyor çünkü birden büyük bir değer arıyorum ben. 2, 2 bulduğu anda duruyor. İş bitti. Daha gitmeyecek. Ama sağdan sola ilerlerken ne oluyor?
+
+128
+00:22:26,135 --> 00:22:39,896
+Kendinden düşük. Var mı diye bakıyor. Hiçbir şey kendinden düşük olmadığı için de en sonunda indis i ve j'ye baktığımızda i yukarısı olsun, j aşağısı olsun sıfıra kadar ulaşıyor.
+
+129
+00:22:39,895 --> 00:22:42,155
+Böylece orta noktada buluşmuyorlar
+
+130
+00:22:42,155 --> 00:22:48,635
+Biraz önce Ertuğrul arkadaşınızla konuşurken sanki 4 ile 5'e doğru ilerliyormuş gibi bir senaryoyu konuştuk
+
+131
+00:22:48,635 --> 00:22:51,235
+Ama hiç kimseden bir reaksiyon gelmedi
+
+132
+00:22:51,235 --> 00:22:57,235
+O yüzden bunu iki kez daha vurgulamak adına ve doğrusunu konuşmak adına tekrar üzerinden geçtik
+
+133
+00:22:57,235 --> 00:22:58,695
+J en başa kadar gidiyor
+
+134
+00:22:58,695 --> 00:23:02,395
+O zaman bir turda oluşan karşılaştırma
+
+135
+00:23:02,395 --> 00:23:05,555
+Buraya C-Words diyelim
+
+136
+00:23:12,372 --> 00:23:24,372
+n artı 1 oluyor. Bir sonraki turda artı n oluyor. Bu şekilde devam ediyor. En son kaç olacak?
+
+137
+00:23:28,339 --> 00:23:33,939
+En son bölerek ilerlediğinizde, pivot'u aldığınızda, totalde kaç karşılaştırma yapmış olacak?
+
+138
+00:23:47,988 --> 00:23:52,307
+Evet, cevap bekliyorum. Bravo ya, lütfen sen sorar mısın?
+
+139
+00:23:52,307 --> 00:23:56,788
+Eee, kata kadar gidecek.
+
+140
+00:23:56,788 --> 00:24:00,067
+İşte zaten git.
+
+141
+00:24:00,067 --> 00:24:13,668
+Eee, burada sormak istediğim, split ettiğimizde, eee, split ederek aşağıya en uç noktaya indiğimizde, en küçük hale getirdiğimizde en son yapılması gereken karşılaştırma sayısı.
+
+142
+00:24:13,668 --> 00:24:21,568
+Şu anda 7 tane eleman var. En sonunda 2 tane eleman kalacak.
+
+143
+00:24:24,048 --> 00:24:25,008
+7 değil mi?
+
+144
+00:24:26,008 --> 00:24:30,068
+7'de n artı 1 yaptığımıza göre yani n elemanda n artı 1 karşılaştırma olacak.
+
+145
+00:24:30,068 --> 00:24:31,127
+Pardon hocam.
+
+146
+00:24:33,227 --> 00:24:41,107
+Artı 3 olacak arkadaşlar. En son turda 2 tane eleman kaldığında bu karşılaştırma sayısı 3 olacak.
+
+147
+00:24:41,107 --> 00:24:48,467
+soldan sağdan gelecek ilk karşılaştırmalar birer karşılaştırma en son bir tanesi i ya da j birbirini geçmesi için
+
+148
+00:24:48,467 --> 00:24:54,348
+ya sağa ya da j'yi azaltarak sola geçmesi için bir tane daha olacak toplamda 3 tane karşılaştırma olacak.
+
+149
+00:24:54,348 --> 00:25:07,488
+Peki bu split ederek ilerlediğimizde bizim ulaşacağımız normal bölme işlemi dışında yaptığımız işin aslında maliyeti bize.
+
+150
+00:25:08,208 --> 00:25:10,988
+Bölme işlemi 2cn bölü 2 idi.
+
+151
+00:25:11,107 --> 00:25:17,987
+Bu da FN fonksiyonunun maliyeti. Bunun karşılığı nedir? Enes de de olur.
+
+152
+00:25:20,987 --> 00:25:23,267
+Hocam ben 3'ü anlayamadım ya.
+
+153
+00:25:24,367 --> 00:25:29,867
+Şimdi şöyle ifade edeyim. 1 ve 2 kaldığımda en son.
+
+154
+00:25:32,967 --> 00:25:39,967
+1, 2 birden küçük mü diye bakacağız. 1, 2'den büyük mü diye bakacağız.
+
+155
+00:25:39,967 --> 00:25:47,567
+artı bir de bunların indislerinin birbirlerini geçmesi gerektiği için ya i sağ tarafa geçecek ya j sol tarafa geçecek.
+
+156
+00:25:47,907 --> 00:25:49,827
+Üçüncü karşılaştırmayı da böyle yapmış olacağız.
+
+157
+00:25:52,567 --> 00:25:53,307
+Anlaşıldı mı Yeres?
+
+158
+00:25:53,447 --> 00:25:54,507
+Anladım hocam. Teşekkür ederim.
+
+159
+00:25:55,687 --> 00:26:01,607
+Çünkü şu halinde de aslında n tane var ama n artı bir birlik bir karşılaştırma yapıyoruz.
+
+160
+00:26:01,607 --> 00:26:09,708
+Şimdi bu Fn fonksiyonunu düşündüğünüzde Fn'in bir kısaltılmış hali var mıdır?
+
+161
+00:26:09,967 --> 00:26:10,667
+Sercan?
+
+162
+00:26:12,087 --> 00:26:16,607
+n artı bir çarpı n artı iki bölü iki eksi üç.
+
+163
+00:26:17,488 --> 00:26:18,247
+Teşekkür ederim.
+
+164
+00:26:21,187 --> 00:26:25,007
+Bu bizim fm fonksiyonumuz.
+
+165
+00:26:25,247 --> 00:26:30,007
+Buradan gelen de Theta n kare.
+
+166
+00:26:31,627 --> 00:26:34,127
+Doğal olarak buradan çıkan da
+
+167
+00:26:34,127 --> 00:26:39,407
+Quicksort'un worst case senaryada yani sıralı olma durumunda
+
+168
+00:26:39,407 --> 00:26:55,667
+en kralik bir karmaşıklığa sahip oldu. O yüzden birçok durumda bu tarz veri grubu elimizde varsa QuickSource tercih etmek yerine hem Stable olduğu için de MertSource'u tercih edebiliyoruz.
+
+169
+00:26:55,667 --> 00:27:00,687
+Eğer Space ile ilgili bir kısıtımız yoksa. Zülfü bir el kaldırmıştı ona da söz vereyim.
+
+170
+00:27:03,148 --> 00:27:09,087
+Merhaba hocam. Ben de bunu söylemek için aslında, siz sormuştunuz ya FN nedir diye ben de bunu söyleyecektim.
+
+171
+00:27:09,407 --> 00:27:11,008
+Peki teşekkür ederim Zülfü
+
+172
+00:27:11,008 --> 00:27:15,988
+Şimdi buradan bir de average case'e geçelim
+
+173
+00:27:15,988 --> 00:27:19,288
+Average case'i de şöyle kısaca yazayım
+
+174
+00:27:19,288 --> 00:27:25,708
+Çok netali bir şekilde analizini yapmayacağız ama en azından average case ile ilgili de yaklaşımı görmüş olalım
+
+175
+00:27:25,708 --> 00:27:29,107
+Best case ve worst case'ini konuştuk QuickSort'un
+
+176
+00:27:29,107 --> 00:27:31,788
+Birincisi
+
+177
+00:27:31,788 --> 00:27:35,648
+Rask ile
+
+178
+00:27:35,647 --> 00:27:40,407
+Bir dizimiz var.
+
+179
+00:27:47,188 --> 00:27:51,188
+Burada bir assumption yapıyoruz.
+
+180
+00:27:54,996 --> 00:27:55,996
+partition.
+
+181
+00:28:04,948 --> 00:28:08,307
+herhangi bir noktada oluşabilir.
+
+182
+00:28:20,915 --> 00:28:23,475
+ve bunun olasılığı da
+
+183
+00:28:32,564 --> 00:28:43,803
+olarak bir bölü N olacak. Ve buradan yola çıkarak rekürans bağımsını yazalım.
+
+184
+00:29:06,996 --> 00:29:19,996
+Şimdi rekürans bağımsını yazarken bir kere 1 bölü n olasılığını yazdım. Sonra s 0'dan başladı ve n-1'e kadar gitti.
+
+185
+00:29:19,996 --> 00:29:40,475
+n artı 1 artı c n 3 s artı c n 3 n eksi 1 s.
+
+186
+00:29:44,980 --> 00:29:48,099
+sor en büyük bir için
+
+187
+00:29:51,571 --> 00:29:54,571
+initial condition'u 0.
+
+188
+00:29:55,571 --> 00:29:59,571
+Tabii şunu da yazmak lazım.
+
+189
+00:30:01,071 --> 00:30:15,571
+Her iki condition da yazmamız lazım. Çünkü bir tarafta, bir tanesinin pivot seçildiği durumda oluşacak kontrol durumuyla pivotın diğer tarafında kalan durumun condition'ı.
+
+190
+00:30:15,571 --> 00:30:17,571
+Bunu çözümlediğinizde,
+
+191
+00:30:22,036 --> 00:30:44,435
+Yaklaşık olarak 2N, LN, LN, L. Bu da 1.38N, L2 tabanında L çıkıyor. Yaklaşık olarak da %38 Best Gaze'e göre daha fazla bir karşılaştırma söz konusu arkadaşlar.
+
+192
+00:30:44,435 --> 00:31:08,936
+Evet, her bir elemanın pivot olma ihtimalini değerlendirdiğimiz bir formül yazdık. Bunun için bir bölü n'e bölüyoruz her birinin ihtimal dahilinde olduğunu bulmak için. n artı bir burada bizim için fn fonksiyonunu temsil ediyor.
+
+193
+00:31:08,935 --> 00:31:16,555
+bu noktada initial combination'ları 0 ve 1 içinde 0 olarak belirlemiş oluyoruz.
+
+194
+00:31:17,635 --> 00:31:23,215
+Evet, QuickSort ile ilgili anlatacaklarımız bu kadar.
+
+195
+00:31:25,275 --> 00:31:29,575
+Şimdi birazcık search operation'lara geçelim.
+
+196
+00:31:33,076 --> 00:31:41,935
+Divide and Concure kısmını kapatalım. Ama Divide and Concure'da Decrease and Concure konusuyla ilgili olanları anlattıklarımızı lütfen unutmayalım. Hüma?
+
+197
+00:31:41,935 --> 00:31:42,935
+Hüma?
+
+198
+00:31:42,935 --> 00:31:47,416
+Hüma, önceki sayfaya bir üç saniye baksam olur mu? Bir şey yazamadım da.
+
+199
+00:31:47,416 --> 00:31:51,416
+Tabii ki.
+
+200
+00:31:52,115 --> 00:31:52,955
+Teşekkür ederim.
+
+201
+00:31:54,836 --> 00:32:11,155
+Şunu da söylemeden geçmeyelim o zaman önceki sayfaya gelmişken. Bizim QuickSort'umuzun performansını doğrudan etkileyen maddelerden bir tanesi nedir?
+
+202
+00:32:22,516 --> 00:32:27,516
+Evet, oldum. Pivot seçimi hocam. Evet, pivot seçimi nasıl yapılabilir?
+
+203
+00:32:27,516 --> 00:32:36,516
+En baştaki eleman seçilebilir, en sondaki eleman seçilebilir, medyan seçilebilir veya rastgele seçilebilir.
+
+204
+00:32:36,516 --> 00:32:47,516
+Peki, teşekkür ediyorum. Şimdi, search algoritmlerle devam ediyoruz. Neler vardı elimizde?
+
+205
+00:32:47,516 --> 00:32:51,776
+bir reni üzerinde arama yapacağımız zaman
+
+206
+00:32:58,099 --> 00:33:00,099
+Evet, Mahmut Murat Akhtan.
+
+207
+00:33:00,099 --> 00:33:03,099
+Hocam, linear search var, binary search var.
+
+208
+00:33:03,099 --> 00:33:08,099
+Evet, linear search, başlı ifadeyle sequential search.
+
+209
+00:33:10,099 --> 00:33:25,099
+Bu search 2 dizi üzerinde uygulayabilirsiniz. Unsorted data set ve sorted data set.
+
+210
+00:33:27,955 --> 00:33:28,955
+Binary Search
+
+211
+00:33:28,955 --> 00:33:31,955
+Mutlaka
+
+212
+00:33:31,955 --> 00:33:34,175
+Salt olması gerekiyor.
+
+213
+00:33:34,275 --> 00:33:36,455
+Salted Data Set olması gerekiyor.
+
+214
+00:33:41,587 --> 00:33:46,687
+Peki, Binary Search'un dışında başka kullanabileceğimiz bir yapı var mı?
+
+215
+00:33:50,420 --> 00:33:51,019
+Orkun.
+
+216
+00:33:52,539 --> 00:33:52,880
+Heap?
+
+217
+00:33:57,199 --> 00:34:05,559
+Olabilir ama Heap'den daha uygun bir arama yöntemi soruyorum.
+
+218
+00:34:07,379 --> 00:34:14,199
+Çünkü Heap'de Max belli, Max Heap var, Min Heap var. Orada aşağı inerek bulabilirsiniz ama orada da bazı sıkıntılar var.
+
+219
+00:34:15,600 --> 00:34:16,100
+Evet Orkun.
+
+220
+00:34:16,100 --> 00:34:21,579
+Pardon, tekrar ekrallarım zannettim. Başka biri.
+
+221
+00:34:31,764 --> 00:34:39,764
+Binary Search Tree arkadaşlar. Binary Search Tree nasıl çalışıyordu?
+
+222
+00:34:46,931 --> 00:35:06,051
+binary search tree nasıl çalışıyordu? Zülfü Korkmaz. Merhaba hocam. 2i ve 2i artı 1 şeklinde ilerletiyorduk. Büyük veya küçük olma durumuna göre soluna veya sağına dağlanarak. Böyle hatırlıyorum ben.
+
+223
+00:35:09,112 --> 00:35:13,991
+Yani sağ tarafta ne oluyordu?
+
+224
+00:35:13,991 --> 00:35:35,891
+Burada mesela sol tarafta küçük, sağ tarafta büyük sayı var. Eğer üst tarafın indisinin 1 olduğunu kabul edelim, alt tarafın 2 ve 3 diye ilerlediği için iki katı olma durumunda küçük tarafa doğru dağlanırken iki kat artı 1 olma durumunda da büyük tarafa doğru dağlanır.
+
+225
+00:35:35,891 --> 00:35:45,631
+Tamam. Teşekkür ederim. Şimdi arkadaşlar o zaman Diniar Sövç'ün karmaşıklığı Börsker'e nedir?
+
+226
+00:35:53,172 --> 00:35:55,931
+Başka arkadaşlar, teşekkür ederim sizin.
+
+227
+00:36:00,244 --> 00:36:01,783
+Yusuf Siyah, Poliras?
+
+228
+00:36:02,984 --> 00:36:05,083
+N hocam. Worst case'de, best case'de her türlü.
+
+229
+00:36:06,443 --> 00:36:09,563
+Worst case'de N. Sıralı ya da sıralı olmamız fark eder mi?
+
+230
+00:36:09,803 --> 00:36:10,423
+Fark etmez.
+
+231
+00:36:12,843 --> 00:36:14,543
+Peki. Emin misin?
+
+232
+00:36:15,763 --> 00:36:16,363
+Evet.
+
+233
+00:36:17,264 --> 00:36:19,744
+Tamam. Binary Search, worst case.
+
+234
+00:36:26,132 --> 00:36:29,331
+Evet arkadaşlar, Bynum Keyes, Bynum Search, Rose Case
+
+235
+00:36:39,188 --> 00:36:40,507
+Ertuğrul'a söz vereyim.
+
+236
+00:36:42,668 --> 00:36:44,907
+Logaritma N kitabında N.
+
+237
+00:36:46,027 --> 00:36:48,747
+Peki, Binary Search 3 nedir Ertuğrul?
+
+238
+00:36:49,927 --> 00:36:50,587
+O da aynı.
+
+239
+00:36:52,367 --> 00:36:57,288
+Evet, Ertuğrul Binary Search 3 için Logaritma kitabında N dedi worst case'e.
+
+240
+00:36:59,747 --> 00:37:00,608
+Başka fikri olan?
+
+241
+00:37:01,127 --> 00:37:02,327
+N hocam, pardon.
+
+242
+00:37:03,188 --> 00:37:04,967
+Neden N? Peki, Ertuğrul?
+
+243
+00:37:04,967 --> 00:37:15,267
+sırayla dizinin elemanlarını küçük bir şekilde eklersek, küçülür bir şekilde, mesela 7'den sonra 6'yı ekleriz, 6'dan sonra 5'i ekleriz.
+
+244
+00:37:15,747 --> 00:37:16,207
+Bu şekilde.
+
+245
+00:37:17,407 --> 00:37:18,407
+Aynen o şekilde.
+
+246
+00:37:18,407 --> 00:37:31,427
+Evet yani ağacın dengeli olmaması durumunda eklenen elemanların sırasına bağlı olarak ki burada küçükten büyüğe doğru elemanları eklediğimizde bu noktada ağacımız dengeli olmayacaktır.
+
+247
+00:37:31,507 --> 00:37:34,228
+Bir tarafa yıkılmış olacaktır.
+
+248
+00:37:34,227 --> 00:37:54,188
+bu da bize bir dezavantaj getirir ve worst case burada karmaşıklıklarını da bu arama yaklaşımlarının görmüş olduk. Peki bunlara ek olarak ne gelecek? Hash yöntemi gelecek.
+
+249
+00:37:54,188 --> 00:38:04,488
+hashing. Hashing'de biz ne yapıyoruz? Onu daha önce size sorayım.
+
+250
+00:38:08,596 --> 00:38:10,596
+Taklı bir kişi.
+
+251
+00:38:14,835 --> 00:38:15,335
+Efe?
+
+252
+00:38:17,095 --> 00:38:23,815
+Hocam, farklı veri setlerini bir fonksiyondan geçirip onları haritalama işlemi yapıyoruz.
+
+253
+00:38:24,835 --> 00:38:43,395
+Evet, bizim bir key değerimiz var. Bu key değerini bir hash fonksiyona veriyoruz. Bu hash fonksiyon bize başka bir değer üretiyor ve biz üretilen bu değerin bulunduğu bölgeye gidip saklamak istediğimiz value'yu yazıyoruz.
+
+254
+00:38:43,395 --> 00:38:53,655
+Bunun sınırsız sayıda key değeri kullanabildiğimiz versiyonuna ne ad veriliyor?
+
+255
+00:38:59,476 --> 00:39:12,955
+Yani hashleme olmadan biz bunu aslında günlük hayatımızda yapıyoruz. Doğrudan gidip bir key'e erişip oraya ilgili değeri atama işine ve oradan tekrar değere ulaşma işine.
+
+256
+00:39:16,195 --> 00:39:17,515
+Tolga'ya söz vereyim.
+
+257
+00:39:18,375 --> 00:39:19,635
+Lookup table mu oluyor hocam?
+
+258
+00:39:21,015 --> 00:39:24,236
+Yok. Tam olarak değil. Sercan?
+
+259
+00:39:25,035 --> 00:39:27,896
+Hocam ben dümdüz indisleme olarak düşündüm ama.
+
+260
+00:39:27,896 --> 00:39:56,915
+ne diyoruz biz ona? Direct address table. Yani bildiğiniz diziler. Biz aslında tüm keyler için bir alan kullanabilecek olsaydık uzayda bulunan o zaman doğrudan dizi mantığıyla A0, A1, A102, A1509, A12782 diyerek doğrudan erişip ilgilen değeri atayıp
+
+261
+00:39:56,915 --> 00:39:58,875
+ya da oradan ilgili değeri çekebilirdik.
+
+262
+00:39:59,816 --> 00:40:03,035
+Ama bunun bazı sıkıntıları var.
+
+263
+00:40:03,135 --> 00:40:05,056
+Neden direct address table'u kullanamıyoruz?
+
+264
+00:40:14,900 --> 00:40:16,900
+farklı bir kişi.
+
+265
+00:40:23,923 --> 00:40:25,923
+Rafet?
+
+266
+00:40:25,923 --> 00:40:33,923
+Hocam, indisler integer olduğu için bazı mesela dizi değerlerimiz integer olmadığı zamanlar o indise ulaşamıyoruz.
+
+267
+00:40:33,923 --> 00:40:39,923
+Mesela bir string değerine bir integer değerine dönüştürüp işleyip o şekilde ulaşmamız gerekebiliyor.
+
+268
+00:40:39,923 --> 00:40:51,923
+Diyelim şey yapabiliyoruz, string aldık, dönüşüm yaptık. Yani bu evet bir problem. Diyelim sayısal bir değer var.
+
+269
+00:40:55,860 --> 00:41:10,039
+Evet, sen de izah et. Sayısal bir değer varsa o zaman yapmamıza gerek kalmayabilir. Yani o zaman her sayısal değer için hash kullanmadan da direkt address table'ı mı kullanalım? Bu mümkün müdür?
+
+270
+00:41:11,399 --> 00:41:24,099
+Bilemedim hocam. Yani şimdi bir uzay var arkadaşlar. Bu uzayda 5 tane nokta var. Problem yok. 6-7.
+
+271
+00:41:24,099 --> 00:41:28,139
+Sonra bu uzay dolmaya başlıyor. Sorunumuz ne?
+
+272
+00:41:34,164 --> 00:41:34,904
+Evet Hüma.
+
+273
+00:41:36,083 --> 00:41:37,783
+Integri mi olması lazım hocam?
+
+274
+00:41:38,923 --> 00:41:40,584
+Integri değil, senerek hocam.
+
+275
+00:41:41,003 --> 00:41:45,303
+Integri problemini çözdüğümüzü varsayalım ya, bunların hepsinin ürettiği sayı integer olsun.
+
+276
+00:41:46,203 --> 00:41:46,603
+Rabia.
+
+277
+00:41:50,195 --> 00:41:54,176
+Sayılar çok fazla geldiği için örneğin bir dizide diyelim ki
+
+278
+00:41:54,176 --> 00:41:55,995
+Duyamıyorum, senin çok boğuk geliyor sesin.
+
+279
+00:41:56,555 --> 00:41:58,015
+Şimdi alabiliyor musunuz hocam?
+
+280
+00:41:58,115 --> 00:41:58,475
+Aynen.
+
+281
+00:42:00,315 --> 00:42:03,975
+Diyelim ki dizimiz, uzayımız sıfırla bir milyon arası.
+
+282
+00:42:05,555 --> 00:42:12,675
+Beş tane sayımızı saklayacağız hash'ta ama o zaman bir milyonu közü alışmamız gerekti.
+
+283
+00:42:12,675 --> 00:42:19,956
+Onun yerine örneğin mod 5 kullanarak bir hash koddan geçiririz.
+
+284
+00:42:20,195 --> 00:42:35,416
+Böylelikle uzayın bir milyon olduğu zaman dizimizdeki sayı beş tane ise bile daha düşük derecedeki dizide saklayabiliriz.
+
+285
+00:42:35,416 --> 00:42:36,755
+Şuan çok ifade edemedim ama.
+
+286
+00:42:37,536 --> 00:42:42,115
+Tamam olsun ben oradan alayım bağlamaya çalışalım birlikte. Ondan sonra zaten bir ara vereceğim.
+
+287
+00:42:42,115 --> 00:42:52,355
+Şimdi normalde siz dizi kullanmaya kalksaydınız dizinizi çok büyük miktardaki elemanları saklamak istediğinizde dizinizin boyutu yetmeyecekti.
+
+288
+00:42:53,395 --> 00:43:03,975
+Bunu engellemenin yolu bizim o alanlar için birden fazla aynı noktaya değen elemanları belirli bir bölgede saklamamız.
+
+289
+00:43:03,975 --> 00:43:10,335
+Çok fazla sayıda elemanı dizide saklamamız için 2 milyon, 3 milyon, 5 milyonluk alan ayırmamız gerekiyor.
+
+290
+00:43:10,435 --> 00:43:11,675
+Bu bizim için maliyet bir iş.
+
+291
+00:43:11,675 --> 00:43:20,015
+artı bizim ürettiğimiz, ulaşmak istediğimiz değerler, örneğin String'den elde ediyoruz, büyük değerler olabilir.
+
+292
+00:43:20,795 --> 00:43:36,635
+Büyük değerlere 1200'e bir değer koyarken, 3'ü boş bırakırsanız biraz önce Rabia'nın da anlattığı gibi, siz diziyi 1 milyonluk açsanız da dizinin 991. adresini kullanırken 3. adresini kullanmamış oluyorsunuz.
+
+293
+00:43:36,635 --> 00:44:04,015
+Bu tarz kullanımlar bizim için çok fazla derecede bonkör kullanımlar ve israf anlamına geliyor. Bunları daha derli toplu kullanmak, kaynakları daha uygun şekilde kullanmak adına uzayın yeterince büyüdüğünü de düşünürsek bunları karşı tarafta belirli adreslere maplememiz gerekiyor.
+
+294
+00:44:07,891 --> 00:44:13,852
+Örneğin, bu buraya, bu buraya, bu buraya, bu da buraya map olsun, bu da buraya map olsun.
+
+295
+00:44:14,451 --> 00:44:20,391
+Bazıları doğal olarak hash fonksiyonundan geçtikten sonra aynı adreslere map diyecekler.
+
+296
+00:44:20,791 --> 00:44:31,812
+Tabii bu da hashing'in bir sorunun. Yani üniversitesinde bulunan elemanların hash fonksiyonundan geçtikten sonra aynı değeri üretiyor olmaları size bir sorun oluşturuyor.
+
+297
+00:44:31,812 --> 00:44:35,572
+Bu sorunu çözmenin yollarını da biraz sonra konuşuyor olacağız.
+
+298
+00:44:35,572 --> 00:44:56,612
+Şimdi bir 15 dakikalık bir ara vereceğim çünkü şarjım çok azaldı. Elektrik olmadığı için de tek bir noktada bir hat var. Oraya bilgisayarımı bağlayacağım. 15 dakikada yeniden dolmasını sağlamaya çalışacağım. O yüzden saat 2'de yeniden görüşelim ve kaldığımız yerden devam edelim. Teşekkür ediyorum. Görüşmek üzere.
+
+299
+01:01:41,780 --> 01:02:01,359
+Evet, yeniden merhaba arkadaşlar. Bu elektrik kesintisi nedeniyle birazcık bugün zor bir gün yaşıyorum. Anlayışınız için çok teşekkür ederim. Şu anda şarjım da çok fazla değil. Gidebildiğimiz yere kadar ilerleyeceğiz. Tekrar yeniden hatırlatayım katılanlara.
+
+300
+01:02:01,359 --> 01:02:10,559
+Bugün saat 3'te size e-mail üzerinden bir link paylaşacağım 3'e doğru
+
+301
+01:02:10,559 --> 01:02:18,960
+Bu link üzerinden Elif Hoca'nın grubuna bağlanacaksınız ders grubuna, uygulama saatine
+
+302
+01:02:18,960 --> 01:02:24,120
+Orada Sevgi Hoca sizlere ödevdeki soruları çözüyor olacak
+
+303
+01:02:24,120 --> 01:02:26,479
+Katılmanızı tavsiye ediyorum
+
+304
+01:02:26,479 --> 01:02:29,699
+Bir sonraki ödevde de tam tersini yapacağız
+
+305
+01:02:29,699 --> 01:02:31,299
+Bizim grubumuz aktif olacak
+
+306
+01:02:31,300 --> 01:02:34,379
+Elif Hoca'nın öğrencileri bizim gruba bağlanıyor olacaklar.
+
+307
+01:02:35,439 --> 01:02:36,840
+Bunun dışında
+
+308
+01:02:40,467 --> 01:02:56,888
+Burada bir chatte bir ifade var, ona bakıyorum. Şeyi anlayamadım, Bedirhan bir cümle yazmış ama ben de mesajın öncesi olmadığı için anlam veremedim. 2018 girişlerin olduğu grupta ama doluymuş diye bir ifade var.
+
+309
+01:02:58,827 --> 01:03:07,967
+Şimdi kaldığımız yerden devam edelim. HASH'larla ilgili konuşuyorduk. Dolayısıyla HASH'teki, evet Sercan.
+
+310
+01:03:07,967 --> 01:03:11,668
+Hocam ödevle alakalı bir anket yollayacaktınız bir de ama
+
+311
+01:03:11,668 --> 01:03:15,048
+Değil mi?
+
+312
+01:03:16,508 --> 01:03:17,008
+Sercan
+
+313
+01:03:17,008 --> 01:03:19,808
+Sesim gelmiyor mu hocam size?
+
+314
+01:03:25,204 --> 01:03:25,923
+duyamıyorum.
+
+315
+01:03:28,263 --> 01:03:28,903
+Hocam.
+
+316
+01:03:29,423 --> 01:03:30,343
+Şu an geliyor sesim.
+
+317
+01:03:31,124 --> 01:03:34,584
+Hocam, BNF'de Sercan konuştu da sesi gelmedi galiba size.
+
+318
+01:03:35,103 --> 01:03:37,743
+Evet, bir ancak. Sercan lütfen tekrar alabiliriz.
+
+319
+01:03:38,204 --> 01:03:40,843
+Dev ile alakalı bir de anket paylaşacaktınız ama dedim.
+
+320
+01:03:41,023 --> 01:03:43,423
+Evet, onu da mail ile atacağım. İkisini birlikte atacağım.
+
+321
+01:03:43,943 --> 01:03:46,923
+Şu anda vakit kaybetmemek adına o anketi şu an atmıyorum.
+
+322
+01:03:47,343 --> 01:03:48,603
+Ve teşekkür ederim hatırlatma için.
+
+323
+01:03:48,603 --> 01:03:52,183
+Evet, hashingin karmaşıklığı doğal olarak O1 arkadaşlar.
+
+324
+01:03:52,183 --> 01:04:10,784
+Ama göreceksiniz bazı durumlarda birinci adımda bulunmasa da teoride O, N'e gitme ihtimali olsa da hep O1 olarak karşımıza çıkıyor olacak nedenini ve detaylarını ilerleyen slaytlarda biraz daha anlatıyor olacağız
+
+325
+01:04:10,784 --> 01:04:14,763
+Bu arada pardon yanlışlıkla elin bas
+
+326
+01:04:14,763 --> 01:04:18,463
+Şimdi eashing kısmını biraz daha derinlemesine görmeye başlayalım
+
+327
+01:04:18,463 --> 01:04:23,043
+birazcık hızlanıyorum ki şarjım neticesinde sizlere biraz daha bir şey anlatabileyim.
+
+328
+01:04:23,043 --> 01:04:32,263
+Bir key'den bahsettik. Bu key student ID olabilir, TC ID olabilir, personal ID olabilir.
+
+329
+01:04:36,307 --> 01:04:51,768
+ya da unique bir ID olabilir, hiç fark etmez. Birini temsil etmesi, bir eşayi temsil etmesi bizim için yeterli. Bunu bir BlackBox'a veriyorsunuz. İşte bu BlackBox'ın içerisinde aslında bir hash function var.
+
+330
+01:04:53,447 --> 01:04:58,167
+Ve bu fonksiyon size bir adres değer üretiyor.
+
+331
+01:05:06,068 --> 01:05:20,467
+ve bu adres değerinden yola çıkarak siz bellek alanında üretilen adresi kullanarak gidip oraya ilgili değeri yerleştiriyorsunuz.
+
+332
+01:05:20,627 --> 01:05:24,727
+İşte biz bu alan için de HashTable ismini kullanıyoruz.
+
+333
+01:05:25,807 --> 01:05:30,748
+HashTable'lar çok sıklıkla karşınıza gelebilecek veri yapısı.
+
+334
+01:05:30,748 --> 01:05:32,887
+bunu Java'da da biliyorsunuz.
+
+335
+01:05:32,887 --> 01:05:51,768
+Buradaki amacımız bizim key value şeklindeki değerleri saklamak ve bu operasyonları, search operasyonlarını açıkçası biraz daha hızlı hale getirmek.
+
+336
+01:05:51,768 --> 01:05:58,508
+Peki, hash table'da hangi operasyonları yapıyoruz arkadaşlar genelde?
+
+337
+01:06:09,844 --> 01:06:22,844
+Evet, fikri olan var mı? Htable'da hangi operasyonlar yapılıyor? Search, Insert ve Delete.
+
+338
+01:06:25,460 --> 01:06:36,619
+Bu operasyonlar sıklıkla ise HatchTable'lardan faydalanmayı tercih ediyoruz. Normalde dizide de bir search operasyonu rahatlıkla yapabiliyoruz ama
+
+339
+01:06:36,619 --> 01:06:50,119
+insert operasyonu yapmaya çalıştığımızda insert dizi üzerinde biraz maliyetli. Linkli listede de insert aslında daha az maliyetli ama orada da search işlemi maliyetli hale geliyor.
+
+340
+01:06:50,119 --> 01:06:54,259
+bu veri yapılarının hepsinin artı ve eksi yönleri var.
+
+341
+01:06:54,779 --> 01:06:59,019
+Hatch table üzerinde de bu 3 tane operasyonu sıklıkla yapıyor olacağız.
+
+342
+01:06:59,019 --> 01:07:14,759
+Bir kere hash fonksiyonumuzun mutlaka kolay bir şekilde hesaplama yapabiliyor olması önemli.
+
+343
+01:07:14,879 --> 01:07:15,419
+Bu ne demek?
+
+344
+01:07:15,419 --> 01:07:22,259
+minimum matematik işlemine sahip olmasını tercih ediyoruz.
+
+345
+01:07:27,476 --> 01:07:30,515
+2, hash deneye dikkat edeceğiz.
+
+346
+01:07:32,976 --> 01:07:36,015
+Fonsiyonumuzu belirlerken, consistency'ye.
+
+347
+01:07:37,615 --> 01:07:45,175
+3, çok önemli, uniform address generation'a dikkat ediyor olacağız.
+
+348
+01:07:52,851 --> 01:07:54,851
+Uniform Address Generation neden önemli?
+
+349
+01:08:06,708 --> 01:08:07,708
+Ertuğrul.
+
+350
+01:08:09,208 --> 01:08:19,987
+Hocam, eğer her değer için, her key value için aynı şeyi üretirse veya birkaç tanesi için, bu sefer onları aynı yere kaydetmemiz gerekecek. Problem oluşacak.
+
+351
+01:08:20,647 --> 01:08:34,087
+Evet, teşekkür ediyorum. Örneğin, mod alma işlemini çok sıklıkla kullanıyoruz. Bu genelde mod alacağımız sayı table'ın boyutuyla doğrudan ilişkili.
+
+352
+01:08:34,087 --> 01:08:56,807
+bunu 10 seçerseniz örneğin o zaman 100 anahtar değeri için, 10 anahtar değeri için, 40, 50 anahtar değerleri için hep aynı değeri üretirsiniz ve bu uniform bir adres üretme şekli değildir.
+
+353
+01:08:56,807 --> 01:09:10,607
+O yüzden modüler işlem yaparken göreceksiniz ağırlıklı olarak prime number'lardan faydalanacağız ve mümkünse onun katı ve ikinin katı olanlardan uzak duruyor olacağız.
+
+354
+01:09:11,827 --> 01:09:17,167
+Şimdi şöyle hemen bir tane daha ekleyelim.
+
+355
+01:09:29,108 --> 01:09:33,807
+Bilinen en temel hash fonksiyonu nelerdir arkadaşlar?
+
+356
+01:09:36,724 --> 01:09:37,243
+Bir,
+
+357
+01:09:40,563 --> 01:09:42,603
+Division yaklaşımlarıyla
+
+358
+01:09:42,603 --> 01:09:44,123
+kullandığımız
+
+359
+01:09:44,123 --> 01:09:45,444
+hash fonksiyonları
+
+360
+01:09:45,444 --> 01:09:48,524
+iki,
+
+361
+01:09:55,796 --> 01:10:08,355
+Multiplication yaklaşımlarıyla kullandığımız hash fonksiyonları. Division metodda ağırlıklı olarak modular aritmatik kullanıyoruz ve modular aritmatik genelde one-way bir değer üretiyor.
+
+362
+01:10:09,256 --> 01:10:21,415
+Hash'i göreceksiniz, hash yöntemini kriptografik çözümlerde de kullanılabiliyor. Burada çift yönlü bir enkript ettiğimiz bir şeyi dekript etme şansımız yok.
+
+363
+01:10:21,415 --> 01:10:32,135
+one way olarak bunu oluşturabiliyoruz hash fonksiyonunu. O yüzden bazı noktalarda kriptografide hashing yönteminin çok sıklıkla kullanıldığını göreceksiniz.
+
+364
+01:10:32,815 --> 01:10:49,796
+Division metoda baktığınızda bir hash key veriyorsunuz ve burada biraz önce yazdığımız gibi key mod m dediğimizde bu genelde tablo uzunluğuna denk geliyor demiştik.
+
+365
+01:10:49,796 --> 01:11:06,175
+örneğin m11 olsun, kill 25 olsun, işte hash kill dediğinizde size 3 değerini üretiyor.
+
+366
+01:11:15,988 --> 01:11:19,468
+Böyle de gelip 25 değerini store ediyorsunuz.
+
+367
+01:11:19,468 --> 01:11:24,547
+Hashing'in dezavantajı nedir arkadaşlar?
+
+368
+01:11:32,916 --> 01:11:50,356
+hashing uygularken yani bir değerden fonksiyona verip yeni bir değer üretirken dezavantajı nedir? Birden fazla da değerin aynı noktaya MEP etmesi. İşte biz buna collusion diyoruz arkadaşlar.
+
+369
+01:12:01,779 --> 01:12:06,740
+Collision oluştuğu takdirde bunu çözme şansımız var mı?
+
+370
+01:12:11,412 --> 01:12:13,412
+Gersin.
+
+371
+01:12:16,724 --> 01:12:20,724
+Hocam, Collision olduğundan çözme şansımız olmuyor sanırım.
+
+372
+01:12:22,184 --> 01:12:25,423
+Collision olduğunda çözme şansımız var, bunun yöntemleri var.
+
+373
+01:12:26,144 --> 01:12:35,803
+Open hashing, closed hashing gibi, open addressing, separate chaining gibi yaklaşımlar var. Bunları görüyor olacaksınız.
+
+374
+01:12:36,463 --> 01:12:39,963
+Kısaca, Collision'un ne olduğunu bir kez daha söylemek gerekirse,
+
+375
+01:12:39,963 --> 01:12:51,724
+birden fazla eleman için aynı değerin üretilmesi durumunda aynı adrese denk gelen iki elemanın saklanması problemi bizim için bir kollajion problemi.
+
+376
+01:12:51,724 --> 01:12:59,003
+Bu arada arkadaşlar maalesef şarjım şu anda %2'ye düştü. Daha fazla devam etme şansım olmayacak.
+
+377
+01:12:59,484 --> 01:13:07,463
+Bugünkü durum için anlayışınızdan dolayı teşekkür ediyorum. Üzgünüm böyle bir durum olduğundan dolayı şu an hala elektrikler gelmedi.
+
+378
+01:13:07,463 --> 01:13:15,443
+Şimdi bunun telafisini önümüzdeki hafta lab saatini kullanarak gerçekleştireceğiz.
+
+379
+01:13:15,443 --> 01:13:17,963
+Hash fonksiyonlarını önümüzdeki hafta bitireceğiz.
+
+380
+01:13:18,483 --> 01:13:22,483
+Bugün saat 3'den itibaren size mail ile göndereceğim.
+
+381
+01:13:22,923 --> 01:13:28,224
+Bağlanacağınız linkte ödevin çözümünü detaylı bir şekilde görüyor olacaksınız.
+
+382
+01:13:29,523 --> 01:13:32,383
+Sevgi Hoca size bunları anlatıyor olacak.
+
+383
+01:13:32,483 --> 01:13:35,043
+Ayrıca anketi de linkini de birazdan paylaşıyor olacağım.
+
+384
+01:13:35,043 --> 01:13:44,084
+şu an bilgisayarımda herhangi bir elektrik yok ama telefon üzerinden size bunları aktarabiliyor olacağım.
+
+385
+01:13:45,283 --> 01:13:52,664
+Bugünkü derse katılımınız için teşekkür ediyorum. Çat diye kapanmaması için de %2'deyken dersi sonlandırıyorum.
+
+386
+01:13:53,084 --> 01:14:00,063
+Önümüzdeki hafta görüşmek üzere. Kendinize iyi bakın. Katkı sağlayan arkadaşlara da ayrıca çok teşekkür ediyorum. Görüşmek üzere.
+
+387
+01:14:00,063 --> 01:14:01,804
+Teşekkür ederiz hocam. İyi günler.

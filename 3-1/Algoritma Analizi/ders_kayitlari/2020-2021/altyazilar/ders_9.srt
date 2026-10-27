@@ -1,0 +1,2679 @@
+1
+00:02:05,459 --> 00:02:20,920
+Evet arkadaşlar, herkese merhaba. Hoş geldiniz. Beşinci haftaya geldik. Geçtiğimiz hafta yarım gün olması nedeniyle dersimizi gerçekleştirememiştik. Öncelikle hepinizin geçmişi cumhuriyeti var. Mutlu olsun.
+
+2
+00:02:20,920 --> 00:02:39,140
+Bu hafta şu an gördüğüm kadarıyla 40 kişi şu anda derste var aktif olarak. 2-3 dakika beklememe rağmen hala sınıf mevcutu çok az, yarı yarıya. Bu konuda hassasiyet rica etmiştim.
+
+3
+00:02:41,140 --> 00:02:45,340
+Şimdi derse başlayacağız. Katılan arkadaşlara zamanında teşekkür ediyorum öncelikle.
+
+4
+00:02:45,339 --> 00:03:10,639
+Bir duyurum olacak. Cuma günü bir ödev vereceğiz. Cuma ödev sabahtan verilecek. Cumartesi gece yarısına kadar süreniz olacak. Bir değişiklik olmazsa iki tane soru var. İki soruyu çözmeniz istenecek. Ödev koşullarını zaten okuyor olacaksınız. Nereden nasıl yüklemeniz gerektiği konusunda bilgi sahibi olacaksınız.
+
+5
+00:03:10,640 --> 00:03:27,519
+O yüzden planlamanızı ona göre yaparsanız sevinirim. Cuma günü sabahtan verilecek bir ödev. Cumartesi gece yarısı süre sonlanacak. Ödevin kontrolüyle ilgili de detaylı bilgiyi ödev içerisinde buluyor olacaksınız.
+
+6
+00:03:27,519 --> 00:03:51,879
+Bu hafta yeni bir konuya geçeceğiz. Hatta yeni birkaç konuya geçeceğiz. Brute force, yaklaşım nedir? Exhaustive search nedir? Decrease and concur, divide and concur, algoritma geliştirme teknikleri nasıl çalışır? Bunlarla ilgili örnekler yapıyor olacağız.
+
+7
+00:03:51,879 --> 00:04:01,959
+şimdiden iyi dersler diliyorum herkese. Muhtemelen gene 2 artı 1 olarak dersimizi gerçekleştiriyor olacağız.
+
+8
+00:04:03,519 --> 00:04:13,760
+Süreyi tam şu anda kestiremiyorum anlatacağımız konulara bağlı tabii ki ama yaklaşık olarak 3 saatlik bir süreç öngörüyorum önümüzdeki zaman dilimi içerisinde.
+
+9
+00:04:14,379 --> 00:04:21,659
+Dersle ilgili inş olana kadar sormak istediğiniz herhangi bir şey var mı ya da dersin başında bir fikir belirtmek isteyen var mı?
+
+10
+00:04:21,879 --> 00:04:25,120
+Hocam ödevi hangi platformdan paylaşacaksınız?
+
+11
+00:04:26,320 --> 00:04:37,040
+Şimdi ödevi normalde bu online yöntemize TR üzerinden paylaşabiliriz diye düşünüyorum. Burada doküman paylaşılabildiğini gördüm. Doğru mudur?
+
+12
+00:04:38,919 --> 00:04:40,779
+Doğru hocam paylaşabiliyorlar.
+
+13
+00:04:40,779 --> 00:04:48,239
+Tamam. Normal şartlarda öyle olacak gibi ama ekstra bir durum olursa zaten size UCC üzerinden mail göndereceğiz.
+
+14
+00:04:48,239 --> 00:04:55,239
+o mail üzerinden yani örneğin başka bir yere yükleme durumu söz konusu olursa linki size gönderiyor oluruz maille.
+
+15
+00:04:58,180 --> 00:04:59,260
+Teşekkür ederim.
+
+16
+00:04:59,659 --> 00:05:01,200
+Rica ederim. Başka soruslar var mı?
+
+17
+00:05:05,396 --> 00:05:12,115
+Peki, o zaman derse başlayabiliriz. Şimdi öncelikle ben bir kamerayı durdurayım, ekran paylaşımına geçeyim.
+
+18
+00:05:23,668 --> 00:05:31,928
+Şimdi farklı yaklaşımlar var dedik. Algoritmik yaklaşımlar. Dersin başında konuşmuştuk bunları. İşte dinamik programlama var dedik.
+
+19
+00:05:32,867 --> 00:05:45,848
+Branch and bound tekniği var dedik. Divide and Conquer yaklaşımı var dedik. Böyle bu tarz değişik algoritma çözümleri söz konusu.
+
+20
+00:05:45,848 --> 00:06:02,188
+Bunların içerisinde brute force dediğimiz bir kavram var ve tabii hemen arkasından da exhaustive search dediğimiz yaklaşım geliyor.
+
+21
+00:06:06,932 --> 00:06:10,932
+Brutfoss nedir arkadaşlar? Hemen size sorayım.
+
+22
+00:06:15,987 --> 00:06:17,587
+Hocam ben söyleyebilir miyim?
+
+23
+00:06:17,707 --> 00:06:18,208
+Tabi, isim?
+
+24
+00:06:19,247 --> 00:06:19,987
+Ahmet Yaman.
+
+25
+00:06:20,507 --> 00:06:21,607
+Tamam, Ahmet dinliyorum seni.
+
+26
+00:06:22,787 --> 00:06:28,207
+Bir şifreyi veya bir olayı çözmek için sırasıyla denemeye brute force yolu.
+
+27
+00:06:28,567 --> 00:06:44,248
+Yani genel olarak doğru olmakla birlikte aslında brute force doğrudan bir problemi çözmek için uygulanabilecek herhangi bir üzerinde optimizasyon yapmadan
+
+28
+00:06:44,248 --> 00:06:53,307
+en basit uygulanan yönteme verdiğimiz isim. Şifre çözme üzerinden anlattığınızda ilk aklınıza gelecek çözüm şifre çözmek için tek tek denemektir.
+
+29
+00:06:53,307 --> 00:07:01,307
+Bu da brute force bir yaklaşımdır. Aslında bir başka ismiyle de biraz sonra göreceksiniz. Exhaustive Search olarak adlandırılıyor.
+
+30
+00:07:02,028 --> 00:07:06,828
+Çünkü tek tek şifreyi bulmak için bütün seçenekleri, olası bütün seçenekleri deniyorsunuz.
+
+31
+00:07:07,168 --> 00:07:09,367
+Hemen brute force'un tanımını yazmak istiyorum.
+
+32
+00:07:09,367 --> 00:07:15,407
+Ondan sonra Brut Fos örnekleriyle devam edeceğiz
+
+33
+00:07:28,723 --> 00:07:34,903
+Tabii çok yaygın şekilde bu yaklaşımı birçok problemin çözümünde kullanıyoruz.
+
+34
+00:07:36,323 --> 00:07:42,543
+Ama brute force yaklaşımların dezavantajlarından bir tanesi her zaman geçerli olmakla birlikte
+
+35
+00:07:42,543 --> 00:07:48,763
+optimize edilmiş çözümler olmayabiliyor.
+
+36
+00:07:49,623 --> 00:07:57,303
+Ama bazen de diğer algoritmik yaklaşımları tercih etmek yerine brute force'u kullanmak daha akılcı olabiliyor.
+
+37
+00:07:57,303 --> 00:08:00,944
+çünkü diğer yöntemlerin de kendi içerisinde rezavantajları var.
+
+38
+00:08:31,603 --> 00:08:43,723
+Şimdi ilk birinci örneğe bakacak olursak A üzeri n değerini hesaplamak istiyorsunuz. Brute force yaklaşım nedir?
+
+39
+00:08:50,163 --> 00:08:52,163
+Hedja, Piktor
+
+40
+00:08:58,163 --> 00:09:00,523
+A çarpı, A çarpı, A çarpı, A
+
+41
+00:09:00,523 --> 00:09:10,643
+Evet. En defa A'yı çarpmak burada en temel matematiksel işlemi yaparken uyguladığımız yaklaşım.
+
+42
+00:09:19,539 --> 00:09:45,899
+Biraz sonra göreceksiniz bu ağacları n'e hesaplarken sadece a çarpı a çarpı a işlemleri yaparak çözmüyoruz. Farklı bakış açıları da var. Bu bakış açılarını bir sonraki turda yeni algoritma tekniğimize geçtiğimizde değerlendiriyor olacağız. Bir de şöyle bir örnek verelim.
+
+43
+00:09:50,803 --> 00:09:55,803
+Bu nedir problemin ismi?
+
+44
+00:10:00,000 --> 00:10:00,719
+EBOB bulma mı?
+
+45
+00:10:01,459 --> 00:10:08,199
+Evet, en büyük ortak bölünü bulma. M ile N'ye ait olan. Bunun Brutfos çözümü nedir?
+
+46
+00:10:12,916 --> 00:10:20,916
+El kaldır mısınız arkadaşlar bu arada? Tek tek sözüye giriyorsunuz ama kimin kim olduğunu bilmiyorum. El kaldırarak sözü isterseniz sevinirim.
+
+47
+00:10:22,916 --> 00:10:24,916
+Evet, selam.
+
+48
+00:10:28,211 --> 00:10:39,691
+Hocam, %ala-ala gidiyoruz. Sonra değiştiriyoruz. A, %b gibisinden. Birbirlerine atıyoruz yani. O şekilde devam ediyor.
+
+49
+00:10:40,632 --> 00:10:48,071
+Şimdi bundan daha farklı bir yaklaşım brute force olarak sorduğumu söylesem. Sercan?
+
+50
+00:10:49,911 --> 00:10:56,071
+Hocam, biri ulaşana kadar bütün çarpanlarını bulup sonra ortak olanlarını işaretleyebiliriz.
+
+51
+00:10:56,071 --> 00:11:25,971
+diyebiliriz. En son da o ortak olanları en büyüğüne alırız. Evet yani tek tek deneriz. Bölünebilirliğine bakarız. Bölünebildiği noktadaki en büyük ortak sayının ne olduğunu buluruz. Böylece bütün seçenekleri denemiş oluruz. Brute force yaklaşım burada ilk akla gelen yaklaşım iki sayının ilgili ikiden itibaren sayılara bölünebilirliğine bakmak ve bu bölünebilirliğe baktığımızda en son kesiştiği
+
+52
+00:11:25,971 --> 00:11:40,171
+noktayı bulmak ilk akla gelen çözüm olarak karşımıza çıkıyor. Peki sort tarafına gelelim. Sort algoritmaları içerisinde brute force yaklaşıma uygun ilk algoritmalar aklınıza ne olarak gelir?
+
+53
+00:11:46,227 --> 00:11:46,848
+Orkun.
+
+54
+00:11:46,848 --> 00:11:47,968
+Selection Sort olabilir.
+
+55
+00:11:48,007 --> 00:11:48,387
+Orkun.
+
+56
+00:11:49,527 --> 00:11:51,208
+Sort veya Selection Sort.
+
+57
+00:11:52,067 --> 00:11:53,527
+Orkun sesin kesindi.
+
+58
+00:11:54,907 --> 00:11:57,467
+Bubble Sort veya Selection Sort.
+
+59
+00:11:57,747 --> 00:11:59,568
+Selection Sort ve Bubble Sort.
+
+60
+00:12:00,287 --> 00:12:01,407
+Çok güzel iki örnek.
+
+61
+00:12:03,408 --> 00:12:05,047
+Bunları...
+
+62
+00:12:08,947 --> 00:12:14,647
+Bu şekilde brute force çözüm olarak adlandırılmasının sebebi nedir? Orkun'a sorayım.
+
+63
+00:12:17,067 --> 00:12:23,247
+Aklıma n-kare olarak geliyor ama biz elimizdeki bütün elemanları her eleman için sürekli taramak zorunda kalıyoruz. O yüzden.
+
+64
+00:12:23,247 --> 00:12:29,727
+Evet, aynen öyle. Bir, bu iki algoritmanın da en kötü durum karmaşıklığı n-kare.
+
+65
+00:12:29,727 --> 00:12:41,747
+ve biz bu noktada elimizdeki dizilime bakmadan, dizilim iyi ya da kötü olmadan her dizilim için aslında aynı yaklaşımı buluyoruz.
+
+66
+00:12:41,808 --> 00:12:44,947
+Bir taneyi alıyoruz Selection Sort'ta, geri kalanları ile karşılaştırıyoruz.
+
+67
+00:12:45,367 --> 00:12:49,087
+Sonra en küçükle o turdaki ya da en büyükle yerini değiştiriyoruz.
+
+68
+00:12:49,087 --> 00:12:59,347
+Bubble Sort'ta da bu sefer ikili yan yana olan sayıları karşılaştırıyoruz ve küçük olanı başa büyük olanı sonra itecek şekilde her tur aynı işi yapıyoruz.
+
+69
+00:12:59,347 --> 00:13:09,747
+ama burada veri sıralı verilmiş, sırasız verilmiş, karışık verilmiş hiçbir şekilde bizim bakış açımızı değiştirmiyor ve uygulanabilecek en basit yaklaşımlardan bir tanesi.
+
+70
+00:13:09,887 --> 00:13:20,827
+Çünkü temel amacımız en küçüğü bir turda bulup ilk en küçük elemanı başa almak sonra bunu diğer en eksi bir eleman içinde gerçekleştiriyor olmak.
+
+71
+00:13:20,827 --> 00:13:49,087
+bunların karmaşıklık analizini yapmayacağım. Zaten çok rahat yapabileceğiniz ve belki de bunlara bir göz atmanız gereken algoritmalar nasıl yapıldığını ama sonuçta brute force yaklaşımlar. Peki şimdi gelelim şöyle söyleyelim mesela search algoritmaları var. Search algoritmaları içerisinde yine brute force olarak adlandırabileceğimiz ne var?
+
+72
+00:13:56,563 --> 00:13:57,763
+Liner search hocam.
+
+73
+00:13:58,424 --> 00:14:02,283
+El kaldırarak rica edilir miyim? Mahmut Murat Aktan.
+
+74
+00:14:03,903 --> 00:14:06,203
+Liner search diyecektim ama söylerim zaten hocam.
+
+75
+00:14:06,643 --> 00:14:12,904
+Evet, olsun. Liner search bir başka ismiyle sequential search.
+
+76
+00:14:17,203 --> 00:14:22,203
+yaptığımız, pardon şunu şöyle yazalım.
+
+77
+00:14:29,076 --> 00:14:43,635
+tüm elemanlara tek tek bakmak. Bunun tabii sıra dizi ve sırasız dizi için farklı versiyonları da olabilir ama göreceksiniz ki ve biliyorsunuz ki search algoritmaları sequential search'tan çok daha ileri gitmiş durumda.
+
+78
+00:14:44,635 --> 00:14:56,475
+Karmaşıklığı oldukça azaltmış durumdayız. Bunları da önümüzdeki hafta yani hash algoritmaları da dahil almak üzere gördüğümüzde aradaki farkı bir kez daha uygulamış olacağız.
+
+79
+00:14:56,475 --> 00:15:06,675
+Peki, brute force, özel olarak ismini yazayım, string matching
+
+80
+00:15:11,220 --> 00:15:14,220
+Ne yapar? Bu Algoritma Bakış açısı.
+
+81
+00:15:20,179 --> 00:15:21,179
+Sercan
+
+82
+00:15:23,179 --> 00:15:33,179
+Aradığımız stringi aradığımız tekst üzerinde harf harfi sürekli bulmaya çalışır. Bulamadığı noktada bir harfleri gidip tekrar o kelimeleri bulmaya çalışır. İlerler.
+
+83
+00:15:33,179 --> 00:15:43,179
+Teşekkür ederim. Gayet güzel bir özet oldu. Örneğin A, B, C, D, E, F, G metni içerisinde buna string 1 diyelim.
+
+84
+00:15:43,179 --> 00:15:51,159
+Buna da string 2 diyelim, F, G'yi arıyoruz diyelim.
+
+85
+00:15:52,279 --> 00:15:57,839
+Şimdi bu ikinci stringi birinci string içerisinde var mı yok mu diye baktığımızda
+
+86
+00:15:57,839 --> 00:16:03,159
+bunun brute force yaklaşımı yani akla gelen en basit ve en kolay yönetimi
+
+87
+00:16:03,159 --> 00:16:09,119
+iki pattern arasındaki uzunluğa bakacak olursak ki
+
+88
+00:16:09,119 --> 00:16:13,619
+hani biz aslında küçük olanı büyüğün içerisinde arıyoruz böyle verildiğini varsayıyoruz.
+
+89
+00:16:14,559 --> 00:16:23,259
+A ile E'yi karşılaştırdık. Tutmadı. Sonra bir kaydadık string 2'yi. Bu sefer E ile B'yi karşılaştırdık.
+
+90
+00:16:23,339 --> 00:16:29,779
+Tutmadı. Sonra E ile C'yi karşılaştırdık. İşte bu bildiğiniz bir pattern matching algoritması.
+
+91
+00:16:29,779 --> 00:16:38,260
+Sadece stringte değil, aynı zamanda yani tekst için değil, aynı zamanda bunu bioinformatikte de gen dizilimleri için
+
+92
+00:16:38,260 --> 00:16:48,340
+çok sıklıkla kullanıyorlar. Bu gen diziliminin tutup tutmadığı noktasında baktıkları, yaptıkları araştırmada kullanıyorlar bu yaklaşımı.
+
+93
+00:16:48,340 --> 00:16:58,620
+Çok maniyetli bir iş. Niye tek tek bütün hepsini denemeniz gerekiyor ama geçtiğimiz sene veri yapılarında da gördünüz.
+
+94
+00:16:58,619 --> 00:17:19,979
+Bu sene açıkçası ağır yöntemizmi ilerleyen haftalarında da göreceksiniz. Çok daha akıllıca olan arama yaklaşımları var. Bir tekst içerisinde başka bir patrona. O yüzden onları kullanmak daha akıllıca gözüküyor genel şartlar içerisinde.
+
+95
+00:17:19,979 --> 00:17:28,599
+Şimdi, tabi bu problemlere ek olarak şu başlıkları da yazalım.
+
+96
+00:17:30,040 --> 00:17:44,979
+Closed pair ve convex, iç bir key, dış bir key şekillerdeki kullandığımız algoritma, convex hal algoritması.
+
+97
+00:17:45,540 --> 00:17:48,979
+Bunları da brute force yaklaşımıyla çözebiliyoruz.
+
+98
+00:17:49,980 --> 00:18:14,440
+birbirlerine en yakın iki noktayı veri seti içerisinde bulmak istiyorsak bu iki en yakın noktayı bulabilmek için her noktanın diğer noktalara olan uzaklığını hesaplamak ve her hesaplayışımızdaki bulduğumuz değeri minimumla karşılaştırarak en küçüğü saklamak ilk akla gelen en temel yaklaşımlardan bir tanesi.
+
+99
+00:18:14,439 --> 00:18:25,299
+closes payroll görütmesinden. Bir de exhaustive search kavramı var. Onun için de bir sonraki sayfamıza geçelim.
+
+100
+00:18:43,955 --> 00:18:56,955
+Exhaustive Search'e örnek verebilecek bir arkadaş rica edeyim. Bu verdiğimiz örneklerin dışında.
+
+101
+00:19:10,963 --> 00:19:25,963
+Evet, şu an 49 kişi var. 49 kişiden bir kişinin adını ben okumadan siz ek alırsanız. Peki, Ahmet Umut Alkan.
+
+102
+00:19:29,811 --> 00:19:39,511
+Ahmet Umut Alkan. Peki, derste değil. Atakan Tekoğlu.
+
+103
+00:19:45,172 --> 00:19:46,371
+Atakan Tekoğlu.
+
+104
+00:19:48,652 --> 00:19:49,791
+Derste değil.
+
+105
+00:19:52,191 --> 00:19:53,371
+Eren Tutuş.
+
+106
+00:19:56,391 --> 00:19:59,291
+Buradayım hocam ama bir fikrim yok açıkçası.
+
+107
+00:19:59,851 --> 00:20:03,231
+Yani exhaustive, ne demek exhaustive anlamını biliyor musun?
+
+108
+00:20:04,192 --> 00:20:06,971
+Böyle şey, zorlu gibi bir şey miydi yoksa?
+
+109
+00:20:06,971 --> 00:20:14,891
+Evet, o şekilde anlandırabiliriz. Peki, buradan yola çıkacak olursak exhaustive search demek,
+
+110
+00:20:14,891 --> 00:20:19,731
+yani çok böyle yoğun, yorucu bir aramadan bahsediyoruz. Ne akla gelebilir?
+
+111
+00:20:25,683 --> 00:20:26,683
+Biremedim hocam.
+
+112
+00:20:28,023 --> 00:20:29,563
+Bütün olasılıkların denenmesi.
+
+113
+00:20:30,903 --> 00:20:37,443
+O minatörik problemlerde bütün olasılıkların denenmesine biz exhaustive search diyoruz.
+
+114
+00:20:37,443 --> 00:20:40,443
+Biz bunu yazalım.
+
+115
+00:21:01,619 --> 00:21:02,939
+Mikrofonlarımızı kapatalım.
+
+116
+00:21:23,028 --> 00:21:29,347
+bir tanesi meşhur traveling salesman problemi.
+
+117
+00:21:35,859 --> 00:21:39,259
+Evet, bu problem nedir? Kim tarifler?
+
+118
+00:21:46,036 --> 00:21:48,036
+Evet, Muhammed Şamil Fidan.
+
+119
+00:21:53,715 --> 00:22:02,115
+Muhammed Şamil Fidan. Peki, terste yok. Rabia Güleç.
+
+120
+00:22:04,695 --> 00:22:05,815
+Buradayım hocam.
+
+121
+00:22:06,915 --> 00:22:07,375
+Efendim?
+
+122
+00:22:08,056 --> 00:22:09,395
+Sesimi alıyor musunuz?
+
+123
+00:22:09,755 --> 00:22:10,476
+Duyamıyorum şimdi.
+
+124
+00:22:11,455 --> 00:22:21,795
+Şey, tam bilmiyorum ama sanırım bir tane postacı ya da pazarlamacı işte şehirleri gezecek ve şehirlere sadece bir kere uğrayacak.
+
+125
+00:22:21,795 --> 00:22:27,855
+ve sonra başladığı şehre geri dönecek gibi bir şeyler öyle tam bilmiyorum öyle bir şeyler hatırlıyorum.
+
+126
+00:22:28,035 --> 00:22:32,256
+Tamam peki teşekkür ederim cevabın için. Seda'ya söz verelim. Mehmet Seda'ya söz verelim.
+
+127
+00:22:38,228 --> 00:22:45,807
+Evet, EK almıştı Mehmet. Peki, Yasir, Yasir'e söz vereyim.
+
+128
+00:22:47,407 --> 00:22:48,528
+Hocam, sesim geliyor mu?
+
+129
+00:22:48,988 --> 00:22:49,528
+Geliyor şimdi.
+
+130
+00:22:50,747 --> 00:23:05,167
+Hocam, enkisay yolu bulmak gibi bir şey değil mi yani işte, bir yerden bir yere uğrayacakmış işte, traveling salesman işte, enkisay yol bulmak yani işte, bütün şey, destinationlere geçmek için enkisay yolu bulma yöntemi almıyor mu problemi?
+
+131
+00:23:05,167 --> 00:23:16,567
+Bir de Yasin böyle birden öyle bir söyledin ki ya işte en kısa yolu bulma işi falan dedin ama bu en kısa yolu bulma algoritmaları biliyorsun farklı farklı amaçlar için kullanılıyor
+
+132
+00:23:16,567 --> 00:23:22,847
+Ya hocam anlatamadım de hani shortest, aynı zamanda efficient bir şey
+
+133
+00:23:22,847 --> 00:23:29,447
+Tabii tabii ya ben aslında ne demek istediğini anlıyorum muhtemelen doğru şey de söylüyorsun ama üzerine bir vurgulayalım
+
+134
+00:23:29,447 --> 00:23:43,908
+Burada biraz önceki arkadaşınızın söylediği ile de bağlayarak söyleyelim. Şehirler var ve işte burada pazarlamacı dersiniz, postacı dersiniz, kim olursa olsun ya da şu anki gerçek hayatta lojistik firmaları değil.
+
+135
+00:23:43,908 --> 00:24:02,847
+dağıtacağı ürünler var ve her şehre de bir ürün bırakacağını varsayıyorsunuz ve çıkış noktanız var. Bu çıkış noktası üzerinden hangi rotayı takip ederek her noktaya uğrama işini gerçekleştirebilirsiniz. Bunun hesabını yapıyorsunuz.
+
+136
+00:24:02,847 --> 00:24:17,607
+Bu da bütün noktalar arasındaki bu graf yapısı gerektiriyor. Bütün noktalar arasındaki edge'leri yani yolların uzunluklarına hesaplayıp bunların olası kombinasyonlarına bakmak demek.
+
+137
+00:24:17,607 --> 00:24:31,747
+Bu 81 il olduğunu düşünürsek Türkiye'de bu noktada bütün bu 81 tane ilin kombinasyonunu yapmak demek ki bu çok çok yüksek bir miktar.
+
+138
+00:24:31,747 --> 00:24:40,287
+bu nedenle bu tarz exhaustive search algoritmalarında en sayısı belirli bir değerinin üzerine çıkarsa
+
+139
+00:24:40,287 --> 00:24:46,687
+o zaman bunu açıkçası exhaustive searchta çözmeyi tercih etmiyoruz.
+
+140
+00:24:46,767 --> 00:24:48,847
+Bunun için alternatif çözümlerin peşine düşüyoruz.
+
+141
+00:24:49,647 --> 00:24:53,287
+Bunlara böyle örnekler veriyorum. Bunlara geri geldiğinde daha detaylı bir şekilde konuşacağız.
+
+142
+00:24:54,168 --> 00:24:55,187
+Napsack problemi var.
+
+143
+00:24:56,808 --> 00:24:58,808
+Napsack problemi de şöyle bir problem.
+
+144
+00:24:59,027 --> 00:25:00,747
+Bir hırsız var, bir eve giriyor.
+
+145
+00:25:01,748 --> 00:25:19,668
+çuvalını alabileceği bir kapasite var. Evdeki eşyaların da ağırlıklarını ve değerlerini biliyoruz. Bunları gözeterek o çuvalına sığdırabileceği en yüksek değere sahip hangi eşyaları seçmesi gerekiyor?
+
+146
+00:25:19,668 --> 00:25:38,768
+buna karar vermeye çalışıyoruz ki bu aslında işin hikayesi. Biz bunun farklı başka günlük hayattaki problemlerle bu senaryoyu kullanabiliriz. Birçok bu tür maksimizasyon işi, minimizasyon işi yapmak istediğimiz problemler var. Constraintleri olan.
+
+147
+00:25:38,767 --> 00:25:51,767
+Burada normal şartlarda daha görmediğiniz çok daha efektif algoritmalar var ama exhaustive search dediğiniz zaman bildiğiniz bütün eşyaların
+
+148
+00:25:52,627 --> 00:26:06,127
+tek tek tekli, ikili, üçlü, dörtlü, enli kombinasyonların yani aslında alt küme sayısını en tane eşya varsa iki üzeri en tane bütün kombinasyonu deniyorsunuz.
+
+149
+00:26:06,127 --> 00:26:22,127
+10 tane eşya varsa 1024 tane olasılık var demektir. Ve bu olasılığın en yüksek hangi olasılığın değer ürettiğini bulup diyorsunuz ki işte şu şu eşyaları alırsa hırsız hem çoğalığına sığar hem de evden alabilirsiniz.
+
+150
+00:26:22,627 --> 00:26:48,127
+C'ye yüksek miktardaki eşyayı almış oluyorsunuz. Ama tabii 10 tane de sorun yok ama eşya sayısı 100'e çıktığı zaman 2 üzeri 100 bir anda işin rengini değiştiriyor. Bu nedenle bu tarz kombinatörik problemler diyoruz. Yani burada permitasyon olabilir, kombinasyon olabilir. Bunlar genelde NP hard problemler olarak karşımıza çıkıyor.
+
+151
+00:26:48,127 --> 00:26:57,248
+Bunu da dersin son haftalarında, muhtemelen son haftasında daha detaylı bir şekilde görüyor olacaksınız.
+
+152
+00:26:57,248 --> 00:27:10,107
+Evet şimdi daha fazla farklı örnek üzerinden gitmeyeceğim. Çünkü brute force yaklaşım nedir, exhaustive search nedir bunları anlatmak adına bazı örnekler verdim.
+
+153
+00:27:10,107 --> 00:27:27,147
+Ama bizim esas konumuza geçmek istiyorum. Bizim bugün esas üzerinde ilerleyeceğimiz konular, decrease and compute ve divide and compute algoritmik yaklaşımları neler, nasıl uygulanır, bunlara bakacağız.
+
+154
+00:27:27,147 --> 00:27:35,727
+Şimdi hemen bir başlığımızı atalım. Önce decrease and compute diyelim.
+
+155
+00:27:46,708 --> 00:27:49,708
+Evet, Decrease and Compute'u kim tariflemek ister?
+
+156
+00:27:59,763 --> 00:28:01,163
+Evet, talha bacak.
+
+157
+00:28:07,059 --> 00:28:11,859
+Talha bacak. Evet, derste yok.
+
+158
+00:28:17,259 --> 00:28:19,859
+Yusuf Ziya Poyraz.
+
+159
+00:28:20,859 --> 00:28:23,059
+Hocam, divide and conquer biliyor onu.
+
+160
+00:28:23,059 --> 00:28:25,059
+Dikrizen, conquer.
+
+161
+00:28:25,059 --> 00:28:27,059
+Elimizdeki...
+
+162
+00:28:29,059 --> 00:28:31,059
+Birinden ses geliyor ama.
+
+163
+00:28:31,059 --> 00:28:35,059
+Onun da Kürçlak konuşuyor. Pardon, Ziya konuşuyor.
+
+164
+00:28:35,059 --> 00:28:43,539
+Dividend-concure şey, elimizdeki problemi farklı küçük problemlere bölüp hepsini ayrı ayrı çözüp sonra tekrar birleştirmek.
+
+165
+00:28:43,539 --> 00:28:52,719
+Evet, güzel. Peki, Dividend-concure'da böyle bir yaklaşımı tarifliyorsan, Dikriz'de bunu nasıl değiştiriyor olabiliriz?
+
+166
+00:28:53,960 --> 00:28:57,400
+Bunda da kontrol ettiğimiz sayıları azaltıyor olabiliriz belki.
+
+167
+00:28:57,400 --> 00:29:07,140
+Yani baktığımız verinin hepsine bakmak yerine her seferinde azaltarak ilerliyor olabilir miyiz?
+
+168
+00:29:07,140 --> 00:29:13,979
+Evet, aynen öyle. Şimdi üç tane temel olarak kullanım şekli var.
+
+169
+00:29:15,360 --> 00:29:25,119
+Aslında decrease by a constant yani sabit bir değer ile azaltarak problem çözümünü.
+
+170
+00:29:31,539 --> 00:30:01,460
+by a constant factor var. Bu sefer sabit bir değişken, yani sabit bir değişkenden kastettiğimiz şu. Her turda o değişkenin değeri kadar azaltıyorsunuz. Bu değişkenin değeri turlar arasında değişmiyor. Bir de üçüncü bir yaklaşım var. Variable size decrease. Bu ise bir üstteki yaklaşımdan farklı olarak
+
+171
+00:30:01,539 --> 00:30:07,359
+her turda azalttığınız miktarın değişebileceğini söylüyor.
+
+172
+00:30:08,740 --> 00:30:18,159
+Şimdi birkaç slide önce size bir problem aslında vermiştim.
+
+173
+00:30:18,159 --> 00:30:24,179
+O problemi vermeden önce decrease by run concure tekniğini hemen bir çizerek göstereyim.
+
+174
+00:31:02,228 --> 00:31:06,228
+Evet, sad problem of size and x-tpeer.
+
+175
+00:31:13,940 --> 00:31:15,940
+bir çözüm üretiyoruz.
+
+176
+00:31:40,500 --> 00:31:42,500
+ve yönet, orizinal probleibler.
+
+177
+00:31:51,155 --> 00:31:56,155
+Şunu da şöyle biraz daha uzatalım.
+
+178
+00:32:05,332 --> 00:32:06,332
+türekli üs.
+
+179
+00:32:10,932 --> 00:32:28,932
+Şimdi her turda SAP problemi bir azaltma işinden bahsediyor. Biraz önceki örneğimizde A üzeri N'i konuştuk. Bu A üzeri N'i nasıl yazabiliriz? Decrees and Concure yaklaşımıyla çözüyorsak.
+
+180
+00:32:34,163 --> 00:32:36,823
+Başka bir isim Sercan'dan başka, Özgür Yaylı.
+
+181
+00:32:41,875 --> 00:32:43,215
+Şu an bilemedim hocam.
+
+182
+00:32:44,395 --> 00:32:49,195
+Yani her türda azaltma işlemi gerçekleştireceğiz. Reha'ya söz vereyim.
+
+183
+00:32:50,636 --> 00:32:57,015
+A üstlü N bölü 2 çarpı A üstlü N bölü 2 diye azaltabiliriz hocam bölme anlamında.
+
+184
+00:32:57,015 --> 00:33:02,015
+O noktaya geçmeden önce daha basit bir yaklaşım kullansak, yani doğrudur, yanlış değildir söylediğim.
+
+185
+00:33:03,556 --> 00:33:09,355
+Yani 1 çarpı A üstlü N, benim fikrim o yöndeydi.
+
+186
+00:33:09,716 --> 00:33:11,755
+Peki, şu Reha'ya söz vereyim.
+
+187
+00:33:16,276 --> 00:33:17,276
+Şurak.
+
+188
+00:33:20,276 --> 00:33:21,295
+Biraz az geliyor.
+
+189
+00:33:23,215 --> 00:33:27,015
+Her türde A'ya bölsek, yani derecesini azaltmış olsak?
+
+190
+00:33:28,595 --> 00:33:30,955
+Yani şöyle demek istiyorsun herhalde.
+
+191
+00:33:32,495 --> 00:33:33,515
+Bu şekilde.
+
+192
+00:33:34,696 --> 00:33:34,995
+Evet.
+
+193
+00:33:35,535 --> 00:33:36,015
+Doğru mudur?
+
+194
+00:33:36,395 --> 00:33:36,855
+Evet, evet.
+
+195
+00:33:36,855 --> 00:33:45,915
+Peki, yani biz her seferinde, biz A üzeri n-1 çarpı A şeklinde her seferinde 1-1 azaltarak ilerlesek.
+
+196
+00:33:46,235 --> 00:33:47,755
+Buradaki constant factorimiz ne oluyor?
+
+197
+00:33:48,415 --> 00:33:50,036
+Bu örnekteki 1 oluyor.
+
+198
+00:33:50,276 --> 00:33:53,156
+onu da formüze edecek olursak
+
+199
+00:33:53,156 --> 00:33:57,395
+Fn eşittir
+
+200
+00:33:57,395 --> 00:34:06,395
+burada Fn-1 çarpı A diyorum
+
+201
+00:34:06,395 --> 00:34:12,875
+buraya if n büyük sıfır yazıyorum
+
+202
+00:34:12,875 --> 00:34:16,456
+bu durumda alt satırına yazacağım
+
+203
+00:34:30,324 --> 00:34:30,863
+Ertuğrul.
+
+204
+00:34:32,564 --> 00:34:33,544
+Bir yazar hocam.
+
+205
+00:34:34,324 --> 00:34:34,704
+Evet.
+
+206
+00:34:37,063 --> 00:34:38,664
+Peki if koşulu var mı?
+
+207
+00:34:40,664 --> 00:34:42,324
+If yani
+
+208
+00:34:42,324 --> 00:34:44,563
+en büyüktür sıfır demiştik
+
+209
+00:34:44,563 --> 00:34:45,284
+diğerine zaten.
+
+210
+00:34:47,283 --> 00:34:48,523
+Diğer durumda da
+
+211
+00:34:48,523 --> 00:34:50,623
+bir oluyor. Daha küçük değerler
+
+212
+00:34:50,623 --> 00:34:51,763
+en eşittir.
+
+213
+00:34:51,863 --> 00:34:53,164
+Diğer durum nedir onu soruyorum.
+
+214
+00:34:53,803 --> 00:34:54,903
+En eşittir sıfır.
+
+215
+00:34:55,424 --> 00:34:56,843
+Bunu istiyorum o kadar.
+
+216
+00:34:57,443 --> 00:34:58,923
+Yani Ertuğrul'un
+
+217
+00:34:58,923 --> 00:35:03,363
+Yani bunun geçerli olduğunu bilmekle birlikte bunu şu anda matematiksel olarak ifade ediyoruz.
+
+218
+00:35:03,863 --> 00:35:13,203
+Burada yaptığımız şey böl ve yönet algoritmalarında azalt ve yönet algoritmalarında rekürsif olarak bir çözüm üretmenin peşinde oluruz.
+
+219
+00:35:13,203 --> 00:35:24,303
+Ve burada da rekürsif olarak çözüm üretmek için formüze ettik problemimizi ve durma noktasını da belirlemiş olduk.
+
+220
+00:35:24,303 --> 00:35:29,383
+m0 olduğu noktada 1 ile çarpılacak ve buna da initial condition'a geri verir.
+
+221
+00:35:29,483 --> 00:35:33,983
+Şimdi bu bahsettiğimiz şöyle yazalım.
+
+222
+00:35:37,264 --> 00:35:45,643
+Decrease by 1 and concur yaklaşımıyla.
+
+223
+00:35:45,643 --> 00:35:47,643
+Şimdi...
+
+224
+00:35:50,867 --> 00:36:01,107
+şöyle ifade edelim. Bir sonraki adımımızda decrease by a constant
+
+225
+00:36:04,467 --> 00:36:06,427
+faktör deseydik.
+
+226
+00:36:10,068 --> 00:36:13,267
+o zaman nabrzedk.
+
+227
+00:36:15,476 --> 00:36:18,115
+Yani bir bir azaltmıyor. Okan'a şu söz verelim.
+
+228
+00:36:20,115 --> 00:36:29,795
+Hocam, bir yerine mesela iki çıkarabiliriz. Konstant neyse. Ona göre de A'nın üzeri A kare gibi şekillenecekti.
+
+229
+00:36:30,835 --> 00:36:40,995
+Okan tam olarak doğru değil. Yani yaklaştığın ova doğru değil. Yanlış anlamadıysam. Başka söz almak isteyen.
+
+230
+00:36:44,563 --> 00:36:45,163
+Orkun?
+
+231
+00:36:46,443 --> 00:37:01,523
+Ben biraz daha toparlamak istiyorum hocam, arkadaşın dediğini. Enin değil de her defasında azalttığımız üssü bir değil de enin bölünebileceği bir tam sayı olarak yazar.
+
+232
+00:37:02,244 --> 00:37:06,963
+Aynen dediğin gibi. Buraya ben şu anda özelleşmiş halini yazacağım. En bölü iki diyorum.
+
+233
+00:37:06,963 --> 00:37:17,744
+ve üzeri 2 diyorum. Bu sonuçta gördüğünüz a üzeri n eşittir. a üzeri n bölü 2 üzeri 2 birbiriyle aynı ifadeye denk geliyor.
+
+234
+00:37:18,363 --> 00:37:25,404
+Şimdi buradaki değişen her seferinde n'i n bölü 2 olarak hesaplıyoruz.
+
+235
+00:37:25,404 --> 00:37:30,244
+Yani constant faktörümüz aslında n bölü 2 olarak gerçekleşiyor.
+
+236
+00:37:30,244 --> 00:37:54,563
+Ama burada n bölü 3 de olabilir, n bölü 4 de olabilir. Genelde bilgisayar bilimleri problemlerinde problemleri ikiye bölerek çözmeyi tercih ediyoruz. Divide and Conclude'da da göreceksiniz. Ama exceptional case'leri var. 3'e bölünerek, 4'e bölünerek ya da k kat sayısını alırsanız k kat sayısına bölünerek de problemin çözümü mümkün olabilir.
+
+237
+00:37:54,563 --> 00:38:03,924
+Peki böyle bir yaklaşımla, decrease by a constant factor tekniğini kullanarak bu işi çözseydik neye dikkat etmemiz gerekecekti?
+
+238
+00:38:11,923 --> 00:38:13,443
+Ne olursa bir sorun oluşabilir.
+
+239
+00:38:13,963 --> 00:38:14,503
+Ertuğrul?
+
+240
+00:38:15,983 --> 00:38:18,283
+En tekse ikiye bölersek
+
+241
+00:38:18,283 --> 00:38:19,223
+problem oluşur.
+
+242
+00:38:19,583 --> 00:38:22,143
+O yüzden bir a'la daha
+
+243
+00:38:22,143 --> 00:38:23,243
+çarpmamız gerekir onu.
+
+244
+00:38:23,923 --> 00:38:25,844
+Şimdi bunu o zaman
+
+245
+00:38:25,844 --> 00:38:27,563
+birlikte ifade edelim.
+
+246
+00:38:28,944 --> 00:38:30,344
+a üzeri
+
+247
+00:38:30,344 --> 00:38:31,243
+n bölü iki
+
+248
+00:38:31,243 --> 00:38:34,104
+üzeri iki
+
+249
+00:38:34,104 --> 00:38:36,043
+Buraya ne diyeceğim?
+
+250
+00:38:36,043 --> 00:38:37,143
+İlk kısmına.
+
+251
+00:38:38,604 --> 00:38:39,163
+Eğer
+
+252
+00:38:39,163 --> 00:38:40,883
+en tekse
+
+253
+00:38:40,883 --> 00:38:44,823
+tekse mi çiftse mi?
+
+254
+00:38:44,964 --> 00:38:45,883
+Çiftse böyle.
+
+255
+00:38:46,483 --> 00:38:48,403
+Çiftse böyle. Ve tabii ki
+
+256
+00:38:48,403 --> 00:38:49,823
+pozitif olduğunu kabul ediyorum benim.
+
+257
+00:38:50,243 --> 00:38:52,623
+Evet. En tekse
+
+258
+00:38:52,623 --> 00:38:54,104
+en tekse
+
+259
+00:38:54,104 --> 00:38:55,123
+en eksi bir
+
+260
+00:38:55,123 --> 00:38:58,843
+bölü iki
+
+261
+00:38:58,843 --> 00:39:00,423
+üzeri iki
+
+262
+00:39:00,423 --> 00:39:02,243
+çarpı a
+
+263
+00:39:02,243 --> 00:39:06,383
+eğer en tekse
+
+264
+00:39:06,383 --> 00:39:08,703
+başka bir şey yazacak mıydı?
+
+265
+00:39:08,723 --> 00:39:10,243
+En sıfırsa bir olacak.
+
+266
+00:39:10,243 --> 00:39:11,083
+Evet.
+
+267
+00:39:15,188 --> 00:39:23,128
+Gördüğünüz gibi A üzeri N'i brute force ile aslında hesaplamıştım. A'ları arka arkaya çarpıyordum.
+
+268
+00:39:24,287 --> 00:39:32,028
+Recursive olarak decrease by one ve decrease by a constant faktörle de yapabilirim.
+
+269
+00:39:32,587 --> 00:39:36,987
+Peki sizce hangisi bu üç yöntemden daha hatırlıca?
+
+270
+00:39:46,996 --> 00:39:48,996
+Kim Susan, next time.
+
+271
+00:39:56,659 --> 00:40:07,919
+vitamininde bulunacaksınız arkadaşlar. Üç yaklaşım var, brute force. Evet, Sercan'a söz vermiştim, Ertuğrul'a söz vermiştim, farklı bir arkadaşınızdan rica edeyim.
+
+272
+00:40:13,235 --> 00:40:14,775
+İdris Kağan, Keskin
+
+273
+00:40:19,539 --> 00:40:29,819
+İdris Kaan, Keskin. Evet, o da derste değil, aramızda değil. Rabia söz istedi ama söz değil.
+
+274
+00:40:32,639 --> 00:40:39,099
+İdris Baye Constant Factor daha verimli gibi duruyor. Çünkü sanırım binary search'e benzettim ben.
+
+275
+00:40:39,099 --> 00:40:52,380
+ararken ikiye böldüğü için çok daha hızlı diğerlerine göre süre açısından karşılaştırıldığı zaman diğerlerine göre çok daha hızlı gidecek gibi.
+
+276
+00:40:53,699 --> 00:41:00,260
+Peki bu konuda başka fikir olanlar mı? Arkadaşınıza katılır mısınız ya da antitezi olanlar mı?
+
+277
+00:41:01,879 --> 00:41:03,059
+Hüma Bilgin.
+
+278
+00:41:05,679 --> 00:41:07,580
+Buradayım hocam, sesim geliyor mu?
+
+279
+00:41:07,900 --> 00:41:08,220
+Evet.
+
+280
+00:41:09,099 --> 00:41:10,059
+Ben katılıyorum
+
+281
+00:41:10,059 --> 00:41:12,099
+Böyle olacağını düşünüyorsun?
+
+282
+00:41:12,779 --> 00:41:12,999
+Evet
+
+283
+00:41:12,999 --> 00:41:14,439
+Tamam, peki
+
+284
+00:41:14,439 --> 00:41:16,179
+Teşekkürler
+
+285
+00:41:16,179 --> 00:41:21,299
+Başka bir arkadaşımız, aksi yönde düşünen bir arkadaşımız var mı?
+
+286
+00:41:25,972 --> 00:41:44,771
+Şimdi arkadaşlar, burada her zaman divide and concur ya da decrease and concur yaklaşımları en iyi sonucu vermez. Burada bir function call yapıyorsunuz. Bir maliyeti var. Recursive işlemlerde her zaman function call ve return işlemleri bir maliyet oluşturur.
+
+287
+00:41:44,771 --> 00:41:59,791
+Burada siz her ne kadar geri kalanları hesapladığınızı düşünseniz de Binary Search mantığındaki gibi burada bazı değerleri geride bırakmıyorsunuz. Hepsini hesaplıyorsunuz.
+
+288
+00:41:59,791 --> 00:42:25,731
+Bu nedenle burada brute force yaklaşımını kullanmak daha akıllıcı çünkü eğer paralel bu işleri yapabilecek core yani işlemcideki core sayınız fazla değilse ya da multiprocessor kullanmıyorsanız bunları aynı işlemci üzerinde ikiye bölme mantığı ile rekürsit olarak yapmak çok da akıllıca olmayacaktır.
+
+289
+00:42:25,731 --> 00:42:31,351
+ancak bunlar işlemler dağıtılırsa bir anlam ifade edecektir.
+
+290
+00:42:31,791 --> 00:42:40,012
+O yüzden unutmayın ki her zaman böl ve yönet yaklaşımı problem çözmede daha iyi bir yaklaşımdır diyemiyoruz.
+
+291
+00:42:40,012 --> 00:42:49,351
+Bazen brute force yaklaşımı da burada olduğu gibi arka arkaya ağları çarpmak bize daha birimli bir algoritma sunacaktır.
+
+292
+00:42:49,351 --> 00:42:58,451
+Şimdi son olarak burada variable size decrease'i söyleyelim.
+
+293
+00:43:04,403 --> 00:43:14,903
+Various Size Decrees'de örnek verebileceğimiz algoritma ne olabilir? BruteForce'daki örneklere bakarsanız onlardan bir tanesini verebiliriz.
+
+294
+00:43:17,943 --> 00:43:22,584
+Evet, Orkun teşekkür ediyorum ama biraz daha bekleyelim başka bir arkadaşı.
+
+295
+00:43:25,403 --> 00:43:28,283
+Söz vermek istiyorum. Ferhat Taş.
+
+296
+00:43:32,211 --> 00:43:34,211
+Ben buradayım da bir fikrim yok.
+
+297
+00:43:34,211 --> 00:43:43,211
+İyi, düşünebilirsin. Elinde, önünde liste var. Brutforce algoritmalar arasında. Bir tanesi ne?
+
+298
+00:43:43,211 --> 00:43:46,211
+Efe Tezcan söz istedi.
+
+299
+00:43:46,211 --> 00:43:50,211
+Hocam, Evo Palma problemi olabilir.
+
+300
+00:43:50,211 --> 00:43:51,211
+Hangisi?
+
+301
+00:43:51,211 --> 00:43:54,211
+Evo Palma, GCD yazdığımız.
+
+302
+00:43:54,211 --> 00:43:57,211
+Evet, nasıl? Söyleyebilir misin?
+
+303
+00:43:57,211 --> 00:44:02,771
+neden orada bu yaklaşımı kullanmaya şansımız var?
+
+304
+00:44:06,991 --> 00:44:13,811
+Yani tam fikrim yok. Ama en mantıklısı o görüntü. Diğerliğini biliyordum çünkü.
+
+305
+00:44:13,811 --> 00:44:25,771
+Anladım. Peki. Teşekkür ediyorum. Her seferinde mod olarak problemde ilerleme miktarınızı ve hızınızı değiştirebilirsiniz.
+
+306
+00:44:25,771 --> 00:44:35,331
+mod alma işlemi aldığınız moda bağlı olarak, sayıya bağlı olarak her seferinde değişkenlik gösterdiği için variable size decrease ismini alıyor.
+
+307
+00:44:35,771 --> 00:44:45,111
+Her adımda, her rekür sıfatında bir alta indiğinizde aldığınız moda bağlı olarak bu verleme hızınızda bir değişiklik yapıyorsunuz.
+
+308
+00:44:45,111 --> 00:44:52,551
+Bu yüzden buna variable size decrease deniyor. Bunlarla ilgili tabii başka örnekler de göreceksiniz zamanı geldiğinde.
+
+309
+00:44:52,551 --> 00:44:58,551
+ama şu an için genel kavramları bilmeniz benim için yeterli.
+
+310
+00:44:59,251 --> 00:45:11,551
+Mesela ileride göreceksiniz topological sorting dediğimiz birbirlerine bağlı olan işler de kullanıyor olacağız bu decrease and concur yaklaşımını.
+
+311
+00:45:12,631 --> 00:45:15,911
+Birbirine bağlı işler derken örneğin ön koşullu dersler var.
+
+312
+00:45:16,931 --> 00:45:19,331
+Derslerden birini almadan diğerini alamıyorsunuz.
+
+313
+00:45:19,331 --> 00:45:42,331
+burada adım adım ders planınızı oluşturmaya topolojik bir sorting diyoruz. Bunu da aklınızın bir köşesinde bulunsun. İlerleyen derslerde konuşuyor olacağız. Evet, çimdilik süremizde de yaklaşık 45 dakikayı bulduk neredeyse. Bir 10 dakikalık bir ara verelim. Ondan sonra kaldığımız yerden devam edelim.
+
+314
+00:54:52,724 --> 00:54:57,164
+Evet arkadaşlar, yeniden merhaba hepinize. Kaldığımız yerden devam edelim.
+
+315
+00:54:58,323 --> 00:55:03,843
+Decrease and compute'de 3 farklı yaklaşımı konuştuk.
+
+316
+00:55:03,963 --> 00:55:08,523
+Decrease by one, daha doğrusu decrease by constant factor.
+
+317
+00:55:09,843 --> 00:55:12,744
+Decrease by constant, özür diliyorum, düzeltiyorum.
+
+318
+00:55:14,064 --> 00:55:16,484
+İkincisi decrease by a constant factor.
+
+319
+00:55:17,183 --> 00:55:19,243
+Diğeri de decrease by variable size.
+
+320
+00:55:19,243 --> 00:55:30,584
+Şimdi bunların içerisini çok sıklıkla kullandığınız ve daha önce de gördüğünüz bir algoritmaya geçmek istiyorum. O da binary search algoritması.
+
+321
+00:55:35,539 --> 00:55:46,859
+Binary Search algoritması, sequential search'u bir adım ileri taşıyan bir algoritma ve oldukça da efficient bir algoritma.
+
+322
+00:55:47,519 --> 00:55:54,939
+Bu üç yaklaşımdan hangisine giriyor Binary Search algoritması? Onu size sormuş olayım.
+
+323
+00:55:59,603 --> 00:56:00,403
+Evet, Yasir.
+
+324
+00:56:01,723 --> 00:56:03,743
+Hocam, decrease by constant factor olmuyor mu?
+
+325
+00:56:04,323 --> 00:56:07,723
+Evet, decrease by constant factor oluyor. Peki, neden öyle düşündün?
+
+326
+00:56:10,263 --> 00:56:19,883
+Hocam, çünkü binary search algoritmında şey, bizim şey, length of elements hep şey, ikiye boleceğiz ya, constant factor oluyor.
+
+327
+00:56:20,543 --> 00:56:26,463
+Evet, yani biz her seferinde en bu iki kadar bakacağımız element sayısını aslında azaltmış oluyoruz.
+
+328
+00:56:26,463 --> 00:56:31,103
+hatırlarsanız binary search algoritmasında orta noktaya bakıyoruz.
+
+329
+00:56:31,803 --> 00:56:34,203
+Sıralı bir veri seti olması önemli.
+
+330
+00:56:35,103 --> 00:56:37,464
+Sırasız bir veri setinde bunu yapma şansımız yok.
+
+331
+00:56:39,464 --> 00:56:47,983
+Burada şimdi tabii bütün algoritmanın detayına girmeden aslında ilerlemek istiyorum.
+
+332
+00:56:48,663 --> 00:56:52,623
+Sadece algoritmanın input, output ve üstüde kodunu vereceğim.
+
+333
+00:56:52,623 --> 00:56:54,483
+Üzerinde çok fazla durmayacağım.
+
+334
+00:56:54,483 --> 00:56:57,223
+Öncelikle input kısmını veriyorum
+
+335
+00:57:06,228 --> 00:57:10,228
+N-T-A elemanımız var ve sıralı bir şekilde veriyor.
+
+336
+00:57:18,132 --> 00:57:23,251
+hangi sırada olduğuna bağlı olarak arama yönünü değiştirilebilir.
+
+337
+00:57:34,996 --> 00:57:39,996
+output olarak ne vereceğiz? Onu sorayım size.
+
+338
+00:57:42,996 --> 00:57:46,195
+Alt, Tulağat ne verebiliriz?
+
+339
+00:57:49,588 --> 00:57:58,703
+Kübra Karakuyu
+
+340
+00:57:58,703 --> 00:58:02,503
+Peki, derste yok.
+
+341
+00:58:03,803 --> 00:58:05,664
+Rafet sanırım söz istemişti.
+
+342
+00:58:06,104 --> 00:58:10,903
+Hocam, aradığımız elemanın indeksini döndürebiliriz. Eğer eleman yoksa eksibarı döndürebiliriz.
+
+343
+00:58:11,043 --> 00:58:11,723
+Teşekkür ederim.
+
+344
+00:58:25,460 --> 00:58:27,460
+Gelelim psolokodan.
+
+345
+00:58:34,387 --> 00:58:48,627
+Left için L'yi kullanıyoruz, sıfırdan başlatıyoruz. Right için n-1'i kullanıyoruz. While diyoruz.
+
+346
+00:59:56,403 --> 00:59:59,283
+Pseudokodu bu şekilde while koşulu ne olacak?
+
+347
+01:00:04,115 --> 01:00:14,416
+Efe? Right büyük eşittir, left. Peki. Teşekkür ediyorum. Bu şekilde de yazabiliriz sınavı.
+
+348
+01:00:18,915 --> 01:00:22,935
+If den kolunda ne olacak? If k eşittir, am ise?
+
+349
+01:00:27,572 --> 01:00:55,572
+Evet, Mahmut Murat Aktağım. Buradayım hocam. Evet. K-H-T-Rame ise bulduğumuz durum galiba, aradığımız elemanı. Evet, ne yazacağım? Okola. Index'ini döndürebiliriz. Ne yazacağım? Return M. Peki, teşekkür ederim.
+
+350
+01:00:57,572 --> 01:00:58,412
+Rica ederim
+
+351
+01:00:58,412 --> 01:01:05,711
+Peki eğer eşitlik yoksa ve İFK, küçük, AM ise ne yapmam gerekiyor? Kim söylemek ister?
+
+352
+01:01:08,631 --> 01:01:09,952
+Aydın yardımcı
+
+353
+01:01:16,659 --> 01:01:18,659
+Aydın yardımcı.
+
+354
+01:01:20,659 --> 01:01:22,659
+Peki, o da aramızda değil.
+
+355
+01:01:24,659 --> 01:01:34,295
+Emre Eren Bilgin.
+
+356
+01:01:36,615 --> 01:01:39,815
+Evet arkadaşlar, yani şimdi şöyle söyleyeyim.
+
+357
+01:01:40,115 --> 01:01:41,615
+Gerçekten can sıkıcı bir durum.
+
+358
+01:01:42,155 --> 01:01:47,955
+Şu ana kadar yaklaşık 15 isim saydıysam onu bilgisayarın başında değil.
+
+359
+01:01:49,096 --> 01:01:51,735
+Eğer kasıtlı olarak cevap vermiyor değilse.
+
+360
+01:01:52,596 --> 01:01:53,895
+Bu hiç hoş bir durum değil.
+
+361
+01:01:54,695 --> 01:01:57,395
+Tamam, sonradan izleyebiliyorsunuz bu videoları.
+
+362
+01:01:57,895 --> 01:02:01,015
+Gerçekten ihtiyacınız olduğu durumda da çok faydalı olduğunu düşünüyorum.
+
+363
+01:02:01,015 --> 01:02:06,975
+ama ders bu şekilde takip etmiyor olmanız gerçekten üzücü.
+
+364
+01:02:08,416 --> 01:02:15,615
+Bununla ilgili tabii zorla bir şey yapılması mümkün değil ama bu konuda sonra neden başarılı olamadım?
+
+365
+01:02:16,395 --> 01:02:20,875
+Ama bakın buradan çok puan kırmışsınız, ben şöyle yaptım, böyle yaptım.
+
+366
+01:02:21,375 --> 01:02:22,795
+Hiçbir şekilde bir hakkınız kalmıyor.
+
+367
+01:02:23,715 --> 01:02:29,955
+Üzücü olan kısım burası çünkü eğer burada bir şey anlamadığınızda burada sormanızı arzu ediyorum.
+
+368
+01:02:29,955 --> 01:02:33,995
+Yoksa dersi videodan izlediğinizde de muhtemelen çoğunu anlıyor olacaksınız.
+
+369
+01:02:34,075 --> 01:02:39,276
+Ama sormak istediğiniz sorunlar olunca burada sormak çok daha anlamlı hale geliyor.
+
+370
+01:02:39,916 --> 01:02:43,095
+Bunu son kez söylüyor olacağım. Bir daha canınızı sıkmayacağım bu konuyla ilgili.
+
+371
+01:02:43,215 --> 01:02:47,595
+Ama ben tek tek isimle hitap etmeye ve derse katılmaya davet etmeye devam edeceğim.
+
+372
+01:02:48,495 --> 01:02:54,015
+Olmayanlar olmamış olacak. Çok da şu anda hani o noktada bir şey söylemek istemiyorum.
+
+373
+01:02:54,015 --> 01:03:02,856
+ama açıkçası bu pandemi döneminde başarı niye düştü sorusunun cevabını çok net bir şekilde bu derste bir kez daha anlamış olduk.
+
+374
+01:03:03,276 --> 01:03:10,655
+15 kişiyi saydık. Neredeyse onu bir cevap bile vermedi burada olduğundan bile şüpheliz.
+
+375
+01:03:11,175 --> 01:03:14,235
+Bilgisayarı açmak çok da marifet değil. Evet Efe bir söz istemişti.
+
+376
+01:03:14,235 --> 01:03:25,856
+Hocam şey K'dan küçükse yeni write değerimizi K yapıyoruz. Ondan sonra tekrardan döngünün başına.
+
+377
+01:03:25,856 --> 01:03:41,835
+Evet. Yeni K diye şey. Pardon yeni şöyle diyeyim. Şey değerimizi değiştirmiş oluyoruz yani. Dizinin sonundaki değeri. Tam ifade edemedim ama.
+
+378
+01:03:41,835 --> 01:03:47,216
+Ama işte ifade etmemiz lazım Efe. Ne yapıyoruz dedin?
+
+379
+01:03:47,916 --> 01:03:49,395
+K'ya eşitliyoruz.
+
+380
+01:03:49,655 --> 01:03:51,155
+K zaten aradığımız eleman.
+
+381
+01:03:51,595 --> 01:03:57,636
+Pardon M'ye yeni middelerimizi eşitliyoruz. Dizinin sol tarafına bakıyoruz yani.
+
+382
+01:03:58,695 --> 01:04:02,916
+Bu tam doğru değil M'ye eşitlemek. Doğrusunu kim söylemek ister?
+
+383
+01:04:05,416 --> 01:04:06,395
+M'yi seviyoruz.
+
+384
+01:04:06,395 --> 01:04:10,576
+Bu aynı bir soru arkadaşlar. Bu bildiğiniz bir şey. Üzerinde bu kadar vakit kaybetmıyoruz. Sermet.
+
+385
+01:04:10,576 --> 01:04:12,255
+Hocam, M-1
+
+386
+01:04:12,255 --> 01:04:18,876
+M-1'e eşitliyoruz. Bunu böyle yaptık. Peki, als kolunu ne yapıyoruz, Sermet?
+
+387
+01:04:19,475 --> 01:04:21,656
+M-1. L'yi M-1 yapacağız.
+
+388
+01:04:21,975 --> 01:04:24,835
+Peki, neden M diğinde M-1 ve M-1?
+
+389
+01:04:25,236 --> 01:04:32,936
+Hocam, zaten K, AM'den küçük. Yine M'yi almamıza gerek yok zaten küçük olduğu için. M-1'den başlamamız mantıklı.
+
+390
+01:04:33,176 --> 01:04:33,555
+Teşekkür ederim.
+
+391
+01:04:33,555 --> 01:04:34,555
+Öbüründe de tam tersi.
+
+392
+01:04:35,316 --> 01:04:35,835
+Teşekkürler.
+
+393
+01:04:36,896 --> 01:04:39,615
+Return'i ne yazıyoruz arkadaşlar? En sonunda, x-1 yazıyoruz.
+
+394
+01:04:40,575 --> 01:04:49,395
+ve böylece Pissota kodunu tamamlamış olduk, binary search'u. Bu nasıl bir yaklaşımla çözülmüştür, iteratif, rekürsif?
+
+395
+01:05:06,228 --> 01:05:13,380
+Hüseyin Çetin
+
+396
+01:05:18,516 --> 01:05:40,155
+Şafak. İteratif hocam. İteratif. Burada kendi kendini çağırdığımız bir fonksiyonumuz yok arkadaşlar. Ama bu binary search'un rekürsif bir çözümü olmadığı anlamına gelmiyor. Binary search'un rekürsif bir çözümü de var. Bunu da göz ağrıda iletmemek lazım. Bir sonraki sayfaya geçeyim. Yargı kalmadığı için.
+
+397
+01:05:40,155 --> 01:06:00,775
+Şimdi tabii bizim işimiz burada açıkçası bu algoritmik çözümün analizini yapmak. Yani biz bu algoritmasının detayını konuşmak değil, bunun çözümünü yapmak. Şimdi bununla ilgili bir adım atalım, bir denklem yazalım.
+
+398
+01:06:00,775 --> 01:06:09,295
+ve bu denklemde bir yanlışlık var mı?
+
+399
+01:06:10,255 --> 01:06:10,975
+Bir buna bakalım.
+
+400
+01:06:23,476 --> 01:06:26,375
+Evet, şimdi ne diyorsunuz buna?
+
+401
+01:06:31,443 --> 01:06:36,443
+W neyi ifade ediyor?
+
+402
+01:06:40,851 --> 01:06:41,431
+Evet, Efe?
+
+403
+01:06:42,391 --> 01:06:44,031
+Worst case'i ifade ediyor.
+
+404
+01:06:44,111 --> 01:06:49,531
+Worst case'i ifade ediyor. Peki, n bölü 2 neyi ifade ediyor Efe?
+
+405
+01:06:50,831 --> 01:06:54,171
+N bölü 2'de diziye böldüğümüz derif, yani şey.
+
+406
+01:06:56,691 --> 01:07:05,251
+Her seferinde veriyi ikiye bölerek yapıyoruz ama bunu teorik olarak aslında ifade etmiş oluyoruz, doğru mu?
+
+407
+01:07:05,651 --> 01:07:06,032
+Evet.
+
+408
+01:07:07,091 --> 01:07:09,211
+Peki, artı 1 ne olabilir arkadaşlar?
+
+409
+01:07:09,211 --> 01:07:15,991
+O da left ve right'a hani mid için artı bir eksi bir yaptığımız değeri ifade ediyor olabilir
+
+410
+01:07:15,991 --> 01:07:19,212
+Yok değil, onda başka biri cevaplasın
+
+411
+01:07:29,492 --> 01:07:38,611
+artı bir neye denk geliyor olabilir? Peki C neyin C'si? Yani buradaki Basic Operation ne?
+
+412
+01:07:46,291 --> 01:07:51,531
+algoritmada binary search'taki basic operation ve pisodokoda bakabilirsiniz. Evet, zahmet lütfen.
+
+413
+01:07:52,192 --> 01:07:53,711
+Hocam, M değerini bulma olabilir mi?
+
+414
+01:07:55,651 --> 01:07:58,971
+M değerini bulma derken, yani hangi işleme karşılık geliyor?
+
+415
+01:07:59,632 --> 01:08:04,571
+Yani, right ve left'i toplayıp ikiye bölüyorduk. Hani o atama işlemi olabilir.
+
+416
+01:08:05,031 --> 01:08:08,052
+Yok, değil. NS'de de olalım söz istedi.
+
+417
+01:08:09,991 --> 01:08:10,851
+Karşılaştırma hocam.
+
+418
+01:08:10,851 --> 01:08:17,851
+Evet, C, comparizmin C'si diyoruz. Peki burada Basic Operation hangisi oluyor bu şartlarda?
+
+419
+01:08:32,595 --> 01:08:34,595
+İF oluyor hocam. Hangisi?
+
+420
+01:08:38,836 --> 01:08:39,735
+Nasıl yani?
+
+421
+01:08:41,316 --> 01:08:41,715
+Küm A?
+
+422
+01:08:44,355 --> 01:08:46,316
+K küçüktür, A, M.
+
+423
+01:08:47,756 --> 01:08:48,676
+B yoksa diğer mi?
+
+424
+01:08:52,435 --> 01:08:56,955
+Diğeri çünkü en çok onunla karşılaşacağız. Yani her işlemle karşılaşacağız.
+
+425
+01:08:56,955 --> 01:09:07,336
+Çok kritik olmamakla birlikte burada yaptığımız ve karar verdiğimiz bezlik operasyon ilk K eşittir, A, M diye baktığımız nokta.
+
+426
+01:09:07,336 --> 01:09:10,756
+o yüzden de comparison'ı seçtik ve her seferinde bunu bir defa yapıyoruz.
+
+427
+01:09:10,856 --> 01:09:12,416
+O yüzden de artı bir diyoruz.
+
+428
+01:09:12,475 --> 01:09:18,115
+Peki burada şu ana kadar belirlemediğimiz yazmadığımız nedir arkadaşlar bu algoritma için?
+
+429
+01:09:22,003 --> 01:09:24,003
+Basic Operation bulduk.
+
+430
+01:09:27,731 --> 01:09:28,231
+Hüman?
+
+431
+01:09:30,972 --> 01:09:33,212
+Initial, bitiş durumunu var.
+
+432
+01:09:33,391 --> 01:09:36,072
+Initial condition, ne yazsak doğru olur?
+
+433
+01:09:42,036 --> 01:10:00,036
+buraya şu şekilde yazsak, cv1 eşitti bir şeklinde yazsak doğru olur. N üzeri, n eşittir iki üzeri k dedikten sonra, rekürans bağıntısını backward substitution'da çözdüğümüzde,
+
+434
+01:10:00,036 --> 01:10:13,536
+Elinizde K artı bir olacak. Bu da Log 2N artı bir olarak karşınıza çıkıyor olacak.
+
+435
+01:10:13,536 --> 01:10:17,735
+Burada bunun detayına girmiyorum. Zaten nasıl çözüldüğünü biliyorsunuz.
+
+436
+01:10:17,835 --> 01:10:23,376
+Bunun şöyle biraz daha detaylı gösterimi de var.
+
+437
+01:10:23,975 --> 01:10:25,896
+Onu da şöyle ifade etmiş olayım.
+
+438
+01:10:25,896 --> 01:10:31,036
+log2 tabanında n 6'a yuvarlıyorsunuz.
+
+439
+01:10:31,076 --> 01:10:33,155
+Artı 1 şeklinde yazılıyor.
+
+440
+01:10:33,556 --> 01:10:42,036
+Onun da karşılığı bir bütün halinde yazarsanız log2 n artı 1 şeklinde de ifade edebiliyorsunuz.
+
+441
+01:10:43,315 --> 01:10:50,196
+Peki şimdi bu noktada başka bir şey yapsak diye düşünüyorum.
+
+442
+01:10:50,195 --> 01:11:19,715
+Evet başka çok detaylı bir şey yapmamıza gerek yok şu anda. Vaktimiz kalırsa uygulama tarafında bununla ilgili bir ufak bilgi daha var. Onu paylaşıyor olacağım. Sonuçta logaritma iki tabanında enlik bir karmaşıklığa sahip olduğunu hesaplayabiliyoruz. Bugüne kadar backward substitution'ı öğrenmiştik. Rekürans bahantısını yazdıktan sonra biraz sonra master teoremi göstereceğim.
+
+443
+01:11:20,195 --> 01:11:28,495
+backward substitution yapmadan master teoremi ile de bu tür problemleri, divide and compute problemleri,
+
+444
+01:11:28,575 --> 01:11:32,135
+decrease and compute problemlerini çözebiliyor olacaksınız.
+
+445
+01:11:32,135 --> 01:11:35,315
+Şimdi bir sonraki başlığımıza geçelim.
+
+446
+01:11:39,335 --> 01:11:45,315
+Divide and compute algorithms.
+
+447
+01:11:57,108 --> 01:12:11,608
+Şimdi divide and conquer algoritmaları dediğimizde genel olarak hangi adımlar üzerinden geçiliyor? Bunlardan bir bahsetmek lazım. Şimdi birinci adımı yazalım.
+
+448
+01:12:55,988 --> 01:13:22,168
+Öncelikle problemin içerisinde yer alan instance grubumuzu eşit sayıda instance'lara daha küçük instance gruplarına ayırmakla işe başlıyoruz. Sonra bu grupları, daha küçük instance'lardan oluşan grupları çözme işini gerçekleştiriyoruz.
+
+449
+01:14:34,068 --> 01:14:43,068
+Son adımda da küçük gruplara uyguladığımız çözümün sonuçlarını birleştirmeye ihtiyacı duyuyorsak onları bir araya getiriyoruz.
+
+450
+01:14:43,068 --> 01:14:51,068
+Ki genelde bu bazı ayrı ölçmalarda mutlaka ihtiyaç oluyor.
+
+451
+01:15:32,243 --> 01:16:00,183
+Evet. Şimdi tabii bu Divide and Conqueror algoritmalarında uygulanan genel yaklaşım. Önce dedik ki problemi eşit büyüklükte mümkünse parçalara ayıralım ve mümkün olan küçük parçalara ayıralım. Bu mümkün olan küçük parçalarda bir çözüm üretelim. Sonra çözümü gerçekleştirdikten sonra da
+
+452
+01:16:00,183 --> 01:16:09,443
+elimizdeki çözümleri bir araya getirmemiz gerekiyorsa bu çözümleri bir araya getirerek orijinal problemin çözümünü elde edelim dedik.
+
+453
+01:16:09,443 --> 01:16:15,883
+Bu bizim genel olarak divide and compute'a uyguladığımız yaklaşım.
+
+454
+01:16:16,284 --> 01:16:26,163
+Şimdi gelelim divide and compute problemlerine özel master teorem kullanımına.
+
+455
+01:16:26,163 --> 01:16:30,363
+Haman, yesalad
+
+456
+01:16:34,836 --> 01:16:37,536
+bu teoreme göre
+
+457
+01:16:41,203 --> 01:16:46,624
+siz Divide and Conquered problemlerinin karmaşıklıklarını hesaplayabilirsiniz.
+
+458
+01:16:46,823 --> 01:16:53,423
+Şimdi öncelikle bu teoremi yazacağım. Ondan sonra üzerinde biraz daha detaylı konuşacağız.
+
+459
+01:18:41,268 --> 01:18:52,427
+bizim algoritmamız üzerinden bulmamız gereken bağıntı aşağıda kırmızı kutucuğun içerisine yazılmış olan bağıntı.
+
+460
+01:18:52,887 --> 01:19:00,547
+Peki buradaki A nedir? B nedir? N nedir? Kim söyleyebilir?
+
+461
+01:19:19,315 --> 01:19:29,815
+ne olabilir yani tahmin etmenizi istesem. Daha önce binary search örneğinden yola çıkarak belki tahmin edebilirsiniz.
+
+462
+01:19:29,815 --> 01:19:37,815
+divide and concurre'un tanımını da göz önünde bulundurun. N'ye karşılık geliyor, en kolay o.
+
+463
+01:19:39,956 --> 01:19:40,576
+Orkun?
+
+464
+01:19:42,275 --> 01:19:53,895
+Tamamen tahmin ediyorum burada ama n data boyutumuz b böldüğümüz sayı, hani kaç farklı parçaya böldüğümüz, a'da her bir parçanın karmaşıklık katsayısı belki.
+
+465
+01:19:55,275 --> 01:20:08,035
+A'ya kadar güzel geldi. n instance sayısını gösteriyor. b divide sayımızı gösteriyor. Kaça bölerek bu problemi ele alıyoruz.
+
+466
+01:20:08,035 --> 01:20:11,396
+Peki ki burada
+
+467
+01:20:21,203 --> 01:20:28,684
+A ne olabilir arkadaşlar? Başka tahmini olan? Metin Binbir.
+
+468
+01:20:31,303 --> 01:20:34,063
+Hocam, açıkçası bilemiyorum yani.
+
+469
+01:20:36,023 --> 01:20:46,103
+Problemi çözme şeklimizi düşünelim. Divide and Conquer, Decrease and Conquer'da uğraştığımız instance bloklarımı düşünelim.
+
+470
+01:20:46,103 --> 01:21:01,643
+Mesela binary search ile merge sort'taki yaklaşımınız aynı mı? Oradan belki tam verebilirsiniz. Mesela binary search'te bir kısmıyla ilgileniyorum veri setimin her adım sonunda.
+
+471
+01:21:02,463 --> 01:21:04,083
+Merge sort'ta neyle ilgileniyorum?
+
+472
+01:21:14,003 --> 01:21:19,083
+Word sortu geçtiğim zaman görmüştünüz diye hatırlıyorum. Doğru mu?
+
+473
+01:21:19,603 --> 01:21:21,343
+Hocam, alt parçaların sayısı mı acaba?
+
+474
+01:21:22,563 --> 01:21:24,123
+Güzel. Kim söyledi?
+
+475
+01:21:24,723 --> 01:21:25,384
+Eren Tutuş.
+
+476
+01:21:26,183 --> 01:21:33,823
+Eren, bunu biraz daha legal bir şekilde ifade edelim. Alt parçaların sayısı derken orayı ne diyebiliriz?
+
+477
+01:21:34,823 --> 01:21:38,123
+Yani o şeyi yaptığımız işlemini sürekli yiyebiliyoruz mesela Word sortta.
+
+478
+01:21:38,924 --> 01:21:42,003
+Alt alta kaç işlem yapıyorsak onu mu diye düşündüm ama.
+
+479
+01:21:42,003 --> 01:21:49,044
+Öyle değil. Bu böldüğümüz kısımlardan kaç tanesini çözmeye çalıştığımız?
+
+480
+01:21:49,783 --> 01:21:50,463
+Tamam.
+
+481
+01:21:51,283 --> 01:21:53,923
+Mesela binary search'te kaç tanesini çözmeye çalışıyoruz?
+
+482
+01:21:55,563 --> 01:21:57,003
+Binary search'te...
+
+483
+01:21:59,603 --> 01:22:00,963
+İki yalanıyoruz ya.
+
+484
+01:22:03,483 --> 01:22:05,764
+Ondan sonra ilgilendiğimiz kısım kaç tane?
+
+485
+01:22:07,643 --> 01:22:09,163
+Bir tane değil mi yani zaten?
+
+486
+01:22:10,163 --> 01:22:11,523
+Alper'e söz vereyim.
+
+487
+01:22:12,003 --> 01:22:16,123
+Binary Search'ta hocam ikiye bölüp bir kısmıyla ilgileniyoruz
+
+488
+01:22:16,123 --> 01:22:18,323
+Merge Sort'ta
+
+489
+01:22:18,323 --> 01:22:22,843
+Merge Sort'ta da böldükçe daha da bölmeye devam ediyoruz
+
+490
+01:22:22,843 --> 01:22:24,563
+Ta ki bir kalana kadar
+
+491
+01:22:24,563 --> 01:22:28,063
+Derinliğimizi arttırıyoruz Merge Sort'ta da
+
+492
+01:22:28,063 --> 01:22:29,843
+Yok onu demek istemiyorum
+
+493
+01:22:29,843 --> 01:22:34,843
+Burada Binary Search'ta ikiye böldüğünüz zaman bir kısmıyla ilgileniyorsunuz
+
+494
+01:22:34,843 --> 01:22:37,843
+Yani böldüğünüz parçalardan birini çözmeye çalışıyorsunuz
+
+495
+01:22:38,563 --> 01:22:39,843
+Merge Sort'ta
+
+496
+01:22:39,843 --> 01:22:43,323
+Şura?
+
+497
+01:22:45,743 --> 01:22:48,343
+Böldüğümüz bütün parçaları çözüyoruz hocam.
+
+498
+01:22:48,783 --> 01:22:52,223
+O zaman A değeri binary source'ta kaç olacak?
+
+499
+01:22:55,103 --> 01:22:59,043
+Kaç tane parçaya böldüysek mevcut.
+
+500
+01:22:59,943 --> 01:23:01,903
+Hayır, ikiye böldük ya binary source'ta.
+
+501
+01:23:02,443 --> 01:23:03,043
+Ha evet.
+
+502
+01:23:03,383 --> 01:23:04,503
+Kaçını çözmeye çalışıyoruz?
+
+503
+01:23:04,863 --> 01:23:05,183
+İkiye.
+
+504
+01:23:05,983 --> 01:23:06,323
+Hayır.
+
+505
+01:23:07,123 --> 01:23:07,743
+Nasıl yani?
+
+506
+01:23:07,743 --> 01:23:13,684
+Binary Search'ta ben hangi tarafa odaklanıyorum? Aynı anda iki tarafın peşinden gidiyor muyum?
+
+507
+01:23:14,443 --> 01:23:16,084
+Hayır, bir tane Binary Search'ta.
+
+508
+01:23:16,103 --> 01:23:17,283
+Birini çözmeye çalışıyorum.
+
+509
+01:23:17,283 --> 01:23:17,603
+Evet.
+
+510
+01:23:17,603 --> 01:23:19,423
+Peki Binary Search'ta?
+
+511
+01:23:21,803 --> 01:23:23,024
+Sesinizi alamadım.
+
+512
+01:23:23,444 --> 01:23:24,123
+Murch Search'ta?
+
+513
+01:23:24,804 --> 01:23:28,783
+Murch Search'ta ikiye böldüysem iki tarafı da çözmeye çalışıyorum.
+
+514
+01:23:28,923 --> 01:23:35,423
+Demek ki A, Murch Search'ta için iki, Binary Search'ta için bir olarak tarafınıza çıkıyor.
+
+515
+01:23:35,423 --> 01:23:45,343
+Peki B, Binary Search için de, Merge Sort için de 2 olarak karşımıza çıkıyor çünkü 2'ye bölerek ben problemi çözmeye çalışıyorum
+
+516
+01:23:45,343 --> 01:23:48,563
+Buraya kadar sorusu olan var mı?
+
+517
+01:23:56,787 --> 01:23:57,227
+Peki.
+
+518
+01:23:59,287 --> 01:24:03,687
+Hocam, ben bir şey soracaktım. Bu A ile B'nin farkını ben tam olarak anlayamadım.
+
+519
+01:24:04,287 --> 01:24:05,067
+İsim alabilir miyim?
+
+520
+01:24:05,887 --> 01:24:08,467
+Sercan Hocam, el kaldırdım da sonra devam edeceksiniz.
+
+521
+01:24:08,467 --> 01:24:12,047
+Gözümden kaçmış. Tabi Sercan, cevap vereceğim. Şunu yazayım.
+
+522
+01:24:38,036 --> 01:25:04,376
+Evet, General Divide and Conquer recurrence bağıntısı olarak geçiyoruz. Sercan'ın bir sorusu var. Dedi ki ben A ile V'yi tam olarak anlayamadım. Bir daha anlatır mısınız? Şimdi Divide and Conquer problemlerinde biz instance uğraştığımız problem sayısını bölerek ve onları çözerek ilerlemeyi tercih ediyoruz.
+
+523
+01:25:04,376 --> 01:25:12,855
+her iki algoritmada da binary search ve merge search'da da biz instance grubumuzu ikiye ayırıyoruz.
+
+524
+01:25:13,975 --> 01:25:19,536
+O yüzden B bizim instance grubumuzu kaçı ayırarak çözdüğümüzü temsil ediyor.
+
+525
+01:25:19,536 --> 01:25:22,815
+O yüzden de en böyle iki yazmıştık biraz önceki çözümden.
+
+526
+01:25:23,495 --> 01:25:24,616
+Yani birkaç slide önce.
+
+527
+01:25:25,436 --> 01:25:32,415
+A ise bunlardan kaç tanesini çözmeye devam ediyoruz, kaçının peşinden gidiyoruz ifade ediyor.
+
+528
+01:25:32,515 --> 01:25:33,855
+Kabaca tabirle tabii ki bu.
+
+529
+01:25:34,376 --> 01:25:43,055
+Burada binary search tarafında siz ikiye bölmenize rağmen geri kalan bir grupla ilgilenmiyorsunuz.
+
+530
+01:25:43,135 --> 01:25:45,235
+Tek bir grubun peşinden gitip onu ikiye bölüyorsunuz.
+
+531
+01:25:45,275 --> 01:25:46,396
+Yine tek bir grubun peşinden gitme.
+
+532
+01:25:46,396 --> 01:25:48,656
+Yani bir tanesini çözmeye çalışıyorsunuz.
+
+533
+01:25:49,156 --> 01:25:57,436
+Ama merge sort'ta ikiye böldüğünüz her iki tarafı da bir eleman kalana kadar bölmeye devam ediyorsunuz.
+
+534
+01:25:57,855 --> 01:26:03,396
+Ve sonunda bu birer elemandan başlayarak sıralı bir şekilde birleştirerek yukarı doğru ilerliyorsunuz.
+
+535
+01:26:03,396 --> 01:26:15,396
+İşte her iki tarafını da bölüp yani bir instance sayısını ikiye bölüp iki tarafta da ilgilendiğinizde A o zaman iki olarak belirlenmiş oluyor. Bilmiyorum Sercan şu anda anlaşılmam.
+
+536
+01:26:16,616 --> 01:26:17,896
+Anladım hocam sağ olun.
+
+537
+01:26:18,836 --> 01:26:22,196
+Rica ederim. Ertuğrul bir soru sormak istiyordu biraz önce.
+
+538
+01:26:23,336 --> 01:26:28,175
+Hocam cevabı aldım gibi ama A asla B'den büyük olamaz değil mi hocam bu durumda?
+
+539
+01:26:30,716 --> 01:26:32,576
+Sanırım evet öyle gözüküyor.
+
+540
+01:26:33,396 --> 01:26:33,855
+Tamam.
+
+541
+01:26:40,372 --> 01:26:41,811
+Hocam bir soru sorabilir miyim?
+
+542
+01:26:42,331 --> 01:26:42,671
+İsim?
+
+543
+01:26:43,411 --> 01:26:43,891
+Yasir.
+
+544
+01:26:44,391 --> 01:26:45,011
+Yasir tabii.
+
+545
+01:26:45,991 --> 01:26:51,551
+Hocam şimdi A'da bir soru soracaktım da biz şu anda divide and conca falan işlemi yapıyoruz ya.
+
+546
+01:26:51,931 --> 01:26:52,212
+Evet.
+
+547
+01:26:52,471 --> 01:26:57,712
+Şimdi divide and conca'dan her işlemde falan biz ikiye buluyoruz ya, iki tane sap problemiz oluyor ya.
+
+548
+01:26:57,991 --> 01:26:58,251
+Evet.
+
+549
+01:26:58,691 --> 01:27:01,451
+Peki A direkt oradan olarak iki çıkmaz mı abi?
+
+550
+01:27:01,651 --> 01:27:09,632
+Hocam çünkü şey her zaman iki sap problemi buluyoruz, her zaman iki sap problemi buluyoruz, çözüm bulana kadar yani işte.
+
+551
+01:27:09,632 --> 01:27:18,732
+Yasir, B ona karşılık geliyor. Biz ikiye bölüyoruz, en bölü iki yazıyoruz. B senin söylediğinin karşılığı.
+
+552
+01:27:19,531 --> 01:27:21,031
+Tamam, tamam hocam. Teşekkürler.
+
+553
+01:27:21,031 --> 01:27:21,912
+Özellikle.
+
+554
+01:27:23,552 --> 01:27:29,732
+Şimdi bir de önemli bir kısım daha var. Onu da şöyle yapalım.
+
+555
+01:27:38,260 --> 01:27:56,260
+Şimdi bu Genel Divide & Concure rekürans bağıntısında master teoremde Fn kısmı var. Ki çok önemli kısım. Bu Fn'i ifade etseniz ne dersiniz? Hemen onu sorayım.
+
+556
+01:28:05,555 --> 01:28:06,395
+Evet, Çafak.
+
+557
+01:28:08,296 --> 01:28:23,755
+Bu FN kısmı şey olarak işte hem bölme hem de tekrardan böldükten sonra şey yapmak için, bu böldüklerimizi en son tüm problemi uygulamak için toplamak kısmındaki şeyimiz diye ifade edebilirim.
+
+558
+01:28:23,755 --> 01:28:36,295
+Aslında böldükten sonra bu çözümleri birleştirme sırasındaki harcadığımız zaman aynı zamanda yaptığımız iş gösteriyor bize
+
+559
+01:28:36,295 --> 01:28:41,475
+Evet, merge sort için aslında daha şey konuşabilir mi örnek verecek merge sort'tan?
+
+560
+01:28:41,475 --> 01:28:42,515
+Tabii, o zaman
+
+561
+01:28:42,515 --> 01:29:12,215
+Nurt-Sort'da bizim divide kısmımız aslında bu sub-array işte. Onu bulmak için bir önceki array'in ortasını buluyoruz. Yani sadece array'i ortadan bölüyoruz. Bu Theta 1 olarak şey yapabiliriz, divide'in karmaşıklığını. Combine kısmı da o da Theta n olabilir hocam.
+
+562
+01:29:12,515 --> 01:29:13,535
+Neden?
+
+563
+01:29:17,636 --> 01:29:25,755
+Yani en elemanlı bir şey tekrardan stop ereye dönüştürmek istiyoruz.
+
+564
+01:29:26,895 --> 01:29:30,236
+Tepsinin toplama süreci olayen olur diye düşündüm.
+
+565
+01:29:30,416 --> 01:29:31,195
+Ay pardon, Theta'ya.
+
+566
+01:29:31,695 --> 01:29:36,655
+Yanlış bir ifade değil ama biraz daha böyle hani herkesin anlayacağı dilden anlatmamız gerekecek.
+
+567
+01:29:37,175 --> 01:29:39,075
+Birazdan da onu yapacağız. Teşekkür ederim Şafak.
+
+568
+01:29:39,075 --> 01:29:53,275
+Şimdi ben size bir örnek göstereyim. Mesela AN diyelim. 2 AN böyle 2 diyelim ve artı 1 diyelim.
+
+569
+01:29:54,955 --> 01:30:00,935
+Şimdi bunun karmaşıklığını hesaplamak istiyorum. Böyle bir elimde bağıntı var.
+
+570
+01:30:00,935 --> 01:30:06,135
+Bunun karmaşıklığını hesaplamak için A'ya kaç yazmam lazım?
+
+571
+01:30:14,228 --> 01:30:15,228
+Metin?
+
+572
+01:30:20,180 --> 01:30:22,939
+Hocam ben soruyu kaçırdım da tekrardan söyleyebilir misiniz acaba?
+
+573
+01:30:24,719 --> 01:30:32,299
+Şu anda yazdığım bağıntıyı çözmek istiyorum, karmaşıklığını bulmak istiyorum. Bu bağıntıya sahip algoritmaların karmaşıklığını bulmak istiyorum.
+
+574
+01:30:33,060 --> 01:30:36,219
+Bunun içine master teoremi kullanacağım. A'ya kaç yazmam gerekiyor?
+
+575
+01:30:41,876 --> 01:30:42,876
+Evet, merci.
+
+576
+01:30:49,844 --> 01:30:50,783
+Bilmiyorum hocam.
+
+577
+01:30:51,623 --> 01:30:56,764
+Metin yazıyor ekranda. Çok basit. İki tane şeyi eşleyeceksin.
+
+578
+01:31:01,844 --> 01:31:12,023
+ortada. Divide and compute rekürans. İki hocam. Evet, teşekkür ederim Metin. Çok sağ olun. Evet, Mustafa Aydın.
+
+579
+01:31:16,340 --> 01:31:18,340
+Mustafa Aydın.
+
+580
+01:31:22,644 --> 01:31:23,843
+Göktuğ Kocabeyk
+
+581
+01:31:30,100 --> 01:31:32,100
+Göktuğuk Ocavıyık
+
+582
+01:31:35,475 --> 01:32:00,915
+çöze. Evet hocam. B'ye ne yazmam gerekiyor? İki. Teşekkür ediyorum. Evet, şimdi gelelim bu işi çözmeye. Bu işi çözerken hatırlarsanız FN yukarıda bağıntısı var. Eleman, Theta, en üzeri D dedik.
+
+583
+01:32:00,915 --> 01:32:05,435
+bu bağıntıda, buradaki örnekte
+
+584
+01:32:10,644 --> 01:32:12,644
+Değerinin değeri kaçtır?
+
+585
+01:32:17,684 --> 01:32:19,684
+Kim Söremi ister?
+
+586
+01:32:22,100 --> 01:32:23,519
+Ali Kemal Cem Özdemir
+
+587
+01:32:30,036 --> 01:32:32,036
+Ali Kemal, Cem Özdeviç.
+
+588
+01:32:37,939 --> 01:32:38,939
+Zaten yıldırım.
+
+589
+01:32:43,252 --> 01:32:44,551
+Serkan Yıldırım
+
+590
+01:32:48,627 --> 01:32:49,387
+Altında.
+
+591
+01:32:52,348 --> 01:32:54,427
+Hocam buradayım sesimi alabiliyor musunuz?
+
+592
+01:32:54,727 --> 01:32:55,447
+Evet alabiliyorum.
+
+593
+01:32:56,647 --> 01:32:58,627
+Hocam yukarıdakine göre...
+
+594
+01:33:01,908 --> 01:33:06,027
+Öncekinde 2K eşitmiş ama 1 bölü 2 desem
+
+595
+01:33:06,027 --> 01:33:11,507
+Efendim hocam?
+
+596
+01:33:12,147 --> 01:33:13,387
+D'yi soruyorum, Diyarbakır.
+
+597
+01:33:14,147 --> 01:33:16,447
+Diyarbakır, ben şu en üzerindeki şeyi sandım.
+
+598
+01:33:16,447 --> 01:33:17,887
+D bölü 100
+
+599
+01:33:23,636 --> 01:33:26,596
+Bir bölü iki diyeceğim ama tam üminde değilim yani.
+
+600
+01:33:27,255 --> 01:33:28,755
+Şuraya söz vereyim, teşekkürler.
+
+601
+01:33:31,116 --> 01:33:33,495
+Bana mı seslendiniz hocam?
+
+602
+01:33:33,755 --> 01:33:35,136
+Evet, Şuraya sana söz vermi.
+
+603
+01:33:36,895 --> 01:33:40,435
+Yukarıdaki eşitliğe göre A, B üzeri D'den küçük olmalı.
+
+604
+01:33:41,035 --> 01:33:46,595
+Yok, daha henüz olmalıyız çünkü elimizde D'yi bilmiyoruz. A, B var, D'yi bilmiyoruz.
+
+605
+01:33:47,736 --> 01:33:53,035
+Arkadaşlar, bir kez daha tekrar edeyim. Şu anda master teoremi uygulayabilmemiz için
+
+606
+01:33:53,035 --> 01:33:58,856
+A'ya, B'ye ve D'ye ihtiyacımız var. A'yı biliyoruz, B'yi biliyoruz, D'yi bilmiyoruz. Hüman?
+
+607
+01:34:00,795 --> 01:34:06,375
+Hocam sıfır mı? Neden? En üzeri sıfırdan bir olacak.
+
+608
+01:34:06,375 --> 01:34:23,015
+Evet, yani şurada herhangi bir n, n kare, işte log n gibi herhangi bir şey olmadığı için, sabit bir sayı olduğu için, otomatik olarak en üzeri d'nin, d kısmının sıfır olması gerekiyor ki sabit bir sayıya denk gelsin.
+
+609
+01:34:23,035 --> 01:34:34,235
+Yani herhangi bir sayının sıfırıncı kuvvetini aldığınızda 1'e denk gelecek. O yüzden de D0 oluyor. Şimdi A var, B var, D var. Çözümlemeyi kim yaptırmak ister bana?
+
+610
+01:34:43,444 --> 01:34:45,763
+Hocam, D'yi bir daha anlatır mısınız?
+
+611
+01:34:47,184 --> 01:34:48,063
+Kim konuştu?
+
+612
+01:34:48,543 --> 01:34:50,203
+Sena.
+
+613
+01:34:51,063 --> 01:34:52,383
+Tekrar söyleyeyim.
+
+614
+01:34:53,663 --> 01:35:04,444
+Şu anda yukarıda, şurada gördüğünüz formül Fn eleman, Theta en üzeri D olduğu bir senaryoyu konuşuyoruz.
+
+615
+01:35:06,223 --> 01:35:07,944
+Fn'e geliyorum. Fn burada.
+
+616
+01:35:09,503 --> 01:35:12,143
+Fn'in buradaki karşılığı ne? Bu örnekteki bir.
+
+617
+01:35:13,444 --> 01:35:32,723
+Bu N'de olabilirdi, N kare de olabilirdi, N üzeri 3'de olabilirdi. Burası 1 olduğu için otomatik olarak N'in kaçıncı kuvveti 1'e denk gelebilir? 0. O yüzden D 0 oluyor. Burası N olsaydı o zaman D kaç olacaktı? 1 olacaktı. Anlaşıldı mı Sena?
+
+618
+01:35:34,204 --> 01:35:41,164
+Anladım hocam şimdi. Teşekkürler. Rica ederim. Çaza çözmek istiyordu ona söz vereyim.
+
+619
+01:35:43,444 --> 01:35:57,204
+Hocam, A eşittir 2, büyüktür B üzeri de, yani 2 üzeri 0, demek ki N, yani N, Uşu, Log, B, A, Log 2, 2
+
+620
+01:35:57,204 --> 01:36:08,484
+Yazalım şöyle, N, uygulayacağımız formül Log, B, A, buradan eşittir yazıyorum, Theta
+
+621
+01:36:08,484 --> 01:36:23,344
+n, log, 2, 2. Bu iki tabanında ikiden ne gelecek? Bir gelecek. Bu da demek ki Theta n edecek.
+
+622
+01:36:24,024 --> 01:36:35,464
+Yani şöyle bir bize şurada gördüğünüz şekilde bir bağıntı verilseydi bu bağıntıya sahip olan algoritmanın karmaşıklığı
+
+623
+01:36:35,463 --> 01:36:40,023
+büyüme derecesi en cinsinde ifade ediliyor olacaktı.
+
+624
+01:36:40,823 --> 01:36:49,003
+İşte master teoreme göre bu bağıntıyı oluşturduktan sonra sonuca gitme şekliniz.
+
+625
+01:36:50,003 --> 01:36:51,303
+Buraya kadar sorusu olan var mı?
+
+626
+01:37:00,532 --> 01:37:01,831
+Evet, Mesut Şafak.
+
+627
+01:37:03,992 --> 01:37:13,091
+Hocam, ben bu şeyleri nereden elde ettik onu kavrayamadım. Şimdi üç tane durum var elimizde ve bunlara üçer tane hani böyle olur dedik.
+
+628
+01:37:14,251 --> 01:37:18,591
+Bu bastır teoremi zaten. Bu teoremin ispatını vesairesini anlatmıyoruz.
+
+629
+01:37:19,052 --> 01:37:19,632
+Anladım.
+
+630
+01:37:19,632 --> 01:37:31,132
+Bu ortaya konmuş nasıl formüller çeşitli deneyler sonucunda ya da çeşitli diğer matematik formülleri sonucunda ortaya konuyor.
+
+631
+01:37:31,132 --> 01:37:44,792
+Burada divide and concur rekürans puantası, divide and concur yaklaşımını da çözüyorsanız bu 3 farklı duruma nasıl yorumlayacaksınız?
+
+632
+01:37:44,932 --> 01:37:46,011
+Onun sonucu var burada.
+
+633
+01:37:47,351 --> 01:37:48,591
+Anladım. Çok teşekkür ederim.
+
+634
+01:37:49,091 --> 01:37:49,532
+Rica ederim.
+
+635
+01:37:53,043 --> 01:37:54,963
+Evet, başka soru sola.
+
+636
+01:38:08,083 --> 01:38:13,083
+Şimdi merge sort var, quick sort var.
+
+637
+01:38:15,083 --> 01:38:28,083
+Sort ailesinde en çok öne çıkan iki algoritma diyebiliriz ama hani rakipleri de var ama çok sıklıkla bunları kullanıyoruz.
+
+638
+01:38:28,083 --> 01:38:33,083
+Peki merge sortun karmaşıklığı nedir?
+
+639
+01:38:42,515 --> 01:38:45,515
+Wordsoft'un karmaşıkta nedir? Ertuğrul?
+
+640
+01:38:47,515 --> 01:38:50,515
+N-Log-N, Theta, N-Log-N.
+
+641
+01:38:51,515 --> 01:38:53,515
+Hangi kuşun için?
+
+642
+01:38:53,515 --> 01:38:59,515
+Hem worst case hem best case hem average case de N-Log-N'dir.
+
+643
+01:39:01,515 --> 01:39:10,515
+Best case, average case, worst case.
+
+644
+01:39:13,108 --> 01:39:19,608
+Merge Sort'un karmaşıklığı dedi arkadaşımız. Peki, Big Sort
+
+645
+01:39:27,891 --> 01:39:29,091
+Kim söylemek ister?
+
+646
+01:39:33,268 --> 01:39:37,027
+Başka bir arkadaş, Efe'den başka biri olsun. Şafak'tan başka biri olsun.
+
+647
+01:39:43,315 --> 01:39:45,315
+Şuradan.
+
+648
+01:39:48,787 --> 01:39:50,067
+Sesim geliyor mu hocam?
+
+649
+01:39:50,467 --> 01:39:50,867
+Geliyor.
+
+650
+01:39:51,687 --> 01:39:56,787
+En iyi durumda En-Logen, en kötü durumda da O-N-Kari.
+
+651
+01:40:09,652 --> 01:40:11,652
+Peki, average case?
+
+652
+01:40:13,652 --> 01:40:15,652
+Onda da enlogende sanırım.
+
+653
+01:40:15,652 --> 01:40:22,652
+Evet, belirli bir katsayıyla çarpılıyor ama o katsayıya düşürdüğümüz zaman enlogende.
+
+654
+01:40:22,652 --> 01:40:29,652
+Şimdi buna bağlı olarak hangisi daha avantajlı gözüküyor?
+
+655
+01:40:29,652 --> 01:40:33,652
+Evet, bu katsayla düşürdüğümüz zaman enlogende.
+
+656
+01:40:32,916 --> 01:40:36,275
+Sanki Merchusort daha avantajlı gözüküyor. Merchusort'un dezavantajı nedir?
+
+657
+01:40:40,627 --> 01:40:41,127
+Ertuğrul?
+
+658
+01:40:43,348 --> 01:40:47,427
+Hocam, ekstra yer kaplar, space complexi endir.
+
+659
+01:40:48,088 --> 01:40:48,407
+Evet.
+
+660
+01:40:49,187 --> 01:40:51,407
+Şimdi...
+
+661
+01:40:53,332 --> 01:40:57,111
+sorun Space Complex'deki bunun farklı
+
+662
+01:41:08,340 --> 01:41:24,340
+ekstradan bir alana ihtiyaç duyuyor. Ama önemli bir artısı daha var. Bunu avantaj olarak, dezavantaj olarak söyledik Space Complex diye ama MertSault'un QuickSault'a göre bir avantajı daha var.
+
+663
+01:41:24,340 --> 01:41:31,340
+KeepSault'a göre de aynı şekilde o avantajı. Geçtiğimiz dönem Salt algoritmalarını da söylemiştik.
+
+664
+01:41:37,716 --> 01:41:45,895
+Stable olması. Stable olması neydi arkadaşlar? Ne anlama geliyor Stable olması? Sercan?
+
+665
+01:41:47,375 --> 01:41:54,755
+Dizinin içerisindeki aynı değere, aynı büyüklüğe sahip değerlerin yer değiştirmemesi.
+
+666
+01:41:55,216 --> 01:42:01,415
+Yani mesela iki tane iki var diyelim ki, biri solda iki bir diyelim, deri iki iki, onların yeri değişmiyor.
+
+667
+01:42:01,415 --> 01:42:18,355
+Evet, teşekkür ederim ama aslında ilk söylemin ifade daha doğruydu. Aynı değere sahip diyelim, aynı büyüklüğe demeyelim çünkü bu illa bir sayısal değer olmak zorunda değil. Yani sonuçta sayısal değere dönüştürüyoruz belki metin ya da kelime kullanıyoruz ama aynı değere sahip olması önemli.
+
+668
+01:42:18,355 --> 01:42:45,656
+aynı değere sahip olan değerler sıralamada yani dizide hangi sırada yer alıyorlarsın sıralandıklarında da 2-2-2 arka arkaya geldiklerinde 3 tane 2 de yer aldıkları konumlarını değiştirmeden koruyarak işte 1-2 ikinci sıradaysa, 1-2 beşinci sıradaysa, 1-2 yedinci sıradaysa bunlar aynen 2-5-7 olacak şekilde sıralanıyorlar.
+
+669
+01:42:45,655 --> 01:43:14,855
+karışık şekilde değil ama Heapsort ve Quicksort'un böyle bir dezavantajı var. Şimdi bir ara vereceğiz. Bu aradan sonra Merge Sort ve Quicksort'un analizini yapacağız. Birbirlerine göre farklılıklarını konuşacağız. Belki vaktimiz kalırsa da bir örnek yapacağız ama bu dersi burada noktalıyorum. Dersin başlangıcını saat 3'te uygulama dersi üzerinden yapacağız.
+
+670
+01:43:14,855 --> 01:43:24,936
+Bu seşonu burada sonlandırıyorum. Katılanlara, özellikle katkı sağlayanlara çok teşekkür ediyorum. 15 dakika sonra görüşmek üzere diyorum. Kendinize iyi bakın.

@@ -1,0 +1,2635 @@
+1
+00:01:05,971 --> 00:01:16,251
+Merhaba arkadaşlar, hepinize. Hoş geldiniz. Yedinci hafta, bu hafta, günümüzdeki hafta vize sınavlarınız olacak.
+
+2
+00:01:17,591 --> 00:01:21,291
+Onunla ilgili bir ilk ufak açıklama yapacağım. Bir de ödevimizle ilgili bir açıklama yapacağım.
+
+3
+00:01:21,411 --> 00:01:31,091
+Sonra hemen kaldığımız yerden devam edeceğiz. Geçen hafta biliyorsunuz, yaşanan elektrik kesintisi nedeniyle şarjla ilgili de problemim olduğu için
+
+4
+00:01:31,091 --> 00:01:42,731
+dersi tam istediğimiz gibi gerçekleştirememiştik bu hafta. Onu da telafi etmek amacıyla uygulama saatini konunun anlatımına ayıracağız.
+
+5
+00:01:44,012 --> 00:01:53,371
+Şimdi 8. hafta vize haftası dedik. Bu dersin de vizesi program sanırım açıklandı ya da açıklanmak üzeredir.
+
+6
+00:01:53,371 --> 00:01:59,751
+aynı gün dersin olduğu gün saat 3'te olacak yanlış hatırlamıyorsam.
+
+7
+00:02:02,251 --> 00:02:10,811
+Sınavla ilgili söyleyebileceğim her seneki vize sınavları normalde yüz yüze yaptığımız vize sınavları benzeri bir sınav olacak.
+
+8
+00:02:10,811 --> 00:02:27,631
+hem test ve ari sorular olabilir, boşluk doldurma olabilir ya da bunlara ek olarak tabii ki doğal olarak algoritma, tasarımını ilgilendiren ya da analiz soruları olabilir.
+
+9
+00:02:29,111 --> 00:02:33,331
+Bu daha önce dersin başında matematiksel yaptığımız analizlerle ilgili sorular gelebilir.
+
+10
+00:02:33,631 --> 00:02:39,751
+Hiç daha önce görmediğiniz ya da belki duyduğunuz ama üzerine çalışmadığınız bir soruyla karşılaşabilirsiniz.
+
+11
+00:02:40,811 --> 00:02:55,651
+Şunu rahatlıkla söyleyebilirim size. Bu seneki sorularımızı seçerken standart yüz yüze yaptığımız bizlerdeki gibi zorlukta sorularımızı belirleyeceğiz.
+
+12
+00:02:57,271 --> 00:03:06,971
+Hani belki bazıları beklediğimizden bir tık zor veya kolay olabilir onunla ilgili tabii ki göreceğim bir kavram ama şunu özellikle belirtmek istiyorum.
+
+13
+00:03:06,971 --> 00:03:25,931
+uzaktan sınav yapmak gerçekten çok zor, adil olmuyor genelde. Farklı yollara başvuran arkadaşlar oluyor maalesef. Bu tamamen artık sizin takdirinize kalıyor. Tercih edenlere bir şey söyleyemeyeceğim.
+
+14
+00:03:25,931 --> 00:03:37,171
+çünkü ilerleyen zamanlarda maalesef bunu çok fazla deneyen arkadaşlarımız cezasını bir şekilde çekecekler iş hayatına çıktıklarında
+
+15
+00:03:37,171 --> 00:03:40,631
+bazı şeyleri iyi öğrenmekleri için sadece dersi geçtikleri için.
+
+16
+00:03:41,571 --> 00:03:44,471
+Gerçekten bu böyle hani nasihat olsun diye söylemiyorum.
+
+17
+00:03:44,471 --> 00:04:00,432
+Ama burada eğer biz herhangi bir şekilde iki arkadaşın ya da bir grubun birlikte bir çözüme ulaştığına kanaat getirirsek bununla ilgili puanlandırmayı da ona göre yapacağız
+
+18
+00:04:00,432 --> 00:04:02,792
+Bunu baştan söylemiş olayım
+
+19
+00:04:02,792 --> 00:04:13,471
+Yani bu tamamen bizim nasıl size kanaat notu denilen bir not varsa bununla ilgili bir tespitimiz olursa gerekli önlemi alacağız
+
+20
+00:04:13,471 --> 00:04:27,412
+artı internet üzerinden bulunduğunuz bir kod parçası ya da PUSOBA kod ya da algoritma tasarımını eğer kullanırsanız onunla ilgili de aynı şey geçerli.
+
+21
+00:04:28,492 --> 00:04:39,231
+Bunu maalesef uygulamak zorundayız ve burada işte hocam şöyleydi, hocam böyleydi gibi bir diyaloğa girmemek adına sizden ricam
+
+22
+00:04:39,231 --> 00:04:46,231
+buna itibar etmemeniz, elinizden geleni kendi adınıza yapmanız. İnanın...
+
+23
+00:04:47,091 --> 00:05:06,852
+Eğer farklı yollardan yüksek not olanlar varsa bile uzun vadede kaybedeceklerdir. Bu bir şey değil. Hani yüz yüze de göz ucuyla bir ya gözüm kaydı işte baktım şöyle bir şeklinde olan bir şey değil. Olay çok fazla derecede etiklikten çıkmış durumda.
+
+24
+00:05:06,852 --> 00:05:34,632
+geçtiğimiz dönem bunu veri yapılarında da yaşadık. Birebir bir sayfadan kodun bulunup aynısının kullanılması, üzerinde değişiklik yapılarak kullanılması. Bunlar hoş şeyler değil. O yüzden sizden ricam sadece kendi öğrendiklerinizden zaten sosyal notlarınız açık olacak. Bununla ilgili bir engelleme kısıt yok. Bir şey kontrol etme şansına sahip olacaksınız vs. Bunlarla ilgili de bir kısıt yok.
+
+25
+00:05:34,631 --> 00:05:45,831
+Ama özellikle ve özellikle algoritmik sorunlarda bir yerden bir algoritmayı bulup alırsanız bununla ilgili gerekli önlemlerinizi de almak zorunda kalacağız
+
+26
+00:05:45,831 --> 00:05:49,091
+O yüzden geçen seneki eleştiriler şuydu
+
+27
+00:05:49,091 --> 00:05:51,031
+Hocam bizim günahımız ne?
+
+28
+00:05:51,812 --> 00:05:53,671
+İşte çok zor sorular geliyor
+
+29
+00:05:53,671 --> 00:06:00,031
+Biz vize ve finalde normal yüz yüze'den daha zorlandık
+
+30
+00:06:00,031 --> 00:06:02,971
+Başka arkadaşlarımız böyle yapıyor diye biz mağdur oluyoruz
+
+31
+00:06:02,971 --> 00:06:08,931
+bununla ilgili bir mağduriyet yaşanmaması için bu seneki sorularımızı ona göre dizayn ediyor olacağız.
+
+32
+00:06:09,051 --> 00:06:10,571
+En azından vize için bunu söylüyorum.
+
+33
+00:06:11,131 --> 00:06:12,111
+Finale bakacağız.
+
+34
+00:06:12,111 --> 00:06:24,711
+Siz de bunun karşılığında hakikaten bir sınıftaymış gibi davranırsanız ve elinizdeki kaynakları bilgi anlamında kullanarak soruları çözerseniz burada bir sıkıntı çıkmaz.
+
+35
+00:06:24,711 --> 00:06:37,531
+Ama birebir bir alım yaparsanız özellikle kendi aranızda ve bir kaynaktan doğrudan alım bizim hiç istemediğimiz ve tasif etmediğimiz bir yaklaşım olacaktır
+
+36
+00:06:37,531 --> 00:06:46,951
+Çok uzattım kusura bakmayın lütfen ama bunu bir kez söylemiş olacağım bir daha da bu konuyu açmayacağım emin olabilirsiniz bundan
+
+37
+00:06:46,952 --> 00:07:04,632
+Onun dışında ödeviniz bu hafta vermeyeceğiz. Normalde cuma günü verecektik. Haftaya vize haftası ilan edildiği için ve bu yeni ilan edildiği için bu haftaki ödevi sizleri zor durumda bırakmamak adına vermiyoruz.
+
+38
+00:07:04,631 --> 00:07:17,511
+ancak ödevi haftaya Cuma günü saat 5'te yayınlayacağız ve süresini de ödevin kendi gerektirdiği süreye göre ayarlayacağız.
+
+39
+00:07:18,211 --> 00:07:28,011
+Ankete katılanlara teşekkür ediyorum. Birinci ödevle ilgili gerekli çıkarınlarımızı yaptık.
+
+40
+00:07:28,011 --> 00:07:31,651
+çok büyük bir memnuniyetsizlik yok.
+
+41
+00:07:32,331 --> 00:07:34,871
+Ama herkes çok da memnun gözükmüyor.
+
+42
+00:07:36,071 --> 00:07:38,892
+Sürelerde ufak tefek oynamalar yaparız tabii ki.
+
+43
+00:07:39,532 --> 00:07:47,011
+Geçen sefer özellikle Cuma günü dersi olanların mağduriyeti olduğunu belirten arkadaşlar olmuş.
+
+44
+00:07:47,291 --> 00:07:49,731
+Onunla ilgili de önlemlerimizi alacağız.
+
+45
+00:07:50,651 --> 00:07:55,731
+Ama verilen ödeve göre sürenin az olduğunu kesinlikle düşünmüyoruz.
+
+46
+00:07:55,731 --> 00:08:03,952
+düşünmüyoruz. Sadece herkesin planlamasını ona göre yapması için önceden belirlenmesi gerektiğini söylemişti arkadaşlar.
+
+47
+00:08:04,472 --> 00:08:16,231
+Biz de şimdiden haber veriyoruz. Önümüzdeki hafta vizelerin bitimine saat 5, cuma akşam dersek ödevi vermiş olacağız ve ödevin gerektirdiği kadar sizle süre paylaşacağız.
+
+48
+00:08:16,231 --> 00:08:25,392
+Hafta sonu planlamanızı da buna göre yapabilirsiniz. Süre muhtemelen 1-2 günden daha uzun olacaktır. Onu da şimdiden belirtmiş olayım.
+
+49
+00:08:25,731 --> 00:08:36,211
+geçen seferki gibi iki günlük bir süre değil biraz daha uzun bir süre vermeyi planlıyoruz. Ödevinde biraz daha uzun süreceğini öngörerek.
+
+50
+00:08:37,172 --> 00:08:45,271
+Bu bilgilendirmeyi de yaptım. Ödevlerinizin kontrolü ile ilgili de bir bilgilendirme yapayım. Şu anda mevcut sistem
+
+51
+00:08:45,663 --> 00:08:53,563
+ödevlerinizin topluca indirilmesine ve yüklediğiniz numara ismiyle kaydedilmesine müsait değil.
+
+52
+00:08:54,584 --> 00:08:58,343
+Tek tek elle indirilmesi gerekiyor ve tek tek elle isimlendirilmesi gerekiyor.
+
+53
+00:08:59,023 --> 00:09:03,264
+Bununla ilgili uzaktan eğitim birimiyle iletişimine geçtik, talebimizi yaptık.
+
+54
+00:09:04,264 --> 00:09:09,764
+Çalışmaları bu hafta sonuna kadar en geç önümüzdeki hafta içinde sonlanacağını belirttiler.
+
+55
+00:09:11,183 --> 00:09:15,603
+Topluca ödevleri indireceğiz, isimlendirmeler otomatik olarak yapılacak.
+
+56
+00:09:15,663 --> 00:09:30,423
+bundan sonra bu modül aktif hale geldikten sonra ödev kontrolleriniz başlayacak ve en kısa sürede size ödevlerinizle ilgili notlandırma bilgileri geri dönüşü yapılacak.
+
+57
+00:09:30,643 --> 00:09:45,583
+Geçtiğimiz haftada ödevlerin çözümü ile ilgili uygulama saatini kullanarak sizlerin geçtiğimiz senelerde diğer daha önceki öğrencilerimizin yapmış olduğu taleplere uygun bir şekilde verilen ödevleri de mümkün olduğunca bu sene
+
+58
+00:09:45,583 --> 00:09:53,803
+size birebir çözerek ya da yapılış biçimini anlatarak geri dönüşler sağlamaya çalışacağız.
+
+59
+00:09:54,583 --> 00:09:56,923
+Umarım faydası olur, katkısı olur.
+
+60
+00:09:58,043 --> 00:10:01,423
+Çok uzatmayayım, 10 dakika yaklaşık olduğu anlatıyorum.
+
+61
+00:10:01,423 --> 00:10:04,303
+Her türlü konuyla ilgili bilgi verdiğimi zannediyorum.
+
+62
+00:10:04,943 --> 00:10:10,183
+Ama sizin sormak istediğiniz bir şey varsa 2-3 dakika içerisinde sorularınızı yanıtlamaya çalışacağım.
+
+63
+00:10:10,563 --> 00:10:10,884
+Metin.
+
+64
+00:10:10,884 --> 00:10:18,704
+Hocam sınavda kod yazmamız beklenirse geçen seneki gibi pdf klavyeden yazabilir miyiz yoksa elle mi yazmamız bekleniyor?
+
+65
+00:10:18,864 --> 00:10:20,064
+Yani sınav günü mü söylenir o bize?
+
+66
+00:10:20,064 --> 00:10:28,824
+Hemen şunu söyleyeyim kod yazılırsa bunu sizden C uzantılı dosyalar olarak isteyeceğiz.
+
+67
+00:10:29,943 --> 00:10:30,263
+Anladım.
+
+68
+00:10:30,943 --> 00:10:31,064
+Bir de...
+
+69
+00:10:31,844 --> 00:10:36,384
+Tabii sistemle ilgili bir sıkıntı olmazsa Metin bunu özellikle belirteyim.
+
+70
+00:10:36,384 --> 00:10:44,263
+uzantıyla ilgili bir problem yoksa hem C uzantılı hem de PDF'in içerisinde copy paste yapmanızı isteyebiliriz.
+
+71
+00:10:44,903 --> 00:10:47,604
+Yani bunu derlemek ve çalıştırmak adına.
+
+72
+00:10:48,943 --> 00:10:53,344
+Özellikle kod sorularında mutlaka C uzantısını bekliyor olacağız. Evet Metin.
+
+73
+00:10:54,863 --> 00:11:00,044
+Tamam başka bir soru sormayacağım. Teşekkür ederim. PDF soracaktım da ona da yazmamız gereken diye aldım cevabı zaten.
+
+74
+00:11:00,044 --> 00:11:02,723
+Tamam güzel. Başka soru sormayacağım.
+
+75
+00:11:09,043 --> 00:11:35,343
+Sanırım kimsenin sorusu yok peki. O zaman biz şimdi ekran paylaşımına geçeceğiz. Evet her zamanki gibi kimsenin sorusu yok dedikten sonra soru geldi. İstisnasız bütün derslerinde sorunuz var mı dediğimde soru gelmiyor. Sonra hop soru geliyor. Bunu Türkiye Büyümet'te söylemiyorum. Enteresan bir istatistik. Yasir, sonra Çetel Hanımca.
+
+76
+00:11:35,343 --> 00:11:38,943
+Çok kusura bakma hocam bilgisayardan dolayı ondan böyle sormak
+
+77
+00:11:38,943 --> 00:11:41,384
+Yok yok sıkıntı değil ben sadece sınıfında
+
+78
+00:11:41,384 --> 00:11:44,143
+Haklısınız haklısınız hocam numarada öyle oluyor da
+
+79
+00:11:44,143 --> 00:11:45,643
+Hocam şey soracaktım
+
+80
+00:11:45,643 --> 00:11:56,143
+Geçen o devde bazen nasıl anlatayım da soruları da böyle anlamaya çalıştığıma kadar bazen de yanlış anlıyor olabilirim
+
+81
+00:11:56,143 --> 00:12:01,003
+Mesela soru tam olarak ne istediğini biraz farklı bir şey de yapmış oluyoruz da
+
+82
+00:12:01,003 --> 00:12:06,803
+Yani biraz bir daha iyi anlatayım olsa sınavlarda falan iyi olur da
+
+83
+00:12:06,803 --> 00:12:18,103
+Şimdi sevgili Yasir ve diğer arkadaşlarımız bu konuda elimizden gelen tüm çabayı bütün açıklığı soruları yazmak üzerine gösteriyoruz
+
+84
+00:12:18,103 --> 00:12:29,743
+Bazen bizden kaynaklı tabii ki eksiklikler hatalar olabilir ama sizin düşündüğünüz anlamda birebir bütün adımları tarifleyen bir bilgi vermemiz mümkün değil
+
+85
+00:12:29,743 --> 00:12:48,883
+Eğer bu ödevde bir eksik anlatımımız olduysa tabii ki aklınıza sığınıyoruz. Ama bununla ilgili inanın azameyi dikkati göstermeye çalışıyoruz. Fakat arada bizim de gözümüzden kaçanlar oluyor. Önce Sercan'dan önce Ömer Burak da aldığım bir sorusu vardı bakayım.
+
+86
+00:12:48,883 --> 00:12:53,583
+geçen haftanın konularını zaten tam yapamamıştık.
+
+87
+00:12:53,583 --> 00:12:55,623
+HASH'ı bu hafta komple anlatıyor olacağız.
+
+88
+00:12:56,903 --> 00:12:59,083
+O yüzden endişelenmeye gerek yok.
+
+89
+00:12:59,203 --> 00:13:00,703
+Bugün bütün HASH konularını bitireceğiz.
+
+90
+00:13:00,843 --> 00:13:02,983
+Haftaya da bu konular dahil olmak üzere.
+
+91
+00:13:03,443 --> 00:13:05,023
+Biz de sınav sorularımız oluşacak.
+
+92
+00:13:05,123 --> 00:13:05,543
+Sercan.
+
+93
+00:13:06,703 --> 00:13:09,663
+Hocam ben sorudan ziyade bir ricada bulunacaktım.
+
+94
+00:13:09,743 --> 00:13:14,023
+Bu sürelerin veri yapılarında ben açıkçası bayağı zorlanmıştım finalde.
+
+95
+00:13:14,523 --> 00:13:16,743
+Bir de hiç planlama ona göre yapsak da
+
+96
+00:13:16,743 --> 00:13:23,643
+Ben bütün odamı boşaltıyorum, aileme haber veriyorum, diyorum ki sınavım var, rahatsız etmeyip falan ama bir sürü planlanmaya şey gelişebiliyor
+
+97
+00:13:23,643 --> 00:13:30,143
+Ne bileyim bu cam scanner kullanacağımız zaman telefonum bir anda çalışmıyor, arzu ediyor veya internete ulaşacağım zaman çekmeyebiliyor
+
+98
+00:13:30,143 --> 00:13:33,984
+Kapıyı falan kapatıyorum çünkü şişesiz olacağı için bir anda internette bağlantım kopuyor vs.
+
+99
+00:13:34,583 --> 00:13:37,424
+Böyle süre bir tık bana az gelmişti veri yapılarının finalinde.
+
+100
+00:13:37,924 --> 00:13:40,823
+Hani dikkat ederseniz sevinirim diyecektim bu dönemki senedir.
+
+101
+00:13:40,823 --> 00:13:44,503
+Şimdi sağlıcan teşekkür ederim bu noktaya değindiği için.
+
+102
+00:13:44,503 --> 00:14:05,243
+önemli bir nokta olduğunu düşünüyorum ama burası biraz ince bir çizgi. Bir süreyi verirken mümkün olduğunca hakkaniyet bir şey var. Ama şöyle durumlar da oluştuğu için ben açıkçası karşılıklı iyi niyetin olması gerektiğini ve karşılıklı dikkatin olması gerektiğini düşünüyorum.
+
+103
+00:14:05,243 --> 00:14:15,764
+geçen sene bir arkadaşınız bana, hocam sınavda klavyeme çay döküldü, o yüzden mağdur oldum, tekrar sınava girmek istiyorum diye bir meyin gönderdi.
+
+104
+00:14:16,264 --> 00:14:30,783
+Şimdi bu bir örnek. Benim burada nadizane yorum şu olacak, siz arkadaşlar evde bir şey yiyerek, bir şey içerek sınava giriyorsanız bu riski de göze alıyorsunuz demektir.
+
+105
+00:14:30,783 --> 00:14:44,423
+Kimse sizi bunun için engelleyemez. Çay içmeyin demez, bir şey yemeyin demez ama bunlar bir risk. Bundan dolayı bir mağduriyet söz konusu benim gözümde değildir. Çünkü siz sınavda bir şey yiyip içemezsiniz okulda olduğunuz zaman.
+
+106
+00:14:44,423 --> 00:15:00,503
+Bunun gibi farklı ihtimalleri göz önünde bulundurarak evinizdeki maksimum ya da sınava gireceğiniz yerdeki maksimum konforu sağlamaya çalışın. Haklısınız bir ev içerisinde birden fazla yaşayan kişiler var.
+
+107
+00:15:00,864 --> 00:15:11,223
+kolay bir şey değil. Hepinizin şartları aynı değil. İnternet bağlantısında sıkıntı var. Bunlar gerçekten zorlandığımız konular. Hepimiz için.
+
+108
+00:15:11,223 --> 00:15:22,683
+Benim mesela geçen hafta belki aylardır hiç elektrik kesilmemişti. Bir çalışma yapılmış. Benim son dakika haberim oldu. Bundan dolayı mağdur olduk. Bunlar olabiliyor.
+
+109
+00:15:22,683 --> 00:15:46,883
+Ama ben iki dönemde ders anlatıyorum bir kez başıma geldi. Şimdi burada süreyi mümkün olduğunca Selcan arkadaşınızın söylediği gibi sizi çok fazla sıkıştırmadan vermeye çalışacağız. Ama işte hangi tool'ları kullanacağımız, neyle convert edeceğiniz bunların hepsi sınavlar başladığı anda hazır olmazsa o anda panik yaparsınız ve yetişmez.
+
+110
+00:15:46,884 --> 00:16:02,643
+benim rica bütün kullanacağımız ekipmanları ki sınav kılavuzları da hazır bizlerle paylaşıldı muhtemelen sizlerle de paylaşılmıştır ya da en azından öğrenci tarafına verilmesi gereken bilgiler verilmiştir.
+
+111
+00:16:03,243 --> 00:16:13,884
+Hazırlıklarınızı yapmanız işte bir anda cep telefonunuz fotoğraf çekecekseniz save as yapacaksanız bunun için ayrılmış özel bir klasörünüz her şeyi aynı yere kopyalamamanız ya bir sürü şey var.
+
+112
+00:16:13,883 --> 00:16:39,603
+Bu hazırlıkları yapın. Eğer ekstra bir durum olursa bana durumu aktarırsınız. Yapabileceğim varsa bir şey yaparım. Ama toparlayacak olursam Sercan arkadaşınızın söylediğine dikkat edeceğim süre konusunda. Ama hiçbir zaman şunun garantisini vermiyorum. Rahat rahat yee yee bir sınavınız olmayacak. Ne anlamda? Tempolu bir şekilde çözmeniz beklenecek.
+
+113
+00:16:39,603 --> 00:16:46,423
+ama diğer 5 dakikadan, 8 dakikadan mağdur olmamanız için 3 dakikada gerekli önlemleri alacağız.
+
+114
+00:16:47,103 --> 00:16:52,183
+Yani ev ortamında olmanız demek siz 3 saatte bir sınav çözersiniz demek değil.
+
+115
+00:16:52,703 --> 00:16:55,383
+Ona göre bir sınav hazırladığınızda da siz mutsuz oluyorsunuz.
+
+116
+00:16:56,063 --> 00:16:57,084
+Sorular çok zor oluyor.
+
+117
+00:16:58,364 --> 00:17:01,783
+O zaman da yani her ikisinin artı ve eksi yönleri var.
+
+118
+00:17:01,783 --> 00:17:11,724
+tercihler. Sizden tek ricam, sınavların dışında size verilen ödevleri mümkün olduğunca yapmaya çalışın.
+
+119
+00:17:12,603 --> 00:17:23,164
+Geçtiğimiz dönem verilen dönem içi ödevleri sınıfın kaç kişiydi? 70 kişide, 20 kişisi hiç yapmamıştı.
+
+120
+00:17:23,164 --> 00:17:35,544
+ve bu 20 kişiden önemli bir kısmı dönemin sonunda hocam işte ya buradan çok not ihtiyacım var, şöyle var diye iletişim kurdu.
+
+121
+00:17:36,283 --> 00:17:41,164
+Hiç ödev yapmamış birinin nasıl acaba katkıda bulunmamızı bekleyebilirsiniz? Öyle düşünün.
+
+122
+00:17:42,084 --> 00:17:46,524
+Siz elinizden yerini yaptığınız zaman inanın biz de size sonuna kadar destek olmaya çalışacağız.
+
+123
+00:17:46,524 --> 00:17:57,944
+çünkü pandeminin ne kadar zor olduğunu ve bir evde kalabalık bir şekilde yaşamanın ya da imkansızlıklarda dersleri takip etmeye çalışmanın ne kadar zor olduğunu biliyoruz.
+
+124
+00:17:57,944 --> 00:18:07,084
+Ama imkanınız varsa siz de bize destek olun. Birlikte bu dönemi güzel bir şekilde atlatalım. Umarım siz de pozitif bakarsınız.
+
+125
+00:18:07,464 --> 00:18:11,703
+Birlikte pozitif bakarsak bence bu dersten daha güzel bir şekilde ayrılacağız demektir.
+
+126
+00:18:11,703 --> 00:18:32,123
+Evet, çok uzattım ama bunları konuşmanın zamanıydı diye düşünüyorum. Evet, başka soru kaldı mı? Peki, teşekkür ediyorum. Umarım sınav dönemini güzel bir şekilde atlatacağız. Şimdi öncelikle ekranımı paylaşayım. Şuradan.
+
+127
+00:18:42,451 --> 00:18:50,672
+Şimdi evet share screen diyeceğim ama ondan önce şunu açalım.
+
+128
+00:19:35,092 --> 00:19:38,691
+ve şu anda paylaşım yapıldı. Videomu arka planda buluyorum.
+
+129
+00:19:41,991 --> 00:19:46,491
+Geçtiğimiz haftanın üzerinden hızlıca geçiyorum ve kaldığımız yerden devam edeceğim.
+
+130
+00:19:46,491 --> 00:19:51,092
+Hash'e başlamıştık. Hashing nedir? Ondan bahsetmiştik.
+
+131
+00:19:51,092 --> 00:19:55,092
+BinarySearch, BinarySearch, BinarySearch3'den bahsettik.
+
+132
+00:19:55,092 --> 00:20:01,092
+Search operation'ların hangi bir yapılarını kullanarak yapabileceğinden ve bunların karmaşıklıklarını da özetmiştik.
+
+133
+00:20:01,092 --> 00:20:17,772
+hashing yöntemini kullanmanın o bir karmaşıklığında bir arama olduğunu ve bu nedenle key value şeklinde saklanabilecek birçok bilginin bu şekilde hash yöntemiyle saklandığından ve bunun verimliliğinden söz etmiştik.
+
+134
+00:20:17,772 --> 00:20:27,471
+Direct address table yani diziler gibi yapıları kullanmanın normal şartlarda mümkün olduğunu ama uzay büyüdükçe eleman uzayımız,
+
+135
+00:20:27,471 --> 00:20:49,452
+dizinin her gözünün kullanılmamasından dolayı artı çok büyük adres değerleri elde edildiğinde küçük adreslerin boş kalmasından dolayı Direct Address Table sadece minimum değerlere sahip olduğu bilinen elemanlar için belli boyuttaki veri setleri için kullanabileceğimizi söylemiştik.
+
+136
+00:20:51,511 --> 00:20:56,531
+Şimdi hemen Haching'in adımlarına geçelim.
+
+137
+00:20:57,471 --> 00:21:12,371
+Hashing uygulanırken bir key değeri kullanıyorsunuz. Bu key değerini hash fonksiyonuna veriyorsunuz. Bu key değeri unique bir id olması gerekiyor genellikle.
+
+138
+00:21:12,371 --> 00:21:27,371
+Ama tabii her zaman unique bir id olamaz. Örneğin dictionary mantığını düşündüğünüzde sözcükleri kullanıyorsunuz, kelimeleri kullanıyorsunuz. Onlardan bir key değeri alıyorsunuz ve bu key değerinden bir değer öğretiyorsunuz.
+
+139
+00:21:27,471 --> 00:21:46,791
+Örneğin bir öğrenci bilgisi saklayacağınız zaman std id'yi kullandınız bunu hash fonksiyonuna verdiniz ve kullandığınız hash fonksiyonuna bir adres değeri üretiliyor. Bu adres değeri de ilgili hashtag'ındaki bölüme gidilip oraya key'in karşılığındaki value neyse o değer yazılıyor.
+
+140
+00:21:46,791 --> 00:21:57,691
+işte öğrenci numarasını saklayacaksınız ya da öğrenci numarasıyla bir hash fonksiyonundan geçirdiğiniz adres ürettiğiniz o öğrencinin notunu saklayacaksınız vesaire gibi bunları yapma şansına sahipsiniz.
+
+141
+00:21:58,032 --> 00:22:05,651
+HashTable üzerinde temel olarak üç işlem yapıyoruz. Search, Insert ve Delete olmak üzere.
+
+142
+00:22:05,651 --> 00:22:21,151
+Tabii hash işi yapılırken seçtiğiniz hash fonksiyonunun birincisi kolay hesaplamaya uygun bir metot olması gerekiyor.
+
+143
+00:22:21,151 --> 00:22:33,711
+İkincisi burada consistency'den kasıt aslında tablonun verimli kullanılması
+
+144
+00:22:33,711 --> 00:22:39,991
+tabloda çok fazla yani kararlılık ve doluluk anlamında da kullanılıyor consistency kelimesi
+
+145
+00:22:39,991 --> 00:22:47,111
+tablonun çok fazla boş kalması demek aslında sizin doğru bir hash tablosu seçmediğiniz
+
+146
+00:22:47,111 --> 00:22:50,892
+boyutunu yanlış seçtiğiniz anlamına gelir buna dikkat etmek gerekiyor
+
+147
+00:22:50,892 --> 00:23:05,852
+Uniform Address Generation'da mümkün olduğunca değerlerin tabloya dağıtık bir şekilde yayılmış bir şekilde yerleşmesine uygun bir yapıyla adreslerin üretilmesi gerekiyor.
+
+148
+00:23:05,852 --> 00:23:19,371
+İşte burada M değerini 10 seçmiştik. M değerini 10 seçersek bununla ilgili standart bir 10, 40, 50, 100 geldenin hepsi sıfır değerini üretecek ve bu da
+
+149
+00:23:19,371 --> 00:23:20,332
+e...
+
+150
+00:23:20,339 --> 00:23:28,339
+belli bir bölgenin çok fazla şişmesine sebebiyet verecek tabloda. Bunu istemeyiz. Buna uygun bir şekilde değerleri seçmek gerekiyor.
+
+151
+00:23:29,999 --> 00:23:36,879
+Bu nedenle prime number yani asal bir sayı olması genelde tercih edilen bir yaklaşım.
+
+152
+00:23:37,339 --> 00:23:43,339
+M ile n arasında yani saklayacağınız eleman sayısı arasında ve tablonun boyutu arasında bir ilişki var.
+
+153
+00:23:43,339 --> 00:23:57,779
+Bunu birazdan göreceksiniz. N bölü M size load faktörü verecek alfa olarak ve bu load faktöre göre bazı kararlar veriyor olacağız. Birazdan bunlardan bahsediyor olacağız.
+
+154
+00:23:58,740 --> 00:24:12,479
+Geçen hafta kullanılan hash yaklaşımlarından, metotlarından bahsetmiştik en temel anlamlarından. Birincisi division metot demiştik. Division metot da genelde modüler aritmetik kullanılıyor ve
+
+155
+00:24:12,479 --> 00:24:35,999
+bir m-tablo uzunluğu için kullanılan değişken key'miz zaten bizim kullandığımız anahtar ve onun üzerinden de bir hash fonksiyonu mod modüler olarak 3 değerini ürettiğimiz 25 mod 11'den ilgili table'a gidip 25 değerini yazıyoruz.
+
+156
+00:24:35,999 --> 00:24:40,999
+Başka değer de saklıyor olabilirdik. Burada doğrudan 25'i saklamışız.
+
+157
+00:24:40,999 --> 00:25:03,059
+Şimdi doğal olarak division metodunda, multiplication metodunda bir dezavantajı var. Mutlaka siz eleman sayısı arttıkça collusion olayı da yani çakışma olayı da olasılığı da artıyor. Birazdan bu olasılığı da incelemeye olacağız. Buna çözüm bulmak gerekecek.
+
+158
+00:25:03,060 --> 00:25:15,220
+hashing'in en büyük dertlerinden bir tanesi bu. Çok verimli bir arama time kompleksisine sahip ama öte yanda collision dediğimiz bir problemle karşı karşıyayız.
+
+159
+00:25:15,220 --> 00:25:31,780
+Bugün bunu konuşuyor olacağız. Öncelikle multiplication metoduyla devam edelim. Nasıl bir yaklaşımla uygulandığını konuşalım.
+
+160
+00:25:31,780 --> 00:25:51,739
+division kısmı zaten genelde çok karşılaştığınız bir kısım, bildiğiniz bir kısım. Multiplication ile bir constantımız var, A isimli. Bu constant genelde 0 ile 1 aralığında yerden bir constant.
+
+161
+00:25:51,739 --> 00:25:57,819
+hash, ki yazıyoruz.
+
+162
+00:26:12,243 --> 00:26:13,303
+Ki çarpı A
+
+163
+00:26:13,303 --> 00:26:17,684
+Mod 1
+
+164
+00:26:17,684 --> 00:26:30,783
+Burada bu ne anlama geliyor? Buna bir kez de yakından bakalım. Şöyle bir farklı renkle yazayım. Ki çarpı A
+
+165
+00:26:30,783 --> 00:26:33,543
+Mod 1
+
+166
+00:26:37,543 --> 00:26:38,543
+Aslında
+
+167
+00:26:39,731 --> 00:26:50,591
+Ki çarpı A, eksi, ki çarpı A olarak da ifade edilebilir.
+
+168
+00:26:51,811 --> 00:26:57,731
+M'i, 10.000 seçelim, tablo boyutumuzu.
+
+169
+00:26:59,971 --> 00:27:06,791
+Ki'imiz de, 12.000, pardon 123.456 olsun.
+
+170
+00:27:06,791 --> 00:27:35,452
+Buradan hash diyorum, 123456 diyorum, yukarıdaki formülü uygulayacağım, 10.000 çarpı 123456 çarpı bir A değeri, buraya şu anda bu A değeri 061 8033 olarak yazayım.
+
+171
+00:27:36,791 --> 00:27:37,891
+ve mod 1 diyelim.
+
+172
+00:27:40,151 --> 00:27:52,611
+Buradan şu gördüğünüz noktadan 76.300.004.11.51 değeri geldi.
+
+173
+00:27:52,611 --> 00:28:13,291
+Bu noktada 10.000 çarpı 0.0 mod aldıktan sonraki değeri kullanıyoruz. Bu da 41.151 oldu.
+
+174
+00:28:13,291 --> 00:28:29,631
+ve hash 123456 bizim için 41 değerini üretti. Bir başka değişti 123456.
+
+175
+00:28:39,092 --> 00:29:03,231
+5 fonksiyonlar çıktıktan sonra 41 adresini üretmiş olduk. Şimdi burada a değeri 0 ile 1 aralığına alabilir dedik ama en çok kullanılan değer kök 5, eksi 1, böl 2, o da 0.61, 8033'e denk geliyor.
+
+176
+00:29:03,231 --> 00:29:23,511
+Şimdi multiplication metod da biraz önce modu alırken tablo boyutuna göre almıştık. Burada tablo boyutu çarpı ki çarpı A sabiti ve onun modüler bile yani bile göre modülünü alıyoruz.
+
+177
+00:29:23,511 --> 00:29:38,151
+buradan biz şu kısmı elde etmiş oluyoruz. Bu kısmı da tablo boyutuyla çarptığımızda tam sayı kısmını alarak adresimizi beliriyoruz.
+
+178
+00:29:38,691 --> 00:29:42,911
+Bu yöntemin bir önceki yönteme göre artısı ya da eksisi var mıdır?
+
+179
+00:29:51,988 --> 00:29:52,988
+sizdeyim arkadaşlar.
+
+180
+00:30:00,000 --> 00:30:01,079
+e kaldırabilirsiniz.
+
+181
+00:30:05,159 --> 00:30:11,599
+Multiplication metodun division yaklaşımına göre artısı ya da eksisi var mıdır?
+
+182
+00:30:14,599 --> 00:30:19,600
+Hocam, belki anahtar değerimiz çok yüksek olursa tablonun boyutunu geçebilir.
+
+183
+00:30:20,619 --> 00:30:24,159
+Anahtar değerimiz yüksek olursa tablonun boyutunu geçebilir.
+
+184
+00:30:26,619 --> 00:30:27,699
+Olabilir mi?
+
+185
+00:30:30,000 --> 00:30:32,540
+Ben bunu size sormuş olayım. Zülfü?
+
+186
+00:30:33,540 --> 00:30:39,159
+Mod 1 olduğu için geçmeyecek bence tablo boyutunu ama ben sorunun cevabını bilmiyorum.
+
+187
+00:30:40,260 --> 00:30:51,000
+Şöyle söyleyeyim. Mod 1'i aldığımızda birinin altında bir değer olacağı için 10.000'i de birinin altında bir değerle çarptığımız zaman hiçbir zaman tablonun boyutunu geçme ihtimali...
+
+188
+00:30:51,580 --> 00:30:53,860
+Doğru hocam. Orası ben karıştım.
+
+189
+00:30:53,879 --> 00:30:56,500
+Olsun hemen. En azından bunu bir tartışmış olduk.
+
+190
+00:30:56,500 --> 00:31:09,519
+Division metoda göre Multiplication metodun artı siyede eksi var mıdır diye sormuştum. Şu an 55 kişi var derste. Fikir yürütebilecek arkadaşlar oluyorum.
+
+191
+00:31:22,932 --> 00:31:24,672
+Evet, o zaman soralım.
+
+192
+00:31:26,871 --> 00:31:28,051
+Ali Kemal, Cem Özdemir.
+
+193
+00:31:36,243 --> 00:31:45,204
+Ali Kemal, Cem Özdemir. Peki aramızda değil. Ali Can Karaömer.
+
+194
+00:31:46,867 --> 00:32:02,007
+Hocam sesim geliyor mu? Evet, duyabiliyorum hocam. Şey hocam ben yeni girdim o yüzden fikrim yok, özür dilerim. Yeni girdim derken? Derse şu an girdim de. Peki. Ali İhsan Arslan Pay.
+
+195
+00:32:05,844 --> 00:32:06,563
+Burdayım hocam.
+
+196
+00:32:07,303 --> 00:32:09,743
+Evet. O zaman bir fikir yüftebilir misin?
+
+197
+00:32:17,523 --> 00:32:19,163
+Duyamıyorum. Ali İhsan seni.
+
+198
+00:32:20,343 --> 00:32:23,083
+Hocam, kolejin riske sanki daha az gibi geldi.
+
+199
+00:32:24,223 --> 00:32:24,823
+Hangisinde?
+
+200
+00:32:26,383 --> 00:32:27,703
+Matrik-i Keşi metoddan.
+
+201
+00:32:29,503 --> 00:32:32,343
+Peki, teşekkür ederim. Atakan Tekoğlu.
+
+202
+00:32:34,423 --> 00:32:35,503
+Hocam, buradayım.
+
+203
+00:32:37,544 --> 00:32:39,503
+Peki, Atakan. Merhaba.
+
+204
+00:32:39,743 --> 00:32:42,284
+Ben, merhaba. Benim de bir fikrim yok hocam.
+
+205
+00:32:42,284 --> 00:32:57,303
+Easy to Compute dediğimiz bir özellik vardı H-Fonksiyon için ve mümkün olduğunca az işlem yapılması gerektiğinden bahsetmiştik. Hangisi daha az işlem yapılmasını sağlayan arkadaşlar.
+
+206
+00:33:01,332 --> 00:33:03,332
+Division mı, Multiplication mı?
+
+207
+00:33:08,115 --> 00:33:09,315
+Serra lütfen.
+
+208
+00:33:10,316 --> 00:33:11,515
+Seriyecim hocam.
+
+209
+00:33:11,515 --> 00:33:37,515
+Evet, baktığınızda Multiplication tarafında daha fazla operation yapıyorsunuz. O yüzden genellikle Multiplication metodu çok sık kullanılmıyor, hashing'te. Fakat evet, burada eğer dağılımın üniformluğu açısından bakarsanız Multiplication metodu bir tık daha üniform değer üretme olasılığı olduğunu düşünebilirsiniz.
+
+210
+00:33:37,515 --> 00:34:04,156
+düşünebilirsiniz. Fakat burada da seçeceğimiz prime number önemli. Division metod da prime number. Yani tablo boyutu yükseldiği takdirde doğal olarak dağılım da artacaktır. Aynı şekilde multiplication metoddaki M de önemli. O yüzden birbirleriyle karşılaştırırken M'lerin de aynı seviyede olması lazım. Çok küçük M ile çok büyük M'i karşılaştırdığınızda aynı şeyleri karşılaştırmış olmazsınız.
+
+211
+00:34:04,155 --> 00:34:14,155
+ama burada kullanılan A konstantı bu üniform dağılım için kullanılan en uygun değerlerden bir tanesi.
+
+212
+00:34:14,155 --> 00:34:23,195
+Peki iki yaklaşımdan da bahsetmiş olduk. Şimdi bir sonraki kısma geçelim.
+
+213
+00:34:25,735 --> 00:34:28,415
+Birthday paradox dediğimiz bir problemimiz var.
+
+214
+00:34:32,947 --> 00:34:41,187
+Bir ortamda bulunan kişilerden iki kişinin doğum gününün aynı olma olasılığı nedir? Soru bu.
+
+215
+00:34:44,328 --> 00:34:55,027
+365 gün olduğunu düşünürseniz bir ortamda bulunan iki kişinin doğum günlerinin aynı olma olasılığı nedir?
+
+216
+00:34:57,067 --> 00:35:02,667
+Zülfü'den farklı bir kişi olsun lütfen. Zülfü teşekkür ediyorum. Derse katkın için iki haftadır.
+
+217
+00:35:02,667 --> 00:35:06,947
+1 bölü 365 diye düşündüm.
+
+218
+00:35:07,727 --> 00:35:09,607
+Bir revize mi etsek acaba onu?
+
+219
+00:35:15,607 --> 00:35:17,107
+Nasıldı yani hocam?
+
+220
+00:35:24,884 --> 00:35:39,023
+Okan orada mısın? Buradayım hocam. Evet. Bu aynı olma olasılığı 1 bölü 365 midir? Ben öyle düşündüm ama emin değilim. Peki. Peki farklı olma olasılığı nedir?
+
+221
+00:35:41,763 --> 00:35:54,863
+1-1 bölü 365. O zaman yani 364 bölü 365. Doğru mu? Evet. Peki iki kişinin bu olasılığı
+
+222
+00:35:54,863 --> 00:35:56,384
+3 kişinin 2 kaçtır?
+
+223
+00:35:59,303 --> 00:36:01,703
+365'in karesi oluyor payda.
+
+224
+00:36:02,783 --> 00:36:03,064
+Peki.
+
+225
+00:36:10,579 --> 00:36:11,239
+Böyle yazsam?
+
+226
+00:36:13,239 --> 00:36:13,939
+Evet hocam.
+
+227
+00:36:14,719 --> 00:36:19,920
+Tamam. O zaman demek ki buradan ilerlediğimizde en sona ne yazmalıyım?
+
+228
+00:36:25,012 --> 00:36:29,071
+K kişinin doğum günlerinin farklı olma olasılığını
+
+229
+00:36:36,916 --> 00:36:46,395
+Şimdi tekrar ediyorum. İki kişinin doğum günlerinin farklı olma olasılığı, aynı olma olasılığını konuştuk. Farklı olma olasılığı 364,365.
+
+230
+00:36:46,395 --> 00:36:58,155
+Üç kişinin farklı olma olasılığı, 364 bölü 365 çarpı, 363 bölü 365. Peki bu K kişi olsaydı? Ahmet Yaman.
+
+231
+00:37:02,579 --> 00:37:29,879
+Ahmet Yaman. Duyamıyorum. Kusura bakmayın hocam, mikrofonu açmayı unutmuşum. Yok, sorun değil, sen deyin. 365'den başlayarak, 364-363, en son terimde 365-K-1 diyebiliriz. K-1 mi, K-1 mi? Eksi parantezinde yazarsak, K-1 olacak. Tamam, okey. Senin söylediğin gibi yazarsak da K-1 olacak.
+
+232
+00:37:29,879 --> 00:37:47,899
+Bunu daha iyi formületmek adına parantez içerisinde yazdım. Teşekkür ediyorum Ahmet. Burada biz bir ortamda bulunan K kişinin doğum günlerinin farklı olma olasılığının formülünü yazdık. Bu nerede işimize yarayacak?
+
+233
+00:37:47,899 --> 00:37:59,459
+bunu kendi problemimize entegre edersek K sayının çakışmama olasılığı.
+
+234
+00:37:59,459 --> 00:38:09,660
+K sayının çakışmama olasılığı.
+
+235
+00:38:11,459 --> 00:38:12,819
+Çakışmama olasılığı.
+
+236
+00:38:12,819 --> 00:38:20,699
+Şimdi, KS'nin çakışma olasılığında bize bilgi olarak ne lazım bunu hesaplarken?
+
+237
+00:38:32,628 --> 00:38:42,888
+Ertuğrul. Sayıların aralığı lazım. Yani bulabilecek maksimum ve minimum değerler. Yok, o değil. Daha basit bir şey lazım Ertuğrul.
+
+238
+00:38:45,407 --> 00:38:46,048
+Deniz?
+
+239
+00:38:52,884 --> 00:39:02,884
+Enes? Duymuyorum seni. Mikrofon açık gözüküyor mu? Duymuyorum seni.
+
+240
+00:39:06,963 --> 00:39:09,723
+Başka bir arkadaşımız, Enes'in şu an sesi gelmiyor.
+
+241
+00:39:14,068 --> 00:39:22,627
+Arkadaşlar, k sayının çakışmama olasılığını hesaplamak için hangi parametreye ihtiyaç duyuyorum?
+
+242
+00:39:23,307 --> 00:39:24,068
+Rafet Topçu.
+
+243
+00:39:24,488 --> 00:39:26,287
+Tavlonun boyutu. Yani burada 365.
+
+244
+00:39:26,287 --> 00:39:27,448
+Tavlonun boyutu şekil ediyorum.
+
+245
+00:39:28,807 --> 00:39:34,248
+Table size'a ihtiyaç duyuyorum. Biraz önce onun yerine 365'i kullanmıştım.
+
+246
+00:39:35,027 --> 00:39:37,668
+Buradan yola çıkarsak hemen formülünü yazalım.
+
+247
+00:39:37,668 --> 00:39:52,667
+m-1 bölü m, m-2 bölü m çarpı bu şekilde devam ettiğimde m-k-1 bölü m.
+
+248
+00:39:53,227 --> 00:39:57,088
+Buradan yaklaşık olarak ne gelecek formülden?
+
+249
+00:39:57,908 --> 00:40:06,508
+e üzeri eksi k çarpı k-1 bölü m gelecek.
+
+250
+00:40:06,507 --> 00:40:18,087
+İşte bu gördüğünüz K sayının çakışmama olasılığı
+
+251
+00:40:26,739 --> 00:40:28,480
+Buradan yola çıkarak
+
+252
+00:40:28,480 --> 00:40:33,339
+Hash Collision Probability yazacak olsak
+
+253
+00:40:33,339 --> 00:40:35,299
+Hash
+
+254
+00:40:35,299 --> 00:40:38,979
+Collision
+
+255
+00:40:38,979 --> 00:40:42,019
+Probability
+
+256
+00:40:42,019 --> 00:40:44,680
+Nedir?
+
+257
+00:40:46,059 --> 00:40:46,660
+Size sorayım.
+
+258
+00:40:55,380 --> 00:41:00,780
+Biraz önceki formülde k sayının çakışmama olasılığını hesapladık.
+
+259
+00:41:00,780 --> 00:41:04,779
+H-Collusion Probabiliti nedir?
+
+260
+00:41:06,771 --> 00:41:08,012
+Evet, çok kolay arkadaşlar.
+
+261
+00:41:09,931 --> 00:41:10,531
+Metin?
+
+262
+00:41:11,391 --> 00:41:13,692
+Hocam, birden çıkarılmış hali mi yukarıda bulduğumuz değeri?
+
+263
+00:41:13,811 --> 00:41:15,291
+Evet, birden çıkarılmış hali yukarıdaki.
+
+264
+00:41:15,631 --> 00:41:21,751
+1-E üzeri, eksi K, çarpı K-1.
+
+265
+00:41:22,851 --> 00:41:23,271
+Böyle yani.
+
+266
+00:41:24,032 --> 00:41:24,532
+Formül bu.
+
+267
+00:41:27,591 --> 00:41:29,891
+Peş-collision probability'yi hesapladık.
+
+268
+00:41:29,952 --> 00:41:35,731
+Şimdi buradan yola çıkarak, M'i 32 üzeri 32 aldığımız bir noktada,
+
+269
+00:41:36,771 --> 00:41:41,771
+32 bitlik hash value'lar ürettiğimiz bir noktada
+
+270
+00:41:45,268 --> 00:41:48,268
+Yukarıdaki formülü kullandığımızda
+
+271
+00:41:50,268 --> 00:41:53,268
+250.000
+
+272
+00:41:53,268 --> 00:41:55,268
+insert'tan sonra
+
+273
+00:41:57,268 --> 00:42:01,268
+Collision Probability'miz %100
+
+274
+00:42:03,987 --> 00:42:28,627
+Öte yandan 77.163 inserttan sonraki çakışma olasılığımız %50. İlerleyen dersin bölümlerinde göreceksiniz başka unsuccessful search, successful search gibi operasyonların bize maliyetlerini de hesaplıyor edeceğiz.
+
+275
+00:42:28,627 --> 00:42:38,067
+Ama biz şu anda bir H tablosundaki collusion ihtimalini hesapladık. Bunun için ilgili formülü kullandık.
+
+276
+00:42:38,067 --> 00:42:53,627
+Ve M'in 2 üzeri 32 olduğu bir tabloda yaptığımız insert sayısından sonra çakışma olasılığının ne kadara geldiğini burada görmüş oluyoruz ilgili formüller.
+
+277
+00:42:53,767 --> 00:42:55,028
+Buraya kadar sorusu olan var mı?
+
+278
+00:42:58,483 --> 00:43:02,343
+Hocam neden 250 binden sonra %100 olduğunu tam orasını anlayamadım?
+
+279
+00:43:04,203 --> 00:43:09,583
+Neden olabilir? Ben fikir yürütmeni rica etsem.
+
+280
+00:43:12,103 --> 00:43:14,763
+Hocam, şu an orada takıldığımı yürütemedim.
+
+281
+00:43:16,043 --> 00:43:18,843
+Buna cevap verecek olan var mı arkadaşınız?
+
+282
+00:43:23,956 --> 00:43:26,255
+250 günden sonra da aynı %100 oluyor.
+
+283
+00:43:33,460 --> 00:43:39,719
+fikri yürütecek arkadaşımız Ertuğrul. Ah, Hüma'ya vereyim söz. Ertuğrul, sana söz vermiştim. Hüma.
+
+284
+00:43:41,099 --> 00:43:44,899
+Tablomuz tamamen dolmuş oluyor. Mecburen üstüne koyacağız hocam.
+
+285
+00:43:45,760 --> 00:43:58,439
+Evet, yaklaşık olarak tablonun dolduğu bir noktaya ulaşmış oluyoruz. Ve bu noktada bizim artık üreteceğimiz değer, buradaki tek iki formüle koyuyoruz bu değerleri.
+
+286
+00:43:58,439 --> 00:44:12,419
+bu formüle koyduğunuz zamanki olasılıktan bahsediyoruz. Doğal olarak M'i yerine koyduğunuzda oradan gelecek değer 1 eksiden 1'e doğru gidiyorsa %100'lük bir değer elde ediyoruz.
+
+287
+00:44:12,419 --> 00:44:26,619
+Öbür tarafta M'in yerine 77.163 koymuyoruz tabii ki. 2 üzeri 32 koyuyoruz. K'nın yerine 77.163 koyduğumuzda oradan bize gelen değer yaklaşık olarak 0.5 olduğu için
+
+288
+00:44:26,619 --> 00:44:37,219
+77.163 elemandan sonraki probability'miz 1-05'den aşağı yukarı 0.5 çıkmış oluyor. Cevaplandırabildim mi Emre soruyu?
+
+289
+00:44:39,059 --> 00:44:40,460
+Anladım hocam, teşekkür ederim.
+
+290
+00:44:40,460 --> 00:44:41,699
+Rica ederim.
+
+291
+00:44:43,079 --> 00:44:47,540
+Şimdi bir sonraki sayfaya geçelim.
+
+292
+00:44:53,876 --> 00:45:01,876
+Farklı key değerleri kullanabiliriz. Bu key değerleri bir tam sayı olabilir.
+
+293
+00:45:05,204 --> 00:45:07,603
+iki, kesinlisayı
+
+294
+00:45:11,347 --> 00:45:20,947
+anahtar değeri olarak verilmiştir. Bunu integer'a dönüştürmemiz gerekir. Bu işlemden biz sorumluyuz.
+
+295
+00:45:20,947 --> 00:45:36,847
+Üç, string. Verilmiş bir string bilgisini key değer olarak kullanabiliriz. Örneğin,
+
+296
+00:45:39,539 --> 00:45:40,539
+Ema.
+
+297
+00:45:47,059 --> 00:46:07,959
+anime gibi yazılmış stringler olsun. Bunlar birbirinden farklı stringler ve kesinlikle aynı hash değerini üretmemeleri istenir. Hangi durumda aynı hash değerini üreteceklerdir? Kim cevaplamak ister?
+
+298
+00:46:07,959 --> 00:46:11,799
+Sercan?
+
+299
+00:46:12,939 --> 00:46:30,299
+Mesela karakterlerin toplamını şeklinde bir ilerleme yaparsak, aynı karakterlere sahip oldukları için, bu karakterlerin toplamı veya işte o şekilde bir değerlendirmenin devamında işlemler de gelse aynı devam edecek.
+
+300
+00:46:30,299 --> 00:46:46,419
+Doğru. Burada eğer biz karakterlerin ASCII tablosundaki karşılıklarını alıp, toplayıp division metot ya da matrik-cashin metot uygulasaydık, ürettiğimiz sayı emma, mail, alma içinde aynı sayı değeri olacaktı.
+
+301
+00:46:46,419 --> 00:46:55,459
+Bunun için yapılabilecek farklı çözümler var. Yani elemanların ASCII tablosundaki karşılığını almadan kullanabileceğimiz çözümler var.
+
+302
+00:46:55,460 --> 00:46:57,420
+Bunlardan bir tanesi
+
+303
+00:46:57,420 --> 00:47:00,820
+Şöyle A diyeyim
+
+304
+00:47:04,692 --> 00:47:06,692
+şu şekilde yazalım.
+
+305
+00:47:46,356 --> 00:47:51,356
+Evet, burada bu değerlere neye karşılık geliyor olabilir?
+
+306
+00:47:53,844 --> 00:47:55,844
+Mesela S-1 neye karşılık geliyor?
+
+307
+00:48:02,675 --> 00:48:14,675
+Şu anda stringler üzerinden ilerliyoruz. Elimizdeki stringleri toplamadan daha farklı bir şekilde hash fonksiyonundan geçirmek üzere ön işlemden geçiriyoruz.
+
+308
+00:48:14,675 --> 00:48:16,675
+Sercan?
+
+309
+00:48:16,675 --> 00:48:19,675
+String'in size olabilir.
+
+310
+00:48:19,675 --> 00:48:26,675
+Evet, string'in size'ına denk geliyor. Peki, diğerleri için yorum yapmak isteyen var mı?
+
+311
+00:48:26,675 --> 00:48:29,675
+Evet.
+
+312
+00:48:52,916 --> 00:48:53,335
+Samet.
+
+313
+00:48:54,536 --> 00:49:08,675
+Hocam, C stringteki karakter olabilir. Ort C'yi de o karakterin kaçıncı sırada olduğu, mesela Elma'da E'nin 0 olabilir, L birinci olabilir. O şekilde bir işlem yapılmış.
+
+314
+00:49:08,675 --> 00:49:24,096
+Şimdi bu C'yi aslında bizim karakterimize denk geliyor. C0 stringin ilk karakteri, C1 stringin ikinci karakteri ve ORD fonksiyonuyla bu ilgili karakterin asli tablosundaki karşılığını almış olunuz.
+
+315
+00:49:24,096 --> 00:49:35,575
+C1 sabit, genelde stringte yer alan karakterlerin hepsinden büyük olan bir sabit seçiliyor. Bu sabit kullanılıyor.
+
+316
+00:49:35,575 --> 00:49:39,636
+Aş da sıfırdan başlatıyoruz.
+
+317
+00:49:39,636 --> 00:49:41,015
+Burada olduğu gibi.
+
+318
+00:49:41,555 --> 00:49:49,636
+Ve her turda üzerine eklendiği için çarpım olarak bu sabitle çarpılıp ort C'nin üzerine eklendiği için
+
+319
+00:49:49,636 --> 00:49:59,235
+burada elma için de, mali için de, alma için de farklı bir değer üretilme olasılığını çok yüksek bir hale getiriyoruz.
+
+320
+00:50:00,395 --> 00:50:01,935
+Bu bize bir avantaj sağlıyor.
+
+321
+00:50:01,935 --> 00:50:08,715
+bir stringden değer üretmek istediğimiz zaman. Bir başka yöntem.
+
+322
+00:50:13,523 --> 00:50:15,683
+Horner's method diye geçiyor.
+
+323
+00:50:18,183 --> 00:50:19,183
+Burada da
+
+324
+00:50:19,183 --> 00:50:21,703
+ki şu şekilde götürüyor.
+
+325
+00:50:46,324 --> 00:51:04,283
+Bu noktada şu hesaplama yapılırken str0, eksi, A'dan uzaklığı, artı bir olarak değeri elde ediyoruz ve alfabinin ilk karakteri bir değerine almış oluyor.
+
+326
+00:51:05,063 --> 00:51:14,004
+Buradaki R değeri genelde prime number seçiliyor ve 31 sıklıkla kullanılan değerlerden bir tanesi.
+
+327
+00:51:14,004 --> 00:51:19,004
+and the length of string.
+
+328
+00:51:21,224 --> 00:51:34,524
+Yine bu Horner's metodda bir string değerini alıp key değerini üretmek için kullandığımız hashing fonksiyonuna vermeden önce yaptığımız bir işlem.
+
+329
+00:51:34,904 --> 00:51:42,143
+Sonra key değerini ürettikten sonra bu key değeriyle division metod ya da multiplication metodu kullanarak değer üretebiliyoruz.
+
+330
+00:51:42,143 --> 00:52:01,404
+Bunu yapmamızın sebebi A ve B metotlarını uygulamamızın sebebi standart bir toplama işlemine gidersek farklı kelimelerin aynı adresi gösterme ihtimali olması ve bu ihtimali ortadan kaldırmak için kullandığımız metotlar
+
+331
+00:52:01,404 --> 00:52:21,783
+Dördüncü key şeklimiz ise Compound key istediğimiz mesela doğum günü gibi farklı değerlerden oluşan 31.08.1997.
+
+332
+00:52:21,783 --> 00:52:40,004
+buna göre bir saklama yapmak istiyorsanız o zaman burada 31 çarpı R artı 8 çarpı R kare artı 1997 çarpı R küp diyerek
+
+333
+00:52:40,004 --> 00:52:51,084
+buradan bir key, compound bir key üretme yöntemi uygulayabiliyorsunuz.
+
+334
+00:52:51,084 --> 00:53:07,863
+R'ye gene isterseniz işte 31 değere verebilirsiniz, isterseniz farklı bir crime number vererek verilen birden fazla değerden oluşan sadece bütünleşik bir değer olmak zorunda değil, elinizdeki değerleri kombinleyerek de yapabilirsiniz.
+
+335
+00:53:07,863 --> 00:53:21,003
+Yani örneğin yaş, kilo, boy bunları kombinlemek istiyorsunuzdur. Böyle bir hashleme yapmak isterseniz bu keylerden tek bir key üretmenin yollarından bir tanesi. Buraya kadar sorusu olan var mı?
+
+336
+00:53:25,364 --> 00:53:31,763
+Peki, o zaman dersin ilk başında Orkun sorusu varmış Orkun'a
+
+337
+00:53:31,763 --> 00:53:54,204
+Sorudan ziyade hocam biraz düşünce olarak düşündüm. Stringlerde mesela sürekli burada dört karakter koyduk. Bizim kullandığımız stringlerin hep belli bir uzunlukta olduğunu varsayarsak bu uzunluğa uygun, tam bölünebilir sayısal veri tipleriyle okumak mümkün mü ve onları kullanmak mümkün olur mu?
+
+338
+00:53:54,204 --> 00:54:00,544
+Orkun şunu soracağım. Bizi kullandığımız stringlerin sabit olduğunu bilirsek mi bu soruyu soruyorsun?
+
+339
+00:54:01,864 --> 00:54:09,323
+Ya şöyle bir şey soracağım. Yani burada mesela hani dört karakterli kullandığımızı gördüm ve karakterlerin her birinin bir byte olduğunu biliyorum ben.
+
+340
+00:54:09,823 --> 00:54:17,283
+Bu dört byte'lık stringleri ben integer olarak okuyup ondan sonra o değerlerle işleme girsem bu da bir yöntem olabilir mi?
+
+341
+00:54:18,584 --> 00:54:20,343
+Integer olarak nasıl okuyacaksın?
+
+342
+00:54:20,343 --> 00:54:37,683
+Yani A'nin bir byte olduğunu biliyorum. Bunu okuyup, ondan sonra shift edip, ondan sonra ikinci karakter okuyup, shift edip, üçüncü karakter okuyup, shift edip, dördüncü karakter okuyup, dört byte'lık bir tane integer değer kaydedebilirim bunları diye düşündüm. Çok mu artık?
+
+343
+00:54:37,683 --> 00:54:48,483
+Yok. Şöyle, yani yapılabilir ben yanlış anlamadıysam uygulanabilir bir yöntem. Ama burada hani genelde
+
+344
+00:54:48,483 --> 00:54:54,483
+hashlemek istediğimiz bilgiler böyle denk gelmeyebilir.
+
+345
+00:54:54,603 --> 00:54:56,063
+Yani hepsi dört karakterle olmayabilir.
+
+346
+00:54:56,063 --> 00:55:03,883
+Bu sadece bir örneği temsil etmesi açısından, bir case'i temsil etmesi açısından verdiğimiz bir örnek.
+
+347
+00:55:04,703 --> 00:55:11,463
+Ama öte yandan bunun yanında farklı uzunlukta stringler de olabilirdi.
+
+348
+00:55:11,463 --> 00:55:23,663
+o zaman farklı uzunlukta stringler olduğu zaman senin söylediğin byte byte yan yana ekleme ihtimali örneğin 20 harften oluşan bir kelime için sıkıntı yaratacaktı.
+
+349
+00:55:25,364 --> 00:55:29,304
+Inputların spesifik olduğu ve regulate edildiği bir ortamdan bahsettim.
+
+350
+00:55:29,323 --> 00:55:37,563
+Evet, öyle bir şey varsa yani sınırlıysa 4 harfe kadar stringler için yaptığımızı düşünüyorsak tabii ki böyle bir şey düşünülebilir.
+
+351
+00:55:37,563 --> 00:55:42,024
+o zaman farklı değerler üretecektir.
+
+352
+00:55:42,123 --> 00:55:43,543
+Byte byte sırayla yazdığımız için.
+
+353
+00:55:43,703 --> 00:55:44,323
+O zaman olabilir.
+
+354
+00:55:45,063 --> 00:55:45,903
+Tamam, teşekkür ederim hocam.
+
+355
+00:55:46,403 --> 00:55:47,323
+Ben de teşekkür ederim.
+
+356
+00:55:47,463 --> 00:55:49,584
+Güzel bir, eşit bir bakış açısıyla.
+
+357
+00:55:50,203 --> 00:55:55,203
+Şimdi dersin başında uzunca bir süre konuştuğumuz için birazcık uzun tuttum konu anlatım kısmını.
+
+358
+00:55:55,664 --> 00:55:57,224
+Bir 10 dakikalık bir ara verelim.
+
+359
+00:55:57,543 --> 00:55:59,563
+10 dakikalık aradan sonra devam edeceğiz.
+
+360
+00:55:59,724 --> 00:56:00,283
+Teşekkür ediyorum.
+
+361
+01:07:41,235 --> 01:08:11,215
+arkadaşlar, yeniden merhaba. Kaldığımız yerden devam edelim. Şimdi neler yapılabileceğini farklı keyler için konuşmuş olduk. Genelde stringler ve integerler için çözümler oluyor. Compound keylerle de karşılaşıyoruz tabii ama ağırlıklı olarak bunlar için bir hash fonksiyonu değeri kullanmayı tercih ediyoruz.
+
+362
+01:08:11,235 --> 01:08:15,316
+ve şimdi biraz önceki probleme geri döneceğiz.
+
+363
+01:08:16,076 --> 01:08:18,576
+Hashtag'in büyük derdimiz olan collusion problemi.
+
+364
+01:08:19,035 --> 01:08:23,055
+Bunlar için ne tür çözümler uygulanıyor?
+
+365
+01:08:23,816 --> 01:08:27,116
+Onları birlikte konuşuyor olacağız.
+
+366
+01:08:27,855 --> 01:08:29,596
+Şimdi hemen yeni bir sayfaya geçiyorum.
+
+367
+01:08:31,816 --> 01:08:34,435
+Burada temelde iki tane yaklaşım var.
+
+368
+01:08:35,155 --> 01:08:36,776
+Collusion'a karşı.
+
+369
+01:08:36,775 --> 01:08:50,215
+birincisi open hashing olarak adlandırılıyor. Aslında yaygın kullanımı separate chaining diye geçiyor.
+
+370
+01:08:56,948 --> 01:08:58,948
+Ben şunu düzelteyim, yanlış yazdım.
+
+371
+01:09:03,859 --> 01:09:09,619
+Hocam, pardon. Ben neyin birincisi anlamadım. Üst başlık nedir acaba? Ama anlamadım.
+
+372
+01:09:09,619 --> 01:09:14,719
+Tamam, üst başlığı yazalım o zaman. Peki, bunu söyledim ama herhalde dikkatten kaçtı.
+
+373
+01:09:15,160 --> 01:09:22,300
+Collusion problemi için çözümler. Haklısın. Buraya başlığı yazalım.
+
+374
+01:09:37,076 --> 01:09:47,055
+Birincisi, OpenHashing diye de kullanılıyor. SeparateChain
+
+375
+01:09:52,020 --> 01:09:55,559
+İkincisi, Close Teşing
+
+376
+01:10:00,979 --> 01:10:24,979
+Bunun yaygın kullanımı da Open Addressing. Şimdi burada tabii maalesef Open Hashing ve Open Addressing birbirine karışabiliyor. Yani Open Hashing'i ve Close Hashing'i bilebilirsiniz ama esas kullanırken daha rahat etmeniz için Separate Chaining ve Open Addressing kavramlarını kullanırsanız,
+
+377
+01:10:24,979 --> 01:10:33,579
+Collision problemleri için iki temel çözüm ve bunların altındaki alt çözümleri birlikte değerlendiriyor olacağız.
+
+378
+01:10:34,459 --> 01:10:41,539
+Burada aslında ikisi de çok basit bir mantığa da iniyor.
+
+379
+01:10:41,539 --> 01:10:53,759
+Birincisi bir hash table'da bir yerleşmek istenilen alan doluysa,
+
+380
+01:10:54,979 --> 01:11:01,160
+bir sonraki uygun olan alana bakılması prensibine dayanıyor.
+
+381
+01:11:03,160 --> 01:11:07,079
+Bu ikinci yaklaşım, open adresin kılan.
+
+382
+01:11:08,660 --> 01:11:19,740
+Birinci yaklaşım da sizin bir tablonuz var, yerleştirmek istediğiniz alan, yeni gelen adres, aynı adresi gösteriyor ve orası doluysa
+
+383
+01:11:19,739 --> 01:11:45,739
+Burada bir Linked List yapısı kuruluyor ve bu Linked List kavramıyla beraber siz tablonuzdaki dolu bir alan varsa o alana denk gelen aynı adresi sahip olan elemanları arka arkaya bir Linked List yapısı kurularak saklayabiliyorsunuz.
+
+384
+01:11:45,739 --> 01:11:53,799
+İlk yaklaşımımız bugün konuşacağımız Open Addressing olacak.
+
+385
+01:12:01,332 --> 01:12:30,551
+Tabii iki numara dediğimiz için onu da düzeltelim. Şuraya iki yazalım. Open addressing üzerinden ilerleyeceğiz ve bu yaklaşımın ilk basit çözümü olan, buraya 2.1 yazıyorum, linear probing yaklaşımını birlikte konuşuyor olacağız.
+
+386
+01:12:31,332 --> 01:12:41,471
+Şimdi, linear probing yaklaşımı ya da linear probing olmak zorunda değil, next available olana bakmak nasıl olabilir?
+
+387
+01:12:42,052 --> 01:12:48,592
+Yani elinizde bir key var, hash opsiyonu verdiniz, bir adres üretti, bu adres dolu.
+
+388
+01:12:49,491 --> 01:12:51,031
+Next available'a nasıl bakabilirsiniz?
+
+389
+01:13:27,604 --> 01:13:33,283
+söz vermediğim kimse yok. O zaman ilk sırada Rafet geçiyor, Rafet'e söz vereyim.
+
+390
+01:13:33,283 --> 01:13:39,404
+Boş bir indeks bulana kadar indeksi bir arttırırız. Boş bulduğumuz yeri de elemanı yerleştirebiliriz.
+
+391
+01:13:39,423 --> 01:13:47,303
+Evet, temel mantık. Dolu olan adresten sonraki, bir sonraki adrese arttırarak bakmak.
+
+392
+01:13:48,003 --> 01:13:51,263
+Boş alan görüne kadar bu arttırma işlemi devam et.
+
+393
+01:13:51,263 --> 01:14:14,983
+Bunun yazımını yapalım. Key veriyoruz. Bu noktada bir key değeriyle değer üretiyoruz. Artı i diyoruz ve mod em diyoruz.
+
+394
+01:14:14,983 --> 01:14:40,783
+Bu nasıl cereyan ediyor? Birlikte bakalım. Burada sıfırıncı adres 1, 2, 3, 4, 5, 6, 7 olsun. Ki şu 7'yi sinelim. Çünkü emi 6 olarak seçtim.
+
+395
+01:14:45,779 --> 01:14:47,400
+M6 olarak seçtim.
+
+396
+01:14:49,199 --> 01:15:01,200
+Ki M9 olsun. Bu arada yanlış söyledim. Çok özür dilerim. M6 seçamam. M6 seçtim. M6 seçtim. Ki M9 olsun.
+
+397
+01:15:01,200 --> 01:15:25,239
+Burada hash 9, 0 yapacak. İyi burada 0 değerini aldı. Biz bunu verdiğimizde 9 mod 7'den 2 değerini elde edeceğiz ve geleceğiz buraya yerleşimi yapıyor olacağız.
+
+398
+01:15:29,971 --> 01:15:34,111
+Peki, buradan sonra ne yapacağım?
+
+399
+01:15:35,991 --> 01:15:37,051
+Hemen devam edelim.
+
+400
+01:15:39,772 --> 01:15:40,631
+Diyelim ki,
+
+401
+01:15:41,991 --> 01:15:42,691
+hash geldi.
+
+402
+01:15:43,751 --> 01:15:44,371
+Bu sefer
+
+403
+01:15:44,371 --> 01:15:46,892
+18.
+
+404
+01:15:47,812 --> 01:15:49,791
+18 demeyelim, 16 olsun.
+
+405
+01:15:55,791 --> 01:15:57,791
+Evet.
+
+406
+01:15:54,163 --> 01:16:04,723
+16 geldi. 16 mod 7. Yine 2 geldi. Baktık.
+
+407
+01:16:07,155 --> 01:16:12,215
+alan dolu. Alan dolu olduğu için iyi değerini bir arttırdım.
+
+408
+01:16:16,756 --> 01:16:36,555
+hash 16, 1 yaptım. O zaman doğal olarak 16 artı 1, mod 7 gelecek. Buradan da 3 değeri gelecek. 3 boş olduğu için 16 buraya yerleşmiş olacak.
+
+409
+01:16:36,555 --> 01:16:51,256
+Bu şekilde dolu oldukça bir sonraki göze bakmak için i değerini her türda bir arttırıyoruz. Ne zamana kadar bu devam edecek? Metin'in bir sorun var herhalde.
+
+410
+01:16:53,595 --> 01:16:59,815
+Evet hocam, M'i 7 seçmemizin sebebi table'un boyutu 7 olduğu için mi yoksa başka bir şeyden dolayı mı?
+
+411
+01:17:00,395 --> 01:17:04,756
+M'i 7 seçtiğim için table'un boyutu otomatik olarak 7 oldu.
+
+412
+01:17:05,135 --> 01:17:06,075
+Tamam, teşekkür ederim.
+
+413
+01:17:06,075 --> 01:17:19,355
+Mücalder. Burada tekrar ediyorum. Biz bu şekilde yerleştirme prensibini kullandığımızda her seferinde iyi bir arttırıyoruz. Peki hangi noktada bir problem yaşayabiliriz?
+
+414
+01:17:21,875 --> 01:17:22,836
+Barış.
+
+415
+01:17:24,256 --> 01:17:27,315
+Hocam, search konusunda olabilir mi?
+
+416
+01:17:28,395 --> 01:17:28,895
+Mesela?
+
+417
+01:17:28,895 --> 01:17:40,016
+Yani 9'u ararken, pardon 16'u ararken, Heş'e 16 koyduğumuzda 9'un olduğu gözü görmüyor muyuz?
+
+418
+01:17:40,336 --> 01:17:54,235
+Güzel. Şimdi bu bir problemimiz. 16'yı ararken yerleştirdik, buraya yerleştirdik. 16'yı ararken nasıl arayacağız? Search işlemini yaparken. Ben sorayım sonra sizden gelecek cevabı göre revize edeceğim cevabı.
+
+419
+01:17:54,235 --> 01:17:59,495
+Barış arkadaşınız dedi ki 16'yı ararken sıkıntı çıkmaz mı? Her ay Zeki, Şah, Sah
+
+420
+01:17:59,495 --> 01:18:03,635
+Sesim geliyor mu hocam? Geliyor
+
+421
+01:18:03,635 --> 01:18:13,175
+16'nın bize gönderdiği yere gittik mesela 2'ye gittik orada 9 var ama boşluk görene kadar devam edeceğiz boşluktan bir öncekini alacağız diyebiliriz
+
+422
+01:18:13,175 --> 01:18:22,695
+Teşekkür ederim doğru bir cevap burada insert işlerini gördük şu anda ekranda ama Barış arkadaşınız dedi ki search'ta acaba bu sorun yaşar mıyız?
+
+423
+01:18:22,695 --> 01:18:43,835
+Eğer ayaklaşınızda eğer biz aramaya ilk gösterdiği i'nin sıfır olduğu yerden başlayıp orası doluysa i'yi bir arttırarak devam edersek boş nal görene kadar bu aramayı devam ettirdiğimizde eğer denk gelirsek ki vardır.
+
+424
+01:18:43,836 --> 01:18:57,136
+Eğer denk gelmezsek nala yakalandıysak o zaman bu aradığımız eleman yani search işlemi başarısız olmuştur ve bu table'da yoktur. Mantığını kullanırız dediği gerçekten de doğru bir mantık.
+
+425
+01:18:58,136 --> 01:19:13,196
+Şimdi burada i'yi 1, 2, 3, 4 diye artırmaya devam ediyoruz. Peki diyelim 16 buraya yerleşen işte ne olsun elimizde? 11 olsun.
+
+426
+01:19:13,836 --> 01:19:15,296
+12 olsun.
+
+427
+01:19:19,155 --> 01:19:29,956
+Buraya da 13 yerleşmiş olsun. Ve biz buraya 20'yi yerleştirmek isteseydik ne olacaktı?
+
+428
+01:19:36,372 --> 01:19:44,712
+ya da ne diyelim 23'ü yerleştirmek isteseydik. Ertuğrul?
+
+429
+01:19:48,051 --> 01:20:02,011
+Hocam 23'ü yerleştirmek istediğimizde ilk baktığımızda yine 2 çıkıyor. 2'den sonra 3'e gidecektik, 4'e gidecektik, 5'e gidecektik, 6'ya gidecektik. Sonra mod içinde olduğu için 0'a dönüyor.
+
+430
+01:20:02,011 --> 01:20:30,891
+Sonra biz bu 23'ü sıfıra yerleştirecektik. Yani burada bir circular bir yapı oluşturduk modüler aritmetik sayesinde. Ama şu anda tablomuzun son noktasına geldik. Örneğin 8 gelse buraya yerleşti diyelim. 8 geldikten sonra tablo doldu. Şimdi diyelim ki 28, 30 gelmiş olsun.
+
+431
+01:20:32,011 --> 01:20:34,471
+Bu durumda ne yapacağız?
+
+432
+01:20:53,811 --> 01:21:05,811
+Peki, siz bunu düşünürken ben biraz önce konuştuğumuz algoritmik detayı akış diagramı olarak size çizeyim.
+
+433
+01:22:08,083 --> 01:22:17,083
+Evet, bu bir Search Operation'ı yapması için tasarlamış olduğumuz bir...
+
+434
+01:22:19,347 --> 01:22:28,467
+yapı diyelim. Bu noktaya şöyle
+
+435
+01:22:32,212 --> 01:22:51,212
+key eşittir sıfır diyelim. Buraya da key mod M diyelim. Evet, döngüye girmeden önce bunları da iklendirmiş oldum. Şu anda bu işlem bizim işimizi çözer, Social Paration'ın burada yaptığımız noktada.
+
+436
+01:23:00,083 --> 01:23:00,704
+Ertuğrul?
+
+437
+01:23:01,983 --> 01:23:07,183
+Hocam çözmez çünkü tablo doldu artık. Mecburen tablonun boyutunu arttırmamız gerekiyor.
+
+438
+01:23:09,103 --> 01:23:12,943
+Tablonun boyutunu arttırma imkanımız yoksa? Şu anda search yapıyoruz.
+
+439
+01:23:14,023 --> 01:23:22,004
+Yani loop'a girer bu şu anda. Search yapıyorsak yeni bir eleman eklemiyoruz. Az önceki sorunuzu mu soruyorsunuz?
+
+440
+01:23:22,004 --> 01:23:28,183
+Evet, Ertuğrul ikisini birlikte birleştirmiş oldum. Biraz önceki search yapsaydık ne yapmamız gerekirdi?
+
+441
+01:23:28,183 --> 01:23:35,983
+dedim. Şimdi search yapıyoruz. Search tekniği şu anda yazdım. Doğru. İkisinin aslında geleceği nokta aynı olduğu için iki soruyu birlikte sorduk.
+
+442
+01:23:37,923 --> 01:23:46,163
+Yani az önce dediğim gibi hocam. Rupa girer şu anki search'te. Hani herhangi bir şey arasak bulabiliriz önceki elemanlardan ama yeni bir eleman.
+
+443
+01:23:46,203 --> 01:23:48,383
+Rupa girer. Rupa girmesini engellemenin yolu var mı?
+
+444
+01:23:50,444 --> 01:23:51,423
+Şu anda yok bence.
+
+445
+01:23:53,043 --> 01:23:54,783
+Peki hayır. Teşekkür ediyorum.
+
+446
+01:23:55,323 --> 01:23:56,403
+Hocam konuşabilir miyim?
+
+447
+01:23:57,243 --> 01:23:57,983
+Evet Orkun.
+
+448
+01:23:58,183 --> 01:24:01,264
+Alicen ben
+
+449
+01:24:01,264 --> 01:24:03,703
+Ama el kaldırmadın Alicen
+
+450
+01:24:03,703 --> 01:24:04,944
+Pardon hocam
+
+451
+01:24:04,944 --> 01:24:08,723
+Orkun el kaldırdığı için ona söz veriyorum sonra sana söz vereceğim
+
+452
+01:24:08,723 --> 01:24:09,024
+Tamam
+
+453
+01:24:09,024 --> 01:24:18,463
+İyi sonsuza kadar gittiği için bizim iyimizi aslında bütün boyutu dolaşıp tekrardan kendi üzerimize geri gelmiş miyiz şeklinde
+
+454
+01:24:18,463 --> 01:24:21,623
+Bunu sanki Q'lerde ve stacklerde de yapıyorduk
+
+455
+01:24:21,623 --> 01:24:26,804
+İyi'yi M ile kontrol edip bir de onu kontrolüne eklememiz gerekiyor
+
+456
+01:24:26,804 --> 01:24:53,264
+Evet yani şuraya bir koşul daha ekleyeceğiz. İyi küçük M, Ant diyeceğiz. Burada bu koşulu koyduğunuz zaman Search Operation M adım sonunda ne olacak? Tamamlanmış olacak. Tekrar sonsuz döngüye girmesini çünkü ne key'i bulabilecek ne null görecek. Eğer bu kontrolü koymazsanız Search Operation sonsuz bir döngüye girecektir.
+
+457
+01:24:53,264 --> 01:25:04,583
+insert'e gelecek olursak, insert'te de her turda baktığınız göz doluysa yerleştiremiyorsunuz.
+
+458
+01:25:04,583 --> 01:25:10,464
+Ve tablo doluysa da yine bir sonsuz döngü başlıyor.
+
+459
+01:25:10,463 --> 01:25:26,303
+onu da kırmanın yolu buradaki verdiğiniz i değerinin insert işlemi sırasında table size geçtikten sonra artık insert yapılamadığını kullanıcıya hata olarak bildirmeniz gerektiği ortaya çıkmış oluyor.
+
+460
+01:25:26,303 --> 01:25:36,423
+Tablonun dolma durumunda. Zaten tablo dolma durumuna geliyorsa biz bunu istemiyoruz. Bizim bunu önceden tespit etmemiz lazım.
+
+461
+01:25:36,423 --> 01:25:43,463
+Yani tablo %80 doldu ise, %90 doldu ise o zaman bir çözüm uygulamamız gerekiyor. Bu çözüm nedir?
+
+462
+01:25:49,076 --> 01:25:51,475
+tablo baktığınız %80-%90 oldu.
+
+463
+01:26:06,804 --> 01:26:08,403
+Separate Chaining mi hocam?
+
+464
+01:26:10,343 --> 01:26:19,943
+Separate Chaining tablonun dolduğu durumda kullanılabilecek bir yöntem. Doğrudur. Kesinlikle kabul edilebilir bir cevaptır.
+
+465
+01:26:20,523 --> 01:26:24,963
+Ama esas yapmanız gereken Open Addressing ile devam edebilmeniz için nedir?
+
+466
+01:26:31,572 --> 01:26:32,771
+yapabilirsiniz arkadaşlar.
+
+467
+01:26:45,555 --> 01:26:56,856
+Zülfü arkadaşımız tabloyu büyütmek çok fazla egoist bir yaklaşım gibi geliyor demiş. Ne dersiniz? Sizleri egoistçuri yaklaşıma.
+
+468
+01:27:01,971 --> 01:27:10,971
+Vallahi zorlanıyorum arkadaşlar ya. Yani ağzınızdan kerpeten de laf alıyorum ha. Alt tarafı konuşacaksınız.
+
+469
+01:27:15,828 --> 01:27:21,248
+İyi o zaman tekrar isim saymaya başlayalım madem konuşmuyorsunuz. Bedirhan Karadoğ.
+
+470
+01:27:26,452 --> 01:27:28,611
+Ben takip edemedim hocam peki
+
+471
+01:27:28,611 --> 01:27:33,171
+Melih Hanım takip edememesi haberin nedir?
+
+472
+01:27:34,531 --> 01:27:39,251
+Yani odağım kaydı biraz. Bir iki kere kapı açmaya kalkmak zorunda kaldım
+
+473
+01:27:39,251 --> 01:27:47,991
+Tamam. Yani herhalde başka bir şey söylememe gerek yok bundan sonraki süreçte daha dikkatli olman konusunda
+
+474
+01:27:47,991 --> 01:27:49,251
+Evet hocam
+
+475
+01:27:49,251 --> 01:27:50,552
+Etkin Pınar
+
+476
+01:27:50,552 --> 01:27:54,452
+Merhaba hocam
+
+477
+01:27:54,452 --> 01:27:55,391
+Merhaba Etkin
+
+478
+01:27:55,391 --> 01:28:06,111
+Hocam ben bilmiyorum açıkçası. Yani tabloyu büyütebiliriz ama tabloyu büyütmek istediğimiz şey olmaması lazım. Sonuçta tablo yani büyütemiyoruz ki böyle bir durumdayız diye düşünüyorum ben.
+
+479
+01:28:06,471 --> 01:28:13,492
+Hayır. Öyle bir şey yok. Kim büyütemiyoruz dediyse yanlış söylenir. Ben de bir koşu koymadım.
+
+480
+01:28:13,731 --> 01:28:14,431
+Anladım hocam.
+
+481
+01:28:14,511 --> 01:28:16,492
+Bir sayıda bir berlek var mı demedim.
+
+482
+01:28:16,491 --> 01:28:20,791
+Bu arkadaşlar kaçınılmaz son
+
+483
+01:28:20,791 --> 01:28:27,211
+Eğer kullandığınız boyuttan daha büyük bir miktarda eleman saklamak durumunda kalıyorsanız
+
+484
+01:28:27,211 --> 01:28:32,071
+Tabii ki ilk çözüm Linked List kullanmak gibi gözüküyor
+
+485
+01:28:32,071 --> 01:28:33,791
+Yani Separate Chaining kullanmak gibi
+
+486
+01:28:33,791 --> 01:28:41,131
+Ama Open Addressing'e yönelik bir yaklaşım kullandıysanız ve sizi uzunca bir süre bu idare ettiyse
+
+487
+01:28:41,131 --> 01:28:46,312
+Ama bir doyum noktasına ulaştıysa o zaman rehashing yapmanız gerekiyor
+
+488
+01:28:46,312 --> 01:28:55,091
+elinizdeki küçük tablodaki değerleri yeniden bir hash fonksiyonuna sokarak büyük bir tabloya aktarmanız gerekiyor.
+
+489
+01:28:55,911 --> 01:29:01,672
+Tablonun boyutunu büyüterek ve elemanlar yeni pozisyonlarına yerleşmiş olacaklar.
+
+490
+01:29:01,672 --> 01:29:05,812
+Ama aynı pozisyona yerleşme garantisi yok. Hepsi farklı bir yere yerleşebilir.
+
+491
+01:29:05,972 --> 01:29:13,472
+Ama open addressing de eğer tablo dolma noktasına geliyorsa genelde rehashing yapıyoruz.
+
+492
+01:29:13,471 --> 01:29:23,111
+bunu bir kez daha vurgulamış olalım. Peki eleman sildiğiniz zaman ne yapıyorsunuz?
+
+493
+01:29:26,963 --> 01:29:30,803
+Nauplü adresiniz. Oplü adresin te.
+
+494
+01:29:38,931 --> 01:29:39,931
+Evet, Herthul.
+
+495
+01:29:41,351 --> 01:29:44,352
+Hocam oraya elemanı sildiğimize dair bir işaret koyarız.
+
+496
+01:29:45,091 --> 01:29:46,731
+Aynen öyle. Ne olabilir mesela?
+
+497
+01:29:47,931 --> 01:29:49,011
+Eksi bir olabilir.
+
+498
+01:29:49,011 --> 01:30:00,891
+Eksi bir, bir delete flag olarak buraya yerleştirebiliriz.
+
+499
+01:30:01,671 --> 01:30:01,911
+Değil mi?
+
+500
+01:30:03,831 --> 01:30:08,192
+Peki, belli bir süre sonra silme işlemleri arttı.
+
+501
+01:30:08,931 --> 01:30:12,132
+ve bayağı bir eleman sindik. O zaman ne yapmalıyız?
+
+502
+01:30:17,140 --> 01:30:17,579
+Okan?
+
+503
+01:30:18,779 --> 01:30:22,159
+Shift edebiliriz hocam, boşlukları dolduracak şekilde.
+
+504
+01:30:22,640 --> 01:30:27,219
+Evet, burada bir tabloyu redesign etmemiz gerekiyor.
+
+505
+01:30:28,859 --> 01:30:40,099
+Eğer bu noktaya gelirsek, o zaman mutlaka tabloda bir efficiency arttırmak üzerine bir yaklaşım uygulamamız gerekebilir.
+
+506
+01:30:40,219 --> 01:30:44,439
+Bu da aynı tablo üzerinde olmayıp yeni bir tablo açmanız anlamına da gelebilir.
+
+507
+01:30:44,439 --> 01:30:46,799
+Buna bakmanız gerekiyor.
+
+508
+01:30:47,140 --> 01:31:05,140
+bunu da yerlendirirsiniz, incelersiniz. Şimdi bir başka problemimiz var. Bu Lineal Probing, Open Adres'indeki bir problemle geliyor. Bunun adı clustering. Yani öbeklenme. Bu ne demek? Her eleman...
+
+509
+01:31:10,387 --> 01:31:13,427
+kendisini
+
+510
+01:31:21,203 --> 01:31:37,143
+belirli bir pozisyona yerleştiriyor. Ve bu da bize bir kümelenme problemi yanıtıyor. Bunu nasıl çözeceğiz? Ve bu problem nedir? Şimdi bunu konuşalım.
+
+511
+01:31:37,143 --> 01:31:41,143
+Şöyle düşünün
+
+512
+01:31:41,143 --> 01:31:52,843
+Şimdi artı bir artı bir gittiğiniz zaman belirli bölgelerdeki ürettiğiniz değerler birbiriyle yakın ise
+
+513
+01:31:52,843 --> 01:31:57,843
+uniform, jenerat edilmediyse o zaman bunlar arka arkaya birikmeye başlıyor
+
+514
+01:31:57,843 --> 01:32:01,203
+Yani tabloya istediğiniz şekilde yayılmıyor
+
+515
+01:32:01,203 --> 01:32:04,843
+Çünkü siz burada lineer bir artımla gidiyorsunuz
+
+516
+01:32:04,843 --> 01:32:18,503
+Bu lineal artımda sizin rastgele dağılmasını beklediğiniz keylerinizin adreslerinin dağılmasını beklediğiniz bir yapıda arka arkaya yerleşmelerine sebebiyet veriyor.
+
+517
+01:32:19,023 --> 01:32:25,983
+Bu da belirli bölgelerde eğer keyler çakışırsa bunların o beklenmesine yol açıyor.
+
+518
+01:32:25,983 --> 01:32:27,683
+Bunu çözmenin yolu nedir?
+
+519
+01:32:39,091 --> 01:32:42,171
+yine OpenAldres'in yine altında anlattığımız bir yaklaşım.
+
+520
+01:32:45,491 --> 01:32:48,251
+Eklediğimiz i üzerinden düşünebilirsiniz.
+
+521
+01:33:03,220 --> 01:33:11,019
+Nedir? Quadratic probing. Biraz önceki linear probitti. Bu quadratic probing. Evet, Tolga.
+
+522
+01:33:12,220 --> 01:33:14,899
+I eklemek yerine I'nin karesine ekleyebiliriz.
+
+523
+01:33:14,899 --> 01:33:28,299
+Evet, I eklemek yerine I'nin karesine eklerseniz, arka arkaya yerleşmesi yerine 1, 4, 9 şeklinde ilerleyerek yerleşmesini sağlayabilirsiniz.
+
+524
+01:33:28,419 --> 01:33:31,900
+Böylece tabloya daha geniş bir şekilde yayılmış olacaksınız.
+
+525
+01:33:31,900 --> 01:33:34,320
+Bunun formülünde yazacak olursak
+
+526
+01:33:39,380 --> 01:33:41,779
+Bu sefer i² diyoruz.
+
+527
+01:33:42,979 --> 01:33:44,579
+Mood-m diyoruz.
+
+528
+01:33:46,019 --> 01:33:48,779
+Şöyle bir tablo yan tarafa çizeyim.
+
+529
+01:33:52,212 --> 01:33:55,891
+0, 1, 2, 3, 4, 5, 6 olsun.
+
+530
+01:34:04,659 --> 01:34:17,659
+Bu da hash 9.0 olsun. Bu önceden yerleşmiş değerler olsun tabloda. Önce burada 2 olsun, burada 3 olsun.
+
+531
+01:34:17,659 --> 01:34:29,180
+H9.0 dediğimizde 9 mod 7'den 2 gelecek.
+
+532
+01:34:29,180 --> 01:34:34,719
+2 dolu. O zaman hash 9.1 diyeceğiz.
+
+533
+01:34:35,959 --> 01:34:44,639
+Bu noktada 9 mod 7'den 2 gelecek.
+
+534
+01:34:45,539 --> 01:34:46,279
+Şöyle yazalım.
+
+535
+01:34:47,659 --> 01:35:11,639
+2 artı 1 mod 7 diyeceğiz. Burada 3 gelecek. O da dolu. Hash 9 1 dediğinizde bu sefer 2 artı 2'nin karesi mod 7 dediğinizde 6 değeri gelecek.
+
+536
+01:35:11,639 --> 01:35:18,519
+ve yeni değerimiz 9, 6'nın olduğu yere yerleşmiş olacak.
+
+537
+01:35:19,419 --> 01:35:25,239
+Burada tabii şu yaklaşımı da kullanmak mümkün.
+
+538
+01:35:25,239 --> 01:35:30,239
+Fark alternatif olarak Quadratic Pro-Week'te başka bir...
+
+539
+01:35:39,347 --> 01:35:41,208
+c1 çarpı i
+
+540
+01:35:41,208 --> 01:35:43,527
+artı
+
+541
+01:35:43,527 --> 01:35:45,828
+c2 çarpı
+
+542
+01:35:45,828 --> 01:35:47,728
+i kare yaklaşımını
+
+543
+01:35:47,728 --> 01:35:48,568
+kullanabilirsiniz.
+
+544
+01:35:49,467 --> 01:35:50,007
+c1
+
+545
+01:35:50,007 --> 01:35:53,527
+sabit c2'ye
+
+546
+01:35:53,527 --> 01:35:57,528
+yine bir sabit verebilirsiniz.
+
+547
+01:35:58,427 --> 01:35:58,868
+Bu da
+
+548
+01:35:58,868 --> 01:36:01,747
+kullanılan
+
+549
+01:36:01,747 --> 01:36:05,347
+başka bir
+
+550
+01:36:05,347 --> 01:36:08,007
+yaklaşım
+
+551
+01:36:08,007 --> 01:36:10,567
+şöyle yapalım.
+
+552
+01:36:11,268 --> 01:36:12,208
+9, 1
+
+553
+01:36:12,208 --> 01:36:17,667
+2 artı 2 çarpı 1
+
+554
+01:36:17,667 --> 01:36:20,388
+artı 1 çarpı
+
+555
+01:36:20,388 --> 01:36:21,947
+1'in karesi
+
+556
+01:36:21,947 --> 01:36:24,127
+mod m dediğiniz zaman
+
+557
+01:36:24,127 --> 01:36:25,867
+o zaman
+
+558
+01:36:25,867 --> 01:36:27,487
+5 değerini üreteceksiniz.
+
+559
+01:36:27,487 --> 01:36:29,727
+Yani Quadratic Probing'de
+
+560
+01:36:29,727 --> 01:36:31,928
+Linear Probing'in
+
+561
+01:36:31,928 --> 01:36:35,407
+kullandığımız formülünü de
+
+562
+01:36:35,407 --> 01:36:37,267
+devreye sokup 2 tane farklı katse
+
+563
+01:36:37,267 --> 01:36:39,247
+üzerinden bir hash
+
+564
+01:36:39,247 --> 01:36:41,367
+fonksiyonu yaratma şansınız
+
+565
+01:36:41,367 --> 01:36:43,428
+var. Bu da size belli oranda
+
+566
+01:36:43,428 --> 01:36:45,267
+tabloyu daha efektif kullanmanızı
+
+567
+01:36:45,807 --> 01:36:47,447
+sağlıyor. Son olarak
+
+568
+01:36:47,447 --> 01:36:49,447
+bir yaklaşımı
+
+569
+01:36:49,447 --> 01:36:50,847
+daha konuşacağız. Bunu
+
+570
+01:36:50,847 --> 01:36:52,528
+open addressing altında.
+
+571
+01:36:53,227 --> 01:36:55,347
+Bunun ismi de double hashing.
+
+572
+01:36:59,220 --> 01:37:13,220
+Double-hashing'de aslında iki tane hash fonksiyonu kullanıyorsunuz. İç içe fonksiyonları değerlendirmiş oluyorsunuz.
+
+573
+01:37:15,828 --> 01:37:42,467
+h1 key artı i çarpı h2 key yapmış oluyorsunuz. Mod m diyoruz. Burada h1 key key mod m
+
+574
+01:37:41,460 --> 01:37:43,460
+mTableSize'ımıza denk geliyor.
+
+575
+01:37:44,659 --> 01:37:47,739
+h2 fonksiyonundaysa bu sefer
+
+576
+01:37:51,796 --> 01:37:59,236
+Buraya i artı, aslında i artı demeyelim, şöyle diyelim.
+
+577
+01:38:04,692 --> 01:38:10,132
+Bir altı, ki mod, k diyelim.
+
+578
+01:38:14,323 --> 01:38:19,823
+ve bu noktada K'nız da M'den küçük olsun.
+
+579
+01:38:22,323 --> 01:38:25,823
+Bu da ikinci H fonksiyonumuz olsun.
+
+580
+01:38:25,823 --> 01:38:33,323
+Bu noktada sizin yerleştirmeye çalıştığınız bir örnek üzerinden ilerleyelim.
+
+581
+01:38:33,323 --> 01:38:35,323
+Şöyle yapalım.
+
+582
+01:38:35,323 --> 01:38:37,323
+Bir tane
+
+583
+01:38:39,323 --> 01:38:41,323
+dizimiz olsun.
+
+584
+01:38:59,283 --> 01:39:02,043
+olsun. Örneğin,
+
+585
+01:39:03,343 --> 01:39:04,224
+h1'imiz
+
+586
+01:39:04,224 --> 01:39:10,883
+ki
+
+587
+01:39:10,883 --> 01:39:13,164
+13 olsun.
+
+588
+01:39:15,003 --> 01:39:16,503
+h2 ki'imizde
+
+589
+01:39:16,503 --> 01:39:20,643
+1 artı
+
+590
+01:39:20,643 --> 01:39:21,063
+ki
+
+591
+01:39:21,063 --> 01:39:23,624
+11 olsun.
+
+592
+01:39:25,624 --> 01:39:26,323
+Şimdi
+
+593
+01:39:26,323 --> 01:39:28,083
+14
+
+594
+01:39:28,083 --> 01:39:36,003
+sayısını yerleştirmek isteyelim. 14 sayısını yerleştirmek istediğimiz zaman nereye denk gelecek?
+
+595
+01:39:39,891 --> 01:39:40,891
+14 sayısın.
+
+596
+01:39:55,988 --> 01:39:58,488
+5'e gelecek galiba hocam yanlış hesaplamadıysam.
+
+597
+01:40:00,488 --> 01:40:01,507
+Birlikte yapalım.
+
+598
+01:40:02,167 --> 01:40:03,907
+14 mod 13 nedir?
+
+599
+01:40:03,928 --> 01:40:05,307
+1 olacak.
+
+600
+01:40:05,667 --> 01:40:05,988
+Sonra?
+
+601
+01:40:06,448 --> 01:40:10,868
+14 mod 11 artı 1 de 3 artı 1'den 4 olacak.
+
+602
+01:40:11,147 --> 01:40:12,607
+Bu ikisinin toplamıydı galiba.
+
+603
+01:40:13,107 --> 01:40:13,328
+Evet.
+
+604
+01:40:13,847 --> 01:40:14,927
+5'e denk geliyor o da.
+
+605
+01:40:15,307 --> 01:40:16,067
+5'e denk geliyor.
+
+606
+01:40:16,807 --> 01:40:17,807
+Teşekkür ediyorum.
+
+607
+01:40:17,807 --> 01:40:23,607
+Şimdi tabloda şu sayıların önceden yerleşmiş olduğunu varsayalım.
+
+608
+01:40:31,283 --> 01:40:37,283
+Bu durumda yerleştirmek istediğinizde 5'in dolu olduğunu göreceksiniz. 5 dolu olduğunda ne yapacağız?
+
+609
+01:40:39,283 --> 01:40:41,283
+Kim devam etmek ister?
+
+610
+01:40:55,123 --> 01:40:56,123
+Evet, efendim.
+
+611
+01:40:57,503 --> 01:41:03,323
+Hocam, aynı H1 ile H2 hesapladıktan sonra İ değerini 1 arttıracağız.
+
+612
+01:41:03,743 --> 01:41:04,703
+Tamam, peki, yapalım.
+
+613
+01:41:06,443 --> 01:41:09,123
+Yani 14 mod 13 dedik.
+
+614
+01:41:09,584 --> 01:41:10,703
+1, elimizde var.
+
+615
+01:41:11,703 --> 01:41:15,224
+14 mod 11 dedik, 3 artı 1'den 4.
+
+616
+01:41:16,843 --> 01:41:20,683
+İ ile H2'yi 4 bulmuştuk, 2 ile çarpacağız, 8.
+
+617
+01:41:21,623 --> 01:41:21,923
+Peki.
+
+618
+01:41:21,923 --> 01:41:24,343
+8 artı 1'den 9 olacak.
+
+619
+01:41:24,343 --> 01:41:53,923
+9 olacak. Yani biz nereye yerleştirmiş olacağız? 9. göz boş olduğu için geleceğiz. 14. 9. göz'e yerleştirmiş olacağız. İşte görüğünüz gibi farklı open adresin çözümleri var. Bunlardan bir tanesi double hashing. Burada iki tane hash fonksiyonu kullandık. Bir hash fonksiyonunda i sayısını çarparak değerlendirdik. Biraz önce i sayısını kendisiyle çarpıyorduk. i kare, i küpte yapabilirsiniz ama onun da bir paterni var.
+
+620
+01:41:53,923 --> 01:42:06,183
+önemli olan bu paterni bozmak. Bu paterni bozmak için de double-hashini kullanmak biraz daha maliyetli olsa da bu paterni bozmak açısından daha efektif bir çözüm olarak karşımıza çıkıyor.
+
+621
+01:42:08,183 --> 01:42:19,183
+Hocam burada ben sıfırı atlayıp bir kullandım iyi için. Aslında sıfır kullanıp ilk önce bir dolu olduğu için sonra iyi bir yapmak gerekirdi değil mi?
+
+622
+01:42:19,183 --> 01:42:22,383
+Aslında sonuç yine aynı olacaktı ama ben yanlış yaptım.
+
+623
+01:42:22,383 --> 01:42:51,703
+Yok şöyle ben bunun farkındayım ama özellikle bölmedim çünkü uzun uzadıya hani o kısmında konuşmayalım diye ama hatırlattığım için teşekkür ederim onu da söylemekte fayda var. Arkadaşımız der ki biz ilk yaptığımızda işte 5 adresini bulduk orası dolu diye 9'a geçtik aslında i'yi 1 kabul ettiği için böyle yaptı ama i'yi 0'dan başlatıyoruz normalde 0 kabul ettiğinde birinci göze denk gelecektik orası da dolu olduğu için i'yi 1 olacak orası da dolu olduğu için i'yi 2 olacak
+
+624
+01:42:51,703 --> 01:43:10,344
+Böylece her turda i'nin değeri bir artarak bu sefer kendisiyle çarpım değil, hash fonksiyonunun sonucuyla çarpım olacak ve biraz daha üniform bir dağılımı sağlayacağız. Teşekkür ederim Zülfü hatırlatmak için. Şimdi open addressing kısmını tamamladık. Bir soru daha mı var Zülfü?
+
+625
+01:43:10,344 --> 01:43:23,243
+Hocam evet aslında bir tane hafif gereksiz bir şey var şu sağda hash yazdık ya 9,0, 9,1, 9,1 oldu üçüncüsü de sağ üst tarafta
+
+626
+01:43:23,243 --> 01:43:26,903
+üçüncüsü 9,2 olacak galiba ikinin karesini aldığımız için
+
+627
+01:43:26,903 --> 01:43:28,984
+Şurada yürüyor
+
+628
+01:43:28,984 --> 01:43:32,463
+Sağ üstte 9,2 aynen
+
+629
+01:43:32,463 --> 01:43:33,263
+Evet
+
+630
+01:43:33,263 --> 01:43:35,144
+Bir de bir şey soracağım hocam
+
+631
+01:43:35,144 --> 01:43:38,743
+Çok teşekkür ederim bu düzeltme içinde yanlış girmesin noktlara
+
+632
+01:43:38,743 --> 01:43:39,183
+Evet
+
+633
+01:43:39,183 --> 01:43:51,004
+Hocam şu quadratic probing'de biz aslında kümelenmeden kastımız işte 2-3-4-5 diye indislenmesin de bu yüzden de biraz ayırmaya karar verdik
+
+634
+01:43:51,004 --> 01:43:57,784
+Bunun sebebi aslında yeni bir rakam geldiğinde çok fazla işlem yapmaktansa az işlem yapmak mıdır?
+
+635
+01:43:57,924 --> 01:43:58,183
+Aynen
+
+636
+01:43:58,183 --> 01:44:06,123
+Peki hocam şöyle bir şey yok mu? Hani mesela biz bunu normalde yapma sebebimiz aslında gelen grubun homojen olmamasıydı galiba
+
+637
+01:44:06,123 --> 01:44:25,564
+Eğer homojen olma durumunda, nasıl anlatsam, mod 7'ye göre iki değerini alan çok fazla sayı varsa gelen sayılarda, yerleştireceğimiz sayılarda, böyle bir şeyin kümelenmenin buna sıkıntı oluşturacağını, daha fazla işlem yapacağı içindi.
+
+638
+01:44:25,564 --> 01:44:36,623
+Ama hepsi için aynı metodu kullanınca yani hepsi için ikare kullanınca bu sefer yine kümelenme olmuş olacak ama kümelenme ardı ardı olması yerine kareler üstünde kümelenme olmuş gibi olmayacak mı?
+
+639
+01:44:37,235 --> 01:45:01,235
+Şimdi şöyle, evet bakış açısı olarak doğru bir şey söylüyorsun ama buradaki amacımız bir, biz elimizdeki değerlerin ne olduğunu bilmiyoruz. Eğer aynı olduğunu varsayarsak böyle bir denk gelme olasılığından bahsettik. İkincisi, burada verdiğimiz değerler çarpım yapıldığında daha farklı noktalara gidiyor.
+
+640
+01:45:01,235 --> 01:45:20,416
+Buradaki paterni biz aslında dizinin içerisine yaymış oluyoruz. Yaydığımız zaman da yeni bir değer geldiğinde ki geldiğinde onun aynı noktayı gösterme olasılığını azaltmış oluyoruz.
+
+641
+01:45:20,416 --> 01:45:39,195
+yani evet i karede de 1, 4, 9 sekansı var ama birinde 2, 3, 4, 5, 6 olarak giderken diğerinde size gelen başka bir ki 3'e yerleşmiyor da 7'ye yerleşiyor, 12'ye yerleşiyor.
+
+642
+01:45:39,195 --> 01:45:55,316
+Yani aralarını açmış oluyoruz ama gene aynı değerler gelecekse tabii ki arka arkaya i'nin karelerini hesaplayarak onların peşinden gitmek zorundayız. Buna yapabilecek bir şey yok. Sadece total veri setini yerleştirmede bize avantaj sağlıyor.
+
+643
+01:45:57,456 --> 01:45:59,135
+Bilmem, tatmin edici olur mu?
+
+644
+01:45:59,136 --> 01:46:11,756
+Anladım hocam. Aslında burada geri kalanlarda eğer böyle bir kümelenme yoksa geri kalanları dağıtırken ardışlık kümelenmemiş olma durumumuzdan dolayı daha az işlem yapmış olabiliyoruz galiba.
+
+645
+01:46:11,756 --> 01:46:20,216
+Aynen öyle. Yani o grubu gene arka arkaya bir patende yerleştiriyoruz ama geri kalanlar daha dengeli bir şekilde dağılmış oluyor.
+
+646
+01:46:20,215 --> 01:46:38,535
+Open Address'in konusunu kapattık. Bu session'ı da kapatıyoruz. Yeni session'ı uygulama linkinden yapacağız. Yaklaşık 305 geçe başlayacağız uygulama dersine. 15 dakikalık bir ara veriyorum.
+
+647
+01:46:38,535 --> 01:46:52,195
+orada da separate chaining'i konuşacağız. Open hash'iyken farkı ne? Universal hash'i konuşacağız. Load faktörü konuşacağız. Successful ve unsuccessful search'leri konuşacağız. Evet, Serra.
+
+648
+01:46:54,415 --> 01:47:01,435
+Hocam kaçırdım sanırım, kusura bırakmayın ama K sayısını M'den küçük olarak yazmışsınız da tam olarak neye göre seçtiğimizi anlamadım.
+
+649
+01:47:01,435 --> 01:47:04,756
+K sayısı, evet orası da önemli bir nokta.
+
+650
+01:47:05,715 --> 01:47:19,835
+M'den küçük olması lazım ki biz büyük hash fonksiyonundaki hash fonksiyonunu kullanırken en son noktada ne diyelim bütün tabloyu verimli bir şekilde kullanalım.
+
+651
+01:47:19,835 --> 01:47:24,795
+K bizi bütün tabloda hareketi şöyle söyleyeyim.
+
+652
+01:47:25,116 --> 01:47:30,295
+K M'den büyük olursa o zaman tablonun dışında bir değer üretme olasılığı çıkıyor.
+
+653
+01:47:30,295 --> 01:47:34,695
+K'nın tablo içinde kalabilmesi için M'den mutlaka küçük olması gerekiyor.
+
+654
+01:47:37,116 --> 01:47:38,855
+Yani M'den küçük rastgele bir değer.
+
+655
+01:47:40,235 --> 01:47:43,975
+Aynı mantıkla düşünebiliriz. Prime number kullanmak daha akıllıca.
+
+656
+01:47:46,855 --> 01:47:52,055
+Ama bu sizin bir normal bir sayı seçmeyeceğiniz anlamına gelmiyor.
+
+657
+01:47:52,155 --> 01:47:58,096
+Modüler aritmetik kullanıyorsanız hash fonksiyonunda bunlar genelde işte K diyelim M31 ise K7.
+
+658
+01:47:58,956 --> 01:48:00,215
+Burada olduğu gibi 13-11.
+
+659
+01:48:05,140 --> 01:48:31,379
+Anladım, teşekkür ederim. Rica ederim. Evet, Mahmut Murat'ın sorusuna da cevap vermiş olduk. K'nın ikinci hash fonksiyonunun modüler aritmeti için kullandığımız bir parametre olduğunu ve bunun tablonun dışında bir değer vermemesi için emin K'dan mutlaka büyük olması gerektiğini vurgulamış olduk. Evet, 15 dakika sonra görüştük üzere. Diğer uygulama sesyonunda teşekkür ediyorum. Hoşçakalın.

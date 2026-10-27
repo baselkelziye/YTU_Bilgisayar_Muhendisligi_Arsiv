@@ -1,0 +1,2275 @@
+1
+00:02:17,524 --> 00:02:37,683
+Evet arkadaşlar, 12. haftaya hoş geldiniz. Sınavlarınızda başarılar dilerim bu hafta sınavlarınız varsa. Son 3 haftaya giriyoruz. Son 3 haftada bu hafta backtracking algoritmalarını, branch and bound algoritmasını göreceksiniz.
+
+2
+00:02:37,683 --> 00:02:44,803
+Birkaç tane duyurum olacak. Önce onları yapayım ondan sonra hemen derse başlayalım.
+
+3
+00:02:44,803 --> 00:02:57,503
+Şimdi öncelikle bugün saat 3'te 3. ödevinizin çözümü gerçekleştirecek. Bununla ilgili katılımınız önemli.
+
+4
+00:02:57,503 --> 00:03:13,384
+3. ödevle ilgili ilgili kontroller açısından da katılımınız bugün için yapılması da ödevinizin anlatımını nasıl yapıldığı, nasıl çözüldüğü ile ilgili katılımınız sizden bekleniyor.
+
+5
+00:03:14,663 --> 00:03:23,003
+Katılırsanız faydalı olacağını düşünüyoruz. Ama bugünkü link size benim tarafımdan dersin sonunda aktarılacak.
+
+6
+00:03:23,003 --> 00:03:26,163
+e-mail olarak göndereceğim.
+
+7
+00:03:26,163 --> 00:03:29,163
+Elif Hoca'nın grubuna katılacaksınız.
+
+8
+00:03:30,303 --> 00:03:31,943
+O link üzerinden anlatılıyor olacak.
+
+9
+00:03:33,903 --> 00:03:40,383
+Daha sonra ilerleyen zamanlarda ödevle ilgili bir kontrol söz konusu olursa sizi bilgilendiriyor olacağız.
+
+10
+00:03:41,283 --> 00:03:42,403
+Ödev kısmı böyle.
+
+11
+00:03:43,783 --> 00:03:45,783
+Bir bilgi daha vereceğim.
+
+12
+00:03:46,643 --> 00:03:51,723
+Birkaç arkadaşınızdan bu dördüncü ödevle ilgili
+
+13
+00:03:51,723 --> 00:04:09,723
+istek geldi dördüncü ödev olmasın diye. Bunu Elif Hoca ile de konuştuk. Nasıl yapabiliriz diye. Çünkü biz sizinle ilk dersin başında konuştuğumuzda şu noktaya gelmiştik.
+
+14
+00:04:09,723 --> 00:04:16,884
+ikinci vize yapılmasın yerine ödev yapalım tercihini belirtmiştiniz.
+
+15
+00:04:17,884 --> 00:04:26,583
+Bu dersin ödev ortalaması yıllara bakıldığında son 10 senede 4 ödev ve bir proje olarak gözüküyor.
+
+16
+00:04:27,503 --> 00:04:37,823
+Bu noktada bu seneki ödevlerimizin zorluk düzeyini en azından indirmeye çalıştık sizler adına ve hızlı yapılabilir ödevler vermeye çalışıyoruz.
+
+17
+00:04:37,824 --> 00:04:40,604
+elimizden geldiğince sizin açımızdan böyle olmayabilir.
+
+18
+00:04:41,904 --> 00:04:45,424
+Hani bundan tabii ki emin olamayız.
+
+19
+00:04:45,604 --> 00:04:47,064
+Sizden ara ara geri dönüş alıyoruz.
+
+20
+00:04:48,024 --> 00:04:53,863
+Sonuçta dördüncü ödevinizi vermeye karar verdik.
+
+21
+00:04:53,863 --> 00:05:05,464
+Ve bununla ilgili de ödevinizin mümkünse en hızlı şekilde yapılabilir bir ödev olması konusunda hassasiyet göstereceğimizi belirtmek isterim.
+
+22
+00:05:05,524 --> 00:05:05,984
+Bu ne demek?
+
+23
+00:05:05,983 --> 00:05:16,343
+çok uzun olmayan bir ödev ne anlamda? Zor olması değil, sizi uğraştırma anlamında da çok zor olmayacak bir ödev seçmeye özen göstereceğiz.
+
+24
+00:05:16,343 --> 00:05:24,023
+Ödev backtracking veya branch and bound algoritmalarıyla ilgili olabilir. Büyük ihtimalle onlarla ilgili olacak.
+
+25
+00:05:24,963 --> 00:05:31,503
+Önümüzdeki cumartesi günü en geç, muhtemelen cumartesi günü sizinle paylaşılıyor olacak.
+
+26
+00:05:31,503 --> 00:05:57,783
+sürede önümüzdeki hafta içerisinde bir güne kadar olacak en fazla. Bu noktada elimizden geleni yapacağımızı size tekrar söyleyebilirim. Zorluk düzeyi konusunda. Ama bu ödevleri verme sebebimiz bir, ikinci vize yapmıyor oluşumuz. İki, sizlerin bir şeyler öğrenme konusunda eksik kalmamanız.
+
+27
+00:05:57,783 --> 00:06:03,043
+çünkü uzaktan eğitim bazı noktalarda öğrenmeyi maalesef zorlaştırıyor.
+
+28
+00:06:03,540 --> 00:06:21,980
+Bir diğer nokta da şu, şunu anlayabiliyoruz. Diğer derslerin ödev sayısının artması aslında sizlerle bir yük oluşturdu. Bunun farkındayız. Bu yüzden zaten ödevlerimizin zorluk düzeyinde minimama indirmeye çalışıyoruz.
+
+29
+00:06:22,380 --> 00:06:32,159
+Tabii ki size çok çok kolay ödev veremeyiz ama en azından geçen senede göre biraz daha zorlu, düşük ödevler vermeye özen gösterdik.
+
+30
+00:06:33,540 --> 00:06:55,040
+bazı dersler hem ödev hem vize yapıyor bildiğim kadarıyla. O yüzden gerçekten zor bir dönemden geçtiğinizin farkındayız. Umarım başarıyla atlatacaksınız. Ödevlerinizi de elinizden geleni yaparsanız bence dersin geçme noktasında en az problemi yaşayacağız.
+
+31
+00:06:55,040 --> 00:07:06,080
+benim sizden tek ricam geri kalan iki tane ödev olacak. Bir dördüncü öre bir de dönem projesi ki dönem projesinin kapsamı da aynı şekilde süreyle doğru orantılı olarak olacak.
+
+32
+00:07:06,080 --> 00:07:18,659
+Ve final haftasına mümkün olduğunca taşmadan sizden almayı ve o süreye kadar ödevi tamamlamanızı öngörerek ödev vereceğiz.
+
+33
+00:07:18,959 --> 00:07:23,279
+Yani böylece final haftasında bir de ödevle uğraşmak durumunda kalmayacaksınız.
+
+34
+00:07:23,279 --> 00:07:45,799
+Benim aktarabileceklerim bu kadar. İyi niyetimizden şüpheniz olmasın ama hepinizi memnun edemeyiz. Zor bir süreç. Siz de bize yardımcı olursanız birlikte şu süreci atlatalım. Evet şimdi görüşü aktarmak isteyen varsa hemen görüş alayım ya da bir sıkıntısı olan ya da bir yorum olan varsa hemen alabilirim.
+
+35
+00:07:53,172 --> 00:07:55,111
+Hocam? Evet, dinliyorum.
+
+36
+00:07:55,912 --> 00:08:03,331
+Hocam, ben şeyi soracaktım. Final haftası iki hafta olarak mı olacak? Yine vize haftası gibi tek bütün haftada.
+
+37
+00:08:03,371 --> 00:08:06,331
+Bildiğim kadarıyla değişiklik yapılmazsa iki hafta olacak.
+
+38
+00:08:06,891 --> 00:08:08,592
+Tamam, teşekkür ederim.
+
+39
+00:08:08,831 --> 00:08:15,951
+Yani öyle bir baskı altında olmayacağınızı ümit ediyorum vizeler gibi. Çünkü vizeler gerçekten zor oluyor. Rica ederim. Metin?
+
+40
+00:08:16,631 --> 00:08:22,531
+Hocam, ben şeylerle sınavdaki kod sorularıyla ilgili soracağım da. Mesela hiç çalışmayan bir koda,
+
+41
+00:08:23,172 --> 00:08:37,951
+çalışıyor ama doğru sonucu vermiyor. Ben yazdığım kodlar mesela bayağı bir yazmıştım ama çalışmıyordu. O konularda normal dönemdeki gibi hani şey mi davranılıyor? Binary davranmıyoruz demiştiniz de. Şimdiki değerlendirme nasıl oluyor acaba? Onu merak ediyorum.
+
+42
+00:08:37,951 --> 00:08:51,892
+Hiçbir şey değişmiyor. Kendi adıma hani bunu söyleyebilirim. Benim için normal zamandaki değerlendirme nasılsa aynı şey geçerli. Sadece çok net bir şekilde tespit ettiğimiz bir durum olursa onun gereğini yapacağız.
+
+43
+00:08:51,891 --> 00:08:55,831
+böyle bir iddiada da değiliz.
+
+44
+00:08:57,031 --> 00:08:59,251
+Diyorum yani biz hırsız polis oynamıyoruz.
+
+45
+00:08:59,831 --> 00:09:01,811
+Biz sizin iyi eğitim almanızı önemsiyoruz.
+
+46
+00:09:01,852 --> 00:09:03,291
+Hakikaten buna inanabilirsiniz.
+
+47
+00:09:03,291 --> 00:09:06,011
+Ama şunu da gözetmek zorundayız.
+
+48
+00:09:06,411 --> 00:09:10,991
+Herkesin hak ettiği notu alması için de bizim bazı önlemler almamız gerekiyor.
+
+49
+00:09:11,811 --> 00:09:18,032
+Yoksa sizin başarınız, bizim mutluluğumuz, sizin mezuniyetiniz, bizim yükümüzün daha hafiflemesi.
+
+50
+00:09:18,131 --> 00:09:19,231
+Öyle bakabilirsiniz olaya.
+
+51
+00:09:19,991 --> 00:09:21,392
+Siz elinizden geleni yapın.
+
+52
+00:09:21,392 --> 00:09:48,252
+İnanın o zaman işler daha kolay olacaktır. Neden diyorum bunu? Şöyle bir örnek vereyim. Geçen sene bunu veri yapılarında yaşadık. 80 öğrencinin 20'si dönem bittiğinde hiç ödev vermemişti arkadaşlar. Ve hiç ödev vermeyen, 3 ödev, bir dönem projesi vardı yanlış hatırlamıyorsam. Bir kişi final sınavına girerek o dönem geçmeyi planlıyordu. Yani bu çok normal bir şey değil.
+
+53
+00:09:48,251 --> 00:10:18,071
+Siz elinizden yeni yaptığınızda söylediğin gibi durumlar oluşabilir Metin. Burada yapabilecek bir şey yok. Ne kadar doğru kodlayabildiysem ona göre puanlayacağız. Ama tabii ki bu kadar kısa süre içerisinde çalışan konuda üretmek çok kolay değil. Şura. Teşekkür ederim. Rica ederim Metin. Merhaba hocam. Şey soracaklar. Sınavlarımız tahminen ne zaman açıklanır acaba? Ona da hemen cevap vereyim. Teşekkür ederim.
+
+54
+00:10:18,071 --> 00:10:32,751
+bu soru içinde. Şimdi ben şu anda sizin grubunuzda sınavlarınızın yaklaşık olarak önümüzdeki hafta sonuna doğru açıklanacağını planlıyorum.
+
+55
+00:10:35,091 --> 00:10:42,911
+Yani erken olması biraz sürpriz olur ama en geç önümüzdeki hafta bitmeden sınavlarınızı açıklamış olacağım.
+
+56
+00:10:42,911 --> 00:10:48,991
+yani 13. hafta içerisinde. Geciktiğinin farkındayım. Bundan dolayı mutlu değilim ama çok öğrenci var.
+
+57
+00:10:49,891 --> 00:11:00,251
+BBG'de 110 öğrenci var. Burada da yaklaşık 90 öğrenci var. Ki şu anda 40 kişiyiz yani her geçen gün derse katılma oranı azalıyor.
+
+58
+00:11:02,391 --> 00:11:09,391
+Yani bir hakkaniyetli olup kumak adına dikkatli okumak gerekiyor soruları. Elimden geleni yapacağım.
+
+59
+00:11:09,392 --> 00:11:13,972
+Evet, başka bir şey aktarmak isteyen var mı?
+
+60
+00:11:16,192 --> 00:11:23,132
+Peki, o zaman teşekkür ediyorum sorularınız ve görüşleriniz için. Ayrıca anlayışınız için de.
+
+61
+00:11:23,811 --> 00:11:31,132
+Şimdi bu hafta backtracking algoritmasıyla başlayacağız. Hızlı bir şekilde ilerleyeceğiz.
+
+62
+00:11:31,131 --> 00:11:37,591
+siz çünkü çok fazla soru sorulmasından hoşlanmıyorsunuz.
+
+63
+00:11:37,591 --> 00:11:46,891
+O yüzden mümkün olduğunca konu üzerinden anlatarak örnekler üzerinden en az soruyla ilerlemeyi planlıyorum.
+
+64
+00:11:46,991 --> 00:11:50,851
+Böylece biraz daha mutluluk sayısını belki yükseltmiş oluruz.
+
+65
+00:11:51,248 --> 00:11:53,167
+Şimdi
+
+66
+00:11:53,167 --> 00:11:57,567
+Ders
+
+67
+00:11:57,567 --> 00:11:59,987
+Hemen bir paylaşım yapacağım.
+
+68
+00:12:29,652 --> 00:12:32,471
+Evet, Hüma el kaldırmış. Hüma sana söz vereyim.
+
+69
+00:12:34,331 --> 00:12:35,411
+Cem sesim geliyor mu?
+
+70
+00:12:35,831 --> 00:12:36,592
+Hı hı, duyuyorum.
+
+71
+00:12:38,112 --> 00:12:42,911
+Soru sorulmasından hoşlanmadığımızı söylemişsiniz. Onun için bir şey demek istedim.
+
+72
+00:12:43,311 --> 00:12:46,752
+Ya sadece belli arkadaşlarınız için bu yorum yapıyorum. Herkes için değil.
+
+73
+00:12:47,752 --> 00:12:51,611
+İnteraktif olması her zaman dersi olan ilgiyi artırıyor diye düşünüyorum.
+
+74
+00:12:51,611 --> 00:12:58,751
+Fakat bir soruya cevap gelmediğinde orada oluşan gerilim belki bizi mutsuz ediyor olabilir.
+
+75
+00:12:59,652 --> 00:13:05,872
+Çok haklısın ama şöyle bir şey tespit ettim Hüma bunu çok rahatlıkla söyleyebilirim
+
+76
+00:13:05,872 --> 00:13:15,352
+1. sınıf ve 2. sınıftaki öğrencinin olaylara yaklaşımıyla 3. ve 4. sınıfta çok ciddi farklılıklar olduğunu bu sene net bir şekilde bir kez daha gözlemledim
+
+77
+00:13:15,352 --> 00:13:17,751
+çünkü hem 1. sınıf ders veriyorum hem 3. sınıf
+
+78
+00:13:17,751 --> 00:13:25,311
+orada da çok enteresan sorularla karşılaşıyor öğrenciler ama herkes hata yapsa da hiç çekinmeden şansını deniyor
+
+79
+00:13:25,311 --> 00:13:35,431
+maalesef 3. ve 4. sınıfa gelindiğinde önemli bir kısım öğrenci bu konuda nedense yani fikir yürütmek zor geliyor.
+
+80
+00:13:35,751 --> 00:13:42,111
+Üzerine bir yorum yapmak zor geliyor. İçimizde sürekli olarak katılanlar var. Yanlış da söylüyorlar. Hiç de bir şey olmuyor.
+
+81
+00:13:42,111 --> 00:14:10,732
+Bunun bir gerilim noktasına gelmesinin en büyük sebebi sınıftaki katılımdaki 40-50-60 kişideki bir kişinin bile bir dakika, bir buçuk dakika boyunca bir yorum yapmaması. Tek sebebi bu. Yoksa yaptığınız yorum yanlış olduğu için bir gerilim olsa o zaman derim ki haklısınız arkadaşlar. Yani siz hata yaptığınızda ben de çok yükleniyorum size. Siz de o yüzden cevap vermek istemiyorsunuz.
+
+82
+00:14:10,731 --> 00:14:35,351
+Böyle bir durum olduğunu zannetmiyorum ki bunu katılan kişilerden biri olarak sende gayet iyi biliyorsun. Yani yalnızsa öyle değil diyoruz. Başka bir arkadaşlığına söz veriyoruz. Ben maalesef bir takım arkadaşların çok ciddi çaba harcarken bir takım arkadaşların da hiçbir katkıda bulunmadığını ve bunun için bir çaba harcamadığını görüyorum. Bu da üzücü ama artık ben buna çok takılmamaya karar verdim.
+
+83
+00:14:35,351 --> 00:14:51,532
+çünkü bu dönem olayı değil. Bundan sonraki süreçte de böyle olacak muhtemelen. Çünkü ben bu kadar siz iyi öğrenin, biraz daha bakış açıları artsın, farklı bir fikir duyalım diye çalışırken tam tersi şöyle bir algı oluşuyor.
+
+84
+00:14:51,532 --> 00:15:05,031
+İşte ama çocuğa çok ısrar ediyor, gereksiz bir gerilim oluşuyor, işte bekliyoruz, işte bir şey söylenmiyorsa zaten kimse bilmiyordur. Bu değil, bilip bilmemeniz değil, fikir yürütmeniz. Her zaman söylüyorum.
+
+85
+00:15:05,351 --> 00:15:22,631
+Çünkü 3. sınıfa geldiğinizde siz artık algoritma konusunda fikir yürütebilecek bir noktaya gelmişsiniz demektir. Yürütemiyorsanız biz size yeterince öğretememişiz demektir. Bu da bir problem. O zaman kendimiz de aramak lazım hatayı.
+
+86
+00:15:22,631 --> 00:15:37,671
+Tabii bilgisayar üzerinden ders yaparken bunu çok espriye dökemiyoruz. Neden? Yüz yüze birbirimizi görmüyoruz. Göz göze gelsek, gülümsesek, mimiklerimizi görsek bence bu gerilimin %70'i, 80'i olmayacak.
+
+87
+00:15:37,671 --> 00:16:07,651
+Siz tabii benim surat ifademi görmeyip sadece sesimi duyduğunuz için sanki hani o anda böyle çok ciddi bir durum varmış gibi düşünüyorsunuz ama hayır yani biliyorsunuz derslerinde hep bunu yapıyoruz. Gülümsemek önemli. Ben sizin yüzlerinizi görmeyi çok arzu ederim. Hani arada böyle derse kamerayla katılan olsaydım çok mutlu olurum. Bunu da zorlayamıyoruz. Çünkü boş bir ekran anlatmak kadar yani böyle keyifli
+
+88
+00:16:07,671 --> 00:16:28,671
+işsiz bir iş yok açıkçası. Hatta katıldığınız zaman mutlu oluyorum çünkü sesinizi duyuyorum. Çok uzun cevap verdim ama bu konunun beni artık üzdüğünü ve sizleri de mutsuz ettiğini gördüğüm için bundan sonraki kalan üç haftada mümkün olduğunca sizlerin mutluluğunu ön plana alarak az soru
+
+89
+00:16:29,139 --> 00:16:46,459
+anlatılması gerekenler anlatılacak. Sonra da dersimizi noktalayacağız. Ama teşekkür ediyorum. İnteraktif dersin katkı sağladığına, inandığın için. Biz hemen konumuza geri dönelim. Backtracking ile başlayalım. Ha bu arada ekranı paylaşayım. Çok pardon.
+
+90
+00:16:55,572 --> 00:16:58,491
+şu an ekran geldi. Backtracking
+
+91
+00:17:02,580 --> 00:17:22,680
+Aslında önemli algoritmik yaklaşımlardan bir tanesi. Bizim belirli bir hedefe ulaşırken geçtiğimiz yollar üzerinden belli kayıtlar oluşturuyoruz.
+
+92
+00:17:22,680 --> 00:17:30,000
+ve her state de ilerleyerek çözüme ulaşmaya çalışıyoruz.
+
+93
+00:17:30,899 --> 00:17:35,739
+Ki bu yollar üzerinden giderken dead end'ler var.
+
+94
+00:17:35,980 --> 00:17:37,379
+Yani ulaşılamayan noktalar var.
+
+95
+00:17:37,519 --> 00:17:41,160
+O zaman bu noktalara geldiğimiz zaman geri dönmeyi tercih ediyoruz.
+
+96
+00:17:41,160 --> 00:17:43,899
+Burada bir dead end var.
+
+97
+00:17:44,840 --> 00:17:46,719
+Bir önceki state'e geri dönüyoruz.
+
+98
+00:17:46,719 --> 00:17:56,079
+Bir önceki state'e geldiğimizde tekrar başka bir noktaya kadar gidiyoruz.
+
+99
+00:17:56,179 --> 00:17:57,219
+Burada da bir dead end var.
+
+100
+00:17:57,459 --> 00:17:58,920
+Buradan da geri dönüyoruz.
+
+101
+00:17:58,979 --> 00:18:00,100
+Burada başka bir yol yok.
+
+102
+00:18:00,940 --> 00:18:01,879
+Buraya geri dönüyoruz.
+
+103
+00:18:02,440 --> 00:18:03,599
+Burada da başka bir yol yok.
+
+104
+00:18:04,120 --> 00:18:05,760
+O zaman bir tane daha geri dönüyoruz.
+
+105
+00:18:06,339 --> 00:18:07,419
+Hala başka bir yol yok.
+
+106
+00:18:07,679 --> 00:18:08,319
+Şuraya geliyoruz.
+
+107
+00:18:08,639 --> 00:18:10,319
+Burada örneğin bir yol var diyelim.
+
+108
+00:18:12,899 --> 00:18:15,279
+Ve burası da solution diyelim.
+
+109
+00:18:15,279 --> 00:18:28,199
+Böylece biz olası yollar üzerinden sonuca ulaşmaya çalışıyoruz ve ulaşamadığımız noktada bir adım geri gidiyoruz
+
+110
+00:18:28,199 --> 00:18:31,759
+O noktada başka bir opsiyonumuz kalmadı ise gene bir adım daha geri gidiyoruz
+
+111
+00:18:31,759 --> 00:18:38,259
+Bu şekilde backtracking isimli bir algoritmik yaklaşım ortaya çıkıyor
+
+112
+00:18:38,259 --> 00:18:42,919
+Şimdi buna en güzel verilecek örneklerden bir tanesi labirent örneği
+
+113
+00:18:42,919 --> 00:18:49,359
+Labirent'te tek bir çıkış noktası varsa ki, buranın exit olduğunu varsayalım
+
+114
+00:18:49,359 --> 00:19:01,119
+Bu labirentte ilerlerken duvarlarla karşılaştığımızda bu duvarlar bizim artık daha fazla ilerleyemeyeceğimizi bize söylüyor
+
+115
+00:19:01,119 --> 00:19:05,259
+Ve bu duvar noktalarından geriye gidiyoruz
+
+116
+00:19:05,259 --> 00:19:10,039
+Labirent'teki temel prensip bir yolu dene, çıkmaz sokak ise geri dön
+
+117
+00:19:10,039 --> 00:19:17,800
+başka bir seçenek kalmadıysa bir adım daha geliyor ve bu şekilde çıkış noktasına kadar ulaş.
+
+118
+00:19:17,800 --> 00:19:21,800
+Burada da çıkış noktasına ulaşıyorsunuz, exit noktasına geliyorsunuz.
+
+119
+00:19:23,859 --> 00:19:33,380
+Burada bir fare olduğunu varsayın ve fare bu şekilde tek tek bütün seçenekleri deniyor.
+
+120
+00:19:34,919 --> 00:19:39,199
+Bu backtracking aslında depth first search mantığını kullanıyor.
+
+121
+00:19:39,199 --> 00:19:57,919
+ekstra bir de pruning yapıyor. Pruning nedir? Ağacın belli bir noktasındaki opsiyonların ortadan kaldırılması ve diğer kısmından devam etmeyi sağlıyorsunuz. Bir kesme işlemi gerçekleştiriyorsunuz.
+
+122
+00:19:57,919 --> 00:20:13,639
+Çok sık kullanılıyor bu literatürde ama tabii bu yaklaşımın aslında iyileştirmeye çalıştığı üst yöntem exhaustive search
+
+123
+00:20:13,639 --> 00:20:21,839
+Yani siz kombinatrik problemlerde tüm olasılıkları normalde denemek durumundasınız
+
+124
+00:20:21,839 --> 00:20:43,520
+basit bir yaklaşımla, brute force yaklaşımla olaya yaklaştığınızda bütün olasılıkları denediğinizde eleman sayısı fazla olduğunda doğal olarak 2 üzeri n ya da n faktörü yer kombinatrik problemlerde birden n yüze çıktığında polinomiyel zamanda çözülemeyen problemler oluşuyor.
+
+125
+00:20:43,520 --> 00:21:01,380
+Backtracking'de bu tarz en iyi sonucu bulma noktasında ilerleyen çözümlerde size olasılığı olmayan çözümleri devre dışı bırakmanızı sağlıyor.
+
+126
+00:21:02,036 --> 00:21:29,315
+dersin ikinci bölümünde göreceksiniz. Branch and bound algoritması da var. Branch and bound algoritmasında da aynı yaklaşımda ilerliyor olacağız. Sadece orada optimization problemlerini konuşuyor olacağız. O yüzden bu backtracking'de branch and bound algoritmik yaklaşımı da açıkçası exhaustive search'te, kombinatif problemlerde
+
+127
+00:21:29,315 --> 00:21:44,795
+bütün olasılıkları denemektense biraz daha feasible bir bize çözüm üretiyor ve bu feasible çözüm sayesinde search space'imizi de rahatmış oluyoruz.
+
+128
+00:21:45,695 --> 00:21:46,455
+Yaklaşım bu.
+
+129
+00:21:46,455 --> 00:21:54,216
+Burada kullandığımız bir state, space tree var.
+
+130
+00:22:01,044 --> 00:22:12,044
+her bir adımımızı gösterdiğimiz bir tree. Burada iki tane...
+
+131
+00:22:16,948 --> 00:22:29,368
+durum söz konusu olacak. Bir tanesi geldiğiniz noktada hala bakılabilecek bir ihtimal var mı, seçenek var mı? Bunlara promising noktalar diyoruz.
+
+132
+00:22:30,087 --> 00:22:41,708
+Bir düğüm bu ağacın içerisinde hala bir adım sonrasında duvara çarpmadıysanız bir ihtimal olduğu için bu nokta promising noktası olarak adlandırıyor.
+
+133
+00:22:41,708 --> 00:22:43,167
+örneğin burası promising bir nokta.
+
+134
+00:22:43,847 --> 00:22:44,828
+Kırmızıyla gösterelim.
+
+135
+00:22:45,027 --> 00:22:49,067
+Burası promising bir nokta.
+
+136
+00:22:49,607 --> 00:22:52,587
+Non-promising noktalar ise, bunu yeşille gösterelim.
+
+137
+00:22:54,708 --> 00:22:55,648
+Bu noktalar.
+
+138
+00:22:56,687 --> 00:23:02,488
+Bu noktalarda artık herhangi bir ekstra başka bir seçenek ihtimali kalmadığı için
+
+139
+00:23:02,488 --> 00:23:05,208
+buralara da non-promising nokta var diyoruz ve
+
+140
+00:23:05,208 --> 00:23:09,687
+onun altında hala ekleyebileceğimiz seçenek varsa ki
+
+141
+00:23:09,687 --> 00:23:17,967
+şu anda bu labirentte sanki başka bir seçenek yokmuş gibi ama biraz sonra başka bir problemde konuştuğumuz zaman göreceksiniz.
+
+142
+00:23:17,967 --> 00:23:27,987
+O problemde başka seçenekler de ekleme şansımız olacak ama o seçenekler artık bizim için ihtimal dahilinde olmadığı için onları kontrol etme gereği duymayacağız
+
+143
+00:23:27,987 --> 00:23:34,387
+ve böylece arama uzayımızı şanslıysak oldukça daraltmış olacağız.
+
+144
+00:23:34,387 --> 00:23:44,467
+Burada bir problemle başlayacağız. Kolay bir problemle. Hemen yeni bir sayfaya geçeyim.
+
+145
+00:23:48,403 --> 00:24:06,744
+subset, some problem dediğimiz, verilen sayılar ile istenilen değeri elde edebiliyor muyuz? Hangi kombinasyonlarla istenen değeri elde edebiliyoruz? Buna bakmak istiyoruz. Örneğin bir A subsetimiz olsun.
+
+146
+00:24:09,244 --> 00:24:17,203
+A1'den A N'e kadar olsun. Ve burada N tane pozitif integer var.
+
+147
+00:24:24,339 --> 00:24:46,779
+Burada bunlardan hangilerini toplarsak verilen bir D tam sayısını elde edebiliriz. Bunu bulmaya çalışıyoruz. Örneğin D ve A verilmiş olsun. A, 1, 2, 5, 6, 8 olsun. D de 9 olsun.
+
+148
+00:24:46,779 --> 00:24:59,520
+Burada hızlıca elle bu işlemi gözle bakarak yaptığınızda iki tane seçenek çıkıyor. Bir tanesi 1, 2, 6, bir tanesi de 1 ve 8.
+
+149
+00:25:03,892 --> 00:25:31,511
+Bulunmak istenen seçenekler bunlar. Bazen bir tanesinin peşinde olabilirsiniz. İlkini bulduğunuzda sonuca ulaşmış olabilirsiniz. Bazen de ikisi birden sizden isteniyor olabilir. Ama sonuçta bu iki seçeneğe ulaşmak için de buradaki sayı, n sayısı 5 olduğu için 2 üzeri n-1 yani 2 üzeri 5-1 31 tane farklı kombinasyonu denemeniz gerekir.
+
+150
+00:25:31,511 --> 00:25:46,231
+n sayısı 1000 olduğunda 2 üzeri 1000-1'e gelir ki bu oldukça işi ne diyelim daha fazla işlem gücü gerektirecek noktaya getirir.
+
+151
+00:25:46,311 --> 00:25:49,311
+Daha fazla kontrol yapılması ihtiyacını doğurur.
+
+152
+00:25:49,731 --> 00:25:55,331
+Biz burada backtracking yaklaşımıyla bu işlem sayısını azaltma peşindeyiz.
+
+153
+00:25:55,331 --> 00:26:01,051
+Bunun için nasıl bir yaklaşım izleyeceğimizi şimdi konuşacağız birlikte.
+
+154
+00:26:01,511 --> 00:26:08,911
+Bu noktada bir tane subset verelim gene.
+
+155
+00:26:10,731 --> 00:26:14,612
+S1, S2, Sn olsun.
+
+156
+00:26:15,472 --> 00:26:18,572
+Yukarıdakini sadece başka bir şekilde yazıyorum.
+
+157
+00:26:18,731 --> 00:26:22,551
+S7, 35, 67 diyelim.
+
+158
+00:26:24,591 --> 00:26:28,911
+Ve burada da elde etmek istediğimiz sayı 15 olsun.
+
+159
+00:26:32,915 --> 00:26:49,795
+Burada şimdi bu sayılar karışık verilseydi ilk yapılması gereken şeylerden bir tanesi bu sayıları küçükten büyüğe sıralamak olacaktı. Şöyle yazayım.
+
+160
+00:26:54,324 --> 00:27:07,583
+esen yapacaktık. Burada biz bu sayıları, pardon, bu sayıları sıralı bir şekilde verdik ama karışık versiyelik mutlaka bir sıralama yapmamız gerekecekti.
+
+161
+00:27:08,204 --> 00:27:16,344
+Sebebini de şimdi birlikte konuşuyor olacağız. İlk başladığımız noktada toplamın sıfır olduğunu kabul ediyoruz.
+
+162
+00:27:16,344 --> 00:27:42,643
+elimizde hiçbir sayı daha yok. Yapılacak iki tane seçenek var. Oradaki kümedeki sayılardan birini bu toplama eklemek, ki burada 3 ilk olarak sıraladığımız için, ya da 3'ü almamak. İki seçeneğimiz var.
+
+163
+00:27:42,643 --> 00:27:49,963
+3'ü almadığımız zaman otomatik olarak toplam 0 olarak kalacak. 3'ü aldıktan sonra
+
+164
+00:27:55,667 --> 00:28:01,568
+5'i eklemek 8 oldu. Bu sırada değerimin 15 olduğunu hatırlatmak istiyorum.
+
+165
+00:28:06,387 --> 00:28:33,047
+5'i almadan bu işi yapsaydık buraya 3 gelecekti. Devam ediyorum. Bu sefer elimde 6 var. 6'yı aldığımı varsayarsam 14 elde ettim. 6'yı almadığımı varsayarsam o zaman 8'de kaldım. Şimdi bu noktadan sonra burası non-promissing oldu bizim için.
+
+166
+00:28:33,047 --> 00:28:56,627
+Sebebi 14 artı 7 dediğimiz zaman yani 7'ye eklediğimiz 15'ten büyük olacak. Artık bunun peşinden gitmemize gerek yok. Diyelim 7'den sonra kümede 9, 12, 28 gibi sayılar olsaydı zaten otomatik olarak bu ağacın bu kısmından ilerlemeyi durduracaktık. Artık burası bizim için non-promissive oldu.
+
+167
+00:28:56,627 --> 00:29:02,427
+7'ye alsaydık 15 olacaktı. Burası bizim için bir solution.
+
+168
+00:29:08,276 --> 00:29:31,696
+7'yi almasaydık burası 8 olacaktı. Burası da artık bizim için bir ihtimal olmaktan çıkacaktı. Devam edelim. Burada 6'yı ekliyorum. Artık bit, bit, bit, bit, bit yazmama gerek yok. 6'yı eklediğimde 9 değerini elde edeceğim.
+
+169
+00:29:31,696 --> 00:29:40,075
+9 artı 7, 15'ten büyük olduğu için artık burası da benim için bir seçenek olmaktan çıkıyor.
+
+170
+00:29:41,156 --> 00:29:45,755
+6'yı almasaydım, burası 3 kalacaktı.
+
+171
+00:29:47,956 --> 00:29:51,796
+3 artı 7 diyorum.
+
+172
+00:29:51,796 --> 00:29:56,975
+O da 15'ten küçük olduğu için burası da bir seçenek olmayacaktı.
+
+173
+00:29:57,496 --> 00:30:00,935
+0 tarafında 3'ü almadığımız kezden devam edelim.
+
+174
+00:30:01,695 --> 00:30:21,075
+5'i alsaydık 5 olacaktı. Almasaydık 0 olacaktı. Burada 6'yı ekleseydik 11 olacaktı. Eklemeseydik 5 olacaktı. Burada elimizde şöyle diyelim.
+
+175
+00:30:26,099 --> 00:30:49,179
+Şöyle gösterelim onu. Aslında şu kısmı konuştuktan sonra 5'ten 11'e geçtik, 6'yı aldık. 11 artı 7, 15'ten büyük olduğu için artık burası da bizim için seçenek olmaktan çıktı. Burada 5 artı 7 var şurada.
+
+176
+00:30:49,179 --> 00:31:14,219
+Burası da 5 artı 7, 15'ten küçük olduğu için burası da non-promising oldu. Son olarak şurada sıfırdayız arkadaşlar. Burada da ekleyebileceğimiz rakam, iki tane var geriye kalan rakamlarda. 6 ve 7, zaten 6 ve 7'yi 13 olduğu için eklediğimizde 15'e, şöyle düzelteyim.
+
+177
+00:31:14,219 --> 00:31:25,579
+15 tane küçük olduğu için 15'e ulaşma ihtimalimiz olmadığı için burası da daha 6 ve 7'yi eklemeden otomatik olarak seçenek dışı kalmış oldu.
+
+178
+00:31:27,079 --> 00:31:38,739
+Gördüğünüz gibi biz bu noktada 15 değerine ulaşırken 7'yi kullandık, 5'i kullandık ve 3'ü kullandık.
+
+179
+00:31:38,739 --> 00:31:49,460
+bu ağaç üzerine ilerleyerek de hangi rakamların bu toplam değeri oluşturabileceğini ortaya koymuş olduk.
+
+180
+00:31:49,460 --> 00:31:56,439
+Bu noktada şu kısmı vurgulamak lazım.
+
+181
+00:31:58,579 --> 00:32:00,099
+Şuraya yazıyorum.
+
+182
+00:32:00,099 --> 00:32:10,500
+If s is not equal, then can terminate.
+
+183
+00:32:16,915 --> 00:32:23,396
+denotes as non-promising.
+
+184
+00:32:29,299 --> 00:32:34,499
+if either of the following.
+
+185
+00:32:40,500 --> 00:32:43,839
+to inequities.
+
+186
+00:32:53,715 --> 00:33:10,215
+Bir tanesi S artı A-I artı bir D'den büyükse bu da sum is too large anlamına geliyor.
+
+187
+00:33:10,215 --> 00:33:25,215
+İkincisi de S artı geriye kalan ihtimaller toplasak da yetişemeyeceği için D'ye ki bu da
+
+188
+00:33:25,215 --> 00:33:32,556
+The sum is too small anlamına geliyor.
+
+189
+00:33:32,556 --> 00:34:02,535
+as the sum is too small olduğu için bunu gerçekleştiremiyoruz. Böylece seçeneklerimiz ya geri kalan seçenekler hedefimize ulaşma ihtimali olmadığı için elenmiş oluyor ya da bulunduğumuz noktadan sonra yapacağımız eklemeler bizim aradığımız değeri geçtiği için o ekleme ihtimallerini zaten hesaptan çıkarmamız gerekiyor.
+
+190
+00:34:02,555 --> 00:34:10,395
+böylece önemli miktarda eğer o grupta tabii şansımız da yardım ediyorsa niye şansımız?
+
+191
+00:34:10,395 --> 00:34:25,915
+Çünkü bu çözümün her verilen input için ve her problem için mutlaka az sayıda işlemli çözüleceğinin garantisi yok.
+
+192
+00:34:25,915 --> 00:34:32,775
+verilen input'a bağlı olarak çok fazla sayıda case'i denemek durumunda kalabilirsiniz.
+
+193
+00:34:32,775 --> 00:34:46,355
+O yüzden bu tür algoritmik çözümler hiçbir zaman size %100 en iyi seçeneği garanti etmez belirli bir polynomial time'da.
+
+194
+00:34:46,355 --> 00:35:00,756
+ama exhaustive search'a göre çok daha yüksek ihtimalle sizin istenilen zamanda, istenilen polinomyal zamanda sonuca ulaşma şansınız yüksektir karşılaştırdığımızda.
+
+195
+00:35:01,195 --> 00:35:03,115
+Evet, buraya kadar soru sorun var mı?
+
+196
+00:35:16,532 --> 00:35:20,331
+Peki, o zaman devam edebiliriz diye düşünüyorum.
+
+197
+00:35:28,916 --> 00:35:42,535
+O zaman burada şu ağaca verilen ismi bir kez daha söyleme gereği hissediyorum. Onu unutmadan hemen yazalım. StateSpaceTree.
+
+198
+00:35:44,936 --> 00:35:54,035
+Bu tree üzerine nodlar var ve bu nodların bazıları promising, bazıları non-promising diye söylemiştik.
+
+199
+00:35:54,035 --> 00:36:01,215
+Şimdi N-queen problemına gelelim. Bu da çok literatürde sıklıkla anlatılan bir problemdir.
+
+200
+00:36:04,055 --> 00:36:11,096
+Vezirlerin birbirlerini yemeyecek şekilde tahta üzerinde pozisyonlandırılması problemidir.
+
+201
+00:36:11,096 --> 00:36:32,096
+Biz Eight Queen problemı ele aldığımızı düşünürsek, vezirlerin dikeyde, yatayda ve çaprazda hareket etme ihtimalleri olduğunu, yetenekleri olduğunu da söylersek
+
+202
+00:36:32,096 --> 00:36:47,956
+Bu brute force olarak bu problemi çözseydik ne kadarlık bir kontrol yapmamız gerekirdi diye bakacak olursak
+
+203
+00:36:47,956 --> 00:37:00,375
+64 tane tahta üzerinde boş alan var ve 8 tane de vezirimiz var.
+
+204
+00:37:00,375 --> 00:37:29,435
+64 tane alana bu 8 tane vezirin farklı şekillerde yerleştirme olasılığı 64! bölü 8! çarpı 56! olmak üzere 4 milyar 426 milyon 165 bin 368 tane olasılığı gözden geçirmemiz demek.
+
+205
+00:37:29,435 --> 00:37:37,455
+Burada tabi belli başlı bu ilk akla gelen çözüm olduğu için brute force çözüm olarak adlandırıyoruz.
+
+206
+00:37:37,455 --> 00:37:45,615
+Belli başlı kabuller yaparsak bilgileri kullanarak bu arama uzayımızı biraz daha azaltabiliriz.
+
+207
+00:37:45,795 --> 00:37:46,835
+Bu birinci yaklaşımdı.
+
+208
+00:37:46,835 --> 00:38:11,975
+İkinci yaklaşım her bir rovda bir vezir olacak şekilde yerleştirdiğimizi düşünürsek o zaman en üzeri en'den 8 üzeri 8 16.777.216 ihtimale düşmüş oluyoruz.
+
+209
+00:38:11,975 --> 00:38:18,895
+Çünkü her birini ayrı bir satıra yerleştirme zorunluluğumuz var
+
+210
+00:38:18,895 --> 00:38:21,136
+Aynı satırda olurlarsa birbirlerini yiyecekler
+
+211
+00:38:21,136 --> 00:38:24,895
+Böylece aynı satırda olma ihtimallerini kaldırmış oluyoruz
+
+212
+00:38:24,895 --> 00:38:26,216
+Bir adım daha ileri gidiyoruz
+
+213
+00:38:26,216 --> 00:38:29,856
+Aynı satır ve sütunda olamazlar diyoruz
+
+214
+00:38:37,043 --> 00:38:58,043
+O zaman seçenek bizim için n-faktör ile iniyor. Bu da 8-faktör yani 40.320 deneme sonunda 8 Queen probleminin nasıl yerleşeceğini belirlemiş oluyoruz.
+
+215
+00:38:58,043 --> 00:39:02,823
+bu işi backtracking'de çözseydik
+
+216
+00:39:08,083 --> 00:39:34,344
+yaklaşık olarak 2057 adımda coinlerin pozisyonuna karar vermiş olacaktık. 8 tane vezir için. Bu aslında gördüğünüz gibi bu problemde yaklaşık 20 katlık bir hız sağlıyor bize. 20 kat daha az işlem yapmış oluyoruz. Bu da oldukça aslında tatminkar bir sonuç düşündüğümüzde.
+
+217
+00:39:34,344 --> 00:39:47,703
+Şimdi bu problemi ele alalım ve bu problemde nasıl bir yaklaşım izlemeliyiz, backtracking kullanarak buna bir bakalım istiyorum.
+
+218
+00:39:48,183 --> 00:40:03,703
+Biz tabii şu anda 8 queen problemini konuştuk ama 8 queen problemini burada modellemek zaman alacağı için biz 4 queen problemi üzerinden ilerleyeceğiz ama onun öncesinde şunu söyleyelim.
+
+219
+00:40:04,343 --> 00:40:12,283
+Birebirlik bir tahtada yani bir queen problemi diye bir problem söz konusu olamıyor çünkü bunun bir çözümü yok
+
+220
+00:40:12,283 --> 00:40:15,503
+Bunu vurgulamamız lazım
+
+221
+00:40:15,503 --> 00:40:17,283
+İkiye ikiye bakalım
+
+222
+00:40:17,283 --> 00:40:24,024
+Bu arada bunların hepsi birer soru olarak size gelebilecek sorular ama ben hiçbirini sormuyorum
+
+223
+00:40:24,024 --> 00:40:25,683
+Doğrudan anlatıyorum
+
+224
+00:40:25,683 --> 00:40:28,804
+Hani çok zor olmayan sorular
+
+225
+00:40:28,804 --> 00:40:31,743
+İkiye iki problemi
+
+226
+00:40:31,743 --> 00:40:55,323
+ikiye iki problemine baktığınızda gene vezirleri yerleştiremiyorsunuz. Böyle de koysanız, böyle de koysanız vezirleri yerleştirmek mümkün olmadığı için iki kuyun problemi de bizim için aslında konuşmaktan, konuşulması gereken problem olmaktan çıkıyor. 3-3'e bakalım.
+
+227
+00:40:59,635 --> 00:41:09,635
+üçe üçe queenleri yerleştirmeye kalktığınızda yine üçe üçte de queenleri birbirlerini yemeyecek pozisyonuna yerleştiremiyorsunuz.
+
+228
+00:41:09,775 --> 00:41:17,095
+En az, yani minimum dörde dörtlük bir board gerekiyor.
+
+229
+00:41:21,748 --> 00:41:27,927
+dört tane queen'i yerleştirdiğinizde birbirlerini yemeyecek pozisyonda yerleştirebiliyorsunuz.
+
+230
+00:41:27,927 --> 00:41:33,827
+Şimdi bunu nasıl yapacağız? Hemen bir sonraki slide'ımıza ilerleyelim.
+
+231
+00:41:45,268 --> 00:42:13,268
+Initial state'imiz var. Initial state'den sonra ilk etapta, initial state'de şunu da verelim, onu da söylemekte fayda var. Initial state'de tahtanız boş. Böyle düşünebilirsiniz. Initial state'den sonra iki tane state ayrılıyor. Birincisinde
+
+232
+00:42:14,132 --> 00:42:16,132
+Koy ne?
+
+233
+00:42:18,483 --> 00:42:20,483
+nereye yerleştiriyorsunuz?
+
+234
+00:42:20,483 --> 00:42:23,483
+0'a 0 gözüne yerleştiriyorsunuz.
+
+235
+00:42:25,483 --> 00:42:27,483
+İkincisinde
+
+236
+00:42:27,483 --> 00:42:31,483
+Queen'i bir sonraki göze yerleştireceksiniz.
+
+237
+00:42:31,483 --> 00:42:33,483
+O da
+
+238
+00:42:33,483 --> 00:42:35,483
+0'a 1 gözü.
+
+239
+00:42:35,483 --> 00:42:37,483
+Şimdi
+
+240
+00:42:37,483 --> 00:42:39,483
+burada
+
+241
+00:42:39,483 --> 00:42:41,483
+siz
+
+242
+00:42:41,483 --> 00:42:46,483
+Queen'i ilk satırda 0'a 0'a yerleştirdiğinize göre
+
+243
+00:42:46,483 --> 00:42:55,643
+Queen'in bir sonraki adımda yerleşebileceği ihtimal neresi olabilir diye bakıyoruz.
+
+244
+00:42:55,643 --> 00:43:03,603
+Bir sonraki satırda 1'e 0 olabilir. İhtimal dahilinde mi? Yani altına yerleşebilir mi? Hayır.
+
+245
+00:43:05,543 --> 00:43:08,783
+1'e 1 olabilir. Çaprazında kaldığı için gene olmaz.
+
+246
+00:43:10,003 --> 00:43:15,723
+Olabileceği yegane yer 1'e 2 pozisyonu.
+
+247
+00:43:28,403 --> 00:43:57,103
+Şimdi 1'e 2'ye yerleştirdiniz. 1'e 2'ye yerleştirdikten sonra 2'ye 0'a yerleştirebilir misiniz? Hayır. 2'ye 1'e yerleştirebilir misiniz? Yine hayır. 2'ye 2'ye, 2'ye 3'e. Hiçbirine 3. satırda yerleştiremezsiniz. O zaman burada artık ağacın geri kalanında aşağı inmemize gerek kalmıyor. Burayı prune ediyoruz.
+
+248
+00:43:58,403 --> 00:44:09,863
+Bu pruning işlemiyle birlikte artık aşağıya doğru herhangi bir derecede inme ihtimalimiz ve şuranın bir seçenek olma ihtimali ortadan kalkıyor.
+
+249
+00:44:09,863 --> 00:44:24,863
+Bir sonraki adıma geçtiğimizde yani Queen'i ikinci satırda dördüncü kısma yerleştirdiğimizde
+
+250
+00:44:24,863 --> 00:44:29,043
+ne olacak bir ona bakalım.
+
+251
+00:44:39,059 --> 00:44:41,119
+Pardon, yanlış çizdim, bunu tekrar çizeyim.
+
+252
+00:44:44,563 --> 00:44:49,524
+Önce onu çizelim.
+
+253
+00:44:51,699 --> 00:44:53,659
+Evet, Queen önce burada idi.
+
+254
+00:44:53,719 --> 00:44:55,839
+İkinci satırda bu sefer geldik.
+
+255
+00:44:56,499 --> 00:44:58,359
+Dördüncü noktaya yerleştirdik.
+
+256
+00:44:58,559 --> 00:45:00,799
+Burası da 1'e 3 olsun.
+
+257
+00:45:02,559 --> 00:45:04,719
+Şimdi üçüncü satıra bakıyoruz.
+
+258
+00:45:04,979 --> 00:45:09,359
+Üçüncü satırda yerleşebileceği tek nokta şurası.
+
+259
+00:45:09,359 --> 00:45:13,359
+Bu noktaya yerleştirdiğini varsayın.
+
+260
+00:45:13,439 --> 00:45:18,599
+Çünkü şuraya yerleştiremezsiniz, şuraya yerleştiremezsiniz, buraya yerleştiremezsiniz.
+
+261
+00:45:18,599 --> 00:45:30,459
+Bu noktada queenler bu pozisyondayken dördüncü satıra yerleştirmek istediğinizde ilk göze yerleştiremezsiniz, ikinci göze yerleştiremezsiniz, üçüncü göze ve dördüncü göze yerleştiremezsiniz.
+
+262
+00:45:30,560 --> 00:45:33,880
+Dolayısıyla burası da ihtimal olmaktan çıkmış oldu.
+
+263
+00:45:33,999 --> 00:45:41,999
+Demek ki bu tarafta ilk göze queeni yerleştirdiğimiz ilk satırda bir çözüm üretme şansımız ortadan kalkmış oldu.
+
+264
+00:45:42,959 --> 00:45:43,560
+Devam edelim.
+
+265
+00:45:44,280 --> 00:45:47,439
+Bu sefer ağacın bu tarafından ilerleyelim.
+
+266
+00:45:47,439 --> 00:45:48,979
+biraz önce buradan ilerlemiştik.
+
+267
+00:45:49,379 --> 00:45:50,559
+Queen ikinci gözde.
+
+268
+00:45:51,219 --> 00:45:53,259
+İkinci göze yerleştirdiğinizde
+
+269
+00:45:53,259 --> 00:45:57,439
+ikinci satırın ilk gözüne
+
+270
+00:45:57,439 --> 00:45:59,839
+yerleştiremiyorsunuz. İkinci satırın
+
+271
+00:45:59,839 --> 00:46:01,239
+ikinci gözüne
+
+272
+00:46:01,239 --> 00:46:03,159
+yerleştiremiyorsunuz. İkinci satırın
+
+273
+00:46:03,159 --> 00:46:05,259
+üçüncü gözüne yerleştiremiyorsunuz.
+
+274
+00:46:06,099 --> 00:46:06,920
+Dolayısıyla
+
+275
+00:46:06,920 --> 00:46:08,439
+bir sonraki
+
+276
+00:46:08,439 --> 00:46:10,920
+satırda yerleştirebileceğiniz
+
+277
+00:46:10,920 --> 00:46:11,799
+yegane yer
+
+278
+00:46:11,799 --> 00:46:15,259
+bu kombinasyonla dördüncü
+
+279
+00:46:15,259 --> 00:46:15,979
+satır oluyor.
+
+280
+00:46:15,979 --> 00:46:19,039
+4. satıra yerleştirdikten sonra
+
+281
+00:46:19,039 --> 00:46:21,679
+bir sonraki state'e geçiyorum.
+
+282
+00:46:22,999 --> 00:46:24,359
+Bir sonraki state'de
+
+283
+00:46:24,359 --> 00:46:26,600
+yani 3. satırda
+
+284
+00:46:32,275 --> 00:46:34,075
+Çok pardon, şunu düzelteyim.
+
+285
+00:46:38,835 --> 00:46:54,835
+İlk sütuna yerleştirebiliyorsunuz üçüncü satırda. Üç vezir de şu anda birbirini almayacak pozisyonda konumlanmış durumda. O zaman bu bir seçenek oluyor. Ve son olarak dördüncü satırı yerleştirmek üzere aşağı iniyorsunuz.
+
+286
+00:46:54,835 --> 00:47:16,856
+ve aşağıya indiğinizde, üçüncü göze yerleştirdiğinizde, hiçbir kuyin birbirini almayacak şekilde dörde dörtlük bir matrize dört tane kuyin yerleşmiş oluyor.
+
+287
+00:47:17,855 --> 00:47:23,535
+Burası, burası, burası ve burası.
+
+288
+00:47:24,835 --> 00:47:34,056
+İşte gördüğünüz gibi State Space 3'yi oluşturarak 4 Queen problemini burada çözüme ulaştırdık.
+
+289
+00:47:34,655 --> 00:47:36,775
+Ağacı nasıl prune ettiğimizi gösterdik.
+
+290
+00:47:37,475 --> 00:47:44,835
+Non-promising ve promising nodların neler olduğunu konuştuk ve kağıt üzerine bu problemi çözdük.
+
+291
+00:47:44,835 --> 00:48:08,556
+Şimdi saat 13.50 oldu. Bir 10 dakika ara vereceğiz. Ondan sonra kağıt üzerinde çözdüğümüz bu problemi bilgisayar ortamında program olarak yazdığımızda algoritmasını nasıl dizayn etmeliyiz? Yani coin'lerin birbirini alıp almadığını yerleştirdiğimizde nasıl kontrol etmeliyiz? Buna bakacağız. Evet, Orkun bir soru sormak istiyorsun.
+
+292
+00:48:08,556 --> 00:48:32,655
+Araya girmeden önce sorayım dedim hocam. Burada direkt gözüme takılan bir şey var. Biraz solucion atı yok alakalı değil de. Buradaki bütün queen'ler 3 birimlik offsetle birlikte kenarlara oluşmuş şekilde. Yani birlik offsetle ve üçlük aralıklarla yerleşmiş bir şekilde. Geri olarak queen problemini çözen, bunun üzerinden giden bir tane formül gibi bir şey var mı?
+
+293
+00:48:32,655 --> 00:48:57,556
+Benim bildiğim yok. Çünkü bu 4 Queen probleminde böyle gerçekleşiyor ama 5, 6, 7, 8'e gittiğimizde bu formülle bir noktaya varabileceğimizi bilmiyorum. Yani duymadım. Ama haklısın 4 Queen'de baktığında böyle bir sanki formül varmış gibi gözüküyor ama bunu 5, 6, 7'de denemek ve hani bunu bir formülle oturtabiliyor muyuz diye bakmak lazım.
+
+294
+00:48:57,556 --> 00:49:00,916
+Ben teşekkür ederim
+
+295
+00:49:00,916 --> 00:49:02,936
+Evet 10 dakika sonra görüşmek üzere arkadaşlar
+
+296
+00:49:02,936 --> 00:49:03,776
+Hoşçakalın
+
+297
+00:58:36,884 --> 00:58:41,083
+Evet arkadaşlar, yeniden merhaba. Dersin ikinci bölümünden hoş geldiniz.
+
+298
+00:58:41,903 --> 00:58:50,743
+N-Queen problemini konuşuyorduk. N-Queen probleminde hatırlarsanız bir State Space Tree'i oluşturmuştuk az önce.
+
+299
+00:58:51,423 --> 00:58:56,863
+Ve bu State Space Tree'i nasıl oluşturacağımızı konuştuk. Ama bunu tabii kağıt üzerinde yaptık.
+
+300
+00:58:56,963 --> 00:59:00,863
+Yani bunu bilgisayara yaptırmak için analitik bir bilgi vermeniz gerekiyor bilgisayara.
+
+301
+00:59:00,863 --> 00:59:25,123
+Bunun için bilgisayarda sizin çaprazdaki birbirlerine tehdit oluşturup oluşturmadıklarını hesaplamanız gerekiyor. Bu kısmı nasıl yapmalıyız bir ona bakacağız. Örneğin burası 0. Evet Ahmet tabii sorabilirsin.
+
+302
+00:59:25,123 --> 00:59:29,423
+Hocam kusura bakmayın el kaldırmayı göremedim. Kaldırdınız mı bilmiyorum ama
+
+303
+00:59:29,423 --> 00:59:33,703
+Yok ben kaldırmadım biraz önceki bütün arkadaşlar el kaldırarak söz istediler
+
+304
+00:59:33,703 --> 00:59:36,223
+Tamam ben göremedim o zaman özür dilerim
+
+305
+00:59:36,223 --> 00:59:43,104
+BruteForce yaklaşımından ne farkı oldu? Hani tek tek yine denemiş olmadık mı aslında?
+
+306
+00:59:44,104 --> 00:59:45,123
+Biraz önceki kısımda mı?
+
+307
+00:59:46,123 --> 00:59:46,423
+Hemen
+
+308
+00:59:46,423 --> 00:59:51,003
+Ha şimdi hemen bakalım BruteForce'dan ne farkı oldu?
+
+309
+00:59:51,003 --> 01:00:05,183
+Şimdi şöyle ki siz şu noktaya geldiğiniz an artık bu noktadan itibaren aşağıya gitmeyeceğinizi, diğer seçenekleri kontrol etmeyeceğinizi biliyorsunuz.
+
+310
+01:00:05,543 --> 01:00:15,623
+Hatta bunu örnek almayalım, şurayı alalım. İki tanesini yerleştirdiniz. Üçüncüyü yerleştirmeye çalıştığınızda üçüncünün yerleşmediğini gördünüz.
+
+311
+01:00:15,623 --> 01:00:21,863
+Yerleşmediğini gördüğünüz anda artık 3'ün her bir seçeneği için 4'e bakmanıza gerek kalmadı
+
+312
+01:00:21,863 --> 01:00:26,303
+Anladım şimdi teşekkür ederim hocam
+
+313
+01:00:26,303 --> 01:00:28,223
+Burada da aynı şey geçerli
+
+314
+01:00:28,223 --> 01:00:44,283
+Burada da baktığınızda Q'yu 2'ye yerleştirdiğin anda ikinci satıra herhangi bir yerleştirme yaptığımız zaman şu 3 seçenek otomatikman eleniyor çünkü Q'nun altına, Q'nun çaprazına geliyor
+
+315
+01:00:44,283 --> 01:00:53,283
+bunlar elendiği anda otomatik olarak bunların altındaki 3. Queen'i ve 4. Queen'in kombinasyonları da elenmiş oluyor.
+
+316
+01:00:54,063 --> 01:01:01,263
+O yüzden aslında Depth First Search with Bruning yaklaşımı diye de adlandırılıyor.
+
+317
+01:01:01,263 --> 01:01:09,604
+Siz ilgili noktaya kadar iniyorsunuz. İlerisinde bir çözüm yoksa o ilerideki bütün kombinasyonlardan kurtulmuş oluyorsunuz.
+
+318
+01:01:10,303 --> 01:01:12,303
+Evet rica ederim. Devam edelim.
+
+319
+01:01:14,283 --> 01:01:25,263
+Neredeydik? Bir sonraki sayfadaydık. Ve çapraz kontrolü birbirlerine tehdit oluşturup oluşturmadıkları nasıl anlaşılacak ona bakacaktık.
+
+320
+01:01:28,003 --> 01:01:43,423
+Calum 1 ve Rho 1, diagonalde ilerlediğinizde yani 0-0, 1-1 ve Calum 2.
+
+321
+01:01:44,283 --> 01:01:56,604
+Rho 2. Bir tanesi bu eksende, bu yöndeki bir tehdit. Bir de diğer yönde de olabilir.
+
+322
+01:01:59,083 --> 01:02:09,643
+Rho 0, 0. Burası olsun. Pardon, şöyle yazalım daha düzgün olması açısından.
+
+323
+01:02:09,643 --> 01:02:25,163
+Rho 0 burası olsun, Kalım 0 burası olsun, Rho 1, Kalım 1 ve Rho 2, Kalım 2 olsun.
+
+324
+01:02:25,163 --> 01:02:34,063
+Ama bu sefer neler değişmiş oldu? Başlangıç noktaları, burası 0-2, burası 1-1.
+
+325
+01:02:34,496 --> 01:02:41,375
+Burası da 2-0 oldu. Şimdi bunlar arasındaki ilişkiye bakmak istediğimizde
+
+326
+01:02:41,375 --> 01:02:48,895
+CALM 2-CALM 1 dediğimizde
+
+327
+01:02:48,895 --> 01:02:53,815
+ROW 2-ROW 1'e eşit mi diye bakıyorsunuz.
+
+328
+01:02:53,815 --> 01:03:04,895
+Buradan geldiğimiz noktada column i, column j, eşit mi, row i, row j'ye geliyor
+
+329
+01:03:04,895 --> 01:03:15,135
+Ama burada hangisi önce gelirse büyük önce gelirse artı bir değer, küçük önce gelirse eksi bir değer çıkacağı için
+
+330
+01:03:15,135 --> 01:03:23,375
+Aslında biz bunlara birer absolut değer hesaplayacak şekilde bir formalizasyon yapıyoruz
+
+331
+01:03:23,375 --> 01:03:34,035
+ve sonuçta bir queen'in yerleştiği lokasyon, diğer queen'in yerleştiği lokasyon ile karşılaştırma yapılacağında
+
+332
+01:03:34,035 --> 01:03:43,455
+ikisinin kolonları değerlerinin farkının, satırları değerlerinin farkıyla eşit olup olmadığına bakmak gerekiyor.
+
+333
+01:03:43,455 --> 01:03:51,055
+Eğer bunlar eşitse o zaman bu queen'ler birbirleriyle tehdit oluşturuyor anlamına gelecektir.
+
+334
+01:03:51,055 --> 01:04:02,095
+ve siz buna göre bir kontrol yaparak o Queen'in o State Space Tree'de yerleşip yerleşemeyeceğini bilgisayara hesaplatabilirsiniz.
+
+335
+01:04:02,095 --> 01:04:09,555
+Biz biraz önce gözle baktık ama bu işin analitik olarak bilgisayara çözdürülmesi gerekiyor.
+
+336
+01:04:09,675 --> 01:04:20,455
+Bunun kontrolü de kolonlar arasındaki fark ve satırlar arasındaki farkın mutlak değerlerinin birbirine eşit olup olmadığını kontrol etmek.
+
+337
+01:04:21,055 --> 01:04:34,755
+İkinci kritik nokta yine bunu da normalde size sorduğum bir sorudur. Nasıl yapılır diye ama direkt doğrudan cevabını sizinle paylaşacağım.
+
+338
+01:04:34,755 --> 01:05:02,955
+biz bunları matriz üzerinde saklamak yerine yani queenlerin hangi noktada olduğu bilgisini matriz tutarak saklamak yerine bir satır tutarak bunu gerçekleştirebiliyoruz.
+
+339
+01:05:04,755 --> 01:05:23,455
+Bu örneğin 2, 3, 0, 0 diyelim. Bu bize nasıl queen'in yerini veriyor? İndis bilgilerini kullanıyoruz. Çünkü her satırda bir queen olacağını biliyoruz.
+
+340
+01:05:23,455 --> 01:05:36,315
+O zaman diyoruz ki sıfırıncı satırda ikinci sütunda bir queen var, birinci satırda üçüncü sütunda bir queen var, diğerleri henüz yerleşmemiş
+
+341
+01:05:36,315 --> 01:05:47,235
+Yani biz indis bilgisini satır olarak sakladık, dizinin içerisindeki bilgileri de sütun bilgisi olarak sakladık
+
+342
+01:05:47,235 --> 01:06:04,455
+Böylece bir matris yapmak yerine space kompleksiyeti oldukça azaltarak sadece n boyutlu bir dizi ile n çarpı n yerine n boyutlu bir dizi ile bu problemi çözme şansına sahip olabileceğiz.
+
+343
+01:06:05,515 --> 01:06:07,235
+Evet buraya kadar sorunuz var mı?
+
+344
+01:06:11,476 --> 01:06:18,436
+Backtracking yaklaşımıyla ilgili ya da N-Queen problemiyle ilgili
+
+345
+01:06:18,436 --> 01:06:20,995
+Hocam
+
+346
+01:06:20,995 --> 01:06:22,295
+Tabi Hüma
+
+347
+01:06:22,295 --> 01:06:23,835
+Şura ben
+
+348
+01:06:23,835 --> 01:06:26,455
+Hüma el kaldırmış, özür diliyorum
+
+349
+01:06:26,455 --> 01:06:27,255
+Pardon
+
+350
+01:06:27,255 --> 01:06:33,035
+El kaldırınca Vianos direkt şey yaptı zannediyordum. Peki Şura sen söyle önce sonra Hüma'ya şey
+
+351
+01:06:33,035 --> 01:06:36,835
+Matris kısmını tam anlayamadım da orayı bir tekrar edebilir misiniz?
+
+352
+01:06:36,835 --> 01:06:40,875
+Matris kısmını tekrar edeyim. Matris'te normalde Queen'in
+
+353
+01:06:40,875 --> 01:06:49,996
+yerleştiği bölgeyi her seferinde kontrol etmek istediğimizde bunu normalde biz matrise yerleştiriyoruz kağıt üzerinde.
+
+354
+01:06:49,996 --> 01:07:03,196
+Ama şu bilgiyi kullanabiliriz. Matriste vezirler her bir satırda yer alacak. Aynı satırda birden fazla queen olamayacağına göre.
+
+355
+01:07:03,195 --> 01:07:12,075
+biz dizide tutalım queenlerin yerlerini ve dizinin indisi bize o queenin hangi satırında yer aldığını söylesin.
+
+356
+01:07:12,635 --> 01:07:17,855
+Dizinin gözündeki değerde o queenin o satırın hangi sütununda yer aldığını söylesin.
+
+357
+01:07:17,855 --> 01:07:32,155
+Böylece queenleri matrise yerleştirerek saklamak ve onlarla ilgili işlem yapmak yerine queenlerin pozisyonlarını dizide saklıyoruz ve bu sayede space kompleksimizi azaltmış oluyoruz.
+
+358
+01:07:32,156 --> 01:07:33,416
+Anlaşıldı mı Şura?
+
+359
+01:07:34,416 --> 01:07:36,075
+Anladım hocam teşekkür ederim.
+
+360
+01:07:36,215 --> 01:07:37,075
+Güzel ederim. Hüma?
+
+361
+01:07:38,495 --> 01:07:41,035
+Hocam ben formülü anlamadım yukarıdaki.
+
+362
+01:07:41,815 --> 01:07:43,675
+Tabii formülüne bir kez daha bakalım.
+
+363
+01:07:45,276 --> 01:07:57,516
+Formülde biz çaprazda bir yerleşme olası mı değil mi diye bakarken örneğin bir tehdit oluşturup oluşturmaktan bakıyoruz.
+
+364
+01:07:57,636 --> 01:08:01,395
+Coin 2'ye 2'ye yerleşmiş olsun. Diğer coin de 0'a yerleşmiş olsun.
+
+365
+01:08:02,156 --> 01:08:12,175
+Bu seçenek bir seçenek midir? Yani bizim için bir soluşun olacak mıdır diye kontrol etmek için onların birbirlerine tehdit oluşturup oluşturmadığını anlamamız lazım.
+
+366
+01:08:12,175 --> 01:08:22,916
+Bunu anlamak için de bakıyoruz. Çaprazda olma koşulu satırları birbirinden çıkartmak, sütunları birbirlerinden çıkartmak ve bunların eşit olup olmadığına bakmak.
+
+367
+01:08:23,976 --> 01:08:30,535
+2'den 0 çıkardım 2, 2'den 0 çıkardım 2. Kolonlar arası fark ve satırlar arası fark 2 olduğu için
+
+368
+01:08:30,535 --> 01:08:40,136
+bu bizim için bir opsiyon olamaz. Queen'i buna, buna ya da buna yerleştirsek iki Queen'i birbirlerine tehdit oluşturacaklardı.
+
+369
+01:08:40,856 --> 01:08:48,136
+Ama bunu mutlak değer kullanmadan yaparsak bu sefer bu case için hatalı çalışacak.
+
+370
+01:08:48,916 --> 01:08:56,815
+Yaptığımız şey burada sıfırdan ikiyi çıkardık. Diğer tarafta da ikiden sıfır çıkardık. Biri eksi iki çıktı, diğeri iki çıktı.
+
+371
+01:08:56,815 --> 01:09:08,395
+ikisinin mutlak değerini aldığımızda iki çıktığı için böyle bir pozisyonda yaralan iki vezir de birbirlerine tehdit oluşturacakları için bu pozisyon artık bir seçenek olmaktan çıkacak.
+
+372
+01:09:10,056 --> 01:09:11,455
+Anladım, teşekkür ederim.
+
+373
+01:09:11,696 --> 01:09:12,916
+Güzel, derim. Şafak.
+
+374
+01:09:14,275 --> 01:09:17,935
+Hocam bu backtracking'in ve bunun karmaşıklığına değinecek miyiz?
+
+375
+01:09:18,575 --> 01:09:24,295
+Aslında güzel bir soru. Bu backtracking'in karmaşıklığını konuşmak iyi olur.
+
+376
+01:09:24,295 --> 01:09:43,055
+Şimdi ben backtracking ile ilgili bir ufak püsada kod yazacağım. Tüm backtracking algoritmalarını temsil edecek ama hepsi için birebir aynı olmasa da mantığı temsil edecek. Ondan sonra bu söylediğin yaklaşım yani algoritma analizi kısmı nasıl oluyor buna bir bakalım.
+
+377
+01:09:43,056 --> 01:09:55,035
+Bir soru daha soracaktım hocam. Bu backtracking'in genel hali dediniz ya, şeye de benzettim biraz bunu, Beam Search'ı. Acaba aralarında bir şey var mı diye soracaktım.
+
+378
+01:09:55,035 --> 01:09:56,175
+Buyamadım, niye benzettim?
+
+379
+01:09:56,395 --> 01:09:59,776
+Beam Search. B-A.
+
+380
+01:10:00,556 --> 01:10:08,356
+Yani şöyle söyleyeyim, açıkçası aralarında bir benzerlik var mı bilmiyorum. Yanlış bir bilgi vermek istemiyorum.
+
+381
+01:10:08,819 --> 01:10:10,859
+Bir bakıp ona göre söyleyeyim.
+
+382
+01:10:10,959 --> 01:10:11,560
+Tamamdır.
+
+383
+01:10:13,359 --> 01:10:16,479
+Oradaki mantık nasıl bana söylersen ben de ona göre söyleyeyim.
+
+384
+01:10:16,499 --> 01:10:29,379
+Oradaki mantık biraz daha olasılıksal işliyor aslında. Bir cümle içinde end of sentence token'ı görene kadar ilerliyoruz. En yüksek oluşabilecek cümle olasılığıyla alakalı.
+
+385
+01:10:30,160 --> 01:10:34,139
+Yani orada bir maks-optimizasyon problemi var mı?
+
+386
+01:10:34,459 --> 01:10:34,879
+Evet.
+
+387
+01:10:34,879 --> 01:10:35,799
+Evet, evet
+
+388
+01:10:35,799 --> 01:11:03,759
+Tamam, o zaman eğer öyle bir şey varsa biraz sonra süremizin yettiği kadar bu hafta, belki geri kalan kısmı önümüzdeki hafta tamamlayacağız, branch and bound yaklaşımı var, backtracking'in optimizasyon problemlerine uyarlanmış hali diyelim, tam backtracking değil ama branch and bound diye geçiyor, benzer bir mantık, muhtemelen onunla benzediğini düşünüyoruz, söylediğin algoritmanın
+
+389
+01:11:03,759 --> 01:11:05,339
+Tamamdır.
+
+390
+01:11:05,339 --> 01:11:15,119
+Tamam peki şimdi öncelikle şu backtracking algoritmasının PISODO kodunu yani genel yaklaşımın PISODO kodunu yazalım.
+
+391
+01:11:28,212 --> 01:11:32,491
+Şimdi elinizde bir uzay olsun.
+
+392
+01:11:38,739 --> 01:11:39,559
+Eh
+
+393
+01:11:43,060 --> 01:11:46,060
+Bu uzayda
+
+394
+01:11:50,547 --> 01:11:51,768
+çözümünüz olsun.
+
+395
+01:13:23,412 --> 01:13:36,792
+Evet, şimdi burada bir genel bir backtracking yaklaşımını anlatan bir psodokod yazdım. İnceleyin lütfen.
+
+396
+01:14:24,532 --> 01:14:27,051
+Evet, soruları alacağım Efe.
+
+397
+01:14:29,211 --> 01:14:38,351
+Hocam, biz bu vezir bulma problemini başka bir şey de kullanıyor muyuz? Çünkü sudoku çözmeye çok benziyor da bu.
+
+398
+01:14:38,351 --> 01:14:56,091
+Bu vezir bulma problemi aslında bir nevi satrançtaki hamlelerin, olasılıkların, yani bir sonraki hamlenin ne tür bir risk barındırmının hesaplandırması için de kullanılan bir şey.
+
+399
+01:14:56,091 --> 01:15:14,932
+İkincisi burada constraintler var. Vezir bulma problemi bunu çok iyi anlattığı için bir seçeneğin diğer seçeneği çürütmeyecek şekilde kullanılabilmesi için ortaya atılacak tüm problemlerde bu yaklaşımı kullanabilirsiniz.
+
+400
+01:15:14,931 --> 01:15:31,591
+Yani örnek veriyorum dersleri öyle bir yerleştirin ki hiçbir hocanın dersi kendisiyle çakışmasın, öğrencilerin de ders alma noktasında bir deadlock oluşmasın. Aynı mantık.
+
+401
+01:15:31,591 --> 01:15:46,691
+birbirlerini tehdit oluşturmayacak pozisyonlandırma yaptığınız problemler ve bunlar genelde non-polynomial problemlerdir, NP problemlerdir ve polynomial time'da çözülemez.
+
+402
+01:15:46,691 --> 01:15:54,511
+Backtracking size bu N-queen problemi gibi problemleri linear time'da çözme imkanı sağlıyor.
+
+403
+01:15:54,511 --> 01:16:09,791
+exhaustive search'ta bunu. Dinear olmayan bir time'da çözme şansınız yok. Polinom time'da çözme şansınız yok. Bir soru da Şafak'tan vardı. Elim havada kalmış hocam.
+
+404
+01:16:09,791 --> 01:16:31,431
+Şimdi bu backtracking algoritma yaklaşımının episode code hali eğer diyor ki siz o noktaya kadar geldiğinizde iyi inci noktaya geldiğinizde state space tree'nizde bir solution bulduysanız bunu doğrudan yazdırın diyor.
+
+405
+01:16:31,431 --> 01:16:45,611
+Eğer bulamadıysanız kümenize constraint'lerinizi bozmayacak bir elemanı daha ekleyin ve tekrar o elemanı eklediğinizde yani yeni bir veziri yerleştirin.
+
+406
+01:16:46,032 --> 01:16:49,431
+O yerleştirdiğiniz vezir sizin için bir solutions'a yazdırın.
+
+407
+01:16:49,491 --> 01:17:00,491
+Değilse tekrar geri kalan elemanlar arasında constraint'inizi bozmayan elemanı alın ve yerleştirin şeklinde devam eden bir bakış açısı var.
+
+408
+01:17:00,491 --> 01:17:14,851
+Biraz önce Sam bulurken bunu yaptık, rakamları ekledik, rakamları eklerken o geldiğimiz noktanın bir sonuçunu olup olmadığına baktık, yoksa diğer noktaya ilerledik
+
+409
+01:17:14,851 --> 01:17:29,651
+Bazen de tek bir çözüm olmayabiliyor, birden fazla çözüm olursa o çözümleri paylaşmanız istenirse o zaman ağacın tümünü prune ettikten sonra buna karar vermeniz gerekiyor
+
+410
+01:17:29,651 --> 01:17:55,171
+Yani nedir? İki tane sayı ilk adımda dokuz toplamını verecek şekilde buldunuz diyelim ama sizden başka kombinasyon var mı diye soruldu. Onları bulabilmek için o zaman bütün ağacı oluşturmanız eğer olmayacak non-promising seçenekler varsa onları kat ederek tüm seçenekleri elemeniz bekleniyor. Buna dikkat etmekte fayda var.
+
+411
+01:17:55,171 --> 01:18:14,071
+Peki biz burada aslında bir şey daha yaptık ya da bunu yaparken bazılarını fark ettiniz bazılarını fark etmediniz. N-Queen problemini de aslında yerleştirme yaparken hemen göstereyim.
+
+412
+01:18:16,692 --> 01:18:33,651
+Siz soldan başladınız ve bu şekilde yerleştirdiniz. Aslında sağdan başlayıp da yerleştirseydiniz Queen'i, diagonalden bir çizgi çektiğinizde aslında iki tarafı mirrorlamış oluyorsunuz.
+
+413
+01:18:33,651 --> 01:18:43,351
+O yüzden Queen problemini yerleştirirken belli bir yerden sonraki kısma bakmaya gerek yok.
+
+414
+01:18:43,351 --> 01:18:52,351
+çünkü onun mirror'ını aslında bir önceki turda ya da en önceki turda kontrol etmiş oluyorsunuz.
+
+415
+01:18:53,311 --> 01:19:11,471
+Şuradan bir aslında şuna bastım ama olmadı. Şuradan bir ayna çektiğinizde queen'i buraya yerleştirmekle queen'i buraya yerleştirmek, diğer queen'i de buraya yerleştirmek aslında aynı anlama geliyor.
+
+416
+01:19:11,471 --> 01:19:18,311
+Burada bu seçenekleri bu aydınlama yöntemini kullanarak eleme şansına sahipsiniz.
+
+417
+01:19:18,311 --> 01:19:28,992
+Keza biraz önce gene yaklaşımımızda toplamı bulurken dataları sıraladık karışık verilmiş olan sayıları.
+
+418
+01:19:28,991 --> 01:19:46,411
+Bunun sebebi de bu sıralama işlemiyle bizim önümüzde o hedefe ulaşmak için yeteri kadar sayı kalmadıysa ya da değer kalmadıysa bunları zaten kombinasyonları kontrol etmemize gerek kalmadı demektir.
+
+419
+01:19:46,412 --> 01:20:13,072
+Bu sıralama işlemi bize buradaki yarattığımız backtracking'teki avantajı biraz daha büyütmemizi sağlıyor ve karşılaştırma olasılıklarımızın sayısını da azaltmış oluyor. O yüzden backtracking problemlerinde bu tür ufak hamlelerle search space'inizi daha da küçültme şansına sahipsiniz diyelim.
+
+420
+01:20:13,071 --> 01:20:23,291
+Şimdi aslında şöyle analiziyle ilgili de küçük bir bilgi verelim.
+
+421
+01:20:23,291 --> 01:20:32,552
+Çünkü bunun analiz kısmı aslında net olarak budur diyebileceğimiz bir sonucu şudur diyebileceğimiz net bir cevabı yok.
+
+422
+01:20:32,552 --> 01:20:43,552
+çünkü bunların veriliş biçimi inputların ve kombinasyonların analizde bize bunun karmaşıkları şudur demiyor.
+
+423
+01:20:44,632 --> 01:20:50,951
+Sadece bunun belirli bir standart sapması var ve bu standart sapma yeri geldiği zaman yüksek olabiliyor.
+
+424
+01:20:50,951 --> 01:21:13,891
+Şimdi ilk X1 değerine erişmek için kullandığınız değerlerin C1'den oluştuğunu varsayın ve işte bu değerlerin seçimi olasılığında bir bölü C1 olduğunu varsayarsanız
+
+425
+01:21:13,891 --> 01:21:22,811
+C1'in çocuklarına ilerleme opsiyonunuz C1 kadar olacaktır.
+
+426
+01:21:22,811 --> 01:21:31,011
+Bunu tekrar ederseniz X2'ye geçtiğiniz zaman yukarıdaki örnekten verdiğim psilokoddan anlatıyorum.
+
+427
+01:21:31,171 --> 01:21:38,591
+Yani ikinci seçeneği değerlendirdiğiniz zaman bu sefer C2 devreye giriyor.
+
+428
+01:21:38,591 --> 01:21:45,391
+bu sefer C2'nin childrenlarına erişmek için C1 ve C2'nin childrenlarına erişmeniz gerekiyor.
+
+429
+01:21:45,531 --> 01:21:48,192
+O zaman C1 çarpı C2'yi elde ediyorsunuz.
+
+430
+01:21:48,631 --> 01:21:55,771
+Bu şekilde aşağıya doğru dallandıkça sizin kompleksiniz de bu oranda artıyor.
+
+431
+01:21:55,771 --> 01:22:03,851
+Ve sonuçta bize böyle bir karmaşıklık değeri ortaya çıkıyor.
+
+432
+01:22:03,851 --> 01:22:11,131
+ama burada ağacın ne noktada prune edileceğini bilmediğiniz için
+
+433
+01:22:12,148 --> 01:22:27,568
+ve CI olarak adlandırmış olduğunuz, İ-inci nodun, CI-inci çocuklarına baktığınızdaki olasılığın ne olduğunu, dizilimi de bilmediğiniz için net bir şey söylemek mümkün değil burada.
+
+434
+01:22:28,687 --> 01:22:33,988
+Birazcık problemin kendisine ve o problemle verilen datanın dağılımına bağlı.
+
+435
+01:22:33,988 --> 01:22:51,287
+bazı problemler için, örneğin Queen problemi için ya da buradaki toplama problemi için, Hamiltonian problemi için bu backtracking algoritması oldukça iyi sonuç üretiyor.
+
+436
+01:22:51,287 --> 01:23:04,787
+Ama sayı büyürse ve burada verilen sayıların kombinasyonu değişirse o zaman düşündüğünüz kadar hızlı sorunu çözemeyebilirsiniz
+
+437
+01:23:04,787 --> 01:23:08,667
+Bununla ilgili de zaten literatürde okursanız şunu göreceksiniz
+
+438
+01:23:08,667 --> 01:23:14,328
+Bunun kompleksisini net bir şekilde ifade etme şansınız yok
+
+439
+01:23:14,328 --> 01:23:24,247
+çünkü değişen inputlar sayesinde standart satma çok yüksek olduğu için genelleştirmek bunu çok mümkün değil.
+
+440
+01:23:25,927 --> 01:23:36,287
+Tamam şimdi bu kısımları da konuştuğumuza göre backtracking aykortmasında başka bir şey kaldım diye bakıyorum şöyle söyleyebileceğim bir şey.
+
+441
+01:23:42,228 --> 01:23:52,747
+Tamam. Burada şöyle bir ifade var. Aslında biraz önceki anlattıklarımda destekleyen bir ifade olarak sizinle paylaşmış olayım.
+
+442
+01:23:52,747 --> 01:24:21,707
+Backtracking algoritmasında yapmış olduğunuz budama işlemi ağaçtaki sizin zamansal ve belleksel olarak herhangi bir kaynak kısıtına düşmeden sonlanmasını ümit ederek bu işi yapmanız gerekiyor.
+
+443
+01:24:21,707 --> 01:24:40,787
+Yani yola çıktığınızda her problemde bunun istediğiniz sonucu polinomiyel bir zamanda vermesi ya da belleği out of order olmadan bir şekilde segmentation fault almadan sonuçlanmasını beklersiniz
+
+444
+01:24:40,787 --> 01:24:59,567
+Biz burada çok küçük sayılar için yapıyoruz ama bu sayıyı büyüttüğünüzde muhtemelen sonuç alacaksınız ama bazı kezler için istenilen zamanda ve istenilen bellek kullanımı ile bunun sonuçlanmama ihtimali var.
+
+445
+01:24:59,567 --> 01:25:26,507
+Siz en azından exhaustive surge'e göre karşılaştırma ve olasılık sayınızı çok düşürdüğünüz için doğal olarak buradaki ağaç budamanın sizin lehinize sonuçlanmasını bekliyorsunuz ve bunun sonucunda da bir sonuç çıkarılmasını ümit ediyorsunuz ama her zaman bunun böyle geçerli ve sorun çözücü bir yaklaşımı olmadığını tekrar uygulamış olalım.
+
+446
+01:25:26,507 --> 01:25:28,447
+Evet, branch and bound.
+
+447
+01:25:29,567 --> 01:25:31,307
+problemini konuşmaya başlayalım.
+
+448
+01:25:40,756 --> 01:25:51,315
+Bu problem de aslında optimization. Orkun bir şey mi söyleyeceksin?
+
+449
+01:25:54,115 --> 01:25:55,495
+Yok, pardon hocam.
+
+450
+01:25:55,495 --> 01:25:56,075
+Tamam.
+
+451
+01:25:59,395 --> 01:26:06,775
+Optimization problemlerini çözmek için kullandığımız bir yaklaşım.
+
+452
+01:26:07,395 --> 01:26:10,615
+Biri optimization problemine hedefi nedir?
+
+453
+01:26:10,756 --> 01:26:15,735
+ya maksimize etmek ister bir şeyi ya da minimize etmek ister.
+
+454
+01:26:18,735 --> 01:26:26,936
+Ve tabii ki belirli constraintler
+
+455
+01:26:32,051 --> 01:26:37,351
+altında bunu yapmanız gerekebilir. Bir objective function'unuz vardır.
+
+456
+01:26:42,804 --> 01:26:54,264
+bir tane objective function oluşturursunuz ve burada biz optimizasyon problemlerinde en iyi sonucu bulmayı hedefleriz.
+
+457
+01:26:54,684 --> 01:27:07,283
+Optimizasyon problemlerinde iki tane solution vardır. Bir tanesi feasible solution, diğeri de optimal solution.
+
+458
+01:27:07,283 --> 01:27:21,304
+Feasible Solution, Constraintlere uyan ve Search Space'de sizin Constraintlerinizin tümünü karşılayan çözümlerdir.
+
+459
+01:27:21,304 --> 01:27:26,183
+Bunların hepsi makul çözüm olarak değerlendirilir.
+
+460
+01:27:26,183 --> 01:27:46,503
+Ama bizim aradığımız feasible solution'lar arasında en iyi objektif fonksiyona uygun, en iyi çözümü veren fonksiyondur ve biz bu optimal solution olarak adlandırırız ve bu feasible solution'lar arasında en iyi çözümün peşinde koşmayı hedefleriz.
+
+461
+01:27:46,503 --> 01:28:02,503
+Bunun için sizlerin de çok iyi bildiği ve günlük hayatta da çok sık kullandığımız bir assignment problemi vardır.
+
+462
+01:28:04,683 --> 01:28:07,383
+N tane kişi vardır ve N tane iş vardır.
+
+463
+01:28:07,383 --> 01:28:14,743
+Bu N'a N'lik bir matriste gösterilir ve çözülmeye çalışılır.
+
+464
+01:28:14,743 --> 01:28:19,063
+Job 1, Job 2, Job 3 ve Job 4 diyelim.
+
+465
+01:28:21,023 --> 01:28:22,423
+Person A olsun.
+
+466
+01:28:24,943 --> 01:28:31,043
+Person B, Person C, Person D olsun.
+
+467
+01:28:31,703 --> 01:28:35,923
+Bu kişilerin her bir işi yapma maliyetleri var.
+
+468
+01:28:37,083 --> 01:28:40,003
+Örneğin bir A kişisi dört işi birden yapabiliyor.
+
+469
+01:28:40,003 --> 01:28:58,703
+ve her bir iş için maliyeti birinci iş için 9, ikinci iş için 2, üçüncü iş için 7, dördüncü iş için 8. Sonra ikinci kişinin maliyetlerini yazıyorum. Üçüncü kişinin ikini yazıyorum.
+
+470
+01:29:02,739 --> 01:29:13,999
+Burada işveren doğal olarak hangi işe kimi atayacağını belirlemek istiyor. Bunu yaparken de en az maliyetle bu işi yapmak istiyor.
+
+471
+01:29:15,099 --> 01:29:28,879
+Hedef en uygun dört eşleştirmeyi yapmak ve burada bu eşleşmenin sonunda da en az maliyeti oluşturmak.
+
+472
+01:29:28,879 --> 01:29:36,899
+işte A kişisi ilk işi yaparsa 9 saatlik 9 dolar alacak diyelim.
+
+473
+01:29:37,460 --> 01:29:39,619
+İkinci işi yaparsa saat 2 dolar alacak.
+
+474
+01:29:40,100 --> 01:29:43,699
+Hepsinin tabii işleri yapma yetenekleri ve kapasitesi aynı olarak düşüneceksiniz.
+
+475
+01:29:43,699 --> 01:29:44,839
+Öyle bir konstruyatimiz yok.
+
+476
+01:29:44,999 --> 01:29:49,039
+Yani A yaparsa birinci işi daha iyi yapar, ikinci işi daha kötü yapar gibi bir durum yok.
+
+477
+01:29:49,479 --> 01:29:53,640
+Hepsini yapabilme yeteneği var ama girim maliyetleri birbirlerinden farklı.
+
+478
+01:29:53,639 --> 01:30:08,679
+Şimdi burada tabii bizim amacımız buradaki bütün kombinasyonları kullanarak değil mümkün olan en az adımda bu sonuca ulaşmak.
+
+479
+01:30:08,679 --> 01:30:19,679
+İlk etapta ne yapılabilir diye konuşsak muhtemelen ilk aklınıza gelecek çözüm şu olacaktır.
+
+480
+01:30:19,679 --> 01:30:25,399
+İşte şu olsun, şu olsun, şu olsun ve şu olsun
+
+481
+01:30:25,399 --> 01:30:39,899
+Bu matriste oluşturabileceğiniz her satırdaki kişi için iş yaparsa verebileceğiniz en küçük değeri oluşturabilecek kombinasyon bu
+
+482
+01:30:39,899 --> 01:30:44,259
+2, 3, 1, 4 her satırdaki en küçük değeri seçtim
+
+483
+01:30:44,259 --> 01:30:53,199
+Bu da bizim topladığımızda 2, 3, artı 1, 4 ona denk geliyor.
+
+484
+01:30:53,299 --> 01:30:59,239
+Yani biz burada en iyi kombinasyon oluştursak 10 birimlik bir maliyetimiz var.
+
+485
+01:31:00,019 --> 01:31:11,719
+Ama sıkıntı şu ki bu kombinasyonu oluştururken Job 3 için, 3. iş için 2 tane atama yaptık ve 1. iş için hiç atama yapmadık.
+
+486
+01:31:11,719 --> 01:31:26,659
+Bu bizim istediğimiz bir durum değil. Ama biliyoruz ki bunlar denk gelseydi, yani bir şurada olsaydı, o zaman bu bizim elde edebileceğimiz en iyi kombinasyon olacaktı.
+
+487
+01:31:26,659 --> 01:31:30,820
+Şimdi nasıl ilerleyeceğiz?
+
+488
+01:31:30,820 --> 01:31:34,359
+Gene bir State Space Tree kullanacağız.
+
+489
+01:31:36,019 --> 01:31:40,320
+Buradaki seçenekleri değerlendireceğiz.
+
+490
+01:31:41,159 --> 01:31:51,199
+Ve bu seçenekler üzerinden acaba bir sonraki adımda nereye gitmeliyiz, neye bakmalıyız buna karar vermeye çalışacağız.
+
+491
+01:31:51,199 --> 01:32:13,839
+Şimdi birinci noktadayım ve birinci noktadaki lower bound'um. Bu da bir minimization problemiyle uğraşıyorum. Yani en düşük maliyetin peşindeyim. 2 artı 3 artı 1 artı 4. Burası benim bir nevi şöyle diyelim.
+
+492
+01:32:13,839 --> 01:32:17,459
+Start noktam
+
+493
+01:32:17,459 --> 01:32:23,739
+Start noktandaki olabilecek e düşük maliyet
+
+494
+01:32:27,604 --> 01:32:30,003
+program. On.
+
+495
+01:32:34,963 --> 01:32:46,963
+Şimdi bir sonraki adımda gidilebilecek dört tane seçenek var. Niye dört tane seçenek var? A kişisine birinci işe sahne edebilirsiniz.
+
+496
+01:32:50,996 --> 01:33:01,015
+A kişisine ikinci işi esayen edebilirsiniz. A kişisine üçüncü işi esayen edebilirsiniz. A kişisine dördüncü işi esayen edebilirsiniz.
+
+497
+01:33:01,715 --> 01:33:06,855
+A'ya biri esayen ettiğimizi varsayarsak, o zaman lower bound ne olacak?
+
+498
+01:33:12,083 --> 01:33:39,583
+Bakalım, A'ya 1'i eshan ettiğimizde kesinlikle 9 hesabımız da olacak. Bu sefer geri kalan seçeneklere bakıyorum. En küçüklerine. Gene 3 artı 1 artı 4. Diyebilirsiniz ki 3 ile 1 gene kesişiyor. Biz bununla ilgilenmiyoruz. Sadece A'yı 1'e atamakla ilgileniyoruz. Geri kalanlar içerisinde en küçük olana bakıyoruz.
+
+499
+01:33:42,083 --> 01:33:56,383
+Bu da 12-17 değerini bize getiriyor. Yani biz A'ya birinci işi verseydik 2-3-4'ü işini diğer kişilere dağıttığımızda ulaşabileceğimiz en iyi değer 17.
+
+500
+01:33:57,124 --> 01:34:07,583
+A'ya 2 verseydik, power bound, ikinci işinki 2, sonra yine 3-1-4'tan gideceğiz geri kalanlarda.
+
+501
+01:34:07,583 --> 01:34:09,304
+ve zaffer.
+
+502
+01:34:17,844 --> 01:34:33,463
+Lower bound'umuz 10 olacak. Sonra A'ya 3'ü verdim. A'ya 3'ü verdiğim zaman 7'yi kullanmış oldum. Şöyle yapalım.
+
+503
+01:34:36,851 --> 01:34:38,851
+Kusma.
+
+504
+01:34:42,931 --> 01:35:01,791
+A'ya 3'ü verdiğiniz zaman artık 3-1'i kullanamazsınız. Çünkü A'ya artık 3'ü verdiniz. Diğerlerinin 3'ün dışındaki, yani 3. için dışındaki en iyi opsiyonlarına bakmamız lazım.
+
+505
+01:35:01,791 --> 01:35:05,151
+İkinci satırda 3'ün dışındaki en iyi opsiyon 4
+
+506
+01:35:05,151 --> 01:35:09,091
+7 artı 4
+
+507
+01:35:09,091 --> 01:35:12,811
+Üçüncü satırda 1'in dışındaki en iyi opsiyon 5
+
+508
+01:35:12,811 --> 01:35:18,472
+Son satırdaki hala en iyi opsiyon 4
+
+509
+01:35:18,472 --> 01:35:21,391
+Bu da bize 11, 16, 20 vardı
+
+510
+01:35:21,391 --> 01:35:26,112
+Son olarak A'ya 4 verseydiniz
+
+511
+01:35:26,112 --> 01:35:30,231
+Bu sefer Lower Bound 8
+
+512
+01:35:30,231 --> 01:35:50,891
+artı 3, artı 1. Bu sefer en alttaki 4'ü alamıyorsunuz. O satırdaki en küçük değer artı olduğu için 6'yı alıyorsunuz. Ve A'nın işini belirlediğinizde sizin elinizde opsiyonlar ortaya çıkmış oluyor.
+
+513
+01:35:50,891 --> 01:36:06,431
+Buradaki en iyi opsiyon seçenekler arasındaki 10 değer. Doğal olarak onun peşinden gitmek gerekiyor. İşte bu yaklaşıma best first branch and bound yaklaşımı diyoruz.
+
+514
+01:36:09,971 --> 01:36:12,371
+Yani burada kullanılan stratejinin adı bu.
+
+515
+01:36:19,347 --> 01:36:39,787
+Ve biz 10'un altına gideceğiz şu anda. 10'un altına gittiğimiz zaman A'ya 2 işini vermiştik. O zaman B'ye en düşükten başlayarak vereceğiz. B'ye 1 vereceğiz. B'ye 1'i verdiğimiz zaman
+
+516
+01:36:39,787 --> 01:36:51,027
+2, 6 daha, 8. O zaman geriye kalan 1 ve 4 olduğu için 9, 13'e yerini elde edeceğiz. Lower bound 13 olacak.
+
+517
+01:36:52,447 --> 01:37:05,107
+Başka seçeneğimiz ne olabilir? B'ye 3'ü vermek. A'ya 2'yi vermiştik. Değerimiz 2. B'ye 3'ü verdiğimizde 3, 2, 3 daha 5.
+
+518
+01:37:05,107 --> 01:37:16,787
+Bu sefer C'ye 3'ü yani 1'i veremeyeceğiz, 5'i vereceğiz, 10 etti, son kişiye D'ye de 4'ü vereceğiz, lower bound 14 oldu
+
+519
+01:37:21,043 --> 01:37:25,984
+Son olarak B'ye 4'ü verme olasılığımız var. B'ye 2'yi veremiyoruz çünkü A'ya 2'yi verdik.
+
+520
+01:37:28,103 --> 01:37:47,063
+B'ye 4'ü verdiğimizde 2 artı 7, 9, 1'i koyduk 10. En yakın verebileceğimiz değer dördüncü de 2'yi ve 4'ü veremeyeceğimiz için 1 olduğu için 17 değerine elde edeceğiz. Lower bound 17 olacak.
+
+521
+01:37:52,340 --> 01:38:09,219
+Şimdi, bu nokta itibariyle bizim elimizde 17 var, 20 var, 18 var, 13 var, 14 var, 17 var.
+
+522
+01:38:11,719 --> 01:38:20,819
+Otomatik olarak artık 17, 20, 18, 17, 14 devre dışı kalıyor.
+
+523
+01:38:20,819 --> 01:38:23,959
+çünkü elimizde 13 değeri var.
+
+524
+01:38:26,439 --> 01:38:29,060
+Ve biz artık 13'ün altına bakacağız.
+
+525
+01:38:30,180 --> 01:38:34,159
+O andaki seçenekler içerisindeki en iyi olanla yola devam ediyoruz.
+
+526
+01:38:34,840 --> 01:38:38,599
+Peki A'ya 2 vermiştik, B'ye 1 vermiştik.
+
+527
+01:38:39,420 --> 01:38:40,499
+Şuradan devam edeyim.
+
+528
+01:38:41,399 --> 01:38:42,799
+Şu kısım ve şu kısım.
+
+529
+01:38:44,240 --> 01:38:45,139
+B'ye 1 olsun.
+
+530
+01:38:46,939 --> 01:38:48,740
+Lower bound 13 olsun.
+
+531
+01:38:54,963 --> 01:39:01,404
+Doğal olarak C'nin iki tane seçeneği var. Ya üç olacak ya da dört olacak.
+
+532
+01:39:05,779 --> 01:39:13,159
+Bunun karşılığında D ya 4 olacak. Bu arada şu okların yerlerini düzelteyim.
+
+533
+01:39:18,163 --> 01:39:45,223
+Tekrar yazayım. B1 dedik, C3 dedik, D4 dedik, C4 dedik, D3 dedik. Böyle bir durumda benim elde edeceğim değer A2 iken 2 idi, B1 iken 2 artı 6'dan 8 idi, C3 verdim 9, D4 verdim 13. Hakikaten burada costun 13 olduğunu gördüm.
+
+534
+01:39:45,223 --> 01:39:49,703
+Bu benim artık bütün işlerime esan ettiğim nokta
+
+535
+01:39:49,703 --> 01:40:01,943
+Tam tersinde C'ye 4, D'ye 3 verseydim o zaman cost 2 artı 6, 8, 8, 10, 6, 9'dan cost 25 olacaktı
+
+536
+01:40:01,943 --> 01:40:08,403
+Bu da artık geçerli olmayan bir sonuç olacaktı
+
+537
+01:40:08,403 --> 01:40:28,884
+bizim için A'ya 2 işini, B'ye 3 işini, pardon 1 işini, C'ye 3 işini ve D'ye 4 işini vererek biz best first branch and bound algoritmasıyla bu problemi çözmüş olacaktık.
+
+538
+01:40:29,783 --> 01:40:36,003
+Yani 4 kişiye 4 tane farklı işi atadığımızda en az maliyetle bunu yaptık.
+
+539
+01:40:36,003 --> 01:41:03,123
+yola ne ile çıktık? 10 olması lower bound'umuz dedik ama 10 kurallara, constraint'lere uymadığı için bunu ilerleyen adımlarla tespit ettik. O ilgili kısım zaten artık 10 olmaktan çıkıp 13, 14, 17 oldu. Bunlar da bir önceki state de bizim için ilk kararı verirken 17, 10, 20, 18'in peşinden gitmiştik hatırlıyorsanız. Bunlarla 10'u seçtik.
+
+540
+01:41:03,123 --> 01:41:17,863
+Ama bu eğer aynı çıksaydı başka bir seçenekte o zaman diğer ağacın diğer bir bölgesinde de başka bir seçeneğin olası en iyi seçenek olma ihtimali vardı
+
+541
+01:41:17,863 --> 01:41:23,344
+Bizim seçeneğimizde böyle bir ihtimal olmadığı için bu durumda diskas etmemize gerek kalmadı
+
+542
+01:41:23,344 --> 01:41:24,884
+Evet şimdi sorular varsa alayım
+
+543
+01:41:24,884 --> 01:41:26,423
+Rabia
+
+544
+01:41:30,387 --> 01:41:52,047
+bu ağacı çizerken aslında lavabandamızın on üç olduğu B1 işte aslında belli olmuyor mu? Yani C3, D4 ya da C4, D3'ü çizmeden bir önceki adımda aslında on üç olduğu belli olmuyor mu? Çünkü bu ağaç bir aileyle atanmış oluyor.
+
+545
+01:41:52,127 --> 01:41:53,547
+Duyamıyorum söylediğin sesin gidiyor.
+
+546
+01:41:54,947 --> 01:41:56,987
+Özür dilerim ama şimdi genel sesim.
+
+547
+01:41:56,987 --> 01:42:08,827
+Gitli geldi bir sesin var. Şey anladım yani sorun şu B1'i belirledikten sonra bu band 13 C3 ve D4'e niye bakıyoruz sorusunu soruyorsun.
+
+548
+01:42:08,827 --> 01:42:09,907
+Evet hocam.
+
+549
+01:42:10,147 --> 01:42:26,327
+Belli olmuyor şu yüzden biz C3 ve D4'ün 13'e geldiğini yoksa C4 D3'ün mü 13'e geldiğini ya da ikisinden birinin 13 olmama olasılığı var.
+
+550
+01:42:26,327 --> 01:42:55,187
+14'de olabilir. Çünkü burada denk geldi, 13 çıktı. Biraz önce nasıl şurada göstereyim. Şu noktada A'ya 2 attığımız noktada lower bound 10'du. Hani bu noktada karar verdik diyemiyoruz. Ve 10'un çıkma ihtimali var ama çıkmayabilir ki çıkmadı. 13'e geldiğimizde de buranın 13 çıkma ihtimali olmayabilir. Ya da C3-D4 mü C4-D3 kombinasyonunun mu 13 vereceğini de bilmiyoruz.
+
+551
+01:42:55,187 --> 01:42:57,847
+Bu yüzden bu iki kombinasyonu da kontrol etmek zorundayız
+
+552
+01:42:57,847 --> 01:43:01,007
+Tamam hocam, teşekkür ederim
+
+553
+01:43:01,007 --> 01:43:04,267
+Evet, başka sorusu olan var mı?
+
+554
+01:43:21,268 --> 01:43:41,768
+Peki. O zaman başka sorunuz kalmadığına göre şu anda saat 14.46 oldu. 15 dakika sonra laboratuvarınız başlayacak. Bu Branch and Bound ile ilgili bir örnek daha çözeceğim haftaya. Ondan sonra bu konuyu da noktalıyor olacağız.
+
+555
+01:43:41,768 --> 01:43:53,608
+dersle ilgili bugünkü konularla ilgili soru sormak isterseniz son bir kez daha sizlere söz bırakayım. Yoksa yavaş yavaş dersi kapatacağız.
+
+556
+01:43:56,007 --> 01:43:57,468
+Ya da başka bir konuda da olabilir.
+
+557
+01:44:00,208 --> 01:44:01,147
+Merhaba hocam.
+
+558
+01:44:02,448 --> 01:44:08,047
+Hocam kusura bakma da konuyla ilgili bir şey soracaktım da ama biraz konu dışı yani.
+
+559
+01:44:08,207 --> 01:44:11,628
+Hocam ben pek şey anlamamıştım üzerinden geçeceğim de bugün.
+
+560
+01:44:11,768 --> 01:44:20,707
+Best, Best, Branch and Bone diye bir sorusunu. Anlamadığım yerleri maile direkt atabilir miyim size hocam? Çünkü da zaman geçti de şu anda bitmek üzere.
+
+561
+01:44:22,128 --> 01:44:27,848
+Tabii atabilirsin ama uzun bir cevabı varsa önümüzdeki hafta uygulama saatinde sorarsın.
+
+562
+01:44:28,308 --> 01:44:33,327
+Tamam hocam yani üzerinden geçeceğim. Eğer kısa bir şey anlamadıysam sorarım yani.
+
+563
+01:44:33,507 --> 01:44:35,808
+Uzunsa haftaya sorarım. Sorun değil hocam.
+
+564
+01:44:35,808 --> 01:44:36,367
+Nasıl istersen?
+
+565
+01:44:36,367 --> 01:44:36,887
+Teşekkür ederim.
+
+566
+01:44:37,247 --> 01:44:37,827
+Hiç sorun değil.
+
+567
+01:44:41,524 --> 01:44:58,503
+Evet. O zaman birazdan size mail yoluyla online yıldız.dtr üzerinden linki paylaşacağım. Uygulama saati linkini Elif Hoca'nın grubuna bağlanacaksınız.
+
+568
+01:44:59,403 --> 01:45:09,623
+Orada Fatma Nur Hanım size üçüncü ödevle ilgili ilk soru ve ikinci sorunun çözümlerini anlatıyor olacak. Sorularınıza cevap vermeye çalışıyor olacak.
+
+569
+01:45:11,524 --> 01:45:25,443
+saat 3'te lütfen o linke bağlanmaya çalışın. Takip ederseniz faydasını göreceksiniz. Hepinize katıldığınız için teşekkür ediyorum. Güzel bir hafta diliyorum. Kendinize iyi bakın. Sınavlarınızda başarılar, sağlıklı günler arkadaşlar.

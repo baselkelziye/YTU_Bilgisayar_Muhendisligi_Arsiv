@@ -1,0 +1,2091 @@
+1
+00:00:33,844 --> 00:00:35,844
+Teşekkürler.
+
+2
+00:01:21,971 --> 00:01:46,531
+Evet arkadaşlar, merhaba hepinize, hoş geldiniz. Bugün 1 ile 2 arasında bazı konuları birlikte konuşacağız. Bir iki dakika giriş yapacağım arkasından diğer arkadaşlarımıza gelirse en azından yetişmiş olurlar. Bugün öncelikle sınav sorularına hızlıca bakmamız gerekiyor çünkü sınav not ortalaması oldukça düşük.
+
+3
+00:01:46,531 --> 00:02:03,771
+Bir güzel haber vereyim. Bir sorunun şıkkıyla ilgili bir problem yaşanmış sistemde. Şıklı sorulardan bir tanesinin değerlendirmesini yeniden gerçekleştirdim ve çoğunuzun puanı yaklaşık olarak 4 puan düzeyinde yükseldi.
+
+4
+00:02:03,771 --> 00:02:08,951
+Bugün itibariyle Yusos sistemine yeni notlarınızın girişini yapacağım
+
+5
+00:02:08,951 --> 00:02:14,771
+Bu hatadan dolayı sizden özür dilerim
+
+6
+00:02:14,771 --> 00:02:19,591
+Bir şekilde sistemde şık, yanlış yer almış
+
+7
+00:02:19,591 --> 00:02:23,891
+Bu herhalde benim yanlış girmemle alakalıdır diye tahmin ediyorum
+
+8
+00:02:23,891 --> 00:02:26,152
+Kontrollerimi gerçekleştirdim
+
+9
+00:02:26,152 --> 00:02:29,031
+Ve notlarınızı güncelleyeceğim
+
+10
+00:02:29,031 --> 00:02:41,751
+İkincisi bir soruya, dördüncü soruya hemen hemen sınıfın tamamı başka bir çözüm önermiş. Onun doğrusunu bugün konuşmak istiyorum. O yüzden önemli.
+
+11
+00:02:42,351 --> 00:02:49,931
+Dönem projesiyle ilgili de hem sorularınızı alacağım hem de finalde ayrı birkaç cümle edeceğim. Genel olarak dersi ikide tamamlayacağız.
+
+12
+00:02:49,931 --> 00:03:13,951
+Arkasından ikiler siz ve diğer grup bu radan ortak yayından devam ediyor olacaksınız. Ben buradaki linki diğer gruba da atacağım ve ödev kontrolü gerçekleştireceğiz. Ödev kontrolünü de rastgele seçim yapılarak gerçekleşecek. Bu 1 ile 2 arasanız vaktimiz kalırsa düşüncelerinizi alacağım.
+
+13
+00:03:13,951 --> 00:03:26,451
+Şimdi öncelikle hemen bir ekran paylaşımı yapayım. Sorular üzerinden ilerleyelim. Bakıyorum şu anda. Evet.
+
+14
+00:03:32,659 --> 00:03:34,299
+Şu anda görebiliyor musunuz?
+
+15
+00:03:36,099 --> 00:03:37,100
+Gözüküyor hocam.
+
+16
+00:03:37,739 --> 00:03:38,239
+Evet hocam.
+
+17
+00:03:38,539 --> 00:03:41,219
+Tamam, teşekkür ederim. Sınav sorularını görüyorsunuz şu anda.
+
+18
+00:03:41,859 --> 00:03:45,219
+İlk soru, kod parçasında kaç adet toplama işlemi yapılmaktadır?
+
+19
+00:03:45,879 --> 00:03:53,099
+Bu iki çarpı şeklinde ilerleyen bir, ne diyelim, for dönüşsü.
+
+20
+00:03:53,659 --> 00:03:56,479
+K çarpı iki şeklinde artan, kaç defa yapılmaktadır?
+
+21
+00:03:56,479 --> 00:03:59,519
+Log-en karmaşıklığında gerçekleşiyor.
+
+22
+00:03:59,519 --> 00:04:05,259
+8'e gidiyorsanız 3 defa yapılıyor, 16'ya gidiyorsanız 4 defa yapılıyor şeklinde düşünebilirsiniz.
+
+23
+00:04:05,439 --> 00:04:07,979
+Zor bir soru değil, zaten çoğunuz doğru cevap verdiniz.
+
+24
+00:04:08,559 --> 00:04:13,999
+Test kısmında çok büyük bir problem yok ama hızlıca üzerinden geçiyorum ki soruların akıllı bir soru işareti kalmasın.
+
+25
+00:04:15,520 --> 00:04:23,859
+Çakışma probleminin linear probing ile çözüldüğü bir hash tablosunda boş gözler, boş olması evine bağlı olarak empty veya deleted bilgisini çağırmaktadır.
+
+26
+00:04:23,859 --> 00:04:29,559
+tablo yarışımlarında tablo olması için aşağıdaki iki varsayımın doğruluğunu değerlendiriniz.
+
+27
+00:04:30,259 --> 00:04:35,199
+İyince adres deleted, i artı bir empty ise iyince adresi empty olarak işaretlenebilir.
+
+28
+00:04:35,859 --> 00:04:41,299
+Doğru. Çünkü deleted'dan empty olarak bahsediyoruz aslında.
+
+29
+00:04:41,939 --> 00:04:44,659
+Yani deleted noktasını artık kullanabilecek noktaya geliyorsunuz.
+
+30
+00:04:44,659 --> 00:04:47,779
+O zaman orayı empty olarak işaretlememizde herhangi bir sakınca yok.
+
+31
+00:04:48,419 --> 00:04:53,739
+İkinciye bakıyoruz. İyince adresi deleted ve i artı bir adresinde doğru adresi yerleşmiş bir eleman
+
+32
+00:04:53,740 --> 00:05:03,119
+varsa, diğinci adres empty olarak işaretlenebilir diyoruz. Bu teknik olarak doğru değil, yanlış.
+
+33
+00:05:03,340 --> 00:05:11,719
+İğinci adresin direkt işaretlendiği bir yerde i artı bir empty değilse doğru yerleşmiş bir eleman varsa aradan bir eleman silinmiştir.
+
+34
+00:05:11,719 --> 00:05:17,719
+Bu da sizin arama yapmaya devam ettiğinizde empty yazarsanız aramanızı engelleyecektir.
+
+35
+00:05:17,920 --> 00:05:22,240
+O yüzden buranın direkt olarak kalması gerekiyor, empty olarak düzeltilmemiz gerekiyor.
+
+36
+00:05:22,239 --> 00:05:35,239
+bu da ikinci şıkkın yanlış olduğunu bize söylüyor. Gelelim üçüncü soruya 2N3-7N1 için aşağıdakilerden hangi gösterim kullanılamaz diyoruz.
+
+37
+00:05:36,139 --> 00:05:48,499
+O, N3, Big-O diyebiliriz. Big-Teta, N3 diyebiliriz. Big-O, N4 de diyebiliriz. Yani genelde kullanmasak da daha yüksek upper bound gösterdiği için
+
+38
+00:05:48,499 --> 00:06:02,479
+n4 olarak da ifade edilebilir buradaki algoritmanın karmaşıklığı. Big-O, Omega n diyebilir miyiz? Alt-Band olarak n küpten daha düşük olduğu için diyebiliriz. O zaman hepsi kullanılabilir cevabı doğru cevap olacaktı.
+
+39
+00:06:04,079 --> 00:06:10,320
+Sorularda eğer herhangi bir sorunuz olursa soru esnasında çözümü tamamladıktan sonra sorabilirsiniz.
+
+40
+00:06:10,320 --> 00:06:21,780
+Bir hash tablosunu hxxmodon fonksiyonelinde sayılar yerleştiriliyor. 6 adım sonra tablo aşağıdaki gibi olduğuna göre sayılar hangi sırayla tabloya yerleştirilmiştir?
+
+41
+00:06:21,780 --> 00:06:28,159
+Birlikte yapalım. Farklı gidişat yolları var ama ben şıklar üzerinden gidebileceğinizi vansayarak sorayım.
+
+42
+00:06:28,620 --> 00:06:37,900
+46 6'ya yerleşmiş, 42 2'ye yerleşmiş, 34 4'e yerleşmiş, 52 gelmiş, 42'ye yerleşmesi gerekiyor, yerleşmemiş.
+
+43
+00:06:37,899 --> 00:06:59,659
+Eğer böyle olsaydı 3'e yerleşecekti 52 ama burada 23 var doğru değil 34 gelmiş, 34 yani 42 gelmiş, 42'ye yerleşmiş, 23 gelmiş, 52 de doğru yerleşmiş, 33 gelmiş, 33 aslında 4 tanesi yerleşmişti 46'nın yerine yerleşmesi gerekiyordu
+
+44
+00:06:59,659 --> 00:07:10,639
+doğru değil. C'ye geliyorum. 46, 6'ya yerleşmiş. 34, 4'e yerleşmiş. 42, 2'ye yerleşmiş. 23, 3'e yerleşmiş.
+
+45
+00:07:11,040 --> 00:07:33,259
+52, normalde 2'ye yerleşmesi gerekiyordu. 23 var, 34 var. İlk olarak 5'e yerleşmiş. Ondan sonra da 33 gelmiş, 3'e yerleşmesi gerekiyordu. Hepsi dolu olduğu için 7'ye yerleşmiş. Yani bu şekilde tabloya yerleştirmiş olduğunu ortaya koymuş oluyoruz. Diğerleri D ve E'yi kontrol ettiğiniz zaman da hatalı olduğunu göreceğiz.
+
+46
+00:07:33,259 --> 00:07:40,299
+Yerelim aşağıdakilerden kaç tanesi iki erge ötmanın ve yönelik yönden karşılaştırmasında kullanılan metrikler arasında yer alabilir demişiz.
+
+47
+00:07:40,299 --> 00:07:53,239
+Bu muhtemelen en çok hata yapılan soru diye tahmin ediyorum. Bu noktada hemen birinize sorayım hangisi doğru cevap olacak ya da tek tek üzerinden geçebilir.
+
+48
+00:07:57,684 --> 00:07:58,943
+Cevap vermek isteyen var mı?
+
+49
+00:08:05,843 --> 00:08:07,464
+Ben cevap verebilir miyim hocam?
+
+50
+00:08:07,503 --> 00:08:08,783
+Lütfen, tabii ki.
+
+51
+00:08:09,723 --> 00:08:21,304
+İşte karşılaştırmada yer karmaşıklığı hesaplıyoruz, zaman karmaşıklığı, alışma süresi ve büyüme derecesi.
+
+52
+00:08:21,403 --> 00:08:29,803
+Evet, aynen öyle. Bu dört tanesi olacaktı. Burada verilen input sayısının iki algoritmanın karşılaştırmasıyla bir alakası yok.
+
+53
+00:08:29,803 --> 00:08:35,563
+Kod uzunluğunun da iki algoritmanın verimlilik yönünden karşılaştırılmasıyla bir alakası yok arkadaşlar.
+
+54
+00:08:35,563 --> 00:08:47,364
+cevap 4 olacaktı. Gelelim bu soruya. Bu sorunun cevabı bir şekilde nasılsa E olarak işaretlenmiş herhalde. Ben bir hata yaptım bilemiyorum yani A işaretlediğimi hatırlıyorum ama
+
+55
+00:08:47,364 --> 00:09:01,024
+en elemanlı ikili ağacına eleman yerleştirme işleminin karmaşıklık enkirt durumda nedir? Cevap N olacaktı. Ağacın bir tarafa yığılma ihtimalini göz önünde bulundurursak
+
+56
+00:09:01,024 --> 00:09:09,643
+burada şıktaki hatadan kaynaklanan puan da size geri iade etmiş oldum.
+
+57
+00:09:10,324 --> 00:09:18,543
+Bu soruda da sequential, quick, merge, insert ve heap şeklinde dizilmesi gerekiyordu.
+
+58
+00:09:18,543 --> 00:09:26,543
+En içlerinde zor olan ve bir arkadaşınızın şöyle bir eleştirisi vardı ki bunu değerlendirebiliriz.
+
+59
+00:09:26,543 --> 00:09:56,523
+değerlendirebiliriz. Hani sıralı diziler biraz daha dizilerin burada bulunan halleri biraz daha az sayıyla verilseydi ya da yatayda verilseydi dikeyde görmemiz genelde hep yataya alışkın olduğumuz için bizi biraz zorladı demişti. Bundan dolayı belki öyle verilebilirdi. Bu noktada mesela ortadakine baktığınız zaman olması gereken bu arada birinci sütün sırasız diziyi, yedinci sütün de sıralı diziyi gösteririz.
+
+60
+00:09:56,543 --> 00:10:21,103
+En ortadakine bakalım, en ortadakinde ne görüyorsunuz? Şu noktaya kadar sıralı olduğunu ve şu noktadan sıralı olduğunu görüyorsunuz. Zaten bu otomatikman tek harekette bunun bir merge sort olabileceğini yani ikili birleştirmeler sonucunda bu noktaya gelmiş olabileceğini gösteriyor bize. Otomatikman merge sort'u buraya yazıyoruz.
+
+61
+00:10:21,103 --> 00:10:35,043
+Peki diğerlerinde ne yapabilirdik? Mesela Insurgent Sort'u nasıl anlayabiliriz diye bir bakalım. Insurgent Sort da şuradaki. Ne söyleyebilirsiniz?
+
+62
+00:10:46,259 --> 00:10:56,640
+Bir yorum olan var mı? Yoksa ben söyleyeyim. Burada gördüğünüzde dizi zaten her adımda sıralı bir şekilde ilerlemiş, ilerlemiş, ilerlemiş, ilerlemiş.
+
+63
+00:10:56,799 --> 00:11:06,479
+Sıralı, sıralı devam ediyor. En son şu noktada 86 henüz yerine yerleşmemiş. Bunu görüyorsunuz. 57 henüz yerine yerleşmemiş, 83 henüz yerine yerleşmemiş.
+
+64
+00:11:06,479 --> 00:11:15,639
+Ama buraya kadar her adımda sıralı bir şekilde ilerlediği için bunun da bir insertion sort olabileceğini ortaya koyuyorsunuz.
+
+65
+00:11:16,259 --> 00:11:25,100
+Gelelim diğer tarafa. Burada bir tane Selection Sort var. Bu Selection Sort ile ilgili ne söyleyebiliriz?
+
+66
+00:11:31,539 --> 00:11:50,079
+ya da QuickSort'la ilgili de yorum yapabilirsiniz. Heap'i en sonra bıraktım çünkü zaten Heap'i belki anlamak biraz daha size zor geliyor olabilir. Şuradaki bahsettiğim. Aslında onun da bir yöntemi var ama en azından sonra kalsın diye. Selection'a bakalım.
+
+67
+00:11:50,079 --> 00:12:00,259
+burada 11, 18, 22, 28, 30, 37, 39, 50, 56, 57, 58, 60.
+
+68
+00:12:00,259 --> 00:12:08,439
+Bundan sonra 92, 66, 78 yani burada ne devam ediyor şu noktadan itibaren?
+
+69
+00:12:09,019 --> 00:12:13,039
+Aynı sırada devam etmiyor. Biraz önceki Insurgeon Sort da aynı sırada devam ediyordu.
+
+70
+00:12:13,039 --> 00:12:23,139
+Yani aralarındaki temel farklılık, insertion sortta siz doğrudan sırayı kaybetmeden öteki elemanlar arka planda dizili bir şekilde kalıyorlardı
+
+71
+00:12:23,139 --> 00:12:26,159
+Sırası gelen olduğu yere yerleşiyordu
+
+72
+00:12:26,159 --> 00:12:27,959
+Burada ise böyle bir durum yok
+
+73
+00:12:27,959 --> 00:12:32,999
+Burada küçükten büyüğe gelmiş, buraya kadar ilerlemiş 92
+
+74
+00:12:32,999 --> 00:12:38,440
+Buradan sonraki sayılar belli bir noktaya kadar taşınmış yukarı kadar
+
+75
+00:12:38,440 --> 00:12:44,420
+o noktada kendilerine sıra geldikten sonra olması gereken yerlere yerleşmesi gerekiyor.
+
+76
+00:12:44,720 --> 00:12:47,700
+Sequential sort'a da bu şekilde karar veriyorsunuz.
+
+77
+00:12:47,740 --> 00:12:49,459
+En fazla süre harcanacak soru buydu.
+
+78
+00:12:50,099 --> 00:12:54,220
+Ama en kolay bariz anlaşılabilir olanı merge sort'tu.
+
+79
+00:12:54,859 --> 00:12:56,819
+Hemen arkasından insertion sort vardı.
+
+80
+00:12:56,819 --> 00:13:03,179
+Zaten bunları çıkarttıktan sonra geriye kalan seçenekleri tespit etmek çok daha kolay hale geliyor.
+
+81
+00:13:05,539 --> 00:13:07,700
+Evet bu kısımla ilgili sorusu olan var mı?
+
+82
+00:13:12,019 --> 00:13:18,159
+23 puanlık bir kısımdı. Peki, o zaman...
+
+83
+00:13:18,159 --> 00:13:19,799
+Hocam, ben soru sorabilir miyim?
+
+84
+00:13:20,499 --> 00:13:21,320
+Evet, sorabilirsin.
+
+85
+00:13:21,679 --> 00:13:29,579
+Söz almadım ama tam son anda şey yaptım. Bu, ben de sistemde baştan beri doğru gözüküyor da, benim puanım ilk baştan beri 53'tü mesela.
+
+86
+00:13:29,759 --> 00:13:34,120
+Şimdi siz ekledim dediniz, daha sonra güncelleyeceğim dediniz ama orayı ben tam kaçırdım.
+
+87
+00:13:34,879 --> 00:13:38,079
+Yani ben de en gözüküyordu doğru cevap sistemde en baştan beri.
+
+88
+00:13:38,079 --> 00:14:05,899
+Doğru cevap. Yanlış olan soru vardı ya. Evet. O bende baştan beri N gözüküyordu ama sonra onun cevabı mı değişti? Hayır. Yani A şıkkı olarak mı gözüküyordu? Cevap N olarak gözüküyordu. Nerede gözüküyor bu? Şimdi sistemde yani. Şu an yanıtladığınız yapları. Evet. Gerçek cevap. Yok doğru cevap. Bir dakika. Tekrardan bakayım. Ben şeyi anlayamadım.
+
+89
+00:14:05,899 --> 00:14:31,579
+Bu cevabın N olması gerekiyor ama burada şıklarda gördüğünüz E olarak bir şekilde gözüküyor. Ben A işaretlediğimi hatırlıyorum. Şıklar sanırım karmaşık geliyor da ben galiba karıştırmışım bizde verilen cevaplar görülüyor. Sizde karışık geldiği için önü gözüküyordur. Ben de şu anda bu puanlamaları hepsini hesapladım. Sadece yüzsüse güncelleme yapacağım. O kadar.
+
+90
+00:14:31,579 --> 00:14:32,880
+Tamam mı? Kusura vermeyelim.
+
+91
+00:14:32,999 --> 00:14:48,579
+Yok sorun değil. Evet sanırım bu kısmı çok zor olmayan bir kısımdı. Bir tane soru biraz zordu. Biraz göz analizi gerektiriyordu. Gelelim şimdi bir sonraki kısma.
+
+92
+00:14:50,579 --> 00:14:52,839
+Share your screen diyelim. İkinci bölüm.
+
+93
+00:14:55,399 --> 00:14:59,639
+Evet şimdi kendi görüntümü de arka plandan alayım.
+
+94
+00:15:01,579 --> 00:15:06,919
+Evet, şimdi daha belki sıkıntısız olur. Geçen gün çünkü Zoom'la ilgili bir sıkıntı yaşamıştım.
+
+95
+00:15:09,259 --> 00:15:27,479
+Şimdi ilk kısma başlayalım. Birinci soru. Birinci soruda baktığınızda sadece fonksiyonların birbirlerine göre büyüme derecelerini karşılaştırarak ne yazmamız gerektiği yer alıyordu.
+
+96
+00:15:27,479 --> 00:15:32,479
+Burada birinci sorunun birinci şıkkıyla başlayalım.
+
+97
+00:15:33,119 --> 00:15:36,999
+Buraya sadece O, Theta ve Omega'dan bir tanesi yazılacaktı.
+
+98
+00:15:36,999 --> 00:15:41,059
+Farklı farklı cevap verenler var. Onlara maalesef doğru cevabı olmadı.
+
+99
+00:15:41,819 --> 00:15:47,599
+Bunları kendi içlerinde yani anlayamadığım şekilde yorumlayanlar olmuş.
+
+100
+00:15:47,739 --> 00:15:54,059
+Buraya Fn eşittir, Omega, Gn ise birinci sütüne Omega yazınız diye bir örnek verdik.
+
+101
+00:15:54,139 --> 00:15:57,439
+Bunun dışında cevap verenler vardı. Lütfen bunlara dikkat edelim.
+
+102
+00:15:57,479 --> 00:16:13,999
+buradaki açıklamalara. Burada ilk kısmı ne yazacağız? N kareden büyük olduğu için O yazacağız. Fn eşittir. Ogn olacak. Orada da n kare eşittir. O n küp olacak. Bu yüzden buraya O yazacağız.
+
+103
+00:16:13,999 --> 00:16:41,299
+Bu şekilde açık şekilde yazanlarınkini de doğru kabul ettim ama farklı şekilde yazanlar da var. Buraya gelelim. Burada n log n'den küçük olduğu için buraya Omega yazmamız gerekiyor. 1, 2 artı sin e, sin n. Buraya ne yazacağız? Bunu ben size sorayım. Çünkü burada hata çok yapılmıştı.
+
+104
+00:16:43,999 --> 00:16:46,679
+Doğru yaptığını düşünen biri hemen söyleyebilir
+
+105
+00:16:51,604 --> 00:17:14,944
+Peki, ısrarcı olmayacağım. Siz nasıl uygun görüyorsanız. 1, 2 artı sin n'den dolayı n ne olursa olsun burada geleceği aralık sabit bir sayı olduğu için, iki sabit sayının toplamında bir sabit sayı olacağı için n'e bağlı olarak bir şey değişmeyecek. İkisi de birbirine eşit olduğundan dolayı buraya Theta yazılması gerekiyordu. Tekrar ediyorum.
+
+106
+00:17:14,944 --> 00:17:36,784
+sin-n'e, n-n'e yazarsanız yazın buradan sabit bir sayı gelecek. O yüzden yapacak bir şey yok. Theta olacak. O olmayacak bir arkadaşınız chatten yazmış. Theta olacak. Hemen bir sonrakine geçiyorum. Bir sonrakinde n-logen var. n-150 bölü 100 var. O da n üzeri bir buçuk demek.
+
+107
+00:17:36,784 --> 00:17:44,364
+n üzeri bir sayı olması sebebiyle doğal olarak logenden daha büyük bir çarpan olarak işin içine dahil oluyor.
+
+108
+00:17:44,364 --> 00:17:53,483
+O yüzden buraya n-logen eşittir. O n üzeri 150 bölü 100 yazmamız gerekiyordu. Yani burası Big-O olacaktı.
+
+109
+00:17:55,563 --> 00:18:03,803
+Burada logaritma kök 10 çarpı n görüyorsunuz. Logaritma n küp var. n küpün 3'ü doğal olarak başa geçer.
+
+110
+00:18:03,803 --> 00:18:15,323
+üstünden aldığınızda 3x log n olur. 3x bir sabit olduğu için 3 doğal olarak bunu atabiliriz. İçerisindeki her ikisi de kök 10'da bir sabit olduğu için onu da atabiliriz.
+
+111
+00:18:15,983 --> 00:18:20,003
+Log n olarak kalır iki tarafta. O yüzden burası Big Theta olacaktı.
+
+112
+00:18:20,004 --> 00:18:42,724
+Yine en çok yapılan yanlışa geldik. Son kısımdaki sorduğumuz eşitlik. N faktoriyel ve N artı bir faktoriyel var. N artı bir çarpı N faktoriyeldir. N faktoriyelleri sadeleştirdiğiniz zaman sağ tarafta N artı bir kalacaktır.
+
+113
+00:18:42,723 --> 00:18:49,063
+n-1'de 1 sabitinden daha büyük olduğu için doğal olarak buranın cevabı da Big-O olacaktı.
+
+114
+00:18:49,563 --> 00:18:54,883
+Bu soruların cevabını da bu şekilde vermeniz bekleniyordu sizden. 6 puanlık bir soruydu.
+
+115
+00:18:58,143 --> 00:19:00,923
+Bu test bölümüyle ilgili bir şey söylemeyi unuttum.
+
+116
+00:19:00,923 --> 00:19:10,923
+2 yanlış bir doğruyu götürüyordu normalde ama sınav sonuçlarınız oldukça düşük olduğu için ben 3 yanlış bir doğruyu götürecek şekilde hesaplamaları yaptım.
+
+117
+00:19:10,923 --> 00:19:38,423
+yaptım. Sizin lehinize olacak şekilde. Belki çok büyük bir puan size katkı sağlamıyor ama en azından bir iki puan daha notlarınızın yüksek olmasına katkı sağlamış oldu böyle bir çözüm oluşturduğumuzda. Gelelim rekürans bağıntılarını adımları göstererek çözünüz dediğimiz soruya. Burada şimdi bir ekranda yapalım isterseniz bu kısmı.
+
+118
+00:19:38,423 --> 00:19:42,503
+hemen bir ekran açacağım.
+
+119
+00:19:53,299 --> 00:19:54,179
+Mduvodur, yel.
+
+120
+00:20:11,827 --> 00:20:13,827
+henüz açmadım, açılıyor ekranım
+
+121
+00:20:27,667 --> 00:20:34,648
+Evet, şimdi bu noktada ekranı paylaşmak üzereyim.
+
+122
+00:20:42,644 --> 00:20:44,203
+Share screen diyelim.
+
+123
+00:20:46,543 --> 00:20:46,863
+Evet.
+
+124
+00:20:48,243 --> 00:20:49,923
+Sanırım şu anda gelmiş olması lazım.
+
+125
+00:20:52,763 --> 00:20:55,064
+Sorumuz neydi? Sorumuzu hatırlayalım.
+
+126
+00:20:59,064 --> 00:21:04,003
+xn eşittir. xn-1 artı 5.
+
+127
+00:21:04,003 --> 00:21:13,223
+bir de size verilmiş olan 4n büyüktür 1x1 0 olarak verilmişti.
+
+128
+00:21:13,223 --> 00:21:16,943
+Bu noktada backward substitution uygulamanız bekleniyordu.
+
+129
+00:21:17,563 --> 00:21:22,324
+xn eşittir, xn-1 artı 5 ile başlayalım.
+
+130
+00:21:22,403 --> 00:21:30,684
+xn-1'in yerine xn-2, pardon şunu düzgünce yazayım.
+
+131
+00:21:30,683 --> 00:21:56,383
+xn-2 artı 5 yazacağım. Buraya da artı 5 yazacağım. Buradan xn-2 artı 5 çarpı 2 diyebilirsiniz. Bunun yerine tekrar bir geriye dönük yerleştirme yapıyorum. Bu sefer xn-3 artı 5 diyorum.
+
+132
+00:21:56,383 --> 00:22:20,203
+Bu sefer artı 5 çarpı 2 vardı burada. Buradan xn-3 artı 5 çarpı 3 gelecek. Bu şekilde devam ettiğinizde bizim şöyle bir genelleştirme yapılabileceğini ortaya koymuş oluyoruz. Artı 5 çarpı i.
+
+133
+00:22:20,203 --> 00:22:49,023
+Devam edelim. Hemen bu noktada x1'e ihtiyaç duyuyoruz. Bizim initial condition'ımız bu. x1 elde edebilmek için i'nin yerine n-1 koymamız gerekiyor. O zaman burası x1 oluyor. Artı 5 çarpı n-1. Burası 0. Bu noktadan 5 n-5 elde ediyoruz.
+
+134
+00:22:49,023 --> 00:22:50,843
+buraya böyle yazanlar da vardı.
+
+135
+00:22:51,364 --> 00:22:56,123
+Bu şekilde yaptığınız zaman soruyu doğru bir şekilde çözmüş oluyorsunuz.
+
+136
+00:22:59,183 --> 00:23:01,483
+Evet, burası ile ilgili sorusu olan var mı?
+
+137
+00:23:05,940 --> 00:23:06,299
+Peki.
+
+138
+00:23:10,139 --> 00:23:13,639
+Şu kısmı şöyle sileyim.
+
+139
+00:23:15,579 --> 00:23:18,919
+İkinci şıkkı, B şıkkını yazayım.
+
+140
+00:23:19,739 --> 00:23:24,479
+T, N, bu da kolay bir aslında soruydu görece.
+
+141
+00:23:24,899 --> 00:23:25,940
+4, N bölü 2.
+
+142
+00:23:27,059 --> 00:23:32,620
+Aslında bu sorular da çok büyük bir sıkıntı yok bir kısmınızda.
+
+143
+00:23:33,479 --> 00:23:35,860
+Bu da T1 eşittir, 1 olarak verilmiştir.
+
+144
+00:23:35,860 --> 00:24:04,719
+Peki biz burada master teoremden de faydalanabiliriz. Backward substitution'dan da faydalanabiliriz. Her ikisi de mümkün. Master teoremi kullandığımızı varsayarsak buradan A eşittir 4, B eşittir 2, D eşittir 2. 4 nereden? A şurası. 2 bize nereden geliyor? 2'ye bölerek B burası. Peki şuradaki kareden dolayı 2 de buraya geliyor. N kare şeklinde ifadeden dolayı D de 2 oluyor.
+
+145
+00:24:04,719 --> 00:24:22,940
+Burada master teoremde hatırlarsanız A üzeri yani A eşittir B üzeri D'nin karşılığı vardı. O da neydi? N üzeri B. Ne yazacaktık buraya? Hatırlayan var mı?
+
+146
+00:24:30,003 --> 00:24:31,003
+Dok?
+
+147
+00:24:40,852 --> 00:24:42,531
+Log A
+
+148
+00:24:47,059 --> 00:24:49,399
+Böyle mi yazacaktık arkadaşlar? Hatırlayan var mı?
+
+149
+00:24:52,099 --> 00:24:54,679
+Peki, o zaman doğrudan sonucu yazalım.
+
+150
+00:25:06,420 --> 00:25:12,119
+n kare log n olması gerekiyordu.
+
+151
+00:25:12,119 --> 00:25:14,939
+Evet.
+
+152
+00:25:18,420 --> 00:25:20,420
+Başka sorusu olan var mı?
+
+153
+00:25:20,420 --> 00:25:22,420
+Bu kısımla ilgili.
+
+154
+00:25:26,067 --> 00:25:29,548
+Hocam bir şey soracaktım. Soru da Enkare miydi?
+
+155
+00:25:30,647 --> 00:25:38,207
+Tabii ki. Şöyle yazıyordu sanırım. En, iki yazıyordu. Göstereyim hemen bir saniye.
+
+156
+00:25:38,207 --> 00:25:38,927
+Evet.
+
+157
+00:25:43,155 --> 00:25:49,975
+paylaşayım ekrana. Share screen diyelim. Sorumuz nerede?
+
+158
+00:25:54,036 --> 00:25:54,755
+Son, yeah.
+
+159
+00:26:02,612 --> 00:26:32,591
+Altyazı M.
+
+160
+00:26:15,124 --> 00:26:18,443
+arzundan paylaştığımı.
+
+161
+00:26:31,796 --> 00:26:35,276
+Şu anda zoom ekranını kaybetmiş durumdayım.
+
+162
+00:26:57,236 --> 00:26:58,315
+Şu an beni duyabiliyor musunuz?
+
+163
+00:27:00,395 --> 00:27:02,136
+Evet hocam.
+
+164
+00:27:02,136 --> 00:27:10,135
+Peki ben şu an ekranla ilgili bağlantımı kaybetmiş durumdayım. Bir saniyenizi rica ediyorum.
+
+165
+00:27:17,587 --> 00:27:20,527
+Evet, şu an sorun çözüyor. Şu an görüyor musunuz?
+
+166
+00:27:23,347 --> 00:27:24,647
+Evet hocam.
+
+167
+00:27:24,667 --> 00:27:26,987
+Tamam, burada N2 yazıyor.
+
+168
+00:27:29,847 --> 00:27:30,907
+İki yani yazmıyor.
+
+169
+00:27:31,807 --> 00:27:33,147
+İki N yazmıyor. Peki.
+
+170
+00:27:33,848 --> 00:27:40,227
+Ama bu iki N şeklinde çözen olduysa ve bunu doğru bir şekilde çözdüysa tabii onunla ilgili de gerekli işlem yapılmıştır ama bu.
+
+171
+00:27:40,407 --> 00:27:44,747
+Evet çünkü ben öyle yani çözdüm şey, Ankara diye çözmedim ki.
+
+172
+00:27:44,747 --> 00:27:57,247
+Ama burada yani şunu gördüğünüz zaman bunun iki en olma ihtimali yok çaza ama tabii ki bununla ilgili bir kez daha geriye dönük olarak bir kontrolümü yaparım herhangi bir aksaklık varsa düzeltirim
+
+173
+00:27:57,247 --> 00:27:57,628
+Tamam
+
+174
+00:27:57,628 --> 00:28:04,928
+Burada bir typo hatası olmuş en üzeri iki şekilde gözükmemiş ama sınıfın büyük bir çoğunluğu zaten bunu en kare olarak almış
+
+175
+00:28:04,928 --> 00:28:11,308
+Şimdi bu kısmı da yaptık bence iki soruda çok üzerine duracağımız bir şey yoktu
+
+176
+00:28:11,307 --> 00:28:15,367
+Gelelim iki ayrı dizide verilen iki kümenin kesişim kümesini
+
+177
+00:28:15,367 --> 00:28:20,667
+Hashing yöntemiyle bulan algoritmanın standart C dilinde tam programını yazınış
+
+178
+00:28:20,667 --> 00:28:24,347
+Hash tablosunda çakışma probleminin linear probing yaklaşımıyla çözünüz
+
+179
+00:28:24,347 --> 00:28:29,207
+Evet, şimdi burada böyle uzun uzadıya kod üzerinden gitmeyeceğim
+
+180
+00:28:29,207 --> 00:28:38,267
+Çünkü bu soru derste yaptığımız hani hash yöntemleri, linear probingin nasıl yapılacağını da algoritmik olarak gösterdiğimiz bir soruydu
+
+181
+00:28:38,268 --> 00:28:50,007
+Ben her iki soruda da, üçüncü ve dördüncü soruda da, dördüncü soruda bir kod paylaşımı yapacağım ama özellikle yaklaşımlarınızla ilgili birkaç şey söylemek istiyorum
+
+182
+00:28:50,007 --> 00:28:56,848
+Birincisi, birinci diziye yerleştirirken, birinci diziyi yerleştirirken, hashleme yapmanız gerekiyordu
+
+183
+00:28:56,848 --> 00:29:04,467
+Dikkat etmeniz gereken noktalar nelerdi? Bir, doğru bir ne seçmeniz gerekiyordu? Hash tablosu boyutu seçmeniz gerekiyordu
+
+184
+00:29:04,467 --> 00:29:07,207
+Burada da asan sayı seçmiş olmanız önemliydi
+
+185
+00:29:07,207 --> 00:29:32,028
+İkincisi, burada bir elemanı yerleştirirken null olmadığı sürece bakmanız önemli. Her seferinde artı bir arttırmanız gerekiyor. Bunu rekürsif yapanlar var, iteratif yapanlar var, problem değil. Bunu fonksiyonlara bölenler var, o da problem değil ama hashleme, hash fonksiyonu kullanmadan yapanlar var.
+
+186
+00:29:32,028 --> 00:29:39,388
+doğal olarak bundan puan kırıldı. Mutlaka hash işlemleri için hazır fonksiyon kullanmayınız diye buraya not düşmüştük.
+
+187
+00:29:40,308 --> 00:29:48,128
+En yüksek alınan puan zaten üçüncü sorudan geldi. Ama burada bir şey kontrolü yapılmıyor ilk yerleştirirken.
+
+188
+00:29:48,128 --> 00:29:54,608
+Acaba tablo dolu mu değil mi kontrolü? Bunun kontrolün yapılması gerekiyordu. En çok yapılan tablardan bir tanesi bu.
+
+189
+00:29:54,607 --> 00:30:15,627
+elemanları yerleştirdiniz. Yerleştirdikten sonra ikinci dizinin elemanlarını tekrar hashleme yoluyla ilk yerleştirdiğiniz hash tablosunda aramanız gerekiyordu. Nasıl arayacaktınız? Aynı mantık. Hash fonksiyonundan geçireceksiniz. Ürettiğiniz değere bakacaksınız.
+
+190
+00:30:15,627 --> 00:30:41,787
+Null görene kadar çünkü linear programming demiştik eşit değil mi diye bakmanız lazım elemana. Eşit değilse devam edeceksiniz. Nereye kadar? Null görene kadar. Yine tüm tabloyu dönme ihtimalinize hesaba katacaktınız. Eğer tüm tabloyu arayıp tablo doluysa hiç siz elemanı bulamadıysanız çıktıktan sonra mutlaka neden dolayı çıktığınızı kontrol etmeniz gerekiyordu.
+
+191
+00:30:41,787 --> 00:31:07,187
+Birçok kişi de çıktıktan sonra kontrol yapılmamış bu hatayla karşılaştım. İkincisi arama yaparken null görene kadar arama yapılmamış bu hatayla karşılaştım. Ya da null görene kadar ilerlenmiş ama elemana eşit mi değil mi diye bakılmamış gibi problemler vardı. Bir de linkli listeyle çözenler var.
+
+192
+00:31:09,556 --> 00:31:25,535
+herhangi bir şekilde böyle bir separate chaining sizden istememiştik. Tabii doğal olarak onlar da düşük puan almış oldular. Bu sorunun genel olarak sınavın en iyi çözülmüş sorusu olduğunu söyleyebilirim.
+
+193
+00:31:25,535 --> 00:31:29,495
+Bir de şunu vurgulamak istiyorum
+
+194
+00:31:29,495 --> 00:31:33,556
+Bu sorduğumuz sorularda C kodu istiyoruz
+
+195
+00:31:33,556 --> 00:31:35,736
+Çalışması çok iyi olur
+
+196
+00:31:35,736 --> 00:31:40,955
+Ama çalışmasından önce sınav süresinde bu final içinde geçerli
+
+197
+00:31:40,955 --> 00:31:47,636
+Yazdığınız kodun algoritmik kısmının doğru olması
+
+198
+00:31:47,636 --> 00:31:53,115
+Kodun sintaks hatalarından ya da ufak tefrik hatalardan çalışmamasından daha önemli
+
+199
+00:31:53,115 --> 00:31:54,956
+Bu noktaya dikkat çekeyim
+
+200
+00:31:54,955 --> 00:32:00,115
+odaklanmanız gereken yer algoritmik kısmı.
+
+201
+00:32:00,755 --> 00:32:09,335
+Ufak tefek sintaps hataları ya da C'deki bazı hatalar puan kırma noktasında en son baktığımız nokta.
+
+202
+00:32:09,395 --> 00:32:11,775
+Orada da çok büyük bir puan kırmaya gitmiyoruz.
+
+203
+00:32:11,855 --> 00:32:16,276
+Ama mesela dördüncü soruda hiç strakta oluşturmadan yapanlar var soruyu.
+
+204
+00:32:16,755 --> 00:32:17,435
+Yani almış.
+
+205
+00:32:17,556 --> 00:32:20,875
+Mertzort'u doğrudan bir diziye implement etmiş.
+
+206
+00:32:21,335 --> 00:32:23,295
+Bunlardan tabii ki doğal olarak puan kırıldı.
+
+207
+00:32:23,295 --> 00:32:26,276
+çünkü orada bir strakt oluşturmanız bekleniyordu.
+
+208
+00:32:26,975 --> 00:32:28,475
+Şimdi dördüncü soruya geçeceğiz.
+
+209
+00:32:29,615 --> 00:32:31,215
+Üçüncü soruyla ilgili soru sola var mı?
+
+210
+00:32:39,092 --> 00:32:48,231
+üçüncü soruyla ilgili merak ettiği bir husus olan var mı? Peki yok. Şimdi dördüncü sorudayız arkadaşlar.
+
+211
+00:32:52,948 --> 00:33:12,567
+Dördüncü soru da sizden en tane yarışmacının koşu sırasındaki elde ettikleri bitirme süreleri göz önünde bulundurarak hangisinin altın madalya kazandığını bulmanız isteniyordu.
+
+212
+00:33:14,487 --> 00:33:20,487
+Yapılan çözümlerin esas ana kısmına geçmeden önce çok önemli bir kısmı söylemek istiyorum.
+
+213
+00:33:20,487 --> 00:33:29,367
+hangi çözümü yapmış olursanız olun sizden altın madalya kazanan yarışmacının bilgileri isteniyor.
+
+214
+00:33:30,808 --> 00:33:40,808
+Çoğu kişi diziyi sıralama yöntemini seçmiş ve bütün sıralanmış koşucuların bilgilerini ekrana yazdırmış.
+
+215
+00:33:40,808 --> 00:33:44,247
+Bu istenilen bilgi değil.
+
+216
+00:33:44,247 --> 00:33:46,507
+sıralamış olabilirsiniz.
+
+217
+00:33:47,327 --> 00:33:52,427
+Sıraladıysanız hangi yarışmacının altın madalyayı kazandığını bizzat söylüyor olmanız lazım.
+
+218
+00:33:53,527 --> 00:33:58,967
+Sıraladıktan sonra bütün hepsini ekana yazdırmak sorunun doğru cevabını vermek anlamına gelmiyor. Bu bir.
+
+219
+00:33:59,628 --> 00:34:11,727
+İki, bir, dizinin maksimumunu ya da minimumunu bulmamız gerekiyor aslında bu soruda.
+
+220
+00:34:11,727 --> 00:34:21,427
+Altın madalyayı kazanan kişi demek birinci olmuş demek. O yüzden en kısa süreyi yapmış olması demek. En kısa süreyi yapmış olması demek de nasıl hesaplanır?
+
+221
+00:34:21,427 --> 00:34:37,267
+Saat, dakika ve saniyeyi aynı türe çevirirsiniz. Saniye bazında en küçük değere sahip olan koşucunun sırt numarası üzerinden o koşucunun altın madalyayı kazandığını rahatlıkla söyleyebilirsiniz.
+
+222
+00:34:37,267 --> 00:34:44,388
+Bu bir minimum bulma problemi. Bir veri sitinde minimum bulma işlemi için biz ne yapıyoruz?
+
+223
+00:34:48,019 --> 00:34:56,919
+normalde. Divide and Confure kullanma sevgı. Buna herhalde cevap verebilirsiniz diye tahmin ediyorum.
+
+224
+00:34:58,579 --> 00:35:01,379
+Hocam sıralama ne düşünüyorum? Herhalde dördür.
+
+225
+00:35:02,799 --> 00:35:06,419
+Bir tur dönerek bir değişken de minimum tutabiliyoruz normalde.
+
+226
+00:35:06,499 --> 00:35:16,319
+Evet, bu kadar. Siz bu işi Brute Force'da yapmış olsaydınız, bir turda elinizdeki elemanlara bakarak,
+
+227
+00:35:16,319 --> 00:35:23,439
+yani aslında sıralamanın ilk turu. En büyük ya da en küçük elemanı bulmayış. O yüzden Brute Force'un karmaşıklığı o var.
+
+228
+00:35:24,339 --> 00:35:32,179
+Doğal olarak biz birinci en küçük ya da birinci en büyüğü bulmak istediğimiz diziyi sıralamayız.
+
+229
+00:35:32,979 --> 00:35:43,839
+Hiçbir koşulda. Sıralasak da bir tur sıralarız. Ama sınıfın %90'ı ya Quick Sword kullanmış ya da Mert Sword kullanmış.
+
+230
+00:35:46,319 --> 00:36:04,259
+Birincisi bu çözümlerin ikisi de doğru değil. Ama ona rağmen bu çözümü yapıp birinci yarışmacıyı da altın madalya kazanmış olarak sadece birinci yarışmacıyı doğru bir şekilde ekrana yazdıranlar 20 puan üzerinden 8 puan aldılar.
+
+231
+00:36:04,259 --> 00:36:17,880
+Divide and Conquer yaklaşımıyla bulduğunuz, evet herhangi bir Divide and Conquer'ı kullanarak soruları çözebiliriz ama bizim amacımız bize uygun olmayan gidip bir Divide and Conquer'la çözüm yapmak değil.
+
+232
+00:36:17,880 --> 00:36:31,319
+O yüzden doğrudan böyle sorularda bir rekürsif mantık oluştururken hazır daha önce gördüğünüz çözümler mutlaka bir çözümdür mantığından yola çıkmamanız gerekiyor.
+
+233
+00:36:31,319 --> 00:36:57,159
+Burası çok önemli. Sizi buraya yönlendirecek bir özel bir ibare de yok soru içerisinde. Maalesef bu yüzden çoğunuz bu 20 puandan düşük aldı. Ama dediğim gibi Merge Sort'u doğru yapan, Quake Sort'u doğru yapan ve birinci yarışmacıyı, altın madenek kazanan yarışmacının ismini ya da sırt numarasını doğru yazdıran kişi 20 üzerinden 8 puan aldı.
+
+234
+00:36:57,159 --> 00:37:22,579
+İkincisi tabii merge sortu ve quick sortu yanlış yapanlar da vardı. Hiç Struck'li ilgilerini kullanmayanlar da vardı. Onlar biraz daha düşük puan aldılar. Peki bizim bu algoritmayı divide and conquer yaklaşımıyla merge sorttan ve quick sorttan bağımsız daha anlamlı nasıl bir çözüm yapabiliriz?
+
+235
+00:37:33,139 --> 00:37:33,700
+Şafak!
+
+236
+00:37:40,884 --> 00:37:42,063
+Orada mısın, Çafak?
+
+237
+00:37:43,963 --> 00:37:44,763
+Buradayım hocam.
+
+238
+00:37:45,523 --> 00:37:48,203
+Sen bir bakış açısı getirmiştin sanırım sınavda.
+
+239
+00:37:49,863 --> 00:37:51,684
+Kaçırdım hocam en son dediğinizi.
+
+240
+00:37:53,083 --> 00:37:54,603
+Dördüncü soruyu konuşuyoruz.
+
+241
+00:37:54,903 --> 00:38:03,144
+Evet. Ben dördüncü soruda aslında sıralayıp en sonunda her şeyi bastırmıştım.
+
+242
+00:38:03,503 --> 00:38:04,884
+O zaman ben yanlış hatırlıyorum seni.
+
+243
+00:38:04,884 --> 00:38:10,043
+Ya daha doğrusu. Pardon sıralamadım. Maksimumu buldum. Sonradan şey yaptım.
+
+244
+00:38:10,043 --> 00:38:11,384
+o kişiyi.
+
+245
+00:38:11,543 --> 00:38:12,724
+Bakışımı nasıl buldun peki?
+
+246
+00:38:13,463 --> 00:38:18,543
+Onun asrında ben binary search'müş gibi buldum.
+
+247
+00:38:19,104 --> 00:38:19,323
+Tamam.
+
+248
+00:38:20,023 --> 00:38:24,623
+O zaman şöyle diyelim, ben birkaç arkadaşınızınkini hatırlıyorum.
+
+249
+00:38:24,724 --> 00:38:26,703
+Belki seninkini doğru hatırlamıyorum isim olarak.
+
+250
+00:38:27,323 --> 00:38:29,443
+Birkaç arkadaşınız bu soruyu doğru bir şekilde çözmüş.
+
+251
+00:38:29,443 --> 00:38:32,863
+Şimdi ben bu sorunun nasıl çözülmesi gerektiği bilgisini sizinle paylaşacağım.
+
+252
+00:38:32,964 --> 00:38:34,224
+Hemen bir ekran yönü açacağım.
+
+253
+00:38:35,284 --> 00:38:37,983
+Müsaade ederseniz bir saniye bunu bir durduralım.
+
+254
+00:39:05,844 --> 00:39:07,844
+Şimdi ekranı paylaşalım.
+
+255
+00:39:13,844 --> 00:39:15,344
+Evet, şu an görebiliyor musunuz?
+
+256
+00:39:18,183 --> 00:39:19,764
+Evet hocam, geliyor şu anda.
+
+257
+00:39:19,804 --> 00:39:24,063
+Tamam, çok güzel. Şimdi hatırlarsanız, derste bir örnek vermiştim.
+
+258
+00:39:24,863 --> 00:39:28,483
+A üzeri n'i hesaplarken divide and concur ile de hesaplayabiliriz demiştim.
+
+259
+00:39:28,483 --> 00:39:29,283
+A üzeri n.
+
+260
+00:39:30,123 --> 00:39:41,903
+Orada her seferinde a çarpı, a çarpı, a çarpı yapmak yerine bunu a üzeri n bölü 2 şeklinde hesaplayabiliriz.
+
+261
+00:39:41,903 --> 00:39:44,223
+bunu aşağıya bölerek ilerleyebiliriz diye anlatmıştık.
+
+262
+00:39:44,743 --> 00:39:51,403
+Şimdi burada da mantığımız şu, burada tabii isminin max index mi min index mi olduğunun bir önemi yok.
+
+263
+00:39:51,564 --> 00:39:55,744
+Ben burada max index yazdım ama aslında burada minimum index hesaplanıyor.
+
+264
+00:39:57,623 --> 00:40:01,983
+Burada dizideki elemanları dışarıdan okuyorsunuz.
+
+265
+00:40:02,603 --> 00:40:09,844
+Dışarıdan okuduktan sonra şu noktada max index isimli bir fonksiyonunuz var rekürsif olarak çağıran.
+
+266
+00:40:09,844 --> 00:40:15,064
+Buraya biraz sonra analizini rekürans bağlantısını yazdığında da daha iyi anlayacaksınız.
+
+267
+00:40:15,924 --> 00:40:21,543
+Diziyi gönderiyorsunuz. Dizinin left ve right yani başlangıç ve bitiş noktaları gönderiyorsunuz ki
+
+268
+00:40:21,543 --> 00:40:25,983
+isterseniz dizinin belli bir bölgesinde de arama yapabilirsiniz. Bunu biraz sonra göreceksiniz.
+
+269
+00:40:26,104 --> 00:40:30,763
+Biz burada dizinin tamamında maksimum ya da minimum elemanı bulmak istediğimiz için
+
+270
+00:40:30,763 --> 00:40:33,583
+sıfır ve en eksili değerlerini gönderiyoruz.
+
+271
+00:40:33,583 --> 00:40:39,463
+Burada dizinin başlangıç adresini left ve right'e aldık.
+
+272
+00:40:39,844 --> 00:40:45,583
+Şu kısmı ben çalıştırdığımda ekrana yazdırmak için kullanmıştım. Bunu kaldırayım.
+
+273
+00:40:46,263 --> 00:40:54,004
+Şimdi burada en soldaki elemana doğru gidecek şekilde bir dağılım söz konusu. Bu ne demektir?
+
+274
+00:40:55,223 --> 00:41:05,903
+Siz if L eşit eşit R kontrolünü koyuyorsunuz ve en sol taraftaki en büyük elemanı bulduğunuzda return L diyorsunuz.
+
+275
+00:41:05,903 --> 00:41:12,223
+Eğer L, R'ye eşit olmadıysa o zaman diyorsunuz ki fonksiyonu bir daha çağıracağım kendi içerisinde.
+
+276
+00:41:14,083 --> 00:41:18,844
+Çağırdığım zaman bu sefer doğal olarak bu rekür sıfı olarak kendi kendini çağırması lazım.
+
+277
+00:41:19,483 --> 00:41:29,763
+Ben sol tarafa gideceğim. Sol tarafta left ve sağ tarafta da left artı right bölü 2 diyorum.
+
+278
+00:41:29,763 --> 00:41:58,963
+yani ilk başta 0 ile n-1 demiştim artık 0 artı n-1 bölü 2 tarafını bir çağırıyorum bir de tabi doğal olarak dizinizin iki parçaya ayrılması durumunda bir sol tarafı var bir de sağ tarafı var sağ tarafı içinde bu sefer L artı R bölü 2 artı birden R'ye kadar gidiyoruz aslında bir nevi biraz önce Şafak'ın ifade ettiği gibi
+
+279
+00:41:58,963 --> 00:42:06,564
+Binary Search'taki mantığa çok benziyor. Bir tarafta sol parçayı alıyorsunuz, diğer tarafta sağ parçayı alıyorsunuz.
+
+280
+00:42:06,903 --> 00:42:16,683
+Bu şekilde ikiye bölerek ilerliyorsunuz, kendi kendini çağırıyorsunuz. Eğer L, R'ye eşit değilse kendi kendini çağırıp dönüşteki değeri temp 1'e eşitliyorsunuz.
+
+281
+00:42:16,983 --> 00:42:24,043
+Sol taraftaki, sağ taraftaki değeri de temp 2'ye eşitliyorsunuz. Sol ve sağdan gelen değerleri birbirleriyle karşılaştırıyoruz.
+
+282
+00:42:24,043 --> 00:42:33,924
+Soldan gelen değer, sağdaki gelen değerden küçük eşit ise o zaman zaten onu döndürmemiz gerekiyor en küçüğü aradığımız için
+
+283
+00:42:33,924 --> 00:42:40,724
+Eğer en büyüğü arasaydık tam tersi bir eşitlik koymamız gerekirdi, büyük eşit koymamız gerekirdi
+
+284
+00:42:40,724 --> 00:42:45,924
+Şimdi en küçüğü aradığımız için yani en düşük süreyi aradığımız için burada yaptığımız şey
+
+285
+00:42:45,924 --> 00:42:58,204
+a temp 1 küçük eşit a temp 2 dedikten sonra eğer bu kuşunu sağlamıyorsa return temp 2 demek ve en sonunda bu fonksiyonlar kendi içlerinde birbirlerini çağırarak
+
+286
+00:42:58,579 --> 00:43:13,639
+dizinin en küçük noktasına kadar iniyorlar ve her turda en küçük elemanı yukarı doğru taşıyorlar ve en sonunda da bu görmüş olduğunuz fonksiyon bize en küçük elemanı döndürmüş oluyor.
+
+287
+00:43:13,639 --> 00:43:25,639
+Aslında sorunun bu şekilde çözülmesi gerekiyordu. Çok da zor değildi. Bunu daha önce A üzeri M ile ilgili olarak yaptığımız örnekte de daha değişik olanını yapmıştık.
+
+288
+00:43:25,639 --> 00:43:33,239
+yapmıştık. Peki bunun rekürans bağıntısı nasıl olacak? Şimdi onun için ekran paylaşımını değiştiriyorum.
+
+289
+00:44:02,164 --> 00:44:09,963
+Evet, şu anda görebiliyorsunuz diye tahmin ediyorum. Burada bir tane yeni bir sayfa açalım.
+
+290
+00:44:16,884 --> 00:44:19,403
+şuradan ekleyelim.
+
+291
+00:44:23,219 --> 00:44:38,059
+Evet, şimdi cn yazıyorum. Burada bir komparizm olduğu için. Eşittir diyorum. Rekürans bağıntısında ikiye bilerek gittiğime göre ne yazmam uygun olur? Hemen sormuş olayım.
+
+292
+00:44:50,387 --> 00:45:19,887
+ikiye bölüyorum. C bir tarafta n bölü 2 artı diğer tarafta da yine C n bölü 2 artı 1 işlemi yer alacak. For n büyük 1 ve son noktada da herhangi bir karşılaştırma olmayacağı için
+
+293
+00:45:19,887 --> 00:45:24,948
+en küçük noktaya gittiğimizde if L eşittir R noktasında return L diyoruz.
+
+294
+00:45:25,367 --> 00:45:31,447
+Herhangi bir karşılaştırma yapmıyoruz çünkü diğerlerin hepsinde temp 1, temp 2'den küçük mü, büyük mü diye bakıyoruz.
+
+295
+00:45:32,127 --> 00:45:35,887
+Buradan C, N'in yerine 2 üzeri K koyalım.
+
+296
+00:45:39,068 --> 00:45:44,968
+2, C, 2 üzeri K eksi 1, artı 1 diyelim.
+
+297
+00:45:50,739 --> 00:45:53,039
+Buradan ilerleyeceğiz şimdi.
+
+298
+00:45:54,039 --> 00:45:57,019
+2, backward substitution kullanarak yapabiliriz.
+
+299
+00:45:57,720 --> 00:46:01,939
+C, 2 üzeri k-2, artı 1.
+
+300
+00:46:03,819 --> 00:46:05,939
+Buraya artı 1 yazdım.
+
+301
+00:46:06,479 --> 00:46:17,679
+Bu da 2 üzeri 2, C, 2 üzeri k-2, artı 2, artı 1 etti.
+
+302
+00:46:17,679 --> 00:46:41,659
+sonra burada 2 üzeri 2, C, 2 üzeri K, eksi 3 yazdım, artı 1, bu sefer 2 artı 1, artı 1 yazdım, 2 üzeri 3, C, 2 üzeri K, eksi 3, artı 2 üzeri 2, artı 2, artı 1 etti.
+
+303
+00:46:41,659 --> 00:46:46,379
+bu noktada ilerlediğimizde nasıl genelleştireceğiz?
+
+304
+00:46:46,379 --> 00:47:01,999
+2 üzeri i, c, 2-k, i, artı 2 üzeri i-1, artı 2 üzeri i-2, artı 1'e kadar devam ediyor olacak.
+
+305
+00:47:02,799 --> 00:47:11,199
+Buradan da yerlerine i'nin k koyduğumuzda 2 üzeri k, burası c, 2 üzeri k, x, k,
+
+306
+00:47:11,659 --> 00:47:21,280
+artı 2 üzeri k-1 artı 2 üzeri k-2 artı 1.
+
+307
+00:47:23,019 --> 00:47:27,079
+Burası 2 üzeri 0'dan c 1 olacak. Bu da 0 olacak.
+
+308
+00:47:27,579 --> 00:47:31,479
+Doğal olarak 0 çarpı 2k'da 0 gelecek. Elimizde bu kısım kalacak.
+
+309
+00:47:32,219 --> 00:47:36,279
+Bunun daha önceki formülünü de vermiştik.
+
+310
+00:47:36,280 --> 00:47:47,140
+2 üzeri k eksi 1. Bu da 2 üzeri k'nın yerine n koyduğunuzda n eksi 1 karmaşıklığı yapacak buradaki divide and con cure yaklaşımı.
+
+311
+00:47:47,860 --> 00:47:56,439
+Peki buradaki soru C şıkkında şuydu. Divide and con cure yaklaşımıyla çözmek yerine brute force yaklaşımını kullanmak dezavantaj mıdır?
+
+312
+00:47:56,439 --> 00:47:59,299
+Avantaj mıdır? Artık buna cevap verebilirsiniz diye düşünüyorum.
+
+313
+00:48:05,043 --> 00:48:07,264
+BruteForce daha avantajlıdır dedim ben ama.
+
+314
+00:48:07,643 --> 00:48:10,663
+Neden dolayı? Bu arada Arai'mizde ki mi kullanıyorsun?
+
+315
+00:48:10,883 --> 00:48:11,543
+Arai.
+
+316
+00:48:11,883 --> 00:48:13,264
+Arai. Neden dolayı öyle dedin?
+
+317
+00:48:14,323 --> 00:48:20,563
+Çünkü BruteForce'da yani Divide and Conquer yaparken fonksiyon çağırıyoruz devamlı.
+
+318
+00:48:20,563 --> 00:48:20,763
+Evet.
+
+319
+00:48:20,863 --> 00:48:22,783
+Karmaşıklık açısından da bir avantajı.
+
+320
+00:48:23,123 --> 00:48:28,163
+Doğru cevap bu olacaktı. Karmaşıklık açısından bir farkı yok. İkisi de eşit düzeyde.
+
+321
+00:48:28,163 --> 00:48:40,483
+ancak divide and concur da işte o bahsettiğimiz hatırlarsanız ağırızları en örneği de aynı şekilde bu tür divide and concur yaklaşımları kullanmak her zaman avantaj getirmez.
+
+322
+00:48:41,224 --> 00:48:52,043
+Eğer eşitlik söz konusuysa function call overhead'inden dolayı divide and concur bazen brute force'dan daha az avantajlı yani dezavantajlı olabilir diye söylemiştik.
+
+323
+00:48:52,043 --> 00:49:15,963
+burada da örneğini görüyorsunuz. Aynı karmaşıklığa sahipler brute force'la ama divide and concure'da function call yaptığı için, kendi kendine çağırdığı için bunun bir overhead'ı var. O yüzden divide and concure brute force'a göre dezavantajlıdır cevabı bekleniyordu bu soru içinde. Evet, buraya kadar finali, pardon finali diyorum, biz de iyi konuşmuş olduk.
+
+324
+00:49:15,963 --> 00:49:44,963
+Şimdi süremiz tabii çok fazla yok sorulara baya bir vakit gitti biraz sonra diğer seçim de başlayacak ben birkaç tane ekleme yapmak istiyorum öncelikle birincisi maalesef 5-6 arkadaşımız da kodların çok benzer olduğunu tespit ettim ve bundan dolayı sadece o soruları için 0 puan aldılar ve bu da birkaç arkadaşımızdaki
+
+325
+00:49:45,963 --> 00:49:53,003
+doğru çözmelerine rağmen düşük not almalarına seviyeti verdi. Kim kimden talep etti bilemiyorum. Birlikte mi çözdüler?
+
+326
+00:49:54,203 --> 00:50:07,383
+Sıfır puan aldılar. Bu da ortalamaya da bu anlamda olumsuz yansımış oldu. Ben bir kez daha uyarmış olayım, rica etmiş olayım. Lütfen final sınavında bu tür yaklaşımlar göstermeyin.
+
+327
+00:50:07,923 --> 00:50:13,883
+Final sınavında sadece sorunuza sıfır puan vermek değil, sınavımıza sıfır puan vermek durumunda kalacağım.
+
+328
+00:50:13,883 --> 00:50:19,124
+lütfen çözümlerinizi kendi kendinize yapmaya özen gösterin.
+
+329
+00:50:19,823 --> 00:50:21,643
+Bütün kaynaklar elinizin altında.
+
+330
+00:50:22,844 --> 00:50:27,223
+Süre konusunda da biraz daha bonkör davranacağımızı söylemiştim.
+
+331
+00:50:27,803 --> 00:50:29,523
+Kendi kendinizi çözmenizi rica ediyorum.
+
+332
+00:50:30,303 --> 00:50:35,563
+Söylediğim gibi 5-6 arkadaşımızla bu tür bir sıkıntımız var.
+
+333
+00:50:37,243 --> 00:50:39,783
+Evet, önemli soruya hemen gelelim.
+
+334
+00:50:39,783 --> 00:50:45,023
+Ali Can, Kara Ömer sormuş.
+
+335
+00:50:45,863 --> 00:50:51,383
+Vize ödev proje final dağılımını Elif Hoca ile uzun uzun istişare ettik.
+
+336
+00:50:51,623 --> 00:50:53,063
+Söylediklerinizi değerlendirdik.
+
+337
+00:50:54,163 --> 00:50:55,843
+En son geldiğimiz nokta şu oldu.
+
+338
+00:50:55,983 --> 00:50:58,903
+Hatta en son Sercan sanırım bir öneride bulunmuştu.
+
+339
+00:50:58,963 --> 00:51:02,603
+Biraz daha düşük olabilir mi yüzdesi diye dönen projesi.
+
+340
+00:51:02,603 --> 00:51:03,103
+Evet hocam.
+
+341
+00:51:03,643 --> 00:51:03,903
+Evet.
+
+342
+00:51:04,523 --> 00:51:09,363
+Bu noktada vizenin yüzde yirmi beş, ödevlerinizin yüzde yirmi beş,
+
+343
+00:51:09,783 --> 00:51:24,043
+dönem projesinin de %10 olmasına karar verdik. %60'ı bu şekilde dönemçi olarak tamamlamış oluyoruz. %40'da finalimiz olacak. Böylece %100'ü tamamlamış olacağız.
+
+344
+00:51:26,863 --> 00:51:38,203
+%25 vize, %25 ödevleriniz, %10 proje ve %40'da final olacak.
+
+345
+00:51:38,203 --> 00:52:04,263
+Bu arada şunu da hemen söyleyeyim. %35 ödevlerinize gitmiş oluyor böylece. Sadece evde yaptığınız, sınav stresi olmadan yapmış olduğunuz ödevleri. Ödev ortalamalarına da baktık. Oldukça yüksek. Yapanlar ve yapmayanlar diye ayrılıyor zaten. O yüzden mesela ben bir örnek söyleyeyim. 12 sınavdan almış bir arkadaşımız. Ödevlerden 100, 100, 100, 120 almış.
+
+346
+00:52:04,884 --> 00:52:18,083
+O yüzden ödevlerin sizin için hayat kurtarıcı olduğunu düşünüyorum. Umarım bu konuda bir sıkıntı çıkmayacaktır diye düşünüyorum. Evet, Sercan.
+
+347
+00:52:20,103 --> 00:52:25,243
+Hocam, şey söyleyecektim ben. Bence puanlama gayet güzel olmuş. Teşekkürler diyecektim Sercan.
+
+348
+00:52:25,243 --> 00:52:36,643
+Ben teşekkür ederim en azından hani şey yapmaya çalıştığınızda bunun görülmesine sevindim ama tabi bu senin fikrin belki başkaları beğenmemiş olabilir ona da bir şey diyemem Yasir bir söz istemişti
+
+349
+00:52:36,643 --> 00:52:38,183
+Merhabalar
+
+350
+00:52:38,183 --> 00:52:39,603
+Merhaba Yasir
+
+351
+00:52:39,603 --> 00:52:55,223
+Hocam şey ben aslında finale ilgili bir şey soracaktım söyleyecektim de hocam şey çünkü şöyle bir sorun yaşadık da hocam mesela klasik sorularda şey bir de sınav toparlamakla bazen de şey klasik sorulara cevap dedikten sonra
+
+352
+00:52:55,224 --> 00:53:04,224
+kaydet basmayınca, direkt başka bir soruya geçince boş bazen de kalıyor yani işte. Yoksa bir arkaya dönemiyoruz hocam. Böyle bir sıkıntılar falan çözseniz çok...
+
+353
+00:53:04,224 --> 00:53:18,003
+Şimdi bunların hiçbiri bizle alakalı değil. Bunların hepsi uzaktan eğitim modülüyle alakalı. Ben de mutlu olurum Yasir. Ama şunu söyleyebilirim. Bizim sınavımızda, yaptığımız sınavda geriye dönememe gibi bir sorun yoktu. Bunu üzerine basa basa söylemek isterim.
+
+354
+00:53:18,443 --> 00:53:21,064
+Yok yok hocam. Onu biliyorum da sadece şey yani...
+
+355
+00:53:21,064 --> 00:53:30,064
+Kaedetle ilgili kısım maalesef teknik bir problem. Haklısın ama buna dikkat ederseniz çok mutlu olurum. Ben de sizin bundan dolayı düşük puan almanızı istemiyorum.
+
+356
+00:53:31,324 --> 00:53:32,644
+Biliyorum. Çok teşekkür ederim.
+
+357
+00:53:32,803 --> 00:53:43,924
+Rica ederim. Ben teşekkür ederim. Son olarak şuraya da geleceğim. Bir arkadaşınız bir yorumda bulunmuş, uzun bir neyli yazmış. AKTS hesaplamış.
+
+358
+00:53:43,924 --> 00:54:05,764
+işte ödevleri sizin zamanınızdan çok fazla aldığımızı, AKTS'e yükünden çok daha fazla iş size yaptırdığımızı söylemiş. Böyle bayağı bir sizlerin bize çok anlayış gösterdiğinizi bizim size hiç anlayış göstermediğimizi anlatan biraz böyle sitem dolu bir mail atmış.
+
+359
+00:54:05,763 --> 00:54:18,943
+keşke biraz daha anlayışlı bir mail olsaydı ama işte dönem projesinin iptal edilmesini, veri madenciliğe ödevi verildiğini, bunun çok zor bir ödev olduğunu, basitleştirmesi gerektiğini falan yazmış.
+
+360
+00:54:20,163 --> 00:54:29,964
+Bu çok zor bir ödev değil. Gerekirse, sizden talep gelirse önümüzdeki hafta içerisinde ya da bu hafta içerisinde uygun olan bir saatte, geç bir saatte de olabilir.
+
+361
+00:54:29,964 --> 00:54:44,443
+Dönem projesiyle ilgili sorularınızı yanıtlayacağım. Bir saat organize edebilirim. İstediğinizi sorabilirsiniz. Herhangi bir sıkıntı olmaz. Yeter ki talebiniz varsa bana yazın. Ben de şu saatte dönem projesiyle ilgili soruları cevaplayacağım diyeyim.
+
+362
+00:54:46,023 --> 00:54:57,663
+Burada şunu söyleyeceğim. Bu derste AKTS'i de kontrol edebilir herkes. Laboratuvarların AKTS'i bile 36. Orada çünkü ciddi bir hesap hatası var.
+
+363
+00:54:57,663 --> 00:55:22,363
+Bir sınavı yapmadığınızı hatırlatmak isterim sizlerden gelen öneri üzerine. Onun yerine ödev verdiğiniz, ödevlerin sizin avantajınızda olduğunuzu. Hepsini sizin lehinize olsun diye yaptığınızı söylemek isterim. Tek haklı olduğunuz konu var. Çok zor bir dönemden geçiyorsunuz. Pandemiden dolayı iş yükünüz çok fazla. Diğer derslerde çok ödev verdi. Bunu anlıyoruz. Buna göre de size uygun ödevler ve süreler vermeye özen gösterdik.
+
+364
+00:55:22,363 --> 00:55:48,503
+Umarım dönem bitiyor. Sizi çok üzmemişsizdir. Öyle söyleyeyim. Güzel şekilde kapanış yapalım isterim. Her zaman sizin fikirleriniz önem verdiğimi biliyorsunuz ama ben açıkçası biraz daha eleştiri yaparken haklı olduğunuz noktalar evet ama bu kadar detay hesap yapmak yerine derse özen göstermenizi rica edeceğim sizden.
+
+365
+00:55:48,503 --> 00:55:52,824
+yoksa zor bir dönem geçirdiğinizin de farkındayım. Evet, Okan.
+
+366
+00:55:55,403 --> 00:56:00,183
+Hocam, projede doğruluğunu nasıl test edeceğiz? Ben orayı yapamadım.
+
+367
+00:56:00,683 --> 00:56:02,863
+Nasıl yani doğruluğu nasıl test edeceğiz?
+
+368
+00:56:02,863 --> 00:56:03,863
+Mesela...
+
+369
+00:56:04,032 --> 00:56:12,012
+bir filmi öneriyor. Bunun doğru mu yanlış mı önerildiğini bilemiyoruz. Belki yanlış hesaplama yapıyoruzdur.
+
+370
+00:56:12,091 --> 00:56:31,411
+Ama hesap çok açık. İsterseniz hemen bir, bu arada bana bir müsaade edin. Ben diğer sınıf normalde ikide bağlanacaktı. Bir 10 dakika gecikmeli olacağını Elif Hoca'ya haber vereyim. Çünkü onlara link de atacağım. Bir müsaade edin. Hemen geleceğim. Şuradan önüze ekranımı alalım.
+
+371
+00:57:43,603 --> 00:57:59,883
+Evet arkadaşlar, şimdi biraz daha zamanınızı uzattım. Hocuza zaten devam ediyormuş anlatmaya. Hemen dönem projesiyle ilgili olan kısmı da ekrana yansıtayım. Bir saniyeyi rica edeceğim.
+
+372
+00:58:17,012 --> 00:58:24,051
+Hocam, bir şey soracağım. Siz defterleri toplayacak mısınız?
+
+373
+00:58:25,272 --> 00:58:38,251
+Şöyle, bununla ilgili ekstra bir puan vermeyi planladığımı söylemiştim ama bu süreçte o kadar çok böyle mail trafiği oldu ki açıkçası buna vakit ayıramadım ama bunu bir düşüneyim.
+
+374
+00:58:38,251 --> 00:58:50,291
+Çöz'ü hatırlattın iyi oldu. Ben bunu çünkü dönem başında söylemiştim. Not tutmuş olanlardan bunu talep edebilirim. Birkaç gün içerisinde bununla ilgili bir tekrar size mail atmış olurum.
+
+375
+00:58:51,571 --> 00:58:52,712
+Tamam, teşekkür ederim.
+
+376
+00:58:53,012 --> 00:58:53,611
+Çok sağ olun.
+
+377
+00:58:55,331 --> 00:58:58,732
+Evet, şimdi dokümanı buldum. Share yapalım.
+
+378
+00:59:05,940 --> 00:59:07,899
+Evet, şimdi görebiliyorsunuz diye tahmin ediyorum.
+
+379
+00:59:09,979 --> 00:59:13,440
+Kitap öneri sistemi tasarlamanız bekleniyor sizden.
+
+380
+00:59:13,880 --> 00:59:16,579
+Collaborative filtering yöntemini kullanmanız bekleniyor.
+
+381
+00:59:17,119 --> 00:59:27,299
+Aslında burada yazdığı gibi birçok şu anda önemli kurumun kullandığı bir makine öğrenmesine dayalı sistem var.
+
+382
+00:59:27,299 --> 00:59:33,659
+Bunların hepsi kendine göre çeşitli yöntemlerle kişilere öneride bulunuyor ki
+
+383
+00:59:33,659 --> 00:59:37,879
+onu platformda daha mutlu edecek seçenekleri kendisine sunsun.
+
+384
+00:59:37,960 --> 00:59:42,879
+O yüzden aktif bir ödev olduğu için ve bir arkadaşınız size yorum olarak söylemiştim galiba.
+
+385
+00:59:43,219 --> 00:59:44,399
+Yazdığı yorumda şunu söylemiştim.
+
+386
+00:59:44,399 --> 00:59:50,319
+Hocam hep algoritma analizi dersinde gördüğümüz konularla ilgili ödev verdiniz.
+
+387
+00:59:50,480 --> 00:59:56,699
+Keşke biraz daha farklı bir konuyla ilgili bir ödev verseydik de hani biz de biraz değişik bir şeyler yapsaydık demiş.
+
+388
+00:59:56,699 --> 01:00:25,539
+Bu görüş de aslında bizim size dönem projesi ararken birazcık daha farklı konulara bakmamıza yöneltti. Böylece sizin değişik konularla ilgili bilgi sahibi olmanızı sağlayabileceğimizi de düşündük. Bu yüzden biraz daha artık backtracking, graflar vesaire veri yapılarından da devam eden bazı konular da var. Çok fazla onlarla bunalıp sıkılmanızı istemedik.
+
+389
+01:00:25,539 --> 01:00:45,599
+biraz bakış açıları da kazanmanızı istedik. O yüzden böyle bir ödev verdik. Bu noktada bir okuyucunun diğer okuyuculara benzerliğin hesaplanması için Pearson katsayısının hesaplanmasından bahsetmişiz. Burada bir similarity score bulmamız gerekiyor. Herkesin diğerlerine benzerliğiyle ilgili eksi 1 ile 1 arasında bir değer üretmek gerekiyor.
+
+390
+01:00:45,599 --> 01:00:51,479
+Burada gördüğünüz gibi P hem A hem B tarafından okunmuş kitapları gösteriyor
+
+391
+01:00:51,479 --> 01:00:56,659
+R, A, P, A'nın P kitabı için verdiği puan
+
+392
+01:00:56,659 --> 01:00:58,519
+B, P, B'nin
+
+393
+01:00:58,519 --> 01:01:04,319
+Burada yazdığımız yerde üstüne çizgi belirtmemişiz
+
+394
+01:01:04,319 --> 01:01:08,759
+R, A, A'nın okuduğu kitapların puan ortalaması hesabı yaparken
+
+395
+01:01:08,759 --> 01:01:11,119
+R, B'de B'nin okuduğu kitapların puan ortalaması
+
+396
+01:01:11,119 --> 01:01:14,880
+Bir okuyucunun diğer okuyuculara benzerliğini hesaplayacaksınız
+
+397
+01:01:14,880 --> 01:01:35,540
+Bu sanırım çok zor değil. Onların bir puan ortalamasını çıkartmanız gerekiyor her bir okuyucunun. Onun ötesinde bir de o kitap için A'nın ilgili kitabı verdiği puanı hesaba katarak A ile B arasındaki similarity skoru hesaplamanız gerekiyor.
+
+398
+01:01:35,539 --> 01:01:43,999
+Doğal olarak hangisini tercih edeceğiz? Artı biri tercih edeceğiz. Yüksek olan, bizim için belirleyiciliği olan bir skor olacak.
+
+399
+01:01:44,719 --> 01:01:49,779
+Bir okuyucunun en benzer olduğu K kişinin belirlenmesi. Bir K değeri gireceksiniz sisteme.
+
+400
+01:01:51,139 --> 01:02:01,199
+Okuyucuya en benzeyen K okuyucuyu bulacağız. En benzer K kişiyi bulmak için de hani bugün konuştuğumuz bir konu vardı ya, hepsini sıralamayız.
+
+401
+01:02:01,199 --> 01:02:12,679
+İşte buna dikkat etmek gerekiyor. Daha efektif bir çözümle bunu bulmanız gerekiyor. Buraya dikkat çektik en azından sınavda yaşanan sıkıntı yaşanmasın diye.
+
+402
+01:02:13,239 --> 01:02:20,639
+Yeni kitap önerme noktasına geldiğimiz kısımda da okuyucuya kitap önermek için Mezar K'kişi'yi bulmuştuk.
+
+403
+01:02:20,639 --> 01:02:35,579
+Şimdi onları kullanarak bir hesap yapmamız gerekiyor ve burada bir hesap yapacağız ki kişinin her okumadığı kitap için bu hesabı yapmamız lazım ve kendisine en benzeyen K kişiyi kullanarak yapmamız lazım
+
+404
+01:02:35,579 --> 01:02:41,800
+Önce bu yüzden kişinin kendisine benzeyen K kişileri bir yere koymanız lazım
+
+405
+01:02:41,800 --> 01:02:52,440
+Koyduktan sonra o K kişilerin bilgisini kullanarak kişinin okumadığı kitaplar için bir skor hesaplayacaksınız
+
+406
+01:02:52,440 --> 01:02:54,740
+Bu skorun formülü de burada var
+
+407
+01:02:54,740 --> 01:03:03,619
+Bu skorlar hesaplandıktan sonra okumadığı kitaplar arasındaki her bir skor hesapladıktan sonra en yüksek olanı kişiye önereceksiniz
+
+408
+01:03:04,340 --> 01:03:18,879
+ödev bundan ibaret. Aslında sistematik bir şekilde ilerlendiğinde iki gün içerisinde, maksimum üç gün içerisinde tamamlayabileceğinizi düşündüğümüz bir ödev olarak karşımıza çıkıyor. Evet, Ertuğrul'un bir sorusu var.
+
+409
+01:03:19,840 --> 01:03:25,659
+Hocam, XLS dosyasından örnek almamızı söylediniz de o dosyayı input olarak alamayız.
+
+410
+01:03:25,659 --> 01:03:46,599
+Alabilirsiniz. Bir arkadaşınız aslında göndermiş. Kodu da bulmuş. Excel dosisinden okuma ihtimaliniz var. Ama ben bu konuyu gündeme getireyim hocayla. Hani bunu farklı bir formatta okuyabilir misiniz diye. Tabii ki bunu değerlendirelim Ertuğrul. Bana bir mail atarsan ben de hocayla konuştuktan sonra size geri dönüş yaparım.
+
+411
+01:03:46,599 --> 01:03:51,559
+Okan'ın sorusuna tam cevap vermedim
+
+412
+01:03:51,559 --> 01:03:54,739
+Okan orada ben bir ödevi anlattım
+
+413
+01:03:54,739 --> 01:03:57,179
+dedi ki biz bunu nasıl kontrol edeceğiz
+
+414
+01:03:57,179 --> 01:04:03,039
+yani buradaki formülleri uyguladığınız zaman çıkan skorlara baktığınızda
+
+415
+01:04:03,039 --> 01:04:07,659
+bir ya da iki okuyucu için eline de kontrol edebilirsiniz bu skorları
+
+416
+01:04:07,659 --> 01:04:14,659
+doğru önermediğinizi belirlemek için örneğe ihtiyaç duyuyorsanız bu konuyla gündeme getiririm
+
+417
+01:04:14,659 --> 01:04:20,159
+size örnek sunup sunmayacağımızı paylaşırım. Uygun mudur Hakan?
+
+418
+01:04:22,399 --> 01:04:24,079
+Uygun hocam, teşekkürler.
+
+419
+01:04:24,500 --> 01:04:26,560
+Rica ederim. Tolga'nın bir sorusu vardı.
+
+420
+01:04:28,340 --> 01:04:32,119
+Hocam farklı formatta okuma yapabilecek miyiz diye soracak kim cevaplandı?
+
+421
+01:04:32,500 --> 01:04:35,640
+Bu konuyu görüştükten sonra sizle paylaşıyor olacağım.
+
+422
+01:04:36,920 --> 01:04:38,399
+Teşekkür ederim. Metin?
+
+423
+01:04:38,939 --> 01:04:43,340
+Hocam ben şu an soruyu çok aşırı detaylı inceleyemedim de diğer özellerden dolayı.
+
+424
+01:04:43,340 --> 01:04:46,700
+İkinci şıkta daha efektif bir çözüm planlayın diyor ya
+
+425
+01:04:46,700 --> 01:04:48,479
+Basit basit, cevabı çok basit
+
+426
+01:04:48,479 --> 01:04:54,799
+Hiç kafanızı buradaki, sınavdaki gibi çok üzerine düşünmeniz gereken bir şey değil
+
+427
+01:04:54,799 --> 01:04:56,759
+Sadece dikkat çektik
+
+428
+01:04:56,759 --> 01:05:01,700
+Çok zor bir şeyse o şart sağlığına sağlık direkt şey olmaz değil mi?
+
+429
+01:05:02,399 --> 01:05:02,619
+Yok
+
+430
+01:05:02,619 --> 01:05:03,600
+Tamam teşekkür ederim
+
+431
+01:05:03,600 --> 01:05:04,500
+Bildiğiniz bir şey
+
+432
+01:05:04,500 --> 01:05:08,079
+Yani bugün kime sorsanız birinci sınıfı bitiren birinin bileceği bir şey
+
+433
+01:05:08,079 --> 01:05:08,679
+Tamam
+
+434
+01:05:14,420 --> 01:05:17,799
+Başka soru var mı? Orkun?
+
+435
+01:05:19,519 --> 01:05:35,619
+Ben de biraz dosyaya tekrardan ilgi çekeceğim de hocam. Ben de ya değiştirilmesi ya da hani okumasının kolaylaştırıcı bir arkadaş bulduysa hani bizimle de en azından ayrıntı olarak ya da tip-send-trickse olarak paylaştırılması gayet güzel olur. Evet, o aya hoş olur.
+
+436
+01:05:35,619 --> 01:05:43,159
+Ben baktım da direkt bunu okuyan bir tanesi API var başlı başına. Ne oradan kopyalamak istiyorum ne de ekstra kullanmak istiyorum.
+
+437
+01:05:44,359 --> 01:05:57,839
+Şöyle bizim zaten buradaki amacımız sizin bunu yazmanız falan değil ama ben önceyle konuşurum. Bunu farklı bir formatta size temin edebilir miyiz noktasında. En azından belki CSV olabilir. Bunu da bir günlerle ayrım.
+
+438
+01:05:57,839 --> 01:05:59,499
+Onu okumak daha kolaymış.
+
+439
+01:05:59,499 --> 01:06:05,359
+Aynen öyle. CSV kolaydır. Tabi bu kısmı mutlaka bir değerlendireceğiz.
+
+440
+01:06:05,619 --> 01:06:07,359
+Ben fikrim vereyim derin, teşekkür ederim
+
+441
+01:06:07,359 --> 01:06:08,719
+Ben teşekkür ederim, Okan
+
+442
+01:06:08,719 --> 01:06:14,819
+Hocam o dosyayı illa okumamız gerekiyor mu? Ben sadece verileri aldım da koda
+
+443
+01:06:14,819 --> 01:06:16,479
+Olur olur Okan, olur
+
+444
+01:06:16,479 --> 01:06:20,819
+Yani bu da bir çözüm, aynen senin söylediğin gibi ben bu cevabı vermek istemedim
+
+445
+01:06:20,819 --> 01:06:21,219
+Sonra
+
+446
+01:06:21,219 --> 01:06:23,280
+Tamam hocam, teşekkür ederim
+
+447
+01:06:23,280 --> 01:06:28,479
+Biz size çok fazla bir de yük getiriyormuşuz, intibası oluşmasın diye
+
+448
+01:06:28,479 --> 01:06:31,059
+Tabii ki en kolayı o şekilde bir dönüşüm yaparak
+
+449
+01:06:31,059 --> 01:06:33,639
+Hatta direkt CSV'ye çevirerek bile bunu yapabilirsiniz
+
+450
+01:06:33,639 --> 01:06:34,579
+Hiçbir sıkıntı yok
+
+451
+01:06:34,579 --> 01:06:43,199
+önemli olan ödevi kendinizin yapması ve mümkün olduğunca iyi bir şekilde teslim etmeniz.
+
+452
+01:06:45,839 --> 01:06:48,499
+Süreyle ilgili bir sıkıntısı olan var mı ödevin süresiyle ilgili?
+
+453
+01:06:49,379 --> 01:06:53,739
+Zamanlamasıyla ilgili bir sıkıntınız olduğunu biliyorum ama süreyle ilgili bir sıkıntısı olan var mı?
+
+454
+01:06:56,739 --> 01:06:58,139
+Peki, yok.
+
+455
+01:06:58,140 --> 01:07:04,140
+başka bir soru yöneltmek isteyen.
+
+456
+01:07:04,580 --> 01:07:06,180
+Finalle ilgili birkaç cümle söyleyeyim.
+
+457
+01:07:06,640 --> 01:07:11,500
+Finalle ilgili Elif Hoca ile henüz bir net bir planlama yapmadık ama tahminim.
+
+458
+01:07:11,500 --> 01:07:17,479
+Bakın, tahminim diyorum çünkü sonra hocam böyle söylemiştiniz demeyin.
+
+459
+01:07:18,559 --> 01:07:25,360
+Gene iki kademeli bir sınav olması yerinde bu iki üç kademe olur mu onu bilmiyorum.
+
+460
+01:07:25,360 --> 01:07:52,800
+ama bir klasik tarafı, bir test tarafı olacağını tahmin ediyorum. Boşluk doldurma olabilir. Sorular duruma bağlı olarak emin olmamakla birlikte tekrar geri dönülemeyecek şekilde set edilebilir test tarafındaki sorular ya da klasik taraftaki sorular parçalara ayrılabilir. Parça parça testi istenebilir sizden. Bunları söylemiş olayım. Bunlara hazırlıklı olun.
+
+461
+01:07:52,799 --> 01:08:00,619
+ama buna istinalden süre konusunda daha dikkatli planlama yapmayı hedefliyoruz.
+
+462
+01:08:01,059 --> 01:08:02,859
+Hocam bir şey söyleyebilir miyim?
+
+463
+01:08:02,939 --> 01:08:03,159
+Evet.
+
+464
+01:08:03,959 --> 01:08:13,799
+Hocam şey, geriye dönemiyoruz, tamam bu siz yapabilirsiniz ama yani lütfen puan mesela doğrular yanlış, pardon yanlışlıklar doğrular götürmesin.
+
+465
+01:08:14,339 --> 01:08:18,979
+Çünkü yani tekrardan bakma şansımız yok ve algoritma yani.
+
+466
+01:08:18,979 --> 01:08:29,360
+Haklısın, haklısın. Eğer öyle bir şey olursa ona göre doğru yanlış olayını hesaba katmayız. Yani bunu mutlaka dengeli bir şekilde değerlenmek. Evet, Serra.
+
+467
+01:08:30,355 --> 01:08:40,435
+Hocam, eğer soruları geri dönemeyeceksek, soruların başına ona ayırmamız gereken ortalama bir süre belirtebilir misiniz? Çünkü bazen en zor soru ilk başta geliyor.
+
+468
+01:08:40,435 --> 01:08:41,055
+Çok haklısın.
+
+469
+01:08:41,455 --> 01:08:43,295
+Ve sonra kolay sorular kalıyor.
+
+470
+01:08:43,875 --> 01:08:50,435
+Tamam, doğru söylüyorsun. Belki bir derecelendirme yapabiliriz bir ile beş arasında örnek veriyorum. Hani sorununuz oluyor konusunda.
+
+471
+01:08:51,036 --> 01:08:57,395
+Tabii bu bizim görüşümüz olacaktır. Ama bir faydası olur diye tahmin ediyorum. Bu da güzel bir öneri.
+
+472
+01:08:57,395 --> 01:09:27,375
+Mutlu ediyorsunuz beni şu yüzden en azından bir çözüme gitmeye çalışıyoruz birlikte. O yüzden bu ders süresince bu şekilde yapıcı eleştiri yapan herkese çok çok teşekkür ederim tek tek. Çünkü ben açıkçası bu son iki dönemi biraz üzülerek geçirdim bazı arkadaşların yaklaşımları yüzünden. Hem veri yapılarında hem algoritmanlarımızın da bu kadar dikkat etmeye çalışmamıza rağmen biraz hani eleştiriyorum.
+
+473
+01:09:27,395 --> 01:09:47,935
+tırıların dozajının hakkaniyetli olmadığını düşünüyorum. Haklı olduklarınıza haklısınız diyoruz ama biraz daha dikkat etmek lazım. Özellikle bu AKTS hesabı noktası yani bizim hesaplamadığımız bir şey değil. Size dersin olması gereken yükünden fazla bir yük yüklemek gibi hiçbir zaman bir niyetimiz olmadı. Evet Metin.
+
+474
+01:09:48,515 --> 01:09:55,495
+Hocam demin şey demiştiniz yazılı sorularda parça parça gelebilir demiştiniz de tam olarak ne ifade ediyor ben onu anlayamadım.
+
+475
+01:09:55,495 --> 01:10:05,855
+Geçen sene veri yapılarını da yapmıştık. Belki hatırlıyorsundur. Bir soru işte 40 dakika. Onu çözeceksiniz. Teslim edeceksiniz. Sistemi yükleyeceksiniz. İkinci soruya geçeceksiniz.
+
+476
+01:10:05,975 --> 01:10:08,896
+Geçen gibi ilk vizdeki gibi şey değil yani. Aynı anda iki soru birden.
+
+477
+01:10:08,915 --> 01:10:16,835
+Bilemiyorum. Şu an hiçbir planlama yapmadık. Ben her şeye hazırlıklı olun diye size bütün ihtimalleri aklıma gelenleri söylüyorum. Hani sonradan sürpriz oldu, öyle oldu, böyle oldu olmasın.
+
+478
+01:10:17,156 --> 01:10:18,156
+Tamam. Teşekkür ederim.
+
+479
+01:10:18,716 --> 01:10:19,175
+Rica ederim.
+
+480
+01:10:20,855 --> 01:10:22,216
+Bunların hiçbiri kesin değil.
+
+481
+01:10:22,216 --> 01:10:43,076
+sizi yoğurmayacak eşit bir sınav yapmanın peşindeyiz. Çünkü bir takım arkadaşlarınızla kopya çekilmesinden çok rahatsız ve bundan dolayı hakkaniyetsiz bir yapı oluştuğunu söylüyorlar. Biz de bunu dengelemeye çalışıyoruz.
+
+482
+01:10:43,076 --> 01:10:50,036
+Ben vakit ayırdığınız için, benim tarafımdan da olayları dinlediğiniz için çok teşekkür ederim
+
+483
+01:10:50,036 --> 01:10:53,796
+Umarım soruları çözmemizin faydası olmuştur
+
+484
+01:10:53,796 --> 01:10:59,176
+Umarım biraz daha iyi not aldığınız bir final dönemi geçirsiniz ki %40 oranı yüksek bir oran
+
+485
+01:10:59,176 --> 01:11:01,415
+O yüzden finali lütfen iyi hazırlanın
+
+486
+01:11:01,415 --> 01:11:09,956
+Dönem projesi de size bir katkı sağlayacaktır %10 olsa da bence puanınızı yükseltecektir
+
+487
+01:11:09,956 --> 01:11:11,736
+Ona da dikkat çekmek istiyorum
+
+488
+01:11:11,735 --> 01:11:13,455
+Ahmet bir söz istemiş.
+
+489
+01:11:17,475 --> 01:11:18,815
+Sesim geliyor mu hocam şu anda?
+
+490
+01:11:19,135 --> 01:11:22,115
+Evet, hem sesin geliyor hem görüntün geliyor. Çok da mutlu oldum seni gördüğüme.
+
+491
+01:11:22,695 --> 01:11:27,135
+Tamamdır hocam. Ben son olarak teşekkür etmek için ekranımı açmak istedim.
+
+492
+01:11:28,195 --> 01:11:35,655
+Bu zorlu dönemde ne kadar ödev yükümüz, projeler vesaire her dersi zorlasa da yanımızda olduğunuz için ben teşekkür etmek istiyorum.
+
+493
+01:11:35,656 --> 01:12:04,956
+Çok sağ olun Ahmet. Yani böyle bir yorumda bulunduğun için. Ben zaten karşılıklı birbirimizi anladığımızı düşünüyorum. Ben de görüntümü açayım bu arada. Yani bu her toplulukta olabiliyor farklı düşünenler. Orada da eleştiri düzeyine de okey. Ama hakkan etli yapmak lazım. Size de gönülden final döneminde başarılar diliyorum. Hakikaten zor bir sürece giriyoruz. Bizim kağıt okumamız gerekiyor.
+
+494
+01:12:04,955 --> 01:12:17,435
+sizin iyi hazırlanmanız gerekiyor. Umarım pandeminin bir an önce bitmesini diliyorum. Çünkü gerçekten çok zorlanıyoruz. Bizim de dijital yükümüz çok arttı. Her şeyi dokümente etmek, belgelemek çok vakit alıyor. Sizde de aynı dert var.
+
+495
+01:12:19,604 --> 01:12:45,183
+Bunun yani ümidi şu, bir dahaki dönem muhtemelen olmayacak ama sonbahara bomba gibi sahalara geri dönmek hepimizin dileği sanırım. Kendinize çok iyi bakın. Şimdi ben şu anda şöyle yapalım diyorum. Bir derse katıl butonuna bakayım. Aktif hale geldiyse diğer session. O sessioninkini paylaşayım, bu sessioninkini kapatayım ama bir dakikamızı rica edeceğim.
+
+496
+01:12:45,183 --> 01:12:49,263
+Şuradan hemen bakalım
+
+497
+01:13:01,363 --> 01:13:02,203
+giriş yapıyoruz.
+
+498
+01:13:19,731 --> 01:13:42,652
+Evet, şu an diğer link aktif hale gelmemiş. O yüzden sizden ricam, ben şu anda görüntülerimi kapatacağım ama bu şu andaki bulunduğunuz kayıtta kalmanız, derste kalmanız, linki diğer grupla paylaşacağım, asistan arkadaşlarımızla da paylaşacağım. Ondan sonra diğer grup da gelecek, asistan arkadaşlarımız da gelecek.
+
+499
+01:13:42,652 --> 01:14:05,312
+10 dakika içerisinde bir organizasyon tamamlanmış olur. Ondan sonra yavaş yavaş kontroller başlar 4. ödeviniz için. Lütfen ayrılmayın. Ödev kontrolünde kalmanız önemli. Çünkü ödev kontrolünde kalmazsanız ödevinizi teslim etmenize rağmen problem oluşmasını istemem.
+
+500
+01:14:06,211 --> 01:14:12,251
+Tekrar teşekkür ediyorum. Görüşmek üzere diyorum. Şimdi mikrofonumu ve görüntümü kapatıyorum.
+
+501
+01:14:12,651 --> 01:14:13,831
+İyi günler hocam
+
+502
+01:15:05,587 --> 01:15:06,808
+Hocam burada mısınız acaba?
+
+503
+01:15:14,676 --> 01:15:15,416
+Eskorten.
+
+504
+01:15:19,347 --> 01:15:25,147
+Hocam, bu ödev kontrolünde listeyi atabilme imkanınız var mı? Herkes duracak mı? Yani bütün herkesin kontrolü yapılacak mı?
+
+505
+01:15:25,808 --> 01:15:32,547
+Rastgele yapılacak bu kontrol Metin. O yüzden arkadaşlarımız biraz sonra ne şekilde olacağını sizinle paylaşacaktır.
+
+506
+01:15:32,987 --> 01:15:33,967
+Tamam, teşekkür ederim.
+
+507
+01:15:34,228 --> 01:15:34,627
+Rica ederim.
+
+508
+01:17:25,908 --> 01:17:31,967
+Ali Can ufak bir bilgilendirme yapayım. Bahar döneminin online olup olmayacağıyla ilgili net bir bilgi yok.
+
+509
+01:17:32,687 --> 01:17:39,547
+Sadece şu anki şartlar sanki öyle olacakmış gibi gösteriyor ama tabii ki ne karar alınacağını biz de bekliyoruz.
+
+510
+01:17:44,627 --> 01:17:52,627
+yapacağım. Ben geldim isterseniz. Evet Betül seni host yapacağım şimdi.
+
+511
+01:18:09,460 --> 01:18:12,019
+Hoş geldin Betül tekrar. Şimdi
+
+512
+01:18:15,099 --> 01:18:16,119
+Şu anda
+
+513
+01:18:17,400 --> 01:18:18,680
+Host olabildi mi?
+
+514
+01:18:29,011 --> 01:18:37,711
+olduğunu varsayıyorum. Hala siz görünüyorsunuz hocam ama. Evet, hala ben görüyorum zaten. Şu anda seçmeme rağmen
+
+515
+01:18:40,111 --> 01:18:41,211
+bir şekilde
+
+516
+01:18:43,111 --> 01:18:46,852
+bakalım şimdi. Heh, oldu. Heh, süper, harika.
+
+517
+01:18:56,372 --> 01:19:13,052
+Betül ve Fatma Nur, şimdi Elif Hoca'nın da birazcık uzadı, benim de beklediğiniz için teşekkürler. Birazdan onun öğrencileri de gelecektir. Ama 5-6 dakika bekleyelim ki onun tarafı da bağlanmış olsun.
+
+518
+01:24:53,300 --> 01:24:54,359
+Hocam burada mısınız?
+
+519
+02:06:15,923 --> 02:06:21,923
+Amaç hocam bitirdik. Sesim geliyor mu bilmiyorum.
+
+520
+02:06:28,659 --> 02:06:36,659
+Tamam, kapatabiliriz arkadaşlar. Galiba tüm öğrenciler bitti. Listede adlı olup görüşmesini yapamayan var mı?
+
+521
+02:06:46,547 --> 02:06:47,547
+İyi günahar.
+
+522
+02:08:34,579 --> 02:08:39,779
+Gençler bitti artık şey. Hala burada olanlar için söylüyorum.
+
+523
+02:08:42,804 --> 02:08:44,743
+görüşmek üzere kendinize iyi bakın.

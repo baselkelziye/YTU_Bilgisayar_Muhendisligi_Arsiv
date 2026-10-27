@@ -1,0 +1,2699 @@
+1
+00:00:00,148 --> 00:00:01,327
+her şeyi detaylanamıyor.
+
+2
+00:02:39,475 --> 00:03:01,816
+Evet arkadaşlar, hepinize merhaba. Bir 3-4 dakika bağlanan kişiler olur diye bekledim. Şu an 36 kişi, 37 kişi olduk. Aslında dönemin sonuna geldik, yılın sonuna geldik. Bir konumuz var, onu anlatacağız. Geçen haftadan kalan Branch & Bound ile ilgili bir örneğimiz var, onu çözeceğiz.
+
+3
+00:03:01,816 --> 00:03:18,095
+Bugün itibariyle bu döneme ait tüm konuları aslında bir aksilik olmasa bitirmiş olacağız. Hepinize dönem boyunca gösterdiğiniz ilgi alaka için teşekkür ederim. Özellikle katkı sağlayanlara ayrıca teşekkür etmek istiyorum.
+
+4
+00:03:18,095 --> 00:03:44,475
+Umarım sizler için verimli bir ders olmuştur. Elimden geldiğince bunu verimli kılmaya çalıştım. Zaman zaman interaktif modumuzu uygulamaya çalıştık ama bu bazen sizi çok mutlu etmedi. Bu pandemi şartlarında belki çok kolay olmuyordur bilgisayar başına konsantre olmak. Buna da çok söyleyecek bir şeyim yok. Yani sonuçta karşılıklı bir şeyleri iyi yapmaya çalıştık.
+
+5
+00:03:44,475 --> 00:04:14,016
+elimizden geldiğince. Evet, hemen bir soru geldi. İlk vize sonuçları ne zaman açıklanacak diye. Okuyorum kağıtlarınızı. Pazar gününü hedeflemiştim. Yetiştirmeye çalışacağım. Ama mutlaka önümüzdeki hafta derse kadar notlarınızı öğrenmiş olacaksınız. Birkaç tane aksilik oldu. Elimde olmayan sebeplerden dolayı ara vermek zorunda kaldım. Ama elimden geldiğince hızlandırmaya çalışacağım.
+
+6
+00:04:14,475 --> 00:04:28,656
+Zaten vizenizin oranı belli bir oranda biliyorsunuz. Önemli olan ödevleriniz ve dönem projeniz. Bu anlamda da o konuda siz kendinize düşeni yaparsınız. Bence dersle ilgili çok büyük bir problem yaşamayacaksınız.
+
+7
+00:04:28,656 --> 00:04:36,675
+final ile ilgili de gerekli açıklamaları yer geldiği zaman yaparız.
+
+8
+00:04:37,255 --> 00:04:39,696
+Sadece süre konusunda hassasiyet göstereceğiz.
+
+9
+00:04:40,315 --> 00:04:41,755
+O konuda bir endişeniz olmasın.
+
+10
+00:04:41,996 --> 00:04:45,675
+Ama tabii ki bu çok çok geniş bir zaman vereceğiz anlamına gelmiyor.
+
+11
+00:04:46,136 --> 00:04:50,815
+Biraz daha sizi sıkıntıya sokmayacak bir zamanlama yapmaya çalışacağız elimizden geldiğince.
+
+12
+00:04:50,815 --> 00:05:19,295
+Bu noktada şimdi bir 5-6 dakika size bir anket göndereceğim. Onu doldurmanızı isteyeceğim. Normalde sınıfta olsa biliyorsunuz kağıt dağıtıyordum. Kağıta yazıyordunuz görüşlerinizi. Şimdi de bu anket linkini paylaşacağım. Bu anket linkinden doldurursanız memnun olurum. Her zamanki gibi özgürsünüz. İstediğiniz eleştiriyi yapmakta.
+
+13
+00:05:19,295 --> 00:05:23,195
+beğeni ve beğeni olmayan durumları dile getirmekte.
+
+14
+00:05:23,875 --> 00:05:27,775
+Şimdi müsaade ederseniz ben şuradan linki sizinle paylaşayım.
+
+15
+00:05:30,135 --> 00:05:31,075
+Evet şuradan.
+
+16
+00:05:33,075 --> 00:05:36,795
+Ondan sonra sesli olarak görüş belirtmek isteyen olursa da tabii ki alacağım.
+
+17
+00:05:36,795 --> 00:05:38,755
+Şimdi aktarıyorum.
+
+18
+00:05:42,228 --> 00:06:05,007
+Evet, buraya size aktarmış olduğum link üzerinden anketi doldurmaya başlayabilirsiniz. Çok kısa tuttum özellikle. Birçok soruyu zaten normal dersin anketi kısmına cevaplıyorsunuz. O yüzden hani oradan belki birkaç tanesi aynı olabilir ama dersin bundan sonraki sürecine katkı olacak kısımları ön planda tutmaya çalıştım.
+
+19
+00:06:05,007 --> 00:06:10,207
+Şimdi sizden ricam özellikle görüşlerinizi yazmanız
+
+20
+00:06:10,207 --> 00:06:16,787
+Bu arada Ferhat'ın söylediği bir noktayı bana Okan arkadaşınız da iletmişti
+
+21
+00:06:16,787 --> 00:06:19,967
+Teşekkür ederim hem Ferhat'a hem Okan'a
+
+22
+00:06:19,967 --> 00:06:27,307
+Ben ödevin son testinin tarihini yanlışlıkla bir dahaki sene girmişim
+
+23
+00:06:27,307 --> 00:06:29,728
+Tabi biraz manidar olmuş
+
+24
+00:06:29,728 --> 00:06:58,927
+0-3-0-1 girmek isterken 0-3-0-3-12-2021 girmişim. 3 Ocak Pazar günü ödenim son teslim tarihi. Düzeltmek isterken de sistem geriye dönük bir tarih belirleme opsiyonu vermedi. O yüzden de tarihin yeri çekmek isterken en son 12 Aralık 2021 kaldı.
+
+25
+00:06:58,927 --> 00:07:12,187
+Siz değerli hocam pazar akşamı 23.59'a kadar ödevinizi teslim etmeniz bu konudaki göstereceğiniz hassasiyet için şimdiden teşekkür ediyorum. Ferhat ve Okan size de dikkatiniz için teşekkür ediyorum.
+
+26
+00:07:13,607 --> 00:07:18,948
+Evet, linke ulaşabildiğinizi tahmin ediyorum. Herhangi bir problem olmadığını imit ediyorum.
+
+27
+00:07:18,948 --> 00:07:40,468
+Şimdi görüşlerinizi alayım. Önümüzdeki hafta normalde ders saatinde bazı uygulamalar yapılacak. Önümüzdeki hafta ders yok diye düşünmeyin. Ben her zaman bir hafta öncesinde bu anketi yapıyorum. O yüzden sizden ricam şimdi anketi doldurmanız.
+
+28
+00:07:47,124 --> 00:07:50,104
+Hocam merhaba. Bir şey sorabilir miyim?
+
+29
+00:07:51,463 --> 00:07:52,683
+Tabii, şuradan sorabilirsin.
+
+30
+00:07:53,243 --> 00:07:56,563
+Ben maalesef geç girdim de, link attıysanız eğer.
+
+31
+00:07:57,084 --> 00:07:57,843
+Link chatte.
+
+32
+00:07:59,203 --> 00:08:02,323
+Geç girdiğim için göremiyorum ama tekrar atma şansınız var.
+
+33
+00:08:02,343 --> 00:08:06,544
+Çok özür dilerim, pardon doğru söylüyorsun. Ben bir anda chatte deyince haklısın.
+
+34
+00:08:06,983 --> 00:08:07,763
+Teşekkür ederim.
+
+35
+00:08:08,103 --> 00:08:08,583
+Rica ederim.
+
+36
+00:13:44,148 --> 00:14:08,367
+Arkadaşlar, şu an derste 42 kişi var. 25 tane anket doldurulmuş gözüküyor. Anketi bir kez daha paylaştım sonradan gelenler için. Sizden ricam 2 dakikanızı ayırıp geri dönüş yaparsanız çok memnun olurum. Çünkü çok güzel yorumlar yazmışsınız. Yani kimine katılıyorum, kimine katılmıyorum ama hani çok içten ve objektif yazdığınızı düşünüyorum.
+
+37
+00:14:08,367 --> 00:14:18,087
+Zaten genelde bugüne kadar öğrencilere yorum yazdırdığımda anketteki puanlamadan daha çok yorumların çok daha yol gösterici olduğunu görüyorum, biliyorum.
+
+38
+00:14:18,567 --> 00:14:25,447
+O yüzden bunu yapıyorum. Yani sizin görüşlerinize değer veriyorum. Her ne kadar, her zaman sizin görüşlerinize katılmasam ve uygulayamasam da.
+
+39
+00:14:26,368 --> 00:14:32,667
+O yüzden hani geri kalan arkadaşlarımız da iki dakikalarını ayırıp anketi doldurularsa memnun olurum.
+
+40
+00:14:33,027 --> 00:14:36,127
+Saat 13.16.13.20'de derse başlayalım.
+
+41
+00:18:04,211 --> 00:18:29,972
+Evet arkadaşlar, yeniden merhaba. Anketi oldukça yüksek katılımla, yani derse katılanlardan bahsediyorum. Doldurdunuz. Çok teşekkür ediyorum vakit ayırdığınız için. Yazdığınızı hızlıca okudum. Bununla ilgili çok, şimdi vakit kaybetmeyelim. Dersle ilgili anlatacaklarımızı da geçelim. Ama şunu söyleyeceğim. Öncelikle, objektif ve olabildiğince içten yazdığınız için teşekkür ediyorum.
+
+42
+00:18:29,972 --> 00:18:55,591
+Tek mutlaka aklımda kalan ve beni mutsuz eden kısım bu interaktif olan kısımda sizlerle olan mutsuzluk düzeyimizdi. Siz de mutsuz oldunuz, ben de mutsuz oldum. Ona bir açıklık getireyim. Benim amacım kimseyi böyle tahtaya kaldırır gibi kaldırıp sözlüğe tutmak değil. Hiçbir zaman öyle olmadı. Beni tanıyan bir an bilir.
+
+43
+00:18:55,591 --> 00:19:10,711
+Tek amacım derse biraz katılımınızı arttırmaktı. Çok yanlış söyleyip defalarca fikrini belirtenler oldu. Hiçbir sıkıntı olmadı onlarla ilgili olarak. Sadece biraz üzerine düşünmenizi istediğim için bu kadar zorlayıcı oldum.
+
+44
+00:19:10,711 --> 00:19:21,731
+İki, beni üzen bir nokta var ve çok kabul etmediğim, o da dersi katılıp dersi dinlememek ve takip etmemek
+
+45
+00:19:21,731 --> 00:19:27,711
+Yani şu anda gördüğünüz gibi 80 kişilik derste genel olarak 50 kişi, 55 kişiyi pek aşmadık
+
+46
+00:19:27,711 --> 00:19:35,031
+Katılmayanlara diyecek bir şey mi yok? Tenli tercihlerdir, sonradan izliyorlardır, uygunlukları yoktur, başka sıkıntıları vardır
+
+47
+00:19:35,031 --> 00:19:36,832
+Hiçbir yorum yapmayacağım onlara
+
+48
+00:19:36,832 --> 00:19:43,771
+Ama katılıp da özellikle bilmiyorum cevabını verenlere de hiçbir sözüm yok
+
+49
+00:19:43,771 --> 00:19:45,551
+Cevap veremeyeceğim
+
+50
+00:19:45,551 --> 00:19:47,432
+İşte hocam o an kaçırdım
+
+51
+00:19:47,432 --> 00:19:52,252
+Hadi o da okey ama hiçbir cevap alamadıklarım beni üzen noktaydı
+
+52
+00:19:52,252 --> 00:19:54,612
+Ama bu kısmı geride bıraktığımızı düşünüyorum
+
+53
+00:19:54,612 --> 00:19:58,491
+Ben kendimi almam gerekenleri aldım
+
+54
+00:19:58,491 --> 00:20:04,311
+Bazı konularda daha farklı bir bakış açısıyla değerlendireceğim bundan sonraki sürenci
+
+55
+00:20:04,311 --> 00:20:11,951
+ama interaktif düzeye inanan, interaktif çalışmaya inanan ve bu konuda yorum paylaşan arkadaşlara teşekkür ediyorum.
+
+56
+00:20:12,031 --> 00:20:17,211
+Merak etmeyin. Yani bundan sonraki süreçte de tabii ki bunu tamamen bırakmayacağım.
+
+57
+00:20:17,372 --> 00:20:20,152
+Ama bunun daha bir dengesini bularak ilerleyeceğiz.
+
+58
+00:20:20,792 --> 00:20:23,432
+Diğer konulara daha sonra cevap vereceğim.
+
+59
+00:20:23,771 --> 00:20:25,131
+Müsait olduğumuz bir zamanda.
+
+60
+00:20:26,891 --> 00:20:28,792
+Tekrar teşekkür ediyorum değerli görüşleriniz için.
+
+61
+00:20:28,792 --> 00:20:34,792
+ve şimdi dersin geçen hafta tamamlayamadığımız bir örneğine geçeceğim.
+
+62
+00:20:35,471 --> 00:20:38,392
+Hemen ekranımı paylaşayım sizinle.
+
+63
+00:20:40,952 --> 00:20:45,452
+Şöyle yapalım. Önce videoyu durduralım. Sonra screen gelin.
+
+64
+00:20:48,452 --> 00:20:52,792
+Burada bir noktada...
+
+65
+00:21:05,076 --> 00:21:13,956
+Bu arada tabii başka bir şey söylemek isteyen veya sormak isteyen varsa o da sesli olarak sorabilir.
+
+66
+00:21:39,539 --> 00:21:44,539
+Share screenleyelim. Tahtamızı açalım.
+
+67
+00:21:48,692 --> 00:21:50,692
+sanırım görüyorsunuz diye tahmin ediyorum.
+
+68
+00:21:55,092 --> 00:21:55,731
+çoğunlarla.
+
+69
+00:22:06,451 --> 00:22:14,531
+Evet arkadaşlar, şimdi biz geçtiğimiz hafta Branch and Bound'u konuşmuştuk, backtracking'i konuşmuştuk.
+
+70
+00:22:14,591 --> 00:22:24,651
+Branch and Bound'un bu konuda maksimizasyon problemlerine çözüm bulmak için ortaya atılmış bir yaklaşım olduğunu değerlendirmiştik.
+
+71
+00:22:25,191 --> 00:22:30,511
+Bununla ilgili de bir tane örnek çözmüştük hatırlarsanız Branch and Bound'la ilgili olarak.
+
+72
+00:22:31,511 --> 00:22:36,051
+Burada işlerin kişilere dağıtılmasıyla ilgili bir örneğimiz vardı.
+
+73
+00:22:36,451 --> 00:22:39,871
+Şimdi bizim daha önce yakından gördüğümüz bir problem var.
+
+74
+00:22:41,211 --> 00:22:44,091
+Napsack problemi.
+
+75
+00:22:45,532 --> 00:22:59,312
+Bir hırsızın bir eve girdiğinde çuvalının kapasitesi el verdiği kadarıyla en yüksek değerli eşyaları seçmek için yaptığı çözüm üzerine konuşmuştuk.
+
+76
+00:22:59,312 --> 00:23:05,451
+Burada da bunu çözerken daha önce dinamik programlama kullanmıştık hatırlarsanız.
+
+77
+00:23:05,451 --> 00:23:14,951
+Şimdi branch and bound yaklaşımı ile bunu çözmek isteseydik nasıl çözel bir farklı bakış açısıyla değerlendirelim.
+
+78
+00:23:14,951 --> 00:23:30,511
+Burada 4 tane itemimiz var örnek olarak. Ağırlıkları 4, 7, 5, 3 olsun. Değerleri de 40, 42, 25 ve 12 olsun.
+
+79
+00:23:30,511 --> 00:23:41,051
+weightimiz, sınırımız 10 kilo olsun. Bu noktada nebsek kapasite olarak da bunu yazalım.
+
+80
+00:23:45,875 --> 00:24:12,575
+Bizim yapmamız gereken bir iş var. O da problemi çözmeye başlamadan önce, state space'imizi oluşturmadan önce bizim bu ağırlık başına değeri hesaplamamız gerekiyor. Ve buna göre bir kendimize sıralama belirlememiz gerekiyor.
+
+81
+00:24:12,575 --> 00:24:16,895
+Şimdi burada tesadüfen bunlar sıralı bir şekilde verilmiş oldu.
+
+82
+00:24:17,655 --> 00:24:27,795
+Örneğin birinci itemda ağırlık başına 10 değer varken, ikinci itemde 6 var, üçüncü itemde 5 var ve dördüncü itemde de 4 var.
+
+83
+00:24:27,795 --> 00:24:53,295
+Bizim ilk yapmamız gereken v1 bölü w1 büyük eşit v2 bölü w2 büyük eşit bu şekilde kaç tane item'ımız varsa bunu sıralayacak şekilde önce bir liste oluşturmamız.
+
+84
+00:24:53,295 --> 00:25:00,435
+Ondan sonra State Space Tree'e geçiş yapıyor olacağız
+
+85
+00:25:00,435 --> 00:25:04,195
+Tabi bir de upper bound'umuz var
+
+86
+00:25:04,195 --> 00:25:07,575
+Geçen sefer bir lower bound'dan bahsetmiştik
+
+87
+00:25:07,575 --> 00:25:10,375
+Burada da bir upper bound'dan bahsedeceğiz
+
+88
+00:25:10,375 --> 00:25:17,015
+İlk etapta bir şöyle bir ne diyelim
+
+89
+00:25:17,015 --> 00:25:20,215
+Bunu biraz daha büyük bir sayfada yapmak daha güzel olacak sanırım
+
+90
+00:25:25,619 --> 00:25:43,079
+Şurada ilk noktada elimizde V0, V0 varken bir upper bound ihtiyacı duyuyoruz. Bunu ifade etmek istiyoruz.
+
+91
+00:25:44,040 --> 00:25:51,999
+Upper bound'a baktığınızda ilk etapta eğer mümkün olsaydı birinci itemi almak isterdiniz.
+
+92
+00:25:51,999 --> 00:26:04,660
+ve birinci itemden 10 kilo alabilseydiniz ki daha önceki örneğimizde de hatırlarsanız çakışan işler vardı ama ona rağmen çakışmasına rağmen en küçük değerleri almaya çalışıyorduk.
+
+93
+00:26:04,660 --> 00:26:21,660
+Burada da 4 kilo olmasına rağmen ilk itemimiz kilo başına 10'luk bir değerle en üst sırada yer aldığı için ve buradaki çuvalımız da 10 kilo olduğu için bunu 10 kilo alabilseydik bizim upper bound'umuz 100 olabilseydik.
+
+94
+00:26:21,999 --> 00:26:50,179
+Yani eğer bu bahsettiğimiz item 10 kilo olsaydı biz burada yüzlük bir value oluşturmuş olacaktık. Ama tabii bu mümkün değil. Biz mümkün olanın peşinden gitmeye çalışacağız. Bu da iki yolla olacak. Ya o item'i alırsınız ya da o item'i almazsınız.
+
+95
+00:26:55,923 --> 00:27:08,703
+Önce birinci itemle yola çıkacağız. Birinci itemle yola çıktığımızda eğer o itemi almazsak doğal olarak weightimiz 0, volume 0,
+
+96
+00:27:14,067 --> 00:27:21,987
+ve bir de orada artık bir sonraki, iki, üç, dörde geçeceğimiz için bir upper bound belirlememiz gerekiyor.
+
+97
+00:27:22,767 --> 00:27:28,847
+Şimdi upper bound belirlerken ne yapacağız? Bir sonraki elemana bakacağız. Şu anda hiçbirini almadık.
+
+98
+00:27:28,927 --> 00:27:38,047
+İkinci item'a baktım. Benim için en yüksek olan, kilo başına düşen değer, ikinci örnekte olduğu için bundan 10 kilo alabilseydim ne olurdu diye bakıyorum.
+
+99
+00:27:38,047 --> 00:27:51,408
+60 olurdu. Buraya kadar geldim şimdi. Burada bu level'da diğer kısmı hesaplayacağım. Yani nereyi hesaplayacağım?
+
+100
+00:27:53,788 --> 00:28:03,767
+Biri dahil etmiş olsaydım ne olacaktı? Hemen ona bakalım. Biri dahil etmiş olsaydım weight'im 4 olacaktı.
+
+101
+00:28:03,768 --> 00:28:09,168
+volume 4 çarpı 10 üzerinden de gidebilirsiniz.
+
+102
+00:28:09,468 --> 00:28:10,867
+Total value üzerinden de gidebilirsiniz.
+
+103
+00:28:10,988 --> 00:28:12,968
+Aynı şey 40 olacaktı.
+
+104
+00:28:13,608 --> 00:28:16,608
+Gelelim burasının upper bound'unun kaç olacağına.
+
+105
+00:28:17,047 --> 00:28:18,228
+4 kiloyu kullandınız.
+
+106
+00:28:18,328 --> 00:28:19,088
+50'ler var 40.
+
+107
+00:28:19,767 --> 00:28:20,608
+Geriye kaç kaldı?
+
+108
+00:28:20,707 --> 00:28:21,728
+6 kilo kaldı.
+
+109
+00:28:22,148 --> 00:28:29,547
+6 kiloyu doğal olarak en yüksek kilo başına düşen değerli olan 6 ile çarpacaksınız.
+
+110
+00:28:29,748 --> 00:28:30,288
+36.
+
+111
+00:28:30,567 --> 00:28:31,688
+Üzerine ekleyeceksiniz.
+
+112
+00:28:31,687 --> 00:28:36,307
+76 en fazla bu değerlerle oluşturulabilir.
+
+113
+00:28:36,487 --> 00:28:38,047
+Ama constraintlere uymuyor.
+
+114
+00:28:38,407 --> 00:28:39,007
+O ayrı.
+
+115
+00:28:39,467 --> 00:28:41,427
+Biz sınırımızın 76 olduğunu biliyoruz.
+
+116
+00:28:41,427 --> 00:28:52,607
+Şimdi bu sefer 2 olmadan ve 2 olarak hesaplamamızı yapacağız.
+
+117
+00:28:53,507 --> 00:28:54,287
+Buraya geleceğim.
+
+118
+00:28:58,387 --> 00:29:21,247
+İkiyi işin içine kattığımda ağırlığı ikinci ayetimi yedi. Dörtte öncekinden geliyordu, on bir oldu. On bir olduğu anda artık ben bu noktada on bir büyük weight olduğu için artık bunun peşinden gitmeme gerek kalmayacak.
+
+119
+00:29:21,247 --> 00:29:27,547
+Çünkü artık constraintime uymuyor. Alttaki ihtimaller benim için elenmiş oldu.
+
+120
+00:29:28,387 --> 00:29:31,448
+Gelelim ikiye almasaydık ne olacaktı?
+
+121
+00:29:37,748 --> 00:29:58,748
+2'yi almasaydık, weight'im 4 olacaktı, volume gene 40 olacaktı ama bu sefer 2'yi almayacağım için geriye kalan 6 kiloyu 3. item'ın 5 değeriyle çarpacaktım, 30. 30-40 daha 70, upper bound'um 70 olacaktı.
+
+122
+00:30:00,327 --> 00:30:06,748
+Şöyle yazalım, her bir nodun, burası 0.
+
+123
+00:30:07,748 --> 00:30:10,828
+Burası 3, burası 4 olsun.
+
+124
+00:30:12,748 --> 00:30:17,867
+Peki şimdi doğal olarak ben upper bound'um 76 idi.
+
+125
+00:30:18,108 --> 00:30:21,608
+60 ile karşılaştırdığımda 76'nın peşinden gittim.
+
+126
+00:30:22,527 --> 00:30:24,987
+Şimdi aşağı indim upper bound'um hala 70.
+
+127
+00:30:25,987 --> 00:30:27,567
+Bu sefer 60'ın peşinden gitmiyorum.
+
+128
+00:30:28,307 --> 00:30:29,987
+Hala 70'in peşinden gidiyorum.
+
+129
+00:30:30,648 --> 00:30:32,547
+60'ın altında olma ihtimali de var.
+
+130
+00:30:32,547 --> 00:30:33,807
+Daha önce bunu görmüştük.
+
+131
+00:30:33,807 --> 00:30:38,247
+Ama şu an hep benim için best solution'un peşinden gidiyorum
+
+132
+00:30:38,247 --> 00:30:44,907
+Sonra benim için geri kalan buradaki iki nodun da olduğu gibi o solution'larla karşılaştıracağım
+
+133
+00:30:44,907 --> 00:30:50,207
+Ve hangisinin peşinden gitmem gerektiğini ya da bulduğum değerin doğru olup olmadığını
+
+134
+00:30:50,207 --> 00:30:54,387
+Without birim peşinden gitmem gerekip gerekmediğini orada göreceğim
+
+135
+00:30:54,387 --> 00:31:15,127
+Şimdi tekrar biz burada with 3, vidahat 3 yazalım. Vidahat 3'ü hesaplayalım. Vidahat 2 vardı. Vidahat 3 olursa gene 4'te kalacağım. Value gene 40'ta kalacak.
+
+136
+00:31:15,127 --> 00:31:28,147
+3'ü almazsam, 2'yi de almazsam geriye 4 kaldı. 6 kiloyu da 4 ile doldurduğumu düşünürsek 24. 40'a eklersem upper bound'um 64 olacak.
+
+137
+00:31:29,367 --> 00:31:38,367
+Gelelim bu tarafa. 3'ü alsaydım bu sefer weight'im 9 olacaktı.
+
+138
+00:31:38,367 --> 00:31:53,427
+volume 3'ü aldığım için 65 olacaktı. Şu anda 1 kiloluk açığım var. 1 kiloluk açığımı da geriye kalan 4 ile dolduracağım.
+
+139
+00:31:54,367 --> 00:32:00,468
+4'ün 1 kiloluk karşılığında 4 kilo. O zaman upper bound'um 69 olacak.
+
+140
+00:32:02,847 --> 00:32:07,547
+Buraya kadar geldi. Şimdi bir aşağı iniyorum.
+
+141
+00:32:08,367 --> 00:32:28,267
+4, 4 olsun. 4'e eklersem, 4'e eklediğimde benim kilo artık 12'ye çıkacak. Ve 12'ye çıktığı için burası feasible solution olmaktan çıkacak.
+
+142
+00:32:34,579 --> 00:32:35,279
+Çok pardon.
+
+143
+00:32:39,539 --> 00:33:08,079
+Gelelim 4'ü almasaydım. Wait'im 9 olacaktı. Volume 65 olacaktı. Ve burada artık Volume başka bir tane kalmadığı için 65 olacaktı. Bakıyorum 65 şunların da numaralarını vereyim ondan sonra. Şuna 5 diyelim, buna 6 diyelim, buna 7, buna 8 diyelim.
+
+144
+00:33:08,079 --> 00:33:18,479
+8. senaryo 2. senaryodan daha büyük olduğu için benim artık State Space Stream'de burada görmüş olduğunuz 2'nin peşinden gitmeme gerek yok.
+
+145
+00:33:19,359 --> 00:33:28,979
+Burası benim için artık değerlendirilmemesi gereken bir nokta haline dönüşüyor.
+
+146
+00:33:35,092 --> 00:33:56,811
+Çünkü upper bound'u zaten 60 olabiliyormuş. Benim elimde values'u 65 olan bir seçenek var. Ben otomatikman bu noktada kararımı vermiş oluyorum. Peki, burada uyguladığımız yaklaşımı hep best first branch and bound diye anlatıyoruz.
+
+147
+00:33:56,811 --> 00:34:23,331
+Şimdi şöyle bir noktamız da var. Onu da vurgulamakta fayda var. 8'de biz buna karar verdik. 8'den önce buna karar verebilir miydik? Yani 7 ve 8'e bakmadan 2'nin peşinden gitmememiz gerektiğine, en iyi sonuca değil ama 2'nin artık bir seçenek olmaktan çıktığına karar verebilir miydik? Evet verebilirdik aslında. Sercan?
+
+148
+00:34:23,331 --> 00:34:29,611
+Ha verebilirdik diyecektim ben de şeyde value 65 olduğu için 5'te
+
+149
+00:34:29,611 --> 00:34:32,971
+Bir yalnız bir yalnız soru gibi oldu benim de söyleyişim
+
+150
+00:34:32,971 --> 00:34:44,891
+Evet value 65 olduğu için upper bound 60 olduğu için aslında 5. node'a geldiğimizde hesapladığımızda 7 ve 8'e bakmadan 2'nin bir opsiyonu olmaktan çıktığını görmüş oluyoruz
+
+151
+00:34:44,891 --> 00:35:00,391
+Şimdi 4 tane item vardı. Biz bunu brute force yaklaşımla çözmeye kalksaydık. Kaç seçenekle inecektik? 2 üzeri 4, eksi 1. Yani 15 tane kontrol yapacaktık.
+
+152
+00:35:00,391 --> 00:35:12,051
+Şimdi buraya baktığınız zaman ne oldu? 1, 2, 3, 4, 5, 6, 7, 8, 9 tane yapmış oldunuz. Hani en kötü ihtimali söylüyorum size.
+
+153
+00:35:12,051 --> 00:35:25,772
+9 tane işlem yapmış oldunuz. Öbür tarafta 15 olacaktı. Bu 5'e çıktığında 31, 6'ya çıktığında item sayısı 63 şeklinde devam ediyor.
+
+154
+00:35:27,611 --> 00:35:41,691
+Kombinatörik bir problem. Yani tüm kombinasyonların işin içinde olduğu bir problem. Item sayısı arttıkça brute force yaklaşımın yetersizliği ortaya çıkıyor.
+
+155
+00:35:42,051 --> 00:35:56,491
+hem dinamik programlamada hem de branch and bound'da hedefimiz mümkün olduğunca bütün olasılıklara bakmadan hedefe doğru gitmek.
+
+156
+00:35:56,491 --> 00:36:05,692
+Bu noktada branch and bound'ın da aslında güzel bir kullanım şekli olduğunu burada görmüş oluyorsunuz.
+
+157
+00:36:05,771 --> 00:36:09,991
+Ama belki başka yerlerde de karşılaşırsınız.
+
+158
+00:36:09,991 --> 00:36:25,911
+Bu problemi çözmek için aslında farklı yaklaşımlar var. Bir haftaki önceki problem için de geçerli. Bunlardan bir tanesi Macar Algoritması.
+
+159
+00:36:25,911 --> 00:36:37,491
+bu problemlere göre polynomial time'da bir önceki problemi de çözebilecek bir algoritma.
+
+160
+00:36:38,491 --> 00:36:42,191
+Buna vaktiniz olursa bakarsınız, genel kültür olması açısından.
+
+161
+00:36:43,931 --> 00:36:46,231
+Bu tarz böyle çeşitli algoritmalar var.
+
+162
+00:36:46,231 --> 00:36:55,831
+İnternette de özellikle tavsiyem bizim bu derste anlattığımız algoritmik yaklaşımlar var.
+
+163
+00:36:55,911 --> 00:37:06,631
+Divide and Conquer, Decrease and Conquer, Transform and Conquer, dinamik programlama, branch and bound, işte graf yapısı kullanılarak çözümler.
+
+164
+00:37:07,271 --> 00:37:14,951
+Bu tarz çözümlere uygun olabilecek algoritmik problemleri internette çokça bulabilirsiniz.
+
+165
+00:37:14,951 --> 00:37:19,911
+Bence işte Bradford Search'in ne var, Debford Search'in ne var, hangi tür problemlerin
+
+166
+00:37:19,911 --> 00:37:21,911
+Müzik
+
+167
+00:37:20,307 --> 00:37:26,907
+bu tür yaklaşımlarla çözüldüğünü ya da bir problemin kaç farklı yaklaşımla çözülüp hangisinin daha eficiente olduğunu
+
+168
+00:37:26,907 --> 00:37:33,007
+genel kültürünüzü arttırmak adına öğrenmeniz çok faydalı olur. Özellikle yurt dışına gitmeyi düşünüyorlar arkadaşlarımız,
+
+169
+00:37:33,627 --> 00:37:43,527
+uluslararası şirketlerle çalışmayı düşünüyorlar, Google, Apple, ondan sonra başka ne söyleyeyim, Microsoft gibi şirketlerle,
+
+170
+00:37:43,527 --> 00:37:50,127
+Silicon Vadisi, bunlar gerçekten artık zor değil. Bizim mezunlarımız buralarda görev alıyor.
+
+171
+00:37:50,307 --> 00:37:57,607
+bu bahsettiğim firmaların her birinde en az bir mezunumuz var. O yüzden siz de hedefinizi büyük tutabilirsiniz.
+
+172
+00:37:58,328 --> 00:38:15,927
+Fakat buraların işe alımlarında özellikle veri yapılır algoritmalar, algoritma analizi konularında çok sıkı mülakatlar yaptığını, çok zor sorular değil ama biraz önceden bu konulara tekrar göz atmak gerektirecek bir hazırlık gerektirdiğini de sizlerle paylaşmış olayım.
+
+173
+00:38:15,927 --> 00:38:33,807
+sizleri orada görmekten mutluluk duyarız. Ben geçtiğimiz sene bir LinkedIn'de araştırma yaparken Facebook'ta mezunlarımızdan birinin Apple'da çalıştığını gördüm. Çok da mutlu oldum. Bunların sayıları son özellikle beş yılda yurt dışında çalışan sayısı çok arttı.
+
+174
+00:38:33,807 --> 00:38:51,867
+Tabii bir yandan bizim açımızdan çok güzel bir senaryo değil, ülkeden beyin göçü gerçekleşiyor ama şöyle düşünmek lazım, orada edinilen tecrübenin sonra buraya dönme ihtimali söz konusuysa katkı da sağlayabileceği yönünde düşünüyorum.
+
+175
+00:38:51,867 --> 00:39:02,608
+Yurt dışı tecrübesi her zaman insanın ufkunu açacak bir tecrübe, çok tavsiye ederim. Ben daha önce bunu yaşadım ve ayrısını çok gördüğümü söyleyebilirim.
+
+176
+00:39:02,607 --> 00:39:06,827
+Şimdi bu konuyla ilgili sorusu olan var mı?
+
+177
+00:39:18,068 --> 00:39:31,007
+Evet, bakıyorum. El kalktı mı diye. Evet, bir soru yok sanırım. Anlaşıldı diye tahmin ediyorum. Evet, bir soru geldi. Yasir.
+
+178
+00:39:31,747 --> 00:39:32,547
+Merhabalar hocam.
+
+179
+00:39:32,967 --> 00:39:33,687
+Merhaba Yasir.
+
+180
+00:39:34,828 --> 00:39:41,187
+Hocam şey, bundan önceki bir slide'a girebilir miyiz? O etleri falan oradan veriliyordu da.
+
+181
+00:39:41,427 --> 00:39:42,027
+Tabii, şunu.
+
+182
+00:39:42,107 --> 00:39:43,488
+Hemen bir bakmak istedim.
+
+183
+00:39:44,867 --> 00:39:45,187
+Burası.
+
+184
+00:39:45,988 --> 00:39:46,607
+Evet, evet.
+
+185
+00:39:47,247 --> 00:39:47,547
+Tamam.
+
+186
+00:39:48,068 --> 00:39:57,807
+Çok teşekkür ederim hocam. Çünkü oradan bir karşılaştırma yapmaya çalışıyordum. Verileri görmediğim sürece biraz aklıma şey yok.
+
+187
+00:39:57,807 --> 00:40:03,707
+Çok haklısın. O bir önceki sayfada kaldı sığmayacağı için. Ama şu anda sanırım gözüküyor.
+
+188
+00:40:05,547 --> 00:40:15,928
+Şimdi bu noktada biz bir sonraki konuya geçeceğiz. Ama Travelling Salesman problemini bilirsiniz.
+
+189
+00:40:15,928 --> 00:40:32,428
+Travelling Salesman problemi bir satıcının en tane şehre uğraması gerekliliği ve bu şehirlere en az zamanı harcayarak en kısa yoldan ulaşma ihtiyacından ortaya atılmış bir problemdir.
+
+190
+00:40:34,347 --> 00:40:37,847
+Maalesef NP-complete problemlerden bir tanesidir.
+
+191
+00:40:37,847 --> 00:40:46,527
+NP-complete, NP-P, NP-hard nedir biraz sonra birlikte konuşuyor olacağız ikinci bölümde.
+
+192
+00:40:47,288 --> 00:40:50,767
+Hamiltonian circuit probleminin aslında bir alt problemidir.
+
+193
+00:40:51,407 --> 00:41:04,347
+Hamiltonian circuit problemi de bir verilen grafta A noktasından başlayıp yine A noktasına dönen bir yol var mı diğer bütün noktalara uğrayarak bunun peşindedir.
+
+194
+00:41:04,347 --> 00:41:27,807
+birden fazla olabilir. Traveling Salesman bunların en kısa olanını bizim için arar. Hamiltonian Circuit'te böyle bir yol olup olmadığının peşindedir. Aralarındaki en önemli farklılıklar bu şekilde aktarılabilir. Traveling Salesman de Branch and Bound yaklaşımıyla çözülebilen bir algoritmadır.
+
+195
+00:41:27,807 --> 00:41:41,807
+Hatta burada özellikle komşu düğümlerin komşu düğümlerine olan uzaklıklarından kendisine en yakın iki tane komşunun uzaklığı alınır
+
+196
+00:41:41,807 --> 00:41:53,807
+ve onların ortalaması alınarak olası en kısa mesafeler lower bound olarak çıkartılır
+
+197
+00:41:53,807 --> 00:42:01,607
+ve işte burada istenilen o pardon upper bound olarak çıkartılır.
+
+198
+00:42:01,967 --> 00:42:06,367
+O upper bound'un ne noktasına kadar gidebiliyoruz?
+
+199
+00:42:06,527 --> 00:42:08,007
+Bunu bulmanın peşinde oluruz.
+
+200
+00:42:08,007 --> 00:42:18,527
+O yüzden branch and bound'la da bu tarz bir traveling salesman problemini çözebileceğimizi bilmenizde fayda var diye paylaşmak istedim.
+
+201
+00:42:19,607 --> 00:42:21,427
+Bu kısım da tamam sanırım.
+
+202
+00:42:21,428 --> 00:42:26,847
+Şimdi yavaş yavaş bir sonraki konuya geçeceğiz
+
+203
+00:42:39,027 --> 00:42:41,327
+Ya astır mikrofonunu kapatabiliriz sanırım.
+
+204
+00:42:41,527 --> 00:42:42,867
+Tamam, tamam. Çok pardon.
+
+205
+00:43:03,603 --> 00:43:05,603
+Evet, şimdi.
+
+206
+00:43:10,963 --> 00:43:33,523
+Aslında bu biraz da teorik olan kısım çok böyle kolay anlaşılması çok basit olan bir kısım değil. Bir kısmı rahatlıkla anlaşılıyor ama bir kısımdan sonrası biraz daha karışık hale geliyor. Bunu ben size aktarmaya çalışacağım.
+
+207
+00:43:33,523 --> 00:43:45,383
+Şimdi polinomyal zamanda çözülebilen problemler ve polinomyal zamanda çözülemeyen problemler aslında hayatımızda var.
+
+208
+00:43:46,663 --> 00:43:59,483
+Polinomyal zamanda çözülemeyen ama aslında yeterince güçlü bir cihaz olsaydı ya da işte yeterince vaktimiz olsaydı çözülebilecek problemler var.
+
+209
+00:43:59,484 --> 00:44:24,724
+Yeterince güçlü bir cihazımız ve vaktimiz olsa da çözülemeyecek problemler var. Bunlar da NP-hard problemler olarak adlandırılıyor. Şimdi 3 tip problemle karşı karşıyayız temel olarak. Bir tanesi polinomiyel zamanında çözülebilenler. Bizim çokça sıklıkla bu derste gördüğümüz aynı öğretmaların büyük bir çoğunluğu böyle ama bazıları polinomiyel zamanda çözülemiyor. Fakat çözümleri var.
+
+210
+00:44:24,724 --> 00:44:32,324
+Buna bir örnek vermek gerekirse, Traveling Salesman çok güzel, çok uygun bir tanesi
+
+211
+00:44:32,324 --> 00:44:40,764
+Traveling Salesman problemi, input sayısı küçük olduğunda sorun yok ama biz tabii ki input sayısının büyük olduğu kezleri konuşuyoruz
+
+212
+00:44:40,764 --> 00:44:50,764
+3, 5, 10 için problem yok ama input sayısı 1000, 10.000 noktasına geldiğinde ki örneğin dijital haritaları düşünün
+
+213
+00:44:50,763 --> 00:44:59,623
+şu anda üzerinde GPS servislerinin çalıştığı navigasyon cihazlarının 10 binlerce nokta var.
+
+214
+00:44:59,743 --> 00:45:09,543
+Siz her birini hesabın içerisine katarsanız oldukça zordur ki 10 bine gerek kalmadan 100 tane hedef koysanız bile kendinize
+
+215
+00:45:09,543 --> 00:45:17,243
+oldukça yüksek bir zamanda bu işi çözme olasılığınız var kağıt üstünde baktığınızda.
+
+216
+00:45:17,243 --> 00:45:20,423
+Şimdi önce definition 1 ile başlayalım.
+
+217
+00:45:20,764 --> 00:45:22,163
+yazalım.
+
+218
+00:45:27,123 --> 00:45:30,383
+Burada temel bilgileri öğrenmeniz yeterli bu konuyla ilgili.
+
+219
+00:45:39,219 --> 00:45:49,560
+Bu arada bir şey merak ediyorum. Çok alakasız bir soru soracağım. Sesli olarak cevap verebilirsiniz. Şu anda ben daha kalın bir font ile yazıyorum. Geçtiğimiz haftalara daha ince bir font ile yazıyordum. Hangisi daha iyi?
+
+220
+00:45:51,259 --> 00:45:53,199
+Geçen haftalardaki daha iyiydi sanki hocam.
+
+221
+00:45:53,979 --> 00:45:55,400
+Peki. Başka düşüncesi olan?
+
+222
+00:45:58,339 --> 00:45:58,980
+Hocam bence...
+
+223
+00:45:58,980 --> 00:46:02,579
+İnce de geçen haftaki daha iyiydi hocam. Bu biraz zor okunuyor.
+
+224
+00:46:03,199 --> 00:46:06,219
+Öyle mi? Tamam. O zaman hemen...
+
+225
+00:46:06,219 --> 00:46:09,599
+geçen haftakine dönelim
+
+226
+00:46:29,523 --> 00:46:38,423
+Tabii, genelde biz hep first case'i kendimize referans noktası alıyoruz. Bunu unutmamakta fayda var.
+
+227
+00:47:18,547 --> 00:47:21,667
+polynomial time'da çözülebilen problemler
+
+228
+00:47:21,667 --> 00:47:25,087
+tractable olarak
+
+229
+00:47:32,724 --> 00:47:34,224
+adlandırılıyor.
+
+230
+00:47:34,964 --> 00:47:37,343
+Polinomial time'da çözülemeyenler
+
+231
+00:47:49,619 --> 00:47:51,619
+Interactive olarak adlandırılıyor.
+
+232
+00:47:57,108 --> 00:48:05,108
+Polinomial time derken neyi kastediyoruz? Biliyorsunuz biz Big-O cinsinden ifade ettiğimizde
+
+233
+00:48:05,108 --> 00:48:15,347
+O-N, O-Logen, O-N-Logen, O-N-Kare, O-N-Küp hatta söylediğimiz durumlarla karşılaşıyoruz.
+
+234
+00:48:15,347 --> 00:48:27,547
+Ama en der birkaç tane en üzeri dört dışında daha yukarıda bir polinom düzeyiyle derece düzeyyle genelde karşılaşmıyoruz
+
+235
+00:48:27,547 --> 00:48:35,887
+Bu önemli bir nokta ve polinomlarda kullanılan kat sayılar da genelde çok büyük kat sayılar olmuyor
+
+236
+00:48:35,887 --> 00:48:46,307
+polinomlarla kıyasladığınızda, n'le kıyasladığınızda bizim bunu normal bir sürede çözmemizi engelleyecek herhangi bir kat sayı kullanımı söz konusu olmuyor.
+
+237
+00:48:47,747 --> 00:48:55,887
+Bu yaklaşımlar kullanılarak bugün aslında computational complexity'yi ifade edebiliyoruz.
+
+238
+00:48:55,887 --> 00:49:06,227
+bir algoritmanın computational kompleksini. Ama tabii polynomial time'da çözülemeyecek ifadeler de var.
+
+239
+00:49:06,227 --> 00:49:23,288
+İşte iki üzeri n, n faktörüel şeklinde düşünebilirsiniz. Bunlar bizim üzeri n, n üzeri n bazen, a üzeri n, işte n faktörüel, n artı bir faktörüel gibi ya da n artı k faktörüel gibi
+
+240
+00:49:23,288 --> 00:49:45,548
+çok istemediğimiz yüksek sayıda işlem yapılmasını gerektiren normal bir cihazın, çok kuvvetli bir cihazın bile eğer en büyükse bu problemi yıllar içerisinde ancak çözebileceği durumlar, problemler var.
+
+241
+00:49:45,547 --> 00:50:09,567
+Bunu tercih etmiyoruz. Peki polinomiyel problemleri aslında bir nevi anlatmış olduk. Şimdi gelelim definition 2'ye. Bu definition 1'di. Burada bir tane daha tanım yapacağız. Bu da P ile ilgili olacak.
+
+242
+00:51:08,115 --> 00:51:33,075
+Evet, şimdi baktığınız zaman problemlerin bir kısmı aslında decision problemi. Çoğunlukla biz şu ana kadar çok decision problemi olarak adlandırmadık ama bir problemi decision problemine çevirerek bu konuları çözüme götürmek çok daha işi kolaylaştırıyor.
+
+243
+00:51:33,075 --> 00:51:52,195
+örneğin bir grafın en az kaç renk ile iki yan yana komşu aynı renkte olmayacak kuralını gözeterek boyanacağını sormakla bir grafın üç renk ile en az boyanıp boyanmayacağını sormak birbirinden farklı.
+
+244
+00:51:52,195 --> 00:52:13,915
+Birinde siz sayıyı arıyorsunuz. Öbüründe sadece size verilen değerin mümkün olan bir çözüm olup olmadığına karar veriyorsunuz. İkisi birbirinden farklı. Birinde yes no cevabı var. Diğerinde bütün olasılıkları gözeterek en iyi sonuca gitme isteği var. Bunlar birbirinden farklı.
+
+245
+00:52:13,915 --> 00:52:23,555
+O yüzden biz polinomyal, non-polinomyal, non-deterministik polinomyal problemlerle ilgili anlatırken
+
+246
+00:52:23,555 --> 00:52:32,255
+öncelikle bu problemleri elimizdeki decision problemi olarak formülize etmeyi tercih ediyoruz.
+
+247
+00:52:32,975 --> 00:52:35,075
+Biraz sonra da bunu görüyor olacağız.
+
+248
+00:52:35,255 --> 00:52:38,715
+Şimdi saat 13.54 olmuş. 14.05'e kadar bir ara verelim.
+
+249
+00:52:39,155 --> 00:52:41,515
+Ondan sonra bu konuya devam edelim.
+
+250
+00:52:41,516 --> 00:52:44,136
+teşekkür ediyorum arkadaşlar. 10 dakika sonra görüşmek üzere.
+
+251
+01:03:14,228 --> 01:03:42,568
+Evet arkadaşlar, yeniden merhaba. Kaldığımız yerden devam edeceğiz. Biraz önce problemleri, decision problemleri olarak ele almanın bu konuyu anlatmak için çok önemli olduğundan bahsetmiştik. Problemlerin tractable ve interactable olmasını, zor güç olması, interactable çözülebilir, polinomi yazılmamında olması, tractable olarak adlandırmıştık.
+
+252
+01:03:42,568 --> 01:03:59,628
+Şimdi decision problemine olayı indirgediğiniz zaman o zaman iki tane aslında seçenekle karşı karşıyasınız. Bir tanesi undecidable, bir tanesi decidable.
+
+253
+01:03:59,627 --> 01:04:05,627
+Göreceksiniz ki birçok problem aslında decidable problemler
+
+254
+01:04:05,627 --> 01:04:14,747
+İşte traveling salesman probleminde de, maintaining circuit probleminde de, özellikle maintaining circuit probleminde
+
+255
+01:04:14,747 --> 01:04:23,147
+bir noktadan bir noktaya tüm noktalara uğrayarak gezilip gezilmediğini verilen bir kümeyle ortaya koyabilirsiniz
+
+256
+01:04:23,147 --> 01:04:37,247
+ya da traveling salesman probleminde yeterince süre olması durumunda gene verilen bir seçeneğin seçenek olup olmayacağını ortaya koyabilirsiniz.
+
+257
+01:04:37,247 --> 01:04:47,427
+Şimdi bir de undecidable yani ne kadar zamanınız olsa da sonucu oluşamayacağınız problemler var.
+
+258
+01:04:47,427 --> 01:05:06,327
+Çok klasik bir problem var, undecidable olarak anlatılan. Daha farklı problemler de var ama açıkçası en rahat anlaşılabilir versiyonu olan, en rahat anlatabilecek olan versiyon bu.
+
+259
+01:05:06,327 --> 01:05:12,987
+Burada bir tane bilgisayar programı düşünün ve buna bir input veriliyor.
+
+260
+01:05:12,987 --> 01:05:25,007
+Soru şu, bilgisayar programı bu inputla bir sonuç üretebilir mi yoksa bir sonsuz döngüye mi girer?
+
+261
+01:05:26,207 --> 01:05:27,668
+Buna karar vermeniz isteniyor.
+
+262
+01:05:27,668 --> 01:05:46,328
+Şimdi bunu karar verirken algoritmanın A algoritması olduğunu varsayalım. Hatta bunu bir sayfa sonradan başlatayım ki altına doğru yazma şansım olsun.
+
+263
+01:05:46,328 --> 01:05:56,228
+Bir A algoritması olsun. Hatta notasyonla yazayım. Bir tane P programı olsun.
+
+264
+01:05:57,668 --> 01:06:00,028
+bir tane de i inputu olsun.
+
+265
+01:06:02,968 --> 01:06:03,988
+A, P'yi
+
+266
+01:06:08,692 --> 01:06:09,891
+bir üretiyor
+
+267
+01:06:09,891 --> 01:06:11,891
+eğer
+
+268
+01:06:11,891 --> 01:06:13,291
+program
+
+269
+01:06:16,820 --> 01:06:37,539
+P, input I verildiğinde durursa. Diğer seçenekte program P herhangi bir şekilde I'de sonlanmıyor.
+
+270
+01:06:47,443 --> 01:06:53,503
+Şimdi, bu programın, imput olarak kendisini aldığını varsayalım.
+
+271
+01:06:55,784 --> 01:06:57,983
+Böyle bir ifadeyi yazalım.
+
+272
+01:06:59,503 --> 01:07:01,023
+Q, P
+
+273
+01:07:01,023 --> 01:07:04,683
+Haltz diyelim.
+
+274
+01:07:08,307 --> 01:07:18,307
+Aslında bu sorunun cevabı belli. Hakikaten bu sorunun bir cevabına karar vermek mümkün değil. Ama bu şu anda yazdığım ispatı
+
+275
+01:07:18,307 --> 01:07:21,228
+if A
+
+276
+01:07:21,228 --> 01:07:23,887
+PP
+
+277
+01:07:23,887 --> 01:07:28,828
+yani A algoritmasına
+
+278
+01:07:28,828 --> 01:07:32,207
+programın kendisi input olarak verilirse
+
+279
+01:07:32,207 --> 01:07:33,307
+sıfır
+
+280
+01:07:33,307 --> 01:07:34,627
+bu da
+
+281
+01:07:34,627 --> 01:08:04,607
+Kırmızı
+
+282
+01:07:48,179 --> 01:07:49,660
+input P diyelim.
+
+283
+01:07:52,239 --> 01:07:54,999
+Daha zaten alt. If A, P, P,
+
+284
+01:07:54,999 --> 01:07:57,379
+bir diyelim.
+
+285
+01:07:58,339 --> 01:08:00,239
+Şuraya da I, E diyelim.
+
+286
+01:08:01,359 --> 01:08:02,579
+If program
+
+287
+01:08:02,579 --> 01:08:06,419
+P
+
+288
+01:08:06,419 --> 01:08:09,459
+halts
+
+289
+01:08:09,459 --> 01:08:11,619
+on input P.
+
+290
+01:08:13,619 --> 01:08:15,539
+Son kısma geldik.
+
+291
+01:08:18,180 --> 01:08:20,740
+Q'yu P ile substitute edelim.
+
+292
+01:08:36,756 --> 01:08:39,115
+ve A'ya QQ diyelim.
+
+293
+01:08:41,095 --> 01:08:42,716
+Sıfır değerini verecek.
+
+294
+01:08:44,256 --> 01:08:45,395
+A QQ
+
+295
+01:08:45,395 --> 01:08:50,455
+1 olma koşulunu kontrol ediyoruz.
+
+296
+01:08:56,212 --> 01:08:57,212
+if program q does not halt,
+
+297
+01:09:06,739 --> 01:09:07,739
+on input q.
+
+298
+01:09:11,604 --> 01:09:21,843
+ikinci kısımda if program q
+
+299
+01:09:21,171 --> 01:09:24,491
+on input q.
+
+300
+01:09:27,112 --> 01:09:35,371
+Burada gördüğünüz gibi bir contradiction var. Bir tarafta q halt ediyor. If program q does not halt on input q.
+
+301
+01:09:36,491 --> 01:09:48,271
+Bir tarafta durduğunu varsaydığınız bir sonuç var ama eğer q durmazsa diyorsunuz. Diğer tarafta da q durursa on input q'da diyorsunuz.
+
+302
+01:09:48,271 --> 01:10:16,591
+program durmayacaktır diyorsunuz. Bu bir contradiction oluşturuyor ve bu aslında Alan Turing tarafından undecidable problem olarak atılan ortaya. Yani bir bilgisayar programının verilen bir input için acaba çalışmaya sonsuz bir döngüde devam edeceği mi yoksa bir sonuç üreteceğinin sorusunun cevabı undecidable.
+
+303
+01:10:16,591 --> 01:10:30,331
+bilinmez. İşte bu problemler, bu tür problemler için çok karşılaşmayacağınız zaman bu tür bazı özellikle matematiksel ifadelerde bunu bilmek çok önemli.
+
+304
+01:10:32,011 --> 01:10:39,271
+Tanımlayabilmek adına bunlar NP-hard problemler diye geçecek. Biraz sonra bunu konuşuyor olacağız.
+
+305
+01:10:39,271 --> 01:10:58,211
+Şimdi tabi burada polinomial time'da çözülemeyen ama decision olarak bir soru sorunuza cevabı alınabilen problemler var.
+
+306
+01:10:58,211 --> 01:11:08,731
+İşte Hamiltonian circuit problemi. Determine whether a given graph has a Hamiltonian circuit. Yani verilen bir grafta Hamiltonian circuit var mı yok mu sorusu.
+
+307
+01:11:09,271 --> 01:11:24,852
+Bu mesela bu tür kategoriye gelen bir problem. Napsack problemi. Normalde Napsack problemi polinomiyeli tarihinde çözülemeyen bir problem. Ama küçük ve uygun verilen inputlar için branch and bound ya da dynamic programlamayı da çözebiliyoruz.
+
+308
+01:11:26,011 --> 01:11:37,591
+N'in büyük olduğu değerler için daha çok konuşuyoruz. Partition problemi. Mesela verilen pozitif tam sayılardan oluşan bir kümeyi öyle bir yerden iki ayrı kümeyi ayırın ki
+
+309
+01:11:37,591 --> 01:11:49,892
+ikisinin toplamı eşit olsun. Bu da mesela non-deterministic polynomial problemler arasında geçiyor ve bunu polynomial time'da çözemiyorsunuz.
+
+310
+01:11:49,892 --> 01:11:58,811
+Graph coloring problemi aynı şekilde, integer linear programming problemi aynı şekilde bunlara örnek olarak verilebilir.
+
+311
+01:11:59,591 --> 01:12:03,171
+Şimdi devam edelim.
+
+312
+01:12:04,832 --> 01:12:05,532
+Definition
+
+313
+01:12:05,532 --> 01:12:07,532
+Müzik
+
+314
+01:12:09,171 --> 01:12:11,171
+3 ile
+
+315
+01:12:14,484 --> 01:12:19,603
+bir non-deterministik algoritma ile ilgili açıklama yazıyorum.
+
+316
+01:12:25,427 --> 01:12:36,388
+Dendeterministik algoritm bize two-stage procedure
+
+317
+01:12:38,195 --> 01:12:50,275
+That takes as its input an instance u
+
+318
+01:12:53,076 --> 01:12:57,875
+of a decision problem.
+
+319
+01:13:00,692 --> 01:13:03,071
+and does the following.
+
+320
+01:13:06,072 --> 01:13:09,492
+Şimdi following'de iki tane adımımız var.
+
+321
+01:13:11,572 --> 01:13:17,212
+Bir tanesi non-deterministic stage olarak adlandırılıyor.
+
+322
+01:13:22,836 --> 01:13:26,836
+ve bunun bir başka karşılığına guessing stage.
+
+323
+01:13:31,475 --> 01:13:46,255
+Burada şöyle bir açıklamamız var. An arbitrary, rastgele bir string as is generated.
+
+324
+01:13:50,804 --> 01:13:57,923
+that, pardon, can be taught.
+
+325
+01:14:00,692 --> 01:14:02,912
+of as a candidate.
+
+326
+01:14:08,275 --> 01:14:12,595
+solution to the given instance.
+
+327
+01:14:23,667 --> 01:14:39,088
+Bunun bir kendi soluşunu olma ihtimali de var. Bunun tamamen yanlış ve anlamsız bir çözüm olmalısında da var. Bu guessing stage.
+
+328
+01:14:50,579 --> 01:14:55,020
+Şimdi ikinci stage'dan bahsediyoruz. Deterministik.
+
+329
+01:14:59,859 --> 01:15:01,859
+Verification.
+
+330
+01:15:06,068 --> 01:15:13,587
+Stage. Deterministik algoritm.
+
+331
+01:15:23,507 --> 01:15:24,507
+takes both i and s as its input and output yes. If s represents
+
+332
+01:15:50,612 --> 01:15:56,291
+as solution to instance I.
+
+333
+01:16:01,811 --> 01:16:09,051
+If S is not a solution to instance, either algorithm either returns no or is allowed not to hold at all.
+
+334
+01:16:10,491 --> 01:16:21,511
+Şimdi biz buradan bir sonraki definition'a geçeceğiz ama şunu söylemekte fayda var.
+
+335
+01:16:21,511 --> 01:16:34,852
+bir nandeterministik algoritm eğer verification stage'i polinomiyal ise nandeterministik polinomiyal olarak adlandırılıyor.
+
+336
+01:16:34,852 --> 01:16:43,672
+Tekrar ediyorum bir nandeterministik algoritm yani ilk kısım guessing stage'in nandeterministik olduğuna karar verdiniz.
+
+337
+01:16:43,672 --> 01:17:07,332
+Ama bunun time efficiency, verification stage'inin yani verilen bir i ve as inputlarının sonucunda instance i için s yes olarak adlandırılıyorsa, verify edilebiliyorsa
+
+338
+01:17:07,331 --> 01:17:19,411
+biz buna non-deterministik polinomyal ifadesini söylüyoruz ki şimdi stage definition 4'teyiz ve definition 4'ü yazacağız.
+
+339
+01:17:21,751 --> 01:17:24,631
+Buna birazdan da bir örnek vereceğiz.
+
+340
+01:17:27,151 --> 01:17:36,211
+Class NP is the class of decision problems.
+
+341
+01:17:42,804 --> 01:17:47,284
+that can be sold
+
+342
+01:17:48,212 --> 01:17:51,991
+by non-deterministic
+
+343
+01:17:56,180 --> 01:17:57,639
+polinomyal algoritmamız.
+
+344
+01:18:06,131 --> 01:18:07,071
+This class.
+
+345
+01:18:10,739 --> 01:18:15,939
+is called. Şöyle yazalım. Şurayı biraz daha düz bir yazayım.
+
+346
+01:18:18,819 --> 01:18:21,299
+This class of problems
+
+347
+01:18:24,739 --> 01:18:26,179
+is called
+
+348
+01:18:28,819 --> 01:18:30,260
+non-deterministic
+
+349
+01:18:33,699 --> 01:18:34,259
+polynomial
+
+350
+01:18:39,155 --> 01:18:45,695
+Birçok decision problemi NP kategorisi altında adlandırılıyor.
+
+351
+01:18:46,955 --> 01:18:53,635
+NP problemlerin içerisinde P problemleri de yer alıyor.
+
+352
+01:18:54,135 --> 01:18:59,576
+Yani polinomiyal problemler aslında NP problemler polinomiyal problemleri kapsıyor.
+
+353
+01:18:59,576 --> 01:19:04,576
+Fakat şunu söyleyebilir miyiz hala soru işareti.
+
+354
+01:19:04,576 --> 01:19:30,196
+işareti. Henüz bu teorik olarak ispatlanmış bir şey değil. Tabii biz polynomial ve non-polynomial'dan bahsederken bir de şunu söylemekte fayda var. Non-deterministic polynomial dediğiniz zaman bir şeyin verification stage'inin polinomial olması gerekir dedik.
+
+355
+01:19:30,195 --> 01:19:47,255
+onun time efficiency'sini buna bir örnek vermek gerekirse örneğin bir traveling sales probleminde, traveling salesman probleminde ya da hamiltonian circuit probleminde ya da graph coloring probleminde
+
+356
+01:19:47,255 --> 01:20:03,196
+siz oradaki en az kaç renk ile boyanabilir sorusunu sorduğunuzda bunun cevabını non-deterministik pardon bunun cevabını polinomiyen time içerisinde veremiyorsunuz.
+
+357
+01:20:03,196 --> 01:20:07,195
+Ama bunu decision problemine dönüştürdüğünüzde şunu söyleyebiliyorsunuz.
+
+358
+01:20:07,196 --> 01:20:15,956
+benim grafımı en az 3 renkli boyasam bu olur mu?
+
+359
+01:20:16,295 --> 01:20:20,096
+Sorusuna evet ya da hayır cevabını verebiliyorsunuz.
+
+360
+01:20:20,176 --> 01:20:27,895
+Boyanacak renk sayısı en az 3 olmalıdır diye sorduğunuzda artık siz onu verify etme şansına sahip oluyorsunuz.
+
+361
+01:20:28,736 --> 01:20:32,056
+Burası önemli bu verification stage.
+
+362
+01:20:32,196 --> 01:20:33,916
+Gelelim NP-complete problemlere.
+
+363
+01:20:48,340 --> 01:20:50,340
+Evet, Definition 5
+
+364
+01:21:00,212 --> 01:21:01,731
+A decision problem.
+
+365
+01:21:05,331 --> 01:21:05,971
+D1
+
+366
+01:21:05,971 --> 01:21:08,891
+is said to be
+
+367
+01:21:08,891 --> 01:21:11,012
+D1
+
+368
+01:21:13,203 --> 01:21:23,811
+polynomially reducible.
+
+369
+01:21:28,532 --> 01:21:30,532
+to a decision problem.
+
+370
+01:21:35,412 --> 01:21:36,191
+D2
+
+371
+01:21:36,191 --> 01:21:43,912
+if there exists
+
+372
+01:21:44,627 --> 01:22:05,507
+a function t that transforms instances of d1 to instances of d1.
+
+373
+01:22:10,579 --> 01:22:15,579
+of D2, such that
+
+374
+01:22:21,235 --> 01:22:27,716
+One, tmaps, all ES instances.
+
+375
+01:22:32,467 --> 01:22:33,467
+of D1 to yes instances of D2 and all no instances
+
+376
+01:22:52,467 --> 01:22:56,067
+D1, 2, no instances.
+
+377
+01:23:01,300 --> 01:23:12,159
+of D2. Bu birincisi. İkincisi de T is computable.
+
+378
+01:23:13,235 --> 01:23:22,036
+by a polynomial time algorithm.
+
+379
+01:23:27,956 --> 01:23:48,395
+Şimdi öncelikle polynomial reducible olma definition yaptık. Bir D1 probleminin polinomyal olarak bir D2'nin D2'ye reduce edilip edilemediğini yani bir problemin bir alt problemi reduce edilip edilemediğini
+
+380
+01:23:48,395 --> 01:24:09,915
+onun tüm aldığı yes cevaplarının D2 içine geçerli olmasını, D1'in aldığı tüm no instanslarına D2 geçerli olmasını ve aynı zamanda bu t fonksiyonunda polynomial time'da bir algoritma ile hesaplanabilir olmasını söylüyoruz.
+
+381
+01:24:09,915 --> 01:24:12,155
+Şimdi son definition'umuza geliyorum.
+
+382
+01:24:16,916 --> 01:24:22,035
+Definition, alt, a decision problem.
+
+383
+01:24:27,859 --> 01:24:35,859
+D is said to be NP-complete,
+
+384
+01:24:38,228 --> 01:24:39,228
+if bir, it belongs to class NP ki every problem
+
+385
+01:24:56,756 --> 01:25:11,555
+in NP is polynomially reducible 2D.
+
+386
+01:25:13,235 --> 01:25:33,496
+Şimdi şöyle bir grafik çizecek olursak, bu noktada sizin bir probleminiz var. Bu problem size ait olsun. Bu problemlerden, bu uzayda yer alan NP problemlerinden, NP problems diyelim.
+
+387
+01:25:33,496 --> 01:25:50,096
+Bütün bu problemler sizin ortaya attığınız bu problemi indirgenebiliyorsa işte o zaman buna NP-complete problem diyoruz.
+
+388
+01:25:51,916 --> 01:25:58,975
+Nedir? Buna en güzel verilebilecek örnek Hamiltonian Circuit'ta Travelling Salesman problemi.
+
+389
+01:25:58,975 --> 01:26:11,575
+Travelling Salesman problemini Hamiltonian Circuit problemine indirgeme şansına sahipsiniz.
+
+390
+01:26:11,575 --> 01:26:28,575
+Bu noktada bir tarafta siz Hamiltonian Circuit problemini çözmeye çalışırken bir noktadan başlayıp grafın aynı noktasına dönen bir circuit olup olmadığını kontrol ediyorsunuz.
+
+391
+01:26:28,975 --> 01:26:36,575
+öbür tarafta ise bunun en kısa olanını bulmaya çalışıyorsunuz Traveling Salesman'da.
+
+392
+01:26:36,575 --> 01:26:43,956
+İşte bunlar birbirlerine indirgenebilir problemler oldukları için NP-complete olarak tarifleniyorlar.
+
+393
+01:26:44,735 --> 01:26:56,096
+Bu noktada bizim için kritik olan şey bu problemlerin verification stage'lerinin yani bir graph kümesi verildiğinde
+
+394
+01:26:56,096 --> 01:27:03,716
+bunun Hamiltonian circuit özelliği taşıyıp taşımadığına verilebilecek bir yes cevabının ya da no cevabının olması.
+
+395
+01:27:04,935 --> 01:27:15,956
+Ama tüm Hamiltonian circuitları bulmak, bir graf içerisinde bütün olasılıkları denemek polinomiyel bir zamanda mümkün olmadığı için
+
+396
+01:27:15,956 --> 01:27:21,536
+bu bahsettiğimiz problem NP problemleri arasında gösteriliyor.
+
+397
+01:27:21,536 --> 01:27:32,715
+Aynı zamanda bir problemin, bir decision probleminin NP-complete olabilmesi için sadece NP problemler arasında yer alması gerekmiyor
+
+398
+01:27:32,715 --> 01:27:42,575
+NP problemlerinin hepsinin kolinomiyel olarak bu bahsettiğimiz D problemine reduce edilebilmesi gerekiyor
+
+399
+01:27:42,575 --> 01:27:44,855
+NP-complete problemler de bunlar
+
+400
+01:27:44,855 --> 01:27:50,415
+ve tabii bir de NP-complete'in ötesinde NP-hard problemler var.
+
+401
+01:27:50,415 --> 01:27:53,415
+NP-hard problemleri de söylemiştik.
+
+402
+01:27:54,596 --> 01:28:05,055
+Biraz önceki halting problem, polinomial zamanda çözülemeyen, aynı zamanda verification'ı da polinomial zamanda yapılamayanlar.
+
+403
+01:28:05,635 --> 01:28:14,176
+Bu yüzden verification noktasını polinomial zamanda yapamıyorsanız bu bir NP-hard problem.
+
+404
+01:28:14,176 --> 01:28:25,515
+Verification kısmını polinomini zamanında yapabiliyorsanız ve diğer problemlerde bu probleminizi indirgenebiliyorsa NP-complete olarak bunları adlandırmış oluyoruz.
+
+405
+01:28:26,056 --> 01:28:29,676
+Evet şimdi sorusu olan varsa sorusunu cevaplamaya çalışayım.
+
+406
+01:28:36,467 --> 01:28:37,007
+Evet, Efe.
+
+407
+01:28:37,927 --> 01:28:44,027
+Hocam ben bir şey soracaktım da, bu konu böyle sözel bir konu mu yoksa örnekler olacak mıydı?
+
+408
+01:28:45,027 --> 01:28:51,207
+Şöyle, bu problemle ilgili olarak biraz önce aslında bazı şeyleri konuştuk.
+
+409
+01:28:51,787 --> 01:28:57,587
+Örnek verelim. Bir dizinin maksimum elemanını bulmak, bir dizinin minimum elemanını bulmak.
+
+410
+01:28:57,667 --> 01:28:59,308
+Bunu polinomiya zamanında yapabilirsiniz.
+
+411
+01:28:59,967 --> 01:29:02,327
+Ya da bir maddesi diğer maddesine çarpmak.
+
+412
+01:29:02,447 --> 01:29:04,867
+Bunun karmaşıklığı nedir Efe?
+
+413
+01:29:06,467 --> 01:29:35,787
+En küptür. Bu da ne kadar n sayısı büyük olursa olsun polinomi zamanında hesaplanabilir. Ama örnek veriyorum bir kümenin öyle bir noktadan ayrılsın ki bir tarafta kalan grupladaki pozitif sayıların diğer taraftakilerle eşit olup olmadığını, böyle bir sözüm olup olmadığını bulan problem
+
+414
+01:29:35,787 --> 01:29:44,947
+normalde n'in kombinasyonları gerektirir. Burada da iki üzeri n'lik bir ifadeden bahsediyoruz.
+
+415
+01:29:45,447 --> 01:29:49,927
+Hepsinin denenmesi gerekir ve bunun karşılığında da geri kalanların toplamının alınması gerekir.
+
+416
+01:29:49,927 --> 01:29:54,107
+Bu n sayısı 1000 olduğu zaman bunun polinomiyal zamanında çözülme ihtimali yoktur.
+
+417
+01:29:54,887 --> 01:30:00,807
+Bu bir NP yani non-deterministik polinomiyal problemidir.
+
+418
+01:30:01,427 --> 01:30:05,467
+Ama bunun bir verification stage'i vardır. Nedir bunun verification stage'i?
+
+419
+01:30:05,467 --> 01:30:18,008
+sen söyleyebilirsin muhtemelen. Bu ikiye disjoint, two disjoint sets elde etme problemine ne sorarsak bunu verification stage'e olur. Yes ya da no.
+
+420
+01:30:19,728 --> 01:30:22,607
+Yani o eşit bölümdü diye mi sorarsan?
+
+421
+01:30:23,148 --> 01:30:32,387
+Eşit bölümdü mü diye demeyelim. Şu seti verdiğimizde, şu noktadan böldüğümüzde bu problemin koşulunu sağlıyor mu, sağlamıyor mu?
+
+422
+01:30:32,947 --> 01:30:33,908
+Orta nokta.
+
+423
+01:30:33,907 --> 01:30:46,507
+Ya orta nokta ya da istersen 3 tanesini bir kümeye koy, 8 tanesini başka bir kümeye koy ya da 1000 tanesini bir kümeye koy, 2000 tanesini başka bir kümeye koy. Bu problemi böyle verdiğin zaman bunun cevabı var mı?
+
+424
+01:30:47,427 --> 01:30:48,067
+Yani yok.
+
+425
+01:30:48,127 --> 01:30:48,307
+Var.
+
+426
+01:30:49,267 --> 01:30:52,507
+Öyle böldüğümüzde var. Toplamda yok ama.
+
+427
+01:30:52,507 --> 01:31:03,007
+Herhangi bir opsiyonu bu bir çözüm müdür diye sorduğumuzda verification stage bu. Bize bir cevap dönüyor mu? Dönüyor.
+
+428
+01:31:03,007 --> 01:31:07,027
+bakıyoruz, topluyoruz, eşitliği değil mi diye bakıyoruz. Ya yes, ya no dönüyor.
+
+429
+01:31:10,107 --> 01:31:10,707
+Burası okey mi?
+
+430
+01:31:11,187 --> 01:31:11,867
+Evet, anladım.
+
+431
+01:31:12,747 --> 01:31:18,787
+İşte buna evet veya hayır cevabını polynomial time'da verebildiğimiz için
+
+432
+01:31:18,787 --> 01:31:24,367
+bu bizim için artık verification stage'i
+
+433
+01:31:24,367 --> 01:31:29,127
+polynomial zamanında çözülebildiği için bir NP problem haline dönüşüyor.
+
+434
+01:31:29,127 --> 01:31:32,367
+Problemin kendisini polynomial zamanında çözemiyoruz.
+
+435
+01:31:32,367 --> 01:31:36,707
+ama probleme verdiğimiz bir inputun yes mi no mu olduğu cevabını verebiliyoruz.
+
+436
+01:31:38,007 --> 01:31:38,847
+Buraya kadar ok miyiz?
+
+437
+01:31:38,947 --> 01:31:39,587
+Anladım.
+
+438
+01:31:39,587 --> 01:31:52,307
+Tamam. Şimdi bir tek öteye götürdüğümüz zaman NP-complete kısmına getirdiğimiz zaman bu problemleri belirli noktalara indirgeme işlemi yapıyoruz.
+
+439
+01:31:52,427 --> 01:31:55,447
+Polinomiyal olarak belli problemlere dönüştürüyoruz.
+
+440
+01:31:55,447 --> 01:32:07,328
+bunun güzel örneği de Traveling Salesman probleminde biz aslında en küçük, en kısa mesafe, en şehre uğrama problemiyle uğraşıyoruz.
+
+441
+01:32:07,328 --> 01:32:23,128
+Ama Hamiltonian Circuit'ta biz aslında verilen bir örneğin ne diyelim, işte A noktasına tekrar A noktasına dönülüyor mu şeklinde bir küme verildiğinde
+
+442
+01:32:23,127 --> 01:32:27,267
+bunun cevabını yes ya da no olarak verebiliyoruz.
+
+443
+01:32:28,275 --> 01:32:37,236
+Travelling Salesman problemini de Hamiltonian Circuit problemine indirgeyebiliyoruz polinomiyel olarak. O zaman diyoruz ki bu bir NP-complete problem.
+
+444
+01:32:38,395 --> 01:32:40,076
+Anladım hocam, teşekkür ederim.
+
+445
+01:32:40,475 --> 01:32:57,315
+Ama bu bahsettiğim hali açıkçası çok küçük bir örnek. Bunun çok daha farklı örnekleri var. Bu konuya biraz daha zaman ayırmak gerekiyor.
+
+446
+01:32:57,315 --> 01:33:04,895
+Ama bilmeniz gereken şey şu, halting problem, biraz önce undecidable olarak verdiğimiz problem, NP-hard bir problem
+
+447
+01:33:04,895 --> 01:33:16,615
+Yani hem guessing stage'i hem de verification stage'i bir soru sorduğumuz zaman, polynomial time'da çözülemeyen bir problem
+
+448
+01:33:16,615 --> 01:33:18,095
+İşte bu NP-hard
+
+449
+01:33:18,095 --> 01:33:36,735
+Eğer çözülebiliyorsa bu NP problem, verification stage'i çözülebiliyor ve mevcut NP problemlere indirgenebiliyorsa NP problemler havuzundaki o zaman bu bir NP-complete problem.
+
+450
+01:33:37,035 --> 01:33:44,216
+Yani bunun NP non-deterministik polinomyal bir problem olduğu ortaya konmuş bir problem oluyor.
+
+451
+01:33:44,215 --> 01:33:48,755
+Evet başka sorusu olan var mı?
+
+452
+01:33:51,755 --> 01:33:54,455
+Hocam önceki sayfaya gelmeniz mümkün mü?
+
+453
+01:33:54,995 --> 01:33:56,035
+Önceki sayfa
+
+454
+01:33:56,035 --> 01:33:57,935
+Teşekkür ederim
+
+455
+01:33:57,935 --> 01:33:58,615
+Hemen girelim
+
+456
+01:34:33,524 --> 01:34:36,524
+Evet, bu tanımları bir kez de siz de gözlem geçirirsiniz.
+
+457
+01:34:37,403 --> 01:34:46,864
+Polynomial problemlar, NP-non-deterministlik polynomial problemlar, NP-complete problemlar ve NP-hard problemler.
+
+458
+01:34:47,984 --> 01:34:49,243
+Bu kısım önemli.
+
+459
+01:35:04,787 --> 01:35:09,327
+Evet, şimdi size birkaç bilgi daha vereceğim.
+
+460
+01:35:28,595 --> 01:35:31,915
+Şimdi şöyle çizimler de var. Bunlarla da karşılaşabilirsiniz.
+
+461
+01:35:34,556 --> 01:35:36,536
+Farklı şekilde ifade ediliyor.
+
+462
+01:35:37,396 --> 01:35:39,235
+NP-hard olan problemler.
+
+463
+01:35:41,375 --> 01:35:43,615
+NP-complete olan problemler.
+
+464
+01:35:46,696 --> 01:35:47,795
+Şöyle çizeyim.
+
+465
+01:35:51,636 --> 01:35:55,815
+NP-problemler ve polynomial problemler.
+
+466
+01:35:56,735 --> 01:36:01,415
+NP-problemler, NP-complete ve polynomial problemleri kapsıyor.
+
+467
+01:36:02,315 --> 01:36:12,175
+Bu noktada varsayımımız P ile NP-problemlerin, yani polynomial ve non-deterministik polynomial problemlerin
+
+468
+01:36:12,175 --> 01:36:17,035
+aynı olmadığı senaryo için ortaya atılan bir gösterim şekli.
+
+469
+01:36:17,035 --> 01:36:26,656
+Öte yandan bir de bunun eşit olduğu senaryo var ama daha çok bu bahsettiğim şu andaki figür kullanılıyor.
+
+470
+01:36:27,375 --> 01:36:33,515
+Burada NP-complete problemleri görüyorsunuz. Bunlar aynı zamanda NP-hard havuzunun da bir parçası.
+
+471
+01:36:33,515 --> 01:36:48,175
+Buradan da şu çıkıyor, NP-complete olan bir problem, NP-hard olarak okumen içerisinde sayılabilir ama NP-hard olan bir problemin NP-complete olacağının bir garantisi yok.
+
+472
+01:36:48,175 --> 01:36:56,335
+NP-complete olmayabilir. Bu da non-verification stage'inin polinomi zamanında çözülemediği anlamına geliyor.
+
+473
+01:36:56,335 --> 01:37:12,895
+Bu verification stage'i çok önemli. Verdiğiniz bir input için bir output üretebiliyor olması, polinomiyal bir zamanda bir algoritma için çok çok önemli. Sormanız gereken en önemli soru bu.
+
+474
+01:37:13,136 --> 01:37:25,275
+Evet şimdi gelelim önümüzdeki hafta ne olacağına. Önce o kısmı konuşalım. Önümüzdeki hafta dördüncü ödevinizin çözümü olacak ders saatinde.
+
+475
+01:37:26,335 --> 01:37:38,875
+Arkasından dördüncü ödevinizle ilgili gene daha önceki ikinci ödevde yaptığımız gibi bir değerlendirme yapmanız beklenecek.
+
+476
+01:37:38,996 --> 01:37:46,735
+Rastgele seçilerek aramızdan onlara sorular sorulacak ve ödevinizi anlatmanız istenecek.
+
+477
+01:37:47,415 --> 01:37:53,636
+Dersin ve laboratuvar saatinin içerisinde ne zaman tamamlanırsa bu süreç içerisinde dördüncü ödevimizi gerçekleştirmiş olacağız.
+
+478
+01:37:53,636 --> 01:38:08,755
+Bir sonraki önemli noktaya gelelim. O da dönem projeniz. Dönem projenizle ilgili eleştiriler bugünkü anket üzerinden de geldi. Dönem projenizle ilgili ne tasarladığınızı söyleyeyim ondan sonra eleştirilere cevap vereceğim.
+
+479
+01:38:08,755 --> 01:38:18,455
+dönem projenizi önümüzdeki hafta sonuna kadar vermiş olacağız. Yani bu ödevinizin süresi bitmeden dönem projenizi vermiş olacağız.
+
+480
+01:38:18,455 --> 01:38:28,155
+Şimdi bu noktada hedefimiz şu, hedefimiz önümüzdeki bir hafta içerisinde, 8-9 günlük süre içerisinde yani ödeviniz tamamlandıktan sonra
+
+481
+01:38:28,155 --> 01:38:34,975
+pazartesi finaller başlayana kadar süre içerisinde bitirebileceğiniz bir dönem projesi ödevi size vermek.
+
+482
+01:38:34,975 --> 01:39:01,755
+Ama süreyi o kadar vermeyeceğiz. Süreyi daha uzun vereceğiz. Süreyi en az iki hafta olacak şekilde vereceğiz. Böylece final programınıza bağlı olarak önünüzde aslında toplamda üç hafta sonu olacak. Bu hafta sonu, cumartesi, pazar, ondan sonraki hafta sonu ve ondan sonraki hafta sonu. Bu sürede de dönem ödevenizi tamamlamanızı bekleyeceğiz.
+
+483
+01:39:01,755 --> 01:39:08,275
+teslimlerinizde muhtemelen bir sonraki yani 3 hafta sonraki pazar günü olacak gibi düşünebilirsiniz.
+
+484
+01:39:08,935 --> 01:39:11,595
+Aşağı yukarı söylüyorum şu anda netleştirmedik.
+
+485
+01:39:13,175 --> 01:39:24,496
+Dönem projenizde dediğim gibi süre olarak böyle bir süreniz olacak ama yapacağınız ödev olarak bundan daha kısa bir haftalık
+
+486
+01:39:24,496 --> 01:39:31,115
+yani bu bir haftadan bahsettiğim de sürekli oturarak değil oturduğunuzda en fazla 2-3 günde çözebileceğiniz
+
+487
+01:39:31,115 --> 01:39:40,375
+2-3 günde söylerken tekrar ediyorum. Full, 10 saattan bahsetmiyorum. Belirli periyotlarla çözebileceğiniz bir ödev veriyor olacağız.
+
+488
+01:39:40,735 --> 01:39:50,115
+Tabii ki burada bu bizim gözümüzden böyle olacak. Sizin gözünüzden de aksi bir durum olursa bu süreçte süreyle ilgili...
+
+489
+01:39:50,612 --> 01:40:15,792
+talep olursa talebinizi iletirsiniz. Biz de gerekli değerlendirmeyi yaparız. Şimdi gelelim eleştiriler kısmına. Öncelikle 39 kişiye geri dönüş yapmış. 39 kişinin 21'i de görüşlerini metin şekilde ifade etmiş.
+
+490
+01:40:15,792 --> 01:40:25,431
+Öncelikle olumlu eleştirilerinizi teşekkür ederim. O kısmı kenara bırakıyorum. Gelelim sizin şikayetçi olduğunuz kısımlara.
+
+491
+01:40:26,332 --> 01:40:30,792
+Bir, en çok şikayetçi olduğunuz kısım dönem projesinin geç veriliyor olması.
+
+492
+01:40:31,172 --> 01:40:39,171
+Dönem projesinin geç veriliyor olmasının birkaç sebebi var. Bir tanesi ödevlerinizin dört tane olması.
+
+493
+01:40:39,311 --> 01:40:45,431
+Bundan dolayı da belli bir akışta dönem projesinin sona kalması.
+
+494
+01:40:45,792 --> 01:41:11,431
+Şimdi bunu yıllardır takip ediyoruz. Buradaki ders programını da açıp baktım, Selimus'a da. Belirli konular var. O konuları işlem eden bazı ödevleri verme şansınız yok. Bir arkadaşınız sort algoritmalarını görmüştük daha önce. Onlarla ilgili belki dönem başında erken bir tarihte ödev verilebiliriz dediğim. Olabilir, olmaz demiyorum. Ama bizim amacımız bu derste anlattıklarımızı daha iyi pekiştirecek ödevler vermek olduğu için
+
+495
+01:41:11,431 --> 01:41:16,931
+zaten ilk edebimizi en erken dördüncü hafta verebiliyoruz ki buna uygun bir şekilde verdik.
+
+496
+01:41:17,431 --> 01:41:23,951
+Arkasından ki divide and compute ile ilgili bir problem diye yanlış hatırlamıyorsam
+
+497
+01:41:23,951 --> 01:41:28,552
+arkasından dinamik programlama kısmı geliyor, hash geliyor.
+
+498
+01:41:28,772 --> 01:41:31,951
+Bunlarla ilgili de ödevleri konular bittikten sonra verdik.
+
+499
+01:41:32,531 --> 01:41:33,751
+Aslında burada da bir sorun yok.
+
+500
+01:41:33,751 --> 01:41:40,131
+Ama tabii doğal olarak graph, branch and bound konuları sona kaldığı için
+
+501
+01:41:40,131 --> 01:41:42,691
+bunlarla ilgili ödevler de sona kalıyor.
+
+502
+01:41:43,631 --> 01:41:51,431
+Bu sene haklı olduğunuz şey şu, ki birçok arkadaşınız bunu yazarken belirtmiş, onlara da teşekkür ediyorum objektif oldukları için.
+
+503
+01:41:52,151 --> 01:41:57,571
+Bu sene pandemi dolayısıyla tüm hocaların ödev sayılarını çok arttırmış olması.
+
+504
+01:41:57,991 --> 01:41:58,791
+Sıkıntı burada.
+
+505
+01:41:59,612 --> 01:42:04,711
+Yoksa bu dersin işlenişiyle ilgili olarak bu seneye özel bir artış söz konusu değil.
+
+506
+01:42:04,711 --> 01:42:12,791
+bunları tekrar tekrar anlatıyorsunuz diyebilirsiniz. Bunlar bizi tatmin etmiyor diyebilirsiniz.
+
+507
+01:42:12,791 --> 01:42:20,991
+Hep size saygım sonsuz ama bu gerçekten böyle bizim açımızdan. Ben kendi fikrimi sizinle şu anda paylaşıyorum.
+
+508
+01:42:22,331 --> 01:42:32,951
+Bu noktada biz pandeminin ve diğer derslerin sayılarının arttırmasından dolayı sizin bu zor durumunuzu anlıyoruz.
+
+509
+01:42:32,951 --> 01:42:40,151
+Bunun için de gerçekten ödevleri seçerken çok uzun sürmeyecek ödevler vermeye çalışıyoruz. Zorlanmayacağımız.
+
+510
+01:42:40,651 --> 01:42:51,491
+İkinci eleştiri ödev dokümanları ile ilgili. Ben bu eleştiriye açıkçası katılmıyorum. Ödev dokümanlarının yeterince açık olmadığı yönünde bir eleştiri yapmış bazı arkadaşlarımız.
+
+511
+01:42:51,491 --> 01:43:03,151
+bundan daha fazlasını açıklamak zaten ödevi algoritmasını söz olarak size söylemek ki bence Elif Hocanın stildir bu.
+
+512
+01:43:03,151 --> 01:43:09,811
+Bu fazlasıyla açıklayıcı söylüyor. Onun yaklaşımını kullanmaya devam ediyoruz.
+
+513
+01:43:10,291 --> 01:43:20,071
+İki, ben şuna inanırım bazı noktalar sizin tarafınızdan yorumlanması ve çözülmesi gerekir ki
+
+514
+01:43:20,071 --> 01:43:23,071
+ekstra bakış açıları katabilirsiniz.
+
+515
+01:43:23,911 --> 01:43:27,051
+Ha bundan dolayı ben şunu şöyle yaptım, siz söylemediniz.
+
+516
+01:43:27,791 --> 01:43:31,811
+Ben bunu bilmediğim için yanlış yaptım ve çok kötü puan aldım diyen varsa yazsın.
+
+517
+01:43:33,271 --> 01:43:34,971
+Ben buna tekrar baktıracağım.
+
+518
+01:43:35,771 --> 01:43:37,071
+Kendim de bakacağım gerekiyorsa.
+
+519
+01:43:38,111 --> 01:43:43,691
+Ama bundan dolayı ben çok büyük bir puanın fark ettiğini düşünmüyorum.
+
+520
+01:43:43,691 --> 01:43:48,431
+Yani biz orada bir şey yazmadığımız için istemediğimiz bir şeyden dolayı sizden puan kırma noktasında
+
+521
+01:43:48,863 --> 01:44:01,343
+öyle bir yaklaşım içerisinde olmuyoruz. Unutmuş olabiliriz. Bunda da zaten gerekli hassasiyeti gösterip size onunla ilgili puan kırmama noktasını tercih ediyoruz.
+
+522
+01:44:01,343 --> 01:44:14,323
+Bunu da bu şekilde açıklamış olayım. Bir arkadaşınız birazcık acımasız bir eleştiri yapmış. Haklı eleştirisi ama kullandığı ifadeler birazcık bence doğru değil.
+
+523
+01:44:14,323 --> 01:44:24,343
+Bu beş haftadır sınavın okumamasını, ödevlerin geç verilmesini tamamen bir plansızlık olarak adlandırmış.
+
+524
+01:44:25,923 --> 01:44:36,283
+Bu bir plansızlık değil. Ben kendi adıma konuşacak olursam, ben her zaman derslerimde bir plan çerçevesinde hareket etmeye özen gösteririm.
+
+525
+01:44:36,283 --> 01:44:41,224
+Yüzde yüz katı değil. Sizden gelecek değişiklikleri de esnek olacak şekilde.
+
+526
+01:44:41,224 --> 01:44:52,104
+5 haftadır ödevli sınavınızın okunaması niye geldiğinin sebebi sizin de olduğunuz yoğunluk gibi pandemiden dolayı da bizim olduğumuz bize gelen ekstra yükler.
+
+527
+01:44:52,643 --> 01:45:00,764
+Dosyaları indiriyorsunuz, dosyalarda sorun çıkıyor, e-maillerle gönderiyorsunuz, oradan save ediyorsunuz, puanlar öbür tarafta kalıyor, notlar diğer tarafa giriliyor.
+
+528
+01:45:00,764 --> 01:45:07,683
+O kadar çok iş var ki prosedüral. Bunlar bizim yükümüzü oldukça arttırıyor. Ekstra başka gelen işler var aynı şekilde.
+
+529
+01:45:07,683 --> 01:45:31,524
+Bunlardan dolayı sınavlarınız sarktı. Benim hatamdır. Kabul ediyorum. Daha kısa bir sürede açıklamam çok daha uygun olurdu. Ama bununla ilgili plansızlık adlandırması doğru olmamış. En azından öyle olmadığını bilin. Elimden gelen gayreti göstermekle birlikte bunu benim bir eksikliğim olarak kabul edebilirsiniz bu dönem. Bu kadar geç açıklanmasını.
+
+530
+01:45:31,523 --> 01:45:34,463
+Buna da cevap verdik.
+
+531
+01:45:36,583 --> 01:45:39,503
+Devam ediyorum okumaya.
+
+532
+01:45:41,383 --> 01:45:46,803
+Mümkün olduğunca lab saatini verimli kullanmaya özen gösterdik.
+
+533
+01:45:46,923 --> 01:45:48,663
+Birçoğunda ekstra örnek çözdük.
+
+534
+01:45:48,943 --> 01:45:55,683
+Bu sene ilk defa ödevlerin çözümlerini laboratuvarda, laboratuvar saatinde sizlerle paylaştık.
+
+535
+01:45:56,363 --> 01:45:58,703
+Bundaki memnuniyetsizlik düzeyiniz var.
+
+536
+01:45:58,703 --> 01:46:12,563
+Mesela ben burada hani daha yüksek bir memnuniyet beklerdim. Birazcık memnuniyetsizlik tarafı. Yani çok kötü değil de düşündüğümden daha düşük seviyede.
+
+537
+01:46:12,563 --> 01:46:27,463
+Bunu söz vermek isterim. Laboratuvardaki ödevlerin anlatılmasındaki sorun nedir? Yani sizi tatmin etmeyen ne? Mesela 10 kişi 2 vermiş. 10 kişi 3 vermiş. Nedir burada tatminsiz olduğunuz nokta ya da daha iyi olması gerektiğini düşündüğünüz nokta?
+
+538
+01:46:27,463 --> 01:46:37,823
+çok önemli çünkü biz bunu oturtabilirsek bundan sonraki süreçte en azından yıllardır istediğiniz ödevlerin çözümleri de nasıl yapılacağını bizimle paylaşılsın noktası hayata geçmiş olacak.
+
+539
+01:46:40,003 --> 01:46:40,683
+O seneyle birlikte.
+
+540
+01:46:43,163 --> 01:46:47,663
+Evet, yani kimseye kızmayacağım, kötü not vermeyeceğim. Rahat olabilirsiniz.
+
+541
+01:46:55,060 --> 01:47:03,239
+Evet, en azından 2 verenlerden 1 kişi çıkıp diyebilir ki, ben şu yüzden 2 verdim. Levert vardı, ödevlerin anlatılmasını şu yüzden beğenmedim. Bu yüzden faydası olmadı.
+
+542
+01:47:12,083 --> 01:47:35,743
+Peki, ısrarcı olmayacağım. Ama benim açıklığım karşısında sizin bir cevap vermiyor olmayışınız benim açımdan çok olumlu değil. Çünkü sonuçta bir memnuniyetsizlik var. Memnun değilim demekle geçilecek bir şey değil. Şundan memnun değilim derseniz bu düzeltilebilir.
+
+543
+01:47:35,743 --> 01:47:48,604
+neden memnun olmadığınızı bilmezsek bunu düzeltemeyiz. Ben size bunu söylemeniz için bir fırsat verdim. Ama söylememek tabii ki hakkınız.
+
+544
+01:47:50,444 --> 01:48:03,463
+Süre konusu var. Oraya geçelim. Sınavlardaki süreyi konuştuk. Sınavlardaki süre konusunu finalde mutlaka dikkate alacağız.
+
+545
+01:48:03,463 --> 01:48:27,703
+Burada herhangi bir sorun yaşamayacaksınız. Bana şöyle bir yorum da gelmiş. Sınavların öğrenci kopya çekili çekebilir, düşük çekincesinden arınması gerektiğini inanıyorum. Yani o zaman biz bunu normal karşılayalım diye anlıyorum. Bence bu sizin aleyhiniz olur. Kopya çeken ve çekmeyenin aynı notu almasını ben çok adil olduğunu düşünmüyorum.
+
+546
+01:48:27,703 --> 01:48:36,643
+ama inanın bu sene sorduğumuz sorular kesinlikle kopya çekilme ihtimalini göz önünde kaldırılarak sorulmuştur.
+
+547
+01:48:37,763 --> 01:48:43,843
+Sürede biraz daha iyileştirme yapılması gerekmektedir. Bunu kabul ediyorum ve yapılacaktır.
+
+548
+01:48:47,843 --> 01:48:50,843
+Onun dışında...
+
+549
+01:48:55,764 --> 01:49:22,983
+Birinci vizenin olmaması gerektiğini düşünen bir arkadaş var. Yani o kadar olmamalı diye düşünüyorum. Her şeyi ödevde değerlendiremezsiniz. Vizenin olması gerekiyor. İki vize yapsaydık, ikinci vize olmamalıydı deseydiniz. Saygıyla karşı vardım. Ama hiç vize olmasın demeniz benim görüşüme göre çok uygun değil. Ama o sizin görüşünüz.
+
+550
+01:49:22,983 --> 01:49:27,083
+Tabii ki belirtmekte haklısınız
+
+551
+01:49:27,083 --> 01:49:39,823
+Ödev sonuçları ödev verilmeden açıklansaydı yani daha iyi olabilirdi ama ödevler belirli konuların arka arkaya gelmesi zorunda biraz sıkışıyor
+
+552
+01:49:39,823 --> 01:49:48,343
+Ben de farkındayım ama biraz da bu takvimin konuların arka arkaya gelmesi ve iki şaraftan anlatılmasıyla alakalı
+
+553
+01:49:48,343 --> 01:49:52,083
+Tam anlatmadan verirsek de o zaman bu konuyu görmedik
+
+554
+01:49:52,083 --> 01:49:58,383
+eleştirileri geliyor. Biraz burası sıkıntılı bir mevzu konusu.
+
+555
+01:50:02,515 --> 01:50:03,315
+Bakıyorum.
+
+556
+01:50:06,015 --> 01:50:06,956
+Başka ne var diye.
+
+557
+01:50:13,395 --> 01:50:35,656
+Bir arkadaşınız başka bir şekilde eleştirmiş. Yasir, birazdan söz vereceğim. Bir arkadaşınız demiş ki, ödevler genelde derste anlatılan örneklerle sınırlıydı. Yeni bir algoritma tasarlamamız için pek teşvik edici değildi. Mesela bu da güzel bir eleştiri. Ama bunun tersini yaptığımızda da tam tersi eleştiri geliyor.
+
+558
+01:50:35,656 --> 01:50:42,355
+Yani hocam işte bizim gördüklerimizin ötasında bir şey sordunuz diye eleştiren ne oluyor?
+
+559
+01:50:42,436 --> 01:50:45,895
+Ama ben bir tane ödevin böyle verilmesi gerektiğini düşünüyorum.
+
+560
+01:50:46,035 --> 01:50:48,596
+Buna belki bir dahaki sonra dikkat edebiliriz.
+
+561
+01:50:50,535 --> 01:50:53,815
+Ama bu sene her senekinden çok daha fazla örnek çözdük.
+
+562
+01:50:54,815 --> 01:50:55,715
+Yani bunu söyleyebilirim.
+
+563
+01:50:59,347 --> 01:51:21,247
+Bir arkadaşınız aslında ilk başta çok zorlandın ama sonra motive olduktan sonra ödevleri aslında yapılabilir bir sürede teslim edilebileceğini yazmış. Ona da düşüncesi için teşekkür ederim. Yasir bir şey söyleyecek mi? Sana söz vereyim.
+
+564
+01:51:22,387 --> 01:51:23,927
+Hocam merhaba tekrardan.
+
+565
+01:51:24,287 --> 01:51:24,587
+Merhaba.
+
+566
+01:51:24,587 --> 01:51:54,487
+Hocam şey ben sınavlarla hakkında bir şey soracaktım da hocam normalde mesela derse geldiğimizde mesela sınav başladığında sınav alıyorsun normalde ekstra falan işte böyle iki üç dakika falan işte sınava bakmak herhangi bir soru varsa diye sorabilirsiniz diye şimdi online'da sınavlar olunca hocam bazen başka bir soruyla başlamak istiyorsun diyelim ya işte mesela geri dönüş geri şey böyle geri dönemiyorsun sonra yenilemek
+
+567
+01:51:54,487 --> 01:51:59,767
+buradan bir on dakika falan yine aynı zamanda soruyu da anlamakta biraz sürede alıyor da.
+
+568
+01:51:59,888 --> 01:52:06,347
+Yok, haklısın. Ben şöyle bir şey olabilir belki, çok emin değilim ama şu an aklıma geldi sorduğun soruyla alakalı.
+
+569
+01:52:09,227 --> 01:52:18,367
+Yani bir on dakika sınav süresi dahilinde olmak üzere sorularınız olursa, mail olarak atarsınız, biz nasıl olsa sınav başında olacağız final sınavında.
+
+570
+01:52:18,367 --> 01:52:27,287
+Buna istinaden size açıklama yapmamız gereken bir nokta olursa topluca mail atabiliriz bu gelen soruları istinaden.
+
+571
+01:52:27,287 --> 01:52:32,467
+Böyle bir uygulamayla en azından anlaşılmayan bir noktayı sizlere paylaşmış oluruz.
+
+572
+01:52:32,487 --> 01:52:36,027
+Genelde tabi buna dikkat etmeye çalışıyoruz. Anlaşılan sorular özellikle seçiliyor.
+
+573
+01:52:36,587 --> 01:52:38,587
+Beraber yüz yüze olamadığımız için.
+
+574
+01:52:39,247 --> 01:52:46,767
+Ama ben bu konuda ilk 10 dakikada mail gönderirseniz cevaplamaya çalışabiliriz topluca herkese mail atarak.
+
+575
+01:52:48,367 --> 01:52:52,187
+süre konusunda da zaten dikkat edeceğimizi söyledik.
+
+576
+01:52:53,447 --> 01:52:54,547
+Teşekkür ederim hocam.
+
+577
+01:52:54,987 --> 01:52:56,687
+Rica ederim Yasir, ben teşekkür ederim.
+
+578
+01:53:08,627 --> 01:53:29,847
+Evet, yani bizim sizin bir arkadaşınız da demiş ki, yine haklı bir eleştiri, yani nasıl bizim sorumluluklarımız varsa yerine getiriyorsak, keşke siz de ilk ödevi ve yapılan vizeyi zamanında açıklasanız demiş.
+
+579
+01:53:29,847 --> 01:53:58,528
+haklı. Vize konusunda bir şey diyemeyeceğim. Ama ödev konusundaki 3 haftalık kaybımızın sistemle ilgili olduğunu hatırlatmak isterim. Ödevleri 3 hafta sonra kontrol etmeye başladık. Sistem ettikten sonra sistemde topluca indir seçeneği yoktu. Bu yüzden de tek tek 80-100'er kişilik sınıfların ödevlerini indirmek için bir emek harcamadık. Onun yerine başka işleri hallederek diğer ödev zamanına vakit açmış olduk.
+
+580
+01:53:58,527 --> 01:54:26,647
+Bir de bir sıkıntımız da şu arkadaşlar bunu kabul etmek lazım gerçekten 80-90-100 kişiyle algoritma sınavları yapmak büyük zorluk okuması çok zor oluyor ben bunu bir şikayet olarak söylemiyorum bilmeniz için söylüyorum bu iş bizim işimiz görevimiz yapmak durumundayız ama hani mümkün olduğunca titsiz okumak için biraz zamana ihtiyacımız oluyor normal bir
+
+581
+01:54:26,647 --> 01:54:38,807
+derse göre sonucu belli olan ya da test yapılan bir derse göre daha fazla sürmesi maalesef kaçınılmaz.
+
+582
+01:54:39,427 --> 01:54:44,387
+Ama benim hedefim normalde ikinci vizede okumak, genelde de bunu böyle yapıyorum.
+
+583
+01:54:44,387 --> 01:54:50,087
+Yani 3-4 hafta içerisinde açıklamak bu sefer bir hafta rötarlı olacak gibi gözüküyor.
+
+584
+01:54:50,167 --> 01:54:50,647
+Sercan.
+
+585
+01:54:53,507 --> 01:54:55,007
+Hocam sesim geliyor mu?
+
+586
+01:54:55,347 --> 01:54:55,907
+Duyabiliyorum.
+
+587
+01:54:55,907 --> 01:55:09,247
+Diğer arkadaşların görüşleri hakkında bir fikrim yok ama belki siz hani oylayabilirsiniz, mail atabilirsiniz. Benim bir ricam olacaktı. Bu projenin yüzdesinin yüzde yirmi olduğunu söylemiştiniz galiba değil mi?
+
+588
+01:55:09,247 --> 01:55:14,367
+Yok bu netleşmiş bir şey değil. Yani olabileceğini söylemiştim. Net olarak yüzde yirmi demedik.
+
+589
+01:55:14,367 --> 01:55:27,367
+Hocayla konuşmadan ben size net olarak söyleyemem ama burada teslimler yapıldıktan sonra belirli bir oynama yapıyoruz genelde olumlu yönde olmasa açısından.
+
+590
+01:55:27,568 --> 01:55:36,788
+Ama öncesinde belirlememiz sizin açınızdan belki bir stratejik karar olacağı için senin bu konudaki görüşünü alayım ki ona göre Elif Hocayı da aktarayım.
+
+591
+01:55:37,167 --> 01:55:41,367
+Ben %20'yi kabul edersek biraz fazla olduğunu düşünüyorum diyeceğim.
+
+592
+01:55:41,367 --> 01:55:44,327
+Peki nasıl olması gerektiğine inanıyorsun ben onu alayım.
+
+593
+01:55:44,367 --> 01:56:13,567
+sana? Ya mesela ödevler, ödevler için oldukça fazla vakit ayırdık aslında. Kısa sürelerde de olsa. Dört tane ödev var sonuç olarak. Mesela o yüzde yirmi beş olsa, proje yüzde on beş olsa diye düşünüyorum. Bir değerlendirelim. Olmayacak bir teklif değil. Hani söz vermeyeyim ama bunu kendi aramızda konuşuruz tabii ki. Ama hakikaten ders, yani şu an sen de konuştuğun için hani sana söylüyorum belki cevap verirsin.
+
+594
+01:56:14,367 --> 01:56:25,187
+söylediğimiz şekilde yaparsak ben önümüzdeki haftanın özellikle son hafta olması sebebiyle sizin dönem projenizi rahatlıkla yapabileceğiniz bir süreç olacağını düşünüyorum.
+
+595
+01:56:26,667 --> 01:56:29,807
+Eğer çok fazla sayıda önümüzdeki hafta ödebiliriz yoksa.
+
+596
+01:56:31,267 --> 01:56:38,467
+Bence de yapabiliriz yani sorun olmaz inşallah da yani ödev olsa da 3 hafta vereceğiz diyorsunuz çünkü.
+
+597
+01:56:38,847 --> 01:56:39,707
+Yani 3 haftayı şöyle değil.
+
+598
+01:56:39,707 --> 01:56:40,907
+3 hafta sonu.
+
+599
+01:56:41,027 --> 01:56:41,127
+Evet.
+
+600
+01:56:41,127 --> 01:56:51,767
+O koşulda yapılabilir gibi duruyor da yine de diğer ödevlerden sonuç olarak aşağı yukarı aynı vakit harcamadık. Birazcık daha fazla süre harcadık bence dört tane ödeve.
+
+601
+01:56:51,767 --> 01:57:07,767
+Tamam okey. Gayet iyi anladım düşünceni. Tabii ki bunu mutlaka göz önünde bulunduracağız. Yani şöyle bir şey olsaydı biraz daha kapsamlı, biraz daha süresi uzun olsaydı belki ona göre bir puanlandırma olabilirdi. Ama şu anki şartlarda teklifin...
+
+602
+01:57:07,699 --> 01:57:17,139
+sanki makul gibi gözüküyor. Rica ederim. Evet, Metin. Hocam merhaba, ben dersin başında yoktum, elektrikler yoktu.
+
+603
+01:57:17,139 --> 01:57:23,979
+Tabii 40 dakika geç bağlanabildim. Evet, geçmiş olsun. Ben teşekkür ederim. Final sınavıyla ilgili bir bilgilendirme yaptınız mı?
+
+604
+01:57:24,019 --> 01:57:29,540
+Yine vize gibi mi olacak? Hafta galiba sadece soru çözme olacağı için, soramayacağım için tekrar da mailleri almak istemiyorum.
+
+605
+01:57:29,540 --> 01:57:36,259
+Tabii iyi yapsın. Belki hani çok kısa bir bilgilendirme yaparız haftaya, ben de şu anda net bilmiyorum ama şunu söyleyebilirim.
+
+606
+01:57:36,259 --> 01:57:38,319
+her zamanki finaller gibi olacak.
+
+607
+01:57:39,339 --> 01:57:42,439
+Ama stil olarak soruyorsan gene muhtemelen iki bölümden oluşur.
+
+608
+01:57:43,439 --> 01:57:45,339
+Tamam, teşekkür ederim. Sağ olun.
+
+609
+01:57:45,779 --> 01:57:46,259
+Rica ederim.
+
+610
+01:57:50,387 --> 01:57:54,047
+Başka? Orkun?
+
+611
+01:57:55,308 --> 01:57:58,187
+Soru sormaktan ziyade ben daha çok fikir belirtmek istiyorum hocam.
+
+612
+01:57:58,287 --> 01:57:58,447
+Tabii.
+
+613
+01:57:59,567 --> 01:58:06,427
+Az önce ödevlerden bahsederken, hani o bir haftalık zaman içerisinde yaparsanız falan derken aslında beni güldürdü.
+
+614
+01:58:06,707 --> 01:58:12,408
+Çünkü geçtiğimiz hafta ben 3 vize ve 7 ödevi tek haftada yaptım, biraz yoğundu.
+
+615
+01:58:12,408 --> 01:58:17,867
+Ama hani bu konuda benim sizden isteyebileceğim hiçbir şey olduğunu düşünmüyorum.
+
+616
+01:58:17,867 --> 01:58:23,987
+çünkü verdiğimiz ödevlerin kapsamında süreyi iyi verdiğinizi düşünüyorum.
+
+617
+01:58:24,728 --> 01:58:25,147
+Anlıyorum.
+
+618
+01:58:26,527 --> 01:58:28,807
+Ödevlerin de gayet yerinde olduğunu düşünüyorum.
+
+619
+01:58:29,108 --> 01:58:29,867
+O yüzden hani...
+
+620
+01:58:30,428 --> 01:58:35,227
+Şimdi Orkun, şöyle pardon sözünü kestim. Sen tamamla da ben ondan sonra söyle.
+
+621
+01:58:36,347 --> 01:58:43,507
+Yani buradaki bazı arkadaşların da hani diğer derslerin acısını buradan çıkarttığını düşünüyorum.
+
+622
+01:58:43,987 --> 01:58:44,367
+Anladım.
+
+623
+01:58:44,367 --> 01:58:45,467
+öyle olmaz.
+
+624
+01:58:45,867 --> 01:58:53,068
+Şimdi de bütün şimşekleri üzerine çekmiş oldun genelde çünkü öğrenciler pek bu tür açıklamalardan hoşlanmazlar.
+
+625
+01:58:53,887 --> 01:58:55,748
+Öncelikle fikrin için teşekkür ederim.
+
+626
+01:58:56,288 --> 01:59:05,928
+Ben yani belli oranda seninle zaten aynı fikre sahip olduğum için bu şekilde biz diyelim Elif Hoca ile böyle bir uygulama yapıyoruz ama
+
+627
+01:59:05,928 --> 01:59:15,548
+anlamadan ya da hissetmeden ya da herkesin aynı tempoda olamayacağını öngörmeden hareket etmemeye çalışıyoruz.
+
+628
+01:59:16,148 --> 01:59:22,908
+Burada farklı yükü kaldırabilecek kişiler var doğal olarak. Bu hepimiz için geçerli.
+
+629
+01:59:22,908 --> 01:59:31,727
+Ben x yükü kaldırırım, kim 2x yükü kaldırır, kim 5x'i kaldırır. Biz ortalama bir öğrenciyi gözeterek bunu yapmaya çalışıyoruz.
+
+630
+01:59:31,727 --> 01:59:37,047
+O yüzden hakikaten ödev sürelerinin çok kötü olmalığını ben de düşünüyorum.
+
+631
+01:59:37,707 --> 01:59:44,967
+Ama bu seneki ekstra sıkıntımız şu, ödev sayısı arttığı için biraz bunalmışlık var.
+
+632
+01:59:44,967 --> 01:59:50,407
+Yani ben bunu çalışkan öğrenciler, çok çalışan öğrenciler ve bildiğim onlardan da duyuyorum.
+
+633
+01:59:50,927 --> 01:59:58,227
+Ya da acımasızca eleştirilen arkadaşların, eleştirilen bir kısmının kızgınlık veya hayal kırıklığıyla olduğunu da biliyorum.
+
+634
+01:59:58,227 --> 02:00:07,767
+bir tane arkadaşımız var mesela hepsine çok belli bir kişinin olduğu verilen ödevlerin süresine uygunluğuna bir vermiş kızmış muhtemelen.
+
+635
+02:00:08,387 --> 02:00:16,048
+Öğreticilik düzeyine iki vermiş gene kızmış herhalde. Zorluk düzeyine beş vermiş gene bir kişi.
+
+636
+02:00:17,307 --> 02:00:20,487
+Memnuniyet düzeyine iki vermiş gene bir kişi. Muhtemelen aynı kişi.
+
+637
+02:00:20,487 --> 02:00:39,407
+Şimdi hepsine böyle verdiği zaman çok açıkçası şey olmuyor hani bu anketin sorularının gerçekçiliğini göstermiyor yani bu yüzüsteki durumla böyle oluyor bir şeye kızan ya da işte çok iyi hisseden hepsine iyi veriyor ya da hepsine kötü veriyor
+
+638
+02:00:39,407 --> 02:00:43,687
+Hepsinin çok iyi olması ya da hepsinin çok kötü olması imkansız teknik olarak
+
+639
+02:00:43,687 --> 02:00:46,187
+Teorik olarak mümkün ama pratik de imkansız
+
+640
+02:00:46,187 --> 02:00:49,707
+O yüzden değerlendirirken hakkaniyetle değerlendirmeye çalışıyorum
+
+641
+02:00:49,707 --> 02:01:17,027
+Ben de bazen kızıyorum size, bazen bozuluyorum, sitem ediyorum ama hakkınızı yememeye çalışıyorum. Önemli olan şey bu. O yüzden teşekkür ederim yorumun için. Ama bu şu demek değil. Yani Orkun böyle söyledi diye. Aa bakın örnek Orkun o zaman hani biz işte X bir öğrencimiz böyle söyledi demek ki doğru yahu. Bir şey yok. Herkesi göz iterek karar vermemiz önemli ama %100 mutluluk mümkün değil.
+
+642
+02:01:17,027 --> 02:01:40,507
+Mümkün değil. Yani orada hiç boşuna kendimizi üzmeyelim ama hepinizin çok güzel tespitleri var. Ben gene mutlu oldum yazıklarınızdan. Birkaç tanesi birazcık acımasızdı ama onun dışındakiler haklı eleştiriler. Okey. Şimdi saat zaten 3 oldu. Bence daha uzatmayalım. Başka yorumu ya da aktaracak bir şey olan yoksa.
+
+643
+02:01:41,048 --> 02:01:42,287
+Ben ekleyebilir miymiş hocam?
+
+644
+02:01:42,287 --> 02:01:42,807
+Tabii.
+
+645
+02:01:43,315 --> 02:01:57,196
+NP programlarla alakalı Royal Institution'un yaptığı bir tane konuşma vardı. Biraz daha eskiden. Youtube videosunu bulmuştum. Dönem başında NP'yi görünce. İzmir verirseniz onu chatte paylaşabilirim. Sonra gelenler de onu görebilir.
+
+646
+02:01:57,196 --> 02:02:07,076
+Ben de görmek isterim. Hatta dinlemek isterim. Güzel olur. Bu tür konularda birazcık şey yapmak, genel kültür sahibi olmak iyidir.
+
+647
+02:02:07,076 --> 02:02:14,395
+Örnekler de var yanlış hatırlamıyorsam yine girişliklerinde o yüzden yardımcı olacağını düşünüyorum ben de geri döneceğim hatırlatacağım kendimi
+
+648
+02:02:14,395 --> 02:02:16,016
+Tamam süper çok sevindim
+
+649
+02:02:16,016 --> 02:02:36,076
+Bu dönem işim değil de gelecek dönemlerde sanırsam yani ben kendi ödev notlarına bakınca fark ettim de daha sonradan ben de DFC'yi kullanıyorum ama belli ki benim algoritmamın çalışmaması gibi bir durum var hani karşı tarafta asistanların tarafında
+
+650
+02:02:36,075 --> 02:02:42,675
+Eğer mümkünse asistanların kullandığı compiler versiyonunu bizimle paylaşmaları çok hoş olabilir.
+
+651
+02:02:43,055 --> 02:02:47,455
+Kesinlikle çok doğru bir tespit. Çünkü bunu siz bilemezsiniz.
+
+652
+02:02:48,015 --> 02:02:53,575
+An sizce standartla uygun yazmanız beklense de bir şeyi kestiremeyebilirsiniz.
+
+653
+02:02:53,715 --> 02:02:55,555
+Kullandığınız kütüphaneden dolayı sıkıntı olabilir.
+
+654
+02:02:56,915 --> 02:03:00,615
+Bunu bana vaktin olur, özelden yani mail olarak gönderirsem,
+
+655
+02:03:01,455 --> 02:03:05,075
+ben mutlaka final sınavda bunu açıklanmasını isteyeceğim.
+
+656
+02:03:05,075 --> 02:03:06,235
+yani final değerlendirmesi.
+
+657
+02:03:07,235 --> 02:03:08,035
+Tamam, teşekkür ederim.
+
+658
+02:03:08,595 --> 02:03:10,195
+Ben teşekkür ederim. Evet.
+
+659
+02:03:11,015 --> 02:03:13,715
+O zaman, evet, hepinize iyi seneler diliyorum.
+
+660
+02:03:14,555 --> 02:03:15,895
+2020 biraz zor geçti.
+
+661
+02:03:16,955 --> 02:03:18,575
+2021 inşallah sağlıkla gelir.
+
+662
+02:03:19,235 --> 02:03:23,055
+Öncelikle sonra bütün derslerinizi vermenizi diliyorum.
+
+663
+02:03:23,055 --> 02:03:23,695
+Hakikaten.
+
+664
+02:03:24,475 --> 02:03:28,995
+Aygortmadan bir an önce mezun, yani mezun demeyelim de başarılı olmanızı diliyorum.
+
+665
+02:03:29,095 --> 02:03:29,895
+Sayımızı azaltalım.
+
+666
+02:03:30,375 --> 02:03:31,555
+Desteğinizde ihtiyacımız var.
+
+667
+02:03:31,555 --> 02:03:55,756
+Bunun ötesinde söyleyeceğim final dönemine doğru sorularınız olursa mail olarak sorabilirsiniz. Herhangi bir sıkıntı yok. Dönem projenizle ilgili de gerekirse önümüzdeki hafta derste ya da lap saatinde mutlaka bir açıklama yapılır.
+
+668
+02:03:55,756 --> 02:03:57,815
+Evet
+
+669
+02:03:57,815 --> 02:03:59,836
+Şimdilik bu kadar
+
+670
+02:03:59,836 --> 02:04:00,756
+Kendinize iyi bakın
+
+671
+02:04:00,756 --> 02:04:01,795
+Mutlu seneler
+
+672
+02:04:01,795 --> 02:04:03,036
+Sevdiklerinizle
+
+673
+02:04:03,036 --> 02:04:03,735
+Sağlıkla
+
+674
+02:04:03,735 --> 02:04:04,375
+İnşallah
+
+675
+02:04:04,375 --> 02:04:05,375
+Hoşçakalın

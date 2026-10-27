@@ -1,0 +1,3151 @@
+1
+00:02:06,292 --> 00:02:19,971
+Evet arkadaşlar, hoş geldiniz. Şu anda 9. haftadayız. Sınav haftasını geride bıraktık. Öncelikle hepinizi geçmiş olsun. Umarım güzel geçmiştir sınavlarınız.
+
+2
+00:02:21,911 --> 00:02:34,851
+Şimdi bugün dinamik programlama konusunu birlikte işleyeceğiz birazdan. Şu anda 31 kişi var. Tabii şu an ben bekleme odası özelliğini aktif hale getirdim.
+
+3
+00:02:34,851 --> 00:02:44,832
+Kaç haftadır dikkatimi çekiyor. Zamanında derste katılımı olmuyor ve dersi takip eden kişi sayısı da oldukça az. Aktif olarak takip eden.
+
+4
+00:02:45,132 --> 00:02:55,631
+Bundan sonra belli bir dakikadan sonra dersi takip etmeniz mümkün olmayacak. O yüzden ilk 10 dakikada girerseniz dersi takip edeceksiniz.
+
+5
+00:02:55,711 --> 00:03:04,571
+Giremezseniz ikinci tur saati takip edeceksiniz. Bunun sebebi de şu. Başarı oranları gittikçe düşüyor bu pandemi döneminde.
+
+6
+00:03:04,851 --> 00:03:28,551
+Bunu yükseltmek için biraz bazı sene zorunlu hale getirmemiz gerekiyor. Sizi serbest bırakınca maalesef kendi öz disiplininiz bazı arkadaşlarınız için yeterli olmuyor. Hepimizin iyiliği için dönem sonunda daha fazla sayıda bu dersten geçen öğrenci olması için bu konuda birazcık disiplin rica edeceğim. Umarım anlayışla karşılarsınız.
+
+7
+00:03:28,551 --> 00:03:45,311
+şu an itibariyle bekleme salonunu 3 dakika daha bekleyeceğim. 13-10 itibariyle ders alıp ondan sonra herhangi bir şekilde derse kimseye eklemeyeceğim.
+
+8
+00:03:49,268 --> 00:04:01,568
+Şimdi geçtiğimiz hafta bir sınav oldunuz. Sınavla ilgili bir sıkıntılarınız varsa hemen konuşalım. Ondan sonra da konumuza başlayalım.
+
+9
+00:04:02,947 --> 00:04:12,927
+Evet, yorumda bulunmak isteyen varsa söz isteyip yorumda bulunabilir. Evet, o konuda başlayalım.
+
+10
+00:04:17,331 --> 00:04:21,792
+Hocam, sadece şeylik almayacağım. Biraz da feedback vermek istiyorum ben.
+
+11
+00:04:22,272 --> 00:04:22,591
+Tabii ki.
+
+12
+00:04:23,171 --> 00:04:26,031
+İlk 15 dakikalık sınavın tam da yerinde olduğunu düşünüyorum.
+
+13
+00:04:26,531 --> 00:04:26,752
+Peki.
+
+14
+00:04:26,931 --> 00:04:33,971
+Sistemden kanaklı olarak bizde 2 dakikalık geçimler falan oldu. Biraz da sıkıştık ama tam da yerindeydi bence. Süresi de sorular değildi.
+
+15
+00:04:35,311 --> 00:04:40,752
+O konuda feedback verecek olursam tek sorum şey olacak. Şu sütunlu sorumuz vardı.
+
+16
+00:04:40,752 --> 00:04:56,811
+sıralama algoritması olduğu hakkında. Oradaki sayılar biraz fazla karmaşık olunca şimdi mesela Selection Sort'ta ilk 5 tane veya 6 tane sayıyı araştırıyoruz.
+
+17
+00:04:56,811 --> 00:05:07,771
+Onlar sıralı mı diye bakıyoruz. Artından hani o sayıların arası çok büyük olunca o aralıkta başka bir tane sayı hani düzeyini bozan başka bir tane sayı var mı diye geri kalanını da arama yapmak zorunda kalıyoruz.
+
+18
+00:05:08,092 --> 00:05:08,251
+Evet.
+
+19
+00:05:08,251 --> 00:05:14,151
+Düzen aramaktan ziyade algı yarışına dönüyor
+
+20
+00:05:14,151 --> 00:05:22,512
+Yani Orkun tabi eleştirini saygına karşılıyorum ama orada birkaç tane trik vardı
+
+21
+00:05:22,512 --> 00:05:24,931
+Belki soruları çözdüğümüzde bunu konuşabiliriz
+
+22
+00:05:24,931 --> 00:05:28,272
+Yani Insurrection Sort'ta yerine yerleşmesine bakmak
+
+23
+00:05:28,272 --> 00:05:33,731
+Mert Sort'ta ikiye bölünmüş noktanın iki tarafının sıralar olup olmadığına bakmak gibi
+
+24
+00:05:33,732 --> 00:05:39,852
+o algoritmalara özel bakış açısıyla baktığınızda aslında çok da karmaşık değildi.
+
+25
+00:05:40,092 --> 00:05:45,212
+Ama birazcık evet haklısın yani gözle hızlı tarama yeteneği gerektiriyor.
+
+26
+00:05:45,931 --> 00:05:47,092
+Evet bir soru öyleydi doğru.
+
+27
+00:05:47,852 --> 00:05:57,671
+O konuda vereceğim feedback hani belki sayılar biraz daha az entropisi olan bir tane dizi içerisinde olursa çok daha rahat geçerdi bence diye düşünüyorum.
+
+28
+00:05:58,072 --> 00:05:59,132
+Güzel tabii ki.
+
+29
+00:05:59,712 --> 00:06:03,471
+Klasiklerden bahsedersek ilk iki soruda mükemmel olduğunu düşünüyorum.
+
+30
+00:06:03,471 --> 00:06:09,291
+O tamamen hani dersin içeriğiyle tamamen paralelde sorularda hiçbir sıkıntı olduğunu düşünmüyorum
+
+31
+00:06:09,291 --> 00:06:16,412
+Burada da hani o sorularda sorun yaşayan arkadaşlar varsa geri dönüp biraz daha pratik yapmalarını tavsiye edeceğim ben
+
+32
+00:06:16,412 --> 00:06:19,811
+Hangi şey test kısmındaki ilk iki soru için mi diyorsun?
+
+33
+00:06:20,632 --> 00:06:22,111
+Yok klasikteki ilk iki soru
+
+34
+00:06:22,111 --> 00:06:23,971
+Tamam klasikteki ilk iki soru oke
+
+35
+00:06:23,971 --> 00:06:25,171
+Onlar da
+
+36
+00:06:25,171 --> 00:06:31,171
+GK'nın iki soruda da bir full kod istemiştiniz bir de kod artı analiz istemiştiniz yanlış hatırlamıyorsam
+
+37
+00:06:31,171 --> 00:06:36,272
+Ben buradaki arkadaşlardan biraz daha hazırlıklı girdiğimi düşünüyorum
+
+38
+00:06:36,272 --> 00:06:42,251
+Çünkü benim kendi kod kütübânem var bazı jenerik kodlarım var modifiyeti kullanabileceğim şekilde
+
+39
+00:06:42,251 --> 00:06:47,671
+Mesela dördüncü soruda bunlardan yardımlandım ben modifiyeti tekrardan kullandım
+
+40
+00:06:47,671 --> 00:06:50,891
+Hashing yok elimde onu tekrardan yazmak zorunda kaldım
+
+41
+00:06:50,891 --> 00:07:01,011
+Ancak benim için dahi bu bütün kodu artı dördüncü sorunun kodu artı analiz kısmını yetiştirmek biraz sıkıntı oldu
+
+42
+00:07:01,011 --> 00:07:27,471
+sorun kaldı. Üçüncü soruyu baştan sona yazdım ben. Geri kalan süre biraz daha sıkışıktı. Pek mümkün olmadı. İki sorudan bir tanesini biraz daha yan ödev olarak ayırsaydık aslında ve geri kalan soruyu bırakıp da süreyi belki biraz daha kısaltıp hani bir saat değil de 45 dakika içerisinde bütün bir heş kodu yazıp onu teslim etseydik bence biraz daha pürüzsüz geçebilir diye düşünüyorum ben.
+
+43
+00:07:27,471 --> 00:07:56,071
+Tamam. Teşekkür ederim. Geri dönüşler için çok sağ ol. Değerlendireceğim bunu. Elif Hoca'ya da aktaracağım düşüncelerini. Mutlaka sürede belki bir son iki sınavda biraz daha bir oynana yapabiliriz. Ama sizin dosyaları yükleme sürenizi ve hesaba katarak bu süreleri belirlediğimizi yani 5 dakikalık bir sürede dosyayı yükleyeceğinizi varsayarak belirlemiştik. Ama bununla ilgili gereken önlem bir son iki sınavda da dikkat edilecektir.
+
+44
+00:07:56,071 --> 00:08:01,711
+Başka feedback vermek isteyen var mı arkadaşınızın dışında? Biraz önce Rafet Bey el kaldırmıştı.
+
+45
+00:08:05,812 --> 00:08:21,931
+Sağır, hocam. Hocam merhaba. Merhaba. Hocam ben şeyi söylemek istiyorum. Bu hem sınavlarda hem ödevlerde. Daha önce bununla alakalı mail dağıtmıştım. Anketlerinizin de hepsine yazdım. Hocam bence input ve output dosyası verilmesi lazım. Bu girdiğe karşılık bunu bekliyoruz.
+
+46
+00:08:22,531 --> 00:08:32,331
+Veya en azından output dosyası olması bile input. Bununla deneyin. Çünkü biz o sırada bir sürü şey yaparken ve de sürekli compile edip yeni değerler girip uç noktaları denemek zor oluyor.
+
+47
+00:08:32,331 --> 00:08:41,251
+hali hazırla algoritmayı düşünüyoruz. En azından programımız çalışacak mı diye denerken elimizde bir dosya olsa tekstil halinden direkt çeksek daha rahat olur bence.
+
+48
+00:08:41,591 --> 00:08:56,931
+Serjan bu eleştirini şöyle yorumlayayım. Bazı ödevler için evet bu bir elzem olabilir ama bazı ödevlerde sizin bu perspektifi kendinizin görmesi ve o inputları yani farklı case inputlarını kendinizin düşünmesini gerektiğini düşünüyorum.
+
+49
+00:08:56,931 --> 00:09:07,492
+Ben şahsen, Elif Hoca ne düşünür bilmiyorum ama bu noktada bir kişi algoritma tasarladığında o case'leri düşünerek zaten tasarlıyor.
+
+50
+00:09:07,492 --> 00:09:15,511
+O case'leri düşündüğünüzde onun inputlarını verebilecek noktada olduğunuzu ve çıktısının da ne olması gerektiğini belirlemiş olmanızı bekliyorum.
+
+51
+00:09:16,551 --> 00:09:22,951
+Mümkün olduğunca sorularınızda, sınav sorularınızda örnek vermeye çalışıyoruz.
+
+52
+00:09:22,951 --> 00:09:31,431
+sizi doğru yönlendirmesi adına. Bugün sınava sorularına bir kez daha belki bakıma fırsatımız olursa orada bunu bir kez daha değerlendiririz.
+
+53
+00:09:31,431 --> 00:09:40,411
+Ama ödevlerle ilgili konuşacak olursak, ödevde farklı yaptınız, o yüzden de çok kötü not aldınız diye hiçbir zaman bir sorun olmuyor.
+
+54
+00:09:41,091 --> 00:09:47,752
+Siz zaten herkes kendi bakış açısını katsın diye biraz da her şeyi sınırlamıyoruz.
+
+55
+00:09:47,751 --> 00:10:13,371
+Evet, en güzeli şudur. Bir girdi verirsiniz, bir çıktı nedir bunu verirsiniz. Bunu zaten test sistemleri böyle kontrol ediyor. Ancak biz burada üründen çok sizin yaratıcılığınızı da ortaya çıkarmak istiyoruz. Yani problemi ele alış biçiminiz, değerlendiriş biçiminiz, bizim aklımıza gelmeyen ama sizin o ödeve kattıklarınız bunlar önemli.
+
+56
+00:10:13,371 --> 00:10:30,032
+O yüzden birazcık sınırları ben kendi adıma geniş tutma taraftarıyım. Bu noktada da belli örnekleri vermek faydalı olacaktır. Ama bütün hepsini önünüze dökmenin çok doğru olmadığını, yaratıcılığı kısıtlayacağını düşünüyorum. Ama feedback'in için teşekkür ediyorum.
+
+57
+00:10:33,231 --> 00:10:34,752
+Yasir el kaldırmıştı.
+
+58
+00:10:38,740 --> 00:11:06,139
+Merhaba hocam. Merhaba. Sesim geliyor mu abi? Geliyor. Sesim geliyor mu hocam? Geliyor. Hocam şey, aynı soru yok. Şey, şu anda yeni konuştuğunuz konu soracaktım da oradan cevabım geldi diye öyle. Tamam, okey. O zaman sıkıntı yok yani. Peki, başka yorum yapmak isteyen, yani ben çok ciddi memnuniyetsizim söylediğiniz gibi olmadı, çok zor sordunuz. Normal vizeler gibi olmadı diyen var mı?
+
+59
+00:11:06,139 --> 00:11:09,080
+söylediğimizi, uyguladığımızı zannediyorum.
+
+60
+00:11:09,500 --> 00:11:10,319
+Sorular çok zor değil.
+
+61
+00:11:10,319 --> 00:11:13,679
+Aslında bir şey eklesem olur mu? Kusura bakma, kestim de size.
+
+62
+00:11:15,999 --> 00:11:23,219
+Klasik sorularda, normalde şey, şöyle biraz kendimle de sıkıntı yaşadım da, birkaç arkadaşlarla da konuştuğumuzda,
+
+63
+00:11:23,280 --> 00:11:30,519
+burada sıkıntı yaşadık. Girişinde falan biraz süre alıyormuş. Bir bekledik, çünkü orada ben 10 dakika önce girmiştim.
+
+64
+00:11:30,519 --> 00:11:44,759
+hemen bir açılsa diye 15 dakika için birkaç sorular vardı hemen gireyim hemen çözeyim diye ama işte oradan girerken 2-2,5 dakika falan işte biraz zorluk yaşadık aslında. Tek ben mi bilmiyorum.
+
+65
+00:11:44,759 --> 00:11:59,820
+Yani şöyle sistemsel sorunlar olduğunu zaman zaman duyuyoruz. Bir sıkıntınız varsa lütfen bölüm yönetimine ya da uzana iletin ve gerçekten kayıtlı.
+
+66
+00:12:00,519 --> 00:12:17,920
+ve bir çözüm oluşturulması gerekiyorsa mutlaka oluşturulacaktır. Bu konuda hassas davranıdır. Bence sorun yaşadığınızda lütfen bunu aktarın. Biz sizden gelenleri mutlaka aktarıyoruz. Mağdur olmanızı istemeyiz.
+
+67
+00:12:17,920 --> 00:12:33,519
+sistemde anlık bir 1-2 dakikalık sorunu olduysa bile bunu lütfen söyleyin. Bir sonraki sınavda bununla ilgili muhtemelen düzenlende yapılacaktır. Çünkü sonuçta bu sistem ilk defa bu sınavda dönendi. Bazı hatalar olmuş olabilir.
+
+68
+00:12:34,460 --> 00:12:35,040
+Teşekkür ederim.
+
+69
+00:12:35,040 --> 00:12:44,960
+O zaman rica ederim. O zaman benim anladığım başka kimseye yorum yapmayacak. Bir sıkıntı olmadığını düşünüyorum. Geçmiş olsun diyelim.
+
+70
+00:12:44,959 --> 00:12:49,039
+Umarım en kısa sürede size noktaları iletme şansımız olur.
+
+71
+00:12:49,740 --> 00:12:58,079
+Ödevlerle ilgili toplu ödevleri kaydetme, öğrenci numaralarına göre kaydetme özelliği dün itibariyle, akşam itibariyle eklenmiş.
+
+72
+00:12:58,799 --> 00:13:01,899
+Bu yüzden artık ödevlerinizi değerlendirme noktasına geliyoruz.
+
+73
+00:13:02,740 --> 00:13:04,919
+Yani counter yeni başlıyor.
+
+74
+00:13:04,919 --> 00:13:25,999
+Bugüne kadar maalesef bu özellik olmadığı için çok sayıda öğrenciyi tek tek seyves şeklinde kaydetmek çok uzun zaman aldığında ödev kontrolüne başlamamıştık ama an itibariyle ödev kontrolünüzü bugün başlatıyor olacağız. En azından birinci ödevle ilgili böyle bir başlangıç olacak.
+
+75
+00:13:25,999 --> 00:13:43,699
+diğer ödevinizde yanlış hatırlamıyorsam bugün süresi doluyordu. Bugün akşamına kadar teslimat yapacaksınız. Lütfen son dakikaları çok beklemeyin. Herhangi bir şekilde sıkıntı yaşanmaması adına. Ödevlerde çok büyük sorun olmuyor ama sınavlarda belki son dakikalar biraz riskli olabiliyor.
+
+76
+00:13:43,699 --> 00:14:04,979
+5-6 dakika önce en azından noktayı koymak önemli. Süreleri verirken biz mutlaka 5-6 dakikasını bu işe ayıracağınızı göz önünde bulundurarak veriyoruz. Bunu da bir kez daha hatırlatayım. Yoksa o süre sınav süresi değil. Artık 5 dakika sizin yükleme işleminizi tamamlamak için.
+
+77
+00:14:04,979 --> 00:14:07,179
+Ben bir de şunu sorayım
+
+78
+00:14:07,179 --> 00:14:10,379
+Tabii siz deneyimlediğiniz için soracağım
+
+79
+00:14:10,379 --> 00:14:15,339
+Bir çözüm yaptınız, kağıda yazdınız, fotoğraf çektiniz, pdf'e dönüştürdünüz
+
+80
+00:14:15,339 --> 00:14:16,579
+Yaklaşık ne kadarınızı alıyor?
+
+81
+00:14:25,556 --> 00:14:26,556
+Şafak.
+
+82
+00:14:29,556 --> 00:14:36,056
+Hocam, bende mi oluyor sadece bilmiyorum bu kısmı ama benim şeyim şu şekilde geçiyor.
+
+83
+00:14:36,056 --> 00:14:48,556
+Buradaki izlediğim yol, telefondan açıyorum işte camscaner'ı, çekiyorum pdf'ini, bunu kendi kendime açtım whatsapp grubundan kendimi atıyorum, whatsapp web'e açıyorum, onu indiriyorum.
+
+84
+00:14:48,556 --> 00:14:52,675
+bir de sınava girip nasıl bir formatta göndereceğime bakıyorum.
+
+85
+00:14:52,816 --> 00:14:56,175
+İsmi ne olacak? C dosyasının ismi ne olacak? PDF'nin ismi ne olacak?
+
+86
+00:14:56,675 --> 00:14:59,736
+Bana bakıyorum, 3 tane dosyanın ismini değiştiriyorum.
+
+87
+00:15:01,175 --> 00:15:06,996
+Sonra yüklüyorum. Bu bence öyle hemen yapılabilecek bir şey değil ki WhatsApp web bazen takılıyor falan.
+
+88
+00:15:07,115 --> 00:15:08,515
+Mailden mi göndereyim vesaire?
+
+89
+00:15:09,355 --> 00:15:13,896
+Ben açıkçası son soruda WhatsApp webim açılmadı ve Telegram'dan gönderdim kendime.
+
+90
+00:15:13,896 --> 00:15:15,875
+Bu biraz zaman alıyor bence.
+
+91
+00:15:15,875 --> 00:15:19,015
+Tamam. Böyle söylemiyorum.
+
+92
+00:15:19,015 --> 00:15:44,736
+Şimdi yazılanlara da baktığımda yaklaşık yani ortalama 6-7 dakikanın sizin için gerekli olduğunu görüyorum. Kötü durum senaryosunda belki 7-8 dakika diyelim. Burada şunu söyleyeceğim. Tabii sınavdan sınavı format, sizden istenen format değişiyor. Belki bunları öncesinde bir hafta öncesinde sınavdan önce bize bir kez daha sorun.
+
+93
+00:15:45,875 --> 00:15:58,596
+ya da yani bunu yazışarak çözelim. Şu anda ben de bunu düşündüğüm zaman size format konusunda bilgilendirme yapmak daha mantıklı olur diye düşünüyorum ama biz de genelde PDF olarak istiyoruz.
+
+94
+00:15:58,596 --> 00:16:07,515
+Ve olursa kod, source kod olarak istiyoruz. Bunun çok değişeceğini düşünmüyorum. Ama tabii diğer hocalar nasıl bir beklenti içerisindeler onu bilmiyorum.
+
+95
+00:16:08,115 --> 00:16:13,916
+Ama algoritma için bunu rahatlıkla söyleyebilirim. Veri yapılarında da genellikle aynı mantığı uyguluyoruz.
+
+96
+00:16:13,916 --> 00:16:20,396
+algoritmik derslerde bu mantık genelde bir problem yaratmayacaktır diye düşünüyorum.
+
+97
+00:16:20,975 --> 00:16:23,195
+En azından sizden bu geri dönüşte aldığım iyi oldu.
+
+98
+00:16:24,956 --> 00:16:27,615
+Bir sonraki sınavda buna karar veririz.
+
+99
+00:16:28,515 --> 00:16:30,255
+Önceden sizinle paylaşırız.
+
+100
+00:16:31,236 --> 00:16:36,235
+Evet, şimdi bu kısmında konuştuğumuza göre teşekkür ederim geri dönüşleriniz için.
+
+101
+00:16:36,235 --> 00:16:42,876
+Biz ekranı açayım ve kaldığımız yerden devam edelim.
+
+102
+00:16:43,916 --> 00:16:45,016
+Paylaşımı da açayım
+
+103
+00:16:54,676 --> 00:17:13,276
+Aslında şu anda girişleri de açacağım. Şu anda derse katılımları da açmış durumdayım. Sizinle iletişime geçmiş olan varsa söyleyebilirsiniz ama bundan sonraki süreçte ilk 10 dakikada derse katılmayanlar dersin geri kalanını devam edemeyecekler.
+
+104
+00:17:22,099 --> 00:17:24,659
+Evet, şu an ekranı görüyorsunuz diye tahmin ediyorum.
+
+105
+00:17:32,980 --> 00:17:36,239
+Şöyle bir şey yapalım. Evet.
+
+106
+00:17:38,619 --> 00:17:39,299
+Dinamik
+
+107
+00:17:39,299 --> 00:17:43,860
+programlama
+
+108
+00:17:47,092 --> 00:18:04,171
+Evet, bu konuyu daha önceden duyan var mı? Kısaca bir tarif yapabilir misiniz? Nedir, ne değildir konusunda bir fikir belirtebilir misiniz? Merak ediyorum. Daha önceden hiç dinamik programlama konusunda fikir sahibi olan var mı diye.
+
+109
+00:18:06,991 --> 00:18:12,891
+Ali Can'ın sorusu varmış bu arada, ikinci vize olacak mı diye. O net değil. Eğer öyle bir bilgi oluşursa sizinle paylaşacağız.
+
+110
+00:18:19,635 --> 00:18:24,875
+Evet, dinamik programlamayı hiç kimse bilmiyor mu? Daha önce hiç kimse duymadı mı? Şafak.
+
+111
+00:18:27,735 --> 00:18:45,495
+Hocam, şöyle bir iki bildiğim örnekten şey yapabilirim. Minimum Edit Distance diye bir örneğin dinamik programlama ile yapılın biliyorum. Bir problemi, subproblemleri bölüp her birinin çözümünü memory de tutup sonra da nasıl probleme onu aktarmak?
+
+112
+00:18:45,495 --> 00:18:46,495
+on memory. Evet. Teşekkür ediyorum Şafak. Gayet güzel bir özet oldu. Dinamik programlamada arkadaşlar bir problemin özellikle alt örtüşen problemlerini çözerek ve bunların sonuçlarını bellekte saklayarak birazcık bottom-up yaklaşımı kullanarak genellikle aşağıdan yukarı doğru küçük problemlerde
+
+113
+00:19:15,496 --> 00:19:22,295
+büyük problemin çözümüne doğru değerleri saklayarak ilerlediğimiz yaklaşıma dinamik programlama diyoruz.
+
+114
+00:19:22,836 --> 00:19:27,496
+Aslında buradaki programming, planning olarak da kullanılıyor.
+
+115
+00:19:28,256 --> 00:19:33,156
+Richard Bellman tarafından 1950'lerde ortaya atılmış bir yöntem.
+
+116
+00:19:34,055 --> 00:19:37,195
+Aslında çok da akıllıca bir yöntem.
+
+117
+00:19:37,195 --> 00:19:50,475
+çünkü düşündüğünüzde bir problemin alt problemlerini önce çözüp o çözdüğünüz değerleri saklayarak ana problemin çözümüne ulaşıyorsanız
+
+118
+00:19:50,475 --> 00:20:02,195
+rekürsif yaklaşımda tekrar tekrar çözdüğünüz noktaları gereksiz yere çözmeden probleminizin sonucunu elde etmiş oluyorsunuz.
+
+119
+00:20:02,195 --> 00:20:04,835
+rekürsif yaklaşımını biraz sonra göreceksiniz.
+
+120
+00:20:05,295 --> 00:20:08,856
+Bazı problemleri de rekürsif yaklaşımı kullanmak avantajlı değildir.
+
+121
+00:20:09,395 --> 00:20:15,635
+Ve bu avantajlı olmama durumunu dinamik programlama ile çözmeyi amaçlıyoruz.
+
+122
+00:20:15,895 --> 00:20:16,955
+Bugün onu göstereceğiz.
+
+123
+00:20:18,595 --> 00:20:24,135
+Genelde dinamik programlama birçok problem için kullanılsa da
+
+124
+00:20:24,135 --> 00:20:28,735
+optimizasyon problemleri için kullanılır.
+
+125
+00:20:28,735 --> 00:20:30,895
+Bir de
+
+126
+00:20:41,011 --> 00:20:53,071
+kombinatorik problemler için kullanılır. Şimdi, optimization problemleri nedir? Bir örnek verebilir misiniz?
+
+127
+00:21:04,884 --> 00:21:07,763
+yani bir optimization problemi örneği verebilirsiniz diye düşünüyorum arkadaşlar.
+
+128
+00:21:16,115 --> 00:21:18,115
+Neyi optimize etmeye çalışırsınız?
+
+129
+00:21:26,132 --> 00:21:27,111
+Evet, Ahmet Yaman.
+
+130
+00:21:31,955 --> 00:21:32,815
+Ahmet Yaman.
+
+131
+00:21:35,395 --> 00:21:37,175
+Hocam sesim geliyor mu şu anda?
+
+132
+00:21:37,695 --> 00:21:38,015
+Geliyor.
+
+133
+00:21:39,375 --> 00:21:46,275
+Herhangi bize verilen problemi daha hızlı ve daha az yer kaplayacak şekilde yapmaya optimiz ederiz.
+
+134
+00:21:46,755 --> 00:21:54,296
+Biz açıkçası Ahmet bundan bahsetmiyoruz. Optimization problemleri minimum ve maksimum bulma olarak da düşünebilirsin.
+
+135
+00:21:55,735 --> 00:22:00,995
+Daha farklı problemler ele aldığımız, yani bir algoritmayı optimize etmekten bahsetmiyoruz.
+
+136
+00:22:00,995 --> 00:22:03,135
+Optimization problemleri daha farklı problemler.
+
+137
+00:22:05,535 --> 00:22:07,015
+Hocam fikrim yok.
+
+138
+00:22:07,255 --> 00:22:08,655
+Tamam. Alper Reha.
+
+139
+00:22:15,827 --> 00:22:16,787
+Alper Reha
+
+140
+00:22:21,811 --> 00:22:35,171
+Altunur mu? Sesim geliyor mu? Evet, duyuyorum. Ben de arkadaşın dediği gibi bir optimizasyon problemi deyince hantal çalışan bir programı optimize etmekten bahsedecektim ama.
+
+141
+00:22:35,171 --> 00:22:51,072
+Tamam, çok güzel. Şimdi ben bu konuda bir yanlış algı oluşum var sanırım, onu konuşmak lazım. Umut'a söz vereceğim ama optimizasyon problemi dediğiniz zaman bir algoritmayı optimize etmekten bahsetmiyoruz.
+
+142
+00:22:51,072 --> 00:22:55,771
+Optimization problemler özellikle Endüstri Mühendisliğinin çokça sıkça ilgilendiği konulardır.
+
+143
+00:22:56,352 --> 00:23:03,392
+Mesela graflarda bir grafı en az renkle boyama problemi vardır.
+
+144
+00:23:03,951 --> 00:23:05,172
+Bu Optimization problemidir.
+
+145
+00:23:06,251 --> 00:23:07,072
+Umut, seni dinliyorum.
+
+146
+00:23:08,672 --> 00:23:09,672
+Merhabalar hocam.
+
+147
+00:23:09,672 --> 00:23:10,152
+Merhaba.
+
+148
+00:23:10,411 --> 00:23:12,712
+Pass route optimization problemi var.
+
+149
+00:23:13,271 --> 00:23:15,892
+Otobüslerin yollarını optimize etmeye çalışıyorsun.
+
+150
+00:23:15,992 --> 00:23:18,111
+Bu sanırım bu kategoriye girer.
+
+151
+00:23:18,252 --> 00:23:20,971
+Buna ek olarak class scheduling problemler var.
+
+152
+00:23:21,071 --> 00:23:25,011
+üniversitelerde hangi sınıflarda hangi dersin işlenceği ile ilgili.
+
+153
+00:23:25,011 --> 00:23:34,511
+Çok güzel. Yani mesela en az sayıda hoca ile en az saati kaplayarak derslerin yerleştirilmesi problemi.
+
+154
+00:23:35,051 --> 00:23:37,231
+Evet. Bu ikisi örnek aklıma geldi.
+
+155
+00:23:37,411 --> 00:23:47,971
+Çok teşekkür ederim Umut. Elinizdeki kısıtlı kaynakları verilen, size verilen kısıtlara uygun şekilde,
+
+156
+00:23:47,971 --> 00:23:55,911
+en optimum şekilde değerlendirip ürettiğiniz çözümler optimization problemleri olarak geçiyor literatürde.
+
+157
+00:23:56,731 --> 00:24:00,871
+Bunun için elinizde belli bir miktar para var diyelim.
+
+158
+00:24:01,831 --> 00:24:09,531
+Bu belli bir miktar para ile size katkı sağlayacak en fazla malzemeyi almak istiyorsunuz.
+
+159
+00:24:09,531 --> 00:24:17,871
+Bu parayı kullanarak alınabilecek fiyat performansındaki en fazla malzemeyi almak da bir optimizasyon problemidir.
+
+160
+00:24:17,971 --> 00:24:24,311
+bugün bununla ilgili birkaç örnek daha göreceğiz. Kombinatörik problemler dediğimiz zaman ne anlıyoruz?
+
+161
+00:24:27,131 --> 00:24:29,431
+Bunu daha önce konuşmuştuk dersin başında.
+
+162
+00:24:41,875 --> 00:25:07,275
+Mesela bir sınıflandırma problemi düşünün. Sınıflandırma probleminde örneğin sınıflandırma işlemi için özellik kullanıyorsunuz. En tane özelliğiniz var. Ama bu en özellikten size sınıflandırmada en yüksek başarıyı sağlayacak olan grubu bulmak istiyorsunuz özellikler içerisinde. Kaç tane olasılığınız vardır?
+
+163
+00:25:07,275 --> 00:25:10,796
+bakmanız gereken.
+
+164
+00:25:14,483 --> 00:25:23,324
+en tane özelliğimiz var. Bu özelliklerden en iyi başarıyı sağlayan kombinasyonun peşindeyiz.
+
+165
+00:25:31,635 --> 00:25:38,235
+Bizim dersin kayıtlarını zor saklamıyorlardır. Arada o kadar çok sessizlik oluyor ki iyi bir sıkıştırma oluyordur diye tahmin ediyorum.
+
+166
+00:25:39,315 --> 00:25:40,535
+Evet, Umut sana söz vereyim.
+
+167
+00:25:41,195 --> 00:25:42,436
+El faktöreye duracağım.
+
+168
+00:25:44,635 --> 00:25:45,875
+Maalesef doğru değil.
+
+169
+00:25:48,195 --> 00:25:51,915
+Şafak dışında bir arkadaşımız el kaldırırsa ona söz vereceğim.
+
+170
+00:25:57,715 --> 00:26:25,476
+Tekrar söylüyorum arkadaşlar. Bir sınıflandırma problemi var. Bu sınıflandırma probleminde özellik kullanıyoruz. O hangi sınıfla ait olduğunu anlamak için örneğimizin. Bu noktada en tane özelliğimiz var ama bu en özellik bize %90 başarı sağlayamıyor. Bu özelliklerin içerisinden belli başlı olanları seçip kullanırsak belki başarı %95'e çıkacak çünkü bu özelliklerden bazıları belki başarımızı kötü etkiliyor.
+
+171
+00:26:25,476 --> 00:26:31,535
+Burada kaç tane farklı seçeneğimiz var? Evet, Şafak'a söz vereyim.
+
+172
+00:26:32,835 --> 00:26:34,616
+2 üzeri n olabilir mi acaba hocam?
+
+173
+00:26:34,835 --> 00:26:37,916
+Evet, 2 üzeri n, eksi 1 diyelim. Neden eksi 1?
+
+174
+00:26:39,195 --> 00:26:41,775
+Kümenin tamamını kullanmayacağız diyeyim acaba.
+
+175
+00:26:41,875 --> 00:26:42,955
+Yok, tam tersi.
+
+176
+00:26:44,695 --> 00:26:45,535
+Bilmiyorum o zaman.
+
+177
+00:26:45,595 --> 00:26:45,995
+Boş küme.
+
+178
+00:26:46,415 --> 00:26:47,315
+Evet, boş küme.
+
+179
+00:26:47,315 --> 00:26:55,236
+Boş küme olmayacak. Alın size mesela test sorusu sorulabilecek bir tane. Çok basit bir soru.
+
+180
+00:26:55,475 --> 00:27:01,335
+ama hani gördüğüm kadarıyla pek katkıda bulunmak istemiyorsunuz ya da üzerine düşünmek istemiyorsunuz.
+
+181
+00:27:01,695 --> 00:27:04,035
+Ben gerçekten bu sene biraz zorlanıyorum.
+
+182
+00:27:04,675 --> 00:27:11,095
+Geçen dönemde pandemide veri yapılarında çok sempatik değildi durumlar ama algoritma analizinde de devam ediyor.
+
+183
+00:27:12,595 --> 00:27:17,855
+Özelden mail olarak atarsanız benim şu sıkıntım var ben bu yüzden derse katkı sağlamıyorum.
+
+184
+00:27:18,415 --> 00:27:21,555
+Ders size mutlu değilim şunu sevmiyorum derseniz memnun olurum.
+
+185
+00:27:21,555 --> 00:27:31,695
+Ama lütfen şunu söylemeyin, bu sorduğunuz sorular çok zor, işte daha konuyu anlatmadan soruyorsunuz o yüzden üzerinde yorum yapamıyoruz demeyin
+
+186
+00:27:31,695 --> 00:27:40,555
+Çünkü bunların üzerinde yorum yapabilecek bir şeyler, biraz önce bir arkadaşımız n! dedi, ne oldu yanlış söyledi, bir şey mi oldu? Olmadı ama üzerine düşünmüş oldum
+
+187
+00:27:40,555 --> 00:27:51,835
+yani gerçekten katkı sağlamamanız dersin akışını oldukça yavaşlatıyor. O yüzden sağlayanlara çok teşekkür ediyorum.
+
+188
+00:27:53,875 --> 00:28:02,675
+Şimdi dinamik programlama ile ilgili tanımı yazacağım. Siz de not alırsanız sevinirim.
+
+189
+00:30:53,587 --> 00:31:12,467
+Şimdi bu tanımı yazdıktan sonra bir de şunu da konuşmak lazım. Principle of Optimality isimli bir kavram var. Şuraya yazalım.
+
+190
+00:31:12,467 --> 00:31:17,707
+Principle of Optimality
+
+191
+00:31:21,940 --> 00:31:22,659
+See you, man.
+
+192
+00:31:31,892 --> 00:31:48,992
+Burada şunu söylüyor bu ifade. Bir problemin optimal sonucuna ulaşmak için küçük problemlerin optimal sonucunu bulmak bizi genelde doğru sonuca ulaştırır.
+
+193
+00:31:48,992 --> 00:32:02,092
+Bazı exception'ları dışında alt problemlerin optimal sonuçlarını birleştirerek ana problemimizin optimal sonucuna ulaşabiliyoruz
+
+194
+00:32:02,092 --> 00:32:10,512
+Bu yaklaşım zaten dinamik programlamanın birçok optimizasyon problemini çözmesine yardımcı oluyor
+
+195
+00:32:10,512 --> 00:32:16,892
+Ancak her problem için geçerli değil, bunu geri geldiği zaman tartışıyor olacağız
+
+196
+00:32:16,892 --> 00:32:30,151
+Bu kavramı da bir kez daha altını çizmiş olalım. Şimdi bir sonraki sayfaya geçip esas örneklerimizden bir tanesiyle hikayeye başlayalım.
+
+197
+00:32:30,151 --> 00:32:53,572
+Şimdi fibonatçı sayıları her sene bu örnekle başlıyoruz. Çok da güzel aslında anlatıyor bize. 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 şeklinde devam ediyor.
+
+198
+00:32:53,572 --> 00:32:59,711
+Buradaki oluşturulacak basit rekürans bağıntısı nedir? Kim söylemek ister?
+
+199
+00:33:07,827 --> 00:33:08,547
+Evet Olga.
+
+200
+00:33:10,068 --> 00:33:12,268
+Fn-1 artı Fn-2.
+
+201
+00:33:12,607 --> 00:33:13,527
+Teşekkür ederim.
+
+202
+00:33:17,619 --> 00:33:40,199
+fn-1 artı fn-2 n'in birden büyük değerleri için bunu söyleyebiliyoruz. Şimdi tabii iki tane initial condition'ımız var. Onları da yazalım. f0, 0 ve f1, 1 değerleri.
+
+203
+00:33:40,199 --> 00:33:44,899
+Şimdi bunu rekürsif olarak çözseydik
+
+204
+00:33:48,980 --> 00:33:51,619
+Şöyle bir çözümle karşılaşacaktık.
+
+205
+00:33:52,579 --> 00:33:53,539
+In Fibonacci
+
+206
+00:33:53,539 --> 00:34:00,980
+Kendisine kaçıncı Fibonacci sayısını istediğimizi soruyoruz.
+
+207
+00:34:03,099 --> 00:34:05,359
+If diyeceğiz
+
+208
+00:34:05,359 --> 00:34:08,539
+and 0 ise
+
+209
+00:34:08,539 --> 00:34:10,679
+return 0
+
+210
+00:34:10,679 --> 00:34:14,279
+if
+
+211
+00:34:14,279 --> 00:34:15,719
+and
+
+212
+00:34:15,719 --> 00:34:17,639
+1 ise
+
+213
+00:34:17,639 --> 00:34:23,380
+return 1. Bunlar initial conditionlarımız. Ve sonra ne yazacağız return?
+
+214
+00:34:23,380 --> 00:34:44,639
+return. fibonacci n-1 artı fibonacci n-2 yazacağız. Peki bunun bize getirdiği bu recursive solution'ın sıkıntı nedir? Kim söylemek ister.
+
+215
+00:34:44,639 --> 00:34:50,139
+Yani bir yanlışlık yok, doğru sonucu üretecek. Ama bir problem var.
+
+216
+00:34:56,115 --> 00:34:56,835
+Ertuğrul.
+
+217
+00:34:58,395 --> 00:35:01,475
+Hocam, her fibonacci'de iki defa aynı fonksiyonu çağırıyoruz.
+
+218
+00:35:01,915 --> 00:35:02,096
+Evet.
+
+219
+00:35:02,096 --> 00:35:04,056
+Onu bulundukken bir daha iki kez çağırıyoruz.
+
+220
+00:35:04,056 --> 00:35:10,915
+Yani her adımda iki kat arttığı için çok fazla fonksiyon çağırmamız gerekiyor.
+
+221
+00:35:11,375 --> 00:35:16,315
+Doğru ama iki kez çağırmamızın bize getirdiği problem ne?
+
+222
+00:35:17,595 --> 00:35:23,376
+Yani normalde mesela fibonacci n-1'i ayrı hesaplıyoruz, n-2'yi ayrı hesaplıyoruz.
+
+223
+00:35:23,376 --> 00:35:26,615
+n-1 hesaplarken bir daha n-2 hesaplamak gerekiyor.
+
+224
+00:35:26,615 --> 00:35:32,075
+Çok güzel. Yani biz aslında bazı hesapladığımız yeri tekrar hesaplıyoruz.
+
+225
+00:35:32,075 --> 00:35:42,636
+Şu örnekte olduğu gibi Fib 1, 2'den oluşuyor. Fibonacci 3. Bunların toplamından oluşuyor.
+
+226
+00:35:42,775 --> 00:35:49,696
+Burada da toplam var. Bu da Fib 2 artı Fib 3 oluyor.
+
+227
+00:35:49,695 --> 00:36:06,355
+Burada baktığınızda mesela örneğin 2'yi yeniden değerlendirmiş ve hesaplamış oluyoruz. Aynı şey 3 için geçerli. Bu sayılar büyüdükçe biz bazı değerleri tekrar tekrar hesaplamış oluyoruz.
+
+228
+00:36:06,355 --> 00:36:15,535
+Halbuki rekürans relation'ı burada kurduk. Biraz önceki şuradaki rekürans relation'ı yazalım.
+
+229
+00:36:18,996 --> 00:36:48,535
+burada kurduk. Buna uygun hesaplamamızı bir dizi üzerinde iteratif olarak yapmış olsaydık alt problemlerle buraya yazalım 3, 4, 5, 6, 7, 8, 0, 1, 1, 2, 3, 5, 8, 13, 21 şeklinde bu ilk iki değeri hesapladıktan sonra toplamını buraya yazacaktık ve
+
+230
+00:36:48,535 --> 00:37:11,975
+burası için baştan itibaren bir hesaplama yapmamıza gerek kalmayacaktı. Burası için baştan itibaren hesaplama yapmamıza gerek kalmayacaktı. İşte dinamik programlama mantığı bize önce yaptığımız işlemlerin sonucunu kullanarak ana sonuca ulaşmamızı sağlıyor ve bu yönde yardımcı oluyor. Bu yaklaşımın en büyük sorunu nedir?
+
+231
+00:37:16,244 --> 00:37:28,143
+Dinamik programlamanın şu anda ekrana baktığınızda bize yaratacağı önemli bir işlem avantajı var ama problem nerede? Evet, Efe.
+
+232
+00:37:29,423 --> 00:37:31,863
+Hocam sürekli diziye erişim mi sağlayacaktır?
+
+233
+00:37:33,504 --> 00:37:39,863
+Öbür tarafta da Recursive Function'da bir Function Call yapıyoruz. Biraz daha farklı bir şey arıyorum.
+
+234
+00:37:41,863 --> 00:37:44,664
+Tolga'dan başka bir kişi kaldırsın lütfen el.
+
+235
+00:37:49,043 --> 00:37:49,523
+Okan?
+
+236
+00:37:51,563 --> 00:37:53,043
+Çok memory kaplayabilir.
+
+237
+00:37:53,464 --> 00:38:02,443
+Evet. Space complexity açısından dinamik programlamanın bir dezavantajı var arkadaşlar. Genellikle.
+
+238
+00:38:03,303 --> 00:38:11,923
+Bunu göz ardı etmemek gerekiyor. Hatta problemi çözerken n sayısına bağlı olarak ya da başka bir parametreye bağlı olarak
+
+239
+00:38:11,923 --> 00:38:14,823
+dikkat etmeliyiz ki
+
+240
+00:38:14,823 --> 00:38:19,543
+memory kullanımında bir sorun oluşmasın.
+
+241
+00:38:19,543 --> 00:38:26,863
+Yani ne kadarlık bir alan gerekiyor problemin başında bunu hesaplamak gerekiyor.
+
+242
+00:38:26,943 --> 00:38:29,084
+Genelde time complexity'e odaklıyızdır.
+
+243
+00:38:29,643 --> 00:38:34,963
+Ama dinamik programlamayla çözmeyi planladığımız problemlerde de
+
+244
+00:38:34,963 --> 00:38:37,203
+space complexity'yi ortaya koyup
+
+245
+00:38:37,203 --> 00:38:40,423
+kullanılacak rakamlara bağlı olarak o yöntemin
+
+246
+00:38:40,423 --> 00:38:52,483
+ilgili cihazda kullanılmasının uygun olup olmadığına, çünkü bir bellek ihtiyacı olacak, gözden geçirmek gerekir. Buna dikkat etmek gerekir.
+
+247
+00:38:56,467 --> 00:38:57,227
+Evet, şimdi
+
+248
+00:38:57,227 --> 00:38:59,307
+tabii
+
+249
+00:38:59,307 --> 00:39:02,647
+bir başka örnekle devam edeceğiz.
+
+250
+00:39:04,087 --> 00:39:06,247
+Daha basit bir, yani daha basit derken
+
+251
+00:39:06,247 --> 00:39:08,467
+ilerideki örneklerden daha basit bir örnek.
+
+252
+00:39:10,308 --> 00:39:11,487
+Coin role
+
+253
+00:39:11,487 --> 00:39:13,747
+problem diyelim.
+
+254
+00:39:13,747 --> 00:39:15,747
+Evet.
+
+255
+00:39:19,539 --> 00:39:23,539
+Şimdi, burada size
+
+256
+00:39:25,739 --> 00:39:30,539
+arka arkaya coin'ler veriliyor.
+
+257
+00:39:32,916 --> 00:39:46,916
+Siz iki tane yan yana gelmeyecek seçimler yapmak üzere en yüksek miktarı önünüzdeki coinlerden seçmeye çalışıyorsunuz.
+
+258
+00:39:47,715 --> 00:39:51,836
+Kısıtınız iki tane coinin yan yana seçilmemesi.
+
+259
+00:39:52,775 --> 00:39:58,555
+Hedefiniz en fazla parayı önünüzdeki coinlerden seçmek.
+
+260
+00:39:58,555 --> 00:40:05,675
+nasıl bir rekürans bağıntısı oluşturmalıyız bunun için?
+
+261
+00:40:14,835 --> 00:40:22,135
+Örneğin 5, 1, 2, 10, 6, 2 olsun.
+
+262
+00:40:24,615 --> 00:40:28,335
+Kısıtımız yan yana iki seçim yapılmayacak.
+
+263
+00:40:30,895 --> 00:40:37,895
+Hedefimiz en yüksek miktarı seçmiş olacağız en sonunda.
+
+264
+00:40:48,980 --> 00:40:54,380
+Evet, düşüncelerinizi bekliyorum, katkılarınızı bekliyorum.
+
+265
+00:41:01,139 --> 00:41:27,459
+Biraz önce hatırlarsanız, yaptığımız şey Fibonacci'de Fn eşittir Fn-1 artı Fn-2'de. Ama burada biz ikili seçimler yapmak istiyoruz. Örneğin bunu seçebiliriz, şunu seçebiliriz. Yani 5, 2, 6 seçilmesi mümkün olasılık.
+
+266
+00:41:27,459 --> 00:41:31,219
+1, 10, 2'yi seçebiliriz.
+
+267
+00:41:37,523 --> 00:41:42,523
+Başka ne yapabiliriz? 5, 10, 2'yi seçebiliriz.
+
+268
+00:41:46,867 --> 00:42:04,087
+Buradan yola çıkarak bu kombinasyonların hepsini denememiz gerekiyor ki burada 6 tane coin var örneğimizde ama normalde n tane olacak ve bu n genelde büyük bir sayı olacak.
+
+269
+00:42:04,247 --> 00:42:15,227
+O zaman bunun burada kombinatörik bir problem olduğunu düşünürsek bütün kombinasyonlarını hesaplamak bizim için oldukça maliyetli bir brute force yaklaşımı olacaktır.
+
+270
+00:42:15,227 --> 00:42:23,187
+hepsini tek tek denemek gerekecektir. Bu durumda hepsini tek tek denememek adına dinamik programlama mantığını kullanalım diyoruz.
+
+271
+00:42:27,603 --> 00:42:28,303
+Evet Efe.
+
+272
+00:42:28,983 --> 00:42:32,883
+Hocam benim aklıma bir şey geldi. Şimdi en tane seçeceğiz ya biz.
+
+273
+00:42:33,263 --> 00:42:37,904
+Evet. En tane seçeceğiz. Pardon. En taneden seçeceğiz.
+
+274
+00:42:38,064 --> 00:42:42,883
+En tanenin içinde seçerken burada 6 tane vardı. 3'er 3'er ayırdık bunları.
+
+275
+00:42:43,064 --> 00:42:46,683
+Yok. 3-3 olmak zorunda değil. Yani farklı şekiller.
+
+276
+00:42:46,683 --> 00:42:49,383
+Ama 3-3 her zaman daha büyük çıkmaz mı 2-2'ye göre?
+
+277
+00:42:50,123 --> 00:42:50,944
+Hiç belli olmaz.
+
+278
+00:42:50,944 --> 00:42:59,984
+4-4 de seçebiliriz. Yani benim düşündüğüm tek sayıysa farklı, çift sayıysa farklı seçim olacak.
+
+279
+00:43:00,723 --> 00:43:05,403
+Böyle bir şeye ihtiyacımız yok. Tek sayı, çift sayı ayrımı yapmadan da bu problemi çözebiliriz.
+
+280
+00:43:05,723 --> 00:43:12,544
+Burada önemli olan şey geriye dönük baktığımızda hangisini almaya karar vereceğimiz.
+
+281
+00:43:13,263 --> 00:43:20,184
+Yani ilerlerken hangi noktada olacağımız. Ben şöyle bir tablo çizeyim size. Belki katkı sağlar.
+
+282
+00:43:20,944 --> 00:43:25,144
+Şimdi şöyle bir tablomuz olsun
+
+283
+00:43:33,492 --> 00:43:59,791
+Burada birinci kısım indeksi temsil etsin. 0, 1, 2, 3, 4, 5. İkinci kısım her bir coin'in cost'unu temsil etsin. Üçüncü kısımda bizim bu coin'leri toplarken elde edebileceğimiz maksimum cost'u temsil etsin.
+
+284
+00:43:59,791 --> 00:44:20,911
+Costlarımız belli. Birinci coin'inki 5. İkinci 1, 3, 2, 4, 10, 5, 6. Bir tane daha eklememiz gerekiyor. Altıncı coin'imiz de 2. Şimdi ilk başlarkenki sıfırıncı adımda total costumuz nedir?
+
+285
+00:44:35,603 --> 00:44:36,203
+Şafak?
+
+286
+00:44:38,203 --> 00:44:39,344
+Sıfır değil mi hocam?
+
+287
+00:44:39,543 --> 00:44:45,083
+Evet, sıfır. O kadar basit olduğu için soruyorum birileri cevap versin diye ama tenezzül etmiyor arkadaşlarımız.
+
+288
+00:44:46,643 --> 00:44:48,103
+Şimdi bire geldik.
+
+289
+00:44:50,003 --> 00:44:51,263
+Birinci coin'deyiz.
+
+290
+00:44:51,484 --> 00:44:52,683
+Total costumuz ne olabilir?
+
+291
+00:44:56,244 --> 00:45:03,003
+Hocam bir şey sorabilir miyim? Ben coin'de neden sıfırın içinde eksi geçtiğimizi ve altıncı sutunu alışturduğumuzu anlamadım.
+
+292
+00:45:04,903 --> 00:45:11,843
+Şöyle söyleyeyim Sercan, bu birinci coin, bu ikinci coin, bu üçüncü coin, bu dördüncü, bu beşinci, bu da altıncı coin.
+
+293
+00:45:12,424 --> 00:45:16,244
+İlk adımda bizim costumuzu belirlememiz gerekiyor.
+
+294
+00:45:17,643 --> 00:45:22,883
+Costumuz ilk adımda hiçbir coin'i seçmediğimiz için sıfır. Sıfırdan başlamak zorundayız. Counter gibi düşünebilirsin.
+
+295
+00:45:22,883 --> 00:45:34,803
+Tamamdır. Ama index 0'a yazdık belki o senin kafanı kaçtırmış olur. Evet şimdi birinci coin'i alsaydık costumuz ne olacaktı?
+
+296
+00:45:37,803 --> 00:45:52,803
+Evet Monis'in cevap verdiğini chatten görüyorum. 5 olacaktı. Buraya 5 yazalım. Maksimum birinci coin hedefimiz olsaydı yani elimizde sadece bir tane para olsaydı 5 olacaktı.
+
+297
+00:45:52,883 --> 00:45:58,104
+İki tane para olsaydı F'in değeri ne olacaktı?
+
+298
+00:46:05,780 --> 00:46:07,319
+Ertuğrul'dan başka biri olsun.
+
+299
+00:46:10,900 --> 00:46:11,739
+Hüseyin Çetin
+
+300
+00:46:19,731 --> 00:46:20,751
+Kübra Karakuyu
+
+301
+00:46:27,764 --> 00:46:29,043
+Mehmet Hayri Çakır
+
+302
+00:46:37,684 --> 00:46:38,904
+Mustafa Akbulut
+
+303
+00:46:38,904 --> 00:46:44,164
+Buradayım hocam. Evet, cevap alabilir miyim?
+
+304
+00:46:45,383 --> 00:46:48,083
+5 mi olacak acaba? Neden dolayı?
+
+305
+00:46:48,903 --> 00:46:53,023
+1-0, 1-5 olduğu için düşündüm ama tam şey...
+
+306
+00:46:53,023 --> 00:46:58,903
+Yok, 1-0, 5 olarak düşünme. Elimizde 1 ve 2 coin'i var.
+
+307
+00:47:00,524 --> 00:47:04,243
+Evet. Neden? Yani 6 değil.
+
+308
+00:47:04,243 --> 00:47:09,923
+Tam anlamadım konuyu da hocam o yüzden
+
+309
+00:47:09,923 --> 00:47:12,923
+Tamam peki o zaman Şuhur A'ya söz vereyim
+
+310
+00:47:12,923 --> 00:47:16,263
+Esim geliyor mu hocam?
+
+311
+00:47:16,584 --> 00:47:16,923
+Geliyor
+
+312
+00:47:16,923 --> 00:47:22,203
+Yanlış anlamadıysam eğer yan yan olanları almıyorduk
+
+313
+00:47:22,203 --> 00:47:24,264
+Evet o zaman niye ikiye almıyoruz?
+
+314
+00:47:25,203 --> 00:47:30,263
+Beş ve bir elimizdeyken yan yan oldukları için beşiye alıyoruz sadece
+
+315
+00:47:30,263 --> 00:47:34,623
+Peki yani niye 1'i alıyoruz, 1. coin'i seçiyoruz ve 2. coin'i seçmiyoruz?
+
+316
+00:47:34,743 --> 00:47:36,623
+Çünkü en yüksek olanını seçmemiz
+
+317
+00:47:36,623 --> 00:47:38,923
+Tamam, buradaki kritik nokta en yüksek olanı seçmemiz, doğru mu?
+
+318
+00:47:39,483 --> 00:47:39,763
+Aynen
+
+319
+00:47:39,763 --> 00:47:42,503
+Tamam, bir kere demek ki fonksiyonda böyle bir şeylerin olması gerekiyor
+
+320
+00:47:42,503 --> 00:47:47,184
+Buraya 5 dedim, şimdi geldim, bir sonraki turdayım
+
+321
+00:47:47,184 --> 00:47:52,103
+3. coin de eklendi alt problemime, 2-2 coin de çözdük
+
+322
+00:47:52,103 --> 00:47:56,703
+3. coin eklendiğinde şu anda kaç olacak? F, Sermet?
+
+323
+00:47:57,443 --> 00:47:57,743
+7
+
+324
+00:47:57,743 --> 00:47:59,783
+Ne ile neyi birleştiriyorsun?
+
+325
+00:47:59,783 --> 00:48:01,264
+1 ile 3'ü
+
+326
+00:48:01,264 --> 00:48:03,343
+Tamam peki teşekkür ediyorum
+
+327
+00:48:03,343 --> 00:48:05,383
+4. coin eklendi
+
+328
+00:48:05,383 --> 00:48:06,823
+kaç olacak?
+
+329
+00:48:07,703 --> 00:48:08,383
+Ahmet Yaman
+
+330
+00:48:08,383 --> 00:48:10,823
+15 olacak hocam
+
+331
+00:48:10,823 --> 00:48:12,283
+Ne ile neyi birleştiriyorsun?
+
+332
+00:48:12,823 --> 00:48:14,243
+5 ile 10'u birleştirdim
+
+333
+00:48:14,243 --> 00:48:16,743
+Hangi 5 ile 10'u birleştirmiş oldun?
+
+334
+00:48:17,783 --> 00:48:18,563
+1. ve 4.
+
+335
+00:48:19,563 --> 00:48:22,404
+1. ve 4.'yı birleştirmiş oldun peki
+
+336
+00:48:22,404 --> 00:48:24,143
+15 oldu
+
+337
+00:48:24,143 --> 00:48:27,243
+Bir sonraki turdayız 5. de
+
+338
+00:48:27,243 --> 00:48:29,243
+5. coin eklendi
+
+339
+00:48:29,243 --> 00:48:31,563
+Kim cevaplamak ister?
+
+340
+00:48:33,843 --> 00:48:35,583
+Hocam bir şey sorabilir miyim?
+
+341
+00:48:35,904 --> 00:48:36,123
+Tabii.
+
+342
+00:48:36,603 --> 00:48:40,723
+Hep belli bir sayıda mı alıyoruz? Mesela ikili ikili alarak gidiyoruz ya şu anda.
+
+343
+00:48:40,883 --> 00:48:47,184
+Hayır şu anda tamamen ben sözler olarak hani neden öyle nasıl seçim yaptığınızı herkes duysun diye istiyorum.
+
+344
+00:48:47,323 --> 00:48:50,764
+Yoksa aslında bir formül oluşuyor. O formüle gideceğiz biraz da.
+
+345
+00:48:51,044 --> 00:48:52,363
+Tamam teşekkür ederim.
+
+346
+00:48:52,684 --> 00:48:55,023
+Rica ederim. Efe söz istemişti.
+
+347
+00:48:55,023 --> 00:49:00,503
+Hocam yine 15 olacak çünkü 6'yı alamıyoruz onunla yan yan olduğu için
+
+348
+00:49:00,503 --> 00:49:06,404
+Şimdi arkadaşınız diyor ki yine 15 olacak çünkü 6'yı alamıyoruz
+
+349
+00:49:06,404 --> 00:49:12,003
+6'yı alamadığımızı nereden yani 6'yı niye alamıyoruz?
+
+350
+00:49:12,663 --> 00:49:17,203
+10 oradaki en büyük sayı olduğu için onunla 6'yı topladık mı 16 olur ama orası
+
+351
+00:49:17,203 --> 00:49:18,883
+Yok öyle yapmamalıyız
+
+352
+00:49:18,883 --> 00:49:23,404
+Öyle yapmamalıyız işte burada bir bakış açısını çıkarmaya çalışıyorum
+
+353
+00:49:23,404 --> 00:49:29,663
+Yani 6'yı daha öncekilere ekleyememe sebebimizin ne olduğunu ve nasıl anladığımızı soruyorum
+
+354
+00:49:29,663 --> 00:49:32,504
+Tolga
+
+355
+00:49:32,504 --> 00:49:37,504
+Daha önceki bulduğumuz en büyük sayılarda 10'u kullanmıştık
+
+356
+00:49:37,504 --> 00:49:40,523
+6'da 10 ile bitişik olduğu için 6'yı alamayız
+
+357
+00:49:40,523 --> 00:49:43,404
+Nerede 6'yı kullanmıştık mesela?
+
+358
+00:49:43,404 --> 00:49:48,784
+Mesela toplam 15'i bulurken 5 ve 10 olan 1. ve 4.'yı toplamıştık
+
+359
+00:49:48,784 --> 00:49:50,124
+Orada 10'u kullandık
+
+360
+00:49:50,124 --> 00:49:58,803
+Yani evet yanlış değil söyledikleriniz ama bu değil. Yani 6'yı eklediğinizde istediğimiz sonuca erişmediğinizde. Şura?
+
+361
+00:50:01,624 --> 00:50:08,924
+Hocam 6 dışındaki yani 1, 2, 3, 4. indekslerdeki sayıların zaten maksimumu 15. Yani 10 ile 5'in toplamı.
+
+362
+00:50:08,924 --> 00:50:14,904
+Öyle bakmayacaksınız. Şu anda siz gözle bakıp karar veriyorsunuz. Bilgisayarın böyle bir şansı yok. Eray Zeki?
+
+363
+00:50:14,904 --> 00:50:23,724
+Şöyle düşünürüz belki. 6'yı 7'ye ekleyip 13 bulduk. O da 15'ten küçük olduğu için.
+
+364
+00:50:23,724 --> 00:50:37,083
+Evet. Aynen öyle. Niye? Çünkü biz yan yana olanları alamıyoruz. 10'u, 10'dakini alamayacağımızı göre bir öncekini alma şansımız var. O zaman 6'yı neye ekliyoruz? 7'ye ekliyoruz. Değer kaç çıktı? 13.
+
+365
+00:50:37,619 --> 00:51:01,279
+Yani 10'u almasaydık, yeni geleni 10'dan öncekilere ekleseydik 13'ü elde edecektik. Bu avantajlı olmadığı için 15'i almayı tercih ettik. Son örnekteyiz. Son örnekte 2'yi 15'e ekliyoruz ve 17 değerini elde ediyoruz.
+
+366
+00:51:01,279 --> 00:51:08,220
+2'yi 15'e eklerken hangi 15'e eklemiş olduk?
+
+367
+00:51:15,635 --> 00:51:44,476
+Evet Ahmet. Dördüncü indekste bulduğumuz on beş eklemiş. Evet, dördüncü indekste bulduğumuz on beş eklemiş. Çünkü yan yana olanları ekleme şansımız yok. Gördüğünüz gibi burada bir aslında formül oluştu. Biz ya o andaki bulunduğumuzu alıyoruz ve öncekilerle bir işleme sokuyoruz ya da bir önceki state'tekine bakıp onun mu acaba en büyük olduğuna bakıyoruz.
+
+368
+00:51:44,476 --> 00:52:09,755
+Şimdi saat 13.55 oldu. Bir 10 dakika ara vereceğiz. Döndükten sonra bunun formülün ne olması gerektiğini yani rekürans bağıntısının ne olması gerektiğini konuşup hemen yazıp bir sonraki problemimize ilerleyeceğiz. Burada bir bağıntı var. Bu bağıntıyı Fibonacci'da olduğu gibi ortaya çıkarmak istiyoruz. 14.06'da görüşmek üzere diyorum. Teşekkür ediyorum katkılarınız için.
+
+369
+01:02:11,891 --> 01:02:14,771
+Evet arkadaşlar, yeniden merhaba. Kaldığımız yerden devam edelim.
+
+370
+01:02:18,031 --> 01:02:23,251
+Şimdi bir formül oluşturmaya çalışıyorduk. Bu formülde de... Evet, Rafet.
+
+371
+01:02:24,031 --> 01:02:29,631
+Hocam, başlamadan önce bir şey soracaktım ben. Sınavla ilgili bir soru bu arada.
+
+372
+01:02:29,891 --> 01:02:34,031
+Yok, sınavla ilgili soruyu şu anda almayacağım. Sınavla ilgili soruları daha önce konuştuk.
+
+373
+01:02:34,031 --> 01:02:40,011
+Şimdi konuyu anlatıyorum. Sonra vaktimiz kalırsa ikinci uygulama kısmında tabii ki orada sorabilirsin.
+
+374
+01:02:40,711 --> 01:02:41,711
+Peki, teşekkürler.
+
+375
+01:02:41,891 --> 01:02:43,152
+Rıca ederim. Evet Ahmet.
+
+376
+01:02:44,572 --> 01:02:45,952
+Hocam başlayabilir miyim ben?
+
+377
+01:02:46,531 --> 01:02:47,391
+Tabii ki, lütfen.
+
+378
+01:02:48,732 --> 01:02:53,811
+Hocam ilk başta mantığı anlatmaya çalışacağım, sonra da formülü yazalım beraber.
+
+379
+01:02:53,932 --> 01:02:54,511
+Tabii, lütfen.
+
+380
+01:02:55,391 --> 01:03:02,371
+Şöyle, ilk etapta dizimizin uzunluğunun bir fazlası boyutunda yeni bir dizi tanımlıyoruz.
+
+381
+01:03:02,572 --> 01:03:03,691
+Buna da F dizisi diyelim.
+
+382
+01:03:04,171 --> 01:03:04,371
+Evet.
+
+383
+01:03:04,911 --> 01:03:06,351
+İlk elemanı sıfır olmak üzere.
+
+384
+01:03:06,792 --> 01:03:08,232
+İlk elemanı sıfır attık.
+
+385
+01:03:08,232 --> 01:03:10,091
+Şu an F1'i bulmaya çalışıyoruz.
+
+386
+01:03:10,091 --> 01:03:32,731
+F1'de doğrudan C1'den indiriyoruz. Yani F1 her zaman C1 olacak. Şimdi F2'yi bulmak için yapmamız gereken işlem şu aslında. Öncelikle C2 ile F0'ı topluyoruz. Sonucunun F1'den büyük olup olmadığını kontrol ediyoruz.
+
+387
+01:03:32,731 --> 01:03:41,751
+Eğer büyükse doğrudan bu bulduğumuz sonucu, eğer küçükse de bir önceki f fonksiyonu değerini yazıyoruz. Bu sayede bizim uzayıp gidiyor.
+
+388
+01:03:42,171 --> 01:03:45,671
+Evet doğru yani gayet güzel anlattın. Şimdi bunu formülüze edersek.
+
+389
+01:03:47,151 --> 01:03:52,471
+Şöyle diyebiliriz. fn eşittir. cn-cn-2
+
+390
+01:03:52,471 --> 01:03:54,111
+cn
+
+391
+01:03:54,111 --> 01:03:59,851
+eksi cn-2
+
+392
+01:03:59,851 --> 01:04:07,951
+Eğer büyük mü Cn-1'den? Yani bu doğrudan eşitlemem yanlış oldu ama
+
+393
+01:04:07,951 --> 01:04:10,871
+Neyse bir yazalım
+
+394
+01:04:10,871 --> 01:04:18,192
+Büyükse Cn-Cn-2'yi alacağız
+
+395
+01:04:18,192 --> 01:04:22,692
+Küçükse de Cn-1 alacağız
+
+396
+01:04:22,692 --> 01:04:26,211
+Bu eksiyi anlayamadım. Niye eksi?
+
+397
+01:04:26,211 --> 01:04:29,431
+cn-cn-2
+
+398
+01:04:29,431 --> 01:04:34,571
+Bir dakika tekrar bakıyorum.
+
+399
+01:04:38,324 --> 01:05:01,903
+Burada toplam olması lazım herhalde. Evet, toplam olması lazım. Hani eksiyi anlayamadım, nereden düşündün? Anlattığında çünkü toplam şeklinde anlattın. Bu şekilde alacağız. İçlerinden en büyüğü seçeceğiz diyorsun. Aslında bir nevi max cn artı cn eksi 2 diyorsun. Doğru mu? Evet. Şöyle yapalım hatta şurayı da silelim.
+
+400
+01:05:01,903 --> 01:05:04,983
+virgül cn-1
+
+401
+01:05:04,983 --> 01:05:08,043
+cn-1 diyelim. Bunun max'ını alacağız.
+
+402
+01:05:10,443 --> 01:05:11,544
+Burayı da silmiş olalım.
+
+403
+01:05:14,583 --> 01:05:16,504
+Aslında burada bir yerde hata var ama
+
+404
+01:05:16,504 --> 01:05:18,184
+Nedir?
+
+405
+01:05:19,623 --> 01:05:22,184
+c yerine f yazmamız lazım bir yerde.
+
+406
+01:05:23,303 --> 01:05:30,483
+Şimdi bu aslında bir nevi kabaca ifade oldu. Bunun yerine toparlamamız lazım.
+
+407
+01:05:30,483 --> 01:05:54,663
+Teşekkür ederim buraya kadar oldukça yardımcı oldun. Ben bunu toparlayayım. Buraya max dedikten sonra arkadaşlar bir parantez açalım. Cn artı fn-2 cn-2 yerine çünkü oraya kadar olan toplamı alacağız. Virgül fn-1 re kadar gelmiş toplamı alacağız.
+
+408
+01:05:58,516 --> 01:06:02,275
+for n büyük bir için.
+
+409
+01:06:04,815 --> 01:06:21,875
+fn-2, n-2'ye kadar gelmiş toplam ile o anda seçilen, fn-1'de o anda seçilmeyip, o ana kadar bir önceki coin'e kadar gelmiş toplamın büyük olup olmadığına bakıyoruz.
+
+410
+01:06:21,875 --> 01:06:28,855
+Bunu şurada ifade edecek olursak yaptığımız örnekte şimdi onu da yazacağım ama
+
+411
+01:06:28,855 --> 01:06:32,016
+başlangıç noktasında arkadaşınız güzel bir şekilde söylemişti
+
+412
+01:06:32,016 --> 01:06:33,335
+F0, 0
+
+413
+01:06:33,335 --> 01:06:36,395
+F1 için ne demişti?
+
+414
+01:06:40,211 --> 01:06:41,952
+C1
+
+415
+01:06:41,952 --> 01:07:07,991
+Aynen öyle. Şimdi bu doğrultuda biz ilk başladığımızda örneğimize F0, 0, F1, C1 yani 5'te. F2'ye geldim. F2'de yaptığım şey nedir? Max, formüle göre kaç yazacağım?
+
+416
+01:07:16,052 --> 01:07:22,552
+Evet, şu anda ilk adımı yapıyorum. Formüldü rekürans bantısında oluşturmuştum. Kaç yazacağım? Max, parantez içinde.
+
+417
+01:07:26,483 --> 01:07:27,164
+Şura?
+
+418
+01:07:28,843 --> 01:07:29,883
+D2
+
+419
+01:07:29,883 --> 01:07:32,123
+Yok, değeri yazalım direkt.
+
+420
+01:07:32,823 --> 01:07:34,983
+Şey, sağdaki değerleri diyorsun.
+
+421
+01:07:35,364 --> 01:07:35,904
+Evet, evet.
+
+422
+01:07:36,284 --> 01:07:36,744
+5
+
+423
+01:07:36,744 --> 01:07:40,183
+Şeyi alıyoruz.
+
+424
+01:07:40,763 --> 01:07:42,123
+1 artı?
+
+425
+01:07:42,924 --> 01:07:46,443
+1 artı F0 olacak, yani 0.
+
+426
+01:07:46,443 --> 01:07:48,164
+Evet, güzel. Virgül?
+
+427
+01:07:48,643 --> 01:07:51,363
+Virgül F1 olacak, o da 5.
+
+428
+01:07:51,723 --> 01:07:54,324
+Aynen öyle. Buradan ne gelecek elimizde? 5 gelecek.
+
+429
+01:07:54,324 --> 01:08:00,704
+Demek ki F2-5 oldu. Şimdi F3'e geliyorum. F3 max. Bana kim söylemek ister?
+
+430
+01:08:04,851 --> 01:08:05,311
+Umut?
+
+431
+01:08:07,531 --> 01:08:10,891
+Önce C3'ü alacağız. O da 2 oluyor.
+
+432
+01:08:11,332 --> 01:08:11,832
+Çok güzel.
+
+433
+01:08:12,671 --> 01:08:14,812
+Artı F1, yani 5.
+
+434
+01:08:17,091 --> 01:08:21,311
+Virgül F2'yi alacağız. O da 5 oluyor.
+
+435
+01:08:21,532 --> 01:08:25,091
+Çok güzel. Buradan 7 gelecek maksimum olarak. Bunu aldık.
+
+436
+01:08:25,651 --> 01:08:26,612
+Şimdi F4'deyim.
+
+437
+01:08:28,411 --> 01:08:30,112
+F4 için kim söylemek ister?
+
+438
+01:08:33,112 --> 01:08:33,612
+Evet.
+
+439
+01:08:35,091 --> 01:08:36,312
+Başka bir arkadaşımız.
+
+440
+01:08:38,731 --> 01:08:42,971
+Emre Eren Bilgin.
+
+441
+01:08:45,211 --> 01:08:46,432
+Sesim geliyor mu hocam?
+
+442
+01:08:46,631 --> 01:08:46,911
+Geliyor.
+
+443
+01:08:48,311 --> 01:08:51,311
+F4 için önce C4'ü alacağız. C4'te 10.
+
+444
+01:08:51,311 --> 01:08:52,852
+Çok güzel. Süper. Evet.
+
+445
+01:08:53,211 --> 01:08:56,991
+F2'ye alacağız artı. F2'de 5 oluyor.
+
+446
+01:08:57,391 --> 01:08:57,671
+Tamam.
+
+447
+01:08:58,631 --> 01:09:02,031
+Virgül F3, F3'te 7.
+
+448
+01:09:02,031 --> 01:09:04,432
+Tamam. Buradan 15 gelecek.
+
+449
+01:09:04,432 --> 01:09:06,671
+F4'e. Teşekkür ederim.
+
+450
+01:09:06,932 --> 01:09:07,351
+Teşekkür ederim.
+
+451
+01:09:07,411 --> 01:09:10,371
+F5'e geçiyoruz. F5'i kim söylemek ister?
+
+452
+01:09:14,899 --> 01:09:15,899
+Burçin.
+
+453
+01:09:20,724 --> 01:09:21,923
+Duyabiliyor musunuz?
+
+454
+01:09:21,983 --> 01:09:22,464
+Duyabiliyorum.
+
+455
+01:09:24,204 --> 01:09:26,483
+F5 için C5'i alacağız.
+
+456
+01:09:26,684 --> 01:09:26,963
+Evet.
+
+457
+01:09:26,963 --> 01:09:28,263
+O da 15 olacak.
+
+458
+01:09:28,783 --> 01:09:29,064
+Evet.
+
+459
+01:09:29,823 --> 01:09:32,524
+F, işte 5-2, F3'ü alacağız.
+
+460
+01:09:32,724 --> 01:09:37,103
+7 olacak ve F4'u alacağız.
+
+461
+01:09:37,363 --> 01:09:38,463
+Virgül koyup.
+
+462
+01:09:39,923 --> 01:09:41,244
+O da 15.
+
+463
+01:09:41,663 --> 01:09:41,863
+Tamam.
+
+464
+01:09:42,244 --> 01:09:44,003
+Buradan, bu sefer 15 gelecek.
+
+465
+01:09:44,484 --> 01:09:45,243
+Olacağız, aynen.
+
+466
+01:09:45,583 --> 01:09:46,623
+Peki, teşekkür ediyorum.
+
+467
+01:09:46,743 --> 01:09:48,603
+Son kısmı da ben yazıyorum F6 için.
+
+468
+01:09:48,603 --> 01:10:02,564
+Max 2 artı 15,15'den 17 gelecek ve biz seçimlerimizi yapmış olacağız 17. Peki seçimler ne olacak? Yani neleri aldık?
+
+469
+01:10:07,444 --> 01:10:11,824
+Hangi paraları seçtik? Burada buna nasıl karar vereceğiz?
+
+470
+01:10:19,444 --> 01:10:25,904
+Yani maksimum 17 seçebileceğimizi biliyoruz ama hangi kombinasyonda bunu seçtik?
+
+471
+01:10:36,340 --> 01:10:37,199
+Evet Tolga.
+
+472
+01:10:38,039 --> 01:10:40,139
+Birinci, dördüncü, altıncıyı aldık.
+
+473
+01:10:40,299 --> 01:10:46,340
+Nasıl karar vereceğiz bunu gözle görmeden? Bilgisayar buna nasıl karar vermeli? Bu tabloyu oluşturduk.
+
+474
+01:10:49,659 --> 01:10:50,699
+Fikir var mı?
+
+475
+01:10:52,179 --> 01:10:53,959
+Şimdi kafamda kuramadım hocam.
+
+476
+01:10:54,260 --> 01:10:57,340
+Peki, teşekkür ederim. Evet Ertuğrul.
+
+477
+01:10:58,739 --> 01:11:01,639
+Hocam, bu değişen F değerlerine bakacağız.
+
+478
+01:11:01,959 --> 01:11:02,600
+Tamam, bakalım.
+
+479
+01:11:03,999 --> 01:11:05,219
+Birinciyi aldık.
+
+480
+01:11:05,219 --> 01:11:07,879
+Sondan başlasak daha güzel olur gibi geldi bana
+
+481
+01:11:07,879 --> 01:11:10,139
+Tamam, sondan başlayalım
+
+482
+01:11:10,139 --> 01:11:13,700
+Altıncıyı aldık, en yüksek o çünkü
+
+483
+01:11:13,700 --> 01:11:19,020
+Ama altıncıyı alırken altıncıyı işin içine katmamış olabilirdik
+
+484
+01:11:19,020 --> 01:11:21,439
+Ona nasıl karar vereceğim?
+
+485
+01:11:22,659 --> 01:11:23,939
+Altıncıyı katıp katma değil mi?
+
+486
+01:11:25,639 --> 01:11:26,319
+Altıncıyı
+
+487
+01:11:26,319 --> 01:11:30,759
+Evet, onu tam şu an çıkartalım
+
+488
+01:11:30,759 --> 01:11:31,739
+Yaparsınız ya, kolay
+
+489
+01:11:31,739 --> 01:11:33,079
+Orkun
+
+490
+01:11:33,079 --> 01:11:40,139
+Max işlemi yaparken her sol taraftaki aldığımızda o coin'i biz alıyoruz
+
+491
+01:11:40,139 --> 01:11:43,560
+Yani neyi kontrol etmem lazım?
+
+492
+01:11:45,119 --> 01:11:53,279
+Şu an tabloya baktığımda neyi kontrol edeceğim ki 6. yalıp almadığımızı karar vereceğim ya da bulunduğumuz coin'i alıp almadığımızı öyle diyelim
+
+493
+01:11:53,279 --> 01:11:59,779
+F6, F4 artı C6 mı?
+
+494
+01:12:01,099 --> 01:12:01,679
+Öyle mi kontrol edelim?
+
+495
+01:12:01,679 --> 01:12:05,439
+Yan yana olanları kontrol etme şansınız var. Halit ve Heşti İspanyoğlu.
+
+496
+01:12:07,719 --> 01:12:14,479
+Hocam altıncıda on yedi, sola baktığımızda on beş, altıncıda artmış.
+
+497
+01:12:14,859 --> 01:12:15,159
+Evet.
+
+498
+01:12:15,919 --> 01:12:17,039
+Sona doğru gittikçe.
+
+499
+01:12:17,340 --> 01:12:26,819
+Şimdi bunu aldık diyelim. Peki kontrol ettik. İkisi birbirine eşit mi diye. Altıya aldık. Şimdi buradayız. Altıya aldığımıza göre nerede olmamız lazım?
+
+500
+01:12:26,819 --> 01:12:50,439
+Beşteyiz hocam. Beşteki ile dörttekini karşılaştırıyoruz. Aynıysa beşi almamışız. Pardon. Altıyı aldığımızda zaten beşi alma olasılığımız yok. Evet. Direkt dörde de geçebiliriz. Tamam. Dörtte bakıyorum. Dört ile üçü karşılaştırırız. Evet. Partıysa üçü almamışız. Pardon.
+
+501
+01:12:50,439 --> 01:12:54,879
+Demin gittiği yol doğru gibiydi sanki
+
+502
+01:12:54,879 --> 01:12:56,859
+17'ye 6'yı aldık
+
+503
+01:12:56,859 --> 01:13:01,419
+3'den 4 farklıysa biz 4'ü almışızdır
+
+504
+01:13:01,419 --> 01:13:03,219
+O zaman neyi almayacağız?
+
+505
+01:13:03,999 --> 01:13:05,999
+3'ü almayacağız, direkt 2'ye geçeceğiz
+
+506
+01:13:05,999 --> 01:13:07,619
+Buraya geldim, buradayım artık
+
+507
+01:13:07,619 --> 01:13:11,599
+2 ile 1'i karşılaştıracağız
+
+508
+01:13:11,599 --> 01:13:15,699
+Eğer aynıysa 2'ye almamışızdır
+
+509
+01:13:15,699 --> 01:13:18,759
+Tamam o zaman 1'i almışızdır
+
+510
+01:13:18,759 --> 01:13:44,560
+Şu an arkadaşlar ortaya çıktı mı? Neleri aldığımız? Ortaya çıktı sanırım. Teşekkür ederim Halit. Gördüğünüz gibi hem bir optimizasyon problemi kurala uygun şekilde yapıp en fazla miktar parayı aldık hem de hangilerini aldığımızı bulduk ve bizim için kritik olan rekürans bağıntısını oluşturduk.
+
+511
+01:13:44,560 --> 01:13:50,700
+Bu problemin time kompleksisi ve space kompleksisi nedir?
+
+512
+01:14:11,220 --> 01:14:18,979
+Arkadaşlar, çok zor değil ya. Böyle bayağı karışık bir şey değil yani. El kaldırarak cevap verebilirsiniz. Şafak?
+
+513
+01:14:20,680 --> 01:14:23,199
+Time kompleksisi O-N bence.
+
+514
+01:14:23,999 --> 01:14:24,319
+Evet.
+
+515
+01:14:24,819 --> 01:14:31,539
+Bir kez tarıyoruz diziyi. Aynı diziyi tuttuğumuz için bir space kompleksisi de O-N olacak.
+
+516
+01:14:31,539 --> 01:14:34,379
+Evet. Bunlara hatta Theta'n desek de olur.
+
+517
+01:14:34,379 --> 01:14:49,900
+çünkü ikisinin sınırlarına baktığımızda aynı noktaya düştükleri için hem Omega hem de Big-O o zaman Theta-N olarak adlandırabiliyorduk hatırlarsanız.
+
+518
+01:14:50,339 --> 01:14:58,080
+İkisinin de Time Complexity'si ve Space Complexity Theta-N olarak hesaplanmış oldu.
+
+519
+01:14:58,080 --> 01:15:10,639
+N'de kaldığımız için de oldukça da feasible ama N'in büyük değerleri olsaydı o zaman bize 3 çarpı N'lik bir matriz alanı gerektirecekti.
+
+520
+01:15:10,639 --> 01:15:19,359
+İşte bir milyon tane olsaydı o zaman bir milyonluk alanı açmamız gerekecekti ki bu birazcık sıkıntı yaratabilir.
+
+521
+01:15:19,999 --> 01:15:23,039
+Belli başlı problemlerde buna dikkat etmek gerekiyor. Evet Ertuğrul.
+
+522
+01:15:23,039 --> 01:15:37,599
+Hocam sadece maksimumu bulmamız gerektiğinde bu diziyi kullanmasak sadece 3 elemana ihtiyacımız oluyor önceki. Yani 3 elemanlık bir dizi oluştursak onu sürekli değiştirerek yapalım.
+
+523
+01:15:37,599 --> 01:15:44,679
+Okey ama Ertuğrul genelde bu tür problemlerde hangi eleman setini kullanmamız gerektiğini aradığımız için
+
+524
+01:15:44,679 --> 01:15:53,759
+Yani çok da olur öyle problemlerle karşılaşıyoruz ama genelde eleman setini arıyoruz
+
+525
+01:15:53,759 --> 01:15:55,699
+Tamam hocam
+
+526
+01:15:55,699 --> 01:16:00,059
+Ama büyü bakış açısıdır evet o da değerlendirilebilir
+
+527
+01:16:00,059 --> 01:16:03,599
+Şimdi bu kısmı da böylece kapatabiliriz
+
+528
+01:16:03,599 --> 01:16:15,239
+Gelelim bizim için önemli bir probleme. Bunu daha önce farklı bir başlık altında dile getirmiştik.
+
+529
+01:16:17,080 --> 01:16:24,580
+Napsack problemi. Bu problemde hatırlarsanız bir hırsız bir eve giriyordu. Elinde bir çuval var.
+
+530
+01:16:24,580 --> 01:16:32,399
+Çuvalın taşıyabileceği bir ağırlık var ve evdeki eşyaların ağırlıkları ve değerleri var.
+
+531
+01:16:33,599 --> 01:16:58,419
+bizim hedefimiz de hırsızın hedefi de şu bu ağırlık kapasitesi içerisinde evden değeri en yüksek olan en çok hangi eşyayı alma şansımız var yani biz evden çıktığımızda totalde en yüksek değeri almış olacağız ve bu çuvalla birlikte çıkartabilmiş olacağız bunun peşindeyiz.
+
+532
+01:16:58,419 --> 01:17:00,779
+Şöyle yazalım
+
+533
+01:17:00,779 --> 01:17:05,080
+Bir toplam kapasitemiz var
+
+534
+01:17:09,555 --> 01:17:10,215
+Bir de
+
+535
+01:17:10,215 --> 01:17:15,036
+Alma ihtimalimiz olan
+
+536
+01:17:15,036 --> 01:17:16,395
+Itemlar var.
+
+537
+01:17:18,035 --> 01:17:20,476
+Şimdi, bunu brute force ile çözseydik
+
+538
+01:17:20,476 --> 01:17:25,155
+Nasıl bir karmaşıklığımız olacaktı?
+
+539
+01:17:35,475 --> 01:17:48,515
+Evdeki eşyaların kombinasyonu peşindeyiz. Bize yanımıza öyle eşyalar alalım ki. Evet, Arper Reha.
+
+540
+01:17:49,875 --> 01:17:55,535
+O en kare mi hocam? Bütün Brutforce yaklaşımında hepsini teker teker deneriz birbirleriyle.
+
+541
+01:17:55,896 --> 01:18:00,035
+Maalesef değil. Sermet.
+
+542
+01:18:01,035 --> 01:18:01,875
+Yüzleri an mı hocam?
+
+543
+01:18:01,875 --> 01:18:04,555
+İlk yüzleri an. Neden Sermet?
+
+544
+01:18:05,475 --> 01:18:11,795
+Hocam yani eşyaları işte hani bir eşya, iki eşya, üç eşya diye bütün kombinasyonları toplarız.
+
+545
+01:18:11,975 --> 01:18:12,275
+Evet.
+
+546
+01:18:12,415 --> 01:18:13,935
+İki üzeri en gibi bir yer elde ediyoruz.
+
+547
+01:18:14,056 --> 01:18:14,295
+Evet.
+
+548
+01:18:14,996 --> 01:18:18,715
+Biz bir eşya hepsinden alma ihtimalimiz var.
+
+549
+01:18:18,895 --> 01:18:20,755
+İkili hepsinden alma ihtimalimiz var.
+
+550
+01:18:20,895 --> 01:18:22,575
+Üçlü hepsinden alma ihtimalimiz var.
+
+551
+01:18:23,236 --> 01:18:27,455
+En son bu arada burada nasıl bir oldu?
+
+552
+01:18:27,595 --> 01:18:28,475
+Ha düzeltelim.
+
+553
+01:18:28,475 --> 01:18:37,955
+demek ki 2 üzeri n aslında eksi birlik bir kombinasyonu denememiz gerekecek ki bu oldukça yüksek sayıda.
+
+554
+01:18:38,575 --> 01:18:43,935
+Şimdi burada weight limitimiz diyelim ki 5 kilo olsun.
+
+555
+01:18:45,836 --> 01:18:47,996
+Bizim itemlarımız var.
+
+556
+01:18:48,595 --> 01:18:51,236
+Evden alınabilecek. Bunların ağırlıkları var.
+
+557
+01:18:52,016 --> 01:18:53,595
+Bu bilgilere sahip olmamız gerekiyor.
+
+558
+01:18:53,595 --> 01:18:57,035
+Ve bunların tabii ki değerleri var. Bunlar çok önemli.
+
+559
+01:18:57,035 --> 01:19:14,475
+item 1, 2, 3, 4, 5 olsun, weightler 2, 1, 3, 4, 5 olsun, value'ları 10, 20, 15, 50, 90 olsun.
+
+560
+01:19:18,484 --> 01:19:29,743
+Evet. Şimdi bu örneğimizde alınabilecek sınırlar içerisindeki ihtimal nedir?
+
+561
+01:19:35,123 --> 01:19:44,384
+Umut. Hocam öncelikle şeyi sorayım, alınabilecek derken potansiyel olarak değerine bakmaksızın alınabileceklerden bahsediyorsunuz değil mi?
+
+562
+01:19:46,483 --> 01:19:56,403
+Yani öyle diyelim. Örnek veriyorum, sadece 5'i, 4 ile 1'i ve 3 ile 2'yi ağırlıkları bakımından baktığımızda, yani 3 tane elimizde potansiyel alabileceğimiz durum var aslında.
+
+563
+01:19:56,403 --> 01:20:00,363
+Sorduğunuzu yanlış anlamadıysam cevabı bu oluyor
+
+564
+01:20:00,363 --> 01:20:01,623
+1 ile 2'yi alabiliriz
+
+565
+01:20:01,623 --> 01:20:04,403
+1 ile 3'ü alabiliriz
+
+566
+01:20:04,403 --> 01:20:06,403
+5'i alabiliriz
+
+567
+01:20:06,403 --> 01:20:08,003
+2 ile 4'ü alabiliriz
+
+568
+01:20:08,003 --> 01:20:08,484
+Doğru mu?
+
+569
+01:20:09,763 --> 01:20:11,763
+Yazdığımızda 1 ile 2
+
+570
+01:20:11,763 --> 01:20:13,943
+2 ile 3
+
+571
+01:20:13,943 --> 01:20:16,223
+1 ile 3
+
+572
+01:20:16,223 --> 01:20:22,664
+2 ile 4
+
+573
+01:20:22,664 --> 01:20:24,323
+Sadece 5
+
+574
+01:20:24,324 --> 01:20:26,464
+başka bir kombinasyonumuz var mı?
+
+575
+01:20:28,583 --> 01:20:28,903
+Yok.
+
+576
+01:20:29,244 --> 01:20:32,524
+Bölüyorum ama 2 ile 4 6 ediyor. Onu alamayız aslında biz.
+
+577
+01:20:33,144 --> 01:20:33,723
+Yanlış mı?
+
+578
+01:20:34,783 --> 01:20:35,903
+Bizim limitimiz 5 ya.
+
+579
+01:20:36,744 --> 01:20:38,144
+2 ile 4 5 etmiyor mu?
+
+580
+01:20:41,284 --> 01:20:42,504
+Weight'lerine baktığımızda.
+
+581
+01:20:42,844 --> 01:20:46,984
+Item 2 ve 4. Okey tamam ben ağırlık olarak 2 ve 4 ile yetmiştim.
+
+582
+01:20:47,504 --> 01:20:49,924
+Evet itemlerin numaraları var, weight'leri var bir de.
+
+583
+01:20:49,923 --> 01:21:12,283
+Şimdi 1 ile 2'yi aldığımızdaki ağırlık nedir? 30'dur. 2 ile 3'ü aldığımız zamanki ağırlık, pardon değerden bahsediyorum, yanlış söyledim. 35'tir. 1 ile 3'ü aldığınızda 25'tir. 2 ile 4'ü aldığınızda 70'tir. 5'i aldığınızda 90'dır. Doğru mu?
+
+584
+01:21:12,283 --> 01:21:17,703
+o zaman bu şartlarda en avantajlı olanı 5'e almak.
+
+585
+01:21:19,563 --> 01:21:22,643
+Şimdi bizim buna bir çözüm üretmemiz gerekiyor.
+
+586
+01:21:23,643 --> 01:21:26,423
+Ki bütün bu kombinasyonları denemeyelim.
+
+587
+01:21:26,783 --> 01:21:28,083
+Biz gözle hızlıca yaptık.
+
+588
+01:21:29,243 --> 01:21:30,663
+Kısıtı kontrol ettik.
+
+589
+01:21:31,743 --> 01:21:34,763
+Bu noktada öneriniz ne olur?
+
+590
+01:21:34,963 --> 01:21:39,563
+Nasıl bir memory kullanımı yapmalıyız ki?
+
+591
+01:21:39,663 --> 01:21:41,903
+Nasıl bir bellek kullanımı yapmalıyız ki?
+
+592
+01:21:42,283 --> 01:21:47,103
+Biraz önceki dinamik programlamayı da buraya bir şekilde ekleyelim.
+
+593
+01:21:58,804 --> 01:21:59,503
+Evet, Umut.
+
+594
+01:22:00,763 --> 01:22:11,224
+Hocam, emin olmamakla birlikte söyleyeceğim ama bir ağırlık başına düşen değerlerini hesaplayıp ona göre bir algoritma hazırlamak doğru olur mu?
+
+595
+01:22:12,383 --> 01:22:19,484
+Yani bir bakış açısı, bunun yeri geldiği zaman başka bir algoritmik yaklaşımda kullanıyor olacağız.
+
+596
+01:22:20,304 --> 01:22:27,183
+Ama dinamik programlama için bundan faydalanmayacağız. Yani ağırlık başına ne kadar düşüyoru hesaplamayacağız.
+
+597
+01:22:27,183 --> 01:22:30,263
+biraz önceki coin'leri seçerkenki bir mantık uygulayacağız.
+
+598
+01:22:30,804 --> 01:22:35,563
+Ama burada farklı olarak coin'lerde yan yana olmama durumu kısıttı.
+
+599
+01:22:35,743 --> 01:22:37,344
+Burada da weight kısıtı var.
+
+600
+01:22:38,103 --> 01:22:41,644
+Yani bir tanesini seçtiğinizde toplam weight ile ilişkilendirmeniz lazım.
+
+601
+01:22:43,323 --> 01:22:45,403
+Ve değerini hesaplamanız lazım.
+
+602
+01:22:45,524 --> 01:22:46,704
+Yani iki tane parametre var.
+
+603
+01:22:47,463 --> 01:22:53,143
+Bir yerde ağırlık kısıtınız var, bir yerde de maksimize etmeye çalıştığınız value var.
+
+604
+01:23:02,707 --> 01:23:07,207
+Peki, başka bir örnek üzerinden ilerleyelim.
+
+605
+01:23:26,100 --> 01:23:30,859
+Şimdi weight sınırımızı bir kez daha 5 olarak kabul edelim.
+
+606
+01:23:32,219 --> 01:23:37,039
+Ve burada ben bir structure kullanacağım, data structure kullanacağım.
+
+607
+01:23:38,039 --> 01:23:43,600
+Bunun için ne kullanmalıyım? Biraz önce bir dizi mantığında bir yapı kullandım, her ne kadar matriz gibi olsa da.
+
+608
+01:23:44,200 --> 01:23:44,979
+Burada ne kullanacağım?
+
+609
+01:23:47,499 --> 01:23:49,440
+Bir matriz kullanacağım arkadaşlar.
+
+610
+01:23:49,440 --> 01:24:10,940
+Bu matrisin sütunları tarafında weightim olacak, satırları tarafında itemlarım olacak. Bu doğrultuda kaç satır ve sütun olacak bu matrisin?
+
+611
+01:24:21,460 --> 01:24:24,960
+weight'i sütunlarla, item'ları satırlarla temsil ediyorum. Burçin?
+
+612
+01:24:26,519 --> 01:24:29,119
+4 satır, 4 sütun değil mi?
+
+613
+01:24:29,800 --> 01:24:30,239
+Değil.
+
+614
+01:24:31,019 --> 01:24:31,399
+Tamam.
+
+615
+01:24:32,199 --> 01:24:33,399
+Ama yaklaştın.
+
+616
+01:24:36,319 --> 01:24:37,679
+Evet, Ahmet Yaman.
+
+617
+01:24:38,539 --> 01:24:42,399
+5 satır, 5 sütun olabilir mi hocam? İlk değeri tutmak adına.
+
+618
+01:24:43,079 --> 01:24:46,239
+Eee, sen de yaklaştın. Ufak bir farklılık kaldı.
+
+619
+01:24:47,380 --> 01:24:47,739
+Okan?
+
+620
+01:24:47,739 --> 01:24:53,419
+Başlat'ın 4 sütun olarak düşündüm bu. Toplamlarını tutmak için.
+
+621
+01:24:53,419 --> 01:25:08,320
+Eee şöyle itemler 4 tane weightler birer kilo olarak ilerlediğimizi varsayarsak yani kesirli bir sayı olmadığına göre 5 tane.
+
+622
+01:25:08,320 --> 01:25:21,540
+Ama bizim ilk değerlere ihtiyacımız var. O yüzden item'a bir tane eklediğimde item 4'ten 5'e çıkıyor, weight'e bir tane eklediğimde 5'ten 6'ya çıkıyor. Yani 5 satır, 6 sütuna ihtiyacım var.
+
+623
+01:25:25,040 --> 01:25:38,059
+Şimdi yazdığımda daha rahat anlaşılacak. Sıfırıncı weight, 1, 2, 3, 4, 5 kiloya kadar gidebiliyorum. Çünkü sınırım 5 kilo.
+
+624
+01:25:38,320 --> 01:25:46,699
+itemlarım. Her bir item için bunu değerlendirmem lazım. Yine sıfırdan başladım. 1, 2, 3, 4 itemim olduğu için 4 de bitti.
+
+625
+01:25:50,260 --> 01:26:07,139
+Bizim burada elimizde sıfır item varken, elimizde sıfır varken ki kilo ve kazançları hesaplamamız gelecek. Şimdi kiloları takip ediyoruz zaten. Demek ki bizim matrisin gözünde neyi takip etmemiz gerekiyor hücrelerinde?
+
+626
+01:26:07,139 --> 01:26:10,979
+değerleri takip etmemiz gerekiyor.
+
+627
+01:26:11,419 --> 01:26:17,339
+Ve bu matrisin hesapları üzerinde, daha doğrusu matris üzerinde hesapları yaptıktan sonra
+
+628
+01:26:17,339 --> 01:26:23,679
+elde edeceğimiz değer bizim için alınabilecek en büyük kazancı gösterecek.
+
+629
+01:26:24,039 --> 01:26:25,339
+Hangi noktada oluşacak bu değer?
+
+630
+01:26:31,572 --> 01:26:35,751
+matris üzerinde hangi noktadaki değeri alacağız? Mehmet Ayrıçakır.
+
+631
+01:26:41,939 --> 01:26:43,199
+Mehmet Hayri Çakır.
+
+632
+01:26:43,619 --> 01:26:44,619
+Hocam sesim geliyor mu?
+
+633
+01:26:44,920 --> 01:26:45,319
+Geliyor.
+
+634
+01:26:46,679 --> 01:26:49,699
+Sol üstten başladığımızı düşünüyorum. O yüzden sağ altı olabilir mi?
+
+635
+01:26:50,119 --> 01:26:50,439
+Evet.
+
+636
+01:26:51,280 --> 01:26:52,820
+Buna da max değerini elde edeceğiz.
+
+637
+01:26:54,099 --> 01:26:57,679
+Ya da başka bir problem olsaydı belki min değerini elde edecektik.
+
+638
+01:26:58,439 --> 01:27:06,799
+Şu an için bizim optimizasyon problemimiz en yüksek eşya, en yüksek değere sahip eşya kombinasyonu bulmak üzere.
+
+639
+01:27:06,799 --> 01:27:10,639
+Peki, o zaman nereleri sıfırlamam gerekiyor?
+
+640
+01:27:15,988 --> 01:27:16,548
+Efe?
+
+641
+01:27:18,047 --> 01:27:21,488
+Hocam, köşegeni ve köşegenin altını sıfırlarsak olur.
+
+642
+01:27:22,367 --> 01:27:23,307
+Yok, değil.
+
+643
+01:27:24,208 --> 01:27:27,868
+Yani şey olarak, 0-0, 1-1, 2-2.
+
+644
+01:27:28,047 --> 01:27:28,727
+Değil.
+
+645
+01:27:29,767 --> 01:27:30,227
+Rafet?
+
+646
+01:27:31,587 --> 01:27:32,567
+İlk satır ve ilk sütunu.
+
+647
+01:27:33,287 --> 01:27:34,248
+Neden peki Rafet?
+
+648
+01:27:35,488 --> 01:27:37,107
+Minimum değerimiz bu olduğu için.
+
+649
+01:27:37,508 --> 01:27:40,707
+Maksimum en son dolaşacağımıza göre en başta da minimum değerler olmalı.
+
+650
+01:27:40,707 --> 01:28:03,787
+İlk başta hiç item yokken zaten kilo kısıtından faydalansak da faydalanmasak da değerler sıfır olacak. İlk başta sıfır kiloda her item'ın values'u sıfır. Çünkü hiçbir item almamış oluyoruz. Bu yüzden satırı, ilk satırı ve ilk sütünü sıfır değerini verdim. Bu yüzden zaten bir satırı ve bir sütünü fazla tanımlamıştım.
+
+651
+01:28:03,787 --> 01:28:24,348
+Şimdi gelelim bu noktaya. Bu noktada elimde bir item ve bir kilo kısıtı var. Yani birinci itemdayım ve bir kilo kısıtım var. Ne olacak değer? Mehmet Ayrıçakır
+
+652
+01:28:30,355 --> 01:28:34,195
+Hocam sıfır olacak çünkü ilk item 2 kilo olduğu için alamayacağız.
+
+653
+01:28:34,415 --> 01:28:37,415
+Evet, çok güzel. İlk item 2 kilo olduğumuz için alamayacağız.
+
+654
+01:28:38,316 --> 01:28:46,355
+Devam edelim. Elimde gene birinci item var. 2 kilo sınırına çıktım. Kaç olacak değer? Farklı bir kişi.
+
+655
+01:28:48,995 --> 01:28:49,255
+Efe?
+
+656
+01:28:50,555 --> 01:28:51,435
+12 olacak.
+
+657
+01:28:51,755 --> 01:28:56,415
+12 olacak. 3, 4, 5 yine 12 olacak çünkü bir tane itemim var.
+
+658
+01:28:56,415 --> 01:29:10,256
+Gelelim şimdi ikinci item noktasına. İkinci item noktasında bir kiloluk sınırım var. Artık iki item birden alabiliyorum. Buradaki değer kaç olacak?
+
+659
+01:29:17,555 --> 01:29:18,555
+Şu kısımdayım.
+
+660
+01:29:22,612 --> 01:29:23,651
+Evet, Ertuğrul.
+
+661
+01:29:29,332 --> 01:29:31,552
+10 olacak hocam. Pardon. Neden dolayı?
+
+662
+01:29:33,171 --> 01:29:37,632
+Çünkü ikinci item'ın ağırlığı 1, birinci item'ın ağırlığı 2. O yüzden.
+
+663
+01:29:38,771 --> 01:29:41,792
+Sadece ikinci item'i ekleyebileceğim. Evet.
+
+664
+01:29:42,771 --> 01:29:43,431
+Devam edelim.
+
+665
+01:29:44,771 --> 01:29:45,551
+Yana geçtim.
+
+666
+01:29:46,012 --> 01:29:47,391
+Sonrasındaki 12 olacak.
+
+667
+01:29:47,832 --> 01:29:49,571
+Peki. Sonrasındaki?
+
+668
+01:29:51,012 --> 01:29:57,571
+Sonrasındaki 22 olacak. Çünkü ikisini alabiliyoruz artık. Ondan sonraki 3'ü de 22 olacak.
+
+669
+01:29:57,571 --> 01:29:59,651
+Tamam, güzel, çok güzel, buraya kadar geldik
+
+670
+01:29:59,651 --> 01:30:03,372
+Şimdi gelelim artık 3 item birden alabiliyoruz, 3. item de işin içine girdi
+
+671
+01:30:03,372 --> 01:30:05,512
+1 kiloya kadar
+
+672
+01:30:05,512 --> 01:30:06,672
+Hocam
+
+673
+01:30:06,672 --> 01:30:08,372
+Efendim
+
+674
+01:30:08,372 --> 01:30:12,411
+Şey, ikinci gözle de 22 olmayacak mı?
+
+675
+01:30:12,491 --> 01:30:12,832
+Denemem mi?
+
+676
+01:30:14,971 --> 01:30:17,491
+Yani ağırlık kısmı 2 oluyor
+
+677
+01:30:17,491 --> 01:30:20,851
+2 çarpı 2, evet aynen
+
+678
+01:30:20,851 --> 01:30:24,491
+Tamam, burada biz 2 kiloya kadar alabiliyoruz, doğru mu?
+
+679
+01:30:25,431 --> 01:30:25,711
+Hı hı
+
+680
+01:30:25,711 --> 01:30:30,411
+İki tane item içerisinden iki kiloya kadar alabildiğimizde sadece birinci item alabiliriz
+
+681
+01:30:30,411 --> 01:30:32,091
+Toplam iki kilo peki
+
+682
+01:30:32,091 --> 01:30:33,431
+Ben onu genelde
+
+683
+01:30:33,431 --> 01:30:34,791
+Toplam iki kilo
+
+684
+01:30:34,791 --> 01:30:37,231
+Şimdi üçüncüdeyim
+
+685
+01:30:37,231 --> 01:30:42,052
+Yani üç item alabilecek noktalıyım ama sadece bir kiloluk sınırım var
+
+686
+01:30:45,939 --> 01:30:46,459
+Efe?
+
+687
+01:30:47,459 --> 01:30:48,779
+Onu alacağız hocam.
+
+688
+01:30:49,199 --> 01:30:51,299
+Onu alabiliriz. 2 kiloluk sınırım var.
+
+689
+01:30:53,079 --> 01:30:55,160
+2 kiloluk sınırım var.
+
+690
+01:30:56,019 --> 01:30:57,179
+2'ye alırız, 12.
+
+691
+01:30:58,619 --> 01:31:00,839
+Evet. 3 kiloluk sınırım var.
+
+692
+01:31:01,559 --> 01:31:02,919
+3 kiloluk sınırım var.
+
+693
+01:31:03,540 --> 01:31:04,439
+22 olur.
+
+694
+01:31:04,879 --> 01:31:07,339
+Alternatif nedir peki? 22'nin alternatifi.
+
+695
+01:31:07,540 --> 01:31:08,399
+20 tek.
+
+696
+01:31:08,620 --> 01:31:10,120
+20'dir. 22'ye aldım.
+
+697
+01:31:12,219 --> 01:31:13,759
+4 kiloluk sınırım var.
+
+698
+01:31:13,759 --> 01:31:20,640
+4 kilo sınırı var, 30 yapabiliriz. Alternatif 22'dir.
+
+699
+01:31:22,160 --> 01:31:31,079
+Alternatif 22, 30 olabilir. Ama kilo sınırına takılan değer 32'di aslında. 5 kilo'ya geldiğimde de 32 değerini elde ettim.
+
+700
+01:31:31,999 --> 01:31:39,340
+Evet. Şimdi son satıra geldik. 4 item'a birden alabilecek noktadayız. Hep farkındaysanız sub problem olarak ilerledik.
+
+701
+01:31:39,339 --> 01:32:01,219
+önce elimizde sadece bir item alabiliyorduk. Sonra iki item alabilir hale geldik. Bir önceki item'ın değerlerinden aslında bu değerleri elde ediyoruz ama şu an sadece görsel olarak yapıyoruz bunu. Birazdan formülüze ediyor olacağız. Peki son satırdayız. Dört item birden alabiliyorum. Bir kiloya kadar kaç değer alabilirim? On. İki kiloya kadar?
+
+702
+01:32:05,300 --> 01:32:25,439
+Ahmet Yaman? 15. Neden dolayı? 2 kiloluk şu an elimizde 15 ve 12 var. Çok güzel. Büyük olan 15. Teşekkür ederim. 3 kilo? 25. Alternatif? 20. Alternatifi 20. 4 kilo?
+
+703
+01:32:33,395 --> 01:32:59,595
+4 kiloya kadar olan olabileceğim maksimum değer. 30 oluyor galiba. 30. Alternatifi? 27. Evet. 5 kiloya kadar? 20 ve 15, 35. 35 bir alternatif. Daha sonra 32 var. Başka?
+
+704
+01:33:01,595 --> 01:33:01,715
+Evet.
+
+705
+01:33:03,091 --> 01:33:17,351
+Evet, başka birinden alayım cevap. Başka biri, başka biri. Başka. Herkes şu anda daha önce konuştu. Devam. Evet, Mehmet Seda Uçucu.
+
+706
+01:33:18,731 --> 01:33:19,772
+37 hocam.
+
+707
+01:33:20,651 --> 01:33:21,932
+Neyle birleştirdin?
+
+708
+01:33:21,932 --> 01:33:34,671
+Aitim 1 ve 4. Pardon. Aitim 12, 15, bir de 10'u birleştirdim. 1, 2, bir de 4'ü hocam.
+
+709
+01:33:34,671 --> 01:33:42,151
+Tamam. Teşekkür ederim. Teşekkür ederim. Demek ki bizim bu gruptan 5 kilo sınırı içerisinde alabileceğimiz en yüksek değer 37'ymiş.
+
+710
+01:33:43,211 --> 01:33:50,471
+Şimdi geldik. Bunu biz böyle gözle yaptık. Tabii ki önceki bilgilerden faydalandık.
+
+711
+01:33:50,471 --> 01:33:52,431
+ama bunu bir formülüze etmedik.
+
+712
+01:33:53,391 --> 01:33:58,551
+Formülüze etmek için öncelikle ne yapmak istediğimizi bir yazalım.
+
+713
+01:33:59,771 --> 01:34:02,791
+Çok pardon hocam, oraya geçmeden önce bir şey sorabilir miyim?
+
+714
+01:34:02,951 --> 01:34:03,431
+Tabii ki.
+
+715
+01:34:04,031 --> 01:34:09,952
+Hazırladığımız matreste birinci satırı ve birinci sütunu kullanmasak, yani sonuç olarak direkt sıfır olarak belirledik.
+
+716
+01:34:10,031 --> 01:34:10,812
+Neden kullandık?
+
+717
+01:34:12,111 --> 01:34:15,151
+Formülüze ettiğimiz zaman daha net anlaşılacak.
+
+718
+01:34:15,151 --> 01:34:24,151
+şu anda biz onun sıfır olduğunu biliyoruz ama bilgisayar biraz önce nasıl fn-2 yaptığımızda n2 olduğunda f0'ı gidip topluyordu.
+
+719
+01:34:25,051 --> 01:34:27,011
+İlk değerinin başlangıçlarının olması gerekiyor.
+
+720
+01:34:27,691 --> 01:34:29,312
+Anladım tamam. Teşekkür ederim.
+
+721
+01:34:29,312 --> 01:34:29,991
+Rica ederim.
+
+722
+01:34:30,971 --> 01:34:42,591
+Şimdi maximize ve i dedik. Value'nun v'si. Kısıt subject to w olacak.
+
+723
+01:34:42,591 --> 01:34:50,971
+Şimdi bizim ilerlerken itemlar üzerinde kaç tane seçeneğimiz var?
+
+724
+01:34:56,724 --> 01:35:24,823
+almak ya da almamak. Doğru mu? Case 1, take item E, case 2, not take item E. Peki, buradan yola çıkarsak, bizim biraz önce F'enimiz vardı, burada da bir P'miz olsun,
+
+725
+01:35:24,823 --> 01:35:26,843
+price olsun bu P'nin karşılığı.
+
+726
+01:35:28,103 --> 01:35:28,823
+Price'da
+
+727
+01:35:28,823 --> 01:35:33,663
+iki tane parametremiz olacak.
+
+728
+01:35:35,763 --> 01:35:37,363
+Bu iki parametremiz ne olacak?
+
+729
+01:35:38,383 --> 01:35:39,263
+Bana kim söyleyebilir?
+
+730
+01:35:41,783 --> 01:35:43,883
+Yani harfin önemi yok.
+
+731
+01:35:44,023 --> 01:35:45,823
+Neleri temsil etmesi gerekiyor bu iki parametrenin?
+
+732
+01:35:46,543 --> 01:35:47,543
+Matrice baktığımızda.
+
+733
+01:35:59,859 --> 01:36:04,419
+farklı bir kişi olabilir mi diyeceğim. Umut'a söz vereyim.
+
+734
+01:36:06,359 --> 01:36:07,999
+Wait ve item olacak hocam.
+
+735
+01:36:07,999 --> 01:36:11,339
+Wait ve item. Item virgül wait diyorum.
+
+736
+01:36:12,299 --> 01:36:14,839
+Şimdi bizim buraya bir formül yazmamız gerekiyor.
+
+737
+01:36:15,459 --> 01:36:17,659
+Rekürans bağıntısı oluşturmamız gerekiyor.
+
+738
+01:36:19,719 --> 01:36:21,899
+Bunu nasıl yapabiliriz?
+
+739
+01:36:23,460 --> 01:36:26,939
+Yani bu formülü oluşturmak istiyoruz. Neye bakacağız?
+
+740
+01:36:29,859 --> 01:36:38,720
+Bunun için şuradaki, şurada gördüğünüz 37 değerini nasıl hesapladığımız üzerinden ilerlesek
+
+741
+01:36:38,720 --> 01:36:44,819
+37'ye varırken neyi kullanabiliriz?
+
+742
+01:36:45,419 --> 01:36:50,220
+Yani şuradaki maksimum değere ulaşırken hangi değerleri kullanabiliriz?
+
+743
+01:37:03,859 --> 01:37:05,859
+Peki, Umut'a vereyim sözü.
+
+744
+01:37:06,580 --> 01:37:10,499
+Value değerlerini, itemleri. Onları kullanarak ulaştık sonuç olarak.
+
+745
+01:37:10,499 --> 01:37:16,939
+Çok güzel ama hani seçeneklerimiz neler? Nereden buraya gelebiliriz? Buradaki değerlerden, şu değerlere baktığın zaman.
+
+746
+01:37:17,039 --> 01:37:25,700
+Bir tane item almak, iki tane item almak, üç tane item almak ve bir item aldığımızda sadece item 1'i alabildik. İki item aldığımızda item 1 ve 2'yi bu şekilde.
+
+747
+01:37:26,460 --> 01:37:32,280
+Peki, bu değerlerden kullanabileceğimiz var mı? Üstündeki, yanındaki, sol çaprazındaki.
+
+748
+01:37:35,923 --> 01:37:37,183
+Emin olamadım hocam.
+
+749
+01:37:38,263 --> 01:37:52,503
+Peki, başka bir arkadaşımızı sorayım. Bizim o anda dördüncü itemde olduğumuzu hatırlatayım. Dördüncü itemdeyken yapmamız gereken şey nedir?
+
+750
+01:37:57,844 --> 01:38:04,483
+Nerelere bakabiliriz? Bir önceki satıra mı bakacağız? Bir önceki sütuna mı bakacağız?
+
+751
+01:38:07,443 --> 01:38:10,643
+Şimdi şöyle bir şey yazayım Umut'a söz vermeden önce.
+
+752
+01:38:12,643 --> 01:38:14,643
+P-3-3
+
+753
+01:38:14,643 --> 01:38:18,264
+Neresi? P-3-3
+
+754
+01:38:18,264 --> 01:38:19,524
+22
+
+755
+01:38:19,524 --> 01:38:23,524
+P-3-3'e nereden gelmişiz?
+
+756
+01:38:23,524 --> 01:38:33,684
+Üçüncü ayetimi aldığımız zaman mu ulaşmışız yoksa başka türlüme ulaşmışız?
+
+757
+01:38:37,844 --> 01:38:38,524
+Evet Umut.
+
+758
+01:38:40,643 --> 01:38:54,163
+Hocam, kullanabileceklerimiz aslında aynı weight değerleri ve daha az weight değerlerindeki datalar ve aynı item alabileceğimiz item sayısı aynı olandaki daha önceden daha az weight de aldığımız datalar.
+
+759
+01:38:55,203 --> 01:39:00,703
+Yani matristen anlatmam gerekirse sol üst tarafındaki tüm matris ve sol tarafı.
+
+760
+01:39:02,063 --> 01:39:06,483
+Sol üst tarafındaki derken nereye denk geliyoruz?
+
+761
+01:39:06,483 --> 01:39:10,844
+Yani hocam daha az ağırlıkta daha az itemle alınabilecek
+
+762
+01:39:10,844 --> 01:39:16,064
+Tamam. Peki buradan P3'e erişmek için hangi değerleri kullanmamız gerekiyor?
+
+763
+01:39:18,003 --> 01:39:22,623
+Solundaki yani aynı item sayısındaki daha az ağırlıklı değerleri
+
+764
+01:39:22,623 --> 01:39:25,443
+Çok güzel. O zaman P2'yi kullanacağım yani
+
+765
+01:39:25,443 --> 01:39:28,163
+Evet P2 ve P1, P0
+
+766
+01:39:28,163 --> 01:39:33,423
+P2 bir artı V3 yazsam olur mu?
+
+767
+01:39:33,423 --> 01:39:52,424
+V3, evet oluyor. Evet. 2-1 derken, çok pardon hocam, 2-1 derken ikinci item'ın birinci weight olarak mı yoksa P, üçüncü sıradaki ikinci ve birinci weight olarak mı?
+
+768
+01:39:52,424 --> 01:40:09,184
+ikinci item'ın daha doğrusu ikinci satırın birinci bir kiloya denk gelen ağırlığı. Yani şurada V, I ve V dedik ya şunlar. I ve V.
+
+769
+01:40:10,403 --> 01:40:11,604
+Tamamdır şimdi anladım.
+
+770
+01:40:11,603 --> 01:40:16,023
+Şimdi bu bir kiloya denk gelen ağırlık
+
+771
+01:40:16,023 --> 01:40:18,643
+Bu da ikinci item
+
+772
+01:40:18,643 --> 01:40:23,423
+Artı bir de V3'ümüz var
+
+773
+01:40:27,091 --> 01:40:29,332
+Evet, tamam. Şimdi anladım hocam.
+
+774
+01:40:33,332 --> 01:40:38,571
+Evet arkadaşlar, şimdi buradan yola çıkarak bir formül oluşturabilecek olan var mı?
+
+775
+01:40:51,507 --> 01:41:08,667
+Peki, başka bir örnek vereyim. O zaman biraz daha basit bir yerden başlayalım. P13. P13 için max diyelim. Şöyle şunu silelim.
+
+776
+01:41:14,228 --> 01:41:32,168
+P01 artı 12 alternatifi P03 olsun. Şimdi buna bir bakalım. P01 nereye denk geliyor? 0'a denk geliyor. Artı 12 diyoruz.
+
+777
+01:41:32,168 --> 01:41:47,347
+P, P03'e bakıyoruz. P03'e baktığımız zaman 0 karşılığı. 0, 1, artı 12 dediğimiz zaman karşılığı 12. O zaman 1, 3'e gidip 12 değerini yazıyoruz.
+
+778
+01:41:51,539 --> 01:41:58,759
+Bu mantıkla genelleştirdiğimizde P, İ, V formülünü ne yazabiliriz?
+
+779
+01:42:05,395 --> 01:42:27,595
+Tamam. Biraz herhalde uzun bir ders oldu. İsterseniz bir saat 3'e kadar ara verelim. Saat 3'den sonra bu sorunun çözümünü birlikte yapalım. Ondan sonra bir örnek yapalım. Sonra da dersi bitirelim. Belki o zamana kadar bir göz atıp formünüzü etme şansınız olur.
+
+780
+01:42:27,595 --> 01:42:36,835
+çok az bir şey kaldı. Basit bir mantığı var. Sadece birazcık oturtmak gerekiyor. Saat 3'te görüşmek üzere diyorum. Evet Enes bir sorun var galiba.
+
+781
+01:42:38,155 --> 01:42:54,735
+Hocam sesim geliyor mu? Geliyor. Hocam ben V3 kısmını anlayamadım. V3 neyi temsil ediyor orada? Value 3. Aynen. Value 3. Ona bakacaksın. Onun ne olduğunu görmen gerekiyor.
+
+782
+01:42:54,736 --> 01:42:59,815
+Hani Max'da şu anda kullandığımız şurada
+
+783
+01:42:59,815 --> 01:43:03,236
+Nerede? Hemen göstereyim
+
+784
+01:43:03,236 --> 01:43:08,096
+Şurası var ya
+
+785
+01:43:08,096 --> 01:43:09,775
+12
+
+786
+01:43:13,395 --> 01:43:18,376
+bunu hesabın içine katmamız gerekiyor. Value'sunu. O item'i almak ya da almamak şeklinde.
+
+787
+01:43:19,075 --> 01:43:20,395
+Anladım. Tamam hocam.
+
+788
+01:43:20,795 --> 01:43:34,055
+Saat 3'te uygulama dersinin olduğu linkte görüşeceğiz. Orada bu örneğimizin nasıl çözüldüğünü birlikte görüyor olacağız. Evet, görüşmek üzere. Teşekkür ediyorum arkadaşlar.

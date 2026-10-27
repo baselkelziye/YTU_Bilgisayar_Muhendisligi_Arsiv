@@ -1,0 +1,499 @@
+1
+00:00:46,707 --> 00:00:48,287
+Evet arkadaşlar, yeniden merhaba.
+
+2
+00:00:49,487 --> 00:00:50,467
+Tekrar hoş geldiniz.
+
+3
+00:00:51,367 --> 00:00:52,847
+En son bu noktada kalmıştık.
+
+4
+00:00:53,607 --> 00:00:57,207
+Nasıl sıralamamız gerekiyor?
+
+5
+00:00:57,967 --> 00:01:00,128
+Bu sort işleminin sonucu ne olmalı?
+
+6
+00:01:00,247 --> 00:01:05,287
+Hangi aşamadaki bilgileri DFS'ye de gezerken kullanmalıyız diye sormuştum.
+
+7
+00:01:06,048 --> 00:01:08,747
+Bu noktada henüz net bir cevap alamamıştım.
+
+8
+00:01:09,507 --> 00:01:10,567
+Buraya konuşuyorduk.
+
+9
+00:01:11,327 --> 00:01:12,128
+Ne dersiniz?
+
+10
+00:01:12,128 --> 00:01:21,388
+Bir arkadaşınız demişti ki koyduğumuz sırayla push sırasıyla kullansak olmaz mı? Zaten ona gelmiyor mu? C1, C3, C4, C5
+
+11
+00:01:24,915 --> 00:01:26,915
+Demişte.
+
+12
+00:01:32,531 --> 00:01:33,371
+Evet, efendim.
+
+13
+00:01:35,272 --> 00:01:46,952
+Hocam ben şeyi düşündüm. Burada C5'e kadar koyduğumuzda stekte oluyor ya. O sırayla en alttan yani C1'den itibaren yazdırsak da aynı şeye denk gelmiyor mu?
+
+14
+00:01:50,091 --> 00:01:56,531
+Şeyi anlayamadım. Yani push da yazdırsak mı aynı şeye denk gelmiyor mu yoksa...
+
+15
+00:01:56,531 --> 00:01:59,471
+Push da yazdırsak aynı şeye denk gelmiyor mu?
+
+16
+00:01:59,471 --> 00:02:04,511
+Şimdi C1'i yazdırdım, C3'ü, C4'ü, C5'i yazdırdım ondan sonra C2'yi yazdıracağım
+
+17
+00:02:04,511 --> 00:02:19,191
+Yok, C5'e kadar doldu C1, C3, C4, C5'i yazdıracağım boşaldıktan sonra C2'yi koyacağım C2'den sonra zaten kalmadığı için C2'yi yazdırmış olacağım
+
+18
+00:02:19,191 --> 00:02:26,011
+O zaman işte şöyle oluyor C1, C3, C4, C5, C2 oluyor değil mi?
+
+19
+00:02:26,631 --> 00:02:26,951
+Evet
+
+20
+00:02:26,951 --> 00:02:29,171
+O zaman bozulmuyor mu?
+
+21
+00:02:29,471 --> 00:02:50,572
+yapı. Evet, C1 ile C2'nin başta olması gerek. Evet, tamam işte bunu istiyordum. Çok iyi oldu. Güzel bir şekilde, detaylı bir şekilde burayı konuşmuş olduk. Tekrar ediyorum. Koyduğumuz push sırasıyla yaparsak C1, C3, C4, C5 olacak. Sonra C2 olacak. Onun yerine ne yapabiliriz?
+
+22
+00:02:53,472 --> 00:02:54,191
+Ferhat?
+
+23
+00:02:55,091 --> 00:02:57,631
+Hocam, sırasının tersini yapsak.
+
+24
+00:02:58,112 --> 00:02:58,511
+Mesela?
+
+25
+00:02:59,471 --> 00:03:04,871
+En son C2 çıkardık. C2 yazdıracağız. Sonra C1, C3, C4, C5'i...
+
+26
+00:03:04,871 --> 00:03:08,531
+Yani buradan push değil de ne olması gerektiğini söylüyorsun senin söylene göre.
+
+27
+00:03:09,171 --> 00:03:11,031
+Yani popping of order'ın tersi.
+
+28
+00:03:12,311 --> 00:03:19,111
+Popping of order'ın tersi. Aynen öyle gibi gözüküyor. Bir bakalım. Kırmızı ile yazayım.
+
+29
+00:03:21,051 --> 00:03:27,231
+Şimdi C1, C3, C4, C5'i doldurduk. C5 çıktı. Pardon değişmemiş rengi.
+
+30
+00:03:27,231 --> 00:03:35,212
+C5 çıktı, C4 çıktı, C3 çıktı, C1 çıktı, en sonunda C2 çıktı.
+
+31
+00:03:35,591 --> 00:03:54,211
+Yani biz şu yönde popping off order'ı kullanıyor olursak önce C2, sonra C1, sonra C3, sonra C4, sonra C5'e alıp topolojik sort olarak bunu sıralayabiliriz.
+
+32
+00:03:54,211 --> 00:04:21,051
+yaplayabiliriz. Bir yapma şansımız var. Ama push ile yaparsak push ile bunu yapamıyoruz. Bir başka örnek üzerinden konuşalım. Daha iyi oturması açısından. Ben buraya sizi bağlanmadan önce hazırladım. C1, C2, C3, C4, C5, C6 var. Burada bir tane stack yapısı oluşturalım. Önce C1, sonra C2'yi yerleştirelim. Sonra C4'ü yerleştirelim.
+
+33
+00:04:21,051 --> 00:04:35,851
+sonra C5'i yerleştirelim. C5 noktasına geldiğimizde pop yapacağız. C5'i buraya koydum. Buradan C5'i silelim.
+
+34
+00:04:35,851 --> 00:04:38,591
+Çöğütelim
+
+35
+00:04:38,591 --> 00:04:44,731
+Yerimde C4 var, C5 çıkarttım, ne gelecek yerine?
+
+36
+00:04:45,411 --> 00:04:46,491
+C6 gelecek
+
+37
+00:04:46,491 --> 00:04:49,551
+Sonra C6'yı çıkarttım
+
+38
+00:04:49,551 --> 00:04:52,471
+Bunu da silelim
+
+39
+00:04:52,471 --> 00:04:58,151
+C6'dan sonra C4 çıkacak
+
+40
+00:04:58,151 --> 00:05:01,991
+Sonra C2 çıkacak
+
+41
+00:05:01,991 --> 00:05:07,331
+C1'e geldim. C1 çıkacak mı?
+
+42
+00:05:13,300 --> 00:05:42,279
+Evet, sizdeyim arkadaşlar. Umut Kaya. C1 çıkmayacak, C1 yerine C3'e gideceğiz hocam. C3'i istekli alacağız. Yani push edip C3'e alacağız. Başka bir şey kaldı mı? Kalmanın hepsine erişmiş olduk. Sonra C3 çıkacak, sonra da C1 çıkacak. Bu noktada bizim bu ön koşulu olan işlerimiz burada da yazılım yükleme olsun.
+
+43
+00:05:42,279 --> 00:05:49,980
+6 tane yazılımımız var ve birbirlerine bağlılıklarını hangisinden önce hangisi yüklenebilir graf olarak ifade ettik diyelim.
+
+44
+00:05:50,079 --> 00:05:53,579
+O zaman hangi sırayla yazılımları yüklememiz gerekecek?
+
+45
+00:05:55,679 --> 00:06:03,480
+C1'i önce yükleyeceğiz, sonra C3'i yükleyeceğiz, sonra C2'yi yükleyeceğiz, C4'ü, C6'yı ve C5'i yükleyeceğiz.
+
+46
+00:06:03,480 --> 00:06:06,619
+Ha sıra değişebilir miydi? Tabii ki değişebilirdi.
+
+47
+00:06:07,559 --> 00:06:11,059
+Ama bu bir çözüm ve bu şekilde yapma şansımız var.
+
+48
+00:06:12,279 --> 00:06:14,939
+Buraya kadar surçulam var mı?
+
+49
+00:06:26,803 --> 00:06:37,104
+Peki, soru yok. Bunu başka hangi algoritmik bakış açısıyla yaklaşımda çözebiliyoruz? Bu problemi.
+
+50
+00:06:43,827 --> 00:06:46,347
+daha önce gördüğünüz bir bakış itse öyle söyleyeyim.
+
+51
+00:06:47,427 --> 00:06:50,827
+3-4 hafta önce konuştuğumuz bir problem. Evet, çaza.
+
+52
+00:06:52,607 --> 00:06:57,987
+Yok, şey söyleyecektim, Bradford Search söyleyecektim ama galiba yanlış.
+
+53
+00:06:58,367 --> 00:07:01,547
+Bradford Search değil, ona da bakarız vaktimiz kalırsa.
+
+54
+00:07:01,807 --> 00:07:07,027
+Ama şu anda daha böyle bu probleme uygun, doğasına uygun bir çözüm var.
+
+55
+00:07:12,027 --> 00:07:13,027
+Evet.
+
+56
+00:07:13,651 --> 00:07:28,631
+Divide and Conquer'a yakın bir çözüm. Neydi? Decrease and Conquer yaklaşımı. Bu topolojik sort işlemini Decrease and Conquer kullanarak da yapabiliriz.
+
+57
+00:07:36,500 --> 00:07:37,399
+Nasiya Pişos
+
+58
+00:07:57,300 --> 00:07:59,199
+Decrease and Concure mantığı neydi arkadaşlar?
+
+59
+00:08:09,204 --> 00:08:24,143
+Yusuf? Problemi daha küçük problem parçalarına bölüp, sonra o küçük problem parçalarını teker teker çözüp, bunları birleştirip asıl problemi çözüp.
+
+60
+00:08:24,143 --> 00:08:35,163
+Tamam, çok güzel, çok teşekkür ederim. Peki biz burada hangi noktadan problemi boyutunu küçültmeye başlayabiliriz diye ben başka bir arkadaşa sorayım. Ahmet Yaman mesela.
+
+61
+00:08:35,163 --> 00:08:41,983
+Hocam, koku da yeni kokuldum, problematik değil.
+
+62
+00:08:42,983 --> 00:08:45,103
+Peki, şuram?
+
+63
+00:08:46,384 --> 00:08:52,503
+C1, C2, C3'ü bir sınıf olarak alıp C4, C5, C6'yı da ikisini ayırabiliriz.
+
+64
+00:08:52,503 --> 00:09:04,023
+Peki, ikiye bölmeden, yani divide and concure değil de decrease and concure'daki gibi, yani orada da tabii ikiye bölerek ilerleyebiliyoruz ama
+
+65
+00:09:04,023 --> 00:09:08,963
+burada ikisini çözmek için ikiye ayırabiliriz diye söylediğini anlıyorum.
+
+66
+00:09:09,463 --> 00:09:14,683
+Onun yerine azaltma işlemini Binary Search'ta ikiye bölerek yapıyorduk.
+
+67
+00:09:14,683 --> 00:09:18,723
+Burada ikiye bölmeden yapsak, daha farklı bir şekilde yapsak, adım adım yapsak.
+
+68
+00:09:22,803 --> 00:09:38,943
+nasıl olabilir adım adım ilerlesek? Şey gibi mi diyorsunuz mesela? C1'den önce C2'ye gidip sonra C1'de... Aslında o noktada. O noktadayım. Burada ilk kesinlikle alınabilecek ders hangisidir?
+
+69
+00:09:41,203 --> 00:09:42,663
+Nasıl yani anlamadım demek ki?
+
+70
+00:09:42,663 --> 00:09:46,124
+İlk adımda alınabilecek ders ya da yüklenebilecek yazılım hangisidir?
+
+71
+00:09:48,563 --> 00:09:49,643
+İhtimaller dahilinde.
+
+72
+00:09:50,044 --> 00:09:54,323
+İki adet ihtimali var zaten. C2'ye de C3'e gidebiliyoruz C1'den.
+
+73
+00:09:55,023 --> 00:09:58,323
+Ama sonuçta ilk yapılması gereken adım C1 doğru mu?
+
+74
+00:09:58,823 --> 00:09:59,603
+Hı hı C1.
+
+75
+00:10:00,023 --> 00:10:01,503
+Tamam, onu öğrenmek istiyordum.
+
+76
+00:10:01,884 --> 00:10:02,243
+Hı tamam.
+
+77
+00:10:02,323 --> 00:10:06,124
+C1'in ilk adım olduğunu nereden anlayabiliriz grafa baktığımızda?
+
+78
+00:10:07,743 --> 00:10:08,903
+Head olmasından.
+
+79
+00:10:08,903 --> 00:10:18,723
+Head olması şu an bunu ters yüz etsem Head olmayacak o zaman. Başka bir şey var, onun cevabı var. Head değil de.
+
+80
+00:10:23,251 --> 00:10:44,371
+Umut? Kendisine giren bir yol olmadığından. Evet, kendisine gelen bir herhangi bir edge olmadığı için otomatik olarak C1 şu anda bizim başlangıç noktamız olabilir. Peki, şimdi C1'i aldım. C1'i aldığım zaman problemi nasıl decrease edeceğim? Bana kim söyleyebilir?
+
+81
+00:10:50,100 --> 00:10:52,859
+C1'i şu anda aldım. Artık onun da işim bitti. Ne yapacağım?
+
+82
+00:11:17,235 --> 00:11:17,815
+Eray?
+
+83
+00:11:19,395 --> 00:11:23,136
+Şöyle düşeceğiz sanırım. C1 olmadanki haline önce topolojik.
+
+84
+00:11:23,136 --> 00:11:37,496
+Çok güzel. C1 aldığımıza göre artık grafımız küçüldü. Problemimiz bu hale geldi. Çünkü artık C1 bizim ilgi alanımızda değil. Şimdi Eray peki bu durumda hangisini almalıyım? Ya da alabilirim?
+
+85
+00:11:38,055 --> 00:11:39,576
+C2 alabiliriz.
+
+86
+00:11:39,595 --> 00:11:40,615
+Başka alabileceğim var mı?
+
+87
+00:11:40,935 --> 00:11:41,795
+Bir de C3 var.
+
+88
+00:11:41,795 --> 00:11:55,576
+Tamam. Ben küçük olanı tercih ettim. C2'yi aldım. Bundan sonra teşekkür ediyorum Eray. C2'yi çıkarttım. Alabileceklerim hangisi diye sorayım.
+
+89
+00:12:01,683 --> 00:12:02,183
+Efendim?
+
+90
+00:12:04,023 --> 00:12:04,963
+C3 hocam.
+
+91
+00:12:05,283 --> 00:12:07,403
+Sadece C3'ü alabilirim, C4'ü alamak.
+
+92
+00:12:08,604 --> 00:12:10,323
+Çünkü onun bağlantısı var.
+
+93
+00:12:10,663 --> 00:12:10,843
+Evet.
+
+94
+00:12:11,064 --> 00:12:12,024
+C3'ü aldım.
+
+95
+00:12:12,763 --> 00:12:17,583
+C3'ü aldıktan sonra benim grafim artık bu hale geldi.
+
+96
+00:12:19,503 --> 00:12:21,683
+Bu noktada hangisini alabilirim?
+
+97
+00:12:21,883 --> 00:12:25,043
+Doğal olarak C4'ü alabilirim.
+
+98
+00:12:27,163 --> 00:12:31,123
+C4'ü aldıktan sonra da iki tane bağımsız nodum kaldı.
+
+99
+00:12:31,123 --> 00:12:36,883
+ikisini de alabilirim ama sırayı bozmamak adına C5 ve C6'yı almış olduk.
+
+100
+00:12:38,443 --> 00:12:44,823
+Gördüğünüz gibi decrease and concur yaklaşımını konuşmuştuk bir 4-5 hafta önce.
+
+101
+00:12:46,323 --> 00:12:58,323
+Çok güzel bir örnek topolojik sort problemini çözmek için graflarınızdan ilgili düğme giriş olmadığında o düğümü ilk başlangıç noktası olarak belirliyorsunuz.
+
+102
+00:12:58,323 --> 00:13:06,484
+sonra onu çıkarttıktan sonra geriye kalan graf içerisinde herhangi bir düğüm girişi yoksa yolunuza devam edebiliyorsunuz.
+
+103
+00:13:06,544 --> 00:13:10,264
+Peki diyelim ki şöyle bir şey olsaydı ne olacaktı?
+
+104
+00:13:11,323 --> 00:13:15,084
+Yani DFS'i kullanmıyorsunuz ama Decrease and Conqueror'u kullanıyorsunuz diyelim.
+
+105
+00:13:17,023 --> 00:13:18,743
+Hatta şöyle yapalım.
+
+106
+00:13:32,436 --> 00:13:45,535
+böyle bir durum olsun. Bu durumda tabii ki cycle olduğunu gördüğünüz için burada bir bitiş var mı, yok mu, yoksa bir cycle mıdır? Bu, bunu öncelikle irdeleyelim. Burada bir cycle var mı?
+
+107
+00:13:53,235 --> 00:13:54,075
+Evet Yusuf.
+
+108
+00:13:55,456 --> 00:13:56,535
+Yok hocam yani.
+
+109
+00:13:56,716 --> 00:14:10,035
+Burada bir cycle yok. Bu cycle oluşturabilmek adına şöyle bir bağlantı yapıyorum. Şimdi burada decrease and conquer ile ilerleseydik ne olacaktı?
+
+110
+00:14:16,755 --> 00:14:22,115
+yani bunun çözülmez olduğunu, topolojik bir sort oluşturamayacağımızı nasıl anlardık?
+
+111
+00:14:22,196 --> 00:14:22,795
+Erali Zeki.
+
+112
+00:14:24,716 --> 00:14:26,516
+Başlayabileceğimiz bir düğüm yok.
+
+113
+00:14:26,855 --> 00:14:27,115
+Evet.
+
+114
+00:14:27,355 --> 00:14:29,096
+Yani boşta bir şey bulamadık.
+
+115
+00:14:29,235 --> 00:14:30,775
+Yani kendisine yönlendirilmemiş.
+
+116
+00:14:31,096 --> 00:14:33,895
+Evet, kendisine bağlantı olmayan bir düğüm yok.
+
+117
+00:14:33,895 --> 00:14:41,755
+Yani böyle bir problemle karşılaştığınızda, decrease and concurrede, herhangi bir DFS algoritması kullanmadan,
+
+118
+00:14:41,755 --> 00:14:47,155
+şu anda bütün notlara erişerek de bunu yapabilirdiniz.
+
+119
+00:14:47,155 --> 00:15:00,296
+Not üzerinden de. Ama DFS kullanmadan sadece C1'in kendisine gelen bir ok var mı yok mu bir komşudan kendisine oluşturuyor mu buna bakmanız.
+
+120
+00:15:00,635 --> 00:15:07,855
+C2 için, C3 için, tüm düğümler için. Baktığınızda böyle bir deyim bulamadığınız anda zaten otomatik olarak
+
+121
+00:15:07,855 --> 00:15:21,196
+sorunun cevabı bu elinizde verdiğiniz yazılımlarla ya da ders programıyla kişinin herhangi bir yol izlemesi mümkün değil cevabını vermeniz gerekiyor.
+
+122
+00:15:21,275 --> 00:15:22,555
+Buraya kadar sorusu olan var mı?
+
+123
+00:15:35,283 --> 00:15:48,863
+Peki, o zaman dersimiz bu haftalık bu kadar. Teşekkür ediyorum hepinize katıldığınız için. Derse katkı sağlayan arkadaşlar da ayrıca teşekkür ediyorum. Hepinize iyi haftalar diliyorum. Sağlıklı günler arkadaşlar. Hoşçakalın.
+
+124
+00:15:49,323 --> 00:15:50,143
+İyi haftalar hocam.
+
+125
+00:15:50,323 --> 00:15:51,123
+İyi günler hocam.

@@ -1,0 +1,4035 @@
+1
+00:00:37,875 --> 00:01:01,695
+Merhaba arkadaşlar. Hepinize güzel bir hafta diliyorum. 10. haftadayız. Geriye çok uzun bir süre kalmadı. Bu haftadan sonra 4 haftamız kalıyor. Bu zamana kadar tempolu bir şekilde geldik. Bugün dinamik programlamayla çözülen iki temel problemi daha konuşacağız birlikte.
+
+2
+00:01:01,695 --> 00:01:27,556
+çok yine sık kullanılan aslında yaklaşımlar uygulamalar için. Arkasından saat 3'te bir ödev sesyonunuz olacak. Bu ödev sesyonunda hem ödevin nasıl çözüldüğünü göreceksiniz hem de rastgele kontroller yapılacak ödevinizle ilgili.
+
+3
+00:01:27,556 --> 00:01:31,776
+Bununla ilgili de gerekli bilgiyi asistan arkadaşlardan zaten takip etmişsinizdir.
+
+4
+00:01:33,056 --> 00:01:39,216
+Şimdi derse girmeden önce hemen tekrar bir sorayım.
+
+5
+00:01:40,456 --> 00:01:56,755
+Dersin şu ana kadar olan bölümünde gerek anıtılan konular, gerek çözülen örnekler, gerek işleyiş, gerek dersin tümüyle ilgili herhangi bir yorumu olan ya da şöyle yapalım bundan sonraki süreçte bu olursa güzel olur.
+
+6
+00:01:57,556 --> 00:02:20,396
+diyen varsa hemen ona söz verebilirim. Sonuçta her zaman aynı fikirde olmasak da sizlerin görüşüne değer verdiğim her zaman söylüyorum. Bir sıkıntısı olan varsa ya da bir önerisi hemen 2-3 dakika içerisinde paylaşabilir. Sormuş olayım. Bir şey aktarmak isteyen var mı?
+
+7
+00:02:23,215 --> 00:02:25,115
+Tabii Efe'ye söz vereyim.
+
+8
+00:02:25,115 --> 00:02:32,435
+Hocam şey daha demin rastgele asistan arkadaşlar bir şey seçecek dediniz de tam orayı anlayamadım
+
+9
+00:02:32,435 --> 00:02:36,835
+Ödev kontrolü yapılacak onunla ilgili söyledim
+
+10
+00:02:36,835 --> 00:02:37,395
+Evet tamam
+
+11
+00:02:37,395 --> 00:02:40,376
+Yani şey lap saatinde bütün
+
+12
+00:02:40,376 --> 00:02:41,815
+Tabii tabii lap saatinde
+
+13
+00:02:41,815 --> 00:02:45,655
+E iki saat içinde bütün iki grup yetişecek mi ki hocam?
+
+14
+00:02:46,415 --> 00:02:48,995
+Yok zaten bütün grup yapılmayacak işte onu söylüyorum ben de zaten
+
+15
+00:02:48,995 --> 00:02:51,415
+Belirli arkadaşlarımızın kontrolleri yapılacak
+
+16
+00:02:51,415 --> 00:02:52,256
+Ha tamam
+
+17
+00:02:52,256 --> 00:02:54,756
+Tamam teşekkürler
+
+18
+00:02:54,755 --> 00:03:00,995
+Rica ederim. Başka bir görüşünü aktarmak isteyen, sıkıntısını dile getirmek isteyen
+
+19
+00:03:04,883 --> 00:03:11,883
+Peki, herkes anladığım kadarıyla. Yasir'dan bir...
+
+20
+00:03:12,783 --> 00:03:14,543
+Hocam bir şey... Merhaba hocam.
+
+21
+00:03:15,023 --> 00:03:15,883
+Merhaba Yasir.
+
+22
+00:03:17,163 --> 00:03:19,023
+Hocam bir şey soracaktım.
+
+23
+00:03:19,383 --> 00:03:19,764
+Efendim.
+
+24
+00:03:20,083 --> 00:03:25,904
+Şimdi artık bundan sonra yani işte bazı çok örnekler yapıyoruz da çok teşekkürler bu arada.
+
+25
+00:03:25,904 --> 00:03:36,343
+Ornekler yaparken biraz da aynı zamanda ders saatinde birkaç örnekler çözerek artık bu süreçle gitsek daha olabilir mi?
+
+26
+00:03:37,784 --> 00:03:40,284
+Yok şeyi anlayamadım. Ders saatinde derken?
+
+27
+00:03:40,284 --> 00:03:47,004
+Yani ders saatinde hem de ders işleyeceksiniz ya aynı zamanda oradan birkaç örneklerle gitsek olur mu?
+
+28
+00:03:47,604 --> 00:03:55,183
+Zaten ders saati içerisinde mutlaka bir örnek çözüyoruz ama eğer yetişmezse ya da anlatacağımız konu varsa
+
+29
+00:03:55,183 --> 00:03:58,843
+onun örneğini uygulamada çözüyoruz. Yani uygulamada mı çözmeyelim?
+
+30
+00:03:59,323 --> 00:04:04,343
+Yok, anlaşılıyor. Yok hocam, çok teşekkür ederim. Anlıyoruz da ama şöyle bir şey mesela.
+
+31
+00:04:04,343 --> 00:04:05,503
+Tam anlayamadım söylemek için.
+
+32
+00:04:06,224 --> 00:04:18,143
+Bazen örnekler falan mesela çözüyoruz. Sonra uygulamada falan bazen mesela time of execution falan işte hesaplama falan işte bunlarla falan örnek üzerinden falan işte bir ekleme yapsak olur mu yani?
+
+33
+00:04:18,144 --> 00:04:45,564
+Söyle söyleyeyim o zaman eğer konu olarak başka konuların örneklerini çözmemizi istiyorsanız geçmişte olan konularla ilgili onları bana yazarsanız ben onları önümüzdeki haftaki uygulama derslerinde örnek hazırlayıp onlarla ilgili soru çözebilirim ama her işlediğimiz konuyla ilgili uygulama saatinde zaten örnek çözmeye özen gösteriyorum ama geçmişte şu konu tam oturmadı bu konuyla ilgili örnek çözerseniz derseniz onu önümüzdeki haftalarda yaparız.
+
+34
+00:04:45,564 --> 00:04:46,904
+Tamam teşekkür ederim.
+
+35
+00:04:46,903 --> 00:04:55,683
+rüzgarlarım ama mutlaka yazın yani. Şu konuda ben örnek çözülmesini talep ediyorum mümkünse vakit kalırsa diye tabii ki yapıyoruz. Ahmet Yaman.
+
+36
+00:05:03,572 --> 00:05:20,992
+Ahmet herhalde konuşmayacaksın. Mikrofonun açık ama ben konuşacağımı düşündüm. Peki, başka bir var mı? Yok. Bir de şu gene bir efsane olmuş. Hemen onu da yapalım.
+
+37
+00:05:22,311 --> 00:05:33,171
+Şöyle ki, geçen hafta hatırlıyorsanız saat 13.10 geçiden sonra derse katılımları durduracağım. Belli bir süre sonra hepsini ortak alacağım demiştim.
+
+38
+00:05:33,572 --> 00:05:40,691
+sanki bu uygulamayı bütün dönemdir yapıyormuşuz gibi bir bilgi yayılmış.
+
+39
+00:05:40,831 --> 00:05:42,452
+Diğer gruptan bana soranlar oldu.
+
+40
+00:05:42,511 --> 00:05:46,831
+O hocam işte böyle yapıyormuşsunuz, işte dersi almıyormuşsunuz falan diye.
+
+41
+00:05:47,631 --> 00:05:48,932
+Yani ben de şaşırdım dedim.
+
+42
+00:05:49,072 --> 00:05:51,531
+Kulaktan kulağa bir bilgi nasıl böyle gider arkadaşlar?
+
+43
+00:05:52,371 --> 00:05:55,771
+Sanki hani 9 haftadır yapıyormuşuz gibi bir hafta uyguladık.
+
+44
+00:05:57,851 --> 00:05:59,972
+Ortalığı birbirine katmışız.
+
+45
+00:05:59,971 --> 00:06:09,651
+Yani bunu sizleri daha fazla dersin içerisinde tutabilmek adına yaptığımız küçük anlayışınıza sığınarak uygulamalar
+
+46
+00:06:09,651 --> 00:06:14,911
+Bu konuda tabii şöyle bir yorum da geldi
+
+47
+00:06:14,911 --> 00:06:18,951
+Biz düşersek hatadan dolayı giremiyoruz içeri diye
+
+48
+00:06:18,951 --> 00:06:23,251
+Merak etmeyin onunla ilgili çözümü de ortaya koyacağız
+
+49
+00:06:23,251 --> 00:06:27,911
+Eğer öyle bir şey olursa ben girmeye çalıştım, giremedim, düştüm vs. bana yazarsanız
+
+50
+00:06:27,911 --> 00:06:51,911
+arkadaşınıza bilgi verip arkadaşınız bana chatten özel olarak yazarsa bu arkadaşımız dersteydi giremedi girmek istiyor diye hepsini çözeriz yani bunların hepsinin çözümü var o yüzden karşılıklı birbirimize yardımcı olursak çok mutlu olurum şimdi başka bir ekleyeceğiniz olmadığına göre derste artık yavaş yavaş başlayabiliriz şimdi ben ekranımı paylaşacağım sizlerle
+
+51
+00:06:51,911 --> 00:06:55,451
+QuickTime diyelim
+
+52
+00:07:07,348 --> 00:07:21,627
+Bu arada bir duyuru daha yapayım size. Bu hafta üçüncü ödeminizi vereceğiz. Büyük ihtimalle cumartesi günü veriyor olacağız. Üçüncü ödeminizin konusu büyük ihtimalle gene dinamik programlama ile ilgili olacak.
+
+53
+00:07:24,368 --> 00:07:33,627
+Takip edersiniz. Zaten sizi de maille bilgilendirme yaparız. Böyle bir ödevle ilgili gelişme olduğunda.
+
+54
+00:07:33,627 --> 00:07:49,187
+olduğunda. Onun dışında muhtemelen bir iki hafta içerisinde dönem projemizi de açıklamış olacağız. Onlarla ilgili de önümüzdeki günlerde konuşuruz. Şimdi
+
+55
+00:07:53,684 --> 00:07:54,863
+Evet, bunu da paylaşalım.
+
+56
+00:08:07,668 --> 00:08:37,127
+Evet, bu hafta Edit Distance konusuyla başlıyoruz. Ben arkadan görüntümü alayım ki, bandwidthte sıkıntı yaşanmasın. Edit Distance algoritmasının aslında bir başka ismi daha var. Nedir? Bilen var mı? diye sormuş olayım. Mutlaka içinizden bilen birileri vardır.
+
+57
+00:08:42,964 --> 00:08:54,964
+Peki, kimseden bir ses çıkmadığına göre, Levenstein distance ya da Levenstein algoritm diye de geçer.
+
+58
+00:08:55,844 --> 00:09:10,743
+Buradaki temel hedef, iki kelimenin, iki stringin birbirlerine olan mesafesinin farklılıklarına göre ortaya koymak.
+
+59
+00:09:10,743 --> 00:09:30,063
+bunu 1965 yılında bir Rus kişi Vladimir Levenstein bu fikri ortaya atıyor ve bu fikir bugün günümüzde çok sık kullanılan bir fikir haline geliyor.
+
+60
+00:09:30,063 --> 00:09:32,763
+Hemen yazalım ne anlama geldiğini.
+
+61
+00:09:34,403 --> 00:09:36,464
+Levenstein Distance diyelim.
+
+62
+00:09:36,464 --> 00:09:44,664
+Levenstein distance is a string metric.
+
+63
+00:09:47,603 --> 00:09:48,684
+Evet.
+
+64
+00:09:50,103 --> 00:09:56,864
+Bir sayeniz rica ediyorum.
+
+65
+00:10:26,964 --> 00:10:31,043
+Evet, çok pardon kaldığım yerden devam edeyim.
+
+66
+00:10:40,211 --> 00:10:43,971
+Measuring, difference between.
+
+67
+00:10:50,259 --> 00:10:51,500
+Two sequences.
+
+68
+00:10:56,755 --> 00:11:17,995
+Şimdi bunun için şöyle bir örnek üzerinden ifade edelim. Sunny kelimesi var. Sunny kelimesini bir tane harfini yanlış olarak yazmış olabilirsiniz. Örneğin N yerine M yazmış olabilirsiniz.
+
+69
+00:11:17,995 --> 00:11:22,215
+İkinci seçenek
+
+70
+00:11:22,215 --> 00:11:29,976
+Bir tane harfini eksik yazmış olabilirsiniz. Şöyle araya boşluk koyayım.
+
+71
+00:11:31,895 --> 00:11:32,855
+Üçüncü seçenek
+
+72
+00:11:36,244 --> 00:12:01,664
+bir tane harfini fazla yazmış olabilirsiniz. Burada olduğu gibi. Şimdi bunlar genel olarak üç tane farklı durumu temsil ediyor. Bir tanesinde bir hatadan bahsediyoruz ve bu hataya substitution da diyebilirsiniz.
+
+73
+00:12:01,664 --> 00:12:27,924
+t-titution veya replacement da diyebilirsiniz. Bir diğeri buna ne diyebiliriz? Selly şeklinde yazdıysanız burada bir dilation olabilir. Aradaki neyi atlamışsınızdır. Ya da buraya fazladan bir harf koymuşsunuzdur. Bu bir insertion'dur.
+
+74
+00:12:27,924 --> 00:12:36,043
+Peki bu Levinstein Distance aynı zamanda Edit Distance olarak adlandırılıyor demiştik. Nerede işimize yarıyor olabilir sizce?
+
+75
+00:12:45,524 --> 00:12:46,383
+Evet, Şafak.
+
+76
+00:12:48,484 --> 00:12:50,904
+Spell correction'larda yarayabilir mi hocam?
+
+77
+00:12:51,623 --> 00:12:54,063
+Yarar. Neden peki spell correction diyorsun?
+
+78
+00:12:55,163 --> 00:13:03,983
+Yani bir string'i yanlış girdikten sonra, ona en yakın olan string'i bulabiliriz edit distance'da.
+
+79
+00:13:03,983 --> 00:13:25,244
+Evet, yani özellikle spell checkerlar size bir suggestion'da bulunacaksa kendisine hata yaptığını düşündüğünüz kelimenin en yakınını getirmeleri mantıklı olanıdır. Nasıl yapar peki bunu Şafak? Yani adımları nedir? Önce ne yapar, sonra ne yapar?
+
+80
+00:13:25,244 --> 00:13:31,204
+Yani iki string arasında bir alignment yapıp sonradan bu işte bir glow
+
+81
+00:13:31,204 --> 00:13:43,044
+Bunu bir orada anlatmadan önce şöyle bir sana bilgi vereyim. Sanki bunu bir program, yani gerçekten kullanılacak bir program gibi düşün, spell checker'ı. İlk yapılması gereken nedir?
+
+82
+00:13:44,044 --> 00:13:45,303
+İlk yapılması gereken nedir?
+
+83
+00:13:45,303 --> 00:14:07,104
+Her bir ilk yapılması gereken, her bir ilk kelime yazdığımız kelimeyi string olarak girip ondan sonra her bir karakter şeyine bakıp yani diğer kendi bizim vokabilerimizdeki stringlere bakıp yani en yakın şeyi konuşmak diye.
+
+84
+00:14:07,104 --> 00:14:14,643
+Önce dikşinlerimizdeki ya da vokabileri fark ettik. O kelime var mı yok mu? Birinci adım.
+
+85
+00:14:14,643 --> 00:14:17,903
+O kelime varsa zaten sıkıntı yok demektir.
+
+86
+00:14:19,683 --> 00:14:19,803
+Evet.
+
+87
+00:14:19,963 --> 00:14:24,663
+Bir adım o kelime yoksa noktasında başlıyor doğru mu?
+
+88
+00:14:25,263 --> 00:14:25,583
+Evet.
+
+89
+00:14:26,483 --> 00:14:32,303
+Peki burada sence nasıl bir yöntem izlenmeli?
+
+90
+00:14:32,303 --> 00:14:41,023
+Yani hani o kelimenin yok olduğunu gördük ve sıra geldi o kelimeye en yakın seçenekleri önermeye.
+
+91
+00:14:41,024 --> 00:14:45,483
+Ne yapılabilir?
+
+92
+00:14:47,744 --> 00:15:04,844
+Burada şey diye düşünüyorum artık, tüm yani bizim karakterlerimizle uyuşan bir kelimeyi bakıp, en yakın uyuşan kelimeyi bulup, ondan sonra işte en düşük edit distance'a sahip olan kelime önerilir.
+
+93
+00:15:04,843 --> 00:15:11,243
+tüm dictionary ile bir minimum edit distance yapmakta biraz şey geliyor bana.
+
+94
+00:15:11,903 --> 00:15:12,243
+Evet.
+
+95
+00:15:13,123 --> 00:15:15,503
+Aynen öyle. Orada da böyle bir sıkıntı var.
+
+96
+00:15:15,503 --> 00:15:15,923
+Evet.
+
+97
+00:15:16,163 --> 00:15:20,863
+Bu edit distance'ı hesaplamaya kalkarsak böyle bir sorunla karşılaşacağız.
+
+98
+00:15:21,003 --> 00:15:24,203
+Şimdi bunu bir gündeme getirmiş olalım.
+
+99
+00:15:24,323 --> 00:15:33,963
+Yani bu işin gerçek hayatta uygulamaya dönüştürüldüğünde ne şekilde uygulanması gerektiği konusunu bir ortaya soru olarak atmış olalım.
+
+100
+00:15:33,964 --> 00:15:42,503
+Biz önce yöntemi konuşalım ondan sonra bu konuya ileride geri döneceğiz. Teşekkür ediyorum verdiğin destek için.
+
+101
+00:15:43,184 --> 00:15:51,824
+Şimdi demek ki biz öncelikle spell checker'dan da bahsediyorsak bir kelimenin var olup olmadığına, doğru olup olmanını kontrol etmemiz gerekiyor.
+
+102
+00:15:52,284 --> 00:16:02,284
+Diyelim ki spell checker'ımız yok. Bize bir tane kelime verildi ya da iki tane kelime verildi. Bunlar arasındaki edit istesinin hesaplanması isteniyor.
+
+103
+00:16:02,283 --> 00:16:06,083
+ve biz burada neler yapabileceğimizi konuşuyorduk.
+
+104
+00:16:06,083 --> 00:16:14,623
+Şimdi distance diyelim mesela, maths ve arts.
+
+105
+00:16:15,343 --> 00:16:16,703
+İki kelime olsun.
+
+106
+00:16:17,384 --> 00:16:19,083
+Bunlar arasındaki distance'a bakmak istiyoruz.
+
+107
+00:16:19,203 --> 00:16:21,543
+Kaçtır bunlar arasındaki distance hemen sorsam size.
+
+108
+00:16:22,063 --> 00:16:23,024
+Gözle söyleyebilir misiniz?
+
+109
+00:16:36,532 --> 00:17:06,511
+Evet efendim. Üç tane bence hocam. Üç tane. Bunu bir bakalım doğru mu? İki kelimeyi yazacağız. Şimdi yapılabilecek şeylerden bir tanesi bu taraftan başlatmak. Böyle yapabilirsiniz. Burada da şöyle bir boşluk bulabilirsiniz. Şimdi ilk etapta arts kelimesinin metrizi olan distansını hesapladığımızda bir tane M eklenmiş bir insü.
+
+110
+00:17:06,532 --> 00:17:17,091
+sort'tan bahsediyoruz. Burada herhangi bir değişiklik yok. Burada bir şey yapılmıyor. T ile R, bu da bir change olmuş.
+
+111
+00:17:19,892 --> 00:17:29,491
+Place işlemi gerçekleştirmiş. Burada da H ile T var. Burada da bir change olmuş. Burada ise uyuşan bir durum söz konusu.
+
+112
+00:17:29,491 --> 00:17:40,932
+Buradan baktığınızda bu iki kelimeler arasındaki mesafe 3 olarak kağıt üzerinde hesaplamak isteseydik ortaya çıkacaktı.
+
+113
+00:17:40,991 --> 00:17:47,691
+Peki bunu böyle yerleştirmeseydik başka türlü yerleştirme şansımız var mı? Nasıl yapabiliriz?
+
+114
+00:17:51,155 --> 00:17:59,775
+Yani mesafe burada 3 çıktı. Ama bunu başka türlü de eşleştirebilir miydik acaba?
+
+115
+00:18:03,763 --> 00:18:04,444
+Sercan?
+
+116
+00:18:05,384 --> 00:18:14,663
+Hocam ben şimdi şunu sorarak cevap vermek istiyorum. Bu Mets ya da Artistan birini peki sabit tutmamız gerekiyor mu? Yani işlemleri sadece birinin üzerinde mi uygulayabiliriz?
+
+117
+00:18:16,243 --> 00:18:22,923
+Yok, ikisi arasındaki zaten ikili karşılaştırmaya baktığımız için hangisini yani sabit tuttuğumuzun bir önemi var mı?
+
+118
+00:18:24,524 --> 00:18:28,763
+Yani hangisini yaparsak önemi yok ama ikisini birden değiştirebiliyorsak...
+
+119
+00:18:28,763 --> 00:18:45,763
+yani mesela şu anda zaten en az distance'ı bulmanın peşindeyiz. Yani amacımız aralarındaki minimum distance ne olabilir onu bulma peşindeyiz. O yüzden ben yazarken mesela S'leri örtüştürdüm. A'ları örtüştürdüm.
+
+120
+00:18:45,763 --> 00:18:47,923
+Evet. Tamam.
+
+121
+00:18:48,083 --> 00:18:56,723
+Başı ve sonunda boşluk ve aralarda boşluk olabileceğini düşünürsek hani isterseniz araya koyabilirsiniz, isterseniz sona ya da başa koyabilirsiniz. Başka bir seçenek yok zaten.
+
+122
+00:18:56,723 --> 00:19:11,484
+Evet. Şimdi cevabınıza gelirsem şöyle diyebiliriz mesela. İşte MA değişim olmuş. Orada insert olmamış. AR değişim olmuş. T'ler ortakmış. HS değişim olmuş. Sondaki ise insert olmuş diyebiliriz.
+
+123
+00:19:12,944 --> 00:19:14,883
+Yani Metsi olduğu gibi yazıyor.
+
+124
+00:19:15,663 --> 00:19:18,023
+Evet. Yine Metsi olduğu gibi yazıyoruz.
+
+125
+00:19:18,543 --> 00:19:21,143
+Aşağıya şöyle yapsam.
+
+126
+00:19:21,143 --> 00:19:21,903
+Aynen.
+
+127
+00:19:21,903 --> 00:19:47,323
+bu mudur? Tamam. Bir bakalım şimdi burada distance nedir? Şimdi m ile a burada bir insert yok. Burada bir change var. Burada bir change var. Burada herhangi bir değişiklik yok. Burada nasıl bir şey var? Yine bir insert var.
+
+128
+00:19:47,323 --> 00:19:48,783
+insertion ya da deletion
+
+129
+00:19:48,783 --> 00:19:51,863
+ters yani bunlardan baktığınıza bağlı ikisi de olur
+
+130
+00:19:51,863 --> 00:19:54,003
+ben burada arts'tan maths'a geçtim
+
+131
+00:19:54,003 --> 00:19:54,883
+yani şöyle
+
+132
+00:19:54,883 --> 00:19:59,323
+böyle geçtiğim için buraya bir insert olmuş gibi
+
+133
+00:19:59,323 --> 00:20:02,624
+arts yazıldığında normalde araya H koymuşuz gibi düşünebilirsiniz
+
+134
+00:20:02,624 --> 00:20:04,984
+bir de burada S'lerin eşit olduğu durum var
+
+135
+00:20:04,984 --> 00:20:06,103
+burada distance ne çıktı
+
+136
+00:20:06,103 --> 00:20:08,223
+burada da distance 3 çıktı
+
+137
+00:20:12,276 --> 00:20:14,276
+Burada da distance
+
+138
+00:20:14,276 --> 00:20:19,475
+3 olarak gerçekleşti. Peki şimdi
+
+139
+00:20:19,475 --> 00:20:22,076
+bu noktada
+
+140
+00:20:22,076 --> 00:20:23,276
+biz
+
+141
+00:20:23,276 --> 00:20:25,135
+bu işi
+
+142
+00:20:25,135 --> 00:20:29,116
+ilk etapta yapmaya çalıştığımız yaklaşım nedir şu anda?
+
+143
+00:20:31,395 --> 00:20:33,175
+Algoritmik yaklaşıma ne isim veriyoruz?
+
+144
+00:20:40,180 --> 00:20:45,519
+şu andaki distance'ı hesaplamak için kullanmamız algoritma iki yaklaşım. Sermet.
+
+145
+00:20:45,979 --> 00:20:46,620
+BruteForce.
+
+146
+00:20:47,160 --> 00:20:49,180
+BruteForce. Ne yapıyoruz Sermet? BruteForce.
+
+147
+00:20:50,299 --> 00:20:52,480
+Harfleri tek tek karşılaştırdığımız için.
+
+148
+00:20:53,239 --> 00:20:54,879
+Bütün kombinasyonlara bakmamız gerekiyor.
+
+149
+00:20:55,199 --> 00:20:55,279
+Evet.
+
+150
+00:20:55,279 --> 00:20:56,559
+Evet. Teşekkür ederim.
+
+151
+00:20:57,479 --> 00:21:02,579
+Şimdi bu noktada bizim iki tane stringimiz var dedik.
+
+152
+00:21:02,579 --> 00:21:03,619
+String bir olsun.
+
+153
+00:21:05,940 --> 00:21:08,699
+X birden M'e kadar.
+
+154
+00:21:08,699 --> 00:21:13,159
+string 2 olsun.
+
+155
+00:21:14,539 --> 00:21:20,579
+Buna da y 1'den n'e kadar diyelim.
+
+156
+00:21:22,119 --> 00:21:27,079
+Şimdi burada kaç tane işlemden bahsediyoruz?
+
+157
+00:21:27,499 --> 00:21:33,819
+Birincisi copy, birebir herhangi bir değişimin olmadığı durum.
+
+158
+00:21:33,819 --> 00:21:41,020
+X, Y ile Y, Y'nin aynı olduğu durum.
+
+159
+00:21:42,339 --> 00:21:49,059
+İki, change, daha önce bunlara replacement demiştik, substitute demiştik.
+
+160
+00:21:49,059 --> 00:21:50,680
+Her türlü isim verebilirsiniz.
+
+161
+00:21:51,559 --> 00:22:01,760
+Burada iki aynı noktadaki stringlerin aynı sıradaki harfinden bahsediyorum.
+
+162
+00:22:01,760 --> 00:22:05,700
+ikisinin aynı olmama durumu.
+
+163
+00:22:06,440 --> 00:22:09,420
+Peki burada şöyle söyleyelim.
+
+164
+00:22:09,680 --> 00:22:10,840
+Buraya J diyeceğiz.
+
+165
+00:22:11,360 --> 00:22:12,639
+Buraya da J diyeceğiz bu arada.
+
+166
+00:22:13,380 --> 00:22:14,220
+Onu düzeltelim.
+
+167
+00:22:21,683 --> 00:22:24,063
+Neden olduğunu ikisinin boyutlarının
+
+168
+00:22:24,063 --> 00:22:26,124
+farklı olduğundan ortaya atabiliriz.
+
+169
+00:22:26,443 --> 00:22:27,664
+3. 3'te ne olacak?
+
+170
+00:22:28,523 --> 00:22:28,943
+Insert
+
+171
+00:22:28,943 --> 00:22:32,223
+ya da
+
+172
+00:22:32,223 --> 00:22:33,823
+Delayed olacak. Biz
+
+173
+00:22:33,823 --> 00:22:35,163
+Insert'ü seçtik.
+
+174
+00:22:36,663 --> 00:22:39,543
+X i
+
+175
+00:22:41,619 --> 00:22:44,459
+gelmiş. Burada neydi örneğimizde?
+
+176
+00:22:45,080 --> 00:22:45,579
+Matz
+
+177
+00:22:45,579 --> 00:22:49,580
+Artz
+
+178
+00:22:49,580 --> 00:22:53,460
+İşte şu noktaya bir aş gelmiş arkadaşlar.
+
+179
+00:22:58,387 --> 00:23:16,747
+araya bu yerleşmiş. Peki, dörde gelelim. Dördüncü seçeneğimizde konuştuğumuz delete işlemi kaldı. Delete işleminde de bu sefer bir harf elenmiş.
+
+180
+00:23:18,451 --> 00:23:21,251
+C diyelim. Burada da
+
+181
+00:23:21,251 --> 00:23:24,291
+M, A
+
+182
+00:23:24,291 --> 00:23:27,011
+örneğin
+
+183
+00:23:27,011 --> 00:23:31,191
+şöyle olsaydı
+
+184
+00:23:31,191 --> 00:23:32,771
+M
+
+185
+00:23:36,147 --> 00:23:56,507
+Şöyle verilmiş olsaydı, alt taraftaki bir tane T elenmiş olacaktı. Hatta pardon şunu şöyle verelim daha doğru olsun, kafa karıştırmasın. Şu kısmı sileyim. Bir başka kelime verelim. M-A-S olsun.
+
+186
+00:23:56,507 --> 00:24:01,067
+Buradaki S'ler denk geliyor ama aradaki T kaybolmuş.
+
+187
+00:24:01,527 --> 00:24:04,927
+M, A, S ile artısı eşleştirmeye çalışıyorsunuz.
+
+188
+00:24:04,927 --> 00:24:11,887
+M, A, S ile artısı eşleştirmeye çalıştığınızda burada bir farklılık var.
+
+189
+00:24:12,407 --> 00:24:15,907
+Burada bir farklılık var.
+
+190
+00:24:16,828 --> 00:24:24,727
+Bu noktada aynı olduğu için gene distance'ımız 3 oldu.
+
+191
+00:24:24,727 --> 00:24:53,807
+Şimdi biz brute force yaklaşımıyla bunu biraz önce çözmeyi denedik. Kağıt üzerine yazdık ve kombinasyonların neler alabileceğine baktık. Gelelim dinamik programlamanın burada nasıl bize katkı sağlayacağını. Kim söylemek ister? Nasıl bir yöntem ile brute force kullanmayalım da dinamik programlama mantığını kullanalım? Nasıl bir veri yapısına ihtiyacımız var?
+
+192
+00:25:00,788 --> 00:25:03,288
+farklı arkadaşlarımız olsun lütfen.
+
+193
+00:25:13,940 --> 00:25:37,700
+Bizim bir alana ihtiyacımız var. Daha önce bütün dinamik programlama problemlerini space kullanarak çözdük. Time complexity'yi azalttık ama space complexity'yi çoğalttık. O mantıktan düşünecek olursanız biz bu iki kelimeyi nasıl bir veri yapısı kullanarak birbirlerine olan uzaklığını hesaplayabiliriz? Evet.
+
+194
+00:25:42,163 --> 00:25:43,923
+Ali Can Kara Ömer
+
+195
+00:25:43,923 --> 00:25:47,144
+Hocam sesim geliyor mu?
+
+196
+00:25:48,283 --> 00:25:49,043
+Evet, geliyor.
+
+197
+00:25:49,563 --> 00:25:51,183
+Hocam, ben şöyle bir şey düşündüm.
+
+198
+00:25:52,183 --> 00:25:56,443
+Matrisin boyutu en uzun string çarpı en uzun stringin boyutu kadar.
+
+199
+00:25:56,743 --> 00:26:00,703
+Yani en uzun, MN'den büyükse M çarpı M kadar bir matris yapacağız.
+
+200
+00:26:00,703 --> 00:26:04,983
+Çünkü insert yaptığımız yerde mesela sürekli bir olacak.
+
+201
+00:26:05,943 --> 00:26:07,543
+O matrisin satıra gibi düşündüm.
+
+202
+00:26:07,543 --> 00:26:13,103
+Ben tam anlayamadım mantığı bir daha anlayabilir misin?
+
+203
+00:26:13,643 --> 00:26:30,204
+Matrisin boyutunu şöyle düşündüm mesela M değeri N değerinden büyükse M çarpı M bir matris olacak veya tam tersi en uzun hangisiyse matrisin boyutu böyle olacak çünkü insert veya delete yaptığımızda mesela o satırın puanı hep bir olacak.
+
+204
+00:26:30,203 --> 00:26:37,423
+Sonuçta sen diyorsun ki Can burada biz bir matriz kullanalım.
+
+205
+00:26:38,063 --> 00:26:38,363
+Evet.
+
+206
+00:26:38,523 --> 00:26:39,103
+Olur mu anlıyorum?
+
+207
+00:26:39,583 --> 00:26:43,323
+Evet karşılaştırma yapıp yine geçmişte yaptığımız gibi toplaya toplaya gitmek için.
+
+208
+00:26:43,963 --> 00:26:53,683
+Peki. Okey. Fena bir mantık değil gibi gözüküyor. Peki matrizin bu yönlerinde ne olabilir?
+
+209
+00:26:53,683 --> 00:27:01,363
+Bir tanesi şey için işte string 1'in mesela değerleri için tutabiliriz diğerinde string 2 için
+
+210
+00:27:01,363 --> 00:27:03,623
+Tamam şöyle yazsam uygun olur mu?
+
+211
+00:27:04,063 --> 00:27:06,323
+Evet böyle demek istedim ben de
+
+212
+00:27:06,323 --> 00:27:08,623
+Tamam peki
+
+213
+00:27:08,623 --> 00:27:16,683
+Şimdi buradaki ilk adımımız ne olmalı sence?
+
+214
+00:27:18,683 --> 00:27:19,563
+Önce
+
+215
+00:27:19,564 --> 00:27:49,544
+ve yönet,
+
+216
+00:27:25,683 --> 00:27:31,763
+Sanırım M ve A'yı önce sıfır sıfırı karşılaştırıp
+
+217
+00:27:31,763 --> 00:27:49,944
+Evet, M ve A'yı karşılaştırmamız gerekecek ama M ve A için bir şeyi hesaba katmadık. Biz bunları böyle yazdık kelimeleri ama bir oluşabilecek ihtimali ya da iki oluşabilecek ihtimali dikkate almadık böyle yazdığımız zaman.
+
+218
+00:27:49,944 --> 00:28:03,483
+şey ihtimalini yazmadık. Çünkü biri 5 elemanlı, diğeri 4 elemanlı. Evet ama hangi ihtimali yazmadık? 4 tane yanında ihtimal var. Copy, change, insert, delete ya da hangi ihtimalleri?
+
+219
+00:28:07,483 --> 00:28:18,243
+Change'i yazdık, copy'yi de yazdık. Sanırım insert ve delete mi? Evet, insert ve delete'i yazmamış olduk. O zaman şimdi burada
+
+220
+00:28:18,243 --> 00:28:20,183
+şöyle yapalım.
+
+221
+00:28:21,983 --> 00:28:22,583
+Şunu silelim.
+
+222
+00:28:23,383 --> 00:28:23,963
+Bunu silelim.
+
+223
+00:28:24,763 --> 00:28:27,303
+Bunu yazmak için ne yapmamız gerekiyor?
+
+224
+00:28:29,743 --> 00:28:32,303
+Her iki tarafı da bir büyütmemiz gerekiyor.
+
+225
+00:28:32,563 --> 00:28:32,843
+Evet.
+
+226
+00:28:33,983 --> 00:28:36,563
+Şimdi nereden itibaren yazmaya başlayacağım?
+
+227
+00:28:41,971 --> 00:28:43,592
+Bir altlardan mı?
+
+228
+00:28:43,971 --> 00:28:48,091
+Burada alt yazacağım. Burada da mats yazacağım.
+
+229
+00:28:48,151 --> 00:28:48,731
+Evet, bu şekilde.
+
+230
+00:28:49,351 --> 00:28:49,511
+Evet.
+
+231
+00:28:49,511 --> 00:28:57,811
+Tamam, çünkü niye? Bizim insert ve delete ihtimalini de işin içine katmamız gerekiyor. Doğru mudur?
+
+232
+00:28:58,152 --> 00:28:58,471
+Evet.
+
+233
+00:28:59,291 --> 00:29:03,992
+Tamam, peki. Şimdi bu noktada bir pausa basacağım.
+
+234
+00:29:03,992 --> 00:29:19,391
+Pausa basma sebebim de buraya geçmeden önce keyzlerimizi bu matris üzerinde işlemeden önce tanımlamamız gerekiyor. Önce bu keyzleri yani aslında dört tane yazdığımız keyzi formülize etmek istiyorum.
+
+235
+00:29:20,672 --> 00:29:21,131
+Keyz bir.
+
+236
+00:29:23,951 --> 00:29:27,372
+Keyz bir de kopiyi konuşuyor olalım.
+
+237
+00:29:29,471 --> 00:29:30,531
+Copy var.
+
+238
+00:29:32,012 --> 00:29:33,571
+Nereye bakmam gerekiyor?
+
+239
+00:29:33,992 --> 00:29:40,872
+Tezbir'de yola devam edebilmen için. Bu konuda bir şey söyleyebilir misiniz ilk etapta?
+
+240
+00:29:45,203 --> 00:29:48,664
+Copy için önce şey, bire bire bakmamız gerekiyor.
+
+241
+00:29:49,803 --> 00:29:51,903
+Copy için bire bire bakmamız gerekiyor.
+
+242
+00:29:52,063 --> 00:29:57,283
+Yani şey aynı eleman mı diye çünkü ilk şeyler, ilk elemanları aynı mı diye.
+
+243
+00:29:57,983 --> 00:30:00,263
+Aynı eleman mı diye bakmamız gerekiyor. Başka?
+
+244
+00:30:03,964 --> 00:30:05,843
+Bir değeri daha taşıyacak mıyız?
+
+245
+00:30:08,423 --> 00:30:10,124
+Change için de aynı şekilde.
+
+246
+00:30:10,743 --> 00:30:14,223
+Change için de aynı şekilde oraya bakmamız gerekiyor.
+
+247
+00:30:14,223 --> 00:30:17,043
+Şimdi o zaman şöyle bir şey yapalım
+
+248
+00:30:17,043 --> 00:30:21,603
+Recurrence relation diyelim
+
+249
+00:30:25,491 --> 00:30:45,971
+Recurrence relation'da if diyeceğiz, x, e diyeceğiz, y, j diyeceğiz. Bir de otherwise olacak. Yani senin söylediğin eşitlik durumu varsa ya da eşitlik durumu yoksa. Doğru mudur?
+
+250
+00:30:45,971 --> 00:30:46,451
+Evet.
+
+251
+00:30:47,512 --> 00:30:54,832
+Tamam. Şimdi birazdan recurrence relation'ı yazıyor olacağız, case'leri konuşuyor olacağız.
+
+252
+00:30:54,832 --> 00:31:07,471
+Tekrar matrise dönüyorum. Daha iyi anlaşılması için örnek üzerinden gideceğim. Çünkü case 1, case 2, case 3, case 4 için şu anda beklediğim cevabı alamadım. Birlikte ilerleyelim.
+
+253
+00:31:09,091 --> 00:31:21,151
+Case'leri kenara bırakıyorum. Şimdi tekrar matrise dönüyorum. Matris'te burada ilk göze yani şu anda bulunduğum şuraya ne yazacağım arkadaşlar?
+
+254
+00:31:32,084 --> 00:31:32,883
+Buraya kaç yazacağım?
+
+255
+00:31:33,783 --> 00:31:34,223
+Sercan
+
+256
+00:31:39,667 --> 00:31:40,667
+Sıfır bence.
+
+257
+00:31:40,667 --> 00:31:41,667
+Neden dolayı?
+
+258
+00:31:43,667 --> 00:31:44,667
+Alo.
+
+259
+00:31:44,667 --> 00:31:46,667
+Duyabiliyorum seni.
+
+260
+00:31:49,907 --> 00:31:50,907
+Serjan orada mısın?
+
+261
+00:31:59,155 --> 00:32:01,616
+Evet, Sercan'ın sesi gelmiyor. Başka bir arkadaşımız.
+
+262
+00:32:04,576 --> 00:32:05,775
+Şu an geliyor mu hocam?
+
+263
+00:32:06,116 --> 00:32:07,015
+Evet, şu an duyamıyorum.
+
+264
+00:32:09,456 --> 00:32:11,955
+Evet, sıfır yazıyoruz. Neden olayı sıfır yazıyoruz?
+
+265
+00:32:16,180 --> 00:32:18,620
+Sercan duymuyorum seni. Mikrofonunu kapattın yine.
+
+266
+00:32:26,932 --> 00:32:31,872
+Evet, başka bir arkadaşımız söz olabilir mi? Efe'yi geçiyorum. Okan?
+
+267
+00:32:33,271 --> 00:32:35,272
+İkisi de boşluk karakteri olduğu için.
+
+268
+00:32:35,671 --> 00:32:43,511
+Evet, ikisi de boşluk karakteri olduğu için, aynı oldukları için sıfır yazdım. Peki, ilk satır ne olacak? Okan?
+
+269
+00:32:46,091 --> 00:32:46,591
+Değerleri.
+
+270
+00:32:49,051 --> 00:32:51,772
+Sıfır, bir, hepsi bir olacak geri kalanları.
+
+271
+00:32:53,571 --> 00:32:54,171
+Acaba?
+
+272
+00:32:54,171 --> 00:33:01,112
+Başka boşluk olmadığı için hepsi farklı diye düşünüyorum
+
+273
+00:33:01,112 --> 00:33:06,311
+Bizim amacımız şu, bu noktayı hepsi bir olacak demen aslında önemliydi
+
+274
+00:33:06,311 --> 00:33:13,731
+Bizim amacımız şu anda bir kelimenin diğer kelimenin bir parçasına olan uzaklığını bulmak
+
+275
+00:33:13,731 --> 00:33:16,512
+Şimdi A'nın boşluğa olan uzaklığı bir, doğru mu?
+
+276
+00:33:17,091 --> 00:33:20,231
+Peki A, R'nin boşluğa olan uzaklığı kaç olur o zaman?
+
+277
+00:33:20,951 --> 00:33:21,211
+Okan?
+
+278
+00:33:21,531 --> 00:33:23,811
+2, 3, 4 diye gidecek o zaman
+
+279
+00:33:23,811 --> 00:33:29,831
+Aynen öyle. Çünkü boşluğa bir kelimenin uzaklığı o kelimenin harf sayısı kadardır. Doğru mu?
+
+280
+00:33:30,451 --> 00:33:30,951
+Doğru.
+
+281
+00:33:31,391 --> 00:33:37,671
+Tamam süper. Bu bağlamda aşağıya doğru olan ilk kolonun değerleri ne olacak Okan?
+
+282
+00:33:43,155 --> 00:33:50,895
+yani sıfırın altındaki değerler. Bir diye mi başlayacak acaba M? Peki neden bir diye başlattığını söyle?
+
+283
+00:33:54,515 --> 00:34:08,336
+Boşluğun gerisinde kaldığı için. Sonuçta M'yi de bu sefer boşlukla karşılaştırıyorsun, doğru mu? Evet. Biraz önce boşluğu A ile karşılaştırmıştın, şimdi M'yi boşlukla karşılaştırıyorsun. O zaman bir fark var. Ondan sonrakiler ne olacak?
+
+284
+00:34:08,336 --> 00:34:17,176
+2, 3, 4 diye gidecek yine
+
+285
+00:34:17,176 --> 00:34:19,376
+Evet, tereddüt etmenin sebebi ne?
+
+286
+00:34:20,315 --> 00:34:22,615
+Biraz kafam karıştı hocam, maddi savunacak
+
+287
+00:34:22,615 --> 00:34:37,836
+Tamam, şimdi şeyde hemfikir miyiz? Yukarıdaki kelimenin bir harfiyle aşağıya doğru inen kelimenin diğer harflerini karşılaştırdığımızda, boşluğu diğer harflerle karşılaştırdığımızda toplamda kelimenin harfleri kadar bir distance olacak
+
+288
+00:34:37,836 --> 00:34:39,635
+çünkü boşta karşılaştırıyoruz.
+
+289
+00:34:40,775 --> 00:34:40,996
+Evet.
+
+290
+00:34:41,095 --> 00:34:41,356
+Değil mi?
+
+291
+00:34:41,955 --> 00:34:42,236
+Tamam.
+
+292
+00:34:42,655 --> 00:34:45,496
+Şimdi biz şu noktadayız şu anda.
+
+293
+00:34:45,496 --> 00:34:47,895
+Bu noktadayız.
+
+294
+00:34:48,416 --> 00:34:50,495
+Bu noktada M ile A'yı karşılaştırıyoruz.
+
+295
+00:34:52,176 --> 00:34:53,255
+M'ye A'yı eşit mi?
+
+296
+00:34:55,035 --> 00:34:56,435
+Değil.
+
+297
+00:34:56,475 --> 00:34:58,135
+O zaman bir costumuz var değil mi?
+
+298
+00:34:59,075 --> 00:34:59,355
+Evet.
+
+299
+00:34:59,755 --> 00:35:01,535
+Yani distance'ımız bir olacak.
+
+300
+00:35:01,676 --> 00:35:03,176
+Peki Okan'dan başka birine devredelim.
+
+301
+00:35:03,255 --> 00:35:03,956
+Teşekkürler Okan.
+
+302
+00:35:06,516 --> 00:35:07,395
+Kim devam etmek ister?
+
+303
+00:35:10,931 --> 00:35:17,267
+Başka bir arkadaşımız?
+
+304
+00:35:20,308 --> 00:35:27,087
+Ben söyleyeyim o zaman isim. Siz konuşmayacaksınız sanırım. Evet Ahmet.
+
+305
+00:35:29,208 --> 00:35:34,127
+Hocam, AM yine birbirine eşit olmadığı için bir daha eklememiz gerekiyor galiba.
+
+306
+00:35:34,127 --> 00:35:36,067
+Tamam, şimdi soru bir'i nereye ekleyeceğiz?
+
+307
+00:35:38,307 --> 00:35:44,327
+Şu an birebir koordinatına iki yazacağımızı düşünüyordum ben ama.
+
+308
+00:35:44,327 --> 00:35:49,048
+Öyle düşünüyorsun ama şu anda üstte de bir var, altta da bir var, doğru mu?
+
+309
+00:35:51,508 --> 00:35:54,307
+Yani buraya iki yazıyorum ya, hemen yazayım
+
+310
+00:35:54,307 --> 00:35:56,947
+Hangisine ekliyoruz?
+
+311
+00:35:56,947 --> 00:36:00,868
+Çünkü bir costumuz var, bir kere change'in bir costu olduğunu şuraya yazalım
+
+312
+00:36:00,868 --> 00:36:05,088
+Change'in bir costu var, copy'nin bir costu var mı?
+
+313
+00:36:08,563 --> 00:36:09,163
+Ahmet?
+
+314
+00:36:11,483 --> 00:36:12,723
+Emin olamadım.
+
+315
+00:36:13,863 --> 00:36:15,643
+Biz neyi hesaplıyoruz şu anda?
+
+316
+00:36:17,163 --> 00:36:19,024
+İki kelimenin birbirine uzaklığını, doğru mu?
+
+317
+00:36:19,603 --> 00:36:19,883
+Evet.
+
+318
+00:36:20,524 --> 00:36:22,063
+Cost farklılığı ifade ediyor.
+
+319
+00:36:24,763 --> 00:36:26,803
+İki harfin birbirinden farklı olması.
+
+320
+00:36:27,923 --> 00:36:30,404
+Şu an A ile M ile birbirinden farklı olmuş.
+
+321
+00:36:30,503 --> 00:36:31,423
+Şimdi bir ekledik, iki oldu.
+
+322
+00:36:31,423 --> 00:36:32,683
+O zaman copy'nin costu var mı?
+
+323
+00:36:35,283 --> 00:36:36,083
+Yok.
+
+324
+00:36:36,783 --> 00:36:38,103
+Evet, Ahmet çok zor değil ya.
+
+325
+00:36:38,563 --> 00:36:42,924
+Yani o kadar stiklis yapmana gerekir ki benim için ihtimalle yanlış söylersin. Costu yok doğru mu?
+
+326
+00:36:44,964 --> 00:36:45,883
+Peki. Evet.
+
+327
+00:36:46,663 --> 00:36:56,683
+Şimdi M ile A'yı karşılaştırdık ve bir cost olduğunu gördük. Bu costu hangi bire ekledik şu anda bunu bilmiyoruz. Doğru mu?
+
+328
+00:36:57,883 --> 00:36:59,244
+Peki devam edelim. Evet.
+
+329
+00:36:59,904 --> 00:37:03,563
+Sıra geldi yandaki ne? Yandakinin değeri kaçtır?
+
+330
+00:37:05,443 --> 00:37:06,703
+M ve C'yi.
+
+331
+00:37:07,703 --> 00:37:08,303
+Evet.
+
+332
+00:37:08,563 --> 00:37:10,644
+yazsadık. Bu sefer 3.
+
+333
+00:37:17,043 --> 00:37:17,683
+Başka?
+
+334
+00:37:19,303 --> 00:37:24,063
+4 ve 5 olarak devam ediyor.
+
+335
+00:37:24,623 --> 00:37:31,424
+Bakalım burada herhangi bir problem var mı, yok mu? Bu konuda yorum yapacak olan var mı? Ben onu merak ediyorum.
+
+336
+00:37:33,564 --> 00:37:38,983
+Şu anda yaptığımız satırdaki noktada. Bir kontrol eder misiniz?
+
+337
+00:37:49,331 --> 00:37:49,892
+Evet, Hüma.
+
+338
+00:37:51,371 --> 00:38:01,311
+Hocam, ben burada boşluk kısmını çok anlayamadım. Mesela M ile A'yı karşılaştırıyoruz. Normalde farklarının bir çıkması gerekiyor. Maddisi de iki gözüküyor boşluğu.
+
+339
+00:38:01,331 --> 00:38:10,951
+Tamam, çok güzel. Ben de zaten buraya vurgu yapmak istiyorum. Yani şöyle bir durum var. Biz burada boşluk A ve boşluk M'yi karşılaştırdık. Doğru mu?
+
+340
+00:38:12,151 --> 00:38:12,391
+Hüma.
+
+341
+00:38:13,551 --> 00:38:14,131
+Evet.
+
+342
+00:38:14,131 --> 00:38:28,131
+O zaman bizim şu anda bu noktada kostumuzu belirleyen yer burası. Bunlar herhangi bir değişiklik içermiyor. Peki burada kostumuzu neye eklememiz gerekiyor?
+
+343
+00:38:32,371 --> 00:38:35,951
+Peki yanlış dedin. Şu yanlış dedin.
+
+344
+00:38:35,971 --> 00:38:39,971
+O zaman yani aslında bana sıfıra eklememiz gerekiyor gibi.
+
+345
+00:38:39,971 --> 00:38:45,792
+Tamam çok güzel. Ben buna itiraz etmiyorum. Zaten bir farkındalık yaratmanın peşindeyim. Sıfıra eklememiz gerekiyor.
+
+346
+00:38:46,971 --> 00:38:52,871
+Biz sıfıra eklediğimiz zaman gerçek distansı, minimum distansı hesaplamış oluyoruz.
+
+347
+00:38:52,871 --> 00:39:01,871
+Çünkü bizim kelimelerin şu parçalarına gelene kadar karşılaştığımız tek değişiklik A ile M'nin değişmiş olması.
+
+348
+00:39:01,871 --> 00:39:24,571
+boşluklar zaten aynı. Biz nereden başladık yola? Buradan başladık. Sonra bu noktaya geldik. Bu noktada ikisi de boşluk. Bu noktada harflerden biri değişmiş. O zaman buradan yola çıkacak olursak 2, 3, 4 olması gerekiyor. Neyin? 2, 3, 4 olması gerekiyor.
+
+349
+00:39:24,571 --> 00:39:32,091
+boşluk, M'ye alalım, boşluk, A, R, T, S'ye olan uzaklık.
+
+350
+00:39:34,171 --> 00:39:35,191
+Okey miyiz?
+
+351
+00:39:35,411 --> 00:39:36,451
+Evet.
+
+352
+00:39:37,291 --> 00:39:39,431
+Yani çaprazdan ilerleyebiliyoruz değil mi?
+
+353
+00:39:39,891 --> 00:39:40,831
+Şu an öyle gözüküyor.
+
+354
+00:39:40,891 --> 00:39:42,431
+Bakalım bu bir kural mıdır, değil mi?
+
+355
+00:39:42,511 --> 00:39:44,251
+Bunu birlikte ortaya koymaya çalışıyoruz.
+
+356
+00:39:44,732 --> 00:39:52,971
+Önemli olan kelimenin alt parçalarındaki uzaklığı bularak kelimelerin ikisinin toplam uzaklığına erişmek zaten.
+
+357
+00:39:52,971 --> 00:39:58,971
+amacımız SAP problemleri çözüp o bilgileri koruyarak en sona ulaşmak.
+
+358
+00:39:59,311 --> 00:40:00,871
+Varacağımız yer de şurası zaten.
+
+359
+00:40:02,471 --> 00:40:08,291
+Evet, o zaman Yuma Söz sendeyken ikinci satırda tamamladık, üçüncü satıra bir yorum yapabilir misin?
+
+360
+00:40:09,331 --> 00:40:11,052
+Dur, önce bir şey sorabilir miyim hocam?
+
+361
+00:40:11,331 --> 00:40:11,571
+Tabii.
+
+362
+00:40:11,571 --> 00:40:21,071
+O zaman mesela şu an birebir ve bire ikiye doldururken boşluk M ve AR'yi mi karşılaştırmış oluyoruz?
+
+363
+00:40:21,071 --> 00:40:23,671
+Birebir derken
+
+364
+00:40:23,671 --> 00:40:25,052
+Matris'in Birebir
+
+365
+00:40:25,052 --> 00:40:26,071
+Yani şurası mı?
+
+366
+00:40:27,291 --> 00:40:30,351
+Okumumuzu görelim. Yok hayır. Oası sıfıra sıfır değil mi?
+
+367
+00:40:31,031 --> 00:40:32,951
+Tamam öyle diyebiliriz. Bu nasıl şu an?
+
+368
+00:40:32,951 --> 00:40:33,571
+Öyle düşün işte.
+
+369
+00:40:34,391 --> 00:40:44,312
+Yok yok artık ben BBG'de anlattığım için hep BBG'de biriyle anlattığımdan o yüzden öyle söyledim. Burası okey. Şurayı söylüyorsun değil mi? Şu.
+
+370
+00:40:45,871 --> 00:40:46,252
+Evet.
+
+371
+00:40:46,411 --> 00:40:48,592
+Birebir. Evet. Şimdi sorunu tekrar alayım.
+
+372
+00:40:48,592 --> 00:40:55,571
+Oradaki bir ve yanındaki ikiyi koyarken aslında boşluk M ile A, R'yi mi kıyaslandırmış oluyoruz?
+
+373
+00:40:57,851 --> 00:40:58,931
+Evet tabii ki.
+
+374
+00:41:00,192 --> 00:41:00,791
+Tamam.
+
+375
+00:41:02,071 --> 00:41:02,552
+Tabii ki.
+
+376
+00:41:03,491 --> 00:41:09,092
+Şimdi alt tarafa geldik ve şu noktadayız. Ne yapacağız?
+
+377
+00:41:11,312 --> 00:41:12,631
+Biri taşıyoruz o zaman.
+
+378
+00:41:14,151 --> 00:41:14,991
+Neden biri taşıyoruz?
+
+379
+00:41:14,991 --> 00:41:17,831
+Evet çünkü çevredeki en küçük
+
+380
+00:41:17,831 --> 00:41:23,452
+Evet şimdi biri taşımadan önce bakmamız gereken bir şey var
+
+381
+00:41:23,452 --> 00:41:30,711
+Yani biri taşıyacağız ya en küçük o hangi biri taşıyoruz o zaman şunu mu taşıyoruz şunu mu
+
+382
+00:41:30,711 --> 00:41:33,791
+Fark etmez diyeceksin değil mi
+
+383
+00:41:33,791 --> 00:41:37,951
+Evet ama fark eder bizim önce bir şeye bakmamız lazım
+
+384
+00:41:37,951 --> 00:41:43,991
+Ne kontrolü yapacağız biraz önce yaptık zaten o kontrolü
+
+385
+00:41:43,991 --> 00:41:47,312
+iki harf örtüşüyor mu bu noktadaki?
+
+386
+00:41:49,171 --> 00:41:50,251
+Örtüşüyor, evet.
+
+387
+00:41:50,452 --> 00:41:53,571
+Örtüşüyor. O zaman bir costumuz yok demektir.
+
+388
+00:41:55,571 --> 00:41:58,371
+Bir costumuz yoksa buraya ne yazacağız?
+
+389
+00:42:00,831 --> 00:42:03,271
+Şimdi sen cevap vereceksin çünkü sen zaten söyledin bunu.
+
+390
+00:42:06,491 --> 00:42:07,531
+Çaprazdakin o zaman.
+
+391
+00:42:07,871 --> 00:42:08,171
+Hayır.
+
+392
+00:42:08,171 --> 00:42:14,031
+biraz önce cost için, değişiklik için bunu kullanıyorduk. Doğru mu?
+
+393
+00:42:17,844 --> 00:42:19,464
+Anlamadım demek istediğimizi.
+
+394
+00:42:19,683 --> 00:42:27,023
+Şimdi şöyle söyleyeyim. Şimdi bizim biraz önce burada ne yaptık? M ile A birbirinden farklıydı, doğru mu?
+
+395
+00:42:28,203 --> 00:42:33,743
+M ile A farklı olduğu zaman köşegendeki sıfır değerin üzerine kostumuzu ekledik.
+
+396
+00:42:35,024 --> 00:42:40,623
+Bu bizim change işleminden kaynaklanan değişikliğimizi içeriyor ve bunu bir yapıyor.
+
+397
+00:42:41,264 --> 00:42:45,863
+Ama buraya geldiğimizde bu A ile bu A aynı. O zaman burada bir copy işlemi var.
+
+398
+00:42:45,863 --> 00:42:49,363
+O zaman yukarıdakini mi taşıyoruz?
+
+399
+00:42:50,323 --> 00:42:52,983
+Yukarıdakini değil en küçük olanı taşıyoruz.
+
+400
+00:42:54,443 --> 00:42:55,763
+Ama çaprazdaki de küçük.
+
+401
+00:42:57,003 --> 00:43:01,344
+Çaprazdaki bizim için şu anda eşitlik olduğu için bir şey ifade etmiyor.
+
+402
+00:43:02,283 --> 00:43:03,103
+Anladım.
+
+403
+00:43:03,683 --> 00:43:08,863
+Eşitlik olduğunda çaprazdakini devre dışı bırakıyoruz. Eşitlik olmadığında...
+
+404
+00:43:09,683 --> 00:43:10,863
+Ya solundakini ya üstündekini.
+
+405
+00:43:11,863 --> 00:43:14,763
+Evet ya solundakini ya üstündekini taşıyacağız. Aynen öyle.
+
+406
+00:43:14,763 --> 00:43:25,963
+Şimdi bu noktadan itibaren buraya değerimizi yazalım şimdi. Burası 1 oldu. Buradan sonraki değerler ne olacak?
+
+407
+00:43:28,103 --> 00:43:29,704
+2 olacak sonunda.
+
+408
+00:43:30,844 --> 00:43:34,383
+2, 3 ve 4 olacak.
+
+409
+00:43:35,403 --> 00:43:35,683
+Evet.
+
+410
+00:43:36,284 --> 00:43:41,204
+Evet şimdi arkadaşlar başka bir arkadaşınıza söz vereyim. Hüma teşekkür ederim.
+
+411
+00:43:41,524 --> 00:43:42,344
+Ben teşekkür ederim.
+
+412
+00:43:42,344 --> 00:43:44,543
+Şimdi T'deyiz
+
+413
+00:43:44,543 --> 00:43:49,204
+Kim yorumlamak ister?
+
+414
+00:44:00,371 --> 00:44:01,371
+Evet, Arturul.
+
+415
+00:44:03,371 --> 00:44:08,131
+Hocam, T ve A arasında iki olacak ilk olarak.
+
+416
+00:44:09,071 --> 00:44:09,712
+Neden dolayı?
+
+417
+00:44:09,911 --> 00:44:14,571
+Genç işlemi yapıyoruz çünkü. Üsttekini alacağız, doğa küçük olduğunda.
+
+418
+00:44:16,151 --> 00:44:18,491
+Üsttekini mi alacağız, üsttekine bir mi ekleyeceğiz?
+
+419
+00:44:18,911 --> 00:44:21,611
+Üsttekine bir ekleyeceğiz, yani direkt kendini ekleyeceğiz.
+
+420
+00:44:21,691 --> 00:44:23,771
+Bir ekledik, aldık. İki. Sonra?
+
+421
+00:44:23,771 --> 00:44:32,471
+T ve R farklı olduğu için yine üsttekine bir ekleyeceğiz. 3 olacak.
+
+422
+00:44:34,552 --> 00:44:35,931
+Burası 3 mü olacak?
+
+423
+00:44:37,131 --> 00:44:37,471
+Evet.
+
+424
+00:44:38,471 --> 00:44:38,811
+Acaba?
+
+425
+00:44:44,724 --> 00:44:49,664
+Serra
+
+426
+00:44:49,664 --> 00:44:57,064
+Hocam, farklılık durumunda çaprazını ekleyerek devam etmiyor muyduk?
+
+427
+00:44:57,724 --> 00:45:02,683
+Farklılık durumunda çaprazını ekleyerek devam etmiyor muyduk? Sorusu geldi arkadaşınızdan.
+
+428
+00:45:08,980 --> 00:45:10,980
+Yorum yapacak olan var mı? Mustafa Akbulut.
+
+429
+00:45:11,899 --> 00:45:12,700
+Farklı olduğuna
+
+430
+00:45:12,700 --> 00:45:14,900
+çaprazına da bakıyoruz benim anladığım kadarıyla.
+
+431
+00:45:15,199 --> 00:45:16,279
+Evet çok güzel. Şimdi
+
+432
+00:45:16,279 --> 00:45:18,719
+hepsini birlikte toplayalım.
+
+433
+00:45:18,799 --> 00:45:20,440
+En son noktayı koydu Mustafa.
+
+434
+00:45:21,699 --> 00:45:22,759
+Eğer eşitlik
+
+435
+00:45:22,759 --> 00:45:23,900
+durumu varsa
+
+436
+00:45:23,900 --> 00:45:26,339
+çaprazdaki değeri taşıyoruz.
+
+437
+00:45:27,199 --> 00:45:28,519
+Eğer farklılık
+
+438
+00:45:28,519 --> 00:45:29,599
+durumu varsa
+
+439
+00:45:29,599 --> 00:45:32,660
+üç tane cost oluşturma ihtimali
+
+440
+00:45:32,660 --> 00:45:34,199
+var. Bir tanesi change,
+
+441
+00:45:34,660 --> 00:45:36,480
+bir tanesi insert, bir tanesi
+
+442
+00:45:36,480 --> 00:45:38,240
+de delete. Biz
+
+443
+00:45:38,240 --> 00:45:40,440
+hangi değeri yeni
+
+444
+00:45:40,440 --> 00:45:42,480
+kutumuza taşıyoruz? Artı
+
+445
+00:45:42,480 --> 00:45:44,419
+biri koyduğumuzda en küçük değeri
+
+446
+00:45:44,419 --> 00:45:46,740
+nerede alıyorsak onu taşıyoruz.
+
+447
+00:45:47,259 --> 00:45:48,419
+Bu noktada bire
+
+448
+00:45:48,419 --> 00:45:50,180
+artı biri eklediğimizde
+
+449
+00:45:50,180 --> 00:45:52,299
+iki değerini elde ettik ve
+
+450
+00:45:52,299 --> 00:45:54,340
+buraya taşıdık. Geldik
+
+451
+00:45:54,340 --> 00:45:56,200
+bir sonraki tura. T ile T eşit.
+
+452
+00:45:56,820 --> 00:45:58,160
+T ile T eşit
+
+453
+00:45:58,160 --> 00:46:00,240
+olduğuna göre şu anda
+
+454
+00:46:00,240 --> 00:46:01,520
+ne değerini yazacağız?
+
+455
+00:46:02,299 --> 00:46:04,099
+Buradaki iki değerini
+
+456
+00:46:04,099 --> 00:46:06,179
+çaprazdan buraya alarak devam
+
+457
+00:46:06,179 --> 00:46:08,379
+edeceğiz. Çünkü herhangi bir derecede
+
+458
+00:46:08,379 --> 00:46:09,779
+bir kostumuz
+
+459
+00:46:09,779 --> 00:46:12,099
+burada oluşmadı. Çünkü T ile T eşit.
+
+460
+00:46:12,519 --> 00:46:13,859
+Son kutuya geldik.
+
+461
+00:46:14,019 --> 00:46:16,259
+T ile S birbirinden
+
+462
+00:46:16,259 --> 00:46:18,480
+farklı. T ile S birbirinden
+
+463
+00:46:18,480 --> 00:46:19,779
+farklı olduğuna göre
+
+464
+00:46:19,779 --> 00:46:22,459
+3 tane noktadan gelme ihtimalimiz
+
+465
+00:46:22,459 --> 00:46:24,139
+var. Ama biz en küçük
+
+466
+00:46:24,139 --> 00:46:26,239
+distance alacağımız için 2'ye 1
+
+467
+00:46:26,239 --> 00:46:28,079
+ekledik ve 3 değerini
+
+468
+00:46:28,079 --> 00:46:29,819
+elde etmiş olduk.
+
+469
+00:46:30,279 --> 00:46:32,139
+Şimdi gelelim bir sonraki
+
+470
+00:46:32,139 --> 00:46:34,159
+tura. Bir sonraki turda H var
+
+471
+00:46:34,159 --> 00:46:35,919
+elimizde. H ile
+
+472
+00:46:35,919 --> 00:46:38,159
+A aynı değil. O zaman en küçük
+
+473
+00:46:38,159 --> 00:46:39,119
+değeri ekledik.
+
+474
+00:46:39,839 --> 00:46:42,119
+H ile R aynı değil. Gene en küçük
+
+475
+00:46:42,119 --> 00:46:43,999
+değeri ekledik. H ile
+
+476
+00:46:43,999 --> 00:46:46,019
+T aynı
+
+477
+00:46:46,019 --> 00:46:48,279
+değil. Yine en küçük değeri ekledik.
+
+478
+00:46:49,759 --> 00:46:50,179
+H ile
+
+479
+00:46:50,179 --> 00:46:52,079
+S aynı değil. Bu
+
+480
+00:46:52,079 --> 00:46:53,439
+sefer 2'ye ekledik.
+
+481
+00:46:54,319 --> 00:46:56,199
+Yine 3 elde etmiş
+
+482
+00:46:56,199 --> 00:46:57,919
+olduk. Son noktadayız.
+
+483
+00:46:57,919 --> 00:46:59,239
+S ile A aynı değil.
+
+484
+00:47:00,399 --> 00:47:01,859
+En küçük değeri ekledik. 4.
+
+485
+00:47:02,539 --> 00:47:04,019
+S ile R aynı değil.
+
+486
+00:47:04,020 --> 00:47:06,119
+en küçük değeri ekledik 4.
+
+487
+00:47:06,980 --> 00:47:08,439
+S ile T aynı değil.
+
+488
+00:47:09,619 --> 00:47:10,340
+En küçük değeri
+
+489
+00:47:10,340 --> 00:47:12,320
+ekledik 4. S ile S
+
+490
+00:47:12,320 --> 00:47:13,740
+aynı. O zaman
+
+491
+00:47:13,740 --> 00:47:16,539
+çaprazdan bu değeri
+
+492
+00:47:16,539 --> 00:47:18,459
+taşımış olduk.
+
+493
+00:47:18,800 --> 00:47:20,239
+Benim minimum distance'ımızı
+
+494
+00:47:20,239 --> 00:47:24,179
+3 olarak
+
+495
+00:47:24,179 --> 00:47:25,179
+hesaplamış olduk.
+
+496
+00:47:28,500 --> 00:47:45,719
+Şimdi, burada dört tane case'imiz var. Bir tanesi copy. Copy olduğunda, sol üst çaprazdan ilgili değeri aşağıya doğru aktarıyoruz. Çünkü herhangi bir değişiklik olmamış demektir. Bir cost yoktur.
+
+497
+00:47:45,719 --> 00:48:14,059
+Copy olmadığı zaman 3 tane seçeneğimiz var. Bir tanesi Change. Change olma durumunda gene çaprazdan değeri üzerine bir ekleyerek aşağıya doğru aktarıyoruz. Insert olduğunda üzerine bir ekleyerek yukarıdan aşağıya aktarıyoruz. Dread olduğunda da gene soldan üzerine bir ekleyerek aktarıyoruz. Bunlardan en küçüğü hangisiyse bir sonraki kutuya onu yazıyoruz. Amacımız çünkü en küçük distance'ı bulmak.
+
+498
+00:48:15,719 --> 00:48:41,959
+Buradan yola çıkarak, şimdi formülüze edersek bu durumu, case 1, case 1'de edit distance matrisimizi yazıyoruz, edit, ij olarak yazalım, bunu formülüze ettiğim için iki tane köşeli parantez açmadım, i-1, x-1, buraya bir cost ekleyecek miyim?
+
+499
+00:48:47,987 --> 00:48:51,567
+Şu an copy yapıyorum. Biraz önce Case 1'e yazmıştık copy'i.
+
+500
+00:48:52,127 --> 00:48:53,247
+Buna mikos tekleyecek miyim?
+
+501
+00:48:57,619 --> 00:48:59,499
+Evet. Çöze.
+
+502
+00:49:06,612 --> 00:49:07,391
+Sesim geliyor mu?
+
+503
+00:49:07,671 --> 00:49:08,251
+Şu an geliyor.
+
+504
+00:49:09,211 --> 00:49:12,671
+Evet. Yani copy'da şey yok.
+
+505
+00:49:12,671 --> 00:49:29,591
+Cost yok. Buraya bir cost eklemeyeceğiz. Hemen sana söz vermişken ikinci change'imizi konuşalım. Bu sefer E'de, I, J'ye nereden erişeceğim? Gene çaprazdan erişeceğim. Doğru mu? Değiştik olduk.
+
+506
+00:49:29,612 --> 00:49:30,431
+Evet, doğru.
+
+507
+00:49:30,952 --> 00:49:34,872
+I-1, J-1. Farkı ne? Artı cost diyeceğim.
+
+508
+00:49:35,952 --> 00:49:36,191
+Evet.
+
+509
+00:49:36,612 --> 00:49:38,871
+kostüm da her seferinde bir olarak gelecek.
+
+510
+00:49:39,931 --> 00:49:40,271
+Doğru.
+
+511
+00:49:40,771 --> 00:49:41,012
+Tamam.
+
+512
+00:49:41,672 --> 00:49:44,112
+Şimdi case 3 arkadaşlar.
+
+513
+00:49:46,591 --> 00:49:47,751
+E de iyice.
+
+514
+00:49:49,591 --> 00:49:50,612
+Bu sefer...
+
+515
+00:49:54,195 --> 00:50:18,855
+kolonum sabit. Bir önceki satırdan, yani yukarıdan geliyorum. Bu bir insert demek. Ve insertte de bir ekleyeceğim. Ki bunu şöyle de gösterebiliriz. Şu recurrence relation'ı bir sonraki sayfada yazalım. Şurayı kullanalım.
+
+516
+00:50:18,855 --> 00:50:30,276
+X, Y, X, Y artı bir diyelim.
+
+517
+00:50:33,015 --> 00:50:34,956
+Bu Y, J'ye denk geliyor.
+
+518
+00:50:36,876 --> 00:50:38,175
+Burada bir boşluk var.
+
+519
+00:50:39,675 --> 00:50:45,255
+Burası da Y, Y artı bir'e denk geliyor demek.
+
+520
+00:50:46,335 --> 00:50:47,635
+Bu şu anlama geliyor.
+
+521
+00:50:47,635 --> 00:50:54,115
+X tarafına bir kelime, bir harf insert edilmiş anlamına geliyor.
+
+522
+00:50:54,775 --> 00:50:57,995
+Bunun için yukarıdaki kısma bakıyoruz.
+
+523
+00:50:59,355 --> 00:51:05,155
+Şimdi son case'imizi yazacağım. Case 4. Onu bir sonraki sayfaya yazayım.
+
+524
+00:51:10,643 --> 00:51:12,743
+Birazdan bu sayfaya tekrar geri döneceğim.
+
+525
+00:51:17,907 --> 00:51:23,187
+Case 4, Edit Distance, EG
+
+526
+00:51:23,187 --> 00:51:28,347
+Buna ne yazmam gerektiğini kim söyler?
+
+527
+00:51:30,347 --> 00:51:32,647
+Case 4, Delayed
+
+528
+00:51:40,500 --> 00:51:44,459
+Biraz öncekiler burada. Evet Sercan.
+
+529
+00:51:47,039 --> 00:51:48,859
+I, Y, J, Eksi, Bir.
+
+530
+00:51:49,300 --> 00:51:51,420
+Evet, I, Y, J, Eksi, Bir. Teşekkür ederim.
+
+531
+00:51:51,859 --> 00:51:52,219
+Rica ederim.
+
+532
+00:51:52,739 --> 00:51:56,979
+Artı cost diyeceğiz. Bunun gösterilmiş halini de şuraya yazalım.
+
+533
+00:51:58,079 --> 00:52:04,340
+Bu sefer X, Y, K'ymış olan Y, J, Eksi, Bir denk geliyor.
+
+534
+00:52:04,840 --> 00:52:06,779
+X, Y'de bir boşluk var.
+
+535
+00:52:06,779 --> 00:52:11,899
+Şunu şöyle yazalım.
+
+536
+00:52:13,759 --> 00:52:14,639
+Y, J
+
+537
+00:52:14,639 --> 00:52:23,459
+Burada da Y, J artı bir ve X, J artı bir bir üzerine oturmuş durumda.
+
+538
+00:52:25,799 --> 00:52:27,019
+Bu da delete.
+
+539
+00:52:27,719 --> 00:52:29,419
+Gelelim rekürans relation'a.
+
+540
+00:52:31,419 --> 00:52:34,159
+Bu keyzlerimizi yazdık. Relation'ı yazmadık.
+
+541
+00:52:34,159 --> 00:52:46,120
+Biraz önce arkadaşınız güzel bir şekilde aslında söylemişti. Bir tane ifimiz var diye. Bir if var.
+
+542
+00:52:49,588 --> 00:53:06,268
+x, y, y, j'ye eşit mi diye bakıyoruz. Eğer eşitse bir case'imiz var, D ise başka case'imiz var. Eşitse ne olacak? Ne yazacağım?
+
+543
+00:53:12,019 --> 00:53:14,179
+X, Y, J'ye eşitse. Şafak?
+
+544
+00:53:16,879 --> 00:53:18,519
+Sıfır yazmayacak mıyız hocam?
+
+545
+00:53:19,559 --> 00:53:20,360
+Şöyle yazsam,
+
+546
+00:53:21,679 --> 00:53:22,360
+böylece
+
+547
+00:53:22,360 --> 00:53:23,400
+daha
+
+548
+00:53:23,400 --> 00:53:26,639
+açık bir formalizasyon yazmış
+
+549
+00:53:26,639 --> 00:53:27,239
+olmaz mıyım?
+
+550
+00:53:29,739 --> 00:53:30,799
+Hatta buraya da
+
+551
+00:53:30,799 --> 00:53:31,360
+şöyle yazayım.
+
+552
+00:53:39,360 --> 00:53:41,860
+...
+
+553
+00:53:35,123 --> 00:53:46,363
+Ben çünkü bir sonraki kutunun değerini çaprazdaki, sol üst köşemdeki kutudan belirliyorum. Eğer x'i y'e j'ye eşitse, eşitlik varsa.
+
+554
+00:53:49,268 --> 00:53:50,167
+Şafak, okey mi?
+
+555
+00:53:51,607 --> 00:53:52,587
+Evet, okey. Evet.
+
+556
+00:53:53,167 --> 00:54:00,787
+Yani burada amacım rekürans relation oluşturmak olduğu için bir sonakinin değerini bir öncekinden taşımam lazım.
+
+557
+00:54:01,367 --> 00:54:06,768
+Burada da E'de E-1, C-1'i alıyorum eğer eşitlik durumu varsa. Aynı biraz önce yaptığımız gibi.
+
+558
+00:54:08,207 --> 00:54:08,487
+Evet.
+
+559
+00:54:09,427 --> 00:54:12,227
+Peki, otherwise olduğunda ne olacak arkadaşlar?
+
+560
+00:54:13,647 --> 00:54:17,147
+Üç tane case 2, case 3, case 4'ümüz var. Ne yazarız?
+
+561
+00:54:19,268 --> 00:54:25,768
+farklı bir kişi olsun muhtemelen Şafak sen anladığın için mevzu benim için okey.
+
+562
+00:54:27,468 --> 00:54:36,067
+3 tane case'imiz var. Geriye kalan 2, 3, 4 farklı bir kişi. Alper Reha.
+
+563
+00:54:39,128 --> 00:54:49,067
+Hocam eğer birbirine eşit değilse o harfler kostu 1 olacak ama yukarısından veya solundan
+
+564
+00:54:49,067 --> 00:54:53,587
+hangisi düşükse ona bir ekleyerek yeni kostumuz o olacak.
+
+565
+00:54:54,348 --> 00:54:57,168
+O zaman şöyle desem uygun olur mu?
+
+566
+00:54:58,587 --> 00:54:59,348
+Minimum.
+
+567
+00:55:01,028 --> 00:55:10,247
+Evet, edinin i-1 ve j ya da i virgül j-1.
+
+568
+00:55:10,808 --> 00:55:15,107
+Aynen, üç seçeneğe de hangisi minimum ise onu alıp kostumuzu ekleyeceğiz.
+
+569
+00:55:15,107 --> 00:55:16,988
+Kostumuz da bir olacak.
+
+570
+00:55:17,768 --> 00:55:18,488
+Eğer aynı değilse.
+
+571
+00:55:19,067 --> 00:55:20,287
+Aynen öyle
+
+572
+00:55:24,947 --> 00:55:54,927
+bir cost. Evet. Gördüğünüz gibi burada biz bir sonraki değeri belirlerken üç tane bakabileceğimiz yer var. Ama ondan önce birbirleriyle örtüşme sağlanıp sağlanmadığına bakıyoruz. Örtüşme sağlanıyorsa yani değerler birbiriyle aynıysa harfler o zaman bir costumuz yoktur. Doğrudan köşe geni aşağıya taşıyoruz. Eğer eşitlik durumu sözleştirmek için
+
+573
+00:55:54,947 --> 00:56:24,147
+konusu değilse o zaman 3 tane seçeneğimiz vardır. Ya delete olmuştur, ya insert olmuştur ya da bir change işlemi gerçekleşmiştir. Bunların hepsi de olmuş olabilir ama biz bunlardan yolumuza minimum olanla devam edeceğiz. Çünkü biz minimum distance hesaplamak istiyoruz. Optimal çözüme ulaşmak için suboptimal çözümleri bulmamız lazım. O yüzden o ana kadar olan harflerde en az değişiklik hangi noktada yakalanmışsa onunla yolumuza devam ediyoruz.
+
+574
+00:56:24,147 --> 00:56:31,207
+minimum olanı alıyoruz ve alttaki köşegen sağ altta yer alan köşegene bunu yazıyoruz.
+
+575
+00:56:31,207 --> 00:56:44,647
+Evet şimdi rekürans relation'ı da oluşturduk. Şurada matrisi ilklendirme noktasında da initialize kısmını da yazalım.
+
+576
+00:56:44,647 --> 00:57:03,547
+bu noktada ED, İ0'a, ED0J'ye de J değerlerini yazıyoruz. Bu da D-Light'li temsil ediyor.
+
+577
+00:57:03,547 --> 00:57:10,547
+Şu görmüş olduğunuz sütun ve satırı ilk başta zaten ilklendiriyoruz.
+
+578
+00:57:10,547 --> 00:57:26,607
+ilklendiriyoruz. Çünkü burada M'ye olan uzaklıkları hesaplıyoruz. Ve daha doğrusu boşlukta olan uzaklıkları hesaplıyoruz. Bir sonraki turda da boşluk ve M'ye olan uzaklıkları hesaplıyoruz. Bu şekilde ilerleyerek devam etmiş oluyoruz.
+
+579
+00:57:26,947 --> 00:57:40,447
+Biraz sonra küçük bir örnek daha göstereceğim bununla ilgili. Daha rahat oturmasın için. Biraz örnek uzun sürdü. O yüzden 40 dakika, 45 dakika sonra ara veremedim. Şimdi bir ara verebiliriz. Bir 10 dakika sonra kaldığımız
+
+580
+00:57:40,447 --> 00:57:41,067
+Zeradavide.
+
+581
+01:09:08,180 --> 01:09:12,180
+Hocam şu an sesiniz gelmiyor ama farkında mısınız bilemedim.
+
+582
+01:09:16,083 --> 01:09:27,703
+Arkadaşlar, evet, sesim de bir problem olmuş sanırım. Açmış olmama rağmen tekrar sistem kapatmış. Şu anda tekrar teşekkür ederim sağır can bilgilendirme için.
+
+583
+01:09:29,523 --> 01:09:38,143
+Burada bir örnek üzerinden daha ilerleyelim demiştim. Böylece daha rahat pek işsin diye. Honda ve Hyundai kelimelerinin edit distance'larını hesaplamak istiyoruz.
+
+584
+01:09:38,143 --> 01:09:53,823
+İki kelimeyi matlısa yerleştiriyoruz. İlk kısımlar boşluk bu noktalar. Burada her bir harf için ilgili satırlarımızı oluşturalım. Aynı zamanda sütunlarımızı da oluşturalım.
+
+585
+01:09:59,475 --> 01:10:28,896
+Evet, şimdi ilk etapta baktığınız initialize işlemini yapacağız. İlk satırı initialize ediyoruz. Sonra üstünü initialize edeceğiz. Buraya kadar zaten herhangi bir sıkıntı yok. Bir sonraki noktaya geçeceğiz. H elimizde var. Yine H var. Kaç olacak burası? Sıfır olacak. Çünkü herhangi bir değişiklik işlemi yok. Copy işlemi var.
+
+586
+01:10:28,896 --> 01:10:32,735
+buradan buraya doğrudan değeri transfer etmiş olduk aşağıya doğru.
+
+587
+01:10:33,595 --> 01:10:34,516
+Devam ediyorum.
+
+588
+01:10:35,955 --> 01:10:38,336
+Burada bir yandaki değere geçiyorum.
+
+589
+01:10:38,955 --> 01:10:40,035
+Y değerine bakıyorum.
+
+590
+01:10:40,535 --> 01:10:46,376
+Burası değiştiği için, bundan sonrası değişik olduğu için 2, 3, 4, 5, 6 şeklinde yazdım.
+
+591
+01:10:46,376 --> 01:10:48,455
+Şimdi buraya geldim.
+
+592
+01:10:48,855 --> 01:10:49,516
+Bu noktadayım.
+
+593
+01:10:50,675 --> 01:10:58,095
+Artık elimde bu sefer H ve O değerleri var.
+
+594
+01:10:58,895 --> 01:11:08,375
+Burada da ne değeri var karşılıklı olarak? H değeri var. Şimdi buranın değerinin ne olması gerekiyor ben size sorayım.
+
+595
+01:11:18,676 --> 01:11:20,115
+Evet. Mustafa?
+
+596
+01:11:21,176 --> 01:11:22,715
+Bir olması gerekiyor sanırım hocam.
+
+597
+01:11:22,775 --> 01:11:24,676
+Peki. Bir olması gerekiyor. Bu
+
+598
+01:11:24,676 --> 01:11:27,096
+formüle göre söyledik ama şuradaki
+
+599
+01:11:27,096 --> 01:11:29,395
+parçaya bakacak olursak bunu yorumlarsan
+
+600
+01:11:29,395 --> 01:11:30,655
+ne yorumlamamız gerekiyor?
+
+601
+01:11:31,315 --> 01:11:32,596
+Hangi işlem gerçekleşmiş?
+
+602
+01:11:38,655 --> 01:11:40,955
+Şunlar aynı. Bunlar aynı.
+
+603
+01:11:42,715 --> 01:11:43,395
+Bu noktada
+
+604
+01:11:43,395 --> 01:11:45,335
+bir... Delete olmuş.
+
+605
+01:11:46,075 --> 01:11:47,415
+Insert ya da delete işlemi
+
+606
+01:11:47,415 --> 01:11:49,395
+gerçekleşmiş. Hani kelimeyi hangi tarafa
+
+607
+01:11:49,395 --> 01:11:51,615
+yazdığınızda bağlı olarak değişiyor ama önemli olan
+
+608
+01:11:51,615 --> 01:11:53,415
+şu kısmı
+
+609
+01:11:53,935 --> 01:11:55,235
+ve
+
+610
+01:11:55,235 --> 01:11:57,335
+şu kısmı burada
+
+611
+01:11:57,335 --> 01:11:59,475
+ele aldığımız noktası. Buna dikkat
+
+612
+01:11:59,475 --> 01:12:01,676
+çekmek istiyorum. Devam edelim.
+
+613
+01:12:01,775 --> 01:12:03,775
+Bundan sonrasına ne olacak?
+
+614
+01:12:04,955 --> 01:12:05,516
+2-1'den
+
+615
+01:12:05,516 --> 01:12:07,335
+sonrasına. Buraya geldik. Burada ne olacak?
+
+616
+01:12:08,536 --> 01:12:09,356
+O ve Y var.
+
+617
+01:12:09,795 --> 01:12:11,055
+Honda'nın O'su.
+
+618
+01:12:12,155 --> 01:12:12,896
+Burada da Y var.
+
+619
+01:12:13,995 --> 01:12:15,495
+Bir de değiştik. O bir olacak.
+
+620
+01:12:16,695 --> 01:12:17,335
+Bundan sonra
+
+621
+01:12:17,335 --> 01:12:20,896
+2, 3, 4, 5, 6 diye
+
+622
+01:12:20,896 --> 01:12:22,376
+devam ediyoruz.
+
+623
+01:12:23,756 --> 01:12:24,595
+Buraya geldik.
+
+624
+01:12:25,095 --> 01:12:25,976
+N'deyiz artık.
+
+625
+01:12:26,455 --> 01:12:28,815
+N noktasında burası 2 olacak.
+
+626
+01:12:30,495 --> 01:12:31,275
+Y'ye geldim.
+
+627
+01:12:31,676 --> 01:12:32,815
+Burası 2 olacak.
+
+628
+01:12:34,275 --> 01:12:35,036
+Buraya geldim.
+
+629
+01:12:36,536 --> 01:12:37,795
+U ve N'nin olduğu yer.
+
+630
+01:12:38,195 --> 01:12:39,116
+Burası da 2 olacak.
+
+631
+01:12:40,515 --> 01:12:41,495
+N ve N aynı.
+
+632
+01:12:42,336 --> 01:12:43,775
+Aynı olduğuna göre burası kaç olacak?
+
+633
+01:12:45,775 --> 01:12:47,256
+Köşegenden taşıdım.
+
+634
+01:12:47,335 --> 01:12:47,975
+2 olacak.
+
+635
+01:12:49,175 --> 01:12:50,695
+Bu noktaya geldim. D'deyim.
+
+636
+01:12:51,975 --> 01:12:53,115
+D kaç olacak?
+
+637
+01:12:54,175 --> 01:12:55,255
+N ile aynı olmadığı için
+
+638
+01:12:55,255 --> 01:12:55,835
+3 olacak.
+
+639
+01:12:57,095 --> 01:12:57,935
+A'ya geldim.
+
+640
+01:12:59,215 --> 01:12:59,995
+4 olacak.
+
+641
+01:13:00,676 --> 01:13:02,155
+B'ye geldim. 5 olacak.
+
+642
+01:13:03,255 --> 01:13:05,195
+Şimdi D'deyim. Honda'nın D'sindeyim.
+
+643
+01:13:05,355 --> 01:13:07,195
+H ile aynı mı? Değil. O zaman
+
+644
+01:13:07,195 --> 01:13:08,395
+3 oldu.
+
+645
+01:13:09,755 --> 01:13:10,835
+Y ile aynı mı? Değil.
+
+646
+01:13:10,835 --> 01:13:12,595
+3 oldu. U ile aynı mı? Değil.
+
+647
+01:13:12,695 --> 01:13:14,955
+3 oldu. N ile aynı mı? Değil.
+
+648
+01:13:15,115 --> 01:13:16,555
+3 oldu. D ile aynı.
+
+649
+01:13:17,335 --> 01:13:22,015
+O zaman D ile aynı olduğuna göre köşe gene taşıdım.
+
+650
+01:13:22,855 --> 01:13:24,075
+D ile de 2 oldu.
+
+651
+01:13:24,855 --> 01:13:26,935
+Burası 3 olacak, burası da 4 olacak.
+
+652
+01:13:27,595 --> 01:13:28,735
+Son kısımdayım.
+
+653
+01:13:29,055 --> 01:13:34,015
+A yani Honda ne ile karşılaşıyor?
+
+654
+01:13:34,655 --> 01:13:35,676
+H ile karşılaşıyor.
+
+655
+01:13:36,235 --> 01:13:36,855
+Fark nedir?
+
+656
+01:13:37,415 --> 01:13:37,915
+4'tür.
+
+657
+01:13:38,575 --> 01:13:40,195
+Sonra Honda ne ile karşılaşıyor?
+
+658
+01:13:41,355 --> 01:13:42,735
+H, Y ile karşılaşıyor.
+
+659
+01:13:42,735 --> 01:13:43,455
+Fark nedir?
+
+660
+01:13:44,836 --> 01:13:45,855
+Yine 4'tür.
+
+661
+01:13:45,855 --> 01:13:47,676
+sonra Honda
+
+662
+01:13:47,676 --> 01:13:49,915
+HYU ile karşılaşıyor fark nedir?
+
+663
+01:13:50,555 --> 01:13:51,235
+yine 4'tür
+
+664
+01:13:51,235 --> 01:13:54,215
+sonra HYUN
+
+665
+01:13:54,215 --> 01:13:55,895
+ile karşılaşıyor fark nedir?
+
+666
+01:13:56,435 --> 01:13:57,176
+yine 4'tür
+
+667
+01:13:57,176 --> 01:13:58,595
+buraya geldik
+
+668
+01:13:58,595 --> 01:14:01,075
+burada fark 3 oldu
+
+669
+01:14:01,075 --> 01:14:04,015
+bu sefer
+
+670
+01:14:04,015 --> 01:14:05,775
+karşılaştırdığımız kelimeler bunlar
+
+671
+01:14:05,775 --> 01:14:07,835
+neden fark 3 oldu?
+
+672
+01:14:07,835 --> 01:14:09,695
+burada bir taneden
+
+673
+01:14:09,695 --> 01:14:11,775
+fazla bir insert işlemi
+
+674
+01:14:11,775 --> 01:14:13,676
+gerçekleşti şimdi şunu kaldırırsak
+
+675
+01:14:13,676 --> 01:14:15,235
+buraya D'yi getirirsek
+
+676
+01:14:15,235 --> 01:14:17,176
+aradaki farkın 3 olduğunu
+
+677
+01:14:17,176 --> 01:14:19,435
+görüyor olacağız. Sonra bu noktaya
+
+678
+01:14:19,435 --> 01:14:21,295
+geldik. A ile A'lar
+
+679
+01:14:21,295 --> 01:14:23,476
+birbirleriyle eşleşti. Bir A daha geldi.
+
+680
+01:14:24,075 --> 01:14:25,295
+Bu A bununla eşleşti.
+
+681
+01:14:25,375 --> 01:14:27,495
+Bu D bununla eşleşti. O zaman
+
+682
+01:14:27,495 --> 01:14:29,696
+buradaki fark 2 oldu.
+
+683
+01:14:30,396 --> 01:14:31,455
+En son noktada
+
+684
+01:14:31,455 --> 01:14:33,215
+I eklendiği için
+
+685
+01:14:33,215 --> 01:14:35,476
+I da A ile eşit olmadığı için
+
+686
+01:14:35,476 --> 01:14:37,495
+en küçüğüne 1 ekledik
+
+687
+01:14:37,495 --> 01:14:38,176
+ve
+
+688
+01:14:38,176 --> 01:14:41,375
+Honda kelimesiyle
+
+689
+01:14:41,375 --> 01:14:44,915
+Hyundai
+
+690
+01:14:44,915 --> 01:14:47,735
+kelimesi arasında
+
+691
+01:14:47,735 --> 01:14:49,255
+distance'ın
+
+692
+01:14:49,255 --> 01:14:51,735
+3 olduğunu
+
+693
+01:14:51,735 --> 01:14:53,015
+bulmuş olduk.
+
+694
+01:14:54,815 --> 01:14:55,855
+Bir
+
+695
+01:14:55,855 --> 01:14:57,715
+tabii şu anda
+
+696
+01:14:57,715 --> 01:14:59,735
+distance'ı hesapladık ama
+
+697
+01:14:59,735 --> 01:15:01,315
+bu distance'ı hesaplarken
+
+698
+01:15:01,315 --> 01:15:04,775
+bu distance'ın nasıl hesaplanmış olabileceğini de
+
+699
+01:15:04,775 --> 01:15:05,735
+ekranda
+
+700
+01:15:05,735 --> 01:15:07,395
+göstereyim sizlere.
+
+701
+01:15:13,363 --> 01:15:15,564
+Bu seçeneklerden bir tanesi.
+
+702
+01:15:22,036 --> 01:15:23,235
+Bir de şöyle yapalım.
+
+703
+01:15:24,375 --> 01:15:37,835
+E, O, N, D, A. Bu şekilde olsun. İki tane farklı case'imiz var. Birinde şöyle değerlendirebilirsiniz.
+
+704
+01:15:39,835 --> 01:15:51,855
+Şu noktada bir değişiklik olmuş. Bir de iki tane daha farklı nokta var. Bir şurası.
+
+705
+01:15:52,036 --> 01:15:56,596
+bir de burası. Bunlar için ne söyleyebiliriz?
+
+706
+01:16:07,283 --> 01:16:09,283
+Burada bir delete olmuş.
+
+707
+01:16:11,283 --> 01:16:13,283
+Burada da bir insert olmuş.
+
+708
+01:16:14,283 --> 01:16:16,283
+Keza buraya baktığınız zaman
+
+709
+01:16:18,283 --> 01:16:21,283
+Burada da bir delete işleminden bahsediyoruz.
+
+710
+01:16:22,283 --> 01:16:25,283
+Burada da bir, pardon, bunu kaydıralım.
+
+711
+01:16:27,283 --> 01:16:30,283
+Burada da bir insert işleminden bahsediyoruz.
+
+712
+01:16:30,283 --> 01:16:57,983
+ediyoruz. Bir de tabii ki şurada bir değişiklik olduğunu görebiliyoruz. Şimdi bu matrisi gene hesaplarken optimal değeri elde ettik ama neyi yapmadık? Ertuğrul'a vereceğim söz. Hemen bir sorumu sorayım ondan sonra sana söz vereceğim. Neyi yapmadık arkadaşlar burada matriste? Şu anda optimal değeri bulduk ama nerede bir eksiklik var?
+
+713
+01:17:01,492 --> 01:17:02,091
+Tolga?
+
+714
+01:17:03,191 --> 01:17:08,171
+Nerelerde fark olduğunu hiçbir yerde bakmadık. Sadece kaç tane fark olduğunu bulduk.
+
+715
+01:17:08,291 --> 01:17:10,151
+Evet, kaç tane fark? Nasıl yapabiliriz peki Tolga?
+
+716
+01:17:13,191 --> 01:17:21,451
+Bu matrisi kullanarak tekrar hangi yoldan geldiğimizi bulmak istesek ve nerelerde farklılık olduğunu tespit etmek istesek.
+
+717
+01:17:24,431 --> 01:17:26,271
+Şu an çok yemin değilim hocam.
+
+718
+01:17:26,851 --> 01:17:28,672
+Peki, başka bir arkadaşım söz vereyim.
+
+719
+01:17:31,492 --> 01:17:39,032
+Bu sonuca ulaştığımız yerden geriye doğru gidersek nerede farklılık oldu?
+
+720
+01:17:39,631 --> 01:17:42,072
+Gitmeye çalışalım. Mesela bu noktadayız.
+
+721
+01:17:43,951 --> 01:17:50,631
+Yani 3'ten başlayalım mesela. Yani en son A'nın ve de Honda'nın A'sı ve de Hyundai'nin İ'sinden olan 3'te. 3-3 değeri.
+
+722
+01:17:50,631 --> 01:17:51,291
+Evet.
+
+723
+01:17:51,871 --> 01:17:58,631
+Buna en yakın, en küçük hangisi? 2. O zaman biz 3'e 2'den gelmişiz diyebiliriz.
+
+724
+01:17:59,111 --> 01:17:59,352
+Tamam.
+
+725
+01:17:59,352 --> 01:18:17,752
+A ve A aynı. Buna o zaman ikiden gelmiş diyebilir miyiz? Diyemeyiz. Çünkü Honda'nın A'sıyla Hyundai'nin A'sı çakışıyor. O zaman yukarıdaki üçten veya soldaki üçten gelmiştir diyebiliriz. Burada biraz sıkıntı oluyor ama.
+
+726
+01:18:18,532 --> 01:18:21,652
+Evet. Şimdi Ertuğrul peki söz istiyor.
+
+727
+01:18:23,032 --> 01:18:28,352
+Hocam ben az önce sorum da oydu zaten. Hani bunu yapabilir miyiz diye soracaktım da.
+
+728
+01:18:29,352 --> 01:18:53,871
+şey yapabiliriz burada ağları kontrol etmek yerine önceki sayılara bakabiliriz. Hani iki ile iki daha önce değişmemiş. Çaprazdaki iki ile o iki aynı olduğu için orada bir değişiklik yok. Yine önceki çaprazıyla kontrol ederek o harfi kullanmadığımızı yani orada bir herhangi bir işlem, change işlemi veya insert dilation yapmadığımızı anlayabiliriz.
+
+729
+01:18:53,871 --> 01:18:59,311
+D'lerde de yine aynısını anlayabiliyoruz. N'lerde de aynısını anlayabiliyoruz çapraz giterek.
+
+730
+01:18:59,771 --> 01:19:00,191
+Evet hocam.
+
+731
+01:19:00,211 --> 01:19:06,811
+Bu soracağım. Aslında sonda 3 değeri var. 3 çaprazdaki 3 ile aynı mı diye baktığımızda orada da 3 ile aynı.
+
+732
+01:19:08,051 --> 01:19:18,311
+Ama yandaki 3'e de bakmamız lazım. Yandaki 2'den daha büyük olduğu için 3. Bu sefer onun olmuyor. Yani 3 ile de kontrol etmemiz lazım her durumda.
+
+733
+01:19:18,311 --> 01:19:29,891
+Tamam, peki 3 ile kontrol ettiğimizde neye göre ilerleyeceğiz? Ben senin tam algoritmanı anlayamadım. Bir kez daha tekrar eder misin? Diyelim en sondaki 3 ile başladık. Geriye doğru gidiyoruz.
+
+734
+01:19:30,851 --> 01:19:40,351
+Evet hocam 3 ile başladık. 3 değere de baktık. Eğer herhangi biri daha küçükse bunu almışız demektir.
+
+735
+01:19:40,351 --> 01:19:42,531
+Tamam, şimdi işlem yapmışız demektir.
+
+736
+01:19:42,851 --> 01:19:45,251
+Evet, peki buradan geldik diyelim yol olarak.
+
+737
+01:19:48,311 --> 01:20:01,451
+Oradan geldikten sonra ikiye baktığımızda üç köşesindeki değer de kendisinden küçük değil. O zaman A harfine bir işlem yapmamışız demektir.
+
+738
+01:20:01,451 --> 01:20:03,531
+O zaman oradan gelmişiz demektir.
+
+739
+01:20:03,631 --> 01:20:06,191
+Değer var mı? Var. O zaman oraya atlayacağız.
+
+740
+01:20:06,571 --> 01:20:06,871
+Peki.
+
+741
+01:20:08,511 --> 01:20:13,251
+D'lerde de yine aynı şekilde bir durum var. Yine bir çapraz atlayacağız.
+
+742
+01:20:13,591 --> 01:20:14,831
+Peki. Böyle geldik.
+
+743
+01:20:14,831 --> 01:20:20,771
+Yine oradan da baktığımızda çapraza atlamamız daha mantıklı gibi ama
+
+744
+01:20:20,771 --> 01:20:27,212
+Şimdi o zaman buraya geldiğimizde ya buradan gelmişizdir ya da buradan gelmişizdir
+
+745
+01:20:27,212 --> 01:20:35,771
+Yani burada gördüğünüz gibi ben şu seçenekleri verme sebebim buradaki
+
+746
+01:20:35,771 --> 01:20:39,411
+Farklı yolların olabileceğini göstermekte
+
+747
+01:20:39,411 --> 01:20:51,432
+Yani biraz önceki math ve art seçeneğinde de birbirine aynı uzaklıkta farklı kezler yaratabiliyordunuz. Burada da aynı şey geçerli.
+
+748
+01:20:52,115 --> 01:21:02,456
+O yüzden burada nereye boşluk geldiği, hangi harfin silindiği ya da hangi noktaya insert yapıldığı noktası birbiriyle aynı sonucu çıkartabilir.
+
+749
+01:21:02,996 --> 01:21:14,376
+Bu noktaya geldiğinizde, şuraya geldiğinizde ikinin üzerine siz bu solundan ya da çaprazından gelmiş olabilirsiniz. Doğru mudur?
+
+750
+01:21:14,376 --> 01:21:20,036
+Evet. Orada iki farklı durum var. Sonrasında zaten iki durum birle kesişiyor.
+
+751
+01:21:20,036 --> 01:21:35,656
+Evet, buraya geliyor. Şu noktayı onu da çizelim. Buradan geldiğimizde varsa. Oradan üstteki birer de. Şimdi buraya geldiğimizde de şuraya gitmiş oluyoruz. Evet, yani genel olarak öyle.
+
+752
+01:21:35,656 --> 01:21:47,836
+H'ler çakıştı. H'ler çakıştı. Sonra aşağı doğru indiğimizde bir tarafta Y var, bir tarafta O var. Doğru mu? Evet.
+
+753
+01:21:47,835 --> 01:21:56,836
+Tamam sonra ilerlediğimizde hangi tarafa insert işlemi yapmış olduk? Mesela şöyle yazsak
+
+754
+01:21:56,836 --> 01:21:59,715
+Hangi yoldan gittiğimize göre çok değişiyor arası?
+
+755
+01:21:59,715 --> 01:22:13,815
+E tabii ki aynen öyle ama U tarafından gittiğimizi varsayarsak N'ler eşit aşağıya doğru devam ettik. Bir aşağıya doğru indiğimizde D'ler gene eşit. Bir aşağıya doğru indiğimizde A'lar gene eşit.
+
+756
+01:22:13,815 --> 01:22:39,455
+Son noktaya geldik. Bir tane insertümüz var. Bu şekilde bir yolu belirlemiş olduk. Ya da biraz önce gösterdiğimiz gibi ikinci yoldan gidecek olursak da şuradaki örnek gibi ilerlemiş olacaktık. O zaman geriye doğru giderken kendisinden küçük olan değeri aldık. Kendisinden küçük olan değere doğru ilerledik.
+
+757
+01:22:39,455 --> 01:22:44,115
+eğer kendisinden küçük değer yoksa o zaman ne yapmış olduk?
+
+758
+01:22:45,435 --> 01:22:50,195
+Ya çapraza gittik ya da kendisine eşit olan değeri tercih etmiş olduk.
+
+759
+01:22:50,195 --> 01:22:54,735
+Bu noktada ikiden yukarı doğru kendisine eşit olan değere çıktık.
+
+760
+01:22:54,815 --> 01:22:56,375
+Sonra tekrar eşit olan değere çıktık.
+
+761
+01:22:56,755 --> 01:23:04,476
+Kendisine iki tane eşit olan değer varsa o zaman iki farklı noktadan gelmiş olma olasılığı var.
+
+762
+01:23:04,476 --> 01:23:27,255
+bunun içinde iki tane farklı case olduğunu tespit etmiş oluyoruz. Böylece kaç tane farklı case olabileceğini de hesaplama şansımız var. Bu da önemli. Yani iki kelimenin birbirlerine eşit uzaklıkta, en az uzaklıkta olabilmelerini hesaplamak için farklı case'leri değerlendirme şansımız var.
+
+763
+01:23:27,255 --> 01:23:43,136
+Evet şimdi bu Edit Distance'ların işte algoritmasını dinamik programlama mantığıyla Edit Distance'ı hesapladık. Buraya kadar sorusu olan var mı? Ertuğrul biraz önce sen sormak istemiştin ama bunun dışında bir şey soracak mısın?
+
+764
+01:23:43,675 --> 01:23:46,155
+Hocam ben bunu yapabilir miyiz diye soracaktım sadece.
+
+765
+01:23:46,155 --> 01:23:50,235
+Tamam peki. Başka sorusu olan var mı?
+
+766
+01:23:58,484 --> 01:24:00,984
+Peki, o zaman devam ediyoruz.
+
+767
+01:24:18,420 --> 01:24:25,179
+Longest Common Subsequence problemi. Bu problemden ne anlıyorsunuz diye sorayım.
+
+768
+01:24:30,452 --> 01:24:31,072
+Şafak.
+
+769
+01:24:32,591 --> 01:24:37,771
+Hocam ben aslında az önce sorunuz var mı kaldırmıştım da sorabilir miyiz?
+
+770
+01:24:37,771 --> 01:24:42,351
+Şaşırmadım zaten. İstatistikler mutlaka bir dakika sonra soru geleceğini gösteriyor.
+
+771
+01:24:42,711 --> 01:24:43,811
+Evet, tabii ki Şafak sorabilir.
+
+772
+01:24:43,832 --> 01:24:50,831
+Şey soracaktım, bu minimum edit distance'ın en başında şey hani spell correction ile alakalı konuşmuştuk.
+
+773
+01:24:51,191 --> 01:24:51,391
+Evet.
+
+774
+01:24:51,571 --> 01:24:55,431
+Tüm hani vokabludur'daki tüm kelimelere bakacak mıyım diye.
+
+775
+01:24:56,011 --> 01:24:57,531
+Evet, bunu hatırlatmak istiyorsun.
+
+776
+01:24:57,531 --> 01:24:58,051
+Evet.
+
+777
+01:24:58,051 --> 01:25:19,132
+Şimdi şöyle buna cevap vereceğim ama bugün Longest Come Subsequence'ı da bitirmemiz lazım. Saat 3'te de devam edemeyeceğiz ya. Bunu bitiremezsek bile önümüzdeki hafta en kötü ihtimalle sana buna cevabını vereceğim. Hatırlattığın için çok teşekkür ederim. Evet o önemli bir noktaydı. Onu konuşmamız gerekecek. Ama şu Longest Come Subsequence'ı en azından bir başlamış olalım.
+
+778
+01:25:19,132 --> 01:25:36,371
+Long and Subsequence genellikle iki farklı pattern'ın birbiri içerisinde olma durumlarını bulmak için kullandığımız bir yaklaşım.
+
+779
+01:25:36,371 --> 01:25:44,852
+Daha çok özellikle bioinformatikte iki DNA diziliminin birbirlerine benzerliğini hesaplamak için kullanılıyor.
+
+780
+01:25:44,852 --> 01:26:11,212
+örnek vermek gerekirse hatta direkt olarak şu örnekle başlayalım çok uzun olmasın biliyorsunuz A, C, G, T dizilimlerde kullanılıyor ve bu dizilimlere mesela örnek vermek gerekirse A, T, C, T, G, A, T olsun burada da
+
+781
+01:26:11,211 --> 01:26:30,071
+tgcata olsun. Bizim bulmak istediğimiz longest common subseconds of x and y
+
+782
+01:26:33,844 --> 01:26:42,604
+L, C, S, X, Y desem ne söylersiniz? Gözle baktığınızda.
+
+783
+01:26:58,547 --> 01:26:59,288
+Evet Efe.
+
+784
+01:27:00,288 --> 01:27:01,268
+Üç değil mi hocam?
+
+785
+01:27:03,147 --> 01:27:04,287
+Nedir üç olan?
+
+786
+01:27:06,307 --> 01:27:07,327
+Yani örnek yani.
+
+787
+01:27:07,508 --> 01:27:10,747
+Pardon beşmiş, yanlış saymışım. Biraz kaymış da.
+
+788
+01:27:11,767 --> 01:27:12,527
+Beş midir?
+
+789
+01:27:13,847 --> 01:27:16,308
+A ile T farklı, T ile G farklı.
+
+790
+01:27:16,308 --> 01:27:27,308
+Ama şeye bakmıyoruz burada. Birebir iki stringin match etme durumuyla ilgilenmiyoruz. En uzun patern bulmaya çalışıyoruz. Atlamalı bir şekilde.
+
+791
+01:27:28,547 --> 01:27:35,367
+T, C, T, A
+
+792
+01:27:35,367 --> 01:27:37,228
+Hemen gösterelim
+
+793
+01:27:37,228 --> 01:27:45,908
+T, C, T, A
+
+794
+01:27:45,908 --> 01:27:48,207
+Tamam böyle anladım hocam
+
+795
+01:27:48,207 --> 01:27:50,628
+Biraz önceki programlar da farklı
+
+796
+01:27:50,628 --> 01:27:53,507
+Bu noktada araya değerler girmiş olabilir
+
+797
+01:27:53,507 --> 01:27:57,367
+Uzunca bir DNA dizilimi düşünün
+
+798
+01:27:57,367 --> 01:28:15,488
+bunlar bu ne diyelim subsequence'i bozan değerler olarak gözükse de burada TCTA'nın arka arkaya geldiğini araya başka değerler girse de ikisinin içerisinde de en uzun benzerliğin bu olduğunu görüyorsunuz.
+
+799
+01:28:15,948 --> 01:28:18,007
+Sadece bu mudur? Başka bir şey var mıdır?
+
+800
+01:28:23,859 --> 01:28:24,919
+Tekrar yazalım.
+
+801
+01:28:33,684 --> 01:28:36,184
+Evet, cazaya söz vereyim.
+
+802
+01:28:37,583 --> 01:28:38,923
+Sesim geliyor mu hocam?
+
+803
+01:28:38,943 --> 01:28:39,423
+Geliyor.
+
+804
+01:28:39,983 --> 01:28:40,223
+Evet.
+
+805
+01:28:41,984 --> 01:28:46,024
+C-A-C-T-A-T
+
+806
+01:28:46,024 --> 01:28:47,323
+Bir dakika.
+
+807
+01:28:49,564 --> 01:28:52,763
+Bir dakika. Karıştırdım, geldim.
+
+808
+01:28:53,123 --> 01:28:54,543
+Evet, bir ufak kaçak oldu.
+
+809
+01:28:54,823 --> 01:28:55,623
+C-A-T
+
+810
+01:28:55,623 --> 01:28:58,043
+C-A-T ama 3 oluyor.
+
+811
+01:28:59,843 --> 01:29:02,663
+Zaten 4'ü bulduk. En az 4 olması lazım.
+
+812
+01:29:02,663 --> 01:29:06,663
+ya da daha büyük varsa daha büyüğün peşindeyiz. Peki, Ferhat'a söz vereyim.
+
+813
+01:29:08,443 --> 01:29:10,404
+Hocam, T, G, A, T oluyor.
+
+814
+01:29:11,243 --> 01:29:13,783
+T, G, A, T. Bakalım oluyor mu?
+
+815
+01:29:15,404 --> 01:29:23,163
+Burada T, G, A, T.
+
+816
+01:29:23,643 --> 01:29:28,544
+Evet, bu seçenek de Longest Camus Subsequences için ikinci bir seçenek.
+
+817
+01:29:28,544 --> 01:29:42,584
+biraz önceki problemde de birden fazla seçenek olabilir diye konuşmuştuk. Bir bakalım başka nasıl bir örnek üzerinde ilerleyebiliriz diye.
+
+818
+01:29:42,584 --> 01:29:54,364
+Mesela kozolak diyelim. K-A-L bunun içerisinden çıkabilecek bir seçenek. K-O-L bunun içerisinden çıkabilecek bir seçenek.
+
+819
+01:29:54,364 --> 01:30:04,724
+Kola yazdığınızda gene 1, 2, 3, 4'ü elde edebiliyorsunuz.
+
+820
+01:30:04,724 --> 01:30:15,803
+Kalk yazdığınızda da yine burada K, A, L, K'yi elde edebiliyorsunuz.
+
+821
+01:30:15,803 --> 01:30:25,543
+Bunlar başka pattern'lar arıyor olsaydık bu kelimeyle uyuşan subsequence'lar olacaktı.
+
+822
+01:30:25,543 --> 01:30:32,423
+Ama mesela AZ olsaydı AZ bir subsequence değil çünkü AZ'den önce gelmiyor.
+
+823
+01:30:32,883 --> 01:30:36,703
+AZ'den sonra geliyor bunu bir subsequence olarak almıyoruz.
+
+824
+01:30:37,483 --> 01:30:39,343
+Şimdi Ferhat bir soru mu var?
+
+825
+01:30:44,212 --> 01:30:46,051
+Elin şu anda kalkmış gözüküyor.
+
+826
+01:30:48,632 --> 01:30:50,431
+Yok hocam, öyle kalmış.
+
+827
+01:30:51,172 --> 01:30:52,172
+Teşekkürler.
+
+828
+01:30:53,491 --> 01:30:55,071
+Bu doğrultuda X2,
+
+829
+01:30:57,291 --> 01:30:58,331
+Xm'e kadar
+
+830
+01:30:58,331 --> 01:31:00,851
+ilerliyor.
+
+831
+01:31:02,552 --> 01:31:04,911
+Y'de, Y1'den başlıyor.
+
+832
+01:31:05,392 --> 01:31:05,951
+Y2,
+
+833
+01:31:07,651 --> 01:31:08,231
+Yn.
+
+834
+01:31:08,231 --> 01:31:15,251
+Burada bir Longest Common Subsequence'dan bahsediyoruz.
+
+835
+01:31:15,251 --> 01:31:35,251
+S, S1, S2, Sk, burada S1, S2, Sik'e kadar ilerliyoruz.
+
+836
+01:31:35,251 --> 01:31:47,751
+değerlıyoruz. I1, I2, IK olacak şekilde. Şimdi bu noktada aslında gene bir matriz kullanacağız.
+
+837
+01:31:47,751 --> 01:31:59,371
+Dinamik programlama mantığını kullanacağız. Bu yüzden öncelikle bir örnek yazalım. B, A, C, D, B olsun.
+
+838
+01:31:59,371 --> 01:32:15,411
+B, D, C, B olsun. Bir tarafta X'i yazdığımızı, bir tarafta da Y'yi yazdığımızı düşünürsek.
+
+839
+01:32:19,796 --> 01:32:40,455
+x, i, y, j olacak şekilde bunu bir ci matrisine taşıyacağız. Ve son noktada da x, n ve y, m değerine erişiyor olacağız. Bunu nasıl yapacağız? Şimdi buna bakalım. Bir matris hemen belirleyelim.
+
+840
+01:32:44,884 --> 01:33:03,884
+Burada bir tarafta B, A, C, D, B'miz olsun. Bir tarafta da B, D, C, B'miz olsun. Bunları şöyle çizelim.
+
+841
+01:33:10,036 --> 01:33:17,635
+Evet, şimdi öncelikle soracağım şey şu, kaç case için konuşuyor olabiliriz?
+
+842
+01:33:36,115 --> 01:34:00,115
+Longest common subsequence probleminde. Biraz öncekine benzer bir problem ama farklı bir hedefimiz var. Hedefimiz maksimum paterni bulmak birbirleri içerisinde. Kaç farklı case'i değerlendiriyor olacağız? Evet, Şaz'a sana söz vereyim.
+
+843
+01:34:00,115 --> 01:34:06,816
+Hocam iki case var. Eşittir ya da eşit değildir.
+
+844
+01:34:07,816 --> 01:34:19,476
+Peki güzel bu ana iki case'i söyledin. Bir tanesinde eşit olma durumu var. Diğerinde eşit olmama durumu var. Eşit olmama durumunun case'leri var mı?
+
+845
+01:34:19,476 --> 01:34:30,376
+Yani yok, yok çünkü ne insert yapacağız ne delete çünkü bizi ilgilendirmiyor o kısım
+
+846
+01:34:30,376 --> 01:34:35,556
+Doğru söylemekle birlikte ufak bir detayı vurgulamakta fayda var
+
+847
+01:34:35,556 --> 01:34:43,755
+Biz eşit olmama durumunda hangi taraftaki paterne atladığımızı belirtmemiz lazım
+
+848
+01:34:43,755 --> 01:34:50,296
+Yani X tarafında mı atlıyoruz yoksa Y tarafında mı ilerlerken atlıyoruz?
+
+849
+01:34:52,255 --> 01:34:59,275
+Çünkü bir sonraki turda o atladığımız harfi öbürün içerisinde bulma şansımız var.
+
+850
+01:34:59,895 --> 01:35:05,296
+Yani birini geçiyorsak bir harfi öbür paternin içerisinde o harfin olma olasılığı var.
+
+851
+01:35:05,375 --> 01:35:08,836
+O yüzden temel olarak 3 tane case'den bahsedeceğiz.
+
+852
+01:35:08,836 --> 01:35:15,916
+Bir tanesi o harflerin eşit olma durumu ya da o patendeki karakterlerin
+
+853
+01:35:15,916 --> 01:35:22,876
+İkincisi o patendlerden hangisinde ilerleyeceğiz? Skip X ya da Skip Y yapmamız lazım
+
+854
+01:35:27,220 --> 01:35:34,660
+Skip X ve Skip Y'yi kim açıklamak ister bir kez daha? Anlaşıldım bunu bir kez daha konuşalım.
+
+855
+01:35:41,876 --> 01:35:55,435
+Peki, o zaman örnek üzerinde isterseniz bunu ele alalım. O zaman belki daha iyi anlaşılacaktır. İlk etapta matrisin ilk satırı sütunu için ne yazacağız? Kim söylemek ister?
+
+856
+01:36:02,868 --> 01:36:19,548
+hesaplamaya çalıştığımız ilgili herhangi bir pattern'in diğer string içerisinde ya da karakter grubu içerisinde en uzun hangi pattern'in olduğunu bulmak.
+
+857
+01:36:20,027 --> 01:36:27,687
+Bir string'in içerisinde ya da bir karakter grubunun içerisindeki en uzun birbiriyle eşleşen pattern'ı bulmak hedefimiz.
+
+858
+01:36:38,068 --> 01:36:38,707
+Rabia?
+
+859
+01:36:41,707 --> 01:36:49,507
+Birinci satırı ve yani sıfırıncı satırı ve sıfırıncı kolonu henüz bir eşleşme almadığı için sıfırlarla dolduralım.
+
+860
+01:36:49,587 --> 01:37:04,227
+Tamam, çok güzel. Sıfırlarla dolduralım. Çünkü burada bir boşluğun ya da harfin eşleşme durumu söz konusu değil. Geldik şu noktaya. Burada ne yapacağız?
+
+861
+01:37:04,227 --> 01:37:08,768
+B ile B eşleştiği için 1 derim
+
+862
+01:37:08,768 --> 01:37:25,267
+Tamam. Demek ki bizim hesaplamak istediğimiz biraz önce minimum distansı burada da en uzun eşleşmenin ne olduğunu bulmaya çalışıyoruz. O yüzden 1 dedik B'ler eşleştiği için. Sonra yan tarafa doğru satırda ilerlersek
+
+863
+01:37:25,267 --> 01:37:32,007
+Öyle de eşleşmiyor ama sonuçta heybemizde bir tane 1 var. Oraya da yine 1 derim
+
+864
+01:37:32,007 --> 01:37:33,288
+Doğru
+
+865
+01:37:33,287 --> 01:37:35,407
+Bir sonraki
+
+866
+01:37:35,407 --> 01:37:37,807
+B ile C eşleşmiyor
+
+867
+01:37:37,807 --> 01:37:41,327
+O yüzden yine bir
+
+868
+01:37:41,327 --> 01:37:42,187
+Tamam
+
+869
+01:37:42,187 --> 01:37:49,627
+Burada kafam karıştı çünkü B ile B eşleşiyor ama önceden de B ile B
+
+870
+01:37:49,627 --> 01:37:52,547
+Çok güzel, biraz önceki problemden farklı bir durum var burada
+
+871
+01:37:52,547 --> 01:37:53,667
+Evet
+
+872
+01:37:53,667 --> 01:38:03,068
+Peki, burada ne yapmamız gerekiyor ki buradaki, şuradaki değeri belirleyelim
+
+873
+01:38:03,068 --> 01:38:18,027
+Yani buraya ne yazmalıyız? Bir tarafta B var, bir tarafta B, D, C, B var. Kaç olması gerekir? Kağıt üstüne baktığımızda.
+
+874
+01:38:18,928 --> 01:38:20,387
+Bir olması gerekiyor yine çünkü.
+
+875
+01:38:20,667 --> 01:38:27,148
+Tamam. Çok güzel. Buranın bir olması gerekiyor. Bunu biliyoruz. Peki bu bire nereden geldik? Şimdi onu soralım.
+
+876
+01:38:27,147 --> 01:38:31,027
+Öncekinde saprazdan geliyordu da burada da
+
+877
+01:38:31,027 --> 01:38:56,327
+Şimdi burada da biz yan taraftan gelmiş olamayız çünkü bir eşleşme durumu söz konusu. Eşleşme durumu söz konusuysa bir önceki yerden buraya ulaşmış olmamız lazım. Mantıken böyle bir şey yapmış olmamız gerekiyor. Bunu bir bakış açısı olarak değerlendirelim ve aşağıdaki satıra devam edelim. Etrafı bir asana da devam ediyorum.
+
+878
+01:38:57,148 --> 01:39:09,248
+A ile B eşleşmiyor ama B ile B'yi önceden eşleştirdiğimiz için bir yazarım.
+
+879
+01:39:09,248 --> 01:39:25,668
+Şimdi burada bir duralım. Çok güzel söz olarak ifade ettin. Yani sen hangisini seçmiş oldun? Bir önceki paternlere bakıp içlerinden hangisini seçtin? Ya buradan geldik ya soldan ya da sağdan geldik.
+
+880
+01:39:25,667 --> 01:39:29,307
+Sen hangisini seçmeyi tercih ettin? Eşleşme olmadığı için?
+
+881
+01:39:30,887 --> 01:39:34,027
+Soldan geldim. Pardon sağdan geldim.
+
+882
+01:39:34,607 --> 01:39:35,227
+Yani üstten.
+
+883
+01:39:35,787 --> 01:39:36,047
+Evet.
+
+884
+01:39:37,087 --> 01:39:39,647
+Neden üstten gelmiş oldun? Neyi aldın sen aslında?
+
+885
+01:39:40,787 --> 01:39:44,667
+Şeyi B'yi aldım. Çünkü B ile eşleşiyor ya A'da ilerliyoruz ama...
+
+886
+01:39:44,667 --> 01:39:47,327
+Büyük olanı aldın. Maksimum olanı aldın.
+
+887
+01:39:47,327 --> 01:39:47,627
+Evet.
+
+888
+01:39:48,087 --> 01:39:55,487
+1 ve 0 var. İki taraftan geliyorsun. Hangisi büyükse yani daha önceden yakaladığın eşleşme hangi tarafta daha büyükse onu alman lazım.
+
+889
+01:39:55,487 --> 01:39:57,288
+çünkü biz en büyük eşleşmeyi almak istiyoruz.
+
+890
+01:39:58,228 --> 01:39:58,428
+Evet.
+
+891
+01:39:58,508 --> 01:40:00,827
+O yüzden 1 ve 0'a baktın, 1'i aşağıya taşıdın.
+
+892
+01:40:01,527 --> 01:40:03,887
+Evet. Yine 1, bir sonraki de.
+
+893
+01:40:04,368 --> 01:40:05,288
+Bir sonraki 1.
+
+894
+01:40:05,868 --> 01:40:06,167
+Evet.
+
+895
+01:40:07,847 --> 01:40:08,368
+1.
+
+896
+01:40:08,487 --> 01:40:09,707
+Yine 1, eşleşme yok.
+
+897
+01:40:09,847 --> 01:40:13,088
+Eşleşme olmadığı için 1. Aşağıya dedim, CLB eşleşiyor mu?
+
+898
+01:40:13,887 --> 01:40:15,368
+Eşleşmiyor, 1'i taşıyacağız.
+
+899
+01:40:15,487 --> 01:40:17,127
+1'i taşıyacağım aşağıya buradan.
+
+900
+01:40:18,027 --> 01:40:18,987
+1'i taşıyacağız.
+
+901
+01:40:18,987 --> 01:40:22,027
+1'i taşıyacağız. CLC eşleşti. Ne yapacaksın?
+
+902
+01:40:22,027 --> 01:40:22,547
+Eşleşti.
+
+903
+01:40:22,547 --> 01:40:28,288
+Arttırırım. Çaprazda bir var. İki yaparım.
+
+904
+01:40:29,068 --> 01:40:33,627
+İki yaptım. Buraya geldim. CLB'ye eşleşmiyor. Hangisini alacağım?
+
+905
+01:40:33,867 --> 01:40:37,267
+İkiyi. İkiyi alacağım. İki oldu. Teşekkür ediyorum Rabia.
+
+906
+01:40:38,068 --> 01:40:40,068
+Kim devam etmek ister?
+
+907
+01:40:46,228 --> 01:41:13,627
+Şura. Merhaba hocam. Merhaba Şura. Seni dinliyorum. D ile B'ye bakıyorum. D ile B eşleşmiyor. Üstteki biri taşıyacağım maksimum. Büyük olan olarak evet. Sonra? D ile D eşleşiyor. Çaprazdaki biri bir artıracağım yani. Tamam. İkincik. D ile C eşleşmiyor. Yine maksimumu taşıyacağım yani ikiye. Yani bunu da taşıyabilirim, bunu da taşıyabilirim.
+
+908
+01:41:13,627 --> 01:41:28,948
+üsttekini taşımak gibi. Yoksa ikisi de maksimum olduğu için ikisi de bir olasılık. İşte bu yolların iki farklı noktadan kesişmesi olan iki patern demek ki var ki burada böyle bir olasılık var.
+
+909
+01:41:29,607 --> 01:41:34,747
+Tamam. D ile B eşleşmiyor. Yine ikiye taşıyacağım zaten üçü de iki olduğu için.
+
+910
+01:41:34,747 --> 01:41:37,747
+Evet tamam peki. En son aşağıya geldim.
+
+911
+01:41:38,808 --> 01:41:39,728
+Devam edeyim mi ben?
+
+912
+01:41:39,827 --> 01:41:40,408
+Evet lütfen.
+
+913
+01:41:40,408 --> 01:41:43,248
+B ile B eşleşiyor.
+
+914
+01:41:43,687 --> 01:41:44,547
+Biri taşıyıcı.
+
+915
+01:41:44,748 --> 01:41:45,068
+Pardon.
+
+916
+01:41:45,507 --> 01:41:47,908
+Bir arttıracağım.
+
+917
+01:41:50,108 --> 01:41:51,967
+B ile D eşleşmiyor.
+
+918
+01:41:51,967 --> 01:41:55,948
+Yine maksimumu yani ikiye aşağıya yazıyorum.
+
+919
+01:41:55,948 --> 01:41:56,207
+Evet.
+
+920
+01:41:57,067 --> 01:41:59,147
+B ile C yine eşleşmiyor.
+
+921
+01:41:59,287 --> 01:42:00,088
+Maksimum iki.
+
+922
+01:42:00,787 --> 01:42:01,707
+İki yazıyorum.
+
+923
+01:42:02,128 --> 01:42:03,408
+B ile B eşleşiyor.
+
+924
+01:42:04,248 --> 01:42:06,547
+Çaprazdakini bir arttırıp üç yazacağım.
+
+925
+01:42:07,047 --> 01:42:07,367
+Tamam.
+
+926
+01:42:08,268 --> 01:42:08,988
+Teşekkür ederim.
+
+927
+01:42:08,987 --> 01:42:22,687
+Demek ki şimdi biz burada maksimum üçlük bir benzer ortak bir sequence olduğuna karar verdik. Bunlar neler olabilir? Hemen sorayım bana söyler misiniz?
+
+928
+01:42:27,859 --> 01:42:56,999
+Efe? B, C, B. B, C, B seçeneklerden bir tanesi. L, C, S, X, Y diyelim. Başka? B, D, B. L, C, S, X, Y, B, D, B. Başka var mı? Başka yok. Şu an için bize iki tane seçenek çıktı. Bu iki patern içerisinde en fazla
+
+929
+01:42:56,999 --> 01:43:12,559
+benzeşen iki paterni yazmış olduk. Şimdi peki bu matrisi bu şekilde oluşturduğumuza göre kurallarımızı ne olarak yazabiliriz? Bir buna bakalım. Birinci kuralımızı ben yazayım.
+
+930
+01:43:16,148 --> 01:43:18,148
+i eşit 0 ise
+
+931
+01:43:19,267 --> 01:43:23,747
+c 0 j'ye 0 yapıyoruz.
+
+932
+01:43:24,747 --> 01:43:29,747
+Yani bunu sadece bu kontrolü yapmaya gerek yok. Görmeniz açısından yazıyorum.
+
+933
+01:43:30,148 --> 01:43:33,547
+x satır baş tutunu 0 değerini yaptık.
+
+934
+01:43:33,547 --> 01:43:35,947
+Şimdi rekürans relation'ı yazacağız.
+
+935
+01:43:36,707 --> 01:43:40,748
+Rekürans relation'ı yazarken c i j dedim.
+
+936
+01:43:44,020 --> 01:43:46,939
+Evet şimdi burada neler olacak?
+
+937
+01:43:50,452 --> 01:43:56,651
+bir, i'nin sıfır olma durumunu buraya ekliyorum.
+
+938
+01:44:01,460 --> 01:44:09,259
+Yukarıdakinin aynısı. Recurans relation'la yazdığım. Şimdi gelelim iki tane farklı keyfi ifade etmeye.
+
+939
+01:44:12,724 --> 01:44:30,724
+Biraz önce iki temel case var dedik ama kendi içerisinde üç tane farklı case'den iki temel case oluyor. Birinde siz birinci X string içerisinde atlıyorsunuz. İkincisinde Y string içerisinde atlıyorsunuz.
+
+940
+01:44:32,383 --> 01:44:33,943
+Evet, kim yazdırabilir?
+
+941
+01:44:36,343 --> 01:44:37,603
+C, İ, J ne olacak?
+
+942
+01:44:45,555 --> 01:44:46,095
+Efe?
+
+943
+01:44:47,255 --> 01:44:49,195
+Hocam, eşit olma durumu olacak.
+
+944
+01:44:49,875 --> 01:44:52,215
+Tamam, eşit olma durumunu hemen buraya yazayım.
+
+945
+01:44:52,375 --> 01:44:55,816
+X, İ'nin Y, J'ye eşit olma durumu.
+
+946
+01:44:56,655 --> 01:44:59,396
+Tabii ki İ ve J'nin sıfırdan büyük olduğu kezler için.
+
+947
+01:44:59,815 --> 01:44:59,995
+Evet.
+
+948
+01:45:00,575 --> 01:45:05,076
+Sol tarafta da şey, İ-1, J-1 artı 1.
+
+949
+01:45:05,215 --> 01:45:06,835
+Yani sol çaprazı artı 1.
+
+950
+01:45:06,875 --> 01:45:09,316
+C, İ-1, J-1.
+
+951
+01:45:09,455 --> 01:45:11,795
+Biraz önce sol çaprazı yapmıştık hatırlıyorsanız.
+
+952
+01:45:11,795 --> 01:45:12,976
+Üzerine 1 eklemiştik.
+
+953
+01:45:12,976 --> 01:45:19,855
+eşit olma durumunda yukarıdaki sol çaprazdaki değere 1 ekliyoruz.
+
+954
+01:45:19,855 --> 01:45:32,795
+Eşit olmama durumunda i, j-1 ve i-1c'nin maksimumunu buluyoruz.
+
+955
+01:45:33,035 --> 01:45:33,916
+Aşırı yıkıyoruz.
+
+956
+01:45:33,916 --> 01:45:47,936
+C, I-1, C, I, C-1'in maksimunu alıyoruz.
+
+957
+01:45:51,636 --> 01:46:01,436
+Evet, şimdi bu noktada tekrar dönecek olursak matrisimize.
+
+958
+01:46:05,363 --> 01:46:33,603
+şuradaydık ilk etapta. Şuradaydık. B'lerin eşitlenme durumu şu case'de olduğu gibi B'nin B'ye eşit olma durumu tek bir B var. Diğerinin içerisinde de tek bir B'ye denk geliyor. O yüzden olabilecek Longest Common Subsecureness 1. D'de de 1, C'de eklendi de 1, B'de eklendi de 1. Şimdi geldik burada bunun B'ye A olma durumuna. Yani şu noktadayız.
+
+959
+01:46:33,603 --> 01:46:57,003
+B-A olduğunda A'nın başka bir şeyle eşleşme durumu yok. Peki B-A-C olduğunda yani şu noktadayız. B-A-C'yi ilk etapta neyle karşılaştırıyoruz? B ile karşılaştırıyoruz. Gene bir değerindeyiz. Sonra B-A-C'yi B-D ile karşılaştırıyoruz. Gene birdeyiz.
+
+960
+01:46:57,003 --> 01:47:08,044
+Ama B, A, C'ye, B, D, C'ye geldiği zaman o zaman gördüğünüz gibi burası 2 oluyor
+
+961
+01:47:08,044 --> 01:47:22,224
+Neden 2 oluyor? Bir önceki B, A ile B, D'nin en fazla kesişen paterni B olduğu için
+
+962
+01:47:22,224 --> 01:47:27,164
+o da burada saklı olduğu için buradan aşağıya doğru değeri taşıyoruz.
+
+963
+01:47:28,664 --> 01:47:31,164
+Şimdi B, A, C kesişti.
+
+964
+01:47:32,823 --> 01:47:34,363
+B, D, C kesişti.
+
+965
+01:47:34,844 --> 01:47:37,804
+Burada B'ler ve C'ler kesişti.
+
+966
+01:47:38,283 --> 01:47:39,164
+Burası 2 oldu.
+
+967
+01:47:39,823 --> 01:47:42,283
+Peki elimizde B, A, C var.
+
+968
+01:47:42,384 --> 01:47:43,304
+B, D, C var.
+
+969
+01:47:44,044 --> 01:47:44,863
+Buraya geldik.
+
+970
+01:47:44,863 --> 01:47:46,724
+B, A, C, D oldu.
+
+971
+01:47:47,603 --> 01:47:51,164
+Buraya geldiğimizde burası da B, D, C, B oldu.
+
+972
+01:47:52,224 --> 01:48:00,243
+Şimdi baktığınızda burada hatta şunu biraz daha güzel olması açısından bir daha yazalım.
+
+973
+01:48:02,283 --> 01:48:11,343
+B, A, C, D, B, D, B, Pardon yanlış yazdım.
+
+974
+01:48:13,343 --> 01:48:15,983
+B, D, C, B.
+
+975
+01:48:16,703 --> 01:48:18,703
+Bu noktaya geldiğimizde bunlar kesişmiyor.
+
+976
+01:48:18,703 --> 01:48:33,123
+O zaman önceki içerisindeki kesişimlere bakıyoruz. Bu üçünün içerisindeki ikili kesişim vardı. Değerimiz hala 2. En son noktada buna ne ekleniyor? B ekleniyor.
+
+977
+01:48:33,123 --> 01:48:43,123
+B'ye eklendiği zaman burada geri kalanlardaki değer şurada 2'yi de hatırlarsanız
+
+978
+01:48:43,123 --> 01:48:49,584
+B'ler kesiştiği için geri kalanların içerisinde de 2 var B ve C var
+
+979
+01:48:49,584 --> 01:48:52,584
+o zaman burası B'lerin kesişmesinden dolayı
+
+980
+01:48:53,263 --> 01:48:56,584
+şu B ile şu B'nin kesişmesinden dolayı
+
+981
+01:48:57,183 --> 01:49:02,043
+geri kalanlar artı 1 olarak buraya eklenmiş oluyor
+
+982
+01:49:02,043 --> 01:49:10,123
+geri kalanlarda da iki kesişim vardı. Ya BC ya da BD olmak üzere. Totalde üç değerine erişmiş oluyoruz.
+
+983
+01:49:10,903 --> 01:49:18,043
+Buraya kadar sorusu olan var mı? Burada da formülü görüyorsunuz.
+
+984
+01:49:19,323 --> 01:49:25,503
+Kesişime bakmadan önce o harfler birbirleriyle aynı mı diye bakıyoruz.
+
+985
+01:49:25,503 --> 01:49:31,303
+Aynıysa o zaman diyoruz ki köşegendeki değere bir ekle.
+
+986
+01:49:32,043 --> 01:49:40,623
+Eğer aynı değilse o zaman ya birinci paternde ya da ikinci paternde bir atlama olmuştur.
+
+987
+01:49:40,623 --> 01:49:44,223
+Orada bir eşitlik yoktur. Yoluna devam et.
+
+988
+01:49:44,763 --> 01:49:52,663
+Hangisiyle devam edeceğimiz, hangisinin atlama olduğunu içerisindekilerde en büyük o ana kadar eşleşen hangisiyse ondan yola devam ediyoruz.
+
+989
+01:50:00,000 --> 01:50:07,519
+Peki, bu atlama mevzusu neden dile getirdim? Onu da söyleyelim. Hemen bitirelim ondan sonra. Çünkü 5 dakika kaldı saat 3'e.
+
+990
+01:50:09,579 --> 01:50:18,359
+Atlama mevzusu neden önemli? Yani yoksa eşit olmama durumu, eşit olmama durumunda zaten işimiz çözülür.
+
+991
+01:50:19,619 --> 01:50:26,000
+Eşit mi değil mi diye bakarız. Ama biz skip x ya da skip y diyoruz. Yani x'de ya da
+
+992
+01:50:26,000 --> 01:50:31,440
+Y'de yoluna devam edecek.
+
+993
+01:50:33,500 --> 01:50:35,520
+Evet, yorum bekliyorum.
+
+994
+01:50:47,539 --> 01:51:08,239
+Peki, ben söyleyeyim. Dersi kapatalım ondan sonra. Şimdi siz biraz önceki örnekte olduğu gibi B, A, C, D, B ve B, D, C, B'de hangi ne diyelim patende ilerleyeceğinize karar vermeniz gerekiyor?
+
+995
+01:51:08,239 --> 01:51:26,859
+Eğer yukarıdaki patenle ilerleyecekseniz orada skip x yapmanız gerekiyor. Aşağıdaki patenle ilerleyecekseniz skip y yapmanız gerekiyor ki eşleşmeyi buna göre bulasınız. Bunu da kodlamaya döktüğünüz zaman eşit değildir üzerinden bu kodlamayı gerçekleştiremezsiniz.
+
+996
+01:51:26,859 --> 01:51:33,220
+mutlaka X üzerinde i artı bir ya da Y üzerinde j artı bir yapmanız gerekiyor.
+
+997
+01:51:33,220 --> 01:51:40,199
+Bu yüzden hangi tarafta ilerlemeniz gerektiğini, hangi kez üzerinden gitmeniz gerektiğini de belirlemeniz gerekiyor.
+
+998
+01:51:40,699 --> 01:51:44,459
+Bunun kodunu önümüzdeki hafta PUSO'da kodunu yazıyor olacağım.
+
+999
+01:51:45,300 --> 01:51:49,580
+O zamana kadar belki düşünüp hangisinin daha mantıklı olduğuna karar verirsiniz.
+
+1000
+01:51:51,479 --> 01:51:54,099
+Skip X ya da Skip Y'nin nerede uygulanması gerektiğine.
+
+1001
+01:51:54,099 --> 01:52:08,319
+Longest Common Subsecure's da bu şekilde dinamik programlama mantığıyla bir pattern'in iki pattern içerisinde en uzun örtüşen pattern'i bulma algoritmasını da konuşmuş olduk.
+
+1002
+01:52:08,319 --> 01:52:21,119
+Şimdi biraz sonra bu dersin uygulama sesini üzerinden bütün uygulama kısmı devam edecek. Hem siz hem de diğer gruptaki arkadaşlarınız aynı sesin üzerinden bağlanacaksınız.
+
+1003
+01:52:21,119 --> 01:52:27,299
+hem ödev kontrolü için hem de ödevin çözümü için uygulamaya katılmanızı rica ediyorum.
+
+1004
+01:52:28,059 --> 01:52:29,499
+Dinlediğiniz için çok teşekkür ederim.
+
+1005
+01:52:30,099 --> 01:52:30,819
+Kendinize iyi bakın.
+
+1006
+01:52:31,159 --> 01:52:32,099
+Sağlıklı günler diliyorum.
+
+1007
+01:52:32,539 --> 01:52:33,079
+Görüşmek üzere.
+
+1008
+01:52:40,500 --> 01:52:41,060
+Nuri Hocam.
+
+1009
+01:52:42,259 --> 01:52:42,839
+Hoşçakalın.
