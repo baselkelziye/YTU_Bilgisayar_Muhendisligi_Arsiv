@@ -1,0 +1,1307 @@
+1
+00:01:24,308 --> 00:01:25,387
+Geldim hocam.
+
+2
+00:01:34,739 --> 00:01:36,799
+seni post yap.
+
+3
+00:01:38,379 --> 00:01:39,180
+Tamam.
+
+4
+00:01:40,339 --> 00:01:43,359
+OBS'den de linkler gönderiyorum. Kolay gelsin.
+
+5
+00:01:43,939 --> 00:01:45,359
+Teşekkür ederim, sağ olun.
+
+6
+00:06:25,716 --> 00:06:26,575
+Hoşgeldiniz arkadaşlar.
+
+7
+00:06:33,939 --> 00:06:34,680
+Sesim geliyor ama
+
+8
+00:06:40,211 --> 00:06:43,831
+teşekkürler. Herkes hangi gruptan geldiğini yazabilir mi Çete?
+
+9
+00:06:47,572 --> 00:06:49,131
+hangi gruptansınız? Grup 3.
+
+10
+00:06:50,211 --> 00:06:51,731
+Yar arkadaşlar da söylerse yar.
+
+11
+00:07:20,596 --> 00:07:22,275
+Sanırım grup birden henüz gelen yok.
+
+12
+00:07:41,684 --> 00:07:43,184
+Grup 1'den gelen arkadaş var mı?
+
+13
+00:08:05,076 --> 00:08:17,635
+Yeni gelen arkadaşlar arasından grup 1'den gelen var mı? Mesajınız hocanın gönderdiğiniz grup 1'de ulaştı mı? Onu merak ediyorum. Grup 3 geldi. Grup 1 yok herhalde henüz.
+
+14
+00:08:31,507 --> 00:08:41,848
+Eminim dersin WhatsApp grubu vs. bir şey vardır. Şuraya linki attım. Bunu belki WhatsApp'tan duyurursanız daha hızlı toplanırız. Paylaşırsanız çok mutlu olurum arkadaşlar.
+
+15
+00:09:38,515 --> 00:09:40,855
+yeni gelen arkadaşlardan grup birden gelen var mı?
+
+16
+00:10:31,091 --> 00:10:32,411
+Grup 1'den katılan var mı?
+
+17
+00:10:48,916 --> 00:10:53,276
+OBS'den mi geldi Ege mesaj? Ulaştı mı sana OBS'den gelen mesaj?
+
+18
+00:10:59,604 --> 00:11:00,303
+Teşekkür ederim.
+
+19
+00:11:36,916 --> 00:11:41,356
+Linki paylaşabilir miyiz arkadaşlar? Daha hızlı katılım olur belki.
+
+20
+00:12:57,875 --> 00:13:16,615
+sunumları bugün düzeltmeden sonra paylaşacağım. Bazı belki ufak tabi değişiklikler yaparım sunumlarda düzeltmeler. Geçen hafta bazı düzeltmeler gerektiğini fark ettim. Bugün hem onları üzerinden geçeyelim hem de geri kalan kısmı tamamlayalım. Sonra sunumları paylaşırım bugün. Herhalde bugün paylaşırım. Yaksilik olmazsa.
+
+21
+00:13:18,755 --> 00:13:26,095
+O zaman başlayalım arkadaşlar. Bence yeterince toplandık. Daha da fazla beklemiyorum.
+
+22
+00:13:27,875 --> 00:13:40,456
+Bugün Shell programına devam edeceğiz. Geçen hafta size Shell farklı Shell'lerden bahsettim. Kern üzerindeki bir programımı dili olduğundan ve bazı kolaylıklar sağladığından bahsettim.
+
+23
+00:13:40,455 --> 00:14:02,236
+klasör işlemlerini gösterdim. Klasör taşıma, silme, ekleme, klasör element bir şeyler ekleme, taşıma, dosya silme, klasör silme, dosya oluşturma, klasör oluşturma, dosyaları terminal ekranında görüntüleme ve terminal ekranında editlemeyi gösterdim. Daha sonra da size text editörü açmayı gösterdim.
+
+24
+00:14:02,236 --> 00:14:19,115
+kullanıcı oluşturmalardan bahsettik ama kullanıcı oluşturmalardan bahsettikten sonra oluşan kullanıcıları göremediğimizi tam petini bilmediğimi size söylemiştim, hatırlayamadığımı söylemiştim. Onu dersten sonra buldum. O yüzden onu tekrar etmek istiyorum.
+
+25
+00:14:26,323 --> 00:14:27,763
+ETC'nin altında
+
+26
+00:14:36,500 --> 00:14:45,739
+Shadow isimli dosyalar var arkadaşlar. Shadow sizin kullanıcılarınızın bulunduğu dizin, kullanıcıların hepsinin servislerine dair olduğu hepsinin bulunduğu dizin.
+
+27
+00:14:53,268 --> 00:15:21,147
+Gördüğünüz gibi arkadaşlar, geçen hafta oluşturduğumuz user'u da test user'u idi. Test 2 de burada, bunu bugün oluşturdum. Ulaştığımız bütün kullanıcılar burada. İkinci, ilk iki noktadan, iki noktalarla ayırılmış bir dosya bu. Yani iki nokta separatör görevi görüyor. İlk parametresi, ilk gördüğünüz kolon, kullanıcı ismi oluyor. İkincisi şifre oluyor. Aslında buradaki şifre hashlenmiş bir şifre. Buradaki ismi açık bir şifre.
+
+28
+00:15:21,147 --> 00:15:48,667
+sonraki grup ismi işte bu bağlı bulunduğu grup yetkileri vesaire diye gidiyor. Tamam arkadaşlar user gruplar, yetki grupları, boşluğunuz farklı gruplar varsa onlar, servis mi değil mi? Diğer parametre de onları gösteriyor. İkimiz kullanıcılar burada. Tamam bu komutlarla eklediğimiz kullanıcılar buradan görüntülebilirsiniz. Tamam. İçen hafta bunu gösterememiştim hatırlayamadığım için. Zaman kaybolmasını atlamıştım.
+
+29
+00:15:48,667 --> 00:16:18,227
+grup aynı şeyde gruplarda aynı dosyada bulunuyor. Mesela buradan örnek verecek olursak. Mesela şunlar farklı bir grup değil mi arkadaşlar? Sistem grubuna bakın. Fark ederseniz farklı gruplardır. Yetki vermekten bahsettim size. Dosyalara yetki vermeye. Bu çok önemli çünkü bir file oluşturduğunuz zaman genelde yetkisiz geliyor. Sizin kullanıcılara bunun yetki tanımamak için change mode yani chmod komutuyla bunların
+
+30
+00:16:18,227 --> 00:16:19,227
+retry execution haklarını tanımlamanız gerekiyor. Hem kullanıcı hem kullanıcı grubu gibi bütün farklı kullanıcı yetki şeyleriyle, gruplarıyla, kategorileriyle bunları tanımlayabiliyorsunuz. Sonra file tıklarından bahsettim. İlk parametre şurada gösterdiğimiz asetem ekranına gelip ls çizgi l yazdığımızda şurada gördüğünüz ilk karakterin file karakteri
+
+31
+00:16:48,227 --> 00:16:50,787
+file tipini gösterdiğini, diğerlerinin etkileri gösterdiğini söylemiştim.
+
+32
+00:16:52,168 --> 00:16:53,887
+Sonra programmaya başlamıştık.
+
+33
+00:16:54,208 --> 00:16:55,287
+Eko yapmıştık.
+
+34
+00:16:56,448 --> 00:17:03,467
+Eko ile herhangi bir değişkendeki, bu bir sistem değişkeni, herhangi değişkendeki değeri nasıl yazdıracağınızı göstermiştik.
+
+35
+00:17:03,587 --> 00:17:06,827
+Tarihleri ekolar ile yapıldığını göstermiştim.
+
+36
+00:17:07,447 --> 00:17:10,387
+Ekolar bazen şuradaki mesela ters slash c yazıyor.
+
+37
+00:17:10,387 --> 00:17:11,387
+Bu clear.
+
+38
+00:17:11,387 --> 00:17:20,447
+Bu çalışmazsa eğer 5'in versiyonuna göre başına çizgi e diyerek ekstant versiyonuyla çalıştırmanız gerekebilir.
+
+39
+00:17:21,787 --> 00:17:27,348
+Buradan tipik bir örneği var bunun. Bunlardan bahsetmiştik geçen hafta. Sistem ve kolonici değişkenlerden bahsettik.
+
+40
+00:17:28,147 --> 00:17:34,567
+Sistem değişkenlerinin büyük haflerle yazıldığını, kolonici değişkenlerinin küçük haflerle yazılması beklendiğini söylemiştik.
+
+41
+00:17:35,567 --> 00:17:40,887
+Sonra değişkenli tanımlamalarda bahsettik. Aritmetik işlemlerden bahsettik.
+
+42
+00:17:41,387 --> 00:17:59,007
+Burada escape karakterine de değmiştik. Değil mi arkadaşlar? Asterisk işareti, çarpma işareti tanımlı bir keyword olduğu için bunu escape ile ifade etmemiz gerekiyor. Veya expressionlarla da expressionları single backcode ile da ifade ederek ekoy edebileceğimizi söylemiştik.
+
+43
+00:17:59,007 --> 00:18:21,347
+Daha sonra veri girişinden bahsettik. Burada da aslında bütün programın olması gereken kullanıcı ile programın interaksiyonlarını yapmak için olmazsa olmaz olan read komutu değil mi? Bir şeyleri sürekli terminatına sitemek gerekebilir. Her şeyi filer üzerine yürütemeyebiliriz bazen. O yüzden sizin aslında c'den de bildiğiniz screenf'in karşılığı olan read gösterdik.
+
+44
+00:18:21,348 --> 00:18:49,088
+çok inanılmaz benziyor. Sadece syntax dizilin farklı. Bundan bahsettik geçen hafta. Sonra farklı listeleme fonksiyonlarından bahsettik. Listelemelerde wildcard search veya single character search. Single karakter nasıl hemdederiz veya birden fazla karakter varsa bunları nasıl hangi karakterle ifade etmemiz gerektiğinden bahsetmiştik. Örneğin A'la başlayan bir karakter için A yıldız. Çünkü
+
+45
+00:18:49,652 --> 00:18:59,511
+A ile başlayan A olabilir. A, B, C olabilir. A, B olabilir. Veya A boşluk olabilir. Bunların hepsi yıldızla ifade ediliyor. Tamam mı arkadaşlar? Soru işareti tek bir karakter.
+
+46
+00:19:03,667 --> 00:19:31,947
+Sonra dosya işlemlerinden bahsettik. Burada en önemli kısım write ile append arasındaki farktı. Write tek okla, tek sağ gösteren okla. Append ise iki tanesiyle gösteriliyordu. Write yaptığımız zaman bir dosyaya baştan yazıyor ama append yaptığımız zaman var olan teksti koruyarak genona ekliyor. En önemli fark bu. Bu örneği denediğimizde burada bir sorun hata mesajı almıştık. O yüzden çalışmamıştık ama zaten hata mesajı verilmesi bekleniyormuş.
+
+47
+00:19:31,947 --> 00:20:01,927
+o gün ben tabii dikkat etmedim buraya hatırlayamadım için bu örneği bu örneğisine paylaşmayı size test edersiniz burada yapılan şey bir folder oluşturuluyor daha doğrusu bir dosya oluşturuluyor bir klasör ismi oluşturuluyor burada move deneme deneme cs aslında bu kısmı ilk sayteste bahsetmiştim sözcüsü olarak ama saytede bulamayabilirsiniz bu şunu yapıyor deneme isimli dosyayı deneme cs olarak rename yapıyor yani siz bir dosyayı ismini
+
+48
+00:20:01,927 --> 00:20:05,967
+değiştirmek istediğiniz zaman yine aslında dosya taşıma komutunu kullanarak yapıyorsunuz bunu.
+
+49
+00:20:06,507 --> 00:20:11,748
+İlk parametresini taşımak istediğiniz dosya, ikincisinde ise hem petini verip hem dismini değiştirebiliyorsunuz.
+
+50
+00:20:12,147 --> 00:20:16,807
+Move konutu hem file rename için kullanılıyor hem de dosyayı bir yerden bir yere taşımak için kullanılıyor.
+
+51
+00:20:20,388 --> 00:20:23,207
+Onun dışında buradaki ekolar bir haber çalıştı zaten.
+
+52
+00:20:23,367 --> 00:20:24,388
+Onlarla bir sorunumuz yoktu.
+
+53
+00:20:24,888 --> 00:20:26,348
+Burada sort anahtarını görüyorsunuz.
+
+54
+00:20:27,147 --> 00:20:31,627
+Normal programın dilinde sort yapmak için çufana eklemek gereken mesela shell'da çok basit bir şekilde
+
+55
+00:20:31,627 --> 00:20:41,327
+bir sort işlemi gerçekleştirebiliyorsunuz. Sonra pipe komutundan bahsettik ama bu biraz da kaldığımız yer aslında.
+
+56
+00:20:42,327 --> 00:20:47,608
+Şimdi pipe komutunu anlatmamız gerekecek. Tabii önceki yıllarda bunu tatil çizerek anlatıyorum ama şu an biraz zor olacak.
+
+57
+00:20:48,608 --> 00:20:58,528
+Anlatması sunum ekranından. Pipe komutu aslında yaptığı şey soldaki pipe işaretinin solunda kalan komut grubunu çalıştırıp
+
+58
+00:20:58,528 --> 00:21:06,727
+çıklısını sağdaki filtre veya sağdaki komanda veriyor. Mesela şunun önünde gidebiliriz.
+
+59
+00:21:11,796 --> 00:21:18,675
+Bu arada şunu da görmüş olan arkadaşlar, bu tilde işareti bizi Honda elektörümüze götürüyor. Kısay olarak.
+
+60
+00:21:20,835 --> 00:21:36,515
+Şimdi buraya yazdığımız zaman, psavux yazdığımız zaman bizim şu an aslında görev yöneticimiz değil mi? Bütün yaşayan proseslerin durumunu gösteriyor. Şu anda bütün prosesler burada. Burada bir sürü proses var çalışan. Bazıları root kullanıcısı tarafından, bazıları ise benim sistem kullanıcısı tarafından çalıştırılmış.
+
+61
+00:21:36,515 --> 00:21:57,016
+Burada da hangi dosya çalıştırıyorsa onu görüyoruz değil mi? Hangi PET'teki, hangi bin çalışıyor veya hangi executable dosya çalışıyor onu gösteriyor. Çalışma süreleri vesaire var. Kısacası görev yönetiminde gördüğünüz bütün task'lar burada. Burası task manager kısmı. Bu bir liste gördüğünüz gibi tekrar çalıştırdığımız zaman en son halini veriyor.
+
+62
+00:21:57,015 --> 00:22:24,435
+Şimdi benim bu liste içerisinde bu çok daha uzun bir liste olabilir. Mesela başka ne olabilir? Set de bir listeydi değil mi arkadaşlar? Bizim sistem değişkenlerimiz ve koloniz değişkenlerimizin bulunduğu kısmı. Çok uzun bir fail. Bunun içerisinde bazen bir şey aradığınız zaman kaybolabilirsiniz. O yüzden bunun içinde bir filtreleme yapmamız gerekebilir. Peki nasıl yapacağız? Ben bu komuttaki çıktığı nasıl filtreleyebilirim? İşte burada pipe devreye giriyor. Mesela ps.ofstekar yazalım.
+
+63
+00:22:24,435 --> 00:22:28,395
+Ben sadece root kullanışına ait olan prosesleri görmek istiyorum diyelim
+
+64
+00:22:28,395 --> 00:22:32,675
+Yapmam gereken şey şu, PSAux yazıyorum, bu bir listeydi
+
+65
+00:22:32,675 --> 00:22:34,535
+Pipe işaretini yapıyorum
+
+66
+00:22:34,535 --> 00:22:44,156
+Klavyenizde layout'un farklılıklarından dolayı farklı klavye tuşu kombinasyonlarıyla yapabilirsin
+
+67
+00:22:44,156 --> 00:22:48,555
+Ama benim klavyemde altla backspace tuşuna bastığında oluyor
+
+68
+00:22:48,555 --> 00:22:50,236
+Veya backspace'in yanındaki tuşa bastığında oluyor
+
+69
+00:22:50,235 --> 00:23:10,295
+bu karakteri update'den sonra buraya ikinci komutum yani filtreleyeceğim komutu giriyorum. Örneğin grep bir filtreleme komutu. Replacement yapan bir fonksiyon aynı zamanda. Biz bunu sadece arama yapacağız. İyi yazdığım zaman insensitive oluyor yani büyük küçük harf duyarlılığını ortadan kaldırıyor.
+
+70
+00:23:31,035 --> 00:23:49,595
+Sadece paral yazdığım zaman sadece bu kelime yarıyor. Şöyle yazarsak mesela bu tek karakter olduğu için çalışmayacak değil mi arkadaşlar? Tek karakter olduğu için çalışmayacak. Yıldız koyabiliriz yanına. O zaman hepsini götürecektir.
+
+71
+00:23:49,596 --> 00:23:51,756
+gibi.
+
+72
+00:23:54,336 --> 00:23:55,915
+Bu filtrelemeye sağlıyor.
+
+73
+00:23:56,855 --> 00:23:57,935
+Set üzerinden gidelim.
+
+74
+00:23:58,036 --> 00:23:59,396
+Mesela set de bir büyük listeydi.
+
+75
+00:23:59,715 --> 00:24:01,396
+Çok bugün fonksiyonlar vesaire geldi.
+
+76
+00:24:02,435 --> 00:24:05,956
+Set, pipe işareti, grab.
+
+77
+00:24:06,516 --> 00:24:07,516
+Mesela ne arayalım burada?
+
+78
+00:24:09,656 --> 00:24:10,336
+Özel bir şey.
+
+79
+00:24:10,796 --> 00:24:11,756
+Mesela user arayalım.
+
+80
+00:24:11,896 --> 00:24:13,056
+User sistem değişkeniydi.
+
+81
+00:24:16,056 --> 00:24:17,596
+Bakın user paralelsmiş.
+
+82
+00:24:17,596 --> 00:24:34,176
+username de parales işte tamam arkadaşlar burada geçtiği için bu şekilde pipe komutu bir fonksiyonun çıktısını veya bir komutanun çıktısını fonksiyondan ziyade bir komutanun çıktısını diğer komuta aktaran bir yardımcı keyword.
+
+83
+00:24:38,771 --> 00:24:49,011
+bu şekilde. Şimdi bunun dışında tabii ki biz bazı dönüşümlerde yapmamız gerekebilir. Karakter dönüşümleri gibi.
+
+84
+00:24:50,831 --> 00:25:03,971
+Farklı dönüşümlerde yapmamız gerekebilir. Bunlarla ilgili de tr komutu var. Pipe komutundan aynı şekilde faydalanarak dosyadaki bazı satılarda istediğimiz değişiklikleri yerleştirebiliriz. Mesela bu örneği çalıştıralım.
+
+85
+00:25:03,971 --> 00:25:06,291
+önce istiyorsanız bir inceleyelim ne yapıyormuş.
+
+86
+00:25:06,911 --> 00:25:10,451
+İlkinde bu şekilde bir echo komutu var.
+
+87
+00:25:11,311 --> 00:25:11,751
+Değil mi arkadaşlar?
+
+88
+00:25:11,831 --> 00:25:13,371
+Üçüncü line'e bakarsanız.
+
+89
+00:25:14,611 --> 00:25:17,211
+Yaptığı şey küçük harfleri aslında büyük harfleri dönüştürmek.
+
+90
+00:25:17,211 --> 00:25:21,211
+Burada bir karakter şey veriyorsunuz, range veriyorsunuz.
+
+91
+00:25:21,331 --> 00:25:26,691
+Küçük harfler A ile Z arasında ve büyük harfler olan A ile Z arasındaki karakterleri dönüştürüyor.
+
+92
+00:25:26,691 --> 00:25:31,091
+Bunun dışında
+
+93
+00:25:31,091 --> 00:25:43,871
+karakter tek karakterle değiştirebiliyorsunuz. Yani karakterle küçük bir karakteri büyük bir karakter yapmak yerine sadece tek bir karakteri de değiştirebiliyorsunuz. Onun için de single code ile karakteri belirtmemiz gerekiyor.
+
+94
+00:25:47,667 --> 00:26:04,787
+tabi sadece bunun dışında bir dosyalara bir şeyleri değiştirmek yerine sile de biliyorsunuz. Bunun için çizgi delete parametresini, opsiyonunu kullanarak işlemini gerçekleştirmeniz gerekiyor. Bu örneğimizde de bu dosya içerisindeki noktada virgüllerin hepsini kaldırıyor. Şimdi siz bu örneği çalıştıralım.
+
+95
+00:26:19,188 --> 00:26:21,428
+hangi sliddi? 10. slid.
+
+96
+00:26:25,683 --> 00:26:26,523
+Şöyle yapalım.
+
+97
+00:26:32,468 --> 00:26:35,107
+içerik buymuş şu an çalışacağım şeyden. Şimdi çalıştıralım bunu.
+
+98
+00:26:37,747 --> 00:26:38,487
+İlk örnekte
+
+99
+00:26:38,487 --> 00:26:42,087
+echo yazmıştık. Küçük harfleri büyük harflerine çevirdik.
+
+100
+00:26:42,808 --> 00:26:43,987
+Şuradaki pipe komutu bize
+
+101
+00:26:43,987 --> 00:26:47,707
+buradaki şu dosyadaki echo'dan gelen çıktığı
+
+102
+00:26:47,707 --> 00:26:52,747
+bu fonksiyonel aktarmamızı sağladı. Bu fonksiyonel yaptığı işte bu gelen input'u
+
+103
+00:26:52,747 --> 00:26:55,728
+az karakterlerine büyük harfleri dönüştürdü.
+
+104
+00:26:56,447 --> 00:26:58,267
+İkinci sıra geçtiğimizde ise
+
+105
+00:26:58,267 --> 00:27:02,447
+ne yapmışız? Bir echo dosyasından bu echo yaptığımız dosyayı
+
+106
+00:27:02,468 --> 00:27:25,587
+write ile bir dosya nokta txt diye oluşan otomatik dosya yazdı. Hem dosya oluştururuz burada hem de içine koyuyoruz. Ya da var olan dosya olabilir. Tam emin olamamış zaman. Test etmemiz gerekebilir bunu. Sağ sonra bu dosya içerisindeki şeyi cat ile okuyup oluşan sonucu pipe ile tr komutuna verdik ve burada da noktalı virgüleri virgülerle değiştirdik.
+
+107
+00:27:25,587 --> 00:27:47,587
+sonuçta bu yani aslında küçük harflerle oluşan bir ifade vardı bir dosya noktada eksilir içerisinde ondaki noktalı virgüleri birbirlerle değiştirdi bir sonrakinde ise delete komutunu kullanarak delete parametresiyle noktalı virgüleri ortadan kaldırdık ve sonuçta sonuç itibariyle de bu oluştu tamam mı?
+
+108
+00:27:47,587 --> 00:28:01,567
+Buraya kadar sorusu olan var mı? Pipe ve tr komutu ile ilgili. Çünkü bundan sonra özellikle Pipe'de daha çok devam edeceğiz. Sana dersem yok. Zaten çok karmaşık şeyler değiller.
+
+109
+00:28:01,567 --> 00:28:14,908
+tabi bunlar dışında bizim dosyalarımız format dosyaları olabilir csv gibi mesela bu bir aslında önceki örnekte de gördüğümüz şey bir csv format değil mi arkadaşlar?
+
+110
+00:28:15,487 --> 00:28:20,667
+comma separative file vektör yani bizim burada nokta virgüler ayırdığımız şey aslında birer koluna denk geliyor.
+
+111
+00:28:21,607 --> 00:28:28,587
+Siz bir excel eksport ettiğiniz zaman csv zaten bu formatla çıkarıyor veya virgülerle çıkarıyor separatörünüz nasıl belirsiniz.
+
+112
+00:28:28,587 --> 00:28:35,207
+aslında bir file formatı, bir tablo ifade edebiliyor ve şark programlarında tablolar üzerine işlemler yapabiliyorsunuz.
+
+113
+00:28:35,327 --> 00:28:37,247
+Bunun için de AVK komutunu kullanabiliyorsunuz.
+
+114
+00:28:39,987 --> 00:28:41,567
+Örneğin burada ne yapıldığına bakalım.
+
+115
+00:28:43,048 --> 00:28:47,667
+Burada bir echo var. Bir dosyaya Ahmet 4.1 karakterlere yazılıyor.
+
+116
+00:28:48,167 --> 00:28:54,107
+Daha sonra aynı şekilde append ederek yeni bir satır ekleniyor ve başka bir append ederek ikinci bir satır ekleniyor.
+
+117
+00:28:54,107 --> 00:29:06,208
+Appendler bittikten sonra burada Appendler devam ediyor. Dosya okunup noktalı virgül karakterleri
+
+118
+00:29:06,208 --> 00:29:22,408
+A çizgi fail okuyoruz. Noktalı virgüle göre de pars ediyoruz. Çıkan sonuçlarda da ne yapıyoruz? İki sonucu. İki diye ifade edilen şey aslında bizim koma separatörlük ikinci kolonumuz değil mi arkadaşlar?
+
+119
+00:29:22,408 --> 00:29:31,807
+bu bir değişken ifade diyor çünkü avk çizgi f bütün satırları parse ederek geçici numerik değişkenleri atıyor.
+
+120
+00:29:31,807 --> 00:29:42,128
+Ve biz bu değişkenleri içerisindeki değerleri dolar operatörüyle kullanıcı değişkenlerdeki değerleri aldığımız şekilde dolar işaretiyle bunların içeriklerini okuyabiliyoruz.
+
+121
+00:29:42,127 --> 00:29:54,747
+dolayısıyla biz avk çizgi f yazdığımızda bizim dosyamızdaki bütün ifadeler noktada bir gülle ayrıştırılıyor.
+
+122
+00:29:55,187 --> 00:30:02,407
+Örneğin ilk ifade Ahmet'ti. Ahmet bir nol değişkende. Dört iki nol değişkende. Bir ise üç nol değişkende.
+
+123
+00:30:02,407 --> 00:30:08,747
+Aynı şekilde ikinci örnekte ikinci değişken, iki nol değişkende üç olacak değil mi arkadaşlar?
+
+124
+00:30:08,747 --> 00:30:10,787
+kolon kolon ayrıştırabiliyoruz.
+
+125
+00:30:11,068 --> 00:30:13,727
+Bunlara da dolar bir, dolar iki, dolar üç diye erişiyoruz.
+
+126
+00:30:15,587 --> 00:30:21,828
+Bunun üçten büyük olup olmadığını kontrol ederek bir filtreleme operasyonu gerçekleştiriyoruz.
+
+127
+00:30:23,307 --> 00:30:27,927
+Diğer örnekte ise bunun dörtten küçük olan örnekler için yapıyoruz.
+
+128
+00:30:28,667 --> 00:30:29,927
+Şimdi istiyorsanız bunu çalıştıralım.
+
+129
+00:30:30,247 --> 00:30:31,507
+Sonra dosyamızın içeriğine bakalım.
+
+130
+00:30:45,940 --> 00:30:49,619
+şu bizim tablomuz olacak. Dosyamız yazan ifade aslında şu ifade olacak.
+
+131
+00:30:53,039 --> 00:30:53,880
+Önce bir bakalım.
+
+132
+00:30:56,879 --> 00:30:59,499
+Bu önceki ifadeden kalan bir şey. Bunu şimdi şey yapalım.
+
+133
+00:30:59,799 --> 00:31:01,199
+Sıtırsa silelim ya da silmeyelim.
+
+134
+00:31:02,940 --> 00:31:04,540
+Sırınca zaten rahat üzerine yazacak.
+
+135
+00:31:05,159 --> 00:31:05,419
+Buyurun.
+
+136
+00:31:08,120 --> 00:31:09,540
+Biri bir şey mi söyleyecekti? Buyurun.
+
+137
+00:31:09,540 --> 00:31:09,579
+Buyurun.
+
+138
+00:31:17,299 --> 00:31:20,780
+dosyamızı çalıştıralım.
+
+139
+00:31:22,439 --> 00:31:23,339
+Komut komutumuzu.
+
+140
+00:31:24,059 --> 00:31:25,579
+Şu anda komut çalıştı.
+
+141
+00:31:25,659 --> 00:31:28,559
+Ekran açıklarını gösterdi ama biz bir dosyaya bakalım tekrar.
+
+142
+00:31:28,659 --> 00:31:29,260
+İçerine yazmış.
+
+143
+00:31:32,299 --> 00:31:33,879
+Dosyam içeride bunlar vardı.
+
+144
+00:31:35,859 --> 00:31:36,480
+Şimdi tekrar
+
+145
+00:31:36,480 --> 00:31:39,179
+çalışıyorum. İkinci şey de bu.
+
+146
+00:31:40,779 --> 00:31:41,560
+İkinci sonuç da bu.
+
+147
+00:31:43,560 --> 00:31:44,519
+Şimdi ne yaptığımıza bakalım.
+
+148
+00:31:45,539 --> 00:31:46,259
+İlk echo'da
+
+149
+00:31:46,259 --> 00:31:50,340
+ne yapmışız?
+
+150
+00:31:50,699 --> 00:31:52,179
+İkiden büyük olanları yazdırmışız.
+
+151
+00:31:52,299 --> 00:31:52,980
+Hatta bunu ayıralım.
+
+152
+00:31:53,059 --> 00:31:54,359
+Şu an kafa karışıklığa ulaşabilir bu.
+
+153
+00:32:08,980 --> 00:32:10,239
+Kendinize yazalım satır satır.
+
+154
+00:32:52,243 --> 00:32:53,923
+Şimdi iki şu komut çalıştıram sadece.
+
+155
+00:32:57,715 --> 00:32:59,555
+kendi yerine oluşturduğum şeyi önce göstereyim.
+
+156
+00:33:07,508 --> 00:33:15,768
+dosyayı bu şekilde değiştirdim. Sadece bir komut çalışacak. İki komutun sonuçları birbirine karışmasın diye böyle yapıyorum. Bunu yaptıktan sonra çalıştıralım.
+
+157
+00:33:23,571 --> 00:33:23,951
+Pardon.
+
+158
+00:33:25,192 --> 00:33:26,471
+Tamam boş olmayacak.
+
+159
+00:33:27,671 --> 00:33:29,191
+Sadece Ahmet dört biri yaz. Neden?
+
+160
+00:33:30,631 --> 00:33:34,171
+İkinci kolonu, üçten büyük olan tek kolonu değil mi arkadaşlar baktığımız zaman?
+
+161
+00:33:35,751 --> 00:33:37,431
+Görüyorsunuz dörtten büyük olan bir tek o var.
+
+162
+00:33:38,311 --> 00:33:39,091
+Şimdi şöyle yapalım.
+
+163
+00:33:45,395 --> 00:33:46,876
+şuradan şu komutu kopyalıyorum.
+
+164
+00:33:56,788 --> 00:34:08,027
+çalıştırdım. Tamam. Şimdi bunu değiştirelim. Diğer önümüz neydi? Dördü. Şey. Üçü. Ne olsun mesela? Kiden küçük eşit olanları olsun.
+
+165
+00:34:15,987 --> 00:34:44,248
+üçüncüpser üçüncü kolona baktık. Bu şekilde filtreleme yapabiliyorsunuz. Mesela eğer şunu kaldırıp virgül yazsaydık, separatör değişteseydik, böyle bir şey olmadığı için her şeyi yazacaktı. Çünkü filtreleme yapamadı. Tamam? Bu da bu şekilde. Siz bu şekilde dosyalarda parse yapıp, belir separatör tanımlayarak filtreleme operasyonlarını colon-wise geliştiriyorsunuz, yapabiliyorsunuz.
+
+166
+00:34:44,248 --> 00:34:47,688
+bazı çalışmanızı çok büyük kolaylık sağlayabilir.
+
+167
+00:34:48,388 --> 00:34:50,987
+Tabii olmazsa olmaz bir diğer şey de kalkülatır değil mi?
+
+168
+00:34:51,208 --> 00:34:56,168
+Yani siz share programasında kalkülasyon yapabiliyorsunuz.
+
+169
+00:34:56,168 --> 00:35:00,848
+Yani o bizim normal hesap makinesine yaptığımız scientific işlemlerin çoğunu gerçekleştirebiliyorsunuz.
+
+170
+00:35:00,888 --> 00:35:02,487
+Bu biraz aritmetik operasyonlarla daha farklı.
+
+171
+00:35:02,587 --> 00:35:05,267
+Burada logaritma alma gibi farklı şeyler de yapabiliyorsunuz.
+
+172
+00:35:06,227 --> 00:35:09,348
+Mesela bakalım bunda ne varmış.
+
+173
+00:35:09,848 --> 00:35:11,068
+Ben şey yapamadım.
+
+174
+00:35:15,764 --> 00:35:43,944
+şöyle yazalım. BC'ye bastığımız zaman bizi aslında sistemik kalkülatörü gönderiyor. Size ayrı bir komut kod satırı açıyor ve burada işlemlerinizi açık gösteriyor. Bunu shell'da çağırıp yapabiliyorsunuz arkadaşlar. Ben şu an doğrudan açtım. Mesela şu an slide'da gösterdiğim örnekleri yapıyorum. Siz burada ilk üç şey condition statement yapıyor. Yani ifadeler doğru mu yanlış mı? Doğruysa bir, yanlışsa sıfır veriyor.
+
+175
+00:35:43,944 --> 00:36:02,423
+diğerleri ise aritmetik operasyonlar değil mi? Aritmetik operasyonları sonucu da mesela 1 artı 15 16 gibi 3 eksi 1. Yani siz buradan nasıl ben şu an ekranda termine ekranında bir takım yeni promptlar açıp şeyler yazabiliyorsam bunları share programında da yapabiliyorsunuz. Share scriptleri de koyabiliyorsunuz.
+
+176
+00:36:02,423 --> 00:36:06,223
+yalnızca tenme ekranında yapabildiğiniz her şeyi pratik olarak share scriptler atabilirsiniz.
+
+177
+00:36:06,403 --> 00:36:07,624
+Bu da en güzel örneklerinden bir tanesi.
+
+178
+00:36:07,624 --> 00:36:19,883
+Şu an ben Calculus'ta yaptığım yani Calculator'da yaptığım işlemleri komut satımında yapıyorum ama bunu script'e de atabiliyorsunuz.
+
+179
+00:36:20,643 --> 00:36:21,863
+Bu da bu şekilde.
+
+180
+00:36:23,103 --> 00:36:23,903
+Çok güzel durmayacağım.
+
+181
+00:36:24,984 --> 00:36:26,624
+Sadece böyle göstermek amaçlı koymuştum.
+
+182
+00:36:28,143 --> 00:36:29,064
+Şimdi sorgulara gelelim.
+
+183
+00:36:29,063 --> 00:36:41,503
+sizde zaten tanıcık örneklerde şeylerden bahsettim kalkuliste kondition statement yapabileceğiniz ama kendi kondition statement'ları da yapabiliyorsunuz.
+
+184
+00:36:41,503 --> 00:36:50,603
+Yani sadece bir küçüktür bir mi, üç küçüktür bir mi değil değişkenleri de veya değişken içerisindeki değerleri de daha doğrusu karşılaştırabiliyorsunuz.
+
+185
+00:36:50,643 --> 00:36:55,743
+Bir takım stringlerle veya bir takım başka karakterlerle ve sadece büyüktür küçüktür değil büyüktür eşittir.
+
+186
+00:36:55,743 --> 00:37:00,803
+işte bizim o normal program dilerinde gördüğümüz bütün statementları gerçekleştirebiliyorsunuz.
+
+187
+00:37:01,763 --> 00:37:04,003
+Şimdi bunları bir örnek üzerinden anlatayım.
+
+188
+00:37:04,003 --> 00:37:07,443
+Sunuma artık gerek yok noktada.
+
+189
+00:37:20,692 --> 00:37:49,211
+sorgumuz bu çalıştıracağım sorgu bu. Asıl slide daha güzel gösteriyor. En azından parse highlightları var. Tahçifark renkli gözüküyor gibi. Bu şekilde edelim. Bir dosya oluşturuluyormuş. Daha önceden var olan böyle dosya var zaten üzerine yazacak. Bunun içine bir metin koyuyoruz. Koyacağımız metinde örnek bir metin dosyaya koyduk metni. Daha sonra catberry yazıyoruz.
+
+190
+00:37:49,211 --> 00:37:57,751
+eğer sonuç varsa böyle bir dosya vardır diyor. Şimdi siz dosyaları oluşturduktan sonra cat fonksiyonunu çalıştırdığınızda size bir argümentsiz dönüyor.
+
+191
+00:37:58,091 --> 00:38:03,011
+Ve bunun birinci parametrisi dosyanın var olup olmadığıyla ilgili. Tamam mı arkadaşlar?
+
+192
+00:38:03,372 --> 00:38:06,372
+Yani cat'i biz normalde ne için kullanıyorduk? Dosyanın içeriğini açmak için kullanıyorduk.
+
+193
+00:38:07,331 --> 00:38:14,131
+Ama siz bu değişkenleri görmeksiniz değişkenleri, görmeksiz parametreli argümanlarla belirleyebiliyorsunuz.
+
+194
+00:38:14,131 --> 00:38:17,951
+Cat dolar bir yazdığımızda ilk argümanı gösteriyor da bir dolar bu dosya var mı yok mu?
+
+195
+00:38:19,212 --> 00:38:42,291
+şey bakalım, statementlara bakalım, if ile başlıyor, fonksiyonumuz burada bir komut var, komut cat1 yazdığımızda bir ifade dönüyor ve bu bir condition statement ifadesi, true veya false, daha sonra then diyerek yapacak işlemi yazıyoruz, else diyerek de bu statement sağlanmadığı durumda yapılacağımız işlemi yazıyoruz ve kapatırken de fiil yapıyoruz.
+
+196
+00:38:42,291 --> 00:38:43,291
+normalde ki bir if else bloğunda biz normalde diğer programın dilerinde ne yapıyoruz? Ya indent yapıyoruz komut kod bloklarını belirlemek için ya da ne yapıyoruz? Süslü parantez değil mi? Aç kapı parantez, kapa parantez. Statementları bu şekilde belirliyoruz. Şah program olmadığı ise if açtığımız şeyi fiyle kapatıyoruz. Benzer yapı diğer for döngülerinde duracak. Şu an ilk yaptığımız kısımda cat dolar bir yazdığımızı bizde dolar bir olarak şu ifade komutunda öndereceği şey bu dosyana olmadığı
+
+197
+00:39:12,291 --> 00:39:42,052
+ilgili bir bilgi. Varsa dosya mevcut yaz diyoruz. Yoksa yok diyoruz. İkinci ifade ise ne yapmışız? Number of şey, number of argüman. Yani parametre sayıları üçten büyükse diyoruz. İşte bilmem kaç adet parametre giriniz. Eğer değilse işte adet parametre tel değildir yazısı yazıyor. Değil mi arkadaşlar? Bu şekilde devam edecek. Yani condition setlerine sizdiniz gibi değiştirebilirsiniz.
+
+198
+00:39:42,291 --> 00:39:52,231
+3. ve 4. parametreler aynı derdi string ise 3 ile 4 aynı veya 3 ile 4 farklı diyecek gibi.
+
+199
+00:39:52,231 --> 00:39:57,011
+Bir yapalım. Beraber görelim.
+
+200
+00:40:13,364 --> 00:40:15,364
+ne çalışmadı bu?
+
+201
+00:41:31,315 --> 00:41:31,936
+psaniya.
+
+202
+00:42:25,108 --> 00:42:31,327
+zansı çalıştıramadım arkadaşlar. Sonra bakalım. Sorgularla ilgili olan slide ile ilgili. Buna daha sonra bakalım.
+
+203
+00:42:35,476 --> 00:42:58,236
+döngülerle devam edelim. Döngüler de aynı şekilde blokları belirlemek için do, done blokları arasında yazıyoruz. Normalde range belirtmek için share programında çok ufak seçenekler var. İstersek range'in kendilerindeki bütün elemanları set olarak yazabiliyoruz. 1, 2, 3, 4, 5 diye böyle küm olarak yazabiliyoruz.
+
+204
+00:42:58,236 --> 00:43:02,176
+veya bir range belirtebiliyoruz birden beşe kadar gibi.
+
+205
+00:43:02,795 --> 00:43:12,996
+Veya bizim normal program derinde alışık olduğumuz başlangıç ifadesi stop statement ve incremental değil mi?
+
+206
+00:43:13,156 --> 00:43:16,316
+Azalacak mı artacak mı onu belirttiğimiz ifade.
+
+207
+00:43:17,095 --> 00:43:25,816
+Veya bir bir arttırmak yerine mesela şu ifade olduğu gibi birden ona kadar ikişer ikişer arttırarak da ifade edebileceğimiz farklı bir gösterim şekli daha mevcut.
+
+208
+00:43:25,816 --> 00:43:50,336
+Burada tek fark eden şey 4 içerisinde farklı gösterimler var değil mi? Birinde normal bütün ifade yazarken birinde alışıra geldik alışıra gelmiş olduğumuz CD ile gördüğümüz aslında initial statement'tan incremental statement'tan stop condition'ine kadar döngü'ün bütün ihtiyacı olan şeyleri verebileceğimiz parametrik şeklinde de yapabiliyoruz matematiksel fonksiyon gibi.
+
+209
+00:43:50,336 --> 00:44:17,336
+Burada ise birden ona kadar ikişer ikişer arttıracağımız çok daha basit bir ifadeyle nasıl yazabileceksek artık onu gösterecek bir fordöngüsü var. Hepsi mümkün veya bir komuttan dönen listeyi değişken olarak koyup bunu da dönebiliriz. Değil mi? Bu ne yapıyor? Liste komutundan gelen bütün dosya listesindeki bütün her şeyi tek tek dönerek iyi atıyor ve siz bunları döngü içerisine yazdırabiliyorsunuz.
+
+210
+00:44:17,336 --> 00:44:38,895
+veya bunu bu şekilde ifade etmek yerine doğrudan pet verip asterisk komutunu verdiğimiz zaman bu bize yine bilisi dönüyor. Bunu da dönebiliyorsunuz. Bunu yapalım. Bu çalışacaktır herhalde. Şimdi şuraya kadar olan kısım bir iki üç dört beş ilk komutumuz çıktısı.
+
+211
+00:44:38,895 --> 00:44:42,476
+İki.
+
+212
+00:44:42,476 --> 00:44:44,715
+Komutumuz kitsine yine beşe kadar gidiyoruz arkadaşlar.
+
+213
+00:44:45,776 --> 00:44:46,416
+Bakın hepsi aynı.
+
+214
+00:44:46,856 --> 00:44:48,595
+Üç, ilk üç komut zaten aynı şeyi yapıyordu.
+
+215
+00:44:48,715 --> 00:44:49,675
+Aynı şeyi yapmasını bekliyorduk.
+
+216
+00:44:49,715 --> 00:44:49,996
+Yapıyor.
+
+217
+00:44:50,455 --> 00:44:52,515
+Ama diğer komutta ikişer ikişer arttırmasını bekliyoruz.
+
+218
+00:44:52,615 --> 00:44:53,976
+Bir, üç, beş, yedi, dokuz diye gidiyor.
+
+219
+00:44:56,315 --> 00:44:57,255
+Şu bir, on, iki olan.
+
+220
+00:44:59,196 --> 00:45:02,215
+Sonra şu anki mevcut olduğum bulunduğum dizindeki dosyaları yazdırıyor.
+
+221
+00:45:04,255 --> 00:45:06,535
+Yirmi, üçten yirmi altıncı olan satıra kadar olan kısım.
+
+222
+00:45:06,535 --> 00:45:08,535
+Tamam.
+
+223
+00:45:15,092 --> 00:45:17,231
+sağdaki olan kısımda ise ne yapıyoruz?
+
+224
+00:45:18,891 --> 00:45:33,071
+tilde verdiğimiz yani benim homes directory falan bütün komutları tek tek gezerek buradan gelen doküman bir file mi, folder mi yoksa directory mi, file mi pardon, bir file mi yoksa bir directory mi onları yazdırıyoruz.
+
+225
+00:45:34,911 --> 00:45:35,811
+Bunlar varmış.
+
+226
+00:45:37,112 --> 00:45:38,791
+Benim şeyde, onu da göstereyim.
+
+227
+00:45:38,791 --> 00:45:40,911
+Şöyle.
+
+228
+00:45:47,476 --> 00:45:52,715
+aynı şeyler. Burp suite, burp suite. Bunları gösteriyor. Hangileri file, hangileri crosser, onları yazdırıyor.
+
+229
+00:45:55,955 --> 00:46:01,615
+Bu da bu şekilde. Döngüler bu şekilde. For döngüleri. Tabii sadece for döngüleri de while ve until döngüleri de var.
+
+230
+00:46:03,115 --> 00:46:12,316
+Bu da benzer şekilde olduğu için bir statement olacak. Statementları köşeli parantası içinde belirtiyoruz.
+
+231
+00:46:12,316 --> 00:46:35,836
+dolar i ile gelen şey bir değişken çizgi gt ile bunun operantını belirliyoruz. Burada gt greater than yani büyüktür demek. Eğer dolar i'deki değişken sıfırdan büyük ise bu operasyon gerçekleşecek. Doları her seferinde biraz alacak ve bu ifade sıfırdan büyük olana kadar i değeri devam edecek.
+
+232
+00:46:35,836 --> 00:46:36,836
+Bu expression hatırlarsanız matematik operasyonlarını gerçekleştirdiğimiz ifadeydi expression backcode ifadesi yazılıyor dolar i'deki değişkeni her sene de bir azaltıp tekrar i atıyor bu aslında bildiğimiz while i büyüktür sıfırdan i eşittir i eksi bir ifadesinin şans programın dildi ki sintaksı diğerinde ise bir counter değişkenimiz varmış counter değişkeni less than 3 3'den küçük olana kadar
+
+233
+00:47:05,836 --> 00:47:33,615
+country'ı 1 azaltıyoruz. Sadece böyle i eşittir, i-1 yazmak yerine led fonksiyonuyla country, eksi eşittir, 1 gibi daha kolay, yazması daha kolay ve gözü de daha iyi hitap eden formatta da yazılabiliyoruz. Burada da led komutunu görmüş olduk. Daha sonra ekrana echo ile country yazıyoruz. Şimdi bu örneği de çalıştırıyorum sizsiniz. Sonra çalıştırıyoruz örnekler üzerine tekrar konuşuruz.
+
+234
+00:47:53,076 --> 00:48:13,695
+baktığımız zaman ilk döngü sayaç iyi yazdırıyordu. Şu kısım. Ondan geriye gitti. Sıfırdan büyük olana kadar tek tek azalt azalta ekran sayaçları yazdırdı. Daha sonrası counter'la üçten büyük olana kadar devam ettik. Azalta azalta. Tamam, bu da bu şekilde. While do ve until do'ya katılıyor.
+
+235
+00:48:42,035 --> 00:48:46,795
+herhalde other default yani switch de şeyde bildiğimiz c program dediğimiz default denk geliyor.
+
+236
+00:48:48,315 --> 00:48:52,515
+Herhangi bir şeyse herhangi bir şey için yönlendiriyoruz diye böyle bir komut.
+
+237
+00:48:52,875 --> 00:48:59,275
+Aynı if feed olduğu gibi burada da sintaksizdiğim case ve onu testten yazılmış harfleri.
+
+238
+00:49:00,675 --> 00:49:01,756
+Isak şeklinde yazılıyor.
+
+239
+00:49:02,876 --> 00:49:05,335
+Bir de dikkat edeceğiniz şey burada iki tane noktalı virgül var.
+
+240
+00:49:06,016 --> 00:49:10,936
+Yani aslında her bir case statementını birbirine ayırmak için kullandığımız şey iki tane noktalı virgül.
+
+241
+00:49:10,936 --> 00:49:13,096
+Şimdi bu komutada bir bakalım beraber
+
+242
+00:49:13,096 --> 00:49:16,476
+Gördüğünüz gibi
+
+243
+00:49:16,476 --> 00:49:19,855
+Şimdi benden bir şey okumanı söyleyecek
+
+244
+00:49:19,855 --> 00:49:22,016
+Araç diyelim
+
+245
+00:49:24,976 --> 00:49:26,196
+Ev diyelim
+
+246
+00:49:27,616 --> 00:49:30,715
+Bir şey diyelim
+
+247
+00:49:30,715 --> 00:49:32,436
+Herhangi bir şey
+
+248
+00:49:32,436 --> 00:49:33,555
+Tamam
+
+249
+00:49:33,555 --> 00:49:35,315
+Case tekniği de bu şekilde
+
+250
+00:49:35,315 --> 00:49:39,016
+Şimdi benim sunumum bitti arkadaşlar
+
+251
+00:49:39,016 --> 00:49:40,576
+Temel bütün fonksiyon sayı gösterdim
+
+252
+00:49:40,576 --> 00:49:42,836
+şu 15'te bir daha bakalım istiyorsanız beraber
+
+253
+00:50:16,275 --> 00:50:18,655
+17'de bir saniye bakalım.
+
+254
+00:50:36,083 --> 00:50:57,104
+startler etmedim arkadaşlar. 17 soruysuz ama. Case community bitiyor. Case community bitiyor arkadaşlar. Başka şey yok. Göstereceğim. Başka bir şey kalmadı. Sadece şu 15'te galiba çalıştıramamıştık. Onu da beraber bakalım hızlıca. 13 müydü? Evet, sorgular. Adım adım gidelim o zaman.
+
+255
+00:50:57,104 --> 00:51:09,164
+içerideki sorulardan bir tanesi bu debug etmek çok zor. Sizin normal kullandığınız öyle mi? Bakalım 17'ye bakalım o zaman önce.
+
+256
+00:51:18,579 --> 00:51:24,379
+Her yok arkadaşlar, 17 göstermiyoruz, 17 yok. Slide'lere koymadım onu ben. Bu kısım yok.
+
+257
+00:51:28,099 --> 00:51:31,379
+Onu sonraki seneye ekleyeceğiz, o içeriği.
+
+258
+00:51:35,507 --> 00:51:37,368
+sunumda olan kısmını anlatacağım sadece.
+
+259
+00:51:38,807 --> 00:51:42,347
+Şu çok dalmadan şu sorular kısmına beraber bakalım isterseniz.
+
+260
+00:52:01,043 --> 00:52:01,543
+Değil.
+
+261
+00:52:16,820 --> 00:52:19,759
+Evet.
+
+262
+00:52:24,659 --> 00:52:25,679
+Sanırım bu değil mi?
+
+263
+00:52:52,596 --> 00:52:54,596
+taş bir dosya oluşturduk.
+
+264
+00:52:54,596 --> 00:52:56,596
+echo bir şeyler.
+
+265
+00:52:58,596 --> 00:53:00,596
+Bunu alıp
+
+266
+00:53:00,596 --> 00:53:04,596
+sonra bir dosya cxt'ye attık.
+
+267
+00:53:04,596 --> 00:53:06,596
+ekot bir şey der.
+
+268
+00:53:09,396 --> 00:53:12,655
+Evet, argüman vermek gerekir muhtemelen. Doğru söylüyorsun.
+
+269
+00:53:18,099 --> 00:53:20,099
+İlki birinci argümanı
+
+270
+00:53:20,099 --> 00:53:24,279
+İkinci argümanda ne verilmiş mesela?
+
+271
+00:53:27,599 --> 00:53:29,440
+Test çalışacağı şekilde yapalım.
+
+272
+00:53:30,359 --> 00:53:31,980
+Bir, iki, üç diyelim mesela.
+
+273
+00:53:34,139 --> 00:53:35,179
+Çalışmadı. Bir, iki.
+
+274
+00:53:36,099 --> 00:53:37,959
+Hocam, echo yazamadınız ilk başta.
+
+275
+00:53:38,860 --> 00:53:39,520
+Bir saniye.
+
+276
+00:53:41,440 --> 00:53:41,839
+Efendim?
+
+277
+00:53:44,159 --> 00:53:45,979
+Echo'yu yazamadınız da.
+
+278
+00:53:46,780 --> 00:53:47,299
+Tamam.
+
+279
+00:53:47,299 --> 00:54:17,280
+Ondan vazgeçtim. Argümanlar deneyeceğim. Evet argümanlar unutmuşuz arkadaşlar çalıştırırken. Kodu çalıştırırken arkadaşlar komutu buraya argüman girmemiz gerekiyor. İlk argüman dosyanı zaten. Ama kodun geri kalan kısmında da argümanlar olduğu için tabi okumadan çalıştırmaya çalışırsak böyle olur. Biz de diğer kodun statementlarda hep argümanları, üçüncü, dördüncü argümanları istiyoruz. Ama ben onları kodu çalıştırırken vermiyorum. Dolayısıyla çalışmıyor. O yüzden buraya argümanları veriyorum.
+
+280
+00:54:17,299 --> 00:54:45,219
+Mesela ilk argüman dosyanın kendisi. İkinci argüman boşluk bırakarak görüyorum. Mesela üç girdim. Sonra dört gireyim, beş gireyim. Dört tane argüman var. Bir tanesi dosyanın kendisi. Çalıştırdığım zaman böyle bir file veya direktörü yoktur diyor. Daha sonra üç isimli dosya mevcut değil. O mesaj sanırım şurada. Şöyle bakalım.
+
+281
+00:54:48,980 --> 00:55:11,400
+Evet, şurada. Gördüğünüz gibi. Şunu tarayamayamak çok kötü tabi. Burada daha sonra 3 adet parametre yeterli değil demiş. Burada parametre sayısının 3'ten büyük olup olmadığını kontrol ediyoruz. Şu number of variable demek. Yani gelen argümanlar.
+
+282
+00:55:11,400 --> 00:55:35,599
+sayısı 3'den küçük, büyük değil, büyükse parametre girdiniz diyor. Parametre sayısı tel değildir diyor. Demek ki 3'e de parametre tel değilmiş. Çünkü creator'dan değil. Bunu hemen diğer türlü deneyelim. Mesela daha fazla argüman verelim. 4, 3, 2, 1 diyelim. 5 tane argüman oldu. Bu sefer 4'e de parametre girdiniz şeklinde yazıyor.
+
+283
+00:55:35,599 --> 00:56:05,499
+Bu tarafa baktığımızda ne yapıyoruz? Bir sonraki kondition'da gerilen iki parametrenin bir meşhur olup olmaması durumuyla aynı ise aynı farkı ise fark demiş. Biz iki ile biri girmişiz. Bunlar farklı olduğu için farklı yazmış. Bu şekilde devam ediyor. Son parametremiz, argümanımız, pardon ilk argümanımız dosyanın kendisiydi. Eğer okunabilir bir dosyaysa biz buna çizgi re ile ifade ediyoruz.
+
+284
+00:56:05,499 --> 00:56:07,579
+yazılabilir bir dosyası çizgi V ile ifade ediyoruz.
+
+285
+00:56:07,659 --> 00:56:08,879
+Writable veya readable diye.
+
+286
+00:56:09,279 --> 00:56:17,799
+Bunları da arkadaşlar bir dosyanın okunaması ile ilgili de Shell'de bu şekilde conditional
+
+287
+00:56:17,799 --> 00:56:18,719
+osyure biliyorsunuz.
+
+288
+00:56:19,499 --> 00:56:20,039
+Tamam mı?
+
+289
+00:56:20,679 --> 00:56:22,439
+Dosyalara ne yazılabilir ne yazılamaz diyor.
+
+290
+00:56:22,919 --> 00:56:24,099
+Yani aslında şöyle bir şey yazsak.
+
+291
+00:56:24,259 --> 00:56:26,659
+Buraya da bir dosya.txt yazsak.
+
+292
+00:56:32,307 --> 00:56:39,248
+4'e gitti, pardon. 4 yazdığımız ifade yerine yazacağız onu. Şöyle şunları kaldırıyorum.
+
+293
+00:56:45,043 --> 00:56:57,163
+bakın ne yazdı? Bir dosya tx'de yazılabilir bir dosyadır. Yani ilk verdiğim parametrede gelen şey dosya ismi yazılabilir bir dosya yazılabilir bir dosya yazıyor. Bu şekilde, bu örnekte bu şekildeydi arkadaşlar.
+
+294
+00:56:58,843 --> 00:57:01,064
+Çalıştırmamız nedeni argümanları eksik yirmemizmiş.
+
+295
+00:57:02,683 --> 00:57:06,203
+Sunumla ilgili döngülerden bahsettim.
+
+296
+00:57:06,943 --> 00:57:08,603
+Sintakslarını öğrenmeniz açısından önemli.
+
+297
+00:57:09,503 --> 00:57:12,043
+If statementları ve while statementları birbirine çok benziyor.
+
+298
+00:57:12,043 --> 00:57:22,183
+dolarla erişebildiğimiz değişkenleri işte greater than, less than, lay operantları belirleyip sonra da neyden büyük veya neyden küçük onu belirliyoruz.
+
+299
+00:57:22,183 --> 00:57:30,043
+Sabit değişkenlerimizi belirleyebiliyoruz. Bu şekilde döngülerde de farklı rencler olduğundan bahsettim.
+
+300
+00:57:30,043 --> 00:57:55,043
+dosyaların tiplerini ve writeable mı, readable mı onları statementlarda parametre gibi yani başına score şey dash işareti atarak, tır atarak verilebiliyoruz. Diğerleri de aynı şekilde Vivian oldukça benziyor. Burada led fonksiyonunu ekstra gösterdim. Sağ alışıda geldik formda yazmak istiyorsanız led fonksiyonunu kullanabiliyorsunuz.
+
+301
+00:57:55,043 --> 00:58:00,243
+switch case komutunda şu noktada bir ülkeleri dikkat etmeniz gerekiyor. Bu önemli bir separatör.
+
+302
+00:58:00,984 --> 00:58:06,904
+Switch case yaptığınız her şeyi if statement'ta da yapabilirsiniz tabii ki. Bu serbestlik var ama genelde gözü daha iyi hitap etmesi açısından
+
+303
+00:58:06,904 --> 00:58:08,664
+case komutunu kullanabilirsiniz.
+
+304
+00:58:11,304 --> 00:58:13,564
+Onun için AVK komutundan bahsettim.
+
+305
+00:58:14,484 --> 00:58:18,944
+TR komutuyla karakter dönüşümü veya karakter string dönüşümleri bile yapabiliyorsunuz.
+
+306
+00:58:18,944 --> 00:58:33,043
+Pipe komutunu zaten yeterince kullandık. Bu hafta bu kadar da anlatacaklarım. Önceki hafta yaptıklarımla birlikte değerlendirecek şekilde sunumu toparlayıp bize bugün içinde paylaşacağım.
+
+307
+00:58:34,264 --> 00:58:40,503
+Sunumda yaptıklarınızı birebir test edebilirsiniz. Ama ben olabildiğince sunumdaki her şeyi göstermeye çalıştım size arkadaşlar.
+
+308
+00:58:41,564 --> 00:58:47,344
+Buraya kadar anlatacaklarım sizin herhangi bir şark programlama yazmanız için yeterli. Bütün temel fonksiyonları.
+
+309
+00:58:47,343 --> 00:59:14,003
+Zaten 3. 4. sınıf öğrencisiniz yani azımız çok iyi biliyorsunuz. Ben ama sadece burada sintaxlarla ilgili ve çalışma şekliyle ilgili diğer programın dillerinden farklılıklarını göstermekte amacım. Bütün program dillerindeki genel fonksiyonları gösterdim size. Belki bir tek funksiyonları göstermemiş olabilirim ama onu da herhalde sınavda eklememişiz. Önceki senelerde göstermemiştim, bu sene de göstermedik ama herhalde önümüzdeki sene onları da eklemeyi düşünüyorum.
+
+310
+00:59:14,003 --> 00:59:17,363
+mümanlatacaklarım bu kadardı.
+
+311
+00:59:18,423 --> 00:59:21,883
+Sormak istediğiniz bir şey varsa chat yazabilirsiniz.
+
+312
+00:59:24,463 --> 00:59:31,623
+Bu sunumda yaptığımız şeylerle ilgili size bir proje verebiliriz.
+
+313
+00:59:31,683 --> 00:59:33,983
+Ama sınava dair olmayacağı konusunu hocanıza sormanız lazım.
+
+314
+00:59:34,643 --> 00:59:36,903
+Hoca gelip benden sınav sotüs isterse ben bir şeyler veririm.
+
+315
+00:59:37,343 --> 00:59:38,003
+Hocaya duruma göre.
+
+316
+00:59:40,263 --> 00:59:43,563
+Geçen hafta tekrar izlemek istiyorsan kayıtlar bende değil.
+
+317
+00:59:44,003 --> 01:00:13,683
+Ben zaten sizin gibi misafir olarak görüyorum bu toplantıya. Kayıtlar bende durmuyor. Cihan Hoca'ya rica edersiniz size gönderir diye düşünüyorum. Hoca'ya sormanız lazım onu da aynı şekilde. Başka sorusu olan var mı? Arkadaşlar ben şart programının uzmanı değilim. Linux'ta kullanmıyorum açıkçası çok fazla. İhtiyacım olduğu zaman kullanıyorum. Ama emin olun hayatınızın belli bir döneminde
+
+318
+01:00:13,683 --> 01:00:41,803
+share programı kullanmanız gerekecektir. Yani özellikle bir takım programları bilgisayarınızı kurmak için en basitinden ben veri bilimi çalışacağım, benim iç işim olmaz şerle falan diye düşünebilirsiniz ama bir gün bir program kurmanız gerekecek ve yine bu komutlarla karşılaşacaksınız. O yüzden aşina olmanızda fayda var, uzman olmanıza gerek yok ama bunu görünce bu kodu ne yaptığını anlamanız açısından bence önemli. Umarım keyif almışsınızdır.
+
+319
+01:00:43,539 --> 01:01:10,639
+Aynı şekilde bu dönem bir sonraki laplarda interprocess communication akabinde threadleri göreceksiniz. Dönem sonunda da kernel modüllerinden bahsedeceğiz size. Belki bu bütün hepsini kapsayan, share programlamayı da kapsayan size bir proje verilecek. Benim size verdiğim şeyler belki doğrudan kullanmayacaksınız ama benim size verdiğim şeyler bir starting point. Yani siz buradan başlayarak kendinize proje için bir şeyler katmanız gerekecek.
+
+320
+01:01:10,639 --> 01:01:39,839
+benim amacım size nasıl oldu nasıl çalıştıklarını göstermekti. Umarım keyif almışsınızdır. Ben de iki senedir geçen sene vermediğim için ders açıkçası biraz pastanmışım. Unutmuşum fonksiyonlarının ne yaptığını. Çünkü geçen sene pandemiden dolayı veremedik. En son iki sene önce vermişim bu dersi. O yüzden birazcık şey oldu. Benim için de hatırlama amacıyla iyi oldu. Beraber çalıştığı olmamız. Ön ders projeyi biz mi belirliyoruz diye sormuş.
+
+321
+01:01:39,839 --> 01:01:54,840
+projeyi biz size vereceğiz. Muhtemelen ne yapmanız gerekir ama tabii ki tasarım tamamen size kalacak. Öyle gözüküyor. Yani algoritma analizi, veri yapıları gibi derslerde size verilen projeler gibi problem belli olacak ama sizin kendi çözümümüzü üretmeniz beklenecek.
+
+322
+01:01:59,059 --> 01:02:04,520
+Sizden bir kernel modül istenecek muhtemelen, emin değilim. Böyle de söyleyelim, böyle de ipucu vermiş olayım.
+
+323
+01:02:06,919 --> 01:02:12,879
+Ben de bilmiyorum henüz ne verileceğini. Öncelerimiz konuşmadık. Ama bu şekilde planlıyoruz. Herhalde böyle de verilecek size.
+
+324
+01:02:14,879 --> 01:02:16,059
+Başka sorusu olan var mı?
+
+325
+01:02:22,900 --> 01:02:25,679
+Ben teşekkür ederim arkadaşlar. Hoşçakalın.
+
+326
+01:02:28,099 --> 01:02:29,019
+İyi akşamlar hocam.
+
+327
+01:02:29,719 --> 01:02:30,759
+İyi akşamlar, teşekkürler.

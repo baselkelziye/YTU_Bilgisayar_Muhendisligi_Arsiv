@@ -1,0 +1,1887 @@
+1
+00:00:01,780 --> 00:00:02,780
+No, çöğledim.
+
+2
+00:00:53,332 --> 00:00:55,131
+Evet, merhaba arkadaşlar.
+
+3
+00:00:56,971 --> 00:00:57,971
+Merhaba hocam.
+
+4
+00:00:58,792 --> 00:01:00,591
+Süper, ses geliyor, görüntü var.
+
+5
+00:01:01,771 --> 00:01:03,991
+Şeyi görüyorsunuz, sorunu görüyorsunuz.
+
+6
+00:01:04,551 --> 00:01:05,491
+Bir problem yapalım.
+
+7
+00:01:05,792 --> 00:01:06,591
+Tamam, süper.
+
+8
+00:01:08,131 --> 00:01:09,831
+Yani saat oldu aslında ama
+
+9
+00:01:09,831 --> 00:01:13,731
+5 dakika falan bekleyelim, biraz daha bir katılım olmasın.
+
+10
+00:01:14,731 --> 00:01:15,971
+Sonra başlayalım.
+
+11
+00:01:16,571 --> 00:01:18,951
+Zaten önemli bir şey de olacak, duyurum da olacak.
+
+12
+00:01:19,831 --> 00:01:21,211
+Herkes geldiğinde yapmış olurum.
+
+13
+00:01:23,331 --> 00:01:27,331
+Bu arada size sormak istediğiniz bir şey varsa sorma arkadaşlar.
+
+14
+00:09:56,371 --> 00:10:23,911
+Evet, merhaba arkadaşlar. Şimdi bir ufaktan başlıyorum. Saat ilerliyor. Genel metik yer arkadaşlar. Olanlarla devam edelim. Öncelikle şeyi söyleyeyim. Haplaya salı günü yani 21'inde laboratuvar saatinde yani saat 5'te 17'de ikinci vizeniz var.
+
+15
+00:10:23,911 --> 00:10:30,732
+yine OBS üzerinden mesaj olarak da herkese atacağım bütün gruplara vesaire ama
+
+16
+00:10:30,732 --> 00:10:37,711
+ayın 21'e ikinci vize yani önümüzdeki hafta ikinci vizeniz var.
+
+17
+00:10:39,351 --> 00:10:40,232
+Aklınızda olsun.
+
+18
+00:10:43,331 --> 00:10:45,511
+Yine benzer şekilde yapacağız sınavınızı.
+
+19
+00:10:45,611 --> 00:10:46,971
+Çoktan çok seçmeli olacak.
+
+20
+00:10:47,971 --> 00:10:49,311
+Test şeklinde olacak.
+
+21
+00:10:49,311 --> 00:11:03,111
+son gün son dakika nereye kadar konuşursak onların hepsi de dahil olacak. Var mı sormak istediğiniz bir şey konuyla alakalı?
+
+22
+00:11:15,283 --> 00:11:37,603
+Peki. Şimdi, scheduling algoritmalarıyla devam edeceğiz. Geçen hafta en son şeyi konuştuk. Bir saniye. Tabii ki daha iyi. Yani son gün son dakika ne konuştuysak en baştan oraya kadar her şey daha iyi.
+
+23
+00:11:37,603 --> 00:11:41,583
+ayırmıyoruz. Her şeyden sorumlusunuz.
+
+24
+00:11:43,683 --> 00:11:45,523
+K'de de benzer şekilde olacak.
+
+25
+00:11:45,644 --> 00:11:47,464
+K'de de benzer şekilde olacak herhalde.
+
+26
+00:11:47,644 --> 00:11:49,684
+Hepsinden sorumlusunuz konuştuğunuz şeyleri.
+
+27
+00:11:50,883 --> 00:11:53,063
+Hatta şeyde de sorumlusunuz.
+
+28
+00:11:53,063 --> 00:11:58,684
+Uygulama haftalarında uygulama saatlerinde yaptığınız kişilerden de sorumlusunuz.
+
+29
+00:12:00,723 --> 00:12:04,324
+Şimdi en son şeyi konuşmuştuk.
+
+30
+00:12:04,383 --> 00:12:06,563
+Priority scheduling'i konuşmuştuk.
+
+31
+00:12:07,603 --> 00:12:12,443
+Prior to Scheduling'de çeşitli problemlerden de bahsetmiştik.
+
+32
+00:12:12,443 --> 00:12:14,843
+Yani Prior to Scheduling şey anlamında güzel.
+
+33
+00:12:16,124 --> 00:12:21,864
+Bazı işleri önceliklendirebilmek, onların beklemesini minimuma indirebilmek anlamında güzel.
+
+34
+00:12:22,084 --> 00:12:29,283
+Fakat özellikle yükün dağılımına bağlı olarak yaşama durumunuz var.
+
+35
+00:12:29,283 --> 00:12:38,904
+starvation yaşama durumumuz var ya da proseslerin uzun süre bekletilmesi durumu var düşük önceliklerin.
+
+36
+00:12:38,904 --> 00:12:51,864
+Dolayısıyla ne yapıyorduk orada da sorunu çözmek için priorityleri değiştirmek adına düşük öncelik değil yüksek önceliklerle getirmek adına aging mekanizmasından faydalanıyordu.
+
+37
+00:12:52,383 --> 00:12:56,803
+Şimdi konuşacağımız algoritma, scheduling algoritması biraz daha farklı bir algoritma.
+
+38
+00:12:56,803 --> 00:13:06,123
+ne için farklı? Aslında baktığınız zaman first come first serve'de benzer bir yapı ama first come first serve'de ne yok?
+
+39
+00:13:06,123 --> 00:13:25,403
+Preemption yok. Burada konuşacağımız algoritmada round robin'de preemption var. Öncelikle farkı o. Bir diğer yapısı farklı. Özellikle time share sistemler için yani biraz da interaktif olacak sistemler için geliştirilmiş bir algoritma.
+
+40
+00:13:25,403 --> 00:13:36,583
+neden dolayı çalışma yapısı gereği ne yapıyoruz? Hani first come first serve'ü mesela ne yapıyorsunuz? Başlıyorsunuz, ilk geleni çalıştırıyorsunuz, o bitince öbürünü çalıştırıyorsunuz.
+
+41
+00:13:36,683 --> 00:13:46,023
+Project 3 based olduğu zaman düşük öncelikli bir proses çalışırken yüksek öncelikli bir proses geldiğinde, preemption da varsa doğrudan yüksek öncelikli çalıştırıyorsunuz.
+
+42
+00:13:46,023 --> 00:13:53,144
+Bu ne oluyor? Aslında prosesler arasında bir ekstra beklemenin oluşmasına neden oluyor.
+
+43
+00:13:53,144 --> 00:14:15,104
+bunu ortadan kaldırmak etkileşimli bir sistemde daha efektif çalışmak adına ortaya atılmış bir yapı. Ne yapıyoruz? İşlemci zamanlı parçalara belirliyoruz. Time quantum diye. Ve o şeyde de sistem içerisindeki bütün işlemleri de CPU'da sırayla o time quantum diyere kadar çalıştırıyoruz.
+
+44
+00:14:15,103 --> 00:14:31,003
+tabi ki prosesin o burstü şey içerisinde time quantum içinde tamamlanıyorsa ondan daha kısaysa ne olacaktır? O tamamlandığı için kuyruktan bir başka proses alınıp çalıştırılmaya devam edecektir.
+
+45
+00:14:31,004 --> 00:14:59,584
+Baktığımız zaman aslında günümüzde şey içerisinde ne duru mevcut işletim sistemleri içerisinde doğrudan burada anlattığımız haliyle değil ama daha sonra konuşacağımız yapılarla beraber bir şekilde kullanılan bir algoritma. O anlamda da önemli. Özellikle yani şeyde kullandığımız desktop environment kapıltında kullandığımız işletim sistemlerin scheduling.
+
+46
+00:15:00,307 --> 00:15:21,207
+yapısı içerisinde doğrudan kullanılan bir algoritma. Ne demek istiyorum? Mesela Linux'un içerisinde complete fair queuing yapısı var. Windows'da da multi-level feedback queue var ama hani round robin destekli bir yapısı var. Dolayısıyla bir şekilde bütün sistemlerde kullanıyoruz. Yaptığımız şey,
+
+47
+00:15:21,207 --> 00:15:43,247
+demin de ifade ettim. Her prosesi, redicure'daki her prosesi aslında sırayla alıp işlemcide belirlediğimiz time point'in değeri kadar çalışmasını sağlamak, sonrasında kuyruğun sonuna koymak. Eğer çalışma için hala devam etmesi gerekiyorsa.
+
+48
+00:15:43,247 --> 00:16:10,707
+Dolayısıyla circle'ın bir kuyruk yapısı var aslında. Buradaki önemli kriter ya da önemli durum şu. Bir time quantum değeri belirliyoruz dedik. O time quantum değerinin ne olacağı aslında sistemin performansını doğrudan etkiliyor.
+
+49
+00:16:10,708 --> 00:16:24,587
+Şimdi bir örnek üzerinden olması lazım burada. Konuşalım. Sonrasında o Q değerinin sistemin performansını nasıl etkilediğini, ne olması gerektiğini, ne olursa ne olacağını da ayrıca konuşuruz.
+
+50
+00:16:24,587 --> 00:16:40,007
+Şimdi bakın burada şu meşhur 2433'lük örnek var. Hatırlarsanız bunu bu sırayla geldiğinde first come first serve yapıldığında işte P2'nin 24, P7'nin P3'ün 27
+
+51
+00:16:40,007 --> 00:17:06,168
+toplam 51 ortalama 17 birim bir waiting süresi vardı. Uzun sürede p2 ya da p3'den herhangi bir şey elde etmek mümkün değildi. Bu o örnek aynen devam. Burada ne yapıyoruz? Burada kuyruğumuzda p1, p2, p3 var. Her bir için time quantum değeri standart yani sistem genelinde bir time quantum değeri var. Dört birim seçilmiş. Bununla devam ediyoruz.
+
+52
+00:17:06,168 --> 00:17:34,748
+Şimdi böyle yaptığınız zaman P1'i çalıştırdınız 24 birimlik bir burst varmış zaten 4 birim çalıştırdınız kuyrukta P2 ve P3'ün arkasına koydunuz P1'i çalıştırdınız 3 birim zaten time countundan küçük dolayısıyla ne olacak şeyin bitmesini beklemeyeceğiz time countu proses bittiğine göre dolayısıyla bir başka prosesi alacağız yerleştireceğiz sonra P1 kuyrukta zaten P1'den başka kimse kalmadı
+
+53
+00:17:34,748 --> 00:17:40,268
+her time count'un bittiğinde aslında tekrar P1'i çalışmak üzere schedule edeceğiz.
+
+54
+00:17:43,848 --> 00:17:48,328
+Baktığınız zaman bu yapı içerisinde şimdi
+
+55
+00:17:52,596 --> 00:18:16,596
+Q değerini küçük tutmak neye neden oluyor? Context switch süresinin sayısının fazlalaşmasına neden oluyor. Ne demek istiyorum? Şimdi time quantum değerine 4 değil de, parz misal 1 olduğunu düşünün. Bu durumda ne olacaktı? P1 bir birim çalışacak, P2'ye geçeceğiz, bir birim çalışacak, P3'e geçeceğiz, bir birim çalışacak,
+
+56
+00:18:16,596 --> 00:18:43,496
+P1, P2, P3, P1, P2, P3 sonra da hep P1 şeklinde gidecekti. Dolayısıyla burada şu an baktığımızda 1, 2, 3, 4, 5, 6, 7, 7 tane context switch var. Öbür türlü yaptığımız zaman context switch sayısı otomatikman aslında 20 küsürlere fırlayacaktı.
+
+57
+00:18:43,495 --> 00:19:12,855
+Bu noktada şuna dikkat etmemiz lazım. Context switch zamanı çok da istediğimiz bir şey değil. Yani devamlı context switch yaparsak ekstra ekstra ufak değerler de olsa üstte biriken bir overhead oluşturuyoruz. Dolayısıyla bizim time quantum değerimiz şeyle kıyaslandığında context switch için harcadığımız zamanla kıyaslandığında büyük olmalı.
+
+58
+00:19:13,496 --> 00:19:19,616
+ve fakat hani interaktifliği sağlamak istiyorsak da çok büyük olmaması lazım.
+
+59
+00:19:21,676 --> 00:19:27,596
+Çünkü bunu çok uzun yaparsanız time quantum değerini bu neye dönecektir?
+
+60
+00:19:27,836 --> 00:19:29,716
+First come first serve'e dönecektir.
+
+61
+00:19:29,896 --> 00:19:32,996
+Yani burada time quantum değerini bu örnek üzerinden düşündük.
+
+62
+00:19:33,256 --> 00:19:37,276
+Vereceğimiz maksimum 24 gibi bir değer bölü olsak ne olacak?
+
+63
+00:19:37,476 --> 00:19:39,015
+24 tamamlayacak.
+
+64
+00:19:39,476 --> 00:19:41,496
+Yani p1 baştan sona çalışacak.
+
+65
+00:19:41,495 --> 00:19:44,895
+o sırada da p2 ve p3 ne yapacak? Bekleyecek.
+
+66
+00:19:45,435 --> 00:19:48,575
+Dolayısıyla time quantum değerinin seçimi kritik.
+
+67
+00:19:48,575 --> 00:20:01,695
+Şeye baktığınız zaman, mevcut işletim sistemlerine baktığınız zaman da bunun burada verilen aralık civarında olduğunu görürsünüz.
+
+68
+00:20:01,695 --> 00:20:26,215
+yani şey noktasında Windows tarafında yanlış hatırlamıyorsam 20 milisaniye gibi bir şey olması lazım. Linux tarafında da gerçi oradaki skecimiz biraz daha karışık ve karmaşık konuşacağız ama 100 milisaniye civarında. Dolayısıyla hakikaten bu verilen 10 ile 100 arasındaki bir değer oluyor genelde.
+
+69
+00:20:26,215 --> 00:20:34,456
+tabi ki bu aslında biraz da sisteminizin çalışma hızı, performansı vesairesiyle de alakalı.
+
+70
+00:20:35,375 --> 00:20:49,395
+Hatta şeyde konuşacağız birazdan çalışma sisteminizin yani mimarinizin tek işlemci mi, birden fazla işlemci mi olduğuna bağlı olarak da değişen bir durum.
+
+71
+00:20:49,396 --> 00:21:13,076
+Demin söylediğim şey time quantum değeriniz arttıkça context switchleriniz düşüyor ve fakat şunu da unutmamak lazım. Time quantum değeriniz büyüdükçe aslında first time first time first time bir farkınız kalmıyor. Bu da ne demek? Aslında bir taraftan şeyinizi arttırıyorsunuz demek. Waiting time'inizi arttırıyorsunuz demek.
+
+72
+00:21:22,867 --> 00:21:23,747
+Şimdi burada
+
+73
+00:21:23,747 --> 00:21:28,947
+ekstern bir noktayı da konuşacağız.
+
+74
+00:21:34,788 --> 00:21:45,887
+Şey yaptığınız zaman, dikkat edin grafiğe, böyle bir set bölünmüş, p1, p2, p3, p4 diye dört tane process'in olduğu, burst'leri de 6, 3, 1 ve 7.
+
+75
+00:21:45,887 --> 00:21:48,767
+Şimdi burada da time quantum değerinin
+
+76
+00:21:48,767 --> 00:21:52,007
+değişimine bağlı olarak
+
+77
+00:21:52,007 --> 00:22:01,107
+sistemin ortalama turn around timeını görüyorsunuz. Time quantum değeri 1 olduğu zaman turn around değeri 11.
+
+78
+00:22:01,327 --> 00:22:11,687
+2 olduğunda 11.5, 3 olduğunda 11'in altına düşüyor. 4 olduğunda 11.5'a çıkıyor. 5 olduğunda 12'ye çıkıyor.
+
+79
+00:22:11,687 --> 00:22:25,548
+6 olduğunda 10.5'a iniyor. 7 olduğunda hala 10.5'da. Bu biraz demin söylediğimle çelişkili gibi gözükse de aslında burada şunu görüyorsunuz.
+
+80
+00:22:25,548 --> 00:22:36,707
+Time quantum değeriniz doğrudan böyle en uzun proses süresine eşit olunca turnaround time'ınız düşüyor haliyle.
+
+81
+00:22:36,707 --> 00:23:06,607
+düşmesi lazım zaten ama bu grafiğe bakınca sadece turnaround time'a bakıyoruz unutmayın. Waiting time açısından bakmadık henüz. Dolayısıyla iki farklı şeyden, kriterden bahsediyoruz. Turnaround time'ın uzaması demek aslında process sistemde daha uzun kalması, execution time'ından daha uzun sürede tamamlanması demek. Eğer derdimiz responsif bir sistem üretmekse zaten baktığımız şey turnaround time değil,
+
+82
+00:23:06,707 --> 00:23:17,107
+Daha çok waiting time olacaktır. Bunun üzerinden gideceğiz. Ama burada hani şey gibi bir kurala götürebiliriz. Yani
+
+83
+00:23:17,107 --> 00:23:30,487
+proseslerin yüzde sekseninin burstünden daha şey bir uzun bir time quantity belirlemek turnaround time'ı daha makul seviyelerde tutuyor. Yani
+
+84
+00:23:30,487 --> 00:23:53,547
+burada baktığınız zaman 1, 2, 3, 4 tane proses var. Bunların %83 tanesi demek. Yani en kısa 3'ü sıralasınız. 1, 3, 6. Time quantum 6 belirlemek otomatikman bunun turnaround time'ını efektif hale getiriyor. Ama waiting time açısından da ayrıca incelemek lazım.
+
+85
+00:23:53,547 --> 00:24:13,767
+Şimdi bir başka yaklaşım sistemde birden fazla Q'nun oluşturulması ve bu Q'lara ayrı ayrı hizmet verilmesi ya da ayrı ayrı davranılması farklı şekillerde davranılması.
+
+86
+00:24:13,767 --> 00:24:42,827
+bunu niçin kullanıyoruz ne zaman kullanıyoruz aslında farklı şekillerde karakterize edebileceğimiz kategorilendirebileceğimiz proseslerimiz olduğunda kullanıyoruz bu mesela basit bir şekilde slide'da yazdığı gibi foreground ve background şeklinde ikiye bölebileceğimiz şeyler de olabilir misal bir kullanıcı bilgisayardan bir desktoptan bahsediyorsak hani
+
+87
+00:24:42,827 --> 00:24:51,487
+kullanacağının etkileşeme girdiği şeyler, uygulamalar bizim için foreground yapısında, interaktif yapıda olabilir.
+
+88
+00:24:52,067 --> 00:25:11,587
+Ve fakat sistemin çalışması için önemli olan, ya da sistemin çalışması için arkada yapılması gereken uzun süreli batch şeyinde, karakteristiğinde, proseslerde
+
+89
+00:25:11,588 --> 00:25:17,188
+background işleri olarak kanılabilir. Ne yaparız? Öncelikle foregrounddaki işleri öncelikle
+
+90
+00:25:17,263 --> 00:25:33,784
+verir. Bunları tamamlamaya çalışırız. Oradan kalan zamanda da arka taraftaki işleri yapmaya çalışırız. Aslında hani her ne kadar yaptığı bu olmasa da daha doğrusu yapmaya çalıştığı bu olsa da becerdiği bu olmuyor Windows'da ama Windows'da da böyle bir yapı var.
+
+91
+00:25:33,784 --> 00:25:46,604
+baktığınız zaman bir şekilde ön taraftaki proseslerden kalan zamanda arka tarafta malware detection çalıştırmaya çalışıyor, disk scan çalıştırmaya çalışıyor vs.
+
+92
+00:25:46,604 --> 00:25:55,863
+Ama geldiğimiz noktada genelde o çalışan prosesler öyle bir noktaya geliyor ki sizin ön tarafta çalışmanızı engelliyor neredeyse.
+
+93
+00:25:55,863 --> 00:26:14,963
+Şimdi bu örnek üzerinden gidecek olursak foreground ve background diye ayırdığımızı şey yapalım. Bu yapı içerisinde bu isimlerinde bu sistematik içerisinde bir proses hangi Q'da başlıyorsa o Q'da hayatına devam ediyor.
+
+94
+00:26:15,444 --> 00:26:24,463
+Ve her Q'da da farklı şekillerde bir scheduling algoritması kullanıyor. Olabilirsiniz. Misal işte foreground'da round robin kullanıyorsunuz. Neden?
+
+95
+00:26:24,463 --> 00:26:34,703
+zaten interaktif adamları çalıştıracağız ve dolayısıyla herkesin biraz biraz şey yapıyor olması lazım, ilerliyor olması lazım, time shape yapı olması lazım.
+
+96
+00:26:35,124 --> 00:26:37,043
+Dolayısıyla round robin yapmak mantıklı.
+
+97
+00:26:37,963 --> 00:26:40,183
+Background'da da first time first third çalışalım.
+
+98
+00:26:40,343 --> 00:26:43,303
+Yani yapılacak işleri sıraya koyalım, sırayla gitsin.
+
+99
+00:26:43,303 --> 00:26:45,303
+Bunu yaparken...
+
+100
+00:26:48,915 --> 00:27:02,915
+Bu iki kuyruk arasında da ne yapıyor olmamız lazım? Bir scheduling yöntemi belirliyor olmamız lazım. Peki nasıl olabilir? Birkaç şekilde yapabilirsiniz bunu. Bir hani böyle fix bir kural üzerinden gidebilirsiniz.
+
+101
+00:27:04,915 --> 00:27:17,915
+Misal, backgrounddaki herhangi bir işin çalışması için, foreground queuesundaki bütün işlerin bitmiş olması lazım. Herhangi bir iş olmaması lazım. O zaman background'ı çalıştırırım diyebilirsiniz.
+
+102
+00:27:17,915 --> 00:27:28,596
+Bir diğer şey dinamik olarak CPU kullanımı 2Q arasında dengelemeye belli bir oranda dengelemeye çalışırsınız.
+
+103
+00:27:28,596 --> 00:27:37,676
+Mesela işte burada verdiği örnekteki gibi foreground işleri CPU time'unun %80'ini alsın.
+
+104
+00:27:38,355 --> 00:27:42,355
+Öbür taraftan da background işleri CPU time'u %20'sini alsın.
+
+105
+00:27:42,776 --> 00:27:45,335
+Böyle bir yapı da oluşturabilirsiniz.
+
+106
+00:27:45,335 --> 00:28:08,915
+şeyde hiçbir sınırınız yok. Kuyruk sayısı bu kuyruklar üzerinde kullandığınız scheduling algoritması vesaireyle ilgili hiçbir sınır yok. Dolayısıyla birazdan göreceğiz bir başka versiyon multi-level feedback queue'ünü konuşacağız. Orası içinde burası içerisinde geçerli olan şey şu.
+
+107
+00:28:08,915 --> 00:28:24,216
+genel ismi multi-level queue scheduling. Siz bunun içerisindeki queue'ların sayısını üzerinde çalıştığınız algoritmayı değiştirince aslında her seferinde yeni bir yöntem oluşturmuş oluyorsunuz.
+
+108
+00:28:24,215 --> 00:28:51,035
+Şimdi bu yapıyı biraz daha dinamik hale getirirseniz yani belli bir geri bildirim mekanizması oluşturur ve buna bağlı olarak işlerin yani proseslerin farklı kuyruklar içerisinde ilerlemesine izin verirsiniz.
+
+109
+00:28:51,035 --> 00:29:04,115
+yani bir kuyruktan başlayan prosesin daha sonra bir başka kuyruğa geçmesi sonra da bambaşka bir kuyruğa geçmesi gibi bir yapınız varsa yani bir geri bildirime göre duruma bakıyorsunuz o zaman multi-level feedback queue'dan bahsediyoruz.
+
+110
+00:29:04,115 --> 00:29:33,055
+multi-level feedback queue de aslında baktığın zaman gene multi-level queue gibi queue'ların sayısı, her queue'de kullanılan scheduling algoritması, ne zaman bir prosesin bir üst kuyruğa alınacağı ya da bir alt kuyruğa indirileceğinin belirlenmesi gibi bilgilerin tadımlanmasıyla farklılık gösterebiliyor.
+
+111
+00:29:33,055 --> 00:30:02,996
+Yani bu toplam aslında dört de diyebilirsiniz hatta üç bile diyebilirsiniz. Çünkü beşincisi burada yazan da şey bir prosesi yarattığınız zaman hangi kuyudan başlayacağınız kısmı. Dolayısıyla hani kuyun promote edilmesi, remote edilmesi ya da hangi kuyuya girmesi hepsi belli açılardan benzer olabilir. Benzer durumlar olabilir. Tek bir başlıkta da toplanabilir. Dolayısıyla bu durumları tariflediğiniz zaman her tariflediğiniz zaman her farklı şekilde tariflediğiniz zaman yeni
+
+112
+00:30:02,996 --> 00:30:06,675
+bir maklidavus bir bekü oluşturmuş oluyorsunuz. Mesela
+
+113
+00:30:15,412 --> 00:30:16,551
+şöyle bakabilirsiniz.
+
+114
+00:30:21,203 --> 00:30:49,544
+ne yapıyoruz? Shortest job, first'ten de hatırlayacağımız üzere hani önden kısa işleri şey yapmak, geçirmek, bir an önce bitirmek belli açılardan bize daha yararlı oluyor. Waiting time'ı azaltması anlamında. Dolayısıyla bir kriter olarak CPU time'ının ne kadar kullanıldığı, yani o işlem tarafından process yürütücünün ne olduğuna bakabiliriz.
+
+115
+00:30:49,544 --> 00:31:01,104
+Dolayısıyla çok fazla CPU time'ı kullanan bir proses alırız. Baştan bir sekiz kuyruktan bir alt kuyruğa indiririz. Sonra
+
+116
+00:31:06,003 --> 00:31:34,663
+daha da fazla kullanıyorsa bir alt kuyruğa indiririz. Aslında her kuyruğa indirdiğimizde ne yapıyoruz? Kendisine verdiğimiz işte CPU timer, bir slice, bir quantum bir şey veriyorsak bunun tamamını kullandı ve hala bitmedi. Dolayısıyla daha fazla kullanabileceği bir yere girsin. Daha fazla kullanabileceği bir yere gitsin diye kuyrukta aslında aşağı doğru indiriyoruz.
+
+117
+00:31:34,663 --> 00:31:39,943
+ama aşağı doğru indirirken bir tarafa ne yapıyoruz? Verdiğimiz işlendiği zamanını arttırıyoruz.
+
+118
+00:31:40,623 --> 00:31:45,763
+Fakat bizim istediğimiz ne? Kısa işlerin daha önce çalışması. Dolayısıyla o zaman da ne yapmamız lazım?
+
+119
+00:31:45,943 --> 00:31:50,904
+Kuyruklara ters bir öncelik yapısı oluşturmamız lazım. Burada da ona benzer bir yapı görüyorsunuz aslında.
+
+120
+00:31:54,003 --> 00:32:01,483
+Üç tane Q var. Birinde en üstteki sıfırıncı kuyruk diyelim. Bu birinci kuyruk. Bu da ikinci kuyruk.
+
+121
+00:32:01,483 --> 00:32:30,323
+en alttaki. Birinci kuyrukta round robin çalışıyoruz. Sıfırıncı kuyrukta pardon round robin çalışıyoruz. Time quantum'u 8. Birinci kuyrukta time quantum'u 16 olan bir round robin çalışıyoruz. İkinci kuyrukta first count first third çalışıyoruz. Yani biri sıkıcı olabilecekse bodoslama bitene kadar çalışıyor. Şimdi bu yapıya baktığınız zaman aslında nasıl ilerliyoruz?
+
+122
+00:32:30,323 --> 00:33:00,164
+bir proses oluşturduğumuz ready kuyruğuna geldi. Ne yapıyor olmalı? Doğrudan sıfırıncı kuyrukdan giriyor. Girdiği zaman burada kendisine bir time quantum verildi round robin içerisinde. Eğer bu zaman içerisinde şey yapmazsa, çalışmasını bitirmezse yani 8 little time quantum'da olduğu zaman hala cp'yi kullanma isteği varsa
+
+123
+00:33:00,163 --> 00:33:30,043
+aslında bunu bir alttaki kuyruğa atıyoruz. Bu kuyruğun sonuna atıyoruz. Ne olacak? Burada time quantum 16 olacak. Eğer hala burada da time quantum kullandıktan sonra çalışma ihtiyacı varsa bunu en alttaki kuyruğun sonuna atıyoruz. Burada da sırayla yani kendisi gibi bekleyen diğer işlerin en sonuna gelecek. Burası çalıştığımız zaman çalışacak. Böyle baktığınız zaman her seferinde time quantum arttırıyoruz, süreyi arttırıyoruz gibi gözüküyor ama aslında burada şöyle de
+
+124
+00:33:30,043 --> 00:33:41,483
+bir durum var. 0, 1, 2 dedik kuyrukları. Birinci kuyrukta bir işin schedule edilebilmesi için 0. kuyrukta schedule edilecek bir şeyin olmaması lazım.
+
+125
+00:33:45,268 --> 00:33:54,268
+Dolayısıyla benzer şekilde ikinci kuyrukta herhangi bir işin schedule edilebilmesi için de sıfır ve birinci kuyrukta iş olmaması lazım.
+
+126
+00:33:57,268 --> 00:34:01,268
+Önceliklendirmemiz de bu şekilde yapıyoruz.
+
+127
+00:34:08,628 --> 00:34:36,308
+Şimdi, genel anlamda özellikle single CPU üzerinde konuşacağımız temel scheduling algoritmaları, daha başkaları da konuşacağız. Özellikle real time CPU scheduling ile ilgili daha farklı algoritmaları da konuşacağız. Genel olarak bunlar. Ama şunu hatırlayın lütfen.
+
+128
+00:34:36,308 --> 00:35:04,187
+dördüncü bölümü konuşurken ne dedik? User level ve kernel level threadlerden bahsettik. Eğer işletim sistemi doğrudan kernel threadini destekliyorsa zaten işlemlerden değil, threadlerden, threadlerin skeçül edilmesinden bahsediyoruz. User level threadler varsa
+
+129
+00:35:06,308 --> 00:35:31,007
+bu ne oluyor? Genelde bir thread libraries tarafından implement ediliyor. Kernel tarafı ise bunlardan aslında çoğu zaman bir haber oluyor. Ama arada da bir ilişkilendirme yapmanız gerekiyor. Bu genelde lightweight process üzerinde olur dedik.
+
+130
+00:35:31,007 --> 00:36:00,407
+Şimdi burada onu konuşacağız. Nasıl oluyor? Thread'lerin scheduling'i nasıl yapıyoruz? Nasıl dönüyor? Şimdi hatırlayın thread scheduling ile ilgili konuşurken modellerden bahsetmiştik. Hani demin de dedim ya user level thread ile kernel level thread'in eşleştirilmesi lazım.
+
+131
+00:36:01,007 --> 00:36:28,547
+orada hibride saymayacak olursak 3 tane temel yöntem vardı. Biri menu to menu, biri de one to one. Şimdi menu to one ya da menu to many modellerde aslında aradaki thread library user level threadlerin lightweight process üzerinde nasıl
+
+132
+00:36:28,547 --> 00:36:52,788
+schedule edileceğine karar veriyor. Bu kararı o veriyor. Dolayısıyla buna process contentions kop diyoruz. Çünkü zaten hani o prosese bağlı threadlerin bir şekilde CPU için yarışmasından bahsediyoruz. Yani o prosese doğrudan bağlı threadlerin CPU için yarışması. Ama burada şunu dikkat edin.
+
+133
+00:36:52,788 --> 00:37:08,028
+arada bir broker var. Lightweight Process. Lightweight Process için yarışıyorlar aslında. Onu kazanıyor olmaları doğrudan o anda CPU'da çalıştıkları anlamına gelmiyor.
+
+134
+00:37:10,608 --> 00:37:20,827
+Onun için de kernel thread'in şey tarafından, scheduler tarafından CPU'da schedule edilmesi gerekiyor.
+
+135
+00:37:22,787 --> 00:37:23,287
+Uhhh
+
+136
+00:37:28,467 --> 00:37:39,308
+kernel level bir thread'in de CPU'da skill edilmesi için
+
+137
+00:37:40,596 --> 00:37:46,935
+ne olması gerekiyor? Sistemdeki bütün kernel threadleri arasında bir rekabet, bir şey olması gerekiyor.
+
+138
+00:37:48,195 --> 00:37:53,056
+Yarışma olması gerekiyor. Ona da system contention scope diyoruz.
+
+139
+00:37:57,075 --> 00:37:59,735
+Baktığımız zaman...
+
+140
+00:38:02,324 --> 00:38:20,183
+one to one modeli kullanan mesela Linux'da da Windows'da da mevcut bu model işletim sistemleri doğrudan system contention scope üzerinden thread scheduling yapıyorlar. Yapmaları da makul ve mantıklı olan şey o zaten.
+
+141
+00:38:20,183 --> 00:38:38,004
+Şimdi p-thread posix thread libraries'i şu an uygulamada onu görmeye başlamış olmanız lazım sanki belki. Emin olamadım en son ne gördünüz ya da nerede kaldınız ya da en kötü ihtimal bu hafta görüyor olabilirsiniz.
+
+142
+00:38:38,004 --> 00:38:45,943
+şey için, scheduling için
+
+143
+00:38:45,943 --> 00:38:51,324
+p thread attribute'lerini alabildiğiniz
+
+144
+00:38:51,324 --> 00:38:52,404
+attribute
+
+145
+00:38:52,404 --> 00:38:55,923
+şey var, structure var.
+
+146
+00:38:56,143 --> 00:38:57,764
+Orada da iki tane fonksiyonu var.
+
+147
+00:38:58,504 --> 00:39:02,243
+p thread attribute get scope set scope şeklinde.
+
+148
+00:39:02,243 --> 00:39:03,764
+Bunlar üzerinden
+
+149
+00:39:03,764 --> 00:39:05,584
+scob'unun yani scheduling
+
+150
+00:39:05,584 --> 00:39:07,923
+işleminin
+
+151
+00:39:08,004 --> 00:39:18,684
+nasıl yapacağını belirleyebiliyorsunuz. Ama bu tabii ki üzerinde çalıştığınız işletim sistemi tarafından da sınırlandırılabilir.
+
+152
+00:39:19,243 --> 00:39:26,544
+Yani Linux'da ve MacOS'da mesela sadece System Scope çalışabiliyorsunuz. Process Scope Scheduling yapamıyorsunuz.
+
+153
+00:39:27,184 --> 00:39:37,224
+Bunun nasıl kullanılabileceğiyle ilgili bir örnek var bunun ama doğrudan çok fazla bir şey de bize gösterdiği ya da şey yaptığı yok.
+
+154
+00:39:38,004 --> 00:39:56,163
+tek yaptığı bir attribute tanımlı olması, o attribute'in init edilmesi, sonrasında da o attribute'in alınıp açıklamasının gösterilmesi başka bir şey değil. Dolayısıyla çok fazla da üzerine düşüneceğimiz ya da şey yapacağımız bir nokta da değil.
+
+155
+00:39:56,163 --> 00:40:09,283
+Şimdi şu ana kadar konuştuğumuz şey aslında hep single processor bir sistemde scheduling'in nasıl olacağı durma.
+
+156
+00:40:13,108 --> 00:40:42,547
+iş multi-processer scheduling'e geldiği zaman biraz daha karmaşıklaşıyor. Aslında temelde baktığınızda belli açılardan soru problem aynı. CPU time'i utilize etmek. Karmaşıklaşan ya da değişen şey ne? Birkaç tane durum var. Bir, öncelikle mimari olarak, durumsal olarak şeyimiz ne? Yapımız ne?
+
+157
+00:40:43,108 --> 00:41:00,427
+yani tamamen merkezi bir noktadan bütün sistemin yönetilmesi ve scheduling'in gerçekleştirilmesi bir yaklaşım olabilir.
+
+158
+00:41:00,427 --> 00:41:03,567
+Bunda da aslında asimetrik multi-posesini diyoruz.
+
+159
+00:41:03,707 --> 00:41:04,468
+Avantajı ne?
+
+160
+00:41:06,907 --> 00:41:10,207
+Avantajı şu, scheduling işlemi için ne yapıyoruz aslında?
+
+161
+00:41:10,207 --> 00:41:18,788
+bir kuyruktan bir prosesi seçiyoruz ve boşta olan bir işlemciye atıyoruz.
+
+162
+00:41:19,427 --> 00:41:22,907
+Bunu yaparken de aslında işlemcinin üzerinde çalışan skecuları buluşuyor.
+
+163
+00:41:22,907 --> 00:41:32,367
+Peki, bunu ortak bir kuyruk üzerinden birden fazla işlemcimiz varsa, hepsi birden yapmaya kalkarsa ne olur?
+
+164
+00:41:32,367 --> 00:41:40,867
+otomatikman kernel içerisindeki ortak veri yapılarının korunması gerektiği ortaya çıkar.
+
+165
+00:41:40,867 --> 00:41:43,487
+Hatırlayın. Daha yeni konuştuk senkronizasyonu.
+
+166
+00:41:43,967 --> 00:41:56,287
+Böylesine belli açılardan herkesin aynı anda simetrik olarak yapması belli problemleri de beraberinde getiriyor.
+
+167
+00:41:57,007 --> 00:42:00,227
+Dolayısıyla bir alternatif asimetrik olarak bu işi yapmak.
+
+168
+00:42:00,227 --> 00:42:11,087
+Böyle yaptığınız zaman sadece tek bir işlemci veri yapılarına girişiyor. Dolayısıyla senkronizasyon derdiniz yok. İşler belli açılardan çok daha rahat giriyor.
+
+169
+00:42:13,507 --> 00:42:25,787
+Simetrik multiprocessing'de ise aslında orada da alternatifler oluşturabilirsiniz. Ne gibi? Ortak bir tane bekleme kuyruğu oluşturabilirsiniz.
+
+170
+00:42:25,787 --> 00:42:37,687
+ortak bekleme kuyruğuna birden fazla prosesin ulaşmaya çalışması ne olacaktır? Otomatikman bir senkronizasyon problemi getirecektir.
+
+171
+00:42:38,167 --> 00:42:50,927
+Bunu çözmenin en temel yollarından biri ne olacak? Her birine ayrı bir kuyruk atamak ya da ayrı bir kuyruk oluşturulacak. Peki bu bütün sorunları çözecek mi?
+
+172
+00:43:03,699 --> 00:43:07,519
+çözmeyecek tabii ki. Başka ne problemler getirecek?
+
+173
+00:43:16,884 --> 00:43:40,804
+hala ne derdimiz var? Farklı işlemciler için farklı gruplar oluşturduğumuzda bile ne yapmamız lazım? Sistemdeki tüm işlemcilerin doğru şekilde kullanıldığından doğru yanlış olduğundan özür dilerim. Doğru değil de efektif şekilde kullanıldığından emin olmalı.
+
+174
+00:43:40,804 --> 00:44:04,483
+Yani birden fazla işlemcimiz var. Her biri için ayrı bir kuyruk oluşturduk. Her bir kuyrukta iş yükünün mafif ve mantıklı şekilde dağıldığını görmemiz lazım. Yani birinde kuyruk ağzına kadar dolu herkes bekliyor, diğerinde bomboş bir kuyruk var. Kötü bir durum. Bunu ne yapmamız lazım?
+
+175
+00:44:04,483 --> 00:44:24,303
+dengelememiz lazım. Ama bunu dengelerken de dikkat etmemiz gereken bazı noktalar var. Nedir? Aslında bu şeyde nedir o? Dikkat etmemiz gereken noktalar da process affinity temel olarak.
+
+176
+00:44:24,303 --> 00:44:32,604
+Processor Affinity dediğimiz zaman aslında şundan bahsediyoruz.
+
+177
+00:44:32,604 --> 00:44:37,903
+Şimdi bir proses işlemcide çalışıyorken ne yapıyoruz?
+
+178
+00:44:39,443 --> 00:44:45,604
+Memory aksesi yaptığı zaman belli bir adrese o bilgiye getirip keşe koyuyoruz.
+
+179
+00:44:46,483 --> 00:44:50,663
+Olası diğer aksesleri de hızlandırabilmek için. Doğru mu?
+
+180
+00:44:50,663 --> 00:45:17,983
+Şimdi bir işleminiz var. İşlemci de çalışıyor. Çalışırken de arada memory access. Memory access ile ilgili daha sonra ayrıca konuşacağız. Memory stallı vs. konuşacağız. Ama her memory access'inde ne yapıyoruz? Aslında bir taraftan da bazı bilgileri cache'liyoruz. Dolayısıyla bazı memory access'lerin doğrudan cache'ten yapılmasını, yani çok daha hızlı yapılmasını
+
+181
+00:45:17,983 --> 00:45:47,744
+sağlıyoruz. Şimdi bu proses çalışıyordu. Verdiğiniz time quantum doldu. Kenara aldınız. Bunu başka bir prosese geçirdiğiniz zaman, prosesora geçirdiğiniz zaman yani CPU'yu sıfırdan aldınız ama CPU'yu bire verdiniz. Ne oluyor? Ne kazanıyoruz ne kaybediyoruz? Şimdi öncelikle bir kere birinci işlem yani sıfır demiştim pardon CPU'yu sıfırın keşindeki bilgiler artık
+
+182
+00:45:47,744 --> 00:45:53,604
+bizim için ne oldu? Sıkıntı. Çünkü orada o proses çalışmıyor. Başka bir proses çalışıyor.
+
+183
+00:45:54,684 --> 00:46:00,423
+Onun boşaltılması lazım. Invalidate edilmesi lazım. Daha doğrusu yani kalkıp silinmeyecek de override edecek.
+
+184
+00:46:00,423 --> 00:46:10,344
+İmvalid hale getirmiş. Öbür tarafta o CPU 0'dan aldığınız prosesi CPU 1'e atadınız.
+
+185
+00:46:10,343 --> 00:46:13,523
+birinin içerisinde baktığınız zaman
+
+186
+00:46:13,523 --> 00:46:19,083
+keşinde bu prosesin ulaştığı memory adresiyle ilgili hiçbir şey yok.
+
+187
+00:46:19,183 --> 00:46:22,303
+Dolayısıyla keşin tekrar popüler edilmesi lazım.
+
+188
+00:46:22,443 --> 00:46:26,583
+Yani adam ilk memory aksesi yaptığında siz tekrar keşe bilgi çekeceksiniz.
+
+189
+00:46:27,583 --> 00:46:34,463
+Dolayısıyla simetrik multiprosesi dediğimiz yapılarda doğrudan
+
+190
+00:46:34,464 --> 00:46:36,464
+...
+
+191
+00:46:37,492 --> 00:46:39,391
+hep şeye çalışıyoruz.
+
+192
+00:46:40,791 --> 00:46:42,452
+Hep demeyeyim de genellikle diyeyim.
+
+193
+00:46:42,591 --> 00:46:44,311
+Hep biraz fazla iddialı oluyor.
+
+194
+00:46:48,311 --> 00:46:52,251
+Bir işlemcide schedule ettiğimiz prosesin
+
+195
+00:46:52,251 --> 00:46:53,611
+hep
+
+196
+00:46:53,611 --> 00:46:57,371
+aynı işlemcide schedule
+
+197
+00:46:57,371 --> 00:47:00,092
+edilmesini sağlamaya çalışıyoruz.
+
+198
+00:47:00,191 --> 00:47:01,731
+Bunu process'e etmiyoruz.
+
+199
+00:47:02,531 --> 00:47:03,791
+Şimdi burada aslında
+
+200
+00:47:03,791 --> 00:47:09,891
+iki farklı durumu değerlendirebiliriz. Bir tanesi şu.
+
+201
+00:47:16,275 --> 00:47:20,895
+Bu iş, aslında deadline'lar gibi düşünebilirsiniz. Soft ya da hard deadline.
+
+202
+00:47:21,895 --> 00:47:29,055
+Processor affinity'yi sağlarken işletim sistemi şöyle bir yaklaşımla sağlayabilir.
+
+203
+00:47:29,535 --> 00:47:36,715
+Ben hani bir prosesi bir işlemci de schedule ettiysen bundan sonra hep orada etmeye çalışacağım.
+
+204
+00:47:40,244 --> 00:48:08,703
+ama garantisini vermiyorum. Bu soft affinity. Alternatifine herhangi bir prosesin, sistemdeki herhangi bir prosesin çalışabileceği işlemcileri sınırlamak. O zaman da hard affinity tanımlarız aslında. Yani diyorsunuz ki bu adam sadece şu ve şu işlemcede çalışabilir.
+
+205
+00:48:08,703 --> 00:48:38,043
+neden dolayı? Tek bir işlemci değil, bir işlemci grubuyla genellikle sınırlıyoruz. Neden? Cache mekanizmasını hatırlayın. O cache'ler aslında level 2, level 3 vs. diye gidiyor. Dolayısıyla belli açılardan farklı işlemcilerin aynı erişim ihtimali olabilir. Dolayısıyla da bu da ne esnetiyse alıyor. Hep aynı işlemci değil.
+
+206
+00:48:38,703 --> 00:48:42,424
+aynı işlemci grubu içerisinde kısıtlama yapmayı sağlayabilir.
+
+207
+00:48:43,003 --> 00:48:43,183
+Şimdi
+
+208
+00:48:43,183 --> 00:48:50,363
+affinity yapısını
+
+209
+00:48:50,363 --> 00:48:52,403
+aslında
+
+210
+00:48:52,403 --> 00:48:57,244
+tanımlayan ya da tarifleyen ya da ona şekil veren
+
+211
+00:48:57,244 --> 00:49:00,244
+kısıtlardan bir tanesi de
+
+212
+00:49:00,244 --> 00:49:02,083
+sistemin
+
+213
+00:49:02,083 --> 00:49:04,503
+main memory mimarisi.
+
+214
+00:49:04,503 --> 00:49:07,744
+Şimdi bizim doğrudan kullandığımız
+
+215
+00:49:07,744 --> 00:49:37,244
+desktoplarda çok şey değil nedir o doğrudan uygulananlara doğrudan olan bir durum değil ve fakat özellikle sunucu sistemlere baktığımız zaman özellikle de hani böyle o 16, 32, 64, 100, 500 vesaire gibi sayılarda işlemciye sahip olabilen mimarilere baktığımızda şunu görürsünüz hatta iki işlemcilerde bile
+
+216
+00:49:37,244 --> 00:50:06,223
+var aslında. Bazı memory slotları bir işlemciye, bazı memory slotları ise diğer işlemciye atanmış gibi. Dolayısıyla memory slotlarını doldururken hani 0, 1, 2, 3, 4 diye bilmezsiniz de işte 0, 4, 8, 1, 5, 9 falan gibi değişik dizilimler görürsünüz. Yani iki tane memory
+
+217
+00:50:06,223 --> 00:50:18,023
+iki tane memori koyacaksanız sisteme bunları böyle sıfır ve bir diye koymuyorsunuz bazen de çok daha farklı slotlara koyuyorsunuz.
+
+218
+00:50:18,023 --> 00:50:23,783
+Bu şundan dolayı non-uniform memory access oluyor bu sistemlerde çoğunlukla.
+
+219
+00:50:23,883 --> 00:50:31,203
+Yani bir işlemcinin doğrudan hızlı erişeceği bir memori bölgesi var, tanımlanmış.
+
+220
+00:50:31,823 --> 00:50:35,723
+Diğer memori bölgelerine erişme ise daha yavaş oluyor.
+
+221
+00:50:35,723 --> 00:51:03,663
+çünkü aslında orada indirect bir akses yapılıyor. Eğer sistemde böyle bir yapı varsa yani NUMA diye isimlendiriyoruz. Non-uniform memory access. NUMA yapı tanıyorsa o zaman affinity daha da önemli hale geliyor. Yani bu adamın eriştiği memora bölgesi main memori'de nereye denk düşüyor? Dolayısıyla hangi işlemcide ya da işlemci grubunda olması daha mantıklı şeklinde.
+
+222
+00:51:05,723 --> 00:51:14,104
+multiprocessor scheduling'tan bahsediyorsak şeyi mutlaka konuşuyor olmamız lazım.
+
+223
+00:51:16,883 --> 00:51:22,783
+Derdimiz ne? Hani kuyruk ortak da olabilir, ayrı da olabilir dedik kuyruklar.
+
+224
+00:51:22,863 --> 00:51:28,043
+Özellikle kuyruklar ayrı olduğunda ne ihtimaliyle ulaşabilir?
+
+225
+00:51:28,163 --> 00:51:35,363
+Siz bir prosesi atamasını yaparken çoğu zaman burst'ün ne olacağını, iOS'un ne kadar olacağını vesaireyi bilmiyorsunuz.
+
+226
+00:51:35,723 --> 00:51:36,643
+Well, are you seeing them?
+
+227
+00:51:38,036 --> 00:51:59,796
+SMP bir sistemde farklı işlemcilere ait redi kuyruklarında ne olabilir? Dengesizlikler olabilir. Bu dengesizlikleri toparlamak, yani yükü düzgün dağıtabilmek, bu da load balancingten bahsediyoruz aslında, yapabilmek adına iki tane temel yöntem var.
+
+228
+00:51:59,796 --> 00:52:12,515
+baktığınız zaman mevcut işletim sistemlerine, SMP çalışan işletim sistemlerine aslında her iki mekanizmayı da destekliyorlar ki o zaman.
+
+229
+00:52:13,796 --> 00:52:17,315
+Peki bu mekanizmalar push migration ve pull migration.
+
+230
+00:52:19,815 --> 00:52:29,036
+Push migration'da bu işin yani load balancing'in sağlanması için bir tane spesifik taskınız var.
+
+231
+00:52:29,036 --> 00:52:45,216
+ne yapıyor? Periyodik olarak kalkıp bakıyor. Belli bir dengesizlik görürse hani biri diğerinden işte bir birim daha falan filan gibi değil. Burada da bir threshold var. Tabii ki tanımlı bir threshold var.
+
+232
+00:52:45,216 --> 00:52:59,815
+yaptığı şey şu o dengesizliği tespit ettiği zaman Q'daki bir yoğun Q'daki prosesleri diğer daha böyle aydın olan Q'ya doğru taşıyor.
+
+233
+00:52:59,815 --> 00:53:02,815
+Fakat bu işin aslında...
+
+234
+00:53:09,043 --> 00:53:11,343
+mesur.
+
+235
+00:53:16,244 --> 00:53:33,744
+sadece işlemci zamanı olarak baktığımda artısı var gibi gözükse de demin bahsettiğimiz özellikle cache'teki etkiden dolayı zaman zaman eksisi de var. Dolayısıyla yapılırken çok dikkatli olunması gerekiyor.
+
+236
+00:53:33,744 --> 00:53:59,403
+çok fazla da yani bu işi yapmak da ayrıca bir züyük olduğu için bazen getiresi götürüsünden fazla olabiliyor. Böyle bir sıkıntı var. Push'u konuştuk, pull'u konuşmadık. Pull yapısında ise doğrudan boş olan proses yani idle halde duran proses, kuyruğunda bir şey olmayan proses dönüyor.
+
+237
+00:53:59,403 --> 00:54:14,883
+o an yüklü olan, kuyruğunda bekleyen işler olan, prosesin o bekleyen işlerinden kendi kuyruğuna çekiyor ve çalıştırmaya başlıyor.
+
+238
+00:54:14,883 --> 00:54:28,883
+Şimdi bundan Mutual'a eksklusif değil, yani demin de belirttim, hani Linux scheduler'da konuşacağız,
+
+239
+00:54:29,403 --> 00:54:34,523
+herhalde olduğu slide'larda var mı emin olayım ama her ikisi birden implement edilmiş durumda.
+
+240
+00:54:35,023 --> 00:54:37,403
+Böylece ikisini de kullanabiliyorsunuz.
+
+241
+00:54:38,063 --> 00:54:41,303
+Ve fakat her iki durum içinde aslında neyimiz var?
+
+242
+00:54:43,223 --> 00:54:45,343
+Bir overhead'imiz var.
+
+243
+00:54:45,443 --> 00:54:46,123
+Bunu unutmayın.
+
+244
+00:54:47,123 --> 00:54:53,203
+Şimdi bir diğer şey, multi-processor sistemi konuşuyoruz.
+
+245
+00:54:53,203 --> 00:54:56,303
+Multi-core processor'ları da konuşuyor olmamız lazım.
+
+246
+00:54:56,303 --> 00:55:06,683
+yani günümüzde SMP sistem dediğimiz zaman aslında doğrudan birden fazla fiziksel entegre şeklinde işlemciyi tariflemiyoruz.
+
+247
+00:55:06,763 --> 00:55:10,503
+Bazen o tek bir entegre içerisinde birden fazla işlemci şeklinde yolluyor.
+
+248
+00:55:10,643 --> 00:55:13,803
+Ne için? Bize çeşitli avantajlar sunduğu için.
+
+249
+00:55:13,803 --> 00:55:23,104
+Misal en azından enerji tüketimi anlamında daha efektif oluyor, yer anlamında daha efektif oluyor vesaire.
+
+250
+00:55:23,104 --> 00:55:37,083
+ve fakat aslında scheduling noktasında işleri biraz daha karmaşık hale getirebiliyor. Nasıl karmaşık hale getiriyor?
+
+251
+00:55:40,692 --> 00:55:41,391
+şöyle ki.
+
+252
+00:55:49,300 --> 00:56:17,619
+çoğu zaman baktığınızda ne yapıyoruz? Computation işlemi yaparken memory access'e ihtiyaç duyuyoruz. Dolayısıyla memory access için harcadığınız zaman özellikle de doğrudan cache'de olan bir bilgi değilse memory access'te zaman kaybediyorsunuz. Memorinin çalışma hızı aslında işlemlerin doğrudan çalışma hızı ile birebir değil. Dolayısıyla arada beklemelerimiz var.
+
+253
+00:56:17,619 --> 00:56:31,140
+yani şu grafikte daha iyi göreceksiniz bir computation başlatıyorsunuz arada bir memory aksesi yapmanız gerekiyor. O memory aksesi sizi aslında belli açılardan bekletmeye neden oluyor.
+
+254
+00:56:35,140 --> 00:56:36,099
+Bu noktada
+
+255
+00:56:43,827 --> 00:56:55,168
+Yani şuraya baktığınız zaman hani bunları eşit gibi düşüncelik olursanız zamanının yüzde ellisini bekleyerek geçirmiş gibi bir şeysiniz. Bunu
+
+256
+00:56:58,356 --> 00:57:23,975
+şöyle yaparsak avantaja çevirmemiz mümkün. Aslında işlemcinin içerisine iki ayrı thread, harbiye thread tanımlıyorsunuz. Yani bu %50 olduğu için bu daha farklı da olabilir. Daha farklı olduğu zaman oran yani mimariden mimariye değişebilir.
+
+257
+00:57:23,975 --> 00:57:31,295
+oran daha farklı olduğu zaman buradaki thread sayısı da artabilir azalamaz zaten ikiden daha nereye azalacak.
+
+258
+00:57:32,415 --> 00:57:39,695
+Ama yaptığımız şey şu birinin compute cycle'ını diğerinin memory stall cycle'ıyla üst üste indirmek.
+
+259
+00:57:39,695 --> 00:57:42,175
+Bunu yaptığınız zaman otomatikman ne oluyor?
+
+260
+00:57:43,295 --> 00:57:50,555
+Aslında CPU time'ını daha da efektif hale getirmiş kullanımını daha da efektif hale getirmiş oluyorsunuz.
+
+261
+00:57:50,555 --> 00:58:05,555
+Burada oluşturduğunuz her hardware thread de aslında yukarıda işletim sistemi tarafından bakıldığında bir işlemci gibi gözüküyor.
+
+262
+00:58:05,555 --> 00:58:22,095
+yani aslında şu an günümüzde kullandığımız şeyde gördüğünüz Windows açtığınız zaman gördüğünüz işlemci sayısı, virtual thread sayısı vs. de buradan geliyor.
+
+263
+00:58:22,095 --> 00:58:41,195
+Şimdi bugün konuşacağımız bir başka konu aslında yine scheduling'in parçası ve fakat biraz özel bir noktası real-time CPU scheduling. Şimdi real-time gerçek zamanlı ne demek? Önce oradan başlayalım.
+
+264
+00:58:41,195 --> 00:58:57,755
+hani kabus olan şeylerden bir tanesi what is real time scheduling gerçek zamanlı çizergeleme şeklinde cevap duruluyor bazen. Öncelikle gerçek zamanlı sistem nedir? Var mı cevaplamak isteyen?
+
+265
+00:59:14,996 --> 00:59:16,055
+Sesim geliyor mu hocam?
+
+266
+00:59:16,496 --> 00:59:18,236
+Geliyor. Öndersen.
+
+267
+00:59:19,055 --> 00:59:26,715
+Evet. Önceden belirlenmiş bir zaman dahilinde taskların gerçekleşmesini garantileyen işletim sistemleri.
+
+268
+00:59:27,575 --> 00:59:39,395
+Şimdi hem doğru hem yanlış diyeceğim. Şöyle ki, önceden belirlenmiş bir çizelge olmak zorunda değil.
+
+269
+00:59:39,395 --> 00:59:57,935
+çünkü sen bu sistemi online ya da offline çalıştırıyor olabilirsin. Offline scheduling'i yapıp sistemin buna göre çalışmasını planlıyor da olabilirsin. Online olarak da schedule edebilirsin ama burada real-time sistem aslında zaman hassas sistemdir.
+
+270
+00:59:57,935 --> 01:00:15,775
+yani derdin sistemdeki taskların hepsinin zaman hassas olması ve belirlenen süre içerisinde tamamlanabilmesi.
+
+271
+01:00:15,775 --> 01:00:21,895
+Neden? Mesela gerçek zamanlı bir sistem düşünelim.
+
+272
+01:00:21,896 --> 01:00:48,856
+parz misal E2 vermişimdir daha önce de bunu yeni mp3 player'ı düşünün ne yapması lazım ya da boşverin mp3 player'ı şeyi düşünün evinizdeki uydu alıcısını düşünün siz kumandaya bastığınız zaman kanalı değiştirmesi gerekiyor ya da sesi arttırması gerekiyor ya da işte bilmem ne menüsüne geçmesi gerekiyor.
+
+273
+01:00:48,856 --> 01:01:13,676
+bunu belli bir sürede yapmasını istiyorsunuz. Yani bugün şu an şu dakika düğmeye bastım. Yarın bana bir sonraki kanalı geçerse bir esprisi yok. Bir dakika sonra geçerse de bir esprisi yok. Otuz saniye sonra geçerse de bir esprisi yok. Bunun kabul edilebilir süresi farz misal sıfır nokta beş saniye.
+
+274
+01:01:13,676 --> 01:01:18,356
+bu işin bu süre içerisinde tamamlanması lazım.
+
+275
+01:01:19,076 --> 01:01:23,716
+Tamamlandığında kimse madalya takmıyor bu süre içerisinde.
+
+276
+01:01:24,395 --> 01:01:36,035
+Tamamlanamadığında yani 0.5'te değil de 0.6 tamamlandığında da kimse gelip ne uydu alıcısını kırıyor ne de sizin başınıza ciddi bir problem geliyor.
+
+277
+01:01:37,175 --> 01:01:42,335
+Dolayısıyla yaptığını böyle baktığınız zaman bu soft real time system.
+
+278
+01:01:42,335 --> 01:02:10,615
+Yani bir event'e karşılık ya da bir periyodik bir işe karşılık yapılması gereken işler belli bir zaman içerisinde bitmeli. O zaman geçildiği zaman durumlarda ise başınıza ölümcül ya da sıkıntılı bir şey gelme. Hard real time sistemlerde ise aslında yapı hep şeyin üzerine kurulu.
+
+279
+01:02:10,615 --> 01:02:18,436
+yani bir sistemin hard real time, soft real time olduğunu belirleyen şey bir deadline'ı kaçırdığınız zaman başınıza ne geldiğidir aslında.
+
+280
+01:02:19,915 --> 01:02:37,115
+Yani hard real time bir sistemden bahsediyorsak bir işin deadline'ını kaçırması demek o sistemin ya da o sistemi kullanan sistemlerin ya da kişilerin başına ciddi dert açılması demek.
+
+281
+01:02:37,115 --> 01:02:49,496
+Misal, şeyden bahsedersek, araç içerisindeki ABS sisteminden bahsedersek, adamın farz misal belli bir yapıda ne yapması lazım?
+
+282
+01:02:49,576 --> 01:02:52,955
+Belli bir süre içerisinde arabanın kaydığını anlaması lazım.
+
+283
+01:02:53,175 --> 01:02:58,455
+Ona karşılık olarak freni gevşetmesi, sıkması belli bir teriyotta bu işi yapması lazım.
+
+284
+01:02:58,975 --> 01:03:02,475
+Arabanın kaydığını geç anlarsa sıkıntı, kaza yaparsınız.
+
+285
+01:03:02,475 --> 01:03:11,475
+Arabanın kaydını anladı ama frenleme mekanizması işte 5 milisaniyeli bir fren yap aç, fren yap aç
+
+286
+01:03:11,891 --> 01:03:38,451
+yerine işte 10 milisaniyede bire kayarsa bir şey olursa ne olacak? Sıkıntı olacak. Yine kaza yapacaksınız. Bunlar alın size hard real time. Ama uydu alıcısı mesela soft real time. Bilmiyorum hani kafanızda biraz oturabildi mi, şey yaptı mı, aklınıza yattı mı ve fakat hani bir sistem real time bir sistem.
+
+287
+01:03:38,451 --> 01:03:43,291
+yani zaman kritik bir sistemin soft ya da hard olmasından bağımsız.
+
+288
+01:03:47,612 --> 01:03:53,871
+Ne yapması lazım? İşlerini belli bir zaman sınırı içerisinde bitirmesi lazım.
+
+289
+01:03:54,191 --> 01:04:01,191
+Bu zaman sınırını etkileyen aslında bir iki tane durum var.
+
+290
+01:04:01,831 --> 01:04:05,572
+Bunlardan bir tanesi interrupt latency diye geçiyor.
+
+291
+01:04:05,572 --> 01:04:07,691
+Diğeri de dispatch latency diye geçiyor.
+
+292
+01:04:08,451 --> 01:04:12,771
+Interrupt Latency dediğimiz şey şu.
+
+293
+01:04:14,291 --> 01:04:16,991
+Bir Interrupt, bir event oluştu.
+
+294
+01:04:17,191 --> 01:04:18,591
+Soft ya da hard olabilir.
+
+295
+01:04:19,491 --> 01:04:29,051
+Bu Interrupt'ın oluştuğunu anlamanız, bu Interrupt'ın tipini belirlemeniz,
+
+296
+01:04:29,051 --> 01:04:35,271
+bu Interrupt'la ilgili çalışmakta olan projesinin kenara alınması
+
+297
+01:04:35,271 --> 01:04:42,211
+ve bu internet ile ilgili servis rutinin başlatılması lazım. Buna internet latency diyoruz.
+
+298
+01:04:46,003 --> 01:04:49,484
+Buradaki şeyde
+
+299
+01:04:49,484 --> 01:04:54,023
+bir diğer konu da
+
+300
+01:04:54,023 --> 01:04:55,764
+dispatch latency.
+
+301
+01:04:56,703 --> 01:04:58,043
+dispatch latency de
+
+302
+01:04:58,043 --> 01:05:01,143
+aslında yaptığımız şey ne?
+
+303
+01:05:01,303 --> 01:05:03,264
+dispatch latency diye
+
+304
+01:05:03,264 --> 01:05:06,623
+tarih dediğimiz şey ne?
+
+305
+01:05:06,623 --> 01:05:36,603
+Okay.
+
+306
+01:05:11,764 --> 01:05:14,863
+bir çalışmakta olan
+
+307
+01:05:14,863 --> 01:05:16,583
+çalışmakta olan
+
+308
+01:05:19,092 --> 01:05:21,651
+şeyin
+
+309
+01:05:21,651 --> 01:05:29,092
+prosesin işlemciden alınıp diğerinin işlemciye konması.
+
+310
+01:05:29,831 --> 01:05:31,092
+Onunla ilgili biraz daha
+
+311
+01:05:32,911 --> 01:05:35,112
+şey yapılması lazım.
+
+312
+01:05:35,231 --> 01:05:36,791
+Daha detaylı bir grafik olması lazım.
+
+313
+01:05:36,911 --> 01:05:37,512
+Ona bakıyorum.
+
+314
+01:05:41,512 --> 01:05:43,831
+Şimdi dispatch latency içerisinde
+
+315
+01:05:43,831 --> 01:05:44,592
+dikkat edin.
+
+316
+01:05:46,551 --> 01:05:48,991
+Burada detaylı olarak her bir şeyin
+
+317
+01:05:48,991 --> 01:06:00,671
+yapılan bir event oluştu. O evente karşı yapmanız gereken işin ne olduğunu anladınız. O evente karşı yapmanız gereken şeyi işlemciye koydunuz.
+
+318
+01:06:01,171 --> 01:06:07,391
+Prosesi ya da servis rutinine. O çalıştı ve bitti. Buraya kadar geçen her sürenin bir tanımı var.
+
+319
+01:06:09,911 --> 01:06:14,592
+Bu tanım içerisinde dispatch latency yani işin değiştirilmesi,
+
+320
+01:06:14,592 --> 01:06:36,752
+C4'da çalışacak olan işin değiştirilmesi kısmı. Burada aslında çözülmesi gereken birden fazla nokta olabilir. Bir tanesi konfliklerin çözülmesi. Yani ne derdimiz var? Daha önce de aslında şeyde konuşmuştuk, scheduling'i konuşurken konuşmuştuk diye hatırlıyorum.
+
+321
+01:06:36,751 --> 01:06:54,651
+çalıştıracağınız işle ilgili bir kaynak o an çalışmakta olmayan bir proses tarafından ne yapılıyor olabilir? Tutuluyor olabilir.
+
+322
+01:06:55,592 --> 01:07:01,592
+Sistemin çalışması için bunun tekrar available hale getirilmesi gerekebilir.
+
+323
+01:07:01,592 --> 01:07:08,291
+işte o konflikle ilgili kısım o dispatch latency'nin içerisinde yer alan ayrı bir parça.
+
+324
+01:07:08,291 --> 01:07:25,911
+Şimdi gerçek zamanlı sistemlerde baktığımız zaman aslında hep bir önceliklendirme üzerinden gitmemiz gerekiyor.
+
+325
+01:07:32,724 --> 01:07:56,724
+neden? Çünkü gerçek yani oluşan eventlere servis vermemiz için kısıtlı sürelerimiz var. Tanınma olan şeyler bu. Mesela işte kumandada düğmeye basıldıysa benim bununla ilgili geçişi işte şu kadar sürede bitirmem lazım. Ya da işte ne bileyim bir...
+
+326
+01:07:57,844 --> 01:08:15,163
+MP3 player'da adam stop tuşuna bastıysa benim çalmayı durdurmam lazım. Adam stop'a bastıktan iki saniye sonra durduruyor olmam makul değil. Ya da play'e bastığı zaman benzer şekilde belli bir süre içerisinde cevap veriyor olmam lazım.
+
+327
+01:08:15,163 --> 01:08:41,443
+Şimdi bununla ilgili demin arkadaşınızın söylediği şey devreye giriyor. Gerçek zamanlı sistemler zaten belli bir işin yapılması için dediki olarak hazırlanmış sistemler. Dolayısıyla bu sistem kapsamında ortaya çıkacak işler çoğunlukla periyodik. Bir kısmı daha periyodik. Yani bir eventin ne zaman oluşacağını önünden bilemezsiniz.
+
+328
+01:08:41,443 --> 01:09:08,643
+Ama şunu biliyorsunuz oluştuğu zaman çalıştırılması gereken iş ne? Bununla ilgili execution aşağı yukarı ne? Bunun ne kadar sürede tamamlanması lazım? Bunların tamamını biliyorsunuz. Dolayısıyla bu bilgiler ışığında scheduling için önceliklendirilmiş yöntemler oluşturabilirsiniz.
+
+329
+01:09:08,643 --> 01:09:27,063
+Şimdi bu bilgiler ışığında derken işler genellikle periyodik dedik. Dolayısıyla bir periyod bilgisi var. Her işin bir P ile ifade edilmiş. Kitapta P ile ifade edilmiş. Genelde de P ile ifade edilmiş zaten. Periyod bilgisi var.
+
+330
+01:09:27,064 --> 01:09:39,483
+tamamlanması gereken bir süre var. Yani bu iş farzı misal gömülü bir sistendesiniz. Bir ekranınız var. O ekranın refresh edilmesi lazım.
+
+331
+01:09:41,623 --> 01:09:53,884
+Saniyede 25 kere refresh edilmesi lazım. Yani 40 milisaniyede bir refresh edilmesi lazım. Ama refresh'in de farzı misal 1 milisaniyeden ya da 5 milisaniyeden fazla olmaması lazım süresinin.
+
+332
+01:09:53,884 --> 01:10:23,424
+Dolayısıyla bir de deadline'ınız var. Burada da day ile ifade edilmiş. Bir de execution time'ınız var. Burada t ile ifade etmişler ama başka sistemde e ile ifade edildiğini görürsünüz. O da şu bu işin yapılmasının ne kadar süreceği normal şartlar. Yani siz ekranı refresh etme işini belki bir milisaniyede yapıyorsunuz. Ama bunun için belirlediğiniz deadline beş milisaniye olabilir. Periyodu da zaten kırk milisaniyede bir.
+
+333
+01:10:23,883 --> 01:10:40,064
+Dolayısıyla böyle baktığınız zaman execution time'ının deadline'ından küçük, deadline'ın da period'ından küçük olması gerekir. Normal olarak. Bu sistemin schedule edilebilmesi için.
+
+334
+01:10:43,263 --> 01:10:49,623
+Aksi takipte zaten hani execution deadline'ından büyük bir yapı varsa hiçbir zaman deadline'i yakalayamazsınız zaten.
+
+335
+01:10:49,623 --> 01:11:05,844
+Şimdi bu bilgiler ışığında farklı scheduling algoritmaları ortaya atılmış. Bunlardan bir tanesi rate monotonik scheduling.
+
+336
+01:11:05,844 --> 01:11:13,623
+Baktığınız zaman öncelik değeri şeyle nedir o?
+
+337
+01:11:20,467 --> 01:11:43,367
+periodu ile ters orantılı. Yani period değeri daha kısaysa priorities daha yüksek oluyor. Yani ne demek istiyoruz? 20 milisaniyede bir ortaya çıkan bir işimiz varsa, diğer bir sistemdeki bir işte 5 milisaniyede bir ortaya çıkıyorsa, o zaman 5 milisaniyede bir ortaya çıkan iş daha yüksek önceliklidir.
+
+338
+01:11:43,367 --> 01:11:45,587
+ve
+
+339
+01:11:49,619 --> 01:12:08,899
+Eğer sistemde o anda düşük öncelikli bir proses çalışıyorsa ve yüksek öncelikli bir proses available olursa yani periyode geldiği için tekne ortaya çıkarsa düşük öncelikliyi preempt ediyorsunuz yüksek öncelikliyi çalıştırmaya başlıyorsunuz. Yapı bu.
+
+340
+01:12:08,899 --> 01:12:18,899
+Şimdi bu yapı üzerinden bakacak olursak şurada bir örnek görüyorsunuz P1-P2, P1-P2 öyle giden bir yapı var.
+
+341
+01:12:19,619 --> 01:12:36,719
+bu ikisinin p1'in periyodu 50 p2'ninki 100 yani şurada t0'nın da bu iki proses de sistemde var. Her 50. birimde p1 tekrar ediyor. 100. birimlerde de p2 tekrar ediyor.
+
+342
+01:12:36,719 --> 01:12:49,219
+Bu yapıya baktığınız zaman birinin rate her 50 milisaniyede bir diğer iki 100 milisaniyede bir. Dolayısıyla p1'in nesi var? Doğrudan p2'ye göre bir önceliği var.
+
+343
+01:12:49,619 --> 01:13:19,560
+Bir diğer şey çalışma süreleri. P1'in çalışma süresi 20, P2'nin çalışma süresi ise 35. Dolayısıyla ne oluyor? İkisi birden sistemde var. P1 çalışıyor. 20 birim bitince P2 çalışıyor. 35 birim çalışacak aslında. 55'e kadar devam etmesi lazım ama 50. birimde P1 tekrar ortaya çıktığı için preempt edildi. P1 çalıştırdık. P2 sonra devam.
+
+344
+01:13:19,619 --> 01:13:33,139
+%2 proses tekrar ortaya çıktı. İlk 21'imde P1 çalıştı, P2 çalıştı, P1 tekrar 150'de ortaya çıktı. O çalıştı, sonra P2'ye devam ettik.
+
+345
+01:13:33,139 --> 01:13:39,780
+Dolayısıyla ne oldu? Sistem schedule ediliyor. Zaten bunu şeyden de ölçekleyebilirsiniz bastığınız zaman.
+
+346
+01:13:39,779 --> 01:13:44,779
+Burst'ünü periyoduna ölçeklerseniz
+
+347
+01:13:44,779 --> 01:13:54,439
+Febr'in burst'u ne? 20 birim. Periyod ne? 50 birim. 20 bölü 50, 2 bölü 5, %40. 0.4 diye düşünülebilirsiniz.
+
+348
+01:13:55,899 --> 01:14:04,139
+P2'ninki ne? 100 birimde 1 çıkıyor. Her birimde 35. 0.35. 40 artı 0.35. 0.75.
+
+349
+01:14:04,140 --> 01:14:29,700
+Dolayısıyla birden daha küçük olduğu için biz bunu zaten schedule edebiliriz diye düşünebilirsiniz. Diye düşünebilirsiniz dedim. Her zaman olmaz. Neden olmaz? İlerleyen slide'larda konuşacağız. Nezellikle proses sayısı arttıkça aslında CPU utilization'i %100 sağlama şansımız yok. Hatta şeyde slide'larda olması lazım birazdan bir formül var.
+
+350
+01:14:29,700 --> 01:14:37,899
+process sayısı ikiye çıktığı zaman aslında utilization miktarınız %80 küsurlere iniyor.
+
+351
+01:14:37,899 --> 01:14:41,720
+Çoğu zaman bununla ilgili ortaya çıkmış bir şey de var.
+
+352
+01:14:44,660 --> 01:14:53,539
+Peki bu yapı şey olur mu? Her zaman çalışır mı ya da her zaman işe yarar mı?
+
+353
+01:14:57,203 --> 01:14:59,384
+Yaramaz hocam.
+
+354
+01:15:00,123 --> 01:15:01,323
+Neden yaramaz?
+
+355
+01:15:01,323 --> 01:15:09,923
+Çünkü shorter periods, higher priority deniliyor. Benim longer periods işim daha önemli olabilir.
+
+356
+01:15:13,224 --> 01:15:14,884
+Önemliyi tanımlaman lazım.
+
+357
+01:15:15,724 --> 01:15:20,323
+Yani yaptığı iş daha kritik olabilir. Sonuçta real time çalışmamız gerekmiyor.
+
+358
+01:15:20,403 --> 01:15:23,323
+Hala tanımsız oldu. Yani önemli ve kritik.
+
+359
+01:15:24,203 --> 01:15:25,643
+Neye göre, kime göre?
+
+360
+01:15:25,643 --> 01:15:29,643
+Burada aslında slide zaten söylüyor bir şeyleri de
+
+361
+01:15:29,643 --> 01:15:33,723
+Oraya bir belirle dersen
+
+362
+01:15:33,723 --> 01:15:35,983
+Yani önemini neyle belirliyoruz
+
+363
+01:15:35,983 --> 01:15:39,203
+Ya da ne zaman önemli oluyor
+
+364
+01:15:39,203 --> 01:15:40,763
+Ne zaman önemli olabilir
+
+365
+01:15:53,492 --> 01:15:55,492
+Şimdi şöyle düşünün.
+
+366
+01:15:58,195 --> 01:16:16,595
+Demin hani real time sistem konuşurken şeyle ilgili işlemlerle ilgili 3 tane farklı zaman konuştuk. Period, execution ve deadline. Daha doğrusu period, deadline, execution diye konuştuk. Bunların çünkü şu an saydığım haliyle büyükten küçüğe doğru gittiğini fark ediyoruz.
+
+367
+01:16:16,595 --> 01:16:27,255
+Bir önceki örnekte, pardon, şurada hiç deadline'dan bahsetmedik. Yani deadline'ı çünkü şey gibi düşündük.
+
+368
+01:16:27,255 --> 01:16:28,255
+nedir o? Period eşittir deadline gibi düşünün. Yani bir işin bir periyodu gelmeden onu tamamlamış olmak bizim için kafiydi. Ama burada bakın deadline'lar işin içerisine girdi. Slide'da missed deadlines with rate monitoring skeçimi diyoruz. Şundan dolayı diyoruz. Diyelim ki evet şeyimiz
+
+369
+01:16:57,255 --> 01:17:22,295
+nedro deadline'ımız periyodumuzdan kısa olabilir. Periyodumuzla aynı da olabilir. Fark etmez. Ve fakat her iki durumda da nasıl scheduling yapıyoruz? Sadece ve sadece rate'e bakarak scheduling yapıyoruz.
+
+370
+01:17:22,295 --> 01:17:29,975
+Bu ikili örnekler üzerinde şeyi doğrudan görmeniz çok kolay değil. Nedir o?
+
+371
+01:17:36,020 --> 01:18:00,079
+periyot içerisinde deadline'ı kaçırmayı doğrudan görmeniz çok kolay değil. Fakat örneği biraz değiştirirsek, yani ilkinde periyot şeydi, midro, 50 idi, P1 için.
+
+372
+01:18:00,079 --> 01:18:25,399
+execution time'ı 20 idi. Şimdi bunu biraz değiştirelim. P2 için, P1 için aynı tutalım. P2 için 100 olan periyodu 80'e indirelim. Execution time'ını da yine 35'te tutalım. Şimdi baktığınız zaman 20 bölü 50 0.4 ediyor zaten.
+
+373
+01:18:30,739 --> 01:18:59,719
+pardon, burada şey, p1'inkini de execution time'ı da 25'e çıkartmış. Pardon, özür dilerim, onu kaçırdım. 25 bölü 50, %50 ediyor zaten. 35 p2'nin execution time'ıydı. Periyodunu da 100'den 80'iydı. 35 bölü 80, baktığınızda 0.94. Hala birden küçük. Dolayısıyla schedule edilebilir gibi gözüküyor ve fakat bu yapıyla rate monotonik ile schedule ettiğiniz zaman ne oluyor?
+
+374
+01:18:59,719 --> 01:19:00,959
+başımıza ne geliyor?
+
+375
+01:19:07,460 --> 01:19:09,739
+0 anında p1'de p2'de var.
+
+376
+01:19:09,939 --> 01:19:11,640
+25 gün p1'i çalıştırdınız.
+
+377
+01:19:11,780 --> 01:19:11,979
+Neden?
+
+378
+01:19:12,299 --> 01:19:16,140
+Çünkü periyodu daha düşük dolusuyla önceliği daha yüksek.
+
+379
+01:19:16,320 --> 01:19:17,820
+Sonra p2'yi çalıştırdınız.
+
+380
+01:19:18,079 --> 01:19:19,039
+p1 araya girdi.
+
+381
+01:19:19,659 --> 01:19:21,640
+p2 deadline'ı kaçırdı.
+
+382
+01:19:22,359 --> 01:19:27,679
+Dolayısıyla 0, 94 de olsa yani birden küçük de olsa bu iş kurtarmadı.
+
+383
+01:19:27,799 --> 01:19:28,739
+Neden kurtarmadı?
+
+384
+01:19:28,739 --> 01:19:32,219
+bununla ilgili şey şu
+
+385
+01:19:32,219 --> 01:19:38,519
+formülizasyon şu
+
+386
+01:19:38,519 --> 01:19:42,320
+n çarpı parantez içerisinde
+
+387
+01:19:42,320 --> 01:19:45,320
+2 üzeri 1 bölü n eksi 1
+
+388
+01:19:45,320 --> 01:19:47,600
+yani şurada var mıslaklarda?
+
+389
+01:19:48,680 --> 01:19:49,019
+yok
+
+390
+01:19:49,019 --> 01:19:51,339
+şöyle ifade edeyim
+
+391
+01:19:51,339 --> 01:19:56,140
+2 üzeri 1 bölü n diyorsunuz
+
+392
+01:19:56,140 --> 01:20:15,699
+n burada proses sayısı. Dolayısıyla eğer n bir ise iki üzeri bir bölü bir zaten bir olacak iki üzeri bir de iki. Eksi bir bir n ile çarpım dışarıda bir. Yüzde yüz kullanırsınız.
+
+393
+01:20:15,699 --> 01:20:22,600
+teknikler. 2'de ise 1 bölü 2 olacak. Yani
+
+394
+01:20:30,260 --> 01:20:31,039
+kare kök 2
+
+395
+01:20:36,851 --> 01:21:04,692
+şey yok. Dolayısıyla aslında şeyin doğrudan söyleyeyim o zaman hiç hesabı kitabı gibi tepki vermeyeceksiniz. Yüzde aşağı yukarı 83 ile şey sınırlandırılmış olacak. Bunu daha da arttırırsanız yani proses sayısını arttırırsanız daha da düşecektir.
+
+396
+01:21:04,692 --> 01:21:13,171
+end değeri arttıkça elde edebileceğiniz utilization miktarı gitgide düşecek.
+
+397
+01:21:14,032 --> 01:21:15,631
+Benzer şekilde.
+
+398
+01:21:28,467 --> 01:21:36,467
+Dolayısıyla aslında derdimiz deadline'ları yakalamaksa farklı bir yerden yaklaşmamız lazım.
+
+399
+01:21:39,207 --> 01:21:43,047
+Yani periyodlar üzerinden değil de deadline'lar üzerinden gitmemiz lazım.
+
+400
+01:21:43,807 --> 01:21:51,447
+Nasıl yapabiliriz? Çok da doğrudan, dümdüz. Deadline ne kadar uzaksa önceliği o kadar yüksek tutabiliriz.
+
+401
+01:21:51,888 --> 01:21:55,228
+Ne kadar uzaksa da önceliği o kadar düşük tutabiliriz.
+
+402
+01:21:55,228 --> 01:22:01,228
+yine baktığınız zaman benzer şey seti üzerinden, proses seti üzerinden
+
+403
+01:22:04,851 --> 01:22:34,311
+P1 ve P2 var. P1'in execution'ı 25, periyodu 50, P2'nin 35, periyodu 80. Dolayısıyla ne olacak? Herhangi bir T anında P1'in deadline'ı daha yüksek. Şu an 0'dan başladığı için 50'de bitecek. P2'nin 80'de. Dolayısıyla bu çalışacak.
+
+404
+01:22:34,311 --> 01:23:01,131
+sonra p2 çalışacak. p1 geldiği halde p2'nin deadline'ı daha yakın olduğu için p2 çalışacak. Sonra p1 çalışacak. p1 sisteme dahil olduğunda p1'in deadline'ı hala daha yakın olduğu için bu çalışmaya devam edecek. Sonra p2 gelecek. Bir sonrakinde gene araya geçecekler. Ve bu şekilde aslında hepsi deadline'ını sağlayarak çalışabilecek.
+
+405
+01:23:01,131 --> 01:23:24,471
+Şimdi baktığınız zaman early is deadline first algoritması aslında teorik olarak optimal. Yani her prosesin deadline'ını karşılayacak şekilde schedule edilmesini sağlıyor. Eğer bu ihtimal daha yenindeyse her şekilde.
+
+406
+01:23:24,471 --> 01:23:39,091
+yani early step first eğer bir sistemi schedule edemiyorsa diğerinin yani şey neydi ismi?
+
+407
+01:23:39,091 --> 01:23:40,171
+Wait on a 2.
+
+408
+01:23:41,011 --> 01:23:45,171
+Schedule etmesini fekleyemezsiniz öyle söyleyeyim.
+
+409
+01:23:45,171 --> 01:24:08,731
+Şimdi bir başka yöntem, bir başka yapı bu aslında weighted queue scheduling gibi bir şey bir taraftan doğrudan da şey yok karşılığı olan bir yapı değil ama bir şekilde teorik olarak olan bir yapı proportional share diye tariflemişler.
+
+410
+01:24:08,731 --> 01:24:30,271
+bunda aslında yapılan şey sistemin CPU time'ını, CPU skecilik açısından bakıyoruz tabii ki sadece, parçalara bölmek, tene tane ve herkese bununla alakalı belli bir miktar dağıtmak.
+
+411
+01:24:30,271 --> 01:24:34,212
+Yani weighted round robin gibi düşünebilirsiniz belli açıklarda.
+
+412
+01:24:34,212 --> 01:24:36,351
+ha bir saniye devamı yokmuş.
+
+413
+01:24:36,991 --> 01:24:41,771
+Baktığınız zaman bunun örneği diyelim A, B, C diye üç tane şeyiniz var.
+
+414
+01:24:43,292 --> 01:24:44,251
+İşleminiz var.
+
+415
+01:24:44,812 --> 01:24:47,631
+Toplamda da yüz birim parçanız var.
+
+416
+01:24:47,712 --> 01:24:50,111
+CPU zamanını yüz birime böldüğünüz logik olarak.
+
+417
+01:24:50,111 --> 01:24:58,372
+İşte A'ya 50, B'ye 15, C'ye 20 falan gibi şeyler atayarak sistemin çalışmasını sağlıyorsunuz.
+
+418
+01:24:58,831 --> 01:25:01,452
+Bu arada bu söylediklerimi topladığınız zaman aslında
+
+419
+01:25:01,451 --> 01:25:30,631
+şey yapmıyor dikkat ederseniz. Şehrin tamamını kaplamıyor. Yani 85 gibi bir şey ediyor olması lazım. Bu şu demek herhangi bir T anında bu sisteme girecek ya da çıkacak başka bir prosesler olabilir. Yani A, B, C için bunları vermişsinizdir. Ama hala dinamik olarak, demin de söylemiştim bir arkadaşın başka bir şey ifade ettiği sırada.
+
+420
+01:25:31,451 --> 01:25:36,211
+özellikle gerçek zamanlı sistemlerde scheduling'i offline ya da online yapabilirsiniz.
+
+421
+01:25:36,871 --> 01:25:40,011
+Offline yaptığınızda bir simülasyon üzerinden verip pay edersiniz.
+
+422
+01:25:40,491 --> 01:25:41,811
+Bu sistem böyle çalışıyor diye.
+
+423
+01:25:42,251 --> 01:25:44,471
+Bunu da statik olarak sistemi bitersiniz.
+
+424
+01:25:44,891 --> 01:25:46,051
+İşleri öyle çalıştırırsınız.
+
+425
+01:25:46,251 --> 01:25:49,551
+Ya da online olarak, dinamik olarak karar verirsiniz.
+
+426
+01:25:49,551 --> 01:25:57,971
+Dinamik yapıda da işte öyle bir paya ihtiyacınız var ki ekstra bir şeyler çıktığında hayatına devam edebilsin sistem.
+
+427
+01:25:57,971 --> 01:26:00,631
+Şimdi post X
+
+428
+01:26:01,652 --> 01:26:28,711
+standardının bize real time scale yönetimiyle ilgili sağladığı şeyler var. Bunlardan bir tanesi iki tane yöntem var. Bir tanesi FIFO, diğeri de round robin. Bunların hangi şeylerle, fonksiyonlarla vesaireyle yapıldı, edildiği biraz bizim için şu an gereksiz bir detay. Dolayısıyla bunları atlayacağım.
+
+429
+01:26:28,711 --> 01:26:33,891
+işlediğim sistemleri örneklerine bakacak olursak ki onlara da hızlıca bakalım.
+
+430
+01:26:36,672 --> 01:26:44,971
+Linux'da aslında konuşabileceğimiz üzerine bir şeyler söyleyebildiğimiz 3 farklı scheduling var.
+
+431
+01:26:44,971 --> 01:26:48,872
+3 farklı scheduling var derken aslında vardı.
+
+432
+01:26:49,692 --> 01:26:54,591
+Kernel 2.5'dan önce standart bir Unix scheduling albortması var.
+
+433
+01:26:54,811 --> 01:26:55,531
+Onu kullanıyorlar.
+
+434
+01:26:55,531 --> 01:27:05,531
+ve fakat çok efektif olmuyor. Şundan dolayı aslında yapı olarak biraz daha batch işlem oluyor.
+
+435
+01:27:05,531 --> 01:27:19,531
+2.5'tan sonra o isimli bir şey, negro algoritmaya geçiliyor. Baktığınız zaman primitif bir yapı, priority based.
+
+436
+01:27:19,531 --> 01:27:49,512
+Play range'lerine baktığımız zaman time, share, real time diye iki tane ayrı range var. 0'dan 99'a kadar olan kısım real time'ı sembolize ediyor. Bir de nice value kısmı var. Nice value'un da ismi şeyden geliyor. Aslında belirlediğiniz nice value ne kadar yüksek olursa aslında diğer proseslerin çalışmasını
+
+437
+01:27:49,512 --> 01:27:59,111
+ne kadar imkan veriyorsunuz. Nezaket gösteriyorsunuz da o yüzden nice olarak belirtiliyor, tarifleniyor.
+
+438
+01:28:02,547 --> 01:28:11,547
+şeyiniz, prioritiniz arttıkça haline daha fazla time kuantum alıyorsunuz.
+
+439
+01:28:19,828 --> 01:28:48,807
+ve fakat hani O1'in güzel tarafı aslında şeyden geliyor. Bir önceki algoritmaya kıyasla lineer zamanda çalışmasından geliyor. Dolayısıyla çok hızlı bir scheduling kararı alabiliyorsunuz. Ve fakat interaktif prosesler anlamında biraz zayıf kalıyor. Yani sistemin responsiveness anlamında zayıf kaldığını görüyorlar.
+
+440
+01:28:48,807 --> 01:29:16,548
+O yüzden de completely fair scheduling diye bir başka scheduling yapısı ortaya atılıyor. Burada yapılan şey aslında farklı klaslar oluşturulması. Farklı klaslar oluşturulması derken şimdi Linux işletim sistemine baktığınız zaman bir sonucu sisteminde de çalışılabiliyor, bir desktop'da da çalışılabiliyor, bir mobile'de de çalışılabiliyor.
+
+441
+01:29:16,547 --> 01:29:38,347
+Dolayısıyla bu ortamların her birinin aslında farklı scheduling ihtiyaçları ve yapıları var. Dolayısıyla siz aslında sisteminizde farklı klaslar tarifleyebiliyorsunuz. Bu klasların bir önceliği var. Artı klas içerisindeki her işleminde ayrı bir önceliği var.
+
+442
+01:29:38,347 --> 01:29:42,447
+Klas içerisindeki
+
+443
+01:29:47,731 --> 01:30:03,351
+her işlemin önceliği de yine nice value üzerinden tarifleniyor. Aslında classlara baktığınız zaman da default'ta iki tane hali hazırda class var. Biri default, diğeri de real time.
+
+444
+01:30:03,351 --> 01:30:33,331
+real time'lardaki şey öncelik değerleri statik. Default'ta ise işlemin nice value'üne bağlı olarak öncelik değeri değişiyor. Yani siz ne kadar düşük bir nice value verirseniz o kadar yüksek bir önceliğiniz var. Yani eksi 20 gibi bir şey verirseniz daha bencil yaklaşıyorsunuz. Artı 19 verirseniz diğerlerinin çalışması için şey yapıyorsunuz.
+
+445
+01:30:33,351 --> 01:30:50,151
+öncelik sağlıyorsunuz. O yüzden de nice deniyor. Nice değeri oradan geliyor. Demin söylemiştim zaten. Başlarken aslında scheduler'ın şöyle bir şey yapması gerekiyor.
+
+446
+01:30:56,307 --> 01:31:04,867
+en yüksek öncelikli, class'taki en yüksek öncelikli işlem başlıyor. Bunun için de aslında
+
+447
+01:31:04,867 --> 01:31:07,747
+bu
+
+448
+01:31:12,275 --> 01:31:36,116
+bir şey yapısı oluşturması lazım. İşlemlerin çalışma zamanıyla ve süresiyle ilgili ve önceliyle ilgili bir yapı oluşturması lazım. Şöyle ki bu yapıda hep önceliklerden bahsettik. Öncelik olduğu için de her zaman ne olabilir diye konuşuyoruz. Bir starvation olabilir diye konuşuyoruz.
+
+449
+01:31:36,116 --> 01:32:01,555
+bunu engellemek adına aslında virtual runtime diye bir değer tutuluyor. Her işlem için. We runtime diye de bir structure var. Aslında böyle biliyorsunuz. Bunun balance bitiriyor olarak tutulması gerekiyor. Baktığınız zaman her taskın soldakiler daha düşük, sağdakiler daha yüksek şeklinde bir ağacı yerleştirmesi. We runtime buna bağlı olarak.
+
+450
+01:32:01,555 --> 01:32:15,355
+Böylece ki scheduler starvation oluşmasına engel olmak adına burada en düşük v-run time'a sahip prosesi seçebiliyor.
+
+451
+01:32:16,935 --> 01:32:24,816
+Şeyi söylemiştim nice value'lar azaldıkça önceliği artıyor vs. real time'daki kısım ise sabit.
+
+452
+01:32:24,816 --> 01:32:38,375
+aslında baktığınız zaman normal değer 120, işte eksi 20 verirseniz 100'e denk geliyor, artı 19 verirseniz 139'a geliyor öncelik değeriniz gibi bir skala var.
+
+453
+01:32:39,695 --> 01:32:44,835
+Windows Schedule'ın aslında daha karman çorman bir yapı.
+
+454
+01:32:45,975 --> 01:32:51,555
+Şöyle karman çorman, şu yüzden karman çorman diye bahsediyorum.
+
+455
+01:32:51,555 --> 01:32:53,536
+Bir kere Schedule'ın ismi bile Dispatcher.
+
+456
+01:32:54,816 --> 01:33:04,235
+oradan başlıyor hani genel tanıma vesaireye aykırı olarak ama round robin yapısı var. Arka tarafta bir taraftan da multi-level feedback queue var.
+
+457
+01:33:07,775 --> 01:33:14,896
+32 level'ın olduğu bir priority yapısı var. Bu priority yapısı içerisinde
+
+458
+01:33:14,895 --> 01:33:26,216
+ilk 15 yani 1'den 15'e kadar olan kısım değişken yapı geri kalan kısım real time klasına ait 16 ile 31.
+
+459
+01:33:34,644 --> 01:34:00,644
+Baktığınız zaman bu öncelik değerine bağlı olarak aslında hangi thread'in çalıştırılacağı belirleniyor. Hangi thread'in çalıştırılacağı belirlenirken de eğer sistemde başka o CPU'yu isteyen başka bir thread yoksa, herhangi bir Q'da bekleyen birileri yoksa ya da olanların hepsi düşük öncelikliyse thread'iniz çalışmaya devam ediyor.
+
+460
+01:34:00,644 --> 01:34:30,563
+ne zamana kadar? Kendini bloklayana kadar ya da kendisine assign edilen time slice'i kullanana kadar ya da o kuyruğa daha yüksek öncelikli bir thread gelene kadar. Bu detaylara çok fazla ihtiyacımız yok. Solaris kısmına ise hiç girmeyeceğim. Orası daha şey filmimizde çok fazla kullanmadığımız bir yapı detayına girmeye özel bir noktada yok.
+
+461
+01:34:30,563 --> 01:34:40,463
+aslında baktığınız zaman hem Linux'ta hem Windows'ta konuştuğunuz şeylerin belli açılardan tekrar gibi yani çok daha özgün bir yapı yok.
+
+462
+01:34:40,583 --> 01:34:46,983
+Üstüne uzun uzun konuşmaya değecek olan. Ancak siz gene de bundan da sorumlusunuz. Buna bakarsınız arada.
+
+463
+01:34:48,883 --> 01:34:56,923
+Bunun dışında scheduling ile ilgili konuşmamız gereken ya da üzerinde tutmamız gereken şey şu.
+
+464
+01:34:56,923 --> 01:35:24,783
+hangi al götmeyi belirleyeceğiz, nasıl belirleyeceğiz? Burada birkaç tane kriter var aslında ki bunu en başta sıkıcığım kriteri altında konuşmuştum. Geliştirdiğimiz sistemin ne için olduğu önemli. Buna bağlı olarak kriterin ne olacağı yani responsif olmasını bekliyorsak response time'ı önemli. Turn around time'ını minimal etmek isteyebiliriz.
+
+465
+01:35:24,783 --> 01:35:47,744
+turn around time'ı minimize etmek istediğimiz yer aslında deadline'ların olduğu bir yapıdır. İnteraktif bir sistemsek wait time'ını minimize etmek isteriz vs. Dolayısıyla kriter aslında sistemin neyle ilgili olduğu ile da alakalı. Ama değerlendirme için birkaç tane farklı yöntemimiz var.
+
+466
+01:35:47,743 --> 01:36:06,223
+Bir tanesi deterministik modeling yaparız. Yani kalkar burada gang diagramıyla vesaire çizdiğimiz gibi sistemin modeller o model üzerinden hangi algoritma çalıştırıldığında bu sistemin bizim için kriter neyse?
+
+467
+01:36:06,224 --> 01:36:36,084
+waiting time. Average waiting time'ını hesaplarız. Haliyle de en düşük olan bizim için en iyisi de geçeriz. Buradaki sıkıntı ne? Detaylı bir değerlendirme yapma noktasında üzerinde hızlı ve kolay yapılabilen bir şey olsa da ne sıkıntısı var? Herkesin tam olarak bu sistemde ne zaman var olacağı, ne kadar çalışacağı vesaire falan gibi bilgilere ihtiyaç var ki çok kolay değil.
+
+468
+01:36:36,224 --> 01:37:06,104
+bunları toparlamak. Bir diğer şey Q modellerinden yararlanmak. Yani networkteki gibi bir Q modeli oluşturup hesap yapmak. Burada hani Q'nun modeli yapısı vesairesi önem kazınıyor. Bir diğer alternatif simülasyon. Simülasyon belli açılardan daha güzel sonuçları elde edilmiş.
+
+469
+01:37:06,224 --> 01:37:27,524
+farklı durumlar altında test etmenizi sağlar. O durumda yapacağınız şey de farklı aynı modeli yani mesela bir sistemi çalıştırıp elde ettiğiniz traceler üzerinden farklı simülasyon ortamlarında nasıl değerler elde ettiğinizi görmek olabilir.
+
+470
+01:37:29,971 --> 01:37:59,011
+Evet, 6. chapter'ı da bitirdik. Şu an temiziz. Dediğim gibi önümüzdeki hafta, salı günü tekrar söyleyeyim. Ayın 21'i saat 5'te ikinci vizeniz var. Tüm gruplar ortak olacak. Sınıfla ilgili ayarlama yapılacak inşallah. Bölüme hem sözler söyledim, hem bir mail attım vesaire bir ara bir günü olmuş olacak inşallah. O zaman da şeyini yapacağız.
+
+471
+01:37:59,011 --> 01:38:18,591
+sınıflarının duyurusunu yaparız. Gene çoktan çok seçmeni olacak sınavımız. Birinci vizede geçerli kuralların tamamı geçerli. Konular baştan sona, son gün son dakikaya kadar konuştuğumuz her şey dahil. Haftaya sınavda görüşmek üzere. Var mı bir sorunuz arkadaşlar?
+
+472
+01:38:22,452 --> 01:38:25,211
+O zaman hepinize iyi haftalar.

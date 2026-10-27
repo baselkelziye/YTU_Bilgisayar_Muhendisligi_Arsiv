@@ -1,0 +1,1159 @@
+1
+00:00:01,492 --> 00:00:02,492
+nişıl.
+
+2
+00:02:59,508 --> 00:03:00,107
+Merhaba hocam.
+
+3
+00:03:07,699 --> 00:03:13,799
+Merhaba Betül. Seni host yaptım. Yetkin var. Ben artık ayrılıyorum. Hepinize iyi dersler. Kolay gelsin.
+
+4
+00:03:13,819 --> 00:03:15,439
+Teşekkürler hocam. Kolay gelsin.
+
+5
+00:04:16,084 --> 00:04:20,883
+Arkadaşlar, geçen sefer baya problem yaşamıştık hatırlıyorsanız.
+
+6
+00:04:27,091 --> 00:04:28,231
+13 kişi gelmiş.
+
+7
+00:04:36,307 --> 00:04:39,028
+Neyse başlayalım ama 10 geçti neredeyse.
+
+8
+00:04:41,228 --> 00:04:44,967
+Şimdi geçen haftanın birazcık telafisi gibi olacak.
+
+9
+00:04:45,907 --> 00:04:49,807
+Ama ben yine de kaldığım yerden devam etmeyi düşünüyorum.
+
+10
+00:04:50,688 --> 00:04:54,107
+Öncekilere dair sorularınız varsa sonunda alayım.
+
+11
+00:04:54,387 --> 00:04:57,167
+Hala bağlantımız olursa.
+
+12
+00:04:59,107 --> 00:05:02,027
+Şimdi egzekte kalmıştık diye hatırlıyorum.
+
+13
+00:05:05,812 --> 00:05:22,812
+exec ile fork'un farkı neydi? Exec oluşturulan child'ın farklı bir iş yapmasına izin veriyordu. Kendisinin birebir kopyası değil, bambaşka bir prosesi orada başlatabiliyorduk.
+
+14
+00:05:22,812 --> 00:05:27,131
+şunu kapatıyoruz.
+
+15
+00:05:27,131 --> 00:05:29,492
+Eksek şeyimiz burada.
+
+16
+00:05:31,072 --> 00:05:32,211
+Örneğimiz.
+
+17
+00:05:32,732 --> 00:05:41,591
+Şimdi şurada bir tane PID'ye fork'un adresini şey yapıyoruz, atıyoruz.
+
+18
+00:05:41,751 --> 00:05:47,111
+PID'nin pardon identitesini.
+
+19
+00:05:47,111 --> 00:06:07,071
+bu aslında bu parent'ın parent'ta bunu oluşturduğumuz zaman child'ın bize PID'sini veriyordu. Ondan sonra PID sıfırdan büyükse parent'ın içinde olduğunu, parent prosesli olduğumuzu sıfıra eşitse de child prosesinin içinde olduğumuzu gösteriyor.
+
+20
+00:06:07,071 --> 00:06:29,331
+Bu örnekte parent prosesimiz bir tane sadece şunu basıyor something completely different diye ondan sonra child prosesi oluşturduğumuz zamanda o bir tane exec ile kendi çocuğunu oluşturuyor ve o da elesi yapacakmış.
+
+21
+00:06:29,331 --> 00:06:40,731
+tamam mı? Şimdi buradaki mantık, bakayım şurada var mı? Şu denemeyi silip yerine.
+
+22
+00:06:51,060 --> 00:06:53,419
+bir tanesiye fazla konuşuruz.
+
+23
+00:06:56,755 --> 00:06:57,635
+neden olmadı?
+
+24
+00:06:58,775 --> 00:07:00,216
+nokta var sonunda hocam.
+
+25
+00:07:02,315 --> 00:07:04,696
+evet.
+
+26
+00:07:04,696 --> 00:07:10,495
+şimdi burada ilk önce neyi bastı?
+
+27
+00:07:10,935 --> 00:07:12,995
+çocuğun oluşturduğu çocuğu bastı.
+
+28
+00:07:13,115 --> 00:07:13,495
+tamam mı?
+
+29
+00:07:14,815 --> 00:07:15,695
+ondan sonra
+
+30
+00:07:15,695 --> 00:07:18,555
+en ilk yaptığı şey bu.
+
+31
+00:07:19,775 --> 00:07:20,436
+sonra
+
+32
+00:07:20,436 --> 00:07:22,535
+çocuğu basması lazım.
+
+33
+00:07:23,176 --> 00:07:25,135
+şunu diye düşünüyorum.
+
+34
+00:07:25,415 --> 00:07:26,096
+okuyoruz.
+
+35
+00:07:29,492 --> 00:07:55,111
+parent does şunu ilk önce şunu bastı. Ondan sonra parent do something different. Bu parent'ın içindeki. Ondan sonra parent'ı, ondan sonra child'ı basıyor. İlk önce child'ın oluşturduğu çocuğu, ondan sonra parent'ı, ondan sonra da child'ı basıyor.
+
+36
+00:07:55,111 --> 00:08:02,492
+Şimdi burada şu şeyi de gösterdikten sonra
+
+37
+00:08:02,492 --> 00:08:11,591
+Şimdi process termination da gösterdikten sonra
+
+38
+00:08:11,591 --> 00:08:17,771
+Burada exit sıfırın hatırlıyorsunuz bu statüs yerine sıfır yazdığımız zaman
+
+39
+00:08:17,771 --> 00:08:24,151
+Normal şekilde bütün işlemleri yaptı da ondan sonra bitti manası da geliyor
+
+40
+00:08:24,151 --> 00:08:26,311
+add exit örneğimiz var bir tane.
+
+41
+00:08:28,692 --> 00:08:32,651
+Add exit örneğimiz şu.
+
+42
+00:08:34,932 --> 00:08:38,191
+Şimdi parent cleaner diye bir tane fonksiyon yazmışız.
+
+43
+00:08:38,691 --> 00:08:47,032
+Ondan sonra add exit'e yani sistem call'u yaparken bunu çağırıyoruz parametre olarak.
+
+44
+00:08:47,911 --> 00:08:52,871
+Ondan sonra o da gidip çıkışta bu işi yapıyor.
+
+45
+00:08:52,871 --> 00:09:21,271
+bu fonksiyon her ne yapıyorsa onu yapıyor. Şimdi şurada ne yapmış? Bakıyoruz. Parent prosesin içinde at exit şeyden child proses bir dakika kendisi exit sıfırla çıkıyor. Child proses biterken de at exit'e şey gönderecek değil mi? Bakıyoruz hemen. Bir bakayım.
+
+46
+00:09:31,124 --> 00:09:56,583
+Şimdi parent'ın içindeyiz. Parent'ın PID'si. Hayır, parent biterken şunu çağırdı. Ondan sonra child'ı yaptı. En sonunda da kendisi normal şekilde child'da bunu prosesin tamamını yaptığı için exit 0'ı da child'la bitirmiş olduk.
+
+47
+00:09:56,583 --> 00:10:17,443
+kendisi yani parent içinde çağrıldığı at exit'te içinde çağrıldığı şey proses biterken bu fonksiyonu çağırdı. Ondan sonra child prosesi daha sonra şey gördük. Ondan sonra child prosesi de exit sıfırla bitirmiş oldu kendisini.
+
+48
+00:10:22,548 --> 00:10:43,127
+Şimdi durun bakalım ne var sırada? Şimdi return'la exit'in farkı neydi? Bir defa exit sistem call, return'la bir instruction. Bu ikisinin farkını belki true false sorularında falan karşınıza çıkabilir. Aklınıza tutmanıza yarar var.
+
+49
+00:10:46,772 --> 00:10:57,811
+Sıra geldi zombiye. Geçen sefer bu zombide patlamıştı benim şey galiba. Şimdi zombiler de, zombiler iki şekilde oluyor. Bir tanesi orphan diye de geçiyor demiştik.
+
+50
+00:10:57,811 --> 00:11:25,711
+eğer şimdi zombi prosesle eğer bir şekilde child process bittiği zaman bunun onayını parent process vermezse o zaman şeydeki sistem process prescription'ından şeyi çıkaramadığı için
+
+51
+00:11:25,711 --> 00:11:40,931
+yani hala process table'ında bizim aslında biten aslında termination statüde olan child processimiz hala orada durduğu için zombi process deniyor buna.
+
+52
+00:11:40,931 --> 00:11:52,831
+Yani aslında termination statüde ama hala parent processden onay alamadığı için şey yapamamışız, oradan silememişiz sistem.
+
+53
+00:11:52,831 --> 00:11:57,751
+bu zombi proses oluyor ondan sonra bir de
+
+54
+00:12:04,052 --> 00:12:18,751
+şey bir şey bekliyormuş, child bir şey bekliyormuş ama parent process bir şekilde termination olmuş. Yani parent process bitmiş, child orada da kalmış diye düşünebilirsiniz. Bu da yine zombi proses ortaya çıkarıyor.
+
+55
+00:12:20,892 --> 00:12:28,511
+Şimdi şuradaki örneğe bakacak olursak, bu birinci zombimiz.
+
+56
+00:12:32,500 --> 00:12:41,739
+Şimdi burada bir tane şey parent'ta bir şey var. Sonsuz döngümüz var. Ondan sonra bu sonsuz döngü içinde
+
+57
+00:12:47,155 --> 00:12:48,155
+bir şey.
+
+58
+00:12:53,908 --> 00:12:54,408
+use.
+
+59
+00:13:03,796 --> 00:13:05,796
+bir türlü bitemiyor. Şimdi şuradan
+
+60
+00:13:05,796 --> 00:13:09,796
+piyes
+
+61
+00:13:09,796 --> 00:13:12,796
+şöyle yapınca
+
+62
+00:13:12,796 --> 00:13:17,796
+şurada statülerini de gösteriyor olması lazım.
+
+63
+00:13:17,796 --> 00:13:22,796
+greple aramak en mantıklısı
+
+64
+00:13:22,796 --> 00:13:28,796
+mesela şurada grep büyük z diyelim
+
+65
+00:13:28,796 --> 00:13:32,796
+statüsünde z olan
+
+66
+00:13:33,796 --> 00:14:02,275
+şu proses ve onun şeyi bu proses. Dur bakayım. Şu neymiş? Neyi gösteriyor bunlar sırasıyla? PID bu. Daha sonra statüs de bu. Bakıyoruz. Bu statüs, şu da PID'si. Bak.
+
+67
+00:14:03,796 --> 00:14:14,355
+Child Process'in PID'si 4625. Onun zombi olduğunu burada görebiliyorsunuz.
+
+68
+00:14:22,707 --> 00:14:43,427
+Şimdi bunu şey yapabilmek için ben nasıl öldürülüyor falan diye baktım. Sinyal gönderebiliyorsunuz parent'a ama doğru düzgün kodlanmadıysa o da çok fazla işe yaramıyor. Direkt kill ile ikisini birden öldürmek zorunda kalabiliyorsunuz.
+
+69
+00:14:43,427 --> 00:14:56,687
+Ondan sonra burada da tam tersi bir orfanımız var. Parent process direkt çıkmış ama child bir şeyler bekliyor. Aslında sonsuza bekleyecek. Ondan sonra onda da
+
+70
+00:15:00,211 --> 00:15:02,251
+Bu sefer zombi 2
+
+71
+00:15:07,155 --> 00:15:08,636
+tüm ne işin yaptı.
+
+72
+00:15:14,899 --> 00:15:16,099
+chatte bir şey var.
+
+73
+00:15:20,532 --> 00:15:28,971
+12. hafta oluyor genelde ikinci bize. Bu hocaya galiba bu sorular. Böyle zannediyorum.
+
+74
+00:15:35,764 --> 00:15:38,163
+Bir bakalım şimdi bunu da gösterecek mi?
+
+75
+00:15:41,103 --> 00:15:41,684
+Yok.
+
+76
+00:15:42,583 --> 00:15:43,224
+Nerede?
+
+77
+00:15:43,224 --> 00:15:44,803
+Evet.
+
+78
+00:15:50,067 --> 00:15:52,647
+Ama bu niye termination yaptı?
+
+79
+00:15:57,139 --> 00:16:26,439
+aslında termination yapamamız lazım. Bu kendine kendi kendine termination yaptığı için bir zombiyi oluşturamadık. Acaba şu, şu exit mi fazlaki? Bu da sonuçta child'ın içinde olacak. Ama wildan çıkamaz ki child. Wildan nasıl çıkıyor child?
+
+80
+00:16:36,244 --> 00:16:44,464
+fikrularım varsa söylesin. Benim bir fikrim yok şu anda. Ben bunun çarptan çıkamayacağımı düşünmüştüm. Yüzden de denemedim.
+
+81
+00:16:54,227 --> 00:17:12,947
+Yani normalde şu wild döngüsünü sürekli çağıracağı için childden çıkamıyor ama parent kendisine şey yaptığı için termination yaptığı için childde ortada kalıyor olması lazım ama böyle durumların önüne geçebilmek için
+
+82
+00:17:17,172 --> 00:17:41,711
+wait diye bir tane sistem kolunu daha var. Burada child'ın... Hocam daha child bu file'a gelemeden önce exit yapıyorsa sonlandırıyor olabilir belki bilmiyorum ama. Önce parent'ı çağırıyordur diyorsun. Parent'ın içerisine girip exit yaptıysa file'a gelemeden önce bilmiyorum yani çok emin değilim.
+
+83
+00:17:41,711 --> 00:17:50,712
+Ben de yemin olamadım ondan. Çünkü parent, child bitmeden çıkabiliyor işte çıkabiliyor ki orfan kalıyor o sonuçta.
+
+84
+00:17:57,172 --> 00:18:25,291
+bilinç. Şimdi wait'te, şurada wait için bir deneme yapmıştık, şeyde hatırlıyorsanız. Payette de bildi. etexitteydi. Hayır, yok şey, forkdaydı. Birinci fork değilmiş.
+
+85
+00:18:29,395 --> 00:18:31,315
+yuduncu for wait.
+
+86
+00:18:34,816 --> 00:18:38,236
+Şimdi wait'i şuradan bir bakalım.
+
+87
+00:18:38,895 --> 00:18:53,156
+Wait'te şimdi current process bir tane children yani çocukların terminate ettiği zaman biliyorsunuz şeye çocukların bittiğine haber veriyordu.
+
+88
+00:18:53,156 --> 00:18:57,076
+Ondan sonra process table'ından onlar siliniyordu.
+
+89
+00:18:57,076 --> 00:19:11,236
+Şimdi bu az önceki zombi ya da orfan tarzında bir şeye sebebiyet vermemek için demişler ki child ile parent'ı sinkroniz bir şekilde çalıştıralım.
+
+90
+00:19:11,236 --> 00:19:20,815
+Yani parent bütün çocuklar bitmeden kendisi termination statüye gelmesin.
+
+91
+00:19:20,815 --> 00:19:23,135
+bunun için kullanılan
+
+92
+00:19:26,867 --> 00:19:56,847
+şey var. Aslında wait child status bunun yerine nal yazdığınız zaman bütün çocuklar kaç tane çocuğu varsa siz onu bilmiyorsanız mesela buradaki örnekte farklı bir şekilde child status bize gelecek yeterince diye düşündüğümüz için bildiğimizi varsayarak bunu number of child'ı bildiğimizi varsayarak bu şekilde kullandık ama normalde buraya nal yazarak hepsini şeyde yapabilirsiniz.
+
+93
+00:19:56,867 --> 00:20:21,687
+diyebiliyorsunuz. Hepsini bekle de diyebiliyorsunuz. Ondan sonra number of child tane işte fork çağırdık ve her bir çocuğun da exit statüsünü bu şekilde şey yaptık, ayarladık. Bu exit statüsüyle yüz artı iyi yani birinci çocuk yüz bir ile ikinci çocuk yüz iki ile vesaire vesaire diye dönecek.
+
+94
+00:20:21,687 --> 00:20:50,228
+Bu exit statüsü parent'a ulaşana kadar parent exit yapamıyor. Kural bu. Şu da bu çar exit yani şu statü bize pardon şu statü bize ulaştıysa bir dönüyor.
+
+95
+00:20:51,687 --> 00:21:01,707
+Ondan sonra burada da child statüsünün şeyini döndürüyor. Exit statüsünü döndürüyor.
+
+96
+00:21:01,707 --> 00:21:02,308
+Tamam mı?
+
+97
+00:21:05,308 --> 00:21:08,128
+Child statüs ne? Şu.
+
+98
+00:21:09,528 --> 00:21:17,548
+Tamam. Eğer exit yaptıysa bir çocuk parent'a child statüs diye bir şey dönüyor.
+
+99
+00:21:17,548 --> 00:21:23,827
+biz bunu elde ettiysek çocuk terminated olmuş demektir.
+
+100
+00:21:23,827 --> 00:21:29,827
+Ve bu charge statüsü de şuradaki makroyla şey yapabiliyorsunuz tamam mı? Bastırabiliyorsunuz.
+
+101
+00:21:36,243 --> 00:21:48,243
+Şimdi bu wait çok şey değil zaten. İçen sefer de biraz bahsetmiştim ama ne kadarımdan nerelerde bahsedebilmiştim onu hatırlayamadım.
+
+102
+00:21:48,243 --> 00:22:01,243
+Burada gördüğünüz gibi işte birinci çocuk şurada çocuğu oluşturdu ondan sonra birinci çocuk yüzle exit statüsü şununla döndü.
+
+103
+00:22:01,243 --> 00:22:30,004
+şurada döndü tamam mı? VPID diye bir şey de şurada exit statüsü döndü. Biz ona yazdık onu. Ondan sonra eğer bu exit statüs geldiyse bize, bize geldiyse pardon şu çocuğun, şu statülü çocuğun exit statüsü bize ulaştıysa bununla da bastırabiliyoruz.
+
+104
+00:22:31,243 --> 00:23:00,743
+Yani şu WPID, waitin bize döndüğü biten çocuğun PID'si. Ondan sonra şunun bize döndüğü çocuğun child statüsü, şunun bize döndüğü de child statüsü olan çocuk bitmiş mi, bitmemiş mi o. Şunun bize döndüğü de çocuğun child statüsü.
+
+105
+00:23:04,660 --> 00:23:06,119
+Çok karışık anlattım.
+
+106
+00:23:10,420 --> 00:23:34,260
+Şimdi bizim asılında bu şeyde amacımız bu inter-process communication'dı. Buraya hiç giremedim. Bu genellikle bizim göreceğimiz şeyiyle şu dördünde mesela şu dördünü şey yapabiliyoruz. Semaphore'ları da önümüzdeki hafta Fatmanır anlatacak size. Fatmanır hocanız.
+
+107
+00:23:34,260 --> 00:23:42,980
+şimdi pipe'la ve FIFO'yla tek taraflı ama senkron bir şey sağlayabiliyoruz prosesler arası.
+
+108
+00:23:43,500 --> 00:23:49,260
+Pipe'la FIFO'nun farkı ne? Şuna unnamed pipe deniyor. Şuna da named pipe deniyor.
+
+109
+00:23:49,780 --> 00:23:54,719
+Unnamed pipe'da parent'la child arasında olması gerekiyor.
+
+110
+00:23:56,860 --> 00:24:03,939
+Daha doğrusu proses communication'ın. Ondan sonra FIFO'daysa böyle bir şeye gerek yok.
+
+111
+00:24:04,260 --> 00:24:10,379
+Şimdi ben şuradaki şeyleri kapatayım.
+
+112
+00:24:10,379 --> 00:24:12,559
+Borku falan.
+
+113
+00:24:24,500 --> 00:24:52,559
+Şimdi şu biraz daha kolay olan örneğe ilk önce bir bakalım anlamamız açısından. Pipe neymiş? Şimdi iki tane file descriptör tanımlıyoruz. Ondan sonra bu iki file descriptörden bir tanesi bir boru düşünün. Borunun read ve write end'i olduğunu düşünün. Şurada bir şekli vardı güzel bunun. Nerede? İşte burada.
+
+114
+00:24:52,559 --> 00:25:00,379
+yani şunun bir boru olduğunu düşünün şu pipe'ı. Ondan sonra bir tanesi write-end'i, bir tanesi read-end'i.
+
+115
+00:25:01,299 --> 00:25:11,799
+Proseslerden bir tanesi sadece read-end'ini, bir tanesi de sadece write-end'ini kullanılabiliyor ki bu da half duplex olma özelliği.
+
+116
+00:25:11,959 --> 00:25:15,779
+Yani sadece bir yönde akabiliyor. Böyle düşünebilirsiniz.
+
+117
+00:25:20,180 --> 00:25:48,339
+Şimdi burada F0 için FD diye bir integer tanımladık. Bu file descriptörümüz olacak. Tamam mı? F0 read-end'i öbürü de write-end'i. Pipe diye normal bildiğiniz bir sistem kolla bunu oluşturuyorsunuz ama bir tane parametre alıyor. O da iki uç. Yani pipe'ın iki ucu.
+
+118
+00:25:50,180 --> 00:26:08,319
+gördüğünüz gibi eksi bir dönerse bir sorun oluştuğu anlamına geliyor. Ondan sonra burada bir tane child process oluşturmuşuz. Ondan sonra child prosesimizin içindeyse child prosesimiz yazacakmış. O yüzden readendini kapatıyor. Tamam mı?
+
+119
+00:26:08,319 --> 00:26:37,239
+child proses yazacak, parent proses okuyacak. Ondan sonra file descriptörün yani read end olan file descriptörü read datamızı şeyimizi file'ımızı kapatıyor. Ben bunu kullanmayacağım. Ondan sonra bir tane x tanımlıyor. Bir tane numara girin diyor kullanıcıya. Ondan sonra write system call'uyla
+
+120
+00:26:37,239 --> 00:26:50,139
+bu şurada tanımladığımız fd'nin yazma ucu olan file descriptörü x'i yazıyor.
+
+121
+00:26:50,139 --> 00:26:56,139
+Bir integer boyundaki x'i yazıyor. Ondan sonra bunu da kapatıyor.
+
+122
+00:26:56,779 --> 00:27:00,339
+Child bunu yapıyor. Bu ne demek? Child yazacak demek.
+
+123
+00:27:01,159 --> 00:27:06,479
+Peki şey ne yapacak bu durumda? Parent ne yapacak?
+
+124
+00:27:07,239 --> 00:27:33,439
+o da tam tersi right hand'ini kapatacak. Ondan sonra yine read sistem koluyla y'nin içine fd0'daki yani okuma yerindeki okuma ucundaki file descriptöründeki bir intijer boyundaki veriyi y'nin içine okuyacak. Ondan sonra file'i kapatacak.
+
+125
+00:27:33,439 --> 00:27:39,040
+Ondan sonra da bir kullanıcıya bir şey basacak
+
+126
+00:27:49,556 --> 00:27:51,335
+thread mi demek istediniz?
+
+127
+00:27:55,859 --> 00:28:22,919
+Şimdi, enter a number child process'deydi. Önce child process'i çalıştırdı. Ondan sonra burada şeyin write endine, pipe'ın write endine bunu yazdı. Read endinden de bizim parent process'imiz bunu okudu.
+
+128
+00:28:22,919 --> 00:28:43,979
+tamam mı? Şimdi şurada biraz daha güzel bir örnek var. Daha afilli bir örnek var. Şimdi bu önce bu programın amacını söyleyeyim size. Bu program şöyle bir şey yapacak. Bir tane burada our pipe diye bir tane şey var. Dosya var.
+
+129
+00:28:43,979 --> 00:29:00,019
+client dosyanın adını yazıyor. Server'da dosyanın içinde ne varsa onu basıyor. Tamam mı? Yani her ikisi de
+
+130
+00:29:08,084 --> 00:29:10,243
+Bir bakıyoruz.
+
+131
+00:29:14,067 --> 00:29:36,207
+Bir tanesinin yazdığını öbürü okuyor. Bunu burada yapıyoruz ama değil mi? Bir dakika. Bu sadece dosyanın adını bir tanesi dosyanın adını yazıyor. Öbürü de dosyanın içindekini yazıyor. Ama SCD alta.
+
+132
+00:29:40,339 --> 00:30:00,539
+burada birbirlerine söyledikleri dosyanın ismi. Bir tanesinin söylediği dosyanın ismi. Öbürü de okuyor ve ekrana yazıyor. Dosyanın içinde ne varsa. Yani şöyle, client bir tane dosya adı söyleyecek, server da bu dosyanın içinde ne varsa ekrana yazacak.
+
+133
+00:30:00,539 --> 00:30:27,339
+Şimdi ilk önce şurada child prosesimiz server olmuş. Ondan sonra yine aynı şekilde birincisi ne oluyor? Bu readendini kullandığına göre birincisi şey writeend oluyor.
+
+134
+00:30:27,339 --> 00:30:57,219
+server'ı çağırmış server'ı read and be için çağırıyor değil mi bakıyoruz hemen şimdi bir tane burada file descriptörümüz var gene ondan sonra şu şu read sistem kolu eğer sıfır döndüyse end of file demek
+
+135
+00:30:57,219 --> 00:31:26,719
+eğer minus one döndüyse daha doğrusu negatif bir şey döndüyse bir sorun olmuş demek açamamış ya da okuyamamış ondan sonra bir tane n döndüyse n byte kadar yer okumuş demek oluyor ondan sonra şimdi read file descriptörü bu aldı bufferın içine okuyacak max line kadar ondan sonra eğer
+
+136
+00:31:26,719 --> 00:31:39,899
+tamamı bittiyse end of file olduysa şurada std out'a end of file while reading pad diye bir şey dönecekmiş.
+
+137
+00:31:40,959 --> 00:31:48,720
+Diyelim ki her şey yolunda gitti. Ondan sonra bizim enimiz normal bir şey olarak döndü.
+
+138
+00:31:48,719 --> 00:32:10,819
+yani end buffer'ın max line artı birden biraz daha küçük bir sayıymış. Sayı olarak döndü buradan read'in sonucu olarak. O zaman biz kendimiz end of file'a bir tane şey yazıyoruz. Null yazıyoruz ki bittiğini anlasın diye. Çünkü hepsini kullanmadığını düşünecek olursak.
+
+139
+00:32:10,819 --> 00:32:34,039
+Ondan sonra bir tane dosya açacağız. Hangi dosyayı açacağız? Buffer'a ne geldiyse biz ne okuduysak daha doğrusu parent process hangi dosya ismini söylediyse şu buffer'da bir dosya ismi var ya o dosyayı açacağız.
+
+140
+00:32:34,039 --> 00:33:03,359
+Ondan sonra yine sıfırdan küçük olması open sistem kolundan dönen şeyin sıfırdan küçük olması demek bir sorun olduğunu gösteriyor. Burada error basın diyor. Ondan sonra değilmiş meğerse. Ondan sonra diyoruz ki o zaman n sıfırdan da büyük n sıfırdan büyük olduğu müddetçe n sıfırdan büyük olduğu müddetçe neydi?
+
+141
+00:33:04,039 --> 00:33:16,060
+hala okuyacağımız bir şeyler var demekti değil mi? Ondan sonra o zaman std.out'a bu da bir file descriptör.
+
+142
+00:33:17,179 --> 00:33:28,819
+std.out file number. Bu da bir şey. Aslında bu ekranın file descriptörü şey olarak tanımlanmış.
+
+143
+00:33:28,819 --> 00:33:39,019
+sistemde tanımlı olarak bulunuyor default olarak. Ondan sonra buffer'daki n tane byte'ı git buna yaz diyor.
+
+144
+00:33:39,508 --> 00:34:08,647
+Ondan sonra da bizim file'ımızı kapatıyor. Bütün file. Client ne yapıyor bu şeyde? Server neydi? Server child'tı tamam mı? Client ne yapıyor? O da yazıyormuş. Ne yazıyormuş? Bakıyoruz hemen. Bir tane buffer tanımlamışız. Ondan sonra buffer'dan klavyeye girilen bir şeyi aldık. Buffer'a attık. Ondan sonra buffer'ın length'ini aldık.
+
+145
+00:34:08,647 --> 00:34:28,947
+Ondan sonra write system calluyla file descriptor write ending'in, pipe'ın write ending'deki file descriptörü kullanarak buffer'ı, buffer'ın içindeki land kadar şeyi buna yazdık tamam mı?
+
+146
+00:34:31,667 --> 00:34:35,427
+O zaman nasıl bir şey karşımıza çıkıyor? Hemen bakalım.
+
+147
+00:34:36,827 --> 00:34:37,587
+Dur şöyle.
+
+148
+00:34:43,731 --> 00:35:09,871
+enter falan filan izlenmişiz. Şimdi bu şu our pipe şöyle bir dosyaydı. Ondan sonra biz our pipe'ı bize soran ilk önce kim hangi process şey yapmış? Bize soran kimdi? Child'da değil mi?
+
+149
+00:35:09,871 --> 00:35:36,531
+bakıyoruz child mıydı? Client, parent yani evet child bunu sordu client olan şeyde şunu bastı bize. Yo serverda basılıyor. Tamam o zaman tam tersi. Child şunu basıyor ondan sonra parent da bunu basıyor.
+
+150
+00:35:39,871 --> 00:35:50,992
+Şimdi bir de FIFO var. FIFO da şöyle. Hemen şuradan bir göstereyim size.
+
+151
+00:35:56,179 --> 00:36:24,579
+Bunun named pipe deniyor. Şöyle, make FIFO diye şey yapılıyor. Ondan sonra bir tane modu var. Bu mod işte bir tane server var. Server process var ama başka bir yerde. Bir tane de client server var. Şey, process var. O da başka bir yerde çalışıyor diye düşünün. Ondan sonra bir tane FIFO kullanacaklar ya, yine pipe kullanacaklar ama
+
+152
+00:36:24,579 --> 00:36:53,580
+bunun modunu ayarlayabiliyorsunuz. Çünkü yabancı biri kullanıyor ya. O yüzden böyle bir mod şeyi koymuşlar. Yani işte şey yapabiliyor bilsin. İşte executable işte şey var ya. Şu change moddaki şeyler var ya. Read write execution. Onların o modu burada kullanabiliyorsunuz. Modlar şey makro olarak tanımlanmış.
+
+153
+00:36:54,579 --> 00:37:14,079
+şurada var mı? Evet mesela burada var şu FIFO örneğinde hatta şuradan göstereyim şu mesela write only read only bu şekilde FIFO'ları şey yapıyor tamam mı?
+
+154
+00:37:17,907 --> 00:37:36,807
+Şimdi şu FIFO'lar tempte bir yerde oluşuyorlar. Bunlar FIFO diye bir tane dosya oluşturuyor. Ondan sonra şey bittiği zaman, unlink dediğin zaman onları siliyor. Şeyden bakabiliriz oluştuğu zaman.
+
+155
+00:37:36,807 --> 00:37:59,967
+Şimdi ilk önce bu ne yapıyormuş? İlk önce şurada. FIFO'yu bu oluşturuyor tamam mı? FIFO modumuz Read, Write, Execution User için, grup için, others için, hepsi için şey yapmış.
+
+156
+00:37:59,967 --> 00:38:28,447
+Ondan sonra şimdi bakalım server ne yapıyor? Şurada bir tane FIFO oluşturdu tamam mı? FIFO modu için FIFO biri oluşturdu. Ondan sonra bir tane daha oluşturdu. FIFO modu için. Ondan sonra read andy için FIFO biri kullandık.
+
+157
+00:38:28,448 --> 00:38:48,808
+write-end için de FIFO 2'yi kullandık. Şimdi bunlar tmp.fifo.1 diye bir yerde duruyor ya bu client da ona bağlanınca gidip bunu kullanmış oluyor. Yani bu gidiyor şunlara bir şeyler yazıyor bu da gidiyor oradan okuyor diye düşünebilirsiniz.
+
+158
+00:38:48,808 --> 00:39:17,768
+Şimdi server'ı çağırmış read ve write end için ondan sonra bir tane buffer tanımlamış yine bir endimiz var eğer yine end of file olursa diye ondan sonra olmadı diyelim devam ediyoruz bir tane buffer'da bir tane file name almışız ve onu okumuşuz ondan sonra
+
+159
+00:39:18,807 --> 00:39:37,107
+Şimdi şöyle düşünün bak. Bu da aslında tek yönlü okuyor ama yani bir tanesi yazacak öbürü de okuyacak. O iş bittikten sonra bu sefer bir diğer proses okuyup öbürü yazabilir yani.
+
+160
+00:39:43,827 --> 00:39:59,288
+Şimdi burada yine bu buffer'daki file name'i açtık. Bir sorun olmadıysa şuraya düşecek. Ondan sonra orada her ne varsa okuyacak ve nereye yazacak? Bu sefer FIFO'ya yazacak.
+
+161
+00:40:02,227 --> 00:40:10,727
+Az önce şeye yazmıştık ya, standart output'a yazmıştık ya, bu sefer write endine yazıyoruz.
+
+162
+00:40:10,727 --> 00:40:27,387
+Şimdi client ne yapacak? Bu da yine aynı FIFOLAR'a bak buradaki aynı FIFOLAR'a bağlanıyor çünkü bunların ikisinin arasındaki iletişim bunlardan sağlanıyor tamam mı?
+
+163
+00:40:32,019 --> 00:40:51,280
+Ondan sonra client ne yapıyormuş? Bu da bir tane işte write endine, write fifosuna gidip bufferın içinden land kadar şey yazıyormuş, karakter yazıyormuş. Ondan sonra da
+
+164
+00:40:55,635 --> 00:41:14,896
+readendinden okuduklarını da standart output'a yazıyormuş. Yani ekrana bastırıyormuş. Şimdi şöyle yapınca mesela diyelim ki server'ı burada çalıştıralım.
+
+165
+00:41:28,307 --> 00:41:37,648
+Bir dakika. Desktop'ta ne var? Server burada varmış. O zaman buradan client'ı çalıştırayım ben. Pardon.
+
+166
+00:41:41,844 --> 00:41:43,763
+client'i buradan çalıştıralım.
+
+167
+00:41:45,363 --> 00:41:46,623
+Ondan sonra şurada da
+
+168
+00:41:46,623 --> 00:41:49,763
+...
+
+169
+00:41:51,188 --> 00:41:53,587
+Burada da desktop'ı çalıştıralım.
+
+170
+00:41:58,164 --> 00:41:58,523
+ok,
+
+171
+00:41:59,904 --> 00:42:00,783
+solution
+
+172
+00:42:06,547 --> 00:42:07,827
+uğraşacakmışız.
+
+173
+00:42:09,687 --> 00:42:10,807
+Şimdi
+
+174
+00:42:10,807 --> 00:42:13,947
+bu
+
+175
+00:42:13,947 --> 00:42:15,867
+client
+
+176
+00:42:15,867 --> 00:42:18,468
+FIFO'nun öbür ucu
+
+177
+00:42:18,468 --> 00:42:22,747
+bağlanana kadar sabırla bekliyor. Tamam mı?
+
+178
+00:42:24,907 --> 00:42:26,787
+İlk önce buradan bir tane
+
+179
+00:42:26,787 --> 00:42:31,167
+ourpipe.txt'yi okuyalım diyorum ben.
+
+180
+00:42:31,167 --> 00:42:36,167
+.
+
+181
+00:42:36,532 --> 00:42:37,532
+ilk önce demeyeyim tamam mı? Okuyayım demeyeyim. Bak, entry filename.txt Şimdi bu bekliyor. Sending filename to server diye. Bir başkası bağlanana kadar bekliyor. Çünkü senkroniz şeyimiz ne denir ona?
+
+182
+00:43:06,532 --> 00:43:09,752
+kadar bekliyor. Tabi desktopta değilim artık.
+
+183
+00:43:15,507 --> 00:43:16,927
+Ben bağlandım şimdi.
+
+184
+00:43:26,547 --> 00:43:27,547
+çok uzun sürüyor.
+
+185
+00:43:38,739 --> 00:43:39,639
+Ben Mureda.
+
+186
+00:43:44,916 --> 00:43:55,155
+May the issue, chat, mesela, tmpfifo.1
+
+187
+00:44:02,835 --> 00:44:31,475
+içindeki şeyi göremiyoruz. Ama şuraya gidebiliriz. Hocam ilk client'i çalıştırdınız. FIFO'yu server oluşturuyorsa server FIFO'yu oluşturmadan çalıştığı için sorun çıkmıyor. Evet. Make FIFO burada değil mi? Client'e bakıyorum. Make FIFO var mı? Yok. Hayır. Client doğru diyorsun. Client kullanan adam.
+
+188
+00:44:32,835 --> 00:44:47,356
+server şeyde serverda oluşturan adam. Şu değil mi bizimki? Şimdi önce bunu çalıştırsak sonra bunu çalıştırsak.
+
+189
+00:44:54,228 --> 00:45:05,827
+Aslında yine de bağlanması lazım gibi geliyorum ama. Ha yok, oluşmamış şeyi nasıl okuyacak? Doğru. Tamam. Güzel nokta. Eyvallah.
+
+190
+00:45:08,587 --> 00:45:20,027
+Buradaki fifoları göstermek istedim. Tempin içinde fifolar oluşmuştu ya. Şimdi biz şeyi bitirdik ya, bakıyoruz. Bak fifolar bitti, gördün mü?
+
+191
+00:45:20,027 --> 00:45:40,967
+Yani orada geçici şeyinin içinde bir tane bir dosya oluşturuyor ona ne yazılırsa onu okuyor aslına bakarsanız. Ama bunların işte bazı standartları oturtturulduğu için çok daha kolay proseslerin arasındaki iletişimi bu şekilde daha kolay bir şekilde sağlamış oluyorlar.
+
+192
+00:45:44,628 --> 00:46:01,187
+başka anlaşılmayan bir yer var mı? Şimdi bir de asenkroniz olan var. Anlaşılmayan bir yer var mı dedim ama hiç soru bekliyormuşum gibi davranmadım size. Sorabilirsiniz. Geçiyorum o zaman.
+
+193
+00:46:01,187 --> 00:46:18,607
+Şimdi asenkroniz olanlar biri yani FIFO'daki gibi ya da PIP'daki gibi ikisinin de bu şeye bağlı olmasını beklemiyordu.
+
+194
+00:46:19,747 --> 00:46:24,587
+Aslında bunları asenkroniz olanların örneği sinyaller.
+
+195
+00:46:28,275 --> 00:46:57,335
+şu meşhur işte kill sinyali falan. Üç çeşit, üç şekilde şey yapılıyor bu sinyaller. Handle ediliyor. Handle dedim yani bir prosese bir sinyal gönderilmiş. O zaman ignore edebilirsin. Umursamazsın. Ondan sonra bir tane sinyal handler function yazarsın. Onu şey yapabilirsin.
+
+196
+00:46:57,335 --> 00:47:11,915
+ya da default action neydi ise sinyal gelince ne yapması default olarak sinyal handler function'a yazıyorduysam onu uygulayabilirsin.
+
+197
+00:47:11,915 --> 00:47:23,375
+Misal şeyi ctrl c'ye basınca hani bir şey duruyor termination sinyali gidiyor ya.
+
+198
+00:47:23,375 --> 00:47:52,555
+mesela o o normalde kullanırken herhangi bir şekilde eğer oynamazsan üzerinde sinyali şu handle function'uyla oynamazsan daha doğrusu sig action'ıyla oynamazsan o şekilde şey yapabilirsin kullanabilirsin ama nasıl oynarız bir de postix var ondan da bahsedeyim bu sinyalleri bir standarta oturtalım diye
+
+199
+00:47:52,555 --> 00:48:21,555
+POSIX şey kullanmışlar. Aynı zamanda C-Action şey ile fonksiyonu ile de aslında kullanıcıya bir miktar özgürlük alanı sağlamışlar. Neden bu özgürlük alanına ihtiyaç duymuşlar? Mesela diyelim ki sizin programınızda çok önemli bir kod parçası var ve o çalışırken
+
+200
+00:48:21,555 --> 00:48:41,115
+asla oraya interab gelmesini istemiyorsunuz. Diyelim ki bıçak havalanırken işte şeyden elektrik sisteminden gelen şeye orada koşturduğunuz yazılımda prosese bir interab gelmesini asla istemiyorsunuz.
+
+201
+00:48:41,115 --> 00:49:00,055
+o zaman bir maske setimiz var. Daha doğrusu sinyallerimizi işte sig action ile kullanılacak şekli yani default handler function ile function'ında default olarak kullanılacak olan sinyaller belli.
+
+202
+00:49:00,055 --> 00:49:13,055
+ama siz bu setin içine yeni bir sinyal ekleyebiliyorsunuz ya da sinyallerin bazıları bir müddet süre için çıkarıp sonra tekrar geri ekleyebiliyorsunuz.
+
+203
+00:49:14,055 --> 00:49:16,055
+Şöyle yapıyorsunuz.
+
+204
+00:49:17,156 --> 00:49:18,055
+Proses maskı.
+
+205
+00:49:19,175 --> 00:49:25,656
+Şimdi bu sinyal seti ondan sonra mesela
+
+206
+00:49:25,655 --> 00:49:51,915
+veya diyelim ki sig int miydi? Interrupt sinyali. O geldiği zaman aslında şu unblock onun içinde diye düşünebilirsiniz. Yani bloklanmamış olan sinyal setinin içinde sig int varmış ama biz onu bloklamak istiyoruz.
+
+207
+00:49:51,915 --> 00:50:12,415
+o zaman şu sinyal şeyine setine koyuyoruz onu. O tekrar biz unblock sinyal setine onu geçirmeden interrupt sinyali bizim dediğimizi yapıyor veya ignore ediliyor. Şöyle bak.
+
+208
+00:50:17,748 --> 00:50:41,527
+mesela burada empty set diye bir tane sinyal seti oluşturmuş. Ondan sonra nim mask diye de bu setin ismini koymuşsun diye düşün. Onun adresini gönderiyorsun. Şimdi bu sinyallerin sıra sıra dizili olduğu bir şey olacak şimdi. Neyi ekleyeceğiz buna?
+
+209
+00:50:41,527 --> 00:50:49,387
+sigint, interrupt sinyalini new mask'a ekledik tamam mı? Şimdi biz bunu bloklamak istiyoruz. Ne yapacağız?
+
+210
+00:50:54,483 --> 00:51:23,663
+new mask'ı bloka ekliyoruz. Şu old mask var ya, bunda da saklıyoruz. Daha önceki şey sonra bize lazım olabilir çünkü. Olacak çünkü. Normalde biz sinyallerin default versiyonlarını kullanmak istiyoruz. Çünkü sistem en uygununu şey yapmış ama bazı durumlarda kendi ihtiyacımıza göre bunları bloklayıp unblock yaptığımız zaman
+
+211
+00:51:23,663 --> 00:51:31,743
+bunları saklarsak sonra yeniden eski haline fabrika ayarları diye düşünebilirsiniz.
+
+212
+00:51:31,743 --> 00:51:33,383
+O hale döndürebiliriz.
+
+213
+00:51:33,483 --> 00:51:36,703
+Şimdi critical region of code koşturulmuş.
+
+214
+00:51:37,443 --> 00:51:42,463
+Ondan sonra bu sefer şunları unblock yapacağım.
+
+215
+00:51:42,903 --> 00:51:46,203
+Burada blokladığım şey vardı ya interrupt mesela.
+
+216
+00:51:47,164 --> 00:51:48,203
+O zaman ne yapıyorum?
+
+217
+00:51:49,303 --> 00:51:51,344
+Set mask, old mask.
+
+218
+00:51:51,344 --> 00:51:52,344
+yani benim bloklu listem eskisi gibi olsun demek. Fabrika ayarlarına geri dön. Selection'da da başka bir şey yapmak istersem mesela burada sadece bloklayıp şey an blok yaptım ya ama o
+
+219
+00:52:21,344 --> 00:52:29,524
+sinyali aldığımda seek action'ı da değiştirebilirim. Yani başka bir iş yapar. Örneğin
+
+220
+00:52:34,291 --> 00:52:34,852
+örneğin.
+
+221
+00:52:42,452 --> 00:52:53,131
+interrupt signal'i verildiğinde şu meşhur control c geldiğinde şunu yapacak. O nerede?
+
+222
+00:52:57,076 --> 00:53:23,055
+Şimdi bir struct var. Seek action diye bir struct. Dur, şurada göstermedim. Pat diye geçtim onu. Bir tane struct var. Structure var. Ondan sonra bunda bir tane şey var. Fonksiyon var. Bunu yapacağız. Yapacağımız fonksiyon.
+
+223
+00:53:23,055 --> 00:53:35,416
+Ondan sonra maskemizin şeyi sinyal seti, ondan sonra flaglerimiz, ondan sonra da sinyali
+
+224
+00:53:41,427 --> 00:53:44,567
+Sinyalle ilgili şey, info.
+
+225
+00:53:45,287 --> 00:53:45,727
+Dur bakayım.
+
+226
+00:53:48,787 --> 00:53:50,207
+Ha yok, bir sonraki yani.
+
+227
+00:53:52,848 --> 00:53:56,567
+Kendisine şey, self pointer.
+
+228
+00:53:59,268 --> 00:54:01,028
+Şimdi buraya geldik.
+
+229
+00:54:03,207 --> 00:54:05,747
+S-A handler, neydi o?
+
+230
+00:54:09,747 --> 00:54:09,907
+S-A handler.
+
+231
+00:54:10,195 --> 00:54:39,435
+şu. SA handler fonksiyonu için ouch diye bir fonksiyon yazmış. Tamam mı? Şurada tanımlamış, burada kullanmış, burada da implement etmiş. Burada received sigint diyor. Ondan sonra bunu çağıracağız. Şimdi nasıl çağıracağız? İlk önce bir empty set oluşturduk. Ondan sonra
+
+232
+00:54:39,435 --> 00:54:49,096
+action, actin, bak bu struct'ın içini dolduruyoruz. Ondan sonra actin maskine, ondan sonra bu empty set'e ekledik.
+
+233
+00:54:49,096 --> 00:55:06,295
+Empty set'e bunu ekleyeceğiz dedik. Ondan sonra flag'leri şey yaptık. Şimdi, seek action struct'ına seek int için çağırıyoruz.
+
+234
+00:55:06,295 --> 00:55:30,195
+bu maska gidecek ondan sonra act için çağırıyoruz şey pardon act'in tamam act'i doldurduk zaten ondan sonra seek int için daha doğrusu şöyle diyor seek action seek int için olan structure'ı yerine act'i yazacağız tamam mı?
+
+235
+00:55:30,195 --> 00:55:58,655
+Şimdi nasıl olacak biliyor musunuz? Ne zaman ki biz interrupt sinyali veriyoruz o zaman structure'da kendimizin doldurduğu yeni şeyler bir empty setten oluşan maskemiz, sıfırdan oluşan flaglerimiz bir de
+
+236
+00:55:58,655 --> 00:56:06,596
+diye bir fonksiyonumuz var. Onlar çağrılmış olacaklar.
+
+237
+00:56:21,619 --> 00:56:30,199
+şimdi bu böyle hello world, hello world derken ben ctrl c'ye basıyorum. Bak receive diyor sadece gördün mü? Bir şey yapamıyor çünkü.
+
+238
+00:56:40,371 --> 00:56:42,131
+şurasını kapatınca
+
+239
+00:56:47,251 --> 00:56:58,891
+Bu hello world, hello world derken ben bunu böyle interrupt sinyalini göndererek normalde default action, sig action ile durdurabiliyordum. Ama artık durduramıyorum.
+
+240
+00:57:15,635 --> 00:57:17,135
+şu örneğin şöyle yaptık.
+
+241
+00:57:23,380 --> 00:57:43,659
+mesela handler yerine direkt başka bir şeyde normalde aslında bu şeyde tanımlanmış ya sistemde tanımlı olan şeylerin arasında var ya handler fonksiyonlarının arasında sigign'i yazarsan o zaman ignore edecek onu.
+
+242
+00:57:43,659 --> 00:58:10,039
+var mı? Yani şuraya mesela şunun yerine az önce kapatmıştım. Nereye? Ha yok. Şunu açacağız. Ondan sonra mesela şuraya da alç yerine sigint değildi. Neydi? Ignore etmeci. Yazabilirim.
+
+243
+00:58:10,039 --> 00:58:17,039
+o zaman da hepten hiçbir şey yapmayacak. Bak.
+
+244
+00:58:20,980 --> 00:58:31,599
+bu şekilde bir ama tabi kontrol z ye bir şey başka bir şey atamadığım için o çalıştı.
+
+245
+00:58:36,884 --> 00:58:51,723
+sonra bunun çok fazla ayrıntılı anlatmayacağım ama işte previous action'ı geri yükleme şeyi de var. Onu da kendiniz bakabilirsiniz. Şu enteresan şeye bakın mesela.
+
+246
+00:58:55,923 --> 00:59:03,543
+bak şimdi şurada main'de int yerine signal bir dakika şurada var mı bu?
+
+247
+00:59:07,795 --> 00:59:11,575
+yok, hayır. Direkt sig action'a gerek yok.
+
+248
+00:59:12,415 --> 00:59:14,815
+Sinyal için sig int yerine handler bir
+
+249
+00:59:14,815 --> 00:59:17,735
+handler biri çağıracak.
+
+250
+00:59:17,955 --> 00:59:22,155
+Handler bir şeyini çağıracak, tamam mı? Handler'ını çağıracak.
+
+251
+00:59:22,855 --> 00:59:23,555
+Ondan sonra
+
+252
+00:59:23,555 --> 00:59:25,775
+handler bir ne yapıyormuş?
+
+253
+00:59:26,155 --> 00:59:28,235
+İşte yuşat mı diyor, ondan sonra
+
+254
+00:59:28,235 --> 00:59:30,035
+ikinciyi çağırıyor.
+
+255
+00:59:30,995 --> 00:59:31,995
+Bu ikinci de
+
+256
+00:59:31,995 --> 00:59:35,255
+tekrar üçüncüyü çağırıyor.
+
+257
+00:59:35,255 --> 00:59:37,435
+Ondan sonra
+
+258
+00:59:37,795 --> 00:59:52,795
+bu sinyali defolta çevirdiğimiz yeni bir şey yaptık burada tanımladık ondan sonra bu sefer onu da interappta sağlamış olduk.
+
+259
+00:59:54,795 --> 00:59:57,795
+Yoksa bu sonuçluğa kadar sürdürülebilir mi?
+
+260
+01:00:05,876 --> 01:00:07,635
+old action.
+
+261
+01:00:10,555 --> 01:00:17,876
+İlk önce bir öncekini işte o old action'ı bir yere şey yaptığımız zaman.
+
+262
+01:00:19,535 --> 01:00:25,915
+Nedeni bunu? Save ettiğimiz zaman ondan sonra gidip onu tekrar restore yapabiliyoruz.
+
+263
+01:00:25,995 --> 01:00:26,976
+Aynı şeydeki gibi.
+
+264
+01:00:27,976 --> 01:00:31,255
+O sinyal maskesi vardı ya.
+
+265
+01:00:31,335 --> 01:00:34,175
+Onun gibi tekrar benzer şekilde şey yapabiliyoruz.
+
+266
+01:00:34,175 --> 01:00:35,415
+just signal
+
+267
+01:00:42,068 --> 01:00:43,467
+in your
+
+268
+01:00:47,603 --> 01:00:53,064
+yok değil mi burada? Şu en sondaki şu signal
+
+269
+01:00:53,064 --> 01:00:55,223
+signal
+
+270
+01:00:58,452 --> 01:01:02,471
+fonksiyonu.
+
+271
+01:01:03,251 --> 01:01:04,392
+Evet, fonksiyonu.
+
+272
+01:01:05,351 --> 01:01:05,771
+Bu yok.
+
+273
+01:01:07,191 --> 01:01:08,771
+Yani burada göstermemiş.
+
+274
+01:01:11,231 --> 01:01:12,931
+Anlatacaklarım bu kadardı.
+
+275
+01:01:15,191 --> 01:01:18,632
+Sorunuz varsa soru alabiliriz.
+
+276
+01:01:19,872 --> 01:01:22,811
+Bu slide'ları ve programları paylaşacak mısınız?
+
+277
+01:01:22,811 --> 01:01:42,231
+Yani hocaya bir sorayım da ona göre eğer paylaş tamam derse paylaşırım. Ondan sonra bence yararlı da olabilir yani sizin için de. Yalnız bunlar zaten hani internette de bulabileceğiniz şeyler toplanmış sadece bir araya.
+
+278
+01:01:42,231 --> 01:02:00,151
+sadece mesela bir parçasına merak ettiğiniz zaman bu kısmına bakarsınız normal olarak ama normalde bunlar zaten internetten bulunabilen örnekler. Çok böyle şey bir örnek yoktu yani bizim orijinal örneklerimiz.
+
+279
+01:02:02,911 --> 01:02:09,731
+Hocam bir de ödev verecek miydiniz? Laboratuvar için bir proje gibi bir şey verilecekti.
+
+280
+01:02:12,231 --> 01:02:24,231
+Ocev galiba verecek tam bilmiyorum ya yanlış bir şey söylemiş olmayayım sonra bir sürü mail geliyor bilmiyorum diyeceğim. Bilmiyorum deme hakkımı kullanacağım.
+
+281
+01:02:27,251 --> 01:02:29,992
+ikinci vize olacak mı sizde? Oluyor mu?
+
+282
+01:02:32,451 --> 01:02:33,311
+Olacak hocam.
+
+283
+01:02:36,132 --> 01:02:44,531
+İnşallah güzel geçer. Birinci vize de şeydim. Gözetmendim. Birazcık baktım sorularınıza.
+
+284
+01:02:46,411 --> 01:02:55,391
+Mesela burada böyle ara ara geçen şeylerden çok güzel true false soruları çıkar yani. Bunlar hocada da var. Onları da ciddiye alın yani.
+
+285
+01:03:00,244 --> 01:03:17,043
+Tamam, önümüzdeki hafta semaforlarla Fatma'nın karşınızda olacak. Teşekkür ediyorum dinlediğiniz için ve geçen hafta için yeniden kusura bakmayın. İnşallah daha güzel günlerde birlikte olmak mümidiyle. Görüşmek üzere.
+
+286
+01:03:18,004 --> 01:03:19,543
+Teşekkürler hocam. İyi akşamlar.
+
+287
+01:03:19,683 --> 01:03:20,344
+İyi akşamlar.
+
+288
+01:03:20,584 --> 01:03:21,463
+İyi akşamlar hocam.
+
+289
+01:03:22,303 --> 01:03:24,363
+Teşekkür ederiz hocam. Hayırlı akşamlar.
+
+290
+01:03:24,483 --> 01:03:25,103
+İyi akşamlar.
