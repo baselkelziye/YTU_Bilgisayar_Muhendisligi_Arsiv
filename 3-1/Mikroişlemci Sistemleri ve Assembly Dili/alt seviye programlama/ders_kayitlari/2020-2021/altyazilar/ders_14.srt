@@ -1,0 +1,320 @@
+1
+00:12:29,490 --> 00:12:37,769
+Evet, tekrardan merhaba kıymetli arkadaşlar ben işitim sitemi değiştirdim o yüzden kapatmak zorunda kaldım.
+
+2
+00:12:37,769 --> 00:12:46,370
+İnşallah diğer arkadaşlar da gelirler 40 kişi falan da geldi şimdi 24-25'e düşmüşüz onlar da tamamlanırlar diye ümit ediyorum.
+
+3
+00:12:46,370 --> 00:13:05,220
+İlk parçayla ilgili sorusu olan arkadaşımız var mı? Tamam güzel şimdi o zaman bir de bunu Linux tarafında nasıl yapıyoruz ona bakalım görelim.
+
+4
+00:13:06,179 --> 00:13:10,659
+Fruity Dex topu ben paylaşayım daha güzel olacak zannedeceğim.
+
+5
+00:13:10,659 --> 00:13:25,460
+Şimdi yine bir C dökümanımız olmuş olsun bu C dökümanımız içerisinden bir asemblili yordamı çağırabilir.
+
+6
+00:13:25,460 --> 00:13:30,259
+Basit yani bir diziyi toplayalım falan öyle bir şey yapalım.
+
+7
+00:13:30,259 --> 00:13:51,220
+Şuraya 2000 aseme 2020 ile beraber 1 ne olsun bu C örnek nokta C dökümanımız olmuş olsun.
+
+8
+00:13:51,220 --> 00:13:56,620
+Şimdi burada C kodu temelde yazacağız command satır üzerinden değerleyeceğim.
+
+9
+00:13:58,580 --> 00:14:11,379
+Burada tabi Linux tarafında da sizin sıkça kullandığınız işte subline gibi veya ne bileyim farklı farklı visual studio code gibi çeşitli editörler var onları da kullanabilirsiniz.
+
+10
+00:14:11,379 --> 00:14:15,179
+Standart default olarak gelen gedit var ben onu da yazıyor olacağım.
+
+11
+00:14:15,179 --> 00:14:32,379
+Bu süreyle ilgili falan herhangi bir ekstradan işlem yapmak istemediğimden ötürü direk standart input output ve belki duraklatmak istediğimde standart library'i kullanabilirim.
+
+12
+00:14:32,379 --> 00:14:35,100
+Mainmetod yazarak başlayalım.
+
+13
+00:14:35,100 --> 00:14:40,919
+Return 0 mainmetod.
+
+14
+00:14:41,039 --> 00:14:56,279
+Şimdi kullanıcıya soralım işte birden kaça kadar sayıları toplamak istiyorsunuz diye kullanıcı en değerini yersin ve bizde birden ene kadar olan sayıları toplayan bir aseme yordamı yazmış olalım.
+
+15
+00:14:56,279 --> 00:15:00,240
+Ayrıca öyle bir basit şey kurgu dayanalım.
+
+16
+00:15:00,240 --> 00:15:25,259
+Sizin de printf gibi bir şey var bundan en değerini kullanıcıdan okuyalım.
+
+17
+00:15:25,259 --> 00:15:37,659
+Şimdi en değerini kullanıcıdan okuduktan sonra dizimizi tabi ki burada oluşturalım ki karşı tarafa o dizinin elemanlarını toplaması için gönderedim.
+
+18
+00:15:37,659 --> 00:16:03,659
+Int, dizi, n, gch'nin yeni versiyonlarında kullanabileceğimiz çeşitli ifadeler, yeşil 0, i, küçüktür, n, i, artı artı yine dizinin inci elemanına i artı 1'i koyarak ilerliyor olayım.
+
+19
+00:16:03,659 --> 00:16:16,460
+Bundan sonra toplama şeyini çalıştıracağım, toplamın içerisine topla diye bir aseme yordamı yazacağım.
+
+20
+00:16:16,460 --> 00:16:21,259
+Bu yordamada bir diziyi bir de ini göndermiş olayı.
+
+21
+00:16:21,259 --> 00:16:38,629
+Daha sonra toplam sonucunu ekrana yazacağım tabi ki printf, toplam her şey kısmını diri sunuyor zaten bu kısmını.
+
+22
+00:16:38,629 --> 00:16:46,070
+Fakat burada yine şey söylememiz gerekiyor arkadaşlar bu toplayı burada bulamazsın dememiz gerekiyor.
+
+23
+00:16:46,070 --> 00:16:56,789
+O yüzden önce de yukarıda bunun prototipini yazalım bakın topla bir tane integer point olacak bir tane de integer olacak başına işte external yazıyoruz yine.
+
+24
+00:16:56,789 --> 00:17:06,789
+Assemble de ne yazıyorduk e, x, t, r, n, ikinci e yoktu yani arada, si de bunu yazarkense external diye yazıyoruz.
+
+25
+00:17:06,950 --> 00:17:23,670
+Şimdi topla bu toplayı da yazalım bunu böylece kaydetmiş olduk hadi şunu kapatalım bir de getit toplayı içerisinde bulunduran o assembly kodunu yazalım örnek nokta asm olmuş olsun.
+
+26
+00:17:23,670 --> 00:17:32,869
+Burada nas kullanacağımız için syntax biraz farklı biraz farklı ama temelde çok benzer.
+
+27
+00:17:32,950 --> 00:17:43,349
+Şeyde hatırlarsanız biz segmentleri kullanıyorduk 8086 Microsoft Assembler kullanırken segmentleri kullanıyorduk.
+
+28
+00:17:43,349 --> 00:17:48,869
+İşte az önce gördüğünüz video stüdyo ortamında segmentleri yazmak için nokta ile ayırabiliyorduk.
+
+29
+00:17:48,869 --> 00:17:55,670
+Burada ise segmentler yerine section kullanılıyor temelde aynı işlemi karşılık geliyorlar.
+
+30
+00:17:55,670 --> 00:18:09,430
+Seksiyonla segment aynı birisi Microsoft Assembler Syntaxı birisi ise chase Syntax NetWide Assembler Syntax.
+
+31
+00:18:09,430 --> 00:18:18,069
+Şimdi data, section data burada data segmentimiz var onları görürüz belki birazdan data tanımlarız.
+
+32
+00:18:18,069 --> 00:18:23,269
+Ama harici bir kod yazacağımız için buradaki harici bir kodun içerisinde ekstradan data tanımlamamıza gerek yok.
+
+33
+00:18:23,349 --> 00:18:26,789
+Kod segmenti ise section nokta text diyerek tanımlıyoruz.
+
+34
+00:18:26,789 --> 00:18:34,789
+Buradan sonra yordamımızı yazmak için topla bakın yordamlar bu şekilde yazıyor 2 nokta üst üste koydum.
+
+35
+00:18:34,789 --> 00:18:40,150
+Bunun altından itibaren yordamımızı yazabiliyoruz kıymetli arkadaşlar.
+
+36
+00:18:40,150 --> 00:18:48,869
+Fakat şöyle bir şey var diğer tarafta nasıl ekstron ediyorsak burada da global diyerek toplayı tanımlamamız gerekiyor.
+
+37
+00:18:49,190 --> 00:18:57,190
+Şeyde de böyle diyorduk hatırlarsanız neden olanlar public diyerek toplayı diğer şeyler kullanabilsinler.
+
+38
+00:18:57,190 --> 00:19:03,750
+Diğer segmentlerde bulunan yordamlar kullanabilsin diye public yapıyorduk.
+
+39
+00:19:03,750 --> 00:19:07,509
+Burada da global yapıyoruz arkadaşlar topla yordamının ismini.
+
+40
+00:19:07,509 --> 00:19:17,029
+Fakat şeye dikkat etmeniz lazım C tarafında çağırdığımız yordamın birebir isim topla olduğu için burada da topla şeklinde isimlendirmemiz gerekiyor.
+
+41
+00:19:17,990 --> 00:19:28,549
+Yani yapacağımız işlem ne yine düşünürseniz sitenin içerisinden önce gönderdiğimiz sıraya göre onu ben bulursam aslında süper olur.
+
+42
+00:19:28,549 --> 00:19:40,759
+Yine bir şey açalım hangi sırada gönderdik işte sağdan sola doğru dedik önce ini gönderdik ondan sonra da diziyi göndermiş olduk.
+
+43
+00:19:40,759 --> 00:19:46,440
+Burası önemli önce ini göndermiş olduk ondan sonra da diziyi göndermiş olduk.
+
+44
+00:19:46,519 --> 00:20:01,079
+Bunun üzerine de tabi ekstradan çeşitli şeyler biniyor onu da söyleyelim yani şurada yazayım hatta böyle olursa aşağıdan yukarıya doğru önce en sitenin içi ondan sonra dizinin adresi.
+
+45
+00:20:01,079 --> 00:20:11,720
+Ondan sonra ne gelecek yine near tipi her daim bu tarz yordamlarda near tipi çağırıyoruz near tipi olduğu için bir offset değeri gelecek.
+
+46
+00:20:11,799 --> 00:20:23,160
+Bundan sonra kullandığımız hatta bunu neyse burada dursun kullandığımız şeyler varsa registralar onları burada değerlendiriyor olacağız üstüne koyacağız.
+
+47
+00:20:23,160 --> 00:20:36,359
+Move base pointer virgül stack pointer dediğim anda hemen yaptığım işlemle push base point kullandığım anda base pointer'ı sitenin içerisine atıyorum.
+
+48
+00:20:37,000 --> 00:20:52,039
+EBT tamam zaten CX'i kesin kullanacağım tahmin ediyorsunuzdur döngüsel bir işlemi gerçekleştireceğim için bir de dizinin çevrim değerini tutması için EDI'yi kullanıyorum bunları da şimdiden yazayım.
+
+49
+00:20:52,039 --> 00:21:28,619
+Basit sitenin içerisine atayım ki şey olmasın ebp push ecx push edo şurada da hemen pop yapayım karışıyor çünkü uzun olduğunda ecx pop edo şimdi buradan sonra artık ben base pointer'a göre göreli olarak nedenle ona şeye erişeceğim.
+
+50
+00:21:28,619 --> 00:21:55,019
+Şimdi şurası base pointer buranın gösterdiği değer artı dört artı altı artı sekiz artı on iki artı on dört eğer ki isteğimiz vört tanımlı olsaydı ama değil tamam mı yani ikişer ikişer saymıyoruz iki dört altı sekiz on on iki diye gitmeyeceğiz ne diye gideceğiz dörder dörder gideceğiz.
+
+51
+00:21:55,019 --> 00:22:18,619
+Yani şurası sıfır şurası dört şurası sekiz şurası on iki şurası on altı şurası da yirmi tamam mı eğer bu kadar kullanıyorsam ama ben başka da şeyler kullanabilirim diye şu an şöyle yapıyorum mu edi virgül on altı diye saydık ama ebx artı x olsun tamam mı şimdilik onun değerini şey yapmıyorum kararlaştırmıyorum.
+
+52
+00:22:18,619 --> 00:22:48,380
+Ecx virgül başka registralar kullanırsam ona göre karar vereceğim ebx artı x olmuş olsun artık benim için benim dizinin adresi eda'nın içerisinde şeyin adresi nedenle ona dizinin boyutuysa ecx'in içerisinde şimdi bakın önemli bir husus var buraya lütfen çok dikkat kesilin arkadaşlar az önceki yordam geriye vahit döndürüyordu.
+
+53
+00:22:48,380 --> 00:23:18,380
+Bu integer döndürüyor nasıl döndüreceğiz nasıl döndüreceğiz hatırlarsanız si dersi falan görürken integer ile mesela bir yordan return ile beraber mesela return sıfır return on iki return sayı gibi birden fazla değer döndüremiyordunuz yordamın içinde bu fonksiyonun içinden veya bunun bir sebebi var bunun sebebi sizin çağırdığınız yordamda arkadaşlar çağırdığınız yordamda muhakkak ve muhakkak
+
+54
+00:23:18,380 --> 00:23:48,380
+geri dönüş değeri varsa eğer bir integer olabilir bu bir float olabilir bu bir başka bir şey olabilir bu bir değişken bu değişkenin adresi yine bir integer 4 byte'lik bir adrestir ve her daim sonuç ax registre üzerinden döner yani şu programı bitirmeden o toplama değerini ax registre üzerinde elde edeceğiz ve bu toplama geriye integer döndürüyorsa işte ax registrenin üstlerinden şuradan
+
+55
+00:23:48,380 --> 00:23:59,880
+gelen değer bu toplam değişkenin içerisinde atlanacak bu yüzden bütün toplama işlemini ax registre üzerinde yapacağım için onu başlangıçta şöyle sıfırlamış oldu ardından toplayalım
+
+56
+00:23:59,880 --> 00:24:31,759
+evet eax1.1 edi'nin gösterdiği yer taşmayacağını düşünüyorum taşıcaksa edvid keriyle falan topluyorsunuz biliyorsunuz bir sonraki eleman dördüncü eleman ardından bir loop'un içerisine girerek hepsini topluyorsunuz bu o kadar tamam mı toplama işlemini dizinin bütün elemanlarını topladık işlemin sonucunda değer nerde eax'in içerisinde return ile beraber
+
+57
+00:24:31,759 --> 00:24:57,859
+onu döndürüyoruz şuradaki return komutu çalıştığı anda direkt onu döndürüyor olacak bu da yine önemli kısımlardan birisi kıymetli arkadaşlar evet buraya kadar sorusu olan var mı hocam return 4 demeyecek miyiz yoksa yok öncelikle şu assembly kodunu derliyoruz
+
+58
+00:24:57,859 --> 00:25:27,859
+komut satırından derleyelim hatta yeni bir tab açayım o da kapanmamış olsun komut satırından derleyelim nasıl derliyorum bakın nas mı yazayım görün input girmemişsiniz diye eğer ki nasmınız yoksa suda apt get install nasm diyerek kurabilirsiniz bende olduğu için ekstradan kurmuyor nasmınız hani mutlularda veya işte farklı linux tabanına işletim sistemlerinde default olarak gelmiyor sizin kurmanız gerekiyor benimkinde kurulduğu için break yazdım
+
+59
+00:25:27,859 --> 00:25:57,819
+ben bunları temizledim nasm derleyip objek uzantılı bir kod oluşturacağız formatımız 32 bitlik formatta derle 64 bitlik formatta da derleyebiliyor çünkü 64 bitlik registralar re ax reb x gibi başlarına re geliyordu biz 32 bitlik formatta derlemek istiyoruz o output dosyasının adı kendi ismi örnek nokta o olmuş olsun örnek nokta o
+
+60
+00:25:57,859 --> 00:26:12,819
+ve hangi dosyayı derleyeceğiz örnek nokta asm dosyasını derleyeceğiz evet çok güzel bunu zaten size söylemediniz ekstradan hiç registre kullanmadığınızı neydi şurası 16 şurası da 20 bunları tanımadık bakın hata verdiğiniz siz de görmüş oldunuz
+
+61
+00:26:12,819 --> 00:26:34,779
+tekrar ben derledik bu list diyelim bakın örnek o isimli bir objek uzantılı yani obj uzantılı sanki objek uzantılı bir döküman bizim karşımıza çıkartmış oldu tamam artık neyi derledik şunu derledik bir obj uzantılı dosya oluşturdu
+
+62
+00:26:34,779 --> 00:27:04,140
+si kodunu da gcc ile derlediğinizde obj uzantılı bir dosya burada da oluşuyordu arkadaşlar ardından her ikisini ne yapıyoruz beraber link ediyoruz beraber link ediyoruz önemli kısım burada dikkat edilmesi gereken kısım bu tamam gcc ile beraber si kısmını gcc ile beraber derleyeceğim onu da yapalım onu da yapalım buradaki şeyleri gördük gcc si'nin zaten gcc ile nasıl derlendiğini biliyorsunuz
+
+63
+00:27:04,140 --> 00:27:34,140
+benim örnek nokta si dökümanım var bunu da arkadaşlar gcc'nin farklı versiyonlarına göre farklı formatlarla derleyebiliyor onu da 32'lik formatta derle diye şöyle bir parametresi var m32 böyle olunca 32 bittik formatta derlemiş oluyor bizim çünkü registralarımız birbirleriyle sitemizin boyutu falan birbiriyle çakışmasın diye ekstradan bunu söylüyoruz bunu derle bak bunu derle yanına bir de örnek nokta o'yu al link
+
+64
+00:27:34,140 --> 00:28:04,140
+sanki böyle link ederken artıyla beraber link ediyorduk ya öncelikle yapacağı işlem şu gcc ile beraber örnek si'yi derleyip bir obj uzantılı dosya oluşturacak ardından bu obj uzantılı dosyayla şuradaki obj uzantılı dosyayı beraber link edecek ve output dosyası da ne olmuş olsun asp son olmuş olsun enter listele dediğimizde bakın yeşille boyamış executable
+
+65
+00:28:04,140 --> 00:28:20,660
+yani çalıştırılabilir bir dosya üretti tamam bir dosyanın çalıştırılabilir olması için header'ın içerisinde bir bitim executable bitimin tic yani set olması lazım o yoksa bir dosya çalıştırılabilir ya sonu
+
+66
+00:28:20,660 --> 00:28:50,660
+uzantılı bir dosyalar çalıştıralım hayır öyle bir şey yok yani bir dosya çalıştırılabilirse onun şeyinin header'ın içerisinde bulunan executable mıdır sorusunun cevabı set olması lazım burada set olduğu için yeşille boyamış bunu nasıl çalıştırıyoruz pekala nokta slash asf son son enter birden kaça kadar sayılara girmek istiyorsunuz söyleyelim arkadaşlar 16'ya kadar sayıları birden 16'ya kadar
+
+67
+00:28:50,660 --> 00:29:20,660
+olan sayıların toplumu 136 daha bildiğimiz bir şeyler söyleyelim 5'ye kadar olan sayıların toplumu 15'miş işte 10'a kadar olan sayıların toplumu da 55'miş yani yazdığımız yordan çağırıp toplayan yordan alt tarafta esenbiliyor sorusu olan varsa burada soruları alabiliriz sorusu olmak için güzel bir alan iki tane dökümanımız var burada şeyde de gördünüz
+
+68
+00:29:20,660 --> 00:29:57,730
+yani Linux tarafında da bu işlem nasıl yapılıyor böylece onu da görmüş oldunuz evet sorusu olan yok mu hocam ritorne niye yanına bir sayı yazmadık hani bu çok güzel derste şu an kaç kişi var 38 kişi evet bu benim anlatacaklarım bugündür bu kadar arkadaşlar bir de inline assembly'li var inline assembly kısmını zaten biliyorsunuz ilk hafta yaptık örneklerinde ilk haftalarda yaptık örneklerini öyle söyleyeyim bu haftada hem Linux tarafında
+
+69
+00:29:57,730 --> 00:30:27,730
+yüksek seviyeli dilden assembly ordamı nasıl çağırılır hem de işte Windows tarafında Visual Studio ordamında Visual Studio'yu niye kullanıyor bizim kullandığımız mas Microsoft assembler Visual Studio'da Microsoft ürünü olduğu için Microsoft yani neyse onu kullanıyoruz çok farklı farklı sinitakslarla beraber farklı assembly derleyicilerini farklı idelerde veya farklı
+
+70
+00:30:27,730 --> 00:30:57,730
+idelerinde derleyebilirsiniz yapabilirsiniz yani bunu biraz daha sinitakslar değişmiş oluyor sınavlarınızda her birinize başarılar diliyorum inşallah güzel bir dönem geçirmişizdir bu alt seviye programlamak önemli bir ders sizler adına faydalı olmuştur diye ümit ediyorum ve bütünün emeğe bile kalmadan final sınavında en azından şu derste olan 37 kişi başarılı bir şekilde dersi geçer tamamlar diye size güzel dileklerimi de
+
+71
+00:30:57,730 --> 00:31:31,480
+iletmiş olayı illa derste ilgili olmak zorunda değil gerek işte hani bu derste ilgili konu ile ilgili değil derste ilgili değerlendirme yapmak isteyen arkadaşlar varsa veya söz almak isteyen arkadaşlar varsa onlara söz verebiliriz sınavla ilgili soru olabilir başka bir şeyden söylemek isteyen arkadaşlar varsa söz verebiliriz yoksa dersi nokta alamayın hocam benim sesim gelmedi mi yoksa yapmak mı istemediniz galiba sesim gitti evet dersi noktalandırıyorum
+
+72
+00:31:31,480 --> 00:32:08,319
+bir şeyse sorusu olan yok değil mi ben duymuyorum çünkü sesimiz geliyor mu hocam [öğrenci] bir şeyler diyorsun ama ben duymuyorum benim hoparlörümde mi problem var ya duyuyor musun duymuyorum gelmiyor duymuyorsunuz sesimiz size duymuyorsunuz hocam hocam yani evet niye duymuyorum bilmiyorum açıkçası yazabilirsiniz o zaman yani inşallah
+
+73
+00:32:08,319 --> 00:32:43,279
+siz benim sesimi duymuşsunuzdur anlattım ama bunca zaman yani enteresan ben sizin sesinizi ben niye duymuyorum buradan başka bir şeye falan mı bağlı ol ya dönüş tarafında ya çeşitli sıkıntılar çıkabiliyor demek ki sound settings diyelim bir belki kulaklık falan bağlayıp deneyebilirim neyse yani yazarak soracağınız önemli sorular varsa hızlıca ben cevaplarım arkadaşlar onları
+
+74
+00:32:43,279 --> 00:32:58,279
+tamam siz duymuşsunuz en azından güzel yazarak sormak isteyen arkadaşlarımız varsa sorsunlar kusura bakmayın bu linux tarafına geçince aynı bilgisayar aslında hoparlörde bir problem oldu şimdi onunla uğraşırsak derse zaten noktalandırırız diye düşünüyorum
+
+75
+00:32:58,279 --> 00:33:29,980
+evet kendinize iyi bakın sağlıcakla kalın diyorum görüşürüz önümüzdeki dönem başka bir derste veya farklı bir şekilde görüşürüz diye güzel direklerimizi iletelim bir soru var onu alalım hocam 64 bitlik için sadece re ekleyerek kodlayabiliriz değil mi evet re ekleyerek kodlayabilirsin ama 64 bitlik registerlerin aynı zamanda re'siz olan versiyonları da var onları da bilin yani başlarına mesela
+
+76
+00:33:29,980 --> 00:34:03,720
+64 bitlik registerlarda sadece e ekleyerek o kadar register kullanabilirsin 64 bitlik registerların re'li olanlar var bir de re11 re12 gibi farklı farklı ek registerlar da var onları da kullanabilirsin daha geniş bir kullanım şey var yani 64 bitlik versiyonlarda yani genel olarak tavsiye şu kıymetli arkadaşlar bu görüyorsunuz hıza bugün mesela şeyi gördük hıza ihtiyacınız var ileride görüntü işleme meşinin önünü yapay zeka bir sürü şey çalışacaksınız işlemci teknolojilerinin hızı çok hızlı
+
+77
+00:34:03,720 --> 00:34:33,719
+bilemiyor artık çok yüksek hızlara çok kısa vaadede çıkmıyor işlemciler o yüzden programların çalışma süresi özellikle meşinin önünü yapay zeka taraflarında günler sürüyor berleme süreleri bunları işte mesela kısaltmak için hıza ihtiyacınız olduğunda real time çalışacak bir şeye ihtiyacınız olduğunda hemen aklınıza ne gelmesi lazım asemdele gelmesi lazım ya ben şu yordamı adam pi tonda yazdım pi tondan falan da çağırdı ya sende bu arada pi tonda bir sıralama fonksiyonu vardı 10 saniyede çalışıyordur yani siz
+
+78
+00:34:33,719 --> 00:35:03,719
+daha hızlı bir şekilde yazıp daha hızlı bir şey çalıştırabilirsiniz ne dönün ona sıralama çalıştırabilirsiniz bundan sonra tamamen kontrol sizde yani artık bunu biliyorsunuz bu dersin ama temelde alt seviyede neler gerçekleşiyor onu görmemiz bütün programları çalıştırılmadan önce buna dönüştürüldüğünü ve bilgisayarın sadece bundan anladığını görmeniz aslında bunu idrak ediyor olmanız içselleştiriyor olmanız
+
+79
+00:35:03,719 --> 00:35:33,719
+bununla birlikte tabii aynı zamanda ihtiyacınız olduğunda da hıza özellikle ihtiyacınız olduğunda veya düşük yerlerde mesela kart pili yapacaksın veya insan damarlarının içerisinde gezen ufak robotlar tasarlayacaksın öyle Java ile yazacak halin yok yani bu ufacık ufacık donanımlar çünkü bu tarz şeylere çok ihtiyaç oluyor kıymetli arkadaşlar bunu da görmeniz açıkçası o manada güzel bir bilgidir diye düşünüyorum risk ve mimarisi konusunda
+
+80
+00:35:33,719 --> 00:35:55,980
+bir şey bilmiyorum arkadaşlar kisk ve riski biliyorsunuz ama risk ve bilmiyor soruyu da [öğrenci] sormuş ona da teşekkür ederiz benim elimizi söyledik evet kendinize iyi bakın diyorum arkadaşlar sağlıcakla kalın sınavınızda şimdiden başarılar diliyorum görüşürüz
+

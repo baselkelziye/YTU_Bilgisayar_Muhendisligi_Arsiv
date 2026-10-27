@@ -1,0 +1,3760 @@
+1
+00:00:02,419 --> 00:00:43,270
+kalıcı kalp arkadaşlar Merhaba sesim geliyor mu her zamanki kontrollerimizi yapalım 10 geçeceğim
+
+2
+00:00:43,270 --> 00:00:52,630
+başlayalım 5-10 geçer arası biraz katılımcısı sarsın böyle bu arada sonra başlayacağız 16.05
+
+3
+00:00:52,630 --> 00:06:15,129
+16.10 gibi görüşmek üzere başlayalım arkadaşlar hatırlarsanız Geçen hafta geçen ders daha doğrusu
+
+4
+00:06:15,129 --> 00:06:33,410
+en basit haliyle bir textbox'a girip o textbox'daki alanı kendi SQL
+
+5
+00:06:33,410 --> 00:06:42,610
+sintaksını bozacak şekilde özel girdiler girip kasıtlı girdiler girip bir database'in bütün tablolarına nasıl yarışıyoruz
+
+6
+00:06:42,610 --> 00:06:45,170
+bütün kayıtları nasıl çekiyoruz
+
+7
+00:06:45,170 --> 00:06:47,089
+tablolarını nasıl çekiyoruz
+
+8
+00:06:47,089 --> 00:06:50,329
+tabloyu veya veritabalarını nasıl kontrol altına aldığımızı gördük
+
+9
+00:06:50,329 --> 00:06:54,970
+buradan veritabalarından çok daha fazlasını elde edebileceğinizi gördünüz
+
+10
+00:06:54,970 --> 00:07:05,529
+yani sadece database'deki tabloları erişmekten ziyade tablolarda başka bilgiler de var yani sistemin kendisiyle ilgili bilgiler de var onlara da erişebileceğinizi gördünüz
+
+11
+00:07:05,529 --> 00:07:08,529
+mesela admin yetkisiyle sisteme girmek gibi
+
+12
+00:07:08,529 --> 00:07:15,850
+biliyorsunuz kullanıcı şifreleri her ne kadar hashlenmiş olsalar da genelde veritabalarında tutulurlar
+
+13
+00:07:15,850 --> 00:07:16,850
+bu yüzden
+
+14
+00:07:17,089 --> 00:07:24,970
+sisteme ait bilgiler de veritabalarda olduğu için SQL injection'ın aslında çok kapsamlı saldırılar yapabiliyorsunuz
+
+15
+00:07:24,970 --> 00:07:31,889
+bugün SQL injection'ın orta seviyeli saldırıları nasıl yapılıyor
+
+16
+00:07:31,889 --> 00:07:42,889
+bu saldırıları nasıl gerçekleştireceğiz neleri kullanacağız ve neden kullanacağımız bu tool'lara ihtiyacımız olacak
+
+17
+00:07:42,889 --> 00:07:44,889
+bunları anlatacağım
+
+18
+00:07:44,889 --> 00:07:46,930
+daha sonra da size hashlenmiş bir şey var
+
+19
+00:07:46,930 --> 00:07:47,050
+daha sonra da size hashlenmiş bir şey var
+
+20
+00:07:47,050 --> 00:07:48,050
+daha sonra da size hashlenmiş bir şey var
+
+21
+00:07:48,050 --> 00:07:51,889
+şimdi hiçbir şifreyi nasıl kırabileceğinize ait saldırı tipleri anlatacağım
+
+22
+00:07:51,930 --> 00:07:54,889
+ve buna bir örnek göstererek çalıştıracağım
+
+23
+00:07:54,889 --> 00:07:56,209
+tamam mı?
+
+24
+00:07:56,209 --> 00:07:59,209
+gün yoğurtlanışı de bunlar arkadaşlar
+
+25
+00:07:59,209 --> 00:08:04,209
+8.00 geçiyor şuanda 105 kişi olduk çok da artmıyor sanırım artık
+
+26
+00:08:04,250 --> 00:08:05,209
+106 oldu
+
+27
+00:08:05,209 --> 00:08:08,170
+biraz daha bekleyelim, bir iki dakika daha bekleyelim
+
+28
+00:08:08,170 --> 00:08:15,389
+sonra başlayalım
+
+29
+00:08:15,389 --> 00:08:23,850
+biliyorsunuz pandemi sürecinden dolayı hasta olabiliyor, belkόσu hasta olabiliyor
+
+30
+00:08:23,850 --> 00:08:26,629
+Biraz sıkıntılı bir süreçten geçiyoruz tüm dünya olarak.
+
+31
+00:08:27,730 --> 00:08:33,090
+O yüzden bazen öğrencilerin derse katılmaması gibi durumlar söz konusu olabiliyor.
+
+32
+00:08:33,230 --> 00:08:35,470
+Sağlık nedenlerine ötürü veya diğer nedenlerine ötürü.
+
+33
+00:08:36,769 --> 00:08:39,049
+Böyle durumlarda bana çok fazlaca meyil geliyor.
+
+34
+00:08:40,610 --> 00:08:43,470
+Evet normal uygulama derslerinde devam zorunluluğu var ama
+
+35
+00:08:43,470 --> 00:08:48,909
+biz mümkün mertebe bulunduğumuz sürece de göz önünde bulundurarak
+
+36
+00:08:48,909 --> 00:08:51,470
+yumuşak olmaya çalışacağız.
+
+37
+00:08:51,470 --> 00:08:56,490
+O yüzden lütfen sürekli ben böyle buradaydım, hocam derse katılamadım lütfen yok yazmayın gibi
+
+38
+00:08:56,490 --> 00:08:58,330
+meyler atmayın.
+
+39
+00:08:59,350 --> 00:09:03,210
+Zaten gerekli anlayışı göstermeye çalışıyoruz.
+
+40
+00:09:04,529 --> 00:09:10,110
+Zaten ders uygulamalarına girmenizin size sınavda faydası olacaktır.
+
+41
+00:09:10,690 --> 00:09:15,850
+Örnek veriyorum geçen sene sınavdaki bazı sorular uygulamada işlediğimiz konulardan çıkmıştı.
+
+42
+00:09:16,750 --> 00:09:19,590
+O yüzden size böyle bir tip vermiş olayım, tüyo vermiş olayım.
+
+43
+00:09:19,590 --> 00:09:21,190
+Yani uygulamalara girmenizin faydası ne olacak?
+
+44
+00:09:21,470 --> 00:09:23,470
+Keyfi doğduğunu düşünüyorum.
+
+45
+00:09:23,470 --> 00:09:26,470
+O yüzden lütfen keyfi aldığınız için derslere katılın.
+
+46
+00:09:26,470 --> 00:09:30,470
+Yoklamadan ziyade endişeleriniz olduğu için katılmayın.
+
+47
+00:09:30,470 --> 00:09:34,620
+Başlayalım arkadaşlar.
+
+48
+00:09:34,620 --> 00:09:38,620
+Bugün size SQL injection orta seviyesi saldırılarını anlatacağım.
+
+49
+00:09:38,620 --> 00:09:40,620
+Önce geçen hafta ne yaptığımızı kısaca bir bakalım.
+
+50
+00:09:40,620 --> 00:09:46,019
+Geçen hafta low seviyede saldırmıştık arkadaşlar.
+
+51
+00:09:46,019 --> 00:09:48,019
+Yine aynı uygulama üzerinden devam ediyorum.
+
+52
+00:09:48,019 --> 00:09:50,019
+Bunu zaten söylemiştim size.
+
+53
+00:09:50,019 --> 00:09:52,019
+Şu anda low seviyede.
+
+54
+00:09:52,019 --> 00:09:54,019
+Biraz sabit edelim.
+
+55
+00:09:55,019 --> 00:10:04,019
+Geçen hafta böyle bir text alanımız vardı ve bunu gördüğünüz gibi arkadaşlar korunması olmak için bu şekilde eksploat edip bir sürü örnek yapmıştık.
+
+56
+00:10:04,019 --> 00:10:10,019
+Ama bugün güvenlik seviyesini artırıp yeni bir deneme gerçekleştiriyoruz.
+
+57
+00:10:10,019 --> 00:10:17,019
+Bu denemede bakın arkadaşlar gördüğünüz gibi buraya istediğimiz text ile giremeyeceğimiz bir alan geliyor.
+
+58
+00:10:17,019 --> 00:10:22,019
+Bugün yapacağımız örnek. Bunu nasıl üstesinden geleceğiz onu anlatacağım.
+
+59
+00:10:22,019 --> 00:10:24,720
+Evet.
+
+60
+00:10:24,720 --> 00:10:25,720
+Geçen hafta yaptığımız örnek.
+
+61
+00:10:25,720 --> 00:10:27,720
+Ve onun kaynak kodunu sağda görüyorsunuz.
+
+62
+00:10:27,720 --> 00:10:29,720
+Buraya bir yazı giriyorduk.
+
+63
+00:10:29,720 --> 00:10:34,720
+Ve biz submit'e bastığımızda php script'ine request bölümüne düşüyordu.
+
+64
+00:10:34,720 --> 00:10:44,720
+Ve daha sonra buradan id'yi parse edip parametresini fonksiyonuna alıp sorgumuzun içine yazıyorduk olduğu gibi.
+
+65
+00:10:44,720 --> 00:10:50,720
+Yani buraya yazılacak herhangi bir id kontrol edilmediği sürece bu sorguda çalışıyordu ve bir sürü açık yaratıyordu.
+
+66
+00:10:50,720 --> 00:10:52,720
+Biz de bizim açık alan file olarak saldırıyorduk.
+
+67
+00:10:52,720 --> 00:10:53,720
+Engelik de ediyorduk.
+
+68
+00:10:53,720 --> 00:10:54,720
+Kendisiniz.
+
+69
+00:10:54,720 --> 00:10:56,720
+Malin kodlarımızı.
+
+70
+00:10:56,720 --> 00:10:58,720
+Kötü neydi kodlarımızı.
+
+71
+00:10:58,720 --> 00:10:59,720
+Yazıyorduk.
+
+72
+00:10:59,720 --> 00:11:00,720
+Şimdi burada.
+
+73
+00:11:00,720 --> 00:11:04,720
+Orta seviyede ise böyle bir ekran geliyor karşımıza.
+
+74
+00:11:04,720 --> 00:11:10,720
+Burada sadece client'ta değil aynı zamanda server tarafında da minik bir koruma yapıldığını görüyoruz.
+
+75
+00:11:10,720 --> 00:11:16,720
+Biliyorsunuz ki HTTP'de get ve post olmak üzere temelde take get ve post.
+
+76
+00:11:16,720 --> 00:11:23,720
+Bunun dışında iki tane üç tane daha farklı yöntem var ama genelde en yaygın kullanılan get ve post yöntemleriyle mesaj göndermektir.
+
+77
+00:11:24,720 --> 00:11:30,720
+Post request'in body'sine gönderilirken get header'ına gönderilir.
+
+78
+00:11:30,720 --> 00:11:36,100
+Örneğin şöyle göstereyim size arkadaşlar.
+
+79
+00:11:36,100 --> 00:11:40,100
+Buraya submit ettiğimizde bakın yukarıda hiçbir şey görmüyoruz giden.
+
+80
+00:11:40,100 --> 00:11:48,100
+Ancak sanırım şurayı low yaparsak yaptığımız hızların.
+
+81
+00:11:48,100 --> 00:11:54,100
+Bakın yukarıda görüyor musunuz bir submit vesaire vesaire header URL üzerinden taşınıyor arkadaşlar.
+
+82
+00:11:54,100 --> 00:11:55,100
+Yukarıda gördünüz.
+
+83
+00:11:55,100 --> 00:11:58,100
+URL üzerinden giden parametre id bir.
+
+84
+00:11:58,100 --> 00:12:01,100
+Şuraya kadar olan kısım URL'in kendisi.
+
+85
+00:12:01,100 --> 00:12:04,100
+Buradan sonradan kısımsa argümanlarıdır.
+
+86
+00:12:04,100 --> 00:12:05,100
+id eşittir bir.
+
+87
+00:12:05,100 --> 00:12:06,100
+Submit, submit.
+
+88
+00:12:06,100 --> 00:12:08,100
+Çünkü burada bir form var arka planda.
+
+89
+00:12:08,100 --> 00:12:09,100
+Form'u sabit ediyoruz.
+
+90
+00:12:09,100 --> 00:12:10,100
+Onun parametresi.
+
+91
+00:12:10,100 --> 00:12:12,100
+Diye gidiyor.
+
+92
+00:12:12,100 --> 00:12:15,100
+İşte arkadaşlar bu get request'iyle gönderilir stack.
+
+93
+00:12:15,100 --> 00:12:17,100
+Ve get request yerine post request'i de var.
+
+94
+00:12:17,100 --> 00:12:18,100
+Bu body'de gidiyor.
+
+95
+00:12:18,100 --> 00:12:20,100
+Body'de gitmesinin avantajı ne?
+
+96
+00:12:20,100 --> 00:12:24,100
+Mesela siz buradan id şöyle iki üç diye gönderebilirsiniz.
+
+97
+00:12:24,100 --> 00:12:27,100
+Hiç ekrandan bir şey tıklamadan.
+
+98
+00:12:27,100 --> 00:12:29,100
+Şuradan.
+
+99
+00:12:29,100 --> 00:12:31,100
+Dört diye gönderebilirsiniz.
+
+100
+00:12:31,100 --> 00:12:33,100
+Ama bunu post'la yaptığınız zaman mümkün olmuyor.
+
+101
+00:12:33,100 --> 00:12:35,100
+Ve bu minik de olsa bir seviye koruma sağlıyor.
+
+102
+00:12:35,100 --> 00:12:36,100
+Savunma sağlıyor.
+
+103
+00:12:36,100 --> 00:12:38,100
+Burada o savunmanın da olduğunu görüyoruz.
+
+104
+00:12:38,100 --> 00:12:39,100
+Evet arkadaşlar.
+
+105
+00:12:39,100 --> 00:12:41,100
+Daha sonra ne yapmış?
+
+106
+00:12:41,100 --> 00:12:42,100
+Burada escape yapmış.
+
+107
+00:12:42,100 --> 00:12:44,100
+MySQL injection's de escape yapmış.
+
+108
+00:12:44,100 --> 00:12:46,100
+Bazı karakterleri replace yapmış.
+
+109
+00:12:46,100 --> 00:12:49,100
+Ve sonra da query çalıştırmış.
+
+110
+00:12:49,100 --> 00:12:52,100
+Böyle bir seviye savunma getirmiş SQL injection'e.
+
+111
+00:12:52,100 --> 00:12:53,100
+Evet gerçekten bir savunma getirmiş.
+
+112
+00:12:53,100 --> 00:12:54,100
+Bazı hareketler yapamıyoruz.
+
+113
+00:12:54,100 --> 00:12:56,100
+Buraya bir şey yazamıyoruz.
+
+114
+00:12:56,100 --> 00:12:57,100
+Medium'da.
+
+115
+00:12:57,100 --> 00:12:58,100
+Tekrar geliyorum.
+
+116
+00:12:58,100 --> 00:13:03,559
+Gördüğünüz gibi bir seviye savunması alınmış.
+
+117
+00:13:03,559 --> 00:13:05,559
+Burada işsiz bir şey yazamıyoruz.
+
+118
+00:13:05,559 --> 00:13:08,559
+Ve URL'den göndermediği için buradan da manipüle edemiyorum.
+
+119
+00:13:08,559 --> 00:13:12,840
+O yüzden savunma yaptığını zannediyor.
+
+120
+00:13:12,840 --> 00:13:15,840
+Ama aslında savunma olmuyor.
+
+121
+00:13:15,840 --> 00:13:18,840
+Tek az önce gidecek olursak.
+
+122
+00:13:18,840 --> 00:13:20,840
+Burada bir text box'ımız vardı.
+
+123
+00:13:20,840 --> 00:13:21,840
+Combo box'a dönüştü.
+
+124
+00:13:21,840 --> 00:13:22,840
+Yani bir seçme tool'una dönüştü.
+
+125
+00:13:22,840 --> 00:13:24,840
+Şuna combo box deniyor arkadaşlar.
+
+126
+00:13:24,840 --> 00:13:25,840
+Bilmeyenler için.
+
+127
+00:13:25,840 --> 00:13:26,840
+Veya drop down list deniyor.
+
+128
+00:13:26,840 --> 00:13:28,840
+Tamam mı?
+
+129
+00:13:28,840 --> 00:13:30,840
+Burada çevirilmiş.
+
+130
+00:13:30,840 --> 00:13:33,840
+Ve daha sonra da sunucu seviyesindeki savunma için de
+
+131
+00:13:33,840 --> 00:13:35,840
+escape string ve get request'ler de post request dönüşmüş.
+
+132
+00:13:35,840 --> 00:13:39,840
+Yani hem client tarafında bir get request post request dönüşmüş.
+
+133
+00:13:39,840 --> 00:13:41,840
+Hem client tarafında yapılan bir yenilik hem de server tarafında yapılan bir yenilik.
+
+134
+00:13:41,840 --> 00:13:44,840
+Çünkü çift taraflı bir şey bu.
+
+135
+00:13:44,840 --> 00:13:46,840
+Dolayısıyla bu şekilde bir savunma yapmışlar.
+
+136
+00:13:46,840 --> 00:13:48,840
+Ama bu geçerli bir savunma değil.
+
+137
+00:13:48,840 --> 00:13:51,840
+Çünkü biz proxy sunucuyla bunları alt edebiliyoruz.
+
+138
+00:13:51,840 --> 00:13:53,840
+Şimdi ona geçineceğiz.
+
+139
+00:13:53,840 --> 00:13:54,840
+Arkadaşlar.
+
+140
+00:13:54,840 --> 00:13:55,840
+Kali'de ve
+
+141
+00:13:55,840 --> 00:14:02,840
+daha doğrusu siber güvenlikle ilgili çalışan, uğraşan bütün profesyoneller sıklıkla bir proxy tool'una ihtiyaç duyarlar.
+
+142
+00:14:02,840 --> 00:14:07,840
+Ve Burp Suite bunun için oldukça yaygın kullanılan bir araç.
+
+143
+00:14:07,840 --> 00:14:10,840
+Bu Burp Suite'le birçok şey yapabilirsiniz.
+
+144
+00:14:10,840 --> 00:14:16,840
+Gönderdiğiniz istekleri intercept edip manipüle edebilirsiniz veya okuyabilirsiniz.
+
+145
+00:14:16,840 --> 00:14:20,840
+Browser'ınızı bu proxy tool'a bağlayarak aslında birçok şey yapabilirsiniz.
+
+146
+00:14:20,840 --> 00:14:24,840
+Yani gönderdiğiniz bütün, sizin kendi bilgisayarınızdan çıkarttığınız bütün paketleri yönetebiliyorsunuz.
+
+147
+00:14:24,840 --> 00:14:26,840
+Sonuçta siz client tarafısınız.
+
+148
+00:14:26,840 --> 00:14:27,840
+Sistem tarafısınız.
+
+149
+00:14:27,840 --> 00:14:29,840
+Ve her şeyi yönetebiliyorsunuz.
+
+150
+00:14:29,840 --> 00:14:32,840
+Bunu şöyle kısaca bir çizerek anlatmam gerekirse.
+
+151
+00:14:32,840 --> 00:14:38,679
+Şuradan whiteboard açayım.
+
+152
+00:14:38,679 --> 00:14:50,179
+Geri alayım.
+
+153
+00:14:50,179 --> 00:14:57,909
+Bizim bir web client'ımız var arkadaşlar.
+
+154
+00:14:57,909 --> 00:14:58,909
+Bu biziz.
+
+155
+00:14:58,909 --> 00:15:01,909
+Saldırgan ya da kullanıcılar, saldırganlar.
+
+156
+00:15:01,909 --> 00:15:02,909
+Burada.
+
+157
+00:15:02,909 --> 00:15:07,570
+Buradan biz isteklerimizi.
+
+158
+00:15:07,570 --> 00:15:12,990
+Burası web sunucusu.
+
+159
+00:15:12,990 --> 00:15:27,139
+Burası da.
+
+160
+00:15:27,139 --> 00:15:30,139
+Biraz çizim kötü ama mouse yazıyorum arkadaşlar.
+
+161
+00:15:30,139 --> 00:15:32,139
+Burası da database olsun.
+
+162
+00:15:32,139 --> 00:15:38,029
+Bizim yaptığımız istekler buraya get ve post ile gidiyor.
+
+163
+00:15:38,029 --> 00:15:42,210
+Get veya post.
+
+164
+00:15:42,210 --> 00:15:46,210
+Buradan buraya database sunucu, web sunucusu.
+
+165
+00:15:46,210 --> 00:15:48,210
+Database'e gönderiyor.
+
+166
+00:15:48,210 --> 00:15:51,210
+Database'den alıp client'e gönderiyor.
+
+167
+00:15:51,210 --> 00:15:53,210
+Şimdi şu kısım arkadaşlar.
+
+168
+00:15:53,210 --> 00:16:00,639
+Şu kısım tamamen saldırganı kontrol altında.
+
+169
+00:16:00,639 --> 00:16:05,639
+Burada Atakır kendi domeninde olduğu için size her şeyi yapabilir.
+
+170
+00:16:05,639 --> 00:16:07,639
+Buraya proxy koyup requestleri değiştirebilir.
+
+171
+00:16:08,639 --> 00:16:12,639
+Yani siz buradan get ve post'a gönderdiğiniz şeyleri aslında siz daha çıkmadan değiştirebiliyorsunuz.
+
+172
+00:16:12,639 --> 00:16:13,639
+Çünkü Atakır tarafındasınız.
+
+173
+00:16:13,639 --> 00:16:14,639
+Client tarafındasınız.
+
+174
+00:16:14,639 --> 00:16:15,639
+Aslında bütün hikaye buradan ibaret.
+
+175
+00:16:15,639 --> 00:16:21,639
+Bu yüzden geçen hafta size bahsettiğim sunucu tarafında bir kontrol yapmadığınız
+
+176
+00:16:21,639 --> 00:16:24,639
+sürece MySQL injection'i engelleyemezsiniz.
+
+177
+00:16:24,639 --> 00:16:26,639
+Hemen arkasından neden bu.
+
+178
+00:16:26,639 --> 00:16:32,639
+Atakır bütün web isteklerinin hepsini browse'dan çıktıktan sonra dahi kontrol edebiliyor.
+
+179
+00:16:32,639 --> 00:16:33,639
+Bunu nasıl yapabiliyor?
+
+180
+00:16:33,639 --> 00:16:34,639
+Proxy'lerle yapabiliyor.
+
+181
+00:16:34,639 --> 00:16:36,639
+Veya daha gelişmiş paket yönetici.
+
+182
+00:16:36,639 --> 00:16:37,639
+Paket.
+
+183
+00:16:37,639 --> 00:16:43,639
+Netbook kartıyla haberleşmesi adına üçüncü parti yazılımlarla manipüle edebiliyor.
+
+184
+00:16:43,639 --> 00:16:47,639
+Bu tarz tool'larla gidip her türlü sunucuya gönderdiğiniz mesajı belirleyebiliyorsunuz.
+
+185
+00:16:47,639 --> 00:16:52,639
+Dolayısıyla Client tarafında yapacağınız her şey Atakır için anlamsız.
+
+186
+00:16:52,639 --> 00:16:54,639
+Atakır bunun her türlü üzerinden geçebilir.
+
+187
+00:16:54,639 --> 00:16:58,639
+Ama sizin web sunucusuna yazdığınız o PHP kodlarınız burada duruyor.
+
+188
+00:16:58,639 --> 00:17:02,639
+Buraya yapacağınız ve database tarafına yapacağınız.
+
+189
+00:17:02,639 --> 00:17:04,640
+Burada MySQL var.
+
+190
+00:17:04,640 --> 00:17:05,640
+Değil mi?
+
+191
+00:17:05,640 --> 00:17:06,640
+Buraya yapacağınız.
+
+192
+00:17:06,640 --> 00:17:12,640
+Şu ikisi arasında yapacağınız düzgün protokoller, düzgün prosedürlerle SQL injection'i engelleyebiliyorsunuz.
+
+193
+00:17:12,640 --> 00:17:15,640
+Tabi Client'e yapacağınız şeyler de bir seviye savunma sağlayacaktır.
+
+194
+00:17:15,640 --> 00:17:21,640
+Ama Client'e yapılan her şeyin lütfen aşılabilir olduğunu, çünkü tamamen saldırganın kontrolü rahatlığı olduğunu unutmayın.
+
+195
+00:17:21,640 --> 00:17:24,529
+Bu kadardı.
+
+196
+00:17:24,529 --> 00:17:26,529
+Kabaca anlatmak istedim zaten.
+
+197
+00:17:26,529 --> 00:17:38,480
+O zaman şimdi sunumumuza dönelim.
+
+198
+00:17:38,480 --> 00:17:39,480
+Burayı anlatmıştım.
+
+199
+00:17:39,480 --> 00:17:41,480
+Şimdi Web Suite'i anlatmak istiyorum birazcık.
+
+200
+00:17:41,480 --> 00:17:45,480
+Web Suite'e çok basit bir arayüz var arkadaşlar.
+
+201
+00:17:45,480 --> 00:17:46,480
+Biz burada.
+
+202
+00:17:46,480 --> 00:17:49,789
+Web Suite burada arkadaşlar.
+
+203
+00:17:49,789 --> 00:17:51,789
+Sunuma da aynısını koydum.
+
+204
+00:17:51,789 --> 00:17:55,789
+Bir dashboard'u var böyle.
+
+205
+00:17:55,789 --> 00:18:00,789
+Burada genel olarak uygulamayla ilgili farklı istatistikleri görebiliyorsunuz.
+
+206
+00:18:00,789 --> 00:18:03,789
+Neyi ne kadar kullanmış, kaç site kaç tane gelmiş, neleri ne yaptığıyla ilgili.
+
+207
+00:18:03,789 --> 00:18:09,789
+Web uygulaması yazan arkadaşlar için çok tanıdık gelecek şeyler de var burada.
+
+208
+00:18:09,789 --> 00:18:11,789
+Cross-type scripting, DOM-based falan.
+
+209
+00:18:11,789 --> 00:18:13,789
+Bunları zaten size anlatacağım arkadaşlar bir kısmına.
+
+210
+00:18:13,789 --> 00:18:15,789
+SQL injection vs.
+
+211
+00:18:15,789 --> 00:18:17,789
+Burada bir takım uyarılar da yapıyor aslında.
+
+212
+00:18:17,789 --> 00:18:18,789
+Ne diyeyim?
+
+213
+00:18:18,789 --> 00:18:19,789
+Ne diyeyim?
+
+214
+00:18:19,789 --> 00:18:20,789
+Şeyle ilgili.
+
+215
+00:18:20,789 --> 00:18:22,789
+Biz önce bir konfigürasyon yapmamız lazım.
+
+216
+00:18:22,789 --> 00:18:25,789
+Çünkü şu an proxy'miz aktif değil.
+
+217
+00:18:25,789 --> 00:18:33,099
+Proxy'mizin aktif olması için ne yapmamız gerekiyor?
+
+218
+00:18:33,099 --> 00:18:35,099
+Gilen var mı?
+
+219
+00:18:35,099 --> 00:18:36,099
+Bir chat'i göreyim.
+
+220
+00:18:36,099 --> 00:18:40,619
+Proxy kullanan arkadaşları göreyim.
+
+221
+00:18:40,619 --> 00:18:42,619
+Proxy için neye ihtiyacınız var arkadaşlar?
+
+222
+00:18:42,619 --> 00:18:49,180
+Hem sesimin duyulduğunda bir check etmiş olurum.
+
+223
+00:18:49,180 --> 00:18:51,180
+Proxy için ne yapmamız gerekiyor?
+
+224
+00:18:51,180 --> 00:18:52,180
+Bir ayar yapmamız gerekiyor mu?
+
+225
+00:18:52,180 --> 00:18:54,180
+Proxy uygulamasını kurduk.
+
+226
+00:18:54,180 --> 00:18:56,180
+Yok hayır proxy uygulamam var zaten ama.
+
+227
+00:18:57,180 --> 00:19:06,019
+Şu an ben buradan herhangi bir linke gittiğim zaman proxy çalışacak mı?
+
+228
+00:19:06,019 --> 00:19:09,359
+Bir ayar yapmam gerekiyor değil mi?
+
+229
+00:19:09,359 --> 00:19:10,359
+Evet.
+
+230
+00:19:10,359 --> 00:19:11,359
+Doğru.
+
+231
+00:19:11,359 --> 00:19:12,359
+[öğrenci] doğru söyledin.
+
+232
+00:19:12,359 --> 00:19:17,430
+Buraya girip ayar yapmamız gerekiyor.
+
+233
+00:19:17,430 --> 00:19:19,430
+Firefox için gösteriyorum arkadaşlar.
+
+234
+00:19:19,430 --> 00:19:22,430
+Firefox için ayarları açıyorum.
+
+235
+00:19:22,430 --> 00:19:26,430
+Benim browser'ım şu anda doğrudan sunucuya gönderiyor.
+
+236
+00:19:26,430 --> 00:19:28,430
+DNS sunucusuna gönderiyor istekleri.
+
+237
+00:19:28,430 --> 00:19:30,430
+Bizim araya bir proxy koymamız lazım.
+
+238
+00:19:30,430 --> 00:19:32,430
+Onu da buradan belirliyoruz.
+
+239
+00:19:32,430 --> 00:19:34,430
+Network ayarları yazıyor arkadaşlar bende.
+
+240
+00:19:34,430 --> 00:19:37,430
+Firefox için böyle her uygulama için fark olabilir.
+
+241
+00:19:37,430 --> 00:19:39,430
+Bakın arkadaşlar burada no proxy diyor.
+
+242
+00:19:39,430 --> 00:19:41,430
+Şu an aynı proxy yok.
+
+243
+00:19:41,430 --> 00:19:43,430
+Doğrudan sunucuya gidiyoruz.
+
+244
+00:19:43,430 --> 00:19:45,430
+Onun yerine manuel proxy yaparsak.
+
+245
+00:19:45,430 --> 00:19:51,430
+Bu benden çıkmadan önce browser'dan gönderdiğim isteklerin hepsinin
+
+246
+00:19:51,430 --> 00:19:55,430
+gerekmeden önce önce şu http proxy yazan proxy sunucuna gideceğini gösteriyor.
+
+247
+00:19:55,430 --> 00:20:01,430
+Ve şu an 120.001 lokal osunda çalışan 8080'de çalışan
+
+248
+00:20:01,430 --> 00:20:03,430
+yani şu an benim web suite'umun olduğu yeri gösteriyor da.
+
+249
+00:20:03,430 --> 00:20:05,430
+Dilediği porte gösteriyor.
+
+250
+00:20:05,430 --> 00:20:07,430
+Burayı yönlendirecek bütün isteklerimi.
+
+251
+00:20:07,430 --> 00:20:12,430
+Ve ben okey dediğim anda burada aynı önerdiğim bütün istekler web suite tarafından yakalanabiliyor olacak.
+
+252
+00:20:12,430 --> 00:20:14,430
+Tamam ilk tek bu ayarı yapmamız gerekiyor.
+
+253
+00:20:14,430 --> 00:20:21,430
+Şimdi bu ayarı yaptığımıza göre artık aslında biz buradan gönderen bütün istekleri web suite'e görebiliyor olacağız.
+
+254
+00:20:21,430 --> 00:20:26,059
+Hemen bir örnek yapalım.
+
+255
+00:20:26,059 --> 00:20:34,700
+Summit dediğimde şöyle şunu açalım bu arada ki dursun.
+
+256
+00:20:34,700 --> 00:20:39,259
+Bakın arkadaşlar.
+
+257
+00:20:39,259 --> 00:20:40,259
+Intercept yazdım.
+
+258
+00:20:40,259 --> 00:20:42,259
+Proxy'e yaptığım istekler.
+
+259
+00:20:43,259 --> 00:20:45,259
+İstek geliyor.
+
+260
+00:20:45,259 --> 00:20:50,259
+Bakın post isteği olduğu gözüküyor zaten çünkü kanal tarafında da post diye gönderiliyor.
+
+261
+00:20:50,259 --> 00:20:54,259
+Burada header'daki meta bilgiler yazıyor.
+
+262
+00:20:54,259 --> 00:20:58,259
+Hangi browser'dan gösterdi, hangi agent üzerinden gönderildi de yazıyor.
+
+263
+00:20:58,259 --> 00:21:01,259
+Hangi sistemde çalıştı browser'ın vs. yazıyor.
+
+264
+00:21:01,259 --> 00:21:04,259
+Bunlar aslında bizim http isteğimizin header kısmı.
+
+265
+00:21:04,259 --> 00:21:05,259
+Değil mi?
+
+266
+00:21:05,259 --> 00:21:07,259
+Evet şurada bir request.
+
+267
+00:21:07,259 --> 00:21:10,259
+Get olsaydı burada bir request header olacaktı.
+
+268
+00:21:10,259 --> 00:21:13,259
+Orada da parametreler yazacaktı ama şu an body'miz var.
+
+269
+00:21:13,259 --> 00:21:15,259
+Ve body'mizde id 1, submit gidiyor.
+
+270
+00:21:15,259 --> 00:21:17,259
+Bakın farksız URL'de gözükmüyor hiçbir şey.
+
+271
+00:21:17,259 --> 00:21:19,259
+Çünkü post ile gönderiliyor.
+
+272
+00:21:19,259 --> 00:21:23,259
+Ama proxy ile girdiğinizde body'i görebiliyorsunuz ve burada görebiliyorsunuz hepsini.
+
+273
+00:21:23,259 --> 00:21:28,259
+Şu an intercept ettik ve 1 ile gönderilen bir isteği buradan 3 olarak değiştiriyorum.
+
+274
+00:21:28,259 --> 00:21:31,259
+Ve şu an paketi serbest bırakıyorum.
+
+275
+00:21:31,259 --> 00:21:35,259
+Bakın arkadaşlar 1'i seçmiştim ama 3 gitti gördünüz mü?
+
+276
+00:21:35,259 --> 00:21:37,259
+Proxy ile manipüle ettim.
+
+277
+00:21:37,259 --> 00:21:40,259
+Bugün aslında yapılan bütün hikaye bunun üzerinde olacak.
+
+278
+00:21:40,259 --> 00:21:42,259
+Şimdi sunuma bağlı devam edelim.
+
+279
+00:21:42,259 --> 00:21:45,730
+Biraz fazlalar dedim sanırım.
+
+280
+00:21:45,730 --> 00:21:47,730
+Sunumda yaptığım şeyin aynısını yaptım arkadaşlar.
+
+281
+00:21:47,730 --> 00:21:51,730
+Gördüğünüz gibi intercept ile bağlandım.
+
+282
+00:21:51,730 --> 00:21:57,829
+Daha sonra değiştirdim.
+
+283
+00:21:57,829 --> 00:22:05,740
+Ve isteğimi gönderebildim.
+
+284
+00:22:05,740 --> 00:22:08,740
+Şimdi saldırı yapalım.
+
+285
+00:22:08,740 --> 00:22:14,740
+Burada gördüğünüz şu SQL injection'ı artık yazabilirim.
+
+286
+00:22:14,740 --> 00:22:17,740
+WebSuite'den paketin içerisine doğrudan yazabilirim.
+
+287
+00:22:17,740 --> 00:22:19,740
+Kopyalıyorum.
+
+288
+00:22:19,740 --> 00:22:22,740
+Ve tekrar intercept edeceğim arkadaşlar.
+
+289
+00:22:22,740 --> 00:22:24,740
+Gönderiyorum.
+
+290
+00:22:24,740 --> 00:22:25,740
+Intercept açmadık.
+
+291
+00:22:25,740 --> 00:22:37,700
+Şu an açık.
+
+292
+00:22:37,700 --> 00:22:39,700
+Submit ettim.
+
+293
+00:22:39,700 --> 00:22:42,700
+1 ile gönderdim ama ben buraya 1 yazmayacağım.
+
+294
+00:22:42,700 --> 00:22:44,700
+Önce şunu yazacağım.
+
+295
+00:22:44,700 --> 00:22:50,190
+Bakın arkadaşlar ilk yaptığımız hareket buydu hatırlarsanız.
+
+296
+00:22:50,190 --> 00:22:52,190
+Önce tırnak diyez yapıyoruz.
+
+297
+00:22:52,190 --> 00:22:58,190
+Ve bunun MySQL'e kadar gittiğini ve MySQL'de bir hata gönderdiğini görüyoruz.
+
+298
+00:22:58,190 --> 00:23:00,190
+Çünkü error var diyor.
+
+299
+00:23:00,190 --> 00:23:02,190
+SQL syntax'ın hata var diyor.
+
+300
+00:23:02,190 --> 00:23:06,190
+Bu MySQL tarafında bir hata olduğunu gösteriyor.
+
+301
+00:23:06,190 --> 00:23:08,190
+Yani WebSuite'de bir kontrol gerçekleşmemiş bunun için.
+
+302
+00:23:08,190 --> 00:23:12,190
+O yüzden bizim saldırılarımız için gayet açık.
+
+303
+00:23:12,190 --> 00:23:16,190
+En azından WebSuite tarafında bir savunmanın olmadığını görüyoruz.
+
+304
+00:23:16,190 --> 00:23:18,190
+Şimdi saldırımızı gerçekleştirelim.
+
+305
+00:23:18,190 --> 00:23:34,920
+Forward geldi.
+
+306
+00:23:34,920 --> 00:23:39,480
+Şöyle yapalım bir daha yapalım.
+
+307
+00:23:39,480 --> 00:23:47,910
+Diğer paketler etmiş olabilir.
+
+308
+00:23:47,910 --> 00:23:50,910
+Sabit etmeden önce intercept'ı açıyorum.
+
+309
+00:23:50,910 --> 00:23:52,910
+Submit diyorum.
+
+310
+00:23:52,910 --> 00:24:07,230
+Aa yanlış yaptım affedersiniz.
+
+311
+00:24:07,230 --> 00:24:09,230
+Şu an paket bir sonraki paket olacak.
+
+312
+00:24:09,230 --> 00:24:11,230
+Geldi.
+
+313
+00:24:11,230 --> 00:24:22,859
+Buraya az önce kopyalamış olduğum SQL sorgusuna giriyorum.
+
+314
+00:24:22,859 --> 00:24:25,859
+Gördüğünüz gibi arkadaşlar injection'ım çalıştı.
+
+315
+00:24:25,859 --> 00:24:29,859
+Bu injection ile yaptığım şey geçen hafta yaptığım komutun aynısı aslında.
+
+316
+00:24:29,859 --> 00:24:34,859
+Ve bu bize şu anda database'deki bütün tablo isimlerini gönderiyor.
+
+317
+00:24:34,859 --> 00:24:36,859
+Gönderiyor yani dönüş olarak.
+
+318
+00:24:36,859 --> 00:24:39,859
+Burada bütün tablo isimlerini görebiliyorsunuz.
+
+319
+00:24:39,859 --> 00:24:42,859
+Diğer saldırılar aslında geçen hafta yaptıklarımızla aynı şekilde devam ediyor.
+
+320
+00:24:42,859 --> 00:24:44,859
+Tek tek yazmayacağım.
+
+321
+00:24:44,859 --> 00:24:47,859
+Tabloların isimleri nasıl eriştiğimizi.
+
+322
+00:24:47,859 --> 00:24:50,859
+Doğrudan bu komuta yazmak istiyorum.
+
+323
+00:24:50,859 --> 00:24:52,859
+Geçen hafta yazdığımız saldırıların aynısı arkadaşlar.
+
+324
+00:24:52,859 --> 00:24:54,859
+Sadece bu sefer farklı bir tool üzerinden yapıyoruz.
+
+325
+00:24:54,859 --> 00:24:56,859
+O yüzden atlaya atlaya gideceğim.
+
+326
+00:24:56,859 --> 00:25:02,279
+Tekrar geliyorum uygulamama.
+
+327
+00:25:02,279 --> 00:25:09,119
+Intercept'ı açtım.
+
+328
+00:25:09,119 --> 00:25:12,119
+Buraya bir paket geliyor ama önemi yok.
+
+329
+00:25:12,119 --> 00:25:15,119
+Şu an bekliyorum. Sabit diyorum.
+
+330
+00:25:15,119 --> 00:25:17,119
+Şu an intercept'e geldi.
+
+331
+00:25:17,119 --> 00:25:27,119
+Şuraya artık SQL injection için yazdığım kullanıcı sinirlerini ve şifrelerini gönderen paketi istiyorum.
+
+332
+00:25:27,119 --> 00:25:30,460
+Evet arkadaşlar hepsi geldi.
+
+333
+00:25:30,460 --> 00:25:33,460
+Gördüğünüz gibi şu anda bunun olması hiçbir şey bize yaramadı.
+
+334
+00:25:33,460 --> 00:25:36,460
+Proxy ile gayet güzel yüzden çok basit bir şekilde açtık.
+
+335
+00:25:36,460 --> 00:25:39,460
+Ve bütün kullanıcı ve şifrelerini getirebildik.
+
+336
+00:25:39,460 --> 00:25:43,460
+Ancak burada şöyle bir şey var arkadaşlar.
+
+337
+00:25:43,460 --> 00:25:48,460
+Şimdi sizin burada kullanıcı şifrelerini getirdiğiniz zaman burada görüyorsunuz ki çok...
+
+338
+00:25:48,460 --> 00:25:50,460
+...karman çorman bir şifre var.
+
+339
+00:25:50,460 --> 00:25:53,460
+Bunlar gerçi şifreler değil tabii ki. Her kullanıcı tek tek bunları girmiyor.
+
+340
+00:25:53,460 --> 00:25:55,460
+Bunlar küçük kısa şifreler aslında.
+
+341
+00:25:55,460 --> 00:25:57,460
+Bu şifrelerin kırılabiliyor olması gerekir değil mi?
+
+342
+00:25:57,460 --> 00:25:59,460
+Hashlenmiş, hash olarak kullan.
+
+343
+00:25:59,460 --> 00:26:02,460
+Şifreler bunlar. Normalde 1234 diye bir şifre aslında ama...
+
+344
+00:26:02,460 --> 00:26:06,460
+...hash fonksiyonuna tabi tutup bir unique key oluşturuluyor.
+
+345
+00:26:06,460 --> 00:26:08,460
+O da database'de saklanılıyor.
+
+346
+00:26:08,460 --> 00:26:14,460
+Ve bu şekilde kullanıcı sisteme giriş yaptığı zaman şifrelerin database'de doğrudan açık şekilde gözükmesi engellenmiş oluyor.
+
+347
+00:26:14,460 --> 00:26:16,460
+Ama bu tabii ki...
+
+348
+00:26:16,460 --> 00:26:19,460
+...tam bir çözüm değil.
+
+349
+00:26:19,460 --> 00:26:23,460
+Bir seviye savunma sağlıyor ama tam bir savunma değil.
+
+350
+00:26:23,460 --> 00:26:26,460
+Bunu kırmak için şifre kırma yöntemleri var.
+
+351
+00:26:26,460 --> 00:26:30,460
+Temel olarak şifre kırma yöntemleri, password cracking yöntemleri...
+
+352
+00:26:30,460 --> 00:26:33,460
+...üç temel başlık altında incelenebilir.
+
+353
+00:26:33,460 --> 00:26:35,460
+Birincisi brute force atak.
+
+354
+00:26:35,460 --> 00:26:40,460
+Yani deneme yanılmayla, tamamen bilgisayarın işlemci gücünden faydalanarak...
+
+355
+00:26:40,460 --> 00:26:43,460
+...deneme yanılma üzerinden ilerleyen...
+
+356
+00:26:43,460 --> 00:26:46,460
+...kaba kuvvetle şifreleri kırmaya başlıyor.
+
+357
+00:26:46,460 --> 00:26:48,460
+Yani hashleri kırmaya çalışan yöntem bu.
+
+358
+00:26:48,460 --> 00:26:50,460
+Yöntemler bu grup altında yer alabiliyor.
+
+359
+00:26:50,460 --> 00:26:52,460
+Dictionary ataklar var.
+
+360
+00:26:52,460 --> 00:27:00,460
+Bunda ise daha önceden tarımlanmış temel şifrelerin hash kodları bulunuyor.
+
+361
+00:27:00,460 --> 00:27:04,460
+Ve siz hash kodlar üzerinden bu hash kod hangi şifreye aittir diye arama yapıyorsunuz.
+
+362
+00:27:04,460 --> 00:27:06,460
+Bildiğiniz search aslında.
+
+363
+00:27:06,460 --> 00:27:08,460
+Ama bu Dictionary atak çok yaygın kullanılan şifreler için.
+
+364
+00:27:08,460 --> 00:27:10,460
+Örneğin password 123 gibi.
+
+365
+00:27:10,460 --> 00:27:12,460
+Şifreleri kırmak için çok daha sık kullanılıyor.
+
+366
+00:27:12,460 --> 00:27:14,460
+Rainbow table ise...
+
+367
+00:27:14,460 --> 00:27:18,460
+...belli bir takım şifreleme yöntemlerinin...
+
+368
+00:27:18,460 --> 00:27:22,460
+...atıyorum ilk beş karakter, beş karakterle alınabilecek bütün kombinasyonlarının...
+
+369
+00:27:22,460 --> 00:27:24,460
+...hash'lerinin tutulduğu bir search table aslında.
+
+370
+00:27:24,460 --> 00:27:26,460
+Siz buradan...
+
+371
+00:27:26,460 --> 00:27:30,460
+...hash'lerinizi arayarak, mevcut hash'ler arayarak hangi şifreye denk geldiğini...
+
+372
+00:27:30,460 --> 00:27:32,460
+...search edebiliyorsunuz.
+
+373
+00:27:32,460 --> 00:27:36,460
+Ama çok yüksek karakter girdiğinizde rainbow tabelere ulaşmak çok daha...
+
+374
+00:27:36,460 --> 00:27:40,460
+...zor oluyor. Biliyorsunuz ki eksponansiyel olarak artan bir uzunluğu var.
+
+375
+00:27:40,460 --> 00:27:42,460
+Örneğin beş karakter için tamamen sallıyorum.
+
+376
+00:27:42,460 --> 00:27:44,460
+Yüz bin tane...
+
+377
+00:27:44,460 --> 00:27:46,460
+...farklı kombinasyon varsa...
+
+378
+00:27:46,460 --> 00:27:48,460
+...bir sonraki altı karakter için...
+
+379
+00:27:48,460 --> 00:27:50,460
+...bunu bir daha onunla çarpıyorsunuz ve...
+
+380
+00:27:50,460 --> 00:27:52,460
+...minimumlara çıkmaya başlıyor.
+
+381
+00:27:52,460 --> 00:27:54,460
+Yani böyle eksponansiyel olarak artıyor.
+
+382
+00:27:54,460 --> 00:27:56,460
+Karakter sayısını eksponansiye şeklinde.
+
+383
+00:27:56,460 --> 00:27:58,460
+O yüzden rainbow table'lar...
+
+384
+00:27:58,460 --> 00:28:00,460
+...genelde küçük şifreler için çok kullanışlı...
+
+385
+00:28:00,460 --> 00:28:02,460
+...ve belli yöntemler için yapılabiliyor sadece.
+
+386
+00:28:02,460 --> 00:28:04,460
+Dictionary ataklar ise...
+
+387
+00:28:04,460 --> 00:28:06,460
+...tekrar üzerinden geçmek gerekirse...
+
+388
+00:28:06,460 --> 00:28:08,460
+...belli başlı...
+
+389
+00:28:08,460 --> 00:28:10,460
+...hazır şifreler için...
+
+390
+00:28:10,460 --> 00:28:12,460
+...yapılan bir saldırı türü.
+
+391
+00:28:12,460 --> 00:28:14,460
+Uniforce'da ise bütün şifreleri kırabiliyor ama...
+
+392
+00:28:14,460 --> 00:28:16,460
+...çok fazla vakit alan şifre kırma yöntemleri.
+
+393
+00:28:16,460 --> 00:28:18,460
+Arkadaşlar buradaki bütün mesele zaman ve...
+
+394
+00:28:18,460 --> 00:28:20,460
+...işlemci gücü meselesi.
+
+395
+00:28:20,460 --> 00:28:22,460
+Bütün şifreler kırılabilir ama...
+
+396
+00:28:22,460 --> 00:28:24,460
+...hepsi için gereken bir zaman var.
+
+397
+00:28:24,460 --> 00:28:26,460
+O yüzden...
+
+398
+00:28:26,460 --> 00:28:28,460
+...bugün...
+
+399
+00:28:28,460 --> 00:28:30,460
+...benim masaüstünün şifresini kıracağız.
+
+400
+00:28:30,460 --> 00:28:32,460
+3 hanelik şifresi var.
+
+401
+00:28:32,460 --> 00:28:34,460
+Onda tutulduğu bir yer var. Ona göre kıracağız.
+
+402
+00:28:34,460 --> 00:28:36,460
+Şimdi...
+
+403
+00:28:36,460 --> 00:28:38,460
+...şifre kırma araçları için...
+
+404
+00:28:38,460 --> 00:28:40,460
+...farklı bir sürü şifre kırma aracı var.
+
+405
+00:28:40,460 --> 00:28:42,460
+Her birisinin arkasında farklı bir algoritma çalışıyor.
+
+406
+00:28:42,460 --> 00:28:44,460
+Farklı bir yaklaşım var.
+
+407
+00:28:44,460 --> 00:28:46,460
+Biz bugün John Ripper'ı kullanacağız.
+
+408
+00:28:46,460 --> 00:28:48,460
+Bunlar hazır tool'lar arkadaşlar ve...
+
+409
+00:28:48,460 --> 00:28:50,460
+...bunların bir çoğunu Kale'de hazır olarak bulabilirsiniz.
+
+410
+00:28:50,460 --> 00:28:52,460
+Kale işlem sistemi kurduğunuz anda aslında...
+
+411
+00:28:52,460 --> 00:28:54,460
+...size bunların hepsi hazır olarak geliyor.
+
+412
+00:28:54,460 --> 00:28:56,460
+Ama ben bugün Ubuntu üzerinden devam ediyorum.
+
+413
+00:28:56,460 --> 00:28:58,460
+O yüzden Ubuntu üzerinden de...
+
+414
+00:28:58,460 --> 00:29:00,460
+...kuracağım John Ripper'ı.
+
+415
+00:29:00,460 --> 00:29:02,460
+Çok basit bir şekilde kuruyorsunuz.
+
+416
+00:29:02,460 --> 00:29:04,460
+Ve...
+
+417
+00:29:04,460 --> 00:29:06,460
+...çalışmayı hazır hale getiriyorsunuz.
+
+418
+00:29:06,460 --> 00:29:08,460
+Şimdi şöyle yapalım.
+
+419
+00:29:08,460 --> 00:29:10,460
+Öncelikle şu...
+
+420
+00:29:10,460 --> 00:29:12,460
+...ETC Shadow'da bulunan...
+
+421
+00:29:12,460 --> 00:29:14,460
+...şeyi bir bakalım. Ne var orada?
+
+422
+00:29:14,460 --> 00:29:16,460
+Size onu açıklayayım. Ondan sonra bugün ne yapacağımızı...
+
+423
+00:29:16,460 --> 00:29:28,579
+...göstereyim şifre kırmak adına.
+
+424
+00:29:28,579 --> 00:29:30,579
+Pardon bu folder değil.
+
+425
+00:29:30,579 --> 00:29:41,920
+Bakın arkadaşlar burada gördüğünüz gibi...
+
+426
+00:29:41,920 --> 00:29:43,920
+...benim sistemimdeki...
+
+427
+00:29:43,920 --> 00:29:45,920
+...servislerin ve kullanıcıların...
+
+428
+00:29:45,920 --> 00:29:47,920
+...kullanıcı adı...
+
+429
+00:29:47,920 --> 00:29:49,920
+...ve şifreleri var.
+
+430
+00:29:51,920 --> 00:29:53,920
+Benim ekranımı kilitlediğimde...
+
+431
+00:29:53,920 --> 00:29:55,920
+...üç karakter girdim. Belki fark etmişsinizdir ama...
+
+432
+00:29:55,920 --> 00:29:57,920
+...bakın görüyorsunuz.
+
+433
+00:29:57,920 --> 00:29:59,920
+Burada çok daha uzun bir...
+
+434
+00:29:59,920 --> 00:30:01,920
+...şifre alanı var. Burada...
+
+435
+00:30:01,920 --> 00:30:03,920
+...semi-call'ım olarak ifade edilmiş.
+
+436
+00:30:03,920 --> 00:30:05,920
+Kullanıcı adı, şifresi...
+
+437
+00:30:05,920 --> 00:30:07,920
+...id'si...
+
+438
+00:30:07,920 --> 00:30:09,920
+...vesaire vesaire ve hakları falan gibi.
+
+439
+00:30:09,920 --> 00:30:11,920
+Grupları ve hakları gibi gidiyor.
+
+440
+00:30:11,920 --> 00:30:13,920
+Gördüğünüz gibi...
+
+441
+00:30:13,920 --> 00:30:15,920
+...MySQL'de bir şifrem yok benim.
+
+442
+00:30:15,920 --> 00:30:17,920
+Buradan çok açık gözüküyor.
+
+443
+00:30:17,920 --> 00:30:19,920
+Burada benim kullandığım tabi...
+
+444
+00:30:19,920 --> 00:30:21,920
+...sanal tool'lar var. Bin kullanıcısı...
+
+445
+00:30:21,920 --> 00:30:23,920
+...var. Servisler var.
+
+446
+00:30:23,920 --> 00:30:25,920
+Diğer servisler de burada. Yani burada kullanıcı ve servislere ait...
+
+447
+00:30:27,920 --> 00:30:29,920
+...kullanıcı iletkileri ve şifreleriyle ilgili...
+
+448
+00:30:29,920 --> 00:30:31,920
+...bir takım bilgiler var. Ve bunlar...
+
+449
+00:30:31,920 --> 00:30:33,920
+...hashlenmiş haliyle tutuluyor. Şimdi biz bugün...
+
+450
+00:30:33,920 --> 00:30:35,920
+...şuradaki şu hash'ı kırmak istiyoruz.
+
+451
+00:30:35,920 --> 00:30:37,920
+Bunu nasıl kıracağız? Onu göstereceğim size.
+
+452
+00:30:37,920 --> 00:30:41,259
+Şimdi çok basit bir şekilde burada...
+
+453
+00:30:41,259 --> 00:30:43,259
+...yaptığı şey, benim bu klasörü...
+
+454
+00:30:43,259 --> 00:30:45,259
+...masa üstüne kopyalayıp, ya da sonra home dairektörümü...
+
+455
+00:30:45,259 --> 00:30:47,259
+...kopyalayıp, içeriğini yazdırıyor.
+
+456
+00:30:47,259 --> 00:30:49,259
+Ben size doğrudan içeriğini yazdırdım.
+
+457
+00:30:49,259 --> 00:30:51,259
+Buradaysa...
+
+458
+00:30:51,259 --> 00:30:55,980
+...hashlenmiş...
+
+459
+00:30:55,980 --> 00:30:57,980
+...hashlenmiş şifrenin olduğu kullanıcıyı size gösteriyorum. Onu da...
+
+460
+00:30:57,980 --> 00:30:59,980
+...göstereyim. Grip de göstermiş olurum size.
+
+461
+00:31:03,650 --> 00:31:12,079
+Ben daha önceden...
+
+462
+00:31:12,079 --> 00:31:14,079
+...shadow text'i buraya kopyalamıştım.
+
+463
+00:31:14,079 --> 00:31:16,079
+Tekrar göstereyim size.
+
+464
+00:31:18,079 --> 00:31:20,079
+Ve...
+
+465
+00:31:20,079 --> 00:31:22,079
+...hakları var mı?
+
+466
+00:31:22,079 --> 00:31:24,079
+Evet, haklarını da vermişim.
+
+467
+00:31:24,079 --> 00:31:31,230
+O zaman sudo'ya gerek yok.
+
+468
+00:31:31,230 --> 00:31:33,230
+Bakın arkadaşlar, bugün kıracağım şu aradaki...
+
+469
+00:31:33,230 --> 00:31:35,230
+...şifre. Şimdi bunun...
+
+470
+00:31:35,230 --> 00:31:37,230
+...çok basit, çok basit bir kullanım şekli var.
+
+471
+00:31:37,230 --> 00:31:39,230
+Brute Force halsi olduğu için çok fazla parametre ihtiyaç yok aslında.
+
+472
+00:31:39,230 --> 00:31:41,230
+Sadece yapacağım şey şu...
+
+473
+00:31:41,230 --> 00:31:43,230
+...sudo...
+
+474
+00:31:43,230 --> 00:31:45,230
+...john...
+
+475
+00:31:45,230 --> 00:31:47,230
+...shadow text. Aslında sudo'ya da gerek yok çünkü ben bunu...
+
+476
+00:31:47,230 --> 00:31:49,230
+...hak verdim. Sudo'yu hak vermeden...
+
+477
+00:31:49,230 --> 00:31:51,230
+...bir zaman kullanabiliyoruz. Bastığımda...
+
+478
+00:31:51,230 --> 00:31:53,230
+...bakın arkadaşlar, bütün doküman inceliyor.
+
+479
+00:31:53,230 --> 00:31:55,230
+Dokümanlardaki şu...
+
+480
+00:31:55,230 --> 00:31:57,230
+...iki noktadan sonra gelen bütün karakter inceliyor.
+
+481
+00:31:57,230 --> 00:31:59,230
+Buraya iki noktaları ayrıca...
+
+482
+00:31:59,230 --> 00:32:01,230
+...John Ripper'ın argümanlarına bakarak farklı delimetreler...
+
+483
+00:32:01,230 --> 00:32:03,230
+...seçebilirsiniz. Ve şurayı...
+
+484
+00:32:03,230 --> 00:32:05,230
+...şuranın şifre alanı olduğunu biliyor artık John.
+
+485
+00:32:05,230 --> 00:32:07,230
+Burayı hash olduğu için bunu kırmaya...
+
+486
+00:32:07,230 --> 00:32:09,230
+...çalışıyor.
+
+487
+00:32:09,230 --> 00:32:11,230
+Kırmaya çalıştıktan sonra şurada aslında...
+
+488
+00:32:11,230 --> 00:32:13,230
+...bir password bulundu diyor.
+
+489
+00:32:13,230 --> 00:32:15,230
+O da md5 ile...
+
+490
+00:32:15,230 --> 00:32:17,230
+...kriplenmiş diyor. md5 ile...
+
+491
+00:32:17,230 --> 00:32:19,230
+...kriplenmiş.
+
+492
+00:32:19,230 --> 00:32:21,230
+Ve bunu kırdım diyor. Çünkü artık...
+
+493
+00:32:21,230 --> 00:32:23,230
+...başka hash'e gerek kalmadı. Hepsini kırdım diye...
+
+494
+00:32:23,230 --> 00:32:25,230
+...bitiyor yani. Çıkışını yapıyor.
+
+495
+00:32:25,230 --> 00:32:27,230
+Tabii ki şu an kırdı ama bunları...
+
+496
+00:32:27,230 --> 00:32:29,230
+...nasıl görüntüleyeceğiz? Onu tekrar sudo.john...
+
+497
+00:32:29,230 --> 00:32:34,400
+...yazıyoruz. Kırdığı...
+
+498
+00:32:34,400 --> 00:32:36,400
+...dosyanın asmini veriyoruz.
+
+499
+00:32:36,400 --> 00:32:38,400
+Bakın arkadaşlar, buraya...
+
+500
+00:32:38,400 --> 00:32:40,400
+...aynı satırın...
+
+501
+00:32:40,400 --> 00:32:42,400
+...hashed halinin, kırılmış halini...
+
+502
+00:32:42,400 --> 00:32:44,400
+...yazdı. Benim şifrem...
+
+503
+00:32:44,400 --> 00:32:46,400
+...123'tü ve buraya 123 yazdı.
+
+504
+00:32:46,400 --> 00:32:48,400
+Tabii brute force neden ben böyle...
+
+505
+00:32:48,400 --> 00:32:50,400
+...çok hızlı çalıştı? Normalde çok daha uzun...
+
+506
+00:32:50,400 --> 00:32:52,400
+...çalışması gereken bir şey. Çünkü...
+
+507
+00:32:52,400 --> 00:32:54,400
+...ee...
+
+508
+00:32:54,400 --> 00:32:56,400
+...brute force karakter...
+
+509
+00:32:56,400 --> 00:32:58,400
+...sayısı ile alakalı olarak tek tek deniyor.
+
+510
+00:32:58,400 --> 00:33:00,400
+Dolayısıyla o kadar uzun bir şife girerseniz...
+
+511
+00:33:00,400 --> 00:33:02,400
+...o kadar denemesi uzun...
+
+512
+00:33:02,400 --> 00:33:04,400
+...sürüyecek. Ve...
+
+513
+00:33:04,400 --> 00:33:06,400
+...john the reaper yanına kullandığınız...
+
+514
+00:33:06,400 --> 00:33:08,400
+...hashed diğer yöntemler de aslında...
+
+515
+00:33:08,400 --> 00:33:10,400
+...aynı durumdan muzdarip. Yani...
+
+516
+00:33:10,400 --> 00:33:12,400
+...çok ciddi bir işlemci gücüne ihtiyaç var. Peki böyle...
+
+517
+00:33:12,400 --> 00:33:14,400
+...durumlarda ne yapabiliyor? Nasıl bir...
+
+518
+00:33:14,400 --> 00:33:16,400
+...at saldırıgarının...
+
+519
+00:33:16,400 --> 00:33:18,400
+...işini kolaylaştıracak ne tür çözümler var?
+
+520
+00:33:18,400 --> 00:33:20,400
+Bunun için...
+
+521
+00:33:20,400 --> 00:33:22,400
+...gpu kullanabiliyorsunuz arkadaşlar. Yani o...
+
+522
+00:33:22,400 --> 00:33:24,400
+...gpu'nun işlemci gücünü alıp...
+
+523
+00:33:24,400 --> 00:33:26,400
+...hash kırmaya kullanabiliyorsunuz. Biliyorsunuz...
+
+524
+00:33:26,400 --> 00:33:28,400
+...benzer mantık bitcoin madenemede de...
+
+525
+00:33:28,400 --> 00:33:30,400
+...kullanılıyor. Yani gpu'ların o...
+
+526
+00:33:30,400 --> 00:33:32,400
+...yüksek işlem güçleri, matematik işlemleri...
+
+527
+00:33:32,400 --> 00:33:34,400
+...haritmetik işlemleri hızlı yapabilmesini...
+
+528
+00:33:34,400 --> 00:33:36,400
+...ee...
+
+529
+00:33:36,400 --> 00:33:38,400
+...aslında bitcoinlerdeki hashleri çözmek için...
+
+530
+00:33:38,400 --> 00:33:40,400
+...kullanılıyor değil mi? Aynı mantık burada da onun için...
+
+531
+00:33:40,400 --> 00:33:42,400
+...geçerli. Yani sizin bilirsiniz güçlü bir gpu varsa veya...
+
+532
+00:33:42,400 --> 00:33:44,400
+...ee...
+
+533
+00:33:44,400 --> 00:33:46,400
+...güçlü bir gpu mimarisine sahip...
+
+534
+00:33:46,400 --> 00:33:48,400
+...başka tür bir işlemci varsa...
+
+535
+00:33:48,400 --> 00:33:50,400
+...siz bunu...
+
+536
+00:33:50,400 --> 00:33:52,400
+...john ve diğer tool'lar içinde kullanabiliyorsunuz.
+
+537
+00:33:52,400 --> 00:33:54,400
+Bunlar için yapmanız gereken tek şey...
+
+538
+00:33:54,400 --> 00:33:56,400
+...john'un üzerine argüman verip...
+
+539
+00:33:56,400 --> 00:33:58,400
+...device tanımlamanız. Tabi ben bu kadar çok detaylı...
+
+540
+00:33:58,400 --> 00:34:00,400
+...alatmayacağım. Bunu çok merak ediyorsanız kendiniz yapabilirsiniz.
+
+541
+00:34:00,400 --> 00:34:02,400
+Böylece 3-4 günde...
+
+542
+00:34:02,400 --> 00:34:04,400
+...kıracağınız bir şifreyi...
+
+543
+00:34:04,400 --> 00:34:06,400
+...saatler içerisinde, 2-3 saat içinde kırabiliyorsunuz.
+
+544
+00:34:06,400 --> 00:34:08,400
+Ben kolaylık olması açısından...
+
+545
+00:34:08,400 --> 00:34:10,400
+...kısa şifreyle bir şifre...
+
+546
+00:34:10,400 --> 00:34:12,400
+...girdim. Siz belki...
+
+547
+00:34:12,400 --> 00:34:14,400
+...bu benim kurduğum uygulamanın...
+
+548
+00:34:14,400 --> 00:34:16,400
+...aynısını kurarak buradaki hashleri çözmeye...
+
+549
+00:34:16,400 --> 00:34:18,400
+...çalışabilirsiniz. Tamam mı arkadaşlar?
+
+550
+00:34:18,400 --> 00:34:20,400
+Ee...
+
+551
+00:34:20,400 --> 00:34:22,400
+...şimdi chatte birtakım...
+
+552
+00:34:22,400 --> 00:34:24,400
+...sorular var.
+
+553
+00:34:24,400 --> 00:34:26,400
+Onlara bakıyorum.
+
+554
+00:34:26,400 --> 00:34:28,400
+Sistem ayarlarından 88'e...
+
+555
+00:34:28,400 --> 00:34:30,400
+...box'i kurmanız lazım. Evet onu yaptık zaten.
+
+556
+00:34:30,400 --> 00:34:36,849
+Olabilir.
+
+557
+00:34:36,849 --> 00:34:40,380
+Olabilir. Zap.
+
+558
+00:34:40,380 --> 00:34:42,380
+Olabilir. Yani onu siz bakarsınız arkadaşlar.
+
+559
+00:34:42,380 --> 00:34:44,380
+Ben olabildiğince temel...
+
+560
+00:34:44,380 --> 00:34:46,380
+...gitmeye çalışıyorum.
+
+561
+00:34:46,380 --> 00:34:48,380
+Sitenin adresini nerede yazıyoruz?
+
+562
+00:34:48,380 --> 00:34:50,380
+Sitenin adresini yazmıyorsun.
+
+563
+00:34:50,380 --> 00:34:52,380
+Sitenin browser'ından...
+
+564
+00:34:52,380 --> 00:34:54,380
+...çıkan bütün sitelerin...
+
+565
+00:34:54,380 --> 00:34:56,380
+...aslında burpe düşüyor. Yani buraya sadece...
+
+566
+00:34:56,380 --> 00:35:04,750
+...benim yazdıklarım gitmiyor. Örneğin...
+
+567
+00:35:04,750 --> 00:35:08,219
+...pardon. Ben de X'e...
+
+568
+00:35:08,219 --> 00:35:22,829
+...gittim. Gittik yalnız. Yanlışlıkla...
+
+569
+00:35:22,829 --> 00:35:24,829
+...gittik bir daha. Fazla forward yaptım.
+
+570
+00:35:24,829 --> 00:35:33,199
+Fazla forward...
+
+571
+00:35:33,199 --> 00:35:35,199
+...yapıyorum. Yani başka bir siteye gittiniz de...
+
+572
+00:35:35,199 --> 00:35:37,199
+...bu şeye düşer arkadaşlar.
+
+573
+00:35:37,199 --> 00:35:39,199
+Tabii benim site içindeyim. Yani...
+
+574
+00:35:39,199 --> 00:35:41,199
+...browser'ınızdan çıkan bütün istekleriniz...
+
+575
+00:35:41,199 --> 00:35:43,199
+...önce proxy'ye düşüyor. Ondan sonra dışarı...
+
+576
+00:35:43,199 --> 00:35:45,199
+...çıkıyor. Yani siz proxy kullanarak...
+
+577
+00:35:45,199 --> 00:35:47,199
+...browser'dan gönderdiniz.
+
+578
+00:35:47,199 --> 00:35:49,199
+Her şeyi kontrol edebilirsiniz.
+
+579
+00:35:49,199 --> 00:35:51,199
+Proxy, white shark kullanabilirsiniz.
+
+580
+00:35:51,199 --> 00:35:53,199
+White shark da aslında yani şöyle düşünün...
+
+581
+00:35:53,199 --> 00:35:55,199
+...arkadaşlar bunu çok basit bir şekilde...
+
+582
+00:35:55,199 --> 00:36:04,590
+...şöyle yeni bir sayfa açayım.
+
+583
+00:36:04,590 --> 00:36:06,590
+OSI katmanları var biliyorsunuz ki.
+
+584
+00:36:06,590 --> 00:36:08,590
+Yukarıda application layer ile başlıyor.
+
+585
+00:36:08,590 --> 00:36:10,590
+Böyle sadece baş harflerini yazayım.
+
+586
+00:36:10,590 --> 00:36:12,590
+Sonra session, presentation...
+
+587
+00:36:12,590 --> 00:36:14,590
+...network,
+
+588
+00:36:14,590 --> 00:36:16,590
+...transport layer değil mi? Böyle gidiyor.
+
+589
+00:36:16,590 --> 00:36:18,590
+Data link layer...
+
+590
+00:36:18,590 --> 00:36:20,590
+...en altta da physical layer var. Böyle...
+
+591
+00:36:20,590 --> 00:36:22,590
+...gidiyor bunlar. Karşıda...
+
+592
+00:36:22,590 --> 00:36:24,590
+...web sunucusu var. Burası...
+
+593
+00:36:24,590 --> 00:36:27,840
+...web olsun. Şöyle...
+
+594
+00:36:27,840 --> 00:36:32,179
+...burası web server...
+
+595
+00:36:32,179 --> 00:36:34,179
+...makinesi.
+
+596
+00:36:34,179 --> 00:36:37,460
+Burası da client olsun.
+
+597
+00:36:37,460 --> 00:36:39,460
+Siz buradan şuraya inerken...
+
+598
+00:36:39,460 --> 00:36:41,460
+...ve buradan buraya giderken...
+
+599
+00:36:41,460 --> 00:36:43,460
+...her şeyi değiştirebiliyorsunuz.
+
+600
+00:36:43,460 --> 00:36:45,460
+Siz şu andaki her şeyi kontrol edebiliyorsunuz.
+
+601
+00:36:45,460 --> 00:36:47,460
+Bütün paketleri. A'dan Z'ye.
+
+602
+00:36:47,460 --> 00:36:49,460
+Application layer, HTTP protokolümüz var değil mi?
+
+603
+00:36:49,460 --> 00:36:51,460
+HTTP application layer.
+
+604
+00:36:51,460 --> 00:36:53,460
+Bunu kontrol edebiliyorsunuz.
+
+605
+00:36:53,460 --> 00:36:55,460
+Aradaki diğer paketleri de kontrol edebilirsiniz.
+
+606
+00:36:55,460 --> 00:36:57,460
+TCP, IP kontrol edebilirsiniz.
+
+607
+00:36:57,460 --> 00:36:59,460
+Network'ü kontrol edebilirsiniz.
+
+608
+00:36:59,460 --> 00:37:01,460
+Data link'deki device'ı kontrol edebilirsiniz.
+
+609
+00:37:01,460 --> 00:37:03,460
+Çünkü burası sizin domeniniz.
+
+610
+00:37:03,460 --> 00:37:05,460
+Burası benim şu an bağlı olduğum sanal makine.
+
+611
+00:37:05,460 --> 00:37:07,460
+Burada her şeyi kontrol edebilirsiniz.
+
+612
+00:37:07,460 --> 00:37:09,460
+Buradan web sınıfına gidecek olan her şeyi...
+
+613
+00:37:09,460 --> 00:37:11,460
+...siz belirleyebilirsiniz.
+
+614
+00:37:11,460 --> 00:37:13,460
+Her şeyi yazabilirsiniz. Her türlü saldırıyı, her türlü...
+
+615
+00:37:13,460 --> 00:37:15,460
+...isteyi gönderebilirsiniz.
+
+616
+00:37:15,460 --> 00:37:17,460
+Tamamen özlüyorsunuz. Önemli olan şey...
+
+617
+00:37:17,460 --> 00:37:19,460
+...burada savunma yapmanız.
+
+618
+00:37:19,460 --> 00:37:21,460
+Burada gelebilecek olan...
+
+619
+00:37:21,460 --> 00:37:23,460
+...istekleri değerlendirmeniz.
+
+620
+00:37:23,460 --> 00:37:25,460
+Dolayısıyla sizin burada yapacağınız her şeyi...
+
+621
+00:37:25,460 --> 00:37:27,460
+...kontrol edebilirsiniz. Bu ister...
+
+622
+00:37:27,460 --> 00:37:29,460
+...bir siteden gelecek istek olsun. İsterseniz...
+
+623
+00:37:29,460 --> 00:37:31,460
+...başka siteyi göndereceğiz bir istek olsun.
+
+624
+00:37:31,460 --> 00:37:33,460
+Hiç önemli değil. Hepsini burada değiştirebiliyorsunuz.
+
+625
+00:37:33,460 --> 00:37:35,460
+İster verb kullanırsınız.
+
+626
+00:37:35,460 --> 00:37:37,460
+Benim kullandığım proxy bu arada.
+
+627
+00:37:37,460 --> 00:37:42,079
+Sanırım...
+
+628
+00:37:44,079 --> 00:37:46,079
+...WideShark'tı galiba.
+
+629
+00:37:46,079 --> 00:37:48,079
+Onda da şey yapabiliyorsunuz.
+
+630
+00:37:48,079 --> 00:37:51,900
+WideShark.
+
+631
+00:37:51,900 --> 00:37:53,900
+Bunda da paketleri kontrol edebiliyorsunuz.
+
+632
+00:37:53,900 --> 00:37:55,900
+Yani TCP'sine kadar.
+
+633
+00:37:55,900 --> 00:37:57,900
+Her şeyini kontrol edebiliyorsunuz.
+
+634
+00:37:57,900 --> 00:37:59,900
+Siz şu alanla...
+
+635
+00:37:59,900 --> 00:38:01,900
+...her şeyi yapabilirsiniz.
+
+636
+00:38:03,900 --> 00:38:05,900
+O yüzden hiç önemi yok.
+
+637
+00:38:05,900 --> 00:38:07,900
+Her şeyi kontrol edebiliyorsunuz.
+
+638
+00:38:07,900 --> 00:38:11,380
+JohnDripper'da böyle arkadaşlar.
+
+639
+00:38:11,380 --> 00:38:13,380
+Bunun dışında diğer yöntemler de var.
+
+640
+00:38:13,380 --> 00:38:17,900
+Şifreyi kırdığımızı gösterdik.
+
+641
+00:38:17,900 --> 00:38:19,900
+Sunumumuz burada...
+
+642
+00:38:19,900 --> 00:38:23,659
+...bitiyor arkadaşlar.
+
+643
+00:38:23,659 --> 00:38:25,659
+Size orta seviyeye anlatmıyoruz.
+
+644
+00:38:25,659 --> 00:38:27,659
+High level anlatmayacağım.
+
+645
+00:38:27,659 --> 00:38:29,659
+High level'a kendinize bakarsınız.
+
+646
+00:38:29,659 --> 00:38:31,659
+Belki ya da...
+
+647
+00:38:31,659 --> 00:38:33,659
+...uygulama olarak veririz.
+
+648
+00:38:33,659 --> 00:38:35,659
+Ödev olarak verebiliriz.
+
+649
+00:38:35,659 --> 00:38:37,659
+Çok bir şey değişmiyor arkadaşlar high'da.
+
+650
+00:38:37,659 --> 00:38:39,659
+Sadece...
+
+651
+00:38:39,659 --> 00:38:41,659
+...yine WebSuite üzerinden devam ediyor high'da.
+
+652
+00:38:41,659 --> 00:38:43,659
+Belki anlatırım bilmiyorum.
+
+653
+00:38:43,659 --> 00:38:45,659
+Şu an bu sunuma koymadım bunu.
+
+654
+00:38:45,659 --> 00:38:47,659
+Önümüzdeki haftalarda...
+
+655
+00:38:47,659 --> 00:38:49,659
+...bakacağız.
+
+656
+00:38:49,659 --> 00:38:51,659
+Şu anda bu ikisini...
+
+657
+00:38:51,659 --> 00:38:53,659
+...anlattım ve böylece siz...
+
+658
+00:38:53,659 --> 00:38:55,659
+...iki şey yapabiliyor oldunuz artık.
+
+659
+00:38:55,659 --> 00:38:58,940
+Birincisi...
+
+660
+00:38:58,940 --> 00:39:00,940
+...buyrun.
+
+661
+00:39:00,940 --> 00:39:02,940
+Hocam high level injection kısmında...
+
+662
+00:39:02,940 --> 00:39:04,940
+...nasıl bir saldırı gerçekleşiyor?
+
+663
+00:39:04,940 --> 00:39:06,940
+Nasıl kırılabiliyor hocam?
+
+664
+00:39:06,940 --> 00:39:08,940
+Yine WebSuite üzerinden kırabiliyorsunuz.
+
+665
+00:39:08,940 --> 00:39:10,940
+O da yine WebSuite'de engellenebilir bir şey.
+
+666
+00:39:10,940 --> 00:39:12,940
+WebSuite kullanarak yine high level saldırı yapabiliyorsunuz.
+
+667
+00:39:12,940 --> 00:39:14,940
+Yine şuna ihtiyacınız olacak. Şu uygulama ihtiyacınız olacak.
+
+668
+00:39:14,940 --> 00:39:16,940
+Tamam?
+
+669
+00:39:16,940 --> 00:39:18,940
+Geçen sene anlatmıştım.
+
+670
+00:39:18,940 --> 00:39:20,940
+Geçen sene anlatmıştım sanırım.
+
+671
+00:39:20,940 --> 00:39:22,940
+Ama bu sene hatırlamıyorum...
+
+672
+00:39:22,940 --> 00:39:24,940
+...high level'da nasıl bir savunma geliyordu diye.
+
+673
+00:39:24,940 --> 00:39:26,940
+Belki önümüzdeki hafta anlatabilirim.
+
+674
+00:39:26,940 --> 00:39:28,940
+Emin değilim şu anda. Tamam?
+
+675
+00:39:28,940 --> 00:39:30,940
+Bu sunuma sadece John the Ripper'ı koymak istedim.
+
+676
+00:39:30,940 --> 00:39:32,940
+Şu anda siz...
+
+677
+00:39:32,940 --> 00:39:34,940
+...SQL injection autosavirleri...
+
+678
+00:39:34,940 --> 00:39:36,940
+...nasıl yapıldığını biliyorsunuz ve...
+
+679
+00:39:36,940 --> 00:39:38,940
+...kullanış şifrelerine erişebildiğinizi gördük.
+
+680
+00:39:38,940 --> 00:39:40,940
+John the Ripper'la da o şifre hash'leri kırabiliyorsunuz.
+
+681
+00:39:40,940 --> 00:39:42,940
+Artık yani...
+
+682
+00:39:42,940 --> 00:39:44,940
+...biraz zaman alacak tabii ki. Oradaki şifreler 5-6 haneli.
+
+683
+00:39:44,940 --> 00:39:46,940
+Biraz daha uzun sürecek.
+
+684
+00:39:46,940 --> 00:39:48,940
+Şu ikisini kombine bir şekilde kullanılarak...
+
+685
+00:39:48,940 --> 00:39:50,940
+...şu anda sisteme admin olarak girebiliyor olacaksınız.
+
+686
+00:39:52,940 --> 00:39:54,940
+Öbür türlü sadece database'e girebiliyordunuz ama...
+
+687
+00:39:54,940 --> 00:39:56,940
+...şu şifreleri kırarak aynı zamanda admin olarak da...
+
+688
+00:39:56,940 --> 00:39:58,940
+...sisteme girebilirsiniz.
+
+689
+00:39:58,940 --> 00:40:00,940
+Benim bugün anlatacaklarım bu kadar.
+
+690
+00:40:02,940 --> 00:40:04,940
+Anlamadığınız bir kısım var mı?
+
+691
+00:40:04,940 --> 00:40:06,940
+Merak ettiğiniz başka bir kısım var mı arkadaşlar?
+
+692
+00:40:06,940 --> 00:40:14,059
+High level'daki input alma yöntemi...
+
+693
+00:40:14,059 --> 00:40:16,059
+...göstereyim.
+
+694
+00:40:16,059 --> 00:40:18,059
+Merak ediyorsanız göstereyim ama girmeyeceğiz çok fazla arkadaşlar.
+
+695
+00:40:20,059 --> 00:40:23,659
+Şöyle şuradan...
+
+696
+00:40:23,659 --> 00:40:25,659
+...kurup inceleyebilirsiniz uygulamayı.
+
+697
+00:40:25,659 --> 00:40:27,659
+İlk slide'da hatırlarsanız...
+
+698
+00:40:27,659 --> 00:40:29,659
+...nasıl kurulacağını da göstermiştim bu...
+
+699
+00:40:29,659 --> 00:40:31,659
+...kullandığımız...
+
+700
+00:40:31,659 --> 00:40:33,659
+...saldırı...
+
+701
+00:40:33,659 --> 00:40:35,659
+...ya duyarlı için. Buraya basınca bir pop-up...
+
+702
+00:40:35,659 --> 00:40:39,360
+...açılıyor arkadaşlar.
+
+703
+00:40:39,360 --> 00:40:44,269
+Buraya basınca...
+
+704
+00:40:44,269 --> 00:40:46,269
+...böyle pop-up açılıyor gördüğünüz gibi.
+
+705
+00:40:46,269 --> 00:40:48,269
+Hiç user-friendly bir şey değil...
+
+706
+00:40:48,269 --> 00:40:50,269
+...gördüğünüz gibi.
+
+707
+00:40:50,269 --> 00:40:52,269
+Aileleştirmek için böyle bir ekranın gelmesi.
+
+708
+00:40:52,269 --> 00:40:54,269
+Gördüğünüz gibi bir tane session oluşturuyor...
+
+709
+00:40:54,269 --> 00:40:56,269
+...ve session üzerinden gidiyor.
+
+710
+00:40:56,269 --> 00:41:02,369
+Bakalım istiyorsanız izleyeceğim.
+
+711
+00:41:02,369 --> 00:41:13,940
+Bunda her şey session üzerinden yürüyormuş.
+
+712
+00:41:13,940 --> 00:41:18,849
+Açılmış arkada kalmış.
+
+713
+00:41:18,849 --> 00:41:20,849
+Bir session var. Parametre session üzerinden...
+
+714
+00:41:20,849 --> 00:41:22,849
+...açıyor. Evet bir nevi usis gibi...
+
+715
+00:41:22,849 --> 00:41:24,849
+...doğru. Pop-up açılıyor.
+
+716
+00:41:26,849 --> 00:41:28,849
+Sorunun içerisine yerleştiriyor ama...
+
+717
+00:41:28,849 --> 00:41:30,849
+...gördüğünüz gibi sadece session üzerinden...
+
+718
+00:41:30,849 --> 00:41:32,849
+...göndermesi dışında hiçbir şey yok yani...
+
+719
+00:41:32,849 --> 00:41:34,849
+...ekstra. Burada olması gereken şey burada...
+
+720
+00:41:34,849 --> 00:41:36,849
+...database objelerinin buraya taşınıp...
+
+721
+00:41:36,849 --> 00:41:38,849
+...burada kontrolüyle gerçekleşmesi. Onun içinde...
+
+722
+00:41:38,849 --> 00:41:40,849
+...PDO'lar falan var. O da impossible'a geliyor...
+
+723
+00:41:40,849 --> 00:41:42,849
+...sanırım.
+
+724
+00:41:42,849 --> 00:41:44,849
+En net çözüm o çünkü.
+
+725
+00:41:44,849 --> 00:41:49,119
+PHP'de PDO'du galiba emin değilim.
+
+726
+00:41:49,119 --> 00:41:51,119
+Bakacağız şimdi.
+
+727
+00:41:51,119 --> 00:41:53,119
+Bakın gördüğünüz gibi...
+
+728
+00:41:53,119 --> 00:41:55,119
+...impossible'da o session'ı...
+
+729
+00:41:55,119 --> 00:41:57,119
+...kaldırmışlar. Yani ne kadar gereksiz olduğunu anlamışlar.
+
+730
+00:41:57,119 --> 00:41:59,119
+Hem kullanıcıda olsun bir şey de değil.
+
+731
+00:41:59,119 --> 00:42:01,119
+Gördüğünüz gibi burada bildiğimiz get de geliyor...
+
+732
+00:42:01,119 --> 00:42:03,119
+...artık. Çünkü hiçbir çözüm değil arkadaşlar.
+
+733
+00:42:03,119 --> 00:42:05,119
+High level'la çözüm şey değil.
+
+734
+00:42:05,119 --> 00:42:07,119
+Yine client tarafında bir çözüm.
+
+735
+00:42:07,119 --> 00:42:09,119
+Yani sizin gördüğünüz görsel arayüzle...
+
+736
+00:42:09,119 --> 00:42:11,119
+...bir de yapılan bir değişiklik. Ama...
+
+737
+00:42:11,119 --> 00:42:13,119
+...bakın burada değişiklik artık web sunucunda yapılıyor.
+
+738
+00:42:13,119 --> 00:42:15,119
+Yapılan şey...
+
+739
+00:42:15,119 --> 00:42:17,119
+...database objelerini...
+
+740
+00:42:17,119 --> 00:42:19,119
+...şeye taşımak. Store sunucuya taşımak.
+
+741
+00:42:19,119 --> 00:42:21,119
+Map etmek. Ve burada kontrolünü sağlamak.
+
+742
+00:42:21,119 --> 00:42:23,119
+Burada kontrolü sağladık. Öyle database'e...
+
+743
+00:42:23,119 --> 00:42:25,119
+...gidiyorsunuz. Dolayısıyla...
+
+744
+00:42:25,119 --> 00:42:27,119
+...bu size...
+
+745
+00:42:27,119 --> 00:42:29,119
+...çözüm sağlamış oluyor.
+
+746
+00:42:29,119 --> 00:42:31,119
+...
+
+747
+00:42:31,119 --> 00:42:33,119
+...
+
+748
+00:42:33,119 --> 00:42:35,119
+...çözüm sağlamış oluyor. Bahsettiğim...
+
+749
+00:42:35,119 --> 00:42:37,119
+...PDO bu arkadaşlar. Tamam.
+
+750
+00:42:37,119 --> 00:42:39,119
+Bu objenin olması gerekiyor.
+
+751
+00:42:39,119 --> 00:42:41,119
+Bu data object modeller.
+
+752
+00:42:41,119 --> 00:42:43,119
+Bunları modern...
+
+753
+00:42:43,119 --> 00:42:45,119
+...mimarilerde...
+
+754
+00:42:45,119 --> 00:42:47,119
+...siz de MVVM'de gördüğünüz VIV modeller...
+
+755
+00:42:47,119 --> 00:42:49,119
+...veya database modeller...
+
+756
+00:42:49,119 --> 00:42:51,119
+...şeklinde görebilirsiniz.
+
+757
+00:42:51,119 --> 00:42:53,119
+Sadece...
+
+758
+00:42:53,119 --> 00:42:55,119
+...database'in modelleri...
+
+759
+00:42:55,119 --> 00:42:57,119
+...web sunucunda olmuyor. En azından da bazı durumlarda...
+
+760
+00:42:57,119 --> 00:42:59,119
+...client'in...
+
+761
+00:42:59,119 --> 00:43:01,119
+...client tarafında tasarlandığınız şeylerin de...
+
+762
+00:43:01,119 --> 00:43:03,119
+...objeleri...
+
+763
+00:43:03,119 --> 00:43:05,119
+...web sunucunda oluyor. Ama bu tamamen...
+
+764
+00:43:05,119 --> 00:43:07,119
+...moduları tesis sağlamak için, dependency injection sağlamak için...
+
+765
+00:43:07,119 --> 00:43:09,119
+...yapılmış bir yaklaşım. Siber güvenlikle...
+
+766
+00:43:09,119 --> 00:43:11,119
+...bir alakası yok. Ama öbür yandan...
+
+767
+00:43:11,119 --> 00:43:13,119
+...ilk bahsettiğimiz database'deki objelerin...
+
+768
+00:43:13,119 --> 00:43:15,119
+...web sunucunda gösterilmesi tamamen...
+
+769
+00:43:15,119 --> 00:43:17,119
+...süper saldırılara karşı...
+
+770
+00:43:17,119 --> 00:43:19,119
+...daha doğrusu SQL injection'a karşı...
+
+771
+00:43:19,119 --> 00:43:21,119
+...bir seviye önlem sağlamak için...
+
+772
+00:43:21,119 --> 00:43:23,119
+...en iyi önlemi sağlamak için...
+
+773
+00:43:23,119 --> 00:43:25,119
+...yapılan bir çözüm.
+
+774
+00:43:25,119 --> 00:43:27,119
+Burada da yapılan çözüm bu.
+
+775
+00:43:27,119 --> 00:43:29,119
+Impossible için.
+
+776
+00:43:29,119 --> 00:43:32,940
+Bunları kendiniz de inceleyebilirsiniz.
+
+777
+00:43:32,940 --> 00:43:34,940
+Kurcalayabilirsiniz. Tamamen freesiniz.
+
+778
+00:43:34,940 --> 00:43:36,940
+Burada gördüğünüz şu check token'lar...
+
+779
+00:43:36,940 --> 00:43:38,940
+...anti-CSRF, cross site request...
+
+780
+00:43:38,940 --> 00:43:40,940
+...foce token'ları. Bizim SQL injection'la...
+
+781
+00:43:40,940 --> 00:43:42,940
+...arakası yok. Tamam mı? Şu...
+
+782
+00:43:42,940 --> 00:43:44,940
+...ve şu en alttaki kısmın...
+
+783
+00:43:44,940 --> 00:43:46,940
+...her sayfaya girdiğinizde...
+
+784
+00:43:46,940 --> 00:43:48,940
+...yeni bir request oluşturuyor ki...
+
+785
+00:43:48,940 --> 00:43:50,940
+...forgery yapılmasın. Bunlar için...
+
+786
+00:43:50,940 --> 00:43:52,940
+...bunu birçok...
+
+787
+00:43:52,940 --> 00:43:54,940
+...farklı framework'ta örneğin...
+
+788
+00:43:54,940 --> 00:43:56,940
+....NET MWC'de...
+
+789
+00:43:56,940 --> 00:43:58,940
+...request...
+
+790
+00:43:58,940 --> 00:44:00,940
+...forgery token diye görürsünüz.
+
+791
+00:44:00,940 --> 00:44:02,940
+Farklı token isimleri var.
+
+792
+00:44:02,940 --> 00:44:04,940
+Burada bu şekilde kontrol ediyormuş.
+
+793
+00:44:04,940 --> 00:44:06,940
+Session token demiş mesela burada.
+
+794
+00:44:06,940 --> 00:44:08,940
+ASV.NET'de bu...
+
+795
+00:44:08,940 --> 00:44:10,940
+...forgery request token diye geçiyor.
+
+796
+00:44:12,940 --> 00:44:14,940
+Dolayısıyla farklı farklı isimleri var ama...
+
+797
+00:44:14,940 --> 00:44:16,940
+...amacı CSRF token'ı...
+
+798
+00:44:16,940 --> 00:44:18,940
+...oluşturmak. Yani bunları...
+
+799
+00:44:18,940 --> 00:44:20,940
+...biraz da göreceksiniz zaten. Eğer yarın bir gün...
+
+800
+00:44:20,940 --> 00:44:22,940
+...bankada veya ne bileyim...
+
+801
+00:44:22,940 --> 00:44:24,940
+...herhangi bir kurumda...
+
+802
+00:44:24,940 --> 00:44:26,940
+...çalıştığınızda...
+
+803
+00:44:26,940 --> 00:44:28,940
+...web uygulaması veya mobil uygulama geliştirdiğinizde...
+
+804
+00:44:28,940 --> 00:44:30,940
+...muhtemelen bunları...
+
+805
+00:44:30,940 --> 00:44:32,940
+...göreceksiniz zaten. Database, object model...
+
+806
+00:44:32,940 --> 00:44:34,940
+...neler, ne işe yarar. Onların...
+
+807
+00:44:34,940 --> 00:44:36,940
+...kullanım maçlarının bir tanesi bu. Gördüğünüz şeyleri...
+
+808
+00:44:36,940 --> 00:44:38,940
+...anlamlandırmak açına...
+
+809
+00:44:38,940 --> 00:44:40,940
+...neden böyle bir şey var dememeniz adına. İşte bu yüzden var.
+
+810
+00:44:40,940 --> 00:44:42,940
+Birçok şey...
+
+811
+00:44:42,940 --> 00:44:44,940
+...bu yüzden var arkadaşlar.
+
+812
+00:44:44,940 --> 00:44:46,940
+Başka...
+
+813
+00:44:46,940 --> 00:44:55,179
+...soruç olan var mı?
+
+814
+00:44:55,179 --> 00:44:57,179
+Hocam, database, object model burada her bir SQL...
+
+815
+00:44:57,179 --> 00:44:59,179
+...sorgusunu bir şeye mi çeviriyor?
+
+816
+00:44:59,179 --> 00:45:01,179
+Yani orada bir ayırıyor mu hocam?
+
+817
+00:45:01,179 --> 00:45:03,179
+Şöyle düşün. Şöyle düşün.
+
+818
+00:45:03,179 --> 00:45:05,179
+Temel prensip olarak anladım sana. Senin database'de...
+
+819
+00:45:05,179 --> 00:45:07,179
+...tabuların var.
+
+820
+00:45:07,179 --> 00:45:09,179
+Tamam mı? Tabuların içerisinde kolonların...
+
+821
+00:45:09,179 --> 00:45:11,179
+...var değil mi? O database'deki tabuların...
+
+822
+00:45:11,179 --> 00:45:13,179
+...birer class gibi düşün.
+
+823
+00:45:13,179 --> 00:45:15,179
+Kolonların da birer...
+
+824
+00:45:15,179 --> 00:45:17,179
+...class'ın propertiesi gibi düşün. Sen...
+
+825
+00:45:17,179 --> 00:45:19,179
+...map ediyorsun ikisini birbirine. Birkaç şey sağlamış...
+
+826
+00:45:19,179 --> 00:45:21,179
+...oluyorsun aynı anda. Birincisi...
+
+827
+00:45:21,179 --> 00:45:23,179
+...web sunucunla database birbirini tanımış oluyor.
+
+828
+00:45:23,179 --> 00:45:25,179
+Birbirine bir mapping olmuş oluyor arada.
+
+829
+00:45:25,179 --> 00:45:27,179
+Ve sen bir şey değiştirdiğin zaman, örneğin...
+
+830
+00:45:27,179 --> 00:45:29,179
+...web sunucu bir şey değiştirdiğinde database'i değiştirmek zorunda kalıyorsun.
+
+831
+00:45:29,179 --> 00:45:31,179
+İkinci bir artısı şu.
+
+832
+00:45:31,179 --> 00:45:33,179
+Database'den web sunucunun haberi olmuş oluyor.
+
+833
+00:45:33,179 --> 00:45:35,179
+Yani sen bir isteği...
+
+834
+00:45:35,179 --> 00:45:37,179
+...database'de oradan paslamak yerine...
+
+835
+00:45:37,179 --> 00:45:39,179
+...web sunucuda kontrol edebilme imkanı buluyorsun. Çünkü database'de...
+
+836
+00:45:39,179 --> 00:45:41,179
+...ne olduğunu biliyorsun. Ve bu sana savunma sağlıyor.
+
+837
+00:45:41,179 --> 00:45:43,179
+Tamam mı? Sen buna göre...
+
+838
+00:45:43,179 --> 00:45:45,179
+...web sunucundan istekleri doğrudan...
+
+839
+00:45:45,179 --> 00:45:47,179
+...veri tabarına göndermeden önce...
+
+840
+00:45:47,179 --> 00:45:49,179
+...incelip bakabiliyorsun. Bu sorgu çalışır mı?
+
+841
+00:45:49,179 --> 00:45:51,179
+Hata döner mi? Fark ettiyseniz...
+
+842
+00:45:51,179 --> 00:45:53,179
+...biz buraya 1, 2, 3, 5 yazdığımız zaman şu şekilde...
+
+843
+00:45:53,179 --> 00:45:55,179
+...ya şu an impossible'da...
+
+844
+00:45:55,179 --> 00:46:07,969
+...battık. Şöyle...
+
+845
+00:46:07,969 --> 00:46:09,969
+...hemen hemen göstereceğim.
+
+846
+00:46:09,969 --> 00:46:11,969
+Şurayı low'a çeviriyorum tekrar.
+
+847
+00:46:11,969 --> 00:46:19,340
+Biz böyle bir şey yaptığımızda...
+
+848
+00:46:19,340 --> 00:46:21,340
+...bizde genel hata MySQL. Yani...
+
+849
+00:46:21,340 --> 00:46:23,340
+...bizim sunucumuz hiçbir şekilde kontrol edemiyor ki.
+
+850
+00:46:23,340 --> 00:46:25,340
+Yani ne var burada, bu sorgu çalışır mı...
+
+851
+00:46:25,340 --> 00:46:27,340
+...çalışmalarımızı kontrol etmiyor.
+
+852
+00:46:27,340 --> 00:46:29,340
+Biz oradan database'e paslıyoruz.
+
+853
+00:46:29,340 --> 00:46:31,340
+Database'de hasta alıyoruz ekranda.
+
+854
+00:46:31,340 --> 00:46:33,340
+Bu kötü bir şey. Web sunucunda gerek...
+
+855
+00:46:33,340 --> 00:46:35,340
+...kontrol yapılmadığını gösterememiş. Ama siz de...
+
+856
+00:46:35,340 --> 00:46:37,340
+...şekme durulursa, sizin böyle bir tablonuz var mı?
+
+857
+00:46:37,340 --> 00:46:39,340
+Böyle bir kolonu var mı?
+
+858
+00:46:39,340 --> 00:46:41,340
+Her şeyi bilmiş oluyorsunuz web sunucunda ve kontrol ederseniz...
+
+859
+00:46:41,340 --> 00:46:43,340
+...kontrolü sağlayabiliyorsunuz. Tamam mı?
+
+860
+00:46:43,340 --> 00:46:47,170
+Bu bunu sağlıyor. Tamamdır hocam.
+
+861
+00:46:47,170 --> 00:46:53,650
+Teşekkürler. Evet. Gerekli...
+
+862
+00:46:53,650 --> 00:46:55,650
+...şeyleri yaparsanız arkadaşlar MySQL...
+
+863
+00:46:55,650 --> 00:46:57,650
+...PDO'ya bakabilirsiniz. Tamam mı? İnternette...
+
+864
+00:46:57,650 --> 00:46:59,650
+...PHP için en azından böyle.
+
+865
+00:46:59,650 --> 00:47:01,650
+Zaten...
+
+866
+00:47:01,650 --> 00:47:03,650
+...diğer .NET'te ya da Java'da...
+
+867
+00:47:03,650 --> 00:47:05,650
+...bunlar için şeyler artık zorunluluk yani...
+
+868
+00:47:05,650 --> 00:47:07,650
+...siz artık görmüyorsunuz bile. Örneğin...
+
+869
+00:47:07,650 --> 00:47:09,650
+...Sprite yazıyorsunuz Java'da. Bunlarla hiç işiniz olmuyor.
+
+870
+00:47:09,650 --> 00:47:11,650
+Bunlar artık tamamen implement edilmiş.
+
+871
+00:47:11,650 --> 00:47:13,650
+Böyle paket şeklinde size geliyor.
+
+872
+00:47:13,650 --> 00:47:15,650
+Sadece değiştirmek istediğiniz kısımları...
+
+873
+00:47:15,650 --> 00:47:17,650
+...değiştiriyorsunuz.
+
+874
+00:47:17,650 --> 00:47:19,650
+Yani artık birçok şey...
+
+875
+00:47:19,650 --> 00:47:21,650
+...o kadar otomatik geçti ki bunları görmüyorsunuz bile.
+
+876
+00:47:21,650 --> 00:47:23,650
+Ama böyle bir şeyin varlığından haberiniz olsun.
+
+877
+00:47:23,650 --> 00:47:25,650
+Görürseniz...
+
+878
+00:47:25,650 --> 00:47:27,650
+...kalsız çıkarsa bu request token'lar ya da ne bileyim...
+
+879
+00:47:27,650 --> 00:47:29,650
+...PDO objeleri filan.
+
+880
+00:47:29,650 --> 00:47:31,650
+Aklınıza gelsin.
+
+881
+00:47:31,650 --> 00:47:33,650
+Tek almak istediğim şey buydu.
+
+882
+00:47:35,179 --> 00:47:42,980
+Başka sorusu olan var mı?
+
+883
+00:47:42,980 --> 00:47:44,980
+Yani SQL injection bakıldığında aslında...
+
+884
+00:47:44,980 --> 00:47:46,980
+...birazcık MySQL bilgisayarı ile birazcık...
+
+885
+00:47:46,980 --> 00:47:48,980
+...client...
+
+886
+00:47:48,980 --> 00:47:50,980
+...server...
+
+887
+00:47:50,980 --> 00:47:52,980
+...database architecture'ını bilmekle...
+
+888
+00:47:52,980 --> 00:47:54,980
+...oradan alakalı bir şey.
+
+889
+00:47:54,980 --> 00:47:56,980
+Yani şu proxy ile bir şey değiştirebiliyorsanız...
+
+890
+00:47:56,980 --> 00:47:58,980
+...get request nedir...
+
+891
+00:47:58,980 --> 00:48:00,980
+...hastake protokolün hangi seviyededir...
+
+892
+00:48:00,980 --> 00:48:02,980
+...nasıl gönderilir istekler...
+
+893
+00:48:02,980 --> 00:48:04,980
+...istekleri nasıl manipüle ederim...
+
+894
+00:48:04,980 --> 00:48:06,980
+...bunlara bakabiliyorsunuz. Biraz MySQL...
+
+895
+00:48:06,980 --> 00:48:08,980
+...biliyorsunuz. Çok rahat yapabileceğiniz bir...
+
+896
+00:48:08,980 --> 00:48:10,980
+...saldırı şekli.
+
+897
+00:48:10,980 --> 00:48:12,980
+Ve bunları hazır yapan tool'lar da var zaten.
+
+898
+00:48:12,980 --> 00:48:14,980
+Artık o kadar şey ki...
+
+899
+00:48:14,980 --> 00:48:16,980
+...kolaylaştık yani.
+
+900
+00:48:16,980 --> 00:48:18,980
+Pen tester'lar her seferinde girip böyle tek tek...
+
+901
+00:48:18,980 --> 00:48:20,980
+...şey yapmıyorlar. Tek tek kendileri...
+
+902
+00:48:20,980 --> 00:48:22,980
+...elle yazmıyorlar. Bunları içimden sıkıp...
+
+903
+00:48:22,980 --> 00:48:24,980
+...hazırlamış oluyorlar daha önceden.
+
+904
+00:48:24,980 --> 00:48:26,980
+Çalıştırıyorlar ve pen test yapmış oluyorlar.
+
+905
+00:48:26,980 --> 00:48:28,980
+Tabii ki bunlar...
+
+906
+00:48:28,980 --> 00:48:30,980
+...belli bir yere kadar savunma sağlıyor. Onların...
+
+907
+00:48:30,980 --> 00:48:32,980
+...çok daha gelişmiş tool'ları var.
+
+908
+00:48:32,980 --> 00:48:34,980
+Çok merak etsem siber güvenliğine Kali'yi indirip...
+
+909
+00:48:34,980 --> 00:48:36,980
+...forumlarda gezip çok şey öğrenebileceğinizi...
+
+910
+00:48:36,980 --> 00:48:38,980
+...düşünüyorum.
+
+911
+00:48:38,980 --> 00:48:40,980
+Bu kadar.
+
+912
+00:48:40,980 --> 00:48:44,929
+O zaman sanırım soru...
+
+913
+00:48:44,929 --> 00:48:46,929
+...kalmadı. Ben bugünü bitiriyorum...
+
+914
+00:48:46,929 --> 00:48:48,929
+...arkadaşlar.
+
+915
+00:48:48,929 --> 00:48:50,929
+Önümüzdeki haftalarda size şeyi anlatacağım.
+
+916
+00:48:50,929 --> 00:48:52,929
+Sanırım...
+
+917
+00:48:52,929 --> 00:48:54,929
+...XSS ve...
+
+918
+00:48:54,929 --> 00:48:56,929
+...Cross Site Request Forged'i...
+
+919
+00:48:56,929 --> 00:48:58,929
+...bunlarla...
+
+920
+00:48:58,929 --> 00:49:00,929
+...scriplerdeki daha sonra...
+
+921
+00:49:00,929 --> 00:49:02,929
+...clientlardaki...
+
+922
+00:49:02,929 --> 00:49:04,929
+...clientlardaki token'ları çalıp ne tür bilgileri...
+
+923
+00:49:04,929 --> 00:49:06,929
+...yaşayabileceğiz, bunları nasıl manipüle edebileceğiz...
+
+924
+00:49:06,929 --> 00:49:08,929
+...veya sistemi nasıl çökertebileceğiz...
+
+925
+00:49:08,929 --> 00:49:12,530
+...gibi...
+
+926
+00:49:12,530 --> 00:49:14,530
+...alanlarda yapılan saldırılar bunlar. Onları...
+
+927
+00:49:14,530 --> 00:49:16,530
+...anlatacağım size. Açıkları göstereceğim.
+
+928
+00:49:16,530 --> 00:49:20,380
+Başka yok. Bu kadar.
+
+929
+00:49:20,380 --> 00:49:22,380
+O zaman...
+
+930
+00:49:22,380 --> 00:49:24,380
+...dinlediğiniz için teşekkürler arkadaşlar.
+
+931
+00:49:24,380 --> 00:49:26,380
+Sorusu falan da yok gibi gözüküyor.
+
+932
+00:49:26,380 --> 00:49:35,869
+Dediğim gibi...
+
+933
+00:49:35,869 --> 00:49:41,809
+...önümüzdeki haftada...
+
+934
+00:49:41,809 --> 00:49:43,809
+...yapacağız yine. Önümüzdeki hafta...
+
+935
+00:49:43,809 --> 00:49:45,809
+...pazartesi günü de devam edeceğiz.
+
+936
+00:49:45,809 --> 00:49:47,809
+Bir aksilik olursa...
+
+937
+00:49:47,809 --> 00:49:49,809
+...Avesiz sayfamdan takip edersiniz.
+
+938
+00:49:49,809 --> 00:49:51,809
+Benim söyleyeceklerim bu kadar.
+
+939
+00:49:51,809 --> 00:49:53,809
+Herkese sağlıklı günler diliyorum.
+
+940
+00:49:53,809 --> 00:49:55,809
+Hoşçakalın.
+

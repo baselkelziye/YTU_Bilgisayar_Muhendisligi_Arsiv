@@ -1,0 +1,9108 @@
+1
+00:00:44,109 --> 00:00:53,630
+Evet, günaydın. Merhabalar. Biraz daha arkadaşlarınızın katılımı olsun diye bekliyorum.
+
+2
+00:00:53,630 --> 00:01:25,099
+Birçoğunuz gönderdiğiniz projelerinizdeki değişiklikleri, değişiklik göndermeyenlerde,
+
+3
+00:01:25,099 --> 00:01:48,340
+benim geçen hafta söylediğim ve geçen hafta kurumlardaki yapılanmadan, kurumlardaki bilgi sistemlerinden verdiğimiz örneklere göre konularında düşünüp değişiklik yapabilirler.
+
+4
+00:01:48,340 --> 00:01:58,260
+Bu hafta için, bu haftaya yazacaktınız bunları.
+
+5
+00:01:58,260 --> 00:02:09,759
+Projesi ile ilgili sorusu var mı bu arada diğer arkadaşlarınız eklenene kadar?
+
+6
+00:02:09,759 --> 00:03:32,590
+Evet [öğrenci]. Mesela siz değişiklik yaptınız. Bu değişiklikle tam belirttiğim gibi olmuş konunuz.
+
+7
+00:03:32,590 --> 00:03:38,830
+Diğer arkadaşlarınız da önce kendiniz bakın istedim.
+
+8
+00:03:38,830 --> 00:03:51,389
+Benim derslerde, şirketlerle ilgili yapılanmada anlattıklarıma göre konunuzda değişikliğe gerek olup olmadığına bakın.
+
+9
+00:03:51,389 --> 00:03:56,509
+Ondan sonra ben bu hafta listeyi oluşturup sizinle paylaşacağım.
+
+10
+00:04:05,789 --> 00:04:26,269
+Evet ben [öğrenci]'e cevap veremedim ama sizin de biraz genel alt modüller olacak. Onu yazarak bana bu hafta mail atarsanız iyi olur.
+
+11
+00:04:40,240 --> 00:05:09,149
+Evet mesela sizin inceleyeceğiniz satılan yazılımlar, insan kaynakları paketinin altındaki bu söyleyeceğiniz alt başlıklar, işe alım süreci gibi.
+
+12
+00:05:10,110 --> 00:05:24,509
+Yani insan kaynaklarında bütün işlemleri yapan, şu andaki profesyonel anlamda bütün işleri yapan bir yazılımı hazırlamanız zor, büyük bir iş.
+
+13
+00:05:24,509 --> 00:05:37,310
+Ama bunun altında hangi modülleri kullanacaksanız onu araştırmanız gerekiyor bu konuyla ilgili.
+
+14
+00:05:37,790 --> 00:05:56,509
+Piyasada satın alınabilecek hangi yazılımlar var, hangi şirketler geliştirmiş ve sonunda da işte 3-4 farklı şirketin yazılımını inceledikten sonra bunların bir alternatif fizibilite analizini oluşturmanızı istiyorum.
+
+15
+00:05:56,670 --> 00:06:09,310
+Bu sizin belirttiğiniz şeyler de insan kaynaklarının altında olur tahminimci.
+
+16
+00:06:09,310 --> 00:06:26,220
+Evet o zaman şimdi görüntüyü kapatıp, tekrar günaydın diyorum herkese, görüntüyü kapatıp sizinle slaytı paylaşacağım.
+
+17
+00:06:26,860 --> 00:06:43,180
+Hala kafasında soru işareti olan arkadaşlarınız için geçen hafta üzerinde durduğumuz kurumlardaki yapılanma, bununla ilgili örnekler konusunda bir tekrar yapacağız.
+
+18
+00:06:44,139 --> 00:07:04,220
+Ondan sonra geçen hafta bu hafta duracağız dediğim, üzerinde duracağız dediğim supply chain management, tedarik zinciri yönetimi nedir, hangi adımlardan oluşur, bunun üzerinde duracağız öncelikle.
+
+19
+00:07:04,259 --> 00:07:31,819
+Sonra enterprise resource planning, ERP'ye gelecek şekilde bütün bu sistemde nasıl bir değişiklik olmuş, yazılım paketlerinde nasıl değişiklik olmuş, MRP'den ERP'ye geçiş süreci, bunlar üzerinde durmak istiyorum bugün.
+
+20
+00:07:31,819 --> 00:08:00,819
+Genel olarak dersle ilgili sorunuz var mı, bu arada diğer derslerde de sınavla ilgili sorularınız oldu, şimdi ben diğer derslerde de 9. hafta dedim ama eğer genel olarak 8. hafta diye bir vize haftası ayrılmışsa,
+
+21
+00:08:00,819 --> 00:08:26,819
+onu tam anlayamadım çünkü o zaman yani zorunluysam 8. hafta yaparım, değilse 9. haftaya bırakacağım sınavı ama o konuda bir belirsizlik var şu anda, bu hafta 6. hafta onu bir arada da sorarım daha olmazsa.
+
+22
+00:08:26,819 --> 00:08:48,590
+Sizin diğer derslerle ilgili bir şeyiniz var mı, bildiğiniz bir farklılık sınavlar konusunda, hiç bir dersde sınavlar konusunda bilgi verildi mi, ne zaman olacağı konusunda?
+
+23
+00:08:48,590 --> 00:08:54,960
+Yok hocam, verilmedi.
+
+24
+00:08:54,960 --> 00:09:09,919
+Evet, evet, tamam o zaman ben arada tekrar bölümle telefonla konuşurum, ona göre bir yol izleriz, yani 8. ya da 9. hafta yapacağız.
+
+25
+00:09:09,919 --> 00:09:44,539
+Evet, bir de not dağılımı, not dağılımı da projeleriniz, işte projelerinizin teklifleri, belki arada bir yani çok küçük bir yüzde oluşacak şekilde sizlere hani böyle alıştırmak için soruyorum size bazen küçük sorular, dersi takip edin diye.
+
+26
+00:09:44,539 --> 00:10:06,700
+Öyle küçük sorular soracağım, bir arada bir gün böyle sözlü gibi çok küçük bir yüzdesi olan bir değerlendirme de yapabilirim, hani bunları alıştırma gibi soruyorum arada.
+
+27
+00:10:06,700 --> 00:10:18,259
+O zaman ben slide'da yükleyeceğim.
+
+28
+00:10:18,259 --> 00:15:15,200
+Evet, öncelikle geçen hafta üzerinde durduğumuz işletmelerde hangi aşamada, hangi tipte, hangi bilgi sistemi, nikay boyutlarda, yani işletmenin farklı birimlerinde ne şekilde kullanılıyor?
+
+29
+00:15:15,200 --> 00:15:24,240
+Onu kendi konularınızda irdelemek için bir kez daha örnekleyeceğim.
+
+30
+00:15:24,240 --> 00:15:41,600
+Satış ve pazarlama, üretim birimi, finans muhasebe birimi ve insan kaynakları birimi, en temel birimler diye düşünürsek buradaki uygulamalardan örnekler vermiştik.
+
+31
+00:15:41,600 --> 00:16:03,759
+Mesela şurada transaction processing sistem yapısında order processing, sipariş işleme, yani günlük siparişlerin işlenmesi ile ilgili temel işlemler birer transaction processing sistem örneği olarak görünür.
+
+32
+00:16:04,720 --> 00:16:32,799
+Yönetim bilgi sistemi orta yönetim kademesinde, yönetim bilgi sistemi yapılanmasında satış yönetimi ve pazarlama için karar destek sistemi yapılanması şeklinde, yani karar destek sistemi, bilgi sistemi türünde bir takım karar verebilmek için bölge satış analizlerinin gerçekleştirilmesi.
+
+33
+00:16:32,799 --> 00:17:00,399
+Yine üretim biriminde, envanter kontrolunun yapılması, yönetim bilgi sistemi yapısı çerçevesinde, üretim biriminde, malzeme hareket kontrolü, yani ham madde girişlerinin kontrolü, temin kontrolü,
+
+34
+00:17:00,399 --> 00:17:21,839
+bunlar en temel işlemler bu transaction processing sistem yapısında. Karar destek sistemi, üretimdeki takvim belirlemesi, iş sırasının belirlemesi, üretim modellerine karar verilmesi, karar destek sistemi yapısında.
+
+35
+00:17:21,839 --> 00:17:40,880
+Yine finans muhasebe tarafında temel işlemler, mesela borjonun hazırlanması, muhasebe defterinin tutulması, ödemelerin planlanması demeyeyim de, o işlerin gerçekleştirilmesi,
+
+36
+00:17:40,880 --> 00:18:03,039
+bu transaction processing sistem yapısında, yönetim bilgi sistemi yapılanmasında, yıllık bütçeleme işlemi, bu yönetim bilgi sistemi yapısında, yıllık bütçenin çıkarılması işlemleri.
+
+37
+00:18:03,039 --> 00:18:20,400
+Ama karlılık analizleri, işte finans açısından yatırım planlamalardaki karar modelleri, hatta uzman sistem uygulamaları, bunlar da karar destek sistemi yapısına giriyor.
+
+38
+00:18:20,400 --> 00:18:45,970
+İnsan kaynakları çerçevesinde baktığımızda da çalışanların kayıtlarının takip edilmesi, transaction processing sistem yapısında burada maliyet kontrolünün gerçekleştirilmesi,
+
+39
+00:18:45,970 --> 00:19:12,049
+işte mesela giriş işlemlerinin yapılması, farklı birimlerdeki toplam çalışan bilgisinin, yıllık bilgisinin oluşturulması, maaş artışları işlemlerinin gerçekleştirmesi, bunlar yönetim bilgi sistemi.
+
+40
+00:19:12,049 --> 00:19:24,769
+Bu arada karar aşamasında, işte maliyet analizi yapılması, tahminler gerçekleştirilmesi, karar destek sistemi yapısı içinde görülebilir.
+
+41
+00:19:24,769 --> 00:19:39,410
+Ki bunları tek tek işlemsel bilgi sistemi yapısı için bir örnek, bu yapılanmaları tek tek incelemeyeceğim şimdi, geçen hafta bunların üzerinde durduk,
+
+42
+00:19:39,410 --> 00:19:58,859
+işlemsel bilgi sistemin yapısı, örnekler üzerinde duracağım sadece, burada işte bir board draw sistem çalıştığında veri olarak ne olur, raporlarda neler olur,
+
+43
+00:19:58,859 --> 00:20:14,940
+şimdiye kadar siz zaten derslerinizde, veritabanın dersinde, diğer derslerinizde bu tür uygulamalarda yaptınız ama hani yönetime gidecek raporlar, hangi sorgular oluyor,
+
+44
+00:20:14,940 --> 00:20:29,579
+veri olarak tutulacak bilgiler, raporlarda farklı bilgiler olması, transaction processing sistem yapısı oldukça basit bir uygulama,
+
+45
+00:20:29,579 --> 00:20:43,900
+bir veritabanından bilgi alıp, gerekli işlemleri yapıp, farklı birimlere, işletmedeki farklı birimlere raporlar göndermek söz konusu oluyordu.
+
+46
+00:20:44,859 --> 00:21:06,299
+Yine burada işletme birimlerinde transaction processing sistem uygulamalarına, aslında şu piramitteki alt parçada gerçekleşen farklı birimler için hangi uygulamalar vardır, bu tabloda da bunu göstermek istiyoruz.
+
+47
+00:21:06,299 --> 00:21:27,500
+Üstteki, şuradaki satırda temel bir işletmedeki satış pazarlama biriminde, üretim biriminde, finans muhasebe biriminde, insan kaynakları biriminde ya da diğer uygulamalarda karşımıza çıkacak birimlerde,
+
+48
+00:21:27,500 --> 00:21:40,140
+hangi işlemleri biz temel olarak uygulama, yazılım uygulamaları yaparak çalıştırabiliriz.
+
+49
+00:21:40,140 --> 00:21:55,740
+İşte mesela müşteri servisi, satış yönetiminin gerçekleştirilmesi, promosyon izlenmesi, fiyat değişikliklerinin gerçekleştirilmesi,
+
+50
+00:21:55,740 --> 00:22:16,700
+bunları oluşturan bilgi sistemi uygulamaları, satış sipariş bilgi sistemleri, satış komisyon sistemleri, satış destek sistemleri gibi temel uygulamalar,
+
+51
+00:22:16,700 --> 00:22:36,859
+aynı şekilde üretim biriminde, üretim takviminin, listesinin oluşturulması, üretim için ham madde satın almaları,
+
+52
+00:22:36,859 --> 00:22:52,460
+üretimin alınması, üretim için gerekli ham maddelerin alınması ya da üretimden çıkan birimlerin gönderilmesi, üretim işlemleri,
+
+53
+00:22:52,460 --> 00:23:07,420
+işte mesela üretimde kalite kontrolun yapılması, kalite kontrol sistemleri, sipariş sistemleri, ham madde sipariş sistemleri,
+
+54
+00:23:07,420 --> 00:23:22,619
+makine kontrol sistemleri yani üretim makinalarının kontrolünün gerçekleştirilmesi sistemleri, finans muhasebe sistemleri için de genel muhasebe faturalama,
+
+55
+00:23:22,619 --> 00:23:45,019
+maliyet muhasebesi gibi farklı işlevler vardır finans muhasebe birinin de, işte bordro, muhasebe ödemeler sistemi, fon yönetim sistemi gibi bilgi sistemi uygulamaları da bu işleri gerçekleştirir.
+
+56
+00:23:45,019 --> 00:24:03,460
+İşte, personel kayıtlarının, insan kaynaklarında personel kayıtlarının tutulması, personel yetenek ilişkisinin oluşturulması, personelin aldığı eğitimlerin görülmesi,
+
+57
+00:24:03,460 --> 00:24:21,539
+bunlar bu birimlerdeki işlemler, çalışan kayıtları, işte çalışan verimlilik sistemleri, çalışanların yetenek envanterlerinin oluşturulması da,
+
+58
+00:24:21,539 --> 00:24:39,220
+bunlarda insan kaynaklarındaki transaction processing yapılanması çerçevesindeki bilgi sistemleri gibi bir transaction processing sistem işletmelerde nasıl uygulamalar da kullanılıyor,
+
+59
+00:24:39,220 --> 00:25:05,059
+bunu örnekleyebiliriz. Siz de projelerinizde gerçekleştirdiğiniz uygulamaları belirtirken, bunların hangi şeyde olduğunu, hangi bilgi sistem tipinde de bunun gerçekleştirdiğini yani hazırladığınız bilgi sisteminin nasıl bir bilgi sistem olduğunu belirtebilirsiniz.
+
+60
+00:25:05,059 --> 00:25:22,339
+Mesela eğer karar modelleri, yapay zeka uygulamaları gibi işlemler kullanacaksanız ki, geleceğiz bunların da örneklerine, o zaman biz karar destek sistemi kuruyoruz da diyebilirsiniz.
+
+61
+00:25:22,339 --> 00:25:46,089
+Yönetim bilgi sistemi yapılanmasında, yönetim bilgi sistemlerinde sadece bir departman değil, birden fazla departmanın gerçekleştirdiği işlemleri bünyesinde barındıran uygulamalardır diyebiliriz.
+
+62
+00:25:46,089 --> 00:26:11,369
+Ki buradan, işte girdi nasıldır, işlemler nasıldır, çıktılar nasıldır, bunu belirtebiliriz. Uygulamalar açısından baktığımızda, farklı transaction processing sistemlerde gerçekleşen işlemleri,
+
+63
+00:26:11,369 --> 00:26:37,450
+hatta farklı transaction processing sistemlerde, farklı dikey birimlerde, yani işletmedeki farklı departmanlarda yürüyen transaction processing sistemlerden gelen bilgileri bütünleştiren yönetim bilgi sistemi uygulamalarında söz edebiliriz.
+
+64
+00:26:37,529 --> 00:27:00,569
+İşte sipariş işlem sistemi, transaction processing sistem, sipariş satış pazarlama biriminde geçen bir uygulama, malzeme kaynak planlama sistemi, ki MRP sistemleri çalışıyordu,
+
+65
+00:27:00,569 --> 00:27:23,450
+IRP'ler de bu MRP'lerin başlangıcından doğmuş sistemlerdir, malzeme kaynak planlaması, üretim biriminde bir üretimi gerçekleştirmek için, farklı ürünlerin üretimi için gerekli ham maddeler, ham madde alım planları,
+
+66
+00:27:24,329 --> 00:27:46,650
+böyle bir sistemde, üretim biriminde kullanılan ve ilk bilgi sistemi uygulamalarından, yani işletmelerde ilk bilgi sistemleri, bir muhasebe sistemleri çok kullanılmıştır.
+
+67
+00:27:46,849 --> 00:28:00,450
+Hatta bilgi işlem departmanları da muhasebe yönetimi birimine bağlı olduğu da çok eski yıllarda görülüyordu.
+
+68
+00:28:01,250 --> 00:28:20,250
+Diğer temel uygulamalar da bu MRP uygulamalarıydı, üretim birimlerinde bilgi sistemleri yaygın olarak çok kullanılmıştı, malzeme kaynak planlaması, malzeme ihtiyaç planlaması gibi uygulamalar.
+
+69
+00:28:21,049 --> 00:28:43,650
+Diğeri de az önce söylediğim gibi, muhasebe sisteminde gerçekleşen transaction processing uygulaması, bunlardan çıkan sonuçlar MIS dosyalarında bütün kurum için satış verisi, birim ürün maliyet verisi,
+
+70
+00:28:44,049 --> 00:29:06,450
+birim ürün değişim verisi ve harcamalar verisinin tutulduğu veri tabanlarında birlikte çalışarak yöneticilere bütün bu birimlerle ilgili kıyaslamalı,
+
+71
+00:29:07,250 --> 00:29:21,250
+çapraz sorgulamalı, sonuçlar veren, raporlar veren bir bilgi sistemi yapılanması, yönetim bilgi sistemi yapılanması çerçevesinde görüyoruz.
+
+72
+00:29:22,049 --> 00:29:35,049
+Burada şu uygulamadan çıkan bir rapor nasıl bir rapor olabilir, MIS sisteminden çıkan.
+
+73
+00:29:35,849 --> 00:29:53,289
+Burada şirketteki ürünlere ve satış bölgelerine göre satışların değerlendirilmesi raporu,
+
+74
+00:29:54,089 --> 00:30:12,089
+şu üç birimin, üç farklı transaction processing sisteminden gelen verinin MIS programında yönetim bilgi sistemi yapılanmasında çalıştırılmasıyla elde edilen bir rapor.
+
+75
+00:30:12,890 --> 00:30:30,890
+İşte şu ürün tanımı hangi bölgelerde satışlar ne olmuş, burada planlanan satışlar nelerde, planlanan da gerçek değer arasında ne kadar fark olmuş.
+
+76
+00:30:31,690 --> 00:30:50,690
+Buradan da bu sonuçları aldığımızda buradan yola çıkarak da bir karar destek sistemiyle daha sonraki yıllar için ürün planlamasına gidilebilecek bir rapor örneği.
+
+77
+00:30:53,859 --> 00:31:16,859
+Buradan da karar destek sistemine geçmiştik, karar destek sisteminde hizmet yönetim seviyesinde, yine yönetim seviyesinde kullanılacak veri analizleri ve karar modellerinin gerçekleştirilmesi
+
+78
+00:31:17,660 --> 00:31:33,660
+ve karar destek sistemleri çok, veri grubu çok değişken olan bir sistem grubu, bir Excel dosyası, bir tablodan yola çıkarak da bir karar modeli geliştirilebilir,
+
+79
+00:31:34,460 --> 00:31:52,460
+çok büyük veri tabanı uygulamalarından da çıkarak bu karar modelleri oluşturulabilir, yani girdilerinin değişim yapısı çok fazla.
+
+80
+00:31:55,049 --> 00:32:04,049
+İşlemlere baktığımızda simülasyonlar, analizler, interaktif sorgulamalar gibi işlemler gerçekleşiyor.
+
+81
+00:32:04,849 --> 00:32:23,700
+Burada da bir örnek vermiştik, online sorgulamalar yapıp analitik modeller kullanarak ve bu analitik modellere de farklı veri tabanlarından,
+
+82
+00:32:24,500 --> 00:32:38,500
+farklı tablolardan bilgiler alarak kararı oluşturulduğu ve karar uzmanlarına bilgi aktarıldığı, sorgularına cevap verildiği bir sistem.
+
+83
+00:32:39,299 --> 00:33:04,299
+Burada da üretimden çıkan birimleri nasıl aktarılırsa, ürün dağıtımına karar verilmesi için gerçekleştirilen bir uygulama modeli vardı.
+
+84
+00:33:05,099 --> 00:33:10,099
+Üst yönetim bilgi sistemleri de diğer bilgi sistemleriydi.
+
+85
+00:33:10,099 --> 00:33:18,099
+Üst yönetim bilgi sistemleriyle karar destek sistemleri arasında çok ince bir geçiş var.
+
+86
+00:33:18,099 --> 00:33:28,099
+Üst yönetim bilgi sistemleri karar destek sistemlerinden de bilgi alan ve üst kademedeki yöneticinin kendini kullanacağı,
+
+87
+00:33:28,900 --> 00:33:40,900
+bütün birimlerle ilişkili veriyi toplayıp, hem karar destek sistemlerinden hem yönetim bilgi sistemlerinden aldıkları veriyi,
+
+88
+00:33:40,900 --> 00:33:57,900
+üst yöneticilerin kolay kullanacağı bir ortam haline getirip, onların doğrudan sorgulama yapabileceği bir yapı oluşturmaktır.
+
+89
+00:33:58,700 --> 00:34:13,699
+Bir de üst yönetim bilgi sistemini, şu örnekte de gördüğümüz gibi sadece yönetimini gerçekleştirdikleri kurumla ilişkili veri değil,
+
+90
+00:34:13,699 --> 00:34:17,699
+bu kurumla ilişkili bütün verileri kullanıyor.
+
+91
+00:34:17,699 --> 00:34:29,500
+Ofis sistemleri, finansal veri, transaction processing sistem, yönetim bilgi sistemleri ve karar destek sistemlerinden gelen iç veri,
+
+92
+00:34:29,500 --> 00:34:36,500
+bir de dışarıdaki veri tabanlarıyla da ilişki halinde,
+
+93
+00:34:37,300 --> 00:34:51,300
+işte finans veri tabanları, uluslararası, standartlarla ilişkili veri tabanlarına da bağlantı kurup kararları oluşturabilecek,
+
+94
+00:34:52,099 --> 00:35:07,099
+üst yöneticinin kolay kullanımı için de grafik arayuzu olan sistemlerin kullanımı gerekli bulunuyordu.
+
+95
+00:35:07,900 --> 00:35:15,900
+İşte tekrar, temel işletmecilik fonksiyonlarının neler olduğu üzerinde durmuştuk geçen hafta.
+
+96
+00:35:16,699 --> 00:35:39,699
+Üretim sistemleri dediğimizde nasıl örnekler veriyoruz, satış sipariş dediğimizde satış pazarlama sistemlerinde ne tür örnekler,
+
+97
+00:35:40,500 --> 00:35:48,500
+yani tamamıyla satış pazarlama sistemlerinde müşteriyle ilişkili bilgilendirme,
+
+98
+00:35:49,300 --> 00:36:11,380
+ürünlerle ilişkili hizmet ve bilgi oluşturma,
+
+99
+00:36:11,380 --> 00:36:18,380
+ürün satışların canlandırılması,
+
+100
+00:36:19,179 --> 00:36:32,179
+ürünlerin satışının gerçekleştirilmesi ve sürekli olarak müşteri devamlılığını sağlamak için müşteri destek sistemleri.
+
+101
+00:36:32,179 --> 00:36:39,179
+Şimdi baktığımızda uygulamalara operasyonel seviyede sipariş işlemi,
+
+102
+00:36:39,179 --> 00:36:46,179
+aslında burada bu az önceki üçgenimizdeki işlemleri açıklıyoruz.
+
+103
+00:36:46,980 --> 00:36:49,980
+Bir haftada bunların üzerinde ayrıntılı olarak durduk.
+
+104
+00:36:49,980 --> 00:37:02,980
+Üretime baktığımızda makine kontrolü, üretim planlama ve üretim yerlerine karar verme,
+
+105
+00:37:02,980 --> 00:37:12,980
+yeni kararlar alma gibi stratejik seviyedeki sistemler.
+
+106
+00:37:13,780 --> 00:37:18,780
+Bunlar üretim biriminde gerçekleşen işlemler.
+
+107
+00:37:18,780 --> 00:37:37,980
+Üretim biriminde baktığımızda bu örneği daha önceden de bir envanter kontrol sistemi,
+
+108
+00:37:37,980 --> 00:37:44,980
+nasıl çalışır üretim birimi ile ilişkili bir örnek oluşturmuştuk.
+
+109
+00:37:45,780 --> 00:37:51,780
+Yönetime gidecek raporları belirten.
+
+110
+00:37:51,780 --> 00:37:57,780
+Finans muhasebe sisteminde gerçekleşen uygulamalar,
+
+111
+00:37:57,780 --> 00:38:02,780
+işlemsel seviyede, yönetim seviyesinde ve stratejik seviyede,
+
+112
+00:38:02,780 --> 00:38:04,780
+bunları az önce de söylemiştim zaten.
+
+113
+00:38:05,579 --> 00:38:16,579
+Ve insan kaynaklarında potansiyel çalışanların belirlenmesi,
+
+114
+00:38:16,579 --> 00:38:23,579
+yani burada işe alım işlemleri de insan kaynaklarında.
+
+115
+00:38:23,579 --> 00:38:32,579
+Çalışan kayıtlarının bakımının yapılması, tutulması, saklanması, sorgulanması,
+
+116
+00:38:33,380 --> 00:38:42,380
+çalışanların yeteneklerinin izlenmesi, iş performanslarının belirlenmesi,
+
+117
+00:38:42,380 --> 00:38:52,380
+eğitimlerinin belirlenmesi, destek planlama, kariyer gelişiminin desteklenmesi,
+
+118
+00:38:52,380 --> 00:38:56,380
+baktığımızda burada uygulamalara,
+
+119
+00:38:58,489 --> 00:39:02,489
+işlemsel yani transaction processing sistem yapısında
+
+120
+00:39:02,489 --> 00:39:10,960
+çalışanların eğitiminin yeteneklerinin ve performanslarının izlenmesi,
+
+121
+00:39:10,960 --> 00:39:18,960
+bu günlük işlemler arasında yani var olan zaman içinde
+
+122
+00:39:19,760 --> 00:39:30,760
+günlük işleri yürütmek çerçevesinde yapılan uygulamalar,
+
+123
+00:39:30,760 --> 00:39:39,760
+yönetim seviyesinde baktığımızda ücretlerin, yeteneklerin
+
+124
+00:39:39,760 --> 00:39:47,760
+hem izlenmesi hem kontrol edilmesi ve birbiriyle ilişkilendirilmesi,
+
+125
+00:39:48,559 --> 00:39:56,559
+mesela gerçekleştirilen satışlar, buradaki verimlilikleri,
+
+126
+00:39:56,559 --> 00:40:03,559
+üretim biriminde ise üretimin sayısı
+
+127
+00:40:03,559 --> 00:40:12,559
+ve bunların çalıştığı her bir çalışanın bulunduğu birimin verimliliğiyle ilişkilendirilmesi
+
+128
+00:40:12,559 --> 00:40:17,559
+yönetim bilgi sistemi çerçevesinde olur.
+
+129
+00:40:18,360 --> 00:40:23,360
+İnsan kaynakları planlaması da uzun vadeli,
+
+130
+00:40:23,360 --> 00:40:30,360
+hangi yetenekteki kişi lazım stratejik bilgi sistemi yapılanması için de
+
+131
+00:40:30,360 --> 00:40:35,360
+uygulamalar gerçekleştirilebilir.
+
+132
+00:40:35,360 --> 00:40:50,079
+Burada yönetim bilgi sisteminde az önce de farklı açıdan gördük bunu,
+
+133
+00:40:50,079 --> 00:40:53,079
+buna benzer bir örnek görmüştük.
+
+134
+00:40:53,880 --> 00:41:05,880
+Yönetim bilgi sistemlerinde farklı işletmecilik işlemlerini birleştiren uygulamalar
+
+135
+00:41:05,880 --> 00:41:09,880
+mesela sipariş tamamlama işlemi sırasında
+
+136
+00:41:09,880 --> 00:41:20,880
+satış, pazarlama, üretim, araştırma birimleri arasında bir sınır içinde gerçekleşir.
+
+137
+00:41:21,679 --> 00:41:27,679
+Baktığımızda satış, muhasebe ve üretim birimleri bunlar farklı birimler.
+
+138
+00:41:27,679 --> 00:41:31,679
+Hangi birimde işin ne kadarı gerçekleşiyor?
+
+139
+00:41:31,679 --> 00:41:35,679
+Nasıl bir iletişim içinde?
+
+140
+00:41:35,679 --> 00:41:43,679
+Yine bu üç birim arasında gerçekleşen bir siparişlerin alınması
+
+141
+00:41:44,480 --> 00:41:51,480
+hem envanter kontrolü hem yükleme hangi iş hangi departmana kalıyor.
+
+142
+00:41:51,480 --> 00:41:57,480
+Satış, pazarlama departmanında siparişin alınması,
+
+143
+00:41:57,480 --> 00:42:05,480
+siparişin gönderilmesi, muhasebede kredi kontrolunun yapılması
+
+144
+00:42:06,280 --> 00:42:17,280
+ve daha sonra belirli bir kredi kontrolü gerçekleştirildikten sonra
+
+145
+00:42:17,280 --> 00:42:24,280
+ürünün üretim biriminden alınması ve ürünün gönderilmesi
+
+146
+00:42:24,280 --> 00:42:30,280
+ve muhasebe biriminden de faturanın hazırlatılıp
+
+147
+00:42:31,079 --> 00:42:38,079
+ilgili müşteriye gönderilmesi şeklinde her üç birime iş düşecektir
+
+148
+00:42:38,079 --> 00:42:43,079
+ve her üç birimde de işlemler gerçekleşecektir.
+
+149
+00:42:43,079 --> 00:42:47,079
+Şimdi slide'imi değiştireceğim.
+
+150
+00:42:47,079 --> 00:43:29,739
+Evet bunları özetledik az önce.
+
+151
+00:43:29,739 --> 00:43:40,400
+Bütün bunların ışığında bilgi sistemleri arasındaki ilişkileri
+
+152
+00:43:41,199 --> 00:43:47,199
+sistem analizinde çok fazla karşılaştığınız bir soruydu bu.
+
+153
+00:43:47,199 --> 00:43:51,199
+İşletmelerdeki bilgi sistemleri arasında
+
+154
+00:43:51,199 --> 00:43:57,199
+hangi iletişim vardır, nasıl bir hiyerarşi vardır diye
+
+155
+00:43:57,199 --> 00:44:01,199
+Transaction Processing System hem yönetim bilgi sistemine
+
+156
+00:44:01,199 --> 00:44:05,199
+hem karar destek sistemine bilgi gönderiyordu.
+
+157
+00:44:06,000 --> 00:44:11,000
+Her ikisi de executive information sisteme
+
+158
+00:44:11,000 --> 00:44:16,000
+ya da üst yönetim bilgi sistemine bilgi gönderiyordu.
+
+159
+00:44:16,000 --> 00:44:22,000
+Yönetim bilgi sistemleri
+
+160
+00:44:22,000 --> 00:44:27,000
+yönetim sistemleri arasında olan karar destek sistemine de
+
+161
+00:44:27,000 --> 00:44:29,000
+ayrıca bilgi gönderiyordu.
+
+162
+00:44:29,000 --> 00:44:31,000
+Yani nedir bu?
+
+163
+00:44:31,800 --> 00:44:35,800
+Bu bilgi sistemlerinde farklı Transaction Processing Systemlerden
+
+164
+00:44:35,800 --> 00:44:39,800
+gelen bilgi bütünleştirilerek
+
+165
+00:44:39,800 --> 00:44:43,800
+birbiriyle ilişkilendirilerek raporlar haline
+
+166
+00:44:43,800 --> 00:44:49,800
+veya dosyalara aktarılarak
+
+167
+00:44:49,800 --> 00:44:53,800
+tutulduğunda bu bilgiler
+
+168
+00:44:53,800 --> 00:44:57,800
+karar destek sistemine gönderilerek
+
+169
+00:44:58,599 --> 00:45:01,599
+karar verme amacıyla kullanılıp
+
+170
+00:45:01,599 --> 00:45:04,599
+yönetim seviyesini bu karar modelleri
+
+171
+00:45:04,599 --> 00:45:08,599
+süzgecinden geçerek gönderilebilir.
+
+172
+00:45:08,599 --> 00:45:10,599
+Buradaki ilişkilendirme.
+
+173
+00:45:10,599 --> 00:45:14,599
+Tabii ki sistem analizi dersinde hatırladığımızda
+
+174
+00:45:14,599 --> 00:45:18,599
+şurada bir de ofis otomasyon sistemleri vardı.
+
+175
+00:45:18,599 --> 00:45:21,599
+Onlardan da direkt karar destek sistemlerine
+
+176
+00:45:21,599 --> 00:45:23,599
+ya da yönetim bilgi sistemlerine
+
+177
+00:45:23,599 --> 00:45:25,599
+bilgi gönderimi sağlanıyordu.
+
+178
+00:45:39,420 --> 00:45:43,179
+Evet şimdi geldik.
+
+179
+00:45:43,179 --> 00:45:46,179
+Bu geçen hafta
+
+180
+00:45:46,179 --> 00:45:50,179
+üzerinde durduğumuz
+
+181
+00:45:50,179 --> 00:45:56,179
+Enterprise kurumsal uygulama kavramına
+
+182
+00:45:56,179 --> 00:45:59,179
+kurumsal uygulama mimarisinde
+
+183
+00:45:59,179 --> 00:46:01,179
+bütün
+
+184
+00:46:01,179 --> 00:46:05,179
+yani sadece bir dikey boyutta
+
+185
+00:46:05,179 --> 00:46:07,179
+dikey boyuttan kastım
+
+186
+00:46:07,980 --> 00:46:10,980
+işletmedeki farklı departmanlarda
+
+187
+00:46:10,980 --> 00:46:12,980
+gerçekleştirilen işlemler
+
+188
+00:46:12,980 --> 00:46:16,980
+işte satış pazarlama, üretim, finans gibi
+
+189
+00:46:16,980 --> 00:46:20,980
+bunlara has uygulamaları hep tek tek gördük.
+
+190
+00:46:20,980 --> 00:46:24,980
+Kurumsal yaklaşımda Enterprise
+
+191
+00:46:24,980 --> 00:46:26,980
+Application Architecture'da
+
+192
+00:46:26,980 --> 00:46:31,980
+tek bir dikey birime hizmet eden değil
+
+193
+00:46:31,980 --> 00:46:33,980
+işletmenin
+
+194
+00:46:33,980 --> 00:46:36,980
+hem satış pazarlama hem üretim
+
+195
+00:46:36,980 --> 00:46:39,980
+hem finans hem de insan kaynaklarının
+
+196
+00:46:39,980 --> 00:46:42,980
+hepsini ilgilendiren uygulamaları
+
+197
+00:46:42,980 --> 00:46:55,900
+pardon
+
+198
+00:46:55,900 --> 00:46:56,900
+çok yaşa hocam
+
+199
+00:46:56,900 --> 00:46:59,900
+teşekkür ederim özür dilerim
+
+200
+00:46:59,900 --> 00:47:02,900
+takip edebiliyorsunuz değil mi?
+
+201
+00:47:02,900 --> 00:47:04,900
+evet
+
+202
+00:47:04,900 --> 00:47:08,900
+burada bütün dikey bölümleri
+
+203
+00:47:08,900 --> 00:47:11,900
+bir arada işleyen
+
+204
+00:47:11,900 --> 00:47:14,900
+ama baktığımızda
+
+205
+00:47:14,900 --> 00:47:16,900
+supply chain management sistem
+
+206
+00:47:16,900 --> 00:47:19,900
+yani tedarik zinciri yönetimi
+
+207
+00:47:19,900 --> 00:47:24,900
+ham madde alınan firmalar
+
+208
+00:47:24,900 --> 00:47:28,900
+ya da sadece para kende firmaları için
+
+209
+00:47:28,900 --> 00:47:32,900
+toptan ürün alınan firmalar
+
+210
+00:47:32,900 --> 00:47:36,900
+daha başlayarak
+
+211
+00:47:36,900 --> 00:47:45,010
+bütün birimlerle ilişkilendirilen uygulamalar
+
+212
+00:47:45,010 --> 00:47:46,010
+ama daha çok
+
+213
+00:47:46,010 --> 00:47:50,010
+supply chain management sistem
+
+214
+00:47:50,010 --> 00:47:54,010
+işte satış pazarlamayı, üretim birimini
+
+215
+00:47:54,010 --> 00:47:56,010
+temel alır
+
+216
+00:47:56,010 --> 00:48:01,010
+tedarikçileri ve iş ortaklarını
+
+217
+00:48:01,010 --> 00:48:05,010
+dikkate alır supply chain management sistem
+
+218
+00:48:05,010 --> 00:48:09,010
+müşteri ilişkileri yönetim sisteminde
+
+219
+00:48:09,010 --> 00:48:12,010
+yine insan kaynaklarında çalışanlarla ilişkili
+
+220
+00:48:12,010 --> 00:48:14,010
+işte komisyon hesaplamayıdı
+
+221
+00:48:14,010 --> 00:48:18,010
+bütün işlemleri ele alır
+
+222
+00:48:18,010 --> 00:48:23,010
+daha çok müşterilerle
+
+223
+00:48:23,010 --> 00:48:28,010
+ve dağıtım müşterileri dağıtım
+
+224
+00:48:28,010 --> 00:48:31,010
+yapan kanallarla ilişkidir
+
+225
+00:48:31,010 --> 00:48:34,010
+müşteri ilişkileri yönetim sistemi
+
+226
+00:48:34,010 --> 00:48:37,010
+ama bütün bunlar birbiriyle de
+
+227
+00:48:37,010 --> 00:48:40,010
+yani bütün dikey boyutlardaki
+
+228
+00:48:40,010 --> 00:48:43,010
+bütün birimleri ilgilendiren işlemler
+
+229
+00:48:43,010 --> 00:48:46,010
+gerçekleştirirler yani sadece bir
+
+230
+00:48:46,010 --> 00:48:49,010
+departmana has uygulama
+
+231
+00:48:49,010 --> 00:48:51,010
+sadece bu zincirde giden
+
+232
+00:48:51,010 --> 00:48:54,010
+yani sadece satış ve pazarlamayı
+
+233
+00:48:54,010 --> 00:48:56,010
+dikkate alan
+
+234
+00:48:56,010 --> 00:48:58,010
+sadece üretim birimini dikkate alan
+
+235
+00:48:58,010 --> 00:49:00,010
+uygulamalardan çok
+
+236
+00:49:00,010 --> 00:49:05,010
+bütün birimleri dikkate alan
+
+237
+00:49:05,010 --> 00:49:09,010
+uygulamalar gerçekleştiriliyor
+
+238
+00:49:09,010 --> 00:49:15,010
+ve işte
+
+239
+00:49:15,010 --> 00:49:17,010
+supply chain management sistemler
+
+240
+00:49:17,010 --> 00:49:21,010
+customer relationship management sistemler
+
+241
+00:49:21,010 --> 00:49:25,010
+ya da HR sistemleri
+
+242
+00:49:25,010 --> 00:49:28,010
+insan kaynakları sistemleri
+
+243
+00:49:28,010 --> 00:49:31,010
+bütün birimlere
+
+244
+00:49:31,010 --> 00:49:33,010
+bütün birimlerdeki işlemleri
+
+245
+00:49:33,010 --> 00:49:36,010
+bir potata eriten uygulamalardır
+
+246
+00:49:36,010 --> 00:49:40,010
+bir de üst yönetimden
+
+247
+00:49:40,010 --> 00:49:45,010
+alt yönetime doğru bir halka da çizildiğinde
+
+248
+00:49:45,010 --> 00:49:52,010
+bir uygulama knowledge management sistem yapısı
+
+249
+00:49:52,010 --> 00:49:57,010
+üst yönetimde gerçekleşen işlemler
+
+250
+00:49:57,010 --> 00:50:00,010
+kurumsal sistemler
+
+251
+00:50:00,010 --> 00:50:03,010
+gerçekleşen süreçler
+
+252
+00:50:03,010 --> 00:50:07,010
+hepsi hakkında
+
+253
+00:50:07,010 --> 00:50:13,010
+kurumsal hafıza ve bilgi yönetim sistemleri
+
+254
+00:50:13,010 --> 00:50:16,010
+oluşturulur
+
+255
+00:50:16,010 --> 00:50:18,010
+bu da
+
+256
+00:50:18,010 --> 00:50:21,010
+kurumsal uygulama mimarisinin
+
+257
+00:50:21,010 --> 00:50:24,010
+yapısını veriyor bize
+
+258
+00:50:24,010 --> 00:50:27,010
+baktığımızda
+
+259
+00:50:27,010 --> 00:50:30,010
+enterprise application
+
+260
+00:50:30,010 --> 00:50:32,010
+yani kurumsal uygulamalara
+
+261
+00:50:32,010 --> 00:50:36,010
+kurumsal sistemlerin oluşturulması
+
+262
+00:50:36,010 --> 00:50:38,010
+yani bütün
+
+263
+00:50:38,010 --> 00:50:41,010
+şirketle ilişkili
+
+264
+00:50:41,010 --> 00:50:43,010
+bilgi yönetiminin sağlanması
+
+265
+00:50:43,010 --> 00:50:46,010
+supply chain management sistemler
+
+266
+00:50:46,010 --> 00:50:49,010
+customer relationship management sistemler
+
+267
+00:50:49,010 --> 00:50:52,010
+knowledge management sistemler diye
+
+268
+00:50:52,010 --> 00:50:55,010
+kurumlarda çalışan
+
+269
+00:50:55,010 --> 00:50:58,010
+bilgi sistemlerini bu şekilde
+
+270
+00:50:58,010 --> 00:51:01,010
+tanımlayabiliriz
+
+271
+00:51:02,010 --> 00:51:04,010
+burada
+
+272
+00:51:04,010 --> 00:51:08,010
+farklılığı göstermiştim
+
+273
+00:51:08,010 --> 00:51:13,340
+geçen haftada
+
+274
+00:51:13,340 --> 00:51:18,340
+şimdi geleneksel yapıda baktığımızda
+
+275
+00:51:18,340 --> 00:51:24,610
+üretim işlemleri
+
+276
+00:51:24,610 --> 00:51:28,610
+kurumsal çerçevede
+
+277
+00:51:28,610 --> 00:51:33,610
+satın alma yaptığımız vendorlar, şirketler
+
+278
+00:51:33,610 --> 00:51:37,610
+finans muhasebe birimleri
+
+279
+00:51:37,610 --> 00:51:39,610
+finans muhasebe birimlerinde
+
+280
+00:51:39,610 --> 00:51:42,610
+finans muhasebe sistemleri
+
+281
+00:51:42,610 --> 00:51:45,610
+üretim sistemleri
+
+282
+00:51:45,610 --> 00:51:47,610
+satış pazarlama sistemleri
+
+283
+00:51:47,610 --> 00:51:49,610
+insan kaynakları sistemleri
+
+284
+00:51:49,610 --> 00:51:52,610
+hepsi ayrı ayrı
+
+285
+00:51:52,610 --> 00:51:55,610
+çalışıyordu
+
+286
+00:51:55,610 --> 00:51:57,610
+ama
+
+287
+00:51:57,610 --> 00:51:59,610
+bu
+
+288
+00:51:59,610 --> 00:52:01,610
+kurumsal
+
+289
+00:52:01,610 --> 00:52:03,610
+yapıya geldiğinde
+
+290
+00:52:03,610 --> 00:52:05,610
+kurumsal yapıdaki
+
+291
+00:52:05,610 --> 00:52:07,610
+enterprise resource planning
+
+292
+00:52:07,610 --> 00:52:09,610
+bütün kurumun
+
+293
+00:52:09,610 --> 00:52:11,610
+kaynaklarının planlanması
+
+294
+00:52:11,610 --> 00:52:13,610
+ERP yazılımları
+
+295
+00:52:13,610 --> 00:52:15,610
+oluşturuldu
+
+296
+00:52:15,610 --> 00:52:17,610
+ki siz şimdi seçtiğiniz
+
+297
+00:52:17,610 --> 00:52:18,610
+konularda
+
+298
+00:52:18,610 --> 00:52:21,610
+uygulamalara baktığınızda
+
+299
+00:52:21,610 --> 00:52:23,610
+birçok yazılım firmasının
+
+300
+00:52:23,610 --> 00:52:28,610
+ERP uygulaması olduğunu göreceksiniz
+
+301
+00:52:29,610 --> 00:52:31,610
+tek bir
+
+302
+00:52:31,610 --> 00:52:35,610
+organizasyon için
+
+303
+00:52:35,610 --> 00:52:38,610
+anahtar işlem süreçlerinde
+
+304
+00:52:38,610 --> 00:52:43,610
+tek bir bilgi sisteminin
+
+305
+00:52:43,610 --> 00:52:48,610
+bütün yapı hakkında
+
+306
+00:52:48,610 --> 00:52:52,610
+işlem gerçekleştirilmesi
+
+307
+00:52:52,610 --> 00:52:56,610
+ve birçok iş süreçlerinin
+
+308
+00:52:56,610 --> 00:52:58,610
+modeller ve
+
+309
+00:52:58,610 --> 00:53:00,610
+otomasyonla
+
+310
+00:53:00,610 --> 00:53:05,610
+birlikte çalıştığını görüyoruz
+
+311
+00:53:05,610 --> 00:53:06,610
+yani
+
+312
+00:53:06,610 --> 00:53:08,610
+kurumsal sistemlerde
+
+313
+00:53:08,610 --> 00:53:10,610
+bu sağlanmaya çalışılıyor
+
+314
+00:53:10,610 --> 00:53:12,610
+ve nasıl bir yapı oluşuyor
+
+315
+00:53:12,610 --> 00:53:15,610
+enterprise sistemlerin yapısı
+
+316
+00:53:15,610 --> 00:53:18,610
+yani geleneksel yapıdaki şu
+
+317
+00:53:18,610 --> 00:53:21,610
+uygulamaları
+
+318
+00:53:21,610 --> 00:53:23,610
+ver taraf edip
+
+319
+00:53:23,610 --> 00:53:27,610
+işletmenin bu şekilde
+
+320
+00:53:27,610 --> 00:53:29,610
+çalışmasını sağlamak
+
+321
+00:53:29,610 --> 00:53:31,610
+nasıl olacak bu?
+
+322
+00:53:31,610 --> 00:53:35,610
+ortada bir kurumsal sistem
+
+323
+00:53:35,610 --> 00:53:37,610
+bütün iş süreçleri
+
+324
+00:53:37,610 --> 00:53:40,610
+bütün kurum seviyesindeki
+
+325
+00:53:40,610 --> 00:53:42,610
+iş süreçlerinin tanıtılması
+
+326
+00:53:42,610 --> 00:53:44,610
+iş süreçlerinin gerçekleştirilmesi
+
+327
+00:53:44,610 --> 00:53:47,610
+ve her bir birimle
+
+328
+00:53:47,610 --> 00:53:50,610
+işte finans muhasebe
+
+329
+00:53:51,610 --> 00:53:54,610
+finans muhasebe birimi
+
+330
+00:53:54,610 --> 00:53:57,610
+satış pazarlama birimi
+
+331
+00:53:57,610 --> 00:53:59,610
+insan kaynakları birimi
+
+332
+00:53:59,610 --> 00:54:02,610
+ve üretim biriminin
+
+333
+00:54:02,610 --> 00:54:04,610
+hepsine
+
+334
+00:54:04,610 --> 00:54:07,610
+servis yapabilecek şekilde
+
+335
+00:54:07,610 --> 00:54:09,610
+ayrıca
+
+336
+00:54:09,610 --> 00:54:11,610
+kurumsal sınırların dışında
+
+337
+00:54:11,610 --> 00:54:14,610
+tedarik sağlayıcılar
+
+338
+00:54:14,610 --> 00:54:16,610
+ve müşteriler
+
+339
+00:54:16,610 --> 00:54:18,610
+bunlarla da iletişimde
+
+340
+00:54:18,610 --> 00:54:21,610
+olacak şekilde tek bir
+
+341
+00:54:21,610 --> 00:54:24,610
+kurumsal sistem ama bu
+
+342
+00:54:24,610 --> 00:54:26,610
+kurumsal sisteminde tabi ki
+
+343
+00:54:26,610 --> 00:54:28,610
+modülleri var
+
+344
+00:54:28,610 --> 00:54:31,610
+bu modüllerde
+
+345
+00:54:31,610 --> 00:54:34,610
+işte müşteri ilişkileri yönetimi
+
+346
+00:54:34,610 --> 00:54:37,610
+tedarik zinciri yönetimi
+
+347
+00:54:37,610 --> 00:54:39,610
+gibi
+
+348
+00:54:39,610 --> 00:54:42,610
+alt birimler olacaktır
+
+349
+00:54:42,610 --> 00:54:45,610
+burada da
+
+350
+00:54:45,610 --> 00:54:47,610
+yani
+
+351
+00:54:47,610 --> 00:54:49,610
+şu önemli
+
+352
+00:54:49,610 --> 00:54:51,610
+bilgi sistemleri açısından
+
+353
+00:54:51,610 --> 00:54:52,610
+işletmelerde
+
+354
+00:54:52,610 --> 00:54:54,610
+geleneksel yapıda
+
+355
+00:54:54,610 --> 00:54:56,610
+her bir birimde
+
+356
+00:54:56,610 --> 00:54:58,610
+gerçekleşen işlemleri ayrı ayrı
+
+357
+00:54:58,610 --> 00:54:59,610
+düşünsek de
+
+358
+00:54:59,610 --> 00:55:01,610
+kurumsal mimari de bunların
+
+359
+00:55:01,610 --> 00:55:02,610
+hepsi bir arada
+
+360
+00:55:02,610 --> 00:55:04,610
+gerçekleşiyor ama bunlar
+
+361
+00:55:04,610 --> 00:55:06,610
+bir arada gerçekleşse de
+
+362
+00:55:06,610 --> 00:55:08,610
+alt modüllerde
+
+363
+00:55:08,610 --> 00:55:09,610
+mesela sizden istediğim
+
+364
+00:55:09,610 --> 00:55:11,610
+yapılanma da
+
+365
+00:55:11,610 --> 00:55:14,610
+buradaki her bir serviste
+
+366
+00:55:14,610 --> 00:55:16,610
+dikey serviste gerçekleşen
+
+367
+00:55:16,610 --> 00:55:18,610
+işletmecilik işlemlerini
+
+368
+00:55:18,610 --> 00:55:20,610
+sağlamak üzere
+
+369
+00:55:20,610 --> 00:55:22,610
+şu yapıda
+
+370
+00:55:22,610 --> 00:55:24,610
+nereye koyabiliriz
+
+371
+00:55:24,610 --> 00:55:26,610
+nasıl
+
+372
+00:55:26,610 --> 00:55:29,610
+çalışmasını sağlayabiliriz
+
+373
+00:55:29,610 --> 00:55:31,610
+kurumsal uygulamalara
+
+374
+00:55:31,610 --> 00:55:33,610
+baktığımızda
+
+375
+00:55:33,610 --> 00:55:37,940
+supply chain management
+
+376
+00:55:37,940 --> 00:55:39,940
+sistem ve
+
+377
+00:55:39,940 --> 00:55:41,940
+müşteri ilişkileri yönetim
+
+378
+00:55:41,940 --> 00:55:43,940
+sistemleri
+
+379
+00:55:43,940 --> 00:55:45,940
+ayırt ediyoruz
+
+380
+00:55:45,940 --> 00:55:47,940
+ayrıca
+
+381
+00:55:47,940 --> 00:55:48,940
+kurumsal uygulamalara
+
+382
+00:55:48,940 --> 00:55:49,940
+baktığımızda
+
+383
+00:55:49,940 --> 00:55:50,940
+HR
+
+384
+00:55:50,940 --> 00:55:52,940
+insan kaynakları sistemleri
+
+385
+00:55:52,940 --> 00:55:54,940
+ile ilişkili de
+
+386
+00:55:54,940 --> 00:55:56,940
+çok sayıda
+
+387
+00:55:56,940 --> 00:55:58,940
+yeni
+
+388
+00:55:58,940 --> 00:56:00,940
+uygulamalar
+
+389
+00:56:00,940 --> 00:56:02,940
+çıktığını görüyoruz
+
+390
+00:56:02,940 --> 00:56:04,940
+işte
+
+391
+00:56:04,940 --> 00:56:05,940
+iyi
+
+392
+00:56:05,940 --> 00:56:07,940
+çalışan seçimi
+
+393
+00:56:07,940 --> 00:56:09,940
+iyi ekip oluşturabilme
+
+394
+00:56:09,940 --> 00:56:11,940
+yetenek bilgisi
+
+395
+00:56:11,940 --> 00:56:13,940
+yetenek planlaması
+
+396
+00:56:13,940 --> 00:56:15,940
+kariyer planlaması
+
+397
+00:56:15,940 --> 00:56:17,940
+bunların nasıl gerçekleşebileceğini
+
+398
+00:56:17,940 --> 00:56:19,940
+sağlamak
+
+399
+00:56:19,940 --> 00:56:21,940
+bunlarla ilişkili arşiv verisi
+
+400
+00:56:21,940 --> 00:56:23,940
+tutabilme
+
+401
+00:56:23,940 --> 00:56:25,940
+hangi tür eleman
+
+402
+00:56:25,940 --> 00:56:27,940
+alımı yapılmasının
+
+403
+00:56:27,940 --> 00:56:29,940
+uygun olacağı
+
+404
+00:56:29,940 --> 00:56:31,940
+gibi uygulamalar
+
+405
+00:56:31,940 --> 00:56:33,940
+var
+
+406
+00:56:35,940 --> 00:56:37,940
+supply chain management
+
+407
+00:56:37,940 --> 00:56:39,940
+sistem
+
+408
+00:56:41,940 --> 00:56:43,940
+üretimi
+
+409
+00:56:43,940 --> 00:56:45,940
+ve bu üretilen
+
+410
+00:56:45,940 --> 00:56:47,940
+ya da toptan parakende
+
+411
+00:56:47,940 --> 00:56:49,940
+şirketlerde
+
+412
+00:56:49,940 --> 00:56:51,940
+elde bulunan
+
+413
+00:56:51,940 --> 00:56:53,940
+ürünün en iyi
+
+414
+00:56:53,940 --> 00:56:55,940
+şekilde dağıtılması
+
+415
+00:56:55,940 --> 00:56:57,940
+ya da üretim yapılan bir firma içinde
+
+416
+00:56:57,940 --> 00:56:59,940
+üretimi ve
+
+417
+00:56:59,940 --> 00:57:01,940
+dağıtımın en iyi
+
+418
+00:57:01,940 --> 00:57:03,940
+hale getirilmesi için
+
+419
+00:57:05,940 --> 00:57:07,940
+tedarikçiler ve firma
+
+420
+00:57:07,940 --> 00:57:09,940
+arasındaki
+
+421
+00:57:09,940 --> 00:57:11,940
+bilgi akışının
+
+422
+00:57:13,940 --> 00:57:15,940
+otomatize edilmesi
+
+423
+00:57:15,940 --> 00:57:17,940
+bilgi akışının
+
+424
+00:57:17,940 --> 00:57:19,940
+en iyi şekilde
+
+425
+00:57:19,940 --> 00:57:21,940
+sağlanmasını
+
+426
+00:57:21,940 --> 00:57:23,940
+gerçekleştiren
+
+427
+00:57:23,940 --> 00:57:25,940
+sistemdir supply chain
+
+428
+00:57:25,940 --> 00:57:27,940
+management sistemler
+
+429
+00:57:27,940 --> 00:57:29,940
+supply chain management
+
+430
+00:57:29,940 --> 00:57:31,940
+nedir
+
+431
+00:57:33,940 --> 00:57:37,449
+bir
+
+432
+00:57:37,449 --> 00:57:39,449
+ürünün
+
+433
+00:57:39,449 --> 00:57:42,889
+satın alınması
+
+434
+00:57:42,889 --> 00:57:44,889
+oluşturulması
+
+435
+00:57:44,889 --> 00:57:46,889
+ve
+
+436
+00:57:46,889 --> 00:57:48,889
+gönderilmesi
+
+437
+00:57:50,889 --> 00:57:52,889
+bütün aktivitelerin
+
+438
+00:57:54,889 --> 00:57:56,889
+birbiriyle
+
+439
+00:57:56,889 --> 00:57:58,889
+en iyi şekilde bağlantısının
+
+440
+00:57:58,889 --> 00:58:00,889
+sağlanması
+
+441
+00:58:00,889 --> 00:58:02,889
+tedarik zinciride
+
+442
+00:58:02,889 --> 00:58:04,889
+üretim
+
+443
+00:58:04,889 --> 00:58:06,889
+ürünlerin
+
+444
+00:58:06,889 --> 00:58:08,889
+üretimi ve dağıtımının
+
+445
+00:58:08,889 --> 00:58:10,889
+iş süreçleri
+
+446
+00:58:10,889 --> 00:58:12,889
+ve
+
+447
+00:58:12,889 --> 00:58:14,889
+organizasyon
+
+448
+00:58:14,889 --> 00:58:16,889
+ağı
+
+449
+00:58:16,889 --> 00:58:18,889
+iş süreçleri ve
+
+450
+00:58:18,889 --> 00:58:20,889
+organizasyon ağı da
+
+451
+00:58:20,889 --> 00:58:22,889
+supply chain dir yani
+
+452
+00:58:22,889 --> 00:58:24,889
+tedarik zinciri
+
+453
+00:58:24,889 --> 00:58:26,889
+tabi ki ilk hedef
+
+454
+00:58:28,889 --> 00:58:30,889
+tedarikçilerden
+
+455
+00:58:30,889 --> 00:58:32,889
+uygun ham maddeyi alıp
+
+456
+00:58:32,889 --> 00:58:34,889
+en iyi üretimi
+
+457
+00:58:34,889 --> 00:58:36,889
+gerçekleştirebilmektir
+
+458
+00:58:36,889 --> 00:58:38,889
+ama tüm tedarik
+
+459
+00:58:38,889 --> 00:58:40,889
+zincirine baktığımızda
+
+460
+00:58:40,889 --> 00:58:42,889
+bunun
+
+461
+00:58:42,889 --> 00:58:44,889
+iş kanallarına dağıtımının
+
+462
+00:58:44,889 --> 00:58:46,889
+yapılması da
+
+463
+00:58:46,889 --> 00:58:48,889
+hatta müşteriye
+
+464
+00:58:48,889 --> 00:58:50,889
+iletimi de
+
+465
+00:58:50,889 --> 00:58:52,889
+dağıtım zinciri de
+
+466
+00:58:52,889 --> 00:58:54,889
+bunun yapısına
+
+467
+00:58:54,889 --> 00:58:56,889
+eklenmiş oluyor
+
+468
+00:58:56,889 --> 00:59:01,030
+şöyle baktığımızda
+
+469
+00:59:01,030 --> 00:59:03,030
+bir supply chaini
+
+470
+00:59:03,030 --> 00:59:05,030
+daha iyi görebiliyoruz
+
+471
+00:59:05,030 --> 00:59:08,500
+şurası tedarikçiler
+
+472
+00:59:08,500 --> 00:59:10,500
+farklı
+
+473
+00:59:10,500 --> 00:59:12,500
+bunlar da
+
+474
+00:59:12,500 --> 00:59:14,500
+işte
+
+475
+00:59:14,500 --> 00:59:16,500
+temin edici
+
+476
+00:59:16,500 --> 00:59:18,500
+üretim biriminin
+
+477
+00:59:18,500 --> 00:59:20,500
+ilişkide olduğu temin ediciler
+
+478
+00:59:20,500 --> 00:59:22,500
+ama bunun da gerisinde
+
+479
+00:59:22,500 --> 00:59:24,500
+katmanlar var
+
+480
+00:59:24,500 --> 00:59:26,500
+yani
+
+481
+00:59:26,500 --> 00:59:29,940
+bizim
+
+482
+00:59:29,940 --> 00:59:31,940
+bizimle ilişkide olan tedarikçiler
+
+483
+00:59:31,940 --> 00:59:33,940
+var ama bunların da
+
+484
+00:59:33,940 --> 00:59:35,940
+ürün aldığı yerler
+
+485
+00:59:35,940 --> 00:59:37,940
+var
+
+486
+00:59:37,940 --> 00:59:39,940
+bu büyük
+
+487
+00:59:39,940 --> 00:59:41,940
+ham madde satan firmalarda
+
+488
+00:59:41,940 --> 00:59:43,940
+küçük tedarikçilerden
+
+489
+00:59:43,940 --> 00:59:45,940
+bütün bu
+
+490
+00:59:45,940 --> 00:59:47,940
+ürünleri alıyor
+
+491
+00:59:47,940 --> 00:59:49,940
+yani burada
+
+492
+00:59:49,940 --> 00:59:51,940
+bir
+
+493
+00:59:51,940 --> 00:59:53,940
+alınan ürünle ham maddeyle
+
+494
+00:59:53,940 --> 00:59:55,940
+ilişkili
+
+495
+00:59:55,940 --> 00:59:57,940
+bir
+
+496
+00:59:57,940 --> 00:59:59,940
+problem olduğunda
+
+497
+00:59:59,940 --> 01:00:01,940
+kaç katman
+
+498
+01:00:01,940 --> 01:00:03,940
+geri gidilecek bundan kim sorumlu
+
+499
+01:00:03,940 --> 01:00:05,940
+olacak
+
+500
+01:00:05,940 --> 01:00:07,940
+bir tür farklılıklar
+
+501
+01:00:07,940 --> 01:00:09,940
+var
+
+502
+01:00:09,940 --> 01:00:11,940
+işletmelerin
+
+503
+01:00:11,940 --> 01:00:13,940
+uygulamalarında o yüzden
+
+504
+01:00:13,940 --> 01:00:15,940
+buraya da
+
+505
+01:00:15,940 --> 01:00:17,940
+tedarikçileri katman katman
+
+506
+01:00:17,940 --> 01:00:19,940
+belirtmişler
+
+507
+01:00:19,940 --> 01:00:24,500
+üretim
+
+508
+01:00:24,500 --> 01:00:26,500
+işlemleri
+
+509
+01:00:26,500 --> 01:00:28,500
+burada
+
+510
+01:00:28,500 --> 01:00:30,500
+üretimde kapasite
+
+511
+01:00:30,500 --> 01:00:32,500
+envanter seviyesi
+
+512
+01:00:32,500 --> 01:00:34,500
+dağıtım iş listesi
+
+513
+01:00:34,500 --> 01:00:36,500
+ödeme listesi
+
+514
+01:00:36,500 --> 01:00:38,500
+yani
+
+515
+01:00:38,500 --> 01:00:40,500
+siparişler
+
+516
+01:00:40,500 --> 01:00:44,840
+ne kadar
+
+517
+01:00:44,840 --> 01:00:46,840
+kapasite
+
+518
+01:00:46,840 --> 01:00:48,840
+ne kadar ham madde envanter seviyesi
+
+519
+01:00:48,840 --> 01:00:50,840
+olmalı ve
+
+520
+01:00:50,840 --> 01:00:52,840
+dağıtım iş listesi bunlarla
+
+521
+01:00:52,840 --> 01:00:54,840
+ilişkili ödemeler var
+
+522
+01:00:54,840 --> 01:00:56,840
+üreticiden
+
+523
+01:00:56,840 --> 01:00:58,840
+sonra
+
+524
+01:00:58,840 --> 01:01:00,840
+ürünün
+
+525
+01:01:00,840 --> 01:01:02,840
+yani
+
+526
+01:01:02,840 --> 01:01:04,840
+bizim
+
+527
+01:01:04,840 --> 01:01:06,840
+kurumumuzdaki üretimden
+
+528
+01:01:06,840 --> 01:01:08,840
+çıkan ürünün
+
+529
+01:01:08,840 --> 01:01:10,840
+dağıtım kanallarına
+
+530
+01:01:10,840 --> 01:01:12,840
+gönderilmesi var
+
+531
+01:01:12,840 --> 01:01:14,840
+yine
+
+532
+01:01:14,840 --> 01:01:16,840
+toptancılara
+
+533
+01:01:16,840 --> 01:01:18,840
+gidebilir ve müşteriye gidecek
+
+534
+01:01:18,840 --> 01:01:20,840
+müşteriden
+
+535
+01:01:20,840 --> 01:01:22,840
+gelen işlemlerde
+
+536
+01:01:22,840 --> 01:01:24,840
+müşteriden sipariş gelecek
+
+537
+01:01:24,840 --> 01:01:26,840
+ya da geri
+
+538
+01:01:26,840 --> 01:01:28,840
+bakım
+
+539
+01:01:28,840 --> 01:01:30,840
+işlemi gelecek
+
+540
+01:01:30,840 --> 01:01:32,840
+tamir isteği
+
+541
+01:01:32,840 --> 01:01:34,840
+gelecek servis istekleri
+
+542
+01:01:34,840 --> 01:01:36,840
+var ve ödemeler var
+
+543
+01:01:36,840 --> 01:01:38,840
+bütün bunlar
+
+544
+01:01:38,840 --> 01:01:40,840
+işte upstream ve downstream
+
+545
+01:01:40,840 --> 01:01:42,840
+upstream
+
+546
+01:01:42,840 --> 01:01:44,840
+bizim
+
+547
+01:01:44,840 --> 01:01:46,840
+tedarik kanallarımız da
+
+548
+01:01:46,840 --> 01:01:48,840
+üstte doğru katman katman
+
+549
+01:01:48,840 --> 01:01:50,840
+gidiyor downstream
+
+550
+01:01:50,840 --> 01:01:52,840
+de müşteriye gidene kadar
+
+551
+01:01:52,840 --> 01:01:54,840
+da bir toptancıdan geçebilir
+
+552
+01:01:54,840 --> 01:01:56,840
+dağıtım kanalından geçebilir
+
+553
+01:01:56,840 --> 01:01:58,840
+üretim firmasından çıkan
+
+554
+01:01:58,840 --> 01:02:00,840
+yani bizim firmamızdan çıkan
+
+555
+01:02:00,840 --> 01:02:02,840
+ürün
+
+556
+01:02:02,840 --> 01:02:04,840
+firmaya gelecek
+
+557
+01:02:04,840 --> 01:02:06,840
+ham madde
+
+558
+01:02:06,840 --> 01:02:08,840
+ya da
+
+559
+01:02:08,840 --> 01:02:10,840
+satılacak olan ürün
+
+560
+01:02:10,840 --> 01:02:12,840
+farklı kanallardan
+
+561
+01:02:12,840 --> 01:02:14,840
+hareket ederek gelecek
+
+562
+01:02:14,840 --> 01:02:16,840
+buna upstream deniyor
+
+563
+01:02:16,840 --> 01:02:18,840
+müşteriye kadar
+
+564
+01:02:18,840 --> 01:02:20,840
+bizim ürettiğimiz ürün de
+
+565
+01:02:20,840 --> 01:02:22,840
+müşteriye kadar ulaşana kadar
+
+566
+01:02:22,840 --> 01:02:24,840
+da toptancıya
+
+567
+01:02:24,840 --> 01:02:26,840
+dağıtım kanalına uğrayarak
+
+568
+01:02:26,840 --> 01:02:28,840
+gidecek ve
+
+569
+01:02:28,840 --> 01:02:30,840
+müşteriden gelen bir geri dönüşte
+
+570
+01:02:30,840 --> 01:02:32,840
+yeni siparişler olabilir
+
+571
+01:02:32,840 --> 01:02:34,840
+geri verme isteği olabilir
+
+572
+01:02:34,840 --> 01:02:36,840
+bakım isteği
+
+573
+01:02:36,840 --> 01:02:38,840
+olabilir
+
+574
+01:02:38,840 --> 01:02:40,840
+bu da
+
+575
+01:02:40,840 --> 01:02:42,840
+bu katmanları
+
+576
+01:02:42,840 --> 01:02:44,840
+aşarak gelecek
+
+577
+01:02:44,840 --> 01:02:46,840
+işte bütün buna
+
+578
+01:02:46,840 --> 01:02:48,840
+bir tedarik zinciri
+
+579
+01:02:48,840 --> 01:02:50,840
+diyoruz biz buradaki akış
+
+580
+01:02:50,840 --> 01:02:52,840
+içinde
+
+581
+01:02:52,840 --> 01:02:54,840
+farklı uygulamalar
+
+582
+01:02:54,840 --> 01:02:56,840
+mevcut
+
+583
+01:02:56,840 --> 01:03:05,659
+evet burada
+
+584
+01:03:05,659 --> 01:03:07,659
+şimdi şu yapıyı gördük
+
+585
+01:03:07,659 --> 01:03:09,659
+bir tedarik zincirini gördük
+
+586
+01:03:09,659 --> 01:03:11,659
+bu tedarik zinciri
+
+587
+01:03:11,659 --> 01:03:13,659
+bir
+
+588
+01:03:13,659 --> 01:03:15,659
+müşteriye
+
+589
+01:03:15,659 --> 01:03:19,420
+ne fayda sağlar
+
+590
+01:03:19,420 --> 01:03:23,460
+bir defa
+
+591
+01:03:23,460 --> 01:03:25,460
+kurumun
+
+592
+01:03:25,460 --> 01:03:27,460
+üretim
+
+593
+01:03:27,460 --> 01:03:29,460
+depolama ve taşımacılık
+
+594
+01:03:29,460 --> 01:03:31,460
+için
+
+595
+01:03:33,460 --> 01:03:35,460
+kararlarını ne zaman
+
+596
+01:03:35,460 --> 01:03:37,460
+gerçekleştirecek bunu
+
+597
+01:03:37,460 --> 01:03:39,460
+üretecek ne depolayacak
+
+598
+01:03:39,460 --> 01:03:41,460
+neyi taşıyacak
+
+599
+01:03:41,460 --> 01:03:43,460
+müşteriye doğru
+
+600
+01:03:43,460 --> 01:03:45,460
+bunu ne zaman yapacak
+
+601
+01:03:45,460 --> 01:03:47,460
+bu kararları vermesini
+
+602
+01:03:47,460 --> 01:03:49,460
+sipariş
+
+603
+01:03:49,460 --> 01:03:51,460
+ileri
+
+604
+01:03:51,460 --> 01:03:53,460
+hızlı iletişim
+
+605
+01:03:53,460 --> 01:03:55,460
+gerçekleştirmesini
+
+606
+01:03:55,460 --> 01:03:57,460
+siparişlerin durumunu izlermesini
+
+607
+01:03:59,460 --> 01:04:01,460
+envanterin
+
+608
+01:04:01,460 --> 01:04:03,460
+kontrol edilmesi ve izlermesini
+
+609
+01:04:03,460 --> 01:04:05,460
+evanter
+
+610
+01:04:05,460 --> 01:04:07,460
+ulaşım
+
+611
+01:04:07,460 --> 01:04:09,460
+ve depolama
+
+612
+01:04:09,460 --> 01:04:11,460
+maliyetlerinin
+
+613
+01:04:11,460 --> 01:04:13,460
+azaltılmasını
+
+614
+01:04:15,460 --> 01:04:17,460
+firmadan
+
+615
+01:04:17,460 --> 01:04:19,460
+müşteriye doğru
+
+616
+01:04:19,460 --> 01:04:21,460
+gönderilen
+
+617
+01:04:21,460 --> 01:04:24,900
+gönderim işlemlerinin
+
+618
+01:04:24,900 --> 01:04:26,900
+takip edilmesini
+
+619
+01:04:26,900 --> 01:04:30,280
+gerçek müşteri
+
+620
+01:04:30,280 --> 01:04:32,280
+taleplerini
+
+621
+01:04:32,280 --> 01:04:34,280
+dayanan bir üretim
+
+622
+01:04:34,280 --> 01:04:36,280
+planlamasını sağlayacağını
+
+623
+01:04:40,280 --> 01:04:42,280
+ürün
+
+624
+01:04:42,280 --> 01:04:44,280
+tasarımında
+
+625
+01:04:44,280 --> 01:04:46,280
+değişiklik
+
+626
+01:04:46,280 --> 01:04:48,280
+isteklerini
+
+627
+01:04:50,280 --> 01:04:52,280
+üretimde yenilikleri
+
+628
+01:04:52,280 --> 01:04:54,280
+daha hızlı
+
+629
+01:04:54,280 --> 01:04:56,280
+müşteriyle iletişim
+
+630
+01:04:56,280 --> 01:04:58,280
+kurmasını
+
+631
+01:04:58,280 --> 01:05:00,280
+bu talep toplamayı daha hızlı yapmasını
+
+632
+01:05:00,280 --> 01:05:02,280
+sağlayacaktır
+
+633
+01:05:02,280 --> 01:05:04,280
+her şeyin menajmentinin
+
+634
+01:05:04,280 --> 01:05:06,280
+faydaları
+
+635
+01:05:06,280 --> 01:05:08,280
+bunlar
+
+636
+01:05:08,280 --> 01:05:10,280
+olarak tanımlayabiliriz
+
+637
+01:05:10,280 --> 01:05:12,280
+evet ben
+
+638
+01:05:12,280 --> 01:05:14,280
+sizden hiçbir
+
+639
+01:05:14,280 --> 01:05:16,280
+şey alamadım geri besleme
+
+640
+01:05:18,280 --> 01:05:20,280
+şimdiye kadar
+
+641
+01:05:20,280 --> 01:05:22,280
+bunlar üzerinde
+
+642
+01:05:22,280 --> 01:05:24,280
+daha öncekiler üzerinde de
+
+643
+01:05:24,280 --> 01:05:26,280
+geçen haftada durmuştuk ama
+
+644
+01:05:28,280 --> 01:05:30,280
+hem sizin
+
+645
+01:05:30,280 --> 01:05:32,280
+konularınızı seçerken
+
+646
+01:05:32,280 --> 01:05:34,280
+yaptığınız incelemeler
+
+647
+01:05:34,280 --> 01:05:36,280
+hem tekrar bu
+
+648
+01:05:36,280 --> 01:05:38,280
+konular üzerinde durduğumuzda
+
+649
+01:05:38,280 --> 01:05:40,280
+aklınıza takılan
+
+650
+01:05:40,280 --> 01:06:02,469
+sorunuz var mı?
+
+651
+01:06:02,469 --> 01:06:04,469
+evet anlaşılıyor değil mi?
+
+652
+01:06:06,469 --> 01:06:08,469
+özellikle
+
+653
+01:06:08,469 --> 01:06:10,469
+şimdi size
+
+654
+01:06:10,469 --> 01:06:12,469
+çok yakın konular değil bunlar
+
+655
+01:06:14,469 --> 01:06:16,469
+işletme dersi almadınız
+
+656
+01:06:16,469 --> 01:06:18,469
+ama çalışma alanınız içinde
+
+657
+01:06:18,469 --> 01:06:20,469
+işletme olacak
+
+658
+01:06:20,469 --> 01:06:22,469
+o yüzden
+
+659
+01:06:22,469 --> 01:06:24,469
+işletmedeki yapılanmayı
+
+660
+01:06:24,469 --> 01:06:26,469
+dikey birimleri
+
+661
+01:06:26,469 --> 01:06:28,469
+çok fazla tekrarlı giderek
+
+662
+01:06:28,469 --> 01:06:30,469
+anlatıyorum
+
+663
+01:06:32,469 --> 01:06:34,469
+o yüzden
+
+664
+01:06:34,469 --> 01:06:36,469
+canlandırabiliyor musunuz?
+
+665
+01:06:36,469 --> 01:06:38,469
+gözünüzle
+
+666
+01:06:38,469 --> 01:06:40,469
+bu derste bir
+
+667
+01:06:42,469 --> 01:06:44,469
+hani size de yakın olsun diye
+
+668
+01:06:44,469 --> 01:06:46,469
+bir
+
+669
+01:06:48,469 --> 01:06:50,469
+bilgisayar
+
+670
+01:06:50,469 --> 01:06:52,469
+projelerini
+
+671
+01:06:52,469 --> 01:06:54,469
+yöneten
+
+672
+01:06:54,469 --> 01:06:56,469
+işletmelerde
+
+673
+01:07:00,469 --> 01:07:02,469
+proje yöneticisi olarak
+
+674
+01:07:02,469 --> 01:07:04,469
+çalışan
+
+675
+01:07:06,469 --> 01:07:08,469
+bir misafir de getireceğim
+
+676
+01:07:10,469 --> 01:07:12,469
+yani projeleri
+
+677
+01:07:12,469 --> 01:07:14,469
+yürütürken
+
+678
+01:07:14,469 --> 01:07:16,469
+nasıl bir yol
+
+679
+01:07:16,469 --> 01:07:18,469
+izleniyor?
+
+680
+01:07:18,469 --> 01:07:20,469
+diğer çalışanlarla
+
+681
+01:07:20,469 --> 01:07:22,469
+anlaşma yolunu nasıl
+
+682
+01:07:22,469 --> 01:07:24,469
+sağlıyorlar?
+
+683
+01:07:24,469 --> 01:07:30,250
+ama
+
+684
+01:07:30,250 --> 01:07:32,250
+hani
+
+685
+01:07:32,250 --> 01:07:34,250
+bu konuda bir problem var mı?
+
+686
+01:07:34,250 --> 01:07:36,250
+şu ana kadar
+
+687
+01:07:36,250 --> 01:07:54,309
+tamam o zaman
+
+688
+01:07:54,309 --> 01:07:56,309
+şunun üzerinde de
+
+689
+01:07:56,309 --> 01:08:08,519
+duralım
+
+690
+01:08:08,519 --> 01:08:10,519
+kurumsal uygulamalarda
+
+691
+01:08:10,519 --> 01:08:12,519
+iş birliği
+
+692
+01:08:14,519 --> 01:08:16,520
+farklı birimlerde
+
+693
+01:08:16,520 --> 01:08:18,520
+iş birliğini
+
+694
+01:08:18,520 --> 01:08:20,520
+oluşturuyoruz
+
+695
+01:08:22,520 --> 01:08:24,520
+firma
+
+696
+01:08:24,520 --> 01:08:26,520
+özel netvorku içinde
+
+697
+01:08:26,520 --> 01:08:28,520
+müşteriler ne yapıyor?
+
+698
+01:08:28,520 --> 01:08:30,520
+müşteriler siparişlerini
+
+699
+01:08:30,520 --> 01:08:32,520
+veriyor
+
+700
+01:08:32,520 --> 01:08:34,520
+ürün değişiklik isteklerini veriyorlar
+
+701
+01:08:34,520 --> 01:08:36,520
+ve bununla ilgili cevap alabiliyorlar
+
+702
+01:08:36,520 --> 01:08:38,520
+satış pazarlama
+
+703
+01:08:38,520 --> 01:08:40,520
+birimi
+
+704
+01:08:40,520 --> 01:08:42,520
+pazarlama ile koordinasyon haline
+
+705
+01:08:42,520 --> 01:08:44,520
+geliyor
+
+706
+01:08:44,520 --> 01:08:46,520
+üretim birimi
+
+707
+01:08:48,520 --> 01:08:50,520
+malzemelerin faturasını
+
+708
+01:08:50,520 --> 01:08:52,520
+alıyor
+
+709
+01:08:52,520 --> 01:08:54,520
+ham madde alışlarının
+
+710
+01:08:54,520 --> 01:08:56,520
+talep tahminlerini
+
+711
+01:08:56,520 --> 01:08:58,520
+oluşturuyor bu sistemden
+
+712
+01:08:58,520 --> 01:09:00,520
+siparişinin durumuna bakabiliyor
+
+713
+01:09:02,520 --> 01:09:04,520
+üretimdeki mühendisler tasarım
+
+714
+01:09:04,520 --> 01:09:06,520
+belgelerini
+
+715
+01:09:06,520 --> 01:09:08,520
+alıyorlar
+
+716
+01:09:08,520 --> 01:09:10,520
+farklı tasarım
+
+717
+01:09:10,520 --> 01:09:12,520
+modelleri
+
+718
+01:09:12,520 --> 01:09:14,520
+oluşturabiliyorlar
+
+719
+01:09:14,520 --> 01:09:16,520
+bu konuda yine
+
+720
+01:09:16,520 --> 01:09:18,520
+firma bilgi sisteminden
+
+721
+01:09:18,520 --> 01:09:20,520
+destek alıyorlar
+
+722
+01:09:22,520 --> 01:09:24,520
+temin edicilerde
+
+723
+01:09:24,520 --> 01:09:26,520
+fiyat listelerini ve
+
+724
+01:09:26,520 --> 01:09:28,520
+yenilikleri
+
+725
+01:09:28,520 --> 01:09:30,520
+yani
+
+726
+01:09:30,520 --> 01:09:32,520
+ham madde satışı olabilir ya da
+
+727
+01:09:32,520 --> 01:09:34,520
+satışçıları olabilir
+
+728
+01:09:34,520 --> 01:09:36,520
+bununla ilgili
+
+729
+01:09:36,520 --> 01:09:38,520
+bilgi alabiliyorlar
+
+730
+01:09:38,520 --> 01:09:40,520
+sistemden
+
+731
+01:09:40,520 --> 01:09:42,520
+evet
+
+732
+01:09:42,520 --> 01:09:44,520
+o zaman
+
+733
+01:09:44,520 --> 01:09:46,520
+bu defa
+
+734
+01:09:46,520 --> 01:09:58,279
+ara verelim
+
+735
+01:09:58,279 --> 01:10:00,279
+arayı tek
+
+736
+01:10:00,279 --> 01:10:02,279
+ara olarak vereceğim
+
+737
+01:10:02,279 --> 01:10:04,279
+o yüzden
+
+738
+01:10:04,279 --> 01:10:09,130
+15 dakika
+
+739
+01:10:09,130 --> 01:29:52,699
+ara veriyorum
+
+740
+01:29:52,699 --> 01:29:54,699
+slide paylaşımında problem var mı?
+
+741
+01:29:54,699 --> 01:30:02,810
+evet hocam veriyoruz
+
+742
+01:30:02,810 --> 01:30:04,810
+tamam teşekkürler
+
+743
+01:30:04,810 --> 01:30:06,810
+evet
+
+744
+01:30:06,810 --> 01:30:08,810
+az önce şu
+
+745
+01:30:08,810 --> 01:30:10,810
+şekil üzerindeydik
+
+746
+01:30:10,810 --> 01:30:12,810
+ve tekrar
+
+747
+01:30:12,810 --> 01:30:14,810
+bunun iş
+
+748
+01:30:14,810 --> 01:30:16,810
+süreçlerindeki faydası
+
+749
+01:30:16,810 --> 01:30:18,810
+kurumsal
+
+750
+01:30:18,810 --> 01:30:20,810
+uygulamalarda onu
+
+751
+01:30:20,810 --> 01:30:22,810
+toparlayacağım şimdi
+
+752
+01:30:22,810 --> 01:30:39,369
+iş süreçlerinde
+
+753
+01:30:39,369 --> 01:30:41,369
+işletmecilikte
+
+754
+01:30:41,369 --> 01:30:43,369
+iş birliği
+
+755
+01:30:43,369 --> 01:30:45,369
+çalışmaları
+
+756
+01:30:45,369 --> 01:30:47,369
+ürün tasarımı ve geliştirilmesini
+
+757
+01:30:47,369 --> 01:30:49,369
+servis ve desteği
+
+758
+01:30:49,369 --> 01:30:51,369
+supply chain management
+
+759
+01:30:51,369 --> 01:30:53,369
+supply chain
+
+760
+01:30:53,369 --> 01:30:55,369
+tedarik zinciri koordinasyonunu
+
+761
+01:30:55,369 --> 01:30:57,369
+logistiği
+
+762
+01:30:57,369 --> 01:30:59,369
+satış destek
+
+763
+01:30:59,369 --> 01:31:01,369
+ve eğitimini
+
+764
+01:31:01,369 --> 01:31:03,369
+kanal yönetimini
+
+765
+01:31:03,369 --> 01:31:05,369
+sağlayacaktır
+
+766
+01:31:05,369 --> 01:31:07,369
+eğer
+
+767
+01:31:07,369 --> 01:31:09,369
+tüm
+
+768
+01:31:09,369 --> 01:31:11,369
+ticari ortamlarla iş birliği
+
+769
+01:31:11,369 --> 01:31:13,369
+çalışması
+
+770
+01:31:13,369 --> 01:31:15,369
+söz konusuysa
+
+771
+01:31:15,369 --> 01:31:17,369
+şimdi
+
+772
+01:31:17,369 --> 01:31:19,369
+biz enterprise
+
+773
+01:31:19,369 --> 01:31:21,369
+resource planning
+
+774
+01:31:21,369 --> 01:31:23,369
+kavramıyla tanıştık
+
+775
+01:31:23,369 --> 01:31:25,369
+kurumsal
+
+776
+01:31:25,369 --> 01:31:27,369
+uygulamalar
+
+777
+01:31:27,369 --> 01:31:29,369
+yapısını gördük
+
+778
+01:31:31,369 --> 01:31:33,369
+geleneksel
+
+779
+01:31:33,369 --> 01:31:35,369
+bilgi sistemleriyle
+
+780
+01:31:35,369 --> 01:31:37,369
+işletme yönetiminin
+
+781
+01:31:37,369 --> 01:31:39,369
+yapısı
+
+782
+01:31:39,369 --> 01:31:41,369
+ve
+
+783
+01:31:41,369 --> 01:31:43,369
+kurumsal uygulamaların
+
+784
+01:31:43,369 --> 01:31:45,369
+yapısı arasındaki
+
+785
+01:31:45,369 --> 01:31:47,369
+farklılık üzerinde durduk
+
+786
+01:31:47,369 --> 01:31:49,369
+o iki şekli hatırlıyorsunuz
+
+787
+01:31:49,369 --> 01:31:51,369
+değil mi
+
+788
+01:31:51,369 --> 01:31:53,369
+iş birliği çalışmaları varsa
+
+789
+01:31:53,369 --> 01:31:55,369
+ticari iş birlikleri
+
+790
+01:31:55,369 --> 01:31:57,369
+bunun
+
+791
+01:31:57,369 --> 01:31:59,369
+faydalarını
+
+792
+01:31:59,369 --> 01:32:01,369
+gördük tedarik zinciri
+
+793
+01:32:01,369 --> 01:32:03,369
+üzerinde
+
+794
+01:32:03,369 --> 01:32:05,369
+şimdi
+
+795
+01:32:05,369 --> 01:32:07,369
+bunun dışında kurumsal
+
+796
+01:32:07,369 --> 01:32:09,369
+uygulamalar çerçevesinde
+
+797
+01:32:11,369 --> 01:32:13,369
+bir de
+
+798
+01:32:13,369 --> 01:32:15,369
+müşteri ilişkileri
+
+799
+01:32:15,369 --> 01:32:17,369
+yönetiminden söz etmiştik
+
+800
+01:32:17,369 --> 01:32:19,369
+şimdi
+
+801
+01:32:19,369 --> 01:32:21,369
+şu iki
+
+802
+01:32:21,369 --> 01:32:23,369
+şekil üzerinde
+
+803
+01:32:23,369 --> 01:32:25,369
+duracağım tekrar
+
+804
+01:32:25,369 --> 01:32:27,369
+ilk başlarda
+
+805
+01:32:27,369 --> 01:32:29,369
+derste olmayan arkadaşlarınız vardı
+
+806
+01:32:31,369 --> 01:32:33,369
+bir şurada
+
+807
+01:32:33,369 --> 01:32:35,369
+bizim
+
+808
+01:32:35,369 --> 01:32:37,369
+piramit yapımız
+
+809
+01:32:37,369 --> 01:32:39,369
+işletme bilgi sistemlerindeki
+
+810
+01:32:39,369 --> 01:32:41,369
+piramit yapımızda
+
+811
+01:32:43,369 --> 01:32:45,369
+bütün dikey birimlerin
+
+812
+01:32:45,369 --> 01:32:47,369
+uygulamalarını
+
+813
+01:32:47,369 --> 01:32:49,369
+içine alan
+
+814
+01:32:49,369 --> 01:32:51,369
+bu uygulamalar da gerçekleşen her şey
+
+815
+01:32:51,369 --> 01:32:53,369
+içine alan
+
+816
+01:32:53,369 --> 01:32:55,369
+hem supply chain management sistemler
+
+817
+01:32:55,369 --> 01:32:57,369
+hem müşteri ilişkileri
+
+818
+01:32:57,369 --> 01:32:59,369
+yönetim sistemlerinin
+
+819
+01:32:59,369 --> 01:33:01,369
+bütün birimlerle
+
+820
+01:33:01,369 --> 01:33:03,369
+ilişkilendirildiğini görüyoruz
+
+821
+01:33:03,369 --> 01:33:05,369
+ayrıca hem
+
+822
+01:33:05,369 --> 01:33:07,369
+üst yönetim hem
+
+823
+01:33:07,369 --> 01:33:09,369
+transaction processing sistem
+
+824
+01:33:09,369 --> 01:33:11,369
+anlamındaki
+
+825
+01:33:11,369 --> 01:33:13,369
+uygulamaların
+
+826
+01:33:13,369 --> 01:33:15,369
+bilgi birikimini birleştiren
+
+827
+01:33:15,369 --> 01:33:17,369
+knowledge management
+
+828
+01:33:17,369 --> 01:33:19,369
+sistem yapısı var
+
+829
+01:33:21,369 --> 01:33:23,369
+bunlar
+
+830
+01:33:23,369 --> 01:33:25,369
+ERP sistemlerini
+
+831
+01:33:25,369 --> 01:33:27,369
+kurumsal mimari
+
+832
+01:33:27,369 --> 01:33:29,369
+yapısını
+
+833
+01:33:29,369 --> 01:33:31,369
+bu düşünce yapısı
+
+834
+01:33:31,369 --> 01:33:33,369
+geliştirmiş oluyor
+
+835
+01:33:33,369 --> 01:33:35,369
+bir de geleneksel sistemlerle
+
+836
+01:33:37,369 --> 01:33:39,369
+enterprise kurumsal
+
+837
+01:33:39,369 --> 01:33:41,369
+uygulamalar arasındaki
+
+838
+01:33:41,369 --> 01:33:43,369
+farklılığı gördük
+
+839
+01:33:43,369 --> 01:33:45,369
+geleneksel sistemlerde
+
+840
+01:33:45,369 --> 01:33:47,369
+her bir dikey
+
+841
+01:33:47,369 --> 01:33:49,369
+uygulama birimi
+
+842
+01:33:49,369 --> 01:33:51,369
+departman
+
+843
+01:33:51,369 --> 01:33:53,369
+kendi işlerini
+
+844
+01:33:53,369 --> 01:33:55,369
+gerçekleştirerek
+
+845
+01:33:55,369 --> 01:33:57,369
+çalışıyor sonra birbirilerine
+
+846
+01:33:57,369 --> 01:33:59,369
+raporları birleştiren
+
+847
+01:33:59,369 --> 01:34:01,369
+uygulamalar
+
+848
+01:34:01,369 --> 01:34:03,369
+geliştiriliyordu
+
+849
+01:34:03,369 --> 01:34:05,369
+oysa
+
+850
+01:34:05,369 --> 01:34:07,369
+kurumsal
+
+851
+01:34:07,369 --> 01:34:09,369
+yapıda bir
+
+852
+01:34:09,369 --> 01:34:11,369
+kurumsal sistem çerçevesinde
+
+853
+01:34:11,369 --> 01:34:13,369
+bütün
+
+854
+01:34:13,369 --> 01:34:15,369
+dikey birimlerle
+
+855
+01:34:15,369 --> 01:34:17,369
+ilişkiler gerçekleştiriliyor
+
+856
+01:34:17,369 --> 01:34:19,369
+kurumsal çerçevede
+
+857
+01:34:19,369 --> 01:34:21,369
+işletme süreçleri
+
+858
+01:34:21,369 --> 01:34:23,369
+oluşturuluyor
+
+859
+01:34:23,369 --> 01:34:25,369
+hatta kurum
+
+860
+01:34:25,369 --> 01:34:27,369
+sınırları dışında da
+
+861
+01:34:27,369 --> 01:34:29,369
+vendorlar yani tedarikçiler
+
+862
+01:34:29,369 --> 01:34:31,369
+ve customerlar
+
+863
+01:34:31,369 --> 01:34:33,369
+müşterilerle ilişkiler
+
+864
+01:34:33,369 --> 01:34:38,600
+gerçekleştiriliyor
+
+865
+01:34:38,600 --> 01:34:40,600
+kurumsal sistem yapısı
+
+866
+01:34:40,600 --> 01:34:42,600
+içinde
+
+867
+01:34:42,600 --> 01:34:44,600
+diğer
+
+868
+01:34:44,600 --> 01:34:46,600
+sistemleri
+
+869
+01:34:46,600 --> 01:34:48,600
+görelim şimdi
+
+870
+01:34:48,600 --> 01:34:50,600
+ilk önce
+
+871
+01:34:50,600 --> 01:34:52,600
+az önceki derste
+
+872
+01:34:52,600 --> 01:34:54,600
+daha ayrıntılı
+
+873
+01:34:54,600 --> 01:34:56,600
+olarak
+
+874
+01:34:56,600 --> 01:34:58,600
+göreceğimiz
+
+875
+01:34:58,600 --> 01:35:00,600
+daha sonra
+
+876
+01:35:00,600 --> 01:35:02,600
+tedarik zinciri nedir
+
+877
+01:35:02,600 --> 01:35:04,600
+tedarik zinciri yönetimi nedir
+
+878
+01:35:04,600 --> 01:35:06,600
+bu kavram
+
+879
+01:35:06,600 --> 01:35:08,600
+üzerinde durduk
+
+880
+01:35:08,600 --> 01:35:10,600
+ama bunu daha sonra
+
+881
+01:35:10,600 --> 01:35:12,600
+genişleteceğiz zaten
+
+882
+01:35:12,600 --> 01:35:14,600
+bir de
+
+883
+01:35:14,600 --> 01:35:16,600
+diğer ikinci önemli yapımız
+
+884
+01:35:16,600 --> 01:35:18,600
+olan müşteri ilişkileri
+
+885
+01:35:18,600 --> 01:35:20,600
+yönetim
+
+886
+01:35:20,600 --> 01:35:22,600
+sistemini görelim
+
+887
+01:35:22,600 --> 01:35:24,600
+müşteri ilişkileri yönetim sisteminde
+
+888
+01:35:24,600 --> 01:35:26,600
+yani
+
+889
+01:35:26,600 --> 01:35:28,600
+bütün
+
+890
+01:35:28,600 --> 01:35:30,600
+müşterilerle
+
+891
+01:35:30,600 --> 01:35:32,600
+ilişkilerin
+
+892
+01:35:32,600 --> 01:35:34,600
+hareketlerin
+
+893
+01:35:34,600 --> 01:35:44,630
+izlenmesi
+
+894
+01:35:44,630 --> 01:35:46,630
+müşteri memnuniyetinin
+
+895
+01:35:46,630 --> 01:35:48,630
+müşteri geri dönüşlerinin
+
+896
+01:35:48,630 --> 01:35:50,630
+kazancın
+
+897
+01:35:50,630 --> 01:35:54,869
+optimize
+
+898
+01:35:54,869 --> 01:35:56,869
+edilmesini
+
+899
+01:35:56,869 --> 01:35:58,869
+sağlamak üzere verinin
+
+900
+01:35:58,869 --> 01:36:00,869
+analiz edilmesi
+
+901
+01:36:00,869 --> 01:36:02,869
+yani hem müşteri hareketlerini
+
+902
+01:36:02,869 --> 01:36:04,869
+izlenmesi ve
+
+903
+01:36:04,869 --> 01:36:06,869
+en iyi ilişkilendirmenin
+
+904
+01:36:06,869 --> 01:36:08,869
+yapılabilmesi için
+
+905
+01:36:08,869 --> 01:36:10,869
+müşteri memnuniyetinin sağlanması için
+
+906
+01:36:10,869 --> 01:36:12,869
+bu
+
+907
+01:36:12,869 --> 01:36:14,869
+uygulamadan çıkan verinin analiz edilmesi
+
+908
+01:36:14,869 --> 01:36:16,869
+baktığımızda
+
+909
+01:36:16,869 --> 01:36:18,869
+satış
+
+910
+01:36:18,869 --> 01:36:20,869
+pazarlama müşteri servisi
+
+911
+01:36:20,869 --> 01:36:22,869
+hepsini ilgilendiren
+
+912
+01:36:22,869 --> 01:36:24,869
+bir yelpaze
+
+913
+01:36:24,869 --> 01:36:26,869
+içinde
+
+914
+01:36:26,869 --> 01:36:31,720
+CRM sistemi
+
+915
+01:36:31,720 --> 01:36:33,720
+ve
+
+916
+01:36:33,720 --> 01:36:35,720
+CRM sisteminde
+
+917
+01:36:35,720 --> 01:36:37,720
+satışlar, her türlü
+
+918
+01:36:37,720 --> 01:36:39,720
+satış, telefon satışı, web
+
+919
+01:36:39,720 --> 01:36:41,720
+satışı, alan satışları
+
+920
+01:36:41,720 --> 01:36:43,720
+toptan satışlar
+
+921
+01:36:43,720 --> 01:36:45,720
+pazarlama, kampanya
+
+922
+01:36:45,720 --> 01:36:47,720
+verisi, veri analizinin
+
+923
+01:36:47,720 --> 01:36:49,720
+oluşturulması, hangi
+
+924
+01:36:49,720 --> 01:36:51,720
+pazar
+
+925
+01:36:51,720 --> 01:36:53,720
+iç verisi ile
+
+926
+01:36:53,720 --> 01:36:55,720
+içerik bilgisi
+
+927
+01:36:55,720 --> 01:36:57,720
+müşteri servisleri
+
+928
+01:36:57,720 --> 01:36:59,720
+konsenter verisi
+
+929
+01:36:59,720 --> 01:37:01,720
+web
+
+930
+01:37:01,720 --> 01:37:03,720
+satışlarından elde edilen veri
+
+931
+01:37:03,720 --> 01:37:05,720
+alan, yani
+
+932
+01:37:05,720 --> 01:37:07,720
+şuradaki satış biribindeki
+
+933
+01:37:07,720 --> 01:37:09,720
+tüm satışlarla ilişkili
+
+934
+01:37:09,720 --> 01:37:11,720
+müşteri servisleri
+
+935
+01:37:11,720 --> 01:37:13,720
+bilgisi
+
+936
+01:37:13,720 --> 01:37:15,720
+ve burada
+
+937
+01:37:15,720 --> 01:37:17,720
+müşterilere
+
+938
+01:37:19,720 --> 01:37:21,720
+müşterilerin
+
+939
+01:37:21,720 --> 01:37:23,720
+belirli gruplar halinde
+
+940
+01:37:25,720 --> 01:37:27,720
+oluşturulması
+
+941
+01:37:27,720 --> 01:37:29,720
+müşterilere uygun
+
+942
+01:37:29,720 --> 01:37:31,720
+mesajların gönderilmesi
+
+943
+01:37:31,720 --> 01:37:33,720
+yani
+
+944
+01:37:33,720 --> 01:37:35,720
+müşteri ile bütünleşik bir yapı
+
+945
+01:37:35,720 --> 01:37:37,720
+oluşturulması
+
+946
+01:37:37,720 --> 01:37:39,720
+sağlanmaya
+
+947
+01:37:39,720 --> 01:37:41,720
+çalışılıyor. Uçtan uca
+
+948
+01:37:41,720 --> 01:37:43,720
+müşteri bakımının sağlanması
+
+949
+01:37:45,720 --> 01:37:47,720
+uzun vadeli
+
+950
+01:37:47,720 --> 01:37:49,720
+müşteri ilişkilerinin
+
+951
+01:37:49,720 --> 01:37:51,720
+oluşturulması
+
+952
+01:37:51,720 --> 01:37:53,720
+işte en iyi müşteri
+
+953
+01:37:53,720 --> 01:37:55,720
+tanımının yapılması
+
+954
+01:37:55,720 --> 01:37:57,720
+burada çok
+
+955
+01:37:57,720 --> 01:37:59,720
+farklı altı uygulamalar da var
+
+956
+01:37:59,720 --> 01:38:01,720
+işte bir çok
+
+957
+01:38:01,720 --> 01:38:03,720
+uygulama alanında önemli
+
+958
+01:38:03,720 --> 01:38:05,720
+olan
+
+959
+01:38:05,720 --> 01:38:07,720
+kaçan müşterilerin
+
+960
+01:38:07,720 --> 01:38:09,720
+durumlarının
+
+961
+01:38:09,720 --> 01:38:11,720
+izlenmesi
+
+962
+01:38:11,720 --> 01:38:13,720
+bunun tahmininin
+
+963
+01:38:13,720 --> 01:38:15,720
+yapılması hangi müşterinin
+
+964
+01:38:15,720 --> 01:38:17,720
+gitme
+
+965
+01:38:17,720 --> 01:38:19,720
+şeyi var, tehlikesi var
+
+966
+01:38:19,720 --> 01:38:21,720
+gibi
+
+967
+01:38:21,720 --> 01:38:23,720
+bu bankacılıkta, telekom şirketinde
+
+968
+01:38:23,720 --> 01:38:25,720
+çok fazla
+
+969
+01:38:25,720 --> 01:38:27,720
+rastladığımız günlük
+
+970
+01:38:27,720 --> 01:38:29,720
+hayatta da
+
+971
+01:38:29,720 --> 01:38:31,720
+müşteri ilişkileri yönetimini
+
+972
+01:38:31,720 --> 01:38:33,720
+en fazla
+
+973
+01:38:33,720 --> 01:38:35,720
+kullanan
+
+974
+01:38:35,720 --> 01:38:37,720
+iş alanları
+
+975
+01:38:37,720 --> 01:38:39,720
+rekabetin çok
+
+976
+01:38:39,720 --> 01:38:41,720
+olduğu iş alanları
+
+977
+01:38:41,720 --> 01:38:43,720
+yani hem
+
+978
+01:38:43,720 --> 01:38:45,720
+kazancın büyük hem de
+
+979
+01:38:45,720 --> 01:38:47,720
+rekabetin çok
+
+980
+01:38:47,720 --> 01:38:49,720
+olduğu iş alanları
+
+981
+01:38:49,720 --> 01:38:51,720
+işte günümüzde de telekom şirketlerinde
+
+982
+01:38:51,720 --> 01:38:53,720
+bankalarda
+
+983
+01:38:55,720 --> 01:38:57,720
+hastanelerde bunu görüyoruz
+
+984
+01:38:57,720 --> 01:38:59,720
+özel hastaneler
+
+985
+01:38:59,720 --> 01:39:01,720
+özellikle arttığında
+
+986
+01:39:01,720 --> 01:39:03,720
+bu uygulamaların
+
+987
+01:39:05,720 --> 01:39:07,720
+çok fazla müşteri
+
+988
+01:39:07,720 --> 01:39:09,720
+olarak bize de yansıdığını
+
+989
+01:39:09,720 --> 01:39:11,720
+görüyoruz
+
+990
+01:39:11,720 --> 01:39:13,720
+bunun dışında
+
+991
+01:39:13,720 --> 01:39:15,720
+bir de bilgi yönetim sistemlerinden
+
+992
+01:39:15,720 --> 01:39:17,720
+söz etmiştik
+
+993
+01:39:17,720 --> 01:39:19,720
+bilgi yönetim sistemleri de
+
+994
+01:39:21,720 --> 01:39:23,720
+bütün
+
+995
+01:39:23,720 --> 01:39:25,720
+kurumla ilişkili verinin
+
+996
+01:39:25,720 --> 01:39:27,720
+bilginin toplanması
+
+997
+01:39:29,720 --> 01:39:34,500
+ve
+
+998
+01:39:36,500 --> 01:39:38,500
+iş süreçleriyle yönetim kararlarının
+
+999
+01:39:40,500 --> 01:39:42,500
+desteklenmesi için
+
+1000
+01:39:42,500 --> 01:39:44,500
+firmadaki bütün
+
+1001
+01:39:44,500 --> 01:39:46,500
+deneyim ve
+
+1002
+01:39:46,500 --> 01:39:48,500
+bilgi birikiminin
+
+1003
+01:39:48,500 --> 01:39:50,500
+toplanması
+
+1004
+01:39:50,500 --> 01:39:52,500
+burada
+
+1005
+01:39:52,500 --> 01:39:54,500
+bu
+
+1006
+01:39:56,500 --> 01:39:58,500
+belgelerin
+
+1007
+01:39:58,500 --> 01:40:00,500
+dağıtılması
+
+1008
+01:40:00,500 --> 01:40:02,500
+ve yönetimi
+
+1009
+01:40:02,500 --> 01:40:04,500
+bilgi yönetim sistemleri
+
+1010
+01:40:06,500 --> 01:40:08,500
+bilgi yönetim sistemlerinin
+
+1011
+01:40:08,500 --> 01:40:10,500
+rolüne baktığımızda
+
+1012
+01:40:10,500 --> 01:40:12,500
+bilginin toplanması,saklanması
+
+1013
+01:40:12,500 --> 01:40:14,500
+dağıtımı ve
+
+1014
+01:40:14,500 --> 01:40:16,500
+bu bilginin gerekli alanlarda
+
+1015
+01:40:16,500 --> 01:40:18,500
+uygulamaya
+
+1016
+01:40:18,500 --> 01:40:21,979
+konması
+
+1017
+01:40:21,979 --> 01:40:23,979
+şeklinde
+
+1018
+01:40:25,979 --> 01:40:27,979
+kullanabiliriz buradaki
+
+1019
+01:40:27,979 --> 01:41:52,600
+bilgiyi
+
+1020
+01:41:52,600 --> 01:41:54,600
+uluslararası
+
+1021
+01:41:54,600 --> 01:41:56,600
+organizasyonlarda
+
+1022
+01:41:56,600 --> 01:41:58,600
+söz konusu
+
+1023
+01:42:02,390 --> 01:42:04,390
+uluslararası organizasyonlar içinde
+
+1024
+01:42:04,390 --> 01:42:06,390
+bütün bu
+
+1025
+01:42:08,390 --> 01:42:10,390
+bilgi sistemlerinde
+
+1026
+01:42:10,390 --> 01:42:12,390
+çok uluslu
+
+1027
+01:42:12,390 --> 01:42:14,390
+şube alan
+
+1028
+01:42:14,390 --> 01:42:16,390
+uluslararası firmalardan
+
+1029
+01:42:18,390 --> 01:42:20,390
+şirketleri de göz önünde
+
+1030
+01:42:20,390 --> 01:42:22,390
+bulundurarak işlem yapmamız
+
+1031
+01:42:22,390 --> 01:42:24,390
+gerekiyor o zaman bunlar da
+
+1032
+01:42:24,390 --> 01:42:26,390
+bu bilgi yönetim
+
+1033
+01:42:26,390 --> 01:42:28,390
+sistemlerinin
+
+1034
+01:42:30,390 --> 01:42:32,390
+önemi de artıyor
+
+1035
+01:42:34,390 --> 01:42:36,390
+uluslararası bilgi
+
+1036
+01:42:36,390 --> 01:42:38,390
+sistemlerinde
+
+1037
+01:42:38,390 --> 01:42:40,390
+hem
+
+1038
+01:42:40,390 --> 01:42:42,390
+iç yapıdaki
+
+1039
+01:42:44,390 --> 01:42:46,390
+bu uluslararası
+
+1040
+01:42:48,390 --> 01:42:50,390
+kurumların
+
+1041
+01:42:50,390 --> 01:42:52,390
+iç yapıdaki
+
+1042
+01:42:54,390 --> 01:42:56,390
+işlemleri
+
+1043
+01:42:56,390 --> 01:42:58,390
+çok uluslu işlemleri
+
+1044
+01:42:58,390 --> 01:43:00,390
+ve çok uluslu
+
+1045
+01:43:00,390 --> 01:43:02,390
+şirketlerin
+
+1046
+01:43:02,390 --> 01:43:04,390
+şubelerinin işlemleri
+
+1047
+01:43:04,390 --> 01:43:06,390
+olarak farklılaşıyor yani
+
+1048
+01:43:06,390 --> 01:43:08,390
+farklı işlem gruplarında bunları
+
+1049
+01:43:08,390 --> 01:43:10,390
+inceliyoruz
+
+1050
+01:43:10,390 --> 01:43:12,390
+şimdi
+
+1051
+01:43:12,390 --> 01:43:14,390
+biz bu
+
+1052
+01:43:14,390 --> 01:43:16,390
+kurumsal
+
+1053
+01:43:16,390 --> 01:43:18,390
+uygulamaları
+
+1054
+01:43:18,390 --> 01:43:20,390
+biraz daha
+
+1055
+01:43:20,390 --> 01:43:23,859
+geniş
+
+1056
+01:43:23,859 --> 01:43:25,859
+olarak görelim
+
+1057
+01:43:25,859 --> 01:43:27,859
+kurumsal uygulamaları
+
+1058
+01:43:27,859 --> 01:43:29,859
+biraz daha açmak
+
+1059
+01:43:29,859 --> 01:43:31,859
+istiyorum o yüzden
+
+1060
+01:43:31,859 --> 01:43:33,859
+şeyi değiştireceğim
+
+1061
+01:43:33,859 --> 01:44:08,119
+slide'ı
+
+1062
+01:44:08,119 --> 01:44:10,119
+kurumsal uygulamalar
+
+1063
+01:44:10,119 --> 01:44:12,119
+ve iç süreçlerinin
+
+1064
+01:44:12,119 --> 01:44:14,119
+bütünleştirilmesi
+
+1065
+01:44:14,119 --> 01:44:16,119
+burada
+
+1066
+01:44:16,119 --> 01:44:18,119
+kurumsal
+
+1067
+01:44:18,119 --> 01:44:20,119
+sistemlerde hangi
+
+1068
+01:44:20,119 --> 01:44:22,119
+iş yapıları var
+
+1069
+01:44:22,119 --> 01:44:24,119
+özellikle az önce
+
+1070
+01:44:24,119 --> 01:44:26,119
+bahsettiğimiz supply chain management
+
+1071
+01:44:26,119 --> 01:44:28,119
+ve müşteri ilişkilere yönetimini
+
+1072
+01:44:28,119 --> 01:44:30,119
+daha
+
+1073
+01:44:30,119 --> 01:44:32,119
+geniş çerçevede
+
+1074
+01:44:32,119 --> 01:44:34,119
+görmek, bunların hangi
+
+1075
+01:44:34,119 --> 01:44:36,119
+yazılımlara altta ihtiyacı
+
+1076
+01:44:36,119 --> 01:44:38,119
+olduğunu görmek
+
+1077
+01:44:38,119 --> 01:44:40,119
+kurumsal
+
+1078
+01:44:40,119 --> 01:44:42,119
+uygulamaların
+
+1079
+01:44:42,119 --> 01:44:44,119
+hangi platformlarda çalıştığını
+
+1080
+01:44:44,119 --> 01:44:46,119
+görmek ve
+
+1081
+01:44:46,119 --> 01:44:48,119
+farklı
+
+1082
+01:44:48,119 --> 01:44:50,119
+kurumsal uygulamaları
+
+1083
+01:44:52,119 --> 01:44:54,119
+uyarlarken
+
+1084
+01:44:54,119 --> 01:44:56,119
+iş
+
+1085
+01:44:56,119 --> 01:44:58,119
+farklı işletmeleri
+
+1086
+01:44:58,119 --> 01:45:00,119
+bu buradaki
+
+1087
+01:45:02,119 --> 01:45:04,119
+yapı nedir
+
+1088
+01:45:04,119 --> 01:45:06,119
+bunun üzerinde duracağım şimdi
+
+1089
+01:45:06,119 --> 01:45:08,119
+enterprise software
+
+1090
+01:45:08,119 --> 01:45:10,119
+kurumsal yazılımlar
+
+1091
+01:45:10,119 --> 01:45:12,119
+dediğimizde
+
+1092
+01:45:14,119 --> 01:45:16,119
+biz artık işletmedeki
+
+1093
+01:45:16,119 --> 01:45:18,119
+dikey birimleri biliyoruz
+
+1094
+01:45:18,119 --> 01:45:20,119
+finans muhasebe
+
+1095
+01:45:20,119 --> 01:45:22,119
+insan kaynakları
+
+1096
+01:45:22,119 --> 01:45:24,119
+üretim sistemleri
+
+1097
+01:45:24,119 --> 01:45:26,119
+satış pazarlama sistemleri
+
+1098
+01:45:26,119 --> 01:45:28,119
+gibi
+
+1099
+01:45:28,119 --> 01:45:30,119
+bu arada
+
+1100
+01:45:32,119 --> 01:45:34,119
+bu son 15
+
+1101
+01:45:34,119 --> 01:45:36,119
+dakikada daha fazla
+
+1102
+01:45:36,119 --> 01:45:38,119
+katılan oldu yeni katılanlar
+
+1103
+01:45:38,119 --> 01:45:53,850
+takip edebiliyor musunuz?
+
+1104
+01:45:53,850 --> 01:45:55,850
+yeni katılanlara
+
+1105
+01:45:55,850 --> 01:46:07,579
+bakıyorum kimler
+
+1106
+01:46:07,579 --> 01:46:09,579
+bir kişiden cevap geldi
+
+1107
+01:46:09,579 --> 01:46:21,500
+evet devam ediyoruz
+
+1108
+01:46:21,500 --> 01:46:38,439
+siz daha önceden de
+
+1109
+01:46:38,439 --> 01:46:40,439
+vardınız zaten derse hep
+
+1110
+01:46:40,439 --> 01:46:42,439
+geri bildirim
+
+1111
+01:46:42,439 --> 01:46:46,260
+veriyordunuz
+
+1112
+01:46:46,260 --> 01:46:48,260
+kurumsal yazılım dediğimizde
+
+1113
+01:46:48,260 --> 01:46:50,260
+az önce söylediğim gibi
+
+1114
+01:46:52,260 --> 01:46:54,260
+bizim işletmedeki dikey birimlere
+
+1115
+01:46:54,260 --> 01:46:56,260
+bütünleştirilmesi
+
+1116
+01:46:58,260 --> 01:47:00,260
+buradaki
+
+1117
+01:47:00,260 --> 01:47:02,260
+uygulamaları
+
+1118
+01:47:02,260 --> 01:47:04,260
+özellikle
+
+1119
+01:47:06,260 --> 01:47:08,260
+iş süreçleri ve
+
+1120
+01:47:08,260 --> 01:47:10,260
+çoklu işlevlerde
+
+1121
+01:47:12,260 --> 01:47:14,260
+kullanılmak üzere
+
+1122
+01:47:14,260 --> 01:47:16,260
+veriyi
+
+1123
+01:47:18,260 --> 01:47:20,260
+toplayan her bir birimden
+
+1124
+01:47:20,260 --> 01:47:22,260
+ve kullanılır hale
+
+1125
+01:47:22,260 --> 01:47:24,260
+hale getiren
+
+1126
+01:47:26,260 --> 01:47:28,260
+yazılım modüllerinin
+
+1127
+01:47:28,260 --> 01:47:30,260
+birbiriyle bütünleşik olarak
+
+1128
+01:47:30,260 --> 01:47:32,260
+çalışmasını
+
+1129
+01:47:32,260 --> 01:47:34,260
+görüyoruz
+
+1130
+01:47:34,260 --> 01:47:41,989
+buna bir de şekil olarak
+
+1131
+01:47:41,989 --> 01:47:47,609
+bakalım
+
+1132
+01:47:47,609 --> 01:47:49,609
+şekil olarak baktığımızda
+
+1133
+01:47:49,609 --> 01:47:51,609
+az önceki enterprise
+
+1134
+01:47:53,609 --> 01:47:55,609
+sistem mimarisini
+
+1135
+01:47:55,609 --> 01:47:57,609
+burada da
+
+1136
+01:47:57,609 --> 01:47:59,609
+görüyoruz işte bir merkezi
+
+1137
+01:47:59,609 --> 01:48:01,609
+veri tabanı var
+
+1138
+01:48:01,609 --> 01:48:03,609
+merkezi veri tabanını
+
+1139
+01:48:03,609 --> 01:48:05,609
+bütün birimlerle
+
+1140
+01:48:07,609 --> 01:48:09,609
+iş birliği halinde
+
+1141
+01:48:09,609 --> 01:48:13,210
+çalıştığını görüyoruz
+
+1142
+01:48:13,210 --> 01:48:15,210
+ve bu birimleri
+
+1143
+01:48:17,210 --> 01:48:19,210
+iş süreçlerinin tanımlandığını
+
+1144
+01:48:19,210 --> 01:48:21,210
+burada veri tabanı
+
+1145
+01:48:21,210 --> 01:48:23,210
+açısından merkezi bir veri tabanı
+
+1146
+01:48:23,210 --> 01:48:25,210
+olduğunu görüyoruz
+
+1147
+01:48:27,210 --> 01:48:29,210
+tek tek işte insan
+
+1148
+01:48:29,210 --> 01:48:31,210
+kaynaklarında çalışılan saatler
+
+1149
+01:48:33,210 --> 01:48:35,210
+her bir gerçekleştirilen
+
+1150
+01:48:35,210 --> 01:48:37,210
+uygulamanın maliyeti
+
+1151
+01:48:39,210 --> 01:48:41,210
+iş yeteneklerinin neler
+
+1152
+01:48:41,210 --> 01:48:43,210
+olduğu
+
+1153
+01:48:43,210 --> 01:48:45,210
+üretim
+
+1154
+01:48:45,210 --> 01:48:47,210
+biriminde
+
+1155
+01:48:47,210 --> 01:48:49,210
+hangi ham maddelerin kullanıldığı
+
+1156
+01:48:51,210 --> 01:48:53,210
+ürün listeleri
+
+1157
+01:48:55,210 --> 01:48:57,210
+ürün gönderme
+
+1158
+01:48:57,210 --> 01:48:59,210
+bilgileri
+
+1159
+01:48:59,210 --> 01:49:01,210
+üretim
+
+1160
+01:49:01,210 --> 01:49:03,210
+kapasitesi
+
+1161
+01:49:03,210 --> 01:49:05,210
+ham madde satın alma
+
+1162
+01:49:05,210 --> 01:49:07,210
+işlemleri
+
+1163
+01:49:07,210 --> 01:49:09,210
+bunları
+
+1164
+01:49:09,210 --> 01:49:11,210
+gerçekleştirecek veri tabanından
+
+1165
+01:49:13,210 --> 01:49:15,210
+veri alarak
+
+1166
+01:49:15,210 --> 01:49:17,210
+gerçekleştirilen işlem sonucunu tekrar
+
+1167
+01:49:19,210 --> 01:49:21,210
+arşivde
+
+1168
+01:49:21,210 --> 01:49:23,210
+saklanmasını sağlayan
+
+1169
+01:49:23,210 --> 01:49:25,210
+sistemler
+
+1170
+01:49:25,210 --> 01:49:27,210
+kararlamak için siparişler
+
+1171
+01:49:27,210 --> 01:49:29,210
+satış tahminleri
+
+1172
+01:49:29,210 --> 01:49:31,210
+geri dönüş
+
+1173
+01:49:31,210 --> 01:49:33,210
+istekleri
+
+1174
+01:49:33,210 --> 01:49:35,210
+fiyat değişiklikleri
+
+1175
+01:49:35,210 --> 01:49:37,210
+bunların
+
+1176
+01:49:37,210 --> 01:49:39,210
+saklandığını görüyoruz
+
+1177
+01:49:39,210 --> 01:49:41,210
+finans muhasebede
+
+1178
+01:49:43,210 --> 01:49:45,210
+nakit bilgilerini
+
+1179
+01:49:47,210 --> 01:49:49,210
+muhasebe kayıtlarını
+
+1180
+01:49:49,210 --> 01:49:51,210
+müşteri kredilerini
+
+1181
+01:49:51,210 --> 01:49:53,210
+görebiliyoruz
+
+1182
+01:49:53,210 --> 01:49:55,210
+şimdi baktığımızda
+
+1183
+01:49:57,210 --> 01:49:59,210
+buradaki yeni bir
+
+1184
+01:49:59,210 --> 01:50:01,210
+işlem için
+
+1185
+01:50:12,170 --> 01:50:14,170
+birçok işlem için
+
+1186
+01:50:16,170 --> 01:50:18,170
+mesela bakım
+
+1187
+01:50:18,170 --> 01:50:20,170
+mühendisi yeni bir
+
+1188
+01:50:22,170 --> 01:50:27,770
+cihaz kullanılacağı zaman
+
+1189
+01:50:27,770 --> 01:50:29,770
+hangi işlemleri
+
+1190
+01:50:29,770 --> 01:50:31,770
+gerçekleştiriyor
+
+1191
+01:50:31,770 --> 01:50:35,210
+bakım mühendisi
+
+1192
+01:50:35,210 --> 01:50:37,210
+malzeme mühendisi
+
+1193
+01:50:39,210 --> 01:50:41,210
+muhasebenin
+
+1194
+01:50:41,210 --> 01:50:43,210
+değerlendirilmesi
+
+1195
+01:50:43,210 --> 01:50:45,210
+muhasebe kontrolcusu
+
+1196
+01:50:45,210 --> 01:50:47,210
+açısından
+
+1197
+01:50:47,210 --> 01:50:49,210
+gerçekleştirilen işler
+
+1198
+01:50:49,210 --> 01:50:51,210
+yani önce
+
+1199
+01:50:51,210 --> 01:50:53,210
+kurumsal sistemlerde
+
+1200
+01:50:53,210 --> 01:50:55,210
+bir uygulama
+
+1201
+01:50:55,210 --> 01:50:57,210
+gerçekleştirileceği zaman
+
+1202
+01:50:57,210 --> 01:50:59,210
+bir
+
+1203
+01:50:59,210 --> 01:51:01,210
+bizans analizi
+
+1204
+01:51:03,210 --> 01:51:05,210
+iş analizi
+
+1205
+01:51:05,210 --> 01:51:07,210
+iş akışı
+
+1206
+01:51:07,210 --> 01:51:09,210
+oluşturuluyor
+
+1207
+01:51:09,210 --> 01:51:11,210
+iş akış sistemleri
+
+1208
+01:51:11,210 --> 01:51:13,210
+oluşturuluyor
+
+1209
+01:51:13,210 --> 01:51:15,210
+yani burada
+
+1210
+01:51:15,210 --> 01:51:17,210
+bir tablo şeklinde
+
+1211
+01:51:17,210 --> 01:51:19,210
+düşünürsek
+
+1212
+01:51:19,210 --> 01:51:21,210
+hangi aşamada
+
+1213
+01:51:23,210 --> 01:51:25,210
+hangi kişi
+
+1214
+01:51:25,210 --> 01:51:27,210
+hangi çalışan
+
+1215
+01:51:27,210 --> 01:51:29,210
+bu uygulamanın
+
+1216
+01:51:29,210 --> 01:51:31,210
+gerçekleştirilmesi için
+
+1217
+01:51:31,210 --> 01:51:33,210
+hangi işi yapıyor
+
+1218
+01:51:33,210 --> 01:51:35,210
+bu
+
+1219
+01:51:35,210 --> 01:51:37,210
+iş analizi
+
+1220
+01:51:39,210 --> 01:51:41,210
+modelinde
+
+1221
+01:51:41,210 --> 01:51:43,210
+bir blok
+
+1222
+01:51:43,210 --> 01:51:45,210
+diagram şeklinde ya da
+
+1223
+01:51:45,210 --> 01:51:47,210
+süreç akış diagramı şeklinde
+
+1224
+01:51:47,210 --> 01:51:49,210
+bir
+
+1225
+01:51:49,210 --> 01:51:51,210
+yapı oluşturuluyor
+
+1226
+01:51:51,210 --> 01:51:53,210
+burada
+
+1227
+01:51:53,210 --> 01:51:55,210
+kurumsal bir
+
+1228
+01:51:55,210 --> 01:51:57,210
+sistem oluşturulacağında
+
+1229
+01:51:57,210 --> 01:51:59,210
+her bir dikey birimdeki
+
+1230
+01:51:59,210 --> 01:52:01,210
+her bir çalışanın gerçekleştirdiği
+
+1231
+01:52:01,210 --> 01:52:03,210
+işi düşünerek
+
+1232
+01:52:03,210 --> 01:52:05,210
+bir iş akışı
+
+1233
+01:52:05,210 --> 01:52:07,210
+oluşturuyoruz
+
+1234
+01:52:09,210 --> 01:52:11,210
+ve burada
+
+1235
+01:52:11,210 --> 01:52:13,210
+en iyi çalışma modellerini
+
+1236
+01:52:13,210 --> 01:52:15,210
+çıkarmaya çalışıyoruz
+
+1237
+01:52:15,210 --> 01:52:17,210
+kurumsal sistemlerin
+
+1238
+01:52:19,210 --> 01:52:21,210
+faydası nedir baktığımızda
+
+1239
+01:52:21,210 --> 01:52:23,210
+ayrı ayrı baktığımızda
+
+1240
+01:52:23,210 --> 01:52:25,210
+firma yapısı ve organizasyon
+
+1241
+01:52:25,210 --> 01:52:27,210
+için tek bir
+
+1242
+01:52:27,210 --> 01:52:29,210
+organizasyon yapısı
+
+1243
+01:52:31,210 --> 01:52:33,210
+üzerinden hareket edeceğiz
+
+1244
+01:52:33,210 --> 01:52:35,210
+yönetimde firma boyutunda
+
+1245
+01:52:37,210 --> 01:52:39,210
+bilgi tabanlı yönetim
+
+1246
+01:52:39,210 --> 01:52:41,210
+süreçleri
+
+1247
+01:52:41,210 --> 01:52:43,210
+oluşturulmuş olacak
+
+1248
+01:52:43,210 --> 01:52:45,210
+teknoloji açısından
+
+1249
+01:52:45,210 --> 01:52:47,210
+baktığımızda birleştirilmiş
+
+1250
+01:52:47,210 --> 01:52:49,210
+platformlar
+
+1251
+01:52:49,210 --> 01:52:51,210
+kullanılacak
+
+1252
+01:52:51,210 --> 01:52:53,210
+işletmecilik açısından baktığımızda
+
+1253
+01:52:53,210 --> 01:52:55,210
+daha etkin işlemler
+
+1254
+01:52:55,210 --> 01:52:57,210
+ve müşteri yönelimli
+
+1255
+01:52:57,210 --> 01:52:59,210
+iş süreçlerini
+
+1256
+01:52:59,210 --> 01:53:01,210
+göreceğiz
+
+1257
+01:53:05,210 --> 01:53:07,210
+kurumsal sistemlere göre
+
+1258
+01:53:09,210 --> 01:53:11,210
+bazı değişiklikler
+
+1259
+01:53:11,210 --> 01:53:13,210
+kurumsal sistem yapısında
+
+1260
+01:53:15,210 --> 01:53:17,210
+değişiklikler olacak
+
+1261
+01:53:19,210 --> 01:53:21,210
+supply chain
+
+1262
+01:53:21,210 --> 01:53:23,210
+süreçlerde
+
+1263
+01:53:23,210 --> 01:53:25,210
+supply chain
+
+1264
+01:53:25,210 --> 01:53:27,210
+management sistemdeki
+
+1265
+01:53:27,210 --> 01:53:29,210
+yapıyı
+
+1266
+01:53:29,210 --> 01:53:31,210
+kurumsal uygulamaları
+
+1267
+01:53:31,210 --> 01:53:33,210
+desteklemek için
+
+1268
+01:53:33,210 --> 01:53:35,210
+alt
+
+1269
+01:53:35,210 --> 01:53:37,210
+başlıklar oluşturmuştuk
+
+1270
+01:53:37,210 --> 01:53:39,210
+iş başlıkları
+
+1271
+01:53:39,210 --> 01:53:41,210
+tedarik zinciri
+
+1272
+01:53:41,210 --> 01:53:43,210
+yönetimi
+
+1273
+01:53:43,210 --> 01:53:45,210
+müşteri ilişkileri yönetimi
+
+1274
+01:53:45,210 --> 01:53:47,210
+ve bilgi yönetim sistemleri
+
+1275
+01:53:47,210 --> 01:53:49,210
+çerçevesinde
+
+1276
+01:53:49,210 --> 01:53:51,210
+ayrıca bazı şeylerde
+
+1277
+01:53:51,210 --> 01:53:53,210
+buraya
+
+1278
+01:53:53,210 --> 01:53:55,210
+insan kaynakları da
+
+1279
+01:53:55,210 --> 01:53:57,210
+ayrı bir alt
+
+1280
+01:53:57,210 --> 01:53:59,210
+sistem olarak gelebilir
+
+1281
+01:53:59,210 --> 01:54:01,210
+supply chain
+
+1282
+01:54:01,210 --> 01:54:03,210
+management da
+
+1283
+01:54:03,210 --> 01:54:05,210
+hangi alt süreçler
+
+1284
+01:54:05,210 --> 01:54:07,210
+var bunu izleyelim
+
+1285
+01:54:09,210 --> 01:54:11,210
+bir planlama
+
+1286
+01:54:13,210 --> 01:54:17,060
+burada
+
+1287
+01:54:17,060 --> 01:54:19,060
+bir hareket
+
+1288
+01:54:19,060 --> 01:54:21,060
+gerçekleştirmek için
+
+1289
+01:54:21,060 --> 01:54:23,060
+bu bir gönderme olabilir
+
+1290
+01:54:23,060 --> 01:54:25,060
+ya da dağıtım olabilir
+
+1291
+01:54:25,060 --> 01:54:27,060
+ya da tedarik olabilir
+
+1292
+01:54:29,060 --> 01:54:31,060
+bir hareketi
+
+1293
+01:54:31,060 --> 01:54:33,060
+geliştirmek üzere
+
+1294
+01:54:35,060 --> 01:54:37,060
+tüm
+
+1295
+01:54:37,060 --> 01:54:39,060
+talepler ve tüm
+
+1296
+01:54:39,060 --> 01:54:41,060
+teminleri
+
+1297
+01:54:41,060 --> 01:54:43,060
+dengeli olarak
+
+1298
+01:54:43,060 --> 01:54:45,060
+birleştirmek
+
+1299
+01:54:49,060 --> 01:54:51,060
+bunun planlanması
+
+1300
+01:54:51,060 --> 01:54:53,060
+kaynaklar
+
+1301
+01:54:53,060 --> 01:54:55,060
+nelerdir supply chain
+
+1302
+01:54:55,060 --> 01:54:57,060
+management
+
+1303
+01:54:57,060 --> 01:54:59,060
+süreçlerinde
+
+1304
+01:54:59,060 --> 01:55:01,060
+tedarik zinciri süreçlerine
+
+1305
+01:55:01,060 --> 01:55:03,060
+baktığımızda
+
+1306
+01:55:03,060 --> 01:55:05,060
+diğer kaynak oluşturmak
+
+1307
+01:55:05,060 --> 01:55:07,060
+bir ürünü veya bir servisi
+
+1308
+01:55:07,060 --> 01:55:09,060
+yaratmak üzere
+
+1309
+01:55:09,060 --> 01:55:11,060
+oluşturmak üzere gerekli olan
+
+1310
+01:55:13,060 --> 01:55:15,060
+maddeler
+
+1311
+01:55:15,060 --> 01:55:17,060
+ve hizmetler
+
+1312
+01:55:17,060 --> 01:55:19,060
+belirlenmesi
+
+1313
+01:55:19,060 --> 01:55:21,060
+süreci
+
+1314
+01:55:21,060 --> 01:55:23,060
+hangi kaynaklar
+
+1315
+01:55:23,060 --> 01:55:25,060
+bunların elde edilmesi
+
+1316
+01:55:25,060 --> 01:55:27,060
+ve daha sonra da
+
+1317
+01:55:27,060 --> 01:55:29,060
+bunların elde edilmesi
+
+1318
+01:55:29,060 --> 01:55:31,060
+önce ne yapılacağının planlanması
+
+1319
+01:55:33,060 --> 01:55:35,060
+talep ve
+
+1320
+01:55:35,060 --> 01:55:37,060
+tedariklerin
+
+1321
+01:55:37,060 --> 01:55:39,060
+planlanması
+
+1322
+01:55:39,060 --> 01:55:41,060
+bir hareket
+
+1323
+01:55:41,060 --> 01:55:43,060
+bir eylem için
+
+1324
+01:55:43,060 --> 01:55:45,060
+bundan sonra bunların
+
+1325
+01:55:45,060 --> 01:55:48,500
+gerçekleştirilmesi
+
+1326
+01:55:48,500 --> 01:55:50,500
+yani elde edilmesi
+
+1327
+01:55:50,500 --> 01:55:52,500
+kaynakların elde edilmesi
+
+1328
+01:55:52,500 --> 01:55:54,500
+daha sonra bunun make yapılması
+
+1329
+01:55:56,500 --> 01:55:58,500
+burada
+
+1330
+01:55:58,500 --> 01:56:00,500
+gerçek bir
+
+1331
+01:56:00,500 --> 01:56:02,500
+veya planlanmış olan bir talebi
+
+1332
+01:56:02,500 --> 01:56:04,500
+karşılamak üzere
+
+1333
+01:56:07,850 --> 01:56:09,850
+bitirilmiş duruma getirmek üzere
+
+1334
+01:56:09,850 --> 01:56:13,960
+üretimin yapılması için
+
+1335
+01:56:13,960 --> 01:56:15,960
+geçen süreç
+
+1336
+01:56:15,960 --> 01:56:17,960
+daha sonra
+
+1337
+01:56:17,960 --> 01:56:19,960
+dağıtım
+
+1338
+01:56:19,960 --> 01:56:21,960
+dağıtım da
+
+1339
+01:56:21,960 --> 01:56:23,960
+gerçek ya da planlanmış
+
+1340
+01:56:23,960 --> 01:56:25,960
+bir talebi karşılamak üzere
+
+1341
+01:56:25,960 --> 01:56:27,960
+bitirilmiş
+
+1342
+01:56:29,960 --> 01:56:31,960
+maddeleri
+
+1343
+01:56:31,960 --> 01:56:33,960
+ya da hizmeti
+
+1344
+01:56:38,899 --> 01:56:40,899
+gönderilmesini
+
+1345
+01:56:40,899 --> 01:56:42,899
+sağlamak
+
+1346
+01:56:44,899 --> 01:56:46,899
+bunun gönderilecek hale getirilmesini
+
+1347
+01:56:46,899 --> 01:56:48,899
+sağlamak
+
+1348
+01:56:48,899 --> 01:56:50,899
+return de
+
+1349
+01:56:52,899 --> 01:56:54,899
+geri
+
+1350
+01:56:54,899 --> 01:56:58,149
+ürünlerin geri
+
+1351
+01:56:58,149 --> 01:57:00,149
+verilmesini
+
+1352
+01:57:00,149 --> 01:57:02,149
+sağlayan süreçler
+
+1353
+01:57:02,149 --> 01:57:04,149
+şimdi buraya baktığımız zaman
+
+1354
+01:57:06,149 --> 01:57:08,149
+anahtar saplanç ev management
+
+1355
+01:57:08,149 --> 01:57:10,149
+süreçleri
+
+1356
+01:57:10,149 --> 01:57:12,149
+az önce tanıttık
+
+1357
+01:57:12,149 --> 01:57:14,149
+saplanç ev management'da gerçekleştirilen
+
+1358
+01:57:14,149 --> 01:57:16,149
+işlemleri
+
+1359
+01:57:18,149 --> 01:57:20,149
+süreç zincirini
+
+1360
+01:57:20,149 --> 01:57:22,149
+gördük
+
+1361
+01:57:22,149 --> 01:57:24,149
+şimdi burada
+
+1362
+01:57:24,149 --> 01:57:26,149
+bunu sağlamak
+
+1363
+01:57:26,149 --> 01:57:28,149
+için yapılan
+
+1364
+01:57:28,149 --> 01:57:30,149
+altbaşlıklar
+
+1365
+01:57:30,149 --> 01:57:32,149
+supply chain işlemindeki
+
+1366
+01:57:32,149 --> 01:57:34,149
+altbaşlıkları görüyoruz
+
+1367
+01:57:34,149 --> 01:57:36,149
+plan aşamasında
+
+1368
+01:57:39,939 --> 01:57:41,939
+kaynakları
+
+1369
+01:57:41,939 --> 01:57:43,939
+isteklerle kaynakların
+
+1370
+01:57:43,939 --> 01:57:45,939
+dengelenmesi nasıl dengeleneceğini
+
+1371
+01:57:45,939 --> 01:57:47,939
+bulmak
+
+1372
+01:57:49,939 --> 01:57:51,939
+supply chain planının oluşturulması
+
+1373
+01:57:51,939 --> 01:57:53,939
+ve bunun içinde
+
+1374
+01:57:53,939 --> 01:57:55,939
+tabii ki
+
+1375
+01:57:55,939 --> 01:57:57,939
+supply chain planını
+
+1376
+01:57:57,939 --> 01:57:59,939
+o talebe göre oluşturursunuz
+
+1377
+01:57:59,939 --> 01:58:01,939
+ama burada
+
+1378
+01:58:01,939 --> 01:58:03,939
+işletmenin
+
+1379
+01:58:03,939 --> 01:58:05,939
+finansal planıyla uyumlu olarak
+
+1380
+01:58:05,939 --> 01:58:07,939
+geliştirmek gerekiyor
+
+1381
+01:58:07,939 --> 01:58:09,939
+supply chain planı
+
+1382
+01:58:09,939 --> 01:58:11,939
+ve işletmenin
+
+1383
+01:58:11,939 --> 01:58:13,939
+finansal planını
+
+1384
+01:58:13,939 --> 01:58:15,939
+göz önünde bulundurarak
+
+1385
+01:58:15,939 --> 01:58:17,939
+gerçekleştirilmesi
+
+1386
+01:58:17,939 --> 01:58:19,939
+gerekiyor
+
+1387
+01:58:21,939 --> 01:58:23,939
+peki
+
+1388
+01:58:23,939 --> 01:58:25,939
+önce ne yapacağız
+
+1389
+01:58:27,939 --> 01:58:29,939
+inventeri yöneteceğiz
+
+1390
+01:58:31,939 --> 01:58:33,939
+temin edilecekleri tanımlıyoruz
+
+1391
+01:58:33,939 --> 01:58:35,939
+bizden istenenleri
+
+1392
+01:58:35,939 --> 01:58:37,939
+teslim edilecekleri listeliyoruz
+
+1393
+01:58:37,939 --> 01:58:39,939
+temin edilecekleri tanımlıyoruz
+
+1394
+01:58:41,939 --> 01:58:43,939
+dağıtılacakları listeliyoruz
+
+1395
+01:58:43,939 --> 01:58:45,939
+ve
+
+1396
+01:58:45,939 --> 01:58:47,939
+inventeri de yönetmemiz gerekiyor
+
+1397
+01:58:47,939 --> 01:58:49,939
+acaba bu üründen var mı
+
+1398
+01:58:49,939 --> 01:58:51,939
+bunu yöneterek
+
+1399
+01:58:51,939 --> 01:58:53,939
+kaynakları
+
+1400
+01:58:53,939 --> 01:58:55,939
+belirlememiz gerekiyor
+
+1401
+01:58:55,939 --> 01:58:57,939
+şu yaptığımız plana göre
+
+1402
+01:58:57,939 --> 01:58:59,939
+önce kaynak
+
+1403
+01:58:59,939 --> 01:59:03,739
+planlaması yapıyoruz
+
+1404
+01:59:03,739 --> 01:59:05,739
+kaynakları nasıl alacağımız
+
+1405
+01:59:05,739 --> 01:59:07,739
+ondan sonra
+
+1406
+01:59:07,739 --> 01:59:09,739
+üretimi
+
+1407
+01:59:11,739 --> 01:59:13,739
+ürünleri listeliyoruz
+
+1408
+01:59:13,739 --> 01:59:15,739
+kalite ve
+
+1409
+01:59:15,739 --> 01:59:17,739
+performans değerlendirmesi yapıyoruz
+
+1410
+01:59:17,739 --> 01:59:19,739
+süreçte ki
+
+1411
+01:59:19,739 --> 01:59:21,739
+işleri yönetiyoruz
+
+1412
+01:59:21,739 --> 01:59:23,739
+yani bir ürün mü
+
+1413
+01:59:23,739 --> 01:59:25,739
+geliştirilecek bir hizmet mi
+
+1414
+01:59:25,739 --> 01:59:27,739
+üretilecek bu make
+
+1415
+01:59:27,739 --> 01:59:29,739
+de yani sadece
+
+1416
+01:59:29,739 --> 01:59:31,739
+üretim işte bir
+
+1417
+01:59:31,739 --> 01:59:33,739
+elle tutulur bir eşyanın
+
+1418
+01:59:33,739 --> 01:59:35,739
+üretilmesi değil
+
+1419
+01:59:35,739 --> 01:59:37,739
+burada bir müşteri hizmeti de olabilir
+
+1420
+01:59:39,739 --> 01:59:41,739
+bir telekom şirketi tarafından
+
+1421
+01:59:41,739 --> 01:59:43,739
+yapılan bir iş de olabilir
+
+1422
+01:59:43,739 --> 01:59:45,739
+bir ürün
+
+1423
+01:59:45,739 --> 01:59:47,739
+geliştirme de olabilir
+
+1424
+01:59:47,739 --> 01:59:49,739
+öncelikle üretim
+
+1425
+01:59:49,739 --> 01:59:51,739
+listesi yapılıyor ve kalite
+
+1426
+01:59:51,739 --> 01:59:53,739
+performans değerlendirmesi yapıyor
+
+1427
+01:59:53,739 --> 01:59:55,739
+daha sonra da süreç içinde
+
+1428
+01:59:55,739 --> 01:59:57,739
+bu
+
+1429
+01:59:57,739 --> 01:59:59,739
+işin yönetilmesi
+
+1430
+02:00:01,739 --> 02:00:03,739
+gerçekleşiyor bundan sonra
+
+1431
+02:00:03,739 --> 02:00:05,739
+dağıtım işi
+
+1432
+02:00:05,739 --> 02:00:07,739
+gönderim rotalarının
+
+1433
+02:00:07,739 --> 02:00:09,739
+oluşturulması çok önemli bir
+
+1434
+02:00:09,739 --> 02:00:11,739
+iş
+
+1435
+02:00:11,739 --> 02:00:13,739
+maddesi
+
+1436
+02:00:13,739 --> 02:00:15,739
+hatta
+
+1437
+02:00:15,739 --> 02:00:17,739
+hatırlıyorsanız
+
+1438
+02:00:17,739 --> 02:00:19,739
+karar destek sistemlerini tanımlarken
+
+1439
+02:00:19,739 --> 02:00:21,739
+karar destek sistemlerinde
+
+1440
+02:00:23,739 --> 02:00:25,739
+gönderim rotalarının karar
+
+1441
+02:00:25,739 --> 02:00:27,739
+verilmesi örneğini
+
+1442
+02:00:27,739 --> 02:00:29,739
+görmüştük
+
+1443
+02:00:29,739 --> 02:00:31,739
+işte taşıyıcıların
+
+1444
+02:00:31,739 --> 02:00:33,739
+geçilmesi yani dağıtım
+
+1445
+02:00:33,739 --> 02:00:35,739
+firması
+
+1446
+02:00:35,739 --> 02:00:37,739
+transport firması kim
+
+1447
+02:00:37,739 --> 02:00:39,739
+olabilecek kendi içimizlerini
+
+1448
+02:00:39,739 --> 02:00:41,739
+taşıyacağız
+
+1449
+02:00:41,739 --> 02:00:43,739
+rotaların
+
+1450
+02:00:43,739 --> 02:00:45,739
+oluşturulması
+
+1451
+02:00:45,739 --> 02:00:47,739
+daha sonra depolar
+
+1452
+02:00:47,739 --> 02:00:49,739
+var dağıtım
+
+1453
+02:00:49,739 --> 02:00:51,739
+hemen doğrudan
+
+1454
+02:00:51,739 --> 02:00:53,739
+üretim
+
+1455
+02:00:53,739 --> 02:00:55,739
+biriminden müşteriye gitmiyor
+
+1456
+02:00:57,739 --> 02:00:59,739
+genellikle
+
+1457
+02:00:59,739 --> 02:01:01,739
+arada depoda
+
+1458
+02:01:01,739 --> 02:01:03,739
+bekleyenler var bu
+
+1459
+02:01:05,739 --> 02:01:07,739
+depoların yönetimi
+
+1460
+02:01:07,739 --> 02:01:09,739
+müşteri
+
+1461
+02:01:11,739 --> 02:01:13,739
+istekleri müşteri
+
+1462
+02:01:13,739 --> 02:01:15,739
+faturalarının oluşturulması
+
+1463
+02:01:17,739 --> 02:01:19,739
+dağıtımda
+
+1464
+02:01:19,739 --> 02:01:21,739
+hepsi var yani dağıtılacak
+
+1465
+02:01:21,739 --> 02:01:23,739
+yere müşteriye de
+
+1466
+02:01:23,739 --> 02:01:25,739
+bir şey gidiyor
+
+1467
+02:01:25,739 --> 02:01:27,739
+satış
+
+1468
+02:01:27,739 --> 02:01:29,739
+bilgisi evrağı
+
+1469
+02:01:29,739 --> 02:01:31,739
+gidiyor
+
+1470
+02:01:31,739 --> 02:01:33,739
+şimdiye kadar
+
+1471
+02:01:33,739 --> 02:01:35,739
+bu supply chain
+
+1472
+02:01:35,739 --> 02:01:37,739
+management
+
+1473
+02:01:37,739 --> 02:01:39,739
+anahtar
+
+1474
+02:01:39,739 --> 02:01:41,739
+süreçlerde
+
+1475
+02:01:41,739 --> 02:01:43,739
+dördünü gördük plan
+
+1476
+02:01:43,739 --> 02:01:45,739
+kaynak belirleme
+
+1477
+02:01:45,739 --> 02:01:47,739
+üretim ya da servis
+
+1478
+02:01:47,739 --> 02:01:49,739
+neyse onu gerçekleştirme
+
+1479
+02:01:49,739 --> 02:01:51,739
+bunun dağıtımını yapma
+
+1480
+02:01:51,739 --> 02:01:53,739
+gereği kalıyor
+
+1481
+02:01:53,739 --> 02:01:55,739
+beşinci iş
+
+1482
+02:01:55,739 --> 02:01:57,739
+adımı return
+
+1483
+02:01:57,739 --> 02:01:59,739
+bu returnde
+
+1484
+02:02:01,739 --> 02:02:03,739
+yani geri dönüşler
+
+1485
+02:02:03,739 --> 02:02:05,739
+bu
+
+1486
+02:02:05,739 --> 02:02:07,739
+geri dönüşlerin liste
+
+1487
+02:02:07,739 --> 02:02:09,739
+alınması
+
+1488
+02:02:09,739 --> 02:02:11,739
+bunların kredi
+
+1489
+02:02:11,739 --> 02:02:13,739
+işlerinin yapılması
+
+1490
+02:02:13,739 --> 02:02:15,739
+geri dönüşün
+
+1491
+02:02:15,739 --> 02:02:17,739
+para tesliminin yapılması
+
+1492
+02:02:19,739 --> 02:02:21,739
+gibi
+
+1493
+02:02:21,739 --> 02:02:23,739
+işlemler
+
+1494
+02:02:23,739 --> 02:02:25,739
+bu işte
+
+1495
+02:02:25,739 --> 02:02:27,739
+tedarik zincirindeki
+
+1496
+02:02:27,739 --> 02:02:29,739
+alt az önce
+
+1497
+02:02:29,739 --> 02:02:31,739
+bir önceki
+
+1498
+02:02:31,739 --> 02:02:33,739
+sunumda
+
+1499
+02:02:33,739 --> 02:02:35,739
+tedarik zincirinin
+
+1500
+02:02:35,739 --> 02:02:37,739
+iş sürecini gördük
+
+1501
+02:02:37,739 --> 02:02:39,739
+yani nasıl
+
+1502
+02:02:39,739 --> 02:02:41,739
+yürüyor
+
+1503
+02:02:41,739 --> 02:02:43,739
+hangi işler var
+
+1504
+02:02:43,739 --> 02:02:45,739
+burada ise
+
+1505
+02:02:45,739 --> 02:02:47,739
+alt başlıklar halinde
+
+1506
+02:02:47,739 --> 02:02:49,739
+anahtar
+
+1507
+02:02:49,739 --> 02:02:51,739
+supply chain management
+
+1508
+02:02:51,739 --> 02:02:53,739
+süreçlerindeki anahtar
+
+1509
+02:02:53,739 --> 02:02:55,739
+alt başlıkları görüyoruz
+
+1510
+02:02:55,739 --> 02:02:57,739
+hangi iş
+
+1511
+02:02:57,739 --> 02:02:59,739
+maddeleri var
+
+1512
+02:02:59,739 --> 02:03:01,739
+planla
+
+1513
+02:03:03,739 --> 02:03:05,739
+kaynakları
+
+1514
+02:03:05,739 --> 02:03:07,739
+belirli
+
+1515
+02:03:07,739 --> 02:03:09,739
+ve sağla
+
+1516
+02:03:09,739 --> 02:03:11,739
+işi gerçekleştir
+
+1517
+02:03:11,739 --> 02:03:13,739
+dağıtımı yap ve geri dönüşleri
+
+1518
+02:03:13,739 --> 02:03:15,739
+al
+
+1519
+02:03:15,739 --> 02:03:17,739
+bu anahtar
+
+1520
+02:03:17,739 --> 02:03:19,739
+işler
+
+1521
+02:03:19,739 --> 02:03:21,739
+tedarik zincirindeki
+
+1522
+02:03:21,739 --> 02:03:23,739
+bir önceki
+
+1523
+02:03:23,739 --> 02:03:25,739
+derste gördüğümüz
+
+1524
+02:03:25,739 --> 02:03:27,739
+tedarik zinciri
+
+1525
+02:03:27,739 --> 02:03:29,739
+hangi
+
+1526
+02:03:29,739 --> 02:03:31,739
+birimlerle ilişkili
+
+1527
+02:03:31,739 --> 02:03:33,739
+işte önce
+
+1528
+02:03:33,739 --> 02:03:35,739
+dış temin ediciler
+
+1529
+02:03:35,739 --> 02:03:37,739
+saplar
+
+1530
+02:03:37,739 --> 02:03:39,739
+katman katman temin
+
+1531
+02:03:39,739 --> 02:03:41,739
+ediciler
+
+1532
+02:03:41,739 --> 02:03:43,739
+temin etme işi
+
+1533
+02:03:43,739 --> 02:03:45,739
+işin
+
+1534
+02:03:45,739 --> 02:03:47,739
+gerçekleştirmesi üretim biriminde
+
+1535
+02:03:47,739 --> 02:03:49,739
+oluyor
+
+1536
+02:03:49,739 --> 02:03:51,739
+daha sonra
+
+1537
+02:03:51,739 --> 02:03:53,739
+üretim biriminden
+
+1538
+02:03:53,739 --> 02:03:55,739
+dağıtım kanallarına aktarılıyor
+
+1539
+02:03:55,739 --> 02:03:57,739
+toptancılara
+
+1540
+02:03:57,739 --> 02:03:59,739
+aktarılıyor ve müşteriye
+
+1541
+02:03:59,739 --> 02:04:01,739
+gidiyor
+
+1542
+02:04:01,739 --> 02:04:03,739
+bu işin
+
+1543
+02:04:03,739 --> 02:04:05,739
+hangi iş birliği
+
+1544
+02:04:05,739 --> 02:04:09,210
+yapılan
+
+1545
+02:04:09,210 --> 02:04:11,210
+kurumlarla ya da
+
+1546
+02:04:11,210 --> 02:04:13,210
+birimlerle
+
+1547
+02:04:13,210 --> 02:04:15,210
+ilişkisi
+
+1548
+02:04:15,210 --> 02:04:17,210
+buradaki süreçler
+
+1549
+02:04:17,210 --> 02:04:19,210
+ise
+
+1550
+02:04:19,210 --> 02:04:21,210
+hangi alt iş
+
+1551
+02:04:21,210 --> 02:04:23,210
+süreçleriyle
+
+1552
+02:04:23,210 --> 02:04:25,210
+devam ediyoruz
+
+1553
+02:04:25,210 --> 02:04:27,210
+bunu göstermeye
+
+1554
+02:04:27,210 --> 02:04:50,619
+çalışıyoruz
+
+1555
+02:04:50,619 --> 02:04:52,619
+şimdi
+
+1556
+02:04:52,619 --> 02:04:54,619
+supply chain
+
+1557
+02:04:54,619 --> 02:04:56,619
+süreçlerinde
+
+1558
+02:04:56,619 --> 02:04:58,619
+tabiki lojistik
+
+1559
+02:04:58,619 --> 02:05:00,619
+önemli bir yer tutuyor
+
+1560
+02:05:00,619 --> 02:05:02,619
+üretim
+
+1561
+02:05:02,619 --> 02:05:04,619
+veya bir servisin
+
+1562
+02:05:04,619 --> 02:05:06,619
+iletiminin
+
+1563
+02:05:06,619 --> 02:05:08,619
+nasıl yapılacağıyla
+
+1564
+02:05:08,619 --> 02:05:10,619
+ilişkili
+
+1565
+02:05:10,619 --> 02:05:12,619
+tüm faktörlerin planlanması
+
+1566
+02:05:12,619 --> 02:05:14,619
+ve kontrolü ve
+
+1567
+02:05:14,619 --> 02:05:16,619
+gerçeklenmesi lojistik
+
+1568
+02:05:16,619 --> 02:05:18,619
+kapsamına
+
+1569
+02:05:18,619 --> 02:05:20,619
+geliyor
+
+1570
+02:05:20,619 --> 02:05:22,619
+bilgi ve
+
+1571
+02:05:22,619 --> 02:05:24,619
+supply chain
+
+1572
+02:05:24,619 --> 02:05:26,619
+management sistemlerinde
+
+1573
+02:05:26,619 --> 02:05:28,619
+farklı
+
+1574
+02:05:28,619 --> 02:05:30,619
+just in time
+
+1575
+02:05:30,619 --> 02:05:32,619
+olabilir
+
+1576
+02:05:32,619 --> 02:05:34,619
+envanteri
+
+1577
+02:05:34,619 --> 02:05:36,619
+minimize etmek
+
+1578
+02:05:36,619 --> 02:05:38,619
+burada da depo
+
+1579
+02:05:38,619 --> 02:05:40,619
+maliyetini
+
+1580
+02:05:40,619 --> 02:05:42,619
+azaltmak için
+
+1581
+02:05:44,619 --> 02:05:46,619
+ihtiyaç duyan
+
+1582
+02:05:46,619 --> 02:05:48,619
+biten malzemelerin
+
+1583
+02:05:52,619 --> 02:05:54,619
+kısa sürede
+
+1584
+02:05:54,619 --> 02:05:56,619
+gönderilmesini sağlamak
+
+1585
+02:05:56,619 --> 02:06:01,430
+için
+
+1586
+02:06:01,430 --> 02:06:03,430
+burada supply chain management
+
+1587
+02:06:03,430 --> 02:06:05,430
+sistemde
+
+1588
+02:06:05,430 --> 02:06:07,430
+hem üretim için
+
+1589
+02:06:07,430 --> 02:06:09,430
+ham maddenin hem de
+
+1590
+02:06:09,430 --> 02:06:11,430
+müşteriye gönderilecek ürünlerin
+
+1591
+02:06:11,430 --> 02:06:13,430
+göndermi lojistik
+
+1592
+02:06:13,430 --> 02:06:15,430
+burada da
+
+1593
+02:06:15,430 --> 02:06:17,430
+bu gönderme
+
+1594
+02:06:17,430 --> 02:06:19,430
+şekilleri nasıl
+
+1595
+02:06:19,430 --> 02:06:21,430
+olmalı burada
+
+1596
+02:06:21,430 --> 02:06:23,430
+bilgi sistemi ihtiyaçları nelerdir
+
+1597
+02:06:23,430 --> 02:06:25,430
+envanterde
+
+1598
+02:06:25,430 --> 02:06:27,430
+fazla mal tutarak hemen
+
+1599
+02:06:27,430 --> 02:06:29,430
+gönderme işlemini hızlı
+
+1600
+02:06:29,430 --> 02:06:31,430
+yapabiliriz ama burada da
+
+1601
+02:06:31,430 --> 02:06:33,430
+envanterde tutma maliyeti
+
+1602
+02:06:33,430 --> 02:06:35,430
+geliyor
+
+1603
+02:06:35,430 --> 02:06:37,430
+hem onların bozulmadan
+
+1604
+02:06:37,430 --> 02:06:39,430
+durması hem de
+
+1605
+02:06:39,430 --> 02:06:41,430
+duracak yerinin
+
+1606
+02:06:41,430 --> 02:06:43,430
+bulunması açısından
+
+1607
+02:06:43,430 --> 02:06:45,430
+burada da
+
+1608
+02:06:45,430 --> 02:06:47,430
+işte
+
+1609
+02:06:47,430 --> 02:06:49,430
+block
+
+1610
+02:06:49,430 --> 02:06:51,430
+az önceki
+
+1611
+02:06:51,430 --> 02:06:53,430
+dersteki sunumun bir
+
+1612
+02:06:53,430 --> 02:06:55,430
+benzerini de burada görüyoruz
+
+1613
+02:06:57,430 --> 02:06:59,430
+farklı
+
+1614
+02:06:59,430 --> 02:07:01,430
+dağıtım
+
+1615
+02:07:01,430 --> 02:07:03,430
+şekilleri
+
+1616
+02:07:03,430 --> 02:07:05,430
+tedarik zincir
+
+1617
+02:07:05,430 --> 02:07:07,430
+yönetimi şekilleri
+
+1618
+02:07:07,430 --> 02:07:09,430
+söz konusu
+
+1619
+02:07:09,430 --> 02:07:11,430
+burada tedarik zincirinde
+
+1620
+02:07:11,430 --> 02:07:13,430
+gerçekleştirdiğimiz iş
+
+1621
+02:07:13,430 --> 02:07:15,430
+adımları işte planla
+
+1622
+02:07:15,430 --> 02:07:17,430
+kaynağı yarat
+
+1623
+02:07:17,430 --> 02:07:19,430
+kaynağı
+
+1624
+02:07:19,430 --> 02:07:21,430
+oluştur
+
+1625
+02:07:21,430 --> 02:07:23,430
+gerçekleştirme işini yap
+
+1626
+02:07:23,430 --> 02:07:25,430
+dağıtım işlemini yap sonra geri
+
+1627
+02:07:25,430 --> 02:07:27,430
+dönüşleri al bunlar
+
+1628
+02:07:27,430 --> 02:07:29,430
+iş adımları tedarik
+
+1629
+02:07:29,430 --> 02:07:31,430
+zincirinin ama tedarik
+
+1630
+02:07:31,430 --> 02:07:33,430
+zinciri
+
+1631
+02:07:33,430 --> 02:07:35,430
+yönetim sisteminde
+
+1632
+02:07:35,430 --> 02:07:37,430
+etkili
+
+1633
+02:07:37,430 --> 02:07:39,430
+olan birimler
+
+1634
+02:07:39,430 --> 02:07:41,430
+ve bu birimlerin
+
+1635
+02:07:41,430 --> 02:07:43,430
+ilişkileri dediğimiz
+
+1636
+02:07:43,430 --> 02:07:45,430
+zaman böyle bir şekil çıkıyor
+
+1637
+02:07:45,430 --> 02:07:47,430
+karşımıza
+
+1638
+02:07:47,430 --> 02:07:49,430
+tedarikçiler bunlar da katman
+
+1639
+02:07:49,430 --> 02:07:51,430
+katman her
+
+1640
+02:07:51,430 --> 02:07:53,430
+şeyin
+
+1641
+02:07:53,430 --> 02:07:55,430
+aldığı bir
+
+1642
+02:07:55,430 --> 02:07:57,430
+başka bir tedarikçi var
+
+1643
+02:07:59,430 --> 02:08:01,430
+üretici
+
+1644
+02:08:01,430 --> 02:08:03,430
+işte bizim
+
+1645
+02:08:03,430 --> 02:08:05,430
+kurum
+
+1646
+02:08:05,430 --> 02:08:07,430
+dağıtıcı
+
+1647
+02:08:07,430 --> 02:08:09,430
+dağıtım kanalları
+
+1648
+02:08:09,430 --> 02:08:11,430
+ve müşteri
+
+1649
+02:08:11,430 --> 02:08:13,430
+bu gidiş yolu içinde
+
+1650
+02:08:13,430 --> 02:08:15,430
+supply chain management sistemdeki
+
+1651
+02:08:17,430 --> 02:08:19,430
+farklı birimler arasındaki
+
+1652
+02:08:19,430 --> 02:08:21,430
+gidiş yolu
+
+1653
+02:08:21,430 --> 02:08:23,430
+burada
+
+1654
+02:08:23,430 --> 02:08:25,430
+işte bu
+
+1655
+02:08:25,430 --> 02:08:27,430
+sistem
+
+1656
+02:08:27,430 --> 02:08:29,430
+üzerinde
+
+1657
+02:08:29,430 --> 02:08:31,430
+farklı
+
+1658
+02:08:31,430 --> 02:08:33,430
+şeyler var
+
+1659
+02:08:33,430 --> 02:08:35,430
+farklı modellerle
+
+1660
+02:08:35,430 --> 02:08:37,430
+bu iş yürüyor
+
+1661
+02:08:37,430 --> 02:08:39,430
+burada
+
+1662
+02:08:39,430 --> 02:08:41,430
+üretim gerçekleştikten
+
+1663
+02:08:41,430 --> 02:08:43,430
+sonra
+
+1664
+02:08:43,430 --> 02:08:45,430
+elde tutma
+
+1665
+02:08:45,430 --> 02:08:47,430
+just in time mi olacak
+
+1666
+02:08:47,430 --> 02:08:49,430
+ball whip mi olacak
+
+1667
+02:08:49,430 --> 02:08:51,430
+bunların her birinin
+
+1668
+02:08:51,430 --> 02:08:53,430
+bilgileri var işletmecilik açısından
+
+1669
+02:08:53,430 --> 02:08:55,430
+bu inceleniyor ve her
+
+1670
+02:08:55,430 --> 02:08:57,430
+kurum içinde bu farklı olabilir
+
+1671
+02:08:57,430 --> 02:08:59,430
+işte bir yiyecek sektöründe
+
+1672
+02:08:59,430 --> 02:09:01,430
+bu
+
+1673
+02:09:01,430 --> 02:09:03,430
+tedarik
+
+1674
+02:09:03,430 --> 02:09:05,430
+zincir modeli
+
+1675
+02:09:05,430 --> 02:09:07,430
+farklı uygulanabilir
+
+1676
+02:09:07,430 --> 02:09:09,430
+tekstil
+
+1677
+02:09:09,430 --> 02:09:11,430
+sektöründe farklı olabilir
+
+1678
+02:09:11,430 --> 02:09:13,430
+buna
+
+1679
+02:09:13,430 --> 02:09:15,430
+kurum kendisi karar veriyor
+
+1680
+02:09:15,430 --> 02:09:17,430
+burada da
+
+1681
+02:09:17,430 --> 02:09:19,430
+supply chain planlama sistemleri de
+
+1682
+02:09:19,430 --> 02:09:21,430
+önemli
+
+1683
+02:09:21,430 --> 02:09:23,430
+bir uygulama
+
+1684
+02:09:23,430 --> 02:09:25,430
+kaynak
+
+1685
+02:09:25,430 --> 02:09:27,430
+ve üretim planlarının
+
+1686
+02:09:27,430 --> 02:09:29,430
+kaynak elde etme
+
+1687
+02:09:29,430 --> 02:09:31,430
+ve üretim planlarını
+
+1688
+02:09:31,430 --> 02:09:33,430
+geliştirmek
+
+1689
+02:09:33,430 --> 02:09:35,430
+üzere
+
+1690
+02:09:35,430 --> 02:09:39,189
+bir
+
+1691
+02:09:39,189 --> 02:09:41,189
+ürünün
+
+1692
+02:09:41,189 --> 02:09:43,189
+talebini tahmin
+
+1693
+02:09:43,189 --> 02:09:45,189
+etmek üzere
+
+1694
+02:09:47,189 --> 02:09:49,189
+firmada
+
+1695
+02:09:49,189 --> 02:09:51,189
+supply chain planlama sistemleri
+
+1696
+02:09:53,189 --> 02:09:55,189
+oluşturulur
+
+1697
+02:09:55,189 --> 02:09:57,189
+talep
+
+1698
+02:09:57,189 --> 02:09:59,189
+planlama
+
+1699
+02:09:59,189 --> 02:10:01,189
+talep planlama
+
+1700
+02:10:01,189 --> 02:10:03,189
+müşterinin
+
+1701
+02:10:03,189 --> 02:10:05,189
+taleplerini
+
+1702
+02:10:05,189 --> 02:10:09,210
+sağlamak
+
+1703
+02:10:09,210 --> 02:10:11,210
+ve bu talep
+
+1704
+02:10:11,210 --> 02:10:13,210
+memnun edecek şekilde
+
+1705
+02:10:13,210 --> 02:10:15,210
+sağlamak
+
+1706
+02:10:17,210 --> 02:10:19,210
+üzere
+
+1707
+02:10:21,210 --> 02:10:23,210
+ne kadar
+
+1708
+02:10:23,210 --> 02:10:25,210
+ürün
+
+1709
+02:10:25,210 --> 02:10:27,210
+geliştirmemiz gerekiyor
+
+1710
+02:10:27,210 --> 02:10:29,210
+talep planlamada
+
+1711
+02:10:29,210 --> 02:10:31,210
+bu kararlar
+
+1712
+02:10:33,210 --> 02:10:35,210
+rikapsıyor
+
+1713
+02:10:35,210 --> 02:10:37,210
+supply chain execution
+
+1714
+02:10:37,210 --> 02:10:39,210
+sistemler ise
+
+1715
+02:10:41,210 --> 02:10:43,210
+doğru
+
+1716
+02:10:43,210 --> 02:10:47,100
+yerlere
+
+1717
+02:10:47,100 --> 02:10:49,100
+en etkin şekilde
+
+1718
+02:10:49,100 --> 02:10:51,100
+dağıtımını
+
+1719
+02:10:51,100 --> 02:10:53,100
+sağlayacak şekilde
+
+1720
+02:10:55,100 --> 02:10:57,100
+ürünlerin dağıtım merkezlerine
+
+1721
+02:10:57,100 --> 02:10:59,100
+akışının yönetilmesi
+
+1722
+02:11:01,100 --> 02:11:03,100
+işte bu dediğim gibi
+
+1723
+02:11:03,100 --> 02:11:05,100
+farklı sektörlere göre
+
+1724
+02:11:05,100 --> 02:11:07,100
+ürünün
+
+1725
+02:11:07,100 --> 02:11:09,100
+dağıtım kanallarında nasıl
+
+1726
+02:11:09,100 --> 02:11:11,100
+kalacağının yine
+
+1727
+02:11:11,100 --> 02:11:13,100
+ham maddeninde supply chain
+
+1728
+02:11:13,100 --> 02:11:15,100
+stratejileri
+
+1729
+02:11:15,100 --> 02:11:17,100
+işlevsel ürünler
+
+1730
+02:11:17,100 --> 02:11:19,100
+funksiyonel
+
+1731
+02:11:19,100 --> 02:11:21,100
+ürünler
+
+1732
+02:11:21,100 --> 02:11:23,100
+inovatif
+
+1733
+02:11:23,100 --> 02:11:25,100
+ürünler
+
+1734
+02:11:25,100 --> 02:11:35,770
+için
+
+1735
+02:11:35,770 --> 02:11:37,770
+farklı olabilir
+
+1736
+02:11:37,770 --> 02:11:39,770
+yani ürünün
+
+1737
+02:11:39,770 --> 02:11:41,770
+ve firmanın
+
+1738
+02:11:41,770 --> 02:11:43,770
+farklılığına göre
+
+1739
+02:11:43,770 --> 02:11:45,770
+tedarik zincir
+
+1740
+02:11:45,770 --> 02:11:47,770
+stratejisi
+
+1741
+02:11:47,770 --> 02:11:49,770
+farklı
+
+1742
+02:11:49,770 --> 02:11:55,319
+düşünülebilir
+
+1743
+02:11:55,319 --> 02:11:57,319
+tabi ki bu
+
+1744
+02:11:57,319 --> 02:11:59,319
+web uygulamaları
+
+1745
+02:11:59,319 --> 02:12:01,319
+internet
+
+1746
+02:12:01,319 --> 02:12:03,319
+kullanımıyla
+
+1747
+02:12:03,319 --> 02:12:05,319
+burada
+
+1748
+02:12:07,319 --> 02:12:09,319
+supply chain management da
+
+1749
+02:12:09,319 --> 02:12:11,319
+bir çok değişiklikler
+
+1750
+02:12:11,319 --> 02:12:13,319
+oldu
+
+1751
+02:12:13,319 --> 02:12:15,319
+gönderme
+
+1752
+02:12:15,319 --> 02:12:17,319
+envanter üretim
+
+1753
+02:12:17,319 --> 02:12:19,319
+planlama
+
+1754
+02:12:19,319 --> 02:12:21,319
+sipariş işleme
+
+1755
+02:12:21,319 --> 02:12:23,319
+hem müşteriler
+
+1756
+02:12:23,319 --> 02:12:25,319
+hem temin ediciler
+
+1757
+02:12:25,319 --> 02:12:27,319
+dağıtım firmaları
+
+1758
+02:12:27,319 --> 02:12:29,319
+hem distribütörler
+
+1759
+02:12:29,319 --> 02:12:31,319
+dağıtım firmaları
+
+1760
+02:12:31,319 --> 02:12:33,319
+hem toptancılar
+
+1761
+02:12:33,319 --> 02:12:35,319
+bütün bu işlemlerde
+
+1762
+02:12:37,319 --> 02:12:42,739
+internet uygulamalarıyla
+
+1763
+02:12:42,739 --> 02:12:44,739
+bir değişim
+
+1764
+02:12:44,739 --> 02:12:46,739
+yaşandı
+
+1765
+02:12:48,739 --> 02:12:52,310
+bu
+
+1766
+02:12:52,310 --> 02:12:54,310
+burada
+
+1767
+02:12:54,310 --> 02:12:56,310
+önce
+
+1768
+02:12:56,310 --> 02:12:58,310
+tedarikçilerden
+
+1769
+02:12:58,310 --> 02:13:06,899
+üreticilere
+
+1770
+02:13:06,899 --> 02:13:08,899
+dağıtıcılara
+
+1771
+02:13:08,899 --> 02:13:10,899
+ve toptancılara
+
+1772
+02:13:10,899 --> 02:13:12,899
+müşterilere
+
+1773
+02:13:14,899 --> 02:13:16,899
+üretim
+
+1774
+02:13:16,899 --> 02:13:18,899
+birimi ne kadar
+
+1775
+02:13:18,899 --> 02:13:20,899
+temin ediciden ne kadar mal
+
+1776
+02:13:20,899 --> 02:13:22,899
+isteyeceğini tahmin edecek
+
+1777
+02:13:24,899 --> 02:13:26,899
+üretime dayalı tahminler
+
+1778
+02:13:26,899 --> 02:13:28,899
+yaparak
+
+1779
+02:13:28,899 --> 02:13:30,899
+dağıtım firmasına
+
+1780
+02:13:30,899 --> 02:13:32,899
+üretim
+
+1781
+02:13:32,899 --> 02:13:34,899
+gerçekleştirdiği
+
+1782
+02:13:34,899 --> 02:13:36,899
+birimleri
+
+1783
+02:13:36,899 --> 02:13:38,899
+gönderecek
+
+1784
+02:13:38,899 --> 02:13:40,899
+ve burada da
+
+1785
+02:13:42,899 --> 02:13:44,899
+tamamen
+
+1786
+02:13:44,899 --> 02:13:46,899
+üretici firma her ikisine de
+
+1787
+02:13:48,899 --> 02:13:50,899
+tahmin
+
+1788
+02:13:50,899 --> 02:13:52,899
+gönderecek
+
+1789
+02:13:52,899 --> 02:13:54,899
+tahmine dayalı bir
+
+1790
+02:13:54,899 --> 02:13:56,899
+envanter
+
+1791
+02:13:56,899 --> 02:13:58,899
+durumu olacak
+
+1792
+02:13:58,899 --> 02:14:00,899
+toptancıya da yine
+
+1793
+02:14:00,899 --> 02:14:02,899
+tahminlere
+
+1794
+02:14:02,899 --> 02:14:04,899
+belirterek
+
+1795
+02:14:04,899 --> 02:14:06,899
+stok yapması
+
+1796
+02:14:06,899 --> 02:14:08,899
+söz konusu olacak
+
+1797
+02:14:08,899 --> 02:14:10,899
+müşteri de yine aynı şekilde
+
+1798
+02:14:12,899 --> 02:14:14,899
+rafta bulduğunu
+
+1799
+02:14:14,899 --> 02:14:16,899
+satın alacak
+
+1800
+02:14:16,899 --> 02:14:18,899
+rafta inceleyerek
+
+1801
+02:14:18,899 --> 02:14:20,899
+satın alma işlemi
+
+1802
+02:14:20,899 --> 02:14:22,899
+gerçekleştirecek
+
+1803
+02:14:22,899 --> 02:14:24,899
+pull based
+
+1804
+02:14:24,899 --> 02:14:26,899
+bu push based
+
+1805
+02:14:26,899 --> 02:14:28,899
+model yani
+
+1806
+02:14:28,899 --> 02:14:30,899
+üretici firma
+
+1807
+02:14:30,899 --> 02:14:32,899
+hem talep tahminini
+
+1808
+02:14:32,899 --> 02:14:34,899
+gerçekleştiriyor
+
+1809
+02:14:34,899 --> 02:14:36,899
+hem
+
+1810
+02:14:36,899 --> 02:14:38,899
+dağıtıcıya ne kadar
+
+1811
+02:14:38,899 --> 02:14:40,899
+ürün göndermesi
+
+1812
+02:14:40,899 --> 02:14:42,899
+gerekir envanterde ne kadar
+
+1813
+02:14:42,899 --> 02:14:44,899
+bulunması
+
+1814
+02:14:44,899 --> 02:14:46,899
+gerekirin tahminini
+
+1815
+02:14:46,899 --> 02:14:50,439
+gerçekleştiriyor
+
+1816
+02:14:52,439 --> 02:14:54,439
+böylece dağıtıcı
+
+1817
+02:14:54,439 --> 02:14:56,439
+firma toptancıya
+
+1818
+02:14:56,439 --> 02:14:58,439
+toptancıda müşteriye ona göre
+
+1819
+02:14:58,439 --> 02:15:00,439
+tahminlere göre
+
+1820
+02:15:00,439 --> 02:15:02,439
+mal gönderiyor
+
+1821
+02:15:02,439 --> 02:15:04,439
+pull based modelde ise
+
+1822
+02:15:04,439 --> 02:15:06,439
+müşteri
+
+1823
+02:15:06,439 --> 02:15:08,439
+rafta bulduğunu
+
+1824
+02:15:08,439 --> 02:15:10,439
+kontrol etmiyor
+
+1825
+02:15:10,439 --> 02:15:12,439
+ürün listesini kontrol ediyor
+
+1826
+02:15:12,439 --> 02:15:14,439
+sipariş veriyor
+
+1827
+02:15:14,439 --> 02:15:16,439
+siparişi toptancı
+
+1828
+02:15:16,439 --> 02:15:18,439
+dağıtıcıya geçiyor
+
+1829
+02:15:18,439 --> 02:15:20,439
+bu talepler geçerek
+
+1830
+02:15:22,439 --> 02:15:24,439
+üretim firması da
+
+1831
+02:15:24,439 --> 02:15:26,439
+üretimi gerçekleştiriyor
+
+1832
+02:15:28,439 --> 02:15:30,439
+böyle bir farklılık
+
+1833
+02:15:30,439 --> 02:15:32,439
+var supply chain
+
+1834
+02:15:32,439 --> 02:15:34,439
+modellerde
+
+1835
+02:15:34,439 --> 02:15:36,439
+bu da yine
+
+1836
+02:15:36,439 --> 02:15:38,439
+yani şunu
+
+1837
+02:15:38,439 --> 02:15:40,439
+tercih etmek gerekir bunu tercih etmek
+
+1838
+02:15:40,439 --> 02:15:42,439
+gerekir şeklinde değil de
+
+1839
+02:15:42,439 --> 02:15:44,439
+satılan ürüne göre
+
+1840
+02:15:44,439 --> 02:15:46,439
+işletmenin durumuna göre
+
+1841
+02:15:46,439 --> 02:15:48,439
+yapılacak
+
+1842
+02:15:48,439 --> 02:15:51,939
+bir işlem
+
+1843
+02:15:51,939 --> 02:16:02,300
+tedarik zincir modeli
+
+1844
+02:16:02,300 --> 02:16:04,300
+tabi ki
+
+1845
+02:16:04,300 --> 02:16:06,300
+tedarik zincir yönetim sistemlerini
+
+1846
+02:16:06,300 --> 02:16:08,300
+kullandığımızda
+
+1847
+02:16:08,300 --> 02:16:10,300
+bize ne
+
+1848
+02:16:10,300 --> 02:16:12,300
+faydası oluyor
+
+1849
+02:16:14,300 --> 02:16:18,659
+müşteri cevap
+
+1850
+02:16:18,659 --> 02:16:20,659
+karşı
+
+1851
+02:16:20,659 --> 02:16:22,659
+bildirimlerini
+
+1852
+02:16:22,659 --> 02:16:24,659
+geliştirmiş oluyor
+
+1853
+02:16:24,659 --> 02:16:26,659
+müşteri servisleri
+
+1854
+02:16:26,659 --> 02:16:28,659
+iyileşiyor
+
+1855
+02:16:30,659 --> 02:16:32,659
+bunun için gerçekleştirilen maliyet
+
+1856
+02:16:32,659 --> 02:16:34,659
+alıyor
+
+1857
+02:16:34,659 --> 02:16:36,659
+nakit kullanımı
+
+1858
+02:16:36,659 --> 02:16:38,659
+daha azalıyor
+
+1859
+02:16:38,659 --> 02:16:40,659
+supply chain
+
+1860
+02:16:40,659 --> 02:16:42,659
+management da
+
+1861
+02:16:42,659 --> 02:16:44,659
+süreçler arasında
+
+1862
+02:16:44,659 --> 02:16:46,659
+farklılıklar olabilir
+
+1863
+02:16:48,659 --> 02:16:50,659
+yazılım dolayısıyla
+
+1864
+02:16:50,659 --> 02:16:52,659
+kullanılan yazılımlarda da
+
+1865
+02:16:52,659 --> 02:16:54,659
+farklılık olabilir
+
+1866
+02:16:54,659 --> 02:16:56,659
+bu
+
+1867
+02:16:56,659 --> 02:17:00,229
+şekilde
+
+1868
+02:17:00,229 --> 02:17:02,229
+şu
+
+1869
+02:17:02,229 --> 02:17:04,229
+sistemlerde
+
+1870
+02:17:04,229 --> 02:17:06,229
+günümüzde
+
+1871
+02:17:06,229 --> 02:17:08,229
+burada
+
+1872
+02:17:08,229 --> 02:17:10,229
+çok daha
+
+1873
+02:17:10,229 --> 02:17:12,229
+farklı yönetilen
+
+1874
+02:17:12,229 --> 02:17:14,229
+tedarik zincir modellerini de
+
+1875
+02:17:14,229 --> 02:17:16,229
+görüyoruz
+
+1876
+02:17:16,229 --> 02:17:18,229
+özellikle
+
+1877
+02:17:20,229 --> 02:17:22,229
+işte
+
+1878
+02:17:22,229 --> 02:17:24,229
+depo
+
+1879
+02:17:24,229 --> 02:17:26,229
+kullanımını
+
+1880
+02:17:26,229 --> 02:17:28,229
+daha azaltacak
+
+1881
+02:17:28,229 --> 02:17:30,229
+şubelerden
+
+1882
+02:17:30,229 --> 02:17:32,229
+birbirine gönderecek
+
+1883
+02:17:32,229 --> 02:17:34,229
+sistemler
+
+1884
+02:17:34,229 --> 02:17:36,229
+satılacak ürünü
+
+1885
+02:17:38,229 --> 02:17:40,229
+şubeler arasında geçişini
+
+1886
+02:17:40,229 --> 02:17:42,229
+sağlayacak
+
+1887
+02:17:42,229 --> 02:17:44,229
+tedarik zinciri
+
+1888
+02:17:44,229 --> 02:17:46,229
+yönetimleri de
+
+1889
+02:17:46,229 --> 02:17:51,819
+söz konusu
+
+1890
+02:17:51,819 --> 02:17:53,819
+şimdi
+
+1891
+02:17:53,819 --> 02:17:55,819
+müşteri ilişkileri
+
+1892
+02:17:55,819 --> 02:17:57,819
+yönetiminde
+
+1893
+02:17:57,819 --> 02:17:59,819
+daha
+
+1894
+02:17:59,819 --> 02:18:01,819
+farklı
+
+1895
+02:18:01,819 --> 02:18:03,819
+müşteri verisi
+
+1896
+02:18:03,819 --> 02:18:05,819
+üzerinde
+
+1897
+02:18:05,819 --> 02:18:07,819
+ki
+
+1898
+02:18:07,819 --> 02:18:09,819
+uygulamalarda
+
+1899
+02:18:09,819 --> 02:18:11,819
+nasıl bir
+
+1900
+02:18:11,819 --> 02:18:13,819
+yaklaşım var
+
+1901
+02:18:13,819 --> 02:18:15,819
+müşteri ilişkileri
+
+1902
+02:18:15,819 --> 02:18:17,819
+yönetimi
+
+1903
+02:18:17,819 --> 02:18:19,819
+uygulama
+
+1904
+02:18:19,819 --> 02:18:21,819
+yazılımları
+
+1905
+02:18:21,819 --> 02:18:27,459
+içindeki
+
+1906
+02:18:27,459 --> 02:18:29,459
+farklılıklar
+
+1907
+02:18:29,459 --> 02:18:49,159
+üzerinde duracağız
+
+1908
+02:18:49,159 --> 02:18:51,159
+bu arada
+
+1909
+02:18:53,159 --> 02:18:55,159
+bir
+
+1910
+02:18:55,159 --> 02:18:57,159
+proje grubu
+
+1911
+02:18:57,159 --> 02:18:59,159
+olmayan
+
+1912
+02:18:59,159 --> 02:19:01,159
+evet [öğrenci] yazmış
+
+1913
+02:19:01,159 --> 02:19:03,159
+proje grubu
+
+1914
+02:19:07,530 --> 02:19:09,530
+herhangi bir proje grubunda olmayan var mı
+
+1915
+02:19:09,530 --> 02:19:14,629
+aranızda
+
+1916
+02:19:14,629 --> 02:19:20,440
+başka
+
+1917
+02:19:20,440 --> 02:19:26,819
+sizler
+
+1918
+02:19:26,819 --> 02:19:28,819
+daha önce derslere gelmiş miydiniz
+
+1919
+02:19:28,819 --> 02:19:30,819
+bir tek
+
+1920
+02:19:30,819 --> 02:19:32,819
+tarık
+
+1921
+02:19:32,819 --> 02:19:34,819
+tek başına yapabilirsin
+
+1922
+02:19:34,819 --> 02:19:36,819
+demiştim sana
+
+1923
+02:19:36,819 --> 02:19:38,819
+daha küçük bir modül
+
+1924
+02:19:38,819 --> 02:19:40,819
+ama
+
+1925
+02:19:40,819 --> 02:19:42,819
+[öğrenci] ve [öğrenci]
+
+1926
+02:19:44,819 --> 02:19:46,819
+sizden daha önce bir şey gelmedi
+
+1927
+02:19:46,819 --> 02:19:48,819
+her derste soruyorum ben
+
+1928
+02:19:48,819 --> 02:19:54,120
+siz yok muydunuz derslerde
+
+1929
+02:19:54,120 --> 02:19:56,120
+tarık biliyorum
+
+1930
+02:19:56,120 --> 02:19:58,120
+bir kaç defa
+
+1931
+02:19:58,120 --> 02:20:00,120
+söyledi
+
+1932
+02:20:00,120 --> 02:20:02,120
+ve ona çözüm olarak tek yapabilirsin
+
+1933
+02:20:02,120 --> 02:20:04,120
+dedim
+
+1934
+02:20:04,120 --> 02:20:06,120
+[öğrenci]
+
+1935
+02:20:06,120 --> 02:20:13,459
+senin için durum nasıl
+
+1936
+02:20:13,459 --> 02:20:15,459
+ben hatırlıyorum senin
+
+1937
+02:20:15,459 --> 02:20:17,459
+geldiğini
+
+1938
+02:20:17,459 --> 02:20:19,459
+peki
+
+1939
+02:20:19,459 --> 02:20:25,239
+yani
+
+1940
+02:20:25,239 --> 02:20:27,239
+hepinizin de tek yapması
+
+1941
+02:20:34,100 --> 02:20:41,000
+siz
+
+1942
+02:20:41,000 --> 02:20:43,000
+o zaman
+
+1943
+02:20:43,000 --> 02:20:45,000
+nasıl yapalım
+
+1944
+02:20:48,340 --> 02:20:50,340
+şimdi siz birbirinizin şu
+
+1945
+02:20:50,340 --> 02:20:54,940
+4 kişi çıktı
+
+1946
+02:20:54,940 --> 02:20:59,459
+grubu olmayan
+
+1947
+02:20:59,459 --> 02:21:01,459
+birbirinizin maillerini
+
+1948
+02:21:01,459 --> 02:21:07,399
+biliyor musunuz
+
+1949
+02:21:07,399 --> 02:21:09,399
+[öğrenci], [öğrenci]
+
+1950
+02:21:09,399 --> 02:21:11,399
+[öğrenci]
+
+1951
+02:21:11,399 --> 02:21:19,350
+tarık zaten daha önceden de
+
+1952
+02:21:19,350 --> 02:21:21,350
+vardı
+
+1953
+02:21:21,350 --> 02:21:31,030
+dördünüz bir arada yapabilir misiniz
+
+1954
+02:21:31,030 --> 02:21:33,030
+birbirinizin maillerini
+
+1955
+02:21:33,030 --> 02:21:42,870
+bulabilir misiniz
+
+1956
+02:21:42,870 --> 02:21:46,280
+çalışmak üzere
+
+1957
+02:21:46,280 --> 02:21:48,280
+ya da şöyle
+
+1958
+02:21:48,280 --> 02:21:50,280
+yapabilirim
+
+1959
+02:21:50,280 --> 02:21:55,059
+siz buradan yazın
+
+1960
+02:21:55,059 --> 02:21:57,059
+tamam
+
+1961
+02:21:57,059 --> 02:22:01,209
+o zaman yine de
+
+1962
+02:22:01,209 --> 02:22:03,209
+siz
+
+1963
+02:22:03,209 --> 02:22:05,209
+tarık ve [öğrenci]
+
+1964
+02:22:05,209 --> 02:22:07,209
+maillerini yazın
+
+1965
+02:22:07,209 --> 02:22:09,209
+sizler de yazın ve not edin
+
+1966
+02:22:09,209 --> 02:22:11,209
+sonra bulamadık demeyin
+
+1967
+02:22:11,209 --> 02:22:13,209
+aranızda
+
+1968
+02:22:13,209 --> 02:22:16,739
+konuşup
+
+1969
+02:22:16,739 --> 02:22:20,819
+bana
+
+1970
+02:22:20,819 --> 02:22:22,819
+önümüzdeki haftaya kadar
+
+1971
+02:22:22,819 --> 02:22:32,790
+konunuzu bildirin
+
+1972
+02:22:32,790 --> 02:22:34,790
+Hocam herkes için
+
+1973
+02:22:34,790 --> 02:22:36,790
+evet
+
+1974
+02:22:36,790 --> 02:22:38,790
+evet
+
+1975
+02:22:38,790 --> 02:22:40,790
+şimdi yani geçen hafta
+
+1976
+02:22:40,790 --> 02:22:42,790
+ben size
+
+1977
+02:22:42,790 --> 02:22:44,790
+konularınızı verdim
+
+1978
+02:22:50,459 --> 02:22:52,459
+işletmelerdeki
+
+1979
+02:22:52,459 --> 02:22:54,459
+konularla ilgili açıklamalar yaptım
+
+1980
+02:22:54,459 --> 02:22:56,459
+ama geçen hafta daha az kişi vardı
+
+1981
+02:22:56,459 --> 02:22:58,459
+derste bugün biraz
+
+1982
+02:22:58,459 --> 02:23:00,459
+daha kalabalıksınız
+
+1983
+02:23:00,459 --> 02:23:02,459
+gerçi yine azalmış
+
+1984
+02:23:02,459 --> 02:23:04,459
+ama az önce daha
+
+1985
+02:23:04,459 --> 02:23:06,459
+daha fazlaydı
+
+1986
+02:23:06,459 --> 02:23:08,459
+önümüzdeki haftaya kadar
+
+1987
+02:23:08,459 --> 02:23:10,459
+hem herkes
+
+1988
+02:23:10,459 --> 02:23:12,459
+kendisi tekrar
+
+1989
+02:23:12,459 --> 02:23:14,459
+bugünkü derste gördükleriniz
+
+1990
+02:23:14,459 --> 02:23:16,459
+göre
+
+1991
+02:23:16,459 --> 02:23:18,459
+işletmelerdeki
+
+1992
+02:23:18,459 --> 02:23:20,459
+bilgi sistemlerini
+
+1993
+02:23:20,459 --> 02:23:22,459
+içerecek onların
+
+1994
+02:23:22,459 --> 02:23:24,459
+alt modüllerinden konu bulup
+
+1995
+02:23:26,459 --> 02:23:28,459
+yenileyebilirsiniz
+
+1996
+02:23:28,459 --> 02:23:30,459
+hem de
+
+1997
+02:23:30,459 --> 02:23:32,459
+gruplarınızı
+
+1998
+02:23:32,459 --> 02:23:34,459
+bu şekilde
+
+1999
+02:23:34,459 --> 02:23:36,459
+mesela bugün oluşan bir grup var
+
+2000
+02:23:36,459 --> 02:23:38,459
+siz aranızda
+
+2001
+02:23:38,459 --> 02:23:40,459
+bu hafta konuştukça
+
+2002
+02:23:40,459 --> 02:23:42,459
+hem birlikte
+
+2003
+02:23:42,459 --> 02:23:44,459
+çalışıp çalışamayacağınızı anlayacaksınız
+
+2004
+02:23:44,459 --> 02:23:46,459
+hem de konunuzu
+
+2005
+02:23:46,459 --> 02:23:48,459
+belirleyeceksiniz
+
+2006
+02:23:48,459 --> 02:23:50,459
+ben sizden bu hafta içinde cevap
+
+2007
+02:23:50,459 --> 02:23:52,459
+bekliyorum yeni oluşan grupta
+
+2008
+02:23:52,459 --> 02:23:54,459
+var olan gruplarda
+
+2009
+02:23:54,459 --> 02:23:56,459
+konularında hala
+
+2010
+02:23:56,459 --> 02:23:58,459
+değişiklik yapabilirler
+
+2011
+02:23:58,459 --> 02:24:00,459
+çünkü
+
+2012
+02:24:00,459 --> 02:24:02,459
+yani
+
+2013
+02:24:02,459 --> 02:24:04,459
+stajlarda
+
+2014
+02:24:04,459 --> 02:24:06,459
+işletme içinde
+
+2015
+02:24:06,459 --> 02:24:08,459
+oldunuz tanıdınız
+
+2016
+02:24:08,459 --> 02:24:10,459
+ama bir kısmınız sadece
+
+2017
+02:24:10,459 --> 02:24:12,459
+yazılım şirketlerinde
+
+2018
+02:24:12,459 --> 02:24:14,459
+staj yaptınız
+
+2019
+02:24:14,459 --> 02:24:16,459
+işletmelerle ilgili
+
+2020
+02:24:16,459 --> 02:24:18,459
+uygulamaları
+
+2021
+02:24:18,459 --> 02:24:20,459
+yeni anlamış olabilirsiniz
+
+2022
+02:24:20,459 --> 02:24:22,459
+konularınızı değiştirebilirsiniz
+
+2023
+02:24:22,459 --> 02:24:24,459
+isterseniz
+
+2024
+02:24:24,459 --> 02:24:26,459
+ben bu arada da
+
+2025
+02:24:26,459 --> 02:24:28,459
+yine olmayacak olan
+
+2026
+02:24:28,459 --> 02:24:30,459
+gönderebilirim
+
+2027
+02:24:30,459 --> 02:24:32,459
+ama bu derste
+
+2028
+02:24:32,459 --> 02:24:34,459
+anlatılanları
+
+2029
+02:24:34,459 --> 02:24:36,459
+düşünerek
+
+2030
+02:24:36,459 --> 02:24:38,459
+uygun görüyorsanız
+
+2031
+02:24:38,459 --> 02:24:40,459
+çalışmaya başlayabilirsiniz
+
+2032
+02:24:40,459 --> 02:24:49,530
+evet başka grup sıkıntısı
+
+2033
+02:24:49,530 --> 02:24:58,020
+olan var mı?
+
+2034
+02:24:58,020 --> 02:25:00,020
+şimdiye kadar da özellikle
+
+2035
+02:25:00,020 --> 02:25:02,020
+bu dersteki
+
+2036
+02:25:02,020 --> 02:25:04,020
+proje
+
+2037
+02:25:04,020 --> 02:25:06,020
+tadımıyla ilişkili
+
+2038
+02:25:06,020 --> 02:25:08,020
+proje gruplarıyla
+
+2039
+02:25:08,020 --> 02:25:10,020
+ilişkili
+
+2040
+02:25:10,020 --> 02:25:12,020
+bir şey yazmadım çünkü
+
+2041
+02:25:12,020 --> 02:25:14,020
+derste devam edip
+
+2042
+02:25:14,020 --> 02:25:16,020
+derste anlamanızı istiyorum
+
+2043
+02:25:16,020 --> 02:25:18,020
+derslere de hiç
+
+2044
+02:25:18,020 --> 02:25:20,020
+katılmadan sadece projeye bakıp
+
+2045
+02:25:20,020 --> 02:25:22,020
+proje tanımına
+
+2046
+02:25:22,020 --> 02:25:24,020
+proje teslim eden
+
+2047
+02:25:24,020 --> 02:25:26,020
+bir
+
+2048
+02:25:26,020 --> 02:25:28,020
+grup olmasını istemiyorum
+
+2049
+02:25:30,020 --> 02:25:32,020
+derste
+
+2050
+02:25:32,020 --> 02:25:34,020
+katıldığınız
+
+2051
+02:25:34,020 --> 02:25:36,020
+bilgilerle
+
+2052
+02:25:36,020 --> 02:25:38,020
+önce
+
+2053
+02:25:38,020 --> 02:25:40,020
+konunuzu belirlemenizi
+
+2054
+02:25:40,020 --> 02:25:42,020
+istedim
+
+2055
+02:25:42,020 --> 02:25:44,020
+işletmelerde gerçekleşen
+
+2056
+02:25:44,020 --> 02:25:46,020
+alt maddeleri
+
+2057
+02:25:46,020 --> 02:25:48,020
+düşünerek
+
+2058
+02:25:48,020 --> 02:25:55,180
+tekrar sorayım
+
+2059
+02:25:55,180 --> 02:25:57,180
+bugün
+
+2060
+02:25:57,180 --> 02:25:59,180
+derste olup da
+
+2061
+02:25:59,180 --> 02:26:01,180
+grubu olmayan var mı?
+
+2062
+02:26:01,180 --> 02:26:19,850
+evet yok galiba
+
+2063
+02:26:19,850 --> 02:26:21,850
+evet teşekkürler
+
+2064
+02:26:21,850 --> 02:26:23,850
+şimdi Siyahrem
+
+2065
+02:26:23,850 --> 02:26:25,850
+yazılımında
+
+2066
+02:26:25,850 --> 02:26:27,850
+neler var?
+
+2067
+02:26:27,850 --> 02:26:29,850
+Siyahrem yazılımında bir defa
+
+2068
+02:26:29,850 --> 02:26:31,850
+satış anlamında
+
+2069
+02:26:33,850 --> 02:26:35,850
+muhasebe yönetimi
+
+2070
+02:26:37,850 --> 02:26:39,850
+sipariş yönetimi
+
+2071
+02:26:39,850 --> 02:26:41,850
+satış planlaması
+
+2072
+02:26:41,850 --> 02:26:43,850
+alan satışları
+
+2073
+02:26:43,850 --> 02:26:45,850
+satış analitikleri
+
+2074
+02:26:45,850 --> 02:26:47,850
+pazarlama anlamında
+
+2075
+02:26:47,850 --> 02:26:49,850
+kampanya yönetimi
+
+2076
+02:26:49,850 --> 02:26:51,850
+promosyon yönetimi
+
+2077
+02:26:51,850 --> 02:26:53,850
+çeşitli eventler
+
+2078
+02:26:59,850 --> 02:27:01,850
+gerçekleştirecekse
+
+2079
+02:27:01,850 --> 02:27:03,850
+onun yönetimi
+
+2080
+02:27:03,850 --> 02:27:05,850
+pazar
+
+2081
+02:27:05,850 --> 02:27:07,850
+planlama
+
+2082
+02:27:07,850 --> 02:27:09,850
+pazar işlemleri
+
+2083
+02:27:09,850 --> 02:27:11,850
+pazarlama analitikleri
+
+2084
+02:27:11,850 --> 02:27:13,850
+bu satış analitikleri
+
+2085
+02:27:13,850 --> 02:27:15,850
+pazarlama analitikleri
+
+2086
+02:27:15,850 --> 02:27:17,850
+servis analitikleri diye geçen
+
+2087
+02:27:17,850 --> 02:27:19,850
+şeyde bütün bu
+
+2088
+02:27:19,850 --> 02:27:21,850
+bütün bu hem satışlarda
+
+2089
+02:27:21,850 --> 02:27:23,850
+hem pazarlamada hem de
+
+2090
+02:27:23,850 --> 02:27:25,850
+servis işlemlerinde
+
+2091
+02:27:25,850 --> 02:27:27,850
+sayısal
+
+2092
+02:27:27,850 --> 02:27:29,850
+analizler
+
+2093
+02:27:29,850 --> 02:27:31,850
+gerçekleştirmek
+
+2094
+02:27:31,850 --> 02:27:33,850
+istatistikler gerçekleştirmeyi
+
+2095
+02:27:33,850 --> 02:27:35,850
+anlıyoruz
+
+2096
+02:27:35,850 --> 02:27:37,850
+servis anlamında
+
+2097
+02:27:37,850 --> 02:27:39,850
+hizmet dağıtımı
+
+2098
+02:27:39,850 --> 02:27:41,850
+müşteri memnuniyet yönetimi
+
+2099
+02:27:41,850 --> 02:27:43,850
+geri dönüşlerin yönetimi
+
+2100
+02:27:43,850 --> 02:27:45,850
+servis planlama
+
+2101
+02:27:45,850 --> 02:27:47,850
+call center planlama
+
+2102
+02:27:47,850 --> 02:27:49,850
+bunlar
+
+2103
+02:27:49,850 --> 02:27:51,850
+müşteri ilişkileri
+
+2104
+02:27:51,850 --> 02:27:53,850
+yönetiminde
+
+2105
+02:27:53,850 --> 02:27:57,700
+gerçekleştirilen işlemler
+
+2106
+02:27:57,700 --> 02:27:59,700
+burada
+
+2107
+02:27:59,700 --> 02:28:01,700
+churn kavramı
+
+2108
+02:28:01,700 --> 02:28:03,700
+az önce dediğim
+
+2109
+02:28:03,700 --> 02:28:05,700
+müşterinin kaçması
+
+2110
+02:28:05,700 --> 02:28:07,700
+ile ilişkili işlemler
+
+2111
+02:28:07,700 --> 02:28:09,700
+CRM'de önemli
+
+2112
+02:28:09,700 --> 02:28:11,700
+uygulama alanlarından
+
+2113
+02:28:11,700 --> 02:28:13,700
+birisi
+
+2114
+02:28:13,700 --> 02:28:15,700
+veri madenciliği tipindeki
+
+2115
+02:28:15,700 --> 02:28:17,700
+uygulamalarda
+
+2116
+02:28:17,700 --> 02:28:19,700
+bu tarz
+
+2117
+02:28:19,700 --> 02:28:21,700
+bitirme projeleri
+
+2118
+02:28:21,700 --> 02:28:23,700
+yüksek lisans tezleri gibi
+
+2119
+02:28:23,700 --> 02:28:25,700
+bu kaçanlarla
+
+2120
+02:28:25,700 --> 02:28:27,700
+ilişkili
+
+2121
+02:28:27,700 --> 02:28:29,700
+veri madenciliği
+
+2122
+02:28:29,700 --> 02:28:31,700
+istatistiksel analizler gibi
+
+2123
+02:28:31,700 --> 02:28:33,700
+çalışmalarda
+
+2124
+02:28:33,700 --> 02:28:35,700
+yapılıyor
+
+2125
+02:28:35,700 --> 02:28:37,700
+bizim bölümde de bu konuda
+
+2126
+02:28:37,700 --> 02:28:39,700
+yapılan birçok proje var
+
+2127
+02:28:39,700 --> 02:28:41,700
+bu nedir
+
+2128
+02:28:41,700 --> 02:28:43,700
+bir
+
+2129
+02:28:43,700 --> 02:28:45,700
+şirketten
+
+2130
+02:28:45,700 --> 02:28:47,700
+ürün alma ya da hizmet alma
+
+2131
+02:28:49,700 --> 02:28:51,700
+veya
+
+2132
+02:28:51,700 --> 02:28:55,370
+kullanımını
+
+2133
+02:28:55,370 --> 02:28:57,370
+durduracak
+
+2134
+02:28:57,370 --> 02:28:59,370
+müşterilerin
+
+2135
+02:28:59,370 --> 02:29:01,370
+sayısı
+
+2136
+02:29:01,370 --> 02:29:03,370
+veya ölçülmesi
+
+2137
+02:29:03,370 --> 02:29:05,370
+bunun
+
+2138
+02:29:05,370 --> 02:29:07,370
+bu
+
+2139
+02:29:07,370 --> 02:29:09,370
+tabi ki en çok çalışma
+
+2140
+02:29:09,370 --> 02:29:11,370
+kaçma ihtimali olan
+
+2141
+02:29:11,370 --> 02:29:13,370
+müşterilerin
+
+2142
+02:29:13,370 --> 02:29:15,370
+yakalanması ve bunlara
+
+2143
+02:29:15,370 --> 02:29:17,370
+çalışma uygulanması, pazarlama anlamında
+
+2144
+02:29:17,370 --> 02:29:19,370
+reklam anlamında
+
+2145
+02:29:21,370 --> 02:29:23,370
+bu önemli bir
+
+2146
+02:29:23,370 --> 02:29:25,370
+uygulama alanı
+
+2147
+02:29:27,370 --> 02:29:29,370
+özellikle
+
+2148
+02:29:29,370 --> 02:29:31,370
+analitik
+
+2149
+02:29:31,370 --> 02:29:33,370
+uygulamalara
+
+2150
+02:29:33,370 --> 02:29:35,370
+da yol açan
+
+2151
+02:29:35,370 --> 02:29:37,370
+bir alan
+
+2152
+02:29:37,370 --> 02:29:39,370
+Operational CRM'de
+
+2153
+02:29:39,370 --> 02:29:41,370
+Operational CRM
+
+2154
+02:29:41,370 --> 02:29:43,370
+günlük müşteriyle
+
+2155
+02:29:43,370 --> 02:29:45,370
+işlemlerin
+
+2156
+02:29:45,370 --> 02:29:47,370
+yürütülmesi
+
+2157
+02:29:47,370 --> 02:29:49,370
+bu nedir
+
+2158
+02:29:49,370 --> 02:29:52,680
+bu
+
+2159
+02:29:52,680 --> 02:29:56,889
+satış
+
+2160
+02:29:56,889 --> 02:29:58,889
+alanı
+
+2161
+02:29:58,889 --> 02:30:00,889
+call center olabilir
+
+2162
+02:30:00,889 --> 02:30:02,889
+müşteri destek servisi olabilir
+
+2163
+02:30:02,889 --> 02:30:04,889
+pazarlama
+
+2164
+02:30:04,889 --> 02:30:06,889
+alanı olabilir
+
+2165
+02:30:06,889 --> 02:30:08,889
+bütün
+
+2166
+02:30:08,889 --> 02:30:10,889
+satış faaliyetlerinin
+
+2167
+02:30:12,889 --> 02:30:14,889
+müşteriyle
+
+2168
+02:30:14,889 --> 02:30:16,889
+karşılıklı yapılan
+
+2169
+02:30:16,889 --> 02:30:18,889
+uygulamalar
+
+2170
+02:30:18,889 --> 02:30:20,889
+yani müşteriyle
+
+2171
+02:30:20,889 --> 02:30:22,889
+satış işlemlerini
+
+2172
+02:30:22,889 --> 02:30:24,889
+gerçekleştirmek üzere
+
+2173
+02:30:24,889 --> 02:30:26,889
+gerçek anlık
+
+2174
+02:30:26,889 --> 02:30:28,889
+bütün destek
+
+2175
+02:30:28,889 --> 02:30:30,889
+işlemleri
+
+2176
+02:30:30,889 --> 02:30:32,889
+Operational CRM
+
+2177
+02:30:32,889 --> 02:30:34,889
+kavramına
+
+2178
+02:30:34,889 --> 02:30:47,700
+geçiyor
+
+2179
+02:30:47,700 --> 02:30:49,700
+CRM'de
+
+2180
+02:30:53,239 --> 02:30:55,239
+işletme
+
+2181
+02:30:55,239 --> 02:30:57,239
+performansını
+
+2182
+02:30:57,239 --> 02:30:59,239
+geliştirmek üzere
+
+2183
+02:30:59,239 --> 02:31:03,319
+bir
+
+2184
+02:31:03,319 --> 02:31:05,319
+bilgi sağlamaya
+
+2185
+02:31:05,319 --> 02:31:07,319
+dayalı müşteri verisinin
+
+2186
+02:31:07,319 --> 02:31:09,319
+analiz edilmesi
+
+2187
+02:31:09,319 --> 02:31:11,319
+ile ilgili uygulamalar
+
+2188
+02:31:11,319 --> 02:31:13,319
+yani
+
+2189
+02:31:13,319 --> 02:31:15,319
+yeni bir ürün
+
+2190
+02:31:15,319 --> 02:31:17,319
+geliştirmeye karar verildiğinde
+
+2191
+02:31:17,319 --> 02:31:19,319
+var olan ürünlerin
+
+2192
+02:31:19,319 --> 02:31:21,319
+satışlarının analiz edilmesi
+
+2193
+02:31:21,319 --> 02:31:23,319
+benzer ürünlerin
+
+2194
+02:31:23,319 --> 02:31:25,319
+satışlarının
+
+2195
+02:31:25,319 --> 02:31:27,319
+ürünleri alan müşterilerin
+
+2196
+02:31:27,319 --> 02:31:29,319
+analiz edilmesi
+
+2197
+02:31:29,319 --> 02:31:31,319
+bu
+
+2198
+02:31:31,319 --> 02:31:33,319
+ürünleri alan
+
+2199
+02:31:33,319 --> 02:31:35,319
+müşterilerin
+
+2200
+02:31:35,319 --> 02:31:37,319
+farklı istekleri var mı
+
+2201
+02:31:37,319 --> 02:31:39,319
+işte bir takım anketler yaparak
+
+2202
+02:31:39,319 --> 02:31:41,319
+var olan
+
+2203
+02:31:41,319 --> 02:31:43,319
+veriyi, satış verisini
+
+2204
+02:31:43,319 --> 02:31:45,319
+inceleyerek
+
+2205
+02:31:45,319 --> 02:31:47,319
+var olan müşteri profilini inceleyerek
+
+2206
+02:31:47,319 --> 02:31:49,319
+şirketle
+
+2207
+02:31:49,319 --> 02:31:51,319
+ilişkili şirketi daha
+
+2208
+02:31:51,319 --> 02:31:53,319
+kazançlı performansını
+
+2209
+02:31:53,319 --> 02:31:55,319
+arttırmak üzere
+
+2210
+02:31:55,319 --> 02:31:57,319
+yeni kararlar
+
+2211
+02:31:57,319 --> 02:31:59,319
+almak üzere
+
+2212
+02:31:59,319 --> 02:32:01,319
+gerçekleştirilen
+
+2213
+02:32:01,319 --> 02:32:03,319
+çalışmalar
+
+2214
+02:32:03,319 --> 02:32:05,319
+diyebiliriz
+
+2215
+02:32:05,319 --> 02:32:07,319
+analytical CRM'e
+
+2216
+02:32:07,319 --> 02:32:09,319
+bununla ilgili zaten
+
+2217
+02:32:09,319 --> 02:32:11,319
+alt yapı
+
+2218
+02:32:11,319 --> 02:32:13,319
+çalışmaları
+
+2219
+02:32:13,319 --> 02:32:15,319
+üzerinde de
+
+2220
+02:32:15,319 --> 02:32:17,319
+önümüzdeki
+
+2221
+02:32:17,319 --> 02:32:19,319
+hafta duracağız
+
+2222
+02:32:19,319 --> 02:32:21,319
+müşteri ilişkileri yönetimi
+
+2223
+02:32:21,319 --> 02:32:23,319
+ve veri ambarı yapısı
+
+2224
+02:32:23,319 --> 02:32:25,319
+veri tabanı yapısı
+
+2225
+02:32:25,319 --> 02:32:27,319
+çalışmalarından
+
+2226
+02:32:27,319 --> 02:32:29,319
+bahsedeceğiz
+
+2227
+02:32:29,319 --> 02:32:31,319
+hızlı hızlı geçtiklerimi
+
+2228
+02:32:31,319 --> 02:32:33,319
+önümüzdeki hafta
+
+2229
+02:32:33,319 --> 02:32:35,319
+özellikle
+
+2230
+02:32:35,319 --> 02:32:37,319
+şurada kalıp
+
+2231
+02:32:37,319 --> 02:32:39,319
+bununla
+
+2232
+02:32:39,319 --> 02:32:41,319
+ilişkili
+
+2233
+02:32:41,319 --> 02:32:43,319
+kavramları
+
+2234
+02:32:43,319 --> 02:32:45,319
+veri madenciliğiyle
+
+2235
+02:32:45,319 --> 02:32:47,319
+birleştirerek
+
+2236
+02:32:47,319 --> 02:32:49,319
+inceleyeceğiz analytical CRM diyoruz
+
+2237
+02:32:49,319 --> 02:32:51,319
+ve analytical CRM'in
+
+2238
+02:32:51,319 --> 02:32:53,319
+altındaki
+
+2239
+02:32:53,319 --> 02:32:55,319
+yazılım ve
+
+2240
+02:32:55,319 --> 02:32:57,319
+bilgisayar mühendisliğiyle
+
+2241
+02:32:57,319 --> 02:32:59,319
+ilişkili, istatistikle
+
+2242
+02:32:59,319 --> 02:33:01,319
+ilişkili kavramları da
+
+2243
+02:33:01,319 --> 02:33:03,319
+önümüzdeki hafta ve daha sonraki
+
+2244
+02:33:03,319 --> 02:33:05,319
+hafta göreceğiz
+
+2245
+02:33:05,319 --> 02:33:07,319
+tekrarlıyorum
+
+2246
+02:33:07,319 --> 02:33:09,319
+önümüzdeki hafta
+
+2247
+02:33:09,319 --> 02:33:11,319
+7. hafta olacak
+
+2248
+02:33:11,319 --> 02:33:13,319
+sınavlarla ilişkili
+
+2249
+02:33:13,319 --> 02:33:15,319
+eğer ortak bir 8.
+
+2250
+02:33:15,319 --> 02:33:17,319
+hafta yapılacak diye bir karar
+
+2251
+02:33:17,319 --> 02:33:19,319
+8. hafta yapacağım
+
+2252
+02:33:19,319 --> 02:33:21,319
+ara sınavı değilse
+
+2253
+02:33:21,319 --> 02:33:23,319
+9. hafta
+
+2254
+02:33:23,319 --> 02:33:25,319
+yapacağım
+
+2255
+02:33:25,319 --> 02:33:27,319
+evet
+
+2256
+02:33:27,319 --> 02:33:29,319
+dersle ilgili sorunuz var mı?
+
+2257
+02:33:29,319 --> 02:33:35,770
+sorunuz var mı?
+
+2258
+02:33:35,770 --> 02:33:51,590
+[öğrenci] sorun var mı?
+
+2259
+02:33:51,590 --> 02:33:59,030
+[öğrenci]
+
+2260
+02:33:59,030 --> 02:34:06,090
+[öğrenci]
+
+2261
+02:34:06,090 --> 02:34:25,180
+duyuyor mu beni?
+
+2262
+02:34:25,180 --> 02:34:35,620
+[öğrenci]
+
+2263
+02:34:35,620 --> 02:34:43,579
+sorunuz var mı?
+
+2264
+02:34:43,579 --> 02:34:45,579
+projeniz ile ilişkili
+
+2265
+02:34:45,579 --> 02:34:47,579
+grup tekliflerinizi tekrar
+
+2266
+02:34:47,579 --> 02:34:49,579
+gözden geçirin
+
+2267
+02:34:49,579 --> 02:34:51,579
+önümüzdeki haftaya kadar değiştirebilirsiniz
+
+2268
+02:34:51,579 --> 02:34:53,579
+yeni oluşan
+
+2269
+02:34:53,579 --> 02:34:55,579
+grubu da yine önümüzdeki
+
+2270
+02:34:55,579 --> 02:34:57,579
+haftaya kadar teklifini bekliyorum
+
+2271
+02:34:57,579 --> 02:34:59,579
+eğer grup içinde
+
+2272
+02:34:59,579 --> 02:35:01,579
+anlaşamayan olursa
+
+2273
+02:35:01,579 --> 02:35:03,579
+tek başına bir
+
+2274
+02:35:03,579 --> 02:35:05,579
+konu gönderecek bana
+
+2275
+02:35:05,579 --> 02:35:09,430
+evet bugünkü dersi bitiriyorum
+
+2276
+02:35:09,430 --> 02:35:11,430
+o zaman
+
+2277
+02:35:11,430 --> 02:35:13,430
+tekrar soruyorum sorusu olan var mı?
+

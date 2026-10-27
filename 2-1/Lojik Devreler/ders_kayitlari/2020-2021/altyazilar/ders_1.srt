@@ -1,0 +1,11224 @@
+1
+00:02:14,860 --> 00:02:17,740
+Merhaba arkadaşlar, iyi günler diliyorum.
+
+2
+00:02:18,800 --> 00:02:20,340
+Sesim nasıl geliyor arkadaşlar?
+
+3
+00:02:20,979 --> 00:02:30,620
+Tamamdır, seste bir sorun yok.
+
+4
+00:02:31,560 --> 00:02:32,840
+Ekranı görebiliyorsunuz.
+
+5
+00:02:37,259 --> 00:02:37,419
+Evet.
+
+6
+00:02:39,300 --> 00:02:46,379
+Geçen hafta sayısal işaret işleme kısmını anlatıyorduk.
+
+7
+00:02:46,479 --> 00:02:49,139
+Bu hafta sayı sistemlerine kadar anlatacağız.
+
+8
+00:02:50,039 --> 00:02:52,340
+Onunla ilgili derslerimizi tamamlayacağız.
+
+9
+00:02:52,340 --> 00:02:57,479
+Orada en son quantizasyon konusunu görmüş müydük?
+
+10
+00:02:57,580 --> 00:02:58,780
+Nicemleme konusunu.
+
+11
+00:03:03,240 --> 00:03:03,500
+Tamam.
+
+12
+00:03:06,789 --> 00:03:10,449
+Şimdi kısaca ben şeyden bahsettim bugün.
+
+13
+00:03:10,449 --> 00:03:19,889
+Tekrar bu hafta resmi olarak kabaca geçen hafta yaptığımızın üzerinden hızlıca bir geçiş yaptıktan sonra
+
+14
+00:03:19,889 --> 00:03:27,370
+sayı sistemlerine oradan da yavaş yavaş kodlama kısmına geçeceğiz.
+
+15
+00:03:27,389 --> 00:03:32,729
+Ve de önümüzdeki derslerde artık lojik devre temellerine geçmiş olacağız.
+
+16
+00:03:32,909 --> 00:03:35,870
+Bugün sayı sistemlerine fren göreceğiz.
+
+17
+00:03:36,069 --> 00:03:42,710
+Bugün BCD, ondan sonra hata sezme, bitişik kodlar gibi kısımları kabaca bir değineceğiz.
+
+18
+00:03:42,949 --> 00:03:44,610
+Ondan sonra devam edeceğiz arkadaşlar.
+
+19
+00:03:47,080 --> 00:03:52,860
+Şimdi laboratuvarlarla alakalı olarak iki arkadaşımız görevliydi biliyorsunuz.
+
+20
+00:03:54,180 --> 00:03:56,860
+Mecit ve [öğrenci].
+
+21
+00:03:56,860 --> 00:03:58,860
+[öğrenci] arkadaşımız.
+
+22
+00:03:58,860 --> 00:04:08,139
+Onlar sayfalarında duyuracaklar yakında bizim laboratuvar saatlerimizi online olarak sizlerin yapabileceği
+
+23
+00:04:08,139 --> 00:04:14,699
+ve bu dersin laboratuvarın online olarak nasıl yapılabileceği ile alakalı bilgileri sizlerle paylaşacaklar.
+
+24
+00:04:14,780 --> 00:04:16,040
+Paylaştılar mı şu an için?
+
+25
+00:04:17,300 --> 00:04:18,860
+21'inde başlayacak çünkü.
+
+26
+00:04:28,709 --> 00:04:31,370
+Avesis sistemlerinde başlayacaklar diye.
+
+27
+00:04:31,370 --> 00:04:33,769
+Avesis.
+
+28
+00:04:33,769 --> 00:04:40,160
+Bakalım.
+
+29
+00:04:40,800 --> 00:04:41,220
+BM.
+
+30
+00:04:42,079 --> 00:04:44,519
+Yıldız Edükeri'den.
+
+31
+00:04:52,350 --> 00:04:53,670
+Personel'e bakalım.
+
+32
+00:04:55,970 --> 00:04:57,730
+Bilgisayar bilimlerinde.
+
+33
+00:05:19,529 --> 00:05:19,790
+Evet.
+
+34
+00:05:22,509 --> 00:05:26,240
+14'ünde koyulmuş.
+
+35
+00:05:26,379 --> 00:05:27,660
+Yani bugün itibariyle koyulmuş.
+
+36
+00:05:27,740 --> 00:05:29,220
+Lojik devreler 2020.
+
+37
+00:05:30,040 --> 00:05:34,000
+Güz gruplar, muafiyet, deney tarifi ve deney konu başlıkları altında.
+
+38
+00:05:35,579 --> 00:05:41,000
+Google Spreadsheet üzerinden gerekli şeyleri vereceğiz.
+
+39
+00:05:41,899 --> 00:05:48,100
+Muaf olan öğrencilerin online laboratuvara katılmayacaklardır demiş muaf olanlar.
+
+40
+00:05:48,100 --> 00:05:54,139
+Onun dışında gerekli bilgileri ben şuradan sizlere göstereyim.
+
+41
+00:05:54,620 --> 00:06:08,120
+M100 kat.
+
+42
+00:06:16,139 --> 00:06:19,139
+Şurada duyurular ve dökümanlar kısmı var.
+
+43
+00:06:19,939 --> 00:06:25,579
+Bu duyurular ve dökümanlar kısmında bugün için şeyleri koymuşlar.
+
+44
+00:06:26,439 --> 00:06:27,959
+Burada neler var bir bakalım.
+
+45
+00:06:29,579 --> 00:06:30,980
+Bağlantıyı yeni pencerede açalım.
+
+46
+00:06:31,199 --> 00:06:41,269
+Deney tariflerimiz bu şekilde belirlenmiş.
+
+47
+00:06:43,709 --> 00:06:48,709
+Lab deney grupları uzaktan eğitim modülümüzü kastetmiş.
+
+48
+00:06:48,709 --> 00:06:50,990
+4 tane laboratuvarımız var.
+
+49
+00:06:52,189 --> 00:06:55,550
+Doğruluk tablosu, karma, muxlar ve flip-floplar muxları.
+
+50
+00:06:55,689 --> 00:06:58,490
+Grup 1 muaflar burada bulunuyor.
+
+51
+00:07:00,589 --> 00:07:05,990
+Burada bir gerekli bilgiler var.
+
+52
+00:07:05,990 --> 00:07:10,149
+Grupların içerisinde kimler?
+
+53
+00:07:10,449 --> 00:07:13,509
+Bunların içerisi doldurulacak arkadaşlar.
+
+54
+00:07:13,509 --> 00:07:16,509
+Gruplar bu şekilde belirlenmiş.
+
+55
+00:07:16,509 --> 00:07:18,509
+Toplam 4 grubumuz var.
+
+56
+00:07:18,509 --> 00:07:20,509
+Buradan takip edersiniz.
+
+57
+00:07:20,509 --> 00:07:23,509
+Anlaştık mı arkadaşlar?
+
+58
+00:07:23,509 --> 00:07:31,509
+Başka sorunuz yoksa laboratuvarlarla ilgili çalışmalara başlayabiliriz artık.
+
+59
+00:07:31,509 --> 00:07:38,360
+Evet bu kısmı da tamamladık.
+
+60
+00:07:38,360 --> 00:07:41,360
+Geçen hafta genel olarak bahsettik.
+
+61
+00:07:41,360 --> 00:07:42,360
+Geçen hafta genel olarak bahsettik.
+
+62
+00:07:42,360 --> 00:07:44,019
+Geçen hafta genel olarak bahsettik.
+
+63
+00:07:45,100 --> 00:07:51,420
+Dış dünya, dış dünyadan artık computing bizim için activation.
+
+64
+00:07:52,199 --> 00:07:54,420
+Bilgilerin aktarılmasıyla alakalı.
+
+65
+00:08:05,399 --> 00:08:09,410
+Şuanda online olacağı için aydırtılı bilgiler var.
+
+66
+00:08:10,990 --> 00:08:13,990
+Bilgileriucuyun.
+
+67
+00:08:16,230 --> 00:08:18,509
+simülasyon şeklinde yapılıyor
+
+68
+00:08:18,509 --> 00:08:19,810
+benim gördüğüm kadarıyla.
+
+69
+00:08:20,589 --> 00:08:22,310
+Onun haricinde evde yapılacak
+
+70
+00:08:22,310 --> 00:08:24,689
+tamamlanacak, breadboard düzeninde
+
+71
+00:08:24,689 --> 00:08:26,449
+yapılabilecek bir düzen isteniyor mu?
+
+72
+00:08:27,149 --> 00:08:28,250
+Laboratuvarla ilgili
+
+73
+00:08:28,250 --> 00:08:30,550
+konularda biz sadece
+
+74
+00:08:30,550 --> 00:08:32,049
+notlarınızı alacağız size.
+
+75
+00:08:32,710 --> 00:08:34,710
+Laboratuvar, arada sınavlar
+
+76
+00:08:34,710 --> 00:08:36,809
+yaparlarsa onların notlarını alacağız
+
+77
+00:08:36,809 --> 00:08:38,009
+ve onları
+
+78
+00:08:38,009 --> 00:08:40,990
+sizin yıl içi sınavlarınızla birleştirip
+
+79
+00:08:40,990 --> 00:08:42,889
+yıl içi notunuzu belirleyeceğiz.
+
+80
+00:08:43,370 --> 00:08:44,509
+Aynı tıl bilgileri direkt
+
+81
+00:08:44,509 --> 00:08:46,529
+arkadaşlarımızdan elde edinebilirsiniz.
+
+82
+00:08:49,649 --> 00:08:50,129
+Hem de
+
+83
+00:08:50,129 --> 00:08:51,789
+bahsettiğim gibi
+
+84
+00:08:51,789 --> 00:08:53,929
+analog dünya
+
+85
+00:08:53,929 --> 00:08:58,460
+yani sürekli
+
+86
+00:08:58,460 --> 00:09:00,779
+dünyada
+
+87
+00:09:00,779 --> 00:09:03,299
+sayısal dünyaya geçiyoruz.
+
+88
+00:09:05,799 --> 00:09:07,580
+Şimdi buradaki temel şey
+
+89
+00:09:07,580 --> 00:09:08,559
+kompütür.
+
+90
+00:09:09,759 --> 00:09:10,879
+Yani bilgisayarı,
+
+91
+00:09:10,879 --> 00:09:12,279
+bilgiyi, bunları
+
+92
+00:09:12,279 --> 00:09:15,120
+işleyeceğimiz, algoritmaları koşturacağımız
+
+93
+00:09:15,120 --> 00:09:16,860
+yapılar. Burada neyimiz var
+
+94
+00:09:16,860 --> 00:09:18,700
+bizim? Bir de memorimiz
+
+95
+00:09:18,700 --> 00:09:20,940
+var. Bu memori
+
+96
+00:09:20,940 --> 00:09:22,000
+nelerden oluşuyor?
+
+97
+00:09:23,000 --> 00:09:25,039
+RAM'ler, SSD,
+
+98
+00:09:25,039 --> 00:09:27,240
+hard disk, bulut
+
+99
+00:09:27,240 --> 00:09:29,019
+gibi yapılardan oluşuyor.
+
+100
+00:09:29,120 --> 00:09:30,940
+Ama tabi ki bunların en önemli özelliği
+
+101
+00:09:30,940 --> 00:09:32,460
+limitli olması.
+
+102
+00:09:34,399 --> 00:09:34,960
+Oysa
+
+103
+00:09:34,960 --> 00:09:36,580
+geçen hafta bahsetmiştik.
+
+104
+00:09:37,120 --> 00:09:39,440
+Bizim işaretlerimiz
+
+105
+00:09:39,440 --> 00:09:41,220
+bu dış dünyadan algılanabilecek
+
+106
+00:09:41,220 --> 00:09:42,779
+herhangi bir işaret olabilir.
+
+107
+00:09:43,600 --> 00:09:44,720
+Sürekli haldeydi
+
+108
+00:09:44,720 --> 00:09:47,440
+ve belli bir zaman aralığında
+
+109
+00:09:47,440 --> 00:09:48,580
+şöyle
+
+110
+00:09:48,580 --> 00:09:50,919
+T1 ve T2 aralığında
+
+111
+00:09:50,940 --> 00:09:52,980
+sonsuz tane
+
+112
+00:09:52,980 --> 00:09:54,399
+bilgi barındırıyordu. Çünkü
+
+113
+00:09:54,399 --> 00:09:57,399
+buralarda herhangi bir ayrıklaştırma
+
+114
+00:09:57,399 --> 00:09:57,919
+yoktu.
+
+115
+00:09:59,639 --> 00:10:00,919
+Biz çözüm
+
+116
+00:10:00,919 --> 00:10:02,980
+olarak şöyle bir şey demiştik
+
+117
+00:10:02,980 --> 00:10:03,679
+arkadaşlar.
+
+118
+00:10:05,320 --> 00:10:06,620
+İlk adımımız bir
+
+119
+00:10:06,620 --> 00:10:08,460
+sampling.
+
+120
+00:10:11,350 --> 00:10:13,110
+Sampling'den bahsetmiştik.
+
+121
+00:10:13,809 --> 00:10:15,210
+Bu örneklemeydi.
+
+122
+00:10:16,830 --> 00:10:18,450
+Ne demiştik çözüm olarak?
+
+123
+00:10:19,029 --> 00:10:20,990
+Demek ki işaretimizin bizim
+
+124
+00:10:20,990 --> 00:10:22,789
+ayrıklaştırma
+
+125
+00:10:22,789 --> 00:10:24,549
+ayrıklaşması lazım. Yani diskrit
+
+126
+00:10:24,549 --> 00:10:26,049
+hale getirilmesi lazım.
+
+127
+00:10:26,909 --> 00:10:27,830
+Öncelikli olarak.
+
+128
+00:10:29,629 --> 00:10:29,809
+Ki
+
+129
+00:10:29,809 --> 00:10:32,690
+bu diskrit
+
+130
+00:10:32,690 --> 00:10:34,149
+hale getirildikten sonra
+
+131
+00:10:34,149 --> 00:10:36,250
+ben bunların arasındaki
+
+132
+00:10:36,250 --> 00:10:38,470
+mesafede arkadaşlar örnekler arasındaki
+
+133
+00:10:38,470 --> 00:10:40,389
+mesafede TS
+
+134
+00:10:40,389 --> 00:10:42,509
+yani sampling
+
+135
+00:10:42,509 --> 00:10:48,899
+period. Yani
+
+136
+00:10:48,899 --> 00:10:51,039
+iki örnekleme arasında geçen
+
+137
+00:10:51,039 --> 00:10:52,480
+süreyden bahsediyoruz.
+
+138
+00:10:53,580 --> 00:10:55,240
+Şimdi burada en önemli
+
+139
+00:10:55,240 --> 00:10:56,580
+sorumuz neydi arkadaşlar?
+
+140
+00:10:57,299 --> 00:10:59,320
+Biz tamam örnekleme
+
+141
+00:10:59,320 --> 00:11:00,360
+yapacağız. Fakat
+
+142
+00:11:00,360 --> 00:11:03,720
+burada örneklemenin
+
+143
+00:11:03,720 --> 00:11:05,980
+ne sıklıkta yapılacağı
+
+144
+00:11:05,980 --> 00:11:07,299
+soru işaretiydi.
+
+145
+00:11:07,299 --> 00:11:08,179
+Yani
+
+146
+00:11:08,179 --> 00:11:11,580
+bizim TS'yi belirlememiz gerekiyordu.
+
+147
+00:11:11,740 --> 00:11:13,279
+Eğer bunun gibi çok
+
+148
+00:11:13,279 --> 00:11:15,480
+seyrek yaparsak şuradaki gibi
+
+149
+00:11:15,480 --> 00:11:17,080
+bazı önemli
+
+150
+00:11:17,080 --> 00:11:18,620
+noktaları
+
+151
+00:11:18,620 --> 00:11:20,340
+kaybedebiliriz. Çünkü
+
+152
+00:11:20,340 --> 00:11:23,500
+bu örneği aldık, bu örneği aldık, bu örneği aldık.
+
+153
+00:11:23,899 --> 00:11:25,620
+Hani bakarsak trendine
+
+154
+00:11:25,620 --> 00:11:26,940
+hani şuralardaki gibi
+
+155
+00:11:27,299 --> 00:11:29,399
+pikler yapıldığını kaybedebiliriz. Örneğin
+
+156
+00:11:29,399 --> 00:11:31,740
+bu biyomedikal bir işaret olduğunu düşünün.
+
+157
+00:11:32,580 --> 00:11:33,299
+Ne yaparsanız
+
+158
+00:11:33,299 --> 00:11:35,120
+sizin için önemli bir
+
+159
+00:11:35,120 --> 00:11:37,220
+veriyi kaybetme
+
+160
+00:11:37,220 --> 00:11:38,240
+şansınız var.
+
+161
+00:11:40,539 --> 00:11:41,940
+Örnekleme yapacağız. Tamam.
+
+162
+00:11:42,500 --> 00:11:44,059
+TS'yi belirleyeceğiz dedik.
+
+163
+00:11:44,779 --> 00:11:46,639
+Burada iki tane şeyden bahsetmiştik.
+
+164
+00:11:46,720 --> 00:11:48,740
+Çok seyrek olması örneklemenin
+
+165
+00:11:48,740 --> 00:11:50,860
+yani TS'nin çok geniş olması
+
+166
+00:11:50,860 --> 00:11:52,399
+tamam bizim için
+
+167
+00:11:52,399 --> 00:11:54,860
+hafıza ve işlem gücü açısından
+
+168
+00:11:54,860 --> 00:11:56,559
+daha az bilgiyi
+
+169
+00:11:56,559 --> 00:11:58,659
+işleyeceğimiz manasın. Avantajı
+
+170
+00:11:58,679 --> 00:12:00,559
+budur. Ama dezavantajı
+
+171
+00:12:00,559 --> 00:12:02,360
+işaretin orijinalliğine veya
+
+172
+00:12:02,360 --> 00:12:04,919
+gerçek orijinal işarete yaklaşıklılığı
+
+173
+00:12:04,919 --> 00:12:05,720
+kaybediyorduk.
+
+174
+00:12:06,700 --> 00:12:08,639
+Çok sık almanın da şeyi yoktu.
+
+175
+00:12:08,720 --> 00:12:10,899
+Sonu yoktu. Olabildiğince
+
+176
+00:12:10,899 --> 00:12:12,879
+sık alabiliriz. Yani epsilon kadar
+
+177
+00:12:12,879 --> 00:12:14,320
+neredeyse
+
+178
+00:12:14,320 --> 00:12:16,620
+inebiliriz. Yani
+
+179
+00:12:16,620 --> 00:12:18,940
+çok düşük aralıklar
+
+180
+00:12:18,940 --> 00:12:20,419
+gibi. Tabi burada da ne oluyor?
+
+181
+00:12:21,360 --> 00:12:23,159
+Çok sık yaptığımız zaman da
+
+182
+00:12:23,159 --> 00:12:25,200
+hafıza ve bilgisayardaki
+
+183
+00:12:25,200 --> 00:12:26,139
+computing yani
+
+184
+00:12:26,139 --> 00:12:28,460
+hesap gücünü çok yoğun yoğurmuşlar.
+
+185
+00:12:28,679 --> 00:12:30,480
+Olacağız. Hesapsal
+
+186
+00:12:30,480 --> 00:12:32,320
+karmaşık kalacak. Belli bir aralık
+
+187
+00:12:32,320 --> 00:12:34,799
+belirlemeliyiz. Yani öyle bir aralık belirlemeliyiz ki
+
+188
+00:12:34,799 --> 00:12:36,460
+olabilecek
+
+189
+00:12:36,460 --> 00:12:38,559
+maksimum genişlikte
+
+190
+00:12:38,559 --> 00:12:39,139
+olacak.
+
+191
+00:12:40,460 --> 00:12:41,899
+Maksimum genişlikte olacak.
+
+192
+00:12:43,159 --> 00:12:44,600
+Ve işaretin temel
+
+193
+00:12:44,600 --> 00:12:46,840
+özelliklerini kaybetmeyeceğiz.
+
+194
+00:12:48,600 --> 00:12:49,899
+Bununla alakalı olarak
+
+195
+00:12:49,899 --> 00:12:52,080
+neyden bahsetmiştik?
+
+196
+00:12:52,919 --> 00:12:54,399
+TS'yi belirleyebilmek.
+
+197
+00:12:55,860 --> 00:12:56,340
+Veya
+
+198
+00:12:56,340 --> 00:12:58,320
+TS neydi? 1 bölü
+
+199
+00:12:58,679 --> 00:13:00,320
+resti. Yani örnekleme
+
+200
+00:13:00,320 --> 00:13:03,100
+periyodu. Şu örnekleme
+
+201
+00:13:03,100 --> 00:13:04,919
+periyodu. Bu da
+
+202
+00:13:04,919 --> 00:13:08,679
+periyodun belirlenmesi.
+
+203
+00:13:09,480 --> 00:13:10,039
+Burada da
+
+204
+00:13:10,039 --> 00:13:11,720
+frekansın belirlenmesi.
+
+205
+00:13:15,860 --> 00:13:16,779
+Gerekiyor.
+
+206
+00:13:17,379 --> 00:13:19,679
+Biliyorsunuz periyod ve frekans ifadeleri
+
+207
+00:13:19,679 --> 00:13:21,460
+birbirlerinin tam tersiydi.
+
+208
+00:13:22,460 --> 00:13:22,940
+Burada
+
+209
+00:13:22,940 --> 00:13:24,940
+neyden yararlandık arkadaşlar?
+
+210
+00:13:25,899 --> 00:13:27,700
+Furiye analizinden
+
+211
+00:13:27,700 --> 00:13:28,519
+yararlandık.
+
+212
+00:13:33,779 --> 00:13:36,539
+1800'lü yıllarda yaşamış bir matematikçi.
+
+213
+00:13:36,700 --> 00:13:37,440
+Genel olarak
+
+214
+00:13:37,440 --> 00:13:39,340
+işaret değil de
+
+215
+00:13:39,340 --> 00:13:40,980
+matematiksel fonksiyonları
+
+216
+00:13:40,980 --> 00:13:43,179
+bunun gibi matematiksel fonksiyonların
+
+217
+00:13:43,179 --> 00:13:47,740
+nasıl ifade edilebileceği
+
+218
+00:13:47,740 --> 00:13:48,740
+kendini oluşturan
+
+219
+00:13:48,740 --> 00:13:50,960
+parçacıkları ayrılıp ayrılamayacağıyla
+
+220
+00:13:50,960 --> 00:13:51,759
+ilgilenmiş.
+
+221
+00:13:52,580 --> 00:13:55,019
+Şöyle bir sonuca varmış.
+
+222
+00:13:55,919 --> 00:13:56,879
+Bir işaret
+
+223
+00:13:56,879 --> 00:13:58,879
+belli aralıkta
+
+224
+00:13:58,879 --> 00:14:00,360
+kendini oluşturan
+
+225
+00:14:00,360 --> 00:14:02,799
+sonsuz sayıda değişik frekansa
+
+226
+00:14:02,799 --> 00:14:05,059
+sahip sinizoidallerden
+
+227
+00:14:05,059 --> 00:14:06,019
+oluşabilir.
+
+228
+00:14:06,019 --> 00:14:06,779
+Demiş.
+
+229
+00:14:07,440 --> 00:14:09,899
+Şimdi burada hemen sinizoidel kavramına
+
+230
+00:14:09,899 --> 00:14:10,840
+girelim.
+
+231
+00:14:11,580 --> 00:14:13,940
+Bir sinizoideli tanımlarken arkadaşlar
+
+232
+00:14:13,940 --> 00:14:15,480
+basitçe
+
+233
+00:14:15,480 --> 00:14:17,440
+neyden bahsediyorduk?
+
+234
+00:14:18,399 --> 00:14:20,159
+Sinizoidel bir işaret.
+
+235
+00:14:20,820 --> 00:14:22,059
+XT işaretimiz
+
+236
+00:14:22,059 --> 00:14:23,000
+diyelim ve T.
+
+237
+00:14:24,379 --> 00:14:25,639
+Bunu tanımlarken bir
+
+238
+00:14:25,639 --> 00:14:27,659
+genlikten bahsediyorduk.
+
+239
+00:14:28,460 --> 00:14:28,879
+Şöyle
+
+240
+00:14:28,879 --> 00:14:32,080
+A ve eksi A arasındaki
+
+241
+00:14:32,080 --> 00:14:33,659
+genlikten bahsediyorduk.
+
+242
+00:14:34,500 --> 00:14:35,980
+İkincisi arkadaşlar
+
+243
+00:14:35,980 --> 00:14:37,899
+neyden bahsediyoruz?
+
+244
+00:14:38,120 --> 00:14:39,580
+Frekansdan bahsediyoruz.
+
+245
+00:14:41,519 --> 00:14:41,799
+Yani
+
+246
+00:14:41,799 --> 00:14:44,159
+herhangi iki sinizoidel
+
+247
+00:14:44,159 --> 00:14:46,279
+sinyali birbirinden farklılaştıran
+
+248
+00:14:46,279 --> 00:14:48,340
+temel yapılardan bahsediyoruz.
+
+249
+00:14:49,019 --> 00:14:49,919
+İkincisi ise
+
+250
+00:14:49,919 --> 00:14:51,919
+bunun periyodu. Bu da bir bölü
+
+251
+00:14:51,919 --> 00:14:54,139
+F şeklinde ifade ediliyor.
+
+252
+00:14:55,299 --> 00:14:56,159
+Bunların periyodu
+
+253
+00:14:56,159 --> 00:14:57,580
+farklı olabilir.
+
+254
+00:14:58,639 --> 00:15:00,100
+Burada frekans
+
+255
+00:15:00,100 --> 00:15:02,720
+kavramından biraz bahsetmiştik.
+
+256
+00:15:03,519 --> 00:15:04,080
+Frekans
+
+257
+00:15:04,080 --> 00:15:05,960
+kavramını bize açıklayacak olanlar
+
+258
+00:15:05,980 --> 00:15:07,419
+arkadaşımız var mıydı arkadaşlar?
+
+259
+00:15:07,600 --> 00:15:09,940
+İçimizden birisi. Güzel bir şekilde açıklasın
+
+260
+00:15:09,940 --> 00:15:14,860
+bakalım bize. Kim açıklamak
+
+261
+00:15:14,860 --> 00:15:19,490
+ister? Deneyebilirim hocam
+
+262
+00:15:19,490 --> 00:15:21,409
+isterseniz. Tabii buyurun. Başkası yok.
+
+263
+00:15:21,870 --> 00:15:23,210
+Buyurun. Bir saniye
+
+264
+00:15:23,210 --> 00:15:25,450
+içerisinde dalganın ne kadar
+
+265
+00:15:25,450 --> 00:15:26,970
+tekrarladığı olması lazım.
+
+266
+00:15:27,090 --> 00:15:29,450
+Evet. Birim zamanda
+
+267
+00:15:29,450 --> 00:15:31,889
+veya bir saniye içerisinde
+
+268
+00:15:31,889 --> 00:15:35,330
+şeyin sinizoidel dalga
+
+269
+00:15:35,330 --> 00:15:36,950
+formunun kendini
+
+270
+00:15:36,950 --> 00:15:39,190
+şuradan başlayıp şurada bir tane
+
+271
+00:15:39,190 --> 00:15:40,789
+kaç defa tekrarladığı.
+
+272
+00:15:41,330 --> 00:15:43,269
+Örneğin iki tane işaret çizsem
+
+273
+00:15:43,269 --> 00:15:45,789
+aynı zaman aralığı içerisinde
+
+274
+00:15:45,789 --> 00:15:47,149
+şöyle yapsam
+
+275
+00:15:47,149 --> 00:15:48,870
+şöyle yapsam
+
+276
+00:15:48,870 --> 00:15:51,330
+bunlar birim zaman belirledik.
+
+277
+00:15:52,350 --> 00:15:53,389
+Şöyle bir birim zaman
+
+278
+00:15:53,389 --> 00:15:54,450
+unit
+
+279
+00:15:54,450 --> 00:15:56,490
+time diyelim.
+
+280
+00:15:58,629 --> 00:15:59,250
+Gördüğünüz gibi
+
+281
+00:15:59,250 --> 00:16:01,110
+burada çevrimini çok sayıda
+
+282
+00:16:01,110 --> 00:16:03,149
+kez başlayıp bitiriyor.
+
+283
+00:16:03,970 --> 00:16:04,629
+Dolayısıyla
+
+284
+00:16:04,629 --> 00:16:07,210
+frekansı hangisinin yüksek bunlardan
+
+285
+00:16:07,210 --> 00:16:07,909
+arkadaşlar?
+
+286
+00:16:07,909 --> 00:16:10,860
+Evet.
+
+287
+00:16:11,720 --> 00:16:13,159
+Hangisinin frekansı?
+
+288
+00:16:13,179 --> 00:16:13,639
+İkincisi yüksek.
+
+289
+00:16:14,019 --> 00:16:14,419
+İkincisi.
+
+290
+00:16:15,080 --> 00:16:16,279
+İkincisinin değil mi?
+
+291
+00:16:17,399 --> 00:16:20,480
+Evet. İkinci olan frekans burada yüksek.
+
+292
+00:16:21,200 --> 00:16:21,440
+Şöyle.
+
+293
+00:16:22,100 --> 00:16:23,659
+Burada ise frekans düşük.
+
+294
+00:16:24,080 --> 00:16:25,720
+Dikkat edin. Frekans düşük ama
+
+295
+00:16:25,720 --> 00:16:27,120
+ne uzun burada?
+
+296
+00:16:27,419 --> 00:16:28,440
+T büyük.
+
+297
+00:16:29,779 --> 00:16:31,720
+Burada da iki zaman yani
+
+298
+00:16:31,720 --> 00:16:34,080
+çevrimin geçtiği süre T düşük.
+
+299
+00:16:34,340 --> 00:16:35,980
+Burada da. Ters ilişki var
+
+300
+00:16:35,980 --> 00:16:36,840
+iç aralarında.
+
+301
+00:16:37,879 --> 00:16:39,700
+Bir tane daha özelliğimiz vardı
+
+302
+00:16:39,700 --> 00:16:40,460
+arkadaşlar.
+
+303
+00:16:40,460 --> 00:16:42,720
+Bir de işaretin nereden
+
+304
+00:16:43,179 --> 00:16:44,179
+başladığı önemliydi?
+
+305
+00:16:44,179 --> 00:16:45,679
+Başlangıç koşulları yani.
+
+306
+00:16:45,679 --> 00:16:46,679
+Şöyle baktığımızda.
+
+307
+00:16:46,679 --> 00:16:50,179
+Tabi işaret ileri geri kaydırılabilir
+
+308
+00:16:50,179 --> 00:16:51,179
+şekilde.
+
+309
+00:16:51,179 --> 00:16:54,179
+Buna da açıyla belirtiyoruz.
+
+310
+00:16:54,179 --> 00:16:56,179
+Faz farkı diyoruz arkadaşlar.
+
+311
+00:16:56,179 --> 00:16:58,179
+Sinüs ve kosünüs işaretleri
+
+312
+00:16:58,179 --> 00:17:00,179
+aslında aynı tek bir fonksiyonun
+
+313
+00:17:00,179 --> 00:17:02,179
+çıktığı aralarındaki tek
+
+314
+00:17:02,179 --> 00:17:04,180
+faz farkının
+
+315
+00:17:04,180 --> 00:17:06,180
+olması. Bu durumda
+
+316
+00:17:06,180 --> 00:17:08,180
+işaretimizi nasıl tanımlayabiliyorduk
+
+317
+00:17:08,180 --> 00:17:10,180
+arkadaşlar? XT işaretimizi
+
+318
+00:17:10,180 --> 00:17:12,180
+XT'ye.
+
+319
+00:17:12,180 --> 00:17:15,180
+Belli bir genlik sinüs
+
+320
+00:17:15,180 --> 00:17:17,180
+omega T artı
+
+321
+00:17:17,180 --> 00:17:19,180
+fi şeklinde tanımlıyoruz.
+
+322
+00:17:19,180 --> 00:17:21,180
+Omega neyden oluşuyordu
+
+323
+00:17:21,180 --> 00:17:23,180
+arkadaşlar? A sinüs
+
+324
+00:17:23,180 --> 00:17:25,180
+2 pi F
+
+325
+00:17:25,180 --> 00:17:27,180
+T. Omega yani 2 pi
+
+326
+00:17:27,180 --> 00:17:29,180
+F'e eşit.
+
+327
+00:17:29,180 --> 00:17:31,180
+Burada.
+
+328
+00:17:31,180 --> 00:17:33,180
+Buradaki 2 pi'deki
+
+329
+00:17:33,180 --> 00:17:35,180
+radyan sayısıyla bir artı
+
+330
+00:17:35,180 --> 00:17:37,180
+fi kısmı vardı.
+
+331
+00:17:37,180 --> 00:17:39,180
+Şurasını T yapalım ve
+
+332
+00:17:39,180 --> 00:17:41,180
+fi kısmı vardı. Ne demiştik?
+
+333
+00:17:41,180 --> 00:17:43,180
+Bunu kabaca anlatmamızın
+
+334
+00:17:43,180 --> 00:17:45,180
+bir nedeni vardı. Şeyi
+
+335
+00:17:45,180 --> 00:17:47,180
+sormuş muydum geçen hafta size?
+
+336
+00:17:47,180 --> 00:17:49,180
+Güç işaretleri mesela
+
+337
+00:17:49,180 --> 00:17:51,180
+gündelik hayatta kullandığımız
+
+338
+00:17:51,180 --> 00:17:53,180
+güç işaretlerinin
+
+339
+00:17:53,180 --> 00:17:55,180
+AC mi DC mi olduğunu
+
+340
+00:17:55,180 --> 00:17:57,180
+sormuş muydum size?
+
+341
+00:17:57,180 --> 00:17:59,180
+Sordunuz hocam. Bana sordunuz
+
+342
+00:17:59,180 --> 00:18:01,180
+yanlış cevapladım. Hatırlıyorum artık.
+
+343
+00:18:01,180 --> 00:18:03,180
+Tamamdır. Burada en önemli şey
+
+344
+00:18:03,180 --> 00:18:05,180
+güç işaretlerinde
+
+345
+00:18:05,180 --> 00:18:07,180
+veya genel olarak işaretlerde
+
+346
+00:18:07,180 --> 00:18:09,180
+sabit bir değer alıyorsa. Örneğin 5
+
+347
+00:18:09,180 --> 00:18:11,180
+volt veya salınım yapıyorsa.
+
+348
+00:18:11,180 --> 00:18:13,180
+Buradan
+
+349
+00:18:13,180 --> 00:18:15,180
+iki farklı yapıda
+
+350
+00:18:15,180 --> 00:18:17,180
+buradaki frekans 0 yani
+
+351
+00:18:17,180 --> 00:18:19,180
+bir salınım yok. Burada ise
+
+352
+00:18:19,180 --> 00:18:21,180
+frekans 0'dan büyük.
+
+353
+00:18:21,180 --> 00:18:23,180
+Artık salınım yapmaya başlıyor. Buna
+
+354
+00:18:23,180 --> 00:18:25,180
+direct current buna da
+
+355
+00:18:25,180 --> 00:18:27,180
+alternatif current diyor.
+
+356
+00:18:27,180 --> 00:18:29,180
+Dikkat edin. Current kavramı
+
+357
+00:18:29,180 --> 00:18:31,180
+akım
+
+358
+00:18:31,180 --> 00:18:33,180
+manasında kullanılıyor.
+
+359
+00:18:33,180 --> 00:18:35,180
+Bakalım bir şey mi yazmışlar.
+
+360
+00:18:35,180 --> 00:18:37,180
+Evet.
+
+361
+00:18:37,180 --> 00:18:39,180
+Akım manasında kullanılıyor.
+
+362
+00:18:39,180 --> 00:18:41,180
+Bu da güç işaretleriyle
+
+363
+00:18:41,180 --> 00:18:43,180
+alakalı bir geçmişten
+
+364
+00:18:43,180 --> 00:18:45,180
+kaynaklanıyor bu adlandırma arkadaşlar.
+
+365
+00:18:45,180 --> 00:18:47,180
+Genel olarak herhangi bir işaretin
+
+366
+00:18:47,180 --> 00:18:49,180
+DC seviyesi veya AC seviyesi
+
+367
+00:18:49,180 --> 00:18:51,180
+AC bileşenleri şeklinde
+
+368
+00:18:51,180 --> 00:18:53,180
+ayrıştırabiliriz.
+
+369
+00:18:53,180 --> 00:18:55,180
+DC işaretin genellikle
+
+370
+00:18:55,180 --> 00:18:57,180
+ortalamasını verir.
+
+371
+00:18:57,180 --> 00:18:59,180
+Şöyle ortalama yazalım.
+
+372
+00:18:59,180 --> 00:19:01,180
+AC ise salınım yapan
+
+373
+00:19:01,180 --> 00:19:03,180
+kısım. Örneğin
+
+374
+00:19:03,180 --> 00:19:05,180
+şöyle bir işaretimiz olabilir.
+
+375
+00:19:05,180 --> 00:19:08,559
+Bu işaretin
+
+376
+00:19:08,559 --> 00:19:10,559
+aslında iki kısımdan oluşur.
+
+377
+00:19:10,559 --> 00:19:12,559
+Bir DC
+
+378
+00:19:12,559 --> 00:19:14,559
+kısım yani ortalamanın olduğu
+
+379
+00:19:14,559 --> 00:19:16,559
+kısım. Artı bir de
+
+380
+00:19:16,559 --> 00:19:18,559
+salınım yapan kısımdan oluşur.
+
+381
+00:19:18,559 --> 00:19:20,559
+Aslında bu
+
+382
+00:19:20,559 --> 00:19:22,559
+AC işaret şuradaki DC işaretinin
+
+383
+00:19:22,559 --> 00:19:24,559
+üzerine binmiş gibi de düşünebilirsiniz.
+
+384
+00:19:24,559 --> 00:19:26,559
+Ama
+
+385
+00:19:26,559 --> 00:19:28,559
+AC işaretler 0 ortalamalıdır.
+
+386
+00:19:28,559 --> 00:19:30,559
+Şurada gördüğünüz gibi.
+
+387
+00:19:30,559 --> 00:19:32,559
+Sonuçta
+
+388
+00:19:32,559 --> 00:19:34,559
+sinizoidal bir işaret. Bir offset binmesi
+
+389
+00:19:34,559 --> 00:19:36,559
+DC binmesi manasında.
+
+390
+00:19:36,559 --> 00:19:38,559
+Güçten gelir. Ne demişim?
+
+391
+00:19:38,559 --> 00:19:40,559
+Bizim şehir şebekemiz
+
+392
+00:19:40,559 --> 00:19:42,559
+220 volt. Avrupa
+
+393
+00:19:42,559 --> 00:19:44,559
+için konuşuyorum. Ve 50 hertz
+
+394
+00:19:44,559 --> 00:19:46,559
+civarındaydı.
+
+395
+00:19:46,559 --> 00:19:48,559
+Amerika'da örneğin 110 volt
+
+396
+00:19:48,559 --> 00:19:50,559
+demiştik. Ve de
+
+397
+00:19:50,559 --> 00:19:52,559
+60 hertz civarı
+
+398
+00:19:52,559 --> 00:19:54,559
+vardı.
+
+399
+00:19:54,559 --> 00:19:56,559
+Bunları anlatmamın temel nedeni şuydu.
+
+400
+00:19:56,559 --> 00:19:58,559
+Tekrar gelelim şuraya.
+
+401
+00:19:58,559 --> 00:20:00,559
+Fourier analiz kısmını
+
+402
+00:20:00,559 --> 00:20:02,559
+anlatmaya çalışıyoruz.
+
+403
+00:20:02,559 --> 00:20:04,559
+Ne demişti? Tekrar edelim.
+
+404
+00:20:04,559 --> 00:20:06,559
+Bir işaret
+
+405
+00:20:06,559 --> 00:20:08,559
+herhangi bir işaret veya fonksiyon
+
+406
+00:20:08,559 --> 00:20:10,559
+kendini oluşturan
+
+407
+00:20:10,559 --> 00:20:12,559
+sonsuz sayıdaki
+
+408
+00:20:12,559 --> 00:20:14,559
+ideal biçimde
+
+409
+00:20:14,559 --> 00:20:16,559
+tanımlama yapılıyor. Sonsuz sayıdaki
+
+410
+00:20:16,559 --> 00:20:18,559
+sinizoidal bileşenin
+
+411
+00:20:18,559 --> 00:20:20,559
+farklı
+
+412
+00:20:20,559 --> 00:20:22,559
+frekansa sahip sinizoidal bileşenin
+
+413
+00:20:22,559 --> 00:20:24,559
+toplamı şeklinde yapılabilir.
+
+414
+00:20:24,559 --> 00:20:26,559
+Dolayısıyla şöyle diyelim miyiz arkadaşlar?
+
+415
+00:20:26,559 --> 00:20:28,559
+Önce bir DC
+
+416
+00:20:28,559 --> 00:20:30,559
+kısmı vardır. F eşittir 0'dan.
+
+417
+00:20:30,559 --> 00:20:32,559
+Bununla beraber
+
+418
+00:20:32,559 --> 00:20:34,559
+biliyorsunuz frekans da
+
+419
+00:20:34,559 --> 00:20:36,559
+sürekli bir fonksiyon. Yani
+
+420
+00:20:36,559 --> 00:20:38,559
+1, 2, 3 diye ayrıştıramayız.
+
+421
+00:20:38,559 --> 00:20:40,559
+Burada da
+
+422
+00:20:40,559 --> 00:20:42,559
+aradan örnekler vererek
+
+423
+00:20:42,559 --> 00:20:44,559
+şöyle
+
+424
+00:20:44,559 --> 00:20:46,559
+çeşitli frekanslara sahip
+
+425
+00:20:46,559 --> 00:20:48,559
+genel olarak
+
+426
+00:20:48,559 --> 00:20:50,559
+gösterimi
+
+427
+00:20:50,559 --> 00:20:52,559
+bir yapalım.
+
+428
+00:20:52,559 --> 00:20:54,559
+Biraz daha yüksek frekanslı
+
+429
+00:20:54,559 --> 00:20:56,559
+bir işaret olsun.
+
+430
+00:20:56,559 --> 00:20:58,559
+Artı
+
+431
+00:20:58,559 --> 00:21:00,559
+bir tane de şöyle
+
+432
+00:21:00,559 --> 00:21:02,559
+şunu düzgün çizelim
+
+433
+00:21:02,559 --> 00:21:04,559
+evet
+
+434
+00:21:04,559 --> 00:21:06,559
+daha yüksek frekansa
+
+435
+00:21:06,559 --> 00:21:08,559
+sahip bir işaret.
+
+436
+00:21:08,559 --> 00:21:10,559
+Önce bunları söylerken
+
+437
+00:21:10,559 --> 00:21:12,559
+şunu demiş oluyor aslında
+
+438
+00:21:12,559 --> 00:21:14,559
+matematiksel formda
+
+439
+00:21:14,559 --> 00:21:16,559
+anlatacak olursak
+
+440
+00:21:16,559 --> 00:21:18,559
+xt eşittir. Herhangi bir
+
+441
+00:21:18,559 --> 00:21:20,559
+xt işareti veya fonksiyonu
+
+442
+00:21:20,559 --> 00:21:22,559
+aslında
+
+443
+00:21:22,559 --> 00:21:24,559
+sinizoidal bileşenlerden
+
+444
+00:21:24,559 --> 00:21:26,559
+oluşuyor.
+
+445
+00:21:26,559 --> 00:21:28,559
+2 pi f
+
+446
+00:21:28,559 --> 00:21:30,559
+t. Faz farkını
+
+447
+00:21:30,559 --> 00:21:32,559
+şu an hesaba katmıyorum.
+
+448
+00:21:32,559 --> 00:21:34,559
+Ve frekans
+
+449
+00:21:34,559 --> 00:21:36,559
+sonsuz sayıda demiş.
+
+450
+00:21:36,559 --> 00:21:38,559
+Dolayısıyla integrali
+
+451
+00:21:38,559 --> 00:21:40,559
+sonsuzdan sonsuza getirmemiz lazım.
+
+452
+00:21:40,559 --> 00:21:42,559
+Burada bir şeye daha
+
+453
+00:21:42,559 --> 00:21:44,559
+dikkat etmemiz lazım belki.
+
+454
+00:21:44,559 --> 00:21:46,559
+Onu da söylemek lazım.
+
+455
+00:21:46,559 --> 00:21:48,559
+Bu her birinin
+
+456
+00:21:48,559 --> 00:21:52,769
+genlikleri farklı
+
+457
+00:21:52,769 --> 00:21:54,769
+olabilir.
+
+458
+00:21:54,769 --> 00:21:56,769
+A1, A2 genliğinde
+
+459
+00:21:56,769 --> 00:21:58,769
+çünkü AN
+
+460
+00:21:58,769 --> 00:22:00,769
+genliğinde olabilir. Yani
+
+461
+00:22:00,769 --> 00:22:02,769
+sonsuz sayıda sinizoidal
+
+462
+00:22:02,769 --> 00:22:04,769
+bileşen dedik ama her birinin
+
+463
+00:22:04,769 --> 00:22:06,769
+bu işaretin katılımına
+
+464
+00:22:06,769 --> 00:22:08,769
+etkisine genlik
+
+465
+00:22:08,769 --> 00:22:10,769
+seviyesindeki katılımı
+
+466
+00:22:10,769 --> 00:22:12,769
+farklı olabilir.
+
+467
+00:22:12,769 --> 00:22:14,769
+Farklı fazlarda olabilir ama ben
+
+468
+00:22:14,769 --> 00:22:16,769
+basit formunu yazıyorum.
+
+469
+00:22:16,769 --> 00:22:18,769
+Buradaki şeyi de katmamız lazım.
+
+470
+00:22:18,769 --> 00:22:20,769
+Frekansa bağlı olan
+
+471
+00:22:20,769 --> 00:22:22,769
+af'yi de katmamız lazım belki.
+
+472
+00:22:22,769 --> 00:22:24,769
+Ve bunları ne yapmamız lazım?
+
+473
+00:22:24,769 --> 00:22:26,769
+Sonsuz sayıda sinizoidal
+
+474
+00:22:26,769 --> 00:22:28,769
+bileşenden dediği için
+
+475
+00:22:28,769 --> 00:22:30,769
+eksi sonsuzdan sonsuza.
+
+476
+00:22:30,769 --> 00:22:32,769
+Eksi sonsuzumuz olmayacağı için
+
+477
+00:22:32,769 --> 00:22:34,769
+bunu nereden başlatmamız lazım?
+
+478
+00:22:34,769 --> 00:22:36,769
+Sıfırdan başlatmamız lazım.
+
+479
+00:22:36,769 --> 00:22:38,769
+Sıfırdan sonsuz frekansa
+
+480
+00:22:38,769 --> 00:22:40,769
+doğru gidiyoruz.
+
+481
+00:22:40,769 --> 00:22:44,140
+Burada.
+
+482
+00:22:44,140 --> 00:22:46,140
+Gördüğünüz gibi şu kat sayılar
+
+483
+00:22:46,140 --> 00:22:48,140
+genlik kat sayıları sinizoidal dalga
+
+484
+00:22:48,140 --> 00:22:50,140
+formlarının değişik frekanslardaki
+
+485
+00:22:50,140 --> 00:22:52,140
+toplamıyla beraber
+
+486
+00:22:52,140 --> 00:22:54,140
+x'de işareti oluşuyor.
+
+487
+00:22:56,140 --> 00:22:58,140
+Peki, burada şuna
+
+488
+00:22:58,140 --> 00:23:00,140
+dikkat edin. Sorumuz
+
+489
+00:23:00,140 --> 00:23:02,140
+şu aslında burada giderken.
+
+490
+00:23:02,140 --> 00:23:04,140
+Ts'leri belirlemek.
+
+491
+00:23:04,140 --> 00:23:06,140
+Şu ts'yi bulmaya
+
+492
+00:23:06,140 --> 00:23:08,140
+çalışıyoruz. Ancısı soru bu. Bunu
+
+493
+00:23:08,140 --> 00:23:10,140
+tekrar unutmayalım.
+
+494
+00:23:10,140 --> 00:23:12,140
+Bir işaret.
+
+495
+00:23:12,140 --> 00:23:14,140
+Ben burada kestim ama bu sonsuza kadar
+
+496
+00:23:14,140 --> 00:23:16,140
+gidiyor sonuçta.
+
+497
+00:23:16,140 --> 00:23:18,140
+Herhangi bir ses
+
+498
+00:23:18,140 --> 00:23:20,140
+kaynağı, işaret kaynağı, güç
+
+499
+00:23:20,140 --> 00:23:22,140
+kaynağının üretebileceği
+
+500
+00:23:22,140 --> 00:23:24,140
+bir maksimum frekans. İdeal olarak
+
+501
+00:23:24,140 --> 00:23:26,140
+sonsuza kadar demişiz ama
+
+502
+00:23:26,140 --> 00:23:28,140
+örneğin ben sizinle beraber konuşurken
+
+503
+00:23:28,140 --> 00:23:30,140
+sınıf ortamında
+
+504
+00:23:30,140 --> 00:23:32,140
+olsak, sizin kulaklarınıza gelecek
+
+505
+00:23:32,140 --> 00:23:34,140
+benim analog ses sinyalim
+
+506
+00:23:34,140 --> 00:23:36,140
+sonuçta bütün frekansları içermiyor.
+
+507
+00:23:36,140 --> 00:23:38,140
+Yani sonsuza kadar gitmiyor.
+
+508
+00:23:38,140 --> 00:23:40,140
+Bütün sonsuz frekanslı bir şey yok.
+
+509
+00:23:40,140 --> 00:23:42,140
+Bu ideal bir açıklama.
+
+510
+00:23:42,140 --> 00:23:44,140
+Sonuçta insan ses sisteminde örneğin
+
+511
+00:23:44,140 --> 00:23:46,140
+4 kHz veya
+
+512
+00:23:46,140 --> 00:23:48,140
+bir düdük çaldığınız değil, 15
+
+513
+00:23:48,140 --> 00:23:50,140
+kHz'e kadar gidiyor. Yani kaynağın
+
+514
+00:23:50,140 --> 00:23:52,140
+o frekansları
+
+515
+00:23:52,140 --> 00:23:54,140
+çıkarma kabiliyetiyle çok alakalı.
+
+516
+00:23:54,140 --> 00:23:56,140
+Dolayısıyla frekans, işaretin
+
+517
+00:23:56,140 --> 00:23:58,140
+işareti doğuran
+
+518
+00:23:58,140 --> 00:24:00,140
+kaynağın elektriksel olabilir,
+
+519
+00:24:00,140 --> 00:24:02,140
+mekanik olabilir,
+
+520
+00:24:02,140 --> 00:24:04,140
+elektriksel mekanik kaynağın
+
+521
+00:24:04,140 --> 00:24:06,140
+yapısıyla alakalı
+
+522
+00:24:06,140 --> 00:24:08,140
+sonuçta çıkarabileceği maksimum
+
+523
+00:24:08,140 --> 00:24:10,140
+bir frekans var. Örneğin
+
+524
+00:24:10,140 --> 00:24:12,140
+ben size konuşurken insan konuşma
+
+525
+00:24:12,140 --> 00:24:14,140
+sisteminde 4 kHz'dir bu.
+
+526
+00:24:14,140 --> 00:24:16,140
+fmax
+
+527
+00:24:16,140 --> 00:24:19,490
+4 kHz'dir.
+
+528
+00:24:19,490 --> 00:24:21,490
+Yaklaşık. Daha
+
+529
+00:24:21,490 --> 00:24:23,490
+tiz konuşan insanlarda
+
+530
+00:24:23,490 --> 00:24:25,490
+5 kHz'e gider ama ortalığı
+
+531
+00:24:25,490 --> 00:24:27,490
+ortalaması bunun 4 kHz
+
+532
+00:24:27,490 --> 00:24:29,490
+civarındadır.
+
+533
+00:24:29,490 --> 00:24:31,490
+Dolayısıyla bir fmax tanımı
+
+534
+00:24:31,490 --> 00:24:33,490
+muhakkak oluşur. Yani
+
+535
+00:24:33,490 --> 00:24:35,490
+en sonunda gerçek anlamda
+
+536
+00:24:35,490 --> 00:24:37,490
+şöyle bir fmax
+
+537
+00:24:37,490 --> 00:24:39,490
+denilen ve bundan sonrakilerin
+
+538
+00:24:39,490 --> 00:24:41,490
+genliğinin a
+
+539
+00:24:41,490 --> 00:24:43,490
+x'in sıfır olduğu. Yani
+
+540
+00:24:43,490 --> 00:24:45,490
+ondan başka artık sinizoidal
+
+541
+00:24:45,490 --> 00:24:47,490
+bileşen katılmıyor bu işarete
+
+542
+00:24:47,490 --> 00:24:49,490
+diyebileceğimiz bir yapı var.
+
+543
+00:24:49,490 --> 00:24:51,490
+Şimdi
+
+544
+00:24:51,490 --> 00:24:53,490
+bunu belirlerken
+
+545
+00:24:53,490 --> 00:24:55,490
+en yüksek frekansını demiştik
+
+546
+00:24:55,490 --> 00:24:57,490
+hatırlarsanız sadece
+
+547
+00:24:57,490 --> 00:24:59,490
+tepe noktalarını alan
+
+548
+00:24:59,490 --> 00:25:01,490
+bir örneklem,
+
+549
+00:25:01,490 --> 00:25:03,490
+örnekleme aralığı belirleyelim. Yani
+
+550
+00:25:03,490 --> 00:25:05,490
+şunların arasındaki mesafe
+
+551
+00:25:05,490 --> 00:25:07,490
+ts olsun.
+
+552
+00:25:07,490 --> 00:25:09,490
+Yukarı doğru çıkalım.
+
+553
+00:25:09,490 --> 00:25:11,490
+Şöyle biraz küçülteceğim.
+
+554
+00:25:11,490 --> 00:25:13,490
+Şöyle geldiğimde
+
+555
+00:25:13,490 --> 00:25:15,490
+şöyle yukarı doğru
+
+556
+00:25:15,490 --> 00:25:17,490
+çekeyim.
+
+557
+00:25:17,490 --> 00:25:19,490
+İşaretimi
+
+558
+00:25:19,490 --> 00:25:21,490
+şöyle örnekleme
+
+559
+00:25:21,490 --> 00:25:23,490
+aldığımı, ana işarette
+
+560
+00:25:23,490 --> 00:25:25,490
+nerelere denk geldiğini kabaca
+
+561
+00:25:25,490 --> 00:25:27,490
+göstermiş olayım.
+
+562
+00:25:27,490 --> 00:25:29,490
+Şunların arasındaki mesafe
+
+563
+00:25:29,490 --> 00:25:31,490
+ts kadar.
+
+564
+00:25:31,490 --> 00:25:33,490
+Dikkat edin en kötü durum nerede
+
+565
+00:25:33,490 --> 00:25:35,490
+oluşuyor arkadaşlar?
+
+566
+00:25:35,490 --> 00:25:37,490
+Şuraya açarsam en kötü durum
+
+567
+00:25:37,490 --> 00:25:39,490
+benim burada
+
+568
+00:25:39,490 --> 00:25:41,490
+sadece tepe noktalarını almış olduğum
+
+569
+00:25:41,490 --> 00:25:43,490
+en yüksek
+
+570
+00:25:43,490 --> 00:25:45,490
+frekansa sahip bileşende
+
+571
+00:25:45,490 --> 00:25:47,490
+oluşuyor. Dikkat edin
+
+572
+00:25:47,490 --> 00:25:49,490
+burada bir çevrimde sadece iki tane
+
+573
+00:25:49,490 --> 00:25:51,490
+tepe noktası alırken
+
+574
+00:25:51,490 --> 00:25:53,490
+daha düşük frekanslarda
+
+575
+00:25:53,490 --> 00:25:55,490
+yukarı doğru frekanslar düşüyor.
+
+576
+00:25:55,490 --> 00:25:57,490
+Bakın bir çevrim içerisinde
+
+577
+00:25:57,490 --> 00:25:59,490
+daha çok
+
+578
+00:25:59,490 --> 00:26:01,490
+örnek almışız. Dolayısıyla
+
+579
+00:26:01,490 --> 00:26:03,490
+o frekans bileşini daha iyi
+
+580
+00:26:03,490 --> 00:26:05,490
+örnekleyebilmişiz. Burada
+
+581
+00:26:05,490 --> 00:26:07,490
+daha düşük frekanslarda çok daha
+
+582
+00:26:07,490 --> 00:26:09,490
+bir çevrimde daha fazla almışız.
+
+583
+00:26:09,490 --> 00:26:11,490
+Demek ki en kötü durum
+
+584
+00:26:11,490 --> 00:26:13,490
+en yüksek frekanslı bileşende
+
+585
+00:26:13,490 --> 00:26:17,819
+oluşuyor.
+
+586
+00:26:17,819 --> 00:26:19,819
+Şimdi burada bir
+
+587
+00:26:19,819 --> 00:26:21,819
+bir zooming yaparsak buraya
+
+588
+00:26:21,819 --> 00:26:23,819
+şuradaki zoom kısmını
+
+589
+00:26:23,819 --> 00:26:27,359
+yapalım. İşareti
+
+590
+00:26:27,359 --> 00:26:32,529
+bir çizelim. En yüksek
+
+591
+00:26:34,529 --> 00:26:36,529
+frekansa sahip
+
+592
+00:26:36,529 --> 00:26:38,529
+bileşenin bir
+
+593
+00:26:38,529 --> 00:26:40,529
+çevrimini çizdim.
+
+594
+00:26:40,529 --> 00:26:42,529
+Burada arkadaşlar
+
+595
+00:26:42,529 --> 00:26:44,529
+şu geçen mesafe
+
+596
+00:26:44,529 --> 00:26:46,529
+nedir?
+
+597
+00:26:46,529 --> 00:26:48,529
+Tmax.
+
+598
+00:26:48,529 --> 00:26:50,529
+Eşitti 1 bölü Fmax.
+
+599
+00:26:50,529 --> 00:26:52,529
+Peki
+
+600
+00:26:52,529 --> 00:26:54,529
+örneklerimi nereden almıştım?
+
+601
+00:26:54,529 --> 00:26:56,529
+Tam şu
+
+602
+00:26:56,529 --> 00:26:58,529
+tepe noktalarından almıştım.
+
+603
+00:26:58,529 --> 00:27:00,529
+Dolayısıyla iki örnek arasında
+
+604
+00:27:00,529 --> 00:27:02,529
+geçen sürede
+
+605
+00:27:02,529 --> 00:27:04,529
+T
+
+606
+00:27:04,529 --> 00:27:06,529
+S idi. Tmax ile
+
+607
+00:27:06,529 --> 00:27:08,529
+T S arasında nasıl bir ilişki vardı arkadaşlar?
+
+608
+00:27:08,529 --> 00:27:15,940
+Evet.
+
+609
+00:27:15,940 --> 00:27:17,940
+Hep arkadaşlar olmasın
+
+610
+00:27:17,940 --> 00:27:19,940
+soralım bakalım.
+
+611
+00:27:19,940 --> 00:27:24,140
+Melih Hocakçı.
+
+612
+00:27:24,140 --> 00:27:26,140
+Efendim hocam.
+
+613
+00:27:26,140 --> 00:27:28,140
+Tmax ile T S arasında nasıl bir ilişki
+
+614
+00:27:28,140 --> 00:27:30,140
+vardı? Bu çizdiğim şekle
+
+615
+00:27:30,140 --> 00:27:34,859
+göre. Tmax
+
+616
+00:27:34,859 --> 00:27:38,910
+sanırım
+
+617
+00:27:38,910 --> 00:27:40,910
+lambdasına göre
+
+618
+00:27:40,910 --> 00:27:42,910
+oluyor.
+
+619
+00:27:42,910 --> 00:27:44,910
+Lambda mı?
+
+620
+00:27:44,910 --> 00:27:46,910
+Yani
+
+621
+00:27:46,910 --> 00:27:48,910
+bir dalganın
+
+622
+00:27:48,910 --> 00:27:50,910
+lambdası.
+
+623
+00:27:50,910 --> 00:27:52,910
+Hayır hayır.
+
+624
+00:27:52,910 --> 00:27:54,910
+Tmax ile T S yani
+
+625
+00:27:54,910 --> 00:27:56,910
+en yüksek frekanslı bileşenin
+
+626
+00:27:56,910 --> 00:27:58,910
+periyoduyla
+
+627
+00:27:58,910 --> 00:28:00,910
+örnekleme periyodu arasındaki ilişkinin
+
+628
+00:28:00,910 --> 00:28:02,910
+nedir bu şekle göre?
+
+629
+00:28:02,910 --> 00:28:04,910
+Şekilden oku.
+
+630
+00:28:04,910 --> 00:28:06,910
+Yani Tmax'dan
+
+631
+00:28:06,910 --> 00:28:08,910
+daha uzun süre alamaz
+
+632
+00:28:08,910 --> 00:28:10,910
+bir örnekleme aralığı.
+
+633
+00:28:10,910 --> 00:28:12,910
+Kesinlikle
+
+634
+00:28:12,910 --> 00:28:14,910
+öyle olması lazım ama
+
+635
+00:28:14,910 --> 00:28:16,910
+şu andaki durumda ne?
+
+636
+00:28:16,910 --> 00:28:18,910
+Şu anda kesin bir durum var.
+
+637
+00:28:18,910 --> 00:28:20,910
+Tmax
+
+638
+00:28:20,910 --> 00:28:22,910
+T S'nin iki katı
+
+639
+00:28:22,910 --> 00:28:24,910
+olabilir diyor. Evet.
+
+640
+00:28:24,910 --> 00:28:26,910
+Şu anda durum Tmax eşittir
+
+641
+00:28:26,910 --> 00:28:28,910
+2 T S
+
+642
+00:28:28,910 --> 00:28:30,910
+veya şöyle de diyebiliriz.
+
+643
+00:28:30,910 --> 00:28:32,910
+F S eşittir
+
+644
+00:28:32,910 --> 00:28:34,910
+2 Fmax
+
+645
+00:28:34,910 --> 00:28:36,910
+Değil mi?
+
+646
+00:28:36,910 --> 00:28:38,910
+Evet. Teşekkürler.
+
+647
+00:28:38,910 --> 00:28:40,910
+Şimdi şöyle bir şey de yapabiliriz tabi.
+
+648
+00:28:40,910 --> 00:28:42,910
+Ben burada örnekleme bir buradan
+
+649
+00:28:42,910 --> 00:28:44,910
+bir buradan aldım ama
+
+650
+00:28:44,910 --> 00:28:46,910
+bu biliyorsunuz sınır durumda.
+
+651
+00:28:46,910 --> 00:28:48,910
+Alabileceğiniz en yüksek
+
+652
+00:28:50,910 --> 00:28:52,910
+T S aralığıydı.
+
+653
+00:28:52,910 --> 00:28:54,910
+Daha düşük yapma şansım var. Bakın
+
+654
+00:28:54,910 --> 00:28:56,910
+şu geçiş noktalarını da
+
+655
+00:28:56,910 --> 00:28:58,910
+alsam T S küçülecek.
+
+656
+00:28:58,910 --> 00:29:00,910
+Bu durumda
+
+657
+00:29:00,910 --> 00:29:02,910
+T S nedir?
+
+658
+00:29:02,910 --> 00:29:07,440
+Mesela [öğrenci].
+
+659
+00:29:07,440 --> 00:29:11,779
+Evet hocam.
+
+660
+00:29:11,779 --> 00:29:13,779
+Bu durumda ne? Mesela kırmızıyla
+
+661
+00:29:13,779 --> 00:29:18,019
+çizdiğim durumda.
+
+662
+00:29:18,019 --> 00:29:20,019
+Eee
+
+663
+00:29:20,019 --> 00:29:22,019
+Solu neydi hocam tam olarak?
+
+664
+00:29:22,019 --> 00:29:24,019
+Tmax'ın. Tmax ve T S
+
+665
+00:29:24,019 --> 00:29:26,019
+ilişkisi ama T S'yi şu
+
+666
+00:29:26,019 --> 00:29:28,019
+aradaki geçiş değerleriyle örnekle.
+
+667
+00:29:28,019 --> 00:29:30,019
+Tmax eşittir 4 T S.
+
+668
+00:29:30,019 --> 00:29:32,019
+Evet.
+
+669
+00:29:32,019 --> 00:29:34,019
+Tmax eşittir 4 T S.
+
+670
+00:29:34,019 --> 00:29:36,019
+Bu daha sıkı. İşareti daha iyi
+
+671
+00:29:36,019 --> 00:29:38,019
+örneklediğim bir durumdu. Bu da.
+
+672
+00:29:38,019 --> 00:29:40,019
+F S eşittir
+
+673
+00:29:40,019 --> 00:29:42,019
+4 Fmax.
+
+674
+00:29:42,019 --> 00:29:44,019
+Demek ki ben bu formülyeyi
+
+675
+00:29:44,019 --> 00:29:46,019
+genel bir şekilde yazacak olursam
+
+676
+00:29:46,019 --> 00:29:48,019
+4 Fmax, 8 Fmax
+
+677
+00:29:48,019 --> 00:29:50,019
+daha böyle iyi örnekledikçe
+
+678
+00:29:50,019 --> 00:29:52,019
+işareti F S
+
+679
+00:29:52,019 --> 00:29:54,019
+gittikçe değerini yükseltiyor.
+
+680
+00:29:54,019 --> 00:29:56,019
+Ama alabileceği en alt değer
+
+681
+00:29:56,019 --> 00:29:58,019
+2 Fmax.
+
+682
+00:29:58,019 --> 00:30:00,019
+Bu da
+
+683
+00:30:00,019 --> 00:30:04,160
+Nyquist
+
+684
+00:30:04,160 --> 00:30:06,160
+frekansı olarak
+
+685
+00:30:06,160 --> 00:30:08,160
+adlandırılıyor arkadaşlar.
+
+686
+00:30:08,160 --> 00:30:10,160
+Nyquist frekansı
+
+687
+00:30:10,160 --> 00:30:12,160
+ne arkadaşlar? Şunu söylüyor
+
+688
+00:30:12,160 --> 00:30:14,160
+bize. Sözel olarak tanımlayacak
+
+689
+00:30:14,160 --> 00:30:16,160
+olursa. Ben
+
+690
+00:30:16,160 --> 00:30:18,160
+bir işareti, analog
+
+691
+00:30:18,160 --> 00:30:20,160
+işareti örneklemek
+
+692
+00:30:20,160 --> 00:30:22,160
+istiyorsam şayet
+
+693
+00:30:22,160 --> 00:30:24,160
+burada bir örnekleme frekansı
+
+694
+00:30:24,160 --> 00:30:26,160
+belirlemem lazım değil mi? Dolayısıyla
+
+695
+00:30:26,160 --> 00:30:28,160
+örnekleme periyodu belirlemem lazım.
+
+696
+00:30:28,160 --> 00:30:30,160
+İşaret için
+
+697
+00:30:30,160 --> 00:30:32,160
+bir örnekleme frekansı belirlerken
+
+698
+00:30:32,160 --> 00:30:34,160
+alabileceğim
+
+699
+00:30:34,160 --> 00:30:36,160
+alabileceğim
+
+700
+00:30:36,160 --> 00:30:38,160
+en düşük
+
+701
+00:30:38,160 --> 00:30:40,160
+örnekleme frekansı
+
+702
+00:30:40,160 --> 00:30:42,160
+işaretin içerisindeki
+
+703
+00:30:42,160 --> 00:30:44,160
+maksimum
+
+704
+00:30:44,160 --> 00:30:46,160
+frekansın en az
+
+705
+00:30:46,160 --> 00:30:48,160
+2 katı olmak zorunda.
+
+706
+00:30:48,160 --> 00:30:50,160
+Örneğin 4 kHz'lik
+
+707
+00:30:50,160 --> 00:30:52,160
+insan sesini
+
+708
+00:30:52,160 --> 00:30:54,160
+ben içinizden bir arkadaş sınıf
+
+709
+00:30:54,160 --> 00:30:56,160
+ortamında olsaydık
+
+710
+00:30:56,160 --> 00:30:58,160
+niye sınıf ortamında olsaydık diyorum çünkü
+
+711
+00:30:58,160 --> 00:31:00,160
+gerçek analog
+
+712
+00:31:00,160 --> 00:31:02,160
+sesimi anca o zaman duyardınız.
+
+713
+00:31:02,160 --> 00:31:04,160
+Şu anda bilgisayar üzerinden sayı sallaştırılıyor.
+
+714
+00:31:04,160 --> 00:31:06,160
+Yani bu bahsettiğim hepsi
+
+715
+00:31:06,160 --> 00:31:08,160
+şu anda sizin bilgisayarlarınızın
+
+716
+00:31:08,160 --> 00:31:10,160
+ses kartlarında olan şeyler
+
+717
+00:31:10,160 --> 00:31:12,160
+yapılan şeyler onların teorik
+
+718
+00:31:12,160 --> 00:31:14,160
+altyapısı.
+
+719
+00:31:14,160 --> 00:31:16,160
+Bir arkadaşınız mikrofona
+
+720
+00:31:16,160 --> 00:31:18,160
+kaydetseydi sesimi
+
+721
+00:31:18,160 --> 00:31:20,160
+ve de buradan benim sesimden
+
+722
+00:31:20,160 --> 00:31:22,160
+ne yapmaya çalışsaydı
+
+723
+00:31:22,160 --> 00:31:24,160
+ayrıklaştırmaya çalışsaydı
+
+724
+00:31:24,160 --> 00:31:26,160
+diyecekti ki bana
+
+725
+00:31:26,160 --> 00:31:28,160
+hocam sizi ben
+
+726
+00:31:28,160 --> 00:31:30,160
+sesinizi örneklemek istiyorum ama şu bilgiye
+
+727
+00:31:30,160 --> 00:31:32,160
+sahip olmam lazım
+
+728
+00:31:32,160 --> 00:31:34,160
+insan ses sisteminin çıkabildiği
+
+729
+00:31:34,160 --> 00:31:36,160
+maksimum frekans nedir?
+
+730
+00:31:36,160 --> 00:31:38,160
+Ben de diyecektim ki 4 kHz. O zaman
+
+731
+00:31:38,160 --> 00:31:40,160
+ne diyecekti arkadaşlar?
+
+732
+00:31:40,160 --> 00:31:42,160
+[öğrenci] ne diyecekti?
+
+733
+00:31:44,160 --> 00:31:46,160
+Sizin eğer sesinizdeki maksimum
+
+734
+00:31:46,160 --> 00:31:48,160
+frekans 4 kHz ise ben
+
+735
+00:31:48,160 --> 00:31:50,160
+bu mikrofonun örnekleme frekansını
+
+736
+00:31:50,160 --> 00:31:52,160
+şu hale getirmediğim.
+
+737
+00:31:52,160 --> 00:32:05,329
+[öğrenci]'in sorusuna da
+
+738
+00:32:05,329 --> 00:32:07,329
+cevap verelim şu anda.
+
+739
+00:32:07,329 --> 00:32:11,470
+[öğrenci]
+
+740
+00:32:11,470 --> 00:32:13,470
+mikrofonunu online yap bakayım.
+
+741
+00:32:13,470 --> 00:32:16,910
+Yoksa
+
+742
+00:32:16,910 --> 00:32:18,910
+diyeceğiz ki
+
+743
+00:32:18,910 --> 00:32:20,910
+[öğrenci] herhalde açtı bilgisayarı
+
+744
+00:32:20,910 --> 00:32:22,910
+ondan sonra
+
+745
+00:32:22,910 --> 00:32:24,910
+başka bir şeylerle ilgileniyor mu acaba
+
+746
+00:32:24,910 --> 00:32:26,910
+diye soru işareti oluşabilir
+
+747
+00:32:26,910 --> 00:32:28,910
+kafada.
+
+748
+00:32:28,910 --> 00:32:30,910
+Yazdı hocam mikrofonu yokmuş.
+
+749
+00:32:30,910 --> 00:32:32,910
+Yok muymuş? Hakkımı da
+
+750
+00:32:32,910 --> 00:32:34,910
+yemeyin diyor yani. Tamamdır.
+
+751
+00:32:34,910 --> 00:32:36,910
+Soruyu tekrar edebilir misiniz demiş bir de.
+
+752
+00:32:36,910 --> 00:32:38,910
+Tekrar edemem soruyu
+
+753
+00:32:38,910 --> 00:32:40,910
+anında düşüneceksin.
+
+754
+00:32:40,910 --> 00:32:42,910
+İnsan ses sisteminde
+
+755
+00:32:42,910 --> 00:32:44,910
+4 kHz'lik bir ses varsa
+
+756
+00:32:44,910 --> 00:32:46,910
+mikrofonla sen bunu
+
+757
+00:32:46,910 --> 00:32:48,910
+örneklemeye çalışsan en az kaç
+
+758
+00:32:48,910 --> 00:32:50,910
+kHz olması lazım.
+
+759
+00:32:50,910 --> 00:32:52,910
+Örnekleme frekansını.
+
+760
+00:32:52,910 --> 00:33:00,059
+Neden 8 kHz?
+
+761
+00:33:00,059 --> 00:33:02,059
+Belki yukarıdakiler yanlış yazdı.
+
+762
+00:33:02,059 --> 00:33:10,819
+Evet.
+
+763
+00:33:10,819 --> 00:33:12,819
+2 katı olması gerekiyordu.
+
+764
+00:33:12,819 --> 00:33:14,819
+Mesela 8 kHz yerine 16 kHz ile
+
+765
+00:33:14,819 --> 00:33:16,819
+örneklesek ne olur?
+
+766
+00:33:16,819 --> 00:33:18,819
+[öğrenci]
+
+767
+00:33:18,819 --> 00:33:20,819
+8 kHz yerine 16 kHz ile
+
+768
+00:33:20,819 --> 00:33:28,349
+örneklesek
+
+769
+00:33:28,349 --> 00:33:30,349
+daha mı iyi sesi
+
+770
+00:33:30,349 --> 00:33:32,349
+duyarız?
+
+771
+00:33:32,349 --> 00:33:34,349
+Yoksa daha kötü mü duyarız?
+
+772
+00:33:34,349 --> 00:33:36,349
+8 kHz yerine 16 kHz ile
+
+773
+00:33:36,349 --> 00:33:46,220
+örneklesek
+
+774
+00:33:46,220 --> 00:33:48,220
+evet doğru söylüyorsun.
+
+775
+00:33:48,220 --> 00:33:50,220
+Şimdi bir işaret var diyelim şöyle.
+
+776
+00:33:50,220 --> 00:33:52,220
+8 kHz ile böyle
+
+777
+00:33:52,220 --> 00:33:54,220
+örnekler
+
+778
+00:33:54,220 --> 00:33:56,220
+16 kHz ile çıkarırsak
+
+779
+00:33:56,220 --> 00:33:58,220
+şu aradaki örnekleri de almış oluruz.
+
+780
+00:33:58,220 --> 00:34:00,220
+İşaretin orijinalliğine o kadar
+
+781
+00:34:00,220 --> 00:34:02,220
+yaklaşırız.
+
+782
+00:34:02,220 --> 00:34:04,220
+Ne demiştik?
+
+783
+00:34:04,220 --> 00:34:06,220
+8 kHz
+
+784
+00:34:06,220 --> 00:34:08,219
+veririz. Minimum veririz.
+
+785
+00:34:08,219 --> 00:34:10,219
+8 kHz ile arkadaşlar şu demek.
+
+786
+00:34:10,219 --> 00:34:12,219
+Periyoduna bakacak olursanız
+
+787
+00:34:12,219 --> 00:34:14,219
+TSI'ye bakacaksanız
+
+788
+00:34:14,219 --> 00:34:16,219
+125 mikrosaniye
+
+789
+00:34:16,219 --> 00:34:18,219
+aslında baya bir örnek
+
+790
+00:34:18,219 --> 00:34:20,219
+alıyoruz değil mi?
+
+791
+00:34:20,219 --> 00:34:22,219
+Mikrosaniye saniyenin milyonda biri
+
+792
+00:34:22,219 --> 00:34:24,219
+çarpı 125
+
+793
+00:34:24,219 --> 00:34:26,219
+Yani 125 mikrosaniyede
+
+794
+00:34:26,219 --> 00:34:28,219
+bir örnek alıp
+
+795
+00:34:28,219 --> 00:34:30,219
+bunu kaydetmemiz gerekiyor.
+
+796
+00:34:30,219 --> 00:34:32,219
+125 mikrosaniye
+
+797
+00:34:32,219 --> 00:34:34,219
+az değil.
+
+798
+00:34:34,219 --> 00:34:36,219
+Peki 16 kHz ile
+
+799
+00:34:36,219 --> 00:34:41,010
+örneklersek ne olacak?
+
+800
+00:34:41,010 --> 00:34:43,010
+62,5 milisaniyede
+
+801
+00:34:43,010 --> 00:34:45,010
+bak 16 kHz ile örneklersek
+
+802
+00:34:45,010 --> 00:34:47,010
+minimum demiştik bu
+
+803
+00:34:47,010 --> 00:34:49,010
+bunun yerine
+
+804
+00:34:49,010 --> 00:34:51,010
+8 yerine 16 da yapabiliriz.
+
+805
+00:34:51,010 --> 00:34:53,010
+Fmax'ın 4 katı olmuş olur.
+
+806
+00:34:53,010 --> 00:34:55,010
+Bu sefer 62
+
+807
+00:34:55,010 --> 00:34:57,010
+mikro, 62,5
+
+808
+00:34:57,010 --> 00:34:59,010
+mikrosaniyede bir
+
+809
+00:34:59,010 --> 00:35:01,010
+örneklemiş oluyoruz.
+
+810
+00:35:01,010 --> 00:35:03,010
+Yani örnekleme
+
+811
+00:35:03,010 --> 00:35:05,010
+aralığını daraltmış durumdayız.
+
+812
+00:35:05,010 --> 00:35:07,010
+Daha iyi örneklemiş
+
+813
+00:35:07,010 --> 00:35:09,010
+oluruz.
+
+814
+00:35:09,010 --> 00:35:11,010
+Tamam bu kısımda
+
+815
+00:35:11,010 --> 00:35:13,010
+anlaşıldı zannedersem
+
+816
+00:35:15,010 --> 00:35:17,010
+Ne demiştik?
+
+817
+00:35:17,010 --> 00:35:19,010
+Biz işaretimizi
+
+818
+00:35:19,010 --> 00:35:21,010
+şurada
+
+819
+00:35:21,010 --> 00:35:23,010
+gördüğünüz gibi
+
+820
+00:35:23,010 --> 00:35:25,010
+şu kadar süre içerisinde
+
+821
+00:35:25,010 --> 00:35:27,010
+örneklemenin nasıl
+
+822
+00:35:27,010 --> 00:35:29,010
+planlanacağını söylemiştik.
+
+823
+00:35:29,010 --> 00:35:31,010
+Şimdi şu kısma
+
+824
+00:35:31,010 --> 00:35:33,010
+gelelim.
+
+825
+00:35:33,010 --> 00:35:35,010
+Bizim artık
+
+826
+00:35:35,010 --> 00:35:37,010
+işaretimiz
+
+827
+00:35:37,010 --> 00:35:39,010
+baktığımızda
+
+828
+00:35:39,010 --> 00:35:41,010
+ne hale geldi?
+
+829
+00:35:41,010 --> 00:35:43,010
+Şöyle işaretimiz
+
+830
+00:35:43,010 --> 00:35:45,010
+artık örneklenmiş durumda.
+
+831
+00:35:47,010 --> 00:35:49,010
+Buraya kadar
+
+832
+00:35:49,010 --> 00:35:51,010
+bir sorunuz var mı arkadaşlar?
+
+833
+00:35:51,010 --> 00:35:53,010
+Hocam
+
+834
+00:35:53,010 --> 00:35:55,010
+ben bir şey soracağım.
+
+835
+00:35:55,010 --> 00:35:57,010
+Hocam
+
+836
+00:35:57,010 --> 00:35:59,010
+lojik devrelerle sinyaller
+
+837
+00:35:59,010 --> 00:36:01,010
+sistemler aynı ders gibi
+
+838
+00:36:01,010 --> 00:36:03,010
+işliyoruz da kafama takıldı yani.
+
+839
+00:36:03,010 --> 00:36:05,010
+Çünkü sinyaller ve sistemlerde de
+
+840
+00:36:05,010 --> 00:36:07,010
+aynalarını gördük.
+
+841
+00:36:07,010 --> 00:36:09,010
+Aynı mı?
+
+842
+00:36:09,010 --> 00:36:11,010
+Merak ettim.
+
+843
+00:36:11,010 --> 00:36:13,010
+Biliyorsunuz lojik devre kitabının
+
+844
+00:36:13,010 --> 00:36:15,010
+başına bakın sinyaller sistemlerinin
+
+845
+00:36:15,010 --> 00:36:17,010
+aynısıdır.
+
+846
+00:36:17,010 --> 00:36:19,010
+Binary sistemlere geçiş, ondan sonra
+
+847
+00:36:19,010 --> 00:36:21,010
+binary sistemlere geçeceğiz. Zaten
+
+848
+00:36:21,010 --> 00:36:23,010
+dikkat et konunun bundan sonraki
+
+849
+00:36:23,010 --> 00:36:25,010
+kısmı binary'e geçiş kısmı.
+
+850
+00:36:25,010 --> 00:36:28,380
+Anladım hocam.
+
+851
+00:36:28,380 --> 00:36:30,380
+Binary'e nereden geliyor bu?
+
+852
+00:36:30,380 --> 00:36:32,380
+Binary'nin altyapısını oluşturduk yani.
+
+853
+00:36:32,380 --> 00:36:34,380
+O da aynı olabilir mi hocam? Çünkü
+
+854
+00:36:34,380 --> 00:36:36,380
+binary bir şeyler de gördük diye hatırlıyorum
+
+855
+00:36:36,380 --> 00:36:38,380
+sinyallerde. Ama bir noktada ayrılacağız
+
+856
+00:36:38,380 --> 00:36:40,380
+herhalde o dersin.
+
+857
+00:36:40,380 --> 00:36:42,380
+Sinyaller sistemlerde biraz daha
+
+858
+00:36:42,380 --> 00:36:44,380
+artık xn işaretinin
+
+859
+00:36:44,380 --> 00:36:46,380
+işlenmesiyle alakalı kısım olacak.
+
+860
+00:36:46,380 --> 00:36:48,380
+Burada binary kısımlara geleceğiz.
+
+861
+00:36:48,380 --> 00:36:50,380
+Artık
+
+862
+00:36:50,380 --> 00:36:52,380
+binary lojik üzerine gideceğiz.
+
+863
+00:36:52,380 --> 00:36:54,380
+Yani ayrım bundan sonraki
+
+864
+00:36:54,380 --> 00:36:56,380
+kısımda oluşuyor.
+
+865
+00:36:56,380 --> 00:36:58,380
+Tamam hocam teşekkür ederiz.
+
+866
+00:36:58,380 --> 00:37:00,380
+Temelleri aynı. Yani bu kısımlar
+
+867
+00:37:00,380 --> 00:37:02,380
+ortak bir taban oluşturabilmek için
+
+868
+00:37:02,380 --> 00:37:04,380
+anlatmamız gereken temel
+
+869
+00:37:04,380 --> 00:37:06,380
+kavramlar.
+
+870
+00:37:06,380 --> 00:37:08,380
+Tamam hocam sağol.
+
+871
+00:37:08,380 --> 00:37:10,380
+Sağol.
+
+872
+00:37:10,380 --> 00:37:12,380
+Şimdi
+
+873
+00:37:12,380 --> 00:37:14,380
+burada
+
+874
+00:37:14,380 --> 00:37:16,380
+bir sorum var size.
+
+875
+00:37:16,380 --> 00:37:18,380
+Sonuçta ben bunu bilgisayara
+
+876
+00:37:18,380 --> 00:37:20,380
+da işleyecektim.
+
+877
+00:37:20,380 --> 00:37:22,380
+Ve de
+
+878
+00:37:22,380 --> 00:37:24,380
+benim bir hafızam
+
+879
+00:37:24,380 --> 00:37:26,380
+vardı. Memory
+
+880
+00:37:26,380 --> 00:37:28,380
+kısmı var.
+
+881
+00:37:28,380 --> 00:37:30,380
+Artık önümde bir engel kaldı mı?
+
+882
+00:37:30,380 --> 00:37:32,380
+Arkadaşlar
+
+883
+00:37:32,380 --> 00:37:34,380
+artık bunlar ayrıştı.
+
+884
+00:37:34,380 --> 00:37:36,380
+Artık işareti şöyle yapabiliyorum.
+
+885
+00:37:36,380 --> 00:37:38,380
+Xn şeklinde
+
+886
+00:37:38,380 --> 00:37:40,380
+ifade edebiliyorum.
+
+887
+00:37:40,380 --> 00:37:42,380
+Xn yani
+
+888
+00:37:42,380 --> 00:37:44,380
+ayrık işareti nasıl
+
+889
+00:37:44,380 --> 00:37:46,380
+tanımlayabilirim? Analog
+
+890
+00:37:46,380 --> 00:37:48,380
+işareti olan şuradaki yeşille
+
+891
+00:37:48,380 --> 00:37:50,380
+konuştum.
+
+892
+00:37:50,380 --> 00:37:52,380
+Xat şeklinde söyleyeyim.
+
+893
+00:37:52,380 --> 00:37:54,380
+Xs
+
+894
+00:37:54,380 --> 00:37:56,380
+xat
+
+895
+00:37:56,380 --> 00:37:58,380
+t
+
+896
+00:37:58,380 --> 00:38:00,380
+t'nin yerine ne koyuyorum?
+
+897
+00:38:00,380 --> 00:38:02,380
+nts koyuyorum.
+
+898
+00:38:02,380 --> 00:38:04,380
+Yani
+
+899
+00:38:04,380 --> 00:38:06,380
+genel olarak yazacak olursam
+
+900
+00:38:06,380 --> 00:38:08,380
+xant
+
+901
+00:38:08,380 --> 00:38:10,380
+s
+
+902
+00:38:10,380 --> 00:38:12,380
+yazmış olurum.
+
+903
+00:38:12,380 --> 00:38:14,380
+Dikkat edin burası ayrık kısımdır.
+
+904
+00:38:14,380 --> 00:38:16,380
+Burası ise
+
+905
+00:38:16,380 --> 00:38:18,380
+sürekli kısımdır.
+
+906
+00:38:18,380 --> 00:38:20,380
+Dikkat edin buradaki
+
+907
+00:38:20,380 --> 00:38:22,380
+n değişikliğini bir integer'dır.
+
+908
+00:38:22,380 --> 00:38:26,239
+Ve bizim aslında
+
+909
+00:38:26,239 --> 00:38:28,239
+aldığımız örneklerin indislerine göre var.
+
+910
+00:38:28,239 --> 00:38:30,239
+Örneğin n'in yerine 0 koyalım.
+
+911
+00:38:30,239 --> 00:38:32,239
+Şuradaki n'in yerine 0 koyalım.
+
+912
+00:38:32,239 --> 00:38:34,239
+0, 1, 2, 3 şeklinde
+
+913
+00:38:34,239 --> 00:38:36,239
+gidelim. Bu
+
+914
+00:38:36,239 --> 00:38:38,239
+analog taraftaki işaretin
+
+915
+00:38:38,239 --> 00:38:40,239
+ts kadar
+
+916
+00:38:40,239 --> 00:38:42,239
+0
+
+917
+00:38:42,239 --> 00:38:44,239
+ts kadar ilerdeki değeri
+
+918
+00:38:44,239 --> 00:38:46,239
+2 ts kadar ilerdeki
+
+919
+00:38:46,239 --> 00:38:48,239
+değeri 3 ts kadar
+
+920
+00:38:48,239 --> 00:38:50,239
+mesela x
+
+921
+00:38:50,239 --> 00:38:52,239
+3 ts
+
+922
+00:38:52,239 --> 00:38:54,239
+bunu nereden elde edeceğiz? Analogun
+
+923
+00:38:54,239 --> 00:38:56,239
+3 ts kadar
+
+924
+00:38:56,239 --> 00:38:58,239
+t'sinin 3 ts kadar geçtiği zaman
+
+925
+00:38:58,239 --> 00:39:00,239
+1, 2, 3
+
+926
+00:39:00,239 --> 00:39:02,239
+yani ts, ts, ts
+
+927
+00:39:02,239 --> 00:39:04,239
+3 ts kadar
+
+928
+00:39:04,239 --> 00:39:06,239
+sonraki değerinden elde etmiş oluyoruz.
+
+929
+00:39:06,239 --> 00:39:08,239
+Şimdi
+
+930
+00:39:08,239 --> 00:39:10,239
+benim sorum şu
+
+931
+00:39:10,239 --> 00:39:12,239
+size
+
+932
+00:39:12,239 --> 00:39:14,239
+bu kısmı anlatmış mıydım?
+
+933
+00:39:14,239 --> 00:39:16,239
+Bazı derslerde
+
+934
+00:39:16,239 --> 00:39:18,239
+anlatmamış oluyorum çünkü de
+
+935
+00:39:18,239 --> 00:39:20,239
+Şimdi bunu direkt
+
+936
+00:39:20,239 --> 00:39:22,239
+ayrıklaştırdığımız şeyi
+
+937
+00:39:22,239 --> 00:39:24,239
+hafıza blokların içine artık
+
+938
+00:39:24,239 --> 00:39:26,239
+girebiliyor muyuz?
+
+939
+00:39:26,239 --> 00:39:28,239
+Şöyle hafıza bloklarına girebiliyor muyuz?
+
+940
+00:39:30,239 --> 00:39:32,239
+Efendim sinyallerde quantization'dan da
+
+941
+00:39:32,239 --> 00:39:34,239
+bahsetmiştiniz.
+
+942
+00:39:34,239 --> 00:39:36,239
+Encoding yapmamız lazım sanırım.
+
+943
+00:39:36,239 --> 00:39:38,239
+Evet yani
+
+944
+00:39:38,239 --> 00:39:40,239
+encoding yapmamız
+
+945
+00:39:40,239 --> 00:39:42,239
+gerekiyor. Doğru söylüyorsunuz.
+
+946
+00:39:42,239 --> 00:39:44,239
+Şimdi buradaki en önemli kısım
+
+947
+00:39:44,239 --> 00:39:46,239
+ben burayı ayrıklaştırdım.
+
+948
+00:39:46,239 --> 00:39:48,239
+Şöyle ayrıklaştırdım ama
+
+949
+00:39:48,239 --> 00:39:50,239
+tabii ki şuraları ayrıklaştırdım.
+
+950
+00:39:50,239 --> 00:39:52,239
+Ayrıklaştırmadım yani
+
+951
+00:39:52,239 --> 00:39:54,239
+genlik değerleri istediği değeri alabilir.
+
+952
+00:39:54,239 --> 00:39:56,239
+Yani 3 de alabilir.
+
+953
+00:39:56,239 --> 00:40:01,599
+5 virgül
+
+954
+00:40:01,599 --> 00:40:03,599
+sonsuza kadar giden bir değeri alabilir.
+
+955
+00:40:03,599 --> 00:40:05,599
+Demek ki ben burada
+
+956
+00:40:05,599 --> 00:40:07,599
+bazı değerleri de
+
+957
+00:40:07,599 --> 00:40:09,599
+belli
+
+958
+00:40:09,599 --> 00:40:11,599
+aralıklara bölmem gerekiyor.
+
+959
+00:40:11,599 --> 00:40:13,599
+Ki o belli
+
+960
+00:40:13,599 --> 00:40:15,599
+aralıklardaki değerleri
+
+961
+00:40:15,599 --> 00:40:17,599
+hepsini
+
+962
+00:40:17,599 --> 00:40:19,599
+hemen hemen aynı değermişçisine
+
+963
+00:40:19,599 --> 00:40:21,599
+çünkü sonsuz değer yapamıyorum.
+
+964
+00:40:21,599 --> 00:40:23,599
+Sen şu aralığa giriyorsan şayet
+
+965
+00:40:23,599 --> 00:40:25,599
+örneğin burası
+
+966
+00:40:25,599 --> 00:40:27,599
+3.75 olsun.
+
+967
+00:40:27,599 --> 00:40:29,599
+Sana hepsine
+
+968
+00:40:29,599 --> 00:40:31,599
+3.75 vereceğim veya
+
+969
+00:40:31,599 --> 00:40:33,599
+şunun ortalaması yukarıdaki
+
+970
+00:40:33,599 --> 00:40:35,599
+alanına giriyorsan sen şayet
+
+971
+00:40:35,599 --> 00:40:37,599
+3.85 olsun.
+
+972
+00:40:37,599 --> 00:40:39,599
+Bu durumda
+
+973
+00:40:39,599 --> 00:40:41,599
+arkadaşlar
+
+974
+00:40:41,599 --> 00:40:43,599
+3.70 ile
+
+975
+00:40:43,599 --> 00:40:45,599
+3.80
+
+976
+00:40:45,599 --> 00:40:47,599
+arasındaki kısım
+
+977
+00:40:47,599 --> 00:40:49,599
+yani şurasına
+
+978
+00:40:49,599 --> 00:40:51,599
+denk düşen hepsi
+
+979
+00:40:51,599 --> 00:40:53,599
+ortalama 3.75
+
+980
+00:40:53,599 --> 00:40:55,599
+kabul ediliyor, sayısallaştırılıyor.
+
+981
+00:40:55,599 --> 00:40:57,599
+Yani şöyle diyelim ona
+
+982
+00:40:57,599 --> 00:40:59,599
+bunun ortalaması
+
+983
+00:40:59,599 --> 00:41:01,599
+3.75 diyelim.
+
+984
+00:41:01,599 --> 00:41:03,599
+Burası 3 sınır 3.8
+
+985
+00:41:03,599 --> 00:41:05,599
+burası 3.7
+
+986
+00:41:05,599 --> 00:41:07,599
+şuraya gelen şu sinyalde
+
+987
+00:41:07,599 --> 00:41:09,599
+şuraya denk düşen
+
+988
+00:41:09,599 --> 00:41:11,599
+bir sonraki sample'da
+
+989
+00:41:11,599 --> 00:41:13,599
+hepsi 3.75 kabul ediliyor.
+
+990
+00:41:13,599 --> 00:41:15,599
+Tabi burada belli bir error
+
+991
+00:41:15,599 --> 00:41:17,599
+oluşuyor. Neden?
+
+992
+00:41:17,599 --> 00:41:19,599
+İkisini de eğer ben
+
+993
+00:41:19,599 --> 00:41:21,599
+hafızada kaydedeceksem ikisi de
+
+994
+00:41:21,599 --> 00:41:23,599
+3.75
+
+995
+00:41:23,599 --> 00:41:25,599
+verecek şekilde
+
+996
+00:41:25,599 --> 00:41:27,599
+şu şekilde yapıyor. Oysaki arada bir
+
+997
+00:41:27,599 --> 00:41:29,599
+fark var şuralardan görebileceğiniz
+
+998
+00:41:29,599 --> 00:41:31,599
+gibi. Şurada ve şurada
+
+999
+00:41:31,599 --> 00:41:33,599
+fark var. Error'u
+
+1000
+00:41:33,599 --> 00:41:35,599
+hesaplayacak olursam
+
+1001
+00:41:35,599 --> 00:41:37,599
+toplam
+
+1002
+00:41:37,599 --> 00:41:39,599
+bütün işaretler için
+
+1003
+00:41:39,599 --> 00:41:41,599
+x
+
+1004
+00:41:41,599 --> 00:41:43,599
+i eksi
+
+1005
+00:41:43,599 --> 00:41:45,599
+o
+
+1006
+00:41:45,599 --> 00:41:47,599
+şeydeki kuanta değeri
+
+1007
+00:41:47,599 --> 00:41:49,599
+x kuanta değerinin
+
+1008
+00:41:49,599 --> 00:41:51,599
+mutlak değeri olacak.
+
+1009
+00:41:51,599 --> 00:41:53,599
+Öyle diyecek olursam
+
+1010
+00:41:53,599 --> 00:41:55,599
+ne kadar şu
+
+1011
+00:41:55,599 --> 00:41:57,599
+kuanta aralığı
+
+1012
+00:41:57,599 --> 00:41:59,599
+dar olursa
+
+1013
+00:41:59,599 --> 00:42:01,599
+ne kadar dar olursa
+
+1014
+00:42:01,599 --> 00:42:03,599
+bizim için o kadar
+
+1015
+00:42:03,599 --> 00:42:05,599
+iyi demektir.
+
+1016
+00:42:05,599 --> 00:42:07,599
+Peki kuanta aralığının
+
+1017
+00:42:07,599 --> 00:42:09,599
+kuanta aralığının
+
+1018
+00:42:09,599 --> 00:42:11,599
+genişliği yani
+
+1019
+00:42:11,599 --> 00:42:13,599
+buradaki
+
+1020
+00:42:13,599 --> 00:42:15,599
+genişlik delta
+
+1021
+00:42:15,599 --> 00:42:17,599
+diyelim bunu
+
+1022
+00:42:17,599 --> 00:42:19,599
+delta aralığı
+
+1023
+00:42:19,599 --> 00:42:21,599
+neye bağlı arkadaşlar?
+
+1024
+00:42:21,599 --> 00:42:23,599
+Bu da
+
+1025
+00:42:23,599 --> 00:42:25,599
+bizim hafıza yapımızdaki
+
+1026
+00:42:25,599 --> 00:42:27,599
+word kavramımızla
+
+1027
+00:42:27,599 --> 00:42:29,599
+çok önemli. Yani
+
+1028
+00:42:29,599 --> 00:42:33,070
+hafızamızın
+
+1029
+00:42:33,070 --> 00:42:35,070
+kaç hafıza bloğumuz ne olduğunu
+
+1030
+00:42:35,070 --> 00:42:37,070
+hafıza bloğumuzda kaydedilebilecek
+
+1031
+00:42:37,070 --> 00:42:39,070
+sayı değerleri
+
+1032
+00:42:39,070 --> 00:42:41,070
+maksimum sayı değerleriyle
+
+1033
+00:42:41,070 --> 00:42:43,070
+çok alakalı.
+
+1034
+00:42:43,070 --> 00:42:45,070
+Bundan sonrası işte artık
+
+1035
+00:42:45,070 --> 00:42:47,070
+biraz daha binary
+
+1036
+00:42:47,070 --> 00:42:49,070
+bölgeye girmeye başladığımız kısım.
+
+1037
+00:42:49,070 --> 00:42:51,070
+Örneğin
+
+1038
+00:42:51,070 --> 00:42:53,070
+bu tek bir bitten oluşuyorsa
+
+1039
+00:42:53,070 --> 00:42:55,070
+0 ve 1
+
+1040
+00:42:55,070 --> 00:42:57,070
+bölgeyi kaça
+
+1041
+00:42:57,070 --> 00:42:59,070
+ayırabiliriz?
+
+1042
+00:42:59,070 --> 00:43:01,070
+Yukarısı
+
+1043
+00:43:01,070 --> 00:43:03,070
+ve aşağısı olmak üzere
+
+1044
+00:43:03,070 --> 00:43:05,070
+ikiye ayırabiliriz.
+
+1045
+00:43:05,070 --> 00:43:07,070
+Tek bitten oluşuyorsa.
+
+1046
+00:43:07,070 --> 00:43:09,070
+İki bitten oluşuyorsa arkadaşlar
+
+1047
+00:43:09,070 --> 00:43:11,070
+bu sefer
+
+1048
+00:43:11,070 --> 00:43:13,070
+00,
+
+1049
+00:43:13,070 --> 00:43:15,070
+01, 10, 11
+
+1050
+00:43:15,070 --> 00:43:17,070
+olmak üzere bölge
+
+1051
+00:43:17,070 --> 00:43:19,070
+ikiye ayırıyor. Gördüğünüz kuanta aralıkları
+
+1052
+00:43:19,070 --> 00:43:21,070
+kısalmaya başladı.
+
+1053
+00:43:21,070 --> 00:43:23,070
+Örneğin burası 00
+
+1054
+00:43:23,070 --> 00:43:25,070
+şurası 01
+
+1055
+00:43:25,070 --> 00:43:27,070
+burası 10
+
+1056
+00:43:27,070 --> 00:43:29,070
+burası 11 olmak üzere
+
+1057
+00:43:29,070 --> 00:43:31,070
+ayrıldı.
+
+1058
+00:43:31,070 --> 00:43:33,070
+3 bit kullandık diyelim. Yani word genişliğimiz
+
+1059
+00:43:33,070 --> 00:43:35,070
+3 bit oldu diyelim.
+
+1060
+00:43:35,070 --> 00:43:37,070
+Bu durumda ne olacak arkadaşlar?
+
+1061
+00:43:37,070 --> 00:43:39,070
+Bir daha her
+
+1062
+00:43:39,070 --> 00:43:41,070
+kuanta aralığı
+
+1063
+00:43:41,070 --> 00:43:43,070
+bir daha kendi içerisinde ikiye ayıracak.
+
+1064
+00:43:43,070 --> 00:43:45,070
+Gördünüz ki her bit arttırımımızda
+
+1065
+00:43:45,070 --> 00:43:47,070
+benim kuanta
+
+1066
+00:43:47,070 --> 00:43:49,070
+aralığım yarıya düşmüş
+
+1067
+00:43:49,070 --> 00:43:51,070
+oluyor. Dolayısıyla
+
+1068
+00:43:51,070 --> 00:43:53,070
+şunu söyleyebiliriz. Yani
+
+1069
+00:43:53,070 --> 00:43:55,070
+ben var olan bir büyüklüğü maksimum ve
+
+1070
+00:43:55,070 --> 00:43:57,070
+bölüm değerlerini belirledikten sonra
+
+1071
+00:43:57,070 --> 00:43:59,070
+kullandığım bit
+
+1072
+00:43:59,070 --> 00:44:01,070
+miktarı şöyle n
+
+1073
+00:44:01,070 --> 00:44:03,070
+diyelim. 2 üzeri n
+
+1074
+00:44:03,070 --> 00:44:05,070
+tane seviyeye bölebiliyorum.
+
+1075
+00:44:05,070 --> 00:44:07,070
+Örneğin 8 bit kullanacak olursam
+
+1076
+00:44:07,070 --> 00:44:09,070
+ben
+
+1077
+00:44:09,070 --> 00:44:11,070
+şu aralığı, şuradaki toplam
+
+1078
+00:44:11,070 --> 00:44:13,070
+aralığı kaç parçaya bölebilirim?
+
+1079
+00:44:13,070 --> 00:44:16,420
+256 aralığa
+
+1080
+00:44:16,420 --> 00:44:18,420
+bölebilirim. 8 yerine
+
+1081
+00:44:18,420 --> 00:44:20,420
+9 kullansam 512
+
+1082
+00:44:20,420 --> 00:44:22,420
+tane aralığa bölebilirim. Bu da
+
+1083
+00:44:22,420 --> 00:44:24,420
+delta'nın yani
+
+1084
+00:44:24,420 --> 00:44:26,420
+kuanta aralıklarının
+
+1085
+00:44:26,420 --> 00:44:28,420
+azalması manasına gelir.
+
+1086
+00:44:28,420 --> 00:44:30,420
+Kuanta aralıkları
+
+1087
+00:44:30,420 --> 00:44:32,420
+azaldıkça aynı
+
+1088
+00:44:32,420 --> 00:44:34,420
+zamanda ne olmuş oluyor?
+
+1089
+00:44:34,420 --> 00:44:36,420
+Hata miktarı da
+
+1090
+00:44:36,420 --> 00:44:41,360
+düşmüş oluyor arkadaşlar.
+
+1091
+00:44:41,360 --> 00:44:43,360
+Biz aslında burada iki tane
+
+1092
+00:44:43,360 --> 00:44:45,360
+işlem yaptık.
+
+1093
+00:44:45,360 --> 00:44:47,360
+Bir tanesini
+
+1094
+00:44:47,360 --> 00:44:49,360
+işaretli şuradaki gibi
+
+1095
+00:44:49,360 --> 00:44:51,360
+ilk adımda
+
+1096
+00:44:51,360 --> 00:44:53,360
+buna quantization diyorlar arkadaşlar.
+
+1097
+00:44:53,360 --> 00:44:55,360
+Quantization
+
+1098
+00:44:55,360 --> 00:44:57,360
+Bu quantization işlemi
+
+1099
+00:44:57,360 --> 00:44:59,360
+belli aralıkta 375
+
+1100
+00:44:59,360 --> 00:45:01,360
+3.85 gibi
+
+1101
+00:45:01,360 --> 00:45:03,360
+belli bazı ortalama değerleri
+
+1102
+00:45:03,360 --> 00:45:05,360
+belli aralıktaki değerleri
+
+1103
+00:45:05,360 --> 00:45:07,360
+sadece oraya topluyoruz. Yani topluyoruz
+
+1104
+00:45:07,360 --> 00:45:09,360
+buraya düşen bütün değerlerini sen
+
+1105
+00:45:09,360 --> 00:45:11,360
+3.85 olarak temsil et
+
+1106
+00:45:11,360 --> 00:45:13,360
+diyoruz. Sen
+
+1107
+00:45:13,360 --> 00:45:15,360
+şu aralıkta bütün değerleri 3.75 olarak
+
+1108
+00:45:15,360 --> 00:45:17,360
+tek. O aralık
+
+1109
+00:45:17,360 --> 00:45:19,360
+sayısını da
+
+1110
+00:45:19,360 --> 00:45:21,360
+biz kaybediyoruz. Onu da belli bir bit
+
+1111
+00:45:21,360 --> 00:45:23,360
+sayısıyla bu quantization
+
+1112
+00:45:23,360 --> 00:45:25,360
+kısmından sonra
+
+1113
+00:45:25,360 --> 00:45:27,360
+3.75'i artık burada
+
+1114
+00:45:27,360 --> 00:45:29,360
+ifade edebilecek
+
+1115
+00:45:29,360 --> 00:45:31,360
+seviyeye geliyor muyuz?
+
+1116
+00:45:31,360 --> 00:45:33,360
+Buna bakıyoruz arkadaşlar.
+
+1117
+00:45:33,360 --> 00:45:35,360
+Burada bit sayısıyla
+
+1118
+00:45:35,360 --> 00:45:37,360
+alakalı
+
+1119
+00:45:37,360 --> 00:45:39,360
+bir durum.
+
+1120
+00:45:39,360 --> 00:45:41,360
+Şurada biraz daha
+
+1121
+00:45:41,360 --> 00:45:43,360
+net gösteriliyor.
+
+1122
+00:45:43,360 --> 00:45:45,360
+Dediğim gibi ilk
+
+1123
+00:45:45,360 --> 00:45:47,360
+önce sampling
+
+1124
+00:45:47,360 --> 00:45:49,360
+şuradaki gibi sampling
+
+1125
+00:45:49,360 --> 00:45:51,360
+arkasından
+
+1126
+00:45:51,360 --> 00:45:53,360
+quantization. Şunu hemen
+
+1127
+00:45:53,360 --> 00:46:16,260
+şey yapayım.
+
+1128
+00:46:16,260 --> 00:46:18,260
+Şuradaki kısımları hızlıca baştan
+
+1129
+00:46:18,260 --> 00:46:59,739
+anlatmak istiyorum.
+
+1130
+00:46:59,739 --> 00:47:04,300
+Evet. Bu
+
+1131
+00:47:04,300 --> 00:47:06,300
+kullanmış olduğum pdf'te görüyorsunuz
+
+1132
+00:47:06,300 --> 00:47:08,300
+şeyle aynı. Ne derler?
+
+1133
+00:47:08,300 --> 00:47:24,510
+Niye bunu yine çıkardı?
+
+1134
+00:47:24,510 --> 00:47:26,510
+Gördüğünüz gibi sinyaller ve
+
+1135
+00:47:26,510 --> 00:47:28,510
+sistemler dersin. Buradaki aynı.
+
+1136
+00:47:28,510 --> 00:47:30,510
+Buradan
+
+1137
+00:47:30,510 --> 00:47:32,510
+biz artık
+
+1138
+00:47:32,510 --> 00:47:38,449
+ayrışmaya başlayacağız.
+
+1139
+00:47:38,449 --> 00:47:40,449
+Şimdi dediğim gibi önce biz
+
+1140
+00:47:40,449 --> 00:47:42,449
+sampling yaptık. Analog sinyali aldık.
+
+1141
+00:47:42,449 --> 00:47:44,449
+Sampling yaptık.
+
+1142
+00:47:44,449 --> 00:47:46,449
+Kuantalamayı gerçekleştirdik.
+
+1143
+00:47:46,449 --> 00:47:48,449
+En sonunda encoding yaptık.
+
+1144
+00:47:48,449 --> 00:47:50,449
+Artık bizim
+
+1145
+00:47:50,449 --> 00:47:52,449
+binary datalarımız
+
+1146
+00:47:52,449 --> 00:47:54,449
+binary kısmına ulaşmış
+
+1147
+00:47:54,449 --> 00:47:56,449
+olduk.
+
+1148
+00:47:56,449 --> 00:47:58,449
+Şimdi bu sampling
+
+1149
+00:47:58,449 --> 00:48:00,449
+kısımlarını şey yapıyorum.
+
+1150
+00:48:00,449 --> 00:48:02,449
+Geçiyorum hızlı bir şekilde.
+
+1151
+00:48:02,449 --> 00:48:04,449
+Tabi ki bu sampling periyodunda
+
+1152
+00:48:04,449 --> 00:48:06,449
+bir işareti
+
+1153
+00:48:06,449 --> 00:48:08,449
+örneklerken belli bir saat
+
+1154
+00:48:08,449 --> 00:48:10,449
+saat
+
+1155
+00:48:10,449 --> 00:48:12,449
+kullanıyoruz. Şöyle
+
+1156
+00:48:12,449 --> 00:48:14,449
+pardon şurada
+
+1157
+00:48:14,449 --> 00:48:20,739
+geri alayım. Şöyle
+
+1158
+00:48:20,739 --> 00:48:22,739
+şimdi bu saatin
+
+1159
+00:48:22,739 --> 00:48:24,739
+yükselen kenarlarında
+
+1160
+00:48:24,739 --> 00:48:26,739
+ne yapıyoruz? Şöyle
+
+1161
+00:48:26,739 --> 00:48:28,739
+tam bunun
+
+1162
+00:48:28,739 --> 00:48:30,739
+yükselen kenarlarına denk düşen yerlerde
+
+1163
+00:48:30,739 --> 00:48:32,739
+örnekler alıyoruz. Şöyle
+
+1164
+00:48:32,739 --> 00:48:34,739
+şurada da
+
+1165
+00:48:34,739 --> 00:48:36,739
+alıyoruz ve onu
+
+1166
+00:48:36,739 --> 00:48:38,739
+tam bu örnek aldığımız
+
+1167
+00:48:38,739 --> 00:48:40,739
+noktasında onu bir
+
+1168
+00:48:40,739 --> 00:48:42,739
+sonraki örnek alacağımız
+
+1169
+00:48:42,739 --> 00:48:44,739
+yere kadar atıyorum. Buna
+
+1170
+00:48:44,739 --> 00:48:46,739
+sample and hold
+
+1171
+00:48:46,739 --> 00:48:48,739
+devresi deniyor. Tam
+
+1172
+00:48:48,739 --> 00:48:50,739
+bu durumda tam bu geçen süre
+
+1173
+00:48:50,739 --> 00:48:52,739
+tse kadar zaman içerisinde
+
+1174
+00:48:52,739 --> 00:48:54,739
+bunun değeri okunarak
+
+1175
+00:48:54,739 --> 00:48:56,739
+sisteme aktarılıyor.
+
+1176
+00:48:56,739 --> 00:48:58,739
+Burada da güzel
+
+1177
+00:48:58,739 --> 00:49:00,739
+bir şey var. Örneğin
+
+1178
+00:49:00,739 --> 00:49:02,739
+fs 2f max
+
+1179
+00:49:02,739 --> 00:49:04,739
+olduğunu düşünelim. Sadece
+
+1180
+00:49:04,739 --> 00:49:06,739
+tepe noktalarını aldığımızda işaretle
+
+1181
+00:49:06,739 --> 00:49:08,739
+üçgensel de olsa tekrar
+
+1182
+00:49:08,739 --> 00:49:10,739
+kurtarabiliyoruz. Peki
+
+1183
+00:49:10,739 --> 00:49:12,739
+fs 2f max
+
+1184
+00:49:12,739 --> 00:49:14,739
+dan düşükse
+
+1185
+00:49:14,739 --> 00:49:16,739
+fs neydi? Büyük eşittir
+
+1186
+00:49:16,739 --> 00:49:18,739
+2f max da.
+
+1187
+00:49:18,739 --> 00:49:20,739
+fs eşittir
+
+1188
+00:49:20,739 --> 00:49:22,739
+f max şeklinde olmuş. Yani örnek
+
+1189
+00:49:22,739 --> 00:49:24,739
+sisteme frekansı
+
+1190
+00:49:24,739 --> 00:49:26,739
+işaretin frekansıyla aynı.
+
+1191
+00:49:26,739 --> 00:49:28,739
+Peki bu durumda ne
+
+1192
+00:49:28,739 --> 00:49:30,739
+olacak arkadaşlar?
+
+1193
+00:49:30,739 --> 00:49:32,739
+fs eşittir f
+
+1194
+00:49:32,739 --> 00:49:34,739
+ile aynıysa bakın
+
+1195
+00:49:34,739 --> 00:49:36,739
+işaret tekrar elde
+
+1196
+00:49:36,739 --> 00:49:38,739
+edemiyoruz. Şöyle bir hale
+
+1197
+00:49:38,739 --> 00:49:40,739
+geliyor. İşaretin en azından
+
+1198
+00:49:40,739 --> 00:49:42,739
+şu dalgalı yapısına
+
+1199
+00:49:42,739 --> 00:49:44,739
+benzer bir işaret ortadan
+
+1200
+00:49:44,739 --> 00:49:46,739
+kalkmış oluyor.
+
+1201
+00:49:46,739 --> 00:49:48,739
+Buraları hızlı geçiyorum.
+
+1202
+00:49:48,739 --> 00:49:50,739
+Buraları zaten
+
+1203
+00:49:50,739 --> 00:49:55,360
+anlattım. Buraları
+
+1204
+00:49:55,360 --> 00:50:03,699
+anlattım. Evet.
+
+1205
+00:50:03,699 --> 00:50:09,119
+Şimdi
+
+1206
+00:50:09,119 --> 00:50:11,119
+burada bazı kavramları
+
+1207
+00:50:11,119 --> 00:50:16,190
+vereceğim. Şimdi
+
+1208
+00:50:16,190 --> 00:50:18,190
+burada bazı bilmemiz gereken
+
+1209
+00:50:18,190 --> 00:50:20,190
+binary ve
+
+1210
+00:50:20,190 --> 00:50:22,190
+decimal sistemlerdeki
+
+1211
+00:50:22,190 --> 00:50:24,190
+büyüklükleri
+
+1212
+00:50:24,190 --> 00:50:26,190
+kastediyorsak
+
+1213
+00:50:26,190 --> 00:50:28,190
+örneğin 1 kilo
+
+1214
+00:50:28,190 --> 00:50:30,190
+gram dediğimizde
+
+1215
+00:50:30,190 --> 00:50:32,190
+1000 katını söylüyoruz. Binary
+
+1216
+00:50:32,190 --> 00:50:34,190
+kısımda ise
+
+1217
+00:50:34,190 --> 00:50:36,190
+1 kilobyte neydi?
+
+1218
+00:50:36,190 --> 00:50:38,190
+200'leri 10'a denk geliyor.
+
+1219
+00:50:38,190 --> 00:50:40,190
+Mega dediğimiz zaman
+
+1220
+00:50:40,190 --> 00:50:42,190
+bunun 2 katı
+
+1221
+00:50:42,190 --> 00:50:44,190
+200'leri 20'ye denk geliyor.
+
+1222
+00:50:44,190 --> 00:50:46,190
+Giga dediğimiz zaman
+
+1223
+00:50:46,190 --> 00:50:48,190
+230 binary logikte burada ise
+
+1224
+00:50:48,190 --> 00:50:50,190
+10 üzeri 6 ve 10 üzeri 9 şeklinde
+
+1225
+00:50:50,190 --> 00:50:52,190
+gidebiliyor.
+
+1226
+00:50:52,190 --> 00:50:54,190
+Şimdi byte'larda
+
+1227
+00:50:54,190 --> 00:50:56,190
+dikkat edin 1 megahertz deyince
+
+1228
+00:50:56,190 --> 00:50:58,190
+1000 hertz'e denk gelirken
+
+1229
+00:50:58,190 --> 00:51:00,190
+1 kilo 1 megabyte'da ise
+
+1230
+00:51:00,190 --> 00:51:02,190
+200'leri 20
+
+1231
+00:51:02,190 --> 00:51:04,190
+220 byte'a
+
+1232
+00:51:04,190 --> 00:51:06,190
+denk geliyor.
+
+1233
+00:51:06,190 --> 00:51:08,190
+1 kilobyte ise
+
+1234
+00:51:08,190 --> 00:51:10,190
+200'leri 10 yani
+
+1235
+00:51:10,190 --> 00:51:12,190
+24 byte'dan oluşuyor bu.
+
+1236
+00:51:12,190 --> 00:51:14,190
+Küçüklük ölçüleri
+
+1237
+00:51:14,190 --> 00:51:16,190
+akımlarda ve
+
+1238
+00:51:16,190 --> 00:51:18,190
+daha düşük şeylerde kullanabileceğimiz
+
+1239
+00:51:18,190 --> 00:51:20,190
+örneğin
+
+1240
+00:51:20,190 --> 00:51:22,190
+miliamper kullanıyoruz.
+
+1241
+00:51:22,190 --> 00:51:24,190
+Amperin binde biri.
+
+1242
+00:51:24,190 --> 00:51:26,190
+Mikroamper diyoruz.
+
+1243
+00:51:26,190 --> 00:51:28,190
+Amperin milyonda biri.
+
+1244
+00:51:28,190 --> 00:51:30,190
+Nanoamper veya nanometre
+
+1245
+00:51:30,190 --> 00:51:32,190
+diyoruz. Metrenin
+
+1246
+00:51:32,190 --> 00:51:34,190
+milyarda biri gibi.
+
+1247
+00:51:34,190 --> 00:51:36,190
+Ondan sonraki pico ve femto.
+
+1248
+00:51:36,190 --> 00:51:38,190
+seviyeleri var.
+
+1249
+00:51:38,190 --> 00:51:40,190
+Şimdi
+
+1250
+00:51:40,190 --> 00:51:42,190
+geldik
+
+1251
+00:51:42,190 --> 00:51:44,190
+artık biraz da
+
+1252
+00:51:44,190 --> 00:51:46,190
+şurada
+
+1253
+00:51:46,190 --> 00:51:48,190
+saklayacağız. Hep memory'den bahsediyorduk ya
+
+1254
+00:51:48,190 --> 00:51:50,190
+memory'de
+
+1255
+00:51:50,190 --> 00:51:52,190
+memory'de
+
+1256
+00:51:52,190 --> 00:51:54,190
+şurası şu genişlik
+
+1257
+00:51:54,190 --> 00:51:56,190
+arkadaşlar bitler seviyesinde
+
+1258
+00:51:56,190 --> 00:51:58,190
+ifade ediliyor. Örneğin
+
+1259
+00:51:58,190 --> 00:52:00,190
+8 bitlik word genişliği
+
+1260
+00:52:00,190 --> 00:52:02,190
+veya 16 bitlik
+
+1261
+00:52:02,190 --> 00:52:04,190
+word genişliğine sahip
+
+1262
+00:52:04,190 --> 00:52:06,190
+hafıza gözleri var gibi. Aynı
+
+1263
+00:52:06,190 --> 00:52:08,190
+apartman daireleri gibi düşünebilirsiniz.
+
+1264
+00:52:08,190 --> 00:52:10,190
+Bu hafızanın miktarını
+
+1265
+00:52:10,190 --> 00:52:12,190
+belirliyor. Mesela
+
+1266
+00:52:12,190 --> 00:52:14,190
+3 gigabaytlık remimiz var
+
+1267
+00:52:14,190 --> 00:52:16,190
+diyelim. Yani
+
+1268
+00:52:16,190 --> 00:52:18,190
+3 gigabayt
+
+1269
+00:52:18,190 --> 00:52:20,190
+3 giga
+
+1270
+00:52:20,190 --> 00:52:22,190
+kadar 3 gigalık
+
+1271
+00:52:22,190 --> 00:52:24,190
+apartman dairemiz var.
+
+1272
+00:52:24,190 --> 00:52:26,190
+Apartmanın genişliği dairede kaç
+
+1273
+00:52:26,190 --> 00:52:28,190
+bilgiyi saklayacağım.
+
+1274
+00:52:28,190 --> 00:52:30,190
+İşte word genişliğimizle alakalı.
+
+1275
+00:52:30,190 --> 00:52:32,190
+Kabaca bahsediyorum.
+
+1276
+00:52:32,190 --> 00:52:34,190
+32 bitlik,
+
+1277
+00:52:34,190 --> 00:52:36,190
+4 bitlik sistemleri şu anda yoğun olarak kullanıyoruz.
+
+1278
+00:52:36,190 --> 00:52:38,190
+Eskiden ilk başta
+
+1279
+00:52:38,190 --> 00:52:40,190
+8 bitlik sistemler üzerinden
+
+1280
+00:52:40,190 --> 00:52:42,190
+anlatıyordu bu.
+
+1281
+00:52:42,190 --> 00:52:44,190
+Şöyle düşünebilirsiniz. Artık bunun üzerine
+
+1282
+00:52:44,190 --> 00:52:46,190
+yazabileceğimiz yani buraya
+
+1283
+00:52:46,190 --> 00:52:48,190
+şu hafıza gözünün içini
+
+1284
+00:52:48,190 --> 00:52:50,190
+düşünmeye başlayalım.
+
+1285
+00:52:50,190 --> 00:52:52,190
+Bu hafıza gözündeki
+
+1286
+00:52:52,190 --> 00:52:54,190
+bu bitlerin saklanışı arkadaşlar
+
+1287
+00:52:54,190 --> 00:52:56,190
+lojik kapılarla
+
+1288
+00:52:56,190 --> 00:52:58,190
+gerçekleştiriyor.
+
+1289
+00:52:58,190 --> 00:53:00,190
+Logic gates deniyor buna.
+
+1290
+00:53:00,190 --> 00:53:02,190
+Bundan sonraki derste
+
+1291
+00:53:02,190 --> 00:53:04,190
+bu end
+
+1292
+00:53:04,190 --> 00:53:06,190
+OR,
+
+1293
+00:53:06,190 --> 00:53:08,190
+XOR ve türevlerinin
+
+1294
+00:53:08,190 --> 00:53:10,190
+yapılarını görmeye başlayacağız.
+
+1295
+00:53:10,190 --> 00:53:12,190
+Lojik işlemleri, kapılarda
+
+1296
+00:53:12,190 --> 00:53:14,190
+saklanan bilgileri,
+
+1297
+00:53:14,190 --> 00:53:16,190
+elektronik devreler değilse
+
+1298
+00:53:16,190 --> 00:53:18,190
+bu lojik kapıların elektroniksel
+
+1299
+00:53:18,190 --> 00:53:20,190
+yani transistör seviyesinde
+
+1300
+00:53:20,190 --> 00:53:22,190
+gerçekleştirmeleri gibi
+
+1301
+00:53:22,190 --> 00:53:24,190
+kısımlara geçeceğiz.
+
+1302
+00:53:24,190 --> 00:53:26,190
+Şimdi burada da çeşitli datalar
+
+1303
+00:53:26,190 --> 00:53:28,190
+yani demin ben mesela
+
+1304
+00:53:28,190 --> 00:53:30,190
+bir datayı saklıyordum burada.
+
+1305
+00:53:30,190 --> 00:53:32,190
+Ne yapıyorduk?
+
+1306
+00:53:32,190 --> 00:53:34,190
+Burada genlik değerlerini saklıyorduk.
+
+1307
+00:53:34,190 --> 00:53:36,190
+Ben geldim buradaki genlik değerlerini
+
+1308
+00:53:36,190 --> 00:53:38,190
+koymaya başladım
+
+1309
+00:53:38,190 --> 00:53:40,190
+buraya. Fakat
+
+1310
+00:53:40,190 --> 00:53:42,190
+benim bu dosyayı
+
+1311
+00:53:42,190 --> 00:53:44,190
+kaybettiğim dosyayı
+
+1312
+00:53:44,190 --> 00:53:46,190
+okuyacak ve bu dosyayı
+
+1313
+00:53:46,190 --> 00:53:48,190
+birbirinden ayıracak bir şeye ihtiyacım
+
+1314
+00:53:48,190 --> 00:53:50,190
+var. Öncelikle olarak
+
+1315
+00:53:50,190 --> 00:53:52,190
+bir header file
+
+1316
+00:53:52,190 --> 00:53:54,190
+koymam gerekiyor. Arkasından
+
+1317
+00:53:54,190 --> 00:53:56,190
+kaç hertz ile örneklendiğini
+
+1318
+00:53:56,190 --> 00:53:58,190
+ben burada örnek alıyorum ama
+
+1319
+00:53:58,190 --> 00:54:00,190
+elinize böyle bir örneklenmiş veri gelse
+
+1320
+00:54:02,190 --> 00:54:04,190
+örneklenen veri gelse.
+
+1321
+00:54:04,190 --> 00:54:06,190
+Siz bunu tekrar yapılandıracaksınız.
+
+1322
+00:54:06,190 --> 00:54:08,190
+Bu hafıza gözünde yer alıyor.
+
+1323
+00:54:08,190 --> 00:54:10,190
+Hafıza gözünde
+
+1324
+00:54:10,190 --> 00:54:12,190
+yer alıyor. Tekrar aynı
+
+1325
+00:54:12,190 --> 00:54:16,750
+işareti oluşturabilir misiniz?
+
+1326
+00:54:16,750 --> 00:54:20,219
+[öğrenci] elinde
+
+1327
+00:54:20,219 --> 00:54:22,219
+örneklenmiş hafıza blokların
+
+1328
+00:54:22,219 --> 00:54:24,219
+içerisinde gözlere konulmuş
+
+1329
+00:54:24,219 --> 00:54:26,219
+şuradaki
+
+1330
+00:54:26,219 --> 00:54:28,219
+genlik değerleri verilmiş sana.
+
+1331
+00:54:28,219 --> 00:54:30,219
+1010 şeklinde verilmiş.
+
+1332
+00:54:30,219 --> 00:54:32,219
+Örneğin 16 bittik
+
+1333
+00:54:32,219 --> 00:54:34,219
+verilmiş.
+
+1334
+00:54:34,219 --> 00:54:36,219
+Sen tekrar bunu
+
+1335
+00:54:36,219 --> 00:54:40,300
+oluşturabilirmişsin.
+
+1336
+00:54:40,300 --> 00:54:42,300
+Sesin geliyor mu
+
+1337
+00:54:42,300 --> 00:54:44,300
+bu arada? Geliyor geliyor evet.
+
+1338
+00:54:44,300 --> 00:54:46,300
+Frekansdan
+
+1339
+00:54:46,300 --> 00:54:48,300
+periyoduna geçiş yaparak x aralıklarını
+
+1340
+00:54:48,300 --> 00:54:50,300
+bulup grafiğe
+
+1341
+00:54:50,300 --> 00:54:52,300
+çevirebilir miyim?
+
+1342
+00:54:52,300 --> 00:54:54,300
+İşte bak sadece genlik değerlerini versem
+
+1343
+00:54:54,300 --> 00:54:56,300
+demek ki yapamazsın.
+
+1344
+00:54:56,300 --> 00:54:58,300
+Aynen. Ne lazım sana?
+
+1345
+00:54:58,300 --> 00:55:00,300
+X8'indeki
+
+1346
+00:55:00,300 --> 00:55:02,300
+ts değerleri aynen.
+
+1347
+00:55:02,300 --> 00:55:04,300
+Demek ki bunun da bu header file'ına
+
+1348
+00:55:04,300 --> 00:55:06,300
+yazılmış olması lazım.
+
+1349
+00:55:06,300 --> 00:55:08,300
+Veya
+
+1350
+00:55:08,300 --> 00:55:10,300
+genlik değerleri verdim ben sana.
+
+1351
+00:55:10,300 --> 00:55:12,300
+Örneğin 1 0
+
+1352
+00:55:12,300 --> 00:55:14,300
+veya şöyle diyeyim 1 1 1 1
+
+1353
+00:55:14,300 --> 00:55:16,300
+8 bit olsun.
+
+1354
+00:55:16,300 --> 00:55:18,300
+1 1 1
+
+1355
+00:55:18,300 --> 00:55:20,300
+hangi
+
+1356
+00:55:20,300 --> 00:55:22,300
+genlik seviyesine denk gelecek?
+
+1357
+00:55:22,300 --> 00:55:25,840
+Yani 3 volta mı
+
+1358
+00:55:25,840 --> 00:55:27,840
+denk gelecek? 5 voltluk bir
+
+1359
+00:55:27,840 --> 00:55:29,840
+işaret mi oluşturacaksın? Yani
+
+1360
+00:55:29,840 --> 00:55:31,840
+şöyle baktığımda
+
+1361
+00:55:31,840 --> 00:55:33,840
+ben bir sample
+
+1362
+00:55:33,840 --> 00:55:35,840
+oluşturacağım ama bu nereye kadar
+
+1363
+00:55:35,840 --> 00:55:37,840
+kaç voltluk bir şey oluşturmam lazım?
+
+1364
+00:55:37,840 --> 00:55:39,840
+Şöyle mi bir şey yapmam lazım? Şöyle mi?
+
+1365
+00:55:39,840 --> 00:55:41,840
+Yani maksimum ve minimum
+
+1366
+00:55:41,840 --> 00:55:43,840
+sayı değerlerinin
+
+1367
+00:55:43,840 --> 00:55:45,840
+hangi gerilim
+
+1368
+00:55:45,840 --> 00:55:47,840
+değerlerine denk geldiğini bilirsem
+
+1369
+00:55:47,840 --> 00:55:49,840
+onları düzgün bir şekilde
+
+1370
+00:55:49,840 --> 00:55:51,840
+oluşturabilirim.
+
+1371
+00:55:51,840 --> 00:55:53,840
+Yani
+
+1372
+00:55:53,840 --> 00:55:55,840
+diyeceğim ki mesela örnek alırken ben
+
+1373
+00:55:55,840 --> 00:55:57,840
+şöyle bir işaretim vardı.
+
+1374
+00:55:57,840 --> 00:55:59,840
+Tam şuradan
+
+1375
+00:55:59,840 --> 00:56:01,840
+en yüksek değeri koydum buna.
+
+1376
+00:56:01,840 --> 00:56:03,840
+Buna da gittim 0 1 1
+
+1377
+00:56:03,840 --> 00:56:05,840
+1 1 1 yani en büyük
+
+1378
+00:56:05,840 --> 00:56:07,840
+pozitif sayı değerini verdim.
+
+1379
+00:56:07,840 --> 00:56:09,840
+Burası normalde 3 volttu.
+
+1380
+00:56:09,840 --> 00:56:11,840
+Peki ben sadece
+
+1381
+00:56:11,840 --> 00:56:13,840
+bunu okuyorum. Buna hangi
+
+1382
+00:56:13,840 --> 00:56:15,840
+gerilim değerini
+
+1383
+00:56:15,840 --> 00:56:17,840
+impuls oluşturacağım ve
+
+1384
+00:56:17,840 --> 00:56:19,840
+onu bir sonraki ile birleştireceğim.
+
+1385
+00:56:19,840 --> 00:56:21,840
+Şuraya kaç voltluk işaret
+
+1386
+00:56:21,840 --> 00:56:23,840
+oluşturmam lazım?
+
+1387
+00:56:23,840 --> 00:56:25,840
+O da soru işareti değil mi?
+
+1388
+00:56:25,840 --> 00:56:27,840
+Yani sayısal
+
+1389
+00:56:27,840 --> 00:56:29,840
+değerden oluşturacağım.
+
+1390
+00:56:29,840 --> 00:56:31,840
+Analog değerin maksimuminde
+
+1391
+00:56:31,840 --> 00:56:33,840
+onların hepsinin işi şöyle header file'e
+
+1392
+00:56:33,840 --> 00:56:35,840
+yazıyoruz. Bunun adı mp3
+
+1393
+00:56:35,840 --> 00:56:37,840
+olabiliyor. Sıkıştırmalar oluyor.
+
+1394
+00:56:37,840 --> 00:56:39,840
+Ses dosyaları oluyor.
+
+1395
+00:56:39,840 --> 00:56:41,840
+Vav dosyası oluyor filan gibi.
+
+1396
+00:56:41,840 --> 00:56:43,840
+Bunların hepsini yapılandırmam
+
+1397
+00:56:43,840 --> 00:56:45,840
+gerekiyor ki burada da
+
+1398
+00:56:45,840 --> 00:56:47,840
+işte data type'lar
+
+1399
+00:56:47,840 --> 00:56:49,840
+önemli. Yani data'yı
+
+1400
+00:56:49,840 --> 00:56:51,840
+nasıl yapılandırdığın önemli.
+
+1401
+00:56:51,840 --> 00:56:53,840
+Şimdi
+
+1402
+00:56:53,840 --> 00:56:55,840
+biraz da bunun içerisine
+
+1403
+00:56:55,840 --> 00:56:57,840
+gireceğiz arkadaşlar.
+
+1404
+00:56:57,840 --> 00:56:59,840
+Saatimiz 3 oldu.
+
+1405
+00:56:59,840 --> 00:57:01,840
+3 çeyrekte
+
+1406
+00:57:01,840 --> 00:57:03,840
+burada buluşalım. Anlaştık mı?
+
+1407
+00:57:03,840 --> 00:57:07,090
+Ben şimdilik
+
+1408
+00:57:07,090 --> 00:57:09,090
+şeyi kapamıyorum.
+
+1409
+00:57:09,090 --> 00:57:11,090
+Session'ı kapamıyorum.
+
+1410
+00:57:11,090 --> 00:57:13,090
+Böylece
+
+1411
+00:57:13,090 --> 00:57:15,090
+sesi kapıyorum.
+
+1412
+00:57:15,090 --> 00:57:17,090
+Ondan sonra devam edeceğiz arkadaşlar.
+
+1413
+00:57:17,090 --> 01:14:51,659
+Tekrar merhabalar arkadaşlar.
+
+1414
+01:14:51,659 --> 01:14:55,649
+Herkes hazırsa
+
+1415
+01:14:55,649 --> 01:14:57,649
+ikinci dersimize de başlayalım.
+
+1416
+01:14:57,649 --> 01:15:00,989
+Şimdi lojik
+
+1417
+01:15:00,989 --> 01:15:02,989
+kısmı biraz daha bundan sonra
+
+1418
+01:15:02,989 --> 01:15:04,989
+sık için başlıyor
+
+1419
+01:15:04,989 --> 01:15:06,989
+diyelim. Artık bu
+
+1420
+01:15:06,989 --> 01:15:08,989
+hafıza gözlerindeyiz.
+
+1421
+01:15:08,989 --> 01:15:10,989
+Bu hafıza gözlerine arkadaşlar
+
+1422
+01:15:10,989 --> 01:15:12,989
+artık neleri koyabiliyoruz?
+
+1423
+01:15:12,989 --> 01:15:14,989
+Binary sayıları koyabiliyoruz.
+
+1424
+01:15:14,989 --> 01:15:16,989
+1 0 1 0
+
+1425
+01:15:16,989 --> 01:15:18,989
+Binary sayıları
+
+1426
+01:15:18,989 --> 01:15:22,619
+koyabiliyoruz. Şunu da
+
+1427
+01:15:22,619 --> 01:15:24,619
+indirelim. Artık
+
+1428
+01:15:24,619 --> 01:15:26,619
+tabi burada bu sayıların nasıl
+
+1429
+01:15:26,619 --> 01:15:28,619
+organize edildiği çok önemli.
+
+1430
+01:15:28,619 --> 01:15:30,619
+Yani birincisi
+
+1431
+01:15:30,619 --> 01:15:32,619
+buradaki word genişliği.
+
+1432
+01:15:34,619 --> 01:15:36,619
+Yani 8 bit mi?
+
+1433
+01:15:36,619 --> 01:15:38,619
+8 bitse şayet
+
+1434
+01:15:38,619 --> 01:15:40,619
+en fazla 256
+
+1435
+01:15:40,619 --> 01:15:42,619
+seviyeyi ifade edebilirsiniz.
+
+1436
+01:15:42,619 --> 01:15:44,619
+256 farklı
+
+1437
+01:15:44,619 --> 01:15:46,619
+değeri ifade edebilirsiniz.
+
+1438
+01:15:46,619 --> 01:15:48,619
+Eğer 16 bitse
+
+1439
+01:15:48,619 --> 01:15:50,619
+65 536
+
+1440
+01:15:50,619 --> 01:15:52,619
+değeri ifade edebilirsiniz.
+
+1441
+01:15:52,619 --> 01:15:54,619
+32 bitse
+
+1442
+01:15:54,619 --> 01:15:56,619
+daha fazla değeri ifade edebilirsiniz.
+
+1443
+01:15:56,619 --> 01:15:58,619
+Şimdi
+
+1444
+01:15:58,619 --> 01:16:00,619
+tabi biz decimal sayı sistemini
+
+1445
+01:16:00,619 --> 01:16:02,619
+kullanıyoruz. Burada binary
+
+1446
+01:16:02,619 --> 01:16:04,619
+sayı sistemi var.
+
+1447
+01:16:04,619 --> 01:16:06,619
+Binary sayı sistemi var.
+
+1448
+01:16:06,619 --> 01:16:08,619
+Biz decimal
+
+1449
+01:16:08,619 --> 01:16:10,619
+kullanıyoruz. Tabi düşünce tarzımız
+
+1450
+01:16:10,619 --> 01:16:12,619
+bizim ne
+
+1451
+01:16:12,619 --> 01:16:14,619
+olacak? Decimale göre olduğu için
+
+1452
+01:16:14,619 --> 01:16:16,619
+bunların çevrimlerini bilmeliyiz.
+
+1453
+01:16:16,619 --> 01:16:18,619
+Şimdi size tavsiye
+
+1454
+01:16:18,619 --> 01:16:20,619
+ettiğim lojik devre tasarımı
+
+1455
+01:16:20,619 --> 01:16:22,619
+[öğrenci] ve Rıfat Çölkesi'nin kitabında
+
+1456
+01:16:24,619 --> 01:16:26,619
+sayfa 38'den
+
+1457
+01:16:26,619 --> 01:16:28,619
+sayı sistemleri kısmı var.
+
+1458
+01:16:28,619 --> 01:16:30,619
+Ve de kodlama kısmı var.
+
+1459
+01:16:30,619 --> 01:16:32,619
+Burayı ayrıntılı olarak okumanızı
+
+1460
+01:16:32,619 --> 01:16:34,619
+öneririm. Ben şimdi genel olarak bahsedeceğim
+
+1461
+01:16:34,619 --> 01:16:36,619
+ama buradaki hata kodlar,
+
+1462
+01:16:36,619 --> 01:16:38,619
+unicodlar, türkçe karakter kodlarına
+
+1463
+01:16:38,619 --> 01:16:40,619
+kadar, bölüm 5'e kadar
+
+1464
+01:16:40,619 --> 01:16:42,619
+yani lojik devre temellerine
+
+1465
+01:16:42,619 --> 01:16:44,619
+kadar hızlıca bir okuma
+
+1466
+01:16:44,619 --> 01:16:46,619
+yapabiliriz. Buraları görebilirsiniz.
+
+1467
+01:16:46,619 --> 01:16:48,619
+Sözden geçirin arkadaşlar.
+
+1468
+01:16:48,619 --> 01:16:50,619
+En önemlisi burada dikkat
+
+1469
+01:16:50,619 --> 01:16:52,619
+edeceğimiz bir word de
+
+1470
+01:16:52,619 --> 01:16:54,619
+en anlamlı ve
+
+1471
+01:16:54,619 --> 01:16:56,619
+en anlamsız bitlerin
+
+1472
+01:16:56,619 --> 01:16:58,619
+nasıl bulunacağıyla
+
+1473
+01:16:58,619 --> 01:17:00,619
+alakalı. Genellikle buradaki
+
+1474
+01:17:00,619 --> 01:17:02,619
+en düşük anlamlı
+
+1475
+01:17:02,619 --> 01:17:04,619
+bit 2 üzeri 0.
+
+1476
+01:17:04,619 --> 01:17:06,619
+Biz 10'luk sayı sisteminde ne
+
+1477
+01:17:06,619 --> 01:17:08,619
+yapıyorduk? 1'ler basamağı diyorduk.
+
+1478
+01:17:08,619 --> 01:17:10,619
+Aslında bu 10 üzeri 0'lar basamağı.
+
+1479
+01:17:10,619 --> 01:17:12,619
+10 üzeri 1'ler basamağı.
+
+1480
+01:17:12,619 --> 01:17:14,619
+10 üzeri 2'ler basamağı
+
+1481
+01:17:14,619 --> 01:17:16,619
+şeklinde gidiyor. Yani
+
+1482
+01:17:16,619 --> 01:17:18,619
+1'ler, 10'lar, 100'ler basamağı
+
+1483
+01:17:18,619 --> 01:17:20,619
+şeklinde gidiyordu. Burada ise
+
+1484
+01:17:20,619 --> 01:17:22,619
+arkadaşlar 2 üzeri 0
+
+1485
+01:17:22,619 --> 01:17:24,619
+1'ler basamağı,
+
+1486
+01:17:24,619 --> 01:17:26,619
+2 üzeri 1'ler yani 2'ler
+
+1487
+01:17:26,619 --> 01:17:28,619
+basamağı, 2 üzeri 2'ler
+
+1488
+01:17:28,619 --> 01:17:30,619
+4'ler basamağı,
+
+1489
+01:17:30,619 --> 01:17:32,619
+2 üzeri 3'ler, 8'ler
+
+1490
+01:17:32,619 --> 01:17:34,619
+basamağı şeklinde gidiyor.
+
+1491
+01:17:34,619 --> 01:17:36,619
+Buradaki en anlamsız
+
+1492
+01:17:36,619 --> 01:17:38,619
+bite, biz en anlamsız bit
+
+1493
+01:17:38,619 --> 01:17:40,619
+diyoruz. Least significant
+
+1494
+01:17:40,619 --> 01:17:42,619
+bit. En anlamlı
+
+1495
+01:17:42,619 --> 01:17:44,619
+bite ise most significant
+
+1496
+01:17:44,619 --> 01:17:46,619
+bit. Yani basamak değeri
+
+1497
+01:17:46,619 --> 01:17:48,619
+en yüksek olan değer
+
+1498
+01:17:48,619 --> 01:17:50,619
+most significant, en aşağıda
+
+1499
+01:17:50,619 --> 01:17:52,619
+olan değer ise least significant
+
+1500
+01:17:52,619 --> 01:17:54,619
+bit diye adlandırılıyor.
+
+1501
+01:17:56,619 --> 01:17:58,619
+Demin dediğim gibi
+
+1502
+01:17:58,619 --> 01:18:00,619
+bir sayıyı
+
+1503
+01:18:00,619 --> 01:18:02,619
+düşünelim şimdi. Örneğin
+
+1504
+01:18:02,619 --> 01:18:04,619
+21
+
+1505
+01:18:04,619 --> 01:18:06,619
+decimal, onluk tabanda
+
+1506
+01:18:06,619 --> 01:18:08,619
+bir sayımız olsun.
+
+1507
+01:18:08,619 --> 01:18:10,619
+Bunu nasıl
+
+1508
+01:18:10,619 --> 01:18:12,619
+binary şekilde ifade ediyoruz?
+
+1509
+01:18:12,619 --> 01:18:14,619
+Öncelikli olarak
+
+1510
+01:18:14,619 --> 01:18:16,619
+yaptığımız şey, bölenlerle
+
+1511
+01:18:16,619 --> 01:18:18,619
+ilerlemek. Her seferinde 2'ye
+
+1512
+01:18:18,619 --> 01:18:20,619
+bölüyoruz. Bölüm
+
+1513
+01:18:20,619 --> 01:18:22,619
+10, şuraya bölüm
+
+1514
+01:18:22,619 --> 01:18:24,619
+ve kalan
+
+1515
+01:18:24,619 --> 01:18:28,960
+bölüm 10
+
+1516
+01:18:28,960 --> 01:18:30,960
+kalan 1 şeklinde
+
+1517
+01:18:30,960 --> 01:18:32,960
+gidiyor. Ondan sonra
+
+1518
+01:18:32,960 --> 01:18:34,960
+10
+
+1519
+01:18:34,960 --> 01:18:36,960
+yine 2 tabanında ilerlediğimiz için
+
+1520
+01:18:36,960 --> 01:18:38,960
+gitti. Bölüm
+
+1521
+01:18:38,960 --> 01:18:40,960
+burada 5, kalanımız
+
+1522
+01:18:40,960 --> 01:18:42,960
+yok.
+
+1523
+01:18:42,960 --> 01:18:46,880
+5, 2'ye
+
+1524
+01:18:46,880 --> 01:18:48,880
+böldüğümüzde kalan
+
+1525
+01:18:48,880 --> 01:18:50,880
+bölüm 2,
+
+1526
+01:18:50,880 --> 01:18:52,880
+kalanı 1.
+
+1527
+01:18:52,880 --> 01:18:54,880
+2, 2'ye
+
+1528
+01:18:54,880 --> 01:18:56,880
+böldüğümüzde
+
+1529
+01:18:56,880 --> 01:18:58,880
+kalanı 1.
+
+1530
+01:18:58,880 --> 01:19:00,880
+Artık kalanı da yok.
+
+1531
+01:19:07,649 --> 01:19:09,649
+Kalanımız yok, evet.
+
+1532
+01:19:09,649 --> 01:19:11,649
+Artık 1'e geldik.
+
+1533
+01:19:11,649 --> 01:19:13,649
+2'ye bölünmüyor.
+
+1534
+01:19:13,649 --> 01:19:15,649
+Bölümümüz 0,
+
+1535
+01:19:15,649 --> 01:19:17,649
+kalanımız 1. Eğer sayı
+
+1536
+01:19:17,649 --> 01:19:19,649
+yazmak istersek arkadaşlar
+
+1537
+01:19:19,649 --> 01:19:21,649
+şu yukarıdan
+
+1538
+01:19:21,649 --> 01:19:23,649
+aşağıya doğru yazıyoruz. Bu
+
+1539
+01:19:23,649 --> 01:19:25,649
+most significant bit kısmına
+
+1540
+01:19:25,649 --> 01:19:27,649
+denk geliyor. Bu en aşağıdaki
+
+1541
+01:19:27,649 --> 01:19:29,649
+kısma geliyor. Yani şurayı 1,
+
+1542
+01:19:29,649 --> 01:19:31,649
+şurayı 1 yazdık.
+
+1543
+01:19:31,649 --> 01:19:33,649
+Şurası 0, burası
+
+1544
+01:19:33,649 --> 01:19:35,649
+1, şuradaki 1 buraya geliyor.
+
+1545
+01:19:35,649 --> 01:19:37,649
+0 şuraya geliyor.
+
+1546
+01:19:37,649 --> 01:19:39,649
+Ve şuradaki 1 de
+
+1547
+01:19:39,649 --> 01:19:41,649
+şuraya denk geliyor.
+
+1548
+01:19:41,649 --> 01:19:43,649
+Eğer bu sayıyı bu sefer
+
+1549
+01:19:43,649 --> 01:19:45,649
+tam tersi bir çözümleme yapacak olursak
+
+1550
+01:19:45,649 --> 01:19:47,649
+arkadaşlar, sayının değerini
+
+1551
+01:19:47,649 --> 01:19:49,649
+ölçmeye çalış, belirlemeye
+
+1552
+01:19:49,649 --> 01:19:51,649
+çalışırsak, bir tane
+
+1553
+01:19:51,649 --> 01:19:53,649
+neyden var? 2 üzeri 4'ten
+
+1554
+01:19:53,649 --> 01:19:55,649
+var. Artı.
+
+1555
+01:19:55,649 --> 01:19:57,649
+2 üzeri 3'ten 8'ler basamağından
+
+1556
+01:19:57,649 --> 01:19:59,649
+yok. 0 ile çarpılmış çünkü.
+
+1557
+01:20:01,649 --> 01:20:03,649
+Bir tane neyden var?
+
+1558
+01:20:03,649 --> 01:20:05,649
+2 üzeri
+
+1559
+01:20:05,649 --> 01:20:07,649
+2 var.
+
+1560
+01:20:07,649 --> 01:20:09,649
+Artı. Bir tane de
+
+1561
+01:20:09,649 --> 01:20:11,649
+2 üzeri 0'dan
+
+1562
+01:20:11,649 --> 01:20:15,119
+var. Bir saniye arkadaşlar.
+
+1563
+01:20:15,119 --> 01:20:23,329
+Bunları toplayacak olursak
+
+1564
+01:20:23,329 --> 01:20:25,329
+şurası 16
+
+1565
+01:20:25,329 --> 01:20:27,329
+artı 4
+
+1566
+01:20:27,329 --> 01:20:29,329
+artı 1 eşittir
+
+1567
+01:20:29,329 --> 01:20:31,329
+21
+
+1568
+01:20:31,329 --> 01:20:33,329
+haline geliyor. Siz de bu şekilde
+
+1569
+01:20:33,329 --> 01:20:35,329
+örneğin başka bir sayıyı
+
+1570
+01:20:35,329 --> 01:20:37,329
+yaparken en ağırlıklı, öncelikli
+
+1571
+01:20:37,329 --> 01:20:39,329
+vermek üzere
+
+1572
+01:20:39,329 --> 01:20:41,329
+örneğin 39 sayısını yapalım.
+
+1573
+01:20:41,329 --> 01:20:43,329
+Kendimiz yapmaya çalışıyoruz
+
+1574
+01:20:43,329 --> 01:20:45,329
+diyelim. Ne yapacağız?
+
+1575
+01:20:45,329 --> 01:20:47,329
+2 üzeri 0
+
+1576
+01:20:47,329 --> 01:20:49,329
+2 üzeri 1, 2 üzeri
+
+1577
+01:20:49,329 --> 01:20:51,329
+2, 2 üzeri 3
+
+1578
+01:20:51,329 --> 01:20:53,329
+2 üzeri 4
+
+1579
+01:20:53,329 --> 01:20:55,329
+2 üzeri 5
+
+1580
+01:20:55,329 --> 01:20:57,329
+16, 32. Bir kere
+
+1581
+01:20:57,329 --> 01:20:59,329
+32'den bir tane olacak.
+
+1582
+01:20:59,329 --> 01:21:01,329
+32'nin
+
+1583
+01:21:01,329 --> 01:21:03,329
+haricinde bir tane
+
+1584
+01:21:03,329 --> 01:21:05,329
+geriye kaç değerimiz kaldı?
+
+1585
+01:21:05,329 --> 01:21:07,329
+7. Buraya koyacak mıyız?
+
+1586
+01:21:07,329 --> 01:21:09,329
+8'ler basamağına?
+
+1587
+01:21:09,329 --> 01:21:11,329
+Hayır koymayacağız.
+
+1588
+01:21:11,329 --> 01:21:13,329
+Pardon 16
+
+1589
+01:21:13,329 --> 01:21:15,329
+eklemeyeceğiz.
+
+1590
+01:21:15,329 --> 01:21:17,329
+8 ekleyecek miyiz?
+
+1591
+01:21:17,329 --> 01:21:19,329
+32'miz var. Buraya da
+
+1592
+01:21:19,329 --> 01:21:21,329
+eklemeyeceğiz.
+
+1593
+01:21:21,329 --> 01:21:23,329
+Peki 4 daha ekleyebiliyor
+
+1594
+01:21:23,329 --> 01:21:25,329
+muyuz? Çünkü aşıyor. 0 koymazsak
+
+1595
+01:21:25,329 --> 01:21:27,329
+8'lik koyarsak
+
+1596
+01:21:27,329 --> 01:21:29,329
+32 artı 8, 40 ediyor.
+
+1597
+01:21:29,329 --> 01:21:31,329
+4 eklediğimizi düşünün. 32
+
+1598
+01:21:31,329 --> 01:21:33,329
+artı 4, 36.
+
+1599
+01:21:33,329 --> 01:21:35,329
+Pardon. 4 ekledik.
+
+1600
+01:21:35,329 --> 01:21:37,329
+32'lik de burası.
+
+1601
+01:21:37,329 --> 01:21:39,329
+32, 4 daha.
+
+1602
+01:21:39,329 --> 01:21:41,329
+36
+
+1603
+01:21:41,329 --> 01:21:43,329
+Tamam. 36'ya vardık.
+
+1604
+01:21:43,329 --> 01:21:45,329
+Bir iki daha ekleyelim.
+
+1605
+01:21:45,329 --> 01:21:47,329
+38. Bir tane de
+
+1606
+01:21:47,329 --> 01:21:49,329
+birimizi ekledik. Böylece
+
+1607
+01:21:49,329 --> 01:21:51,329
+1, 0, 0, 1, 1, 1
+
+1608
+01:21:51,329 --> 01:21:53,329
+kaç tabanda? 2'lik tabanda
+
+1609
+01:21:53,329 --> 01:21:55,329
+elde etmiş
+
+1610
+01:21:55,329 --> 01:21:58,609
+olduk arkadaşlar.
+
+1611
+01:21:58,609 --> 01:22:00,609
+Şimdi burada
+
+1612
+01:22:00,609 --> 01:22:02,609
+tabii ki kitaptan da
+
+1613
+01:22:02,609 --> 01:22:04,609
+ben kesinlikle okumanızı
+
+1614
+01:22:04,609 --> 01:22:06,609
+tavsiye ediyorum.
+
+1615
+01:22:06,609 --> 01:22:08,609
+İkili sayılar üzerinde aritmetik
+
+1616
+01:22:08,609 --> 01:22:10,609
+işlemleri yapacak olursanız
+
+1617
+01:22:10,609 --> 01:22:12,609
+arkadaşlar.
+
+1618
+01:22:12,609 --> 01:22:14,609
+Burada iki tane
+
+1619
+01:22:14,609 --> 01:22:16,609
+temel kavram var.
+
+1620
+01:22:16,609 --> 01:22:18,609
+Bir tanesi
+
+1621
+01:22:18,609 --> 01:22:20,609
+birin
+
+1622
+01:22:20,609 --> 01:22:22,609
+once complement
+
+1623
+01:22:22,609 --> 01:22:28,420
+bir de two's complement
+
+1624
+01:22:28,420 --> 01:22:30,420
+diye iki kavram var.
+
+1625
+01:22:30,420 --> 01:22:32,420
+Binary
+
+1626
+01:22:32,420 --> 01:22:34,420
+aritmetik diyelim başlığa.
+
+1627
+01:22:34,420 --> 01:22:39,939
+Once complement,
+
+1628
+01:22:39,939 --> 01:22:41,939
+two's complement diyelim.
+
+1629
+01:22:41,939 --> 01:22:43,939
+Burada bire tümleyen
+
+1630
+01:22:43,939 --> 01:22:45,939
+bire tümleme
+
+1631
+01:22:45,939 --> 01:22:47,939
+veya
+
+1632
+01:22:47,939 --> 01:22:49,939
+ikiye tümleme
+
+1633
+01:22:49,939 --> 01:22:51,939
+denilen Türkçesi
+
+1634
+01:22:51,939 --> 01:22:53,939
+iki kavram var. Bire tümlemede
+
+1635
+01:22:53,939 --> 01:22:55,939
+arkadaşlar
+
+1636
+01:22:55,939 --> 01:22:57,939
+1, 0, 1, 1, 0, 1
+
+1637
+01:22:57,939 --> 01:22:59,939
+dediğimizde
+
+1638
+01:22:59,939 --> 01:23:01,939
+örneğin bütün bitlerin
+
+1639
+01:23:01,939 --> 01:23:03,939
+tam tersi şekilde yazılması
+
+1640
+01:23:03,939 --> 01:23:05,939
+0, 1
+
+1641
+01:23:05,939 --> 01:23:07,939
+0, 0, 1, 0
+
+1642
+01:23:07,939 --> 01:23:09,939
+şeklinde. Bu
+
+1643
+01:23:09,939 --> 01:23:11,939
+once complement.
+
+1644
+01:23:11,939 --> 01:23:13,939
+Peki ikiye
+
+1645
+01:23:13,939 --> 01:23:15,939
+tümleme ne? Burada da
+
+1646
+01:23:15,939 --> 01:23:17,939
+aynı sayı üzerinden gidelim.
+
+1647
+01:23:17,939 --> 01:23:19,939
+Bire tümleyen yaptıktan sonra
+
+1648
+01:23:19,939 --> 01:23:21,939
+1 ekliyorsunuz.
+
+1649
+01:23:21,939 --> 01:23:23,939
+İkiye tümleyeni elde edebilmek için.
+
+1650
+01:23:23,939 --> 01:23:25,939
+Orada 1, 1, 0,
+
+1651
+01:23:25,939 --> 01:23:27,939
+0, 1, 0 şeklinde.
+
+1652
+01:23:27,939 --> 01:23:29,939
+Bu da two's complement.
+
+1653
+01:23:29,939 --> 01:23:31,939
+İkiye tümleyeni
+
+1654
+01:23:31,939 --> 01:23:33,939
+elde edebilmek için, daha kolay
+
+1655
+01:23:33,939 --> 01:23:35,939
+yoldan edebilmek için orijinal sayıya
+
+1656
+01:23:35,939 --> 01:23:37,939
+bakalım. Orijinal sayıda ilk
+
+1657
+01:23:37,939 --> 01:23:39,939
+1 gördüğümüz yere kadar gidiyoruz.
+
+1658
+01:23:39,939 --> 01:23:41,939
+Onu yazıyoruz.
+
+1659
+01:23:41,939 --> 01:23:43,939
+1'i yazdık.
+
+1660
+01:23:43,939 --> 01:23:45,939
+Ondan sonra geri kalanların
+
+1661
+01:23:45,939 --> 01:23:47,939
+1'e tümleyeni alıyoruz.
+
+1662
+01:23:47,939 --> 01:23:49,939
+0'ı 1
+
+1663
+01:23:49,939 --> 01:23:51,939
+yaptık. 1'i 0
+
+1664
+01:23:51,939 --> 01:23:53,939
+yaptık. 1'i 0 yaptık.
+
+1665
+01:23:53,939 --> 01:23:55,939
+0'ı 1 yaptık.
+
+1666
+01:23:55,939 --> 01:23:57,939
+1'i 0 yaptık. Bakın
+
+1667
+01:23:57,939 --> 01:23:59,939
+aynı şeyi elde
+
+1668
+01:23:59,939 --> 01:24:01,939
+etmiş olduk. Daha basit yöntemle
+
+1669
+01:24:01,939 --> 01:24:03,939
+sayıda ilk 1 gördüğümüz
+
+1670
+01:24:03,939 --> 01:24:05,939
+yere kadar 1'i yazarsak
+
+1671
+01:24:05,939 --> 01:24:07,939
+1'i yazıyoruz.
+
+1672
+01:24:07,939 --> 01:24:09,939
+Ondan sonrakini tersine aldığımız
+
+1673
+01:24:09,939 --> 01:24:11,939
+sistemde 2'ye
+
+1674
+01:24:11,939 --> 01:24:13,939
+2's complement
+
+1675
+01:24:13,939 --> 01:24:15,939
+olarak geçiyor.
+
+1676
+01:24:15,939 --> 01:24:17,939
+Bunların
+
+1677
+01:24:17,939 --> 01:24:19,939
+haricinde arkadaşlar
+
+1678
+01:24:19,939 --> 01:24:21,939
+bizim
+
+1679
+01:24:21,939 --> 01:24:23,939
+öncelikli
+
+1680
+01:24:23,939 --> 01:24:25,939
+olarak şunu söyleyelim.
+
+1681
+01:24:25,939 --> 01:24:31,329
+8'li sayı sistemimiz
+
+1682
+01:24:31,329 --> 01:24:33,329
+var. 8'li sayı
+
+1683
+01:24:33,329 --> 01:24:35,329
+örneğin 21'i
+
+1684
+01:24:35,329 --> 01:24:37,329
+10 tabanında yapmıştık.
+
+1685
+01:24:37,329 --> 01:24:39,329
+Kaç elde etmiştik?
+
+1686
+01:24:39,329 --> 01:24:41,329
+1 0 1
+
+1687
+01:24:41,329 --> 01:24:43,329
+0 1 elde etmiştik.
+
+1688
+01:24:43,329 --> 01:24:45,329
+2 tabanında.
+
+1689
+01:24:45,329 --> 01:24:47,329
+8'li sayı sistemine
+
+1690
+01:24:47,329 --> 01:24:49,329
+gittiğimizde burada şeye dikkat
+
+1691
+01:24:49,329 --> 01:24:51,329
+edelim. Bakın 10'luk sayı sisteminde
+
+1692
+01:24:51,329 --> 01:24:53,329
+toplam kaç rakam var?
+
+1693
+01:24:53,329 --> 01:24:55,329
+10 tane rakam var.
+
+1694
+01:24:55,329 --> 01:24:57,329
+0 ile 9 arasında.
+
+1695
+01:24:57,329 --> 01:24:59,329
+2'li sayı sisteminde
+
+1696
+01:24:59,329 --> 01:25:01,329
+2 tane rakam
+
+1697
+01:25:01,329 --> 01:25:03,329
+var. 0 ve 1'i kullanıyoruz.
+
+1698
+01:25:03,329 --> 01:25:05,329
+8'li sayı sisteminde
+
+1699
+01:25:05,329 --> 01:25:07,329
+kaç tane olacak?
+
+1700
+01:25:07,329 --> 01:25:09,329
+8 tane olacak.
+
+1701
+01:25:09,329 --> 01:25:11,329
+0'dan 7'ye kadar. Dikkat edin.
+
+1702
+01:25:11,329 --> 01:25:13,329
+0'da dahil olduğu için
+
+1703
+01:25:13,329 --> 01:25:15,329
+en yüksek 7'yi yazıyoruz.
+
+1704
+01:25:15,329 --> 01:25:17,329
+10'luk taban sisteminde
+
+1705
+01:25:17,329 --> 01:25:19,329
+0'da dahil olduğu için en yüksek
+
+1706
+01:25:19,329 --> 01:25:21,329
+9'u yazıyoruz. 2'lik tabanında
+
+1707
+01:25:21,329 --> 01:25:23,329
+1 eksiği, 1'i yazmış oluyoruz
+
+1708
+01:25:23,329 --> 01:25:25,329
+arkadaşlar.
+
+1709
+01:25:25,329 --> 01:25:27,329
+Peki 8'li sayı sisteminde
+
+1710
+01:25:27,329 --> 01:25:29,329
+en yüksek
+
+1711
+01:25:29,329 --> 01:25:31,329
+rakam kaç? 7.
+
+1712
+01:25:31,329 --> 01:25:33,329
+Dolayısıyla 7'yi de kaç bitle ifade
+
+1713
+01:25:33,329 --> 01:25:35,329
+edebiliyoruz? 3 bitle
+
+1714
+01:25:35,329 --> 01:25:37,329
+ifade edebiliyoruz. 8'lik
+
+1715
+01:25:37,329 --> 01:25:39,329
+sayı sisteminde böyle 3'er
+
+1716
+01:25:39,329 --> 01:25:41,329
+bitlik kısımlara
+
+1717
+01:25:41,329 --> 01:25:43,329
+ayırıyoruz sayıyı.
+
+1718
+01:25:43,329 --> 01:25:45,329
+Örneğin bu kaçtı?
+
+1719
+01:25:45,329 --> 01:25:47,329
+4 artı 1, 5.
+
+1720
+01:25:47,329 --> 01:25:49,329
+Burası kaçtı?
+
+1721
+01:25:49,329 --> 01:25:51,329
+0'lar basama, 2'ler basama
+
+1722
+01:25:51,329 --> 01:25:53,329
+25. Demek ki
+
+1723
+01:25:53,329 --> 01:25:55,329
+8'lik tabanda burası
+
+1724
+01:25:55,329 --> 01:25:57,329
+8 olarak
+
+1725
+01:25:57,329 --> 01:25:59,329
+adlandırılıyormuş arkadaşlar.
+
+1726
+01:25:59,329 --> 01:26:04,750
+Şimdi
+
+1727
+01:26:04,750 --> 01:26:06,750
+bir de en çok kullandığımız
+
+1728
+01:26:06,750 --> 01:26:08,750
+tabanlardan biri de buna
+
+1729
+01:26:08,750 --> 01:26:10,750
+8'lik sistemine
+
+1730
+01:26:10,750 --> 01:26:12,750
+oktal sistem deniyor arkadaşlar.
+
+1731
+01:26:12,750 --> 01:26:14,750
+Bir de hegzadesimal
+
+1732
+01:26:14,750 --> 01:26:16,750
+sistemimiz var.
+
+1733
+01:26:16,750 --> 01:26:18,750
+Hegzadesimal sistem var.
+
+1734
+01:26:18,750 --> 01:26:20,750
+Hegzadesimal sistem 16'lık
+
+1735
+01:26:20,750 --> 01:26:22,750
+sayı sistemi.
+
+1736
+01:26:22,750 --> 01:26:27,760
+Şimdi burada da
+
+1737
+01:26:27,760 --> 01:26:29,760
+arkadaşlar
+
+1738
+01:26:29,760 --> 01:26:31,760
+16'lık sayı sisteminde
+
+1739
+01:26:31,760 --> 01:26:33,760
+16 tane
+
+1740
+01:26:33,760 --> 01:26:35,760
+rakam olması gerekiyor.
+
+1741
+01:26:35,760 --> 01:26:37,760
+Tabi biz burada standart
+
+1742
+01:26:37,760 --> 01:26:39,760
+rakamlar olan 0'la 9'un
+
+1743
+01:26:39,760 --> 01:26:41,760
+arasını kullanıyoruz.
+
+1744
+01:26:41,760 --> 01:26:43,760
+9'a kadar olanı.
+
+1745
+01:26:43,760 --> 01:26:45,760
+Ama yetmiyor. 10 tane var.
+
+1746
+01:26:45,760 --> 01:26:47,760
+6 tane daha lazım burada.
+
+1747
+01:26:47,760 --> 01:26:49,760
+Ekstradan A, B,
+
+1748
+01:26:49,760 --> 01:26:51,760
+C, D,
+
+1749
+01:26:51,760 --> 01:26:53,760
+E ve F
+
+1750
+01:26:53,760 --> 01:26:55,760
+rakamlarını da, alfanümerik
+
+1751
+01:26:55,760 --> 01:26:57,760
+rakamlarını da aynı
+
+1752
+01:26:57,760 --> 01:26:59,760
+rakam gibi kullanıyoruz.
+
+1753
+01:26:59,760 --> 01:27:01,760
+Sonuçta buradaki en büyük
+
+1754
+01:27:01,760 --> 01:27:03,760
+sayı 0.
+
+1755
+01:27:03,760 --> 01:27:05,760
+15'e denk gelen de F
+
+1756
+01:27:05,760 --> 01:27:07,760
+olmuş oluyor.
+
+1757
+01:27:07,760 --> 01:27:09,760
+Şimdi
+
+1758
+01:27:09,760 --> 01:27:11,760
+burada aynı sayıyı çevirelim.
+
+1759
+01:27:11,760 --> 01:27:13,760
+Peki burada 16 tane
+
+1760
+01:27:13,760 --> 01:27:15,760
+sayı varsa bunlar kaç tane bitle
+
+1761
+01:27:15,760 --> 01:27:17,760
+ifade edilebilir? 4 bitle.
+
+1762
+01:27:17,760 --> 01:27:19,760
+Bu sefer dörtlü
+
+1763
+01:27:19,760 --> 01:27:21,760
+parçalara ayırıyoruz şöyle.
+
+1764
+01:27:21,760 --> 01:27:23,760
+Dörtlü parçalara olduğu kadar.
+
+1765
+01:27:23,760 --> 01:27:25,760
+Şu dörtlü parçanın
+
+1766
+01:27:25,760 --> 01:27:27,760
+ilki ne verecek
+
+1767
+01:27:27,760 --> 01:27:29,760
+bize? Kaçı veriyor arkadaşlar?
+
+1768
+01:27:29,760 --> 01:27:31,760
+Bakalım.
+
+1769
+01:27:31,760 --> 01:27:33,760
+4, bir daha 5.
+
+1770
+01:27:33,760 --> 01:27:35,760
+5.
+
+1771
+01:27:35,760 --> 01:27:37,760
+Başta öbür dörtlüde de 1 var.
+
+1772
+01:27:37,760 --> 01:27:39,760
+15.
+
+1773
+01:27:39,760 --> 01:27:41,760
+16'lık taban.
+
+1774
+01:27:41,760 --> 01:27:46,579
+Bakın bunların
+
+1775
+01:27:46,579 --> 01:27:55,899
+hepsi aynı
+
+1776
+01:27:55,899 --> 01:27:57,899
+yani hafıza gözündeki
+
+1777
+01:27:57,899 --> 01:27:59,899
+aynı
+
+1778
+01:27:59,899 --> 01:28:01,899
+yapıyı ifade ediyorlar. Toplam 8
+
+1779
+01:28:01,899 --> 01:28:03,899
+bit olduğunu düşünelim buranın.
+
+1780
+01:28:03,899 --> 01:28:05,899
+Hepsi arkadaşlar
+
+1781
+01:28:05,899 --> 01:28:07,899
+şunu ifade ediyor.
+
+1782
+01:28:07,899 --> 01:28:09,899
+1, 0, 1,
+
+1783
+01:28:09,899 --> 01:28:11,899
+0, 1, 0,
+
+1784
+01:28:11,899 --> 01:28:13,899
+0, 0.
+
+1785
+01:28:13,899 --> 01:28:15,899
+Bunun içerisindeki sayı budur.
+
+1786
+01:28:15,899 --> 01:28:17,899
+Yani hiç değişmez.
+
+1787
+01:28:17,899 --> 01:28:19,899
+Ben bunu 10'luk olarak okuyacak olursam
+
+1788
+01:28:19,899 --> 01:28:21,899
+bu 21'dir.
+
+1789
+01:28:21,899 --> 01:28:25,699
+Peki binary olarak okuyacaksam
+
+1790
+01:28:25,699 --> 01:28:27,699
+zaten gözüküyor.
+
+1791
+01:28:27,699 --> 01:28:29,699
+8 bit olduğu için başında sıfırlarını
+
+1792
+01:28:29,699 --> 01:28:31,699
+da koydum.
+
+1793
+01:28:31,699 --> 01:28:33,699
+Eğer bana bunu hexadesimal olarak yap derlerse
+
+1794
+01:28:33,699 --> 01:28:35,699
+4'lük
+
+1795
+01:28:35,699 --> 01:28:37,699
+birimlere ayırıyorum.
+
+1796
+01:28:37,699 --> 01:28:39,699
+15 hex.
+
+1797
+01:28:39,699 --> 01:28:41,699
+Şöyle de gösterilir.
+
+1798
+01:28:41,699 --> 01:28:43,699
+15 hex şeklinde gösterilir.
+
+1799
+01:28:43,699 --> 01:28:45,699
+Bu da aynıdır.
+
+1800
+01:28:45,699 --> 01:28:47,699
+15 hexadesimal veya
+
+1801
+01:28:47,699 --> 01:28:49,699
+15
+
+1802
+01:28:49,699 --> 01:28:51,699
+16 tabanında şeklinde
+
+1803
+01:28:51,699 --> 01:28:53,699
+gösterebilirsiniz veya
+
+1804
+01:28:53,699 --> 01:28:55,699
+bazen 15h
+
+1805
+01:28:55,699 --> 01:28:57,699
+şeklinde de gösterilebilir.
+
+1806
+01:28:57,699 --> 01:28:59,699
+Dikkat edin arkadaşlar.
+
+1807
+01:28:59,699 --> 01:29:01,699
+Değişen
+
+1808
+01:29:01,699 --> 01:29:03,699
+hiçbir şey yok.
+
+1809
+01:29:03,699 --> 01:29:05,699
+Bu sıfır mantığında
+
+1810
+01:29:05,699 --> 01:29:07,699
+devamlı bunlar var.
+
+1811
+01:29:07,699 --> 01:29:09,699
+Biz sadece onun
+
+1812
+01:29:09,699 --> 01:29:11,699
+gösterimini sadece
+
+1813
+01:29:11,699 --> 01:29:13,699
+değiştirmiş oluyoruz.
+
+1814
+01:29:13,699 --> 01:29:18,579
+Buraya kadar anlaşıldı mı
+
+1815
+01:29:18,579 --> 01:29:20,579
+arkadaşlar?
+
+1816
+01:29:20,579 --> 01:29:25,579
+Bir sorusu olan var mı?
+
+1817
+01:29:25,579 --> 01:29:27,579
+Tamam. Daha sonra şunun üzerinden
+
+1818
+01:29:27,579 --> 01:29:29,579
+tekrar geçeceğim ama
+
+1819
+01:29:29,579 --> 01:29:31,579
+ben şimdilik sizlere
+
+1820
+01:29:31,579 --> 01:29:33,579
+Whiteboard üzerinde
+
+1821
+01:29:33,579 --> 01:29:35,579
+genel
+
+1822
+01:29:35,579 --> 01:29:39,250
+şeyleri anlatıyorum.
+
+1823
+01:29:39,250 --> 01:29:41,250
+Örneğin
+
+1824
+01:29:41,250 --> 01:29:43,250
+olarak da bir örnek vermiş.
+
+1825
+01:29:43,250 --> 01:29:45,250
+Mesela
+
+1826
+01:29:45,250 --> 01:29:47,250
+53
+
+1827
+01:29:47,250 --> 01:29:49,250
+fa sayısı
+
+1828
+01:29:49,250 --> 01:29:51,250
+16'lık tabanda.
+
+1829
+01:29:51,250 --> 01:29:53,250
+Ben bunu binary olarak yazmak istesem
+
+1830
+01:29:53,250 --> 01:29:55,250
+nasıl yazarım?
+
+1831
+01:29:55,250 --> 01:29:57,250
+Öncelikle her bir
+
+1832
+01:29:57,250 --> 01:29:59,250
+rakamın
+
+1833
+01:29:59,250 --> 01:30:01,250
+alfa nümerik olsa bile
+
+1834
+01:30:01,250 --> 01:30:03,250
+4 bitten oluştuğunu biliyorum.
+
+1835
+01:30:03,250 --> 01:30:05,250
+5'i yazacağım zaman 0 1
+
+1836
+01:30:05,250 --> 01:30:07,250
+0 1. Kaç etti bu?
+
+1837
+01:30:07,250 --> 01:30:09,250
+4 bitten oluşan bir sayı.
+
+1838
+01:30:09,250 --> 01:30:11,250
+5'i bu şekilde yazdım. 3'ü ekliyorum.
+
+1839
+01:30:11,250 --> 01:30:13,250
+0 0 1 1.
+
+1840
+01:30:13,250 --> 01:30:17,300
+F'i yazacak olursam
+
+1841
+01:30:19,300 --> 01:30:21,300
+F'te hepsi ne olacak?
+
+1842
+01:30:21,300 --> 01:30:23,300
+F 15'e denk geliyor.
+
+1843
+01:30:23,300 --> 01:30:25,300
+1 2 3 4 tane 1.
+
+1844
+01:30:25,300 --> 01:30:27,300
+A'yı yazacak olursam
+
+1845
+01:30:27,300 --> 01:30:29,300
+1 0 1 0.
+
+1846
+01:30:31,300 --> 01:30:33,300
+Aslında bu
+
+1847
+01:30:33,300 --> 01:30:35,300
+ikilik tabandaki karşılığı
+
+1848
+01:30:35,300 --> 01:30:37,300
+olmuş oluyor sayının.
+
+1849
+01:30:37,300 --> 01:30:39,300
+Dikkat edin. Bu aslında
+
+1850
+01:30:39,300 --> 01:30:41,300
+16'lık
+
+1851
+01:30:41,300 --> 01:30:43,300
+bir word'ü
+
+1852
+01:30:43,300 --> 01:30:45,300
+daha kolay
+
+1853
+01:30:45,300 --> 01:30:47,300
+göstermesi için. Mesela
+
+1854
+01:30:47,300 --> 01:30:49,300
+ne işimize yarayacak bu gösterimden?
+
+1855
+01:30:49,300 --> 01:30:51,300
+Şu sayıyı mı okumak kolay
+
+1856
+01:30:51,300 --> 01:30:53,300
+yoksa yukarıdakini mi okumak
+
+1857
+01:30:53,300 --> 01:30:55,300
+kolay? Hafıza gözünde
+
+1858
+01:30:55,300 --> 01:30:57,300
+bir sayının kaybedildiği, 16 bitten oluşan
+
+1859
+01:30:57,300 --> 01:30:59,300
+bir sayının kaybedildiğini düşün.
+
+1860
+01:30:59,300 --> 01:31:01,300
+Yukarıdakiyle daha rahat
+
+1861
+01:31:01,300 --> 01:31:03,300
+bitlerin yapısını
+
+1862
+01:31:03,300 --> 01:31:05,300
+görebiliyorsunuz.
+
+1863
+01:31:05,300 --> 01:31:07,300
+Kullandığımız başka bir gösterim ise
+
+1864
+01:31:07,300 --> 01:31:09,300
+binary
+
+1865
+01:31:09,300 --> 01:31:11,300
+coded
+
+1866
+01:31:11,300 --> 01:31:13,300
+,
+
+1867
+01:31:13,300 --> 01:31:15,300
+decimal sistemi.
+
+1868
+01:31:15,300 --> 01:31:17,300
+Bu da
+
+1869
+01:31:17,300 --> 01:31:19,300
+arkadaşlar adından önceki
+
+1870
+01:31:19,300 --> 01:31:21,300
+decimal sayıların
+
+1871
+01:31:21,300 --> 01:31:23,300
+binary gösterilimi.
+
+1872
+01:31:23,300 --> 01:31:25,300
+Bu da
+
+1873
+01:31:25,300 --> 01:31:28,579
+rakamlar ve
+
+1874
+01:31:28,579 --> 01:31:30,579
+ikili
+
+1875
+01:31:30,579 --> 01:31:32,579
+kodlanmış hallerine
+
+1876
+01:31:32,579 --> 01:31:34,579
+rakamı
+
+1877
+01:31:34,579 --> 01:31:36,579
+gösterecek olursak
+
+1878
+01:31:36,579 --> 01:31:38,579
+0'dan 9'a kadar olan rakamlarımızın
+
+1879
+01:31:38,579 --> 01:31:40,579
+9 tane rakam
+
+1880
+01:31:40,579 --> 01:31:42,579
+olduğu için toplam 10 tane rakamımız var.
+
+1881
+01:31:42,579 --> 01:31:44,579
+10 tane
+
+1882
+01:31:44,579 --> 01:31:46,579
+değişik durum var.
+
+1883
+01:31:46,579 --> 01:31:48,579
+Bunu nasıl, kaç bitle ifade edebiliriz
+
+1884
+01:31:48,579 --> 01:31:50,579
+diye sorduğumuzda log 2
+
+1885
+01:31:50,579 --> 01:31:52,579
+tabanında 10 ve
+
+1886
+01:31:52,579 --> 01:31:54,579
+ceiling, şu gördüğünüz şeyde
+
+1887
+01:31:54,579 --> 01:31:56,579
+ceiling kavramı
+
+1888
+01:31:56,579 --> 01:31:58,579
+yani tavan
+
+1889
+01:31:58,579 --> 01:32:00,579
+manasında en yakın
+
+1890
+01:32:00,579 --> 01:32:02,579
+üst integer'ı kastediyor.
+
+1891
+01:32:02,579 --> 01:32:04,579
+2 tabanında 10
+
+1892
+01:32:04,579 --> 01:32:06,579
+yaklaşık 8 olduğu zaman 3,
+
+1893
+01:32:06,579 --> 01:32:08,579
+3 ile 4 arasında dolayısıyla
+
+1894
+01:32:08,579 --> 01:32:10,579
+bunun cevabı 4. 4 bitle
+
+1895
+01:32:10,579 --> 01:32:12,579
+ifade edebiliriz. Örneğin
+
+1896
+01:32:12,579 --> 01:32:14,579
+ikimizde
+
+1897
+01:32:14,579 --> 01:32:16,579
+285 tane
+
+1898
+01:32:16,579 --> 01:32:18,579
+değişik durum var.
+
+1899
+01:32:18,579 --> 01:32:20,579
+285 tane durum var.
+
+1900
+01:32:20,579 --> 01:32:22,579
+Bunun kaç bitle ifade edilebileceğini
+
+1901
+01:32:22,579 --> 01:32:24,579
+bulabilmek için ne yapıyoruz arkadaşlar?
+
+1902
+01:32:24,579 --> 01:32:26,579
+Log 2 tabanında
+
+1903
+01:32:26,579 --> 01:32:28,579
+alıyoruz ve ceilingine alıyoruz.
+
+1904
+01:32:28,579 --> 01:32:30,579
+En yakın ne burada?
+
+1905
+01:32:30,579 --> 01:32:32,579
+256 olsaydı
+
+1906
+01:32:32,579 --> 01:32:34,579
+8 bitle ifade
+
+1907
+01:32:34,579 --> 01:32:36,579
+ederdik.
+
+1908
+01:32:36,579 --> 01:32:38,579
+512 ile 256 arasında yer aldığı
+
+1909
+01:32:38,579 --> 01:32:40,579
+için bunu ceilingine
+
+1910
+01:32:40,579 --> 01:32:42,579
+yani yukarısına 9 bitle
+
+1911
+01:32:42,579 --> 01:32:44,579
+ifade edilir diyoruz.
+
+1912
+01:32:44,579 --> 01:32:49,939
+İkilik ortamımızda 10 tane
+
+1913
+01:32:49,939 --> 01:32:51,939
+rakamımız olduğu için 4 bitle ifade
+
+1914
+01:32:51,939 --> 01:32:53,939
+ediyoruz. 0 rakamına
+
+1915
+01:32:53,939 --> 01:32:55,939
+0000 veriyoruz.
+
+1916
+01:32:55,939 --> 01:32:57,939
+1 rakamına
+
+1917
+01:32:57,939 --> 01:32:59,939
+0001 veriyoruz.
+
+1918
+01:32:59,939 --> 01:33:01,939
+9 rakamına
+
+1919
+01:33:01,939 --> 01:33:03,939
+1001 veriyoruz.
+
+1920
+01:33:03,939 --> 01:33:05,939
+8, 1 daha 9.
+
+1921
+01:33:05,939 --> 01:33:07,939
+Bu şekilde bir gösterimimiz
+
+1922
+01:33:07,939 --> 01:33:09,939
+oluyor. Örneğin 21
+
+1923
+01:33:09,939 --> 01:33:11,939
+rakamını 10 tabanında
+
+1924
+01:33:11,939 --> 01:33:13,939
+binary coded
+
+1925
+01:33:13,939 --> 01:33:15,939
+decimal haline ecd
+
+1926
+01:33:15,939 --> 01:33:17,939
+halinde ifade edin deseler
+
+1927
+01:33:17,939 --> 01:33:19,939
+o zaman şöyle yapacağız.
+
+1928
+01:33:19,939 --> 01:33:21,939
+0010 yani 2
+
+1929
+01:33:21,939 --> 01:33:25,439
+1'i nasıl yapacağız?
+
+1930
+01:33:25,439 --> 01:33:27,439
+0001
+
+1931
+01:33:27,439 --> 01:33:29,439
+BCD ise
+
+1932
+01:33:29,439 --> 01:33:31,439
+biz buradan şunu anlıyoruz.
+
+1933
+01:33:31,439 --> 01:33:33,439
+1, 2. Demek ki
+
+1934
+01:33:33,439 --> 01:33:35,439
+bu 21 sayısının
+
+1935
+01:33:35,439 --> 01:33:37,439
+BCD gösterilmiş
+
+1936
+01:33:37,439 --> 01:33:42,000
+arkadaşlar.
+
+1937
+01:33:42,000 --> 01:33:44,000
+Şimdi
+
+1938
+01:33:44,000 --> 01:33:46,000
+biraz daha ilerliyoruz.
+
+1939
+01:33:46,000 --> 01:33:48,000
+Sayıların
+
+1940
+01:33:48,000 --> 01:33:53,039
+bilgisayarda
+
+1941
+01:33:53,039 --> 01:34:00,989
+gösterimi. Şimdi
+
+1942
+01:34:00,989 --> 01:34:02,989
+burada ikiye ayrılmak
+
+1943
+01:34:02,989 --> 01:34:04,989
+gerekiyor. Bir tanesi
+
+1944
+01:34:04,989 --> 01:34:06,989
+tam sayıların gösterimi.
+
+1945
+01:34:06,989 --> 01:34:08,989
+İkisi
+
+1946
+01:34:08,989 --> 01:34:10,989
+ikinci kısım ise
+
+1947
+01:34:10,989 --> 01:34:15,390
+kesirli sayılar.
+
+1948
+01:34:15,390 --> 01:34:17,390
+Tam sayılar arkadaşlar
+
+1949
+01:34:17,390 --> 01:34:20,930
+işaretsiz ve
+
+1950
+01:34:20,930 --> 01:34:22,930
+işaretli olarak
+
+1951
+01:34:22,930 --> 01:34:24,930
+ikiye ayrılıyor.
+
+1952
+01:34:24,930 --> 01:34:26,930
+İşaretsizlere
+
+1953
+01:34:26,930 --> 01:34:28,930
+unsigned
+
+1954
+01:34:28,930 --> 01:34:30,930
+deniyor. İşaretlere
+
+1955
+01:34:30,930 --> 01:34:32,930
+signed.
+
+1956
+01:34:32,930 --> 01:34:34,930
+İntech deniyor.
+
+1957
+01:34:34,930 --> 01:34:36,930
+İki tane var.
+
+1958
+01:34:36,930 --> 01:34:38,930
+Kesirli sayıların
+
+1959
+01:34:38,930 --> 01:34:40,930
+gösteriminde ise iki tür
+
+1960
+01:34:40,930 --> 01:34:42,930
+yaklaşım var arkadaşlar.
+
+1961
+01:34:42,930 --> 01:34:44,930
+Bir tanesi
+
+1962
+01:34:44,930 --> 01:34:46,930
+sabit
+
+1963
+01:34:46,930 --> 01:34:53,180
+noktalı. İkincisi
+
+1964
+01:34:53,180 --> 01:34:55,180
+ise
+
+1965
+01:34:55,180 --> 01:35:00,449
+kayan noktalı. Buna
+
+1966
+01:35:00,449 --> 01:35:02,449
+fixed point
+
+1967
+01:35:02,449 --> 01:35:07,779
+kayan noktalı ise
+
+1968
+01:35:07,779 --> 01:35:13,390
+floating
+
+1969
+01:35:13,390 --> 01:35:15,390
+gösterimler deniyor. Dikkat edin
+
+1970
+01:35:15,390 --> 01:35:17,390
+arkadaşlar. Bunlar
+
+1971
+01:35:17,390 --> 01:35:19,390
+bizim
+
+1972
+01:35:19,390 --> 01:35:21,390
+belirlediğimiz memory alanı
+
+1973
+01:35:21,390 --> 01:35:23,390
+içerisindeki hafıza gözü içerisinde
+
+1974
+01:35:23,390 --> 01:35:25,390
+kullandığımız word
+
+1975
+01:35:25,390 --> 01:35:27,390
+büyüklüğünde
+
+1976
+01:35:27,390 --> 01:35:29,390
+word length de
+
+1977
+01:35:29,390 --> 01:35:31,390
+yapabileceğimiz
+
+1978
+01:35:31,390 --> 01:35:33,390
+işlemleri tanımlayabilmek
+
+1979
+01:35:33,390 --> 01:35:35,390
+için kullandığımız
+
+1980
+01:35:35,390 --> 01:35:37,390
+yapılar arkadaşlar.
+
+1981
+01:35:37,390 --> 01:35:40,829
+Şimdi
+
+1982
+01:35:40,829 --> 01:35:42,829
+burada biraz daha
+
+1983
+01:35:42,829 --> 01:35:44,829
+şuradaki şeyi daha güzel gösteriyorum.
+
+1984
+01:35:44,829 --> 01:35:48,180
+Bu kısma geçiyorum arkadaşlar.
+
+1985
+01:35:48,180 --> 01:35:50,180
+Bu decimal numberları
+
+1986
+01:35:50,180 --> 01:35:52,180
+gösterdik unsigned
+
+1987
+01:35:52,180 --> 01:35:54,180
+yapılarda.
+
+1988
+01:35:54,180 --> 01:35:56,180
+Şimdi kullanacağımız bit
+
+1989
+01:35:56,180 --> 01:35:58,180
+büyüklüğüne göre
+
+1990
+01:35:58,180 --> 01:36:00,180
+bizim
+
+1991
+01:36:00,180 --> 01:36:02,180
+örneğin şu bit büyüklükleri. Burada 8 bit
+
+1992
+01:36:02,180 --> 01:36:04,180
+burada 5 bit, burada 3 bit
+
+1993
+01:36:04,180 --> 01:36:06,180
+kullanmış word genişliği olarak.
+
+1994
+01:36:06,180 --> 01:36:08,180
+Şimdi kullanılan bit
+
+1995
+01:36:08,180 --> 01:36:10,180
+sayısı n olsun.
+
+1996
+01:36:10,180 --> 01:36:12,180
+Burada n 8 bit olsun.
+
+1997
+01:36:12,180 --> 01:36:14,180
+Range'mizi eğer
+
+1998
+01:36:14,180 --> 01:36:16,180
+işaret kullanmıyorsak yani
+
+1999
+01:36:16,180 --> 01:36:18,180
+pozitif negatif işaretler
+
+2000
+01:36:18,180 --> 01:36:20,180
+kullanmıyorsak range'miz
+
+2001
+01:36:20,180 --> 01:36:22,180
+örneğin 8 bit için 0 ile
+
+2002
+01:36:22,180 --> 01:36:24,180
+2 üzeri n
+
+2003
+01:36:24,180 --> 01:36:26,180
+neydi 2 üzeri 8
+
+2004
+01:36:26,180 --> 01:36:28,180
+256, 1 eksi 255
+
+2005
+01:36:28,180 --> 01:36:30,180
+0 ile
+
+2006
+01:36:30,180 --> 01:36:32,180
+255 arasında toplam
+
+2007
+01:36:32,180 --> 01:36:34,180
+256 tane
+
+2008
+01:36:34,180 --> 01:36:36,180
+değer ifade ediliyoruz.
+
+2009
+01:36:36,180 --> 01:36:38,180
+Ama 0'ı da kullandığımız
+
+2010
+01:36:38,180 --> 01:36:40,180
+için üst range'miz
+
+2011
+01:36:40,180 --> 01:36:42,180
+255 oluyor. Eğer
+
+2012
+01:36:42,180 --> 01:36:44,180
+16 bit kullansaydık
+
+2013
+01:36:44,180 --> 01:36:46,180
+0 ile 65 bin
+
+2014
+01:36:46,180 --> 01:36:48,180
+536
+
+2015
+01:36:48,180 --> 01:36:50,180
+tane
+
+2016
+01:36:50,180 --> 01:36:52,180
+değer olacak. 1 eksi 5
+
+2017
+01:36:52,180 --> 01:36:54,180
+değer kullanmış
+
+2018
+01:36:54,180 --> 01:36:56,180
+oluyoruz. Dikkat edin burada
+
+2019
+01:36:56,180 --> 01:36:58,180
+negatif kavramı
+
+2020
+01:36:58,180 --> 01:37:00,180
+yok. Buradaki
+
+2021
+01:37:00,180 --> 01:37:02,180
+sayıların binary karşılıklarını da
+
+2022
+01:37:02,180 --> 01:37:04,180
+bulabilmek için aynı demin
+
+2023
+01:37:04,180 --> 01:37:06,180
+gösterdiğim gibi tabanlarla
+
+2024
+01:37:06,180 --> 01:37:08,180
+yani basamak değerleriyle
+
+2025
+01:37:08,180 --> 01:37:10,180
+1'ler 2'ler 4'ler
+
+2026
+01:37:10,180 --> 01:37:12,180
+basamak değerlerle
+
+2027
+01:37:12,180 --> 01:37:14,180
+çarpıp olarak biliyoruz.
+
+2028
+01:37:14,180 --> 01:37:18,770
+Şimdi burada
+
+2029
+01:37:18,770 --> 01:37:20,770
+başka bir kavram var.
+
+2030
+01:37:20,770 --> 01:37:22,770
+Bunu da şey üzerinden açıklayayım.
+
+2031
+01:37:22,770 --> 01:37:24,770
+Şimdi
+
+2032
+01:37:24,770 --> 01:37:26,770
+işaretli sayıları kullanmak
+
+2033
+01:37:26,770 --> 01:37:28,770
+istiyorsak, örneğin 8 bit
+
+2034
+01:37:28,770 --> 01:37:30,770
+üzerinden kullanacağım şöyle
+
+2035
+01:37:30,770 --> 01:37:34,590
+eğer ben bir sayıyı işaretli
+
+2036
+01:37:34,590 --> 01:37:36,590
+kullanmak istiyorsam, burası da 8 bit
+
+2037
+01:37:36,590 --> 01:37:38,590
+olursun örneğin
+
+2038
+01:37:38,590 --> 01:37:40,590
+bir tane şuradaki
+
+2039
+01:37:40,590 --> 01:37:42,590
+most significant bit'i
+
+2040
+01:37:42,590 --> 01:37:44,590
+ne yapmam lazım?
+
+2041
+01:37:44,590 --> 01:37:46,590
+feda etmem lazım. Yani bunun
+
+2042
+01:37:46,590 --> 01:37:48,590
+0'ı pozitif
+
+2043
+01:37:48,590 --> 01:37:50,590
+1'i negatif
+
+2044
+01:37:50,590 --> 01:37:52,590
+olmak üzere belirtmem
+
+2045
+01:37:52,590 --> 01:37:54,590
+lazım. Bu durumda
+
+2046
+01:37:54,590 --> 01:37:56,590
+işaretsiz
+
+2047
+01:37:56,590 --> 01:37:58,590
+haldeyken 0, 255
+
+2048
+01:37:58,590 --> 01:38:00,590
+arasında değer gösterirken
+
+2049
+01:38:00,590 --> 01:38:02,590
+artık bunu
+
+2050
+01:38:02,590 --> 01:38:04,590
+kullandığım için geriye kaç tane bitim kaldı
+
+2051
+01:38:04,590 --> 01:38:06,590
+benim? 7 tane
+
+2052
+01:38:06,590 --> 01:38:08,590
+bitim kalmış oldu.
+
+2053
+01:38:08,590 --> 01:38:10,590
+7 bit kalmış oldu.
+
+2054
+01:38:10,590 --> 01:38:12,590
+7 bit ile ben
+
+2055
+01:38:12,590 --> 01:38:14,590
+hangi aralıkları gösterebilirim?
+
+2056
+01:38:14,590 --> 01:38:16,590
+Örneğin 1 dedim
+
+2057
+01:38:16,590 --> 01:38:18,590
+hepsine 1 dedim
+
+2058
+01:38:18,590 --> 01:38:20,590
+eksi
+
+2059
+01:38:20,590 --> 01:38:22,590
+100
+
+2060
+01:38:22,590 --> 01:38:24,590
+kaç elde edebilirim?
+
+2061
+01:38:24,590 --> 01:38:28,100
+Buradan
+
+2062
+01:38:28,100 --> 01:38:30,100
+eksi 128 ile
+
+2063
+01:38:30,100 --> 01:38:32,100
+artı
+
+2064
+01:38:32,100 --> 01:38:34,100
+127 arasında
+
+2065
+01:38:34,100 --> 01:38:36,100
+toplam 256
+
+2066
+01:38:36,100 --> 01:38:38,100
+değeri gösterebilirim
+
+2067
+01:38:38,100 --> 01:38:41,470
+arkadaşlar. Evet
+
+2068
+01:38:41,470 --> 01:38:45,039
+bakın
+
+2069
+01:38:45,039 --> 01:38:47,039
+range'm
+
+2070
+01:38:47,039 --> 01:38:49,039
+eksi 128'den
+
+2071
+01:38:49,039 --> 01:38:51,039
+eksi 1'e kadar geldim
+
+2072
+01:38:51,039 --> 01:38:53,039
+tabii
+
+2073
+01:38:53,039 --> 01:38:55,039
+ondan sonra 0
+
+2074
+01:38:55,039 --> 01:38:57,039
+1 artı
+
+2075
+01:38:57,039 --> 01:38:59,039
+127'ye kadar gittim. Şurada
+
+2076
+01:38:59,039 --> 01:39:01,039
+128 tane değer
+
+2077
+01:39:01,039 --> 01:39:03,039
+şurada da 128 tane değer
+
+2078
+01:39:03,039 --> 01:39:05,039
+var artık. Fakat
+
+2079
+01:39:05,039 --> 01:39:07,039
+bu
+
+2080
+01:39:07,039 --> 01:39:09,039
+burada bir israf durumu var.
+
+2081
+01:39:09,039 --> 01:39:11,039
+Nasıl? Örneğin
+
+2082
+01:39:11,039 --> 01:39:14,960
+1 0 0 0
+
+2083
+01:39:14,960 --> 01:39:16,960
+veya
+
+2084
+01:39:16,960 --> 01:39:18,960
+0 0 0 0
+
+2085
+01:39:18,960 --> 01:39:22,340
+0 0 0
+
+2086
+01:39:22,340 --> 01:39:24,340
+Yukarıdaki benim tanımımla
+
+2087
+01:39:24,340 --> 01:39:26,340
+bu pozitif 0
+
+2088
+01:39:26,340 --> 01:39:28,340
+bu negatif 0 oluyor.
+
+2089
+01:39:28,340 --> 01:39:30,340
+Eksi 0 artı 0 gibi
+
+2090
+01:39:30,340 --> 01:39:32,340
+olmuş oluyor. Dolayısıyla
+
+2091
+01:39:32,340 --> 01:39:34,340
+aslında ben ne yapmış
+
+2092
+01:39:34,340 --> 01:39:36,340
+oluyorum? İki tane
+
+2093
+01:39:36,340 --> 01:39:38,340
+değeri 0 gösterilmek için kullanıyorum.
+
+2094
+01:39:38,340 --> 01:39:40,340
+İki tane 0 olabilir mi bir gösterimde?
+
+2095
+01:39:40,340 --> 01:39:42,340
+Bu ciddi bir
+
+2096
+01:39:42,340 --> 01:39:44,340
+hata
+
+2097
+01:39:44,340 --> 01:39:46,340
+veya buna göre
+
+2098
+01:39:46,340 --> 01:39:48,340
+kontrol durumları koymanız gerekiyor.
+
+2099
+01:39:48,340 --> 01:39:50,340
+Bunu aşmanın yolu arkadaşlar
+
+2100
+01:39:50,340 --> 01:39:52,340
+2
+
+2101
+01:39:52,340 --> 01:39:54,340
+2's complement
+
+2102
+01:39:54,340 --> 01:39:59,920
+2 2'nin
+
+2103
+01:39:59,920 --> 01:40:01,920
+komplementi
+
+2104
+01:40:01,920 --> 01:40:03,920
+mantığıyla
+
+2105
+01:40:03,920 --> 01:40:05,920
+ilerlememiz gerekiyor burada.
+
+2106
+01:40:05,920 --> 01:40:07,920
+Bir saniye.
+
+2107
+01:40:07,920 --> 01:40:09,920
+Evet.
+
+2108
+01:40:09,920 --> 01:40:11,920
+Aynı burada da
+
+2109
+01:40:11,920 --> 01:40:13,920
+anlatmış. Şimdi
+
+2110
+01:40:13,920 --> 01:40:15,920
+bunu yenebilmenin yolu
+
+2111
+01:40:15,920 --> 01:40:17,920
+sayı sisteminde her bir nokta
+
+2112
+01:40:17,920 --> 01:40:19,920
+her bir
+
+2113
+01:40:19,920 --> 01:40:21,920
+farklı hafıza gözü
+
+2114
+01:40:21,920 --> 01:40:23,920
+farklı değeri göstermek zorunda.
+
+2115
+01:40:23,920 --> 01:40:25,920
+Duvarlak bir sistem
+
+2116
+01:40:25,920 --> 01:40:27,920
+göstereyim şöyle.
+
+2117
+01:40:27,920 --> 01:40:29,920
+Şurası benim
+
+2118
+01:40:29,920 --> 01:40:31,920
+sıfırım olsun. 0 0 0 0
+
+2119
+01:40:31,920 --> 01:40:33,920
+0 0 0 0 0
+
+2120
+01:40:33,920 --> 01:40:35,920
+0.
+
+2121
+01:40:35,920 --> 01:40:37,920
+Bir yanına gidiyorum.
+
+2122
+01:40:37,920 --> 01:40:39,920
+0 0 0 0
+
+2123
+01:40:39,920 --> 01:40:41,920
+0
+
+2124
+01:40:41,920 --> 01:40:43,920
+1 gidiyorum. Buraya doğru arttırıyorum.
+
+2125
+01:40:43,920 --> 01:40:45,920
+En sonunda geleceğim yer
+
+2126
+01:40:45,920 --> 01:40:47,920
+neresi olacak
+
+2127
+01:40:47,920 --> 01:40:49,920
+arkadaşlar?
+
+2128
+01:40:49,920 --> 01:40:51,920
+0 1 1 1
+
+2129
+01:40:51,920 --> 01:40:53,920
+1 1 1
+
+2130
+01:40:53,920 --> 01:40:55,920
+Burası kaç arkadaşlar?
+
+2131
+01:40:55,920 --> 01:40:57,920
+0 1 1 1
+
+2132
+01:40:59,920 --> 01:41:03,359
+artı 127
+
+2133
+01:41:03,359 --> 01:41:05,359
+Öyle değil mi?
+
+2134
+01:41:05,359 --> 01:41:07,359
+Peki bundan bir sonraki
+
+2135
+01:41:07,359 --> 01:41:09,359
+sonrası nedir?
+
+2136
+01:41:09,359 --> 01:41:11,359
+1 0 0 0
+
+2137
+01:41:11,359 --> 01:41:15,470
+Bundan sonra ilerlemeye
+
+2138
+01:41:15,470 --> 01:41:17,470
+başlıyor. Buraya doğru
+
+2139
+01:41:17,470 --> 01:41:19,470
+gidiyor. Burada da
+
+2140
+01:41:19,470 --> 01:41:21,470
+1 1 1 1 1 1
+
+2141
+01:41:21,470 --> 01:41:23,470
+şeklinde geliyor.
+
+2142
+01:41:23,470 --> 01:41:25,470
+Bu pozitif. 0 ile başlayanların
+
+2143
+01:41:25,470 --> 01:41:27,470
+yani başlangıcında 0 olanların
+
+2144
+01:41:27,470 --> 01:41:29,470
+pozitif olduğunu biliyorum.
+
+2145
+01:41:29,470 --> 01:41:31,470
+0 1 2 3 4
+
+2146
+01:41:31,470 --> 01:41:33,470
+diye gidiyor. Aynı sonunda
+
+2147
+01:41:33,470 --> 01:41:35,470
+artı 127'ye geldim.
+
+2148
+01:41:35,470 --> 01:41:37,470
+Şurada 127'ye geldim.
+
+2149
+01:41:37,470 --> 01:41:39,470
+Bir sonraki kaç olması lazım?
+
+2150
+01:41:39,470 --> 01:41:41,470
+Eksi 0 mu?
+
+2151
+01:41:41,470 --> 01:41:43,470
+Burada bir hata var. Bunun yerine
+
+2152
+01:41:43,470 --> 01:41:45,470
+tüz komplementte şöyle bir yorum
+
+2153
+01:41:45,470 --> 01:41:47,470
+yapılıyor. 1 ile
+
+2154
+01:41:47,470 --> 01:41:49,470
+başlayan sayının komplementini
+
+2155
+01:41:49,470 --> 01:41:51,470
+al. 1 0 0 0
+
+2156
+01:41:51,470 --> 01:41:55,899
+Bunun tüz komplementi
+
+2157
+01:41:55,899 --> 01:41:59,250
+nedir? Kolay bir yol
+
+2158
+01:41:59,250 --> 01:42:01,250
+öğretmiştim. İlk 1'e kadar
+
+2159
+01:42:01,250 --> 01:42:04,529
+gidin veya
+
+2160
+01:42:04,529 --> 01:42:06,529
+şey yapayım şöyle. Önce
+
+2161
+01:42:06,529 --> 01:42:08,529
+bildik yöntemle yapayım.
+
+2162
+01:42:08,529 --> 01:42:10,529
+Öncelikle
+
+2163
+01:42:10,529 --> 01:42:17,680
+1'e tümleyeni alıyoruz.
+
+2164
+01:42:17,680 --> 01:42:19,680
+Ondan sonra buna 1 ekliyoruz.
+
+2165
+01:42:19,680 --> 01:42:21,680
+Elde edeceğimiz sayı
+
+2166
+01:42:21,680 --> 01:42:27,329
+yine bu olmuş
+
+2167
+01:42:27,329 --> 01:42:29,329
+oluyor.
+
+2168
+01:42:29,329 --> 01:42:31,329
+Bu kaç?
+
+2169
+01:42:31,329 --> 01:42:33,329
+128
+
+2170
+01:42:33,329 --> 01:42:35,329
+Eksi olduğunu biliyoruz. Eksi 128
+
+2171
+01:42:35,329 --> 01:42:37,329
+diyoruz. Daha basit bir yolu var.
+
+2172
+01:42:37,329 --> 01:42:39,329
+İlk 1 gördüğün yere kadar git.
+
+2173
+01:42:39,329 --> 01:42:41,329
+Yani 0 0 0 0
+
+2174
+01:42:41,329 --> 01:42:43,329
+gittim. 0 0 0
+
+2175
+01:42:43,329 --> 01:42:45,329
+ilk 1'e gittim.
+
+2176
+01:42:45,329 --> 01:42:47,329
+Ve 1'i de yazdım. İlk 1'i
+
+2177
+01:42:47,329 --> 01:42:49,329
+gördüm. Zaten sayım bitti.
+
+2178
+01:42:49,329 --> 01:42:51,329
+Bunun sayı değeri karşılığı kaç?
+
+2179
+01:42:51,329 --> 01:42:53,329
+128.
+
+2180
+01:42:53,329 --> 01:42:55,329
+Eksi olduğunu biliyorum. Eksi 128.
+
+2181
+01:42:55,329 --> 01:42:57,329
+Bakın. Şuradaki
+
+2182
+01:42:57,329 --> 01:42:59,329
+sayı kaç o zaman?
+
+2183
+01:42:59,329 --> 01:43:01,329
+Herkes hesaplasın.
+
+2184
+01:43:01,329 --> 01:43:03,329
+İlk 1
+
+2185
+01:43:03,329 --> 01:43:05,329
+gördüğün yere kadar git.
+
+2186
+01:43:05,329 --> 01:43:07,329
+Ondan sonra tersi değiştir.
+
+2187
+01:43:07,329 --> 01:43:12,720
+Evet. Eksi 1.
+
+2188
+01:43:12,720 --> 01:43:14,720
+Mesela şöyle gidiyorum.
+
+2189
+01:43:14,720 --> 01:43:16,720
+1 1 1
+
+2190
+01:43:16,720 --> 01:43:18,720
+1 1 1 1
+
+2191
+01:43:18,720 --> 01:43:20,720
+Tüz komplementini alıyorum.
+
+2192
+01:43:20,720 --> 01:43:22,720
+İlk 1 gördüğün
+
+2193
+01:43:22,720 --> 01:43:24,720
+yere kadar gittim. 1 sonra terslerini
+
+2194
+01:43:24,720 --> 01:43:26,720
+almaya başladım.
+
+2195
+01:43:26,720 --> 01:43:28,720
+4
+
+2196
+01:43:28,720 --> 01:43:30,720
+ve 8 oldu.
+
+2197
+01:43:30,720 --> 01:43:32,720
+Kaç bu? Sayı değeri 1.
+
+2198
+01:43:32,720 --> 01:43:34,720
+Ne olmuş olduğunu söylüyorum. Eksi 1
+
+2199
+01:43:34,720 --> 01:43:36,720
+olduğunu söylemiş oluyorum.
+
+2200
+01:43:36,720 --> 01:43:38,720
+Böylece
+
+2201
+01:43:38,720 --> 01:43:40,720
+israf kalktı mı? Düşünelim.
+
+2202
+01:43:40,720 --> 01:43:42,720
+İsraf neredeydi?
+
+2203
+01:43:42,720 --> 01:43:44,720
+1 0 0
+
+2204
+01:43:44,720 --> 01:43:46,720
+yani şurada
+
+2205
+01:43:46,720 --> 01:43:48,720
+ve de 0 0 0
+
+2206
+01:43:48,720 --> 01:43:50,720
+Bu 0'a denk gelirken
+
+2207
+01:43:50,720 --> 01:43:52,720
+bu neye denk geldi?
+
+2208
+01:43:52,720 --> 01:43:54,720
+Eksi 128'e denk geldi.
+
+2209
+01:43:54,720 --> 01:43:56,720
+Böylece 256 tane
+
+2210
+01:43:56,720 --> 01:43:58,720
+farklı değeri artık
+
+2211
+01:43:58,720 --> 01:44:00,720
+ifade edebilir hale
+
+2212
+01:44:00,720 --> 01:44:04,670
+geldim arkadaşlar.
+
+2213
+01:44:04,670 --> 01:44:06,670
+Şimdi
+
+2214
+01:44:06,670 --> 01:44:10,529
+bu kısım anlaşıldı mı?
+
+2215
+01:44:10,529 --> 01:44:12,529
+Burada da onu anlatıyor arkadaşlar
+
+2216
+01:44:12,529 --> 01:44:14,529
+zaten. Tüz komplement
+
+2217
+01:44:14,529 --> 01:44:16,529
+representation
+
+2218
+01:44:16,529 --> 01:44:18,529
+diyoruz.
+
+2219
+01:44:18,529 --> 01:44:20,529
+Burada ne yapmış? Evet
+
+2220
+01:44:20,529 --> 01:44:22,529
+size bahsettiğim
+
+2221
+01:44:22,529 --> 01:44:24,529
+eksi 1'i 1 1 1'e denk getirmiş.
+
+2222
+01:44:24,529 --> 01:44:26,529
+Eksi 16'yı da
+
+2223
+01:44:26,529 --> 01:44:28,529
+burada tabi 8 bit üzerine çalışmamış da
+
+2224
+01:44:28,529 --> 01:44:30,529
+5 bit üzerine
+
+2225
+01:44:30,529 --> 01:44:34,579
+çalışmış.
+
+2226
+01:44:34,579 --> 01:44:36,579
+Tabi biraz da şeye
+
+2227
+01:44:36,579 --> 01:44:38,579
+gidelim artık. Kesirli sayılara
+
+2228
+01:44:38,579 --> 01:44:40,579
+gidelim artık. Şimdi
+
+2229
+01:44:40,579 --> 01:44:42,579
+kesirli sayılarda
+
+2230
+01:44:42,579 --> 01:44:44,579
+bir virgüllü kısım vardı hatırlarsanız.
+
+2231
+01:44:44,579 --> 01:44:46,579
+Bu virgüllü kısımdan
+
+2232
+01:44:46,579 --> 01:44:48,579
+itibaren de
+
+2233
+01:44:48,579 --> 01:44:50,579
+artık
+
+2234
+01:44:50,579 --> 01:44:52,579
+basamak sistemi değişiyordu.
+
+2235
+01:44:52,579 --> 01:44:54,579
+Örneğin 3.7 dediğimiz zaman
+
+2236
+01:44:54,579 --> 01:44:56,579
+burası birler basamak
+
+2237
+01:44:56,579 --> 01:44:58,579
+33 olsun mesela
+
+2238
+01:44:58,579 --> 01:45:00,579
+birler basamağı onlar basamağı
+
+2239
+01:45:00,579 --> 01:45:02,579
+peki şu basamağı ne diyorduk?
+
+2240
+01:45:02,579 --> 01:45:04,579
+10 üzeri
+
+2241
+01:45:04,579 --> 01:45:06,579
+eksi 1 basamağı değil mi?
+
+2242
+01:45:06,579 --> 01:45:08,579
+Yani sayının
+
+2243
+01:45:08,579 --> 01:45:10,579
+onda birini bölüp
+
+2244
+01:45:10,579 --> 01:45:12,579
+7 ile çarpıyorduk.
+
+2245
+01:45:12,579 --> 01:45:14,579
+10 üzeri eksi 1 tabi. Peki şuraya
+
+2246
+01:45:14,579 --> 01:45:16,579
+5 eklesek bu da
+
+2247
+01:45:16,579 --> 01:45:18,579
+10 üzeri eksi 2'ler yani yüzde 1'ler
+
+2248
+01:45:18,579 --> 01:45:20,579
+basamaydı. Aynı mantıklı
+
+2249
+01:45:20,579 --> 01:45:22,579
+arkadaşlar aynı mantıkla
+
+2250
+01:45:22,579 --> 01:45:24,579
+bizim burada
+
+2251
+01:45:24,579 --> 01:45:26,579
+fixed point'ta
+
+2252
+01:45:26,579 --> 01:45:28,579
+şeyimiz
+
+2253
+01:45:28,579 --> 01:45:30,579
+mantığımız
+
+2254
+01:45:30,579 --> 01:45:32,579
+şu gözdeki belli bir noktayı
+
+2255
+01:45:32,579 --> 01:45:36,399
+nokta kabul edip
+
+2256
+01:45:36,399 --> 01:45:38,399
+yani şurası da nokta olabilir
+
+2257
+01:45:38,399 --> 01:45:40,399
+şurası da nokta olabilir.
+
+2258
+01:45:40,399 --> 01:45:42,399
+Eğer ben şurada sağda yaparsam
+
+2259
+01:45:42,399 --> 01:45:44,399
+noktamı sadece
+
+2260
+01:45:44,399 --> 01:45:46,399
+ne kullanabilirim? 10 üzeri
+
+2261
+01:45:46,399 --> 01:45:48,399
+eksi
+
+2262
+01:45:48,399 --> 01:45:50,399
+10 üzeri eksi 1'le
+
+2263
+01:45:50,399 --> 01:45:52,399
+pardon 10 üzeri
+
+2264
+01:45:52,399 --> 01:45:54,399
+eksi 1'le 10 üzeri
+
+2265
+01:45:54,399 --> 01:45:56,399
+eksi 2'yi kullanabilirim ama
+
+2266
+01:45:56,399 --> 01:45:58,399
+şuraya koyarsam 10 üzeri
+
+2267
+01:45:58,399 --> 01:46:00,399
+eksi 1 burası olur o zaman
+
+2268
+01:46:00,399 --> 01:46:02,399
+10 üzeri eksi 2 10 üzeri eksi 3
+
+2269
+01:46:02,399 --> 01:46:04,399
+virgülden sonraki kısmı
+
+2270
+01:46:04,399 --> 01:46:06,399
+arttırıp azaltmak için
+
+2271
+01:46:06,399 --> 01:46:08,399
+sabit bir nokta
+
+2272
+01:46:08,399 --> 01:46:10,399
+fixed point belirlemeniz
+
+2273
+01:46:10,399 --> 01:46:12,399
+gerekiyor. Tabi
+
+2274
+01:46:12,399 --> 01:46:14,399
+burada aynı bahsettiğim ondalık
+
+2275
+01:46:14,399 --> 01:46:16,399
+değerlerde nasıl ölçüldüğünü
+
+2276
+01:46:16,399 --> 01:46:18,399
+göstermiş.
+
+2277
+01:46:18,399 --> 01:46:20,399
+Peki biz burada binary
+
+2278
+01:46:20,399 --> 01:46:22,399
+bir sayıda bakın burada bir örnek
+
+2279
+01:46:22,399 --> 01:46:24,399
+vermiş. Sondan
+
+2280
+01:46:24,399 --> 01:46:26,399
+üçüncü. Burada kaç bitlik
+
+2281
+01:46:26,399 --> 01:46:30,220
+sayı var? 4
+
+2282
+01:46:30,220 --> 01:46:32,220
+5 6 7 8
+
+2283
+01:46:32,220 --> 01:46:34,220
+9 10 11 bitlik bir sayı var.
+
+2284
+01:46:34,220 --> 01:46:36,220
+Üçüncü bitine
+
+2285
+01:46:36,220 --> 01:46:38,220
+şey demiş. Bunun
+
+2286
+01:46:38,220 --> 01:46:40,220
+sol tarafı yani aynı
+
+2287
+01:46:40,220 --> 01:46:42,220
+2 üzeri
+
+2288
+01:46:42,220 --> 01:46:44,220
+bakın şuralar yanlış 2 üzeri 3
+
+2289
+01:46:44,220 --> 01:46:46,220
+2 üzeri 1
+
+2290
+01:46:46,220 --> 01:46:51,390
+şeklinde gitmeliydi.
+
+2291
+01:46:51,390 --> 01:46:55,470
+Evet
+
+2292
+01:46:55,470 --> 01:46:57,470
+burada
+
+2293
+01:46:57,470 --> 01:46:59,470
+25 sayısı var.
+
+2294
+01:46:59,470 --> 01:47:01,470
+Burada 16
+
+2295
+01:47:01,470 --> 01:47:03,470
+artı 8
+
+2296
+01:47:03,470 --> 01:47:05,470
+artı 1 yani şurada
+
+2297
+01:47:05,470 --> 01:47:07,470
+şurası şurası ve şu sayıyı
+
+2298
+01:47:07,470 --> 01:47:09,470
+almış. 10 tabanlı olmayacak
+
+2299
+01:47:09,470 --> 01:47:11,470
+burası. 2 tabanlı olacak.
+
+2300
+01:47:11,470 --> 01:47:13,470
+Peki şuradaki kısım
+
+2301
+01:47:13,470 --> 01:47:15,470
+neyi söylüyor bize?
+
+2302
+01:47:15,470 --> 01:47:17,470
+Bir tane 2 üzeri eksi 1 tabanı da var.
+
+2303
+01:47:17,470 --> 01:47:19,470
+Yani yarım
+
+2304
+01:47:19,470 --> 01:47:21,470
+0.5 var.
+
+2305
+01:47:21,470 --> 01:47:23,470
+Artı şurası ne?
+
+2306
+01:47:23,470 --> 01:47:25,470
+0.25 artı 0.25
+
+2307
+01:47:25,470 --> 01:47:27,470
+Şunda yok.
+
+2308
+01:47:27,470 --> 01:47:29,470
+Toplam
+
+2309
+01:47:29,470 --> 01:47:31,470
+0.75 oluyor. Dikkat ederseniz
+
+2310
+01:47:31,470 --> 01:47:33,470
+sıfırdan sonraki tam
+
+2311
+01:47:33,470 --> 01:47:35,470
+sayılı şeyleri veremez bu.
+
+2312
+01:47:35,470 --> 01:47:37,470
+Burada bir kısıt var.
+
+2313
+01:47:37,470 --> 01:47:39,470
+Virgül sayısını 3 basamak
+
+2314
+01:47:39,470 --> 01:47:41,470
+virgülden sonraki kısmı 3 basamak olarak tutarsanız
+
+2315
+01:47:41,470 --> 01:47:43,470
+burada fail edebiliyorsunuz
+
+2316
+01:47:43,470 --> 01:47:45,470
+arkadaşlar.
+
+2317
+01:47:45,470 --> 01:47:47,470
+Bunu yenmenin yolu da
+
+2318
+01:47:47,470 --> 01:47:49,470
+şu buradaki virgüllü
+
+2319
+01:47:49,470 --> 01:47:51,470
+miktarı arttırmanız. Peki virgülü
+
+2320
+01:47:51,470 --> 01:47:53,470
+arttırırsanız ne olur?
+
+2321
+01:47:53,470 --> 01:47:55,470
+Sola doğru çekerseniz ne olur?
+
+2322
+01:47:55,470 --> 01:47:57,470
+Bu sefer tam sayı kısmından
+
+2323
+01:47:57,470 --> 01:47:59,470
+yemeye başlarsınız. Örneğin
+
+2324
+01:47:59,470 --> 01:48:01,470
+buradaki üçlü kısımda bir de ne
+
+2325
+01:48:01,470 --> 01:48:03,470
+ekleyebiliriz? Aslında o da 1 olsaydı şayet
+
+2326
+01:48:03,470 --> 01:48:05,470
+0.25
+
+2327
+01:48:05,470 --> 01:48:07,470
+125 de ekleyebilirdik.
+
+2328
+01:48:07,470 --> 01:48:09,470
+En fazla gelebileceğimiz yer
+
+2329
+01:48:09,470 --> 01:48:11,470
+5, 7, 8
+
+2330
+01:48:11,470 --> 01:48:13,470
+870.
+
+2331
+01:48:13,470 --> 01:48:15,470
+Virgülden sonra 875'i gösterebiliyoruz.
+
+2332
+01:48:15,470 --> 01:48:17,470
+Bu da bizim
+
+2333
+01:48:17,470 --> 01:48:19,470
+istediğimiz bir şey değil
+
+2334
+01:48:19,470 --> 01:48:21,470
+arkadaşlar.
+
+2335
+01:48:21,470 --> 01:48:23,470
+Bunu yenmenin yolu
+
+2336
+01:48:23,470 --> 01:48:25,470
+ise
+
+2337
+01:48:25,470 --> 01:48:27,470
+artık
+
+2338
+01:48:27,470 --> 01:48:29,470
+hafızada
+
+2339
+01:48:29,470 --> 01:48:31,470
+şöyle ne diyorduk? Belli bir yere
+
+2340
+01:48:31,470 --> 01:48:33,470
+virgül kabul ediyorduk.
+
+2341
+01:48:33,470 --> 01:48:35,470
+Ama bütün virgülden sonraki sayıları
+
+2342
+01:48:35,470 --> 01:48:37,470
+göstermiyoruz. Onun yerine
+
+2343
+01:48:37,470 --> 01:48:39,470
+şöyle bir gösterim var.
+
+2344
+01:48:39,470 --> 01:48:41,470
+32 bit, 64 bitlik için
+
+2345
+01:48:41,470 --> 01:48:43,470
+farklı IEEE standartları
+
+2346
+01:48:43,470 --> 01:48:45,470
+tanımlanmış
+
+2347
+01:48:45,470 --> 01:48:47,470
+olan bir yapı var.
+
+2348
+01:48:47,470 --> 01:48:49,470
+Yapı genel olarak
+
+2349
+01:48:49,470 --> 01:48:51,470
+şöyle. Örneğin 32 bitler için
+
+2350
+01:48:51,470 --> 01:48:53,470
+kayan noktalı
+
+2351
+01:48:53,470 --> 01:48:55,470
+yapıda bir tane sin biti var.
+
+2352
+01:48:55,470 --> 01:48:57,470
+Bu
+
+2353
+01:48:57,470 --> 01:48:59,470
+gerçekten sayının değerini hesaplamak
+
+2354
+01:48:59,470 --> 01:49:01,470
+istediğinizde eksi birin üzerine geliyor.
+
+2355
+01:49:01,470 --> 01:49:03,470
+Sıfırsa pozitif, eksi birse
+
+2356
+01:49:03,470 --> 01:49:05,470
+negatif sayı olmuş.
+
+2357
+01:49:05,470 --> 01:49:07,470
+Bir fraction kısmı var.
+
+2358
+01:49:07,470 --> 01:49:09,470
+Bu fraction kısmını
+
+2359
+01:49:09,470 --> 01:49:11,470
+anlatacağım daha sonra.
+
+2360
+01:49:11,470 --> 01:49:13,470
+Artı
+
+2361
+01:49:13,470 --> 01:49:15,470
+biased
+
+2362
+01:49:15,470 --> 01:49:17,470
+belli bir
+
+2363
+01:49:17,470 --> 01:49:19,470
+offset verilmiş üstel
+
+2364
+01:49:19,470 --> 01:49:21,470
+kısmı var arkadaşlar.
+
+2365
+01:49:21,470 --> 01:49:23,470
+Bundan da 127
+
+2366
+01:49:23,470 --> 01:49:25,470
+çıkarılmış oluyor.
+
+2367
+01:49:25,470 --> 01:49:27,470
+Şöyle bir şey
+
+2368
+01:49:27,470 --> 01:49:29,470
+yapıyoruz arkadaşlar.
+
+2369
+01:49:29,470 --> 01:49:33,390
+Örneğin
+
+2370
+01:49:33,390 --> 01:49:35,390
+bizim biased
+
+2371
+01:49:35,390 --> 01:49:37,390
+componentimiz 2 üzeri eksi
+
+2372
+01:49:37,390 --> 01:49:39,390
+127 ise
+
+2373
+01:49:39,390 --> 01:49:41,390
+şu biased eksponansiyeli
+
+2374
+01:49:41,390 --> 01:49:43,390
+sıfır koymamız yeterli. Buradan
+
+2375
+01:49:43,390 --> 01:49:45,390
+2 üzeri eksi 127
+
+2376
+01:49:45,390 --> 01:49:47,390
+gelmiş oluyor. Tamamıyla 127
+
+2377
+01:49:47,390 --> 01:49:49,390
+koyarsak 2 üzeri sıfır.
+
+2378
+01:49:49,390 --> 01:49:51,390
+Tamamıyla 127
+
+2379
+01:49:51,390 --> 01:49:53,390
+koyarsak hepsine
+
+2380
+01:49:53,390 --> 01:49:55,390
+254'e kadar
+
+2381
+01:49:55,390 --> 01:49:57,390
+eksponansiyel bir şekilde
+
+2382
+01:49:57,390 --> 01:49:59,390
+bir fraction ile
+
+2383
+01:49:59,390 --> 01:50:01,390
+çarpacağımız kısma ulaşıyoruz.
+
+2384
+01:50:01,390 --> 01:50:03,390
+Örneğin
+
+2385
+01:50:03,390 --> 01:50:05,390
+burada şöyle bir sayı var.
+
+2386
+01:50:05,390 --> 01:50:07,390
+Deminki sayı.
+
+2387
+01:50:07,390 --> 01:50:09,390
+25.75'i
+
+2388
+01:50:09,390 --> 01:50:11,390
+bu kısımda
+
+2389
+01:50:11,390 --> 01:50:13,390
+ifade edin demişler
+
+2390
+01:50:13,390 --> 01:50:15,390
+bize. Bu sayıyı
+
+2391
+01:50:15,390 --> 01:50:17,390
+öncelikli olarak şu halde
+
+2392
+01:50:17,390 --> 01:50:19,390
+gösterelim.
+
+2393
+01:50:19,390 --> 01:50:21,390
+Ne bu? 25
+
+2394
+01:50:21,390 --> 01:50:23,390
+şurası da 75
+
+2395
+01:50:23,390 --> 01:50:25,390
+virgül 75
+
+2396
+01:50:25,390 --> 01:50:27,390
+Burada yapacağımız
+
+2397
+01:50:27,390 --> 01:50:29,390
+şey şu. Öncelikli olarak
+
+2398
+01:50:29,390 --> 01:50:31,390
+virgülü
+
+2399
+01:50:31,390 --> 01:50:33,390
+ilk sadece tek bir
+
+2400
+01:50:33,390 --> 01:50:35,390
+kalana kadar başta
+
+2401
+01:50:35,390 --> 01:50:37,390
+tek bir kalana kadar kaydırıyoruz.
+
+2402
+01:50:37,390 --> 01:50:39,390
+1
+
+2403
+01:50:39,390 --> 01:50:41,390
+2 3 4
+
+2404
+01:50:41,390 --> 01:50:43,390
+Ne yapmış olduk?
+
+2405
+01:50:43,390 --> 01:50:45,390
+Virgülü 4 basamak kaydırdığımız
+
+2406
+01:50:45,390 --> 01:50:47,390
+için 2 üzeri
+
+2407
+01:50:47,390 --> 01:50:49,390
+4 gelmiş oluyor.
+
+2408
+01:50:49,390 --> 01:50:51,390
+Sayı ne hale gelmiş oluyor?
+
+2409
+01:50:51,390 --> 01:50:53,390
+1 nokta
+
+2410
+01:50:53,390 --> 01:50:55,390
+1 0 0 1 1 0
+
+2411
+01:50:55,390 --> 01:50:57,390
+1 1 0
+
+2412
+01:50:57,390 --> 01:50:59,390
+şekline gelmiş oluyor.
+
+2413
+01:50:59,390 --> 01:51:01,390
+Bunun ben pozitif bir sayı olduğunu biliyorum
+
+2414
+01:51:01,390 --> 01:51:03,390
+şuradan. Bu pozitif
+
+2415
+01:51:03,390 --> 01:51:05,390
+sıfırını koydum. Yani
+
+2416
+01:51:05,390 --> 01:51:07,390
+şurasına sıfırını koydum.
+
+2417
+01:51:07,390 --> 01:51:11,020
+Daha sonra
+
+2418
+01:51:11,020 --> 01:51:13,020
+burada
+
+2419
+01:51:13,020 --> 01:51:15,020
+2 üzeri 4 oluştu değil mi?
+
+2420
+01:51:15,020 --> 01:51:17,020
+Ne olması lazım?
+
+2421
+01:51:17,020 --> 01:51:19,020
+4
+
+2422
+01:51:19,020 --> 01:51:21,020
+Yani eksponansiyelin
+
+2423
+01:51:21,020 --> 01:51:23,020
+4 olması lazım.
+
+2424
+01:51:23,020 --> 01:51:25,020
+Bunun için şurayı 127'den
+
+2425
+01:51:25,020 --> 01:51:27,020
+çıkaracağım için ne koymam lazım?
+
+2426
+01:51:27,020 --> 01:51:29,020
+131 eksi 127
+
+2427
+01:51:29,020 --> 01:51:31,020
+Yani
+
+2428
+01:51:31,020 --> 01:51:33,020
+burada 2 üzeri
+
+2429
+01:51:33,020 --> 01:51:35,020
+4 kalması için.
+
+2430
+01:51:35,020 --> 01:51:37,020
+Yani 127'ye 4 eklersem
+
+2431
+01:51:37,020 --> 01:51:39,020
+aynı şeyi bulmuş olurum.
+
+2432
+01:51:39,020 --> 01:51:41,020
+Burada 127'ye 4
+
+2433
+01:51:41,020 --> 01:51:43,020
+eklemi 131 bulunuyor.
+
+2434
+01:51:43,020 --> 01:51:45,020
+Artık bu gördüğünüz
+
+2435
+01:51:45,020 --> 01:51:47,020
+kısma da
+
+2436
+01:51:47,020 --> 01:51:49,020
+eksponansiyel kısma da 131'i
+
+2437
+01:51:49,020 --> 01:51:51,020
+yazıyorum.
+
+2438
+01:51:51,020 --> 01:51:53,020
+131'in karşılığı ne?
+
+2439
+01:51:53,020 --> 01:51:55,020
+Şu. Peki
+
+2440
+01:51:55,020 --> 01:51:57,020
+normalize magnetiz kısmını
+
+2441
+01:51:57,020 --> 01:51:59,020
+ne hale getiriyorum? Bakın
+
+2442
+01:51:59,020 --> 01:52:01,020
+ilk 1 gördüğüm yere kadar
+
+2443
+01:52:01,020 --> 01:52:03,020
+gideceğim ya. Bunu almıyorum.
+
+2444
+01:52:03,020 --> 01:52:05,020
+Zaten her bir sayıda bunu yapıyorum.
+
+2445
+01:52:05,020 --> 01:52:07,020
+Bundan sonraki kısmı yazıyorum.
+
+2446
+01:52:07,020 --> 01:52:09,020
+1 0 0 1 1 1
+
+2447
+01:52:09,020 --> 01:52:11,020
+0. 1 0 0 1 1
+
+2448
+01:52:11,020 --> 01:52:13,020
+1 0. Gerisini yazmış oluyorum.
+
+2449
+01:52:13,020 --> 01:52:15,020
+Ben
+
+2450
+01:52:15,020 --> 01:52:17,020
+biliyorum ki ben
+
+2451
+01:52:17,020 --> 01:52:19,020
+artık mantiz kısmı yani şuradaki
+
+2452
+01:52:19,020 --> 01:52:21,020
+fraction kısmı veya mantiz
+
+2453
+01:52:21,020 --> 01:52:23,020
+kısmı deniyor. Ben bunu
+
+2454
+01:52:23,020 --> 01:52:25,020
+gördüğüm zaman başına 1 ekliyorum.
+
+2455
+01:52:25,020 --> 01:52:27,020
+1 0 0
+
+2456
+01:52:27,020 --> 01:52:29,020
+1 1 1 1 1 1
+
+2457
+01:52:29,020 --> 01:52:31,020
+0'ı
+
+2458
+01:52:31,020 --> 01:52:33,020
+koyuyorum.
+
+2459
+01:52:33,020 --> 01:52:35,020
+Ondan sonra bunu neyle
+
+2460
+01:52:35,020 --> 01:52:37,020
+çarpacağım arkadaşlar?
+
+2461
+01:52:37,020 --> 01:52:39,020
+4 ile çarpacağım. Onu da buradan biliyorum.
+
+2462
+01:52:39,020 --> 01:52:41,020
+1 2 3 4
+
+2463
+01:52:41,020 --> 01:52:43,020
+kısmına geldim. Bakın
+
+2464
+01:52:43,020 --> 01:52:45,020
+25 75'i ifade ediyorum.
+
+2465
+01:52:45,020 --> 01:52:47,020
+Hatta mantiz kısmından
+
+2466
+01:52:47,020 --> 01:52:49,020
+bundan sonraki kısımda iyice
+
+2467
+01:52:49,020 --> 01:52:51,020
+999'lara
+
+2468
+01:52:51,020 --> 01:52:53,020
+yaklaşabiliyorum. Çünkü virgülden
+
+2469
+01:52:53,020 --> 01:52:55,020
+sonraki kısmı daha rahat
+
+2470
+01:52:55,020 --> 01:52:57,020
+ifade edilebilecek
+
+2471
+01:52:57,020 --> 01:52:59,020
+bir gösterime sahibim var.
+
+2472
+01:52:59,020 --> 01:53:03,840
+Bir de bunun
+
+2473
+01:53:03,840 --> 01:53:05,840
+64 bitlik versiyonu var.
+
+2474
+01:53:05,840 --> 01:53:07,840
+Deminkinde 8 bit biased eksponansiyel
+
+2475
+01:53:07,840 --> 01:53:09,840
+ayırıyor. Burada 11 ayırıyor. Fraction kısmında
+
+2476
+01:53:09,840 --> 01:53:11,840
+52 bit. Deminki 64 bit
+
+2477
+01:53:11,840 --> 01:53:13,840
+ile biased daha rahat
+
+2478
+01:53:13,840 --> 01:53:15,840
+daha
+
+2479
+01:53:15,840 --> 01:53:17,840
+geniş bir aralıkta sayıyı ifade
+
+2480
+01:53:17,840 --> 01:53:19,840
+ediyoruz. Sadece burada biased eksponansiyeli
+
+2481
+01:53:19,840 --> 01:53:21,840
+bulurken 1023'lük bir
+
+2482
+01:53:21,840 --> 01:53:23,840
+offsetleme
+
+2483
+01:53:23,840 --> 01:53:29,039
+yapmamız gerekiyor.
+
+2484
+01:53:29,039 --> 01:53:31,039
+Buraları anlatmıştım.
+
+2485
+01:53:31,039 --> 01:53:37,300
+Evet.
+
+2486
+01:53:37,300 --> 01:53:39,300
+Bunun haricinde
+
+2487
+01:53:39,300 --> 01:53:41,300
+sizlerden
+
+2488
+01:53:41,300 --> 01:53:43,300
+okumanızı istediğim arkadaşlar
+
+2489
+01:53:43,300 --> 01:53:45,300
+sayı sistemleriyle ilgili kısım
+
+2490
+01:53:45,300 --> 01:53:47,300
+burada. Kitabımızda bol bol
+
+2491
+01:53:47,300 --> 01:53:49,300
+lojik var. Herkes o örneklere bir çalışsın.
+
+2492
+01:53:49,300 --> 01:53:51,300
+Arkasından
+
+2493
+01:53:53,300 --> 01:53:55,300
+kodlama kısmımız var.
+
+2494
+01:53:55,300 --> 01:54:01,520
+Kodlama kısmımız var.
+
+2495
+01:54:01,520 --> 01:54:03,520
+Tabi burada kodlama
+
+2496
+01:54:03,520 --> 01:54:05,520
+önemli bir kavram.
+
+2497
+01:54:05,520 --> 01:54:11,550
+Hangi kitap
+
+2498
+01:54:11,550 --> 01:54:17,619
+göstereyim?
+
+2499
+01:54:17,619 --> 01:54:19,619
+Yeni versiyonları çıktı zannedersem
+
+2500
+01:54:19,619 --> 01:54:39,600
+bunun. Evet.
+
+2501
+01:54:39,600 --> 01:54:41,600
+Kitap bu arkadaşlar.
+
+2502
+01:54:41,600 --> 01:54:43,600
+Bende ki
+
+2503
+01:54:43,600 --> 01:54:45,600
+hali bu.
+
+2504
+01:54:45,600 --> 01:54:47,600
+Şöyle bir hali de var.
+
+2505
+01:54:47,600 --> 01:54:57,890
+Lojik devre tasarımı.
+
+2506
+01:54:57,890 --> 01:54:59,890
+Bu da zannedersem bir şey.
+
+2507
+01:54:59,890 --> 01:55:01,890
+Aynı kitap.
+
+2508
+01:55:01,890 --> 01:55:05,779
+Dediğim gibi
+
+2509
+01:55:05,779 --> 01:55:07,779
+[öğrenci] ve
+
+2510
+01:55:07,779 --> 01:55:09,779
+Rüfat Çölkesen.
+
+2511
+01:55:09,779 --> 01:55:17,600
+Hepsi aynı kitap.
+
+2512
+01:55:17,600 --> 01:55:19,600
+Sadece basım yılları farklı.
+
+2513
+01:55:19,600 --> 01:55:23,869
+Hepsi aynı kitap.
+
+2514
+01:55:23,869 --> 01:55:25,869
+Lojik devre tasarımı [öğrenci]
+
+2515
+01:55:25,869 --> 01:55:30,079
+[öğrenci]
+
+2516
+01:55:30,079 --> 01:55:32,079
+Arsan
+
+2517
+01:55:32,079 --> 01:55:34,079
+Rüfat
+
+2518
+01:55:34,079 --> 01:55:36,079
+Çölkesen
+
+2519
+01:55:36,079 --> 01:55:38,079
+Bu lojik devre tasarımı.
+
+2520
+01:55:38,079 --> 01:55:43,340
+Veya Manon'un
+
+2521
+01:55:43,340 --> 01:55:45,340
+kitabından da bulabilirsiniz.
+
+2522
+01:55:45,340 --> 01:55:47,340
+Manon'un Digital Design
+
+2523
+01:55:47,340 --> 01:55:53,060
+veya internetten de
+
+2524
+01:55:53,060 --> 01:55:55,060
+rahatlıkla bulabilirsiniz
+
+2525
+01:55:55,060 --> 01:55:57,060
+arkadaşlar.
+
+2526
+01:55:57,060 --> 01:55:59,060
+Şimdi kodlama.
+
+2527
+01:55:59,060 --> 01:56:01,060
+Kodlamada
+
+2528
+01:56:01,060 --> 01:56:03,060
+sonlu elemanlı bir kümenin
+
+2529
+01:56:03,060 --> 01:56:05,060
+her bir elemanına
+
+2530
+01:56:05,060 --> 01:56:07,060
+birer tane kod verilmesi olarak
+
+2531
+01:56:07,060 --> 01:56:09,060
+ifade edilebilir. Örneğin
+
+2532
+01:56:09,060 --> 01:56:11,060
+Türkçemizde 29 tane af var.
+
+2533
+01:56:11,060 --> 01:56:13,060
+Sonlu bir eleman kümesi var.
+
+2534
+01:56:13,060 --> 01:56:15,060
+Sonuçta
+
+2535
+01:56:15,060 --> 01:56:17,060
+alfabedeki her harfe
+
+2536
+01:56:17,060 --> 01:56:19,060
+ne yapabiliyoruz?
+
+2537
+01:56:19,060 --> 01:56:21,060
+Bir sayı karşılığı atabiliyoruz değil mi?
+
+2538
+01:56:21,060 --> 01:56:23,060
+Birden
+
+2539
+01:56:23,060 --> 01:56:25,060
+Z'ye kadar 29'a kadar
+
+2540
+01:56:25,060 --> 01:56:27,060
+E bitmedi.
+
+2541
+01:56:27,060 --> 01:56:29,060
+Küçük harfleri de yapabiliriz.
+
+2542
+01:56:29,060 --> 01:56:31,060
+Bu sefer 30'dan değil mi?
+
+2543
+01:56:31,060 --> 01:56:33,060
+30'dan
+
+2544
+01:56:33,060 --> 01:56:35,060
+baktığımızda kaça kadar yapabiliriz burada?
+
+2545
+01:56:35,060 --> 01:56:37,060
+58'e
+
+2546
+01:56:37,060 --> 01:56:39,060
+kadar ne yapabiliriz?
+
+2547
+01:56:39,060 --> 01:56:41,060
+Kod verebiliriz. Bakın burada
+
+2548
+01:56:41,060 --> 01:56:43,060
+kodladık harfleri. Artık
+
+2549
+01:56:43,060 --> 01:56:45,060
+bir hafıza gözünde
+
+2550
+01:56:45,060 --> 01:56:47,060
+hafıza gözünde
+
+2551
+01:56:47,060 --> 01:56:49,060
+belli bir header
+
+2552
+01:56:49,060 --> 01:56:51,060
+yaptığımızda bundan sonra
+
+2553
+01:56:51,060 --> 01:56:53,060
+ne koyacağız oraya?
+
+2554
+01:56:53,060 --> 01:56:55,060
+Harfleri koyacağız örneğin.
+
+2555
+01:56:55,060 --> 01:56:57,060
+Lojik yazacağız mesela.
+
+2556
+01:56:57,060 --> 01:56:59,060
+Lojik. Ne yapmamız lazım?
+
+2557
+01:56:59,060 --> 01:57:01,060
+L harfini bir şekilde kodlamamız lazım değil mi?
+
+2558
+01:57:01,060 --> 01:57:03,060
+Burada neye denk geliyorsa
+
+2559
+01:57:03,060 --> 01:57:05,060
+büyük küçük harf önemliyse
+
+2560
+01:57:05,060 --> 01:57:07,060
+ondan sonra karakterler
+
+2561
+01:57:07,060 --> 01:57:09,060
+gibi
+
+2562
+01:57:09,060 --> 01:57:11,060
+şeyleri biz burada
+
+2563
+01:57:11,060 --> 01:57:13,060
+kullanabiliriz.
+
+2564
+01:57:13,060 --> 01:57:15,060
+Sayısal kodlamada mesela
+
+2565
+01:57:15,060 --> 01:57:17,060
+demin yaptığımız BCD
+
+2566
+01:57:17,060 --> 01:57:19,060
+BCD de
+
+2567
+01:57:19,060 --> 01:57:21,060
+bir kodlama tipi değil mi arkadaşlar?
+
+2568
+01:57:21,060 --> 01:57:23,060
+Bir sayı var. Bir de
+
+2569
+01:57:23,060 --> 01:57:25,060
+BCD karşılığı var. Aslında
+
+2570
+01:57:25,060 --> 01:57:27,060
+bir sıfırı şununla
+
+2571
+01:57:27,060 --> 01:57:29,060
+kodlamışız. 9'u
+
+2572
+01:57:29,060 --> 01:57:31,060
+1001'le kodlamışız.
+
+2573
+01:57:31,060 --> 01:57:33,060
+Örneğin bu BCD
+
+2574
+01:57:33,060 --> 01:57:35,060
+gösterimi arkadaşlar.
+
+2575
+01:57:35,060 --> 01:57:38,300
+Şimdi burada BCD sayılar
+
+2576
+01:57:38,300 --> 01:57:40,300
+üzerinde işlemler
+
+2577
+01:57:40,300 --> 01:57:42,300
+ondan sonra
+
+2578
+01:57:42,300 --> 01:57:50,579
+3 fazlalık kodu
+
+2579
+01:57:50,579 --> 01:57:56,989
+ondan sonra ICAN kodu
+
+2580
+01:57:56,989 --> 01:57:58,989
+ondan sonra
+
+2581
+01:57:58,989 --> 01:58:04,420
+bitişik kodlar
+
+2582
+01:58:04,420 --> 01:58:06,420
+ve gray kodu
+
+2583
+01:58:10,670 --> 01:58:12,670
+gibi yapılara
+
+2584
+01:58:12,670 --> 01:58:14,670
+bakmanızı öneririm arkadaşlar.
+
+2585
+01:58:14,670 --> 01:58:16,670
+Bunun dışında
+
+2586
+01:58:16,670 --> 01:58:18,670
+hata sezme
+
+2587
+01:58:18,670 --> 01:58:25,250
+ve onarma
+
+2588
+01:58:25,250 --> 01:58:27,250
+hata sezme ve onarma
+
+2589
+01:58:27,250 --> 01:58:29,250
+mesela eşlik biti
+
+2590
+01:58:29,250 --> 01:58:31,250
+mesela hata
+
+2591
+01:58:31,250 --> 01:58:33,250
+sezme ve onarma. Sayısal sistemlerin
+
+2592
+01:58:33,250 --> 01:58:35,250
+avantajı bu analog sistemlere
+
+2593
+01:58:35,250 --> 01:58:37,250
+göre. Örneğin
+
+2594
+01:58:37,250 --> 01:58:39,250
+bir tane şuraya eşlik biti
+
+2595
+01:58:39,250 --> 01:58:42,779
+veya parity biti
+
+2596
+01:58:42,779 --> 01:58:44,779
+tanımladınız.
+
+2597
+01:58:44,779 --> 01:58:46,779
+Şimdi buraya bir sayı yazdınız.
+
+2598
+01:58:46,779 --> 01:58:48,779
+1 0 1
+
+2599
+01:58:48,779 --> 01:58:50,779
+1 0 1 0 1
+
+2600
+01:58:50,779 --> 01:58:52,779
+Örneğin burada bir hata
+
+2601
+01:58:52,779 --> 01:58:54,779
+oldu. Bir mutasyon
+
+2602
+01:58:54,779 --> 01:58:56,779
+hata oldu diyelim.
+
+2603
+01:58:56,779 --> 01:58:58,779
+Eğer siz buradaki parity bitine
+
+2604
+01:58:58,779 --> 01:59:00,779
+buradaki parity bitine
+
+2605
+01:59:00,779 --> 01:59:02,779
+sayının içerisindeki
+
+2606
+01:59:02,779 --> 01:59:04,779
+birlerin sayısının tek mi
+
+2607
+01:59:04,779 --> 01:59:06,779
+çift mi olduğunu yazsanız
+
+2608
+01:59:06,779 --> 01:59:08,779
+örneğin birler çiftse
+
+2609
+01:59:08,779 --> 01:59:10,779
+sıfır birler tekse
+
+2610
+01:59:10,779 --> 01:59:12,779
+bir olsun örneğin.
+
+2611
+01:59:12,779 --> 01:59:14,779
+Yaptığınız zaman en azından
+
+2612
+01:59:14,779 --> 01:59:16,779
+bu geniş bölgede bir hata
+
+2613
+01:59:16,779 --> 01:59:18,779
+oluşmadığında bu hatayı sezmiş olursunuz.
+
+2614
+01:59:18,779 --> 01:59:20,779
+Bu en basit en böyle
+
+2615
+01:59:20,779 --> 01:59:22,779
+ilkel yol. Tabi ki
+
+2616
+01:59:22,779 --> 01:59:24,779
+sizin burada parity bitiniz
+
+2617
+01:59:24,779 --> 01:59:26,779
+bozulursa yapacak hiçbir
+
+2618
+01:59:26,779 --> 01:59:28,779
+şeyiniz yok. Sayıyı da kaybetmiş
+
+2619
+01:59:28,779 --> 01:59:30,779
+olursunuz. Bunun dışında
+
+2620
+01:59:30,779 --> 01:59:32,779
+3 bitle beraber
+
+2621
+01:59:32,779 --> 01:59:34,779
+daha fazla
+
+2622
+01:59:34,779 --> 01:59:36,779
+parity biti eklenip farklı
+
+2623
+01:59:36,779 --> 01:59:38,779
+bölgeler tekrar tekrar check edilebilir.
+
+2624
+01:59:38,779 --> 01:59:40,779
+Bununla da alakalı
+
+2625
+01:59:40,779 --> 01:59:42,779
+hata sezme
+
+2626
+01:59:42,779 --> 01:59:44,779
+kodları filan ayarlanabilir.
+
+2627
+01:59:44,779 --> 01:59:46,779
+Ondan sonra
+
+2628
+01:59:46,779 --> 01:59:48,779
+daha gelişmiş
+
+2629
+01:59:48,779 --> 01:59:50,779
+versiyonları var. LRC
+
+2630
+01:59:50,779 --> 01:59:52,779
+boyuna fazlalık
+
+2631
+01:59:52,779 --> 01:59:54,779
+length
+
+2632
+01:59:54,779 --> 01:59:56,779
+random coding
+
+2633
+01:59:56,779 --> 01:59:58,779
+kodları var. Çevrimli
+
+2634
+01:59:58,779 --> 02:00:00,779
+CRC kodları var.
+
+2635
+02:00:00,779 --> 02:00:02,779
+Çevrimli fazlalık
+
+2636
+02:00:02,779 --> 02:00:04,779
+sınanması şeklinde.
+
+2637
+02:00:04,779 --> 02:00:06,779
+Hamming
+
+2638
+02:00:06,779 --> 02:00:10,829
+kodlaması var.
+
+2639
+02:00:10,829 --> 02:00:12,829
+En sonunda da
+
+2640
+02:00:12,829 --> 02:00:14,829
+artık dersimizin sonuna doğru
+
+2641
+02:00:14,829 --> 02:00:16,829
+ASCII kodlarımız var arkadaşlar.
+
+2642
+02:00:16,829 --> 02:00:18,829
+Demin
+
+2643
+02:00:18,829 --> 02:00:20,829
+size bahsetmiştim ya
+
+2644
+02:00:20,829 --> 02:00:22,829
+sonuçta hafıza gözlerimize biz
+
+2645
+02:00:22,829 --> 02:00:24,829
+belli bir noktadan sonra
+
+2646
+02:00:24,829 --> 02:00:26,829
+bazı
+
+2647
+02:00:26,829 --> 02:00:28,829
+sayı saklamak yerine
+
+2648
+02:00:28,829 --> 02:00:30,829
+harfleri de
+
+2649
+02:00:30,829 --> 02:00:32,829
+saklayabiliriz.
+
+2650
+02:00:32,829 --> 02:00:34,829
+Harfleri kodlamamız lazım
+
+2651
+02:00:34,829 --> 02:00:36,829
+bizim.
+
+2652
+02:00:36,829 --> 02:00:38,829
+Örneğin
+
+2653
+02:00:38,829 --> 02:00:40,829
+ASCII kodu böyle bir kod arkadaşlar.
+
+2654
+02:00:40,829 --> 02:00:42,829
+Örneğin ondalık
+
+2655
+02:00:42,829 --> 02:00:44,829
+değeri şöyle yazalım
+
+2656
+02:00:44,829 --> 02:00:48,590
+ondalık değeri
+
+2657
+02:00:48,590 --> 02:00:50,590
+hexadecimal değeri
+
+2658
+02:00:50,590 --> 02:00:52,590
+ve de karakterin ne olduğuna bakalım.
+
+2659
+02:00:52,590 --> 02:00:54,590
+Sıfır
+
+2660
+02:00:54,590 --> 02:00:56,590
+sıfır karakteri
+
+2661
+02:00:56,590 --> 02:00:58,590
+null'müş.
+
+2662
+02:00:58,590 --> 02:01:00,590
+Sıfır değil arkadaşlar.
+
+2663
+02:01:00,590 --> 02:01:04,130
+Örneğin benim
+
+2664
+02:01:04,130 --> 02:01:06,130
+65
+
+2665
+02:01:06,130 --> 02:01:08,130
+hexadecimal olarak
+
+2666
+02:01:08,130 --> 02:01:10,130
+41'e denk geliyor.
+
+2667
+02:01:10,130 --> 02:01:12,130
+Düşünelim 41 nasıl
+
+2668
+02:01:12,130 --> 02:01:14,130
+şey olabilir?
+
+2669
+02:01:14,130 --> 02:01:16,130
+Bir sıfır sıfır
+
+2670
+02:01:16,130 --> 02:01:18,130
+kırk
+
+2671
+02:01:18,130 --> 02:01:20,130
+sıfır sıfır sıfır
+
+2672
+02:01:20,130 --> 02:01:22,130
+bir. 41 bakın.
+
+2673
+02:01:22,130 --> 02:01:24,130
+Bu normalde ondalık değeri
+
+2674
+02:01:24,130 --> 02:01:26,130
+kaç bunun?
+
+2675
+02:01:26,130 --> 02:01:28,130
+Burada ne var? 64
+
+2676
+02:01:28,130 --> 02:01:30,130
+64 basamağı artı bir 65.
+
+2677
+02:01:30,130 --> 02:01:32,130
+Bu neymiş arkadaşlar?
+
+2678
+02:01:32,130 --> 02:01:34,130
+A harfine
+
+2679
+02:01:34,130 --> 02:01:36,130
+denk geliyormuş. Dikkat edin
+
+2680
+02:01:36,130 --> 02:01:38,130
+bunların hepsi 16 41'de
+
+2681
+02:01:38,130 --> 02:01:40,130
+iki tane basamak var.
+
+2682
+02:01:40,130 --> 02:01:42,130
+hexadecimalde iki tane basamak varsa
+
+2683
+02:01:42,130 --> 02:01:44,130
+8 bit'e göre
+
+2684
+02:01:44,130 --> 02:01:46,130
+bunlar
+
+2685
+02:01:46,130 --> 02:01:48,130
+ayarlanmış.
+
+2686
+02:01:48,130 --> 02:01:52,720
+Örneğin
+
+2687
+02:01:52,720 --> 02:01:54,720
+38
+
+2688
+02:01:54,720 --> 02:01:56,720
+bu hexadecimal karşılığı
+
+2689
+02:01:56,720 --> 02:01:58,720
+26
+
+2690
+02:01:58,720 --> 02:02:00,720
+ampersand işaretiymiş.
+
+2691
+02:02:00,720 --> 02:02:02,720
+46 örneğin
+
+2692
+02:02:02,720 --> 02:02:04,720
+2'ye denk
+
+2693
+02:02:04,720 --> 02:02:06,720
+geliyor.
+
+2694
+02:02:06,720 --> 02:02:08,720
+Nokta periyot işaretiymiş.
+
+2695
+02:02:08,720 --> 02:02:10,720
+97
+
+2696
+02:02:10,720 --> 02:02:12,720
+örneğin
+
+2697
+02:02:12,720 --> 02:02:14,720
+67'e denk geliyor.
+
+2698
+02:02:14,720 --> 02:02:16,720
+Küçük A'ymış.
+
+2699
+02:02:16,720 --> 02:02:18,720
+Bu 8 bit'lik ASCII.
+
+2700
+02:02:18,720 --> 02:02:20,720
+16 bit'lik ASCII'de
+
+2701
+02:02:20,720 --> 02:02:22,720
+tabii ki daha çok karakter seti gösterecek.
+
+2702
+02:02:22,720 --> 02:02:24,720
+Onun dışında Unicode'lar
+
+2703
+02:02:24,720 --> 02:02:26,720
+hani şu web sayfalarında gördüğünüz
+
+2704
+02:02:26,720 --> 02:02:28,720
+geliştirilmiş. Yetmemeye başlıyor.
+
+2705
+02:02:28,720 --> 02:02:30,720
+Çünkü dünyada farklı alfabeler
+
+2706
+02:02:30,720 --> 02:02:32,720
+var, kullanılan şeyler var.
+
+2707
+02:02:32,720 --> 02:02:34,720
+Yetmemeye başlıyor.
+
+2708
+02:02:34,720 --> 02:02:36,720
+İster istemez. Bunlar içinde
+
+2709
+02:02:36,720 --> 02:02:38,720
+kullanılan, genişletilmiş
+
+2710
+02:02:38,720 --> 02:02:40,720
+table'lar bu
+
+2711
+02:02:40,720 --> 02:02:42,720
+kod dönüşüm
+
+2712
+02:02:42,720 --> 02:02:44,720
+tabloları da kullanılmış.
+
+2713
+02:02:44,720 --> 02:02:46,720
+Oluyor arkadaşlar. Benim sizden
+
+2714
+02:02:46,720 --> 02:02:48,720
+istediğim bugün
+
+2715
+02:02:48,720 --> 02:02:53,060
+sayı sistemleri
+
+2716
+02:02:53,060 --> 02:02:55,060
+ve de coding
+
+2717
+02:02:55,060 --> 02:02:57,060
+kısımlarını bir okumanız
+
+2718
+02:02:57,060 --> 02:02:59,060
+ve de örneklerini de
+
+2719
+02:02:59,060 --> 02:03:01,060
+çözmeniz. Yani bunların üzerinde
+
+2720
+02:03:01,060 --> 02:03:03,060
+rahat kalem oynatır hale
+
+2721
+02:03:03,060 --> 02:03:05,060
+gelirseniz kendinizi
+
+2722
+02:03:05,060 --> 02:03:07,060
+geliştirmiş olursunuz arkadaşlar.
+
+2723
+02:03:07,060 --> 02:03:09,060
+Benim tavsiyem budur.
+
+2724
+02:03:09,060 --> 02:03:11,060
+Bu haftalık. Önümüzdeki
+
+2725
+02:03:11,060 --> 02:03:13,060
+hafta şeye doğru geçiyoruz
+
+2726
+02:03:13,060 --> 02:03:15,060
+arkadaşlar.
+
+2727
+02:03:15,060 --> 02:03:17,060
+Lojik devre temelleri.
+
+2728
+02:03:17,060 --> 02:03:19,060
+Lojik devre temelleri.
+
+2729
+02:03:19,060 --> 02:03:21,060
+Lojik devre temelleri.
+
+2730
+02:03:21,060 --> 02:03:27,500
+Sizlerin sormak istediği
+
+2731
+02:03:27,500 --> 02:03:29,500
+sorular var mı arkadaşlar?
+
+2732
+02:03:29,500 --> 02:03:36,939
+Evet. Tavsiyem sayı sistemleri
+
+2733
+02:03:36,939 --> 02:03:38,939
+ve coding kısımlarını bir daha
+
+2734
+02:03:38,939 --> 02:03:40,939
+okuyup
+
+2735
+02:03:40,939 --> 02:03:42,939
+İngilizce kitap olabilir, Türkçe kitap olabilir
+
+2736
+02:03:42,939 --> 02:03:44,939
+herhangi bir kitapta.
+
+2737
+02:03:44,939 --> 02:03:46,939
+Buradaki dönüşüm, çıkarma,
+
+2738
+02:03:46,939 --> 02:03:48,939
+aritmetik, toplama gibi
+
+2739
+02:03:48,939 --> 02:03:50,939
+işlemlere muhakkak ki
+
+2740
+02:03:50,939 --> 02:03:52,939
+kalem oynatmanız.
+
+2741
+02:03:52,939 --> 02:03:54,939
+Binary çıkarma, binary toplama
+
+2742
+02:03:54,939 --> 02:03:56,939
+nasıl olur?
+
+2743
+02:03:56,939 --> 02:04:03,460
+Toplama çıkarma
+
+2744
+02:04:03,460 --> 02:04:05,460
+bunların üzerinde biraz
+
+2745
+02:04:05,460 --> 02:04:07,460
+kalem oynatmanızda
+
+2746
+02:04:07,460 --> 02:04:09,460
+fayda var arkadaşlar. Anlaştık mı?
+
+2747
+02:04:09,460 --> 02:04:11,460
+Başka
+
+2748
+02:04:11,460 --> 02:04:13,460
+sorusu olan var mı arkadaşlar?
+
+2749
+02:04:13,460 --> 02:04:20,829
+21'inde
+
+2750
+02:04:20,829 --> 02:04:22,829
+başlayacak. Dersin başında
+
+2751
+02:04:22,829 --> 02:04:24,829
+söyledim.
+
+2752
+02:04:24,829 --> 02:04:26,829
+Dersin başında göstermiştim
+
+2753
+02:04:26,829 --> 02:04:28,829
+hatta. Duruyor mu hala bilmiyorum.
+
+2754
+02:04:28,829 --> 02:04:32,819
+Avesiste
+
+2755
+02:04:32,819 --> 02:04:34,819
+Mecit Akyüz'ün
+
+2756
+02:04:34,819 --> 02:04:36,819
+sayfasına
+
+2757
+02:04:36,819 --> 02:04:38,819
+girmiştik.
+
+2758
+02:04:38,819 --> 02:04:40,819
+Oradan
+
+2759
+02:04:40,819 --> 02:04:49,220
+bakabilirsiniz.
+
+2760
+02:04:49,220 --> 02:04:51,220
+Mecit Yüzkas'ın sayfasına
+
+2761
+02:04:51,220 --> 02:04:53,220
+geldiğimde
+
+2762
+02:04:53,220 --> 02:04:55,220
+[öğrenci]'in
+
+2763
+02:04:55,220 --> 02:04:57,220
+sayfasında da olması lazım.
+
+2764
+02:04:57,220 --> 02:04:59,220
+Şurada duyurular, dokümanlar
+
+2765
+02:04:59,220 --> 02:05:01,220
+var.
+
+2766
+02:05:01,220 --> 02:05:03,220
+Duyuru.
+
+2767
+02:05:03,220 --> 02:05:05,220
+Şuna bir daha
+
+2768
+02:05:05,220 --> 02:05:07,220
+bakalım.
+
+2769
+02:05:07,220 --> 02:05:09,220
+İlki gördüğünüz gibi
+
+2770
+02:05:09,220 --> 02:05:11,220
+bir A grubu
+
+2771
+02:05:11,220 --> 02:05:13,220
+bir grupta yapılacak.
+
+2772
+02:05:13,220 --> 02:05:15,220
+21'i çarşamba saat
+
+2773
+02:05:15,220 --> 02:05:17,220
+17 ile 19 arasında.
+
+2774
+02:05:17,220 --> 02:05:19,220
+İki A grubu da
+
+2775
+02:05:19,220 --> 02:05:21,220
+yine aynı gün yapılacak.
+
+2776
+02:05:21,220 --> 02:05:23,220
+28'inde
+
+2777
+02:05:23,220 --> 02:05:25,220
+bir B grubu
+
+2778
+02:05:25,220 --> 02:05:27,220
+Mecit Yüzkas yapıyor.
+
+2779
+02:05:27,220 --> 02:05:29,220
+İkincisini [öğrenci]
+
+2780
+02:05:29,220 --> 02:05:31,220
+yapıyor. Burada doğruluk tablosu
+
+2781
+02:05:31,220 --> 02:05:33,220
+kapı dönüşümleri gibi
+
+2782
+02:05:33,220 --> 02:05:35,220
+kavramlara çalışacağız
+
+2783
+02:05:35,220 --> 02:05:37,220
+arkadaşlar. Siz buna önceden
+
+2784
+02:05:37,220 --> 02:05:39,220
+bir çalışın çünkü önümüzdeki hafta
+
+2785
+02:05:39,220 --> 02:05:41,220
+çarşamba kaçına denk geliyor.
+
+2786
+02:05:41,220 --> 02:05:43,220
+Ben burada
+
+2787
+02:05:43,220 --> 02:05:45,220
+kavramları anlatacağım.
+
+2788
+02:05:45,220 --> 02:05:47,220
+Lojik kapı dönüşümlerinden
+
+2789
+02:05:47,220 --> 02:05:49,220
+çalışın. Biz lojik devreleri
+
+2790
+02:05:49,220 --> 02:05:51,220
+önümüzdeki hafta
+
+2791
+02:05:51,220 --> 02:05:53,220
+dönüşümlerini anlatacağız.
+
+2792
+02:05:53,220 --> 02:05:55,220
+Lojik fonksiyonların indirgemesine
+
+2793
+02:05:55,220 --> 02:05:57,220
+geçmeyeceğiz.
+
+2794
+02:05:57,220 --> 02:06:00,880
+Şimdilik bu kadar arkadaşlar.
+
+2795
+02:06:12,189 --> 02:06:14,189
+Ben de size teşekkür ediyorum.
+
+2796
+02:06:14,189 --> 02:06:16,189
+Haftaya görüşmek üzere arkadaşlar.
+
+2797
+02:06:16,189 --> 02:06:18,189
+Dikkat edin doğruluk tablosu
+
+2798
+02:06:18,189 --> 02:06:20,189
+lojik kapı dönüşümleri olduğu için
+
+2799
+02:06:20,189 --> 02:06:22,189
+ben o gün anlatacağım o gün konuları.
+
+2800
+02:06:22,189 --> 02:06:24,189
+Deneylerin içerisine
+
+2801
+02:06:24,189 --> 02:06:26,189
+muhakkak bakın. Çünkü tam anlamıyla
+
+2802
+02:06:26,189 --> 02:06:28,189
+senkronize gidemeyebiliyoruz.
+
+2803
+02:06:28,189 --> 02:06:30,189
+Şimdiden
+
+2804
+02:06:30,189 --> 02:06:34,270
+bir düşünelim bunu. Olur mu?
+
+2805
+02:06:34,270 --> 02:06:36,270
+Tamam olur. Kendinize çok iyi bakın.
+
+2806
+02:06:36,270 --> 02:06:38,270
+Görüşmek üzere arkadaşlar.
+

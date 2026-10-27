@@ -1,0 +1,1652 @@
+1
+00:00:01,300 --> 00:00:52,700
+Merhaba arkadaşlar bir iki dakika bekleyeceğim katılım artar mı diye ondan sonra başlarız.
+
+2
+00:00:52,700 --> 00:02:46,189
+[öğrenci] isimli kullanıcının mikrofonundan değişik sesler geliyor.
+
+3
+00:02:46,189 --> 00:03:08,610
+Evet arkadaşlar o zaman bu katılımcılarımız sanırım herhalde bugün zaten uygulama saati olduğu için
+
+4
+00:03:08,610 --> 00:03:16,770
+yüksek olmayabilir. Ben yine de derse de girip bir tanıtım yapmak istedim.
+
+5
+00:03:17,090 --> 00:03:30,590
+Bu nedenle başlıyoruz. Evet 2512 veri yapıları ve algoritmalar dersi 2020-2021 GÜZ yarı yılında
+
+6
+00:03:30,590 --> 00:03:39,310
+uzaktan eğitim ile yapacağız biliyorsunuz. Ben Göksal Biricik aranızda tanıyanlar ya da tanımayanlar olabilir.
+
+7
+00:03:39,310 --> 00:03:53,810
+Bu nedenle adımı da x-slide'da sizlerle paylaştım. Hemen dersimizle ilgili ön bilgileri paylaşayım.
+
+8
+00:03:53,810 --> 00:04:04,719
+Uygulama saatindeyiz şu anda zaten slide'da da görüyorsunuz çarşamba günü 1 ile 3 arasında yani 13-14-50 arasındaki
+
+9
+00:04:04,719 --> 00:04:10,319
+saatlerimiz normalde uygulama ya da yüz yüze eğitim yapsaydık uygulama ve lab olarak
+
+10
+00:04:10,319 --> 00:04:19,439
+anladığımız saatlerde normal teorik ders saatlerimiz ise yarın yani perşembe günleri ve yine programda
+
+11
+00:04:19,439 --> 00:04:27,680
+çakışmaması için uzaktan eğitimde böyle bir esnekliğimiz de oldu. Akşam 5'te başlayacak 17-19-50 arasında
+
+12
+00:04:27,680 --> 00:04:36,079
+3 saat olacak şekilde planlanmış durumda. Genellikle evet ders 3 saat sürüyor 3 saate yani 2 saat 50 dakika
+
+13
+00:04:36,160 --> 00:04:45,439
+ya da 3 tane 50 dakika sürüyor. Bu dönemde aynı şekilde sürmeye devam edecek. Şimdi ön bilgi olarak buraya
+
+14
+00:04:45,439 --> 00:04:50,319
+yazmadım ama tabi sizin de bunu mutlaka paylaşmakta fayda var şöyle bir slide'da geri gidersek.
+
+15
+00:04:50,319 --> 00:04:56,079
+Yüz yarı yılındayız. Yüz yarı yılında açılmış 25-12. Koduna dikkat ederseniz sonu 2 ile bitiyor.
+
+16
+00:04:56,079 --> 00:05:00,800
+Bu ne demek? Bu bir zorunlu ders ve ikinci dönemin zorunlu dersi demek. Yani o zaman biz şimdi
+
+17
+00:05:00,800 --> 00:05:09,600
+ikinci dönemdeyiz. Bu ders dönem dışı açılmış özel olarak açılmış durumda. Açılmasının tabi çeşitli
+
+18
+00:05:09,600 --> 00:05:18,879
+talepleri karşılamak için bir sebebi ya da sebepler zinciri var. Birincisi bu ders genellikle
+
+19
+00:05:18,879 --> 00:05:26,079
+başarı oranının sabit olduğu yıllardan beri çok da fazla değişmediği derslerimizden bir tanesidir.
+
+20
+00:05:26,079 --> 00:05:31,199
+Bunun da en temel sebeplerinden biri yani başarısız olmanın en temel sebeplerinden biri
+
+21
+00:05:31,199 --> 00:05:37,120
+devam mevzusudur. Yani eğer derse devam etmezseniz doğal olarak konuları
+
+22
+00:05:37,120 --> 00:05:43,439
+anlayamazsınız, öğrenemezsiniz. Bununla birlikte de ödevlerden belki geri kalırsınız.
+
+23
+00:05:43,439 --> 00:05:48,319
+Bunları yapmadığınız sürece notunuz azalır. Doğal olarak vize ya da benzeri
+
+24
+00:05:48,319 --> 00:05:54,240
+değerlendirmelerde de derslerdeki katılım eksikliğinden dolayı geri düşmeye başlarsınız.
+
+25
+00:05:54,240 --> 00:05:59,360
+Ayrıca kümültü olarak bir araya gelir ve sizin başarınızın düşmesini ya da başarısızlık ile
+
+26
+00:05:59,360 --> 00:06:05,040
+dönemin sonuçlanmasına sebebiyet verebilir. Bir de bununla birlikte derse alıp da hiç
+
+27
+00:06:05,040 --> 00:06:11,519
+katılmayan arkadaşlar vardır yıllardır. Onlar da F0 alarak kaldıkları için genellikle
+
+28
+00:06:11,519 --> 00:06:18,040
+tabi hiç katılmayan demeyeyim de yeteri kadar katılmayan diyelim belki de hiç
+
+29
+00:06:18,040 --> 00:06:24,160
+katılmayanlar da oluyor F0 alarak bu dersten kalırlar. Yani genellikle böyle bir kitle
+
+30
+00:06:24,160 --> 00:06:29,360
+oluşuyor ve tabi zaman içinde yıllar içinde bu kitle git gide büyüyor büyüyor büyüyor ve
+
+31
+00:06:29,360 --> 00:06:35,839
+geçen dönem biz üç grup olarak derse açmış olmamıza rağmen ve belki de dersin
+
+32
+00:06:35,839 --> 00:06:41,560
+tarihindeki en rahat geçilecek şeylerden dönemlerden biri özellikle işte sınavlar
+
+33
+00:06:41,560 --> 00:06:47,519
+konusunda oluşmuş olmasına rağmen şartlar yine de oranımız çok fazla değişmedi.
+
+34
+00:06:47,519 --> 00:06:56,199
+Yüksek bir mevcutla hani ikinci döneme girmek yerine dönem dışı bu derse açarak en
+
+35
+00:06:56,199 --> 00:07:02,639
+azından biriken bu şeyi kitleyi biraz olsun bir nebze olsun eritmek adına dönem
+
+36
+00:07:02,639 --> 00:07:07,240
+dışında bu derse açtık. Bir diğer şey de tabi ki dersle alakalı açılma
+
+37
+00:07:07,240 --> 00:07:13,040
+sebeplerinden biri de bu ders yüksek lisans programında ya da evet yüksek
+
+38
+00:07:13,040 --> 00:07:20,160
+lisans üstü programlarımızda alan dışı olarak katılan programa kabul edilen kayıt
+
+39
+00:07:20,160 --> 00:07:25,439
+hakkı kazanan öğrencilerin geçmesi gereken bilimsel hazırlık derslerinden biri bu
+
+40
+00:07:25,439 --> 00:07:29,439
+dersten ya da herhangi birinden yani sonuçta sorumlu oldukları 8 ders oluyor.
+
+41
+00:07:29,439 --> 00:07:33,519
+Bu derslerden herhangi birinden kaldıklarında zaten yüksek lisans programına
+
+42
+00:07:33,519 --> 00:07:39,920
+devam edemiyor dönem dışı alan dışı öğrencileri. İşte bu geçen dönemde
+
+43
+00:07:40,079 --> 00:07:47,040
+başarısızlık oranında orada da bir artış oldu. Bu artışı da yine en azından bir hak daha
+
+44
+00:07:47,040 --> 00:07:53,759
+kendilerinin kazanabilmesi adına burada bu derse tekrar dönem dışı olarak açmaya karar verdik.
+
+45
+00:07:53,759 --> 00:07:59,040
+Yaz okulu konusunda da tabi söylemler olmuştu fakat yaz okulunun planlanması
+
+46
+00:07:59,040 --> 00:08:04,160
+çok daha önceden yapılan bir iş. Planlaması yapılmadan yapılmamış olan bir iş yaz okulunda
+
+47
+00:08:04,160 --> 00:08:08,319
+bir anda açmak olanaksız. Bu nedenle yaz okulunda veri yapılır diye bir ders olmadı.
+
+48
+00:08:08,480 --> 00:08:17,439
+Şimdi tabi özellikle yüksek lisans tarafından katılım oldukça hiç beklemediğim kadar fazla
+
+49
+00:08:17,439 --> 00:08:22,720
+oldu. Sebebi de bu dönem kayıt yaptıran arkadaşlar da baktılar ki bu almaları gereken
+
+50
+00:08:22,720 --> 00:08:31,680
+bir ders ve aldılar. Şu anda 20'den fazla öğrenci lisans üstü seviyesinde bilimsel
+
+51
+00:08:31,680 --> 00:08:40,080
+kapsamında bu dersi alıyor ve 70 kadar da lisans öğrencimiz bu dersi alttan alıyor.
+
+52
+00:08:40,080 --> 00:08:47,279
+Yaptığım kontrollülerde ikinci sınıflardan bu dersi alan olmadığını gördüm. Bir tek bir
+
+53
+00:08:47,279 --> 00:08:53,679
+kişi var ama o da şey numarası 2019'da olmasına rağmen yatay geçiş ya da işte
+
+54
+00:08:53,679 --> 00:08:58,080
+bölüm değiştirme programlarından bir tanesiyle geldiği için sanıyorum. Irregular bir durumda
+
+55
+00:08:58,159 --> 00:09:03,279
+o yüzden aldığını düşünüyorum. Bunları şunun için söylüyorum. Eğer almamanız gerektiği
+
+56
+00:09:03,279 --> 00:09:07,840
+halde bu dersi aldıysanız lütfen bırakın çünkü bu ders tamamen dönem dışı ve özel
+
+57
+00:09:07,840 --> 00:09:13,440
+şartlar altında açılmış bir durumdadır. Ama herhalde böyle bir durum dediğim gibi olmadı
+
+58
+00:09:13,440 --> 00:09:21,440
+oluşmadı fakat sizin verdiğiniz dilekçilere baktığımda bugün bölümde daha bir 10 tane
+
+59
+00:09:21,440 --> 00:09:30,080
+alan 10 civarında da istek olduğunu gördüm. Şunu söylemeye çalışıyorum. Şu anda 70 lisans
+
+60
+00:09:30,080 --> 00:09:38,120
+20 lisans üstü olmak üzere zaten dersimizin nüfusu 90 kişiye varmış durumda. 10 kişi en
+
+61
+00:09:38,120 --> 00:09:44,240
+az 10 kişinin de dilekçesini gördüm. Yani 100 kişiyi geçen bir nüfusla karşı karşıyayız.
+
+62
+00:09:44,240 --> 00:09:53,440
+Bu açıkçası dersin etkili bir şekilde hani sindire sindire işlenebilmesini biraz etkileyebilir.
+
+63
+00:09:53,440 --> 00:09:57,919
+Neden diyeceksiniz? Şimdi değerlendirme kriterleriniz zaten slide'da hepiniz gördünüz
+
+64
+00:09:57,919 --> 00:10:04,159
+okudunuz ben konuşurken. Çeşitli şeyler var. Noktalar var sizleri değerlendireceğimiz.
+
+65
+00:10:04,159 --> 00:10:09,679
+Bunlardan en önemlileri aslında uzaktan eğitimde. Ödevler olacak ve quizler olacak.
+
+66
+00:10:09,879 --> 00:10:16,279
+Değişik haftalarda normalden daha fazla sayıda yani geçmiş dönemlerde yaptığımız verdiğimiz
+
+67
+00:10:16,279 --> 00:10:21,720
+3 artı 1 sayısından daha fazla olacak şekilde ödev ve bunlara ilave olarak da ders içinde
+
+68
+00:10:21,720 --> 00:10:27,360
+derslerin saatlerinin içinde sürpriz bir şekilde oluşacak olan quizlerle sizi
+
+69
+00:10:27,360 --> 00:10:34,279
+değerlendireceğiz. Fakat 100 nüfus ile ben bu ödevleri nasıl okurum inanın şu anda
+
+70
+00:10:34,279 --> 00:10:41,480
+bilmiyorum. Bakalım bir şekilde bunun altından kalkmaya çalışacağız. Bu nedenle hani düşündüğüm
+
+71
+00:10:41,480 --> 00:10:46,600
+kadar fazla ödev verememe gibi bir durum oluşabilir ki bunu hiç istemiyorum. Çünkü bu dersin
+
+72
+00:10:46,600 --> 00:10:52,200
+mutlaka yapılarak bire bir ellerinizle yani ellerinizi kirleterek üzerinde çalışarak
+
+73
+00:10:52,200 --> 00:11:00,039
+öğrenmeniz esas ve temel. Peki değerlendirme kriterlerini hemen geçelim. Şimdi vize sınavı
+
+74
+00:11:00,039 --> 00:11:05,799
+olur mu olmaz mı? Şu anda yüzde 100 bir şey söyleyemiyorum. Senatonun bu konudaki
+
+75
+00:11:05,799 --> 00:11:11,240
+yönlendirmesi ya da kararı ne olursa ona uyacağız. Yani derlerse ki evet yine bir vize haftası
+
+76
+00:11:11,240 --> 00:11:15,840
+olacak. Evet bir vize yapmanız gerekiyor. O zaman yapacağız. Eğer yaparsak da ağırlığı
+
+77
+00:11:15,840 --> 00:11:23,919
+yüzde 20 olur. Dönem içinde özellikle işte bu uygulama saatleri içerisinde yapıp da
+
+78
+00:11:23,919 --> 00:11:31,720
+anlayacağınız ağırlıkta ve kapsamda ödevler olacak. Bu da demek oluyor ki daha önceden
+
+79
+00:11:31,720 --> 00:11:36,799
+yüz yüze eğitimde genellikle bizim bir hafta işte ödevi verip ondan sonra iki hafta
+
+80
+00:11:36,799 --> 00:11:42,080
+sonrasına ya da bir hafta sonrasına teslim etmenizi beklediğimiz tarzda ödevler olmayacak.
+
+81
+00:11:42,080 --> 00:11:48,559
+Çok daha hızlı ödevler daha böyle küçük kompakt ama daha hızlı çalışmanız bir saat
+
+82
+00:11:48,559 --> 00:11:56,240
+içinde çözümü bana yollamanızı gerektiren ödevler verilecek. Bu sayede de işte geçmiş
+
+83
+00:11:56,240 --> 00:12:03,159
+dönemde özellikle uzaktan eğitime geçtiğimizde çok yaşadığımız fakat maalesef hiçbir şey
+
+84
+00:12:03,159 --> 00:12:08,519
+yapamadığımız ortak çalışma yani birisinin yapıp 5 kişinin 10 kişinin o ödevi ondan
+
+85
+00:12:08,519 --> 00:12:13,639
+alması problemini mümkün olduğunca çözmeye çalışıyoruz. Yani burada evet ödevi yapmış
+
+86
+00:12:13,639 --> 00:12:20,000
+biliyorsunuz ama biz burada kimlerin kimlerden ne kadar ödev aldığını hatta kimlerin hangi
+
+87
+00:12:20,000 --> 00:12:25,679
+kümelerde yer aldığını hatta hangi arkadaşların hangi değişkenleri ya da hangi işte döngüleri
+
+88
+00:12:25,679 --> 00:12:30,200
+nasıl değiştirdiğini hepsini görebiliyoruz. Bunu yapan uygulamalarımız da var iki tane
+
+89
+00:12:30,200 --> 00:12:35,279
+ayrı uygulama da kullanıyoruz. Bütün böyle boyuyor bize bütün kodlarınızı ve bunların
+
+90
+00:12:35,279 --> 00:12:40,840
+öbek halinde de bize gösteriyor fakat maalesef işte geçen dönem bu konuda hiçbir şey
+
+91
+00:12:40,840 --> 00:12:46,919
+yapamadık. Örneğin mesela bir kopya değerlendirmesi doğru düzgün yapamadık. Çok bariz olanlarda
+
+92
+00:12:46,919 --> 00:12:53,360
+evet bir şeyler yapıldı. Çünkü birebir aynı verilenler vardı. Bunun dışında hani dediğim
+
+93
+00:12:53,360 --> 00:12:58,039
+gibi değişken değiştirmek gibi ya da işte biri forla yapmış biri vayla çevirmiş biri işte
+
+94
+00:12:58,039 --> 00:13:03,919
+bir tane kod parçasını fonksiyona çevirmiş gibi ufak tefek değişiklikleri maalesef şey
+
+95
+00:13:03,919 --> 00:13:07,840
+yapamadık fazla. Sadece biraz noktada belki bir şeyler olmuştur. Bu dönem bu konuda
+
+96
+00:13:07,840 --> 00:13:14,679
+bir arka katı olacağımızı daha ilk saatten sizlerle paylaşıyorum. Yine kuyuzlar olacak dediğim
+
+97
+00:13:14,679 --> 00:13:19,879
+gibi mesela işte haftaları belli değil. Şu anda çünkü ortada hazırlamış olduğum bir kuyuz
+
+98
+00:13:19,879 --> 00:13:26,879
+de yok. Ama belli haftalarda belli konularda işte bir hafta mesela atıyorum şu anda
+
+99
+00:13:26,879 --> 00:13:31,440
+tamamen örnek olsun diye söylüyorum. Linkli listelere işliyoruz diyelim iki hafta sonra.
+
+100
+00:13:31,440 --> 00:13:38,279
+Linkli listeler konusunu işledik bitirdik. Ondan sonra ben size o anda Evet arkadaşlar işte bu
+
+101
+00:13:38,279 --> 00:13:43,440
+konuyla ilgili bu hafta istediğimiz konuyla ilgili kuyuz şurada sizi bekliyor. Buyurun 10
+
+102
+00:13:43,440 --> 00:13:49,679
+dakika 15 dakika süreniz var. Bu işi hemen halledin şeklinde. Hızlı yine çok hızlı ve
+
+103
+00:13:49,679 --> 00:13:55,399
+çabuk bitecek. İçeriklere sahip olan kuyuzlarımız da olacak. Bunların sayısı şu
+
+104
+00:13:55,399 --> 00:14:00,399
+anda belli değil. Çünkü hangi haftalarda hangi konularda yapacağım belli değil. Final
+
+105
+00:14:00,399 --> 00:14:05,480
+bu yine mutlaka olacaktır. Final değerlendirmesi mutlaka yapılacaktır. Onun da ağırlığı
+
+106
+00:14:05,480 --> 00:14:11,039
+yine senet onun kararları gereği yüzde 40 olarak belirlenmiş durumda. Şimdi burada
+
+107
+00:14:11,039 --> 00:14:18,240
+değişebilir başlığını tekrar açacak olursam vize yapılır ise yüzde 20 yapılmaz ise
+
+108
+00:14:18,240 --> 00:14:24,080
+ödevler kuyuzlar işte onun ağırlıklarını alacak 30 30 şeklinde olacaktır. Yani
+
+109
+00:14:24,080 --> 00:14:30,799
+vize varsa 20 20 20 eğer vize yoksa 30 ödev 30 kuyuz ağırlıkta olacak şekilde bir
+
+110
+00:14:30,799 --> 00:14:38,000
+değerlendirme tablosu sizi bekliyor olacak. Derse katılım konusunda da yine bilgileri
+
+111
+00:14:38,000 --> 00:14:42,720
+sizinle paylaşayım. Uzaktan eğitimde yoklama alınmıyor. Yani ben almıyorum.
+
+112
+00:14:42,720 --> 00:14:49,440
+Fakat bu demek değildir ki tabii ki derslere katılmayacaksınız. Ben olsam sizin
+
+113
+00:14:49,440 --> 00:14:53,279
+yerinizde biraz önceki değerlendirme kriterlilerini duyduktan sonra mümkün
+
+114
+00:14:53,440 --> 00:14:57,200
+de katılmaya gayret ederim. Çünkü katılmadığınız bir derste kuize de giremeyeceksiniz.
+
+115
+00:14:57,200 --> 00:15:02,480
+Böyle düşünün. Ne oldu? Mesela 5 tane kuiz yapılmıştı. 2 tanesini kaçırdınız.
+
+116
+00:15:02,480 --> 00:15:09,039
+Hani 100 yerine ancak 60 üzerinden not alabilir. Yani 60'ın yüzde 20'sini kazanabilir
+
+117
+00:15:09,039 --> 00:15:14,879
+hale geleceksiniz. Bu işte bu gibi kriterler aslında başarının düşmesindeki en temel
+
+118
+00:15:14,879 --> 00:15:20,960
+nedenlerden biri oluyor bu ders kapsamında. Bu nedenle hani mümkünse tavsiyem size
+
+119
+00:15:21,039 --> 00:15:25,919
+derstere mümkün olduğunca katılmanızdır. Evet dersleri her zaman videolarından tekrar
+
+120
+00:15:25,919 --> 00:15:30,480
+izleyebileceksiniz. Takip edebileceksiniz ama kaçırdığınız kuizin maalesef bir
+
+121
+00:15:30,480 --> 00:15:35,360
+telafisi olmayacaktır. Bu bir sınav şeklinde değil. Kısa sınav şeklinde değerlendirildiği
+
+122
+00:15:35,360 --> 00:15:40,159
+için aynı şekilde ödevleri de uygulama saatlerinin şu anda işlediğimiz
+
+123
+00:15:40,159 --> 00:15:46,159
+saatlerin içinde gerçekleştireceğimiz için bunlara da mümkün olduğunca katılmanız
+
+124
+00:15:46,159 --> 00:15:51,919
+geçecektir. Bazı haftalarda sadece soru cevap şeklinde devam edebiliriz.
+
+125
+00:15:51,919 --> 00:16:00,320
+Şöyle şimdi yani mesela önümüzdeki hafta diyelim ki ben zaten daha giriş yapacağız
+
+126
+00:16:00,320 --> 00:16:06,159
+ya da işte karmaşıklık konusuna gireceğiz. O konuda bir ödev büyük bir ihtimalle
+
+127
+00:16:06,159 --> 00:16:12,960
+vermeyeceğim size. Fakat önümüzdeki hafta çarşamba günü şey olacak. Belki
+
+128
+00:16:13,120 --> 00:16:17,360
+yarım saat ya da bir saat tamamen sizin katılmızı ve sorularınıza bağlı olarak bir
+
+129
+00:16:17,360 --> 00:16:22,559
+soru cevap seçini yapacağız. Uygulama saatlerinde de yani ben burada yine en azından
+
+130
+00:16:22,559 --> 00:16:28,559
+bir süre için sizlerle birlikte eğer ödev çalışması yapmıyorsak sizlerle birlikte olmaya
+
+131
+00:16:28,559 --> 00:16:34,399
+devam edeceğim. [öğrenci]'un ne dediğini ne yazdığını anlayamadım. Etkin demiş ki
+
+132
+00:16:34,399 --> 00:16:39,840
+yani kuis 1 saat olacak ödev 3-5 günlük mü yoksa hepsi 1-2 saatlik olacak. Şöyle
+
+133
+00:16:40,320 --> 00:16:46,799
+genellikle kuisler 1 saat bile değil yani mesela diyelim ki 3 saatimiz var ya ders
+
+134
+00:16:46,799 --> 00:16:51,679
+içinde 2.5 saatini yapacağız dersin son 15 dakikasında kuis olacak. Öyle
+
+135
+00:16:51,679 --> 00:16:58,480
+düşünebilirsiniz. Yani sürpriz tamamen sürpriz olacak kuisler. Ödevler ise temel
+
+136
+00:16:58,480 --> 00:17:05,200
+düşüncem dediğim gibi çarşamba günkü 2 saat içinde belki maksimum 1 saat içinde
+
+137
+00:17:05,359 --> 00:17:11,359
+bunları tamamlamanız tamamlayacak şekilde olmanız ve o 1 saatin sonunda teslim ettiğiniz
+
+138
+00:17:11,359 --> 00:17:19,359
+ettiğiniz bu şekilde bir plan kurgusu içindeyiz. Eğer proje tarzı 1-2 hafta
+
+139
+00:17:19,359 --> 00:17:25,440
+içinde yapmanız gereken ödevler olur ise zaten bunu ayrıca konuşuruz. Derste duyurusunu
+
+140
+00:17:25,440 --> 00:17:30,400
+yaparız. Sayfasında da işte bu online yıldız eli trenin duvarı mıdır nedir bir şeyleri
+
+141
+00:17:30,400 --> 00:17:36,000
+yaparız. Oralarda duyurular nerede yapılıyorsa orada da bunları size zaten belgesiyle
+
+142
+00:17:36,000 --> 00:17:43,200
+dökümanıyla birlikte sunarız. Yani anlayacağınız biraz yüz yüze'den farklı olarak dersin
+
+143
+00:17:43,200 --> 00:17:48,960
+şeyini değerlendirme kriterlerini uzaktan eğitime daha uygun olacak şekilde hale
+
+144
+00:17:48,960 --> 00:17:54,720
+dönüştürmeye gayret ediyoruz. Yani hani kervan yolda düzülür derler ya biz de
+
+145
+00:17:54,720 --> 00:18:00,640
+bakarsanız ilk defa karşılaştığımız alışık olmadığımız bir ders anlatım şekliyle yine
+
+146
+00:18:00,640 --> 00:18:05,920
+karşınızda olacağız. Geçen dönemki dönüşümü zaten saymıyorum o çok hakikaten zorlayıcı
+
+147
+00:18:05,920 --> 00:18:12,160
+olmuştu hepimiz için. Fakat artık ne kadar devam edeceğini bilmediğimiz bu sürece de
+
+148
+00:18:12,160 --> 00:18:22,579
+hazır olmamız ve buna göre gerekli güncellemeleri yapmamız gerekiyor. Şimdi
+
+149
+00:18:22,579 --> 00:18:29,220
+biraz önce hızlıca bahsettim fakat hem slide'larda yer alsın hem kayıtlarda herkes
+
+150
+00:18:29,220 --> 00:18:34,980
+katılmayanlarda görsün okusun ve dinlesin diye tekrar söylüyorum. Kopya kurallarını geçen
+
+151
+00:18:34,980 --> 00:18:41,460
+dönemdeki gibi değil daha katı ve ciddi bir şekilde işleteceğiz. Herhangi bir şekilde
+
+152
+00:18:41,460 --> 00:18:48,660
+ödevlerinizde kuislerinizde bir pattern yakalarsak örneğin bunu geçen dönemki testlerde
+
+153
+00:18:48,660 --> 00:18:55,619
+gördük. Belli grupların belli sorularda aynı şıkka yanlış cevap verdiğini neden başka
+
+154
+00:18:55,619 --> 00:19:00,099
+şıklar değil de hepsi aynı yanlışı aynı yerle aynı şekilde yapmış ve bu bir pattern yani
+
+155
+00:19:00,099 --> 00:19:04,099
+bir grup belli bir soruda belli bir şıkkı işaretlemiş başka bir grup belli bir soruda
+
+156
+00:19:04,099 --> 00:19:09,700
+belli bir şıkkı işaretlemiş şeklinde patternleri gördük fakat hiçbir işte o konularda
+
+157
+00:19:09,700 --> 00:19:17,619
+çok fazla işlem yapamadık. Bu gibi kopyalama, ortak çalışarak çözme veya herhangi bir
+
+158
+00:19:17,700 --> 00:19:24,579
+hale yapılması durumunda ve bunu tespit ettiğimizde bu ödev ya da sınav ya da kuis her neyse bu
+
+159
+00:19:24,579 --> 00:19:29,220
+çalışmada ki ortak yaptığınız çalışma her neyse ya da aldığınız çalışma buradan sıfır
+
+160
+00:19:29,220 --> 00:19:33,700
+notunu alacaksınız yani katılmış olsanız bile sıfır alacaksınız. Ayrıca disiplin
+
+161
+00:19:33,700 --> 00:19:38,980
+yönetmeliği uyarınca yapılması gerekenler neyse bu sefer artık bunları da kanıtlarıyla
+
+162
+00:19:38,980 --> 00:19:45,940
+birlikte vererek disiplin kuruluna aktarmak zorunda kalacağız. Bu konuda sizden samimiyet
+
+163
+00:19:46,019 --> 00:19:51,460
+yapma bakarsanız rica ediyorum tamamen öğrenme odaklı olarak yani kendi kişisel
+
+164
+00:19:51,460 --> 00:19:56,740
+gelişiminize faydalı olacak şekilde verdiğim ödevleri kuisleri neyse çalışmaları
+
+165
+00:19:56,740 --> 00:20:02,819
+kendi başınıza tek başınıza yaparsanız ya da internetten direkt kopyalayıp yapıştırmazsanız
+
+166
+00:20:02,819 --> 00:20:07,700
+eminim ki bir yerlerde çünkü sorduğumuz sorunun bir şekilde bir yerde sorulmuş bir
+
+167
+00:20:07,700 --> 00:20:14,339
+varyasyonunu bulmanız olasıdır hani onu da istemiyoruz. Hani internetten alınmasını da
+
+168
+00:20:14,420 --> 00:20:19,299
+yazmadım ama tekrar söylemiş olayım. Bu gibi durumların olmamasını sizden samimi
+
+169
+00:20:19,299 --> 00:20:27,220
+olarak talep ediyorum. Yani bunu bir rica olarak lütfen şey yapın alın. Bu tamamen dersi ve
+
+170
+00:20:27,220 --> 00:20:32,980
+içeriğini sizin bu alandaki temel bilginizi sağlayacak ve kişisel gelişiminizi sağlayacak
+
+171
+00:20:32,980 --> 00:20:39,299
+bir içerik olarak değerlendirin. Yine en önemli noktalardan bir tanesi mutlaka
+
+172
+00:20:39,299 --> 00:20:45,380
+özellikle ilk saatte yine söylemek zorunda kaldığımız artık bunu yazarak da ifade ediyoruz.
+
+173
+00:20:45,380 --> 00:20:51,140
+Kullanacağımız programlama dilimiz derste verdiğimiz tüm ödevler, uygulamalar,
+
+174
+00:20:51,140 --> 00:21:02,900
+projeler, kuisler, sınavlar aklınıza ne gelirse bunlar hepsinde si programlama dilini
+
+175
+00:21:03,539 --> 00:21:14,420
+kullanmanızı istiyorum. Diğer dillerde yaptığınız, verdiğiniz çözümleri değerlendirmeyeceğiz.
+
+176
+00:21:14,420 --> 00:21:19,940
+Tamam. Mutlaka ve mutlaka bu ders kapsamında si ile bunları değerlendirmeniz gerekecek.
+
+177
+00:21:19,940 --> 00:21:25,940
+Yazmanız gerekecek. Bunu kodlamaların hepsini si ile yapmanızı tekrar belirtiyorum.
+
+178
+00:21:25,940 --> 00:21:33,859
+Si olur da si++ ile yazsak, si şarpla yazsak hayır. Bunları da kullanmayacaksınız.
+
+179
+00:21:33,859 --> 00:21:41,059
+Düz si ile, ansi si ile değerlenebilecek program.si ile biten kodlar yazmanızı
+
+180
+00:21:41,059 --> 00:21:47,619
+eğer kodlama varsa bunları yazmanızı istiyorum. Çünkü geçen dönem gerçekten si şarpta
+
+181
+00:21:47,619 --> 00:21:55,619
+geldi karşımıza. Si++ da geldi karşımıza. Tabi ki si++ eğer hani si++ özel bir şey
+
+182
+00:21:55,700 --> 00:22:00,900
+yazılmamış ve bir şekilde si olarak değerlenebiliyorsa yine neyse bir derece ama
+
+183
+00:22:00,900 --> 00:22:06,339
+bunu da istemiyoruz. Lütfen ansi si ile bunları gerçekleştirin. Kodlamalarınızı
+
+184
+00:22:06,339 --> 00:22:14,099
+si ile yapın. Sizden bir mesela linkli listede belirli bir organizasyon şeklinde
+
+185
+00:22:14,099 --> 00:22:17,859
+sıralama istendi. Örneğin harflere göre içindeki verileri harflerine göre
+
+186
+00:22:17,859 --> 00:22:22,740
+linkli listede sıralayacak bir çözüm istendi. Bunu yapan hazır bir kütüphane vardır.
+
+187
+00:22:22,740 --> 00:22:27,700
+Linkli liste kütüphaneleri bunları sort edebilir. Siz onu işte kütüphane.sort
+
+188
+00:22:27,700 --> 00:22:32,980
+fonksiyonunu çağırarak bir satır ile yapmamalısınız. Sizden beklenen çözümü
+
+189
+00:22:32,980 --> 00:22:38,420
+mutlaka kendi algoritmik çözümünüz ve kodlamanız ile yerine getirmeniz gerekiyor.
+
+190
+00:22:38,420 --> 00:22:45,299
+Yani hazır bir kütüphane, hazır bir kod kullanımı yine istemediğimiz noktalardan
+
+191
+00:22:45,299 --> 00:22:54,019
+bir tanesi özetleyecek olursak yine si ile kendiniz kendi başınıza yazarsanız burada
+
+192
+00:22:54,019 --> 00:22:59,940
+beklenen kodlamaları algoritma dışındaki implementasyonları lütfen ansi si ile bunları
+
+193
+00:22:59,940 --> 00:23:10,789
+gerçekleştirin. Kaynaklara bakalım son olarak. Şimdi aslında kaynaklar
+
+194
+00:23:10,789 --> 00:23:15,670
+slide'lar olacak en çok. Sınıfta size sunduğum materyaller aslında temel
+
+195
+00:23:15,710 --> 00:23:20,029
+bir şey bulunduğunuz olacak. Ama bu derse hazırlarken ya da bu ders içeriğini hazırlarken
+
+196
+00:23:20,029 --> 00:23:24,509
+yararlandığımız kaynakları sizinle de paylaşıyorum. Bunlar ders kitapları.
+
+197
+00:23:24,509 --> 00:23:28,230
+Aslında bu dersin kitapları olarak da düşünebilirsiniz. Bunlar bilgilendirme ve
+
+198
+00:23:28,230 --> 00:23:32,710
+yol gösterme amaçlı ve İngilizce kaynaklar hani direkt olarak yüzde yüz bunlardan
+
+199
+00:23:32,710 --> 00:23:38,430
+sorumlusunuz diyemem. Fakat içerik çoğunlukla bu üç kitaptan birleştirilerek oluşturulmuş
+
+200
+00:23:38,430 --> 00:23:44,269
+bir kurgudan oluşuyor. Birinci kitap Leviti'nin Design and Analysis of Algorithms kitabı.
+
+201
+00:23:44,269 --> 00:23:49,910
+Bunun ikinci baskısını temel olarak kullanıyoruz. Üçüncü baskısı da var bu kitabın.
+
+202
+00:23:49,910 --> 00:23:57,509
+Ondan da faydalanabilirsiniz. Yine belki de dünyada standart olarak bütün üniversitelerde
+
+203
+00:23:57,509 --> 00:24:03,549
+veri yapıları ve algoritmalar konusunda kullanılan birinci kitap Sedgevekin kitabıdır.
+
+204
+00:24:03,549 --> 00:24:11,390
+Sedgevekin kitabında dördüncü baskısı üzerinden konuları ve içerikleri takip ediyor
+
+205
+00:24:11,390 --> 00:24:23,789
+bu kitabın içinden de parçalar yer alacak ya da alıyor. Tabi bu kitabın içindeki
+
+206
+00:24:23,789 --> 00:24:28,349
+implementasyonlar Java ile yapılmış durumda. O yüzden bu kitaptaki implementasyonlar
+
+207
+00:24:28,349 --> 00:24:34,230
+bizi bağlamıyor. Yani siz onları düşünmeyin. Sadece teorik kısmıyla ilgilenebilirsiniz.
+
+208
+00:24:34,230 --> 00:24:40,230
+Son kaynakta bu konuda Korman ve arkadaşlarının diye Korman diye zaten
+
+209
+00:24:40,430 --> 00:24:44,390
+bilinir Introduction to Algorithms kitabıdır. Bunun da üçüncü baskısını kullanıyoruz.
+
+210
+00:24:44,390 --> 00:24:54,150
+Yine bu kitaptaki konular da bizim dersimizin içinde belli noktalarda içerik sağlamak
+
+211
+00:24:54,150 --> 00:24:59,549
+için yararlandığımız kaynaklardan bir tanesi. Bunun dışında farklı internet
+
+212
+00:24:59,549 --> 00:25:06,349
+kaynaklarına da başvurduğumuz oluyor ama temelde bir teorik bilgi birikimi
+
+213
+00:25:06,349 --> 00:25:12,029
+tabanı bilgi tabanı oluşturmak istediğimizde bu ders kapsamında üç kitaptan faydalanıyoruz.
+
+214
+00:25:12,029 --> 00:25:22,099
+Evet şimdi geldik dersimizin planına tentative diyoruz. Buna değişebilir. Değişmesinin
+
+215
+00:25:22,099 --> 00:25:26,819
+sebebi de şudur. Aslına bakarsanız çoğu şey değişmeyecek ve bu sırayla gidilecek
+
+216
+00:25:26,819 --> 00:25:32,220
+ama olur olur bir hafta bir şey olur. Ne bileyim hastalık olur bir şey olur.
+
+217
+00:25:32,220 --> 00:25:38,299
+Başka bir nedenden dolayı örneğin elektrik kesilir bağlanamam olabilir. Dün
+
+218
+00:25:38,339 --> 00:25:45,500
+sesler kesildi. İşte hani o sırada belki bir şeyler aksaya bilir. Bu gibi şeylerde belki
+
+219
+00:25:45,500 --> 00:25:49,740
+şeyi de kullanabiliriz. İşte uygulama saatine yetişmeyen konularda uygulama saatinin
+
+220
+00:25:49,740 --> 00:25:55,900
+birazında falan da kullanarak bunları önceden duyururum sizlere. Bazı tarihsel değişiklikler
+
+221
+00:25:55,900 --> 00:26:00,660
+yaşayabiliriz ama plan genel olarak değişmeyecektir. Şimdi neler yapacağız yarın
+
+222
+00:26:00,660 --> 00:26:05,859
+yarın işte aslında dersimize girişimizi yapacağız. Bu bir tanıtmaydı bir tanıtım
+
+223
+00:26:05,900 --> 00:26:13,339
+bir de aslında ilk saat uygulaması diyebilirsiniz. Algoritmik problemin çözüm temellerine
+
+224
+00:26:13,339 --> 00:26:17,380
+bakacağız ve birkaç algoritma göreceğiz. İşte özellikle de bir iki temel sıralama
+
+225
+00:26:17,380 --> 00:26:23,980
+algoritmasının üzerinden aslında bildiğiniz şeyleri ama tekrar geçerek bir hem algoritma
+
+226
+00:26:23,980 --> 00:26:28,660
+nedir algoritmanın detayları nelerdir algoritmik problem çözümü dediğinde
+
+227
+00:26:28,660 --> 00:26:32,259
+nelere dikkat etmemiz lazım nasıl bir kurgu oluşturmamız lazım. Bu gibi
+
+228
+00:26:32,259 --> 00:26:36,140
+birkaç haftalık olarak eyleceğiz. Bu ilk iki haftayı aslında beraber de
+
+229
+00:26:36,140 --> 00:26:41,099
+düşünebilirsiniz. Yine ikinci haftada belki birinci haftada da birazına
+
+230
+00:26:41,099 --> 00:26:46,940
+girebiliriz. Bir algoritma elimize gelen karşımıza çıkan bir algoritmayı ya da
+
+231
+00:26:46,940 --> 00:26:53,019
+kendi tasarladığımız bir algoritmayı nasıl analiz ederiz. Yani çalışmasının
+
+232
+00:26:53,019 --> 00:26:59,539
+performansını ya da başarımını nasıl değerlendiririz. Algoritmanın karmaşıklığını
+
+233
+00:26:59,539 --> 00:27:04,940
+nasıl ölçeriz. Bunun için nelere dikkat etmemiz ya da neler yapmamız lazım. Bununla
+
+234
+00:27:04,940 --> 00:27:09,339
+ilgili yaklaşımlar ve notasyonlar nelerdir ve bu ders kapsamında sonrasında
+
+235
+00:27:09,339 --> 00:27:14,539
+kullanacağımız büyük o notasyonu nedir. Bunlara bakacağız ve ikili arama
+
+236
+00:27:14,539 --> 00:27:19,460
+üzerinde de hem bunların karmaşıklıklarını ya da işte analizini yaparak hem de
+
+237
+00:27:19,460 --> 00:27:24,059
+yavaş yavaş sıralama algoritmalarını tanıttıktan sonra yine temel algoritmik
+
+238
+00:27:24,059 --> 00:27:28,900
+çözümlerden olan arama yöntemlerine de ufak bir giriş yapacağız. Üçüncü
+
+239
+00:27:28,980 --> 00:27:32,980
+yönteme geldiğimizde liste yapılarını veri yapılarından yani temel veri
+
+240
+00:27:32,980 --> 00:27:37,140
+yapılarından biri olan liste veri yapısını tanıyacağız ve linkli liste
+
+241
+00:27:37,140 --> 00:27:41,700
+dediğimiz kavram nedir. Ne gibi varyasyonları vardır. Bununla
+
+242
+00:27:41,700 --> 00:27:47,220
+ne gibi linkli liste veri yapısını kullanarak ne gibi algoritmik
+
+243
+00:27:47,220 --> 00:27:51,059
+çözümler geliştirebiliriz ya da nerede bize fayda sağlar. Bunları
+
+244
+00:27:51,059 --> 00:27:54,980
+inceleyeceğiz örnekleriyle birlikte. Sonra dördüncü hafta 29 Ekim'e
+
+245
+00:27:54,980 --> 00:27:59,019
+geliyor. Cumhuriyet Bayramı'nda resmi tatil olduğu için ders yapamayacağız.
+
+246
+00:27:59,019 --> 00:28:06,700
+Beşinci haftaya geldiğimizde kuyruk ve yığın veri yapılarına bakacağız.
+
+247
+00:28:06,700 --> 00:28:12,259
+Şimdi yığın Türkçe'de iki anlamda kullanılabiliyor. Kavram karmaşası
+
+248
+00:28:12,259 --> 00:28:16,299
+olmasın diye bundan sonra ona yığın demeyeceğim. Kuyruğa da kuyruk
+
+249
+00:28:16,299 --> 00:28:19,259
+büyük bir ihtimale demeyeceğim. Bunların İngilizce karşılıklarını
+
+250
+00:28:19,259 --> 00:28:24,940
+kullanacağız. Ders boyunca Q ve stack dediğimiz veri yapıları yine
+
+251
+00:28:24,940 --> 00:28:27,740
+temel veri yapılarından iki tanesi birbiriyle de ilintili.
+
+252
+00:28:27,740 --> 00:28:32,380
+Bunların ne olduğu konusunda nasıl kullanılacağı implementasyonları
+
+253
+00:28:32,380 --> 00:28:36,019
+konusunda nasıl çözüm kolaylığı sağda konusunda da veri yapısı
+
+254
+00:28:36,019 --> 00:28:40,980
+olarak bunları tanıyacağız. Altıncı haftaya geldiğimizde ağaç
+
+255
+00:28:40,980 --> 00:28:44,779
+veri yapısına eğileceğiz. Ağaç dediğimiz yani tri dediğimiz
+
+256
+00:28:44,779 --> 00:28:48,059
+veri yapısı nedir. Ne amaçla kullanılır. Yine ne faydaları
+
+257
+00:28:48,259 --> 00:28:52,740
+bunlara bakacağız. Özel implementasyonlarından olan ve bizim de
+
+258
+00:28:52,740 --> 00:28:56,700
+sıklıkla daha çok kullanacağımız binary tri'ler nelerdir. Ne
+
+259
+00:28:56,700 --> 00:29:01,180
+gibi özellikleri vardır bunları öğreneceğiz. Ve yine binary tri'lerin
+
+260
+00:29:01,180 --> 00:29:04,059
+implementasyonlarından çözüm implementasyonlarından biri
+
+261
+00:29:04,059 --> 00:29:10,380
+olan binary search tri nedir. Buna bakacağız. Ağaçlar altıncı
+
+262
+00:29:10,380 --> 00:29:13,980
+haftanın konusu. Yedinci hafta heap veri yapısını
+
+263
+00:29:14,180 --> 00:29:18,059
+öğreneceğiz. Heap nedir. Heap nasıl oluşturulur. Heap düzeni ne
+
+264
+00:29:18,059 --> 00:29:21,619
+demektir. Bunlara bakacağız. Heap de bazen yığın olarak
+
+265
+00:29:21,619 --> 00:29:24,500
+kullanılabiliyor. Stake bazen yığıt olarak kullanılabiliyor
+
+266
+00:29:24,500 --> 00:29:28,180
+Türkçe'de. Bazen de stake yığın heap'e yığıt denebiliyor.
+
+267
+00:29:28,180 --> 00:29:31,140
+Bu ikisi çok karıştığı için ben stack ve heap şeklinde
+
+268
+00:29:31,140 --> 00:29:33,619
+ve queue şeklinde bunların İngilizce'lerini kullanarak
+
+269
+00:29:34,940 --> 00:29:37,660
+ders kapsamında yola devam etmeyi düşünüyorum. Yine aynı
+
+270
+00:29:37,660 --> 00:29:40,180
+hafta heap'lerin implementasyonlarından kullanım
+
+271
+00:29:40,180 --> 00:29:43,539
+alanlarından biri olan heap sort'a bakacağız. Bir heap
+
+272
+00:29:43,539 --> 00:29:45,380
+veri yapısı kullanarak sıralama işlemini nasıl
+
+273
+00:29:45,380 --> 00:29:48,420
+gerçekleştirebiliyoruz ve bunun karmaşıklığı nedir. Bunların
+
+274
+00:29:48,420 --> 00:29:51,900
+analizlerini gerçekleştireceğiz. Sekizinci haftaya
+
+275
+00:29:51,900 --> 00:29:56,539
+gelince arama algoritmalarına bakacağız. Yine temel
+
+276
+00:29:56,539 --> 00:30:00,299
+algoritmik çözümlerden olan. İkili aramayı zaten ikinci
+
+277
+00:30:00,299 --> 00:30:03,460
+haftada bir göz atacaktık. Fakat buradaki arama
+
+278
+00:30:03,460 --> 00:30:07,019
+algoritmalarında özel olarak metin arama algoritmalarına
+
+279
+00:30:07,019 --> 00:30:10,539
+eğileceğiz. Yani bir verilen string içinde aranan
+
+280
+00:30:10,539 --> 00:30:14,140
+substringler nasıl bulunur. Bunun nasıl çözüm yöntemleri
+
+281
+00:30:14,140 --> 00:30:17,619
+yaklaşımları vardır. Efektiflikleri nelerdir işte
+
+282
+00:30:17,619 --> 00:30:20,779
+karmaşıklıkları nelerdir. Ne gibi farklılıkları vardır.
+
+283
+00:30:20,779 --> 00:30:24,099
+Hangi yaklaşımlarla çalışırlar. Bunlara bakacağız.
+
+284
+00:30:24,099 --> 00:30:27,099
+Sonrasında dokuzuncu haftada olur olmaz bilmiyorum.
+
+285
+00:30:27,099 --> 00:30:31,019
+Birinci vize diye yazdım. Eğer olmazsa konuları
+
+286
+00:30:31,019 --> 00:30:35,019
+devam edecek şekilde burada kullanmaya haftayı da normal
+
+287
+00:30:35,019 --> 00:30:39,339
+ders olarak kullanmaya devam ederiz. Onuncu hafta
+
+288
+00:30:39,539 --> 00:30:43,380
+Greedy yöntemler aç gözlü olarak Türkçe'ye çevirdiğimiz
+
+289
+00:30:43,380 --> 00:30:46,700
+algoritmaları bunun nasıl bir algoritmik çözüm yöntemi
+
+290
+00:30:46,700 --> 00:30:50,579
+olduğunu örnek problemleri görüp tanıyacağız. Örnek
+
+291
+00:30:50,579 --> 00:30:54,059
+algoritmalarla Greedy yöntem Greedy yaklaşım ne demektir
+
+292
+00:30:54,059 --> 00:30:57,460
+algoritmik çözüm olarak bunu öğreneceğiz. On birinci
+
+293
+00:30:57,460 --> 00:31:01,220
+haftada da yine Greedy gibi bir başka çözüm yöntemi olan
+
+294
+00:31:01,220 --> 00:31:03,779
+Divide and Conquer algoritmalarına Divide and
+
+295
+00:31:03,779 --> 00:31:07,259
+Conquer ne demektir. Problemi nasıl bir yaklaşımla
+
+296
+00:31:07,259 --> 00:31:10,900
+çözer. Bunun algoritmaları ve örnek uygulamaları nelerdir.
+
+297
+00:31:10,900 --> 00:31:13,980
+Bunlara bakacağız. On ikinci haftada böl ve yönete
+
+298
+00:31:13,980 --> 00:31:17,180
+devam edeceğiz ve böl ve yönet ile acaba biz sıralamayı
+
+299
+00:31:17,180 --> 00:31:20,539
+nasıl yapabiliriz. Yani elimizdeki girdiği bir diziyi
+
+300
+00:31:20,539 --> 00:31:23,660
+mesela bölerek nasıl sıralayabiliriz. Bunlara
+
+301
+00:31:23,660 --> 00:31:27,180
+bakacağız. Karmaşıklıklarıyla birlikte tabii
+
+302
+00:31:27,180 --> 00:31:30,940
+yine ve farklı yaklaşımlarıyla işte yukarıdan aşağı
+
+303
+00:31:30,940 --> 00:31:34,380
+aşağıdan yukarı gibi. Son iki haftaya geldiğimizde ise
+
+304
+00:31:35,140 --> 00:31:39,019
+graflara giriş yapacağız. Graflar nedir? Graftaki
+
+305
+00:31:39,019 --> 00:31:41,220
+temel operasyonlar, graf veri yapısındaki temel
+
+306
+00:31:41,220 --> 00:31:46,059
+operasyonlar nelerdir? Ve graflar üzerinde breadth first
+
+307
+00:31:46,059 --> 00:31:49,779
+ve depth first searchler yani genişlemesine ve
+
+308
+00:31:49,779 --> 00:31:52,900
+derinlemesine öncelikli aramalar nasıl yapılır?
+
+309
+00:31:52,900 --> 00:31:55,980
+Algoritmaları nelerdir? Nasıl çözümlerdir?
+
+310
+00:31:55,980 --> 00:31:59,859
+Bunlara bakacağız. Büyük bir ihtimalle yani on
+
+311
+00:31:59,859 --> 00:32:02,980
+dördüncü hafta dedik. Minimum yayılımlı ağaç ve en
+
+312
+00:32:02,980 --> 00:32:06,619
+kısa yol. Tabii en kısa yol yine graflarla alakalı.
+
+313
+00:32:06,619 --> 00:32:11,660
+Bunu yaptıktan sonra minimum yayılımlı ağaç nedir?
+
+314
+00:32:11,660 --> 00:32:15,579
+Ve nasıl bir çözüm önerir ya da nasıl problemler de bize
+
+315
+00:32:15,579 --> 00:32:19,660
+fayda sağlar konusu inşallah yetişir. Yetişmezse de
+
+316
+00:32:19,660 --> 00:32:22,500
+artık orayı işlememiş oluruz son konu olarak.
+
+317
+00:32:22,500 --> 00:32:25,779
+Ama eğer dokuzuncu haftayı kullanmazsak hani vize
+
+318
+00:32:25,779 --> 00:32:29,460
+olarak yapmazsak zaten rahat rahat bu konuyu da yetiştirir
+
+319
+00:32:29,460 --> 00:32:31,700
+durumda olacağız. Yani şuradaki Cumhuriyet
+
+320
+00:32:31,740 --> 00:32:34,059
+Barımındaki bir haftalık kayıp belki şurada minimum
+
+321
+00:32:34,059 --> 00:32:37,099
+yayılımlı ağaçın bu ders kapsamından çıkmasına
+
+322
+00:32:37,099 --> 00:32:41,019
+sebebiyet olaverebilir ya da vermeyebilir. Belki işte
+
+323
+00:32:41,019 --> 00:32:44,019
+yine uygulama saatlerini kullanarak bu aradaki farkı
+
+324
+00:32:44,019 --> 00:32:47,220
+telafi etmeyi de düşünebiliriz. Değişebilirden
+
+325
+00:32:47,220 --> 00:32:49,619
+kastımı anlamışsınızdır. Yani bu konular bu dersin
+
+326
+00:32:49,619 --> 00:32:53,420
+kapsamında anlatılacak. Siz de bunları özümseyeceksiniz.
+
+327
+00:32:53,420 --> 00:32:57,579
+Fakat bazen haftaların sırası ya da işte bazen bir
+
+328
+00:32:57,579 --> 00:32:59,859
+hafta yani bir buçuk hafta sürmesi ya da bazen
+
+329
+00:32:59,859 --> 00:33:02,299
+yetiştiremediğimiz durumlarda uygulama günlerine
+
+330
+00:33:02,299 --> 00:33:06,099
+kayması gibi bazı çözümler oluşabilir. Bu nedenle
+
+331
+00:33:06,099 --> 00:33:11,500
+değişebilir ifadesini kullanıyoruz. Evet. Dersimizin
+
+332
+00:33:11,500 --> 00:33:15,460
+tanımı bu şekilde genel olarak sormak istediğiniz
+
+333
+00:33:15,460 --> 00:33:31,170
+soru var mı bana dersle alakalı sanıyorum. Yok o
+
+334
+00:33:31,170 --> 00:33:39,490
+zaman dersimizin tanıtımını beklentilerini ve planını
+
+335
+00:33:39,529 --> 00:33:43,289
+kaynaklarını değerlendirme kriterlerini sizlerle
+
+336
+00:33:43,289 --> 00:33:48,609
+paylaştım. Slideler paylaşılacak mı? Ne yapacaksınız
+
+337
+00:33:48,609 --> 00:33:51,009
+Slidelere işte videodan seyrediyorsunuz. Ne güzel
+
+338
+00:33:51,009 --> 00:33:56,970
+şakır şakır şey yapıyor. Seyredin oradan bakın. Kaç ödev
+
+339
+00:33:56,970 --> 00:34:00,730
+vermeyi planlıyorsunuz? Şu anda ödev sayısı
+
+340
+00:34:00,730 --> 00:34:05,569
+konusunda net bir fikrim yok. Bunu söyledim ama yani
+
+341
+00:34:05,569 --> 00:34:09,170
+büyüktür beş diyeyim. Hani büyük eşit beş diyebilirim
+
+342
+00:34:09,170 --> 00:34:13,920
+rahatlıkla. Bunda ne demek oluyor? İşte şu anda hani
+
+343
+00:34:13,920 --> 00:34:20,000
+bu haftayı saymayın. Ondan sonra bir işte vize haftası
+
+344
+00:34:20,000 --> 00:34:22,000
+ve cumhuriyet haftasında çıktığınızda ne oluyor?
+
+345
+00:34:22,000 --> 00:34:25,719
+On bir hafta var ya. On bir haftanın bir kere yarısında
+
+346
+00:34:25,719 --> 00:34:33,849
+en az ödev verilecek demektir bu. Önceden haber
+
+347
+00:34:33,849 --> 00:34:36,489
+vermek kaydıyla bazı dersler katılamama bahsettiğiniz
+
+348
+00:34:36,489 --> 00:34:38,929
+ani kuyuzları kaçırırsanız çok sorun olur mu?
+
+349
+00:34:38,929 --> 00:34:42,369
+İşte sorun şu olur. O konuda bir şey yapamam. Size
+
+350
+00:34:42,369 --> 00:34:45,329
+sonra bir daha kuyuz yapamam. O yani çünkü kuyuz anlık
+
+351
+00:34:45,329 --> 00:34:49,090
+bir şey. O gün o konuyla alakalı kuyuz olacak çünkü.
+
+352
+00:34:49,090 --> 00:34:54,369
+Mesela işte ne dedik? Ağaç veri yapısını tanıtınca işte
+
+353
+00:34:54,369 --> 00:34:56,489
+mesela ikili arama ağaçları ve ikili ağaçlarla alakalı
+
+354
+00:34:56,489 --> 00:34:59,210
+bir kuyuz olabilir mesela. Ya da heap sortla alakalı bir
+
+355
+00:34:59,210 --> 00:35:01,929
+kuyuz yapılabilir. Bunun gibi. Şimdi o kuyuzu
+
+356
+00:35:01,929 --> 00:35:04,210
+kaçırırsanız ne olur? İşte toplamda bir beş kuyuz
+
+357
+00:35:04,210 --> 00:35:10,369
+yapsak yirmi puanınız düşük olur. Bu kadar. Üç kitabın
+
+358
+00:35:10,369 --> 00:35:13,130
+üçünden de destek alabilirsiniz. Çünkü üçünden de
+
+359
+00:35:13,130 --> 00:35:17,050
+karışık olarak yararlanıyorum. Yani birini çok
+
+360
+00:35:17,050 --> 00:35:19,050
+kullanıyorum. Diğerlerini az kullanıyorum diye bir şey
+
+361
+00:35:19,050 --> 00:35:22,889
+yok. Üçünden de kullanıyorum ki zaten ilerleyen haftalarda
+
+362
+00:35:22,889 --> 00:35:26,090
+slide'larda da kitapları incelerseniz hani belli
+
+363
+00:35:26,090 --> 00:35:28,769
+yerleri kitaplardan aldığımı da çok rahat göreceksiniz.
+
+364
+00:35:28,769 --> 00:35:44,619
+Peki başka soru da olmadığına göre bu günlük
+
+365
+00:35:44,619 --> 00:35:47,340
+uygulama saatimizi bu şekilde tamamlayalım.
+
+366
+00:35:47,340 --> 00:35:50,860
+Girişimizi en azından tanışmamızı yerine getirmiş
+
+367
+00:35:50,900 --> 00:35:55,380
+olalım. Şöyle hızlıca burada tabii şey yapamıyoruz galiba.
+
+368
+00:35:55,380 --> 00:36:00,500
+Oylama ya da polling falan var mı burada? Sanıyorum yok.
+
+369
+00:36:00,500 --> 00:36:06,539
+Şöyle bir bakıyorum. Break out falan var da. Bu dersi
+
+370
+00:36:06,539 --> 00:36:14,440
+ilk defa alan var mı aranızda? Yani tabii büyük bir
+
+371
+00:36:14,440 --> 00:36:17,639
+ihtimalle şeyler ııı yüksek lisans katılımcılarıdır
+
+372
+00:36:17,639 --> 00:36:23,199
+diye düşünüyorum. Bir iki üç dört beş altı yedi sekiz
+
+373
+00:36:23,239 --> 00:36:26,920
+dokuz on on bir on iki diye gidiyor. Eee şunun için
+
+374
+00:36:26,920 --> 00:36:28,960
+soruyorum. Daha doğrusu soruyu şöyle güncelleyim.
+
+375
+00:36:28,960 --> 00:36:33,360
+Eee lisans öğrencisi olup da bu dersi ilk defa alan var mı?
+
+376
+00:36:33,360 --> 00:36:40,639
+Evet bu daha doğru bir soru oldu. Var. Siz nasıl ilk
+
+377
+00:36:40,639 --> 00:36:44,800
+defa aldınız bu derse? Çünkü bu alttan alanlar
+
+378
+00:36:44,800 --> 00:37:00,320
+için açılmış bir derste. Üçüncü sınıfa yeni geçtin.
+
+379
+00:37:00,320 --> 00:37:08,579
+Nasıl yani? Anlamadım. Ha irregularsınız. Alanlar
+
+380
+00:37:08,579 --> 00:37:11,539
+irregular ve alttan alıyor. Alttan alıp ilk defa nasıl
+
+381
+00:37:11,539 --> 00:37:14,940
+alıyorsun? Onu anlamadım işte ben. Alttan almak demek
+
+382
+00:37:14,940 --> 00:37:17,820
+zaten alıp bir daha almak demek değil mi? Aldım
+
+383
+00:37:17,820 --> 00:37:26,929
+başarısız oldum bir daha alıyorum. Tamam. Peki. Eee
+
+384
+00:37:26,929 --> 00:37:31,050
+okey. Bu durumda Lik'e geçiş olduğunuz için demek
+
+385
+00:37:31,050 --> 00:37:36,570
+ki almış durumdasınız. Normalde üçüncü alıyorum.
+
+386
+00:37:36,570 --> 00:37:41,329
+Çok güzelmiş. Eee olur ya. Boş verin. Ben de zamanda
+
+387
+00:37:41,329 --> 00:37:44,730
+veri yapıları dersini galiba üç kere almıştım. Ondan sonra
+
+388
+00:37:44,730 --> 00:37:50,170
+da bakın ne oldu? Artık dersi veriyorum. Eee Erasmus'a
+
+389
+00:37:50,170 --> 00:37:54,610
+gidenler var. Peki çok güzel. Darısı hepinizin başına
+
+390
+00:37:54,610 --> 00:38:00,300
+tabii ki inşallah dönemindeyken alamayanlar
+
+391
+00:38:00,300 --> 00:38:03,099
+alttan ilk defa almış. Neyse. Tamam. Peki artık bu
+
+392
+00:38:03,099 --> 00:38:06,179
+konuda ııı bir şey yapamayacağım ama şey gerçekten
+
+393
+00:38:06,179 --> 00:38:09,980
+yüz ııı civarı yani yüzü de geçebilir bir durumdayız.
+
+394
+00:38:09,980 --> 00:38:13,219
+Eee bakalım neler yaşayacağız ben de merakla
+
+395
+00:38:13,219 --> 00:38:16,219
+bekliyorum dönemin gelişmesini. Sizlerden bir
+
+396
+00:38:16,219 --> 00:38:21,099
+ricam daha olacak. Eee bunu dersi kaydını dinleyenler de
+
+397
+00:38:21,099 --> 00:38:26,139
+fark etsin diye sonunda söylüyorum. Eee şu Zuma
+
+398
+00:38:26,139 --> 00:38:30,460
+katılırken ııı rica etsem tam isminiz numaranız ve hatta
+
+399
+00:38:30,460 --> 00:38:33,380
+bir arkadaşınız yapmış ııı isminiz soyadınız. Sonuna da
+
+400
+00:38:33,380 --> 00:38:37,340
+numaranızı yazarak katılırsanız ııı benim için
+
+401
+00:38:37,340 --> 00:38:40,659
+çok daha iyi olur. Çünkü hani Azompo bana hiçbir şey
+
+402
+00:38:40,659 --> 00:38:44,780
+ifade etmiyor. Kim olduğunuzu takip edemiyorum. Eee ya da
+
+403
+00:38:44,780 --> 00:38:47,739
+işte E-Studios, Lavida falan hani güzel isimler, havalı
+
+404
+00:38:47,739 --> 00:38:52,019
+isimler ama ııı tanıyamıyorum sizleri. Iıı mümkünse isim,
+
+405
+00:38:52,019 --> 00:38:57,420
+soy isim ve numara şeklinde burada gözükürseniz ııı daha
+
+406
+00:38:57,420 --> 00:38:59,619
+iyi olur. Hani hadi numarayı yazmadınız diyorum ama
+
+407
+00:38:59,619 --> 00:39:02,619
+isim ve soyat mutlaka olsun. Numarayı da yazarsanız
+
+408
+00:39:02,619 --> 00:39:06,860
+çok iyi olur. Eee bunu da son bir not olarak sizlere
+
+409
+00:39:06,860 --> 00:39:10,179
+iletmiş olayım. Bundan sonraki dersler için. Peki o
+
+410
+00:39:10,179 --> 00:39:14,420
+zaman ııı bugünlük bu kadar ııı uygulama saatini
+
+411
+00:39:14,420 --> 00:39:19,300
+bitiriyoruz. Iıı ve yarın teorik dersimize giriş dersimize
+
+412
+00:39:19,300 --> 00:39:22,619
+algoritmik problem nedir ve nasıl çözülürle yola
+
+413
+00:39:22,619 --> 00:39:29,420
+devam etmeye hazırlanıyoruz. Yarın görüşmek üzere hoşçakalın.
+

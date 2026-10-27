@@ -1,0 +1,4776 @@
+1
+00:00:20,780 --> 00:00:22,780
+Evet Merhaba Arkadaşlar
+
+2
+00:00:22,780 --> 00:00:28,399
+Biraz Bekleyim
+
+3
+00:00:28,399 --> 00:00:34,399
+Bugün Sizlerle Ders Yapmaya Karar Verdim
+
+4
+00:00:34,399 --> 00:00:41,399
+Çünkü Arada Özellikle Sort Konusunda Bazı Şeylere Henüz Konuşmadık Aktarmadım Size
+
+5
+00:00:41,399 --> 00:00:44,399
+Onunla Alakalı Bir Ders Yapalım İstedim
+
+6
+00:00:44,399 --> 00:00:46,399
+O Yüzden Biraz Takviye Gibi Olacak Bu Ders
+
+7
+00:00:46,399 --> 00:00:57,140
+Katılım İçinde Bekleyim
+
+8
+00:00:57,140 --> 00:01:04,099
+Son Quiz'i Okudum
+
+9
+00:01:04,099 --> 00:01:09,099
+Google Forms'dan Yapınca Okuması Çok Rahat Ve Hızlı Oluyor Gerçekten
+
+10
+00:01:09,099 --> 00:01:16,099
+Tabi Genel Yapılan Hatalara Bakabiliriz Ya da Üzerinden Geçebiliriz
+
+11
+00:01:16,099 --> 00:01:19,099
+Şimdi İlk İki Soru
+
+12
+00:01:19,099 --> 00:01:22,099
+Brute Force Yöntemle Arama ile Alakalıydı
+
+13
+00:01:22,099 --> 00:01:28,099
+Burada Bir Arayıp Bulup Ondan Sonra Çıkada Bilirsiniz
+
+14
+00:01:28,099 --> 00:01:29,099
+Onu Da Doğru Kabul ettim
+
+15
+00:01:29,099 --> 00:01:32,099
+İki Sonuna Kadar Aramaya Devam Edip Çıkabilirsiniz
+
+16
+00:01:32,099 --> 00:01:34,099
+Onu Da Doğru Kabul ettim
+
+17
+00:01:34,099 --> 00:01:40,099
+Ama Toplam Yapılan Karakter Karşılaştırma Sayılarında Sanırım Bazı Şeyleri Atladınız
+
+18
+00:01:40,099 --> 00:01:42,099
+Hani Eşleşmeyenleri Saymayı Unutmuş Olabilirsiniz
+
+19
+00:01:42,099 --> 00:01:45,099
+Orada Bazı Hatalar Vardı
+
+20
+00:01:45,099 --> 00:01:47,099
+Sonraki İki Soru
+
+21
+00:01:47,099 --> 00:01:52,099
+Robin Carp Zaten Aslında Implementasyonu Vermiştim
+
+22
+00:01:52,099 --> 00:01:54,099
+Paylaşmıştım Sizlerle
+
+23
+00:01:54,099 --> 00:01:58,099
+Niye Yanıyor Ya Bir Dakika
+
+24
+00:01:58,099 --> 00:02:00,099
+Anlamadım
+
+25
+00:02:00,099 --> 00:02:02,099
+Zoomda Bir Gariplik Var Ama Neyse
+
+26
+00:02:02,099 --> 00:02:07,739
+Bir Şeyler Yanlış mı Öyle
+
+27
+00:02:07,739 --> 00:02:09,740
+Neyse Tamam
+
+28
+00:02:09,740 --> 00:02:11,740
+Robin Carp Zaten Hani
+
+29
+00:02:11,740 --> 00:02:14,740
+Hash İçin Bir Asal Sayı Kullanmanız Gerekiyordu
+
+30
+00:02:14,740 --> 00:02:17,740
+97 Ve 101 Asal Sayılarını Sordum
+
+31
+00:02:17,740 --> 00:02:21,740
+Burada Da Toplamda 7 Karşılaştırma Yapmanız Gerekiyor
+
+32
+00:02:21,740 --> 00:02:23,740
+7 Tane Hash Karşılaştırması
+
+33
+00:02:23,740 --> 00:02:29,740
+Hadi Bazılarınız Son Eşleşeni Söylememelere Koymadınız
+
+34
+00:02:29,740 --> 00:02:32,740
+Ama Burada Çok İlginç Hatalar Vardı
+
+35
+00:02:32,740 --> 00:02:37,740
+3 Karşılaştırma 5 Karşılaştırma Bazıları 15 Karşılaştırma Falan Yapmış
+
+36
+00:02:37,740 --> 00:02:39,740
+Nasıl Olacak O
+
+37
+00:02:39,740 --> 00:02:41,740
+Birer Birer Kaydırarak Karşılaştırıyoruz
+
+38
+00:02:41,740 --> 00:02:45,740
+Zaten Toplamda 7'de Buluyor Olmanız Lazım
+
+39
+00:02:45,740 --> 00:02:50,740
+Artı 97 Asal Sayısının Modunu Alarak
+
+40
+00:02:50,740 --> 00:02:52,740
+Mod 97 ile İşlem Yapıyoruz
+
+41
+00:02:52,740 --> 00:02:55,740
+97 Yada Mod 101 ile İşlem Yapıyoruz
+
+42
+00:02:55,740 --> 00:02:57,740
+Bu Sayılardan Çok Daha Büyük
+
+43
+00:02:57,740 --> 00:02:59,740
+Hash Değerleri Üretmişsiniz
+
+44
+00:02:59,740 --> 00:03:01,740
+Nasıl Oldu Ben Anlamadım
+
+45
+00:03:01,740 --> 00:03:04,740
+Orada Herhalde Kodlarda Bir Hata Yaptınız
+
+46
+00:03:04,740 --> 00:03:07,740
+Bunları Gözden Geçirirseniz Faydalı Olur
+
+47
+00:03:07,740 --> 00:03:11,740
+Sonraki Soruda Da Horspool Ve Boyar Mur Vardı
+
+48
+00:03:11,740 --> 00:03:16,740
+Bunlarıda Yine Algoritmayı Uyarlayarak Yaparsanız
+
+49
+00:03:16,740 --> 00:03:19,740
+Kayma Miktarlarını Rahatlıkla Bulabilirsiniz
+
+50
+00:03:19,740 --> 00:03:21,740
+Burada Çok Fazla Şey Yoktu
+
+51
+00:03:21,740 --> 00:03:23,740
+Dağınıklık
+
+52
+00:03:23,740 --> 00:03:26,740
+Merge Sortla Alakalı
+
+53
+00:03:26,740 --> 00:03:30,740
+Alt Dizi Boyutlarını Merge Giren Sırasıyla İstedik
+
+54
+00:03:30,740 --> 00:03:34,740
+Bu Da Aslında Öncekilerde Olduğu Gibi
+
+55
+00:03:34,740 --> 00:03:36,740
+Boyar Murda Şey Aslında Robin Karp Sorusu Da
+
+56
+00:03:36,740 --> 00:03:40,740
+Bunların Hepsi Benim Kullandığım Kaynak Kitaplarda Da Olan Sorular
+
+57
+00:03:40,740 --> 00:03:42,740
+Merge Sort Sorusu Da Aynı Şekilde
+
+58
+00:03:42,740 --> 00:03:44,740
+İşte [öğrenci]
+
+59
+00:03:44,740 --> 00:03:49,740
+Bölüm Sonundaki Soruları Çalışırsanız Aslında Sizin İçinde Faydalı Olur
+
+60
+00:03:49,740 --> 00:03:54,740
+İşte Zaten O Kodu Da Var Aslında Mesela Şeyde
+
+61
+00:03:54,740 --> 00:03:59,740
+Kendi Sitesinde Kitabın Saifasının Sitesinde Açık Olarak Kodu Bile Var
+
+62
+00:03:59,740 --> 00:04:04,740
+Direk Olarak Oraya Yazıp Da Sonucu Elde Edebilirdiniz Açıkçası
+
+63
+00:04:04,740 --> 00:04:07,740
+Burada Önemli Olan İşte Merge'de Tek Sayı
+
+64
+00:04:07,740 --> 00:04:12,740
+Tek Sayı Olduğu İçin Bir Taraf 2 2 4 2 2 4 8 Şeklinde Toplanırken
+
+65
+00:04:12,740 --> 00:04:14,740
+Merge İşlemine Girerken
+
+66
+00:04:14,740 --> 00:04:19,740
+Öbür Taraf 2 2 4 Ama Sonrasında 2 3 Kalıyor
+
+67
+00:04:19,740 --> 00:04:24,740
+Ve Bir Tarafta 4 Bir Tarafta 3 Olduğu İçinde 7 Diye Devam Ediyor
+
+68
+00:04:24,740 --> 00:04:27,740
+Sonra Da 7 Ve 8 Birleşerek 15 Oluşturuyor
+
+69
+00:04:27,740 --> 00:04:29,740
+Bu Kadar Yapılması Beklenen Şey
+
+70
+00:04:29,740 --> 00:04:33,740
+Orta Ve Ortadan Bir Eksik Şeklinde Gitmesi Gerekiyor
+
+71
+00:04:33,740 --> 00:04:37,740
+Top Down İçinde
+
+72
+00:04:37,740 --> 00:04:38,740
+Bottom Upda Da
+
+73
+00:04:38,740 --> 00:04:44,740
+Hatırlarsanız Önce Size Eşittir Biri Yapıyorduk
+
+74
+00:04:44,740 --> 00:04:46,740
+Yani İkili Birleştirmeleri Yapıyorduk
+
+75
+00:04:46,740 --> 00:04:50,740
+O Zaman Bizim Burda 2 2 2 2 2 2 2 2 Diye Gitmemiz Lazım
+
+76
+00:04:50,740 --> 00:04:51,740
+Sonucuyu Yapamıyoruz
+
+77
+00:04:51,740 --> 00:04:59,740
+Neden Çünkü Tek Şey Kalacak Ondan Sonra 4 4 4 3 8 7 15 Şeklinde
+
+78
+00:04:59,740 --> 00:05:04,740
+Yani Artarak 2 Den 4 Den Şeklinde Artarak Gitmesi Gerekiyordu
+
+79
+00:05:04,740 --> 00:05:06,740
+Bu Şeyde De Bottom Upda Da
+
+80
+00:05:06,740 --> 00:05:13,740
+Quick Sortda Da Eğer Yazdıysanız Zaten Pivotu Zaten Ben Kodunu Da Vermiştim
+
+81
+00:05:13,740 --> 00:05:14,740
+Diye Hatırlıyorum Yine Size
+
+82
+00:05:14,740 --> 00:05:20,740
+Benim Kodda Hatırlarsanız Pivotu Şeyden Alıyorduk Sağdan Alıyorduk
+
+83
+00:05:20,740 --> 00:05:30,740
+Bu Direk Olarak İşte İkinci Soru Son Eleman Pivot Seçildiğinde Dizinin Alacağı Hale Oraya Bir Tane Print Yazacaksınız Sadece Bu Hali Alacaksınız
+
+84
+00:05:30,740 --> 00:05:44,740
+Orada Da Beklenen Sonuç Şu Aslında İşte Mesela Dizinin Son Değeri Ne Bir Demek ki Bir Öyle Bir Yere Gelecek Ki Bu İlk İterasyon Sonunda Birin Solundakiler Küçükleri Birin Sağındakilerde Büyükleri Oluşturacak
+
+85
+00:05:44,740 --> 00:05:50,740
+Burada İşte Mesela Birin Solunda Birden Büyük Rakamlar Yazanların Sorularını Doğru Kabul Etmedim
+
+86
+00:05:50,740 --> 00:05:59,740
+Ama Bir Şekilde Sırası Yanlış Olsa Da Bu Doğru Partitioning Hani Küçükler Sola Büyükler Sahi Yapmış Olanlara En Azından Bir Poan Verdim
+
+87
+00:05:59,740 --> 00:06:13,740
+Diğerlerinde De Tabi Aynı Şekilde İşte Hani Heşi Mesela 97 Den Yada 101 Den Büyük Değerler Bulanlar Poan Alamadı Ama En Azından 6-7 Karşıdaştırma Yanlış Da Olsa Bir Poan Verdim
+
+88
+00:06:13,740 --> 00:06:25,740
+İki Poanlık Sorularda Bu Şekilde Yani Kuiz De Böyleydi Şimdi Önümüzde Sadece Bir Tane Dönem Sonu Daha Büyük Ödevi Diyeceğimiz Hani Projet Adında Bir Ödev Kaldı
+
+89
+00:06:25,740 --> 00:06:37,740
+Onu Da Bu Hafta Herhalde Hazırlayabilirsem Cuma Ya Da Cumarsi Yani Hafta Sonu Sizinle Paylaşmayı Düşünüyorum
+
+90
+00:06:37,740 --> 00:07:09,050
+Notları Öğreneceksiniz Sınav Sonuçları İlgili Bir Şey Söylemedim Sadece Kuizin Şöyle Hızlıca Üzerinden Geçtim Okudum Dedim Kuiz Üçün Notlarıda Oluştu Şu Vizeleri Bitireyim Açıklayacağım Arkadaşlar İnşallah Bugün Yetiştirebilir miyim Ya Da Yarın Bakalım Bitirmeye Çalışıyorum O Kadar Çok İş Girdi Ki Araya Hep Kaldı Böyle Bir 30-30 Tane Soru Kaldı Onları Bir Türlü Bitiremedim Haklısınız Orada Biraz Mahcup Olduk
+
+91
+00:07:09,050 --> 00:07:39,050
+Size Karşı Neyse Şey Yeni Yılda Sürprizlerle Karşınıza Çıkabiliriz O Zaman Öyle Diyelim Yarın Ders Var Ama Şey Şimdi Şöyle Bugün Sizlerle Yine Bir Ders Yapacağım Dersin Başında Söyledim Yeni Katılan Arkadaşlar İçinde Şey Yapayım Sıralama Aygoritmaları İle Alakalı Bir Kaç Şey Daha Konuşmak İstiyordum Onu Söylemeden Geçmek İstemiyorum Anlatmadan Geçmek İstemiyorum O Yüzden Bugün Bu Hafta Çarşamba Ve Belki Önümüzde
+
+92
+00:07:39,050 --> 00:08:09,050
+Bu Yüzdeki Hafta Çarşamba Ders En Azından Bir Saat Ya Da İşte Biraz Daha Fazla Ders Yaparız Ki Şey Olsun Konuları Tam Olarak Atlamadan Bitirmiş Olalım İstiyorum Yarın Da Biliyorsunuz Şeylere Geçeceğiz Graflarda Gezintileri Tamamladık Minimum Spanning Tree En Küçük Yayılımlı Ağaç Konusuna Geçeceğiz Burada Da İşte Bir Cenerik Yöntem Öğreneceğiz Yani
+
+93
+00:08:09,050 --> 00:08:39,049
+Hani Hiroistik Olarak mı Diğim Hani Hissel Olarak Ne Yaparız Acaba Nasıl Gezebiliriz Ki Böyle Tanımına Göre Spanning Tree Oluşturalım Bir Cenerik Yönteme Bakacağız Ondan Sonra Da İki Farklı Yaklaşım Olan Kuruskal Ve Pirimin Algoritmalarına Bakacağız Önce Kuruskalı Bakarız Kuruskalı Yaptıktan Sonra Bırakırız Diye Düşünüyorum Pirimi De Sonraki Yani Son Dersimize Kalır Pirim Ve
+
+94
+00:08:39,049 --> 00:09:09,049
+Sortus Pet Dykstra Algoritması İle Da Dönemi Tamamlarız Dediğim gibi Bugünkü Dersi De Olduğu Yere Kadar Gidip Kalanını Belki Yetişmezse Önümüzdeki Haftaki Uygulama Saatini Kullanarak Tamamlarız Bu Şekilde Dönemi De Teorik Kısmanı Bitirmiş Oluruz Şimdi O Zaman Sort Konusunda Aslında Tam Olarak Bir Space And Time Trade Off Dediğimiz Üzerinden Geçmiştik Hatırlarsanız
+
+95
+00:09:09,049 --> 00:09:36,049
+Bazı Problemlerde Sizin İçin Zaman Çok Daha Önemli Olabilir Bazılarında Da Mekan Yani Bellek Alanı Gibi Harici Bellek Kullanıma Gibi Şeyler Daha Önemli Olabilir O Zaman Burda Birinden Ödün Vermemiz Gerekebiliyor İşte [öğrenci]
+
+96
+00:09:36,049 --> 00:09:37,049
+Bir Milyar Mesela Ne Bir On Terabayt Veriyi [öğrenci]'ta Sıralarken On Terabaytlık Bir Şeye İhtiyaç Duyacaksınız Ciddi Bir Sıkıntı Olabilir Orada Da Belki Zamandan Feragat Ederek Başka Yöntemler Yani Dışarıdaki Ekstra Bellek Alanı Kullanımını Minimize Eden Yöntemleri Seçmek Zorunda Kalabilirsiniz Şimdi Counting Sort Çok Basit Ve Aslında Eski Bir Yöntem Ne Yapacağız Buradaki Mantık Saymak Neyi
+
+97
+00:10:06,049 --> 00:10:36,049
+Yapacağımızı Göreceğiz Aslında Şunu Sayacağız Hatta İlerleyim Ben Elimde Sıralamak İstediğim Bir Dizi Var Ve Diyelim Ki Sayılardan Oysun Harflerden De Oluşabilir Sıkıntı Değil Ben Buradaki Elemanları Sayıyorum Neyini Sayıyorum Kaç Kişi Benden Daha Küçük Kaç Kişi Benden Daha Büyük Yani Mesela Benden Küçük 10 Tane Eleman Var Diyelim Burda Da Zaten Slide'da Yazdım Benden Küçük 10 Slide Varsa Ben Nerede Durmalıyım
+
+98
+00:10:36,049 --> 00:11:06,049
+Değil mi Bunu Garanti Edebilirsiniz İşte Bu Şekilde Sıralanacak Elinize Girdi Olarak Verilen Dizideki Bütün Elemanlar İçin İşlenen Elemandan Daha Küçük Olan Toplama Eleman Sayısını Sayarak Bir Yere Not Ederseniz Sonuçların Bir Tabloya Mesela Kaydederseniz Bu Tablodaki Sayılar Sonuçta Onun Başlangıçta Verilen Girdinin Hangi İndisi Sıralandığında Hangi
+
+99
+00:11:06,049 --> 00:11:36,049
+Konumda Durması Gerekir Bunu Bize Gösterebilir Burada Tabi Bir Şeye Dikkat Etmemiz Lazım Saydığımızı Bir Daha Saymamalıyız O Zaman Demek ki Döngüyü Kurarken Böyle Birini Sıfırdan Ene Gibi Yaparken Öbürünü İ'den Ya da İyi Artı Birden Şeklinde Kurmamız Gerekiyor Ki Saydıklarımızı Tekrar Tekrar Saymayalım Fazla Eleman Bulmayalım Eğer Sonrasında İstersek Mesela Aldığımız Giriş Dizisini Yeni Bir Diziye
+
+100
+00:11:36,049 --> 00:12:06,049
+Kullanmak Zorunda Değilsiniz Sadece Şuradaki Eee Oluşturduğunuz Tablo Yani Sayma Tablosu Yeterli Olacaktır O Dizi Üzerinde Erişim Sağlamak İçin Bili Ama İsterseniz Sıralı Bir Diziyi Mutlaka Oluşturacağım Yeni Bir Diziye Giriş Dizisini Buradaki İndis Adreslerine Göre Kopyalayarak Sıralı Bir Çıktıda Elde Edebilirsiniz Şimdi Algorithmasına Bakalım Basit Bir Yöntem Tabii Ki Şurada Sıfırdan Ene İyi Artı Birden Ene Ve Bir
+
+101
+00:12:06,049 --> 00:12:36,049
+Tane De İf Görüyorsunuz Sonra Da Yine Bir Şey Var Yani Burda Yine Kuadratik Dibi Bir Karmışa Söz Konusu Tabii Ki Ama Bunu Hani Bu Zamanı Kuadratik Zamanı Göreceksiniz Mesela Lineere Yakın Hale Getirebiliyoruz Belirli Problemlerde Kullandığımızda Ne Yapacağız Önce Bütün Sayaçları Sıfırlıyoruz Gördüğümüz Gibi Ondan Sonra Sondan Bir Eleman Eksiğine Kadar İyi Artı Birden
+
+102
+00:12:36,049 --> 00:13:06,049
+En Eksi Bir'e Kadar Şeklinde İ ve C İki Döngü Kuruyorum Yani Fark Bu Hepsini Gezecekken Bu Hep İyi Artı Birden Yani Kalan Elemanlara Bakacak Şekilde Bir Kurgu Sonrasında Eğer Karşılaştırdığım Eleman Küçükse Büyük Olanın Counter'ını Arttırırım Değilse Kendi Counter'ımı Arttırırım Şeklinde Bir Sayma Yapıyoruz Bu Son Satır Dediğim Gibi Opsiyonel Siz Count İ Dizisindeki Count Dizisindeki
+
+103
+00:13:06,049 --> 00:13:36,049
+Pardon İnci İndisi Kullanarak Aslında Bu Girdi Dizisinin Yani A Dizisinin Hangi Gözünü Kullanmanız Gerektiğine de Erişebilirsiniz Ama Biz Burada Bir Tane Sonuç Dizisi S Şeklinde Oluşturduk Yani S'in İlgili Gözüne O Orjinal Dizi Neyse Onu Ata Dedik Ve Bunu Geriye Döndürdük Şimdi Örnek Üzerinden Yaparsak Aslında Daha Güzel Anlayacaksınız Yani Algoritme Şuradaki Algoritmeyi Bire Bir İşletiyoruz
+
+104
+00:13:36,049 --> 00:14:06,049
+Dizimiz Ne Sıfır Bir İki Üç Dört Beş Altı Elemanlı Bir Dizi Var 62 31 84 96 19 Ve 47 Den Oluşuyor Şimdi İlk Önce Ne Yaptık Bütün Sayaçlarımızı Sıfırladık Sonra İyi Eşittir Sıfır Yani Şuradaki Birinci Şeydeyiz Bu Kaça Kadar Gidecek Sıfırdan Beş Ne Oldu Dörde Kadar Gidecek Tabiki Değil mi En Altı En Eksi İki Şey
+
+105
+00:14:06,049 --> 00:14:36,049
+Dört Tamam Sıfırdan Dörde Gidecek Yani İyi Döngüsü Sıfır Bir İki Üç Ve Dört Şu Elemanları Karşılaştıracak Niye Buraya Kadar Gidiyoruz Çünkü Son Bunu Sadece Bununla Karşılaştırabilirim Şimdi Buradayım 62 Alıyorum Aslında Yaptığım Şey 62 Den Küçük Kaç Tane Değer Var Bunu Saymak Sonrasında
+
+106
+00:14:36,049 --> 00:15:06,049
+3'te 3 Sonra 84'den Pardon Büyük Yok Küçük Pardon Özür Diyelim Küçük Kaç Değer Var 31 19 47 İşte Bunu Saydınız Kalanlar İçinde Şeklinde Yürüyerek Gittiğimiz İçin Buradaki İyi Bir Olduğunda Artık Buna Bakmıyoruz İyi İki Olduğunda Artık Şuradan Başlıyoruz Böyle Böyle Azaltarak İlerliyoruz Nihayetinde Benden Küçük Şu Kadar Benden Küçük Şu Kadar Eleman Var Şeklinde Sayaçları
+
+107
+00:15:06,049 --> 00:15:36,049
+Güncelleyerek Devam Ettiğimizde Döngüleri Teker Teker İşletmeye Şuanda Gerek Yok Mesela 19'a Bakın Hep Sıfırda Kalmış Neden Çünkü 19'dan Küçük Hiçbir Sayı Sayamamışız Yani Sağ Tarafında Kalan Hiçbir Kendisinden Küçük Sayı Yok 47'e Baktığınızda 47'e En Başta Kendisinden Buraya Gelene Kadar 47'i Hiç İşlememiştik Sıfır Sıfır Burada Ancak Bir Tanesi 31 Şeydi
+
+108
+00:15:36,049 --> 00:16:06,049
+Kendisinden Küçük Bir Bir Bir Diye Üç Üterasyon Boyunca Devam Etti Burda Burda Burda Ama Şuraya Geldiğimizde Artık Bakın Son Şeyde İyi İştir 4'te Bu Da 2'ye Çıktı Bu Şekilde Doğal Olarak Kendinden Küçüklerin Sayısı Böyle Artarak İlerledi Bunları Son Haline Baktığımızda 3 1 4 5 0 2 Şeklinde Oluştuğunu Görüyorsunuz Aynı Linkli Liste Mantıyla Aslında Bu Bir Link
+
+109
+00:16:06,049 --> 00:16:36,049
+Sıralı Dizisi Bu Bize Yeterlidir Ne Demek İstiyorum Yani Ben Aslında Sıralı Dizinin Sıfırıncı Elemanı Nedir Bu 19'dur Sıralı Dizinin Birinci Elemanı 31'dir İsterseniz Bunları Alıp Koyabilirsiniz Aynı Şuradaki Count İyi Alıp Buraya Koymak Gibi Yani Aslında Şu 62'ye Aldım 62'nin Gözü Kaçmış 3 Git Bunu Sıfır Bir İki Üçüncü Göze Yaz
+
+110
+00:16:36,049 --> 00:17:06,049
+İstiyor İster Yaz İster Kullan Fark Etmez 31'in Gözü 1 Miş Sıfır Birinci Göze Yaz 84'ün Şeyi 4 Müş Kendisinden Küçük Demek ki 4 tane Sayı Varmış O Zaman Bunu Git 4'üncü Gözü Yaz 96'dan Küçük 5 tane Sayı Varmış İndisi 5 Bunu Git 5'inci Gözü Yaz 19'u Sıfırıncı Gözü 47'i 2'cü Gözü Yaz Sıfır Bir 2'cü Gözü Yaz Ne Oldu Ben Sadece Kendimden Küçük Kaç Kişi Var Acaba Kalanlar Arasında diye Saya Saya
+
+111
+00:17:06,049 --> 00:17:36,049
+Benim Nihai Dizide Sıralanmış Dizide Hangi İndiste Durmam Gerektiğini Buldum Tabii Buradaki Dikkat Ederseniz Sayıların Hepsi Birbirinden Farklı Böyle Bir Yöntemde Yine Hani Karşılaştırma Sayısı İşte Enkara Bölü İki Mı Oluyor O Civarda Bir Karşılaştırmaya Tam Hesabını Siz Yaparsınız Bu Civarda Bir Karmaşıklık Söz Konusu Ama Acaba Benim Dizimde
+
+112
+00:17:36,049 --> 00:17:48,589
+Sıralamak İstediğim Dizide Çok Fazla Sayıda Tekrar Varsa Yani Aynı Elemanlar Aynı Sayısal Değerler Pek Çok Kere Tekrar Ediyorsa İşte O Zaman Mesela Burada Ben
+
+113
+00:17:48,849 --> 00:17:57,029
+Counting Sortu Kullanarak Daha Hızlı Bir Şekilde Sıralama İşlemlerini Gerçekleştirebilirim Nasıl Mesela
+
+114
+00:17:57,250 --> 00:18:08,890
+Onu da Göreceğiz Aslında Distribution Counting Diyoruz Buna Her Birinin Frekanslarını Biliyor Olabiliriz Ya Da Hesaplayabiliriz Eğer Biliyorsak Daha Da Güzel Zaten
+
+115
+00:18:09,150 --> 00:18:25,910
+Bunlar İçin Önce Bir F Dizisi Bir Frekans Dizisi Oluşturmamız Gerekiyor Ve Bu Dizilerin Sonuçta Değerlerine Bakacağız Tekrarlı Değerler Olduğunu Biliyoruz Çok Fazla Sayıda Tekrarlar Yani Frekansları Yüksek Tekil Değerler Olduğunu Biliyoruz
+
+116
+00:18:26,069 --> 00:18:41,029
+O Zaman Ben Bu Frekansları Bulduktan Sonra Değerleri En Küçük Leğe Değerine Eşit Yani Leğe En Küçük Değer Olsun Bu Değere Eşit Olan Elemanları Aslında Direk Olarak Sıfırdan F 0 Eksi Bire Kadar Olan Yarı Yani Frekans
+
+117
+00:18:41,190 --> 00:18:57,150
+F Frekansı Kaç Olsun Diyelim 17 17 Tanesine Tak Tak Tak Tak Yazabilirim Ondan Sonra Ki Değeri Bir Büyük Olanları İşte 18. Pozisyon İle Atıyorum 46. Pozisyon Arasında Direk Yazabilirim
+
+118
+00:18:57,150 --> 00:18:57,309
+Böylece Çok Sayıda Tekrar Heden Dizileri Daha Hızlı Bir Şekilde Kopyalayabilirim Bunda Aslında Birikmiş Frekansların Toplamı Hani Artarak Giden Frekans Toplamıyla Rahatlıkla Bir Sonraki Değerin Yeri Nerede Olmalıdır Bulmam Kolaylaştırılmış Şekilde Karşıma Çıkar Şimdi Bakalım Yani Counting Sort Yapacağız Yine Ama Tek Farkı Ben Burada Frekanslar Üzerinden Gideceğim Distribution Üzerinden Gideceğim İlk Önce Ne Yaptık Ben
+
+119
+00:19:27,150 --> 00:19:58,200
+Üstünden Küçük Kaç Kişi Var Diye Saydık Şimdi İlk Önce Ben Tabi Hepsini Sıfırladım Sonrasında Her Bir Tekil Değerden Kaç Tane Var Diye Sayma İşlemi Gerçekleştiriyorum Tam Bir Frekans İşte Mesela Şu Sayıdan Beş Tekrar Şu Sayıdan On Tekrar Şeklinde Sayıyorum Nasıl Sayacağım Bunları İşte D dediğim Distributionları Tutan Dizinin AI Eksi Bir Dakika
+
+120
+00:19:58,839 --> 00:19:59,559
+Le Tamam Şuradaki Le Ve U Arasında Olduğu İçin Gözüm Şey Yaptı Sizin De Gözünüzü Görüyor Mu Fond Le Yapışmış Ya Buraya Okuyamadım Bir An AI Eksi Le Gözüne AI Eksi Le Gözünün Değerini Bir Arttır Şeklinde İlerleyeceğiz Yani Bildiğiniz Sayıyoruz Birer Birer Sayarak İlgili Gözlerin Değerlerini Arttırırız Sonrasında Da Bunun Artımlı Halini Elde Edeceğiz Baktığımda Ben O En
+
+121
+00:20:28,839 --> 00:20:37,880
+Artır Re Re De Bizim Reincimiz Oluyor Tabi ki Bu Karmışa Da Bir Sıralama İşlemi Gerçekleştirebileceğim Şurada Yaptığım Tek Şey Sadece Gördüğünüz
+
+122
+00:20:37,880 --> 00:20:49,880
+Gibi Enlik Bir Dizi Döngü Enlik Bir Döngü De Sadece Sonuç Dizisine Kopyalama Yapmak Şu Kadar Sayıyı Kopyalı Şu Kadar Sayıyı Oraya Kopyalı Şeklinde İlerlemek
+
+123
+00:20:49,880 --> 00:20:49,920
+Buradaki Bütün İş Tabi ki Şuradaki Frekansların Distribüsyonların Bulunmasında Yatıyor Şimdi Yine Örnek Üzerinden Gidersek Daha İyi Anlayacaksınız Elimde Şöyle Bir Sayı Dizisi Olsun 13 11 Ve 12 Tekil Değerlerinden Oluşuyor Yani 6 Tane Eleman Var Ama Sadece 3 Tane Tekil Değer Var Basit Olması İçin Böyle Ufak Bir Dizi Üzerinden Gidiyoruz Normalde Bunların Çok Daha Fazla Tekrar Ettiğini Düşünebilirsiniz Yani İşte Böyle Yüzlerce
+
+124
+00:21:19,880 --> 00:21:49,880
+12 Var Yüzlerce 11 Var Gibi Düşünebilirsiniz Daha Daha Efektif Hale Gelecektir Tabi ki Şimdi Nedir Benim Tekil Dizilerim 11 12 13 11 Kaç Kere Geçiyor Frekanslarını Saydım 1 Değil mi Yani Şu 13 Ü 1 Arttırdım 11 Ü 1 Arttırdım 12 Ü 1 Arttırdım 13 Ü 1 Arttırdım 2 Oldu 12 Ü 1 Arttırdım 2 Oldu 12 Ü 1 Arttırdım 3 Oldu Yani Ben Bunları Saydım Sadece Counting Yaptım Ve 11'den Bir
+
+125
+00:21:49,880 --> 00:22:19,880
+Tane 12'den 3 Tane 13'den 2 Tane Geçtiğini Buldum Şimdi Bunları Artımlı Hale Getiriyorum Nasıl Getireceğim 1 1 3 Daha 4 4 2 Daha 6 Bu Ne Demektir Aslında Şurada Dizinin Gidişatını İnceleyebilir Görebilirsiniz Ben Burada Aslında Şunu Ortaya Koymuş Oluyorum Birinci Değer Çıktı Daki Birinci Değer 11 Olacak
+
+126
+00:22:19,880 --> 00:22:49,880
+Sonrasında Dörde Kadar 12 Değerini İçereceğim Yani İkinci Üçüncü Ve Dördüncü Gözlerine 12 Değerini Yazacağım Ve Kalanlarıda Nedir Altıya Kadar Beş İle Altı Tabi ki Burada Beşinci Ve Altıncı Gözlerine De 13 Değerini Ekleyeceğim Sonuç Aslında Her Adımda Sonucu Neresini Yazıyoruz diye Bakacak Olursak Mesela A5 Değerine
+
+127
+00:22:49,880 --> 00:23:19,880
+Sıfır Bir İki Üç Dört Beş On İki On İkide Neyi Yazacağım On İkin Distribution Değeri Ne Dört Dördü Yazacağım Gidip Dördüncü Göze On İki Gibi Düşünebilirsiniz Tabi Her Birinin Şeyleri D Dizilerinin Değerlerine Göre Burada Aldığı Değerleri Görüyorsunuz Her Bir Dizinin Gözü İçin Aslında Gidip Sen Şuraya Gel Sen Şuraya Sen Şuraya Sen Şuraya Gel Şeklinde Bir Atama Yapıyoruz Toplu Olarak
+
+128
+00:23:19,880 --> 00:23:49,880
+Aldığımızı Düşünebilirsiniz Bu Şekilde Özellikle Elimizde Çok Sayıda Tekrar Eden Şey Varsa Değerlerden Oluşan Girdiler Varsa Sıralamamız Gereken Mesela Burada Hani Quick Sort Yapmak Yerine Ya Da Mört Sort Yapmak Yerine Sürekli Olarak Hani Aynı Değerleri Birbiriyle Eşitmi Diye Tekrar Tekrar Kontrol etmek Yerine Bunların Tabi Bunu Bili Olmanız Lazım Bunların Frekanslarını Bulup
+
+129
+00:23:49,880 --> 00:24:19,880
+Frekansları Artımlı Hale Getirip En Artı Re Olucak Şekilde Re'de Buradaki Tekil Şey Sayısı Aslında Buradaki İşlemleri Kaç Kere Tekrar Etmeniz Gerekiyor En Artı Re Reincinde Olacak Karmaşada Sadece Tek Bir For Karmaşasında Dize Ataması Yaparak Değerlerini İndis Olarak Kullanıp Atama Yaparak Sıralamayı Gerçekleştirebilirsiniz Ne Yapmış Oldum Fazladan Alan Kullanıyorum Burada Evet Ama
+
+130
+00:24:19,880 --> 00:24:26,380
+Nihayetinde Şurada S Dizinin İşte Şu Gözü Bu Gözü Bu Gözü Aslında Bir Dizi Bu Tabi ki Sadece Tek Boyutlu
+
+131
+00:24:30,180 --> 00:24:42,680
+Ekstradan İşte Diziler Frekans Dizisi Artımlı Dizi Şeylerini Kullanıyorum Ama Bunun Bunları Kullanarak Neredeyse Lineere Yakın Bir Zaman Karmaşıklığına Düşüyorum
+
+132
+00:24:43,180 --> 00:24:49,680
+Ve Daha Hızlı Bir Şekilde Sıralama İşlemini Yani Çözmem Gereken Problemi Daha Hızlı Bir Şekilde Çözebiliyorum
+
+133
+00:24:49,680 --> 00:25:03,680
+İşte Böyle Zaman Mı Mekan Mı Biraz Mekandan Mı Feragat Edelim Zamandan Mı Feragat Edelim Şeklindeki Yaklaşımlarla Problemleri Çözerken Düşünüp Bir Algoritma Tasarlamak Daha Doğru Olacaktır
+
+134
+00:25:04,680 --> 00:25:17,680
+Yani Sadece Saymak Bile Gördüğünüz Gibi Bazen Sıralama İçin Biraz Şeyden Kaybederek Mekandan Kaybederek Zaman Da Çok Fazla Bir Karlılık Bize Sunabiliyor
+
+135
+00:25:19,920 --> 00:25:30,920
+Bunların Dışında Bir De Radix Sort'tan Bahsetmek İstiyorum Radix Sort'ta Aslında Counting Sort'a Çok Benziyor Aynı Temellerden Yola Çıkıyor Diyebiliriz
+
+136
+00:25:31,920 --> 00:25:46,920
+Radix Nedir İşte Şey Basamak Yani Aslında Biz Basamak Basamak Sıralama İstiyoruz Bu Tam Olarak Tarihte Böyle Bizim Hani Bir Hesaplama Tarihinde Ya Da Bilgisayar Bilimleri Tarihinde Mekanik Sıralamadan Doğuyor
+
+137
+00:25:47,920 --> 00:25:56,920
+Şimdi Bunu Kim Ortaya Atmış IBM Ne İçin Kullanıyor Elinde Bir Sürü Delikli Kart Var Ve Bu Delikli Kartlardaki Değerleri Mesela Sıralamak İstiyor
+
+138
+00:25:57,920 --> 00:26:15,920
+İşte Bunlar Mesela Sizin Derslerden Aldığınız Vize Notlar Olduğunu Düşünün Vize Notlarınız Ya Da Final Notlarınız Bunları Küçükten Büyüğe Sıralamak İstiyor Ya Da Bunlar Öğrenci Numaralarını Öğrencilerin Kendi Kartları Gibi Düşünün Bunları Öğrenci Numaralarına Göre Sıralamak İstiyoruz O Dersi Alan Öğrencilerin
+
+139
+00:26:16,920 --> 00:26:45,920
+Ne Yapacağız Bunları Böyle Kolon Kolon Aslında Dizmemiz Gerekiyor İşte Burada Kaç Kolon Varmış Bir İki Üç Dört Beş Altı Yedi Sekiz Dokuz On On Bir On İki On Üç Tane Kolon Saydım Yanlısı Saymadıysam Bunları Sıralamak İçin Kullanılıyor Bu Yöntem Aslında Çok Mekanik Bir Yöntem Ama Arada Tabi İnsanı Da Kullanıyor İnsanı Kullanmasının Sebebi De Şeyi Atlatması Bir Sonraki Basamağı Sıralamak İçin Önceden Sıralıklarını Alıp Tekrar Desti Halinde Giriyor
+
+140
+00:26:46,920 --> 00:27:16,920
+Bir Diye Beslemesi Gerekiyor Hani Bunu Otomatik Yapabilirlenmiş Büyük Bir İhtimalli Ama Bunu Yapmamışlar Diyelim Orada İnsanı Kullanmak Daha Basit Olmuş Nasıl Yapacağız Peki Çok Basit Aslında Hem Sol Taraftan Hemde Sağ Taraftan Başlayarak Ben Basamak Sıralamasını Gerçekleştirebilirim Yani Sayılarımın Ya Da Kelimelerimin Hiç Fark Etmez İlk Ya Da Son Hanesine Bakarak Her Bir Hanede Yani Her Bir Basamakta Tabi Hizaladığımız
+
+141
+00:27:16,920 --> 00:27:46,920
+Her Bir Basamakta Biraz Önce Gördüğümüz Counting Sortu Yaparsak Bunları Sadece O Basamak Mertebesinde Sıralamış Oluruz Eğer Sonrasında Alıp Bir Basamak Sonrası Alıp Birleştirip Bir Basamak Sonrası Şeklinde İlerlersek De Elimizde Sonda İşte Dizilmiş Küçükten Büyüğe Ya Da Büyükten Küçüğe Sıralanmış Çıktığı Oluştururuz Dedik ki iki taraftan da yapabiliriz Eğer Least Significant
+
+142
+00:27:46,920 --> 00:28:16,920
+Dijit'den Başlayarak Yani En Anlamsız Dijit'den Başlayarak Bu Ne Demek Sağ Taraftan Başlayarak Bu İşi Yaparsak Buna LSD Adını Veriyoruz Eğer Sol Taraftan Yani En Anlamlı Haneden Başlayarak Yaparsak Da Buna İlk Haneden Başlamak Ya Da İşte Most Significant Dijit Sıralaması MSD Radix Sort Adını Veriyoruz İkisi De Radix Sort Göreceğiz Şimdi
+
+143
+00:28:16,920 --> 00:28:36,920
+Çok Daha Basit O Yüzden Önce LSD ile Yola Çıkalım İstiyorum Nedir Elimizde Bir Input Var Outputumuzda Bunların İşte Leksikografik Dediğimiz A'dan Z'ye Ya Da İşte Sıfırdan N'e Şeklinde Sıralanmış Hallerini Elde Etmeye Çalışıyorum Ne Yapacağım Ben
+
+144
+00:28:36,920 --> 00:29:06,920
+M Eksi Bir Yani Basamak Sayısı Kadar Diyelim Harcadığım Basamak Sayısı Kadar Her Bir Adımda M'den Sıfıra Doğru Böyle M'den Sıfıra Doğru Counting Sort İşlemini Yapacağım Sadece Buradaki Dijit İçin Evet Kelimelerin Ya Da Sayıların Uzunluğu Burada Aynı Olmak Zorunda
+
+145
+00:29:06,920 --> 00:29:36,920
+Söyleyeceğim Zaten Geriye De Sıralanmış Sadece O Şey İçin O Renk İçin Sıralanmış Dizi Döndürürüz Bunu Bütün Dijitler İçin Yaptığımızda Da Counting Sortları Yaptığımızda Sonuçta Bir Re Dizisi Elde Ederiz Aslında Son Anlamdan Başlayıp Kendi İçinde Sıralayıp Kendi İçinde Sıralayıp Diyeliye Gide Gide En Sonunda Sıralanmış Bir Çıktığı Elde Ederiz Karmaşasına Baktığımızda Da Alfabe Boyutuyla Alakalı Ve
+
+146
+00:29:36,920 --> 00:30:06,920
+Sayısıyla Alakalı Dijit Sayısı Artı Alfabe Boyutu Kadar Karşılaştırma Yapmak Zorunda Olduğunuz İçin O Re Artı Sigma Dediğimiz Bir Karmaşıklıkta Yani Neredeyse Linear Karmaşıklıkta Ama Şey Tabi Basamak Sayısıyla Mertebe Oranında Değişeceği İçin Hani Böyle Bir Milyonluk Stringleri Sıralarken Doğal Olarak Baya Çok Zorlanacaksınızdır Ama Ufak Şeyleri Ya Da Hani Kelime Tarzı Bir
+
+147
+00:30:06,920 --> 00:30:36,920
+Şeyleri Sıralamak İçin Ya Da Öğrenci Numarası Gibi Şeyleri Sıralamak İçin Çok Mantıklı Ya Da Kimlik Numarası Sıralamak İstiyorsanız Nasıl Yapacağız Şimdi Burada Dikkat Edemezsi Naserin De Şimdi Söylediği Sorduğu Bir Şey Var Bu Eğer LSD Radix Sort Yapıyorsanız Muhakkak Surette Bütün Girdilerinizin Aynı Uzunlukta Olmalarını Garanti Etmeniz Gerekiyor Nasıl Yapacağız Sayısal Girdilerde Sol Tarafa Boş Sıfırlar Yazacağız
+
+148
+00:30:36,920 --> 00:31:08,240
+Yani Bunun Aynısını Şeyde De Eğer Karakter Yapıyorsanızda İşte Bölü Sıfır Diyebileceğimiz Null Karakter Koyarak Oraları Da Şey Yapmanız Gerekecek Doldurmanız Gerekecek Ki Sıralamada Onları Da Yine İşin İçinde Tutmaya Devam Edebilin Bu Üzende Toplam İşte Re Neyse Maksimum Dijit Sayınız O Kadar İşlemi Her Seferinde Muhakkak Yapmak Zorundasınız Şimdi Şöyle Basit Bir Örnek
+
+149
+00:31:08,240 --> 00:31:38,240
+Ve Sayısal Olmayan Bir Örnekten Yola Çıkalım Bakın Kat Him Hem Ve Bet Diye Üç Karakterle Dört Tane Elemandan Oluşan Bir Dizi Var Şimdi İlk Önce Ben En Anlamsız Karakter Olan En Sağdakini İşleyeceğim Emeksi Birden Sıfıra Doğru Gidiyor Emeksi Bir Emeksi İki Emeksi Üç Şeklinde İlerleyeceğim T M M Ve T Var Şimdi Doğal Olarak Bunları Sıraladığımızda Counting Sort
+
+150
+00:31:38,240 --> 00:31:49,240
+Hani Benden Önce Bir Kişi Geliyor Benden Önce İki Kişi Geliyor Şeklinde Benden Küçük Küçük [öğrenci]
+
+151
+00:31:49,240 --> 00:31:59,240
+Bunu Yaptığınızda Şu İşte Him M Daha Önce Olduğu İçin Şu Yukarı Çıktı Bakın Ondan Sonra Hem M İkinci M Olduğu İçin Buraya Geldi
+
+152
+00:31:59,240 --> 00:32:16,240
+Sonrasında Cat Buraya Geldi T Den Dolayı Ve Bet Buraya Geldi Yine T Den Dolayı Ve Sonra Sonda Yer Aldığı İçin Cat Den Sonra Geldi İçin Çıktığıda Cat Den Sonra Olacak Şekilde Burda Yer Aldı
+
+153
+00:32:16,240 --> 00:32:26,240
+Şimdi Ne Yapmış Oldum Ben Bu Dijiti Sıraladım MMTT Şeklinde Sıraladım Harika Şimdi Ne Yapacağım Bir Sonraki For İterasyonuna Geçeceğim
+
+154
+00:32:26,240 --> 00:32:39,240
+I A A A Var Doğal olarak A Önce Gelecek Hem Yukarı Çıktı Cat İkinci Bet Üçüncü Yani Girdedeki Sırayı Çıktığıda Korumaya Devam Ediyor Gördüğünüz Gibi
+
+155
+00:32:39,240 --> 00:32:53,240
+I De Him En Sona Gitti Şimdi Bakın Bunu Kendi İçinde Sıralamıştım Şuanda Bunların Sırası Değişti Önemli Değil Çünkü Burasını Zaten Sıraladım Şimdi Daha Anlamlısını Sıralıyorum
+
+156
+00:32:53,240 --> 00:33:01,240
+Sonra En Anlamlısına Kadar Bu İşlemi Adım Adım Devam Ettirdim Burada Üç tane Basamak Olduğu İçin Üçüncü Basamakta İş Bitecek
+
+157
+00:33:01,240 --> 00:33:20,240
+H C B Ve H E Bakıyorum B En Başa Gelecek B Buraya Geldi Ondan Sonra C Gelecek Cat Sonra Yükardaki H Den Dolayı Hem Gelecek Sıralama Da Sonra Geldi İçin Buradaki H De En Sonda Yer Alacak
+
+158
+00:33:20,240 --> 00:33:50,400
+Ne Yapmış Olduk Bet En Anlamlı En Ezici En Baskın Olanı En Sonda Yaptık Bu Yüzdende Bet En Başa Çıktı Ama Mesela Hem Ve Hime Baktığımızda Burada Hler Aynı Ya O Zaman Kimin Baskınlığına Bakmamız Lazım İkinci Karakterlerin Baskınlığına Bakmamız Lazım Sıralarken
+
+159
+00:33:50,400 --> 00:34:16,400
+Ve Biz Bunu Aslında Bakın Hem Yukarıda Hime Aşağıda Diye İkinci Adımda Zaten Başarmıştık O Yüzden Burada Hem Ve Hime diye Sıralandılar Bunlarda Aynı Olsaydı Bir Sonraki Az Anlamlı Bunlarda Aynı Olsaydı Bir Sonraki Az Anlamlı Eğer İki Tane Hime Olsaydı Evet Bunlar Girdeki Sırada Şurada Bir Hime Olduğunu Düşünseniz Buradaki Hime Burda Da Beşinci Sırada Hime Olarak Durmaya Devam edecekti.
+
+160
+00:34:16,400 --> 00:34:43,400
+Önceden Sıraladığınız İçin Daha Baskın Dijitin Basamığın Sıralaması Öncekileri Eziyor Fakat Ezerken De Önceki Sıralamayı Doğal Olarak Korumaya Devam Ettiğimiz İçinde İkinci Karakterlerin Sıralanmış Kalmasını Üçüncü Karakterlerin Dördüncü Karakterlerin Sıralanmış Kalmasınıda Garanti Etmiş Oluyoruz.
+
+161
+00:34:43,400 --> 00:34:51,400
+Gördüğünüz Gibi Çok Basit Bir İmplementasyon Her Beye Adımda Counting Sort Yap Ondan Sonra Basamak Sayısı [öğrenci].
+
+162
+00:34:51,400 --> 00:34:57,400
+Counting Sort Çarpı Basamak Sayısı Da Diyebiliriz Belki Karmaşıklığına Başka Bir Söyleyelim.
+
+163
+00:34:57,400 --> 00:35:12,400
+Basit Bir Yöntem Ama Tabi Özellikle Alfabeniz Büyüdükçe Ve Basamak Sayınız Arttıkça İşlem Doğal Olarak Kendi İçinde Çok Fazla Karmaşık Hale Gelmiyor.
+
+164
+00:35:12,400 --> 00:35:18,400
+Aynı İşlemi Tekrar Tekrar Yapsanız Bile O Tekrar Sayıları Çok Fazla Artacaktır.
+
+165
+00:35:18,400 --> 00:35:32,400
+Ve Hepsinin Eşit Boyutlu Olması Gerektiğinden Dolayıda En Uzun Girdi Neyse O'nun Basamak Sayısı Neyse O Kadar Ve Fazla İşlem Mertebesi Yapmanız Gerekecek Belki Gereksiz Paddingler İçin Bile.
+
+166
+00:35:32,400 --> 00:35:36,400
+Buradaki Örnekte De Nasıl Yapacağız?
+
+167
+00:35:36,400 --> 00:35:42,400
+İşte DAP,ADD,CAB,Bilmem Ne Diye Böyle Bir Sürü Üç Harfli Kelime Geldiğini Düşüneyim Yine.
+
+168
+00:35:42,400 --> 00:35:46,400
+İlk Önce En Anlamsıza Göre Sıralacağız.
+
+169
+00:35:46,400 --> 00:35:48,400
+B,B,B
+
+170
+00:35:48,400 --> 00:35:58,400
+Burada Mesela Distribution Counting Sort Yaptığınızı Düşündüğünüzde Baya Kârlı Bir Şekilde Üç Tane B Var, Beş Tane D Var, Üç Tane E Var Şeklinde Hızlı Bir Şekilde Sayabilirsiniz.
+
+171
+00:35:58,400 --> 00:36:16,400
+Ve Yine Stable Olması Buradaki Çizgilerin Birbirini Kesmemesi Yani Alta Kalan Birinin Çıktığıda Sıralarken Yukarı Doğru Çıkmamasını Garanti Ettiğimizde de Bunların Kendi İçinde Az Basamaklarında Sıralı Kalmasını Sağlayabiliyoruz.
+
+172
+00:36:16,400 --> 00:36:18,400
+Buraya Göre Sıraladık.
+
+173
+00:36:18,400 --> 00:36:20,400
+Sonra Neye Göre Sıralacağız?
+
+174
+00:36:20,400 --> 00:36:22,400
+Buraya Göre Bakalım A,A
+
+175
+00:36:22,400 --> 00:36:24,400
+A,A,A
+
+176
+00:36:24,400 --> 00:36:26,400
+O Kadar
+
+177
+00:36:26,400 --> 00:36:28,400
+Beş Tane A
+
+178
+00:36:28,400 --> 00:36:30,400
+A Yoktu Beş Tane Saydım A Var
+
+179
+00:36:30,400 --> 00:36:32,400
+B
+
+180
+00:36:32,400 --> 00:36:34,400
+Bir Tane B Varmış
+
+181
+00:36:34,400 --> 00:36:36,400
+C
+
+182
+00:36:36,400 --> 00:36:38,400
+Burdan da Bir Tane
+
+183
+00:36:38,400 --> 00:36:40,400
+D'den de Bir Tane
+
+184
+00:36:40,400 --> 00:36:42,400
+E'den de Dört Tane Varmış
+
+185
+00:36:42,400 --> 00:36:44,400
+Yani Bunun Çok Hızlı Bir Şekilde Yine Sıralayabiliriz
+
+186
+00:36:44,400 --> 00:36:46,400
+A,A,A,A,A
+
+187
+00:36:46,400 --> 00:36:48,400
+Beş Tane A'yı Kopyaladım
+
+188
+00:36:48,400 --> 00:36:50,400
+B,C,D Teker Teker Geldi
+
+189
+00:36:50,400 --> 00:36:52,400
+Dört Tane de E Kopyaladım
+
+190
+00:36:52,400 --> 00:36:54,400
+Burası da Kendi İçinde Sıralandı
+
+191
+00:36:54,400 --> 00:36:56,400
+Sonrasında da
+
+192
+00:36:56,400 --> 00:36:58,400
+Şuradaki
+
+193
+00:36:58,400 --> 00:37:00,400
+Üçüncü Dijite Göre Sıralarım
+
+194
+00:37:00,400 --> 00:37:02,400
+Burada A'dan F'ye Doğru Değerler Var
+
+195
+00:37:02,400 --> 00:37:04,400
+A,A,B,B,B
+
+196
+00:37:04,400 --> 00:37:06,400
+C,D,D
+
+197
+00:37:06,400 --> 00:37:08,400
+E,F,F,F
+
+198
+00:37:08,400 --> 00:37:10,400
+Şeklinde Sıralandı
+
+199
+00:37:10,400 --> 00:37:12,400
+Şimdi Kendi İçinde A'lara Baktığımızda
+
+200
+00:37:12,400 --> 00:37:14,400
+A,C Neredeydi?
+
+201
+00:37:14,400 --> 00:37:16,400
+Buradaydı
+
+202
+00:37:16,400 --> 00:37:18,400
+Şuradaki C,D Sıralamasından Dolayı
+
+203
+00:37:18,400 --> 00:37:20,400
+Bunu Burda'da Koruduk
+
+204
+00:37:20,400 --> 00:37:22,400
+Okların Bibini Kesmemesinden Dolayı
+
+205
+00:37:22,400 --> 00:37:24,400
+Yani A,C Yukarda
+
+206
+00:37:24,400 --> 00:37:26,400
+A,D'de O'nun Altında Yer Aldı
+
+207
+00:37:26,400 --> 00:37:28,400
+Sonra B'ler
+
+208
+00:37:28,400 --> 00:37:30,400
+B'leri Kendi İçinde A,E,E
+
+209
+00:37:30,400 --> 00:37:32,400
+Şeklinde Yaptık
+
+210
+00:37:32,400 --> 00:37:34,400
+E'ler Var Görüyorsunuz
+
+211
+00:37:34,400 --> 00:37:36,400
+Kendi İçinde Onlarda Ta Buraya Kadar Gidip
+
+212
+00:37:36,400 --> 00:37:38,400
+B,D ve B'ye Bakalım
+
+213
+00:37:38,400 --> 00:37:40,400
+B,D
+
+214
+00:37:40,400 --> 00:37:42,400
+Sekizinci Sırada
+
+215
+00:37:42,400 --> 00:37:44,400
+Şuradan D'den Dolayı
+
+216
+00:37:44,400 --> 00:37:46,400
+B ise E'den Dolayı
+
+217
+00:37:46,400 --> 00:37:48,400
+Onuncu Sırada
+
+218
+00:37:48,400 --> 00:37:50,400
+Yukarıda Bu Aşağıda
+
+219
+00:37:50,400 --> 00:37:52,400
+Çıktığıda O Hala B' Yukarıda
+
+220
+00:37:52,400 --> 00:37:54,400
+B Aşağıda Kalmayı Garanti Etmiş Oldu
+
+221
+00:37:54,400 --> 00:37:56,400
+Daha Önceki Dijitte Sıralandığı İçin
+
+222
+00:37:56,400 --> 00:37:58,400
+Ve Böylece
+
+223
+00:37:58,400 --> 00:38:00,400
+Eze Eze
+
+224
+00:38:00,400 --> 00:38:02,400
+Üzerine Baskın Karakter
+
+225
+00:38:02,400 --> 00:38:04,400
+Baskın Dijit Gele Gele Basamak
+
+226
+00:38:04,400 --> 00:38:06,400
+Ben Sıralamayı
+
+227
+00:38:06,400 --> 00:38:08,400
+Sona Doğru Tamamlayıp
+
+228
+00:38:08,400 --> 00:38:10,400
+Götürebilirim
+
+229
+00:38:10,400 --> 00:38:12,400
+A,C'den Başlayıp F'ye Kadar Giden
+
+230
+00:38:12,400 --> 00:38:14,400
+Sıralanmış Kelimelerim Oluştu
+
+231
+00:38:14,400 --> 00:38:16,400
+Ve Burda Şey Olsaydı
+
+232
+00:38:16,400 --> 00:38:18,400
+Burda Üç Karakterler Beş
+
+233
+00:38:18,400 --> 00:38:20,400
+Ya Da Altı Yedi Karakterli Kelimelerim Olsaydı
+
+234
+00:38:20,400 --> 00:38:22,400
+Burda Artık Pek Çok Kere
+
+235
+00:38:22,400 --> 00:38:24,400
+Boş Karşılaştırma
+
+236
+00:38:24,400 --> 00:38:26,400
+Ya Da Boş Sıralama Yapmak Zorunda Kalacaktım
+
+237
+00:38:26,400 --> 00:38:28,400
+Bu Da Radix Hortun
+
+238
+00:38:28,400 --> 00:38:30,400
+Yani En Azından L,S,D Radix Hortun
+
+239
+00:38:30,400 --> 00:38:32,400
+Kötü Yanı Diyebiliriz
+
+240
+00:38:32,400 --> 00:38:40,449
+Bir Dakika Ne
+
+241
+00:38:40,449 --> 00:38:42,449
+Sayıların Boyutları Farklı İse
+
+242
+00:38:42,449 --> 00:38:44,449
+Daha Kısanın Başına
+
+243
+00:38:44,449 --> 00:38:46,449
+Evet
+
+244
+00:38:46,449 --> 00:38:48,449
+Zaten Öyle Yapıyoruz
+
+245
+00:38:48,449 --> 00:38:50,449
+Yani Padding Yapacağız Başına Sıfır Ekleyerek
+
+246
+00:38:50,449 --> 00:38:52,449
+Sıralamak Zorundayız
+
+247
+00:38:52,449 --> 00:38:54,449
+Çünkü Bunların Hepsinin Basamak Sayılarının
+
+248
+00:38:54,449 --> 00:38:56,449
+Basamak Basamak Sıraladığımız İçin
+
+249
+00:38:56,449 --> 00:38:58,449
+Aynı Olması Gerekiyor
+
+250
+00:38:58,449 --> 00:39:00,449
+L,S,D Radix Horta
+
+251
+00:39:00,449 --> 00:39:02,449
+Bunu Niye Özellikle Böyle Söylerim
+
+252
+00:39:02,449 --> 00:39:04,449
+Çünkü M,S,D'de Böyle Bir Şeye
+
+253
+00:39:04,449 --> 00:39:06,449
+Gerek Kalmayacak
+
+254
+00:39:06,449 --> 00:39:08,449
+Görücez Ama Onda Tabi Kendine Göre Başka
+
+255
+00:39:08,449 --> 00:39:10,449
+Daktilere Şeyleri Oluşacak
+
+256
+00:39:10,449 --> 00:39:12,449
+Şimdi Bakın
+
+257
+00:39:12,449 --> 00:39:14,449
+Dedimin Zaten Söyledim Bunu
+
+258
+00:39:14,449 --> 00:39:16,449
+Sıralamak İçin Falan Oldukça
+
+259
+00:39:16,449 --> 00:39:18,449
+Başarılı Bir Yöntem Niye
+
+260
+00:39:18,449 --> 00:39:20,449
+Herkesin Kimlik Numaraları 11 Haneli
+
+261
+00:39:20,449 --> 00:39:22,449
+IBM Zamanında Kartları
+
+262
+00:39:22,449 --> 00:39:24,449
+Böyle Sıralıyorsa Ben De
+
+263
+00:39:24,449 --> 00:39:26,449
+Kimlik Numaralarını Mesela Bu Şekilde
+
+264
+00:39:26,449 --> 00:39:28,449
+Sıralayabilirim Çokta Efektif
+
+265
+00:39:28,449 --> 00:39:30,449
+Çalışabilir
+
+266
+00:39:30,449 --> 00:39:32,449
+Özellikle Mesela Bu GUI ID'ler
+
+267
+00:39:32,449 --> 00:39:34,449
+Vardır Veritabanıyla İlgilenen
+
+268
+00:39:34,449 --> 00:39:36,449
+Olanlarınız Varsa Bilir Böyle Uzun
+
+269
+00:39:36,449 --> 00:39:38,449
+Stringlerden Oluşur Benzersiz
+
+270
+00:39:38,449 --> 00:39:40,449
+Tanımlayıcı ID Numaraları
+
+271
+00:39:40,449 --> 00:39:42,449
+Hesap Numaraları
+
+272
+00:39:42,449 --> 00:39:44,449
+Bankaların
+
+273
+00:39:44,449 --> 00:39:46,449
+İban Numaraları
+
+274
+00:39:46,449 --> 00:39:48,449
+Kimlik Numaraları Gibi
+
+275
+00:39:48,449 --> 00:39:50,449
+Sabit Uzunluklu Anahtarlardan Oluşan Böyle
+
+276
+00:39:50,449 --> 00:39:52,449
+Özellikle Çok Büyük Boyutta Ticari Tablonuz
+
+277
+00:39:52,449 --> 00:39:54,449
+Veritabanın Tablonuz Var
+
+278
+00:39:54,449 --> 00:39:56,449
+Ve Bunu Sıralamak İstediniz
+
+279
+00:39:56,449 --> 00:39:58,449
+Order By Yapınca
+
+280
+00:39:58,449 --> 00:40:00,449
+Tablonuz Var
+
+281
+00:40:00,449 --> 00:40:02,449
+Ve Bunu Sıralamak İstediniz
+
+282
+00:40:02,449 --> 00:40:04,449
+Order By Yapınca
+
+283
+00:40:04,449 --> 00:40:06,449
+Tablonuz Var
+
+284
+00:40:06,449 --> 00:40:08,449
+Ve Bunu Sıralamak İstediniz
+
+285
+00:40:08,449 --> 00:40:10,449
+Order By Yapıncaksınız
+
+286
+00:40:12,449 --> 00:40:14,449
+Burada Hangi Yöntemi Kullansak Acaba
+
+287
+00:40:14,449 --> 00:40:16,449
+Daha İyi Olur
+
+288
+00:40:16,449 --> 00:40:18,449
+Insertion Sortumu Yapalım
+
+289
+00:40:18,449 --> 00:40:20,449
+Quick Sortumu Hip Sortumu Yoksa
+
+290
+00:40:20,449 --> 00:40:22,449
+LSD İle String Sortumu Yapalım
+
+291
+00:40:22,449 --> 00:40:24,449
+Aslında Sabit Uzunluk
+
+292
+00:40:24,449 --> 00:40:26,449
+Burda Bize Bir Anahtar
+
+293
+00:40:26,449 --> 00:40:28,449
+Veriyor Ben Burda
+
+294
+00:40:28,449 --> 00:40:30,449
+Mesela 256 Ascii
+
+295
+00:40:30,449 --> 00:40:32,449
+Karakteri Ya Da
+
+296
+00:40:32,449 --> 00:40:34,449
+Unicode Gidiyorsam 65536
+
+297
+00:40:34,449 --> 00:40:36,449
+Tane Unicode Karakteri Var
+
+298
+00:40:36,449 --> 00:40:38,449
+Bu Kadar Sayaç
+
+299
+00:40:38,449 --> 00:40:40,449
+Ve Toplam
+
+300
+00:40:40,449 --> 00:40:42,449
+W Adımda Sabit Uzunluktaki
+
+301
+00:40:42,449 --> 00:40:44,449
+Stringleri Rahatlıkla
+
+302
+00:40:44,449 --> 00:40:46,449
+Sıralayabilirim
+
+303
+00:40:46,449 --> 00:40:48,449
+LSD String Sortu Kullanmak
+
+304
+00:40:48,449 --> 00:40:50,449
+Burda Aslında Bizim İçin
+
+305
+00:40:50,449 --> 00:40:52,449
+Çok Daha İyi Ya Da Verimli
+
+306
+00:40:52,449 --> 00:40:54,449
+Bir Çözüm Olacaktır
+
+307
+00:40:54,449 --> 00:40:56,449
+Burdaki
+
+308
+00:40:56,449 --> 00:40:58,449
+Karakter Sayısı Kadar Aslında Bir Karmaşamız
+
+309
+00:40:58,449 --> 00:41:00,449
+Olacak Eğer Biliyorsak
+
+310
+00:41:00,449 --> 00:41:02,449
+Sadece Büyük Harflerden
+
+311
+00:41:02,449 --> 00:41:04,449
+Ve Sadece Sayılardan Oluşuyor Mesela
+
+312
+00:41:04,449 --> 00:41:06,449
+Burdaki Örnekte Olduğu Gibi
+
+313
+00:41:06,449 --> 00:41:08,449
+O Zaman Karakter
+
+314
+00:41:08,449 --> 00:41:10,449
+Şeyinizde Çok Ufalacağı İçin
+
+315
+00:41:10,449 --> 00:41:12,449
+Sigma Dediğimiz
+
+316
+00:41:12,449 --> 00:41:14,449
+Çarpan Ufalacağı İçin
+
+317
+00:41:14,449 --> 00:41:16,449
+Yine Karmaşıklığınız Böyle
+
+318
+00:41:16,449 --> 00:41:18,449
+Lineere Yakın Zamanlara Doğru
+
+319
+00:41:18,449 --> 00:41:20,449
+Yaklaşacaktır
+
+320
+00:41:20,449 --> 00:41:22,449
+Yani Böyle N Logenlerden Bile Daha
+
+321
+00:41:22,449 --> 00:41:24,449
+Aşağıya
+
+322
+00:41:24,449 --> 00:41:26,449
+N Kat Sayılı
+
+323
+00:41:26,449 --> 00:41:28,449
+Kat Sayı Çarpı N Mertebesindeki
+
+324
+00:41:28,449 --> 00:41:30,449
+Değerlere Doğru Gidecektir
+
+325
+00:41:30,449 --> 00:41:32,449
+Girdiğe Göre
+
+326
+00:41:32,449 --> 00:41:34,449
+Uygun Yöntemi Kullanarak
+
+327
+00:41:34,449 --> 00:41:36,449
+Efektif Bir Sıralama İçnemi
+
+328
+00:41:36,449 --> 00:41:38,449
+Gerçekleştirebilirsiniz
+
+329
+00:41:38,449 --> 00:41:40,449
+Yine Space And Time Trade Off'u Burda Görüyoruz
+
+330
+00:41:40,449 --> 00:41:42,449
+Son Olarak
+
+331
+00:41:42,449 --> 00:41:44,449
+Bir De Radix Sortun
+
+332
+00:41:44,449 --> 00:41:46,449
+Diğer Yaklaşımından Bahsedelim
+
+333
+00:41:46,449 --> 00:41:48,449
+Bu Da MSD
+
+334
+00:41:48,449 --> 00:41:50,449
+Radix Sort Yani
+
+335
+00:41:50,449 --> 00:41:52,449
+Most Significant Digit Sort Diyoruz Buna Da
+
+336
+00:41:52,449 --> 00:41:54,449
+Aslında Bu
+
+337
+00:41:54,449 --> 00:41:56,449
+Şeye Benziyor
+
+338
+00:41:56,449 --> 00:41:58,449
+Mantık Olarak Düşündüğümüzde Böyle
+
+339
+00:41:58,449 --> 00:42:00,449
+Quick Sort'u Andoruyo Diyabilirim
+
+340
+00:42:00,449 --> 00:42:02,449
+Çünkü Orda Yine Quick Sort
+
+341
+00:42:02,449 --> 00:42:04,449
+Gibi Bir Rekursif
+
+342
+00:42:04,449 --> 00:42:06,449
+Bölme Var
+
+343
+00:42:06,449 --> 00:42:08,449
+Ama
+
+344
+00:42:08,449 --> 00:42:10,449
+Burda Şöyle Bir Fark Var
+
+345
+00:42:10,449 --> 00:42:12,449
+Biz
+
+346
+00:42:12,449 --> 00:42:14,449
+Quick Sort'da 2'ye Bölüyorduk
+
+347
+00:42:14,449 --> 00:42:16,449
+Ya Da 3 Way Quick Sort Yapıyosanız
+
+348
+00:42:16,449 --> 00:42:18,449
+3 Ayrı
+
+349
+00:42:18,449 --> 00:42:20,449
+Partişina Bölüyosunuz
+
+350
+00:42:20,449 --> 00:42:22,449
+Yani 2 Partişin 3 Partişin
+
+351
+00:42:22,449 --> 00:42:24,449
+Burdaki Fark Şu
+
+352
+00:42:24,449 --> 00:42:26,449
+Sigma Kadar Partişina Bölüyorum
+
+353
+00:42:26,449 --> 00:42:28,449
+Yani O Adımda Kaç Tane
+
+354
+00:42:28,449 --> 00:42:30,449
+Karakter Varsa
+
+355
+00:42:30,449 --> 00:42:32,449
+O Kadar Parçaya Bölüyorum
+
+356
+00:42:32,449 --> 00:42:34,449
+Ve Her Bir Parçayı
+
+357
+00:42:34,449 --> 00:42:36,449
+O Digit'i İşlerken
+
+358
+00:42:36,449 --> 00:42:38,449
+Her Bir Parçayı
+
+359
+00:42:38,449 --> 00:42:40,449
+Yine Rekursif Olarak
+
+360
+00:42:40,449 --> 00:42:42,449
+MSD İle Sort Ediyorum
+
+361
+00:42:42,449 --> 00:42:44,449
+Yani Aslında Burda Bir Depth First
+
+362
+00:42:44,449 --> 00:42:46,449
+Durumu Söz Konusu
+
+363
+00:42:46,449 --> 00:42:48,449
+Şöyle Bir Örnekte Göstermeye Çalışıyım
+
+364
+00:42:48,449 --> 00:42:50,449
+Al'i
+
+365
+00:42:50,449 --> 00:42:52,449
+Sözlük Sıralamaya Çalışıyoruz
+
+366
+00:42:52,449 --> 00:42:54,449
+Kelimeleri Sıralamaya Çalışıyoruz
+
+367
+00:42:54,449 --> 00:42:56,449
+Alphabet Alignment Allocate
+
+368
+00:42:56,449 --> 00:42:58,449
+Al'i ile Başlıyor
+
+369
+00:42:58,449 --> 00:43:00,449
+Ben Buraları Bitirmişim
+
+370
+00:43:00,449 --> 00:43:02,449
+A'yı Ve L'yi Sıralamışım
+
+371
+00:43:02,449 --> 00:43:04,449
+Şimdi Diyelim Üçüncü
+
+372
+00:43:04,449 --> 00:43:06,449
+Basamaktayım
+
+373
+00:43:06,449 --> 00:43:08,449
+Üçüncü Basamakta
+
+374
+00:43:08,449 --> 00:43:10,449
+Neler Var
+
+375
+00:43:10,449 --> 00:43:12,449
+Yine Bunu Counting Sort'da
+
+376
+00:43:12,449 --> 00:43:14,449
+Çok Rahatlıkla Bulabilirsiniz
+
+377
+00:43:14,449 --> 00:43:16,449
+Frekanslarıyla Birlikte Ya Da
+
+378
+00:43:16,449 --> 00:43:18,449
+P Var, E Var, L Var, G Var
+
+379
+00:43:18,449 --> 00:43:20,449
+T Var Başka Yok
+
+380
+00:43:20,449 --> 00:43:22,449
+O Zaman Ben Bunu
+
+381
+00:43:22,449 --> 00:43:24,449
+Kaç Parçaya Bölmeliyim
+
+382
+00:43:24,449 --> 00:43:26,449
+Yani Bir, İki, Üç, Dört, Beş
+
+383
+00:43:26,449 --> 00:43:28,449
+Parçaya Bölmeliyim
+
+384
+00:43:28,449 --> 00:43:30,449
+Ve Burda Beş Tane Partition
+
+385
+00:43:30,449 --> 00:43:32,449
+Oluşturduğunuzu Varsayın
+
+386
+00:43:32,449 --> 00:43:34,449
+Ve Beş Partition'ı
+
+387
+00:43:34,449 --> 00:43:36,449
+Kendi İçinde Rekürsif Olarak
+
+388
+00:43:36,449 --> 00:43:38,449
+İlerleterek Tekrar MSD İle Çözün
+
+389
+00:43:38,449 --> 00:43:40,449
+Bunu Yaptığınızda
+
+390
+00:43:40,449 --> 00:43:42,449
+Bütün Parçacıkları
+
+391
+00:43:42,449 --> 00:43:44,449
+Bitirdiğinizde Rekürsif Olarak
+
+392
+00:43:44,449 --> 00:43:46,449
+A'dan Z'ye Doğru
+
+393
+00:43:46,449 --> 00:43:48,449
+Sıralanmış Ya Da Küçükten Büyüye Doğru
+
+394
+00:43:48,449 --> 00:43:50,449
+Sıralanmış Çıktıyı Elde Edersiniz
+
+395
+00:43:50,449 --> 00:43:52,449
+Şimdi Buraya Bakalım
+
+396
+00:43:52,449 --> 00:43:54,449
+Bu Basamaya Görün
+
+397
+00:43:54,449 --> 00:43:56,449
+Sıraladığımızda G Gelecek
+
+398
+00:43:56,449 --> 00:43:58,449
+Algoritim Kelimesi
+
+399
+00:43:58,449 --> 00:44:00,449
+Tepeye Çıktı
+
+400
+00:44:00,449 --> 00:44:02,449
+E'ye Bakalım Hem Alignment Var
+
+401
+00:44:02,449 --> 00:44:04,449
+Hem Alias Var
+
+402
+00:44:04,449 --> 00:44:06,449
+O Yüzden Alignment Yukarıda
+
+403
+00:44:06,449 --> 00:44:08,449
+Aliasa Aşağıda Olacak Şekilde
+
+404
+00:44:08,449 --> 00:44:10,449
+E Partition ile Oluşturdular
+
+405
+00:44:10,449 --> 00:44:12,449
+Ben Şimdi Artık Burda Rekürsif Olarak
+
+406
+00:44:12,449 --> 00:44:14,449
+Devam Edip Şurda Kalan
+
+407
+00:44:14,449 --> 00:44:16,449
+Karakterlerle Yoluma Devam Etmem
+
+408
+00:44:16,449 --> 00:44:18,449
+A ve G Görüyorsunuz Ya
+
+409
+00:44:18,449 --> 00:44:20,449
+Ondan Sonra Alias Yukarı
+
+410
+00:44:20,449 --> 00:44:22,449
+Alignment Aşağı Bir Aşağı Gelecek Şekilde
+
+411
+00:44:22,449 --> 00:44:24,449
+Aslında Oluştuğunu Varsayabilirsiniz
+
+412
+00:44:24,449 --> 00:44:26,449
+Yani [öğrenci]
+
+413
+00:44:26,449 --> 00:44:28,449
+Üçlü MSD'yi
+
+414
+00:44:28,449 --> 00:44:30,449
+Bir Sonraki Adımında
+
+415
+00:44:30,449 --> 00:44:32,449
+Aslında Alias Yukarı Alignment
+
+416
+00:44:32,449 --> 00:44:34,449
+Bir Aşağı Gelecek Şekilde Devam Etdireceksiniz
+
+417
+00:44:34,449 --> 00:44:36,449
+Kendi İçinde Sıralandı
+
+418
+00:44:36,449 --> 00:44:38,449
+Allocate Ve All
+
+419
+00:44:38,449 --> 00:44:40,449
+Üçüncü Partition'a Bakalım
+
+420
+00:44:40,449 --> 00:44:42,449
+L ve L Tamam
+
+421
+00:44:42,449 --> 00:44:44,449
+Çok Güzel Şimdi
+
+422
+00:44:44,449 --> 00:44:46,449
+Şey Yapacağız Bu Partition'ın
+
+423
+00:44:46,449 --> 00:44:48,449
+Kalanlarını Kendi İçinde Sıralacağız
+
+424
+00:44:48,449 --> 00:44:50,449
+L ve Null Görüyorum
+
+425
+00:44:50,449 --> 00:44:52,449
+O Zaman Null Yukarı Çıkar
+
+426
+00:44:52,449 --> 00:44:54,449
+Null Daha Böyle Hani Ön Değer
+
+427
+00:44:54,449 --> 00:44:56,449
+Küçük Değer Oldu İçin Diyelim
+
+428
+00:44:56,449 --> 00:44:58,449
+All Kendi İçinde Bu Partition'da
+
+429
+00:44:58,449 --> 00:45:00,449
+Bir Yukarı Çıktı Allocate Bir Aşağı Geldi
+
+430
+00:45:00,449 --> 00:45:02,449
+Böylece Hani Kısa Şey
+
+431
+00:45:02,449 --> 00:45:04,449
+Önce Gelen Yukarıda
+
+432
+00:45:04,449 --> 00:45:06,449
+Uzun Kelime Aşağıda Olacak
+
+433
+00:45:06,449 --> 00:45:08,449
+Şekilde Sıralamaya Devam Ettik
+
+434
+00:45:08,449 --> 00:45:10,449
+Alphabet Tek Oldu İçin Zaten Bu Partition
+
+435
+00:45:10,449 --> 00:45:12,449
+Sıralandı Bitti Bir Daha
+
+436
+00:45:12,449 --> 00:45:14,449
+H'ye A'ya B'ye E'ye T'yle Bir Daha
+
+437
+00:45:14,449 --> 00:45:16,449
+İşim Kalmadı
+
+438
+00:45:16,449 --> 00:45:18,449
+Alternative Alternate Şimdi Buraya Bakalım
+
+439
+00:45:18,449 --> 00:45:20,449
+T'ler Kendi İçinde Sıralı
+
+440
+00:45:20,449 --> 00:45:22,449
+Bunun Bir Sonrakine Geçtim
+
+441
+00:45:22,449 --> 00:45:24,449
+Rekursif Olarak Bir MSL
+
+442
+00:45:24,449 --> 00:45:26,449
+Daha Yapıyorum E ve E Gördüm
+
+443
+00:45:26,449 --> 00:45:28,449
+Bir Tane Daha Yapıyorum R ve
+
+444
+00:45:28,449 --> 00:45:30,449
+R Gördüm Bir Tane Daha Yapıyorum
+
+445
+00:45:30,449 --> 00:45:32,449
+N N Bir Daha A A Bir Daha T T
+
+446
+00:45:32,449 --> 00:45:34,449
+Hey Allah'ım Ya Rabbim Bakın Burada
+
+447
+00:45:34,449 --> 00:45:36,449
+Baya Bir Şey Boşu Boşuna Karşılaştırdım Ama
+
+448
+00:45:36,449 --> 00:45:38,449
+Yapacak Bir Şey Yok Karşılaştırmak
+
+449
+00:45:38,449 --> 00:45:40,449
+Zorundayım Fark Bulana Kadar
+
+450
+00:45:40,449 --> 00:45:42,449
+E ve E Gördüm O Zaman
+
+451
+00:45:42,449 --> 00:45:44,449
+E Yukarı Çıktı E Aşağı İndi
+
+452
+00:45:44,449 --> 00:45:46,449
+Yani Alternate ve Alternative
+
+453
+00:45:46,449 --> 00:45:48,449
+Şeklinde Bu Da Kendi İçinde Yer Değiştirecek
+
+454
+00:45:48,449 --> 00:45:50,449
+T Partitioni İçin
+
+455
+00:45:50,449 --> 00:45:52,449
+Bunu Böyle Rekursif
+
+456
+00:45:52,449 --> 00:45:54,449
+Olarak Devam ettirdiğinizde
+
+457
+00:45:54,449 --> 00:45:56,449
+Her Partiça Kendi İçinde
+
+458
+00:45:56,449 --> 00:45:58,449
+Her Bir Partition Kendi İçinde
+
+459
+00:45:58,449 --> 00:46:00,449
+MSD İle Sıralanınca İçin
+
+460
+00:46:00,449 --> 00:46:02,449
+Geri Geri Geldiğinizde Toparlayarak
+
+461
+00:46:02,449 --> 00:46:04,449
+Geldiğinizde de MSD'nin
+
+462
+00:46:04,449 --> 00:46:06,449
+Sıralanmış Halini
+
+463
+00:46:06,449 --> 00:46:08,449
+MSD'ye Göre Sıralanmış Halini
+
+464
+00:46:08,449 --> 00:46:10,449
+Elde Ede Bilirsiniz
+
+465
+00:46:10,449 --> 00:46:12,449
+Algoritması Da Burada
+
+466
+00:46:12,449 --> 00:46:14,449
+Eee Şöyle
+
+467
+00:46:14,449 --> 00:46:16,449
+Eğer R'nin Boyutu
+
+468
+00:46:16,449 --> 00:46:18,449
+Sigma'dan Küçükse
+
+469
+00:46:18,449 --> 00:46:20,449
+Burada Bir Trade Off Var
+
+470
+00:46:20,449 --> 00:46:22,449
+Burada O Zaman Artık Sen Şey Yapma
+
+471
+00:46:22,449 --> 00:46:24,449
+MSD İle Uğraşma
+
+472
+00:46:24,449 --> 00:46:26,449
+Quick Sort Yap diye Bilirsiniz
+
+473
+00:46:26,449 --> 00:46:28,449
+Bunu Biraz İleride Tekrar Tatışalım
+
+474
+00:46:28,449 --> 00:46:30,449
+Şimdilik Göz Ardı Edin
+
+475
+00:46:30,449 --> 00:46:32,449
+Sonrasında Yaptığımız Şey Şu
+
+476
+00:46:32,449 --> 00:46:34,449
+Kalanları Buluyoruz
+
+477
+00:46:34,449 --> 00:46:36,449
+Kalan Bütün Kümeyi
+
+478
+00:46:36,449 --> 00:46:38,449
+Counting Sort Yapıyoruz
+
+479
+00:46:38,449 --> 00:46:40,449
+V Counting Sort Yaptıktan Sonra
+
+480
+00:46:40,449 --> 00:46:42,449
+O Digit İçin
+
+481
+00:46:42,449 --> 00:46:44,449
+Radix Sort'u Tekrar Çağırıyoruz
+
+482
+00:46:44,449 --> 00:46:46,449
+Yani İçinde O Partition İçinde
+
+483
+00:46:46,449 --> 00:46:48,449
+Tekrar MSD Yapıyoruz
+
+484
+00:46:48,449 --> 00:46:50,449
+O Partition İçinde Tekrar MSD Yapıyoruz
+
+485
+00:46:50,449 --> 00:46:52,449
+Gibi Böyle Depth First
+
+486
+00:46:52,449 --> 00:46:54,449
+Olacak Şekilde İlerleyip
+
+487
+00:46:54,449 --> 00:46:56,449
+Sıralamayı Gerçekleştiriyoruz
+
+488
+00:46:56,449 --> 00:46:58,449
+Bu Da Eee
+
+489
+00:46:58,449 --> 00:47:00,449
+R'nin Boyutu Yani
+
+490
+00:47:00,449 --> 00:47:02,449
+Şuradaki String Sayısı
+
+491
+00:47:02,449 --> 00:47:04,449
+Artı Sigma Şeklinde Bir
+
+492
+00:47:04,449 --> 00:47:06,449
+Karmaşıklıkla Yine Böyle
+
+493
+00:47:06,449 --> 00:47:08,449
+Lineere Yakın Bir Karmaşıklıkla
+
+494
+00:47:08,449 --> 00:47:10,449
+Sıralama Yapmamıza Olanak
+
+495
+00:47:10,449 --> 00:47:12,449
+Sağlıyor
+
+496
+00:47:12,449 --> 00:47:14,449
+Şimdi Bir Önceki Örneği Şeyle Yapalım
+
+497
+00:47:14,449 --> 00:47:16,449
+Sabit Uzunluklu
+
+498
+00:47:16,449 --> 00:47:18,449
+Basit Olsun diye Sabitten Başlayalım
+
+499
+00:47:18,449 --> 00:47:20,449
+Bu Sefer Radix Sort
+
+500
+00:47:20,449 --> 00:47:22,449
+MSD Radix Sortla Sıralayalım
+
+501
+00:47:22,449 --> 00:47:24,449
+Ne Yapacağız O Zaman
+
+502
+00:47:24,449 --> 00:47:26,449
+İlk Önce En Anlamlı
+
+503
+00:47:26,449 --> 00:47:28,449
+Basamağa Bakacağız
+
+504
+00:47:28,449 --> 00:47:30,449
+A'lar Yukarı Çıkacak
+
+505
+00:47:30,449 --> 00:47:32,449
+A D D
+
+506
+00:47:32,449 --> 00:47:34,449
+A C E
+
+507
+00:47:34,449 --> 00:47:36,449
+Sonra B'ler Gelecek İşte
+
+508
+00:47:36,449 --> 00:47:38,449
+Bad
+
+509
+00:47:38,449 --> 00:47:40,449
+Ondan Sonra B
+
+510
+00:47:40,449 --> 00:47:42,449
+Bunları Sıraladım Tamam
+
+511
+00:47:42,449 --> 00:47:44,449
+Artık Burada
+
+512
+00:47:44,449 --> 00:47:46,449
+Partitionlar Oluştu
+
+513
+00:47:46,449 --> 00:47:48,449
+Bakın AA Partition'ı Şurada
+
+514
+00:47:48,449 --> 00:47:50,449
+Artık Bunu Kendi İçinde
+
+515
+00:47:50,449 --> 00:47:52,449
+Sıralayacağım D C'ye Geldi
+
+516
+00:47:52,449 --> 00:47:54,449
+C Yukarı
+
+517
+00:47:54,449 --> 00:47:56,449
+Doğal Olarak C'li Olan Yukarı
+
+518
+00:47:56,449 --> 00:47:58,449
+Çıkacak Ace ve
+
+519
+00:47:58,449 --> 00:48:00,449
+Ed Şeklinde Burası Biticek
+
+520
+00:48:00,449 --> 00:48:02,449
+Bir Daha Bunlara Bakmama
+
+521
+00:48:02,449 --> 00:48:04,449
+Gerek Bakıyorum
+
+522
+00:48:04,449 --> 00:48:06,449
+Zaten Sıraladım
+
+523
+00:48:06,449 --> 00:48:08,449
+Bitti
+
+524
+00:48:08,449 --> 00:48:10,449
+Sonrasında Bad
+
+525
+00:48:10,449 --> 00:48:12,449
+B ve Bad Var
+
+526
+00:48:12,449 --> 00:48:14,449
+İkinci Karakterlerine Göre
+
+527
+00:48:14,449 --> 00:48:16,449
+Rekursif Olarak MSD Yapacağım
+
+528
+00:48:16,449 --> 00:48:18,449
+A E E Şeklinde Sıralanacak
+
+529
+00:48:18,449 --> 00:48:20,449
+Ondan Sonra Üçüncü Karakterlerine Göre
+
+530
+00:48:20,449 --> 00:48:22,449
+Sıralayacağım
+
+531
+00:48:22,449 --> 00:48:24,449
+Neyi Sıralayacağım
+
+532
+00:48:24,449 --> 00:48:26,449
+E ve E Olduğu İçin Burayı Sadece Sıralayacağım
+
+533
+00:48:26,449 --> 00:48:28,449
+E ve E'den Dolayı Gittim
+
+534
+00:48:28,449 --> 00:48:30,449
+E ve D Gördüm
+
+535
+00:48:30,449 --> 00:48:32,449
+D Yukarı E Aşağı
+
+536
+00:48:32,449 --> 00:48:34,449
+I Şeklinde Kendi İçinde Sıralanacak
+
+537
+00:48:34,449 --> 00:48:36,449
+Bu Zaten Tek
+
+538
+00:48:36,449 --> 00:48:38,449
+Buraya Gelelim A ve A Gördük
+
+539
+00:48:38,449 --> 00:48:40,449
+Devam Et
+
+540
+00:48:40,449 --> 00:48:42,449
+B ve D Gördük
+
+541
+00:48:42,449 --> 00:48:44,449
+Neyse Şansımıza B Yukarıdaymış
+
+542
+00:48:44,449 --> 00:48:46,449
+Yer Değiştirmeye Gerek Kalmadı
+
+543
+00:48:46,449 --> 00:48:48,449
+E Zaten Tek
+
+544
+00:48:48,449 --> 00:48:50,449
+Sonra F'lere Bakalım
+
+545
+00:48:50,449 --> 00:48:52,449
+A E E
+
+546
+00:48:52,449 --> 00:48:54,449
+Şimdi Bu Basama MSD Yapacağız
+
+547
+00:48:54,449 --> 00:48:56,449
+A Tek Olduğu İçin Salla
+
+548
+00:48:56,449 --> 00:48:58,449
+E'lere Bakıyoruz
+
+549
+00:48:58,449 --> 00:49:00,449
+E'lerin Üçüncü Basamağına Git
+
+550
+00:49:00,449 --> 00:49:02,449
+A ve B Şeklinde Bunların Yer Değiştirmesini Sağla
+
+551
+00:49:02,449 --> 00:49:04,449
+Yani A
+
+552
+00:49:04,449 --> 00:49:06,449
+Ace
+
+553
+00:49:06,449 --> 00:49:08,449
+Ondan Sonra Bad
+
+554
+00:49:08,449 --> 00:49:10,449
+B
+
+555
+00:49:10,449 --> 00:49:12,449
+C A B
+
+556
+00:49:12,449 --> 00:49:14,449
+Sonra
+
+557
+00:49:14,449 --> 00:49:16,449
+Dap
+
+558
+00:49:16,449 --> 00:49:18,449
+Dap
+
+559
+00:49:18,449 --> 00:49:20,449
+E ve B
+
+560
+00:49:20,449 --> 00:49:22,449
+Ondan Sonra
+
+561
+00:49:22,449 --> 00:49:24,449
+Fed
+
+562
+00:49:24,449 --> 00:49:26,449
+Fed ve Fi Şeklinde Sıralanmasını Sağladık
+
+563
+00:49:26,449 --> 00:49:28,449
+Farkındaysanız
+
+564
+00:49:28,449 --> 00:49:30,449
+Eğer Tekil Kalıyorsa
+
+565
+00:49:30,449 --> 00:49:32,449
+Devamına Bakmama Gerek Kalmıyor
+
+566
+00:49:32,449 --> 00:49:34,449
+Yani Bir Karaktere Kadar Düşürdüğümde Gerisi
+
+567
+00:49:34,449 --> 00:49:36,449
+Zaten Otomatik Olarak Sıralandı
+
+568
+00:49:36,449 --> 00:49:38,449
+MSD'den Dolayı Diyerek
+
+569
+00:49:38,449 --> 00:49:40,449
+Burada Belli Bir Kâr
+
+570
+00:49:40,449 --> 00:49:42,449
+Elde Edebiliyorum Yani Belli
+
+571
+00:49:42,449 --> 00:49:44,449
+Karşılaştırmalardan Kaçınabiliyorum
+
+572
+00:49:44,449 --> 00:49:46,449
+Kötü Yanıda
+
+573
+00:49:46,449 --> 00:49:48,449
+İşte Şu
+
+574
+00:49:48,449 --> 00:49:50,449
+Şeyde Gördük
+
+575
+00:49:50,449 --> 00:49:52,449
+Alternative ve Alternative De Gördük
+
+576
+00:49:52,449 --> 00:49:54,449
+Böyle Aynı Karakterler Çok Fazla Eşit
+
+577
+00:49:54,449 --> 00:49:56,449
+Gidiyorsa O Zaman Onların Hepsine
+
+578
+00:49:56,449 --> 00:49:58,449
+Bakmak Zorunda Kalıyorsunuz
+
+579
+00:49:58,449 --> 00:50:00,449
+Şimdi
+
+580
+00:50:00,449 --> 00:50:02,449
+Yine Kitaptan Bir Örnek
+
+581
+00:50:02,449 --> 00:50:04,449
+Özellikle Şuradaki Rekursif Yapıyı
+
+582
+00:50:04,449 --> 00:50:06,449
+Görmeniz Açısından
+
+583
+00:50:06,449 --> 00:50:08,449
+C
+
+584
+00:50:08,449 --> 00:50:10,449
+Tekerleme Gibi
+
+585
+00:50:10,449 --> 00:50:12,449
+She Says She Says
+
+586
+00:50:12,449 --> 00:50:14,449
+By The Seashore
+
+587
+00:50:14,449 --> 00:50:16,449
+She Says
+
+588
+00:50:16,449 --> 00:50:18,449
+Are Surely She Says
+
+589
+00:50:18,449 --> 00:50:20,449
+Söyleyebildim Galiba Evet
+
+590
+00:50:20,449 --> 00:50:22,449
+Kartal Kalkar Dal Sarkar
+
+591
+00:50:22,449 --> 00:50:24,449
+Gibi Bir Şey Bu Tamam
+
+592
+00:50:24,449 --> 00:50:26,449
+Bunu Önce
+
+593
+00:50:26,449 --> 00:50:28,449
+MSD'lerine Göre Sıraladım
+
+594
+00:50:28,449 --> 00:50:30,449
+Bir Sürü S Var Yine
+
+595
+00:50:30,449 --> 00:50:32,449
+Counting Sort Burda İşime Yarayacak
+
+596
+00:50:32,449 --> 00:50:34,449
+Ve A B Bir Sürü
+
+597
+00:50:34,449 --> 00:50:36,449
+S T T
+
+598
+00:50:36,449 --> 00:50:38,449
+Şimdi A Zaten Tek
+
+599
+00:50:38,449 --> 00:50:40,449
+Sıralamış Oldum Bu Kelime En Başta Olacak
+
+600
+00:50:40,449 --> 00:50:42,449
+B Tek Bunuda Sıraladım
+
+601
+00:50:42,449 --> 00:50:44,449
+Hemen Sona Geçiyim
+
+602
+00:50:44,449 --> 00:50:46,449
+Normalde S'leri Bitireceğimde
+
+603
+00:50:46,449 --> 00:50:48,449
+D'ya Yürüttüğünüzde
+
+604
+00:50:48,449 --> 00:50:50,449
+T'ler Aynı H'ler Aynı E'ler Aynı
+
+605
+00:50:50,449 --> 00:50:52,449
+Zaten Sıralı Deyip Şurayıda Bitireceksiniz
+
+606
+00:50:52,449 --> 00:50:54,449
+Demek ki Burda Sadece 3 Karşılaştırma
+
+607
+00:50:54,449 --> 00:50:56,449
+2 Karşılaştırma
+
+608
+00:50:56,449 --> 00:50:58,449
+Yapacaksınız
+
+609
+00:50:58,449 --> 00:51:00,449
+Şimdi Aradaki S'lere Bakalım
+
+610
+00:51:00,449 --> 00:51:02,449
+Yani Aslında
+
+611
+00:51:02,449 --> 00:51:04,449
+Şurayı Bir Dakika
+
+612
+00:51:08,119 --> 00:51:10,119
+Aslında
+
+613
+00:51:10,119 --> 00:51:12,119
+Sadece Şurayı
+
+614
+00:51:12,119 --> 00:51:14,119
+Yeşille İşaretlediğim
+
+615
+00:51:14,119 --> 00:51:16,119
+Alanı Artık Radix Sorta
+
+616
+00:51:16,119 --> 00:51:18,119
+Sokacağız Ne Yapacağız
+
+617
+00:51:18,119 --> 00:51:20,119
+H Var E'ler Var
+
+618
+00:51:20,119 --> 00:51:22,119
+U Var O Kadar
+
+619
+00:51:22,119 --> 00:51:24,119
+3 Tane Tekil Karakter Varmış
+
+620
+00:51:24,119 --> 00:51:26,119
+Ne Yapacağız E'ler Yukarı
+
+621
+00:51:26,119 --> 00:51:28,119
+Cells
+
+622
+00:51:28,119 --> 00:51:30,119
+C Shells
+
+623
+00:51:30,119 --> 00:51:32,119
+C Shells
+
+624
+00:51:32,119 --> 00:51:34,119
+Bunlar Yukarı C Shells
+
+625
+00:51:34,119 --> 00:51:36,119
+Tamam 5 Tane E Buraya Geldi
+
+626
+00:51:36,119 --> 00:51:38,119
+İşte 4 Tane H Buraya Geldi
+
+627
+00:51:38,119 --> 00:51:40,119
+U Buraya Geldi Aslında
+
+628
+00:51:40,119 --> 00:51:42,119
+U La Da İşimiz Bitti Diyabiliriz
+
+629
+00:51:42,119 --> 00:51:44,119
+Çünkü Tek Burayıda Sonda Kalacağını
+
+630
+00:51:44,119 --> 00:51:46,119
+S'lerin İçinde Sonda Kalacağını Garanti Ettik
+
+631
+00:51:46,119 --> 00:51:48,119
+Şimdi E'ler Var
+
+632
+00:51:48,119 --> 00:51:50,119
+E'ler De Birden Çok
+
+633
+00:51:50,119 --> 00:51:52,119
+O Zaman Rekursif Olarak Burayı Şimdi
+
+634
+00:51:52,119 --> 00:51:54,119
+M S D'ye Sokmak Zorundayım
+
+635
+00:51:54,119 --> 00:51:56,119
+N'lere Bakacağım
+
+636
+00:51:56,119 --> 00:51:58,119
+L A L A Var Sadece
+
+637
+00:51:58,119 --> 00:52:00,119
+2 Karakter Var A'lar Yukarı
+
+638
+00:52:00,119 --> 00:52:02,119
+L'ler Aşağı Şeklinde Sıralandı
+
+639
+00:52:02,119 --> 00:52:04,119
+Yine Counting Sortla
+
+640
+00:52:04,119 --> 00:52:06,119
+Şimdi
+
+641
+00:52:06,119 --> 00:52:08,119
+A'lara Bakacağım
+
+642
+00:52:08,119 --> 00:52:10,119
+Burayı
+
+643
+00:52:10,119 --> 00:52:12,119
+Pardon
+
+644
+00:52:12,119 --> 00:52:14,119
+Şuradan Çizmeliydim
+
+645
+00:52:14,119 --> 00:52:16,119
+Hah
+
+646
+00:52:16,119 --> 00:52:18,119
+Şu Rayı M S D'ye Sokacağım
+
+647
+00:52:18,119 --> 00:52:20,119
+Yine Counting Sorta
+
+648
+00:52:20,119 --> 00:52:22,119
+Kendi İçinde Şimdi Bu Boş Var
+
+649
+00:52:22,119 --> 00:52:24,119
+Boş Yukarıda Kaldı
+
+650
+00:52:24,119 --> 00:52:26,119
+S ve S Var
+
+651
+00:52:26,119 --> 00:52:28,119
+S'leri Kendi İçinde Eşit Oldukları İçin
+
+652
+00:52:28,119 --> 00:52:30,119
+Yine Sıralamalıyım Şurayı M S D'ye Sokmalıyım
+
+653
+00:52:30,119 --> 00:52:32,119
+H'ler Geldi
+
+654
+00:52:32,119 --> 00:52:34,119
+Allah Yarabbi Buraya Kadar
+
+655
+00:52:34,119 --> 00:52:36,119
+Tekrar Ondan Sonra
+
+656
+00:52:36,119 --> 00:52:38,119
+E'ler Aynı L'leri Tekrar
+
+657
+00:52:38,119 --> 00:52:40,119
+L'ler Aynı L'leri Tekrar
+
+658
+00:52:40,119 --> 00:52:42,119
+L'ler Aynı S'leri
+
+659
+00:52:42,119 --> 00:52:44,119
+S'ye Bitti
+
+660
+00:52:44,119 --> 00:52:46,119
+Sişaz Sişaz Şeklinde Sıralanmış Oldu
+
+661
+00:52:46,119 --> 00:52:48,119
+Bunun Aynısını Bakın
+
+662
+00:52:48,119 --> 00:52:50,119
+A İçin S İçin H İçin Yaptık Yaptık
+
+663
+00:52:50,119 --> 00:52:52,119
+Buraya Kadar Geri Geldim
+
+664
+00:52:52,119 --> 00:52:54,119
+S'yi Bitirmiştim Geri Geldim
+
+665
+00:52:54,119 --> 00:52:56,119
+A'ları Bitirdim
+
+666
+00:52:56,119 --> 00:52:58,119
+A'ları Bitirdikten Sonra
+
+667
+00:52:58,119 --> 00:53:00,119
+L'ler İçin Yaptım
+
+668
+00:53:00,119 --> 00:53:02,119
+L S L S
+
+669
+00:53:02,119 --> 00:53:04,119
+Bir Dakika
+
+670
+00:53:04,119 --> 00:53:06,119
+L S L S
+
+671
+00:53:06,119 --> 00:53:08,119
+Ondan Sonra S
+
+672
+00:53:08,119 --> 00:53:10,119
+Burayı Kendi İçinde Sıralamış Oldum
+
+673
+00:53:10,119 --> 00:53:12,119
+Sonra Geri Geldim
+
+674
+00:53:12,119 --> 00:53:14,119
+Şuradan Başka Bir Renk Seçelim
+
+675
+00:53:14,119 --> 00:53:16,119
+Geldim E'leri Bitirdiğim İçin
+
+676
+00:53:16,119 --> 00:53:18,119
+H'lere Devam Ettim
+
+677
+00:53:18,119 --> 00:53:20,119
+E Tek
+
+678
+00:53:20,119 --> 00:53:22,119
+Şurayı
+
+679
+00:53:22,119 --> 00:53:24,119
+Şöyle İşaretliyim
+
+680
+00:53:24,119 --> 00:53:26,119
+Şunu Yaptım
+
+681
+00:53:26,119 --> 00:53:28,119
+E O Ve E Var
+
+682
+00:53:28,119 --> 00:53:30,119
+O Aşağı Gidecek
+
+683
+00:53:30,119 --> 00:53:32,119
+E'ler Kendi İçinde Tabi Bu Burda Sıralanmadı İçin
+
+684
+00:53:32,119 --> 00:53:34,119
+Şimdi Gösteremeyeceğim
+
+685
+00:53:34,119 --> 00:53:36,119
+Sonrasında 3.leri 2.leri
+
+686
+00:53:36,119 --> 00:53:38,119
+Dördüncüleri Yapıp
+
+687
+00:53:38,119 --> 00:53:40,119
+Bunuda Bitirdikten Sonra
+
+688
+00:53:40,119 --> 00:53:42,119
+U Tek Kaldı Buraya Geri Geleceğim
+
+689
+00:53:42,119 --> 00:53:44,119
+Buradakiler Bittiği İçin Aşağı Gideceğim
+
+690
+00:53:44,119 --> 00:53:46,119
+Tığları Yapmaya Devam Edicem
+
+691
+00:53:46,119 --> 00:53:48,119
+Yani Böyle
+
+692
+00:53:48,119 --> 00:53:50,119
+Adım Adım Birinci Karakterler
+
+693
+00:53:50,119 --> 00:53:52,119
+İkinci Karakterler
+
+694
+00:53:52,119 --> 00:53:54,119
+İkinci Karakterlerin İçinde 3.ler
+
+695
+00:53:54,119 --> 00:53:56,119
+3.lerin İçinde 4.ler
+
+696
+00:53:56,119 --> 00:53:58,119
+4.lerin İçinde 5.ler Şeklinde
+
+697
+00:53:58,119 --> 00:54:00,119
+Rekürsif Olarak Derine Kadar
+
+698
+00:54:00,119 --> 00:54:02,119
+İnip Sonra Toplayarak Geri Çıkıp
+
+699
+00:54:02,119 --> 00:54:04,119
+Kaldığım Yerden
+
+700
+00:54:04,119 --> 00:54:06,119
+Şurada Kalmıştım Devam Edeyim
+
+701
+00:54:06,119 --> 00:54:08,119
+Şurada Geri Dön
+
+702
+00:54:08,119 --> 00:54:10,119
+Şimdi Sıralamada
+
+703
+00:54:10,119 --> 00:54:12,119
+Pop Ettiğinizi Düşünün
+
+704
+00:54:12,119 --> 00:54:14,119
+Zaten Function Call Stack'ten Gelecekler
+
+705
+00:54:14,119 --> 00:54:16,119
+Burdan Sonra More'lar
+
+706
+00:54:16,119 --> 00:54:18,119
+Bilmem Neler Diye Yoluna Devam Edecek
+
+707
+00:54:18,119 --> 00:54:20,119
+Yani Burda Eğer
+
+708
+00:54:20,119 --> 00:54:22,119
+Aynı Kelimeler Varsa
+
+709
+00:54:22,119 --> 00:54:24,119
+Sıralamada Aynı Değerler Varsa
+
+710
+00:54:24,119 --> 00:54:26,119
+O Zaman
+
+711
+00:54:26,119 --> 00:54:28,119
+Fazla Sayıda Karşılaştırma Yapmak
+
+712
+00:54:28,119 --> 00:54:30,119
+Zorunda Kalıyorsunuz
+
+713
+00:54:30,119 --> 00:54:32,119
+Ama Eğer Yoksa Çok Hızlı Bir Şekilde
+
+714
+00:54:32,119 --> 00:54:34,119
+Kalan Karakterlere Bakma Kardeşim
+
+715
+00:54:34,119 --> 00:54:36,119
+Deyip Devam Edebiliyorsunuz
+
+716
+00:54:36,119 --> 00:54:40,900
+Artısı Var
+
+717
+00:54:40,900 --> 00:54:42,900
+Tamam Bu Şey
+
+718
+00:54:42,900 --> 00:54:44,900
+Söyledik Söyledik Söyledik
+
+719
+00:54:44,900 --> 00:54:46,900
+End Of
+
+720
+00:54:46,900 --> 00:54:48,900
+String Gördüğümüzde Yukarı Gitmesi
+
+721
+00:54:48,900 --> 00:54:50,900
+Gerektiğini Söyledik Tamam
+
+722
+00:54:50,900 --> 00:54:52,900
+Burda Sıkıntı Hepsi
+
+723
+00:54:52,900 --> 00:54:54,900
+Eşit Olduğunda Teker Teker
+
+724
+00:54:54,900 --> 00:54:56,900
+Hepsini Çağırmak Zorunda
+
+725
+00:54:56,900 --> 00:54:58,900
+Kalmanız
+
+726
+00:54:58,900 --> 00:55:00,900
+Bu Yüzdende İşte Özellikle
+
+727
+00:55:00,900 --> 00:55:02,900
+Küçük Parçalar Olduğunda Bir De
+
+728
+00:55:02,900 --> 00:55:04,900
+Yavaş Çalışıyor Tüm Sayaçları
+
+729
+00:55:04,900 --> 00:55:06,900
+Sıfırlıyoruz Bilmem Ne Yapıyoruz
+
+730
+00:55:06,900 --> 00:55:08,900
+O Yüzden Biz Aslında
+
+731
+00:55:08,900 --> 00:55:10,900
+Algoritmeye Geri Gidecek Olursak
+
+732
+00:55:10,900 --> 00:55:12,900
+Küçük Parçalar İçin
+
+733
+00:55:12,900 --> 00:55:14,900
+Quick Sort Yapın Diyoruz
+
+734
+00:55:14,900 --> 00:55:16,900
+Burada Quick Sort Daha Mantıklı
+
+735
+00:55:16,900 --> 00:55:18,900
+Olacaktır Diyoruz Ama
+
+736
+00:55:18,900 --> 00:55:20,900
+Insertion Sort Da Olur Tabi
+
+737
+00:55:20,900 --> 00:55:22,900
+Sıkıntı Değil Ama Başka Bir Sort
+
+738
+00:55:22,900 --> 00:55:24,900
+Yapın Bu
+
+739
+00:55:24,900 --> 00:55:26,900
+MSD Radix Sort Burda Maliyetli Olacaktır
+
+740
+00:55:26,900 --> 00:55:28,900
+Diyoruz Özellikle
+
+741
+00:55:28,900 --> 00:55:30,900
+Parçalarınız Küçüldüğünde
+
+742
+00:55:30,900 --> 00:55:32,900
+Yine
+
+743
+00:55:32,900 --> 00:55:34,900
+Rekursif Yapı Yüzünden
+
+744
+00:55:34,900 --> 00:55:36,900
+Çok Fazla Küçük Parça Oluşabilir
+
+745
+00:55:36,900 --> 00:55:38,900
+Özellikle De
+
+746
+00:55:38,900 --> 00:55:40,900
+Gördünüz Hani Farklı Karakterler
+
+747
+00:55:40,900 --> 00:55:42,900
+Bize Şey Yapıyor Aslında Aynı Karakterleri
+
+748
+00:55:42,900 --> 00:55:44,900
+Kullanmak Tek Bir
+
+749
+00:55:44,900 --> 00:55:46,900
+MSD
+
+750
+00:55:46,900 --> 00:55:48,900
+Rekursiyon İçinde Daha Çok
+
+751
+00:55:48,900 --> 00:55:50,900
+Şeyi Sıralamamızı Sağlıyor
+
+752
+00:55:50,900 --> 00:55:52,900
+Bütün Harflerin Hep Farklı Geldiğini
+
+753
+00:55:52,900 --> 00:55:54,900
+Düşünün Yani Sürekli
+
+754
+00:55:54,900 --> 00:55:56,900
+Alfabe Kadar Birinci Karakterler
+
+755
+00:55:56,900 --> 00:55:58,900
+İkinci Karakterler Düşüncü Karakterler
+
+756
+00:55:58,900 --> 00:56:00,900
+Çok Hep Farklı Arifler Geliyor
+
+757
+00:56:00,900 --> 00:56:02,900
+O Zaman Ben Her Birinde Bunu Yapa Yapa
+
+758
+00:56:02,900 --> 00:56:04,900
+İki Boyutlu En Dölü İki Parçaya Kadar
+
+759
+00:56:04,900 --> 00:56:06,900
+İnmem Gerekecek
+
+760
+00:56:06,900 --> 00:56:08,900
+Sürekli Olarak Böyle Yaptığımda
+
+761
+00:56:08,900 --> 00:56:10,900
+Bir Yine Bu Şey
+
+762
+00:56:10,900 --> 00:56:12,900
+Rekursiyon Overheadi Yüzünden
+
+763
+00:56:12,900 --> 00:56:14,900
+Çok Fazla İçlem Yapmış Olacağım
+
+764
+00:56:14,900 --> 00:56:16,900
+Ya da Gereksiz İçlem Yapmış Olacağım
+
+765
+00:56:18,900 --> 00:56:20,900
+Karmaşayı Arttırmış Olacağım Yani Aslında
+
+766
+00:56:20,900 --> 00:56:22,900
+Zaman Karmaşıklığında Arttırmış Olacağım
+
+767
+00:56:22,900 --> 00:56:24,900
+Demek ki Eğer
+
+768
+00:56:24,900 --> 00:56:26,900
+Tekrarlı Harfleriniz Varsa
+
+769
+00:56:26,900 --> 00:56:28,900
+Ve
+
+770
+00:56:28,900 --> 00:56:30,900
+Aynı Şeyler Tekrarlı
+
+771
+00:56:30,900 --> 00:56:32,900
+Harf Dedim
+
+772
+00:56:32,900 --> 00:56:34,900
+Alfabeniz Genel olarak Küçükse
+
+773
+00:56:34,900 --> 00:56:36,900
+Ve
+
+774
+00:56:36,900 --> 00:56:38,900
+Parçalarınız O Kadar Küçük
+
+775
+00:56:38,900 --> 00:56:40,900
+Değil Aynı Şey
+
+776
+00:56:40,900 --> 00:56:42,900
+Küçük Bir Alfabeden Pek Çok Kelime
+
+777
+00:56:42,900 --> 00:56:44,900
+Ayrı Kelime Türetiyorsanız
+
+778
+00:56:44,900 --> 00:56:46,900
+Radix Sort Burda Daha İyi Çalışacaktır
+
+779
+00:56:46,900 --> 00:56:48,900
+Ama Hepsi
+
+780
+00:56:48,900 --> 00:56:50,900
+Birbirine Yakın Ya da Aynı
+
+781
+00:56:50,900 --> 00:56:52,900
+Kelimelerin Tekrarlı Kelimelerden
+
+782
+00:56:52,900 --> 00:56:54,900
+Oluşan Bir Yapıda
+
+783
+00:56:54,900 --> 00:56:56,900
+Çok Fazla Rekursiyon Yapacağınız İçin
+
+784
+00:56:56,900 --> 00:56:58,900
+Bu Çok Mantıklı
+
+785
+00:56:58,900 --> 00:57:00,900
+İyi Çalışmayacaktır
+
+786
+00:57:00,900 --> 00:57:02,900
+Ve Mantıklı Bir Yöntem Olmayacaktır
+
+787
+00:57:02,900 --> 00:57:04,900
+Burada Problemin Ya Doğrusu
+
+788
+00:57:04,900 --> 00:57:06,900
+Verinin Doğasına Göre
+
+789
+00:57:06,900 --> 00:57:08,900
+Farklı Bir Yöntem Seçmek
+
+790
+00:57:08,900 --> 00:57:10,900
+Mesela
+
+791
+00:57:10,900 --> 00:57:12,900
+Insertion Sortu Kullanmak Daha
+
+792
+00:57:12,900 --> 00:57:14,900
+Doğru Olabilir
+
+793
+00:57:14,900 --> 00:57:16,900
+Radix Sortun
+
+794
+00:57:16,900 --> 00:57:18,900
+İyi Yanlarıda O Kadarda Hani
+
+795
+00:57:18,900 --> 00:57:20,900
+Gönmeyelim Hani Hep Böyle O Çok
+
+796
+00:57:20,900 --> 00:57:22,900
+Rekurjim Var O Çok Şey Overhead Oluyor
+
+797
+00:57:22,900 --> 00:57:24,900
+Falan Diyoruz Ama İyi Yanları
+
+798
+00:57:24,900 --> 00:57:26,900
+Çoğu Zaman Tüm Karakterleri
+
+799
+00:57:26,900 --> 00:57:28,900
+Karşılaştırmak Zorunda Kalmıyoruz
+
+800
+00:57:28,900 --> 00:57:30,900
+Örneğimize Tekrar Bakacak Olursak
+
+801
+00:57:30,900 --> 00:57:32,900
+Şurada Bu MSD'yi Karşılaştırmak
+
+802
+00:57:32,900 --> 00:57:34,900
+Zorundayız Zaten
+
+803
+00:57:34,900 --> 00:57:36,900
+Sonrasında Bu A'lar
+
+804
+00:57:36,900 --> 00:57:38,900
+İki Taneydi İkinci Karakterlerini Karşılaştırdım
+
+805
+00:57:38,900 --> 00:57:40,900
+Bedlerde
+
+806
+00:57:40,900 --> 00:57:42,900
+Bakın Bed Yukarıda Kaldı Artık Bu D'ye
+
+807
+00:57:42,900 --> 00:57:44,900
+Hiçbir Karşılaştırma Yapmama Gerek Yok
+
+808
+00:57:44,900 --> 00:57:46,900
+A'larıda C ve D'de
+
+809
+00:57:46,900 --> 00:57:48,900
+Sıraladığım İçin E ve D'ye Bir Daha
+
+810
+00:57:48,900 --> 00:57:50,900
+Bakmama Gerek Yok
+
+811
+00:57:50,900 --> 00:57:52,900
+C Tek Kaldı Bunlara Bakmama Gerek Yok
+
+812
+00:57:52,900 --> 00:57:54,900
+Şeklinde İlerlediğimden Dolayı
+
+813
+00:57:54,900 --> 00:57:56,900
+Bakın Burada Mesela
+
+814
+00:57:56,900 --> 00:57:58,900
+3 Kere 8
+
+815
+00:57:58,900 --> 00:58:00,900
+24 Tane Karakterim Var
+
+816
+00:58:00,900 --> 00:58:02,900
+Ben Sadece 19 Tane Karakter
+
+817
+00:58:02,900 --> 00:58:04,900
+Karşılaştırması Yaptım
+
+818
+00:58:04,900 --> 00:58:06,900
+Diğer Karakterleri Hiç Ellemedim
+
+819
+00:58:06,900 --> 00:58:08,900
+Onlara Hiç Bakmadım
+
+820
+00:58:08,900 --> 00:58:10,900
+Yani Yaklaşık Yüzde 80'ni Sadece
+
+821
+00:58:10,900 --> 00:58:12,900
+Karşılaştırmaya Soktum
+
+822
+00:58:12,900 --> 00:58:14,900
+Toplam Karakter Sayısını
+
+823
+00:58:14,900 --> 00:58:16,900
+Ve Değişken Uzunluklu Girdiler
+
+824
+00:58:16,900 --> 00:58:18,900
+Bizim Aslında İşimizi Kolaylaştırıyor
+
+825
+00:58:18,900 --> 00:58:20,900
+Mesela Sözlük Sıralıyoruz
+
+826
+00:58:20,900 --> 00:58:22,900
+Kısa Kerimeler Uzun Kerimeler Var
+
+827
+00:58:22,900 --> 00:58:24,900
+Bakın Aseton, Edition,
+
+828
+00:58:24,900 --> 00:58:26,900
+Badge, Be Dazzled
+
+829
+00:58:26,900 --> 00:58:28,900
+B-Hype Bir Sürü Kelime Görüyorsunuz
+
+830
+00:58:28,900 --> 00:58:30,900
+Burada
+
+831
+00:58:30,900 --> 00:58:32,900
+Al İlk Hepsini Bir Kere
+
+832
+00:58:32,900 --> 00:58:34,900
+Zaten Karşılaştırmak Zorundayım
+
+833
+00:58:34,900 --> 00:58:36,900
+Sonrasında Aseton ve
+
+834
+00:58:36,900 --> 00:58:38,900
+Edition'i Görüyoruz C D Zaten
+
+835
+00:58:38,900 --> 00:58:40,900
+Sıralı Artık Ben Buradakilerin
+
+836
+00:58:40,900 --> 00:58:42,900
+Hiç Bir Şeye Bakmama Gerek Yok
+
+837
+00:58:42,900 --> 00:58:44,900
+Şurda Badge
+
+838
+00:58:44,900 --> 00:58:46,900
+A'dan Dolayı Gerisine Bakmama Gerek Yok
+
+839
+00:58:46,900 --> 00:58:48,900
+B E ile Başlayan
+
+840
+00:58:48,900 --> 00:58:50,900
+B Dazzled
+
+841
+00:58:50,900 --> 00:58:52,900
+B Dazzled ve B Hype Var
+
+842
+00:58:52,900 --> 00:58:54,900
+Üçüncü Karakterlerine Baktığım Handa
+
+843
+00:58:54,900 --> 00:58:56,900
+Bunuda Sıraladığımdan Dolayı E ve D
+
+844
+00:58:56,900 --> 00:58:58,900
+Şeklinde Artık Gerisine Bakmama Gerek Yok
+
+845
+00:58:58,900 --> 00:59:00,900
+C Zaten Tek
+
+846
+00:59:00,900 --> 00:59:02,900
+Öyle Baktığımızda Sadece Şurda Bu
+
+847
+00:59:02,900 --> 00:59:04,900
+Dead Yüzünden Hepsine Bakıyoruz
+
+848
+00:59:04,900 --> 00:59:06,900
+64 Tane Toplam
+
+849
+00:59:06,900 --> 00:59:08,900
+Karakterim Var 19 Tanesine
+
+850
+00:59:08,900 --> 00:59:10,900
+Baktım Sadece
+
+851
+00:59:10,900 --> 00:59:12,900
+Karakterlerin Yüzde 30'unu
+
+852
+00:59:12,900 --> 00:59:14,900
+Karşılaştırmaya Sokarak
+
+853
+00:59:14,900 --> 00:59:16,900
+Ben Buradaki
+
+854
+00:59:16,900 --> 00:59:18,900
+Sıralama İşlemini
+
+855
+00:59:18,900 --> 00:59:20,900
+Gerçekleştirebildim
+
+856
+00:59:20,900 --> 00:59:22,900
+Yani Böyle Değişken Uzunluklu
+
+857
+00:59:22,900 --> 00:59:24,900
+Girdileriniz Varsa
+
+858
+00:59:24,900 --> 00:59:26,900
+O Zaman M S D Kullanmak ve
+
+859
+00:59:26,900 --> 00:59:28,900
+Özellikle de işte
+
+860
+00:59:28,900 --> 00:59:30,900
+Çok Böyle Birbirine Yakın Ya da
+
+861
+00:59:30,900 --> 00:59:32,900
+Aynı Girdileriniz Yoksa
+
+862
+00:59:32,900 --> 00:59:34,900
+M S D Kullanmak Çok Mantıklı
+
+863
+00:59:34,900 --> 00:59:36,900
+Ama Sabit Uzunluklu
+
+864
+00:59:36,900 --> 00:59:38,900
+Değerleriniz Varsa
+
+865
+00:59:38,900 --> 00:59:40,900
+Alfabeniz Küçükse
+
+866
+00:59:40,900 --> 00:59:42,900
+L S D Kullanmak Daha Mantıklı
+
+867
+00:59:42,900 --> 00:59:44,900
+Ama Bunlar Yoksa O Zaman
+
+868
+00:59:44,900 --> 00:59:46,900
+Başka Bir Yöntem İşte Mesela
+
+869
+00:59:46,900 --> 00:59:48,900
+Quick Sort Kullanmak Daha Mantıklı
+
+870
+00:59:48,900 --> 00:59:50,900
+Diyebilirsiniz Yani Space
+
+871
+00:59:50,900 --> 00:59:52,900
+Time Trade Off'unu Burada Karar
+
+872
+00:59:52,900 --> 00:59:54,900
+Vererek Çözmek Zorunda Kalırsınız
+
+873
+00:59:54,900 --> 00:59:56,900
+Son
+
+874
+00:59:56,900 --> 00:59:58,900
+Başlık Bir De
+
+875
+00:59:58,900 --> 01:00:00,900
+Şundan Bahsedelim
+
+876
+01:00:00,900 --> 01:00:02,900
+Böylece Haftaya Bir Daha Üzerinden
+
+877
+01:00:02,900 --> 01:00:04,900
+Geçmek Zorunda Kalmayız
+
+878
+01:00:04,900 --> 01:00:06,900
+Sıralama Yöntemlerinin Karşılaştırılması
+
+879
+01:00:06,900 --> 01:00:08,900
+Yani Ben Sıralama Yöntemleri Nasıl
+
+880
+01:00:08,900 --> 01:00:10,900
+Karşılaştırmalıyım Hangi Yöntemi
+
+881
+01:00:10,900 --> 01:00:12,900
+Nasıl Seçeceğim Bunu Sıralama
+
+882
+01:00:12,900 --> 01:00:14,900
+Yöntemleri Gibi Pek Çok Ya Arama Algo
+
+883
+01:00:14,900 --> 01:00:16,900
+İçinde Yapabilirsiniz
+
+884
+01:00:16,900 --> 01:00:18,900
+Hani Sadece
+
+885
+01:00:18,900 --> 01:00:20,900
+Sıralama İçin Düşünmeyin Ama
+
+886
+01:00:20,900 --> 01:00:22,900
+Çok Fazla Sıralama Örneği Verdiğimiz İçin
+
+887
+01:00:22,900 --> 01:00:24,900
+Sıralama Algo
+
+888
+01:00:24,900 --> 01:00:26,900
+Nasıl Karşılaştırılacağını Hangi Kriterlerle
+
+889
+01:00:26,900 --> 01:00:28,900
+Karşılaştırılacağını Şöyle Baksak
+
+890
+01:00:28,900 --> 01:00:30,900
+Tablo Halinde İyi
+
+891
+01:00:30,900 --> 01:00:32,900
+Olacaktır Sıralama Problemini
+
+892
+01:00:32,900 --> 01:00:34,900
+Önceden Söylemiştim Zaten
+
+893
+01:00:34,900 --> 01:00:36,900
+Küçüklük Büyüklük Açısından
+
+894
+01:00:36,900 --> 01:00:38,900
+Mantıklı Bir Çıktı Oluşturmaya
+
+895
+01:00:38,900 --> 01:00:40,900
+Çalışıyoruz Yani Aslında
+
+896
+01:00:40,900 --> 01:00:42,900
+A1 Üstü A2 Üstü
+
+897
+01:00:42,900 --> 01:00:44,900
+A1 Üstü A1 Üstünü Oluşturuyoruz
+
+898
+01:00:44,900 --> 01:00:46,900
+Öyle ki Hepsi Birbirinden Küçük Eşitti
+
+899
+01:00:46,900 --> 01:00:48,900
+Bu Şartı Sağladığınızda Sıralamış Olursunuz
+
+900
+01:00:48,900 --> 01:00:50,900
+Pek Çok Yerde Kullanılıyor
+
+901
+01:00:50,900 --> 01:00:52,900
+Bunlardan Bahsetmiştim
+
+902
+01:00:52,900 --> 01:00:54,900
+İşte Quick Sort'tan Çok Uzun Bahsettik
+
+903
+01:00:54,900 --> 01:00:56,900
+Ders Yaptık Mesela
+
+904
+01:00:56,900 --> 01:00:58,900
+Söylemedik Galiba Onu Burada
+
+905
+01:00:58,900 --> 01:01:00,900
+Ekleyelim 20. Yüzyılın
+
+906
+01:01:00,900 --> 01:01:02,900
+En İyi 10 Algoritmasından Biri
+
+907
+01:01:02,900 --> 01:01:04,900
+Seçilmiştir Quick Sort Yani Hani
+
+908
+01:01:04,900 --> 01:01:06,900
+Top 10 İçinde
+
+909
+01:01:06,900 --> 01:01:08,900
+Quick Sort Yer Alıyor O Kadar Efektif Bir
+
+910
+01:01:08,900 --> 01:01:10,900
+Sıralama Algoritma O Yüzden
+
+911
+01:01:10,900 --> 01:01:12,900
+Değerli Bir Çözüm
+
+912
+01:01:12,900 --> 01:01:14,900
+Olarak Karşımıza Çıkıyor Sıralamada
+
+913
+01:01:14,900 --> 01:01:16,900
+Neyse Şimdi Biz Sıralama Algoritmalarını
+
+914
+01:01:16,900 --> 01:01:18,900
+Değerlendirirken
+
+915
+01:01:18,900 --> 01:01:20,900
+Daha Başka Algoritmalarda
+
+916
+01:01:20,900 --> 01:01:22,900
+Yine Aslında Bir Space Time Trade
+
+917
+01:01:22,900 --> 01:01:24,900
+Of'a Mutlaka Bakıyoruz Yani Bir
+
+918
+01:01:24,900 --> 01:01:26,900
+Performansa Bakıyoruz
+
+919
+01:01:26,900 --> 01:01:28,900
+Başarım Diyoruz Buna Türkçe De Nedir
+
+920
+01:01:28,900 --> 01:01:30,900
+Bu Çalışma Zamanı Nedir
+
+921
+01:01:30,900 --> 01:01:32,900
+Çalışma Zamanı Ne Kadar
+
+922
+01:01:32,900 --> 01:01:34,900
+Sürer Karmaşıklığı Nedir
+
+923
+01:01:34,900 --> 01:01:36,900
+Ve Aslında
+
+924
+01:01:36,900 --> 01:01:38,900
+Bunu Doğuran Toplamda Yaptığınız
+
+925
+01:01:38,900 --> 01:01:40,900
+Karşılaştırma Ve Değişiklik
+
+926
+01:01:40,900 --> 01:01:42,900
+Yer Değişikliği Sayısı
+
+927
+01:01:42,900 --> 01:01:44,900
+Eğer Böyle Bir Değişiklik Falan Yapmıyorsanız
+
+928
+01:01:44,900 --> 01:01:46,900
+Kaç Kere Diziye Eriştiğiniz
+
+929
+01:01:46,900 --> 01:01:48,900
+Ekstra Dizi Kullandığınızı Düşündüğünüzde
+
+930
+01:01:50,900 --> 01:01:52,900
+Dize Erişim Sayısı Sizin
+
+931
+01:01:52,900 --> 01:01:54,900
+Performansınızı Ve Çalışma Zamanınızı Direk
+
+932
+01:01:54,900 --> 01:01:56,900
+Olarak Etkileyecektir Yani Burası İşte
+
+933
+01:01:56,900 --> 01:01:58,900
+Bizim Bu Hep Big O Dediğimiz
+
+934
+01:01:58,900 --> 01:02:00,900
+Taraf En
+
+935
+01:02:00,900 --> 01:02:02,900
+Mertebelerinde Ya Da İşte
+
+936
+01:02:02,900 --> 01:02:04,900
+En Karar Mertebelerinde Sürekli
+
+937
+01:02:04,900 --> 01:02:06,900
+Gezip Durduğumuz Taraf
+
+938
+01:02:06,900 --> 01:02:08,900
+İkincisi De
+
+939
+01:02:08,900 --> 01:02:10,900
+Space Komplexti
+
+940
+01:02:10,900 --> 01:02:12,900
+Yani Ekstra Bellek Ya Da Yer
+
+941
+01:02:12,900 --> 01:02:14,900
+Kullanımı
+
+942
+01:02:14,900 --> 01:02:16,900
+Burada Özellikle İşte
+
+943
+01:02:16,900 --> 01:02:18,900
+Bir Algoritmanın Ne Kadar Fazla
+
+944
+01:02:18,900 --> 01:02:20,900
+Yer İhtiyacı Olduğuna Bakarız
+
+945
+01:02:20,900 --> 01:02:22,900
+Ne Kadar Az Olursa Tabi ki O Kadar Tercih Sebebi
+
+946
+01:02:22,900 --> 01:02:24,900
+Olacaktır Şimdi Burada İki
+
+947
+01:02:24,900 --> 01:02:26,900
+Tane Sıralama Algoritmalarında Seçenek Vardır
+
+948
+01:02:26,900 --> 01:02:28,900
+Biri In Place
+
+949
+01:02:28,900 --> 01:02:30,900
+Sorttur Diğeri De
+
+950
+01:02:30,900 --> 01:02:32,900
+Out Of Place Sorttur Yani In Place Varsa
+
+951
+01:02:32,900 --> 01:02:34,900
+Out Of Place'in Olması Beklenir
+
+952
+01:02:34,900 --> 01:02:36,900
+Bu Şöyle Bir
+
+953
+01:02:36,900 --> 01:02:38,900
+Örnekle Çok Rahatlıkla
+
+954
+01:02:38,900 --> 01:02:40,900
+Bulabilirsin Yer Edebilir
+
+955
+01:02:40,900 --> 01:02:42,900
+Kafanızda Elinizde Bir Kütüphane
+
+956
+01:02:42,900 --> 01:02:44,900
+Var Kütüphanede Raflar
+
+957
+01:02:44,900 --> 01:02:46,900
+Kitaplar Var Diyelim ki
+
+958
+01:02:46,900 --> 01:02:48,900
+Tek Bir Raf'a Odaklanıyorsunuz
+
+959
+01:02:48,900 --> 01:02:50,900
+O Raftakileri Atıyorum
+
+960
+01:02:50,900 --> 01:02:52,900
+Yazarların İsmine Göre A'dan Z'ye Dizmek
+
+961
+01:02:52,900 --> 01:02:54,900
+İstiyorsunuz Şimdi Öyle Bir Şey Yapacaksınız
+
+962
+01:02:54,900 --> 01:02:56,900
+Ki Her Seferinde
+
+963
+01:02:56,900 --> 01:02:58,900
+Ya Çok Küçük Bir
+
+964
+01:02:58,900 --> 01:03:00,900
+Harici Bellek Kullanacaksınız
+
+965
+01:03:00,900 --> 01:03:02,900
+Ya Da Hiç Kullanmayacaksınız Hiç Kullanmamak Tabi ki
+
+966
+01:03:02,900 --> 01:03:04,900
+Olmaz Çünkü En Azından Bir Tane
+
+967
+01:03:04,900 --> 01:03:06,900
+Geçici Değişkene İhtiyaç Duyacaksınız
+
+968
+01:03:06,900 --> 01:03:08,900
+Ya En Az Bir Ya Da Çok
+
+969
+01:03:08,900 --> 01:03:10,900
+Kısıtlı Sayıda Hani
+
+970
+01:03:10,900 --> 01:03:12,900
+Üç Beş Tane Diyelim Bir
+
+971
+01:03:12,900 --> 01:03:14,900
+Ekstra Alan
+
+972
+01:03:14,900 --> 01:03:16,900
+Kullanacaksınız
+
+973
+01:03:18,900 --> 01:03:20,900
+Buna In Place Sort Adını Veriyoruz
+
+974
+01:03:20,900 --> 01:03:22,900
+Şöyle Düşünün Rafta On Tane
+
+975
+01:03:22,900 --> 01:03:24,900
+Kitap Var Ben Ya Her
+
+976
+01:03:24,900 --> 01:03:26,900
+Adımda Sadece Böyle Bir Tane Kitabı Alıp
+
+977
+01:03:26,900 --> 01:03:28,900
+Boşluk Yaratıp İkinci Kitabı
+
+978
+01:03:28,900 --> 01:03:30,900
+Oraya Koyabiliyorum Sadece
+
+979
+01:03:30,900 --> 01:03:32,900
+Elimde Tek Fazla Kitap Tutuyorum Ya Da Şöyle Bir
+
+980
+01:03:32,900 --> 01:03:34,900
+Kucak Yaptım Kendime Belki
+
+981
+01:03:34,900 --> 01:03:36,900
+İki Üç Tanesini Alıp Koyabiliyorum
+
+982
+01:03:36,900 --> 01:03:38,900
+O Kucağa Ondan Sonra
+
+983
+01:03:38,900 --> 01:03:40,900
+Onları Geri Koymak Zorunda
+
+984
+01:03:40,900 --> 01:03:42,900
+Kalıyorum Başka Her Hangi Bir Alan
+
+985
+01:03:42,900 --> 01:03:44,900
+Her Hangi Bir Mekan Kullanmıyorum
+
+986
+01:03:44,900 --> 01:03:46,900
+Bu Üzende Raftaki Kitapları
+
+987
+01:03:46,900 --> 01:03:48,900
+Yerinde Sıralamış Oldum
+
+988
+01:03:48,900 --> 01:03:50,900
+Ne Yaptım
+
+989
+01:03:50,900 --> 01:03:52,900
+Ekstra Alan Kullanmadım
+
+990
+01:03:52,900 --> 01:03:54,900
+In Place Sorting Yaptım
+
+991
+01:03:54,900 --> 01:03:56,900
+İşte Mesela
+
+992
+01:03:56,900 --> 01:03:58,900
+Risk Erişiminin Olmaması Gerekiyorsa
+
+993
+01:03:58,900 --> 01:04:00,900
+In Memory Çalışmanız Gerekiyorsa
+
+994
+01:04:00,900 --> 01:04:02,900
+Böyle Yöntemleri Kullanmak Daha Doğru Olacaktır
+
+995
+01:04:02,900 --> 01:04:04,900
+İkincisi De
+
+996
+01:04:04,900 --> 01:04:06,900
+Ya Benim Raft Şey
+
+997
+01:04:06,900 --> 01:04:08,900
+Maşallah
+
+998
+01:04:08,900 --> 01:04:10,900
+2 Metre 80 Santim
+
+999
+01:04:10,900 --> 01:04:12,900
+Eni Var Ve Zaten
+
+1000
+01:04:12,900 --> 01:04:14,900
+Çok Fazla Kitap Var Ben Bunları
+
+1001
+01:04:14,900 --> 01:04:16,900
+Her Seferinde Al Bir Tane Onu Al Binmem
+
+1002
+01:04:16,900 --> 01:04:18,900
+Bir Oraya Bu Buraya Git Gel Git Gel
+
+1003
+01:04:18,900 --> 01:04:20,900
+Uğraşamam Diyorsanız
+
+1004
+01:04:20,900 --> 01:04:22,900
+O Zaman Belki Şöyle Bir Şey
+
+1005
+01:04:22,900 --> 01:04:24,900
+Tercih Sebebiniz Olabilir Ya Dök
+
+1006
+01:04:24,900 --> 01:04:26,900
+Kardeşim Hepsini Yere
+
+1007
+01:04:26,900 --> 01:04:28,900
+Yere Dök Bunları Ondan Sonra Alıp Da
+
+1008
+01:04:28,900 --> 01:04:30,900
+Alırken Bunları Yere Yerleştir
+
+1009
+01:04:30,900 --> 01:04:32,900
+Ne Yapmış Olduk Böyle Mört Sort
+
+1010
+01:04:32,900 --> 01:04:34,900
+Tarzı Bir Şey Yapmış Olduk Ama Benim
+
+1011
+01:04:34,900 --> 01:04:36,900
+2 Metre 80 Santim
+
+1012
+01:04:36,900 --> 01:04:38,900
+Enindeki Bir Raftaki
+
+1013
+01:04:38,900 --> 01:04:40,900
+Bütün Kitaplar İçin En Az O Kadarlık
+
+1014
+01:04:40,900 --> 01:04:42,900
+Ekstra Bir Alana İhtiyacım Oldu
+
+1015
+01:04:42,900 --> 01:04:44,900
+Bu Da Ama
+
+1016
+01:04:44,900 --> 01:04:46,900
+Hızımı Arttırdı Belki Hani Bir Şeyleri
+
+1017
+01:04:46,900 --> 01:04:48,900
+Daha Hızlı Bir Şekilde Yerlerini
+
+1018
+01:04:48,900 --> 01:04:50,900
+Yerleştirmemi Sağladı Böyle
+
+1019
+01:04:50,900 --> 01:04:52,900
+Out Of Place
+
+1020
+01:04:52,900 --> 01:04:54,900
+Sort İşlemleri De Olabilir
+
+1021
+01:04:54,900 --> 01:04:56,900
+Yine Bu Disk
+
+1022
+01:04:56,900 --> 01:04:58,900
+Ünitelerinde Falan Da Filanda Bilmem
+
+1023
+01:04:58,900 --> 01:05:00,900
+Ne De Sıklıkla Rastlanan Bir
+
+1024
+01:05:00,900 --> 01:05:02,900
+Sıralama Yaklaşımı
+
+1025
+01:05:02,900 --> 01:05:04,900
+Algoritmaların
+
+1026
+01:05:04,900 --> 01:05:06,900
+Özelinde De Yine
+
+1027
+01:05:06,900 --> 01:05:08,900
+Karşılaştırma Kriterleri
+
+1028
+01:05:08,900 --> 01:05:10,900
+Farklaşabilir Yine Sıralama
+
+1029
+01:05:10,900 --> 01:05:12,900
+Algoritması Açısından Baktığımızda Bu
+
+1030
+01:05:12,900 --> 01:05:14,900
+Tekrar Eden Değerlerin
+
+1031
+01:05:14,900 --> 01:05:16,900
+Nasıl İşlendiğiyle
+
+1032
+01:05:16,900 --> 01:05:18,900
+Alakalıdır Burada Da 2
+
+1033
+01:05:18,900 --> 01:05:20,900
+Tane Aslında Bunları Hep Gördük Konuştuk Ama
+
+1034
+01:05:20,900 --> 01:05:22,900
+Şimdi Bir Daha Formal Tanımını
+
+1035
+01:05:22,900 --> 01:05:24,900
+Yapalım İstedim
+
+1036
+01:05:24,900 --> 01:05:26,900
+Stable Ve Unstable
+
+1037
+01:05:26,900 --> 01:05:28,900
+İkiye Ayırırız Yani
+
+1038
+01:05:28,900 --> 01:05:30,900
+Türkçe De İstikrarlı Ve İstikrarsız Dedim
+
+1039
+01:05:30,900 --> 01:05:32,900
+Kararlı Kararsız Da Diyebilirsiniz
+
+1040
+01:05:32,900 --> 01:05:34,900
+Siz Girdideki
+
+1041
+01:05:34,900 --> 01:05:36,900
+Tekrar Eden Değerleri
+
+1042
+01:05:36,900 --> 01:05:38,900
+Çıktıda Da Aynı
+
+1043
+01:05:38,900 --> 01:05:40,900
+Sırayla Oluşturuyorsanız
+
+1044
+01:05:40,900 --> 01:05:42,900
+Buna
+
+1045
+01:05:42,900 --> 01:05:44,900
+Stable Sort Adını Veririz
+
+1046
+01:05:44,900 --> 01:05:46,900
+Hani
+
+1047
+01:05:46,900 --> 01:05:48,900
+Aynı Sayı Var Mesela İşte
+
+1048
+01:05:48,900 --> 01:05:50,900
+4 Sayısı
+
+1049
+01:05:50,900 --> 01:05:52,900
+4 Kere Tekrar Etmiş
+
+1050
+01:05:52,900 --> 01:05:54,900
+Ben Geldiği Sırada Hani
+
+1051
+01:05:54,900 --> 01:05:56,900
+İlk 84 Kırmızıydı
+
+1052
+01:05:56,900 --> 01:05:58,900
+İkinci 84 Mordu
+
+1053
+01:05:58,900 --> 01:06:00,900
+Çıktığı Oluştururken Kırmızı 84
+
+1054
+01:06:00,900 --> 01:06:02,900
+Daha Önce
+
+1055
+01:06:02,900 --> 01:06:04,900
+Mor 84 Daha Sonra Kalmasını Garanti
+
+1056
+01:06:04,900 --> 01:06:06,900
+Edebiliyorsam O Zaman Stable
+
+1057
+01:06:06,900 --> 01:06:08,900
+Sorta Sahibimdir Ama Bunu
+
+1058
+01:06:08,900 --> 01:06:10,900
+Garanti Etmiyorsam Yok Kardeşim Ben
+
+1059
+01:06:10,900 --> 01:06:12,900
+Kaçıncı 84
+
+1060
+01:06:12,900 --> 01:06:14,900
+Başa Aldığımı Bilemem
+
+1061
+01:06:14,900 --> 01:06:16,900
+Garanti Edemem Diyorsak O Zaman
+
+1062
+01:06:16,900 --> 01:06:18,900
+Bir Unstable Sort
+
+1063
+01:06:18,900 --> 01:06:20,900
+Algoritmasıdır
+
+1064
+01:06:20,900 --> 01:06:22,900
+Farklı Yöntemlerde Farklı Algoritmalarda Da
+
+1065
+01:06:22,900 --> 01:06:24,900
+Farklı Kriterlerde Olabilir
+
+1066
+01:06:24,900 --> 01:06:26,900
+Şöyle Yapanlar Böyle Yapanlar
+
+1067
+01:06:26,900 --> 01:06:28,900
+Şeklinde Girdiğe Böyle
+
+1068
+01:06:28,900 --> 01:06:30,900
+Davrananlar Girdiğe Böyle Davranmayanlar
+
+1069
+01:06:30,900 --> 01:06:32,900
+Gibi Ayırabilirsiniz
+
+1070
+01:06:32,900 --> 01:06:34,900
+Hangisi Hangi Problemde
+
+1071
+01:06:34,900 --> 01:06:36,900
+İşinize Daha Çok Yarayacaksa
+
+1072
+01:06:36,900 --> 01:06:38,900
+Daha İyi Bir Çözüm Sağlayacaksa Size
+
+1073
+01:06:38,900 --> 01:06:40,900
+Onu Kullanabilirsiniz
+
+1074
+01:06:40,900 --> 01:06:42,900
+Stabilite Önemliyse
+
+1075
+01:06:42,900 --> 01:06:44,900
+Unstable Bir Yöntem Kullanamazsınız
+
+1076
+01:06:44,900 --> 01:06:46,900
+Ayrıca Quick Sort Kullanamazsınız
+
+1077
+01:06:46,900 --> 01:06:48,900
+Çünkü Quick Sort Tekrarların Yerini
+
+1078
+01:06:48,900 --> 01:06:50,900
+Garanti Etmez O Partitioning
+
+1079
+01:06:50,900 --> 01:06:52,900
+Yüzünden ve Justice Partitioning
+
+1080
+01:06:52,900 --> 01:06:54,900
+Yüzünden sağa sola
+
+1081
+01:06:54,900 --> 01:06:56,900
+Böyle Bunlar
+
+1082
+01:06:56,900 --> 01:06:58,900
+Öteleneceği İçin Savrulacağı İçin
+
+1083
+01:06:58,900 --> 01:07:00,900
+Değerler Girdedeki
+
+1084
+01:07:00,900 --> 01:07:02,900
+Sırayla Çıktıdaki Sıranın Aynı
+
+1085
+01:07:02,900 --> 01:07:04,900
+Tekrar eden Değerlerde Korunacağını
+
+1086
+01:07:04,900 --> 01:07:06,900
+Mesela Garanti Edemezsiniz
+
+1087
+01:07:06,900 --> 01:07:08,900
+Garanti Etmeniz Gerekiyorsa O Zaman
+
+1088
+01:07:08,900 --> 01:07:13,269
+Quick Sort Kullanamazsınız
+
+1089
+01:07:13,269 --> 01:07:15,269
+Temel Yöntemleri
+
+1090
+01:07:15,269 --> 01:07:17,269
+Kullanma Dijitalı
+
+1091
+01:07:17,269 --> 01:07:19,269
+Strut Mik Çözüm Yaklaşımlarıyla Şöyle Bir Daha Bakalım
+
+1092
+01:07:19,269 --> 01:07:21,269
+Brute Force Yöntemler Var Demiştik
+
+1093
+01:07:21,269 --> 01:07:23,269
+Brute Force Çözüm Yaklaşımı Var Demiştik
+
+1094
+01:07:23,269 --> 01:07:25,269
+Selection Sort
+
+1095
+01:07:25,269 --> 01:07:27,269
+Bubble Sort, Shell Sort Buraya Giriyor
+
+1096
+01:07:27,269 --> 01:07:29,269
+Decrease and Concord Oladabilir
+
+1097
+01:07:29,269 --> 01:07:31,269
+Olmayadabilir Yaklaşım
+
+1098
+01:07:31,269 --> 01:07:33,269
+Olarak Ama Böyle Bir
+
+1099
+01:07:33,269 --> 01:07:35,269
+Özel Ayrım Yapan Kaynaklar Var
+
+1100
+01:07:35,269 --> 01:07:37,269
+Insertion Sort Bunlardan Bir
+
+1101
+01:07:37,269 --> 01:07:39,269
+Tensin Yani Problem Uzayını
+
+1102
+01:07:39,269 --> 01:07:41,269
+Ufalta Ufalta
+
+1103
+01:07:41,269 --> 01:07:43,269
+Aynı Şekilde Ufalta Ufalta
+
+1104
+01:07:43,269 --> 01:07:50,269
+çözüme doğru ilerle bunu nasıl başarıyoruz işte aslında bu kartları sıralıyoruz ya elimizde bulduk
+
+1105
+01:07:50,269 --> 01:07:57,750
+başa koyduk artık en eksi birlik bir alanı aslında sıralıyoruz gibi düşünebiliriz bu sebeple hani
+
+1106
+01:07:57,750 --> 01:08:03,190
+bunda aslında brute force'dan çok farklı değil diyenler de olabilir çok kesin bir ayrım değil
+
+1107
+01:08:03,190 --> 01:08:08,869
+dediğim gibi ama böyle bir yaklaşım duyduğunuzda şaşırmayın işte problem uzayını sabit
+
+1108
+01:08:09,469 --> 01:08:18,270
+çözüme gitmek transform en konkür problemi başka bir şekle dönüştürüp orada çözümeni sağlamak
+
+1109
+01:08:18,270 --> 01:08:24,670
+biz bunu işte sortta nerede hip sortta yapıyorduk hip neyi garanti ediyordu hep işte max eleman
+
+1110
+01:08:24,670 --> 01:08:31,829
+birde her seferinde bunu yaparsam ve o hepten sürekli maks elemanı çekersem doğal olarak
+
+1111
+01:08:31,829 --> 01:08:36,590
+işte büyükten küçüğe sıralanmış bir dizi elde ederim ya da min hip ile küçükten büyüğe
+
+1112
+01:08:36,590 --> 01:08:43,149
+sıralanmış bir dizi elde edebilirim problemi dönüştürmek ve orada çözmek işte bu fast
+
+1113
+01:08:43,149 --> 01:08:51,750
+fluya transformu gibi frekans domainine geçip orada çözüp sonra tekrar geri uzaya döndüğünüzde
+
+1114
+01:08:51,750 --> 01:08:59,109
+Kartezin uzaya geri döndüğünüzde o problemi çözmüş olabiliyorsunuz Divaiden konkürde uzun
+
+1115
+01:08:59,109 --> 01:09:04,149
+uzun yine bunlarda konuştuk büyük problemleri alt problemlere aynı türden alt problemlere
+
+1116
+01:09:04,149 --> 01:09:11,350
+çözmek onu çözmek hani küçük parçalar küçük lokmaları çiğneyerek kolayca yutmak yuttuktan sonra
+
+1117
+01:09:11,350 --> 01:09:16,750
+tabi onları bir daha içeride birleştirmek gerekiyor konkür etmek gerekiyor [öğrenci] sort ve quick sort
+
+1118
+01:09:16,750 --> 01:09:21,949
+nda iki farklı yaklaşımda nasıl divayet ettiğini biri yere göre biri değere göre divayet
+
+1119
+01:09:21,949 --> 01:09:29,710
+ediyordu bunu öğrendik gördük bunun dışında [öğrenci] sortun tekrar şeyine bakmaya gerek
+
+1120
+01:09:29,710 --> 01:09:36,430
+yok sadece şey diyebiliriz işte en elemanı lo en logende sıralıyor bu iyi bir şey hatta
+
+1121
+01:09:36,430 --> 01:09:43,310
+altı en logende değil mi hatırlarsınız ama ekstra alan ihtiyacı var hem de en ile orantılı
+
+1122
+01:09:43,310 --> 01:09:49,630
+çünkü bir kopya dizi kullanmak zorundasınız in place mörç yapabilirsiniz ama orada da
+
+1123
+01:09:49,630 --> 01:09:57,750
+yine dizi ihtiyacınız olacak quick sort genel olarak en logen özellikle de işte pivot
+
+1124
+01:09:57,789 --> 01:10:03,989
+birini rastgele yaparsanız en logen ama en kötü durumda yapmazsanız hep birinciyi
+
+1125
+01:10:03,989 --> 01:10:12,069
+mesela seçtim derseniz enkaraya de gidebilirsiniz ama bu çok olası değil genellikle en logen zamanında
+
+1126
+01:10:12,069 --> 01:10:19,909
+quick sort işlemlerini gerçekleştirir [öğrenci] sortun tümlüğe ne olduğunu söyledik bunun
+
+1127
+01:10:19,909 --> 01:10:27,109
+[öğrenci] sorta göre artısı şu olabilir quick sort C logenlik bir ekstra alana ihtiyaç duyuyor
+
+1128
+01:10:27,109 --> 01:10:32,310
+constant ile çarpılmış logenlik bir ekstra alan var bu da rekursif çağrı yüzünden
+
+1129
+01:10:32,310 --> 01:10:41,510
+hani enlik yerine logenlik alan kullanmak ekstra işte cold stack için gereken alanı kullanmak
+
+1130
+01:10:41,510 --> 01:10:48,109
+şey rekursif cold stack için ayrılan alana ihtiyaç duymak en azından logen mertebesinin
+
+1131
+01:10:48,109 --> 01:10:54,710
+olduğu için tercih sebebi olabilir tabi ama burada da stabilite işin içinden kalkmış olacak
+
+1132
+01:10:54,710 --> 01:11:00,069
+dediğim gibi hani bir yöntem her yönü ile diğerlerinden daha üstün maalesef diyemiyoruz
+
+1133
+01:11:00,069 --> 01:11:08,270
+Radix sorttan bahsettik burada da ya lsd ya da msd şeklinde basamak basamak sıralama yapıyoruz
+
+1134
+01:11:08,270 --> 01:11:12,710
+yani şöylece kabaca şu ana kadar gördüğümüz algoritmalara bakacak olursak
+
+1135
+01:11:12,710 --> 01:11:19,949
+selection, insertion, shell, bubble sort aslında biz gördük shell sort değil ama aynı zaten
+
+1136
+01:11:20,949 --> 01:11:29,149
+merge, quick sort, radix lsd, radix msd ve heap sorta baktığımızda ortalama hani big o'daki
+
+1137
+01:11:29,149 --> 01:11:39,149
+karmaşıklıkları o n-kare, n-kare, n-kare, merge, n-logen, quick sort, n-logen, radix o-n
+
+1138
+01:11:39,149 --> 01:11:44,270
+mertebesine linear ama tabi katsayıları var burada katsayıları yazmadığımız için o-n şeklinde
+
+1139
+01:11:44,829 --> 01:11:54,989
+heap de de n-logen gerçek değerlerine bakarsak bu n-kare her zaman n-kare bu n-kare bölü 2 bu
+
+1140
+01:11:54,989 --> 01:12:03,310
+aslında en üzeri 3 bölü 2 mertebesinde gerçekte merge kesin n-logen zaten quick sort da
+
+1141
+01:12:03,310 --> 01:12:12,550
+yine random yaparsanız 1 bölü 1.39 n-logen'i sağlıyor bunun ispatına girmeyeceğim ama
+
+1142
+01:12:12,630 --> 01:12:19,909
+kaynak kullandığımız kitaplarda ispatı var merak edin oradan okuyabilir bu da 2nw burada işte tabi
+
+1143
+01:12:19,909 --> 01:12:26,229
+alfabe boyutu falan işin içine girmeye başlıyor 2nw şeklinde bunun da aslında karmaşıklığı
+
+1144
+01:12:26,229 --> 01:12:31,829
+buradaki w büyüdükçe doğal olarak n-kare'ye de gidebilirsiniz onun böyle bir ucu açık
+
+1145
+01:12:31,829 --> 01:12:39,430
+tehlikesi var n'den büyük bir şeyse zaten yandınız demektir heap de de aslında 2n-logen
+
+1146
+01:12:39,430 --> 01:12:45,430
+şeklinde bir karmaşamız mevcut yani heap sort da yine n-logen mertebesinde ama aslında 2n-logen
+
+1147
+01:12:45,430 --> 01:12:52,229
+de çalışıyor diyebiliriz peki şeylere bakalım stable mı değil mi stabilitelerine bakalım
+
+1148
+01:12:52,229 --> 01:13:00,310
+selection sort değil ama yerinde sıralıyor insertion sort evet yerinde sıralıyor shell
+
+1149
+01:13:00,310 --> 01:13:06,789
+sort istikrarlı değil yani yer değişebilir girdedekiler ama yerinde sıralama yine
+
+1150
+01:13:06,949 --> 01:13:14,789
+ekstra olan şeyi kullanmıyor merch evet istikrarlı hani girdeki sıra çıktı da korunuyor ama
+
+1151
+01:13:14,789 --> 01:13:21,750
+yerinde sıralamıyor external sort yapıyor quick sort da da istikrar yok ama yerinde sıralıyor
+
+1152
+01:13:21,750 --> 01:13:31,350
+tabi j-logenlik bir ekstra alan şeyiyle maliyetiyle radix ve şey iki radix de istikrarlı
+
+1153
+01:13:31,350 --> 01:13:37,750
+evet gördük zaten hani o sıralamayı okların çakışmaması nedeniyle sıralamayı koruyor ama
+
+1154
+01:13:37,750 --> 01:13:42,310
+bunlar da yerinde yine sıralama yapmıyor illaki harici şeylere ihtiyaç duyuyorsunuz
+
+1155
+01:13:42,310 --> 01:13:49,270
+alanlara birinde n artı re birinde de n artı dr burada da bir call stack var yine kadar
+
+1156
+01:13:49,270 --> 01:13:56,550
+ekstra alan ihtiyacınız oluşuyor heap sort yine maalesef heap yapısından dolayı stable
+
+1157
+01:13:56,630 --> 01:14:05,350
+ama in place sort yapabiliyor direk heap yapısının dizisinin içinde ekstra dizi kullanmadan
+
+1158
+01:14:05,350 --> 01:14:11,750
+bu işlemi gerçekleştirebiliyorsunuz ekstra alan o yüzden bir sadece tek bir geçici
+
+1159
+01:14:11,750 --> 01:14:17,750
+değişken tabi selection insertion ve shell de de bunlar bir merch de end mutlaka dizi kadar
+
+1160
+01:14:17,750 --> 01:14:24,229
+alana ihtiyaç duyduğumuzu söyledik şunları tartıştık ve gördüğünüz gibi şimdi hani
+
+1161
+01:14:24,310 --> 01:14:31,189
+ekstra alan mı istikrar mı yerinde sıralama mı bunda hepsini böyle süper yapan bir algoritma
+
+1162
+01:14:31,189 --> 01:14:38,550
+yok belki bir insersion sort şurada biraz daha böyle güzel gelmiş olabilir enkare mertebesinde
+
+1163
+01:14:38,550 --> 01:14:43,350
+ama en azından hem istikrarlı hem yerinde sıralıyor hem ekstra alana ihtiyacı yok
+
+1164
+01:14:43,350 --> 01:14:49,270
+işte o yüzden biz hani dizi ufalınca insersion sorta gidelim diyoruz ya genellikle
+
+1165
+01:14:49,350 --> 01:14:54,630
+7'den aşağı düştüğünde quick sort'un boyutu mesela insersion sort daha iyi diyoruz
+
+1166
+01:14:54,630 --> 01:15:01,189
+işte şu karmaşıklılardan aslında onu bulabilirsiniz mantıklı olan belli yani
+
+1167
+01:15:01,189 --> 01:15:07,670
+problemin ve verinin doğasına göre belli bir yere kadar bir yöntemi kullanıp ondan sonra
+
+1168
+01:15:07,670 --> 01:15:13,430
+kalanları belki partitionları kendi içinde başka bir şeyle devam etmekte olabilir ya da işte
+
+1169
+01:15:13,430 --> 01:15:18,470
+sabit uzunluklu olduğunu biliyorsanız belli karakter sayısından belli alfabeden oluştuğunu
+
+1170
+01:15:18,470 --> 01:15:24,229
+biliyorsanız direkt lsd radix sortu yapın en güzel yöntem odur diyebilirsiniz lineere
+
+1171
+01:15:24,229 --> 01:15:31,510
+yakın zamanda çalıştığı için işte sözlük girdileri gibi şeyleriniz varsa örnekte gördük
+
+1172
+01:15:31,510 --> 01:15:39,029
+radix msd kullanmak daha mantıklı olabilir öyle duruma göre birini seçip kullanabilirsiniz
+
+1173
+01:15:39,029 --> 01:15:45,750
+karşılaştırırken örnek olarak burada sıralama algoritmalarından geçtik ama başka algoritmaları
+
+1174
+01:15:45,829 --> 01:15:55,029
+karşılaştırırken böyle hem karmaşıklıklarına yani hem de hem time hem de space komplekslerine
+
+1175
+01:15:55,029 --> 01:16:03,350
+artı probleme özel ya da algoritmaya özel hani şöyle mi böyle mi gir diye böyle mi davranıyor
+
+1176
+01:16:03,350 --> 01:16:12,869
+yoksa şöyle davranmıyor mu şeklinde ekstra kriterleri de göz önüne alarak bir seçim
+
+1177
+01:16:12,869 --> 01:16:21,829
+yapmak zorunda kalabilirsiniz evet bu kadar yeter bugünlük
+
+1178
+01:16:21,829 --> 01:16:31,029
+ne yaptık bugün önce bir counting sort yaklaşımı öğrendik çok basit ve çok eski bir yaklaşım
+
+1179
+01:16:31,029 --> 01:16:39,149
+tek bir fikri var kaç kişi benden küçük bunu biliyorsanız eğer bunu sayabiliyorsanız siz de
+
+1180
+01:16:39,229 --> 01:16:45,869
+olarak işte o küçük artı birinci gözde durmayı garanti ediyorsunuz demektir buradan yola
+
+1181
+01:16:45,869 --> 01:16:50,109
+çıkarak da bunu basamak basamak tekrar ettiğimizde soldan sağ ya da sağdan sola
+
+1182
+01:16:50,109 --> 01:16:57,310
+msd ya da lsd radix sort yapabildiğimizi gördük son olarak da işte algoritmaların
+
+1183
+01:16:57,310 --> 01:17:02,229
+özellikle space time trade off'larını tartıştık sıralama algoritmaları üzerinden
+
+1184
+01:17:02,229 --> 01:17:09,670
+var ise başka ilave kriterler işte burada mesela stable unstable dedik bunları da yine
+
+1185
+01:17:09,670 --> 01:17:18,029
+karşılaştırma tablosunda mutlaka barındırmalıyız dedik ve algoritmalarımızı öyle hem space hem
+
+1186
+01:17:18,029 --> 01:17:26,029
+time hem de ilave kriterleri göz önüne alarak doğru zamanda doğru veri için doğru problemde
+
+1187
+01:17:26,029 --> 01:17:34,029
+veri için doğru yöntemi çözüm yöntemini seçmemiz ya da bulmamız gerektiğini tartıştık var mı
+
+1188
+01:17:34,029 --> 01:17:50,279
+soru yok Peki o zaman bu günlük dersimizi sonlandırabiliriz yarın da akşam şeye giriş
+
+1189
+01:17:50,279 --> 01:17:56,640
+yapacağız minimum spending tree'lere giriş yapacağız Önce bir cenerik bir metot bakacağız
+
+1190
+01:17:56,840 --> 01:18:02,439
+Düşüneceğiz üzerine de aslında cenerik metodun üzerine azıcık daha ilerleyerek kuru
+
+1191
+01:18:02,439 --> 01:18:10,680
+kalın msd algoritmasını inceleyeceğiz sonra da dururuz prim'in algoritmasında son hafta
+
+1192
+01:18:10,680 --> 01:18:17,720
+işleriz son haftada da prim'in msd algoritması ve diakstran'ın shortest pet algoritmasını
+
+1193
+01:18:17,720 --> 01:18:26,199
+görüp tanıyıp analizini yapıp dönemi kapatırız Peki hepinize iyi günler görüşmek
+
+1194
+01:18:26,199 --> 01:18:35,479
+dilerim yarın yılın son dersi son saatleri de görüşmek üzere dileyelim kendinize iyi bakın hoşçakalın
+

@@ -29,7 +29,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 | **Ders 13** | Dönem Projesi Sunumları | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
 
 > [!NOTE]
-> 1, 7 ve 8 numaralı kayıtlar arşivde yoktur; ders 13 (proje sunumları) için gizlilik nedeniyle yalnızca özet vardır.
+> 1, 7 ve 8 numaralı kayıtlar arşivde yoktur; 29 Ekim 2020 tatildir.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 

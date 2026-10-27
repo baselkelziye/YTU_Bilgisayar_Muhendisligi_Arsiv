@@ -1,0 +1,6056 @@
+1
+00:01:25,549 --> 00:01:30,549
+Sesimi duyabiliyor musunuz? Ekranda şu an bir slide paylaştım sunumu.
+
+2
+00:01:30,549 --> 00:01:32,549
+Evet, duyuyoruz.
+
+3
+00:01:32,549 --> 00:02:20,000
+Tamamdır. Toplam bir 90 kişi falanız galiba. Bir yarısı toplanmış şu an.
+
+4
+00:02:20,000 --> 00:02:49,909
+Can, diğerleri gelene kadar şeyi sorayım mı? Ben aslında gelince de sorabilirim ama.
+
+5
+00:02:49,909 --> 00:02:51,909
+Sor bakalım, önden başlayalım.
+
+6
+00:02:51,909 --> 00:02:58,909
+Bu lab dediğimiz şey böyle yine slide'lar gibi ilerliyor mu yoksa direkt bir şeyler mi yapacağız?
+
+7
+00:02:58,909 --> 00:03:03,909
+Aynen. Bu şimdi bu zamana kadar sizin lab olarak gördüğünüz şeyler genelde hep şey oluyordu.
+
+8
+00:03:03,909 --> 00:03:06,909
+Size soru veriliyordu, onu çözüyordunuz vesaire.
+
+9
+00:03:06,909 --> 00:03:12,909
+Vertabu'nun labında biz geçen yılda böyleydi. Bu yılda aynı şekilde ilerleyecek.
+
+10
+00:03:12,909 --> 00:03:18,909
+Sliden anlatıyoruz, SQL'e anlatıyoruz. Çünkü derste bu kadar detaylı görmüyorsunuz SQL komutlarını vesairesini.
+
+11
+00:03:18,909 --> 00:03:21,909
+O yüzden lablarda bunun anlatımını yapıyoruz.
+
+12
+00:03:21,909 --> 00:03:25,909
+Sadece geçen yıl nasıl oluyordu? Mesela siz bilgisayar başında olduğunuz için.
+
+13
+00:03:25,909 --> 00:03:31,909
+İşte ben bir şey gösteriyordum, anlatıyordum. Daha sonrasında hani mesela ben bir örnek çözüyorsam,
+
+14
+00:03:31,909 --> 00:03:37,909
+diğerini açıyordum. Hadi bunun adı bir de siz bir 5-10 dakika uğraşın diyordum. O şekilde ilerliyordu.
+
+15
+00:03:37,909 --> 00:03:43,909
+Bu sefer şimdi online de olunca tabii sizin hani öyle 5-10 dakika uğraşın demem.
+
+16
+00:03:43,909 --> 00:03:50,909
+Gerçi yine yapabiliriz belki onu. Siz kendi bilgisayarlarınıza kurduğunuz zaman ben ekrandan yine soruyu açarım.
+
+17
+00:03:50,909 --> 00:03:52,909
+Siz biraz uğraşabilirsiniz yine.
+
+18
+00:03:52,909 --> 00:03:57,909
+Onu bakarız ilerleyen zamanlarda nasıl yapacağımıza ama lapların işleşi.
+
+19
+00:03:57,909 --> 00:04:01,909
+Yani konu anlatımı şeklinde oluyor. Örnek çözümü, uygulamayı ben gösteriyorum yani.
+
+20
+00:04:01,909 --> 00:04:03,909
+O şekilde ilerleyeceğiz.
+
+21
+00:04:03,909 --> 00:04:06,909
+Okul varken o zaman normalde böyle değildi yani.
+
+22
+00:04:06,909 --> 00:04:09,909
+Okul varken de böyleydi işte. Anlatıyorduk sliden.
+
+23
+00:04:09,909 --> 00:04:12,909
+Sunumdan anlatıyorum, konuyu anlatıyorum, örnekler çözüyorum.
+
+24
+00:04:12,909 --> 00:04:17,910
+Arada dediğim gibi hani siz bilgisayar başındasınız. Sadece hadi bu sonra bir 5-10 dakika uğraşacaksın.
+
+25
+00:04:17,910 --> 00:04:21,910
+Tamamen kendinizi denemek için. Öyle not vermeli bir durumum olmuyordu lafların zaten.
+
+26
+00:04:21,910 --> 00:04:22,910
+Tamamlayacağım.
+
+27
+00:04:22,910 --> 00:04:23,910
+O şekilde ilerliyordu.
+
+28
+00:04:23,910 --> 00:04:25,910
+Yine öyle olacak.
+
+29
+00:04:25,910 --> 00:04:33,939
+60 kişilik çoğunluğa ulaşmışız.
+
+30
+00:04:33,939 --> 00:04:39,230
+Ufaktan başlayalım biz.
+
+31
+00:04:39,230 --> 00:04:44,769
+Şimdi ilk dersimiz SQL'e girişledik.
+
+32
+00:04:44,769 --> 00:04:53,339
+Veritabanın tanımından başlayalım en temelde.
+
+33
+00:04:53,339 --> 00:04:55,339
+Alalım konuyu.
+
+34
+00:04:55,339 --> 00:04:57,339
+Veritabanın dediğimiz olay ne?
+
+35
+00:04:57,339 --> 00:04:59,339
+Kabacı tabiriyle zaten biliyoruz.
+
+36
+00:04:59,339 --> 00:05:03,339
+Verilerin ve bunlar arasındaki ilişkilerin tutulduğu yerler.
+
+37
+00:05:03,339 --> 00:05:05,339
+Bunlar tablolar halinde tutuluyor.
+
+38
+00:05:05,339 --> 00:05:08,339
+Ve bunlar için özel bazı komutlar var.
+
+39
+00:05:08,339 --> 00:05:10,339
+Biz bunlarla bu verileri bu tablalara yazıyoruz.
+
+40
+00:05:10,339 --> 00:05:13,339
+Bu tablalardan geri çekip sorgulatabiliyoruz.
+
+41
+00:05:13,339 --> 00:05:17,339
+Şimdi bunu biraz daha böyle anlaşıklılık kılabilmek adına.
+
+42
+00:05:17,339 --> 00:05:21,709
+Şimdi ben konuya da çok şey değilim.
+
+43
+00:05:21,709 --> 00:05:23,709
+Arkadaşlar 5 dakikaya falan mı toplanıyor?
+
+44
+00:05:23,709 --> 00:05:24,709
+Yoksa beklese miydik?
+
+45
+00:05:24,709 --> 00:05:26,709
+Ona da bir emin olamadım şimdi.
+
+46
+00:05:26,709 --> 00:05:28,709
+Hocam bence de 1-2 dakika daha bekleseniz.
+
+47
+00:05:28,709 --> 00:05:30,709
+Biraz bekleyeyim o zamanlar.
+
+48
+00:05:30,709 --> 00:05:32,709
+Çoğunlukla geliyor millet tersi.
+
+49
+00:05:32,709 --> 00:05:33,709
+Ders zamanına geliyorlar.
+
+50
+00:05:33,709 --> 00:05:35,709
+Lab'ları daha çok gelirler bence.
+
+51
+00:05:35,709 --> 00:05:37,709
+Tamam o zaman azıcık daha bekleyeyim.
+
+52
+00:05:37,709 --> 00:05:39,709
+Bu benim ilk tecrübem.
+
+53
+00:05:39,709 --> 00:05:42,709
+Kendim de ne dersi aldım ne dersi verdim o yüzden.
+
+54
+00:05:42,709 --> 00:05:44,709
+Siz beni böyle bazen durdurun uyarın bir şey yapın.
+
+55
+00:05:44,709 --> 00:05:47,709
+Yanlış bir şey görürseniz ekranda da söyleyin.
+
+56
+00:05:47,709 --> 00:05:48,709
+Tamam hocam.
+
+57
+00:05:48,709 --> 00:05:50,709
+Ben burada iken elimden geleni yaparım.
+
+58
+00:05:50,709 --> 00:05:52,709
+Ben de bazen katılamıyorum iş yüzünden.
+
+59
+00:05:52,709 --> 00:05:54,709
+Ama çoğunlukla buradayım.
+
+60
+00:05:54,709 --> 00:05:55,709
+Teşekkürler.
+
+61
+00:05:55,709 --> 00:05:56,709
+Rica ederim.
+
+62
+00:05:56,709 --> 00:06:01,209
+Hocam bu slide'leri paylaşıyor muydunuz ya?
+
+63
+00:06:01,209 --> 00:06:02,209
+Tabii tabii.
+
+64
+00:06:02,209 --> 00:06:04,209
+Ders sonunda bütün dökümanları koyuyoruz.
+
+65
+00:06:04,209 --> 00:06:05,209
+Paylaşıyoruz.
+
+66
+00:06:05,209 --> 00:06:06,209
+Tamam.
+
+67
+00:06:06,209 --> 00:06:07,209
+O ve siz seyfasına şey yapabilirsiniz.
+
+68
+00:06:07,209 --> 00:06:09,209
+Onları takip edebilirsiniz.
+
+69
+00:06:09,209 --> 00:06:11,209
+Benim o ve siz seyfam.
+
+70
+00:06:11,209 --> 00:06:21,019
+Bunları yapmak için belli bir...
+
+71
+00:06:21,019 --> 00:06:23,019
+Gerçi zaten siz muhtemelen bunları da söyleyeceksiniz.
+
+72
+00:06:23,019 --> 00:06:25,019
+Belli bir program falan kullanıyor muyuz?
+
+73
+00:06:25,019 --> 00:06:26,019
+Tabii.
+
+74
+00:06:26,019 --> 00:06:28,019
+Bunda biz Postgre'yi kullanacağız.
+
+75
+00:06:28,019 --> 00:06:30,019
+Postgre SQL'i kullanacağız.
+
+76
+00:06:30,019 --> 00:06:32,019
+Şimdi onu açıklayacağım zaten.
+
+77
+00:06:32,019 --> 00:06:36,350
+Herhangi bir yazılım dili için...
+
+78
+00:06:36,350 --> 00:06:37,350
+İçinde bunu yapacak mıyız?
+
+79
+00:06:37,350 --> 00:06:39,350
+Mesela Python'da falan yoksa?
+
+80
+00:06:39,350 --> 00:06:42,350
+Araby bunun bir GUI'si falan var mı?
+
+81
+00:06:42,350 --> 00:06:46,350
+Şimdi bu dersin içeriğinde hep SQL edisöründe...
+
+82
+00:06:46,350 --> 00:06:48,350
+Postgre SQL'de bunların işte...
+
+83
+00:06:48,350 --> 00:06:49,350
+Sorguları nasıl yazacağız?
+
+84
+00:06:49,350 --> 00:06:50,350
+Nasıl çekeceğiz?
+
+85
+00:06:50,350 --> 00:06:51,350
+Onları göreceğiz.
+
+86
+00:06:51,350 --> 00:06:53,350
+Sonra bir hafta dersinde bunu...
+
+87
+00:06:53,350 --> 00:06:54,350
+JDBC bağlantısı.
+
+88
+00:06:54,350 --> 00:06:56,350
+Yani Java'da bunu nasıl bağlıyoruz?
+
+89
+00:06:56,350 --> 00:06:58,350
+Bir Java projesinden işte...
+
+90
+00:06:58,350 --> 00:07:01,350
+Arka planda biz nasıl database'e bağlantı yapabiliriz vs.
+
+91
+00:07:01,350 --> 00:07:02,350
+Onu anlatacağız.
+
+92
+00:07:02,350 --> 00:07:05,350
+Zaten vereceğimiz projede biraz...
+
+93
+00:07:05,350 --> 00:07:07,350
+Onunla alakalı olacaktır diye tahmin ediyorum.
+
+94
+00:07:07,350 --> 00:07:09,350
+Projeyi daha detaylandırmadık ama...
+
+95
+00:07:09,350 --> 00:07:12,350
+Bu lab'ın kapsalında bir tane proje hedefiniz olacak.
+
+96
+00:07:12,350 --> 00:07:15,350
+Lab notunuzu o belirleyecek zaten.
+
+97
+00:07:15,350 --> 00:07:18,350
+O da büyük ihtimalle bu tarz bir Java projesinden...
+
+98
+00:07:18,350 --> 00:07:19,350
+Çıkış olabilir onda da.
+
+99
+00:07:19,350 --> 00:07:22,350
+Ama belirlen günlerde açıklarız zaten.
+
+100
+00:07:22,350 --> 00:07:24,350
+Biraz şey gibi mi oluyor?
+
+101
+00:07:24,350 --> 00:07:28,350
+Yani bu derse gelen aslında Java biliyor kabul ediliyor.
+
+102
+00:07:29,350 --> 00:07:32,350
+Orada Java'dan kalsın çok basit bir şekilde olacak.
+
+103
+00:07:32,350 --> 00:07:35,350
+Tabii zaten ikinci sınıfı Java görüyorsunuz.
+
+104
+00:07:35,350 --> 00:07:37,350
+Yok biz şimdi ben şunu soruyorum.
+
+105
+00:07:37,350 --> 00:07:39,350
+Dersi alanların bir kısmı bilimsel hazırlık.
+
+106
+00:07:39,350 --> 00:07:41,350
+Ben de öyleyim.
+
+107
+00:07:41,350 --> 00:07:43,350
+Ben kendim biraz Java biliyorum ama...
+
+108
+00:07:43,350 --> 00:07:45,350
+Hiç bilmeyen arkadaşlar da var.
+
+109
+00:07:45,350 --> 00:07:49,350
+Çok basit seviyede yani o...
+
+110
+00:07:49,350 --> 00:07:53,350
+Basitçe internetten bile kısa bir araştırmayla hazırlayabileceğiniz bir ara yüzü.
+
+111
+00:07:53,350 --> 00:07:56,350
+Atıyorum o ara yüzü de ne isteyeceğiz mesela?
+
+112
+00:07:56,350 --> 00:07:58,350
+Bir hastanın otomasyonunu düşünün.
+
+113
+00:07:58,350 --> 00:07:59,350
+Ne yapıyor orada?
+
+114
+00:07:59,350 --> 00:08:00,350
+Hastayı kayıt ediyor.
+
+115
+00:08:00,350 --> 00:08:02,350
+Sonra bir hasta bilgisisin.
+
+116
+00:08:02,350 --> 00:08:03,350
+TC kimliğini yazıyorsunuz.
+
+117
+00:08:03,350 --> 00:08:04,350
+Hastanın bilgilerini çekiyor.
+
+118
+00:08:04,350 --> 00:08:06,350
+Yani böyle basit bir ara yüzü var.
+
+119
+00:08:06,350 --> 00:08:08,350
+Arka plan zaten sizin için önemli olacak.
+
+120
+00:08:08,350 --> 00:08:10,350
+Oradan veritabanına bağlanacaksınız.
+
+121
+00:08:10,350 --> 00:08:11,350
+Orada hep bu insert işte...
+
+122
+00:08:11,350 --> 00:08:14,350
+Birazdan bahsedeceğimize komutları kullanarak yazmamız gerekecek.
+
+123
+00:08:14,350 --> 00:08:16,350
+Zaten veritabanın bağlantılarını.
+
+124
+00:08:16,350 --> 00:08:18,350
+O şekilde.
+
+125
+00:08:18,350 --> 00:08:21,350
+O zaman geldikçe konuşuruz zaten.
+
+126
+00:08:21,350 --> 00:08:25,350
+Ama hani şeyin içeriği tamamen bu SQL'lerini öğrenmenize yönelik.
+
+127
+00:08:25,350 --> 00:08:27,350
+Lab'ın içeriği.
+
+128
+00:08:27,350 --> 00:08:29,350
+O şekilde.
+
+129
+00:08:29,350 --> 00:08:37,159
+Derslerden Javay ile ilgili bir şey konuşmayacağız.
+
+130
+00:08:37,159 --> 00:08:39,159
+O sadece bir haftanın konusunu da göstermiş olacağız yani.
+
+131
+00:08:39,159 --> 00:08:41,159
+O şekilde olacak.
+
+132
+00:08:41,159 --> 00:08:55,389
+Hocam sanırım TT göremiyorsunuz.
+
+133
+00:08:55,389 --> 00:08:57,389
+Ben şeyden söyleyeyim dedim.
+
+134
+00:08:57,389 --> 00:09:00,389
+Hocam bu devamlı zorunluluğu konusunda...
+
+135
+00:09:00,389 --> 00:09:03,389
+Yol giverebilir misiniz?
+
+136
+00:09:03,389 --> 00:09:05,389
+Çünkü interneti problemli olanlar var.
+
+137
+00:09:05,389 --> 00:09:06,389
+Kesilip gidenler var.
+
+138
+00:09:06,389 --> 00:09:09,389
+Genellikle başıma geldiği için söylüyorum.
+
+139
+00:09:09,389 --> 00:09:12,389
+Sonradan indirip izlemek daha mantıklı oluyor.
+
+140
+00:09:12,389 --> 00:09:14,389
+Hani gün sonunda bir saat sonra.
+
+141
+00:09:14,389 --> 00:09:16,389
+Çünkü sisteme düşmüş oluyor.
+
+142
+00:09:16,389 --> 00:09:18,389
+Bu noktada devamlı zorunluluğu devam edecek mi?
+
+143
+00:09:18,389 --> 00:09:21,389
+Bununla ilgili bir çözüm üretilebilir mi?
+
+144
+00:09:21,389 --> 00:09:26,389
+Fakültenin aldığı karar göre %80 gibi bir zorunluluk var.
+
+145
+00:09:26,389 --> 00:09:29,389
+Hani normal dönemde böyleydi.
+
+146
+00:09:29,389 --> 00:09:33,389
+O yüzden on-line için bu şekilde bir çözüm edebilir miyim?
+
+147
+00:09:33,389 --> 00:09:38,389
+Çünkü çoğu hoca normalde devamlı zorunlu tutulan derslerde bile...
+
+148
+00:09:38,389 --> 00:09:40,389
+Hani bu şekilde bir çözüm üretildi.
+
+149
+00:09:40,389 --> 00:09:45,389
+Acaba lablar içinde bu şekilde bir çözüm üretilebilir mi diye sormak istedim.
+
+150
+00:09:45,389 --> 00:09:48,389
+Onu ben yine bir hocaya sorarım.
+
+151
+00:09:48,389 --> 00:09:52,389
+Hani nasıl ilerlediler daha önceki dönemde de bu dönemde ne yapacaklar?
+
+152
+00:09:52,389 --> 00:09:54,389
+Ne dersin hocalarına?
+
+153
+00:09:54,389 --> 00:09:57,389
+Net olarak size onu açıklarım yani.
+
+154
+00:09:57,389 --> 00:09:59,389
+Dedik dedik bakacak mıyız geldi mi gelmedi mi diye.
+
+155
+00:09:59,389 --> 00:10:01,389
+Yoksa hani toleranslı oluyor muyuz?
+
+156
+00:10:01,389 --> 00:10:03,389
+Onu ben bir öğrenirim.
+
+157
+00:10:03,389 --> 00:10:04,389
+Tamam hocam.
+
+158
+00:10:04,389 --> 00:10:06,389
+Çok sağ olun.
+
+159
+00:10:06,389 --> 00:10:10,570
+Soruları şimdi görüyorum.
+
+160
+00:10:10,570 --> 00:10:12,570
+PgEdmin üzerine aynen konuşacağız birazdan.
+
+161
+00:10:12,570 --> 00:10:15,570
+Browsereden çalışıyor bir arayız gibi bir şey zaten.
+
+162
+00:10:15,570 --> 00:10:18,570
+Bizim lokaldaki veri tabanımıza da bağlanıyor.
+
+163
+00:10:18,570 --> 00:10:20,570
+O zaman biz başlayalım.
+
+164
+00:10:20,570 --> 00:10:22,570
+Gayet 10 dakikamızda oldu.
+
+165
+00:10:22,570 --> 00:10:28,389
+Dedik veri tabanına verileri tuttuğumuz yerler.
+
+166
+00:10:28,389 --> 00:10:31,389
+Şimdi veri tabanının olayı ne?
+
+167
+00:10:31,389 --> 00:10:37,389
+Biz veri tabanında verilerimizi, bilgilerimizi tablolar halinde tutuyoruz.
+
+168
+00:10:37,389 --> 00:10:40,389
+Şimdi bizim bir verimiz var ama bu veri çok fazla.
+
+169
+00:10:40,389 --> 00:10:43,389
+Yani şöyle düşünün bir üniversiteyi düşünün.
+
+170
+00:10:43,389 --> 00:10:48,389
+Üniversiteyle ilgili işte bunun öğrencisi var, personeli var, öğretim üyesi var.
+
+171
+00:10:48,389 --> 00:10:54,389
+Bir sürü bilgi var ve benim bunların tamamını hani bir egzel sayfası hayal edin.
+
+172
+00:10:54,389 --> 00:10:56,389
+Hepsini buraya koyman mümkün değil.
+
+173
+00:10:56,389 --> 00:11:01,389
+Bunları ben ayrı ayrı tablolar halinde tutacağım.
+
+174
+00:11:01,389 --> 00:11:07,389
+Ve aralarında ilişki kurduğum tablolar da yaparak bunlara daha hızlı bir şekilde erişim sağlayacağım.
+
+175
+00:11:07,389 --> 00:11:08,389
+Ne demek istiyorum mesela?
+
+176
+00:11:08,389 --> 00:11:11,389
+Bir tabloda öğrenciler olacak.
+
+177
+00:11:11,389 --> 00:11:16,389
+Orada sadece işte öğrenciyle ilgili işte adı, soyadı, numarası, ne bileyim adres ve şusulusu.
+
+178
+00:11:16,389 --> 00:11:19,389
+Diğer tarafta da mesela derslerle ilgili veriler var.
+
+179
+00:11:19,389 --> 00:11:20,389
+Burada da nedir?
+
+180
+00:11:20,389 --> 00:11:25,389
+Derslerin kodu vardır, veren öğretim üyesi vardır, işte o dersle ilgili bilgiler vardır vesaire.
+
+181
+00:11:25,389 --> 00:11:27,389
+Sonra ben gider bir tane daha tablo yaparım.
+
+182
+00:11:28,389 --> 00:11:32,389
+Oraya da derim ki şu öğrenci numaralı kişi şu kodlu dersi alıyor.
+
+183
+00:11:32,389 --> 00:11:38,389
+Yani tutup da şu öğrenci işte şu isimli dersi aldı, şu profesörden aldı falan diye uzun uzun hepsini bir tabloda tutmuyorum.
+
+184
+00:11:38,389 --> 00:11:42,389
+Böyle bilgileri ayrı ayrı tablolara yazıyorum ki erişmem kolay olsun.
+
+185
+00:11:42,389 --> 00:11:45,389
+Bir yerde öğrenci tablosu yaptım, öbür yerde ders tablosu yaptım.
+
+186
+00:11:45,389 --> 00:11:49,389
+Başka bir yerde de bunların ilişki tablosunu kurduğum zaman ne yapıyorum?
+
+187
+00:11:49,389 --> 00:11:51,389
+Çok rahat bir şekilde bunlara ulaşıyorum.
+
+188
+00:11:51,389 --> 00:11:54,389
+Bu ilerleyen bir dahaki haftanın dersi olabilir.
+
+189
+00:11:54,389 --> 00:11:56,389
+Orada daha detaylı bu ilişkileri göreceğiz.
+
+190
+00:11:56,389 --> 00:12:03,389
+Şimdi sadece kabataslak bunu anlamamız için bu şekilde işte tablo tablo tutuyoruz ve bu tabloları bu şekilde hızlı erişebiliyoruz.
+
+191
+00:12:05,389 --> 00:12:07,389
+Şimdi bir tablonun yapısı nasıl?
+
+192
+00:12:07,389 --> 00:12:10,389
+Aynı dediğim gibi bir egzal tablosunu hayal edin.
+
+193
+00:12:10,389 --> 00:12:14,389
+Bir yerde stunlar var diklemesine olanlar.
+
+194
+00:12:14,389 --> 00:12:19,389
+Bunların stün isimlerini veriyoruz ve yatar sıradakilerinde hepsi birer.
+
+195
+00:12:19,389 --> 00:12:22,389
+Her bir satırı kayıt olarak isimlendiriyoruz.
+
+196
+00:12:22,389 --> 00:12:25,389
+Kabaca bir tablonun yapısı bu şekilde oluyor.
+
+197
+00:12:25,389 --> 00:12:27,389
+Stunlar ve satırlar.
+
+198
+00:12:27,389 --> 00:12:36,899
+Şimdi SQL dediğimiz structured query language yani bir sorgu değil, bir programlama değil değil.
+
+199
+00:12:36,899 --> 00:12:38,899
+Biz bunu sorgular yapacağız.
+
+200
+00:12:38,899 --> 00:12:44,899
+SQL komutları ile, öğreneceğimiz bu komutlar ile veri tabanına kayıtları ekleyeceğiz.
+
+201
+00:12:44,899 --> 00:12:49,899
+Bunlar üzerinde değişiklikler yapacağız, silimeler, güncellemeler veya ne yapacağız?
+
+202
+00:12:49,899 --> 00:12:51,899
+Sorgular çekeceğiz.
+
+203
+00:12:51,899 --> 00:12:56,899
+İstediğimiz kayıtları, istediğimiz şartı sağlayan kayıtları ekrana göndereceğiz.
+
+204
+00:12:56,899 --> 00:13:05,960
+Şimdi veri tablonuna ait olan bu işlemleri gerçekleştirebilmek için dedik.
+
+205
+00:13:05,960 --> 00:13:11,960
+Bu SQL komutlarını çalıştırabilmem için tabii ki de bir değerleyeceği bir yönetim sistemine ihtiyacım var.
+
+206
+00:13:11,960 --> 00:13:19,960
+Bunun için de popüler olarak kullanılan sistemler işte PostgreSQL var, MySQL var, Microsoft SQL var, MSSQL var.
+
+207
+00:13:19,960 --> 00:13:21,960
+Biz derste PostgreSQL kullanacağız.
+
+208
+00:13:21,960 --> 00:13:26,960
+Bütün şeylere de uyumlu zaten Microsoft'a da Mac'ta da oluyor.
+
+209
+00:13:26,960 --> 00:13:34,960
+Derste PostgreSQL kullanacağız ve bunu da PostgreSQL ile beraber indirdiğinizde zaten Postgre,
+
+210
+00:13:34,960 --> 00:13:40,960
+PG admin diye bir browser'ınızdan çalışacak bir arayüzgü bir şey çıkacak.
+
+211
+00:13:40,960 --> 00:13:43,960
+Oradan direkt birazdan onu da uygulamasını basit bir şekilde göstereceğim.
+
+212
+00:13:43,960 --> 00:13:48,960
+Oradan direkt girip sorgularımızı yazabileceğiz, veri tabanımıza bağlantı saldıkacağız.
+
+213
+00:13:48,960 --> 00:13:57,090
+Şimdi SQL komutlarımız temelde ikiye ayrılıyor.
+
+214
+00:13:57,090 --> 00:14:01,090
+Bir gruba DL demişler, bir gruba DML demişler.
+
+215
+00:14:01,090 --> 00:14:11,090
+DL dedikleri definition yani bir datayı ilk defa daha oluştururken daha tadımlarken kullandı komutlar.
+
+216
+00:14:11,090 --> 00:14:15,090
+Öbür tarafta DML'dekilerde manipulation yani benim bir tablom var.
+
+217
+00:14:15,090 --> 00:14:22,090
+Ben buna kayıtları eklerken bu kayıtlar üzerinde değişiklikler yaparken manipulation komutlarını kullanacağım.
+
+218
+00:14:22,090 --> 00:14:25,090
+Şimdi definition komutlarında neler var?
+
+219
+00:14:25,090 --> 00:14:29,090
+Create var, drop var, alter var, rename var.
+
+220
+00:14:29,090 --> 00:14:34,090
+Bunlar hepsi aslında tablo bazında işlemler yapmamız sağlıyor.
+
+221
+00:14:34,090 --> 00:14:41,090
+Yani mesela ben bir database hiçbir şey yok ortada ben bir şey oluştururken diyorum ki create database.
+
+222
+00:14:41,090 --> 00:14:43,090
+Sonra database'in adını veriyorum yanına ve onu oluşturuyorum.
+
+223
+00:14:43,090 --> 00:14:46,090
+İşte bunu silmek istiyorsam drop diyorum.
+
+224
+00:14:46,090 --> 00:14:48,090
+Aynı şekilde tabloları da böyle oluşturuyorum.
+
+225
+00:14:48,090 --> 00:14:51,090
+Create table diyorum, ben silmek istiyorsam drop table diyorum.
+
+226
+00:14:52,090 --> 00:14:56,090
+Alter var yine emre de yine bu tabloların stumları ile oynuyorum.
+
+227
+00:14:56,090 --> 00:15:01,090
+Bu tabloya stum ekliyorum, stumu siniyorum, adını değiştiriyorum vesaire bu şekilde ilerliyor.
+
+228
+00:15:01,090 --> 00:15:12,090
+Öbür taraftakilerde manipulation dediklerimizde data'nın üzerinde yaptığımız işlem yani bir tablom var.
+
+229
+00:15:12,090 --> 00:15:15,090
+Bunu artık kayıtları eklerken, silerken vesaire.
+
+230
+00:15:15,090 --> 00:15:18,090
+Bu DML kullanıyorum, bu komutları kullanıyorum.
+
+231
+00:15:18,090 --> 00:15:23,090
+Şimdi bunların örneklerini gördükçe zaten data'yla onları anlayacağız.
+
+232
+00:15:23,090 --> 00:15:26,090
+Evet create ile başlayalım.
+
+233
+00:15:26,090 --> 00:15:31,090
+Create komutunda biz ilk defa dedik ki bir database önce oluşturuyoruz.
+
+234
+00:15:31,090 --> 00:15:33,090
+Bunu oluştururken create database dedik.
+
+235
+00:15:33,090 --> 00:15:39,090
+Sonra mesela burada university demişiz database'in adına university olarak yazıyoruz.
+
+236
+00:15:39,090 --> 00:15:43,090
+Bir database oluşturdum sonra ne demiştik bir database var.
+
+237
+00:15:43,090 --> 00:15:47,090
+Artık sıra bununla ilgili tablolarını oluşturmaya geliyor.
+
+238
+00:15:47,090 --> 00:15:53,090
+Şimdi oluştururken de create table komutunu kullanıyorum ve o tabloya bir isim veriyorum.
+
+239
+00:15:53,090 --> 00:15:55,090
+Mesela student demişim.
+
+240
+00:15:55,090 --> 00:16:00,090
+Tablo ismini verdikten sonra parantez açıyorum, parantez kapıyorum.
+
+241
+00:16:00,090 --> 00:16:05,090
+Arasını birazdan göreceğiz şimdi nelerle dolduruyorum bakalım.
+
+242
+00:16:05,090 --> 00:16:07,090
+Bir tablo tadımlarken.
+
+243
+00:16:07,090 --> 00:16:10,090
+Evet create table dedikten sonra.
+
+244
+00:16:10,090 --> 00:16:15,090
+Şimdi dedik ismini verdik tablomuz dedik student tablosu.
+
+245
+00:16:15,090 --> 00:16:19,090
+Sonrasında bunun studentlarını yazıyoruz.
+
+246
+00:16:19,090 --> 00:16:22,090
+Bunun her bir studentı yazacağım.
+
+247
+00:16:22,090 --> 00:16:25,090
+Sonra bir ilgilatacağım geçeceğim öbür studentı yazacağım.
+
+248
+00:16:25,090 --> 00:16:27,090
+Şimdi student yazarken ne yapmışım bir tane.
+
+249
+00:16:27,090 --> 00:16:30,090
+Bir kere önce student adını vermişim.
+
+250
+00:16:30,090 --> 00:16:33,090
+Bakın şurada da aşağıda tabloyu bir görünce eleyin önce.
+
+251
+00:16:33,090 --> 00:16:36,090
+Neymiş bu dört tane student olan bir tablo.
+
+252
+00:16:36,090 --> 00:16:39,090
+Kayıtlar geldikçe buraya sıra sıra yazılacak.
+
+253
+00:16:39,090 --> 00:16:45,090
+Şimdi bu sütünü verdikten sonra yanına yazdığım bazı özellikleri var bu sütünle alakalı.
+
+254
+00:16:45,090 --> 00:16:49,090
+Bir kere mutlaka ve mutlaka sütünün tipine veri tipini vermem lazım.
+
+255
+00:16:49,090 --> 00:16:52,090
+Yani ben buraya hangi tipte verileri koyacağım.
+
+256
+00:16:52,090 --> 00:16:55,090
+İşte sayısal mı olacak yoksa karakter mi olacak.
+
+257
+00:16:55,090 --> 00:16:59,090
+Bu sayısal istemek istemesi onun boyutlarıyla da alakalı bir çok bilgi var.
+
+258
+00:16:59,090 --> 00:17:05,089
+Boyutunun büyüklüğüne küçüklüğüne göre bellekte ne kadar yere ayırmasını istiyorsam o kadarlık.
+
+259
+00:17:05,089 --> 00:17:08,089
+İşte onun alakalı veri tipini seçebiliyorum.
+
+260
+00:17:08,089 --> 00:17:13,089
+Ben burada student no dedikten sonra mesela demişim ki burası integer olacak.
+
+261
+00:17:13,089 --> 00:17:18,089
+O yüzden buna gidip integer yazmışım yanına int olarak gösteriyoruz onu.
+
+262
+00:17:18,089 --> 00:17:23,089
+Sonrasında şunlar bu arada derleyici de o editörde böyle renkli çıkmaz.
+
+263
+00:17:23,089 --> 00:17:27,089
+Ben bu sadece hani şey olarak görmeniz açısından farklı farklı özellikler.
+
+264
+00:17:27,089 --> 00:17:29,089
+Ben onu böyle farklı renklendirdim.
+
+265
+00:17:29,089 --> 00:17:33,089
+O yan yana yazdığımızda zaten onu editör anlayacak ve çalıştıracaktır.
+
+266
+00:17:33,089 --> 00:17:35,089
+Şimdi student no dedim.
+
+267
+00:17:35,089 --> 00:17:39,089
+Sonra geldim veri tipini verdim integer.
+
+268
+00:17:39,089 --> 00:17:42,089
+Diğerlerin hepsi içinde mesela aynı şeyi görebilirsiniz.
+
+269
+00:17:42,089 --> 00:17:45,089
+First name last name bunları bilkart son at işte adres.
+
+270
+00:17:45,089 --> 00:17:48,089
+Bunlar için vermişim.
+
+271
+00:17:48,089 --> 00:17:55,089
+Veri tiplere gelmişken aslında onu hemen bir sonraki slidede bunu da göstersek.
+
+272
+00:17:55,089 --> 00:18:02,089
+Şimdi bakın veri tiplere dedik ki gireceğim veriye göre onlara yazıyorum ne olduğunu.
+
+273
+00:18:02,089 --> 00:18:05,089
+Big integer var, small integer var işte.
+
+274
+00:18:05,089 --> 00:18:09,089
+Ondalık kısayalar için flow out var. Bunlar tam sayıbı arada integerler.
+
+275
+00:18:09,089 --> 00:18:14,089
+Daha sonrasında char ve var char dediğimiz tipler var.
+
+276
+00:18:14,089 --> 00:18:18,089
+Bunlar da karakterleri girmemiz için kullandığımız tipler.
+
+277
+00:18:18,089 --> 00:18:23,089
+Mesela ben burada first name için var char kullanmışım.
+
+278
+00:18:23,089 --> 00:18:25,089
+Şimdi var char demişim.
+
+279
+00:18:25,089 --> 00:18:27,089
+Parantez açıplı bir ne kadar boyutta olduğunu belirtiyorum.
+
+280
+00:18:27,089 --> 00:18:30,089
+Mesela 20 karakter girebilirim en fazla buraya demişim.
+
+281
+00:18:30,089 --> 00:18:33,089
+Buraya karakter gireceğim yani string ifade olacak.
+
+282
+00:18:33,089 --> 00:18:36,089
+Karakter sayımda, sınırımda 20 olacak demişim.
+
+283
+00:18:36,089 --> 00:18:39,089
+Şimdi char var, var char var.
+
+284
+00:18:39,089 --> 00:18:41,089
+Onun farkını söyleyelim.
+
+285
+00:18:41,089 --> 00:18:46,089
+Char dediğimiz zaman bellekte işte char dedim parantez açtığımı atıyorum 10 dedim.
+
+286
+00:18:46,089 --> 00:18:50,089
+Bellekte sabit işte 10 karakterlik bir bölüm ayırıyor.
+
+287
+00:18:50,089 --> 00:18:58,089
+Ama bunu var char yaptığım zaman orada hani var char diyorum yine atıyorum 10 20 neyse onu belirtiyorum.
+
+288
+00:18:58,089 --> 00:19:05,089
+Var char'daki fark var char'da ne kadar kullanırsam o kadarını işgal etmiş olacağım.
+
+289
+00:19:05,089 --> 00:19:07,089
+Yani bana en başında sabit bir yer ayırmayacak.
+
+290
+00:19:07,089 --> 00:19:11,089
+Kullandığım kadarını kullanacağım gerisi kalacak.
+
+291
+00:19:11,089 --> 00:19:13,089
+Var char'ın böyle bir ekonomisi var aslında.
+
+292
+00:19:13,089 --> 00:19:16,089
+Verinin uzunluğuna göre yer kullandırtıyor.
+
+293
+00:19:16,089 --> 00:19:21,089
+Ama en başta tabi ne kadara kadar maksimum ne kadara kadar yer istediğimi yine belirtiyorum.
+
+294
+00:19:21,089 --> 00:19:26,089
+Şimdi bakalım first name de last name de bunları yazmışım.
+
+295
+00:19:26,089 --> 00:19:27,089
+Belirttikleri bu şekilde.
+
+296
+00:19:27,089 --> 00:19:29,089
+Adrese de yine öyle demişim.
+
+297
+00:19:29,089 --> 00:19:33,089
+Bunun karakter sayısını sınırını daha çok tutmuşum daha uzun bir şey olacağı için.
+
+298
+00:19:33,089 --> 00:19:35,089
+Bu şekilde belirtmişim.
+
+299
+00:19:35,089 --> 00:19:40,089
+Şimdi geldim integer dedikten sonra şuradaki kısma.
+
+300
+00:19:40,089 --> 00:19:45,089
+Bu bir özellik bunu illa her stuna verip vermeyeceğiz diye bir olay yok.
+
+301
+00:19:45,089 --> 00:19:48,089
+Mesela adres stunda natnal diye bir şey yazmamışım.
+
+302
+00:19:48,089 --> 00:19:50,089
+Natnal'ın olayı şu.
+
+303
+00:19:50,089 --> 00:19:54,089
+Ben eğer bir stunu tanımlarken onun natnal olarak bunu buraya yazarsam bu demektir ki
+
+304
+00:19:54,089 --> 00:19:58,089
+bu stün asla ve asla yeni bir kayıt gerilirken boş kalamaz.
+
+305
+00:19:58,089 --> 00:20:00,089
+Yani orası mutlaka da olacak.
+
+306
+00:20:00,089 --> 00:20:02,089
+Ben buraya yeni bir kayıt eklerken
+
+307
+00:20:02,089 --> 00:20:05,089
+işte adını yazdım, suyunu yazdım bir kayıt girişi yapıyorum.
+
+308
+00:20:05,089 --> 00:20:07,089
+Kalkıp da stünanın o kısmını boş bırakamam.
+
+309
+00:20:07,089 --> 00:20:11,089
+Mutlaka oraya bir girişi olacak demektir bunun anlamı.
+
+310
+00:20:11,089 --> 00:20:13,089
+O şekilde bunun natnal olarak belirtmişim.
+
+311
+00:20:13,089 --> 00:20:18,089
+Aynı şekilde bakın first name ve last name de aynı özellikleri koymuşum.
+
+312
+00:20:18,089 --> 00:20:21,089
+Bundan hiçbirinin boş olmasını istemiyorum.
+
+313
+00:20:21,089 --> 00:20:23,089
+Mutlaka giriş yapılırken dolu olsun demişim.
+
+314
+00:20:23,089 --> 00:20:25,089
+Ama adres kısmına bunu yazmamışım.
+
+315
+00:20:25,089 --> 00:20:27,089
+Orası boşta kalabilir demektir.
+
+316
+00:20:27,089 --> 00:20:29,089
+Önemli bir kısım olmamış.
+
+317
+00:20:29,089 --> 00:20:33,089
+Sonra stüdyo tutman için bir özellik daha vermişim diğerlerinde olmayan.
+
+318
+00:20:33,089 --> 00:20:35,089
+O da primary key.
+
+319
+00:20:35,089 --> 00:20:36,089
+Bu ne demek?
+
+320
+00:20:36,089 --> 00:20:37,089
+Bu da anahtarlar konusu.
+
+321
+00:20:37,089 --> 00:20:39,089
+İlerleyen haftalarda malı dağıtılar ile bakılacak.
+
+322
+00:20:39,089 --> 00:20:42,089
+Ama şimdilik bir özellik olarak burada görelim.
+
+323
+00:20:42,089 --> 00:20:48,089
+Primary key dediğim bir tablo oluştururken ben bir stüdyoda primary key dediysen
+
+324
+00:20:48,089 --> 00:20:50,089
+bu şu anlama geliyor.
+
+325
+00:20:51,089 --> 00:20:53,089
+Bu stuma girilen değerler.
+
+326
+00:20:53,089 --> 00:20:56,089
+Şimdi hayal edeyim ben burada belki yüzlerce binlerce veri gireceğim.
+
+327
+00:20:56,089 --> 00:21:00,089
+Ama primary key'i atadığım zaman ben buna diyorum ki
+
+328
+00:21:00,089 --> 00:21:04,089
+asla ve asla girdiğim iki kayıtta aynı stüdyoda olamaz.
+
+329
+00:21:04,089 --> 00:21:06,089
+Yani bu birincili bir anahtar ve unik bir şey.
+
+330
+00:21:06,089 --> 00:21:10,089
+Yani buradaki der asla başka bir şekilde tekrar etmeyecek.
+
+331
+00:21:10,089 --> 00:21:13,089
+Bu da genelde bizim işte bu öğrenci numarası olur,
+
+332
+00:21:13,089 --> 00:21:18,089
+idler olur, TC kimlikler vesaireler ne de bunların hepsi aslında primary key'dir.
+
+333
+00:21:18,089 --> 00:21:22,089
+Yani tamamen o kaydı özeldir ve asla tekrar etmiyordur.
+
+334
+00:21:22,089 --> 00:21:26,089
+Bu şekilde de tadımlayıcı bir özelliği oluyor primary keylere.
+
+335
+00:21:26,089 --> 00:21:32,940
+Buradan başka söyleyeceğimiz bu kadar herhalde.
+
+336
+00:21:32,940 --> 00:21:34,940
+Veri tiplerine de yaklaşmıştık.
+
+337
+00:21:34,940 --> 00:21:39,190
+Varchar'ları ve integer'leri söyledik.
+
+338
+00:21:39,190 --> 00:21:42,190
+Sonrasında create table yapmıştık.
+
+339
+00:21:42,190 --> 00:21:44,190
+Tablomuzu oluşturduk.
+
+340
+00:21:44,190 --> 00:21:46,190
+Şimdi tabloyu nasıl sileriz?
+
+341
+00:21:46,190 --> 00:21:48,190
+Onun için komutumuz da drop table oluyor.
+
+342
+00:21:48,190 --> 00:21:52,190
+Drop table, tablodan yazdığımız zaman ne yapıyorum?
+
+343
+00:21:52,190 --> 00:21:54,190
+Tabloyu silmiş oluyorum.
+
+344
+00:21:54,190 --> 00:21:57,190
+Aynı şey de tabi, silmede de geçerli.
+
+345
+00:21:57,190 --> 00:22:04,190
+Diğer bir komutumuz da alter komutu, alter table dediğimiz komutta da
+
+346
+00:22:04,190 --> 00:22:10,190
+tablodaki stünler üzerine birtakım değişiklikler yaptırabiliyor bana.
+
+347
+00:22:10,190 --> 00:22:14,190
+Şöyle ki, alter table, student dedim.
+
+348
+00:22:14,190 --> 00:22:18,190
+Yani git student tablosuna, tablonun adını veriyorum oraya.
+
+349
+00:22:18,190 --> 00:22:20,190
+Rename to öğrenci.
+
+350
+00:22:20,190 --> 00:22:22,190
+Rename ile ne yaptım?
+
+351
+00:22:22,190 --> 00:22:24,190
+Student tablosunun adını değiştirdim.
+
+352
+00:22:24,190 --> 00:22:26,190
+Öğrenci yaptım.
+
+353
+00:22:26,190 --> 00:22:28,190
+Böyle bir değişiklik yapmama izin veriyor.
+
+354
+00:22:28,190 --> 00:22:30,190
+Tablonun adını değiştirebiliyorum.
+
+355
+00:22:30,190 --> 00:22:36,190
+Daha sonrasında stünler bazında neler yaptırabiliyorum?
+
+356
+00:22:36,190 --> 00:22:38,190
+Bir kere yeni bir stün eklerken,
+
+357
+00:22:38,190 --> 00:22:41,190
+o stün bir stün silerken veya stün adı değiştirirken
+
+358
+00:22:41,190 --> 00:22:45,190
+yine aynı şekilde alter table komutunu kullanmam gerekiyor.
+
+359
+00:22:45,190 --> 00:22:48,190
+Stün eklemede ne yapmıştık?
+
+360
+00:22:48,190 --> 00:22:50,190
+Alter table demişiz.
+
+361
+00:22:50,190 --> 00:22:52,190
+Sonra student, yani tablonun adını veriyoruz.
+
+362
+00:22:52,190 --> 00:22:55,190
+Hangi tabloyu değiştireceğim, hangi tabloda değişiklik yapacağım.
+
+363
+00:22:55,190 --> 00:22:59,190
+Sonra add komutunu koyarak ne yapıyorum?
+
+364
+00:22:59,190 --> 00:23:02,190
+İstediğim stünü ve onun tipini buraya yazıyorum.
+
+365
+00:23:02,190 --> 00:23:04,190
+Bu da mutlaka tip belirtmem gerekiyor.
+
+366
+00:23:04,190 --> 00:23:07,190
+Bir tipi belirtmeden tanım yapmama izin vermez editor.
+
+367
+00:23:08,190 --> 00:23:10,190
+Orada stünün adını verdim ve
+
+368
+00:23:10,190 --> 00:23:13,190
+burada da veri tipini yazmış oldum.
+
+369
+00:23:13,190 --> 00:23:15,190
+Bu şekilde stünü ekleyebiliyorum.
+
+370
+00:23:15,190 --> 00:23:17,190
+Peki stünü nasıl siliyorum?
+
+371
+00:23:17,190 --> 00:23:21,190
+Orada da alter table deyip student'e yine tablonun adını verip
+
+372
+00:23:21,190 --> 00:23:24,190
+bu sefer drop komutuyla istediğim stünü
+
+373
+00:23:24,190 --> 00:23:26,190
+yine adını vererek silebiliyorum.
+
+374
+00:23:26,190 --> 00:23:28,190
+Drop birthday şeklinde.
+
+375
+00:23:28,190 --> 00:23:32,190
+Stün adı değiştirmek istediğimde ne yapıyorum?
+
+376
+00:23:32,190 --> 00:23:35,190
+Orada da yine komutumuz alter table.
+
+377
+00:23:35,190 --> 00:23:37,190
+Table'ın adını veriyorum.
+
+378
+00:23:37,190 --> 00:23:39,190
+Rename diyorum bu sefer.
+
+379
+00:23:39,190 --> 00:23:41,190
+Neyi neye değiştireceğimi?
+
+380
+00:23:41,190 --> 00:23:45,190
+Şu tablodaki student'ın tablosundaki student no alanını
+
+381
+00:23:45,190 --> 00:23:47,190
+std no yap.
+
+382
+00:23:47,190 --> 00:23:50,190
+Rename bulablatı bulaba şeklinde.
+
+383
+00:23:50,190 --> 00:23:53,190
+Oradan da değişiklik yapmış oluyorum.
+
+384
+00:23:53,190 --> 00:23:57,299
+Hocam özledim bir şey söyleyebilir miyim?
+
+385
+00:23:57,299 --> 00:23:58,299
+Evet buyurun.
+
+386
+00:23:58,299 --> 00:24:00,299
+Az önceki slide'de mesela şu an
+
+387
+00:24:00,299 --> 00:24:02,299
+burada stün olduğunu nereden belirtiyoruz?
+
+388
+00:24:02,299 --> 00:24:05,299
+Mesela satırda da student no gibi bir durum söz konusu mu?
+
+389
+00:24:05,299 --> 00:24:06,299
+Söz konusu mu?
+
+390
+00:24:06,299 --> 00:24:08,299
+Yani editor izin veriyor mu?
+
+391
+00:24:08,299 --> 00:24:10,299
+Aynı student'a ya da satıra aynı ismi vermek.
+
+392
+00:24:10,299 --> 00:24:12,299
+Farklı olanlara.
+
+393
+00:24:12,299 --> 00:24:14,299
+Nasıl bir daha sorar mısın?
+
+394
+00:24:14,299 --> 00:24:18,299
+Şu son komuta var ya yani şu student no kısmının
+
+395
+00:24:18,299 --> 00:24:22,299
+stün mu ya da satın mı olduğunu nereden anlıyor?
+
+396
+00:24:22,299 --> 00:24:25,299
+Şimdi ben bu ifadeyi yazdığımda
+
+397
+00:24:25,299 --> 00:24:27,299
+şurası tablo adı.
+
+398
+00:24:27,299 --> 00:24:28,299
+Tamam.
+
+399
+00:24:28,299 --> 00:24:30,299
+O da tabesli bir sürü tablo var.
+
+400
+00:24:30,299 --> 00:24:32,299
+Ben burada tablo adı vermem gerekiyor.
+
+401
+00:24:32,299 --> 00:24:34,299
+Ben bunu yazdıktan sonra bu.
+
+402
+00:24:34,299 --> 00:24:36,299
+Şöyle düşün bu tabloya gidiyor.
+
+403
+00:24:36,299 --> 00:24:38,299
+Onun stünlarını artık okuyor.
+
+404
+00:24:38,299 --> 00:24:40,299
+Ben onu diyorum ki okuduğun stünler arasında
+
+405
+00:24:40,299 --> 00:24:42,299
+böyle bir stün var student no diye.
+
+406
+00:24:42,299 --> 00:24:44,299
+Bu daha önceden tanımlı bu arada.
+
+407
+00:24:44,299 --> 00:24:46,299
+Kafam karıştı yukarıdaki tabloya göre mi?
+
+408
+00:24:46,299 --> 00:24:48,299
+Düşündüm.
+
+409
+00:24:48,299 --> 00:24:50,299
+Zaten üstte başlığı da vermiş de
+
+410
+00:24:50,299 --> 00:24:52,299
+aklıma satır geldi yani satırı değiştirirken
+
+411
+00:24:52,299 --> 00:24:54,299
+ne yapıyoruz acaba diye düşündüm.
+
+412
+00:24:54,299 --> 00:24:56,299
+Kayıtları mı değiştirirken?
+
+413
+00:24:56,299 --> 00:24:58,299
+Kayıtlar tamam kusura bakmayın.
+
+414
+00:24:58,299 --> 00:25:00,299
+Şu an sadece stün hani böyle
+
+415
+00:25:00,299 --> 00:25:02,299
+dikeyde olan şeyler, stün adları
+
+416
+00:25:02,299 --> 00:25:04,299
+tablodaki.
+
+417
+00:25:04,299 --> 00:25:06,299
+Şunlar.
+
+418
+00:25:06,299 --> 00:25:08,299
+Şunlar üzerindeki değişiklikler.
+
+419
+00:25:08,299 --> 00:25:10,299
+Şunların isimlerinin üzerindeki
+
+420
+00:25:10,299 --> 00:25:12,299
+değişiklikler yaparken.
+
+421
+00:25:12,299 --> 00:25:14,299
+Alter table ile o şekilde.
+
+422
+00:25:14,299 --> 00:25:17,779
+O yüzden burada da hani
+
+423
+00:25:17,779 --> 00:25:19,779
+else student tablosuna gidiyor.
+
+424
+00:25:19,779 --> 00:25:21,779
+Orada student no diye bir stün var.
+
+425
+00:25:21,779 --> 00:25:23,779
+Stün adını değiştiriyor sadece.
+
+426
+00:25:23,779 --> 00:25:25,779
+Şimdi stünler ve
+
+427
+00:25:25,779 --> 00:25:27,779
+tabloda yapılan değişiklikler
+
+428
+00:25:27,779 --> 00:25:29,779
+bu şekildeydi.
+
+429
+00:25:29,779 --> 00:25:31,779
+Gelelim kayıtlar üzerinde neler yapıyoruz.
+
+430
+00:25:31,779 --> 00:25:33,779
+Yani benim artık bir tablon var
+
+431
+00:25:33,779 --> 00:25:35,779
+stünleri belli. Ben artık ona
+
+432
+00:25:35,779 --> 00:25:37,779
+veri eklemem gerekiyor.
+
+433
+00:25:37,779 --> 00:25:39,779
+Elimde veriler var bunları koyacağım.
+
+434
+00:25:39,779 --> 00:25:41,779
+Şimdi ben student tablomu oluşturmuştum.
+
+435
+00:25:41,779 --> 00:25:43,779
+Sıra geldiğinde veri ekleme.
+
+436
+00:25:43,779 --> 00:25:45,779
+O zaman insert komutum var.
+
+437
+00:25:45,779 --> 00:25:47,779
+Insert into diyorum.
+
+438
+00:25:47,779 --> 00:25:49,779
+Şuradan.
+
+439
+00:25:49,779 --> 00:25:51,779
+Daha sonra tablomun adını veriyorum.
+
+440
+00:25:51,779 --> 00:25:53,779
+Hangi tabloya ekleyecek onu söylüyorum.
+
+441
+00:25:53,779 --> 00:25:55,779
+Daha sonrasında da value istiyorum.
+
+442
+00:25:55,779 --> 00:25:57,779
+Ve eklemek
+
+443
+00:25:57,779 --> 00:25:59,779
+istediğim değerleri yazıyorum.
+
+444
+00:25:59,779 --> 00:26:01,779
+Benim veri tabanımda demek ki
+
+445
+00:26:01,779 --> 00:26:03,779
+3 tane alan varmış.
+
+446
+00:26:03,779 --> 00:26:05,779
+Numara, at, soyat gibi.
+
+447
+00:26:05,779 --> 00:26:07,779
+Bunları yazdıktan sonra
+
+448
+00:26:07,779 --> 00:26:09,779
+eklemesini sağlıyorum.
+
+449
+00:26:09,779 --> 00:26:11,779
+Ama ben
+
+450
+00:26:11,779 --> 00:26:13,779
+bir kaydı eklerken gidip
+
+451
+00:26:13,779 --> 00:26:15,779
+bütün alanlarına bir ekleme yapasın demeyebilirim.
+
+452
+00:26:15,779 --> 00:26:17,779
+Sadece belli stünlerine
+
+453
+00:26:17,779 --> 00:26:19,779
+ekleme olsun diyebilirim.
+
+454
+00:26:19,779 --> 00:26:21,779
+O zaman da yapacağım şey
+
+455
+00:26:21,779 --> 00:26:23,779
+insert into deyip
+
+456
+00:26:23,779 --> 00:26:25,779
+o student tablonun adını verip
+
+457
+00:26:25,779 --> 00:26:27,779
+hangi colonlara ekleme
+
+458
+00:26:27,779 --> 00:26:29,779
+hangi stünlere ekleme yapmak istiyorum.
+
+459
+00:26:29,779 --> 00:26:31,779
+O stünlerin adını yazıyorum.
+
+460
+00:26:31,779 --> 00:26:33,779
+Daha sonra value deyip
+
+461
+00:26:33,779 --> 00:26:35,779
+o sırayla yazdığım stünlere sırayla
+
+462
+00:26:35,779 --> 00:26:37,779
+hangi değerleri yazacağımı söylüyorum.
+
+463
+00:26:37,779 --> 00:26:39,779
+Yani şuradaki fark bu şu.
+
+464
+00:26:39,779 --> 00:26:41,779
+Burada direkt student yazıp bıraktım.
+
+465
+00:26:41,779 --> 00:26:43,779
+Çünkü bu student tablosunda zaten 3 tane colon vardı.
+
+466
+00:26:43,779 --> 00:26:45,779
+Kalkıp da bir daha bunları take back, no
+
+467
+00:26:45,779 --> 00:26:47,779
+first name last name diye yazmadım.
+
+468
+00:26:47,779 --> 00:26:49,779
+Value dedim.
+
+469
+00:26:49,779 --> 00:26:51,779
+Sıra sıra bu değerleri koymuşum buraya ki
+
+470
+00:26:51,779 --> 00:26:53,779
+o tık tık yazacak onları.
+
+471
+00:26:53,779 --> 00:26:55,779
+Belli stünlara ekleme yapmasını istiyorum.
+
+472
+00:26:55,779 --> 00:26:57,779
+Bir kayıt girecek ama belli stünlara girsin.
+
+473
+00:26:57,779 --> 00:26:59,779
+Hepsini doldurmasın sıradan.
+
+474
+00:26:59,779 --> 00:27:01,779
+O zaman hususi olarak o kayıt
+
+475
+00:27:01,779 --> 00:27:03,779
+o stünlerin adını burada
+
+476
+00:27:03,779 --> 00:27:05,779
+belirtmem gerekiyor. Tablo isminden sonra
+
+477
+00:27:05,779 --> 00:27:07,779
+bir parantez açım.
+
+478
+00:27:07,779 --> 00:27:11,980
+Value deyip de değerlerini yazıyorum.
+
+479
+00:27:11,980 --> 00:27:13,980
+Sonra kayıt silme dediğim
+
+480
+00:27:13,980 --> 00:27:15,980
+kısımda da insert ile
+
+481
+00:27:15,980 --> 00:27:17,980
+ekleme yaptık. Silme dediğimiz kısımda da
+
+482
+00:27:17,980 --> 00:27:19,980
+delete kullanacağız.
+
+483
+00:27:19,980 --> 00:27:21,980
+Delete from bu sefer
+
+484
+00:27:21,980 --> 00:27:23,980
+nereden sileceğim yine tablonun adını
+
+485
+00:27:23,980 --> 00:27:25,980
+yazıyorum. Student tablosundan.
+
+486
+00:27:25,980 --> 00:27:27,980
+Neyi sil? Bu sefer ona
+
+487
+00:27:27,980 --> 00:27:29,980
+bir şartı vermem lazım. Gidecek her
+
+488
+00:27:29,980 --> 00:27:31,980
+kaydı silecek bunun bir şartının olması lazım.
+
+489
+00:27:31,980 --> 00:27:33,980
+O zaman da demişim ki
+
+490
+00:27:33,980 --> 00:27:35,980
+student'ın olsun
+
+491
+00:27:35,980 --> 00:27:37,980
+o değeri işte bilmem ne olan
+
+492
+00:27:37,980 --> 00:27:39,980
+şeyi bul o kaydı bul
+
+493
+00:27:39,980 --> 00:27:41,980
+ve o kaydı komple sil.
+
+494
+00:27:41,980 --> 00:27:45,839
+Belli tabanından uçur.
+
+495
+00:27:45,839 --> 00:27:47,839
+Eğer kalkıp da ifadeyi şu kadar
+
+496
+00:27:47,839 --> 00:27:49,839
+ile bıraksaydım delete from student
+
+497
+00:27:49,839 --> 00:27:51,839
+diye o zaman bu
+
+498
+00:27:51,839 --> 00:27:53,839
+tablodaki bütün satırları
+
+499
+00:27:53,839 --> 00:27:55,839
+silerdi. Yani burada bir ver şartı koydu.
+
+500
+00:27:55,839 --> 00:27:57,839
+Belli bir satırdan bahsediyorum.
+
+501
+00:27:57,839 --> 00:27:59,839
+Ben numarası şu olan
+
+502
+00:27:59,839 --> 00:28:01,839
+kişiyi bulacak gidecek silecekken.
+
+503
+00:28:01,839 --> 00:28:03,839
+Eğer kalkıp ben böyle bir şartı bırakmaz da
+
+504
+00:28:03,839 --> 00:28:05,839
+direkt delete from student
+
+505
+00:28:05,839 --> 00:28:07,839
+delete from tablonun adı deyip bırakırsam
+
+506
+00:28:07,839 --> 00:28:09,839
+ondan sonra gidiyor tablodaki
+
+507
+00:28:09,839 --> 00:28:11,839
+bütün kayıtları bütün satırları
+
+508
+00:28:11,839 --> 00:28:15,920
+silmiş oluyor. Ve
+
+509
+00:28:15,920 --> 00:28:17,920
+son olarak
+
+510
+00:28:17,920 --> 00:28:19,920
+güncellememiz var. Onunla da
+
+511
+00:28:19,920 --> 00:28:21,920
+alakalı kayıtları nasıl güncelleriz
+
+512
+00:28:21,920 --> 00:28:23,920
+bunu görüyoruz. Bir kayıdın
+
+513
+00:28:23,920 --> 00:28:25,920
+işte girilmiştir adı, soyadı numarası
+
+514
+00:28:25,920 --> 00:28:27,920
+vesaire. Ama daha sonra bunun
+
+515
+00:28:27,920 --> 00:28:29,920
+üstünde bir değişiklik yapmak isteyebiliriz.
+
+516
+00:28:29,920 --> 00:28:31,920
+Belli bir alanlarını değiştirmek isteyebiliriz.
+
+517
+00:28:31,920 --> 00:28:33,920
+Bunun içine kullanacağımız
+
+518
+00:28:33,920 --> 00:28:35,920
+komut update komutu oluyor.
+
+519
+00:28:35,920 --> 00:28:37,920
+Update diyorum.
+
+520
+00:28:37,920 --> 00:28:39,920
+Tablonun adını söylüyorum, yazıyorum.
+
+521
+00:28:39,920 --> 00:28:41,920
+Daha sonra yapacağım
+
+522
+00:28:41,920 --> 00:28:43,920
+ayarı yazıyorum. Set
+
+523
+00:28:43,920 --> 00:28:45,920
+ne yapmak istemişim?
+
+524
+00:28:45,920 --> 00:28:47,920
+First name'i [öğrenci] yap.
+
+525
+00:28:47,920 --> 00:28:49,920
+Ama kimin? Gidip herhangi
+
+526
+00:28:49,920 --> 00:28:51,920
+bir kaydın değil. Where
+
+527
+00:28:51,920 --> 00:28:53,920
+student numarası şu
+
+528
+00:28:53,920 --> 00:28:55,920
+olan kişiyi. Yani numarası
+
+529
+00:28:55,920 --> 00:28:57,920
+bu olan kişiyi bulacak. Ondan
+
+530
+00:28:57,920 --> 00:28:59,920
+sonra onun ilk adını [öğrenci]
+
+531
+00:28:59,920 --> 00:29:01,920
+olarak değiştirecek. Veli olarak
+
+532
+00:29:01,920 --> 00:29:03,920
+yazacak üstüne.
+
+533
+00:29:03,920 --> 00:29:05,920
+Bu şekilde de insert
+
+534
+00:29:05,920 --> 00:29:07,920
+delete ve update komutlarımızı
+
+535
+00:29:07,920 --> 00:29:13,119
+kullanıyoruz.
+
+536
+00:29:13,119 --> 00:29:15,119
+Şimdi örneklere de biraz bakalım.
+
+537
+00:29:17,119 --> 00:29:19,119
+Burada bir tablomuz var.
+
+538
+00:29:19,119 --> 00:29:21,119
+Tablonun 5 tane
+
+539
+00:29:21,119 --> 00:29:23,119
+student numarası varmış.
+
+540
+00:29:23,119 --> 00:29:25,119
+First name'i, last name'i, adresi
+
+541
+00:29:25,119 --> 00:29:27,119
+ve birth date'i. Burada
+
+542
+00:29:27,119 --> 00:29:29,119
+altında bakın oluşturduğumuz veri
+
+543
+00:29:29,119 --> 00:29:31,119
+tipleri de çıkıyor.
+
+544
+00:29:31,119 --> 00:29:33,119
+Date gibi veri tipi de var.
+
+545
+00:29:33,119 --> 00:29:35,119
+Gün gün ay ay ya da tam tarafı ay ay
+
+546
+00:29:35,119 --> 00:29:37,119
+gün gün yıl yıl şeklinde yazıyor.
+
+547
+00:29:37,119 --> 00:29:39,119
+Böyle bir tablo
+
+548
+00:29:39,119 --> 00:29:41,119
+var. Bu oluşturulmuş.
+
+549
+00:29:41,119 --> 00:29:43,119
+Şimdi bana diyor ki bu tablodan
+
+550
+00:29:43,119 --> 00:29:45,119
+tablonun ismi de student.
+
+551
+00:29:45,119 --> 00:29:47,119
+İsmi ali olan kayıtları siliniz.
+
+552
+00:29:47,119 --> 00:29:49,119
+Mesela bunu nasıl yaparım?
+
+553
+00:29:49,119 --> 00:29:51,119
+Delete kullanacağım. Çünkü kayıt
+
+554
+00:29:51,119 --> 00:29:53,119
+kayıtlarla ilgili biz ne dedik?
+
+555
+00:29:53,119 --> 00:29:55,119
+3 tane komutumuz vardı.
+
+556
+00:29:55,119 --> 00:29:57,119
+Insert, delete, update.
+
+557
+00:29:57,119 --> 00:29:59,119
+Bunun hakkı bir silmeden bahsediyorsa
+
+558
+00:29:59,119 --> 00:30:01,119
+ekleme deseydi insert derdim.
+
+559
+00:30:01,119 --> 00:30:03,119
+Değişiklik deseydi update derdim.
+
+560
+00:30:03,119 --> 00:30:05,119
+Ama şu anda ne var? Silime.
+
+561
+00:30:05,119 --> 00:30:07,119
+O zaman gidiyorum. Delete kullanıyorum.
+
+562
+00:30:07,119 --> 00:30:09,119
+Delete from student.
+
+563
+00:30:09,119 --> 00:30:11,119
+Tablon adı student. Kimi sileceğim?
+
+564
+00:30:11,119 --> 00:30:13,119
+İsmi ali olan kişileri sileceğim
+
+565
+00:30:13,119 --> 00:30:15,119
+için. Orada koşuldum.
+
+566
+00:30:15,119 --> 00:30:17,119
+Ver ile yazdım. First name'i
+
+567
+00:30:17,119 --> 00:30:19,119
+ali olan kayıtları silecek.
+
+568
+00:30:19,119 --> 00:30:22,460
+Bir şey söyleyeyim mi?
+
+569
+00:30:22,460 --> 00:30:24,460
+Burayla alakalı.
+
+570
+00:30:24,460 --> 00:30:26,460
+Bu kodu yazdığımızda
+
+571
+00:30:26,460 --> 00:30:28,460
+ismi ali olanların
+
+572
+00:30:28,460 --> 00:30:30,460
+bilgilerini mi siliyor yoksa
+
+573
+00:30:30,460 --> 00:30:32,460
+sadece ali kısmını mı siliyor?
+
+574
+00:30:32,460 --> 00:30:34,460
+Ali ile başlayan bütün bilgilerini siliyor.
+
+575
+00:30:34,460 --> 00:30:36,460
+Şimdi buradan tabloyu şöyle
+
+576
+00:30:36,460 --> 00:30:38,460
+hayal edelim. First name'i ali olan.
+
+577
+00:30:38,460 --> 00:30:40,460
+10 tane kişi 10 tane kayıt var.
+
+578
+00:30:40,460 --> 00:30:42,460
+Farklı farklı. [öğrenci], [öğrenci] bir sürü
+
+579
+00:30:42,460 --> 00:30:44,460
+kayıtlar var. Bunun yaptığı
+
+580
+00:30:44,460 --> 00:30:46,460
+kod ismi ali olanları
+
+581
+00:30:46,460 --> 00:30:48,460
+gidip tamamen siliyor.
+
+582
+00:30:48,460 --> 00:30:50,460
+Yani onunla ilgili bütün
+
+583
+00:30:50,460 --> 00:30:52,460
+işte öğrenci numarası bir kayıt vardır.
+
+584
+00:30:52,460 --> 00:30:54,460
+Burada boydan boya olduğuna olan şey bir kayıt
+
+585
+00:30:54,460 --> 00:30:56,460
+diyoruz. Eğer kayıt siliyorsak zaten
+
+586
+00:30:56,460 --> 00:30:58,460
+onunla alakalı tüm satırı siliyordur.
+
+587
+00:31:00,460 --> 00:31:02,460
+Ali'nin bütün
+
+588
+00:31:02,460 --> 00:31:04,460
+First name'i ali olan herkesi buluyor ve
+
+589
+00:31:04,460 --> 00:31:06,460
+onların hepsini siliyor. O kayıtları o satırı da
+
+590
+00:31:06,460 --> 00:31:10,380
+silmiş oluyor. Evet.
+
+591
+00:31:10,380 --> 00:31:12,380
+Bu, bu şekildeydi.
+
+592
+00:31:12,380 --> 00:31:14,380
+Daha alttaki örnekte bu sefer
+
+593
+00:31:14,380 --> 00:31:16,380
+bir değişiklik istiyor bizden.
+
+594
+00:31:16,380 --> 00:31:18,380
+Birthday to the student diyor.
+
+595
+00:31:18,380 --> 00:31:20,380
+Student diyor, adını doğum tarihi
+
+596
+00:31:20,380 --> 00:31:22,380
+olarak değiştir. Student
+
+597
+00:31:22,380 --> 00:31:24,380
+değişikliği yaparken de
+
+598
+00:31:24,380 --> 00:31:26,380
+neydi studentlar üzerinde işlemlerimizde?
+
+599
+00:31:26,380 --> 00:31:28,380
+Alter table'ı kullanıyorduk. Çünkü
+
+600
+00:31:28,380 --> 00:31:30,380
+hani student tablo bazında bir
+
+601
+00:31:30,380 --> 00:31:32,380
+işlem gibi. Düşünün onu.
+
+602
+00:31:32,380 --> 00:31:34,380
+Kayıtlarda insert late update'te. Ama
+
+603
+00:31:34,380 --> 00:31:36,380
+student adını değiştireceksem işte
+
+604
+00:31:36,380 --> 00:31:38,380
+yeni student ekleyeceksem, student sileceksem
+
+605
+00:31:38,380 --> 00:31:40,380
+o zaman da alter table
+
+606
+00:31:40,380 --> 00:31:42,380
+komutunu kullanıyordum.
+
+607
+00:31:42,380 --> 00:31:44,380
+Alter table diyorum. Student
+
+608
+00:31:44,380 --> 00:31:46,380
+tablomuzun adı.
+
+609
+00:31:46,380 --> 00:31:48,380
+Ben burada bir değişiklik. Rename'i kullanacağım.
+
+610
+00:31:48,380 --> 00:31:50,380
+Rename dedikten sonra
+
+611
+00:31:50,380 --> 00:31:52,380
+bu gidecek. Şuradaki birthdate
+
+612
+00:31:52,380 --> 00:31:54,380
+onu verdiğim birthdate'i git
+
+613
+00:31:54,380 --> 00:31:56,380
+doğum tarihi yap dedim. Doğum tarihi
+
+614
+00:31:56,380 --> 00:31:58,380
+olarak değiştir. Ondan sonra
+
+615
+00:31:58,380 --> 00:32:00,380
+son halde bunu ne yapacak? Gidecek.
+
+616
+00:32:00,380 --> 00:32:02,380
+Hop, doğum tarihi
+
+617
+00:32:02,380 --> 00:32:04,380
+yapacak o alanı.
+
+618
+00:32:04,380 --> 00:32:06,380
+Bu şekilde değiştirmiş olacağım ismini de.
+
+619
+00:32:06,380 --> 00:32:10,180
+Sonra diğer örneğimize
+
+620
+00:32:10,180 --> 00:32:12,180
+bakalım.
+
+621
+00:32:12,180 --> 00:32:14,180
+Student'ın tablosuna bu sefer
+
+622
+00:32:14,180 --> 00:32:16,180
+sütün eklememi istiyor.
+
+623
+00:32:16,180 --> 00:32:18,180
+Yine sütün, onlar üzerinde işlem yapacaksam
+
+624
+00:32:18,180 --> 00:32:20,180
+alter table'ı kullanacağım.
+
+625
+00:32:20,180 --> 00:32:22,180
+Eklemem için de
+
+626
+00:32:22,180 --> 00:32:24,180
+ne yapıyorum? Alter table.
+
+627
+00:32:24,180 --> 00:32:26,180
+Hangi tabloya ekleyeceğim? Hangi tablo üzerinde
+
+628
+00:32:26,180 --> 00:32:28,180
+işlem yapıyorum? Onun adını verdim.
+
+629
+00:32:28,180 --> 00:32:30,180
+Daha sonra add
+
+630
+00:32:30,180 --> 00:32:32,180
+diyorum ve
+
+631
+00:32:32,180 --> 00:32:34,180
+ne sütün istiyorsam adını yazdım
+
+632
+00:32:34,180 --> 00:32:36,180
+ve yanına da tipini belirttim.
+
+633
+00:32:36,180 --> 00:32:38,180
+Hangi tip de olacak? Kaç karakter
+
+634
+00:32:38,180 --> 00:32:40,180
+uzunluğunu istiyorsam yazmış oldum.
+
+635
+00:32:40,180 --> 00:32:50,849
+Sorular yeni mi?
+
+636
+00:32:50,849 --> 00:32:54,670
+Ben yeni mi görüyorum?
+
+637
+00:32:54,670 --> 00:32:56,670
+Çekti. Sorular var.
+
+638
+00:32:56,670 --> 00:33:02,799
+Ben okuyayım mı hocam yoksa siz bakıyor musunuz?
+
+639
+00:33:02,799 --> 00:33:04,799
+Üstünden yeni sütümü ver.
+
+640
+00:33:04,799 --> 00:33:06,799
+Neyse devam edelim.
+
+641
+00:33:06,799 --> 00:33:08,799
+Geçtim herhalde oraları.
+
+642
+00:33:08,799 --> 00:33:10,799
+Şimdi
+
+643
+00:33:10,799 --> 00:33:12,799
+burada
+
+644
+00:33:12,799 --> 00:33:14,799
+şurayı ne yaptık?
+
+645
+00:33:14,799 --> 00:33:16,799
+Telefon isimini üstüne ekleyeceğiz dedi.
+
+646
+00:33:16,799 --> 00:33:18,799
+Karakter uzunluğu numara olacak.
+
+647
+00:33:18,799 --> 00:33:20,799
+Bunu bir şekilde ekledik.
+
+648
+00:33:20,799 --> 00:33:22,799
+Sonra mesela
+
+649
+00:33:22,799 --> 00:33:24,799
+yine bir güncelleme sorusu var
+
+650
+00:33:24,799 --> 00:33:26,799
+ama bu güncelleme bir sefer kayıt üzerinde.
+
+651
+00:33:26,799 --> 00:33:28,799
+Benden neyi istiyor?
+
+652
+00:33:28,799 --> 00:33:30,799
+Bir kaydı bul
+
+653
+00:33:30,799 --> 00:33:32,799
+ve onun üzerine bir değişiklik yap.
+
+654
+00:33:32,799 --> 00:33:34,799
+Yani numarası, öğrenci numarası
+
+655
+00:33:34,799 --> 00:33:36,799
+şu olan kaydın
+
+656
+00:33:36,799 --> 00:33:38,799
+o kişiyi bulacak ve gidecek
+
+657
+00:33:38,799 --> 00:33:40,799
+onun adresini şu şekilde
+
+658
+00:33:40,799 --> 00:33:42,799
+güncellenecek.
+
+659
+00:33:42,799 --> 00:33:44,799
+Bunun için kullanacağım komut da update
+
+660
+00:33:44,799 --> 00:33:46,799
+komutu oluyor. Update
+
+661
+00:33:46,799 --> 00:33:48,799
+diyorum.
+
+662
+00:33:48,799 --> 00:33:50,799
+Hangi tabloda yapacaksan
+
+663
+00:33:50,799 --> 00:33:52,799
+bu işleri mutlaka tablo adı.
+
+664
+00:33:52,799 --> 00:33:54,799
+Hep dikkat etmişsinizdir. Komuttan sonra
+
+665
+00:33:54,799 --> 00:33:56,799
+tablonun adını yazıyoruz zaten.
+
+666
+00:33:56,799 --> 00:33:58,799
+Update student diyorum.
+
+667
+00:33:58,799 --> 00:34:00,799
+Daha sonrasında
+
+668
+00:34:00,799 --> 00:34:02,799
+set ile
+
+669
+00:34:02,799 --> 00:34:04,799
+birlikte
+
+670
+00:34:04,799 --> 00:34:06,799
+buranın adresi
+
+671
+00:34:06,799 --> 00:34:08,800
+Davut Paşa olacak ama
+
+672
+00:34:08,800 --> 00:34:10,800
+koşulum ne? Student numarası şu olan
+
+673
+00:34:10,800 --> 00:34:12,800
+kişi o kaydı bulacak
+
+674
+00:34:12,800 --> 00:34:14,800
+ve onun adres kısmını
+
+675
+00:34:14,800 --> 00:34:16,800
+gidecek Davut Paşa olarak
+
+676
+00:34:16,800 --> 00:34:18,800
+değiştirecek.
+
+677
+00:34:18,800 --> 00:34:20,800
+Update olayı da
+
+678
+00:34:20,800 --> 00:34:22,800
+bu şekilde.
+
+679
+00:34:22,800 --> 00:34:24,800
+Update student diyecek.
+
+680
+00:34:24,800 --> 00:34:26,800
+Set adres Davut Paşa
+
+681
+00:34:26,800 --> 00:34:28,800
+çünkü onu değiştirmesini istedim.
+
+682
+00:34:28,800 --> 00:34:30,800
+Adres kısmını Davut Paşa olarak değiştirmesini
+
+683
+00:34:30,800 --> 00:34:32,800
+istedim. Ama hangi kayıt?
+
+684
+00:34:32,800 --> 00:34:34,800
+Onun koşulunu da belirtmem gerekiyor.
+
+685
+00:34:34,800 --> 00:34:36,800
+Student numarası şu olan kaydı.
+
+686
+00:34:36,800 --> 00:34:38,800
+Değiştir diyorum.
+
+687
+00:34:38,800 --> 00:34:43,300
+Evet, eklemeler, değiştirmeler
+
+688
+00:34:43,300 --> 00:34:45,300
+bu şekildeydi.
+
+689
+00:34:45,300 --> 00:34:47,300
+Bunu bir de PG admin'de görelim.
+
+690
+00:34:47,300 --> 00:34:50,769
+Çok basitçe bir şekilde.
+
+691
+00:34:50,769 --> 00:34:57,760
+Siz şu an hala sunumu
+
+692
+00:34:57,760 --> 00:34:59,760
+görüyorsunuz yoksa
+
+693
+00:34:59,760 --> 00:35:01,760
+değiştirdim. Görünüyor mu PG admin
+
+694
+00:35:01,760 --> 00:35:03,760
+değiştiriyorum hocam.
+
+695
+00:35:03,760 --> 00:35:05,760
+O zaman onu değiştirelim.
+
+696
+00:35:05,760 --> 00:35:13,619
+Şu an değişti mi
+
+697
+00:35:13,619 --> 00:35:15,619
+ekranımız? Evet şu an değişti.
+
+698
+00:35:15,619 --> 00:35:17,619
+Görüyoruz. Tamamdır.
+
+699
+00:35:17,619 --> 00:35:19,619
+Şimdi PG admin'i çalıştırdığımız
+
+700
+00:35:19,619 --> 00:35:21,619
+zaman o bize
+
+701
+00:35:21,619 --> 00:35:23,619
+taraycımız da bir sayfada
+
+702
+00:35:23,619 --> 00:35:25,619
+açacak.
+
+703
+00:35:25,619 --> 00:35:27,619
+Şöyle ve ekran gelecek önümüze.
+
+704
+00:35:27,619 --> 00:35:29,619
+Sol tarafta bizim
+
+705
+00:35:29,619 --> 00:35:31,619
+PostgreSQL'imiz ve
+
+706
+00:35:31,619 --> 00:35:33,619
+databaselerimiz çıkacak.
+
+707
+00:35:33,619 --> 00:35:35,619
+Burada
+
+708
+00:35:35,619 --> 00:35:37,619
+girerken bir şifre giriyoruz.
+
+709
+00:35:37,619 --> 00:35:39,619
+Siz ilk kurarken oraya bir
+
+710
+00:35:39,619 --> 00:35:41,619
+şifre vereceksiniz. Sonra database'inize
+
+711
+00:35:41,619 --> 00:35:43,619
+bağlanırken de o şifreye gireceksiniz buraya.
+
+712
+00:35:43,619 --> 00:35:45,619
+Şimdi bizim
+
+713
+00:35:45,619 --> 00:35:47,619
+bu arayüzünün amacı ne oluyor?
+
+714
+00:35:47,619 --> 00:35:49,619
+Daha hızlı bir şekilde bu veri tabanına bizi
+
+715
+00:35:49,619 --> 00:35:51,619
+bağlıyor. Buradan
+
+716
+00:35:51,619 --> 00:35:53,619
+ben yeni bir database
+
+717
+00:35:53,619 --> 00:35:55,619
+oluşturmak istediğimde tablo eklemek
+
+718
+00:35:55,619 --> 00:35:57,619
+istediğimde burada mesela ben bu an önce
+
+719
+00:35:57,619 --> 00:35:59,619
+oluşturmuş olduğum databaseler görünüyor.
+
+720
+00:35:59,619 --> 00:36:01,619
+Tablo eklemek istediğimde
+
+721
+00:36:01,619 --> 00:36:03,619
+tablo eklemek istediğimde
+
+722
+00:36:03,619 --> 00:36:05,619
+sağ tıklayarak bir şeyleri de
+
+723
+00:36:05,619 --> 00:36:07,619
+yapmama izin veriyor.
+
+724
+00:36:07,619 --> 00:36:09,619
+Bu şekilde tabloları buradan elle yazabiliyorum.
+
+725
+00:36:09,619 --> 00:36:11,619
+Yani bu arayüzü üzerinden de
+
+726
+00:36:11,619 --> 00:36:13,619
+yazabiliyorum. Kodlarla da
+
+727
+00:36:13,619 --> 00:36:15,619
+yazabiliyorum. Mesela biz
+
+728
+00:36:15,619 --> 00:36:17,619
+şimdi denemelik bir
+
+729
+00:36:17,619 --> 00:36:19,619
+veri tabanı bir database oluşturalım.
+
+730
+00:36:19,619 --> 00:36:23,150
+Şuraya geldi mesela
+
+731
+00:36:23,150 --> 00:36:25,150
+bir database.
+
+732
+00:36:25,150 --> 00:36:27,150
+Bunu tıklayıp
+
+733
+00:36:27,150 --> 00:36:29,150
+açtığım zaman bununla
+
+734
+00:36:29,150 --> 00:36:31,150
+alakalı çeşitli özellikler var.
+
+735
+00:36:31,150 --> 00:36:33,150
+Altta bu şemalara
+
+736
+00:36:33,150 --> 00:36:35,150
+girdiğimde mesela şurada
+
+737
+00:36:35,150 --> 00:36:37,150
+tables var. Ben buraya gelip
+
+738
+00:36:37,150 --> 00:36:39,150
+yeni bir tabloyu buradan da
+
+739
+00:36:39,150 --> 00:36:41,150
+adını vererek işte stunlarını vererek
+
+740
+00:36:41,150 --> 00:36:43,150
+vesaire oluşturabiliyorum.
+
+741
+00:36:43,150 --> 00:36:45,150
+Ama biz tabi bunu kodlayarak
+
+742
+00:36:45,150 --> 00:36:47,150
+göreceğiz. Komutlarla yapacağız.
+
+743
+00:36:47,150 --> 00:36:49,150
+O yüzden buna gelip
+
+744
+00:36:49,150 --> 00:36:51,150
+bir sorgu
+
+745
+00:36:51,150 --> 00:36:53,150
+sayfası açmasını istiyorum
+
+746
+00:36:53,150 --> 00:36:55,150
+bana. Şuradan
+
+747
+00:36:55,150 --> 00:36:57,150
+tıklayıp query tool dediğimizde
+
+748
+00:36:57,150 --> 00:36:59,150
+veya şurada da sanırım
+
+749
+00:36:59,150 --> 00:37:01,150
+klasik bir şekilde şundan da açıyor bir tane.
+
+750
+00:37:01,150 --> 00:37:03,150
+Evet, o da yine böyle bir sayfa açıyor.
+
+751
+00:37:03,150 --> 00:37:05,150
+Query tool
+
+752
+00:37:05,150 --> 00:37:07,150
+oluşturduğum zaman bu database ile
+
+753
+00:37:07,150 --> 00:37:09,150
+alakalı yazacağım komutlar için buradan
+
+754
+00:37:09,150 --> 00:37:11,150
+şimdi tablolarımı
+
+755
+00:37:11,150 --> 00:37:13,150
+oluşturabiliyorum. Mesela
+
+756
+00:37:13,150 --> 00:37:15,150
+database'in oluştuğu unideye
+
+757
+00:37:15,150 --> 00:37:17,150
+ben gideyim buraya mesela bir tane
+
+758
+00:37:17,150 --> 00:37:19,150
+tablo oluştureyim.
+
+759
+00:37:19,150 --> 00:37:21,150
+Komutum neydi? Create table'da.
+
+760
+00:37:21,150 --> 00:37:23,150
+İşte
+
+761
+00:37:23,150 --> 00:37:25,150
+stunun tablosunu basitçe oluşturalım.
+
+762
+00:37:25,150 --> 00:37:27,150
+Hatta ilk
+
+763
+00:37:27,150 --> 00:37:29,150
+tablolarını vermeyeyim. Sadece şu an
+
+764
+00:37:29,150 --> 00:37:31,150
+tablomun adını yazdım oluşturdum.
+
+765
+00:37:31,150 --> 00:37:33,150
+Birazdan neyle ekleyeyim
+
+766
+00:37:33,150 --> 00:37:35,150
+stunlarını? Alter table diyerek
+
+767
+00:37:35,150 --> 00:37:37,150
+ekleyeyim istiyorum.
+
+768
+00:37:37,150 --> 00:37:39,150
+O zaman çalıştırdığımda
+
+769
+00:37:39,150 --> 00:37:41,150
+ne yaptı? Tablomu dedi ki
+
+770
+00:37:41,150 --> 00:37:43,150
+oluşturdu. Tablo şu an oluşmuş
+
+771
+00:37:43,150 --> 00:37:46,659
+durumda. Sonra
+
+772
+00:37:46,659 --> 00:37:48,659
+ben buna gideyim.
+
+773
+00:37:48,659 --> 00:37:50,659
+Eklemeler yapayım.
+
+774
+00:37:50,659 --> 00:37:52,659
+Önce stunlar ekleyeceğim tabi ki.
+
+775
+00:37:52,659 --> 00:37:56,159
+Alter table
+
+776
+00:37:56,159 --> 00:37:58,159
+student'a
+
+777
+00:37:58,159 --> 00:38:00,159
+ne diyorum bir
+
+778
+00:38:00,159 --> 00:38:02,159
+stun eklesin numara stun olsun.
+
+779
+00:38:02,159 --> 00:38:04,159
+Burada öğrenci numaralarının olduğu bir
+
+780
+00:38:04,159 --> 00:38:06,159
+stun olsun. Ve bunun
+
+781
+00:38:06,159 --> 00:38:08,159
+tipi de integer roles.
+
+782
+00:38:08,159 --> 00:38:10,159
+O şekilde yazıyorum.
+
+783
+00:38:10,159 --> 00:38:12,159
+Sonra bir stun daha
+
+784
+00:38:12,159 --> 00:38:14,159
+ekleyelim. Alter table
+
+785
+00:38:14,159 --> 00:38:16,159
+diyen. Buna student'a
+
+786
+00:38:16,159 --> 00:38:18,159
+ekleyecek. Diğer stunun
+
+787
+00:38:18,159 --> 00:38:20,159
+adı da
+
+788
+00:38:20,159 --> 00:38:22,159
+basit bir tablo olsun. Name olsun tabi
+
+789
+00:38:22,159 --> 00:38:24,159
+bunun da
+
+790
+00:38:24,159 --> 00:38:26,159
+vermem gerekiyor.
+
+791
+00:38:26,159 --> 00:38:28,159
+İsmini vermem gerekiyor.
+
+792
+00:38:28,159 --> 00:38:30,159
+Tipini belirtmem gerekiyor.
+
+793
+00:38:30,159 --> 00:38:32,159
+Bu şekilde oluşturmuş olayım ben bunları.
+
+794
+00:38:32,159 --> 00:38:34,159
+Şuradan da
+
+795
+00:38:34,159 --> 00:38:36,159
+egzeküt ediyorum. Yani bu yazdığım sorguları
+
+796
+00:38:36,159 --> 00:38:38,159
+çalıştırıyorum. Şimdi bunu
+
+797
+00:38:38,159 --> 00:38:40,159
+çalıştırdığımda bana
+
+798
+00:38:40,159 --> 00:38:42,159
+bir hata verecek. Çünkü
+
+799
+00:38:42,159 --> 00:38:44,159
+ee
+
+800
+00:38:44,159 --> 00:38:46,159
+şurayı tekrardan
+
+801
+00:38:46,159 --> 00:38:48,159
+oluşturduğumu falan söyleyecekler
+
+802
+00:38:48,159 --> 00:38:53,619
+ihtimaline. Varçar
+
+803
+00:38:53,619 --> 00:38:55,619
+yapmanız hiçbir yer değil.
+
+804
+00:38:55,619 --> 00:38:57,619
+Çar olarak verdik galiba
+
+805
+00:38:57,619 --> 00:38:59,619
+ed yapmamışız. Pardon.
+
+806
+00:38:59,619 --> 00:39:01,619
+Pardon.
+
+807
+00:39:01,619 --> 00:39:03,619
+Ha o şey name'i renkli yapınca
+
+808
+00:39:03,619 --> 00:39:05,619
+kafamı karıştırdı. Bu name
+
+809
+00:39:05,619 --> 00:39:07,619
+büyük ihtimaline onun şeyinde
+
+810
+00:39:07,619 --> 00:39:09,619
+tanımlı bir kelime
+
+811
+00:39:09,619 --> 00:39:11,619
+karakter. O yüzden
+
+812
+00:39:11,619 --> 00:39:13,619
+onu da renkli gösteriyor. Normalde benim girdiğimde
+
+813
+00:39:13,619 --> 00:39:15,619
+eşkenlerde herhangi bir renklendirme yapmaz.
+
+814
+00:39:15,619 --> 00:39:17,619
+Ama name'i renkli göster.
+
+815
+00:39:17,619 --> 00:39:19,619
+Ben burada ed'i unutmuşum.
+
+816
+00:39:19,619 --> 00:39:21,619
+Student'a ekle. Name isimi
+
+817
+00:39:21,619 --> 00:39:23,619
+de eşkeni. Burada
+
+818
+00:39:23,619 --> 00:39:25,619
+olay için mesela çalıştırayım tekrar.
+
+819
+00:39:25,619 --> 00:39:27,619
+Eee derlice
+
+820
+00:39:27,619 --> 00:39:29,619
+bu editor çalıştırırken her
+
+821
+00:39:29,619 --> 00:39:31,619
+zaman en baştan itibaren okuduğu
+
+822
+00:39:31,619 --> 00:39:33,619
+için komutlara gidecek.
+
+823
+00:39:33,619 --> 00:39:35,619
+Ben mesela demin red table dedim. Student
+
+824
+00:39:35,619 --> 00:39:37,619
+dedim. Bunu çalıştırdım. Bunu oluşturdu zaten
+
+825
+00:39:37,619 --> 00:39:39,619
+bir kere. Şimdi bla bla bir şeyler
+
+826
+00:39:39,619 --> 00:39:41,619
+yazdım. Tekrar tutup da buradan direkt
+
+827
+00:39:41,619 --> 00:39:43,619
+çalıştırı yaparsan gidecek bana
+
+828
+00:39:43,619 --> 00:39:45,619
+ilk satır okuyacak diyecek ki senin zaten
+
+829
+00:39:45,619 --> 00:39:47,619
+böyle bir tablam var.
+
+830
+00:39:47,619 --> 00:39:49,619
+O zaman orada bir hata verecek. O yüzden
+
+831
+00:39:49,619 --> 00:39:51,619
+ben her bir şeyi ilk defa
+
+832
+00:39:51,619 --> 00:39:53,619
+yani yeni yazdığım her bir satırı şöyle
+
+833
+00:39:53,619 --> 00:39:55,619
+taratıp tutup taratıp o şekilde
+
+834
+00:39:55,619 --> 00:39:57,619
+çalıştırmam gerekiyor.
+
+835
+00:39:57,619 --> 00:39:59,619
+Bakın sadece ben bu ilk satırı sonradan
+
+836
+00:39:59,619 --> 00:40:01,619
+yazdım ve bunları şimdi çalıştırdığımda
+
+837
+00:40:01,619 --> 00:40:03,619
+bana diyecek ki evet bunu
+
+838
+00:40:03,619 --> 00:40:05,619
+başarılı şekilde oluşturdum ve
+
+839
+00:40:05,619 --> 00:40:07,619
+ekledim diyecek.
+
+840
+00:40:07,619 --> 00:40:09,619
+Şimdi student'ın tablomu oluşturdum.
+
+841
+00:40:09,619 --> 00:40:11,619
+Ona iki tane de ne ekledim?
+
+842
+00:40:11,619 --> 00:40:13,619
+Skin eklemiş oldum.
+
+843
+00:40:13,619 --> 00:40:15,619
+Bunu görmek isterseniz
+
+844
+00:40:15,619 --> 00:40:17,619
+şu yandaki ekrandan tables'tan
+
+845
+00:40:17,619 --> 00:40:19,619
+açalım.
+
+846
+00:40:19,619 --> 00:40:21,619
+Student diye tablom
+
+847
+00:40:21,619 --> 00:40:23,619
+çıkıyor. Onun da
+
+848
+00:40:23,619 --> 00:40:25,619
+altında student'ları
+
+849
+00:40:25,619 --> 00:40:27,619
+std-nomename olarak
+
+850
+00:40:27,619 --> 00:40:29,619
+görünüyor.
+
+851
+00:40:29,619 --> 00:40:31,619
+Şuraya gelip sağa tık yapıp
+
+852
+00:40:31,619 --> 00:40:33,619
+data'yı gör dediğimizde, all roles
+
+853
+00:40:33,619 --> 00:40:39,840
+dediğimizde.
+
+854
+00:40:39,840 --> 00:40:41,840
+Bakın boş bir halde şu an kayıt falan
+
+855
+00:40:41,840 --> 00:40:43,840
+olmadığı için sadece student
+
+856
+00:40:43,840 --> 00:40:45,840
+isimleriyle bana gösterdi.
+
+857
+00:40:45,840 --> 00:40:47,840
+std-nomename olarak burada
+
+858
+00:40:47,840 --> 00:40:49,840
+çıkıyor tablo. Şimdi tablonun
+
+859
+00:40:49,840 --> 00:40:51,840
+student'ları hazır. O zaman bir iki tane de
+
+860
+00:40:51,840 --> 00:40:55,280
+kayıt ekleyeyim ben buna.
+
+861
+00:40:55,280 --> 00:40:57,280
+Şimdi eklemek için ne yapıyordum?
+
+862
+00:40:57,280 --> 00:40:59,280
+Kayıt bazında işlemlerim için.
+
+863
+00:40:59,280 --> 00:41:01,280
+InsertInto diyordum.
+
+864
+00:41:01,280 --> 00:41:03,280
+Kime? Student tablosuna
+
+865
+00:41:03,280 --> 00:41:05,280
+belli
+
+866
+00:41:05,280 --> 00:41:07,280
+student'ları eklemek istiyorsam
+
+867
+00:41:07,280 --> 00:41:09,280
+parantez açıp hangi student'ları
+
+868
+00:41:09,280 --> 00:41:11,280
+eklemek istediğimi buraya yazıyordum.
+
+869
+00:41:11,280 --> 00:41:13,280
+Ama ben burada zaten bütün student'a iki tane
+
+870
+00:41:13,280 --> 00:41:15,280
+student'ım var. İkisine de ekleme yapacağım.
+
+871
+00:41:15,280 --> 00:41:17,280
+O yüzden InsertIntoStudent deyip
+
+872
+00:41:17,280 --> 00:41:19,280
+direkt ekleyeceğim
+
+873
+00:41:19,280 --> 00:41:21,280
+value'ları giriyorum.
+
+874
+00:41:21,280 --> 00:41:23,280
+İlki integer'dı. Onu direkt
+
+875
+00:41:23,280 --> 00:41:25,280
+onut gibi bir değer atayım.
+
+876
+00:41:25,280 --> 00:41:27,280
+Diğeri de karakter de onda da
+
+877
+00:41:27,280 --> 00:41:29,280
+ali gibi bir
+
+878
+00:41:29,280 --> 00:41:31,280
+değeri olsun.
+
+879
+00:41:31,280 --> 00:41:33,280
+Bunu bu şekilde ekledim.
+
+880
+00:41:33,280 --> 00:41:35,280
+Sonra o şeyi de
+
+881
+00:41:35,280 --> 00:41:37,280
+gösterelim. Hani eklemediğimizde
+
+882
+00:41:37,280 --> 00:41:39,280
+ne yapıyor veya tek bir yere ekleme
+
+883
+00:41:39,280 --> 00:41:41,280
+yaptığımızda. Mesela diyelim ki
+
+884
+00:41:41,280 --> 00:41:43,280
+sadece işte name'e
+
+885
+00:41:43,280 --> 00:41:45,280
+ekleme yaptım. Name isimli bir
+
+886
+00:41:45,280 --> 00:41:47,280
+student'ım vardı. Sadece
+
+887
+00:41:47,280 --> 00:41:49,280
+ona ekle. Hangi value'ları
+
+888
+00:41:49,280 --> 00:41:51,280
+ekle ona.
+
+889
+00:41:51,280 --> 00:41:53,280
+Sadece bir isim vereceğiz ona da.
+
+890
+00:41:53,280 --> 00:41:55,280
+Onu da value'ye eklesin.
+
+891
+00:41:55,280 --> 00:41:57,280
+Şimdi bunu yazdım.
+
+892
+00:41:57,280 --> 00:41:59,280
+Efadem'e şöyle
+
+893
+00:41:59,280 --> 00:42:01,280
+taratıyorum.
+
+894
+00:42:01,280 --> 00:42:03,280
+Ve çalıştırıyorum.
+
+895
+00:42:03,280 --> 00:42:05,280
+Evet bunu da
+
+896
+00:42:05,280 --> 00:42:07,280
+çalıştırmış oldum. Mesela şurada tekrar
+
+897
+00:42:07,280 --> 00:42:14,369
+baktığımda tablom
+
+898
+00:42:14,369 --> 00:42:16,369
+oluştu burada. İlk kaydım
+
+899
+00:42:16,369 --> 00:42:18,369
+işte numara sondu [öğrenci]'iydi.
+
+900
+00:42:18,369 --> 00:42:20,369
+İkinci kaydıma bir numara vermemiştim.
+
+901
+00:42:20,369 --> 00:42:22,369
+O ne oldu? Null çıktı.
+
+902
+00:42:22,369 --> 00:42:24,369
+İsmini sadece vermiştim. Sadece ismini yazdı.
+
+903
+00:42:24,369 --> 00:42:26,369
+İşte burada hani şey demiştik ya
+
+904
+00:42:26,369 --> 00:42:28,369
+not null ifadesi var.
+
+905
+00:42:28,369 --> 00:42:30,369
+Eğer bir yerin boş kalmasını asla
+
+906
+00:42:30,369 --> 00:42:32,369
+istemiyorsak. Eğer mesela ben onu tanımlarken
+
+907
+00:42:32,369 --> 00:42:34,369
+not null demiş olsaydım
+
+908
+00:42:34,369 --> 00:42:36,369
+benim bu kaydı girmeme izin vermeyecekti.
+
+909
+00:42:36,369 --> 00:42:38,369
+Orada hata verecekti. Sen bu alana
+
+910
+00:42:38,369 --> 00:42:40,369
+boş bir biri girmeye çalışıyorsun diye.
+
+911
+00:42:40,369 --> 00:42:42,369
+Ama şu anda girebildik.
+
+912
+00:42:42,369 --> 00:42:44,369
+Bu şekilde bize bir sıkıntı
+
+913
+00:42:44,369 --> 00:42:46,369
+çıkarmamış oldu.
+
+914
+00:42:46,369 --> 00:42:48,369
+Peki işte girmeyi
+
+915
+00:42:48,369 --> 00:42:50,369
+unuttuk diyelim. O alanı boş
+
+916
+00:42:50,369 --> 00:42:52,369
+bıraktık. Bunu oraya bir
+
+917
+00:42:52,369 --> 00:42:54,369
+numara eklemek isteseydik.
+
+918
+00:42:54,369 --> 00:42:56,369
+Ne yapardık? O zaman
+
+919
+00:42:56,369 --> 00:42:58,369
+bunun mantığı nedir?
+
+920
+00:42:58,369 --> 00:43:00,369
+Şimdi değilim ki ben gideyim o.
+
+921
+00:43:00,369 --> 00:43:02,369
+Açayım tekrar şu kenarda dursun.
+
+922
+00:43:02,369 --> 00:43:04,369
+Ben bu
+
+923
+00:43:04,369 --> 00:43:06,369
+Veli kaydına gidip
+
+924
+00:43:06,369 --> 00:43:08,369
+oraya bir öğrenci numarası eklemek istiyorum.
+
+925
+00:43:08,369 --> 00:43:10,369
+Belki o an ekleyememiştik.
+
+926
+00:43:10,369 --> 00:43:12,369
+Sonradan numarasını öğrendik ve
+
+927
+00:43:12,369 --> 00:43:14,369
+ekleyeceğiz şimdi.
+
+928
+00:43:14,369 --> 00:43:16,369
+Bunu nasıl ekleyeceğim? Yine
+
+929
+00:43:16,369 --> 00:43:18,369
+ne yapıyorum? Kayıt bazında bir işleme
+
+930
+00:43:18,369 --> 00:43:20,369
+olduğu için biz kayıtlarda ne diyorduk?
+
+931
+00:43:20,369 --> 00:43:22,369
+Sileme, güncellemeyi
+
+932
+00:43:22,369 --> 00:43:24,369
+insert, delete, update ile yapıyorduk.
+
+933
+00:43:24,369 --> 00:43:26,369
+Şimdi de ben bir kaydı
+
+934
+00:43:26,369 --> 00:43:28,369
+aslında
+
+935
+00:43:28,369 --> 00:43:30,369
+güncelleyeceğim.
+
+936
+00:43:30,369 --> 00:43:32,369
+Yani insert komutu kafanızı
+
+937
+00:43:32,369 --> 00:43:34,369
+karıştırmasın. Burada mesela insert ile
+
+938
+00:43:34,369 --> 00:43:36,369
+eklemeyeceğim öğrenci numarasını. Update
+
+939
+00:43:36,369 --> 00:43:38,369
+ile ekleyeceğim. Çünkü diyeceğim ki orada zaten
+
+940
+00:43:38,369 --> 00:43:40,369
+belli bir kayıt var. Ben gideceğim
+
+941
+00:43:40,369 --> 00:43:42,369
+bu kaydı güncelleyeceğim. O kaydın
+
+942
+00:43:42,369 --> 00:43:44,369
+belli bir alanı var. Orayı şu
+
+943
+00:43:44,369 --> 00:43:46,369
+olarak değiştireceğim diyeceğim.
+
+944
+00:43:46,369 --> 00:43:48,369
+Insert kullandığım yer tamamen
+
+945
+00:43:48,369 --> 00:43:50,369
+yeni bir kayıt eklerken, buraya yepyeni bir sıra
+
+946
+00:43:50,369 --> 00:43:52,369
+eklerken insert kullanıyorum.
+
+947
+00:43:52,369 --> 00:43:54,369
+Ama var olan bir kayıtta benim şu an böyle
+
+948
+00:43:54,369 --> 00:43:56,369
+bir ismi belli olan bir kaydım var.
+
+949
+00:43:56,369 --> 00:43:58,369
+Ben diyorum ki ismi belli olan kaydı bu
+
+950
+00:43:58,369 --> 00:44:00,369
+ve öğrenci numarasını işte şu
+
+951
+00:44:00,369 --> 00:44:02,369
+yap. Mesela onu nasıl yazarım?
+
+952
+00:44:02,369 --> 00:44:04,369
+Onu da dedim ki update
+
+953
+00:44:04,369 --> 00:44:06,369
+ile yazıyorum. Update
+
+954
+00:44:06,369 --> 00:44:08,369
+kimi update edeceğimi yazıyorum.
+
+955
+00:44:08,369 --> 00:44:10,369
+Update students.
+
+956
+00:44:10,369 --> 00:44:12,369
+Sonra bunu set ediyorum.
+
+957
+00:44:12,369 --> 00:44:14,369
+Neyini set edeceğim orada?
+
+958
+00:44:14,369 --> 00:44:16,369
+STD numarası, öğrenci numarasını
+
+959
+00:44:16,369 --> 00:44:18,369
+işte 20 yapacağım.
+
+960
+00:44:18,369 --> 00:44:20,369
+Diyeyim.
+
+961
+00:44:20,369 --> 00:44:22,369
+Bunun koşulum
+
+962
+00:44:22,369 --> 00:44:24,369
+ne? Ismi
+
+963
+00:44:24,369 --> 00:44:26,369
+belli olan kişi.
+
+964
+00:44:26,369 --> 00:44:28,369
+Şimdi bu tabii ki aslında
+
+965
+00:44:28,369 --> 00:44:30,369
+hoş bir ifade olmuyor. Bunun
+
+966
+00:44:30,369 --> 00:44:32,369
+anlamı şu, bizim veri tabanımız
+
+967
+00:44:32,369 --> 00:44:34,369
+şu an sadece iki tane kayıttan oluştuğu ve
+
+968
+00:44:34,369 --> 00:44:36,369
+sadece bir tane belli olduğu için gidecek
+
+969
+00:44:36,369 --> 00:44:38,369
+sadece belliye update edecek, belliye
+
+970
+00:44:38,369 --> 00:44:40,369
+ekleyecek bu öğrenci numarasını ama
+
+971
+00:44:40,369 --> 00:44:42,369
+bu cümlenin anısını
+
+972
+00:44:42,369 --> 00:44:44,369
+anlamı şu, bu gidecek bu
+
+973
+00:44:44,369 --> 00:44:46,369
+tablodaki bütün velilerin numarasını
+
+974
+00:44:46,369 --> 00:44:48,369
+20 yapacak. Yani
+
+975
+00:44:48,369 --> 00:44:50,369
+özel bir şeydir çünkü veli ismi ne
+
+976
+00:44:50,369 --> 00:44:52,369
+primary keyde ne başka bir şeydir belki.
+
+977
+00:44:52,369 --> 00:44:54,369
+O zaman bunun mantığı şu
+
+978
+00:44:54,369 --> 00:44:56,369
+sen veri tabanında
+
+979
+00:44:56,369 --> 00:44:58,369
+ismi veri olan bu tabloda
+
+980
+00:44:58,369 --> 00:45:00,369
+belki yüzlerce binlerce kayıt var oradaki
+
+981
+00:45:00,369 --> 00:45:02,369
+bütün velilerin gidecek ve
+
+982
+00:45:02,369 --> 00:45:04,369
+öğrenci numaralarını 20'ye eşitleyecek.
+
+983
+00:45:04,369 --> 00:45:06,369
+Ama benim şu an
+
+984
+00:45:06,369 --> 00:45:08,369
+veri tabanımda bir tane
+
+985
+00:45:08,369 --> 00:45:10,369
+veli olduğundan dolayı benim
+
+986
+00:45:10,369 --> 00:45:12,369
+sadece
+
+987
+00:45:12,369 --> 00:45:14,369
+regülü sunumla değişiklik yapmış
+
+988
+00:45:14,369 --> 00:45:16,369
+olacak. Gitti öğrenci numarasını
+
+989
+00:45:16,369 --> 00:45:21,699
+artık 20 yaptı.
+
+990
+00:45:21,699 --> 00:45:23,699
+Evet, böyle de bir dedik ki
+
+991
+00:45:23,699 --> 00:45:25,699
+güncellemesini bu şekilde yapıyoruz.
+
+992
+00:45:25,699 --> 00:45:29,070
+Şimdi
+
+993
+00:45:29,070 --> 00:45:31,070
+bu dersin konusunda
+
+994
+00:45:31,070 --> 00:45:33,070
+yine işlememiz gereken son bir
+
+995
+00:45:33,070 --> 00:45:35,070
+komut kaldı. O da
+
+996
+00:45:35,070 --> 00:45:37,070
+select. Ki derslerde
+
+997
+00:45:37,070 --> 00:45:39,070
+oldukça sıkça kullanacak
+
+998
+00:45:39,070 --> 00:45:41,070
+olduğumuz select from
+
+999
+00:45:41,070 --> 00:45:43,070
+verlerle geçecek bu dönemimiz.
+
+1000
+00:45:43,070 --> 00:45:45,070
+Select komutu
+
+1001
+00:45:45,070 --> 00:45:47,070
+şimdi biz tabloları
+
+1002
+00:45:47,070 --> 00:45:49,070
+oluşturuyoruz. Tablolara verileri
+
+1003
+00:45:49,070 --> 00:45:51,070
+giriyoruz. Güzel
+
+1004
+00:45:51,070 --> 00:45:53,070
+güncellemelerimizi yapıyoruz. Ama bir de
+
+1005
+00:45:53,070 --> 00:45:55,070
+ekrana bazı sonuçlar döndürmek
+
+1006
+00:45:55,070 --> 00:45:57,070
+isteriz. Yani bana şu şu olan kayıtları
+
+1007
+00:45:57,070 --> 00:45:59,070
+göster. Şu şu olan kaydı
+
+1008
+00:45:59,070 --> 00:46:01,070
+getir. Yani illa bir değişiklik yapma
+
+1009
+00:46:01,070 --> 00:46:03,070
+modeli ile göstermek istediğimde
+
+1010
+00:46:03,070 --> 00:46:05,070
+select yani bunu seç bana getir
+
+1011
+00:46:05,070 --> 00:46:07,070
+komutunu kullanıyorum.
+
+1012
+00:46:07,070 --> 00:46:09,070
+Select'ın olayında şöyle bir şey var
+
+1013
+00:46:09,070 --> 00:46:11,070
+Select diyorum. Evet,
+
+1014
+00:46:11,070 --> 00:46:13,070
+buraya neyi seçeceğimi yazıyorum.
+
+1015
+00:46:13,070 --> 00:46:15,070
+Sonra from. Buraya da
+
+1016
+00:46:15,070 --> 00:46:17,070
+tablonun adını yazmam gerekiyor.
+
+1017
+00:46:17,070 --> 00:46:19,070
+Yani şöyle
+
+1018
+00:46:19,070 --> 00:46:21,070
+düşünelim. Ben sizden deseydim
+
+1019
+00:46:21,070 --> 00:46:23,070
+ki şu benim tablam ya.
+
+1020
+00:46:23,070 --> 00:46:29,460
+Bu tablodaki
+
+1021
+00:46:29,460 --> 00:46:31,460
+mesela işte
+
+1022
+00:46:31,460 --> 00:46:33,460
+sadece neyi isteyeyim?
+
+1023
+00:46:33,460 --> 00:46:35,460
+Şey isim
+
+1024
+00:46:35,460 --> 00:46:37,460
+sütununu isteyeyim. Ben bu tablonun isimlerini
+
+1025
+00:46:37,460 --> 00:46:39,460
+görmek istiyorum. Hangi isimler var
+
+1026
+00:46:39,460 --> 00:46:41,460
+bu tabloda? Bunu görmek istediğimde
+
+1027
+00:46:41,460 --> 00:46:43,460
+select derim. Buraya
+
+1028
+00:46:43,460 --> 00:46:45,460
+her zaman sütun adı yazılır. Hangi
+
+1029
+00:46:45,460 --> 00:46:47,460
+sütunları görmek istediğim? Ben orada
+
+1030
+00:46:47,460 --> 00:46:49,460
+neyi? Isim sütununu görmek istiyorum.
+
+1031
+00:46:49,460 --> 00:46:51,460
+Hangi tablodan görmek istiyorum?
+
+1032
+00:46:51,460 --> 00:46:53,460
+From'dan sonra da tablonun
+
+1033
+00:46:53,460 --> 00:46:55,460
+adını yazıyorum. Tablomu zaten
+
+1034
+00:46:55,460 --> 00:46:57,460
+neydi deminden? Biri uğraştığında
+
+1035
+00:46:57,460 --> 00:46:59,460
+sütunun tablosu. Ben bunu
+
+1036
+00:46:59,460 --> 00:47:01,460
+deyip çalıştırdığım taktirde
+
+1037
+00:47:01,460 --> 00:47:03,460
+bana neyi getirecek?
+
+1038
+00:47:03,460 --> 00:47:05,460
+Oradaki isim sütunu
+
+1039
+00:47:05,460 --> 00:47:07,460
+ve ona ait değerleri
+
+1040
+00:47:07,460 --> 00:47:09,460
+getirecek.
+
+1041
+00:47:09,460 --> 00:47:11,460
+Peki numaraları da isteyemez miydim?
+
+1042
+00:47:11,460 --> 00:47:13,460
+İsterdim. Buraya birden fazla
+
+1043
+00:47:13,460 --> 00:47:16,829
+koyardık.
+
+1044
+00:47:16,829 --> 00:47:20,940
+Bunu çalıştırdığımda hem
+
+1045
+00:47:20,940 --> 00:47:22,940
+numaraları hem de
+
+1046
+00:47:22,940 --> 00:47:24,940
+isimleri getirdi.
+
+1047
+00:47:24,940 --> 00:47:26,940
+Bu zaten benim tablomun tamamıydı.
+
+1048
+00:47:26,940 --> 00:47:28,940
+Aslında bunun şöyle bir ifadesi var. Ben
+
+1049
+00:47:28,940 --> 00:47:30,940
+tablonun tamamını görmek istiyorsam
+
+1050
+00:47:30,940 --> 00:47:32,940
+buraya sıra sıra bütün sütunlarının ismini
+
+1051
+00:47:32,940 --> 00:47:34,940
+yazmıyorum. Şuraya bir yıldız
+
+1052
+00:47:34,940 --> 00:47:36,940
+atıyorum ve select
+
+1053
+00:47:36,940 --> 00:47:38,940
+yıldız from student dediğim
+
+1054
+00:47:38,940 --> 00:47:40,940
+anda bu tabloya ait bütün
+
+1055
+00:47:40,940 --> 00:47:42,940
+kayıtlar, bütün tablo, bütün sütun
+
+1056
+00:47:42,940 --> 00:47:44,940
+tablosu benim önüme gelmiş
+
+1057
+00:47:44,940 --> 00:47:46,940
+oluyor. Yine aynı şeyi görüyorsunuz.
+
+1058
+00:47:46,940 --> 00:47:48,940
+Bana döndürmüş oluyor.
+
+1059
+00:47:50,940 --> 00:47:52,940
+Peki belli spesifik bir şey
+
+1060
+00:47:52,940 --> 00:47:54,940
+istesem mesela ben şu benim
+
+1061
+00:47:54,940 --> 00:47:56,940
+tablomun tamamı
+
+1062
+00:47:56,940 --> 00:47:58,940
+sadece işte [öğrenci]'nin
+
+1063
+00:47:58,940 --> 00:48:00,940
+öğrenci numarasını görmek istiyorum.
+
+1064
+00:48:00,940 --> 00:48:02,940
+İsmi [öğrenci] olan kişinin öğrenci numarasını
+
+1065
+00:48:02,940 --> 00:48:04,940
+görmek istiyorum dediğimde
+
+1066
+00:48:04,940 --> 00:48:06,940
+bir de buna bakın yukarıda
+
+1067
+00:48:06,940 --> 00:48:08,940
+neydi? Eğer bir koşuluğum
+
+1068
+00:48:08,940 --> 00:48:10,940
+varsa işte ismi şu olanı şöyle
+
+1069
+00:48:10,940 --> 00:48:12,940
+değiştir vesaire gibi de bir ver
+
+1070
+00:48:12,940 --> 00:48:14,940
+kelimesi kullanıyorduk. Burada da
+
+1071
+00:48:14,940 --> 00:48:16,940
+aynı şekilde eğer bir koşuluğum varsa
+
+1072
+00:48:16,940 --> 00:48:18,940
+yani ismi şu olan kişinin numarasını
+
+1073
+00:48:18,940 --> 00:48:20,940
+getir falan diyorsam
+
+1074
+00:48:20,940 --> 00:48:22,940
+yine aynı anahtar, cümle
+
+1075
+00:48:22,940 --> 00:48:24,940
+anahtar, kelime ver ile
+
+1076
+00:48:24,940 --> 00:48:26,940
+bunu yapacağım. Ben ne dedim?
+
+1077
+00:48:26,940 --> 00:48:28,940
+İsmi [öğrenci] olan kişinin öğrenci
+
+1078
+00:48:28,940 --> 00:48:30,940
+numarasını istediğimi söyledim.
+
+1079
+00:48:30,940 --> 00:48:32,940
+O zaman ver dedikten sonra
+
+1080
+00:48:32,940 --> 00:48:34,940
+o names tuğundaki
+
+1081
+00:48:34,940 --> 00:48:36,940
+isminin [öğrenci] olanını
+
+1082
+00:48:36,940 --> 00:48:38,940
+bana getir diyor.
+
+1083
+00:48:38,940 --> 00:48:40,940
+İsmi [öğrenci] olan kişinin
+
+1084
+00:48:40,940 --> 00:48:42,940
+bu bir öğrenci tablosundan
+
+1085
+00:48:42,940 --> 00:48:44,940
+bir kayıt. Neyini getir?
+
+1086
+00:48:44,940 --> 00:48:46,940
+Bana öğrenci numarasını
+
+1087
+00:48:46,940 --> 00:48:48,940
+yani burada da
+
+1088
+00:48:48,940 --> 00:48:50,940
+Estidino dediğim
+
+1089
+00:48:50,940 --> 00:48:52,940
+kısım. Estidino'yu
+
+1090
+00:48:52,940 --> 00:48:54,940
+seç. Öğrenci tablosundan
+
+1091
+00:48:54,940 --> 00:48:56,940
+ve ismi [öğrenci] olan kişinin
+
+1092
+00:48:56,940 --> 00:48:58,940
+kaydını getir. Bunu dediğimde
+
+1093
+00:48:58,940 --> 00:49:00,940
+ekrana 10 getirmesini
+
+1094
+00:49:00,940 --> 00:49:02,940
+bekliyorum. Evet sadece
+
+1095
+00:49:02,940 --> 00:49:08,269
+10 getirmiş oldu.
+
+1096
+00:49:08,269 --> 00:49:10,269
+İsmi [öğrenci] olan kişinin de
+
+1097
+00:49:10,269 --> 00:49:12,269
+kaydı öğrenci numarası
+
+1098
+00:49:12,269 --> 00:49:16,159
+bu şekilde gelmiş oluyor.
+
+1099
+00:49:16,159 --> 00:49:18,159
+Tekrar şimdi sunuma
+
+1100
+00:49:18,159 --> 00:49:20,159
+bir bakalım. Orada
+
+1101
+00:49:20,159 --> 00:49:22,159
+select ile ilgili ne örnekler varmış.
+
+1102
+00:49:22,159 --> 00:49:27,199
+Tekrar bir onay almam gerekiyor.
+
+1103
+00:49:27,199 --> 00:49:29,199
+Sunumu görüyor musunuz şu an?
+
+1104
+00:49:29,199 --> 00:49:31,199
+Hayır şu an sunumu görmüyoruz.
+
+1105
+00:49:31,199 --> 00:49:33,199
+Sadece bu ekranı görüyoruz şu an.
+
+1106
+00:49:33,199 --> 00:49:35,199
+Ben zımbı çözeme kalayım.
+
+1107
+00:49:37,199 --> 00:49:39,199
+Neyse desktopta ya da şimdi yapmamışız.
+
+1108
+00:49:39,199 --> 00:49:41,199
+Tamamdır.
+
+1109
+00:49:43,199 --> 00:49:45,199
+Şimdi select'e gelmiştik.
+
+1110
+00:49:45,199 --> 00:49:47,199
+Şu an görünüyor değil mi?
+
+1111
+00:49:47,199 --> 00:49:49,199
+Evet. Tamamdır.
+
+1112
+00:49:49,199 --> 00:49:51,199
+Select
+
+1113
+00:49:51,199 --> 00:49:53,199
+tablodaki ne dedim?
+
+1114
+00:49:53,199 --> 00:49:55,199
+Tüm satırları, sütunları her şeyi
+
+1115
+00:49:55,199 --> 00:49:57,199
+görmek istiyorsam bir yıldız atıyorum
+
+1116
+00:49:57,199 --> 00:49:59,199
+select'den sonra. Normalde buraya tablo
+
+1117
+00:49:59,199 --> 00:50:01,199
+sütun isimleri yazardım.
+
+1118
+00:50:01,199 --> 00:50:03,199
+Ama bütün sütunlarını istiyorsam yıldız
+
+1119
+00:50:03,199 --> 00:50:05,199
+dediğimi bu tabloya ait bütün sütunları
+
+1120
+00:50:05,199 --> 00:50:07,199
+anlıyor ve bana bütün bilgiyi
+
+1121
+00:50:07,199 --> 00:50:09,199
+getiriyor.
+
+1122
+00:50:09,199 --> 00:50:11,199
+Sonra örneğimiz neydi? Eğer sadece
+
+1123
+00:50:11,199 --> 00:50:13,199
+belirli sütunu listelemek istiyorsam da
+
+1124
+00:50:13,199 --> 00:50:19,780
+yazmış oluyordum.
+
+1125
+00:50:19,780 --> 00:50:21,780
+Bu da aynı demin yaptığımız örnek.
+
+1126
+00:50:21,780 --> 00:50:23,780
+İsmi [öğrenci] olan kişinin
+
+1127
+00:50:23,780 --> 00:50:25,780
+neyini getirtmiş?
+
+1128
+00:50:25,780 --> 00:50:27,780
+Öğrenci numarasını getirtmiş.
+
+1129
+00:50:27,780 --> 00:50:29,780
+Bu şekilde select from ver'in
+
+1130
+00:50:29,780 --> 00:50:31,780
+yazımını böyle
+
+1131
+00:50:31,780 --> 00:50:33,780
+yan yana da yazabiliriz.
+
+1132
+00:50:33,780 --> 00:50:35,780
+Ama okunaklı olması için böyle alt alta
+
+1133
+00:50:35,780 --> 00:50:37,780
+yazıyoruz ki. Çünkü ilerleyen
+
+1134
+00:50:37,780 --> 00:50:39,780
+günlerde buralara bir sürü işte
+
+1135
+00:50:39,780 --> 00:50:41,780
+tablolar birkaç tabloda çalışacağız.
+
+1136
+00:50:41,780 --> 00:50:43,780
+Farklı farklı bir sürü koşullar
+
+1137
+00:50:43,780 --> 00:50:45,780
+olacak. Dıdımın dıdısı şunun şu
+
+1138
+00:50:45,780 --> 00:50:47,780
+olanın şeyini getirir falan gibi burası
+
+1139
+00:50:47,780 --> 00:50:49,780
+bayağı dolacağı için buralara böyle
+
+1140
+00:50:49,780 --> 00:50:51,780
+select from ver alt alta yazmışız.
+
+1141
+00:50:53,780 --> 00:50:55,780
+Başka ne örneğimiz varmış?
+
+1142
+00:50:55,780 --> 00:50:57,780
+Soy adında
+
+1143
+00:50:57,780 --> 00:50:59,780
+R harfi geçen öğrencilerine tabi bazı
+
+1144
+00:50:59,780 --> 00:51:01,780
+böyle değişik
+
+1145
+00:51:01,780 --> 00:51:03,780
+şeyler var. Burada sorgu
+
+1146
+00:51:03,780 --> 00:51:05,780
+örneklerimiz. Burada
+
+1147
+00:51:05,780 --> 00:51:07,780
+sorduğu şey bize
+
+1148
+00:51:07,780 --> 00:51:09,780
+soy adı kısmında
+
+1149
+00:51:09,780 --> 00:51:11,780
+R harfi geçen. Bunun gösterimi
+
+1150
+00:51:11,780 --> 00:51:13,780
+de şöyle koşul ifadesinde
+
+1151
+00:51:13,780 --> 00:51:15,780
+ver dedikten sonra
+
+1152
+00:51:15,780 --> 00:51:17,780
+o last name yani soy esi belirten
+
+1153
+00:51:17,780 --> 00:51:19,780
+sutun burası last name sutununda
+
+1154
+00:51:19,780 --> 00:51:21,780
+şu like
+
+1155
+00:51:21,780 --> 00:51:23,780
+keywordini kullanıyorum ve
+
+1156
+00:51:23,780 --> 00:51:25,780
+bu sentaksı bunu
+
+1157
+00:51:25,780 --> 00:51:27,780
+göstermek bu şekilde tamamen ezber bir
+
+1158
+00:51:27,780 --> 00:51:29,780
+bilgi. Ne yapıyorum? Tek
+
+1159
+00:51:29,780 --> 00:51:31,780
+tırnak arasında yüzde iki şartların arasına
+
+1160
+00:51:31,780 --> 00:51:33,780
+o karakteri yazmışım.
+
+1161
+00:51:33,780 --> 00:51:35,780
+Bu da ne anlama geliyormuş?
+
+1162
+00:51:35,780 --> 00:51:37,780
+Yani bu sutun da bu
+
+1163
+00:51:37,780 --> 00:51:39,780
+harfli barındıran
+
+1164
+00:51:39,780 --> 00:51:41,780
+kişilere
+
+1165
+00:51:41,780 --> 00:51:43,780
+listeleyecek. Onların isim ve soy isimlerini
+
+1166
+00:51:43,780 --> 00:51:45,780
+listele etmek istemişim. Tüm bilgilerini
+
+1167
+00:51:45,780 --> 00:51:47,780
+listememişim. Belli bilgilerini
+
+1168
+00:51:47,780 --> 00:51:49,780
+istemişim. O zaman bu kişilerin
+
+1169
+00:51:49,780 --> 00:51:51,780
+adını soy adını getirmiş
+
+1170
+00:51:51,780 --> 00:51:53,780
+olacak bana tablomuzda zaten
+
+1171
+00:51:53,780 --> 00:51:55,780
+istiyordum tablosuydu.
+
+1172
+00:51:55,780 --> 00:51:57,780
+Hocam burada şeyi
+
+1173
+00:51:57,780 --> 00:51:59,780
+sormak istiyorum aslında. Normal
+
+1174
+00:51:59,780 --> 00:52:01,780
+gördüğüm kadarıyla komutlarda
+
+1175
+00:52:03,780 --> 00:52:05,780
+küçük büyük harf duyarlılığı yok.
+
+1176
+00:52:05,780 --> 00:52:07,780
+Tablo isimleri içinde geçerli
+
+1177
+00:52:07,780 --> 00:52:09,780
+mı? Yoksa bir yazım atasın
+
+1178
+00:52:09,780 --> 00:52:11,780
+sadece burada. Ver last name
+
+1179
+00:52:11,780 --> 00:52:13,780
+değil ya last name.
+
+1180
+00:52:13,780 --> 00:52:18,400
+Camel case değil.
+
+1181
+00:52:18,400 --> 00:52:20,400
+Onlar önemli olmuyor
+
+1182
+00:52:20,400 --> 00:52:22,400
+evet.
+
+1183
+00:52:22,400 --> 00:52:24,400
+Yani orada da şey değil.
+
+1184
+00:52:24,400 --> 00:52:26,400
+Değiştirmiyor. Aynen bu önemli olmuyor.
+
+1185
+00:52:28,400 --> 00:52:30,400
+Şurada da zaten demin
+
+1186
+00:52:30,400 --> 00:52:32,400
+dikkat etmişsinizdir pg-edmin
+
+1187
+00:52:32,400 --> 00:52:35,840
+de.
+
+1188
+00:52:35,840 --> 00:52:37,840
+Bu da göstermiş
+
+1189
+00:52:37,840 --> 00:52:39,840
+herhalde.
+
+1190
+00:52:39,840 --> 00:52:41,840
+Şey olduğunda bir değişiklik olmuyor. Ben bunu
+
+1191
+00:52:41,840 --> 00:52:43,840
+tabloya yazarken yine küçük
+
+1192
+00:52:43,840 --> 00:52:45,840
+ne olarak yazıyorum tablo adında.
+
+1193
+00:52:45,840 --> 00:52:47,840
+Şunları da çünkü oluştururken
+
+1194
+00:52:47,840 --> 00:52:49,840
+onu o şekilde yazmama rağmen yine
+
+1195
+00:52:49,840 --> 00:52:51,840
+gitmiş küçük harf yapmış.
+
+1196
+00:52:51,840 --> 00:52:53,840
+Küçüklüğe takılmıyor.
+
+1197
+00:52:53,840 --> 00:52:59,170
+Evet
+
+1198
+00:52:59,170 --> 00:53:01,170
+böyle bir sorunun da dedik
+
+1199
+00:53:01,170 --> 00:53:03,170
+göstermi bu şekilde.
+
+1200
+00:53:03,170 --> 00:53:05,170
+Belli bir işte kelime de
+
+1201
+00:53:05,170 --> 00:53:07,170
+bir harfin geçmeyi istiyorsa
+
+1202
+00:53:07,170 --> 00:53:09,170
+bu şekilde yazıyoruz. Yüzdelik işaretlerin
+
+1203
+00:53:09,170 --> 00:53:11,170
+arasında like komutuyla birlikte.
+
+1204
+00:53:11,170 --> 00:53:13,170
+Sonra
+
+1205
+00:53:13,170 --> 00:53:15,170
+eğer bir
+
+1206
+00:53:15,170 --> 00:53:21,389
+çok uzaktan bir
+
+1207
+00:53:21,389 --> 00:53:28,000
+ses duydum.
+
+1208
+00:53:28,000 --> 00:53:30,000
+Çok uzaktan duyuyorum ya.
+
+1209
+00:53:30,000 --> 00:53:38,849
+Tamam pür dikasiye dinliyorum konuş
+
+1210
+00:53:38,849 --> 00:54:00,369
+bakalım. Çok böyle
+
+1211
+00:54:00,369 --> 00:54:02,369
+derinden geliyordu tamamlaşılmıyor.
+
+1212
+00:54:12,349 --> 00:54:14,349
+Zoom ayarlarından
+
+1213
+00:54:14,349 --> 00:54:16,349
+yükseltiliyormuş ses ya da yazabilirsin
+
+1214
+00:54:16,349 --> 00:54:30,159
+evet. Evet son bir
+
+1215
+00:54:30,159 --> 00:54:32,159
+örneğimiz de konuyla ilgili
+
+1216
+00:54:32,159 --> 00:54:34,159
+ver koşubunda
+
+1217
+00:54:34,159 --> 00:54:36,159
+nelere bakabiliyoruz.
+
+1218
+00:54:36,159 --> 00:54:38,159
+Burada da belli bir
+
+1219
+00:54:38,159 --> 00:54:40,159
+aralıktan bahsederken işte
+
+1220
+00:54:40,159 --> 00:54:42,159
+öğrenci numarasını şu şu aralıkta
+
+1221
+00:54:42,159 --> 00:54:44,159
+olan kişileri listele derken
+
+1222
+00:54:44,159 --> 00:54:46,159
+neyi kullanıyoruz. Klasik
+
+1223
+00:54:46,159 --> 00:54:48,159
+küçük türü büyük türü ifadelerimiz var.
+
+1224
+00:54:48,159 --> 00:54:50,159
+Mesela burada öğrenci numarasını
+
+1225
+00:54:50,159 --> 00:54:52,159
+işte bu sayılar arasında
+
+1226
+00:54:52,159 --> 00:54:54,159
+onu öğrenciler listele.
+
+1227
+00:54:54,159 --> 00:54:56,159
+Koşula geldim ver koşubuna.
+
+1228
+00:54:56,159 --> 00:54:58,159
+1044'den
+
+1229
+00:54:58,159 --> 00:55:00,159
+büyük olacak student numara.
+
+1230
+00:55:00,159 --> 00:55:02,159
+Ama neyden ve deyip ortaya
+
+1231
+00:55:02,159 --> 00:55:04,159
+bundan da küçük olanları bulup
+
+1232
+00:55:04,159 --> 00:55:06,159
+bu kayıtlara bütün bilgilerini
+
+1233
+00:55:06,159 --> 00:55:08,159
+listelemiş olacak
+
+1234
+00:55:08,159 --> 00:55:10,159
+selektir birlikte.
+
+1235
+00:55:10,159 --> 00:55:12,159
+Bunun
+
+1236
+00:55:12,159 --> 00:55:14,159
+ilgili ek bir bilgi olarak
+
+1237
+00:55:14,159 --> 00:55:16,159
+söyleyebileceğimiz burada tabi
+
+1238
+00:55:16,159 --> 00:55:18,159
+küçük türü büyük türü deyince bu sayıları dahil
+
+1239
+00:55:18,159 --> 00:55:20,159
+etmiyor. Eğer bunları dahil etmek isteseydi
+
+1240
+00:55:20,159 --> 00:55:22,159
+küçük eşit büyük eşit şeklinde
+
+1241
+00:55:22,159 --> 00:55:24,159
+bu şekilde kullanacaktık.
+
+1242
+00:55:24,159 --> 00:55:26,159
+Burada
+
+1243
+00:55:26,159 --> 00:55:28,159
+bu ifadeyle yani
+
+1244
+00:55:28,159 --> 00:55:30,159
+aralıktaki o sayıların başlanmış
+
+1245
+00:55:30,159 --> 00:55:32,159
+bir dişi de dahil ediyor burada gördüğünüz
+
+1246
+00:55:32,159 --> 00:55:34,159
+bunun diğer bir gösterim ifadesi
+
+1247
+00:55:34,159 --> 00:55:36,159
+de bitween demem oluyor.
+
+1248
+00:55:36,159 --> 00:55:38,159
+Arasında dersem yani şunu
+
+1249
+00:55:38,159 --> 00:55:40,159
+şunun arasında dediğimde yine bunları da
+
+1250
+00:55:40,159 --> 00:55:42,159
+hesaba katarak bunları da dahil ederek
+
+1251
+00:55:42,159 --> 00:55:44,159
+o aralıktaki öğrenci numarası
+
+1252
+00:55:44,159 --> 00:55:46,159
+o aralıkta olan bütün kayıtları
+
+1253
+00:55:46,159 --> 00:55:48,159
+tutuyor ve ekranıma
+
+1254
+00:55:48,159 --> 00:55:51,820
+getiriyor listeliyor. Evet
+
+1255
+00:55:51,820 --> 00:55:53,820
+bu selekt kısmı da böyleydi.
+
+1256
+00:55:53,820 --> 00:55:55,820
+Bunlar biraz hani detaylı
+
+1257
+00:55:55,820 --> 00:55:57,820
+örneklerine giriyor. Çok sürekli
+
+1258
+00:55:57,820 --> 00:55:59,820
+aralıkta çıkacak şeyler değil ama
+
+1259
+00:55:59,820 --> 00:56:01,820
+bilmek güzel olur.
+
+1260
+00:56:01,820 --> 00:56:03,820
+Başka da anlatacağımız
+
+1261
+00:56:03,820 --> 00:56:05,820
+örneğimiz
+
+1262
+00:56:05,820 --> 00:56:07,820
+kalmamış ilk hafta için
+
+1263
+00:56:07,820 --> 00:56:09,820
+zaten biraz ezber bir konu
+
+1264
+00:56:09,820 --> 00:56:11,820
+olduğu için şu an sizin de ilk defa
+
+1265
+00:56:11,820 --> 00:56:13,820
+tanıştığınız için tavsiyem
+
+1266
+00:56:13,820 --> 00:56:15,820
+bunları tekrar edin
+
+1267
+00:56:15,820 --> 00:56:17,820
+postgreSQL indirin kurunun orada
+
+1268
+00:56:17,820 --> 00:56:19,820
+yine bu komutları çalıştırmayı
+
+1269
+00:56:19,820 --> 00:56:21,820
+çalıştırmayı pratik yapmayı deneyin
+
+1270
+00:56:21,820 --> 00:56:23,820
+çünkü önümüzdeki haftadan
+
+1271
+00:56:23,820 --> 00:56:25,820
+itibaren full bu selekt komutları
+
+1272
+00:56:25,820 --> 00:56:27,820
+üzerinden gideceğiz yani
+
+1273
+00:56:27,820 --> 00:56:29,820
+sorgular çekeceğiz.
+
+1274
+00:56:29,820 --> 00:56:31,820
+İleriki haftalarda mı göreceğiz
+
+1275
+00:56:31,820 --> 00:56:33,820
+bilmiyorum da mesela iki tane
+
+1276
+00:56:33,820 --> 00:56:35,820
+tablomuz olduğunda sorguların
+
+1277
+00:56:35,820 --> 00:56:37,820
+hangi tabloyu etkileyeceğini nasıl
+
+1278
+00:56:37,820 --> 00:56:39,820
+anlıyoruz? Onları
+
+1279
+00:56:39,820 --> 00:56:41,820
+göreceğiz. Zaten
+
+1280
+00:56:41,820 --> 00:56:43,820
+iki tablo, üç tablo
+
+1281
+00:56:43,820 --> 00:56:45,820
+tablo sayımız artacak onlardan
+
+1282
+00:56:45,820 --> 00:56:47,820
+hocam bu slide'i paylaşacak
+
+1283
+00:56:47,820 --> 00:56:49,820
+mısınız? Tabii tabii ders notların hepsini
+
+1284
+00:56:49,820 --> 00:56:51,820
+paylaşıyoruz.
+
+1285
+00:56:51,820 --> 00:56:53,820
+Dökümanları paylaşıyoruz
+
+1286
+00:56:53,820 --> 00:56:55,820
+Hatta bunda böyle
+
+1287
+00:56:55,820 --> 00:56:57,820
+düz yazı şeklinde pdf bir hali var
+
+1288
+00:56:57,820 --> 00:56:59,820
+bu dökümanı. Onu da paylaşacağım.
+
+1289
+00:56:59,820 --> 00:57:01,820
+O şekilde
+
+1290
+00:57:01,820 --> 00:57:03,820
+onları avsiz sayfamda koyarım
+
+1291
+00:57:03,820 --> 00:57:05,820
+her hafta, dersten sonra.
+
+1292
+00:57:05,820 --> 00:57:07,820
+Hocam bu veri tabanı
+
+1293
+00:57:07,820 --> 00:57:09,820
+pgAdmin'in
+
+1294
+00:57:09,820 --> 00:57:11,820
+arayüzünden oluşturuyor mu yoksa
+
+1295
+00:57:11,820 --> 00:57:15,739
+konsoldan mı oluşturuyoruz sadece?
+
+1296
+00:57:15,739 --> 00:57:17,739
+Arayüzden de yapabiliyorsunuz evet.
+
+1297
+00:57:17,739 --> 00:57:19,739
+Onu bir gösterebilir misiniz ben?
+
+1298
+00:57:19,739 --> 00:57:21,739
+Tam şey yapamadım ama.
+
+1299
+00:57:21,739 --> 00:57:25,179
+Şu da mesela ilk oluştururken
+
+1300
+00:57:25,179 --> 00:57:27,179
+database'i bile buradan create
+
+1301
+00:57:27,179 --> 00:57:30,690
+etmiştim zaten.
+
+1302
+00:57:30,690 --> 00:57:32,690
+Create dedim, database dedim.
+
+1303
+00:57:32,690 --> 00:57:34,690
+Burada işte
+
+1304
+00:57:34,690 --> 00:57:36,690
+bir database oluşturdum.
+
+1305
+00:57:36,690 --> 00:57:39,940
+Sonra database'i
+
+1306
+00:57:39,940 --> 00:57:41,940
+oluştururdum.
+
+1307
+00:57:41,940 --> 00:57:45,980
+Gelip sağ tık yapıp
+
+1308
+00:57:45,980 --> 00:57:47,980
+şurada tablolarından yapmak
+
+1309
+00:57:47,980 --> 00:57:49,980
+daha mantıklı oluyor.
+
+1310
+00:57:49,980 --> 00:57:51,980
+Şu şemaların altında tables kısmı var.
+
+1311
+00:57:51,980 --> 00:57:53,980
+Buraya sağ tıkla
+
+1312
+00:57:53,980 --> 00:57:55,980
+gelip create table dediğimde
+
+1313
+00:57:55,980 --> 00:57:57,980
+şuraya mesela işte
+
+1314
+00:57:57,980 --> 00:57:59,980
+tablonun adını vereceğim.
+
+1315
+00:57:59,980 --> 00:58:01,980
+Ne olsun da bir deneme
+
+1316
+00:58:01,980 --> 00:58:06,260
+tablosu olsun.
+
+1317
+00:58:06,260 --> 00:58:08,260
+Ondan sonra
+
+1318
+00:58:08,260 --> 00:58:10,260
+şunu kaydedelim.
+
+1319
+00:58:10,260 --> 00:58:12,260
+Tablo çıktı
+
+1320
+00:58:12,260 --> 00:58:14,260
+buraya. Şimdi tablo ile ilgili
+
+1321
+00:58:14,260 --> 00:58:16,260
+özellikler var.
+
+1322
+00:58:16,260 --> 00:58:18,260
+Bunu mesela column'lar yani
+
+1323
+00:58:18,260 --> 00:58:20,260
+stumlarımı nasıl kaydederim?
+
+1324
+00:58:20,260 --> 00:58:22,260
+İşte buraya onu yazıyorum.
+
+1325
+00:58:24,260 --> 00:58:28,300
+Her şey de deneme.
+
+1326
+00:58:28,300 --> 00:58:38,269
+Denemenin biri. Ben bir type
+
+1327
+00:58:38,269 --> 00:58:40,269
+deneme istedi.
+
+1328
+00:58:40,269 --> 00:58:42,269
+Char olsun diyeyim.
+
+1329
+00:58:42,269 --> 00:58:44,269
+İsmi
+
+1330
+00:58:44,269 --> 00:58:46,269
+bu olsun diyeyim.
+
+1331
+00:58:46,269 --> 00:58:48,269
+Bunu bu şekilde kaydedeyim.
+
+1332
+00:58:48,269 --> 00:58:50,269
+Böyle bir tablonun
+
+1333
+00:58:50,269 --> 00:58:52,269
+işte hepsini
+
+1334
+00:58:52,269 --> 00:58:54,269
+gör dediğim zaman
+
+1335
+00:58:54,269 --> 00:58:59,949
+stun adı bu, tipi bu.
+
+1336
+00:58:59,949 --> 00:59:01,949
+Bu şekilde oluşturabiliyoruz.
+
+1337
+00:59:01,949 --> 00:59:03,949
+Buradan
+
+1338
+00:59:03,949 --> 00:59:05,949
+tıkla et alaya her şeye
+
+1339
+00:59:05,949 --> 00:59:07,949
+izin veriyor büyük ihtimalle.
+
+1340
+00:59:07,949 --> 00:59:09,949
+Stunları daha detaylı.
+
+1341
+00:59:09,949 --> 00:59:11,949
+Detaylı, aynen.
+
+1342
+00:59:11,949 --> 00:59:13,949
+Değer vererek de
+
+1343
+00:59:13,949 --> 00:59:15,949
+değer vererek de girebiliyoruz sanırım.
+
+1344
+00:59:15,949 --> 00:59:17,949
+Ben solo rata saldım da
+
+1345
+00:59:17,949 --> 00:59:21,360
+farklı bir rata. Tamam.
+
+1346
+00:59:21,360 --> 00:59:23,360
+Önce Postgre'yi
+
+1347
+00:59:23,360 --> 00:59:25,360
+kurdun mu?
+
+1348
+00:59:25,360 --> 00:59:27,360
+Tutup sadece pg admini
+
+1349
+00:59:27,360 --> 00:59:29,360
+indirmen sağlıklı
+
+1350
+00:59:29,360 --> 00:59:31,360
+olmaz. Postgre SQL bizim
+
+1351
+00:59:31,360 --> 00:59:33,360
+veri tablonumuz öyle düşünüyor. Bir veri tabonu var.
+
+1352
+00:59:33,360 --> 00:59:35,360
+Ben pg admin ile sanki
+
+1353
+00:59:35,360 --> 00:59:37,360
+ona bağlanıyor gibiyim.
+
+1354
+00:59:37,360 --> 00:59:39,360
+İndirmeniz gereken şey
+
+1355
+00:59:39,360 --> 00:59:41,360
+Postgre SQL.
+
+1356
+00:59:41,360 --> 00:59:43,360
+Onun içinde zaten Postgre SQL'ın sitesine
+
+1357
+00:59:43,360 --> 00:59:45,360
+girdiğinizde o şeyi de indiriyor yanında.
+
+1358
+00:59:45,360 --> 00:59:47,360
+İçinde iniyor pg admin
+
+1359
+00:59:47,360 --> 00:59:49,360
+şeyi. Tıklayarak açıyorsunuz
+
+1360
+00:59:49,360 --> 00:59:51,360
+zaten bunu.
+
+1361
+00:59:51,360 --> 00:59:53,360
+Ve girerken o dediğim gibi
+
+1362
+00:59:53,360 --> 00:59:55,360
+bir şifre isteyecektir buna girerken.
+
+1363
+00:59:55,360 --> 00:59:57,360
+O da sizin
+
+1364
+00:59:57,360 --> 00:59:59,360
+Postgre SQL'i kurarken o kurma
+
+1365
+00:59:59,360 --> 01:00:01,360
+adımlarında bir ekran gelecek. Orada sizden bir
+
+1366
+01:00:01,360 --> 01:00:03,360
+şifre girmenizi isteyecek. O şifrenizi tekrar
+
+1367
+01:00:03,360 --> 01:00:05,360
+buraya database'inize
+
+1368
+01:00:05,360 --> 01:00:07,360
+bağlanırken kullanacaksınız onu.
+
+1369
+01:00:07,360 --> 01:00:11,179
+O şekilde oluyor.
+
+1370
+01:00:11,179 --> 01:00:17,920
+Başka sorusu olan var mı?
+
+1371
+01:00:17,920 --> 01:00:19,920
+Hocam
+
+1372
+01:00:19,920 --> 01:00:21,920
+bu yazdığımız
+
+1373
+01:00:21,920 --> 01:00:23,920
+query'ları kaydedebiliyor muyuz
+
+1374
+01:00:23,920 --> 01:00:25,920
+bir yere?
+
+1375
+01:00:25,920 --> 01:00:27,920
+Tabi şuraya yazdıkları
+
+1376
+01:00:27,920 --> 01:00:29,920
+ama mesela şuradan kayıt yapabiliyorum.
+
+1377
+01:00:29,920 --> 01:00:33,650
+Buradan
+
+1378
+01:00:33,650 --> 01:00:35,650
+desktop'ıma
+
+1379
+01:00:35,650 --> 01:00:37,650
+istediğim lamp 1 diye
+
+1380
+01:00:37,650 --> 01:00:39,650
+mesela bu komutları
+
+1381
+01:00:39,650 --> 01:00:41,650
+kayıt edebilirim. Çok bir komut yok.
+
+1382
+01:00:41,650 --> 01:00:43,650
+İsterseniz paylaşırım bunları da ama 5-6 satırlı bir şey.
+
+1383
+01:00:43,650 --> 01:00:45,650
+Denemelik yazdığımız
+
+1384
+01:00:45,650 --> 01:00:47,650
+komutlarda zaten.
+
+1385
+01:00:47,650 --> 01:00:49,650
+Buradan SQL formatında
+
+1386
+01:00:49,650 --> 01:00:51,650
+rate ediyorum.
+
+1387
+01:00:51,650 --> 01:00:53,650
+Önümüzdeki ders zaten şey yapacağız.
+
+1388
+01:00:53,650 --> 01:00:55,650
+Bizim hep kullandığımız bir tane
+
+1389
+01:00:55,650 --> 01:00:57,650
+company bir
+
+1390
+01:00:57,650 --> 01:00:59,650
+şirketin database'i gibi bir şeyi var.
+
+1391
+01:00:59,650 --> 01:01:01,650
+Onun bir sürü tabloları vesaire var.
+
+1392
+01:01:01,650 --> 01:01:03,650
+Onları direkt şuradan
+
+1393
+01:01:03,650 --> 01:01:05,650
+import edeceğiz. Dostiyonu açacağız.
+
+1394
+01:01:05,650 --> 01:01:07,650
+Direkt video kodlar gelecek. Onları
+
+1395
+01:01:07,650 --> 01:01:09,650
+otomatik bir şekilde
+
+1396
+01:01:09,650 --> 01:01:11,650
+tabanımıza atacağız. Onun üzerinden hep
+
+1397
+01:01:11,650 --> 01:01:13,650
+sorularımızı yazacağız.
+
+1398
+01:01:13,650 --> 01:01:15,650
+Çünkü her ders 0'dan 1 ve tab'ını yazmamız
+
+1399
+01:01:15,650 --> 01:01:17,650
+bir sürü kayıt yazmamız imkansız.
+
+1400
+01:01:17,650 --> 01:01:19,650
+Hazır öyle kodlarımız var. Hazır bir database
+
+1401
+01:01:19,650 --> 01:01:21,650
+var. Onu import edeceğiz.
+
+1402
+01:01:21,650 --> 01:01:23,650
+Ondan sonra onun üstünden işte
+
+1403
+01:01:23,650 --> 01:01:25,650
+çeşitli sorgular yazacağız.
+
+1404
+01:01:25,650 --> 01:01:27,650
+Oradan bir şey deneyip çıkarımını yapmaya çalışacağız.
+
+1405
+01:01:27,650 --> 01:01:29,650
+O şekilde ilerleyecek.
+
+1406
+01:01:29,650 --> 01:01:37,760
+Haftaya da olacak.
+
+1407
+01:01:37,760 --> 01:01:39,760
+Her hafta olacak bu şekilde.
+
+1408
+01:01:39,760 --> 01:01:41,760
+Sadece vize haftası olmaz.
+
+1409
+01:01:41,760 --> 01:01:43,760
+Onu da ben tam tarihini bilmiyorum.
+
+1410
+01:01:43,760 --> 01:01:45,760
+Vize haftalarının ya 7. ya 8. hafta oluyor.
+
+1411
+01:01:45,760 --> 01:01:47,760
+Bir tek o hafta olmaz.
+
+1412
+01:01:47,760 --> 01:01:49,760
+Onun dışında
+
+1413
+01:01:49,760 --> 01:01:51,760
+şey yapıyor.
+
+1414
+01:01:51,760 --> 01:01:53,760
+7 hafta olacak. Toplam 8 hafta.
+
+1415
+01:01:53,760 --> 01:01:59,599
+O şekilde.
+
+1416
+01:01:59,599 --> 01:02:01,599
+Başka sorusu olan yoksa
+
+1417
+01:02:01,599 --> 01:02:03,599
+dersimizi de bitirebiliriz.
+
+1418
+01:02:03,599 --> 01:02:05,599
+Biraz hızlı ve
+
+1419
+01:02:05,599 --> 01:02:07,599
+karışık olmuş olabilir. Siz
+
+1420
+01:02:07,599 --> 01:02:09,599
+tekrardan ben şu modları paylaşırım
+
+1421
+01:02:09,599 --> 01:02:11,599
+ve size yüklerim. Böyle biraz
+
+1422
+01:02:11,599 --> 01:02:13,599
+daha bakarsınız sakin kafayla.
+
+1423
+01:02:13,599 --> 01:02:15,599
+Sorabilir miyim? Tabi.
+
+1424
+01:02:15,599 --> 01:02:17,599
+Bu create table student
+
+1425
+01:02:17,599 --> 01:02:19,599
+altta da alter table student falan diye
+
+1426
+01:02:19,599 --> 01:02:21,599
+yani altta şey yapmışsınız ya
+
+1427
+01:02:21,599 --> 01:02:23,599
+onu direkt student parantezin içinde
+
+1428
+01:02:23,599 --> 01:02:25,599
+tanımamak için nasıl yapıldığını gösterir misiniz?
+
+1429
+01:02:25,599 --> 01:02:27,599
+O direkt
+
+1430
+01:02:27,599 --> 01:02:29,599
+ders tane şey slide'de onu
+
+1431
+01:02:29,599 --> 01:02:31,599
+gösterdiğim için şey yapmadım ama mesela böyle bir
+
+1432
+01:02:31,599 --> 01:02:33,599
+şuna
+
+1433
+01:02:33,599 --> 01:02:35,599
+gelelim diyorum.
+
+1434
+01:02:35,599 --> 01:02:41,340
+Dersli bir
+
+1435
+01:02:41,340 --> 01:02:43,340
+bu da işte
+
+1436
+01:02:43,340 --> 01:02:45,340
+dersler gibi bir
+
+1437
+01:02:45,340 --> 01:02:47,340
+tablo olsun.
+
+1438
+01:02:47,340 --> 01:02:49,340
+Aç kapı parantez dediğimde şuraya
+
+1439
+01:02:49,340 --> 01:02:51,340
+ne yapacağım?
+
+1440
+01:02:51,340 --> 01:02:53,340
+Sıra sıra isimlerini vereceğim işte.
+
+1441
+01:02:53,340 --> 01:02:55,340
+Nedir ilginin adı?
+
+1442
+01:02:55,340 --> 01:02:57,340
+Ders adı diyeyim.
+
+1443
+01:02:57,340 --> 01:02:59,340
+Bunun hemen ne dedim? Bir tipini
+
+1444
+01:02:59,340 --> 01:03:01,340
+belirtmem gerekiyor.
+
+1445
+01:03:01,340 --> 01:03:03,340
+Onu belirteyim veya
+
+1446
+01:03:03,340 --> 01:03:05,340
+hatta o dersin
+
+1447
+01:03:05,340 --> 01:03:07,340
+hep bir şey olur ya kodu olur.
+
+1448
+01:03:07,340 --> 01:03:09,340
+Onu da yazayım.
+
+1449
+01:03:09,340 --> 01:03:11,340
+Ders kodu diye.
+
+1450
+01:03:11,340 --> 01:03:13,340
+O da işte
+
+1451
+01:03:13,340 --> 01:03:15,340
+integer olsun. Gerçi ders kodlarında
+
+1452
+01:03:15,340 --> 01:03:17,340
+bir de şeyde kullandığımız oluyor.
+
+1453
+01:03:17,340 --> 01:03:19,340
+Başına bir belirleme
+
+1454
+01:03:19,340 --> 01:03:21,340
+falan koyuyoruz ama char olarak
+
+1455
+01:03:21,340 --> 01:03:23,340
+tanımlamam gerekir tabi.
+
+1456
+01:03:23,340 --> 01:03:25,340
+Eğer sözler bir şey yazıyorsan.
+
+1457
+01:03:25,340 --> 01:03:27,340
+Bu şekilde
+
+1458
+01:03:27,340 --> 01:03:29,340
+oluşturduğumda
+
+1459
+01:03:29,340 --> 01:03:31,340
+bu ne oluyor bir
+
+1460
+01:03:31,340 --> 01:03:33,340
+tablo mu? Yapmış oluyorum en basit
+
+1461
+01:03:33,340 --> 01:03:35,340
+haliyle.
+
+1462
+01:03:35,340 --> 01:03:38,940
+Hocam peki
+
+1463
+01:03:38,940 --> 01:03:40,940
+şey hem sayı hem
+
+1464
+01:03:40,940 --> 01:03:42,940
+harf gerektirmesi için ne
+
+1465
+01:03:42,940 --> 01:03:44,940
+şey yapmamız gerekiyor? Mesela şifreler de
+
+1466
+01:03:44,940 --> 01:03:46,940
+hani abc
+
+1467
+01:03:46,940 --> 01:03:48,940
+şeklinde bir şifre için.
+
+1468
+01:03:48,940 --> 01:03:50,940
+Onun için
+
+1469
+01:03:50,940 --> 01:03:52,940
+char yeterli oluyor.
+
+1470
+01:03:52,940 --> 01:03:54,940
+Tabi char oluyor ama integer
+
+1471
+01:03:54,940 --> 01:03:56,940
+demişsem hani karakter yazamıyorum ama
+
+1472
+01:03:56,940 --> 01:03:58,940
+char da yazabiliyorum.
+
+1473
+01:03:58,940 --> 01:04:00,940
+Biri
+
+1474
+01:04:00,940 --> 01:04:02,940
+mail sormuş hatta
+
+1475
+01:04:02,940 --> 01:04:04,940
+gmail yazacaktım o zaman teşekkürler
+
+1476
+01:04:04,940 --> 01:04:09,980
+hadi.
+
+1477
+01:04:09,980 --> 01:04:11,980
+Bence arkadaşlar o zaman şeyde
+
+1478
+01:04:11,980 --> 01:04:13,980
+paylaşırız.
+
+1479
+01:04:13,980 --> 01:04:15,980
+Bu İngilizce versiyonu da var bu
+
+1480
+01:04:15,980 --> 01:04:20,099
+pdf. Tamamdır.
+
+1481
+01:04:20,099 --> 01:04:24,940
+Başka soru yoksa
+
+1482
+01:04:24,940 --> 01:04:26,940
+dersi
+
+1483
+01:04:26,940 --> 01:04:28,940
+bitirebiliyoruz gibi düşünüyorum.
+
+1484
+01:04:28,940 --> 01:04:30,940
+Bir saniye soru sorabilir miyim?
+
+1485
+01:04:30,940 --> 01:04:32,940
+Buyur.
+
+1486
+01:04:32,940 --> 01:04:34,940
+Veri tipini integer
+
+1487
+01:04:34,940 --> 01:04:36,940
+ya da char olarak sadece
+
+1488
+01:04:36,940 --> 01:04:38,940
+tablo oluştururken belirtmemiz yeterli
+
+1489
+01:04:38,940 --> 01:04:40,940
+değil mi? Sonradan kayıt eklemede
+
+1490
+01:04:40,940 --> 01:04:42,940
+eklerken yine
+
+1491
+01:04:42,940 --> 01:04:44,940
+girdiğimizde integer bir
+
+1492
+01:04:44,940 --> 01:04:46,940
+veri giriyorum kayıt ekliyorum gibi
+
+1493
+01:04:46,940 --> 01:04:48,940
+belirttiğimizde bir hata alır mıyız?
+
+1494
+01:04:48,940 --> 01:04:50,940
+Yok bunu ilk oluştururken
+
+1495
+01:04:50,940 --> 01:04:52,940
+zaten belirtmem gerekiyor
+
+1496
+01:04:52,940 --> 01:04:54,940
+mutlaka belirtiyorum daha sonra
+
+1497
+01:04:54,940 --> 01:04:56,940
+girerken o hani biliyor zaten
+
+1498
+01:04:56,940 --> 01:04:58,940
+tipinin ne olduğunu.
+
+1499
+01:04:58,940 --> 01:05:00,940
+Farklı tipte bir şeye girmek istersem zaten
+
+1500
+01:05:00,940 --> 01:05:02,940
+hata veri onu yazmaz oraya
+
+1501
+01:05:02,940 --> 01:05:04,940
+o yüzden tekrar tipini
+
+1502
+01:05:04,940 --> 01:05:06,940
+belirtmeme gerek kalmıyor.
+
+1503
+01:05:06,940 --> 01:05:08,940
+Tamam hocam teşekkür ederim.
+
+1504
+01:05:08,940 --> 01:05:13,599
+Rica ederim.
+
+1505
+01:05:13,599 --> 01:05:15,599
+Hepinize iyi akşamlar diliyorum
+
+1506
+01:05:15,599 --> 01:05:17,599
+ben de.
+
+1507
+01:05:17,599 --> 01:05:19,599
+Görüşmek üzere haftaya.
+
+1508
+01:05:19,599 --> 01:05:21,599
+Bu akşam pg etminler
+
+1509
+01:05:21,599 --> 01:05:23,599
+için bakalım inşallah haftaya da böyle
+
+1510
+01:05:23,599 --> 01:05:25,599
+bol bol sorgular
+
+1511
+01:05:25,599 --> 01:05:27,599
+yapacağız.
+
+1512
+01:05:27,599 --> 01:05:29,599
+Görüşmek üzere diyorum
+
+1513
+01:05:29,599 --> 01:05:31,599
+herkese.
+
+1514
+01:05:31,599 --> 01:05:33,599
+Görüşmek üzere.
+

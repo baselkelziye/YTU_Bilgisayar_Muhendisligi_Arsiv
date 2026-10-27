@@ -1,0 +1,3412 @@
+1
+00:00:06,700 --> 00:07:56,500
+Ben ettim ben de. Ancak farklı lokasyonlardayız. Daha önce olduğu
+
+2
+00:07:56,500 --> 00:08:00,980
+gibi. Biraz da sağlık nedeniyle bu sefer. Evet. Tecrübeli
+
+3
+00:08:00,980 --> 00:08:23,680
+olmaya geliriz ama. Şu an otuz beş bende de kırk kişi var.
+
+4
+00:08:23,680 --> 00:08:28,860
+Yani toplamda yetmiş beş kişiyiz. Anlatmaya
+
+5
+00:08:28,860 --> 00:08:47,250
+başlayacağız. En son kez yedinci hafta da farkında
+
+6
+00:08:47,250 --> 00:09:11,419
+olacak. Normalde sekizinci hafta. Evet. Yani sekizinci
+
+7
+00:09:11,419 --> 00:09:14,940
+hafta normalde vize haftamız. Biz kendimizi ona göre
+
+8
+00:09:14,940 --> 00:09:20,659
+ayarlıyoruz. Üniversiteden de muhtemelen son dakika bile
+
+9
+00:09:20,659 --> 00:09:24,100
+olsa bu yönde bir şey gelir. Sekizinci hafta vize haftası
+
+10
+00:09:24,100 --> 00:09:27,980
+diye. Belki içinde bulunduğumuz durumdan dolayı başka bir şey
+
+11
+00:09:27,980 --> 00:09:30,500
+olur bilemiyoruz ama biz kendimizi sekizinci haftaya
+
+12
+00:09:30,500 --> 00:09:38,259
+ayarlıyoruz arkadaşlar. Haberiniz olsun. Şimdi ııı başlıyorum
+
+13
+00:09:38,259 --> 00:09:47,740
+Cihan o zaman ben. Tamam. Tamam. Evet. Ekrandaki slide'da
+
+14
+00:09:47,740 --> 00:09:55,700
+gördüğünüz üzere ııı burada bir dünya çapında ki internet
+
+15
+00:09:55,700 --> 00:10:00,340
+ııı topolojisinden örnek verilmiş. Iıı bakın ııı
+
+16
+00:10:00,340 --> 00:10:06,139
+Amerika'daki backbone sağ tarafta Avrupa'daki backbone
+
+17
+00:10:06,139 --> 00:10:10,940
+bunların arasındaki işte transatlantik üzerinden okyanus
+
+18
+00:10:10,940 --> 00:10:16,139
+üzerinden ııı bağlantıyı sağlayan kiralık hatlar. Yine
+
+19
+00:10:16,139 --> 00:10:21,860
+ııı sol tarafta Asya'ya giden kiralık hatlar. Veya
+
+20
+00:10:21,860 --> 00:10:28,259
+ortadaki bu Amerikan ııı backbone o omurganın alt kısmında
+
+21
+00:10:28,259 --> 00:10:33,340
+bölgesel bir netvork. O bölgesel netvorkun en altında
+
+22
+00:10:33,340 --> 00:10:39,700
+da bir ııı ev netvorku cable üzerinden kablo net üzerinden
+
+23
+00:10:39,700 --> 00:10:43,779
+bağlanılmış. Veya hemen yanında bir başka ııı
+
+24
+00:10:43,779 --> 00:10:48,179
+bölgesel netvork ama bu bölgesel netvork mobil olarak
+
+25
+00:10:48,179 --> 00:10:51,580
+ııı çalıştırıldığı için mobil netvork olarak verilmiş
+
+26
+00:10:51,580 --> 00:10:55,299
+ve orada da Vimex teknolojisinden yararlanılmış.
+
+27
+00:10:55,299 --> 00:11:00,179
+Iıı Avrupa backbone'unun altında da işte bir ulusal
+
+28
+00:11:00,179 --> 00:11:03,860
+netvork belirtilmiş. Türkiye'nin ulusal netvorku da
+
+29
+00:11:03,860 --> 00:11:07,620
+benzer şekilde aslında internete bağlı ve o ulusal
+
+30
+00:11:07,620 --> 00:11:11,580
+netvorkun içerisinde bizim üniversite gibi bir akademik
+
+31
+00:11:11,580 --> 00:11:16,139
+netvork olabileceği gibi aynı zamanda bu salayette
+
+32
+00:11:16,139 --> 00:11:20,259
+verilen örnek de olduğu gibi bir ııı kurumsal netvork
+
+33
+00:11:20,259 --> 00:11:24,899
+bir ticari şirketin netvorku da yer alabiliyor. Ama burada
+
+34
+00:11:24,899 --> 00:11:30,500
+önemli olan birkaç şeye dikkat etmemiz lazım. Bakın ııı
+
+35
+00:11:30,500 --> 00:11:35,940
+backbone omurga dediğimiz yerde routerlar arasındaki
+
+36
+00:11:35,940 --> 00:11:40,899
+bağlantılar daha kalın hatlarla koyu hatlarla
+
+37
+00:11:40,899 --> 00:11:46,220
+çizilmiş ııı alt kısımlara gidildikçe yani omurgadan
+
+38
+00:11:46,220 --> 00:11:51,659
+uzaklaşılıp bölgesel ııı ulusal ve onun sonunda da
+
+39
+00:11:51,659 --> 00:11:56,860
+işte ev netvorku veyahut da kurumsal ticari şirket netvorku
+
+40
+00:11:56,860 --> 00:12:01,820
+gibi noktalara gidildikçe bu hatların ııı kalınlığı daha
+
+41
+00:12:01,820 --> 00:12:05,379
+azalmış, daha açık renkle çizilmiş. Bu da ne anlama
+
+42
+00:12:05,379 --> 00:12:11,460
+geliyor? Iıı trafik uç noktalardan oluşuyor, yukarıya
+
+43
+00:12:11,460 --> 00:12:15,460
+doğru bir şekilde backbone'a doğru aktarılıyor, oraya
+
+44
+00:12:15,460 --> 00:12:19,179
+doğru taşınıyor ve backbone üzerinden de bütün ııı
+
+45
+00:12:19,179 --> 00:12:24,820
+dünyada bir noktadan bir başka noktaya gönderiliyor. Onda o
+
+46
+00:12:24,820 --> 00:12:30,220
+açıdan bakıldığında da backbone yani omurga en yoğun ııı
+
+47
+00:12:30,220 --> 00:12:36,139
+trafik taşıyan ııı topoloji oluyor. Iıı diğer taraftan
+
+48
+00:12:36,139 --> 00:12:39,259
+daha önceden haftalardan beri size konuştuğumuz şekilde
+
+49
+00:12:39,259 --> 00:12:44,419
+ister ııı backbone omurga olsun, ister mobil netvorku
+
+50
+00:12:44,419 --> 00:12:48,580
+olsun, ister bölgesel, ister ulusal, ister şirket ııı
+
+51
+00:12:48,580 --> 00:12:55,340
+bunların hepsinde ııı ne var ııı birer router var ııı bir
+
+52
+00:12:55,340 --> 00:13:00,019
+veya birden fazla yani ııı bu ııı netvorklerin bu
+
+53
+00:13:00,019 --> 00:13:04,299
+topolojilerin içerisinde birden fazla router bulunuyor.
+
+54
+00:13:04,299 --> 00:13:08,580
+Bunlar farklı bağlantılarla birbirlerine bağlılar ve
+
+55
+00:13:08,580 --> 00:13:12,860
+böylece alternatif olarak yönlendirme yapılabiliyor.
+
+56
+00:13:12,860 --> 00:13:19,940
+Iıı şimdi hani bir nokta daha düşünelim, o da önemli. Sağ
+
+57
+00:13:19,940 --> 00:13:24,980
+taraftaki kampani netvork yani şirket netvorkunun içinde ııı
+
+58
+00:13:24,980 --> 00:13:29,220
+bir üstteki ulusal netvorka bağlanmak için ııı router
+
+59
+00:13:29,220 --> 00:13:33,059
+örneği verilirken sol taraftaki ev netvorkun da
+
+60
+00:13:33,059 --> 00:13:37,220
+doğrudan bilgisayara bağlantı gösterilmiş. Biz
+
+61
+00:13:37,220 --> 00:13:41,940
+de genel olarak bir yanlış kullanım var. ADSL router diye
+
+62
+00:13:41,980 --> 00:13:48,139
+kullanılıyor. Aslında onlar bir ııı uç bağlantı noktası yani
+
+63
+00:13:48,139 --> 00:13:53,299
+ııı routerların sahip olduğu özelliklerin çok az bir
+
+64
+00:13:53,299 --> 00:13:56,580
+kısmını içeriyorlar. Çünkü ev netvorkun da bir routing
+
+65
+00:13:56,580 --> 00:14:01,259
+yapmıyoruz. Yani evimizin içerisinde birden fazla ADSL
+
+66
+00:14:01,259 --> 00:14:03,659
+veyahut da benzer teknolojiyle bağlantıyı
+
+67
+00:14:03,659 --> 00:14:06,580
+sağlayan bu tarz cihaz yok. Onların arasında bir
+
+68
+00:14:06,580 --> 00:14:10,620
+paslaşma gerçekleşmiyor. O yüzden hani ev netvorkunu
+
+69
+00:14:10,620 --> 00:14:15,700
+indirgediğimizde ııı akses point gibi bir tarafı netvorke
+
+70
+00:14:15,700 --> 00:14:20,340
+topolojiye dışarıya bakan diğer tarafı ise ııı wireless
+
+71
+00:14:20,340 --> 00:14:23,179
+veyahut da wired bir şekilde netvorka bağlanmamızı
+
+72
+00:14:23,179 --> 00:14:47,419
+sağlayalım. Evet. Bu cihazlardan bağımsız üçüncü
+
+73
+00:14:47,419 --> 00:14:53,350
+bir yapıyor olmanız lazım. Veya biz elle yapıyoruz yani o
+
+74
+00:14:53,350 --> 00:14:57,669
+bağlantı koptu ııı işte diyelim ki ııı Türk Telekom
+
+75
+00:14:57,669 --> 00:15:01,230
+bağlantısı koptu işte süper online'e geçeyim falan
+
+76
+00:15:01,230 --> 00:15:03,950
+gibi veya işte cep telefonundan doğrudan
+
+77
+00:15:03,950 --> 00:15:08,350
+bağlanayım onu bir ııı şey yapayım akses point yapayım
+
+78
+00:15:08,350 --> 00:15:11,669
+falan gibi elle manuel yapılması lazım. Ama diğer
+
+79
+00:15:11,669 --> 00:15:14,629
+tarafta hani company netvorkte daha cenerik
+
+80
+00:15:14,629 --> 00:15:18,350
+olması ııı şirketin içerisinde hakikaten
+
+81
+00:15:18,350 --> 00:15:21,950
+farklı kampüsleri olabilir, farklı bölgeleri olabilir ııı
+
+82
+00:15:21,950 --> 00:15:26,470
+ayrıca bir ııı alt routing yönlendirme rotalama
+
+83
+00:15:26,470 --> 00:15:30,990
+yapılabilecek olmasından dolayı orada bir ııı router ııı
+
+84
+00:15:30,990 --> 00:15:34,590
+bulunuyor. Her zaman olacak diye bir şey söz konusu değil.
+
+85
+00:15:34,590 --> 00:15:38,590
+Bazı şirketlerin bağlantısı ev bağlantısından farklı
+
+86
+00:15:38,590 --> 00:15:46,419
+olmuyor. Bir sonraki slayda geçebiliriz [öğrenci] bence. Evet.
+
+87
+00:15:46,419 --> 00:15:55,139
+IP version dört ııı protokol header'ı. Şimdi ııı internetin
+
+88
+00:15:55,139 --> 00:16:00,899
+ortaya çıkışı aslında ııı Amerika'da gerçekleşiyor ııı
+
+89
+00:16:00,899 --> 00:16:05,820
+seksenli yıllarda Amerikan hükümeti özellikle Savunma
+
+90
+00:16:05,820 --> 00:16:12,419
+Bakanlığı ııı bir ııı savaş anında bir felaket anında
+
+91
+00:16:12,419 --> 00:16:17,659
+çalışmaya devam edebilecek bir ııı bilgisayar anın
+
+92
+00:16:17,659 --> 00:16:22,860
+oluşturulması için bir proje başlatıyor. Işte bunlar ııı
+
+93
+00:16:22,860 --> 00:16:27,299
+DARPA projesi diye geçiyor. ARPA aslında Advanced Research
+
+94
+00:16:27,299 --> 00:16:31,019
+Project Agency'den geliyor. DARPA'da defensle alakalı
+
+95
+00:16:31,019 --> 00:16:35,820
+savunmayla alakalı ve bu ııı kapsamda ııı beş tane
+
+96
+00:16:35,820 --> 00:16:39,419
+üniversite ııı yer alıyorlar. Beş üniversite bir
+
+97
+00:16:39,419 --> 00:16:43,860
+araya gelip çalışıyorlar ve şu anda ııı bütün dünyada
+
+98
+00:16:43,860 --> 00:16:48,460
+kullandığımız ııı internet protokolünün temeli
+
+99
+00:16:48,460 --> 00:16:53,539
+oturuyor ilk prototipi oluşturuluyor. Öncelikle bu
+
+100
+00:16:53,539 --> 00:16:57,100
+üniversiteler ve belirli devlet kurumları arasında
+
+101
+00:16:57,100 --> 00:17:02,860
+çalışırken ki o dönemde aslında adı ARPANET ııı o
+
+102
+00:17:02,860 --> 00:17:06,700
+şekilde çalıştırılırken sonrasında bu Amerika
+
+103
+00:17:06,700 --> 00:17:10,420
+içerisinde yaygınlaşıyor ticari kurumlara. Öncelikle
+
+104
+00:17:10,420 --> 00:17:13,500
+eğitim kurumlarına işin içinde üniversiteler olduğu
+
+105
+00:17:13,500 --> 00:17:17,380
+için eğitim kurumlarına ııı yayılıyor. Arkasından
+
+106
+00:17:17,380 --> 00:17:21,940
+ticari kurumlara en son da ııı bireysel ııı kullanıma da
+
+107
+00:17:21,940 --> 00:17:27,380
+açılıyor. Benzer dönemde de dünyada ııı yani karşılığını
+
+108
+00:17:27,380 --> 00:17:30,940
+buluyor. Avrupa bunu adapte ediyor. Işte Asya'sı bunu
+
+109
+00:17:30,940 --> 00:17:33,940
+adapte ediyor falan derken bütün dünyada bu şekilde
+
+110
+00:17:33,940 --> 00:17:38,539
+kullanılmaya başlanıyor. Şimdi ııı hala da günümüzde
+
+111
+00:17:38,539 --> 00:17:45,460
+kullanımda olan en yaygın ııı internet protokolü IP
+
+112
+00:17:45,460 --> 00:17:50,420
+versiyon dört. Burada ııı şöyle bir yaklaşım var. Iıı
+
+113
+00:17:50,420 --> 00:17:55,900
+birazdan konuşacağız. Iıı tek numaralı versiyonlar test
+
+114
+00:17:55,900 --> 00:18:00,579
+veya development için ayrılmış. Öyle bir strateji
+
+115
+00:18:00,579 --> 00:18:04,740
+uygulanmış. Çift numaralı versiyonlar ise sahada
+
+116
+00:18:04,740 --> 00:18:09,259
+kullanıma açılmış olan versiyonlar. Iıı yani versiyon
+
+117
+00:18:09,259 --> 00:18:13,059
+dörtte versiyon altı diğer ikinci kullanımda olan ama
+
+118
+00:18:13,059 --> 00:18:17,980
+hani altı devreye girdiğinde dördün tamamen devreden çıkması
+
+119
+00:18:17,980 --> 00:18:22,099
+gerekiyordu. Bin dokuz yüz doksanlarda ııı altı ortaya
+
+120
+00:18:22,099 --> 00:18:25,900
+atıldı. Iıı netleşti. Kullanıma açıldı hatta. Ama
+
+121
+00:18:25,900 --> 00:18:29,259
+düşünün üzerinden otuz sene geçmiş olmasına rağmen ııı
+
+122
+00:18:29,259 --> 00:18:33,740
+versiyon dört devam ediyor. Dörtle altı arasın. Geçişim
+
+123
+00:18:33,740 --> 00:18:43,220
+2001 vardı. Iki bin beş vardı. Iki bin sekiz vardı.
+
+124
+00:18:43,220 --> 00:18:47,299
+Iki bin sekizden sonra hani biz çok etkin olmadık. O
+
+125
+00:18:47,299 --> 00:18:52,660
+tarafta şey yapmadık ama onlar vardı. Iki bin on bir
+
+126
+00:18:52,660 --> 00:18:58,500
+vardı. Iıı yani yine hala da ııı işte Cihan Hocanızın
+
+127
+00:18:58,500 --> 00:19:01,660
+dediği gibi kaç tane, dört tane, beş tane Türkiye
+
+128
+00:19:01,660 --> 00:19:06,619
+özelinde tamamen IP ve altıya ııı geçiş yapılması
+
+129
+00:19:06,619 --> 00:19:09,740
+konusunda akademik kurumlardan başlayıp daha
+
+130
+00:19:09,740 --> 00:19:13,579
+sonra diğer kurumlara da ııı yansıyacak şekilde planlama
+
+131
+00:19:13,579 --> 00:19:16,380
+yapılmış olmasına rağmen bir türlü Türkiye'de de bu
+
+132
+00:19:16,380 --> 00:19:20,819
+geçiş sağlanmadı. Dünyada da benzer durum var. Yani büyük
+
+133
+00:19:20,819 --> 00:19:25,859
+servis sağlayıcılar ııı büyük kurumlar, büyük şirketler ııı
+
+134
+00:19:25,859 --> 00:19:30,099
+dışarıya bakan ayaklarında bazen içerideki netvörlerinde
+
+135
+00:19:30,099 --> 00:19:36,740
+IP ve altıyı kullanıyorlar. Ama hani bir gerçekte ııı V dördün
+
+136
+00:19:36,740 --> 00:19:42,339
+hala daha yaygın bir şekilde kullanımda olması. Iıı
+
+137
+00:19:42,339 --> 00:19:45,980
+başa dönecek olursak dörtle altı arasında aslında bir beş
+
+138
+00:19:45,980 --> 00:19:49,940
+versiyonu var. Altı riliz edilmeden önce çalışılmış
+
+139
+00:19:49,940 --> 00:19:55,539
+olan versiyon o. Ondaki şeyler ııı düzeltilip ııı işte son
+
+140
+00:19:55,539 --> 00:19:58,779
+ayarlar yapıldıktan sonra genel kullanıma açılan
+
+141
+00:19:58,779 --> 00:20:04,339
+versiyonu ııı altı. Kaç tane versiyonu olabilir IP'nin?
+
+142
+00:20:04,339 --> 00:20:08,940
+Bakın görüyorsunuz dört bitlik bir alan var ııı IP
+
+143
+00:20:08,940 --> 00:20:13,019
+headerında versiyon kısmı ııı bu dört bitlik alan ııı
+
+144
+00:20:13,019 --> 00:20:16,859
+sıfırla on beş arasında değerler içerebilir. Yani
+
+145
+00:20:16,859 --> 00:20:23,700
+teorik olarak ııı işte sekiz, on, on iki, on dört, daha dört
+
+146
+00:20:23,700 --> 00:20:27,019
+tane daha versiyon kullanıma açılabilir ama yani altı bile
+
+147
+00:20:27,019 --> 00:20:30,819
+ııı yeterince yaygınlaşmadığına göre ııı bu
+
+148
+00:20:30,819 --> 00:20:33,500
+diğer geri kalan dört tane versiyonun ortaya çıkma
+
+149
+00:20:33,500 --> 00:20:37,660
+ihtimali şimdilik pek görünmüyor. Bu yönde de çok
+
+150
+00:20:37,660 --> 00:20:42,380
+fazla bir çalışma yok. Iıı hemen onun yanında ııı
+
+151
+00:20:42,380 --> 00:20:52,819
+IP efendim soracağım. Tabi.
+
+152
+00:20:52,819 --> 00:23:05,299
+Hıhı. Evet. Tabii tabii devam etsin. Tamam. Tamam.
+
+153
+00:23:05,299 --> 00:23:10,539
+Doğruluyor. Tamam. Arkasında ııı total length kısmı
+
+154
+00:23:10,539 --> 00:23:16,940
+geliyor. Iıı total length kısmı da ııı on altı bit, bite
+
+155
+00:23:16,940 --> 00:23:20,779
+cinsinden burası veriyor. O zaman ııı bu ne anlama
+
+156
+00:23:20,779 --> 00:23:26,779
+geliyor? Bir IP paketi header'ı ile beraber altmış beş bin
+
+157
+00:23:26,779 --> 00:23:30,660
+beş yüz otuz beş byte uzunluğunda olabilir. Bu arada
+
+158
+00:23:30,660 --> 00:23:34,380
+bakın önemli olan noktalardan bir tanesi IP
+
+159
+00:23:34,380 --> 00:23:41,299
+protokolü ııı Spark işlemcisi üzerinde otuz iki bitlik
+
+160
+00:23:41,299 --> 00:23:45,740
+Spark işlemcisi üzerinde geliştiriliyor. Ve sun os
+
+161
+00:23:45,740 --> 00:23:51,859
+üzerinde geliştiriliyor. Iıı sun os ııı bir ııı UNIX
+
+162
+00:23:51,859 --> 00:23:58,259
+derivatifi ııı orada ilk implementasyonu var ve Spark
+
+163
+00:23:58,259 --> 00:24:06,019
+işlemcisi ııı bir işlemci. Bu ne anlama geliyor? Aynen şu
+
+164
+00:24:06,019 --> 00:24:11,619
+ekranda gördüğümüz gibi memori de bir değeri memoriye
+
+165
+00:24:11,619 --> 00:24:16,779
+yerleştirdiğimizde bu değerin en yüksek anlamlı biti
+
+166
+00:24:16,779 --> 00:24:21,700
+karşıdan baktığımızda sol tarafta en düşük anlamlı biti
+
+167
+00:24:21,700 --> 00:24:27,180
+sağ tarafta. Yani kağıt üzerine yazdığımız görüntüyle
+
+168
+00:24:27,180 --> 00:24:32,779
+memorideki saklanma görüntüsü birebir aynı. Böyle olduğu
+
+169
+00:24:32,779 --> 00:24:40,779
+için ııı TCP IP'de her şey aslında ııı big endin
+
+170
+00:24:40,779 --> 00:24:46,339
+üzerine kurulu. Ancak ııı biliyoruz ki bir takım
+
+171
+00:24:46,339 --> 00:24:50,380
+işlemciler little endin çalışıyor. Hatta bazı
+
+172
+00:24:50,380 --> 00:24:54,539
+işlemciler ııı resetlenme anındaki konfigürasyona
+
+173
+00:24:54,539 --> 00:24:58,900
+bağlı olarak hem big endin hem de little endin arasında
+
+174
+00:24:58,900 --> 00:25:05,140
+geçiş yapabiliyorlar. Ancak ııı daha sonraki dönemde ııı
+
+175
+00:25:05,140 --> 00:25:12,460
+yani Spark işlemcisini ııı takip eden dönemde ııı daha çok
+
+176
+00:25:12,460 --> 00:25:15,660
+geliştirilen üzerine yatırım yapılan ve şu anda dünyada
+
+177
+00:25:15,660 --> 00:25:20,940
+en yaygın olarak kullanılan Intel işlemcisi Little Endium.
+
+178
+00:25:20,940 --> 00:25:26,539
+Bu durumda ııı şöyle bir şey yapılıyor. Farklı işlemci
+
+179
+00:25:26,539 --> 00:25:31,259
+aileleri arasında bir taraftaki most significant bit
+
+180
+00:25:31,259 --> 00:25:36,460
+ııı işte baktığınız zaman en düşük adreste diğer taraftaysa
+
+181
+00:25:36,460 --> 00:25:40,539
+en yüksek adreste olduğu için ve burada da bit bazında
+
+182
+00:25:40,539 --> 00:25:45,299
+işlemler yapılacağı için ortalık karışmasın diye host
+
+183
+00:25:45,299 --> 00:25:51,220
+bite order ve network bite order diye iki tanım ortaya
+
+184
+00:25:51,220 --> 00:25:56,940
+atılıyor. Network bite order her zaman için tasarımdan
+
+185
+00:25:56,940 --> 00:26:02,859
+dolayı ilk orijinal ortaya atılan yapısından dolayı big
+
+186
+00:26:02,859 --> 00:26:10,859
+endin net ııı host bite order ise çalışan ııı bu TCP IP
+
+187
+00:26:10,859 --> 00:26:15,740
+implementasyonunun çalıştığı işlemciye göre little endin
+
+188
+00:26:15,740 --> 00:26:19,500
+veya big endin oluyor. Bu durumda işlemci eğer
+
+189
+00:26:19,500 --> 00:26:24,619
+little endinsa network paketlerinin tamamını big
+
+190
+00:26:24,619 --> 00:26:28,779
+endiğinden little endine dönüştürmesi lazım. Tabii ki bu
+
+191
+00:26:28,779 --> 00:26:33,380
+zaman alıcı bir şey ve ııı yani bunun için bir fonksiyon
+
+192
+00:26:33,380 --> 00:26:36,299
+yazdığınızda hani bitleri şift edeceksiniz, bitelerin
+
+193
+00:26:36,299 --> 00:26:39,859
+yerini değiştireceksiniz ve benzeri şeyler yapılabilecek bir
+
+194
+00:26:39,859 --> 00:26:43,500
+şey. Ancak bu daha hızlı olsun, fonksiyon çağrılarıyla
+
+195
+00:26:43,500 --> 00:26:46,900
+uğraşılmasın diye de makro olarak implement edilmiş
+
+196
+00:26:46,900 --> 00:26:49,859
+durumda. Şimdi bunu özellikle üzerine basa basa
+
+197
+00:26:49,859 --> 00:26:55,059
+söylüyoruz çünkü işin komik tarafı ııı dünyada geldiğimiz
+
+198
+00:26:55,059 --> 00:26:59,940
+noktada IP protokolü big endin işlemciyle tasarlandığı için
+
+199
+00:26:59,940 --> 00:27:06,059
+network bite order big endin ama günümüzde neredeyse etrafımızda
+
+200
+00:27:06,059 --> 00:27:09,740
+kullandığımız bütün işlemciler little endin ve sürekli
+
+201
+00:27:09,740 --> 00:27:13,819
+aslında ııı network bite order ile host bite order
+
+202
+00:27:13,819 --> 00:27:17,579
+arasında ve host bite order ile network bite order arasında
+
+203
+00:27:17,579 --> 00:27:22,980
+dönüşüm yapılıyor. Ve bu maalesef ııı hani değişmeyen bir
+
+204
+00:27:22,980 --> 00:27:26,579
+durum. Ne zaman ki işte az önce konuştuk ya belki bir
+
+205
+00:27:26,579 --> 00:27:29,619
+modifikasyon daha yapılır. Yeni versiyon da bu şöyle
+
+206
+00:27:29,619 --> 00:27:34,339
+olacak denir. Iıı o zaman bu durum adres denir. Çünkü IP
+
+207
+00:27:34,339 --> 00:27:39,539
+ve altı da big endin üzerine kuruluyor. Neden? V dörtle
+
+208
+00:27:39,539 --> 00:27:43,779
+birebir uyumlu olsun diye. Total length bu açıklamadan
+
+209
+00:27:43,779 --> 00:27:47,500
+sonra total length de geri dönecek olursak hem header hem
+
+210
+00:27:47,500 --> 00:27:52,460
+yani standart header yirmi byte'lık hem olası maksimum
+
+211
+00:27:52,460 --> 00:27:58,059
+kırk byte'a kadar olan opsiyonel alan header'daki hem de ııı
+
+212
+00:27:58,059 --> 00:28:01,339
+taşınan veri bunların tamamının uzunluğunu byte
+
+213
+00:28:01,339 --> 00:28:04,980
+cinsinden veriyor. Iıı altmış beş bin beş yüz otuz beşi
+
+214
+00:28:04,980 --> 00:28:11,259
+geçemez. Bu durumda demek ki ııı maksimum ııı payload
+
+215
+00:28:11,259 --> 00:28:15,380
+yani bir IP paketinin taşıyacağı data kullanıcıya
+
+216
+00:28:15,380 --> 00:28:19,460
+ait olan data altmış beş bin beş yüz otuz beş eksi yirmi
+
+217
+00:28:19,460 --> 00:28:22,900
+olabilir. Minimum da altmış beş bin beş yüz otuz beş eksi
+
+218
+00:28:22,900 --> 00:28:26,180
+altmış olabilir. Niye? Az önce konuştuk. Yirmiyle altmış
+
+219
+00:28:26,180 --> 00:28:30,740
+byte arasında değişebilir. Identification alanı. Iıı
+
+220
+00:28:30,740 --> 00:28:39,529
+efendim. Araya gideyim bari. Iıı nefes alayım. Iıı
+
+221
+00:28:39,529 --> 00:32:10,259
+tamam. Tamam. Iıı devam edeyim mi [öğrenci]? Olur
+
+222
+00:32:10,259 --> 00:32:14,460
+hocam. Tamam. Iıı fragman offset'i dikkat ederseniz
+
+223
+00:32:14,460 --> 00:32:20,539
+arkadaşlar. On üç bit. Iıı çünkü üç tane bit işte biri
+
+224
+00:32:20,539 --> 00:32:23,779
+more fragment, biri do not fragment, biri de resort bit.
+
+225
+00:32:23,779 --> 00:32:27,940
+On altıdan üçü çıkarttığımız zaman on üç bit. Fragman
+
+226
+00:32:27,940 --> 00:32:32,180
+offset'i de byte cinsinden. Az önce Cihan hocanızın
+
+227
+00:32:32,180 --> 00:32:37,380
+söylediği gibi o offset aslında totalde bu fragmanın
+
+228
+00:32:37,380 --> 00:32:42,420
+hangi byttan itibaren yerleştirilmesi gerektiğini
+
+229
+00:32:42,420 --> 00:32:47,059
+söylüyor bize. Sonrasında bakın sekiz bitlik bir time to
+
+230
+00:32:47,059 --> 00:32:53,619
+live alanı var. TTL ııı bir paketin ııı datagram
+
+231
+00:32:53,619 --> 00:32:58,740
+netvorkünde bir paketin ne süreyle dolaşabileceğini
+
+232
+00:32:58,740 --> 00:33:05,099
+ifade ediyor. Orijinal RFC'yi okuyacak olursanız bu alan
+
+233
+00:33:05,099 --> 00:33:09,819
+saniye cinsinden tanımlanmış. Yani nedir? Maksimum iki yüz
+
+234
+00:33:09,819 --> 00:33:15,339
+elli beş saniye. Ancak ııı hani bu da iki yüz elli beş saniyede
+
+235
+00:33:15,339 --> 00:33:17,660
+ne oluyor? Dört dakikadan biraz daha fazla oluyor.
+
+236
+00:33:17,660 --> 00:33:21,900
+Değil mi? Dört dakika on beş saniye. Ancak daha sonra ııı
+
+237
+00:33:21,900 --> 00:33:25,740
+bunun çok da anlamlı olmadığı saniye cinsinden
+
+238
+00:33:25,740 --> 00:33:29,059
+bunun değerinin tutulması için çok fazla işlem
+
+239
+00:33:29,059 --> 00:33:33,099
+yapılması gerektiği ve ııı hani hostlar ve routerlar
+
+240
+00:33:33,099 --> 00:33:38,140
+arasında da tam böyle ııı minimetrik yüzde yüz bir zaman
+
+241
+00:33:38,140 --> 00:33:42,460
+senkronizasyonunun olması sağlanamayacağı için. Neye
+
+242
+00:33:42,460 --> 00:33:46,380
+dönüştürülmüş bu alan? Hop değerine dönüştürülmüş. Hep
+
+243
+00:33:46,380 --> 00:33:50,019
+konuştuğumuz işte o zaman demek ki ııı bu bize şunu
+
+244
+00:33:50,019 --> 00:33:54,299
+söylüyor. Bir IP paketi en fazla iki yüz elli beş hop
+
+245
+00:33:54,299 --> 00:33:57,940
+gidebilir. Iki yüz elli altıncı hopa gitmek isterse
+
+246
+00:33:57,940 --> 00:34:00,900
+gidemeyecek. Çünkü neden? Oradaki değer iki yüz elli
+
+247
+00:34:00,900 --> 00:34:05,140
+beş de başlayacak. Her routereden geçişinde bir
+
+248
+00:34:05,140 --> 00:34:08,820
+sonraki routera aktarılırken bir azaltılacak. Sıfıra
+
+249
+00:34:08,820 --> 00:34:12,420
+geldiğinde de artık ııı ilgili router bu paketi
+
+250
+00:34:12,420 --> 00:34:17,659
+değerlendirilecek. Hemen yan tarafında sekiz bitlik bir
+
+251
+00:34:17,659 --> 00:34:23,860
+alan daha var. Protokol alanı. IP taşıyıcı ııı çünkü
+
+252
+00:34:23,860 --> 00:34:28,460
+hani network layer'de yer alıyor. Esas bunun üstünde
+
+253
+00:34:28,460 --> 00:34:34,579
+veya yine başka protokollerin bilgisini taşıyor
+
+254
+00:34:34,579 --> 00:34:39,380
+olabilir. Iıı bu da şu anlama geliyor. Biz IP kapsamında
+
+255
+00:34:39,380 --> 00:34:43,260
+ııı iki yüz elli altı farklı protokol taşıyabiliriz.
+
+256
+00:34:43,260 --> 00:34:47,780
+Protokol alanı için sıfır değerinin de anlamı olabilir.
+
+257
+00:34:47,780 --> 00:34:50,860
+Yani sıfır burada yasaklı bir değer değil diye düşünmeyin
+
+258
+00:34:50,860 --> 00:34:55,380
+açıkçası. Iıı IP'nin kendisinin de bir protokol
+
+259
+00:34:55,380 --> 00:34:59,340
+değeri olmak zorunda. Çünkü o da network layer'da yaşıyor.
+
+260
+00:34:59,340 --> 00:35:04,059
+Net network layer'ın esas ııı core protokolü, temel
+
+261
+00:35:04,059 --> 00:35:06,900
+protokolü ama hem network layer'da hem de üst
+
+262
+00:35:06,900 --> 00:35:09,579
+layer'lardaki başka protokolleri taşıyabilir.
+
+263
+00:35:09,579 --> 00:35:13,179
+O yüzden burada IP'nin kendisinde bir protokol
+
+264
+00:35:13,179 --> 00:35:16,619
+değeri var. Yan tarafta on altı bitlik bir header
+
+265
+00:35:16,619 --> 00:35:23,579
+çaksam var. Bakın bu çok önemli. Iıı IP yönlendirmeyi
+
+266
+00:35:23,579 --> 00:35:29,579
+sağlayabilmek adına sadece ve sadece yönlendirmeyle
+
+267
+00:35:29,579 --> 00:35:33,579
+alakalı kendisine ait header'daki kısımların
+
+268
+00:35:33,579 --> 00:35:38,219
+doğruluğunu garanti etmek için bir çaksam kullanıyor. O
+
+269
+00:35:38,219 --> 00:35:41,179
+çaksam da çok basit bir çaksam. On altı bitlik bir
+
+270
+00:35:41,179 --> 00:35:44,260
+değer. Sıfırla başlıyorsunuz. Ondan sonra
+
+271
+00:35:44,260 --> 00:35:47,940
+diğer ııı on altı bitlik değerleri egzorluya egzorluya
+
+272
+00:35:47,940 --> 00:35:51,179
+gidiyorsunuz. En son ııı aldığınız değeri bir kez daha
+
+273
+00:35:51,179 --> 00:35:55,820
+egzorluyorsunuz. Çok basit bir CRC ııı hesabı bu aslında.
+
+274
+00:35:55,820 --> 00:35:59,699
+On altı bit üzerinden. Ve bu da sizin header çaksamınız
+
+275
+00:35:59,699 --> 00:36:02,860
+oluyor. Aynı değeri bir kez daha benzer bir işleme
+
+276
+00:36:02,860 --> 00:36:06,300
+soktuğunuzda eğer sonuç sıfır çıkıyorsa karşı tarafta
+
+277
+00:36:06,300 --> 00:36:11,179
+alan tarafta hata olmamış demektir. Iıı hatta ve
+
+278
+00:36:11,179 --> 00:36:16,780
+hatta şöyle söyleyeyim size. Iıı şimdi en ufak header'da
+
+279
+00:36:16,780 --> 00:36:19,500
+bir değişiklik olduğunda header çaksamın tekrar
+
+280
+00:36:19,500 --> 00:36:23,139
+hesaplanması lazım değil mi? Hangi alan değişebilir
+
+281
+00:36:23,139 --> 00:36:26,260
+diyebilirsiniz? En basitinden time to leave alanı çünkü hop
+
+282
+00:36:26,260 --> 00:36:30,380
+diğerleri değişmese bile niye değilsin? Doğru ama hop alanı
+
+283
+00:36:30,380 --> 00:36:35,460
+değişecek bir routereden diğer routere gidiyor. Iıı
+
+284
+00:36:35,460 --> 00:36:43,860
+data center gibi ııı fiberoptik üzerine kurulu ııı kayıp
+
+285
+00:36:43,860 --> 00:36:47,460
+oranı çok düşük bir altyapıya sahip olan
+
+286
+00:36:47,460 --> 00:36:53,260
+networklerde internete çıkma anlamında değil bu özel
+
+287
+00:36:53,260 --> 00:36:58,699
+network'ün içerisinde bu şekilde olacak tarzda ııı IP
+
+288
+00:36:58,699 --> 00:37:03,659
+seviyesinde header çaksamı disable edebiliyoruz. Bu da
+
+289
+00:37:03,659 --> 00:37:08,460
+paketlerin bu özel network içerisinde işte data center
+
+290
+00:37:08,460 --> 00:37:13,019
+örneğini verdim. Forward edilme hızını aktarılma hop
+
+291
+00:37:13,019 --> 00:37:16,780
+by hop aktarılma hızını çok ciddi anlamda arttırıyor.
+
+292
+00:37:16,900 --> 00:37:21,619
+Sonrasında bakın otuz iki bitlik iki tane alan var. Biri source
+
+293
+00:37:21,619 --> 00:37:26,139
+adres, diğeri destination adres. Mektup örneğini
+
+294
+00:37:26,139 --> 00:37:29,139
+vermiştik ya mektubun üzerinde gönderen ve alıcı
+
+295
+00:37:29,139 --> 00:37:35,139
+mutlaka olur. Her IP eee paketinin headerında mutlaka
+
+296
+00:37:35,139 --> 00:37:39,139
+ve mutlaka hem source adres var hem de destination adres var.
+
+297
+00:37:39,139 --> 00:37:43,900
+Şimdi buraya kadar beş tane otuz iki bitlik word oldu.
+
+298
+00:37:43,900 --> 00:37:50,699
+Öyleyse yirmi baytı doldurduk. Bu yirmi baytlık kısım her IP
+
+299
+00:37:50,699 --> 00:37:57,699
+eee paketinin başında olmak zorunda. Olmazsa olmaz. O
+
+300
+00:37:57,699 --> 00:38:02,420
+zaman versiyon alanı dört ise minimum da bu kadar eee
+
+301
+00:38:02,420 --> 00:38:06,460
+word'e sahip olması gerekiyorsa o da beş ise eee
+
+302
+00:38:06,460 --> 00:38:12,659
+yüzde doksan hatta daha fazla miktarda IP paketlerinin ilk
+
+303
+00:38:12,699 --> 00:38:16,820
+iki eee nibl'ının yani ilk baytının diğeri ne olacak
+
+304
+00:38:16,820 --> 00:38:20,659
+arkadaşlar? Kırk beş olacak. Olay bu. Çünkü neden? Versiyon
+
+305
+00:38:20,659 --> 00:38:26,059
+dört eee internet header length beş. Sonrasında eee
+
+306
+00:38:26,059 --> 00:38:30,579
+opsiyonel alanlar geliyor. Sıfır olabilir veya daha
+
+307
+00:38:30,579 --> 00:38:33,900
+fazla olabilir. Bunun sıfır mı daha mı fazla olduğunu
+
+308
+00:38:33,900 --> 00:38:37,019
+nereden anlıyoruz? Eee internet header length alanındaki
+
+309
+00:38:37,019 --> 00:38:40,539
+değerden. Beş ise sıfır, altı ise bir tane var, yedi ise
+
+310
+00:38:40,539 --> 00:38:44,139
+iki tane var. Işte az önce Cihan Hocanız da söyledi. On beşe
+
+311
+00:38:44,139 --> 00:38:48,380
+kadar gidiyor. O zaman burada en fazla ııı on beş eksi beş on
+
+312
+00:38:48,380 --> 00:39:18,309
+tane olabilir. Olay bu. Aynen. Doğru. Bunun dışında
+
+313
+00:39:18,309 --> 00:39:24,369
+opsiyon kısmı aslında ilk orijinal tasarımları
+
+314
+00:39:24,369 --> 00:39:27,929
+kazandırabilmek, burada değişik ııı denemeler yapabilmek
+
+315
+00:39:27,929 --> 00:39:42,440
+ya da gerek kalmadan işleri çözebilmek adına bir
+
+316
+00:39:42,440 --> 00:39:52,179
+konuğunda da ııı yanlış hatırlamıyorsunuz. Bunların
+
+317
+00:39:52,179 --> 00:40:02,090
+hani ııı değişik ııı diyorsunuz ki paketini de bu
+
+318
+00:40:02,090 --> 00:40:14,739
+yerden geçmişim vesaire gibi şeyleri söyleyebilmek
+
+319
+00:40:14,739 --> 00:40:30,949
+için. Ama tabii hani ııı bu işareti değil. Bunun
+
+320
+00:40:30,949 --> 00:40:34,909
+dışında rootingle ilgili opsiyonlar var. Bir tanesi
+
+321
+00:40:34,909 --> 00:40:58,969
+source bir tanesi blues olduğu için yani biraz daha
+
+322
+00:40:58,969 --> 00:41:04,489
+servet bıraktığınız için ııı şeyin paketi arada başka
+
+323
+00:41:06,329 --> 00:41:58,039
+izin veriyorsun. Başka yer kal. Eee zaten maksimum altmış
+
+324
+00:41:58,039 --> 00:42:08,500
+baytlı yirmi baytlı istedikleri orijinal ııı dokuz adres
+
+325
+00:42:08,500 --> 00:42:21,739
+falan sardı. Dokuz hop demek. Iıı şu an geçtiğiniz
+
+326
+00:42:21,739 --> 00:43:00,840
+rütür sayısıyla hem de bunu devam edebiliriz bir sonraki
+
+327
+00:43:00,840 --> 00:43:14,579
+slayda. Aynen anlattığı şekilde. Iıı şimdi yani
+
+328
+00:43:14,579 --> 00:43:18,739
+opsiyonları Cihan Hocanız ııı size anlattı. Söylediği o
+
+329
+00:43:18,739 --> 00:43:22,820
+beş tane ııı opsiyon var. Onların arasında aslında
+
+330
+00:43:22,820 --> 00:43:25,739
+Cihan belki şey söylememiz lazım. Günümüzde bir tek
+
+331
+00:43:25,739 --> 00:43:29,380
+hani gerçek anlamda kullanılan bu ping süresinin
+
+332
+00:43:29,380 --> 00:43:33,260
+ölçülmesi. Yani bir bir nokta ile bir başka nokta
+
+333
+00:43:33,260 --> 00:43:37,739
+arasında ping süresini ölçerken ııı yani paket bu
+
+334
+00:43:37,739 --> 00:43:41,019
+network layer'dan diğer network layer'a ne süreyle
+
+335
+00:43:41,019 --> 00:43:45,940
+gitti? Iıı ne süreyle geldi? Bunun ııı kaydedilmesi adına
+
+336
+00:43:45,940 --> 00:43:49,860
+ııı o opsiyondan yararlanıyoruz ama ııı onun
+
+337
+00:43:49,860 --> 00:43:52,860
+haricindeki diğer opsiyonlar aslında havada kalan
+
+338
+00:43:52,860 --> 00:44:02,730
+opsiyonlar. Evet. Aynen. Şimdi arkadaşlar ııı IP adresleri
+
+339
+00:44:02,730 --> 00:44:08,730
+otuz iki bitlik adresler ancak bunların ııı kullanımına
+
+340
+00:44:08,730 --> 00:44:13,849
+yönelik ııı bir takım düzenlemeler yapılmış. Cihan
+
+341
+00:44:13,849 --> 00:44:20,530
+şöyle bir şey yapalım. Önce şu ııı klas yani ABG klas
+
+342
+00:44:20,530 --> 00:44:24,170
+olana gidip onu anlatalım. Sonrasında bu prefiks tarafını
+
+343
+00:44:24,170 --> 00:44:27,050
+anlatalım. Daha şey olacak. Çünkü ilk kullanım öyle
+
+344
+00:44:27,050 --> 00:44:30,530
+sonra buna dönüşüyor ya. O yüzden şu şeye gelebilir
+
+345
+00:44:30,530 --> 00:44:42,159
+misin sen de? Klas full adresing beş numaraya. Geldin
+
+346
+00:44:42,159 --> 00:44:57,300
+mi? Duyuyorsun değil mi? Geldi mi beş numaraya? IP
+
+347
+00:44:57,300 --> 00:45:00,500
+adresiz beş klas full adresing'e geldin mi sende
+
+348
+00:45:00,500 --> 00:45:06,539
+o slayta? Yo ben de şey yok yok şey dedim o sırada sesim gitti
+
+349
+00:45:06,539 --> 00:45:10,579
+galiba. Prefiksler sonradan ııı günün yani klaslıs
+
+350
+00:45:10,579 --> 00:45:15,139
+adreslemede ııı şey ortaya çıkan olaylar ya. Önce bir
+
+351
+00:45:15,139 --> 00:45:17,460
+klas full adresing'i gösterelim sonra geriye
+
+352
+00:45:17,460 --> 00:45:33,340
+geliriz. Iıı o mantık daha anlamlı olacak. Evet. Iıı şimdi
+
+353
+00:45:33,340 --> 00:45:38,699
+arkadaşlar ııı bu IP adresleri otuz iki bitlik
+
+354
+00:45:38,699 --> 00:45:43,820
+adresler ııı nasıl kullanılacak diye de IPv dört
+
+355
+00:45:43,820 --> 00:45:47,699
+kapsamında ııı bir tasarım yapılmış, bir modelleme
+
+356
+00:45:47,699 --> 00:45:51,860
+yapılmış ve denilmiş ki ııı bu adresleri biz kendi
+
+357
+00:45:51,860 --> 00:45:58,579
+içerisinde beş tane ııı sınıfa ayıralım. A, B, C, D ve
+
+358
+00:45:58,579 --> 00:46:06,780
+E şeklinde. Iıı A sınıfı adreslerde ııı host alanı
+
+359
+00:46:06,780 --> 00:46:12,539
+yani bir netvürkün içerisinde olabilecek host sayısı milyon
+
+360
+00:46:12,539 --> 00:46:16,780
+mertebesinde. Yirmi dört bit ayrılmış durumda oraya.
+
+361
+00:46:16,780 --> 00:46:21,179
+Iki yüz eri yirmi dört diye düşünün. Ama bu tipteki
+
+362
+00:46:21,179 --> 00:46:26,940
+netvürklerin sayısı ııı az. Bakın ııı niçin zaten
+
+363
+00:46:26,940 --> 00:46:30,739
+sekizinci bitin sıfır olması gerekiyor. Geriye yedi tane
+
+364
+00:46:30,739 --> 00:46:35,860
+bit kalıyor. Iki yüz eri yedi olduğuna göre ııı maksimum
+
+365
+00:46:35,860 --> 00:46:40,780
+yüz yirmi sekiz tane olabilir. Iıı bunun mantığı şu. O anki
+
+366
+00:46:40,780 --> 00:46:44,539
+ııı tamamen bunun bütün dünyaya yayılabileceğini tam
+
+367
+00:46:44,539 --> 00:46:48,539
+düşünmedikleri için aslında yani Amerika geneli için
+
+368
+00:46:48,539 --> 00:46:53,139
+düşündükleri için ııı tasarım şunun üzerine kurulu ııı
+
+369
+00:46:53,139 --> 00:46:57,659
+düşünün bir ülkede yüz yirmi sekiz tane kurum var ve bu
+
+370
+00:46:57,659 --> 00:47:02,860
+kurumun içerisinde de bir milyon tane host var. Bu ne
+
+371
+00:47:02,860 --> 00:47:07,420
+anlama geliyor? Hani yüz yirmi sekiz milyon tane host. Süper
+
+372
+00:47:07,420 --> 00:47:10,019
+bir rakam değil mi? Yani bin dokuz yüz seksenlerden
+
+373
+00:47:10,019 --> 00:47:15,340
+bahsediyoruz. Çok güzel. Diğer taraftan B sınıfı bakın
+
+374
+00:47:15,340 --> 00:47:20,500
+bir sıfır diye başlıyor. Burada host sayısıyla netvrk
+
+375
+00:47:20,500 --> 00:47:25,460
+sayısı dengelenmiş gibi host sayısı on altı bitli sayılı
+
+376
+00:47:25,460 --> 00:47:29,260
+yani sınırlı. Atmış beş bin beş yüz otuz beş tane host
+
+377
+00:47:29,260 --> 00:47:34,420
+var. Iıı bunun gibi de ııı iki yüz elli on dört tane netvrk
+
+378
+00:47:34,420 --> 00:47:38,980
+var. Işte ilk baştaki yüz yirmi sekiz milyonun üzerine
+
+379
+00:47:38,980 --> 00:47:44,139
+buradaki iki yüz elli on dört ııı çarpı iki yüz elli on altıyı
+
+380
+00:47:44,139 --> 00:47:47,900
+ekleyin. Iıı eksi birlerini de hesaplanıyor muyum yani
+
+381
+00:47:47,900 --> 00:47:52,260
+iki yüz elli otuz eksi bir gibi bir şey. Diğer tarafta da
+
+382
+00:47:52,260 --> 00:47:57,820
+ııı C tipi netvrk var. Burada ise netvrk tarafı
+
+383
+00:47:57,820 --> 00:48:01,420
+neredeyse yirmi dört bit ama bunun C sınıfı olduğunun
+
+384
+00:48:01,420 --> 00:48:05,579
+anlaşılması için işte ilk üç bitinin bir bir sıfır olması
+
+385
+00:48:05,579 --> 00:48:08,900
+lazım. Zaten buradaki ııı paterni görmüşsünüzdür.
+
+386
+00:48:08,900 --> 00:48:13,780
+Yani sıfır bir sıfır bir bir sıfır. Netvrk tarafı ııı
+
+387
+00:48:13,780 --> 00:48:17,380
+yirmi dört eksi üç yirmi bir bit iki yüz elli yirmi bir
+
+388
+00:48:17,380 --> 00:48:21,300
+tane böyle netvrk olabilir. Her birinin içerisinde de ııı
+
+389
+00:48:21,300 --> 00:48:25,260
+iki yüz elli sekiz tane iki yüz elli altı tane host
+
+390
+00:48:25,260 --> 00:48:29,940
+olabilir. Iıı neye denk düşüyor bu? Iıı daha küçük kurumlar
+
+391
+00:48:29,940 --> 00:48:34,300
+iki yüz elli altı tane ııı bilgisayarı olabilecek. Işte
+
+392
+00:48:34,300 --> 00:48:37,460
+biraz daha büyük olanlar altmış beş bin tane bilgisayarı
+
+393
+00:48:37,460 --> 00:48:40,500
+olabilecek. Çok çok fazla bilgisayarı işte bir milyon
+
+394
+00:48:40,500 --> 00:48:43,260
+tane bilgisayarı olabilecek olanlar. Böyle bir
+
+395
+00:48:43,260 --> 00:48:48,300
+gruplandırma yapılmış. Sonrasında da ııı D sınıfını
+
+396
+00:48:48,300 --> 00:48:52,099
+tariflemişler. Onun da başlangıcı bir bir bir sıfır.
+
+397
+00:48:52,099 --> 00:48:56,739
+Bu adres bölgesini hala da kullanıyoruz. Bu şekilde
+
+398
+00:48:56,739 --> 00:49:01,059
+kullanıyoruz. Yani bu D sınıfının kullanımı değişmemiş
+
+399
+00:49:01,059 --> 00:49:06,300
+durumda arkadaşlar. Iıı şu anda özellikle bir takım
+
+400
+00:49:06,300 --> 00:49:12,619
+servislere ııı servisin adresini bilmeden erişebilmek
+
+401
+00:49:12,619 --> 00:49:15,860
+adına kullanıyoruz. Çok canlı bir örneğini vereyim. Bu
+
+402
+00:49:15,860 --> 00:49:19,539
+evlerde kullanılan printerlar bile artık wireless
+
+403
+00:49:19,539 --> 00:49:23,780
+hani sadece kablolu ııı wire eterneti değil, wireless
+
+404
+00:49:23,780 --> 00:49:27,699
+eterneti bile destekliyor. Siz bilgisayarınızdan ııı
+
+405
+00:49:27,699 --> 00:49:32,179
+Windows olsun, Mac OS olsun, Linux olsun, yeni bir printer
+
+406
+00:49:32,179 --> 00:49:35,780
+ekle dediğinizde bir anda karşınıza printerın markası,
+
+407
+00:49:35,780 --> 00:49:40,380
+modeli her şeyle geliveriyor. O nasıl oluyor? Iıı bunun
+
+408
+00:49:40,380 --> 00:49:43,659
+için ııı printerların kullanımına ayrılmış,
+
+409
+00:49:43,659 --> 00:49:48,940
+kendilerine tanıtabildikleri bir ııı multicast IP adres
+
+410
+00:49:48,940 --> 00:49:52,539
+bölgesi var. Bu printerlar o bölgeden kendilerine bir
+
+411
+00:49:52,539 --> 00:49:56,099
+sorgu sual geldiğinde cevap vermek durumundalar ve cevap
+
+412
+00:49:56,099 --> 00:50:00,460
+veriyorlar. Böylece ııı netvörkte sizin ev netvörkünde
+
+413
+00:50:00,460 --> 00:50:06,179
+gerçekte hangi adresi aldığını bilmeden ııı bu adres
+
+414
+00:50:06,179 --> 00:50:09,699
+üzerinden adreslendiğinde cevap verdiği için gerçek
+
+415
+00:50:09,699 --> 00:50:12,780
+adresi öğreniliyor ve devamı geliyor. Günümüzde böyle.
+
+416
+00:50:12,780 --> 00:50:18,820
+E klas ise ııı işte ilk dört bitinin tamamı bir bir bir
+
+417
+00:50:18,820 --> 00:50:22,780
+bir olan ondan sonraki bit ııı şu anda hani sıfırda olur,
+
+418
+00:50:22,780 --> 00:50:27,340
+bir de olur, önemli değil. Iıı sonrası için ııı resort for
+
+419
+00:50:27,340 --> 00:50:31,940
+future use sonrası kullanım için rezerve edinmiş adresler.
+
+420
+00:50:31,940 --> 00:50:38,139
+Ancak ııı internet protokolünün IPv4'ün bütün
+
+421
+00:50:38,139 --> 00:50:43,260
+dünya tarafından kabul görmesi ııı sadece Amerika değil Avrupa,
+
+422
+00:50:43,260 --> 00:50:46,420
+Asya, neyse Avustralya her tarafta bütün dünyada
+
+423
+00:50:46,420 --> 00:50:51,619
+kullanılmaya başlaması sonrasında şuradaki ABC
+
+424
+00:50:51,619 --> 00:50:58,420
+kullanımı ııı açıkçası çok da anlamlı olmaktan çıkmış.
+
+425
+00:50:58,420 --> 00:51:03,260
+Biz üniversite olarak Yıldız Teknik Üniversitesi olarak
+
+426
+00:51:03,260 --> 00:51:09,260
+doksan üç yılında IP network'üne bağlandığımızda
+
+427
+00:51:09,260 --> 00:51:13,099
+ki aslında doksan bir doksan iki de öncesinde de ilk
+
+428
+00:51:13,099 --> 00:51:17,820
+bağlantılarımız vardı. Iıı o dönemde C klas adres
+
+429
+00:51:17,820 --> 00:51:21,179
+tahsis ediliyordu. Öyle söyleyeyim size. Yani o dönemde
+
+430
+00:51:21,179 --> 00:51:24,139
+biz B klas ve C klas konuşuyorduk. İstanbul
+
+431
+00:51:24,139 --> 00:51:28,260
+Teknik Üniversitesi benim çok fazla yerlerde ııı
+
+432
+00:51:28,260 --> 00:51:32,179
+kampüslerim var. Her kampüsüm şu kadar bin metrekare
+
+433
+00:51:32,179 --> 00:51:38,059
+diye B klas adres almıştı. Iıı bizdeki kampüs sayısı işte
+
+434
+00:51:38,059 --> 00:51:42,460
+bir Şişli vardı. Bir Ayaz A vardı. Bir de ııı Yıldız
+
+435
+00:51:42,460 --> 00:51:46,019
+vardı. Üç tane kampüs. Onların da hani metrekareleri
+
+436
+00:51:46,019 --> 00:51:50,539
+belirli olduğu için bize üç tane C klas adres vermişlerdi.
+
+437
+00:51:50,539 --> 00:51:54,340
+Sonrasında da bir tane yönetim sebebiyle dördüncü ve
+
+438
+00:51:54,340 --> 00:51:58,059
+beşinci C klasları almıştık. Olayın başlangıcı böyleydi.
+
+439
+00:51:58,059 --> 00:52:04,420
+Ama daha sonra ııı bu yayılması genişlemesi ve evlere kadar
+
+440
+00:52:04,420 --> 00:52:09,260
+gitmesi her yerde kullanılması sonrasında ABC klas ııı
+
+441
+00:52:09,260 --> 00:52:14,019
+kullanımı ııı ihtiyacı karşılayamaz hale geldi. Ondan
+
+442
+00:52:14,019 --> 00:52:18,820
+ötürü şu anda biz aslında klaslıs kullanıyoruz. Yani
+
+443
+00:52:18,820 --> 00:52:24,659
+bu klas ııı şeyleri sınırlamaları olmadan
+
+444
+00:52:24,659 --> 00:52:29,420
+kullanıyoruz. Ancak hem eski adreslerin yani klas fulla göre
+
+445
+00:52:29,420 --> 00:52:33,780
+dağıtılmış olan adreslerin hem de klaslıs yeni mantığa göre
+
+446
+00:52:33,780 --> 00:52:39,139
+dağıtılmış olan adreslerin bir arada olması adına ııı bu
+
+447
+00:52:39,139 --> 00:52:42,420
+ikisinin yani eskiyi de uyumlu olarak kullanabilen bir
+
+448
+00:52:42,420 --> 00:52:45,780
+prefix mantığımız var. Iıı o yüzden önce burayı
+
+449
+00:52:45,780 --> 00:52:49,099
+anlatalım dedim. Burayı ııı gözden geçirdikten sonra
+
+450
+00:52:49,099 --> 00:52:54,500
+şimdi bir başa dönüp oradan şey yapabiliriz. Iıı
+
+451
+00:52:54,820 --> 00:52:59,539
+Evet ben de şu anda ııı bir numaraya geri dönüyorum.
+
+452
+00:52:59,539 --> 00:53:07,059
+Prefix. Şimdi bakın ııı adresler artık blok şeklinde
+
+453
+00:53:07,059 --> 00:53:10,579
+alokat ediliyor ve bu bloklara da prefix diyoruz.
+
+454
+00:53:10,579 --> 00:53:15,260
+Iıı eskiden de aslında fark ederseniz ABC'de de bloklar
+
+455
+00:53:15,260 --> 00:53:19,219
+var ama blokların ııı boyutu belirli dolayısıyla hani
+
+456
+00:53:19,219 --> 00:53:28,340
+prefix sabit. Iıı prefix kısmı network kısmına bağlı olarak
+
+457
+00:53:28,340 --> 00:53:32,780
+belirleniyor. Yani ııı her adresin kendi içerisinde
+
+458
+00:53:32,780 --> 00:53:36,460
+hiyerarşik adreslemeyi de görmüştük hatırlarsanız. Bir
+
+459
+00:53:36,460 --> 00:53:40,539
+hiyerarşik kısmı var. Bir de hiyerarşik olmayan ııı yani
+
+460
+00:53:40,539 --> 00:53:43,780
+o hiyerarşik yapı içerisinde ifade edilen
+
+461
+00:53:43,780 --> 00:53:50,699
+subnet içerisindeki kısmı var. Iıı prefix network tarafını
+
+462
+00:53:50,699 --> 00:53:57,739
+ifade ediyor. Şu örnekte şu sayfadaki örnekte bakın otuz
+
+463
+00:53:57,739 --> 00:54:04,179
+iki bitin L'ye kadarlık kısmı lengthen geldiğini düşünün.
+
+464
+00:54:04,179 --> 00:54:08,139
+Prefix lengthinden geldiğini düşünün. L'ye kadar kısmı
+
+465
+00:54:08,139 --> 00:54:13,619
+prefix için ayrılmış. O zaman otuz iki eksi L'ye kadarlık
+
+466
+00:54:13,619 --> 00:54:18,340
+kısmı da o network'ün içerisindeki hostlar için
+
+467
+00:54:18,340 --> 00:54:23,500
+ayrılacak. Network kısmını dolayısıyla prefix kısmını
+
+468
+00:54:23,500 --> 00:54:28,300
+host kısmından ayırt edebilmek adına bir maskeleme
+
+469
+00:54:28,300 --> 00:54:33,260
+yapıyoruz ve prefix kısmındaki bitlerin tamamını
+
+470
+00:54:33,260 --> 00:54:37,539
+bir ile ifade ediyoruz kesintisiz. Yani bakın bu
+
+471
+00:54:37,539 --> 00:54:41,500
+soldan başlayıp sağda host kısmına kadar gelen kısımda
+
+472
+00:54:41,500 --> 00:54:48,219
+ııı hesap edelim yirmi dört tane bir var. Bunların arasına
+
+473
+00:54:48,219 --> 00:54:52,940
+sıfır gelemez. Kesintiye uğrayamaz. Bunlar bir bütün
+
+474
+00:54:52,940 --> 00:54:57,219
+olmak zorunda. Çünkü niye? Bir adım sonrasında entleme
+
+475
+00:54:57,219 --> 00:55:01,579
+işlemi için kullanılacak. Yani bir adresi ııı network
+
+476
+00:55:01,579 --> 00:55:05,500
+kısmına prefix kısmına ve host kısmına ayırmak
+
+477
+00:55:05,500 --> 00:55:08,980
+istediğimde ne yapacağım? Entleyeceğim. Network'ünü
+
+478
+00:55:08,980 --> 00:55:12,460
+oradan ayırt edeceğim. Host kısmını diğer taraftan. Host
+
+479
+00:55:12,460 --> 00:55:18,099
+kısmındaki bitler ise bakın tamamen sıfırlardan oluşuyor.
+
+480
+00:55:18,099 --> 00:55:23,300
+Ve eee bunun ifade edilmesi nasıl arkadaşlar? Iıı şurada
+
+481
+00:55:23,300 --> 00:55:27,659
+işte örnek verilmiş on sekiz nokta sıfır nokta otuz bir
+
+482
+00:55:27,659 --> 00:55:33,179
+nokta sıfır bölü yirmi dört. Buradaki yirmi dört network
+
+483
+00:55:33,179 --> 00:55:37,260
+kısmının yani prefix kısmının yirmi dört bitten
+
+484
+00:55:37,260 --> 00:55:42,460
+oluştuğunu en soldan sağa doğru arka arkaya kesintisiz
+
+485
+00:55:42,460 --> 00:55:46,460
+yirmi dört bitin prefixi yani network'i oluşturduğunu
+
+486
+00:55:46,460 --> 00:55:50,099
+ifade ediyor. Geri kalan kısımda otuz ikiden yirmi
+
+487
+00:55:50,099 --> 00:55:53,619
+dördü çıkarttığınızda sekiz kalıyor. Sekizlik geri kalan
+
+488
+00:55:53,619 --> 00:55:58,019
+kısımda host için kullanılıyor. Bir sonraki
+
+489
+00:55:58,019 --> 00:56:05,019
+slide'a geçelim istersenceye. Şimdi bakın bu yapıyı
+
+490
+00:56:05,019 --> 00:56:09,420
+kullanarak yani bu prefix yapısını kullanarak subnet
+
+491
+00:56:09,420 --> 00:56:17,019
+oluşturuyoruz. Alt networkler oluşturuyoruz. Burada ııı bir
+
+492
+00:56:17,019 --> 00:56:20,579
+üniversiteden örnek verilmiş. Üniversitenin işte
+
+493
+00:56:20,579 --> 00:56:24,940
+electrical engineering bölümü var. Computer science bölümü var.
+
+494
+00:56:24,940 --> 00:56:28,380
+Ve art bizdekine çok benziyor aslında. Sanat
+
+495
+00:56:28,380 --> 00:56:33,539
+tasarım bölümü var. Bakın servis sağlayıcıdan gelen
+
+496
+00:56:33,860 --> 00:56:40,820
+prefix on altı. Yani kesintisiz olarak kesintisiz olarak
+
+497
+00:56:40,820 --> 00:56:45,860
+soldan ilk on altı bit bir bir bir bir bir olarak ifade
+
+498
+00:56:45,860 --> 00:56:51,539
+edilmiş durumda. O zaman host kısmı kaç bit olarak kalıyor?
+
+499
+00:56:51,539 --> 00:56:57,539
+Otuz iki eksi on altı olarak kalıyor. Yani kuruma bir adres
+
+500
+00:56:57,539 --> 00:57:02,579
+bu prefixle giriyorsa bu subnet maskeyle giriyorsa o
+
+501
+00:57:02,579 --> 00:57:08,460
+zaman kurumun geriye kalan host kısmındaki on altı biti de
+
+502
+00:57:08,460 --> 00:57:13,860
+kendi içerisinde ihtiyaca uygun olarak parçalayabilmesi
+
+503
+00:57:13,860 --> 00:57:19,619
+mümkün. Işte bunu yaptığı anda host kısmını ne yaptı
+
+504
+00:57:19,619 --> 00:57:24,940
+arkadaşlar? Alt networklere ayırdı. Yukarıdaki üst
+
+505
+00:57:24,940 --> 00:57:29,260
+network kısmına dokunamıyor ama host kısmını kendi
+
+506
+00:57:29,260 --> 00:57:34,219
+içerisinde bir kez daha subnet host diye paketliyor.
+
+507
+00:57:34,219 --> 00:57:40,139
+Öyleyse en tepede network var. O network host diye ayırım
+
+508
+00:57:40,139 --> 00:57:44,460
+yapmış durumda. Host kısmını ben bir daha alıyorum. Subnet
+
+509
+00:57:44,460 --> 00:57:48,219
+ve host diye iki parçaya bölüyorum. Bu durumda da
+
+510
+00:57:48,219 --> 00:57:54,739
+takdir edersiniz ki subneti gösteren prefix uzunluğunun
+
+511
+00:57:54,739 --> 00:58:00,179
+kuruma gelen ana netforku gösteren prefix uzunluğunda ne
+
+512
+00:58:00,179 --> 00:58:03,460
+olması lazım? Büyük olması lazım. Küçük olamaz. Çünkü
+
+513
+00:58:03,460 --> 00:58:06,579
+zaten üst kısma dokunamıyorum ya. Ilk on altı bit
+
+514
+00:58:06,579 --> 00:58:10,820
+benim kontrolümde değil. Ondan ötürü bakın electrical
+
+515
+00:58:10,820 --> 00:58:16,739
+engineering'e on sekiz bitten sonrası verilmiş. Computer
+
+516
+00:58:16,739 --> 00:58:21,940
+science'e on yediden sonrası ııı sanat tasarımı on dokuzdan
+
+517
+00:58:21,940 --> 00:58:27,780
+sonrası. Bunun ııı küçüklüğü veya büyüklüğü bana neyi ııı
+
+518
+00:58:27,780 --> 00:58:33,699
+gösteriyor? On dokuz ise host kısmı daha az. On yedi ise
+
+519
+00:58:33,699 --> 00:58:37,940
+daha fazla. On sekiz ise on dokuzdan ııı hani on yediden
+
+520
+00:58:37,940 --> 00:58:42,179
+şey az ama on dokuzdan fazla. Bunu gösteriyor. Geri
+
+521
+00:58:42,179 --> 00:58:45,619
+kalan kısmın ne kadar böldüğümü, parçaladığımı
+
+522
+00:58:45,619 --> 00:58:48,300
+anlatıyor. Senin ekleyeceğin bir şey var mı
+
+523
+00:58:48,300 --> 00:58:52,739
+Cihan burada? Yok hocam. Tamam. O zaman bir sonraki
+
+524
+00:58:52,739 --> 00:59:00,179
+slayda devam edelim. Şimdi o zaman biz bu mantığı ııı
+
+525
+00:59:00,179 --> 00:59:03,659
+Routing'e adapte edeceğiz. Routing'e adapte edeceğiz.
+
+526
+00:59:03,659 --> 00:59:09,300
+Yani aynı bölgeye giden gittikten sonra netfork'u
+
+527
+00:59:09,300 --> 00:59:14,300
+aynı olarak gidip gittikten sonra subnet olarak ayrılan
+
+528
+00:59:14,300 --> 00:59:19,900
+adresleri üç, dört, beş, yedi, on tane farklı adresle
+
+529
+00:59:19,900 --> 00:59:25,659
+routing tablosuna eklemeye gerek yok. En tepede
+
+530
+00:59:25,659 --> 00:59:31,099
+toplayıcı şekilde hangi prefiks ile ifade ediyorsam
+
+531
+00:59:31,099 --> 01:00:15,449
+ona göre onları yönlendirmem yeterli. Bakın. Aynen.
+
+532
+01:00:15,449 --> 01:00:38,900
+Evet. Londra'daki router'a geldiğinde de Londra'daki
+
+533
+01:00:38,900 --> 01:00:42,500
+router bunu bakın yirmi bir ile Cambridge'e, yirmi ile
+
+534
+01:00:42,500 --> 01:00:45,860
+Oxford'a, yirmi ikili de Edinburgh'a yönlendiriyor.
+
+535
+01:00:45,860 --> 01:00:51,900
+Eee tam tersinde de bunlardan gelenler eee üst tarafa
+
+536
+01:00:51,900 --> 01:00:56,019
+doğru egregat ederek çıkıyor. Yani iki taraflıda bir
+
+537
+01:00:56,019 --> 01:01:00,260
+hızlanma sağlanmış oluyor. Eee devam edelim istersen
+
+538
+01:01:00,260 --> 01:01:06,739
+Cihan. Bir sonraki slayda. Eee longest matching prefix
+
+539
+01:01:06,739 --> 01:01:16,739
+Şimdi eee bakın en uzuna göre match ediyor edene göndermem
+
+540
+01:01:16,739 --> 01:01:21,619
+lazım. Çünkü hani on dokuzdu. Kendi içerisinde yirmi bir,
+
+541
+01:01:21,619 --> 01:01:26,739
+yirmi ve yirmi iki. Şimdi on dokuza göre yapmamam lazım.
+
+542
+01:01:26,739 --> 01:01:30,300
+Çünkü baktığında yirmi bire match eden var ha. O zaman
+
+543
+01:01:30,300 --> 01:01:33,860
+yirmi bire match eden demek ki eee neydi orası?
+
+544
+01:01:33,860 --> 01:01:37,860
+Oxford muydu? Oxford'a gidecek. Yirmiye meçhediyor onu
+
+545
+01:01:37,860 --> 01:01:40,820
+buraya göndereceğim. Eee Cambridge'e göndereceğim.
+
+546
+01:01:40,820 --> 01:01:45,059
+Işte yirmi ikiye meçhetti. Edinburgh'a. Eee bu biraz
+
+547
+01:01:45,059 --> 01:01:51,739
+tabii ki eee router'daki hani karşılaştırma kodunu eee az
+
+548
+01:01:51,739 --> 01:01:54,059
+bir miktar karmaşıklaştırıyor diye
+
+549
+01:01:54,059 --> 01:01:59,860
+düşünebilirsiniz. Ama eee işi rahatlatıyor. Longest
+
+550
+01:01:59,860 --> 01:02:06,699
+matching prefix eşittir. Host tarafında en düşük olan en
+
+551
+01:02:06,699 --> 01:02:12,460
+böyle eee ufak olan bölge alan ona göre eee yönlendirme
+
+552
+01:02:12,460 --> 01:02:18,099
+yapmış oluyoruz. Eee bu bu sayede eee egregate ettiklerimizi
+
+553
+01:02:18,099 --> 01:02:22,940
+eee tekrar sorunsuz bir şekilde parçalara bölmüş
+
+554
+01:02:22,940 --> 01:02:25,940
+oluyoruz. Parçalara böldüklerimizi de eee
+
+555
+01:02:25,940 --> 01:02:28,900
+düzgün bir şekilde egregate etmiş oluyoruz. Bu longest
+
+556
+01:02:28,940 --> 01:02:31,860
+matching prefix olayını unutmayın. Tamam bu önemli bir
+
+557
+01:02:31,860 --> 01:02:37,539
+şey. Yani eee parçalama ve eee yani adresleri hiyerarşik
+
+558
+01:02:37,539 --> 01:02:40,219
+olarak birleştirme. Parçalama dersem yanlış olur.
+
+559
+01:02:40,219 --> 01:02:43,539
+Fragmentation'a gider aklınız. Adresleri hiyerarşik
+
+560
+01:02:43,539 --> 01:02:46,420
+olarak birleştirme veyahut da bölme de neden
+
+561
+01:02:46,420 --> 01:02:50,059
+yararlanıyoruz? IP'de, IPv4'de longest matching
+
+562
+01:02:50,059 --> 01:02:54,539
+prefiksta. Şimdi eee ben bir sonraki site'a geçtim.
+
+563
+01:02:54,539 --> 01:02:57,219
+Classful Addressing onu zaten anlatmıştık [öğrenci].
+
+564
+01:02:57,219 --> 01:03:04,179
+Anlatmaya gerek yok. Nata geçtik. Evet. Eee bir eee on
+
+565
+01:03:04,179 --> 01:03:06,940
+dakika ara verelim mi? Ne yapalım? Yoksa nerede
+
+566
+01:03:06,940 --> 01:03:17,159
+bitireceğiz bugünkü dersi? Nasıl şey yapacağız? IP
+
+567
+01:03:17,159 --> 01:03:22,320
+version altı aslında üç slide. Sonra eee internet
+
+568
+01:03:22,320 --> 01:03:27,159
+kontrol protokolleri var. Label switching ve MPLS var.
+
+569
+01:03:27,159 --> 01:03:37,840
+Yani ya IPv6'da bırakalım. Iıı ki hani haftaya da on beş
+
+570
+01:03:37,840 --> 01:03:46,699
+slide'ımız falan kalmış olacak. Orada şey. Tamam o
+
+571
+01:03:46,699 --> 01:03:50,699
+zaman yani NAT ve o üç tane şey de yapıp bence bunu şey
+
+572
+01:03:50,699 --> 01:03:54,340
+yaparsak haftaya da zaten on beş on dört on beş slide
+
+573
+01:03:54,340 --> 01:03:59,420
+kalmış. Yeterince eee mantıklı bir yerde gelecek. Şimdi
+
+574
+01:04:00,420 --> 01:04:06,900
+eee IPv4'ün en önemli sorunu ister classful kullanalım, ister
+
+575
+01:04:06,900 --> 01:04:10,860
+classless kullanalım. Bütün dünya tarafından kabul
+
+576
+01:04:10,860 --> 01:04:17,019
+edilmesi sonrasında otuz iki bitlik adres bölgesinin
+
+577
+01:04:17,019 --> 01:04:21,380
+dünyadaki internete bağlanma ihtiyacında olan bütün
+
+578
+01:04:21,380 --> 01:04:25,179
+hostları bağlayamayacak durumda olması. Yani ne
+
+579
+01:04:25,179 --> 01:04:29,860
+var? Eee otuz iki biti flat düz kullanacak olsanız böyle
+
+580
+01:04:29,860 --> 01:04:33,420
+hiararşik yapmayacak olsanız, prefiks falan yapmayacak
+
+581
+01:04:33,420 --> 01:04:38,980
+olsanız dört milyar ediyor. Nokta. Ama dünyada şu anda
+
+582
+01:04:38,980 --> 01:04:42,460
+neresinden bakarsanız bakın dört milyardan daha fazla
+
+583
+01:04:42,460 --> 01:04:46,820
+bağlanma ihtiyacı var. Ki zaten bir de arada routerlar
+
+584
+01:04:46,820 --> 01:04:50,900
+var. Işte bu geçişler var. Toplamalar, çıkarmalar hepsi
+
+585
+01:04:50,900 --> 01:04:56,659
+birden ııı bu otuz iki biti ııı az önce söylediğimiz haliyle
+
+586
+01:04:56,659 --> 01:05:01,420
+düzgün bir şekilde bütün ııı ihtiyaç duyulan noktada ııı
+
+587
+01:05:01,420 --> 01:05:06,579
+kullanabilmemiz mümkün değil. IPv6'nın da yeterince hızlı
+
+588
+01:05:06,579 --> 01:05:09,820
+kabul görmemesi, yaygınlaşmaması ııı devreye
+
+589
+01:05:09,820 --> 01:05:14,059
+alınmaması sonucunda ııı endüstri bir ara çözüm
+
+590
+01:05:14,059 --> 01:05:18,579
+buluyor. Iıı bulduğu çözüm ne? Network adres
+
+591
+01:05:18,579 --> 01:05:25,579
+translation. Şimdi aslında ııı bu slide'da bu slide'ın
+
+592
+01:05:25,579 --> 01:05:31,179
+anlattığı kavramda şöyle bir enteresan durum var. Burada
+
+593
+01:05:31,179 --> 01:05:36,699
+yapılan ve günümüzde uygulanan port adres
+
+594
+01:05:36,699 --> 01:05:44,380
+translation pad fakat artık bu o kadar ııı de facto haline
+
+595
+01:05:44,380 --> 01:05:49,739
+geldi ki otomatikman biz buna network adres translation
+
+596
+01:05:49,739 --> 01:05:54,619
+diyoruz. Niye derseniz biz üniversite olarak network
+
+597
+01:05:54,619 --> 01:06:00,900
+adres translation yaptık. Sonrasında pata geçtik. Nasıl
+
+598
+01:06:00,900 --> 01:06:06,860
+mı? Network adres translation'da bir ııı intranet var,
+
+599
+01:06:06,860 --> 01:06:12,099
+internal net var. Bir de internet var. Internet
+
+600
+01:06:12,099 --> 01:06:17,619
+çıkışınızı sağlayan routerun üzerinde internet tarafına
+
+601
+01:06:17,619 --> 01:06:24,340
+bakan ayakta diyelim ki beş tane gerçek IP adresiniz var.
+
+602
+01:06:24,340 --> 01:06:27,059
+Erişilebilir. Dünyanın her yerinden erişilebilir.
+
+603
+01:06:27,059 --> 01:06:31,219
+Rute edilebilir. Yani o o noktaya o beş tane IP adresini
+
+604
+01:06:31,219 --> 01:06:36,099
+erişilebilir. Beş tane IP adresini aslında birer yani
+
+605
+01:06:36,099 --> 01:06:39,940
+bir klas gibi düşünün. Diyelim ki her biri C klas
+
+606
+01:06:39,940 --> 01:06:44,940
+olsun. Yani iki yüz elli beş tane olsun. Ben onu çarpayım
+
+607
+01:06:44,940 --> 01:06:50,860
+beşte bin iki yüz elli ııı tane şey olsun orada. Adres olsun.
+
+608
+01:06:50,860 --> 01:06:59,139
+Içeriden intranetten gelen bir isteği dış dünyaya
+
+609
+01:06:59,139 --> 01:07:03,860
+gönderirken bu bin iki yüz elli tane adresten bir
+
+610
+01:07:03,860 --> 01:07:08,539
+tanesine map ediyorsunuz. O zaman bunu yaptığınızda siz
+
+611
+01:07:08,539 --> 01:07:14,099
+içeride gönlünürce dünyanın başka tarafında kullanılan bir
+
+612
+01:07:14,099 --> 01:07:18,139
+IP adresini tekrar kullanabiliyorsunuz. Yani adresi
+
+613
+01:07:18,139 --> 01:07:22,900
+reyüz edebiliyorsunuz. Yıldız teknikte de kullanılıyor bu.
+
+614
+01:07:22,900 --> 01:07:25,619
+İstanbul teknikte de kullanılıyor. Boğaziçi'nde de
+
+615
+01:07:25,619 --> 01:07:29,139
+kullanılıyor. Herhangi bir üniversitede Amerika'daki işte
+
+616
+01:07:29,139 --> 01:07:31,820
+ne bileyim Cambridge Oxford'ta da kullanılıyor. Çünkü
+
+617
+01:07:31,820 --> 01:07:36,300
+neden? Bu adresler nereye hapsedilmiş durumda, nereye
+
+618
+01:07:36,300 --> 01:07:42,179
+sınırlandırılmış durumda? Eee kampüsün içerisine intranetin
+
+619
+01:07:42,179 --> 01:07:45,780
+içerisine dışarıya o halleriyle çıkmalarına izin
+
+620
+01:07:45,780 --> 01:07:50,820
+verilmiyor. Dışarıya çıkacağı zaman dış bacaktaki o anda
+
+621
+01:07:50,820 --> 01:07:55,699
+boşta olan bir adres üzerinden çıkartılıyor. Şimdi
+
+622
+01:07:55,699 --> 01:08:00,860
+ııı beş tane C klas dedik bin iki yüz elli tane oldu. Bu da
+
+623
+01:08:00,860 --> 01:08:04,860
+ne anlama geliyor? Bin iki yüz elli tane kişi içeriden
+
+624
+01:08:04,860 --> 01:08:10,139
+dışarıya çıkabilir. Güzel bir rakam. Ama bunu yaparken de
+
+625
+01:08:10,139 --> 01:08:14,139
+bunu yaparken de bir tanesi iki yüz elli kişiyi çıkartıyor
+
+626
+01:08:14,139 --> 01:08:20,260
+ya. Bunu yaparken de dış dünyanızda bir ııı blok
+
+627
+01:08:20,260 --> 01:08:26,060
+adresi ııı orada blok'a ekmiş oluyorsunuz. Yani bir tane
+
+628
+01:08:26,060 --> 01:08:29,100
+adresse bunu çözmüyorsunuz. Iki yüz elli tane adresiniz
+
+629
+01:08:29,100 --> 01:08:33,500
+orada. Network adres translation aslında bu. Daha
+
+630
+01:08:33,500 --> 01:08:38,579
+sonradan bunu daha akıllı hale getirmek, buradaki adres
+
+631
+01:08:38,579 --> 01:08:43,739
+bölgesi kaybını en az indirmek adına yapı neye dönüştürülüyor?
+
+632
+01:08:43,739 --> 01:08:49,460
+Port adres translation'a dönüştürülüyor. Şimdi dışarıya
+
+633
+01:08:49,460 --> 01:08:53,579
+çıkarken biz sadece network olarak çıkmıyoruz aslında.
+
+634
+01:08:53,579 --> 01:08:58,340
+Yüz katmanda transport layırdaki bir protokolü
+
+635
+01:08:58,380 --> 01:09:04,979
+kullanarak çıkıyoruz. Aynı network adresinde hangi transport
+
+636
+01:09:04,979 --> 01:09:09,619
+katmanı uygulamasının dışarı çıkmak istediğini veya içeri
+
+637
+01:09:09,619 --> 01:09:14,180
+girdiğini belirleyebilmemiz için ayrı bir sayısal değer
+
+638
+01:09:14,180 --> 01:09:18,500
+kullanmamız lazım. Bu sayısal değerlere de port ismini
+
+639
+01:09:18,500 --> 01:09:22,340
+veriyoruz. Yani bir nevi aslında işletim sistemindeki
+
+640
+01:09:22,340 --> 01:09:28,380
+process ID gibi. Aynı işletim sistemi altında birden fazla
+
+641
+01:09:28,380 --> 01:09:31,899
+process aynı anda çalışıyor. Bunları birbirinden
+
+642
+01:09:31,899 --> 01:09:34,779
+ayırt edebilmemiz için ne yapıyoruz? Unique ID'ler
+
+643
+01:09:34,779 --> 01:09:39,020
+veriyoruz. Burada da aynı host üzerinde aynı network
+
+644
+01:09:39,020 --> 01:09:41,739
+layer'ı kullanarak çalışan uygulamaları birbirinden
+
+645
+01:09:41,739 --> 01:09:45,180
+ayırt edebilmek için bir unique numara vermemiz lazım.
+
+646
+01:09:45,180 --> 01:09:49,180
+Sınırı belirlenmiş. On altı bitlenmiş. Yani o zaman
+
+647
+01:09:49,220 --> 01:09:57,539
+demek ki bir network adresi kendi üzerinde bulunan transport
+
+648
+01:09:57,539 --> 01:10:02,659
+layırda iki üzeri on altı tane farklı uygulamayı
+
+649
+01:10:02,659 --> 01:10:06,420
+destekleyebilir. İşte port kavramı buradan geliyor.
+
+650
+01:10:06,420 --> 01:10:12,380
+İçeri de yine rastgele bir IP adresi kullanıyorum. Birazdan
+
+651
+01:10:12,380 --> 01:10:16,220
+o IP adresinin özelliğini de söyleyeceğiz. Yani o kadar
+
+652
+01:10:16,220 --> 01:10:21,420
+da rastgele değil. Ama içeri de gönlümün çektiği bir IP
+
+653
+01:10:21,420 --> 01:10:27,739
+adresini kullanıyorum. Bunu bunu dışarı çıkartırken dış
+
+654
+01:10:27,739 --> 01:10:35,539
+bacağımdaki IP adresi artı bir tane portu bu dışarı çıkış
+
+655
+01:10:35,539 --> 01:10:39,619
+için anlık rezerve ediyorum. Çünkü zaten dışarıya bir
+
+656
+01:10:39,619 --> 01:10:44,180
+transport layer'la çıkması lazım. TCP'yle çıkması
+
+657
+01:10:44,220 --> 01:10:48,859
+lazım. UTV'yle çıkması lazım. RTP'yle çıkması lazım. Yani
+
+658
+01:10:48,859 --> 01:10:53,939
+tek başına network olarak çıkmıyor. Bir noktadan bir
+
+659
+01:10:53,939 --> 01:10:57,300
+başka noktaya sadece network layer seviyesinde bir
+
+660
+01:10:57,300 --> 01:11:00,300
+bağlantı yapacaksak bu bambaşka bir şey. O zaman
+
+661
+01:11:00,300 --> 01:11:02,979
+aslında biz bir private network kuruyoruz demektir.
+
+662
+01:11:02,979 --> 01:11:06,340
+Bir virtual private network kuruyoruz demektir. O
+
+663
+01:11:06,340 --> 01:11:09,659
+farklı bir olaya gidiyor. Uygulama çıkartacağımıza
+
+664
+01:11:09,659 --> 01:11:13,100
+göre mutlaka ve mutlaka transport layer'ın işin
+
+665
+01:11:13,140 --> 01:11:16,699
+içinde olması lazım. Yani içeride bir port var dışarıda
+
+666
+01:11:16,699 --> 01:11:20,180
+bir port var. Bakın ekrandaki örnek. İçeride
+
+667
+01:11:20,180 --> 01:11:26,579
+kullanılan adres 10.0.0.1 port 5544. Dışarıya
+
+668
+01:11:26,579 --> 01:11:31,100
+çıkartırken dış bacaktaki gerçek dünyada erişilebilen
+
+669
+01:11:31,100 --> 01:11:37,140
+adres neymiş? 198, 60, 42, 12. Dış dünyada kullanılacak
+
+670
+01:11:37,140 --> 01:11:44,100
+olan port neymiş? 3344. O aradaki router NAT desteğine
+
+671
+01:11:44,100 --> 01:11:50,220
+sahip olduğu için bu bilgiyi kendinde saklıyor. Diyor ki
+
+672
+01:11:50,220 --> 01:11:55,779
+içeriden 10.0.0.1 5544'de dışarıda 192, 60, 42, 12,
+
+673
+01:11:55,779 --> 01:12:00,180
+33, 44'de mebettim. Bir tabloya yazıyor. Dış dünyaya
+
+674
+01:12:00,180 --> 01:12:04,859
+bu şekilde gönderiyor. Dış dünyadan cevap doğal olarak
+
+675
+01:12:04,859 --> 01:12:09,420
+198, 60, 42, 12, 33, 44'de geliyor ama router bunu ne
+
+676
+01:12:09,420 --> 01:12:13,939
+yapıyor? İçeride tekrar geriye dönüştürüyor. 10.0.0.1
+
+677
+01:12:13,939 --> 01:12:21,060
+5544. Bu mantık çok da böyle süper nasıl bulunmuş, nasıl
+
+678
+01:12:21,060 --> 01:12:25,140
+hayal edilmiş mantığı değil. Dışarıda tek bir
+
+679
+01:12:25,140 --> 01:12:29,020
+bağlantısı olan ama içeride mesela on altı tane
+
+680
+01:12:29,020 --> 01:12:32,859
+iç hattı destekleyen telefon santrallarının çalışma
+
+681
+01:12:32,859 --> 01:12:36,819
+prensibinden hiç farklı değil arkadaşlar. İçeride sizin
+
+682
+01:12:36,819 --> 01:12:39,460
+numaralarınız vardır. Bir numara, üç numara, beş numara
+
+683
+01:12:39,460 --> 01:12:43,060
+neyse. Sadece onu çevirerek birbirinizle konuşursunuz ama
+
+684
+01:12:43,060 --> 01:12:48,060
+aynı numarayı ııı işte bir dokuz çevirip dış atalıp
+
+685
+01:12:48,060 --> 01:12:50,539
+dışarıya çıkmak için de kullanabilirsiniz veya
+
+686
+01:12:50,539 --> 01:12:54,180
+dışarıdan biri geldiğinde iç hat numarasını çevirip
+
+687
+01:12:54,180 --> 01:12:58,380
+içeriye gelebilir. Bunun IP protokolüne uygulanmış hali.
+
+688
+01:12:58,380 --> 01:13:02,659
+Böyle olduğunda bu teknik olarak port adres
+
+689
+01:13:02,659 --> 01:13:07,140
+translation ama günümüzde dış dünyaya çıkarken bütün
+
+690
+01:13:07,140 --> 01:13:10,699
+translation'ı hep bu mantık üzerine yaptığımız ve eski
+
+691
+01:13:10,699 --> 01:13:13,979
+network adres translation mantığını artık kullanmadığımız
+
+692
+01:13:13,979 --> 01:13:18,819
+için ııı endüstri buna kısaca ne ismini veriyor? Not ismini
+
+693
+01:13:18,819 --> 01:13:21,380
+veriyor. Network adres translation ismini veriyor.
+
+694
+01:13:21,380 --> 01:13:27,180
+Ancak bakın bu slide'da ikinci madde de yazmış. Layer
+
+695
+01:13:27,180 --> 01:13:32,659
+yani katman yapısını hiçe sayan onu tamamen ortadan kaldıran
+
+696
+01:13:32,659 --> 01:13:35,180
+bir yapı çünkü normalde katmanları birbirinden
+
+697
+01:13:35,180 --> 01:13:38,460
+bağımsız hale getirmemiz lazım. Transport layer'da
+
+698
+01:13:38,460 --> 01:13:41,460
+aldığımız bir bilgiyi ona spesifik olan bir bilgiyi
+
+699
+01:13:41,460 --> 01:13:45,220
+network layer'da network layer'ın işini görmek için
+
+700
+01:13:45,220 --> 01:13:50,859
+kullanıyoruz. Çok yanlış ama gerçek hayat bu. Şu anda
+
+701
+01:13:50,859 --> 01:13:56,859
+ııı evlerimizde ofislerimizde ııı kampüslerimizde
+
+702
+01:13:56,859 --> 01:14:01,739
+bu inanılmaz miktarda kullanılan bir ııı yaklaşım.
+
+703
+01:14:01,739 --> 01:14:06,699
+Hah adreste de geleceğiz dedik. A klas'tan B klas'tan
+
+704
+01:14:06,699 --> 01:14:11,420
+ve C klas'tan belirli adres bölgeleri blok şeklinde
+
+705
+01:14:11,420 --> 01:14:17,859
+ayrılmış durumda ve bunlar sadece ve sadece internal
+
+706
+01:14:17,859 --> 01:14:21,819
+networklerde kullanılabilir. Işte on ııı bunlardan biri
+
+707
+01:14:21,819 --> 01:14:26,020
+yüz doksan iki yüz altmış sekiz bir başkası. Yüz yetmiş
+
+708
+01:14:26,020 --> 01:14:31,460
+iki on altılı adresler var. Bir başkası. Peki bunların
+
+709
+01:14:31,460 --> 01:14:36,779
+özelliği ne? Bunlar ııı RFC formatında duyurulduğu için
+
+710
+01:14:36,779 --> 01:14:41,619
+üreticiler router üreticileri işletim sistemi
+
+711
+01:14:41,619 --> 01:14:46,619
+yazarları kesinlikle ve kesinlikle bu adresleri
+
+712
+01:14:46,619 --> 01:14:50,779
+internette route etmiyorlar routing tablosunda
+
+713
+01:14:50,779 --> 01:14:54,979
+barındırmıyorlar. Bu adreslerin kullanımı bu sayede
+
+714
+01:14:54,979 --> 01:15:02,300
+sadece ve sadece internal networklere yani intranetlere
+
+715
+01:15:02,300 --> 01:15:09,859
+kapsedilmiş, sıkıştırılmış oluyor. Internette yaşayan işte
+
+716
+01:15:09,859 --> 01:15:14,460
+diyelim ki ııı Türkiye ile Almanya arasında Türkiye ile
+
+717
+01:15:14,460 --> 01:15:17,939
+Fransa arasında routing yapan bir routerin onlu bir
+
+718
+01:15:17,979 --> 01:15:21,460
+adresi route etmesi, yüz yetmiş iki on altılı bir adresi, yüz
+
+719
+01:15:21,460 --> 01:15:25,020
+doksan iki yüz altmış sekizli bir adresi route etmesi mümkün
+
+720
+01:15:25,020 --> 01:15:28,300
+değil çünkü ııı onlar da bu restriksiyon var. Ha bu
+
+721
+01:15:28,300 --> 01:15:31,699
+yazılımsal olarak yapılan bir restriksiyon. Kampüs
+
+722
+01:15:31,699 --> 01:15:34,619
+içerisinde intranetimizde router çalıştırıyoruz ve bu
+
+723
+01:15:34,619 --> 01:15:37,260
+adresleri route edeceğiz. Gönlünüzce edebilirsiniz
+
+724
+01:15:37,260 --> 01:15:41,340
+çünkü kampüsün içerisi. Çünkü intranet. Var mı [öğrenci]
+
+725
+01:15:41,340 --> 01:15:57,140
+ekleyeceğim bir şey? Evet. Tamam. [öğrenci]'la
+
+726
+01:15:57,140 --> 01:16:05,109
+ayrıntısıyla söyledik. Okey. Evet. IP version altı. Şimdi
+
+727
+01:16:05,109 --> 01:16:10,510
+onda üç tane slaytı var. Iıı bin dokuz yüz doksanlarda temel
+
+728
+01:16:10,510 --> 01:16:13,829
+sebep deminden beri bahsediyoruz arkadaşlar. Adres
+
+729
+01:16:13,829 --> 01:16:20,550
+bölgesinin yetersizliği. Iıı buna bağlı olarak hani dört
+
+730
+01:16:20,550 --> 01:16:26,590
+milyardan çok daha fazla miktarda hostu destekleyebilmek.
+
+731
+01:16:26,590 --> 01:16:31,229
+Yüz milyarlarca hostu destekleyebilmek. Routing
+
+732
+01:16:31,229 --> 01:16:35,390
+tablosunun boyutunu azaltabilmek. Protokolü
+
+733
+01:16:35,390 --> 01:16:40,710
+basitleştirebilmek. Ve ııı IPv dörtte çok çalışılmış ama
+
+734
+01:16:40,710 --> 01:16:45,229
+bir türlü protokolün organik parçası haline gelememiş.
+
+735
+01:16:45,229 --> 01:16:50,470
+Güvenlik kısmını IPv altının organik bir parçası
+
+736
+01:16:50,470 --> 01:16:55,390
+haline getirmek. Ve ııı şu az önce hani dersin başında [öğrenci]
+
+737
+01:16:55,390 --> 01:16:59,590
+hocanız söyledi. Type of service. Ipv dörtteki o headerın o
+
+738
+01:16:59,590 --> 01:17:02,109
+kısmı o kadar çok değişmiş ki type of service olarak
+
+739
+01:17:02,109 --> 01:17:04,750
+başlıyor. Ondan sonra differential services oluyor.
+
+740
+01:17:04,750 --> 01:17:08,430
+O kendi içerisinde beş biti şöyle, üç biti böyle, yok iki
+
+741
+01:17:08,430 --> 01:17:12,829
+biti böyle. Bu şey söz konusu. Malte casting
+
+742
+01:17:12,829 --> 01:17:19,069
+ııı özellikle kullanılabilsin. O daha önü
+
+743
+01:17:19,069 --> 01:17:23,550
+açılsın, rahat bir şekilde kullanılsın diye. Iıı ve mobile
+
+744
+01:17:23,550 --> 01:17:29,510
+ııı netvörlerde host adresinin mobil olan host adresinin
+
+745
+01:17:29,510 --> 01:17:32,550
+değişmeden roaming yapılabilmesi. Çünkü şu an
+
+746
+01:17:32,550 --> 01:17:35,750
+uyguladığımız şeyde ııı o kadar çok adresimiz değişiyor
+
+747
+01:17:35,750 --> 01:17:38,949
+ki. Halbuki IPv altı buna doğrudan destek sağlıyor.
+
+748
+01:17:38,949 --> 01:17:42,989
+Ve doğal olarak ııı hani bunun da ilerlemesi şey
+
+749
+01:17:42,989 --> 01:17:49,590
+yapması. Iıı diğer temel bir hedefte ve dörtle beraber ııı şey
+
+750
+01:17:49,590 --> 01:17:53,149
+olması. Ne derler? Iıı yaşayabilmesi yani ve dördü
+
+751
+01:17:53,149 --> 01:17:57,550
+tamamen sildik attık değil. Iıı bakın bu iki bin on bir ne
+
+752
+01:17:57,550 --> 01:18:02,029
+diyor? Deployment has been slow and painful. Yavaş ve zorlu
+
+753
+01:18:02,029 --> 01:18:05,869
+oldu. But may pick up pace now that addresses are all but
+
+754
+01:18:05,869 --> 01:18:09,390
+exhausted. Hani hızlanabilir. Çünkü neden? Adresler bitti.
+
+755
+01:18:09,390 --> 01:18:12,510
+Üzerinden bir on sene daha geçti. Ama değişen bir şey
+
+756
+01:18:12,510 --> 01:18:36,270
+olmadı. Ama hani evet. Kurduk kurduk. Kulak binle de
+
+757
+01:18:36,270 --> 01:18:56,960
+birleştiriliyor. Iki bin üçte iki bin üçte. Iki bin birden
+
+758
+01:18:56,960 --> 01:18:59,239
+itibaren çalışmaya başlamıştık. Iki binde
+
+759
+01:18:59,239 --> 01:19:03,000
+olacak da olmadı dediler. Iki bin bir iki bin şey bize
+
+760
+01:19:03,000 --> 01:19:06,359
+hatta IP resmi. Iki bin üçte geçecekti hatta. Tabii tabii
+
+761
+01:19:06,359 --> 01:19:19,750
+tabii. Evet. Olmadı. Yani adresler kullanılabildiği
+
+762
+01:19:19,750 --> 01:19:23,510
+sürece işte bu natıyla işler çözülebildiği sürece ki
+
+763
+01:19:23,510 --> 01:19:27,029
+o aslında bir sürü güvenlik zafiyeti de oluşturuyor. Başka
+
+764
+01:19:27,029 --> 01:19:31,829
+sıkıntılar da oluşturuyor. Yani bu böyle yarım yamalak
+
+765
+01:19:31,829 --> 01:19:40,069
+ortada bir şekilde kalmaya devam edecek. Bakın IP ve altının
+
+766
+01:19:40,069 --> 01:19:47,619
+header'ı hakikaten çok basit. Versiyon var. Versiyonun
+
+767
+01:19:47,619 --> 01:19:51,100
+hemen yanında differential services var. Hemen yanında
+
+768
+01:19:51,100 --> 01:19:53,739
+flow label var. Yine otuz iki bitte oturtulmuş durumda.
+
+769
+01:19:53,779 --> 01:19:58,020
+Yine big-end yine oturtulmuş durumda. Differential service
+
+770
+01:19:58,020 --> 01:20:01,739
+konusunu zaten işlemiştik, anlatmıştık. Cihan hocanız da
+
+771
+01:20:01,739 --> 01:20:05,300
+söyledi. Flow label'da hani oradaki flow'lar birbirlerinden
+
+772
+01:20:05,300 --> 01:20:08,300
+ayırt ediyoruz, şey yapıyoruz. Bunu veriyoruz yani
+
+773
+01:20:08,300 --> 01:20:11,819
+ve bu bilginin de bütün router'larda olması gerekiyor.
+
+774
+01:20:11,819 --> 01:20:16,380
+O zaman o flow label'a göre o differential services klasına
+
+775
+01:20:16,380 --> 01:20:19,699
+göre router'a bu paket geldiğinde router ne yapacağını
+
+776
+01:20:19,699 --> 01:20:22,420
+biliyor. Ancak tabii ki buradaki sorunda ne?
+
+777
+01:20:23,100 --> 01:20:27,300
+Router'ların dünya çapında bunu yapıyorsanız yani bir
+
+778
+01:20:27,300 --> 01:20:30,659
+kampüsteki değil, bir metropol'deki değil, bir ülkedeki
+
+779
+01:20:30,659 --> 01:20:35,100
+değil, bir kıtadaki değil, dünyanın tamamındaki router'ların
+
+780
+01:20:35,100 --> 01:20:40,659
+bir şekilde bu differentiated services bilgisini alacak,
+
+781
+01:20:40,659 --> 01:20:43,899
+güncelleyecek şekilde yönetilmesi ve flow label'ların
+
+782
+01:20:43,899 --> 01:20:49,060
+anlamlı olması lazım. En kötü ihtimal minimum hani ortak
+
+783
+01:20:49,060 --> 01:20:52,020
+payda neresiyse, minimumda nerede oluyorsa orada yaparsınız
+
+784
+01:20:52,020 --> 01:20:55,739
+ama protokol buna imkan sağlıyor. Payload length
+
+785
+01:20:55,739 --> 01:21:02,500
+yine 16 bit. Burada next header var. Offset cinsinden
+
+786
+01:21:02,500 --> 01:21:07,420
+next header alanı şu anki header'e göre bir sonraki
+
+787
+01:21:07,420 --> 01:21:11,340
+offsette header var mı yok mu? Sıfırsa yok demektir. Offset
+
+788
+01:21:11,340 --> 01:21:14,699
+varsa oradan gideceksiniz. Yani böylece arka arkaya
+
+789
+01:21:14,699 --> 01:21:19,619
+eklenebilecek optional'ların sayısı diğerindeki
+
+790
+01:21:19,619 --> 01:21:24,300
+gibi internet header length ile kısıtlanmış değil. Hop limit
+
+791
+01:21:24,300 --> 01:21:28,460
+aynen duruyor ve bakın neyi çıkartmışlar? Header checksum'u
+
+792
+01:21:28,460 --> 01:21:31,619
+çıkartmışlar. Hani V4 içinde header checksum kullanılmıyor
+
+793
+01:21:31,619 --> 01:21:36,380
+dedik ya. Artık teknolojinin geldiği yerde sadece local
+
+794
+01:21:36,380 --> 01:21:41,220
+area'da değil, metropolitan area veyahut da wide area'da da
+
+795
+01:21:41,220 --> 01:21:47,939
+paket kaybı yaşama ihtimali oldukça düşük. Öyle öngörüyoruz,
+
+796
+01:21:47,939 --> 01:21:52,779
+öyle ölçüyoruz. Yalnız en önemli özellik adreslerin 32
+
+797
+01:21:52,779 --> 01:21:57,779
+bitten nereye çıkartılmış olması? Iıı yirmi sekiz bite
+
+798
+01:21:57,779 --> 01:22:07,500
+çıkartılmış olması. Bu da çok ciddi bir değer. Devam
+
+799
+01:22:07,500 --> 01:22:12,739
+edebiliriz [öğrenci] herhalde. Evet evet yani zaten. Hıh. IPV6'da
+
+800
+01:22:12,739 --> 01:22:21,420
+IPV6'da extension header'lar var. Iıı hop by hop var. Yani
+
+801
+01:22:21,420 --> 01:22:26,500
+routerlara bir sonraki routerlara ııı bilgi vermek
+
+802
+01:22:26,500 --> 01:22:32,220
+adına. Destination ııı gidilecek olan yolla alakalı. Iıı bakın
+
+803
+01:22:32,220 --> 01:22:36,260
+hani az önce hocanız söyledi Cihan hocanız bu ııı lose
+
+804
+01:22:36,260 --> 01:22:39,619
+source routing veya source routing routing'le alakalı
+
+805
+01:22:39,619 --> 01:22:43,420
+lose list of routers to visit yani giderken ııı bu
+
+806
+01:22:43,420 --> 01:22:46,659
+routers'dan geçmeye dikkat et. Bunlara yani bunlardan
+
+807
+01:22:46,659 --> 01:22:49,420
+geçersen yeterli ama bunların haricinde başka
+
+808
+01:22:49,420 --> 01:22:53,579
+routers'dan da geçebilirsin. Fragmentation'la alakalı.
+
+809
+01:22:53,579 --> 01:23:00,100
+IPV6'nın en önemli özelliklerinden bir tanesi ııı
+
+810
+01:23:00,100 --> 01:23:06,460
+Jumbo frame dediğimiz çok büyük IP ııı fragmanlarına
+
+811
+01:23:06,460 --> 01:23:11,140
+veyahut da paketlerine izin vermesi. Bu ııı data center
+
+812
+01:23:11,140 --> 01:23:18,100
+içerisinde ııı önem taşıyor. Çünkü diğerinde altmış beş
+
+813
+01:23:18,100 --> 01:23:23,020
+ka ile kısıtlısınız. Altmış beş kalık paketleri hiç
+
+814
+01:23:23,020 --> 01:23:28,100
+durmadan ııı identifikasyon altmış beş kalık oda
+
+815
+01:23:28,100 --> 01:23:31,819
+identifikasyon'da on altı bitti ya. Yani ııı hepsini
+
+816
+01:23:31,819 --> 01:23:35,579
+arka arkaya çıkartacak olsanız günümüzdeki data
+
+817
+01:23:35,579 --> 01:23:39,260
+center içerisinde artık standart haline gelmiş ne
+
+818
+01:23:39,260 --> 01:23:43,260
+bileyim kırk gigabit veya yüz gigabitlik hızları satüre
+
+819
+01:23:43,260 --> 01:23:45,819
+edemiyorsunuz. Bunun tamamını kullanamıyorsunuz. Çünkü
+
+820
+01:23:45,819 --> 01:23:49,260
+neden? Paket boyu yetmiyor. O kadar hızlı miktarda paket
+
+821
+01:23:49,260 --> 01:23:52,659
+çıkartamıyorsunuz. Işte IPV6'nın çözmeye çalıştığı
+
+822
+01:23:52,659 --> 01:23:56,500
+şeylerden bir tanesi de bu. Klasik V4'teki altmış beş
+
+823
+01:23:56,500 --> 01:24:00,500
+kalık segmentlerin ııı paket boyutunun ııı çok daha
+
+824
+01:24:00,500 --> 01:24:04,739
+üstünde ııı paket boyutu ki onlara hani Jumbo paket
+
+825
+01:24:04,739 --> 01:24:08,380
+deniyor. Jumbo frame deniyor. Otantikasyonla
+
+826
+01:24:08,380 --> 01:24:13,100
+alakalı özellikler içermesi ve en önemli şeylerinden bir
+
+827
+01:24:13,100 --> 01:24:17,979
+tanesi de ııı payloadu enkrit edebilmesi yani üzerinde
+
+828
+01:24:17,979 --> 01:24:22,340
+taşınan veri ııı plain text olarak gitmiyor. Açık bir
+
+829
+01:24:22,340 --> 01:24:25,460
+metin olarak gitmiyor. Şifrelenmiş olarak gidiyor.
+
+830
+01:24:25,460 --> 01:24:28,300
+Ve bunlar çok güzel özellikler. Bunların hepsi
+
+831
+01:24:28,300 --> 01:24:31,939
+yine AFS'lerde tariflenmiş durumda ve pek çok işletim
+
+832
+01:24:31,939 --> 01:24:36,420
+sistemi tarafından inklement edilmiş durumda bazı uç
+
+833
+01:24:36,420 --> 01:24:42,300
+noktaları hariç ama ancak gelin göreyim ki ııı V4 o kadar
+
+834
+01:24:42,300 --> 01:24:45,899
+yaygın ve o kadar çok kullanılıyor ki ııı bu geçiş
+
+835
+01:24:45,899 --> 01:24:49,739
+ııı maalesef hala daha bir türlü tam anlamıyla
+
+836
+01:24:49,739 --> 01:24:54,020
+gerçekleştirilmiyor. Iıı bence burada bitirebiliriz [öğrenci].
+
+837
+01:24:54,020 --> 01:25:07,069
+Internet kontrol protokolüse geldik. Değil mi? Gerek yok.
+
+838
+01:25:07,069 --> 01:25:13,560
+O kadar hani seçim laf şeylerin niye öyle seçildiğine
+
+839
+01:25:15,729 --> 01:25:23,569
+seçim ilgisiyle ilgili ama onlar biraz fazla detay. Aynen
+
+840
+01:25:23,569 --> 01:25:26,050
+yani hem duyurduğumuz kitapta var hem de internet
+
+841
+01:25:26,050 --> 01:26:02,899
+kaynaklarında var. Orada istiyorsanız. Evet. Bence de.
+
+842
+01:26:02,899 --> 01:26:12,479
+Bunun dışında bir şey daha olacak. Işte Fuat'la konuştuk,
+
+843
+01:26:12,479 --> 01:26:15,800
+şey yaptı, liste oluştu aslında. Iıı bugün bence
+
+844
+01:26:15,800 --> 01:26:19,560
+Fuat'la bir ııı hızlıca şey yapıp haftaya uygulamayı
+
+845
+01:26:19,560 --> 01:26:23,720
+başlatırız. Artık zaten altıncı hafta oldu. Yeterince de
+
+846
+01:26:23,720 --> 01:26:27,800
+konuyu şey yaptık, konuştuk, aktardık. Network layer hatta
+
+847
+01:26:27,800 --> 01:26:32,039
+IP'ye kadar geldik. IPV dördü bitirdik. Rutingi biliyor
+
+848
+01:26:32,039 --> 01:26:51,069
+arkadaşlar. IPV altından bahsettik. Evet. Evet. Bence
+
+849
+01:26:51,069 --> 01:26:53,550
+olabiliriz demeyelim. Önümüzdeki hafta dintibaren
+
+850
+01:26:53,550 --> 01:26:56,069
+olsun. Yani şeyler belirlendi, sırası da
+
+851
+01:26:56,069 --> 01:27:22,949
+belirlendi. Iıı şey tamam. Kaydı var. Evet arkadaşlar
+
+852
+01:27:22,949 --> 01:27:28,430
+haftaya görüşmek üzere. Iyi günler. Iyi günler hocam.
+
+853
+01:27:28,430 --> 01:27:33,590
+Iyi günler. Iyi günler sizlere de.
+

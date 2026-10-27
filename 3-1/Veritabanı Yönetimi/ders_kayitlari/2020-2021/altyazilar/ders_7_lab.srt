@@ -1,0 +1,940 @@
+1
+00:00:32,299 --> 00:00:38,439
+Hadi bakalım arkadaşlar toplanana kadar bir 5 dakika süremiz olsun bu soruyla uğraşın bakalım.
+
+2
+00:04:20,399 --> 00:04:23,220
+Soru hakkında bir şeyler düşünebildik mi?
+
+3
+00:04:24,240 --> 00:04:26,800
+En genç çalışana nasıl ulaşacağız?
+
+4
+00:04:30,870 --> 00:04:32,649
+Evet hocam, tecrübelerim senden.
+
+5
+00:04:41,959 --> 00:04:48,879
+Geçen hafta son slidemde böyle bazı fonksiyonlar görmüştük.
+
+6
+00:04:49,639 --> 00:04:50,920
+Max, min
+
+7
+00:04:52,199 --> 00:04:56,560
+Bir sütundaki maksimum değeri buluyordu, minimum değeri buluyordu mesela.
+
+8
+00:04:57,319 --> 00:05:01,420
+En genç çalışan dediğine göre o zaman ne yapmam lazım?
+
+9
+00:05:02,699 --> 00:05:05,259
+Doğum tarihlerinin olduğu o tablodaki
+
+10
+00:05:06,279 --> 00:05:11,660
+Aslında en genç demek oradaki doğum tarihi en büyük olan demek, yıl olarak mesela en büyüğü zaten.
+
+11
+00:05:11,920 --> 00:05:13,699
+Otomatik olarak en genci olacak.
+
+12
+00:05:15,240 --> 00:05:17,040
+O zaman demek ki o sütüne gidip bir
+
+13
+00:05:17,300 --> 00:05:19,339
+fonksiyonu uygulamam gerekiyor.
+
+14
+00:05:41,110 --> 00:05:44,170
+Bugün biraz daha yavaş toplanıyoruz sanki.
+
+15
+00:05:44,629 --> 00:05:49,250
+Bir uygulamanız falan mı vardı? Başka bir dersin oradan mı çıkıp geliyorsunuz?
+
+16
+00:05:49,509 --> 00:05:50,790
+Onu da tam emin değilim ama.
+
+17
+00:06:21,759 --> 00:06:23,040
+Tamamdır.
+
+18
+00:06:23,800 --> 00:06:27,139
+Biz de zaten başlamadık da bekliyoruz.
+
+19
+00:06:40,439 --> 00:06:42,240
+Evet [öğrenci] tebrikler.
+
+20
+00:06:44,279 --> 00:06:47,100
+Fonksiyonun doğru kullanımı bu şekilde oluyor.
+
+21
+00:06:47,360 --> 00:06:50,939
+Minimaks'ları dedik ki ancak select de kullanabiliyoruz.
+
+22
+00:06:51,959 --> 00:06:58,620
+Ama oradaki müzakmışsın aynen maksimum bideti bulmak gerekiyor çünkü dedik ki en genç çalışanı arıyoruz.
+
+23
+00:06:59,639 --> 00:07:02,959
+O zaman maksimum doğum tarihli olanı bulacağım.
+
+24
+00:07:04,240 --> 00:07:07,579
+Ve bunu da bu şekilde bir içice sorgu da gösteririm.
+
+25
+00:07:10,209 --> 00:07:12,509
+Kaç kişiyiz? 68 kişi olmuşuz.
+
+26
+00:07:13,029 --> 00:07:14,829
+Beş dakikamız da oldu.
+
+27
+00:07:16,089 --> 00:07:17,629
+Başlayalım biz dersimize.
+
+28
+00:07:21,879 --> 00:07:29,519
+Bu soruyu bir iki slide sonra zaten çözümünü görmüş olacağız. Şimdi biz bu fonksiyonları bir hatırlayarak başlayalım.
+
+29
+00:07:31,410 --> 00:07:34,250
+Neydi, nasıl yapıyorduk, nasıl kullanıyorduk bunları.
+
+30
+00:07:35,250 --> 00:07:45,009
+Bugünkü derste bu fonksiyonlarla birlikte bir gruplamayı işte istediğimiz şekle kayıtları sıralamayı vesaire göreceğiz.
+
+31
+00:07:46,089 --> 00:07:51,730
+Bunun için dedik bizim bir grup fonksiyonlarımız vardı gruplama bunlara aggregate fonksiyonları diyoruz.
+
+32
+00:07:53,009 --> 00:08:00,290
+Bunların en popüler kullanımları en popüler kullanılanları işte average ne yapıyor AVG bu ortalamayı buluyor.
+
+33
+00:08:00,769 --> 00:08:08,569
+İşte count'la sayıyı buluyoruz istediğimiz dönen satırlarda işte kayıtlarda kaç satır var onu buluyoruz.
+
+34
+00:08:08,569 --> 00:08:12,050
+Minimum, maksimum var da işte en küçük en büyük değerler.
+
+35
+00:08:12,569 --> 00:08:24,769
+Sum'la da belli bir sunuş parantezlerin arasında sun ismi yazıyoruz mesela işte sum saları dediğimiz zaman ne yapıyor saları sunundaki gidiyor ve bütün maaşları toplamış oluyor.
+
+36
+00:08:25,490 --> 00:08:27,649
+Bir cevap daha mı geldi bakıyoruz.
+
+37
+00:08:28,610 --> 00:08:37,610
+Sinandır'ı, SSN'i de Max B date'i seçip iç içe sorgularla eşliyoruz evet güzel.
+
+38
+00:08:38,889 --> 00:08:40,690
+[öğrenci]'ye de teşekkürler.
+
+39
+00:08:41,370 --> 00:08:50,570
+Şimdi bu fonksiyonlarımız dedik ki select ve birazdan göreceğimiz having ifadelerini de kullanılıyor.
+
+40
+00:08:50,850 --> 00:08:55,169
+Yani selectten sonra ben diyebiliyorum işte average saları ne bileyim count.
+
+41
+00:08:55,570 --> 00:09:01,649
+Hatta count için yıldız attığımızda ne diyorduk bütün kayıtların kaç tane satır var hepsinin sayısını döndürüyor vesaire.
+
+42
+00:09:02,210 --> 00:09:11,129
+Bir de birazdan göreceğimiz dediğim bir having ifadesi olacak bu ifadelerde de kullanacağız havingten sonra da bu fonksiyonları yazabileceğiz.
+
+43
+00:09:11,490 --> 00:09:23,889
+Ama ver ifadesinden hemen sonra kullanılmayacak yani işte ver B date mesela deminki soru için ver B date eşittir Max B date gibi bir eşitlemeye izin verilmiyor.
+
+44
+00:09:24,049 --> 00:09:35,730
+Ancak birazdan sorun çözümünü detaylı anlatacağım dediğim gibi B date eşittir dedikten sonra bir parantez açıp işte select Max B date yani mutlaka bir select kullanmam gerekiyor.
+
+45
+00:09:35,730 --> 00:09:45,850
+Bir iç içe sorguya girmem gerekiyor ver koşulundan sonra bu fonksiyonları kullanmama izin verilmiyor yoksa direkt olarak mutlaka bir iç içe sorgu durumu oluşturmam lazım.
+
+46
+00:09:48,080 --> 00:09:52,879
+Şimdi geldik bir soru üzerinden bu fonksiyonların kullanımına bakalım.
+
+47
+00:09:52,879 --> 00:10:01,240
+Şimdi bunu dediğim gibi geçen dersin son slide'ında da vardı bu ne diyor bize işte bir departman adı vermiş sales departmanı da demiş.
+
+48
+00:10:01,240 --> 00:10:07,960
+Kaç kişi çalışıyor bunun işte toplam maaşı yüksek maaşı en düşük maaşı ortama maaşı bulundu.
+
+49
+00:10:09,559 --> 00:10:19,840
+Select'den sonra istediği bütün fonksiyonlar bunlardı tablolarımızı hatırlıyor muyuz şu sayfa önümüzde olursa mesela çok güzel olur.
+
+50
+00:10:20,519 --> 00:10:25,799
+Şu tablomun iç kutusunu alıp böyle derste önümüze koyarsanız takip etmeniz açısından daha iyi olacaktır.
+
+51
+00:10:26,679 --> 00:10:39,480
+Buradaki ne diyordu bana sales departmanında çalışanların maaşlarını istiyordu işte ortalama maaş toplama maaş vesaire o zaman ne yapıyordum diyordum ki şu iki tabloyu kullanacağım departman ve employu.
+
+52
+00:10:40,399 --> 00:11:08,200
+Sales'i buldum burada onun numarası kaç sekiz hop bu sekizi gidip şu employu'daki Dino sütünüyle eşliyorum yani D number eşittir Dino diyorum ve daha sonrasında D name ve sales olanlar arasındaki ne yapıyorum o salar sütünün ilgili neler istedim ise onları buraya yazabiliyordum döndürebiliyordum şu şekilde D number'lar üzerinden eşledim tabloları birleştirdim.
+
+53
+00:11:08,200 --> 00:11:08,519
+Daha sonrasında da ilgili koşulluğu verip istediğim o saları sütununa erişmiş oluyordu bu şurada hani bütün fonksiyonları kullanıyoruz en popülerlerini gösterdik bu da yine basit bir örnek ne diyor bu sefer sekiz numaralı departmanla çalışan işçilerin ortalama toplanmış demin ki gibi neydi bu sefer departman numarası vermiş o zaman direkt şuradaki employu tablosuna gelirdim Dino'su sekiz numaralı
+
+54
+00:11:40,190 --> 00:12:10,190
+emploz olanların işte Maxmin ortalama toplanma maaşı average salary sum salary dediğim zaman şöyle bana bakın çıktı bu şekilde oluyor iki sütununu bir tanesinde ortalama maaşı diğerinde toplanma maaşı bana yazmış oluyor şimdi sütunların çıktıkları burada hani average sum şeklinde geliyor default olarak sütun isimleri ama ben istediğim ismi de
+
+55
+00:12:10,190 --> 00:12:25,429
+yazıyorum sütunlara onu yapmak için de şöyle bir gösterimi var işte fonksiyonu yazdım average salary dedim daha sonra ez dedikten sonra istediğim sütun adını yazabiliyorum bir güzel özellikle ez kullanmamıza da
+
+56
+00:12:25,429 --> 00:12:39,750
+aslında gerek yok direkt average salary yanına ortalama yazdığımız zaman bunu ortalama olarak zaten sütunu o şekilde döndürüyor aynı bunu hatırlarsanız tablolarda da bakın ne yapıyorduk tablon adını verdikten sonra kısaltma
+
+57
+00:12:39,750 --> 00:12:39,870
+olarak tek bir harf bile atabiliyordum ki işte ileride bu harf bu tabloya işaret ediyordu aslında burada da öyle sütunların isimlerini istediğimiz gibi listelerken sorgu sonucunu da andırırken bu şekilde isimlendirebiliyoruz normal bir sütunu da mesela tablodaki herhangi bir sütunu da normal salary de işte salary ez maaş şeklinde de yazabiliyorsunuz soruyla da bakalım siz uğraşın biraz hızlıca aslında demin öğrendiklerimizi
+
+58
+00:13:13,200 --> 00:15:56,000
+böyle bir uygulayarak kağıt üstünde bile yapabilirsiniz aslında biraz pratik olsun hani sizin de uğraşmanız iyi olur böyle yerleşmesi için tabi altta pg adımlarınızda çıksa tabloları oraya atmışsanız daha iyi daha oradan pratik bir şekilde de yazabilirsiniz ama hani pg adımını açmadıysanız bile şöyle bir hemen kağıt üstünde yazmaya çalışabilirsiniz bir antrenman olur bir iki dakika bekleyelim hadi uğraşın yapın bakalım sanırım dört çıkıyordur abi ya evet
+
+59
+00:15:58,950 --> 00:17:30,609
+evet öyle de bir ortalama hatırlıyorum [öğrenci] yine bol selektli bir hiç içe sordu yapılabiliyor gördüğüm kadarıyla su çözüme geçelim rabia'yı da tepkik ediyoruz cevabı ondan aldık şimdi çözüme bakalım ne yaptık bir kere tabloları açalım soruyu oradan bir önce kararlayalım nasıl çözeceğiz son bir çete bakıyorum
+
+60
+00:17:30,609 --> 00:18:00,609
+evet şimdi middleware projesine ne diyor middleware projesinde çalışanların eee kaç kişi çalışıyor ve ortalama maaşı istiyor bizden şimdi middleware projesinde kaç kişi çalışıyor ve ortalama maaş nedir bu proje nerede proje tablosunda bir kere önce demek ki bu proje tablosunu kullanacağım middleware burada çünkü p name middleware olanları
+
+61
+00:18:00,609 --> 00:18:30,609
+bu projede kimlerin çalıştığını nereden buluyordu şuradaki work zone tablosu var bak bu tablo bir ilişki tablosuydu ne ile neyin bilgisini tutuyordu şuradaki çalışanların kimlik numarası yer alıyordu şurada da proje numaraları yer alıyordu ve ben şu tabloya bakarak diyebiliyordum ki şu kimlik numaralı adam şu projede şu numaralı projede çalışıyor o zaman ne yapıyorum şimdi kullanacağım tablolar bir kere projeden başlıyorum bu tablodan oradan middleware olan projenin
+
+62
+00:18:30,609 --> 00:19:00,609
+numarasını alıyorum o numarayı gidiyorum bu tabloda buluyorum ilgili ssn kimse onunla eşleşen o numaralı projede hangi ssn'ler hangi kimlik numaralı kişiler çalışıyor onların maaş bilgisini ulaşmak için de neydi maaş bilgisi sizeler üstünü yine bu tablodaydı geliyordum şu kimlik numarası şurada şununla eşleşenleri şu iyi ssn'le ssn'i eşleşen kayıtlardan
+
+63
+00:19:00,609 --> 00:19:30,609
+salari çekiyordum salari maaşı istiyordum maaşın nesini istiyor benden bir ortalamasını istiyor bir de çalışan sayısını istiyor kaç kişinin çalıştığını istiyor şimdi ben ver koşuluma gelip tablolarım burada sıraladım dedim ki project'i kullanacağım work zone'u kullanacağım employee'i kullanacağım ver dedikten sonra şurada ne yapıyorum
+
+64
+00:19:30,609 --> 00:19:51,609
+project tablosundan work zone'un tablosuna gidebilmek için pno'lar üzerinden bu eşlemeyi yapıyordum burada da onu yaptım pno'lar üzerinden bunların aynı olan değerlerini buldum daha sonra work zone'dan da employee tablosuna gitmek için kimlik numaraları üzerinden bir eşleme yaptım
+
+65
+00:19:51,609 --> 00:20:21,609
+ve bunu yaptıktan sonra ben artık şu sorgunun şu kısmıyla beraber neleri biliyorum benim elimde hangi kayıtlar dönüyor bununla beraber middleware'de çalışan kişilerin bütün bilgileri geliyor adı soyadı maaşı vesairesi böyle sıra sıra kayıtlar geliyor işte bunların hepsi ortak bir noktası var ne middleware'de çalıştıkları projen adı middleware sıra sıra kayıtlar geldi şimdi ben bu kayıtlar üzerinde gidip dersem ki count yıldız o zaman ne dersem
+
+66
+00:20:21,609 --> 00:20:51,609
+ne demek istemiş oluyorum o sorgu sonucunda dönen kayıtlar kaç satır bana bunun bilgisini ver burada demek 4 çıktığına göre şunun sonucu olarak 4 tane satır çıkmış demek ki tablomda sorgu sonucumda o zaman ben count dediğim zaman count yıldız dediğim zaman onların bana sayısını kaç satır çıkardım bunu istiyorum ve bunu da bu şekilde 4 olarak listeliyor bana üstümüne de bir çalışan sayısı demişim öyle yazdırsın diye yoksa neydi direkt count olarak
+
+67
+00:20:51,609 --> 00:21:21,609
+yazdırırdı ama ben üstünün işte çalışan sayısı olarak görünmesini istediğim için öyle demişim ve bir de dedik ya o satırlar listelendi buna göre 4 tane satır listelenmiş 4 tane kayıt listelenmiş onların bir neyi var salari üstünü var sıra sıra maaşları var birinin 30 bin birinin 40 bin maaşı var sıra sıra bu salarilerde ne yap bunların ortalamasını bul diyoruz o zaman da gidiyor direkt üstüne bakıyor ve ortalamayı çekiyor ve bana gösteriyor ortalamayı
+
+68
+00:21:21,609 --> 00:21:56,920
+hesaplayarak gösteriyor bu proje şeyimiz sorgumuz bu şekildeydi anlaşıldı herhalde anlaşılmayan bir yer var mı bununla alakalı üçlü tabloları böyle sıkça birleştiriyoruz bir tablodan diğerine sonrakine bu şekilde yapmış olduk şimdi deminki soru dersin başında açtığımız soru neydi en genç çalışanın çalıştığı
+
+69
+00:21:56,920 --> 00:22:26,920
+numaralarını istiyordu en genç çalışan şimdi ne dedik mantık gereği şuradaki employ tablosunda dedik insanların doğum tarihleri var çalışanların doğum tarihleri burada en gencini bulman demek ne demek doğum tarihi en büyük olan en gençtir o zaman MaxB data arıyorum demektir fakat dedik ya bu fonksiyonlar MaxB
+
+70
+00:22:26,920 --> 00:22:56,920
+ancak nerede kullanıyor selekten sonra geliyor kalkıp da ver koşulunda işte bir date eşittir MaxB'de diyemiyorum ne yapıyorum bir iççe sorgun vardı benim in kullanarak bir örnek yapmıştık geçen hafta bu da ona benzer bir şey ama burada in yerine direkt eşittir de diyebilirsiniz bir date eşittir parantez açarsınız ya in de
+
+71
+00:22:56,920 --> 00:23:26,920
+yaparsınız bunu yaptıktan sonra ne yaptım selektedim daha sonra MaxB'de şu bir de nerede olsun ne eşit olsun MaxB'de eşit olsun emploideki bu da aslında kabaca bir de eşittir MaxB'de yapıyoruz ama kabul şekli bu yani bu şekilde bir iççe sorgu da bunu yapmamı yazmam gerekiyor şu kısım sorduğu soru proje numarasını sormuş employ'dan
+
+72
+00:23:26,920 --> 00:24:22,619
+neydi work sona gideceğim direkt numara istemiş şu kişi şurada geldim eşledim şu numaralı projede çalışıyor gibi bir olay evet anlaşıldı herhalde burası da dedik ki böyle bir eşleme yapamıyoruz bunu yapsak bize şöyle bir hata veriyor ver ile kullanamazsın diyor bu fonksiyonlar evet şimdi bu hafta öğreneceğimiz diğer bir konumda grup by olacak grup by'da da
+
+73
+00:24:22,619 --> 00:24:54,059
+kayıtları gruplamamıza yarıyor gruplamalar yapıp yine bu az önce gördüğümüz fonksiyonları kullanmamızı sağlıyor şimdi proje tablosunu soru sormuş proje tablosunu diyor dinam kolonuna göre gruplandırmak ve her bir departmanda kaç proje olduğunu yazdırmak istersek şimdi proje tablosunu bakalım ona tabloyu
+
+74
+00:24:54,059 --> 00:25:24,059
+dinam'a göre gruplam her bir departmanda kaç proje olduğunu yani mesela işte 5 numaralı departmanda 3 proje var işte 4 numaralıda kaç proje var 2 proje var bana bu şekilde bir sorgu sonucu döndürmemi istiyor bakalım bunu nasıl yazıyormuşuz gelip diyormuşuz ki proje tablosu from project kimleri
+
+75
+00:25:24,059 --> 00:25:54,059
+dinam'ı seçeceğim ve bunun sayısını alacağım neye göre gruplam dinam'a göre gruplam yani git proje tablosuna dinam'a göre bir gruplama yap bu gruplama yaptığımda arka plan da şöyle bir mantığı var işte gruplama yapayım 5 4 1 6 7 diyor bunlar benim gruplarım 5 numaralıdan kaç tane kayıt var işte bu bu bu kayıtlar 5'e ait ben o zaman şurada
+
+76
+00:25:54,059 --> 00:26:34,650
+dediğim zaman o dinam'daki kaç tane kayıt varsa onu sayıyor işte mesela 5 numaralı departman için 5 dinam için neydi 3 tane kayıt vardı onu yazıyor en basit bir şekilde böyle şimdi bunu daha detaylı bir örnek üzerinde görelim o gerçekleşen gruplam arka planı nasıl oluyor bu sefer değişikli soru üzerinden bakalım arkadaşlar ben bu tabloları
+
+77
+00:26:34,650 --> 00:27:10,220
+açtım company db tablolarını hatırlatayım yine avesis sayfamda avesis'te elçin güveye girdiğiniz zaman orada duyurular kısmında company db diye bir duyuru var onun için orada bir zip dosyası var o zip dosyasını açtığımızda içinden o şeyler çıkacaktır tabloların olduğu pdf'de çıkacak evet şimdi grup
+
+78
+00:27:10,220 --> 00:27:40,220
+devam edelim ne dedik bilgisayar mühendisliği bölümündeki her bir ders kaç kişi tarafından alalım şimdi burada bir farklı bir tablo var company alışmıştık biraz değişik olsun şimdi tablomuz kabaca şu ismi take tablosu ders alma tablosu gibi düşünün hani şu kodlu dersi şu id ile öğrenci almış öğrenci numaralı kişi almış öyle bir tablo bu şimdi bana diyor ki bilgisayar mühendisliği bölümündeki
+
+79
+00:27:40,220 --> 00:28:10,220
+her bir dersi kaç kişi almış yani temel olarak aslında dersleri şu koda göre gurutlayacağım her bir koda kaç tane ID kaç tane kayıt var onun sonucunu döndüreceğim bilgisayar mühendisliği dediği için mesela şimdi bu tabloda bir blm ile başlayan kodlu dersler de var bir de işte elektrik elektronik belki bununla başlayan dersler var bunları ne yapıyorum ben o zaman önce bir eleme yapacağım ver koşulunda
+
+80
+00:28:10,220 --> 00:28:40,220
+diyorum ki kod like belme belme ile başlayanlar böyle bir ifade şeklimiz vardı hatırlarsanız bir sütundaki işte belli bir şeyi içeren ya bir karakter ya bir kelimeyi içeren kayıtlar için böyle yüzdelik işaretler arasına yazıyorduk burada direkt başlangıcı belme olduğu için başına yüzdelik koymadık ama devam her şey olabilir yüzdelik işareti koyma başı belme ile başlayacak bunu yapınca bir kere bilgisayar mühendisliği derslerine seçmiş
+
+81
+00:28:40,220 --> 00:29:10,220
+bulundum ondan sonra ne yapacağım grup by kodlayacağım koda göre gurutla her bir koda göre kaç tane ders şimdi belmeye göre şuraya geçelim ikinci aşamada şu verden sonraki kısımda ne oldu artık belme dışındaki kodlu dersler gitti zaten iki tane üç taneymiş onlar gitti sadece şu belme kodlu dersler kalmış oluyor bunların ne yapıyorum
+
+82
+00:29:10,220 --> 00:29:40,220
+yani gruplaması var grup by kod dediğim anda o ne yapıyor mesela gidiyor diyor ki belme 1551 için bakıyor kaç tane satır var üç tane satırda şu şu şu adiler var adiler bunlar bu gerçekten böyle bir tablo oluşmuyor bu arada sadece hani arka plan da bu tarz bir işlem var ama hayal edebilmemiz için bunu koyduk buraya hani belme 1551 olan üç tane satır var üç tane adi var bu şekilde aynı şekilde 1541 olan
+
+83
+00:29:40,220 --> 00:30:10,220
+iki tane var ve 3561 de bir tane varmış şimdi ben kalkıp da bunu o zaman select count ve kod dediğimde ne yapıyor iki tane sütunu bir tablo istedim ondan bir sayısını istiyorum bir de kodları istiyorum o zaman ne yaptı oda işte kodu bu ve bundan kaç tane kayıt var kodu böyle olan kaç kayıt varsa onun sayısını anladım kodu bu olan kaç kayıt vardı üç tane kayıt vardı üç yazdı iki yazdı biri yazdı bu şekilde
+
+84
+00:30:10,220 --> 00:30:50,910
+tablomuzun ihai hali oluşmuş oluyor bir örnek kitle bakıyorum o da yine gruplama ile ilgili tamam burada da bir order'ımıza geçiyoruz gruplama olayı anlaşıldı diye düşünüyorum grup by diyorum neye göre grupluyorsam onunla alakalı kayıtları böyle tık tık tık saydırabiliyorum bu şekilde şimdi grup by'dan sonra bir şeyleri grupladık bir de order by
+
+85
+00:30:50,910 --> 00:31:20,910
+bir komut var order by ile de biz sıralayabiliyoruz döndürdüğümüz kayıtları bu grup by'dan bağımsız bir komut yani istediğiniz herhangi bir döndürdüğünüz herhangi bir sorgu sonucunu belli bir sütundaki değere göre sıralatabiliyorsunuz mesela soru bana diyor ki 2012 girişli öğrencileri ve aldıkları dersleri göster şuraya geldim
+
+86
+00:31:20,910 --> 00:31:43,559
+bu sefer yapmam gereken filtreleme demin kodlar üzerinde yapmıştım işte BLM derslerini seçmiştim şimdi de 2012 girişlileri istiyorsa o zaman ne yapacağım şuradaki ver koşulunda ID'si 12 ile başlayanlar istiyorum onlar 2012 girişli demek olacak benim için
+
+87
+00:31:43,559 --> 00:32:13,559
+koşula bunu koydum ID'si 12 ile başlayanlar dedim bu tablomun ismi take tablosu ne yapacağım öğrenciler ve aldıkları dersler kodu ve ID'yi istemişim select'e bunları yazdım ve küçükten büyüğe sırala neye göre öğrenci numaralarını küçükten büyüğe sırala diyorsa da o zaman order by ID'ye göre sırala diyor ve bu şekilde şu tablodaki kayıtlar
+
+88
+00:32:13,559 --> 00:32:45,220
+bakın ver koşulunda ne dedim 12 yazınca bir kere şu kayıtlar şu 3 tanesi uçtu gitti onları istemiyorum demek geri kalanları da ID'ye göre sıraladım order by ID'yi de şimdi herhangi bir ifade kullanmazsam yanında order by ID dedim bıraktım ne yaptı direkt default olarak küçükten büyüğe sıralıyor ama ben büyükten küçüğe de sıralamak isteyebilirim o zaman şu şekilde biz büyükten küçüğe azalan bir sıralama istiyorsam o zaman ne kullanacağım
+
+89
+00:32:45,220 --> 00:33:28,690
+desk kullanıyorum aynı örnek bu sefer öğrenci numaralar büyükten küçüğe sırala olsun demişim o zaman order by ID desk dediğim zaman ne yapacak büyükten küçüğe ID'leri sıralamış olacak order by da şimdi mesela bu örnekte ne yapıyor koşul falan yok direkt tabloyu sıralatıyor bana take tablosu bu tabloyu
+
+90
+00:33:28,690 --> 00:33:58,690
+bakın okuyalım sorguyu nasıl sıralatmış ID'ye göre azalsın yani ID büyükten küçüğe başlasın kodun da artan küçükten büyüğe gideni bu arada dedik ya sade bırakmamla şurada ASC yazmam aslında demek ki o default ifade küçükten büyüğe sıralayacak yazmışım yazmamışım çok önemli değil yanını boş bıraktığımda o zaten küçükten büyüğe sıralayacak ama hani azalan için
+
+91
+00:33:58,690 --> 00:34:28,690
+bu artan için de böyle sıralıyoruz gibi aklımızda bulunsun şimdi bu tabloyu bakın iki tane sıralama istedi order by ID ve kod dedi bana aynı altı o zaman ne yapacak sıra sıra önce şuna bakacak öncelikle benden ID sıralamamı istemiş neye göre büyükten küçüğe önce en büyük ID'yi aldım en büyük ID şunlar ID'yi aldıktan sonra o ID'nin aldığı dersleri
+
+92
+00:34:28,690 --> 00:34:58,690
+bu sefer o kodları neye göre sıralı küçükten büyüğe sıralı o zaman burada küçükten büyüğe sıralama yapıyorum ID'ler şu tablonun geneli her zaman ne yapacak ilk olarak ID sıralamamı istedi çünkü onları büyükten küçüğe sıralayacağım bakın üzerlilerden sonra kim 130 gelmiş daha sonra bunun aldığı dersleri de küçükten büyüğe o kod dersleri de kendi içinde küçükten büyüğe sırala şeklinde ikili bir grupla pardon sıralamaya
+
+93
+00:34:58,690 --> 00:35:27,570
+yapmamı istiyor bu şekilde de her ikisinin sıralamasını sağlayabiliyoruz bunun adı bakalım biraz uğraşın ne diyor her bir projede çalışanların ortalama maaşını bulup proje ismine göre sıralayın demin öğrendiğimiz
+
+94
+00:35:27,570 --> 00:37:24,710
+her bir projede çalışanların ortalama maaşı şimdi bize her bir proje diyorsa aslında ne yapıyor bir ipucu veriyor orada her bir projede yani bu arada istediğimiz sonuç şöyle bir şey projenin adı yazacak yanında da maaş ortalama maaş çıkacak her bir proje diyorsa o zaman evet [öğrenci] tebrik ederim
+
+95
+00:37:24,710 --> 00:37:51,730
+ne yapıyoruz grup by the p name'e göre proje adına göre grupluyoruz daha sonrasında bir de proje ismine göre alfabetik sıralama istemiş o zaman da bir order by yapıyoruz yine p name'e hemen çözümün tamamını da şöyle açayım
+
+96
+00:37:51,730 --> 00:38:31,550
+sonra dedik kendi içinde aslında bana belirtiyor her bir proje dediğine göre benden istediği şey proje adına göre bir gruplama gruplaya onu yazdım istediği benden şimdi proje adına göre maaş o zaman nasıl bir yol izlemem gerekiyor şu isimli projede çalışanlar maaş bilgisine nasıl ulaşabiliyordum şu work zone'a bir uğramam gerekiyordu çünkü burada kişilerin
+
+97
+00:38:31,550 --> 00:39:00,550
+burada proje numaraları vardı projenin adı numarası o numaralı projede kim çalışıyor ve o kişinin bilgileri de bu tabloda maaş bilgisi de bu tabloda o zaman bir kere şu 3 tabloyu bir birleştirmem bir join'lemem lazım hangi alanlar üzerinden join'lıyordum p number'la p no'yu şuradaki issenle de buradaki issenin kimlik numaralarını eşlemem gerekiyor geldim
+
+98
+00:39:00,550 --> 00:39:24,550
+ver koşulunda issenleri eşledim p no'ları eşledim tablolarım join'lendi ve ne dedik p name'e göre gruplayacağız dedik her bir isimli projede çalışanlarında bir average salarısı ortalama maaşı p name bu ortalama maaş bu şeklinde bir gruplama yapacak
+
+99
+00:39:24,550 --> 00:40:05,079
+evet bu örnekte anlaşıldı diye düşünüyorum sorusu olan varsa sorabilir şimdi bu sorumuzda gruplabamızı ikiye çıkaracağız bize diyor ki her bir departmanda her bir cinsiyetten kaçar işçi olduğunu şimdi bir departmana göre gruplayacağım soruya göre çünkü her bir departman istiyor
+
+100
+00:40:05,079 --> 00:40:32,079
+sonra bir de gideceğim her bir cinsiyetten kaçar kişi olduğunu o zaman ne mantı işte bir departman no'yu mesela burada departman no'yu almışız departman no virgül sex cinsiyet diyeceğim işte önce mesela 4 numaralı departmanda male olan kaç kişi var erkek olan kaç kişi var şu kadar kişi var yine 4 numaralı departmanda female olan kaç kişi var bu kadar kişi var işte aynı 8 numaralı da female bu kadar kişi var
+
+101
+00:40:32,079 --> 00:40:54,079
+male bu kadar kişi şeklinde bana bir sonuç döndürmesini isteyeceğim bunun için de적으로 üzerimden bunu gruesum o zaman tek tablo bana yetiyor emve tablosunda çünkü binolar var kişilerin çalıştığı departman numaraları var işte şu numaralı departmanda çalışanların
+
+102
+00:40:54,079 --> 00:41:00,320
+çalışanların, burayı ben dino'ya göre gruplayıp sonra bir de cinsiyete göre gruplama
+
+103
+00:41:00,320 --> 00:41:04,719
+dediğim takdirde bana bu şekilde istediğim bilgileri buradan getiriyor.
+
+104
+00:41:04,719 --> 00:41:09,760
+Kaç kişi var, count loan'u biliyorum ve bu kişilerin ortama maaşlarını da bu
+
+105
+00:41:09,760 --> 00:41:12,039
+şekilde yazıp hesaplatabiliyor.
+
+106
+00:41:12,039 --> 00:41:17,840
+İkili gruplama istedini de dedik ki böyle sıra sıra yazabiliyoruz.
+
+107
+00:41:22,880 --> 00:41:29,159
+Şimdi bugün öğreneceğimiz bir diğer ifade de, bir diğer key word, having olacak.
+
+108
+00:41:29,159 --> 00:41:40,440
+Having ile biz demiştik ki ver koşulundan sonra bu aggregate fonksiyonları işte average,
+
+109
+00:41:40,440 --> 00:41:44,760
+sum, min, max bu fonksiyonları verden hemen sonra böyle kullanamıyorduk işte.
+
+110
+00:41:44,760 --> 00:41:47,800
+B date eşitir, max b date diyemiyorduk.
+
+111
+00:41:47,800 --> 00:41:52,119
+Bunu diyebilmemiz için bir having ifadesi var aslında bunu kullanıyoruz.
+
+112
+00:41:52,559 --> 00:41:56,519
+Ver de kullanamadığımız bu ifadeleri having de kullanabiliyoruz.
+
+113
+00:41:56,519 --> 00:42:03,639
+Having'in bir olayı şu, tek başına yani select from having gibi bir şey yapamam,
+
+114
+00:42:03,639 --> 00:42:09,079
+mutlaka öncesinde bir group by yapmam lazım aslında having, group by ile birlikte
+
+115
+00:42:09,079 --> 00:42:10,760
+kullanabildiğim bir özellik.
+
+116
+00:42:10,760 --> 00:42:15,960
+Önce bir şeye göre gruplayım ki işte ondan sonra bunların üzerinde bazı
+
+117
+00:42:15,960 --> 00:42:19,480
+fonksiyonları uygulayabileyim böyle bir mantık olmuşturmuş bir şey.
+
+118
+00:42:19,880 --> 00:42:25,480
+Mesela soru da bana demiş ki, ortalama manşın işte 40.000'den fazla olduğu
+
+119
+00:42:25,480 --> 00:42:30,920
+departmanların numaraları, ortalama manş 40.000'den fazla olacak.
+
+120
+00:42:30,920 --> 00:42:38,119
+Bunun için gidip evet average salary 40.000'den büyük bakın having ifadesinde bunu
+
+121
+00:42:38,119 --> 00:42:42,679
+direk yazabildim ver koşulunda bunu yazamazdım mesela ama having ile yazabiliyorum.
+
+122
+00:42:42,679 --> 00:42:48,039
+Fakat ne dedik having de tek başına kullanır, önde mutlaka bir group var bir
+
+123
+00:42:48,039 --> 00:42:53,960
+departmana göre gruplamam da gerekiyor o zaman benden de sorun esdemiş departman numaraları
+
+124
+00:42:53,960 --> 00:43:01,079
+istediğine göre departmana göre gruplarım her departmanda kaç işte kimler
+
+125
+00:43:01,079 --> 00:43:09,400
+çalışırsa onların maaşlarının ortalamasını alır ve dino'nun üstelenmesini istersem
+
+126
+00:43:09,400 --> 00:43:13,639
+40.000'den büyük olanların üstelenmesini istersem de select de sadece dino derim
+
+127
+00:43:13,639 --> 00:43:16,840
+ve bunlar çıkmış olur bana sorgu sonucu olarak.
+
+128
+00:43:17,400 --> 00:43:24,840
+Having'i bu şekilde kullanabiliyoruz veri dedi ki ver egregate fonksiyonları
+
+129
+00:43:24,840 --> 00:43:28,679
+kullanmamı direkt kullanmamı izin vermiyor ancak deminki örnekte gördüğümüz
+
+130
+00:43:28,679 --> 00:43:33,159
+gibi işte iç içe sorgular yaparak selectten sonra kullanabiliyorum ama having'i
+
+131
+00:43:33,159 --> 00:43:37,880
+kullanarak böyle pratik bir şekilde de bu fonksiyonları yazabiliyor.
+
+132
+00:43:37,880 --> 00:43:48,380
+Mesela bu sorumuza bakalım yine take tablosuyla ders alma tablosuyla alakalı bir soru
+
+133
+00:43:48,860 --> 00:43:57,599
+2012 girişli öğrenciler arasında sadece bir kişi tarafından alınan dersler o zaman
+
+134
+00:43:57,599 --> 00:44:05,840
+ne diyeceğim sadece bir kişi bunun kountu sorgu sonucunda çıkan satır
+
+135
+00:44:05,840 --> 00:44:10,320
+sayısı bir olanları istiyorum demek ki şartlarım neler onlara bakalım bir
+
+136
+00:44:10,320 --> 00:44:19,039
+kere 2012 girişli diyorsa ne demiştik id 12 ile başlayacak bunlar benim 2012
+
+137
+00:44:19,519 --> 00:44:27,039
+girişli kayıtlarım anlamına geliyordu bunların arasından bir kişi tarafından
+
+138
+00:44:27,039 --> 00:44:33,280
+alınan derslerin kodları o zaman bir grup bayda koda göre bir gruplayacağım bu koda
+
+139
+00:44:33,280 --> 00:44:40,239
+göre kimler alıyor mesela bakın en başından başlayalım şu tablom şu haldeydi ver
+
+140
+00:44:40,239 --> 00:44:46,559
+dedim id 12 ile başlayanlar şu satırı okuduğunda artık ne yaptı diğer şu
+
+141
+00:44:46,719 --> 00:44:52,239
+idleri attı tablomdan bana direkt id 12 ile başlayanları döndür çıkarıyor
+
+142
+00:44:52,239 --> 00:45:01,119
+sonra koda göre grupta dediğimde ne yapıyor her bir kodda hangi idler var 1551 dersini alan
+
+143
+00:45:01,119 --> 00:45:07,199
+mesela iki kişi varmış iki kayıt var bunalan iki kayıt var işte şu kodu ders alan iki kayıt var
+
+144
+00:45:07,199 --> 00:45:14,000
+ama şu iki kodlu ders alan bakın birer kayıt var o zaman ben having count şurada
+
+145
+00:45:14,079 --> 00:45:20,800
+bir olanları istiyorum dediğimde ne yapacak bana bunun count bir bunun da count bir bunların
+
+146
+00:45:20,800 --> 00:45:27,039
+iki count var bunları almayacak count bir olanları alıp onların kodunu ve ib'si numaranı
+
+147
+00:45:27,039 --> 00:45:35,849
+listelemiş olacak bu şekilde having de böyle pratik bir kullanıma olmuş oluyor
+
+148
+00:45:35,849 --> 00:45:51,429
+bakalım sorumuz ne istemiş bizden ne diyor 5 numaralı departman dışındaki departmanlar
+
+149
+00:45:51,469 --> 00:45:59,190
+aslında burada da yine yeni bir özellik öğreneceğiz 5 numaralı departmanı dışlamak
+
+150
+00:45:59,190 --> 00:46:06,429
+istiyorsam onun dışındaki departmanlara bakacaksam having ifadesinde şöyle bir şey
+
+151
+00:46:06,429 --> 00:46:10,389
+kullanabiliyorum having count sonra böyle bir ifade kullanabiliyorum küçüktür büyüktür 5
+
+152
+00:46:10,389 --> 00:46:18,070
+dediğimde bu ne yapıyor dinosu 5 olmayanlara bakıyor yani 5 olanları atıyor dinosu 5
+
+153
+00:46:18,070 --> 00:46:23,590
+olanlara bakıyor aldı yine ezber bir bilgi 5 numaralı departman dışındaki departmanlar
+
+154
+00:46:23,590 --> 00:46:31,829
+arasında ortalama maaşı 40 binden fazla olduğu departmanların numaraları ortalama maaşı
+
+155
+00:46:31,829 --> 00:46:37,989
+40 binden fazla olması bunu yine havinge yazmışım ama olayım neydi havingten önce bir
+
+156
+00:46:37,989 --> 00:46:46,150
+grup yapmam lazımdı orada işte dini oya göre bir gruplayım her bir departmanda maaşlar
+
+157
+00:46:46,230 --> 00:46:54,789
+onlar çıkar kaç kayıt varsa her bir departmanda o çıkan kayıtların maaş bilgilerinin ortalaması
+
+158
+00:46:54,789 --> 00:47:02,309
+40 binden büyük olanları alıyorum yaptım istediğim koşul bu tablo employee tablosu başka
+
+159
+00:47:02,309 --> 00:47:07,829
+bir tabloya gitmeme gerek yok çünkü departman numarası ve maaş bilgisi employee'de bulunuyor
+
+160
+00:47:07,829 --> 00:47:15,590
+demiştik ve istediğim şey neyse sorgu sonucu olarak departmanların numaralarına ve
+
+161
+00:47:15,670 --> 00:47:23,429
+ortalama maaşlar istemiş bin o ve average maaş sonuçta dönerken onlara bir isim vermişim
+
+162
+00:47:23,429 --> 00:47:27,949
+departman no demişim işte average salimde ortalama maaş olarak yazsın demişim
+
+163
+00:47:27,949 --> 00:47:37,639
+isminizine o sebepten de ne olmuş böyle bir tablo sorgu sonucu dönmüş oluyor evet
+
+164
+00:47:37,639 --> 00:47:44,239
+having fardasında dedik aggregate fonksiyonları direkt kullanabiliyoruz ama öncesinde bir
+
+165
+00:47:44,239 --> 00:47:55,210
+uygulama yapıyoruz ve ona göre fonksiyonu uygulayabiliyoruz şimdiye kadar öğrendiğimiz
+
+166
+00:47:55,210 --> 00:48:02,650
+key word'lerde şöyle bir sıralamamız var aslında select from ver having tanıdık bakan
+
+167
+00:48:02,650 --> 00:48:11,010
+dedik bir gruplayımız olacak ve en son sorgu sonuçlarımızı order bay'a göre sıralayabiliyoruz
+
+168
+00:48:11,010 --> 00:48:17,969
+bu çıkan tabloyu ve şimdi öğreneceğimiz bir de limit key word'ı var limit kullanımını
+
+169
+00:48:17,969 --> 00:48:25,050
+görelim bakalım limit ile neler yapabiliyoruz kayıtlar üzerinde limitte de şöyle bir
+
+170
+00:48:25,050 --> 00:48:31,449
+kullanım var sorgu sonucunu da önüne gelen tablodaki belli aralıkta satırları
+
+171
+00:48:31,449 --> 00:48:36,409
+almak istiyorsam yani ben bir sorgu yazdım işte 50 satır 100 satır ne
+
+172
+00:48:36,610 --> 00:48:43,969
+ama ben istiyorum ki bunun işte burada 3 demiş ilk 3 satırını istiyorum çıkan sorgun o zaman
+
+173
+00:48:43,969 --> 00:48:50,570
+ne yapacağım limit 3 diyeceğim tablon buydu tek tablosuydu limit 3 dediğim anda ilk 3 kaybı
+
+174
+00:48:50,570 --> 00:49:00,429
+alıyor direkt sadece onları listeliyor gerek kalanı listelemiyor ekrana veya 3 tane
+
+175
+00:49:00,429 --> 00:49:06,909
+kayıt istedim ama baştan istemedim ve belli bir noktadan sonraki 3 tane kayıt
+
+176
+00:49:06,909 --> 00:49:15,630
+istedim o zaman da offset diyorum ve mesela da 5 demişim yani bu demek oluyor ki ilk 5 kaydı
+
+177
+00:49:15,630 --> 00:49:23,309
+git ama 5.den sonraki kayıttan başladı yani aslında 6. kayıttan itibaren başladı limit 3 offset
+
+178
+00:49:23,309 --> 00:49:29,230
+5 bu anlama geliyor 3 tane kayıt istiyorum ama 6. kayıttan itibaren istiyorum yani 5.
+
+179
+00:49:29,230 --> 00:49:35,869
+kayıttan sonraki kayıttan itibaren istiyorum gibi bir anlamı var limit adilik ilk 6 tane
+
+180
+00:49:36,989 --> 00:49:49,960
+limit a offset b de a tane satırın b numaralı kayıttan sonra gelmesi durumu mesela bu soruda
+
+181
+00:49:49,960 --> 00:49:58,079
+yine en çokluğu en azlı maxlı minni sorularımızdan biri ama demişiz bunu order ve limit
+
+182
+00:49:58,079 --> 00:50:06,119
+laması çözeriz en çok maaşı alan işçinin ismi ve soy ismi en çok maaşı alan kişi bir
+
+183
+00:50:06,320 --> 00:50:11,840
+bu bilgi nerede vardı emploi tablosunda vardı kişilerin adı soydu maaş bilgileri emploi
+
+184
+00:50:11,840 --> 00:50:21,960
+tablosunda ben bu tabloyu eğer maaşa göre ne yapayım artan pardon azalan şekilde sıralarsan
+
+185
+00:50:21,960 --> 00:50:28,039
+yani büyükten küçüğe sıralarsam ve ilk satırını alırsam otomatikman neye bulmuş
+
+186
+00:50:28,039 --> 00:50:34,920
+olacağım aslında en çok maaşı olan kişiyi bulacağım sorgunun mantığı bu git emploi tablosunu
+
+187
+00:50:35,320 --> 00:50:41,840
+maaş sütününe göre o zaman farklı bir büyükten küçüğe sıralama da bunu belirtmem gerekiyordu
+
+188
+00:50:41,840 --> 00:50:50,639
+büyükten küçüğe sırala ve limit bir ilk satırını al dediğimde bana otomatikman o en çok maaş
+
+189
+00:50:50,639 --> 00:50:55,320
+alan kişinin adını ve soyadını döndürüyor limit birin diğer anlamı ne olmuş oluyor
+
+190
+00:50:55,320 --> 00:51:00,960
+otomatikman offset sıfır oluyor yani sıfırdan sonra birinci kayıttan itibaren al bu şekilde
+
+191
+00:51:00,960 --> 00:51:08,639
+gerek kalmıyor baştan başlıyorsam limit bir diye biliyorum limitin de kullanımı bu şekilde bu
+
+192
+00:51:08,639 --> 00:51:13,320
+tarz sorularda böyle işimize yarayabilir tabloyu belli bir sütuna göre sıralayıp işte en baştaki
+
+193
+00:51:13,320 --> 00:51:26,480
+kaybı alıyorsa limitli bunu yapabiliyoruz bu soruda bir diğer özellikimiz de iznav
+
+194
+00:51:26,480 --> 00:51:35,960
+kullanımı yani belli bir sütünün değeri boş mu dolu mu boş olanları döndür dediğimde iznav
+
+195
+00:51:35,960 --> 00:51:44,239
+kullanıyorum mesela soru bana demiş ki yöneticisi olmayan kişiler SSM pardon emploi tablosunda
+
+196
+00:51:44,239 --> 00:51:50,159
+neler vardı tabloyu tekrar hatırlayalım bu tabloyu çok kullanıyoruz demiştik kişilerin bir
+
+197
+00:51:50,159 --> 00:51:55,800
+kendi kimlikleri vardı bir de işte süper SSM onların yöneticilerinin bu kişinin yine
+
+198
+00:51:55,840 --> 00:52:03,480
+yöneticisinin kimlik numarası vardı ve demiştik ki bazı kişiler sonuçta en üst rütbeli yöneticiler
+
+199
+00:52:03,480 --> 00:52:09,079
+belki departman yöneticileriydi bunlar onların süper SSM'leri boş olabilir olmayabilir yani
+
+200
+00:52:09,079 --> 00:52:14,320
+bu kişinin birisi yöneticisi olmayabilir o zaman bu bir boştur ve ben yöneticisi olmayan
+
+201
+00:52:14,320 --> 00:52:20,360
+kişiyi bul dediğimde otomatik olarak gidip derim ki işte süper SSM kısmı mal olan
+
+202
+00:52:20,360 --> 00:52:26,760
+ları bana döndürürsün süper SSM dediğimde de bu şekilde bir döndürme yapacaktır bana
+
+203
+00:52:26,760 --> 00:52:37,519
+bu da böyle bir özelliğimizde bu dersimizde son olarak öğreneceğimiz bir bilgi olarak
+
+204
+00:52:37,519 --> 00:52:49,719
+aklımızın kenarında bulunsun extract fonksiyonuyla biz bu hani date tipinde verilerimiz var
+
+205
+00:52:49,760 --> 00:52:56,239
+bu mesela bir date bizim veri tabanımızda şu emploi tablosunu incelediğinizde göreceksiniz
+
+206
+00:52:56,239 --> 00:53:06,159
+company DB'nin kayıtlarında şuradaki bir date işte yıl gün ay şeklinde bir veri ben buradan
+
+207
+00:53:06,159 --> 00:53:11,360
+spesifik bir şey çekmek istiyorsam mesela bu bir date'den yılı çekmek istiyorum diyelim
+
+208
+00:53:11,360 --> 00:53:17,679
+o zaman ne yapıyorum extract diyorum from B date'den year bunu al mesela birkaç tane
+
+209
+00:53:17,679 --> 00:53:22,519
+vermiş kullanabildiğim işte day dediğim zaman hangi günse onu çekiyor işte sentry
+
+210
+00:53:22,519 --> 00:53:27,679
+yüz yılı bir kaçıncı hafta yılın kaçıncı haftası vesaire hani bütün bilgileri de
+
+211
+00:53:27,679 --> 00:53:32,639
+çekmemizi sağlayan böyle bir ifade var bu da yine hani esber bir bilgi aklımızın
+
+212
+00:53:32,639 --> 00:53:36,320
+bir kenarında bulunsun hani eskal daha bunu da yapabiliyor muşuz deriz ve işimiz
+
+213
+00:53:36,320 --> 00:53:43,880
+düştüğünde aslında bakıp uygulayabileceğimiz bir şey oluyor bakıyorum evet bu haftaki
+
+214
+00:53:44,480 --> 00:53:50,360
+konular bu kadar da arkadaşlar aklınıza takılan sormak istediğiniz bir şey varsa alabilirim
+
+215
+00:53:50,360 --> 00:54:06,800
+soruları öğrendiklerimiz bu rupayı öğrendik havingi öğrendik çok teşekkür ederim ben
+
+216
+00:54:06,800 --> 00:54:13,710
+teşekkür ederim dinlediğiniz için hocam vizeyle ilgili bir şey soracaktım da bir şeyler
+
+217
+00:54:13,710 --> 00:54:19,190
+açıklandı mı vizeyle ilgili nasıl yapılacak veya kuracak mı falan diye ben de bilmiyorum
+
+218
+00:54:19,190 --> 00:54:24,389
+bu işçisi bölümün sayfasına bakıyorum ben önümüzdeki hafta diyebiliyorum hocalarını
+
+219
+00:54:24,389 --> 00:54:30,949
+söyledim onu gelecek hafta yapacağız tarzında bir şey çünkü ben şöyle direkt
+
+220
+00:54:30,949 --> 00:54:38,949
+önce hafta olur diye şimdi onu söyleyeyim haftaya laf yapmayacağız o programda
+
+221
+00:54:38,949 --> 00:54:46,750
+yazmıştım zaten ders şeyinde bakarsanız duygular da paylaşmıştım onu hafta
+
+222
+00:54:46,750 --> 00:54:51,989
+söyleyemezse o zaman bu hafta içinde açıklarlar takvimi bu cuma değil ondan sonraki cuma
+
+223
+00:54:51,989 --> 00:54:57,469
+veritabanı sınavı var da laboratör için bir şey var mı ayrıca laboratör için sınav
+
+224
+00:54:57,469 --> 00:55:04,190
+tarzı bir şey yapmıyoruz sadece bir proje ödevi vereceğiz onun kontrollerini yapacağız
+
+225
+00:55:04,190 --> 00:55:10,550
+oradan hani laf fonumuz oradan gelecek bu laftakiler o bir dersin sınavında çıkabilir mi
+
+226
+00:55:10,750 --> 00:55:17,230
+yok eğer derste bunları görmediyseniz çıkmaz derste sanırım daha farklı
+
+227
+00:55:17,230 --> 00:55:23,030
+diyagramlar falan şeyler görüyorsunuz her yerde girmediniz hani derste ne görüyorsunuz
+
+228
+00:55:23,030 --> 00:55:31,750
+açıkla laftakilerle proje olarak burada aynı proje yapmanızı isteyeceğiz onu da açıklarız
+
+229
+00:55:31,750 --> 00:55:39,909
+ilerleyen haftalarda zaten nasıl olacak nasıl bitecek o şekilde hocam proje yüzde kaç
+
+230
+00:55:40,110 --> 00:55:44,989
+proje yüzde 20 veya yüzde 30
+
+231
+00:55:44,989 --> 00:55:51,429
+tamam emin değilim ama ya 20 ya 30 ekleyecek genel ders puanımızı yani
+
+232
+00:55:51,429 --> 00:55:54,590
+tamam teşekkür ederim iyi akşamlar
+
+233
+00:55:54,590 --> 00:55:57,590
+ben teşekkür ederim hepinizde iyi akşamlar
+
+234
+00:55:57,590 --> 00:55:58,590
+iyi akşamlar
+
+235
+00:55:58,590 --> 00:56:00,789
+iyi akşamlar görüşmek üzere
+

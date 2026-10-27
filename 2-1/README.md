@@ -51,6 +51,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1VcDey9b_Mg6RCz_qrEEgpWgOmYJPCC-b?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Ayrık Matematik Ders Kayıtları Altyazıları](./Ayr%C4%B1k%20Matematik/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

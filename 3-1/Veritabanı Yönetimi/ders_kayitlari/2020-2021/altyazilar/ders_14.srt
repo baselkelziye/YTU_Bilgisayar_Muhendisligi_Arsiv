@@ -1,0 +1,6336 @@
+1
+00:01:23,659 --> 00:01:25,659
+Hayırlı sabahlar arkadaşlar.
+
+2
+00:01:25,659 --> 00:01:30,829
+Günaydın hocam.
+
+3
+00:01:30,829 --> 00:01:32,829
+Günaydın.
+
+4
+00:01:32,829 --> 00:01:34,829
+Evet son dersimiz.
+
+5
+00:01:34,829 --> 00:01:36,829
+Mesajımı aldınız değil mi?
+
+6
+00:01:36,829 --> 00:01:38,829
+Beklemediniz boşu boşuna yarım saat.
+
+7
+00:01:38,829 --> 00:01:41,829
+Yok mail geldi hocam sağ ol.
+
+8
+00:01:41,829 --> 00:01:46,209
+Evet bugün iki saattir bir dersimiz daha olacak.
+
+9
+00:01:46,209 --> 00:01:48,209
+Son dersimiz.
+
+10
+00:01:48,209 --> 00:01:56,769
+Bu dönem konu olarak bir index konusunda dahil edelim diye düşündük.
+
+11
+00:01:56,769 --> 00:01:59,769
+Son haftaya kaldı orada.
+
+12
+00:01:59,769 --> 00:02:14,659
+Şimdi bugün o konularla ilgili birkaç sunumumuz var.
+
+13
+00:02:14,659 --> 00:02:16,659
+Dün de sizinle paylaştım onu.
+
+14
+00:02:16,659 --> 00:02:18,659
+Onları açacağım.
+
+15
+00:02:18,659 --> 00:02:20,659
+Onların üzerinden şöyle bir geçeceğiz.
+
+16
+00:02:20,659 --> 00:02:24,659
+Tabii bunların detaylarını biz dosya düzenleme dersinde görüyoruz.
+
+17
+00:02:24,659 --> 00:02:26,659
+Seçmeli ders.
+
+18
+00:02:26,659 --> 00:02:34,659
+Bu dersin de biraz içeriğini biraz daha tazeleyip yeniden gündeme almayı düşünüyoruz inşallah.
+
+19
+00:02:34,659 --> 00:02:36,659
+Birkaç denemdir maalesef açılmıyor.
+
+20
+00:02:36,659 --> 00:02:42,659
+Zor oluyor derse o yüzden rahmet görmüyor.
+
+21
+00:02:42,659 --> 00:02:53,659
+Konu olarak veri tabanının iç işleyişi ile alakalı veri tabanıyla ilgili dizgisel tasarımla ilgili temel konular oldukça önemli.
+
+22
+00:02:53,659 --> 00:02:58,659
+Ama işte tam olarak bunu ben anlatamıyorum.
+
+23
+00:02:58,659 --> 00:03:04,659
+Biraz popüler olan derslere seçmeli derslere davet oluyor.
+
+24
+00:03:04,659 --> 00:03:08,659
+İşte artık inşallah.
+
+25
+00:03:08,659 --> 00:03:14,659
+Biraz ismini de değiştirip böyle dersi daha cazip hale getirmeye çalışacağım inşallah.
+
+26
+00:03:14,659 --> 00:03:16,659
+Bir dahaki denemlerde.
+
+27
+00:03:16,659 --> 00:03:19,659
+Şimdi güncelleme bekliyorum da.
+
+28
+00:03:19,659 --> 00:03:24,889
+Neyse şuradan açalım o zaman.
+
+29
+00:03:24,889 --> 00:03:32,020
+Herhangi bir sorunuz var mı arkadaşlar?
+
+30
+00:03:32,020 --> 00:03:38,550
+Robotar'da herhalde projeyi tamamladınız projesi numarana.
+
+31
+00:03:38,550 --> 00:03:47,819
+Evet hocam bitti projeler notlandırıldı.
+
+32
+00:03:47,819 --> 00:03:49,819
+İyi güzel hızlı maşallah.
+
+33
+00:03:49,819 --> 00:03:57,599
+Evet bir ikinci ödevi teslimi de bitti herhalde.
+
+34
+00:03:57,599 --> 00:03:59,599
+İkinci ödemin teslimi bugün mü son gün?
+
+35
+00:03:59,599 --> 00:04:03,599
+10 Ocak yazmıştınız hocam.
+
+36
+00:04:03,599 --> 00:04:05,599
+10 Ocak bakayım bugün.
+
+37
+00:04:05,599 --> 00:04:07,599
+Ha tamam hafta sonra da var.
+
+38
+00:04:07,599 --> 00:04:09,599
+Evet onu da gönderirsiniz.
+
+39
+00:04:09,599 --> 00:04:16,600
+Evet şimdi şunu olarak şu index konusunda bir açalım.
+
+40
+00:04:16,600 --> 00:04:19,600
+Evet ekran paylaşımı var.
+
+41
+00:04:19,600 --> 00:04:21,600
+Bir şey sorabilir miyim?
+
+42
+00:04:21,600 --> 00:04:23,600
+Neyle ilgili?
+
+43
+00:04:23,600 --> 00:04:25,600
+Evet.
+
+44
+00:04:25,600 --> 00:04:29,600
+Orada ER şey vardı bir tane.
+
+45
+00:04:29,600 --> 00:04:31,600
+İlk soru.
+
+46
+00:04:31,600 --> 00:04:32,600
+İlk soru.
+
+47
+00:04:32,600 --> 00:04:36,600
+Onda ssdm grafi çizmemizi istemiştim.
+
+48
+00:04:36,600 --> 00:04:37,600
+Evet.
+
+49
+00:04:37,600 --> 00:04:44,600
+Şimdi normalde hani mesela onu tablo olarak yapsak ilişkissel bir tabloda oluşturmamız gerekiyor.
+
+50
+00:04:44,600 --> 00:04:48,600
+Öyle gösteriyor ama ssdm ile bunu çok daha basit bir şekilde de halledebiliriz.
+
+51
+00:04:48,600 --> 00:04:57,600
+Yani aynı şeyi veriler için bir tasarım yapabiliriz ama illa ER'e uymak zorunda mıyız hani işte.
+
+52
+00:04:57,600 --> 00:05:01,600
+Evet yani orada çok farklı kocaman ssdm de çizebilirsin.
+
+53
+00:05:01,600 --> 00:05:14,600
+Azıcık da böyle çizebilirsin ama önemli olan oradaki o kısıtları sağlayan böyle orta haline bir sample yani örnek veriden oluşan bir ssdm grafi çizmek.
+
+54
+00:05:14,600 --> 00:05:17,600
+Yani öğrenci isimleri işte neyse orada tam unuttum ben de.
+
+55
+00:05:17,600 --> 00:05:19,600
+Aile ile ilgiliydi herhalde değil mi?
+
+56
+00:05:19,600 --> 00:05:21,600
+Çocuklar falan vardı.
+
+57
+00:05:21,600 --> 00:05:33,600
+Yani öyle işte anne baba işte iki üç tane anne baba çocukları işte onların çocuklarının annesi annenin çocukları falan o bağlantıları kurmak tarzında bir sample şey yapmak yani.
+
+58
+00:05:33,600 --> 00:05:35,600
+Tamam.
+
+59
+00:05:35,600 --> 00:05:37,600
+O kısıtları sağladığı.
+
+60
+00:05:37,600 --> 00:05:38,600
+Evet.
+
+61
+00:05:38,600 --> 00:05:43,600
+Ama yani şimdi bir tane anne baba da çizince de olmaz.
+
+62
+00:05:43,600 --> 00:05:48,600
+Sonuçta o kısıtları sağlayan bir sample oluşturmanızı istiyoruz yani.
+
+63
+00:05:48,600 --> 00:05:51,600
+İkinci soru biraz daha zor.
+
+64
+00:05:51,600 --> 00:05:54,600
+Orada işte o şeyleri incelemeniz lazım.
+
+65
+00:05:54,600 --> 00:06:05,600
+Ekzemen dökümanlarını o dökümanı sağlayan ekzemen dökümanını valit hale getiren bir btd oluşturmanızı istiyoruz.
+
+66
+00:06:05,600 --> 00:06:12,600
+Sınavda da bunların işte böyle test tarzı ufak versiyonları oluyor zaten ikinci sınavda da sorduk galiba.
+
+67
+00:06:12,600 --> 00:06:24,600
+Final sınavımızda son hafta ikinci hafta cuma günü olacak yine aynı tarzda olacak ve test tarzında.
+
+68
+00:06:24,600 --> 00:06:29,220
+Hocam ben bir şey sorabilir miyim?
+
+69
+00:06:29,220 --> 00:06:30,220
+Evet.
+
+70
+00:06:30,220 --> 00:06:31,220
+Evet.
+
+71
+00:06:31,220 --> 00:06:47,220
+Orada etribüt tipleri arasında id refse karşılık gelen bir id yoksa veya idye karşılık gelen bir id refsi yoksa onları cdata olarak mı yazmamız lazım yoksa.
+
+72
+00:06:47,220 --> 00:06:54,220
+Yani bir etribüt aslında id gibi gözüküyor ama referans veren bir şey yok.
+
+73
+00:06:54,220 --> 00:06:57,220
+Onu cdata olarak da yazabilir miyiz?
+
+74
+00:06:57,220 --> 00:07:02,220
+Yok id ise o referans edilmek zorunda değil.
+
+75
+00:07:02,220 --> 00:07:07,220
+Yani ona referans eden bir id ref yok olabilir yani.
+
+76
+00:07:07,220 --> 00:07:11,860
+Ama o id olarak ilan edilmiş.
+
+77
+00:07:11,860 --> 00:07:20,860
+O id bir etiket yani şey keyword yani.
+
+78
+00:07:21,860 --> 00:07:34,860
+Nasıl id olarak ilan ediliyor yani sadece o etribütün isminin isminde bir id diye bir şey geçtiği için mi sadece oradan mı anlıyoruz onu id yapmamız gerekiyor.
+
+79
+00:07:34,860 --> 00:07:48,860
+Yok yani o mesela bir kitap ismi ise kitabı ismi veya ismi numarası id olarak ilan edildiyse yazarlardan mesela oraya işaret eden olması lazım.
+
+80
+00:07:49,860 --> 00:07:52,860
+Bir kitabın yazarı mutlaka olması lazım.
+
+81
+00:07:52,860 --> 00:07:56,860
+O kitabın o id ismi işaret eden id ref mutlaka olması lazım.
+
+82
+00:07:56,860 --> 00:08:02,860
+Ama burada verdiğim örnekte bu idye gerçekten bir referans eden bir şey olması zaruri olması lazım.
+
+83
+00:08:02,860 --> 00:08:05,860
+Ama tam tersini düşünelim mesela.
+
+84
+00:08:05,860 --> 00:08:14,860
+Yani id yazarın ismi olsun ama kitaplardan bu sefer yazara id refleri olsun ama bu adam hiç kitap yazmamış mesela.
+
+85
+00:08:14,860 --> 00:08:19,860
+Yani bu adama işaret eden bir kitap yok olabilir.
+
+86
+00:08:19,860 --> 00:08:23,860
+O zaman tam tersi yani biz önceki örnekten farklı oldu bu sefer.
+
+87
+00:08:23,860 --> 00:08:27,860
+O zaman yazar id ama ona işaret eden bir pointer'ımız yok.
+
+88
+00:08:27,860 --> 00:08:30,860
+Ama ben ona id olarak ilan ettim yani.
+
+89
+00:08:30,860 --> 00:08:38,860
+Ama bakın burada mesela dtd'lerde yani bizim yardaki gibi detaylandıramıyoruz.
+
+90
+00:08:38,860 --> 00:08:43,860
+Ama egzemel skimada, egzemel şemada veya işte bunlar daha detaylı.
+
+91
+00:08:43,860 --> 00:08:50,860
+Yani pointer'ların refrenans eden id'lerin tipleri belli mesela.
+
+92
+00:08:50,860 --> 00:08:52,860
+Bunların hepsi daha detaylı.
+
+93
+00:08:52,860 --> 00:08:54,860
+Kaç tane refrenans ediyor falan.
+
+94
+00:08:54,860 --> 00:08:57,860
+Bunlar daha detaylandırılmış ama o çok karmış.
+
+95
+00:08:57,860 --> 00:09:01,860
+Yani onları kendi usunuya almak falan çok zor oluyor.
+
+96
+00:09:01,860 --> 00:09:04,860
+Birkaç kere denedik çok verimli olmadı.
+
+97
+00:09:04,860 --> 00:09:10,860
+Yani bu konuda yani egzemel database üzerinde bir iş ile çalışmak istiyorsunuz mesela.
+
+98
+00:09:10,860 --> 00:09:12,860
+Bunlarla ilgili sektör de var.
+
+99
+00:09:12,860 --> 00:09:16,860
+Bunlar egzemel şeme mesela ayrı bir eğitimden geçiyorsunuz işte.
+
+100
+00:09:16,860 --> 00:09:18,860
+Ayrı bir kursu oluyor bunun.
+
+101
+00:09:18,860 --> 00:09:20,860
+Yani siz de zaten bakıyorsunuzdur.
+
+102
+00:09:20,860 --> 00:09:23,860
+İnternette bu tutorial'lar falan çok var bunlarla ilgili.
+
+103
+00:09:23,860 --> 00:09:32,860
+Ama ana tema, ana fikir yani dersin kapsamında zaten böyle farklı farklı güvenlik olsun, SQL olsun böyle farklı konulardan bir giriş yaptık yani.
+
+104
+00:09:32,860 --> 00:09:38,860
+Bugünkü dersimizde de işte böyle bu sefer fiziksel tasarımla ilgili.
+
+105
+00:09:38,860 --> 00:09:46,860
+Yani daha uzun bazı şeyler soracaksan dersten sonra başka bir yani sınavdan önce bir görüşme ayarlayabilirsin.
+
+106
+00:09:46,860 --> 00:09:48,860
+Olur mu?
+
+107
+00:09:48,860 --> 00:09:50,860
+Tamam hocam.
+
+108
+00:09:50,860 --> 00:09:52,860
+Tamam [öğrenci] sen mi şey yaptın sordun?
+
+109
+00:09:52,860 --> 00:09:53,860
+Evet.
+
+110
+00:09:53,860 --> 00:09:56,860
+Eğer kafana takılan bir şey varsa daha detay olarak.
+
+111
+00:09:56,860 --> 00:10:02,860
+Ama ana hatlarıyla anladığım kadarıyla mesela kafana takılan meselenin cevabı bu olsa gerek.
+
+112
+00:10:02,860 --> 00:10:05,860
+Yani o kadar deterministik değil yani bilgiydi.
+
+113
+00:10:05,860 --> 00:10:07,860
+Ana hatlarıyla bize veriyor şeyi.
+
+114
+00:10:07,860 --> 00:10:10,860
+Evet şimdi ekran paylaşımı yapıyorum.
+
+115
+00:10:10,860 --> 00:10:14,860
+Şu simple indexten bir parça başlayalım.
+
+116
+00:10:14,860 --> 00:10:17,860
+Dediğim gibi çok ekrana görüyorsunuz umarım.
+
+117
+00:10:17,860 --> 00:10:29,570
+Evet şimdi dosya organizasyonu dediğimiz sonuçta veri tabanları.
+
+118
+00:10:29,570 --> 00:10:36,570
+Arka plan da diskte dosyaların tutulmasıyla gerçekleniyor.
+
+119
+00:10:36,570 --> 00:10:41,570
+Yani sistemin gerçeklenmesinde bu veri tabanı tabloları dediğimiz.
+
+120
+00:10:41,570 --> 00:10:45,570
+Biz burada daha çok olaya böyle mantıksal tasarım noktasında baktık.
+
+121
+00:10:45,570 --> 00:10:52,570
+Küçük olan küçük dünyayı mesela nasıl tablolarla temsil edeceğiz onlardan bahsettik.
+
+122
+00:10:52,570 --> 00:11:02,570
+Ve bu küçük dünyamızda işte böyle mantıksal bazı kurgularla bir takım sorgulamalara işte kod yazmak işte eskular gibi veya prosedü yazmak.
+
+123
+00:11:02,570 --> 00:11:05,570
+Fakat bir de tabi olayın perde arkası var.
+
+124
+00:11:05,570 --> 00:11:11,570
+Yani buraya bir sorgu gönderdiğimiz zaman bu sorgu arkada nasıl çalışıyor.
+
+125
+00:11:11,570 --> 00:11:14,570
+Dosyalarda bu veri nasıl saklanıyor.
+
+126
+00:11:14,570 --> 00:11:17,570
+Çünkü çok arkada da büyük veriler var.
+
+127
+00:11:17,570 --> 00:11:22,570
+Veri tabanı tabi ana hafızaya sığmadığı için bu veriler de diskte saklanıyor.
+
+128
+00:11:22,570 --> 00:11:30,570
+Yani normal klasik bir veri tabanında ya hard disk HDD disk'e saklanıyor ya da SSD disk'e saklanıyor.
+
+129
+00:11:30,570 --> 00:11:35,570
+Ancak mesele tabi gene ana hafızaya göre çok daha yavaş bir ortam.
+
+130
+00:11:35,570 --> 00:11:45,570
+Yani HDD'de bu 10 üzeri 6 katı kadar hatta 10 üzeri 6'dan daha da fazla.
+
+131
+00:11:45,570 --> 00:11:53,570
+Ötekisinde mesela daha 100 katı kadar daha yavaş SSD'ydi mesela.
+
+132
+00:11:53,570 --> 00:11:58,570
+Şimdi böyle olunca gene ama iletişim ortamı gene bloklar bazında.
+
+133
+00:11:58,570 --> 00:12:07,570
+Yani disk ve ana hafızaya üzerinde erişmemiz çok detaya inmeyeceğim ama nihayetinde oradan böyle büyük parçalar halinde veriyi alıyoruz.
+
+134
+00:12:07,570 --> 00:12:09,570
+Onlar da blok veya page deniyor.
+
+135
+00:12:10,570 --> 00:12:17,570
+Şimdi burada verinin tabi arkada disk ortamında saklanan verinin büyük olması büyük veri olması.
+
+136
+00:12:17,570 --> 00:12:23,570
+Yani tabi büyük veri derken hani o kapsamda disklere dağılmış distributed data'yı kastetmiyorum.
+
+137
+00:12:23,570 --> 00:12:35,570
+Ama nihayetinde bizim bulunduğumuz işte desktop'ımızda bulunduğumuz ortamda kendi bilgisayarımızda, lokal bilgisayarımızda ana hafızaya sığmayan tarzda büyük bir veri.
+
+138
+00:12:35,570 --> 00:12:44,570
+O zaman bu veri yığını içerisinde verinin düzenli olarak saklanması ve erişiminin de düzenli yapılması gerekiyor.
+
+139
+00:12:44,570 --> 00:12:59,570
+Bunun için de kullanılan veri yapıları, veri yapıları, disk tabanlı veri yapıları ve bu disk tabanlı veri yapılarının işlenmesi de yani bu konu başta da indexing oluyor.
+
+140
+00:12:59,570 --> 00:13:12,570
+Demek ki indexin de dediğimiz zaman, indexlendiği zaman burada aklımıza veri tabanının verinin diskte düzenli saklanması ve hızlı bir şekilde erişilmesi akla gelmesi lazım.
+
+141
+00:13:12,570 --> 00:13:14,570
+Veya tam tersini şey yapalım.
+
+142
+00:13:14,570 --> 00:13:17,570
+Ya bu kadar veri arkada ben bir sorgu yazıyorum.
+
+143
+00:13:17,570 --> 00:13:19,570
+Bir sürü tabloyu açıyor.
+
+144
+00:13:19,570 --> 00:13:28,570
+Sorgumuzda böyle bir çok tabloyu join ediyor olsun mesela iki üç tane tablo olsun yüklemlerimiz yoğun olsun böyle iç içe sorgular olsun.
+
+145
+00:13:28,570 --> 00:13:34,570
+Böyle karmaşık bir sorgu yani tuşa basıyoruz çok hızlı bir şekilde cevap geliyor.
+
+146
+00:13:34,570 --> 00:13:39,570
+Arkada da büyük belki gigabaytlar mertebesinde dosyalar da olabilir yani.
+
+147
+00:13:39,570 --> 00:13:43,570
+Hatta biraz daha öteye gidelim verimiz böyle dağıtık da olabilir.
+
+148
+00:13:43,570 --> 00:13:45,570
+Çok bilgisayar dağılmış olabilir.
+
+149
+00:13:45,570 --> 00:13:47,570
+Ama çok hızlı çalışıyor.
+
+150
+00:13:47,570 --> 00:14:01,570
+Bu hızlı çalışması bir de dedik yani disk ana hafızaya göre 10 üzeri 6 kat yani nanosekundlar mertebesinde disk ama mini sekundlar mertebesinde disk.
+
+151
+00:14:01,570 --> 00:14:09,570
+Şey ise ana hafızamızla mini sekundlar mertebesinde yani 10 üzeri 6 kat daha yavaş bir yerden çok hızlı bir şekilde veri geliyor.
+
+152
+00:14:09,570 --> 00:14:19,570
+Şimdi bunu sağlayan bu nasıl oluyor diye sormamız lazım veya bir de sordukları zaman ya bu kadar hızlı veri büyük biri arasında ben bir kişinin ortalamasını arıyorum.
+
+153
+00:14:19,570 --> 00:14:21,570
+Bir sorgu gönderiyorum mesela.
+
+154
+00:14:21,570 --> 00:14:28,570
+Çok hızlı bir şekilde buradan veri geliyor bunu sağlayan arkadaki yapı ya index deniyor.
+
+155
+00:14:28,570 --> 00:14:34,570
+Şimdi bu index nedir burada temel konu başlığı olarak onu inceliyor.
+
+156
+00:14:34,570 --> 00:14:47,570
+Daha sonra da günümüzde en çok kullanılan veli tabanlarında yani hangi veli tabanı olursa olsun SQL, NoSQL, SQL'in tipleri işte aklınıza ne gelirse gelsin.
+
+157
+00:14:47,570 --> 00:14:53,570
+İşletim sistemleri yani böyle bütün bilgi yığınının olduğu cep telefonunuz bile olabilir.
+
+158
+00:14:53,570 --> 00:15:01,570
+Ona bakacaktım hangi oranda orada kullanılıyor diye de şimdi derste gelmeden önce bakamadım.
+
+159
+00:15:01,570 --> 00:15:10,570
+Yani cep telefonları da dahil bütün böyle veri işleme veri yığın olduğu yerlerde kullanılan veri yapısı olan B-Trip var.
+
+160
+00:15:10,570 --> 00:15:12,570
+Anı hatları yine ondan bahsedeceğiz.
+
+161
+00:15:12,570 --> 00:15:18,570
+Bayağı büyük konuştum herhalde bütün her yerde olan ubiquitous yani deniyor buna.
+
+162
+00:15:18,570 --> 00:15:27,570
+Yani bütün sistemlerde hızlı veri erişimine imkan sağlayan temel veri yapısı B-Trip.
+
+163
+00:15:27,570 --> 00:15:32,570
+Ancak bu tabi ana hafızada gördüğümüz veri yapılarından bir parça daha farklı.
+
+164
+00:15:32,570 --> 00:15:39,570
+Gene ağaç organizasyonu, hierarik, öz yinelemeli yani rekursif böyle bir yapısı var gene.
+
+165
+00:15:39,570 --> 00:15:43,570
+Ancak disk tabanlı olduğu için tabi bazı şeyleri daha farklı oluyor.
+
+166
+00:15:43,570 --> 00:15:51,570
+Yani ana hafızada gördüğümüz binary search tree gibi mesela normal array linked list gibi sonuçta bir veri yapısı.
+
+167
+00:15:51,570 --> 00:15:59,570
+Ancak disk tabanlı olduğu için bazı şeylere ilgilenerek o veri yapısı tasarlanması gerekiyor.
+
+168
+00:15:59,570 --> 00:16:03,570
+Şimdi ona geçmeden evvel bir parça bir search problem'a bakalım.
+
+169
+00:16:03,570 --> 00:16:09,570
+Yani bir şey arıyoruz nihayetinde biz bir sorgu gönderdiğimiz zaman arka planda bu problem var.
+
+170
+00:16:09,570 --> 00:16:13,570
+Yani bir dosyada mesela biz neyi arıyoruz?
+
+171
+00:16:13,570 --> 00:16:21,429
+Şunu biraz daha büyüteyim.
+
+172
+00:16:21,429 --> 00:16:24,429
+Mesela böyle bir dosyamız var.
+
+173
+00:16:30,159 --> 00:16:33,159
+Bu dosyada mesela işçilerimiz var.
+
+174
+00:16:33,159 --> 00:16:42,159
+Burada işçinin numarasına göre bu işçinin ünvanını arıyoruz.
+
+175
+00:16:43,159 --> 00:16:50,159
+Şu işçinin numarası bu numaraya göre işçinin ünvanı, title'ı.
+
+176
+00:16:50,159 --> 00:16:55,159
+Mesela şu işçiyi arıyormuşuz 0847 instructor.
+
+177
+00:16:55,159 --> 00:17:05,160
+Bu ne demek oluyor? Buradaki yani şu anda görünen tabi bu temsili bir şekilde ama nihayetinde burada işte 15-20 tane 10 tane kayıptan bir tanesine eriştik.
+
+178
+00:17:05,160 --> 00:17:10,160
+Ve arama anahtarımız, search key'imiz şu number.
+
+179
+00:17:10,160 --> 00:17:21,160
+Bu search key'e göre tabloda istenilen satıra erişip o eriştiğim satırdaki diğer nitelikleri bana soruyor.
+
+180
+00:17:21,160 --> 00:17:25,160
+Yani şuna karşılık gelen bir eskular düşünebilirsiniz hemen değil mi?
+
+181
+00:17:25,160 --> 00:17:28,160
+Çok basit tek tablolu bir tane yüklü olan bir eskular.
+
+182
+00:17:28,160 --> 00:17:33,160
+İşte bu arada arka planda şu number üzerinde bir arama yapılıyor.
+
+183
+00:17:33,160 --> 00:17:39,160
+Title üzerinde bir arama yapılmıyor. O zaman number üzerinde bir veri yapısına ihtiyacım var.
+
+184
+00:17:39,160 --> 00:17:45,160
+Bu veri yapısı tabi iki türlü olabilir.
+
+185
+00:17:45,160 --> 00:17:55,160
+Yani burada genel olarak ben çoğunlukla btree dedim ama genel olarak bir arama yapısı, bir veri yapısı iki türlü olabiliyor.
+
+186
+00:17:55,160 --> 00:18:01,160
+Bir tanesi ağaç organizasyonları yani işte btree ismi altında.
+
+187
+00:18:01,160 --> 00:18:13,160
+Diğeri ise hash organizasyonları yani adrese dayalı olarak aramanın yapılması ve yerleştirmenin de kayıtları yerleştirmenin de adrese dayalı yapılması.
+
+188
+00:18:13,160 --> 00:18:22,160
+Burada gene iki esas aklımıza gelmesi lazım. Bir verinin yerleştirilmesiyle ilgili bir düzenleme, bir de erişimiyle ilgili düzenleme.
+
+189
+00:18:22,160 --> 00:18:30,160
+Bunların hepsi yani burada bahsedeceklerimizin hepsi esasında iki noktaya da bakıyor.
+
+190
+00:18:30,160 --> 00:18:39,160
+Yani gerek btree olsun gerek hash organizasyonları olsun hem verinin yerleştirilmesiyle ilgili hem de verinin erişimiyle ilgili olan veri yapıları.
+
+191
+00:18:39,160 --> 00:18:45,160
+Şimdi burada verimiz bakıyoruz number'a göre herhangi bir düzenlemesi yok.
+
+192
+00:18:45,160 --> 00:18:53,160
+Yani bir sıralılık söz konusu değil. O zaman ya bu bir hash dosyası ya da HIP dosyası.
+
+193
+00:18:53,160 --> 00:19:02,160
+Burada üçüncü bir isim daha çıktı yani ağaç organizasyonu dedik bakın bir de ne dedim hash organizasyonu dedik bir de HIP'ten bahsettim HIP.
+
+194
+00:19:02,160 --> 00:19:08,160
+HIP ise buradaki kayıtlar herhangi bir organizasyon olmadan rastgele buraya yazılmışlar.
+
+195
+00:19:08,160 --> 00:19:20,160
+Yani append-only olabilir veya eklemeler yapılırken arkada boşluklar olabilir yani bazı silmeler olabilir o boşluklar sonradan doldurulabilir mesela.
+
+196
+00:19:20,160 --> 00:19:25,160
+İşte böyle serbest bir dosyası HIP yapısı HIP organizasyonu diyoruz.
+
+197
+00:19:25,160 --> 00:19:31,160
+O zaman demek ki veya son olarak da bir tane daha aklıma geldi o da sıralı olması.
+
+198
+00:19:31,160 --> 00:19:35,160
+Belki ilk söylemesi gerekenlerden bir tanesiydi.
+
+199
+00:19:35,160 --> 00:19:41,160
+O zaman bu dosyamız bizim yerleşimi noktasında dört farklı şekilde olabilir.
+
+200
+00:19:41,160 --> 00:19:49,160
+Ya serbest HIP dosyası yani rastgele sona ekliyorum veya boş alanlar takip ediyorsa bu boş alanlar ekliyoruz.
+
+201
+00:19:49,160 --> 00:19:52,160
+İkinci olarak burada verimiz böyle sıralı olması.
+
+202
+00:19:52,160 --> 00:19:54,160
+Yani küçük diyen bir yere göre sıraladık.
+
+203
+00:19:54,160 --> 00:19:58,160
+Üçüncü olarak neye göre sıraladık ama number'a göre sıraladık mesela öyle düşünüyorum.
+
+204
+00:19:58,160 --> 00:20:01,160
+Çünkü burada başka netilikler de var biz number'a göre sıraladık.
+
+205
+00:20:01,160 --> 00:20:04,160
+Üçüncü olarak hash dosyası olabilir.
+
+206
+00:20:04,160 --> 00:20:12,160
+Yani bu kayıtların bu yerlerinin belirlenmesi buraya yerleşimi bir hash fonksiyonuna göre olmuş olabilir.
+
+207
+00:20:12,160 --> 00:20:19,160
+Veya son olarak bu esasında arkada bu dosyanın tutulması bir B-tree yapısı ile oluyor.
+
+208
+00:20:19,160 --> 00:20:24,160
+B-tree yapısına uygun şekilde bunlar tutuluyor olabilir.
+
+209
+00:20:24,160 --> 00:20:32,160
+O zaman burada biz aramayı number'a göre yaptığımıza göre number üzerine göre bir yapı arıyoruz.
+
+210
+00:20:32,160 --> 00:20:41,160
+Yani number üzerinde bir B-tree, number üzerinde bir hash yapısı veya number'a göre bir sıralama olması
+
+211
+00:20:41,160 --> 00:20:47,160
+benim bu sorgu için sorgunun çalışmasını hızlandıran bir veri yapısı olacaktır.
+
+212
+00:20:47,160 --> 00:20:52,160
+Şimdi burada hızlanmayla kastettiğim de esasında böyle hani biraz daha hızlansın.
+
+213
+00:20:52,160 --> 00:20:54,160
+İşte bir kaç kat daha hızlı olsun.
+
+214
+00:20:54,160 --> 00:20:56,160
+2-3 kat daha değil.
+
+215
+00:20:56,160 --> 00:21:09,160
+Biraz önceki dediğim rakamlardan yola çıkarak yani diskte bir veriye erişim herhangi bir yani diskteki bir noktaya erişim tipik olarak ne kadar desek.
+
+216
+00:21:09,160 --> 00:21:12,160
+Bu millisecondlar mertebesinde.
+
+217
+00:21:12,160 --> 00:21:15,160
+Ana hızı da ise nanosecondlar mertebesinde.
+
+218
+00:21:15,160 --> 00:21:27,160
+İşte biz burada bir index kullanarak buradaki bu veriye erişimi birkaç kat, 2-3 kat, 4-5 kat, 10 kat, 100 kat değil.
+
+219
+00:21:27,160 --> 00:21:32,160
+Yani 100 binlerce kat daha hızlı bir şekilde hızlı erişimi imkan sağlıyoruz.
+
+220
+00:21:32,160 --> 00:21:33,160
+Bu ne demek oluyor?
+
+221
+00:21:33,160 --> 00:21:35,160
+Yani bu şaka gibi belki.
+
+222
+00:21:35,160 --> 00:21:38,160
+Ama şaka değil gerçek.
+
+223
+00:21:39,160 --> 00:21:48,160
+Yani eğer index olmazsa bizim buradaki bu veri dosyası üzerinde işlem yapmamız yani gerçek zamanlı bir şekilde işlem yapmamız mümkün değil.
+
+224
+00:21:48,160 --> 00:21:51,160
+Çünkü burada bakın şöyle bir arama yapıyoruz.
+
+225
+00:21:51,160 --> 00:21:59,160
+Bu aramada eğer şunun üzerinde bir organizasyon yok ise yani bit.ly, hash, sorted falan değilse ben bu kaydı nasıl bulacağım?
+
+226
+00:21:59,160 --> 00:22:04,160
+Yani hiç bu konuya bilmiyoruz veya veritemana da bilmiyoruz.
+
+227
+00:22:04,160 --> 00:22:07,160
+Yani hiçbir şey bilmiyoruz.
+
+228
+00:22:07,160 --> 00:22:10,160
+Baksak şu dosyaya ben bu kaydı arıyorum.
+
+229
+00:22:10,160 --> 00:22:11,160
+Nasıl arayacağım?
+
+230
+00:22:11,160 --> 00:22:12,160
+Nasıl bulacağım yani?
+
+231
+00:22:12,160 --> 00:22:16,460
+Hiçbir şey bilmiyoruz dedim.
+
+232
+00:22:16,460 --> 00:22:17,460
+Çok kolay bir soru yani.
+
+233
+00:22:17,460 --> 00:22:26,839
+Buna bir yorum yapacak olan var mı?
+
+234
+00:22:26,839 --> 00:22:31,730
+Şu kaydı 847 numaralı kaydı.
+
+235
+00:22:31,730 --> 00:22:35,549
+Doruk tık tıklar.
+
+236
+00:22:35,549 --> 00:22:38,960
+Mikrofonu açık galiba.
+
+237
+00:22:42,960 --> 00:22:43,960
+Kimse dinlemiyor mu beni?
+
+238
+00:22:43,960 --> 00:22:45,960
+Herkes uyuyor mu?
+
+239
+00:22:45,960 --> 00:22:50,299
+Yani sıralı aramaktan başka bir çaremiz yok.
+
+240
+00:22:50,299 --> 00:22:52,299
+Sırayla bakacağız 847'ye.
+
+241
+00:22:52,299 --> 00:22:55,299
+Bu mu, bu mu, bu mu diye bütün dosyayı aracağız.
+
+242
+00:22:55,299 --> 00:23:10,829
+Evet bu da yani o dosyadaki bütün disteki bu dosyaların hepsini taramam demek oluyor.
+
+243
+00:23:10,829 --> 00:23:15,829
+Bu çok yüksek bir rakam yani şey olarak erişim noktasında çok büyük bir gecikme.
+
+244
+00:23:15,829 --> 00:23:24,829
+Oysa number'a göre eğer dosyamız number'a göre sıralı olmuş olsa ben burada en azından bir binary search yapabilirim.
+
+245
+00:23:24,829 --> 00:23:26,829
+Yani ikili arama yapabilirim.
+
+246
+00:23:26,829 --> 00:23:30,829
+Aklına gelmesi gereken sıralı bir listede bir arama nasıl yapılıyor?
+
+247
+00:23:30,829 --> 00:23:32,829
+Yani ana hafızada da bu böyleydi.
+
+248
+00:23:32,829 --> 00:23:35,829
+Binary search bakar görmüşsünüzdür beni yapılarında.
+
+249
+00:23:35,829 --> 00:23:39,829
+Şimdi burada da dosyamız disk'te fark etmez.
+
+250
+00:23:39,829 --> 00:23:42,829
+Burada ben dosyanın ortasına bakacağım.
+
+251
+00:23:42,829 --> 00:23:45,829
+Eğer ortasındaki kayıt ortasına bakmak kolay değil mi?
+
+252
+00:23:45,829 --> 00:23:47,829
+Dosyanın ortasına gideceğim.
+
+253
+00:23:47,829 --> 00:23:52,829
+Yani işte binary dosyası işte 10 megabytes'a 5. megabyte'a git.
+
+254
+00:23:52,829 --> 00:23:59,829
+Yok eğer kayıt sayısını biliyorsam sabit uzunluklu kayıtlarsa 10 bin tane kayıt varsa 5 bininci kayda git.
+
+255
+00:23:59,829 --> 00:24:00,829
+İşte ortasına gittim.
+
+256
+00:24:00,829 --> 00:24:06,829
+Yani ister binary dosyası olsun, ister ASCII text dosyası olsun herhalde ortasına gittim.
+
+257
+00:24:06,829 --> 00:24:12,829
+Bakıyorum ortasındaki rakam 800 bin mesela.
+
+258
+00:24:12,829 --> 00:24:15,829
+O zaman daha küçük olan tarafa gideceğim.
+
+259
+00:24:15,829 --> 00:24:17,829
+Yani binary search'ı yapabiliyorum yani.
+
+260
+00:24:17,829 --> 00:24:25,829
+İşte binary search bir parça bize hizmet verdi burada logaritma 2 oranında.
+
+261
+00:24:25,829 --> 00:24:30,829
+Logaritma 2 buradaki kayıtların sayısı oranında bir iyileşme sağladı.
+
+262
+00:24:30,829 --> 00:24:34,829
+Fakat bu normal bir disk için tam yeterli değil.
+
+263
+00:24:34,829 --> 00:24:39,829
+Yani o logaritma 2'nin çok daha iyi olması mümkün.
+
+264
+00:24:39,829 --> 00:24:43,829
+İşte onu sağlayan da yine ağaç yapısı olarak btd olacaktır.
+
+265
+00:24:44,829 --> 00:24:46,829
+Btd yapısından bahsedeceğiz.
+
+266
+00:24:46,829 --> 00:24:50,829
+O da logaritma 2n yerine logaritma kn olacak.
+
+267
+00:24:50,829 --> 00:24:53,829
+Buradaki erişim maniyeti çok daha iyi olacak.
+
+268
+00:24:53,829 --> 00:24:55,829
+O kağıda yüksek bir rakam.
+
+269
+00:24:55,829 --> 00:24:57,829
+2'ye göre çok daha yüksek bir rakam.
+
+270
+00:24:57,829 --> 00:25:05,829
+Bu bizim ağacın yüksekliği nispetinde, ağacın yüksekliğine bağlı olarak adımda hedefe ulaşmaya imkan sağlayacak.
+
+271
+00:25:05,829 --> 00:25:07,829
+Diğer bir yapı hash dedik mesela.
+
+272
+00:25:07,829 --> 00:25:08,829
+Hash dedik mesela.
+
+273
+00:25:08,829 --> 00:25:18,829
+Hash değilse bir funksiyon, hash fonksiyonu şu number'ı alıp o number'ı bir fiziksel bir konuma eşleştiriyor.
+
+274
+00:25:18,829 --> 00:25:26,829
+Böyle olunca hash fonksiyonuyla şuradaki 847'nin nerede olduğunu bulabilirim.
+
+275
+00:25:26,829 --> 00:25:38,829
+O 847 hash fonksiyonuna tabi tutunca bana diyecek ki dosyanız şu blokta veya şu offset'te, şu byte'da, dosyanın bu byte'ında bu kayıt var diyecek bana.
+
+276
+00:25:38,829 --> 00:25:42,829
+Yani tek adımda burada direkt olarak hedefe ulaşıyoruz.
+
+277
+00:25:42,829 --> 00:25:49,829
+Ancak tabi ben ne kadar btd en yaygın desem de hash burada mesela daha avantajlı gibi gözüküyor.
+
+278
+00:25:49,829 --> 00:25:50,829
+Yani bir anda gidiyoruz.
+
+279
+00:25:50,829 --> 00:25:54,829
+Ama btd'de birazdan göreceğiz.
+
+280
+00:25:54,829 --> 00:25:55,829
+Burayı aşabilirsek.
+
+281
+00:25:55,829 --> 00:25:59,829
+Btd'de bu ağaç yapısında daha aşamalı bir şekilde gidiliyor.
+
+282
+00:25:59,829 --> 00:26:03,829
+Ama btd'de aralık sorgularına da imkan sağlanıyor.
+
+283
+00:26:03,829 --> 00:26:07,829
+Hashing'de ise aralık sorgularına imkan sağlanmıyor.
+
+284
+00:26:07,829 --> 00:26:14,829
+Gerçek ayda bakıldığı zaman da hem nokta sorguları var hem de aralık sorguları var.
+
+285
+00:26:14,829 --> 00:26:16,829
+Yani birçok kayda erişmeyi gerektiren.
+
+286
+00:26:16,829 --> 00:26:19,829
+Hemen akabinde bununla ilgili bir örnek var bakın.
+
+287
+00:26:19,829 --> 00:26:24,829
+Search the key records that are qualifying a condition on secondary key.
+
+288
+00:26:24,829 --> 00:26:27,829
+Bu daha yaygın bir arama.
+
+289
+00:26:27,829 --> 00:26:29,829
+Şundan bahsediyorum şuradaki şeyden.
+
+290
+00:26:29,829 --> 00:26:37,829
+Burada aramamız dikkat ederseniz artık böyle unique olan bir nitelik üzerinde olmamış.
+
+291
+00:26:37,829 --> 00:26:43,829
+Burada aramamız analistlerin isimlerini soruyor.
+
+292
+00:26:44,829 --> 00:26:49,829
+Yani title'ı analist olanların isimlerini soruyor.
+
+293
+00:26:49,829 --> 00:26:53,829
+Şimdi bakıyoruz burada title çok sayıda analist içeriyor.
+
+294
+00:26:53,829 --> 00:26:58,829
+Bir sürü analiz vazifesini yapan var analist olan var.
+
+295
+00:26:58,829 --> 00:27:04,829
+Böyle olunca bütün bunların dosyada bulunması birçok noktaya erişim gerektiriyor.
+
+296
+00:27:04,829 --> 00:27:06,829
+Bu gene esasında nokta sorgusu.
+
+297
+00:27:06,829 --> 00:27:08,829
+Yani gene hash ile bunu yapabiliriz.
+
+298
+00:27:08,829 --> 00:27:14,829
+Bir hash fonksiyonu bize analiste hash fonksiyonuna tabi tuttuğumuz zaman.
+
+299
+00:27:14,829 --> 00:27:23,829
+Bu analistin analist şeyini içeren title'ını içeren kayıtların offset adresini bana hızlı bir şekilde verecek.
+
+300
+00:27:23,829 --> 00:27:26,829
+Yani bir fonksiyonun çalışmasıyla bunları bana verecek.
+
+301
+00:27:26,829 --> 00:27:28,829
+Çok hızlı bir şekilde.
+
+302
+00:27:28,829 --> 00:27:34,829
+Bununla beraber burada mesela maaşı.
+
+303
+00:27:34,829 --> 00:27:37,829
+Yani başka bir sorgu söylüyorum mesela başka bir arama.
+
+304
+00:27:37,829 --> 00:27:48,829
+Burada maaşı 30.000 ile 40.000 arasında olanların bulunması noktasında hash fonksiyonu çok fayda sağlamayacaklar.
+
+305
+00:27:48,829 --> 00:27:50,829
+Çünkü aralık sorgusu.
+
+306
+00:27:50,829 --> 00:27:55,829
+Çünkü hash fonksiyonuna bir değer veriyoruz bize o değeri içeren kayda bize götürüyor.
+
+307
+00:27:55,829 --> 00:27:57,829
+Oraya eşleştiriyor.
+
+308
+00:27:57,829 --> 00:28:02,829
+Yani nokta sorguları için buna point query veya nokta sorguları deniyor.
+
+309
+00:28:02,829 --> 00:28:04,829
+Bunlar için çok avantajlı.
+
+310
+00:28:04,829 --> 00:28:13,829
+Ama aralık sorguları için yani 30.000 ile mesela 40.000 arasındaki maaşı olanları bulmaya kalktığımız zaman.
+
+311
+00:28:13,829 --> 00:28:18,829
+Yani teker teker her bir maaş değeri için bu hash fonksiyonu kullanmam lazım.
+
+312
+00:28:18,829 --> 00:28:27,829
+Yani 30.000 lira maaş alan, 31.000 lira maaş alan, 32.000 lira maaş alan gibi hani komik bir arama tarzı ortaya çıkıyor.
+
+313
+00:28:27,829 --> 00:28:33,829
+Oysa bu aralık sorgusu için elimizdeki en güzel malzeme beetry.
+
+314
+00:28:33,829 --> 00:28:37,829
+Yani ağaç yapısıyla burada aramanın yapılması.
+
+315
+00:28:37,829 --> 00:28:41,829
+Şimdi bu beetry esasında aralık sorgularda yegane.
+
+316
+00:28:41,829 --> 00:28:43,829
+Elimizde başka bir malzeme yok.
+
+317
+00:28:43,829 --> 00:28:45,829
+Yegane veri yapısı.
+
+318
+00:28:45,829 --> 00:28:50,829
+Bununla beraber nokta sorgularında da hash kadar olmasa da yine çok iyi.
+
+319
+00:28:50,829 --> 00:28:54,829
+Çünkü hash'de bir anda direkt hedefe gidiyoruz.
+
+320
+00:28:54,829 --> 00:28:59,829
+Beetry'de de ağacın yüksekliği kadar yani birkaç adım da gidiyoruz.
+
+321
+00:28:59,829 --> 00:29:04,829
+Bu da hani çok çok böyle hash'e göre çok kötü bir maliyet ortaya çıkarmıyor.
+
+322
+00:29:04,829 --> 00:29:09,829
+Evet, bilmiyorum kafanızda bir şeyler canlandı mı?
+
+323
+00:29:09,829 --> 00:29:18,829
+Özetleyecek olursak o zaman böyle bir veritabanın tablosu üzerinde bir takım farklı sorgular olabilir.
+
+324
+00:29:18,829 --> 00:29:21,829
+Bu örneğimizde bir nokta sorgusu görüyoruz.
+
+325
+00:29:21,829 --> 00:29:26,829
+Burada da gene nokta sorgusular yani ben sonradan söylediğim üçüncü söylediğim aralık sorgusuydu.
+
+326
+00:29:26,829 --> 00:29:32,829
+Burada tek bir değerin aranmasıyla ilgili bir nokta sorgusu, equality search var.
+
+327
+00:29:32,829 --> 00:29:34,829
+Yani eşitlik sorgusu.
+
+328
+00:29:34,829 --> 00:29:38,829
+Burada direkt olarak tek bir kayda erişiyoruz.
+
+329
+00:29:38,829 --> 00:29:41,829
+Burada da ikinci anahtarda bir arama var.
+
+330
+00:29:41,829 --> 00:29:44,829
+Burada da birçok kayda erişiyoruz.
+
+331
+00:29:44,829 --> 00:29:54,829
+Bu iki örnek için de hem hash hem beetry organizasyonları veya number'a göre sıralıysa binary search kullanılabilir.
+
+332
+00:29:54,829 --> 00:30:06,829
+Burada da gene benzer şekilde title'a göre bir sıralılık söz konusu ise title üzerine binary search yaparak logaritmik olarak bir iyileşme sağlamış oluyoruz.
+
+333
+00:30:06,829 --> 00:30:08,829
+Aksi taktirde bütün kayıtlara bakmam lazım.
+
+334
+00:30:08,829 --> 00:30:09,829
+Bunu gördük.
+
+335
+00:30:09,829 --> 00:30:21,829
+Ve son olarak aralık sorgusu olduğu zaman ise burada belli bir aralıktaki kayıtlara erişmek için yegane kullanabileceğim tek bir veri yapısı var.
+
+336
+00:30:21,829 --> 00:30:23,829
+O da beetry oluyor.
+
+337
+00:30:23,829 --> 00:30:32,829
+Veya sıralıysa tabi binary search de gene aynı markamda yani sonuçta binary search de beetry aynı markamda ağaç yapısı yani o manada söylüyorum.
+
+338
+00:30:32,829 --> 00:30:35,829
+Ama burada hash kullanamıyorum.
+
+339
+00:30:35,829 --> 00:30:37,829
+Evet, özet olarak bunları söyleyebiliriz.
+
+340
+00:30:37,829 --> 00:30:42,829
+Şimdi bu index dosyaları nasıl dosyalardır onlara bakalım.
+
+341
+00:30:42,829 --> 00:30:45,829
+Ve farklı böyle index yapıları var.
+
+342
+00:30:45,829 --> 00:30:47,829
+Primary index, secondary index gibi mesela.
+
+343
+00:30:47,829 --> 00:30:55,829
+Çok detaylandırmadan hemen ikinci derste de yani bir aradan sonra ikinci derste de beetry'den bahsedeceğim.
+
+344
+00:30:55,829 --> 00:31:07,829
+Şimdi burada index'in tanımı index is an array structure to access data file by using key references information named as data entry.
+
+345
+00:31:07,829 --> 00:31:23,829
+Şimdi burada temel olarak simple indexi bir kere anladığımız zaman bunun akabinde multilevel olması ve yine diğer multilevel index kapsamındaki diğer indexleri de buna giriyor zaten.
+
+346
+00:31:23,829 --> 00:31:24,829
+Yani bir itili gibi mesela.
+
+347
+00:31:24,829 --> 00:31:27,829
+Onları anlamamız daha kolay oluyor.
+
+348
+00:31:27,829 --> 00:31:44,829
+Index bize ana dosyayı yani veri dosyasını sıralamaya gerek kalmadan onun üzerine onu serbest bırakarak çünkü bu eklemelerini çıkarmaların ana dosyada yani o çoğunlukla heap dosyası yani serbest dosya dedik ya.
+
+349
+00:31:44,829 --> 00:31:48,829
+Eklemeler çıkarmalar append oluyor mesela veya aradaki aralara yerleştiriliyor.
+
+350
+00:31:48,829 --> 00:31:53,829
+Bu şekilde serbest bırakırsak o eklemeler daha rahat olacak.
+
+351
+00:31:53,829 --> 00:31:55,829
+Ama mesela sıralı dosya düşünün.
+
+352
+00:31:55,829 --> 00:32:00,829
+Bu dosyayı ben sıralı tutmaya kalksam o zaman eklemeler için çok daha masraflı olacak.
+
+353
+00:32:00,829 --> 00:32:09,829
+Yani araya kayıtların yerleştirilmesi için aşağısındaki kayıtları shift etmem gerekecek mesela çok masraflı olacak.
+
+354
+00:32:09,829 --> 00:32:19,829
+Ama ben böyle bir heap dosyasında hızlı bir şekilde ekleme çıkarmayı yaptıktan sonra bu dosya üzerine birçok index yapısı kurabilirim.
+
+355
+00:32:19,829 --> 00:32:30,829
+O indexlerde bu bizim veri tabanı dosyası olduğu için bu ilişkisel şemadaki o şemadaki o niteliklerin üzerinde olacaktır.
+
+356
+00:32:30,829 --> 00:32:39,829
+Yani mesela o tablomuz 10 tane nitelik içeriyorsa burada 10 farklı singular yani tekil indexler oluşturulabilir.
+
+357
+00:32:39,829 --> 00:32:46,829
+Yani işte isim numara gibi işte orada niteliklerimiz her bir nitelin üzerine bir index oluşturabiliriz.
+
+358
+00:32:46,829 --> 00:32:58,829
+Bu indexleri bizim auxiliary yani ek yardımcı dosyalar esasında tabi bunlar yer kaplıyor ve ana dosyada bazı veriyi tekrar ediyoruz.
+
+359
+00:32:58,829 --> 00:33:02,829
+Yani derse başlarken kontrolü veri tekrarı diye bir tanım yapmıştık.
+
+360
+00:33:02,829 --> 00:33:05,829
+Yabancı anahtarlar bunlardan bir tanesiydi.
+
+361
+00:33:05,829 --> 00:33:13,829
+İşte burada da fiziksel tarafta belki kullanıcının haberi olmuyor çünkü normal kullanıcı arka tarafı çok bilmediği için.
+
+362
+00:33:13,829 --> 00:33:23,829
+Ama arka tarafta da demek ki bu dosyamızın hızlı erişimine imkan sağlayacak ufak ufak dosyalar var ki onlar da bizim index dosyalarımız.
+
+363
+00:33:23,829 --> 00:33:28,829
+Bu index dosyaları da en basitinden böyle simple index olabilir.
+
+364
+00:33:28,829 --> 00:33:33,829
+Tabi ana hafızaya sığıyorsa o index dosyası veya multilevel index olacak.
+
+365
+00:33:33,829 --> 00:33:37,829
+İşte multilevel indexlerde ağaç yapıları veya hash organizasyonları oluyor.
+
+366
+00:33:37,829 --> 00:33:41,829
+Böylece şu satırı da bir parça açmış olduk.
+
+367
+00:33:41,829 --> 00:33:46,829
+Yani index provides ordering on a file without arranging the file.
+
+368
+00:33:46,829 --> 00:33:53,829
+Yani ben dosyada herhangi bir sıralama yapmadan dosyaya düzenli olarak erişmeye imkan sağlamış oluyorum.
+
+369
+00:33:53,829 --> 00:33:58,829
+Çünkü artık o index dosyalarım benim belimi düzenlemeye göre oluyor.
+
+370
+00:33:58,829 --> 00:34:06,829
+Burada da düzenleme den customs bu bir b-tree ise ağaç yapısı ise buradaki düzenlememiz sıralama esaslı.
+
+371
+00:34:06,829 --> 00:34:10,829
+Çünkü b-tree binary search tree dedik o makamda.
+
+372
+00:34:10,829 --> 00:34:16,829
+Binary search tree değil yani ikili arama yapmıyoruz ancak yine sıralama esaslı b-tree.
+
+373
+00:34:16,829 --> 00:34:20,829
+Diğer taraftan hash ise tam tersi sıralama esaslı.
+
+374
+00:34:20,829 --> 00:34:25,829
+Yani bir hash fonksiyonu bunları böyle rastgele bir şekilde dağıtıyor.
+
+375
+00:34:25,829 --> 00:34:30,829
+Tabi erişirken de aynı hash fonksiyonu kullanarak hedefe ulaşıyoruz.
+
+376
+00:34:31,829 --> 00:34:33,829
+Bu şekilde bir düzenledik.
+
+377
+00:34:33,829 --> 00:34:45,829
+İşte bu düzenleme yani HIP dosyası ana dosya haricinde bu tip ufak dosyalardaki düzenlemelerle ana dosyaya hızlı bir şekilde erişim imkanı sağlamış oluyoruz.
+
+378
+00:34:45,829 --> 00:34:51,829
+Ve böylece yine şu maddede index provides multiple access paths to a file.
+
+379
+00:34:51,829 --> 00:34:52,829
+Yani bir dosyamız var.
+
+380
+00:34:52,829 --> 00:34:54,829
+Onun üzerine 10 tane index dosyası var.
+
+381
+00:34:54,829 --> 00:34:57,829
+10 farklı kanaldan bu dosyaya erişebilirim.
+
+382
+00:34:57,829 --> 00:35:01,829
+Ama bu kanalları kullanmam neye göre olacak?
+
+383
+00:35:01,829 --> 00:35:02,829
+Sorguya göre olacak.
+
+384
+00:35:02,829 --> 00:35:09,829
+Yani sorguda mesela isme göre bir arama yapıldıysa o isim üzerine bir index varsa onu kullanacağım.
+
+385
+00:35:09,829 --> 00:35:11,829
+Yoksa normal tarama yapacağım.
+
+386
+00:35:11,829 --> 00:35:12,829
+Bütün dosyayı tarayacağım.
+
+387
+00:35:12,829 --> 00:35:16,829
+Eğer işte numaraya göre bir arama varsa numara üzerine bir index kullanacağım.
+
+388
+00:35:16,829 --> 00:35:21,829
+Yani şuradaki bahsettiğimiz şey gibi şurada mesela hangi index kullanacağım?
+
+389
+00:35:21,829 --> 00:35:25,829
+Number üzerine bir index var ise onu kullanacağım.
+
+390
+00:35:25,829 --> 00:35:30,829
+Arkadaki index işte neyse hash index veya V3 index.
+
+391
+00:35:30,829 --> 00:35:31,829
+İkisi de olabilir.
+
+392
+00:35:31,829 --> 00:35:32,829
+Burada ne kullanacağım?
+
+393
+00:35:32,829 --> 00:35:36,829
+Burada da gene işte analiste arıyor.
+
+394
+00:35:36,829 --> 00:35:38,829
+Yani title'da bir arama yapıyor.
+
+395
+00:35:38,829 --> 00:35:41,829
+O zaman title üzerine bir index varsa onu kullanacağım.
+
+396
+00:35:41,829 --> 00:35:42,829
+Ana dosyaya gittim.
+
+397
+00:35:42,829 --> 00:35:45,829
+Ondan sonra şu names'i arıyorum.
+
+398
+00:35:45,829 --> 00:35:50,829
+Yani şu names benim gittiğim hedef kayıtlardaki diğer bir nitelik.
+
+399
+00:35:50,829 --> 00:35:53,829
+Yani bu arama anahtarı burada names değil.
+
+400
+00:35:53,829 --> 00:35:55,829
+Burada da title değil.
+
+401
+00:35:55,829 --> 00:35:57,829
+Buradaki arama anahtarı number.
+
+402
+00:35:57,829 --> 00:36:00,829
+Buradaki arama anahtarı search key, analist.
+
+403
+00:36:00,829 --> 00:36:06,829
+Ve o search key'ler üzerine veri yapıları disk tabanlı veri yapıları onları kullanmam gerekiyor.
+
+404
+00:36:06,829 --> 00:36:11,829
+Evet ana hatlarıyla o zaman böyle.
+
+405
+00:36:11,829 --> 00:36:14,829
+Şimdi bakalım bir parça daha index'in içeriğine.
+
+406
+00:36:14,829 --> 00:36:19,829
+Simple index dediğim zaman bu sıralama esaslı bir yapı.
+
+407
+00:36:19,829 --> 00:36:21,829
+Simple index de onu kastediyor.
+
+408
+00:36:22,829 --> 00:36:24,829
+Bu yukarıdaki gördüğümüz ana dosya.
+
+409
+00:36:24,829 --> 00:36:29,829
+Bu ana dosyamızda şu label mesela unique'miş.
+
+410
+00:36:29,829 --> 00:36:31,829
+Yani primary key belki.
+
+411
+00:36:31,829 --> 00:36:34,829
+Maybe primary key diyor.
+
+412
+00:36:34,829 --> 00:36:37,829
+Then label index is called primary index.
+
+413
+00:36:37,829 --> 00:36:43,829
+O zaman böyle bir primary key üzerine bir index oluşturuyorsak.
+
+414
+00:36:43,829 --> 00:36:44,829
+Burada index'in var.
+
+415
+00:36:44,829 --> 00:36:45,829
+Birazdan söyleyeceğim nasıl olduğunu.
+
+416
+00:36:45,829 --> 00:36:49,829
+Bu index'imize primary index diyoruz.
+
+417
+00:36:49,829 --> 00:36:52,829
+Şimdi bu index bakın içeriğine bakalım.
+
+418
+00:36:52,829 --> 00:36:59,829
+Bu index dosyası bu ana dosyaya ait olan label üzerine bu index'imiz bu gerçekten.
+
+419
+00:36:59,829 --> 00:37:01,829
+Peki burada ne var?
+
+420
+00:37:01,829 --> 00:37:04,829
+Labeledeki bütün veriler var bakın.
+
+421
+00:37:04,829 --> 00:37:06,829
+Buradaki label'daki bütün veriler var.
+
+422
+00:37:06,829 --> 00:37:08,829
+Fakat ne fark var?
+
+423
+00:37:08,829 --> 00:37:12,829
+Label'e göre sıralanmış.
+
+424
+00:37:12,829 --> 00:37:13,829
+Ne dedik?
+
+425
+00:37:13,829 --> 00:37:17,829
+Ana dosyayı değiştirmeden daha ufak bir dosyayla.
+
+426
+00:37:17,829 --> 00:37:22,829
+Ve bu dosyayı sıralayarak index'i oluşturdum.
+
+427
+00:37:22,829 --> 00:37:24,829
+Bu kadar basit.
+
+428
+00:37:24,829 --> 00:37:26,829
+Yani hiçbir zor bir tarafı yok.
+
+429
+00:37:26,829 --> 00:37:28,829
+O zaman label'a baktım.
+
+430
+00:37:28,829 --> 00:37:30,829
+Burada hangi kayıtlarım var?
+
+431
+00:37:30,829 --> 00:37:32,829
+Leone, VCA var, ANG.
+
+432
+00:37:32,829 --> 00:37:34,829
+İşte bunları aldım burada sıraladım.
+
+433
+00:37:34,829 --> 00:37:39,829
+Daha sonra bu offset'leri yani şurada index dosyasında bir de ne var demek ki?
+
+434
+00:37:39,829 --> 00:37:41,829
+İki tane nitelik var.
+
+435
+00:37:41,829 --> 00:37:47,829
+Bir tanesi benim üzerinde oluşturmayı düşündüğüm nitelik.
+
+436
+00:37:47,829 --> 00:37:49,829
+Üzerinde index oluşturmayı düşündüğüm nitelik.
+
+437
+00:37:49,829 --> 00:37:50,829
+O label'dı tamam.
+
+438
+00:37:50,829 --> 00:37:52,829
+Diğeri ise offset.
+
+439
+00:37:52,829 --> 00:37:53,829
+Bu offset ne?
+
+440
+00:37:53,829 --> 00:38:00,829
+Offset de şuradaki bu label'ı içeren ana dosyadaki kaydın offset'i.
+
+441
+00:38:00,829 --> 00:38:04,829
+Yani şuraya da ben offset adreslerini yazmışım.
+
+442
+00:38:04,829 --> 00:38:07,829
+Gerçi bunlar tabi dosyanın içerisinde yazılı değil tabi ki.
+
+443
+00:38:07,829 --> 00:38:08,829
+Yani bu nitelik değil.
+
+444
+00:38:08,829 --> 00:38:10,829
+Böylece bilgi olsun diye buraya yazılmış.
+
+445
+00:38:10,829 --> 00:38:12,829
+Çünkü bunlar değiştiği için.
+
+446
+00:38:12,829 --> 00:38:14,829
+Bunları dosyaya bu şekilde.
+
+447
+00:38:14,829 --> 00:38:16,829
+Bunların yeri arka planında değişebildiği için.
+
+448
+00:38:16,829 --> 00:38:18,829
+Bunları buraya yazmanın hiçbir manası yok.
+
+449
+00:38:18,829 --> 00:38:20,829
+Belki de oldukça yanlış.
+
+450
+00:38:20,829 --> 00:38:25,829
+Ama şuraya yazarken bunu teyit etmek adına bunlar yazılmış.
+
+451
+00:38:25,829 --> 00:38:28,829
+Rekord adresler.
+
+452
+00:38:28,829 --> 00:38:32,829
+O zaman bakın Leone 17. offset'te.
+
+453
+00:38:32,829 --> 00:38:34,829
+ANG'den başladık sıraladı ki.
+
+454
+00:38:34,829 --> 00:38:35,829
+Çünkü ANG.
+
+455
+00:38:35,829 --> 00:38:37,829
+Nerede ANG?
+
+456
+00:38:37,829 --> 00:38:40,829
+152. byte.
+
+457
+00:38:40,829 --> 00:38:42,829
+Yani offset dediğim offset byte'ı.
+
+458
+00:38:42,829 --> 00:38:45,829
+Dosyanın başından itibaren 152. byte'daymış.
+
+459
+00:38:45,829 --> 00:38:46,829
+Şurada.
+
+460
+00:38:46,829 --> 00:38:49,829
+Daha sonra COL 338. byte'daymış.
+
+461
+00:38:49,829 --> 00:38:51,829
+COL 388. byte'daymış.
+
+462
+00:38:51,829 --> 00:38:53,829
+Şimdi böyle olunca.
+
+463
+00:38:53,829 --> 00:38:54,829
+Burada ne oldu bakın.
+
+464
+00:38:54,829 --> 00:38:56,829
+Şöyle buradan da ana dosyaya.
+
+465
+00:38:56,829 --> 00:38:57,829
+Şurası.
+
+466
+00:38:57,829 --> 00:38:58,829
+Şunanın aynısı.
+
+467
+00:38:58,829 --> 00:39:00,829
+Buradan şöyle oklar çizmek zor olduğu için.
+
+468
+00:39:00,829 --> 00:39:01,829
+Şey yaptım.
+
+469
+00:39:01,829 --> 00:39:03,829
+Buraya tekrar etmişim.
+
+470
+00:39:03,829 --> 00:39:04,829
+O zaman burada bakın.
+
+471
+00:39:04,829 --> 00:39:07,829
+ANG 152 ile esasında şuna işaret ediyor.
+
+472
+00:39:07,829 --> 00:39:09,829
+196 ile CO ile buna işaret ediyor.
+
+473
+00:39:09,829 --> 00:39:10,829
+Bu buna işaret ediyor.
+
+474
+00:39:10,829 --> 00:39:13,829
+Böyle böyle burada bir sürü oklar olacak.
+
+475
+00:39:13,829 --> 00:39:19,829
+Her bir kayıtın yerini şu offset ile ifade etmiş oluyoruz.
+
+476
+00:39:19,829 --> 00:39:21,829
+Şimdi buna ne sağladı?
+
+477
+00:39:21,829 --> 00:39:22,829
+Ne kaybettik?
+
+478
+00:39:22,829 --> 00:39:25,829
+Bir kere ne kaybettiğimize bakalım.
+
+479
+00:39:25,829 --> 00:39:28,829
+Burada veri tekrarı ortaya çıktı.
+
+480
+00:39:28,829 --> 00:39:31,829
+Yani burada ana dosyada buradayken.
+
+481
+00:39:31,829 --> 00:39:32,829
+Bunun mini TL'yi aldım.
+
+482
+00:39:32,829 --> 00:39:33,829
+Burada tekrarladım.
+
+483
+00:39:33,829 --> 00:39:34,829
+Sıraladım.
+
+484
+00:39:35,829 --> 00:39:37,829
+Bir de yanına offset adres koydum.
+
+485
+00:39:37,829 --> 00:39:42,829
+Yani tabi bu bana ne kadar bir yer kaybı sebep oldu?
+
+486
+00:39:42,829 --> 00:39:43,829
+Yani veri tekrarı bir.
+
+487
+00:39:43,829 --> 00:39:45,829
+Birinci dezavantaj.
+
+488
+00:39:45,829 --> 00:39:46,829
+İkincisi dezavantaj.
+
+489
+00:39:46,829 --> 00:39:51,829
+Bana ne kadar yer kaybı oldu?
+
+490
+00:39:51,829 --> 00:40:00,829
+Buradaki tablonun niteliklerinin sayısı oranında bir yer kaplıyor.
+
+491
+00:40:00,829 --> 00:40:02,829
+Yani şunu demek istedim.
+
+492
+00:40:02,829 --> 00:40:06,829
+Burada mesela 10 tane nitelik varsa bu dosyanın büyüklüğü.
+
+493
+00:40:06,829 --> 00:40:08,829
+Index dosyasının büyüklüğü.
+
+494
+00:40:08,829 --> 00:40:10,829
+Ana dosyanın 10'da 1'i kadar olacak yaklaşık olarak.
+
+495
+00:40:10,829 --> 00:40:12,829
+Sadece mini TL'yi aldım.
+
+496
+00:40:12,829 --> 00:40:15,829
+Bir de şuraya işte 4 byte'lık intijerler koydum mesela.
+
+497
+00:40:15,829 --> 00:40:17,829
+Veya hadi double olsun.
+
+498
+00:40:17,829 --> 00:40:20,829
+Daha da 8 byte olsun mesela.
+
+499
+00:40:20,829 --> 00:40:24,829
+Nihayetinde yani şuraya göre biraz daha ufak burası.
+
+500
+00:40:24,829 --> 00:40:28,829
+O yüzden yaklaşık 10'da 1'lik bir yer kaplıyor.
+
+501
+00:40:28,829 --> 00:40:31,829
+Yer noktası hadi çok sorun değil.
+
+502
+00:40:31,829 --> 00:40:39,829
+Şimdi böyle bir analiz etsek hadi yer noktası çok sorun değil ama veri tekrarı daha büyük bir problem.
+
+503
+00:40:39,829 --> 00:40:52,829
+Yani sistemin gerçeklenmesi noktasında bir verinin birden çok yerde bulunması burada veri tekrarı burada veri bütünlüğü noktasında hemen bir tehdit oluşturmaya başlıyor.
+
+504
+00:40:52,829 --> 00:40:57,829
+Şimdi burada bir güncelleme yapılırız ama benim başka yerlere de gidip o güncellemeyi yapmam lazım.
+
+505
+00:40:57,829 --> 00:40:59,829
+E bu da bir anda olan bir şey değil.
+
+506
+00:40:59,829 --> 00:41:07,829
+Arada bu süre uzadıkça yani tabi bu süre dediğimde birkaç gün değil tabi ki mini signal mertebesinde falan oluyor.
+
+507
+00:41:07,829 --> 00:41:10,829
+Ama o aralıkta sistem tutarsız olmuş oluyor.
+
+508
+00:41:10,829 --> 00:41:16,829
+Yani buraya bakıyorsun işte şu ID'lik kişinin labelı CoL.
+
+509
+00:41:16,829 --> 00:41:21,829
+Oysa ben onu değiştirmişim burada CoL'yi işte CoK yapmıştım burada hala CoL.
+
+510
+00:41:21,829 --> 00:41:29,829
+Yani bu noktada işte bu veri tekrarı tutarsızlık noktasında sistemi zorlayan bir şey.
+
+511
+00:41:29,829 --> 00:41:35,829
+Yani ya bu an çok hızlı bir şekilde böyle tight bir şekilde yapılacak çok sıkı bir şekilde yapılacak.
+
+512
+00:41:35,829 --> 00:41:41,829
+O da güncellemeler için bir gecikme olacak veya bunu serbest bırakacağız biraz daha.
+
+513
+00:41:41,829 --> 00:41:45,829
+Bu sefer doğruluk noktasında tutarsızlıklara tahammül edeceğiz.
+
+514
+00:41:45,829 --> 00:41:47,829
+Yani böyle bir trade off olmuş oluyor.
+
+515
+00:41:47,829 --> 00:41:51,829
+Gelelim bu dezavantajlardan sonra iki tane dezavantaj söyledim.
+
+516
+00:41:51,829 --> 00:41:55,829
+En önemli avantajı yani niye bu kadar masrafa girdik.
+
+517
+00:41:55,829 --> 00:42:01,829
+Tabi masraf diyorum çünkü burada görünen dosyamız böyle tabi 10 tane kayıt değil.
+
+518
+00:42:01,829 --> 00:42:03,829
+Yani 10 milyon tane kayıt olan bir dosya.
+
+519
+00:42:03,829 --> 00:42:07,829
+Veli Taban'ın dosyası ya öyle düşünelim yani gerçekçi bir şekilde.
+
+520
+00:42:07,829 --> 00:42:09,829
+Bu sadece temsili şekiller burada.
+
+521
+00:42:09,829 --> 00:42:16,829
+Şimdi 10 milyon tane yani 100 megabaytlık bir dosya düşünün.
+
+522
+00:42:16,829 --> 00:42:20,829
+Ben aldım onun onda birini 10 megabaytlık bir dosya daha oluşturdum.
+
+523
+00:42:20,829 --> 00:42:29,829
+E bunun bu dosyanın organizasyonu, takibi yani işte ayrı bir yük getiriyor yani.
+
+524
+00:42:29,829 --> 00:42:31,829
+Peki niye buna girdim? Niye böyle bir şey yaptım?
+
+525
+00:42:31,829 --> 00:42:33,829
+Şimdi burada bunu sıralamak için.
+
+526
+00:42:33,829 --> 00:42:36,829
+Şimdi burada sadece artık bunu sıralıyorum.
+
+527
+00:42:36,829 --> 00:42:38,829
+E sıralayarak binary search yapabilirim.
+
+528
+00:42:38,829 --> 00:42:42,829
+Sıralayarak bunu btree yapabilirim mesela.
+
+529
+00:42:42,829 --> 00:42:45,829
+Bunlar bana ne kadar bir hız kazancı sağlayacak?
+
+530
+00:42:45,829 --> 00:42:47,829
+100 binlerce kat.
+
+531
+00:42:47,829 --> 00:42:50,829
+Milyona yakın katlarla bir hız imkanı sağlıyor.
+
+532
+00:42:50,829 --> 00:42:57,829
+Çünkü bunu sıralamaya kalksam bu sefer burada bunun sıralı tutulması çok çok daha masraflı.
+
+533
+00:42:57,829 --> 00:43:01,829
+Yani şurada label'a göre bunun sıralı tutulması çok çok daha masraflı.
+
+534
+00:43:01,829 --> 00:43:05,829
+Çünkü araya bir kayıt eklemeye çalıştığınız zaman bunların hepsini shift etmem lazım.
+
+535
+00:43:05,829 --> 00:43:06,829
+Kaydırmam lazım.
+
+536
+00:43:06,829 --> 00:43:14,829
+Burada da benzer masraflar var ancak bu ufak dosya olduğu için bunlar daha tahammül edilebilecek seviyede.
+
+537
+00:43:14,829 --> 00:43:19,829
+Bunlar daha kolay handle edilebiliyor ufak dosya olduğu için.
+
+538
+00:43:19,829 --> 00:43:23,829
+Ama bu büyük dosyada bunu sıralı tutmak çok mümkün değil.
+
+539
+00:43:23,829 --> 00:43:28,829
+Yani çok nadir bazı özel durumlarda sıralı tutulabiliyor.
+
+540
+00:43:29,829 --> 00:43:32,829
+Çoğu dosyamız çoğu zaman sırasız.
+
+541
+00:43:32,829 --> 00:43:35,829
+Ama hep sıralama üzerine işlem dönüyor.
+
+542
+00:43:35,829 --> 00:43:44,829
+Sıralamayı da burada hangi nitelik üzerine bir arama yapılıyorsa onun için sadece o kısmı sıralayıp offset adresleriyle ana dosyaya gidiyoruz.
+
+543
+00:43:44,829 --> 00:43:46,829
+İşte ana yapı böyle arkadaşlar.
+
+544
+00:43:46,829 --> 00:43:53,829
+Yani simple index dediğin veya indexin ana fikri, ana manası bu şekilde.
+
+545
+00:43:53,829 --> 00:44:01,829
+Burada artık mesela ben LON'i arıyorsam yani gerçi label'a göre arama çok yapılmıyor.
+
+546
+00:44:01,829 --> 00:44:06,829
+Biraz önceki şu dediğimiz gibi daha çok secondary işte title'a göre arama yapıyoruz.
+
+547
+00:44:06,829 --> 00:44:19,829
+İşte symphony 9 mesela hangi kimler kompozörü kim mesela symphony 9 isimli eserin kompozörü kim?
+
+548
+00:44:19,829 --> 00:44:23,829
+Böyle bir sorgu daha güncel yani daha yaygın.
+
+549
+00:44:23,829 --> 00:44:25,829
+Kalkıp da şu label'a göre arama yapılmıyor.
+
+550
+00:44:25,829 --> 00:44:29,829
+Ama ancak biz label'a göre burada arama olduğunu varsayız.
+
+551
+00:44:29,829 --> 00:44:32,829
+Yani primary indeximiz var ya şimdi onu gördük.
+
+552
+00:44:32,829 --> 00:44:33,829
+O zaman ne olacak?
+
+553
+00:44:33,829 --> 00:44:34,829
+Neyi arıyorum?
+
+554
+00:44:34,829 --> 00:44:35,829
+Mesela D&G'yi arıyorum.
+
+555
+00:44:35,829 --> 00:44:37,829
+D&G'yi ben bu sıradan istedim.
+
+556
+00:44:37,829 --> 00:44:39,829
+Artık binary search ile arayabilirim.
+
+557
+00:44:39,829 --> 00:44:43,829
+Yani logaritma 2n adımda hedefe ulaşabilirim.
+
+558
+00:44:43,829 --> 00:44:47,829
+D&G'ye ulaştım ve 241. offset'e gidiyorum.
+
+559
+00:44:47,829 --> 00:44:52,829
+Artık büyük dosyada 241. offset'e gideceğim sadece.
+
+560
+00:44:52,829 --> 00:44:54,829
+Yani artık nokta vuruşu yapıyorum.
+
+561
+00:44:54,829 --> 00:44:56,829
+Bu dosyada hiç başka yerde dolaşmıyorum.
+
+562
+00:44:56,829 --> 00:44:58,829
+241. offset'e gittim.
+
+563
+00:44:58,829 --> 00:45:00,829
+Buraya ulaştım işte D&G.
+
+564
+00:45:00,829 --> 00:45:01,829
+Neymiş?
+
+565
+00:45:01,829 --> 00:45:02,829
+İşte bu kayıtmış.
+
+566
+00:45:02,829 --> 00:45:04,829
+Burada bana neyi soracak?
+
+567
+00:45:04,829 --> 00:45:11,829
+Mesela D&G isimli label'ı olan kaydın kompozörü kim diyecek mesela?
+
+568
+00:45:11,829 --> 00:45:13,829
+İşte o da burada ulaşmış oldum yani.
+
+569
+00:45:14,829 --> 00:45:15,829
+Evet.
+
+570
+00:45:15,829 --> 00:45:25,829
+Şimdi tabii diğer taraftan aramamız biraz önce dediğimiz gibi primary key'e göre olmayabilir.
+
+571
+00:45:25,829 --> 00:45:27,829
+Yani şimdi de bu iki örneği vermiştik.
+
+572
+00:45:27,829 --> 00:45:30,829
+Primary key'e göre arama, the secondary key'e göre.
+
+573
+00:45:30,829 --> 00:45:40,829
+Şimdi burada da primary key olan label'a göre değil de aramamız eğer bu kompozör'a göre ise
+
+574
+00:45:40,829 --> 00:45:45,829
+kompozör üzerine kurgulanacak olan indeksimiz de bu şekilde olacaktır.
+
+575
+00:45:45,829 --> 00:45:50,829
+Bakıyoruz gene aynı esas üzerine kompozördeki niteliğe bakıyoruz.
+
+576
+00:45:50,829 --> 00:45:52,829
+Nitelik değerleri bunlar.
+
+577
+00:45:52,829 --> 00:45:56,829
+Bunları alıyoruz ve sıralıyoruz ve offset adreslerinin yanına yazıyoruz.
+
+578
+00:45:56,829 --> 00:45:58,829
+Yani burada yaptığımız şey o.
+
+579
+00:45:58,829 --> 00:46:02,829
+Şimdi o zaman bunu sorsak sınavda herhalde yapabilirsiniz.
+
+580
+00:46:02,829 --> 00:46:05,829
+Yani bu anlattıklarından yola çıkarak bir dosyaya bakıyoruz.
+
+581
+00:46:05,829 --> 00:46:08,829
+Bu dosya üzerine bir nitelik üzerine indeks oluşturmak istiyoruz.
+
+582
+00:46:08,829 --> 00:46:12,829
+Burada oluşturacağımız symbol index'i nasıl oluşturacağız?
+
+583
+00:46:12,829 --> 00:46:15,829
+Buradaki nitelikleri alacağız, sıralacağız.
+
+584
+00:46:15,829 --> 00:46:17,829
+Daha sonra offset adreslerinin yanına yazdık.
+
+585
+00:46:17,829 --> 00:46:19,829
+Aynı şekilde burada da öyle bakın.
+
+586
+00:46:19,829 --> 00:46:22,829
+Burada da siz çalışırken kontrol edersiniz.
+
+587
+00:46:22,829 --> 00:46:26,829
+O zaman burada beta open işte bu dört tane varmış bu sefer bakın.
+
+588
+00:46:26,829 --> 00:46:28,829
+Çünkü non-primary key bu sefer.
+
+589
+00:46:28,829 --> 00:46:30,829
+O zaman buna secondary index diyoruz.
+
+590
+00:46:30,829 --> 00:46:32,829
+Yani ikinci indexler.
+
+591
+00:46:32,829 --> 00:46:37,829
+Çünkü ikinci primary key olmayan nitelikler üzerine bir index kurduk burada.
+
+592
+00:46:38,829 --> 00:46:41,829
+Ama yine aynı esas üzerine sıraladık.
+
+593
+00:46:41,829 --> 00:46:45,829
+Çünkü sıralama çok kıymetli binary search imkanı sağlıyor.
+
+594
+00:46:45,829 --> 00:46:49,829
+Sıraladıktan sonra da yanına offset adreslerini yazdık.
+
+595
+00:46:49,829 --> 00:46:52,829
+İşte beta open o 62. offset de var.
+
+596
+00:46:52,829 --> 00:46:53,829
+152'de var.
+
+597
+00:46:53,829 --> 00:46:54,829
+241'de var.
+
+598
+00:46:54,829 --> 00:46:55,829
+382'de var.
+
+599
+00:46:55,829 --> 00:46:57,829
+Bakalım öyle mi?
+
+600
+00:46:57,829 --> 00:46:59,829
+152, 241.
+
+601
+00:46:59,829 --> 00:47:01,829
+Beta open 62'de gerçekten.
+
+602
+00:47:01,829 --> 00:47:02,829
+152'de.
+
+603
+00:47:02,829 --> 00:47:04,829
+241'de.
+
+604
+00:47:04,829 --> 00:47:06,829
+İşte 382'de mesela.
+
+605
+00:47:06,829 --> 00:47:08,829
+Diğerleri de en güzel şekilde.
+
+606
+00:47:22,500 --> 00:47:25,500
+Şimdi burada diğer bir örnek.
+
+607
+00:47:25,500 --> 00:47:27,500
+Secondary örneği mesela.
+
+608
+00:47:27,500 --> 00:47:29,500
+Bu sefer title'a göre oldu.
+
+609
+00:47:29,500 --> 00:47:31,500
+Title'a sıraladık.
+
+610
+00:47:31,500 --> 00:47:34,500
+Ve referans offsetlerini buraya yazdık offset adreslerini.
+
+611
+00:47:34,500 --> 00:47:39,500
+Şimdi böyle olunca burada mesela farklı sorgu örneklerimiz var.
+
+612
+00:47:39,500 --> 00:47:44,500
+Mesela gene desek beta open'ın kaç tane.
+
+613
+00:47:44,500 --> 00:47:46,500
+Hani yapıyorduk ya count sorguları.
+
+614
+00:47:46,500 --> 00:47:50,500
+Beta open'ın kaç tane eseri var desek mesela.
+
+615
+00:47:50,500 --> 00:47:55,500
+Bu indeks üzerinden şu satırlarda dolaşarak 4 tane olduğunu hemen görebiliriz.
+
+616
+00:47:55,500 --> 00:47:57,500
+Bu da ufak bir dosya olduğu için.
+
+617
+00:47:57,500 --> 00:47:59,500
+Ana dosyaya gitmeye gerek kalmadan.
+
+618
+00:47:59,500 --> 00:48:01,500
+Bu dosyada bir arama yapmadan.
+
+619
+00:48:01,500 --> 00:48:03,500
+Beta open'ı aramadan.
+
+620
+00:48:03,500 --> 00:48:05,500
+Bunun üzerine dolaşmadan.
+
+621
+00:48:05,500 --> 00:48:06,500
+Çünkü bu çok masraflı bir şey.
+
+622
+00:48:06,500 --> 00:48:07,500
+Kocaman bir dosya bu.
+
+623
+00:48:07,500 --> 00:48:09,500
+Bu dosyada ufak bir dosya.
+
+624
+00:48:09,500 --> 00:48:15,099
+Bu dosyada da bu dosyada ufak bir dosya.
+
+625
+00:48:15,099 --> 00:48:19,099
+Burada beta open'ın 4 tane eseri olduğunu hemen görebiliyorum.
+
+626
+00:48:19,099 --> 00:48:20,099
+Bakın.
+
+627
+00:48:20,099 --> 00:48:26,099
+Şimdi diğer taraftan şöyle bir sorgu olsa.
+
+628
+00:48:26,099 --> 00:48:31,099
+Yani sadece title'a göre bir sorgu düşündüğünü gene kurgulayalım.
+
+629
+00:48:31,099 --> 00:48:38,099
+İşte şu symphony 9'u hangi kimler şey yaptı?
+
+630
+00:48:38,099 --> 00:48:42,099
+Bunu symphony 9'un kompozörü kimler?
+
+631
+00:48:42,099 --> 00:48:49,099
+Mesela dediğimiz zaman burada symphony 9'u burada gene sıralı olduğu için binary olarak arama yapıp.
+
+632
+00:48:49,099 --> 00:48:59,099
+Bunu bulduktan sonra 152, 241, 338'e gidip symphony 9'un sahiplerini kompozörlerini bulabileceğiz.
+
+633
+00:48:59,099 --> 00:49:02,099
+Yani bir beta open'ın 2 tanesi onun.
+
+634
+00:49:02,099 --> 00:49:04,099
+Bir tanesi de Dvorak'ınmış mesela.
+
+635
+00:49:04,099 --> 00:49:06,099
+Bunları bulacağız.
+
+636
+00:49:06,099 --> 00:49:11,099
+Burada da gene bakın bu noktalara direkt hedefe ulaştım yani bu büyük dosyada.
+
+637
+00:49:11,099 --> 00:49:14,099
+Diğer taraftan başka bir sorgu daha düşünelim.
+
+638
+00:49:14,099 --> 00:49:19,099
+Desek ki mesela find all recordings of beta open symphony 9.
+
+639
+00:49:19,099 --> 00:49:26,099
+Hani burada arama anahtarımız kompozör ve title.
+
+640
+00:49:26,099 --> 00:49:30,099
+Hem kompozör hem title.
+
+641
+00:49:30,099 --> 00:49:32,099
+O zaman bu ne demek oluyor?
+
+642
+00:49:33,099 --> 00:49:38,099
+Hem kompozör indeksini kullanacağım hem de title indeksini kullanacağım.
+
+643
+00:49:38,099 --> 00:49:46,099
+Bunlardan gelen offset adreslerinin kesişimini alıp o adreslere gitmem gerekiyor.
+
+644
+00:49:46,099 --> 00:49:57,099
+Aksi taktirde bunu böyle yapmazsam yine yani elimde ne kompozör indeks var ne title indeks var ise o zaman bu ana dosyada arama yapmam lazım.
+
+645
+00:49:57,099 --> 00:50:00,099
+Yani hep bundan kaçmaya çalışıyorum dikkat ederseniz.
+
+646
+00:50:00,099 --> 00:50:07,099
+Diğer taraftan elimde bu indekslerden bir tanesi olsa bile bana bir fayda sağlayacak.
+
+647
+00:50:07,099 --> 00:50:10,099
+İkisi de varsa ikisini de kullanabilirim.
+
+648
+00:50:10,099 --> 00:50:12,099
+Yani nasıl kullanacağım?
+
+649
+00:50:12,099 --> 00:50:14,099
+İkisinden bütün durumları analiz ederim mesela.
+
+650
+00:50:14,099 --> 00:50:19,099
+İkisi de varsa bu ikisinden gelen offset adreslerinin kesişimiyle ana dosyaya gittim.
+
+651
+00:50:19,099 --> 00:50:23,099
+Bunlar gerçekten gittiğim kayıtlar beta open'ın 9. sempozisi.
+
+652
+00:50:23,099 --> 00:50:25,099
+Sadece kompozör var.
+
+653
+00:50:25,099 --> 00:50:29,099
+Sadece şu beta open inkilere eriştim.
+
+654
+00:50:29,099 --> 00:50:36,099
+Bu adreslere gittikten sonra bu beta open'ın 9. sempozisinin kayıtlarına erişeceğim.
+
+655
+00:50:36,099 --> 00:50:41,099
+Bakalım şu şeylerde yani orada bir filtreden geçecek.
+
+656
+00:50:41,099 --> 00:50:44,099
+Beta open'ın 4 tane kaydına gideceğim.
+
+657
+00:50:44,099 --> 00:50:48,099
+Ondan sonra şu kaide eliminate edeceğim.
+
+658
+00:50:48,099 --> 00:50:51,099
+Onu sempozinin 9'u seçeceğim.
+
+659
+00:50:51,099 --> 00:50:56,099
+Beta open'ın burada 1, 2, 3, 4 noktaya gideceğim.
+
+660
+00:50:56,099 --> 00:51:01,099
+Burada mesela title'ı quarter tindisi imiş mesela.
+
+661
+00:51:01,099 --> 00:51:03,099
+Bunu istemiyorum bunu attım.
+
+662
+00:51:03,099 --> 00:51:05,099
+Beta open'ın şunları istiyorum.
+
+663
+00:51:05,099 --> 00:51:06,099
+Sempozisyon 9, Sempozisyon 9.
+
+664
+00:51:06,099 --> 00:51:08,099
+Bunları istiyorum mesela bakın.
+
+665
+00:51:08,099 --> 00:51:12,099
+O zaman 4 tane gittiğin noktadan 1 tanesi elenli 3 tanesi kaldı.
+
+666
+00:51:12,099 --> 00:51:15,099
+Yani sadece kompozör index'i kullanıyorsam.
+
+667
+00:51:15,099 --> 00:51:20,099
+Sadece title index'i kullanıyorsam bu sefer Sempozisyon 9'lar 3 tane imiş.
+
+668
+00:51:20,099 --> 00:51:22,099
+Onlara gideceğim.
+
+669
+00:51:22,099 --> 00:51:27,099
+Onlardan da bu sefer kompozör dosyada bakmam gerekiyor.
+
+670
+00:51:27,099 --> 00:51:29,099
+Sempozisyon 9'lara gittim.
+
+671
+00:51:29,099 --> 00:51:36,099
+Bu sefer kompozörlere bakacağım.
+
+672
+00:51:36,099 --> 00:51:38,099
+Kompozörlerde beta open olanları seçeceğim.
+
+673
+00:51:38,099 --> 00:51:40,099
+Yani şu ikisi.
+
+674
+00:51:40,099 --> 00:51:47,099
+O zaman her iki sorgu içinde sadece 152 ve 241'lere bu şekilde erişmiş oldum.
+
+675
+00:51:47,099 --> 00:51:54,099
+Eğer bu dosyaya geldikten sonra bir tanesini eleme yaptım burada.
+
+676
+00:51:54,099 --> 00:51:55,099
+Şunu eledim.
+
+677
+00:51:55,099 --> 00:52:01,099
+Bu ikinci kanaldan title üzerinden geldiğim zaman da şunu eledim.
+
+678
+00:52:01,099 --> 00:52:03,099
+Sadece beta open şunları istiyorum.
+
+679
+00:52:03,099 --> 00:52:07,099
+Ama iki indexi birden kullanırsam eğer.
+
+680
+00:52:07,099 --> 00:52:10,099
+O zaman şu offset'lerle beraber.
+
+681
+00:52:10,099 --> 00:52:15,099
+Şuradaki Sempozisyon 9'un offsetleri 152, 241, 338.
+
+682
+00:52:15,099 --> 00:52:18,099
+Şu iki kümenin yani şuradaki bu sarı bölgeyle.
+
+683
+00:52:18,099 --> 00:52:21,099
+Şuradaki mavi bölgenin kesişimi olan.
+
+684
+00:52:21,099 --> 00:52:25,099
+152 ve 241'e direkt olarak dosyada erişeceğim.
+
+685
+00:52:25,099 --> 00:52:33,699
+Yani iki index birden kullanırsam iki index birden kullanırsam.
+
+686
+00:52:33,699 --> 00:52:35,699
+Sadece ana dosyada şu iki noktaya gidiyorum.
+
+687
+00:52:35,699 --> 00:52:37,699
+Yani şunlara hiç gitmeme gerek kalmadı.
+
+688
+00:52:37,699 --> 00:52:39,699
+Şimdi tabi hep bunu söylüyorum.
+
+689
+00:52:39,699 --> 00:52:44,699
+Çünkü yani arka planda kocaman bir dosyayı hayal edin.
+
+690
+00:52:44,699 --> 00:52:46,699
+Yani burada ben iki tane gitmişim.
+
+691
+00:52:46,699 --> 00:52:47,699
+Hadi buna bak konuşayım.
+
+692
+00:52:47,699 --> 00:52:49,699
+Yani bu kadar masrafa ne gerek var.
+
+693
+00:52:49,699 --> 00:52:51,699
+Yani demememiz lazım.
+
+694
+00:52:51,699 --> 00:52:56,699
+Arkada kocaman dosya olduğu için burada benim bir başka bir yere erişmem.
+
+695
+00:52:56,699 --> 00:53:00,699
+Buradaki benim gecikmeyi yani sorgu gecikmesini önemli ölçüde arttırıyor.
+
+696
+00:53:00,699 --> 00:53:02,699
+Çünkü başka bir noktaya gidiyorum.
+
+697
+00:53:02,699 --> 00:53:07,699
+Dosyada kocaman bir adım atıp dosyada başka bir noktaya gitmek.
+
+698
+00:53:07,699 --> 00:53:11,699
+Diskin işte başka bir noktasına gitmek demek oluyor yani nihayetinde.
+
+699
+00:53:11,699 --> 00:53:15,699
+O yüzden burada iki index olduğu zaman daha hızlı çalışacak.
+
+700
+00:53:15,699 --> 00:53:17,699
+Daha hızlı hizmet verecek yani.
+
+701
+00:53:17,699 --> 00:53:22,699
+Ama bir tanesi de varsa yine iyileşti.
+
+702
+00:53:22,699 --> 00:53:24,699
+Yani bütün dosyadaki kayıtlara bakmadım.
+
+703
+00:53:24,699 --> 00:53:25,699
+İki üç noktaya baktım.
+
+704
+00:53:25,699 --> 00:53:28,699
+Yine diğer tarafta bir tarafta index varsa.
+
+705
+00:53:28,699 --> 00:53:30,699
+Bunların hiçbir tanesi yok ise.
+
+706
+00:53:30,699 --> 00:53:38,699
+O zaman ya arka planda sorgu, işleyici, servis sahibi, veritabanımız.
+
+707
+00:53:38,699 --> 00:53:42,699
+Arka planda hızlı bir şekilde index oluşturup bu sorguya hizmet verecek.
+
+708
+00:53:42,699 --> 00:53:44,699
+Eğer yetiştirebiliyorsa.
+
+709
+00:53:44,699 --> 00:53:46,699
+Bunlar tabi böyle hassas şeyler.
+
+710
+00:53:46,699 --> 00:53:51,699
+Yani arka planda işte optimizer dediğimiz o veritabanı sistemin gerçeklenmesindeki modüller.
+
+711
+00:53:51,699 --> 00:53:56,699
+Sizin kabiliyeti ölçüsünde hızlı bir şekilde bu index oluşturacak hizmete sokacak.
+
+712
+00:53:56,699 --> 00:53:58,699
+Eğer veri o kadar büyük değilse.
+
+713
+00:53:58,699 --> 00:54:02,699
+Çünkü bu indexin oluşturulması da tabi zaman alan bir şey.
+
+714
+00:54:02,699 --> 00:54:04,699
+Tamam ufak bir dosya ama.
+
+715
+00:54:04,699 --> 00:54:06,699
+Fıt diye de oluşturmak da zor.
+
+716
+00:54:06,699 --> 00:54:13,699
+Öyle olunca arka planda tabi sistemin karmaşıklığını çok yükselten arttıran şeyler oluyor bunlar.
+
+717
+00:54:13,699 --> 00:54:15,699
+Eğer bunların hiçbir tanesi yoksa.
+
+718
+00:54:15,699 --> 00:54:16,699
+Bir daha index.
+
+719
+00:54:16,699 --> 00:54:19,699
+Index de oluşmuyorsa o zaman tek bir çare var.
+
+720
+00:54:19,699 --> 00:54:23,699
+Bu sorgu için bütün tabloyu taramam gerekiyor.
+
+721
+00:54:23,699 --> 00:54:28,699
+Şimdi burada da arka planda bu kararın verilmesi.
+
+722
+00:54:28,699 --> 00:54:33,699
+Yani her zaman index varsa o index illa kullanılacak diye de bir şey yok.
+
+723
+00:54:33,699 --> 00:54:35,699
+Bu biraz daha zorlaştırıyor.
+
+724
+00:54:35,699 --> 00:54:39,699
+Söylediğim bu sistemi biraz daha karmaşıklaştıran bir şey.
+
+725
+00:54:39,699 --> 00:54:45,699
+Çünkü bu index kullandığım zaman ortaya çıkacak olan kayıtlar çok sayıdaysa.
+
+726
+00:54:45,699 --> 00:54:49,699
+Onun yerinde ben ana tabloda zaten tarama yaparak onlara ilişeceğim.
+
+727
+00:54:49,699 --> 00:54:50,699
+Yani şunu demek istiyorum.
+
+728
+00:54:50,699 --> 00:54:53,699
+Burada mesela ben Senfony 9'u arıyorum.
+
+729
+00:54:53,699 --> 00:54:56,699
+Senfony 9 burada çok sayıda var ise.
+
+730
+00:54:56,699 --> 00:55:01,699
+Yani %80 kayıtların hepsi Senfony 9 ise mesela yani örnek olsun diye diyorum.
+
+731
+00:55:01,699 --> 00:55:07,699
+O zaman benim buna index üzerinden ulaşmak yerine bu tabloda zaten ben tarama yapacağım.
+
+732
+00:55:07,699 --> 00:55:11,699
+İşte bu istatistik bilgiler bir de tabanında katalogda tutuluyor.
+
+733
+00:55:11,699 --> 00:55:16,699
+Katalogda arama yapılan bir niteliğin değer dağılımı.
+
+734
+00:55:16,699 --> 00:55:17,699
+Diyor ki bana katalog.
+
+735
+00:55:17,699 --> 00:55:22,699
+Ya sen burada bir arama yapıyorsun ama bu nitelikteki değer dağılımı.
+
+736
+00:55:22,699 --> 00:55:25,699
+İşte %80, %90 mesela.
+
+737
+00:55:25,699 --> 00:55:27,699
+Zaten Senfony 9 içeriyor.
+
+738
+00:55:27,699 --> 00:55:28,699
+Sen de onu arıyorsun.
+
+739
+00:55:28,699 --> 00:55:30,699
+O zaman hiç indexe gitmene gerek yok.
+
+740
+00:55:30,699 --> 00:55:37,699
+Burada HIP dosyasında bu ana dosyada zaten table scan, sıralı arama yaparak bütün kayıtlara ilişeceksin.
+
+741
+00:55:37,699 --> 00:55:39,699
+Yani bu daha hızlı olacak.
+
+742
+00:55:39,699 --> 00:55:41,699
+Aksi taktirde index üzerinden bu sefer gitmen gerekiyor.
+
+743
+00:55:41,699 --> 00:55:43,699
+O dağınım asrapladı.
+
+744
+00:55:43,699 --> 00:55:46,699
+Böyle bu analizlerinin yapılmasında.
+
+745
+00:55:46,699 --> 00:55:49,699
+Yani böyle körük örnek index var.
+
+746
+00:55:49,699 --> 00:55:50,699
+Hemen index kullanalım.
+
+747
+00:55:50,699 --> 00:55:52,699
+O da yok yani.
+
+748
+00:55:52,699 --> 00:55:53,699
+Evet.
+
+749
+00:55:53,699 --> 00:55:59,699
+Şimdi burada bu sunuda ben bunları anlatmayı düşünüyordum.
+
+750
+00:55:59,699 --> 00:56:02,699
+Burada bunların gerçeklenmesiyle ilgili detaylar var.
+
+751
+00:56:02,699 --> 00:56:04,699
+Bunları geçiyorum.
+
+752
+00:56:04,699 --> 00:56:07,699
+Burada şöyle basit bir örnek var.
+
+753
+00:56:07,699 --> 00:56:11,699
+Index dosyası dedik ufak bir dosya.
+
+754
+00:56:11,699 --> 00:56:14,699
+Ana dosyamız da büyük bir dosya.
+
+755
+00:56:14,699 --> 00:56:18,699
+Tamam bunu biraz daha fiziksel böyle örneklendirelim.
+
+756
+00:56:18,699 --> 00:56:21,699
+Bu dosyamız ufak bir dosya olması.
+
+757
+00:56:21,699 --> 00:56:23,699
+Yani daha az nitelik içeriyor.
+
+758
+00:56:23,699 --> 00:56:24,699
+Bu ne demek?
+
+759
+00:56:24,699 --> 00:56:30,699
+Benim disk sayfaları yani disk sayfası veya blok dediğimiz şey veri parçası.
+
+760
+00:56:30,699 --> 00:56:36,699
+Bu şey demek ana hafızayla disk arasındaki işletim sistemlerinde de görmüşsünüzdür.
+
+761
+00:56:36,699 --> 00:56:42,699
+Ana hafızayla disk arasındaki benim iletişim ünitesi diyelim.
+
+762
+00:56:42,699 --> 00:56:48,699
+Yani ben bu dosyayı ben bu dosyayı ben bu dosyayı ben bu dosyayı ben bu dosyayı ben
+
+763
+00:56:48,699 --> 00:56:53,699
+Ana hafızayla disk arasındaki benim iletişim ünitesi diyelim.
+
+764
+00:56:53,699 --> 00:57:02,699
+Yani ben diskten bir veri alacaksam bir değer okuyacaksam o değeri içeren sayfayı getiriyorum ana hafızaya.
+
+765
+00:57:02,699 --> 00:57:07,699
+Yani sayfa dediğim de disk page yani dört kilobayt sekiz kilobayt gibi.
+
+766
+00:57:07,699 --> 00:57:09,699
+Yani ben oradan bir byte bile okusam.
+
+767
+00:57:09,699 --> 00:57:11,699
+Diskten bir byte okuyacağım mesela.
+
+768
+00:57:11,699 --> 00:57:15,699
+Buğul bir değer okuyacağım mesela veya integer okuyacağım.
+
+769
+00:57:15,699 --> 00:57:18,699
+Sadece o integer getirmem ana hafızaya mümkün değil.
+
+770
+00:57:18,699 --> 00:57:22,699
+O integer okumak istediğim o değeri içeren bloku getirebilirim.
+
+771
+00:57:22,699 --> 00:57:27,699
+İşte ona o da dört kilobayt sekiz kilobaytlık bir rakam yani o veri yanına getirdim.
+
+772
+00:57:27,699 --> 00:57:31,699
+Bunun bir takım sebepleri var yani sistemin gerçekten vesileyle ilgili.
+
+773
+00:57:31,699 --> 00:57:33,699
+Şimdi onlara çok girmeyelim.
+
+774
+00:57:33,699 --> 00:57:38,699
+Öyle olunca o zaman benim buradaki bu kırmızı bölge disk sayfası.
+
+775
+00:57:38,699 --> 00:57:41,699
+Yani ana hafızaya getireceğin veri parçası oluyor.
+
+776
+00:57:41,699 --> 00:57:46,699
+Ve dört kilobayt gibi bir rakam yani büyük bir rakam dört bin doksan altı byte mesela.
+
+777
+00:57:46,699 --> 00:57:52,699
+Yani buraya bir sürü kayıt sığar normal yani orta ardi kayıtlar.
+
+778
+00:57:52,699 --> 00:57:56,699
+Burada da bunların sığdığını düşünelim mesela.
+
+779
+00:57:56,699 --> 00:58:00,699
+Diğer taraftan burada nitelikler daha fazla olduğu için.
+
+780
+00:58:00,699 --> 00:58:06,699
+Buradaki aynı bir miktar büyütükteki disk sayfasına yani şu kırmızı bölge ne bu kırmızı bölge.
+
+781
+00:58:06,699 --> 00:58:09,699
+İkisi de dört kilobayt veya sekiz kilobayt aynı ama.
+
+782
+00:58:09,699 --> 00:58:12,699
+O zaman buraya daha az kayıt sığacak.
+
+783
+00:58:12,699 --> 00:58:17,699
+O zaman burada mesela şöyle bir sorgu düşünelim mesela.
+
+784
+00:58:17,699 --> 00:58:25,699
+Burada bu sorguyu ana dosya üzerinden yapmak ile index dosyasını kullanarak yapmak arasındaki farka bakalım.
+
+785
+00:58:25,699 --> 00:58:30,699
+Ta ki indexin kullanımı içimize sinsinler gerçekten index kullanmak avantaj demiş.
+
+786
+00:58:30,699 --> 00:58:36,699
+Veya diğer iki noktayı da düşünelim yani index her zaman körü körüne kullanmak da olmuyor gibi.
+
+787
+00:58:36,699 --> 00:58:39,699
+Mesela burada bir kere şurada nasıl bir indeximiz var.
+
+788
+00:58:39,699 --> 00:58:44,699
+Bu indeximiz Alice, Bob, Charles yani şu isme göre bir index.
+
+789
+00:58:44,699 --> 00:58:51,699
+Bu isimdeki isim niteliğine göre değerleri alıp sıraladık ve offset adreslerini buraya yerleştirdik.
+
+790
+00:58:51,699 --> 00:58:53,699
+Yani Bob buradaymış buraya ok var.
+
+791
+00:58:53,699 --> 00:58:55,699
+Alice buradaymış ok buraya var.
+
+792
+00:58:55,699 --> 00:58:59,699
+Yani şu adres adresler yazacak nihayetinde.
+
+793
+00:59:00,699 --> 00:59:15,699
+O zaman burada ben Alice'i ana dosyada aramaya kalksam yani şu indexte değil ana dosyada aramaya kalksam burada nitelik isim niteliği üzerine bütün kayıtlara bakmam lazım.
+
+794
+00:59:15,699 --> 00:59:17,699
+Yani kaç tane disk erişimi yapacağım.
+
+795
+00:59:17,699 --> 00:59:24,699
+Bir iki üç dört beş tane Alice'de beşincisinde buldum.
+
+796
+00:59:24,699 --> 00:59:27,699
+Ama bir tane ilkinde de bulsam yine diğerine bakmam lazım.
+
+797
+00:59:27,699 --> 00:59:32,699
+Çünkü isim yani muhtemelen veya onu da katalogdan öğrenebiliriz.
+
+798
+00:59:32,699 --> 00:59:37,699
+Çünkü katalotik istatistler bilgiler saklanıyor veya şema bilgileri saklanıyor.
+
+799
+00:59:37,699 --> 00:59:39,699
+Bize öğreniyoruz ki neyim esasında?
+
+800
+00:59:39,699 --> 00:59:40,699
+Unik değil.
+
+801
+00:59:40,699 --> 00:59:45,699
+Öyle olunca bize de Alice isimli personenin yaşını soruyor.
+
+802
+00:59:45,699 --> 00:59:47,699
+O zaman buradaki bütün Alice'leri soruyor yani.
+
+803
+00:59:47,699 --> 00:59:50,699
+O zaman bütün tabloyu tanımam lazım.
+
+804
+00:59:50,699 --> 00:59:52,699
+Kaç disk erişimi oldu?
+
+805
+00:59:52,699 --> 00:59:57,699
+Bir disk sayfasında iki tane veri kaydı tutulduğu için sırada yazıyor zaten.
+
+806
+00:59:57,699 --> 01:00:02,699
+Assume size of disk page, two data pages, five indexed records.
+
+807
+01:00:02,699 --> 01:00:04,699
+Yani iki tane veri kaydımız var.
+
+808
+01:00:04,699 --> 01:00:08,699
+O zaman beş sayfa, beş tane disk IO olmuş oluyor.
+
+809
+01:00:08,699 --> 01:00:19,699
+Oysa neyim üzerine index kullandığım zaman burada şurada Alice'i gördüm bakın başka Alice olsa hemen şurada yazardı.
+
+810
+01:00:19,699 --> 01:00:22,699
+Çünkü başka Alice de yok burada.
+
+811
+01:00:22,699 --> 01:00:27,699
+Burada sıraladığımıza göre, isme göre Alice'i gördüm.
+
+812
+01:00:27,699 --> 01:00:29,699
+Başka Alice yok.
+
+813
+01:00:29,699 --> 01:00:33,699
+Ve Alice'in de yaşına şuradan erişebilirim.
+
+814
+01:00:33,699 --> 01:00:35,699
+Yani sizden bir disk erişimi yaptık.
+
+815
+01:00:35,699 --> 01:00:37,699
+Ve Alice'in yaşına burada eriştik.
+
+816
+01:00:37,699 --> 01:00:39,699
+O zaman kaç disk IO oldu?
+
+817
+01:00:39,699 --> 01:00:43,699
+Şuraya eriştim bir ve ikinci disk erişimi.
+
+818
+01:00:43,699 --> 01:00:49,699
+Yani index olmasa beş tane disk erişimiyle, index varken iki disk erişimiyle.
+
+819
+01:00:49,699 --> 01:00:53,699
+Yani şöyle ufak temsili bir şekilde indexin faydasını gördük.
+
+820
+01:00:53,699 --> 01:01:00,699
+Yani %50'den daha iyi bir virüm sağladı bize.
+
+821
+01:01:00,699 --> 01:01:04,699
+Başka bir örnek mesela Cyrus isimli personelin yaşı.
+
+822
+01:01:04,699 --> 01:01:11,699
+Cyrus'a yine biz index üzerinden erişmeye katlanan zaman Cyrus'ın bir tek burada olabilir.
+
+823
+01:01:11,699 --> 01:01:13,699
+Şurada olamaz buraya daha gitmeme gerek yok.
+
+824
+01:01:13,699 --> 01:01:18,699
+Bir ve burada olmadığını da anladık.
+
+825
+01:01:18,699 --> 01:01:21,699
+Yani Cyrus'ın burada olmadığını anladık zaten.
+
+826
+01:01:21,699 --> 01:01:23,699
+Çünkü Cyrus diye biri yokmuş burada.
+
+827
+01:01:23,699 --> 01:01:27,699
+O zaman bir disk erişimiyle şu sorgu çözümlendi.
+
+828
+01:01:27,699 --> 01:01:33,699
+Ama index olmasa burada Cyrus'ın olmadığını anlamak için bütün dosyayı tanımam lazım.
+
+829
+01:01:33,699 --> 01:01:37,699
+O zaman gene bu sefer uçurum daha da arttı.
+
+830
+01:01:37,699 --> 01:01:38,699
+Bir de beş oldu.
+
+831
+01:01:38,699 --> 01:01:40,699
+Şurada ikiye beş idi.
+
+832
+01:01:40,699 --> 01:01:45,699
+Şurada index ile ana dosya arasındaki fark bire beş oldu.
+
+833
+01:01:45,699 --> 01:01:50,699
+Peki burada David isimli öğrencinin personelin yaşı.
+
+834
+01:01:50,699 --> 01:01:54,699
+Index üzerinden gitsek burada David iki tane varmış.
+
+835
+01:01:54,699 --> 01:01:57,699
+O zaman bunların ikisine birden gideceğim.
+
+836
+01:01:57,699 --> 01:02:02,699
+Yani bir, iki ve üç Davidlere gittim.
+
+837
+01:02:02,699 --> 01:02:04,699
+Üç disk erişimi oldu.
+
+838
+01:02:04,699 --> 01:02:08,699
+Bir daha taraftan ana dosyada bu işlemi yapsam ne olacak?
+
+839
+01:02:08,699 --> 01:02:10,699
+Beş olacak gene.
+
+840
+01:02:10,699 --> 01:02:15,699
+Çünkü name unique olmadığı için bir tane David'i bulmakla iş bitmiyor.
+
+841
+01:02:15,699 --> 01:02:16,699
+Bütün hepsine bakmam lazım.
+
+842
+01:02:16,699 --> 01:02:23,699
+O zaman gene burada index bu sefer üç, üçe beş oranında bir iyileşme sağlamış oldu.
+
+843
+01:02:23,699 --> 01:02:32,699
+Dikkat ederseniz burada bu name'in artması nispetinde indexin şeyi de azaldı.
+
+844
+01:02:32,699 --> 01:02:40,699
+Yani David'den çok sayıda olsa, bunların hepsi David olsa o zaman indexin kullanışlılığı, elverişliğini azalacak.
+
+845
+01:02:40,699 --> 01:02:43,699
+Çünkü buna selectivity deniyor.
+
+846
+01:02:43,699 --> 01:02:46,699
+Yani bu indexin seçiciliği deniyor.
+
+847
+01:02:46,699 --> 01:02:49,699
+Bu çok seçici bir index olmamış oluyor.
+
+848
+01:02:49,699 --> 01:02:52,699
+Yani burada biz ne sorsak hepsi Davidmiş zaten.
+
+849
+01:02:52,699 --> 01:02:55,699
+O zaman index üzerinden lüzumsuz yere ana dosyaya gideceğim.
+
+850
+01:02:55,699 --> 01:02:57,699
+O zaman onun yerine index kullanmam.
+
+851
+01:02:57,699 --> 01:03:01,699
+Zaten burada David'den hepsi David'miş veya çoğu David'miş.
+
+852
+01:03:01,699 --> 01:03:03,699
+Artık bu orana ondan kastediyor.
+
+853
+01:03:03,699 --> 01:03:04,699
+%90'a David'miş.
+
+854
+01:03:04,699 --> 01:03:07,699
+O zaman ben burada bütün dosyayı zaten tararım.
+
+855
+01:03:07,699 --> 01:03:09,699
+Bütün David'leri de ulaşırım yani.
+
+856
+01:03:09,699 --> 01:03:11,699
+Onu demek istiyorum.
+
+857
+01:03:11,699 --> 01:03:20,699
+O zaman burada şu indexin maliyetini çözümlerken hiç binary searchten bahsetmedim.
+
+858
+01:03:20,699 --> 01:03:23,699
+Çünkü ufak olduğu için yani iki tane sayfadan oluşuyor.
+
+859
+01:03:23,699 --> 01:03:32,699
+Tabi burada bir sayrısı ararken, Alice'i, David'i ararken esasında burada binary search yapıyoruz.
+
+860
+01:03:32,699 --> 01:03:40,699
+Ama burada dosyanın zaten iki tane bloğu olduğu için o binary search'un katkısı bize çok gözükmedi.
+
+861
+01:03:40,699 --> 01:03:47,699
+Ama daha gerçekçi olursak yani buradaki sayfa sayısı iki değil de iki yüz olsa.
+
+862
+01:03:47,699 --> 01:03:56,699
+O zaman tabi bizim bu Alice'e erişmemiz logayetma iki, iki yüz yani işte yedi sekiz adımda olacak.
+
+863
+01:03:56,699 --> 01:04:03,699
+Yani bunun burada olduğunu anlamak yedi sekiz adımda bunu şey yapacağız.
+
+864
+01:04:03,699 --> 01:04:16,699
+Ama tabi burada tabi iki yüz tane sayfa olunca tabi demek burada da ona göre beş bölü iki oranında daha fazla sayfa olacak.
+
+865
+01:04:16,699 --> 01:04:26,699
+Yani nihayetinde bu mukayeselerden anlıyoruz ki index kullanma sayesinde ana dosyada sorgularımız daha hızlı oluyor.
+
+866
+01:04:26,699 --> 01:04:37,699
+Çoğu zaman mutlak olarak her zaman olmak zorunda değil ama çoğu zaman eğer buradaki selectivity dediğim seçiciliği bunun indexin, bu niteliğin seçiciliği yüksek ise
+
+867
+01:04:37,699 --> 01:04:46,699
+yani burada primary veya assay'da bulunan bir kayıt nitelik aranıyor ise o zaman index kullanmak çok avantajlı olacak.
+
+868
+01:04:46,699 --> 01:04:55,699
+Zaten işlerin arka planda böyle dönüyor yani [öğrenci] tabanın hızlı çalışması bu sayede indexler sayesinde oluyor.
+
+869
+01:04:55,699 --> 01:05:03,699
+Evet burada multiple indexi anlatıyor veya index çeşitlerini anlatıyor.
+
+870
+01:05:03,699 --> 01:05:08,699
+Evet burada matematiksel böyle bazı örnekler var onları geçiyorum.
+
+871
+01:05:08,699 --> 01:05:13,699
+Şimdi bir ara verelim 15 dakika kadar tamam mı?
+
+872
+01:05:13,699 --> 01:05:14,699
+50 geçe başlarız.
+
+873
+01:05:14,699 --> 01:05:16,699
+Herhangi bir sorumuz var mı arkadaşlar?
+
+874
+01:05:16,699 --> 01:05:19,699
+Anlatıyorum maalesef sizin çok katkınız olmuyor.
+
+875
+01:05:19,699 --> 01:05:21,699
+Umumi bir problem bu.
+
+876
+01:05:21,699 --> 01:05:23,699
+Diğer hocalardan da işitiyoruz.
+
+877
+01:05:23,699 --> 01:05:29,699
+Sırayla bakılacak diyecektim ben de index yoksa neyse bakacağız.
+
+878
+01:05:29,699 --> 01:05:33,699
+Evet ilk daha dersin başında sorduğum sual ile şey yapmasın.
+
+879
+01:05:33,699 --> 01:05:37,699
+Herhangi bir yorum yapmak isteyen var mı arkadaşlar?
+
+880
+01:05:37,699 --> 01:05:41,820
+Evet o zaman bir ara veriyorum.
+
+881
+01:05:41,820 --> 01:20:30,069
+Evet arkadaşlar ikinci sunuyu açıyorum şimdi.
+
+882
+01:20:30,069 --> 01:20:34,630
+Bir trilyo iyi duran kısmı.
+
+883
+01:20:34,630 --> 01:20:37,630
+Şimdi tabi hepsini yapmamız çok mümkün değil sunullara.
+
+884
+01:20:37,630 --> 01:20:39,630
+Üzerinden geçeceğimizi söyledik.
+
+885
+01:20:39,630 --> 01:20:43,630
+Geçtiğim yerlerden tabi sorumlusunuz anlattıklarımla.
+
+886
+01:20:43,630 --> 01:20:51,630
+Yani final sınavında 5-10 puan belki 15 puan bunlardan olabilir.
+
+887
+01:20:51,630 --> 01:20:56,630
+Çok çok detaya inmesek de gene ana fikri ile konuyu anlamamız lazım.
+
+888
+01:20:56,630 --> 01:21:00,630
+Şimdi ağaç yapılarından bir triyi göreceğiz.
+
+889
+01:21:00,630 --> 01:21:04,630
+Şimdi artık siz merak edersiniz ona bakarsınız.
+
+890
+01:21:04,630 --> 01:21:10,630
+Bir tri daha yaygın dediğim gibi daha tüm veri sistemlerinde olan bir veri yoksa.
+
+891
+01:21:10,630 --> 01:21:12,630
+Olması olmaz bir veri.
+
+892
+01:21:12,630 --> 01:21:14,630
+Olması olmaz bir veri yapısı.
+
+893
+01:21:14,630 --> 01:21:25,630
+Şimdi burada ana hatlarıyla gene hem nokta sorguları için hem aralık sorguları için bu veri yapısı nasıl kullanılıyor?
+
+894
+01:21:25,630 --> 01:21:28,630
+Ondan bahsedeceğim bir parça.
+
+895
+01:21:28,630 --> 01:21:34,630
+Şimdi burada indexin iç yapısıyla ilgili bazı tanımlarımız var.
+
+896
+01:21:35,630 --> 01:21:39,630
+Bu indexin içeriğinde acaba neler var?
+
+897
+01:21:39,630 --> 01:21:46,630
+Bakıldığı zaman yani bu indexin ağaç yapısının yeni yaprakları var.
+
+898
+01:21:46,630 --> 01:21:50,630
+Bir de o yaprakların üzerine internal dediğimiz düğümler var.
+
+899
+01:21:50,630 --> 01:21:55,630
+Bunların hepsi tabi o düğüm dediğimiz şeyler diz sayfaları yani bloklar, dis pageler.
+
+900
+01:21:55,630 --> 01:22:05,630
+Bu içeriğinde bunların biraz önceki örneklerimizde de görüldüğü gibi key ve record ID dediğimiz offsetler var.
+
+901
+01:22:05,630 --> 01:22:09,630
+Biz onlara böyle kabaca oklarla gösterdik offsetleri.
+
+902
+01:22:09,630 --> 01:22:13,630
+Nihayetinde onlar kaydın bulunduğu yer.
+
+903
+01:22:13,630 --> 01:22:19,630
+Bu yer ya byte offset olur ya da bulunduğu sayfa o sayfadaki offset olabilir.
+
+904
+01:22:19,630 --> 01:22:38,630
+Yani o dosyamız nihayetinde sayfalardan oluştuğu için dis sayfaları ya o dosyanın direkt offseti ya da o dosyadaki kaydın bulunduğu sayfanın sayfa numarası ve o sayfadaki offset adresi olabilir.
+
+905
+01:22:38,630 --> 01:22:41,630
+Yani farklı şekillerde fiziksel gerçeklemeler olabiliyor.
+
+906
+01:22:41,630 --> 01:22:54,630
+Şimdi burada diğer taraftan o key offset iklileri dedik o indeksinin içeriğindeki o k, k, r diyelim o rekord offset olarak.
+
+907
+01:22:54,630 --> 01:22:58,630
+Bunlar üç farklı türde olabiliyor.
+
+908
+01:22:58,630 --> 01:23:06,630
+Ya data rekordumuz burada yani bu indeksinin içeriğinden bahsediyorum artık.
+
+909
+01:23:07,630 --> 01:23:10,630
+İndeksin içerisinde veri kaydın hepsi olabilir.
+
+910
+01:23:10,630 --> 01:23:14,630
+Yani demek ki bu ne demek oluyor?
+
+911
+01:23:14,630 --> 01:23:20,630
+Bu bizim artık şeyimiz yani bu index dosyamız esasında biri dosyası.
+
+912
+01:23:20,630 --> 01:23:26,630
+Yani hem bir yerleşim organizasyonu hem de erişim organizasyonu olmuş oluyor.
+
+913
+01:23:26,630 --> 01:23:33,630
+Biraz önce derse başlarken de dört farklı dosya demiştik.
+
+914
+01:23:33,630 --> 01:23:39,630
+Bir tanesi hip dosyaları bir tanesi hash dosyası bir tanesi B-Tree dosyası dedik mesela.
+
+915
+01:23:39,630 --> 01:23:44,630
+İşte o zaman onun kayıtların yerleşmesinde dahi B-Tree kullanılabilir.
+
+916
+01:23:44,630 --> 01:23:55,630
+Yani bu bir B-Tree dosyası ise o zaman yapraklarındaki bu sefer kayıt şeyler anahtarlar artık offset içermiyor.
+
+917
+01:23:55,630 --> 01:24:00,630
+Yani bir dosyaya gitmene gerek yok artık o kaydın kendisi orada bulunuyor zaten.
+
+918
+01:24:00,630 --> 01:24:06,630
+O zaman tabi bu yapraklar ne olacak biraz daha fazla olmuş olacak.
+
+919
+01:24:06,630 --> 01:24:10,630
+Yani bu ağacın yüksekliği de daha fazla olmuş olacak.
+
+920
+01:24:10,630 --> 01:24:13,630
+Birazdan göreceğiz ağacın yapılanmasını.
+
+921
+01:24:13,630 --> 01:24:18,630
+Bu tabi sonuçta fiziksel tasarımda bir sürü ayarlar var.
+
+922
+01:24:18,630 --> 01:24:21,630
+Bunlardan bir tanesi bu karar olmuş oluyor.
+
+923
+01:24:21,630 --> 01:24:25,630
+Yani bu dosyalara böyle cluster dosya edeceğiz birazdan.
+
+924
+01:24:25,630 --> 01:24:37,630
+Burada diğer taraftan biraz önce yaptığımız tasarımlara bahsettiğimiz tasarım örneklerine benzer şekilde anahtar ve RID olabilir.
+
+925
+01:24:37,630 --> 01:24:40,630
+Veya list of RID's olabilir.
+
+926
+01:24:40,630 --> 01:24:44,630
+Eğer primary index ise ikinci aşama şu.
+
+927
+01:24:44,630 --> 01:24:48,630
+Eğer secondary index ise list of RID's olacak.
+
+928
+01:24:48,630 --> 01:25:13,989
+Şimdi burada kullanılacak olan teklimiz biz bir tree'den bahsedeceğiz indexi tekniği olarak.
+
+929
+01:25:13,989 --> 01:25:17,989
+Ama aynı esaslar esasında hash'ler içinde geçerli.
+
+930
+01:25:17,989 --> 01:25:21,989
+Ama tabi internal'ı tamamıyla farklı hash'in tree'den.
+
+931
+01:25:21,989 --> 01:25:25,989
+Bir de buna ek olarak daha statik bir yapı olan ISAM var.
+
+932
+01:25:25,989 --> 01:25:29,989
+Bir de buna ek olarak daha statik bir yapı olan ISAM var.
+
+933
+01:25:29,989 --> 01:25:37,989
+Yani tabi bir ders konusu olduğu için bunlar ayrı bir sonuçta bir dersi kapsayan yani bir dönem bir dersi kapsayan mesele der.
+
+934
+01:25:37,989 --> 01:25:43,989
+Bunları ayıklamak da kolay olmuyor anlatırken hangisine bahsedeyim bahsetmeyeyim diye mesela.
+
+935
+01:25:43,989 --> 01:25:50,460
+Şimdi şöyle genel bir şey.
+
+936
+01:25:50,460 --> 01:25:54,460
+Şurada mesela bir tane bir tree görüyoruz.
+
+937
+01:25:54,460 --> 01:25:56,460
+Burada şöyle bir sorgumuz var.
+
+938
+01:25:56,460 --> 01:26:00,460
+Find all students with GPA 3'ten büyük olan.
+
+939
+01:26:00,460 --> 01:26:08,460
+Eğer dosyamız mesela GPA'ye göre sıralıysa hiç index kullanmama gerek yok.
+
+940
+01:26:08,460 --> 01:26:14,460
+Bu dosyamız sıralı olan dosyada binary search net yapabiliriz.
+
+941
+01:26:14,460 --> 01:26:19,460
+Binary search net 3'ü buluruz mesela GPA'ye göre sıralıysa.
+
+942
+01:26:19,460 --> 01:26:32,460
+Bu burada GPA'yı 3 olan öğrenciyi bulduktan sonra sırada olduğu için dosyanın sonuna kadar gidip sorguyu neticelendirebiliriz.
+
+943
+01:26:32,460 --> 01:26:39,460
+Ancak tabi hani indexe gerek yok dedim ama yani binary search bir parça bize hizmet verdi.
+
+944
+01:26:39,460 --> 01:26:52,460
+Gene aynı manada yani aynı ana fikirden yola çıkarak bu binary search yerine her adımda ikine arama yerine her adımda kave merch yapabiliriz.
+
+945
+01:26:52,460 --> 01:26:55,460
+İşte bir tree bize ona imkan sağlayacak.
+
+946
+01:26:55,460 --> 01:27:00,460
+Şöyle bir yapısı var ana hatlarıyla.
+
+947
+01:27:00,460 --> 01:27:08,460
+Şurası bizim index dosyamız ve bu indexten de böyle arama ana hatalarımız var.
+
+948
+01:27:08,460 --> 01:27:12,460
+Bu arama ana hataları bize ana dosyaya yönlendiriyor.
+
+949
+01:27:12,460 --> 01:27:22,460
+Tabi buradaki arama ana hatalarımız biraz önceki dediğim şu üç kategorideki şey birincisi değil yani şu iki ve üçüncüsünde iki ve üçüncüsü olabilir.
+
+950
+01:27:22,460 --> 01:27:29,460
+Burada bir arama ana hatalarına geldikten sonra bir data file'a gidiyoruz.
+
+951
+01:27:29,460 --> 01:27:34,460
+Yani demek ki kayıtlar böyle başka bir yerde data file'ın içerisinde.
+
+952
+01:27:34,460 --> 01:27:40,460
+Şimdi bu ısamı atlayayım.
+
+953
+01:27:40,460 --> 01:27:51,369
+Çünkü bir tree'nin esasında ana fikrini içeriyor da bir statik bir yapısı var.
+
+954
+01:27:51,369 --> 01:27:54,369
+Onun yerine şu direk bir tree'ye başlayalım.
+
+955
+01:27:54,369 --> 01:27:56,369
+Bu kısma atlamış olduk böylece.
+
+956
+01:27:56,369 --> 01:28:04,369
+B plus tree'de most widely used index yani veri tabanlarında kullanılan en yaygın index.
+
+957
+01:28:05,369 --> 01:28:14,369
+Burada maliyetimiz artık bakın logaritma FN yani logaritma 2N'den çok çok daha iyi.
+
+958
+01:28:14,369 --> 01:28:31,369
+Buradaki ikinin F olması o F de bir disk sayfasından çıkan çıkabilecek olan pointer'ların sayısı veya diğer bir ifadeyle bir disk sayfası içerisindeki PK ikililerinin sayısı.
+
+959
+01:28:31,369 --> 01:28:40,369
+Şimdi bu PK ikilileri yani PK dediğim key pointer veya biraz önce key V dedim ve V dediğinde P diyelim ona.
+
+960
+01:28:40,369 --> 01:28:44,369
+Key, Kp ikilileri key ve pointer.
+
+961
+01:28:44,369 --> 01:28:57,369
+Bu Kp'nin miktarı eğer key'miz işte bir varchar 10'sa mesela veya işte bir integer'sa nihayetinde 4 byte 8 byte hadi 10 byte 20 byte olsun.
+
+962
+01:28:57,369 --> 01:29:02,369
+Pointer'ımız da işte gene o mertebelerde yani 20-30 byte'lık bir veri.
+
+963
+01:29:02,369 --> 01:29:15,369
+Şimdi 4 kilobaytlık bir dosyamız şey disk sayfamız 4 kilobayt ise 4 kilobayt yani 4096 byte olmuş oluyor değil mi?
+
+964
+01:29:15,369 --> 01:29:26,369
+Bunu 20-30'a böldüğümüz zaman yani 4 bin'i işte 20'ye böldüğümüz zaman 200 çıkıyor bakın mesela yani taktibi konuşuyorum tamamıyla.
+
+965
+01:29:26,369 --> 01:29:34,369
+O zaman bir disk sayfasından 200 belki 300, 400, 500 yani tipik rakamlar bunlar.
+
+966
+01:29:34,369 --> 01:29:38,369
+Yani logaritma 300, 400'e en.
+
+967
+01:29:38,369 --> 01:29:50,369
+Bu da logaritma 2'ye göre çünkü logaritmik olduğu için logaritma 2'ye göre çok daha fazla, çok daha başarılı.
+
+968
+01:29:50,369 --> 01:30:08,369
+Yani mesela 10 bin tane şey mesela ne olsun 10 bin tane kaydımız olsun 10 bin tane logaritma 2 10 bin için kaç tane adım gerekiyor hedef ulaşmak için?
+
+969
+01:30:08,369 --> 01:30:36,369
+1024 mesela 210 olduğu için 1024 2048 4096 işte 11 12 13 adımda 13 adımda falan bulabiliriz logaritma 2 10 bin ama logaritma işte 500'e 10 bin desek o zaman ne oldu bakın iki adımda yani logaritma 500 10 bin ne demek oluyor?
+
+970
+01:30:36,369 --> 01:30:56,369
+O zaman 500'ün karesi zaten 10 bin'i geçiyor değil mi? O zaman iki adımda sadece iki adımda hedef'e ulaşıyorum yani hedefin bulunduğu yani aradığım kaydın bulunduğu sayfaya veya kayda direkt olarak gelişmiş oluyorum yani logaritma 2 10 bin ile logaritma 500 mesela 10 bin'i karşılaştırdık.
+
+971
+01:30:56,369 --> 01:31:16,369
+Yani burada Ka'nın f'in 2 olmasıyla f'in 2 olmasıyla 300 400 olması arada çok büyük bir uçurum logaritmik olduğu için ve bu gerçek sistemin gerçekçi olmasına gerçek zaman olmasına imkan sağlayan nokta burası esasında.
+
+972
+01:31:16,369 --> 01:31:33,369
+Bununla beraber bize bunun getirdiği yer zararı yer kaybı bir yer kaplayacak nihayetinde ve yer verimliliği noktasına bakıldığı zaman da yer verimliliği %50 olduğunu görüyoruz.
+
+973
+01:31:33,369 --> 01:31:54,369
+Ortalama da %67 %70 civarlarında olacak çünkü bunun bu şekilde bu katkısı tabi ki bir vebali olacak nihayetinde ancak bu yer kaybının bize getirdiği bu hız telafi edilebilecek bir boyutta.
+
+974
+01:31:54,369 --> 01:32:14,369
+Biraz önce dedik hem yer kaybı hem de işte titarladık Tver'i tekrar noktasında inconsistency problemini ortaya çıkartıyor dedik ama bakın onların hepsinin o zararların hepsinin ötesine geçiyor burada bahsettiğim o hız noktasındaki iyileşme.
+
+975
+01:32:14,369 --> 01:32:38,369
+Burada tabi bu %50 en kötü durum %50 bunun sebebini birazdan şey yapacağız burada ağacın içeriğinin oluşturulmasında her bir sayfa bir order ağacın order değeri olarak bir D parametresiyle belirleniyor.
+
+976
+01:32:38,369 --> 01:33:02,369
+Bu ağacın içeri içelebileceği minimum şey kayıtlar D kadar olabilir diğer taraftan 2D ise o disk sayfasının içelebileceği toplam kayıtlar oluyor 2D'yi bulmak sayfanın yani disk sayfasının kapasitesiyle alakalı bir şey.
+
+977
+01:33:02,369 --> 01:33:28,369
+Yani 4K'yı 4 kilobaytlık bir sayfayı ve biraz önceki örneklendirdiğim gibi o KP'nin miktarına böldüğüm zaman o kadar en fazla o kadar tane şey içebilir KP ikilisi içebilir işte onun yarısı bu sayfanın içebileceği minimum sayıda KP ikilisi oluyor.
+
+978
+01:33:28,369 --> 01:33:53,369
+İşte çoğu zaman bu M dediğim değer yani bir sayfanın içerisindeki KP'nin sayısı da bu D ile 2D arasında değişen bir rakam olmuş oluyor işte bu M değeri en kötü durumda bütün sayfalar için D ise o zaman %50 sayfa %50 yer verimliliği ortaya çıkartacak.
+
+979
+01:33:53,369 --> 01:34:05,369
+Diğer taraftan o M değeri yani sayfa içerisindeki KP'lerin sayısı 2D ise hepsi dolu doluysa o zaman %100 dolu bir ağaç olacaktır.
+
+980
+01:34:05,369 --> 01:34:34,369
+Farklı ağacın verinin farklı yüklenmeleriyle bu verimlilik yer verimliliği değişebiliyor mesela bulk loading denilen toplu yükleme algoritmalarında toplu yükleme yöntemlerinde verimiz önceden hazır ise bu bütün veriyi bir anda yani tek bir adımda yüklüyorsak bu veriyi ilk olarak sıralayıp daha sonra bu veriyi bu ağaca yükleme imkanımız var.
+
+981
+01:34:34,369 --> 01:34:53,369
+O zaman ağacı %100'e yakın dolu oranlarında şey yapabiliyoruz. Böylece tam dolu olan yer verimliliği yüksek olan bir ağaç oluşturabiliriz ama önceden verimiz hazır değil ise yani böyle teker teker veri ortaya çıkıyorsa o zaman bu veriyi böyle şey bu indeksi adım adım oluşturacağız.
+
+982
+01:34:53,369 --> 01:35:10,369
+Tekrar tekrar ekleyeceğiz. Bu arada böyle yer verimliliğinin düşmesine sebep olacak. Çünkü önceden veri hazır olmadığı için burada dolu dolu yapamadık yani o yüzden yer verimliliği daha düşük olacak.
+
+983
+01:35:10,369 --> 01:35:21,369
+Burada da ortalama değer %67 olduğu görülüyor yani empirik olarak denesel olarak bunun %67 olduğu. Bunu daha da iyileştirmek mümkün bir takım yöntemlerle.
+
+984
+01:35:21,369 --> 01:35:37,369
+Şimdi burada bahsettiklerim veya işte bir parça bahsettiklerim veya artık zamanımız ölçüsünde bahsedeceklerimiz artık algoritmik olarak bu ağacın oluşturmasıyla ilgili meseleler yani tabi artık bundan sonrası biraz daha karmaşık oluyor.
+
+985
+01:35:37,369 --> 01:35:55,369
+Şimdi burada mesela nasıl bir arama yapıyor? Mesela şurada gördüğünüz bir B-tree ağacı, B-plus-tree ağacı. Bu burada da literatürde B de dense, B-plus-tree de dense bundan arasında literatürde tam bir standart şeyi yok.
+
+986
+01:35:55,369 --> 01:36:16,750
+Bazen B-tree görüyorsunuz, bazen B-plus-tree ama kitabı olarak bakıldığı zaman B-plus-tree daha çok şu manada buradaki yaprak düğümlerinin arasında bir link var. Bir bağlantı olması kastediliyor çoğu zaman.
+
+987
+01:36:16,750 --> 01:36:26,750
+Ama hani ben gördüğümde baktığımda mesela B-tree için de bu yine geçerli olabiliyor yani o kaynakta mesela B-tree'yi o şekilde tanımlamış oluyor.
+
+988
+01:36:26,750 --> 01:36:34,750
+O yüzden ona çok takılmamak lazım. B de olabilir, B-plus-tree de olabilir ama buradaki sunuda geçen B-plus-tree de şunlar birbiriyle bağlanmış.
+
+989
+01:36:34,750 --> 01:36:43,750
+Şurada bir link list var yani link list var gibi. Ancak bu link listin üzerindeki bu internal yapı zaten bizim indeksimiz oluyor.
+
+990
+01:36:43,750 --> 01:36:55,750
+Yani bu link liste bizim belki veri yapılarında gördüğümüz şekilde arama yapmıyoruz artık. Buradaki herhangi bir kayda mesela 27'ye erişmek için artık burada baştan tarama yapmıyoruz.
+
+991
+01:36:55,750 --> 01:37:08,750
+Şu internal kısmı, ağacın iç kısmını kullanarak her adımda K tane yoldan bir tanesine giderek, böylece her adımda bir bölü K'lı kısma gitmek ne demek?
+
+992
+01:37:08,750 --> 01:37:18,750
+Logaritma K demek yani işte. K diyorum, F diyorum de işte aynı şey. İşte o bu B-tree'nin o katkısı oradan geliyor.
+
+993
+01:37:18,750 --> 01:37:35,750
+Burada mesela ağacımız böyleyse bir root var burada bir de yaprak büyümlerimiz var. Biz burada mesela işte 5'i arıyorsak arama anahtarımız bu değer artık bu neyse yaş olabilir.
+
+994
+01:37:35,750 --> 01:37:42,750
+Bu ağaçta yaşa göre oluşturulmuş mesela. Ben 5'i arıyorum. O zaman burada her zaman root'tan başlıyoruz.
+
+995
+01:37:42,750 --> 01:37:48,750
+Bütün aramalarda, eklemelerde, çıkarmalarda verinin her zaman root'tan başlıyoruz.
+
+996
+01:37:48,750 --> 01:37:59,750
+Ve burada root'a baktığımız zaman burada tabii ağaca bakıldığı zaman ağaçtaki bütün sayfa içerisindeki veriler sıralı görüyorsunuz.
+
+997
+01:37:59,750 --> 01:38:08,750
+Ve şöyle bakıldığı zaman da yine sıralı. Yani dediğim gibi bu ağaç yapısı sıralama esaslı bir veri yapısı.
+
+998
+01:38:08,750 --> 01:38:14,750
+Buradaki gördüğümüz düğümler de yine disk sayfaları. Yani 4 kilobaytlık mesela.
+
+999
+01:38:14,750 --> 01:38:21,750
+Tipik değerler olarak 4 kilobaytlık, 8 kilobaytlık yani yine temsili bir şekil burada 3 tane kayıt olması tabii beklenmiyor.
+
+1000
+01:38:21,750 --> 01:38:25,750
+Yani burada kayıt sayısı dediğim gibi biraz önce 300-500 tane kayıt var.
+
+1001
+01:38:25,750 --> 01:38:35,750
+Yani şuradan ben şu aramada 300-400 kaydım lokal olarak ana hafızada binary search yaparak bunun içerisinde bir arama yapıyorum.
+
+1002
+01:38:35,750 --> 01:38:42,750
+Daha sonraki araman bir disk gelişimi. Yani burada ben 5'i arıyorsam burada 5 neredeymiş?
+
+1003
+01:38:42,750 --> 01:38:52,750
+Neredeymiş? İşte 13'ün solundaymış. Yani aynı binary search gibi burada işte sol tarafta küçük olanlar, sağ tarafta büyük eşit olanlar veya sol tarafta küçük eşit olanlar.
+
+1004
+01:38:52,750 --> 01:39:02,750
+Yani eşitliği ya sağa ya sola vereceğiz. Artık burada eğer 5'i arıyorsam 13'ün soluna geldim. Bu tarafa bakacağım sadece.
+
+1005
+01:39:02,750 --> 01:39:15,750
+Yani bir bölük K'lık yani burada bizim order değerimiz şey. Order değerimiz burada şuradan yola çıkarak.
+
+1006
+01:39:15,750 --> 01:39:25,750
+Gerçi hep çift rakam olması lazım order'ın. Burada 2-4-5 demiş.
+
+1007
+01:39:25,750 --> 01:39:39,750
+Neyse yani şuradaki şeyin en fazla 5 olabilir. Yani 1-5'lik kısmına gittik yani.
+
+1008
+01:39:39,750 --> 01:39:55,750
+1-5'lik yani bu logaritma 5 işte buradaki sayıların sayı buradaki rakamların sayısı kadar oranında bir asintuatik bir fayda bize sağlayacaktır.
+
+1009
+01:39:55,750 --> 01:40:02,750
+Şimdi burada 5'i ararken bu tarafa gittik ve 5'i burada bulduk. Yani iki tane disk gelişimi yaptık.
+
+1010
+01:40:02,750 --> 01:40:12,750
+Diğer taraftan 15'i arıyorsak mesela şuraya gideceğiz. 13 ile 17 arasında buraya geldik. 15'i burada buluyoruz.
+
+1011
+01:40:12,750 --> 01:40:22,750
+Gene bir aralık sorgusunda mesela 24'den daha büyük olan kayıtları arıyorsak o zaman 24 burada her zaman ruhtan başlıyoruz dedik.
+
+1012
+01:40:22,750 --> 01:40:29,750
+Buraya geldik. 24'ü bulduktan sonra bu tarafa gitmem lazım ve 24'den daha büyük olanları şunlara eleştik.
+
+1013
+01:40:29,750 --> 01:40:49,750
+Yani gene biraz önceki gibi bir mukayese yapsak yani index kullanarak veya kullanmayarak bu maliyete baksak bu indexi kullanarak mesela şu sorguyu 1-2-3 disk gelişimiyle şimdi bunların hepsi disk sayfası dedik 3 disk gelişimiyle bunu yaptık.
+
+1014
+01:40:49,750 --> 01:41:01,750
+Ama eğer index kullanmasaydık bizim ana dosyamızda bütün tabloyu taramamız gerekecekti. Yani bu 3 sayfa olmayacaktı bu çok büyük ihtimalle.
+
+1015
+01:41:01,750 --> 01:41:10,750
+Buradaki kayıtlar belki işte 233 sayfaya sığacak. Yani örneklerimi biraz daha dikkat çeksin diye söylüyorum.
+
+1016
+01:41:10,750 --> 01:41:17,750
+O zaman bu bize bu oranda bir katkı sağlamış oluyor.
+
+1017
+01:41:17,750 --> 01:41:28,750
+Evet burada daha gerçekçi değerlerimiz var. Bakın typical order 100 diyor. Ben biraz önce 2300 dedim çünkü yani 4 kilobyte için zaten bir 200 bulduk.
+
+1018
+01:41:28,750 --> 01:41:35,750
+Yani 4096 mesela 30 byte'a böldük. 200-220 byte'a böldük mesela.
+
+1019
+01:41:35,750 --> 01:41:51,750
+8 kilobyte günümüzdeki veri tabanlarında kullanılan disk sayfaları gerekli veri tabanı kurulurken olabilir veya işletim sisteminin default olan sayfa büyüklüğüne göre ayarlanır.
+
+1020
+01:41:51,750 --> 01:41:59,750
+Buradaki rakamlar 8 kilobyte 16 kilobyte 32 kilobyte bunların hepsi olabilir.
+
+1021
+01:41:59,750 --> 01:42:13,750
+Böyleyken buradaki tipik değerler daha yüksek rakamlara çıkacak. Bununla beraber tipik olarak doluluk oranında biraz önce dediğim gibi 167 oluyor.
+
+1022
+01:42:13,750 --> 01:42:18,750
+Bunun 167'nin sebebini birazdan ortaya çıkacak onu söyleyeceğim.
+
+1023
+01:42:18,750 --> 01:42:30,750
+Ve gene tipik değerlerimiz ağacın yüksekliği 4 ise eğer fan altımız 133 ise burada 133 olarak kabul etmiş mesela.
+
+1024
+01:42:30,750 --> 01:42:48,750
+O zaman yapraklardan yola çıkarak kökten başlayarak her aşamada 133 tane yaprağa dallanacak alt ağaca dallanacak.
+
+1025
+01:42:48,750 --> 01:42:57,750
+Böylece ilk başta route'da bir tane var. Daha sonra 133 tane düğüm çıkacak. Daha sonra o 133'ün her birinden 133 tane daha çıkacak.
+
+1026
+01:42:57,750 --> 01:43:16,750
+Böyle böyle ağacın yüksekliği 4 olunca o zaman toplam olarak yükseklikten kastettiğim şeyle beraber yaprakların üzerindeki ağacın yüksekliği.
+
+1027
+01:43:16,750 --> 01:43:28,750
+Yaprakları hariç. Ağacın yüksekliği 4 ise toplam bakın bu kadar kayda bu kadar kayda yani 312 bin tane kayda 4 disk erişimi ile erişiyoruz.
+
+1028
+01:43:28,750 --> 01:43:42,750
+Eğer ağacın yüksekliği 3 ise 2 milyon tane kayda 312 milyon tane kayda burada 2 milyon tane kayda erişmiş oluyoruz.
+
+1029
+01:43:42,750 --> 01:43:53,750
+Şimdi burada disk erişimi yani bu kadar kayıttan bir tanesine veya ufak bir aralığa erişmek için yaptığımız disk erişim sayısı 3 veya 4 oldu bakın.
+
+1030
+01:43:53,750 --> 01:44:03,750
+300 milyon tane kayda erişeceğiz. Orada bir tane sorgu düşünün o kayıtlarda. Bir niteliğe göre bir arama yapıyoruz.
+
+1031
+01:44:03,750 --> 01:44:15,750
+O niteliğe göre böyle ağa yüksekliği 4 olan bir ağaç var ise o zaman 3-4 disk erişimi maksimum 4 disk erişimi ile burada hedefe ulaştık.
+
+1032
+01:44:15,750 --> 01:44:24,750
+Yani bu çok başarılı bir şey yani 300 milyon tane kayıttan ben bir arama yapıyorum ve direkt hedefe 3-4 adımda erişiyorum.
+
+1033
+01:44:24,750 --> 01:44:32,750
+Artı 3-4 adımda en kötü durum bakın. Çünkü arka planda bir de tampon organizasyonumuz var.
+
+1034
+01:44:32,750 --> 01:44:40,750
+Yani fiziksel tasarımda tabi bunlar daha detaylı olarak gerek sistem gerçeklemede gerek dosya organizasyonunda bunları anlatıyoruz.
+
+1035
+01:44:40,750 --> 01:44:48,750
+Yani sistemin tabi disk haberleşmesinde tabi bir de cache denilen tampon buffer denilen bölgeler var.
+
+1036
+01:44:48,750 --> 01:45:00,750
+İşte burada bir ağaç organizasyon noktasında düşündüğü zaman o ağacın kökü ve köke yakın olan düğümler yani şuradaki şu ağaç.
+
+1037
+01:45:00,750 --> 01:45:09,770
+Burada kök ve köke yakın olan düğümler çoğu zaman zaten tamponda bulunacak yani ana hafızada bulunacak.
+
+1038
+01:45:09,770 --> 01:45:23,770
+O zaman bundaki aydın yüksekliği en kötü durum. Yani sizdeki 300 milyon tane kayda ne dedim aydın yüksekliği 4 olduğu için 400 gevşim dedi.
+
+1039
+01:45:23,770 --> 01:45:35,770
+Aslında bu 1 veya 1.1 bitik falan yani çoğu kayıt için 1 çoğu kayıt için işte 2 mesela yani 1 ya da 2 olacak nihayetinde arada bir şey olmaz.
+
+1040
+01:45:35,770 --> 01:45:51,770
+Yani ortalama olarak 1-1.5 falan olacak. Nedeni çünkü arkada zaten çok da köke yakın olan düğümler zaten şu zaman tamponda olduğu için bu durum esasında en kötü durum.
+
+1041
+01:45:51,770 --> 01:45:59,770
+Yani şunu da demek istiyorum. Bu bitik rakamlar da böyle yani. Ağacın işte 10-20 olmuyor.
+
+1042
+01:45:59,770 --> 01:46:07,770
+Çünkü 300 milyon tane kayda. Zaten gigabaytlar bir hesap yapacak.
+
+1043
+01:46:07,770 --> 01:46:32,770
+Yani 40-50 byte çarpı 300 milyon desek mesela zaten buradaki bizim şeyimiz aydın ana dostlarımızın büyüklüğü hani çok büyük bir dosya zaten 300 milyon tane.
+
+1044
+01:46:32,770 --> 01:46:35,770
+Ağacın peşiniz birinden geliyor ama.
+
+1045
+01:46:35,770 --> 01:46:45,770
+1000 milyon tane kayıt içeren bu dosyamızla aramamız 1 veya 2 disk edişimiyle oluyor. Tamponların da yardımıyla.
+
+1046
+01:46:45,770 --> 01:46:50,770
+Böyle olunca bu peş olmaya başlamıyla esasında aynı kapıya çıkıyor.
+
+1047
+01:46:50,770 --> 01:46:55,770
+E buna ek olarak burada bir de aralık sorumlulukları imkanımız var yani.
+
+1048
+01:46:55,770 --> 01:46:57,770
+Biraz öncesinde onu gördük.
+
+1049
+01:46:57,770 --> 01:47:00,770
+Tüm imkandan dolayı 24.
+
+1050
+01:47:00,770 --> 01:47:03,770
+Bu aralık sorumlulukları için buraya geliştik.
+
+1051
+01:47:03,770 --> 01:47:05,770
+Burada inandık sıralı.
+
+1052
+01:47:05,770 --> 01:47:08,770
+Hani 24'den daha büyük olanların hepsi burada zaten.
+
+1053
+01:47:08,770 --> 01:47:10,770
+Sıralama esas da oluyor.
+
+1054
+01:47:10,770 --> 01:47:12,770
+Ama hash'te bu imkan yok.
+
+1055
+01:47:12,770 --> 01:47:15,770
+O cidden hash avantajını kaybediyor yani.
+
+1056
+01:47:15,770 --> 01:47:18,770
+Evet.
+
+1057
+01:47:18,770 --> 01:47:24,170
+Hocanın sesi duyulmuyor ama.
+
+1058
+01:47:30,170 --> 01:47:33,170
+Hoca bizi duyuyor ama o da.
+
+1059
+01:47:33,170 --> 01:47:36,170
+Kısık duyuluyor ama ben söyledim duymuyor.
+
+1060
+01:47:36,170 --> 01:47:39,170
+Hoca bizi duymuyor gibi sanki.
+
+1061
+01:47:41,170 --> 01:47:44,170
+Bizde kısık çıkıyor şu anda.
+
+1062
+01:47:45,170 --> 01:47:48,170
+Evet sorun mu var?
+
+1063
+01:47:48,170 --> 01:47:51,170
+Hocam sesiniz.
+
+1064
+01:47:51,170 --> 01:47:54,170
+Bizi duyabiliyor musunuz?
+
+1065
+01:47:54,170 --> 01:47:57,170
+Hocam sesiniz çok uzaktan geliyor.
+
+1066
+01:47:57,170 --> 01:47:59,170
+Duyamıyoruz sizi.
+
+1067
+01:47:59,170 --> 01:48:24,060
+Siz bizi duyabiliyor musunuz?
+
+1068
+01:48:24,060 --> 01:48:27,060
+Duyamıyorum zaten.
+
+1069
+01:48:27,060 --> 01:48:32,970
+Ben hiç duymadım zaten.
+
+1070
+01:48:32,970 --> 01:48:35,970
+Tamam yani.
+
+1071
+01:48:35,970 --> 01:48:38,970
+Hocam sen de baya bağırıyorum.
+
+1072
+01:48:38,970 --> 01:48:41,970
+Daha da bağırmam çok mühim değil.
+
+1073
+01:48:41,970 --> 01:48:44,970
+Videofonum da açık şu anda.
+
+1074
+01:48:44,970 --> 01:48:53,569
+Neyse zaten.
+
+1075
+01:48:53,569 --> 01:48:56,569
+Şu an güzel hocam.
+
+1076
+01:48:56,569 --> 01:48:59,569
+Şu an netleşti.
+
+1077
+01:48:59,569 --> 01:49:02,569
+Tamam belki mikrofon bağlantısında bir sorun vardı galiba.
+
+1078
+01:49:02,569 --> 01:49:05,569
+Evet hocam bir sürü neslesiniz çok uzaktan gelmeye başladı.
+
+1079
+01:49:05,569 --> 01:49:08,569
+Şimdi eskiye döndü.
+
+1080
+01:49:08,569 --> 01:49:11,569
+Evet.
+
+1081
+01:49:11,569 --> 01:49:14,569
+O zaman bakın 133 megabitlik bir elimde bir hafıza var ise.
+
+1082
+01:49:14,569 --> 01:49:17,569
+Bu ne demek oluyor?
+
+1083
+01:49:17,569 --> 01:49:20,569
+3 tane level'ı yani o ağacın.
+
+1084
+01:49:20,569 --> 01:49:23,569
+Şuradaki ağacın bu level'larını burada bir tane gözüküyor da.
+
+1085
+01:49:23,569 --> 01:49:26,569
+Ağacın bu level'ların 3 tanesini ana hafızada tutabilirim.
+
+1086
+01:49:26,569 --> 01:49:29,569
+O 3 tane seviyedeki bütün sayfaları.
+
+1087
+01:49:29,569 --> 01:49:32,569
+Ana hafızada tutabilmek demek oluyor.
+
+1088
+01:49:32,569 --> 01:49:35,569
+Bu ne demek o zaman?
+
+1089
+01:49:35,569 --> 01:49:38,569
+Ağacın yüksekliği 4 ise zaten 3 tanesini ana hafızada hallettim.
+
+1090
+01:49:38,569 --> 01:49:41,569
+Yani o 3 adımı ana hafızada hallettim.
+
+1091
+01:49:41,569 --> 01:49:44,569
+Yani 1 veya 2 disk gelişimi oluyor.
+
+1092
+01:49:44,569 --> 01:49:47,569
+O manayı burada hissettirmeye çalışmışken.
+
+1093
+01:49:47,569 --> 01:49:50,569
+O zaman yani çok avantajlı şeyler.
+
+1094
+01:49:50,569 --> 01:49:53,569
+Veli yapıları bunlar.
+
+1095
+01:49:53,569 --> 01:49:56,569
+Yani disk tabanlı.
+
+1096
+01:49:56,569 --> 01:49:59,569
+Veli tabanlarının içerisinde kullanılan.
+
+1097
+01:49:59,569 --> 01:50:02,569
+Veli yapıları olmuş oluyor.
+
+1098
+01:50:02,569 --> 01:50:05,569
+Şimdi burada bir beat tree'ye verinin eklenmesi.
+
+1099
+01:50:05,569 --> 01:50:08,569
+Ve silinmesiyle ilgili bazı detaylar var.
+
+1100
+01:50:08,569 --> 01:50:11,569
+Şimdi bu detayları.
+
+1101
+01:50:11,569 --> 01:50:14,569
+Veli eklenmesiyle ilgili ana hatlarıyla şöyle bir bahsedeyim.
+
+1102
+01:50:14,569 --> 01:50:17,569
+Burada ağacımız.
+
+1103
+01:50:17,569 --> 01:50:20,569
+Veli'miz.
+
+1104
+01:50:20,569 --> 01:50:23,569
+Örnekleri detaylı olarak yapmayalım.
+
+1105
+01:50:23,569 --> 01:50:26,569
+Şurada bir parça anlatalım.
+
+1106
+01:50:26,569 --> 01:50:29,569
+Burada mesela bir kayıt eklemek istiyoruz.
+
+1107
+01:50:29,569 --> 01:50:36,789
+Şurada mesela buraya 8 eklemek istiyoruz.
+
+1108
+01:50:39,789 --> 01:50:42,789
+Burada ilk önce 8 yok.
+
+1109
+01:50:42,789 --> 01:50:45,789
+Biz buraya 8 ekliyoruz.
+
+1110
+01:50:45,789 --> 01:50:48,789
+Şimdi sizden alalım o zaman.
+
+1111
+01:50:48,789 --> 01:50:51,789
+Böyle bir veli yapımız var.
+
+1112
+01:50:51,789 --> 01:50:54,789
+Burada ben mesela
+
+1113
+01:50:54,789 --> 01:51:04,060
+15 ekliyim.
+
+1114
+01:51:04,060 --> 01:51:07,060
+Burada 15 yaşında biri.
+
+1115
+01:51:07,060 --> 01:51:10,060
+Anadolsyaya eklendi.
+
+1116
+01:51:10,060 --> 01:51:13,060
+15 yaş indeksi de bu.
+
+1117
+01:51:13,060 --> 01:51:16,060
+Burada bizim yaş indeksimiz.
+
+1118
+01:51:16,060 --> 01:51:19,060
+15 değerini.
+
+1119
+01:51:19,060 --> 01:51:22,060
+Bu yaş indeksine eklemem gerekiyor.
+
+1120
+01:51:22,060 --> 01:51:25,060
+Çünkü anadolsyayla tutarlı olması lazım.
+
+1121
+01:51:25,060 --> 01:51:28,060
+Çünkü anadolsyayla tutarlı olması lazım.
+
+1122
+01:51:28,060 --> 01:51:31,060
+Ya bunu hemen ya da biraz gecikli olarak biraz önce anlattığım şekilde.
+
+1123
+01:51:31,060 --> 01:51:34,060
+Bu consistency sağlamak adına 15'i buraya eklemem lazım.
+
+1124
+01:51:34,060 --> 01:51:37,060
+Buraya 15'i eklemek için yine aramalarda olduğu gibi
+
+1125
+01:51:37,060 --> 01:51:40,060
+eklemek çıkarmalarda da yine route'dan başlıyorum.
+
+1126
+01:51:40,060 --> 01:51:43,060
+Ve bu 15'i nereye eklemem lazım onu bulmam lazım.
+
+1127
+01:51:43,060 --> 01:51:46,060
+O zaman route'a bakıyoruz.
+
+1128
+01:51:46,060 --> 01:51:49,060
+13, 17, 24.
+
+1129
+01:51:49,060 --> 01:51:52,060
+O zaman demek ki 17'den küçük olduğu için
+
+1130
+01:51:52,060 --> 01:51:55,060
+13'den küçük olduğu için.
+
+1131
+01:51:55,060 --> 01:51:58,060
+15'i buraya eklemem lazım.
+
+1132
+01:51:58,060 --> 01:52:01,060
+Buraya geldim.
+
+1133
+01:52:01,060 --> 01:52:04,060
+Yaprak düğümünde 14, 16, 15'i buraya ekleyebilirim.
+
+1134
+01:52:04,060 --> 01:52:07,060
+Dikkatler de gelebilir.
+
+1135
+01:52:07,060 --> 01:52:10,060
+Aynı değerler de gelebilir.
+
+1136
+01:52:10,060 --> 01:52:13,060
+Onları buraya ekledik.
+
+1137
+01:52:13,060 --> 01:52:16,060
+14, 15, 16 eklendi.
+
+1138
+01:52:16,060 --> 01:52:19,060
+Burada yer vardı.
+
+1139
+01:52:19,060 --> 01:52:22,060
+Bulduk burada.
+
+1140
+01:52:22,060 --> 01:52:25,060
+En fazla 4 tane kayıt yazabiliriz buraya.
+
+1141
+01:52:25,060 --> 01:52:28,060
+2 tane boşluğumuz vardı.
+
+1142
+01:52:28,060 --> 01:52:31,060
+15'i buraya ekledik.
+
+1143
+01:52:31,060 --> 01:52:34,060
+Ama mesela 8 gelse şimdi.
+
+1144
+01:52:34,060 --> 01:52:37,060
+8 yaşında biri eklenmiş anadolsyaya.
+
+1145
+01:52:37,060 --> 01:52:40,060
+8'i de edge indexine ekleyeceğim.
+
+1146
+01:52:40,060 --> 01:52:43,060
+O zaman burada gene route'dan başlıyorum.
+
+1147
+01:52:43,060 --> 01:52:46,060
+Ve 8'i şuraya eklemem lazım.
+
+1148
+01:52:46,060 --> 01:52:49,060
+Bakıyoruz bu sefer burada
+
+1149
+01:52:49,060 --> 01:52:52,060
+bu yaprak düğümünde yer kalmadı.
+
+1150
+01:52:52,060 --> 01:52:55,060
+O zaman böyle bir durumda
+
+1151
+01:52:55,060 --> 01:52:58,060
+bu yaprağı
+
+1152
+01:52:58,060 --> 01:53:01,060
+ne yapabilirim?
+
+1153
+01:53:01,060 --> 01:53:04,060
+Düşünsek ya burada bu sıralılığı
+
+1154
+01:53:04,060 --> 01:53:07,060
+muhafaza etmek adına
+
+1155
+01:53:07,060 --> 01:53:10,060
+şunları sağa doğru kaydırıp 8 buraya yazacağım.
+
+1156
+01:53:10,060 --> 01:53:13,060
+8, 14, 16, 19, 20.
+
+1157
+01:53:13,060 --> 01:53:16,060
+Bunu buraya yazmam demek
+
+1158
+01:53:16,060 --> 01:53:19,060
+potansiyel olarak burada çok büyük problem yüzükmüyor.
+
+1159
+01:53:19,060 --> 01:53:22,060
+Yani 8 buraya yazsam esasında
+
+1160
+01:53:22,060 --> 01:53:25,060
+lokale olarak problemi haline ettim.
+
+1161
+01:53:25,060 --> 01:53:28,060
+Ama bu çok uzun vadeli
+
+1162
+01:53:28,060 --> 01:53:31,060
+böyle çok geçerli bir
+
+1163
+01:53:31,060 --> 01:53:34,060
+çözüm değil.
+
+1164
+01:53:34,060 --> 01:53:37,060
+Çünkü eğer bu da doluysa
+
+1165
+01:53:37,060 --> 01:53:40,060
+en kötü durumda bu 8'i eklerken bunların hepsinin
+
+1166
+01:53:40,060 --> 01:53:43,060
+sağa doğru shift olması demek.
+
+1167
+01:53:43,060 --> 01:53:46,060
+Yani sorted file'deki
+
+1168
+01:53:46,060 --> 01:53:49,060
+başımıza ağrıtan noktaydı.
+
+1169
+01:53:49,060 --> 01:53:52,060
+İndeksi kullanmayın dosyayı ben zaten sıralı tutayım.
+
+1170
+01:53:52,060 --> 01:53:55,060
+Madem sıralı çok kıymetli. Ben bu dosyayı sıralı tutayım.
+
+1171
+01:53:55,060 --> 01:53:58,060
+Sıralı tutmaya kalktığımız zaman
+
+1172
+01:53:58,060 --> 01:54:01,060
+başımıza ağrıtan sıkıntı olan nokta
+
+1173
+01:54:01,060 --> 01:54:04,060
+yeni gelen kayıtların araya sıkıştırılması ve
+
+1174
+01:54:04,060 --> 01:54:07,060
+diğer kayıtların da shift edilmesi.
+
+1175
+01:54:07,060 --> 01:54:10,060
+Aşağıya doğru kaydırılması manasında.
+
+1176
+01:54:10,060 --> 01:54:13,060
+Şimdi ben aynı yaklaşımı yaparsam
+
+1177
+01:54:13,060 --> 01:54:16,060
+o zaman lokal bir çözüm olmuyor.
+
+1178
+01:54:16,060 --> 01:54:19,060
+İşte burada olayı daha lokal bir şekilde halletmek adına
+
+1179
+01:54:19,060 --> 01:54:22,060
+buradaki sayfayı split ediyoruz.
+
+1180
+01:54:22,060 --> 01:54:25,060
+Yani ikiye bölme. Yani burada ne var?
+
+1181
+01:54:25,060 --> 01:54:28,060
+8 buraya eklenecek ya.
+
+1182
+01:54:28,060 --> 01:54:31,060
+2, 3, 5, 7 şurada bir de 8 ayar edelim.
+
+1183
+01:54:31,060 --> 01:54:34,060
+Bunu ortadan ikiye böleceğim.
+
+1184
+01:54:34,060 --> 01:54:37,060
+Yani bu sayfa iki sayfa olacak.
+
+1185
+01:54:37,060 --> 01:54:40,060
+2, 3 var veya 2, 3, 5 var.
+
+1186
+01:54:40,060 --> 01:54:43,060
+Artık ortadaki elamını sola veya sağa koymak
+
+1187
+01:54:43,060 --> 01:54:46,060
+ne şekilde ortam karar alındıysa
+
+1188
+01:54:46,060 --> 01:54:49,060
+bundan sonra hep öyle yapmam gerekiyor.
+
+1189
+01:54:49,060 --> 01:54:52,060
+Bakalım ileride nasıl yapmış.
+
+1190
+01:54:52,060 --> 01:54:55,060
+2, 3 yani küçük olan
+
+1191
+01:54:55,060 --> 01:54:58,060
+böldükten sonra küçük olanı sola atmış.
+
+1192
+01:54:58,060 --> 01:55:01,060
+Büyük olanı sağa atmış. Yani bakın ne yapmış burada?
+
+1193
+01:55:01,060 --> 01:55:04,060
+2, 3, 5, 7, 8 yaptı.
+
+1194
+01:55:04,060 --> 01:55:07,060
+O düğümü ikiye böldük.
+
+1195
+01:55:07,060 --> 01:55:10,060
+Şurada. Şurada ne yaptık?
+
+1196
+01:55:10,060 --> 01:55:13,060
+2, 3, 5, 7, 8 yaptık.
+
+1197
+01:55:13,060 --> 01:55:16,060
+Şimdi burada iki tane artık düğüm oldu.
+
+1198
+01:55:16,060 --> 01:55:19,060
+Bu iki düğümü birbirinden ayırt edecek bir
+
+1199
+01:55:19,060 --> 01:55:22,060
+arama anahtarına ihtiyacım var.
+
+1200
+01:55:22,060 --> 01:55:25,060
+O da ne olacaktır? 2, 3, 5, 7, 8 olduğu için
+
+1201
+01:55:25,060 --> 01:55:28,060
+o da 5 olacak.
+
+1202
+01:55:28,060 --> 01:55:31,060
+Yani 5'i benim şu pörıntına
+
+1203
+01:55:31,060 --> 01:55:34,060
+şu iki düğümün pörıntına
+
+1204
+01:55:34,060 --> 01:55:37,060
+o 5'i eklemem lazım.
+
+1205
+01:55:37,060 --> 01:55:40,060
+Öyle değil mi? Çünkü aksi taktirde
+
+1206
+01:55:40,060 --> 01:55:43,060
+bakın bütün bu düğümleri birbirinden
+
+1207
+01:55:43,060 --> 01:55:46,060
+ayırt edecek arama anahtarları
+
+1208
+01:55:46,060 --> 01:55:49,060
+onların pörıntlarında. Yani şu ikisini
+
+1209
+01:55:49,060 --> 01:55:52,060
+ayırt edecek olan arama anahtarı 13'müş.
+
+1210
+01:55:52,060 --> 01:55:55,060
+Tabii bu ilk ağaç bu hale gelinceye kadar
+
+1211
+01:55:55,060 --> 01:55:58,060
+ekleme çıkarmalar da bu hale gelmiş.
+
+1212
+01:55:58,060 --> 01:56:01,060
+Burada 17 bu ikisini ayırıyor. Bu ikisini böyle
+
+1213
+01:56:01,060 --> 01:56:04,060
+ayıran 24 oldu. Bu ikisini ayıran 30 oldu.
+
+1214
+01:56:04,060 --> 01:56:07,060
+İşte burada da ben bir sprit yaptıysam
+
+1215
+01:56:07,060 --> 01:56:10,060
+2, 3, 5, 7, 8 bu ikisini ayıracak olan
+
+1216
+01:56:10,060 --> 01:56:13,060
+bir anahtarı yukarıya eklemem lazım.
+
+1217
+01:56:13,060 --> 01:56:16,060
+O da 2, 3, 5, 7, 8'den
+
+1218
+01:56:16,060 --> 01:56:19,060
+o 5'i ayırmak için yeterli.
+
+1219
+01:56:19,060 --> 01:56:22,060
+Yani 4 da olabilir.
+
+1220
+01:56:22,060 --> 01:56:25,060
+Ama burada hani niye arada bir rakam seçeyim.
+
+1221
+01:56:25,060 --> 01:56:28,060
+Sağ taraftaki kardeşin
+
+1222
+01:56:28,060 --> 01:56:31,060
+en küçük değeri olan 5'i
+
+1223
+01:56:31,060 --> 01:56:34,060
+yukarıya eklemem lazım. Bakalım şimdi
+
+1224
+01:56:34,060 --> 01:56:37,060
+burada nasıl yaptı onu.
+
+1225
+01:56:37,060 --> 01:56:40,060
+Burada onun detaylarını anlatıyor.
+
+1226
+01:56:40,060 --> 01:56:43,060
+Bakın burada 2, 3, 5, 7, 8. 5'i aldık.
+
+1227
+01:56:43,060 --> 01:56:46,060
+Yukarıya eklemem lazım ki ta ki bu 2
+
+1228
+01:56:46,060 --> 01:56:49,060
+sibling kardeş demek bu 2 sibling'i
+
+1229
+01:56:49,060 --> 01:56:52,060
+birbirinden ayırt edebileyim. Şimdi o zaman
+
+1230
+01:56:52,060 --> 01:56:55,060
+5'i yukarıya eklemem demek
+
+1231
+01:56:55,060 --> 01:56:58,060
+buraya 5 eklenecek ama
+
+1232
+01:56:58,060 --> 01:57:01,060
+burada da yer yok. Bu da doldu.
+
+1233
+01:57:01,060 --> 01:57:04,060
+O zaman bunu da ikiye bölüyeceğim.
+
+1234
+01:57:04,060 --> 01:57:07,060
+O zaman bakın ağacın yüksekliğinin
+
+1235
+01:57:07,060 --> 01:57:10,060
+artması gerekiyor. Çünkü artık
+
+1236
+01:57:10,060 --> 01:57:13,060
+bunun ikiye bölünmesi demek bu sefer
+
+1237
+01:57:13,060 --> 01:57:16,060
+ne oldu? Burada 5 var hayali olarak.
+
+1238
+01:57:16,060 --> 01:57:19,060
+5, 13, 17 var.
+
+1239
+01:57:19,060 --> 01:57:22,060
+5, 13 var. Kardeşinde de 17, 24 olacak.
+
+1240
+01:57:22,060 --> 01:57:25,060
+Ve burada da o iki kardeşi birbirinden
+
+1241
+01:57:25,060 --> 01:57:28,060
+ayırt edecek olan bir anahtar ki o
+
+1242
+01:57:28,060 --> 01:57:31,060
+17 olacak. 17'yi bu sefer bir üst
+
+1243
+01:57:31,060 --> 01:57:34,060
+tarafa eklemem lazım. Yeni bir tane
+
+1244
+01:57:34,060 --> 01:57:37,060
+düğüm ki o root. Root oluştu. Böylece
+
+1245
+01:57:37,060 --> 01:57:40,060
+ağacın yüksekliği bir artmış oldu. O zaman
+
+1246
+01:57:40,060 --> 01:57:43,060
+eklemelerde ağacın yüksekliğinin
+
+1247
+01:57:43,060 --> 01:57:46,060
+artması kökten sonra oluyor. Yani
+
+1248
+01:57:46,060 --> 01:57:49,060
+eklenmesiyle oluyor. Yoksa ağacımız burada belki
+
+1249
+01:57:49,060 --> 01:57:52,060
+konuya başlarken söylemem lazım. Unuttum.
+
+1250
+01:57:52,060 --> 01:57:55,060
+Ağaç her zaman dengeli. Yani hiçbir zaman burada
+
+1251
+01:57:55,060 --> 01:57:58,060
+search tree'yi hatırlarsınız. Ağaç böyle bir
+
+1252
+01:57:58,060 --> 01:58:01,060
+tarafa doğru meyil etmiyor. Böyle eklemeler buraya geldikçe
+
+1253
+01:58:01,060 --> 01:58:04,060
+ağaç böyle gittikçe bu tarafa doğru düğümler artmıyor.
+
+1254
+01:58:04,060 --> 01:58:07,060
+Yani burada kökü olan uzaklık neyse
+
+1255
+01:58:07,060 --> 01:58:10,060
+bütün yapılaklarda kökü uzaklık her zaman aynı.
+
+1256
+01:58:10,060 --> 01:58:13,060
+İşte bu spilit sayesinde oldu.
+
+1257
+01:58:13,060 --> 01:58:16,060
+Burada spilit ettik. Ekleme oldu buraya.
+
+1258
+01:58:16,060 --> 01:58:19,060
+Buraya da spilit edeceğim. Burada da 5, 13,
+
+1259
+01:58:19,060 --> 01:58:22,060
+17, 24, 30, 17'i de root'a ekledik.
+
+1260
+01:58:22,060 --> 01:58:25,060
+Bakalım öyle mi olmuş? İnşallah öyle olmuştur.
+
+1261
+01:58:25,060 --> 01:58:28,060
+17, 5, 13, 17, 24, 30'da
+
+1262
+01:58:28,060 --> 01:58:31,060
+17'yi bu sefer yukarı çektik.
+
+1263
+01:58:31,060 --> 01:58:34,060
+Yani 17'yi burada tutmamak gerek kalmadı.
+
+1264
+01:58:34,060 --> 01:58:37,060
+17'yi bu sefer yukarıya
+
+1265
+01:58:37,060 --> 01:58:40,060
+çektik. 17 burada da durabilirdi belki.
+
+1266
+01:58:40,060 --> 01:58:43,060
+Hem 17 burada hem burada olabilirdi. Biz zararı yok.
+
+1267
+01:58:43,060 --> 01:58:46,060
+Çünkü buradan küçük eşit, büyük eşit olanlar var.
+
+1268
+01:58:46,060 --> 01:58:49,060
+Burada yer kaplamasın diye bunu buradan silebilirim.
+
+1269
+01:58:49,060 --> 01:58:52,060
+17'yi buraya taşımış olduk.
+
+1270
+01:58:52,060 --> 01:58:55,060
+Ama burada şu 5'i silmedim bakın. Çünkü burada
+
+1271
+01:58:55,060 --> 01:58:58,060
+artık bu verinin var olduğunu kast ediyor.
+
+1272
+01:58:58,060 --> 01:59:01,060
+Yani bunlar bizim arama kontrol anahtarlarımız.
+
+1273
+01:59:01,060 --> 01:59:04,060
+Bunlar veri kayıtları. Yani burada 5 var.
+
+1274
+01:59:04,060 --> 01:59:07,060
+5 diye bir kayıt. 5 yaşında biri var.
+
+1275
+01:59:07,060 --> 01:59:10,060
+Bunlar burada. O yüzden 5 burada olması lazım.
+
+1276
+01:59:10,060 --> 01:59:13,060
+O kişinin varlığını kaybetmemek adına.
+
+1277
+01:59:13,060 --> 01:59:16,060
+5 bilgisini kaybetmemek. Ama burada bunlar
+
+1278
+01:59:16,060 --> 01:59:19,060
+kontrol olduğu için zaten şuradaki verilerin bakın tekrarı.
+
+1279
+01:59:19,060 --> 01:59:22,060
+Yani çoğu zaman tekrarı. Bazen de silinmiş
+
+1280
+01:59:22,060 --> 01:59:25,060
+ama burada silinmemiş olan anahtar olabilir.
+
+1281
+01:59:25,060 --> 01:59:28,060
+O yüzden bunların maksadı
+
+1282
+01:59:28,060 --> 01:59:31,060
+veriyi temsil etmek değil. Yani 17 yaşında biri var
+
+1283
+01:59:31,060 --> 01:59:34,060
+gerçekten demek değil. Verinin
+
+1284
+01:59:35,060 --> 01:59:38,060
+varlığını ifade eden şu yapraktaki bilgiler.
+
+1285
+01:59:38,060 --> 01:59:41,060
+O yüzden burada spritten sonra şu 5'i
+
+1286
+01:59:41,060 --> 01:59:44,060
+burada tekrarı silmedim. Silmem de yanlış olurdu zaten.
+
+1287
+01:59:44,060 --> 01:59:47,060
+Ama burada 17'i sildik.
+
+1288
+01:59:47,060 --> 01:59:50,060
+O zaman ağacımızın yüksekliği 2 iken
+
+1289
+01:59:50,060 --> 01:59:53,060
+8'i ekleyerek ağacın yüksekliği
+
+1290
+01:59:53,060 --> 01:59:56,060
+3'e çıktı.
+
+1291
+01:59:56,060 --> 01:59:59,060
+Böylece aramalarımın maliyeti biraz daha
+
+1292
+01:59:59,060 --> 02:00:02,060
+arttı. Yani mesela burada
+
+1293
+02:00:02,060 --> 02:00:05,060
+24'ü arıyorsam 17
+
+1294
+02:00:05,060 --> 02:00:08,060
+şuraya geleceğim 24. Buraya geleceğim
+
+1295
+02:00:08,060 --> 02:00:11,060
+ağacın yüksekliği 3 olduğu için 3 disk erişimiyle
+
+1296
+02:00:11,060 --> 02:00:14,060
+gene tamponu ihmal etsek tampolu saymasak yani
+
+1297
+02:00:14,060 --> 02:00:17,060
+onu düşünmeyecek 3 disk erişimi olacak.
+
+1298
+02:00:17,060 --> 02:00:20,060
+Ama tampon varsa zaten bunlar tamponla 1 disk erişimiyle
+
+1299
+02:00:20,060 --> 02:00:23,060
+gelişmiş oluyoruz. Evet.
+
+1300
+02:00:23,060 --> 02:00:26,060
+Insert böyle.
+
+1301
+02:00:26,060 --> 02:00:29,060
+Yani ana hatları da böyle. Tabii içeride daha
+
+1302
+02:00:30,060 --> 02:00:33,060
+çok yapılanmalar var. Yani
+
+1303
+02:00:33,060 --> 02:00:36,060
+sprit yapmadan
+
+1304
+02:00:36,060 --> 02:00:39,060
+redistribüt yapmak gibi mesela.
+
+1305
+02:00:39,060 --> 02:00:42,060
+Ondan da bir parça bahsedeyim. Onlar zaten şuraya
+
+1306
+02:00:42,060 --> 02:00:45,060
+bakarken bahsettik. Yani 8'i buraya
+
+1307
+02:00:45,060 --> 02:00:48,060
+ekleme noktasında eğer sprit yapmadan
+
+1308
+02:00:48,060 --> 02:00:51,060
+buna imkan var mı? Buna imkan
+
+1309
+02:00:51,060 --> 02:00:54,060
+esasında var. Ben ilk söylediğim de oydu.
+
+1310
+02:00:54,060 --> 02:00:57,060
+8'i şuraya eklesek ne güzel olur. Hiç bu o yapıyı
+
+1311
+02:00:57,060 --> 02:01:00,060
+yapma. Çünkü biraz önceki yapılanma bir sürü işlem
+
+1312
+02:01:00,060 --> 02:01:03,060
+gerektiriyor. Yani bu sayfaların alokat edilmesi
+
+1313
+02:01:03,060 --> 02:01:06,060
+yani arkada düşünün. Sonuçta bir dosyanın
+
+1314
+02:01:06,060 --> 02:01:09,060
+yeni bir sayfa eklenmesi, bir root
+
+1315
+02:01:09,060 --> 02:01:12,060
+eklenmesi ve ağacın yer verimini de
+
+1316
+02:01:12,060 --> 02:01:15,060
+azalıyor. Yani burada yeni bir sayfa
+
+1317
+02:01:15,060 --> 02:01:18,060
+eklenmesini bakın tam dolu bir sayfa varken
+
+1318
+02:01:18,060 --> 02:01:21,060
+şurada yarı dolu iki sayfa ortaya
+
+1319
+02:01:21,060 --> 02:01:24,060
+çıktı bakın. Yani hani yer verimini
+
+1320
+02:01:24,060 --> 02:01:27,060
+ortalama 167 dedik ya. E o nasıl oldu? İşte
+
+1321
+02:01:27,060 --> 02:01:30,060
+bu spritlerden dolayı oldu. Yani ben spriti
+
+1322
+02:01:30,060 --> 02:01:33,060
+yapmam lazım. Bu yer verimliğini azaltan bir şey
+
+1323
+02:01:33,060 --> 02:01:37,060
+oldu. İşte bu spriti bir parça böyle
+
+1324
+02:01:37,060 --> 02:01:40,060
+hafifletmek için, yükünü hafifletmek için böyle
+
+1325
+02:01:40,060 --> 02:01:43,060
+redistribüt gibi algoritmalar var. Arkada böyle
+
+1326
+02:01:43,060 --> 02:01:46,060
+ek, yamalar var. Ama bu da tabi kısıtlı.
+
+1327
+02:01:46,060 --> 02:01:49,060
+Yani eğer bunlar dolu olsa, bunlar dolu
+
+1328
+02:01:49,060 --> 02:01:52,060
+olsa mesela redistribüt yapamayacağım.
+
+1329
+02:01:52,060 --> 02:01:55,060
+Çünkü bunlar hepsi shift olmak zorunda kalacak. Yani ne böyle
+
+1330
+02:01:55,060 --> 02:01:58,060
+shift olsun hepsi böyle etkilensin.
+
+1331
+02:01:58,060 --> 02:02:01,060
+Ne de böyle hemen sprit yapayım. İşte
+
+1332
+02:02:01,060 --> 02:02:04,060
+redistribüt dediğim yöntem ikisi arasında ortada bir şey.
+
+1333
+02:02:04,060 --> 02:02:07,060
+Yani bunun komşuna bakıyorum. Komşusu müsaitse
+
+1334
+02:02:07,060 --> 02:02:10,060
+bana yardım etsin. Yani 8'i ben buraya yazabiliyor muyum?
+
+1335
+02:02:10,060 --> 02:02:13,060
+Yazıyorum gerçekten. Bak şurada boşluklar var.
+
+1336
+02:02:13,060 --> 02:02:16,060
+8, 14, 16. Bu yukarıda da hiçbir
+
+1337
+02:02:16,060 --> 02:02:19,060
+değişikliğe sebebiyet vermedi. Yani buraya
+
+1338
+02:02:19,060 --> 02:02:22,060
+8 yazdığım zaman gene şu şey
+
+1339
+02:02:22,060 --> 02:02:25,060
+aynı. 13'ten küçük olanlar bu tarafa.
+
+1340
+02:02:25,060 --> 02:02:28,060
+13'ten büyük olanlar, büyük eşit olanlar
+
+1341
+02:02:28,060 --> 02:02:31,060
+bu tarafa olacak şekilde.
+
+1342
+02:02:31,060 --> 02:02:34,060
+8'i buraya yazmam.
+
+1343
+02:02:34,060 --> 02:02:37,060
+Yukarıda bir değişikliğe sebebiyet verdi mi?
+
+1344
+02:02:37,060 --> 02:02:40,060
+Vermedi dedim ama vermesi lazım. Verdi yani.
+
+1345
+02:02:40,060 --> 02:02:43,060
+8'i buraya yazdığım zaman bunun da 13'ün 8 olması lazım.
+
+1346
+02:02:43,060 --> 02:02:46,060
+Yani çünkü bu taraf neydi?
+
+1347
+02:02:46,060 --> 02:02:49,060
+Büyük eşit. Bu taraf küçük idi. O zaman ben buraya
+
+1348
+02:02:49,060 --> 02:02:52,060
+8'i kaydırdıysam bunun pörntüne gidip
+
+1349
+02:02:52,060 --> 02:02:55,060
+onu güncellemem lazım ki aramalarda kaybolmayayım
+
+1350
+02:02:55,060 --> 02:02:58,060
+yani buraya. 13 yazarsam 8 kaybolacak.
+
+1351
+02:02:58,060 --> 02:03:01,060
+Sadece 13'ten büyük olanlar için buraya gideceğim.
+
+1352
+02:03:01,060 --> 02:03:04,060
+Mesela 10 geldiği zaman hiç buraya gitmeyeceğim.
+
+1353
+02:03:04,060 --> 02:03:07,060
+8'i kaybetmiş olacağım. O zaman demek ki
+
+1354
+02:03:07,060 --> 02:03:10,060
+redistribüt ile ufak bir yamayla
+
+1355
+02:03:10,060 --> 02:03:13,060
+buraya ekledim ve bunun pörntünü güncelledim
+
+1356
+02:03:13,060 --> 02:03:16,060
+Ama bu her zaman mümkün olmayabilir. Burası doluysa
+
+1357
+02:03:16,060 --> 02:03:19,060
+o zaman daha da öteye bakmıyorsak
+
+1358
+02:03:19,060 --> 02:03:22,060
+yani artık o algoritmanın derinliğine göre
+
+1359
+02:03:22,060 --> 02:03:25,060
+bakmanın da avantajı olabilir
+
+1360
+02:03:25,060 --> 02:03:28,060
+veya baktık şift edilmesi gerekiyor
+
+1361
+02:03:28,060 --> 02:03:31,060
+onun bir maniyeti olabilir. Bunlar tabii
+
+1362
+02:03:31,060 --> 02:03:34,060
+arkada sistemin yaptığı şeyler
+
+1363
+02:03:34,060 --> 02:03:37,060
+karşılaştırmalar yani sistem tasarımı artık
+
+1364
+02:03:37,060 --> 02:03:40,060
+burada yapabildik yani
+
+1365
+02:03:40,060 --> 02:03:43,060
+ama eğer yapamıyorsak redistribüt bunu
+
+1366
+02:03:43,060 --> 02:03:46,060
+burdan spritle ortadan ikiye böleceğiz
+
+1367
+02:03:46,060 --> 02:03:49,060
+bu ağacın yüksekliğini bir arttırmış oldu
+
+1368
+02:03:49,060 --> 02:03:52,060
+o zaman spritz grow tree
+
+1369
+02:03:52,060 --> 02:03:55,060
+root sprit increase height. Bakın şurada şöyle bir cümle
+
+1370
+02:03:55,060 --> 02:03:58,060
+spritz bizim ağacımızın büyümesine
+
+1371
+02:03:58,060 --> 02:04:01,060
+sebebiyet verdi. Yer verimliliğini
+
+1372
+02:04:01,060 --> 02:04:04,060
+azalttı. Düşünün bir dolu bir tane sayfamızdan
+
+1373
+02:04:04,060 --> 02:04:07,060
+ikiye böldüm. Yüzde 50 dolu sayfalar oldu
+
+1374
+02:04:07,060 --> 02:04:10,060
+ağacın bu yer verimliliğine zarar vermiş oldu
+
+1375
+02:04:10,060 --> 02:04:13,060
+ama ağacın dengeli
+
+1376
+02:04:13,060 --> 02:04:16,060
+olmasını sağlamak için elimizdeki
+
+1377
+02:04:16,060 --> 02:04:19,060
+yegane yapı sprit algoritması oluyor
+
+1378
+02:04:19,060 --> 02:04:22,060
+yani o sayfaların sprit olması oluyor
+
+1379
+02:04:22,060 --> 02:04:25,060
+ve nihayetinde root sprit olursa
+
+1380
+02:04:25,060 --> 02:04:28,060
+ağacın yüksekliği de bir artmış oluyor
+
+1381
+02:04:28,060 --> 02:04:31,060
+şuradaki gördüğümüz gibi
+
+1382
+02:04:31,060 --> 02:04:34,060
+deleting biraz daha karmaşık
+
+1383
+02:04:34,060 --> 02:04:37,060
+ve çoğu zaman da
+
+1384
+02:04:37,060 --> 02:04:40,060
+sistemlerde hemen delete yapmıyor
+
+1385
+02:04:40,060 --> 02:04:43,060
+çünkü delete yapmak
+
+1386
+02:04:43,060 --> 02:04:46,060
+eğer sayfa kapasitesinin
+
+1387
+02:04:46,060 --> 02:04:49,060
+alt sınırının aşağısına düşmüyorsa
+
+1388
+02:04:49,060 --> 02:04:52,060
+bu sprit
+
+1389
+02:04:52,060 --> 02:04:55,060
+delete herhangi bir noktada
+
+1390
+02:04:55,060 --> 02:04:58,060
+sadece bir silme olacak. Yani yaprak
+
+1391
+02:04:58,060 --> 02:05:01,060
+mesela burada 8'i siliyorsak bu 8'i sileceğiz
+
+1392
+02:05:01,060 --> 02:05:04,060
+ama 7'i de siliyorsak o zaman
+
+1393
+02:05:04,060 --> 02:05:07,060
+biraz önce bahsettiğim o alt sınırın aşağısına düştük
+
+1394
+02:05:07,060 --> 02:05:10,060
+o zaman bu kardeşleriyle birleşmesi lazım
+
+1395
+02:05:10,060 --> 02:05:13,060
+yani 5'i ya şunlarla birleştireceğim 2-3-5 olacak
+
+1396
+02:05:13,060 --> 02:05:16,060
+ya da 5'i şu tarafa aktaracağım bunlarla birleşecek
+
+1397
+02:05:16,060 --> 02:05:19,060
+yani merge diyoruz buna da
+
+1398
+02:05:19,060 --> 02:05:22,060
+merge deniyor o zaman
+
+1399
+02:05:22,060 --> 02:05:25,060
+ya bununla merge olacak ya da bununla merge olacak
+
+1400
+02:05:25,060 --> 02:05:28,060
+böyle olunca bu yukarıda da mergelere
+
+1401
+02:05:28,060 --> 02:05:31,060
+sebebiyet verebiliriz. Öylece route'a kadar
+
+1402
+02:05:31,060 --> 02:05:34,060
+bu merge'e, merge'ler vs. bu merge güzel bir şey
+
+1403
+02:05:34,060 --> 02:05:37,060
+ağacın yaya verimliğinden artıyor
+
+1404
+02:05:37,060 --> 02:05:40,060
+artık böyle boşluklar birleşerek dolmuş oluyor
+
+1405
+02:05:40,060 --> 02:05:43,060
+ancak tabi çok maniyetli
+
+1406
+02:05:43,060 --> 02:05:46,060
+yani biraz önceki spritin maniyeti gibi
+
+1407
+02:05:46,060 --> 02:05:49,060
+sayfalarla oynamaya başladığımız için
+
+1408
+02:05:49,060 --> 02:05:52,060
+hani bazen işte bizim normal bir Word
+
+1409
+02:05:52,060 --> 02:05:55,060
+dokümanında da veya olduğu gibi
+
+1410
+02:05:55,060 --> 02:05:58,060
+bazen böyle işler yapmıyoruz belki ama
+
+1411
+02:05:58,060 --> 02:06:01,060
+işte bir veri yığını varsa arkada
+
+1412
+02:06:01,060 --> 02:06:04,060
+bazen işte donuyor arka planda yani
+
+1413
+02:06:04,060 --> 02:06:07,060
+arka planda donmasa arkada işte bu sayfaların
+
+1414
+02:06:07,060 --> 02:06:10,060
+organizasyonunu yapıyor yani arkada bir index yapısı varsa
+
+1415
+02:06:10,060 --> 02:06:13,060
+işte o orada bir merge oluyor belki
+
+1416
+02:06:13,060 --> 02:06:16,060
+çünkü bayağı bir veri sindik oradan mesela
+
+1417
+02:06:16,060 --> 02:06:19,060
+veya yeni bir veri ekledik artık yeni sayfalar oluşuyor
+
+1418
+02:06:19,060 --> 02:06:22,060
+ağacın yüksekliği artıyor falan
+
+1419
+02:06:22,060 --> 02:06:25,060
+mesela burada şöyle bir senaryo şey yapalım
+
+1420
+02:06:25,060 --> 02:06:28,060
+ben burada 8'i sildim tamam hiçbir merge sebebiyet vermedi
+
+1421
+02:06:28,060 --> 02:06:31,060
+sınırın altına düşmedik 7'i sildim
+
+1422
+02:06:31,060 --> 02:06:34,060
+bu sefer sınırın altına düştüğüm için
+
+1423
+02:06:34,060 --> 02:06:37,060
+ne olacak hemen merge etme telaşına düştük
+
+1424
+02:06:37,060 --> 02:06:40,060
+yani bunu %50'nin aşağısına düştük ya
+
+1425
+02:06:40,060 --> 02:06:43,060
+5'i ya buraya atacağım ya buraya atacağım falan
+
+1426
+02:06:43,060 --> 02:06:46,060
+bu da yukarılarda şimdi sadece
+
+1427
+02:06:46,060 --> 02:06:49,060
+bir tane ağaç var ama bir tane düğün var burada
+
+1428
+02:06:49,060 --> 02:06:52,060
+yukarlarda da merge sebebiyet verir
+
+1429
+02:06:52,060 --> 02:06:55,060
+en kötü ihtimal de benim buradaki bir merge'un
+
+1430
+02:06:55,060 --> 02:06:58,060
+bütün ağacın yüksekliğinin bir azalmasına sebebiyet verebilir
+
+1431
+02:06:58,060 --> 02:07:01,060
+ve masraflı işlemler sonucunda
+
+1432
+02:07:01,060 --> 02:07:04,060
+çünkü en nihayetinde o route'un iki çocuğu
+
+1433
+02:07:04,060 --> 02:07:07,060
+merge olduysa o zaman route uçtu
+
+1434
+02:07:07,060 --> 02:07:10,060
+o iki çocuk merge olduğu zaman bir tane
+
+1435
+02:07:10,060 --> 02:07:13,060
+yeni bir route ortaya çıktı
+
+1436
+02:07:13,060 --> 02:07:16,060
+ağacın yüksekliği bir azaldı
+
+1437
+02:07:16,060 --> 02:07:19,060
+şimdi bu 7'i gene eklersek
+
+1438
+02:07:19,060 --> 02:07:22,060
+veya ağacın yüksekliğine bir artma sebebi
+
+1439
+02:07:22,060 --> 02:07:25,060
+1 derece kullanan 20 kayıt eklersek
+
+1440
+02:07:25,060 --> 02:07:28,060
+hadi yine o zaman speed edeceğiz
+
+1441
+02:07:28,060 --> 02:07:31,060
+ağacın yüksekliği bir artması için yine masrafta bir işlem yapacağız
+
+1442
+02:07:31,060 --> 02:07:34,060
+yani demek istediğimi anladınız umarım
+
+1443
+02:07:34,060 --> 02:07:37,060
+yani bu delete yapmak yerine bu kadar böyle
+
+1444
+02:07:37,060 --> 02:07:40,060
+tehlikeli masrafa girmekten ise
+
+1445
+02:07:40,060 --> 02:07:43,060
+bu delete'leri böyle daha
+
+1446
+02:07:44,060 --> 02:07:47,060
+yani
+
+1447
+02:07:47,060 --> 02:07:50,060
+merge'i böyle yapmayı ertelemek
+
+1448
+02:07:50,060 --> 02:07:53,060
+yani tamam burası biraz boş kalsın
+
+1449
+02:07:53,060 --> 02:07:56,060
+benim yer verimlerime zarar veriyor
+
+1450
+02:07:56,060 --> 02:07:59,060
+tamam bir tane kayıt kaldı ama şimdi ben bunu merge yapsam
+
+1451
+02:07:59,060 --> 02:08:02,060
+işte hemen bir sonraki eklemede tekrar
+
+1452
+02:08:02,060 --> 02:08:05,060
+başka operasyonlar yapmamın tehlikesinden dolayı
+
+1453
+02:08:05,060 --> 02:08:08,060
+bunları boş bırakıp beni periodlarla
+
+1454
+02:08:08,060 --> 02:08:11,060
+yani işte 3 saat 5 saat günlük periodlarla
+
+1455
+02:08:11,060 --> 02:08:14,060
+bakıldığı zaman yani burada gerçekten yer verimini artık baya
+
+1456
+02:08:14,060 --> 02:08:17,060
+düşmüş %30'lara %40'lara o zaman bu yapıyı
+
+1457
+02:08:17,060 --> 02:08:20,060
+işte bir parça kenara çekip
+
+1458
+02:08:20,060 --> 02:08:23,060
+burada bir bakım çalışması yapmamız lazım işte
+
+1459
+02:08:23,060 --> 02:08:26,060
+%30'dan %70'e çekti o sırada da
+
+1460
+02:08:26,060 --> 02:08:29,060
+eklemeler varsa yani çok dinamik bir sistemse
+
+1461
+02:08:29,060 --> 02:08:32,060
+o eklemeler bir parça bekleyebilir
+
+1462
+02:08:32,060 --> 02:08:35,060
+yani tabi hep bunlar sistem gerçeklemesiyle ilgili
+
+1463
+02:08:35,060 --> 02:08:38,060
+çok ayar gerektiren işte database tuning denilen
+
+1464
+02:08:39,060 --> 02:08:42,060
+fine tuning mesela yine ince ayarlar
+
+1465
+02:08:42,060 --> 02:08:45,060
+bunlar gerek Edmin'in yapacağı
+
+1466
+02:08:45,060 --> 02:08:48,060
+Edmin'in vereceği kararları veya otomatik olarak
+
+1467
+02:08:48,060 --> 02:08:51,060
+veritalanındaki utility tool'ların yaptığı
+
+1468
+02:08:51,060 --> 02:08:54,060
+şeyler yani bu işte bakım bütün şeyleri
+
+1469
+02:08:54,060 --> 02:08:57,060
+işlemleri
+
+1470
+02:08:57,060 --> 02:09:00,060
+tabi bu konular böyle oldukça zevkli
+
+1471
+02:09:00,060 --> 02:09:03,060
+bu da ready distribution'dan bahsediyor
+
+1472
+02:09:03,060 --> 02:09:06,060
+yine farklı tip B plus tri'ler var
+
+1473
+02:09:06,060 --> 02:09:09,060
+daha verimli olacak bulk load'dan
+
+1474
+02:09:09,060 --> 02:09:12,060
+bahsediyor bunlar da gene
+
+1475
+02:09:12,060 --> 02:09:15,060
+biraz önce bundan bir parça bahsettim yani sıralayıp
+
+1476
+02:09:15,060 --> 02:09:18,060
+bu veriyi buraya eklemek noktası var o da gene
+
+1477
+02:09:18,060 --> 02:09:21,060
+oldukça yer verimini arttırıyor
+
+1478
+02:09:21,060 --> 02:09:24,060
+yer verimini burada %100'e kadar
+
+1479
+02:09:24,060 --> 02:09:27,060
+çıkabiliyor
+
+1480
+02:09:27,060 --> 02:09:30,060
+evet
+
+1481
+02:09:30,060 --> 02:09:33,060
+şimdi bu konular böyle
+
+1482
+02:09:33,060 --> 02:09:36,060
+yani zaten bahsettim burada tam detaya inip de
+
+1483
+02:09:36,060 --> 02:09:39,060
+anlatmak değil ama bir parça bu havayı
+
+1484
+02:09:39,060 --> 02:09:42,060
+hissetmek şimdi
+
+1485
+02:09:42,060 --> 02:09:45,060
+bu index konusu oldukça karmaşık ve
+
+1486
+02:09:45,060 --> 02:09:48,060
+klasik ve aynı zamanda da çok güncel bir konu
+
+1487
+02:09:48,060 --> 02:09:51,060
+yani hem klasik bir
+
+1488
+02:09:51,060 --> 02:09:54,060
+konu hem de çok güncel bir konu yani
+
+1489
+02:09:54,060 --> 02:09:57,060
+bütün veri tabanlarında yani günümüzdeki işte
+
+1490
+02:09:57,060 --> 02:10:00,060
+popular veri tabanları SQL olsun NoSQL olsun
+
+1491
+02:10:00,060 --> 02:10:03,060
+tabanlarının hız noktasındaki
+
+1492
+02:10:03,060 --> 02:10:06,060
+temel problemi veya temel
+
+1493
+02:10:06,060 --> 02:10:09,060
+araştırma konuları olarak indexler başta geliyor
+
+1494
+02:10:09,060 --> 02:10:12,060
+bu indexler burada bahsettiğimiz sadece tek bir nitelik
+
+1495
+02:10:12,060 --> 02:10:15,060
+üzerinde olmayabilir birçok nitelik üzerine index
+
+1496
+02:10:15,060 --> 02:10:18,060
+olabilir birçok nitelik üzerine
+
+1497
+02:10:18,060 --> 02:10:21,060
+olduğu zaman çok boyutta indexler uzamsalı indexler
+
+1498
+02:10:21,060 --> 02:10:24,060
+zaman uzamsal, multi-dimensional, indexli birçok
+
+1499
+02:10:24,060 --> 02:10:27,060
+yapılar böyle çıkıyor karşımıza
+
+1500
+02:10:27,060 --> 02:10:30,060
+bunlar da hep böyle araştırma konuları
+
+1501
+02:10:30,060 --> 02:10:33,060
+yani güncel araştırma konuları
+
+1502
+02:10:33,060 --> 02:10:36,060
+olarak yine karşımda çıkıyor
+
+1503
+02:10:36,060 --> 02:10:39,060
+yine başka neler söylenebilir
+
+1504
+02:10:45,060 --> 02:10:48,060
+buradaki gördüğümüz bir plastireyle özellikle
+
+1505
+02:10:48,060 --> 02:10:51,060
+burada bakın sıralamış yani bunları ben tam detaylı
+
+1506
+02:10:51,060 --> 02:10:54,060
+anlatmadım ama siz üzerinden bir geçin
+
+1507
+02:10:54,060 --> 02:10:57,060
+zaten engineering veri mühendisliği noktasında
+
+1508
+02:10:57,060 --> 02:11:00,060
+veri tabanları sistem gerçekleme noktasında
+
+1509
+02:11:00,060 --> 02:11:03,060
+böyle merakınız varsa çalışmak istiyorsanız
+
+1510
+02:11:03,060 --> 02:11:06,060
+özellikle bizim bölümde yine açılan sistem gerçekleme dersi
+
+1511
+02:11:06,060 --> 02:11:09,060
+bir dahaki dönemde açılacak inşallah
+
+1512
+02:11:09,060 --> 02:11:12,060
+veri tabanı sistemlerin gerçeklenmesi
+
+1513
+02:11:12,060 --> 02:11:15,060
+orada bunlar zaten detaylı olarak bunlar anlatılıyor
+
+1514
+02:11:15,060 --> 02:11:18,060
+almanızı tavsiye ederim
+
+1515
+02:11:18,060 --> 02:11:21,060
+anlatacaklarım bu kadar
+
+1516
+02:11:22,060 --> 02:11:25,060
+ama bu ders kapsamında
+
+1517
+02:11:25,060 --> 02:11:28,060
+çok fiziksel konulara girmiyorduk
+
+1518
+02:11:28,060 --> 02:11:31,060
+bu dönem böyle bir parça bunları da anlatmış olduk
+
+1519
+02:11:31,060 --> 02:11:34,060
+en azından bir motivasyon olur belki bir heyecan
+
+1520
+02:11:34,060 --> 02:11:37,060
+uyandırır yani arka plan da işler nasıl dönüyor
+
+1521
+02:11:37,060 --> 02:11:40,060
+merak ediyorsanız bu onların bir
+
+1522
+02:11:40,060 --> 02:11:43,060
+mukaddimesi bir başlangıcı olarak
+
+1523
+02:11:43,060 --> 02:11:46,060
+değerlendirebilirsiniz daha bunların tabi hash
+
+1524
+02:11:46,060 --> 02:11:49,060
+organizasyonları var bu bir tür ilerim gene
+
+1525
+02:11:49,060 --> 02:11:52,060
+oldukça kapsamlı konular yani
+
+1526
+02:11:52,060 --> 02:11:55,060
+evet
+
+1527
+02:11:55,060 --> 02:11:58,060
+devamlı açaklarım bu kadar
+
+1528
+02:11:58,060 --> 02:12:01,060
+dersimizi bitirebiliriz
+
+1529
+02:12:01,060 --> 02:12:04,060
+2 hafta sonra bir sınavımız var
+
+1530
+02:12:04,060 --> 02:12:07,060
+final sınavı var
+
+1531
+02:12:07,060 --> 02:12:10,060
+herhalde başka teslimler de pazar günü bitiyor
+
+1532
+02:12:10,060 --> 02:12:13,060
+ikinci ödev, körcüler bitti
+
+1533
+02:12:13,060 --> 02:12:16,060
+umarım nispeten verimli bir ders olmuştur
+
+1534
+02:12:16,060 --> 02:12:19,060
+birçok konuyu gördük
+
+1535
+02:12:19,060 --> 02:12:22,060
+veritabanlarında
+
+1536
+02:12:22,060 --> 02:12:25,060
+bir veritabına bakıldığı zaman
+
+1537
+02:12:25,060 --> 02:12:28,060
+en çok bilinmesi gereken
+
+1538
+02:12:28,060 --> 02:12:31,060
+temel konulardan bahsettik hepsine bir
+
+1539
+02:12:31,060 --> 02:12:34,060
+giriş yaptık esasında
+
+1540
+02:12:34,060 --> 02:12:37,060
+çok bunu detaylandırmak daha da delimlemesini
+
+1541
+02:12:37,060 --> 02:12:40,060
+etmek çok zaman isteyen şeyler
+
+1542
+02:12:40,060 --> 02:12:43,060
+bu noktada bundan sonra sizin seçimlerinize kalmış
+
+1543
+02:12:43,060 --> 02:12:47,500
+evet benim aklıma gelenler bunlar
+
+1544
+02:12:47,500 --> 02:12:50,500
+sizin paylaşmak istediğiniz bir şey var mı?
+
+1545
+02:12:50,500 --> 02:12:53,500
+hocam ödev tesliminde yine geçen ödevde
+
+1546
+02:12:53,500 --> 02:12:56,500
+yaptığımız gibi mailinizi atıyoruz değil mi?
+
+1547
+02:12:56,500 --> 02:12:59,500
+evet lütfen dikkat edin
+
+1548
+02:12:59,500 --> 02:13:02,500
+email olarak gönderirken
+
+1549
+02:13:02,500 --> 02:13:05,500
+dosyaya isim verirken
+
+1550
+02:13:05,500 --> 02:13:08,500
+gruptaki kişilerin isimleri
+
+1551
+02:13:08,500 --> 02:13:11,500
+.tdf gibi bir mesaj
+
+1552
+02:13:11,500 --> 02:13:14,500
+veritabanın ödevi 2
+
+1553
+02:13:14,500 --> 02:13:17,500
+aynı isimleri gönderiyorlar
+
+1554
+02:13:17,500 --> 02:13:20,500
+çok kolay karışıyor
+
+1555
+02:13:20,500 --> 02:13:23,500
+her şey karışabiliyor
+
+1556
+02:13:23,500 --> 02:13:26,500
+benim için çok zor oluyor
+
+1557
+02:13:26,500 --> 02:13:29,500
+o yüzden herkes aynı formatta gönderirse
+
+1558
+02:13:29,500 --> 02:13:32,500
+dosyanın içine de
+
+1559
+02:13:32,500 --> 02:13:35,500
+yine dosyanın sayfanın başına isim yazı numaranı yazın
+
+1560
+02:13:35,500 --> 02:13:38,500
+aksi taktirde dosyanın ismine bakmam gerekiyor
+
+1561
+02:13:38,500 --> 02:13:41,500
+dosyanın isminin kayıpları oluyor
+
+1562
+02:13:41,500 --> 02:13:44,500
+değerlendiren için
+
+1563
+02:13:44,500 --> 02:13:47,500
+onlara dikkat edin o şekilde
+
+1564
+02:13:47,500 --> 02:13:50,500
+pazar gününe kadar gönderin
+
+1565
+02:13:50,500 --> 02:13:53,500
+hocam grup halinde ödev yapanlar olursa
+
+1566
+02:13:53,500 --> 02:13:56,500
+tek bir kişinin göndermesi yeter değil mi?
+
+1567
+02:13:56,500 --> 02:13:59,500
+tabi ki
+
+1568
+02:13:59,500 --> 02:14:02,500
+ama dosyaya ismine öden gösterin
+
+1569
+02:14:02,500 --> 02:14:05,500
+dosyanın ilk sayfasına isimleri yazarken
+
+1570
+02:14:06,500 --> 02:14:09,500
+ilk ödevde bahsetmedin mi?
+
+1571
+02:14:09,500 --> 02:14:12,500
+ilk ödevde evet bahsetmiştim
+
+1572
+02:14:12,500 --> 02:14:15,500
+onun gibi
+
+1573
+02:14:15,500 --> 02:14:18,500
+ben de unutuyorum
+
+1574
+02:14:18,500 --> 02:14:21,500
+tabi sizde unutma oluyor
+
+1575
+02:14:21,500 --> 02:14:24,500
+ama en azından şimdi söylemiş olduk
+
+1576
+02:14:24,500 --> 02:14:27,500
+veritabanın 2.ödev diye isimlendirmeyin
+
+1577
+02:14:27,500 --> 02:14:30,500
+kendi isminizi yazın
+
+1578
+02:14:30,500 --> 02:14:33,500
+dökümanın içerisinde ama sayfada
+
+1579
+02:14:34,500 --> 02:14:37,500
+evet arkadaşlar geçmiş olsun
+
+1580
+02:14:37,500 --> 02:14:40,500
+başarılar diliyorum
+
+1581
+02:14:40,500 --> 02:14:43,500
+sağlıklı günler de diliyoruz
+
+1582
+02:14:43,500 --> 02:14:46,500
+yardım için hepinize
+
+1583
+02:14:46,500 --> 02:14:49,500
+görüşmek üzere,aynı günler
+
+1584
+02:14:49,500 --> 02:14:52,500
+iyi günler hocam
+

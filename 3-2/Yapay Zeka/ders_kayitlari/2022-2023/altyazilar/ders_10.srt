@@ -1,0 +1,9126 @@
+1
+00:00:07,120 --> 00:01:11,500
+Merhaba
+
+2
+00:01:11,510 --> 00:01:14,259
+arkadaşlar. Günaydın herkese.
+
+3
+00:01:16,900 --> 00:01:18,930
+Kolay gelsin hocam.
+
+4
+00:01:18,930 --> 00:01:19,740
+Günaydın hocam.
+
+5
+00:01:28,100 --> 00:01:30,140
+Beş dakika sonra başlıyoruz arkadaşlar.
+
+6
+00:01:33,180 --> 00:04:33,760
+Evet,
+
+7
+00:04:34,080 --> 00:04:36,270
+tekrardan günaydın arkadaşlar.
+Anlatış var.
+
+8
+00:04:40,640 --> 00:04:40,650
+Peki,
+
+9
+00:04:40,960 --> 00:04:44,720
+yapacak
+
+10
+00:04:46,100 --> 00:04:48,210
+bir şey yok. Başlayalım. Eee,
+
+11
+00:04:49,940 --> 00:04:53,660
+şimdi ilk önce haftalık içeriğe
+
+12
+00:04:53,740 --> 00:04:56,620
+bakarsak, eee, bugün 4 Mayıs.
+
+13
+00:04:59,300 --> 00:05:03,160
+Ödevlerinizi teslim ettiniz. Eee,
+bugün ikinci
+
+14
+00:05:03,240 --> 00:05:06,980
+ödevinizi anlatacağım size.
+Şu anda sistemde görünüyor olması
+
+15
+00:05:07,020 --> 00:05:10,680
+lazım sizlere.
+Bir de projelerinizden bahsedeceğim.
+
+16
+00:05:10,720 --> 00:05:13,100
+Projelerinizi nasıl yapacağınızdan
+bahsedeceğim.
+
+17
+00:05:14,240 --> 00:05:17,620
+Eee,
+bir de bugün makine öğrenmesine bakacağız.
+
+18
+00:05:19,120 --> 00:05:21,300
+Başlangıç yapacağız, öyle söyleyeyim.
+
+19
+00:05:25,320 --> 00:05:27,680
+Hadi projeyi en sona bırakalım zaten.
+
+20
+00:05:28,160 --> 00:05:29,820
+Makine
+
+21
+00:05:29,830 --> 00:05:36,360
+öğrenmesinden
+
+22
+00:05:37,240 --> 00:05:38,020
+başlayalım.
+
+23
+00:05:39,600 --> 00:05:45,620
+Evet.
+
+24
+00:05:51,780 --> 00:05:52,960
+Sıra geldi mi arkadaşlar?
+
+25
+00:05:54,580 --> 00:05:55,450
+Geldi hocam, teşekkürler.
+
+26
+00:06:01,440 --> 00:06:04,280
+Şimdi makine öğrenmesinin üç tane slide'ı
+var.
+
+27
+00:06:04,360 --> 00:06:04,490
+Eee,
+
+28
+00:06:05,780 --> 00:06:07,700
+bugün işleyeceğimiz kısım şu kısım
+
+29
+00:06:09,224 --> 00:06:11,604
+Önümüzdeki hafta işleyeceğimiz kısım
+buralar olacak.
+
+30
+00:06:11,664 --> 00:06:13,504
+Ondan sonra da pekiştirmeli öğrenmeye
+
+31
+00:06:14,324 --> 00:06:15,204
+bakacağız.
+
+32
+00:06:16,304 --> 00:06:16,744
+Bugün
+
+33
+00:06:18,184 --> 00:06:21,884
+kavramlardan bahsedeceğiz ve belli
+uygulamalardan bahsedeceğiz.
+
+34
+00:06:23,144 --> 00:06:27,004
+Eee, hepinizin zaten
+
+35
+00:06:28,204 --> 00:06:32,004
+az çok duyduğunuz, gördüğünüz,
+kullandığınız
+
+36
+00:06:32,044 --> 00:06:34,963
+uygulamalar olacaklar. Belki,
+
+37
+00:06:36,004 --> 00:06:36,263
+eee,
+
+38
+00:06:38,784 --> 00:06:42,284
+sizler de bize birkaç farklı uygulamadan
+
+39
+00:06:42,384 --> 00:06:46,344
+bahsedersiniz. Burada olmayan,
+son zamanlarda
+
+40
+00:06:46,584 --> 00:06:50,264
+çıkan. Çünkü alan şu anda oldukça aktif.
+
+41
+00:06:50,633 --> 00:06:51,044
+Her gün
+
+42
+00:06:52,364 --> 00:06:54,564
+yepyeni uygulamalar görüyoruz.
+
+43
+00:06:56,444 --> 00:06:56,804
+Şimdi,
+
+44
+00:06:57,704 --> 00:07:00,144
+peki o zaman başlayalım.
+
+45
+00:07:02,284 --> 00:07:06,244
+İlk önce makine öğrenmesinin bir tanımını
+vermek gerekirse,
+
+46
+00:07:07,604 --> 00:07:11,464
+çok büyük miktarda verinin analiz
+edilmesi, bunların
+
+47
+00:07:11,504 --> 00:07:15,444
+kullanılması elle yapılması pek mümkün
+değil artık günümüzde.
+
+48
+00:07:16,364 --> 00:07:18,524
+Eee, dolayısıyla bu tarz işleri
+
+49
+00:07:19,444 --> 00:07:23,344
+belli bir miktar makinelere aktarma uğraşı
+aslında.
+
+50
+00:07:25,024 --> 00:07:28,524
+Şimdi temelde burada şöyle bir kısım var.
+
+51
+00:07:28,684 --> 00:07:32,044
+Bütün makine öğrenmesinin temeli belki
+burası.
+
+52
+00:07:33,464 --> 00:07:37,304
+Elinizde bir miktar veri var. Eee,
+bu verinin farklı
+
+53
+00:07:37,344 --> 00:07:38,704
+farklı türleri olabilir.
+
+54
+00:07:40,444 --> 00:07:44,164
+Bu verileri kullanarak veriye uygun bir
+
+55
+00:07:44,244 --> 00:07:47,623
+model bulmaya çalışacağız.
+
+56
+00:07:48,064 --> 00:07:49,524
+Şimdi buradaki,
+
+57
+00:07:51,644 --> 00:07:51,824
+eee,
+
+58
+00:07:55,744 --> 00:07:57,924
+model dediğimiz şey aslında,
+
+59
+00:07:59,084 --> 00:08:01,624
+arka tarafta düşünürsek, eee, bu
+
+60
+00:08:02,404 --> 00:08:06,304
+elimizdeki veri ve elimizdeki görev için
+
+61
+00:08:07,344 --> 00:08:10,584
+bir algoritma seçme süreci
+
+62
+00:08:10,604 --> 00:08:14,184
+var. Bu algoritma seçmek
+
+63
+00:08:14,324 --> 00:08:17,004
+demek, yani bir algoritmayı seçmek demek.
+
+64
+00:08:17,304 --> 00:08:20,924
+Bir veri kümesinde kullanmak üzere bir
+algoritmayı seçmek
+
+65
+00:08:20,944 --> 00:08:21,304
+demek.
+
+66
+00:08:22,704 --> 00:08:25,764
+Aslında bir model ailesi seçmek
+
+67
+00:08:25,864 --> 00:08:27,244
+demek.
+
+68
+00:08:29,184 --> 00:08:31,564
+Yani bir aslında bir şekilde, eee,
+
+69
+00:08:32,484 --> 00:08:34,504
+varsayımda bulunuyorsunuz. Diyorsunuz ki,
+
+70
+00:08:35,344 --> 00:08:35,604
+eee,
+
+71
+00:08:36,964 --> 00:08:37,144
+bu
+
+72
+00:08:37,984 --> 00:08:41,884
+veriyi ben bu seçtiğim algoritma
+
+73
+00:08:41,964 --> 00:08:44,204
+ile iyi modellerim.
+
+74
+00:08:45,604 --> 00:08:49,324
+Şimdi bu model ailesi seçtikten sonra,
+
+75
+00:08:52,584 --> 00:08:55,344
+bu seçtiğiniz algoritmanın
+
+76
+00:08:56,704 --> 00:08:59,124
+içinde belli parametreler var.
+
+77
+00:09:00,724 --> 00:09:04,104
+Bu parametrelerin elinizdeki veriye
+
+78
+00:09:04,384 --> 00:09:08,064
+uyumlu hale getirilme sürecinden
+bahsedilir.
+
+79
+00:09:08,624 --> 00:09:12,464
+Bu süreç genel manada eğitim süreci olarak
+adlandırılır.
+
+80
+00:09:13,424 --> 00:09:14,463
+Elinizdeki verilere
+
+81
+00:09:16,204 --> 00:09:19,284
+o seçtiğiniz model ailesinin en
+
+82
+00:09:19,484 --> 00:09:23,324
+uygun üyesini aslında bulmaya
+çalışıyorsunuz.
+
+83
+00:09:24,724 --> 00:09:28,204
+Eee,
+burada dediğim gibi birçok algoritma var
+
+84
+00:09:28,244 --> 00:09:32,044
+algoritma ailesi olduğu ve bu ailelerden
+bir tanesini
+
+85
+00:09:32,084 --> 00:09:35,244
+seçiyorsunuz ki bu dediğim gibi algoritma
+seçmek demek.
+
+86
+00:09:35,444 --> 00:09:38,944
+Onun arkasından da o ailenin en iyi
+üyesini,
+
+87
+00:09:39,204 --> 00:09:41,364
+elinizdeki veriye en uyan,
+
+88
+00:09:42,444 --> 00:09:46,104
+eee,
+en uyumlu olan üyesini bulmaya
+
+89
+00:09:46,144 --> 00:09:50,024
+Dediğim gibi bulma,
+arama süreci eğitim süreci olarak
+
+90
+00:09:50,044 --> 00:09:50,884
+adlandırılıyor.
+
+91
+00:09:54,184 --> 00:09:56,784
+Bunun arkasından bu model
+
+92
+00:09:57,064 --> 00:10:00,964
+ailesinin en iyi üyesini sizin datanıza en
+
+93
+00:10:01,064 --> 00:10:05,044
+iyi uyanı buldunuz.
+Onun arkasından da aslında
+
+94
+00:10:05,124 --> 00:10:07,224
+yapabildiğiniz şey şu.
+
+95
+00:10:09,124 --> 00:10:12,944
+Eğitim kümesinde olmayan bir örnek
+geldiğinde o
+
+96
+00:10:13,104 --> 00:10:16,204
+örneğe dair bir tahminde
+bulunabiliyorsunuz.
+
+97
+00:10:19,164 --> 00:10:22,634
+Ki bu da zaten amacınız bu tahminin de
+başarılı olmasını
+
+98
+00:10:22,704 --> 00:10:25,854
+istiyorsunuz.
+Zaten bir modelin başarılı olmasının
+
+99
+00:10:28,144 --> 00:10:30,284
+eğitim sürecinde kullanılmayan
+
+100
+00:10:31,404 --> 00:10:35,284
+örnekleri üzerindeki performansının
+
+101
+00:10:35,344 --> 00:10:36,164
+iyi olması.
+
+102
+00:10:37,154 --> 00:10:39,864
+İşimiz bu. Kıstasımız hemen de.
+
+103
+00:10:41,784 --> 00:10:43,264
+Şimdi çeşitli
+
+104
+00:10:44,844 --> 00:10:47,584
+problemleri, çeşitli uygulamaları, eee,
+
+105
+00:10:47,784 --> 00:10:51,424
+bekledikleri çıktı türleri var. Yani
+
+106
+00:10:51,484 --> 00:10:55,464
+hani bir örnek geldi,
+bir tahmin üretir diyoruz ya,
+
+107
+00:10:55,604 --> 00:10:56,864
+formlarda olabilir.
+
+108
+00:10:57,704 --> 00:10:58,684
+Bu formlara
+
+109
+00:10:59,824 --> 00:11:03,304
+göre makine öğrenmesi algoritmalarını
+sınıflandırırsak
+
+110
+00:11:04,524 --> 00:11:06,304
+belki birkaç tane böyle
+
+111
+00:11:07,984 --> 00:11:10,163
+tür karşımıza çıkıyor.
+
+112
+00:11:11,334 --> 00:11:13,234
+Bunlardan ilki mesela
+
+113
+00:11:14,844 --> 00:11:15,584
+sınıflandırma.
+
+114
+00:11:18,224 --> 00:11:21,504
+Şimdi sınıflandırmada elinizdeki
+
+115
+00:11:22,084 --> 00:11:24,964
+verilere dair çıkışınızın
+
+116
+00:11:25,804 --> 00:11:27,944
+kategorik bir değişken olduğunu
+
+117
+00:11:28,884 --> 00:11:32,644
+söylüyoruz. Yani elinize bir
+
+118
+00:11:32,684 --> 00:11:36,504
+örnek geldiğinde ona dair bir output
+ürettiğinizde bu
+
+119
+00:11:36,544 --> 00:11:37,884
+output kategorik bir
+
+120
+00:11:39,104 --> 00:11:39,864
+değişkense
+
+121
+00:11:41,144 --> 00:11:41,684
+o zaman,
+
+122
+00:11:42,744 --> 00:11:46,404
+eee,
+bu bir sınıflandırma problemidir diyoruz.
+
+123
+00:11:47,624 --> 00:11:51,044
+Şimdi ilk önce şu yukarıdaki şekle bir
+bakalım.
+
+124
+00:11:51,064 --> 00:11:52,304
+Bu yukarıdaki şekilde
+
+125
+00:11:54,164 --> 00:11:57,724
+geçmiş verilerinizin elinizde olduğundan
+bahsetmiştim.
+
+126
+00:11:57,744 --> 00:12:00,524
+Buradaki geçmiş verileriniz morlar ve
+siyahlar.
+
+127
+00:12:01,724 --> 00:12:04,964
+Bunların, eee,
+elinizde olduğunu düşünelim.
+
+128
+00:12:04,984 --> 00:12:08,964
+Bu mor ve siyah noktalar şu anda iki
+boyutlu bir uzayda bir
+
+129
+00:12:09,024 --> 00:12:12,764
+noktalar. Bunun anlamı her bir örneğinize
+
+130
+00:12:12,884 --> 00:12:15,504
+ait iki tane özellik biliyorsunuz demek.
+
+131
+00:12:16,892 --> 00:12:20,552
+Ve bunların mor ve siyah olarak
+renklendirilmiş
+
+132
+00:12:20,632 --> 00:12:23,232
+olmaları da bunların sınıflarını ifade
+ediyorlar.
+
+133
+00:12:24,032 --> 00:12:26,712
+Yani şu aşağıdaki matrisi düşünürseniz,
+şunları
+
+134
+00:12:26,772 --> 00:12:30,392
+görme-görmezsek eğer,
+x1 ve x2 diye iki tane
+
+135
+00:12:30,512 --> 00:12:30,892
+input
+
+136
+00:12:31,852 --> 00:12:35,492
+var.
+Her bir örneğin bir tane de output'u var.
+
+137
+00:12:35,512 --> 00:12:39,172
+Buradaki her bir satır neyi temsil ediyor
+
+138
+00:12:39,272 --> 00:12:40,112
+arkadaşlar?
+
+139
+00:12:44,212 --> 00:12:47,132
+Bir noktayı mı hocam?
+
+140
+00:12:48,212 --> 00:12:51,632
+Bir örneği temsil ediyor.
+Yani yukarıdaki bir tane noktayı temsil
+
+141
+00:12:51,752 --> 00:12:53,712
+Aynen öyle. Bir tane örneği temsil eder.
+
+142
+00:12:55,272 --> 00:12:58,352
+Şimdi ne demiştik? Eee,
+
+143
+00:13:00,032 --> 00:13:03,502
+bir modelleme yapacağız.
+Bir modelleme yaparken de bir
+
+144
+00:13:04,212 --> 00:13:08,052
+algoritma seçeceğiz. Bu algoritma demek--
+seçmek demek de aslında bir
+
+145
+00:13:08,132 --> 00:13:09,812
+model ailesi seçmek dedik.
+
+146
+00:13:10,972 --> 00:13:14,052
+Eee, mesela diyelim ki bu, eee,
+
+147
+00:13:14,572 --> 00:13:18,012
+elimizdeki mevcut veri diyelim şu
+yukarıdaki bu
+
+148
+00:13:18,032 --> 00:13:18,572
+olsun.
+
+149
+00:13:19,952 --> 00:13:22,752
+Şimdi bunun için bir algoritma seçelim.
+
+150
+00:13:22,832 --> 00:13:23,812
+Mesela algoritmamız
+
+151
+00:13:25,692 --> 00:13:27,812
+ya da model lineer bir model olsun.
+
+152
+00:13:28,692 --> 00:13:31,572
+Lineer bir modelin anlamı
+
+153
+00:13:34,092 --> 00:13:36,812
+sınıfları birbirinden ayıran
+
+154
+00:13:37,452 --> 00:13:41,132
+çizginin lineer olması, karar sınırının
+
+155
+00:13:41,192 --> 00:13:42,532
+lineer olması.
+
+156
+00:13:44,512 --> 00:13:47,872
+Şimdi bu, eee, bir varsayım. Diyoruz ki,
+
+157
+00:13:48,152 --> 00:13:50,152
+eee, "Elimdeki bu
+
+158
+00:13:50,212 --> 00:13:54,072
+veriyi ben lineer bir
+
+159
+00:13:54,112 --> 00:13:55,292
+model kullanarak
+
+160
+00:13:56,592 --> 00:13:58,812
+modelleyebilirim, sınıflandırabilirim."
+
+161
+00:13:59,932 --> 00:14:01,352
+diye bir varsayımda bulunuyoruz.
+
+162
+00:14:01,952 --> 00:14:05,912
+Şimdi bu varsayımımız bu veri kümesi için
+fena değil.
+
+163
+00:14:06,712 --> 00:14:10,632
+Neden? Çünkü buraya baktığımızda bu, eee,
+iki sınıfın
+
+164
+00:14:10,732 --> 00:14:11,472
+birbirinden
+
+165
+00:14:12,272 --> 00:14:15,171
+düz bir çizgiyle ayrılabildiğini
+görüyoruz.
+
+166
+00:14:16,292 --> 00:14:20,092
+Tabii bunu iki boyutlu datalarda gözle
+
+167
+00:14:20,192 --> 00:14:21,972
+görmek bir şekilde kolay.
+
+168
+00:14:22,932 --> 00:14:26,372
+Ama ne bileyim, işte beş yüz tane
+
+169
+00:14:26,611 --> 00:14:30,452
+boyutunuz varsa, yani x1, x2,
+x3 bunlar böyle x500'e
+
+170
+00:14:30,472 --> 00:14:34,192
+kadar gidiyorsa ve burada böyle gözle
+bakıp lineer bir şey var
+
+171
+00:14:34,252 --> 00:14:37,452
+mıdır, yok mudur?
+Ben analiz etmek çok çok kolay değil.
+
+172
+00:14:37,912 --> 00:14:40,452
+Buradaki kolay--
+buradaki kadar kolay değil.
+
+173
+00:14:41,892 --> 00:14:42,252
+Neyse,
+
+174
+00:14:43,572 --> 00:14:43,912
+eee,
+
+175
+00:14:46,152 --> 00:14:48,752
+diyelim ki lineer bir model seçtiniz.
+
+176
+00:14:49,772 --> 00:14:53,492
+Şimdi lineer model ailesi dedim ya, eee,
+bu
+
+177
+00:14:53,512 --> 00:14:57,292
+lineer model ailesi mesela nasıl, eee,
+
+178
+00:14:57,492 --> 00:15:01,192
+üyelerden oluşur burası için düşünürsek?
+
+179
+00:15:01,392 --> 00:15:03,112
+Birkaç bir şeyler çizmeye çalışalım.
+
+180
+00:15:03,452 --> 00:15:05,312
+Mesela, mesela bu
+
+181
+00:15:06,312 --> 00:15:09,532
+şey için, bu da olası bir şey.
+Bu başka olası bir şey.
+
+182
+00:15:09,592 --> 00:15:12,552
+Bu başka olası bir şey.
+Bu başka olası bir şey. Bu başka olası.
+
+183
+00:15:12,972 --> 00:15:14,932
+Bunların her biri mesela
+
+184
+00:15:17,452 --> 00:15:19,732
+bir, eee, olabilecek
+
+185
+00:15:23,172 --> 00:15:26,352
+aile üyeleri. Sonsuz tane var tabii ki.
+
+186
+00:15:27,392 --> 00:15:27,912
+Eee ve bu
+
+187
+00:15:29,592 --> 00:15:31,872
+aile üyelerini birbirinden
+
+188
+00:15:33,012 --> 00:15:35,432
+ayırt eden şey aslında
+
+189
+00:15:38,652 --> 00:15:40,352
+modelimizin parametreleri.
+
+190
+00:15:42,232 --> 00:15:45,552
+Burada bu gördüğünüz çizgilerin her birini
+biz
+
+191
+00:15:46,152 --> 00:15:49,572
+parametrik olarak yazabiliriz. Yani, eee,
+işte
+
+192
+00:15:50,292 --> 00:15:54,072
+w1 çarpı x1 artı w2 çarpı x2 artı w3
+
+193
+00:15:54,252 --> 00:15:57,392
+eş-ya da w0 eş-eşittir sıfır. Yani,
+
+194
+00:15:59,592 --> 00:16:03,522
+eee, buradaki w1, w2, w3 değişkenlerinin
+
+195
+00:16:03,532 --> 00:16:07,172
+farklı değerleri için buradaki değişik
+çizgiler
+
+196
+00:16:07,752 --> 00:16:09,672
+oluşacaktır. Yani buradaki her bir
+
+197
+00:16:10,512 --> 00:16:12,352
+çizgiyi biz bu
+
+198
+00:16:13,212 --> 00:16:15,392
+model ailesiyle ifade edebiliriz.
+
+199
+00:16:16,592 --> 00:16:20,472
+Şimdi o zaman olayımız ne olacak?
+Burada bizim acaba
+
+200
+00:16:20,532 --> 00:16:23,772
+bu w1, w2, w3'ü ne olarak
+
+201
+00:16:24,132 --> 00:16:24,892
+seçmeliyiz?
+
+202
+00:16:26,552 --> 00:16:30,452
+Bunu neye göre seçeceğiz?
+Elimizdeki datalara göre seç--
+
+203
+00:16:31,392 --> 00:16:33,291
+uyuma göre seçeceğiz.
+
+204
+00:16:34,272 --> 00:16:37,772
+Şimdi burada gördüğünüz çizgilerin her
+birinin belli bir
+
+205
+00:16:37,832 --> 00:16:39,492
+başarımı var. Başarım derken,
+
+206
+00:16:40,432 --> 00:16:43,092
+eee,
+sınıf-elimizdeki veriye uyumluluğu var.
+
+207
+00:16:43,132 --> 00:16:46,212
+Şimdi buradaki şu anda çizmiş olduğum
+
+208
+00:16:46,892 --> 00:16:50,052
+yeşil çizgilerin, eee,
+
+209
+00:16:52,692 --> 00:16:53,352
+hiçbiri
+
+210
+00:16:54,592 --> 00:16:58,432
+çok çok başarılı değil ama diğerlerinden
+daha başarılı olanlar olduğunu
+
+211
+00:16:58,472 --> 00:17:01,412
+söyleyebiliriz. Mesela, eee, şöyle
+
+212
+00:17:03,092 --> 00:17:06,852
+turuncuyla çizeyim.
+Mesela şu diğerlerinden sanki
+
+213
+00:17:06,872 --> 00:17:09,832
+biraz daha iyi gibi, değil mi?
+Mesela bu çizgi.
+
+214
+00:17:10,452 --> 00:17:13,552
+Ama mesela, eee,
+şöyle bir şey çizsem belki daha iyi
+
+215
+00:17:13,592 --> 00:17:17,142
+olabilir. Ne bileyim,
+böyle bir şey mesela çizsem daha iyi bir
+
+216
+00:17:17,212 --> 00:17:18,212
+şey olabilir.
+
+217
+00:17:20,012 --> 00:17:23,252
+Dolayısıyla, eee, elimdeki eğitim
+
+218
+00:17:23,412 --> 00:17:24,572
+datasına uyum
+
+219
+00:17:25,432 --> 00:17:29,172
+açısından elimdeki aile üyeleri
+
+220
+00:17:29,212 --> 00:17:33,072
+birbirlerinden farklılar.
+Aynı uyuma sahip birden
+
+221
+00:17:33,112 --> 00:17:34,892
+fazla aile üyesi olabilir mi? Olabilir.
+
+222
+00:17:34,972 --> 00:17:37,272
+Mesela şimdi çizeceğim başka bir şey
+düşünün.
+
+223
+00:17:37,312 --> 00:17:38,252
+Mesela şu da
+
+224
+00:17:39,532 --> 00:17:43,132
+ve yine aynı şekilde iki pembe çizginin de
+
+225
+00:17:43,282 --> 00:17:43,772
+elimdeki
+
+226
+00:17:45,292 --> 00:17:45,932
+datalara
+
+227
+00:17:46,772 --> 00:17:48,752
+uyum miktarları aynı gördüğünüz gibi.
+
+228
+00:17:50,812 --> 00:17:53,852
+Yani unique, tek bir tane şeyiniz olması,
+
+229
+00:17:54,292 --> 00:17:56,372
+eee, şart değil.
+
+230
+00:17:58,172 --> 00:17:58,731
+Aynı
+
+231
+00:17:59,552 --> 00:18:03,372
+performansa sahip birden fazla
+
+232
+00:18:03,592 --> 00:18:06,352
+modeliniz olabilir mi? Evet olabilir.
+
+233
+00:18:06,752 --> 00:18:10,652
+Şimdi dolayısıyla burada bizim yapmaya
+çalıştığımız şey
+
+234
+00:18:10,692 --> 00:18:14,592
+dediğim gibi bu, ııı,
+model ailesinin bu parametrelerini
+
+235
+00:18:15,532 --> 00:18:19,032
+elimizdeki datayla uyumlu hale getirmeye
+çalışmak.
+
+236
+00:18:19,412 --> 00:18:23,072
+Ki bu sürece de eğitim süreci deniyor.
+
+237
+00:18:25,140 --> 00:18:27,900
+Eğitim sürecini diyelim ki tamamladık.
+
+238
+00:18:28,340 --> 00:18:32,140
+Bitti eğitim süreci.
+Eğitim süreci bittikten sonra
+
+239
+00:18:32,260 --> 00:18:34,560
+bizim yapabileceğimiz şey nedir?
+
+240
+00:18:35,460 --> 00:18:39,240
+Elimize yeni bir nokta geldiğinde,
+mesela buradaki kırmızı nokta aslında onu
+
+241
+00:18:39,260 --> 00:18:41,279
+ifade ediyor. O bir test örneği.
+
+242
+00:18:42,160 --> 00:18:45,220
+O test örneğinin hangi sınıftan olduğunu
+ne yapabiliriz?
+
+243
+00:18:45,600 --> 00:18:46,500
+Elimizdeki
+
+244
+00:18:47,640 --> 00:18:51,180
+sadece modeli kullanarak karar
+verebiliriz.
+
+245
+00:18:51,240 --> 00:18:54,580
+İşte o çizginin üstünden ise üst
+kısmındaysa,
+
+246
+00:18:56,080 --> 00:18:59,720
+eee, o zaman o s-- eee, mor
+
+247
+00:18:59,900 --> 00:19:03,220
+sınıftan,
+altındaysa da siyah sınıftan diyebiliriz.
+
+248
+00:19:03,620 --> 00:19:07,440
+Yani dışarıdan gelen bir test örneğinin
+hangi sınıfa ait olduğunu tahmin
+
+249
+00:19:07,460 --> 00:19:10,600
+edebiliriz. Bu tahminimiz doğru olabilir,
+yanlış olabilir.
+
+250
+00:19:10,660 --> 00:19:14,540
+Yani şöyle bir şey,
+bu işin çok kolay bir şey--
+
+251
+00:19:14,560 --> 00:19:18,500
+bir doğrusunun olmadığını anlatmak için
+mesela şu çizgiyle çizeyim, çok
+
+252
+00:19:18,580 --> 00:19:21,080
+daha rahat göreceksiniz. Mesela
+
+253
+00:19:22,340 --> 00:19:24,300
+şu çizgiyi düşünün. Tamam.
+
+254
+00:19:25,980 --> 00:19:29,919
+Şimdi,
+peki pembe çizgilerin eğitim kümesi
+
+255
+00:19:29,960 --> 00:19:31,980
+nasıl? Sıfır, değil mi pembe çizgilerin?
+
+256
+00:19:32,620 --> 00:19:34,710
+Yani morları ve siyahları birbirinden
+mükemmel ayırıyorlar.
+
+257
+00:19:34,860 --> 00:19:38,360
+Aynı şekilde şu mavi çizginin de eğitim
+kümesi üzerindeki performansı sıfırdır.
+
+258
+00:19:38,680 --> 00:19:42,340
+Yani sıfır derken maksimum %1.
+Morları ve siyahları birbirinden
+
+259
+00:19:42,400 --> 00:19:44,540
+ayırıyor. Fakat burada görüyorsunuz ki
+
+260
+00:19:45,800 --> 00:19:49,680
+pembe çizgiler için kırmızı noktaya atanan
+
+261
+00:19:49,760 --> 00:19:53,620
+sınıfla mavi çizgi için kırmızı noktaya
+atanan sınıf birbirinden
+
+262
+00:19:53,720 --> 00:19:54,180
+farklı.
+
+263
+00:19:55,400 --> 00:19:56,520
+Bunu görebiliyorsunuz, değil mi?
+
+264
+00:19:57,500 --> 00:20:01,140
+Burada altta kalmış.
+Dolayısıyla mavi çizgiye göre kırmızı
+
+265
+00:20:01,200 --> 00:20:04,280
+siyahken,
+pembe çizgilere göre kırmızı nokta mavi.
+
+266
+00:20:05,340 --> 00:20:09,160
+Tamam. Dolayısıyla datanıza,
+eğitim datanıza
+
+267
+00:20:09,260 --> 00:20:13,110
+%100 uyumlu olan modellerin test örnekleri
+
+268
+00:20:13,160 --> 00:20:17,140
+üzerindeki tahminleri de birbirleriyle
+aynı olacak diye
+
+269
+00:20:17,160 --> 00:20:20,060
+bir şey yok.
+Yani eğitim kümesine uyumlular diye test
+
+270
+00:20:20,180 --> 00:20:21,960
+uyumlu olacaklar diye bir şey yok.
+
+271
+00:20:22,840 --> 00:20:25,920
+Birbirinden farklı sonuçlar verebilirler.
+
+272
+00:20:27,180 --> 00:20:29,840
+Eee, bu işte bir varyans oluşturur,
+vesaire vesaire.
+
+273
+00:20:29,920 --> 00:20:33,860
+Şimdi o detaylara girmeyeceğiz.
+Ama temelde dediğimiz gibi bu
+
+274
+00:20:34,320 --> 00:20:38,160
+bir modelin yapabildiği şey, eee,
+sadece kendisi
+
+275
+00:20:38,240 --> 00:20:39,600
+elimizde olsa bile,
+
+276
+00:20:40,800 --> 00:20:44,280
+yani model elimizde olduktan sonra artık
+bizim şeye
+
+277
+00:20:44,300 --> 00:20:48,020
+ihtiyacımız kalmıyor,
+eğitim kümesinin kendisine herhangi bir
+
+278
+00:20:48,060 --> 00:20:50,220
+kalmıyor.
+Eğitim kümesini kenara ayırıyoruz.
+
+279
+00:20:50,620 --> 00:20:53,280
+Çünkü aslında bir açıdan düşündüğümüzde
+modellemek
+
+280
+00:20:53,290 --> 00:20:57,080
+demek, eee, bir şekilde eğitim
+
+281
+00:20:57,180 --> 00:21:00,940
+örneklerini,
+elimizdeki verileri bir model içine
+
+282
+00:21:01,000 --> 00:21:04,480
+sıkıştırmak demek. Onları temsil eden bir
+
+283
+00:21:04,860 --> 00:21:08,760
+formülasyon buluyorsunuz.
+Bu formül aslında bu iki
+
+284
+00:21:08,820 --> 00:21:12,600
+sınıfı birbirinden ayırt ettiğini
+düşündüğünüz karar mekanizmasını
+
+285
+00:21:12,620 --> 00:21:13,100
+içeriyor,
+
+286
+00:21:14,180 --> 00:21:16,860
+eee, karar sınırını ifade ediyor.
+
+287
+00:21:16,880 --> 00:21:20,820
+Ve karar sınırını zaten elinizdeki modelle
+oluşturabiliyorsanız artık o
+
+288
+00:21:20,880 --> 00:21:24,360
+noktadan sonra eğitim kümesine hiçbir
+şekilde ihtiyacınız yok demektir.
+
+289
+00:21:24,520 --> 00:21:26,100
+Sadece model elinizdeyse,
+
+290
+00:21:27,420 --> 00:21:30,940
+eee,
+bundan sonra yeni bir örnek geldiğinde
+
+291
+00:21:31,440 --> 00:21:33,860
+ya da çıkışını ne yapabiliyorsunuz?
+Tahmin edebiliyorsunuz.
+
+292
+00:21:37,400 --> 00:21:40,480
+Var mı soru soran arkadaşlar bu
+sınıflandırmayla alakalı?
+
+293
+00:21:42,740 --> 00:21:42,750
+Peki.
+
+294
+00:21:56,440 --> 00:22:00,260
+Şimdi,
+sınıflandırmada dediğimiz gibi bizim
+
+295
+00:22:00,740 --> 00:22:03,220
+çıkışımız kategorik bir değişken.
+
+296
+00:22:04,070 --> 00:22:04,420
+[öksürür]
+
+297
+00:22:05,420 --> 00:22:08,060
+Şimdi başka bir problem türüne geçiyoruz.
+
+298
+00:22:08,100 --> 00:22:09,440
+Problem türümüz bu sefer
+
+299
+00:22:10,760 --> 00:22:13,800
+kümeleme, işte öbekleme diye de geçiyor.
+
+300
+00:22:13,880 --> 00:22:14,270
+Başka ne
+
+301
+00:22:16,380 --> 00:22:20,100
+var?
+Bilmiyorum Türkçede başka demekleme falan
+
+302
+00:22:20,140 --> 00:22:21,380
+gibisinden de geçebilir.
+
+303
+00:22:22,400 --> 00:22:24,340
+Eee, İngilizcede clustering olarak
+
+304
+00:22:24,400 --> 00:22:28,100
+geçiyor. Şimdi kümeleme
+
+305
+00:22:28,400 --> 00:22:29,340
+probleminde,
+
+306
+00:22:31,160 --> 00:22:35,120
+eee, veri kümemizin, eee,
+örnekleri ve özellikleri var.
+
+307
+00:22:35,260 --> 00:22:38,340
+Her bir örneğimizin artık özelliklerimiz
+var. Fakat bir çıkışımız yok.
+
+308
+00:22:39,260 --> 00:22:43,080
+Burada uygulamanın bizden beklediği şey
+örnekleri bir sınıfa atamak,
+
+309
+00:22:43,140 --> 00:22:45,220
+işte A sınıfı,
+B sınıfı falan gibi atamak değil.
+
+310
+00:22:45,680 --> 00:22:49,340
+Örnekleri genellikle daha önceden
+belirlenmiş olan
+
+311
+00:22:49,560 --> 00:22:52,060
+sayıda kümeye atamamız bekleniyor.
+
+312
+00:22:52,680 --> 00:22:56,640
+Yani mesela işte diyeceğim ki ben bu
+örneklerin birinci
+
+313
+00:22:56,780 --> 00:23:00,460
+ve ikincisi bir kümedendir. Eee, son üçü,
+
+314
+00:23:00,960 --> 00:23:02,040
+şuradan bahsediyorum.
+
+315
+00:23:03,340 --> 00:23:05,980
+Şunlar mesela bir kümedir,
+şunlar başka bir kümedir.
+
+316
+00:23:06,420 --> 00:23:09,480
+İki tane kümeye ayırdım.
+Böyle bir şey diyebilirim.
+
+317
+00:23:09,520 --> 00:23:13,100
+Başka şeyler de diyebilirim.
+Yani mesela işte bu ikisi bir kümedendir.
+
+318
+00:23:13,160 --> 00:23:16,860
+Birinci,
+dördüncü ve beşinci başka diğer kümedendir
+
+319
+00:23:16,900 --> 00:23:18,290
+gibisinden bir şeyler söyleyebilirim.
+
+320
+00:23:19,060 --> 00:23:21,960
+Sonuçta burada bir output bize verilmiyor.
+
+321
+00:23:22,720 --> 00:23:26,420
+Eee, şu olması gerekiyor diye bir, eee,
+şey yok,
+
+322
+00:23:26,520 --> 00:23:27,560
+bilgi yok. O yüzden,
+
+323
+00:23:28,540 --> 00:23:28,780
+eee,
+
+324
+00:23:30,460 --> 00:23:34,220
+unsupervised learning diye de geçer bu
+
+325
+00:23:34,280 --> 00:23:38,160
+yapı.
+Yani output'un ne olması gerektiği bize
+
+326
+00:23:39,840 --> 00:23:40,100
+eee,
+
+327
+00:23:42,680 --> 00:23:46,510
+çıkışa dair hiçbir bilgimiz yoksa o
+durumda bu unsupervised diye
+
+328
+00:23:46,540 --> 00:23:50,530
+geçecek.
+Varsa yani şöyle bir çıkış bilgimiz varsa
+
+329
+00:23:50,640 --> 00:23:54,460
+ki supervised olan bir başka problem
+türümüz daha
+
+330
+00:23:54,540 --> 00:23:56,560
+olacak. Hatta birkaç tane.
+
+331
+00:23:57,600 --> 00:24:00,900
+Neyse sonuçta derdimiz elimizdeki
+
+332
+00:24:00,960 --> 00:24:04,860
+örnekleri kümelere ayırmak. Şimdi
+
+333
+00:24:05,060 --> 00:24:08,840
+kümelere ayırma yaptığınızda olan
+
+334
+00:24:08,940 --> 00:24:10,619
+şeylerden bir tanesi şu:
+
+335
+00:24:12,920 --> 00:24:13,620
+Farklı
+
+336
+00:24:14,540 --> 00:24:18,480
+örnek sayısını,
+yani örneklerin çeşitliliğini
+
+337
+00:24:18,820 --> 00:24:21,280
+ya da öyle ifade edelim, azaltıyorsunuz.
+
+338
+00:24:22,200 --> 00:24:26,080
+Yani mesela diyorsunuz ki işte şu iki tane
+
+339
+00:24:26,160 --> 00:24:29,020
+örnek bir kümeye giriyor,
+şu üç tanesi başka bir kümeye giriyor.
+
+340
+00:24:29,964 --> 00:24:33,084
+Bu kümeye dahil ettiğiniz anda aslında
+
+341
+00:24:33,704 --> 00:24:36,724
+diyorsunuz ki ben verilerimi iki tane
+
+342
+00:24:36,864 --> 00:24:40,824
+farklılığa indirgedim.
+Yani normalde burada beş tane örnek
+
+343
+00:24:40,844 --> 00:24:44,704
+vardı, beş tane örneğimiz vardı.
+Ben bunları kümelere dahil ettiğimde
+
+344
+00:24:44,744 --> 00:24:47,264
+mesela işte bunlar,
+bu ikisi bir kümeye dahil oldu.
+
+345
+00:24:47,284 --> 00:24:48,904
+Bunların ikisi bir kümeye dahil oldular.
+
+346
+00:24:49,324 --> 00:24:50,744
+O zaman aslında benim elimdeki,
+
+347
+00:24:51,824 --> 00:24:53,124
+eee, örnekleri
+
+348
+00:24:54,184 --> 00:24:58,084
+farklılığını ikiye indirgedim. Şimdi bunun
+
+349
+00:24:58,124 --> 00:25:02,104
+biraz daha böyle kafanızda canlanabilecek
+hali şöyle
+
+350
+00:25:02,124 --> 00:25:06,004
+düşünebilirsiniz. Eee,
+burada verilen örnek açısından, aşağıda
+
+351
+00:25:06,024 --> 00:25:08,744
+verilen örnek açısından.
+Elinizde bir resim var.
+
+352
+00:25:08,864 --> 00:25:12,604
+Bu resmin içerisindeki pikseller,
+sol taraftaki resimden
+
+353
+00:25:12,624 --> 00:25:16,164
+bahsediyorum.
+İki yüz elli altı tane farklı değere
+
+354
+00:25:18,624 --> 00:25:20,824
+Burada iki yüz elli altı piksel var
+demiyorum bakın.
+
+355
+00:25:20,964 --> 00:25:24,084
+İki yüz elli altı tane farklı piksel
+
+356
+00:25:24,164 --> 00:25:27,324
+var.
+Yani bazı piksellerin değerleri aynı tabii
+
+357
+00:25:27,724 --> 00:25:31,644
+Ama farklılık unique anlamda dersek iki
+yüz elli altı tane.
+
+358
+00:25:32,404 --> 00:25:35,524
+Ben bunu on altı taneye indirgeyebilir
+miyim?
+
+359
+00:25:35,704 --> 00:25:38,143
+İndirgemek istersem bu ne problemi olacak?
+
+360
+00:25:38,184 --> 00:25:42,144
+Bu bir kümeleme problemi olacak.
+Sağ tarafta bunun
+
+361
+00:25:42,224 --> 00:25:46,164
+on altı farklı renge,
+yani on altı kümeye indirgenmiş
+
+362
+00:25:46,184 --> 00:25:47,844
+hali var. Yani sol taraftaki
+
+363
+00:25:49,644 --> 00:25:51,304
+örnekler,
+
+364
+00:25:52,224 --> 00:25:52,444
+eee,
+
+365
+00:25:55,084 --> 00:25:58,744
+kümelere ayrılmış pikseller kümelere
+ayrılmışlar ve piksellerin yeni
+
+366
+00:25:58,824 --> 00:25:59,844
+değerlerini
+
+367
+00:26:00,884 --> 00:26:03,584
+o kümelerin değerleriyle temsil etmişiz.
+
+368
+00:26:04,304 --> 00:26:07,984
+Burada renk açısından bir kümeleme
+yapıldığından dolayı şöyle bir şey
+
+369
+00:26:08,024 --> 00:26:11,404
+görüyorsunuz aslında.
+Bir sürü farklı kırmızı tonu,
+
+370
+00:26:11,644 --> 00:26:15,504
+buradaki sol taraftaki bir sürü farklı
+kırmızı tonu tek bir kırmızı
+
+371
+00:26:15,564 --> 00:26:19,164
+tona, farklı yeşiller tek bir yeşile,
+farklı sarılar tek bir sarıyla,
+
+372
+00:26:19,824 --> 00:26:22,904
+farklı siyahlar tek bir siyahla, farklı
+
+373
+00:26:23,984 --> 00:26:27,874
+başka ne renkler var burada?
+Sarılar tek bir sarıyla ifade
+
+374
+00:26:27,924 --> 00:26:31,104
+edilmişler.
+Peki böyle bir şey yapabilir miyiz?
+
+375
+00:26:31,164 --> 00:26:32,724
+Evet, yapabildiğimizi görüyoruz.
+
+376
+00:26:32,864 --> 00:26:35,644
+Nasıl yapacağımızı daha demin gibi
+önümüzdeki hafta gireceğiz.
+
+377
+00:26:35,704 --> 00:26:38,744
+Şu anda girmiyoruz ama bu yapılabilir bir
+şey. Evet, yapılabilir bir şey.
+
+378
+00:26:39,654 --> 00:26:42,964
+Peki böyle bir şeyi niye yaparız?
+Şimdi böyle bir şeyi
+
+379
+00:26:43,024 --> 00:26:45,284
+yapmamızın, eee,
+
+380
+00:26:46,184 --> 00:26:47,524
+estetik açıdan çok iyi bir
+
+381
+00:26:48,484 --> 00:26:52,184
+sonuca yol açmadığı belli.
+Yani hani sol taraftaki resim daha iyi,
+
+382
+00:26:52,304 --> 00:26:55,824
+gerçekçi, daha hoşumuza giren de bir
+
+383
+00:26:55,904 --> 00:26:56,644
+görüntü.
+
+384
+00:26:57,804 --> 00:27:01,684
+Sol, eee, sağ taraftakine göre.
+Yani resmin kalitesini aslında
+
+385
+00:27:01,704 --> 00:27:02,964
+bir miktar bozuyoruz.
+
+386
+00:27:04,844 --> 00:27:08,664
+Eee, peki bunun böyle bir kötü tarafı var,
+iyi tarafı ne
+
+387
+00:27:08,704 --> 00:27:09,564
+olabilir bu işin?
+
+388
+00:27:12,624 --> 00:27:13,504
+Bunu da siz söyleyin.
+
+389
+00:27:14,864 --> 00:27:16,084
+Yer açılır hocam.
+
+390
+00:27:19,184 --> 00:27:20,284
+Bir daha söyleyebilir misin?
+
+391
+00:27:20,804 --> 00:27:23,264
+Yani yer açılır, daha az yer kaplar resim.
+
+392
+00:27:23,564 --> 00:27:26,573
+Daha az yer kaplar. Tamam. Evet,
+daha az yer
+
+393
+00:27:26,664 --> 00:27:29,624
+kaplar. Peki ne kadar daha az yer kaplar?
+
+394
+00:27:32,444 --> 00:27:36,424
+Eee,
+iki yüz elli altı bölü on altı kadar daha
+
+395
+00:27:39,384 --> 00:27:40,424
+Bir daha düşün.
+
+396
+00:27:43,744 --> 00:27:45,224
+Aşağıda ipucu var aslında.
+
+397
+00:27:45,764 --> 00:27:49,444
+Ha evet, doğru.
+İki yüz elli altı ikinin kaçıncı katıydı?
+
+398
+00:27:50,324 --> 00:27:52,784
+Eee, sekizinci katı mı oluyordu?
+
+399
+00:27:53,724 --> 00:27:54,804
+Bunları duymamış olayım.
+
+400
+00:27:55,664 --> 00:27:57,304
+Hocam cidden karıştırdım şu an.
+
+401
+00:27:57,884 --> 00:28:01,264
+Evet, sekiz. Tamam. İki yüz elli sekiz,
+iki yüz elli altı.
+
+402
+00:28:01,404 --> 00:28:02,094
+Tamam devam et.
+
+403
+00:28:02,664 --> 00:28:03,964
+O zaman yarısı kadar kaplar.
+
+404
+00:28:06,524 --> 00:28:09,084
+Yani bir pikseli tutmak için
+
+405
+00:28:10,124 --> 00:28:13,464
+eğer iki yüz--
+o piksel iki yüz elli altı farklı değer
+
+406
+00:28:13,604 --> 00:28:17,104
+alabiliyorsa sizin kaç bite ihtiyacınız
+olur?
+
+407
+00:28:18,304 --> 00:28:19,184
+Sekiz.
+
+408
+00:28:19,904 --> 00:28:23,744
+Sekiz.
+On altı farklı renk alıyorsa o pikseli
+
+409
+00:28:23,804 --> 00:28:24,804
+yere ihtiyacınız olur?
+
+410
+00:28:25,564 --> 00:28:25,844
+Dört.
+
+411
+00:28:26,304 --> 00:28:30,004
+Dört bite ihtiyacınız olur.
+Sekiz bitten dört bite indirgemiş
+
+412
+00:28:30,044 --> 00:28:32,664
+Piksel sayıları değişmiyor sonuçta
+buradaki örneklerin.
+
+413
+00:28:33,324 --> 00:28:36,464
+Yani piksel sayısını, resmi küçültmüyoruz,
+piksel sayısı değişmiyor.
+
+414
+00:28:36,504 --> 00:28:38,704
+Dolayısıyla piksel sayısı üzerinden bir
+azaltma yok.
+
+415
+00:28:38,744 --> 00:28:42,524
+Ama her pikseli memoride tutmak için
+gerekli olan alan
+
+416
+00:28:42,604 --> 00:28:43,424
+açısından
+
+417
+00:28:44,284 --> 00:28:47,564
+bir, eee, farklı, yarıya indirgeme var.
+
+418
+00:28:47,584 --> 00:28:51,464
+Yani on altıda birine düşmüyor.
+Küme sayısını on, yani iki yüz
+
+419
+00:28:51,524 --> 00:28:54,944
+elli altıdan on altıya indirgediğimizde
+şey
+
+420
+00:28:55,044 --> 00:28:58,504
+olmuyor, eee, boyutta on altıda biri
+
+421
+00:28:58,584 --> 00:29:01,164
+in-inmiyor, yarıya iniyor. Tamam.
+
+422
+00:29:01,884 --> 00:29:05,664
+Şimdi peki tamam. Eee, peki bu
+
+423
+00:29:05,764 --> 00:29:09,284
+bir yani yer kazanmak bir amaç.
+Yani bir doğal sonucu
+
+424
+00:29:09,364 --> 00:29:12,664
+aslında kümelemenin.
+Yani farklı değer sayısını
+
+425
+00:29:12,674 --> 00:29:15,344
+azaltmak. Aslında buna, eee,
+
+426
+00:29:15,944 --> 00:29:19,704
+kuantizasyon da denir. Kuantadır yani bu.
+
+427
+00:29:22,724 --> 00:29:26,164
+Kuantum fiziği var ya,
+oradaki kuantumla yine aynı mevzu.
+
+428
+00:29:26,864 --> 00:29:30,844
+Eee,
+böyle işte atomların ya da belli küçük
+
+429
+00:29:30,864 --> 00:29:34,224
+parçacıkların her yerde bulunamayacağı,
+belli
+
+430
+00:29:34,304 --> 00:29:38,104
+seviyelerde bulunabileceğine dair bir
+hikayesi var
+
+431
+00:29:38,124 --> 00:29:41,524
+herhalde. Sonuçta şeyimiz,
+
+432
+00:29:41,704 --> 00:29:42,284
+eee,
+
+433
+00:29:43,574 --> 00:29:47,204
+bir uygulama yönü, yani uygulamadan önce,
+
+434
+00:29:47,344 --> 00:29:50,764
+eee, etkisi yer
+
+435
+00:29:51,524 --> 00:29:53,584
+kısmı. Peki başka bir etkisi ne olabilir?
+
+436
+00:29:55,264 --> 00:29:58,444
+Eee, şöyle düşünebilirim.
+İşte bir GSM operatörü düşünelim.
+
+437
+00:29:58,464 --> 00:30:00,524
+Bu örneği her yerde veriyorum. Eee,
+
+438
+00:30:02,804 --> 00:30:05,944
+işte diyelim ki on altı milyon tane
+müşterisi var bir GSM
+
+439
+00:30:05,964 --> 00:30:09,764
+operatörünün ve o müşterilerine kampanya
+düzenlemek istiyor.
+
+440
+00:30:10,804 --> 00:30:14,764
+Şimdi kampanya düzenleyecek ama eee,
+şimdi on altı milyon tane
+
+441
+00:30:14,804 --> 00:30:18,764
+müşterinin her birine ayrı kampanya
+düzenleyip onları yönetmek, onların
+
+442
+00:30:18,784 --> 00:30:21,564
+reklamını falan yapmak pek pratik bir şey
+değil.
+
+443
+00:30:23,024 --> 00:30:26,664
+Eee,
+onun yerine ne yaparlar GSM operatörleri?
+
+444
+00:30:27,044 --> 00:30:29,294
+Müşterilerini segmentlere ayırırlar.
+
+445
+00:30:29,364 --> 00:30:32,084
+Şimdi bu segmentlere ayırma dediğimiz şey
+aslında-
+
+446
+00:30:32,860 --> 00:30:36,740
+Konuştuğumuz kümeleme işi.
+Mesela ellerindeki on altı
+
+447
+00:30:36,840 --> 00:30:40,460
+milyon tane müşteriyi biz bunları beş
+segmentte ayıralım
+
+448
+00:30:40,480 --> 00:30:44,120
+deseler,
+beş tane kümeye ayıralım anlamında.
+
+449
+00:30:45,900 --> 00:30:49,220
+Beş kümeye ayırdığımda on altı milyon tane
+
+450
+00:30:49,360 --> 00:30:50,420
+farklılığı
+
+451
+00:30:51,820 --> 00:30:54,600
+beş tane farklılığa indireceğiz.
+
+452
+00:30:55,090 --> 00:30:58,660
+Peki şöyle bir soru sorayım.
+Böyle bir işlem yapmak istese bir GSM
+
+453
+00:30:58,700 --> 00:31:01,900
+operatörü, bunun inputları ne olur?
+
+454
+00:31:02,020 --> 00:31:05,420
+Yani input dediğim şuradaki, eee,
+
+455
+00:31:05,780 --> 00:31:09,640
+X'ler neler olur bana söyler misiniz?
+Aklınıza neler gelir?
+
+456
+00:31:10,180 --> 00:31:13,420
+Nelere göre insanları kümelemek mantıklı
+bir hareket olabilir?
+
+457
+00:31:14,410 --> 00:31:17,680
+Hepiniz GSM kullanıcısınız,
+bir şeyler söyleyebilirsiniz.
+
+458
+00:31:18,240 --> 00:31:20,670
+Kullanım olabilir. Şey,
+internet kullanımı.
+
+459
+00:31:20,670 --> 00:31:21,590
+Kullanım demek ne demek?
+
+460
+00:31:21,620 --> 00:31:23,340
+İnternet kullanımı. Aylık
+
+461
+00:31:24,180 --> 00:31:24,420
+ortalama.
+
+462
+00:31:24,450 --> 00:31:27,600
+Aylık ne kadar gigabyte internet
+kullanıyor.
+
+463
+00:31:27,640 --> 00:31:30,940
+Aynen. Ne kadar konuşuyor,
+ne kadar SMS kullanıyor.
+
+464
+00:31:30,980 --> 00:31:31,820
+Hı hı.
+
+465
+00:31:31,900 --> 00:31:34,880
+Eee,
+işte bu zamana kadarki faturaları da
+
+466
+00:31:34,890 --> 00:31:35,060
+Hani
+
+467
+00:31:36,140 --> 00:31:40,060
+çünkü belli bir bütçe limiti vardır belki.
+
+468
+00:31:40,180 --> 00:31:40,500
+Evet.
+
+469
+00:31:40,540 --> 00:31:44,210
+Bu dördü geldi şimdi.
+Kendim için de öyle baktığım için [güler]
+
+470
+00:31:44,220 --> 00:31:45,220
+bakarım.
+
+471
+00:31:45,280 --> 00:31:46,720
+Peki, teşekkürler. Evet, başka?
+
+472
+00:31:47,640 --> 00:31:48,720
+Konumu olabilir.
+
+473
+00:31:50,360 --> 00:31:54,020
+Konumu olabilir. Evet. Ne bileyim,
+bir bölgedeki
+
+474
+00:31:54,030 --> 00:31:57,760
+insanlara özel bir şeyler, eee,
+çıkabilir belki. Evet.
+
+475
+00:31:59,760 --> 00:32:03,180
+Konum. [öğrenci] ne demiş? Yaş,
+
+476
+00:32:03,300 --> 00:32:04,480
+cinsiyet demiş.
+
+477
+00:32:05,680 --> 00:32:08,720
+Evet,
+olabilir ama hiç öyle bir şey duymadım.
+
+478
+00:32:08,760 --> 00:32:12,099
+Siz duydunuz mu bilmiyorum. Eee,
+yaşla alakalı var.
+
+479
+00:32:12,160 --> 00:32:15,060
+Hani öğrencidir,
+şudur filan o tarz şeyler var.
+
+480
+00:32:15,120 --> 00:32:18,840
+İkinci bahar falan gibisinden paketler
+görmüşüm ama cinsiyete göre paket
+
+481
+00:32:18,880 --> 00:32:19,820
+gördünüz mü hiç?
+
+482
+00:32:24,200 --> 00:32:27,940
+Ben görmedim.
+Hocam yan uygulamalar hediye ediyorlar ya,
+
+483
+00:32:28,080 --> 00:32:29,020
+alakalı olabilir mi?
+
+484
+00:32:29,740 --> 00:32:31,440
+Yoo, ben, ben paket anlamında diyorum.
+
+485
+00:32:31,480 --> 00:32:35,280
+Yani böyle hani öğrencilere özel, şunlara,
+tarımcılara özel, öğretmenlere
+
+486
+00:32:35,360 --> 00:32:37,700
+özel,
+polislere özel falan öyle düzgün bir
+
+487
+00:32:37,740 --> 00:32:39,520
+Mesleklere falan göre de var, değil mi?
+
+488
+00:32:40,080 --> 00:32:41,420
+Ama cinsiyete göre hiç gördünüz
+
+489
+00:32:42,880 --> 00:32:42,890
+mü?
+
+490
+00:32:42,890 --> 00:32:43,860
+Ben de görmedim hocam.
+
+491
+00:32:44,000 --> 00:32:45,279
+Merak ettim sadece de.
+
+492
+00:32:47,980 --> 00:32:51,560
+Evet. Yani ya çekiniyorlardır ya da çok
+
+493
+00:32:51,640 --> 00:32:55,020
+anlamlı bir şey değildir.
+Ama sanki anlamlıymış gibi de geliyor.
+
+494
+00:32:55,060 --> 00:32:58,300
+Ne bileyim,
+kadınlarla erkeklerin konuşma
+
+495
+00:32:58,309 --> 00:33:00,920
+alışkanlıkları kesinlikle birbirinden
+farklılar.
+
+496
+00:33:01,000 --> 00:33:04,240
+Ama ona özel bir şey muhtemelen bilerek
+yapmıyorlar
+
+497
+00:33:04,760 --> 00:33:06,390
+herhalde. Peki.
+
+498
+00:33:08,320 --> 00:33:08,480
+Eee,
+
+499
+00:33:09,440 --> 00:33:12,560
+dolayısıyla verilerini daha iyi yönetmek,
+
+500
+00:33:13,700 --> 00:33:17,040
+verilerini daha iyi incelemek,
+analiz etmek
+
+501
+00:33:17,620 --> 00:33:21,340
+gibisinden amaçlarla da bu kümeleme
+işlemini ne yapabilirsiniz?
+
+502
+00:33:21,420 --> 00:33:25,360
+Gerçekleştirebilirsiniz.
+Sadece böyle resimlerde falan olan bir şey
+
+503
+00:33:25,500 --> 00:33:29,200
+değil yani onu demek istiyorum.
+Burada sadece onun örneği var da o
+
+504
+00:33:29,460 --> 00:33:32,720
+kafanızda sabit kalmasın diye diyorum.
+
+505
+00:33:35,320 --> 00:33:35,700
+Peki,
+
+506
+00:33:36,580 --> 00:33:38,180
+bir başka uygulama türümüz
+
+507
+00:33:40,680 --> 00:33:44,540
+regresyon.
+Regresyon bir süpervizyon yöntem.
+
+508
+00:33:44,580 --> 00:33:46,260
+Yani çıkışın ne olduğunu söylüyoruz.
+
+509
+00:33:47,720 --> 00:33:50,760
+Eee,
+input'a karşılık olması gereken çıkışın ne
+
+510
+00:33:51,220 --> 00:33:54,860
+Fakat bu çıkış sayısal bir şey.
+Yani önceki
+
+511
+00:33:55,000 --> 00:33:58,440
+örneğimizde, eee,
+çıkışımız kategorik bir şeydi.
+
+512
+00:33:58,680 --> 00:34:01,240
+Burada ise sayısal bir şey.
+Sayısal bir şeyi tahmin ediyoruz.
+
+513
+00:34:02,540 --> 00:34:06,320
+Şimdi buradaki veri
+
+514
+00:34:06,340 --> 00:34:10,160
+kümesi, şuradaki her bir nokta,
+işte motor gücüne karşılık
+
+515
+00:34:10,200 --> 00:34:13,160
+maksimum hız.
+Bunların her biri birer araba.
+
+516
+00:34:13,760 --> 00:34:16,940
+Ben burada tabii işte yirmi tane falan
+nokta var ama ben beş tanesini
+
+517
+00:34:18,000 --> 00:34:21,280
+koymuşum. Eee,
+bunların her biri bir arabayı
+
+518
+00:34:21,290 --> 00:34:24,860
+gösteriyorlar. Bizim buradaki problemimiz
+
+519
+00:34:25,300 --> 00:34:29,110
+bir, eee, arabanın motor gücüyle maksimum
+
+520
+00:34:29,180 --> 00:34:30,600
+hızı arasındaki,
+
+521
+00:34:31,500 --> 00:34:32,980
+eee, ilişkiyi bulmak.
+
+522
+00:34:33,780 --> 00:34:37,600
+Yani ben öyle bir model oluşturacağım ki
+ben o modele motor gücünü
+
+523
+00:34:37,620 --> 00:34:38,029
+vereceğim,
+
+524
+00:34:39,500 --> 00:34:43,360
+o da bana maksimum hızı verecek.
+Şimdi burada ben yine
+
+525
+00:34:43,420 --> 00:34:47,240
+lineer bir model seçmişim. Eee, lineer
+
+526
+00:34:47,300 --> 00:34:50,739
+model ailesinden de bir tane örneği buraya
+çizmişim.
+
+527
+00:34:50,779 --> 00:34:54,240
+Şurada görüyorsunuz mavi çizgi elimizdeki
+lineer model ailesinin bir
+
+528
+00:34:54,400 --> 00:34:54,840
+üyesi.
+
+529
+00:34:55,780 --> 00:34:59,609
+Elimizdeki veriye, eee, mümkün olduğu
+
+530
+00:34:59,720 --> 00:35:00,900
+kadar uyabilen.
+
+531
+00:35:02,340 --> 00:35:05,669
+Şimdi başka örneklerimiz de olabilir tabii
+ki tahmin
+
+532
+00:35:05,720 --> 00:35:09,220
+edebileceğiniz gibi.
+Bu model ailesinden ben, eee,
+
+533
+00:35:09,800 --> 00:35:13,260
+başka bir sürü daha--
+Çok pardon bu o model
+
+534
+00:35:13,360 --> 00:35:15,140
+ailesinden bir şey olmayacaktır.
+
+535
+00:35:17,200 --> 00:35:20,380
+Şu mesela başka bir örnek.
+Şu mesela başka bir örnek.
+
+536
+00:35:20,440 --> 00:35:24,300
+Şu mesela başka bir örnek.
+Bunların her biri başka başka o
+
+537
+00:35:24,340 --> 00:35:27,620
+model ailesinin üyeleri.
+Ve bunların da birbirinden tek farkı yine
+
+538
+00:35:27,680 --> 00:35:28,540
+parametreler.
+
+539
+00:35:29,420 --> 00:35:33,000
+Yani parametreleri birbirinden farklı
+
+540
+00:35:33,100 --> 00:35:37,080
+olduğunda o model ailesinden böyle üyeler
+
+541
+00:35:37,120 --> 00:35:40,700
+ne yapabilirsiniz? Üretebilirsiniz.
+Ve burada da yine eğitim sürecimiz var.
+
+542
+00:35:40,820 --> 00:35:42,910
+Yani, eee, bir şekilde elimizdeki
+
+543
+00:35:44,160 --> 00:35:47,740
+model ailesinin elimizdeki veriye en
+uyumlu
+
+544
+00:35:47,800 --> 00:35:49,140
+üyesini bulmaya çalışıyoruz.
+
+545
+00:35:50,660 --> 00:35:51,419
+Şimdi burada
+
+546
+00:35:52,640 --> 00:35:55,700
+deminki sınıflandırma örneğimizde
+
+547
+00:35:56,660 --> 00:35:59,980
+model ailelerinin en iyi,
+
+548
+00:36:00,440 --> 00:36:00,680
+eee,
+
+549
+00:36:01,760 --> 00:36:02,420
+üyelerinin
+
+550
+00:36:03,440 --> 00:36:06,980
+elimizdeki eğitim kümesi üzerinde süper
+performans
+
+551
+00:36:07,060 --> 00:36:10,950
+gösterebildiğini görmüştük. Yani, eee,
+tam olarak ne
+
+552
+00:36:11,000 --> 00:36:14,120
+yapabiliyorlardı?
+Elimizdeki dataya uyum
+
+553
+00:36:15,260 --> 00:36:18,580
+Lineer bir model ailesini seçtiğimizde
+
+554
+00:36:19,180 --> 00:36:23,020
+o ailenin içinden bir,
+öyle bir üye bulabiliyorduk ki biz
+
+555
+00:36:23,040 --> 00:36:26,800
+eğitim kümesine tamamen uyumlu,
+yani elimizdeki eğitim kümesine hiç hata
+
+556
+00:36:26,840 --> 00:36:29,960
+Böyle bir şey bulabiliyorduk.
+Bu burada geçerli mi?
+
+557
+00:36:29,980 --> 00:36:30,880
+Sorum bu.
+
+558
+00:36:35,040 --> 00:36:38,660
+Şu anda elimizde gördüğümüz problemde bu
+geçerli mi?
+
+559
+00:36:39,640 --> 00:36:43,600
+Geçerli değil.
+Dümdüz çizilmiş olması lazım bütün
+
+560
+00:36:44,100 --> 00:36:47,720
+Ki öyle olsun.
+Şu anda bizim çizebileceğimiz
+
+561
+00:36:47,800 --> 00:36:51,160
+hiçbir lineer model elimizdeki eğitim
+datasının
+
+562
+00:36:51,220 --> 00:36:54,440
+tamamıyla tam uyumlu değil, değil mi?
+
+563
+00:36:55,120 --> 00:36:58,680
+Çünkü şimdi şunu bile düşünsek, pardon.
+
+564
+00:37:00,700 --> 00:37:02,120
+Eee, bu mesela diyelim ki
+
+565
+00:37:03,140 --> 00:37:06,080
+bir şekilde oturttuğumuz--
+şimdi bunun hataları var.
+
+566
+00:37:06,460 --> 00:37:10,220
+Yani hata dediğimiz şey ne demek?
+Aslında şöyle bir şey: Benim
+
+567
+00:37:10,380 --> 00:37:13,500
+modelim, mesela işte, eee,
+şu örnek için düşünelim.
+
+568
+00:37:13,930 --> 00:37:17,880
+Bu örnek için aslında modelim şu
+tah-değeri tahmin ediyor,
+
+569
+00:37:18,260 --> 00:37:19,220
+değil mi? Şurayı tahmin ediyor.
+
+570
+00:37:20,140 --> 00:37:24,060
+O zaman gerçeği bu.
+O zaman bu kadarlık bir hata yaptım ben bu
+
+571
+00:37:24,120 --> 00:37:27,940
+üzerinde. Burada da aynı şekilde şunlar,
+bizim şu çizdiğim kırmızı
+
+572
+00:37:28,000 --> 00:37:31,560
+çizgilerin her biri.
+Arada tabii ki çok daha minik minik bir
+
+573
+00:37:32,490 --> 00:37:35,220
+Şurada yine böyle biraz daha büyük bir
+arkadaş var.
+
+574
+00:37:36,060 --> 00:37:39,720
+Minik minik de olsa buradaki örneklerin
+çoğunda ne var?
+
+575
+00:37:40,040 --> 00:37:42,280
+Hata var. Görüyorsunuz, değil mi?
+
+576
+00:37:42,310 --> 00:37:46,280
+Peki bu hatalara sahip olmayan bir model
+oluşturabilir miyim
+
+577
+00:37:46,340 --> 00:37:46,510
+ben?
+
+578
+00:37:48,740 --> 00:37:52,040
+Oluşturabilirim.
+Ama onun için ne yapmam gerekir?
+
+579
+00:37:55,020 --> 00:37:56,750
+Ne varsayımından çıkmam gerekir?
+
+580
+00:37:58,560 --> 00:38:00,800
+Lineer doğru varsayımından.
+
+581
+00:38:01,940 --> 00:38:05,920
+Seçtiğim model ailesinden çıkmam,
+başka bir model ailesi seçmem
+
+582
+00:38:05,940 --> 00:38:07,260
+gerekir, değil mi?
+
+583
+00:38:07,360 --> 00:38:07,640
+Evet.
+
+584
+00:38:07,700 --> 00:38:11,320
+Yani ben burada, eee,
+şöyle bir şey rahatlıkla yapabilirim.
+
+585
+00:38:12,740 --> 00:38:15,240
+Çok iyi yapabilecek miyim çok emin değilim
+ama deneyeceğim.
+
+586
+00:38:16,660 --> 00:38:19,640
+Eee,
+şimdi başka bir model oluşturuyorum ben.
+
+587
+00:38:39,760 --> 00:38:42,300
+Şimdi burada mümkün olduğu kadar yapmaya
+çalıştığım şey ne oldu?
+
+588
+00:38:42,360 --> 00:38:44,959
+Anlamışsınızdır,
+bütün örneklerin üzerinden geçmeye
+
+589
+00:38:45,860 --> 00:38:49,220
+Eee, başarabilirim de bunu. Burası için
+
+590
+00:38:49,320 --> 00:38:49,920
+düşünürsek,
+
+591
+00:38:51,140 --> 00:38:54,440
+eee, başardığımı varsayalım.
+Bu durumda bu model
+
+592
+00:38:55,140 --> 00:38:56,300
+deminki modele göre
+
+593
+00:38:57,260 --> 00:39:00,800
+eğitim kümesine uyum anlamında daha
+başarılı bir modeldir.
+
+594
+00:39:01,140 --> 00:39:04,880
+Ama, eee, bu çizdiğim şey gördüğünüz gibi
+
+595
+00:39:04,940 --> 00:39:08,400
+lineer model ailesinin bir üyesi değil.
+
+596
+00:39:09,200 --> 00:39:12,420
+Daha, eee, non-lineer,
+daha kompleks bir model
+
+597
+00:39:12,490 --> 00:39:16,160
+olması gerekecektir bunu bulabilmek için,
+
+598
+00:39:16,920 --> 00:39:18,080
+bunu seçebilmek için.
+
+599
+00:39:20,720 --> 00:39:22,160
+Tabii
+
+600
+00:39:23,420 --> 00:39:26,280
+eğitim kümesine tam uyum
+
+601
+00:39:26,800 --> 00:39:27,920
+sağlayabilmek
+
+602
+00:39:29,180 --> 00:39:32,580
+bütün model ailelerinin bir özelliği
+
+603
+00:39:32,760 --> 00:39:33,380
+değildir.
+
+604
+00:39:34,320 --> 00:39:36,640
+Sonucunu da aslında burada görüyoruz.
+
+605
+00:39:38,840 --> 00:39:41,560
+Bazı model aileleri var ki,
+
+606
+00:39:42,580 --> 00:39:43,620
+onları göreceğiz.
+
+607
+00:39:44,960 --> 00:39:48,500
+Eğitim kümesine tam uyum sağlayabilen,
+yani
+
+608
+00:39:49,020 --> 00:39:52,960
+nasıl bir eğitim kümesi olursa olsun ona
+tam uyum
+
+609
+00:39:53,120 --> 00:39:55,960
+sağlayabilen model aileleri olduğu gibi,
+
+610
+00:39:56,900 --> 00:39:58,360
+eee, bunu başaramayan
+
+611
+00:39:59,280 --> 00:40:00,460
+model aileleri de var.
+
+612
+00:40:01,720 --> 00:40:05,200
+Burada aslında tahmin edebileceğiniz gibi
+
+613
+00:40:06,380 --> 00:40:08,900
+model ailesinin esnekliği
+
+614
+00:40:09,080 --> 00:40:12,460
+arttıkça uyum sağlayabildiği eğitim
+
+615
+00:40:12,620 --> 00:40:16,060
+kümesi sayısı da giderek ne olacak?
+Artacak.
+
+616
+00:40:16,360 --> 00:40:19,640
+Peki esneklik neyle artar temelde?
+
+617
+00:40:21,300 --> 00:40:25,240
+Parametre sayısıyla artar.
+Bir modelin ne kadar çok
+
+618
+00:40:25,320 --> 00:40:26,600
+parametresi varsa
+
+619
+00:40:28,820 --> 00:40:31,700
+o model o kadar esnek bir modeldir.
+
+620
+00:40:32,540 --> 00:40:36,500
+Parametre sayısı arttıkça elinizdeki
+modelin
+
+621
+00:40:37,300 --> 00:40:40,800
+eğitim kümesine uyumlu olma ihtimali o
+kadar
+
+622
+00:40:40,880 --> 00:40:41,400
+artar.
+
+623
+00:40:42,980 --> 00:40:46,860
+O zaman niye, eee, basit modeller var?
+
+624
+00:40:46,900 --> 00:40:48,840
+Hep kompleks modellerimiz yok.
+
+625
+00:40:49,820 --> 00:40:53,180
+Burada tabii odak, eee, kilit nokta şu:
+
+626
+00:40:54,540 --> 00:40:57,100
+Eğitim kümesine uyum sağlamak
+
+627
+00:40:58,780 --> 00:41:02,340
+test performansı üzerinde, hakkında
+
+628
+00:41:02,380 --> 00:41:04,620
+herhangi bir şey temelde söylemez.
+
+629
+00:41:06,880 --> 00:41:10,220
+Yani modelin parametrelerini belirlerken
+
+630
+00:41:10,280 --> 00:41:13,780
+kullandığımız örnekler üzerindeki
+
+631
+00:41:13,820 --> 00:41:14,640
+performans,
+
+632
+00:41:17,560 --> 00:41:21,440
+daha önceden görmediği örnekler üzerindeki
+performans hakkında
+
+633
+00:41:21,500 --> 00:41:24,500
+çok da fazla bir şey söylemiyor. O yüzden
+
+634
+00:41:25,320 --> 00:41:29,200
+basit bir model kompleks bir modele göre
+eğitim kümesi
+
+635
+00:41:29,240 --> 00:41:33,160
+üzerinde çok başarılı olmasa bile test
+kümesi üzerinde daha başarılı olabilir mi?
+
+636
+00:41:33,380 --> 00:41:36,960
+Evet, olabilir.
+O yüzden hani hem basit hem
+
+637
+00:41:37,060 --> 00:41:40,000
+karmaşık modellerimiz varlar.
+
+638
+00:41:42,620 --> 00:41:46,500
+Tabii buradaki bu, eee,
+karmaşıklık ya da parametre
+
+639
+00:41:46,540 --> 00:41:50,280
+sayısının, eee, belirlenmesi ya da model
+
+640
+00:41:50,380 --> 00:41:53,200
+ailesinin seçimi, eee, büyük
+
+641
+00:41:53,300 --> 00:41:57,280
+sorular. Eee, yani elimizdeki
+
+642
+00:41:57,400 --> 00:42:01,140
+veriye en uygun model ailesi hangisidir,
+bunun
+
+643
+00:42:01,380 --> 00:42:03,500
+seçimini yapmak çok kolay bir şey değil.
+
+644
+00:42:04,020 --> 00:42:07,960
+Bunu önümüzdeki hafta birkaç farklı
+örnekte göreceğiz zaten.
+
+645
+00:42:09,160 --> 00:42:09,480
+Şimdi
+
+646
+00:42:10,280 --> 00:42:10,960
+devam edelim.
+
+647
+00:42:18,960 --> 00:42:21,480
+Kümeleyelim. Evet.
+
+648
+00:42:22,460 --> 00:42:25,680
+Şimdi bir diğer problem türümüz
+
+649
+00:42:26,940 --> 00:42:30,060
+pekiştirmeli öğrenme,
+reinforcement learning.
+
+650
+00:42:30,120 --> 00:42:33,900
+Şimdi reinforcement learning çok temelde-
+
+651
+00:42:38,584 --> 00:42:39,464
+Belli bir
+
+652
+00:42:40,444 --> 00:42:41,104
+durumda
+
+653
+00:42:42,744 --> 00:42:46,264
+yapılması gereken hareketin ne
+
+654
+00:42:46,344 --> 00:42:49,984
+olduğunu söylemediğimiz ama
+
+655
+00:42:50,824 --> 00:42:54,754
+model bunu yaparsa bunun iyi ya da kötü ya
+da ne
+
+656
+00:42:54,844 --> 00:42:58,764
+kadar iyi ya da ne kadar kötü olduğunu
+söyleyebildiğimiz bir
+
+657
+00:42:59,784 --> 00:43:02,544
+uygulama türü. Ne demek istiyorum?
+
+658
+00:43:03,224 --> 00:43:06,944
+Eee,
+model belli bir durumda belli bir tahminde
+
+659
+00:43:07,024 --> 00:43:10,474
+belli bir hareketi yapmak için.
+Bu hareket yani bir output
+
+660
+00:43:10,864 --> 00:43:14,024
+üretti bize. Bu output için biz,
+
+661
+00:43:15,464 --> 00:43:19,344
+eee,
+bu output'a karşı modele verebileceğimiz
+
+662
+00:43:19,384 --> 00:43:22,904
+geribildirim türleri var.
+Bunlardan bir tanesi şunu diyebiliriz:
+
+663
+00:43:22,964 --> 00:43:26,324
+ürettin ama aslında senin üretmen gereken
+şey beşti."
+
+664
+00:43:27,304 --> 00:43:30,464
+Bu direkt bir geribildirim. Yani üç
+
+665
+00:43:30,924 --> 00:43:33,624
+ürettin ama aslında olması gereken şey
+beşti.
+
+666
+00:43:34,224 --> 00:43:38,004
+Bu üçe karşılık beşi söylüyorsak bu bir
+supervised
+
+667
+00:43:38,104 --> 00:43:41,704
+learning. Yani biz ona ne olma--
+ne yapması gerektiğini orada aslında
+
+668
+00:43:41,964 --> 00:43:44,003
+Tamam? Üçe karşı beş üretmen gerekiyordu.
+
+669
+00:43:44,284 --> 00:43:46,944
+Model de ona göre kendini şey yapıyor,
+düzeltiyor.
+
+670
+00:43:47,744 --> 00:43:51,164
+Şunu diyebiliriz başka bir geribildirim
+için: "Sen üç
+
+671
+00:43:51,284 --> 00:43:54,744
+ürettin, tamam, ama sen yanlış yaptın."
+
+672
+00:43:56,024 --> 00:43:59,544
+Şimdi bu durumda biraz daha az bilgi
+veriyoruz aslında.
+
+673
+00:43:59,604 --> 00:44:00,684
+Yanlış yaptın sen.
+
+674
+00:44:02,084 --> 00:44:03,524
+Ya da şunu diyorum: "Doğru yaptın."
+
+675
+00:44:04,844 --> 00:44:07,924
+Bu da verilebilecek feedback türleri
+arasında.
+
+676
+00:44:08,504 --> 00:44:10,954
+Şimdi doğru yaptıysa tamam,
+yapacağı çok da fazla bir şey yok.
+
+677
+00:44:10,984 --> 00:44:14,904
+Yani yapması gereken,
+parametreyi düzeltmek manasında yapması
+
+678
+00:44:14,964 --> 00:44:16,684
+şeyin olmadığını söylüyoruz aslında.
+
+679
+00:44:17,384 --> 00:44:21,244
+Üç dediği bize,
+çıkışın üç olduğunu söyledi örnek
+
+680
+00:44:21,324 --> 00:44:23,484
+için ve biz ona dedik ki "Doğru yaptın." O
+zaman bir şey...
+
+681
+00:44:23,764 --> 00:44:27,564
+Ama "Yanlış yaptın." Tamam,
+düzeltmem lazımdı ama nasıl
+
+682
+00:44:27,574 --> 00:44:29,464
+düzeltecek? Bilmiyor değil mi?
+
+683
+00:44:30,844 --> 00:44:33,804
+Yani sadece üçün yanlış olduğunu biliyor.
+
+684
+00:44:33,864 --> 00:44:37,424
+Üçten uzaklaşması gerektiğini biliyor ama
+daha yukarıda bir şey mi söyleyecek, daha
+
+685
+00:44:37,484 --> 00:44:40,604
+aşağıda bir şey mi söyleyecek onu
+bilmiyor. Bu da olabilir.
+
+686
+00:44:40,744 --> 00:44:41,124
+Eee,
+
+687
+00:44:43,004 --> 00:44:46,743
+şöyle bir şey olabilir başka geribildirim
+türü: Yani sen üç yaptın
+
+688
+00:44:47,404 --> 00:44:51,084
+ama doğruya, eee, iki yakınıksın.
+
+689
+00:44:52,364 --> 00:44:54,504
+Bu da başka bir feedback türü. Yani
+
+690
+00:44:55,344 --> 00:44:59,084
+iki yakınıksının anlamı ne?
+Yani bir de olabilir,
+
+691
+00:44:59,204 --> 00:45:03,044
+beş de olabilir ama hangisi olduğunu
+bilmiyorum. Tamam?
+
+692
+00:45:03,124 --> 00:45:07,004
+Şimdi bu, eee,
+farklı farklı feedback türleri,
+
+693
+00:45:07,124 --> 00:45:10,804
+eee,
+aslında işte reinforcement learning'in
+
+694
+00:45:11,224 --> 00:45:14,304
+şeylerini gösteriyor,
+belli özelliklerini gösteriyor.
+
+695
+00:45:14,344 --> 00:45:15,954
+Şimdi peki niye böyle bir şeyler olsun ki?
+
+696
+00:45:15,964 --> 00:45:18,104
+Yani üç yaptıysa biz ona beşi söyleyelim.
+
+697
+00:45:18,444 --> 00:45:22,283
+Niye öyle bir şeye giriyoruz ki kendimizi,
+sıkıntıya sokuyoruz ki?
+
+698
+00:45:22,344 --> 00:45:24,154
+Şimdi bunun birkaç tane sebebi olabilir.
+
+699
+00:45:24,154 --> 00:45:24,764
+Birincisi
+
+700
+00:45:26,464 --> 00:45:27,084
+o durumda,
+
+701
+00:45:28,004 --> 00:45:31,904
+yani kullan-- eee, modelin, eee,
+o durumda ne
+
+702
+00:45:31,924 --> 00:45:32,664
+yaptığını,
+
+703
+00:45:33,984 --> 00:45:37,374
+ne yap-- pardon, ne yapması gerektiğini,
+öyle söyleyelim,
+
+704
+00:45:37,944 --> 00:45:39,603
+biz de bilmiyor olabiliriz.
+
+705
+00:45:40,764 --> 00:45:44,264
+Tamam? Biz de bilmiyor ol--
+yani o durumda ne yapması gerekiyor
+
+706
+00:45:44,304 --> 00:45:44,824
+bilmiyoruz
+
+707
+00:45:45,704 --> 00:45:48,304
+ve modelin kendisinin bunu keşfetmesini
+istiyor olabiliriz.
+
+708
+00:45:49,104 --> 00:45:51,264
+Bilmiyor olabiliriz. Başka ne olabilir?
+
+709
+00:45:51,444 --> 00:45:54,704
+Yani biliyoruzdur ama etiketleyecek
+vaktimiz ve bütçemiz
+
+710
+00:45:54,764 --> 00:45:57,244
+yoktur. Bu bir olasılık.
+
+711
+00:45:57,304 --> 00:46:01,144
+Başka?
+O durumda yapılabilecek birden fazla
+
+712
+00:46:01,204 --> 00:46:03,404
+şey vardır, eee, hamle vardır.
+
+713
+00:46:04,664 --> 00:46:05,064
+Eee,
+
+714
+00:46:06,064 --> 00:46:07,284
+yani tek doğru yoktur.
+
+715
+00:46:08,204 --> 00:46:11,704
+E,
+tek doğru yoksa orada o doğrulardan bir
+
+716
+00:46:11,744 --> 00:46:12,444
+sıkıntılı.
+
+717
+00:46:13,684 --> 00:46:17,444
+Eee,
+bir tanesini söylerseniz ötekisi için
+
+718
+00:46:17,484 --> 00:46:18,443
+mesela, eee,
+
+719
+00:46:20,024 --> 00:46:23,624
+üç-- mesela üç yaptı.
+Yani beş de yapsa iyiydi,
+
+720
+00:46:23,744 --> 00:46:26,344
+mesela yedi de yapsa iyiydi. Öyle diyelim.
+Salıyorum şimdi.
+
+721
+00:46:27,144 --> 00:46:30,944
+E,
+beş yapsan iyi dersen o zaman yedi
+
+722
+00:46:31,004 --> 00:46:34,164
+olduğunu söylemiş oluyorsun.
+Ya da yedi yapsan iyi dersen o zaman beş
+
+723
+00:46:34,184 --> 00:46:37,854
+kötü olduğunu söylüyorsun.
+Dolayısıyla tek bir doğrunun olmadığı
+
+724
+00:46:37,864 --> 00:46:39,244
+durumlarda da yine
+
+725
+00:46:40,064 --> 00:46:44,004
+bu tarz...
+Ama işte yanlış yaptın dediğinde ona
+
+726
+00:46:44,224 --> 00:46:47,864
+işi birazcık. Dolayısıyla bu tarz
+
+727
+00:46:47,884 --> 00:46:51,244
+farklı mekanizmalar, feedback türleri
+
+728
+00:46:51,684 --> 00:46:55,524
+olabiliyorlar.
+Bunlara genelde işte pekiştirmeli
+
+729
+00:46:56,184 --> 00:46:58,084
+eee, bir şekilde, eee,
+
+730
+00:46:58,904 --> 00:47:02,764
+ceza ve ödül fonksiyonu,
+yani ceza ve ödül fonksiyonu aynı şey.
+
+731
+00:47:03,284 --> 00:47:06,484
+Ya ceza verecek ya ödül verecek.
+Fonksiyonları tanımlanıyor
+
+732
+00:47:07,024 --> 00:47:07,804
+sizin, eee,
+
+733
+00:47:10,044 --> 00:47:13,684
+elinizdeki probleme dair bilgileri
+kullanarak.
+
+734
+00:47:13,804 --> 00:47:17,684
+Ve genelde pekiştirmeli öğrenme tek bir
+
+735
+00:47:17,744 --> 00:47:21,124
+kararın değil de ardışık ve bu kararların
+birbirini
+
+736
+00:47:21,184 --> 00:47:24,024
+etkilediği, öyle söyleyelim, etkilediği
+
+737
+00:47:25,124 --> 00:47:28,024
+durumlar için, problemler için kullanılır.
+
+738
+00:47:28,464 --> 00:47:32,404
+Bunların en barizi oyunlardır. Oyunlarda
+
+739
+00:47:32,464 --> 00:47:35,884
+pekiştirme öğrenme kullanılır. Eee,
+
+740
+00:47:37,824 --> 00:47:41,754
+başka mesela işte en son bu ChatGPT falan
+gibisinden
+
+741
+00:47:41,754 --> 00:47:44,564
+şeylerde, ChatGPT'nin içerisinde,
+eğitim sürecinde,
+
+742
+00:47:45,664 --> 00:47:47,944
+eee, pekiştirmeli öğrenme var.
+
+743
+00:47:48,844 --> 00:47:51,164
+Orada tam da şeye uyuyor birazcık iş.
+
+744
+00:47:51,184 --> 00:47:52,144
+Hani demin dedim ya,
+
+745
+00:47:53,024 --> 00:47:53,804
+eee,
+
+746
+00:47:54,624 --> 00:47:58,524
+doğrusunun yanlışının ne olduğunu söylemek
+için
+
+747
+00:47:58,644 --> 00:48:02,344
+yeterli şeyinizin olmadığı durumlar
+olabilir, bütçenizin olmadığı
+
+748
+00:48:02,364 --> 00:48:02,924
+durumlar.
+
+749
+00:48:05,184 --> 00:48:06,624
+Yani, eee,
+
+750
+00:48:09,244 --> 00:48:12,624
+korkunç geniş open domain bir sistemde
+
+751
+00:48:14,284 --> 00:48:17,704
+kullanıcı şunu derse sen de şunu de için
+
+752
+00:48:17,784 --> 00:48:20,644
+yeterli etiket toplamak pek mümkün bir şey
+değil.
+
+753
+00:48:22,364 --> 00:48:23,064
+Anlatabildim mi?
+
+754
+00:48:23,924 --> 00:48:27,324
+Eee,
+onun yerine belli toplanmış etiketleri
+
+755
+00:48:27,584 --> 00:48:31,244
+eee,
+reward fonksiyonu aslında oluşturuluyor ve
+
+756
+00:48:31,744 --> 00:48:35,624
+onunla sistem eğitiliyor.
+En iyi şimdi onun detaylarına girmeyeyim
+
+757
+00:48:35,844 --> 00:48:36,904
+dediğim gibi, eee,
+
+758
+00:48:37,744 --> 00:48:38,404
+bu tarz
+
+759
+00:48:39,684 --> 00:48:43,514
+problemler için, eee, kullanılabilen bir,
+eee-
+
+760
+00:48:44,892 --> 00:48:48,592
+Yaklaşım türü.
+Dediğim gibi buradaki çıkış temelde en
+
+761
+00:48:48,652 --> 00:48:52,512
+özetlersek buradaki çıkış gerçekte
+
+762
+00:48:53,592 --> 00:48:57,452
+çıkışın ne olması gerektiği değil,
+onun haricinde bizi
+
+763
+00:48:57,512 --> 00:49:01,442
+çıkışa yönlendiren bir bilgi.
+Doğru yanlış olabilir.
+
+764
+00:49:01,512 --> 00:49:04,672
+Şu kadar doğru yaptın,
+şu kadar yanlış yaptın gibisinden bir şey
+
+765
+00:49:04,872 --> 00:49:05,652
+Vesaire vesaire.
+
+766
+00:49:06,612 --> 00:49:10,172
+Bunun daha detaylarını eee,
+önümüzdeki haftalarda
+
+767
+00:49:10,192 --> 00:49:13,852
+göreceğiz.
+Pekiştirmeli öğrenme için ayrıca bir şey,
+
+768
+00:49:14,072 --> 00:49:15,292
+hazırladım, hazırlıyorum.
+
+769
+00:49:17,332 --> 00:49:19,112
+Birliktelik kurallarının keşfi.
+
+770
+00:49:20,492 --> 00:49:20,642
+Eee,
+
+771
+00:49:21,632 --> 00:49:25,192
+bu aslında bir uygulama ama uygulamadan
+bir sürü
+
+772
+00:49:25,252 --> 00:49:29,012
+farklı tarafa doğru gittiği için bir
+problem türü olarak burada yer alıyor.
+
+773
+00:49:29,052 --> 00:49:32,712
+Bu aslında birliktelik keşfi, yani eee,
+
+774
+00:49:33,132 --> 00:49:35,232
+ortaya çıktığı yer sepet analizi.
+
+775
+00:49:35,652 --> 00:49:38,612
+Eee, sanal ya da elek-- eee,
+sanal ya da gerçek
+
+776
+00:49:38,772 --> 00:49:42,752
+marketlerdeki sepetlerin içerisinde hangi
+ürünler birlikte
+
+777
+00:49:42,832 --> 00:49:46,412
+yer alıyorlar? Bu bilgi oldukça kritik bir
+
+778
+00:49:46,472 --> 00:49:49,532
+bilgi. Eee, ne için? Eee,
+
+779
+00:49:49,832 --> 00:49:53,672
+marketler için.
+İşte kullanıcılara "Şunu da alırsan şunu
+
+780
+00:49:53,932 --> 00:49:57,472
+ya da işte "Şununla şunu birlikte alırsan
+şu kadar indirim yapalım." Ya da
+
+781
+00:49:57,512 --> 00:49:58,752
+gerçek bir, eee,
+
+782
+00:50:00,352 --> 00:50:01,232
+markette
+
+783
+00:50:02,892 --> 00:50:06,632
+raf düzenlemesi ya da sanal bir, eee,
+markette sayfa
+
+784
+00:50:06,712 --> 00:50:09,452
+düzenlemesi için hep bu bilgiler, eee,
+
+785
+00:50:09,852 --> 00:50:13,812
+kullanılıyorlar. Eee, burada kullanılan,
+eee,
+
+786
+00:50:14,712 --> 00:50:18,632
+algoritma işte Apriori gibi çok klasik
+algoritmalar, eee, var
+
+787
+00:50:18,952 --> 00:50:22,652
+ve oldukça başarılı.
+Eee ama onlara bu dersin kapsamında
+
+788
+00:50:22,692 --> 00:50:25,952
+girmeyeceğiz.
+Yani birliktelik kuralları keşfi,
+
+789
+00:50:26,332 --> 00:50:26,832
+eee,
+
+790
+00:50:27,972 --> 00:50:31,332
+için algoritmalara girmeyeceğiz.
+Öyle söyleyeyim. Tamam.
+
+791
+00:50:33,092 --> 00:50:36,412
+Şimdi o zaman bir ara verebiliriz
+herhalde.
+
+792
+00:50:36,552 --> 00:50:37,832
+Dokuz elli iki saat
+
+793
+00:50:38,832 --> 00:50:40,772
+sekiz onu beş geçe diyelim.
+
+794
+00:50:41,832 --> 00:50:44,072
+Ondan sonra uygulamalara geçeceğiz zaten.
+
+795
+00:50:45,072 --> 00:50:45,992
+Bir saniye.
+
+796
+00:50:54,431 --> 00:50:57,772
+Tamam. Az sonra görüşmek üzere arkadaşlar.
+
+797
+01:03:49,032 --> 01:03:51,432
+Tekrardan merhaba arkadaşlar.
+
+798
+01:03:56,292 --> 01:03:57,152
+Ekran geldi mi?
+
+799
+01:04:01,352 --> 01:04:03,292
+Geldi hocam.
+
+800
+01:04:05,052 --> 01:04:07,811
+Tamam. Şimdi uygulamalar kısmına, eee,
+
+801
+01:04:08,432 --> 01:04:09,372
+geçelim.
+
+802
+01:04:10,712 --> 01:04:11,192
+İlk
+
+803
+01:04:12,132 --> 01:04:14,292
+uygulamamız dolar kuru tahmini.
+
+804
+01:04:15,472 --> 01:04:19,152
+Şimdi, eee, burada
+
+805
+01:04:21,692 --> 01:04:25,212
+elimizde geçmiş tarihlere
+
+806
+01:04:25,412 --> 01:04:29,112
+dair bir zaman serisi var.
+
+807
+01:04:29,232 --> 01:04:31,692
+Bunlar doların değerleri mesela diyelim
+ki.
+
+808
+01:04:33,472 --> 01:04:37,032
+Ve biz bir model oluşturacağız ve bir
+varsayımda
+
+809
+01:04:37,072 --> 01:04:40,832
+bulunuyoruz.
+Diyoruz ki bu varsayımımız şu:
+
+810
+01:04:42,652 --> 01:04:46,252
+Doların bugünkü değeri sadece ondan
+
+811
+01:04:46,452 --> 01:04:49,992
+önceki zamandaki doların değerlerine
+
+812
+01:04:50,052 --> 01:04:51,512
+bağlıdır.
+
+813
+01:04:54,232 --> 01:04:58,012
+Yani bu bir varsayım.
+Bu doğru bir varsayım değil bu arada.
+
+814
+01:04:58,372 --> 01:05:00,272
+Çünkü doların değeri piyasadaki
+
+815
+01:05:01,492 --> 01:05:03,372
+milyon tane şeye bağlı.
+
+816
+01:05:05,312 --> 01:05:07,792
+Eee, siyasi, ekonomik vesaire vesaire.
+
+817
+01:05:09,692 --> 01:05:13,452
+Eee ama biz şimdilik görevi varsayımda
+bulunalım.
+
+818
+01:05:13,652 --> 01:05:17,392
+Geçmiş verilere bağlı olduğunu düşünelim
+sadece bugünün
+
+819
+01:05:17,432 --> 01:05:20,592
+değerinin. Burada tabii
+
+820
+01:05:21,712 --> 01:05:24,952
+veri kümesini oluşturmak için,
+yani bizim veri kümemizin
+
+821
+01:05:25,432 --> 01:05:29,312
+yapısı şöyle olması lazım:
+Örneklerimiz olacak
+
+822
+01:05:29,352 --> 01:05:33,232
+ve bu örneklerimizin her birinin eşit
+sayıda özelliği olacak ve bu özellikler
+
+823
+01:05:33,312 --> 01:05:36,312
+aynı şeyi ifade edecekler. Eee,
+
+824
+01:05:37,752 --> 01:05:41,512
+burada bir özellik setine bir kısıt,
+özellik sayısına bir kısıt koymamız
+
+825
+01:05:41,552 --> 01:05:42,172
+gerekiyor.
+
+826
+01:05:43,052 --> 01:05:45,012
+Ne demek istiyorum? Eee,
+
+827
+01:05:46,012 --> 01:05:47,102
+ne kadar bir geçmişe bağlı,
+
+828
+01:05:48,052 --> 01:05:50,312
+ne kadar geçmişe bağlı olduğunu
+tanımlamamız lazım.
+
+829
+01:05:50,332 --> 01:05:51,332
+Buradaki varsayım,
+
+830
+01:05:52,292 --> 01:05:56,092
+eee,
+doların bugünkü değeri kendisinden üç gün
+
+831
+01:05:56,152 --> 01:05:57,772
+kadar ki kısma bağlı.
+
+832
+01:05:58,592 --> 01:06:02,572
+Yani burada işte D'yi tahmin--
+burası bizim çıkışımız.
+
+833
+01:06:03,832 --> 01:06:07,312
+Bunlar ise inputlarımız.
+Çünkü her bir örnek
+
+834
+01:06:08,832 --> 01:06:12,512
+bize şunu söylüyor: İşte bugün altı nokta
+
+835
+01:06:12,552 --> 01:06:16,232
+üçmüş, dün altı nokta üçmüş,
+ondan önceki gün ve ondan da önceki
+
+836
+01:06:16,432 --> 01:06:20,252
+günkü değerlerini gösteriyor.
+Biz şunlara bakarak şunu
+
+837
+01:06:20,332 --> 01:06:23,512
+tahmin etmeye çalışacağız.
+Şunlara bakarak şunu tahmin etmeye
+
+838
+01:06:23,572 --> 01:06:25,222
+Şunlara bakarak şunu tahmin etmeye
+çalışacağız.
+
+839
+01:06:25,252 --> 01:06:26,832
+Bu şekilde veri kümesini ne yapabiliriz?
+
+840
+01:06:27,632 --> 01:06:30,212
+Bu varsayımları kullanarak oluşturabiliriz
+
+841
+01:06:31,372 --> 01:06:33,282
+ve bir model oluşturabiliriz tabii ki.
+
+842
+01:06:34,132 --> 01:06:34,512
+Şimdi
+
+843
+01:06:36,392 --> 01:06:36,592
+bu
+
+844
+01:06:37,472 --> 01:06:40,832
+bir sınıflandırma mı,
+regresyon problemi mi? Ne dersiniz?
+
+845
+01:06:43,132 --> 01:06:46,512
+Evet
+
+846
+01:06:52,192 --> 01:06:55,772
+hocam. Anlayamadım. Eee, evet,
+
+847
+01:06:55,992 --> 01:06:59,232
+bence öyle. Sınıflandırma mı,
+regresyon mu?
+
+848
+01:06:59,492 --> 01:07:02,072
+Regresyon. Bir regresyon problemi.
+
+849
+01:07:02,192 --> 01:07:03,552
+Çıkışımız sayısal bir şey.
+
+850
+01:07:06,348 --> 01:07:07,548
+Şimdi, eee,
+
+851
+01:07:08,528 --> 01:07:11,487
+özellikle burada bir, eee,
+parantez açayım.
+
+852
+01:07:13,028 --> 01:07:16,208
+Zaman serisi içeren, eee,
+
+853
+01:07:16,508 --> 01:07:18,048
+problemleri çözerken
+
+854
+01:07:19,208 --> 01:07:23,128
+eğitim ve test kümesini--
+ki bu kavramlardan dersin
+
+855
+01:07:23,188 --> 01:07:25,668
+sonunda biraz daha bahsetmeye
+çalışacağım--
+
+856
+01:07:26,568 --> 01:07:30,328
+seçerken zamansal farklılığın olmasına
+dikkat
+
+857
+01:07:30,388 --> 01:07:31,268
+etmek gerekir.
+
+858
+01:07:32,588 --> 01:07:36,578
+Ki modelin kopya çekmediğinden
+
+859
+01:07:36,588 --> 01:07:38,948
+ya da ezberlemediğinden emin olun.
+
+860
+01:07:39,448 --> 01:07:42,108
+Ya da modelin kabiliyetini
+
+861
+01:07:42,208 --> 01:07:46,008
+abartmadığımızdan emin olalım.
+Bu aslında onu ifade ediyor.
+
+862
+01:07:47,168 --> 01:07:50,568
+Yani, ne bileyim,
+elinizde bir yıllık data var diyelim ki.
+
+863
+01:07:50,948 --> 01:07:52,208
+Eee, bu bir yıllık datanın,
+
+864
+01:07:53,148 --> 01:07:54,368
+eee, işte,
+
+865
+01:07:56,548 --> 01:08:00,148
+belki ilk sekiz ayına dair olan verileri
+eğitim kümesi,
+
+866
+01:08:00,468 --> 01:08:03,688
+son dört ayına dair olan verileri test
+kümesi olarak
+
+867
+01:08:03,748 --> 01:08:04,828
+kullanabilirsiniz.
+
+868
+01:08:05,808 --> 01:08:06,388
+Eee ama
+
+869
+01:08:07,748 --> 01:08:11,368
+işte bir yıllık veriyi karıştırıp rastgele
+sıralarını karıştırıp
+
+870
+01:08:11,708 --> 01:08:15,688
+içinden yüzde ellisini ya da yüzde
+seksenini çekip bu eğitim,
+
+871
+01:08:15,768 --> 01:08:19,408
+geri kalan yüzde yirmisi test derseniz,
+eee, bu durumda,
+
+872
+01:08:20,068 --> 01:08:24,008
+eee, modelin kopya çekme ihtimalini
+
+873
+01:08:24,088 --> 01:08:27,208
+arttırırsınız ve ölçtüğünüz performans
+
+874
+01:08:28,588 --> 01:08:32,328
+çok gerçeği yansıtmaz. Çünkü gerçek
+
+875
+01:08:32,348 --> 01:08:35,928
+hayatta nasıl bir şey olacak?
+Geçmiş verileri kullanarak
+
+876
+01:08:36,028 --> 01:08:37,608
+geleceği tahmin edeceksiniz.
+
+877
+01:08:38,408 --> 01:08:41,868
+Eee, dolayısıyla, eee,
+modelinizin gerçek performansını ölçmek
+
+878
+01:08:41,908 --> 01:08:45,348
+istiyorsanız,
+eğitim ve test kümesi arasındaki bu
+
+879
+01:08:46,188 --> 01:08:49,768
+modelin performansını ölçme sırasında
+
+880
+01:08:49,848 --> 01:08:52,628
+da aynı şekilde muhafaza etmelisiniz.
+
+881
+01:08:54,568 --> 01:08:55,208
+Bu bir, eee,
+
+882
+01:08:56,268 --> 01:08:57,088
+uyarı. Eee,
+
+883
+01:08:58,368 --> 01:09:02,308
+genelde çok yapılan bir hata.
+O yüzden bunu söylemek istedim.
+
+884
+01:09:03,468 --> 01:09:04,728
+Başka bir problem.
+
+885
+01:09:07,188 --> 01:09:11,168
+Elyazısı-kitap yazı tanıma.
+Sol tarafta bir el yazısı var, sağ
+
+886
+01:09:11,228 --> 01:09:13,848
+tarafta ise bir kitap, eee,
+
+887
+01:09:14,708 --> 01:09:16,028
+optik karakterler var.
+
+888
+01:09:16,848 --> 01:09:19,028
+Amacımız bunları tekste çevirmek.
+
+889
+01:09:20,108 --> 01:09:23,488
+Sol taraftaki problem mi daha kolay,
+sağ taraftaki problem mi kolay?
+
+890
+01:09:24,228 --> 01:09:25,868
+Ne dersiniz?
+
+891
+01:09:28,548 --> 01:09:29,998
+Sağdaki daha kolay hocam.
+
+892
+01:09:29,998 --> 01:09:30,308
+Niye?
+
+893
+01:09:32,168 --> 01:09:35,308
+Ya çünkü her şey yani sıralı, belli.
+İşte satır belli.
+
+894
+01:09:36,068 --> 01:09:38,408
+Diğer tarafta el yazısıyla olduğu için tam
+bir düzen yok.
+
+895
+01:09:39,508 --> 01:09:39,888
+Tamam.
+
+896
+01:09:39,948 --> 01:09:40,928
+Harflerin boyutları belli.
+
+897
+01:09:41,828 --> 01:09:45,348
+Harfler değişebiliyor hocam.
+Solda farklı yazılabilir,
+
+898
+01:09:46,388 --> 01:09:48,567
+Standarttan biraz daha uzak değil mi?
+
+899
+01:09:48,648 --> 01:09:49,848
+Yani mesela şeyi düşün işte,
+
+900
+01:09:51,408 --> 01:09:53,387
+eee, küçük a'ları düşünün.
+
+901
+01:09:54,328 --> 01:09:58,068
+Küçük a sınıfını düşünün.
+Küçük a sınıfının
+
+902
+01:09:58,168 --> 01:10:02,018
+örneklerini düşünün.
+Sol taraftaki problemde küçük
+
+903
+01:10:02,168 --> 01:10:03,808
+a sınıfının örneklerini düşünün.
+
+904
+01:10:03,868 --> 01:10:06,888
+Sağ taraftaki problemde küçük a sınıfının
+örneklerini düşünün.
+
+905
+01:10:07,668 --> 01:10:11,248
+Hangisinde küçük a sınıfının örnekleri
+birbirine daha
+
+906
+01:10:11,368 --> 01:10:12,228
+benziyordur?
+
+907
+01:10:19,828 --> 01:10:20,188
+Sağda.
+
+908
+01:10:22,168 --> 01:10:25,988
+Sağda daha çok benziyordur.
+Yani bunun anlamı sınıf içi benzerliğin
+
+909
+01:10:26,128 --> 01:10:29,828
+yüksek olduğunu söylüyordur.
+Yani küçük a'yı el
+
+910
+01:10:29,868 --> 01:10:31,368
+yazısıyla yazdığınız zaman,
+
+911
+01:10:33,828 --> 01:10:37,528
+hani boyutunu falan geçtim,
+onları bir şekilde normalize edebilirsiniz
+
+912
+01:10:38,408 --> 01:10:41,908
+Eee, hızlı yaz-- yani
+
+913
+01:10:42,568 --> 01:10:46,068
+farklı kişilerin yazdıkları birbirinden
+zaten farklı olur, bu bir.
+
+914
+01:10:46,788 --> 01:10:49,588
+Aynı kişinin yazdıkları bile birbirinden
+farklı olur.
+
+915
+01:10:50,568 --> 01:10:54,108
+Eee, yazma hızına bağlı olarak küçük a'nın
+
+916
+01:10:54,128 --> 01:10:57,788
+kelimenin başında, ortasında,
+sonunda olmasına bağlı olarak,
+
+917
+01:10:58,648 --> 01:11:02,588
+eee, vesaire vesaire.
+Dolayısıyla aynı kişinin yazdığı şeyler
+
+918
+01:11:02,608 --> 01:11:05,388
+birbirinden farklı olur.
+Dolayısıyla sınıf içi
+
+919
+01:11:05,488 --> 01:11:09,208
+benzerlik [öksürür] ne kadar
+
+920
+01:11:09,348 --> 01:11:10,028
+fazlaysa
+
+921
+01:11:11,608 --> 01:11:14,868
+o problem bizim için o kadar ne olur?
+Kolay mı olur, zor mu olur?
+
+922
+01:11:18,848 --> 01:11:22,607
+Sınıf içi benzerlik ne kadar fazlaysa
+problem daha ne kadar kolay
+
+923
+01:11:22,667 --> 01:11:23,427
+mıdır, zor mudur?
+
+924
+01:11:26,248 --> 01:11:26,628
+Kolay.
+
+925
+01:11:27,628 --> 01:11:31,148
+Kolay olacaktır, değil mi?
+Peki sınıflar arası benzerlik
+
+926
+01:11:31,188 --> 01:11:31,748
+fazlaysa?
+
+927
+01:11:36,108 --> 01:11:39,928
+Yani işte, eee,
+bir sınıftaki örnekle başka bir sınıftaki
+
+928
+01:11:39,968 --> 01:11:40,968
+birbirine benzemesi
+
+929
+01:11:42,048 --> 01:11:42,708
+fazlaysa-
+
+930
+01:11:43,628 --> 01:11:44,208
+Zorlaştırır herhalde.
+
+931
+01:11:44,318 --> 01:11:48,008
+Zorlaştırır.
+Sınıflar arası benzerliğin fazla olması da
+
+932
+01:11:48,028 --> 01:11:51,508
+yapacaktır? Zorlaştıracaktır. Tamam?
+
+933
+01:11:51,578 --> 01:11:55,508
+Bu ikisi aslında elimizdeki problemin zor
+mu kolay
+
+934
+01:11:55,628 --> 01:11:59,148
+mı olduğunu ölçmek için kullanabileceğimiz
+bir şey.
+
+935
+01:11:59,268 --> 01:12:00,868
+Sınıflandırma problemi için konuşuyorum.
+
+936
+01:12:01,468 --> 01:12:05,288
+Sınıf içi benzerliğin mümkün olduğu kadar
+fazla olmasını isteriz.
+
+937
+01:12:05,388 --> 01:12:08,548
+Sınıflar arası benzerliğin ise mümkün
+olduğu kadar az olmasını
+
+938
+01:12:08,688 --> 01:12:12,508
+isteriz. Yani böyleyse o problem kolaydır.
+
+939
+01:12:12,568 --> 01:12:14,408
+Ne bileyim ben, işte, eee,
+
+940
+01:12:15,388 --> 01:12:18,228
+o harfiyle sıfır rakamını düşünün.
+
+941
+01:12:18,968 --> 01:12:22,748
+Ya da dokuzla küçük g karakterini
+
+942
+01:12:22,768 --> 01:12:23,228
+düşünün.
+
+943
+01:12:24,048 --> 01:12:26,868
+Eee, bunlar sınıflar arası benzerliğin,
+
+944
+01:12:28,028 --> 01:12:31,668
+eee, yüksek olduğu durumlar.
+Bunları birbirinden ayırt etmek daha
+
+945
+01:12:31,748 --> 01:12:32,248
+zordur.
+
+946
+01:12:33,268 --> 01:12:36,807
+Yani ama birle sekizi çok çok da
+zorlanmazsınız.
+
+947
+01:12:37,688 --> 01:12:38,048
+Eee,
+
+948
+01:12:39,688 --> 01:12:43,668
+tamam.
+Dolayısıyla dediğim gibi hani problem--
+
+949
+01:12:43,688 --> 01:12:46,927
+zorluğu kolaylığı bu sınıf içi ve sınıflar
+arası
+
+950
+01:12:46,968 --> 01:12:50,448
+benzerlik açısından değerlendirilebilir.
+
+951
+01:12:52,938 --> 01:12:56,888
+Bundan bahsettik zaten.
+E ticarette kitapları bir sürü şeye
+
+952
+01:12:56,948 --> 01:12:59,038
+göre kümeleyebilirsiniz.
+Neyse onla geçelim.
+
+953
+01:12:59,128 --> 01:13:00,888
+Şimdi şundan bahsedelim biraz:
+gen dizimleri.
+
+954
+01:13:01,548 --> 01:13:05,268
+Burada da mesela kişi, eee,
+çeşitli genetik hastalıklar var
+
+955
+01:13:05,428 --> 01:13:08,068
+biliyorsunuz.
+Bu genetik hastalıklar genlerin
+
+956
+01:13:08,188 --> 01:13:11,936
+Genlerin dizimlerine bakılarak Eee,
+teşhis ediliyorlar, öyle
+
+957
+01:13:11,956 --> 01:13:15,436
+söyleyelim. Dışarıdan teşhis etmek,
+yani belli semptomlara göre falan
+
+958
+01:13:15,756 --> 01:13:19,306
+biraz mümkün ama asıl teşhis gen
+dizilimlere bakılarak
+
+959
+01:13:19,356 --> 01:13:23,135
+yapılıyor.
+Gen dizilimlere bakılarak aslında işte
+
+960
+01:13:23,316 --> 01:13:23,715
+Hı hı.
+
+961
+01:13:23,796 --> 01:13:27,746
+Gen dizilimi şöyle olursa bu şu hastalığa
+sahip, şöyle olursa şu hastalığa sahip
+
+962
+01:13:28,656 --> 01:13:32,156
+gibisinden şeyler var.
+Şimdi burada elimizde hastalar ve hasta
+
+963
+01:13:32,196 --> 01:13:36,096
+olduğunu düşünelim. Eee, out--
+input'umuz gen dizilimleri,
+
+964
+01:13:36,476 --> 01:13:40,196
+output'umuz ise işte hasta ya da değil.
+Bu nasıl bir problem?
+
+965
+01:13:40,376 --> 01:13:41,696
+Sınıflandırma mı, regresyon mu?
+
+966
+01:13:45,016 --> 01:13:46,636
+Sınıflandırma.
+
+967
+01:13:46,736 --> 01:13:50,296
+O bir sınıflandırma problemi. Peki, eee...
+
+968
+01:13:53,856 --> 01:13:57,456
+Mesela diyelim ki, eee,
+hasta kişiler var elimizde.
+
+969
+01:13:57,536 --> 01:14:01,176
+O hasta kişilere bir ilaç var. Eee,
+o ilacın ne
+
+970
+01:14:01,256 --> 01:14:02,696
+dozda verilmesi gerektiğini
+
+971
+01:14:03,596 --> 01:14:04,836
+modellemeye çalışıyoruz.
+
+972
+01:14:05,636 --> 01:14:09,496
+Eee,
+bu durumda problem gen dizilimi şu olan
+
+973
+01:14:09,536 --> 01:14:12,996
+kişiye şu kadar miligram falan gibisinden
+bir şey olsa problem bu neye
+
+974
+01:14:13,036 --> 01:14:13,536
+dönüşür?
+
+975
+01:14:19,256 --> 01:14:19,996
+Ne problem olur?
+
+976
+01:14:20,816 --> 01:14:22,366
+Regresyona dönüşür hocam.
+
+977
+01:14:22,496 --> 01:14:24,516
+Regresyon olur. Elimizde,
+
+978
+01:14:26,236 --> 01:14:30,116
+eee, farklı tedavi türleri olsa,
+işte şu gen dizilimine sahip
+
+979
+01:14:30,176 --> 01:14:33,876
+kişiye şu tedavi türünü öner,
+şu gen dizilimine sahip kişiye şu tedavi
+
+980
+01:14:33,956 --> 01:14:37,216
+gibisinden bir verimiz olsa o durumda
+problem ne olur?
+
+981
+01:14:38,356 --> 01:14:39,576
+Sınıflandırma hocam.
+
+982
+01:14:39,616 --> 01:14:40,716
+Bir sınıflandırma olur.
+
+983
+01:14:42,136 --> 01:14:42,476
+Peki.
+
+984
+01:14:43,536 --> 01:14:44,896
+Eee, şimdi
+
+985
+01:14:47,076 --> 01:14:48,976
+burada ilerlemeden önce,
+
+986
+01:14:50,176 --> 01:14:53,526
+eee, bir parantez daha açayım. Önemli bir
+
+987
+01:14:53,536 --> 01:14:54,216
+parantez.
+
+988
+01:14:56,596 --> 01:14:59,056
+Sınıflandırmada belli hatalar yapabiliriz.
+
+989
+01:14:59,656 --> 01:15:00,116
+Yani
+
+990
+01:15:01,576 --> 01:15:05,356
+A diyeceğimiz şeye B diyebiliriz ya da B
+diyeceğimiz şeye A diyebiliriz.
+
+991
+01:15:05,956 --> 01:15:09,856
+İki sınıf bir problem gibi düşünün,
+elimizde olduğunu düşünüyorum.
+
+992
+01:15:09,936 --> 01:15:13,856
+Şimdi A olan bir şeye B demekle B olan bir
+şeye
+
+993
+01:15:14,056 --> 01:15:14,676
+A demek,
+
+994
+01:15:16,316 --> 01:15:19,836
+eee, dışarıdan bakan, eee, bir
+
+995
+01:15:20,396 --> 01:15:21,276
+gözlemci için
+
+996
+01:15:22,896 --> 01:15:24,456
+benzer hatalar olabilir.
+
+997
+01:15:25,376 --> 01:15:28,476
+Ama uy-uygulamada
+
+998
+01:15:29,236 --> 01:15:32,136
+bunların etkileri farklılaşabilir.
+
+999
+01:15:33,296 --> 01:15:34,416
+Ne demek istiyorum?
+
+1000
+01:15:36,796 --> 01:15:40,576
+Hasta olan birisine "Sen hasta değilsin."
+demekle
+
+1001
+01:15:41,136 --> 01:15:43,726
+hasta olmayan birisine "Sen hastasın."
+demek
+
+1002
+01:15:45,196 --> 01:15:45,616
+aynı
+
+1003
+01:15:46,556 --> 01:15:50,426
+maliyetlere -yaşadığını düşüneceğiz-
+sahip değiller, değil
+
+1004
+01:15:50,476 --> 01:15:50,656
+mi?
+
+1005
+01:15:52,476 --> 01:15:52,836
+Eee
+
+1006
+01:15:54,376 --> 01:15:57,646
+ya da ne bileyim ben işte otonom giden bir
+araç düşünün.
+
+1007
+01:15:58,796 --> 01:16:00,316
+Eee, önünde, eee,
+
+1008
+01:16:01,916 --> 01:16:04,576
+karşıdan karşıya geçen bir insan var
+diyelim ki.
+
+1009
+01:16:05,556 --> 01:16:06,236
+Ya da yok.
+
+1010
+01:16:07,096 --> 01:16:10,636
+Eee,
+insan varken ona yok demesiyle yokken var
+
+1011
+01:16:10,656 --> 01:16:13,376
+arasında çok büyük bir fark var, değil mi?
+
+1012
+01:16:15,076 --> 01:16:18,856
+Yani ikisi de aslında bir açıdan
+baktığınızda yanlış sınıflandırma.
+
+1013
+01:16:19,896 --> 01:16:22,616
+Ama eee,
+bir tanesinin etkisi diğerinden çok daha
+
+1014
+01:16:22,636 --> 01:16:26,476
+Yani eee,
+karşıya geçen birisi varken ona yok
+
+1015
+01:16:26,536 --> 01:16:26,916
+derse
+
+1016
+01:16:27,936 --> 01:16:31,756
+çok kötü bir şey olur.
+Yokken var derse o kadar da kötü bir şey
+
+1017
+01:16:31,816 --> 01:16:34,676
+En falan fazladan fren,
+frene basacaktır falan. Değil mi?
+
+1018
+01:16:35,436 --> 01:16:36,636
+Dolayısıyla burada
+
+1019
+01:16:37,676 --> 01:16:40,516
+bu hata tipleri ki bunlara
+
+1020
+01:16:41,056 --> 01:16:43,256
+teknikman tip bir ve tip iki deniyor.
+
+1021
+01:16:44,476 --> 01:16:48,256
+Eee,
+bunların maliyetleri farklı olabiliyorlar.
+
+1022
+01:16:49,016 --> 01:16:52,056
+Ve eğer probleminizde böyle bir durum
+varsa
+
+1023
+01:16:53,756 --> 01:16:54,116
+bunu
+
+1024
+01:16:55,036 --> 01:16:58,376
+sizin eğitim sürecine dahil etmeniz de
+
+1025
+01:16:58,396 --> 01:17:02,296
+mümkün. Eee, yani burada
+
+1026
+01:17:02,336 --> 01:17:04,616
+onun teknik detaylarına girmeyeceğiz ama
+
+1027
+01:17:06,536 --> 01:17:10,396
+hani hata yaptığında bu hatanın tip bir mi
+tip iki
+
+1028
+01:17:10,456 --> 01:17:14,156
+mi olduğuna dair ona, eee,
+ekstra ceza vermek falan,
+
+1029
+01:17:14,736 --> 01:17:15,816
+eee, mümkün olabilir.
+
+1030
+01:17:17,696 --> 01:17:18,176
+Eee mesela,
+
+1031
+01:17:18,996 --> 01:17:19,396
+eee...
+
+1032
+01:17:27,476 --> 01:17:29,216
+Demin bahsettiğimiz gibi yani hani
+
+1033
+01:17:30,396 --> 01:17:34,296
+varken yok demesini hiç istemiyorsak,
+
+1034
+01:17:34,356 --> 01:17:38,196
+ondan korkunç kaçınmasını istiyorsak
+algoritmayı buna göre ne
+
+1035
+01:17:38,216 --> 01:17:40,256
+yapabiliriz? Eee, düzenleyebiliriz.
+
+1036
+01:17:40,336 --> 01:17:41,896
+Yani öyle bir durumda
+
+1037
+01:17:42,716 --> 01:17:46,656
+çok fazla ceza var.
+Yani loss değerini çok fazla
+
+1038
+01:17:46,736 --> 01:17:50,176
+arttıran bir--
+loss dediğimiz şey geri bildirim
+
+1039
+01:17:50,216 --> 01:17:53,376
+mekanizması. Bu benim bahsetmiştim.
+
+1040
+01:17:53,496 --> 01:17:57,096
+Bu geri bildirim mekanizmasında, eee,
+öyle bir yani hatanın
+
+1041
+01:17:57,156 --> 01:18:00,896
+türüne bağlı olarak yapması gereken
+güncellemenin ne
+
+1042
+01:18:00,936 --> 01:18:03,936
+kadar büyük ya da küçük olduğuna dair bir
+şeyler söyleyebiliriz.
+
+1043
+01:18:04,716 --> 01:18:08,236
+Belli tür hatalardan daha çok kaçınmasını,
+belli bir
+
+1044
+01:18:08,556 --> 01:18:12,216
+tür hatalara ise daha, eee, tahammül
+
+1045
+01:18:12,256 --> 01:18:14,896
+etmesini öyle söyleyelim, eee,
+
+1046
+01:18:15,576 --> 01:18:17,616
+söyleyebiliriz algoritmaya.
+
+1047
+01:18:23,116 --> 01:18:23,736
+Şimdi...
+
+1048
+01:18:27,096 --> 01:18:29,416
+Bu noktada aklıma başka bir şey geldi.
+
+1049
+01:18:29,736 --> 01:18:30,876
+Eee,
+
+1050
+01:18:31,796 --> 01:18:35,496
+yine belki bir parantez ama oldukça önemli
+bir parantez herhalde
+
+1051
+01:18:35,656 --> 01:18:35,876
+yine.
+
+1052
+01:18:37,136 --> 01:18:40,446
+Makineye şunu söyleyebiliriz,
+şunu söyleyemeyiz diye bir laf ettim ya,
+
+1053
+01:18:41,256 --> 01:18:44,136
+oradan aslında aklıma geldi.
+
+1054
+01:18:46,696 --> 01:18:50,456
+Şimdi bizim makine öğrenmesinde
+
+1055
+01:18:50,756 --> 01:18:54,676
+bir veri kümesi oluşturuyoruz ve bu veri
+kümesi
+
+1056
+01:18:54,716 --> 01:18:58,016
+içinde bir model ailesi seçiyoruz ve bu
+model
+
+1057
+01:18:58,036 --> 01:19:02,006
+ailesinden de kendisine, işte
+
+1058
+01:19:02,376 --> 01:19:06,016
+ona vermiş olduğumuz veriye en uyumlu
+üyeyi
+
+1059
+01:19:06,056 --> 01:19:07,156
+bulması için
+
+1060
+01:19:08,036 --> 01:19:10,136
+bir eğitim sürecine sokuyoruz ve
+
+1061
+01:19:11,236 --> 01:19:14,836
+eee,
+daha sonra da bu işimiz bittiğinde işte
+
+1062
+01:19:14,976 --> 01:19:17,036
+falan yaptık ve sistemimiz-
+
+1063
+01:19:18,328 --> 01:19:22,068
+Eee,
+dışarıdan gelen yeni bir örnek geldiğinde
+
+1064
+01:19:22,328 --> 01:19:23,428
+output üretiyor.
+
+1065
+01:19:25,488 --> 01:19:25,868
+Şimdi,
+
+1066
+01:19:27,948 --> 01:19:28,128
+eee,
+
+1067
+01:19:30,308 --> 01:19:34,148
+mix ya da gerçek olup olmadığından çok
+emin olmadığım bir
+
+1068
+01:19:34,168 --> 01:19:35,748
+hikaye var bununla alakalı.
+
+1069
+01:19:37,548 --> 01:19:39,308
+Eee, onu paylaşmak istiyorum.
+
+1070
+01:19:40,188 --> 01:19:41,428
+Vakti zamanında,
+
+1071
+01:19:44,408 --> 01:19:45,688
+herhalde Amerikalılar, çok
+
+1072
+01:19:46,528 --> 01:19:48,698
+da önemli değil nerede olduğu.
+
+1073
+01:19:50,488 --> 01:19:54,008
+Tankların biliyorsunuz dış dünyayla
+ilişkileri
+
+1074
+01:19:54,068 --> 01:19:54,948
+birazcık zayıf.
+
+1075
+01:19:55,808 --> 01:19:59,288
+Yani dışarıda ne olup bittiğini çok çok
+rahat bir şekilde
+
+1076
+01:19:59,908 --> 01:20:00,988
+göremeyebiliyorlar.
+
+1077
+01:20:02,248 --> 01:20:04,608
+Eee, dolayısıyla bunların içerisine,
+
+1078
+01:20:05,408 --> 01:20:06,228
+eee,
+
+1079
+01:20:08,148 --> 01:20:10,257
+dışarıyı gösteren kameralar
+
+1080
+01:20:11,268 --> 01:20:14,868
+ve bu kameralarda gördükleri
+
+1081
+01:20:14,988 --> 01:20:18,448
+nesneleri sınıflandıran algoritmalar
+yerleştirmek istiyorlar.
+
+1082
+01:20:19,528 --> 01:20:23,288
+En başta düşündükleri şey düşman
+tanklarının
+
+1083
+01:20:23,468 --> 01:20:24,988
+tanınması problemi.
+
+1084
+01:20:27,828 --> 01:20:28,228
+Yani,
+
+1085
+01:20:29,168 --> 01:20:32,108
+eee, görüntüye eğer bir düşman tankı
+
+1086
+01:20:32,328 --> 01:20:35,468
+girerse hemen uyarı versin geliyor diye.
+
+1087
+01:20:37,348 --> 01:20:40,448
+Bunun için, eee, eğitim kümesi
+
+1088
+01:20:40,528 --> 01:20:44,178
+oluşturuyorlar. Resimler çekiliyor,
+videolar çekiliyor.
+
+1089
+01:20:44,268 --> 01:20:46,788
+Videoların içerisinden resimler
+ayıklanıyor.
+
+1090
+01:20:46,848 --> 01:20:48,598
+Etiketlemeler gerçekleştiriliyor.
+
+1091
+01:20:48,598 --> 01:20:52,448
+İşte bu resimde bir düşman tank var,
+bu resimde bir dost tank var,
+
+1092
+01:20:53,128 --> 01:20:54,888
+bu resimde hiçbir şey yok vesaire gibi
+gibi.
+
+1093
+01:20:55,848 --> 01:20:58,978
+Böyle bir veri kümesi oluşturuluyor.
+İki sınıflı bir problem diye düşün.
+
+1094
+01:20:59,048 --> 01:21:02,958
+Yani tank geldi, var. Tank düşman mı,
+
+1095
+01:21:02,988 --> 01:21:04,028
+dost mu?
+
+1096
+01:21:06,228 --> 01:21:09,388
+Eğitim kümesi, test kümesi, eee,
+oluşturuluyor.
+
+1097
+01:21:09,428 --> 01:21:13,268
+Sonra eğitim kümesindeki örneklerle
+
+1098
+01:21:13,328 --> 01:21:16,528
+model eğitiliyor, yapay sinir ağı.
+
+1099
+01:21:17,768 --> 01:21:18,908
+Onun arkasından da,
+
+1100
+01:21:21,748 --> 01:21:25,108
+eee, performansları ölçülüyor. Yüzde
+
+1101
+01:21:25,208 --> 01:21:28,707
+yüze yakın bir başarı var. Çok iyi.
+
+1102
+01:21:29,548 --> 01:21:32,228
+Daha sonra model alınıyor, işte
+
+1103
+01:21:33,248 --> 01:21:35,148
+FPGA vesaire her ne,
+
+1104
+01:21:36,048 --> 01:21:36,268
+eee,
+
+1105
+01:21:37,148 --> 01:21:39,388
+yöntemle kullanılacaksa tanka
+
+1106
+01:21:40,328 --> 01:21:41,228
+monte ediliyor.
+
+1107
+01:21:42,548 --> 01:21:43,248
+Tankı bir de
+
+1108
+01:21:44,828 --> 01:21:48,188
+heybe-- eee, gerçek ortamda, eee,
+
+1109
+01:21:48,248 --> 01:21:49,108
+çalıştırıyorlar.
+
+1110
+01:21:50,428 --> 01:21:52,148
+Gerçek ortama çıktığında
+
+1111
+01:21:53,648 --> 01:21:54,668
+performansın
+
+1112
+01:21:59,788 --> 01:22:01,898
+şansın üstüne çıkamadığı görülüyor.
+
+1113
+01:22:05,208 --> 01:22:07,988
+Yani %50 mesela işte diyelim ki.
+
+1114
+01:22:09,588 --> 01:22:11,528
+Şimdi burada, eee,
+
+1115
+01:22:12,768 --> 01:22:16,748
+bakın,
+eğitim ve test işlemleri yapılmış ve
+
+1116
+01:22:16,788 --> 01:22:18,368
+performans çok iyi.
+
+1117
+01:22:19,188 --> 01:22:22,868
+Ama teste çıktığımızda hiç de, yani
+
+1118
+01:22:23,968 --> 01:22:27,248
+ortama tekrar çıktığında hiç de öyle
+olmadığı görülüyor.
+
+1119
+01:22:28,428 --> 01:22:31,768
+Buradaki problem ne olabilir diye
+
+1120
+01:22:32,128 --> 01:22:32,808
+bayağı bir
+
+1121
+01:22:33,628 --> 01:22:35,208
+şey yapıyorlar, düşünüyorlar.
+
+1122
+01:22:37,028 --> 01:22:37,808
+Ne olmuş olabilir?
+
+1123
+01:22:38,848 --> 01:22:42,248
+Çünkü se-çektikleri resimlerdeki
+performans süper.
+
+1124
+01:22:42,288 --> 01:22:45,948
+Farklı farklı eğitim test kümelerini
+oluşturmuşlar, karşılaştırmışlar
+
+1125
+01:22:46,008 --> 01:22:47,627
+falan. Hiçbir sıkıntı yok.
+
+1126
+01:22:48,528 --> 01:22:48,788
+Ama
+
+1127
+01:22:50,828 --> 01:22:53,808
+sistemi monte edip çalıştırdıkları zaman
+hiç de güzel bir sonuç
+
+1128
+01:22:54,208 --> 01:22:56,128
+çıkmıyor.
+
+1129
+01:22:57,748 --> 01:22:58,568
+Uzun bir süre
+
+1130
+01:23:00,588 --> 01:23:04,268
+çözemiyorlar.
+Uzun bir süre çözemiyor olmalarının
+
+1131
+01:23:05,688 --> 01:23:06,008
+eee,
+
+1132
+01:23:07,348 --> 01:23:08,188
+biraz şey,
+
+1133
+01:23:09,428 --> 01:23:12,108
+model olarak yapay sinir ağını kullanmış
+olmaları.
+
+1134
+01:23:13,428 --> 01:23:17,247
+Yapay sinir ağını kullanmış olmalarından
+kastım aslında biraz bir
+
+1135
+01:23:17,268 --> 01:23:19,208
+black box kullanmış olmaları.
+
+1136
+01:23:20,008 --> 01:23:21,488
+Yani ne demek istiyorum?
+
+1137
+01:23:22,388 --> 01:23:22,828
+[öksürür]
+
+1138
+01:23:23,808 --> 01:23:24,288
+Modelin
+
+1139
+01:23:25,128 --> 01:23:28,268
+kararlarını neye göre verdiğini çok kolay
+
+1140
+01:23:28,468 --> 01:23:32,408
+anlayamadıkları, öyle söyleyelim,
+bir model kullanmış olmaları.
+
+1141
+01:23:32,848 --> 01:23:33,358
+Yani ne oluyor?
+
+1142
+01:23:34,908 --> 01:23:38,088
+Neyse işte uzun sürüyor ama en sonunda
+keşfediyorlar.
+
+1143
+01:23:38,888 --> 01:23:39,478
+Problem şu:
+
+1144
+01:23:41,528 --> 01:23:41,968
+Dost
+
+1145
+01:23:43,128 --> 01:23:46,788
+tankları resimlerini çekerken ya da işte
+videolarını
+
+1146
+01:23:46,868 --> 01:23:50,388
+çekerken hava güneşli-miş.
+
+1147
+01:23:51,408 --> 01:23:55,038
+Düşman tankların resimlerini çekerken ise
+hava kapalıymış,
+
+1148
+01:23:55,208 --> 01:23:56,068
+bulutluymuş.
+
+1149
+01:23:58,248 --> 01:23:58,428
+Ve
+
+1150
+01:23:59,868 --> 01:24:01,608
+sınıflandırma algoritmasının
+
+1151
+01:24:04,208 --> 01:24:05,908
+öğren-- yaptığı şey
+
+1152
+01:24:06,888 --> 01:24:09,688
+dost tankları düşman tanklardan ayırmak
+değil,
+
+1153
+01:24:11,208 --> 01:24:13,788
+havanın güzel ya da, eee,
+
+1154
+01:24:14,928 --> 01:24:18,508
+kötü olduğunu sınıflandırmak.
+Ve tabii gerçek
+
+1155
+01:24:19,008 --> 01:24:22,548
+teste geçtiğimizde de bunun hiçbir anlamı
+ortada
+
+1156
+01:24:22,668 --> 01:24:25,658
+yok. Şimdi bu hikaye,
+
+1157
+01:24:26,388 --> 01:24:28,808
+eee, size ne anlatıyor?
+
+1158
+01:24:30,448 --> 01:24:32,648
+Biraz sizden dinleyelim.
+
+1159
+01:24:35,668 --> 01:24:39,327
+Hocam biraz şey geldi aklıma ya,
+hani eskiden tüken
+
+1160
+01:24:39,528 --> 01:24:42,808
+dersinde falan işlerdik,
+bağımlı değişkenler,
+
+1161
+01:24:43,748 --> 01:24:45,928
+Onları kontrol altında tutmak gerekiyor
+bence.
+
+1162
+01:24:48,348 --> 01:24:49,327
+Tamam, evet,
+
+1163
+01:24:50,778 --> 01:24:54,688
+peki.
+Yani makine öğrenmesi algoritmalarının
+
+1164
+01:24:54,728 --> 01:24:57,488
+çok temel bir özelliği aslında ortaya
+çıkıyor.
+
+1165
+01:24:59,028 --> 01:25:02,068
+Ne o?
+
+1166
+01:25:03,528 --> 01:25:03,928
+Evet,
+
+1167
+01:25:05,248 --> 01:25:08,948
+dediğini yapmak lazım ama bunu burada pek
+yapamıyor gibiyiz.
+
+1168
+01:25:09,738 --> 01:25:13,288
+Çünkü ne yapıyoruz biz?
+Bir veri kümesi atıp veriyoruz,
+
+1169
+01:25:13,688 --> 01:25:13,928
+değil mi?
+
+1170
+01:25:15,868 --> 01:25:18,928
+Yani şunlar önemli,
+şunlar değildir gibisinden bir şey
+
+1171
+01:25:20,472 --> 01:25:24,312
+Yok, söyleyemiyoruz işte.
+O yüzden veri kümelerini değiştirirken şey
+
+1172
+01:25:24,352 --> 01:25:27,572
+lazım, ona göre ayarlamak lazım. Hani,
+eee, şey
+
+1173
+01:25:27,692 --> 01:25:30,452
+durumunu nasıl desem, eee,
+
+1174
+01:25:31,912 --> 01:25:35,472
+hani öğrenmek istediğimiz konu dışındaki
+konuların değişmemesi lazım.
+
+1175
+01:25:35,492 --> 01:25:38,172
+Diğer değişkenlerin aynı kalması lazım.
+
+1176
+01:25:39,312 --> 01:25:43,172
+Evet,
+işte onların ne olduklarını falan
+
+1177
+01:25:43,232 --> 01:25:45,152
+çok kolay bir şey değil gibi gözüküyor.
+
+1178
+01:25:45,752 --> 01:25:47,612
+Peki evet, ne söylüyor başka fikri olan?
+
+1179
+01:25:49,292 --> 01:25:50,591
+Bu hikayede ne anlatıyor?
+
+1180
+01:26:14,652 --> 01:26:18,512
+Hocam az önce hani A'ya B demesiyle B'ye A
+demesi arasında
+
+1181
+01:26:18,552 --> 01:26:18,692
+bir
+
+1182
+01:26:19,552 --> 01:26:21,852
+eşitlik değil de hani farklılık var
+demiştik.
+
+1183
+01:26:22,272 --> 01:26:25,772
+Burada da her bir şeye ağırlık atarken,
+eee,
+
+1184
+01:26:25,892 --> 01:26:29,412
+ağırlıkları biraz nasıl diyeyim,
+supervise yapıp işte
+
+1185
+01:26:30,532 --> 01:26:34,272
+bizim çok kötü yaptığın gibi şey deseydik
+mesela havaya göre yaptığı hareketleri
+
+1186
+01:26:34,352 --> 01:26:38,132
+anla-anlayıp o havayla alakası hiç
+olmadığını söyleseydik belki
+
+1187
+01:26:38,172 --> 01:26:39,692
+daha iyi yönlendirebilirdik şeyi.
+
+1188
+01:26:41,792 --> 01:26:45,732
+Güzel, güzel. Evet, evet,
+modeli yönlendirebilirdik
+
+1189
+01:26:45,772 --> 01:26:47,211
+ama yönlendiremedik.
+
+1190
+01:26:47,632 --> 01:26:50,402
+Evet,
+orada kullanılan algoritmalar nedeniyle
+
+1191
+01:26:50,812 --> 01:26:52,372
+Hı hı. Evet, başka?
+
+1192
+01:26:55,232 --> 01:26:58,332
+Hocam aldığımız sonuçlar aslında veri
+kümesine acayip bağlı.
+
+1193
+01:26:59,952 --> 01:27:02,252
+Veri kümesini çok doğru seçmemiz lazım
+makine öğrenmesi için.
+
+1194
+01:27:03,352 --> 01:27:04,612
+Evet, doğru.
+
+1195
+01:27:06,452 --> 01:27:06,991
+Başka?
+
+1196
+01:27:17,792 --> 01:27:20,812
+Peki, eee, bu birazcık şunu
+
+1197
+01:27:20,992 --> 01:27:21,812
+aslında
+
+1198
+01:27:24,492 --> 01:27:25,392
+gösteriyor:
+
+1199
+01:27:26,892 --> 01:27:28,912
+Bütün, yani bütün demeyeyim de,
+
+1200
+01:27:31,052 --> 01:27:33,212
+çoğu ve popüler olan
+
+1201
+01:27:34,172 --> 01:27:37,652
+makine öğrenmesi algoritmalarının hepsi
+neye odaklılar?
+
+1202
+01:27:39,092 --> 01:27:40,412
+Neyi optimize etmeye çalışıyorlar?
+
+1203
+01:27:41,672 --> 01:27:42,392
+Çıkışı.
+
+1204
+01:27:46,092 --> 01:27:46,652
+Yani
+
+1205
+01:27:47,472 --> 01:27:50,532
+Turing'in bakış açısı,
+
+1206
+01:27:50,552 --> 01:27:51,692
+fonksiyonellik.
+
+1207
+01:27:56,812 --> 01:27:58,292
+Fakat, ııı, bu
+
+1208
+01:28:00,132 --> 01:28:00,671
+böyle bir,
+
+1209
+01:28:02,092 --> 01:28:03,872
+ııı, şeye geçebiliyor,
+
+1210
+01:28:05,792 --> 01:28:06,392
+yoruma.
+
+1211
+01:28:10,092 --> 01:28:10,472
+Biz
+
+1212
+01:28:11,112 --> 01:28:15,452
+makinelere
+
+1213
+01:28:15,512 --> 01:28:17,552
+ne yapmaları gerektiğini söyleyebiliriz.
+
+1214
+01:28:19,932 --> 01:28:23,112
+Veri kümesini vererek aslında şunu
+istiyoruz diye ifade ediyoruz.
+
+1215
+01:28:24,672 --> 01:28:24,952
+Ama
+
+1216
+01:28:25,812 --> 01:28:26,172
+bunu
+
+1217
+01:28:27,032 --> 01:28:30,472
+nasıl yapmaları gerektiğini söyleyemeyiz.
+
+1218
+01:28:31,672 --> 01:28:33,592
+Söyleyemiyoruz. Ya da öyle söyleyeyim.
+
+1219
+01:28:35,332 --> 01:28:37,812
+Yani şunu yap diyoruz, o da yapıyor.
+
+1220
+01:28:38,632 --> 01:28:42,062
+Ama onu nasıl yapacağı hakkında biz ona
+bir şey
+
+1221
+01:28:42,872 --> 01:28:43,732
+söyleyemiyoruz
+
+1222
+01:28:44,592 --> 01:28:47,352
+ya da söyleyemiyoruz. Şimdi bu
+
+1223
+01:28:47,472 --> 01:28:50,592
+aslında makine öğrenmesini
+
+1224
+01:28:50,852 --> 01:28:53,252
+kullanıyor olmamızın da bir sebebi.
+
+1225
+01:28:53,892 --> 01:28:55,292
+Yani ne demek istiyorum?
+
+1226
+01:28:56,192 --> 01:28:58,092
+Biz o problemin
+
+1227
+01:29:00,372 --> 01:29:01,892
+nasıl çözüldüğünü,
+
+1228
+01:29:02,992 --> 01:29:06,832
+nasıl çözüleceğini biliyor olsak direkt
+algoritmasını
+
+1229
+01:29:06,912 --> 01:29:10,712
+yazıp zaten ne yaparız?
+Makine öğrenmesine hiçbir şekilde
+
+1230
+01:29:10,752 --> 01:29:14,392
+ihtiyacımız olmaz. Tamam? Yani, eee,
+
+1231
+01:29:15,012 --> 01:29:18,812
+ne bileyim,
+işte bir resimdeki düşman tanklarının,
+
+1232
+01:29:18,892 --> 01:29:22,792
+dost tankların resim geldiğinde o resmin
+içerisindeki nerelere
+
+1233
+01:29:22,812 --> 01:29:26,272
+bakılıp ne tür kararlar verileceğini
+biliyorsak, tamam,
+
+1234
+01:29:27,252 --> 01:29:31,132
+bunu ne yapabiliriz? Eee, yazarız, eee,
+algoritmanın için--
+
+1235
+01:29:31,152 --> 01:29:33,132
+yani algoritmasını oluştururuz ve veririz.
+
+1236
+01:29:33,552 --> 01:29:37,271
+Fakat buradaki olay aslında bunu bizim çok
+da düzgün
+
+1237
+01:29:37,352 --> 01:29:40,552
+ifade edemiyor olmamız,
+çok da düzgün yazamıyor olmamız.
+
+1238
+01:29:41,532 --> 01:29:43,932
+Yani bunu yazabiliyor--
+yani atıyorum işte,
+
+1239
+01:29:45,552 --> 01:29:45,712
+eee,
+
+1240
+01:29:47,152 --> 01:29:51,132
+bir diziyi sıralamak için makine öğrenmesi
+algoritması kullanmak
+
+1241
+01:29:51,172 --> 01:29:51,872
+mantıklı mı?
+
+1242
+01:29:54,132 --> 01:29:57,972
+E pratik açıdan çok da değil. Eee, zaten
+
+1243
+01:29:58,012 --> 01:30:01,552
+bunun nasıl yapılacağını biliyoruz. Tamam?
+
+1244
+01:30:01,632 --> 01:30:04,092
+Bildiğimiz bir şeyde makine öğrenmesi
+kullanmanın,
+
+1245
+01:30:04,892 --> 01:30:06,252
+eee, bir
+
+1246
+01:30:07,312 --> 01:30:08,732
+pratik manada bir esprisi yok.
+
+1247
+01:30:09,672 --> 01:30:13,442
+Teorik ya da felsefi manada
+düşünebilirsiniz ama pratik bir
+
+1248
+01:30:13,472 --> 01:30:17,172
+etkisi yok, bir anlamı yok.
+Ama burada zaten o problemin nasıl
+
+1249
+01:30:17,232 --> 01:30:20,312
+çözüleceğini bilmediğimiz için makine
+öğrenmesi algoritmaları
+
+1250
+01:30:21,932 --> 01:30:25,212
+ve bize, eee, input output
+
+1251
+01:30:25,252 --> 01:30:27,332
+mapping'ini yapsınlar istiyoruz.
+
+1252
+01:30:29,952 --> 01:30:33,512
+Tamam,
+nasıl yapılacağını bilmediğimiz için ve
+
+1253
+01:30:33,892 --> 01:30:36,472
+dolayısıyla makineler de bunu bir şekilde
+yapıyorlar.
+
+1254
+01:30:36,612 --> 01:30:40,252
+Ama onların yapmış türü, yapma türü
+
+1255
+01:30:40,352 --> 01:30:43,852
+illa bizim hayalini kurduğumuz gibi
+olmayabilir.
+
+1256
+01:30:44,772 --> 01:30:47,272
+Yani, eee, ne bileyim ben,
+
+1257
+01:30:49,392 --> 01:30:52,532
+bir adamı mutlu etme görevini verirsek
+mesela bir robota,
+
+1258
+01:30:53,332 --> 01:30:56,532
+eee,
+bu adam en çok cennette mutlu olur deyip
+
+1259
+01:30:56,572 --> 01:30:59,692
+öldürmesi gibi. Yani tamam olayı abarttım
+
+1260
+01:30:59,732 --> 01:31:02,052
+da. Eee,
+
+1261
+01:31:03,712 --> 01:31:07,472
+gibi. Yani olay dediğim gibi,
+hani sonucu söyleyip
+
+1262
+01:31:07,492 --> 01:31:11,372
+hani o sonuca giden yola dair bir şey
+söyleyemiyor olmamız ve
+
+1263
+01:31:12,692 --> 01:31:16,392
+bunun sonucunda ortaya çıkan, eee,
+
+1264
+01:31:16,672 --> 01:31:19,852
+sürecin, eee, bizim çok da
+
+1265
+01:31:19,912 --> 01:31:23,852
+istemediğimiz bir, eee,
+süreç olabilmesi mümkün.
+
+1266
+01:31:24,832 --> 01:31:25,292
+Eee-
+
+1267
+01:31:26,512 --> 01:31:30,412
+Bu hikayenin çok kabaca, eee, şeyi,
+
+1268
+01:31:30,562 --> 01:31:33,032
+ne derler ona, anlattığı şey bu.
+
+1269
+01:31:33,872 --> 01:31:34,072
+Eee,
+
+1270
+01:31:36,132 --> 01:31:39,532
+dolayısıyla, hani, bunun farkında
+
+1271
+01:31:39,612 --> 01:31:42,632
+olmak, ııı, o manada belki
+
+1272
+01:31:43,212 --> 01:31:47,072
+önemli.
+Yani problemi çöz de nasıl çözer sen çöz.
+
+1273
+01:31:47,112 --> 01:31:50,532
+Belki de onun çözme yolundan çok çok
+memnun olmayabiliriz.
+
+1274
+01:31:51,532 --> 01:31:55,452
+Eee, memnun da olabiliriz tabii,
+illa böyle kötü durum şeyi değil.
+
+1275
+01:31:55,492 --> 01:31:59,111
+Yani bizim hiç aklımıza gelmeyen bir
+şekilde de problemi iyi çözüyor
+
+1276
+01:31:59,172 --> 01:31:59,772
+olabilir.
+
+1277
+01:32:00,572 --> 01:32:04,532
+Eee ya da bizim hiç fark etmediğimiz bir
+değişkeni kullanarak,
+
+1278
+01:32:04,592 --> 01:32:08,422
+bizim önemli olduğunu hiç düşünmediğimiz
+bir değişkeni kullanarak,
+
+1279
+01:32:09,192 --> 01:32:12,832
+eee, durumları kullanarak,
+özellikleri kullanarak problemi çözmesi de
+
+1280
+01:32:12,912 --> 01:32:16,852
+mümkün ki o bizim bilgimize de bayağı
+fazla katkı
+
+1281
+01:32:17,072 --> 01:32:17,801
+sağlayacaktır.
+
+1282
+01:32:20,712 --> 01:32:20,972
+Evet, peki.
+
+1283
+01:32:22,692 --> 01:32:22,972
+Şimdi
+
+1284
+01:32:24,852 --> 01:32:25,832
+devam edelim.
+
+1285
+01:32:27,812 --> 01:32:31,172
+Eee,
+burada işte bu adam kim içeri girsin mi
+
+1286
+01:32:31,292 --> 01:32:34,872
+uygulama. Burada, eee, iris var. Iris
+
+1287
+01:32:34,972 --> 01:32:38,852
+dediğimiz şey bu görüntüdeki mavi halkayı
+
+1288
+01:32:38,892 --> 01:32:40,412
+ifade ediyor. Bu mavi halka,
+
+1289
+01:32:41,332 --> 01:32:45,252
+eee, göz kaslarından oluşuyor.
+Bu kas deseni, eee, oldukça
+
+1290
+01:32:45,312 --> 01:32:46,352
+insanlara özel.
+
+1291
+01:32:47,232 --> 01:32:48,272
+İnsanlara, eee...
+
+1292
+01:32:53,432 --> 01:32:56,932
+Yani yanlış hatırlamıyorsam milyarda bir
+oranında bir olasılık var.
+
+1293
+01:32:57,052 --> 01:33:01,032
+İki kişinin irislerinin aynı olması,
+birebir
+
+1294
+01:33:01,152 --> 01:33:03,412
+aynı olması olasılığı milyarda bir.
+
+1295
+01:33:03,832 --> 01:33:05,952
+Oldukça düşük bir, eee, olasılıktır.
+
+1296
+01:33:06,692 --> 01:33:10,572
+Eee,
+dolayısıyla kişileri tanımak için oldukça
+
+1297
+01:33:10,672 --> 01:33:12,032
+biyometrik özellik.
+
+1298
+01:33:12,992 --> 01:33:16,512
+Eee, tabii irisi insanları tanımak için
+
+1299
+01:33:16,672 --> 01:33:20,292
+kullanmak, ııı, oldukça hani makul
+
+1300
+01:33:20,332 --> 01:33:22,072
+görünüyor ama tabii sıkıntılı tarafları
+var.
+
+1301
+01:33:22,092 --> 01:33:25,872
+Birincisi şu:
+Eee o kişiyi tanımak için o kişinin
+
+1302
+01:33:26,032 --> 01:33:29,732
+bilgisine erişebilmeniz lazım.
+Daha önceden onun sizin elinizde
+
+1303
+01:33:29,772 --> 01:33:30,912
+olması lazım.
+
+1304
+01:33:31,772 --> 01:33:35,412
+Eee, iris kameraları, yani en yüksek
+
+1305
+01:33:35,472 --> 01:33:38,912
+teknolojili olanlar bile en fazla üç
+metreden falan çekebiliyorlar.
+
+1306
+01:33:39,912 --> 01:33:43,172
+Eee üç metreden daha uzaktan bir irisi
+
+1307
+01:33:43,232 --> 01:33:47,012
+yakalama, eee, şeyi yok ki. Bu bahsettiğim
+
+1308
+01:33:47,052 --> 01:33:47,752
+kameralar da çok,
+
+1309
+01:33:48,812 --> 01:33:49,072
+eee,
+
+1310
+01:33:49,912 --> 01:33:53,132
+çok ucuz olmayan makineler,
+öyleyse kameralar.
+
+1311
+01:33:53,332 --> 01:33:53,871
+Eee
+
+1312
+01:33:56,132 --> 01:33:59,472
+ve biraz daha düşük olanları,
+yani daha yakından
+
+1313
+01:33:59,632 --> 01:34:02,572
+olanlarını çok çeşitli yerlerde
+görebilirsiniz.
+
+1314
+01:34:03,132 --> 01:34:07,112
+Yani kafanızı böyle biraz daha
+yaklaştırıp, eee, irisinizin tanınması ve
+
+1315
+01:34:07,152 --> 01:34:11,052
+buna göre kapıların açıldığı,
+açılmadığı falan sistemler, eee,
+
+1316
+01:34:11,612 --> 01:34:14,952
+Eee bu dediğim gibi hani yüksek doğruluk
+oranı ama
+
+1317
+01:34:15,072 --> 01:34:18,812
+erişimi ve donanımsal maliyeti birazcık
+yüksek olan bir yöntem
+
+1318
+01:34:18,892 --> 01:34:22,432
+insan tanımak için. Ama insanların
+
+1319
+01:34:22,442 --> 01:34:24,072
+resmi- Efendim.
+
+1320
+01:34:24,492 --> 01:34:26,092
+Orada nasıl bir makine öğrenmesi var ki?
+
+1321
+01:34:26,152 --> 01:34:30,012
+İrisi, eee,
+database'e kaydedip sadece eşleme yapmıyor
+
+1322
+01:34:30,032 --> 01:34:30,292
+orada?
+
+1323
+01:34:31,552 --> 01:34:35,092
+Yok ya, sadece o kadar değil. Yani,
+
+1324
+01:34:35,192 --> 01:34:39,112
+eee, şöyle bir şey, hani o iris--
+yani sonuçta dediğimiz yani bu
+
+1325
+01:34:39,172 --> 01:34:43,092
+irisi aldı kaydetti. Birebir...
+Yani bu mesela çok az bir şey
+
+1326
+01:34:43,152 --> 01:34:46,312
+bile oynasa bununla bu birebir ne
+yapacaktır? Örtüşmeyecektir.
+
+1327
+01:34:46,712 --> 01:34:49,031
+Işık vardır, şu vardır, bu vardır vesaire.
+
+1328
+01:34:49,282 --> 01:34:53,052
+Milyon tane, eee, değişim,
+varyasyon oluşturur. Anlatabildim mi?
+
+1329
+01:34:53,512 --> 01:34:57,032
+Yani bu bir kod değil.
+Kodu birebir şey yap,
+
+1330
+01:34:57,772 --> 01:35:01,092
+eee, eşleştir. Ya da yani hani, eee,
+
+1331
+01:35:01,472 --> 01:35:04,492
+buradaki her şey, eee, ne derler ona,
+
+1332
+01:35:05,392 --> 01:35:05,732
+eee,
+
+1333
+01:35:06,532 --> 01:35:08,392
+sürekli nasıl diyeyim?
+
+1334
+01:35:10,092 --> 01:35:13,932
+Yani senin çektirdiğin iris resimlerinde
+bile sınıf içi
+
+1335
+01:35:13,952 --> 01:35:17,692
+benzerlik epey büyük tabii ama sıfır, eee,
+şey değil, eee,
+
+1336
+01:35:18,952 --> 01:35:21,332
+sonsuz değildir. Anlatabildim mi?
+
+1337
+01:35:21,412 --> 01:35:22,092
+Anladım hocam.
+
+1338
+01:35:26,892 --> 01:35:29,072
+Burada biraz daha, eee,
+
+1339
+01:35:30,692 --> 01:35:33,112
+doğruluğu biraz daha düşük bir şey insan
+yüzü.
+
+1340
+01:35:33,612 --> 01:35:37,472
+Eee bunun da işte farklı açılardan,
+farklı ışıklarda vesaire vesaire
+
+1341
+01:35:37,512 --> 01:35:41,352
+gibisinden bir sürü noktası var ve bunu
+elde etmek falan daha kolay bir şey.
+
+1342
+01:35:41,392 --> 01:35:44,462
+Ne bileyim ben,
+işte bir suçluyu havanda falan
+
+1343
+01:35:44,512 --> 01:35:46,092
+istiyorsanız,
+havanda olduğunu biliyorsunuz.
+
+1344
+01:35:46,552 --> 01:35:48,732
+Adamı arıyorsunuz, elinizde
+
+1345
+01:35:50,692 --> 01:35:54,472
+irisi yoksa bir şey yapmanız zor.
+Yani daha doğrusu,
+
+1346
+01:35:55,132 --> 01:35:55,652
+eee,
+
+1347
+01:35:56,472 --> 01:36:00,392
+irisi yoksa işte yüzü varsa onu
+kullanırsınız.
+
+1348
+01:36:00,412 --> 01:36:04,112
+Biraz ekstrem bir durum ama tersi durum da
+olabilir.
+
+1349
+01:36:04,652 --> 01:36:07,012
+Ama dediğim gibi yani kameraların, eee,
+
+1350
+01:36:08,012 --> 01:36:11,552
+en azından yüz tanıma falan gibisinden
+algoritmalarından
+
+1351
+01:36:11,592 --> 01:36:14,732
+kaçınmak için insanların kullanabileceği
+çeşitli
+
+1352
+01:36:15,052 --> 01:36:18,412
+yaklaşımlar olabiliyor. Eee, şeyi
+
+1353
+01:36:18,452 --> 01:36:20,752
+hatırlıyorum. Eee,
+
+1354
+01:36:22,832 --> 01:36:23,712
+bir ülkede
+
+1355
+01:36:25,412 --> 01:36:29,192
+protestocuları tespit etmek için
+kullanılan
+
+1356
+01:36:29,312 --> 01:36:31,352
+algoritmaları yanıltmak için
+
+1357
+01:36:32,272 --> 01:36:33,752
+şeyler vardı, ne derler ona,
+
+1358
+01:36:34,852 --> 01:36:37,752
+belli pattern'lar içeren, eee,
+
+1359
+01:36:40,552 --> 01:36:42,732
+tişörtler giymişti protestocular.
+
+1360
+01:36:43,332 --> 01:36:43,472
+Eee,
+
+1361
+01:36:44,452 --> 01:36:48,242
+çok temelde yüz tanıma algoritmaları bir
+insan bulup hareket
+
+1362
+01:36:48,292 --> 01:36:49,632
+ediyorlar. Ya da işte bir yüz bulup.
+
+1363
+01:36:49,972 --> 01:36:53,052
+İşte o pattern'ın varlığı, o, eee,
+
+1364
+01:36:53,212 --> 01:36:56,852
+algoritmaların yüzün
+
+1365
+01:36:56,872 --> 01:37:00,812
+bulunmasını ya da insanın bulunmasını
+engelleyen bir etkiyi vardı.
+
+1366
+01:37:00,882 --> 01:37:03,932
+Bunlar adversarial sample'lar diye
+geçiyor.
+
+1367
+01:37:04,772 --> 01:37:08,572
+Eee makine öğrenmesi algoritmalarını
+kandırmak diye bir çok
+
+1368
+01:37:08,692 --> 01:37:12,632
+sağlam bir araştırma konusu var.
+Tahmin edebileceğiniz bir
+
+1369
+01:37:12,732 --> 01:37:14,212
+sürü sebepten dolayı.
+
+1370
+01:37:15,152 --> 01:37:17,012
+Edebileceğiniz, edebileceğiniz.
+
+1371
+01:37:17,212 --> 01:37:21,192
+Eee yani kararları makinelere biraz
+bıraktığınız zaman, eee, nasıl
+
+1372
+01:37:21,332 --> 01:37:24,672
+ki insanları kandırmaya çalışanlar olduğu
+gibi makineleri kandırmaya çalışanlar da,
+
+1373
+01:37:25,292 --> 01:37:25,772
+eee,
+
+1374
+01:37:27,372 --> 01:37:30,071
+oluyorlar, varlar. Öyle söyleyeyim.
+
+1375
+01:37:30,192 --> 01:37:32,372
+Eee haklı ya da haksız orası çok-
+
+1376
+01:37:33,820 --> 01:37:35,140
+Bizi çok şey yapmıyor,
+
+1377
+01:37:35,960 --> 01:37:39,440
+eee, kapsamımızda değil. Ama dediğim gibi,
+hani
+
+1378
+01:37:39,500 --> 01:37:41,880
+makinaları da kandırmak mümkün mü?
+
+1379
+01:37:42,640 --> 01:37:46,200
+Evet, mümkün. Pekâlâ mümkün. Bu adresli
+
+1380
+01:37:46,320 --> 01:37:48,420
+örnekler deminki verdiğimiz şeyden farklı
+bir şey.
+
+1381
+01:37:48,690 --> 01:37:52,440
+Yani o süreci anlatıyordum nasıl
+yaptığıyla alakalı.
+
+1382
+01:37:52,460 --> 01:37:56,340
+Burada ise, eee, dediğim gibi,
+hani öyle özel
+
+1383
+01:37:57,220 --> 01:38:01,140
+yapılar buluyorsunuz ki, eee,
+bu yapıları makine gördüğü
+
+1384
+01:38:01,300 --> 01:38:05,240
+zaman normalde vereceği karardan çok daha
+farklı bir karar
+
+1385
+01:38:05,320 --> 01:38:07,520
+verebiliyor. Hepiniz belki görmüşsünüzdür.
+
+1386
+01:38:08,180 --> 01:38:12,060
+Çeşitli örnekleri var.
+Ne bileyim işte papağana masa
+
+1387
+01:38:12,100 --> 01:38:14,720
+diyor, sandalye diyor falan.
+Böyle çok yüksek
+
+1388
+01:38:15,560 --> 01:38:16,220
+olasılıkla
+
+1389
+01:38:17,220 --> 01:38:19,439
+resmin içerisindeki belli bir şeyleri
+değiştirdiğiniz zaman.
+
+1390
+01:38:20,240 --> 01:38:22,660
+Neyse, sonuç olarak hani, eee,
+
+1391
+01:38:24,800 --> 01:38:26,200
+burada, eee,
+
+1392
+01:38:27,200 --> 01:38:30,570
+makinaları kandırmak için bir sürü şeyler
+de yapmak mümkün mü? Mümkün.
+
+1393
+01:38:30,600 --> 01:38:34,330
+E tabii onlar kanma-kanmasınlar diye de
+bir sürü şeyler yapılıyor bir
+
+1394
+01:38:34,330 --> 01:38:36,700
+yandan da. Şimdi de o tarafı da var.
+
+1395
+01:38:37,340 --> 01:38:40,060
+Bu sürecek bir mevzu olarak gözüküyor.
+
+1396
+01:38:40,240 --> 01:38:43,140
+Parmak izi yine çok klasik örneklerden bir
+tanesi.
+
+1397
+01:38:43,840 --> 01:38:47,780
+Eee,
+buradaki aynı olma oranı milyonda bir diye
+
+1398
+01:38:47,790 --> 01:38:51,560
+hatırlamıyorsam. Yani irise milyarda bir,
+parmak izinde milyonda bir iki kişinin
+
+1399
+01:38:51,660 --> 01:38:53,660
+aynı geometriye sahip olma oranı.
+
+1400
+01:38:54,360 --> 01:38:57,820
+Eee,
+bu çok eskiden beri kullanılan bir
+
+1401
+01:38:57,860 --> 01:39:01,460
+Bilgisayarlardan bile önce,
+bilgisayarların varlığından bile önce
+
+1402
+01:39:02,420 --> 01:39:05,120
+parmak izi alındıktan sonra parmak izi
+defterleri varmış.
+
+1403
+01:39:06,400 --> 01:39:09,580
+Eee, parmak izi defterlerindeki
+
+1404
+01:39:09,590 --> 01:39:10,680
+izlerle
+
+1405
+01:39:12,340 --> 01:39:16,260
+işte o olay yerinden toplanan parmak
+
+1406
+01:39:16,340 --> 01:39:18,620
+izleri teker teker karşılaştırılırmış.
+
+1407
+01:39:18,700 --> 01:39:21,680
+Bu işi yapan uzmanlar varmış eskiden.
+
+1408
+01:39:22,340 --> 01:39:24,520
+Eee, hâlâ, eee,
+
+1409
+01:39:25,420 --> 01:39:29,200
+işleri bayağı bir, eee,
+kolaylaşmış durumdadır diye
+
+1410
+01:39:29,260 --> 01:39:33,160
+tahmin ediyorum, eee, bu işi yapanların.
+
+1411
+01:39:33,220 --> 01:39:35,220
+Özel bir uzmanlığa gerek kalmamış.
+
+1412
+01:39:35,300 --> 01:39:35,500
+Yani
+
+1413
+01:39:36,620 --> 01:39:39,460
+hep ölmüş bir meslek olarak
+düşünebilirsiniz bu işi
+
+1414
+01:39:40,480 --> 01:39:41,720
+bir zamanlar olan.
+
+1415
+01:39:43,620 --> 01:39:47,230
+Eee ama tabii tamamen ölmesi mantıklı mı
+ondan çok emin
+
+1416
+01:39:47,360 --> 01:39:47,780
+değilim
+
+1417
+01:39:47,820 --> 01:39:52,179
+yani.
+
+1418
+01:39:53,640 --> 01:39:56,940
+Yani estetik kaygılarla ne bileyim işte
+halı dokumacılığı açısından
+
+1419
+01:39:56,980 --> 01:40:00,720
+düşünürseniz orada el dokuması halıları
+hâlâ bir şekilde,
+
+1420
+01:40:01,640 --> 01:40:02,200
+eee,
+
+1421
+01:40:03,500 --> 01:40:06,480
+şeyi koruyor, değerlerini koruyorlar.
+
+1422
+01:40:06,520 --> 01:40:06,940
+Makine,
+
+1423
+01:40:08,000 --> 01:40:11,800
+eee, üretimi halılar çıktığına
+
+1424
+01:40:12,320 --> 01:40:12,680
+rağmen.
+
+1425
+01:40:13,900 --> 01:40:16,920
+Eee, burada hani belli
+
+1426
+01:40:17,060 --> 01:40:21,040
+uzmanlıkların hâlâ insanlar tarafından
+biliniyor
+
+1427
+01:40:21,120 --> 01:40:24,740
+olması önemli oluyor.
+Yani hiç kimse artık o işin nasıl
+
+1428
+01:40:24,780 --> 01:40:28,300
+yapıldığını bilmiyor.
+Sadece makinalar yapıyorlar.
+
+1429
+01:40:28,320 --> 01:40:31,160
+O çok çok iyi bir durum değil sanki.
+
+1430
+01:40:32,040 --> 01:40:35,380
+Bunu niye anlatıyorum? Eee, muhtemelen
+
+1431
+01:40:35,480 --> 01:40:38,420
+önümüzdeki sürecin içerisinde bu tarz
+
+1432
+01:40:39,600 --> 01:40:43,420
+mesleki, eee, yok oluşlar diyeyim,
+
+1433
+01:40:44,340 --> 01:40:48,280
+yani o mesleği yapan insanların büyük bir
+kısmının o mesleği bırakması,
+
+1434
+01:40:48,340 --> 01:40:51,960
+hepsinin değilse de büyük bir kısmının
+bırakması gibisinden durumlar
+
+1435
+01:40:52,020 --> 01:40:53,209
+oluşabilir. Eee,
+
+1436
+01:40:55,080 --> 01:40:57,660
+bu konuda da şey var, eee, bir
+
+1437
+01:40:59,100 --> 01:41:02,280
+çok çok uzak olmayan bir gelecekte olup
+tahmin ediliyor.
+
+1438
+01:41:02,380 --> 01:41:04,420
+Özellikle bazı şeyler için,
+
+1439
+01:41:06,200 --> 01:41:08,140
+mesleki gruplar için.
+
+1440
+01:41:09,560 --> 01:41:09,840
+Eee,
+
+1441
+01:41:11,460 --> 01:41:12,820
+buna tabii
+
+1442
+01:41:14,440 --> 01:41:17,880
+eğitim sektörü de dahildir. Eee,
+
+1443
+01:41:19,240 --> 01:41:22,920
+yazılım sektörü bir miktar muhtemelen şey
+olacaktır,
+
+1444
+01:41:23,660 --> 01:41:25,600
+etkilenecektir diye tahmin ediyorum.
+
+1445
+01:41:25,660 --> 01:41:28,660
+Özellikle standart işler yapanlar
+açısından
+
+1446
+01:41:29,380 --> 01:41:29,840
+düşünüyorum.
+
+1447
+01:41:30,680 --> 01:41:34,320
+Yani sanki böyle şey böyle standart işler
+yapıyorsanız ve o işi
+
+1448
+01:41:34,400 --> 01:41:37,720
+yapan çok kişi varsa ve o yaptığınız iş
+kayıt altına
+
+1449
+01:41:37,780 --> 01:41:39,860
+alınabiliyorsa bir şekilde,
+
+1450
+01:41:41,740 --> 01:41:45,280
+eee, sanki o iş şey olacak gibi.
+Öyle direkt
+
+1451
+01:41:46,560 --> 01:41:48,960
+makineleştirilebilecek gibi gözüküyor.
+
+1452
+01:41:52,100 --> 01:41:54,790
+Neyse, gelecek o noktada herhalde bayağı
+
+1453
+01:41:55,679 --> 01:41:56,020
+şey...
+
+1454
+01:42:01,140 --> 01:42:04,300
+Değişikliklere gebe diyebilirim.
+
+1455
+01:42:04,900 --> 01:42:05,020
+Hı
+
+1456
+01:42:06,760 --> 01:42:06,770
+hı.
+
+1457
+01:42:07,520 --> 01:42:08,810
+Peki.
+
+1458
+01:42:10,380 --> 01:42:13,040
+Eskiden, eskiden diyor ya imza taklidi.
+
+1459
+01:42:13,300 --> 01:42:15,340
+Biliyorsunuz imzalar taklit edilebilen
+şeyler.
+
+1460
+01:42:15,920 --> 01:42:18,300
+Eğer özellikle profesyonel taklitçiler
+tarafından,
+
+1461
+01:42:19,180 --> 01:42:22,720
+özellikle eğer sizin imzayı nasıl
+attığınızı görürlerse, yani
+
+1462
+01:42:22,820 --> 01:42:25,500
+zaman bilgisini de elde ederlerse,
+
+1463
+01:42:26,500 --> 01:42:30,300
+eee,
+çok çok iyi imza taklidi yapılabiliyor ve
+
+1464
+01:42:30,360 --> 01:42:34,160
+engellemek lazım.
+Ama tabii bunun günümüzdeki
+
+1465
+01:42:34,240 --> 01:42:37,040
+çözümü bu değil.
+Günümüzdeki çözüm elektronik imza.
+
+1466
+01:42:37,100 --> 01:42:38,960
+Muhtemelen geleceğin çözümü de bu olacak
+zaten.
+
+1467
+01:42:39,440 --> 01:42:41,920
+Gitgide kaybolacak bir problem olacağını
+düşünüyorum.
+
+1468
+01:42:43,180 --> 01:42:46,880
+İmzanın, eee, zaman içerisinde şeyi
+
+1469
+01:42:46,900 --> 01:42:50,880
+neden-- ona giderek azalacaktır. Neden?
+
+1470
+01:42:50,940 --> 01:42:54,480
+Otoritesi diyeyim.
+Yani analog imzanın otoritesi.
+
+1471
+01:42:55,380 --> 01:42:58,700
+Spam'dir değildir. Bu çok yaygın bir
+
+1472
+01:42:59,120 --> 01:43:02,180
+problem. Burada da şey her zaman olacak.
+
+1473
+01:43:02,200 --> 01:43:05,140
+Yani bu problem hep olacak çünkü işin bir
+reklam kısmı olduğu için.
+
+1474
+01:43:06,200 --> 01:43:06,540
+Eee,
+
+1475
+01:43:07,760 --> 01:43:09,380
+spam filter'lar var biliyorsunuz.
+
+1476
+01:43:09,760 --> 01:43:10,200
+Bazen,
+
+1477
+01:43:11,120 --> 01:43:15,000
+eee,
+çok iyi çalışırken bazen çok çok iyi
+
+1478
+01:43:15,700 --> 01:43:15,840
+Eee,
+
+1479
+01:43:16,660 --> 01:43:19,920
+sizlerin attıkları bazı mesajlar niyeyse
+spam'e
+
+1480
+01:43:19,940 --> 01:43:20,759
+düşebiliyorlar.
+
+1481
+01:43:21,820 --> 01:43:23,880
+Eee, bu noktada,
+
+1482
+01:43:25,340 --> 01:43:29,220
+eee,
+bazen ileri bazen geri gidiyoruz gibi
+
+1483
+01:43:29,620 --> 01:43:33,520
+Ne bileyim yani. Yani tamam,
+yani ilk kez birisinden gelen bir mesajın
+
+1484
+01:43:33,600 --> 01:43:35,820
+spam'e düşmesi normal olabilir belki.
+
+1485
+01:43:36,428 --> 01:43:40,368
+E ama benim cevapladığım ve onun bana
+tekrardan cevap olarak döndüğü
+
+1486
+01:43:40,448 --> 01:43:43,708
+mailin spama düşmesi,
+yani benim cevap verdiğim bir maile
+
+1487
+01:43:44,808 --> 01:43:47,228
+yapılan bir cevabın spama düşmesi komik,
+
+1488
+01:43:48,168 --> 01:43:51,468
+eee ama bu oluyor enteresan bir şekilde.
+
+1489
+01:43:52,168 --> 01:43:55,428
+Eee,
+dolayısıyla hani işte her zaman [güler]
+
+1490
+01:43:56,388 --> 01:44:00,028
+Eee ama muhtemelen, eee, yine hâlâ
+
+1491
+01:44:00,128 --> 01:44:02,908
+oldukça zamanımızı kurtarıyorlar diye
+düşünüyorum.
+
+1492
+01:44:02,968 --> 01:44:04,708
+Yani o filtreler hiç olmasa
+
+1493
+01:44:05,748 --> 01:44:09,708
+gelecek olan ve bizim gidecek zamanımız
+çok çok daha fazla
+
+1494
+01:44:09,748 --> 01:44:10,568
+olur diye düşünüyorum.
+
+1495
+01:44:12,288 --> 01:44:15,548
+Eeeh, olağan dışı durum var mı?
+Güvenlik kamerası kayıtları.
+
+1496
+01:44:16,088 --> 01:44:18,668
+Burada videodan bir şey yapmaya
+çalışıyoruz.
+
+1497
+01:44:18,708 --> 01:44:21,628
+Videoları izleyerek burada şöyle bir şey
+oldu, orada böyle bir şey oldu diye
+
+1498
+01:44:21,788 --> 01:44:24,908
+sınıfları belirlemek,
+durumları sınıflar diye tanımlarsanız,
+
+1499
+01:44:26,208 --> 01:44:28,448
+eee, bunları tanımlamak, eee,
+mümkün olabilir.
+
+1500
+01:44:28,568 --> 01:44:32,548
+Yani videodan sınıfını bulmak ya da
+videodan texte çevirmek
+
+1501
+01:44:32,608 --> 01:44:33,428
+işaret dilini,
+
+1502
+01:44:34,228 --> 01:44:36,748
+eee, bunlar çeşitli uygulamalar.
+Otonom sürüş.
+
+1503
+01:44:38,248 --> 01:44:42,188
+Otonom sürüşe dair burada böyle, eee,
+resimler
+
+1504
+01:44:42,308 --> 01:44:45,928
+koydum.
+Burada işte Tesla'nın son model içini
+
+1505
+01:44:45,988 --> 01:44:48,347
+resimleri koydum. Bunu koymamın sebebi şu:
+
+1506
+01:44:49,208 --> 01:44:52,378
+Otonom sürüşün çok uzun zamandır yapılmaya
+
+1507
+01:44:52,408 --> 01:44:55,048
+çalışıldığını göstermek. Bu birincisi.
+
+1508
+01:44:57,068 --> 01:44:59,348
+Eee, ikincisi, bu resimler
+
+1509
+01:44:59,568 --> 01:45:01,808
+88'den. Eee,
+
+1510
+01:45:03,288 --> 01:45:07,068
+88 dediğimizde de bana sanki çok eski bir
+gelmedi bir an ama
+
+1511
+01:45:07,708 --> 01:45:10,928
+yani bayağı eski aslında, eee,
+aslına bakarsan.
+
+1512
+01:45:10,988 --> 01:45:14,608
+O kadar zamandır uğraşılıyor yani,
+onu demeye çalışıyorum.
+
+1513
+01:45:14,728 --> 01:45:18,588
+Ve bir de 88'de de kullanılan tekniğin
+hâlâ yapay sinir
+
+1514
+01:45:18,668 --> 01:45:21,728
+ağları olduğunu göstermek.
+Şurada gördüğünüz şeyi görüyorsunuz,
+
+1515
+01:45:22,948 --> 01:45:26,608
+değil mi? Eee,
+peki şimdi şöyle bir şey soralım: Eee,
+
+1516
+01:45:26,788 --> 01:45:30,448
+burada sistemin output'u direksiyonun
+açısı
+
+1517
+01:45:30,608 --> 01:45:34,268
+ve gaz ve pe-- eee,
+gaz ve frenin pedal konumları.
+
+1518
+01:45:35,768 --> 01:45:38,688
+Eee, bu bir sınıflandırma problemi mi,
+regresyon problemi mi?
+
+1519
+01:45:42,988 --> 01:45:44,308
+Regresyondur hocam bence.
+
+1520
+01:45:45,048 --> 01:45:48,728
+Değil mi?
+Direksiyonu işte ne kadar çevirmesi
+
+1521
+01:45:49,508 --> 01:45:53,368
+eee, işte gazların konumları vesaire.
+Bunların hepsi sayısal şeyler.
+
+1522
+01:45:53,528 --> 01:45:55,088
+Hepsi regresyon problemi.
+
+1523
+01:45:56,968 --> 01:45:59,928
+Eee, burada bir sürü etik hikayeler var.
+
+1524
+01:45:59,968 --> 01:46:03,848
+Eee, tabii bir daha,
+bir daha girmeyelim bunlara ama bunlar da
+
+1525
+01:46:03,888 --> 01:46:07,248
+muhtemelen kararları, eee, biraz
+
+1526
+01:46:07,328 --> 01:46:10,968
+aktarmaya başladıkça bu tarz
+
+1527
+01:46:11,048 --> 01:46:12,068
+problemlerle
+
+1528
+01:46:13,368 --> 01:46:15,748
+çok karşılaşacağız gibi gözüküyor.
+
+1529
+01:46:17,428 --> 01:46:19,908
+Muhtemelen hata yapacaklar illa ki.
+
+1530
+01:46:19,988 --> 01:46:21,988
+İnsanlardan daha az yapacaklar belki.
+
+1531
+01:46:22,888 --> 01:46:25,908
+En azından umudumuz o. Eee ama yapacaklar.
+
+1532
+01:46:25,948 --> 01:46:27,048
+E yaptıkları zaman
+
+1533
+01:46:27,948 --> 01:46:29,588
+bunun suçlusu vesaire kim olacak?
+
+1534
+01:46:29,948 --> 01:46:33,208
+Kim bunun cerdasını çekecekler? Adalet,
+
+1535
+01:46:33,508 --> 01:46:34,308
+eee,
+
+1536
+01:46:35,188 --> 01:46:38,628
+sistemini,
+adalet duygumuzu öyle söyleyeyim,
+
+1537
+01:46:39,828 --> 01:46:40,248
+eee,
+
+1538
+01:46:42,108 --> 01:46:42,948
+belki işte
+
+1539
+01:46:45,468 --> 01:46:49,448
+bir şekilde uyumlu hale gelmesi gerekecek
+zaman içerisinde
+
+1540
+01:46:49,468 --> 01:46:50,228
+bir şeylerle.
+
+1541
+01:46:51,228 --> 01:46:52,388
+Hep beraber göreceğiz.
+
+1542
+01:46:54,308 --> 01:46:56,388
+Adalet, eee, bir yani
+
+1543
+01:46:57,508 --> 01:47:01,488
+ne bileyim,
+makinelerin karar vermesi gerçekten iyi
+
+1544
+01:47:01,548 --> 01:47:05,268
+verseler süper olur aslında.
+Yani şey anlamında,
+
+1545
+01:47:05,468 --> 01:47:06,948
+ne bileyim ben, işte
+
+1546
+01:47:08,708 --> 01:47:12,038
+hani rüşvet yemez, morali bozulmaz,
+
+1547
+01:47:13,228 --> 01:47:16,488
+karar aldıkça yorulmaz.
+Mesela bunların hepsi çok çok
+
+1548
+01:47:16,548 --> 01:47:18,228
+etkendirler.
+
+1549
+01:47:20,188 --> 01:47:22,967
+Eee, gerçek dünyada.
+
+1550
+01:47:25,928 --> 01:47:29,088
+E bunlar çok daha adil bir hale
+getirilebilir.
+
+1551
+01:47:29,588 --> 01:47:33,437
+Ama tabii işte orada adaletin de tanımı da
+değil mi,
+
+1552
+01:47:33,468 --> 01:47:36,768
+yani orası da birazcık şey yapabiliyor,
+eee, karışabiliyor.
+
+1553
+01:47:36,808 --> 01:47:40,528
+Yani hani asıl ama adaletin,
+adalet sisteminin
+
+1554
+01:47:40,688 --> 01:47:44,388
+amacı nedir? Eee, elinizdeki
+
+1555
+01:47:44,508 --> 01:47:48,088
+durumda output tam o
+
+1556
+01:47:48,248 --> 01:47:52,048
+amacı sağlamaya yönelik olmadığında, eee,
+bir
+
+1557
+01:47:52,088 --> 01:47:56,067
+şekilde bir inisiyatif kullanmak mümkün
+olabilir.
+
+1558
+01:47:56,148 --> 01:48:00,038
+Ama makineler için orası birazcık şey,
+soru
+
+1559
+01:48:00,088 --> 01:48:03,168
+işareti. Eee ya da işte o makineyi
+
+1560
+01:48:03,188 --> 01:48:04,368
+tasarlayanların
+
+1561
+01:48:09,348 --> 01:48:12,768
+tanımladığı loss'lar, öyle söyleyelim,
+kriterler
+
+1562
+01:48:13,348 --> 01:48:16,168
+oldukça etkili şeyler olacaklar bence.
+
+1563
+01:48:17,518 --> 01:48:21,128
+Hocam burada makineler karşısındakinin
+zaten insan olduğunu da
+
+1564
+01:48:21,208 --> 01:48:23,308
+anlamadıkları için [güler] ...
+
+1565
+01:48:23,428 --> 01:48:23,788
+Evet.
+
+1566
+01:48:24,588 --> 01:48:25,078
+Orada daha
+
+1567
+01:48:25,968 --> 01:48:28,328
+şey olur bence adalet konusunda,
+sıkıntıya girer yani.
+
+1568
+01:48:28,468 --> 01:48:32,198
+Çünkü bir insanı insan yargılamasıyla
+makinenin insanı
+
+1569
+01:48:32,228 --> 01:48:33,708
+yargılaması şey olur gibi geliyor bana.
+
+1570
+01:48:34,628 --> 01:48:35,928
+Farklı olur gibi gelir.
+
+1571
+01:48:36,188 --> 01:48:40,098
+Ya olabilir. Yani şöyle bir şey,
+hani bunların hepsi daha yeni yeni yani.
+
+1572
+01:48:40,188 --> 01:48:43,068
+Ama yeni yeni derken şöyle,
+hani karşımıza çıkacak şeyler.
+
+1573
+01:48:44,608 --> 01:48:47,568
+Yani, eee, ne bileyim ben, eee,
+
+1574
+01:48:48,528 --> 01:48:49,268
+kararı
+
+1575
+01:48:50,488 --> 01:48:52,068
+bir insan baktığında,
+
+1576
+01:48:52,908 --> 01:48:55,308
+eee, yani daha doğ-- şöyle söyleyeyim:
+
+1577
+01:48:56,288 --> 01:48:56,628
+Eee,
+
+1578
+01:48:59,768 --> 01:49:02,908
+kararı belli kurallara bağlı milyonlarca
+
+1579
+01:49:04,508 --> 01:49:05,528
+dava var.
+
+1580
+01:49:06,768 --> 01:49:08,288
+E bunlar, eee,
+
+1581
+01:49:09,428 --> 01:49:13,168
+aslına bakarsanız yani bir sene sürüyor
+mesela hani bir şeyin
+
+1582
+01:49:13,228 --> 01:49:16,228
+çıkması falan.
+Yani bunlar bir kural sistemine falan
+
+1583
+01:49:16,328 --> 01:49:19,748
+oturtulabilseler çok çok hızlı işler
+yürüyebilirler.
+
+1584
+01:49:20,368 --> 01:49:20,868
+Eee
+
+1585
+01:49:21,888 --> 01:49:24,908
+ama tabii buna uymayan durumlar da var.
+
+1586
+01:49:25,688 --> 01:49:29,448
+Eee, o yüzden hani, eee, şey zor, eee,
+
+1587
+01:49:29,768 --> 01:49:29,948
+bir
+
+1588
+01:49:31,528 --> 01:49:34,848
+sıkıntı var. Ama eee, şey de problem.
+
+1589
+01:49:35,008 --> 01:49:37,428
+Yani eee, artık eee,
+
+1590
+01:49:39,208 --> 01:49:42,788
+o kadar çok şey oluyor ve o kadar çok
+
+1591
+01:49:42,908 --> 01:49:44,548
+karar verilmesi gerekiyor ki-
+
+1592
+01:49:45,980 --> 01:49:49,940
+Yani hem business tarafında hem toplumsal
+hayatta vesaire.
+
+1593
+01:49:49,960 --> 01:49:53,820
+Bunların hepsinin artık böyle insanlar
+tarafından alınması çok
+
+1594
+01:49:53,860 --> 01:49:57,740
+kolay olmayabiliyor. Yani, eee, işler
+
+1595
+01:49:57,780 --> 01:50:01,520
+yürütülmeye çalışılıyor ama yani, eee,
+geciken bir
+
+1596
+01:50:01,560 --> 01:50:05,140
+şeyler olduğu zaman,
+çok geciken bir şeyler olduğu zaman bir
+
+1597
+01:50:05,180 --> 01:50:05,380
+işin.
+
+1598
+01:50:06,560 --> 01:50:10,220
+Eee, dolayısıyla hani bir şey var, eee,
+ne derler ona, bir
+
+1599
+01:50:10,340 --> 01:50:13,199
+gereksinim, eee, olduğu da ortada.
+
+1600
+01:50:13,220 --> 01:50:17,020
+Ama tabii bu-bu,
+bu tarz şeyleri yaparken demin
+
+1601
+01:50:17,040 --> 01:50:20,760
+hiç akıldan çıkartmadan hareket etmek
+lazım.
+
+1602
+01:50:20,880 --> 01:50:24,740
+Eee çünkü en başta çok güzel gözüken
+şeyler hiç aklımıza
+
+1603
+01:50:24,780 --> 01:50:26,880
+gelmeyen enteresan enteresan sonuçlar
+doğurabiliyor.
+
+1604
+01:50:27,860 --> 01:50:28,100
+Ama
+
+1605
+01:50:29,040 --> 01:50:29,340
+eee,
+
+1606
+01:50:30,460 --> 01:50:34,060
+şey olacak yani. Hani bunlar denenecekler,
+şu olacak, bu olacak.
+
+1607
+01:50:34,080 --> 01:50:36,800
+Yani tek seferde mükemmel bir şeye
+ulaşılamayacak daha.
+
+1608
+01:50:37,440 --> 01:50:39,640
+Bir şeyden vazgeçilecek,
+sonra bir daha denenecek daha.
+
+1609
+01:50:40,060 --> 01:50:43,960
+Böyle süreçler muhtemelen önümüzdeki zaman
+içerisinde,
+
+1610
+01:50:44,980 --> 01:50:48,940
+eee, epey bir göreceğiz.
+Yani bu eğitim sisteminde de böyle, hukuk
+
+1611
+01:50:48,980 --> 01:50:51,360
+sisteminde de böyle vesaire.
+
+1612
+01:50:52,740 --> 01:50:54,300
+Belki bambaşka yerlerde de.
+
+1613
+01:50:56,720 --> 01:51:00,660
+Eee, beyin aktiviteleri.
+İnsanların değişik şeyler düşünürken,
+
+1614
+01:51:00,920 --> 01:51:04,460
+düşün-- farklı duygulara sahipken,
+problem çözerken gibi beyin aktiviteleri
+
+1615
+01:51:04,500 --> 01:51:05,460
+kaydedilebiliyor.
+
+1616
+01:51:06,380 --> 01:51:09,920
+Eee,
+bu beyin aktivitelerini kaydettikten sonra
+
+1617
+01:51:10,100 --> 01:51:12,700
+fazla, eee, şey olabilir.
+
+1618
+01:51:12,940 --> 01:51:14,260
+Aklımıza
+
+1619
+01:51:15,860 --> 01:51:19,060
+bir şeyler gelebilir bununla ilgili ne
+görevler olabilir diye.
+
+1620
+01:51:19,640 --> 01:51:23,420
+Ne bileyim,
+işte insanların aklından geçenleri
+
+1621
+01:51:24,480 --> 01:51:27,620
+ne bileyim, eee,
+gördükleri rüyaları kaydetmek
+
+1622
+01:51:28,840 --> 01:51:29,220
+ya da,
+
+1623
+01:51:31,840 --> 01:51:32,060
+eee,
+
+1624
+01:51:34,800 --> 01:51:38,580
+iki insanın sadece düşünerek iletişim
+kurması falan gibisinden,
+
+1625
+01:51:39,140 --> 01:51:41,380
+eee, bir sürü şeyler olabilir.
+
+1626
+01:51:42,220 --> 01:51:46,060
+Eee, tabii, eee,
+şu anki teknolojiyle henüz,
+
+1627
+01:51:46,340 --> 01:51:49,720
+eee, mümkün değil. Şu anda sadece
+
+1628
+01:51:49,840 --> 01:51:53,760
+düşünerek belli şeyleri sağa, sola,
+yukarıya, aşağı falan ya da
+
+1629
+01:51:53,780 --> 01:51:56,100
+biraz daha yüksek çözünürlüklü hareketler
+
+1630
+01:51:56,180 --> 01:51:59,960
+yaptırabiliyoruz. Ya da belli, eee,
+
+1631
+01:51:59,980 --> 01:52:03,780
+duyguları falan herhalde
+oluşturabiliyoruz.
+
+1632
+01:52:03,840 --> 01:52:07,760
+Ama henüz bu işte "Ne düşünüyorsun?"un
+yazması
+
+1633
+01:52:07,780 --> 01:52:11,720
+falan gibisinden şeyler henüz yok.
+Ama bunun için uğraşılıyor mu?
+
+1634
+01:52:11,860 --> 01:52:12,820
+Evet, uğraşılıyor.
+
+1635
+01:52:14,020 --> 01:52:15,740
+Eee, bununla alakalı
+
+1636
+01:52:16,640 --> 01:52:20,340
+herhalde, eee, belli özel, eee,
+
+1637
+01:52:21,080 --> 01:52:23,720
+girişimler var diye hatırlıyorum.
+
+1638
+01:52:24,120 --> 01:52:25,640
+Sizler de biliyorsunuzdur belki.
+
+1639
+01:52:27,020 --> 01:52:28,139
+Şimdi, eee,
+
+1640
+01:52:29,200 --> 01:52:31,120
+burası tabii çok heyecan verici bir alan.
+
+1641
+01:52:31,320 --> 01:52:32,120
+Yani bu,
+
+1642
+01:52:34,280 --> 01:52:37,760
+bu noktadaki teknolojinin gelişmesi, eee,
+
+1643
+01:52:38,080 --> 01:52:41,880
+insanın her şeyle iletişimini,
+etkileşimini
+
+1644
+01:52:42,440 --> 01:52:43,859
+değiştirebilecek bir şey.
+
+1645
+01:52:45,520 --> 01:52:46,020
+Eee,
+
+1646
+01:52:47,960 --> 01:52:51,680
+yani bunun en uç boyutunu düşündüğünüzde
+
+1647
+01:52:51,880 --> 01:52:55,600
+aslında hani, eee,
+beyin haricinde hiçbir şeye sahip,
+
+1648
+01:52:56,500 --> 01:52:59,860
+eee,
+ihtiyacının kalmaması gibisinden bir şey
+
+1649
+01:53:00,780 --> 01:53:04,680
+Onun haricindeki, eee,
+bütün her şey bu beyne,
+
+1650
+01:53:05,840 --> 01:53:06,850
+eee, ne diyelim,
+
+1651
+01:53:08,080 --> 01:53:11,100
+eee, eklenebilir. Eklentiler olarak
+
+1652
+01:53:11,140 --> 01:53:12,860
+düşünülebilir.
+
+1653
+01:53:13,980 --> 01:53:14,170
+Peki-
+
+1654
+01:53:15,300 --> 01:53:18,160
+Matrix gibi mi diyorsunuz hocam? O şey,
+filmdeki.
+
+1655
+01:53:19,460 --> 01:53:19,760
+Orada da-
+
+1656
+01:53:19,820 --> 01:53:23,530
+Değil mi? O filmde,
+filmde tam olarak ne vardı bilmiyorum neyi
+
+1657
+01:53:24,140 --> 01:53:27,980
+Orada da beyinleriyle böyle bir, eee,
+yuva gibi bir yere yatıyorlardı.
+
+1658
+01:53:28,020 --> 01:53:31,299
+Ondan sonra sadece sanal alemde
+yaşıyorlardı.
+
+1659
+01:53:32,020 --> 01:53:34,320
+Beyinleriyle mi?
+Vücutlarıyla yatıyorlardı orada ya.
+
+1660
+01:53:34,420 --> 01:53:34,600
+Evet.
+
+1661
+01:53:34,609 --> 01:53:35,060
+Vücudu yok-
+
+1662
+01:53:35,140 --> 01:53:36,960
+Ama yine vücutlarını kullanmıyorlardı ya.
+
+1663
+01:53:37,120 --> 01:53:37,780
+Bütün şeyler
+
+1664
+01:53:38,860 --> 01:53:40,239
+sinirlere bağlıydı aslında
+
+1665
+01:53:41,440 --> 01:53:41,800
+diye hatırlıyorum.
+
+1666
+01:53:41,980 --> 01:53:44,040
+Niye öyle bir şey yapıyordu makineler
+insanlara?
+
+1667
+01:53:46,660 --> 01:53:49,060
+Eee,
+hocam hiçbir zaman şey yapamıyordu
+
+1668
+01:53:49,120 --> 01:53:50,640
+Bu yüzden insanlar karşı gelemiyorlardı.
+
+1669
+01:53:50,660 --> 01:53:54,299
+Çünkü yaşadıklarını gerçek dünya
+zannediyorlardı.
+
+1670
+01:53:54,340 --> 01:53:54,750
+Makineler-
+
+1671
+01:53:54,940 --> 01:53:58,200
+Ama,
+ama insanların bir şeyine ihtiyaçları
+
+1672
+01:53:59,240 --> 01:54:02,799
+Yani insanların o kuluçka gibi makinenin
+içerisinde olmalarının bir sebebi vardı.
+
+1673
+01:54:02,820 --> 01:54:05,420
+Makinelere bir enerji falan gibisinden bir
+şey mi sağlıyorlardı?
+
+1674
+01:54:06,200 --> 01:54:09,940
+Öyle bir hikayesi de vardı onun.
+Yani insanları niye olduğu gibi yok
+
+1675
+01:54:10,940 --> 01:54:12,420
+O da doğru. Doğru hocam, öyle-
+
+1676
+01:54:12,460 --> 01:54:15,500
+Niye öyle bir şey yapsınlar ki?
+Yani hani o manada düşündüğümüz zaman
+
+1677
+01:54:15,720 --> 01:54:18,100
+bir,
+bir şeyine ihtiyaçları vardı herhalde.
+
+1678
+01:54:18,660 --> 01:54:22,340
+Yoksa niye var-varlıktan devam etsin
+hepsini öldürmek mümkünken?
+
+1679
+01:54:23,300 --> 01:54:23,500
+Hocam-
+
+1680
+01:54:23,600 --> 01:54:26,040
+O düzeni korumaları lazım çünkü.
+
+1681
+01:54:26,100 --> 01:54:29,360
+Aktivite konusunda şey görmüştüm.
+Morgan Freeman'ın bir belgeseli de vardı.
+
+1682
+01:54:29,420 --> 01:54:33,120
+Bir suçluyla konuşurken bu beynin nereleri
+hareket ediyor diye
+
+1683
+01:54:33,260 --> 01:54:37,040
+cezaevlerini geziyordu.
+Bu empati bölümlerinin hareket etmediğini
+
+1684
+01:54:37,080 --> 01:54:39,060
+görüyordu. Ya bu da kullanılabilir şu an.
+
+1685
+01:54:39,070 --> 01:54:40,340
+Hani cezaevlerindeki insanların
+
+1686
+01:54:41,300 --> 01:54:44,800
+artık o empatiyi kazanıp kazanmadıklarını
+test ederken orada suçlu diyordu ki "Beni
+
+1687
+01:54:44,840 --> 01:54:46,740
+salarsınız tekrar öldüreceğim"i
+söylüyordu.
+
+1688
+01:54:47,500 --> 01:54:51,460
+Ama o empati bölümünün hiç böyle hareket
+etmediğini vesaire gözlemleyebiliyorlardı
+
+1689
+01:54:51,580 --> 01:54:52,100
+suçlunun.
+
+1690
+01:54:54,120 --> 01:54:55,260
+Ya vallahi şöyle şimdi,
+
+1691
+01:54:56,880 --> 01:54:59,900
+teknolojik olarak yapılabilir olmakla
+
+1692
+01:55:00,940 --> 01:55:04,520
+yapılması gereken birbiriyle her zaman
+aynı olmayabiliyor.
+
+1693
+01:55:06,660 --> 01:55:07,180
+Yani
+
+1694
+01:55:08,160 --> 01:55:08,920
+çok kabaca
+
+1695
+01:55:09,760 --> 01:55:13,720
+bir insanın beyin aktivitelerine bakarak o
+kişinin psikopat
+
+1696
+01:55:13,740 --> 01:55:16,340
+olup olmadığını tespit etmek mümkün.
+
+1697
+01:55:17,900 --> 01:55:21,360
+Günümüz teknolojisiyle bile.
+Demin bahsettiğin gibi.
+
+1698
+01:55:22,960 --> 01:55:25,920
+Eee, bunun bir adım ilerisi sokakta gezen
+
+1699
+01:55:26,360 --> 01:55:28,180
+psikopatları da tespit edebilir miyiz?
+
+1700
+01:55:29,620 --> 01:55:31,820
+Evet edebiliriz. Peki etsek ne yapacağız
+
+1701
+01:55:33,040 --> 01:55:36,840
+gibisinden durumlar var.
+Yani potansiyel yürüyen bomba adam.
+
+1702
+01:55:37,020 --> 01:55:39,880
+Tamam.
+Ama bu adamı içeriye alabilir misin?
+
+1703
+01:55:40,080 --> 01:55:43,040
+Bu adamı bir yere kapatabilir misin?
+Böyle bir hakkın var mı, yok mu?
+
+1704
+01:55:43,660 --> 01:55:46,680
+Eee, bunlar hep şey, sıkıntılık onlar.
+Anlatabildim mi?
+
+1705
+01:55:47,140 --> 01:55:48,240
+Demin dediğine ek olarak.
+
+1706
+01:55:49,040 --> 01:55:50,430
+Evet hocam. Anladım.
+
+1707
+01:55:52,900 --> 01:55:56,680
+Ve psikopatlığın seviye--
+yani toplumda görünme sıklığı da öyle
+
+1708
+01:55:57,120 --> 01:55:59,860
+binde bir falan gibisinden bir seviyede de
+değil yani.
+
+1709
+01:56:00,200 --> 01:56:02,500
+Onu da kendiniz araştırıp bakın.
+
+1710
+01:56:05,100 --> 01:56:08,580
+Hocam bir de şu an suç işlense bile suç
+
+1711
+01:56:08,620 --> 01:56:12,520
+işlendikten sonra, eee,
+ispat edilene kadar o kişiye
+
+1712
+01:56:12,600 --> 01:56:15,800
+yine suçlu diyemiyoruz. Diğer, ya deminki
+
+1713
+01:56:15,860 --> 01:56:16,620
+senaryoda
+
+1714
+01:56:17,860 --> 01:56:21,620
+suç daha işlenmemişken biz onu suçlu, eee,
+kabul
+
+1715
+01:56:21,700 --> 01:56:23,940
+etmiş oluyoruz. Yani şu anda-
+
+1716
+01:56:24,280 --> 01:56:27,900
+Yok işte suçu önlemek,
+yani onu potansiyel olarak o
+
+1717
+01:56:28,020 --> 01:56:31,900
+kişinin, eee,
+suç işleme potansiyelinin çok
+
+1718
+01:56:31,960 --> 01:56:35,880
+yüksek olduğunu, eee,
+görüp onu bir şekilde, eee,
+
+1719
+01:56:35,920 --> 01:56:39,620
+şey yapmak, ne derler ona,
+bertaraf etmek bir şekilde.
+
+1720
+01:56:39,740 --> 01:56:43,620
+Ama ya şu anki insan haklarına bile, eee,
+uymayan
+
+1721
+01:56:43,720 --> 01:56:47,060
+şey,
+bir kişinin suçu ispatlanana kadar suçlu
+
+1722
+01:56:47,100 --> 01:56:48,040
+sayılması-
+
+1723
+01:56:48,460 --> 01:56:48,980
+Hı hı, hı hı
+
+1724
+01:56:48,990 --> 01:56:52,640
+...suçlu sayılması insan haklarına karşı
+olarak görülüyor.
+
+1725
+01:56:52,720 --> 01:56:56,499
+Öyle bir durumda büyük ihtimalle, yani,
+kabul görmeyecek bir şey
+
+1726
+01:56:56,540 --> 01:56:57,079
+olur yani.
+
+1727
+01:56:57,780 --> 01:57:01,490
+Doğru, doğru. Ben zaten, eee,
+hani teknolojik olarak yapılabilirlik de
+
+1728
+01:57:01,540 --> 01:57:05,320
+demeye çalıştım ya.
+Teknolojik olarak bir şey yapabiliyor
+
+1729
+01:57:05,400 --> 01:57:09,320
+onun yapılması gerekmiyordur,
+onu demeye çalıştım.
+
+1730
+01:57:09,360 --> 01:57:09,660
+Doğru.
+
+1731
+01:57:09,800 --> 01:57:13,200
+Eee, illaki yapmanız gerekmiyordur,
+yapılabilir olsa bile.
+
+1732
+01:57:15,320 --> 01:57:19,280
+Böyle bir durum da olabilir.
+Ama tabii hani işe böyle, eee, şey çok
+
+1733
+01:57:19,320 --> 01:57:20,670
+da kolay değil yani. Hani bir,
+
+1734
+01:57:21,270 --> 01:57:24,780
+eee... Yani
+
+1735
+01:57:25,180 --> 01:57:27,960
+sizler de düşünebilirsiniz bunun üzerine
+epey bir diye tahmin ediyorum.
+
+1736
+01:57:28,180 --> 01:57:30,760
+Şimdi çok da şey yapmayalım,
+içine girmeyelim.
+
+1737
+01:57:31,050 --> 01:57:35,040
+Eee, burada birkaç metrik var.
+Bu metrikten, yani bu tablodan
+
+1738
+01:57:35,320 --> 01:57:39,000
+görmenizi istediğim şey temelde örnek
+sayılarının da özellik
+
+1739
+01:57:39,080 --> 01:57:42,900
+sayılarının da çok büyük rakamlara
+ulaşabildiği, çeşitli uygulama alanlarına
+
+1740
+01:57:42,940 --> 01:57:45,060
+göre bu sayıların değişebildiği.
+
+1741
+01:57:45,220 --> 01:57:49,180
+Günümüzde her iki yönde de çok büyük
+miktarda
+
+1742
+01:57:49,190 --> 01:57:50,220
+artış var.
+
+1743
+01:57:51,020 --> 01:57:54,940
+Eee, bu resim eski bir resim.
+Eski bir resim olmasına rağmen işte
+
+1744
+01:57:54,980 --> 01:57:56,880
+falan görüyorsunuz her iki tarafta da.
+
+1745
+01:57:57,780 --> 01:58:00,959
+Eee,
+günümüzde bunlar çok çok daha yüksek
+
+1746
+01:58:01,019 --> 01:58:02,600
+tırmanıyorlar.
+
+1747
+01:58:04,220 --> 01:58:07,990
+Öğrenmenin geleceği artık çok şey değil,
+ne derler ona,
+
+1748
+01:58:14,160 --> 01:58:16,000
+göz ardı edilebilecek bir şey değil.
+
+1749
+01:58:16,020 --> 01:58:19,760
+Buradaki makine öğrenmesinin geleceğinden
+bahsediyorum tabii.
+
+1750
+01:58:19,860 --> 01:58:23,760
+Eee, yoksa bizim öğrenmemiz--
+tabii bizim öğrenmemiz de evet,
+
+1751
+01:58:23,820 --> 01:58:25,700
+bizim öğrenmemiz de değişecek mi?
+
+1752
+01:58:27,040 --> 01:58:30,200
+Evet, orası da başka bir boyutu işin.
+
+1753
+01:58:30,280 --> 01:58:32,940
+İnsan öğrenmesi değişebilir mi?
+
+1754
+01:58:33,020 --> 01:58:36,320
+Eee, çok çok daha iyi eğitim
+
+1755
+01:58:36,380 --> 01:58:40,219
+sistemleri bir şekilde oluşturulabilir mi?
+
+1756
+01:58:41,400 --> 01:58:45,260
+Bu konuda epey şey var, eee, çalışmam
+
+1757
+01:58:45,280 --> 01:58:48,540
+var. Kişiye özel asistanları oluşturmak,
+
+1758
+01:58:49,140 --> 01:58:51,360
+eğitim asistanları oluşturmak.
+
+1759
+01:58:53,660 --> 01:58:54,760
+Eee,
+
+1760
+01:58:55,780 --> 01:58:58,840
+bu tabii şu andaki eğitim
+
+1761
+01:58:59,080 --> 01:59:03,060
+sistemimizin optimal bir eğitim sistemi
+olmadığı açık.
+
+1762
+01:59:03,180 --> 01:59:03,580
+Yani,
+
+1763
+01:59:04,860 --> 01:59:06,500
+ııı, şey çok, ııı,
+
+1764
+01:59:07,720 --> 01:59:11,080
+büyük kabul gören bir yaklaşım.
+En iyi eğitim birebir.
+
+1765
+01:59:12,180 --> 01:59:16,020
+Yani, eee, bir kişinin bir kişiyle işte,
+eee,
+
+1766
+01:59:17,080 --> 01:59:20,820
+birebir eğitim yapması en yüksek
+
+1767
+01:59:20,860 --> 01:59:24,620
+faydanın sağlandığı kısım.
+Ama bu çok ölçeklenebilir bir şey
+
+1768
+01:59:24,820 --> 01:59:28,480
+olmadığından dolayı böyle kalabalık
+kalabalık sınıflarda bir şeyler
+
+1769
+01:59:28,560 --> 01:59:29,200
+olabiliyor.
+
+1770
+01:59:30,240 --> 01:59:34,220
+Eee,
+çünkü birebirin avantajı herkese aynı şeyi
+
+1771
+01:59:34,260 --> 01:59:37,700
+zorunda anlatmıyorsunuz zaten. Herkese
+
+1772
+01:59:38,940 --> 01:59:41,320
+ona göre bir şeyler anlatıyorsunuz.
+
+1773
+01:59:42,240 --> 01:59:46,140
+Eee, ona göre sorular geliyor,
+ona göre soruları soruyorsunuz.
+
+1774
+01:59:46,640 --> 01:59:49,480
+Kişisel gelişimini ona göre takip
+ediyorsunuz.
+
+1775
+01:59:51,180 --> 01:59:53,500
+Bir kişi işiniz, öyle söyleyelim belki.
+
+1776
+01:59:53,920 --> 01:59:55,180
+Ama dediğim gibi çok ölçeklenebilir.
+
+1777
+01:59:55,240 --> 01:59:59,220
+Ama bunu makineye de, eee, atarsanız,
+atabilirseniz, eee, o
+
+1778
+01:59:59,300 --> 02:00:03,220
+durumda insanların eğitimi, eee,
+noktasında çok büyük,
+
+1779
+02:00:03,620 --> 02:00:06,260
+eee, avantaj sağlayabilirsiniz.
+
+1780
+02:00:06,780 --> 02:00:09,999
+Ama tabii o noktada şurası, eee,
+işin içine giriyor: İnsanları
+
+1781
+02:00:10,080 --> 02:00:13,660
+eğitmeye niye ihtiyaç olacak öyle bir
+durumda?
+
+1782
+02:00:13,720 --> 02:00:15,140
+Orası da ayrı bir hikaye.
+
+1783
+02:00:16,100 --> 02:00:19,800
+Eee, zaten bir insanı eğitebilen bir
+
+1784
+02:00:19,860 --> 02:00:23,360
+makine varsa o işi de zaten o insan kadar
+yapabiliyordur.
+
+1785
+02:00:23,960 --> 02:00:27,940
+Eee,
+o insanı kullanmak yerine o işte o
+
+1786
+02:00:28,020 --> 02:00:28,880
+daha ucuz.
+
+1787
+02:00:29,940 --> 02:00:30,240
+Eee,
+
+1788
+02:00:31,260 --> 02:00:35,080
+dolayısıyla hani o noktalarda enteresan
+soru işaretleri de
+
+1789
+02:00:35,100 --> 02:00:37,560
+var bence. Peki.
+
+1790
+02:00:39,390 --> 02:00:39,390
+[nefes]
+
+1791
+02:00:41,000 --> 02:00:44,060
+Şimdi burasını size söyleyecek çok da
+fazla bir şey yok.
+
+1792
+02:00:44,070 --> 02:00:45,920
+Bunların hepsi zaten bildiğiniz şeyler.
+
+1793
+02:00:46,040 --> 02:00:48,140
+Son birkaç şey, eee, söyleyeceğim.
+
+1794
+02:00:49,080 --> 02:00:52,800
+Eee, sonra da direkt şey yapabiliriz,
+hadi bugünkü
+
+1795
+02:00:52,820 --> 02:00:55,580
+dersi tamamlayabiliriz diye düşünüyorum.
+
+1796
+02:00:55,620 --> 02:00:57,820
+Ara ver-- ara vermek ister misiniz şimdi?
+
+1797
+02:01:00,580 --> 02:01:01,400
+Yok hocam, bence iyi.
+
+1798
+02:01:03,080 --> 02:01:05,940
+Bence de bitirebiliriz hocam.
+
+1799
+02:01:06,760 --> 02:01:10,300
+Tamam. Şimdi, eee,
+bir uygulamadan bahsedeceğim.
+
+1800
+02:01:10,320 --> 02:01:13,800
+Basit, eee,
+bir kitap halkası içindeki yazının metne
+
+1801
+02:01:13,860 --> 02:01:17,500
+İlk önce burada, eee,
+yani bir resim var elinizde.
+
+1802
+02:01:17,540 --> 02:01:20,560
+O metni bulmak istiyoruz.
+İlk önce ne anlam--
+
+1803
+02:01:20,600 --> 02:01:23,780
+sonra harfleri bulmamız lazım ve sonra bir
+eğitim kümesi oluşturacağız.
+
+1804
+02:01:23,820 --> 02:01:26,380
+Bu eğitim kümesinde işte o satırların
+içerisinde harfleri bulduk.
+
+1805
+02:01:26,420 --> 02:01:29,560
+Harflerin hepsini eşit büyüklüklere
+getirdik, öyle söyleyelim.
+
+1806
+02:01:30,340 --> 02:01:32,680
+Eee, burada bunun bir örneği var.
+İşte şöyle bir satır var.
+
+1807
+02:01:32,700 --> 02:01:36,620
+Bu satırın içerisinde iki yi seçmişiz.
+Bu iki mesela işte böyle bir şey.
+
+1808
+02:01:36,640 --> 02:01:38,180
+O aslında böyle bir şey.
+O aslında böyle bir şey.
+
+1809
+02:01:39,280 --> 02:01:43,060
+Dolayısıyla bütün harfleri eşit boyuta
+getirdi ki-- ki buradaki boyut,
+
+1810
+02:01:43,340 --> 02:01:47,260
+eee, ona altılık bir, eee, yapının içine
+
+1811
+02:01:47,300 --> 02:01:51,240
+oturması, bütün, eee,
+karakterlerimizin bu, eee,
+
+1812
+02:01:51,320 --> 02:01:52,800
+yapıya getirdiğimizi düşünelim.
+
+1813
+02:01:52,880 --> 02:01:56,630
+O zaman, eee,
+bizim elimizdeki her bir örnek altmış
+
+1814
+02:01:56,720 --> 02:01:58,740
+uzayda bir nokta haline gelecek.
+
+1815
+02:01:59,600 --> 02:02:03,080
+Eee ve en başta, eee, mesela he--
+
+1816
+02:02:03,180 --> 02:02:06,500
+rakamlardan bahsedelim.
+Rakamlar için her birinden onar tane
+
+1817
+02:02:07,860 --> 02:02:11,420
+yüz tane örneğimiz olacak.
+Yüz tane satırımız ve altmış tane
+
+1818
+02:02:11,460 --> 02:02:15,380
+sütunumuz olan bir matris oluşturmuş
+olacağız
+
+1819
+02:02:16,540 --> 02:02:17,560
+böyle bir şey yaparsak.
+
+1820
+02:02:18,580 --> 02:02:22,150
+E,
+bir de her örneğin hangi harf ya da işte
+
+1821
+02:02:22,180 --> 02:02:26,140
+bilgisi de var. Şimdi, eee,
+bu noktada bir sistemi eğitim ve
+
+1822
+02:02:26,180 --> 02:02:28,900
+test kümesinde iki tane parçaya ayırmamız
+gerekecek.
+
+1823
+02:02:28,940 --> 02:02:32,020
+Ondan sonra da bu eğitim kümesini bir
+sınıflandırıcıya verip onun
+
+1824
+02:02:32,060 --> 02:02:35,140
+modellenmesi ve modelin başarısını
+ölçülmesi.
+
+1825
+02:02:35,550 --> 02:02:38,760
+Modelin başarısını ölçerken de şöyle bir
+şey gerçekleştiriyoruz aslında.
+
+1826
+02:02:39,960 --> 02:02:43,540
+Eee, test örneği var elimizde bir tane.
+Bu test örneğini modele veriyoruz.
+
+1827
+02:02:43,580 --> 02:02:46,840
+Model bir tahminde bulunuyor ve o test
+örneğinin gerçekten olduğunu da biliyoruz.
+
+1828
+02:02:46,860 --> 02:02:50,640
+E,
+bunların ikisinin uyumluluğu modelin
+
+1829
+02:02:50,660 --> 02:02:54,039
+rahat gösteriyor.
+Şimdi burada veri kümesini ikiye
+
+1830
+02:02:54,200 --> 02:02:57,640
+bölmemizin temel amacı ne aslında?
+
+1831
+02:02:57,680 --> 02:02:58,410
+İşte modelin
+
+1832
+02:02:59,300 --> 02:03:02,380
+gerçek zamandaki, gerçek dünyadaki
+
+1833
+02:03:02,420 --> 02:03:05,520
+performansını daha doğru tahmin edebilmek.
+
+1834
+02:03:05,980 --> 02:03:06,520
+Yani
+
+1835
+02:03:07,600 --> 02:03:11,540
+siz bir model oluşturdunuz,
+işte bir OSYA paketi yazdınız,
+
+1836
+02:03:11,600 --> 02:03:15,580
+diye verdiniz ve sizin o programınızı
+kullanan kişiler
+
+1837
+02:03:15,660 --> 02:03:19,320
+kendi örneklerini verdikleri zaman
+performans ne
+
+1838
+02:03:19,340 --> 02:03:22,920
+olacak? Ne kadar başarılı çalışacak?
+Bunu tahmin etmek istiyorsunuz.
+
+1839
+02:03:23,400 --> 02:03:26,380
+E, o zaman ne lazım size? Müşterideki
+
+1840
+02:03:26,600 --> 02:03:30,320
+performansı görebil--
+ölçebilmeniz için müşterinin datası
+
+1841
+02:03:30,360 --> 02:03:31,880
+lazım. E, müşterinin datası elinizde yok.
+
+1842
+02:03:32,260 --> 02:03:35,210
+E,
+müşterinin datası elinizde yoksa o zaman
+
+1843
+02:03:35,210 --> 02:03:36,940
+olur? Müşteri datasının özelliği ne?
+
+1844
+02:03:38,980 --> 02:03:42,260
+Makinenin eğitim sürecinde görmediği bir
+data bu.
+
+1845
+02:03:43,080 --> 02:03:46,940
+Önemli olan nokta burası. Dolayısıyla,
+eee, bu eğitim
+
+1846
+02:03:46,980 --> 02:03:49,880
+ve test diye bölmemizin temel manası bu.
+
+1847
+02:03:51,360 --> 02:03:55,140
+Yine genelde verdiğim örnek,
+bir öğretmen sınıfta çözdüğü
+
+1848
+02:03:55,240 --> 02:03:58,790
+soruların aynılarını sınavda sorsa ve
+öğrenciler çok yüksek not
+
+1849
+02:03:58,880 --> 02:04:01,520
+alsalar öğretmen neden emin olamaz?
+
+1850
+02:04:01,580 --> 02:04:04,940
+Öğrenciler bunu öğrendi mi yoksa
+ezberlediler mi emin olamaz.
+
+1851
+02:04:05,020 --> 02:04:06,700
+Öğretmenin yapması gereken şey ne?
+
+1852
+02:04:08,220 --> 02:04:11,240
+Sınıfta çözdüğü sorulara,
+sınıfta verdiği örneklere
+
+1853
+02:04:11,440 --> 02:04:12,280
+benzeyen,
+
+1854
+02:04:13,280 --> 02:04:15,700
+onlardan çok alakasız şeyler de sormaması
+lazım.
+
+1855
+02:04:16,360 --> 02:04:19,240
+Onlara tamamen aynılarını da sormaması
+lazım.
+
+1856
+02:04:19,300 --> 02:04:22,920
+Ama onlara benzeyen bir şey. Ki benzermiş,
+işte adaptasyonu.
+
+1857
+02:04:23,020 --> 02:04:26,980
+Hani orada bir şey yapabiliyor mu öğrenci?
+Olayı anlamış mı, ezberlemiş mi?
+
+1858
+02:04:27,660 --> 02:04:31,340
+Eee, onu ölçebilmek için, eee,
+böyle bir eğitim ve
+
+1859
+02:04:31,480 --> 02:04:34,960
+test kümesinin birbirinden ayrı olması
+gerektiğini
+
+1860
+02:04:35,080 --> 02:04:36,320
+söyleyebiliriz.
+
+1861
+02:04:37,940 --> 02:04:38,600
+Peki.
+
+1862
+02:04:40,580 --> 02:04:43,700
+Şimdi dediğim gibi bugünkü şeyimiz
+bunlardı.
+
+1863
+02:04:43,720 --> 02:04:45,900
+Dersimizin içeriği bu-bunlardı.
+
+1864
+02:04:46,370 --> 02:04:49,860
+Eee,
+şimdi buraya kadarki kısımdan sorusu olan
+
+1865
+02:04:54,240 --> 02:04:57,480
+Yok. Peki,
+o zaman ödev kısmına geçebiliriz.
+
+1866
+02:04:59,420 --> 02:05:02,519
+Ondan sonra da projeden bahsedelim.
+
+1867
+02:05:04,400 --> 02:05:05,280
+Şimdi...
+
+1868
+02:05:10,040 --> 02:05:13,180
+Ödevinizi şu anda online yazılıktaki
+görebiliyorsunuz, değil mi?
+
+1869
+02:05:15,660 --> 02:05:16,840
+Evet hocam.
+
+1870
+02:05:24,360 --> 02:05:27,640
+Tamam. Eee,
+oldukça zevkli bir ödev diye düşünüyorum.
+
+1871
+02:05:27,820 --> 02:05:31,260
+Eee,
+bir tane veri kümesi oluşturmanızı
+
+1872
+02:05:31,320 --> 02:05:35,280
+algoritma çalıştıracaksınız. Eee,
+veri kümesini
+
+1873
+02:05:35,360 --> 02:05:39,280
+sizin oluşturmanızı istiyorum.
+Hazır birilerinin kullanmış olduğu,
+
+1874
+02:05:39,340 --> 02:05:42,160
+yayınlamış olduğu veri kümelerini
+kullanmanızı istemiyorum.
+
+1875
+02:05:42,440 --> 02:05:46,220
+Ama interneti kullanarak veri kümesi
+oluşturabilir misiniz?
+
+1876
+02:05:46,300 --> 02:05:50,260
+Evet.
+Ama bir hazır veri kümesini alıp
+
+1877
+02:05:50,340 --> 02:05:54,199
+Anlatabildim mi? İnternette gezerek, eee,
+internetteki bilgileri kullanarak
+
+1878
+02:05:54,240 --> 02:05:57,180
+bir veri kümesi oluşturabilirsiniz.
+Onda bir sıkıntı yok.
+
+1879
+02:05:57,260 --> 02:06:00,080
+Ama daha güzeli, bence daha, eee, iyisi,
+
+1880
+02:06:00,880 --> 02:06:04,480
+eee,
+etrafınızdaki kişilerden ya da işte
+
+1881
+02:06:04,940 --> 02:06:08,340
+vesairedir gibisinden bir şeyler yaparak,
+eee, bir veri kümesi
+
+1882
+02:06:08,360 --> 02:06:12,120
+oluşturmanızı--
+problemi kendiniz tanımlayacaksınız tabii
+
+1883
+02:06:12,200 --> 02:06:16,000
+İşte örnek sayısı en az iki yüz,
+özellik sayısı en az on olacak bir problem
+
+1884
+02:06:16,060 --> 02:06:19,500
+tanımlayın ve çıkış sınıflandırma
+regresyon olabilir.
+
+1885
+02:06:20,299 --> 02:06:24,020
+Eee, bundan sonraki kısım,
+yani en az beş farklı
+
+1886
+02:06:24,060 --> 02:06:27,560
+tahminleyici falan.
+Burası aslında önümüzdeki haftanın
+
+1887
+02:06:27,640 --> 02:06:31,540
+Önümüzdeki hafta işte bu sınıflandırma
+algoritmalarına falan gireceğiz.
+
+1888
+02:06:31,600 --> 02:06:34,420
+Bu çapraz güncelleme nedir falan onlardan
+bahsedeceğiz.
+
+1889
+02:06:34,520 --> 02:06:37,480
+Ama eee, şimdiden de görüp, eee,
+bakabilirsiniz.
+
+1890
+02:06:38,900 --> 02:06:42,220
+Beş tane sınıflandırıcı kullanarak
+bunların performanslarını
+
+1891
+02:06:42,480 --> 02:06:44,040
+aslında karşılaştırmanızı istiyorum.
+
+1892
+02:06:44,080 --> 02:06:44,660
+Onun haricinde
+
+1893
+02:06:45,520 --> 02:06:49,480
+özellik seçimi, özellik dönüşümü,
+normalizasyon işlemlerinin bu
+
+1894
+02:06:49,520 --> 02:06:51,600
+tahminleyici başarı üzerindeki etkisini
+görmek.
+
+1895
+02:06:52,240 --> 02:06:55,970
+Performansları arasında istatistiksel fark
+var mı yok mu anlamak
+
+1896
+02:06:56,100 --> 02:07:00,000
+için bir t-testing yapılması.
+Burada işte scikit-learn vesaire
+
+1897
+02:07:00,020 --> 02:07:03,880
+aracı, yani bu algoritmaları,
+şu tahminleyici algoritmaları sizin
+
+1898
+02:07:03,940 --> 02:07:06,580
+da t-testi sizin yazmanızı falan
+istemiyorum.
+
+1899
+02:07:06,640 --> 02:07:09,060
+Bunları zaten hazır kütüphaneler var.
+
+1900
+02:07:09,100 --> 02:07:13,040
+Burada, eee, temelde önemli olan nokta
+
+1901
+02:07:13,100 --> 02:07:14,920
+kendinizin bir veri kümesi oluşturmanız.
+
+1902
+02:07:14,930 --> 02:07:17,400
+Daha sonra bu veri kümesini modellemek
+için çeşitli
+
+1903
+02:07:18,400 --> 02:07:22,340
+tahminleyicileri, eee,
+kullanıp bunların üzerinde
+
+1904
+02:07:22,380 --> 02:07:25,980
+işte bu tarz işlemlerin nasıl performans
+etkilerinin olduğunu
+
+1905
+02:07:26,440 --> 02:07:26,960
+görmeniz.
+
+1906
+02:07:27,960 --> 02:07:31,360
+Eee, 25 Mayısa kadar vaktiniz, eee, var.
+
+1907
+02:07:31,560 --> 02:07:31,880
+Eee,
+
+1908
+02:07:33,980 --> 02:07:37,720
+iki kişi yapabilirsiniz. Eee, bu sefer,
+eee, bir
+
+1909
+02:07:38,060 --> 02:07:41,500
+raporunuz olacak. Veri kümesi olacak.
+
+1910
+02:07:41,560 --> 02:07:45,480
+Bir de eee, kodlar olacak.
+Bu sefer bir video falan vesaire
+
+1911
+02:07:45,500 --> 02:07:46,800
+gibisinden kısım yok.
+
+1912
+02:07:47,640 --> 02:07:48,840
+Anlaşıldı mı arkadaşlar ödev?
+
+1913
+02:07:49,840 --> 02:07:50,880
+Hocam ben bir şey sorabilir miyim?
+
+1914
+02:07:51,240 --> 02:07:51,700
+Evet.
+
+1915
+02:07:52,540 --> 02:07:56,000
+Eee,
+hocam şimdi biz veri kümesi oluşturacağız
+
+1916
+02:07:56,060 --> 02:07:57,480
+falan gibisinden diye bulatsam-
+
+1917
+02:07:57,580 --> 02:08:01,040
+Yok, yok, yok, yok.
+Hayır yani görüntü işleme, eee, ile
+
+1918
+02:08:01,140 --> 02:08:04,380
+alakalı bir şey yapmanıza bence gerek yok.
+
+1919
+02:08:05,452 --> 02:08:09,322
+Anladım. Eee,
+hocam bir de ben şeyi soracağım:
+
+1920
+02:08:09,672 --> 02:08:12,912
+işte,
+özellik sayısı en az on derken on tane
+
+1921
+02:08:13,792 --> 02:08:14,592
+On tane ne olacak?
+
+1922
+02:08:15,372 --> 02:08:19,252
+Yani on tane, işte, mesela diyelim bu,
+işte, olumlu cümle, olumsuz cümle
+
+1923
+02:08:19,312 --> 02:08:21,972
+iki taneydi ya mesela.
+İşte buradaki sayıyı ona çıkaracağız,
+
+1924
+02:08:22,012 --> 02:08:25,752
+Hayır, ha-hayır, hayır, hayır. Bak şimdi,
+o
+
+1925
+02:08:25,812 --> 02:08:26,912
+dediğin sınıf sayısı.
+
+1926
+02:08:28,252 --> 02:08:30,292
+Sınıf sayısına dair bir şey söylemiyorum
+burada.
+
+1927
+02:08:30,732 --> 02:08:33,682
+Sınıf sayısı,
+iki sınıflı da yapabilirsiniz,
+
+1928
+02:08:33,712 --> 02:08:35,352
+yapabilirsiniz. Orası size kalmış.
+
+1929
+02:08:35,372 --> 02:08:37,832
+Ya da regresyon yapabilirsiniz,
+orası da size kalmış.
+
+1930
+02:08:37,952 --> 02:08:40,932
+Buradaki özellik sayısı,
+hani iki tane matrisimiz var ya bizim.
+
+1931
+02:08:41,012 --> 02:08:43,612
+O matrisimizin satır sayısı en az iki yüz
+olacak.
+
+1932
+02:08:43,712 --> 02:08:46,772
+Sütun sayısı en az on olacak.
+Anlatabildim mi?
+
+1933
+02:08:48,552 --> 02:08:50,692
+Anladım hocam. Peki ben şeyi soracağım.
+
+1934
+02:08:50,812 --> 02:08:53,052
+Eee,
+bir cümle diyelim yirmi kelimeden
+
+1935
+02:08:53,592 --> 02:08:53,871
+Evet.
+
+1936
+02:08:54,352 --> 02:08:57,992
+Bir cümle on kelimeden oluşuyor vesaire.
+Hani burada şeyi belirlemiyor.
+
+1937
+02:08:58,032 --> 02:09:00,712
+Bu özellik sayısını kelime sayısı
+belirliyor mu yoksa belirlemiyor mu?
+
+1938
+02:09:01,012 --> 02:09:01,592
+Onu sorayım da.
+
+1939
+02:09:03,072 --> 02:09:06,692
+Eee, şimdi orada özellik sayısı,
+yani metinleri
+
+1940
+02:09:06,752 --> 02:09:10,192
+sınıflandırmak için bir şey yapmaya
+kalktığında, eee,
+
+1941
+02:09:11,032 --> 02:09:13,552
+en temel yaklaşım, veri
+
+1942
+02:09:13,632 --> 02:09:15,852
+kümesindeki bütün
+
+1943
+02:09:16,832 --> 02:09:20,512
+tekil kelimelerin sayısı genelde özellik
+sayısı olarak kabul
+
+1944
+02:09:20,552 --> 02:09:21,732
+edilir. Tamam?
+
+1945
+02:09:23,592 --> 02:09:24,542
+Ve bir metin,
+
+1946
+02:09:25,532 --> 02:09:29,412
+işte,
+TF ya da TFIDF gibisinden şeyler var,
+
+1947
+02:09:29,452 --> 02:09:32,892
+var. Eee, onlarla kodlanır şeye, matrisin
+
+1948
+02:09:32,912 --> 02:09:36,692
+içerisine. Yani, eee, tabii bu
+
+1949
+02:09:36,892 --> 02:09:40,612
+en primitif halde olan yaklaşım. Yoksa
+
+1950
+02:09:41,172 --> 02:09:43,732
+kelime sayısı özellik sayısı demek
+değildir.
+
+1951
+02:09:45,872 --> 02:09:49,542
+Anladım.
+Yani muhtemelen biz o söylediğiniz
+
+1952
+02:09:49,552 --> 02:09:53,412
+kullandığımızda zaten, eee,
+onu geçecektir diye düşünüyorum,
+
+1953
+02:09:53,632 --> 02:09:56,182
+Kesinlikle canım.
+Yani orada binleri geçecektir.
+
+1954
+02:09:59,252 --> 02:10:01,092
+Anladım hocam, sağ olun.
+
+1955
+02:10:01,772 --> 02:10:03,092
+Evet. Başka sorusu olan?
+
+1956
+02:10:04,152 --> 02:10:09,972
+Yok.
+
+1957
+02:10:10,092 --> 02:10:10,512
+Peki.
+
+1958
+02:10:11,532 --> 02:10:12,532
+O zaman şimdi de
+
+1959
+02:10:16,392 --> 02:10:19,522
+projeden bahsedelim. Projede gözüküyor,
+değil mi
+
+1960
+02:10:19,572 --> 02:10:20,512
+arkadaşlar?
+
+1961
+02:10:26,812 --> 02:10:29,132
+Evet evet, projede gözüküyor.
+
+1962
+02:10:29,652 --> 02:10:34,052
+Süper.
+
+1963
+02:10:42,172 --> 02:10:46,092
+Tamam. Eee, şimdi proje konusunu, eee,
+
+1964
+02:10:46,192 --> 02:10:48,492
+direkt ben vermiyorum. Eee,
+
+1965
+02:10:49,612 --> 02:10:51,712
+sizin seçmenizi, belirlemenizi istiyorum.
+
+1966
+02:10:52,412 --> 02:10:55,912
+Eee,
+projelerinizi ne zaman teslim edeceğiniz
+
+1967
+02:10:56,132 --> 02:10:59,732
+Burada önemli olan nokta,
+şu 11 Mayıs'a kadar yapmanız gereken.
+
+1968
+02:10:59,812 --> 02:11:02,672
+11 Mayıs'a kadar bana projenizi
+onaylatmanız
+
+1969
+02:11:02,712 --> 02:11:06,372
+gerekiyor.
+Onaylatmanız için de bana mail atmanız
+
+1970
+02:11:06,392 --> 02:11:06,892
+gerekiyor.
+
+1971
+02:11:07,772 --> 02:11:10,312
+Projede ne yapmak istediğinizi ve
+
+1972
+02:11:11,112 --> 02:11:12,112
+onun haricinde
+
+1973
+02:11:13,132 --> 02:11:16,052
+sayısal başarıyı nasıl ölçeceğinizi
+anlatmalısınız.
+
+1974
+02:11:17,052 --> 02:11:17,392
+Eee,
+
+1975
+02:11:18,752 --> 02:11:19,472
+dolayısıyla,
+
+1976
+02:11:20,772 --> 02:11:21,032
+eee,
+
+1977
+02:11:22,292 --> 02:11:25,372
+kabul edilmeyecek olan şeyler burada
+yazıyorlar.
+
+1978
+02:11:25,952 --> 02:11:29,432
+Tamam? Eee,
+bunları da göz önünde bulunarak, eee,
+
+1979
+02:11:29,852 --> 02:11:30,872
+edin lütfen.
+
+1980
+02:11:32,152 --> 02:11:35,932
+Eğer ki benden onay almazsanız, eee,
+projenizi
+
+1981
+02:11:36,692 --> 02:11:40,482
+teslim etmeye kalkarsanız onay almadan,
+projenizin
+
+1982
+02:11:40,512 --> 02:11:42,712
+üzerine bir %30'luk bir kesinti olacak.
+
+1983
+02:11:42,752 --> 02:11:46,482
+Tabii ki, eee, burada benim, eee, temel
+
+1984
+02:11:46,852 --> 02:11:49,612
+kriterlerimden bir tanesi projeye
+harcadığınız emek.
+
+1985
+02:11:50,512 --> 02:11:52,792
+Bu emeğe bağlı olarak, eee,
+
+1986
+02:11:53,952 --> 02:11:54,492
+temelde,
+
+1987
+02:11:55,292 --> 02:11:58,572
+eee, notlarınızı vermeye çalışıyorum.
+
+1988
+02:11:59,152 --> 02:12:03,132
+Eee, dolayısıyla, eee,
+projeleriniz ne sizin için çok
+
+1989
+02:12:03,172 --> 02:12:05,712
+çok kolay ne de sizin için çok çok zor
+olmalı.
+
+1990
+02:12:06,072 --> 02:12:08,652
+Yani bazen siz bana öneride
+bulunacaksınız.
+
+1991
+02:12:08,772 --> 02:12:12,532
+Ben diyeceğim ki, "Bu çok zor olur,
+bunu yapma." Çünkü
+
+1992
+02:12:12,692 --> 02:12:16,412
+bazen diyeceğim, "Bu çok kolay olur,
+bunu yapma." O yüzden hani,
+
+1993
+02:12:16,632 --> 02:12:20,112
+ya, bu niye kabul edildi,
+bu niye reddedildi falan gibisinden
+
+1994
+02:12:21,072 --> 02:12:24,351
+serzenişlerden önce bunu düşünün,
+
+1995
+02:12:24,432 --> 02:12:28,392
+tamam? Yani, eee,
+bu zaman içerisinde yetiştirilebilecek
+
+1996
+02:12:28,432 --> 02:12:31,872
+bir şeyin olması ve size katkı sağlayacak
+bir şeyin olması,
+
+1997
+02:12:32,452 --> 02:12:35,612
+ikisi birden, eee, kriteriniz olmalı.
+
+1998
+02:12:36,392 --> 02:12:36,632
+Eee,
+
+1999
+02:12:37,432 --> 02:12:41,312
+onun haricinde, eee,
+özel olarak söyleyebileceğim bir şey var
+
+2000
+02:12:41,392 --> 02:12:45,132
+mı? Ha şu var. Eee,
+bir an önce proje önerilerinizi
+
+2001
+02:12:45,192 --> 02:12:48,332
+bana göndermeye başlayın,
+ki buna uymuş olanlar var.
+
+2002
+02:12:48,652 --> 02:12:50,872
+Şu anda göndermiş olanlar var. Gördüm.
+
+2003
+02:12:51,692 --> 02:12:55,252
+Güzel. Çünkü şey olabiliyor,
+yani böyle birkaç kez
+
+2004
+02:12:55,272 --> 02:12:58,272
+aramızda git gel olabiliyor e-posta
+anlamında.
+
+2005
+02:12:58,812 --> 02:13:02,472
+Eee, o yüzden, eee, son güne,
+yani hani 11 Mayıs
+
+2006
+02:13:02,512 --> 02:13:04,092
+tarihine kadar değil de 11 Mayıs
+
+2007
+02:13:04,972 --> 02:13:08,812
+günü, eee, bana, eee,
+ilk defa proje önerisi
+
+2008
+02:13:08,932 --> 02:13:12,672
+gönderirseniz, eee,
+onun kabul edilmesi birazcık
+
+2009
+02:13:12,812 --> 02:13:15,112
+zor olur. Onu demeye çalışıyorum. Tamam?
+
+2010
+02:13:16,212 --> 02:13:19,922
+Zaten 12 Mayıs olduysa zaten göndermeyin
+artık.
+
+2011
+02:13:20,792 --> 02:13:24,252
+Zaten geç kalmışsınız demektir.
+Ama zaten burada
+
+2012
+02:13:24,292 --> 02:13:27,872
+olanların öyle bir sorun yaşayacağını pek
+fazla zannetmiyorum.
+
+2013
+02:13:27,952 --> 02:13:31,492
+O yüzden bir an önce, eee, bana proje
+
+2014
+02:13:31,592 --> 02:13:34,692
+önerilerinizi gönderin,
+ben de onay vereyim.
+
+2015
+02:13:35,152 --> 02:13:38,332
+Uygunsa bir an önce de başlayabilirsiniz
+buna. Tamam?
+
+2016
+02:13:40,592 --> 02:13:40,892
+Eee,
+
+2017
+02:13:41,932 --> 02:13:45,772
+oyunlar olabilir ama burada yürürken çok
+beyner minör, öyle söyleyelim,
+
+2018
+02:13:45,932 --> 02:13:49,512
+eee,
+oyunların olması ya da işte projelerinizde
+
+2019
+02:13:49,532 --> 02:13:53,252
+yaptığınız şeyleri burada proje olarak,
+eee, kendi bitirme var,
+
+2020
+02:13:53,372 --> 02:13:56,912
+projeler yaptığınız şeyleri burada proje
+olarak vermeniz uygun değil.
+
+2021
+02:13:56,952 --> 02:14:00,312
+Hazır bir veri kümesi üzerine hazır
+algoritmaları çalıştırmak zaten, eee,
+
+2022
+02:14:00,412 --> 02:14:03,132
+uygun değil. Eee,
+
+2023
+02:14:04,092 --> 02:14:07,592
+bunları söyleyebilirim.
+Onun haricinde epey bir şey size kalıyor
+
+2024
+02:14:08,872 --> 02:14:11,352
+Burada video çekeceksiniz,
+rapor ve kodlarınız olacak.
+
+2025
+02:14:12,892 --> 02:14:14,492
+Peki, var mı sorunuz arkadaşlar?
+
+2026
+02:14:15,622 --> 02:14:19,512
+Hocam burada da sadece,
+yani herhangi bir yapay zeka içeren,
+
+2027
+02:14:19,552 --> 02:14:21,732
+öğrenmesi vesaire içeren bir proje
+olabilir, değil mi?
+
+2028
+02:14:23,572 --> 02:14:24,512
+Olabilir. Evet.
+
+2029
+02:14:25,352 --> 02:14:25,852
+Tamam hocam.
+
+2030
+02:14:28,592 --> 02:14:30,172
+Ama benden onay almanız lazım.
+
+2031
+02:14:31,272 --> 02:14:31,282
+Tamam?
+
+2032
+02:14:31,292 --> 02:14:32,352
+Tamam.
+
+2033
+02:14:32,412 --> 02:14:34,152
+Peki.
+
+2034
+02:14:39,892 --> 02:14:43,432
+Ödevde arayüz var mıydı? Ödevde arayüz.
+
+2035
+02:14:45,772 --> 02:14:49,652
+Zaten videonuz olacak.
+Videonuzda ödevinizin, eee, çok
+
+2036
+02:14:49,832 --> 02:14:52,452
+mükemmel bir arayüzün falan olması şartı
+değil.
+
+2037
+02:14:52,512 --> 02:14:56,172
+Ama bir çıktı falan-- Ha, yani, eee, komut
+
+2038
+02:14:56,232 --> 02:14:59,512
+satırından çalışan bir projeniz olabilir
+mi? Olabilir, o da olabilir.
+
+2039
+02:15:01,112 --> 02:15:04,612
+Yani illa böyle bir grafiksel arayüz
+olması şart mı? Hayır, değil.
+
+2040
+02:15:06,152 --> 02:15:09,912
+Yapacağınız projenin konusuna göre öyle
+bir, eee,
+
+2041
+02:15:11,572 --> 02:15:13,032
+şart yok. Tamam.
+
+2042
+02:15:14,912 --> 02:15:15,972
+Peki başka soru?
+
+2043
+02:15:27,012 --> 02:15:30,592
+Yok.
+Peki o zaman arkadaşlar hepinize
+
+2044
+02:15:30,972 --> 02:15:34,292
+Önümüzdeki hafta kısmetse görüşmek üzere
+diyorum. Herkese iyi günler.
+
+2045
+02:15:35,932 --> 02:15:36,692
+İyi günler hocam.
+
+2046
+02:15:37,632 --> 02:15:37,772
+Güzel.

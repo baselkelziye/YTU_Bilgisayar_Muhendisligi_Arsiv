@@ -1,0 +1,7188 @@
+1
+00:00:00,000 --> 00:00:29,980
+Altyazı M.K.
+
+2
+00:00:30,000 --> 00:00:59,980
+Altyazı M.K.
+
+3
+00:01:00,000 --> 00:01:29,980
+Altyazı M.K.
+
+4
+00:01:30,000 --> 00:01:59,980
+Altyazı M.K.
+
+5
+00:02:00,000 --> 00:02:29,979
+Günaydın hocam.
+
+6
+00:02:30,000 --> 00:02:59,979
+Altyazı M.K.
+
+7
+00:03:00,000 --> 00:03:29,979
+Altyazı M.K.
+
+8
+00:03:30,000 --> 00:03:59,979
+Altyazı M.K.
+
+9
+00:04:00,000 --> 00:04:29,980
+Altyazı M.K.
+
+10
+00:04:30,000 --> 00:04:59,980
+Altyazı M.K.
+
+11
+00:05:00,000 --> 00:05:29,980
+Altyazı M.K.
+
+12
+00:05:30,000 --> 00:05:59,980
+Altyazı M.K.
+
+13
+00:06:00,000 --> 00:06:29,980
+Altyazı M.K.
+
+14
+00:06:30,000 --> 00:06:59,980
+Altyazı M.K.
+
+15
+00:07:00,000 --> 00:07:29,980
+Altyazı M.K.
+
+16
+00:07:30,000 --> 00:07:59,980
+Altyazı M.K.
+
+17
+00:08:00,000 --> 00:08:29,980
+Altyazı M.K.
+
+18
+00:08:30,000 --> 00:08:59,980
+Altyazı M.K.
+
+19
+00:09:00,000 --> 00:09:29,980
+Altyazı M.K.
+
+20
+00:09:30,000 --> 00:09:59,980
+Altyazı M.K.
+
+21
+00:10:00,000 --> 00:10:17,440
+because it is used extensively in optimization as i said
+
+22
+00:10:17,440 --> 00:10:31,680
+because i have not proceeded yet i am just introducing the concept you see the empty screen
+
+23
+00:10:32,240 --> 00:10:35,520
+because i haven't progressed
+
+24
+00:10:38,080 --> 00:10:39,920
+through the slides okay
+
+25
+00:10:46,320 --> 00:10:47,360
+now do you see this
+
+26
+00:10:47,440 --> 00:11:04,240
+okay because i was not just progressing that's why
+
+27
+00:11:09,920 --> 00:11:15,200
+okay now the the first step is initialization
+
+28
+00:11:17,440 --> 00:11:20,480
+of the dynamic programming and then you have to do the next step
+
+29
+00:11:20,480 --> 00:11:26,000
+and so the dynamic programming is basically in this dynamic programming
+
+30
+00:11:27,520 --> 00:11:31,040
+it's a problem of filling in a matrix basically
+
+31
+00:11:33,040 --> 00:11:38,720
+the approach is similar to dot plot we will have a matrix
+
+32
+00:11:40,000 --> 00:11:46,560
+this matrix will have one second set row and one second other seconds at the column
+
+33
+00:11:47,920 --> 00:11:50,800
+in the intersection of the letters.
+
+34
+00:11:53,520 --> 00:12:01,200
+The first step is initialization of this matrix. The second step is
+
+35
+00:12:05,840 --> 00:12:12,160
+matrix fill using a scoring scheme we already determined.
+
+36
+00:12:12,159 --> 00:12:24,959
+Then, after filling in this matrix, we have to trace back to form an alignment.
+
+37
+00:12:26,240 --> 00:12:34,079
+So in this respect, in terms of the computational cost, it involves two for loops.
+
+38
+00:12:38,959 --> 00:12:42,079
+One will go through the rows, the other
+
+39
+00:12:42,159 --> 00:12:50,319
+one will go through the columns. Whether you first go to row-wise or column-wise, it's up to you.
+
+40
+00:12:51,600 --> 00:12:53,279
+But it is for loop,
+
+41
+00:12:55,919 --> 00:13:03,279
+two for loops, one within other loop. Then we have the matrix fields.
+
+42
+00:13:04,799 --> 00:13:11,360
+Because we have to trace back, we need some memory space to store the
+
+43
+00:13:12,959 --> 00:13:14,000
+matrix values.
+
+44
+00:13:19,039 --> 00:13:20,159
+One more thing too.
+
+45
+00:13:28,159 --> 00:13:32,159
+Hocam, mikrofonunuzu susturdunuz galiba.
+
+46
+00:13:32,159 --> 00:13:34,159
+Biliyorum.
+
+47
+00:13:34,159 --> 00:13:38,159
+Tamam hocam, tam bir şey anlatırken yerde kalmış gibi oldu da uyarın.
+
+48
+00:13:38,159 --> 00:13:40,159
+Yo, bazen hani kapatıp...
+
+49
+00:13:40,159 --> 00:13:42,159
+Hocam, mikrofonunuzu susturdunuz galiba. Biliyorum.
+
+50
+00:13:42,159 --> 00:13:44,159
+Ne bileyim, boğazımızı temizlemek zorunda kalıyoruz, o yüzden.
+
+51
+00:13:44,159 --> 00:13:46,159
+Tamamdır hocam.
+
+52
+00:13:46,159 --> 00:13:48,159
+Okay.
+
+53
+00:13:48,159 --> 00:13:58,159
+Okay, because we have to trace back, we have to remember some values.
+
+54
+00:13:58,159 --> 00:14:02,159
+We will see what we should remember.
+
+55
+00:14:08,159 --> 00:14:10,159
+Okay.
+
+56
+00:14:10,159 --> 00:14:14,159
+Okay.
+
+57
+00:14:14,159 --> 00:14:18,159
+For example, let's assume that we have two sequences given as this one and this one.
+
+58
+00:14:18,159 --> 00:14:23,199
+For example, let's assume that we have two sequences given as this one and this one.
+
+59
+00:14:23,199 --> 00:14:30,159
+The length doesn't have to be the same.
+
+60
+00:14:30,159 --> 00:14:34,159
+Because there might be some mutation or whatever.
+
+61
+00:14:34,159 --> 00:14:36,159
+Because there might be some mutation or whatever.
+
+62
+00:14:36,159 --> 00:14:43,679
+These two sequences, let's assume that these two sequences originated from a common ancestor
+
+63
+00:14:43,679 --> 00:14:47,199
+and somehow they changed.
+
+64
+00:14:47,199 --> 00:14:54,839
+And we will see how this dynamic programming is employed using these two example sequences.
+
+65
+00:14:54,840 --> 00:14:59,840
+The effect of the first one is 11, the second one is 7.
+
+66
+00:15:00,000 --> 00:15:09,980
+if there is a match say if g and g matches then a plus five score will be given
+
+67
+00:15:09,980 --> 00:15:18,559
+by the way this is arbitrary scoring is arbitrary we are just choosing arbitrarily
+
+68
+00:15:18,559 --> 00:15:23,940
+there is no reason why we have chosen five just for this is for example
+
+69
+00:15:23,940 --> 00:15:34,340
+the mismatch score is minus three and gap which is indicated by w is minus four
+
+70
+00:15:34,340 --> 00:15:38,320
+the penalty once we have this
+
+71
+00:15:38,320 --> 00:15:46,220
+these values now the rest is easy
+
+72
+00:15:53,940 --> 00:15:56,320
+okay the first step was
+
+73
+00:15:56,320 --> 00:16:01,540
+i need to delete this annotation
+
+74
+00:16:01,540 --> 00:16:21,320
+first step was to form a matrix because our sequence lengths are 11 and
+
+75
+00:16:21,320 --> 00:16:22,720
+seven
+
+76
+00:16:22,720 --> 00:16:23,920
+and
+
+77
+00:16:23,940 --> 00:16:27,740
+we need a matrix with
+
+78
+00:16:27,740 --> 00:16:36,160
+a pro with 12 and 12
+
+79
+00:16:36,160 --> 00:16:40,140
+12 times eight
+
+80
+00:16:40,140 --> 00:16:48,720
+such as this one
+
+81
+00:16:48,720 --> 00:16:53,920
+a trove we have the first one
+
+82
+00:16:53,940 --> 00:16:59,860
+column we have the second one
+
+83
+00:16:59,860 --> 00:17:00,920
+this is the first step
+
+84
+00:17:01,020 --> 00:17:10,080
+n plus one rows n plus one columns
+
+85
+00:17:10,080 --> 00:17:16,180
+the second step is initialization we need to initialize
+
+86
+00:17:16,180 --> 00:17:19,740
+this matrix
+
+87
+00:17:19,740 --> 00:17:22,340
+so there are
+
+88
+00:17:22,340 --> 00:17:22,700
+several
+
+89
+00:17:22,700 --> 00:17:23,740
+also i stop here just
+
+90
+00:17:23,740 --> 00:17:27,000
+options for the initialization.
+
+91
+00:17:27,940 --> 00:17:31,880
+Now, with this dynamic programming approach,
+
+92
+00:17:32,720 --> 00:17:36,519
+we can have a global alignment,
+
+93
+00:17:37,519 --> 00:17:41,299
+or we can have a local alignment,
+
+94
+00:17:41,299 --> 00:17:46,259
+or we can have an overlap alignment.
+
+95
+00:17:47,200 --> 00:17:52,519
+In this course, we'll be discussing three variations of global,
+
+96
+00:17:52,519 --> 00:17:55,539
+sorry, dynamic programming algorithm.
+
+97
+00:17:57,099 --> 00:18:01,720
+There are some more, but we will restrict ourselves
+
+98
+00:18:01,720 --> 00:18:04,539
+to these three alignment methods.
+
+99
+00:18:04,900 --> 00:18:06,660
+First one is global alignment.
+
+100
+00:18:06,879 --> 00:18:08,700
+What we mean by global alignment?
+
+101
+00:18:09,519 --> 00:18:13,420
+These two sequences will be tried.
+
+102
+00:18:15,839 --> 00:18:20,119
+We will try to align them completely.
+
+103
+00:18:21,220 --> 00:18:22,500
+In local alignment,
+
+104
+00:18:22,519 --> 00:18:29,680
+we will try to identify the similar patterns within the sequences.
+
+105
+00:18:30,420 --> 00:18:34,019
+We will not be concerned with complete alignment,
+
+106
+00:18:34,359 --> 00:18:35,920
+but local alignments.
+
+107
+00:18:36,200 --> 00:18:36,639
+We will see.
+
+108
+00:18:37,019 --> 00:18:38,839
+The first one, global alignment,
+
+109
+00:18:39,059 --> 00:18:42,900
+is known as Niedermann-Wunsch algorithm as well.
+
+110
+00:18:44,099 --> 00:18:48,379
+It attempts to align all residues of two sequences.
+
+111
+00:18:48,379 --> 00:18:52,500
+The first one, it was introduced by Niedermann,
+
+112
+00:18:52,720 --> 00:18:57,200
+and Wunsch in 1970.
+
+113
+00:18:59,279 --> 00:19:02,559
+And you can see the reference for this.
+
+114
+00:19:02,680 --> 00:19:05,539
+I suggest you to read this reference,
+
+115
+00:19:05,759 --> 00:19:09,420
+which I already included link to this reference.
+
+116
+00:19:09,420 --> 00:19:11,859
+If I just click on this,
+
+117
+00:19:12,900 --> 00:19:19,579
+I'm hoping to access to this.
+
+118
+00:19:21,960 --> 00:19:22,279
+Yeah.
+
+119
+00:19:22,279 --> 00:19:22,500
+Okay.
+
+120
+00:19:22,500 --> 00:19:32,099
+article here you are it's uh you can i don't know it is uh available or not
+
+121
+00:19:34,579 --> 00:19:42,980
+it asked me to pay something anyway but you can find it no problem if you like i can also send you
+
+122
+00:19:48,259 --> 00:19:51,059
+anyway i suggest you to read this
+
+123
+00:19:52,500 --> 00:19:56,980
+it's a reading homework
+
+124
+00:20:00,000 --> 00:20:10,000
+Şimdi matriksini oluşturduk, şimdi onu başlatmamız gerekiyor.
+
+125
+00:20:13,000 --> 00:20:21,000
+Başlatılış bu yöntemle yapılıyor.
+
+126
+00:20:21,000 --> 00:20:33,000
+İlk yöntem ve ilk bölüm W x ii ve jr2 indeklerine ayarlanmıştır.
+
+127
+00:20:33,000 --> 00:20:36,000
+Yöntem ve bölüm indekleri.
+
+128
+00:20:36,000 --> 00:20:40,000
+W'nin penaltısı Gap.
+
+129
+00:20:42,000 --> 00:20:49,000
+Aslında matriksle baktığınızda,
+
+130
+00:20:50,000 --> 00:20:51,000
+...
+
+131
+00:20:51,000 --> 00:20:52,000
+...
+
+132
+00:20:52,000 --> 00:20:53,000
+...
+
+133
+00:20:53,000 --> 00:20:54,000
+...
+
+134
+00:20:54,000 --> 00:20:55,000
+...
+
+135
+00:20:55,000 --> 00:20:56,000
+...
+
+136
+00:20:56,000 --> 00:20:57,000
+...
+
+137
+00:20:57,000 --> 00:20:58,000
+...
+
+138
+00:20:58,000 --> 00:20:59,000
+...
+
+139
+00:20:59,000 --> 00:21:00,000
+...
+
+140
+00:21:00,000 --> 00:21:01,000
+...
+
+141
+00:21:01,000 --> 00:21:02,000
+...
+
+142
+00:21:02,000 --> 00:21:03,000
+...
+
+143
+00:21:03,000 --> 00:21:04,000
+...
+
+144
+00:21:04,000 --> 00:21:05,000
+...
+
+145
+00:21:05,000 --> 00:21:06,000
+...
+
+146
+00:21:06,000 --> 00:21:07,000
+...
+
+147
+00:21:07,000 --> 00:21:08,000
+...
+
+148
+00:21:08,000 --> 00:21:09,000
+...
+
+149
+00:21:09,000 --> 00:21:10,000
+...
+
+150
+00:21:10,000 --> 00:21:11,000
+...
+
+151
+00:21:11,000 --> 00:21:12,000
+...
+
+152
+00:21:12,000 --> 00:21:13,000
+...
+
+153
+00:21:13,000 --> 00:21:14,000
+...
+
+154
+00:21:14,000 --> 00:21:15,000
+...
+
+155
+00:21:15,000 --> 00:21:16,000
+...
+
+156
+00:21:16,000 --> 00:21:17,000
+...
+
+157
+00:21:17,000 --> 00:21:18,000
+...
+
+158
+00:21:18,000 --> 00:21:19,000
+...
+
+159
+00:21:19,000 --> 00:21:20,000
+...
+
+160
+00:21:20,000 --> 00:21:21,000
+...
+
+161
+00:21:21,000 --> 00:21:23,000
+8 neyse.
+
+162
+00:21:23,000 --> 00:21:25,000
+4-8
+
+163
+00:21:25,000 --> 00:21:27,000
+tamam.
+
+164
+00:21:29,000 --> 00:21:31,000
+Sonra
+
+165
+00:21:31,000 --> 00:21:33,000
+rekurans algoritma
+
+166
+00:21:33,000 --> 00:21:35,000
+bu.
+
+167
+00:21:35,000 --> 00:21:37,000
+Bu
+
+168
+00:21:37,000 --> 00:21:39,000
+tüm
+
+169
+00:21:39,000 --> 00:21:41,000
+cilin
+
+170
+00:21:41,000 --> 00:21:43,000
+sayıları
+
+171
+00:21:43,000 --> 00:21:45,000
+değerlendirmek için
+
+172
+00:21:45,000 --> 00:21:47,000
+bu
+
+173
+00:21:47,000 --> 00:21:49,000
+cilt
+
+174
+00:21:49,000 --> 00:21:51,000
+3 değerini seçiyoruz.
+
+175
+00:21:51,000 --> 00:21:53,000
+Birincisi
+
+176
+00:21:53,000 --> 00:21:55,000
+değerlendirme
+
+177
+00:21:55,000 --> 00:21:57,000
+sayısı
+
+178
+00:21:57,000 --> 00:21:59,000
+bu.
+
+179
+00:21:59,000 --> 00:22:01,000
+Diagonalde
+
+180
+00:22:01,000 --> 00:22:03,000
+bu
+
+181
+00:22:03,000 --> 00:22:05,000
+bu
+
+182
+00:22:05,000 --> 00:22:07,000
+bu
+
+183
+00:22:07,000 --> 00:22:09,000
+bu
+
+184
+00:22:09,000 --> 00:22:11,000
+eğer
+
+185
+00:22:11,000 --> 00:22:13,000
+geri dönürse
+
+186
+00:22:13,000 --> 00:22:15,000
+örneğin
+
+187
+00:22:15,000 --> 00:22:17,000
+biz
+
+188
+00:22:17,000 --> 00:22:19,000
+bu değerini bulmak istiyoruz.
+
+189
+00:22:19,000 --> 00:22:21,000
+Diagonalde
+
+190
+00:22:21,000 --> 00:22:23,000
+bu
+
+191
+00:22:23,000 --> 00:22:25,000
+bu
+
+192
+00:22:25,000 --> 00:22:27,000
+bu
+
+193
+00:22:27,000 --> 00:22:29,000
+bu
+
+194
+00:22:29,000 --> 00:22:31,000
+bu
+
+195
+00:22:31,000 --> 00:22:33,000
+bu
+
+196
+00:22:33,000 --> 00:22:35,000
+bu
+
+197
+00:22:35,000 --> 00:22:37,000
+bu
+
+198
+00:22:37,000 --> 00:22:39,000
+bu
+
+199
+00:22:39,000 --> 00:22:41,000
+bu
+
+200
+00:22:41,000 --> 00:22:43,000
+bu
+
+201
+00:22:43,000 --> 00:22:45,000
+bu
+
+202
+00:22:45,000 --> 00:22:47,000
+bu
+
+203
+00:22:47,000 --> 00:22:49,000
+bu
+
+204
+00:22:49,000 --> 00:22:51,000
+bu
+
+205
+00:22:51,000 --> 00:22:53,000
+Bu
+
+206
+00:22:53,000 --> 00:22:55,000
+bu
+
+207
+00:22:55,000 --> 00:22:57,000
+bu
+
+208
+00:22:57,000 --> 00:22:59,000
+bu
+
+209
+00:22:59,000 --> 00:23:01,000
+bu
+
+210
+00:23:01,000 --> 00:23:03,000
+bu
+
+211
+00:23:03,000 --> 00:23:05,000
+bu
+
+212
+00:23:05,000 --> 00:23:07,000
+bu
+
+213
+00:23:07,000 --> 00:23:09,000
+bu
+
+214
+00:23:09,000 --> 00:23:09,799
+2
+
+215
+00:23:09,799 --> 00:23:11,000
+bu
+
+216
+00:23:11,000 --> 00:23:13,000
+2
+
+217
+00:23:13,000 --> 00:23:15,000
+bu
+
+218
+00:23:15,000 --> 00:23:17,000
+bu
+
+219
+00:23:17,000 --> 00:23:28,299
+I'll show you here, this one or this one, the other one, this one, plus gap, this one plus gap penalty.
+
+220
+00:23:29,440 --> 00:23:43,440
+Now we look at these three values, we have some numerical values basically and take the maximum of these three values as the value of this current cell.
+
+221
+00:23:47,000 --> 00:24:09,160
+So when we fill in this matrix, the maximum value of the matrix is supposed to be here at bottom right corner, right bottom corner.
+
+222
+00:24:09,619 --> 00:24:16,380
+Alignment will start from this cell and or trace back.
+
+223
+00:24:16,599 --> 00:24:16,980
+We'll start.
+
+224
+00:24:17,000 --> 00:24:19,359
+We'll start from this cell and we'll go back.
+
+225
+00:24:20,000 --> 00:24:20,980
+We'll see in a minute.
+
+226
+00:24:21,420 --> 00:24:21,539
+Okay.
+
+227
+00:24:25,519 --> 00:24:30,720
+So initialization will be this one.
+
+228
+00:24:31,460 --> 00:24:35,039
+That one is 0, the minus 4, minus 8, minus 12.
+
+229
+00:24:36,119 --> 00:24:40,440
+We initialized the matrix.
+
+230
+00:24:43,079 --> 00:24:46,440
+Since we have the initial values, we can determine.
+
+231
+00:24:46,440 --> 00:24:51,140
+We can determine the remaining values of the remaining cells.
+
+232
+00:24:51,400 --> 00:24:54,920
+This is basically a divide and conquer approach.
+
+233
+00:24:55,160 --> 00:24:59,880
+Dynamic programming, it divides a global problem.
+
+234
+00:25:00,000 --> 00:25:09,000
+local ones and generates a solution first locally then we can arrive at a global solution.
+
+235
+00:25:11,000 --> 00:25:18,000
+We have already shown you the recurrence algorithm to determine value of this.
+
+236
+00:25:18,000 --> 00:25:24,000
+Now you can tell me how to determine value of this.
+
+237
+00:25:26,000 --> 00:25:28,000
+The first one.
+
+238
+00:25:30,000 --> 00:25:35,000
+The tweet will be max.
+
+239
+00:25:40,000 --> 00:25:43,000
+The first one.
+
+240
+00:25:46,000 --> 00:25:50,000
+Match or mismatch score.
+
+241
+00:25:50,000 --> 00:25:53,000
+In this case, is it a match or mismatch?
+
+242
+00:26:00,000 --> 00:26:08,000
+This is a match.
+
+243
+00:26:08,000 --> 00:26:10,000
+Match score was five.
+
+244
+00:26:10,000 --> 00:26:23,000
+Five plus diagonal value of the diagonal cell, which is this one zero.
+
+245
+00:26:23,000 --> 00:26:26,000
+This is the first value.
+
+246
+00:26:26,000 --> 00:26:28,000
+The second.
+
+247
+00:26:28,000 --> 00:26:32,000
+The left one is minus four times.
+
+248
+00:26:33,000 --> 00:26:35,000
+Minus four plus.
+
+249
+00:26:38,000 --> 00:26:39,000
+Minus four.
+
+250
+00:26:39,000 --> 00:26:41,000
+It is minus eight.
+
+251
+00:26:44,000 --> 00:26:47,000
+Then minus eight again.
+
+252
+00:26:48,000 --> 00:26:54,000
+Now max value of this is obviously five.
+
+253
+00:26:54,000 --> 00:26:58,000
+So the value of the first cell is five.
+
+254
+00:26:58,000 --> 00:27:04,000
+Now we found the value of the first cell.
+
+255
+00:27:04,000 --> 00:27:06,000
+The next.
+
+256
+00:27:06,000 --> 00:27:08,000
+We have this value.
+
+257
+00:27:08,000 --> 00:27:09,000
+This value.
+
+258
+00:27:09,000 --> 00:27:10,000
+This value.
+
+259
+00:27:10,000 --> 00:27:12,000
+It is a mismatch.
+
+260
+00:27:12,000 --> 00:27:15,000
+Mismatch was minus three.
+
+261
+00:27:15,000 --> 00:27:18,000
+Minus three.
+
+262
+00:27:18,000 --> 00:27:20,000
+Plus.
+
+263
+00:27:20,000 --> 00:27:23,000
+Diagonal value is minus four.
+
+264
+00:27:25,000 --> 00:27:27,000
+Minus four.
+
+265
+00:27:28,000 --> 00:27:30,000
+комментар url
+
+266
+00:27:30,000 --> 00:27:31,000
+So this one was minus.
+
+267
+00:27:31,000 --> 00:27:35,000
+So.
+
+268
+00:27:35,000 --> 00:27:36,000
+This one is yours.
+
+269
+00:27:36,000 --> 00:27:37,000
+And we have minus one.
+
+270
+00:27:37,000 --> 00:27:38,000
+And this one was minus.
+
+271
+00:27:38,000 --> 00:27:39,000
+Minus.
+
+272
+00:27:39,000 --> 00:27:40,000
+Two here too.
+
+273
+00:27:40,000 --> 00:27:41,000
+So minus.
+
+274
+00:27:41,000 --> 00:27:42,000
+minus I?
+
+275
+00:27:42,000 --> 00:27:43,000
+Three of two things.
+
+276
+00:27:43,000 --> 00:27:44,000
+We are missing two.
+
+277
+00:27:44,000 --> 00:27:45,000
+Because.
+
+278
+00:27:45,000 --> 00:27:46,000
+I can'tние [öğrenci] I say no.
+
+279
+00:27:46,000 --> 00:27:47,000
+Ten.
+
+280
+00:27:47,000 --> 00:27:48,000
+So I can't imagine that this is it.
+
+281
+00:27:48,000 --> 00:27:49,000
+I cannot imagine.
+
+282
+00:27:49,000 --> 00:27:50,000
+We are missing Informationen.
+
+283
+00:27:50,000 --> 00:27:51,000
+And we are missing all of it.
+
+284
+00:27:51,000 --> 00:27:52,000
+And I am at last.
+
+285
+00:27:52,000 --> 00:27:53,000
+I was talking aboutNo.
+
+286
+00:27:53,000 --> 00:27:54,000
+No.
+
+287
+00:27:54,000 --> 00:27:55,000
+No.
+
+288
+00:27:55,000 --> 00:27:56,000
+I don´t think so.
+
+289
+00:27:56,000 --> 00:27:57,000
+I think so.
+
+290
+00:27:57,000 --> 00:27:59,000
+Bu bir şeydir.
+
+291
+00:27:59,000 --> 00:28:01,000
+Bu bir şeydir.
+
+292
+00:28:01,000 --> 00:28:05,000
+Şimdi hatırlatma noktası.
+
+293
+00:28:05,000 --> 00:28:09,000
+Şimdi, bir şeyleri,
+
+294
+00:28:09,000 --> 00:28:12,000
+bir diğerinin değerlerini
+
+295
+00:28:12,000 --> 00:28:15,000
+ayırmamız gereken kısımları
+
+296
+00:28:15,000 --> 00:28:17,000
+bir bir yere koymamız gerekiyor.
+
+297
+00:28:17,000 --> 00:28:20,000
+Şimdi, ilk kısım
+
+298
+00:28:20,000 --> 00:28:22,000
+bu kısımın değerini
+
+299
+00:28:22,000 --> 00:28:24,000
+ayırmış.
+
+300
+00:28:24,000 --> 00:28:26,000
+Bu kısım,
+
+301
+00:28:26,000 --> 00:28:28,000
+bu kısımın değerini
+
+302
+00:28:28,000 --> 00:28:31,000
+ayırmamız gerekiyor.
+
+303
+00:28:31,000 --> 00:28:33,000
+Sonra tüm kısımlar
+
+304
+00:28:33,000 --> 00:28:36,000
+tamamlanana kadar devam edeceğiz.
+
+305
+00:28:36,000 --> 00:28:39,000
+Devam edelim.
+
+306
+00:28:39,000 --> 00:28:41,000
+Bu, ilk kısım.
+
+307
+00:28:41,000 --> 00:28:43,000
+Şimdi, bu değer, bu değer ve
+
+308
+00:28:43,000 --> 00:28:45,000
+bu değer var.
+
+309
+00:28:46,000 --> 00:28:48,000
+Birincisi,
+
+310
+00:28:48,000 --> 00:28:50,000
+bu kısım.
+
+311
+00:28:50,000 --> 00:28:52,000
+Bu, kısımdaki değer.
+
+312
+00:28:56,000 --> 00:28:58,000
+İkinci kısım.
+
+313
+00:28:58,000 --> 00:29:00,000
+Şimdi bu kısımla devam edeceğiz.
+
+314
+00:29:00,000 --> 00:29:02,000
+Şimdi,
+
+315
+00:29:02,000 --> 00:29:04,000
+bu kısımların
+
+316
+00:29:04,000 --> 00:29:06,000
+değerini
+
+317
+00:29:06,000 --> 00:29:07,000
+hatırlatacağız.
+
+318
+00:29:09,000 --> 00:29:11,000
+Bu kısımda,
+
+319
+00:29:11,000 --> 00:29:13,000
+her kısımda
+
+320
+00:29:13,000 --> 00:29:16,000
+hangi kısım
+
+321
+00:29:16,000 --> 00:29:18,000
+bu kısımda değerini ayırmamız gerektiğini
+
+322
+00:29:18,000 --> 00:29:27,000
+Şimdi, bu bir örnek. Bazı olaylarda, mesela bu, bu bir örneğin, bu Bu bir örneğin,
+
+323
+00:29:27,000 --> 00:29:37,000
+bu, 2 değer aynı olabilir.
+
+324
+00:29:37,000 --> 00:29:40,000
+Onları da tutmamız gerekiyor.
+
+325
+00:29:42,000 --> 00:29:45,000
+Böylece ekleyerek devam ediyoruz.
+
+326
+00:29:45,000 --> 00:29:48,000
+Böyle bir çizgi matriksimiz var.
+
+327
+00:29:51,000 --> 00:29:54,000
+Söylediğimiz maksimum değer,
+
+328
+00:29:54,000 --> 00:29:57,000
+aşağıdaki kısımda var.
+
+329
+00:30:00,000 --> 00:30:21,599
+so now we need to trace back basically we have in in memory in our memory we have the
+
+330
+00:30:21,600 --> 00:30:31,740
+basically tracks of the all values we obtained and we have to choose the right track to trace
+
+331
+00:30:31,740 --> 00:30:42,000
+back and we need to start from the bottom corner here for the global alignment
+
+332
+00:30:42,000 --> 00:30:43,000
+let's see
+
+333
+00:30:43,000 --> 00:30:45,640
+how to trace back
+
+334
+00:30:45,640 --> 00:30:46,640
+okay
+
+335
+00:30:46,640 --> 00:30:47,640
+let's see
+
+336
+00:30:47,640 --> 00:30:48,640
+okay
+
+337
+00:30:48,640 --> 00:30:49,640
+okay
+
+338
+00:30:49,640 --> 00:30:50,640
+okay
+
+339
+00:30:50,640 --> 00:30:51,560
+okay
+
+340
+00:30:51,559 --> 00:30:52,559
+okay
+
+341
+00:30:52,559 --> 00:30:58,599
+basically we start from the well we have these values in memory somewhere because we kept
+
+342
+00:30:58,599 --> 00:31:07,779
+it we will start with this maximum value which is bottom corner then we look at we start
+
+343
+00:31:07,779 --> 00:31:08,779
+with
+
+344
+00:31:08,779 --> 00:31:15,399
+say this one then we check
+
+345
+00:31:15,399 --> 00:31:20,759
+which cell is used to determine the value of this current cell
+
+346
+00:31:20,759 --> 00:31:21,559
+for this case
+
+347
+00:31:21,559 --> 00:31:28,799
+it is this diagonal one okay next one is diagonal to determine value of this one
+
+348
+00:31:28,799 --> 00:31:36,619
+we will check which one determined is value of this cell then the left left
+
+349
+00:31:36,619 --> 00:31:44,899
+left cell we moved from this one first then we moved to the left cell and we
+
+350
+00:31:44,900 --> 00:31:52,240
+check again which cell determined the value of this cell apparently this is
+
+351
+00:31:52,240 --> 00:32:10,140
+this one and next this is this one next this one next this one then this one
+
+352
+00:32:10,140 --> 00:32:14,840
+this one from this we go to this one
+
+353
+00:32:14,840 --> 00:32:14,880
+this one from this we go to this one
+
+354
+00:32:14,880 --> 00:32:17,920
+this one from this we go to this one and
+
+355
+00:32:17,920 --> 00:32:17,940
+and
+
+356
+00:32:17,940 --> 00:32:20,000
+and this one
+
+357
+00:32:20,000 --> 00:32:20,020
+this one
+
+358
+00:32:20,020 --> 00:32:26,240
+this one so we already have a trace back
+
+359
+00:32:26,240 --> 00:32:27,360
+path
+
+360
+00:32:27,360 --> 00:32:27,380
+path
+
+361
+00:32:27,380 --> 00:32:30,320
+path from the
+
+362
+00:32:30,320 --> 00:32:30,340
+from the
+
+363
+00:32:30,340 --> 00:32:35,680
+from the bottom rightmost corner to
+
+364
+00:32:35,680 --> 00:32:40,560
+top leftmost corner
+
+365
+00:32:40,560 --> 00:32:40,580
+top leftmost corner
+
+366
+00:32:40,580 --> 00:32:44,640
+top leftmost corner okay
+
+367
+00:32:44,640 --> 00:32:44,820
+we
+
+368
+00:32:44,820 --> 00:32:44,840
+we
+
+369
+00:32:44,840 --> 00:32:44,860
+we
+
+370
+00:32:44,860 --> 00:32:47,600
+we started with
+
+371
+00:32:47,600 --> 00:32:47,620
+we started with
+
+372
+00:32:47,620 --> 00:32:50,440
+we started with this and we continue
+
+373
+00:32:50,440 --> 00:32:50,460
+this and we continue
+
+374
+00:32:50,460 --> 00:32:53,520
+this and we continue we have such a trace back
+
+375
+00:32:53,520 --> 00:32:53,540
+we have such a trace back
+
+376
+00:32:53,540 --> 00:33:00,800
+we have such a trace back option
+
+377
+00:33:00,800 --> 00:33:05,040
+now when we look at this actually the
+
+378
+00:33:05,040 --> 00:33:05,060
+now when we look at this actually the
+
+379
+00:33:05,060 --> 00:33:08,160
+now when we look at this actually the you should remember the dot plot example
+
+380
+00:33:08,160 --> 00:33:08,180
+you should remember the dot plot example
+
+381
+00:33:08,180 --> 00:33:12,560
+you should remember the dot plot example we had the last time
+
+382
+00:33:12,560 --> 00:33:12,580
+we had the last time
+
+383
+00:33:12,580 --> 00:33:14,800
+we had the last time in dot plot we were trying to
+
+384
+00:33:14,800 --> 00:33:14,820
+in dot plot we were trying to
+
+385
+00:33:14,819 --> 00:33:28,419
+determine actually this trace back path intuitively or visually but dynamic programming does this
+
+386
+00:33:29,460 --> 00:33:39,939
+numerically or objectively in dot plot it was subjective you have to have some experience and
+
+387
+00:33:39,940 --> 00:33:47,860
+you have to be careful visually inspect but in this algorithm this is done subjectively
+
+388
+00:33:50,259 --> 00:33:55,539
+now rest is easy the rules are the same here we just follow the
+
+389
+00:33:57,380 --> 00:34:08,659
+these arrows to determine where we should place gaps where we should match
+
+390
+00:34:10,179 --> 00:34:17,940
+we start from this a and a is a match obviously we just write a a
+
+391
+00:34:21,220 --> 00:34:21,940
+then next
+
+392
+00:34:25,619 --> 00:34:25,780
+t
+
+393
+00:34:29,300 --> 00:34:29,940
+we have t
+
+394
+00:34:33,139 --> 00:34:36,980
+then we have what next anybody can guess
+
+395
+00:34:39,940 --> 00:34:49,700
+what you what shall replace a t
+
+396
+00:34:51,220 --> 00:34:53,059
+so
+
+397
+00:34:53,059 --> 00:34:55,460
+so
+
+398
+00:34:55,460 --> 00:34:58,179
+the
+
+399
+00:34:58,179 --> 00:35:00,179
+the
+
+400
+00:35:00,000 --> 00:35:03,019
+Now we have gaps.
+
+401
+00:35:00,179 --> 00:35:04,179
+the
+
+402
+00:35:03,400 --> 00:35:05,599
+Some gaps as illustrated here.
+
+403
+00:35:04,179 --> 00:35:06,179
+the
+
+404
+00:35:06,179 --> 00:35:08,179
+the
+
+405
+00:35:06,679 --> 00:35:07,619
+T because
+
+406
+00:35:07,619 --> 00:35:09,699
+here there is one
+
+407
+00:35:08,179 --> 00:35:09,380
+the
+
+408
+00:35:09,380 --> 00:35:09,860
+the
+
+409
+00:35:09,699 --> 00:35:12,039
+arrow towards this one
+
+410
+00:35:09,860 --> 00:35:09,940
+the
+
+411
+00:35:12,039 --> 00:35:13,780
+so it refers
+
+412
+00:35:13,780 --> 00:35:14,579
+to this
+
+413
+00:35:14,579 --> 00:35:19,920
+array. So we need to place
+
+414
+00:35:19,920 --> 00:35:20,719
+a gap here.
+
+415
+00:35:21,559 --> 00:35:22,699
+One arrow more.
+
+416
+00:35:23,940 --> 00:35:24,920
+One gap more.
+
+417
+00:35:25,840 --> 00:35:27,420
+Then next there is a
+
+418
+00:35:27,420 --> 00:35:28,900
+GG match.
+
+419
+00:35:28,900 --> 00:35:29,619
+GG
+
+420
+00:35:29,619 --> 00:35:32,059
+Then
+
+421
+00:35:32,059 --> 00:35:34,900
+there is one arrow more here.
+
+422
+00:35:36,119 --> 00:35:36,920
+Arrow
+
+423
+00:35:36,920 --> 00:35:40,639
+refers to this
+
+424
+00:35:40,639 --> 00:35:42,900
+array in the row.
+
+425
+00:35:43,579 --> 00:35:45,119
+Then there is one gap more
+
+426
+00:35:45,119 --> 00:35:46,420
+after A.
+
+427
+00:35:47,139 --> 00:35:48,500
+Then we have CC
+
+428
+00:35:48,500 --> 00:35:49,880
+here.
+
+429
+00:35:50,900 --> 00:35:52,599
+Then next it is just
+
+430
+00:35:52,599 --> 00:35:54,420
+a diagonal arrow. It is
+
+431
+00:35:54,420 --> 00:35:54,960
+TT.
+
+432
+00:35:56,180 --> 00:35:57,400
+Then again
+
+433
+00:35:57,400 --> 00:35:58,400
+there is one
+
+434
+00:35:58,400 --> 00:36:02,320
+arrow referring to
+
+435
+00:36:02,320 --> 00:36:03,700
+this
+
+436
+00:36:03,700 --> 00:36:04,960
+array.
+
+437
+00:36:06,099 --> 00:36:08,059
+Then one gap more.
+
+438
+00:36:08,400 --> 00:36:09,260
+And the rest is
+
+439
+00:36:09,260 --> 00:36:11,840
+because arrows are diagonal
+
+440
+00:36:11,840 --> 00:36:13,960
+even there is a mismatch
+
+441
+00:36:13,960 --> 00:36:15,800
+here. In this case
+
+442
+00:36:15,800 --> 00:36:17,639
+for example. We
+
+443
+00:36:17,639 --> 00:36:18,619
+match them.
+
+444
+00:36:23,800 --> 00:36:25,960
+That's the optimal
+
+445
+00:36:25,960 --> 00:36:28,079
+alignment. If you work out
+
+446
+00:36:28,400 --> 00:36:30,300
+the total
+
+447
+00:36:30,300 --> 00:36:35,059
+score of this alignment you will get
+
+448
+00:36:35,059 --> 00:36:38,720
+11 to prove that your alignment alignment is correct.
+
+449
+00:36:39,160 --> 00:36:41,019
+Is validation basically.
+
+450
+00:36:41,539 --> 00:36:42,880
+You just calculate the.
+
+451
+00:36:44,099 --> 00:36:45,400
+This is
+
+452
+00:36:45,400 --> 00:36:46,700
+a match.
+
+453
+00:36:46,940 --> 00:36:49,160
+It was five.
+
+454
+00:36:49,860 --> 00:36:52,380
+It was five mis-match minus three.
+
+455
+00:36:54,300 --> 00:36:57,400
+Mmm miss-match minus three.
+
+456
+00:36:58,400 --> 00:37:09,639
+5, minus 4, 5, 5, minus 4, 5, minus 4, minus 4 and 5, you should get 11.
+
+457
+00:37:13,980 --> 00:37:23,180
+Which equals to, score we obtained in this, bottom right most cell.
+
+458
+00:37:28,400 --> 00:37:39,920
+Now what, after we obtain this alignment, now we can elaborate on what this alignment tells us.
+
+459
+00:37:39,920 --> 00:37:48,000
+So we can assume, if we assume that these two sequences comes from a common ancestor,
+
+460
+00:37:48,780 --> 00:37:58,139
+probably this sequence is modified to indels.
+
+461
+00:37:58,400 --> 00:38:05,820
+And some mutation here, A mutated to G.
+
+462
+00:38:07,639 --> 00:38:17,220
+And there are some maybe deletions here, or insertions in this sequence.
+
+463
+00:38:18,260 --> 00:38:21,500
+It is up to a biologist to interpret this.
+
+464
+00:38:23,240 --> 00:38:27,579
+But as a computer engineer or computer scientist,
+
+465
+00:38:28,380 --> 00:38:28,400
+we can interpret this as a computer scientist.
+
+466
+00:38:28,400 --> 00:38:35,240
+We can provide such tools to genetic scientists or biologists,
+
+467
+00:38:35,720 --> 00:38:44,240
+to enable them to use this type of tools in their analysis.
+
+468
+00:38:45,720 --> 00:38:46,780
+This is the whole idea.
+
+469
+00:38:46,780 --> 00:38:46,880
+Yeah.
+
+470
+00:38:55,340 --> 00:38:58,380
+Hocam, az önceki Trespek'le alakalı bir şey sorayım.
+
+471
+00:38:58,380 --> 00:38:58,880
+Tabi tabi.
+
+472
+00:38:58,880 --> 00:39:05,220
+Hocam, normalde meç olduğu zaman, 5 arttırıp, biz meçte 4 puan götürmüyor muyuz?
+
+473
+00:39:07,300 --> 00:39:07,820
+Nasıl?
+
+474
+00:39:08,960 --> 00:39:14,920
+Yani, şeyler eşitlendiği zaman, 5 puan arttırıp, daha sonra eğer eşitler,
+
+475
+00:39:15,000 --> 00:39:19,280
+yani, farklılık olursa 4 puan düşürmüyor muyuz şeyde, giderken, 11'e ulaşırken?
+
+476
+00:39:19,660 --> 00:39:20,840
+Yo, eksi 3'tü galiba.
+
+477
+00:39:22,160 --> 00:39:27,880
+Hocam işte, mesela 5'ten 2, eksi 3 düşürmüş, ama ilerlerde full 4 düşürmüş de, onun, hani...
+
+478
+00:39:27,880 --> 00:39:28,360
+O, gap.
+
+479
+00:39:28,380 --> 00:39:29,079
+O, gap olduğu için.
+
+480
+00:39:29,360 --> 00:39:29,860
+Ha, tamam.
+
+481
+00:39:30,320 --> 00:39:31,900
+Gap'lerden dolayı, onu söyledim.
+
+482
+00:39:32,680 --> 00:39:33,920
+E, onu kaçırmış hocam, pardon.
+
+483
+00:39:34,180 --> 00:39:35,780
+Ben de onun için de anlamaya çalışıyordum da.
+
+484
+00:39:35,880 --> 00:39:41,099
+Eksi 3 dedim, artı 5, eksi 4 diye gittim, farkındaysan.
+
+485
+00:39:42,840 --> 00:39:43,400
+Tamamdır.
+
+486
+00:39:44,000 --> 00:39:44,180
+Tamam.
+
+487
+00:39:44,579 --> 00:39:46,099
+Gap olduğu için, eksi 4.
+
+488
+00:39:46,640 --> 00:39:47,680
+Öyle belirlemiştik.
+
+489
+00:39:51,260 --> 00:39:51,680
+Tamam.
+
+490
+00:39:52,680 --> 00:39:57,619
+En çoğunlukla, bu simple scoring skin,
+
+491
+00:39:58,380 --> 00:39:59,740
+var beğendiniz mi?
+
+492
+00:39:59,820 --> 00:40:00,200
+Evet, bence bence.
+
+493
+00:40:00,000 --> 00:40:06,699
+They will use some meaningful scoring matrices rather than scoring, simple scoring scheme.
+
+494
+00:40:00,260 --> 00:40:00,280
+Tamam.
+
+495
+00:40:00,340 --> 00:40:01,380
+Tamam, evet, iyi.
+
+496
+00:40:01,460 --> 00:40:01,980
+Buyurun, iyi oldu.
+
+497
+00:40:02,039 --> 00:40:04,180
+Hadi bakalım, neyimizde?
+
+498
+00:40:06,699 --> 00:40:13,559
+For example, if there is a match, GG match will have score A.
+
+499
+00:40:14,579 --> 00:40:17,920
+AA match will have a score B.
+
+500
+00:40:19,760 --> 00:40:22,480
+TT match will have another score.
+
+501
+00:40:24,539 --> 00:40:27,099
+And for gaps as well, we will see.
+
+502
+00:40:27,099 --> 00:40:38,139
+Currently, we are considering a fixed gap, but there are some other approaches in using the gaps.
+
+503
+00:40:38,319 --> 00:40:39,139
+We will see later.
+
+504
+00:40:43,139 --> 00:40:45,940
+Okay, that's the global traceback.
+
+505
+00:40:51,440 --> 00:40:53,000
+This is gap in ones.
+
+506
+00:40:53,000 --> 00:40:57,000
+We just, if you just...
+
+507
+00:40:57,099 --> 00:41:03,679
+This is the match or mismatch.
+
+508
+00:41:04,579 --> 00:41:11,679
+If RO is diagonal, it's either match or mismatch.
+
+509
+00:41:12,400 --> 00:41:15,360
+If there is a match, they are exactly the same.
+
+510
+00:41:15,360 --> 00:41:19,380
+If there is a mismatch, that means just mutation.
+
+511
+00:41:19,819 --> 00:41:24,819
+Let us change or biochemical structure change somehow.
+
+512
+00:41:25,480 --> 00:41:26,360
+If it is...
+
+513
+00:41:27,099 --> 00:41:29,880
+If the ROV is just a horizontal,
+
+514
+00:41:33,819 --> 00:41:39,819
+then the ROV indicates the sequence one, and we'll have a gap in sequence one.
+
+515
+00:41:39,819 --> 00:41:49,539
+If the ROV is vertical, pointing to sequence two, then there will be a gap in sequence two.
+
+516
+00:41:50,139 --> 00:41:51,460
+That's the rule, basically.
+
+517
+00:41:54,219 --> 00:41:56,319
+When you implement your algorithm,
+
+518
+00:41:56,380 --> 00:41:57,099
+this is what you should do.
+
+519
+00:41:57,099 --> 00:41:58,099
+This is what you should do as well.
+
+520
+00:42:00,159 --> 00:42:00,380
+Okay.
+
+521
+00:42:02,799 --> 00:42:07,000
+We already mentioned how to check alignment score.
+
+522
+00:42:08,420 --> 00:42:13,019
+After you obtain an optimum alignment, it should give you the...
+
+523
+00:42:13,019 --> 00:42:21,219
+Or it must give you the exactly the same value as the bottom corner, cell in the bottom corner.
+
+524
+00:42:22,900 --> 00:42:26,319
+You just work out these values by...
+
+525
+00:42:27,099 --> 00:42:36,940
+Plus 5, minus 3, plus 5, minus 4, plus 5, plus 5, minus 4, plus 5, minus 4, minus 4, plus 5, will be 11.
+
+526
+00:42:38,139 --> 00:42:42,980
+So we have optimum alignment.
+
+527
+00:42:43,759 --> 00:42:51,159
+Sometimes, you might get more than one optimum alignment.
+
+528
+00:42:53,360 --> 00:42:54,279
+Sometimes.
+
+529
+00:42:55,000 --> 00:42:56,940
+If we go back, for example...
+
+530
+00:42:57,099 --> 00:43:07,659
+I don't know, in this example, we don't have such a case, probably, but sometimes value of...
+
+531
+00:43:12,659 --> 00:43:24,039
+As indicated here, value of a cell could be determined by two other cells.
+
+532
+00:43:26,039 --> 00:43:27,099
+The same way.
+
+533
+00:43:27,420 --> 00:43:34,279
+So we can have more than one face-back path.
+
+534
+00:43:34,819 --> 00:43:39,460
+So in this case, we will have two global solutions.
+
+535
+00:43:40,159 --> 00:43:42,440
+Or three, if we have three, anyway.
+
+536
+00:43:43,819 --> 00:43:45,619
+We will see some examples.
+
+537
+00:43:57,679 --> 00:44:00,679
+We compute that our alignment is correct.
+
+538
+00:44:00,679 --> 00:44:03,420
+And we have the optimum alignment.
+
+539
+00:44:06,059 --> 00:44:07,659
+Now, local alignment.
+
+540
+00:44:07,659 --> 00:44:31,420
+But, if we are not interested in global alignment, then we will use another algorithm for local
+
+541
+00:44:31,420 --> 00:44:42,619
+alignment.
+
+542
+00:44:42,619 --> 00:44:54,860
+We will have two modifications of the previous algorithm.
+
+543
+00:44:54,860 --> 00:44:59,659
+The first one is initialization.
+
+544
+00:44:59,659 --> 00:45:00,659
+In global alignment, we will have two initializations.
+
+545
+00:45:00,000 --> 00:45:10,000
+local alignment initial row and colon were filled by using gap penalties.
+
+546
+00:45:00,659 --> 00:45:01,420
+In global alignment, we will have two initializations.
+
+547
+00:45:10,000 --> 00:45:13,000
+Gap penalties times indexes.
+
+548
+00:45:17,000 --> 00:45:24,000
+But in local alignment initialization is done by simply filling in zeros.
+
+549
+00:45:24,000 --> 00:45:31,000
+This is the first modification for the local alignment.
+
+550
+00:45:31,000 --> 00:45:34,000
+The matrix is the same.
+
+551
+00:45:34,000 --> 00:45:39,000
+The placement of the sequences on matrix is the same.
+
+552
+00:45:39,000 --> 00:45:47,000
+We place sequence 1 in row, sequence 2 in column.
+
+553
+00:45:47,000 --> 00:45:50,000
+Always it's up to you.
+
+554
+00:45:50,000 --> 00:45:54,000
+You can interchange the sequences to the column matrix.
+
+555
+00:45:54,000 --> 00:45:57,000
+It doesn't matter really.
+
+556
+00:45:59,000 --> 00:46:05,000
+But initialization, we will just place zeros in first row and first column.
+
+557
+00:46:05,000 --> 00:46:11,000
+And we will slightly modify recurrence algorithm as well.
+
+558
+00:46:13,000 --> 00:46:23,000
+The recurrence algorithm we used in global alignment
+
+559
+00:46:23,000 --> 00:46:26,000
+will have an extra option.
+
+560
+00:46:26,000 --> 00:46:30,000
+Which is indicated here as 0.
+
+561
+00:46:30,000 --> 00:46:36,000
+Actually that means that in local alignment
+
+562
+00:46:36,000 --> 00:46:43,000
+the values of the cells are not allowed to be negative.
+
+563
+00:46:43,000 --> 00:46:46,000
+If somehow the values of these three elements of the cell are not negative.
+
+564
+00:46:46,000 --> 00:46:52,000
+If somehow the values of these three elements of the cell are not negative.
+
+565
+00:46:52,000 --> 00:46:53,000
+If somehow the values of these three elements of the cell are not negative.
+
+566
+00:46:53,000 --> 00:46:54,000
+If somehow the values of these three elements of the cell are not negative.
+
+567
+00:46:54,000 --> 00:46:55,000
+If somehow the values of these three elements of the cell are not negative.
+
+568
+00:46:55,000 --> 00:46:56,000
+If somehow the values of these three elements of the cell are not negative.
+
+569
+00:46:56,000 --> 00:46:57,000
+If somehow the values of these three elements of the cell are not negative.
+
+570
+00:46:57,000 --> 00:46:58,000
+If somehow the values of these three elements of the cell are not negative.
+
+571
+00:46:58,000 --> 00:46:59,000
+If somehow the values of these three elements of the cell are not negative.
+
+572
+00:46:59,000 --> 00:47:00,000
+If somehow the values of these three elements of the cell are not negative.
+
+573
+00:47:00,000 --> 00:47:01,000
+If somehow the values of these three elements of the cell are not negative.
+
+574
+00:47:01,000 --> 00:47:02,000
+If somehow the values of these three elements of the cell are not negative.
+
+575
+00:47:02,000 --> 00:47:03,000
+If somehow the values of these three elements of the cell are not negative.
+
+576
+00:47:03,000 --> 00:47:04,000
+If somehow the values of these three elements of the cell are not negative.
+
+577
+00:47:04,000 --> 00:47:05,000
+If somehow the values of these three elements of the cell are not negative.
+
+578
+00:47:05,000 --> 00:47:12,000
+0 olacaktır. Aslında bu kısımların değerleri 0 ile geri dönüşecektir.
+
+579
+00:47:14,000 --> 00:47:18,000
+Bu nedenle, bir dakika daha izleyelim.
+
+580
+00:47:19,000 --> 00:47:24,000
+Bunların hepsi aynı olacaktır.
+
+581
+00:47:24,000 --> 00:47:27,000
+Veya her çizgi matriks de aynı olacaktır.
+
+582
+00:47:27,000 --> 00:47:30,000
+Rest, algoritma aynıdır.
+
+583
+00:47:30,000 --> 00:47:35,000
+Ayrıca inisyalizasyon ve recurrence ekvasyonu kullanılır.
+
+584
+00:47:35,000 --> 00:47:39,000
+Aynı algoritma ama küçük bir değişiklik.
+
+585
+00:47:41,000 --> 00:47:44,000
+Bu durumda maksimum değer,
+
+586
+00:47:44,000 --> 00:47:49,000
+sağ üst kısmından başlamış olacaktır.
+
+587
+00:47:50,000 --> 00:47:56,000
+Ama maksimum değer matriksinde başlamış olacaktır.
+
+588
+00:47:56,000 --> 00:47:59,000
+Matriksin içerisinde herhangi bir yer olabilir.
+
+589
+00:48:00,000 --> 00:48:10,000
+Bu da inisyalizasyon.
+
+590
+00:48:10,000 --> 00:48:13,000
+Aynı seti de kullanıyoruz.
+
+591
+00:48:15,000 --> 00:48:17,000
+Aynı ekvasyonlar.
+
+592
+00:48:17,000 --> 00:48:20,000
+Fakat yer alanı için.
+
+593
+00:48:22,000 --> 00:48:27,000
+Bence geri döneceğim.
+
+594
+00:48:27,000 --> 00:48:29,000
+Size...
+
+595
+00:48:30,000 --> 00:48:36,000
+Önemli ilerleyicilereviz...
+
+596
+00:48:36,000 --> 00:48:48,000
+At bounce, filan Hag servant'ın algoritma.
+
+597
+00:48:48,000 --> 00:48:57,000
+Smith & Waterman'a sahip, 1991'deyken ilk şu an mới algoritmasını destekledi.
+
+598
+00:48:57,000 --> 00:48:58,000
+Bu da...
+
+599
+00:48:58,000 --> 00:49:06,800
+Bu algoritma, bu algoritma açıklanmıştı ve bakalım eğer alabilir miyiz
+
+600
+00:49:14,159 --> 00:49:16,079
+, noktayı değiştirebilir miyim
+
+601
+00:49:16,079 --> 00:49:26,639
+, tamam, eğer alabilirim, bunu okuma ve okuma yapmayı tavsiye ederim
+
+602
+00:49:30,400 --> 00:49:34,799
+ve tekrar onu uygulamaya sorguluyor
+
+603
+00:49:42,799 --> 00:49:43,199
+tamam
+
+604
+00:49:45,759 --> 00:49:46,000
+ama
+
+605
+00:49:46,079 --> 00:49:47,599
+bu sadece bir sayfa veriyor
+
+606
+00:49:52,559 --> 00:49:59,039
+, üniversite bu jurnalara abone olmayan bir üniversite yok, o yüzden
+
+607
+00:50:00,000 --> 00:50:12,000
+But if again, if you are interested in, I can provide you or you can find it using some third party algorithms.
+
+608
+00:50:12,000 --> 00:50:21,000
+If you search in Google, you may get these articles from somewhere.
+
+609
+00:50:21,000 --> 00:50:29,000
+Anyway. So let's go back to our example.
+
+610
+00:50:29,000 --> 00:50:40,000
+We have the initialization. The filling in these cells is the same as global algorithm.
+
+611
+00:50:40,000 --> 00:50:47,000
+But we use this recurrence algorithm for local alignment.
+
+612
+00:50:47,000 --> 00:50:56,000
+And again, we keep these traces, the sources of
+
+613
+00:50:56,000 --> 00:50:59,000
+values of the present.
+
+614
+00:50:59,000 --> 00:51:03,000
+So if it comes from the diagonal, we keep it.
+
+615
+00:51:03,000 --> 00:51:12,000
+If it is come from the left one or right one or top one, we keep them in the memory.
+
+616
+00:51:12,000 --> 00:51:17,000
+Then we form this. The first one is five.
+
+617
+00:51:17,000 --> 00:51:25,000
+That's the second is one. Again, using the recursion equation.
+
+618
+00:51:25,000 --> 00:51:28,000
+Then we fill.
+
+619
+00:51:28,000 --> 00:51:34,000
+We thought of the matrix.
+
+620
+00:51:34,000 --> 00:51:45,000
+Here we see the trace back clues.
+
+621
+00:51:45,000 --> 00:51:49,000
+Now, the question is where to start this.
+
+622
+00:51:49,000 --> 00:51:53,000
+Alignment.
+
+623
+00:51:53,000 --> 00:51:55,000
+The first question here.
+
+624
+00:51:55,000 --> 00:51:58,000
+What is the cell with maximum.
+
+625
+00:51:58,000 --> 00:52:01,000
+Value.
+
+626
+00:52:01,000 --> 00:52:03,000
+When we look at this.
+
+627
+00:52:03,000 --> 00:52:06,000
+So it is a matrix.
+
+628
+00:52:06,000 --> 00:52:14,000
+Actually, we have two.
+
+629
+00:52:14,000 --> 00:52:18,000
+One is here.
+
+630
+00:52:18,000 --> 00:52:20,000
+Another one is here.
+
+631
+00:52:20,000 --> 00:52:26,000
+14.
+
+632
+00:52:26,000 --> 00:52:32,000
+We can start with one of them.
+
+633
+00:52:32,000 --> 00:52:34,000
+Anyway.
+
+634
+00:52:34,000 --> 00:52:41,000
+Maximum local alignment score for the two sequences is 14.
+
+635
+00:52:41,000 --> 00:52:46,000
+If we choose one.
+
+636
+00:52:46,000 --> 00:52:49,000
+That means because we have two 14s.
+
+637
+00:52:49,000 --> 00:52:53,000
+It indicates that there are multiple.
+
+638
+00:52:53,000 --> 00:52:55,000
+Local sequence alignments.
+
+639
+00:52:55,000 --> 00:52:58,000
+Giving the same.
+
+640
+00:52:58,000 --> 00:53:01,000
+Score total score.
+
+641
+00:53:01,000 --> 00:53:03,000
+Trace back.
+
+642
+00:53:03,000 --> 00:53:05,000
+Needs to.
+
+643
+00:53:05,000 --> 00:53:10,000
+Begin at this from these cells.
+
+644
+00:53:10,000 --> 00:53:14,000
+So the trace back is the same as the global one.
+
+645
+00:53:14,000 --> 00:53:16,000
+Again, we check.
+
+646
+00:53:16,000 --> 00:53:23,000
+Which cell determines this actual value of the present cell.
+
+647
+00:53:25,000 --> 00:53:34,000
+If.
+
+648
+00:53:34,000 --> 00:53:35,000
+At the trace back.
+
+649
+00:53:35,000 --> 00:53:37,000
+We reach.
+
+650
+00:53:37,000 --> 00:53:38,000
+A zero.
+
+651
+00:53:38,000 --> 00:53:44,000
+That means it's end of the alignment.
+
+652
+00:53:44,000 --> 00:53:45,000
+Okay.
+
+653
+00:53:45,000 --> 00:53:46,000
+Let's go.
+
+654
+00:53:46,000 --> 00:53:47,000
+The first one.
+
+655
+00:53:47,000 --> 00:53:52,000
+Let's start with this one.
+
+656
+00:53:52,000 --> 00:53:54,000
+Score at the bottom.
+
+657
+00:53:54,000 --> 00:53:55,000
+Row.
+
+658
+00:53:55,000 --> 00:53:59,000
+14.
+
+659
+00:53:59,000 --> 00:54:01,000
+Is the first.
+
+660
+00:54:01,000 --> 00:54:04,000
+A and A.
+
+661
+00:54:04,000 --> 00:54:07,000
+Next.
+
+662
+00:54:07,000 --> 00:54:12,000
+Will be.
+
+663
+00:54:12,000 --> 00:54:18,000
+What.
+
+664
+00:54:18,000 --> 00:54:21,000
+G and a gap in.
+
+665
+00:54:21,000 --> 00:54:22,000
+Up.
+
+666
+00:54:22,000 --> 00:54:23,000
+Upper.
+
+667
+00:54:23,000 --> 00:54:24,000
+Value.
+
+668
+00:54:24,000 --> 00:54:26,000
+Let's see.
+
+669
+00:54:26,000 --> 00:54:29,000
+9 and close to 13.
+
+670
+00:54:29,000 --> 00:54:31,000
+13 to.
+
+671
+00:54:31,000 --> 00:54:33,000
+8.
+
+672
+00:54:33,000 --> 00:54:35,000
+Now here we have two options.
+
+673
+00:54:35,000 --> 00:54:36,000
+One goes that way.
+
+674
+00:54:36,000 --> 00:54:37,000
+One goes that way.
+
+675
+00:54:37,000 --> 00:54:39,000
+And that way.
+
+676
+00:54:39,000 --> 00:54:41,000
+And they join here.
+
+677
+00:54:41,000 --> 00:54:43,000
+Again, we have two options here.
+
+678
+00:54:43,000 --> 00:54:45,000
+We could go that way.
+
+679
+00:54:45,000 --> 00:54:48,000
+And we could go that way as well.
+
+680
+00:54:48,000 --> 00:54:51,000
+And next goes up here.
+
+681
+00:54:51,000 --> 00:54:53,000
+Goes here and here.
+
+682
+00:54:53,000 --> 00:54:54,000
+It stays standing.
+
+683
+00:54:54,000 --> 00:54:55,000
+Off the bottom.
+
+684
+00:54:56,000 --> 00:54:58,000
+This is waste of because he.
+
+685
+00:54:58,000 --> 00:54:59,000
+That's why.
+
+686
+00:54:59,000 --> 00:55:00,000
+Oh,
+
+687
+00:55:00,000 --> 00:55:01,000
+you're 이런
+
+688
+00:55:00,000 --> 00:55:02,000
+Bu alanı başlıyoruz.
+
+689
+00:55:01,000 --> 00:55:02,000
+The idea
+
+690
+00:55:02,000 --> 00:55:03,000
+does it work?
+
+691
+00:55:03,000 --> 00:55:04,000
+It's aλο
+
+692
+00:55:04,000 --> 00:55:05,000
+It's yo
+
+693
+00:55:04,000 --> 00:55:08,000
+Burada başladığımızda, iki alay var.
+
+694
+00:55:05,000 --> 00:55:06,000
+practice.
+
+695
+00:55:06,000 --> 00:55:07,000
+Yeah,
+
+696
+00:55:07,000 --> 00:55:08,000
+you and work
+
+697
+00:55:08,000 --> 00:55:09,000
+the same
+
+698
+00:55:08,000 --> 00:55:10,000
+Bu alanın başlangıcı bu.
+
+699
+00:55:09,000 --> 00:55:10,000
+Yes,
+
+700
+00:55:10,000 --> 00:55:11,000
+so
+
+701
+00:55:10,000 --> 00:55:12,000
+Biri bu,
+
+702
+00:55:11,000 --> 00:55:14,000
+Z
+
+703
+00:55:12,000 --> 00:55:14,000
+ikisi de bu.
+
+704
+00:55:14,000 --> 00:55:15,000
+So
+
+705
+00:55:14,000 --> 00:55:16,000
+İkisi de bu.
+
+706
+00:55:15,000 --> 00:55:16,000
+if we
+
+707
+00:55:16,000 --> 00:55:17,000
+get
+
+708
+00:55:16,000 --> 00:55:22,000
+İkisi de 14'ünün sayısını verir.
+
+709
+00:55:17,000 --> 00:55:18,000
+it
+
+710
+00:55:18,000 --> 00:55:19,000
+and
+
+711
+00:55:19,000 --> 00:55:20,000
+go
+
+712
+00:55:20,000 --> 00:55:21,000
+the right
+
+713
+00:55:21,000 --> 00:55:22,000
+line
+
+714
+00:55:24,000 --> 00:55:26,000
+Aslında bu matriksde,
+
+715
+00:55:26,000 --> 00:55:30,000
+üçüncü matriks var.
+
+716
+00:55:30,000 --> 00:55:34,000
+Bu alanın başlangıcını
+
+717
+00:55:34,000 --> 00:55:36,000
+buradan başlayabilirsiniz.
+
+718
+00:55:38,000 --> 00:55:40,000
+Bu alanın başlangıcını
+
+719
+00:55:40,000 --> 00:55:42,000
+ve aynı sayıda
+
+720
+00:55:42,000 --> 00:55:44,000
+başka bir alay var.
+
+721
+00:55:48,000 --> 00:55:50,000
+Buradan başlayalım.
+
+722
+00:55:50,000 --> 00:55:52,000
+Buradan,
+
+723
+00:55:52,000 --> 00:55:54,000
+sonra,
+
+724
+00:55:54,000 --> 00:55:56,000
+sonra,
+
+725
+00:55:56,000 --> 00:55:58,000
+tekrar,
+
+726
+00:55:58,000 --> 00:56:00,000
+burada iki alay var.
+
+727
+00:56:00,000 --> 00:56:02,000
+Buradan başlayalım.
+
+728
+00:56:04,000 --> 00:56:06,000
+Aslında burada,
+
+729
+00:56:06,000 --> 00:56:08,000
+dört farklı alay var.
+
+730
+00:56:12,000 --> 00:56:14,000
+Dört farklı lokal alay.
+
+731
+00:56:14,000 --> 00:56:16,000
+Burada sadece iki alay var.
+
+732
+00:56:16,000 --> 00:56:18,000
+Diğer iki alay,
+
+733
+00:56:18,000 --> 00:56:20,000
+siz bulmanız gerektiğini
+
+734
+00:56:20,000 --> 00:56:22,000
+bulmanız gerekecek.
+
+735
+00:56:26,000 --> 00:56:30,000
+Tamam.
+
+736
+00:56:30,000 --> 00:56:32,000
+Bu,
+
+737
+00:56:32,000 --> 00:56:34,000
+lokal alay.
+
+738
+00:56:34,000 --> 00:56:36,000
+Aslında,
+
+739
+00:56:36,000 --> 00:56:38,000
+biz
+
+740
+00:56:38,000 --> 00:56:40,000
+lokal bir paten
+
+741
+00:56:40,000 --> 00:56:42,000
+uzun bir saniye
+
+742
+00:56:42,000 --> 00:56:44,000
+içinde
+
+743
+00:56:44,000 --> 00:56:46,000
+seçiyoruz.
+
+744
+00:56:46,000 --> 00:56:48,000
+Eğer bir paten
+
+745
+00:56:48,000 --> 00:56:50,000
+arıyorsanız
+
+746
+00:56:50,000 --> 00:56:52,000
+ya da tekrar
+
+747
+00:56:52,000 --> 00:56:54,000
+ya da neyse
+
+748
+00:56:54,000 --> 00:56:56,000
+uzun bir saniye içinde,
+
+749
+00:56:56,000 --> 00:56:58,000
+lokal bir alay.
+
+750
+00:56:58,000 --> 00:57:00,000
+Tamam,
+
+751
+00:57:00,000 --> 00:57:02,000
+burada bir aray var.
+
+752
+00:57:08,000 --> 00:57:14,000
+Aslında,
+
+753
+00:57:14,000 --> 00:57:16,000
+burada bir aray var.
+
+754
+00:57:16,000 --> 00:57:18,000
+Bu,
+
+755
+00:57:18,000 --> 00:57:20,000
+bu,
+
+756
+00:57:20,000 --> 00:57:22,000
+bu,
+
+757
+00:57:22,000 --> 00:57:24,000
+bu,
+
+758
+00:57:24,000 --> 00:57:26,000
+bu,
+
+759
+00:57:26,000 --> 00:57:28,000
+bu,
+
+760
+00:57:28,000 --> 00:57:30,000
+bu,
+
+761
+00:57:30,000 --> 00:57:32,000
+bu,
+
+762
+00:57:32,000 --> 00:57:34,000
+bu,
+
+763
+00:57:34,000 --> 00:57:36,000
+bu,
+
+764
+00:57:36,000 --> 00:57:38,000
+bu,
+
+765
+00:57:38,000 --> 00:57:40,000
+bu.
+
+766
+00:57:54,000 --> 00:58:23,980
+Altyazı M.K.
+
+767
+00:58:24,000 --> 00:58:53,980
+Altyazı M.K.
+
+768
+00:58:54,000 --> 00:59:23,980
+Altyazı M.K.
+
+769
+00:59:24,000 --> 00:59:53,980
+Altyazı M.K.
+
+770
+00:59:54,000 --> 01:00:23,980
+Altyazı M.K.
+
+771
+01:00:00,000 --> 01:00:29,980
+Altyazı M.K.
+
+772
+01:00:30,000 --> 01:00:59,980
+Altyazı M.K.
+
+773
+01:01:00,000 --> 01:01:29,980
+Altyazı M.K.
+
+774
+01:01:30,000 --> 01:01:59,980
+Altyazı M.K.
+
+775
+01:02:00,000 --> 01:02:29,980
+Altyazı M.K.
+
+776
+01:02:30,000 --> 01:02:59,980
+Altyazı M.K.
+
+777
+01:03:00,000 --> 01:03:29,980
+Altyazı M.K.
+
+778
+01:03:30,000 --> 01:03:59,980
+Altyazı M.K.
+
+779
+01:04:00,000 --> 01:04:29,980
+Altyazı M.K.
+
+780
+01:04:30,000 --> 01:04:59,980
+Altyazı M.K.
+
+781
+01:05:00,000 --> 01:05:29,980
+Altyazı M.K.
+
+782
+01:05:30,000 --> 01:05:59,980
+Altyazı M.K.
+
+783
+01:06:00,000 --> 01:06:29,980
+Altyazı M.K.
+
+784
+01:06:30,000 --> 01:06:59,980
+Altyazı M.K.
+
+785
+01:07:00,000 --> 01:07:29,980
+Altyazı M.K.
+
+786
+01:07:30,000 --> 01:07:59,980
+Altyazı M.K.
+
+787
+01:08:00,000 --> 01:08:29,979
+Altyazı M.K.
+
+788
+01:08:30,000 --> 01:08:59,979
+Altyazı M.K.
+
+789
+01:09:00,000 --> 01:09:29,979
+Altyazı M.K.
+
+790
+01:09:30,000 --> 01:09:59,979
+Altyazı M.K.
+
+791
+01:10:00,000 --> 01:10:29,979
+Altyazı M.K.
+
+792
+01:10:30,000 --> 01:10:59,979
+Altyazı M.K.
+
+793
+01:11:00,000 --> 01:11:29,979
+Altyazı M.K.
+
+794
+01:11:30,000 --> 01:11:59,979
+Altyazı M.K.
+
+795
+01:12:00,000 --> 01:12:29,979
+Altyazı M.K.
+
+796
+01:12:30,000 --> 01:12:59,979
+Altyazı M.K.
+
+797
+01:13:00,000 --> 01:13:29,979
+Altyazı M.K.
+
+798
+01:13:30,000 --> 01:13:59,979
+Altyazı M.K.
+
+799
+01:14:00,000 --> 01:14:29,979
+Altyazı M.K.
+
+800
+01:14:30,000 --> 01:14:59,979
+Altyazı M.K.
+
+801
+01:15:00,000 --> 01:15:29,979
+Altyazı M.K.
+
+802
+01:15:30,000 --> 01:15:59,979
+Altyazı M.K.
+
+803
+01:16:00,000 --> 01:16:29,979
+Altyazı M.K.
+
+804
+01:16:30,000 --> 01:16:59,979
+Altyazı M.K.
+
+805
+01:17:00,000 --> 01:17:29,979
+Altyazı M.K.
+
+806
+01:17:30,000 --> 01:17:59,979
+Altyazı M.K.
+
+807
+01:18:00,000 --> 01:18:29,979
+Altyazı M.K.
+
+808
+01:18:30,000 --> 01:18:59,979
+Altyazı M.K.
+
+809
+01:19:00,000 --> 01:19:29,979
+Altyazı M.K.
+
+810
+01:19:30,000 --> 01:19:59,979
+Altyazı M.K.
+
+811
+01:20:00,000 --> 01:20:12,399
+Visualization is like local, but evaluation of the cells is like global.
+
+812
+01:20:12,399 --> 01:20:26,680
+Score is, maximum score is at the bottom line and rightmost line of the table.
+
+813
+01:20:26,680 --> 01:20:29,860
+Such as this one.
+
+814
+01:20:29,860 --> 01:20:43,380
+The maximum value will be either at this corner, this edge or this edge.
+
+815
+01:20:43,380 --> 01:20:45,240
+This is the overlap alignment.
+
+816
+01:20:45,240 --> 01:20:55,780
+This is the local alignment and that was the global one from the bottom rightmost to top
+
+817
+01:20:55,780 --> 01:20:56,659
+leftmost.
+
+818
+01:20:56,659 --> 01:21:04,260
+Corners.
+
+819
+01:21:04,260 --> 01:21:07,840
+Let's have an example.
+
+820
+01:21:07,840 --> 01:21:13,619
+These two are unnoticed sequences with different length again.
+
+821
+01:21:13,619 --> 01:21:23,279
+The scoring scheme we use in this case, plus one for, sorry, plus four for match, minus
+
+822
+01:21:23,279 --> 01:21:26,639
+one for mismatch and minus five for gap.
+
+823
+01:21:26,640 --> 01:21:28,579
+That's the penalty.
+
+824
+01:21:28,579 --> 01:21:37,680
+Initialization is same as the local, but evaluation of the values of the cells as global.
+
+825
+01:21:37,680 --> 01:21:45,200
+We use the standard recurrence algorithm of the global alignment.
+
+826
+01:21:45,200 --> 01:21:56,240
+And second row and second column is filled like this one, then finally when we fill in,
+
+827
+01:21:56,239 --> 01:22:01,279
+we have negative values as well.
+
+828
+01:22:01,279 --> 01:22:08,819
+Now the maximum value of the bottom row.
+
+829
+01:22:08,819 --> 01:22:20,719
+Or we will search maximum value at the rightmost column.
+
+830
+01:22:20,719 --> 01:22:22,599
+Not in bottom row and rightmost column.
+
+831
+01:22:22,599 --> 01:22:23,599
+The maximum value is negative.
+
+832
+01:22:23,599 --> 01:22:24,599
+And the bottom row and bottom row.
+
+833
+01:22:24,599 --> 01:22:25,599
+So that's the bottom row and bottom column.
+
+834
+01:22:25,599 --> 01:22:25,619
+Next.
+
+835
+01:22:25,619 --> 01:22:26,239
+And now the bottom row.
+
+836
+01:22:26,239 --> 01:22:41,019
+Actually, I haven't shown here tracebacks, so the arrows in which the values of a cell
+
+837
+01:22:41,019 --> 01:22:44,179
+is determined.
+
+838
+01:22:44,180 --> 01:22:58,980
+But from this example, if we start here, as far as I remember, it goes towards that, such
+
+839
+01:22:58,980 --> 01:23:11,460
+as from 11 to 12, 12 to 8, 8 to 4, so then 4 to 0.
+
+840
+01:23:14,180 --> 01:23:21,539
+That was the traceback for this example.
+
+841
+01:23:21,539 --> 01:23:37,920
+Now what we have, this portion
+
+842
+01:23:37,920 --> 01:23:44,180
+and corresponding this portion matches, let's see.
+
+843
+01:23:44,180 --> 01:23:48,240
+This is the best overlap.
+
+844
+01:23:48,240 --> 01:23:59,140
+According to this scheme, the best overlap is obtained as this one.
+
+845
+01:23:59,140 --> 01:24:10,659
+Now these two parts are overlapped.
+
+846
+01:24:10,659 --> 01:24:13,740
+If we turn the x-axis around,
+
+847
+01:24:13,740 --> 01:24:14,180
+It will be like this.
+
+848
+01:24:14,180 --> 01:24:31,460
+change the scoring scheme, this overlap possibly will change as well, so for example, if such
+
+849
+01:24:31,460 --> 01:24:40,500
+a scoring scheme is used, the overlap will be something like this, so it is very much
+
+850
+01:24:40,500 --> 01:24:51,380
+dependent on scoring scheme we choose to determine these alignments. This is also valid for local
+
+851
+01:24:51,380 --> 01:24:59,220
+and global alignment as well, very much depends on the scoring scheme we use.
+
+852
+01:25:00,000 --> 01:25:15,039
+So, to summarize, we have global alignment, known as Middleman-Wunsch algorithm, initialization
+
+853
+01:25:15,039 --> 01:25:28,300
+is done by using these equations, scoring is obtained by using this recurrence equation.
+
+854
+01:25:28,300 --> 01:25:34,840
+Global alignment, also known as Smith-Waterman algorithm.
+
+855
+01:25:34,840 --> 01:25:43,239
+Initialization is done by using this equation, which is basically resetting to zero.
+
+856
+01:25:43,239 --> 01:25:51,079
+Then scoring is done by using this recurrence algorithm, including zero here.
+
+857
+01:25:51,079 --> 01:25:57,739
+Then all the alignment initialization is done as local alignment, but scoring is done
+
+858
+01:25:57,739 --> 01:25:58,260
+according to local alignment.
+
+859
+01:25:58,260 --> 01:25:58,279
+So, to summarize, we have global alignment, also known as Middleman-Wunsch algorithm,
+
+860
+01:25:58,279 --> 01:25:58,859
+initialization is done by using these equations, scoring is done by using this recurrence equation.
+
+861
+01:25:58,859 --> 01:26:05,159
+Then all the alignment initialization is done by using this recurrence equation.
+
+862
+01:26:05,159 --> 01:26:14,039
+These are three variants of parallel sequence alignment.
+
+863
+01:26:21,159 --> 01:26:26,139
+Any questions so far regarding this parallel sequence alignment?
+
+864
+01:26:26,140 --> 01:26:45,940
+Any questions?
+
+865
+01:26:56,140 --> 01:27:07,539
+Okay, that means it is clear. It is well understood. Let's see if we have an example.
+
+866
+01:27:26,140 --> 01:27:44,860
+Okay, let's see.
+
+867
+01:27:56,140 --> 01:28:26,119
+Okay, let's see.
+
+868
+01:28:26,140 --> 01:28:39,240
+Okay, just one example. I'll go over one example to strengthen your understanding.
+
+869
+01:28:40,240 --> 01:28:52,100
+In this question, based on the following completed dynamic programming alignment matrix, answer the following questions.
+
+870
+01:28:52,100 --> 01:28:56,100
+First one, I am asking to you.
+
+871
+01:28:56,140 --> 01:29:02,940
+Is it a Niedermann-Wunsch or Smith-Waterman or overlap alignment?
+
+872
+01:29:06,440 --> 01:29:12,720
+I expect an answer from you.
+
+873
+01:29:12,720 --> 01:29:12,800
+Yeah.
+
+874
+01:29:15,539 --> 01:29:26,119
+It's overlap. You have already seen because initialization is done by placing zeros at the first.
+
+875
+01:29:26,140 --> 01:29:40,440
+First column and rows, but we have some negative numbers, therefore it's an overlap alignment.
+
+876
+01:29:40,440 --> 01:29:47,440
+Then what was the match score parameter?
+
+877
+01:29:47,440 --> 01:29:52,440
+What is the match score parameter then?
+
+878
+01:29:52,440 --> 01:29:53,440
+What is the match score parameter then?
+
+879
+01:29:53,440 --> 01:29:54,440
+What is the match score parameter then?
+
+880
+01:29:54,440 --> 01:29:55,440
+What is the match score parameter then?
+
+881
+01:29:55,440 --> 01:30:04,740
+What is the match score parameter then?
+
+882
+01:30:00,239 --> 01:30:01,680
+you say how did you find it
+
+883
+01:30:04,740 --> 01:30:09,900
+What is the match score parameter then by any means?
+
+884
+01:30:09,900 --> 01:30:10,900
+Could you provide a match score parameter?
+
+885
+01:30:10,239 --> 01:30:12,319
+for example you can go here
+
+886
+01:30:10,900 --> 01:30:15,900
+This Torque Klammer lesion assessor provides a match scoreànhester formula for the two initials.
+
+887
+01:30:14,479 --> 01:30:19,680
+because it's zero it should be and this one is zero and this is four so
+
+888
+01:30:15,900 --> 01:30:17,200
+All right.
+
+889
+01:30:17,200 --> 01:30:20,100
+Okay, this is the final method of useless method.
+
+890
+01:30:20,100 --> 01:30:21,740
+Reviewing this data, you can count all assets.
+
+891
+01:30:21,039 --> 01:30:23,840
+whether it comes from this one or this one
+
+892
+01:30:21,740 --> 01:30:22,860
+Take a look.
+
+893
+01:30:22,860 --> 01:30:23,860
+Thank you.
+
+894
+01:30:23,840 --> 01:30:32,319
+yes it's that's okay what was the mismatch score parameter then
+
+895
+01:30:23,860 --> 01:30:24,940
+Thank you.
+
+896
+01:30:41,199 --> 01:30:44,079
+minus one okay with similar
+
+897
+01:30:46,400 --> 01:30:51,440
+approach you can determine for example this one this is a mismatch
+
+898
+01:30:54,159 --> 01:31:00,960
+and possibly the score of this cell comes from either this cell or this cell so because this
+
+899
+01:31:00,960 --> 01:31:06,880
+is minus one it should be minus one zero plus minus one should be minus one okay
+
+900
+01:31:09,199 --> 01:31:11,760
+then what about the gap penalty parameter
+
+901
+01:31:14,239 --> 01:31:15,360
+again using the
+
+902
+01:31:23,840 --> 01:31:31,840
+gap penalty you can determine the gap penalty
+
+903
+01:31:33,199 --> 01:31:36,880
+using similar approach you can determine these things anyway now
+
+904
+01:31:38,319 --> 01:31:43,760
+i think you have a good understanding of this pairwise matching
+
+905
+01:31:46,800 --> 01:31:53,600
+and these three variants we can proceed to next subject scoring matrices we said
+
+906
+01:31:54,400 --> 01:31:56,079
+so far in our examples
+
+907
+01:31:58,800 --> 01:32:00,239
+we used a simple
+
+908
+01:32:02,880 --> 01:32:10,000
+scoring scheme which was arbitrary it has no biological basis at all
+
+909
+01:32:10,640 --> 01:32:20,000
+but it provides us a metric to evaluate the similarity of sequences subjectively
+
+910
+01:32:20,000 --> 01:32:23,840
+to have a more meaningful
+
+911
+01:32:27,199 --> 01:32:34,720
+alignment we need to use some scoring matrices which was
+
+912
+01:32:35,600 --> 01:32:42,560
+built or formed using some properties of the biological biological
+
+913
+01:32:46,000 --> 01:32:48,319
+existence or basic sequences
+
+914
+01:32:50,560 --> 01:32:59,119
+for example one property they use is probability of mutation of the
+
+915
+01:33:00,560 --> 01:33:05,199
+constituents of a dna or amino acid or dna i would say
+
+916
+01:33:07,840 --> 01:33:08,880
+in terms of the
+
+917
+01:33:12,000 --> 01:33:19,760
+symbols we use letters what is the probability of letter a changing to letter
+
+918
+01:33:20,000 --> 01:33:25,199
+t and these were estimated
+
+919
+01:33:26,800 --> 01:33:29,760
+by using some clinical studies or whatever
+
+920
+01:33:32,239 --> 01:33:35,520
+and the score is obtained
+
+921
+01:33:38,000 --> 01:33:38,239
+so
+
+922
+01:33:44,479 --> 01:33:44,720
+we
+
+923
+01:33:50,000 --> 01:33:54,560
+can use this to calculate the probability of the substitution
+
+924
+01:33:54,560 --> 01:33:55,600
+of the matrix
+
+925
+01:33:55,600 --> 01:33:59,199
+these are mostly called likelihood matrix matrices
+
+926
+01:34:01,279 --> 01:34:02,319
+basically the
+
+927
+01:34:06,000 --> 01:34:11,920
+the scores are dependent upon likelihood substitution which was found in nature
+
+928
+01:34:14,640 --> 01:34:19,520
+or probability of substitution or changing one method to another one
+
+929
+01:34:20,000 --> 01:34:23,439
+so we can use this to calculate the probability of the substitution
+
+930
+01:34:23,439 --> 01:34:27,279
+this is obviously more applicable for amino acid sequences
+
+931
+01:34:31,279 --> 01:34:34,800
+we will have some matrices we will be using them as well
+
+932
+01:34:42,239 --> 01:34:49,600
+as already said in sequence alignment we use some scoring systems
+
+933
+01:34:50,960 --> 01:34:55,279
+we will calculate us all the unknownón so for example
+
+934
+01:34:55,279 --> 01:35:09,439
+if you say so
+
+935
+01:35:00,000 --> 01:35:24,000
+Actually, if you have more than one gap in an alignment, the cost to introduce a map or a gap should be different than the cost of extending or elongating a gap.
+
+936
+01:35:09,439 --> 01:35:17,699
+suppose we want to besonders viendo additional
+
+937
+01:35:17,699 --> 01:35:18,159
+pewno
+
+938
+01:35:18,159 --> 01:35:18,699
+%
+
+939
+01:35:18,699 --> 01:35:19,119
+such as p&t and senior
+
+940
+01:35:19,119 --> 01:35:19,659
+let's do a negative function so 2300 is zero that من
+
+941
+01:35:19,659 --> 01:35:19,899
+not mentioned non fought in the past let's say this it's it once again and 해요
+
+942
+01:35:19,899 --> 01:35:19,920
+This is an incoming angle bandwidth and thank you very much for grabbing the questions
+
+943
+01:35:24,000 --> 01:35:30,840
+This is the approach. We will call it a fine gap penalties, and we will discuss later.
+
+944
+01:35:31,439 --> 01:35:45,760
+Again, scoring systems, instead of simple scoring systems, which has no base at all, biological base, we can use some meaningful scoring schemes.
+
+945
+01:35:48,779 --> 01:35:52,840
+If we start with DNA scoring systems first.
+
+946
+01:35:53,220 --> 01:35:53,579
+DNA.
+
+947
+01:35:54,000 --> 01:36:02,039
+As we know, it has four letters in terms of the symbolic description or four biochemical substance.
+
+948
+01:36:03,239 --> 01:36:06,479
+This combination of four biochemical substance.
+
+949
+01:36:12,479 --> 01:36:22,079
+In DNA scoring systems, you don't have much option, really, but the simplest approach is for match you use.
+
+950
+01:36:24,000 --> 01:36:44,520
+For example, if you have one mismatch, zero, for example, then you can have such a matrix, scoring matrix, if it is a match, one, if it is mismatch, is zero.
+
+951
+01:36:44,520 --> 01:36:44,640
+So,
+
+952
+01:36:44,640 --> 01:36:53,979
+in protein scoring systems, we have 20.
+
+953
+01:36:54,000 --> 01:36:56,279
+amino acids.
+
+954
+01:36:59,880 --> 01:37:02,100
+And these amino acids.
+
+955
+01:37:03,659 --> 01:37:07,239
+Will have different scores if they match.
+
+956
+01:37:08,500 --> 01:37:11,680
+And again, different scores if they mismatch.
+
+957
+01:37:14,619 --> 01:37:16,140
+We have a scoring table.
+
+958
+01:37:17,199 --> 01:37:19,380
+In this case, for example.
+
+959
+01:37:20,460 --> 01:37:23,699
+When C and C matches a score of nine.
+
+960
+01:37:24,000 --> 01:37:30,119
+Nine is given, but S and S, a score of four is given.
+
+961
+01:37:30,119 --> 01:37:44,619
+For T, for example, a five, and a mismatch between S and C is penalized by minus one.
+
+962
+01:37:44,619 --> 01:37:52,699
+But a mismatch between P and C is given minus three.
+
+963
+01:37:52,699 --> 01:37:53,619
+It's a different.
+
+964
+01:37:53,619 --> 01:37:56,619
+Scoring.
+
+965
+01:37:56,619 --> 01:38:04,859
+And this type of scoring is much more meaningful than the simple scoring scheme.
+
+966
+01:38:04,859 --> 01:38:07,119
+We could have also said, it is a match.
+
+967
+01:38:07,119 --> 01:38:09,500
+Let's give it four.
+
+968
+01:38:09,500 --> 01:38:14,140
+Whether regardless of the letters, matching letters.
+
+969
+01:38:14,140 --> 01:38:19,739
+And this is usually not meaningful.
+
+970
+01:38:19,739 --> 01:38:21,739
+Now, basis of these type of scoring schemes.
+
+971
+01:38:21,739 --> 01:38:22,739
+And this is usually not meaningful.
+
+972
+01:38:22,739 --> 01:38:23,239
+Now, basis of these type of scoring schemes.
+
+973
+01:38:23,239 --> 01:38:23,939
+And this is usually not meaningful.
+
+974
+01:38:23,939 --> 01:38:24,439
+Now, basis of these type of scoring schemes.
+
+975
+01:38:24,439 --> 01:38:28,679
+Basically biochemical properties of the proteins.
+
+976
+01:38:28,679 --> 01:38:31,479
+Now, proteins have some properties and they're classified according to different characteristics.
+
+977
+01:38:31,479 --> 01:38:35,159
+Now, proteins have some properties and they're classified according to different characteristics.
+
+978
+01:38:35,159 --> 01:38:36,639
+This slide gives.
+
+979
+01:38:36,639 --> 01:38:40,960
+Some properties of.
+
+980
+01:38:42,880 --> 01:38:45,719
+These amino acids, for example.
+
+981
+01:38:45,719 --> 01:38:49,599
+This class of amino acids are known as aliphatic.
+
+982
+01:38:49,599 --> 01:38:51,119
+This class of amino acids are known as aliphatic.
+
+983
+01:38:51,119 --> 01:38:52,239
+These blue ones, this blue one.
+
+984
+01:38:52,239 --> 01:38:52,619
+These, these.
+
+985
+01:38:52,619 --> 01:38:53,219
+These blue ones.
+
+986
+01:38:53,239 --> 01:39:05,239
+set of these amino acids circled by blue circle known as hydrophobic
+
+987
+01:39:05,239 --> 01:39:15,599
+and these ones are aromatic say these ones are charged these ones are polar these ones
+
+988
+01:39:15,600 --> 01:39:23,600
+are positive others are negative and these are very tiny smaller much smaller than the
+
+989
+01:39:23,600 --> 01:39:32,240
+small ones these ones are small ones etc these are the some properties of the
+
+990
+01:39:36,720 --> 01:39:44,880
+amino acids these properties can be utilized to form some scoring schemes they are not the same so
+
+991
+01:39:45,600 --> 01:39:52,560
+cannot use the same scores for all these letters
+
+992
+01:39:57,760 --> 01:39:59,920
+basically this type of scoring much
+
+993
+01:40:00,000 --> 01:40:05,000
+reflect number of mutations to convert one to another
+
+994
+01:40:06,420 --> 01:40:11,420
+or chemical similarity and or observe mutation frequencies.
+
+995
+01:40:12,640 --> 01:40:17,640
+So if we use this characteristics in the scoring matrices,
+
+996
+01:40:18,800 --> 01:40:23,000
+the alignment we obtain by using this type
+
+997
+01:40:23,000 --> 01:40:26,939
+of scoring matrices would be much more meaningful.
+
+998
+01:40:26,940 --> 01:40:31,500
+And there are some other statistical techniques to form
+
+999
+01:40:31,500 --> 01:40:34,400
+this such as log-odd matrices.
+
+1000
+01:40:34,400 --> 01:40:37,400
+In this case, the values are logarithms
+
+1001
+01:40:37,400 --> 01:40:40,300
+of probability ratios because these ratios
+
+1002
+01:40:40,300 --> 01:40:42,080
+are two small numbers.
+
+1003
+01:40:46,080 --> 01:40:49,320
+And instead of these small numbers,
+
+1004
+01:40:49,320 --> 01:40:52,020
+these logarithms are used.
+
+1005
+01:40:54,660 --> 01:40:56,620
+While these scoring matrices
+
+1006
+01:40:56,620 --> 01:40:56,920
+are such as log-odd matrices,
+
+1007
+01:40:56,920 --> 01:40:59,140
+they are not known as PAM.
+
+1008
+01:40:59,140 --> 01:41:01,699
+And there are many different class of PAM.
+
+1009
+01:41:03,159 --> 01:41:08,159
+Percent accepted mutations, I think, or BLOSSOM.
+
+1010
+01:41:10,319 --> 01:41:12,420
+We'll see in a minute.
+
+1011
+01:41:12,420 --> 01:41:16,539
+Percent accepted mutation matrices are derived
+
+1012
+01:41:16,539 --> 01:41:19,659
+from global alignments of protein families.
+
+1013
+01:41:20,880 --> 01:41:25,880
+In this case, family members share at least 85% identity
+
+1014
+01:41:25,880 --> 01:41:30,020
+and this study was, and this matrix,
+
+1015
+01:41:30,020 --> 01:41:36,039
+was proposed by Dayhoff in 1978
+
+1016
+01:41:38,000 --> 01:41:42,359
+to construct these matrices' phylogenetic tree
+
+1017
+01:41:43,819 --> 01:41:48,940
+and ancestral sequence of each protein family is used.
+
+1018
+01:41:49,880 --> 01:41:52,260
+Now we use the word phylogenetic tree
+
+1019
+01:41:52,260 --> 01:41:55,640
+and we'll be discussing is how to construct a phylogenetic tree.
+
+1020
+01:41:56,520 --> 01:41:59,800
+tree we will be discussing later
+
+1021
+01:42:02,680 --> 01:42:07,319
+then we will calculate or they are they calculate here in this
+
+1022
+01:42:08,119 --> 01:42:14,039
+number of replacement for each pair of amino acids replacement frequencies
+
+1023
+01:42:20,760 --> 01:42:25,239
+for example for pam one matrix number of replacements were used
+
+1024
+01:42:25,880 --> 01:42:31,880
+it reflects an average change of one percent of all amino acid positions
+
+1025
+01:42:34,520 --> 01:42:39,880
+these premises for larger evolutionary distances
+
+1026
+01:42:43,319 --> 01:42:52,520
+this pam pam one matrix can be used there is another version pam 250 250
+
+1027
+01:42:52,520 --> 01:42:55,720
+meters per second so this is a very good example of how to use this
+
+1028
+01:42:55,720 --> 01:42:55,800
+this is a very good example of how to use this
+
+1029
+01:42:55,800 --> 01:43:04,680
+mutations per hundred residues this is the method used to construct this matrix
+
+1030
+01:43:06,520 --> 01:43:11,800
+so it reflects basically these numbers reflects the bigger evolutionary distance
+
+1031
+01:43:13,320 --> 01:43:16,920
+this is an example of pam 250 matrix
+
+1032
+01:43:19,560 --> 01:43:25,560
+we have the amino acids at the row and the corresponding match and mismatch score
+
+1033
+01:43:25,800 --> 01:43:25,880
+we have the amino acids at the row and the corresponding match and mismatch score
+
+1034
+01:43:25,880 --> 01:43:27,720
+we have the amino acids at the row and the corresponding match and mismatch score
+
+1035
+01:43:27,720 --> 01:43:31,159
+as we see again here these numbers are different
+
+1036
+01:43:36,279 --> 01:43:42,279
+this matrix is basically calculated as log
+
+1037
+01:43:44,199 --> 01:43:54,520
+ratio of frequency observed frequency divided by frequency expected frequency of the mutations
+
+1038
+01:43:55,880 --> 01:43:57,380
+rage and the time push double
+
+1039
+01:43:57,380 --> 01:44:00,159
+operation all formula assigned brings the function Goodness
+
+1040
+01:44:00,159 --> 01:44:01,800
+here is an example how this frequency I calculated but
+
+1041
+01:44:01,800 --> 01:44:02,440
+here is an example how this frequency I calculated but
+
+1042
+01:44:04,840 --> 01:44:15,079
+this is little bit elaboration amino acid frequency is calculated
+
+1043
+01:44:19,079 --> 01:44:24,119
+and this slide shows which pam matrix is used
+
+1044
+01:44:24,119 --> 01:44:24,360
+for
+
+1045
+01:44:24,360 --> 01:44:24,440
+amina's�p m matrix segmented amina's delete frequency is calculated
+
+1046
+01:44:24,440 --> 01:44:24,680
+this slide shows which pam matrix is used for
+
+1047
+01:44:24,680 --> 01:44:24,840
+this slide shows which pam matrix is used for
+
+1048
+01:44:24,840 --> 01:44:25,079
+for
+
+1049
+01:44:25,079 --> 01:44:40,939
+which evolutionary distances other type was blossom matrices blocks substitution matrix
+
+1050
+01:44:40,939 --> 01:44:52,800
+this study was done by henikov and henikov in 1992 this matrix blossom matrix is derived
+
+1051
+01:44:52,800 --> 01:44:56,460
+from alignments of domains of distantly related proteins
+
+1052
+01:45:00,000 --> 01:45:15,039
+In this approach, sequences within blocks are clustered according to the level of identity
+
+1053
+01:45:15,039 --> 01:45:19,520
+and clusters are counted as a single sequence.
+
+1054
+01:45:19,520 --> 01:45:25,560
+That's why its name comes blocks substitution matrix.
+
+1055
+01:45:25,560 --> 01:45:31,480
+And different Blossom matrices differ in the percentage of sequence identity used in clustering.
+
+1056
+01:45:31,480 --> 01:45:40,200
+The number in the matrix such as Blossom 62 refers to the percentage of sequence identity
+
+1057
+01:45:40,200 --> 01:45:43,200
+used to build the matrix.
+
+1058
+01:45:43,200 --> 01:45:46,800
+Greater numbers mean smaller evolutionary distances.
+
+1059
+01:45:46,800 --> 01:45:55,200
+This is the opposite of the PAM matrix basically.
+
+1060
+01:45:55,199 --> 01:46:04,960
+So these Blossom matrices perform better than PAM matrices for local similarity searches.
+
+1061
+01:46:04,960 --> 01:46:17,479
+Where local alignment for the local alignment, Blossom matrices are preferable.
+
+1062
+01:46:17,479 --> 01:46:22,000
+When we compare closely related proteins.
+
+1063
+01:46:22,000 --> 01:46:25,119
+Lower PAMs.
+
+1064
+01:46:25,199 --> 01:46:30,639
+Or higher Blossom matrices should be used.
+
+1065
+01:46:30,639 --> 01:46:39,159
+For distantly related proteins, higher PAM or lower Blossom matrices should be used.
+
+1066
+01:46:39,159 --> 01:46:47,079
+For database searching, the most commonly used matrix is Blossom 62.
+
+1067
+01:46:47,079 --> 01:46:55,119
+We will be using this Blossom 62 in either in our examples or in some questions.
+
+1068
+01:46:55,119 --> 01:47:00,559
+Regarding nucleic acid scoring schemes.
+
+1069
+01:47:00,559 --> 01:47:10,239
+In forming the scoring schemes for these nucleic acids.
+
+1070
+01:47:10,239 --> 01:47:15,640
+Again, the properties of this nucleic acid.
+
+1071
+01:47:15,640 --> 01:47:21,199
+So the nucleic acids are used.
+
+1072
+01:47:21,199 --> 01:47:24,880
+Transition mutation probabilities.
+
+1073
+01:47:24,880 --> 01:47:29,400
+Or transversion mutation probabilities.
+
+1074
+01:47:29,400 --> 01:47:36,720
+Transition mutation means a purine type.
+
+1075
+01:47:36,720 --> 01:47:41,720
+Nucleic acid changes into another purine type nucleic acid.
+
+1076
+01:47:41,720 --> 01:47:48,400
+For example, A changes to G or G changes into A.
+
+1077
+01:47:48,400 --> 01:47:53,960
+Or pyrimidine type changes to another pyrimidine type.
+
+1078
+01:47:53,960 --> 01:47:54,400
+Such as T2.
+
+1079
+01:47:54,400 --> 01:47:57,800
+Or C2T.
+
+1080
+01:47:57,800 --> 01:48:05,920
+But transversion mutation, which is more dramatic, reflects more dramatic change.
+
+1081
+01:48:05,920 --> 01:48:11,920
+The mutation is a purine changes into pyrimidine.
+
+1082
+01:48:11,920 --> 01:48:14,920
+Or pyrimidine changes into purine.
+
+1083
+01:48:14,920 --> 01:48:18,920
+This is known as transversion mutation.
+
+1084
+01:48:18,920 --> 01:48:22,920
+So the approach here is.
+
+1085
+01:48:22,920 --> 01:48:23,880
+To score.
+
+1086
+01:48:23,880 --> 01:48:30,880
+Transition mutation and transversion mutations differently.
+
+1087
+01:48:30,880 --> 01:48:32,880
+For example.
+
+1088
+01:48:32,880 --> 01:48:36,880
+A to A is scored as 20.
+
+1089
+01:48:36,880 --> 01:48:42,880
+But A to G is scored as 10.
+
+1090
+01:48:42,880 --> 01:48:50,880
+But A to T is scored as 5.
+
+1091
+01:48:53,880 --> 01:49:00,880
+And A to T is scored as 10.
+
+1092
+01:49:00,880 --> 01:49:04,880
+And now we have different scoring scheme for the nucleic acid scoring as well.
+
+1093
+01:49:04,880 --> 01:49:08,880
+If we use for alignment of DNA sequences.
+
+1094
+01:49:08,880 --> 01:49:14,880
+If we use this type of scoring scheme rather than the simple scoring scheme.
+
+1095
+01:49:14,880 --> 01:49:17,880
+We will have more meaningful alignment basically.
+
+1096
+01:49:17,880 --> 01:49:18,880
+Basically.
+
+1097
+01:49:18,880 --> 01:49:19,880
+Basically.
+
+1098
+01:49:19,880 --> 01:49:20,880
+Basically.
+
+1099
+01:49:20,880 --> 01:49:21,880
+Basically.
+
+1100
+01:49:21,880 --> 01:49:22,880
+Basically.
+
+1101
+01:49:22,880 --> 01:49:25,880
+So the basis of these type of scoring.
+
+1102
+01:49:25,880 --> 01:49:29,880
+As I always said amino acids are not equal.
+
+1103
+01:49:29,880 --> 01:49:33,880
+They have different properties.
+
+1104
+01:49:33,880 --> 01:49:40,880
+They are different structures and different is your chemical properties.
+
+1105
+01:49:47,880 --> 01:49:48,880
+I have already shown this.
+
+1106
+01:49:48,880 --> 01:49:49,880
+And.
+
+1107
+01:49:49,880 --> 01:49:50,880
+Here.
+
+1108
+01:49:50,880 --> 01:49:51,880
+Here is the blossom.
+
+1109
+01:49:51,880 --> 01:49:57,880
+62 matrix which probably we'll be using in our some examples
+
+1110
+01:50:00,000 --> 01:50:13,000
+Table values here that describe the probability of a residue pair occurring in an alignment.
+
+1111
+01:50:13,000 --> 01:50:18,000
+The values are logarithms of ratios of two probabilities.
+
+1112
+01:50:18,000 --> 01:50:29,000
+The first one is probability of random occurrence of an amino acid and probability of meaningful occurrence of a pair of residues.
+
+1113
+01:50:29,000 --> 01:50:53,000
+All have different scoring schemes here according to their properties.
+
+1114
+01:50:53,000 --> 01:50:55,000
+We already mentioned PEM matrices.
+
+1115
+01:50:55,000 --> 01:50:58,000
+These slides are types of PEM matrices.
+
+1116
+01:50:58,000 --> 01:50:59,000
+These slides are types of PEM matrices.
+
+1117
+01:50:59,000 --> 01:51:18,000
+This is a step of a repeat to strengthen the understanding of these matrices.
+
+1118
+01:51:18,000 --> 01:51:28,000
+Because this is a repeat, I will go fast.
+
+1119
+01:51:29,000 --> 01:51:40,239
+This is PAM-1 matrix.
+
+1120
+01:51:40,239 --> 01:51:51,619
+Log-odds matrices were calculated by taking odds ratio for each substitution.
+
+1121
+01:51:51,619 --> 01:52:03,979
+And this is PAM-250 Log-odds matrix.
+
+1122
+01:52:03,979 --> 01:52:14,220
+This is another slide giving these DNA mutations.
+
+1123
+01:52:14,220 --> 01:52:18,399
+Transition mutations are shown here.
+
+1124
+01:52:18,399 --> 01:52:20,399
+These ones.
+
+1125
+01:52:20,399 --> 01:52:21,599
+A.
+
+1126
+01:52:21,600 --> 01:52:37,520
+to G, C to T, green ones, but transversions, A to C, red ones.
+
+1127
+01:52:37,520 --> 01:52:48,280
+And C to G, G to T, these are transversion type mutations, as I already mentioned.
+
+1128
+01:52:48,280 --> 01:52:51,579
+There are several models to represent this.
+
+1129
+01:52:51,579 --> 01:53:04,840
+One is, it's named Jukes-Kantor model, Kimura model, and this is, for example, Jukes-Kantor
+
+1130
+01:53:04,840 --> 01:53:11,460
+model to represent nuclear-acid-scoring matrix.
+
+1131
+01:53:11,460 --> 01:53:19,579
+Alpha is given as rate of transition.
+
+1132
+01:53:19,579 --> 01:53:20,579
+Beta is rate of transition.
+
+1133
+01:53:20,579 --> 01:53:21,579
+So, this is Jukes-Kantor.
+
+1134
+01:53:21,579 --> 01:53:26,859
+This alpha and beta are different.
+
+1135
+01:53:26,859 --> 01:53:34,739
+We have different scoring schemes for different type of mutations.
+
+1136
+01:53:34,739 --> 01:53:48,579
+These are a model of uniform mutation rates among nucleotides.
+
+1137
+01:53:48,579 --> 01:53:49,539
+And this one is, A to C, to T, green.
+
+1138
+01:53:49,539 --> 01:53:50,500
+And this is Jukes-Kantor.
+
+1139
+01:53:50,500 --> 01:54:09,439
+This is the model of 3-fold higher transition than transversion, this is another model,
+
+1140
+01:54:09,439 --> 01:54:15,159
+again this is 3-fold higher transition than transversion model, which could be used, we
+
+1141
+01:54:15,159 --> 01:54:22,939
+have different values.
+
+1142
+01:54:22,939 --> 01:54:32,399
+Regarding gaps, we mentioned instead of linear gaps, we could have used affine gaps to represent
+
+1143
+01:54:32,399 --> 01:54:45,139
+the gap opening and gap extension penalties differently.
+
+1144
+01:54:45,140 --> 01:54:52,920
+Normally we use some models.
+
+1145
+01:54:52,920 --> 01:55:04,920
+We have a model of 3-fold higher transition than transversion model, which could be used,
+
+1146
+01:55:00,000 --> 01:55:02,880
+bu açıların çapını reflektir.
+
+1147
+01:55:03,479 --> 01:55:10,239
+Örneğin, K'nin uzunluğunun bir açısından K'nin uzunluğunun bir açısından bir açı kullanılır.
+
+1148
+01:55:04,920 --> 01:55:12,920
+we have different values.
+
+1149
+01:55:12,920 --> 01:55:14,920
+Again, we have different values.
+
+1150
+01:55:14,840 --> 01:55:25,319
+Bir açı, bu çapın kararlarını belirlemek için bu ekvasyon için kullanılır.
+
+1151
+01:55:25,319 --> 01:55:45,079
+Bu ekvasyonda, W'nin çapın kararının çapı, G'nin çapın açıdan, bu bir açıdan ve R'nin çapın açıdan ve X'nin çapın uzunluğundan.
+
+1152
+01:55:50,079 --> 01:55:54,079
+Çapın kararı, çapın açıdan, çapın açıdan, çapın uzunluğundan seçilmiştir.
+
+1153
+01:55:55,319 --> 01:56:06,239
+Örneğin, tipik değerler, G'nin çapı, R'nin çapı, 4'ün çapı olabilir.
+
+1154
+01:56:08,239 --> 01:56:22,359
+Şimdi, bu çapın açıdan kullanıldığımızda, dinamik programlamak, çapın açısı çok daha zorlaşır.
+
+1155
+01:56:25,319 --> 01:56:37,239
+Ben bunu çok yakışırken bu çapın açısından, çapın açısından, çapın derinliğini kullanmış, ve bu çapın açısından, çapın çapına battırmış, çapın ikili tamir çapına battırmış.
+
+1156
+01:56:37,559 --> 01:56:42,199
+Çünkü çapın açısı, geriye baktığımızda, 3'ün içine ayırmış.
+
+1157
+01:56:42,319 --> 01:56:50,000
+Aynı zamanda, çapın yukarıda, çapın arkasına, çapın yukarıda, çapın kökü, çapın sağa, çapın inekli rakamları var.
+
+1158
+01:56:50,799 --> 01:56:52,079
+Çapın içine de uygun oluyor.
+
+1159
+01:56:52,279 --> 01:56:54,000
+Bu çapın alanına, çapın var ya da çapın yukarıda.
+
+1160
+01:56:54,000 --> 01:56:54,799
+Bu çapın alanına, çapın yukarıda.
+
+1161
+01:56:55,319 --> 01:57:03,319
+M matriksi, D matriksi ve I matriksi.
+
+1162
+01:57:03,319 --> 01:57:09,319
+Şimdi dinamik programlamak çok daha zordur.
+
+1163
+01:57:09,319 --> 01:57:21,319
+Kesinlikle her algoritma kendi yaratıcıları var.
+
+1164
+01:57:21,319 --> 01:57:28,319
+Dinamik programlamakın faydası nedir?
+
+1165
+01:57:28,319 --> 01:57:32,319
+Dinamik programlamakın faydası nedir?
+
+1166
+01:57:32,319 --> 01:57:38,319
+Herkes bana söyleyebilir mi?
+
+1167
+01:57:38,319 --> 01:57:42,319
+Faydası nedir?
+
+1168
+01:57:51,319 --> 01:57:58,319
+Dönüş süresi ihtiyaçları nedir?
+
+1169
+01:57:58,319 --> 01:58:01,319
+Kesinlikle değil.
+
+1170
+01:58:01,319 --> 01:58:13,319
+Önemli faydalar.
+
+1171
+01:58:13,319 --> 01:58:16,319
+Önemli faydalar.
+
+1172
+01:58:16,319 --> 01:58:18,319
+Önemli faydalar.
+
+1173
+01:58:18,319 --> 01:58:20,319
+Önemli alaylar.
+
+1174
+01:58:20,319 --> 01:58:27,319
+Dönüş süresi ihtiyaçları nedir?
+
+1175
+01:58:27,319 --> 01:58:33,319
+Dönüş süresi ihtiyaçları nedir?
+
+1176
+01:58:33,319 --> 01:58:38,319
+Her solur shop operasyonu, destek gri ve Majestyd лучше oluyor.
+
+1177
+01:58:38,319 --> 01:58:47,319
+Kalan anayalamamız dahil olabiliyor ki arisekt Kimchi gurubnox'ın sahip olduğunden Dewi hem yani 1.5 ay차 yapıyorlar.
+
+1178
+01:58:47,319 --> 01:58:48,319
+Auch���ung also unter turbo große.
+
+1179
+01:58:48,319 --> 01:58:49,319
+Tüm kaukeường wo Truly.
+
+1180
+01:58:49,319 --> 01:58:50,319
+Erb weather we are learning 106 derece.
+
+1181
+01:58:50,319 --> 01:59:20,299
+İzlediğiniz için teşekkür ederim.
+
+1182
+01:59:20,319 --> 01:59:50,299
+İzlediğiniz için teşekkür ederim.
+
+1183
+01:59:50,319 --> 02:00:20,299
+İzlediğiniz için teşekkür ederim.
+
+1184
+02:00:00,000 --> 02:00:05,000
+Bu algoritma çok fazla hatırlatma ihtiyacı var.
+
+1185
+02:00:05,000 --> 02:00:12,000
+Sıfırı artırmaz ama çok fazla hatırlatma ihtiyacı var.
+
+1186
+02:00:12,000 --> 02:00:20,000
+Çünkü önümüzdeki çözümleri hatırlamalısınız.
+
+1187
+02:00:20,000 --> 02:00:35,000
+Önümüzdeki çözümleri hatırlamalısınız ve diğerleri unutmalısınız.
+
+1188
+02:00:35,000 --> 02:00:37,000
+Hayır, bu değil.
+
+1189
+02:00:37,000 --> 02:00:43,000
+Tüm çözümleri hatırlamalısınız ve tüm çözümleri hatırlamalısınız.
+
+1190
+02:00:43,000 --> 02:00:46,000
+Anlamalısınız.
+
+1191
+02:00:50,000 --> 02:00:54,000
+Anlamakta bir neighbour arabası var.
+
+1192
+02:00:54,000 --> 02:00:56,000
+Anlamakta bir numara aracı tabií var.
+
+1193
+02:00:57,000 --> 02:01:02,000
+Anlamakta bir numara aracı tabiiden bir numara aracı tabiidir.
+
+1194
+02:01:02,000 --> 02:01:07,000
+Bu numara n'in genci'de tamamlanan bir numarası var.
+
+1195
+02:01:07,000 --> 02:01:11,000
+Bu numara n'in genci'ye sahip olması gerektiği anlamında.
+
+1196
+02:01:11,000 --> 02:01:14,000
+Bu numara 4 adet original numara var.
+
+1197
+02:01:14,000 --> 02:01:17,439
+Bu numara n'in genci sebebi ov
+
+1198
+02:01:17,439 --> 02:01:19,439
+Bu numara n'in genci sebebi otomatik olarak değerlendirilmiştir.
+
+1199
+02:01:19,440 --> 02:01:39,440
+Bu dinamik programlarının bilgisayar algoritmaları gibi, Myers-Miller algoritması ya da neyse bilgisayar dinamik programlarının sınırsızlığı olarak tanımlanmıştır.
+
+1200
+02:01:39,440 --> 02:01:50,440
+Bilgisayarın tüm kwalitelerini de kullanırsanız, bilgisayarların sınırsızlığını yapmanız gelişti.
+
+1201
+02:01:51,440 --> 02:02:08,440
+Ancak bilgisayarları dinamik programlarının sınırsızlığı olarak tanımladığınızda, birçok dilim bilgisayara baktığınızda,
+
+1202
+02:02:09,440 --> 02:02:23,800
+Then you start sacrificing the one of the main advantage of dynamic programming which was it gives you the optimum solution.
+
+1203
+02:02:24,680 --> 02:02:37,700
+Other approaches or limited dynamic programming or bounded dynamic programming approaches may not guarantee to give you the optimum solution.
+
+1204
+02:02:39,440 --> 02:02:49,460
+Okay, these are some approaches to speed up the dynamic programming.
+
+1205
+02:02:51,460 --> 02:03:02,780
+But as I said, once you switch to these algorithms, then you may not be able to get the optimum solution.
+
+1206
+02:03:09,440 --> 02:03:22,800
+These algorithms basically tries to reduce the space requirements and hence to reduce the computational requirements.
+
+1207
+02:03:28,860 --> 02:03:39,420
+I leave this to you to research what is linear space algorithm and how linear space algorithm is used to speed up the dynamic programming.
+
+1208
+02:03:39,440 --> 02:03:44,260
+Or what is the bounded dynamic programming.
+
+1209
+02:03:45,320 --> 02:03:51,140
+This is, I leave this to you, please do study them.
+
+1210
+02:03:51,920 --> 02:03:59,160
+You are responsible if I ask you what is dynamic bounded dynamic programming, you should be able to
+
+1211
+02:04:01,480 --> 02:04:03,260
+tell me the answer.
+
+1212
+02:04:09,440 --> 02:04:17,320
+I simply exclude this from the lectures, but it is up to you to study them.
+
+1213
+02:04:20,120 --> 02:04:30,560
+Linear space algorithms, how it works, how it is used and bounded dynamic programming, what is the bounded dynamic programming, etc.
+
+1214
+02:04:35,840 --> 02:04:39,080
+Let's have a break, some 10 minutes break.
+
+1215
+02:04:39,440 --> 02:04:40,440
+Thank you very much.
+
+1216
+02:04:40,440 --> 02:04:42,440
+Thank you very much.
+
+1217
+02:05:00,000 --> 02:05:29,979
+Altyazı M.K.
+
+1218
+02:05:30,000 --> 02:05:59,979
+Altyazı M.K.
+
+1219
+02:06:00,000 --> 02:06:29,979
+Altyazı M.K.
+
+1220
+02:06:30,000 --> 02:06:59,979
+Altyazı M.K.
+
+1221
+02:07:00,000 --> 02:07:29,979
+Altyazı M.K.
+
+1222
+02:07:30,000 --> 02:07:59,979
+Altyazı M.K.
+
+1223
+02:08:00,000 --> 02:08:29,979
+Altyazı M.K.
+
+1224
+02:08:30,000 --> 02:08:59,979
+Altyazı M.K.
+
+1225
+02:09:00,000 --> 02:09:29,979
+Altyazı M.K.
+
+1226
+02:09:30,000 --> 02:09:59,979
+Altyazı M.K.
+
+1227
+02:10:00,000 --> 02:10:29,979
+Altyazı M.K.
+
+1228
+02:10:30,000 --> 02:10:59,979
+Altyazı M.K.
+
+1229
+02:11:00,000 --> 02:11:29,979
+Altyazı M.K.
+
+1230
+02:11:30,000 --> 02:11:59,979
+Altyazı M.K.
+
+1231
+02:12:00,000 --> 02:12:29,979
+Altyazı M.K.
+
+1232
+02:12:30,000 --> 02:12:59,979
+Altyazı M.K.
+
+1233
+02:13:00,000 --> 02:13:29,979
+Altyazı M.K.
+
+1234
+02:13:30,000 --> 02:13:59,979
+Altyazı M.K.
+
+1235
+02:14:00,000 --> 02:14:29,979
+Altyazı M.K.
+
+1236
+02:14:30,000 --> 02:14:59,979
+Altyazı M.K.
+
+1237
+02:15:00,000 --> 02:15:29,979
+Altyazı M.K.
+
+1238
+02:15:30,000 --> 02:15:59,979
+Altyazı M.K.
+
+1239
+02:15:59,980 --> 02:16:29,960
+Altyazı M.K.
+
+1240
+02:16:29,980 --> 02:16:59,960
+Altyazı M.K.
+
+1241
+02:16:59,979 --> 02:17:29,959
+Altyazı M.K.
+
+1242
+02:17:29,979 --> 02:17:59,959
+Altyazı M.K.
+
+1243
+02:17:59,979 --> 02:18:29,959
+Altyazı M.K.
+
+1244
+02:18:29,979 --> 02:18:59,959
+Altyazı M.K.
+
+1245
+02:18:59,979 --> 02:19:29,959
+Altyazı M.K.
+
+1246
+02:19:29,979 --> 02:19:59,959
+Altyazı M.K.
+
+1247
+02:19:59,979 --> 02:20:29,959
+Altyazı M.K.
+
+1248
+02:20:00,000 --> 02:20:14,280
+So this can be normalized.
+
+1249
+02:20:14,280 --> 02:20:24,079
+And this normalized row scores obtained using these non-gap scoring systems to obtain the
+
+1250
+02:20:24,079 --> 02:20:36,719
+amount of bits of information, which is known as nuts of information contained within a score.
+
+1251
+02:20:36,719 --> 02:20:42,959
+A row score can be normalized to a bit score using the following formula.
+
+1252
+02:20:42,959 --> 02:20:47,520
+This is the bit score in terms of the nuts.
+
+1253
+02:20:47,520 --> 02:20:49,600
+Lambda s minus
+
+1254
+02:20:54,079 --> 02:21:01,760
+natural logarithm k divided by natural logarithm 2.
+
+1255
+02:21:01,760 --> 02:21:06,760
+The E value
+
+1256
+02:21:06,760 --> 02:21:10,559
+corresponding to a given bit score
+
+1257
+02:21:10,559 --> 02:21:15,520
+then can be calculated as this one.
+
+1258
+02:21:15,520 --> 02:21:21,399
+E equals m times n to minus
+
+1259
+02:21:21,399 --> 02:21:24,039
+this bit score.
+
+1260
+02:21:24,079 --> 02:21:31,760
+So converting to nuts is similar again.
+
+1261
+02:21:31,760 --> 02:21:47,760
+And probability, p-value is the probability, p-value can be calculated as the probability of obtaining a given score at random.
+
+1262
+02:21:47,760 --> 02:21:53,760
+And these p-values can be estimated as this one, one minus
+
+1263
+02:21:53,760 --> 02:21:58,440
+E over this E.
+
+1264
+02:21:58,440 --> 02:22:10,399
+And this can be simply approximated to this one, E over minus E.
+
+1265
+02:22:10,399 --> 02:22:21,440
+If a scoring matrix has been scaled to bit scores, then it can quickly be determined whether or not an alignment is significant.
+
+1266
+02:22:21,440 --> 02:22:23,440
+For a typical aminal matrix,
+
+1267
+02:22:23,440 --> 02:22:34,680
+aminal set scoring matrix k is taken as 0.1 and lambda depends on the values of the scoring matrix.
+
+1268
+02:22:34,680 --> 02:22:42,360
+If a PAM or blossom matrix is used, then lambda is pre-computed.
+
+1269
+02:22:42,360 --> 02:22:52,120
+For example, if the log odds matrix is in units of bits, then lambda will equal to log base E.
+
+1270
+02:22:52,120 --> 02:22:53,120
+For example, if the log odds matrix is in units of bits, then lambda will equal to log base E.
+
+1271
+02:22:53,120 --> 02:22:54,120
+For example, if the log odds matrix is in uds, then lambda is pre-computed.
+
+1272
+02:22:54,120 --> 02:22:55,120
+So this Il meters will equal to lambda.
+
+1273
+02:22:55,120 --> 02:23:00,120
+And the blocks we just installed will be two and plus one, and the block I just Drawed also
+
+1274
+02:23:00,120 --> 02:23:01,120
+does not equal to lambda.
+
+1275
+02:23:01,120 --> 02:23:10,160
+wastepers don't equal to lambda for this traveling the subjects значит ki
+
+1276
+02:23:10,160 --> 02:23:21,180
+I can take all of them and enter from here doing multi pound descent.
+
+1277
+02:23:21,180 --> 02:23:22,760
+It's almost 90% it'succesal by yourself and pk-1 star to removembol degrees 0.2-100 , velas
+
+1278
+02:23:22,760 --> 02:23:22,880
+haline錢 pengen trusting creative solution of a text of machine mode.
+
+1279
+02:23:22,880 --> 02:23:23,020
+The others shown in GG modeling details look like this.
+
+1280
+02:23:23,020 --> 02:23:23,120
+keep in mind that It is a calculation that takes from the see picture in an example.
+
+1281
+02:23:23,120 --> 02:23:30,079
+Converting to log to x gives bits of information rather than 10.
+
+1282
+02:23:31,540 --> 02:23:38,579
+Converting to log e, x gives nets, natural nets.
+
+1283
+02:23:38,740 --> 02:23:40,480
+It's called nets of information.
+
+1284
+02:23:43,940 --> 02:23:49,280
+This is the quick calculation for significance cutoff.
+
+1285
+02:23:49,280 --> 02:23:53,460
+With an example, we'll see this in a minute.
+
+1286
+02:23:54,239 --> 02:24:05,600
+Let's suppose we have two sequences, each approximately 250 amino acids long that are aligned using a Smith-Waterman approach.
+
+1287
+02:24:08,840 --> 02:24:15,280
+Now, in this case, significance cutoff is log to 250 times.
+
+1288
+02:24:15,380 --> 02:24:18,920
+250 because it's base 2.
+
+1289
+02:24:19,280 --> 02:24:21,040
+It's 16 bits.
+
+1290
+02:24:22,140 --> 02:24:24,980
+We have this significance cutoff.
+
+1291
+02:24:25,900 --> 02:24:35,480
+Now, next, using PAMP 250, the following alignment is found.
+
+1292
+02:24:43,100 --> 02:24:46,900
+We assume that following alignment is found.
+
+1293
+02:24:48,200 --> 02:24:49,140
+PAMP 250 is found.
+
+1294
+02:24:49,140 --> 02:24:49,200
+PAMP 250 is found.
+
+1295
+02:24:49,200 --> 02:24:49,239
+PAMP 250 is found.
+
+1296
+02:24:49,239 --> 02:24:49,260
+PAMP 250 is found.
+
+1297
+02:24:49,260 --> 02:24:49,280
+PAMP 250 is found.
+
+1298
+02:24:49,280 --> 02:24:49,500
+PAMP 250 is found.
+
+1299
+02:24:49,500 --> 02:24:49,520
+PAMP 250 is found.
+
+1300
+02:24:49,520 --> 02:24:49,540
+PAMP 250 is found.
+
+1301
+02:24:49,540 --> 02:24:49,560
+PAMP 250 is found.
+
+1302
+02:24:49,560 --> 02:24:49,579
+PAMP 250 is found.
+
+1303
+02:24:49,579 --> 02:24:49,620
+PAMP 250 is found.
+
+1304
+02:24:49,620 --> 02:24:49,680
+PAMP 250 is found.
+
+1305
+02:24:49,680 --> 02:24:49,739
+PAMP 250 is found.
+
+1306
+02:24:49,739 --> 02:24:49,780
+PAMP 250 is found.
+
+1307
+02:24:49,780 --> 02:24:49,820
+PAMP 250 is found.
+
+1308
+02:24:49,820 --> 02:24:49,840
+PAMP 250 is found.
+
+1309
+02:24:49,840 --> 02:24:49,860
+PAMP 250 is found.
+
+1310
+02:24:49,860 --> 02:24:49,880
+PAMP 250 is found.
+
+1311
+02:24:49,880 --> 02:24:49,900
+PAMP 250 is found.
+
+1312
+02:24:49,900 --> 02:24:49,920
+PAMP 250 is found.
+
+1313
+02:24:49,920 --> 02:24:49,940
+PAMP 250 is found.
+
+1314
+02:24:49,940 --> 02:24:49,980
+PAMP 250 is found.
+
+1315
+02:24:49,980 --> 02:24:50,040
+PAMP 250 is found.
+
+1316
+02:24:50,040 --> 02:24:50,079
+PAMP 250 is found.
+
+1317
+02:24:50,079 --> 02:24:50,120
+PAMP 250 is found.
+
+1318
+02:24:50,120 --> 02:25:02,140
+PAMP 250 is found.
+
+1319
+02:25:00,000 --> 02:25:15,280
+the matrix is this one for example ff should be f here to f just let me use pen f is here
+
+1320
+02:25:02,140 --> 02:25:02,180
+PAMP 250 is found.
+
+1321
+02:25:02,180 --> 02:25:02,239
+PAMP 250 is found.
+
+1322
+02:25:02,239 --> 02:25:02,260
+PAMP 250 is found.
+
+1323
+02:25:16,799 --> 02:25:23,920
+up to goes here and intersection of other f is value nine
+
+1324
+02:25:23,920 --> 02:25:37,799
+then others i can give f w to w w is here and the other wc is 17 etc
+
+1325
+02:25:37,799 --> 02:25:53,399
+all the scores are determined and the total score is pound to be 73 now this is s we we
+
+1326
+02:25:53,399 --> 02:25:53,639
+we
+
+1327
+02:25:53,920 --> 02:25:56,040
+used in the equation
+
+1328
+02:26:00,440 --> 02:26:07,239
+now s is 10 log 10 x s divided by 10 equals log 10 x
+
+1329
+02:26:09,319 --> 02:26:17,399
+s divided by 10 log 10 x times log 2 10 divided by log 2 10
+
+1330
+02:26:19,960 --> 02:26:23,879
+and so on we determined
+
+1331
+02:26:23,920 --> 02:26:33,399
+approximately log 2 x to be 0.2 s
+
+1332
+02:26:36,120 --> 02:26:43,159
+so s prime is approximately which is his value in terms of the bit 1 over 3 s s was basically
+
+1333
+02:26:43,159 --> 02:26:53,319
+approximately which is his value in terms of the beats one over three s s was basically
+
+1334
+02:26:53,920 --> 02:27:10,960
+is 73 here 73 now it's very easy to determine the s prime s prime is 24.333 bits say 25 bits
+
+1335
+02:27:10,960 --> 02:27:23,360
+or 24 bits whatever now the significance cutoff was 16 bits now the since the alignment score
+
+1336
+02:27:24,879 --> 02:27:32,319
+we determined is above the significant cutoff alignment score in terms of the bits is
+
+1337
+02:27:32,319 --> 02:27:40,079
+24 bits is greater than 16 bits so we say that this is a significant local alignment
+
+1338
+02:27:43,200 --> 02:27:45,520
+well although there are quite complicated
+
+1339
+02:27:46,399 --> 02:27:51,920
+statistical equations but at the end it becomes this is estimation anyway
+
+1340
+02:27:53,440 --> 02:27:53,840
+alignment
+
+1341
+02:27:53,920 --> 02:28:02,399
+and this is roughly the significance cutoff and that's the statistics we obtain about the
+
+1342
+02:28:02,399 --> 02:28:12,960
+significance of alignment when we compare them and if the score in terms of the bits is greater than
+
+1343
+02:28:12,960 --> 02:28:17,840
+significance cutoff then we say that alignment is significant
+
+1344
+02:28:17,840 --> 02:28:19,760
+alignment is significant
+
+1345
+02:28:26,000 --> 02:28:29,440
+so the estimation of this e and p
+
+1346
+02:28:31,840 --> 02:28:43,360
+is done by using these matrices as we already said for pam 250 k 0.09 lambda is 0.229
+
+1347
+02:28:45,520 --> 02:28:47,760
+we can convert this score to a b
+
+1348
+02:28:47,840 --> 02:28:53,840
+from 16 bits we can transfer to the we can go to an e dot fuUI function
+
+1349
+02:28:54,880 --> 02:28:57,920
+where it's a not necessarily n but the samp baskоль
+
+1350
+02:28:58,559 --> 02:29:01,840
+now we'reren't gonna say three right there went to sleep
+
+1351
+02:29:01,840 --> 02:29:04,239
+but we wanted to do it and it was given in the last case
+
+1352
+02:29:06,719 --> 02:29:13,680
+and here are the opportunities for us to see the types of the two
+
+1353
+02:29:13,680 --> 02:29:17,520
+is to try and the n common so we'll go to learning the n now
+
+1354
+02:29:17,840 --> 02:29:23,120
+in this case it is very very small
+
+1355
+02:29:27,200 --> 02:29:34,559
+so get alignments make use of the same statistics as ungupped alignments in determining the
+
+1356
+02:29:34,559 --> 02:29:44,639
+statistical significance however in gap alignments the values for lambda and k cannot be easily
+
+1357
+02:29:44,639 --> 02:29:52,559
+estimated in this case some empirical estimations and gap scores have been determined by looking at
+
+1358
+02:29:52,559 --> 02:29:59,359
+the alignments of randomized sequences so biasing statistics can be used
+
+1359
+02:30:00,799 --> 02:30:07,120
+we have studied these bayesian statistics in statistical data analogies and probably
+
+1360
+02:30:07,120 --> 02:30:15,040
+you have studied in some other courses as well they are built upon conditional probabilities
+
+1361
+02:30:17,600 --> 02:30:23,280
+which are used to drive the joint probability of two events or conditions
+
+1362
+02:30:23,280 --> 02:30:34,320
+here is p b a is the probability of b given condition a is true probability b is the
+
+1363
+02:30:34,320 --> 02:30:42,000
+individual probability of condition b regardless of condition a
+
+1364
+02:30:44,880 --> 02:30:53,200
+probability a b a comma b is joint probability of a and b occurring seamlessly
+
+1365
+02:30:53,280 --> 02:30:58,480
+simultaneously these notations are important this is the conditional notation
+
+1366
+02:30:59,440 --> 02:31:02,000
+this is the joint probability notation
+
+1367
+02:31:06,400 --> 02:31:14,640
+let's suppose that a can have two states such as a1 and a2 and b can have two states b1 and b2
+
+1368
+02:31:16,480 --> 02:31:20,720
+let's suppose that probability of b1 is 0.3 is known
+
+1369
+02:31:22,079 --> 02:31:22,880
+and therefore
+
+1370
+02:31:22,880 --> 02:31:23,280
+probability of b1 is 0.3 is known
+
+1371
+02:31:23,280 --> 02:31:32,560
+the probability of b2 will be obvious the 1 minus 0.3 with 0.7 these probabilities are known
+
+1372
+02:31:33,280 --> 02:31:37,840
+as marginal probabilities these are the marginal probabilities
+
+1373
+02:31:40,320 --> 02:31:47,840
+now we would like to determine the probability of a1 and b1 occurring together which is denoted as
+
+1374
+02:31:49,280 --> 02:31:53,200
+this one probability a1 comma b1
+
+1375
+02:31:53,680 --> 02:31:54,720
+and b1 is joint probability
+
+1376
+02:31:56,480 --> 02:32:03,440
+we should note that in this case the marginal probabilities a1 and a2 are missing
+
+1377
+02:32:04,880 --> 02:32:09,440
+therefore there is not enough information at this point to calculate the marginal probability
+
+1378
+02:32:11,440 --> 02:32:19,040
+however if more information about the joint occurrence of a1 and b1 are given then the joint
+
+1379
+02:32:19,040 --> 02:32:21,280
+probabilities may be generated permanently
+
+1380
+02:32:21,280 --> 02:32:22,820
+as you look at the previous calculations
+
+1381
+02:32:23,280 --> 02:32:35,840
+be derived using buyer's rule okay probability a1 b1 could be derived by using this
+
+1382
+02:32:38,560 --> 02:32:40,239
+probability a1
+
+1383
+02:32:42,560 --> 02:32:48,400
+b1 can be again obtained probability a1 probability b1 a1
+
+1384
+02:32:53,280 --> 02:33:00,880
+let's suppose that we are given this probability conditional probability of
+
+1385
+02:33:00,880 --> 02:33:10,239
+a1 supposing that b1 is true as 0.8 then since there are only two different possible states for
+
+1386
+02:33:10,239 --> 02:33:22,720
+a probability of a2 b1 can be determined by 1 minus 0.8 0.0.2 if we are also given
+
+1387
+02:33:23,360 --> 02:33:36,400
+this as 0.7 then the probability of a1 on the condition that b2 is true is 0.3
+
+1388
+02:33:41,280 --> 02:33:45,360
+again using buyer's rule the joint probability of having states a1 and b1
+
+1389
+02:33:45,360 --> 02:33:50,800
+occurring at the same time can be determined by using this equation
+
+1390
+02:33:53,920 --> 02:33:54,960
+and this equation
+
+1391
+02:33:57,200 --> 02:34:02,960
+the other joint probabilities can be calculated from these as well so this is biasing
+
+1392
+02:34:02,960 --> 02:34:06,640
+statistics and it is extensively used
+
+1393
+02:34:10,560 --> 02:34:14,400
+it is possible to talk about posterior probabilities
+
+1394
+02:34:19,760 --> 02:34:23,040
+these basically these posterior probabilities
+
+1395
+02:34:23,600 --> 02:34:25,280
+Allegra exchange of satisfied working probabilities
+
+1396
+02:34:26,400 --> 02:34:28,960
+times second and third
+
+1397
+02:34:31,680 --> 02:34:44,820
+we can also name these congress graph when it has a constant
+
+1398
+02:34:45,440 --> 02:34:51,040
+and there is a solution of a Poisson equation
+
+1399
+02:34:51,680 --> 02:34:53,120
+which is the function of the graph
+
+1400
+02:34:53,120 --> 02:34:59,040
+beyond the scope of this course and biasing statistics are extensively used
+
+1401
+02:35:00,000 --> 02:35:06,639
+in bioinformatics and in other fields as well in applications of bayesian statistics
+
+1402
+02:35:08,639 --> 02:35:16,479
+are evolutionary distance between two sequences in sequence alignments determining significance
+
+1403
+02:35:16,479 --> 02:35:24,000
+of alignments uh jeep sampling we have not mentioned what is jeep samplings but later
+
+1404
+02:35:24,000 --> 02:35:33,760
+probably we'll be talking about these are some examples example applications of bayesian
+
+1405
+02:35:33,760 --> 02:35:40,639
+statistics there are pairwise sequence alignment programs
+
+1406
+02:35:43,760 --> 02:35:52,879
+one is needle global middleman range alignment another is water locals with watermelon alignment
+
+1407
+02:35:53,520 --> 02:35:53,920
+blast
+
+1408
+02:35:54,000 --> 02:36:04,159
+two sequence alignment is l align this is the pasta package it also provides multiple local
+
+1409
+02:36:04,159 --> 02:36:15,120
+alignments we will be discussing multiple sequence alignments next why is to this is the genomic to
+
+1410
+02:36:15,120 --> 02:36:23,520
+protein sim for alliance expressed dna to genomic sequences by the etc etc some of these problems
+
+1411
+02:36:24,239 --> 02:36:34,959
+probably no more exist but some more extra programs may also be found in the net for these
+
+1412
+02:36:34,959 --> 02:36:43,360
+sequence alignments these are these were some already implemented algorithms or
+
+1413
+02:36:45,520 --> 02:36:53,280
+um more correctly there are tools for sequence alignment developed by
+
+1414
+02:36:54,399 --> 02:36:56,319
+computer scientists like you
+
+1415
+02:37:03,120 --> 02:37:04,799
+any questions so far
+
+1416
+02:37:14,239 --> 02:37:15,280
+do you have any question
+
+1417
+02:37:24,000 --> 02:37:36,000
+no
+
+1418
+02:37:36,000 --> 02:37:37,040
+no
+
+1419
+02:37:37,040 --> 02:37:38,079
+no
+
+1420
+02:37:38,079 --> 02:37:39,440
+no
+
+1421
+02:37:39,440 --> 02:37:45,760
+let me see if we have some relevant example to go over
+
+1422
+02:37:48,000 --> 02:37:52,399
+now these are these are later subjects basically
+
+1423
+02:37:54,000 --> 02:37:57,059
+Some tutorial examples
+
+1424
+02:38:24,000 --> 02:38:35,059
+Okay, here we have some examples, maybe relevant to what we have studied.
+
+1425
+02:38:40,860 --> 02:38:49,860
+This, given the sequences, these two sequences, find the dot plot of the sequence.
+
+1426
+02:38:51,020 --> 02:38:53,700
+This is very easy, this part.
+
+1427
+02:38:54,000 --> 02:39:01,100
+If we want to determine the dot plot, I simply go over here.
+
+1428
+02:39:04,360 --> 02:39:08,299
+We have some 10 minutes to go.
+
+1429
+02:39:10,520 --> 02:39:19,600
+If there is a match, let's place a circle dot here, circle here, or X.
+
+1430
+02:39:20,079 --> 02:39:21,440
+Let me put X here.
+
+1431
+02:39:24,000 --> 02:39:29,360
+If there is no match, put nothing.
+
+1432
+02:39:30,280 --> 02:39:35,700
+You simply go over F, and then if there is another, there is no other F here.
+
+1433
+02:39:36,959 --> 02:39:37,280
+K.
+
+1434
+02:39:38,959 --> 02:39:40,700
+There is no K here.
+
+1435
+02:39:40,940 --> 02:39:41,379
+H.
+
+1436
+02:39:43,479 --> 02:39:45,120
+There is no H.
+
+1437
+02:39:47,659 --> 02:39:53,780
+And there is one M here, just place one X.
+
+1438
+02:39:54,000 --> 02:39:55,120
+Thank you.
+
+1439
+02:39:55,219 --> 02:39:56,500
+Thank you.
+
+1440
+02:40:00,000 --> 02:40:29,559
+E there is one here, D one here, P one here, L one here, E one here.
+
+1441
+02:40:08,559 --> 02:40:10,479
+.
+
+1442
+02:40:10,479 --> 02:40:13,399
+Subtitles by the Amara.org community
+
+1443
+02:40:15,299 --> 02:40:18,680
+.
+
+1444
+02:40:18,680 --> 02:40:20,100
+The Kalit coaches should recognize you.
+
+1445
+02:40:20,219 --> 02:40:21,280
+Your partnership brings peace, encrypted communication, and more.
+
+1446
+02:40:21,360 --> 02:40:21,639
+Thank you.
+
+1447
+02:40:21,639 --> 02:40:21,879
+Thank you.
+
+1448
+02:40:21,879 --> 02:40:22,059
+Thank you.
+
+1449
+02:40:22,100 --> 02:40:22,299
+Bye teachers.
+
+1450
+02:40:22,399 --> 02:40:22,620
+Cheers.
+
+1451
+02:40:22,620 --> 02:40:22,760
+Thank you.
+
+1452
+02:40:22,760 --> 02:40:23,219
+.
+
+1453
+02:40:30,000 --> 02:40:38,040
+This is just very simple, to find the dot plot of this three-sequence.
+
+1454
+02:40:38,040 --> 02:40:41,479
+This is the ordinary dot plot.
+
+1455
+02:40:41,479 --> 02:40:47,760
+In the second option, repeat the dot plot, considering a sliding window size of three
+
+1456
+02:40:47,760 --> 02:40:56,000
+and a similarity cut of two.
+
+1457
+02:40:56,000 --> 02:40:59,979
+In this case, we have to be a little bit more.
+
+1458
+02:40:59,979 --> 02:41:03,020
+Careful.
+
+1459
+02:41:03,020 --> 02:41:10,159
+Starting from here, assuming that there is a gap here, and you will take basically these
+
+1460
+02:41:10,159 --> 02:41:19,639
+three and compare with three groups each time.
+
+1461
+02:41:19,639 --> 02:41:28,260
+And you will be looking at
+
+1462
+02:41:28,260 --> 02:41:29,760
+that at least two
+
+1463
+02:41:29,760 --> 02:41:29,840
+.
+
+1464
+02:41:29,840 --> 02:41:29,859
+.
+
+1465
+02:41:29,859 --> 02:41:29,879
+.
+
+1466
+02:41:29,879 --> 02:41:29,920
+.
+
+1467
+02:41:29,920 --> 02:41:29,939
+.
+
+1468
+02:41:29,939 --> 02:41:29,959
+.
+
+1469
+02:41:29,959 --> 02:41:29,979
+.
+
+1470
+02:41:29,979 --> 02:41:30,139
+.
+
+1471
+02:41:30,139 --> 02:41:30,199
+.
+
+1472
+02:41:30,199 --> 02:41:30,219
+.
+
+1473
+02:41:30,219 --> 02:41:30,920
+.
+
+1474
+02:41:30,920 --> 02:41:33,079
+.
+
+1475
+02:41:33,079 --> 02:41:33,119
+.
+
+1476
+02:41:33,119 --> 02:41:33,139
+.
+
+1477
+02:41:33,139 --> 02:41:33,159
+.
+
+1478
+02:41:33,159 --> 02:41:33,260
+.
+
+1479
+02:41:33,260 --> 02:41:33,299
+.
+
+1480
+02:41:33,299 --> 02:41:33,319
+.
+
+1481
+02:41:33,319 --> 02:41:33,340
+.
+
+1482
+02:41:33,340 --> 02:41:33,359
+.
+
+1483
+02:41:33,359 --> 02:41:33,379
+.
+
+1484
+02:41:33,379 --> 02:41:34,719
+.
+
+1485
+02:41:34,719 --> 02:41:34,840
+.
+
+1486
+02:41:34,840 --> 02:41:34,879
+.
+
+1487
+02:41:34,879 --> 02:41:40,659
+If there is such a match, then you will assume that this is a match.
+
+1488
+02:41:41,199 --> 02:41:44,319
+This is the idea in noise filtering.
+
+1489
+02:41:46,699 --> 02:41:51,819
+Elimination of random noises in dot plot.
+
+1490
+02:41:53,439 --> 02:41:58,739
+If you do this, for example, we take this first one as.
+
+1491
+02:41:59,920 --> 02:41:59,959
+.
+
+1492
+02:42:00,280 --> 02:42:10,680
+you don't have to take this you can directly start by taking this fkh fmd fkh mdt or whatever but
+
+1493
+02:42:11,800 --> 02:42:22,200
+just to include one this gap at the initial because there might be some possible
+
+1494
+02:42:22,200 --> 02:42:33,720
+match of two letters i started here now we just compare dash fk to dash fm no match
+
+1495
+02:42:33,720 --> 02:42:44,600
+you go to compare with fmd no match mdt no match each time the first
+
+1496
+02:42:46,120 --> 02:42:49,000
+we compare with this one the second
+
+1497
+02:42:49,000 --> 02:42:52,200
+first we take
+
+1498
+02:42:52,200 --> 02:43:01,720
+this let me this pattern and compare with first this one then next compare with this one next
+
+1499
+02:43:01,720 --> 02:43:10,120
+compare with this one next compare with this one next we compare with this one we compare with
+
+1500
+02:43:10,120 --> 02:43:18,120
+this one and we compare with this one and finally we compare with this one because there is a
+
+1501
+02:43:18,120 --> 02:43:24,360
+possibility of matching these two if there is there is a match then we place a match there
+
+1502
+02:43:28,440 --> 02:43:29,160
+the next
+
+1503
+02:43:38,200 --> 02:43:41,720
+we take the next window this is again
+
+1504
+02:43:41,719 --> 02:43:55,079
+double four four loop we take these three then we start again from here first we compare with
+
+1505
+02:43:55,079 --> 02:44:11,319
+this one fkh then with this one fkh fmd fkh mdt and we just go over and we see if two of
+
+1506
+02:44:11,719 --> 02:44:20,119
+these comparisons matches then we will place a match sign here
+
+1507
+02:44:22,599 --> 02:44:31,159
+anyway you just do this until to the end hopefully we have
+
+1508
+02:44:34,679 --> 02:44:36,760
+answer somewhere here i don't know
+
+1509
+02:44:42,119 --> 02:44:43,799
+no we don't have answer here
+
+1510
+02:44:51,559 --> 02:44:55,799
+but you've got the idea in in c fill in the dynamic
+
+1511
+02:44:55,799 --> 02:45:00,119
+programming matrix for global alignment using the following scoring rule
+
+1512
+02:45:00,000 --> 02:45:03,180
+or match score plus one
+
+1513
+02:45:03,180 --> 02:45:04,760
+mismatch score minus two
+
+1514
+02:45:04,760 --> 02:45:06,280
+gap penalty minus two
+
+1515
+02:45:06,280 --> 02:45:12,120
+initialization
+
+1516
+02:45:12,120 --> 02:45:16,520
+what will be the initialization
+
+1517
+02:45:16,520 --> 02:45:21,780
+minus two
+
+1518
+02:45:21,780 --> 02:45:27,399
+this one
+
+1519
+02:45:27,399 --> 02:45:34,840
+what will be this one
+
+1520
+02:45:34,840 --> 02:45:44,399
+I'm waiting an answer from you
+
+1521
+02:45:44,399 --> 02:45:49,879
+eksi iki hocam
+
+1522
+02:45:49,879 --> 02:45:51,059
+efendim
+
+1523
+02:45:51,059 --> 02:45:53,039
+eksi iki
+
+1524
+02:45:53,039 --> 02:45:54,699
+hayır
+
+1525
+02:45:57,399 --> 02:45:58,739
+what was the initialization
+
+1526
+02:45:58,739 --> 02:46:00,359
+index times
+
+1527
+02:46:00,359 --> 02:46:01,680
+gap penalty
+
+1528
+02:46:01,680 --> 02:46:06,020
+index
+
+1529
+02:46:06,020 --> 02:46:07,940
+indexleri de buraya yazayım
+
+1530
+02:46:07,940 --> 02:46:10,959
+sıfır
+
+1531
+02:46:10,959 --> 02:46:12,859
+bir
+
+1532
+02:46:12,859 --> 02:46:15,359
+iki
+
+1533
+02:46:15,359 --> 02:46:17,340
+üç
+
+1534
+02:46:17,340 --> 02:46:19,959
+dört
+
+1535
+02:46:19,959 --> 02:46:21,940
+beş
+
+1536
+02:46:21,940 --> 02:46:24,020
+altı
+
+1537
+02:46:24,020 --> 02:46:26,059
+yedi
+
+1538
+02:46:26,059 --> 02:46:27,059
+üç
+
+1539
+02:46:27,399 --> 02:46:28,399
+sekiz
+
+1540
+02:46:28,399 --> 02:46:30,359
+bu da aynı şekilde
+
+1541
+02:46:30,359 --> 02:46:31,399
+bir
+
+1542
+02:46:31,399 --> 02:46:34,399
+pardon
+
+1543
+02:46:34,399 --> 02:46:35,920
+evet evet
+
+1544
+02:46:35,920 --> 02:46:36,779
+burası sıfır
+
+1545
+02:46:36,779 --> 02:46:38,440
+bir
+
+1546
+02:46:38,440 --> 02:46:40,260
+iki
+
+1547
+02:46:40,260 --> 02:46:42,139
+üç
+
+1548
+02:46:42,139 --> 02:46:44,239
+dört
+
+1549
+02:46:44,239 --> 02:46:46,020
+beş
+
+1550
+02:46:46,020 --> 02:46:47,979
+altı
+
+1551
+02:46:47,979 --> 02:46:49,979
+yedi
+
+1552
+02:46:49,979 --> 02:46:52,739
+sekiz
+
+1553
+02:46:52,739 --> 02:46:54,139
+dokuz
+
+1554
+02:46:54,139 --> 02:46:54,979
+bunlar indeks
+
+1555
+02:46:54,979 --> 02:46:57,359
+yani böyle yazdım ama
+
+1556
+02:46:57,359 --> 02:46:57,379
+bu da aynı şekilde
+
+1557
+02:46:57,399 --> 02:46:58,399
+başka hani
+
+1558
+02:46:58,399 --> 02:46:59,399
+efendim
+
+1559
+02:46:59,399 --> 02:47:00,399
+now we have
+
+1560
+02:47:00,399 --> 02:47:01,399
+minus
+
+1561
+02:47:01,399 --> 02:47:02,399
+this
+
+1562
+02:47:02,399 --> 02:47:03,399
+ne oldu
+
+1563
+02:47:03,399 --> 02:47:04,399
+minus
+
+1564
+02:47:04,399 --> 02:47:05,399
+ne oldu bu
+
+1565
+02:47:05,399 --> 02:47:06,399
+başlangıcı
+
+1566
+02:47:06,399 --> 02:47:07,399
+dört
+
+1567
+02:47:07,399 --> 02:47:08,399
+eksi dördüncü
+
+1568
+02:47:08,399 --> 02:47:09,399
+hocam
+
+1569
+02:47:09,399 --> 02:47:10,399
+eksi sekiz
+
+1570
+02:47:10,399 --> 02:47:11,399
+dört
+
+1571
+02:47:11,399 --> 02:47:12,399
+eksi sekiz
+
+1572
+02:47:12,399 --> 02:47:13,399
+dört
+
+1573
+02:47:13,399 --> 02:47:14,399
+eksi sekiz
+
+1574
+02:47:14,399 --> 02:47:15,399
+dört
+
+1575
+02:47:15,399 --> 02:47:16,399
+dört
+
+1576
+02:47:16,399 --> 02:47:17,399
+dört
+
+1577
+02:47:17,399 --> 02:47:18,399
+dört
+
+1578
+02:47:18,399 --> 02:47:19,399
+dört
+
+1579
+02:47:19,399 --> 02:47:20,399
+dört
+
+1580
+02:47:20,399 --> 02:47:21,399
+dört
+
+1581
+02:47:21,399 --> 02:47:22,399
+dört
+
+1582
+02:47:22,399 --> 02:47:23,399
+dört
+
+1583
+02:47:23,399 --> 02:47:24,399
+dört
+
+1584
+02:47:24,399 --> 02:47:25,399
+dört
+
+1585
+02:47:25,399 --> 02:47:26,399
+dört
+
+1586
+02:47:26,399 --> 02:47:33,399
+yanlış yanlış yaptım
+
+1587
+02:47:33,399 --> 02:47:34,399
+eksi altı
+
+1588
+02:47:34,399 --> 02:47:35,399
+eksi altı
+
+1589
+02:47:35,399 --> 02:47:36,399
+terim hocam
+
+1590
+02:47:36,399 --> 02:47:43,399
+üç çarpı eksi iki dört çarpı eksi iki eksi sekiz
+
+1591
+02:47:43,399 --> 02:47:44,399
+eksi
+
+1592
+02:47:44,399 --> 02:47:46,399
+on
+
+1593
+02:47:46,399 --> 02:47:50,399
+eksi on iki
+
+1594
+02:47:50,399 --> 02:47:52,399
+eksi
+
+1595
+02:47:52,399 --> 02:47:54,399
+on dört
+
+1596
+02:47:54,399 --> 02:47:55,399
+dört
+
+1597
+02:47:55,399 --> 02:47:56,159
+14
+
+1598
+02:47:56,159 --> 02:48:00,639
+eksi
+
+1599
+02:48:00,639 --> 02:48:01,940
+16
+
+1600
+02:48:01,940 --> 02:48:05,420
+Bu da aynı şekilde.
+
+1601
+02:48:06,159 --> 02:48:06,619
+0
+
+1602
+02:48:06,619 --> 02:48:08,340
+eksi 2
+
+1603
+02:48:08,340 --> 02:48:11,000
+eksi 4
+
+1604
+02:48:11,000 --> 02:48:13,079
+eksi 6
+
+1605
+02:48:13,079 --> 02:48:15,760
+eksi 8
+
+1606
+02:48:15,760 --> 02:48:17,959
+eksi 10
+
+1607
+02:48:17,959 --> 02:48:21,440
+eksi 12
+
+1608
+02:48:21,440 --> 02:48:24,760
+eksi 14
+
+1609
+02:48:24,760 --> 02:48:27,420
+eksi 16
+
+1610
+02:48:27,420 --> 02:48:30,780
+eksi 18
+
+1611
+02:48:30,780 --> 02:48:33,340
+Next
+
+1612
+02:48:33,340 --> 02:48:35,979
+We have to determine the value of this.
+
+1613
+02:48:37,719 --> 02:48:38,800
+Nasıldı?
+
+1614
+02:48:42,100 --> 02:48:45,360
+Match or mismatch score
+
+1615
+02:48:45,360 --> 02:48:47,960
+Formülü hatırlayın.
+
+1616
+02:48:49,020 --> 02:48:49,559
+Max
+
+1617
+02:48:49,559 --> 02:48:51,780
+Match or mismatch score
+
+1618
+02:48:51,780 --> 02:48:54,420
+Plus value of the diagonal
+
+1619
+02:48:54,420 --> 02:48:56,420
+0 burada
+
+1620
+02:48:56,420 --> 02:48:58,139
+or
+
+1621
+02:48:58,139 --> 02:49:03,100
+minus 2
+
+1622
+02:49:03,100 --> 02:49:06,620
+plus minus 2
+
+1623
+02:49:06,620 --> 02:49:08,940
+or minus 2 plus minus 2
+
+1624
+02:49:08,940 --> 02:49:10,260
+These are minus 4
+
+1625
+02:49:10,260 --> 02:49:13,299
+Match score is
+
+1626
+02:49:13,299 --> 02:49:16,239
+plus 1
+
+1627
+02:49:16,239 --> 02:49:17,420
+Burası ne olacak?
+
+1628
+02:49:20,120 --> 02:49:21,280
+Artı 1 olmayacak mı?
+
+1629
+02:49:21,620 --> 02:49:22,020
+Nasıl?
+
+1630
+02:49:22,960 --> 02:49:24,000
+Normal artı 1
+
+1631
+02:49:24,000 --> 02:49:24,360
+Artı 1
+
+1632
+02:49:24,360 --> 02:49:24,399
+Artı 1
+
+1633
+02:49:24,420 --> 02:49:25,559
+Evet artı 1
+
+1634
+02:49:25,559 --> 02:49:28,159
+Çünkü şu formülü de yazalım buraya
+
+1635
+02:49:28,159 --> 02:49:28,659
+Max
+
+1636
+02:49:28,659 --> 02:49:30,760
+Parantez içinde
+
+1637
+02:49:30,760 --> 02:49:34,559
+1 artı
+
+1638
+02:49:34,559 --> 02:49:37,940
+0 virgül
+
+1639
+02:49:37,940 --> 02:49:42,299
+eksi 2
+
+1640
+02:49:42,299 --> 02:49:45,739
+eksi 2 virgül
+
+1641
+02:49:45,739 --> 02:49:48,239
+eksi 2
+
+1642
+02:49:48,239 --> 02:49:49,559
+eksi 2
+
+1643
+02:49:49,559 --> 02:49:51,860
+Bu da 1
+
+1644
+02:49:51,860 --> 02:49:53,460
+eksi 4 eksi 4 eder
+
+1645
+02:49:53,460 --> 02:49:54,120
+Bu da 1 eksi 4 eksi 4 eder
+
+1646
+02:49:54,120 --> 02:49:54,139
+Bu da 1 eksi 4 eksi 4 eder
+
+1647
+02:49:54,139 --> 02:49:54,200
+Bu da 1 eksi 4 eksi 4 eder
+
+1648
+02:49:54,200 --> 02:49:54,440
+Bu da 1 eksi 4 eksi 5 eder
+
+1649
+02:49:54,440 --> 02:49:54,540
+Bu da 1 eksi 4 eksi 5 eder
+
+1650
+02:49:54,540 --> 02:49:55,340
+Bu da 1 eksi 4 eksi 5 eder
+
+1651
+02:49:55,340 --> 02:49:55,760
+Sonuç
+
+1652
+02:49:55,760 --> 02:49:55,780
+Sonuç
+
+1653
+02:49:55,780 --> 02:49:59,120
+1
+
+1654
+02:49:59,120 --> 02:49:59,180
+1
+
+1655
+02:49:59,180 --> 02:49:59,200
+1
+
+1656
+02:49:59,200 --> 02:49:59,220
+1
+
+1657
+02:49:59,220 --> 02:49:59,240
+1
+
+1658
+02:49:59,240 --> 02:49:59,260
+1
+
+1659
+02:49:59,260 --> 02:49:59,280
+1
+
+1660
+02:49:59,280 --> 02:49:59,300
+1
+
+1661
+02:49:59,300 --> 02:49:59,320
+1
+
+1662
+02:49:59,320 --> 02:49:59,380
+1
+
+1663
+02:49:59,380 --> 02:49:59,400
+1
+
+1664
+02:49:59,400 --> 02:49:59,420
+1
+
+1665
+02:49:59,420 --> 02:49:59,440
+1
+
+1666
+02:49:59,440 --> 02:49:59,460
+1
+
+1667
+02:49:59,460 --> 02:49:59,500
+1
+
+1668
+02:49:59,500 --> 02:49:59,520
+1
+
+1669
+02:49:59,520 --> 02:49:59,540
+1
+
+1670
+02:49:59,540 --> 02:49:59,560
+1
+
+1671
+02:49:59,560 --> 02:49:59,579
+1
+
+1672
+02:49:59,579 --> 02:49:59,620
+1
+
+1673
+02:49:59,620 --> 02:49:59,659
+1
+
+1674
+02:50:00,000 --> 02:50:07,719
+ve sonrası yani dinamik programı local local çözümü bu üçünü kullanarak bunun sonucunu
+
+1675
+02:50:07,719 --> 02:50:14,219
+elde ediyoruz bir sonrakinde yani bir önceki sonucu kullanarak yenisini elde ediyoruz böyle
+
+1676
+02:50:14,219 --> 02:50:21,540
+devam edip gidiyor yani iç içe iki tane bu bunu dolduruyorsunuz kuralı doğru uyguladıktan sonra
+
+1677
+02:50:21,540 --> 02:50:27,360
+yanlış yapma olasılığınız pek yok yani hesabı da yanlış yapmamak şartıyla
+
+1678
+02:50:27,360 --> 02:50:42,239
+ondan sonraki adım da bu şu köşeden başlayıp Facebook ve bu işte eleman ve
+
+1679
+02:50:42,239 --> 02:50:50,460
+gel kuranlı uygulayarak maksimum ayıntı sağlamak maymunt'u okuma ayıntı belirlemek
+
+1680
+02:50:50,460 --> 02:50:57,120
+başlayalım
+
+1681
+02:50:57,360 --> 02:50:58,360
+başka
+
+1682
+02:50:58,360 --> 02:51:04,739
+Bunlar basit şeyler
+
+1683
+02:51:04,739 --> 02:51:14,739
+bu bunun bir önceki çözümü burada var yani dinamik programlamanın çözümü
+
+1684
+02:51:14,739 --> 02:51:22,120
+burada hani hem anlatmış oluyor nasıl
+
+1685
+02:51:22,120 --> 02:51:27,239
+elde edilmeye dair çözüm bu işte biz
+
+1686
+02:51:27,239 --> 02:51:27,340
+artı yuva çözüm bu işte biz artı yuva çözüm bu işte biz artı yuva çözüm bu işte biz artı yuva
+
+1687
+02:51:27,340 --> 02:51:53,659
+çözüm bu işte biz artı yuva çözüm bu işte biz artı bir geri al slipped-2-3 países제
+
+1688
+02:51:53,700 --> 02:51:57,200
+bu ondan sonra aşağıda bir orang
+
+1689
+02:51:57,200 --> 02:51:57,219
+bu ondan sonra aşağıda bir orang
+
+1690
+02:51:57,219 --> 02:51:58,939
+şurada
+
+1691
+02:51:58,939 --> 02:52:00,079
+yani
+
+1692
+02:52:00,079 --> 02:52:06,079
+şu tarafta
+
+1693
+02:52:06,079 --> 02:52:08,260
+bir gap. Burada görüldüğü
+
+1694
+02:52:08,260 --> 02:52:09,599
+gibi. Sonra L ile
+
+1695
+02:52:09,599 --> 02:52:12,159
+TP. Gene
+
+1696
+02:52:12,159 --> 02:52:13,959
+yukarıda bir gap. Şeyden
+
+1697
+02:52:13,959 --> 02:52:15,959
+dolayı. Şuradan
+
+1698
+02:52:15,959 --> 02:52:18,299
+dolayı. Sonra
+
+1699
+02:52:18,299 --> 02:52:19,559
+aşağıda bir gap.
+
+1700
+02:52:20,379 --> 02:52:21,340
+Yani şu
+
+1701
+02:52:21,340 --> 02:52:23,019
+sekünsta bir gap.
+
+1702
+02:52:27,219 --> 02:52:28,599
+Ve burada da iki gap.
+
+1703
+02:52:29,059 --> 02:52:30,039
+Ve en son L ile
+
+1704
+02:52:30,039 --> 02:52:32,399
+optimum alignment bu.
+
+1705
+02:52:34,379 --> 02:52:35,219
+Bu soru için.
+
+1706
+02:52:37,699 --> 02:52:38,659
+Zannediyorum
+
+1707
+02:52:38,659 --> 02:52:43,639
+konu anlaşıldı.
+
+1708
+02:52:45,939 --> 02:52:47,299
+İyi düşünüyorum.
+
+1709
+02:52:48,699 --> 02:52:49,439
+Var mı bir soru?
+
+1710
+02:52:56,279 --> 02:52:57,199
+Herhalde
+
+1711
+02:52:57,200 --> 02:52:57,500
+yok.
+
+1712
+02:52:59,700 --> 02:53:01,720
+Bir sonraki hafta
+
+1713
+02:53:01,720 --> 02:53:03,240
+haftaya
+
+1714
+02:53:03,240 --> 02:53:04,880
+tabi ders yok değil mi?
+
+1715
+02:53:08,980 --> 02:53:09,760
+Tatil zaten.
+
+1716
+02:53:10,100 --> 02:53:12,700
+Bayramdan oturulmayabilir hocam da ben bilmiyormuşum.
+
+1717
+02:53:13,120 --> 02:53:13,540
+Nasıl?
+
+1718
+02:53:16,440 --> 02:53:17,400
+Bayramdan oturup
+
+1719
+02:53:17,400 --> 02:53:19,800
+takvime bakmak lazım hocam.
+
+1720
+02:53:19,800 --> 02:53:21,860
+Ders olmaz.
+
+1721
+02:53:22,159 --> 02:53:23,780
+Herkes evde gerçi. Bayramdan
+
+1722
+02:53:23,780 --> 02:53:25,860
+dolayı resmi tatil.
+
+1723
+02:53:25,860 --> 02:53:27,900
+Dersi olmayacak gene.
+
+1724
+02:53:29,440 --> 02:53:31,520
+On beş gün sonra görüşeceğiz.
+
+1725
+02:53:33,380 --> 02:53:35,420
+Hocam bir şey soracaktım. Bir de
+
+1726
+02:53:35,420 --> 02:53:37,860
+kapanmadan dolayı da tatile
+
+1727
+02:53:37,860 --> 02:53:39,800
+uzattılar ya. Mesela o
+
+1728
+02:53:39,800 --> 02:53:41,800
+uzattıkları için o zamanın
+
+1729
+02:53:41,800 --> 02:53:42,900
+tamamı boyunca mı ders yok?
+
+1730
+02:53:45,000 --> 02:53:47,420
+O haftanın tamamında dersi yok.
+
+1731
+02:53:47,840 --> 02:53:48,800
+Benim öyle anlıyorum.
+
+1732
+02:53:51,340 --> 02:53:52,180
+Nasıl?
+
+1733
+02:53:52,180 --> 02:53:52,819
+Nasıl?
+
+1734
+02:53:54,200 --> 02:53:55,780
+Yani ben de öyle tahmin etmiştim de.
+
+1735
+02:53:55,860 --> 02:53:57,000
+Yine bir de sormak istemiştim.
+
+1736
+02:53:57,540 --> 02:53:57,920
+Yani
+
+1737
+02:53:57,920 --> 02:54:00,760
+şöyle
+
+1738
+02:54:00,760 --> 02:54:03,640
+kimsenin ders yapacağını zannetmiyorum.
+
+1739
+02:54:03,860 --> 02:54:06,060
+Yani ders yapılabilir, yapılmaz diye bir şey yok.
+
+1740
+02:54:06,140 --> 02:54:08,180
+Yani pazar günü tatilde de yapılır da
+
+1741
+02:54:08,180 --> 02:54:10,239
+ihtiyaç olsa biz de yapacağız.
+
+1742
+02:54:10,460 --> 02:54:10,960
+Yani eğer
+
+1743
+02:54:10,960 --> 02:54:13,819
+eksik kaldığını düşünüyorsak biz de
+
+1744
+02:54:13,819 --> 02:54:15,480
+telafi dersi yapacağız gerçi de.
+
+1745
+02:54:15,640 --> 02:54:16,980
+Nasıl gittiğimize bakacağız.
+
+1746
+02:54:20,940 --> 02:54:22,260
+Ama normalde
+
+1747
+02:54:22,260 --> 02:54:24,159
+resmi tatilde ders olmuyor.
+
+1748
+02:54:25,040 --> 02:54:25,780
+Ha şu olur.
+
+1749
+02:54:25,860 --> 02:54:28,020
+Yani resmi tatil boyunca yapılmaz
+
+1750
+02:54:28,020 --> 02:54:29,980
+ama başka bir zaman bu telafi
+
+1751
+02:54:29,980 --> 02:54:31,480
+edilmesi gerekiyorsa edilir.
+
+1752
+02:54:35,079 --> 02:54:37,280
+Ama ders önümüzdeki
+
+1753
+02:54:37,280 --> 02:54:39,579
+bu hafta başlıyor herhalde şey.
+
+1754
+02:54:40,700 --> 02:54:42,040
+Değil mi? Pazartesi başlıyor.
+
+1755
+02:54:44,220 --> 02:54:45,440
+Evet hocam.
+
+1756
+02:54:46,000 --> 02:54:47,860
+Bayram tatili pazartesi
+
+1757
+02:54:47,860 --> 02:54:49,640
+başlıyor. Böyle.
+
+1758
+02:54:50,780 --> 02:54:51,800
+Ders olmaz diye
+
+1759
+02:54:51,800 --> 02:54:53,739
+düşünüyorum. Tabii siz gene de
+
+1760
+02:54:53,739 --> 02:54:54,780
+hocalarınıza sorun.
+
+1761
+02:54:55,860 --> 02:54:58,440
+Yani bizim ders
+
+1762
+02:54:58,440 --> 02:54:59,940
+doğrudan bayrama denk geldi.
+
+1763
+02:55:00,000 --> 02:55:00,959
+için zaten yok.
+
+1764
+02:55:03,680 --> 02:55:05,799
+Resmi bağıram olduğu için.
+
+1765
+02:55:06,340 --> 02:55:07,399
+Ama onun dışında
+
+1766
+02:55:07,399 --> 02:55:08,840
+pazartesi, salı
+
+1767
+02:55:08,840 --> 02:55:11,680
+varsa dersiniz
+
+1768
+02:55:11,680 --> 02:55:13,280
+onu
+
+1769
+02:55:13,280 --> 02:55:14,979
+hocasından öğrenin.
+
+1770
+02:55:15,100 --> 02:55:16,319
+Yapıp yapmayacağına dair.
+
+1771
+02:55:21,920 --> 02:55:22,920
+Tamam.
+
+1772
+02:55:23,239 --> 02:55:25,079
+Benim bugün söyleyeceklerim bu kadar.
+
+1773
+02:55:25,379 --> 02:55:26,780
+Bir dahaki haftaya
+
+1774
+02:55:26,780 --> 02:55:28,879
+bakayım hangi konuyu işleyeceğiz.
+
+1775
+02:55:30,000 --> 02:55:33,940
+Multiple alignment
+
+1776
+02:55:33,940 --> 02:55:35,159
+konusunu işleyeceğiz.
+
+1777
+02:55:37,280 --> 02:55:38,100
+Yani eğer
+
+1778
+02:55:38,100 --> 02:55:40,219
+hizalanacak
+
+1779
+02:55:40,219 --> 02:55:43,500
+dizilerin
+
+1780
+02:55:43,500 --> 02:55:46,479
+sayısı ikiden fazlaysa
+
+1781
+02:55:46,479 --> 02:55:48,540
+ne gibi algoritmalar kullanılıyor
+
+1782
+02:55:48,540 --> 02:55:50,600
+onları
+
+1783
+02:55:50,600 --> 02:55:51,920
+inceleyeceğiz.
+
+1784
+02:55:53,420 --> 02:55:54,639
+Yani üç ve daha fazla
+
+1785
+02:55:54,639 --> 02:55:56,559
+diziyi
+
+1786
+02:55:56,559 --> 02:55:58,319
+hizalamak gerekecekse
+
+1787
+02:55:58,319 --> 02:55:59,979
+ne gibi algoritmalar
+
+1788
+02:55:59,979 --> 02:56:01,020
+kullanılır.
+
+1789
+02:56:03,139 --> 02:56:03,680
+Onun da
+
+1790
+02:56:03,680 --> 02:56:05,439
+Global ve Local Alignment
+
+1791
+02:56:05,439 --> 02:56:08,079
+iki varyasyonu var. Onlardan bahsedeceğiz.
+
+1792
+02:56:10,399 --> 02:56:10,699
+Tamam.
+
+1793
+02:56:11,799 --> 02:56:13,219
+Haftaya değil 15 gün sonra.
+
+1794
+02:56:15,500 --> 02:56:17,639
+Oldu. Size şimdiden iyi bayramlar o zaman.
+
+1795
+02:56:18,479 --> 02:56:19,319
+İyi bayramlar hocam.
+
+1796
+02:56:19,659 --> 02:56:20,819
+Bir sorunuz yoksa
+
+1797
+02:56:20,819 --> 02:56:22,639
+çıkabilirsiniz.
+

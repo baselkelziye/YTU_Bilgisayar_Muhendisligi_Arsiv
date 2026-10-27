@@ -1,0 +1,3948 @@
+1
+00:00:02,700 --> 00:05:08,310
+Arkadaşlar hoş geldiniz.
+
+2
+00:05:08,310 --> 00:05:13,310
+Son haftamız bu seneyi de tamamlamak üzereyiz.
+
+3
+00:05:13,310 --> 00:05:20,310
+Hepinize teşekkür ediyorum ders boyunca katılım gösteren arkadaşlara özellikle.
+
+4
+00:05:20,310 --> 00:05:25,910
+Umarım sizlere bir şeyler katabilmişimdir ders boyunca.
+
+5
+00:05:25,910 --> 00:05:31,910
+Yaklaşık 20 kişinin yorumu elime ulaştı, anket göndermiştim.
+
+6
+00:05:31,910 --> 00:05:35,910
+Tam dersi takip edenlerle orantılı bir şekilde geldi ankette.
+
+7
+00:05:35,910 --> 00:05:39,910
+85 kişiden 20 kişi anketi doldurmuş. Çok teşekkür ediyorum.
+
+8
+00:05:39,910 --> 00:05:46,910
+Tabii bu 20 kişi arasında farklı görüşler var, birbirinden tamamen zik görüşler de var.
+
+9
+00:05:46,910 --> 00:05:53,910
+Herkesin kendince eleştirdiği bir nokta var, teşekkür ettiği bir nokta var.
+
+10
+00:05:53,910 --> 00:06:00,910
+Özellikle kodlama noktasında daha aktif kodlama isteyenler var.
+
+11
+00:06:00,910 --> 00:06:04,910
+Birebir yazılmasını isteyenler, tercih edenler var.
+
+12
+00:06:04,910 --> 00:06:08,910
+Birebir yazmayıp daha fazla örnek görmek isteyenler var.
+
+13
+00:06:08,910 --> 00:06:14,910
+Öte yandan bu gördüklerimiz çok yoğun konular.
+
+14
+00:06:14,910 --> 00:06:20,910
+Ben daha başlangıç seviyesinde olacağını düşünüyordum diyenler de var.
+
+15
+00:06:20,910 --> 00:06:23,910
+Yani çok farklı segment görüşleri var.
+
+16
+00:06:23,910 --> 00:06:29,910
+Bu dersin ileri seviyesinin açılması gerektiğini talep edenler de var.
+
+17
+00:06:29,910 --> 00:06:38,910
+Dersi olabildiğince fazla konu yerleştirmeye çalışıyoruz tabii ama bu hiç bilmeyenler için birazcık zor oluyor.
+
+18
+00:06:38,910 --> 00:06:49,910
+Özellikle dersin dışında da ciddi derecede performans harcamak gerektiği ve çalışmak gerektiğini söyleyen arkadaşlarımız olmuş.
+
+19
+00:06:49,910 --> 00:06:56,910
+Doğru maalesef ders dışı faaliyeti biraz fazla.
+
+20
+00:06:56,910 --> 00:07:04,910
+Özellikle anlattığım konuları pratikte gerçeklemeniz için kod parçalarını da incelemeniz gerekiyor.
+
+21
+00:07:04,910 --> 00:07:08,910
+Dersin içerisinde birebir tüm kod parçalarını vermek mümkün değil.
+
+22
+00:07:08,910 --> 00:07:16,910
+Küçük bir projede bile bir tane aktivitenin çok fazla kod ile ifade edilmesi gerekiyor tabii.
+
+23
+00:07:16,910 --> 00:07:20,910
+Biraz cavanın da getirdiği bir sıkıntı.
+
+24
+00:07:21,910 --> 00:07:24,910
+C programlamada bu kadar uzun kod yazmanıza gerek kalmıyor.
+
+25
+00:07:24,910 --> 00:07:35,910
+Ama onun ötesinde Java'da da yazdığınız küçük bir metotla da çok fazla iş yapabiliyorsunuz ama ona rağmen event driven programlarının getirdiği listener'ı da,
+
+26
+00:07:35,910 --> 00:07:42,910
+onun event based yapılan işleri takip etmesi de çok kod oluyor.
+
+27
+00:07:42,910 --> 00:07:47,910
+Sonuçta sizlerden faydalı getirmişler aldım.
+
+28
+00:07:47,910 --> 00:07:49,910
+Onun için teşekkür ediyorum.
+
+29
+00:07:49,910 --> 00:07:52,910
+Bir arkadaşımız ödevde geç açıklandığından bahsetti.
+
+30
+00:07:52,910 --> 00:07:58,910
+Birinci ödevimizi hafta sonu ders duvarından ilan ettim.
+
+31
+00:07:58,910 --> 00:08:03,910
+Bu sene aslında vizeyi de hemen bir hafta sonu okudum.
+
+32
+00:08:03,910 --> 00:08:06,910
+Belki en hızlı okuduğum sınavlardan biri de test olduğu için.
+
+33
+00:08:06,910 --> 00:08:10,910
+O konuda çok olumsuz bir durum olduğunu çok düşünmüyorum.
+
+34
+00:08:10,910 --> 00:08:12,910
+Sadece ikinci ödevimiz kaldı.
+
+35
+00:08:12,910 --> 00:08:16,910
+Onda bir aksilik olmasa final sınavından önce açıklamış olacağım.
+
+36
+00:08:16,910 --> 00:08:21,910
+Ama dönem projemizi takdir edersiniz ki daha derin bir değerlendirme gerektiriyor.
+
+37
+00:08:21,910 --> 00:08:25,910
+O yüzden onun kontrolü biraz daha zaman alacaktır.
+
+38
+00:08:25,910 --> 00:08:34,909
+Dersin son haftasında location based servisleri göreceğiz.
+
+39
+00:08:34,909 --> 00:08:36,909
+Biraz haritalardan bahsedeceğiz.
+
+40
+00:08:36,909 --> 00:08:44,909
+Sonra da vakit kalırsa geçtiğimiz haftaki ödeğimiz notification konusunu tamamlamaya çalışacağız.
+
+41
+00:08:44,909 --> 00:08:50,909
+Dönem ödevinin testini 13'ün de yanlış hatırlamıyorsam.
+
+42
+00:08:50,909 --> 00:08:55,909
+Bununla ilgili herhangi bir dönem ödevi ile ilgili sorusu olan vardır.
+
+43
+00:08:55,909 --> 00:09:02,289
+Peki.
+
+44
+00:09:02,289 --> 00:09:07,269
+Evet [öğrenci].
+
+45
+00:09:07,269 --> 00:09:10,269
+Hocam bir şey soracaktım ben.
+
+46
+00:09:10,269 --> 00:09:13,269
+FireBase yedekleme ile ilgili bonus puan verilecek.
+
+47
+00:09:13,269 --> 00:09:20,269
+Orada sadece broadcast receiver kodlasak burada da FireBase yedeklenecektir falan desek yeterli olur mu?
+
+48
+00:09:21,269 --> 00:09:24,269
+Direkt yedekleme işlemleri de yapalım mı?
+
+49
+00:09:24,269 --> 00:09:26,269
+Normalde yapmanızı tercih ediyorum.
+
+50
+00:09:26,269 --> 00:09:29,269
+Bonus puanı bir kısmı da bu iş için.
+
+51
+00:09:29,269 --> 00:09:35,269
+Ama sırf o kısmını yaparsanız da o kısmı gösterip onunla ilgili de gerekli puan alırsınız.
+
+52
+00:09:36,269 --> 00:09:37,269
+Anladım.
+
+53
+00:09:37,269 --> 00:09:38,269
+Teşekkürler.
+
+54
+00:09:38,269 --> 00:09:40,269
+Güzeldi.
+
+55
+00:09:40,269 --> 00:09:47,269
+Şimdi o zaman sizinle başka bir yorumunuz yoksa konulara geçeceğim.
+
+56
+00:09:47,269 --> 00:09:51,269
+Sadece final sınavıyla ilgili bilgisimleri etmeden geçmeyin.
+
+57
+00:09:51,269 --> 00:10:01,269
+Birkaç arkadaşınız test sınavının değerlendirme açısından çok yeterli olmadığını düşündüğünü ile iletmiş.
+
+58
+00:10:01,269 --> 00:10:06,269
+Şimdi kod yazdırmak sınav sırasında oldukça zor.
+
+59
+00:10:06,269 --> 00:10:09,269
+Siz de çok tercih etmezsiniz.
+
+60
+00:10:09,269 --> 00:10:14,269
+Ama kod bilgisini de sorgulamak gerektiğini düşünen arkadaşlarınız var.
+
+61
+00:10:15,269 --> 00:10:19,269
+Belki buna istiraden birkaç tane kod sorusu sorabilirim.
+
+62
+00:10:19,269 --> 00:10:22,269
+Yine benzer bir mantık da olacaktır.
+
+63
+00:10:22,269 --> 00:10:30,269
+Hoşluk doldurma, test ya da çok klasik sınava, yakın bir sınava olmayacak.
+
+64
+00:10:30,269 --> 00:10:33,269
+Çünkü bu dersin ruhuna çok aykırı.
+
+65
+00:10:33,269 --> 00:10:40,269
+Özellikle uzaktan yapıldığında bir arkadaşınız da dönen projesini keşke final yerine saysaydınız diye bir talanide bulunmuş.
+
+66
+00:10:41,269 --> 00:10:45,269
+Evet, yapılmayacak bir şey değil.
+
+67
+00:10:45,269 --> 00:10:48,269
+Ama o zaman şöyle bir de avantaj oluyor.
+
+68
+00:10:48,269 --> 00:10:59,269
+Dersin ikinci kısmı yani birinci ve daha sonraki kısımlardaki konulara sadece projede gerektiği kadar yer verip geri kalanı çok odaklanmıyorsunuz.
+
+69
+00:10:59,269 --> 00:11:03,269
+O yüzden bunu böyle yapmaktan uzak duruyorum.
+
+70
+00:11:03,269 --> 00:11:08,269
+O konuları da en azından biraz daha yakinen okuyun diye.
+
+71
+00:11:08,269 --> 00:11:15,269
+Nereden dersin sınavına hazırlanabiliyorsanız, en basit ve en kolay adres developer.android.com.
+
+72
+00:11:15,269 --> 00:11:20,269
+Bütün zaten materialimi ağırlıklı olarak oradan hazırlıyorum.
+
+73
+00:11:20,269 --> 00:11:22,269
+Orada daha fazlası var.
+
+74
+00:11:22,269 --> 00:11:26,269
+Orayı okursanız, slide'leri de paylaşacağım.
+
+75
+00:11:26,269 --> 00:11:29,269
+Onları da indirip üzerinden geçerseniz.
+
+76
+00:11:29,269 --> 00:11:34,269
+Ben çok büyük bir problem yaşayacağınızı düşünüyorum açıkçası finansiyonunda.
+
+77
+00:11:34,269 --> 00:11:40,269
+Ama tabii test olması, boşluklu olduğumun vesaire olması bazı konularda biraz daha dikkat etmemiz gerekiyor.
+
+78
+00:11:40,269 --> 00:11:44,269
+Çok kıydaki öste kalmış bir bilgi sorma taraftarı değilim.
+
+79
+00:11:44,269 --> 00:11:46,269
+Temel bilgiden soracağım.
+
+80
+00:11:46,269 --> 00:11:49,269
+Ama şöyle bir 5 soruluk kısım.
+
+81
+00:11:49,269 --> 00:11:56,269
+Yani sınavın %20-25'lik kısmı biraz daha ayırtırıcı sorular olacaktır.
+
+82
+00:11:56,269 --> 00:11:58,269
+Onu da şimdiden söylemiş oldum.
+
+83
+00:11:58,269 --> 00:12:01,269
+Hepinizin geçmesini ümit ediyorum.
+
+84
+00:12:02,269 --> 00:12:08,269
+Ama tabii ki ödevi yapanlar, dönem pozisyonu teslim edenlerin çok daha büyük bir avantajı olacak.
+
+85
+00:12:08,269 --> 00:12:09,269
+Onu da söyleyin yani.
+
+86
+00:12:09,269 --> 00:12:13,269
+Sonra ben sınavdan şunu aldım, niye olmadı sorsunca aldı.
+
+87
+00:12:13,269 --> 00:12:19,269
+Aslında ödev teslim etmeyenler ve dönem pozisyonu teslim etmeyenler de genelde oluyor.
+
+88
+00:12:19,269 --> 00:12:27,269
+Bu anlamda hala vaktiniz varken ne kadarını yapabilirsiniz, dönem pozisyonu o kadarını teslim edin.
+
+89
+00:12:27,269 --> 00:12:29,269
+Bir de şöyle bir ilginç bir durum var.
+
+90
+00:12:29,269 --> 00:12:34,269
+Teslim ettiğiniz ödevleri, özellikle ikinci ödevi okumaya başladım.
+
+91
+00:12:34,269 --> 00:12:40,269
+Okurken hiç ses kullanmadan gösteren arkadaşlar var.
+
+92
+00:12:40,269 --> 00:12:43,269
+Böyle bir anlatımı kesinlikle kabul etmiyorum.
+
+93
+00:12:43,269 --> 00:12:45,269
+Projenizi anlatmanız gerekiyor.
+
+94
+00:12:45,269 --> 00:12:49,269
+Ben siz gittiniz, butona bastığınız butonla yan sayfaya geçti.
+
+95
+00:12:49,269 --> 00:12:52,269
+Özellikle sessiz hissedim, anlayabildim.
+
+96
+00:12:52,269 --> 00:12:55,269
+Ama projenizi anlatmanız gerekiyor.
+
+97
+00:12:55,269 --> 00:12:57,269
+Kendinizi tanıtmanız gerekiyor.
+
+98
+00:12:57,269 --> 00:12:58,269
+Ekranda göstermeniz gerekiyor.
+
+99
+00:12:58,269 --> 00:13:02,269
+Neleri yapabildiğini programını, neleri yapamadığını söylememiz gerekiyor.
+
+100
+00:13:02,269 --> 00:13:05,269
+Bunları yapmadığınız taktirde düşük puan alacaksınız.
+
+101
+00:13:05,269 --> 00:13:09,269
+İkincisi videolarını drive'a yükleyip gönderenler var.
+
+102
+00:13:09,269 --> 00:13:12,269
+Bunların bir kısmı açılmıyor.
+
+103
+00:13:12,269 --> 00:13:16,269
+Bir kontrol etmelerini tavsiye ederim.
+
+104
+00:13:16,269 --> 00:13:19,269
+Bu linki erişim yoktur.
+
+105
+00:13:19,269 --> 00:13:21,269
+Burada böyle bir dosya yoktur dedim.
+
+106
+00:13:21,269 --> 00:13:23,269
+Lütfen bunları kontrol edelim.
+
+107
+00:13:23,269 --> 00:13:28,269
+YouTube üzerinden linki göndermek daha risksiz.
+
+108
+00:13:28,269 --> 00:13:31,269
+Dönem projeninize bu trataylara düşmeyin.
+
+109
+00:13:31,269 --> 00:13:34,269
+Çünkü bunları düzeltmek için yeterince vaktimiz olmayabilir.
+
+110
+00:13:34,269 --> 00:13:37,269
+O zaman notumuz boş boşuna düşüp gelmesin.
+
+111
+00:13:37,269 --> 00:13:42,269
+İkinci ödevde açıklandığı zaman sıkıntı olanlar paylaşırlar.
+
+112
+00:13:42,269 --> 00:13:46,269
+Ben de onuda ne tür bir problem varsa size aktarırım.
+
+113
+00:13:46,269 --> 00:13:50,269
+Yine detaylı bir giriş yaptık.
+
+114
+00:13:50,269 --> 00:13:55,269
+Ama bunları söylemek gerekiyordu ki notlarınızda bir eksilme, azalma olmasın diye.
+
+115
+00:13:55,269 --> 00:13:58,269
+Şimdi yavaş yavaş slide'a geçebiliriz.
+
+116
+00:13:58,269 --> 00:14:03,840
+Tabii slide anlatımından da çok memnun olmayanlar var ama...
+
+117
+00:14:03,840 --> 00:14:09,840
+Açıkçası bu konuları slide'ın dışında anlatmaya çalışmak yazarak...
+
+118
+00:14:09,840 --> 00:14:12,840
+Yıllarca öğrenciler çok şikayet ettiler.
+
+119
+00:14:12,840 --> 00:14:14,840
+Ben önceden slide'a geçtim.
+
+120
+00:14:14,840 --> 00:14:18,840
+Bu da açıkçası daha iyi gidiyor bence.
+
+121
+00:14:18,840 --> 00:14:22,840
+Yet slide biraz uyutan bir araç.
+
+122
+00:14:22,840 --> 00:14:24,840
+Ben de çok bayılmıyorum ama...
+
+123
+00:14:24,840 --> 00:14:27,840
+Yani interaktif yapmak istememiz sebebi de o.
+
+124
+00:14:27,840 --> 00:14:29,840
+Size soru sormamın sebebi ama...
+
+125
+00:14:29,840 --> 00:14:33,840
+O zaman da olabildiğince sizi ayakta tutmaya çalışıyoruz.
+
+126
+00:14:33,840 --> 00:14:37,840
+Şimdi girelim location access konusuna.
+
+127
+00:14:37,840 --> 00:14:40,840
+Bu kısım çok çok önemli çünkü...
+
+128
+00:14:40,840 --> 00:14:45,840
+Lokasyon bilgisini kullanan uygulama sayısı yıllar içinde çok arttı.
+
+129
+00:14:45,840 --> 00:14:49,840
+Şu anda yani neredeyse...
+
+130
+00:14:49,840 --> 00:14:52,840
+Hiçbir yere telefonsuz yada akıllı salgıs gitmiyoruz.
+
+131
+00:14:52,840 --> 00:14:55,840
+Ve bu noktada da...
+
+132
+00:14:55,840 --> 00:15:00,840
+Özellikle ebeveynlerin çocuklarını takip etmesi noktası.
+
+133
+00:15:00,840 --> 00:15:05,840
+Araçla bir yerden bir yere giderken artık...
+
+134
+00:15:05,840 --> 00:15:09,840
+Telefonsuz bir noktaya giden sayısı çok az.
+
+135
+00:15:09,840 --> 00:15:11,840
+Aklında adresi tutmuyor.
+
+136
+00:15:11,840 --> 00:15:14,840
+Hangi yollardan gittiğini hatırlamıyor.
+
+137
+00:15:14,840 --> 00:15:21,840
+Bu noktada telefonun adres bilgisini sağlamasının kalitesi çok önemli.
+
+138
+00:15:21,840 --> 00:15:24,840
+Şimdi adres bilgisini hangi yollardan temin ediyoruz?
+
+139
+00:15:24,840 --> 00:15:25,840
+Onu konuşalım.
+
+140
+00:15:25,840 --> 00:15:26,840
+Hemen sorayım.
+
+141
+00:15:26,840 --> 00:15:39,799
+Kaç tane adres bilgisini temin edebileceğimiz bir yöntem var.
+
+142
+00:15:39,799 --> 00:15:41,799
+Tabi [öğrenci] sana kalacak yani.
+
+143
+00:15:41,799 --> 00:15:44,799
+Şey ihale o kesin.
+
+144
+00:15:44,799 --> 00:15:47,799
+Sensörleri kullanabiliriz hocam.
+
+145
+00:15:47,799 --> 00:15:51,799
+Bilgim kadarıyla baz istasyonlarını kullanabiliriz.
+
+146
+00:15:51,799 --> 00:15:55,799
+Sensörler olarak WiFi, Bluetooth ve GPS sensörünü kullanabiliriz.
+
+147
+00:15:57,799 --> 00:15:59,799
+Başka varsa şu an aklıma gelmiyor.
+
+148
+00:15:59,799 --> 00:16:00,799
+Tamam.
+
+149
+00:16:00,799 --> 00:16:06,799
+Şimdi birinci ve en yüksek doğrulukla bize bilgi sağlayan GPS.
+
+150
+00:16:07,799 --> 00:16:10,799
+Global Positioning System.
+
+151
+00:16:10,799 --> 00:16:12,799
+Tabi bunun gulanası var.
+
+152
+00:16:12,799 --> 00:16:13,799
+GPS Amerikalı var.
+
+153
+00:16:13,799 --> 00:16:14,799
+Gulanasus var.
+
+154
+00:16:14,799 --> 00:16:16,799
+Hindistan'ın var.
+
+155
+00:16:16,799 --> 00:16:17,799
+Çin'in var.
+
+156
+00:16:17,799 --> 00:16:18,799
+Beydus'u.
+
+157
+00:16:18,799 --> 00:16:22,799
+Ama sonuçta biz bunun hepsine genel olarak GPS diyoruz.
+
+158
+00:16:22,799 --> 00:16:25,799
+Yani uydu üzerinden lokasyon değerlendirilmesi.
+
+159
+00:16:25,799 --> 00:16:30,799
+Bunun ötesinden baz istasyonları üzerinden konum bilgisi elde edebiliyoruz.
+
+160
+00:16:30,799 --> 00:16:32,799
+Telefonlar üzerinden.
+
+161
+00:16:32,799 --> 00:16:35,799
+Üçüncüsü WiFi access pointler üzerinden.
+
+162
+00:16:35,799 --> 00:16:38,799
+Çünkü her birinin genelde sabit bir IP'si var.
+
+163
+00:16:38,799 --> 00:16:41,799
+Bu sabit IP'lerin lokasyonları belli.
+
+164
+00:16:41,799 --> 00:16:46,799
+Bunlar üzerinden çok yüksek çözünürlükte bilgi alabiliyoruz.
+
+165
+00:16:46,799 --> 00:16:47,799
+Peki.
+
+166
+00:16:47,799 --> 00:16:50,799
+Extra başka ne olabilir?
+
+167
+00:16:52,799 --> 00:16:55,799
+Yan uygulamanın almış olduğu.
+
+168
+00:16:55,799 --> 00:16:59,799
+Yani sizin uygulamanız o anda bir request yaptı.
+
+169
+00:16:59,799 --> 00:17:02,799
+Bir başka uygulama 5 saniye önce bir bilgi almıştı.
+
+170
+00:17:02,799 --> 00:17:09,799
+Ve o anda sizin uygulamanız herhangi bir şekilde düşük enerji modunda adres istiyorsa.
+
+171
+00:17:09,799 --> 00:17:10,799
+Ya da no power modunda.
+
+172
+00:17:10,799 --> 00:17:15,799
+O zaman bu bilgiyi bu bahsettiğimiz kaynaklardan değil.
+
+173
+00:17:15,799 --> 00:17:18,799
+Bir önceki uygulamanın aldığı kaynaktan alıyor.
+
+174
+00:17:18,799 --> 00:17:21,799
+O uygulama da bu bahsettiğimiz kaynakları kullanıyor.
+
+175
+00:17:21,799 --> 00:17:25,799
+Ama ekstradan enerji tüketmemiş oluyorsunuz.
+
+176
+00:17:25,799 --> 00:17:30,799
+Fakat fiziksel olarak GPS, WiFi ve baz istasyonu.
+
+177
+00:17:30,799 --> 00:17:36,799
+Bunlar içerisinde fiziksel olarak bizim adres bilgisini elde ettiğimiz nokta.
+
+178
+00:17:43,150 --> 00:17:47,150
+Çok pardon şu anda bir arkadaşınız bir mesaj göndermiş.
+
+179
+00:17:47,150 --> 00:17:55,150
+Bir an oraya bakmak durumunda kaldım ama [öğrenci] bu konuyu bana mail yoluyla iletişebilirsin.
+
+180
+00:17:55,150 --> 00:18:04,150
+Şimdi tabii ders boyunca özellikle bu mesajları dersin sonuna doğru atmanızı rica ediyorum.
+
+181
+00:18:04,150 --> 00:18:07,150
+Ya da ben geç gördüm o yüzden kusura bakma lütfen.
+
+182
+00:18:07,150 --> 00:18:16,150
+Şimdi bu noktada bizim için şehir yaşamında baz istasyonu ve WiFi access pointleri kullanmak akıllıca.
+
+183
+00:18:16,150 --> 00:18:19,150
+Çünkü daha az enerji tüketiyor.
+
+184
+00:18:19,150 --> 00:18:24,150
+Mesafe nedeniyle WiFi daha yakın baz istasyonu biraz daha uzak.
+
+185
+00:18:24,150 --> 00:18:30,150
+İşte uydu en uzak noktada ve uydu GPS kullanımı oldukça yüksek enerji tüketiyor.
+
+186
+00:18:30,150 --> 00:18:39,150
+Ama kırsal yaşama çıktığımızda kırsal yaşamda baz istasyonu veya WiFi access point duruma göre uzak noktalarda bulunabilir.
+
+187
+00:18:39,150 --> 00:18:52,150
+Bu da sizin ürettiğiniz lokasyon bilgisinin doğruluğu ve hassasiyeti konusunda genelde bir işte nokta ve onun etrafında bir çamber oluşur.
+
+188
+00:18:52,150 --> 00:19:07,150
+O çamberin büyük yani bulunduğunuz noktanın o çamberin içinde herhangi bir yer olabileceğini düşünürsek hassasiyetin de oldukça düşük olduğunu söyleyebiliriz.
+
+189
+00:19:07,150 --> 00:19:23,150
+Yüksek hassasiyetle doğru tahmin yapabilmek için o çamberin oldukça küçük olması gerekiyor ki bunun için GPS üzerinden konum bilgisi alabilmelisiniz ya da yakın bölgede birden fazla baz istasyonu veya access point bulunmanı.
+
+190
+00:19:23,150 --> 00:19:34,150
+Triangulation yaklaşımı ile gelen sinyallerin kuvvetine bağlı olarak bir hesaplama yapılıyor ve size yaklaşık konumunuz gönderiliyor.
+
+191
+00:19:34,150 --> 00:19:53,150
+Bu donanım tarafındaki bilginin değerlendirilip işte lokasyon bilgisinin elde edilmesi noktası tabi Android işletimi sistemine dönecek olursak iki tür lokasyon bilgisi takibi sunuyor bize Android.
+
+192
+00:19:53,150 --> 00:20:06,150
+Evet eskiden bu ikiye ayrılmıyordu artık enerji tüketimi dolayısıyla ikiye ayırdı ve biraz daha background işlerini sınırlamak üzerine kurulu bir stratejisi var.
+
+193
+00:20:06,150 --> 00:20:25,150
+O yüzden Android'den bir location izini istiyorsanız incremental dediğimiz artırımlı yaklaşımla lokasyon talebinde bulunmalısınız ilk olarak foreground yetmiyorsa ihtiyaç duyuyorsanız geçerli bir sebebiniz varsa background location talebinde bulunmalısınız.
+
+194
+00:20:25,150 --> 00:20:38,150
+Doğrudan background location talebinde bulunmak aslında Android'in çok istediği bir durum değil çünkü gereksiz bir enerji tüketimi ve sürekli bir kişi takimi söz konusu.
+
+195
+00:20:38,150 --> 00:21:00,150
+Şimdi foreground location'da baktığınızda bu slide'da göreceksiniz anlık bir bir seferlik bir bilgiye ihtiyaç duyabilirsiniz lokasyon bilgisine ya da belirli geçici bir periyot için o bilgiyi isteyebilirsiniz.
+
+196
+00:21:00,150 --> 00:21:15,150
+Örneğin navigasyon uygulaması verilmiş. Navigasyon uygulamasında bir yerden bir yere gidene kadar size o bilginin sağlanması sonra da uygulamayı kapattığınız zaman artık o lokasyon bilgisine ihtiyacınız olmadığı anlamına gelir.
+
+197
+00:21:15,150 --> 00:21:31,150
+Diyelim ki instant messaging uygulamasından birine bulunduğunuz konumu göndereceksiniz. Bu da anlık bir bilgi gönderme. Bu tarz kullanımlarda mutlaka foreground location iznini talep etmeniz gerekiyor.
+
+198
+00:21:31,150 --> 00:21:51,150
+Tabii bu ayrım nereden itibaren başlıyor? Android 10 ve 11 arasında da farklılıklar var. Birinin require ettiğini öbürü recommend ediyor. 11'de zorunlu olan 10'da kullanılsa daha uygun olur şekilde recommend ediliyor gibi ayrımlar var.
+
+199
+00:21:51,150 --> 00:22:09,150
+Ama bu hikayeler Android 8 ile önümüze gelmeye başladı. 9'da biraz daha belirginleşti. 10 ve 11'de artık çok net ayrımlar söz konusu olmaya başladı ki hem enerji daha az tüketilsin hem de security açıkları minimize edilsin diye.
+
+200
+00:22:09,150 --> 00:22:30,150
+E tabii foreground location dediğiniz zaman biraz önce verdiğimiz örneklerde ilgili aktivitenin görünür olması bekleniyor foreground location kullanacaksanız hangi durumlar için geçerli olacağını ve kullanılabileceğini konuşuyorsunuz.
+
+201
+00:22:30,150 --> 00:22:39,150
+Uygulamanızın bir foreground service çalıştırması durumunda yine foreground location talepinde bulunmanız gerektiğinden bahsediliyor.
+
+202
+00:22:39,150 --> 00:22:57,150
+Artı en son aşağıda belirtildiği gibi 10 ve sonrasındaki sürümlerde API 29'dan sonra mutlaka foreground service tipinin tanımlanması gerekiyor, deklar edilmesi gerekiyor.
+
+203
+00:22:57,150 --> 00:23:09,150
+Nerede deklar ediyorsunuz? İşte burada gördüğünüz gibi Android manifest içerisinde bir foreground service tipi belirtiyorsunuz ki burada biz location servisini kullanacağız.
+
+204
+00:23:09,150 --> 00:23:18,150
+Bunu belirtiyoruz. Artı iki tane izin var. Bir tanesi course location, diğeri file location.
+
+205
+00:23:18,150 --> 00:23:40,150
+Course location sizin istediğiniz lokasyon bilgisinin kabaca bir bilgi olduğunu söylüyor. File location ise exact bir bilgiye ihtiyaç duyduğunuzu ve bunun için mümkünse elinizdeki en iyi seçeneği kullanmasını Android'tan talep ediyorsunuz.
+
+206
+00:23:40,150 --> 00:23:53,150
+Bunlar arka planda işletim sistemi tarafından henüz ediliyor. Ama siz course location talep ettiğinizde bir blok kadar hata yapma olasılığınız var geri geldiğinde.
+
+207
+00:23:53,150 --> 00:24:04,150
+Navigasyon için bu çok istenilen bir durum değil çünkü belki bir sokak önce dönecektiniz, size o hassasette bir bilgi gelmediği için o sokağa kaçırmış olabilirsiniz.
+
+208
+00:24:04,150 --> 00:24:12,150
+O yüzden burada file location vermek daha önemli. Ama bir şehirde olup olmadığınız bilgisinin ihtiyacınız var.
+
+209
+00:24:12,150 --> 00:24:23,150
+Weather uygulamasını düşünün. Nereye giderseniz oranın hava durumu gözüksün istiyorsunuz. İstanbul'dan ayrıldınız, Antalya'ya gittiniz.
+
+210
+00:24:23,150 --> 00:24:30,150
+Önemli olan İstanbul'da Antalya arasındaki değişimi yakalamak hatta İstanbul Koca'yla arasındaki değişimi yakalamak.
+
+211
+00:24:30,150 --> 00:24:40,150
+Bunlar yeterli. O zaman burada bir file location talebiniz yoktur. Bunun için de böyle bir izni talep etmeniz gereksiz olacaktır.
+
+212
+00:24:40,150 --> 00:24:43,150
+Course location ile yetinebilirsiniz.
+
+213
+00:24:43,150 --> 00:24:51,150
+Daha iyisini her zaman isterim'in bir sıkıntısı var mı? Evet, daha çok enerji tüketmek lazım.
+
+214
+00:24:51,150 --> 00:24:57,150
+Yani gereksiz yere hassas bir bilgi talep ediyorsanız, o zaman onun da bir bedeli var.
+
+215
+00:24:57,150 --> 00:25:02,150
+Onun hesaplanması için daha çok enerji harcamayı göze almanız gerekiyor.
+
+216
+00:25:02,150 --> 00:25:07,150
+Gelelim background location. Hangi durumlarda talep ediliyor?
+
+217
+00:25:07,150 --> 00:25:26,150
+Sürekli bir kişinin hareketinin izlenmesi gerekiyorsa ya da geofencing API'nin kullanılması söz konusuysa o zaman background location iznini talep etmeniz gerekli.
+
+218
+00:25:26,150 --> 00:25:33,150
+Sürekli olarak bir izlemek baktığınızda çok hoş bir şey değil teknik olarak.
+
+219
+00:25:33,150 --> 00:25:46,150
+Ama özellikle ebeveynler çocuklarını bu anlamda zarar görmemeli için son yıllardaki teknoloji sayesinde işte saat ve telefonla takip etmeyi tercih ediyorlar.
+
+220
+00:25:46,150 --> 00:25:54,150
+Ve bu noktada çocuğun bütün günkü location bilgisinin aktarılması gerektiği için,
+
+221
+00:25:54,150 --> 00:26:10,750
+sizin bunu bir uygulama kullanılırken değil, arka planda telefonu kapalı iken de location bilgisini üretebilecek bir ayarı yapmanız gerekiyor.
+
+222
+00:26:10,750 --> 00:26:12,750
+Bu ayar da background location üzerinden geçiyor.
+
+223
+00:26:12,750 --> 00:26:18,750
+Öte yandan bir evden ayrılacaksınız, bir iş yerinden ayrılacaksınız.
+
+224
+00:26:19,750 --> 00:26:24,750
+Evde bir şeyi açık unutup unutmadığınızı otomatik olarak kontrol edilsiniz.
+
+225
+00:26:24,750 --> 00:26:27,750
+Diyorsunuz ki bugünkü evler yavaş yavaş buna doğrayabiliyor.
+
+226
+00:26:27,750 --> 00:26:39,750
+İşte sizin IoT bir cihazınız, siz evden uzaklaşırken bir range'e çıktığınızda diyor ki bak ışık açık kaldı, bak televizyonu açık unuttum.
+
+227
+00:26:40,750 --> 00:26:51,750
+Sizin belli bir lokasyonu terk etmeniz durumunda sizi uyaracak bir yapıda da sürekli olarak bir arka planda lokasyon takibi gerekiyor.
+
+228
+00:26:51,750 --> 00:26:54,750
+Geofence'lik de burada devreye giriyor zaten.
+
+229
+00:26:54,750 --> 00:27:09,750
+Siz bu tür fence'ler tanımlıyorsunuz ve bu geographical fence'ler 100 metreden 1 kilometreye, 5 kilometreye kadar hatta daha fazlası değişkenlik gösterebiliyor.
+
+230
+00:27:09,750 --> 00:27:18,750
+Bu ne sağlıyor? Siz o tanımladığınız, yarı çapını verdiğiniz, merkezini verdiğiniz bölgeye giriş çıkış yaptınız mı?
+
+231
+00:27:18,750 --> 00:27:23,750
+Girdiniz mi? Çıktınız mı? İçeride kaldınız mı?
+
+232
+00:27:23,750 --> 00:27:28,750
+Bunların takip imkanı veriyor bu konuda size.
+
+233
+00:27:28,750 --> 00:27:37,750
+Bu sayede siz örneğin ki notifikasyonlarda da, bunu görüyorsunuz, reminder'da da bu karşınızda çıkıyor.
+
+234
+00:27:37,750 --> 00:27:42,750
+Mesela işe gittiğinizde bir şey yapmak istiyorsunuz. Normalde saat kurarsınız.
+
+235
+00:27:42,750 --> 00:27:52,750
+Ama artık reminder'larda bir bölgeye giriş yaptığınız zaman sizi hatırlatsın diye bir not ya da reminder ekleyebiliyorsunuz telefonunuza.
+
+236
+00:27:52,750 --> 00:27:56,750
+Böylece örneğin yarın işe gidiyorsunuz.
+
+237
+00:27:56,750 --> 00:28:04,750
+İşte ilk sabah yapmanız gereken bir şey var ya da yanınıza almanız gereken bir şey var ya da tam tersi evden işe bir şey götüreceksiniz.
+
+238
+00:28:04,750 --> 00:28:10,750
+Eve geldiğinizde bunu size reminder edilmesini saatten bağımsız olarak yapabiliyorsunuz.
+
+239
+00:28:10,750 --> 00:28:14,750
+Ya da bir bölgeden geçiyorsunuz, bir şey almanız gerekiyor.
+
+240
+00:28:14,750 --> 00:28:18,750
+İşte bu bölgeye giriş yaptığım anda beni uyar diyebiliyorsunuz.
+
+241
+00:28:18,750 --> 00:28:31,750
+Böylece siz aynı zamanda sadece zamansal bazda değil mekansal bazda da size hatırlatıcıların yardımcı olmasını sağlayabiliyorsunuz.
+
+242
+00:28:31,750 --> 00:28:37,750
+Ki bunun çok daha farklı uygulama alanları da mevcut.
+
+243
+00:28:37,750 --> 00:28:50,750
+Gelelim Android 10 ile birlikte gelen Access Background Location Permission mutlaka manifestin içerisine eklenmesi gerekiyor.
+
+244
+00:28:50,750 --> 00:28:55,750
+Ve özellikle şunu unutmayın.
+
+245
+00:28:56,750 --> 00:29:07,750
+Mümkünse bütün location accesslerinizi manifest üzerinde tanımlamak yerine runtime sırasında tanımlamanız daha security açısından önemli.
+
+246
+00:29:07,750 --> 00:29:23,750
+Çünkü manifeste aldığımız bütün izinler kullanıcı buna bir kez izin verdiğinde sürekli olarak lokasyon bilgisini kullanıcının her tür durumda uygulamayı kullandığında ya da uygulamalara kapılanmış üstünde.
+
+247
+00:29:23,750 --> 00:29:28,750
+Böylece ilgili programı verdiğini göreceksiniz.
+
+248
+00:29:28,750 --> 00:29:31,750
+Öte yandan artık uygulamalarda şu seçenek var.
+
+249
+00:29:31,750 --> 00:29:36,750
+Allow once, allow while using the app gibi seçenekler var.
+
+250
+00:29:36,750 --> 00:29:43,750
+Böylece sürekli olarak siz lokasyonunuzu başka bir uygulamayla paylaşmamış olursunuz.
+
+251
+00:29:43,750 --> 00:29:45,750
+Bu ayarlar oldukça önemli.
+
+252
+00:29:45,750 --> 00:29:54,750
+O yüzden mümkünse location accesslerinizi de runtime sırasında checkSelfPermission metodu üzerinden almanız da fayda var.
+
+253
+00:30:04,750 --> 00:30:12,750
+Ondan önce zaten arka plan lokasyon iznini direkt siz teslim ediyordunuz.
+
+254
+00:30:12,750 --> 00:30:16,750
+Orada öyle bir ayarım da yoktu zaten.
+
+255
+00:30:16,750 --> 00:30:19,750
+Ama artık bu ikisini birbirinden ayırdılar.
+
+256
+00:30:19,750 --> 00:30:25,750
+Hem security açısından hem de pill tüketim açısından böyle bir özellik geldi.
+
+257
+00:30:25,750 --> 00:30:35,750
+Burada statik bir background location iznini tanımladığınız bir kod parçasını görüyorsunuz.
+
+258
+00:30:35,750 --> 00:30:41,740
+Şimdi biraz önce bahsettiğim kısma gelelim.
+
+259
+00:30:42,740 --> 00:30:47,740
+Location isteğinin runtime sırasında mümkünse yapılması gerektiği.
+
+260
+00:30:47,740 --> 00:30:52,740
+Burada üç tane seçenekle karşılaşıyorsunuz.
+
+261
+00:30:52,740 --> 00:30:56,740
+İşte bir tanesi while using the app,
+
+262
+00:30:56,740 --> 00:30:59,740
+diğeri only this time, bir tanesi de deny.
+
+263
+00:30:59,740 --> 00:31:12,740
+Tabii bu noktada tercih ettiğiniz location access tipine bağlı olarak bu karşınıza çıkan dialog box ile karşılaşıyorsunuz.
+
+264
+00:31:12,740 --> 00:31:20,740
+Ve bunu runtime sırasında istediğiniz için zaten bu size soruluyor.
+
+265
+00:31:20,740 --> 00:31:23,740
+O yüzden bu kısmın değerli.
+
+266
+00:31:23,740 --> 00:31:34,740
+Öte yandan dikkat etmeniz gereken bir noktada sizin öncelikle foreground location aksesi talep etmeniz,
+
+267
+00:31:34,740 --> 00:31:41,740
+arkasından ihtiyaç duyuyorsanız gerçekten background location aksesi talep etmeniz.
+
+268
+00:31:41,740 --> 00:31:49,740
+Hani geçtiğiniz bölgelerdeki benzincileri görmek istiyorsanız, alışveriş merkezleri görmek istiyorsanız,
+
+269
+00:31:49,740 --> 00:31:52,740
+arka planda bunu takip etmeniz gerekebilir.
+
+270
+00:31:52,740 --> 00:32:03,740
+Ama sadece current location için, o anda bulunduğunuz lokasyonu görmek için background aksesi kesinlikle talep etmemelisiniz.
+
+271
+00:32:03,740 --> 00:32:07,740
+Şimdi gelelim biz bu bilgiyi nereden alacağız?
+
+272
+00:32:07,740 --> 00:32:12,740
+Eskiden location manager vardı, bir arkadaşınız da mail doluyu da sormuş.
+
+273
+00:32:12,740 --> 00:32:17,740
+Location manager artık çok kullanılmıyor, farklı yollar var.
+
+274
+00:32:17,740 --> 00:32:19,740
+Onlar üzerinden bileceğiz.
+
+275
+00:32:19,740 --> 00:32:26,740
+Evet, bunun için artık uzun süredir Google Play Services üzerinden bu hizmeti veriyor.
+
+276
+00:32:26,740 --> 00:32:36,740
+Sizin SDK içerisinden mutlaka Google Play Services'ı geliştirme yaptığınız ortama,
+
+277
+00:32:36,740 --> 00:32:39,740
+yani Android Studio'ya yüklemeniz gerekiyor.
+
+278
+00:32:39,740 --> 00:32:53,740
+Bu kısmı yaptıktan sonra ilgili dosyalar yüklendikten sonra artık fused location provider client dediğiniz sınıfı kullanarak
+
+279
+00:32:53,740 --> 00:33:00,740
+istediğiniz lokasyon bilgisini artık Allah şansına sahip buluyorsunuz.
+
+280
+00:33:00,740 --> 00:33:02,740
+Şimdi bunu nasıl alıyorsunuz?
+
+281
+00:33:02,740 --> 00:33:05,740
+İlgili izinleri tanımladınız, burada course location tanımlanmış.
+
+282
+00:33:05,740 --> 00:33:14,740
+İşte onCreative'in içerisinde fused location provider client tipindeki bir mesneyi attıktan sonra
+
+283
+00:33:14,740 --> 00:33:24,740
+location services üzerinden get fused location provider client'ı çağırarak ilgili değişkene atama işlemi gerçekleştiriyorsunuz.
+
+284
+00:33:24,740 --> 00:33:33,740
+Hemen arkasından bu değişkinizin üzerinden get last location'ı çağırarak
+
+285
+00:33:33,740 --> 00:33:41,740
+ilgili en son telefonunuzda kaydedilmiş başka bir uygulama tarafından da olabilir.
+
+286
+00:33:41,740 --> 00:33:43,740
+Bilgiyi talep ediyorsunuz.
+
+287
+00:33:43,740 --> 00:33:49,740
+Şimdi tabii bu bilgiyi talep ettiğinizde iki durum söz konusu.
+
+288
+00:33:49,740 --> 00:33:55,740
+Bir tanesi elinizde bu bilgi olabilir, telefon da, ikisi bu bilgi olmayabilir.
+
+289
+00:33:55,740 --> 00:34:01,740
+Bilgi varsa onSuccess çalışıyor. Siz burada işinizi yapabiliyorsunuz.
+
+290
+00:34:01,740 --> 00:34:07,740
+Çeşitli sebeplerden dolayı add onSuccess listener çalışmayıp add onFailure listener çalışabilir.
+
+291
+00:34:07,740 --> 00:34:11,739
+Onu da kodlamak gerekir.
+
+292
+00:34:11,739 --> 00:34:19,739
+Ama diyelim ki onSuccess çalıştı ama location object'i size boş, yani null döndü.
+
+293
+00:34:19,739 --> 00:34:30,460
+Ne sebeple null dönmüş olabilir başka bir kişi var mı?
+
+294
+00:34:30,460 --> 00:34:37,900
+Peki ekran?
+
+295
+00:34:37,900 --> 00:34:43,110
+Sensörde donanımsal arıza olabilir.
+
+296
+00:34:43,110 --> 00:34:47,110
+Güzel. Birincisi bu olabilir. [öğrenci].
+
+297
+00:34:47,110 --> 00:34:51,110
+Hocam telefonun çekmemesi olabilir mi acaba?
+
+298
+00:34:51,110 --> 00:34:57,110
+Telefonun çekmemesi artı bilinçli bir şekilde locasyon özelliğinin kapalı olması.
+
+299
+00:34:57,110 --> 00:35:03,110
+Yani airplane modda olması ya da gerçekten GPS'in kapalı olması.
+
+300
+00:35:03,110 --> 00:35:07,110
+Artı bunun üzerine wifi ya da baz istasyonuna bir bağlantıda olmaması.
+
+301
+00:35:08,110 --> 00:35:20,110
+Ya da uydu bağlantısı sağlaması konusundaki fiziksel ya da hava şartlarının uygun olmaması gibi çeşitli seçenekler olabilir.
+
+302
+00:35:20,110 --> 00:35:24,110
+Şimdi burada da zaten bu slide'da bunları görüyorsunuz.
+
+303
+00:35:24,110 --> 00:35:29,110
+Location'ın kapalı olması bu şartlarda null dönecektir.
+
+304
+00:35:29,110 --> 00:35:39,110
+Daha telefonun ilk kez açıldığı zaman burada da yeni bir device kurduğunuzda herhangi bir şekilde lokasyon bilgisi olmayacaktır.
+
+305
+00:35:39,110 --> 00:35:48,110
+Ya da ilk defa Google Play Services yüklüyorsunuz ya da bir problem oldu yeniden başlatıyorsunuz.
+
+306
+00:35:48,110 --> 00:35:54,110
+Burada Fuse Location Provider Client'ın oluşturulmamış olması.
+
+307
+00:35:54,110 --> 00:36:02,110
+Eski Fuse Location Provider'ın işte memoride asılı kalması bunun içeriğinin dolmamış olması gibi problemler olabilir.
+
+308
+00:36:02,110 --> 00:36:03,110
+Evet [öğrenci].
+
+309
+00:36:03,110 --> 00:36:09,800
+Peki bu On Success neyin success'ı oluyor?
+
+310
+00:36:09,800 --> 00:36:13,800
+Yani neyi başarılı olmuşta bir lokasyon verisi almışız gibi olmuş ama null dönmüş.
+
+311
+00:36:14,800 --> 00:36:26,800
+Şöyle bu noktada genellikle On Success lokasyonla ilgili bilgiye erişimin mümkün olduğu.
+
+312
+00:36:26,800 --> 00:36:30,800
+Yani örnek veriyorum işte GPS'e erişimde bir sıkıntı yok ama GPS kapalı.
+
+313
+00:36:30,800 --> 00:36:42,800
+Yani donamsal olarak bir problemin olmadığı yazımsal olarak herhangi bir şekilde bilgi edinemediğimiz durumlarda biz bu tür sıkıntıları yaşıyoruz null döne durumlu.
+
+314
+00:36:42,800 --> 00:36:51,800
+Diğer durumlarda işte o ilgili donanımla herhangi bir iletişim kurulamaması durumundan bahsediyoruz.
+
+315
+00:36:51,800 --> 00:37:06,239
+Tabii Get Last Location metoduyla bir bilgi aldığınızda şöyle bir durum var.
+
+316
+00:37:06,239 --> 00:37:11,239
+O bilgi aslında belki de hatalı olabilir.
+
+317
+00:37:11,239 --> 00:37:17,239
+Bu noktada en son gelen bilgi kesinlikle doğrudur diyemiyoruz.
+
+318
+00:37:17,239 --> 00:37:39,239
+Çünkü o andaki bir hesaplama hatası size üretilmiş bilgi doğru değilse bu noktada ya da eski bir bilgi mesela siz saat ikide talep etmişsiniz ama sizin uygulamalarınızın hiçbiri lokasyon bilgisi üretmediği için en son dahi dün gece bir bilgi üretilmiş ya da sabah kalktığınızda bir bilgi üretilmiş.
+
+319
+00:37:39,239 --> 00:37:43,239
+O yüzden bu noktada bazı kontrolleri yapmakta fayda var.
+
+320
+00:37:44,239 --> 00:37:56,239
+İşte lokasyon bilgisinin ne kadar yeni olduğu bir saat kontrolü yapmak önemli ki gerçekten doğru bir lokasyon bilgisi üretmiş misiniz?
+
+321
+00:37:56,239 --> 00:38:09,239
+İşte üretilen lokasyon bilgisinin daha önceki üretilen bilgilere ne kadar yakın zamanda üretilmiş bilgi varsa uyumluluk gösterdiği.
+
+322
+00:38:09,239 --> 00:38:17,239
+Çünkü çok kısa bir süre içerisinde bambaşka bir yeri gösteriyorsa bu sizin cihazınızın yanlış bir veri ürettiği anlamıdır.
+
+323
+00:38:17,239 --> 00:38:23,239
+Bu tür kontrollerin mümkünse sizin tarafınızdan yapılırması öneriliyor.
+
+324
+00:38:23,239 --> 00:38:38,239
+Zorunlu değil ama bunları yaptığınızda ara ara GPS'ten ya da işletim sisteminden kaynaklı hatalı üretilen verileri tespit etmek ödev yaparken öğrenciler de bazen oluyor.
+
+325
+00:38:38,239 --> 00:38:42,239
+Geçtiğimiz senelerde lokasyon bazı ödevler vermiştik.
+
+326
+00:38:42,239 --> 00:38:51,239
+O noktada işte hocam bir anda üniversitenin giriş kapısındayken üniversitenin ortasında gösterdi.
+
+327
+00:38:51,239 --> 00:38:58,239
+İşte rota çizdiriyorduk. Rota birbirine böyle ip gibi bağlanırken bir yerde çok ciddi bir zikzak çizmiş.
+
+328
+00:38:58,239 --> 00:39:00,239
+Çok uzak bir noktaya göstermiş.
+
+329
+00:39:00,239 --> 00:39:06,239
+Burada bariz bir şekilde verinin yanlış üretildiğine kanat getirebilirsiniz.
+
+330
+00:39:06,239 --> 00:39:08,239
+Çünkü hızınız belli, üretilen veriler belli.
+
+331
+00:39:08,239 --> 00:39:22,239
+Aralarındaki ilişkiyi kontrol edip bunu sizin arka planda yazımsa olarak düzeltiyor olmanız ya da belirli bir preprocesinden geçiriyor olmanız önemli bu noktayla değinmiş olabilir.
+
+332
+00:39:22,239 --> 00:39:41,079
+Şimdi location based servislerdeki birinci kriterimiz tabii ki doğru adres üretme, ikincisi de batarya optimizasyonu.
+
+333
+00:39:41,079 --> 00:39:52,079
+Şimdi Android 8'den itibaren backgroundlar için özellikle yeni kurallar getiririz demiştik geçtiğimiz hafta.
+
+334
+00:39:52,079 --> 00:39:57,079
+Yeterli bir şekilde konuşmuştuk background task'lar için.
+
+335
+00:39:57,079 --> 00:40:09,079
+8'den sonra bu 10 ve 11'de gelen background location ayrımı da aslında size bunu daha iyi yönetmeniz noktasında bir regülasyon sağlıyor.
+
+336
+00:40:09,079 --> 00:40:30,079
+Siz background location talebinde bulunsanız da bu gelen restrictionlardan dolayı bir saatte size kullandığınız uygulama ve gerekçelerinize bağlı olarak ondaki belirli ayarlar üzerinden sadece birkaç kez lokasyon bilgisi üretilmek durumunda kalınabiliyor.
+
+337
+00:40:30,079 --> 00:40:47,079
+Yani siz dakikada bir lokasyon bilgisini background almak isteyebilirsiniz ama bu şartlar gereği telefonunuzun işte bataryası, gerekli izinleri vesaireden dolayı saatte 1-2 taneye, 3 taneye, 4 taneye kadar düşebiliyor.
+
+338
+00:40:47,079 --> 00:40:55,079
+O yüzden her zaman için siz beklediğiniz sıklıkta veri alamayabilirsiniz.
+
+339
+00:40:55,079 --> 00:40:59,079
+Bazen daha hızlı, bazen daha yavaş size veri üretiliyorlardır.
+
+340
+00:40:59,079 --> 00:41:03,079
+Yani o yüzden bunu hiçbir zaman gözden kaçırmamak gerekir.
+
+341
+00:41:03,079 --> 00:41:28,079
+Onun dışında özellikle GPS üzerinden veri almadığınız, Wi-Fi üzerinden idare edebildiğiniz noktalar da Android işletim sitemi aynı Wi-Fi'ye bağladığınız sürece sizin zaten o lokasyondan çok ayrılmadığınızı tespit ettiği için ekstra bir enerji harcamamış oluyor.
+
+342
+00:41:28,079 --> 00:41:45,079
+Sizlere de gerekli detay bilgiyi verdiği için hem siz konum bilgisini egzalt olarak almış oluyorsunuz hem de siz oradan ayrılmadığınız sürece ekstradan bir hesaplama yapmayacağı için bu durumu optimize etmiş oluyor.
+
+343
+00:41:45,079 --> 00:42:03,079
+Bir de Geofence kısmı var. Geofence kısmında da size bir bölgeden çıkıp çıkmadığınız noktası saniyede bir kontrol edilerek buradan çıktı mı çıkmadı mı yapılıyor.
+
+344
+00:42:03,079 --> 00:42:15,079
+Burada genellikle bu 10 saniyeler mertebesinde yaklaşık işte burada bahsettiğim gibi iki dakikaya kadar bir gecikme ile sizi aktarılıyor olabilir.
+
+345
+00:42:15,079 --> 00:42:27,079
+Bir evden ayrıldınız. Hemen ayrıldığınız zaman o çizgi geçtiğiniz zaman size o bilgi geldi. Geofence kurduğunuz bölge için belirli sıklıklarla kontroller yapılıyor.
+
+346
+00:42:27,079 --> 00:42:37,079
+Bu kontroller ne kadar sıklığı az olursa ve de aralık ne kadar açık olursa doğal olarak batari performansınız da o kadar yükselmiş oluyor.
+
+347
+00:42:37,079 --> 00:42:47,079
+Bu da Geofence'lardaki bu stratejde aslında size telefonunuzdaki bateriyi çok daha iyi kullanmamızı sağlayın.
+
+348
+00:42:47,079 --> 00:42:58,579
+Şimdi gelelim bateri tüketimini etkileyen üç temel parametreyi. Accuracy, Frequency ve Latency.
+
+349
+00:42:58,579 --> 00:43:08,579
+Şimdi saat 14.43 oldu 14.55'ten itibaren bu kısımları konuşmaya devam ediyoruz. Bugün ağırlıklı olarak konuları anlatacağız.
+
+350
+00:43:08,579 --> 00:43:16,579
+Herhangi bir uygulama yapmayı planlamıyorum konulara yetişsin diye. O yüzden saat 14.55'de görüşmek üzere arkadaşlar.
+
+351
+00:43:16,579 --> 00:55:28,710
+Evet arkadaşlar yeniden merhaba kaldığımız yerden devam edelim.
+
+352
+00:55:28,710 --> 00:55:34,710
+Bateri tüketiminin öneminden bahsetmiştik lokasyon işlerinde.
+
+353
+00:55:34,710 --> 00:55:53,710
+Buna etkileyen temel üç parametre var. Tadef ettiğiniz doğruluk lokasyon bilgisindeki ne sıklıkla lokasyon bilgisine ihtiyaç duyduğunuz ve bu lokasyon bilgisinin ne gecikmeyle size ulaşacağı.
+
+354
+00:55:53,710 --> 00:55:57,710
+Bu üç tanesi gerçekten doğrudan bateri tüketimini etkiliyor.
+
+355
+00:55:57,710 --> 00:56:10,710
+Şimdi gelelim accuracy kısmına. Accuracy kısmında temelde bu ayarı set priority üzerinden yapıyorsunuz ve dört tane farklı kademeden bahsediyoruz.
+
+356
+00:56:10,710 --> 00:56:16,710
+İşte high accuracy, balanced power accuracy, low power ve no power olmak üzere.
+
+357
+00:56:16,710 --> 00:56:35,710
+Şimdi high accuracy dediğiniz zaman doğal olarak bütün seçenekler devreye giriyor ve bunlardan ete ettiğiniz bütün bilgileri kullanarak mümkün olan en yüksek hassasiyette lokasyon verisi üretiyorsunuz ki doğal olarak bu en fazla enerjik yeten seçenek.
+
+358
+00:56:35,710 --> 00:56:55,710
+Burada ikinci seçenekte GPS'ten daha çok mümkünse Wi-Fi ya da basitasyonlardan gelen bilgi kullanılıyor ve güç tüketimi dengelenerek bu bilgili lokasyon bilgisi üretiliyor.
+
+359
+00:56:55,710 --> 00:57:01,710
+En sık kullanılan seçeneklerden bir tanesi bu önerilen.
+
+360
+00:57:01,710 --> 00:57:26,710
+Low power ise daha çok pil tüketiminin minimum seviyede kullanacak şekilde organize edilmiş bir seçenek ve genelde telefonunuz zaten basitasyon ile iletişim halinde olduğu için o gelen sinyaller kullanılarak üretiliyor.
+
+361
+00:57:26,710 --> 00:57:38,710
+Ama buradaki üretilen bilginin doğruluk oranı çok da yüksek değil.
+
+362
+00:57:38,710 --> 00:57:48,710
+Kors düzey, city düzeyinde diyor ama city level'dan daha başarılı daha doğru sonuçlarla üretiliyor ama bunun bir garantisi yok.
+
+363
+00:57:48,710 --> 00:58:07,710
+En kötü ihtimalle şehir düzeyinde bir hata payıyla üretim sağlanabiliyor ama günümüzde hücre sal bazı stasyonlarının sıklıkla yerleştirildiği düşünürlerine daha yüksek doğrulukta bir değer öğretip soruyoruz.
+
+364
+00:58:07,710 --> 00:58:21,710
+Bir de son seçenek var no power. Bu noktada uygulamanız mevcutta başka bir uygulama lokasyon bilgisi üretiyorsa tamamen ona bağlı olarak çalışıyor.
+
+365
+00:58:21,710 --> 00:58:29,710
+Eğer üretmiyorsa zaten demek ki bilgi ona ulaşmayacak demektir. Bu riski alıyorsunuz.
+
+366
+00:58:29,710 --> 00:58:46,710
+O yüzden bu noktada no power seçeneği birazcık en son üretilen değer ne zaman üretildiyse onu kullanacak şekilde düşünebilirsiniz çalışma prensibine ama bu noktada neredeyse hiçbir enerji tüketmemiş oluyorsunuz.
+
+367
+00:58:46,710 --> 00:59:03,710
+Gelelim frekansa. Doğal olarak milisaniye cizisinden frekans belirleyebilirsiniz ama genelde saniye mertebesinde bir lokasyon bilgisi üretilmesi söz konusu.
+
+368
+00:59:03,710 --> 00:59:17,710
+Input olarak milisaniye cizisinden veriyorsunuz ama 5000, 10000, 2000, 1000 şeklinde değerler veriliyor ve lokasyon tabanlı işlerde saniyede birden fazla bir talep pek mümkün değil.
+
+369
+00:59:17,710 --> 00:59:44,710
+Karşılaşmazsınız ama en çok hassasiyeti yüksek frekal saniyede bir defadır. Bu da yine çok yüksek bir talep. Her saniyede bir defa lokasyon bilgisi talep etmek oldukça yüksek ancak hızlı hareket ettiğiniz araçlarla navigasyon ihtiyacı duyduğunuzda bu seçeneği kullanabilirsiniz.
+
+370
+00:59:44,710 --> 00:59:53,710
+Set interval üzerinden beliriyorsunuz. Ne sıklıkla bir talepte bulunduğunuzu. Bir de set fastest interval diye bir seçenek var.
+
+371
+00:59:53,710 --> 01:00:14,710
+Şimdi sizin aldığınız frekansa bağlı olarak bir de sizin o bilgiyi işleme süreniz var. Eğer siz işleme süreniz aldığınız frekanttan zaten daha fazlaysa o zaman o sıklıkla bir bilgi almanızın anlamı yok.
+
+372
+01:00:14,710 --> 01:00:22,710
+Çünkü zaten siz o bilgiye yenisini daha işlemeden alıyorsunuz demektir. Bu da anlamlı bir durum değildir.
+
+373
+01:00:22,710 --> 01:00:42,710
+Ama bazı durumlarda siz o kadar hızlı işliyorsunuzdur ki eğer daha hızlı bir bilgi alma şansınız varsa o bilgiyi set fastest interval ile tanımlayıp o bilgiyi Android işletim sisteminden talep edebilirsiniz.
+
+374
+01:00:42,710 --> 01:00:53,710
+Böylece siz çok kısa sürede lokasyon bilgisini kullandığınız için Android size en hızlı bilgiyi bu şekilde aktarabilme şansına sahip olacaktır.
+
+375
+01:00:53,710 --> 01:01:14,099
+Standart 10 saniyede veri istiyorsunuzdur ama belli anlarda 5 saniyede veriye ihtiyacınız varsa burada set fastest intervalı 5 saniye getirip işletim sisteminin uygun olduğu dönemlerde 5 saniye veri istemesini mümkün kılabilirsiniz.
+
+376
+01:01:14,099 --> 01:01:28,099
+Gelelim set max wait time'a. Şimdi bir isteme sıklığınız var bir de lokasyon bilgisinin size aktarılma süresi var.
+
+377
+01:01:28,099 --> 01:01:48,099
+Şimdi bu noktada latency'i birazcık geciktirip işte yeni bir lokasyon bilgisini de daha sıklıkla alıp sizin işte örnek veriyorum bir geofence tarafında çalışırken
+
+378
+01:01:48,099 --> 01:02:07,099
+sizi iletilecek lokasyon bilgisini daha az aralıklarla daha az sıklıkla aktarılmasını sağlayabilirsiniz uygulamanıza. Bu sayede hem data anlamında hem de pill tüketimi anlamında bir avantaj sağlamış olursunuz.
+
+379
+01:02:07,099 --> 01:02:20,099
+Latency'i düşürerek aldığınız bir veriyi belli periodlarla uygulamalara dağıtma noktasında bir ayar yapın. Şansınız söz konusu olabilir.
+
+380
+01:02:20,099 --> 01:02:30,099
+Burada zaten işte geofence kullanırken nasıl bir power saving yapılabileceği kısaca anlatılıyor.
+
+381
+01:02:30,099 --> 01:02:55,449
+Şimdi gelelim bir map uygulamasından bahsediyoruz. İşte bu noktada kullanıcının activity ile ilişkili olduğundan bahsediyoruz bir use case. Bu noktada priority high olmak durumunda genellikle.
+
+382
+01:02:55,449 --> 01:03:12,449
+Ama bazı durumlarda eğer şartları veriyorsa balance power accuracy'i de kullanabilirsiniz. Çünkü sürekli olarak zaten kullanıcı bir aksiyon içinde olduğu için o doğru adres bilgisiye ihtiyaç duyuyor demektir.
+
+383
+01:03:12,449 --> 01:03:29,449
+Ama öte yanda işte bir Vader uygulamasından bahsediyoruz. Bu Vader uygulaması bu noktada son aldığımız lokasyon bilgisini kullanmasına hiçbir sakınca yok.
+
+384
+01:03:29,449 --> 01:03:40,449
+Burada ekstradan bir priority yüksek seviyede tutmamıza gerek yok. O yüzden de bu tür uygulamalarında son alınan lokasyon bilgisini kullanmak yeterli olacaktı.
+
+385
+01:03:40,449 --> 01:03:56,980
+Şimdi bir başka use case özellikle geofensin kullanılacağı anlarda işimize yarayan bir use case.
+
+386
+01:03:56,980 --> 01:04:12,980
+İşte belirli bir işten uzaklaştığınızda evden uzaklaştığınızda yaklaştığınızda o bölgeye girdiğinizde ya da çıktığınızda sizin bunu bir şekilde trigger ettirecek bir mekanizmaya ihtiyacınız var.
+
+387
+01:04:12,980 --> 01:04:36,980
+Geofens de bunu sağlıyor. 3-5 saat sonra daha detaylı göreceksiniz. Geofens tanımladığımız geofensa girdiğinizde ve çıktığınızda ya da oradaki aksiyonunuzda bunu takip edebilecek bir yapı kurduğunuzda açıkçası bunu arka planda takip edilmesi gerekiyor.
+
+388
+01:04:36,980 --> 01:04:42,980
+Bu sayede siz belirli uyarıları belirli sıklıklarla alma şansına sahip oluyorsunuz.
+
+389
+01:04:42,980 --> 01:04:58,630
+Öte yandan bir başka use case ki burada başka bir API de devreye giriyor. Aktif trick open için API. Örneğin bisikletle ya da işte arabayla seyahat ediyorsunuz.
+
+390
+01:04:58,630 --> 01:05:20,630
+Özellikle burada sizin bu aksiyonlarınızın takip edilerek bu aksiyon tespit edildiğinde otomatik olarak arka planda lokasyon bilgilerinizin sıklığının değişmesi ve sizin bunu yazımsal olarak ayarlamanız düşünülebilir.
+
+391
+01:05:20,630 --> 01:05:28,630
+Böylece işte kullanıcı ilgili aktivitesini tamamladığında sıklık düzeyini azaltabilirsiniz.
+
+392
+01:05:28,630 --> 01:05:38,630
+Bu tür aktiviteleri takip etmekte lokasyon bilgisini hangi sıklıkta alacağımızı doğrudan etkileyecektir.
+
+393
+01:05:38,630 --> 01:05:58,070
+Mesela bu da tipik Ceo fancy use case'i özellikle aradığınız bir ürünün ya da aradığınız bir markanın yakınına geldiğinizde arka planda takipinde uyarılabilirsiniz.
+
+394
+01:05:58,070 --> 01:06:11,070
+Bununla ilgili bizim yaptığımız bir çalışmada diyelim ki bir ayakkabı arıyorsunuz, bir tişört arıyorsunuz ve bunun bedelini bulamadınız.
+
+395
+01:06:11,070 --> 01:06:28,070
+İşte internette de yok ama bir yerde gezerken bu markaya ait bir dükkan olduğu bilgisini otomatik bulup orada da stoklara erişme şansınız olursa o zaman eğer o aradığınız ürün varsa size bir notifikasyon ver.
+
+396
+01:06:28,070 --> 01:06:44,070
+İşte şurada x mağazası var, aradığınız ürün bu mağazanın stoklarında gözüküyor deyip arka blokta olan, iki sokak ötede olan bir seçeneğin size sunulması şeklinde bir use case de düşünülebilir.
+
+397
+01:06:44,070 --> 01:06:59,070
+Bir başka use case de özellikle daha önce de bahsettik, ilgilik işlerin takip edilmesi noktasında daha çok çocuklar oluyor.
+
+398
+01:06:59,070 --> 01:07:28,070
+Bunları sürekli olarak takip etmek için de genelde çok da aslında açıkçası seçeneğiniz çok fazla yok çünkü bu noktada priority high accuracy kullanırsanız çok fazla enerji tüketeceği için belki çocuk gün çağrısında daha eve dönmeden telefonunun şarjı bitecek.
+
+399
+01:07:28,070 --> 01:07:35,070
+O yüzden bu noktada bir denge kurarak bunu sağlamanız önemli.
+
+400
+01:07:35,070 --> 01:07:58,300
+Şimdi tabii location request objesi üretirken o request objesinin biraz önce gösterdiğimiz ilgili metotlar aracılığı ile set interval, set max wait time gibi bunları set edebiliyorsunuz.
+
+401
+01:07:58,300 --> 01:08:10,300
+Bunun ötesinde set expiration time dediğimiz location request objesinin ne kadar sıklıkla update olacağını da belirleyebiliyorsunuz.
+
+402
+01:08:10,300 --> 01:08:32,300
+Yani siz oraya expiration time verdiğinizde belli bir süre sonra artık kendi kendini o sürenin sonunda location bilgisini talep etme noktasında çağırmıyor ve böylece otomatik olarak sanki televizyonu akşam belli bir saatte kapatmak için kurmanız gibi location bilgisi ile de ilişkisini kesiyor.
+
+403
+01:08:32,300 --> 01:08:53,300
+Tabii bunu doğrudan yapmanın yolu request location objesi deyip ilgili metodu çağırmak ve bunu doğrudan sonlandırmanın yolu da remove location objesi çağırarak işiniz bittiğinde sürekli olarak sorgu atmanın önüne geçmek bunlara dikkat etmeniz gerekiyor.
+
+404
+01:08:53,300 --> 01:08:59,300
+Expiration time ya da süre olarak belirleyebiliyorsunuz. Bu tür seçenekler var.
+
+405
+01:08:59,300 --> 01:09:12,300
+Tabii current location settings'leriyle ilgili ayarlamalar yapmak için location settings request builder üzerinden bir builder üretmeniz gerekiyor ve location request'inizi oluşturmanız gerekiyor.
+
+406
+01:09:12,300 --> 01:09:26,300
+Location request'inize oluşturduktan sonra da location service'leri üzerinden ilgili location settings'lerini çekebiliyorsunuz.
+
+407
+01:09:26,300 --> 01:09:54,300
+Bu location settings'lerine bağlı olarak da gerçekten o anda bir bağlantı söz konusuysa on success tarafında ilgili settings bilgilerini görüntüleyebiliyorsunuz ama öte yandan o anda bir bağlantı söz konusu değilse bir problem varsa o zaman on failure tarafından düşüküyor ve onunla ilgili çeşitli çözümler üretmeniz bekleniyor sizden.
+
+408
+01:09:54,300 --> 01:10:05,670
+Burayı görmüştük. Bu fazladan eklenmiş bir slide. Location settings'leri değiştirmek için location request objesi üretmekten bahsetmiştim.
+
+409
+01:10:05,670 --> 01:10:24,670
+Bu da yine bir başka kont parçası var. Bunun için önce location request objesini üretiyorsunuz. Daha sonra da location setting request builder üzerinden sizin ürettiğiniz şartları sisteme entegre ediyorsunuz.
+
+410
+01:10:24,670 --> 01:10:34,670
+Biraz önce sistemdeki şartları almıştık. Sistemde hazır mevcut şartlar, bulunan şartlar, daha önceden set ettiğiniz şartları kullanmaya devam edebilirsiniz.
+
+411
+01:10:34,670 --> 01:10:52,670
+Her seferinde yeniden set etmemiz gerekmiyor ama bazı şartlarda bunu değiştirmemiz gerektiğinde location request objesini, ilgili metotlarını belirleyerek buradaki gibi bu yıllara aktarıyorsunuz ve yeni location request settings'leriyle artık
+
+412
+01:10:52,670 --> 01:11:07,420
+location bilgileri o settingslere uygun olarak dünceleniyor. Peki burada location updates yani artık location bilgisi düncelenmeleri nasıl başlatıyorsunuz?
+
+413
+01:11:07,420 --> 01:11:34,420
+Bu noktada şurada görmüş olduğunuz requesting location updates isimli bir değişken var görüyorsunuz. Bu aslında bize bu noktada fused location client üzerinden request location updates üzerinden döndürülen bir boolun değer var.
+
+414
+01:11:34,420 --> 01:11:55,420
+Bu boolun değer bizim için true mu false mu ona bakıyor. Eğer request location updates gönderdiğiniz request objesi içerisindeki talepleriniz olumlu ise o zaman bize olumlu dönmesi durumunda bu kısım olumlu olarak yansıyor.
+
+415
+01:11:55,420 --> 01:12:15,420
+Location callback çalışıyor. Location callback üzerinden de location result alıyoruz. Location result'da da dönen değeri gerekirse maps üzerinde gönderiliyoruz. Gerekirse de hesap işlemi içerisine sokarak bilgili location işlemimizi gerçekleştiriyoruz.
+
+416
+01:12:15,420 --> 01:12:37,420
+Burada tekrar etmek gerekirse start location updates bizim özellikle yazdığımız fonksiyon ismi bunu bu noktada çağırıyoruz. Esas sistemsel seviyede çağırma işini fused location client üzerinden request location updates ile başlatıyoruz.
+
+417
+01:12:38,420 --> 01:13:03,420
+Ve bunu başlattığımız anda da biraz önce oluşturduğumuz location request objesini, settinglere verilen objeyi sisteme gönderiyoruz. Sistem bunun karşısında bir location callback objesine bir tane daha fazla daha doğrusu çünkü sadece lokasyon bilgisi ile aynı zamanda altitude ve hız bilgisini de gönderiyor size.
+
+418
+01:13:03,420 --> 01:13:20,420
+Bu bilgiyi pass ediyor. Siz de bu bilgiyi location callback üzerinden burada gördüğünüz gibi on location result metodu üzerinden alıyorsunuz. Location result metodu dolduğu anda da bu noktada get locations bunlardan bir tanesi.
+
+419
+01:13:20,420 --> 01:13:42,220
+Anlısında altitude ya da velocity gibi bilgileri alabiliyorsunuz. Tabi doğal olarak on ratio'mda görmüştünüz şimdi on pause'u görüyorsunuz. Yukarıda şurada on ratio'mda vardı.
+
+420
+01:13:42,220 --> 01:14:11,220
+Burada da yine on ratio'm görülsün diye sağ tarafı ekledim. On pause'da location updating yani artık location bilgisi istemediğinizi, uygulamanız çalışmıyorken, on plan'da değilken, location bilgisini güncellemenin gerekli olmadığınız stop location updates üzerinden o metodu çağırıp sistem seviyesinde fused location client üzerinden remove location update'i veriyorsunuz.
+
+421
+01:14:12,220 --> 01:14:34,220
+Location updates'i çağırarak bilgili location callback'i ileterek oraya diyorsunuz ki ben artık bu noktadan itibaren location bilgisi istemiyorum. Bu servisi lütfen benim adıma durdur. Benim istediğim bilgilere artık bana gönderme diyorsunuz ve böylece işiniz bittiği anda location güncellemesi de durdurmuş oluyorsunuz.
+
+422
+01:14:34,220 --> 01:14:52,659
+Tabi bir başka önemli nokta da dersin başında gördüğünüz device'ın çeşitli konfigürasyon değişikliklerinde bilgileri bundle objesinde sakladığımız özel durum.
+
+423
+01:14:52,659 --> 01:15:14,659
+Bu noktada isterseniz o andaki location updates bilgilerini ilgili isteği yaptığınızda dönen değer ne ise yani true ya da false ise bunu requesting location updates isimli değişken de saklayabiliyorsunuz.
+
+424
+01:15:14,659 --> 01:15:38,659
+Bu sayede herhangi bir şekilde telefonunuzu haritada dikeyden yataya çevirdiğinizde örneğin normalde activity destroy ediliyor. Siz bu destroy işlemi noktasında destroy işlemi gerçekleştiği için aslında location bilgisini alma işini kaybetmiş oluyorsunuz.
+
+425
+01:15:38,659 --> 01:15:57,659
+Bunun devamlılığını kılmak için tekrar yan döndürdüğünüz anda activity'nin kaldığı yarın devam etmesini yani ekstradan bir herhangi bir yeni setup yapmamanız için böyle bir bilginin kaydedilmesi gerekiyor.
+
+426
+01:15:57,659 --> 01:16:14,659
+O yüzden mutlaka burada request ettiğiniz location update ile ilgili sistemden gelen true ya da false değerini saklayıp yeniden kaldığınız yerde true ise kaldığınız yerden devam edebiliyorsunuz.
+
+427
+01:16:14,659 --> 01:16:18,659
+Böyle bir geçişi smooth bir şekilde yapmış oluyorsunuz.
+
+428
+01:16:18,659 --> 01:16:35,800
+Şimdi gelelim burada özellikle background tarafında bir location bilgisi talebiniz varsa neler ön plana çıkıyor bunlara bir bakalım.
+
+429
+01:16:35,800 --> 01:16:49,800
+Eğer böyle bir uygulamanızın ihtiyacı varsa bu noktada ilgili izinlerin alınıp alınmadığını mutlaka kontrol etmeniz gerekiyor.
+
+430
+01:16:49,800 --> 01:16:54,800
+Akses course location ya da access file location.
+
+431
+01:16:54,800 --> 01:17:11,800
+Bir yandan telefon çalışacak telefon API level 29 yani Android 10 ve üzerinde ise mutlaka access background location izninin alınmış olması dinamik ya da statik olarak gerekiyor.
+
+432
+01:17:11,800 --> 01:17:16,800
+Özellikle bunu runtime süresinde almak tavsiye ediliyor.
+
+433
+01:17:16,800 --> 01:17:38,800
+Öte yandan mutlaka böyle bir izin talep ediyorsanız bir şekilde uygulamanızın içerisinde bir background servisin çalışıyor olması bir work manager'ın bir alarm manager'ın ya da bir pending intent'in devreye girecek olması sizden bekleniyor.
+
+434
+01:17:38,800 --> 01:17:51,800
+Yani böyle bir bu bahsettiğimiz yapılardan bir tanesi yoksa o zaman background access location talebi yapmanızın da çok da bir açıkçası anlamı yok.
+
+435
+01:17:51,800 --> 01:18:07,800
+O yüzden bunlardan birini genelde kullanıyor olmanız bekleniyor sizden böyle bir talep yapıyorsanız bunlar yoksa sizde background location access talebinde bulunmayın deniyor.
+
+436
+01:18:07,800 --> 01:18:32,800
+Ya da kullanıcıları da bu konuda talepte bulunduğunuz zaman ne için kullandığınız noktasında ve hangi şartlarda kullandığınız noktasında mutlaka bilgilendirmeniz öneriliyor ki kullanıcı böyle bir izin talebini gönderdiğiniz zaman ona gösterdiğinizde niye böyle bir background da location bilgisine eriştiğinizi görmesi ve okuması lazım.
+
+437
+01:18:32,800 --> 01:18:59,800
+Evet şimdi pending intent demişken pending intent iki hafta önce konuştuğumuz bir konuydu ben bir kez daha sorayım pending intent hangi durumda bizim için önemli niye böyle bir intent türü var pending intent hangi işi yapmamızı sağlıyor normal intentten farkı nedir?
+
+438
+01:18:59,800 --> 01:19:19,210
+Evet olur.
+
+439
+01:19:19,210 --> 01:19:23,210
+Hocam planlı işlerimizi yapmak için kullandığımız intent türüydü öyle hatırlıyorum.
+
+440
+01:19:23,210 --> 01:19:45,649
+Evet çok güzel planlı gelecekte ki işleri yapmak için kullandığımız intent türü özellikle bizim uygulamamızın bir alarm manager üzerinden ya da bir notification üzerinden çalıştırıldığında ya da seçildiğinde tıklandığında başka bir uygulamanın
+
+441
+01:19:45,649 --> 01:19:54,649
+bizim tetiklediğimiz uygulama üzerinden sanki o uygulamaymış gibi ilgili işi yapmasını talep edebiliyoruz.
+
+442
+01:19:54,649 --> 01:20:13,649
+Yani aslında normalde sizin yarattığınız görev o anda çalışmadığı için sizin uygulamanız arka plana geçtiğinde hala ileride bir iş tanımlandıysa bir alarm manager ya da notification üzerinden tetiklenerek çalışacak bir iş varsa
+
+443
+01:20:13,649 --> 01:20:24,649
+bunun 5 saat sonra olabilir 30 dakika 5 dakika sonra olabilir ya da bir notification geldiğinde çalışması bekleniyordur.
+
+444
+01:20:24,649 --> 01:20:29,649
+Bunun çalışmasını sağlamak için pending intentlerden faydalanıyoruz.
+
+445
+01:20:29,649 --> 01:20:32,649
+Bunu bir kez daha hatırlatmış OV.
+
+446
+01:20:32,649 --> 01:20:46,949
+İşte burada background location ile ilgili daha önceki slide'larda çoğunu konuştuğumuz bilgileri yeniden görüyorsunuz.
+
+447
+01:20:46,949 --> 01:20:50,949
+İşte ihtiyacınız yoksa kullanmayın.
+
+448
+01:20:50,949 --> 01:20:57,949
+İşte bunun gerçekten kritik bir fonksiyonu gerçekleştiriyorsa bundan faydalanan gibi detaylar var.
+
+449
+01:20:57,949 --> 01:21:00,949
+Ama şunu da söylemekte fayda var.
+
+450
+01:21:00,949 --> 01:21:07,949
+Son ikinci bölümde limited updates to background location kutucuğunda en son cümlede
+
+451
+01:21:07,949 --> 01:21:16,949
+if your app is running in the background it can receive location updates only a few times each hour dediği kısım
+
+452
+01:21:16,949 --> 01:21:22,949
+özellikle 8 ve üzerindeki telefonlarda getirilen kısıtlamaları bir kez daha vurguluyor.
+
+453
+01:21:22,949 --> 01:21:37,949
+Yani sizin böyle bir talebiniz olsa da location update'i düşündüğünüzden çok daha az sıklıkla saatte birkaç kez olacak şekilde gerçekleşebilir.
+
+454
+01:21:37,949 --> 01:21:39,949
+Bunu gözden kaçırmayın.
+
+455
+01:21:39,949 --> 01:21:42,949
+Ya da uyarı yapılmış.
+
+456
+01:21:42,949 --> 01:21:47,220
+Bunu da dikkat etmek lazım.
+
+457
+01:21:47,220 --> 01:21:54,220
+Evet şimdi gelelim meşhur Geofence kavramına.
+
+458
+01:21:54,220 --> 01:22:06,220
+Burada amaç belirli bölgeler yaratarak bu bölgelerin takibinin bu bölgelere giriş çıkış ve bu bölgedeki hareketlerin takibinin yapılması.
+
+459
+01:22:06,220 --> 01:22:20,220
+Üç tip takip söz konusu bir bölgeye girişiniz, iki bölgeden çıkışınız, üç bölge içerisinde hareket ederken belirli bir noktada durmanız.
+
+460
+01:22:21,220 --> 01:22:26,220
+Sürekli hareket halinde olduğunuzda bir bilgi üretilmiyor.
+
+461
+01:22:26,220 --> 01:22:40,220
+Ama özellikle bölge içerisinde bir konum değişikliği yapıyorsanız bunun da yakalanabilmesi için buradaki Divel aksiyonunun tanımlanmış ve takip ediliyor olması gerekiyor.
+
+462
+01:22:40,220 --> 01:22:49,220
+Şimdi bu Geofence'ler diyebilirsiniz ki ben hani ne kadar büyüklü titre tanıyabilirim, tanımlamalıyım, kaç tane tanımlamalıyım.
+
+463
+01:22:49,220 --> 01:22:58,220
+Şimdi yanlış hatırlamıyorsam bir uygulama özelinde 100 taneye kadar Geofence tanımlamanıza izin veriyor.
+
+464
+01:22:58,220 --> 01:23:01,220
+Bu sayıyı tabii kontrol edebilirsiniz.
+
+465
+01:23:01,220 --> 01:23:07,220
+Bu noktada bütün dünyada her nokta için tanımlayamazsınız.
+
+466
+01:23:07,220 --> 01:23:11,220
+Yani bu mümkün değil ama yüzde hiç fena bir sayı değil.
+
+467
+01:23:11,220 --> 01:23:17,220
+Merkezini belirliyorsunuz, merkezinin yarı çapını belirliyorsunuz.
+
+468
+01:23:17,220 --> 01:23:23,220
+Merkezde bulunan dairenin yarı çapını belirliyorsunuz ve bu sizin Geofence'iniz oluyor.
+
+469
+01:23:23,220 --> 01:23:30,220
+Bu Geofence üzerinden siz ilgili ihtiyaç duyduğunuz işleri gerçekleştirebiliyorsunuz.
+
+470
+01:23:31,220 --> 01:23:38,220
+Tabii bu Geofence'in radyusunun çapının, yarı çapının küçük olması çok istenmiyor.
+
+471
+01:23:38,220 --> 01:23:44,220
+Yani 10 metre, 20 metre gibi bir tanımlama istenilen bir durum değil.
+
+472
+01:23:44,220 --> 01:23:53,220
+Minimum 100 metrelik bir alan olması gerekiyor ki bu da genelde çok sıklıklı tanımlaması istenilen bir durum değil.
+
+473
+01:23:54,220 --> 01:24:02,220
+Çünkü eğer o alanı da çok sık girip çıkıyorsanız sizin sıklıkla takip ediyor olmanız gerekir.
+
+474
+01:24:02,220 --> 01:24:17,220
+Genelde işte 1 kilometre, 2 kilometre gibi daha büyük alanlar ya da bazen işte şehir mertebesinde 20-30 kilometreler tercih edilebiliyor Geofence'leri tanımlarken.
+
+475
+01:24:17,220 --> 01:24:23,220
+Geofence için alınması gereken izinler burada belirtiliyor.
+
+476
+01:24:23,220 --> 01:24:31,220
+Tabii Geofence diyorsanız mutlaka arka planda bir takip söz konusudur.
+
+477
+01:24:31,220 --> 01:24:35,220
+Çünkü sürekli olarak uygulamanız açık olmayacaktır.
+
+478
+01:24:35,220 --> 01:24:42,220
+Bu yüzden Android olmayı üzerinde mutlaka background location iznini almanız bekleniyor.
+
+479
+01:24:42,220 --> 01:25:02,220
+Geofencing client sınıfı üzerinden bir obje üretiyorsunuz ve location service üzerinden de getGeofencing client metodu üzerinden de bu ilgili objenizi ve gerekli bilgileri atıyorsunuz.
+
+480
+01:25:02,220 --> 01:25:11,220
+Şimdi burada Geofence listinize çeşitli farklı Geofence'ler ekleyebilirsiniz.
+
+481
+01:25:11,220 --> 01:25:13,220
+İşte ilgili keyleri veriyorsunuz.
+
+482
+01:25:13,220 --> 01:25:33,220
+İlgili merkez noktasını, merkezin boyutunu, ne kadar süreyle çalışacağını, hangi geçişleri yani giriş çıkış ya da oradaki merkez içerisindeki hareket hangisini takip edeceğinizi bütün hepsini bu şekilde oluşturabiliyorsunuz.
+
+483
+01:25:33,220 --> 01:25:53,140
+Sonra tabii location request de olduğu gibi bu yıldır üzerinden bir Geofencing request oluşturmanız gerekiyor.
+
+484
+01:25:53,140 --> 01:25:57,140
+Bunun için de bir initial trigger ile başlatmanız gerekiyor.
+
+485
+01:25:57,140 --> 01:26:05,140
+Ürettiğiniz Geofence'i yukarıda burada bu yıldır üzerinden ekliyorsunuz ve initial trigger ile başlıyorsunuz.
+
+486
+01:26:05,140 --> 01:26:08,140
+Yani bazen bir bölgeden çıkmanız initial trigger olabilir.
+
+487
+01:26:08,140 --> 01:26:15,140
+Ya da bazen bir bölgeye girişiniz olabilir. Bunlar değişkenlik gösteriyor.
+
+488
+01:26:15,140 --> 01:26:33,130
+Tabii arka plan işi diyorsak aslında bakarsanız aksiyon gerçekleştiğinde bu işin yakalanabilmesi için de bir broadcast receiver üzerinden panning intent kullanarak bu takibi yapmak oldukça makul gözüküyor.
+
+489
+01:26:33,130 --> 01:26:39,130
+Bu noktada bir broadcast receiver yaratmanız sizden bekleniyor.
+
+490
+01:26:39,130 --> 01:26:51,130
+Bir de panning intent yaratarak ne tür bir mesajı takip edeceğinizi ve ne tür bir aksiyon alacağınızı belirleyebiliyorsunuz.
+
+491
+01:26:51,130 --> 01:27:07,130
+Bu noktada işte Geofencing client'a Geofence'leri eklerken eklenip eklenmediğini kontrol etmeniz için add-on success'le sınır ve add-on failure'le sınırları mutlaka implement etmeniz gerekiyor.
+
+492
+01:27:07,130 --> 01:27:11,130
+Bunlar zaten hali hazırda bulabileceğiniz kod parçaları.
+
+493
+01:27:11,130 --> 01:27:19,340
+Burada Geofence transition'ları nasıl henderedildiğini görüyorsunuz broadcast receiver üzerinden.
+
+494
+01:27:19,340 --> 01:27:30,340
+OnReceive metodunuzu tanımlıyorsunuz. OnReceive metodunuzun içerisinde öncelikle Geofencing event'inizi yakalıyorsunuz.
+
+495
+01:27:30,340 --> 01:27:35,340
+Yakaladıktan sonra orada herhangi bir hata olup olmadığını kontrol ediyorsunuz.
+
+496
+01:27:35,340 --> 01:27:42,340
+Sonra gelen size üretilmiş olan Geofence event'inin tipine bakıyorsunuz.
+
+497
+01:27:42,340 --> 01:27:49,340
+Bu tip sizin tipinizle uyumlu mu değil mi, takip ettiğiniz tiple bunun kontrolünü yapıyorsunuz.
+
+498
+01:27:49,340 --> 01:28:03,340
+Ondan sonra gerekli notifikasyon üretecekseniz notifikasyon, loga bir şey yazacaksanız bir şey ya da alınacak bir aksiyon varsa o aksiyonları bu broadcast receiver'de OnReceive'in içerisinde yapıyorsunuz.
+
+499
+01:28:03,340 --> 01:28:08,340
+Burada iş yükü çok olmadığı için OnReceive'de bu işler tamamlanmış.
+
+500
+01:28:08,340 --> 01:28:17,340
+Ama daha uzun süreli bir şey yapmak istiyorsanız hatırlarsanız ekstradan bir background task yaratmak gerekliliğinden bahsetmiştik.
+
+501
+01:28:17,340 --> 01:28:28,340
+Bunun ötesinde Geofence yarattığınızda tabii Geofence'i geri geldiğinde takip etmeyi durdurmanız gerekebilir.
+
+502
+01:28:28,340 --> 01:28:33,340
+Sürekli olarak bunu takip etmek çok istana bir duruma olmayabilir.
+
+503
+01:28:34,340 --> 01:29:00,340
+İşte işe hafta sonları gitmiyorsanız ya da belli bir süre kişi evden uzak yaşayacaksa bunlar aç-kapa şeklinde kullanıcıya özellikle çeşitli imkanlar verilerek o Geofence'in kullanıcı tarafından üretilmesi, kullanıcı tarafından çalıştırılması, durdurulması sağlanabilir.
+
+504
+01:29:00,340 --> 01:29:13,340
+Yani sadece bir kez üretildi, bütün program kurulduktan sonra çalıştı, ondan sonra program kaldırılana kadar devam ettiği mantığı olmamalı. Bu Geofence'leri kullanıcı da tanımlayabiliyor olmalı.
+
+505
+01:29:13,340 --> 01:29:23,470
+Evet şimdi son slide'mıza geldik.
+
+506
+01:29:23,470 --> 01:29:36,470
+Şimdi burada Geofence'lerle ilgili tekrar Geofence'in tanımlanması gereken durumlardan bahsediliyor.
+
+507
+01:29:36,470 --> 01:29:40,470
+Bunlar nelerdir diye size sorayım.
+
+508
+01:29:40,470 --> 01:29:56,109
+Hızlıca baktığınızda ne görüyorsunuz?
+
+509
+01:29:56,109 --> 01:29:58,109
+Hocam ben soruyu tamamlayamadım.
+
+510
+01:29:58,109 --> 01:30:10,109
+Soru şu, Geofence'leri ürettiniz ama aşağıdaki durumlar gerçekleşti. Bu durumların hangisinde Geofence'i yeniden oluşturmanız sizden bekleniyor.
+
+511
+01:30:10,109 --> 01:30:17,319
+Zaten ayrımı yapılmış durumda sadece bakmanızı ve dede getirmemizi istiyorum.
+
+512
+01:30:17,319 --> 01:30:23,979
+Evet [öğrenci].
+
+513
+01:30:23,979 --> 01:30:28,979
+Mesela uygulamanın verisi temizlenmiş, silinmişse hocam böyle bir durum da gerekiyor.
+
+514
+01:30:28,979 --> 01:30:32,979
+Evet ikinci bölümde yaralan maddeler aslında buna denk geliyor.
+
+515
+01:30:32,979 --> 01:30:39,979
+Herhangi bir şekilde device'niz reboot işlemine uğramışsa ki bunun kontrolün yapılması gerekiyor.
+
+516
+01:30:39,979 --> 01:30:56,979
+Ya da uygulama uninstall re-install edildiyse, herhangi bir şekilde play services ile ilgili data ortadan kaldırıldıysa ya da Android network location provider bir şekilde disable edildiyse bu durumlarda Geofence'leri re-register etmeniz gerekiyor.
+
+517
+01:30:56,979 --> 01:31:14,979
+Ama o neticesinde play services'de bir out-of-date olduysa, yeniden başladıysa ya da location process'inde bir crash olduysa bunlar tekrar devreye girdiklerinde sizin Geofence'leri tekrar re-register etmeniz gerektirecek, yeniden eklememiz gerektirecek bir durum söz konusu değil.
+
+518
+01:31:14,979 --> 01:31:21,979
+Bu sistem tarafından otomatik olarak handle ediliyor ve sizin ekstradan bu kontrolleri yapmamız gerektirmiyor.
+
+519
+01:31:21,979 --> 01:31:30,979
+Bu da hangi noktalarda oluşabilecek aksaklıkları yönetmeniz gerektiğini gösteren önemli bir slide diyelim.
+
+520
+01:31:30,979 --> 01:31:37,979
+Ve lokasyon tabanlı işlerin ilk kısmını bu şekilde tamamlamış olalım.
+
+521
+01:31:37,979 --> 01:31:39,979
+Buraya kadar soru soran var mı?
+
+522
+01:31:39,979 --> 01:31:47,939
+Evet [öğrenci].
+
+523
+01:31:47,939 --> 01:31:52,939
+Hocam bu re-register işlemini broadcast receiver'lar aracılığıyla mı yapmamız gerekiyor?
+
+524
+01:31:53,939 --> 01:32:02,939
+Broadcast receiver üzerinden yapmanız gerekmiyor ama şu açıdan broadcast receiver olabilir.
+
+525
+01:32:02,939 --> 01:32:08,939
+Mesela reboot işlemini takip edip bunu broadcast receiver üzerinden yapmanız beklenir.
+
+526
+01:32:08,939 --> 01:32:14,939
+Ya da burada mesela Google Play servisinin datasını clear edilmiş.
+
+527
+01:32:14,939 --> 01:32:21,939
+Aylıklı olarak burada bunları sizin sürekli kontrol etmeniz mümkün olmayacağı için broadcast receiver üzerinden yapmak daha sağlıklı gibi.
+
+528
+01:32:21,939 --> 01:32:22,939
+Doğru söylüyorsun [öğrenci].
+
+529
+01:32:22,939 --> 01:32:28,939
+Mesela şey var hocam bildiğim kadarıyla app datası temizlendiği zaman uygulama da durmaya zorlanmış oluyor.
+
+530
+01:32:28,939 --> 01:32:32,939
+Öyle bir durumda mesela nasıl yapabilirim bunu?
+
+531
+01:32:32,939 --> 01:32:34,939
+Ya yapabilir miyim?
+
+532
+01:32:34,939 --> 01:32:42,939
+Mesela o ilgili Google Play dollarsı, Geofence'in tanımlığı olduğu noktayı soruyorsun herhalde değil mi?
+
+533
+01:32:42,939 --> 01:32:46,569
+O uygulamadan bahsediyorsun.
+
+534
+01:32:46,569 --> 01:32:48,569
+Anlamadım ne demek istedim.
+
+535
+01:32:48,569 --> 01:32:51,569
+Geofence'in çalıştığı uygulamanın datasının temizlendiklerinden.
+
+536
+01:32:51,569 --> 01:32:52,569
+Evet evet.
+
+537
+01:32:52,569 --> 01:32:53,569
+Tamam.
+
+538
+01:32:53,569 --> 01:33:02,569
+Şimdi sonuçta burada hem Geofence'in datasının temizlenmesi yani çalıştığı uygulamanın hem de o datanın,
+
+539
+01:33:02,569 --> 01:33:11,569
+o uygulamanın data kısmı temizlenmeden tekrar başlatılması noktası ya da device'ın başlatılması noktası aslında hepsi birbirine benzeyen noktalar.
+
+540
+01:33:11,569 --> 01:33:20,569
+Bu noktada siz uygulama yeniden başladığı anda yapmanız gereken işleri zaten çağırıyor olacaksınız.
+
+541
+01:33:20,569 --> 01:33:27,569
+Yani örnekliyorum on-create noktasındaki yapılması gereken işler bunların bir rejistre olmasını gerektiriyor.
+
+542
+01:33:27,569 --> 01:33:30,569
+O yüzden sizden bu bekleniyor.
+
+543
+01:33:30,569 --> 01:33:42,850
+Ama onun ötesinde arka planda network location provider ile ilgili bir takip söz konusuysa onu broadcast receiver üzerinden yapmanız bekleyelim.
+
+544
+01:33:42,850 --> 01:33:44,850
+Anladım hocam teşekkürler.
+
+545
+01:33:44,850 --> 01:33:48,739
+Rica ederim.
+
+546
+01:33:48,739 --> 01:33:56,819
+Evet başka sorusu var.
+
+547
+01:33:56,819 --> 01:33:58,819
+Peki.
+
+548
+01:33:58,819 --> 01:34:00,819
+O zaman bir ara daha verelim.
+
+549
+01:34:00,819 --> 01:34:05,819
+Saat 15.34, 15.50'de kaldığımız noktadan devam edelim.
+
+550
+01:34:05,819 --> 01:50:40,069
+Evet yeniden merhaba arkadaşlar.
+
+551
+01:50:40,069 --> 01:50:42,069
+Son bölüme giriyoruz.
+
+552
+01:50:42,069 --> 01:50:48,829
+Şimdi yeni konumuza geçelim.
+
+553
+01:50:48,829 --> 01:50:51,829
+Hemen slide'leri paylaşacağım.
+
+554
+01:50:51,829 --> 01:50:55,829
+Aslında bir önceki konunun devamı.
+
+555
+01:50:55,829 --> 01:50:58,829
+Lokasyon bilgisini nasıl alabiliriz?
+
+556
+01:50:58,829 --> 01:51:03,829
+Lokasyon bilgisi üzerinde ne tür değişiklikler yapabiliriz?
+
+557
+01:51:03,829 --> 01:51:08,829
+Bunun piye tüketimine etkisi nedir?
+
+558
+01:51:08,829 --> 01:51:13,829
+Lokasyon takibini nasıl başlatırız, nasıl durdururuz?
+
+559
+01:51:13,829 --> 01:51:18,829
+Hangi tür lokasyon erişimleri var?
+
+560
+01:51:18,829 --> 01:51:22,829
+Bu erişimler hangi durumlarda kullanılmalı?
+
+561
+01:51:22,829 --> 01:51:25,829
+Versiyonlarla ilişkileri nasıl?
+
+562
+01:51:25,829 --> 01:51:28,829
+Bütün bu detayların üzerinden geçtik.
+
+563
+01:51:28,829 --> 01:51:33,829
+Şimdi görüyorsunuz çok detay var.
+
+564
+01:51:33,829 --> 01:51:39,829
+O yüzden gerçekten bu detayların kodlaması üzerinden geçmek.
+
+565
+01:51:39,829 --> 01:51:42,829
+Maalesef der süresinde mümkün değil.
+
+566
+01:51:42,829 --> 01:51:47,829
+Bir arkadaşımız keşke bu dersin labı olsaydı gibi bir yorum yapmıştı.
+
+567
+01:51:47,829 --> 01:51:48,829
+Hakikaten öyle.
+
+568
+01:51:48,829 --> 01:51:53,829
+Keşke 3 artı 2 olsa da burada gördüklerimizi labda biraz pratik yapabilsek.
+
+569
+01:51:53,829 --> 01:51:56,829
+O yüzden bunlar genelde size kalıyor.
+
+570
+01:51:56,829 --> 01:51:59,829
+Sizin vakit ayırmanızla alakalı.
+
+571
+01:51:59,829 --> 01:52:07,829
+O yüzden de dersin programlama pratik noktasında siz daha çok emek
+
+572
+01:52:07,829 --> 01:52:10,829
+harcamak zorunda kalıyorsunuz.
+
+573
+01:52:10,829 --> 01:52:16,829
+Ama bence bir şekilde nerede ne olduğu konusunda bilgi sahibi
+
+574
+01:52:16,829 --> 01:52:20,829
+olmak işinizi hızlandırıyor diye düşünüyorum.
+
+575
+01:52:20,829 --> 01:52:29,829
+O yüzden bu alanda başlayacaklar için bilgiler fazlasıyla yeterli aslında.
+
+576
+01:52:29,829 --> 01:52:37,829
+Hatta belki dersin son kısmında hangi kısımlar bu derste giriş kısmında
+
+577
+01:52:37,829 --> 01:52:42,829
+kalmalı, sadileştirmeli miyiz, konuları sadileştirip biraz daha
+
+578
+01:52:42,829 --> 01:52:45,829
+programlama kısmını arttırmalı mıyız belki bunu konuşabiliriz.
+
+579
+01:52:45,829 --> 01:52:51,829
+Öbür kısımları da ileri programlama kısmına bırakmak belki bir seçenek olabilir.
+
+580
+01:52:51,829 --> 01:52:55,829
+Şimdi dediğim gibi lokasyonla ilgili bilgileri aldık.
+
+581
+01:52:55,829 --> 01:52:59,829
+Ama bunları nerede nasıl göstereceğiz?
+
+582
+01:52:59,829 --> 01:53:01,829
+Ne onu konuşuyor olacağız?
+
+583
+01:53:01,829 --> 01:53:08,829
+Bu noktada Google Map üzerinden ilerleyeceğiz.
+
+584
+01:53:08,829 --> 01:53:11,829
+Özellikle bu API'leri kullanacağız.
+
+585
+01:53:11,829 --> 01:53:18,829
+Bu noktada yine Google Play Services SDK'ye ihtiyaç duyuyoruz.
+
+586
+01:53:18,829 --> 01:53:26,829
+Ve göreceksiniz ya Google Maps Activity olarak ya da Map Fragment olarak
+
+587
+01:53:26,829 --> 01:53:31,829
+genelde haritalarımızı uygulama içerisinde biçimlendiriyoruz.
+
+588
+01:53:31,829 --> 01:53:35,829
+Tabii burada bir API Key mevzusu var.
+
+589
+01:53:35,829 --> 01:53:37,829
+Onu vurgulamak lazım.
+
+590
+01:53:38,829 --> 01:53:44,829
+Sizin uygulamanızda özel olarak üretilen bir key ve sınırsız bir kullanımı
+
+591
+01:53:44,829 --> 01:53:51,829
+olmaması için bu noktada her uygulamaya özel bir key üretilmesi
+
+592
+01:53:51,829 --> 01:53:54,829
+bekleniyor Google Maps'i kullanacaksanız.
+
+593
+01:53:54,829 --> 01:53:59,829
+Bunun için normalde ürettiğiniz Google Maps API nokta XML vardı.
+
+594
+01:53:59,829 --> 01:54:06,829
+Ama gördüğüm kadarıyla son versiyonlarda XML üzerinden değil de daha çok
+
+595
+01:54:06,829 --> 01:54:11,829
+Google Cloud Platform konsol üzerinden işler yürüyor.
+
+596
+01:54:11,829 --> 01:54:15,829
+Aslında her ikisinde de Google Cloud Platform'u kullanıyorsunuz ama
+
+597
+01:54:15,829 --> 01:54:23,829
+Fast and Easy Way denilen versiyon sanırım yeni sürümlerde çok geçerli değil.
+
+598
+01:54:23,829 --> 01:54:26,829
+Bundan emin değilim ama yaptığım araştırma bana bunu gösterdi.
+
+599
+01:54:26,829 --> 01:54:33,829
+O yüzden böyle bir ihtiyacınız olduğunda harita kullanacağınızda
+
+600
+01:54:33,829 --> 01:54:37,829
+Google Cloud Platform'a giriş yapıp projenizi asign edip
+
+601
+01:54:37,829 --> 01:54:45,829
+orada o proje ile ilgili bir key üretip bu key ile ilgili projenizi asign etmeniz gerekiyor.
+
+602
+01:54:45,829 --> 01:54:47,829
+Sizden bu bekleniyor.
+
+603
+01:54:47,829 --> 01:54:52,829
+Bu noktada işte ilgili menu'ya ulaşıyorsunuz.
+
+604
+01:54:52,829 --> 01:54:56,829
+Oradaki API Services'lar bölümünden Credentials'a giriyorsunuz.
+
+605
+01:54:56,829 --> 01:55:01,829
+API Key noktasına geçiyorsunuz ve ürettiğiniz key'i kullanıyorsunuz.
+
+606
+01:55:01,829 --> 01:55:06,829
+Ki bu aslında daha debug aşamasındaki yaptığınız bir iş.
+
+607
+01:55:06,829 --> 01:55:12,829
+Normalde bu şu anda map için yapıyorsunuz ama daha sonra göreceksiniz
+
+608
+01:55:12,829 --> 01:55:16,829
+Debug Key ve Release Key uygulamayla ilgili üretilen key'ler de var.
+
+609
+01:55:16,829 --> 01:55:18,829
+Onlar biraz daha farklı.
+
+610
+01:55:18,829 --> 01:55:23,829
+Bu key'in bir şekilde uygulamanıza eklenmesi gerekiyor.
+
+611
+01:55:23,829 --> 01:55:28,829
+Bu da manifest içerisinde gerçekleşiyor ve işte
+
+612
+01:55:28,829 --> 01:55:36,829
+Metadata içerisinde bunu bu şekilde API Key olarak ekleyebiliyorsunuz.
+
+613
+01:55:36,829 --> 01:55:43,829
+Name'ine Geo API Key yazıp daha sonra value'suna üretilen key'i
+
+614
+01:55:43,829 --> 01:55:49,829
+Copy-Paste şeklinde Google Cloud konsolu üzerinden ekleyebiliyorsunuz.
+
+615
+01:55:49,829 --> 01:56:02,340
+Tabii bu noktada API Key'ler özellikle tek bir uygulama özelinde üretiliyor.
+
+616
+01:56:02,340 --> 01:56:12,340
+O yüzden eğer herhangi bir şekilde başka kaynaklar üzerinden bunu kullanmak gibi bir niyetiniz varsa
+
+617
+01:56:12,340 --> 01:56:16,340
+O zaman farklı ayarlar yapılması gerekiyor.
+
+618
+01:56:16,340 --> 01:56:18,340
+Farklı çözümler üretilmesi gerekiyor.
+
+619
+01:56:18,340 --> 01:56:26,340
+Siz şu an geliştirici aşamasında olduğunuz için bu detayı bu noktada daha fazla konuşmamıza gerek yok.
+
+620
+01:56:27,340 --> 01:56:30,340
+Burada da aynı detayları veriyoruz.
+
+621
+01:56:30,340 --> 01:56:34,340
+Daha sonra şu noktaya değinmek lazım.
+
+622
+01:56:34,340 --> 01:56:40,340
+Debug Certificate ve Release Certificate dediğimiz bir kavram var.
+
+623
+01:56:40,340 --> 01:56:46,340
+Bunu özellikle uygulamanın çalıştırılması noktasında göreceksiniz.
+
+624
+01:56:46,340 --> 01:56:53,340
+Gerçekten bunu Google Play Store'a koymak istiyorsanız o zaman Release Certificate almanız gerekiyor.
+
+625
+01:56:53,340 --> 01:56:59,340
+Tüm dünyada geçerli bir Key üretmeniz gerekiyor.
+
+626
+01:56:59,340 --> 01:57:04,340
+Önce siz bir Key üretiyorsunuz, sonra Google bir Key üretiyor.
+
+627
+01:57:04,340 --> 01:57:11,340
+Ve bu neticesinde sizin uygulamanız artık Google Play Store'a yüklenebilir hale geliyor.
+
+628
+01:57:11,340 --> 01:57:16,340
+Gelelim biz daha çok şu anda MAP tarafından ilgileniyoruz.
+
+629
+01:57:16,340 --> 01:57:20,340
+MAP tarafında ne tür aksiyonlar yapabileceğimizi.
+
+630
+01:57:20,340 --> 01:57:29,340
+Şimdi bir Fragment üzerinden ilerlediğimizi varsayarsak, Fragment Activity olarak yarattığımız bir MAP Activity olduğunu varsayarsak,
+
+631
+01:57:29,340 --> 01:57:35,340
+burada OnMapReadyCallback interface'inin implementa edilmesi gerekiyor.
+
+632
+01:57:35,340 --> 01:57:43,340
+Ve bu interface'in içerisinde de OnMapReady isimli metodun mutlaka içinin doldurulması gerekiyor.
+
+633
+01:57:43,340 --> 01:57:48,340
+Ya da en azından yapacağınız işe uygun kodunun yazılması gerekiyor.
+
+634
+01:57:48,340 --> 01:57:59,340
+Bu noktada genelde Google Map tipindeki bir obje üzerinden haberleşme sağlanıyor.
+
+635
+01:57:59,340 --> 01:58:03,340
+Callback üzerinden bu obje ile aktarılıyor.
+
+636
+01:58:03,340 --> 01:58:14,340
+Bu objeyi ilgilenme topla OnMapReady ile aldıktan sonra, harita üzerinde çeşitli aksiyonlar yapabiliyorsunuz.
+
+637
+01:58:14,340 --> 01:58:20,340
+Bunlar nedir? Örnek vermek gerekirse, üzerine bir mark ekleyebilirsiniz.
+
+638
+01:58:20,340 --> 01:58:25,340
+Fokuslandığınız noktayı değiştirebilirsiniz. Zoom seviyesini ayarlayabilirsiniz.
+
+639
+01:58:25,340 --> 01:58:29,340
+Bakış açısını değiştirebilirsiniz. Bir sürü parametre var.
+
+640
+01:58:29,340 --> 01:58:35,340
+Tabii onun öncesinde OnCreate tarafındaki şu kısmı uygulamak lazım.
+
+641
+01:58:35,340 --> 01:58:42,340
+Bir dinamik olarak siz map ekleyebilirsiniz, bir de statik olarak ekleyebilirsiniz.
+
+642
+01:58:42,340 --> 01:58:49,340
+Bu noktada FindFragmentById'i görüyorsunuz OnCreate'in içerisinde.
+
+643
+01:58:49,340 --> 01:58:54,340
+İlgili statik eklenmiş map ile ilişki kurulmuş.
+
+644
+01:58:54,340 --> 01:59:03,340
+Orada map isimli değişken, bu taraftan MapFragment isimli değişken arasında bir Find, daha önce ViewById vardı.
+
+645
+01:59:03,340 --> 01:59:06,340
+Burada da FindFragmentById var.
+
+646
+01:59:06,340 --> 01:59:15,340
+Bu ilişkilendirme yapılmış ve GetMapAsync metodu ile de ilgili ilişki kurulmuş.
+
+647
+01:59:15,340 --> 01:59:22,340
+Async metodu ile de ilgili ayarların transfer edilmesi sağlanmış.
+
+648
+01:59:22,340 --> 01:59:28,340
+Şimdi burada yapılması gereken adımlardan bahsedeceğiz.
+
+649
+01:59:28,340 --> 01:59:32,340
+Yukarıdaki bütünü parçalara ayırarak.
+
+650
+01:59:32,340 --> 01:59:37,340
+Bir aktiviteye ihtiyacınız var ve onun OnMapReady callback'ini üretmeniz gerekiyor.
+
+651
+01:59:37,340 --> 01:59:41,340
+İnternet teksisini implement etmeniz gerekiyor.
+
+652
+01:59:41,340 --> 01:59:49,340
+OnMapReady'de ilgili tanımlamaları, map üzerindeki aksiyonları hazırlamanız gerekiyor.
+
+653
+01:59:49,340 --> 02:00:00,340
+Artı, eğer sol taraftaki fragment yapısındaki map fragmentı statik olarak tanımlamayı tercih etmiyorsanız,
+
+654
+02:00:00,340 --> 02:00:13,340
+sağ taraftaki gibi bir yöntemi tercih edip dinamik olarak da bir map fragmentı organize edebilirsiniz.
+
+655
+02:00:13,340 --> 02:00:19,340
+Bunu ekleyebilirsiniz. Böyle bir yaklaşımda mümkün.
+
+656
+02:00:19,340 --> 02:00:24,340
+Öte yandan map objesini konuşmak lazım biraz da.
+
+657
+02:00:24,340 --> 02:00:40,340
+Map objesi üzerinde aslında tüm kişiselleştirilmiş API üzerinden sağlanan içerikleri bulundurmuyorsunuz, bulunduramıyorsunuz.
+
+658
+02:00:40,340 --> 02:00:45,340
+Bazı aykınlar clickable olarak karşınıza gelmiyor.
+
+659
+02:00:45,340 --> 02:00:58,340
+O yüzden bütün API'nin size sağlamış olduğu komponentleri uygun belirlenmiş kurallar çerçevesinde kullanabiliyorsunuz.
+
+660
+02:00:58,340 --> 02:01:03,340
+Bu noktada iki tür yapı karşınıza çıkıyor.
+
+661
+02:01:03,340 --> 02:01:09,340
+Bir tanesi mapFragment, diğeri de mapView, mapFragment'ı biraz önce gördük.
+
+662
+02:01:09,340 --> 02:01:20,520
+Tabii mapFragment veya mapView objelerini kullanırken belirli işlemler var.
+
+663
+02:01:20,520 --> 02:01:28,520
+Bu işlemler üzerinden bilgiler aktarılıyor ve ekranınızda görüntüleniyor.
+
+664
+02:01:28,520 --> 02:01:31,520
+Öncelikle Google'ın map servislerine bağlanılması gerekiyor.
+
+665
+02:01:31,520 --> 02:01:37,520
+Karşı taraftan ilgili harita parçalarının indirilmesi gerekiyor.
+
+666
+02:01:37,520 --> 02:01:44,520
+Sonra bu parçaların ekranınızda görüntülenmesi gerekiyor, görselleştirilmesi gerekiyor.
+
+667
+02:01:44,520 --> 02:01:54,520
+Arkasından eğer bir ayar mekanizması varsa yani belli bir lokasyona odaklanmak istiyorsanız,
+
+668
+02:01:54,520 --> 02:02:05,520
+veya belli bir açıyla bakmak istiyorsanız, bunların haritalar yüklendikten sonra görselleştirildikten sonra konumlandırılmaları yapılıyor.
+
+669
+02:02:05,520 --> 02:02:19,520
+En sonunda da haritaya eklediğiniz butonlar üzerinden haritadaki çeşitli hareketleri görselleştirerek kullanıcıya göstermeniz gerekiyor.
+
+670
+02:02:19,520 --> 02:02:28,520
+Şimdi totalde 5, aslında 5 demeyelim 4 diyelim çünkü bir tanesinden olarak geçiyor.
+
+671
+02:02:28,520 --> 02:02:33,520
+4 tane tip var. Normal bir harita.
+
+672
+02:02:33,520 --> 02:02:36,520
+Burada yolları görebiliyorsunuz.
+
+673
+02:02:36,520 --> 02:02:46,520
+İşte kişiler tarafından, insanlar tarafından üretilmiş çeşitli yapıları görebiliyorsunuz.
+
+674
+02:02:46,520 --> 02:02:51,520
+Doğayla ilgili olan işte akarsi vesaire bunları görebiliyorsunuz.
+
+675
+02:02:51,520 --> 02:03:01,520
+Öte yandan eğer siz hibrit bir yapı kullanmak istiyorsanız burada hem yolları görebiliyorsunuz,
+
+676
+02:03:01,520 --> 02:03:09,520
+hem de işte insanlar tarafından üretilmiş herhangi label'lar varsa bunları görebiliyorsunuz.
+
+677
+02:03:09,520 --> 02:03:14,520
+Ama bunu uydu fotoğrafı üzerinden görüntüleyebiliyorsunuz.
+
+678
+02:03:14,520 --> 02:03:18,520
+Uydu fotoğrafının üzerine yerleşmiş bir şekilde görüyorsunuz.
+
+679
+02:03:18,520 --> 02:03:30,520
+Sadece uydu fotoğrafını gördüğünüz üzerinde herhangi bir şekilde yolları ve insanlar tarafından oluşturulmuş etiketleri göremediğiniz bir seçenek de var.
+
+680
+02:03:30,520 --> 02:03:32,520
+Bunu da tercih edebilirsiniz.
+
+681
+02:03:32,520 --> 02:03:48,520
+Bir de daha çok doğa ile ilgili olan yükseltileri, çeşitli dağ tepe şeklindeki daha coğrafi topografik haritaları gördüğünüz ve
+
+682
+02:03:48,520 --> 02:03:56,520
+işte belli yolların ve belli etiketlerin de gözüktüğü bir topografik harita seçeneğiniz var.
+
+683
+02:03:56,520 --> 02:04:06,520
+Biz genelde normali kullanıyoruz ama tabi ki böyle çeşitli özel uygulamalar diğer harita tiplerini tercih edebilirler.
+
+684
+02:04:06,520 --> 02:04:21,520
+İşte ilgili Google Map tipindeki objedeki Set Map Type ile tercih edeceğimiz harita hangisinin Google Maps üzerinden indirilmesi gerektiğini belirtiyorsunuz.
+
+685
+02:04:21,520 --> 02:04:41,520
+Sadece dış alanların haritası değil, aynı zamanda son 5 senedir özellikle bilinen, çok sık kullanılan ve dünyada belki kozmopolit şehirlerde daha yaygın olan
+
+686
+02:04:41,520 --> 02:04:48,520
+birçok binanın iç haritaları da Google tarafından sağlanıyor.
+
+687
+02:04:48,520 --> 02:04:58,520
+Büyük bir alışveriş merkezine girdiğinizde o alışveriş merkezindeki kat planlarına dahi ulaşma imkanınız var.
+
+688
+02:04:58,520 --> 02:05:10,520
+Ama burada bununla ilgilenmiyorsanız ki birçok noktada bu detaya girmeyeceksinizdir, o zaman Set Indoor Enabled kısmının false diyerek
+
+689
+02:05:10,520 --> 02:05:16,520
+haritalar yüklenirken indoor bilgilerinin yüklenmesini engelleyebiliyorsunuz.
+
+690
+02:05:16,520 --> 02:05:31,520
+Öte yandan size sunulan bir diğer artı da trafik ilgisini ve buna ait olan katmanı bilgi olarak Google'ın sizle paylaşıyor olması.
+
+691
+02:05:31,520 --> 02:05:43,520
+Bunu ilgili metodu çağırarak enable edebiliyorsunuz. Bu da önemli bir özellik olarak karşımıza çıkıyor, trafik uygulamalarını da kullanabilirsiniz.
+
+692
+02:05:43,520 --> 02:06:00,859
+Şimdi tabii initial state de yani ilk harita açıldığında gerekli ayarları yapmak oldukça önemli çünkü siz bulunduğunuz lokasyondaki bir bilgiye erişmek istiyorsanız
+
+693
+02:06:00,859 --> 02:06:12,859
+haritanın default olarak ya da hitset edilmeden dünyanın farklı bir noktasını ki bunu emulator kullananlar bilir, görmek çok uygun olmayacaktır.
+
+694
+02:06:12,859 --> 02:06:27,859
+Aslında belirli bir noktaya odaklanması gerekir. Bu sizin bulunduğunuz lokasyon bilgisinin alınarak oraya zoomlanması ya da o zoomun seviyesinin ne olacağı
+
+695
+02:06:27,859 --> 02:06:41,859
+ülke boyutunda mı, dünya boyutunda mı, yoksa şehir boyutunda mı ya da sokak boyutunda mı olacağını biraz sonraki zoom ayarlarında görüyor olacaksınız.
+
+696
+02:06:41,859 --> 02:06:55,859
+Ama bunlar önemli. Ne iş yapacağınız çok önemli. Avrupa üzerine bir çalışma gerçekleştiriyorsanız Avrupa'nın merkezine odaklanan bir settingle açılış yapmanız uygun olur.
+
+697
+02:06:55,859 --> 02:07:11,859
+Kendi evinizde ya da bulunduğunuz çevredeki bir mağaza arayışı içerisindeyse o zaman oraya kamerayı odaklamak ve sokak seviyesinde bir ayarlama yapmak uygun olacaktır.
+
+698
+02:07:11,859 --> 02:07:23,859
+Onun için de map türün seçilmesi, ilgili butonların kullanıcı tarafından kullanılıp kullanılmayacağı yani uygulamanın buna ihtiyaç duyup duymadı.
+
+699
+02:07:23,859 --> 02:07:40,859
+Çünkü bazı uygulamalar vardır. Örnek veriyorum işte üniversitenin lokasyonunu, bölümün lokasyonunu harita üzerinde gösterdiğimiz bir uygulamada çok fazla zoom in, zoom out, sağ sol hareketi yapmanız normalde gerekmez.
+
+700
+02:07:40,859 --> 02:07:47,859
+Sadece neresi olduğunu göstermeniz yeterlidir. Ama öte yandan oraya bir tarif almak söz konusuysa o zaman işler değişecektir.
+
+701
+02:07:47,859 --> 02:08:08,859
+O yüzden Google bazı özellikleri sunmadığı bir light mode sunuyor. Bu light mode, API'nin belli özelliklerini kısıtlayarak size haritanın çok temel özelliklerini kullanmanızı sağlıyor.
+
+702
+02:08:08,859 --> 02:08:15,859
+Bu sayede harita kütüphanesinin çeşitli yüklerinden de kurtulabiliyorsunuz.
+
+703
+02:08:15,859 --> 02:08:37,579
+Şimdi burada map type'ı konuşmuştuk. Kameranın initial position ile ilgili olarak hangi latitude, longitude, zoom'u ne olacak, bakış açısı ne olacak gibi bilgileri set etme şansına sahipsiniz.
+
+704
+02:08:37,579 --> 02:08:45,579
+Öte yandan UI zoom controls üzerinden zoom'la ilgili işlemleri ayarlayabiliyorsunuz.
+
+705
+02:08:45,579 --> 02:08:58,579
+Scroll, zoom, rotate, tilt gibi gesture'ların enable ya da disable olmasına göre kullanıcının haritayla gireceği interaksiyonu belirleyebiliyorsunuz.
+
+706
+02:08:58,579 --> 02:09:11,579
+Bunları enable ya da disable ederek harita üzerinde çok fazla aksiyon tanımlamadan ilerleme şansınız söz konusu.
+
+707
+02:09:11,579 --> 02:09:18,579
+Bunun gibi çeşitli modlar var. Bunların detaylarını ihtiyaç duyduğunuzda inceleyebilirsiniz.
+
+708
+02:09:18,579 --> 02:09:29,579
+Bunları iki türlü yapabileceğini söylemiştik. Bir tanesi fragmentın içerisine, map fragmentının içerisine doğrudan examene ekleyebilirsiniz.
+
+709
+02:09:29,579 --> 02:09:38,579
+Bu bir statik belirleme, initial state'ı burada gördüğünüz gibi.
+
+710
+02:09:38,579 --> 02:10:02,579
+Bu dinamik genelde benim tercih ettiğim bir yaklaşım statikten mümkün olduğunca uzak durmak gerekiyor ki burada gördüğünüz gibi program matikliği yazan kısımda dinamik olarak aslında ihtiyaç duyduğunuzda değiştirebileceğiniz ayarları belirleyebiliyorsunuz.
+
+711
+02:10:02,579 --> 02:10:13,579
+Şunu söyleyebilirsiniz. Burada tanımlamış olduğumuz ayarları değiştiremez miyiz? Tabii ki değiştirebilirsiniz. İlk açıldığındaki ayarlar ile burada ilerlemiş oluyorsunuz.
+
+712
+02:10:13,579 --> 02:10:26,819
+Harita üzerine şunu söylemek lazım. Bazı markırları eklemeniz gerekiyor. Bu markırların çeşitleri var.
+
+713
+02:10:26,819 --> 02:10:34,819
+Standart markırı eklerken buradaki gibi bir kod kullanıyorsunuz ve o markırlar üzerinden birçok şeyi ifade edebiliyorsunuz.
+
+714
+02:10:34,819 --> 02:10:45,819
+TripAdvisor üzerinde bir alanı işaretleyip gezdiğiniz bölgeleri saklayarak daha sonra başka birine tavsiye ediliyorsunuz örnek vermek gerekirse.
+
+715
+02:10:45,819 --> 02:10:57,819
+Ya da gittiğiniz bölgeleri hatırlamak için favori mekanlarınızı yazıyorsunuz. Bir dahaki sefere oraya gitme şansınız olursa bunları otomatik olarak, lokasyon olarak erişebiliyorsunuz.
+
+716
+02:10:57,819 --> 02:11:10,819
+Ya da bir seyahate çıkmadan bunları işaretleme şansınız o uygulamalarda olduğu için daha gitmeden planınızı yapıyorsunuz ve kalacağınız otelden oralara nasıl gidebilirsiniz?
+
+717
+02:11:10,819 --> 02:11:20,819
+Araba ile nasıl ulaşabilirsiniz? Toplu taşıma ile nasıl ulaşabilirsiniz? Bunların hepsini bu tür harita uygulamaları üzerinden yapabiliyorsunuz.
+
+718
+02:11:20,819 --> 02:11:39,199
+Evet şimdi burada markırın veri ile ilişkilendirme noktasındaki bir kod parçasını görüyorsunuz. Bu noktada çeşitli markırlar tanımlayabiliyorsunuz.
+
+719
+02:11:39,199 --> 02:11:50,199
+Burada üzerlerine tıklandığında aksiyon alınmasını istiyorsanız on marker click listener olan interface'i de implement etmeniz bekleniyor sizden.
+
+720
+02:11:50,199 --> 02:12:03,199
+Yani sadece on map ready kod ettiği aynı zamanda markırlara yapılacak aksiyonları da takip etme ihtimali bu şekilde kullanıcıya vermiş oluyorsunuz.
+
+721
+02:12:03,199 --> 02:12:28,199
+Bu markırlar on map ready içerisinde genelde ekleniyor ve ilgili tanımlamalar yapılıyor. Daha sonra da ilgili set on marker click listener metodu üzerinden de bu ilgili eklediğiniz markırları takip etme şansına sahip oluyorsunuz.
+
+722
+02:12:29,199 --> 02:12:38,199
+Tabii clicklendiğinde neler yapılacağını siz on marker click içerisinde belirleyebiliyorsunuz.
+
+723
+02:12:38,199 --> 02:12:50,199
+İşte clicklenme sayısı takip yapabilirsiniz. Kaç defa clicklendiği vesaire bunları saklayarak insanların ilgisini alakasını tespit etme şansına sahipsiniz.
+
+724
+02:12:51,199 --> 02:13:13,500
+Markırın draggable olması yani bir noktaya sürüklenebilmesi bu da önemli. Bu özelliği nokta draggable ile true set ederek verebiliyorsunuz.
+
+725
+02:13:13,500 --> 02:13:29,420
+Burada çeşitli marker eventlerini takip etme seçeneklerinden bahsediyoruz.
+
+726
+02:13:29,420 --> 02:13:42,420
+İşte click eventleri var, dragg eventleri var. Bunun ötesinde markırı bir yere sadece sürüklemek değil doğrudan işaretleyerek oraya bırakabiliyorsunuz.
+
+727
+02:13:42,420 --> 02:13:51,420
+Dragg eventleri bunları anlatıyor yani bir noktaya tıkladığınızda oraya dragg ediyorsunuz markırı ama onun dışında onu yerden bir yere de taşıyabiliyorsunuz.
+
+728
+02:13:51,420 --> 02:13:57,420
+Böylece harita üzerine istediğiniz yerlere işaretleyebiliyorsunuz. Pin atabiliyorsunuz bu sayede.
+
+729
+02:13:57,420 --> 02:14:08,420
+Öte yandan markırı obresi ile çalışırken equs üzerinden mutlaka kontrollerin yapılması gerekiyor. Eşittiri kullanmamamız gerekiyor.
+
+730
+02:14:08,420 --> 02:14:23,859
+Bu noktada kameranın çeşitli açıları var. Tilt ve bearing açılarını görüyorsunuz. Sonuçta üç boyutlu bir bakış açısıyla bakıyoruz hayata.
+
+731
+02:14:23,859 --> 02:14:37,859
+Bu noktada kameranın da bu doğrultuda değerlendirildiği düşünürse üç boyuta göre açılarının ayarlanması hem tilt, zoom olmak üzere düşünülebilir.
+
+732
+02:14:38,859 --> 02:14:49,859
+Bu özellikle görüş açımızın tilt kısmında ne noktada dik ne noktada daha yüzeye yakın bakacağınızı belirleyebiliyorsunuz.
+
+733
+02:14:49,859 --> 02:15:00,859
+Onun ötesinde de haritanın normalde kuzey yukarıda güney aşağıda olacak şekilde pozisyonlandırılmasını istiyorsunuz.
+
+734
+02:15:00,859 --> 02:15:10,859
+Ama öte yandan mesela farklı bir ihtiyaç doğrultusunda bunun konumunu değiştirebilirsiniz.
+
+735
+02:15:11,859 --> 02:15:20,859
+Bu şekilde ilk açıldığında mesela rüzgar yönünde o günkü rüzgar yönünde kameranın bakmasını sağlayabilirsiniz ihtiyaç doğrultusunda.
+
+736
+02:15:20,859 --> 02:15:43,859
+Şimdi zoom özelliklerine gelecek olursak iki üzeri şeklinde iki üzeri el şeklinde ifade edildiğinde iki üzeri bir tüm dünyaya görüntülemek bütün dünya artısını iki üzeri beş seviyesi bir kıta seviyesi ya da bir ülke seviyesi olarak andırabilirsiniz.
+
+737
+02:15:44,859 --> 02:15:47,859
+Sağ tarafta da görüyorsunuz.
+
+738
+02:15:47,859 --> 02:15:58,859
+Onun ötesinde şehir seviyesi 10, sokak seviyesi 15 ve bina seviyesi 20. Bir ile 20 arasında zoom set etme şansınız var.
+
+739
+02:15:58,859 --> 02:16:04,859
+Bu arada kullanıcının zoom ile ilgili ayarlamalarını yapmasını mümkün kılabilirsiniz.
+
+740
+02:16:04,859 --> 02:16:06,859
+Yani oraya buton koyabilirsiniz.
+
+741
+02:16:06,859 --> 02:16:19,859
+Fakat bu noktada belirli bir alanın dışına sizin uygulamanızın ilgi alanın dışına çıkmasını engellemek için de set minimum zoom set maximum zoom diyerek o aralıklarda kalmasını sağlayabilirsiniz.
+
+742
+02:16:19,859 --> 02:16:21,859
+Bu da bir opsiyon.
+
+743
+02:16:21,859 --> 02:16:27,859
+Bunu sağlamalarınızın aktifte kullanıcı dünya seviyesine kadar çıkıp bina seviyesine kadar detaya inebilir.
+
+744
+02:16:27,859 --> 02:16:31,859
+Bu sizin uygulamanız açısından çok gerekli olmayabilir.
+
+745
+02:16:31,859 --> 02:16:38,860
+Artı bu seviyelere inip çıkmak belli oranda o dataların da telefonunuza yüklenmesi demek.
+
+746
+02:16:38,860 --> 02:16:50,860
+Sonuçta siz sokak seviyesine kadar giriyorsanız o bulunduğunuz gördüğünüz olanın belli bir radyosundaki bilgi telefonunuzu otomatik olarak iniyor.
+
+747
+02:16:50,860 --> 02:16:59,860
+Ama siz yukarı çıkınca zoom olarak siz sadece o detayda bir bilgi alıyorsunuz.
+
+748
+02:16:59,860 --> 02:17:04,860
+Yani örneğin Japonya'ya şu an baktığınızda Japonya'nın bu detayını alıyorsunuz.
+
+749
+02:17:04,860 --> 02:17:11,860
+Eğer oranın tüm bilgisini indirmek istiyorsanız ilgili alanlara zoom yapmanız gerekiyor.
+
+750
+02:17:11,860 --> 02:17:15,860
+Fakat tabi bu da belli bir dosyanın indirilmesi demek.
+
+751
+02:17:15,860 --> 02:17:19,860
+Bunun farklı şekillerde implement edenler var.
+
+752
+02:17:19,860 --> 02:17:29,860
+Yani doğrudan o ilgili harita bilgisini belli anlaşmalarla kendi taraflarında alanlar var vs. şeklinde karşımıza çıkıyor.
+
+753
+02:17:29,860 --> 02:17:34,860
+Tabi kameranın bir de hareketi var.
+
+754
+02:17:34,860 --> 02:17:51,860
+Bunu daha böyle görselleştirmek istiyorsak ve bir alana doğru doğrudan geçiş yapmak istemiyorsak zoom hareketini belirli bir akışta göstermek istiyorsak burada
+
+755
+02:17:51,860 --> 02:17:58,860
+Burada da animate camera metodu ve move camera metodundan faydalı bulunuyoruz.
+
+756
+02:17:58,860 --> 02:18:07,860
+Bunlar bizim bir noktadan diğer noktaya geçişimizi kolaylaştıran metotlar.
+
+757
+02:18:07,860 --> 02:18:14,860
+Kamera pozisyonunu burada gördüğünüz kamera pozisyonu bu yıllar üzerinden yine set edebiliyorsunuz.
+
+758
+02:18:14,860 --> 02:18:32,860
+Bütün detay bilgileri, zoom seviyesini, tilt açısını set edip arkasından da built ile kamera pozisyonunu otomatik olarak oluşturabiliyorsunuz.
+
+759
+02:18:32,860 --> 02:18:55,280
+My location layer var. Burada set my location enabled deyip bunun üzerinden ilgili butonu da tanımlayarak birçok uygulamanın kullandığı bu özelliği kendi uygulamanızda da ekleyebilirsiniz.
+
+760
+02:18:55,280 --> 02:19:00,280
+Böylece default da açılırken sizin lokasyon bilginizi kullanıyor.
+
+761
+02:19:00,280 --> 02:19:12,280
+Artı butona tıklandığında siz diyelim ki çok sıklıkla güncelleme yapmadıysanız en son biraz geride kaldıysanız son lokasyon bilginizi hemen almamızı sağlıyor.
+
+762
+02:19:12,280 --> 02:19:16,280
+Bu kadar basit bir kod üzerinden de implement edebiliyorsunuz.
+
+763
+02:19:16,280 --> 02:19:24,280
+Evet, haritalar için genel neler yapılabileceğinden bahsettik.
+
+764
+02:19:24,280 --> 02:19:36,940
+Buraya kadar sorusu olan var mıdır diye sizlere sözü bir bırakayım.
+
+765
+02:19:36,940 --> 02:19:37,940
+Evet [öğrenci].
+
+766
+02:19:37,940 --> 02:19:40,940
+Hocam şimdi haritada mesela belirli bir konumumuz var.
+
+767
+02:19:40,940 --> 02:19:42,940
+Uygulamaya bir kere girdik, açtık.
+
+768
+02:19:42,940 --> 02:19:44,940
+Sonra uygulamayı kapadık.
+
+769
+02:19:44,940 --> 02:19:50,940
+Sonra tekrar açtığımız zaman yine bu haritanın görsellerini baştan mı indiriyor?
+
+770
+02:19:51,940 --> 02:19:55,940
+Şimdi şöyle, bu haritanın görsellerini normalde baştan indirmiyor.
+
+771
+02:19:55,940 --> 02:20:03,940
+O lokasyonunda bulunduğunuz zaman o görseller aslında otomatik olarak sizin tarafınıza aktarılmış oluyor.
+
+772
+02:20:03,940 --> 02:20:15,940
+Ama siz pozisyon değiştirdiğinizde yeniden yeni bulunduğunuz lokasyonun bilgisi yer değiştirdiyseniz ona göre yeniden indiriliyor.
+
+773
+02:20:15,940 --> 02:20:24,579
+Yeniden indiriliyor demenin de o indiriliyor sadece.
+
+774
+02:20:24,579 --> 02:20:25,579
+[öğrenci].
+
+775
+02:20:26,579 --> 02:20:28,579
+Anladım hocam.
+
+776
+02:20:28,579 --> 02:20:31,579
+El kalkınca başka bir sorun daha var.
+
+777
+02:20:31,579 --> 02:20:33,579
+Bir sorun daha var aslında.
+
+778
+02:20:33,579 --> 02:20:39,579
+Google Maps'in de aslında bu API'yi kullanıyor muhtemelen tahminen.
+
+779
+02:20:39,579 --> 02:20:45,579
+Mesela onun ön belleye attığı daha önce indirdiği şeyleri de açıyor mu?
+
+780
+02:20:45,579 --> 02:21:03,579
+Şöyle, yani kendi uygulamanızda eğer Google Maps'e gitmiyorsanız o zaman Google Maps'in indirdiği kısımları burada bildiğim kadarıyla kullanamıyorsunuz.
+
+781
+02:21:03,579 --> 02:21:08,579
+Çünkü hepsinin bir şeyi var, cash mekanizması var.
+
+782
+02:21:08,579 --> 02:21:17,579
+Google Maps genelde kendi tarafındaki harita bilgilerinde cash tanı işini gerçekleştiriyor.
+
+783
+02:21:17,579 --> 02:21:23,579
+Bütün şeylere böyle bir imkan sağladığını zannetmiyorum uygulamalara.
+
+784
+02:21:23,579 --> 02:21:30,579
+Çünkü o zaman kendi uygulamasının kullanımı çok azalırdı.
+
+785
+02:21:30,579 --> 02:21:36,579
+Ya bunu ücretli yapar ya da bunu ücretsiz bir şekilde yaptığını zannetmiyorum.
+
+786
+02:21:36,579 --> 02:21:40,579
+Ama tabi bu konuda başka bir bilgisi olan varsa bizle paylaşabilir.
+
+787
+02:21:40,579 --> 02:21:52,670
+Şimdi bu lokasyon, pardon ekran mısırı soracak.
+
+788
+02:21:52,670 --> 02:21:55,670
+Hocam çok emin olmamakla birlikte şey soracağım.
+
+789
+02:21:55,670 --> 02:21:58,670
+Bu Google Maps'i kullanmanın abonelik ücreti tarzı bir şey var mı?
+
+790
+02:21:58,670 --> 02:22:03,670
+Bazı uygulamaların çünkü Yandex ya da Bing verkesi falan kullandığını görüyorum.
+
+791
+02:22:03,670 --> 02:22:20,670
+Şöyle Google Maps'te bir iş yapmak istiyorsanız sizden bir kredi kartı bilgisi istiyor lokasyon bazı işleri yapıldığında.
+
+792
+02:22:20,670 --> 02:22:26,670
+Ve bu noktada onu registre etmenizi bekliyor.
+
+793
+02:22:26,670 --> 02:22:40,670
+Daha sonra herhangi bir şekilde sizden başka talepler gelirse bu kredi kartı üzerinden belirli krediye ait olarak yaptığınız requeste bağlı olarak miktar çekmek istiyor.
+
+794
+02:22:40,670 --> 02:22:50,670
+Ama şunu söyleyebilirim Google Maps üzerinden bir iş yapacaksanız mutlaka belirli bir request sınırınız var.
+
+795
+02:22:50,670 --> 02:22:55,670
+Bu request sınırını geçtiğiniz anda başka bir request tanımlayamıyorsunuz.
+
+796
+02:22:55,670 --> 02:22:57,670
+O yüzden özel anlaşmalar yapılıyor.
+
+797
+02:22:57,670 --> 02:23:06,270
+Burada [öğrenci] bir link bağlaşmış hemen bakalım chat üzerinden.
+
+798
+02:23:06,270 --> 02:23:16,000
+Burada belki de evet burada aynen öyle planla ilgili size geri dönüş yapıyor.
+
+799
+02:23:16,000 --> 02:23:28,000
+Ama tabii geliştirici modunda sizin talep edeceğiniz istekler çok fazla olmayacağı için size ait olan API2'ye ihtiyaç duymasının sebebi de o.
+
+800
+02:23:28,000 --> 02:23:33,000
+Bakıyor belli bir requestin altına kaldıysanız herhangi bir ücret talep etmiyor.
+
+801
+02:23:33,000 --> 02:23:44,000
+Ama onun dışında mutlaka ya günlük kota ya aylık kota bunların değerlendirmesi yapılarak size yeni bir plan sunuyor.
+
+802
+02:23:44,000 --> 02:23:48,000
+Siz de bunu kabul ederseniz belirli bir ödemeyle ilerleyebiliyorsunuz.
+
+803
+02:23:48,000 --> 02:23:57,520
+Hocam linke girince farklı bir şey daha dikkatimi çekti de statik map ve dinamik mapten bahsetmiş.
+
+804
+02:23:57,520 --> 02:24:03,520
+Hocam bahsetmiş bizim bu gördüğümüz şimdiye kadar ne oluyor farklarını ben tam anlayamadım.
+
+805
+02:24:03,520 --> 02:24:05,520
+Hangi kısımda yazıyor hemen bakalım.
+
+806
+02:24:05,520 --> 02:24:12,520
+O pricing sayfasında gördüm de statik map dinamik map diyor iki kategoriyi ayırmışlar.
+
+807
+02:24:12,520 --> 02:24:16,520
+İçine get starts da giriş yaptın zaman mı?
+
+808
+02:24:16,520 --> 02:24:21,690
+Yok birazcık aşağıya indiğim zaman.
+
+809
+02:24:21,690 --> 02:24:31,190
+Şimdi şöyle tamam çok güzel bir soru bunu da hemen cevaplayalım.
+
+810
+02:24:31,190 --> 02:24:33,190
+Ben aşağıya inmemiştim.
+
+811
+02:24:33,190 --> 02:24:48,190
+Bu noktada sizin aslında harita üzerinde haritayı indirdiğiniz zaman bitmap şeklinde haritanın indirildiği durumlar var.
+
+812
+02:24:48,190 --> 02:25:00,190
+Ve bu bitmapler indirildiğinde siz aslında harita üzerinde herhangi bir şekilde bir işaretlemeyi aktif olarak dinamik maplerdeki gibi yapamıyorsunuz.
+
+813
+02:25:00,190 --> 02:25:11,190
+Dinamik maplerin üzerinde biraz önce bahsettiğimiz gibi markerlar vs. işaretlemek istiyorsanız o zaman normal bir map üzerinden değil dinamik map üzerinden ilerlemeniz gerekiyor ki
+
+814
+02:25:11,190 --> 02:25:20,190
+kullanıcıların orada yaptığı interaksiyonlar ve işte mapler üzerinde yaptığınız değişiklikler sizin tarafınızdan uygulamanız tarafından kastımize edilebilirsin.
+
+815
+02:25:20,190 --> 02:25:23,629
+Aradaki fark bu.
+
+816
+02:25:23,629 --> 02:25:28,629
+Diğerinde sabit sadece bilgi almak amaçlı o paylaşımı yapabiliyorsunuz.
+
+817
+02:25:28,629 --> 02:25:30,629
+O bölgenin fotoğrafıymış gibi düşünebilirsiniz.
+
+818
+02:25:30,629 --> 02:25:38,100
+Evet başka sorusu var mı?
+
+819
+02:25:38,100 --> 02:25:56,709
+Tabii lokasyon bazı da bir uygulama yapmak istiyorsanız burada bin request için iki dolarlık static map'te dinamik map'te de bin request için yedi dolarlık bir ücretten bahsediliyor.
+
+820
+02:25:56,709 --> 02:26:07,709
+Bunlar sizin kullanıcıya genelde yansıttığınız ücretler olmak zorunda kalabiliyor.
+
+821
+02:26:07,709 --> 02:26:10,709
+Uygulamanızda o yüzden ücretlerle getirmemiz gerekebiliyor.
+
+822
+02:26:10,709 --> 02:26:23,709
+Ama bu noktada kendi uygulamanız üzerinden yapacağınız requestler yerine kullanıcıyı başka bir Google Maps uygulamasına yönlendirerek de yapabilirsiniz.
+
+823
+02:26:23,709 --> 02:26:38,709
+Ama genelde uygulama için bu işleri halletmek daha konforlu ve user experience daha yüksek tuttuğu için arkadaşlarınızın söylediği gibi Bing ya da Yandex üzerinden hizmet almayı tercih eden uygulamalar da var.
+
+824
+02:26:38,709 --> 02:26:46,709
+Ama yani dünyanın büyük bir çoğunluğunda detay olarak Google Maps en iyi detayı veriyor.
+
+825
+02:26:46,709 --> 02:26:52,709
+Ama işte Amerika'da Apple Maps mesela biraz daha fazla bir detaya sahip.
+
+826
+02:26:52,709 --> 02:27:01,709
+Burada birazcık dünyanın farklı bölgelerinde farklı harita uygulamaların daha hızlı plana çıktığını görebiliyorsunuz.
+
+827
+02:27:01,709 --> 02:27:04,709
+Evet başka sorusu olan var mı?
+
+828
+02:27:04,709 --> 02:27:18,450
+Evet şimdi ben şöyle bir şey sormak istiyorum.
+
+829
+02:27:18,450 --> 02:27:22,450
+Bittik daha ilerlemeden önce.
+
+830
+02:27:22,450 --> 02:27:39,450
+Bu dersin içeriğinde şu konular olmasa, sadece bu konular olsun ve bu konularla ilgili daha fazla kodlama yapsak diyecek arkadaşlarımız var mıdır?
+
+831
+02:27:39,450 --> 02:27:47,450
+Bu konular bir sonraki tura bırakılsa ya da tam tersi bu çeşitlikte görmek iyi çok kodlama görmüyoruz.
+
+832
+02:27:47,450 --> 02:27:55,450
+Ama en azından her şeyin aşağı yukarı ne tür şekilde yapıcılardan fikir sahibi oluyoruz diyen var mı?
+
+833
+02:27:55,450 --> 02:27:58,450
+Bu konuda sizlere sormuş olayım.
+
+834
+02:27:58,450 --> 02:28:04,129
+Görüş belirtirseniz sevinirim.
+
+835
+02:28:04,129 --> 02:28:06,129
+Evet [öğrenci].
+
+836
+02:28:06,129 --> 02:28:08,129
+Hocam ben şunu düşünüyorum.
+
+837
+02:28:08,129 --> 02:28:10,129
+Şu anki çeşitlilik gayet iyi.
+
+838
+02:28:10,129 --> 02:28:17,129
+Sizin taa dersin en başında söylediğiniz gibi burada mobil programlama ilgili temel bilgileri biliyorsunuz.
+
+839
+02:28:17,129 --> 02:28:19,129
+Önemli noktalardan bahsediyorsunuz.
+
+840
+02:28:19,129 --> 02:28:20,129
+Onu düşünüyorum.
+
+841
+02:28:20,129 --> 02:28:27,129
+Bir konuda bir hafta kod üzerinde çalışsak ve bu süre üç haftaya çıksa dahi yeterli olmayabiliyor.
+
+842
+02:28:27,129 --> 02:28:30,129
+Çünkü dediğimiz gibi çok fazla kod var.
+
+843
+02:28:30,129 --> 02:28:35,129
+Yani açıkçası ben bu konu farklılığı konusunda memnunum.
+
+844
+02:28:35,129 --> 02:28:37,129
+Yani bunu belirmeyi istedim.
+
+845
+02:28:37,129 --> 02:28:38,129
+Tamam teşekkür ederim.
+
+846
+02:28:38,129 --> 02:28:41,129
+Tersi düşünen ya da katılan varsa hemen görüş alayım.
+
+847
+02:28:41,129 --> 02:28:43,129
+Çünkü bu kısım önemli.
+
+848
+02:28:43,129 --> 02:28:45,129
+Sizden gelecek görüş anam.
+
+849
+02:28:45,129 --> 02:28:47,129
+Çünkü siz öğreniyorsunuz.
+
+850
+02:28:48,129 --> 02:28:51,129
+Herkesin farklı bir tercihi var [öğrenci].
+
+851
+02:28:52,129 --> 02:28:55,129
+Hocam bence de bu kadar konu olması güzel bir şey.
+
+852
+02:28:55,129 --> 02:28:58,129
+Çünkü zaten hani bunları ezberleyemeyiz.
+
+853
+02:28:58,129 --> 02:29:00,129
+Hani bunları sürekli yapayız.
+
+854
+02:29:00,129 --> 02:29:02,129
+Sadece aklımızda bir fikir oluyor.
+
+855
+02:29:02,129 --> 02:29:05,129
+Hani nasıl yapmamız gerektiğine bir yaklaşımımız oluyor.
+
+856
+02:29:05,129 --> 02:29:13,129
+Ondan sonra zaten bu developer sayfasından bakarak farklı kaynaklara bakarak implement edebiliyoruz.
+
+857
+02:29:13,129 --> 02:29:16,129
+O yüzden kod yazmak bence o kadar da önemli değil.
+
+858
+02:29:16,129 --> 02:29:18,129
+Tamam peki teşekkürler.
+
+859
+02:29:18,129 --> 02:29:25,559
+Başka fikir olan [öğrenci] da chatten yazmış.
+
+860
+02:29:25,559 --> 02:29:34,170
+Peki [öğrenci] da genel olarak sizinle aynı fikirde.
+
+861
+02:29:34,170 --> 02:29:38,170
+Onur ve [öğrenci]'la.
+
+862
+02:29:38,170 --> 02:29:42,170
+Başka dersin içeriyle ilgili yorum yapacak olan var mı?
+
+863
+02:29:42,170 --> 02:29:50,170
+İlk haftalara birazcık fazla yer verdiğimizi düşünenler olmuştu bu arada.
+
+864
+02:29:50,170 --> 02:29:53,170
+Onunla da ilgili birkaç yorum yapacağım [öğrenci].
+
+865
+02:29:53,170 --> 02:29:59,569
+Hocam benim aklıma şöyle bir şey takıldı.
+
+866
+02:29:59,569 --> 02:30:03,569
+Biraz da kendim araştırıp öğrenmeye çalışırken fark ettim de bunu.
+
+867
+02:30:03,569 --> 02:30:08,569
+Uygulamaları falan geliştirirken uygulama aşamasında daha çok gözüme çarptı.
+
+868
+02:30:08,569 --> 02:30:14,569
+Bu biz kodlama yaparken vw yapısını çok iyi öğrendiğimizi düşünmüyorum ben.
+
+869
+02:30:14,569 --> 02:30:21,569
+Ya da custom vw yazmak falan bu tür şeyleri bence öğrenmemiz gerekirdi giriş dersi açısından diye düşünüyorum.
+
+870
+02:30:22,569 --> 02:30:25,569
+Güzel bir nokta.
+
+871
+02:30:25,569 --> 02:30:29,569
+Vw'ın bütün şeyin temelini oluşturduğunu falan fark ettim.
+
+872
+02:30:29,569 --> 02:30:31,569
+Custom vw yazmaya falan uğraştım.
+
+873
+02:30:31,569 --> 02:30:35,569
+Aslında bunun ayrı bir komple büyük bir konu olduğunu fark ettim sonra.
+
+874
+02:30:35,569 --> 02:30:37,569
+Görsellik açısından düşünüyorsun değil mi bunu böyle?
+
+875
+02:30:37,569 --> 02:30:38,569
+Evet evet.
+
+876
+02:30:38,569 --> 02:30:39,569
+Tamam.
+
+877
+02:30:39,569 --> 02:30:41,569
+Şimdi bu da artisteki en büyük sıkıntı.
+
+878
+02:30:41,569 --> 02:30:47,569
+Biz görsellik anlamında standart vw'lar üzerinden gidiyoruz ve buna hiç vakit ayırmıyoruz.
+
+879
+02:30:47,569 --> 02:30:48,569
+Çok doğru.
+
+880
+02:30:48,569 --> 02:30:56,569
+Ama vw ve user interface açısından ki siz bununla ilgili araştırma çalışması yaptınız.
+
+881
+02:30:56,569 --> 02:30:59,569
+User experience konusunda araştırma çalışması yaptınız.
+
+882
+02:30:59,569 --> 02:31:01,569
+Bu iki alanda çok değerli.
+
+883
+02:31:01,569 --> 02:31:03,569
+Kullancıyı doğrudan etkileyen.
+
+884
+02:31:03,569 --> 02:31:11,569
+Yaptığınız için fonksiyonelliğinin yanında görselliğin de çok öne çıktığı bir alan bu mobil programlama.
+
+885
+02:31:11,569 --> 02:31:16,569
+Belki bununla ilgili bir ekstra bir hafta düşünülebilir eklenmesi.
+
+886
+02:31:16,569 --> 02:31:20,569
+Ama daha ötesine gitme şansımız çok fazla yok.
+
+887
+02:31:20,569 --> 02:31:36,569
+Çünkü vw konusu gerçekten Android programlayan kişinin bir noktaya geldikten sonra kendini daha çok geliştirebildiği ve oraya vakit ayırabildiği bir konu.
+
+888
+02:31:36,569 --> 02:31:41,569
+Hiç kimse ilk etapta bu kadar çok derinlemesine genelde girmiyor.
+
+889
+02:31:41,569 --> 02:31:46,569
+Ama belki biraz daha fazla vakit ayırma fikri bir değerlendirebilirim.
+
+890
+02:31:46,569 --> 02:31:47,569
+Teşekkür ediyorum [öğrenci].
+
+891
+02:31:50,569 --> 02:31:51,569
+Evet [öğrenci].
+
+892
+02:31:51,569 --> 02:31:58,100
+Biraz da aslında hocam şey de dahil etmek isterim bu vw'a.
+
+893
+02:31:58,100 --> 02:32:01,100
+Design patternları uygulama aşaması.
+
+894
+02:32:01,100 --> 02:32:05,100
+Yani bunu daha iyi öğrenmemiz gerekir falan diye düşünüyorum.
+
+895
+02:32:05,100 --> 02:32:07,100
+Çünkü bir ders içerisinde geçtik.
+
+896
+02:32:07,100 --> 02:32:13,100
+Ama o işte o da yani daha fazla vakit ayrılması gereken bir konu.
+
+897
+02:32:13,100 --> 02:32:19,100
+Yani bir iki haftayla çok oturabilecek bir konu olduğunu düşünmüyorum.
+
+898
+02:32:19,100 --> 02:32:24,100
+Design pattern konusu da değerli olduğuna inandı.
+
+899
+02:32:24,100 --> 02:32:29,100
+Ama dersin içeriği çok sıkışık olduğu için aslında haklısınız hocam.
+
+900
+02:32:29,100 --> 02:32:32,100
+Dersi sığdırmak gerçekten çok kolay değil ama katılıyorum.
+
+901
+02:32:32,100 --> 02:32:43,100
+Yani design pattern da ki aktif öğrencilerden bu dönem gelen MVC dışında MVVM'in önemli oğuldan bahsettikleri için onu da konu içerisine almıştım.
+
+902
+02:32:43,100 --> 02:32:45,100
+Ama yeterince detaylı işleyemedik.
+
+903
+02:32:45,100 --> 02:32:49,100
+Sadece farkındalık yarattık diyelim.
+
+904
+02:32:49,100 --> 02:32:53,100
+Ama sizler açısından bundan sonra kariyerine devam edecek arkadaşlar açısından.
+
+905
+02:32:53,100 --> 02:33:01,100
+Bu MVVM'in de ya da MVC'nin de ya da diğer design patternların da yakından incelenmesi gerektiğini düşünüyorum.
+
+906
+02:33:01,100 --> 02:33:03,100
+Teşekkür ediyorum önerilerin için.
+
+907
+02:33:03,100 --> 02:33:05,100
+Ben teşekkür ederim.
+
+908
+02:33:05,100 --> 02:33:13,100
+Şimdi tabi başka ekstra bir şey kaldı mı aklımda diye.
+
+909
+02:33:13,100 --> 02:33:15,100
+İlk haftalar vardı.
+
+910
+02:33:15,100 --> 02:33:19,100
+İlk haftalara yani doğrudan programlamaya girselik diyenler var.
+
+911
+02:33:19,100 --> 02:33:25,100
+Bu konuda ben birkaç önemli başlığın tartışması gerektiğini düşünüyorum.
+
+912
+02:33:25,100 --> 02:33:29,100
+Örneğin mobil teknolojiler nedir?
+
+913
+02:33:29,100 --> 02:33:32,100
+Mobil teknoloji alanları, araştırma alanları nelerdir?
+
+914
+02:33:32,100 --> 02:33:34,100
+Ne tür uygulamalar geliştiriliyor?
+
+915
+02:33:34,100 --> 02:33:38,100
+İşletim sistemleri, mobil işletim sistemleri, aralarındaki farklar.
+
+916
+02:33:38,100 --> 02:33:41,100
+Dünyada ne tür gelişmeler oluyor?
+
+917
+02:33:41,100 --> 02:33:53,100
+Bunlardan bahsetmeden ilerlemenin doğrudan bir programcı bakış açısıyla bu dersi öğrenmek yönünde geliştireceğini sizlere düşünüyorum.
+
+918
+02:33:53,100 --> 02:34:01,100
+Ben size sizi mobil programcı olarak değil, mobil teknolojiler konusunda belli oranda bilgi sahibi olup,
+
+919
+02:34:01,100 --> 02:34:07,100
+uygulamalar konusunda yapılan dünya çatımındaki farklı çalışmalar konusunda bilgi sahibi olmanızı istediğim ve
+
+920
+02:34:07,100 --> 02:34:11,100
+termolojiyi hakim olduğunuzu istediğim için o haftaları hep ekliyorum.
+
+921
+02:34:11,100 --> 02:34:17,100
+Bu konuda bir haftanın ötesinde çok kısaltabileceğimizi düşünmüyorum.
+
+922
+02:34:17,100 --> 02:34:21,100
+O yüzden bu konudaki fikrim bu yönde.
+
+923
+02:34:21,100 --> 02:34:26,100
+Birkaç arkadaşımın bu yöndeki eleştirisine de cevap vermiş olum.
+
+924
+02:34:26,100 --> 02:34:30,100
+Şimdi uygulamaları yükleme süreci var.
+
+925
+02:34:30,100 --> 02:34:34,100
+Bunlardan çok kısa, hızlıca bahsedeyim.
+
+926
+02:34:34,100 --> 02:34:40,100
+Tabii debug mode ile release mode birbirinden farklı.
+
+927
+02:34:40,100 --> 02:34:51,100
+İlk etapta siz kendi tarafınızda, kendi telefonunuzda çalıştırırken aslında bir release version yaratmıyorsunuz.
+
+928
+02:34:51,100 --> 02:34:58,100
+Bu release versionu Google Play Store'a koyacağınız zaman yaratma noktasına geliyorsunuz.
+
+929
+02:34:58,100 --> 02:35:07,100
+Bu noktada tabii uygulamanızın bütün detaylarını, yani bütün ödeme planlarını,
+
+930
+02:35:07,100 --> 02:35:19,100
+onun dışında hangi kısmın ücretli olacağını, bunların hepsini Google Cloud Platform üzerinden konfigüre edebiliyorsunuz.
+
+931
+02:35:20,100 --> 02:35:28,100
+Ve ne kadar tıklandığını vesaire uygulamanızla ilgili bütün detayları burada erişme şansına sahipsiniz.
+
+932
+02:35:28,100 --> 02:35:45,100
+Bir APK file oluşturmak gerekiyor ama günün sonunda Android Application Bundle artık farklı cihazlar için gereksiz dosyalara eleme imkanı sağladığı için
+
+933
+02:35:45,100 --> 02:35:53,100
+size bu anlamda bir avantaj sağlıyor. O yüzden bu yapıyı kullanmakta fayda var.
+
+934
+02:35:53,100 --> 02:35:59,100
+Belli kısıtlar var ama bu kısıtlar zaman açarsında güncelleniyor.
+
+935
+02:35:59,100 --> 02:36:06,100
+APK vesaire ile ilgili boyut kısıtlamaları var.
+
+936
+02:36:06,100 --> 02:36:13,739
+Bunun da çeşitli release modunu hazırlarken çeşitli noktalar dikkat etmek gerekiyor.
+
+937
+02:36:13,739 --> 02:36:16,739
+Bu da karşıda application ikonunuzun olması gerekiyor.
+
+938
+02:36:16,739 --> 02:36:20,739
+End User License Agreement'ın okunmuş olması gerekiyor.
+
+939
+02:36:20,739 --> 02:36:28,739
+Bunun sizin açınızdan kullanıcıya sunulacak olan bir agreement varsa bunun hazırlanması gerekiyor.
+
+940
+02:36:28,739 --> 02:36:32,739
+Bunlara dikkat etmekte fayda var.
+
+941
+02:36:32,739 --> 02:36:34,739
+Bu kısım önemli.
+
+942
+02:36:34,739 --> 02:36:45,739
+Daha sonra bu noktada application'i yüklerken bir title, short description, full description kısımlarını doldurmanız sizden bekleniyor.
+
+943
+02:36:45,739 --> 02:36:56,739
+Aynı zamanda mümkünse videolar, resimler, videoları, videoları, videoları, videoları, videoları, videoları, videoları, videoları, videoları, videoları, videoları...
+
+944
+02:36:57,739 --> 02:37:10,739
+Aynı zamanda mümkünse videolar, resimler ve çeşitli grafik gösterimleri koymanız sizden bekleniyor.
+
+945
+02:37:10,739 --> 02:37:23,739
+Özellikle ekran arayüzlerinden bazı kesitler sunmamız bekliyor ki Google Play Store'da sizden Google'a indirmek isteyenler bir fikir sahibi olsun.
+
+946
+02:37:23,739 --> 02:37:36,739
+Burada tabii ilgili hangi ülkeleri hedefliyorsanız o ülkelerle ilgili çeşitli din çalışmalarının da yapılması gerekiyor.
+
+947
+02:37:36,739 --> 02:37:39,739
+Uygulamanızın bu dilleri desteklemesi ayrıca önemli.
+
+948
+02:37:39,739 --> 02:37:49,739
+Bazı uygulamalar dünyada çeşitli bölgelerde çok ilgi çekerken, Güney Amerika gibi, Uzak Doğu gibi Avrupa ve Amerika'da ilgi çekmeyebiliyor.
+
+949
+02:37:49,739 --> 02:37:52,739
+Özellikle oyun türlerinde bunu görebiliyorsunuz.
+
+950
+02:37:52,739 --> 02:37:59,739
+Bazı türler farklı coğrafyalarda daha fazla indiriliyor ve tıklanıyor.
+
+951
+02:37:59,739 --> 02:38:05,739
+Hatta bazı şirketler yurt içini değil, yurt dışını tamamen hedefliyorlar.
+
+952
+02:38:05,739 --> 02:38:08,739
+Oradaki alışkanlıkları takip ediyorlar.
+
+953
+02:38:08,739 --> 02:38:23,379
+Başka burada değineceğim önemli kısımlardan bir tanesi de sizin uygulamanızın hangi kategoride yer alacağı.
+
+954
+02:38:24,379 --> 02:38:28,379
+Oyun yazıyorsanız onun alt kategorisini belirlemeniz.
+
+955
+02:38:28,379 --> 02:38:31,379
+Çünkü herkes bu keywordler üzerinden arama yapıyor.
+
+956
+02:38:31,379 --> 02:38:39,379
+Siz doğru bir kategori üzerinde eğer eklemezseniz uygulamanızla ilgili doğru tag'ları yazmazsanız,
+
+957
+02:38:39,379 --> 02:38:51,379
+birçok aynısını da uygulamadan dolayı sizin belki bazı bilgilerin kullanıcı tarafından görülmediği için eriştirmesi mümkün olmayacak.
+
+958
+02:38:51,379 --> 02:38:59,379
+Ve bu noktada kullanıcılar uygulamanızla yeteri kadar erişemeyecek demek oluyor.
+
+959
+02:38:59,379 --> 02:39:04,379
+Mutlaka size erişebilecekleri bir bilgi vermeniz gerekiyor.
+
+960
+02:39:04,379 --> 02:39:06,379
+Bunlar önemli.
+
+961
+02:39:06,379 --> 02:39:11,379
+Diyebilirsiniz ki bundan hiçbir teknik bilgi değil ama şu açıdan önemli.
+
+962
+02:39:11,379 --> 02:39:18,379
+Gerçekten kullanıcı geri dönüşlerini değerlendirip güncelleme yapan uygulamaların
+
+963
+02:39:18,379 --> 02:39:25,379
+çok daha sonra tavsiye edildiğini ve kullanı sayısının arttığını görüyorsunuz.
+
+964
+02:39:25,379 --> 02:39:29,379
+Bu tür yapılmış anket çalışmaları da var.
+
+965
+02:39:29,379 --> 02:39:47,379
+Deplikasyon bundalığın getirdiği avantajlar, düşük yer kaplaması ve spuilt noktasında ve release management noktasında olabildiğince size esnek çözümler üretmesi önemli.
+
+966
+02:39:47,379 --> 02:39:59,110
+Burada tüm adımları aslında kısaca şekil üzerinde görebiliyorsunuz.
+
+967
+02:39:59,110 --> 02:40:06,110
+Önce bir upload key üzerinden uygulamanızı imzalayıp Google'a yüklüyorsunuz.
+
+968
+02:40:06,110 --> 02:40:17,110
+Sonra Google değerlendirme süreci sonunda onay vermesi durumunda sizin uygulamanızı özel bir key ile imzalıyor.
+
+969
+02:40:17,110 --> 02:40:23,110
+Ve sonra artık uygulamanız Google Play sorusu üzerinden sunulmaya hazır hale geliyor.
+
+970
+02:40:23,110 --> 02:40:26,110
+Tabii burada bu key'i kaybetmemeniz çok önemli.
+
+971
+02:40:26,110 --> 02:40:32,110
+Herhangi bir şekilde bu key'i kaybettiğinizde yeniden bir key üretimi gerekiyor.
+
+972
+02:40:32,110 --> 02:40:42,110
+Bu da süreçlerin biraz daha uzaması ya da belli bir süre ile uygulamanızın güncellemesinin aksamasına sebebiyet verebiliyor.
+
+973
+02:40:42,110 --> 02:40:46,110
+Bu slide'leri dersin duvarında paylaşacağım.
+
+974
+02:40:46,110 --> 02:40:52,110
+Oradan daha detaylı erişmeniz gereken noktalara erişebilirsiniz.
+
+975
+02:40:52,110 --> 02:40:58,110
+Dönemin sonuna geldik. Hepinize teşekkür ediyorum.
+
+976
+02:40:58,110 --> 02:41:05,110
+Umarım az da olsa bir katkımız olmuştur sizlere bu mobil programlama ile ilgili, mobil teknolojilerle ilgili.
+
+977
+02:41:05,110 --> 02:41:08,110
+Final sınavlarınızda başarılar diliyorum.
+
+978
+02:41:09,110 --> 02:41:14,110
+Yazın güzel bir dinlenme imkanı diliyorum.
+
+979
+02:41:14,110 --> 02:41:19,110
+Staj yapacak olanlara, çalışacak olanlara verimli bir çalışma ortamı diliyorum.
+
+980
+02:41:19,110 --> 02:41:28,110
+Umuyorum sonbaharda tekrar mezun olmayacak olanlar üniversiteye geri dönmüş olurlar.
+
+981
+02:41:28,110 --> 02:41:33,110
+Mezun olacak olanlara da hayatlarında şimdiden başarılar diliyorum.
+
+982
+02:41:33,110 --> 02:41:39,110
+Katkı sağlayan özellikle 4-5 arkadaşımıza çok çok teşekkür ediyorum.
+
+983
+02:41:39,110 --> 02:41:51,110
+Sınavla ilgili ya da derste ilgili sorusu olan olursa bana mail üzerinden erişip ya da proje ile ilgili sorularını iletebilirler.
+
+984
+02:41:51,110 --> 02:41:55,110
+Kendinize çok iyi bakın, sağlıkla kalın. Görüşmek üzere arkadaşlar.
+
+985
+02:41:55,110 --> 02:41:57,110
+Çok teşekkür ederiz hocam emekleriniz için.
+
+986
+02:41:57,110 --> 02:41:59,110
+Teşekkürler hocam.
+
+987
+02:41:59,110 --> 02:42:01,110
+Teşekkürler hocam.
+

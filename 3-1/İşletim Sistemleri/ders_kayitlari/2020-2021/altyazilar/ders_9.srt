@@ -1,0 +1,7660 @@
+1
+00:00:04,750 --> 00:00:06,750
+uygun şekilde göstermiyor.
+
+2
+00:00:06,750 --> 00:00:09,429
+Hani biz değerlendirmeyi yapınca
+
+3
+00:00:09,429 --> 00:10:13,460
+yine Gökhan Hoca'nızla beraber yan yanayız.
+
+4
+00:10:13,460 --> 00:10:15,460
+Bekledik.
+
+5
+00:10:15,460 --> 00:10:18,059
+Baya bir bekledik ama
+
+6
+00:10:18,059 --> 00:10:20,379
+atılımcı sayısı çok fazla atmıyor.
+
+7
+00:10:20,379 --> 00:10:24,460
+Daha fazla da bekleme çok makul gelmedi açıkçası.
+
+8
+00:10:24,460 --> 00:10:27,419
+Belki online sistemde bir sıkıntı vardır bilemiyoruz ama
+
+9
+00:10:27,419 --> 00:10:33,620
+sonuçta daha sonradan izleme şansı var arkadaşların.
+
+10
+00:10:33,940 --> 00:10:37,779
+Başlayalım diyoruz ufaktan.
+
+11
+00:10:37,779 --> 00:10:42,460
+Sadece ufak bir duyuru yapayım.
+
+12
+00:10:42,460 --> 00:10:47,899
+Sizin tarafta ne gördüğünüzü ya da ne gösterildiğini size bilmiyorum.
+
+13
+00:10:47,899 --> 00:10:52,139
+Sınavla ilgili olarak bize gözüken bazı sonuçlar var.
+
+14
+00:10:52,139 --> 00:10:54,500
+Size gözüken de sonuçlar var tahminen.
+
+15
+00:10:54,500 --> 00:10:59,220
+Fakat o sonuçlarda yanlışların doğrulara götürme durumu yok.
+
+16
+00:11:00,059 --> 00:11:05,179
+Son notlarınız ya da son göreceğiniz notlar onlar olmayacak büyük ihtimalle.
+
+17
+00:11:05,179 --> 00:11:09,019
+O son notları oluşturmak için
+
+18
+00:11:09,019 --> 00:11:13,259
+sistemdeki bir sıkıntının geçirilmesi, düzeltilmesini bekliyoruz.
+
+19
+00:11:13,259 --> 00:11:18,620
+Yani toplu egzel olarak not dökümünüze aldığımız zaman
+
+20
+00:11:18,620 --> 00:11:25,059
+dışarıda görülen listeyle egzel üzerinde gelen liste arasında bir tutarsızlık oluyor.
+
+21
+00:11:25,059 --> 00:11:27,059
+Onun çözülmesini bekliyoruz.
+
+22
+00:11:27,100 --> 00:11:33,100
+Çözülünce gerçek notlarınızı hesaplıyor, kontrol ediyor olacağız.
+
+23
+00:11:33,100 --> 00:11:36,460
+Sonra da her zaman olduğu gibi üst size giriyor olacağız.
+
+24
+00:11:36,460 --> 00:11:39,340
+O gerçek notunuzu o sırada göreceksiniz.
+
+25
+00:11:39,340 --> 00:11:43,940
+Dolayısıyla sonra şey yaşanmasın hani benim notum farklıydı öyleydi böyleydi.
+
+26
+00:11:43,940 --> 00:11:48,500
+Durumu yaşanmasın aklınızda olsun diye buradan bir kere uyarayım istedim.
+
+27
+00:11:48,500 --> 00:11:52,299
+Şimdi sesimiz geliyor değil mi bu arada?
+
+28
+00:11:52,980 --> 00:11:53,980
+Yazdı.
+
+29
+00:11:54,980 --> 00:11:56,980
+Ben anlayamadım sizde.
+
+30
+00:11:56,980 --> 00:11:58,980
+Hah tamam süperdi.
+
+31
+00:11:58,980 --> 00:12:00,980
+Tamam harika.
+
+32
+00:12:00,980 --> 00:12:02,980
+Evet evet o zaman hadi bakalım.
+
+33
+00:12:02,980 --> 00:12:04,980
+Yani bu hafta CPU scheduling konuşacağız.
+
+34
+00:12:04,980 --> 00:12:06,980
+Aslında temel...
+
+35
+00:12:07,980 --> 00:12:09,980
+Şuradan da oynatmaya başlayayım ben şeyi.
+
+36
+00:12:09,980 --> 00:12:11,980
+Hah tam ekran olsun güzel.
+
+37
+00:12:11,980 --> 00:12:13,980
+Bir sonrakine geçiyorum.
+
+38
+00:12:13,980 --> 00:12:15,980
+Tamam geçti.
+
+39
+00:12:17,980 --> 00:12:19,980
+Şey bakacağız.
+
+40
+00:12:19,980 --> 00:12:21,980
+Temel kavramlara bakacağız.
+
+41
+00:12:22,659 --> 00:12:32,659
+Scheduling dediğimiz yapının yani her şeyde olduğu gibi scheduling içinde neye göre kime göre yapacağımız yani kriterlilerini kriteryalarını konuşuyor olacağız.
+
+42
+00:12:32,659 --> 00:12:41,659
+Hemen akabinde çeşitli scheduling işitip çizer gelinememizin için çizer gelinemi algoritmalarını konuşuyor olacağız.
+
+43
+00:12:41,659 --> 00:12:45,659
+Burada genel geçer bazı algoritmalardan başlayacağız.
+
+44
+00:12:45,659 --> 00:12:47,659
+Sonra daha spesif algoritmalara doğru gideceğiz.
+
+45
+00:12:48,340 --> 00:12:52,340
+Gerçek zamanlı sistemler üzerinde kullanabilecekleriniz vesaire gibi.
+
+46
+00:12:54,340 --> 00:12:57,340
+Scheduling konuşurken hep process üzerinden konuşacağız.
+
+47
+00:12:57,340 --> 00:13:01,340
+Dolayısıyla sonrasında thread scheduling'in nasıl yapıldığı kısmına geçiyor olacağız.
+
+48
+00:13:01,340 --> 00:13:10,340
+Scheduling işini eğer birden fazla işlemcinin olduğu durumlarda nasıl yaparız.
+
+49
+00:13:11,019 --> 00:13:19,019
+Artı ve eksi yönler, sıkıntılar üzerinde düşünülmesi gereken şeyler kısmını konuşacağız.
+
+50
+00:13:19,019 --> 00:13:26,019
+Sonrasında da her zaman olduğu gibi işletim sistemleri bazında örnekler kısmı olacak.
+
+51
+00:13:26,019 --> 00:13:28,019
+Objektif'i geçebiliriz.
+
+52
+00:13:28,700 --> 00:13:33,700
+Sizinkinden bakınca daha hızlı oluyor.
+
+53
+00:13:33,700 --> 00:13:40,700
+Processing ya da işlem yapısı içerisinde şey olduğunu biliyoruz.
+
+54
+00:13:40,700 --> 00:13:48,700
+Belli bir anda işlemci kullanımı yoğun olabiliyor ya da IO yoğun olabiliyor.
+
+55
+00:13:48,700 --> 00:13:54,700
+IO yoğun olması durumunda aslında daha önceki derslerde konuştuğumuz şey neydi?
+
+56
+00:13:55,379 --> 00:14:00,379
+IO işlemi başlattığınız zaman ne olmasını bekliyoruz?
+
+57
+00:14:00,379 --> 00:14:07,379
+İşlemin CPU'dan alınması ve IO ile ilgili weight queue'e konmasını bekliyoruz.
+
+58
+00:14:07,379 --> 00:14:10,379
+Dolayısıyla orada IO'nun ne kadar süreceğini de bilmiyoruz.
+
+59
+00:14:10,379 --> 00:14:16,379
+Ama IO'nun sürdüğü süre boyunca bu işlemci de çalışmasının bir mantığı yok.
+
+60
+00:14:16,379 --> 00:14:22,379
+Yine başka bir işlemi yerleştiriyor olmamız lazım.
+
+61
+00:14:23,059 --> 00:14:29,059
+Bazen işlemler hakkında konuşurken işlemci yoğun ya da IO yoğun diye konuşuyoruz.
+
+62
+00:14:29,059 --> 00:14:34,059
+Ama aslında baktığımız zaman bütün işlemler içerisinde bir geçiş durumu var.
+
+63
+00:14:34,059 --> 00:14:38,059
+Yani bir CPU burst ile başlayabilirsiniz.
+
+64
+00:14:38,059 --> 00:14:41,059
+Ya da bir IO işlemiyle başlayabilirsiniz.
+
+65
+00:14:41,059 --> 00:14:46,059
+Aka bin de IO işlemini yaptıktan sonra tahminen onunla ilgili
+
+66
+00:14:46,059 --> 00:14:50,059
+CPU tarafında bir işlem yapıyor olmanız lazım.
+
+67
+00:14:50,740 --> 00:14:59,740
+Dolayısıyla bu iş farklı sürelerde birbirini takip eden CPU IO burstleri şeklinde olacaktır.
+
+68
+00:14:59,740 --> 00:15:02,740
+Dolse kopyalama yapıyorsanız da böyle olacaktır.
+
+69
+00:15:02,740 --> 00:15:09,740
+Belli bir dosyadan bilgi okuyup bunun üzerinde işlem yapıyorsanız da böyle olacaktır.
+
+70
+00:15:09,740 --> 00:15:16,740
+Sadece burstlerin, yoğun kullanım alanlarının bu grafiğe göre bakacak olursanız
+
+71
+00:15:17,419 --> 00:15:22,820
+ya da gerçek anlamda bakacak olursanız süreleri farklı gösterecektir.
+
+72
+00:15:22,820 --> 00:15:27,820
+Dolayısıyla CPU yoğun, işlemci yoğun bir işlemden bahsediyorsak
+
+73
+00:15:27,820 --> 00:15:30,820
+buradaki CPU burstlerinin daha fazla ve uzun olduğunu
+
+74
+00:15:30,820 --> 00:15:34,820
+IO yoğun bir işlemden bahsediyorsak
+
+75
+00:15:34,820 --> 00:15:41,820
+buradaki IO burstlerinin daha yoğun ve daha uzun olduğunu ifade etmeye çalışıyoruz.
+
+76
+00:15:41,820 --> 00:15:44,820
+Aklınıza gelmesi gereken şey bu.
+
+77
+00:15:45,500 --> 00:15:50,500
+Bir aslında işlemin, hani bu söyleyeceğim şey ilerleyen slaidlerde
+
+78
+00:15:50,500 --> 00:15:55,500
+tersine ya da bu varsayımı yok sayarak bazı şeyler söyleyeceğiz ama
+
+79
+00:15:55,500 --> 00:15:59,500
+bir işlemin aslında burst'ın ne kadar olacağını bilmiyorsunuz.
+
+80
+00:15:59,500 --> 00:16:02,500
+Herhangi bir işlemin size şey demesi de çok mümkün değil.
+
+81
+00:16:02,500 --> 00:16:05,500
+Yani ben çalışmaya başlayacağım ama şimdi
+
+82
+00:16:05,500 --> 00:16:09,500
+iki birim zaman kullanırım işlemci, sonra bir millet IO yaparım
+
+83
+00:16:09,500 --> 00:16:12,500
+sonra tekrar kullanırım falan gibi bir şey söylemesi mümkün değil.
+
+84
+00:16:13,179 --> 00:16:16,179
+Ama ne yapmak mümkün? Bunu predikt etmek mümkün, tahminleyebiliriz.
+
+85
+00:16:16,179 --> 00:16:21,179
+Şimdi tahminlemenin noktasından önce bunun istatistliğini çıkartabiliriz.
+
+86
+00:16:21,179 --> 00:16:23,179
+Bu grafikte de o var aslında.
+
+87
+00:16:23,179 --> 00:16:26,179
+Baktığınız zaman alt eksende gördüğünüz şey
+
+88
+00:16:26,179 --> 00:16:29,179
+burstlerin süresi milisaniye cinsinden süresi
+
+89
+00:16:29,179 --> 00:16:34,179
+y ekseninde gördüğünüz de bu burstlerin aslında sıklığı.
+
+90
+00:16:34,179 --> 00:16:38,179
+Baktığınız zaman hani çok daha ufak olan
+
+91
+00:16:38,179 --> 00:16:41,179
+CPU burstlerin çok daha fazla olduğunu görüyorsunuz.
+
+92
+00:16:41,860 --> 00:16:45,860
+Yani çok uzun CPU burstleri aslında sayı olarak çok daha azıdır.
+
+93
+00:16:45,860 --> 00:16:49,860
+Dolayısıyla çoğu zaman CPU kullanımı
+
+94
+00:16:49,860 --> 00:16:52,860
+kısa süreli burstler halinde oluşuyor.
+
+95
+00:16:52,860 --> 00:16:55,860
+Bu grafik aslında bize bunu anlatıyor.
+
+96
+00:16:55,860 --> 00:16:58,860
+Bunu aklınızın bir köşesinde tutun lütfen.
+
+97
+00:16:58,860 --> 00:17:01,860
+Vurulayalım. Bu örneğin alındığı sistem için
+
+98
+00:17:01,860 --> 00:17:04,859
+geçerli olan bir grafik.
+
+99
+00:17:04,859 --> 00:17:07,859
+Başka bir sistemde farklı şekilde olabilir.
+
+100
+00:17:08,539 --> 00:17:11,539
+Cihan hocasında söylediği gibi genel yaklaşım
+
+101
+00:17:11,539 --> 00:17:14,539
+kısa süreli anlık CPU burstlerinin
+
+102
+00:17:14,539 --> 00:17:17,539
+daha yoğun olduğu uzun süreli olanların ise
+
+103
+00:17:17,539 --> 00:17:22,539
+grafinin de gösterdiği gibi daha az karşılaşıldı.
+
+104
+00:17:22,539 --> 00:17:25,539
+Yani Gökhan hocanın uzun dediği gibi
+
+105
+00:17:25,539 --> 00:17:28,539
+bu grafinin peak yaptığı nokta farklı yerlere doğru
+
+106
+00:17:28,539 --> 00:17:31,539
+bu x eksinin de kayıyor geliyor gidiyor olabilir.
+
+107
+00:17:31,539 --> 00:17:34,539
+Ama hani genel fikir vermesi için
+
+108
+00:17:34,539 --> 00:17:36,539
+bu grafik şeydir.
+
+109
+00:17:37,220 --> 00:17:40,220
+Daha önce konuşurken neyi söylemiştik?
+
+110
+00:17:40,220 --> 00:17:43,220
+Çize ilgilenme noktasında, scheduling noktasında
+
+111
+00:17:43,220 --> 00:17:46,220
+long-term schedulerimiz vardı.
+
+112
+00:17:46,220 --> 00:17:49,220
+Short-term schedulerimiz vardı.
+
+113
+00:17:49,220 --> 00:17:52,220
+Bir de mid-term schedulerimiz vardı.
+
+114
+00:17:52,220 --> 00:17:55,220
+Burada bizim esas üzerinde duracağımız
+
+115
+00:17:55,220 --> 00:17:58,220
+ve konuşacağımız yer CPU scheduling'te.
+
+116
+00:17:58,220 --> 00:18:01,220
+Kavramları hatırlayacak olursanız
+
+117
+00:18:01,220 --> 00:18:04,220
+long-term scheduling neydi?
+
+118
+00:18:04,900 --> 00:18:07,900
+Short-term schedulerimizde bulunan işlerden
+
+119
+00:18:07,900 --> 00:18:10,900
+hangilerini memoriye alacağımı.
+
+120
+00:18:10,900 --> 00:18:13,900
+Short-term scheduler bir sonraki cycle'da
+
+121
+00:18:13,900 --> 00:18:16,900
+bir sonraki şeyde adımda
+
+122
+00:18:16,900 --> 00:18:19,900
+CPU'da hangi işlemi çekeceğim?
+
+123
+00:18:19,900 --> 00:18:22,900
+Mid-term ise memuride belli bir süre
+
+124
+00:18:22,900 --> 00:18:25,900
+kullanılmamış olan ya da memuride
+
+125
+00:18:25,900 --> 00:18:28,900
+yer açmak için bazı işlemlerin
+
+126
+00:18:28,900 --> 00:18:31,900
+memuriden skin secondary storage'a
+
+127
+00:18:32,579 --> 00:18:35,579
+kullanılıyor.
+
+128
+00:18:35,579 --> 00:18:38,579
+Burada biz short-term scheduler'a
+
+129
+00:18:38,579 --> 00:18:41,579
+yoğunlaşacağız.
+
+130
+00:18:41,579 --> 00:18:44,579
+Short-term scheduler ne yapıyor?
+
+131
+00:18:44,579 --> 00:18:47,579
+Aslında ready queue içerisindeki
+
+132
+00:18:47,579 --> 00:18:50,579
+işlemler arasından
+
+133
+00:18:50,579 --> 00:18:53,579
+scheduler'ın belirlediği
+
+134
+00:18:53,579 --> 00:18:56,579
+kritere göre uygun olan bir tanesini
+
+135
+00:18:56,579 --> 00:18:59,579
+alıyor ve işlemcinin kullanımını
+
+136
+00:19:00,259 --> 00:19:03,259
+ona tahsis ediyor, işlemciye atıyor.
+
+137
+00:19:03,259 --> 00:19:06,259
+Yani running state'e geçiriyor aslında.
+
+138
+00:19:06,259 --> 00:19:09,259
+Şimdi bu temel görevi ama
+
+139
+00:19:09,259 --> 00:19:12,259
+scheduling algoritmasının
+
+140
+00:19:12,259 --> 00:19:15,259
+farklı anlarda devreye
+
+141
+00:19:15,259 --> 00:19:18,259
+girme durumu var.
+
+142
+00:19:18,259 --> 00:19:21,259
+Nedir?
+
+143
+00:19:21,259 --> 00:19:24,259
+Bir şekilde CPU'yla çalışmaya başlamış
+
+144
+00:19:24,259 --> 00:19:27,259
+ya da CPU'yla çalışmaya devam eden
+
+145
+00:19:27,940 --> 00:19:30,940
+ayo başlatması ve wait state'e dönmesi.
+
+146
+00:19:30,940 --> 00:19:33,940
+Ne yapılması lazım? Yeni bir işlemin
+
+147
+00:19:33,940 --> 00:19:36,940
+seçilmesi lazım. Bu noktada devreye
+
+148
+00:19:36,940 --> 00:19:39,940
+giriyor ve olabilir.
+
+149
+00:19:39,940 --> 00:19:42,940
+Bu işlem waiting sırasında işini
+
+150
+00:19:42,940 --> 00:19:45,940
+bittirdi. Tekrar ready
+
+151
+00:19:45,940 --> 00:19:48,940
+noktasına döndü.
+
+152
+00:19:48,940 --> 00:19:51,940
+Yani kuyrukta bir güncelleme oldu,
+
+153
+00:19:51,940 --> 00:19:54,940
+bir değişiklik oldu. Yani hazır
+
+154
+00:19:55,619 --> 00:19:58,619
+kuyruğunda bir güncelleme oldu.
+
+155
+00:19:58,619 --> 00:20:01,619
+Bu noktada devreye girebilir.
+
+156
+00:20:01,619 --> 00:20:04,619
+Running durumundaki bir işlem
+
+157
+00:20:04,619 --> 00:20:07,619
+ne oldu?
+
+158
+00:20:07,619 --> 00:20:10,619
+Bir şekilde kesintiye uğradı.
+
+159
+00:20:10,619 --> 00:20:13,619
+Neden dolayı farklı nedenlerle olabilir
+
+160
+00:20:13,619 --> 00:20:16,619
+ama en basit bir interrupt durumu
+
+161
+00:20:16,619 --> 00:20:19,619
+ready'ye geçti. Dolayısıyla
+
+162
+00:20:19,619 --> 00:20:22,619
+mesela interrupt'sa ilgili işlem yapıldı.
+
+163
+00:20:23,299 --> 00:20:26,299
+Bir schedulingin devreye girmesi lazım.
+
+164
+00:20:26,299 --> 00:20:29,299
+Bir de doğal sebep çalışan işlem
+
+165
+00:20:29,299 --> 00:20:32,299
+çalışmakta olan işlem
+
+166
+00:20:32,299 --> 00:20:35,299
+CPU'da çalışmasını bitirdi ve sonra da termine etti.
+
+167
+00:20:35,299 --> 00:20:38,299
+Dolayısıyla yeni bir işlemin seçilmesi lazım.
+
+168
+00:20:38,299 --> 00:20:41,299
+Aslında burada 4 tane adım var.
+
+169
+00:20:41,299 --> 00:20:44,299
+1,2,3,4 diye görüyorsunuz.
+
+170
+00:20:44,299 --> 00:20:47,299
+Şimdi 1 ve 4 numara
+
+171
+00:20:47,299 --> 00:20:50,299
+yani işlem
+
+172
+00:20:50,980 --> 00:20:55,390
+yapıştı.
+
+173
+00:20:55,390 --> 00:20:58,390
+Kendi tükürüğüyle bulan insan
+
+174
+00:20:58,390 --> 00:21:01,390
+tık diye gitti.
+
+175
+00:21:01,390 --> 00:21:04,390
+Şimdi bu
+
+176
+00:21:04,390 --> 00:21:07,390
+karar noktasından
+
+177
+00:21:07,390 --> 00:21:10,390
+sadece 1 ve 4'de
+
+178
+00:21:10,390 --> 00:21:13,390
+scheduling işlemini uyguluyorsanız
+
+179
+00:21:13,390 --> 00:21:16,390
+aslında siz num-prem tüksünüz.
+
+180
+00:21:16,390 --> 00:21:19,390
+Yani bir işlem çalışmaya
+
+181
+00:21:20,069 --> 00:21:23,069
+başladıktan sonra onu
+
+182
+00:21:23,069 --> 00:21:26,069
+kendi isteği dışında işlemciden
+
+183
+00:21:26,069 --> 00:21:29,069
+geri alamıyorsunuz.
+
+184
+00:21:29,069 --> 00:21:32,069
+Onu kenara koyup devam edemiyorsunuz.
+
+185
+00:21:32,069 --> 00:21:35,069
+Geri kalan kısımlar ise aslında preemptive
+
+186
+00:21:35,069 --> 00:21:38,069
+olma durumu.
+
+187
+00:21:38,069 --> 00:21:41,069
+Preemption durumu.
+
+188
+00:21:41,069 --> 00:21:44,069
+Yani sizin çalışmakta olan
+
+189
+00:21:44,069 --> 00:21:47,069
+bir işlemden
+
+190
+00:21:47,750 --> 00:21:50,750
+skeçler vasıtasıyla geri alabiliyor olmanız.
+
+191
+00:21:50,750 --> 00:21:53,750
+Şimdi baktığımız zaman
+
+192
+00:21:53,750 --> 00:21:56,750
+günümüzde zaten bu şekilde
+
+193
+00:21:56,750 --> 00:21:59,750
+yapıları kuruyoruz.
+
+194
+00:21:59,750 --> 00:22:02,750
+Neden bu şekilde yapılar kuruyoruz?
+
+195
+00:22:02,750 --> 00:22:05,750
+En basitinden interaktif sistemler kullanıyoruz.
+
+196
+00:22:05,750 --> 00:22:08,750
+Şu an kullandığımız
+
+197
+00:22:08,750 --> 00:22:11,750
+desktop ya da laptop olarak ifade ettiğimiz
+
+198
+00:22:11,750 --> 00:22:14,750
+kişisel bilgisayarlara baktığımız zaman
+
+199
+00:22:15,430 --> 00:22:18,430
+bu işin bir arada ilerleyebilmesi lazım.
+
+200
+00:22:18,430 --> 00:22:21,430
+Dolayısıyla preemptive olmak çok daha
+
+201
+00:22:21,430 --> 00:22:24,430
+makul ve mantıklı oluyor bu noktada.
+
+202
+00:22:24,430 --> 00:22:27,430
+Ama biz geçmişten günümüze doğru
+
+203
+00:22:27,430 --> 00:22:30,430
+inceleyeceğimiz için şimdi birazdan
+
+204
+00:22:30,430 --> 00:22:33,430
+CPU ile ilgili önce kriterleri konuşacağız ama
+
+205
+00:22:33,430 --> 00:22:36,430
+akabinde yöntemleri konuşacağız.
+
+206
+00:22:36,430 --> 00:22:39,430
+Yöntemleri konuşurken preemptive olmayan
+
+207
+00:22:39,430 --> 00:22:42,430
+num-preemptive'lerden başlayacağız.
+
+208
+00:22:43,109 --> 00:22:46,109
+Hepsini değerlendiriyor olacağız.
+
+209
+00:22:49,109 --> 00:22:52,109
+Şimdi preemption güzel bir şey
+
+210
+00:22:52,109 --> 00:22:55,109
+efektif bir şey ama beraberinde
+
+211
+00:22:55,109 --> 00:22:58,109
+getirdiği
+
+212
+00:22:58,109 --> 00:23:01,109
+sıkıntıları var.
+
+213
+00:23:01,109 --> 00:23:04,109
+Dikkat edilmesi gereken noktalar var.
+
+214
+00:23:04,109 --> 00:23:07,109
+Bir tanesi paylaşılan veriye erişim.
+
+215
+00:23:07,109 --> 00:23:10,109
+Bir tanesi kernel modundayken
+
+216
+00:23:10,789 --> 00:23:13,789
+preemption oluşması.
+
+217
+00:23:13,789 --> 00:23:16,789
+Bunların her birinde aslında ne sıkıntısı var
+
+218
+00:23:16,789 --> 00:23:19,789
+teknik olarak bakacak olursanız.
+
+219
+00:23:19,789 --> 00:23:22,789
+Siz bir veri üzerinde değişiklik
+
+220
+00:23:22,789 --> 00:23:25,789
+yapıyordunuz. O sırada systemin
+
+221
+00:23:25,789 --> 00:23:28,789
+preemptive olduğu için çalışmanız durduruldu
+
+222
+00:23:28,789 --> 00:23:31,789
+kenara alındınız.
+
+223
+00:23:31,789 --> 00:23:34,789
+Yerinize gelen işlem aynı veri üzerinde
+
+224
+00:23:34,789 --> 00:23:37,789
+bir iş yapmaya başladı. Siz geri dönüp
+
+225
+00:23:38,470 --> 00:23:41,470
+devam ettiğiniz zaman ortalık birbirine girecek.
+
+226
+00:23:41,470 --> 00:23:44,470
+Aslında bu kısmını biraz şeyde konuşacağız.
+
+227
+00:23:44,470 --> 00:23:47,470
+Burayı iyi aklınızda tutun.
+
+228
+00:23:47,470 --> 00:23:50,470
+Hocanızın söylediği şu sözleri.
+
+229
+00:23:50,470 --> 00:23:53,470
+Çünkü senkronizasyon problemi var.
+
+230
+00:23:53,470 --> 00:23:56,470
+Onu gözden geçirirken tam da konuşacağımız
+
+231
+00:23:56,470 --> 00:23:59,470
+inceleyeceğimiz şey budur.
+
+232
+00:23:59,470 --> 00:24:02,470
+Bir işlem paylaşılan bir veri üzerinde
+
+233
+00:24:02,470 --> 00:24:05,470
+işlem yaparken kesintiye vuradı.
+
+234
+00:24:06,150 --> 00:24:09,150
+Üzerinde başka bir şey yapmak istedi.
+
+235
+00:24:09,150 --> 00:24:12,150
+Eğer kontrol mekanizması, senkronizasyonu
+
+236
+00:24:12,150 --> 00:24:15,150
+uygulamazsak ortalık ciddi anlamda karışacak.
+
+237
+00:24:15,150 --> 00:24:18,150
+Preemption güzel bir yapı.
+
+238
+00:24:18,150 --> 00:24:21,150
+Ama bu ve benzeri potansiyel problemlere
+
+239
+00:24:21,150 --> 00:24:24,150
+sahip, daha doğrusu potansiyel problemle
+
+240
+00:24:24,150 --> 00:24:27,150
+sistemin kendi problemini beraberinde getirdiği
+
+241
+00:24:27,150 --> 00:24:30,150
+çözülmesi gereken sıkıntılı durumlar.
+
+242
+00:24:30,150 --> 00:24:33,150
+Bunu düzgün çözemediğiniz zaman problem oluyor.
+
+243
+00:24:33,829 --> 00:24:36,829
+Olay deadlock'a kadar gider.
+
+244
+00:24:36,829 --> 00:24:39,829
+Ya da race condition oluşur.
+
+245
+00:24:39,829 --> 00:24:42,829
+Bunların hepsi bu haftanın değil ama
+
+246
+00:24:42,829 --> 00:24:45,829
+haftanın konuları Gökhan hocanızla konuşacağınız
+
+247
+00:24:45,829 --> 00:24:48,829
+konular.
+
+248
+00:24:48,829 --> 00:24:51,829
+Daha da girmeyeyim.
+
+249
+00:24:51,829 --> 00:24:54,829
+Biz scheduler'dan bahsediyoruz.
+
+250
+00:24:54,829 --> 00:24:57,829
+Bir de dispatcher'dan bahsetmemiz lazım.
+
+251
+00:24:57,829 --> 00:25:00,829
+İkisi belli açılardan bir bütünün
+
+252
+00:25:01,509 --> 00:25:04,509
+parçaları ve fakat birbirlerinden
+
+253
+00:25:04,509 --> 00:25:07,509
+ayrı şeyler.
+
+254
+00:25:07,509 --> 00:25:10,509
+Scheduling aslında demeyin ki
+
+255
+00:25:10,509 --> 00:25:13,509
+slide'in en başında yazan şey olarak
+
+256
+00:25:13,509 --> 00:25:16,509
+özetleyebilirsiniz.
+
+257
+00:25:16,509 --> 00:25:19,509
+Ready queue'dan bir işlemin
+
+258
+00:25:19,509 --> 00:25:22,509
+CPU'da çalıştırılmak üzere seçilmesi
+
+259
+00:25:22,509 --> 00:25:25,509
+durumu. Neye göre?
+
+260
+00:25:25,509 --> 00:25:28,509
+Belirlenmiş olan kriterye göre.
+
+261
+00:25:29,190 --> 00:25:32,190
+Yani yeni belirlenen işlemin
+
+262
+00:25:32,190 --> 00:25:35,190
+alınıp işlemciye
+
+263
+00:25:35,190 --> 00:25:38,190
+yerleştirilmesi
+
+264
+00:25:38,190 --> 00:25:41,190
+bu işlem bittikten sonra
+
+265
+00:25:41,190 --> 00:25:44,190
+kenden moddan user moda geçilmesi
+
+266
+00:25:44,190 --> 00:25:47,190
+sonra da işlemin başlatılması
+
+267
+00:25:47,190 --> 00:25:50,190
+tamamı dispatcher adlı modülün yaptığı işler.
+
+268
+00:25:50,190 --> 00:25:53,190
+Bu dispatcher'ın işi.
+
+269
+00:25:53,190 --> 00:25:56,190
+Burada bir kavram daha var konuşmamız gereken.
+
+270
+00:25:56,869 --> 00:25:59,869
+Dispatcher latency.
+
+271
+00:25:59,869 --> 00:26:02,869
+Long turn, short turn ve mid turn
+
+272
+00:26:02,869 --> 00:26:05,869
+scheduler'i konuşurken şeyden bahsetmiştik.
+
+273
+00:26:05,869 --> 00:26:08,869
+Short turn scheduling'in çok hızlı olması lazım.
+
+274
+00:26:08,869 --> 00:26:11,869
+Çünkü ne yapıyoruz aslında scheduling için
+
+275
+00:26:11,869 --> 00:26:14,869
+karar verme için harcadığımız süre
+
+276
+00:26:14,869 --> 00:26:17,869
+gerçek anlamda bir işleme ait
+
+277
+00:26:17,869 --> 00:26:20,869
+yapılması gereken şeyleri
+
+278
+00:26:20,869 --> 00:26:23,869
+gerçekleştirmiyoruz. Bir overhead hızlı olması lazım.
+
+279
+00:26:24,549 --> 00:26:27,549
+Dispatch latency diyoruz buna.
+
+280
+00:26:27,549 --> 00:26:30,549
+Ne yapmamız lazım?
+
+281
+00:26:30,549 --> 00:26:33,549
+Scheduler'ın seçtiği işlemi
+
+282
+00:26:33,549 --> 00:26:36,549
+bir an önce işlemci de çalıştırmaya başlamamız lazım.
+
+283
+00:26:36,549 --> 00:26:39,549
+Bunun için geçirdiğimiz süre yani context switch
+
+284
+00:26:39,549 --> 00:26:42,549
+user moda geçme, uygun yere atlama
+
+285
+00:26:42,549 --> 00:26:45,549
+vesaire için harcadığımız süre
+
+286
+00:26:45,549 --> 00:26:48,549
+onun için geçen zamanda dispatch latency diyoruz.
+
+287
+00:26:48,549 --> 00:26:53,819
+Şimdi scheduling kriterye baktığımız zaman
+
+288
+00:26:54,500 --> 00:26:57,500
+aslında farklı sistemler, farklı tipteki sistemlerin
+
+289
+00:26:57,500 --> 00:27:00,500
+farklı kriterleri olabilir.
+
+290
+00:27:00,500 --> 00:27:04,940
+Bu biraz üzerine konuştuğumuz
+
+291
+00:27:04,940 --> 00:27:07,940
+sistemin çalıştırılma mantığı
+
+292
+00:27:07,940 --> 00:27:10,940
+ya da neye hizmet ettiği ile alakalı bir şey.
+
+293
+00:27:10,940 --> 00:27:13,940
+Yani siz batch bir sistem
+
+294
+00:27:13,940 --> 00:27:16,940
+çalıştırıyorsanız
+
+295
+00:27:16,940 --> 00:27:19,940
+orada derdiniz tamamen
+
+296
+00:27:19,940 --> 00:27:22,940
+throughput olabilir.
+
+297
+00:27:23,619 --> 00:27:26,619
+Ama interaktif bir şey yapıyorsanız
+
+298
+00:27:26,619 --> 00:27:29,619
+sistem yapıyorsanız o zaman
+
+299
+00:27:29,619 --> 00:27:32,619
+ilk derdiniz response time olabilir.
+
+300
+00:27:32,619 --> 00:27:35,619
+Sonraki derdiniz waiting time olabilir.
+
+301
+00:27:35,619 --> 00:27:38,619
+Dolayısıyla aslında buradaki kriterlerin
+
+302
+00:27:38,619 --> 00:27:41,619
+hangisini kendinize hedef seçeceğiniz
+
+303
+00:27:41,619 --> 00:27:44,619
+geliştirdiğiniz ya da oluşturduğunuz sistemin
+
+304
+00:27:44,619 --> 00:27:47,619
+kullanım amacına ve yapısına bağlı şeylerdir.
+
+305
+00:27:47,619 --> 00:27:50,619
+Burada gördüğünüz kriterlerin tamamı ise
+
+306
+00:27:51,299 --> 00:27:54,299
+sizin yapınıza bağlı olarak kullanabileceğiniz
+
+307
+00:27:54,299 --> 00:27:57,299
+seçebileceğiniz, tercih edebileceğiniz kriterler.
+
+308
+00:27:57,299 --> 00:28:00,299
+Nedir o kriterler? Bir tanesi CP utilization.
+
+309
+00:28:00,299 --> 00:28:03,299
+Yani işlemci zamanını ne kadar fazla
+
+310
+00:28:03,299 --> 00:28:06,299
+kullanabildiğiniz. Eğer benim
+
+311
+00:28:06,299 --> 00:28:09,299
+yüksek hızlı bir işlemcim varsa
+
+312
+00:28:09,299 --> 00:28:12,299
+ve bu zamanımın %90'ını da yatıyorsa
+
+313
+00:28:12,299 --> 00:28:15,299
+bu istediğim bir şey değildir.
+
+314
+00:28:15,299 --> 00:28:18,299
+Tabii ki utilization'ın 1 olmasını
+
+315
+00:28:18,980 --> 00:28:21,980
+yani %100 olmasını da tercih etmem.
+
+316
+00:28:21,980 --> 00:28:24,980
+Çünkü biraz payı olabilmeli.
+
+317
+00:28:24,980 --> 00:28:27,980
+Başka bir şekilde bu sisteme bir ekleme
+
+318
+00:28:27,980 --> 00:28:30,980
+bir güncelleme geldiği zaman çalışabilmeye
+
+319
+00:28:30,980 --> 00:28:33,980
+devam edebilmeli.
+
+320
+00:28:33,980 --> 00:28:36,980
+Dolayısıyla optimal seviyede tutabilmeliyim.
+
+321
+00:28:36,980 --> 00:28:39,980
+Ne çok az olmalı ne ağzına kadar dolu olmalı.
+
+322
+00:28:39,980 --> 00:28:42,980
+Burada genel olarak değerlendirirken
+
+323
+00:28:42,980 --> 00:28:45,980
+tabii ki utilization ne kadar fazla ise o kadar iyi diye bakacağız.
+
+324
+00:28:46,660 --> 00:28:49,660
+Yani bu söylediğim şey aslında mühendislik açısından baktığınızda
+
+325
+00:28:49,660 --> 00:28:52,660
+bir sistem tasarlarken bu utilization hesaplıyorsanız
+
+326
+00:28:52,660 --> 00:28:55,660
+orada bir pay bırakmaktır.
+
+327
+00:28:55,660 --> 00:28:58,660
+Şunun gibi düşünün bir arabanız var
+
+328
+00:28:58,660 --> 00:29:01,660
+220 yapabiliyor ve siz devamlı 220 ile gidiyorsunuz.
+
+329
+00:29:01,660 --> 00:29:04,660
+Çok güzel ve fakat
+
+330
+00:29:04,660 --> 00:29:07,660
+acil bir durum oldu kaçmanız gerekti
+
+331
+00:29:07,660 --> 00:29:10,660
+hızlanmanız gerekti hızlanabilme şansınız yok.
+
+332
+00:29:10,660 --> 00:29:13,660
+Bitti. O kazayı yapacaksınız gibi düşünün.
+
+333
+00:29:14,339 --> 00:29:17,339
+Trueboot aslında
+
+334
+00:29:17,339 --> 00:29:20,339
+birim zamanında tamamladığınız
+
+335
+00:29:20,339 --> 00:29:23,339
+daha doğrusu çalışmasını tamamlayan işlemlerin
+
+336
+00:29:23,339 --> 00:29:26,339
+sayısı temiz ve basit bir özet.
+
+337
+00:29:26,339 --> 00:29:29,339
+Turnaround time
+
+338
+00:29:29,339 --> 00:29:32,339
+bir işlemin sisteme
+
+339
+00:29:32,339 --> 00:29:35,339
+girdikten sonra tamamlanıp
+
+340
+00:29:35,339 --> 00:29:38,339
+sistemden çıkmasına kadar geçen sürenin
+
+341
+00:29:38,339 --> 00:29:41,339
+toplamı. Waiting time
+
+342
+00:29:42,019 --> 00:29:45,019
+bir işlemin sistemden tamamen
+
+343
+00:29:45,019 --> 00:29:48,019
+çıkıp gitmesi sırasında
+
+344
+00:29:48,019 --> 00:29:51,019
+Waiting queue
+
+345
+00:29:51,019 --> 00:29:54,019
+derse sonradan
+
+346
+00:29:54,019 --> 00:29:57,019
+giren bir arkadaşımız olsa gerek.
+
+347
+00:29:57,019 --> 00:30:00,019
+Waiting time
+
+348
+00:30:00,019 --> 00:30:03,019
+bir işlemin ready queue
+
+349
+00:30:03,019 --> 00:30:06,019
+kendini tamamlayıp bitene kadar
+
+350
+00:30:06,019 --> 00:30:09,019
+sistemi girdikten sonra bitene kadar
+
+351
+00:30:09,700 --> 00:30:12,700
+Waiting queue nereden çıktı?
+
+352
+00:30:12,700 --> 00:30:15,700
+Ready queue'da beklediği sürelerin toplamı.
+
+353
+00:30:15,700 --> 00:30:18,700
+Yani siz işlemin sistemine soktunuz.
+
+354
+00:30:18,700 --> 00:30:21,700
+Bir miktar bekledi çalışmaya başladı.
+
+355
+00:30:21,700 --> 00:30:24,700
+Ready queue'ya döndü.
+
+356
+00:30:24,700 --> 00:30:27,700
+Tekrar orada bekliyor.
+
+357
+00:30:27,700 --> 00:30:30,700
+Tekrar işlemci aldınız. Sonra bitti.
+
+358
+00:30:30,700 --> 00:30:33,700
+Aradaki iki beklemeyi de
+
+359
+00:30:33,700 --> 00:30:36,700
+Waiting time'a ekliyor olmanız lazım.
+
+360
+00:30:37,380 --> 00:30:40,380
+Bir işlemi sisteme soktunuz.
+
+361
+00:30:40,380 --> 00:30:43,380
+O sistemin
+
+362
+00:30:43,380 --> 00:30:46,380
+ilk sonuç üretmeye başladığı
+
+363
+00:30:46,380 --> 00:30:49,380
+zamana kadar ki burada aslında şey
+
+364
+00:30:49,380 --> 00:30:52,380
+diyebiliriz. İşlemci de çalışmaya başladı.
+
+365
+00:30:52,380 --> 00:30:55,380
+İlk zamana kadar diyebiliriz belki.
+
+366
+00:30:55,380 --> 00:30:58,380
+Geçen süre.
+
+367
+00:30:58,380 --> 00:31:01,380
+Bunun dışında da farklı şeyler üretebilirsiniz.
+
+368
+00:31:01,380 --> 00:31:04,380
+Farklı kriterlerimiz de olabilir.
+
+369
+00:31:05,059 --> 00:31:08,059
+Tabii bu kriterlere baktığınız zaman
+
+370
+00:31:08,059 --> 00:31:11,059
+CPU translation'ı maksimize etmek istersiniz.
+
+371
+00:31:11,059 --> 00:31:14,059
+True code'u maksimize etmek istersiniz.
+
+372
+00:31:14,059 --> 00:31:17,059
+Birim zamanda çıkarttığımız işlem sayısını
+
+373
+00:31:17,059 --> 00:31:20,059
+en yüksek seviyeye getirmek isteriz.
+
+374
+00:31:20,059 --> 00:31:23,059
+Turn around time'ını yani işlemin
+
+375
+00:31:23,059 --> 00:31:26,059
+sistemde kaldığı süreyi
+
+376
+00:31:26,059 --> 00:31:29,059
+mümkün olduğu kadar minimize etmek isteriz.
+
+377
+00:31:29,059 --> 00:31:32,059
+Bekleme süresini yine minimize etmek isteriz.
+
+378
+00:31:32,740 --> 00:31:35,740
+Response time'ı hemen
+
+379
+00:31:35,740 --> 00:31:38,740
+bir sonuç üretmeyi minimize etmek isteriz.
+
+380
+00:31:38,740 --> 00:31:41,740
+Genel karakter olarak yapı olarak.
+
+381
+00:31:41,740 --> 00:31:44,740
+Şimdi şeye baktığımız zaman
+
+382
+00:31:44,740 --> 00:31:47,740
+bundan sonra bakacağımız şeyler aslında algoritmalar.
+
+383
+00:31:47,740 --> 00:31:50,740
+En temel ve en bilinen algoritmalardan
+
+384
+00:31:50,740 --> 00:31:53,740
+bir tanesi first come first serve.
+
+385
+00:31:53,740 --> 00:31:56,740
+Yani ilk gelen ilk servisi alır yapısı.
+
+386
+00:31:56,740 --> 00:31:59,740
+Şimdi buraya baktığınız zaman ne görüyorsunuz?
+
+387
+00:32:00,420 --> 00:32:03,420
+P1, P2 ve P3.
+
+388
+00:32:03,420 --> 00:32:06,420
+P1'in burst time'ı 24, P2'nki 3, P3'nki
+
+389
+00:32:06,420 --> 00:32:09,420
+3 yine benzer şekilde.
+
+390
+00:32:09,420 --> 00:32:12,420
+Şimdi bunlar bu sırayla geldiklerini düşünürseniz
+
+391
+00:32:12,420 --> 00:32:16,829
+1, 2, 3 diye sırayla geldiklerini düşünürseniz
+
+392
+00:32:16,829 --> 00:32:19,829
+ve bunu bir grafiğe aktarırsanız ki
+
+393
+00:32:19,829 --> 00:32:22,829
+burada da aslında Gantt Diagramını kullanıyoruz.
+
+394
+00:32:22,829 --> 00:32:25,829
+Ne olacak? P1 ilk geldiği için ilk çalışacak.
+
+395
+00:32:25,829 --> 00:32:28,829
+Ne kadar süre çalışacak?
+
+396
+00:32:29,509 --> 00:32:32,509
+P1'in burst time'ı o 24'da tamamlayana kadar çalışacak.
+
+397
+00:32:32,509 --> 00:32:35,509
+Bittikten sonra P2 çalışmaya başlayacak.
+
+398
+00:32:35,509 --> 00:32:38,509
+Çünkü sırada o vardı.
+
+399
+00:32:38,509 --> 00:32:41,509
+3 birim o çalışacak. P3 sonraki 3 birim de çalışacak.
+
+400
+00:32:41,509 --> 00:32:44,509
+Şimdi bu sistemdeki sıkıntı şu.
+
+401
+00:32:44,509 --> 00:32:48,789
+P1'in bekleme süresine 0.
+
+402
+00:32:48,789 --> 00:32:51,789
+Hiç beklemiyor. P2 ne kadar bekliyor?
+
+403
+00:32:51,789 --> 00:32:56,519
+Kendisinden önce gelen P1'in tamamının
+
+404
+00:32:56,519 --> 00:32:59,519
+yani çalışması ve bitmesi lazım.
+
+405
+00:33:00,200 --> 00:33:03,200
+P3 ise
+
+406
+00:33:03,200 --> 00:33:06,200
+hem P1'in hem P2'nin çalışıp bitmesini bekliyor.
+
+407
+00:33:06,200 --> 00:33:09,200
+O yüzden onun bekleme süresi de 27.
+
+408
+00:33:09,200 --> 00:33:12,200
+Şimdi bunun ortalamasını aldığımız zaman 0.
+
+409
+00:33:12,200 --> 00:33:56,700
+Müt'e geçti.
+
+410
+00:33:56,700 --> 00:33:59,700
+Müt'e geçti geldi.
+
+411
+00:33:59,700 --> 00:34:02,700
+O yüzden pardon.
+
+412
+00:34:02,700 --> 00:34:05,700
+Bağlantı koptu galiba. Çok ilginç.
+
+413
+00:34:05,700 --> 00:34:08,699
+Şu an sesiniz geliyor. Ekran paylaşımı yok.
+
+414
+00:34:09,380 --> 00:34:12,380
+Tamam. Çünkü bir şey oldu arkadaşlar.
+
+415
+00:34:12,380 --> 00:34:15,380
+Herhalde dediğiniz gibi bağlantı koptu.
+
+416
+00:34:15,380 --> 00:34:18,380
+Ekran paylaşımını tekrar başlatıyorum.
+
+417
+00:34:18,380 --> 00:34:21,380
+Görünüyor değil mi?
+
+418
+00:34:21,380 --> 00:34:24,380
+Hocanızın anlattığı farklı sırayla gelseydi dediği yer burası.
+
+419
+00:34:24,380 --> 00:34:27,380
+Buraya kadar duydunuz değil mi?
+
+420
+00:34:27,380 --> 00:34:30,380
+Şöyle söyleyeyim. Bu slide'ın başına kadar
+
+421
+00:34:30,380 --> 00:34:34,980
+farklı sırayla gelseydi P2, P3, P1 olsaydığının öncesi var.
+
+422
+00:34:34,980 --> 00:34:44,960
+Bir sıkıntı yok. Orayı duydunuz.
+
+423
+00:34:45,639 --> 00:34:48,639
+O zaman bir dakika geri gelelim.
+
+424
+00:34:48,639 --> 00:34:51,639
+Tamam.
+
+425
+00:34:51,639 --> 00:34:54,639
+Buradan geri saralım. Geriden başlayalım.
+
+426
+00:34:54,639 --> 00:34:57,639
+Daha rahat olsun.
+
+427
+00:34:57,639 --> 00:35:00,639
+Burada 3 işlemde oluşan bir sistem var. P1, P2, P3.
+
+428
+00:35:00,639 --> 00:35:03,639
+P1, P2 ve P3 sırasıyla geldiği için de
+
+429
+00:35:03,639 --> 00:35:06,639
+first come first serve olduğu için de
+
+430
+00:35:06,639 --> 00:35:09,639
+bunları geldikleri sırayla çalıştıracağız.
+
+431
+00:35:09,639 --> 00:35:12,639
+Bu sistemde P1 hemen başladığı için herhangi bir bekleme süresi yok.
+
+432
+00:35:13,320 --> 00:35:16,320
+Ne yapması lazım? P1'in bitmesini beklemesi lazım.
+
+433
+00:35:16,320 --> 00:35:19,320
+Yani 24 birimi bekleyecek.
+
+434
+00:35:19,320 --> 00:35:22,320
+P3 ise hem P1 hem P2'nin bitmesini bekleyecek.
+
+435
+00:35:22,320 --> 00:35:25,320
+Dolayısıyla 27 birim.
+
+436
+00:35:25,320 --> 00:35:28,320
+Bunun ortalamasını aldığınız zaman 0, 24, 27, 51, 3'e bölüm 17.
+
+437
+00:35:28,320 --> 00:35:31,320
+Şimdi bu bir case.
+
+438
+00:35:31,320 --> 00:35:34,320
+Burada asıl
+
+439
+00:35:34,320 --> 00:35:37,320
+konuşacağımız, üzerine konuşacağımız şey şu.
+
+440
+00:35:37,320 --> 00:35:40,320
+Bunlar farklı sırayla gelseydi ne olurdu?
+
+441
+00:35:41,000 --> 00:35:44,000
+P1 diye gelselerdi sisteme bu şekilde çalıştırsaydık.
+
+442
+00:35:44,000 --> 00:35:47,000
+P2 hiç beklemediği için rating timeı 0 olacaktı.
+
+443
+00:35:47,000 --> 00:35:50,000
+P3, P2'nin çalışmasını bekleyecekti. 3 birim sadece.
+
+444
+00:35:50,000 --> 00:35:53,000
+Geçen senaryoda P3 27 birim bekliyordu.
+
+445
+00:35:53,000 --> 00:35:56,000
+Hatırlayın. Bu da 3 birim.
+
+446
+00:35:56,000 --> 00:35:59,000
+P1 ise P2 ve P3'in çalışmasını bekleyecek 6 birim.
+
+447
+00:35:59,000 --> 00:36:02,000
+Geçen senaryoda 0'dı.
+
+448
+00:36:02,000 --> 00:36:05,000
+P1'in beklemesi ne oldu? Kötüleşti.
+
+449
+00:36:05,000 --> 00:36:08,000
+Ancak P2 ve P3'ünki de ciddi anlamda iyileşti.
+
+450
+00:36:08,679 --> 00:36:11,679
+P2 ortalamasını aldığınız zaman 3'e indi.
+
+451
+00:36:11,679 --> 00:36:14,679
+17'den 3'e geldi.
+
+452
+00:36:14,679 --> 00:36:17,679
+Öncelikle first come first served yani
+
+453
+00:36:17,679 --> 00:36:20,679
+ilk servis edilir yapısında
+
+454
+00:36:20,679 --> 00:36:23,679
+aslında elinizdeki verizetiyle çok
+
+455
+00:36:23,679 --> 00:36:26,679
+ilişkili bir sonuç var.
+
+456
+00:36:26,679 --> 00:36:29,679
+Gelme sırası her şeyi belirleyebiliyor.
+
+457
+00:36:29,679 --> 00:36:32,679
+Bir de burada oluşabilecek
+
+458
+00:36:32,679 --> 00:36:35,679
+şöyle bir sıkıntı var.
+
+459
+00:36:36,360 --> 00:36:39,360
+Burada skecenin algoritmasında
+
+460
+00:36:39,360 --> 00:36:42,360
+burst time'leri veriyoruz size.
+
+461
+00:36:42,360 --> 00:36:45,360
+Bu işlem 24 birim çalıştı sonra
+
+462
+00:36:45,360 --> 00:36:48,360
+bitti gitti değil bu.
+
+463
+00:36:48,360 --> 00:36:51,360
+Bu CPU burst'ın da aslında ne?
+
+464
+00:36:51,360 --> 00:36:54,360
+İlk grafiği hatırlayın orayı unutmayın demiştim.
+
+465
+00:36:54,360 --> 00:36:57,360
+CPU burst'ların uzunluğu aslında
+
+466
+00:36:57,360 --> 00:37:00,360
+onun süresini veriyor.
+
+467
+00:37:00,360 --> 00:37:03,360
+IO kısmının süresini veriyor.
+
+468
+00:37:04,039 --> 00:37:07,039
+Olayı basitleştirmek ve anlaşılır hale getirmek için
+
+469
+00:37:07,039 --> 00:37:10,039
+böyle kullanıyoruz.
+
+470
+00:37:10,039 --> 00:37:13,039
+Bu adam ilk CPU burst'ın da 24 yaptı.
+
+471
+00:37:13,039 --> 00:37:16,039
+Sonra tahminen IO başlattı.
+
+472
+00:37:16,039 --> 00:37:19,039
+IO'ya gitti.
+
+473
+00:37:19,039 --> 00:37:22,039
+Ondan sonra bir CPU burst'ı daha gelecek.
+
+474
+00:37:22,039 --> 00:37:25,039
+Burada biz sadece
+
+475
+00:37:25,039 --> 00:37:28,039
+aslında her bir işlemin o an ki
+
+476
+00:37:28,039 --> 00:37:31,039
+bir burst'ını alıp değerlendiriyoruz.
+
+477
+00:37:31,719 --> 00:37:34,719
+Şimdi P2 çalıştı IO başlattı.
+
+478
+00:37:34,719 --> 00:37:37,719
+P3 çalıştı IO başlattı.
+
+479
+00:37:37,719 --> 00:37:40,719
+P1 çalıştı IO başlattı.
+
+480
+00:37:40,719 --> 00:37:43,719
+IO başlatan P2 tekrar Redi-Q'ya gelecek.
+
+481
+00:37:43,719 --> 00:37:46,719
+P3 tekrar Redi-Q'ya gelecek.
+
+482
+00:37:46,719 --> 00:37:49,719
+P1 tekrar Redi-Q'ya gelecek.
+
+483
+00:37:49,719 --> 00:37:52,719
+Aslında devre alem şeklinde
+
+484
+00:37:52,719 --> 00:37:55,719
+turlama şeklinde devam edecekler.
+
+485
+00:37:55,719 --> 00:37:58,719
+Aslında bir konvoy oluşturacak.
+
+486
+00:37:59,400 --> 00:38:02,400
+Bu konvoy deminke gibi olursa
+
+487
+00:38:02,400 --> 00:38:05,400
+yani uzun işlemin arkasında
+
+488
+00:38:05,400 --> 00:38:08,400
+küçük işlemler şeklinde denk gelirse
+
+489
+00:38:08,400 --> 00:38:11,400
+aslında orada bir konvoy efekt oluşacak
+
+490
+00:38:11,400 --> 00:38:14,400
+ve hep bekleyeceksiniz.
+
+491
+00:38:14,400 --> 00:38:17,400
+Trafikte gidiyorsunuz.
+
+492
+00:38:17,400 --> 00:38:20,400
+Önünüzde düğün alayı var.
+
+493
+00:38:20,400 --> 00:38:23,400
+Tuhaf 20 araba birbirinin arkasına giriyor.
+
+494
+00:38:23,400 --> 00:38:26,400
+Ne sağından geçebiliyorsun, ne solundan geçebiliyorsun.
+
+495
+00:38:27,079 --> 00:38:30,079
+Arkada adamların keyfini bekliyorsun.
+
+496
+00:38:30,079 --> 00:38:33,079
+Benzer bir durum oluyor.
+
+497
+00:38:33,079 --> 00:38:37,969
+Dolayısıyla böyle bir yapı içerisinde
+
+498
+00:38:37,969 --> 00:38:40,969
+mesela farklı dağılımların olduğu
+
+499
+00:38:40,969 --> 00:38:43,969
+ya da birebir aynı dağılımların olduğu
+
+500
+00:38:43,969 --> 00:38:46,969
+yani hepsinin IO burst olduğu
+
+501
+00:38:46,969 --> 00:38:49,969
+hepsinin CPU burst olduğu
+
+502
+00:38:49,969 --> 00:38:52,969
+ya da bir tane büyük CPU burst işlemin arkasında
+
+503
+00:38:52,969 --> 00:38:55,969
+küçük küçük CPU burstlere sahip
+
+504
+00:38:56,650 --> 00:38:59,650
+işlemlerin olduğu yapılarda ne olacak?
+
+505
+00:38:59,650 --> 00:39:02,650
+Otomatikman bekleme süreleri
+
+506
+00:39:02,650 --> 00:39:07,820
+çok yükselecek.
+
+507
+00:39:07,820 --> 00:39:10,820
+Buraya kadar bir sıkıntı var mı?
+
+508
+00:39:10,820 --> 00:39:13,820
+İki slide'de anlatırken özellikle Gökmen hocanın grubunda bir kopma oldu.
+
+509
+00:39:13,820 --> 00:39:16,820
+Bir kafanıza takılan anlamadığınız bir sıkıntı olan bir yer var mı?
+
+510
+00:39:16,820 --> 00:39:23,340
+Onu bir sorayım yoksa devam edeyim.
+
+511
+00:39:23,340 --> 00:39:26,340
+Çok önemli kimse bir şey yazmadı.
+
+512
+00:39:26,340 --> 00:39:29,340
+Biz arada kopmuyoruz herhalde değil mi?
+
+513
+00:39:30,019 --> 00:39:33,019
+Oradasınız değil mi arkadaşlar?
+
+514
+00:39:33,019 --> 00:39:36,019
+Evet hocam şu anda sorun yok.
+
+515
+00:39:36,019 --> 00:39:39,019
+Tamam okey bir ses duyalım.
+
+516
+00:39:39,019 --> 00:39:42,019
+Yaşam bilirtisi.
+
+517
+00:39:42,019 --> 00:39:45,019
+Süper.
+
+518
+00:39:45,019 --> 00:39:48,019
+Şimdi demin hatırlıyor musunuz burst grafiği
+
+519
+00:39:48,019 --> 00:39:51,019
+üzerine konuşmuştuk.
+
+520
+00:39:51,019 --> 00:39:54,019
+Farklı sistemlerde farklı olabilir ama genel fikir vermesi adına
+
+521
+00:39:54,019 --> 00:39:57,019
+kısa burstlerin yüksek olduğu bir grafik
+
+522
+00:39:57,699 --> 00:40:00,699
+üzerinden bir inceleme yapmıştık.
+
+523
+00:40:00,699 --> 00:40:03,699
+Şimdi bu algoritmda yani shortest job
+
+524
+00:40:03,699 --> 00:40:06,699
+first scheduling de yani en kısa iş
+
+525
+00:40:06,699 --> 00:40:09,699
+ilk çalıştırılır diyelim.
+
+526
+00:40:09,699 --> 00:40:12,699
+Çizergelemesinde ise şuna bakıyorsunuz.
+
+527
+00:40:12,699 --> 00:40:15,699
+Bu adamın bir sonraki burst'ı ne kadar?
+
+528
+00:40:15,699 --> 00:40:18,699
+Eğer kısa ise önce onu çalıştırayım.
+
+529
+00:40:18,699 --> 00:40:21,699
+Şimdi burada o grafikle
+
+530
+00:40:21,699 --> 00:40:24,699
+ilgili konuşurken de söylediğim bir sıkıntı var.
+
+531
+00:40:25,380 --> 00:40:28,380
+Siz bir işlemin bir sonraki burst'ın
+
+532
+00:40:28,380 --> 00:40:31,380
+ne kadar süreceğini bilmiyorsunuz.
+
+533
+00:40:31,380 --> 00:40:34,380
+Programı yazan adam da bilmiyor.
+
+534
+00:40:34,380 --> 00:40:37,380
+İşlem çalışmaya başladığı sırada da bunu net olarak bilmiyor.
+
+535
+00:40:37,380 --> 00:40:40,380
+Dolayısıyla bunu önceden bilme şansınız yok.
+
+536
+00:40:40,380 --> 00:40:43,380
+Buradaki sıkıntı o.
+
+537
+00:40:43,380 --> 00:40:46,380
+Fakat ne yapabiliriz?
+
+538
+00:40:46,380 --> 00:40:49,380
+Birkaç tane şey var.
+
+539
+00:40:49,380 --> 00:40:52,380
+En basit bu iş kime aitse o kullanıcıya
+
+540
+00:40:53,059 --> 00:40:56,059
+bu kafadan yanlış bilgi olacağına hepimiz hemfikiriz.
+
+541
+00:40:56,059 --> 00:40:59,059
+Dolayısıyla bir sonraki adım akılıyor.
+
+542
+00:40:59,059 --> 00:41:02,059
+Statistikten faydalanmak, tahminlemek.
+
+543
+00:41:02,059 --> 00:41:05,059
+Nasıl tahminleyeceğiz?
+
+544
+00:41:05,059 --> 00:41:08,059
+Önce şey yapalım.
+
+545
+00:41:08,059 --> 00:41:11,059
+Tahminleme arkasından geçelim.
+
+546
+00:41:11,059 --> 00:41:14,059
+Tahminlemeyi anlatsam bir sonraki sayede geçsek önce.
+
+547
+00:41:14,059 --> 00:41:17,059
+Şimdi ne yapabilirsiniz?
+
+548
+00:41:17,059 --> 00:41:20,059
+Geçmiş ve şu ana bağlı olarak
+
+549
+00:41:20,739 --> 00:41:23,739
+bir tahmin yapısı oluşturabilirsiniz.
+
+550
+00:41:23,739 --> 00:41:26,739
+Nasıl?
+
+551
+00:41:26,739 --> 00:41:29,739
+Bir sonraki burst'ı şu anki
+
+552
+00:41:29,739 --> 00:41:32,739
+ve bir önceki burst'a bağlı olarak
+
+553
+00:41:32,739 --> 00:41:35,739
+hesaplayabilirsiniz.
+
+554
+00:41:35,739 --> 00:41:38,739
+Burada t'n ve t'n'i görüyorsunuz.
+
+555
+00:41:38,739 --> 00:41:41,739
+t'n artı 1 ise
+
+556
+00:41:41,739 --> 00:41:44,739
+bir sonra predict edeceğiniz şey.
+
+557
+00:41:44,739 --> 00:41:47,739
+Bundan önce t'n artı 1 ise
+
+558
+00:41:48,420 --> 00:41:51,420
+bir sonra predict edeceğiniz şey.
+
+559
+00:41:51,420 --> 00:41:54,420
+Bundan arasında bir denge koyuyoruz.
+
+560
+00:41:54,420 --> 00:41:57,420
+Bunu %50 ile 50.
+
+561
+00:41:57,420 --> 00:42:00,420
+Hem geçmişe hem şu ana bağlı olarak yapabilirsiniz.
+
+562
+00:42:00,420 --> 00:42:03,420
+Daha çok geçmişe bağlı olarak yapabilirsiniz.
+
+563
+00:42:03,420 --> 00:42:06,420
+Farklı farklı şekillerde
+
+564
+00:42:06,420 --> 00:42:09,420
+belirleme şansınız var.
+
+565
+00:42:09,420 --> 00:42:12,420
+Bununla ilgili bir grafik vardı.
+
+566
+00:42:12,420 --> 00:42:15,420
+Mesela ilk anda bununla ilgili hiçbir fikriniz yok.
+
+567
+00:42:16,099 --> 00:42:19,099
+Kendi belirlediğiniz bir yerden başlayabilirsiniz.
+
+568
+00:42:19,099 --> 00:42:22,099
+Bu örnekte 10 ile başlanmış.
+
+569
+00:42:22,099 --> 00:42:25,099
+Ama o cycle'da
+
+570
+00:42:25,099 --> 00:42:28,099
+CPU burst 6 olarak gerçekleşmiş.
+
+571
+00:42:28,099 --> 00:42:31,099
+Dolayısıyla
+
+572
+00:42:31,099 --> 00:42:34,099
+lambda değerini 0.5
+
+573
+00:42:34,099 --> 00:42:37,099
+yani 1-2 aldığınız zaman ne olacak?
+
+574
+00:42:37,099 --> 00:42:40,099
+Aslında 10 birim sizin atadığınız kısım vardı.
+
+575
+00:42:40,099 --> 00:42:43,099
+Bunun yarısı 5, 6 birim vardı.
+
+576
+00:42:43,780 --> 00:42:46,780
+Bir sonraki tahmininiz 8 olacak.
+
+577
+00:42:46,780 --> 00:42:49,780
+Siz 8'i tahmin ettiniz ama
+
+578
+00:42:49,780 --> 00:42:52,780
+gerçekleşen 4 olmuş.
+
+579
+00:42:52,780 --> 00:42:55,780
+Dolayısıyla yine aynı mantıklı 8'in yarısı, 4'in yarısı.
+
+580
+00:42:55,780 --> 00:42:58,780
+Bir sonraki tahmininiz 6 olacak.
+
+581
+00:42:58,780 --> 00:43:01,780
+Bir sonraki tahmininiz 6 idi ve
+
+582
+00:43:01,780 --> 00:43:04,780
+şans eseri 6 tutmuş.
+
+583
+00:43:04,780 --> 00:43:07,780
+Dolayısıyla bir sonraki tahmininiz de 6 olacak bu yapıda.
+
+584
+00:43:07,780 --> 00:43:10,780
+Bir sonraki cycle'da siz 6'i tahmin ettiğinizde 4 oluşmuş.
+
+585
+00:43:11,460 --> 00:43:14,460
+Aynı hesabı yaparsınız.
+
+586
+00:43:14,460 --> 00:43:17,460
+6'ın yarısı 3, 4'ın yarısı 2, 5 diye tahmin edebilirsiniz.
+
+587
+00:43:17,460 --> 00:43:20,460
+Fakat bu sefer çok bambaşka bir şey olmuş.
+
+588
+00:43:20,460 --> 00:43:23,460
+13 birim oluşmuş.
+
+589
+00:43:23,460 --> 00:43:26,460
+5'in yarısı 2, 5'in yarısı 2.5
+
+590
+00:43:26,460 --> 00:43:29,460
+13'in yarısı 6.5
+
+591
+00:43:29,460 --> 00:43:32,460
+Sizin bir sonraki tahmininiz 9 olmuş.
+
+592
+00:43:32,460 --> 00:43:35,460
+Ama yine 13 birim gerçekleşmiş.
+
+593
+00:43:35,460 --> 00:43:38,460
+Dolayısıyla bir sonraki daha 13 birim olduğunda yavaş yavaş
+
+594
+00:43:39,139 --> 00:43:42,139
+Bir sonraki takipçilerin zaten
+
+595
+00:43:42,139 --> 00:43:45,139
+maviyle tahmini şeyle de
+
+596
+00:43:45,139 --> 00:43:48,139
+siyahla da gerçekleşeni görüyorsunuz.
+
+597
+00:43:48,139 --> 00:43:51,139
+Ve çeşitli anlarda yakınsadığını
+
+598
+00:43:51,139 --> 00:43:54,139
+özellikle de börs'ün devamlı şekilde
+
+599
+00:43:54,139 --> 00:43:57,139
+devamlı suretle
+
+600
+00:43:57,139 --> 00:44:00,139
+aynı seviyelerde, mertebede kaldığını
+
+601
+00:44:00,139 --> 00:44:03,139
+anlarda bunun yakınsadığını görüyorsunuz.
+
+602
+00:44:03,139 --> 00:44:06,139
+Yani bu şekilde bir tahminleme mümkün.
+
+603
+00:44:06,820 --> 00:44:09,820
+Bir dakika.
+
+604
+00:44:09,820 --> 00:44:12,820
+Ben yine yanlış gittim.
+
+605
+00:44:12,820 --> 00:44:15,820
+Şu anda gibi yanlış tuşa basmışım.
+
+606
+00:44:15,820 --> 00:44:18,820
+Sağ olun. Şimdi burada 4 tane işlemimiz var.
+
+607
+00:44:18,820 --> 00:44:21,820
+Birinin burst timeı 6, birinin ikisi P2'nin ikisi 8
+
+608
+00:44:21,820 --> 00:44:24,820
+P3'nki 7, P4'nki ise 3.
+
+609
+00:44:24,820 --> 00:44:27,820
+Şimdi buna baktığınız zaman
+
+610
+00:44:27,820 --> 00:44:30,820
+en kısanın 4 olduğunu biliyoruz.
+
+611
+00:44:30,820 --> 00:44:33,820
+Dolayısıyla önce 4'ü çalıştırıyoruz.
+
+612
+00:44:34,500 --> 00:44:37,500
+Akabinde P1 var, onu çalıştırıyoruz.
+
+613
+00:44:37,500 --> 00:44:40,500
+Sonra P3'ü, sonra P2'yi.
+
+614
+00:44:40,500 --> 00:44:43,500
+Şimdi bunun üzerinden baktığınız zaman
+
+615
+00:44:43,500 --> 00:44:46,500
+T0 anında bu 4 proses de zaten ready queue'da hazır.
+
+616
+00:44:46,500 --> 00:44:49,500
+Bunu biliyoruz.
+
+617
+00:44:49,500 --> 00:44:52,500
+P4'ün bekleme süresi zaten 0 olacak.
+
+618
+00:44:52,500 --> 00:44:55,500
+Burada grafikten gördüğünüz üzere.
+
+619
+00:44:55,500 --> 00:44:58,500
+P1, 3, 1'i beklemiş. P2 hem P4'ı hem P1'i hem P3'i beklemiş.
+
+620
+00:44:58,500 --> 00:45:01,500
+Yani 16, 1'i beklemiş.
+
+621
+00:45:02,179 --> 00:45:05,179
+P4 ve P1'i beklemiş. Yani toplam 9 birini beklemiş.
+
+622
+00:45:05,179 --> 00:45:08,179
+Bunun da ortalaması 7 ediyor.
+
+623
+00:45:08,179 --> 00:45:11,179
+Average time üzerinden konuşacak olursak.
+
+624
+00:45:11,179 --> 00:45:14,179
+Burayı zaten konuştuk. Prediction'ı da konuştuk.
+
+625
+00:45:14,179 --> 00:45:19,619
+Bu demin konuştuğumuz
+
+626
+00:45:19,619 --> 00:45:22,619
+aslında exponential averaging'in
+
+627
+00:45:22,619 --> 00:45:25,619
+detail formülü hani
+
+628
+00:45:25,619 --> 00:45:28,619
+bir önceki slide'de gördüğünüz
+
+629
+00:45:28,619 --> 00:45:31,619
+grafiğin matematiksel hali.
+
+630
+00:45:32,300 --> 00:45:35,300
+Burada alpha değerini 0 seçerseniz
+
+631
+00:45:35,300 --> 00:45:38,300
+geçmişe hiç aldırmadığınızı.
+
+632
+00:45:38,300 --> 00:45:41,300
+Hani bu cycle'da adam 9 birim kullandıysa
+
+633
+00:45:41,300 --> 00:45:44,300
+bir sonraki cycle'da da 9 birim kullanacak diyorsunuz.
+
+634
+00:45:44,300 --> 00:45:47,300
+Alpha'yı 1 seçerseniz de
+
+635
+00:45:47,300 --> 00:45:56,730
+yanlış mı söyledim ya?
+
+636
+00:45:56,730 --> 00:45:59,730
+Yoldur. Alpha'yı 1 seçerseniz de
+
+637
+00:45:59,730 --> 00:46:02,730
+en son kullanılan neyse hep onunla devam edecek.
+
+638
+00:46:02,730 --> 00:46:05,730
+Onunla devam edecek.
+
+639
+00:46:06,409 --> 00:46:09,409
+Burada hani alpha'yı ne seçtiğinizde nasıl olacak?
+
+640
+00:46:09,409 --> 00:46:12,409
+Aslında o sistem içerisindeki işlemlerin
+
+641
+00:46:12,409 --> 00:46:15,409
+karakteristiği ve yapısıyla alakalı.
+
+642
+00:46:15,409 --> 00:46:18,409
+Doğru bir alpha değeri otomatikman yok.
+
+643
+00:46:18,409 --> 00:46:21,409
+Sizin sistemi birbirinden bağımsız
+
+644
+00:46:21,409 --> 00:46:24,409
+işlemlerden ve burstlerden oluşursa
+
+645
+00:46:24,409 --> 00:46:27,409
+o zaman geçmişe çok bakmamak daha mantıklı.
+
+646
+00:46:27,409 --> 00:46:30,409
+Ama geçmişe dayalı bir burst yapısı varsa
+
+647
+00:46:30,409 --> 00:46:33,409
+o zaman da ona göre bir alpha değeri belirlemek lazım.
+
+648
+00:46:34,090 --> 00:46:37,090
+Evet.
+
+649
+00:46:37,090 --> 00:46:43,159
+Hem o olsun hem bu olsun.
+
+650
+00:46:43,159 --> 00:46:46,159
+Şimdi bir başka çizer gelme algoritması
+
+651
+00:46:46,159 --> 00:46:49,159
+kalan zamanı en az olan
+
+652
+00:46:49,159 --> 00:46:52,159
+yani burst zamanı içerisinde
+
+653
+00:46:52,159 --> 00:46:55,159
+en az burst zamanı kalan
+
+654
+00:46:55,159 --> 00:46:58,159
+işlem çalıştırmak.
+
+655
+00:46:58,159 --> 00:47:01,159
+Şimdi normalde burada burst timelere görüyorsunuz
+
+656
+00:47:01,159 --> 00:47:04,159
+8, 4, 9, 5 şeklinde.
+
+657
+00:47:04,840 --> 00:47:07,840
+Diyelim ki 8 birim olan işlem
+
+658
+00:47:07,840 --> 00:47:10,840
+bir müddet işlemci de çalıştırıldı.
+
+659
+00:47:10,840 --> 00:47:13,840
+Ondan sonra yeni bir işlem geldi.
+
+660
+00:47:13,840 --> 00:47:16,840
+Ne yapılması lazım yeniden karar verilmesi lazım.
+
+661
+00:47:16,840 --> 00:47:19,840
+Bu noktada burst time 8'di.
+
+662
+00:47:19,840 --> 00:47:22,840
+Biz de 2 birimi çalıştırdık.
+
+663
+00:47:22,840 --> 00:47:25,840
+6 birim kaldı bunun üzerinden devam ediyoruz.
+
+664
+00:47:25,840 --> 00:47:28,840
+Remaining time'dan kastımız bu yani.
+
+665
+00:47:28,840 --> 00:47:31,840
+Şimdi shortest job first'ü
+
+666
+00:47:32,519 --> 00:47:35,519
+zaten shortest job first'den farklı olabilmesi
+
+667
+00:47:35,519 --> 00:47:38,519
+ve makul olabilmesi için preemptive olarak
+
+668
+00:47:38,519 --> 00:47:41,519
+çalıştırmanız lazım.
+
+669
+00:47:41,519 --> 00:47:44,519
+Bununla preemptive çalıştırırsanız zaten shortest job first olur.
+
+670
+00:47:44,519 --> 00:47:47,519
+Deminki anlattıklarımıza ve tarifi dikkate alırsanız.
+
+671
+00:47:47,519 --> 00:47:50,519
+Preemptive çalıştıracağımız için bu şu demek
+
+672
+00:47:50,519 --> 00:47:53,519
+artık sisteme Q'da
+
+673
+00:47:53,519 --> 00:47:56,519
+TS'ı falanında hepsi bir arada vardı
+
+674
+00:47:56,519 --> 00:47:59,519
+ya da bu sırayla geldi falan gibi konuşurduk.
+
+675
+00:48:00,199 --> 00:48:03,199
+Yani bu işlemin bu sistemde
+
+676
+00:48:03,199 --> 00:48:06,199
+ready Q'ya girdiği zamanı söylüyoruz.
+
+677
+00:48:06,199 --> 00:48:09,199
+Bu tabloya bakacak olursanız 4 tane işlem var yine.
+
+678
+00:48:09,199 --> 00:48:12,199
+P1 0 anında gelmiş ve burst'ü 8.
+
+679
+00:48:12,199 --> 00:48:15,199
+P2 1 anında gelmiş burst'ü 4.
+
+680
+00:48:15,199 --> 00:48:18,199
+P3 2 anında gelmiş burst'ü 9.
+
+681
+00:48:18,199 --> 00:48:21,199
+P4 3 anında gelmiş burst'ü 5.
+
+682
+00:48:21,199 --> 00:48:24,199
+Şimdi 0 anında zaten
+
+683
+00:48:24,199 --> 00:48:27,199
+P1'den başka kimse yok burada.
+
+684
+00:48:27,880 --> 00:48:30,880
+Zaten ben P1'i çalıştırmaya başlayacağım.
+
+685
+00:48:30,880 --> 00:48:33,880
+Ve fakat preemptive scheduling'i hatırlayın
+
+686
+00:48:33,880 --> 00:48:36,880
+o 4 tane madde vardı.
+
+687
+00:48:36,880 --> 00:48:39,880
+Eğer ready Q'ya bir işlem geldiğinde çalışıyorsak
+
+688
+00:48:39,880 --> 00:48:42,880
+o zaman preemptive olmaktan bahsediyorduk.
+
+689
+00:48:42,880 --> 00:48:45,880
+Dolayısıyla 1 biriminde P2
+
+690
+00:48:45,880 --> 00:48:48,880
+bu sisteme geldiği için ne yapıyor olmamız lazım.
+
+691
+00:48:48,880 --> 00:48:51,880
+Scheduler'ın devreye girmesi
+
+692
+00:48:51,880 --> 00:48:54,880
+ve bir karar vermesi lazım.
+
+693
+00:48:55,559 --> 00:48:58,559
+Bir sonraki cycle'da kim çalıştıracağım?
+
+694
+00:48:58,559 --> 00:49:01,559
+Bir anında biz P1'i
+
+695
+00:49:01,559 --> 00:49:04,559
+zaten bir birim çalıştırmış durumdayız.
+
+696
+00:49:04,559 --> 00:49:07,559
+Dolayısıyla burst time'ımız kalan burst time'ımız
+
+697
+00:49:07,559 --> 00:49:10,559
+8 değil 7 artık.
+
+698
+00:49:10,559 --> 00:49:13,559
+P2'nin ise burst time'ı 4.
+
+699
+00:49:13,559 --> 00:49:16,559
+Dolayısıyla P2'yi çalıştırmaya başlayacağım.
+
+700
+00:49:16,559 --> 00:49:19,559
+Ama bir birim sonra 2 anında
+
+701
+00:49:19,559 --> 00:49:22,559
+ne olacak P3 sisteme geldi.
+
+702
+00:49:23,239 --> 00:49:26,239
+Burada P1 var, P3 var, çalışmakta olanda P2 var.
+
+703
+00:49:26,239 --> 00:49:29,239
+P2'yi ne yapacağım?
+
+704
+00:49:29,239 --> 00:49:32,239
+Devam ettireceğim çünkü burst time olarak
+
+705
+00:49:32,239 --> 00:49:36,489
+remaining burst time olarak zaten 3'e indi.
+
+706
+00:49:36,489 --> 00:49:39,489
+Bir birim daha çalışacak P4
+
+707
+00:49:39,489 --> 00:49:42,489
+gelecek o sırada 3.
+
+708
+00:49:42,489 --> 00:49:45,489
+anda.
+
+709
+00:49:45,489 --> 00:49:48,489
+Onun geldiği zamanki burst time'ı 5
+
+710
+00:49:48,489 --> 00:49:51,489
+P3'ün hala 9, P1'in ise 7.
+
+711
+00:49:52,170 --> 00:49:55,170
+P2'nin kalan zamanı 2 birim.
+
+712
+00:49:55,170 --> 00:49:58,170
+Zaten en kısası hala o.
+
+713
+00:49:58,170 --> 00:50:01,170
+Dolayısıyla P2 çalışmaya devam edecek ve kendini tamamlayacak.
+
+714
+00:50:01,170 --> 00:50:04,170
+Ne zaman? 5. birimde.
+
+715
+00:50:04,170 --> 00:50:07,170
+5. birimde P2 bu listeden çıktığını düşünün.
+
+716
+00:50:07,170 --> 00:50:10,170
+Geriye kalan ne var?
+
+717
+00:50:10,170 --> 00:50:13,170
+P4 var, 5 birim, P3 var,
+
+718
+00:50:13,170 --> 00:50:16,170
+9 birim, P1 var, 8 birim.
+
+719
+00:50:16,170 --> 00:50:19,170
+7 birim özür dilerim.
+
+720
+00:50:19,849 --> 00:50:22,849
+Dolayısıyla bunların arasında en kısa olan zaten
+
+721
+00:50:22,849 --> 00:50:25,849
+kalan süre açısından P4.
+
+722
+00:50:25,849 --> 00:50:28,849
+Dolayısıyla P4 çalıştırılacak.
+
+723
+00:50:28,849 --> 00:50:31,849
+Sisteme başka bir işlem gelmediği için
+
+724
+00:50:31,849 --> 00:50:34,849
+herhangi bir başka değişiklik yok olmadığı için
+
+725
+00:50:34,849 --> 00:50:37,849
+P4 tamamlayacak kendini.
+
+726
+00:50:37,849 --> 00:50:40,849
+P4 kendini tamamladığı zaman yani
+
+727
+00:50:40,849 --> 00:50:43,849
+10. zaman biriminde
+
+728
+00:50:43,849 --> 00:50:46,849
+geriye ne kaldı? P1 ve P3.
+
+729
+00:50:47,530 --> 00:50:50,530
+7 birimle P1.
+
+730
+00:50:50,530 --> 00:50:53,530
+Dolayısıyla P1 de kendini tamamlayacak.
+
+731
+00:50:53,530 --> 00:50:58,769
+Sonunda da P3 kendini tamamlayacak.
+
+732
+00:50:58,769 --> 00:51:01,769
+Böyle baktığınız zaman waiting time'lara
+
+733
+00:51:01,769 --> 00:51:04,769
+bunu nasıl hesaplayacağız?
+
+734
+00:51:04,769 --> 00:51:07,769
+Waiting time'ı ready queue'da
+
+735
+00:51:07,769 --> 00:51:10,769
+kaldığı ve beklediği süre olarak.
+
+736
+00:51:10,769 --> 00:51:13,769
+Bunu unutmayın. Dolayısıyla
+
+737
+00:51:13,769 --> 00:51:16,769
+P1 için ilk başta
+
+738
+00:51:17,449 --> 00:51:20,449
+çalışmaya başlıyor zaten. İlk çalışmaya başladığında
+
+739
+00:51:20,449 --> 00:51:23,449
+bir bekleme süresi yok ama 1'de kesiyoruz.
+
+740
+00:51:23,449 --> 00:51:26,449
+Sonra bir dahaki çalışması 10. Dolayısıyla
+
+741
+00:51:26,449 --> 00:51:29,449
+10 ile 1 arasında 9 birim bekledi.
+
+742
+00:51:29,449 --> 00:51:32,449
+Buna hesaba katıyoruz.
+
+743
+00:51:32,449 --> 00:51:35,449
+P2 1'de geldi ve 1'de çalışmaya başladı hemen.
+
+744
+00:51:35,449 --> 00:51:38,449
+Dolayısıyla hiçbir beklemesi olmadı.
+
+745
+00:51:38,449 --> 00:51:41,449
+1-1 oradan gidiyor.
+
+746
+00:51:41,449 --> 00:51:44,449
+P3 2. birimde geldi ama 17'de çalıştı.
+
+747
+00:51:45,130 --> 00:51:48,130
+P4 ise
+
+748
+00:51:48,130 --> 00:51:51,130
+3. birimde geldi ama 5. birim zamanında çalıştı.
+
+749
+00:51:51,130 --> 00:51:54,130
+Dolayısıyla onun beklemesi de 2.
+
+750
+00:51:54,130 --> 00:51:57,130
+Bunları yazıp toplayıp böldüğünüz zaman
+
+751
+00:51:57,130 --> 00:52:02,369
+6.30'u elde ediyorsunuz.
+
+752
+00:52:02,369 --> 00:52:05,369
+Mola verelim mi? Duralım mı?
+
+753
+00:52:05,369 --> 00:52:08,369
+Devam edelim mi?
+
+754
+00:52:08,369 --> 00:52:11,369
+Priority'de anlat bence ondan sonra duruyoruz.
+
+755
+00:52:11,369 --> 00:52:14,369
+Şimdi bir başka yöntem
+
+756
+00:52:15,050 --> 00:52:18,050
+Aslında önceliklendirmek.
+
+757
+00:52:18,050 --> 00:52:21,050
+Priority Scheduling.
+
+758
+00:52:21,050 --> 00:52:24,050
+Priority Scheduling'de
+
+759
+00:52:24,050 --> 00:52:27,050
+farklı farklı şeylere göre
+
+760
+00:52:27,050 --> 00:52:30,050
+önceliklendirebilirsiniz. Misal demin konuştuğumuz
+
+761
+00:52:30,050 --> 00:52:33,050
+shortest job first bir
+
+762
+00:52:33,050 --> 00:52:36,050
+önceliklendirme yöntemi aslında.
+
+763
+00:52:36,050 --> 00:52:39,050
+Shortest remaining time
+
+764
+00:52:39,050 --> 00:52:42,050
+bir önceliklendirme yöntemi.
+
+765
+00:52:42,730 --> 00:52:45,730
+Ama bunun dışında işlemlere
+
+766
+00:52:45,730 --> 00:52:48,730
+farklı şekiller dedi. Mesela integer sayılar
+
+767
+00:52:48,730 --> 00:52:51,730
+atayarak farklı değerlerde farklı
+
+768
+00:52:51,730 --> 00:52:54,730
+skalata işte 1'in en yüksek olduğu
+
+769
+00:52:54,730 --> 00:52:57,730
+ya da işte 100'ün en yüksek önceliğe sahip olduğu
+
+770
+00:52:57,730 --> 00:53:00,730
+artan ya da azalan şekilde
+
+771
+00:53:00,730 --> 00:53:03,730
+öncelik değerine sahip önceliği ifade eden
+
+772
+00:53:03,730 --> 00:53:06,730
+değerlerin atıldığı farklı bir şey de
+
+773
+00:53:06,730 --> 00:53:09,730
+oluşturabilirsiniz. Bu farklı misal
+
+774
+00:53:10,409 --> 00:53:13,409
+yani birden fazla kullanacağın farklı
+
+775
+00:53:13,409 --> 00:53:16,409
+sistemlerin olduğu bir yapıda parana göre
+
+776
+00:53:16,409 --> 00:53:19,409
+önceliklendirme de olabilir. Yetkiye göre
+
+777
+00:53:19,409 --> 00:53:22,409
+önceliklendirme de olabilir. Yani bir sistemdeki
+
+778
+00:53:22,409 --> 00:53:25,409
+yüksek öncelikli kişilerin mesela Edmin
+
+779
+00:53:25,409 --> 00:53:28,409
+grubundaki insanların işlerine önceliğin
+
+780
+00:53:28,409 --> 00:53:31,409
+fazla verilmesi olabilir. Standart
+
+781
+00:53:31,409 --> 00:53:34,409
+kullanıcılara önceliğin düşük verilmesi
+
+782
+00:53:34,409 --> 00:53:37,409
+olabilir. Farzı misal eskiden
+
+783
+00:53:38,090 --> 00:53:41,090
+özellikle öğrencilerin kullanması için
+
+784
+00:53:41,090 --> 00:53:44,090
+açtığımız Linux makinalarda bizim de
+
+785
+00:53:44,090 --> 00:53:47,090
+kullanıcılarımız vardı. Öğrencinin önceliği
+
+786
+00:53:47,090 --> 00:53:50,090
+farklı, hocanın önceliği farklı, Admin'in
+
+787
+00:53:50,090 --> 00:53:55,869
+önceliği farklı seviyelere göre oluşturabiliriz.
+
+788
+00:53:58,869 --> 00:54:01,869
+Burada önceliklendirdiğiniz
+
+789
+00:54:01,869 --> 00:54:04,869
+zaman birkaç tane
+
+790
+00:54:04,869 --> 00:54:07,869
+nokta var dikkat etmemiz gereken ya da
+
+791
+00:54:08,550 --> 00:54:11,550
+starvation. Starvation'a ayrıca zaten tekrar
+
+792
+00:54:11,550 --> 00:54:14,550
+senkronizasyonda vesaire de karşımıza çıkacak ve
+
+793
+00:54:14,550 --> 00:54:17,550
+konuşacağımız bir şey ama buradaki starvation
+
+794
+00:54:17,550 --> 00:54:20,550
+CPU time açısından starvation.
+
+795
+00:54:20,550 --> 00:54:23,550
+Yani sistemde
+
+796
+00:54:23,550 --> 00:54:26,550
+farz misal 1'den 100'e kadar
+
+797
+00:54:26,550 --> 00:54:29,550
+öncelikleriniz var. 1 en
+
+798
+00:54:29,550 --> 00:54:32,550
+önceliklisi, 100 en düşük önceliklisi.
+
+799
+00:54:32,550 --> 00:54:35,550
+Sistemde şöyle bir şey her zaman olabilir.
+
+800
+00:54:36,230 --> 00:54:39,230
+En düşük önceliğe yakın
+
+801
+00:54:39,230 --> 00:54:42,230
+önceliğe sahip bir işleminiz var.
+
+802
+00:54:42,230 --> 00:54:45,230
+Çalışmak için bekliyor ve fakat o sırada
+
+803
+00:54:45,230 --> 00:54:48,230
+sistem devamlı yüksek öncelikli işlemler üretiyor.
+
+804
+00:54:48,230 --> 00:54:51,230
+Yani kullanıcılar yeni işlemler oluşturuyorlar
+
+805
+00:54:51,230 --> 00:54:54,230
+ve bunların hepsi yüksek öncelik.
+
+806
+00:54:54,230 --> 00:54:57,230
+Bu durumda ne olacak?
+
+807
+00:54:57,230 --> 00:55:00,230
+Sisteme otomatikman
+
+808
+00:55:00,230 --> 00:55:03,230
+yüksek öncelikli olan işlemlere çalışacak.
+
+809
+00:55:03,909 --> 00:55:06,909
+Yatacak. Ne kadar yatacak?
+
+810
+00:55:06,909 --> 00:55:09,909
+Valla onu kimse bilemiyor. Uzun süre yatacak kesin.
+
+811
+00:55:09,909 --> 00:55:12,909
+Dolayısıyla işlemciyi kullanamadığı için orada
+
+812
+00:55:12,909 --> 00:55:15,909
+bir starvation oluşma ihtimali çok yüksek.
+
+813
+00:55:15,909 --> 00:55:20,539
+Bunu nasıl çözüyoruz?
+
+814
+00:55:20,539 --> 00:55:23,539
+Bunun için mesela aging diye bir yöntem kullanabilirsiniz.
+
+815
+00:55:23,539 --> 00:55:26,539
+Yapılacak olan şey ne? Aging de ya da yapılan ne?
+
+816
+00:55:26,539 --> 00:55:29,539
+Şimdi belli bir süre geçti. Sizin düşük öncelikli işleminiz
+
+817
+00:55:29,539 --> 00:55:32,539
+hala çalışmadı. O belli bir süre artık
+
+818
+00:55:33,219 --> 00:55:36,219
+geçince
+
+819
+00:55:36,219 --> 00:55:39,219
+ne yapıyorsunuz? O düşük öncelikli işlemin
+
+820
+00:55:39,219 --> 00:55:42,219
+önceliğini bir tık yükseltiyorsunuz.
+
+821
+00:55:42,219 --> 00:55:45,219
+Bu sistemdeki bu işlem hala çalışmadı.
+
+822
+00:55:45,219 --> 00:55:48,219
+Hala sıra gelmedi. Belli bir zaman daha geçti.
+
+823
+00:55:48,219 --> 00:55:51,219
+Bir daha yükseltiyorsunuz. Biraz daha zaman geçti.
+
+824
+00:55:51,219 --> 00:55:54,219
+Bir daha yükseltiyorsunuz. Bir daha.
+
+825
+00:55:54,219 --> 00:55:57,219
+Zaten sonunda yüksele yüksele nirvana'ya erecek.
+
+826
+00:55:57,219 --> 00:56:00,219
+En yüksek öncelik seviyesine gelecek.
+
+827
+00:56:00,900 --> 00:56:03,900
+Yöntem ya da çözüm bu ortaya atılan.
+
+828
+00:56:03,900 --> 00:56:09,050
+Aging dediğimiz.
+
+829
+00:56:09,050 --> 00:56:12,050
+Şimdi örneğine
+
+830
+00:56:12,050 --> 00:56:16,389
+Sen bilirsin örneğine.
+
+831
+00:56:16,389 --> 00:56:19,389
+Burada bir duralım.
+
+832
+00:56:19,389 --> 00:56:22,389
+Yapış dışarı oldu. Bir tıkanıyor.
+
+833
+00:56:22,389 --> 00:56:25,389
+Şimdilik bir ara verelim arkadaşlar. Saat kaç? 55.
+
+834
+00:56:25,389 --> 00:56:28,389
+5 gece başlarız. 10 gece başlayalım.
+
+835
+00:56:28,389 --> 00:56:31,389
+Zaten 10 dakika olacak. 3-3 dakika var.
+
+836
+01:10:36,170 --> 01:10:39,170
+Evet. Devam ediyoruz arkadaşlar.
+
+837
+01:10:39,170 --> 01:10:42,170
+Saldığımız yerden devam ediyoruz arkadaşlar. Şimdi
+
+838
+01:10:42,170 --> 01:10:45,170
+öncelikle çizergeleme ile konuşuyorduk.
+
+839
+01:10:45,170 --> 01:10:48,170
+Şey yapısından bahsettik.
+
+840
+01:10:48,170 --> 01:10:51,170
+Öncelik değeri atanmasından bahsettik.
+
+841
+01:10:51,170 --> 01:10:54,170
+Şimdi burada bir senaryo var.
+
+842
+01:10:54,170 --> 01:10:57,170
+5 tane işlemimiz var.
+
+843
+01:10:57,170 --> 01:11:00,170
+Farklı börs zamanlara sahip.
+
+844
+01:11:00,170 --> 01:11:03,170
+Bir de öncelik değerleri var. 1'den 5'e kadar zaten.
+
+845
+01:11:03,850 --> 01:11:06,850
+En yüksek öncelik 1 ile ifade ediliyor.
+
+846
+01:11:06,850 --> 01:11:09,850
+En düşük öncelik de 5 ile ifade ediliyor.
+
+847
+01:11:09,850 --> 01:11:12,850
+Şimdi burada deminki örneklik arrival time durumu yok.
+
+848
+01:11:12,850 --> 01:11:15,850
+Bunların tamamı
+
+849
+01:11:15,850 --> 01:11:18,850
+t0 anında zaten ready queue'da hazır durumdalar.
+
+850
+01:11:18,850 --> 01:11:21,850
+Ve bekliyorlar.
+
+851
+01:11:21,850 --> 01:11:24,850
+Baktığımız zaman pe2'nin zaten önceliği
+
+852
+01:11:24,850 --> 01:11:27,850
+en yüksek 1 değerine sahip. Dolayısıyla pe2 çalıştıracak.
+
+853
+01:11:27,850 --> 01:11:30,850
+Burst timer'da 1 olduğu için zaten hemen bitecek.
+
+854
+01:11:31,529 --> 01:11:34,529
+Şu anda sistemde ne var?
+
+855
+01:11:34,529 --> 01:11:37,529
+P1, P3, P4 ve P5 var.
+
+856
+01:11:37,529 --> 01:11:40,529
+Bunlar arasında en yüksek öncelik P5'in 2 değerine sahip.
+
+857
+01:11:40,529 --> 01:11:43,529
+Dolayısıyla o andan itibaren P5 çalıştıracağız.
+
+858
+01:11:43,529 --> 01:11:46,529
+Ne kadar? 5 birim zaman.
+
+859
+01:11:46,529 --> 01:11:49,529
+T6'ya geldiğimiz zaman
+
+860
+01:11:49,529 --> 01:11:52,529
+sistemde P1, P3 ve P4 var.
+
+861
+01:11:52,529 --> 01:11:55,529
+Priority'lere baktığımız zaman
+
+862
+01:11:55,529 --> 01:11:58,529
+en yüksek öncelik 3 değeri ile
+
+863
+01:11:59,210 --> 01:12:02,210
+P1'e ait. Dolayısıyla P1'i çalıştıracağız.
+
+864
+01:12:02,210 --> 01:12:05,210
+Onun bursta 10.
+
+865
+01:12:05,210 --> 01:12:08,210
+T16'ya geldiğimiz zaman
+
+866
+01:12:08,210 --> 01:12:11,210
+sistemde P3 ve P4 kaldı.
+
+867
+01:12:11,210 --> 01:12:14,210
+P3 4 öncelik değerine sahip. Dolayısıyla
+
+868
+01:12:14,210 --> 01:12:17,210
+daha öncelik çalıştırılacak.
+
+869
+01:12:17,210 --> 01:12:20,210
+Burst timer 2 o 2 birim bittikten sonra da
+
+870
+01:12:20,210 --> 01:12:23,210
+sistemde kalan en son kalan P4'ü çalıştıracağız.
+
+871
+01:12:23,210 --> 01:12:26,210
+Şimdi bunun üzerinden baktığımız zaman
+
+872
+01:12:26,890 --> 01:12:29,890
+P5'in beklemesi 1 birim
+
+873
+01:12:29,890 --> 01:12:32,890
+P1'in beklemesi 6 birim
+
+874
+01:12:32,890 --> 01:12:35,890
+P3'ünki 16 birim
+
+875
+01:12:35,890 --> 01:12:38,890
+P4'ünki 18 birim
+
+876
+01:12:38,890 --> 01:12:41,890
+41 birim ediyor.
+
+877
+01:12:41,890 --> 01:12:44,890
+5'e böldüğünüz zaman da zaten 8.2
+
+878
+01:12:44,890 --> 01:12:47,890
+yani buradaki average hesabı da
+
+879
+01:12:47,890 --> 01:12:50,890
+oradan geliyor.
+
+880
+01:12:50,890 --> 01:12:55,229
+Bir başka çizer geleme round robin
+
+881
+01:12:55,909 --> 01:12:58,909
+çizer geleme round robin de aslında
+
+882
+01:12:58,909 --> 01:13:01,909
+temel olarak yaptığımız şey şu.
+
+883
+01:13:01,909 --> 01:13:04,909
+Bir zaman dilimi belirliyoruz ve
+
+884
+01:13:04,909 --> 01:13:07,909
+her bir işleme, sistemdeki her bir işleme
+
+885
+01:13:07,909 --> 01:13:10,909
+bu zaman dilimi kadar işlemci kullandırıyoruz.
+
+886
+01:13:10,909 --> 01:13:13,909
+Yani aslında bir
+
+887
+01:13:13,909 --> 01:13:16,909
+adil olma fare olma durumu var.
+
+888
+01:13:16,909 --> 01:13:19,909
+Sistemde 5 tane işlemin varsa belirlediğim
+
+889
+01:13:19,909 --> 01:13:22,909
+time quantum kadar önce 1 tanesini sonra
+
+890
+01:13:23,590 --> 01:13:26,590
+4. tanesini 4. tanesini 5. tanesini çalıştırıyorum.
+
+891
+01:13:26,590 --> 01:13:29,590
+Eğer bitmediyse 1'i tekrar çalıştırıyorum
+
+892
+01:13:29,590 --> 01:13:32,590
+2'yi tekrar çalıştırıyorum.
+
+893
+01:13:32,590 --> 01:13:35,590
+3'ü böyle döne döne gittiğimiz bir yapı var.
+
+894
+01:13:35,590 --> 01:13:38,590
+Şimdi buradaki time quantum değerini nasıl belirliyoruz?
+
+895
+01:13:38,590 --> 01:13:41,590
+Slide'da milisaniyeler cinsinden yazıyor
+
+896
+01:13:41,590 --> 01:13:44,590
+ama ve lakin bunu şey olarak düşünün
+
+897
+01:13:44,590 --> 01:13:47,590
+bu aslında biraz da işlemcinizin
+
+898
+01:13:47,590 --> 01:13:50,590
+yetenekleri sisteminizin yetenekleriyle alakalı.
+
+899
+01:13:51,270 --> 01:13:54,270
+Eğer milisaniyede bir instruction çalıştırıyorsa
+
+900
+01:13:54,270 --> 01:13:57,270
+bu 10 milisaniye bazında
+
+901
+01:13:57,270 --> 01:14:00,270
+bir şey yapmak çok mantıklı değil ama
+
+902
+01:14:00,270 --> 01:14:03,270
+daha hızlı bir işlemciniz varsa daha farklı çalışıyorsa
+
+903
+01:14:03,270 --> 01:14:06,270
+o zaman bu süreyi daha kısa bile yapabilirsiniz.
+
+904
+01:14:11,159 --> 01:14:14,159
+Şimdi
+
+905
+01:14:14,159 --> 01:14:17,159
+Q değeri, time quantum değerini seçerken
+
+906
+01:14:17,159 --> 01:14:20,159
+kriterlerden bir tanesi
+
+907
+01:14:20,840 --> 01:14:23,840
+bir diğeri de şu
+
+908
+01:14:23,840 --> 01:14:26,840
+eğer time quantum değerini çok uzun seçerseniz
+
+909
+01:14:26,840 --> 01:14:29,840
+yani sisteminizdeki
+
+910
+01:14:29,840 --> 01:14:32,840
+işlemlerin maksimum burst
+
+911
+01:14:32,840 --> 01:14:35,840
+süresine yakın bir şeyi seçerseniz
+
+912
+01:14:35,840 --> 01:14:38,840
+bu zaten round-robin olmaz daha çok
+
+913
+01:14:38,840 --> 01:14:41,840
+first in first out olur.
+
+914
+01:14:41,840 --> 01:14:44,840
+Yani gelen
+
+915
+01:14:44,840 --> 01:14:47,840
+çalışacak zaten time quantum değeri bitmediğinden
+
+916
+01:14:48,520 --> 01:14:51,520
+bitecek. Dolayısıyla bir sonraki çalıştırılacak.
+
+917
+01:14:51,520 --> 01:14:54,520
+Bir sonraki çalışmaya başlayacak
+
+918
+01:14:54,520 --> 01:14:57,520
+belki time quantum'dan daha uzun olacak ama
+
+919
+01:14:57,520 --> 01:15:00,520
+çoğunlukla çalışacak. Sonra bir diğeri
+
+920
+01:15:00,520 --> 01:15:03,520
+time quantum'dan daha kısa olduğu için çalışacak
+
+921
+01:15:03,520 --> 01:15:06,520
+ve sistemden çıkacak. Dolayısıyla çok da öyle
+
+922
+01:15:06,520 --> 01:15:09,520
+hani en tane işlem arasında cpu
+
+923
+01:15:09,520 --> 01:15:12,520
+1 bölü n mantığıyla n parçayı
+
+924
+01:15:12,520 --> 01:15:15,520
+böyle bir parça verecek şekilde çalıştırıyor olmayacaksınız
+
+925
+01:15:16,199 --> 01:15:19,199
+ilk geleni çalıştırayım zaten bitsin
+
+926
+01:15:19,199 --> 01:15:22,199
+gitsin olacak. Eğer bu time quantum
+
+927
+01:15:22,199 --> 01:15:25,199
+değerini çok küçük seçerseniz
+
+928
+01:15:25,199 --> 01:15:28,199
+şöyle bir sıkıntı var. Bu yapıda ne yapıyoruz?
+
+929
+01:15:28,199 --> 01:15:31,199
+En tane işlem arasında işlemci zamanını
+
+930
+01:15:31,199 --> 01:15:34,199
+paylaştırıyoruz. Dolayısıyla
+
+931
+01:15:34,199 --> 01:15:37,199
+her time quantum'da duruyoruz
+
+932
+01:15:37,199 --> 01:15:40,199
+başka bir işlemci'deki işlemi
+
+933
+01:15:40,199 --> 01:15:43,199
+alıyoruz diyoruz ki sen dur
+
+934
+01:15:43,880 --> 01:15:46,880
+readyq'dan bir sonraki işlemi alıp işlemciye
+
+935
+01:15:46,880 --> 01:15:49,880
+yerleştiriyoruz. Yani
+
+936
+01:15:49,880 --> 01:15:52,880
+scheduling yapıyoruz, dispatching yapıyoruz. Yani
+
+937
+01:15:52,880 --> 01:15:55,880
+context switch yapıyoruz. Şimdi context switch zaten
+
+938
+01:15:55,880 --> 01:15:58,880
+ekstra bir zaman. Yani hedef eminerek
+
+939
+01:15:58,880 --> 01:16:01,880
+iş yapmadığımız an. O aslında
+
+940
+01:16:01,880 --> 01:16:04,880
+işlemimizi çalıştırabilmek için
+
+941
+01:16:04,880 --> 01:16:07,880
+yaptığımız ekstra işe harcadığımız zaman.
+
+942
+01:16:07,880 --> 01:16:10,880
+Dolayısıyla şey değil
+
+943
+01:16:11,560 --> 01:16:14,560
+çok fazla olması ya da çok uzun
+
+944
+01:16:14,560 --> 01:16:17,560
+olmasını istemediğimiz süre
+
+945
+01:16:17,560 --> 01:16:20,560
+zaten şey söyledik context switch süresi
+
+946
+01:16:20,560 --> 01:16:23,560
+kısa olmak zorunda ama ben
+
+947
+01:16:23,560 --> 01:16:26,560
+Q değerimi, time quantum değerimi çok düşük seçip
+
+948
+01:16:26,560 --> 01:16:29,560
+sistemde çok fazla context switch yaparsam
+
+949
+01:16:29,560 --> 01:16:32,560
+ne olacaktır o tam ekipman?
+
+950
+01:16:32,560 --> 01:16:35,560
+Küçük olan context switch zamanından
+
+951
+01:16:35,560 --> 01:16:38,560
+çok fazla üretmeye başlarsam bu sefer
+
+952
+01:16:39,239 --> 01:16:42,239
+Dolayısıyla time quantum seçerken buna da
+
+953
+01:16:42,239 --> 01:16:45,239
+dikkat ediyoruz
+
+954
+01:16:45,239 --> 01:16:48,239
+Şimdi basit bir örnek üzerinden gidersek
+
+955
+01:16:48,239 --> 01:16:51,239
+3 tane işlemimiz var
+
+956
+01:16:51,239 --> 01:16:54,239
+burst timerda 24.33 aslında bu
+
+957
+01:16:54,239 --> 01:16:57,239
+ilk first come first serve
+
+958
+01:16:57,239 --> 01:17:00,239
+yapısında
+
+959
+01:17:00,239 --> 01:17:03,239
+konuştuğumuz örnek
+
+960
+01:17:03,239 --> 01:17:06,239
+orada ne olmuştu? P1 24 birim çalıştı
+
+961
+01:17:06,920 --> 01:17:09,920
+P2 ve P3 bating time 24 ve 27
+
+962
+01:17:09,920 --> 01:17:12,920
+farklı sırayla gelirse ne olur?
+
+963
+01:17:12,920 --> 01:17:15,920
+Şimdi burada time quantum
+
+964
+01:17:15,920 --> 01:17:18,920
+değerleri belirlenmiş, ne belirlenmiş?
+
+965
+01:17:18,920 --> 01:17:21,920
+4 için ne olacak?
+
+966
+01:17:21,920 --> 01:17:24,920
+P1 ile başladık yine aynı geldikleri sırayla başlayalım
+
+967
+01:17:24,920 --> 01:17:27,920
+P1 için 4 birim çalıştırdınız
+
+968
+01:17:27,920 --> 01:17:30,920
+kalan 20 birim var ve fakat
+
+969
+01:17:30,920 --> 01:17:33,920
+kenara aldık time quantumı da oldu. P2'yi çalıştıracağız
+
+970
+01:17:34,600 --> 01:17:37,600
+Time quantum 4 birim ama P2'nin burst 3
+
+971
+01:17:37,600 --> 01:17:40,600
+Dolayısıyla 3 çalıştı, bitti
+
+972
+01:17:40,600 --> 01:17:43,600
+artık ne olması lazım? Time quantumda olsun diye beklemeyeceğiz
+
+973
+01:17:43,600 --> 01:17:46,600
+Termine etti, Dolayısıyla devreye giriyoruz
+
+974
+01:17:46,600 --> 01:17:49,600
+ve ne yapıyoruz? Bir sonra çalıştığı konuda belirliyoruz
+
+975
+01:17:49,600 --> 01:17:52,600
+bir sonra çalıştığı konuda bu yapıda P3 olması lazım
+
+976
+01:17:52,600 --> 01:17:55,600
+P3 da erken bitirdi
+
+977
+01:17:55,600 --> 01:17:58,600
+sonra ne var? P1 var, sistemde sadece P1 kaldı
+
+978
+01:17:58,600 --> 01:18:01,600
+devamlı tekrar tekrar P1'i çalıştırmaya devam edeceğiz
+
+979
+01:18:02,279 --> 01:18:05,279
+Vurgulayalım istersen [öğrenci]
+
+980
+01:18:05,279 --> 01:18:08,279
+bu özellikle o açıdan önemli
+
+981
+01:18:08,279 --> 01:18:11,279
+sistemde başka proses olmamasına rağmen
+
+982
+01:18:11,279 --> 01:18:14,279
+sadece P1 olmasına rağmen
+
+983
+01:18:14,279 --> 01:18:17,279
+round robin ve time quantum kısıtlaması uygulandığı için
+
+984
+01:18:17,279 --> 01:18:20,279
+P1'i parçalara bölerek
+
+985
+01:18:20,279 --> 01:18:23,279
+çalıştırıyoruz. Yani kesintisiz vermiyoruz
+
+986
+01:18:23,279 --> 01:18:26,279
+Orada gelen context switch
+
+987
+01:18:26,279 --> 01:18:29,279
+Dolayısıyla o dispatching işlemi gerçekleştiriliyor
+
+988
+01:18:29,960 --> 01:18:34,210
+Şimdi böyle baktığınız zaman
+
+989
+01:18:34,210 --> 01:18:37,210
+P2 ve P3 için ilk duruma göre
+
+990
+01:18:37,210 --> 01:18:40,210
+first come first serve'de göre
+
+991
+01:18:40,210 --> 01:18:43,210
+en azından o convoy efektini
+
+992
+01:18:43,210 --> 01:18:46,210
+ortadan kaldırma
+
+993
+01:18:46,210 --> 01:18:49,210
+şey yapma durumunuz oluştu
+
+994
+01:18:49,210 --> 01:18:52,210
+waiting time'ları daha düşük hale geldi
+
+995
+01:18:52,210 --> 01:18:55,210
+çok pardon bu
+
+996
+01:18:55,210 --> 01:19:00,159
+tamam
+
+997
+01:19:00,840 --> 01:19:03,840
+bir şey de vurgulayalım istersen
+
+998
+01:19:03,840 --> 01:19:06,840
+no sorun değil
+
+999
+01:19:06,840 --> 01:19:09,840
+time quantum 4 ama birth time 3
+
+1000
+01:19:09,840 --> 01:19:12,840
+3'te bitiyor
+
+1001
+01:19:12,840 --> 01:19:15,840
+o ikisi önemli
+
+1002
+01:19:15,840 --> 01:19:18,840
+bazen bir sistem verip
+
+1003
+01:19:18,840 --> 01:19:21,840
+schizin dediğimiz zaman
+
+1004
+01:19:21,840 --> 01:19:24,840
+P2'yi 7'de bitirip
+
+1005
+01:19:24,840 --> 01:19:27,840
+time quantum 8'de biteceği için
+
+1006
+01:19:28,520 --> 01:19:31,520
+cpu idle kalıyormuş gibi
+
+1007
+01:19:31,520 --> 01:19:34,520
+çizebiliyor
+
+1008
+01:19:34,520 --> 01:19:37,520
+o an cpu'nuz boşa çıktı
+
+1009
+01:19:37,520 --> 01:19:40,520
+adam termine etti
+
+1010
+01:19:40,520 --> 01:19:43,520
+scheduling'in devreye girdiği anları
+
+1011
+01:19:43,520 --> 01:19:46,520
+4. madde işlem termine etti
+
+1012
+01:19:46,520 --> 01:19:49,520
+devreye giriyor olmamız lazım
+
+1013
+01:19:49,520 --> 01:19:52,520
+ayrıca kimse cpu orada
+
+1014
+01:19:52,520 --> 01:19:55,520
+boşuna aksın istemez
+
+1015
+01:19:56,199 --> 01:20:01,090
+şimdi burada
+
+1016
+01:20:01,090 --> 01:20:04,090
+time quantum'u ne seçeceksiniz
+
+1017
+01:20:04,090 --> 01:20:07,090
+time quantum'u ne seçersiniz nasıl oluyor
+
+1018
+01:20:07,090 --> 01:20:10,090
+time quantum burada bir process time burst olarak
+
+1019
+01:20:10,090 --> 01:20:13,090
+on birim verilmiş
+
+1020
+01:20:13,090 --> 01:20:16,090
+time quantum'u 12 seçerseniz
+
+1021
+01:20:16,090 --> 01:20:19,090
+context switch yapmazsınız
+
+1022
+01:20:19,090 --> 01:20:22,090
+6 seçerseniz 1 kere context switch yaparsınız
+
+1023
+01:20:22,090 --> 01:20:25,090
+1 seçerseniz ise 9 kere
+
+1024
+01:20:25,770 --> 01:20:28,770
+yani bu kontext switch küçük bir süre
+
+1025
+01:20:28,770 --> 01:20:31,770
+ama kontext switch zamanını
+
+1026
+01:20:31,770 --> 01:20:34,770
+kontext switch sayısını
+
+1027
+01:20:34,770 --> 01:20:37,770
+ekstra ekstra fazla yapmaya başlarsınız
+
+1028
+01:20:37,770 --> 01:20:40,770
+o zaman da mertebe atlatacaksınız
+
+1029
+01:20:40,770 --> 01:20:43,770
+süreyi dikkatli seçmek lazım
+
+1030
+01:20:43,770 --> 01:20:46,770
+buradaki ilk örnek time quantum'un 12 olması
+
+1031
+01:20:46,770 --> 01:20:49,770
+çok mantıklı değil o zaman zaten round robinlik bir şey kalmıyor
+
+1032
+01:20:49,770 --> 01:20:52,770
+olay şeye dönüyor
+
+1033
+01:20:53,449 --> 01:20:56,449
+adam geliyor zaten time quantum'dan
+
+1034
+01:20:56,449 --> 01:20:59,449
+kısa bir çalışma süresi var çalışacağım sonra bir sonrakine geçeceğim
+
+1035
+01:20:59,449 --> 01:21:02,449
+benim o işlemci zamanı paylaştırma mantığım ortadan kalkıyor
+
+1036
+01:21:02,449 --> 01:21:05,449
+6 burada daha ideal bir şey
+
+1037
+01:21:05,449 --> 01:21:08,449
+en azından 1 tane context switch yapıyorsunuz
+
+1038
+01:21:08,449 --> 01:21:11,449
+diğer processlerin bekleme sürelerini azaltıyorsunuz
+
+1039
+01:21:11,449 --> 01:21:14,449
+doğru değer 6 mıdır 5 mıdır 4 mıdır
+
+1040
+01:21:14,449 --> 01:21:17,449
+onu bilemeyiz çünkü onu geri kalanı da bilmiyoruz
+
+1041
+01:21:17,449 --> 01:21:20,449
+bu sistem içerisindeki bir işlemin örneği
+
+1042
+01:21:21,130 --> 01:21:24,130
+time quantum'u seçtiğiniz zaman oluşacak context switch miktarını
+
+1043
+01:21:24,130 --> 01:21:27,130
+ve bunu nasıl şey yaptığınızı
+
+1044
+01:21:27,130 --> 01:21:30,130
+artıpladığınızı ya da azalttığınızı
+
+1045
+01:21:30,130 --> 01:21:35,850
+göstermek amaç
+
+1046
+01:21:35,850 --> 01:21:38,850
+evet bu şimdi
+
+1047
+01:21:38,850 --> 01:21:41,850
+farklı bir
+
+1048
+01:21:41,850 --> 01:21:44,850
+process seti için farklı demeyeyim
+
+1049
+01:21:44,850 --> 01:21:47,850
+p1 p2 p3 ve p4'tan oluşan
+
+1050
+01:21:47,850 --> 01:21:50,850
+burst time'ları 6 3 1 ve 7 olan
+
+1051
+01:21:51,529 --> 01:21:54,529
+bir sistem için time quantum
+
+1052
+01:21:54,529 --> 01:21:57,529
+değerinizin x ekseninde gözüküyor
+
+1053
+01:21:57,529 --> 01:22:00,529
+1 2 3 4 5 6 7 şeklinde
+
+1054
+01:22:00,529 --> 01:22:03,529
+time quantum'a göre aslında
+
+1055
+01:22:03,529 --> 01:22:06,529
+turnaround time'larının nasıl etkilendi
+
+1056
+01:22:06,529 --> 01:22:09,529
+yani bu processlerin işlerini bitirip
+
+1057
+01:22:09,529 --> 01:22:12,529
+sistemden çıkma zamanlarının nasıl etkilendi
+
+1058
+01:22:12,529 --> 01:22:15,529
+dikkat edin
+
+1059
+01:22:15,529 --> 01:22:18,529
+burada time quantum 1
+
+1060
+01:22:19,210 --> 01:22:22,210
+zaman
+
+1061
+01:22:22,210 --> 01:22:25,210
+average turnaround time'ı 11
+
+1062
+01:22:25,210 --> 01:22:28,210
+gözüküyor
+
+1063
+01:22:28,210 --> 01:22:31,210
+time quantum'u arttırdığınız zaman
+
+1064
+01:22:31,210 --> 01:22:34,210
+bu 11 buçuğa iniyor
+
+1065
+01:22:34,210 --> 01:22:37,210
+bir daha arttırdığınız zaman 3'e doğru
+
+1066
+01:22:37,210 --> 01:22:40,210
+iniyor
+
+1067
+01:22:40,210 --> 01:22:43,210
+yani 3'ü şey yaptığınız zaman 10.5 ile 11 arasında
+
+1068
+01:22:43,210 --> 01:22:46,210
+bir yere iniyor
+
+1069
+01:22:46,890 --> 01:22:49,890
+12.5'lara kadar neredeyse artıyor
+
+1070
+01:22:49,890 --> 01:22:52,890
+6 olduğu zaman tekrar bir düşüş görüyorsunuz
+
+1071
+01:22:52,890 --> 01:22:55,890
+6 ve 7'de oldukça düşük görüyorsunuz
+
+1072
+01:22:55,890 --> 01:22:58,890
+bunun temel nedeni şu aslında
+
+1073
+01:22:58,890 --> 01:23:01,890
+bu da çelişkili ya da tuhaf gelebilir
+
+1074
+01:23:01,890 --> 01:23:04,890
+ama şununla alakalı
+
+1075
+01:23:04,890 --> 01:23:07,890
+process time'lerine bakalım
+
+1076
+01:23:07,890 --> 01:23:10,890
+10 ile beraber karar verin
+
+1077
+01:23:10,890 --> 01:23:13,890
+time quantum'ı 6 veya 7'e set ettiğiniz zaman
+
+1078
+01:23:14,569 --> 01:23:17,569
+kadar time quantum'u belirlemiş durumdasınız
+
+1079
+01:23:17,569 --> 01:23:20,569
+dolayısıyla
+
+1080
+01:23:20,569 --> 01:23:23,569
+onlar first in first come'a dönüyor
+
+1081
+01:23:23,569 --> 01:23:26,569
+ve bunların hangi sırayla geldiği
+
+1082
+01:23:26,569 --> 01:23:29,569
+yine sonucu turnaround time'ın da
+
+1083
+01:23:29,569 --> 01:23:32,569
+waiting time'ın da belirleyecek bir şey
+
+1084
+01:23:32,569 --> 01:23:35,569
+dolayısıyla bunu yerlerini değiştirin
+
+1085
+01:23:35,569 --> 01:23:38,569
+aynı time quantum verin bu sefer farklı bir şey göreceksiniz
+
+1086
+01:23:38,569 --> 01:23:41,569
+burada
+
+1087
+01:23:42,250 --> 01:23:45,250
+sırtlı olan ya da makul olan aslında
+
+1088
+01:23:45,250 --> 01:23:48,250
+time quantum değerinin
+
+1089
+01:23:48,250 --> 01:23:51,250
+sistemdeki işlemlere ait
+
+1090
+01:23:51,250 --> 01:23:54,250
+burst zamanlarının %80'i
+
+1091
+01:23:54,250 --> 01:23:57,250
+mertebesinde falan olması onların hepsinden
+
+1092
+01:23:57,250 --> 01:24:00,250
+mümkün olduğu kadar kısa olması
+
+1093
+01:24:00,250 --> 01:24:03,250
+burada da zaten
+
+1094
+01:24:03,250 --> 01:24:06,250
+o en efektif noktaya yakın şey
+
+1095
+01:24:06,250 --> 01:24:09,250
+time quantum'un 3 olduğu durumlar
+
+1096
+01:24:13,289 --> 01:24:16,289
+bir başka çize ergeleme yöntemi
+
+1097
+01:24:16,289 --> 01:24:23,060
+duruk
+
+1098
+01:24:23,060 --> 01:24:26,060
+sorunu sana okuyorum bu durumda
+
+1099
+01:24:26,060 --> 01:24:29,060
+time quantum context switch yapmadan önce
+
+1100
+01:24:29,060 --> 01:24:32,060
+başka process var mı kontrol edip duruma göre
+
+1101
+01:24:32,060 --> 01:24:35,060
+context switch yapıp yapmamayı seçse olmaz mı
+
+1102
+01:24:35,060 --> 01:24:38,060
+zaten schedule'ı tarifliyorsun
+
+1103
+01:24:38,060 --> 01:24:41,060
+ready queue'sunda başka schedule
+
+1104
+01:24:41,060 --> 01:24:44,060
+edilebilecek bir process var mı diye kontrol ediyorsun
+
+1105
+01:24:44,739 --> 01:24:47,739
+bir tanesinden birden fazla varsa hangisinin seçilmesi gerektiğine karar veriyor
+
+1106
+01:24:47,739 --> 01:24:50,739
+seçilene de dispatcher
+
+1107
+01:24:50,739 --> 01:24:53,739
+cpu'ya gönderiyor
+
+1108
+01:24:53,739 --> 01:24:56,739
+burada şöyle bir yanılgı var bence
+
+1109
+01:24:56,739 --> 01:24:59,739
+sanki scheduler cpu'da çalışmıyor
+
+1110
+01:24:59,739 --> 01:25:02,739
+sadece işlemler çalışıyor
+
+1111
+01:25:02,739 --> 01:25:05,739
+scheduler'ın bir şeye bakıp karar verebilmesi için
+
+1112
+01:25:05,739 --> 01:25:08,739
+sizin çalışan işleminizin durması
+
+1113
+01:25:08,739 --> 01:25:11,739
+scheduler'ın devreye girmesi
+
+1114
+01:25:12,420 --> 01:25:15,420
+cpu'da çalışması demek
+
+1115
+01:25:15,420 --> 01:25:18,420
+ready queue'ya bakması durumu incelemesi de devam etmesi lazım
+
+1116
+01:25:18,420 --> 01:25:21,420
+scheduler'ın devreye girmesi demek zaten sizin
+
+1117
+01:25:21,420 --> 01:25:24,420
+o işlemi durdurmanız
+
+1118
+01:25:24,420 --> 01:25:27,420
+statusunu koymanız
+
+1119
+01:25:27,420 --> 01:25:30,420
+context switch'i yapmanız demek
+
+1120
+01:25:30,420 --> 01:25:33,420
+biz böyle anlatırken belki
+
+1121
+01:25:33,420 --> 01:25:36,420
+sizde mantı oluyor
+
+1122
+01:25:36,420 --> 01:25:39,420
+zaten bir sistem var akıyor
+
+1123
+01:25:40,100 --> 01:25:43,100
+sen geç, sen geç diyor
+
+1124
+01:25:43,100 --> 01:25:46,100
+bambaşka bir yerden olaya yaklaşıyor gibi algılıyor olabilirsiniz ama
+
+1125
+01:25:46,100 --> 01:25:49,100
+olay öyle değil
+
+1126
+01:25:49,100 --> 01:25:52,100
+sonuçta o da bu sistemin içerisinde çalışıyor
+
+1127
+01:25:52,100 --> 01:25:55,100
+yani işlemci de çalışıyor
+
+1128
+01:25:55,100 --> 01:25:58,100
+onun devreye girmesi için ne olacak
+
+1129
+01:25:58,100 --> 01:26:01,100
+time quantum'umuz var
+
+1130
+01:26:01,100 --> 01:26:04,100
+time quantum'un dolduğunu kontrol etmek için bir timer'e ihtiyacımız var
+
+1131
+01:26:04,100 --> 01:26:07,100
+ben o timer'ı set edeceğim
+
+1132
+01:26:07,779 --> 01:26:10,779
+timer dolduğu zaman bir interrupt olacak
+
+1133
+01:26:10,779 --> 01:26:13,779
+bu iş kesilecek ben devreye gireceğim
+
+1134
+01:26:13,779 --> 01:26:16,779
+ben cpu'yla çalışmaya başlayacağım
+
+1135
+01:26:16,779 --> 01:26:19,779
+ben devreye girdiğimde kuyruğa bakayım
+
+1136
+01:26:19,779 --> 01:26:22,779
+zaten başka kimse yok, sen devam et dediğimde de
+
+1137
+01:26:22,779 --> 01:26:25,779
+ben o context switch'i yapmış durumdayım
+
+1138
+01:26:25,779 --> 01:26:28,779
+bağımsız ayrı bir kaynak değil
+
+1139
+01:26:28,779 --> 01:26:31,779
+çocuk anladığını yazmış zaten
+
+1140
+01:26:31,779 --> 01:26:34,779
+ben özellikle şey yapmadım ki
+
+1141
+01:26:35,460 --> 01:26:38,460
+yani scheduler ayrı bir işlemci de çalışmıyor
+
+1142
+01:26:38,460 --> 01:26:41,460
+scheduler da sistemdeki aynı işlemciyi kullanarak çalışıyor
+
+1143
+01:26:41,460 --> 01:26:44,460
+o da bir kod parçası
+
+1144
+01:26:44,460 --> 01:26:48,779
+şimdi
+
+1145
+01:26:48,779 --> 01:26:51,779
+burada başka bir yaklaşım
+
+1146
+01:26:51,779 --> 01:26:54,779
+farklı seviyede q'lar oluşturmak
+
+1147
+01:26:54,779 --> 01:26:57,779
+aslında
+
+1148
+01:26:57,779 --> 01:27:00,779
+baktığınız zaman sistemlerinize
+
+1149
+01:27:00,779 --> 01:27:03,779
+tamamen birbirinden çok
+
+1150
+01:27:04,460 --> 01:27:07,460
+yani bütün sistem içerisindeki bütün işlemlerimiz
+
+1151
+01:27:07,460 --> 01:27:10,460
+üniform yapıda olmak zorunda değil
+
+1152
+01:27:10,460 --> 01:27:13,460
+birbirine göre farklı özellikle işlemleri
+
+1153
+01:27:13,460 --> 01:27:16,460
+bir arada barındırıyor olabilirsiniz
+
+1154
+01:27:16,460 --> 01:27:19,460
+bu bir desktop da olsa, bu bir sunucu da olsa
+
+1155
+01:27:19,460 --> 01:27:22,460
+bu bir mainframe de olsa, vesaire de olsa
+
+1156
+01:27:22,460 --> 01:27:25,460
+dolayısıyla buradaki efektifliği sağlamak adına
+
+1157
+01:27:25,460 --> 01:27:28,460
+farklı tipteki işlemleri
+
+1158
+01:27:28,460 --> 01:27:31,460
+farklı kuyruklara assign etmekte bir yaklaşım
+
+1159
+01:27:32,140 --> 01:27:36,859
+buna multi-level q diyoruz genel olarak
+
+1160
+01:27:36,859 --> 01:27:39,859
+burada ne yapıyorsunuz
+
+1161
+01:27:39,859 --> 01:27:42,859
+sistemdeki işlem tiplerinize bağlı olarak
+
+1162
+01:27:42,859 --> 01:27:45,859
+farklı kuyruklar oluşturuyorsunuz
+
+1163
+01:27:45,859 --> 01:27:48,859
+bu örnekte bir foreground bir de background
+
+1164
+01:27:48,859 --> 01:27:51,859
+yani iki tip belirlenmiş, iki sınırlı olmak zorunda değilsiniz
+
+1165
+01:27:51,859 --> 01:27:54,859
+isterseniz üç isterseniz beş farklı kuyruk oluşturursunuz
+
+1166
+01:27:54,859 --> 01:27:57,859
+ve fakat buradaki yapı içerisinde
+
+1167
+01:27:57,859 --> 01:28:00,859
+bütün işlemler ömürleri boyunca hep
+
+1168
+01:28:01,539 --> 01:28:04,539
+her kuyrukta kalıyorlar
+
+1169
+01:28:04,539 --> 01:28:07,539
+yani bu burst'ımı tamamladım bitirdim yeniden bir burst'ım var
+
+1170
+01:28:07,539 --> 01:28:10,539
+A kuyruğundaysam A kuyruğundayım
+
+1171
+01:28:10,539 --> 01:28:13,539
+B kuyruğundaysam B kuyruğundayım tekrar
+
+1172
+01:28:13,539 --> 01:28:16,539
+aynen devam ediyor
+
+1173
+01:28:16,539 --> 01:28:19,539
+her kuyrukta ne yapıyorsunuz
+
+1174
+01:28:19,539 --> 01:28:23,890
+o işlem grubunun yapısına ve karakteristiğine uygun
+
+1175
+01:28:23,890 --> 01:28:26,890
+bir çizelgeleme algoritması kullanıyorsunuz
+
+1176
+01:28:26,890 --> 01:28:29,890
+mesela birinde roundroguing kullanırken
+
+1177
+01:28:30,569 --> 01:28:33,569
+yani interaktif olmasını, hızlı cevap vermesini
+
+1178
+01:28:33,569 --> 01:28:36,569
+bir şeyler üretmesini bekliyoruz
+
+1179
+01:28:36,569 --> 01:28:39,569
+her birine zaman veririm, hepsi yan yana ilerlesin
+
+1180
+01:28:39,569 --> 01:28:42,569
+aksın diye düşünüyoruz
+
+1181
+01:28:42,569 --> 01:28:45,569
+background'ta ise zaten arkada tın tın yapılacak işler var
+
+1182
+01:28:45,569 --> 01:28:48,569
+dolayısıyla onlar first come first serve takılsın
+
+1183
+01:28:48,569 --> 01:28:51,569
+sıkıntı değil diyebiliriz
+
+1184
+01:28:59,720 --> 01:29:02,720
+şimdi bu noktada bir şeyimiz daha var
+
+1185
+01:29:03,399 --> 01:29:06,399
+yapımızın içerisinde olması gereken bir şey var
+
+1186
+01:29:06,399 --> 01:29:09,399
+iki ya da üç ya da beş tane kuyruğumuz varsa
+
+1187
+01:29:09,399 --> 01:29:12,399
+işlemliğimiz hala bir tane
+
+1188
+01:29:12,399 --> 01:29:15,399
+dolayısıyla her kuyruktan ne yapıyoruz
+
+1189
+01:29:15,399 --> 01:29:18,399
+birilerini seçiyoruz
+
+1190
+01:29:18,399 --> 01:29:21,399
+önce buradaki iki kuyrukta foreground'dan birini seçtik
+
+1191
+01:29:21,399 --> 01:29:24,399
+bir sonraki adımda background'dan ne yapacağız
+
+1192
+01:29:24,399 --> 01:29:27,399
+değil, belli bir mantığa ve yapıya göre seçiyoruz
+
+1193
+01:29:27,399 --> 01:29:30,399
+background'daki işler bizim için daha önemlisiyse
+
+1194
+01:29:31,079 --> 01:29:34,079
+oradan belki daha seyrek iş seçiyor olacağız
+
+1195
+01:29:37,079 --> 01:29:40,079
+burada şunu uygulayabilirsiniz
+
+1196
+01:29:40,079 --> 01:29:43,079
+birkaç tane farklı şey belirtilmiş
+
+1197
+01:29:43,079 --> 01:29:46,079
+sabit bir öncelik tanımlayabilirsiniz
+
+1198
+01:29:50,079 --> 01:29:53,079
+ön yüzde foreground ile ilgili iş kalmadığı zaman
+
+1199
+01:29:53,079 --> 01:29:56,079
+background'ı çalıştır diyebilirsiniz
+
+1200
+01:29:56,079 --> 01:29:59,079
+ama bu daha önce konuştuğumuz priority scheduling'de
+
+1201
+01:29:59,760 --> 01:30:02,760
+ilk konuştuğumuz için starvation'a neden olabilecek bir sorun
+
+1202
+01:30:02,760 --> 01:30:05,760
+yani foreground'a devamlı iş biniyor
+
+1203
+01:30:05,760 --> 01:30:08,760
+background'da bekleyen işler var, bekledikçe bekliyorlar
+
+1204
+01:30:08,760 --> 01:30:11,760
+bir türlü sıra gelmiyor, olur mu olur
+
+1205
+01:30:11,760 --> 01:30:14,760
+dolayısıyla burada fixed priority yapıyorken bile
+
+1206
+01:30:14,760 --> 01:30:17,760
+bunu bir şekilde formalize etmek
+
+1207
+01:30:17,760 --> 01:30:20,760
+starvation'ı önleyecek bir mekanizma oluşturmak lazım
+
+1208
+01:30:23,760 --> 01:30:26,760
+bir diğer şey bunu cpu zamanına bağlı olarak
+
+1209
+01:30:27,439 --> 01:30:30,439
+şey yapmak, map etmek
+
+1210
+01:30:30,439 --> 01:30:33,439
+yani işlemci zamanının mesela
+
+1211
+01:30:33,439 --> 01:30:36,439
+%80'ini foreground queue'ya ayırdım
+
+1212
+01:30:36,439 --> 01:30:39,439
+yani orada adam
+
+1213
+01:30:39,439 --> 01:30:42,439
+81'im kullandı, şimdi artık ben
+
+1214
+01:30:42,439 --> 01:30:45,439
+background queue için 21'im ayırabilirim
+
+1215
+01:30:45,439 --> 01:30:48,439
+şimdi de onlar çalışsın gibi bir yapıya gidilebilir
+
+1216
+01:30:51,689 --> 01:30:54,689
+burada o konuştuğumuz multi-level queue yapısının
+
+1217
+01:30:54,689 --> 01:30:57,689
+aslında grafiksel gösterim var
+
+1218
+01:30:58,369 --> 01:31:01,369
+bu örnekle iki tane queue vardı, burada beş tane queue var
+
+1219
+01:31:01,369 --> 01:31:04,369
+bunda herhangi bir silminiz yok, isterseniz siz 15 tane yapın
+
+1220
+01:31:04,369 --> 01:31:07,369
+burada şunu unutmalak gerekir
+
+1221
+01:31:07,369 --> 01:31:10,369
+bu işi ne kadar karmaşıklaştırırsanız
+
+1222
+01:31:10,369 --> 01:31:13,369
+iş o kadar karmaşıklaşır, dolayısıyla onun yerine getirmek için
+
+1223
+01:31:13,369 --> 01:31:16,369
+yapacağınız işlemler o kadar fazla değişir
+
+1224
+01:31:16,369 --> 01:31:19,369
+dolayısıyla sizin scheduling'in çok hızlı bitmesi gereken
+
+1225
+01:31:19,369 --> 01:31:23,680
+scheduling'in bir türlü bitmemesi durumu oluşabilir
+
+1226
+01:31:23,680 --> 01:31:26,680
+yani özetle keep it simple diyoruz
+
+1227
+01:31:27,359 --> 01:31:30,359
+şimdi bu Raya kadar konuştuğumuz multi-level queue'da
+
+1228
+01:31:30,359 --> 01:31:33,359
+şey yoktu dikkat edin, sabit queue'lar
+
+1229
+01:31:33,359 --> 01:31:36,359
+her işlem A queue'sunda başladıysa A
+
+1230
+01:31:36,359 --> 01:31:39,359
+B'de başladıysa B'de hayatına devam ediyor
+
+1231
+01:31:39,359 --> 01:31:42,359
+ancak velakin ne dedik, taa en başı hatırlayacak bulursanız
+
+1232
+01:31:42,359 --> 01:31:45,359
+CPU işlem içerisinde
+
+1233
+01:31:45,359 --> 01:31:48,359
+IO Bump ve CPU Bump parçalar var
+
+1234
+01:31:48,359 --> 01:31:51,359
+bu börselerin her biri her zaman aynı
+
+1235
+01:31:51,359 --> 01:31:54,359
+uzunlukta olmak zorunda değil
+
+1236
+01:31:55,039 --> 01:31:58,039
+uzun bir IO işlemi yapıp
+
+1237
+01:31:58,039 --> 01:32:01,039
+dev 2 tane maddesi memori aldıktan sonra
+
+1238
+01:32:01,039 --> 01:32:04,039
+üzerinde çılgınca işlemler yapmaya başlayabilir
+
+1239
+01:32:04,039 --> 01:32:07,039
+sonra
+
+1240
+01:32:07,039 --> 01:32:10,039
+bu işlem sonucunda elde ettiğiniz ufacık bir veriyi
+
+1241
+01:32:10,039 --> 01:32:13,039
+yazmaya kalkabilirsiniz
+
+1242
+01:32:13,039 --> 01:32:16,039
+dolayısıyla yapınız ve şekliniz
+
+1243
+01:32:16,039 --> 01:32:19,039
+devamlı değişebilir
+
+1244
+01:32:19,039 --> 01:32:22,039
+bu yüzden de multi-level feedback queue yapısı önerilmiş
+
+1245
+01:32:22,720 --> 01:32:25,720
+burada ne yapıyoruz?
+
+1246
+01:32:25,720 --> 01:32:28,720
+farklı queue'larımız var yine
+
+1247
+01:32:28,720 --> 01:32:31,720
+ve fakat işlemlerin bu queue'lar içerisinde
+
+1248
+01:32:31,720 --> 01:32:34,720
+aşağı yukarı yani
+
+1249
+01:32:34,720 --> 01:32:37,720
+artık kaç farklı kuyruğunuz var
+
+1250
+01:32:37,720 --> 01:32:40,720
+özelliklerine vesaire değişir ama
+
+1251
+01:32:40,720 --> 01:32:43,720
+bu kuyruklar arasında
+
+1252
+01:32:43,720 --> 01:32:46,720
+değişen karakteristiğine bağlı olarak hareket etmesine izin veriyorsunuz
+
+1253
+01:32:46,720 --> 01:32:49,720
+multi-level feedback queue genel bir isim
+
+1254
+01:32:50,399 --> 01:32:53,399
+bunun farklı yerlerde farklı uygulanma halleri var
+
+1255
+01:32:53,399 --> 01:32:56,399
+farklılığını ne sağlıyor?
+
+1256
+01:32:56,399 --> 01:32:59,399
+kuyrukların sayısı sağlıyor
+
+1257
+01:32:59,399 --> 01:33:02,399
+bu sistem 3 kuyruklu olabilir, 2 kuyruklu olabilir
+
+1258
+01:33:02,399 --> 01:33:05,399
+5 kuyruklu olabilir, fantasy'ye kaçıyorsanız 15 kuyruklu olabilir
+
+1259
+01:33:05,399 --> 01:33:08,399
+ikincisi her bir kuyrukta
+
+1260
+01:33:08,399 --> 01:33:11,399
+uyguladığınız çizegeleme
+
+1261
+01:33:11,399 --> 01:33:14,399
+yöntemi var
+
+1262
+01:33:14,399 --> 01:33:17,399
+bir diğer şey ne dedik?
+
+1263
+01:33:18,079 --> 01:33:21,079
+kuyruklar arasında upgrade, downgrade yapabiliyorsunuz
+
+1264
+01:33:21,079 --> 01:33:24,079
+yani bir üst queue'ye alıyorsunuz
+
+1265
+01:33:24,079 --> 01:33:27,079
+tahminen bu queue'lar arasında bir önceliklenme durumu var
+
+1266
+01:33:27,079 --> 01:33:30,079
+CPU kullanımına göre ya da başka bir şeyine göre
+
+1267
+01:33:30,079 --> 01:33:33,079
+dolayısıyla bu adam çok kullanıyor o zaman
+
+1268
+01:33:33,079 --> 01:33:36,079
+buraya alayım, yukarı doğru alayım
+
+1269
+01:33:36,079 --> 01:33:41,640
+az aldı, aşağı doğru alayım falan diye seçiyorsunuz
+
+1270
+01:33:41,640 --> 01:33:44,640
+dolayısıyla yukarı çıkartma mantığınız, aşağı indirme mantığınız
+
+1271
+01:33:44,640 --> 01:33:47,640
+bunların her biri her bir parametre
+
+1272
+01:33:48,319 --> 01:33:51,319
+ne olduğunu ve nasıl çalıştığını belirtiyor
+
+1273
+01:33:51,319 --> 01:33:54,319
+dolayısıyla bunlardan herhangi bir değişiklik yaptığınız zaman
+
+1274
+01:33:54,319 --> 01:33:57,319
+yeni bir yöntem haline gelmiş oluyor ama genel çatı olarak
+
+1275
+01:33:57,319 --> 01:34:00,319
+multi-level feedback queue diyoruz
+
+1276
+01:34:00,319 --> 01:34:03,319
+şimdi burada bir örnek verilmiş
+
+1277
+01:34:03,319 --> 01:34:06,319
+o örnekte de aslında baktığınız zaman
+
+1278
+01:34:06,319 --> 01:34:09,319
+dikkat edin 3 tane
+
+1279
+01:34:09,319 --> 01:34:12,319
+kuyruk var, bir tanesinde round robin
+
+1280
+01:34:12,319 --> 01:34:15,319
+kullanıyor, time quantum'u 8
+
+1281
+01:34:16,000 --> 01:34:19,000
+8 birimlik zaman veriliyor
+
+1282
+01:34:19,000 --> 01:34:22,000
+8 birimlik time quantum'a sahip olan kuyruğa
+
+1283
+01:34:22,000 --> 01:34:25,000
+soldan bir giriş var, sağdan bir çıkış var
+
+1284
+01:34:25,000 --> 01:34:28,000
+bir çıkışı da 6 birim quantum 16 yazan
+
+1285
+01:34:28,000 --> 01:34:31,000
+ikinci bir kuyruğa giriyor, orada da round robin
+
+1286
+01:34:31,000 --> 01:34:34,000
+yapılıyor, time quantum bu sefer 16 birim
+
+1287
+01:34:34,000 --> 01:34:37,000
+aslında ne yapıyorsunuz?
+
+1288
+01:34:37,000 --> 01:34:40,000
+ilk kuyrukta adama 8 birim veriyorken
+
+1289
+01:34:40,000 --> 01:34:43,000
+ikinci kuyrukta 16 birim veriyorsunuz
+
+1290
+01:34:43,680 --> 01:34:46,680
+daha çok çalışma imkanı veriyorsunuz
+
+1291
+01:34:46,680 --> 01:34:49,680
+eğer
+
+1292
+01:34:49,680 --> 01:34:52,680
+round robin time quantum 16 uygulanan
+
+1293
+01:34:52,680 --> 01:34:55,680
+o ikinci kuyruğunda çıkışına bakarsanız bir
+
+1294
+01:34:55,680 --> 01:34:59,930
+çıkma gitme durumu var, yani
+
+1295
+01:34:59,930 --> 01:35:02,930
+direk işlemciye atılma ve çalışma
+
+1296
+01:35:02,930 --> 01:35:05,930
+kısmı var, bir de aşağıya doğru
+
+1297
+01:35:05,930 --> 01:35:08,930
+first time first serve'e geçme durumu var
+
+1298
+01:35:08,930 --> 01:35:11,930
+yani orada artık ne diyorsunuz?
+
+1299
+01:35:12,609 --> 01:35:15,609
+sayfalan fıstık yok, sen girdin bu kuyruğa artık
+
+1300
+01:35:15,609 --> 01:35:18,609
+çalışıp bitene kadar buradasın
+
+1301
+01:35:18,609 --> 01:35:27,500
+şimdi burada ne yapıyor olabilirsiniz?
+
+1302
+01:35:27,500 --> 01:35:30,500
+herhangi bir işlem
+
+1303
+01:35:30,500 --> 01:35:33,500
+sisteme girdiği zaman time quantum 8'den
+
+1304
+01:35:33,500 --> 01:35:36,500
+başlatıyorsunuz, 8 birimi veriyorsunuz
+
+1305
+01:35:36,500 --> 01:35:39,500
+çalışıyor ve fakat bitmiyor
+
+1306
+01:35:39,500 --> 01:35:42,500
+bitmediği zaman
+
+1307
+01:35:42,500 --> 01:35:45,500
+bunu bir üst kubuya alıyorsunuz
+
+1308
+01:35:46,180 --> 01:35:49,180
+orada da bitmezse
+
+1309
+01:35:49,180 --> 01:35:52,180
+bir üst kubuya alıyorsunuz
+
+1310
+01:35:52,180 --> 01:35:55,180
+aslında cpu zamanı kullandıkça
+
+1311
+01:35:55,180 --> 01:36:01,250
+ona aktardığınız kaynağı arttırıyorsunuz
+
+1312
+01:36:08,710 --> 01:36:20,060
+şimdi buraya kadar konuştuğumuz her şey
+
+1313
+01:36:20,060 --> 01:36:23,060
+process bazında konuştuk
+
+1314
+01:36:23,060 --> 01:36:27,439
+fakat olay her zaman
+
+1315
+01:36:27,439 --> 01:36:30,439
+process ile dönme, biz ne yapıyoruz?
+
+1316
+01:36:31,119 --> 01:36:34,119
+thread ile nasıl kullanıyoruz?
+
+1317
+01:36:34,119 --> 01:36:37,119
+2 ayrı thread'den bahsediyoruz
+
+1318
+01:36:37,119 --> 01:36:40,119
+kullanıcı seviyesinde thread'ler ve kernel seviyesinde
+
+1319
+01:36:40,119 --> 01:36:43,119
+thread'ler
+
+1320
+01:36:43,119 --> 01:36:46,119
+eğer sizden de kullandığınız
+
+1321
+01:36:46,119 --> 01:36:49,119
+işletim sisteminde ki bunu
+
+1322
+01:36:49,119 --> 01:36:52,119
+linux'tan örneklerle göstermiştik
+
+1323
+01:36:52,119 --> 01:36:55,119
+doğrudan thread desteği varsa
+
+1324
+01:36:55,119 --> 01:36:58,119
+aslında schedule edilen şey process değil
+
+1325
+01:36:58,800 --> 01:37:01,800
+bunun dışında kullanıcı seviyesinde
+
+1326
+01:37:01,800 --> 01:37:04,800
+kernel seviyesinde thread'lerin map edilmesiyle
+
+1327
+01:37:04,800 --> 01:37:07,800
+alakalı menu to menu
+
+1328
+01:37:07,800 --> 01:37:10,800
+menu to one, one to one
+
+1329
+01:37:10,800 --> 01:37:13,800
+gibi modellerden bahsetmiştik
+
+1330
+01:37:13,800 --> 01:37:16,800
+menu to one ya da menu to menu de
+
+1331
+01:37:16,800 --> 01:37:19,800
+aslında arada
+
+1332
+01:37:19,800 --> 01:37:22,800
+bir broker gibi
+
+1333
+01:37:22,800 --> 01:37:25,800
+çalışan lightweight process yapısından bahsediyoruz
+
+1334
+01:37:26,479 --> 01:37:29,479
+bunun içerisinde
+
+1335
+01:37:29,479 --> 01:37:32,479
+scheduling de aslında
+
+1336
+01:37:32,479 --> 01:37:42,460
+thread libresi tarafından yapılıyor
+
+1337
+01:37:42,460 --> 01:37:45,460
+burada aslında lightweight bir process var
+
+1338
+01:37:45,460 --> 01:37:48,460
+ve bu process içerisindeki thread'leri schedule ettiğiniz için
+
+1339
+01:37:48,460 --> 01:37:51,460
+bu process'ın içerisindeki
+
+1340
+01:37:51,460 --> 01:37:54,460
+process contention scope diye
+
+1341
+01:37:54,460 --> 01:37:57,460
+tarif ettiğimiz alanda
+
+1342
+01:37:57,460 --> 01:38:00,460
+gerçekleşiyor
+
+1343
+01:38:01,140 --> 01:38:04,140
+kernel thread'lerinin schedule edilmesi için
+
+1344
+01:38:04,140 --> 01:38:13,949
+aslında system contention scope'tan bahsediyoruz
+
+1345
+01:38:13,949 --> 01:38:16,949
+burada ekleyeceğiniz bir şeyler olabilir belki
+
+1346
+01:38:16,949 --> 01:38:19,949
+tamam okey
+
+1347
+01:38:19,949 --> 01:38:22,949
+sonraki sayfaya geçelim oradan
+
+1348
+01:38:22,949 --> 01:38:25,949
+process contention scope ve system contention scope
+
+1349
+01:38:25,949 --> 01:38:28,949
+sen açıkladın aslında
+
+1350
+01:38:28,949 --> 01:38:31,949
+thread'ler üzerinden giderken arkadaşlar hatırlarsanız
+
+1351
+01:38:31,949 --> 01:38:34,949
+thread'ler sadece
+
+1352
+01:38:35,630 --> 01:38:38,630
+system seviyesinde bilinebilir
+
+1353
+01:38:38,630 --> 01:38:41,630
+eğer thread'ler sadece system seviyesinde
+
+1354
+01:38:41,630 --> 01:38:44,630
+process seviyesinde biliniyorsa
+
+1355
+01:38:44,630 --> 01:38:47,630
+yani user moddaysa
+
+1356
+01:38:47,630 --> 01:38:50,630
+kernel modla hiçbir alakası yoksa
+
+1357
+01:38:50,630 --> 01:38:53,630
+thread'lerin işletim sisteminin
+
+1358
+01:38:53,630 --> 01:38:56,630
+o thread'leri
+
+1359
+01:38:56,630 --> 01:38:59,630
+thread olarak schedule edebilmesinin mümkünatı yok
+
+1360
+01:38:59,630 --> 01:39:02,630
+çünkü işletim sistemi sadece
+
+1361
+01:39:03,310 --> 01:39:06,310
+ondan ötürü işletim sistemi
+
+1362
+01:39:06,310 --> 01:39:09,310
+process'e süre veriyor
+
+1363
+01:39:09,310 --> 01:39:12,310
+az önce Cihan hocanızın anlattığı
+
+1364
+01:39:12,310 --> 01:39:15,310
+çizelgeleme algoritmalarından herhangi birine bağlı olarak
+
+1365
+01:39:15,310 --> 01:39:18,310
+burst time'lar vardı ya
+
+1366
+01:39:18,310 --> 01:39:21,310
+o burst time'ı process'e veriyor
+
+1367
+01:39:21,310 --> 01:39:24,310
+process'e atıyor ancak
+
+1368
+01:39:24,310 --> 01:39:27,310
+process'in içerisinde yer alan ama işletim sistemi tarafından
+
+1369
+01:39:27,310 --> 01:39:30,310
+bilinmeyen thread'ler
+
+1370
+01:39:30,989 --> 01:39:33,989
+bu zaman paylaştırılıyor
+
+1371
+01:39:33,989 --> 01:39:36,989
+işte o yüzden buna ne diyoruz
+
+1372
+01:39:36,989 --> 01:39:39,989
+process contention scope diyoruz
+
+1373
+01:39:39,989 --> 01:39:42,989
+aslında bu paylaştırma
+
+1374
+01:39:42,989 --> 01:39:45,989
+çok da yabancı olduğumuz bir kavram değil
+
+1375
+01:39:45,989 --> 01:39:48,989
+hani en başta yine bugün
+
+1376
+01:39:48,989 --> 01:39:51,989
+konuştuk ya non-preemptive scheduling
+
+1377
+01:39:51,989 --> 01:39:54,989
+bir process kendi isteğiyle
+
+1378
+01:39:54,989 --> 01:39:57,989
+weighting'e gittiğinde veyahut da
+
+1379
+01:39:58,670 --> 01:40:01,670
+bir başka process'e geçiliyordu
+
+1380
+01:40:01,670 --> 01:40:04,670
+bu durumda bir process'e işletim sistemi
+
+1381
+01:40:04,670 --> 01:40:07,670
+çizelgeleme kapsamında
+
+1382
+01:40:07,670 --> 01:40:10,670
+cpu kullanım hakkını verdiyse
+
+1383
+01:40:10,670 --> 01:40:13,670
+bu cpu kullanım hakkı
+
+1384
+01:40:13,670 --> 01:40:16,670
+process içerisinde yer alan thread'ler arasında
+
+1385
+01:40:16,670 --> 01:40:19,670
+thread'lerin birbiriyle ortaklaşa çalışması
+
+1386
+01:40:19,670 --> 01:40:22,670
+kooperasyonu ile paylaşılacak
+
+1387
+01:40:22,670 --> 01:40:25,670
+ancak diğer taraftan
+
+1388
+01:40:26,350 --> 01:40:29,350
+yine thread'leri konuşurken
+
+1389
+01:40:29,350 --> 01:40:32,350
+netip thread'lerden de bahsetmiştik
+
+1390
+01:40:32,350 --> 01:40:35,350
+işletim sisteminin doğrudan tanıdığı
+
+1391
+01:40:35,350 --> 01:40:38,350
+kernel level thread'lerden bahsetmiştik
+
+1392
+01:40:38,350 --> 01:40:41,350
+bu durumda thread'in kendisi
+
+1393
+01:40:41,350 --> 01:40:44,350
+işletim sistemi tarafından
+
+1394
+01:40:44,350 --> 01:40:47,350
+çalıştırılabilir ve bilinen bir varlık
+
+1395
+01:40:47,350 --> 01:40:50,350
+o zaman zamanı
+
+1396
+01:40:50,350 --> 01:40:53,350
+işlemci zamanını
+
+1397
+01:40:54,029 --> 01:40:57,029
+işletim sistemi doğrudan
+
+1398
+01:40:57,029 --> 01:41:00,029
+thread'e verebilir
+
+1399
+01:41:00,029 --> 01:41:03,029
+thread'i işlemciye yollayabilir
+
+1400
+01:41:03,029 --> 01:41:06,029
+bu durumda da olayın yapısı gereği
+
+1401
+01:41:06,029 --> 01:41:09,029
+işletim sistemi sistemdeki bütün
+
+1402
+01:41:09,029 --> 01:41:12,029
+thread'leri tanıdığı için
+
+1403
+01:41:12,029 --> 01:41:15,029
+thread'ler işlemci zamanı için
+
+1404
+01:41:15,029 --> 01:41:18,029
+birbirleriyle yarışacaklar
+
+1405
+01:41:18,029 --> 01:41:21,029
+buna da ne isim veriyoruz
+
+1406
+01:41:21,710 --> 01:41:24,710
+ismini veriyoruz
+
+1407
+01:41:24,710 --> 01:41:27,710
+ister process contention scope
+
+1408
+01:41:27,710 --> 01:41:30,710
+ister system contention scope
+
+1409
+01:41:30,710 --> 01:41:33,710
+thread'lerin çizergelenmesi
+
+1410
+01:41:33,710 --> 01:41:36,710
+thread'lere işlemci zamanı verilmesi
+
+1411
+01:41:36,710 --> 01:41:39,710
+için kullanılacak olan
+
+1412
+01:41:39,710 --> 01:41:42,710
+yöntemlerin az önce
+
+1413
+01:41:42,710 --> 01:41:45,710
+processler için Cihang Hocamız tarafından
+
+1414
+01:41:45,710 --> 01:41:48,710
+anlatılan yöntemlerden bir farklı söz konusu değil
+
+1415
+01:41:49,390 --> 01:41:52,390
+eğer kernel level thread'ler varsa
+
+1416
+01:41:52,390 --> 01:41:55,390
+işletim sistemi thread yapısını doğrudan
+
+1417
+01:41:55,390 --> 01:41:58,390
+tanıyorsa ve bütün processler
+
+1418
+01:41:58,390 --> 01:42:01,390
+bir thread'miş gibi
+
+1419
+01:42:01,390 --> 01:42:04,390
+düşünülüp ona göre
+
+1420
+01:42:04,390 --> 01:42:07,390
+bir çizelgeleme yapılıyorsa
+
+1421
+01:42:07,390 --> 01:42:10,390
+thread scheduling eşittir process scheduling
+
+1422
+01:42:10,390 --> 01:42:13,390
+veya process scheduling eşittir
+
+1423
+01:42:13,390 --> 01:42:16,390
+thread scheduling olacak
+
+1424
+01:42:17,069 --> 01:42:20,069
+incelediğimizde işletim sistemi
+
+1425
+01:42:20,069 --> 01:42:23,069
+tekrar üzerine basa basa söylüyorum
+
+1426
+01:42:23,069 --> 01:42:26,069
+thread'i tanımıyor process'i tanıyor
+
+1427
+01:42:26,069 --> 01:42:29,069
+process'e süre verdiğini zannediyor
+
+1428
+01:42:29,069 --> 01:42:32,069
+ama process bu süreyi aldığında
+
+1429
+01:42:32,069 --> 01:42:35,069
+onun içerisinde yer alan thread'ler
+
+1430
+01:42:35,069 --> 01:42:38,069
+kooperatif bir şekilde
+
+1431
+01:42:38,069 --> 01:42:41,069
+birbirleriyle anlaşarak
+
+1432
+01:42:41,069 --> 01:42:45,739
+zamanı aralarında paylaşıyorlar
+
+1433
+01:42:46,420 --> 01:42:49,420
+yine thread konusuna geri döndüğümüzde
+
+1434
+01:42:49,420 --> 01:42:52,420
+hatırlayın bir POSIX thread kütüphanesi vardı
+
+1435
+01:42:52,420 --> 01:42:55,420
+POSIX thread apisi vardı
+
+1436
+01:42:55,420 --> 01:42:58,420
+bir Windows'un thread apisi vardı
+
+1437
+01:42:58,420 --> 01:43:01,420
+bir de JVM, Java Virtual Machine'in
+
+1438
+01:43:01,420 --> 01:43:04,420
+thread apisi, thread implementasyonu vardı
+
+1439
+01:43:04,420 --> 01:43:07,420
+bu söylediğimiz
+
+1440
+01:43:07,420 --> 01:43:10,420
+özelliğin, bakın az önce anlattığımız
+
+1441
+01:43:10,420 --> 01:43:13,420
+özelliğin pthread kütüphanesindeki
+
+1442
+01:43:14,100 --> 01:43:17,100
+karşılığı pthread scope process
+
+1443
+01:43:17,100 --> 01:43:20,100
+veya pthread scope system
+
+1444
+01:43:20,100 --> 01:43:23,100
+şey yapma şansınız var
+
+1445
+01:43:23,100 --> 01:43:26,100
+bir sonraki slide'de yanlış hatırlamıyorsam
+
+1446
+01:43:26,100 --> 01:43:29,100
+program numarayı var
+
+1447
+01:43:29,100 --> 01:43:32,100
+pthread libresi ile thread yarattığınız zaman
+
+1448
+01:43:32,100 --> 01:43:35,100
+yaratırken scope'unu process mi system mi
+
+1449
+01:43:35,100 --> 01:43:38,100
+vesaire diye görüyorsunuz
+
+1450
+01:43:38,100 --> 01:43:41,100
+ona göre yaratıyor
+
+1451
+01:43:41,779 --> 01:43:44,779
+siz scope'unun process olmasını istediğinizde de
+
+1452
+01:43:44,779 --> 01:43:47,779
+hayır olmaz öyle şey diyebilir
+
+1453
+01:43:47,779 --> 01:43:50,779
+şurada Linux ve macOS 10 için
+
+1454
+01:43:50,779 --> 01:43:53,779
+sadece pthread scope sisteme izin veriyor
+
+1455
+01:43:53,779 --> 01:43:56,779
+diyor ama Linux'ta
+
+1456
+01:43:56,779 --> 01:43:59,779
+2.4.19 öncesindeki
+
+1457
+01:43:59,779 --> 01:44:02,779
+threadler sadece user level
+
+1458
+01:44:02,779 --> 01:44:05,779
+seviyesindeydi
+
+1459
+01:44:05,779 --> 01:44:08,779
+yine pthread libresi vardı ancak
+
+1460
+01:44:09,460 --> 01:44:12,460
+netif değildi yani kernel level'da değildi
+
+1461
+01:44:12,460 --> 01:44:15,460
+o yüzden pthread kütüphanesini kullandığınızda
+
+1462
+01:44:15,460 --> 01:44:18,460
+siz pthread scope system seçeneğini
+
+1463
+01:44:18,460 --> 01:44:21,460
+kullanıyor olmanıza rağmen o neye
+
+1464
+01:44:21,460 --> 01:44:24,460
+translate oluyordu pthread scope process'e
+
+1465
+01:44:24,460 --> 01:44:27,460
+fakat günümüzde şu satırda yazan şey
+
+1466
+01:44:27,460 --> 01:44:30,460
+doğru günümüzde kullandığımız Linux
+
+1467
+01:44:30,460 --> 01:44:33,460
+kernel'ı artı macOS 10 ve
+
+1468
+01:44:33,460 --> 01:44:36,460
+sonrası scope seviyesinde
+
+1469
+01:44:37,140 --> 01:44:40,140
+bunu thread konusunda da işlemiştik
+
+1470
+01:44:40,140 --> 01:44:43,140
+modern işlediğimiz sistemlerde
+
+1471
+01:44:43,140 --> 01:44:46,140
+thread'leri doğrudan tanıyorlardı
+
+1472
+01:44:46,140 --> 01:44:49,140
+örnek uygulamada
+
+1473
+01:44:49,140 --> 01:44:52,140
+şey görüyor yani atributunu alıp
+
+1474
+01:44:52,140 --> 01:44:55,140
+baktığı zaman scope'unun ne olduğunu bakarak
+
+1475
+01:44:55,140 --> 01:44:58,140
+process mi share'ı ne olduğunu
+
+1476
+01:44:58,140 --> 01:45:01,140
+yazan bir örnek bu
+
+1477
+01:45:01,140 --> 01:45:04,140
+daha önceki haftalarda anlattığımız örnekleri
+
+1478
+01:45:04,819 --> 01:45:07,819
+çağrısı vardı bir fonksiyon vardı onunla bir
+
+1479
+01:45:07,819 --> 01:45:10,819
+thread'in standart özelliklerini
+
+1480
+01:45:10,819 --> 01:45:13,819
+initialize ediyorduk standart özellik
+
+1481
+01:45:13,819 --> 01:45:16,819
+kapsamında sistem eğer
+
+1482
+01:45:16,819 --> 01:45:19,819
+process scope'unu destekliyorsa standartı oysa
+
+1483
+01:45:19,819 --> 01:45:22,819
+atributu process scope olarak set edilecek
+
+1484
+01:45:22,819 --> 01:45:25,819
+kernel sistem scope'unu kernel seviyesini
+
+1485
+01:45:25,819 --> 01:45:28,819
+destekliyorsa da o şekilde set edilecek
+
+1486
+01:45:28,819 --> 01:45:31,819
+daha sonra da attr get scope bile bu bilgiye
+
+1487
+01:45:32,500 --> 01:45:35,500
+bu örneğin de
+
+1488
+01:45:35,500 --> 01:45:38,500
+bakmak nasıl oluyor diye ona
+
+1489
+01:45:38,500 --> 01:45:41,500
+bakmak işte şurada
+
+1490
+01:45:41,500 --> 01:45:44,500
+her birinin şeyi alınmış
+
+1491
+01:45:44,500 --> 01:45:47,500
+fark etmez ben de anlatarım güzel
+
+1492
+01:45:47,500 --> 01:45:50,500
+şurada sende soru var mı diye merak ettim
+
+1493
+01:45:50,500 --> 01:45:53,500
+göremedim
+
+1494
+01:45:53,500 --> 01:45:56,500
+benim cursor kayboldu yine bir saniye
+
+1495
+01:45:56,500 --> 01:45:59,500
+şöyle yapayım bir saçmalık var
+
+1496
+01:46:00,180 --> 01:46:03,180
+geri gidip gelince yapıyoruz soru yok
+
+1497
+01:46:03,180 --> 01:46:06,180
+inşallah buradalar yani
+
+1498
+01:46:06,180 --> 01:46:11,159
+bir ses verin arkadaşlar duyuyor musunuz?
+
+1499
+01:46:11,159 --> 01:46:14,159
+buradayız hocam duyuyoruz
+
+1500
+01:46:14,159 --> 01:46:17,159
+uzay boşluğumu diye merak ettik de bir an
+
+1501
+01:46:17,159 --> 01:46:20,159
+harika arkadaşlar
+
+1502
+01:46:20,159 --> 01:46:23,159
+multi-processor scheduling şu ana kadar
+
+1503
+01:46:23,159 --> 01:46:26,159
+cihan hocanız da söyledi
+
+1504
+01:46:26,159 --> 01:46:29,159
+yöntemleri anlayabilmek kavrayabilmek adına
+
+1505
+01:46:29,840 --> 01:46:32,840
+hep tek bir işlemcimiz olduğunu konuştuk
+
+1506
+01:46:32,840 --> 01:46:35,840
+hep onun üzerinden gittik
+
+1507
+01:46:35,840 --> 01:46:38,840
+zaten esas mesele şu
+
+1508
+01:46:38,840 --> 01:46:41,840
+processler IO başlattıkları zaman
+
+1509
+01:46:41,840 --> 01:46:44,840
+işlemci açısından çok büyük bir şey değil
+
+1510
+01:46:44,840 --> 01:46:47,840
+işlemci boşa çıkıyor ama önemli olan ne
+
+1511
+01:46:47,840 --> 01:46:50,840
+processlerdeki o CPU burst anları var ya
+
+1512
+01:46:50,840 --> 01:46:53,840
+multi-programming'in de mantığı neydi
+
+1513
+01:46:53,840 --> 01:46:56,840
+sistemde mümkün olduğu kadar çok processi
+
+1514
+01:46:57,520 --> 01:47:00,520
+böyle bir noktaya gireceğiz ki üst üste binen
+
+1515
+01:47:00,520 --> 01:47:03,520
+ve işlemci isteyen
+
+1516
+01:47:03,520 --> 01:47:06,520
+her birinin de böyle CPU burst'ı olan
+
+1517
+01:47:06,520 --> 01:47:09,520
+bir sürü processimiz var o noktada
+
+1518
+01:47:09,520 --> 01:47:12,520
+işlemci zamanını bunların arasında paylaştırmak gerekiyor
+
+1519
+01:47:12,520 --> 01:47:15,520
+algoritmik olarak uygulayabileceğimiz çözüm
+
+1520
+01:47:15,520 --> 01:47:18,520
+bir noktaya kadar işte gördünüz
+
+1521
+01:47:18,520 --> 01:47:21,520
+waiting time üzerinden gidip waiting time'ı
+
+1522
+01:47:21,520 --> 01:47:24,520
+average waiting time'ı ideal noktalara çektik
+
+1523
+01:47:25,199 --> 01:47:28,199
+ama bir yerden sonra multi-programming
+
+1524
+01:47:28,199 --> 01:47:31,199
+seviyesini arttırdığınızda tek bir işlemciniz varsa
+
+1525
+01:47:31,199 --> 01:47:34,199
+ne yaparsanız yapın
+
+1526
+01:47:34,199 --> 01:47:37,199
+yani average waiting time'da kötüleşmeye başlayacak
+
+1527
+01:47:37,199 --> 01:47:40,199
+turnaround time'da kötüleşmeye başlayacak
+
+1528
+01:47:40,199 --> 01:47:43,199
+response time'da kötüleşmeye başlayacak
+
+1529
+01:47:43,199 --> 01:47:46,199
+ne olacak bakacaksınız CPU utilization
+
+1530
+01:47:46,199 --> 01:47:49,199
+%100'lerde hani olsa %110'lara
+
+1531
+01:47:49,199 --> 01:47:52,199
+çıkacak %120'lere çıkacak ama yok öyle bir şey
+
+1532
+01:47:52,199 --> 01:47:55,199
+bu yüzden bu noktada neyin devreye girmesi lazım
+
+1533
+01:47:55,199 --> 01:47:58,199
+ikinci bir işlemcinin
+
+1534
+01:47:58,199 --> 01:48:01,199
+bunu da daha önce konuşmuştuk ikinci bir işlemciyi
+
+1535
+01:48:01,199 --> 01:48:04,199
+ya fiziksel soket şeklinde düşünüyoruz
+
+1536
+01:48:04,199 --> 01:48:07,199
+ya da aynı işlemci üzerindeki
+
+1537
+01:48:07,199 --> 01:48:10,199
+ikinci bir, üçüncü bir, dördüncü bir neyse en inci
+
+1538
+01:48:10,199 --> 01:48:13,199
+core olarak çekirdek olarak düşünüyoruz
+
+1539
+01:48:13,199 --> 01:48:16,199
+şimdi tabi ki
+
+1540
+01:48:16,199 --> 01:48:19,199
+tarihsel gelişime göre düşündüğümüzde
+
+1541
+01:48:20,199 --> 01:48:23,199
+core yapısı çekirdek yapısı sonradan geliyor
+
+1542
+01:48:23,199 --> 01:48:26,199
+başlangıçta ne var soket yapısı var
+
+1543
+01:48:26,199 --> 01:48:29,199
+bir sistemde bir işlemci var yanına
+
+1544
+01:48:29,199 --> 01:48:32,199
+ikinci bir işlemci koymak demek ikinci bir
+
+1545
+01:48:32,199 --> 01:48:35,199
+işlemci soketi oraya işlemciyi koymanız lehimlemeniz falan filan
+
+1546
+01:48:35,199 --> 01:48:38,199
+bu durumda da farklı senaryolar da başlamıyor
+
+1547
+01:48:40,199 --> 01:48:43,199
+farklı senaryolar nedir
+
+1548
+01:48:43,199 --> 01:48:46,199
+sistemdeki işlemcilerin
+
+1549
+01:48:47,199 --> 01:48:50,199
+homojen olması veya heterojen olması
+
+1550
+01:48:51,199 --> 01:48:54,199
+homojen olması bütün işlemcilerin
+
+1551
+01:48:54,199 --> 01:48:57,199
+aynı yapıya aynı instruction setine
+
+1552
+01:48:57,199 --> 01:49:00,199
+aynı özelliklere sahip olması
+
+1553
+01:49:00,199 --> 01:49:03,199
+yani nedir sistemde
+
+1554
+01:49:03,199 --> 01:49:06,199
+iki tane intel pentium var
+
+1555
+01:49:06,199 --> 01:49:09,199
+aynı frekansta aynı
+
+1556
+01:49:09,199 --> 01:49:12,199
+kod firmware seviyesinde
+
+1557
+01:49:12,199 --> 01:49:15,199
+birebir aynı
+
+1558
+01:49:15,199 --> 01:49:18,199
+heterojen olsaydı sistemdeki işlemciler
+
+1559
+01:49:18,199 --> 01:49:21,199
+farklı özellikte
+
+1560
+01:49:21,199 --> 01:49:24,199
+günümüzde heterojen multiprocessing de yapıyoruz
+
+1561
+01:49:24,199 --> 01:49:27,199
+ne diyoruz kenarda gpu'larımız var
+
+1562
+01:49:27,199 --> 01:49:30,199
+grafik processing unitlerimiz var diyoruz
+
+1563
+01:49:30,199 --> 01:49:33,199
+gpu'yu özel başka işler için kullanıyoruz
+
+1564
+01:49:33,199 --> 01:49:36,199
+cpu'yu sıradan standart
+
+1565
+01:49:36,199 --> 01:49:39,199
+işlerimiz için kullanıyoruz
+
+1566
+01:49:39,199 --> 01:49:42,199
+şu anda bizim
+
+1567
+01:49:42,199 --> 01:49:45,199
+seçeceğimiz scheduling multiprocessor scheduling
+
+1568
+01:49:45,199 --> 01:49:48,199
+bütün işlemcilerin eşdeğer olduğu
+
+1569
+01:49:48,199 --> 01:49:51,199
+homojen oldurdur
+
+1570
+01:49:51,199 --> 01:49:54,199
+ama işlemciler homojenken de iki tane seçeneğimiz
+
+1571
+01:49:54,199 --> 01:49:57,199
+söz konusu
+
+1572
+01:49:57,199 --> 01:50:00,199
+asimetrik simetrik
+
+1573
+01:50:00,199 --> 01:50:03,199
+asimetrikte işlemcilere
+
+1574
+01:50:03,199 --> 01:50:06,199
+farklı görevler verebiliyoruz
+
+1575
+01:50:06,199 --> 01:50:09,199
+diyoruz ki bu işlemci
+
+1576
+01:50:09,199 --> 01:50:12,199
+bu işlemci
+
+1577
+01:50:12,199 --> 01:50:15,199
+bu işlemci
+
+1578
+01:50:15,199 --> 01:50:18,199
+bu işlemci
+
+1579
+01:50:18,199 --> 01:50:21,199
+diğerleri ise
+
+1580
+01:50:21,199 --> 01:50:24,199
+alınan kararlara göre yerine getirir
+
+1581
+01:50:24,199 --> 01:50:27,199
+orjinalde bu yapıya
+
+1582
+01:50:27,199 --> 01:50:30,199
+master slave deniyor
+
+1583
+01:50:30,199 --> 01:50:33,199
+yani efendi köle
+
+1584
+01:50:33,199 --> 01:50:36,199
+günümüzde her anlamda
+
+1585
+01:50:36,199 --> 01:50:39,199
+tarihsel olarak da
+
+1586
+01:50:39,199 --> 01:50:42,199
+sosyolojik olarak da çağrışımı kötü olduğu için
+
+1587
+01:50:42,199 --> 01:50:45,199
+bu kavramı kullanmıyoruz
+
+1588
+01:50:45,199 --> 01:50:48,199
+ama literatürde çok eskiye gittiğinizde
+
+1589
+01:50:48,199 --> 01:50:51,199
+master slave yapısını ve bununla alakalı atıfları görebilirsiniz
+
+1590
+01:50:51,199 --> 01:50:54,199
+bu daha sonradan neye dönüştürülüyor
+
+1591
+01:50:54,199 --> 01:50:57,199
+karar veren işlemci haricindeki
+
+1592
+01:50:57,199 --> 01:51:00,199
+diğer işlemciler worker
+
+1593
+01:51:00,199 --> 01:51:03,199
+processor şekline yani işçi mantığına
+
+1594
+01:51:03,199 --> 01:51:06,199
+bu yapının en önemli sıkıntısı
+
+1595
+01:51:06,199 --> 01:51:09,199
+karar veren işlemci aşırı yüklendiğinde
+
+1596
+01:51:09,199 --> 01:51:12,199
+yani
+
+1597
+01:51:12,199 --> 01:51:15,199
+yutilizasyonu yüzde yüzün üzerine çıkması gerektiğinde
+
+1598
+01:51:15,199 --> 01:51:18,199
+karar verme süreleri uzuyor
+
+1599
+01:51:18,199 --> 01:51:21,199
+kuyruk oluşuyor bu durumda
+
+1600
+01:51:21,199 --> 01:51:24,199
+diğer işlemciler yani worker
+
+1601
+01:51:24,199 --> 01:51:27,199
+processorlar boşta beklemeye başlıyorlar
+
+1602
+01:51:27,199 --> 01:51:30,199
+istemediğimiz durum
+
+1603
+01:51:30,199 --> 01:51:33,199
+sistemde bir arıza durumunda ve bu arızanın
+
+1604
+01:51:33,199 --> 01:51:36,199
+karar veren işlemciyi etkilemesi durumunda
+
+1605
+01:51:36,199 --> 01:51:39,199
+kenarda bir sürü
+
+1606
+01:51:39,199 --> 01:51:42,199
+yedek olarak devreye girebilecek
+
+1607
+01:51:42,199 --> 01:51:45,199
+işlemci olmasına rağmen onlar boşta kalıyorlar
+
+1608
+01:51:45,199 --> 01:51:48,199
+bu açıdan bir süre denemiş olmasına rağmen
+
+1609
+01:51:48,199 --> 01:51:51,199
+bununla alakalı
+
+1610
+01:51:51,199 --> 01:51:54,199
+ticari sistemlerde oluşturulmuş
+
+1611
+01:51:54,199 --> 01:51:57,199
+olmasına rağmen şu anda
+
+1612
+01:51:58,199 --> 01:52:01,199
+asimetrik maltı processingi kullanmıyoruz
+
+1613
+01:52:01,199 --> 01:52:04,199
+gereğine kalıyor
+
+1614
+01:52:04,199 --> 01:52:07,199
+simetrik maltı processing
+
+1615
+01:52:07,199 --> 01:52:10,199
+yalnız şunu söyleyeyim hani hocalar kullanmıyoruz dediler
+
+1616
+01:52:10,199 --> 01:52:13,199
+bu böyle şey değil bütün dünyayı bağlayan
+
+1617
+01:52:13,199 --> 01:52:16,199
+tabi ki böyle yapılar olabilir özel tasarımlar da kullanılabilir
+
+1618
+01:52:16,199 --> 01:52:19,199
+niye canım geçen gelip sordular Amerika'dan kullanalım mı?
+
+1619
+01:52:19,199 --> 01:52:22,199
+kullanmaz ama olmaz her şey
+
+1620
+01:52:22,199 --> 01:52:25,199
+yani genel olarak kullanmıyoruz tamam mı?
+
+1621
+01:52:25,199 --> 01:52:28,199
+hocalar bunu şey yaptı diye aman öyle anlaşılmasın
+
+1622
+01:52:28,199 --> 01:52:31,199
+ama genel olarak kullandığımız yapı ne?
+
+1623
+01:52:31,199 --> 01:52:34,199
+simetrik maltı processing SM
+
+1624
+01:52:34,199 --> 01:52:37,199
+bütün işlemciler
+
+1625
+01:52:37,199 --> 01:52:40,199
+eşdeğerde yani homojen
+
+1626
+01:52:40,199 --> 01:52:43,199
+ve bütün işlemciler her türlü
+
+1627
+01:52:43,199 --> 01:52:46,199
+scheduling, dispatching,
+
+1628
+01:52:46,199 --> 01:52:49,199
+process çalıştırma, trap çalıştırma,
+
+1629
+01:52:49,199 --> 01:52:52,199
+IO gerçekleştirme açısından birbiriyle
+
+1630
+01:52:52,199 --> 01:52:55,199
+aynı değerdeler aynı
+
+1631
+01:52:55,199 --> 01:52:58,199
+özellikteler ve yapabiliyorlar
+
+1632
+01:52:58,199 --> 01:53:01,199
+birinin diğerine göre bir özellik farkı
+
+1633
+01:53:01,199 --> 01:53:04,199
+öncelik farkı yok diye düşünüyoruz
+
+1634
+01:53:04,199 --> 01:53:07,199
+sadece bu işlemcileri doğal olarak numaralandırıyoruz
+
+1635
+01:53:07,199 --> 01:53:10,199
+yani sistemde
+
+1636
+01:53:10,199 --> 01:53:13,199
+6 işlemci varsa 6 core varsa
+
+1637
+01:53:13,199 --> 01:53:16,199
+0'dan 5'e kadar gidiyor işte
+
+1638
+01:53:16,199 --> 01:53:19,199
+12 core varsa 0'dan 11'e kadar gidiyor
+
+1639
+01:53:19,199 --> 01:53:22,199
+işlemcilerin numaraları
+
+1640
+01:53:22,199 --> 01:53:25,199
+bir takım sinkronizasyonla alakalı
+
+1641
+01:53:25,199 --> 01:53:28,199
+sorunları basite indirgemek çözülebilir hale
+
+1642
+01:53:28,199 --> 01:53:31,199
+getirmek adına işlemcilerin numaraları
+
+1643
+01:53:31,199 --> 01:53:34,199
+donanım seviyesinde aslında
+
+1644
+01:53:34,199 --> 01:53:37,199
+önceliklerini de göstermiş oluyor
+
+1645
+01:53:37,199 --> 01:53:40,199
+genel yaklaşım numarası düşük olan işlemcinin
+
+1646
+01:53:40,199 --> 01:53:43,199
+donanım olarak önceliğinin yüksek
+
+1647
+01:53:43,199 --> 01:53:46,199
+olduğu anlamına geliyor
+
+1648
+01:53:46,199 --> 01:53:49,199
+yani önümüzdeki haftalarda sinkronizasyon anlatacağız dedik ya
+
+1649
+01:53:49,199 --> 01:53:52,199
+bu haftada belli bir noktada
+
+1650
+01:53:52,199 --> 01:53:55,199
+bir kısmından bahsettik onu anlatacağımız zaman
+
+1651
+01:53:55,199 --> 01:53:58,199
+bunu hatırlayın lütfen
+
+1652
+01:53:58,199 --> 01:54:01,199
+şimdi multiprocessor scheduling de
+
+1653
+01:54:01,199 --> 01:54:04,199
+homojen işlemciler var
+
+1654
+01:54:04,199 --> 01:54:07,199
+simetrik multiprocessing yapıyoruz her şey
+
+1655
+01:54:07,199 --> 01:54:10,199
+harika önemli
+
+1656
+01:54:10,199 --> 01:54:13,199
+adreslenmesi ve çözülmesi gereken bir problem var
+
+1657
+01:54:13,199 --> 01:54:16,199
+processor affinity
+
+1658
+01:54:16,199 --> 01:54:19,199
+affinity aşinalık yakınlık
+
+1659
+01:54:19,199 --> 01:54:22,199
+demek ne demek peki bizim kapsamımızda
+
+1660
+01:54:22,199 --> 01:54:25,199
+yani bizim terminolojimizde bu
+
+1661
+01:54:25,199 --> 01:54:28,199
+şu anlama geliyor günlük hayattan daha rahat anlatabilirim
+
+1662
+01:54:28,199 --> 01:54:31,199
+size şimdi bizim iki tane bölüm
+
+1663
+01:54:31,199 --> 01:54:34,199
+sekreterimiz var sunanım ve filizan
+
+1664
+01:54:34,199 --> 01:54:37,199
+bunlar birer işlemci sizlerden gelen
+
+1665
+01:54:37,199 --> 01:54:40,199
+dilekçeleri istekleri soruları
+
+1666
+01:54:40,199 --> 01:54:43,199
+biriniz diyelim ki bir sıkıntılı durumunuz var
+
+1667
+01:54:43,199 --> 01:54:46,199
+ve gittiniz sunanım o sırada
+
+1668
+01:54:46,199 --> 01:54:49,199
+uygundu sunanıma derdinizi
+
+1669
+01:54:49,199 --> 01:54:52,199
+anlattınız şöyle şöyle şöyle o da
+
+1670
+01:54:52,199 --> 01:54:55,199
+size dedi ki tamam şu belgeleri hazırlaman lazım
+
+1671
+01:54:55,199 --> 01:54:58,199
+bu eksikleri gidermem lazım ondan sonra gel
+
+1672
+01:54:58,199 --> 01:55:01,199
+işini görelim siz o eksiklerinizi
+
+1673
+01:55:01,199 --> 01:55:04,199
+hazırlayacaklarınızı tamamlamak adına
+
+1674
+01:55:04,199 --> 01:55:07,199
+zaman harcarken sunanım başkaları ilgilendi
+
+1675
+01:55:07,199 --> 01:55:10,199
+sizin işiniz bittiğinde
+
+1676
+01:55:10,199 --> 01:55:13,199
+geri döndüğünüzde sunanım bir başkasına
+
+1677
+01:55:13,199 --> 01:55:16,199
+sizden bir başkasına yardımcı olmaya çalışıyor
+
+1678
+01:55:16,199 --> 01:55:19,199
+filizanım boşta ve zaten o da
+
+1679
+01:55:19,199 --> 01:55:22,199
+bölüm sekreteri değil mi ikinci işlemci değil mi hemen
+
+1680
+01:55:22,199 --> 01:55:25,199
+ona döndünüz belgelerimi getirdim dediniz
+
+1681
+01:55:25,199 --> 01:55:28,199
+doğal olarak filizanımın diyeceği şey
+
+1682
+01:55:28,199 --> 01:55:31,199
+hangi belgeler ne belgeleri niçin
+
+1683
+01:55:31,199 --> 01:55:34,199
+5 ne 1 k durumuna
+
+1684
+01:55:34,199 --> 01:55:37,199
+döndü sizin bütün olayı
+
+1685
+01:55:37,199 --> 01:55:40,199
+işte şöyle şöyle şöyle olmuştu ben sunanıma
+
+1686
+01:55:40,199 --> 01:55:43,199
+gelmiştim o böyle demişti ondan sonra ben bunu şöyle
+
+1687
+01:55:43,199 --> 01:55:46,199
+yapmıştım sonunda da buraya ne oldu
+
+1688
+01:55:46,199 --> 01:55:49,199
+arada bir gecikme oldu şimdi
+
+1689
+01:55:49,199 --> 01:55:52,199
+aynı durum aynı durum
+
+1690
+01:55:52,199 --> 01:55:55,199
+işlemci değiştirdiğiniz zamanda geçerli
+
+1691
+01:55:55,199 --> 01:55:58,199
+olan bir durum niçin
+
+1692
+01:55:58,199 --> 01:56:01,199
+ta donanımla mimariyle alakalı anlattığımız
+
+1693
+01:56:01,199 --> 01:56:04,199
+haftalara oradaki slide'lara geri
+
+1694
+01:56:04,199 --> 01:56:07,199
+dönüyoruz her işlemcinin
+
+1695
+01:56:07,199 --> 01:56:10,199
+kendi lokal keşi var ve
+
+1696
+01:56:10,199 --> 01:56:13,199
+memori yararçisine göre erişimleri
+
+1697
+01:56:13,199 --> 01:56:16,199
+hızlandırmak için memoriden yapılan
+
+1698
+01:56:16,199 --> 01:56:19,199
+erişimler işlemcilerin keşliğinde
+
+1699
+01:56:19,199 --> 01:56:22,199
+ara bellek olarak tutuluyor
+
+1700
+01:56:22,199 --> 01:56:25,199
+daha hızlı erişesin daha hızlı güncellensin
+
+1701
+01:56:25,199 --> 01:56:28,199
+yani o proses o
+
+1702
+01:56:28,199 --> 01:56:31,199
+işlemcide çalışırken aralarında bir
+
+1703
+01:56:31,199 --> 01:56:34,199
+aşinalık bir yakınlık oluşuyor keş
+
+1704
+01:56:34,199 --> 01:56:37,199
+o işlemcinin keşi o prosesin
+
+1705
+01:56:37,199 --> 01:56:40,199
+verileri ile doluyor siz şimdi
+
+1706
+01:56:40,199 --> 01:56:43,199
+o prosese alıp bir başka
+
+1707
+01:56:43,199 --> 01:56:46,199
+işlemciye götürdüğünüzde o işlemcinin
+
+1708
+01:56:46,199 --> 01:56:49,199
+keşinde o prosesle alakalı veriler
+
+1709
+01:56:49,199 --> 01:56:52,199
+yok yani birbirlerini tanımıyorlar
+
+1710
+01:56:52,199 --> 01:56:55,199
+ne geçmesi lazım zaman geçmesi
+
+1711
+01:56:55,199 --> 01:56:58,199
+lazım şimdi bunu hızlandırmak için o zaman
+
+1712
+01:56:58,199 --> 01:57:01,199
+da konuşmuştuk hatırlarsanız işte
+
+1713
+01:57:01,199 --> 01:57:04,199
+level 1 keş instruction keştir level 2
+
+1714
+01:57:04,199 --> 01:57:07,199
+keş data keştir işlemcinin üzerinde
+
+1715
+01:57:07,199 --> 01:57:10,199
+birden fazla işlemcinin paylaştığı level 3
+
+1716
+01:57:10,199 --> 01:57:13,199
+keş hatta soketler arasında level
+
+1717
+01:57:13,199 --> 01:57:16,199
+4 keş falan bunlardan bahsetmiştik o
+
+1718
+01:57:16,199 --> 01:57:19,199
+haberleşmeyi ve veri paylaşımını
+
+1719
+01:57:19,199 --> 01:57:22,199
+hızlandıran yöntemler donanımsal
+
+1720
+01:57:22,199 --> 01:57:25,199
+ama onların sağlayacağı avantajdan
+
+1721
+01:57:25,199 --> 01:57:28,199
+çok daha büyük bir avantajı ne sağlayacaktır
+
+1722
+01:57:28,199 --> 01:57:31,199
+o işlemi o prosesi hangi
+
+1723
+01:57:31,199 --> 01:57:34,199
+işlemciden aldıysanız tekrar aynı
+
+1724
+01:57:34,199 --> 01:57:37,199
+işlemciye yerleştirilmesi tabi ki kabul edilebilir bir
+
+1725
+01:57:37,199 --> 01:57:40,199
+zaman dilimi içerisinde niye aradan çok
+
+1726
+01:57:40,199 --> 01:57:43,199
+fazla zaman geçerse işlemcinin keş
+
+1727
+01:57:43,199 --> 01:57:46,199
+boyutu kısıtlı olduğu için araya başka
+
+1728
+01:57:46,199 --> 01:57:49,199
+işlemler girmiş olduğundan dolayı o keşte
+
+1729
+01:57:49,199 --> 01:57:52,199
+sizin geri döndürdüğünüz prosese ait bilgiler
+
+1730
+01:57:52,199 --> 01:57:55,199
+artık kalmayacaktır bu da ikinci kriter
+
+1731
+01:57:55,199 --> 01:57:58,199
+bu durumda yapmaya çalıştığımız
+
+1732
+01:57:58,199 --> 01:58:01,199
+şey Malte processing scheduling de
+
+1733
+01:58:01,199 --> 01:58:04,199
+hedeflediğimiz şey bir
+
+1734
+01:58:04,199 --> 01:58:07,199
+prosesi bir işlemi mümkünse kabul edilebilir
+
+1735
+01:58:07,199 --> 01:58:10,199
+zaman sınırları içerisinde hangi işlemci
+
+1736
+01:58:10,199 --> 01:58:13,199
+denge aldıysak tekrar o işlemciye geri
+
+1737
+01:58:13,199 --> 01:58:16,199
+koymak orada çalıştırmaya devam etmek
+
+1738
+01:58:16,199 --> 01:58:19,199
+buna prosesör affinity diyoruz
+
+1739
+01:58:19,199 --> 01:58:22,199
+iki yöntemi var soft ve hard affinity
+
+1740
+01:58:22,199 --> 01:58:25,199
+hard affinity yani biri yumuşak biri sert ne demek
+
+1741
+01:58:25,199 --> 01:58:28,199
+hard affinity işletim sisteminde bununla
+
+1742
+01:58:28,199 --> 01:58:31,199
+alakalı mekanizma var ben diyorum ki
+
+1743
+01:58:31,199 --> 01:58:34,199
+1234 numaralı proses 3 numaralı proses
+
+1744
+01:58:34,199 --> 01:58:37,199
+da çalışacak istisnası yok
+
+1745
+01:58:37,199 --> 01:58:40,199
+yani ne olursa olsun hep orada çalışacak
+
+1746
+01:58:40,199 --> 01:58:43,199
+ben ne yaptım aslında
+
+1747
+01:58:43,199 --> 01:58:46,199
+işlemciyle işlemi
+
+1748
+01:58:46,199 --> 01:58:49,199
+prosesi birbirine bağladım
+
+1749
+01:58:49,199 --> 01:58:52,199
+bir assignment yaptım
+
+1750
+01:58:52,199 --> 01:58:55,199
+bu özellikle çok yüksek
+
+1751
+01:58:55,199 --> 01:58:58,199
+performans gerektiren önceliği
+
+1752
+01:58:58,199 --> 01:59:01,199
+aşırı yüksek hızlı response
+
+1753
+01:59:01,199 --> 01:59:04,199
+vermesi gereken bu tarz gecikmelere
+
+1754
+01:59:04,199 --> 01:59:07,199
+tolerans gösteremeyeceğimiz durumlar için geçerli
+
+1755
+01:59:07,199 --> 01:59:10,199
+olabilir ama tabi ki tahmin edeceğiniz üzere
+
+1756
+01:59:10,199 --> 01:59:13,199
+proses sayısı her zaman için o sistemdeki
+
+1757
+01:59:13,199 --> 01:59:16,199
+core sayısından çok çok çok çok fazla
+
+1758
+01:59:16,199 --> 01:59:19,199
+olacağı için bütün proseslerimizi
+
+1759
+01:59:19,199 --> 01:59:22,199
+hard affinity ile bir
+
+1760
+01:59:22,199 --> 01:59:25,199
+processora bağlamamız dedicate
+
+1761
+01:59:25,199 --> 01:59:28,199
+etmemiz mümkün değil bu şekilde hard affinity
+
+1762
+01:59:28,199 --> 01:59:31,199
+ile bir processor bir
+
+1763
+01:59:31,199 --> 01:59:34,199
+prosese bağlandıysa buna dedication deniyor
+
+1764
+01:59:34,199 --> 01:59:37,199
+atanmışlık deniyor yani
+
+1765
+01:59:37,199 --> 01:59:40,199
+ne yapıyorum prosese dedicate
+
+1766
+01:59:40,199 --> 01:59:43,199
+dedicated processor diye bir kavramı var
+
+1767
+01:59:43,199 --> 01:59:46,199
+ancak daha çok uyguladığımız ne
+
+1768
+01:59:46,199 --> 01:59:49,199
+soft affinity soft affinity
+
+1769
+01:59:49,199 --> 01:59:52,199
+kendi içerisinde seviyeleri var
+
+1770
+01:59:52,199 --> 01:59:55,199
+birincisi hangi işlemciden aldıysan
+
+1771
+01:59:55,199 --> 01:59:58,199
+o işlemciye tekrar geri ver
+
+1772
+01:59:58,199 --> 02:00:01,199
+olmuyorsa o işlemci
+
+1773
+02:00:01,199 --> 02:00:04,199
+ile aynı soktaki bir
+
+1774
+02:00:04,199 --> 02:00:07,199
+başka kora ver
+
+1775
+02:00:07,199 --> 02:00:10,199
+olmuyorsa o işlemci ile en hızlı
+
+1776
+02:00:10,199 --> 02:00:13,199
+konuşma şansına sahip olan soktaki
+
+1777
+02:00:13,199 --> 02:00:16,199
+bir işlemciye ver
+
+1778
+02:00:16,199 --> 02:00:19,199
+bunlar da olmuyorsa veya donanımsal olarak böyle bir şey
+
+1779
+02:00:19,199 --> 02:00:22,199
+yoksa geriye kalan boştaki işlemciye
+
+1780
+02:00:22,199 --> 02:00:25,199
+ver çünkü niye öbür türlü
+
+1781
+02:00:25,199 --> 02:00:28,199
+yani en kötü karar kararsızlıktan daha
+
+1782
+02:00:28,199 --> 02:00:31,199
+iyidir mantıyla öbür türlü işlemci boşta
+
+1783
+02:00:32,199 --> 02:00:35,199
+ve
+
+1784
+02:00:35,199 --> 02:00:38,199
+bekletiyorsunuz yani
+
+1785
+02:00:38,199 --> 02:00:42,829
+tabiki
+
+1786
+02:00:42,829 --> 02:00:45,829
+olması lazım geçen hafta
+
+1787
+02:00:45,829 --> 02:00:48,829
+arkadaşlar bu hafta için size
+
+1788
+02:00:48,829 --> 02:00:51,829
+geçen hafta sınav haftasından dolayı
+
+1789
+02:00:51,829 --> 02:00:54,829
+geçen hafta yapılanları bu haftaya aktaralım demiştik bu hafta
+
+1790
+02:00:54,829 --> 02:01:01,380
+uygulayacak değil mi arkadaşlar
+
+1791
+02:01:01,380 --> 02:01:04,380
+tamam bir an
+
+1792
+02:01:04,380 --> 02:01:07,380
+bu durumda durmamız gerekiyor
+
+1793
+02:01:07,380 --> 02:01:10,380
+çünkü saat 3 oldu haftaya kaldığımız yerden
+
+1794
+02:01:10,380 --> 02:01:13,380
+devam ederiz
+
+1795
+02:01:13,380 --> 02:01:16,380
+bundan sonrasında örnekler falan
+
+1796
+02:01:16,380 --> 02:01:19,380
+evet bir şey yapacağız
+
+1797
+02:01:19,380 --> 02:01:22,380
+bu arada bakın şunu da söyleyin
+
+1798
+02:01:22,380 --> 02:01:25,380
+şu slide anlatırsak zaten şey de bitmiş olacak
+
+1799
+02:01:25,380 --> 02:01:28,380
+az önce processer affinity
+
+1800
+02:01:28,380 --> 02:01:31,380
+cash erişimi
+
+1801
+02:01:31,380 --> 02:01:34,380
+ve processer affinity cash açısından da
+
+1802
+02:01:34,380 --> 02:01:37,380
+geçerli değil son dönemde
+
+1803
+02:01:37,380 --> 02:01:40,380
+işlemci sayısı çok fazla
+
+1804
+02:01:40,380 --> 02:01:43,380
+arttı buna bağlı olarak sistemlerdeki
+
+1805
+02:01:43,380 --> 02:01:46,380
+memori boyutu da çok fazla arttı
+
+1806
+02:01:46,380 --> 02:01:49,380
+yani artık terabyte bile
+
+1807
+02:01:49,380 --> 02:01:52,380
+sıradan kalmaya başladı yani petabyte
+
+1808
+02:01:52,380 --> 02:01:55,380
+doğru giden yapılar var bu durumda
+
+1809
+02:01:55,380 --> 02:01:58,380
+bir işlemcinin memorinin tamamını
+
+1810
+02:01:58,380 --> 02:02:01,380
+baştan sona adreslemesini beklemek
+
+1811
+02:02:01,380 --> 02:02:04,380
+ve buna göre bir tasarım yapmak çok da
+
+1812
+02:02:04,380 --> 02:02:07,380
+efektif değil ne yapıyoruz
+
+1813
+02:02:07,380 --> 02:02:10,380
+memori de kendi içerisinde
+
+1814
+02:02:10,380 --> 02:02:13,380
+fiziksel olarak segmented olarak
+
+1815
+02:02:13,380 --> 02:02:16,380
+tarifliyoruz ve mesela diyoruz ki
+
+1816
+02:02:16,380 --> 02:02:19,380
+işte 1 terabyte
+
+1817
+02:02:19,380 --> 02:02:22,380
+memorim var bunu 256 gigabayt
+
+1818
+02:02:22,380 --> 02:02:25,380
+dört parça olarak düşünüyorum
+
+1819
+02:02:25,380 --> 02:02:28,380
+256 gigabaytlı parçayı da
+
+1820
+02:02:28,380 --> 02:02:31,380
+dört korluk bir işlemciye veriyorum
+
+1821
+02:02:31,380 --> 02:02:34,380
+bu durumda şu şekle bakın
+
+1822
+02:02:34,380 --> 02:02:37,380
+işlemci kendisine atanmış olan
+
+1823
+02:02:37,380 --> 02:02:40,380
+assign edilmiş olan 256 gigabaytlı parçaya
+
+1824
+02:02:40,380 --> 02:02:43,380
+en yüksek hızla erişirken
+
+1825
+02:02:43,380 --> 02:02:46,380
+diğer işlemciye atanmış olan
+
+1826
+02:02:46,380 --> 02:02:49,380
+memori yani 256'ya biraz daha
+
+1827
+02:02:49,380 --> 02:02:52,380
+yavaş erişecek hani işlemci numarasına göre
+
+1828
+02:02:52,380 --> 02:02:55,380
+bir seviyesinde öncelikleri var bazı şeyleri
+
+1829
+02:02:55,380 --> 02:02:58,380
+kolaylaştırmakla çözmek için bu önceliklerden
+
+1830
+02:02:58,380 --> 02:03:01,380
+yararlanıyor dedik ya işte 0 numaralı
+
+1831
+02:03:01,380 --> 02:03:04,380
+işlemci 0 numaralı memori bloğuna
+
+1832
+02:03:04,380 --> 02:03:07,380
+en yüksek hızla erişirken 0 numaralı işlemci
+
+1833
+02:03:07,380 --> 02:03:10,380
+1 numaralı memori bloğuna daha yavaş hızla
+
+1834
+02:03:10,380 --> 02:03:13,380
+erişecek çünkü neden 1 numaralı memori bloğuna
+
+1835
+02:03:13,380 --> 02:03:16,380
+en yüksek hızla hangi işlemci erişecek
+
+1836
+02:03:16,380 --> 02:03:19,380
+1 numaralı işlemci böyle bir yapı
+
+1837
+02:03:19,380 --> 02:03:22,380
+kimsel olarak yönetilebilir hali getiriyor ama
+
+1838
+02:03:22,380 --> 02:03:25,380
+diğer taraftan da eşit olmayan erişim
+
+1839
+02:03:25,380 --> 02:03:28,380
+hızlarına sebep oluyor bir tarafta fast access
+
+1840
+02:03:28,380 --> 02:03:31,380
+yüksek hızla erişim diğer tarafta slow access
+
+1841
+02:03:31,380 --> 02:03:34,380
+yavaş hızla erişim bu mimariye ne isim veriyoruz
+
+1842
+02:03:34,380 --> 02:03:37,380
+arkadaşlar Numa non uniform
+
+1843
+02:03:37,380 --> 02:03:40,380
+memori access yani
+
+1844
+02:03:40,380 --> 02:03:43,380
+eşit dağılıma zamansal olarak
+
+1845
+02:03:43,380 --> 02:03:46,380
+eşit dağılıma sahip olmayan
+
+1846
+02:03:46,380 --> 02:03:51,819
+memori erişimi
+
+1847
+02:03:51,819 --> 02:03:56,260
+işlemci hızları aynı iken neden rem bloklarına
+
+1848
+02:03:56,260 --> 02:03:59,260
+erişim hızları farklı diye soruyor [öğrenci]
+
+1849
+02:03:59,260 --> 02:04:02,260
+az önce söyledim 0 numaralı memori bloğuna
+
+1850
+02:04:02,260 --> 02:04:05,260
+en hızlı 0 erişiyor 1 numaralı memori bloğuna
+
+1851
+02:04:05,260 --> 02:04:08,260
+en hızlı 1 erişiyor 0 numaralı ile 1 numaralı
+
+1852
+02:04:08,260 --> 02:04:11,260
+aynı anda 1 numaraya erişmek isterse
+
+1853
+02:04:11,260 --> 02:04:14,260
+hangisine öncelik verilecek 1 numaraya
+
+1854
+02:04:14,260 --> 02:04:17,260
+öncelik verilecek 0 bekleyecek
+
+1855
+02:04:17,260 --> 02:04:20,260
+1 numaraya 0 ve 1 aynı anda erişmek isterse
+
+1856
+02:04:20,260 --> 02:04:23,260
+hangisine öncelik verilecek 0 numaraya
+
+1857
+02:04:23,260 --> 02:04:26,260
+1 bekleyecek bunun sonucunda da
+
+1858
+02:04:26,260 --> 02:04:29,260
+çapraz erişimlerde kendine ait olmayan
+
+1859
+02:04:29,260 --> 02:04:32,260
+memori bloğuna erişen cpu her zaman
+
+1860
+02:04:32,260 --> 02:04:35,260
+ikinci sırada olacak veya üçüncü sırada
+
+1861
+02:04:35,260 --> 02:04:38,260
+burda erişim hızların farklı olması bundan
+
+1862
+02:04:38,260 --> 02:04:41,260
+kaynaklı ama bunun da ortaya atılma nedeni
+
+1863
+02:04:41,260 --> 02:04:44,260
+zaten söylediniz [öğrenci] nedir artık
+
+1864
+02:04:44,260 --> 02:04:47,260
+yoğun ya da yapım çok büyük
+
+1865
+02:04:47,260 --> 02:04:50,260
+tek bir işlemlik tarafında adresleme vesaire
+
+1866
+02:04:50,260 --> 02:04:53,260
+gerek yok onun yanına ne yapıyorum
+
+1867
+02:04:53,260 --> 02:04:56,260
+parçalara bölüyorum zaten o belli bir kısmını
+
+1868
+02:04:56,260 --> 02:04:59,260
+cpu'ya dedike ediyorum
+
+1869
+02:04:59,260 --> 02:05:02,260
+zaten petabyteler cinsinden memorum var yerine göre
+
+1870
+02:05:02,260 --> 02:05:05,260
+dolayısıyla bunu böyle organize ediyorum ki daha
+
+1871
+02:05:05,260 --> 02:05:08,260
+efektif daha hızlı çalışabilsin
+
+1872
+02:05:08,260 --> 02:05:11,260
+bunun dışındaki durum çok özür dilerim
+
+1873
+02:05:12,260 --> 02:05:15,260
+daha fazla memori erişmek ya da işlemden dolayı
+
+1874
+02:05:15,260 --> 02:05:18,260
+bir yerde çalıştıran işlemin başka bir yere
+
+1875
+02:05:18,260 --> 02:05:21,260
+migrate etmesinden dolayı vesaireden dolayı
+
+1876
+02:05:21,260 --> 02:05:24,260
+farklı bir yere erişim varsa bu da tabi ki
+
+1877
+02:05:24,260 --> 02:05:27,260
+dolaylı yolun oluyor o yüzden yavaş
+
+1878
+02:05:27,260 --> 02:05:30,260
+hatta sistemleri birbiriyle
+
+1879
+02:05:30,260 --> 02:05:33,260
+özel memory to memory
+
+1880
+02:05:33,260 --> 02:05:36,260
+bağlantısı ile birbirlerine
+
+1881
+02:05:36,260 --> 02:05:39,260
+ilişkilendirebiliyoruz couple edebiliyoruz
+
+1882
+02:05:39,260 --> 02:05:42,260
+mesela infiniband bunlardan
+
+1883
+02:05:42,260 --> 02:05:45,260
+bir tanesi iki tane bağımsız
+
+1884
+02:05:45,260 --> 02:05:48,260
+server fiziksel
+
+1885
+02:05:48,260 --> 02:05:51,260
+enclosure'dır içerisinde ama arkalarında
+
+1886
+02:05:51,260 --> 02:05:54,260
+özel portları var çok yüksek
+
+1887
+02:05:54,260 --> 02:05:57,260
+hızlı portları var o hızlar genelde
+
+1888
+02:05:57,260 --> 02:06:00,260
+giga transactions per second cinsinden
+
+1889
+02:06:00,260 --> 02:06:03,260
+geçer çünkü neden memoriye yapılacak
+
+1890
+02:06:03,260 --> 02:06:06,260
+transaction nedir memoriye read yaparsın
+
+1891
+02:06:06,260 --> 02:06:09,260
+update yaparsın bunlar üzerinden
+
+1892
+02:06:09,260 --> 02:06:12,260
+hatta bazı durumlarda çok yüksek
+
+1893
+02:06:12,260 --> 02:06:15,260
+ölçeklendirmeye sahip olanlarda birden fazla
+
+1894
+02:06:15,260 --> 02:06:18,260
+yol üzerinden bağlıyoruz ama ne olursa
+
+1895
+02:06:18,260 --> 02:06:21,260
+olsun lokaldeki erişim hızı her zaman
+
+1896
+02:06:21,260 --> 02:06:24,260
+için çok daha yüksek oluyor
+
+1897
+02:06:24,260 --> 02:06:27,260
+başka bir kontrol ve başka bir bas
+
+1898
+02:06:27,260 --> 02:06:30,260
+girmiş oluyor yani zaten o bağlantı
+
+1899
+02:06:30,260 --> 02:06:33,260
+infinibandlarda hani böyle hallali sayıda
+
+1900
+02:06:33,260 --> 02:06:36,260
+bağlıyorsunuz şey yapıyorsunuz tabii
+
+1901
+02:06:36,260 --> 02:06:39,260
+evet durum böyle
+
+1902
+02:06:39,260 --> 02:06:42,260
+engini olmuştur diye tahmin ediyorum
+
+1903
+02:06:42,260 --> 02:06:45,260
+şimdi bundan sonra
+
+1904
+02:06:45,260 --> 02:06:48,260
+ki konulara yani 34.
+
+1905
+02:06:48,260 --> 02:06:51,260
+saatten sonrasına haftaya devam ederiz
+
+1906
+02:06:51,260 --> 02:06:54,260
+cihan hocanızın dediği gibi arka tarafta çok fazla bir şey kalmadı
+
+1907
+02:06:54,260 --> 02:06:57,260
+örnekler var bir iltiharında alakalı şey var
+
+1908
+02:06:57,260 --> 02:07:00,260
+20-30 tane slide kalmıştır bunların yarısından
+
+1909
+02:07:00,260 --> 02:07:03,260
+zaten onlara bakım diyeceğiz
+
+1910
+02:07:03,260 --> 02:07:06,260
+böyleyse az bir şey kaldı ama onu önümüzdeki hafta tamamlar
+
+1911
+02:07:06,260 --> 02:07:09,260
+sonra da senkronizasyonla geçiyor
+
+1912
+02:07:09,260 --> 02:07:12,260
+ve devam ediyor oluruz
+
+1913
+02:07:12,260 --> 02:07:15,260
+başka bir soru yok ise hepinize
+
+1914
+02:07:15,260 --> 02:07:18,260
+iyi haftalar kolay gelsin gençler
+
+1915
+02:07:18,260 --> 02:07:22,569
+sağlıcakla kalın arkadaşlar
+

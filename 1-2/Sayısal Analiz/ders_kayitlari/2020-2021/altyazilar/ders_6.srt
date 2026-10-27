@@ -1,0 +1,6080 @@
+1
+00:00:23,920 --> 00:00:26,920
+Arkadaşlar, günaydın. Hoş geldiniz.
+
+2
+00:00:31,699 --> 00:00:35,700
+Ders yapacağız mı yapamayacağız mı dedik ki sonunda ders yapıyoruz.
+
+3
+00:01:18,799 --> 00:01:20,799
+Hocam ben bir şey sorabilir miyim?
+
+4
+00:01:21,799 --> 00:01:24,799
+Gösterdiğiniz yöntemden ben kodunu yazmaya kalktım.
+
+5
+00:01:24,799 --> 00:01:29,799
+Hocam girişte ben fonksiyonu nasıl tanımlayabilirim ki?
+
+6
+00:01:31,799 --> 00:01:32,799
+Hangi fonksiyonu?
+
+7
+00:01:32,799 --> 00:01:34,799
+Herhangi bir fonksiyon.
+
+8
+00:01:34,799 --> 00:01:36,799
+Geçen ondan bahsettim ya.
+
+9
+00:01:36,799 --> 00:01:38,799
+Ya da normal bir fonksiyon olsun.
+
+10
+00:01:38,799 --> 00:01:41,799
+Geçen, geçen bahsettim ya onlardan.
+
+11
+00:01:42,799 --> 00:01:46,799
+Yani polinyon fonksiyonsa polinyonun önce derecesini alacaksın.
+
+12
+00:01:46,799 --> 00:01:49,799
+Sonra kas sayırlarını tek tek kullanıcıdan alacaksın.
+
+13
+00:01:50,799 --> 00:01:52,799
+Direkt string gibi yazmayacaksın.
+
+14
+00:01:52,799 --> 00:01:55,799
+Geçenki dersin başında detaylı olarak anlattım onu.
+
+15
+00:01:55,799 --> 00:01:57,799
+Belki 15-20 dakika.
+
+16
+00:01:57,799 --> 00:01:59,799
+Şimdi koduyla bir daha özetlerim.
+
+17
+00:02:00,799 --> 00:02:03,799
+Siz diziler üstünde anlatmışsınız da ben anlayamamışım onu.
+
+18
+00:02:04,799 --> 00:02:09,800
+Yani sonuçta bir polinyon tanımlayabilmen için dizi kullanman gerekiyor.
+
+19
+00:02:09,800 --> 00:02:25,800
+Ondan sonra veya ne bileyim polinyon dışında bir logaritma fonksiyonunun tek bir elemanını belki 3-4 değişken de tanımlayabilirsem ama burada dizi en mantıklısı veya matrisi gerekirse.
+
+20
+00:02:25,800 --> 00:02:31,620
+Çünkü polinyonun da ne var?
+
+21
+00:02:31,620 --> 00:02:33,620
+Kat sayı var, derece var.
+
+22
+00:02:33,620 --> 00:02:39,620
+Ondan sonra logaritmada işte taban var, üst var, önündeki kas sayı var.
+
+23
+00:02:40,620 --> 00:02:50,620
+Sinus-kosuns gibi trigonometrik fonksiyonu dersek trigonometrik fonksiyonu da bir sinusun önünde 3 çarpı sinus 5 parantez içerisinde böyle bir şey olur.
+
+24
+00:02:50,620 --> 00:02:55,620
+Sinusun önündeki değer ve parantez içindeki değer iki tane farklı kas sayı olur.
+
+25
+00:02:55,620 --> 00:03:00,620
+Bunların her bir büyüklüğünü nerede saklayabilirsin?
+
+26
+00:03:00,620 --> 00:03:02,620
+Dizide saklarsın her bir terimi.
+
+27
+00:03:03,620 --> 00:03:07,219
+Tamam mı?
+
+28
+00:03:07,219 --> 00:03:09,219
+Anladım.
+
+29
+00:03:09,219 --> 00:03:14,219
+Kısa bir şey yaparız hani özet geçeyim tekrardan.
+
+30
+00:03:14,219 --> 00:03:17,219
+Şuradan bir şey bulacağım arkadaşlar bir saniye.
+
+31
+00:03:17,219 --> 00:03:54,520
+Fonksiyona hatta o videoyu tekrar izlersen orada daha detaylı anlattığımı hatırlıyorum.
+
+32
+00:03:54,520 --> 00:03:59,520
+Fonksiyona mesela sinus ekleyebilirsin, polinyon bir şeye ekleyebilirsin.
+
+33
+00:03:59,520 --> 00:04:03,520
+Artık bu nasıl karmaşık yaptığınızla alakalı.
+
+34
+00:04:03,520 --> 00:04:09,520
+Ne kadar detaylı analiz yapabilirsiniz o kadar iyi olacak.
+
+35
+00:04:09,520 --> 00:04:12,520
+Burada hani bir yerde basitten başlayın.
+
+36
+00:04:12,520 --> 00:04:15,520
+Karmaşıkla karmaşığa doğru ilerleyin.
+
+37
+00:04:15,520 --> 00:04:25,519
+Mesela sinus 3 çarpı sinus 5 gibi bir şey.
+
+38
+00:04:25,519 --> 00:04:27,519
+Sinus 5'in 3 katını alacaksınız.
+
+39
+00:04:27,519 --> 00:04:36,519
+Artı x³-5x²-7 böyle bir şey yapmak istiyorsunuz.
+
+40
+00:04:36,519 --> 00:04:38,519
+Eşittir 0.
+
+41
+00:04:38,519 --> 00:04:40,519
+Ekstra bir şeyler dek dönüp düşünün.
+
+42
+00:04:40,519 --> 00:04:46,519
+Diyeceksiniz ki önce ara yüzde şunu sorarsınız.
+
+43
+00:04:46,519 --> 00:04:50,519
+Fonksiyonuna da eklenecek fonksiyon türünü giriniz.
+
+44
+00:04:50,519 --> 00:05:01,519
+Bir trigonometrik, iki polinyon, üç logaritm, dört.
+
+45
+00:05:01,519 --> 00:05:07,009
+Arktancıdan tabi ki gerek yok.
+
+46
+00:05:07,009 --> 00:05:11,009
+Üstel fonksiyon, eksponansiyel.
+
+47
+00:05:11,009 --> 00:05:17,899
+Yani a çarpı b üzeri n gibi bir fonksiyon olacak.
+
+48
+00:05:17,899 --> 00:05:21,899
+Veya tabi burada b olmaz da x üzeri n olacak.
+
+49
+00:05:21,899 --> 00:05:31,819
+Şimdi yapacağımız şey, b üzeri x olacak.
+
+50
+00:05:31,819 --> 00:05:35,819
+Bilinmeyen şey de derece olarak.
+
+51
+00:05:35,819 --> 00:05:41,819
+Trigonometri seçtiğimde diyeceğim ki ben fonksiyonun türünü giriniz.
+
+52
+00:05:41,819 --> 00:05:42,819
+Fonksiyonun türünü olabilir.
+
+53
+00:05:42,819 --> 00:05:47,819
+İşte sinus olur, cosinus olur, tangent, cotangent olur.
+
+54
+00:05:47,819 --> 00:05:49,819
+Önce sinus ve cosinus'u modellersiniz.
+
+55
+00:05:49,819 --> 00:05:54,819
+Sonra ben buna a diyelim, b diyelim, c diyelim, d diyelim.
+
+56
+00:05:54,819 --> 00:05:55,819
+A'yı seçtim.
+
+57
+00:05:55,819 --> 00:05:59,819
+A'yı seçtikten sonrasında soracaksınız ki kat sayı giriniz.
+
+58
+00:05:59,819 --> 00:06:04,670
+Kat sayısına mesela 3 girdim.
+
+59
+00:06:04,670 --> 00:06:09,670
+B'yi de derece diyelim buna da.
+
+60
+00:06:09,670 --> 00:06:13,670
+Paraket içerisindeki şey açıdır aslında derece değil de.
+
+61
+00:06:13,670 --> 00:06:15,670
+Açı giriniz.
+
+62
+00:06:15,670 --> 00:06:17,670
+5 girdim.
+
+63
+00:06:17,670 --> 00:06:18,670
+5 girdim.
+
+64
+00:06:18,670 --> 00:06:21,670
+Bu girdiğim değerler normalde bir dizide saklandır.
+
+65
+00:06:21,670 --> 00:06:27,670
+İşte bir tane sinus yani iki tane değer oluyor ya çünkü 3 ve 5'i bir dizide saklayacaksın.
+
+66
+00:06:27,670 --> 00:06:29,670
+Bu işlem bitti.
+
+67
+00:06:29,670 --> 00:06:31,670
+Tamam eleman girme işlemleri bitti.
+
+68
+00:06:31,670 --> 00:06:39,949
+Sonra terimi eklemek ister misiniz veya fonksiyonu eklemek ister misiniz diyecek.
+
+69
+00:06:39,949 --> 00:06:43,779
+Evet hayır.
+
+70
+00:06:43,779 --> 00:06:47,779
+Ben evet'i seçersem şu işlem baştan başlayacak.
+
+71
+00:06:47,779 --> 00:06:49,779
+Şu menü tekrar gelecek.
+
+72
+00:06:49,779 --> 00:06:51,779
+Tamam mı?
+
+73
+00:06:51,779 --> 00:06:53,779
+Ana menümüz.
+
+74
+00:06:53,779 --> 00:06:55,779
+Bunu bir fonksiyon yaparsınız.
+
+75
+00:06:55,779 --> 00:06:59,779
+Bu ana menü tekrar gelince bu sefer neyi seçeceğim?
+
+76
+00:06:59,779 --> 00:07:01,779
+Polinom seçeceğim.
+
+77
+00:07:01,779 --> 00:07:05,779
+O 2'yi seçince diyecek ki polinom derecesine giriniz.
+
+78
+00:07:05,779 --> 00:07:08,779
+Polinomun derecesindedir en yüksek terimdir.
+
+79
+00:07:08,779 --> 00:07:10,779
+İşte burada 3 girdik.
+
+80
+00:07:10,779 --> 00:07:20,759
+Ben 3 girdikten sonra işte birinci sıfırıncı diyelim hatta sıfırıncı dereceli terim.
+
+81
+00:07:20,759 --> 00:07:23,759
+Niye bunları bir dizide saklamak gerekiyor?
+
+82
+00:07:23,759 --> 00:07:26,759
+Şimdi onu da şöyle yaparız.
+
+83
+00:07:26,759 --> 00:07:29,759
+Sıfırıncı dereceleri dizilerin indisleri bu tutar.
+
+84
+00:07:29,759 --> 00:07:33,779
+Şuna gerek yok.
+
+85
+00:07:33,779 --> 00:07:42,019
+Sıfırıncı dereceli terimin kat sayısı.
+
+86
+00:07:42,019 --> 00:07:47,939
+Çünkü terimleri şey yaparsak bu yeterli.
+
+87
+00:07:47,939 --> 00:07:48,939
+Kat sayısı neymiş?
+
+88
+00:07:49,939 --> 00:07:52,939
+X7 girince dizide bu gerekecek.
+
+89
+00:07:52,939 --> 00:07:56,939
+Birinci dereceli terimin kat sayısı.
+
+90
+00:07:56,939 --> 00:07:58,939
+Neymiş o?
+
+91
+00:07:58,939 --> 00:07:59,939
+Sıfırmış.
+
+92
+00:07:59,939 --> 00:08:02,939
+Herhangi bir X'e bağlı bir şey yok.
+
+93
+00:08:02,939 --> 00:08:08,250
+İkinci dereceli terim kat sayısı.
+
+94
+00:08:08,250 --> 00:08:09,250
+Burada ne var?
+
+95
+00:08:09,250 --> 00:08:10,250
+X5 var.
+
+96
+00:08:10,250 --> 00:08:12,250
+X5 gireceğim.
+
+97
+00:08:12,250 --> 00:08:14,250
+Tabii şu sıfır olacak.
+
+98
+00:08:14,250 --> 00:08:16,250
+Bu X5 olacak.
+
+99
+00:08:16,250 --> 00:08:21,069
+Üçüncü dereceli terimin kat sayısı.
+
+100
+00:08:21,069 --> 00:08:22,069
+Ne var?
+
+101
+00:08:22,069 --> 00:08:26,430
+1 var.
+
+102
+00:08:26,430 --> 00:08:28,430
+Terim eklemek ister misiniz diyor.
+
+103
+00:08:28,430 --> 00:08:31,430
+Böyle bir mesaj gelecek.
+
+104
+00:08:31,430 --> 00:08:37,460
+Evet hayır.
+
+105
+00:08:37,460 --> 00:08:39,460
+Ben hayır seçtim burada.
+
+106
+00:08:39,460 --> 00:08:42,460
+Hayır seçince elimde olan şey ne olacak?
+
+107
+00:08:42,460 --> 00:08:45,460
+Artık 3 çarpı sin5 gibi.
+
+108
+00:08:45,460 --> 00:08:55,460
+Artık x5 x7 gibi bir şey elimde hazır olmuş.
+
+109
+00:08:55,460 --> 00:09:02,460
+Ben biliyorum ki bunun ilk terime bir sin5, diğeri de bir polino.
+
+110
+00:09:02,460 --> 00:09:08,460
+Bu formatla diğer şeyleri de geçen derste anlattığım gibi modelleyebilirsiniz.
+
+111
+00:09:08,460 --> 00:09:10,460
+Bakın bir modelleme var.
+
+112
+00:09:10,460 --> 00:09:18,740
+Logaritmaya da üstel hesaplatmak için nasıl bir yöntem?
+
+113
+00:09:18,740 --> 00:09:22,740
+Logaritmada da X'e bağlı bir şeyiniz olacak sonuçta.
+
+114
+00:09:22,740 --> 00:09:28,740
+Değer vererek bunların gerçek değerlerini bulacaksınız şimdi.
+
+115
+00:09:28,740 --> 00:09:34,740
+Logaritmada tabi bir sorgulama yapmanız gerekiyor.
+
+116
+00:09:34,740 --> 00:09:37,740
+Logaritma 10 tabanında X diye modellediniz.
+
+117
+00:09:37,740 --> 00:09:40,740
+Başlangıç değeriniz mesela denklem çözüyorsunuz.
+
+118
+00:09:40,740 --> 00:09:44,740
+Logaritma 10 tabanında 5'ten başladınız diyelim.
+
+119
+00:09:44,740 --> 00:09:47,740
+10 tabanında 5'in değerini eksin onu bulmanız lazım.
+
+120
+00:09:47,740 --> 00:09:50,740
+Bunu bulurken de zaten hazır fonksiyon kullanmanız gerekiyor.
+
+121
+00:09:50,740 --> 00:09:53,740
+Yani normalde bu işlem hesap makinesiyle yapılan bir şey elle yapacak olsa.
+
+122
+00:09:53,740 --> 00:09:56,740
+Logaritma 10 tabanında 5'e bakacaksınız.
+
+123
+00:09:56,740 --> 00:09:58,740
+Sonra ne bileyim X güncellenecek.
+
+124
+00:09:58,740 --> 00:10:00,740
+Logaritma 10 tabanında 6'ya bakacaksınız.
+
+125
+00:10:00,740 --> 00:10:05,740
+Bu şekilde bir arama şeklinde mesela bir kök arıyorsak.
+
+126
+00:10:05,740 --> 00:10:07,740
+Buna uygun bir arama.
+
+127
+00:10:07,740 --> 00:10:12,740
+Onun için de işte C'deki logaritma fonksiyonunu kullanabilirsiniz.
+
+128
+00:10:12,740 --> 00:10:14,740
+Değer kaç?
+
+129
+00:10:14,740 --> 00:10:17,740
+Veya E üzeri X.
+
+130
+00:10:17,740 --> 00:10:20,740
+E sayısının X'in dizilerinden kuvveti.
+
+131
+00:10:20,740 --> 00:10:27,740
+Onu matematik kütüphanesinin fonksiyonları yeterli olur size.
+
+132
+00:10:27,740 --> 00:10:29,740
+Demek istediğin oydu herhalde [öğrenci].
+
+133
+00:10:29,740 --> 00:10:30,740
+Evet hocam oydu.
+
+134
+00:10:30,740 --> 00:10:38,740
+E üzeri X'i gösterdiğimiz yöntemde falan yazdım da logaritma ya da üstel fonksiyonlarda nasıl yapacağız diye onun için sormuştum.
+
+135
+00:10:38,740 --> 00:10:41,740
+Tabii yani bu sonuçta yani bunu şöyle düşünün.
+
+136
+00:10:41,740 --> 00:10:43,740
+Elle çözdüğünüzü düşünün.
+
+137
+00:10:43,740 --> 00:10:45,740
+Mutlaka hesap makinesine ihtiyacınız var.
+
+138
+00:10:45,740 --> 00:10:47,740
+İteratif yöntem kullanıyoruz.
+
+139
+00:10:48,740 --> 00:10:50,740
+İşte bir başlangıç değerini aldık.
+
+140
+00:10:50,740 --> 00:10:53,740
+Yani biz size sınav yapacak olsaydık diyecektik arkadaşlar.
+
+141
+00:10:53,740 --> 00:10:57,740
+Sınavda yani okula mutlaka hesap makinesiyle giren sınav.
+
+142
+00:10:57,740 --> 00:11:00,740
+Çünkü bilmediğiniz değerler var.
+
+143
+00:11:00,740 --> 00:11:03,740
+Bunun yerinde de bilmediğin bir şey yazamazsın, ilerleyemezsin.
+
+144
+00:11:03,740 --> 00:11:08,740
+Yani itirasyonların ilerleyebilmesi için gerçek değerlere ihtiyacımız var.
+
+145
+00:11:08,740 --> 00:11:10,740
+İşte ne yapıyorduk hesap makinesi kullandık.
+
+146
+00:11:10,740 --> 00:11:15,740
+Burada da C'nin fonksiyonlarını kullanmak gerekiyor.
+
+147
+00:11:15,740 --> 00:11:18,740
+Newton-Raphson'da türevi kullanıcı mı giriyordu?
+
+148
+00:11:18,740 --> 00:11:21,740
+Yani kullanıcının bence girmesine gerek yok.
+
+149
+00:11:21,740 --> 00:11:28,740
+Fonksiyonu aldıktan sonra türevini alacak bir fonksiyon yazabilirsiniz.
+
+150
+00:11:28,740 --> 00:11:31,740
+Yani bir sinüs fonksiyonu nasıl alınacak?
+
+151
+00:11:31,740 --> 00:11:33,740
+Onu modelleyeceksiniz.
+
+152
+00:11:33,740 --> 00:11:36,740
+Tabii orada 3-4 tane fonksiyon yazacaksın.
+
+153
+00:11:36,740 --> 00:11:40,740
+Polinomun türevi yine dizide alınır, o kolaydır.
+
+154
+00:11:41,740 --> 00:11:47,740
+Sinüs'ün türevini cosinüs diye şöyle bir fonksiyon yazacaksınız.
+
+155
+00:11:47,740 --> 00:11:51,740
+Sinüs, türev, al diye bir fonksiyon.
+
+156
+00:11:51,740 --> 00:11:53,740
+İşte bu sinüs dediğimiz bir dizi.
+
+157
+00:11:53,740 --> 00:12:01,059
+Bunu bir ne bileyim double dizisiyle buraya bu katsalılar alınacak.
+
+158
+00:12:01,059 --> 00:12:06,059
+Sonra bir başka double dizisiyle de türevini yani fonksiyon diyelim.
+
+159
+00:12:06,059 --> 00:12:11,059
+Double fonksiyon diye şey, türev fonksiyonu, TF diyelim.
+
+160
+00:12:11,059 --> 00:12:14,059
+Bunu return buradan değiştirebilirsiniz.
+
+161
+00:12:14,059 --> 00:12:16,059
+Orada da ne olacak?
+
+162
+00:12:16,059 --> 00:12:19,059
+İçerideki şey cosinüs'e dönecek.
+
+163
+00:12:19,059 --> 00:12:26,299
+İşte sinüs'ün türevi cosinüs'ü.
+
+164
+00:12:26,299 --> 00:12:29,299
+Tabii şurası 5x arkadaşlar.
+
+165
+00:12:29,299 --> 00:12:31,299
+Hep yanlış yazıyoruz.
+
+166
+00:12:31,299 --> 00:12:35,299
+Buradaki türevi mantı iken hesaplamamız lazım.
+
+167
+00:12:35,299 --> 00:12:38,299
+Tabii şurada şöyle şeyler olabilir de ona girmeyin.
+
+168
+00:12:38,299 --> 00:12:42,299
+3 çarpı sinüs 5x² olabilir.
+
+169
+00:12:42,299 --> 00:12:46,299
+Yani sinüsün içerisinde bir şey bakın iş iyice karmaşıklaşıyor.
+
+170
+00:12:46,299 --> 00:12:49,299
+Veya 3 çarpı sinüs e üzeri x.
+
+171
+00:12:49,299 --> 00:12:57,740
+Onlar da olabilir ama biz sadece burada tek değişkenlerin olduğu fonksiyonları düşünelim yeterli.
+
+172
+00:12:57,740 --> 00:13:03,740
+Tabii polinomun türevini alırken yeni bir dizide saklamamız gerekiyor.
+
+173
+00:13:03,740 --> 00:13:07,740
+Yani bu polinom bunun türevini olacak.
+
+174
+00:13:07,740 --> 00:13:10,740
+Eksi 7x² müydü bu?
+
+175
+00:13:10,740 --> 00:13:12,740
+Pardon 3x² idi.
+
+176
+00:13:12,740 --> 00:13:15,740
+O zaman bu bir derece aşağıya gelecek.
+
+177
+00:13:15,740 --> 00:13:17,740
+3 tane derece olacak.
+
+178
+00:13:17,740 --> 00:13:23,049
+3x² 0,1,2'ye gelecek.
+
+179
+00:13:23,049 --> 00:13:26,049
+3x²'den buradan bu geldi.
+
+180
+00:13:26,049 --> 00:13:30,049
+Eksi 10x 0.
+
+181
+00:13:30,049 --> 00:13:33,049
+Şöyle bir şey yani bundan bunu elde edeceksiniz.
+
+182
+00:13:33,049 --> 00:13:36,639
+Güzel bir şey.
+
+183
+00:13:36,639 --> 00:13:39,639
+Polinom dizisini matris olarak saklamak.
+
+184
+00:13:39,639 --> 00:13:40,639
+Olabilir.
+
+185
+00:13:40,639 --> 00:13:41,639
+Problem değil.
+
+186
+00:13:41,639 --> 00:13:47,639
+Hani alır almaz kullancıdan türevini de hesaplatabilirsiniz.
+
+187
+00:13:47,639 --> 00:13:50,639
+Yani kullancıdan almamak şartıyla türevini.
+
+188
+00:13:50,639 --> 00:13:53,639
+Ama polinom türevi almak en kolay işlerden bir tanesi.
+
+189
+00:13:53,639 --> 00:14:01,639
+Bence orada hani istediğiniz rey yapısı kullanılabilir ama tamamen şey tasarıma bağlı düşmek lazım.
+
+190
+00:14:01,639 --> 00:14:08,639
+Ben hani şöyle yapın diye doğrudan veri yapısı tasarımında size bir sınır veya bir yönlendirme koymayayım.
+
+191
+00:14:08,639 --> 00:14:11,639
+Siz biraz onun üzerinde düşünün arkadaşlar.
+
+192
+00:14:11,639 --> 00:14:14,639
+Çünkü projenin genelini siz yapacaksınız.
+
+193
+00:14:14,639 --> 00:14:18,639
+Benim burada söylediklerim fikir verme amaçlı olsun.
+
+194
+00:14:18,639 --> 00:14:33,120
+Var mı başka sorunuz?
+
+195
+00:14:33,120 --> 00:14:38,740
+Pekala.
+
+196
+00:14:38,740 --> 00:14:46,769
+Şimdi vaatimizi bulalım.
+
+197
+00:14:46,769 --> 00:15:13,730
+Son ders.
+
+198
+00:15:13,730 --> 00:15:19,730
+Geçen hafta doğursal olmayan denklemlerin çözümünü tamamladık.
+
+199
+00:15:19,730 --> 00:15:23,730
+Doğursal eşitlikle çözümü ile alakalı kısma gelecektik.
+
+200
+00:15:23,730 --> 00:15:29,730
+Şurada sadece hızlıca diğer grup bugün bizden geriymiş.
+
+201
+00:15:29,730 --> 00:15:32,730
+Ben bizi onlardan geriyi zannediyordum da.
+
+202
+00:15:32,730 --> 00:15:35,730
+Kuyuzun cevaplarını da göstereyim.
+
+203
+00:15:35,730 --> 00:15:39,730
+Birinci sorunun cevabı A, B ve C olacak.
+
+204
+00:15:39,730 --> 00:15:43,730
+Tabii bu sorular sizde farklı sorularla geldiği için farklılık olabilir.
+
+205
+00:15:44,730 --> 00:15:49,730
+Şurada üç noktayı birbirine eşitleyip yerine bir koymamız gerekiyordu.
+
+206
+00:15:49,730 --> 00:15:51,730
+Cevabımız 21 olacaktı.
+
+207
+00:15:51,730 --> 00:15:54,730
+Şöyle hızlıca bir çözüm var.
+
+208
+00:15:54,730 --> 00:16:01,730
+Burada bir tek şunu yöntemini kullanarak bu işi yapmak için cevabımız A olacaktı.
+
+209
+00:16:01,730 --> 00:16:05,730
+Önce sürekli kontrol yapıyoruz.
+
+210
+00:16:05,730 --> 00:16:14,730
+Sonra bu aralıkta kökün 0 crossing durumu var mı yok mu ona bakıyoruz.
+
+211
+00:16:14,730 --> 00:16:18,730
+Sonra 1.5 noktasına bakılıyor.
+
+212
+00:16:18,730 --> 00:16:25,730
+Ondan sonra bu 1 ile 1.5 arasında 0'dan küçük bir 0 crossing var mı ona bakıyoruz.
+
+213
+00:16:25,730 --> 00:16:28,730
+Sonra 1.25'e bakıyoruz.
+
+214
+00:16:28,730 --> 00:16:33,730
+Sonra da durma kriterine göre devam ediyoruz.
+
+215
+00:16:34,730 --> 00:16:38,730
+Ortalama değer teorimi dalgalanma sayısı hakkında bilgi verir diye.
+
+216
+00:16:38,730 --> 00:16:45,730
+Hatta bunu tekrar da etmiştik son derste bazı arkadaşlar söylemişti.
+
+217
+00:16:45,730 --> 00:16:53,730
+Şu sorunun durma koşulları buradakilerin hepsi durma koşulları kullanılabilir arkadaşlar.
+
+218
+00:16:53,730 --> 00:17:01,730
+Şu soruda yapılacak şey de şimdi kesişme noktası demek ortak çözüm demektir.
+
+219
+00:17:01,730 --> 00:17:06,730
+2-8-Sinus x artı 3 eşittir 0.
+
+220
+00:17:06,730 --> 00:17:09,730
+Yani ikisini birbirine eşitlediniz.
+
+221
+00:17:09,730 --> 00:17:12,730
+Tek bir denklem haline getiriyorsunuz.
+
+222
+00:17:12,730 --> 00:17:18,730
+Newton-Raphson yöntemi ile arama işlemine başlıyorsunuz.
+
+223
+00:17:18,730 --> 00:17:21,730
+İşte 4 noktasından başlayacakmış.
+
+224
+00:17:21,730 --> 00:17:26,730
+Üçüncü itirasyon da B adımına kadar devam edecekmiş diyelim.
+
+225
+00:17:26,730 --> 00:17:28,730
+Bunu da söylemiş olalım.
+
+226
+00:17:28,730 --> 00:17:33,140
+Vize tarihleri konusunda şöyle bir şey var.
+
+227
+00:17:33,140 --> 00:17:36,140
+Bölüm vize programını belirliyor.
+
+228
+00:17:36,140 --> 00:17:38,140
+Biz belirlemiyoruz onu.
+
+229
+00:17:38,140 --> 00:17:45,140
+Mesela yapısal programlamada vize haftasında, birinci vize haftasında sınav yapmayacağız.
+
+230
+00:17:45,140 --> 00:17:48,140
+İlerleyen haftalarda yapacağız.
+
+231
+00:17:48,140 --> 00:17:54,140
+Bağan hocayla dönem başında da konuştuğumuz şekilde iki vize yapacağımızı konuşmuştuk.
+
+232
+00:17:54,140 --> 00:17:58,140
+Dolayısıyla birinci vize haftasında sayısal analiz için vize yaparız.
+
+233
+00:17:58,140 --> 00:18:01,140
+Vizenin şeklinde büyük ihtimalle klasik olur.
+
+234
+00:18:01,140 --> 00:18:12,140
+Yani 90 dakika, 70 dakika artık ne kadar süreyse size sorular, 5-6 tane ne kadar soru varsa sistemden alacaksınız.
+
+235
+00:18:12,140 --> 00:18:18,140
+Normal bir sınavda olduğu gibi yazacaksınız, imzalayacaksınız kağıdınızı falan.
+
+236
+00:18:18,140 --> 00:18:23,140
+Kurallar gereğince sisteme tekrar sarayıp yükleyeceksiniz.
+
+237
+00:18:23,140 --> 00:18:26,140
+Sisteme tekrar sarayıp yükleyeceksiniz.
+
+238
+00:18:26,140 --> 00:18:30,440
+Kod yazmazsınız.
+
+239
+00:18:30,440 --> 00:18:33,440
+Yani bu sayısal analizde kodluk çok bir şey yok.
+
+240
+00:18:33,440 --> 00:18:35,440
+Koda gerek yok.
+
+241
+00:18:35,440 --> 00:18:43,440
+Daha çok iteratif diyebileceğimiz adım adım problemin çözümüne ilişkin.
+
+242
+00:18:43,440 --> 00:18:46,440
+Mesela quizlerde sorulan şu biraz önceki soru.
+
+243
+00:18:46,440 --> 00:18:48,440
+Denklemin kökünü bulacağız.
+
+244
+00:18:48,440 --> 00:18:50,440
+Kesişme noktasını.
+
+245
+00:18:50,440 --> 00:18:53,440
+Şu yöntemle denklemin kökünü bulun dedik.
+
+246
+00:18:54,440 --> 00:18:56,440
+Durma kriterini verdik.
+
+247
+00:18:56,440 --> 00:18:59,440
+Kaç adım gidecekseniz onu bulacaksınız.
+
+248
+00:18:59,440 --> 00:19:09,910
+Doğrusal denklem takımlarının çözümünde öncelikle arkadaşlar linear deng matrisleri bir bakalım demiştik.
+
+249
+00:19:09,910 --> 00:19:12,910
+Matrislerin ne olduğundan falan bahsettik.
+
+250
+00:19:12,910 --> 00:19:18,910
+Şurada ortogonal ile alakalı kısa bir düzeltme.
+
+251
+00:19:18,910 --> 00:19:21,910
+Şu transpos olacakmış.
+
+252
+00:19:21,910 --> 00:19:23,910
+Burada tabi alta düşmüş bu.
+
+253
+00:19:23,910 --> 00:19:31,420
+Ben de hani bunları çok fazla kullanmadığım için düzeltmek gereği duydum.
+
+254
+00:19:31,420 --> 00:19:33,420
+Şurada da şu var.
+
+255
+00:19:33,420 --> 00:19:41,420
+Tersiyle kendisi eşit olan diyelim.
+
+256
+00:19:41,420 --> 00:19:43,420
+Transpoza eşit olan.
+
+257
+00:19:43,420 --> 00:19:45,420
+Şimdi arkadaşlar.
+
+258
+00:19:45,420 --> 00:19:53,420
+Proje kapsamında bu chapterdan yapmanız gereken, kodlamamız gereken ilk basit şey.
+
+259
+00:19:53,420 --> 00:19:57,420
+Bir maddisin transposunu almak.
+
+260
+00:19:57,420 --> 00:20:00,980
+Maddisin transposu nasıl alınır?
+
+261
+00:20:00,980 --> 00:20:04,980
+Hatta ben uygulamada birazcık bir şeyler söylemiştim, yapmıştık.
+
+262
+00:20:04,980 --> 00:20:08,980
+Yapısalda iki grupta gördü diye biliyorum.
+
+263
+00:20:08,980 --> 00:20:11,980
+Diğer grupta da Sevgi Hoca barajı o hafta anlatacaktı.
+
+264
+00:20:11,980 --> 00:20:16,980
+Bunun nasıl alınacağını öncelikle kodlamaya başlayın.
+
+265
+00:20:16,980 --> 00:20:28,980
+Sonra kofaktör maddis üzerinden biliyorsunuz ki bir maddisin adjoint maddisi hesaplanıyor.
+
+266
+00:20:28,980 --> 00:20:32,980
+Bu adjoint maddisten de ne yapılıyor?
+
+267
+00:20:32,980 --> 00:20:36,980
+Transpozesine bölünüp maddisin tersi alınıyor.
+
+268
+00:20:36,980 --> 00:20:41,980
+Maddisin tersini alacak bir kodla yazmanız lazım.
+
+269
+00:20:41,980 --> 00:20:45,980
+Herhangi bir maddis verdik, bunun tersini alacağız.
+
+270
+00:20:45,980 --> 00:20:48,980
+Tabii maddisin tersinin alınması için ne olması lazım?
+
+271
+00:20:48,980 --> 00:20:51,980
+Determinantının sıfırdan farklı olması lazım dedik.
+
+272
+00:20:51,980 --> 00:20:54,980
+Bir de şimdilik kare maddis olsun dedik.
+
+273
+00:20:54,980 --> 00:20:57,980
+Onun için bunların kodlarını yazmaya başlayabilirsiniz.
+
+274
+00:20:57,980 --> 00:21:04,980
+Çünkü projede buradan da birkaç tane şey var hem de yapısal içinde fayda olur.
+
+275
+00:21:04,980 --> 00:21:09,980
+Maddislerde toplama çıkarma yapılabilir.
+
+276
+00:21:09,980 --> 00:21:14,980
+Sizinle daha sonra biz elementer satır işlemlerine bakmıştık.
+
+277
+00:21:14,980 --> 00:21:18,980
+Bunları dedik ki eşitlikle denklemlerin çözümünü de kullanacağız.
+
+278
+00:21:18,980 --> 00:21:23,980
+Aslında bu elementer satır işlemleri yaptığımız şey şunu sağlıyor arkadaşlar.
+
+279
+00:21:23,980 --> 00:21:27,980
+Mesela şöyle bir denklem sistemi olsun.
+
+280
+00:21:27,980 --> 00:21:32,980
+Bu denklem sistem dediğimiz yani normal üniversite giriş sınavında yaptığınız
+
+281
+00:21:32,980 --> 00:21:41,980
+2x artı 3y eşittir 8, 3x-y eşittir 12 diyelim böyle bir şey.
+
+282
+00:21:41,980 --> 00:21:43,980
+Şimdi bunu çözerken ne yapıyorduk?
+
+283
+00:21:43,980 --> 00:21:45,980
+İşte şurayı üçle çarpalım diyorduk.
+
+284
+00:21:45,980 --> 00:21:52,980
+Aslında bu üçle çarpma işlemini daha böyle yani şunlar nasıl yer değiştirecek?
+
+285
+00:21:52,980 --> 00:21:53,980
+Bunlar nasıl yer değişecek?
+
+286
+00:21:53,980 --> 00:22:01,980
+X ve y'leri görmeden şöyle 2, 3, 8, 3-1, 12 deyip,
+
+287
+00:22:01,980 --> 00:22:08,980
+işte buradan prim maddis oluşturma mantığıyla veya diğer yöntemlerle ne yapacağız?
+
+288
+00:22:08,980 --> 00:22:09,980
+Birazdan göreceğiz.
+
+289
+00:22:09,980 --> 00:22:12,980
+Şu bilinmeyenleri bulmaya çalışacağız.
+
+290
+00:22:12,980 --> 00:22:13,980
+Yapacağımız şey bu.
+
+291
+00:22:13,980 --> 00:22:20,980
+Yani buradaki analitik çözümde yaptığımız bu işi yine linear cebirdeki analitik çözüm yöntemleriyle
+
+292
+00:22:20,980 --> 00:22:29,980
+biraz daha katsayıların değişimi, hedef ulaşacağımız durma noktası açısından daha kolaylık sağlıyor.
+
+293
+00:22:29,980 --> 00:22:33,980
+Çünkü şurada yaptığımız işlem belki iki tane bilinmen için böyle kolay da işte.
+
+294
+00:22:33,980 --> 00:22:35,980
+Üçle çarpınca y'ler gidiyor.
+
+295
+00:22:35,980 --> 00:22:39,980
+Ama düşünün ki arkadaşlar 5 tane bilinmeyen var.
+
+296
+00:22:39,980 --> 00:22:45,980
+Üçle çarpmanız y'ler gitti ama öbür tarafta z'ler ve t'ler birbirine iyice karıştı.
+
+297
+00:22:45,980 --> 00:22:47,980
+Hiçbir zaman bir bilinmeyeni düşüremediniz.
+
+298
+00:22:47,980 --> 00:22:54,980
+İşte bu bir bilinmeyene düşürme işlemi şurada biraz da sistematik halde oluyor.
+
+299
+00:22:54,980 --> 00:22:56,980
+Bugün onlardan bahsedeceğiz.
+
+300
+00:22:56,980 --> 00:23:00,980
+Diğer grup konuya bile gelememişler.
+
+301
+00:23:00,980 --> 00:23:01,980
+Ne yapıyorduk burada?
+
+302
+00:23:01,980 --> 00:23:04,980
+Elementer satır işlemlerini kısaca bir görelim.
+
+303
+00:23:04,980 --> 00:23:07,980
+Sonra devam edeceğiz.
+
+304
+00:23:07,980 --> 00:23:13,359
+Bir satırı istediğimiz bir sayıyla çarpabiliyorduk.
+
+305
+00:23:14,359 --> 00:23:17,359
+İki satırın yeri yer değişebiliyordu.
+
+306
+00:23:17,359 --> 00:23:19,359
+Bu zaten çok daha basit bir şey.
+
+307
+00:23:19,359 --> 00:23:27,089
+Bir satırı alıp diğer bir satırın üzerine ekleyebiliyorduk.
+
+308
+00:23:27,089 --> 00:23:30,089
+Veya işte bir satırı belli bir sayıyla çarpıp diğer bir satıra ekliyorduk.
+
+309
+00:23:30,089 --> 00:23:35,089
+Burada S1'le S2'yi alıp S3'yi S1'in üzerine ekleyebiliyorduk.
+
+310
+00:23:35,089 --> 00:23:41,089
+Tabii şuradaki şey 3 tane S1'i alıp S3'ün üzerine ekleyeceğimizi söylüyoruz.
+
+311
+00:23:42,089 --> 00:23:44,089
+Aslında şu var burada.
+
+312
+00:23:44,089 --> 00:23:47,089
+Hatta geçenlerde [öğrenci] bunu söylemişti.
+
+313
+00:23:47,089 --> 00:23:51,089
+Şu S3'ün üzerine 3 tane S1 ekleyelim.
+
+314
+00:23:51,089 --> 00:23:55,089
+Tekrar S3'e atayalım şeklinde bunu ifade edebiliriz.
+
+315
+00:23:55,089 --> 00:24:00,089
+Bu temel 3 işlem işlemi kullanarak ne yapacağız?
+
+316
+00:24:00,089 --> 00:24:03,089
+Denklemlerimizi belli bir sistematik içerisinde çözeceğiz.
+
+317
+00:24:03,089 --> 00:24:07,089
+Bunlardan birisi elementer satır işlemleriyle.
+
+318
+00:24:07,089 --> 00:24:15,089
+Biraz önce adjoin matris ile yaptığımız matris tersinde bulma işlemiyle elementer satır işlemleriyle yapıyoruz.
+
+319
+00:24:15,089 --> 00:24:18,089
+Bu da şuradan ortaya çıkıyor.
+
+320
+00:24:18,089 --> 00:24:32,089
+Bir matris ile birim matrisi çarptığımızda elde edeceğimiz sonuçla birim matris ile matrisin tersini elde edeceğimiz sonuç üzerinden yola çıkarak bir noktaya geliyoruz.
+
+321
+00:24:33,089 --> 00:24:38,089
+Burada yaptığımız işlem, sol tarafta matrisin kendisi var, sağ tarafta birim matrisi var.
+
+322
+00:24:38,089 --> 00:24:40,089
+Öyle bir elementer satırım işlemi yapacağız ki,
+
+323
+00:24:40,089 --> 00:24:47,089
+sol tarafa birim matrisi, sağ tarafa matrisin tersini oluşturacak.
+
+324
+00:24:47,089 --> 00:24:52,089
+Burada yine dikkat edeceğimiz şey kare matrislerinin tersini alınacağını söylemiştik.
+
+325
+00:24:52,089 --> 00:24:55,089
+Her kare matrisinde tersi olmaz.
+
+326
+00:24:55,089 --> 00:24:58,089
+Neden? Determinanta sıfır olabilir.
+
+327
+00:24:59,089 --> 00:25:07,089
+Bu işlem esnasında birim matrisi yaparken bir satır tamamıyla sıfır oluyorsa tersini alamıyoruz.
+
+328
+00:25:07,089 --> 00:25:11,089
+Neden? Tamamıyla sıfır olursa determinanta sıfır olur.
+
+329
+00:25:11,089 --> 00:25:15,089
+Bu sebepten herhangi bir şey olmaz.
+
+330
+00:25:15,089 --> 00:25:18,089
+Yani yapamayız, tersini alamayız.
+
+331
+00:25:18,089 --> 00:25:20,089
+Şunu demek istiyoruz.
+
+332
+00:25:20,089 --> 00:25:26,089
+6, 8, 5, 0, 0, 0, 3, 4, 3 böyle birim matris var.
+
+333
+00:25:26,089 --> 00:25:28,089
+Bunu determinanta alın dersek ne olacak?
+
+334
+00:25:28,089 --> 00:25:36,089
+Sarı skroluna 6, 8, 5 diyelim, 3, 0, 0, 0.
+
+335
+00:25:36,089 --> 00:25:37,089
+Şimdi ne yapıyorduk?
+
+336
+00:25:37,089 --> 00:25:42,089
+Şununla şunu çarpıyorduk, burası sıfır, burayı çarpıyorduk sıfır, burayı çarpıyorduk sıfır.
+
+337
+00:25:42,089 --> 00:25:44,089
+Bir şekilde sıfıra ulaşıyorsunuz.
+
+338
+00:25:44,089 --> 00:25:48,089
+Bunu çarptık sıfır, şunu çarptık sıfır, bunları çarptık sıfır.
+
+339
+00:25:48,089 --> 00:25:52,089
+Bir satırın tamamıyla sıfır olması ne yaptı?
+
+340
+00:25:52,089 --> 00:25:54,089
+Bize determinanta sıfır yaptı.
+
+341
+00:25:54,089 --> 00:25:56,089
+Yani ne demek bu aslında?
+
+342
+00:25:56,089 --> 00:26:01,089
+Yani üç bilinmeyen var ama iki tane denklem var.
+
+343
+00:26:01,089 --> 00:26:04,089
+Üç bilinmeyen de bir şey ile iki denklem zaten çözülmez.
+
+344
+00:26:04,089 --> 00:26:06,089
+En az üç denklem lazım.
+
+345
+00:26:06,089 --> 00:26:12,089
+Üçüncü denklemin sıfır olması yani şunu sıfır vermesi bize çözüm için yeterli değil demek istiyor.
+
+346
+00:26:12,089 --> 00:26:14,089
+Anlatabildim mi?
+
+347
+00:26:14,089 --> 00:26:23,089
+Onun için her karamatisin determinanta olmadığından veya bu şekilde çözüm olmadığından yine tersini alabilmek mümkün değil.
+
+348
+00:26:23,089 --> 00:26:27,089
+Bakın bunlar önemli kilit bilgi sorularıdır.
+
+349
+00:26:27,089 --> 00:26:31,089
+Bazı yerlerde karşınıza gelir.
+
+350
+00:26:31,089 --> 00:26:42,089
+Yani ileride yüksek sanat mülakatında veya ne bileyim doktora mülakatında veya ne bileyim bir projenizde bir yerlerde bir yere girerseniz maddesinin tersini nasıl alırsınız diye bir soru gelir.
+
+351
+00:26:42,089 --> 00:26:47,089
+Bu ki koşul ön koşullardır bunları bilmeniz gerekiyor.
+
+352
+00:26:48,089 --> 00:26:54,089
+Maddesin karesi değilse bazı ön işlemler yaparız demiştik hatta buna bir isim vermiştim.
+
+353
+00:26:54,089 --> 00:26:57,089
+Neydi o isim arkadaşlar hatırlayanınız var mı aranızda?
+
+354
+00:26:57,089 --> 00:27:06,019
+Maddesin kare olmaması durumunda tersini almak için bir şey yapıyorduk.
+
+355
+00:27:06,019 --> 00:27:13,420
+Ne inverse?
+
+356
+00:27:13,420 --> 00:27:16,420
+Södo inverse diye bir şey söyledim hatırlayanınız var mı aranızda?
+
+357
+00:27:16,420 --> 00:27:20,859
+Södo inverse.
+
+358
+00:27:20,859 --> 00:27:26,960
+Şimdi ona geleceğiz.
+
+359
+00:27:26,960 --> 00:27:31,960
+Mesela şöyle bir maddes verildiğinde bunu tersini almak için normalde ne yapıyorduk?
+
+360
+00:27:31,960 --> 00:27:36,960
+Maddesini, adjoin maddesini oluşturup oradan determinantına bölerek bu işi yapıyorduk.
+
+361
+00:27:36,960 --> 00:27:39,960
+Hatta bunun daha kısa yolu vardı işte.
+
+362
+00:27:39,960 --> 00:27:45,960
+Hatırlamıyorum da şu 1 ile 4 ailen kalıp 3 ile 2 mi yer değiştiriyordu bir şey oluyordu.
+
+363
+00:27:45,960 --> 00:27:47,960
+Evet hocam şeydi kısa yolu.
+
+364
+00:27:47,960 --> 00:27:51,960
+1 ile 4 aynı yer değiştiriyordu 3 ile 2 nin de eksildiği şart oluyordu.
+
+365
+00:27:51,960 --> 00:27:56,960
+Sonra bunu da determinantına bölüyorduk.
+
+366
+00:27:56,960 --> 00:27:58,960
+Sonra da işaretleri yer değiştiriyordu.
+
+367
+00:27:58,960 --> 00:28:01,960
+Tabii bu ikiye ikilik bir durumda varsa.
+
+368
+00:28:01,960 --> 00:28:07,960
+Eğer maddesiniz ikiye ikiyse bu yolu kullanmak hani kod yazarken de kullanmak işe yarayabilir.
+
+369
+00:28:07,960 --> 00:28:20,960
+Ama daha cenerik bir şey olsun istiyorsanız ya şuradaki cofaktör maddesi adjoin maddesi üzerinden veya cofaktör üzerinden bu işi yapacağız.
+
+370
+00:28:20,960 --> 00:28:22,960
+Neredeydi?
+
+371
+00:28:22,960 --> 00:28:32,960
+Tabii önce 20 maddesin determinantının nasıl hesaplanacağını burada dikkate almak gerekiyor.
+
+372
+00:28:32,960 --> 00:28:37,960
+İşte cofaktör de yani bu da iççe bir sürü işlemlerin yapıldığı şey.
+
+373
+00:28:37,960 --> 00:28:42,960
+Bir a maddesinden cofaktör alırken işte a alfa bir bir değeri neye göre?
+
+374
+00:28:42,960 --> 00:28:49,960
+Eksi bir üzeri buradaki indislerin toplamı 1 artı 1 yani buradan bir gelecek.
+
+375
+00:28:49,960 --> 00:28:58,960
+Bu satır ve sütünün dışında kalan bu hücrenin kesiştiği satır ve sütünün dışında kalan elemanların determinanti üzerinden hesaplanıyor.
+
+376
+00:28:58,960 --> 00:29:01,960
+Bakın iççe bir sürü determinant hesabı var.
+
+377
+00:29:01,960 --> 00:29:03,960
+Maliyetli bir şey aslında bu.
+
+378
+00:29:03,960 --> 00:29:13,960
+Determinant hesabı da tabii ikililerde kolay da hani burası 5'e 5'lik bir maddesi olsa bu sefer 4'e 4'lük bir determinant hesabı gerekiyor.
+
+379
+00:29:13,960 --> 00:29:17,960
+4'e 4'lüğü de Sarus kuralıyla bildiğim kadarıyla yapamıyoruz.
+
+380
+00:29:17,960 --> 00:29:20,960
+O 3'e 3'lük bir şeyde yapılıyordu.
+
+381
+00:29:20,960 --> 00:29:33,960
+Onun için tekrar yukarıdaki işlemleri yani determinant işlemlerini biraz da şeyde linerce bir de gördüğünüz şeyde biraz da gözden geçirmek gerekiyor.
+
+382
+00:29:33,960 --> 00:29:35,960
+Efendim [öğrenci].
+
+383
+00:29:35,960 --> 00:29:40,960
+Hocam elementer satırda satırları diğer değiştirme yerini açabilir misiniz hocam?
+
+384
+00:29:40,960 --> 00:29:47,609
+Çok kısa bir şey aklıma takılmıştı da.
+
+385
+00:29:47,609 --> 00:29:49,609
+Geride yok galiba.
+
+386
+00:29:49,609 --> 00:29:51,609
+Evet hocam burası burası.
+
+387
+00:29:51,609 --> 00:29:55,609
+Hocam ikincide satırları yer değiştiriyor ya 10'la 5'le yer değiştirmesi lazım değil mi?
+
+388
+00:29:55,609 --> 00:29:57,609
+Bakayım.
+
+389
+00:29:57,609 --> 00:29:59,609
+Yani Türk satır değişmeyecek mi?
+
+390
+00:29:59,609 --> 00:30:02,609
+1, 3, eksi 1 tabi evet.
+
+391
+00:30:02,609 --> 00:30:05,609
+Burada onların da yer değiştirmesi gerekiyor.
+
+392
+00:30:05,609 --> 00:30:11,920
+Pahan Hoca bunları hazırlarken unuttu herhalde.
+
+393
+00:30:11,920 --> 00:30:14,920
+Normalde Pahan Hoca'nın bu konuda kendi yazılı notlar var.
+
+394
+00:30:14,920 --> 00:30:16,920
+Onlardan alıp salayda dönüştürüyor.
+
+395
+00:30:16,920 --> 00:30:22,920
+Pandemi sürecinden beri Hoca bütün şeylerini dijitale taşımaya çalışıyor.
+
+396
+00:30:22,920 --> 00:30:24,920
+Böyle hataları var.
+
+397
+00:30:24,920 --> 00:30:26,920
+Zaten onun için biraz sinirleniyor.
+
+398
+00:30:26,920 --> 00:30:29,920
+Çünkü slide hazırlamak zor bir şey bazı durumlarda.
+
+399
+00:30:29,920 --> 00:30:32,920
+Gidip başka yerlerden kopyola yapıştırıda yaptığı oluyor.
+
+400
+00:30:32,920 --> 00:30:35,920
+Tamam teşekkür ederim [öğrenci] bu konuda.
+
+401
+00:30:35,920 --> 00:30:37,920
+Rica ederim.
+
+402
+00:30:37,920 --> 00:30:39,920
+Hoca'ya da bunu iletelim.
+
+403
+00:30:39,920 --> 00:30:42,920
+Evet başka bir şey yoksa.
+
+404
+00:30:46,059 --> 00:30:49,059
+İşte burada bu işi yaparken arkadaşlar
+
+405
+00:30:49,059 --> 00:30:53,059
+elementer satır işlemlerinden faydalanalım demişler.
+
+406
+00:30:53,059 --> 00:30:59,059
+Şuradaki maddisi bir anlamda soldaki maddisi
+
+407
+00:30:59,059 --> 00:31:03,059
+birim maddisi haline dönüştürmek istiyoruz maddisin tersini elde etmek için.
+
+408
+00:31:03,059 --> 00:31:07,059
+Şimdi birim maddisi haline dönüştürmek için ilk yapılacak şey
+
+409
+00:31:07,059 --> 00:31:09,059
+şu 3'ü sıfır yapmak istiyoruz.
+
+410
+00:31:09,059 --> 00:31:12,059
+3'ü sıfır yapmak istediğimizde ne yapacağız?
+
+411
+00:31:12,059 --> 00:31:16,059
+Satır 1'i 3'le çarpıp satır 2'ye ekliyoruz.
+
+412
+00:31:16,059 --> 00:31:20,059
+3'le çarpıp satır 2'ye eklediğimizde ne oluyor?
+
+413
+00:31:20,059 --> 00:31:23,059
+Buradaki değer sıfır oluyor.
+
+414
+00:31:23,059 --> 00:31:28,059
+Bakın satırı belli bir şeye bölebilirim.
+
+415
+00:31:28,059 --> 00:31:31,059
+Belli bir sayıyla çarpabilirim.
+
+416
+00:31:31,059 --> 00:31:34,059
+Ama çıkarma yapamam satırın kendi içerisinde.
+
+417
+00:31:34,059 --> 00:31:38,059
+Yani 3-4'ün olduğu satırdan 3-4'ü çıkartamam.
+
+418
+00:31:38,059 --> 00:31:41,059
+Ancak 3'e bölerim veya 4'e bölerim.
+
+419
+00:31:41,059 --> 00:31:43,059
+Bu şekilde bir dönüşüm olur.
+
+420
+00:31:43,059 --> 00:31:47,059
+Ondan önce satır 1'i 3'le çarpıyoruz.
+
+421
+00:31:47,059 --> 00:31:49,059
+Ata x3'le çarpıyoruz.
+
+422
+00:31:49,059 --> 00:31:52,059
+Satır 2'ye ekliyoruz veya satır 2'den çıkartabiliriz.
+
+423
+00:31:52,059 --> 00:31:54,059
+Hiçbir şeye fark etmez.
+
+424
+00:31:54,059 --> 00:31:57,059
+3'le çarptık çıkardığımızda burası sıfır oldu.
+
+425
+00:31:57,059 --> 00:32:00,059
+3'le çarptık x6 oldu.
+
+426
+00:32:00,059 --> 00:32:03,059
+Bundan çıkarsak x2 oldu.
+
+427
+00:32:03,059 --> 00:32:05,059
+Aynı şekilde bu taraf da bundan etkileyelim.
+
+428
+00:32:05,059 --> 00:32:07,059
+3'le çarpınca burası x3.
+
+429
+00:32:07,059 --> 00:32:09,059
+3'le çarpınca sıfır.
+
+430
+00:32:09,059 --> 00:32:12,059
+Şuradaki değerde 1'de 1 olarak kaldı.
+
+431
+00:32:12,059 --> 00:32:23,059
+Sonra şu kısımda burayı x1-2 ile çarpıp kendisine yazınca ne olacak burası arkadaşlar?
+
+432
+00:32:23,059 --> 00:32:24,059
+1 olacak.
+
+433
+00:32:24,059 --> 00:32:27,059
+Ondan sonra burası x3-2 olacak.
+
+434
+00:32:27,059 --> 00:32:29,059
+Burası x3-2 olacak.
+
+435
+00:32:29,059 --> 00:32:31,059
+Burası x1-2 olacak.
+
+436
+00:32:31,059 --> 00:32:32,059
+Bunu bulduk.
+
+437
+00:32:32,059 --> 00:32:34,059
+Sonra şu 2'yi yok edelim diyoruz.
+
+438
+00:32:35,059 --> 00:32:39,059
+Satır 2'yi x2 ile çarpıp satır 1'in üzerine eklersek ne olur?
+
+439
+00:32:39,059 --> 00:32:41,059
+Burası 1 verir sıfır sıfır olur.
+
+440
+00:32:41,059 --> 00:32:43,059
+Aradığımız şeye ulaştık.
+
+441
+00:32:43,059 --> 00:32:52,059
+Bu da x2'ye 1 olacak ve matrisimizin tersi bu şekilde elde edilmiş olacaktır.
+
+442
+00:32:52,059 --> 00:32:53,059
+Tamam.
+
+443
+00:32:53,059 --> 00:32:58,059
+Bunu mesela birazdan denklem çözümlerinde de bu mantığı kullanacağız.
+
+444
+00:32:58,059 --> 00:33:03,059
+Gauss-Jordan metodu olarak bir şekilde ifade edeceğiz.
+
+445
+00:33:03,059 --> 00:33:04,059
+Peki.
+
+446
+00:33:04,059 --> 00:33:06,059
+Herhalde burada kalmıştık.
+
+447
+00:33:06,059 --> 00:33:08,059
+Şurada notum vardı.
+
+448
+00:33:08,059 --> 00:33:10,059
+17.
+
+449
+00:33:10,059 --> 00:33:11,059
+Tamam.
+
+450
+00:33:11,059 --> 00:33:17,059
+Bugün buradaki kısımları bitirip birkaç yöntem üzerinde çalışacağız.
+
+451
+00:33:17,059 --> 00:33:20,059
+Denklem sistemlerinin çözümü ile alakalı.
+
+452
+00:33:20,059 --> 00:33:23,059
+Sonra hani konu bitmez muhtemelen.
+
+453
+00:33:23,059 --> 00:33:26,059
+Çünkü diğer grubu da çok sollamayalım.
+
+454
+00:33:27,059 --> 00:33:29,059
+Yerde bırakırız.
+
+455
+00:33:29,059 --> 00:33:34,059
+Zaten sabah ve [öğrenci] çoğunsa zor oluyor.
+
+456
+00:33:34,059 --> 00:33:39,750
+Ben de fazla zorlamayacağım.
+
+457
+00:33:39,750 --> 00:33:46,750
+Şimdi kare olmayan matrislerin tersinin bulunması pseudo-inverse arkadaşlar.
+
+458
+00:33:46,750 --> 00:33:48,750
+Literatürde hep böyle görürsünüz.
+
+459
+00:33:48,750 --> 00:33:50,750
+Bu da önemli bir bilgidir.
+
+460
+00:33:51,750 --> 00:34:00,750
+Mesela doktora yeterlik sınavında, yüksek hizant giriş sınavında veya herhangi bir yerde bir işe başvurdunuz.
+
+461
+00:34:00,750 --> 00:34:04,750
+Burada size böyle bir soru sorulursa bir matris verildi.
+
+462
+00:34:04,750 --> 00:34:07,750
+Kare bunun tersini almak istiyoruz.
+
+463
+00:34:07,750 --> 00:34:10,750
+Biraz önce bahsettiğimiz iki kurala bakılır.
+
+464
+00:34:10,750 --> 00:34:19,750
+Mesela matris kare değilse o zaman diyeceksiniz ki normal tersi yani doğrudan tersi yoktur ama
+
+465
+00:34:19,750 --> 00:34:22,750
+pseudo-inverse dediğimiz tersi vardır.
+
+466
+00:34:22,750 --> 00:34:26,289
+Bunu söyleyeceksiniz.
+
+467
+00:34:26,289 --> 00:34:28,289
+Burada da şu yapılacak arkadaşlar.
+
+468
+00:34:28,289 --> 00:34:33,289
+Satır sayısı üstünün sayısından büyük sayı yani şöyle bir durum varsa.
+
+469
+00:34:33,289 --> 00:34:38,289
+Öncelikle transpozuyla matrisin kendisini çarpıyorsunuz.
+
+470
+00:34:38,289 --> 00:34:40,289
+Bu ne demek?
+
+471
+00:34:40,289 --> 00:34:50,110
+3 çarpı 2'lik bir matrisle pardon 2 çarpı 3'lük bir matrisle 3 çarpı 2'liği çarparsanız ne olur?
+
+472
+00:34:50,110 --> 00:34:53,110
+2 çarpı 2'lik bir şey mi elde ediyoruz?
+
+473
+00:34:53,110 --> 00:34:56,110
+C'ye 2'lik bir matris elde ediyoruz.
+
+474
+00:34:56,110 --> 00:35:02,110
+Sonra bu C'nin tersini alıyoruz.
+
+475
+00:35:02,110 --> 00:35:10,110
+C'nin tersiyle A'nın transpozunu çarpıp A'nın soldan tersi elde ediliyor.
+
+476
+00:35:10,110 --> 00:35:21,110
+A'nın soldan tersi ile A'yı çarpınca da inmers matrisi veriyormuş.
+
+477
+00:35:21,110 --> 00:35:28,110
+Yani burada A'nın soldan tersi şu kısmı biz pseudo-inverse olarak kullanabiliriz.
+
+478
+00:35:28,110 --> 00:35:32,110
+Yani hiç uzatmaya gerek yok.
+
+479
+00:35:32,110 --> 00:35:37,110
+Transpozuyla kendisini çarptınız bir C'ye matris elde ettiniz.
+
+480
+00:35:38,110 --> 00:35:43,110
+Bu matrisin tersiyle çünkü bu artık bir kare matris.
+
+481
+00:35:43,110 --> 00:35:49,110
+Transpozunu çarptığınızda A'nın transpozunu çarptığınızda elde ettiğiniz şey ne olacak?
+
+482
+00:35:49,110 --> 00:35:52,110
+Matrisin pseudo-inverse olacak.
+
+483
+00:35:52,110 --> 00:36:05,940
+Bu pseudo-inverse da arkadaşlar eğer bir denklem sistemi verildiyse pardon
+
+484
+00:36:05,940 --> 00:36:11,940
+Denklemdeki bilinmeyenlerin yaklaşık değerlerini buluyorsunuz.
+
+485
+00:36:11,940 --> 00:36:17,369
+Yani X'lerin, Y'lerin zaten yaklaşık değerleri bulmalı.
+
+486
+00:36:17,369 --> 00:36:24,369
+Bunu sütün sayısı satır sayısından büyükse, case'inden bakarsak yapacağımız şey şu olacak.
+
+487
+00:36:24,369 --> 00:36:27,369
+Yani 3'e 2 değil de 2'e 3'lük bir matris olsun.
+
+488
+00:36:27,369 --> 00:36:32,369
+Şimdi 2'e 3'lük bir matris de şu algoritmayı uyguladığınızda
+
+489
+00:36:32,369 --> 00:36:40,369
+3 çarpı 2 ile 2 çarpı 3'lük bir şey buluyorsunuz.
+
+490
+00:36:40,369 --> 00:36:45,369
+Bu matrisin boyutu biraz daha büyük oluyor görüyorsunuz.
+
+491
+00:36:45,369 --> 00:36:57,369
+İşte böyle olmasın diye 2 çarpı 3 ile 3 çarpı 2'yi çarpıp yine 2 çarpı 2'lik bir boyutta bir C buldunuz.
+
+492
+00:36:58,369 --> 00:37:01,369
+Bu C'nin tersini alıyorsunuz.
+
+493
+00:37:01,369 --> 00:37:03,369
+Bu kare matrisi olduğu için artık alınabilir.
+
+494
+00:37:03,369 --> 00:37:05,369
+Alınabilme olasılığı vardır.
+
+495
+00:37:05,369 --> 00:37:08,369
+Yine bir satır sıfırdan farklı değilse tabii yapacağız.
+
+496
+00:37:08,369 --> 00:37:15,369
+A'nın transposu ile bu sefer C'ye üzer eksi biri çarpıyorsunuz.
+
+497
+00:37:15,369 --> 00:37:18,369
+Bakın burada C'ye üzer eksi biri ile A'nın transposunu çarpmıştık.
+
+498
+00:37:18,369 --> 00:37:20,369
+A'nın transposu da C'ye üzer eksi biri.
+
+499
+00:37:20,369 --> 00:37:24,369
+Burada yer değiştirme önemli olduğunu herhalde bilmeyen yoktur.
+
+500
+00:37:24,369 --> 00:37:25,369
+Öyle değil mi?
+
+501
+00:37:25,369 --> 00:37:32,369
+Yani bir matris çarpılırken şunların sonuçta boyutlar yer değişiyor.
+
+502
+00:37:32,369 --> 00:37:34,369
+Elde edilen çıktı ona göre olacak.
+
+503
+00:37:34,369 --> 00:37:36,369
+Bu şekilde hesaplanıyor.
+
+504
+00:37:36,369 --> 00:37:46,369
+Şimdi gelelim Gauss-Jordan eliminasyon yöntemi ile bir denklemin köklerinin bulunması.
+
+505
+00:37:46,369 --> 00:37:53,670
+Mesela bunun ekstra örneği de hazırlamıştım da burada varmış.
+
+506
+00:37:53,670 --> 00:37:57,670
+Tabii bunlar arkadaşlar linerce bir.
+
+507
+00:37:57,670 --> 00:38:03,780
+Almayan var mı aranızda linerce bir?
+
+508
+00:38:03,780 --> 00:38:05,780
+Orada gösteriliyor değil mi bu konular?
+
+509
+00:38:05,780 --> 00:38:09,929
+Evet hocam var.
+
+510
+00:38:09,929 --> 00:38:13,929
+Tam sonucu bulabileceğiniz yöntemler.
+
+511
+00:38:13,929 --> 00:38:16,929
+Bir de iteratif algoritmalarımız var.
+
+512
+00:38:16,929 --> 00:38:18,929
+Daha sonra onlara geleceğiz.
+
+513
+00:38:18,929 --> 00:38:26,929
+Tam sonucu bulmaktan kastımız yani eğer bir matrisin satırları sıfırdan
+
+514
+00:38:26,929 --> 00:38:34,929
+yani bütün satırları sıfırdan farklıysa yani hiçbir sıfır sıfır sıfır değilse öyle söyleyelim.
+
+515
+00:38:34,929 --> 00:38:36,929
+Buradan bir sonuç elde edilir.
+
+516
+00:38:36,929 --> 00:38:42,929
+Çünkü matrisin tersini bulursunuz veya ne bileyim işte aramak istediğiniz yere doğru gidersiniz.
+
+517
+00:38:42,929 --> 00:38:50,929
+Ve bulacağınız şey denklemin köklerini x ve y ve z değişkenlerin değerlerini bulabilirsiniz.
+
+518
+00:38:50,929 --> 00:38:53,929
+Gauss-Jordan yöntemi ile diyoruz.
+
+519
+00:38:54,929 --> 00:38:57,929
+Buradaki işlem biraz şeydir.
+
+520
+00:38:57,929 --> 00:39:05,929
+Hani iteratif gibi görünüyor ama bir anlamda hani linerce birdeki analitik yöntemlerimiz
+
+521
+00:39:05,929 --> 00:39:08,929
+sezgisel olarak bu işi yapmak gerekiyor.
+
+522
+00:39:08,929 --> 00:39:10,929
+Niye?
+
+523
+00:39:10,929 --> 00:39:16,929
+Yani ben burada elde etmek istediğim şey Gauss-Jordan yönteminde ne yapıyorduk?
+
+524
+00:39:16,929 --> 00:39:24,929
+Şu ikinci tarafta 1-1-1 elde edecek şekilde ben bu tarafı şuraya benzetmeye çalışıyorum.
+
+525
+00:39:24,929 --> 00:39:27,929
+Şimdi buraya benzetirken bunun belli bir kuralı yok.
+
+526
+00:39:27,929 --> 00:39:29,929
+Onun için ne olacak?
+
+527
+00:39:29,929 --> 00:39:31,929
+Biraz daha sezgisel gidiyoruz.
+
+528
+00:39:31,929 --> 00:39:33,929
+Bunun kodunu yazanlar var.
+
+529
+00:39:33,929 --> 00:39:41,929
+Hani deneme yanılma yöntemi ile yani brute force dediğimiz teknikle aslında kodunu bulabilirsiniz.
+
+530
+00:39:41,929 --> 00:39:48,820
+Gauss-Jordan veya ne bileyim Neve neydi bir tane daha?
+
+531
+00:39:48,820 --> 00:39:50,820
+Gauss elimination.
+
+532
+00:39:50,820 --> 00:39:53,820
+Bunların kodları var yani internetten bakılabilir.
+
+533
+00:39:53,820 --> 00:40:01,820
+Hem bir maddis veriyorsun o Gauss elimination veya Gauss-Jordan elimination yöntemi ile bu işi yapıyor.
+
+534
+00:40:01,820 --> 00:40:07,820
+Ama dediğim gibi bir de bunların dışında yaklaşık çözümü üretecek daha iteratif hiç böyle
+
+535
+00:40:07,820 --> 00:40:11,820
+sezgisel olmayan deterministik adımlarla yaklaşık çözümü üretecek yöntemlerimiz var.
+
+536
+00:40:11,820 --> 00:40:15,130
+Onlara geleceğiz.
+
+537
+00:40:15,130 --> 00:40:28,130
+Şimdi amacımız Gauss-Jordan yönteminde maddisin tersini bulurken veya bir denklem sistemini çözerken şuradan şuraya geçiş yapmak.
+
+538
+00:40:28,130 --> 00:40:35,130
+Buradan buraya geçiş yaparken elde ettiğimiz yani burası bunun gibi olacak.
+
+539
+00:40:35,130 --> 00:40:37,130
+Bu da farklı bir maddes halindir.
+
+540
+00:40:37,130 --> 00:40:39,130
+Elde ettiğim şey ters oluyor.
+
+541
+00:40:39,130 --> 00:40:47,130
+Dolayısıyla benim bunu bir maddise dönüştürmem için birinci satırı A1,1'e böl demiş.
+
+542
+00:40:47,130 --> 00:40:52,130
+Yani şuradaki pivot eleman dediğimiz şeyi birinci satıra bölüyoruz.
+
+543
+00:40:52,130 --> 00:40:54,130
+Bunu bölünce bu 1 olacak 5'e böldük.
+
+544
+00:40:54,130 --> 00:40:57,130
+2'yi 5'e böldük 0.4.
+
+545
+00:40:57,130 --> 00:40:59,130
+Eksi 4'u 5'e böldük.
+
+546
+00:40:59,130 --> 00:41:01,130
+Eksi 0.8.
+
+547
+00:41:01,130 --> 00:41:03,130
+Evet zafer tersi oluyor.
+
+548
+00:41:04,130 --> 00:41:16,130
+Sadece yapılan şey aslında burada literatürde pseudo university'ye göreceğiniz şey doğrudan genellikle şunu görürsünüz.
+
+549
+00:41:16,130 --> 00:41:19,130
+Burada biraz hoca detayına girmiş.
+
+550
+00:41:19,130 --> 00:41:22,130
+Bunu anlatan bu dersteki hocadır Kemal Hoca.
+
+551
+00:41:22,130 --> 00:41:25,130
+Satır sayısı sütün sayısından büyükse diye.
+
+552
+00:41:25,130 --> 00:41:27,130
+Daha çok şunu görürsünüz.
+
+553
+00:41:27,130 --> 00:41:29,130
+Transbozuyla kendisini çarparsınız.
+
+554
+00:41:29,130 --> 00:41:31,130
+Bunu bulursunuz.
+
+555
+00:41:31,130 --> 00:41:35,130
+Hiç yani satır sayısının sütün sayısından büyük olduğu duruma bakılmaz.
+
+556
+00:41:35,130 --> 00:41:39,130
+C maddesini olabildiğince küçük hale getirmeye çalışıyoruz.
+
+557
+00:41:39,130 --> 00:41:41,130
+Yani boyutlarını azaltmaya çalışıyoruz.
+
+558
+00:41:41,130 --> 00:41:44,130
+Onun için burada satır sayısı sütün sayısı özelliğine bakmışlar.
+
+559
+00:41:44,130 --> 00:41:46,130
+Durumlarına bakmışlar.
+
+560
+00:41:46,130 --> 00:41:49,130
+Ondan sonra C'nin tersiyle transbolunu alıyor.
+
+561
+00:41:49,130 --> 00:41:54,199
+Yani sonuçta maddesinin tersi.
+
+562
+00:41:54,199 --> 00:41:59,199
+İki tarafı da A1,1'e 5'e böldükten sonra bakın buradaki değerleri de 5'e bölüyoruz.
+
+563
+00:41:59,199 --> 00:42:01,199
+Eksi 0.2, 0, 0.
+
+564
+00:42:01,199 --> 00:42:03,199
+Şimdi burası 1 oldu.
+
+565
+00:42:03,199 --> 00:42:06,480
+Sonra yapılacak iş.
+
+566
+00:42:06,480 --> 00:42:15,480
+A2,1'i ikinci satırdan A2,1'le çarpıp çıkartıyormuşuz.
+
+567
+00:42:15,480 --> 00:42:18,480
+İki nokta bir şurası.
+
+568
+00:42:18,480 --> 00:42:25,480
+İkinci satırdan A2,1'le bununla birinci satırı çarptık.
+
+569
+00:42:25,480 --> 00:42:27,480
+Kendisinden çıkartıyoruz.
+
+570
+00:42:27,480 --> 00:42:30,480
+O zaman çarpınca ne olacak?
+
+571
+00:42:31,480 --> 00:42:36,480
+Bir, 0.4, eksi 0.8 çıkaracağız demektir.
+
+572
+00:42:36,480 --> 00:42:42,690
+Buradan 1 çıkarınca 0 bulduk.
+
+573
+00:42:42,690 --> 00:42:45,690
+Buradan 0.4 çıkarınca 3.6'yı bulduk.
+
+574
+00:42:45,690 --> 00:42:53,690
+Buradan eksi 0.8 çıkarınca toplama demek 2.8'i bulduk.
+
+575
+00:42:53,690 --> 00:42:56,690
+Buradan 0.2'yi çıkaracağız.
+
+576
+00:42:56,690 --> 00:43:00,690
+Buradan 0 ve buradan 0.
+
+577
+00:43:00,690 --> 00:43:04,690
+Bakın ne oldu? Bir maddise bir adım daha yaklaşabildik.
+
+578
+00:43:04,690 --> 00:43:06,690
+Yani burası 1 olacak dedik.
+
+579
+00:43:06,690 --> 00:43:08,690
+Daha devam ediyoruz.
+
+580
+00:43:08,690 --> 00:43:14,690
+Üçüncü satırdan A3,1 çarpıp birinci satır.
+
+581
+00:43:14,690 --> 00:43:24,690
+Şimdi elimizde böyle bir şey varken, şu varken arkadaşlar.
+
+582
+00:43:24,690 --> 00:43:30,150
+Keşke arasında yazsaydı hocam.
+
+583
+00:43:30,150 --> 00:43:33,690
+Bunu bulduk.
+
+584
+00:43:33,690 --> 00:43:37,690
+Buradan aslında bunu 2 ile çarpıp çıkartsak ne olur?
+
+585
+00:43:37,690 --> 00:43:39,690
+Burası 0 olur.
+
+586
+00:43:39,690 --> 00:43:43,690
+Burası işte 2.2 olur.
+
+587
+00:43:43,690 --> 00:43:45,690
+2 ile çarptık, çıkartıyoruz.
+
+588
+00:43:45,690 --> 00:43:51,260
+A3,1 dediği şuradaki kasya aslında.
+
+589
+00:43:51,260 --> 00:43:55,260
+Sonra bundan bunu çıkarınca burası 7.6'ya girişti.
+
+590
+00:43:55,260 --> 00:43:58,260
+Buradan buraya çıkardığımızda eksi 0.4.
+
+591
+00:43:58,260 --> 00:44:02,260
+Bundan burası 0. Buradan burası 1 olarak kaldı.
+
+592
+00:44:02,260 --> 00:44:04,260
+Tamam mı arkadaşlar?
+
+593
+00:44:04,260 --> 00:44:06,260
+Şurayı 2 ile çarpıyoruz.
+
+594
+00:44:06,260 --> 00:44:08,260
+Ne olur?
+
+595
+00:44:08,260 --> 00:44:11,260
+2, 0.8, eksi 1.6.
+
+596
+00:44:11,260 --> 00:44:13,260
+Bunları ne yapıyoruz?
+
+597
+00:44:13,260 --> 00:44:15,260
+Buradan çıkartıyoruz, şuradan çıkartıyoruz.
+
+598
+00:44:15,260 --> 00:44:17,260
+İşte bu 0 olacak.
+
+599
+00:44:17,260 --> 00:44:19,260
+Bu işte 2.2 olacak.
+
+600
+00:44:19,260 --> 00:44:21,260
+Sonra 7.6.
+
+601
+00:44:21,260 --> 00:44:22,260
+Bunlar da böyle.
+
+602
+00:44:22,260 --> 00:44:26,050
+Şimdi biraz daha yaklaştık.
+
+603
+00:44:26,050 --> 00:44:28,050
+İkinci satırı A2,2'ye böl demiş.
+
+604
+00:44:28,050 --> 00:44:32,050
+Şimdi ikinci satırı A2,2'ye böl demesi ne demek?
+
+605
+00:44:32,050 --> 00:44:43,920
+Yani niye böyle bir şey var?
+
+606
+00:44:43,920 --> 00:44:45,920
+3.6'ya bölmüş galiba hocam.
+
+607
+00:44:45,920 --> 00:44:51,300
+Ama buradaki 0'u bölerse böyle bir şey elde etmez ki.
+
+608
+00:44:51,300 --> 00:44:57,579
+Yani...
+
+609
+00:44:57,579 --> 00:45:00,579
+Hocam komple 3.6'ya bölmüş olabilir mi?
+
+610
+00:45:00,579 --> 00:45:02,579
+Pardon, pardon. Bir dakika.
+
+611
+00:45:04,579 --> 00:45:06,579
+Baştaki 0 zaten.
+
+612
+00:45:06,579 --> 00:45:10,579
+Evet. A2,2'ye böl. A2,2 dediğimiz şey şurası arkadaşlar.
+
+613
+00:45:11,579 --> 00:45:13,579
+Burayı bölersek...
+
+614
+00:45:13,579 --> 00:45:15,579
+İkinci satırı A.
+
+615
+00:45:15,579 --> 00:45:18,579
+Yani bu bölmenin bir anlamı yok burada.
+
+616
+00:45:18,579 --> 00:45:21,150
+Ondan dolayı.
+
+617
+00:45:21,150 --> 00:45:23,150
+Yani 1'e bölünce hiçbir şey değişmeyecek de.
+
+618
+00:45:23,150 --> 00:45:26,150
+A3,2 mı olacaktı acaba diyecektim?
+
+619
+00:45:26,150 --> 00:45:28,150
+Şöyle hocam.
+
+620
+00:45:28,150 --> 00:45:33,150
+Üçüncü işlemde 2'ye 2'lik yer 3.6 ya.
+
+621
+00:45:33,150 --> 00:45:35,150
+Evet, evet. Tamam.
+
+622
+00:45:35,150 --> 00:45:36,150
+3.6'ya bölmüş galiba.
+
+623
+00:45:36,150 --> 00:45:37,150
+Tamam.
+
+624
+00:45:37,150 --> 00:45:38,150
+Şuradan.
+
+625
+00:45:38,150 --> 00:45:40,150
+Evet. 3.6'ya şimdi tamam oldu.
+
+626
+00:45:40,150 --> 00:45:42,150
+Tamam oldu. Teşekkür ederim.
+
+627
+00:45:42,150 --> 00:45:44,150
+Buna bölünce...
+
+628
+00:45:44,150 --> 00:45:46,150
+Geçişler biraz böyle sert olmuş.
+
+629
+00:45:46,150 --> 00:45:48,150
+Arada adımlar atlıyor.
+
+630
+00:45:48,150 --> 00:45:50,150
+Şimdi buna bölünce...
+
+631
+00:45:50,150 --> 00:45:52,150
+İkinci satır burası zaten 0.
+
+632
+00:45:52,150 --> 00:45:55,150
+Buna bölünce 3.6'ya burayı 1 yaptık.
+
+633
+00:45:55,150 --> 00:45:58,150
+Bunu bölünce 0.78 yaptık.
+
+634
+00:45:58,150 --> 00:46:03,150
+Şunları da işte direkt 3.6'ya bölünce şu değerleri elde ettik.
+
+635
+00:46:03,150 --> 00:46:05,150
+Tamam.
+
+636
+00:46:05,150 --> 00:46:09,150
+Birinci satırdan A1,2 çarpı 2.
+
+637
+00:46:09,150 --> 00:46:13,150
+Şimdi birinci satırdan burayı bir şey çıkartacağız.
+
+638
+00:46:13,150 --> 00:46:15,150
+A1,2 dediğimiz şurası.
+
+639
+00:46:15,150 --> 00:46:19,150
+Burayı 2 ile çarpıp birinci satırdan çıkaralım diyoruz.
+
+640
+00:46:19,150 --> 00:46:23,150
+Buranın 2 ile çarpılması sonucunda...
+
+641
+00:46:23,150 --> 00:46:26,820
+Ben mi yine yanlış düşünüyorum?
+
+642
+00:46:26,820 --> 00:46:29,820
+Burayı 2 ile çarparsak bu 2 olacak.
+
+643
+00:46:29,820 --> 00:46:35,349
+Bundan çıkarırsak 0 nasıl elde ederiz ki?
+
+644
+00:46:35,349 --> 00:46:37,349
+0.2 mi?
+
+645
+00:46:37,349 --> 00:46:42,389
+Yani...
+
+646
+00:46:49,440 --> 00:46:52,440
+Birinci satırdan A1,2 çarpı 2.
+
+647
+00:46:52,440 --> 00:46:53,440
+Çıkar.
+
+648
+00:46:53,440 --> 00:46:59,889
+Burada bir hata var arkadaşlar.
+
+649
+00:46:59,889 --> 00:47:02,889
+Yani burayı ya 0.4 ile çarpacaktı.
+
+650
+00:47:02,889 --> 00:47:05,889
+0.4 ile çarparsak şu 0 olur.
+
+651
+00:47:05,889 --> 00:47:07,889
+Çıkartırsak.
+
+652
+00:47:07,889 --> 00:47:10,889
+0.78 0.4 ile çarpıp...
+
+653
+00:47:10,889 --> 00:47:13,889
+Bundan çıkarırsak belki 1.11 olabilir.
+
+654
+00:47:13,889 --> 00:47:15,889
+Bir hesaplar mısın arkadaşlar?
+
+655
+00:47:15,889 --> 00:47:17,889
+0.78
+
+656
+00:47:17,889 --> 00:47:19,889
+Pardon 0.8
+
+657
+00:47:19,889 --> 00:47:30,300
+Eksi 0.8 eksi 0.78 çarpı 0.4
+
+658
+00:47:30,300 --> 00:47:32,300
+Şunu veriyor mu?
+
+659
+00:47:32,300 --> 00:47:38,460
+Eksi 1.11
+
+660
+00:47:38,460 --> 00:47:42,059
+280
+
+661
+00:47:42,059 --> 00:47:44,059
+Veriyor mu?
+
+662
+00:47:44,059 --> 00:47:45,059
+Evet.
+
+663
+00:47:45,059 --> 00:47:57,219
+Yani şurada A1,2 çarpı 2. satır değil.
+
+664
+00:47:57,219 --> 00:48:03,219
+Hocam anladığım kadarıyla biraz algoritma gibi gitmiş.
+
+665
+00:48:03,219 --> 00:48:05,219
+Algoritma gibi gitmiş de...
+
+666
+00:48:05,219 --> 00:48:06,219
+Ama şey yok.
+
+667
+00:48:06,219 --> 00:48:11,219
+İkinci satır A1,2'den kastımız 1.
+
+668
+00:48:11,219 --> 00:48:14,219
+1 ile ikinci satırı çarpmak diye bir şey yok.
+
+669
+00:48:14,219 --> 00:48:19,420
+A1,2 0.4 değil mi?
+
+670
+00:48:19,420 --> 00:48:20,420
+He.
+
+671
+00:48:20,420 --> 00:48:22,420
+Pardon evet evet tamam.
+
+672
+00:48:22,420 --> 00:48:28,699
+Yani 1,2 değil de ben hep C'deki mantıkla direkt şuraya gidiyorum.
+
+673
+00:48:29,699 --> 00:48:34,699
+A1,2'deki şurası şimdi oldu.
+
+674
+00:48:34,699 --> 00:48:36,699
+İkinci satırı çarpacak.
+
+675
+00:48:36,699 --> 00:48:42,699
+0.8 yani buradaki değerli ikinci satırdaki değerleri çarpacak.
+
+676
+00:48:42,699 --> 00:48:44,699
+Bundan çıkaracak tamam.
+
+677
+00:48:44,699 --> 00:48:52,699
+Hocam hoca galiba şey hani oraya sayı yazmak yerine 0.4 ile 2. satırı çarp çıkar yerine oraya hani değerini yazmış matristeki.
+
+678
+00:48:52,699 --> 00:48:53,699
+Evet.
+
+679
+00:48:53,699 --> 00:48:59,699
+Ben de şu 1,2'ler hep C'deki ile karşılaştırınca ben 1,2'yi şurası görüyorum.
+
+680
+00:48:59,699 --> 00:49:03,699
+Bundan bu nasıl çıkacak hep diye kafam karışıyor.
+
+681
+00:49:03,699 --> 00:49:05,699
+Neyse.
+
+682
+00:49:05,699 --> 00:49:07,699
+Ne yaptı?
+
+683
+00:49:07,699 --> 00:49:12,699
+Birinci satırdan yine bakın ikinci satırı belli bir değerle çarptı.
+
+684
+00:49:12,699 --> 00:49:16,699
+Ve elde edeceği sunucun şurayı 0 yaptı arkadaşlar.
+
+685
+00:49:16,699 --> 00:49:23,210
+Şimdi üçüncü satırdan A3,2 çarpı ikinci satırı.
+
+686
+00:49:23,210 --> 00:49:25,210
+Şimdi A3'ün ikisi şurası.
+
+687
+00:49:25,210 --> 00:49:27,210
+Bunu kendisiyle çarpacak.
+
+688
+00:49:27,210 --> 00:49:29,210
+Üçüncü satırdan çıkaracak.
+
+689
+00:49:29,210 --> 00:49:31,210
+Demek ki şurayı sıfır yapacak burada da.
+
+690
+00:49:31,210 --> 00:49:32,210
+Öyle değil mi?
+
+691
+00:49:32,210 --> 00:49:33,210
+Şurada bir değer olacak.
+
+692
+00:49:33,210 --> 00:49:35,210
+Burada da başka değerler olacak.
+
+693
+00:49:35,210 --> 00:49:38,210
+Bunu yapınca evet bakın burayı sıfırladı.
+
+694
+00:49:38,210 --> 00:49:40,210
+Şuradaki değerinin olduğu önemli değil.
+
+695
+00:49:40,210 --> 00:49:42,210
+Evet bizim şimdi hedefimiz ne?
+
+696
+00:49:42,210 --> 00:49:43,210
+Şurayı 1 yapmak.
+
+697
+00:49:43,210 --> 00:49:46,210
+Burayı 1 yapmak için burayı 5.88'e bölebiliriz.
+
+698
+00:49:46,210 --> 00:49:48,210
+Burayı tamamen 1 olur.
+
+699
+00:49:48,210 --> 00:49:51,210
+Bir de şurayı sıfır yapmak.
+
+700
+00:49:51,210 --> 00:49:56,210
+Orada da şimdi 5.88'e şu el şunun arasında bir ilişki bulacak.
+
+701
+00:49:56,210 --> 00:49:58,210
+Devam edelim bakalım.
+
+702
+00:49:58,210 --> 00:50:00,210
+Üçüncü satıra A3,3'e bölemiş.
+
+703
+00:50:00,210 --> 00:50:04,210
+Yani 5.88'e bölenince burayı gördüğünüz gibi 1 yapıyor.
+
+704
+00:50:04,210 --> 00:50:11,210
+Şurada da birinci satırdan birinci satırın kendisinden burayı ne yapıyor?
+
+705
+00:50:11,210 --> 00:50:12,210
+Bu satırla çarpıyor.
+
+706
+00:50:12,210 --> 00:50:14,210
+Eksi 1.11 ile çarpıp kendisini çıkarıyor.
+
+707
+00:50:14,210 --> 00:50:15,210
+Ne yapacak?
+
+708
+00:50:15,210 --> 00:50:21,210
+Yapınca eksi 1.11'e artı 1.11 eklerse burası sıfır olacak.
+
+709
+00:50:21,210 --> 00:50:26,210
+Şunları da buraya eklediği zaman ne yapacak?
+
+710
+00:50:26,210 --> 00:50:28,210
+0.16 falan bu değerleri buluyor.
+
+711
+00:50:28,210 --> 00:50:30,210
+Her şey burada da güncelleniyor.
+
+712
+00:50:30,210 --> 00:50:32,210
+Evet bir şurası kaldı.
+
+713
+00:50:32,210 --> 00:50:34,210
+Burada da ne yapacak arkadaşlar?
+
+714
+00:50:34,210 --> 00:50:36,210
+Direkt 0.78'e böleceğiz.
+
+715
+00:50:36,210 --> 00:50:39,210
+Bütün bir satırı.
+
+716
+00:50:39,210 --> 00:50:41,210
+Yok hocam bölme değil.
+
+717
+00:50:41,210 --> 00:50:43,210
+Evet sıfır elde edeceğimiz için ne yapacak?
+
+718
+00:50:43,210 --> 00:50:45,210
+Kendisinden çıkartacağız.
+
+719
+00:50:45,210 --> 00:50:49,210
+Kendisinden çıkartırken bak o kadar şey bir süreç.
+
+720
+00:50:49,210 --> 00:50:52,210
+Kendisinden çıkartınca burası sıfır olacak.
+
+721
+00:50:52,210 --> 00:50:55,210
+Buradan da çıkarınca bu değerleri bulunca oluruz.
+
+722
+00:50:55,210 --> 00:50:58,210
+Evet sol tarafta birim maddesine eriştik.
+
+723
+00:50:58,210 --> 00:51:03,210
+Sağ tarafta elde edeceğimiz şey bu maddesin tersi oluyor.
+
+724
+00:51:03,210 --> 00:51:08,650
+Ama bakın şurada arkadaşlar içeriye girmek zorundayız.
+
+725
+00:51:08,650 --> 00:51:14,650
+Yani bu birazcık sezgisel yani kağıt üzerinde yapılacak şey.
+
+726
+00:51:14,650 --> 00:51:16,650
+Bunun algoritmik yöntemleri de var.
+
+727
+00:51:16,650 --> 00:51:18,650
+Nasıl kodlamışlar bilmiyorum bakmadım.
+
+728
+00:51:18,650 --> 00:51:23,650
+Çünkü ben maddesin tersini alacak olsam direkt hazır kütüphane kullanıyorum.
+
+729
+00:51:23,650 --> 00:51:27,650
+Uzun uzun bunları böyle detaylı bir şekilde kodlamadım.
+
+730
+00:51:27,650 --> 00:51:32,650
+Veya yaklaşık hesabını yapan anlatacağımız yöntemler.
+
+731
+00:51:32,650 --> 00:51:34,650
+Onlar kodlaması kolay hizmeten.
+
+732
+00:51:35,650 --> 00:51:42,650
+Yani şu süreçten buraya gelirken herhangi bir kural doğrudan görmüyoruz.
+
+733
+00:51:42,650 --> 00:51:49,650
+Hani şu var sadece bu satırda hani birinci sütunu halledelim.
+
+734
+00:51:49,650 --> 00:51:51,650
+Birinci sütunda neyi halledeceğiz?
+
+735
+00:51:51,650 --> 00:51:56,650
+Biraz daha sistematik gidersek algoritmik bakış açısıyla şunu söyleyebilirim.
+
+736
+00:51:56,650 --> 00:51:59,650
+Birinci sütunda ikinci satırın sıfır olması lazım.
+
+737
+00:51:59,650 --> 00:52:02,650
+İkinci satırı sıfır yapmak için ne yapabiliriz?
+
+738
+00:52:02,650 --> 00:52:07,650
+Ya birinci satırdan ya da ikinci satırdan bir şeyle bir şey çarpacağız sıfıra getireceğiz.
+
+739
+00:52:07,650 --> 00:52:15,650
+Burada pivot olarak hani bu ikisinin birbirine olan eşitliğinden yola çıkarak ne yapmış?
+
+740
+00:52:15,650 --> 00:52:21,650
+İşte ikinci satırdan şuradaki değeri almış bunu çıkarmış.
+
+741
+00:52:21,650 --> 00:52:27,650
+A2.1 yani 1 ile çarpmış birinci satırı bunu çıkarmış.
+
+742
+00:52:27,650 --> 00:52:36,730
+Şu da yapılabilirdi hani bir dakika yapılabilir miydi bilmiyorum.
+
+743
+00:52:36,730 --> 00:52:47,730
+Üçüncü satırı 1 bölü 2 ile çarpsam ve bu çarptığım değeri birinci satırdan ikinci satırdan çıkarsam o da olabiliyor değil mi?
+
+744
+00:52:47,730 --> 00:52:56,730
+Çünkü bir satırı tamamen şeye bölsek ikiye bölsek tabi işlem uzar mı uzar.
+
+745
+00:52:56,730 --> 00:53:05,730
+Yani burası bir olur burası bir buçuk olur burası üç olur ikiye böldüğümüz sıfır ikiye böldüğümüz sıfır burası bir bölü iki olur.
+
+746
+00:53:05,730 --> 00:53:11,730
+Yani şimdi ne yaparım bundan bu satırı çıkartabilirim yani o da olur.
+
+747
+00:53:11,730 --> 00:53:23,730
+Burada bunu bunun belli bir sistematiği yok ama dediğim gibi en basit şekilde algoritmayı muhtemelen kodlarken böyle yapıyorlar.
+
+748
+00:53:24,730 --> 00:53:33,730
+İkinci satırdan acaba birinci satır mı çıkar ikinci satır mı çıkar yani hangisi daha yakınsa bir mutlak değerine falan bakılabilir burada.
+
+749
+00:53:33,730 --> 00:53:39,730
+Öyle bir şey veya bağıl değere bakılabilir öyle bir durumda burayı sıfır yapabiliyoruz.
+
+750
+00:53:39,730 --> 00:53:42,730
+Daha sonra ne yapıyor şurayı sıfır yapmaya odaklanıyor.
+
+751
+00:53:42,730 --> 00:53:48,139
+Ondan sonra yapacağı şey başka sıfır yapılacak neresi var.
+
+752
+00:53:48,139 --> 00:53:54,139
+Neresi var işte tekrar ikinci sütuna geçti ikinci sütundan bir sıfır yapabilir miyim onun hesabına baktı.
+
+753
+00:53:54,139 --> 00:54:03,139
+Sonra diagonale geçiyor tabi ki diagonale geçmesinin sebebi diagonal zaten birse ona göre bir işlem yapacak.
+
+754
+00:54:03,139 --> 00:54:07,139
+Ama bir olmazsa bir doğrudan bölme yapar direkt diagonale bir haline getirir.
+
+755
+00:54:07,139 --> 00:54:17,139
+Sonra şunu bir yaptı sonra ne yaptı arkadaşlar şurayı sıfır yaptı böyle satırlardan veya sütunlardan bir tarama şeklinde.
+
+756
+00:54:17,139 --> 00:54:21,139
+Ne yapıyor adım adım şu birim maddesi oluşturuyor.
+
+757
+00:54:21,139 --> 00:54:33,139
+Bunun kodlamasına bir bakarsanız bu yani şu sırayla önce burası önce burası daha sonra burası bir şu birim maddesi oluşturma süreci var.
+
+758
+00:54:33,139 --> 00:54:39,630
+Tamam burada bir sorun yoksa bir ara verelim.
+
+759
+00:54:40,630 --> 00:54:42,630
+Zaten 58 gece bir saat olmuş.
+
+760
+00:54:42,630 --> 01:07:21,010
+10 dakika sonra yani onu 10 gece geldiğimizde dersin bu kalan kısmına devam ederiz.
+
+761
+01:07:21,010 --> 01:07:26,909
+Evet arkadaşlar.
+
+762
+01:07:26,909 --> 01:07:28,909
+Maus hareketleri geliyor değil mi?
+
+763
+01:07:30,190 --> 01:07:31,190
+Evet hocam.
+
+764
+01:07:31,190 --> 01:07:34,190
+Şimdi devam edelim.
+
+765
+01:07:34,190 --> 01:07:40,190
+Liner denklem takımlarının veya liner denklem sistemlerinin çözülmesi.
+
+766
+01:07:40,190 --> 01:07:44,190
+Denklem takımı deyince yani akla farklı bir şey gibi geliyor.
+
+767
+01:07:44,190 --> 01:07:46,190
+Denklem takımı nedir falan diye.
+
+768
+01:07:46,190 --> 01:07:51,190
+Denklem takımı dediğimiz kaç tane bilinmeyen varsa o kadar denklem olacak.
+
+769
+01:07:51,190 --> 01:08:00,190
+Birbirinden birbiriyle orantılı olmayan denklemler ve bunlar üzerinden çözümü gerçekleştireceğiz.
+
+770
+01:08:00,190 --> 01:08:06,190
+İşte şuradakiler kat sayılarımız şunlarda bilinmeyenlerimiz.
+
+771
+01:08:06,190 --> 01:08:08,190
+Böyle bir sistem.
+
+772
+01:08:08,190 --> 01:08:12,190
+Bunu arkadaşlar maddes formatında yazacağız.
+
+773
+01:08:12,190 --> 01:08:17,189
+A maddesimiz denklemlerimizdeki kat sayıları gösterecek.
+
+774
+01:08:17,189 --> 01:08:23,189
+X maddesi aslında maddes değil tek bir sütun maddesi şeklinde yazılacak.
+
+775
+01:08:23,189 --> 01:08:26,189
+Bilinmeyenlerimizin değişkenlerini yazacağız.
+
+776
+01:08:26,189 --> 01:08:31,189
+C de yine bir sütun maddesi gibi şuradaki değerleri yazacak.
+
+777
+01:08:31,189 --> 01:08:33,189
+Sonuç değerlerini.
+
+778
+01:08:33,189 --> 01:08:37,189
+Bunun üzerinden çözüm yapacağız farklı algoritmalarla.
+
+779
+01:08:37,189 --> 01:08:43,189
+Şimdi C vektörü burada sıfırsa homojen denklem takımı.
+
+780
+01:08:43,189 --> 01:08:48,189
+Sıfırdan farklıysa homojen olmayan denklem takımı ismi veriliyor arkadaşlar.
+
+781
+01:08:48,189 --> 01:08:56,189
+Yani ne demek eşitliğin sağ tarafında bu tarafındaki değerler sıfırsa homojen.
+
+782
+01:08:56,189 --> 01:08:59,189
+Sıfır değilse homojen olmayan denklem sistemleri var.
+
+783
+01:08:59,189 --> 01:09:04,569
+Homojen olmayan denklem sistemini çözmek için iki farklı yöntem.
+
+784
+01:09:04,569 --> 01:09:08,569
+Dolayısız ve dolaylı yöntemler var doğrudan.
+
+785
+01:09:08,569 --> 01:09:12,569
+Şimdi bu dolayısız ve dolaylı yöntemlere başlayalım biz.
+
+786
+01:09:12,569 --> 01:09:17,460
+Dedik ve slide bitti.
+
+787
+01:09:17,460 --> 01:09:18,460
+Bunu kapatıyorum.
+
+788
+01:09:18,460 --> 01:09:21,460
+Hatta şuraya yeni slide ekleyeyim.
+
+789
+01:09:21,460 --> 01:09:26,829
+Hocam diğer grup bu konuya geçti mi 3. bölüme?
+
+790
+01:09:26,829 --> 01:09:30,829
+Yani o konuya belki bu hafta yeni geçeceklerdi bu konuya.
+
+791
+01:09:30,829 --> 01:09:34,829
+Hocam slide için soracaktım da Banu Hoca'nın havesisinde yoktu da o yüzden.
+
+792
+01:09:34,829 --> 01:09:39,829
+Şey daha yüklememiş olabilir yani 25'e kadar hazır.
+
+793
+01:09:39,829 --> 01:09:46,829
+Ben de zaten hoca ben gönderirim dedi ama gönderecek bir slide daha hazırlamamış.
+
+794
+01:09:46,829 --> 01:09:52,829
+Ben de bu sebeple hani tamam siz göndermiyorsanız kendim bazı şeyler yaparım dedim.
+
+795
+01:09:52,829 --> 01:09:54,829
+Böyle ilerleyeceğiz.
+
+796
+01:09:54,829 --> 01:10:00,829
+Ama hoca hazırlar tekrar hani onun slide'ından da üzerinden geçeriz gelecek hafta.
+
+797
+01:10:00,829 --> 01:10:08,829
+Şimdi birincisi arkadaşlar birinci yöntemiz.
+
+798
+01:10:08,829 --> 01:10:10,829
+Kramer yöntemi.
+
+799
+01:10:10,829 --> 01:10:14,829
+Şöyle yazarak örnekleri kanlayacağım.
+
+800
+01:10:14,829 --> 01:10:26,220
+Kramer yöntemi aslında çok basit ve çoğu yerde gördüğünüz bir yöntem.
+
+801
+01:10:26,220 --> 01:10:30,220
+Şimdi arkadaşlar bir saniye.
+
+802
+01:10:30,220 --> 01:10:32,220
+Bölümden bir haber var.
+
+803
+01:10:32,220 --> 01:10:38,220
+Bu bizimle alakalı değil.
+
+804
+01:10:38,220 --> 01:10:48,220
+Denklem sistemimizi yine maddesi formatında yani A, X, C formatında yazıyoruz.
+
+805
+01:10:48,220 --> 01:10:59,220
+Buradaki her bir bilinmeyen için C'yi yerine getirip bir determinant hesabıyla bu işi yapıyoruz.
+
+806
+01:10:59,220 --> 01:11:18,300
+Şimdi mesela X, I'yi bulmak için bir yapacağımız şey A, I maddesini inşa etmek ve bunun determinantını almak sonra A maddesinin determinantını bölmek.
+
+807
+01:11:18,300 --> 01:11:23,300
+A, I'yi inşa ederken de şöyle bir şey yapmamız gerekiyor.
+
+808
+01:11:23,300 --> 01:11:31,300
+Mesela bizim X1, X2, Xn diye değişkenlerimiz var.
+
+809
+01:11:31,300 --> 01:11:37,300
+Diyeceğiz ki, bunun adı C, I diyelim aslında.
+
+810
+01:11:37,300 --> 01:11:41,300
+C1, C2, Cn diyelim.
+
+811
+01:11:41,300 --> 01:11:49,300
+Şurada I inci satırda X'lerin bulunduğu yere, I inci satırdaki kat sayıların yerine X'lerin bulunduğu yere değil.
+
+812
+01:11:49,300 --> 01:11:51,300
+C1, C2, C2'ler geliyor.
+
+813
+01:11:51,300 --> 01:11:53,300
+C1, C2, Cn'ler geliyor.
+
+814
+01:11:53,300 --> 01:12:04,300
+Diğer her şey işte A1, A11 hatta, A21 veya gerçi burada A2 diyelim.
+
+815
+01:12:04,300 --> 01:12:07,300
+A12, böyle kat sayılar yine aynen var.
+
+816
+01:12:07,300 --> 01:12:12,300
+Sadece I inci satır, hangi satır istiyorsak, C'leri içerisinde varınlatıyor.
+
+817
+01:12:12,300 --> 01:12:14,300
+A, I maddesini inşa ederken.
+
+818
+01:12:14,300 --> 01:12:17,300
+Sonra bu maddesinin de determinantını alıyoruz.
+
+819
+01:12:17,300 --> 01:12:21,300
+Sonra A maddesinin kendi determinantını alıyoruz.
+
+820
+01:12:21,300 --> 01:12:28,300
+Ve bulacağımız şey ne oluyor? Bizim erhangi bir kökü, I inci kökümüzü buluyoruz, değişkenin değerini buluyoruz.
+
+821
+01:12:28,300 --> 01:12:35,300
+Burada dikkat edeceğimiz şey şu, determinantın sıfırdan farklı olması lazım.
+
+822
+01:12:35,300 --> 01:12:38,300
+Determinantın sıfırdan farklı olması için de ne lazım?
+
+823
+01:12:38,300 --> 01:12:43,300
+Bir satır tamamen sıfırlardan oluşmayacak demektir.
+
+824
+01:12:43,300 --> 01:12:48,300
+Bir satır tamamen sıfırlardan oluşuyorsa biraz önce söylediğimiz gibi bir durumda karşılaşıyoruz.
+
+825
+01:12:48,300 --> 01:12:51,300
+Şöyle bir kural var mıydı arkadaşlar? Ben hatırlamıyorum.
+
+826
+01:12:51,300 --> 01:12:55,680
+Bir sütünün tamamen sıfır olması.
+
+827
+01:12:55,680 --> 01:13:02,680
+Mesela 5, 3, 8, 7, 2, 6, 0, 5, 3, 0, 8, 7.
+
+828
+01:13:02,680 --> 01:13:05,680
+Buradan sıfır, buradan sıfır, burada sıfır.
+
+829
+01:13:05,680 --> 01:13:10,680
+Evet bir sütün de sıfır olunca öyle bir şey vardı.
+
+830
+01:13:10,680 --> 01:13:14,680
+Yani aslında burada yine aynı noktaya giriyoruz.
+
+831
+01:13:14,680 --> 01:13:22,680
+Şuraya baktığımızda, elimizde 3 tane denklem var ama bu 3 denklemin içerisinde mesela x değişkenine dair herhangi bir katsayı yok.
+
+832
+01:13:22,680 --> 01:13:25,680
+İşte buradan da çözüm olmuyor.
+
+833
+01:13:25,680 --> 01:13:32,680
+Bu da bir sütün eğer sıfırsa bunun determinantının alınamayacağını bize söylüyor.
+
+834
+01:13:32,680 --> 01:13:38,680
+Dinerce birden hatırlıyordum ama en azından şimdi örnek üzerinden doğrulamış olalım.
+
+835
+01:13:38,680 --> 01:13:43,090
+Şöyle baktığımız zaman evet bunlar sıfır.
+
+836
+01:13:43,090 --> 01:13:49,090
+Transpozisyonu alınca satırları sıfır olacak.
+
+837
+01:13:49,090 --> 01:13:52,090
+Oradan da bir çıkarımı yapabiliriz.
+
+838
+01:13:52,090 --> 01:13:56,090
+Böyle şeyleri ben bazen örnek üzerinden hatırlamak daha hoşuma gidiyor.
+
+839
+01:13:56,090 --> 01:14:00,090
+Yoksa bunu ezberle, bunu ezberle işin içinden çıkamıyoruz.
+
+840
+01:14:00,090 --> 01:14:02,090
+Evet yapacağımız şey bu arkadaşlar.
+
+841
+01:14:02,090 --> 01:14:04,090
+Basit bir yöntem.
+
+842
+01:14:04,090 --> 01:14:10,090
+Bu yöntemin maliyetine determinant hesabı birazcık karmaşık.
+
+843
+01:14:10,090 --> 01:14:15,090
+Yani bizim açımızdan elle çözüm yaparken de biraz sıkıntılı.
+
+844
+01:14:15,090 --> 01:14:20,090
+Eğer ikiye ikilik bir şeyse determinant nispeten kolay alılıyordu.
+
+845
+01:14:20,090 --> 01:14:21,090
+İşte ne yapıyorduk?
+
+846
+01:14:21,090 --> 01:14:26,090
+Satırlarla karşılıklı olarak çarpıp işte şöyle diyelim.
+
+847
+01:14:26,090 --> 01:14:29,090
+A, B, C, D.
+
+848
+01:14:29,090 --> 01:14:32,090
+Bununla bunu çarpıp bununla bunu çarpıyorduk.
+
+849
+01:14:32,090 --> 01:14:33,090
+Oradan geliyordu.
+
+850
+01:14:33,090 --> 01:14:36,090
+Eğer üçlü olursa Sarus kuralını falan uygulayacağız demiştik.
+
+851
+01:14:36,090 --> 01:14:38,090
+Şimdi onlara örnek üzerinden bakarız.
+
+852
+01:14:38,090 --> 01:14:48,090
+Ama işte dört değişikende, beş değişikende çok fazla büyük bir maddesi varsa bu kramer yöntemi elle çözüm için pek uygun olmuyor.
+
+853
+01:14:48,090 --> 01:14:49,090
+Niye uygun değil?
+
+854
+01:14:49,090 --> 01:14:52,090
+E, determinant hesabı çok karmaşık hale geliyor.
+
+855
+01:14:52,090 --> 01:14:54,090
+Şimdi örneğimiz şu olsun arkadaşlar.
+
+856
+01:14:56,619 --> 01:14:59,619
+x1-2x2
+
+857
+01:14:59,619 --> 01:15:02,619
+artı x3
+
+858
+01:15:02,619 --> 01:15:05,619
+eşittir x1
+
+859
+01:15:05,619 --> 01:15:07,619
+2x1
+
+860
+01:15:07,619 --> 01:15:10,619
+artı x2
+
+861
+01:15:10,619 --> 01:15:13,619
+x3x3
+
+862
+01:15:13,619 --> 01:15:16,619
+eşittir 8
+
+863
+01:15:16,619 --> 01:15:18,619
+3x1
+
+864
+01:15:18,619 --> 01:15:21,619
+x2x2
+
+865
+01:15:21,619 --> 01:15:24,619
+artı 2x3
+
+866
+01:15:24,619 --> 01:15:26,619
+eşittir 2
+
+867
+01:15:26,619 --> 01:15:30,619
+Bu tarz şeyleri zannediyorum devre teorisinde de kullanıyorsunuz.
+
+868
+01:15:30,619 --> 01:15:33,619
+Bu dönem devre teorisi dersiniz var değil mi arkadaşlar?
+
+869
+01:15:33,619 --> 01:15:39,619
+Orada işte çevre akımları, düğüm gerilimleri, yöntemleri falan var.
+
+870
+01:15:39,619 --> 01:15:42,619
+İşte bir sürü girof denklemleri çıkartıyorsunuz.
+
+871
+01:15:42,619 --> 01:15:48,619
+Sonra akım değerlerini veya gerilim değerlerini bulurken böyle denklem sistemleri karşınıza geliyor.
+
+872
+01:15:48,619 --> 01:15:54,619
+Ve o da enklem sistemlerinin işte bu yöntemlerle veya hesap makinesindeki hesap makinesinin bir tanesinde vardı.
+
+873
+01:15:54,619 --> 01:15:57,619
+Ben çok öncelerden bir hesap makinesi almıştım.
+
+874
+01:15:57,619 --> 01:15:59,619
+Bu katsayıları giriyorsunuz.
+
+875
+01:15:59,619 --> 01:16:01,619
+1, 2, 3, işte x2 falan.
+
+876
+01:16:01,619 --> 01:16:02,619
+Bunlar bütün katsayıları giriyor.
+
+877
+01:16:02,619 --> 01:16:03,619
+Ve sonuçları giriyorsunuz.
+
+878
+01:16:03,619 --> 01:16:04,619
+Sol diyorsunuz.
+
+879
+01:16:04,619 --> 01:16:07,619
+Size hani çözüyor.
+
+880
+01:16:07,619 --> 01:16:10,619
+Eğer 3 tane ise biraz kısa sürede çözüyordur.
+
+881
+01:16:10,619 --> 01:16:13,619
+5-6 yapınca baya hesap makinesi zor çözüyor.
+
+882
+01:16:13,619 --> 01:16:15,619
+Çünkü arkada baya bir maddesi işlemi yapıyor.
+
+883
+01:16:15,619 --> 01:16:18,619
+Herhalde kramer gibi bir şey kullanıyor.
+
+884
+01:16:18,619 --> 01:16:19,619
+Evet.
+
+885
+01:16:19,619 --> 01:16:23,619
+Şimdi burada x1, x2, x3'ü bulmak için yapacağımız şey.
+
+886
+01:16:23,619 --> 01:16:25,619
+Önce A maddesini bulalım arkadaşlar.
+
+887
+01:16:25,619 --> 01:16:29,619
+A maddesi dediğimiz şey doğrudan katsayıları içeren bir maddes.
+
+888
+01:16:29,619 --> 01:16:32,619
+1-2, 1.
+
+889
+01:16:32,619 --> 01:16:38,409
+2, 1-3.
+
+890
+01:16:38,409 --> 01:16:41,939
+3-2 artı 2.
+
+891
+01:16:41,939 --> 01:16:46,939
+Buraya kadar artı 7 gerek yok.
+
+892
+01:16:47,939 --> 01:16:52,939
+Sonra bizim A1 maddesini bulmamız lazım.
+
+893
+01:16:52,939 --> 01:16:58,939
+A1 maddesi dediğimiz şey bu birinci satırdaki bu değerleri yazmıyoruz.
+
+894
+01:16:58,939 --> 01:17:01,939
+Bunun yerine ne yapıyoruz?
+
+895
+01:17:01,939 --> 01:17:03,939
+C değerlerini yazıyoruz.
+
+896
+01:17:03,939 --> 01:17:06,939
+Yani x1, 8, 2.
+
+897
+01:17:06,939 --> 01:17:08,939
+Geri kalan her şey aynı.
+
+898
+01:17:08,939 --> 01:17:14,939
+x2, 1, x2, 1, x3, 2.
+
+899
+01:17:15,939 --> 01:17:18,939
+Şimdi x1 değerini bulurken yapacağımız şey ne olacak?
+
+900
+01:17:18,939 --> 01:17:20,939
+Ben bunları uzun uzun hesaplamayacağım.
+
+901
+01:17:20,939 --> 01:17:25,939
+A1 maddesinin determinantını alacağız.
+
+902
+01:17:25,939 --> 01:17:30,119
+A'nın determinantını alacağız.
+
+903
+01:17:30,119 --> 01:17:33,119
+Tabii burada A'nın bir defa determinantını almak yeterli.
+
+904
+01:17:33,119 --> 01:17:36,119
+Diğer yöntemlerde zaten kullanıyoruz.
+
+905
+01:17:36,119 --> 01:17:38,119
+Yerine koyacağız.
+
+906
+01:17:38,119 --> 01:17:41,119
+Şimdi neyse onu birazdan yazalım.
+
+907
+01:17:41,119 --> 01:17:43,119
+Kopyalarız olmazsa.
+
+908
+01:17:43,119 --> 01:17:44,119
+A1 bu şekilde.
+
+909
+01:17:44,119 --> 01:17:50,420
+A2 maddesi ne olacak?
+
+910
+01:17:50,420 --> 01:17:53,420
+Şu satır yine bununla aynı.
+
+911
+01:17:53,420 --> 01:17:55,420
+1, 2, 3.
+
+912
+01:17:55,420 --> 01:18:01,859
+Bu sefer sonuç kısmına x1, 8, 2'yi buraya getiriyoruz.
+
+913
+01:18:01,859 --> 01:18:05,859
+1, x3, 2.
+
+914
+01:18:05,859 --> 01:18:08,859
+x2 için de A2 bölüyor A.
+
+915
+01:18:08,859 --> 01:18:15,060
+A3 için, şuraya sığdıralım.
+
+916
+01:18:15,060 --> 01:18:17,060
+1, 2, 3.
+
+917
+01:18:17,060 --> 01:18:20,060
+x2, 1.
+
+918
+01:18:20,060 --> 01:18:25,060
+x2, x1, 8 ve 2.
+
+919
+01:18:25,060 --> 01:18:31,699
+Şöyle yapalım.
+
+920
+01:18:31,699 --> 01:18:33,699
+Peki.
+
+921
+01:18:33,699 --> 01:18:36,699
+Bunlardan herhangi birinin determinantını hesaplayalım.
+
+922
+01:18:36,699 --> 01:18:39,699
+Mesela bir kopyalayayım şunu.
+
+923
+01:18:39,699 --> 01:18:41,699
+Hepsini hesaplayalım.
+
+924
+01:18:41,699 --> 01:18:46,699
+Mesela siz burada nasıl bir hesaplama yaparsınız?
+
+925
+01:18:46,699 --> 01:18:49,699
+Kas sayıları bulacak olsanız.
+
+926
+01:18:49,699 --> 01:18:59,970
+[öğrenci] doğrudan cevap verdi.
+
+927
+01:18:59,970 --> 01:19:04,180
+Niye böyle oldu bu?
+
+928
+01:19:04,180 --> 01:19:13,529
+Şöyle yapalım.
+
+929
+01:19:13,529 --> 01:19:15,529
+Sargı skoraladı diyoruz.
+
+930
+01:19:15,529 --> 01:19:16,529
+Tamam.
+
+931
+01:19:16,529 --> 01:19:18,529
+Güzel.
+
+932
+01:19:18,529 --> 01:19:30,989
+Şunu da alalım arkadaşlar.
+
+933
+01:19:30,989 --> 01:19:42,850
+Niye seçemedik ya?
+
+934
+01:19:42,850 --> 01:21:19,029
+Arkadaşlar bir saniye kapıya bakmam lazım.
+
+935
+01:21:19,029 --> 01:21:22,029
+Evet arkadaşlar kusura bakmayın.
+
+936
+01:21:22,029 --> 01:21:30,199
+Şimdi bir tanesinin çözümünü yapalım.
+
+937
+01:21:30,199 --> 01:21:33,199
+1, x2, 1 alacağız.
+
+938
+01:21:33,199 --> 01:21:36,199
+2, 1, x3.
+
+939
+01:21:36,199 --> 01:21:41,859
+Şurası çarpınca ne olacak?
+
+940
+01:21:41,859 --> 01:21:42,859
+2 olacak.
+
+941
+01:21:42,859 --> 01:21:46,859
+Bunları çarpınca x4 olacak.
+
+942
+01:21:46,859 --> 01:21:50,859
+Bunları çarpınca 18 mi olacak?
+
+943
+01:21:50,859 --> 01:21:53,859
+Toplarsak burasını.
+
+944
+01:21:53,859 --> 01:21:57,859
+Yanlış yapmadıysak 16.
+
+945
+01:21:57,859 --> 01:22:04,930
+Şuraya baktığımızda 3.
+
+946
+01:22:04,930 --> 01:22:09,930
+Buraya baktığımızda 6.
+
+947
+01:22:09,930 --> 01:22:15,710
+Buraya baktığımızda da x8.
+
+948
+01:22:15,710 --> 01:22:21,670
+Doğru mu?
+
+949
+01:22:21,670 --> 01:22:25,850
+2, x2.
+
+950
+01:22:25,850 --> 01:22:27,850
+Hata mı var arkadaşlar burada?
+
+951
+01:22:27,850 --> 01:22:28,850
+Yok.
+
+952
+01:22:28,850 --> 01:22:29,850
+Doğru hocam.
+
+953
+01:22:29,850 --> 01:22:30,850
+Doğru x8.
+
+954
+01:22:30,850 --> 01:22:32,850
+Toplarsak 9.
+
+955
+01:22:32,850 --> 01:22:35,850
+Burası da 1 oluyor.
+
+956
+01:22:35,850 --> 01:22:37,850
+Toplam 15.
+
+957
+01:22:37,850 --> 01:22:38,850
+Tamam.
+
+958
+01:22:38,850 --> 01:22:40,850
+Determinant A eşitleri 15.
+
+959
+01:22:40,850 --> 01:22:41,850
+Şöyle yapalım.
+
+960
+01:22:41,850 --> 01:22:46,159
+Bir de şurada A1'i hesaplayalım arkadaşlar.
+
+961
+01:22:46,159 --> 01:22:54,500
+x1, x2, 1.
+
+962
+01:22:54,500 --> 01:22:56,500
+8, 1, x3.
+
+963
+01:22:56,500 --> 01:23:00,500
+2, x2, 2.
+
+964
+01:23:00,500 --> 01:23:03,500
+x1, x2, 1.
+
+965
+01:23:03,500 --> 01:23:05,500
+8, 1, 3.
+
+966
+01:23:05,500 --> 01:23:08,359
+Şöyle yapalım.
+
+967
+01:23:08,359 --> 01:23:10,359
+x3 hocam.
+
+968
+01:23:10,359 --> 01:23:13,359
+x3.
+
+969
+01:23:13,359 --> 01:23:20,300
+Şurası x2.
+
+970
+01:23:20,300 --> 01:23:22,300
+Burası x16.
+
+971
+01:23:22,300 --> 01:23:25,550
+Çok.
+
+972
+01:23:25,550 --> 01:23:27,550
+2, 2, 4.
+
+973
+01:23:27,550 --> 01:23:28,550
+Orası 12.
+
+974
+01:23:28,550 --> 01:23:33,140
+Ne oldu?
+
+975
+01:23:33,140 --> 01:23:36,140
+x4, x6 mı oldu?
+
+976
+01:23:36,140 --> 01:23:45,670
+Şurayı hesaplarsak 2.
+
+977
+01:23:45,670 --> 01:23:50,140
+Buraya bakarsak x6.
+
+978
+01:23:50,140 --> 01:23:56,140
+Buraya bakarsak da x32.
+
+979
+01:23:56,140 --> 01:24:00,140
+x38, x36.
+
+980
+01:24:00,140 --> 01:24:03,140
+x6, xx36.
+
+981
+01:24:03,140 --> 01:24:05,140
+Burası da 30 oldu.
+
+982
+01:24:05,140 --> 01:24:07,140
+A1'de 30'muş.
+
+983
+01:24:07,140 --> 01:24:14,140
+X1 dediğimiz şey 30 bölü 15'ten 2 bulacakmışız.
+
+984
+01:24:14,140 --> 01:24:21,159
+Analitik çözüm yaparsak, elle çözüm yaparsanız bunun 2 olduğunu görürsünüz zaten arkadaşlar.
+
+985
+01:24:21,159 --> 01:24:24,159
+Yani kasseler birbirinden götürün.
+
+986
+01:24:24,159 --> 01:24:25,159
+2 oldu.
+
+987
+01:24:25,159 --> 01:24:26,159
+Bulunabilir.
+
+988
+01:24:26,159 --> 01:24:28,600
+Kolay bulunuyor.
+
+989
+01:24:28,600 --> 01:24:32,600
+Sonuçları şöyle yazayım.
+
+990
+01:24:32,600 --> 01:24:34,600
+x2, 1 olacak.
+
+991
+01:24:34,600 --> 01:24:40,100
+x3'de x1 olacakmış.
+
+992
+01:24:40,100 --> 01:24:42,100
+Aynı mantıkla çözeldi.
+
+993
+01:24:42,100 --> 01:24:49,100
+Burada kısa yoldan, biraz kısa yoldan yapmak için, x2'yi de aynı yöntemde bulursunuz.
+
+994
+01:24:49,100 --> 01:24:51,100
+Mesela 1 bulduk.
+
+995
+01:24:51,100 --> 01:25:01,100
+x1 yerine 2, x2 yerine 1 verip, götürüp denklemlerde bir yerine yazarsanız, x2'yi de x1 bulmamız lazım.
+
+996
+01:25:01,100 --> 01:25:06,100
+Mesela x1'e 2 verelim, x2'ye 1 verelim.
+
+997
+01:25:06,100 --> 01:25:07,100
+Ne oldu?
+
+998
+01:25:07,100 --> 01:25:09,100
+Bunlar gitti, götürdü.
+
+999
+01:25:09,100 --> 01:25:11,100
+x3'de oradan x1 kalıyor.
+
+1000
+01:25:11,100 --> 01:25:14,100
+Tekrardan aynı determinant hesabı yapmaya gerek yok.
+
+1001
+01:25:14,100 --> 01:25:17,100
+2 tanesini bilmek yeterli.
+
+1002
+01:25:17,100 --> 01:25:19,100
+Evet, bu yöntemde anlaşılmayan bir şey.
+
+1003
+01:25:19,100 --> 01:25:22,100
+Yaptığım şeyde sıkıntı olan var mı?
+
+1004
+01:25:22,100 --> 01:25:24,100
+Sormak istediğim bir şey.
+
+1005
+01:25:24,100 --> 01:25:29,100
+Bu yöntemde sıkıntısı determinant hesabı.
+
+1006
+01:25:29,100 --> 01:25:44,380
+Yani ve determinant hesabı yaparken bütün elemanları elden geçirmek gerekiyor.
+
+1007
+01:25:44,380 --> 01:25:47,380
+Mutlaka bütün elemanlara bakmak gerekiyor.
+
+1008
+01:25:47,380 --> 01:25:50,380
+Onun için biraz zor mu?
+
+1009
+01:25:50,380 --> 01:25:53,380
+Zor diyebiliriz.
+
+1010
+01:25:53,380 --> 01:25:57,380
+Belki mantık açısından kolay da.
+
+1011
+01:25:57,380 --> 01:26:00,380
+Determinantı hesaplamak vesaire.
+
+1012
+01:26:00,380 --> 01:26:04,380
+Mutlaka programlama aracı ya da bir hesap makinesi kullanmak gerekiyor.
+
+1013
+01:26:04,380 --> 01:26:14,000
+Diğeri Gauss elimination metod.
+
+1014
+01:26:14,000 --> 01:26:17,000
+Burada da arkadaşlar yapacağımız şey şu olacak.
+
+1015
+01:26:17,000 --> 01:26:19,000
+Benim elimde.
+
+1016
+01:26:19,000 --> 01:26:28,250
+Mesela A1, A2, A11, A21, A31.
+
+1017
+01:26:28,250 --> 01:26:34,250
+A22, A21, A22, A23.
+
+1018
+01:26:34,250 --> 01:26:36,250
+Yok, öyle değil.
+
+1019
+01:26:36,250 --> 01:26:40,390
+Şöyle yapalım.
+
+1020
+01:26:40,390 --> 01:26:41,390
+Formatı düzgün verelim.
+
+1021
+01:26:41,390 --> 01:26:46,390
+A11, A12, A13.
+
+1022
+01:26:46,390 --> 01:26:50,390
+A21, A22, A23.
+
+1023
+01:26:50,390 --> 01:26:55,390
+A31, A32, A33 şeklinde.
+
+1024
+01:26:55,390 --> 01:26:58,390
+Kat sayılarım var.
+
+1025
+01:26:58,390 --> 01:27:02,770
+Bir de sonuçlarımız olacak.
+
+1026
+01:27:02,770 --> 01:27:09,770
+İşte buna da C1, C2 ve C3 diyelim.
+
+1027
+01:27:09,770 --> 01:27:14,770
+Buradan X, Y ve Z'yi çekerken arkadaşlar.
+
+1028
+01:27:14,770 --> 01:27:21,050
+Üst üçgen tarafı sıfır yapmaya çalışıyoruz.
+
+1029
+01:27:21,050 --> 01:27:28,050
+Bunu sıfır yapmaya çalışarak maddis çarpımından yola çıkıp bilinmeyenlerimizi bulacağız.
+
+1030
+01:27:28,050 --> 01:27:30,050
+Buranın sıfır olması demek.
+
+1031
+01:27:30,050 --> 01:27:34,050
+İlk başta sadece A1'i bulmam.
+
+1032
+01:27:34,050 --> 01:27:40,050
+Sonra A1'i bir kat sayı, tek bir değişkeni bulmam.
+
+1033
+01:27:40,050 --> 01:27:46,050
+Sonra bu değişkenden yola çıkarak biraz önce şu şeyde yaptığımız gibi iki tanesini bulduk.
+
+1034
+01:27:46,050 --> 01:27:48,050
+Üçüncüsünü bulmaya gerek kalmadı ya.
+
+1035
+01:27:48,050 --> 01:27:50,050
+Buradan ikinciyi bulmam.
+
+1036
+01:27:50,050 --> 01:27:55,050
+Sonra bu bulduğum ikinciyi de diğer yerlerden üçüncüyü çekme esasına dayanıyor.
+
+1037
+01:27:55,050 --> 01:27:58,050
+Elementer satır işlemleri kullanıyoruz.
+
+1038
+01:27:58,050 --> 01:28:04,050
+Ama birim matris hesabından biraz daha kolay.
+
+1039
+01:28:05,050 --> 01:28:11,050
+Üç tane değer buradaki duruma göre üst üçgen veya alt üçgen de yapılabilir.
+
+1040
+01:28:11,050 --> 01:28:17,050
+Genellikle üst üçgeni de görürsünüz, alt üçgeni de görürsünüz ama çok bir şey değişmiyor.
+
+1041
+01:28:17,050 --> 01:28:23,050
+Yani ya şurası, hatta şöyle çizelim bunu veya burayı sıfır yapıyor.
+
+1042
+01:28:23,050 --> 01:28:27,159
+Bazı kaynaklarda bunu görürsünüz.
+
+1043
+01:28:27,159 --> 01:28:33,159
+Çok bir şey fark etmiyor sonuçta çünkü maddis çarpımı üzerinden bu işlem yapılacak.
+
+1044
+01:28:33,159 --> 01:28:38,159
+Bu kısımları sıfıra dönüştürürken dediğim gibi ne konuları kullanacağız?
+
+1045
+01:28:38,159 --> 01:28:41,159
+Elementer satır işlemlerini kullanacağız.
+
+1046
+01:28:41,159 --> 01:28:46,159
+Bulduğumuz sonuç bize denklemin köklerini verecek.
+
+1047
+01:28:46,159 --> 01:28:49,159
+Şimdi bunun örneğine bakalım.
+
+1048
+01:28:49,159 --> 01:28:54,159
+Bunun örneğiyle beraber yetişirse diğer yöntemini anlatırım sonra dersi tamamlarız.
+
+1049
+01:28:54,159 --> 01:29:20,060
+x artı 2y artı z eşittir 5, 2x artı 5y artı 3z eşittir 14, x eksi 3y artı z eşittir eksi 6.
+
+1050
+01:29:20,060 --> 01:29:24,060
+Kaos eliminasyonuyla bunu bulalım demişiz.
+
+1051
+01:29:24,060 --> 01:29:26,060
+Şimdi yapacağımız şey kaç sayıları yazmak?
+
+1052
+01:29:26,060 --> 01:29:36,289
+1, 2, 1, 2, 5, eksi 3, 1, 3, 1.
+
+1053
+01:29:36,289 --> 01:29:45,829
+Sonra bu tarafta 5, 14, eksi 6 var.
+
+1054
+01:29:45,829 --> 01:29:58,710
+Amacımız eğer, mesela şunu yapalım, bu tarafı sıfırlayalım.
+
+1055
+01:29:58,710 --> 01:30:04,710
+Burayı sıfır yapmaksa şuradan başlayabiliriz.
+
+1056
+01:30:04,710 --> 01:30:09,710
+Yani en tepedeki elemandan bunu bir pivot önemli eleman olarak ele alıp yapabiliriz.
+
+1057
+01:30:09,710 --> 01:30:12,710
+Burada şöyle bir dönüşüm yapacağız.
+
+1058
+01:30:12,710 --> 01:30:23,130
+R2'ye ikinci satıra R2'den neyi çıkarmam gerekiyor?
+
+1059
+01:30:23,130 --> 01:30:27,130
+2 tane R1'i çıkarırsam şurayı ne yaparım? Sıfır yaparım.
+
+1060
+01:30:27,130 --> 01:30:33,729
+Burayı demek 2 ile çıkartacağım, bundan çıkartacağım, bulacağım sonuç bu olacak.
+
+1061
+01:30:33,729 --> 01:30:43,729
+Bir de bakıyorum arkadaşlar, R3'den de R3'e de R1'i eklersem ne olur bu da sıfır olur.
+
+1062
+01:30:43,729 --> 01:30:51,729
+Yani tek bir adım da yapalım R3 eşittir, R3 artı R1 yapacağız.
+
+1063
+01:30:51,729 --> 01:30:55,729
+Bunun sonucunda çözümümüz şu olacak.
+
+1064
+01:30:55,729 --> 01:31:01,960
+Hocam R3 eksi R1 olmayacak mı?
+
+1065
+01:31:01,960 --> 01:31:07,779
+Bir dakika, şurası eksi birmiş arkadaşlar ben soruda.
+
+1066
+01:31:07,779 --> 01:31:14,779
+Evet dediğinize göre öyle oldu da şu eksi bir burada böyle bir hata var.
+
+1067
+01:31:14,779 --> 01:31:20,130
+Notuma baktım şimdi eksi x ve eksi bir olacak.
+
+1068
+01:31:20,130 --> 01:31:24,130
+Onun için R3'e R1 ekliyorum.
+
+1069
+01:31:24,130 --> 01:31:27,130
+Bunlar da oradan gülsün diye.
+
+1070
+01:31:27,130 --> 01:31:34,659
+Şimdi bu satırda herhangi bir değişim yok birinci satıda onu aynen yazıyorum.
+
+1071
+01:31:34,659 --> 01:31:41,970
+Aynen yazıyorum 1, 2, 1, burası 5.
+
+1072
+01:31:41,970 --> 01:31:45,970
+Burada R2'ye 2 R1 eklemek ne demek?
+
+1073
+01:31:45,970 --> 01:31:48,970
+Burayı 2 ile çarptım bu sıfır oldu.
+
+1074
+01:31:48,970 --> 01:31:54,970
+2 ile çarptım 4, 1 çıkardım 1 oldu.
+
+1075
+01:31:54,970 --> 01:32:01,970
+2 ile çarptım 2 çıkardım burası da ne oldu? 1 oldu.
+
+1076
+01:32:01,970 --> 01:32:05,970
+2 ile çarptım 10 çıkardık burası da 4 oldu.
+
+1077
+01:32:05,970 --> 01:32:10,970
+Bunu R3 ile R1'i toplamak ne demek?
+
+1078
+01:32:10,970 --> 01:32:15,970
+Aslında buradaki 1 sayısıyla bunu çarpmak demek burası sıfır oldu.
+
+1079
+01:32:15,970 --> 01:32:22,279
+Sıfır olduktan sonra bunu buraya ekleyince bu eksi bir oldu.
+
+1080
+01:32:22,279 --> 01:32:26,279
+Şunu da buraya ekleyince bu da 2 oldu.
+
+1081
+01:32:26,279 --> 01:32:32,939
+x6 artı 5 bu da x1 oldu.
+
+1082
+01:32:32,939 --> 01:32:38,939
+Evet şimdi burada tek adımda bunları götürdük.
+
+1083
+01:32:38,939 --> 01:32:48,939
+Bu adımda yapabileceğimiz şey R3'e R2'yi eklersek bakın arkadaşlar şurayı sıfır yapabiliriz.
+
+1084
+01:32:48,939 --> 01:32:53,939
+R3'e R3 artı R2'yi ekleyelim.
+
+1085
+01:32:56,539 --> 01:32:59,539
+Şöyle yazayım R3.
+
+1086
+01:32:59,539 --> 01:33:05,680
+Yani bu ne olacak? Bu burayı sıfırlayacak.
+
+1087
+01:33:05,680 --> 01:33:07,680
+Şöyle yazalım.
+
+1088
+01:33:07,680 --> 01:33:14,680
+Başka, gerçi önce R3'i görelim de ondan sonra R3 üzerinde bir operasyon bir daha yapacağız.
+
+1089
+01:33:14,680 --> 01:33:18,659
+Adımı atlamayalım.
+
+1090
+01:33:18,659 --> 01:33:23,659
+R3'e R2'yi eklediğim zaman birinci satırda bir değişimi yok.
+
+1091
+01:33:24,659 --> 01:33:30,090
+Bir iki bir beş.
+
+1092
+01:33:30,090 --> 01:33:32,090
+İkinci satırda da bir değişim yok.
+
+1093
+01:33:32,090 --> 01:33:35,090
+Sıfır bir bir dört.
+
+1094
+01:33:35,090 --> 01:33:40,750
+Bunu buraya eklediğimizde burası sıfır.
+
+1095
+01:33:40,750 --> 01:33:43,750
+Burası sıfır oldu.
+
+1096
+01:33:43,750 --> 01:33:48,060
+Burası da ne oldu? 3 oldu.
+
+1097
+01:33:48,060 --> 01:33:52,060
+Sonra bunu buraya eklediğimizde şurası da 3 oldu arkadaşlar.
+
+1098
+01:33:52,060 --> 01:33:56,060
+Evet alt tarafı oluşturduk.
+
+1099
+01:33:56,060 --> 01:34:04,060
+Üst tarafta yapacağımız şey de şurası da birim olacak arkadaşlar.
+
+1100
+01:34:04,060 --> 01:34:11,859
+Birim matrisinin yani birim köşegini bulacağız.
+
+1101
+01:34:11,859 --> 01:34:15,500
+Buralar bir olacak.
+
+1102
+01:34:15,500 --> 01:34:19,500
+Çünkü sağlıklı bir çarpma işlemi yapmak gerekiyor.
+
+1103
+01:34:19,500 --> 01:34:24,539
+O zaman burada da R3'ü.
+
+1104
+01:34:24,539 --> 01:34:28,539
+R3 bölü 3 yaparsak çözebiliriz.
+
+1105
+01:34:28,539 --> 01:34:34,630
+Yani şuradaki değer.
+
+1106
+01:34:34,630 --> 01:34:42,630
+Bir iki bir sıfır bir bir sıfır sıfır.
+
+1107
+01:34:42,630 --> 01:34:44,630
+Üçe böldük bir bulduk.
+
+1108
+01:34:44,630 --> 01:34:49,939
+Beş dört ve bir oldu.
+
+1109
+01:34:49,939 --> 01:34:51,939
+Üçe böldükten sonra.
+
+1110
+01:34:51,939 --> 01:34:57,939
+Şimdi mesela arada bir xyz değişkenlerimiz olduğunu kabul edelim.
+
+1111
+01:34:57,939 --> 01:35:00,939
+Bu matriz şöyle bir şey hale geliyor.
+
+1112
+01:35:00,939 --> 01:35:07,939
+A matrisimiz bir iki bir sıfır bir bir sıfır sıfır bir.
+
+1113
+01:35:07,939 --> 01:35:12,939
+Burada x y ve z'lerimiz var.
+
+1114
+01:35:12,939 --> 01:35:16,939
+Temel olarak aslında yaptığımız şey şu.
+
+1115
+01:35:16,939 --> 01:35:17,939
+Şurada da sonuçlarımız var.
+
+1116
+01:35:17,939 --> 01:35:20,939
+Beş dört ve bir.
+
+1117
+01:35:20,939 --> 01:35:28,680
+Dikkat edin kesinlikle burada 5 14 eksi 6 yazmıyoruz.
+
+1118
+01:35:28,680 --> 01:35:32,680
+Şimdi bunu çözmek için olan şey bu matrisse bu matrisi çarpmaktır.
+
+1119
+01:35:32,680 --> 01:35:38,680
+Eğer en genel haliyle düşünürsek yani bir çarpı x artı iki çarpı y artı bir çarpı z.
+
+1120
+01:35:38,680 --> 01:35:44,680
+Yani x artı ikiye artı z eşittir beşmiş.
+
+1121
+01:35:44,680 --> 01:35:53,300
+X yok y artı z eşittir dörtmüş.
+
+1122
+01:35:53,300 --> 01:35:56,300
+Z eşittir birmiş.
+
+1123
+01:35:56,300 --> 01:36:00,300
+Buradan geriye dönerek backtracking yöntemi diyoruz aslında.
+
+1124
+01:36:00,300 --> 01:36:04,300
+Geriye doğru giderek z'nin bir olduğunu doğrudan söyleyebiliriz.
+
+1125
+01:36:04,300 --> 01:36:08,300
+Bunun için bu denklemi tekrar yazmaya zaten gerek yok arkadaşlar.
+
+1126
+01:36:08,300 --> 01:36:10,300
+Ben nereden geldiğini görün diye yazıyorum.
+
+1127
+01:36:10,300 --> 01:36:12,300
+Buradan z'nin bir olduğunu görüyoruz.
+
+1128
+01:36:12,300 --> 01:36:18,300
+Buradan z'nin bir olduğunu görünce ne yapacağız?
+
+1129
+01:36:18,300 --> 01:36:24,300
+Bir tane y artı bir tane z dörtmüş z'yi bir bulduk.
+
+1130
+01:36:24,300 --> 01:36:27,300
+Y'yi ne yapacağız? Buradan çekeceğiz.
+
+1131
+01:36:27,300 --> 01:36:29,300
+Y buradan 3 gelecek.
+
+1132
+01:36:29,300 --> 01:36:35,300
+İşte bir tane x iki tane y bir tane z işte beş eşitmiş.
+
+1133
+01:36:35,300 --> 01:36:39,300
+Yani şurada enklemede yerine koyarsak z dediğimiz şey birdi.
+
+1134
+01:36:39,300 --> 01:36:41,300
+Y dediğimiz şeyde neydi?
+
+1135
+01:36:41,300 --> 01:36:46,300
+Üçlü 6 7 7'i karşı yattık.
+
+1136
+01:36:46,300 --> 01:36:47,300
+X de buradan ne geliyor?
+
+1137
+01:36:47,300 --> 01:36:49,300
+X de eksi iki buluyoruz.
+
+1138
+01:36:50,300 --> 01:36:54,300
+Tamam şuradan bulduğumuz şeyler bunlar.
+
+1139
+01:36:54,300 --> 01:36:58,300
+Geriye doğru giderek bütün değerleri bulabiliriz.
+
+1140
+01:36:58,300 --> 01:37:10,300
+Güzel mi? Fena değil yani kramer yöntemine göre şey ama burada şu işlemleri yapabilmek biraz bazen uzayabiliyor.
+
+1141
+01:37:10,300 --> 01:37:12,300
+Yani bunun da kendine göre sıkıntıları var.
+
+1142
+01:37:12,300 --> 01:37:15,840
+Şimdi bunun biraz daha iyileştirilmiş.
+
+1143
+01:37:15,840 --> 01:37:19,840
+Aslında maddesi tersinden yola çıkarak bunu aynı şekilde yapacağız.
+
+1144
+01:37:20,840 --> 01:37:28,279
+Gauss ve Jordan elimination yöntemi denmiş.
+
+1145
+01:37:28,279 --> 01:37:32,279
+Ona bakalım veya onu şurada söyleyelim.
+
+1146
+01:37:32,279 --> 01:37:34,279
+Direkt örneğine geçeriz.
+
+1147
+01:37:34,279 --> 01:37:46,210
+Burada da yapılacak olan şey arkadaşlar.
+
+1148
+01:37:46,210 --> 01:37:53,210
+Hem üst üçgeni hem de alt üçgeni sıfır yapmak ve birim matris elde etmek.
+
+1149
+01:37:53,210 --> 01:38:01,210
+Bu birim matrisi elde ettiğimiz zaman doğrudan X Y ve Z yine aynı maddesi çarpımı yöntemiyle bulmuş oluyoruz.
+
+1150
+01:38:01,210 --> 01:38:23,319
+Yani bulacağımız şey A11 A12 A13 A21 A22 A23 A31 A32 A33 C1 C2 C3 diyelim.
+
+1151
+01:38:24,319 --> 01:38:26,319
+Buradan gideceğimiz şey şu olacak.
+
+1152
+01:38:28,319 --> 01:38:33,319
+1 0 0 0 1 0 0 0 1
+
+1153
+01:38:35,319 --> 01:38:41,319
+C1 üstü C2 üstü C3 üstü değerlerimiz var.
+
+1154
+01:38:41,319 --> 01:38:45,319
+Bunlar da bizim X Y ve Z'lerimiz yani bilinmeyenlerimiz oluşturacak.
+
+1155
+01:38:47,319 --> 01:38:54,979
+Hem şurayı sıfırlıyoruz bir şekilde hem de buradakileri.
+
+1156
+01:38:55,979 --> 01:39:01,979
+Yani bakın burada aslında daha fazla elementer satır işlemleri yapıyoruz.
+
+1157
+01:39:02,979 --> 01:39:10,979
+Şuradakine göre sadece işlem sonundaki denklemde yerine koyma maliyeti burada ortadan kapmış oluyor.
+
+1158
+01:39:10,979 --> 01:39:16,399
+Şöyle bir örnek yapalım.
+
+1159
+01:39:16,399 --> 01:39:19,399
+Yöntemde anlaşılmayan bir şey yoktur herhalde basit bir şey.
+
+1160
+01:39:19,399 --> 01:39:22,399
+Yani düşününce sorunuz varsa sorabilirsiniz.
+
+1161
+01:39:22,399 --> 01:39:32,000
+X artı Y eksi Z eşittir 2.
+
+1162
+01:39:32,000 --> 01:39:38,000
+Eksi 2 X artı Y artı Z eşittir eksi 5.
+
+1163
+01:39:38,000 --> 01:39:45,310
+X eksi 2 Y artı 3 Z eşittir eksi 3.
+
+1164
+01:39:45,310 --> 01:39:49,310
+Kalsörden yöntemiyle yapalım demişiz.
+
+1165
+01:39:49,310 --> 01:39:55,420
+Şimdi 1 1 eksi 1.
+
+1166
+01:39:55,420 --> 01:39:58,420
+Eksi 2 1 artı 1.
+
+1167
+01:39:58,420 --> 01:40:01,420
+1 eksi 2 artı 3.
+
+1168
+01:40:01,420 --> 01:40:05,770
+2 eksi 5 eksi 3.
+
+1169
+01:40:05,770 --> 01:40:10,649
+Herhalde doğru aktardık.
+
+1170
+01:40:10,649 --> 01:40:12,649
+Hızlıca bir kontrol edeyim.
+
+1171
+01:40:12,649 --> 01:40:22,630
+Evet şimdi R2'ye R1'in iki katını eklersen ne olur burayı sıfırlarım arkadaşlar.
+
+1172
+01:40:22,630 --> 01:40:28,630
+R2, R2 artı 2 R1.
+
+1173
+01:40:28,630 --> 01:40:39,779
+R3'den de R1'i çıkartırsam şurayı sıfırlamış olurum.
+
+1174
+01:40:39,779 --> 01:40:41,779
+Yapalım bunları.
+
+1175
+01:40:41,779 --> 01:40:44,779
+Birinci satır etkilenmeyecek.
+
+1176
+01:40:44,779 --> 01:40:55,250
+1 1 eksi 1 2.
+
+1177
+01:40:55,250 --> 01:40:58,250
+Şimdi bundan bunu iki katını çıkartınca burası sıfır oldu.
+
+1178
+01:40:58,250 --> 01:41:01,250
+İki katını çıkartınca burası eksi 1 oldu.
+
+1179
+01:41:01,250 --> 01:41:07,250
+Tabii çıkarınca diyorum iki katını ekleyince olmaz.
+
+1180
+01:41:07,250 --> 01:41:11,250
+İki katını ekleyince ne olacak burası 3 olacak arkadaşlar.
+
+1181
+01:41:11,250 --> 01:41:14,250
+İki katını ekleyince burası eksi 1 olacak.
+
+1182
+01:41:14,250 --> 01:41:18,250
+İki katını ekleyince burası da ne oldu eksi 1 oldu.
+
+1183
+01:41:18,250 --> 01:41:23,250
+R3'den R1'i çıkartırsak bundan bu çıktı sıfır oldu.
+
+1184
+01:41:23,250 --> 01:41:27,250
+Eksi 2'den eksi 1 çıktı eksi 3 oldu.
+
+1185
+01:41:27,250 --> 01:41:30,250
+3'den eksi 1 çıktı 4 oldu.
+
+1186
+01:41:30,250 --> 01:41:33,250
+Eksi 3'den eksi 2 çıktı eksi 5 oldu.
+
+1187
+01:41:33,250 --> 01:41:35,250
+Takip edebiliyorsunuz değil mi?
+
+1188
+01:41:35,250 --> 01:41:42,340
+Peki.
+
+1189
+01:41:42,340 --> 01:41:44,340
+İki tane elemanı sıfırladık.
+
+1190
+01:41:44,340 --> 01:41:49,710
+Sonra şu elemanı da sıfırlamak için ne yapabiliriz?
+
+1191
+01:41:49,710 --> 01:41:54,710
+Bakın direk şundan şunu toplayabiliyoruz.
+
+1192
+01:41:54,710 --> 01:42:05,539
+Yani R3 ile R2'yi toplasak ve tekrar R3'e kaydetsek.
+
+1193
+01:42:06,539 --> 01:42:07,539
+Ne oluyor?
+
+1194
+01:42:07,539 --> 01:42:09,539
+Şurası da sıfır oluyor.
+
+1195
+01:42:09,539 --> 01:42:15,539
+Sonra neyse ara işlemi atlamamış olalım.
+
+1196
+01:42:15,539 --> 01:42:21,989
+Burada herhangi bir değişiklik yok.
+
+1197
+01:42:21,989 --> 01:42:22,989
+Burada herhangi bir değişiklik yok.
+
+1198
+01:42:22,989 --> 01:42:33,989
+1, 1, eksi 1, 2, 0, 3, eksi 1, eksi 1.
+
+1199
+01:42:33,989 --> 01:42:36,989
+Bu sıfırla sıfır topladık sıfır.
+
+1200
+01:42:36,989 --> 01:42:38,989
+3 ile eksi 3 topladık sıfır.
+
+1201
+01:42:38,989 --> 01:42:42,369
+4 ile eksi 1 topladık.
+
+1202
+01:42:42,369 --> 01:42:44,369
+Ne oldu?
+
+1203
+01:42:44,369 --> 01:42:50,380
+4 ile eksi 3 oldu.
+
+1204
+01:42:50,380 --> 01:42:54,380
+Burada başka unuttuğum bir şey var mı?
+
+1205
+01:42:54,380 --> 01:42:58,380
+Eksi 5 vardı.
+
+1206
+01:42:58,380 --> 01:43:02,380
+Eksi 5 ile eksi 1 topladık.
+
+1207
+01:43:02,380 --> 01:43:04,380
+Artı eksi 6 oldu.
+
+1208
+01:43:05,380 --> 01:43:17,579
+Şu 3'ü de yok etmek için R3'ü R3 bölü 3 yapayım.
+
+1209
+01:43:17,579 --> 01:43:21,579
+Ama bunu ayrıca çizmeyeceğim arkadaşlar.
+
+1210
+01:43:21,579 --> 01:43:23,579
+Şöyle yapalım.
+
+1211
+01:43:23,579 --> 01:43:27,579
+Burayı 3'e bölüyorum, burayı 3'e bölüyorum.
+
+1212
+01:43:27,579 --> 01:43:35,539
+Yani yerine şuraya 1 yazalım, şuraya da eksi 2 yazalım.
+
+1213
+01:43:35,539 --> 01:43:37,539
+Tekrardan uğraşmayalım.
+
+1214
+01:43:38,539 --> 01:43:41,539
+Şimdi baktığımız zaman burada sıfır var.
+
+1215
+01:43:41,539 --> 01:43:43,539
+Şurada 1 var.
+
+1216
+01:43:43,539 --> 01:43:45,539
+Biz şuradaki 3'ü halletmemiz gerekiyor.
+
+1217
+01:43:45,539 --> 01:43:47,539
+Onu da hallederiz birazdan.
+
+1218
+01:43:47,539 --> 01:43:48,539
+Sıra gelecek.
+
+1219
+01:43:48,539 --> 01:43:52,539
+Bir de yukarıda şuraları sıfır yapacağız.
+
+1220
+01:43:52,539 --> 01:44:03,739
+Şimdi bu sıfır yapma işlemine öncelikle bir bakalım.
+
+1221
+01:44:03,739 --> 01:44:06,739
+Şunu şöyle geçiyorum şimdilik.
+
+1222
+01:44:06,739 --> 01:44:09,739
+Yapacağımız şey ne olur arkadaşlar?
+
+1223
+01:44:09,739 --> 01:44:14,739
+R1'e R3'ü eklersek ne olur?
+
+1224
+01:44:14,739 --> 01:44:16,739
+Şurayı sıfır yaparız.
+
+1225
+01:44:16,739 --> 01:44:23,439
+Burası sıfır olur.
+
+1226
+01:44:23,439 --> 01:44:27,439
+R2'ye de R3'ü eklersem şunu da sıfır yaparım.
+
+1227
+01:44:27,439 --> 01:44:33,899
+Ve iki tane şeyden kurtulmuş oluyorum.
+
+1228
+01:44:33,899 --> 01:44:35,899
+Baktığımız zaman bunu yazalım.
+
+1229
+01:44:35,899 --> 01:44:37,899
+R3 etkilenmeyecek.
+
+1230
+01:44:37,899 --> 01:44:40,899
+R1 etkilendiğinde şu ikisi aynen kaldı.
+
+1231
+01:44:40,899 --> 01:44:41,899
+1,1.
+
+1232
+01:44:41,899 --> 01:44:42,899
+Burası ne oldu?
+
+1233
+01:44:42,899 --> 01:44:45,899
+Burası 1'di, sıfır oldu.
+
+1234
+01:44:45,899 --> 01:44:47,899
+Burası x2'di, bu da ne oldu?
+
+1235
+01:44:47,899 --> 01:44:49,899
+Sıfır oldu arkadaşlar.
+
+1236
+01:44:49,899 --> 01:44:56,300
+R2'ye de R3'ü eklediğimizde şu değişmeyecek.
+
+1237
+01:44:56,300 --> 01:44:58,300
+Sıfır, üç.
+
+1238
+01:44:58,300 --> 01:45:01,300
+Bu biri buraya eklediğimizde burası sıfır.
+
+1239
+01:45:01,300 --> 01:45:05,300
+x2 ile x1'i topladığımızda ne olacak?
+
+1240
+01:45:05,300 --> 01:45:08,300
+x3 olacak.
+
+1241
+01:45:08,300 --> 01:45:09,300
+Burası zaten aynı kaldı.
+
+1242
+01:45:09,300 --> 01:45:13,300
+Sıfır, sıfır, bir ve x2.
+
+1243
+01:45:18,579 --> 01:45:31,579
+Sonra şimdi şu 3'ü bir azaltalım ki o azaltma yaptığımızdan sonra yani şunu yok edebilir hale geleceğiz.
+
+1244
+01:45:31,579 --> 01:45:36,579
+Yani R2, R2 bölü 3 diyorum.
+
+1245
+01:45:36,579 --> 01:45:44,659
+Bunu yaptığımız zaman elde edeceğimiz, hatta direkt yazalım arkadaşlar, tekrardan çizmeyelim.
+
+1246
+01:45:44,659 --> 01:45:46,659
+Bu işlemi yaptığımızda şurası ne olacak?
+
+1247
+01:45:46,659 --> 01:45:47,659
+1 olacak.
+
+1248
+01:45:47,659 --> 01:45:50,659
+Burası da x1 olacak, başka herhangi bir şey değişmiyor.
+
+1249
+01:45:50,659 --> 01:45:52,659
+Bunun yerine bu geldi.
+
+1250
+01:45:52,659 --> 01:46:01,659
+Şimdi R1'den R2'yi çıkartırsak bu işlem sonra R1 için, R1-R2 yaparsak ne olacak?
+
+1251
+01:46:01,659 --> 01:46:03,659
+Burayı sıfırlamış olacağız.
+
+1252
+01:46:03,659 --> 01:46:06,659
+Diğerleri herhangi bir şekilde etkilenmiyor.
+
+1253
+01:46:06,659 --> 01:46:08,659
+O zaman sonucumuz ne oluyor?
+
+1254
+01:46:08,659 --> 01:46:10,659
+Bakalım.
+
+1255
+01:46:10,659 --> 01:46:12,659
+1 aynen kaldı.
+
+1256
+01:46:12,659 --> 01:46:13,659
+Bu sıfır oldu.
+
+1257
+01:46:13,659 --> 01:46:15,659
+Bu da sıfır oldu.
+
+1258
+01:46:15,659 --> 01:46:17,659
+Bu x1'di.
+
+1259
+01:46:17,659 --> 01:46:29,390
+x1'i çıkarttığımız zaman R1'den R2'yi çıkarttığımız zaman R1'den R2'yi mi çıkarıyoruz?
+
+1260
+01:46:29,390 --> 01:46:31,390
+R1-R2 yapıyoruz evet.
+
+1261
+01:46:33,390 --> 01:46:37,390
+Şurası sıfır olacağı için fark etmedi.
+
+1262
+01:46:37,390 --> 01:46:39,390
+Burası da x1 oldu.
+
+1263
+01:46:39,390 --> 01:46:41,390
+1 olmayacak mı?
+
+1264
+01:46:41,390 --> 01:46:43,390
+Bir dakika.
+
+1265
+01:46:43,390 --> 01:46:45,390
+x1'de evet 1 oldu.
+
+1266
+01:46:45,390 --> 01:46:51,829
+x1'i çıkarttığımız zaman R1'i yapacağız.
+
+1267
+01:46:51,829 --> 01:46:54,829
+Burada herhangi bir değişiklik yok.
+
+1268
+01:46:54,829 --> 01:47:04,829
+Sıfır, bir, sıfır, x3, sıfır, sıfır, bir, x2.
+
+1269
+01:47:04,829 --> 01:47:06,829
+Şurası x1.
+
+1270
+01:47:06,829 --> 01:47:09,829
+O kadar kafa karıştırıcı oluyor ki.
+
+1271
+01:47:09,829 --> 01:47:14,829
+Ekrana bakarak yazmak hakikaten yorucu bir şey.
+
+1272
+01:47:14,829 --> 01:47:15,829
+Evet.
+
+1273
+01:47:15,829 --> 01:47:17,829
+Sıfır, x1, x2.
+
+1274
+01:47:17,829 --> 01:47:20,829
+Şurası nasıl sıfır olmuş ya?
+
+1275
+01:47:20,829 --> 01:47:26,439
+Ha.
+
+1276
+01:47:26,439 --> 01:47:28,439
+Şurası 1, x1, x2.
+
+1277
+01:47:28,439 --> 01:47:29,439
+Tamam.
+
+1278
+01:47:29,439 --> 01:47:30,439
+Evet.
+
+1279
+01:47:30,439 --> 01:47:35,439
+Burada şimdi bir matriz çarpımı gibi düşünürsek, varmış gibi düşünelim.
+
+1280
+01:47:35,439 --> 01:47:38,439
+Aslında gerek yok da onu düşünmeye.
+
+1281
+01:47:38,439 --> 01:47:41,439
+Yani şuraya x diyorum, buraya y diyorum, buraya y diyorum.
+
+1282
+01:47:41,439 --> 01:47:45,439
+Bunla x, y, z çarpınca sadece x'i bulacağız.
+
+1283
+01:47:45,439 --> 01:47:48,439
+x eşittir, 1 bulacağız arkadaşlar.
+
+1284
+01:47:48,439 --> 01:47:51,439
+İkinci satırla x, y, z çarpınca sadece y'i bulacağız.
+
+1285
+01:47:51,439 --> 01:47:53,439
+Bu x'i 1'e karşılık gelecek.
+
+1286
+01:47:53,439 --> 01:47:57,439
+Üçüncü satırla x, y, z çarpınca z eşittir, x'i 2 bulacağız.
+
+1287
+01:47:57,439 --> 01:47:59,439
+Hiç gerek yok.
+
+1288
+01:47:59,439 --> 01:48:04,439
+Burada elde ettiğimiz sonuçlar doğrudan bilinmeyenlerimizin sırasını veriyor.
+
+1289
+01:48:04,439 --> 01:48:07,439
+x, y ve z'i veriyor.
+
+1290
+01:48:07,439 --> 01:48:11,439
+Bu sayede sonuca ulaşmış oluyoruz.
+
+1291
+01:48:12,439 --> 01:48:14,439
+Burada anlaşılmayan bir şey var mı?
+
+1292
+01:48:14,439 --> 01:48:17,439
+Şimdi şöyle bunu bir gözden geçirdiğimizde arkadaşlar.
+
+1293
+01:48:17,439 --> 01:48:19,439
+Önce şuradan başladık.
+
+1294
+01:48:19,439 --> 01:48:23,439
+Hani algoritmik olarak düşüneceğiz dersek.
+
+1295
+01:48:23,439 --> 01:48:26,439
+Şunu yok edebiliriz ve bunu yok edebiliriz.
+
+1296
+01:48:26,439 --> 01:48:28,439
+Hani bir ilk bu eleman.
+
+1297
+01:48:28,439 --> 01:48:34,439
+Sonra yine birinci sunu hedef alarak çalışıyoruz.
+
+1298
+01:48:34,439 --> 01:48:41,439
+İkinci sütuna hedef alırken bakıyoruz acaba neyle neyi çarparsak şunu sıfır yapabiliriz.
+
+1299
+01:48:41,439 --> 01:48:45,439
+R3'e R2 ekleyerek bu işi yaptık.
+
+1300
+01:48:45,439 --> 01:48:52,550
+R3'e 2 R1 ekleyerek.
+
+1301
+01:48:52,550 --> 01:48:56,659
+İkinci sütundan bu kısma baktık.
+
+1302
+01:48:56,659 --> 01:48:58,659
+Sonra alt köşegen bittikten sonra ne yaptık?
+
+1303
+01:48:58,659 --> 01:49:00,659
+Arada bir bölme işlemi yaptık.
+
+1304
+01:49:00,659 --> 01:49:02,659
+Şurada bir yaptık.
+
+1305
+01:49:02,659 --> 01:49:06,659
+Yani köşegeni birim hale getiriyoruz.
+
+1306
+01:49:06,659 --> 01:49:12,659
+Sonra üst üçgen için geriden hesaplama yaptık dikkat ederseniz.
+
+1307
+01:49:12,659 --> 01:49:15,659
+Önce şu değerler sıfır oldu.
+
+1308
+01:49:15,659 --> 01:49:20,659
+Bunun algoritmik olarak bir karşılığı var mıdır?
+
+1309
+01:49:20,659 --> 01:49:27,659
+Yani alt üçgen için birinci sütundan başlayıp, üst üçgen için sondaki sütundan başlayıp.
+
+1310
+01:49:27,659 --> 01:49:30,659
+Hani bir algoritması var mıdır açıkçası ben bakmadım.
+
+1311
+01:49:30,659 --> 01:49:32,659
+Ama Gauss-Jordan kodu var.
+
+1312
+01:49:32,659 --> 01:49:35,659
+Gauss eliminasyon kodu var.
+
+1313
+01:49:35,659 --> 01:49:42,659
+Bakarsınız muhtemelen bunun bir sistematiği yani kod varsa algoritması var demektir.
+
+1314
+01:49:42,659 --> 01:49:44,659
+Bu algoritma belli bir sistemdir.
+
+1315
+01:49:44,659 --> 01:49:46,659
+Yani rastgele bu işi yapmıyor.
+
+1316
+01:49:46,659 --> 01:49:48,659
+Sezgiser olmuyor.
+
+1317
+01:49:48,659 --> 01:49:52,659
+Dolayısıyla bu sistematik üzerine kodlar bulursunuz.
+
+1318
+01:49:52,659 --> 01:49:57,659
+Bakalım bir diğer derste belki beraber üzerinden geçeriz.
+
+1319
+01:49:58,659 --> 01:50:07,659
+Şimdi bu işlemleri Gauss-Jordan veya Gauss elimination yöntemlerine size bir kaynak paylaşmıştım ben.
+
+1320
+01:50:07,659 --> 01:50:10,659
+Şunu bir açayım şimdi.
+
+1321
+01:50:10,659 --> 01:50:14,520
+[öğrenci] şimdi hemen söyleyelim.
+
+1322
+01:50:14,520 --> 01:50:22,539
+Sadece bulunan yöntem değişiyor anlıyor açıkçası.
+
+1323
+01:50:22,539 --> 01:50:35,489
+Gauss eliminasyon da ya üst üçgeni ya da alt üçgeni sıfır yapıp köşegeni bir yapıyoruz.
+
+1324
+01:50:36,489 --> 01:50:38,489
+İkisinden bir tanesini ikisindeyiz.
+
+1325
+01:50:38,489 --> 01:50:43,489
+Gauss-Jordan da ikisini de sıfır yapıp köşegeni biri yapıyoruz.
+
+1326
+01:50:43,489 --> 01:50:49,489
+Bu köşegenin sonucunda yani birinde böyle bir matriz elde ediyorsun.
+
+1327
+01:50:49,489 --> 01:50:57,489
+Diğerinde köşegenler bir alt veya üst matriz sıfır olacak şekilde düzenleniyor.
+
+1328
+01:50:57,489 --> 01:51:02,489
+Şöyle örnek üzerinden bakarsak burada Gauss eliminasyon yapmış.
+
+1329
+01:51:02,489 --> 01:51:07,489
+Bakın burada alt üçgeni sıfır yaptık, köşegeni bir yaptık.
+
+1330
+01:51:07,489 --> 01:51:12,489
+Ve burada önce Z'yi buluyoruz, Z'nin bir olduğunu.
+
+1331
+01:51:12,489 --> 01:51:16,489
+Sonra da Z'yi denklemlerde yerine koyarak Y'yi buluyoruz.
+
+1332
+01:51:16,489 --> 01:51:19,489
+Sonra Z ve Y'yi koyarak X'i buluyoruz.
+
+1333
+01:51:19,489 --> 01:51:21,489
+Bu Gauss eliminasyon.
+
+1334
+01:51:21,489 --> 01:51:27,489
+Gauss-Jordan da sadece bir birim matriz elde etme süreci var.
+
+1335
+01:51:27,489 --> 01:51:35,489
+Birim matriz elde ettiğimizde bulduğumuz sağdaki değerler doğrudan X, Y ve Z değişkenler oluyor.
+
+1336
+01:51:35,489 --> 01:51:48,220
+Şimdi mesela şuradaki şeye bakarsak linear algebra and systems of linear equations.
+
+1337
+01:51:48,220 --> 01:51:59,699
+Solve systems of linear equations in piece height and solution of systems of linear equations.
+
+1338
+01:51:59,699 --> 01:52:01,699
+Matrix immersion.
+
+1339
+01:52:01,699 --> 01:52:04,699
+Bunlar hazır kütüphaneler muhtemelen.
+
+1340
+01:52:04,699 --> 01:52:09,659
+Bakalım başka ne olabilir burada konu.
+
+1341
+01:52:09,659 --> 01:52:14,659
+Bakın bir sistem verilmiş, denklem sistemi.
+
+1342
+01:52:14,659 --> 01:52:19,659
+Burada numpy array dediğimiz şey dizi oluşturma yöntemidir.
+
+1343
+01:52:19,659 --> 01:52:26,659
+Yani bir integer dizi veya integer matiz oluşturmak için bu numpy kullanılıyor.
+
+1344
+01:52:26,659 --> 01:52:31,659
+İşte 4, 3, x, 5, 2, x, 2, x, 4, 5, 8, 8, 0.
+
+1345
+01:52:31,659 --> 01:52:34,659
+Bu değişkenler yerine yazıldı.
+
+1346
+01:52:34,659 --> 01:52:38,659
+Bir başka dizimizde işte sonuç maddesi.
+
+1347
+01:52:38,659 --> 01:52:46,659
+Numpy nokta linear algebra sol dediğinizde A'ları ve Y'ları veriyorsunuz input olarak.
+
+1348
+01:52:46,659 --> 01:52:48,659
+Bu ne yapıyor? Size bunu buluyor.
+
+1349
+01:52:48,659 --> 01:52:52,659
+Mesela bunun sol metoduna gidip bakarsanız okuyalım.
+
+1350
+01:52:52,659 --> 01:53:02,260
+Bu aslında numpy h.
+
+1351
+01:53:02,260 --> 01:53:05,260
+Numpy h hangisini kullanıyor? Bunu bizim öğrenemiz lazım.
+
+1352
+01:53:05,260 --> 01:53:11,359
+Görüyoruz.
+
+1353
+01:53:11,359 --> 01:53:14,359
+Solver aslında li-yu yapıyor.
+
+1354
+01:53:14,359 --> 01:53:19,359
+Buna bakacağız daha sonra. Bu bir dekompozisyon işlemi.
+
+1355
+01:53:19,359 --> 01:53:26,359
+Bu yöntemi kullanarak, bunu daha sonra konuşacağız.
+
+1356
+01:53:26,359 --> 01:53:31,359
+İki tane alt maddise bölüyor. Aslında bizim yaptığımızda çok benzer bir şey bu da.
+
+1357
+01:53:31,359 --> 01:53:34,359
+Bu şekilde buluyormuş.
+
+1358
+01:53:34,359 --> 01:53:46,359
+Yaptığı şey bizim verdiğimiz bir A maddisini P, L ve U maddisine çarpıp daha sonra L ve U'yu yazıp buradan sonuca ulaşması demek.
+
+1359
+01:53:46,359 --> 01:53:49,359
+Biraz daha burada detayları var.
+
+1360
+01:53:49,359 --> 01:53:56,460
+Bakalım şurada buna yönelik teknik kısım anlatmış mı?
+
+1361
+01:53:56,460 --> 01:53:58,460
+Finite number.
+
+1362
+01:53:58,460 --> 01:54:01,460
+Gauss elimination metodundan bahsetmiş.
+
+1363
+01:54:01,460 --> 01:54:04,460
+Bizim yaptığımızın aynısı.
+
+1364
+01:54:04,460 --> 01:54:12,180
+Farklı sayıda Gauss Jordan elimination demiş.
+
+1365
+01:54:12,180 --> 01:54:14,180
+L, U dekompozisyon.
+
+1366
+01:54:14,180 --> 01:54:18,180
+İşte burada yaptığı şey de bu yöntemi daha sonrasında konuşacağız.
+
+1367
+01:54:18,180 --> 01:54:23,180
+Bunu birkaç tane daha yöntem anlatacağım. Onlardan bir tanesi.
+
+1368
+01:54:23,180 --> 01:54:28,189
+Şöyle bir L, U maddisi oluşturacak.
+
+1369
+01:54:28,189 --> 01:54:31,189
+Onu detayına gireceğiz daha sonra.
+
+1370
+01:54:31,189 --> 01:54:34,189
+Bu daha farklı bir yaklaşım.
+
+1371
+01:54:34,189 --> 01:54:38,189
+Bu yaklaşım üzerinden mesela iteratif metodlar var. Daha sonra bunları anlatacağız size.
+
+1372
+01:54:38,189 --> 01:54:40,189
+Gauss, Seidel.
+
+1373
+01:54:40,189 --> 01:54:45,189
+Bu da yaklaşık çözümleri veren bir şeydir, yöntemdir diyeceğiz.
+
+1374
+01:54:45,189 --> 01:54:52,189
+Bakın ne yapıyor? Burada 2-3 satırla, hatta tek satırla denklimi çözüyor.
+
+1375
+01:54:52,189 --> 01:54:58,869
+Si de array döndüremezsiniz.
+
+1376
+01:54:58,869 --> 01:55:02,869
+Ancak dinamik bir arrayiniz olur.
+
+1377
+01:55:02,869 --> 01:55:07,869
+Ve döndüreceğiniz dinamik array'in pointer'ını döndürebilirsiniz.
+
+1378
+01:55:11,729 --> 01:55:17,729
+Dinamik memur avokasyonu kullanmak gerekiyor ama si de şu an için array döndürmek istiyorsanız,
+
+1379
+01:55:17,729 --> 01:55:22,729
+yapacağınız şey hiç return ile bu işi yapmaya gerek yok.
+
+1380
+01:55:22,729 --> 01:55:27,199
+Parametre üzerinden bunu yapacaksınız. Tamam mı?
+
+1381
+01:55:27,199 --> 01:55:31,609
+Yazayım mı onu?
+
+1382
+01:55:31,609 --> 01:55:34,609
+Yazarsanız hocam çok iyi olur aslında.
+
+1383
+01:55:34,609 --> 01:55:39,609
+Yani void bir f fonksiyonu. Sen bir dizi aldın.
+
+1384
+01:55:39,609 --> 01:55:44,819
+Mesela 10 elemanlı bir dizi aldın.
+
+1385
+01:55:44,819 --> 01:55:47,819
+Bu dizi üzerinde bir şey yapıp başka bir diziye aktaracaksın.
+
+1386
+01:55:47,819 --> 01:55:52,819
+Ne bileyim bu dizinin türevini alacaksın veya herhangi bir şey.
+
+1387
+01:55:52,819 --> 01:56:00,079
+Arada işte bu da bir b dizisi olsun.
+
+1388
+01:56:00,079 --> 01:56:04,079
+10 elemanlı olur veya 100 elemanlı olur. Fark etmiyor.
+
+1389
+01:56:04,079 --> 01:56:11,079
+Bu diziler fonksiyonlara call by referans mantığı ile aktarıldığı için,
+
+1390
+01:56:11,079 --> 01:56:17,079
+sen bu fonksiyon içerisinde b dizisi üzerinde ne işi yaparsan tamam mı?
+
+1391
+01:56:17,079 --> 01:56:20,079
+Bu buraya yansıtılacaktır.
+
+1392
+01:56:20,079 --> 01:56:23,079
+E bunu çağırdığın yerde de zaten bir dizi tanımlı.
+
+1393
+01:56:23,079 --> 01:56:28,079
+O tanımladığın dizi üzerinde yaptığın bütün algoritmaların sonucunu görürsün.
+
+1394
+01:56:28,079 --> 01:56:31,079
+Onun için herhangi bir şekilde buradan bir şey return etmeye gerek yok.
+
+1395
+01:56:31,079 --> 01:56:36,079
+Voyage yazarsın. Bu bayanın içerisinde yapılan her türlü değişiklik buraya yansır.
+
+1396
+01:56:36,079 --> 01:56:40,079
+Onun için dynamic memory avokasyonu bilmenize de gerek yok şu an.
+
+1397
+01:56:40,079 --> 01:56:53,930
+Yapısal programları da anlattığım bu işlem işinizi görür. Tamam mı?
+
+1398
+01:56:53,930 --> 01:56:58,930
+Yani başka dillerle evet karşılaştırma oluyor.
+
+1399
+01:56:58,930 --> 01:57:06,930
+Gerek yok. Başka dillerle yani Türkçeyi, İngilizceyi ile ancak öğrenmek için karşılaştırabiliriz.
+
+1400
+01:57:06,930 --> 01:57:11,930
+Burada işiniz öncelikle arkadaşlar problemi çözmek olsun.
+
+1401
+01:57:11,930 --> 01:57:17,930
+Yani C ile bu işi yapacaksınız. Burada da kastımız şu.
+
+1402
+01:57:17,930 --> 01:57:24,930
+Mümkün oldukça C'ye hakimiyetiniz artacak. C++ da değil bakın.
+
+1403
+01:57:24,930 --> 01:57:28,930
+Standart C. Niye C diye ısrar ediyorum.
+
+1404
+01:57:28,930 --> 01:57:33,930
+Algoritma analizi, onun öncesinde veri yapıları, onunla beraber işletim sistemleri,
+
+1405
+01:57:33,930 --> 01:57:41,930
+onunla beraber belki A programlama, ondan sonra veri yapıları dedik, yapısal programlama dedik
+
+1406
+01:57:41,930 --> 01:57:45,930
+ve diğer bu ilintili derslerde hep C göreceksiniz.
+
+1407
+01:57:45,930 --> 01:57:50,930
+C üzerinden ödev yapacaksınız. Ve orada C size bir araç olacak amaç değil.
+
+1408
+01:57:50,930 --> 01:57:54,930
+İkinci sınıf veri yapıları ders alan var mı bilmiyorum aranızda.
+
+1409
+01:57:54,930 --> 01:57:59,930
+Kimsiniz? [öğrenci].
+
+1410
+01:57:59,930 --> 01:58:04,930
+Hepsi C üzerinden gidiyor.
+
+1411
+01:58:04,930 --> 01:58:09,930
+C'yi orada dediğim gibi araç olarak kullanacaksınız.
+
+1412
+01:58:09,930 --> 01:58:14,930
+Onun için şimdiden en iyi şekilde C'yi öğrenmeye çalıştık.
+
+1413
+01:58:14,930 --> 01:58:19,930
+C'yi öğrenen diğer dilleri kolay öğrenir diye anladık.
+
+1414
+01:58:19,930 --> 01:58:24,930
+Kısmen doğrudur.
+
+1415
+01:58:24,930 --> 01:58:29,930
+Tamamen doğru diyemem ama çoğunlukla doğrudur diyebiliriz.
+
+1416
+01:58:29,930 --> 01:58:32,930
+Kısmen de demeyelim de yanlış anlaşılmasın.
+
+1417
+01:58:32,930 --> 01:58:37,930
+Evet arkadaşlar bugün sizinle bu çözüm yöntemlerine baktık.
+
+1418
+01:58:37,930 --> 01:58:41,930
+Chaos elimination, şurada yapacağımız başka bir...
+
+1419
+01:58:41,930 --> 01:58:45,930
+Mesela burada başka örnekler de var da gerekirse daha sonra üzerinden geçeriz.
+
+1420
+01:58:45,930 --> 01:58:53,710
+Neyse bu bu kadar bugünlük yeterli.
+
+1421
+01:58:53,710 --> 01:58:56,710
+Diğer grubu da çok fazla geçmeyelim.
+
+1422
+01:58:56,710 --> 01:59:00,470
+Var mı sormak istediğiniz bir şey?
+
+1423
+01:59:00,470 --> 01:59:02,470
+Hocam ben bir şey sorabilir miyim?
+
+1424
+01:59:02,470 --> 01:59:06,470
+Sırayla alabiliriz iki kişiden.
+
+1425
+01:59:06,470 --> 01:59:14,829
+Evet buyurun.
+
+1426
+01:59:14,829 --> 01:59:18,270
+Hadi sorun veririz.
+
+1427
+01:59:18,270 --> 01:59:24,810
+Hocam şeyle ilgili bir şey soracaktım da.
+
+1428
+01:59:24,810 --> 01:59:28,810
+Biz kütüphaneleri kullanabiliyorsunuz dediniz sanki.
+
+1429
+01:59:28,810 --> 01:59:30,810
+Kütüphaneden kastınız ne?
+
+1430
+01:59:30,810 --> 01:59:40,810
+Mesela üst alma işlemi için ondan sonra logaritma 5.8 kaça eşittir onun için.
+
+1431
+01:59:40,810 --> 01:59:42,810
+Türev için nasıl bir kütüphane kullanırsınız?
+
+1432
+01:59:42,810 --> 01:59:46,810
+Türev kütüphanesi hazır bir türev işlemi yapacak bir durumumuz yok.
+
+1433
+01:59:46,810 --> 01:59:52,810
+Yani bir polinom verildiyse onun türevini kendiniz hesaplamanız gerekiyor.
+
+1434
+01:59:52,810 --> 01:59:56,810
+Ya sayısal türev yöntemini görünce sayısal türev ile hesaplarsınız.
+
+1435
+01:59:56,810 --> 02:00:02,810
+Ya da analitik türevi biraz önce bahsettiğim şekilde dersinin başında bahsettiğim şekilde hesaplayabilirsiniz.
+
+1436
+02:00:02,810 --> 02:00:06,810
+Yani her şey için de kütüphane kullanmanız uygun değil.
+
+1437
+02:00:06,810 --> 02:00:15,810
+Ama üst işlemi işte logaritma sinüs kosnüs e üzeri bilmem kaç gibi gerçek değerleri bulmanız gereken.
+
+1438
+02:00:15,810 --> 02:00:23,810
+Yani hesap makinesinde elle çözüyorken hesap makinesinden yapabileceğiniz işlemleri hazır kütüphane kullanabilirsiniz.
+
+1439
+02:00:23,810 --> 02:00:27,810
+Ama türev alma işlemi için bir şeye gerek yok.
+
+1440
+02:00:27,810 --> 02:00:31,810
+Sayısal türev zannediyorum bundan iki veya iki çepter sonra.
+
+1441
+02:00:31,810 --> 02:00:36,810
+Ama sayısal türevi de burada ilk başta gerek yok.
+
+1442
+02:00:36,810 --> 02:00:39,810
+Yani polinom fonksiyonun türevi bellidir basittir.
+
+1443
+02:00:39,810 --> 02:00:42,810
+Bir diziyi alacaksınız bir başka diziyi elde edeceksiniz.
+
+1444
+02:00:43,810 --> 02:00:50,810
+Sayısal türevden ayrı analitik türevi kendiniz işte çok basit kodlayabilirsiniz.
+
+1445
+02:00:50,810 --> 02:00:52,810
+Ne bileyim sinüsün türevi kosnüs türü dedik.
+
+1446
+02:00:52,810 --> 02:00:56,810
+Sinüs x'in tabi ki yani sinüs x² demiyorum.
+
+1447
+02:00:56,810 --> 02:00:59,810
+Sinüs 2x'ın türevi ne oluyor?
+
+1448
+02:00:59,810 --> 02:01:04,810
+2 çarpı cos2x oluyor.
+
+1449
+02:01:04,810 --> 02:01:11,810
+Bu yöntemleri biraz böyle genelleştirip basit yani sınırlı datorak çok genişle tutmayın.
+
+1450
+02:01:11,810 --> 02:01:13,810
+Yapabilirsiniz arkadaşlar.
+
+1451
+02:01:13,810 --> 02:01:18,409
+Sinüs x²'nin türevi ne oluyordu?
+
+1452
+02:01:18,409 --> 02:01:21,409
+2x'in x²'nin türevini alıyorduk.
+
+1453
+02:01:21,409 --> 02:01:25,409
+Sonra içerinin türevi 2x çarpı cos.
+
+1454
+02:01:25,409 --> 02:01:31,409
+Sinüsün cos 3'ün içerisinde sinüs x² diyorum.
+
+1455
+02:01:31,409 --> 02:01:37,300
+2x çarpı cos x² olması lazım.
+
+1456
+02:01:37,300 --> 02:01:41,300
+İçinin türevini alacaksınız yine içine aynen yazacaksınız.
+
+1457
+02:01:41,300 --> 02:01:44,300
+Sinüs de cos yapacaksınız.
+
+1458
+02:01:44,300 --> 02:01:51,300
+Sinüsün cos'un içerisinde şu an eksponansiyel veya başka bir fonksiyon olmadığını farz edelim.
+
+1459
+02:01:51,300 --> 02:01:55,300
+Sadece polünyon fonksiyonlar yani sinüs x.
+
+1460
+02:01:55,300 --> 02:01:59,300
+Sinüs x yeterli yani x²'ye de gerek yok.
+
+1461
+02:01:59,300 --> 02:02:02,300
+3x, 5x yeterli tamam mı?
+
+1462
+02:02:02,300 --> 02:02:05,300
+Evet bir başka arkadaşımızın sorusu vardı.
+
+1463
+02:02:05,300 --> 02:02:07,300
+Haftaya quiz olmayabilir.
+
+1464
+02:02:07,300 --> 02:02:11,300
+Diğer grup muhtemelen geride kaldı.
+
+1465
+02:02:11,300 --> 02:02:13,300
+Bilgisini veririz arkadaşlar.
+
+1466
+02:02:13,300 --> 02:02:17,300
+Bugün bir hoca nereye kadar gelmiş bir konuşalım kendisiyle.
+
+1467
+02:02:17,300 --> 02:02:20,300
+Dün akşam mesela görüşemedim bir türlü.
+
+1468
+02:02:20,300 --> 02:02:22,300
+En son nereye kadar geldiğini soramadım kendisine.
+
+1469
+02:02:22,300 --> 02:02:24,300
+Kaç arkadaştan yardım aldım.
+
+1470
+02:02:24,300 --> 02:02:28,300
+Geçen hafta onlar fixed point'i yeni bitirmişler.
+
+1471
+02:02:28,300 --> 02:02:37,020
+Öyle olunca haftaya olmama olasılığı yüksek gibi görünüyor.
+
+1472
+02:02:37,020 --> 02:02:40,020
+Hocam size sorularımız mail'de mı soruluyor?
+
+1473
+02:02:40,020 --> 02:02:43,020
+Nasıl bir soru?
+
+1474
+02:02:43,020 --> 02:02:47,020
+Mesela bir kodda bir problem çıkıyordur.
+
+1475
+02:02:47,020 --> 02:02:51,020
+Şimdi şöyle söyleyeyim.
+
+1476
+02:02:51,020 --> 02:02:53,020
+Soracağınız soru üzerinde şöyle düşünün.
+
+1477
+02:02:53,020 --> 02:02:57,020
+Eğer benim bu sorum bütün sınıfı ilgilendirebilecek bir soruysa
+
+1478
+02:02:57,020 --> 02:03:01,020
+o zaman dersin akabinde sormanız en güzeli.
+
+1479
+02:03:01,020 --> 02:03:07,020
+Ama şahsi bir kod bir şey yapıyorsunuz orada bir hata aldınız.
+
+1480
+02:03:07,020 --> 02:03:11,020
+Bunu mail ile ekran görüntüsü ekleyerek
+
+1481
+02:03:11,020 --> 02:03:15,020
+veya ne bileyim kodun ekran görüntüsü olur, kodun kendisi olur,
+
+1482
+02:03:15,020 --> 02:03:18,020
+açıklamanızı yazarsanız cevap veririm.
+
+1483
+02:03:18,020 --> 02:03:19,020
+Ama şöyle oluyor.
+
+1484
+02:03:19,020 --> 02:03:21,020
+Bazen çok uzun kod geliyor.
+
+1485
+02:03:21,020 --> 02:03:26,020
+Sizin oradaki kurgunuza, algoritmanınızı kodu okuyup anlamam zor olabilir.
+
+1486
+02:03:26,020 --> 02:03:28,020
+Onu da ne yaparız?
+
+1487
+02:03:28,020 --> 02:03:29,020
+Ben cevap yazarım.
+
+1488
+02:03:29,020 --> 02:03:34,020
+Dersin sonrasında, dersin devamında bakalım diye cevap yazıyorum genellikle.
+
+1489
+02:03:34,020 --> 02:03:38,020
+Dersde açıklamak üzere bunu söyledim diye cevap yazıyorum.
+
+1490
+02:03:38,020 --> 02:03:40,020
+İllaki cevap yazıyorum.
+
+1491
+02:03:40,020 --> 02:03:47,020
+Gereğini ya mail ile birebir olarak ya da dersin sonrasında görüşerek yaparız.
+
+1492
+02:03:47,020 --> 02:03:49,020
+Tamam.
+
+1493
+02:03:49,020 --> 02:03:54,020
+Evet sorunuz var mı arkadaşlar?
+
+1494
+02:03:54,020 --> 02:04:02,109
+Haftaya kuis yok dedik.
+
+1495
+02:04:02,109 --> 02:04:09,109
+Matrisin transposunu 90 derece, 180 derece dönüşümle olmaz.
+
+1496
+02:04:09,109 --> 02:04:12,109
+Yani matrisin transposunu alma.
+
+1497
+02:04:12,109 --> 02:04:16,109
+En enlik bir matris varsa en enlik bir matris olur.
+
+1498
+02:04:16,109 --> 02:04:19,109
+90 derece, 180 derece döndürmek başka şeydir.
+
+1499
+02:04:19,109 --> 02:04:28,890
+Şimdi matrisin transposu deyince benim aklıma başka yani bunların alakasız olduğu geliyor.
+
+1500
+02:04:28,890 --> 02:04:30,890
+Bakayım okuyayım mesajı.
+
+1501
+02:04:31,890 --> 02:04:40,289
+Aynı matris üzerinde bu işi yapabilmek kayıpsız mümkün değil.
+
+1502
+02:04:40,289 --> 02:04:43,289
+Eğer kare matris değilse.
+
+1503
+02:04:43,289 --> 02:04:47,289
+Kare matrisse transposunu alabilirsin.
+
+1504
+02:04:47,289 --> 02:04:50,289
+Orda ne yapacaksın?
+
+1505
+02:04:50,289 --> 02:04:53,289
+Şeye göre simetriğini alacaksın.
+
+1506
+02:04:53,289 --> 02:04:57,289
+Kare matris değilse bu bir kere mümkün değil.
+
+1507
+02:04:57,289 --> 02:05:00,729
+Yani aynı matris üzerinde olmaz.
+
+1508
+02:05:00,729 --> 02:05:02,729
+Yani teorik olarak mümkün değil.
+
+1509
+02:05:02,729 --> 02:05:05,729
+Çünkü bunu bellekte saklayacaksın.
+
+1510
+02:05:05,729 --> 02:05:07,729
+Zaten bizim örneğimizde de ne vardı?
+
+1511
+02:05:07,729 --> 02:05:10,729
+Matrisin transposunu alırken iki tane matris kullanıyorduk.
+
+1512
+02:05:10,729 --> 02:05:15,729
+M çarpı enlik bir matrisimiz varsa input olarak verdiğimiz şey.
+
+1513
+02:05:15,729 --> 02:05:21,729
+Alt putta N çarpı enlik boyutların yer değiştiri yeni bir matris elde ediliyordu.
+
+1514
+02:05:21,729 --> 02:05:26,729
+Bu yeni matris üzerinden kopyalı yapıştırı yapacaksın sadece.
+
+1515
+02:05:26,729 --> 02:05:28,729
+Var mı başka sorumuz?
+
+1516
+02:05:28,729 --> 02:05:36,029
+M2'nin J'sinin I'sine, M1'nin I'sinin J'sine atacaksın.
+
+1517
+02:05:36,029 --> 02:05:39,890
+İki tane for işinde o kadar.
+
+1518
+02:05:39,890 --> 02:05:43,890
+Evet soru yoksa hepinize iyi günler diliyorum.
+
+1519
+02:05:43,890 --> 02:05:45,890
+Görüşmek üzere diyelim.
+
+1520
+02:05:45,890 --> 02:05:53,869
+Hoşçakalın arkadaşlar.
+

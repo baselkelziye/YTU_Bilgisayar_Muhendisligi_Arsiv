@@ -1,0 +1,5284 @@
+1
+00:08:14,290 --> 00:08:29,649
+Evet, günaydın kıymetli arkadaşlar, iyisinizdir, umarım bugün dönemin son haftasında beraber son veri iletişimi dersini yapıyor olacağız, bir aksilik olmazsa.
+
+2
+00:08:29,649 --> 00:08:33,809
+Önümüzdeki haftadan itibaren finaller başlıyor, biliyorsunuz.
+
+3
+00:08:33,809 --> 00:08:42,450
+Final programı ilan edildi mi bilmiyorum, ben de bakayım, açıkçası bakmadım henüz, ilan edilmemiş.
+
+4
+00:08:43,409 --> 00:08:55,009
+Önümüzdeki haftadan itibaren finaller başlıyor, iki hafta boyunca. Biz de bir final sınavı yapacağız, onun da duyurusunu tekrardan şimdi yapmış olalım.
+
+5
+00:08:55,009 --> 00:09:04,850
+Onunla birlikte zaten iki tane ödevi teslim ettiniz, sonra ödevinizde bir video olacak, onunla beraber değerlendirileceksiniz.
+
+6
+00:09:04,850 --> 00:09:09,330
+Evet, final sınavı test olacak arkadaşlar, bu soruyu soran arkadaşlarımız bayağı oldu.
+
+7
+00:09:09,889 --> 00:09:17,330
+Final sınavını, tüm konuları kapsayacak bir şekilde, yani ilk haftadan son haftaya kadar olan tüm konuları kapsayacak bir şekilde,
+
+8
+00:09:17,330 --> 00:09:27,809
+tüm sorulara eşit puanlı olan, yani karşınıza çıkacak ilk soruyla son sorunun da puanı eşit olan bir test şeklinde olacak final sınavı.
+
+9
+00:09:27,809 --> 00:09:39,169
+Bir aksilik olmazsa, ben de gününü tam olarak bilmiyorum, programda ilan edildiğinde beraber, sizi de beraber görüyor olacağız.
+
+10
+00:09:39,169 --> 00:09:45,730
+İnşallah herhangi bir çakışma falan olmaz da ilan edilen zaman da tek seferde yapabiliriz.
+
+11
+00:09:45,730 --> 00:09:55,570
+Evet, dersle ilgili final veya başka şeylerle ilgili sorusu olan arkadaşlar varsa alabiliriz, yoksa bu haftaki konumuza başlayabiliriz arkadaşlar.
+
+12
+00:09:55,570 --> 00:10:03,539
+Evet, tamam, güzel.
+
+13
+00:10:04,340 --> 00:10:16,980
+Evet, şimdi connectionless ve connection oriented servisler ve switchingten falan bahsedeceğiz bugün.
+
+14
+00:10:16,980 --> 00:10:24,899
+Son proje değil arkadaşlar, bir ödeviniz daha olacak, ilk ödevinize benzer bir ödeviniz olacak, yakın zamanda açıklanır.
+
+15
+00:10:24,899 --> 00:10:31,059
+O da final gününe falan teslim edilmek üzere bir şey olacaktır muhtemelen diye tahmin ediyorum.
+
+16
+00:10:31,139 --> 00:10:34,019
+Bakacağız ona da final sınavlara bir açıklansın.
+
+17
+00:10:34,019 --> 00:10:42,259
+Bugün açıklanacak bildiğim kadarıyla program veya en geç yarın açıklanır, ona göre çünkü herkes plan yapıyor diye düşünüyorum.
+
+18
+00:10:42,259 --> 00:10:54,019
+Şimdi biraz da switchingten bahsedelim, switching dediğimiz zaman biz aslında hala daha data link layer, biraz da artık network layer'a doğru çıkacağız.
+
+19
+00:10:54,019 --> 00:10:58,500
+Üst katmanlarla çok fazla bir ilişkimiz olmadığını bu ders kapsamında söylemiştik.
+
+20
+00:10:58,899 --> 00:11:10,659
+Bir de daha çok neye odaklandığımızı söylemiştik, OSI referans modeline, farklı referans modelleri vardı TCP, IP gibi bir sürü farklı vardı ama en çok kullanılan TCP, IP idi.
+
+21
+00:11:10,659 --> 00:11:20,419
+Bizim de şu an protokolümüz, yani sizinle iletişime geçmek için kullandığımız protokol, onu daha çok A teknolojileri dersinde görüyor olacaksınız.
+
+22
+00:11:20,419 --> 00:11:28,100
+Üst katmanlarıyla ilgili çeşitli durumları, biz bu ders kapsamında OSI referans modeline odaklanmıştık.
+
+23
+00:11:28,419 --> 00:11:34,500
+Biraz fizikallı layer'dan bahsetmiştik ama daha çok data link layer'de neler olup bitiyor, onlardan bahsediyor olmuştuk.
+
+24
+00:11:34,500 --> 00:11:45,379
+Şimdi birden fazla bilgisayarın birbirlerine bağlanabilmesi için farklı topolojiler ve farklı A tipleri vardı.
+
+25
+00:11:45,379 --> 00:11:56,820
+Bu A tiplerinde tabii birbirlerine bilgisayarlar nasıl bağlanacak, buradaki yine önemli hususlardan birisi de switching kısmı.
+
+26
+00:11:57,460 --> 00:12:04,820
+Özellikle biz local area network'lar kullanırken çeşitli topolojilerden bahsetmiştik broadcast yaparken veriyi gönderirken.
+
+27
+00:12:04,820 --> 00:12:09,220
+Bas, star, ring, mesh bir sürü farklı farklı topolojimiz vardı.
+
+28
+00:12:09,220 --> 00:12:22,179
+Burada birkaç tanesinde örnek verilmiş fakat yani biz geniş alanda bir A kurmak istiyorsak durum biraz daha farklı.
+
+29
+00:12:22,259 --> 00:12:23,940
+Geniş alandan kastımız ne?
+
+30
+00:12:23,940 --> 00:12:31,779
+Şimdi mesela local area network'e tekrar bakalım bir evimiz, bir ofisimiz 5-10 bilgisayarın bağlandığı bir alandı.
+
+31
+00:12:31,779 --> 00:12:40,659
+Bas topolojisinde çok elverişli belki bir alam gibi düşünebiliriz veya işte diğer buradaki topolojilere elverişli bir alan.
+
+32
+00:12:40,659 --> 00:12:47,940
+Hatta mesh bile yapmak isteseniz 5 tane bilgisayarı birbirleriyle meshleyebilirsiniz veya 10 tane bilgisayarı birbiriyle meshleyebilirsiniz.
+
+33
+00:12:48,019 --> 00:12:54,899
+Ama wide area network dediğimizde yani tüm Türkiye'yi düşünün nasıl bir bas topolojisi ile bunları birbirlerine bağlarız.
+
+34
+00:12:54,899 --> 00:12:59,379
+Bas topolojisinde biliyorsunuz aynı anda hatta bir tane veri var.
+
+35
+00:12:59,379 --> 00:13:04,899
+İşte starda biraz daha ne denir ona imkanlar daha farklı oluyordu.
+
+36
+00:13:04,899 --> 00:13:07,860
+Ring'te ise böyle dolanan bir yapıdaydı.
+
+37
+00:13:07,860 --> 00:13:14,340
+Şimdi bunların böyle geniş alarda kullanılabilmesi çok mümkün değil.
+
+38
+00:13:14,340 --> 00:13:18,740
+Onun için de ekstradan çeşitli anahtarlama teknikleri geliştirilmiş.
+
+39
+00:13:18,740 --> 00:13:20,659
+Switching diyoruz bunlara.
+
+40
+00:13:20,659 --> 00:13:24,899
+Connection oriented ve connectionless olmak üzere temelde ikiye ayrılıyor.
+
+41
+00:13:24,899 --> 00:13:31,299
+Bunlardan biri ise devre anahtarlamalı servisler öyle söyleyelim.
+
+42
+00:13:31,299 --> 00:13:36,340
+Diğeri paket anahtarlamalı ve diğeri de mesaj anahtarlamalı servisler.
+
+43
+00:13:36,340 --> 00:13:39,700
+Mesaj anahtarlamalı servisler çok fazla artık kullanılmıyor.
+
+44
+00:13:39,700 --> 00:13:41,460
+O yüzden hiç gündemde yoktur neredeyse.
+
+45
+00:13:41,460 --> 00:13:47,379
+Bu şekilde kategorize eden çeşitlik hatta kitaplarda bile geçmiyor olabilir.
+
+46
+00:13:47,379 --> 00:13:54,100
+Çünkü bir mesajı A noktasından B noktasına gönderirken arada bulunan her bir not için
+
+47
+00:13:54,100 --> 00:13:58,179
+ayrı ayrı o bilgiler tutulması gerekiyor.
+
+48
+00:13:58,179 --> 00:14:02,899
+Ve her bir nottan verinin geçmesi gerekiyor mesaj anahtarlamalı servislerde.
+
+49
+00:14:02,899 --> 00:14:06,580
+O sebeple mesaj anahtarlamalı servisler çok fazla kullanılmıyor.
+
+50
+00:14:06,580 --> 00:14:09,379
+Artık diyelim artık çok fazla kullanılmıyor.
+
+51
+00:14:09,860 --> 00:14:16,019
+Circuit switch zaten devre anahtarlamalı servislerden bahsettiğimizde tam olarak
+
+52
+00:14:16,019 --> 00:14:18,980
+nasıl bir amaçla kullanıldığını görüyor olacaksınız.
+
+53
+00:14:18,980 --> 00:14:21,779
+Bir de işte paket anahtarlamalı servisler.
+
+54
+00:14:21,779 --> 00:14:27,700
+Artık günümüzde bir taraftan da software switched networkler var.
+
+55
+00:14:27,700 --> 00:14:31,059
+Onlardan da en son bahsediyor olacağız.
+
+56
+00:14:31,059 --> 00:14:38,100
+Şimdi devre anahtarlamalı servislerde şöyle bir durum söz konusu.
+
+57
+00:14:38,179 --> 00:14:41,059
+Deneyelim ki bizim 3 tane makinamız olmuş olsun.
+
+58
+00:14:41,059 --> 00:14:45,379
+A, B ve C olmak üzere 3 tane makinamız olmuş olsun.
+
+59
+00:14:45,379 --> 00:14:48,179
+Bu makinalar bir WAN'ın içerisinde.
+
+60
+00:14:48,179 --> 00:14:51,860
+Yani her birisi ayrı ayrı bir LAN'ın içerisinde olabilir.
+
+61
+00:14:51,860 --> 00:14:56,419
+Ama birbirleriyle iletişim kurmak istedikleri A bir WAN olmuş olsun.
+
+62
+00:14:56,419 --> 00:14:58,179
+White Ray Network olmuş olsun.
+
+63
+00:14:58,179 --> 00:15:05,059
+Böyle olunca çeşitli santraller üzerinden birbirlerine veri aktarımı gerçekleştirebiliyorlar.
+
+64
+00:15:05,220 --> 00:15:06,659
+Mesela şöyle düşünelim.
+
+65
+00:15:06,659 --> 00:15:10,340
+A, B'ye bir veri göndermek istiyor bu senaryoda.
+
+66
+00:15:10,340 --> 00:15:16,259
+A, B'ye veri göndermek için arada bulunan santraller üzerinden
+
+67
+00:15:16,259 --> 00:15:21,700
+direkt B'ye bir yol belki gözünüzde çizebiliyorsunuz.
+
+68
+00:15:21,700 --> 00:15:26,820
+Ama ilk bakış baktığınızda birden fazla yol da çizebilirsiniz muhtemelen.
+
+69
+00:15:26,820 --> 00:15:31,299
+İşte 1, 2, 5'ten gidebileceği gibi 1, 3, 6, 5'ten de gidebilir.
+
+70
+00:15:31,539 --> 00:15:38,259
+Buradaki tabii yolun kısalığı, yolun hop sayısıyla doğru orantılı olabileceği gibi.
+
+71
+00:15:38,259 --> 00:15:41,139
+Hop ne demek? Kaç tane santral üzerinden atlıyorsunuz.
+
+72
+00:15:41,139 --> 00:15:43,460
+Kaç tane bağ var arada.
+
+73
+00:15:43,460 --> 00:15:49,220
+Hop sayısıyla doğru orantılı olabileceği gibi her daim doğru orantılı olmayabilir.
+
+74
+00:15:49,220 --> 00:15:55,940
+Aradaki verinin gönderim süresi hoplar arasındaki distans bir kriterdir.
+
+75
+00:15:55,940 --> 00:16:00,740
+Aynı şekilde hoplar arasındaki veri iletişiminin yoğunluğu bir kriterdir.
+
+76
+00:16:01,700 --> 00:16:09,700
+Belki siz A'dan B'ye veri göndermek için en belki makul mantıklı yöntem 1, 2, 4, 3, 6, 5
+
+77
+00:16:09,700 --> 00:16:12,259
+sırasıyla izlenilen yol da olabilir.
+
+78
+00:16:12,259 --> 00:16:18,659
+İşte buna karar verebilecek çeşitli üst katmanlarda rutink yöntemleri var.
+
+79
+00:16:18,659 --> 00:16:20,980
+Network katmanında özellikle üçüncü katmanda.
+
+80
+00:16:20,980 --> 00:16:28,019
+Bunu network dersinde bir tık daha detaylı olarak rutink algoritmalarını göreceksiniz.
+
+81
+00:16:28,100 --> 00:16:33,460
+Çünkü statik rutink algoritmaları, dinamik rutink, adaptif diyelim onlar dinamik değil de
+
+82
+00:16:33,460 --> 00:16:38,580
+adaptif rutink algoritmaları bununla beraber çok farklı farklı yöntemler falan da var.
+
+83
+00:16:38,580 --> 00:16:42,100
+Şimdi biz circuit'da yanlış yazmışız neyse.
+
+84
+00:16:42,100 --> 00:16:45,620
+Circuit switching'i nasıl yapıyoruz arkadaşlar?
+
+85
+00:16:45,620 --> 00:16:49,379
+Mesela bu cihazları birer telefon olduğunu düşünün.
+
+86
+00:16:49,379 --> 00:16:52,820
+Eski filmlerde falan görüyorsunuzdur bir santral var.
+
+87
+00:16:52,820 --> 00:16:56,980
+Santralin içerisinde çeşitli anahtarlama elemanları var.
+
+88
+00:16:56,980 --> 00:17:03,139
+Ben A telefonu olarak B telefonunu aramak istiyorum.
+
+89
+00:17:03,139 --> 00:17:09,539
+Benim adıma A'dan B'ye bir bağlantı fiziksel olarak sağlanıyor.
+
+90
+00:17:09,539 --> 00:17:12,579
+Devre olarak bir anahtarlama şeması ile sağlanıyor.
+
+91
+00:17:12,579 --> 00:17:16,500
+Yani adama kesin aileleriniz falan anlatıyordur.
+
+92
+00:17:16,500 --> 00:17:23,619
+Ben üniversite okurken memleketi aramak istediğimde gidiyorduk PTT'ye.
+
+93
+00:17:23,619 --> 00:17:27,859
+Şurayı şurayı şurayı şu numarayı arayacağız falan filan öyle ne doğru bağlanıyordu.
+
+94
+00:17:27,859 --> 00:17:29,299
+Gidip konuşuyorduk falan.
+
+95
+00:17:29,299 --> 00:17:33,220
+İşte o bağlama arka tarafta direkt devreyi bağlıyorlar.
+
+96
+00:17:33,220 --> 00:17:42,819
+Yani A noktasından B noktasına bir bağlantı mesela 1-2 ve 5 numaralı santraller üzerinden yapıldığını düşünelim.
+
+97
+00:17:42,819 --> 00:17:46,660
+1-2 ve 5 numaralı santraller üzerinden yapıldığını düşünelim.
+
+98
+00:17:46,660 --> 00:17:53,220
+Circuit switching'te öyle bir ayarlıyoruz ki A'dan B'ye arada bir hakikaten devre var.
+
+99
+00:17:54,180 --> 00:18:01,539
+Yani bu her bir nodun içerisinde tabii farklı farklı nedenle ona anahtarlama teknikleri var.
+
+100
+00:18:01,539 --> 00:18:08,180
+Fakat bu anahtarlama teknikleri ile bizim yolumuz nedenle ona oluşturulmuş oluyor.
+
+101
+00:18:08,180 --> 00:18:21,940
+Ben A ile B arasında böyle bir had tesis ettiğimde bu hadı kullanırken veya kullanmazken bu hadın tesisi için bir ücret ediyorum.
+
+102
+00:18:21,940 --> 00:18:23,220
+Ne demek istiyorum?
+
+103
+00:18:23,220 --> 00:18:30,900
+Şimdi mesela şöyle düşünün biz mesela normal interneti düşünün örnek vermek açısından söylüyorum açıkçası.
+
+104
+00:18:30,900 --> 00:18:38,579
+İnternette sürekli bağlısınız sürekli bağlı bağlı olduğunuz her dakika başına bir ücret ödemiyorsunuz.
+
+105
+00:18:38,579 --> 00:18:48,180
+Ne kadar hizmet alıyorsanız ne kadar indirme yapıyorsanız veya ne kadar yükleme yapıyorsanız yani paketiniz boyutunda bir ücrettendirme gerçekleştiriyorsunuz.
+
+106
+00:18:48,740 --> 00:18:59,700
+Yani siz paketinizin ne boyutta olacağını ne kadar veri göndereceğinize göre bir ücret ödüyorsunuz.
+
+107
+00:18:59,700 --> 00:19:06,099
+Burada öyle değil burada had size ne kadar tesis edildiyse öyle bir ücret ödüyorsunuz.
+
+108
+00:19:06,099 --> 00:19:09,299
+Siz isterseniz hadı kullanmayın yani boşa harcayın.
+
+109
+00:19:09,299 --> 00:19:12,339
+Yine de bir ücret nedenle ona ödüyorsunuz.
+
+110
+00:19:12,339 --> 00:19:21,299
+Çünkü sizin adınıza o iki konuşmak isteyen not için bir devre tamamlanmış oluyor.
+
+111
+00:19:21,299 --> 00:19:26,420
+Tabii burada gönderilen devrenin içerisinde farklı farklı yapılar da var.
+
+112
+00:19:26,420 --> 00:19:27,220
+Ne demek istiyorum?
+
+113
+00:19:27,220 --> 00:19:28,980
+Biz mesela bilgi göndermek istiyoruz.
+
+114
+00:19:28,980 --> 00:19:31,539
+Diyelim ki bu bir telefonsa ses göndermek istiyoruz.
+
+115
+00:19:31,539 --> 00:19:37,220
+Sesimiz bir bilgi ama her daim tek başına bir ses gönderilmiyor karşı tarafa.
+
+116
+00:19:37,220 --> 00:19:44,900
+Kontrol frekansı farklı nedenle ona genlikte dizayn edilmiş bir kontrol frekansı.
+
+117
+00:19:44,900 --> 00:19:52,099
+Hata algılamak için ayrı bir belki frekans veya o an santraller hadın yoğunluklarını,
+
+118
+00:19:52,099 --> 00:19:57,059
+doluluklarını algılamaları için farklı farklı sinyaller gönderiyor olabilir.
+
+119
+00:19:57,059 --> 00:20:02,819
+Çünkü ben A'dan B'ye böyle bir devre anahtarlamalı yapı kurduğumda hadın
+
+120
+00:20:02,819 --> 00:20:05,380
+üzerinde bulunması gereken farklı sinyaller olabiliyor.
+
+121
+00:20:05,380 --> 00:20:06,660
+Mesela yine telefonu düşünelim.
+
+122
+00:20:06,740 --> 00:20:07,940
+Yani A'dan B'yi arıyorum.
+
+123
+00:20:07,940 --> 00:20:16,900
+A'dan B'yi aradığımda B meşgulse eğer benim kulağıma telefondan bir meşgul sinyali çalıyor
+
+124
+00:20:16,900 --> 00:20:23,940
+veya B çalıyorsa yani o telefonu açsın diye ona bir bildirim gidiyorsa o çalma sinyali
+
+125
+00:20:23,940 --> 00:20:31,220
+ayrıca farklı olmuş oluyor veya santraller çeşitli kontrol sinyalleri üzerinden
+
+126
+00:20:31,220 --> 00:20:34,180
+hattı yönetebiliyorlar.
+
+127
+00:20:34,180 --> 00:20:35,700
+Böyle bir durum söz konusu.
+
+128
+00:20:36,180 --> 00:20:41,059
+Yine bu hatların içerisinde yani santrallerin birbirlerine bağlı olduğu veya
+
+129
+00:20:41,059 --> 00:20:47,619
+santrallerin son notlara bağlı olduğu hatların içerisinde tek kablo üzerinden de
+
+130
+00:20:47,619 --> 00:20:51,619
+tüm sinyallerin gönderildiği durum söz konusu olabilmekle beraber ne yapıyorlar
+
+131
+00:20:51,619 --> 00:20:53,619
+tabi ki farklı genliklerde gönderiyorlar.
+
+132
+00:20:53,619 --> 00:20:59,140
+Birden fazla kablonun da kullanıldığı çeşitli durumlar söz konusu olabilir.
+
+133
+00:20:59,140 --> 00:21:06,500
+Kontrol için ayrı yerden bir şey gönderiyordur veya kontrol ile bilgiyi aynı
+
+134
+00:21:06,500 --> 00:21:07,460
+yerden gönderiyordur.
+
+135
+00:21:07,460 --> 00:21:08,660
+Bu ikisi de söz konusu.
+
+136
+00:21:08,660 --> 00:21:14,819
+Bir de tabi bununla beraber ben kontrol bilgisini karşı tarafa gönderiyorum diyelim
+
+137
+00:21:14,819 --> 00:21:20,579
+ki böyle bir mesajın içerisinde fakat nasıl gönderiyorum yani kontrol bilgisi
+
+138
+00:21:20,579 --> 00:21:26,420
+mesela bağlı olduğunu A'nın B'ye hala daha bu devre aracılığıyla bağlı olduğunu
+
+139
+00:21:26,819 --> 00:21:29,380
+kontrol eden bir sinyalimiz olmuş olsun.
+
+140
+00:21:29,380 --> 00:21:33,940
+O işte bir bir ton yani nasıl bir ton bilmiyorum.
+
+141
+00:21:33,940 --> 00:21:38,259
+Bir çalındığında bile insanın da belki bir duyabileceği bir ton olmuş olsun.
+
+142
+00:21:38,259 --> 00:21:45,619
+Bu sinyalin sadece bilgiyle beraber mi gönderilmesini istiyorsunuz yoksa bu
+
+143
+00:21:45,619 --> 00:21:48,420
+sinyalin sürekli hat üzerinde olmasını mı istiyorsunuz?
+
+144
+00:21:48,420 --> 00:21:53,059
+Mesela bu da yine sizin karar vermeniz gereken kontrol etmeniz gereken
+
+145
+00:21:53,059 --> 00:21:53,940
+şeylerden birisi.
+
+146
+00:21:53,940 --> 00:21:55,140
+Ne demek istiyorsunuz hocam?
+
+147
+00:21:55,619 --> 00:22:00,660
+Mesela eğer ki sadece bilgiyle beraber kontrol verisi gönderiyorsak sanki bir
+
+148
+00:22:00,660 --> 00:22:02,660
+piggy bank gibi bu ne demek olur?
+
+149
+00:22:02,660 --> 00:22:09,059
+Ben konuşuyorsam karşı tarafa ile bağlantımın olup olmadığını kontrol eden
+
+150
+00:22:09,059 --> 00:22:13,380
+bir sinyal benim o sesimin bilgisinin içerisinde yüklenerek gönderilmiştir.
+
+151
+00:22:13,380 --> 00:22:17,619
+Ama konuşmuyorsam karşı tarafa veri göndermiyorsam bir kontrol verisi de
+
+152
+00:22:17,619 --> 00:22:18,339
+gitmiyordur.
+
+153
+00:22:18,339 --> 00:22:23,220
+Bu bir nedendir ona teknik bir diğer ikinci teknikse işte az önce
+
+154
+00:22:23,220 --> 00:22:28,420
+dediğim gibi ben konuşuyorsam da konuşmuyorsam da her daim hattın
+
+155
+00:22:28,420 --> 00:22:33,940
+içerisinde bu bağlantının sıhhatli bir şekilde gerçekleştirilmesini
+
+156
+00:22:33,940 --> 00:22:39,380
+sağlayan gerek santraller tarafından üretilen veya işte çeşitli uçlar
+
+157
+00:22:39,380 --> 00:22:43,220
+karşılıklı uçlar tarafından yapılan bağlantılar olabilir.
+
+158
+00:22:43,220 --> 00:22:48,660
+Tabii bu anahtarlama donanımsal bir anahtarlama olduğu için mesela
+
+159
+00:22:49,220 --> 00:22:56,980
+bir numaralı santralin içerisinde 15 çarpı 15 kaç olur 225 tane farklı
+
+160
+00:22:56,980 --> 00:23:00,579
+nedendir ona anahtarlama yapılabilecek şey olsun.
+
+161
+00:23:00,579 --> 00:23:08,579
+Ben bir numaralı santrale 225 farklı cihazdan bağlandığım anda artık
+
+162
+00:23:08,579 --> 00:23:13,059
+226 cihazı anahtarlayabilecek kabiliyette olamam.
+
+163
+00:23:13,059 --> 00:23:17,619
+Yani her bir santralin bu durumda ayrı ayrı kapasitesi var.
+
+164
+00:23:17,619 --> 00:23:21,859
+Bir donanımsal bir şey gerekli bunun için ayrı ayrı kapasitesi var.
+
+165
+00:23:21,859 --> 00:23:30,420
+Böyle olunca 256 nedendir ona nodu diyelim ki şeyin içerisinde 226 pardon
+
+166
+00:23:30,420 --> 00:23:36,500
+226 nodu şeyin içerisine alamam o anahtarlamanın içerisine alamam.
+
+167
+00:23:36,500 --> 00:23:44,099
+Ama bunun yine avantajlı noktalardan birisi ne ben eğer ki bir nodu
+
+168
+00:23:44,420 --> 00:23:49,299
+switchlediysem kendi donanımım üzerinden bir bağlantı kurduysam
+
+169
+00:23:49,299 --> 00:23:54,660
+ona full akses veririm yani o o hattı tam kapasite kullanmak istese de
+
+170
+00:23:54,660 --> 00:23:59,299
+istemese de boş boş dursun ben yine de o hatta ona sağlamış olurum.
+
+171
+00:23:59,299 --> 00:24:04,500
+Mesela işte TDM anlatacağız birazdan daha önce de anlatmıştık TDM'de neydi?
+
+172
+00:24:04,500 --> 00:24:12,900
+Zamanı bölüyordu eğer ki 300 zamanı 300 farklı şeye bölüyorsa 301 farklı
+
+173
+00:24:12,980 --> 00:24:17,059
+nod geldiğinde onun da isteğini alıyordu ama artık bir kuyruğa sokmak
+
+174
+00:24:17,059 --> 00:24:20,579
+gerekiyordu bir kuyruk mekanizması oluyordu işte burada öyle bir kuyruk
+
+175
+00:24:20,579 --> 00:24:24,579
+mekanizması yok mesajın gecikmesi gibi bir durum söz konusu değil direkt
+
+176
+00:24:24,579 --> 00:24:28,579
+karşı tarafa gönderiyor ama buradaki en büyük yine sıkıntılardan
+
+177
+00:24:28,579 --> 00:24:34,180
+birisi şu diyelim ki A'dan C'ye bir nedendir ona bağlantı kurmuş
+
+178
+00:24:34,180 --> 00:24:39,380
+olalım 1246 yolundan bir bağlantı kurmuş olalım hangi not ve santral
+
+179
+00:24:39,859 --> 00:24:46,180
+arasındaki bağlantı en yavaşsa yani zincirin en zayıf halkası hangisi ise
+
+180
+00:24:46,180 --> 00:24:52,339
+bütün bağlantının hızı o hızda oluyor tamam yani mesela hocam 1 ile 2 arası
+
+181
+00:24:52,339 --> 00:24:55,619
+çok hızlı buradan buraya çok hızlı gelsin buraya da yavaş gitse de olur
+
+182
+00:24:55,619 --> 00:25:00,900
+değil 2 4 arası eğer yavaşsa ne kadar yavaş olduğuna bağlı olarak A'dan
+
+183
+00:25:00,900 --> 00:25:06,339
+C'ye olan tüm bağlantının hızı o en yavaş olan bağlantının hızıyla
+
+184
+00:25:06,819 --> 00:25:11,539
+nedendir ona belirlenmiş oluyor pekala yavaş olmasının sebebi ne donansal
+
+185
+00:25:11,539 --> 00:25:16,980
+sebepler yani yavaş olmasının sebebi dördün yükü çok fazla o sebeple çok
+
+186
+00:25:16,980 --> 00:25:21,700
+fazla mesaj alamıyor kabul edemiyor kuyrukta bekletiyor bafırı taşmış değil
+
+187
+00:25:21,700 --> 00:25:25,539
+burada öyle bir durum söz konusu değil donans olarak anahtarlandığı
+
+188
+00:25:25,539 --> 00:25:30,900
+için muhakkak ve muhakkak kapasitesi dahilinde donanım sal gönderim
+
+189
+00:25:30,900 --> 00:25:35,299
+kapasitesi dahilinde maksimum oranda karşı tarafa mesaj gönderebilmek
+
+190
+00:25:35,380 --> 00:25:40,900
+işte atraksiyonlar gerçekleştiriyor temelde 3 fazla bir kurulumu var bu
+
+191
+00:25:40,900 --> 00:25:45,940
+koneksiyonun öncelikle işte bağlantıyı A'dan B'ye kurulması gerekiyor
+
+192
+00:25:45,940 --> 00:25:53,619
+yani dedik yani bizim o işte ebeveynlerimiz annelerimiz babalarımız
+
+193
+00:25:53,619 --> 00:25:57,460
+üniversitedeyken memleketlerini ararken ne yapıyor PTT'ye gidiyor
+
+194
+00:25:57,460 --> 00:26:01,940
+koneksiyon kurulsun diye öncelikle bir talepte bırılıyor ondan sonra
+
+195
+00:26:02,180 --> 00:26:05,619
+gidiyor kendi ne işi varsa kafede arkadaşlarıyla oturuyor çay içiyor
+
+196
+00:26:05,619 --> 00:26:08,980
+falan sonra PTT'den haber geliyor tamam ya koneksiyonu kurduk öncelikle
+
+197
+00:26:08,980 --> 00:26:13,299
+bir koneksiyonun kurulması gerekiyor yani bu koneksiyonu mesela bizim normal
+
+198
+00:26:13,299 --> 00:26:17,460
+ev telefonları için düşünelim gerçi şu an vayıp üzerinden gönderiliyor
+
+199
+00:26:17,460 --> 00:26:21,779
+olabilir ama eski versiyonları düşünüyor olalım biz mesela ne
+
+200
+00:26:21,779 --> 00:26:26,500
+yapıyoruz koneksiyonu kurmak için öncelikle telefonu kaldırıyoruz
+
+201
+00:26:27,059 --> 00:26:33,700
+bir available tonu çalıyor yani available tonu dediğimde siz anlayın
+
+202
+00:26:33,700 --> 00:26:39,059
+art bu hat müsait şu an kullanabilirsin diye bir ton çalmış oluyor
+
+203
+00:26:39,059 --> 00:26:43,619
+ama her daim böyle çalmaya da biliyor biliyorsunuz meşgul çalıyor
+
+204
+00:26:43,619 --> 00:26:48,900
+meşgul çalmasının çok farklı farklı frekans aralıkları oluyor
+
+205
+00:26:48,900 --> 00:26:55,220
+onlar bile bir mana ifade ediyor hatta kaldırdınız o aranabilir
+
+206
+00:26:55,220 --> 00:26:58,980
+available tonunu duydunuz duyduktan sonra ne yapıyorsunuz numarasını
+
+207
+00:26:58,980 --> 00:27:04,579
+çeviriyorsunuz numarasını çevirdikten sonra karşı o numaraya çevirdiğiniz
+
+208
+00:27:04,579 --> 00:27:10,660
+numaraya o talep gidiyor o talep karşı tarafa gitti karşı taraf meşgul
+
+209
+00:27:10,660 --> 00:27:15,859
+olabilir veya müsait olabilir meşgul veya müsait durumuna göre ayrıca
+
+210
+00:27:15,859 --> 00:27:20,019
+bir ses tonu duyuyorsunuz meşgul ise başka bir şey çalıyor işte
+
+211
+00:27:20,660 --> 00:27:27,619
+tamam müsaitmiş bakalım telefonu açacak mı diye nedenle ona düşünüyorsunuz
+
+212
+00:27:27,619 --> 00:27:32,819
+bunlar tamamen hepsi koneksiyonun establish aşaması ondan sonra karşı taraf
+
+213
+00:27:32,819 --> 00:27:39,059
+eğer ki müsaitse ve sizinle konuşmak istiyorsa telefonu açtığı anda işte artık
+
+214
+00:27:39,059 --> 00:27:45,140
+oradan sonra transmitting başlıyor koneksiyon establish aşaması bitirilmiş oluyor
+
+215
+00:27:45,140 --> 00:27:49,539
+tamam karşı taraf açtı ondan sonra abi ne yapıyorsun iyiyim sen ne yapıyorsun
+
+216
+00:27:49,859 --> 00:27:54,420
+işte gündelik muhabbetler işte bitkoyun almış başına gitmiş tavan yapıyor dün akşam
+
+217
+00:27:54,420 --> 00:27:59,059
+yeter yumma alsaydık ne yaptım falan filan konuşuyorsun karşı tarafla bir süre
+
+218
+00:27:59,059 --> 00:28:02,900
+konuşuyorsun konuşuyorsun yani veri aktarıyorsun konuşma üzerinden anlatmak
+
+219
+00:28:02,900 --> 00:28:09,059
+biraz daha kafanızda güzel canlanır diye söylüyorum yoksa bilgisayar her ucun
+
+220
+00:28:09,059 --> 00:28:13,619
+bilgisayar olduğunu da burada tabii ki düşünebilirsiniz veri göndermek
+
+221
+00:28:13,619 --> 00:28:18,819
+açısından karşı tarafla konuşuyorsunuz ve o size gönderiyor siz ona gönderiyorsunuz
+
+222
+00:28:18,900 --> 00:28:25,380
+bu şekilde ondan sonra kapatmak için yapmanız gereken şey yine telefonu koymak
+
+223
+00:28:25,380 --> 00:28:30,660
+yani o ne deniyor ona ahizeyi telefonun üzerine koymak böyle olunca ekstradan
+
+224
+00:28:30,660 --> 00:28:36,579
+kapatmaya dair bir sinyal yayınlamış oluyorsunuz tabii mesela burada çeşitli
+
+225
+00:28:36,579 --> 00:28:42,819
+şeyleri biliyorsunuzdur telefonlar ve biliyor musunuz bilmiyorum mesela
+
+226
+00:28:42,819 --> 00:28:48,180
+bizim evde ben çocukken merak ediyordum açıkçası evde bulunan bütün cihazlar
+
+227
+00:28:48,339 --> 00:28:53,539
+hatta böyle iki bin ikide iki bin birde falan cep telefonu aldığımızda biraz daha
+
+228
+00:28:53,539 --> 00:28:58,420
+fazla merak etmiştim evde bulunan bütün cihazlar elektriğe bağlıydı ama
+
+229
+00:28:58,420 --> 00:29:02,259
+telefon elektriğe bağlı olmadan çalışıyordu ev telefonlarını kastediyorum nasıl oluyor
+
+230
+00:29:02,259 --> 00:29:07,380
+yani sonuçta benim sesimi gönderiyor yani bir de fişe takmamız gerekmez mi
+
+231
+00:29:07,380 --> 00:29:12,500
+bu nereden elektrik alıyor gibi o hattın içerisinde aynı zamanda elektrikte var
+
+232
+00:29:12,500 --> 00:29:18,019
+arkadaşlar yani o telefon makinalarının ne denir ona bilmiyorum o makinaların
+
+233
+00:29:18,019 --> 00:29:23,380
+zaten destenmesi için çok yüksek bir elektriğe ihtiyaç yok sadece çalma tonu
+
+234
+00:29:23,380 --> 00:29:28,579
+için yani çaldığında yaklaşık yanlış hatırlamıyorsam yine o çocukluk
+
+235
+00:29:28,579 --> 00:29:34,740
+verilerine dayanarak 70-80 volt arasında bir volt gidiyor tamam mı pasif bir volt
+
+236
+00:29:34,740 --> 00:29:41,299
+70-80 yani çalarken telefon 70-80 volt civarında bir gerilim geliyor ki
+
+237
+00:29:41,299 --> 00:29:44,980
+çaldığına anlayabilelim onun haricinde o kadar yüksek değil çok düşük
+
+238
+00:29:44,980 --> 00:29:50,259
+gerilimlerle de zaten işi görebiliyor veriyi falan gönderebiliyor tabii 70-80
+
+239
+00:29:50,259 --> 00:29:54,099
+volt dediğimiz şey insanın çarpıyor onu da söyleyelim yani telefon o eski
+
+240
+00:29:54,099 --> 00:30:00,819
+telefonlar çalarken kabloluya böyle şey ne denir ona dokunursanız çarpadabilir
+
+241
+00:30:00,819 --> 00:30:05,380
+ama bunu mesela bilmediğin zaman çarpmaz yani biliyorsan çarpar zaten bu
+
+242
+00:30:05,380 --> 00:30:10,660
+şeyler genelde biliyorsunuz bilmediğin için çarpmaz bu şekilde bir
+
+243
+00:30:10,660 --> 00:30:14,660
+koneksiyonu nedenler ona sonlandırman da gerekiyor yani en son telefonu
+
+244
+00:30:14,660 --> 00:30:20,579
+kapatıyorsun sen farkında değilsin belki veya telefonun o eski telefon
+
+245
+00:30:20,579 --> 00:30:25,859
+makinalarının kapatmış bir tuşu var ya o tuşunu ne bilmiyorum telefon
+
+246
+00:30:25,859 --> 00:30:30,019
+konuşmasını sonlandırmak için bastığın tuş ona bastığında hatta
+
+247
+00:30:30,579 --> 00:30:37,059
+bu koneksiyonu sonlandıracak bir sinyal olmuş oluyor bu koneksiyon tek taraflı
+
+248
+00:30:37,059 --> 00:30:40,819
+da sonlandırılabilir yani site'lardan birisi veya es zamanlı
+
+249
+00:30:40,819 --> 00:30:45,380
+simülatü analiz bir şekilde de sonlandırılabilir onu da söylemiş
+
+250
+00:30:45,380 --> 00:30:53,380
+olayım tabii burada farklı farklı division yani nasıl böleceği zamanı
+
+251
+00:30:53,380 --> 00:30:59,380
+veya işte elinde bulunan o devre elemanını nasıl böleceğiyle ilgili
+
+252
+00:30:59,460 --> 00:31:03,700
+farklı farklı yöntemler var onlara değiniyor olalım mesela nasıl
+
+253
+00:31:03,700 --> 00:31:08,099
+çalışıyor bu yöntemler devreler birbirlerine nasıl bağlanıyor onu
+
+254
+00:31:08,099 --> 00:31:14,660
+söylemiş olalım diyelim ki a de şeyiyle noduyla bir iki üç dört
+
+255
+00:31:14,660 --> 00:31:18,660
+nodlarından birisi konuşmak istiyor olabilir yani a buradaki
+
+256
+00:31:18,660 --> 00:31:22,019
+nodların birisine mesaj göndermek istiyor olabilir hocam a b ve
+
+257
+00:31:22,019 --> 00:31:25,700
+c göndermek onlar lanın içinde zaten onlar lanın içinde olduğu
+
+258
+00:31:25,779 --> 00:31:29,460
+veya şu grup lanın içerisinde olduğu için onlar kendi aralarında
+
+259
+00:31:29,460 --> 00:31:35,140
+lan teknolojilerini topolojilerini kullanarak konuşabilirler a b c
+
+260
+00:31:35,140 --> 00:31:39,140
+ile bir iki üçün uzak yerlerde olduğunu var sayıyoruz yani
+
+261
+00:31:39,140 --> 00:31:46,819
+birisi Yozgat'ta birisi Antalya'da olmuş olsun şimdi böyle olunca
+
+262
+00:31:46,819 --> 00:31:50,500
+tabii nedendir ona işler değişiyor artık bir vandan söz
+
+263
+00:31:50,500 --> 00:31:54,500
+etmemiz gerekiyor lan değil bunun için ise işte circuit switching
+
+264
+00:31:54,500 --> 00:32:01,299
+yaparken eğer ki biz space division yapıyorsak o donanım sal olarak
+
+265
+00:32:01,299 --> 00:32:07,299
+birimin o donanım sal olarak birimin her bir elemanını ayrı
+
+266
+00:32:07,299 --> 00:32:11,140
+ayrı switch edebileceğimiz bir yapı var mesela ne demek
+
+267
+00:32:11,140 --> 00:32:15,059
+istiyorum ben a'dan bir iki üç dört hangisine bağlanmak
+
+268
+00:32:15,059 --> 00:32:20,339
+istiyorsam hangisine bağlanmak istiyorsam o alanı o devrenin
+
+269
+00:32:20,339 --> 00:32:23,779
+o elemanını kapatmam lazım yani devreyi kapattığınızda
+
+270
+00:32:23,859 --> 00:32:27,700
+nedendir nasıl oluyor bir karşı tarafa elektrik iletiyorsunuz o
+
+271
+00:32:27,700 --> 00:32:31,779
+şekilde düşünün mesela a ile bir konuşmak istiyorsa a ile biri
+
+272
+00:32:31,779 --> 00:32:36,339
+şu şey kutu bizim switching elemanımız olmuş olsun arkadaşlar
+
+273
+00:32:36,339 --> 00:32:41,059
+trunk diye geçiyor bunlar switching elemanımız olmuş olsun o
+
+274
+00:32:41,059 --> 00:32:46,980
+switching elemanın içerisinde a'dan beye olan şeyi kapattığımızda
+
+275
+00:32:46,980 --> 00:32:53,700
+kapattığımızda böylece ne olmuş oluyor biz şeyi a ile biri
+
+276
+00:32:53,700 --> 00:32:57,220
+bağlamış oluyoruz a ile biri bağlamış oluyoruz ama teorik olarak
+
+277
+00:32:57,220 --> 00:33:02,019
+bu circuit switching de yapılması gereken şey şudur satırlarda
+
+278
+00:33:02,019 --> 00:33:09,940
+veya sütunlarda aynı anda bir tane bağlantı switch görüyor
+
+279
+00:33:09,940 --> 00:33:14,339
+olmamız beklenir ama siz mesela santralsiniz b santral olsun
+
+280
+00:33:14,339 --> 00:33:17,380
+a'dan bire yapılan konuşmayı dinlemek istiyor tak şurayı da
+
+281
+00:33:17,380 --> 00:33:22,980
+kapatırsan o zaman üç saytlı bir görüşme gerçekleştirebilecek
+
+282
+00:33:23,059 --> 00:33:27,779
+bu da olursun hatta a şurayı kapadığında aynı zamanda kendisinin
+
+283
+00:33:27,779 --> 00:33:32,819
+ne edin nedin ona ikiyle yaptığı görüşmenin içerisinde biri de
+
+284
+00:33:32,819 --> 00:33:36,900
+dahil etmiş olur böyle çok garip bir hal alabilir yani a
+
+285
+00:33:36,900 --> 00:33:41,539
+zanneder ki biriyle konuşuyor b şurayı da kapattığında b işin
+
+286
+00:33:41,539 --> 00:33:44,740
+işine girdi ama b aynı zamanda ikiyle de bağlı olduğu
+
+287
+00:33:44,740 --> 00:33:48,660
+için ikiden de ses geliyor olabilir bu tarz şeyler hiç
+
+288
+00:33:48,660 --> 00:33:51,380
+yaşadığınız mı bilmiyorum ben eski telefonumuzda yaşamıştım
+
+289
+00:33:51,619 --> 00:33:55,700
+90'lı yıllar falan yani konuşuyorsun konuşuyorsun başka
+
+290
+00:33:55,700 --> 00:34:00,019
+sesler duyuyorsun tamam yani şu işte o devreleri kapatırken
+
+291
+00:34:00,019 --> 00:34:03,940
+devre elemanları eskimiş olabilir işte bunlar sonuçta
+
+292
+00:34:03,940 --> 00:34:06,500
+küçük şeyler böyle büyük büyük şeyler değil devre
+
+293
+00:34:06,500 --> 00:34:08,980
+elemanları eskimiş olabilir birbirlerinin üzerine
+
+294
+00:34:08,980 --> 00:34:11,860
+baskı yapıyor olabilir e böyle olunca diğer adamların
+
+295
+00:34:11,860 --> 00:34:16,099
+sesini de duyuyoruz yani bir taraftan ben küçükken o
+
+296
+00:34:16,099 --> 00:34:18,820
+tarz şeyleri yaşamıştım hatta şey falan diyorlar ya
+
+297
+00:34:19,460 --> 00:34:23,219
+Ankara çıkaradan falan işte bu bilinçli de olarak
+
+298
+00:34:23,219 --> 00:34:28,820
+kapatılabilir ama bu işte devre elemanların eskimesinden
+
+299
+00:34:28,820 --> 00:34:31,380
+bozulmasından arızalanmasından kaynaklanan
+
+300
+00:34:31,380 --> 00:34:35,699
+bir devre kapama da olabilir bu yöntemi işte crossbar
+
+301
+00:34:35,699 --> 00:34:39,699
+yöntemi ee diyoruz bir soru var Lola'nın soruyu alabiliriz
+
+302
+00:34:39,699 --> 00:34:43,619
+Hocam ııı merhaba ııı şey söyleyecektim siz dediniz
+
+303
+00:34:43,619 --> 00:34:47,780
+ya başka sesler duyardım konuşurken ııı diye hani ben
+
+304
+00:34:47,780 --> 00:34:51,300
+de olurdu ev telefonunda gerçi o ama bazen böyle hiç
+
+305
+00:34:51,300 --> 00:34:55,059
+aramadan önce de olurdu böyle telefonu kaldırdığında ııı
+
+306
+00:34:55,059 --> 00:34:59,139
+sesler geliyordu o niye yani oluyor? Yine konuşmuyorum.
+
+307
+00:34:59,139 --> 00:35:02,340
+Sen bağlı değilsin. Sen bağlı değilsin. Ama işte devre
+
+308
+00:35:02,340 --> 00:35:04,900
+elemanları muhtemelen eskimiştir. Tamam mı? Öyle
+
+309
+00:35:04,900 --> 00:35:08,820
+olduğu için. Adam bir tarafı kapatmaya çalışıyor. Eee ama
+
+310
+00:35:08,820 --> 00:35:12,340
+işte eee diğer tarafta aynı zamanda akım kaçırıyor. Yani
+
+311
+00:35:12,340 --> 00:35:15,219
+şimdi kapatıp açılan şey fiziksel bir şey veya işte
+
+312
+00:35:15,219 --> 00:35:17,539
+takılan bir şey. Şimdi devre elemanını kapatmaya
+
+313
+00:35:17,539 --> 00:35:21,219
+çalışıyorsun. Çok güzel bir şekilde kapanabiliyor. Ama işte
+
+314
+00:35:21,219 --> 00:35:24,739
+ee her kapandığında sen aç bıraktığında açılıyor ama o
+
+315
+00:35:24,739 --> 00:35:28,500
+yayı arızalanmış olabilir zamanla. Yani bildiğin donanım
+
+316
+00:35:28,500 --> 00:35:32,659
+bu. Donansal problemlerden kaynaklı böyle arada çeşitli
+
+317
+00:35:32,659 --> 00:35:37,300
+gürültüler olabilir. Bir de tabii sadece bu değil. Siz
+
+318
+00:35:37,300 --> 00:35:42,340
+mesela nasıl söyleyelim? Eee orada kullanılan teknik de
+
+319
+00:35:42,340 --> 00:35:45,380
+önemli. Birazdan görüyor olacağız. Nasıl bir eğer ki
+
+320
+00:35:45,380 --> 00:35:49,219
+bu teknikte eee bu sorunun cevabı şöyle cevap. Bu soruyu şöyle
+
+321
+00:35:49,219 --> 00:35:52,579
+cevaplamış olayım. Eğer ki iletişim bu teknikte kuruluyorsa
+
+322
+00:35:52,579 --> 00:35:56,659
+donanım problemler olabilir. Ama iletişimi birazdan göreceğiz.
+
+323
+00:35:56,659 --> 00:36:00,980
+Farklı tekniklerle de kuruluyor olabilir. Ama bu
+
+324
+00:36:00,980 --> 00:36:05,539
+şekilde kuruluyorsa donanım problemlerin yanı sıra eee
+
+325
+00:36:05,539 --> 00:36:10,980
+sizin karşı tarafla ne denir ona? Eee bağlantınızla
+
+326
+00:36:10,980 --> 00:36:15,940
+ilgili teknik bir eee yönelimden de kaynaklanıyor
+
+327
+00:36:15,940 --> 00:36:19,380
+olabilir. Ne demek istiyorum? Şöyle. Mesela siz eee
+
+328
+00:36:19,380 --> 00:36:22,579
+karşı tarafla konuşuyorsunuz. Ve işte crossbar
+
+329
+00:36:22,579 --> 00:36:25,539
+tekniğinin multistage var. Birazdan orayı da açalım.
+
+330
+00:36:25,539 --> 00:36:29,619
+Multistage de konuşuyorsunuz. Şimdi bu multistage aslında
+
+331
+00:36:29,619 --> 00:36:32,579
+şunların her. Öncelikle bir geri geleyim. Yapabilirsem
+
+332
+00:36:32,579 --> 00:36:36,980
+yapıyorum. Yaptım. Eee şunların her birisi ne bir
+
+333
+00:36:36,980 --> 00:36:41,059
+crossbar diyoruz arkadaşlar. Bu crossbarlar da eee
+
+334
+00:36:41,059 --> 00:36:44,260
+birbirleriyle eee ne denir o? Mesela bir sürü crossbar, bir
+
+335
+00:36:44,260 --> 00:36:47,380
+sürü crossbar. Şurada bu crossbarlar da birbirlerine
+
+336
+00:36:47,380 --> 00:36:51,139
+farklı şekilde bağlanarak daha da büyük bir ne denir ona?
+
+337
+00:36:51,139 --> 00:36:56,179
+Eee alan yani o donanım sal alanı bölen bir eee
+
+338
+00:36:56,179 --> 00:36:59,300
+yaklaşım gerçekleştiriyor. Şuradaki bir cihaz şuradaki bir
+
+339
+00:36:59,300 --> 00:37:04,900
+cihaza erişmek için farklı alternatifte mesela işte
+
+340
+00:37:04,900 --> 00:37:07,300
+buradan da gelebilir. Şuradan da gelebilir. Bunun için de
+
+341
+00:37:07,300 --> 00:37:10,340
+farklı bağlanabilir. Farklı alternatifte yollar kullanıyor
+
+342
+00:37:10,340 --> 00:37:14,179
+olabilir. Işte kullandığı bu farklı alternatifteki
+
+343
+00:37:14,179 --> 00:37:17,860
+multistage de farklı alternatifteki yollar arasında
+
+344
+00:37:17,860 --> 00:37:21,219
+da bir kesişim olabilir. Yani ne demek istiyorum? Siz
+
+345
+00:37:21,219 --> 00:37:24,099
+bu site için kullanarak şuradan şuraya bir şey
+
+346
+00:37:24,099 --> 00:37:28,099
+gönderiyorsunuz. Aynı eee nedeniyle crossbardan aynı
+
+347
+00:37:28,099 --> 00:37:30,980
+crossbara geçerek farklı bir crossbara başka birisi
+
+348
+00:37:30,980 --> 00:37:33,699
+veri gönderiyor. Sizin hattınız üzerinden eee
+
+349
+00:37:33,699 --> 00:37:36,900
+gerçekleşiyor olabilir. Ne demek istiyorum? Işte tam
+
+350
+00:37:36,900 --> 00:37:40,659
+olarak mesela time devising yapıyorsa adam. Yani sizin
+
+351
+00:37:40,659 --> 00:37:45,460
+eee gönderdiğiniz veri eee belli bir zaman aralığına
+
+352
+00:37:45,460 --> 00:37:49,539
+bölünüp karşı tarafa gidilecekse multistage eee
+
+353
+00:37:49,539 --> 00:37:53,380
+işte yapılara ek olarak multiplexing yapıları da vardı.
+
+354
+00:37:53,380 --> 00:37:56,500
+Belli bir mesela yine bu circuit switching. Circuit
+
+355
+00:37:56,500 --> 00:37:59,780
+switching ne demek? Konneksiyon eee var kesinlikle.
+
+356
+00:37:59,780 --> 00:38:03,219
+Yani başlangıçta konneksiyonu orientat yapıyorsun. Yani
+
+357
+00:38:03,219 --> 00:38:08,019
+bir eee bağlantı kesinlikle var. A'dan B'ye bir bağlantı
+
+358
+00:38:08,019 --> 00:38:14,739
+var. Ama eee siz o bağlantıyı eee farklı şeyler için
+
+359
+00:38:14,739 --> 00:38:17,219
+kullanabiliyorsunuz. Mesela şöyle düşünelim. Çok daha
+
+360
+00:38:17,219 --> 00:38:20,500
+güzel olsun. Diyelim ki bu ara santral çok büyük
+
+361
+00:38:20,500 --> 00:38:24,500
+kapasiteye sahip bir crossbar. Diyelim ki eee bu ara
+
+362
+00:38:24,500 --> 00:38:27,940
+santralin eee yapmış olduğu bağlantı şu olmuş olsun.
+
+363
+00:38:27,940 --> 00:38:31,940
+Burası Ankara. Şurası Bursa. Şurası da Hatay. Tamam mı?
+
+364
+00:38:31,940 --> 00:38:35,139
+Ankara üzerinden konuşuyoruz Bursa ile Hatay. Çok büyük bir
+
+365
+00:38:35,139 --> 00:38:40,179
+eee bağlantı var. Eee şimdi biz ne denir ona? Eee Bursa'dan
+
+366
+00:38:40,179 --> 00:38:45,300
+eee herhangi bir nottan bir şekilde bağlamışız burada.
+
+367
+00:38:45,300 --> 00:38:49,219
+Herhangi bir nottan Ankara üzerinden eee yine Hatay'a
+
+368
+00:38:49,219 --> 00:38:52,659
+bir veri gönderdiğimizi düşünün. Aynı anda Hatay'la
+
+369
+00:38:52,659 --> 00:38:55,380
+başka birisi de konuşuyor. Yani sonuçta şu aradaki
+
+370
+00:38:55,380 --> 00:39:00,340
+bağlantı burada A B olsun, şurada C D olsun, A C'yle
+
+371
+00:39:00,340 --> 00:39:04,900
+konuşuyor, B de D'yle konuşuyor olmuş olsun. Eee sonuçta tek
+
+372
+00:39:04,900 --> 00:39:08,099
+bir bağlantı kurulduysa aynı yol üzerinde ekstradan
+
+373
+00:39:08,099 --> 00:39:10,980
+tekrardan bir bağlantı kurulmasına gerek yok. Tamam
+
+374
+00:39:10,980 --> 00:39:13,699
+zaten oradan oraya bir bağlantı sağlanmış. Böyle
+
+375
+00:39:13,699 --> 00:39:18,099
+olunca işte zamanı da yönetmek konusunda eee devre
+
+376
+00:39:18,099 --> 00:39:20,820
+elemanları doğru bir şekilde karar vermediği durumda
+
+377
+00:39:20,820 --> 00:39:24,699
+sesler birbirleriyle girişebilir, geçişebilir. Siz
+
+378
+00:39:24,699 --> 00:39:28,420
+hiç konuşmasanız bile Ayse'yi kaldırdığınızda zaman zaman
+
+379
+00:39:28,420 --> 00:39:33,139
+sesler duyabilirsiniz. Bu gayet eee normal bir şeydi yani
+
+380
+00:39:33,139 --> 00:39:35,820
+eski telefonlarda. Şimdi çok fazla olmuyor tabii. Eee
+
+381
+00:39:35,820 --> 00:39:38,940
+cep telefonundan falan konuşurken veya artık eee ev
+
+382
+00:39:38,940 --> 00:39:42,739
+telefonları da voice over IP falan herhalde internetten
+
+383
+00:39:42,739 --> 00:39:45,579
+falan konuşuyor. O yüzden çok fazla bu tarz problemler
+
+384
+00:39:45,579 --> 00:39:50,260
+eee yaşanmıyor ama önceden oldukça vardı eee açıkçası
+
+385
+00:39:50,260 --> 00:39:55,179
+eee başka bir şeyden ötürü değildir inşallah Lolo.
+
+386
+00:39:55,179 --> 00:39:57,940
+Yani sizin eviniz hakikaten birisi fiziksel olarak
+
+387
+00:39:57,940 --> 00:40:01,739
+dinlemiş de olabilir. Eee yani çok basit hatta bir tane
+
+388
+00:40:01,739 --> 00:40:05,380
+kablo çekiyorsun, dinleyebiliyorsun yani. Eee bu
+
+389
+00:40:05,380 --> 00:40:10,510
+sistemlerde. Evet başka sorusu olan var mı? Biz anlatıyoruz
+
+390
+00:40:10,510 --> 00:40:17,440
+ama. Yok, devam edelim. Biz anlatmaya o zaman. Eee şimdi
+
+391
+00:40:17,440 --> 00:40:20,440
+bir diğeri time division. Time division'da ne yapıyoruz
+
+392
+00:40:20,440 --> 00:40:23,199
+arkadaşlar? Biz karşı tarafa bir veri gönderiyoruz.
+
+393
+00:40:23,199 --> 00:40:28,480
+Gönderirken işte zamanını bölüyoruz. Yani bizim eee
+
+394
+00:40:28,480 --> 00:40:31,920
+şurada bulunan danın içerisindeki cihazlardan
+
+395
+00:40:31,920 --> 00:40:36,480
+başkalanlar içerisinde bulunan cihazlara veri göndermek
+
+396
+00:40:36,480 --> 00:40:41,639
+istiyorsam. Ve eee göndereceğim eee ne denir ona?
+
+397
+00:40:41,639 --> 00:40:46,800
+O eee verinin eee karşı tarafa iletilmesi için işte
+
+398
+00:40:46,800 --> 00:40:50,719
+zamanı bölen çeşitli network elemanları eee a
+
+399
+00:40:50,719 --> 00:40:54,920
+elemanları eee var. Eee içerisinde kurulmuş o hat şimdi
+
+400
+00:40:54,920 --> 00:40:57,559
+sıra sen kullan, şimdi sen kullan, şimdi sen kullan
+
+401
+00:40:57,559 --> 00:41:00,360
+diye time division yapıyordu. Bundan daha önce detaylı bir
+
+402
+00:41:00,360 --> 00:41:03,440
+şekilde bahsetmiştik akışları. Işte eee circuit
+
+403
+00:41:03,440 --> 00:41:06,400
+switching'te yine time division'da yapabiliyorsunuz
+
+404
+00:41:06,400 --> 00:41:10,880
+arkadaşlar. Eee tabii buradaki time division yaparken eee
+
+405
+00:41:10,880 --> 00:41:14,320
+önemli hususlardan birisi şu. Eee time slot
+
+406
+00:41:14,320 --> 00:41:18,320
+interfeysler olabiliyor bu eee veri gönderim aşamasında.
+
+407
+00:41:18,320 --> 00:41:21,800
+Ne demek bu? Sizin gönderdiğiniz yani
+
+408
+00:41:21,800 --> 00:41:27,320
+multiplexing'den çıkan verinin eee gönderim sırası
+
+409
+00:41:27,320 --> 00:41:31,480
+ile gönderim zamanı ile veya sırası zamanı aynı burada.
+
+410
+00:41:31,480 --> 00:41:36,559
+Eee karşı tarafa ulaşma sırası ve zamanı aynı eee
+
+411
+00:41:36,559 --> 00:41:39,880
+olmasını istiyorsanız aynı da olabilir. Ama işte time
+
+412
+00:41:39,880 --> 00:41:43,320
+slot interfeysler bunları değiştire de biliyor. Yani
+
+413
+00:41:43,320 --> 00:41:46,360
+bir adam çok yavaş gönderen bir yerden geliyor bu veri.
+
+414
+00:41:46,360 --> 00:41:48,920
+Diğeri ise daha hızlı gönderen bir yerden geliyor.
+
+415
+00:41:48,920 --> 00:41:52,639
+Eee bunları kendisi manipüle edebiliyor. Eee time
+
+416
+00:41:52,639 --> 00:41:56,960
+slot interfeysler. Eee tabii bu bir taraftan
+
+417
+00:41:56,960 --> 00:42:00,480
+güzel bir şey. Neden? Eee sizin evet bir
+
+418
+00:42:00,480 --> 00:42:04,400
+konneksiyonunuz var. Eee sağlamışsınız o konneksiyonu.
+
+419
+00:42:04,400 --> 00:42:07,840
+Fakat o konneksiyonun içerisinden hangi paketlerin
+
+420
+00:42:07,840 --> 00:42:11,599
+daha ııı hızlı bir şekilde veya daha fazla bir şekilde
+
+421
+00:42:11,599 --> 00:42:14,360
+karşı tarafa ulaştırılacak. Bunu kontrol eden
+
+422
+00:42:14,360 --> 00:42:16,280
+ekstradan da bir mekanizma oluyor. Tabii böyle
+
+423
+00:42:16,280 --> 00:42:20,159
+mekanizmalar şöyle düşünün. Böyle mekanizmalar eee
+
+424
+00:42:20,159 --> 00:42:22,960
+veya işte time division kısmı falan işin içerisinde
+
+425
+00:42:22,960 --> 00:42:26,159
+girdiği andan itibaren hemen ne gelmesi lazım
+
+426
+00:42:26,159 --> 00:42:29,840
+aklımıza. Bunların hepsi birer zamansal olarak külfet.
+
+427
+00:42:29,840 --> 00:42:34,440
+Yani eee siz paketleri göndermişsiniz. Ortada bir
+
+428
+00:42:34,440 --> 00:42:36,840
+adam duruyor ya sen önce git sen sonra git. Ya her
+
+429
+00:42:36,840 --> 00:42:39,599
+pisi gidiyordu ne güzel bir şekilde. Ama birisinin
+
+430
+00:42:39,599 --> 00:42:42,559
+önce birisine sonra git deyince yine zamansal
+
+431
+00:42:42,559 --> 00:42:45,559
+olarak bir külfet daha eee yavaş çalışmasına
+
+432
+00:42:45,559 --> 00:42:49,719
+sebebiyet veriyor. Veya mesela eee biz yapınca
+
+433
+00:42:49,719 --> 00:42:53,960
+space'miz full oluncaya kadar aldığımız tüm bize
+
+434
+00:42:53,960 --> 00:43:00,159
+bağlanan tüm cihazlar için eee network'ün en zayıf
+
+435
+00:43:00,159 --> 00:43:04,360
+halkası hızında hız garantisi veriyoruz. Tamam.
+
+436
+00:43:04,360 --> 00:43:07,159
+Burası önemli. Bunu tekrar söyleyeyim. Space division
+
+437
+00:43:07,159 --> 00:43:12,119
+yaparken eee o bütün space'lere bağlı olan eee
+
+438
+00:43:12,119 --> 00:43:16,679
+cihazlar için network'ün en zayıf halkası kadar
+
+439
+00:43:16,679 --> 00:43:21,119
+kendi circuit'ın da ki en zayıf halkası kadar hız
+
+440
+00:43:21,119 --> 00:43:24,960
+garantisi, bağlantı garantisi veriyoruz. Ama time
+
+441
+00:43:24,960 --> 00:43:28,199
+division'da böyle değil. Diyelim ki saniyeyi dört
+
+442
+00:43:28,199 --> 00:43:31,320
+parçaya böldük. Eee bir saniyede dört tane paket
+
+443
+00:43:31,320 --> 00:43:34,639
+karşıya gönderebiliyoruz. Bize on yedi tane site
+
+444
+00:43:34,639 --> 00:43:37,920
+bağlıysa eğer eee hemen bir kuyruk mekanizmamız
+
+445
+00:43:37,920 --> 00:43:41,440
+oluşuyor. Eğer ki dörtten daha az cihazın bağlı
+
+446
+00:43:41,440 --> 00:43:44,320
+olduğu senaryolarda çalışıyorsak biz bu ne
+
+447
+00:43:44,320 --> 00:43:48,559
+demektir? Eee real time yani eee space division
+
+448
+00:43:48,559 --> 00:43:51,559
+gibi veri gönderebilme kabiliyetine sahibiz. Ama
+
+449
+00:43:51,559 --> 00:43:56,079
+zaten time division'ın amacı bu. Eee sizin
+
+450
+00:43:56,079 --> 00:44:00,519
+zamanınızdan daha fazla işte göndermek isteyen
+
+451
+00:44:00,519 --> 00:44:05,239
+site'ınız varsa eee veya paketiniz varsa o site'ın
+
+452
+00:44:05,239 --> 00:44:08,000
+içinde birçok paket de olabilir. Aynı anda adam
+
+453
+00:44:08,000 --> 00:44:10,599
+bin tane sıralı paket göndermek istiyor olabilir.
+
+454
+00:44:10,599 --> 00:44:14,559
+Böyle olunca zamanı bölmek bir tık eee daha mantıklı
+
+455
+00:44:14,559 --> 00:44:17,480
+hale geliyor. Fakat zamanı böldüğünüz anda evet
+
+456
+00:44:17,480 --> 00:44:20,440
+adam sana diyor ki ya tamam space'lerimi ben kendim
+
+457
+00:44:20,440 --> 00:44:23,559
+ayarlayacağım. Eee sana hiç space yok falan
+
+458
+00:44:23,559 --> 00:44:26,599
+filan demiyorum ama biraz bekle kardeşim. Senin
+
+459
+00:44:26,599 --> 00:44:29,239
+işini göreceğim ama biraz bekleteceğim seni. Bak
+
+460
+00:44:29,239 --> 00:44:32,440
+space division'da bu yok. Adamın işini network'ın
+
+461
+00:44:32,440 --> 00:44:35,480
+en zayıf halkası hızında görüyorsun. Ama eee
+
+462
+00:44:35,480 --> 00:44:39,480
+time division'da adama bekletebilirsin. Yani sen
+
+463
+00:44:39,480 --> 00:44:42,360
+biraz kuyrukta bekle. Diyebiliriz. Böyle bir ama
+
+464
+00:44:42,360 --> 00:44:45,400
+her talibi kabul ediyoruz. Bakın her talibi
+
+465
+00:44:45,400 --> 00:44:47,960
+kabul ediyoruz. Space division'da bütün eee
+
+466
+00:44:47,960 --> 00:44:51,239
+circuit'lar doluysa adam hiç arayamıyor. Çalma
+
+467
+00:44:51,239 --> 00:44:53,480
+tonu bile yok yani. Telefonu açıyor, hiçbir şey yok.
+
+468
+00:44:53,480 --> 00:44:56,679
+Tamam mı? Hiçbir şey yok. Eee veri göndermek
+
+469
+00:44:56,679 --> 00:44:58,239
+istiyor, istiyor, istiyor. Belki bir süre sonra
+
+470
+00:44:58,239 --> 00:45:00,960
+vazgeçiyor. Diğer tarafta sen kesin gönderiyorsun.
+
+471
+00:45:00,960 --> 00:45:04,480
+Diyorsun ki ya tamam benim üzerimden çıksın. Artık
+
+472
+00:45:04,480 --> 00:45:06,519
+yolda başına ne gelirsin? Geç de gidecekse
+
+473
+00:45:06,519 --> 00:45:11,400
+gitsin. Tamam. Yani bizim eee temelde aslında
+
+474
+00:45:11,400 --> 00:45:14,719
+bu sistem posta dağıtım sistemine biraz
+
+475
+00:45:14,719 --> 00:45:17,960
+benziyor. Eee açıkçası. Birazdan datagramları
+
+476
+00:45:17,960 --> 00:45:20,440
+anlatacağız. Orada daha güzel olacak. Yani karşı
+
+477
+00:45:20,440 --> 00:45:22,719
+tarafa gönderiyorsun ama geç gidiyor. Diğer tarafta
+
+478
+00:45:22,719 --> 00:45:27,400
+yani gidiyorsun kapalı yani PTT içine eee yüz
+
+479
+00:45:27,400 --> 00:45:30,000
+kişiyi almışlar. Bundan sonra hiç kimseyi alamayacağız
+
+480
+00:45:30,000 --> 00:45:34,079
+diyor. O yüz kişiyle işi ne zaman biter? Bilmiyorsun.
+
+481
+00:45:34,079 --> 00:45:37,800
+Yani mesela hani eee telefonla bankaya arıyorsun. Adam
+
+482
+00:45:37,800 --> 00:45:41,000
+diyor ki şu an on yedinci sıradasın. Ya o on yedi
+
+483
+00:45:41,000 --> 00:45:43,800
+kişinin o gün yarımşar saat konuşça tuttuysa
+
+484
+00:45:43,800 --> 00:45:46,920
+ne kadar bekleyeceğim belli değil yani. Tabii eee
+
+485
+00:45:46,920 --> 00:45:49,719
+onların eee çeşitli sistemlere gereği eee
+
+486
+00:45:49,719 --> 00:45:51,960
+ortalama ne kadar bekleyeceksin belki sana
+
+487
+00:45:51,960 --> 00:45:56,480
+söyleyebiliyor. Eee ama eee bazıları da işte sırada
+
+488
+00:45:56,480 --> 00:45:58,920
+on yedi kişi var. Siz on sekizincisiniz. İyi de
+
+489
+00:45:58,920 --> 00:46:02,119
+ne kadar bekleyeceğim yani. Hepsi mesela üç
+
+490
+00:46:02,119 --> 00:46:04,559
+saniye sonra hepsi de kapatabilir. Zart diye sana
+
+491
+00:46:04,559 --> 00:46:07,400
+sıra da gelebilir. Uzun da sürebilir. Eee sana
+
+492
+00:46:07,400 --> 00:46:10,639
+sıranın gelmesi. Space Division'da. Ama Time
+
+493
+00:46:10,639 --> 00:46:13,320
+Division yaparken ya söyleyeceğini söylüyorsun
+
+494
+00:46:13,320 --> 00:46:14,960
+sen. Karşı tarafa mesela telefonuna bir şey
+
+495
+00:46:14,960 --> 00:46:17,480
+söyleyeceksin. Sen söyleyeceğini söylüyorsun. O
+
+496
+00:46:17,480 --> 00:46:19,800
+gidiyor bir yerde bir bafırda kuyrukta bekliyor.
+
+497
+00:46:19,800 --> 00:46:23,880
+Karşı tarafa ilk fırsatta diyelim ki iletiliyor.
+
+498
+00:46:23,880 --> 00:46:26,880
+Böyle de nedenler ona güzel bir yapısı var. Tabii
+
+499
+00:46:26,880 --> 00:46:30,159
+bunlara ek olarak circuit switching eee
+
+500
+00:46:30,159 --> 00:46:32,199
+package switching package switching'den şimdi
+
+501
+00:46:32,199 --> 00:46:34,400
+detaylı bahsedeceğiz. Eee bunlara ek olarak
+
+502
+00:46:34,400 --> 00:46:37,119
+çeşitli böyle hybrid switching eee yöntemleri
+
+503
+00:46:37,119 --> 00:46:40,800
+eee de söz konusu. Yani dedi ki burada zamanı
+
+504
+00:46:40,800 --> 00:46:44,920
+slotlarını eee kontrol eden hangi slotta hangi
+
+505
+00:46:44,920 --> 00:46:47,880
+package'in eee freminin gideceğini,
+
+506
+00:46:47,880 --> 00:46:50,519
+çerçevesinin gideceğini kontrol eden bir
+
+507
+00:46:50,519 --> 00:46:53,880
+arayüz, bir interface, bir böyle yazılımsal veya
+
+508
+00:46:53,880 --> 00:46:59,119
+bir eee ne denir ona eee yazılımsal bir
+
+509
+00:46:59,119 --> 00:47:02,880
+arayüz söz konusu. Bu tabii her daim eee
+
+510
+00:47:02,880 --> 00:47:06,119
+böyle olmak zorunda değil. Yani bir şey
+
+511
+00:47:06,119 --> 00:47:09,599
+illa space, illa time division olmak zorunda
+
+512
+00:47:09,599 --> 00:47:12,519
+değil. Bunların ikisinin de hibrit bir şekilde
+
+513
+00:47:12,519 --> 00:47:15,480
+kullanıldığı farklı farklı versiyonlar söz
+
+514
+00:47:15,480 --> 00:47:18,960
+konusu. Yani işte eee mesela eee adam diyor
+
+515
+00:47:18,960 --> 00:47:22,679
+ki benim eee space'imin içerisinde benim
+
+516
+00:47:22,679 --> 00:47:26,880
+şeyimin eee donanın biriminin o switching eee
+
+517
+00:47:26,880 --> 00:47:29,880
+yapacak o donanın biriminin içerisinde
+
+518
+00:47:29,880 --> 00:47:32,800
+bulunan yüz tane anahtar var. Bunlardan elli
+
+519
+00:47:32,800 --> 00:47:35,280
+tanesini eee işte time division yapacak
+
+520
+00:47:35,280 --> 00:47:37,519
+şekilde ayarlıyorum. Ama geri kalan elli
+
+521
+00:47:37,519 --> 00:47:40,360
+tanesi ismi ise ben direkt bu space'leri
+
+522
+00:47:40,360 --> 00:47:43,519
+ilgili eee şeylere bağlayacağım. Mesela ne
+
+523
+00:47:43,519 --> 00:47:48,039
+demek istiyorum? Eee siz eee telefon hattınız
+
+524
+00:47:48,039 --> 00:47:52,079
+var diyelim ki. Eee ama ekonomi telefon
+
+525
+00:47:52,079 --> 00:47:54,159
+hattına sahipsiniz. Tamam mı? Ekonomi
+
+526
+00:47:54,159 --> 00:47:56,760
+telefon hattına sahipsiniz. Eee size adam
+
+527
+00:47:56,760 --> 00:47:58,719
+time division kısmını alıyor. Orada elli
+
+528
+00:47:58,719 --> 00:48:00,719
+tane anahtar var. Beş bin kişiye satmış
+
+529
+00:48:00,719 --> 00:48:03,000
+onu. Diğer tarafa diyor ki ya gel sen
+
+530
+00:48:03,000 --> 00:48:05,760
+brüzinisin ya. Yani sen iş adamısın. Sen
+
+531
+00:48:05,760 --> 00:48:08,480
+öyle kuyrukta falan bekleme yani ben hemen
+
+532
+00:48:08,480 --> 00:48:11,760
+senin bütün işini görürüm diyor. Eee ve
+
+533
+00:48:11,760 --> 00:48:14,840
+geri kalan elli taneden adam birisini
+
+534
+00:48:14,840 --> 00:48:17,880
+aramak istediğinde tak diye ona o hizmeti
+
+535
+00:48:17,880 --> 00:48:20,960
+sağlıyor. Aktif olarak o hat sürekli açık.
+
+536
+00:48:20,960 --> 00:48:24,760
+Gibi gibi farklı versiyonlarda hibrid
+
+537
+00:48:24,760 --> 00:48:28,599
+switching eee yöntemleri de mevcut arkadaşlar.
+
+538
+00:48:28,599 --> 00:48:31,320
+Artık tabii günümüzde eee en üst
+
+539
+00:48:31,320 --> 00:48:34,280
+katmanlarda eee sağlanan bir eee
+
+540
+00:48:34,400 --> 00:48:36,599
+switching yöntemi gerçekleştirilebiliyor.
+
+541
+00:48:36,599 --> 00:48:41,079
+İşte software switching eee işte voice over
+
+542
+00:48:41,079 --> 00:48:45,840
+ip ip üzerinden sesin iletilmesi. Eee benim
+
+543
+00:48:45,840 --> 00:48:48,760
+telefonumda da oluyor herhalde bu. Bazen şey
+
+544
+00:48:48,760 --> 00:48:51,239
+vodafone kullanıyorum ben. Eee çok anlam
+
+545
+00:48:51,239 --> 00:48:53,199
+veremedim. Aslında bir gün araştıracağım.
+
+546
+00:48:53,199 --> 00:48:55,320
+Eee hiç fırsat olmadı. Yeni geçtim vodafona.
+
+547
+00:48:55,320 --> 00:48:58,360
+Başka bir operatördeydim. Yani eee şey
+
+548
+00:48:58,360 --> 00:49:01,760
+mesela telefonla bazen ararken eee garip
+
+549
+00:49:01,760 --> 00:49:04,239
+bir wifi sembolü çıkıyor. Wifi üzerinden
+
+550
+00:49:04,239 --> 00:49:05,960
+mı acaba sesimi gönderiyor diyorum.
+
+551
+00:49:05,960 --> 00:49:08,320
+Bazense çıkmıyor mesela. Merak ediyorum.
+
+552
+00:49:08,320 --> 00:49:10,840
+Bir araştıracaktım bakacaktım. Hiç fırsatım olmadı.
+
+553
+00:49:10,840 --> 00:49:14,400
+Yani eee artık eee farklı farklı switching
+
+554
+00:49:14,400 --> 00:49:17,159
+teknikleri de var. Onu söyleyebilirim.
+
+555
+00:49:17,159 --> 00:49:21,039
+Eee evet bir arkadaşımız el kaldırmış.
+
+556
+00:49:21,039 --> 00:49:23,880
+Miçetten mi yazmış? Hocam eee bu
+
+557
+00:49:23,880 --> 00:49:27,039
+wifi sembolüyle ilgili. Evet buyurun.
+
+558
+00:49:27,039 --> 00:49:29,880
+O sesimizi wifi üzerinden aktarıyor hocam.
+
+559
+00:49:29,880 --> 00:49:32,639
+Evet. Ben onu trende kullanmıştım.
+
+560
+00:49:33,079 --> 00:49:35,960
+Trende normal sinyal gelmediği zaman
+
+561
+00:49:35,960 --> 00:49:39,119
+wireless üzerinden bağlanıp konuşma yapabildim.
+
+562
+00:49:39,119 --> 00:49:42,719
+O şekilde bir sistem var hocamın.
+
+563
+00:49:42,719 --> 00:49:45,239
+Yani normal hat üzerindeki bağlantıyı
+
+564
+00:49:45,239 --> 00:49:47,039
+wireless üzerinden sağlayabiliyoruz.
+
+565
+00:49:47,039 --> 00:49:49,719
+Evet. İşte eee ben de öyle tahmin etmiştim.
+
+566
+00:49:49,719 --> 00:49:52,000
+Sende eee katkıların için teşekkür ederiz.
+
+567
+00:49:52,000 --> 00:49:53,840
+Ben de öyle tahmin ediyorum. Nasıl yapıyor?
+
+568
+00:49:53,840 --> 00:49:56,519
+İşte bir gün eee ona ne denir ona bakmak
+
+569
+00:49:56,519 --> 00:49:59,440
+istiyorum açıkçası. Çünkü eee işte o an
+
+570
+00:49:59,440 --> 00:50:01,599
+wifi koptu benim. Koptu benim telefon
+
+571
+00:50:01,599 --> 00:50:03,199
+bağlantım kopuyor mu? Yoksa hemen
+
+572
+00:50:03,199 --> 00:50:05,960
+şeye switch mi ediyor? Mobil eee
+
+573
+00:50:05,960 --> 00:50:07,960
+cellular şebekeye switch mi ediyor?
+
+574
+00:50:07,960 --> 00:50:09,960
+Gibi gibi böyle çeşitli sorular var
+
+575
+00:50:09,960 --> 00:50:12,960
+aslında aklımda. İşte bu da yeni eee
+
+576
+00:50:12,960 --> 00:50:14,519
+nesil artık bizim de çoğumuzun
+
+577
+00:50:14,519 --> 00:50:16,239
+kullandığı farklı farklı switching
+
+578
+00:50:16,239 --> 00:50:19,480
+teknikleri var. Ama asıl belki üzerinde
+
+579
+00:50:19,480 --> 00:50:21,000
+durmamız gereken bizim package
+
+580
+00:50:21,000 --> 00:50:24,000
+switching eee tekniği. Tabii burada eee
+
+581
+00:50:24,000 --> 00:50:26,719
+circuit switching güzel yani kesinlikle.
+
+582
+00:50:26,719 --> 00:50:28,639
+Fakat veri aktarımızları o kadar
+
+583
+00:50:28,639 --> 00:50:30,559
+yüksek değil. Daha çok telefon şebekesi
+
+584
+00:50:30,559 --> 00:50:32,840
+bir çeşitli işler için eee kullanılıyor.
+
+585
+00:50:32,840 --> 00:50:35,119
+Veya düşük kapasitede eee veri
+
+586
+00:50:35,119 --> 00:50:36,920
+gönderiliyorsa belli ve düşük
+
+587
+00:50:36,920 --> 00:50:39,199
+kapasitede veri gönderiliyorsa eee
+
+588
+00:50:39,199 --> 00:50:40,719
+circuit switching kullanılabiliyor.
+
+589
+00:50:40,719 --> 00:50:43,199
+Ama mesela bursty bir patlama
+
+590
+00:50:43,199 --> 00:50:45,760
+varsa veri gönderimi mesela durgun
+
+591
+00:50:45,760 --> 00:50:47,760
+duran duran duran ondan sonra
+
+592
+00:50:47,760 --> 00:50:50,920
+aniden adam acayip eee network
+
+593
+00:50:50,920 --> 00:50:52,719
+üzerinden veri alıp verebiliyor.
+
+594
+00:50:52,719 --> 00:50:55,119
+Eee olabilir. Yani mesela telefon
+
+595
+00:50:55,119 --> 00:50:57,760
+hattını düşünün eee ne kadar bir
+
+596
+00:50:57,760 --> 00:50:59,800
+frekansla veri göndermek gerekiyordur.
+
+597
+00:51:00,000 --> 00:51:02,440
+Bir de işte bizim artık yeni nesil
+
+598
+00:51:02,440 --> 00:51:05,360
+eee işte bilgisayarda sadece mesela
+
+599
+00:51:05,360 --> 00:51:07,519
+çeşitli şeylerin kontrolü veya benim
+
+600
+00:51:07,519 --> 00:51:10,079
+verimi gönderi size işte ekranım
+
+601
+00:51:10,079 --> 00:51:12,159
+paylaşıyorum sizinle onu alıyorsunuz
+
+602
+00:51:12,159 --> 00:51:14,760
+sesimi alıyorsunuz ama eee mesela
+
+603
+00:51:14,760 --> 00:51:18,840
+çok yoğun bir şekilde eee de bütün
+
+604
+00:51:18,840 --> 00:51:20,679
+network kartımı dolduracak bir şekilde
+
+605
+00:51:20,679 --> 00:51:22,199
+veri gönderip alabilirdim işte
+
+606
+00:51:22,199 --> 00:51:23,960
+torrent kurabilirdim falan filan.
+
+607
+00:51:23,960 --> 00:51:26,519
+Böyle patlamalar olduğu durumda
+
+608
+00:51:26,519 --> 00:51:29,760
+circuit switching teknikleri eee
+
+609
+00:51:29,760 --> 00:51:31,480
+de çeşitli soru işaretleri var.
+
+610
+00:51:31,480 --> 00:51:33,920
+Eee bu işleri tam olarak kaldıramıyor.
+
+611
+00:51:33,920 --> 00:51:36,440
+Hımm buna hiç başlamadan acaba
+
+612
+00:51:36,440 --> 00:51:38,519
+aramı versek elli geçmeye yaklaşmış
+
+613
+00:51:38,519 --> 00:51:40,280
+çünkü buna başlasak bu da gidecek
+
+614
+00:51:40,280 --> 00:51:42,599
+çünkü biraz eee bir ara verelim
+
+615
+00:51:42,599 --> 00:51:45,960
+arkadaşlar benimki kırk yedi geçiyor
+
+616
+00:51:45,960 --> 00:51:48,480
+beş gece burada olalım tamam beş
+
+617
+00:51:48,480 --> 00:51:50,880
+gece burada olalım eee öyle
+
+618
+00:51:50,880 --> 00:51:52,039
+devam edelim çünkü peki
+
+619
+00:51:52,039 --> 00:51:53,480
+switching de biraz gidecek hiç
+
+620
+00:51:53,480 --> 00:51:55,760
+bölmemiş olalım orayı eee bir
+
+621
+00:51:55,760 --> 00:51:56,960
+ara verelim beş gece burada
+
+622
+00:51:56,960 --> 00:51:58,079
+olalım arkadaşlar olur mu?
+
+623
+00:51:58,719 --> 00:51:59,599
+Görüşürüz.
+
+624
+00:51:59,599 --> 01:11:44,840
+Evet tekrardan merhaba arkadaşlar.
+
+625
+01:11:44,840 --> 01:11:49,039
+Kaldığımız yerden devam edelim.
+
+626
+01:11:49,039 --> 01:11:52,560
+Şimdi bir diğer switching eee
+
+627
+01:11:52,560 --> 01:11:55,199
+tekniği package switching paket
+
+628
+01:11:55,199 --> 01:11:58,399
+anahtarlamalı eee yöntemler eee
+
+629
+01:11:58,399 --> 01:12:01,000
+veri trafiğinin yoğun olduğu eee
+
+630
+01:12:01,000 --> 01:12:02,840
+anlık veri patlamalarının
+
+631
+01:12:02,840 --> 01:12:05,600
+yaşanabildiği eee sistemlerde
+
+632
+01:12:05,600 --> 01:12:08,159
+ağlarda kullanılması daha uygun
+
+633
+01:12:08,159 --> 01:12:11,319
+eee yöntemler tabi eee diğer eee
+
+634
+01:12:11,319 --> 01:12:12,640
+yönteme göre yani devre
+
+635
+01:12:12,640 --> 01:12:14,000
+anahtarlamalı anahtarlamalı
+
+636
+01:12:14,000 --> 01:12:15,760
+yönteme göre çeşitli avantajları
+
+637
+01:12:15,760 --> 01:12:19,199
+var bunlardan birisi fatura
+
+638
+01:12:19,199 --> 01:12:21,359
+olama konusunda eee devre
+
+639
+01:12:21,359 --> 01:12:23,359
+anahtarlamalıda size o devre
+
+640
+01:12:23,359 --> 01:12:25,239
+tahsis edildiği andan itibaren
+
+641
+01:12:25,239 --> 01:12:28,520
+devrenin tahsis si eee süresince
+
+642
+01:12:28,520 --> 01:12:30,439
+size bir eee fatura eee
+
+643
+01:12:30,439 --> 01:12:32,680
+yansıtılıyordu yani siz verileseniz
+
+644
+01:12:32,680 --> 01:12:35,199
+de iletmeseniz de kesin bir
+
+645
+01:12:35,199 --> 01:12:36,920
+fatura ödüyorsunuz ee paket
+
+646
+01:12:36,960 --> 01:12:38,720
+anahtarlamalı sistemdeyse ne kadar
+
+647
+01:12:38,720 --> 01:12:40,319
+karşıya paket gönderdiyseniz
+
+648
+01:12:40,319 --> 01:12:41,760
+paketin sayısı kadar yani
+
+649
+01:12:41,760 --> 01:12:43,800
+frame boyutu kadar da diyebiliriz
+
+650
+01:12:43,800 --> 01:12:45,600
+paketin sayısı kadar bir para
+
+651
+01:12:45,600 --> 01:12:49,399
+ödüyorsunuz eee aynı zamanda
+
+652
+01:12:49,399 --> 01:12:51,960
+çok yoğun trafiğin olduğu dönemde
+
+653
+01:12:51,960 --> 01:12:54,319
+ek kapasitelere eee kavuşabilecek
+
+654
+01:12:54,319 --> 01:12:56,199
+çeşitli mekanizmalar var onlara
+
+655
+01:12:56,199 --> 01:12:57,920
+da görüyor olacağız adaptif bir
+
+656
+01:12:57,920 --> 01:13:01,640
+şekilde çalışıyor yani bizim
+
+657
+01:13:01,640 --> 01:13:06,840
+eee kurduğumuz eee o şey eğer ki
+
+658
+01:13:06,840 --> 01:13:10,039
+nedenle ona bağlantı eee devre
+
+659
+01:13:10,039 --> 01:13:11,960
+anahtarlamalıda tek bir bağlantı
+
+660
+01:13:11,960 --> 01:13:14,600
+fakat eee bizim nedenle ona
+
+661
+01:13:14,600 --> 01:13:16,600
+package switching yönteminde ise
+
+662
+01:13:16,600 --> 01:13:19,520
+eee farklı teknikler olmakla
+
+663
+01:13:19,520 --> 01:13:23,399
+beraber a içerisinde eee hangi
+
+664
+01:13:23,399 --> 01:13:26,920
+rota daha müsaitse oradan gidebilecek
+
+665
+01:13:26,920 --> 01:13:29,039
+şekilde kendisini adapte edebiliyor
+
+666
+01:13:29,039 --> 01:13:31,159
+mesela ben karşı tarafa beş tane
+
+667
+01:13:31,159 --> 01:13:32,760
+paket gönderdim beşide farklı
+
+668
+01:13:32,760 --> 01:13:35,079
+yoldan gidebiliyor eee devre
+
+669
+01:13:35,119 --> 01:13:36,640
+anahtarlamalıda yani connection
+
+670
+01:13:36,640 --> 01:13:39,479
+oriantlar da böyle değil bir
+
+671
+01:13:39,479 --> 01:13:41,479
+connection sağlamışsa bir yol varsa
+
+672
+01:13:41,479 --> 01:13:42,760
+hep o yoldan gönderiyorsun
+
+673
+01:13:42,760 --> 01:13:45,520
+paketleri eee ama peki
+
+674
+01:13:45,520 --> 01:13:47,000
+switching de farklı teknikler
+
+675
+01:13:47,000 --> 01:13:48,520
+kullanılabiliyor işte bunlardan
+
+676
+01:13:48,520 --> 01:13:51,840
+birisi eee birazdan göreceğiz
+
+677
+01:13:51,840 --> 01:13:53,720
+daha detaylı bir şekilde eee
+
+678
+01:13:53,720 --> 01:13:56,399
+paketleri yoğunluğa göre farklı
+
+679
+01:13:56,399 --> 01:13:58,680
+eee şeyler üzerinden rotaları
+
+680
+01:13:58,680 --> 01:14:00,680
+üzerinden karşı tarafa gönderebiliyorsunuz
+
+681
+01:14:00,680 --> 01:14:03,880
+şimdi eee bunlardan eee package
+
+682
+01:14:03,920 --> 01:14:05,640
+switching yöntemlerinden ilki
+
+683
+01:14:05,640 --> 01:14:08,479
+datagram, datagram tam olarak
+
+684
+01:14:08,479 --> 01:14:11,039
+bizim posta çalışma sistemi
+
+685
+01:14:11,039 --> 01:14:13,880
+gibi düşünebiliriz yani ben
+
+686
+01:14:13,880 --> 01:14:19,000
+bir göndericiden alıcıya mesaj
+
+687
+01:14:19,000 --> 01:14:20,760
+gönderiyorum garantilenen şey ne
+
+688
+01:14:20,760 --> 01:14:22,279
+o mesajı kesinlikle karşı tarafa
+
+689
+01:14:22,279 --> 01:14:24,359
+iletirim diye sana böyle bir
+
+690
+01:14:24,359 --> 01:14:26,960
+garanti veriyor eee pekala nasıl
+
+691
+01:14:26,960 --> 01:14:28,960
+veriyor böyle bir garantiyi
+
+692
+01:14:28,960 --> 01:14:30,319
+hangi yoldan gideceğini
+
+693
+01:14:30,319 --> 01:14:32,960
+söylüyor mu hayır ne kadar
+
+694
+01:14:32,960 --> 01:14:34,479
+sürede gideceğini söylüyor
+
+695
+01:14:34,479 --> 01:14:37,520
+mu hayır karşı tarafa ulaştıktan
+
+696
+01:14:37,520 --> 01:14:40,800
+sonra duruma göre sana ulaştığı
+
+697
+01:14:40,800 --> 01:14:42,319
+bilgisi verebilirim duruma göre
+
+698
+01:14:42,319 --> 01:14:44,520
+vermeyebilirim de diyor şimdi
+
+699
+01:14:44,520 --> 01:14:47,159
+eee siz posta sisteminde de
+
+700
+01:14:47,159 --> 01:14:49,359
+böyle yapabiliyorsunuz ya yani
+
+701
+01:14:49,359 --> 01:14:51,000
+gerçi artık internetten takip
+
+702
+01:14:51,000 --> 01:14:53,039
+ettiğiniz için hepsi nedenle
+
+703
+01:14:53,039 --> 01:14:55,359
+ona ulaşıp ulaşmadığını
+
+704
+01:14:55,359 --> 01:14:56,680
+görebiliyorsunuz belki ama
+
+705
+01:14:56,680 --> 01:14:58,479
+bazıları mesela iadeli
+
+706
+01:14:58,479 --> 01:15:00,239
+tarihte adam eğer ulaşmıyorsa
+
+707
+01:15:00,239 --> 01:15:02,159
+tekrardan size geri getiriliyordu
+
+708
+01:15:02,239 --> 01:15:03,520
+öyle şeyler vardı onu
+
+709
+01:15:03,520 --> 01:15:05,399
+kastediyorum aslında şimdi
+
+710
+01:15:05,399 --> 01:15:09,239
+ben bir göndereceğim alıcıya
+
+711
+01:15:09,239 --> 01:15:11,279
+mesaj göndermek için çok farklı
+
+712
+01:15:11,279 --> 01:15:13,439
+farklı yollardan mesaj gönderebilirim
+
+713
+01:15:13,439 --> 01:15:16,720
+işte datagram tekniğinde hangi
+
+714
+01:15:16,720 --> 01:15:20,439
+rota burada işte çeşitli mesela
+
+715
+01:15:20,439 --> 01:15:21,960
+olasılıklı ihtimalleri
+
+716
+01:15:21,960 --> 01:15:23,159
+değerlendiriyorsa bir sürü
+
+717
+01:15:23,159 --> 01:15:25,000
+farklı rota çıkar A'dan Z'ye
+
+718
+01:15:25,000 --> 01:15:26,279
+tahmin edebiliyorsunuz siz de
+
+719
+01:15:26,279 --> 01:15:29,359
+hangi rota en müsaitse
+
+720
+01:15:29,359 --> 01:15:30,960
+paketleri oradan gönderiyor
+
+721
+01:15:31,399 --> 01:15:34,199
+ama 300 tane paket göndereceksem
+
+722
+01:15:34,199 --> 01:15:35,560
+300'e de farklı yoldan da
+
+723
+01:15:35,560 --> 01:15:37,199
+gitmiş olabilir tamam
+
+724
+01:15:37,199 --> 01:15:39,800
+bu yine dikkat edilmesi gereken
+
+725
+01:15:39,800 --> 01:15:41,479
+datagramda önemli hususlardan
+
+726
+01:15:41,479 --> 01:15:44,079
+birisi böyle olunca tabii
+
+727
+01:15:44,079 --> 01:15:46,920
+paketlerin gönderim sırası
+
+728
+01:15:46,920 --> 01:15:48,239
+birbirinden farklı olabilir
+
+729
+01:15:48,239 --> 01:15:50,359
+yani gönderim sırası değil de
+
+730
+01:15:50,359 --> 01:15:51,640
+karşı tarafa ulaşma sırası
+
+731
+01:15:51,640 --> 01:15:52,800
+diyelim daha güzel olsun
+
+732
+01:15:52,800 --> 01:15:54,399
+karşı tarafa ulaşma sırası
+
+733
+01:15:54,399 --> 01:15:56,079
+birbirinden farklı olabilir
+
+734
+01:15:56,079 --> 01:15:58,079
+ben 1-2-3-4-5'i
+
+735
+01:15:58,079 --> 01:15:59,359
+evet artışıl bir şekilde
+
+736
+01:15:59,359 --> 01:16:01,159
+farklı yollardan göndermiş olayım
+
+737
+01:16:01,159 --> 01:16:03,359
+en önce karşı tarafa ulaşan
+
+738
+01:16:03,359 --> 01:16:04,800
+paket 3 numaralı paket
+
+739
+01:16:04,800 --> 01:16:06,680
+olabilir bu sistemde
+
+740
+01:16:06,680 --> 01:16:09,159
+datagramın çalışma yapısında
+
+741
+01:16:09,159 --> 01:16:11,079
+bir diğeri virtual circuit
+
+742
+01:16:11,079 --> 01:16:12,600
+yöntemler
+
+743
+01:16:12,600 --> 01:16:14,399
+virtual circuit yöntemlerde
+
+744
+01:16:14,399 --> 01:16:16,119
+şu şekilde çalışıyor arkadaşlar
+
+745
+01:16:16,119 --> 01:16:19,239
+temelde package switching
+
+746
+01:16:19,239 --> 01:16:22,279
+yöntemlerinde bir circuit yok
+
+747
+01:16:22,279 --> 01:16:27,079
+fakat bizim göndericiden
+
+748
+01:16:27,079 --> 01:16:28,920
+alıcıya mesajı
+
+749
+01:16:28,960 --> 01:16:30,359
+gönderirken
+
+750
+01:16:30,359 --> 01:16:32,000
+ilk nedenler ona
+
+751
+01:16:32,000 --> 01:16:34,600
+karşı tarafa doğru giden paketler
+
+752
+01:16:34,600 --> 01:16:38,640
+bir available hat belirledikten sonra
+
+753
+01:16:38,640 --> 01:16:41,439
+bu available hat üzerinden
+
+754
+01:16:41,439 --> 01:16:44,159
+hangi notlardan geçeceği belli tabii
+
+755
+01:16:44,159 --> 01:16:45,079
+bu hat üzerinden
+
+756
+01:16:45,079 --> 01:16:47,239
+bir sanal devre kurulmuş oluyor
+
+757
+01:16:47,239 --> 01:16:48,920
+tamam sanal bir devre
+
+758
+01:16:48,920 --> 01:16:50,439
+gerçek bir devre değil de
+
+759
+01:16:50,439 --> 01:16:51,520
+sanal bir devre
+
+760
+01:16:51,520 --> 01:16:52,720
+böyle olunca
+
+761
+01:16:52,720 --> 01:16:56,520
+connection sadece o hat üzerinden sağlanmış oluyor
+
+762
+01:16:56,520 --> 01:16:58,640
+yani ben mesela
+
+763
+01:16:58,640 --> 01:17:00,640
+ilk gönderdiğim notun
+
+764
+01:17:00,640 --> 01:17:02,720
+datagram gibi çalıştığını düşünelim
+
+765
+01:17:02,720 --> 01:17:04,920
+tamam ilk gönderdiğim paketin
+
+766
+01:17:04,920 --> 01:17:06,640
+datagram gibi
+
+767
+01:17:06,640 --> 01:17:08,119
+veya işte kaç tane paketse
+
+768
+01:17:08,119 --> 01:17:11,359
+bu virtual circuit'ı ayarlayabilmek için
+
+769
+01:17:11,359 --> 01:17:13,079
+ne kadar gönderilmesi gerekiyorsa
+
+770
+01:17:13,079 --> 01:17:15,560
+gönderdim ve bana geri bildirimleri
+
+771
+01:17:15,560 --> 01:17:16,520
+nedenler ona geldi
+
+772
+01:17:16,520 --> 01:17:17,520
+işte şu yol müsait
+
+773
+01:17:17,520 --> 01:17:19,159
+yani adamın birisi gidip bakmış
+
+774
+01:17:19,159 --> 01:17:20,359
+Ankara'ya
+
+775
+01:17:20,359 --> 01:17:22,000
+otobanla gitme abi
+
+776
+01:17:22,000 --> 01:17:23,279
+Eskişehir üzerinden gidersen
+
+777
+01:17:23,279 --> 01:17:24,359
+daha hızlı gidersin
+
+778
+01:17:24,359 --> 01:17:26,359
+kaza var Bolu'da çünkü falan diye
+
+779
+01:17:26,359 --> 01:17:27,920
+adam mesela söylüyor sana
+
+780
+01:17:27,920 --> 01:17:30,920
+sen işte aşağıdan
+
+781
+01:17:30,920 --> 01:17:32,920
+birinecik Eskişehir tarafından gitmeye
+
+782
+01:17:32,920 --> 01:17:34,319
+karar veriyorsan
+
+783
+01:17:34,319 --> 01:17:37,319
+o bağlantı sonlandırılıncaya kadar
+
+784
+01:17:37,319 --> 01:17:38,720
+hep aynı yerden gidiyorsun
+
+785
+01:17:38,720 --> 01:17:39,920
+şey açılsa bile
+
+786
+01:17:39,920 --> 01:17:43,319
+yani Bolu dağındaki kaza kaldırılmış olsa bile
+
+787
+01:17:43,319 --> 01:17:44,720
+hep aynı yerden gidiyorsun
+
+788
+01:17:44,720 --> 01:17:46,720
+virtual circuit'li yöntemler bu şekilde
+
+789
+01:17:46,720 --> 01:17:48,720
+yine aynı alıcıdan
+
+790
+01:17:48,720 --> 01:17:50,119
+aynı göndericiden
+
+791
+01:17:50,119 --> 01:17:52,319
+aynı alıcıya farklı bir paket gönderilmek
+
+792
+01:17:52,319 --> 01:17:53,520
+istendiğinde
+
+793
+01:17:53,520 --> 01:17:54,520
+farklı bir zaman
+
+794
+01:17:54,520 --> 01:17:56,920
+3 ms sonra 5 ms sonra
+
+795
+01:17:56,920 --> 01:17:58,520
+bu sefer tekrardan
+
+796
+01:17:58,520 --> 01:18:00,920
+duruma göre yeni bir virtual circuit kuruluyor
+
+797
+01:18:00,920 --> 01:18:01,920
+tamam
+
+798
+01:18:01,920 --> 01:18:04,319
+şey de böyle değildi neden ona
+
+799
+01:18:04,319 --> 01:18:06,119
+circuit switching de böyle değildi
+
+800
+01:18:06,119 --> 01:18:08,119
+A noktasından B noktasına hep
+
+801
+01:18:08,119 --> 01:18:10,920
+aynı yoldan gidiliyordu
+
+802
+01:18:10,920 --> 01:18:14,319
+ama virtual circuit'ta bu şekilde değil
+
+803
+01:18:14,319 --> 01:18:17,119
+bunlarda temelde ikiye ayrılıyor
+
+804
+01:18:17,119 --> 01:18:18,520
+işte birisi dediğim gibi
+
+805
+01:18:18,520 --> 01:18:20,920
+virtual channel identifier'lar üzerinden
+
+806
+01:18:20,920 --> 01:18:22,920
+konum bilgisi
+
+807
+01:18:22,920 --> 01:18:24,920
+yani yol bilgisi tutulan
+
+808
+01:18:24,920 --> 01:18:27,520
+switched virtual circuit'lar
+
+809
+01:18:27,520 --> 01:18:29,920
+yani ilk paketi gönderdik
+
+810
+01:18:29,920 --> 01:18:32,319
+ilk paket bize yolu belirledi
+
+811
+01:18:32,319 --> 01:18:34,720
+artık bu yol üzerinden gideceksin diyor
+
+812
+01:18:34,720 --> 01:18:36,119
+bu yol üzerinden giderken
+
+813
+01:18:36,119 --> 01:18:37,520
+o yol hangi yol
+
+814
+01:18:37,520 --> 01:18:38,520
+o yolun
+
+815
+01:18:38,520 --> 01:18:40,319
+üzerinde bulunan santrallerin
+
+816
+01:18:40,319 --> 01:18:43,319
+işte o aradaki network elemanları her neyse
+
+817
+01:18:43,319 --> 01:18:46,319
+o elemanların id'leri tutuluyor
+
+818
+01:18:46,319 --> 01:18:48,319
+ve bu id'ler üzerinden
+
+819
+01:18:48,319 --> 01:18:50,119
+sen yolunu bulmaya çalışıyorsun
+
+820
+01:18:50,119 --> 01:18:51,520
+datagramda nasıl
+
+821
+01:18:51,520 --> 01:18:52,720
+datagramda
+
+822
+01:18:52,720 --> 01:18:56,720
+sen her daim gönderici ile alıcının adresini biliyorsun
+
+823
+01:18:56,720 --> 01:19:00,319
+gönderici ile alıcının adresini bilerek
+
+824
+01:19:00,319 --> 01:19:03,720
+ve işte router'ların adres tablolarını
+
+825
+01:19:03,720 --> 01:19:05,720
+kontrol ederek
+
+826
+01:19:05,720 --> 01:19:07,119
+bu işlemi gerçekleştiriyorsun
+
+827
+01:19:07,119 --> 01:19:09,720
+yani bir adres gönderici ve alıcı adresi
+
+828
+01:19:09,720 --> 01:19:11,319
+paketlerin içerisinde var
+
+829
+01:19:11,319 --> 01:19:12,720
+virtual circuit'ta en azından
+
+830
+01:19:12,720 --> 01:19:14,319
+bunlardan kurtulmuş oluyorsun
+
+831
+01:19:14,319 --> 01:19:15,720
+ya hocam ne ki
+
+832
+01:19:15,720 --> 01:19:16,520
+dersen
+
+833
+01:19:16,520 --> 01:19:17,920
+yani adam zaten mesela
+
+834
+01:19:17,920 --> 01:19:19,520
+tekniğine göre iletim tekniğine göre
+
+835
+01:19:19,520 --> 01:19:21,319
+8 byte'lik veri gönderiyor
+
+836
+01:19:21,319 --> 01:19:23,920
+yani senin gönderici ve alıcı adresini düşün
+
+837
+01:19:23,920 --> 01:19:27,119
+yani bunlar da bir ip adresi olsa
+
+838
+01:19:27,119 --> 01:19:28,520
+baya hallice şeyler
+
+839
+01:19:28,520 --> 01:19:31,520
+o yüzden bir veri kadar
+
+840
+01:19:31,520 --> 01:19:34,319
+da sen ayrıca gönderici ve alıcı adresi ekliyorsun
+
+841
+01:19:34,319 --> 01:19:36,119
+ama virtual circuit yaptığında
+
+842
+01:19:36,119 --> 01:19:37,520
+baya bir aslında
+
+843
+01:19:37,520 --> 01:19:40,920
+sadece virtual channel identifier'ları tutarak
+
+844
+01:19:40,920 --> 01:19:42,920
+tasarruf sağlayabiliyorsun
+
+845
+01:19:42,920 --> 01:19:44,920
+hangi yağdan
+
+846
+01:19:44,920 --> 01:19:46,520
+ve hangi nereden geçeceğim
+
+847
+01:19:46,520 --> 01:19:48,720
+işte numarasal olarak
+
+848
+01:19:48,720 --> 01:19:50,319
+belki bir dizin olarak tutarak
+
+849
+01:19:50,319 --> 01:19:51,720
+bunu sağlayabiliyorsun
+
+850
+01:19:51,720 --> 01:19:54,720
+bir de permanent virtual circuit'lar var
+
+851
+01:19:54,720 --> 01:19:56,920
+bu permanent virtual circuit'larda
+
+852
+01:19:56,920 --> 01:19:58,520
+şöyle bir durum söz konusu
+
+853
+01:19:58,520 --> 01:20:03,520
+servis sağlayıcı tarafından
+
+854
+01:20:03,520 --> 01:20:06,119
+sana hangi rotadan
+
+855
+01:20:06,119 --> 01:20:08,920
+iletini göndermen gerektiği söyleniyor
+
+856
+01:20:08,920 --> 01:20:11,720
+mesela diyelim yine bir gönderici var
+
+857
+01:20:11,720 --> 01:20:13,319
+bir alıcı var
+
+858
+01:20:13,319 --> 01:20:16,520
+bu aradaki servisi sağlayan
+
+859
+01:20:16,520 --> 01:20:18,319
+bir servis sağlayıcı var
+
+860
+01:20:18,319 --> 01:20:20,119
+o servis sağlayıcı diyor ki
+
+861
+01:20:20,319 --> 01:20:22,319
+sen şuna mı göndermek istiyorsun
+
+862
+01:20:22,319 --> 01:20:24,319
+şu yoldan göndereceksin
+
+863
+01:20:24,319 --> 01:20:27,319
+bu adam o yoldan gönderiyor yani bu veri
+
+864
+01:20:27,319 --> 01:20:30,319
+bu veri servis sağlayıcısına iletildiğinde
+
+865
+01:20:30,319 --> 01:20:33,319
+o verinin o yoldan gitmesini sağlıyor
+
+866
+01:20:33,319 --> 01:20:34,319
+desek daha doğru olur
+
+867
+01:20:34,319 --> 01:20:36,319
+o yoldan gitmesini sağlıyor
+
+868
+01:20:36,319 --> 01:20:37,319
+tamam
+
+869
+01:20:37,319 --> 01:20:39,319
+bunlara da permanent deniliyor
+
+870
+01:20:39,319 --> 01:20:42,319
+her ikisinde de aslında bir virtual circuit var
+
+871
+01:20:42,319 --> 01:20:44,319
+bir devre kuruluyor
+
+872
+01:20:44,319 --> 01:20:46,319
+switched virtual circuit'ta
+
+873
+01:20:46,319 --> 01:20:48,319
+ilk gönderen paket
+
+874
+01:20:48,319 --> 01:20:49,319
+ilk gönderilen paket
+
+875
+01:20:49,319 --> 01:20:52,319
+nasıl bir yol izleneceğine karar veriyor
+
+876
+01:20:52,319 --> 01:20:57,319
+ve o paket belirleyici oluyor
+
+877
+01:20:57,319 --> 01:20:59,319
+virtual channel identifier'ı o belirliyor
+
+878
+01:20:59,319 --> 01:21:01,319
+hangi rota üzerinden gideceğini o belirliyor
+
+879
+01:21:01,319 --> 01:21:04,319
+permanent'ta ise servis sağlayıcı belirliyor
+
+880
+01:21:04,319 --> 01:21:07,319
+hangi rotayı izleyerek gideceğini
+
+881
+01:21:07,319 --> 01:21:08,319
+datagramda nasıldı
+
+882
+01:21:08,319 --> 01:21:10,319
+datagramda öyle bir rota falan yok
+
+883
+01:21:10,319 --> 01:21:15,319
+hangisi ona müsaitse ona göre hareket ediliyor
+
+884
+01:21:15,319 --> 01:21:17,319
+tamam bu arada temel olarak
+
+885
+01:21:17,319 --> 01:21:20,319
+bu tarz farklılıklar var
+
+886
+01:21:20,319 --> 01:21:22,659
+şimdi
+
+887
+01:21:22,659 --> 01:21:26,659
+pekala biz karşı tarafa veriyi gönderiyoruz
+
+888
+01:21:26,659 --> 01:21:29,659
+karşı tarafa veriyi gönderirken
+
+889
+01:21:29,659 --> 01:21:32,659
+şeyin büyüklükleri ne derece önemli
+
+890
+01:21:32,659 --> 01:21:35,659
+frame size'ları ne derece önemli
+
+891
+01:21:35,659 --> 01:21:37,659
+şimdi bunu görüyor olalım
+
+892
+01:21:37,659 --> 01:21:39,659
+biz mesela
+
+893
+01:21:39,659 --> 01:21:41,659
+karşı tarafa
+
+894
+01:21:41,659 --> 01:21:43,659
+işte frame size'ı
+
+895
+01:21:43,659 --> 01:21:46,659
+şurada görülen boyut başında bir header
+
+896
+01:21:46,659 --> 01:21:49,659
+ardında işte içerisinde info olacak şekilde
+
+897
+01:21:49,659 --> 01:21:54,659
+bir büyük boyutlu bir frame göndermeye çalıştığımızı düşünelim
+
+898
+01:21:54,659 --> 01:21:56,659
+bunların her birisinin boyutu stand up
+
+899
+01:21:56,659 --> 01:21:58,659
+mesela 10x olsun
+
+900
+01:21:58,659 --> 01:22:01,659
+10x 10x o şekilde düşün
+
+901
+01:22:01,659 --> 01:22:03,659
+10x 10x 10x
+
+902
+01:22:03,659 --> 01:22:05,659
+gibi olsun
+
+903
+01:22:05,659 --> 01:22:08,659
+yapılan işlem şu şekilde oluyor kıymetli arkadaşlar
+
+904
+01:22:08,659 --> 01:22:12,659
+her bir şeyin içerisinde
+
+905
+01:22:12,659 --> 01:22:15,659
+veriyi karşı tarafa bağlantının üzerinden gönderirken
+
+906
+01:22:15,659 --> 01:22:18,659
+bir frame'in gönderilmesini bitiriyorum
+
+907
+01:22:18,659 --> 01:22:21,659
+bakın bir frame'in gönderilmesi bittikten sonra
+
+908
+01:22:21,659 --> 01:22:25,659
+ancak bir diğerini göndermeye başlayabiliyor
+
+909
+01:22:25,659 --> 01:22:30,659
+birisi bittikten sonra yine bir diğerini göndermeye başlıyor
+
+910
+01:22:30,659 --> 01:22:32,659
+burada
+
+911
+01:22:32,659 --> 01:22:35,659
+farklı farklı işte gönderebileceğiniz çeşitli channel'lar var
+
+912
+01:22:35,659 --> 01:22:37,659
+her birisi aynı channel'dan da gidiyor olabilir
+
+913
+01:22:37,659 --> 01:22:39,659
+farklı channel'dan da gidiyor olabilir
+
+914
+01:22:39,659 --> 01:22:41,659
+ama siz nedenir ona
+
+915
+01:22:41,659 --> 01:22:44,659
+o frame'i karşı tarafa gönderirken
+
+916
+01:22:44,659 --> 01:22:51,659
+bir sonraki frame'i göndermek için birisinin bitmesini bekliyorsunuz
+
+917
+01:22:51,659 --> 01:22:53,659
+ondan sonra karşı taraf dilerse
+
+918
+01:22:53,659 --> 01:22:56,659
+vakti geldiğinde ulaştığında onu almaya çalışıyor
+
+919
+01:22:56,659 --> 01:22:59,659
+diyelim ki frame size'ını yarıya düşürdük
+
+920
+01:22:59,659 --> 01:23:01,659
+10x değil de 5x oldu
+
+921
+01:23:01,659 --> 01:23:05,659
+nasıl oluyor siz bir tane frame karşı tarafa gönderiyorsunuz
+
+922
+01:23:05,659 --> 01:23:06,659
+gönderdiniz
+
+923
+01:23:06,659 --> 01:23:09,659
+o frame bittikten sonra hemen sonra
+
+924
+01:23:09,659 --> 01:23:11,659
+karşı taraftan
+
+925
+01:23:11,659 --> 01:23:15,659
+yeniden karşı tarafa yeniden bir frame gönderebiliyorsunuz
+
+926
+01:23:15,659 --> 01:23:18,659
+ama o frame bittikten sonra
+
+927
+01:23:18,659 --> 01:23:21,659
+karşı taraf artık ulaşmaya başlıyor
+
+928
+01:23:21,659 --> 01:23:24,659
+gideceği yere ve karşı tarafa
+
+929
+01:23:24,659 --> 01:23:29,659
+işte belli bir süre sonra illa gönderildiği süre kadarlık bir mesafede olmak zorunda değil
+
+930
+01:23:29,659 --> 01:23:31,659
+bu görselleştirme güzel anlatılsın diye böyle yapılmış
+
+931
+01:23:31,659 --> 01:23:33,659
+karşı tarafa
+
+932
+01:23:33,659 --> 01:23:36,659
+belirli bir süre sonra bu veri iletilmiş oluyor
+
+933
+01:23:36,659 --> 01:23:38,659
+ama bakın
+
+934
+01:23:38,659 --> 01:23:41,659
+frame'in gönderimi bitmeden
+
+935
+01:23:41,659 --> 01:23:43,659
+karşı taraf artık
+
+936
+01:23:43,659 --> 01:23:45,659
+yani pardon
+
+937
+01:23:45,659 --> 01:23:47,659
+frame'in gönderimi bittikten sonra
+
+938
+01:23:47,659 --> 01:23:49,659
+karşı taraf bunu alıyor
+
+939
+01:23:49,659 --> 01:23:52,659
+siz de bu sürede
+
+940
+01:23:52,659 --> 01:23:54,659
+karşı taraf bunu alırken
+
+941
+01:23:54,659 --> 01:23:59,659
+yani alması, işlemesi, hatalar, kontrol, bir sürü zamazingası var biliyorsunuz
+
+942
+01:23:59,659 --> 01:24:02,659
+siz yeni bir frame karşı tarafa gönderebiliyorsunuz
+
+943
+01:24:02,659 --> 01:24:03,659
+tamam
+
+944
+01:24:03,659 --> 01:24:05,659
+aynı şekilde
+
+945
+01:24:05,659 --> 01:24:07,659
+gönderdiğiniz bu yeni frame
+
+946
+01:24:07,659 --> 01:24:09,659
+tekrardan bir tane gönderdiğinizde
+
+947
+01:24:09,659 --> 01:24:11,659
+ve tekrardan bir tane gönderdiğinizde
+
+948
+01:24:11,659 --> 01:24:13,659
+yani zamanın içerisinde
+
+949
+01:24:13,659 --> 01:24:20,659
+bir, iki, üç tane şu uzunlukta frame'i karşı tarafa göndermiş oluyorsunuz
+
+950
+01:24:20,659 --> 01:24:22,659
+iki parçaya bölerek bakın
+
+951
+01:24:22,659 --> 01:24:24,659
+iki parçaya bölerek
+
+952
+01:24:24,659 --> 01:24:27,659
+ama buradaki sağladığınız avantaj ne?
+
+953
+01:24:27,659 --> 01:24:28,659
+hiç kuşkusuz
+
+954
+01:24:28,659 --> 01:24:32,659
+karşı tarafa ben daha küçük paketlerle göndererek
+
+955
+01:24:32,659 --> 01:24:34,659
+daha az
+
+956
+01:24:34,659 --> 01:24:36,659
+mesela şu timeXenia
+
+957
+01:24:36,659 --> 01:24:40,659
+şu büyük frame'ler halinde gönderdiğimde
+
+958
+01:24:40,659 --> 01:24:43,659
+şu kadar zaman tutuyorken
+
+959
+01:24:43,659 --> 01:24:45,659
+bunu ben daha küçülttüğümde
+
+960
+01:24:45,659 --> 01:24:47,659
+bakın daha az zaman tuttu
+
+961
+01:24:47,659 --> 01:24:50,659
+daha da küçülttüm frame boyutumu
+
+962
+01:24:50,659 --> 01:24:52,659
+daha da küçülttüm
+
+963
+01:24:52,659 --> 01:24:54,659
+daha da az zaman tuttu
+
+964
+01:24:54,659 --> 01:24:55,659
+görüyor musunuz?
+
+965
+01:24:55,659 --> 01:24:58,659
+pekala bu küçültme işi çok iyi
+
+966
+01:24:58,659 --> 01:24:59,659
+çok hoşuma gitti
+
+967
+01:24:59,659 --> 01:25:01,659
+biraz daha küçülteyim daha az zamanda gönderirim
+
+968
+01:25:01,659 --> 01:25:03,659
+daha da küçülttü
+
+969
+01:25:03,659 --> 01:25:06,659
+aynı boyuttaki ne denir ona?
+
+970
+01:25:06,659 --> 01:25:08,659
+mesela işte burada üç parça bölmüş
+
+971
+01:25:08,659 --> 01:25:09,659
+burada dört parçaya böldü
+
+972
+01:25:09,659 --> 01:25:11,659
+bu sefer daha fazla zaman tuttu
+
+973
+01:25:11,659 --> 01:25:12,659
+niye?
+
+974
+01:25:12,659 --> 01:25:15,659
+bir de işte bizim frame boyutunun
+
+975
+01:25:15,659 --> 01:25:17,659
+frame iki şeyden oluşuyor
+
+976
+01:25:17,659 --> 01:25:18,659
+bir header bilgisi
+
+977
+01:25:18,659 --> 01:25:21,659
+bir de info data bilgisi
+
+978
+01:25:21,659 --> 01:25:23,659
+siz data'yı her seferinde küçültüyorsunuz
+
+979
+01:25:23,659 --> 01:25:25,659
+ama header bilgisi sabit kalıyor
+
+980
+01:25:25,659 --> 01:25:28,659
+o yüzden evet frame'leri ufak boyutlara bölmek
+
+981
+01:25:28,659 --> 01:25:32,659
+bizim açımızdan avantaj gibi görünse de
+
+982
+01:25:32,659 --> 01:25:35,659
+bunun bir minimum değerinin hesaplanıp
+
+983
+01:25:35,659 --> 01:25:38,659
+ona göre işlem yapılması gerekir
+
+984
+01:25:38,659 --> 01:25:40,659
+kıymetli arkadaşlar
+
+985
+01:25:40,659 --> 01:25:42,659
+çünkü frame'in boyutu sabit kalıyor
+
+986
+01:25:42,659 --> 01:25:44,659
+siz data boyutunu böldükçe
+
+987
+01:25:44,659 --> 01:25:47,659
+bu da önemli hususlardan birisi
+
+988
+01:25:47,659 --> 01:25:51,659
+pekala çeşitli ne denir ona?
+
+989
+01:25:51,659 --> 01:25:55,659
+karşılaştırmalar üzerinde duruyor olalım
+
+990
+01:25:55,659 --> 01:25:57,659
+connection'ınız servislerle
+
+991
+01:25:57,659 --> 01:25:59,659
+connection oriented servisleri aslında
+
+992
+01:25:59,659 --> 01:26:01,659
+temelde karşılaştırıyoruz
+
+993
+01:26:01,659 --> 01:26:05,659
+hatırlarsanız circuit switchte
+
+994
+01:26:05,659 --> 01:26:07,659
+bir bağlantı kurma safası vardı
+
+995
+01:26:07,659 --> 01:26:11,659
+ve bu bağlantı kurma safası
+
+996
+01:26:11,659 --> 01:26:15,659
+bildiğimiz bir circuit'ın bir devrenin
+
+997
+01:26:15,659 --> 01:26:18,659
+kurulmasını ihtiva ediyordu
+
+998
+01:26:18,659 --> 01:26:20,659
+datagramda herhangi bir şekilde
+
+999
+01:26:20,659 --> 01:26:21,659
+bağlantı kurulmasına gerek yok
+
+1000
+01:26:21,659 --> 01:26:23,659
+çünkü bir sonraki gidecek paket de
+
+1001
+01:26:23,659 --> 01:26:25,659
+aynı bağlantı üzerinden muhtemelen gitmeyecek
+
+1002
+01:26:25,659 --> 01:26:28,659
+en büyük avantajlarından birisi bu
+
+1003
+01:26:28,659 --> 01:26:32,659
+sizin göndereceğiniz paket sayısı
+
+1004
+01:26:32,659 --> 01:26:34,659
+eğer ki azsa
+
+1005
+01:26:34,659 --> 01:26:37,659
+yani işte bir basit bir mektup gönderiyorsun
+
+1006
+01:26:37,659 --> 01:26:39,659
+10 tane 100 tane mektup gönderiyorsun
+
+1007
+01:26:39,659 --> 01:26:41,659
+azsa bu şekilde her birisini
+
+1008
+01:26:41,659 --> 01:26:43,659
+farklı bir rotadan gönderebilirsin
+
+1009
+01:26:43,659 --> 01:26:47,659
+ama eğer ki göndereceğiniz paket sayısı
+
+1010
+01:26:47,659 --> 01:26:49,659
+o kadar fazla değilse bu bir problem
+
+1011
+01:26:49,659 --> 01:26:51,659
+niye hocam? fazla olduğunda niye problem?
+
+1012
+01:26:51,659 --> 01:26:54,659
+karşı tarafa gönderirken mesela
+
+1013
+01:26:54,659 --> 01:26:56,659
+diyelim ki sliding window kullanıyorsunuz
+
+1014
+01:26:56,659 --> 01:27:01,659
+hangi paketin hangi sırada gittiğini bilmiyorsun
+
+1015
+01:27:01,659 --> 01:27:03,659
+yani onun bir garantisi yok
+
+1016
+01:27:03,659 --> 01:27:04,659
+birisini beklediğin için
+
+1017
+01:27:04,659 --> 01:27:06,659
+ekonomi verisini alamadığın için
+
+1018
+01:27:06,659 --> 01:27:08,659
+diğerlerini gönderemiyor olabilirsin
+
+1019
+01:27:08,659 --> 01:27:11,659
+aynı rotada sürekli sıkıntı çıkıyor olabilir
+
+1020
+01:27:11,659 --> 01:27:15,659
+bu yine temel problemlerden birisini oluşturuyor burada
+
+1021
+01:27:15,659 --> 01:27:19,659
+uygulanması oldukça nedenli ona basit
+
+1022
+01:27:19,659 --> 01:27:22,659
+özellikle virtual circuit'ın
+
+1023
+01:27:22,659 --> 01:27:24,659
+farklı tekniklerinin kurulmasına göre
+
+1024
+01:27:24,659 --> 01:27:26,659
+oldukça basit
+
+1025
+01:27:26,659 --> 01:27:29,659
+sıkı bir hatta problem olduğunu düşünün
+
+1026
+01:27:29,659 --> 01:27:30,659
+bir sıkışıklık oldu
+
+1027
+01:27:30,659 --> 01:27:31,659
+bir crash oldu
+
+1028
+01:27:31,659 --> 01:27:32,659
+collision oldu
+
+1029
+01:27:32,659 --> 01:27:33,659
+congestion oldu
+
+1030
+01:27:33,659 --> 01:27:36,659
+hemen kendini adapte edip
+
+1031
+01:27:36,659 --> 01:27:39,659
+yeni bir rotadan bir diğer paketleri gönderebiliyor
+
+1032
+01:27:39,659 --> 01:27:41,659
+bu arada net birazdan routerlardan
+
+1033
+01:27:41,659 --> 01:27:43,659
+belki konuşurken onları detaylı bir şekilde
+
+1034
+01:27:43,659 --> 01:27:44,659
+hani üzerine dururuz ama
+
+1035
+01:27:44,659 --> 01:27:45,659
+şeyi de söyleyelim
+
+1036
+01:27:45,659 --> 01:27:48,659
+mesela network içerisinde bulunan routerlar
+
+1037
+01:27:48,659 --> 01:27:51,659
+o paketler kendi üzerinden her geçtikçe
+
+1038
+01:27:51,659 --> 01:27:54,659
+paketlerin üzerindeki bir countdown değeri var
+
+1039
+01:27:54,659 --> 01:27:56,659
+onu mesela bir eksiltir
+
+1040
+01:27:56,659 --> 01:28:00,659
+diyelim ki ben buradan alıcıya bir alıcıya gönderici olarak
+
+1041
+01:28:00,659 --> 01:28:02,659
+ben bir alıcıya mesaj gönderiyorum
+
+1042
+01:28:02,659 --> 01:28:04,659
+onun countdown değerini 30 yapıyorum
+
+1043
+01:28:04,659 --> 01:28:05,659
+bu ne demek
+
+1044
+01:28:05,659 --> 01:28:07,659
+maksimum 30 routerdan geçtikten sonra
+
+1045
+01:28:07,659 --> 01:28:09,659
+karşı tarafa ulaşmıyorsa
+
+1046
+01:28:09,659 --> 01:28:14,659
+artık öyle bir routera ulaştığında
+
+1047
+01:28:14,659 --> 01:28:16,659
+bu countdown değeri 0'sa
+
+1048
+01:28:16,659 --> 01:28:17,659
+o router bunu iletmeye uğraşmasın
+
+1049
+01:28:17,659 --> 01:28:18,659
+çöpe atsın
+
+1050
+01:28:18,659 --> 01:28:21,659
+gibi mesela çeşitli değerler de oluyor
+
+1051
+01:28:21,659 --> 01:28:22,659
+paketlerin üstünde
+
+1052
+01:28:22,659 --> 01:28:27,659
+o sebeple bu da dikkat edilmesi gereken hususlardan birisi
+
+1053
+01:28:27,659 --> 01:28:30,659
+tabi buradaki datagramdaki problemlerden
+
+1054
+01:28:30,659 --> 01:28:32,659
+az önce bahsettiğimiz problemlerden
+
+1055
+01:28:32,659 --> 01:28:36,659
+en önemlisi hem alıcının hem göndericinin adresi
+
+1056
+01:28:36,659 --> 01:28:38,659
+her daim şeyin üzerinde olmak zorunda
+
+1057
+01:28:38,659 --> 01:28:41,659
+frame'in üzerinde olmak zorunda
+
+1058
+01:28:41,659 --> 01:28:43,659
+bu da ekstradan yer kaplıyor
+
+1059
+01:28:43,659 --> 01:28:46,659
+ve her paket yani düşünün
+
+1060
+01:28:46,659 --> 01:28:47,659
+bir paketi düşünün
+
+1061
+01:28:47,659 --> 01:28:49,659
+nereden gideceği belli
+
+1062
+01:28:49,659 --> 01:28:50,659
+hangi yoldan gideceği belli
+
+1063
+01:28:50,659 --> 01:28:52,659
+ve o yoldan sürekli gidiyor
+
+1064
+01:28:52,659 --> 01:28:54,659
+diğeri ise her düğme geldiğinde
+
+1065
+01:28:54,659 --> 01:28:56,659
+buraya kadar geldim bundan sonra nereye gideyim
+
+1066
+01:28:56,659 --> 01:28:58,659
+hangi yoldan gideyim
+
+1067
+01:28:58,659 --> 01:28:59,659
+diye bir düşünüyor
+
+1068
+01:28:59,659 --> 01:29:04,659
+bu düşünmesi de ekstradan tabi ki zaman problemi olarak bize geri dönüyor
+
+1069
+01:29:04,659 --> 01:29:09,659
+söylediğimiz gibi herhangi bir şekilde paketin korunacağının bir garantisi de yok
+
+1070
+01:29:09,659 --> 01:29:11,659
+pekala virtual circuit
+
+1071
+01:29:11,659 --> 01:29:13,659
+connection oriented sistemlerde nasıl oluyor
+
+1072
+01:29:14,659 --> 01:29:16,659
+virtual circuit tekrar söylüyorum
+
+1073
+01:29:16,659 --> 01:29:18,659
+circuit switching gibi değil
+
+1074
+01:29:18,659 --> 01:29:20,659
+iki tekniği vardı bunun
+
+1075
+01:29:20,659 --> 01:29:24,659
+birisinde switch virtual circuit
+
+1076
+01:29:24,659 --> 01:29:25,659
+ne oluyordu
+
+1077
+01:29:25,659 --> 01:29:28,659
+ilk giden paket
+
+1078
+01:29:28,659 --> 01:29:32,659
+ne şekilde karşı tarafa ulaştığını bildiği için
+
+1079
+01:29:32,659 --> 01:29:34,659
+bir yol çiziyordu
+
+1080
+01:29:34,659 --> 01:29:35,659
+diğerleri oradan gidiyordu
+
+1081
+01:29:35,659 --> 01:29:37,659
+ya da permanent virtual circuit
+
+1082
+01:29:37,659 --> 01:29:39,659
+ordaysa servis sağlayıcı
+
+1083
+01:29:39,659 --> 01:29:41,659
+bu paket bu yol üzerinden gidecek diyordu
+
+1084
+01:29:41,659 --> 01:29:43,659
+bu şekilde bir sanal devre oluşuyordu
+
+1085
+01:29:43,659 --> 01:29:48,659
+bağlantı kopup tekrar tesis edildiğinde yeni bir sanal devre oluşturuluyor
+
+1086
+01:29:48,659 --> 01:29:50,659
+her iki teknik içinde
+
+1087
+01:29:50,659 --> 01:29:55,659
+servis sağlayıcı tabi inatlaşıp sen hala bunun üzerinden göndermen gerekiyor diye söyleyebilir
+
+1088
+01:29:55,659 --> 01:29:56,659
+söylesin
+
+1089
+01:29:56,659 --> 01:29:58,659
+öyleyse zaten senin adına
+
+1090
+01:29:58,659 --> 01:30:01,659
+o hangisinin performansı daha güzel
+
+1091
+01:30:01,659 --> 01:30:04,659
+ölçümleyen çeşitli işler gerçekleştirdiği için
+
+1092
+01:30:04,659 --> 01:30:07,659
+o da güzel bir yöntem olabilir
+
+1093
+01:30:07,659 --> 01:30:09,659
+yol
+
+1094
+01:30:09,659 --> 01:30:15,659
+paketler gönderilmeye başlamadan önce virtual circuit yöntemlerde hangi yoldan gideceği belli oluyor aslında
+
+1095
+01:30:15,659 --> 01:30:22,659
+bunların switch virtual circuitta ilk paket haricinde onu tekrardan vurguluyor olalım
+
+1096
+01:30:22,659 --> 01:30:26,659
+her paketin üzerinde alıcı ve gönderecinin adresi yazılı değil
+
+1097
+01:30:26,659 --> 01:30:29,659
+bu da yine avantajlardan birisi
+
+1098
+01:30:29,659 --> 01:30:35,659
+sadece o yolun bilgilerini içeren bir veri var
+
+1099
+01:30:35,659 --> 01:30:37,659
+o şekilde söyleyelim
+
+1100
+01:30:37,659 --> 01:30:43,659
+siz böyle bir devre, virtual devre kurduktan sonra
+
+1101
+01:30:43,659 --> 01:30:46,659
+ara düğümlere geldiğinizde her seferinde
+
+1102
+01:30:46,659 --> 01:30:49,659
+ya ben şu an nereye gideceğim, hangi düğüme atlayacağım diye
+
+1103
+01:30:49,659 --> 01:30:55,659
+ekstradan rotanızın ne olması gerektiğini datagramdaki gibi düşünmenize gerek yok
+
+1104
+01:30:55,659 --> 01:31:01,659
+rotanız zaten standart olarak belli olmuş oluyor açıkçası
+
+1105
+01:31:01,659 --> 01:31:09,659
+bir fiziksel hat üzerinde aynı anda birden fazla kişi konuştuğu durumda
+
+1106
+01:31:09,659 --> 01:31:13,659
+bir çeşitli problemlere sebebiyet verebilir
+
+1107
+01:31:13,659 --> 01:31:15,659
+birbirlerini duyabilirler
+
+1108
+01:31:15,659 --> 01:31:20,659
+virtual circuit switching tarafında
+
+1109
+01:31:20,659 --> 01:31:25,659
+ama virtual circuit tarafında aynı fiziksel devre üzerinde kullanan sanal devreler
+
+1110
+01:31:25,659 --> 01:31:28,659
+time division multiplexing gibi bir yapı sayesinde
+
+1111
+01:31:28,659 --> 01:31:32,659
+hiçbir şekilde birbirlerine collision olmadan iletişime geçebilir
+
+1112
+01:31:32,659 --> 01:31:36,659
+bu da yine önemli hususlardan birisi
+
+1113
+01:31:36,659 --> 01:31:42,659
+ve devre varsa bu devrede çok yüksek bir olasılıkta
+
+1114
+01:31:42,659 --> 01:31:45,659
+ya gönderdiğim veriler şeyde sıkışıyordur
+
+1115
+01:31:45,659 --> 01:31:48,659
+network de sıkışıyordur, karşıya gitmiyordur
+
+1116
+01:31:48,659 --> 01:31:55,659
+ama gidiyorsa da çok yüksek bir olasılıkta bizim gönderdiğimiz sırada karşı tarafa ulaşıyordur
+
+1117
+01:31:55,659 --> 01:31:57,659
+bu da bazen önemli arzede bilir
+
+1118
+01:31:57,659 --> 01:32:02,659
+yani düşünün siz internetten bir torentten bir veri indiriyorsunuz
+
+1119
+01:32:02,659 --> 01:32:05,659
+hangi paketin hangi sırada geldiğinin bir önemi yok
+
+1120
+01:32:05,659 --> 01:32:10,659
+yani 3 gigabaytlık film hangi paket önce gelmiş bir önemi yok
+
+1121
+01:32:10,659 --> 01:32:14,659
+ama netflix'ten aynı filmi izliyorsunuz diyelim ki 3 gigabaytlık
+
+1122
+01:32:14,659 --> 01:32:18,659
+hangi paketin önce geldiğinin bir önemi var çünkü aynı zamanda izliyorsunuz
+
+1123
+01:32:18,659 --> 01:32:22,659
+yani mesela o da yine dikkat edilmesi gereken
+
+1124
+01:32:22,659 --> 01:32:28,659
+hata kontrolünün yapılması virtual circuit tarafa göre biraz daha elverişli
+
+1125
+01:32:28,659 --> 01:32:34,659
+çünkü buradaki hata kontrolünden kasıt aslında devrem belli
+
+1126
+01:32:34,659 --> 01:32:36,659
+bu devre üzerinden göndereceğim
+
+1127
+01:32:36,659 --> 01:32:40,659
+hani öteki türlü datagramda gönderiyorum ama nereden gitti
+
+1128
+01:32:40,659 --> 01:32:42,659
+ya hangisinden gitti ki problem çıktı
+
+1129
+01:32:42,659 --> 01:32:47,659
+çünkü problem çıktıysa nereden gittiysen
+
+1130
+01:32:47,659 --> 01:32:49,659
+zaten müdahale edebileceksin
+
+1131
+01:32:49,659 --> 01:32:58,659
+o yüzden hata kontrolüne dair bir tık daha virtual circuit'lı yapılarda daha elverişli bir durum söz konusu
+
+1132
+01:32:58,659 --> 01:33:01,659
+bu da tabii quality of service'i arttırıyor
+
+1133
+01:33:01,659 --> 01:33:03,659
+daha yüksek kalitede hizmet alabiliyorsunuz
+
+1134
+01:33:03,659 --> 01:33:06,659
+ama tabii dezavantajları ne
+
+1135
+01:33:06,659 --> 01:33:11,659
+o kurulan virtual circuit üzerinde bir collision gerçekleştikten sonra
+
+1136
+01:33:11,659 --> 01:33:13,659
+o bağlantı koparılıncaya kadar
+
+1137
+01:33:13,659 --> 01:33:16,659
+birisinin collision olduğunu anlayıp o bağlantıyı koparıncaya kadar
+
+1138
+01:33:16,659 --> 01:33:20,659
+hala da taraflar birbirlerine veri göndermeye devam edecekleri için
+
+1139
+01:33:20,659 --> 01:33:24,659
+tıkanıklı bir süre aşmaları zor olabilir
+
+1140
+01:33:24,659 --> 01:33:27,659
+çeşitli time out zamanları bekleyecekler falan filan
+
+1141
+01:33:27,659 --> 01:33:31,659
+ondan sonra belki bağlantıyı koparıp yeniden başka bir virtual circuit kuracaklar
+
+1142
+01:33:31,659 --> 01:33:33,659
+bu datagramda böyle değil
+
+1143
+01:33:33,659 --> 01:33:36,659
+bir paket oranın tıkanık olduğundan sonra
+
+1144
+01:33:37,659 --> 01:33:42,659
+yine şeyde virtual circuit da diyelim ki 5 tane düğümden oluşuyor
+
+1145
+01:33:42,659 --> 01:33:46,659
+bizim rotamız bu 5 düğümden bir tanesi offline oldu
+
+1146
+01:33:46,659 --> 01:33:48,659
+her şey bitti yani
+
+1147
+01:33:48,659 --> 01:33:52,659
+tamam ben o paket üzerinden o not üzerinden gönderecektim
+
+1148
+01:33:52,659 --> 01:33:55,659
+nerede offline olamazsın diyemiyorsun
+
+1149
+01:33:55,659 --> 01:33:57,659
+datagramda bunu diyebilirsin
+
+1150
+01:33:57,659 --> 01:34:01,659
+tamam offline olduysan senden geçme
+
+1151
+01:34:01,659 --> 01:34:05,659
+virtual circuit'ta ise yeni bir devre kurman gerekir
+
+1152
+01:34:05,659 --> 01:34:07,659
+oldu
+
+1153
+01:34:07,659 --> 01:34:11,659
+bunları böyle çeşitli özellikleri bakımından kıyaslayacak olursak
+
+1154
+01:34:11,659 --> 01:34:15,659
+yani datagram, switched virtual circuit, permanent virtual circuit'ı
+
+1155
+01:34:15,659 --> 01:34:19,659
+çeşitli kriterler üzerinde özellikleri kıyaslayacak olursak
+
+1156
+01:34:19,659 --> 01:34:23,659
+çeşitli kriterler üzerinde çeşitli özellikleri kıyaslayacak olursak
+
+1157
+01:34:23,659 --> 01:34:27,659
+çeşitli kriterler üzerinde çeşitli özellikleri kıyaslayacak olursak
+
+1158
+01:34:28,659 --> 01:34:32,659
+çeşitli kriterler üzerinde çeşitli özellikleri kıyaslayacak olursak
+
+1159
+01:34:32,659 --> 01:34:35,659
+bağlantı kurulumu kısmına baktığımızda
+
+1160
+01:34:35,659 --> 01:34:38,659
+datagramda herhangi bir şekilde bağlantının olmasına gerek yok
+
+1161
+01:34:38,659 --> 01:34:42,659
+switched virtual circuit'ta muhakkak ilk paket
+
+1162
+01:34:42,659 --> 01:34:45,659
+bu bağlantının nasıl olması gerektiğini söylüyor
+
+1163
+01:34:45,659 --> 01:34:47,659
+permanent virtual circuit'ta ise
+
+1164
+01:34:47,659 --> 01:34:53,659
+servis sağlayıcı bu bağlantının hangi rota üzerinden olacağını söylüyor
+
+1165
+01:34:53,659 --> 01:34:58,659
+datagram rota belirlerken her paket için farklı bir rota olabilir
+
+1166
+01:34:58,659 --> 01:35:01,659
+ama bunu böyle söylediğimizde şey gibi de anlaşılıyor
+
+1167
+01:35:01,659 --> 01:35:03,659
+her paket farklı rotadan gidecek, hayır
+
+1168
+01:35:03,659 --> 01:35:05,659
+her paket aynı rotadan da gitmiş olabilir
+
+1169
+01:35:05,659 --> 01:35:09,659
+ama her paket birbirinden farklı rotalardan gidebilir
+
+1170
+01:35:09,659 --> 01:35:12,659
+böyle bir avantajı var onu söylemiş oluyoruz
+
+1171
+01:35:12,659 --> 01:35:17,659
+yine SVC'de ilk paketin geçiş güzergahı
+
+1172
+01:35:17,659 --> 01:35:20,659
+o rotanın ne olacağını belirliyor
+
+1173
+01:35:21,659 --> 01:35:26,659
+böylece diğer paketlerde o rotadan tekrardan gitmiş oluyorlar
+
+1174
+01:35:26,659 --> 01:35:31,659
+PVC'de ise servis sağlayıcı tarafından belirlenmiş bir rota var
+
+1175
+01:35:31,659 --> 01:35:35,659
+ve düğümler kafalarına göre ben bu rotadan gideceğim
+
+1176
+01:35:35,659 --> 01:35:39,659
+hayır orası kalabalıktı gördüm ya kaza vardı oradan gitmeyeceğim ben gibi
+
+1177
+01:35:39,659 --> 01:35:41,659
+ekstradan şeyler söylemiyorlar
+
+1178
+01:35:41,659 --> 01:35:45,659
+adres bilgisinin datagramda muhakkak hem göndereci
+
+1179
+01:35:45,659 --> 01:35:50,659
+hem alıcının adres bilgilerinin saklanması gerekiyor
+
+1180
+01:35:50,659 --> 01:35:57,659
+her bir framing içerisindeki hangi yoldan gideceğini bilmiyor zaten
+
+1181
+01:35:57,659 --> 01:36:00,659
+en azından nereye gitmek istediğini bilsin ki bulabilsin
+
+1182
+01:36:00,659 --> 01:36:04,659
+SVC'de adres bilgisi yok
+
+1183
+01:36:04,659 --> 01:36:08,659
+virtual channel identifier denilen hangi rotadan gidecekse
+
+1184
+01:36:08,659 --> 01:36:11,659
+o rotanın üzerinde bulunan düğümlerin adreslerini
+
+1185
+01:36:11,659 --> 01:36:14,659
+ufak adreslerini tutan bir veri var
+
+1186
+01:36:14,659 --> 01:36:20,659
+normal gidiş ve dönüş adreslerinden daha kısa bir headerda yer itibar ediyor
+
+1187
+01:36:20,659 --> 01:36:25,659
+o yüzden biraz daha performans açısından yer kaplama performans açısından daha iyi
+
+1188
+01:36:25,659 --> 01:36:29,659
+yine PVC'de channel identifier
+
+1189
+01:36:29,659 --> 01:36:33,659
+virtual channel değil de aslında channel identifier'lar var
+
+1190
+01:36:33,659 --> 01:36:38,659
+yani bu channel identifier'lar servis sağlayıcı tarafından veriliyor
+
+1191
+01:36:38,659 --> 01:36:43,659
+işte şu identifier'lar üzerinden gideceksin diye söylüyor
+
+1192
+01:36:43,659 --> 01:36:45,659
+SVC'de neydi?
+
+1193
+01:36:45,659 --> 01:36:48,659
+ilk paket buna karar veriyordu nereden gidileceğini
+
+1194
+01:36:48,659 --> 01:36:56,659
+ve kalan datagramda herhangi bir şekilde paket sıralamasının dikkat edilmediğini
+
+1195
+01:36:56,659 --> 01:36:59,659
+evet sıralı da gidebilir yani her şey normaldir
+
+1196
+01:36:59,659 --> 01:37:04,659
+hiçbir sıkışıklık yoktur bütün paketler aynı rota üzerinden gidiyordur
+
+1197
+01:37:04,659 --> 01:37:08,659
+böyle olunca paketler sıralı bir şekilde de karşı tarafa ulaşabilir
+
+1198
+01:37:08,659 --> 01:37:09,659
+ama bunun garantisi yok
+
+1199
+01:37:09,659 --> 01:37:15,659
+virtual circuit yapılarda ise paketlerin sıralı bir şekilde karşı tarafa ulaşması bekleniyor
+
+1200
+01:37:15,659 --> 01:37:20,659
+datagram değişen durumlara karşı çok daha fazla nedenle ona uyumlu
+
+1201
+01:37:20,659 --> 01:37:23,659
+işte yolda bir tıkanıklık oldu
+
+1202
+01:37:23,659 --> 01:37:27,659
+farklı bir nedenle ona problemle karşılaşıldı
+
+1203
+01:37:27,659 --> 01:37:30,659
+bir cihaz offline oldu gibi durumlarda datagramla gönderiyorsak
+
+1204
+01:37:30,659 --> 01:37:38,659
+eğer hemen bir adaptif bakış açısıyla tekrardan yeni bir rota paket planlayabiliyor çizebiliyor
+
+1205
+01:37:38,659 --> 01:37:42,659
+virtual circuit yapılarda ise yapılması gereken
+
+1206
+01:37:42,659 --> 01:37:47,659
+eğer ki bir switched virtual circuit kullanıyorsam
+
+1207
+01:37:47,659 --> 01:37:51,659
+yapılması gereken şeylerden birisi problem çıktığında o bağlantıyı kopartmak
+
+1208
+01:37:51,659 --> 01:37:55,659
+yeni bir virtual circuit oluşturmak bu avantajlardan birisi
+
+1209
+01:37:55,659 --> 01:38:00,659
+veya permanent virtual circuit kullanıyorsam zaten servis sağlayıcı bana o yol vermiş oluyor
+
+1210
+01:38:00,659 --> 01:38:07,659
+servis sağlayıcı da hangi rotanın hangi başlangıç ve bitiş adresler için daha efektif olabileceğine dair zamanı var
+
+1211
+01:38:07,659 --> 01:38:15,659
+zaman zaman çeşitli look up table'larını güncellediği için bana aslında güzel bir rota öneriyordur diye düşünüyorsun
+
+1212
+01:38:15,659 --> 01:38:22,659
+muhtemelen de öyledir ama önermiyorsa bu yeni rotanın yine belirlenme servis sağlayıcı tarafından belirledim
+
+1213
+01:38:22,659 --> 01:38:26,659
+sana iletilmesi için ekstradan bir vakit harcamak gerekebilir
+
+1214
+01:38:26,659 --> 01:38:31,659
+buraya kadar sorusu olan var mı sorusu olanlar varsa onları alabiliriz
+
+1215
+01:38:31,659 --> 01:38:38,430
+yok güzel
+
+1216
+01:38:38,430 --> 01:38:47,189
+şimdi network device'ları var biraz da bunlar üzerinde konuşalım bugün arkadaşlar
+
+1217
+01:38:47,189 --> 01:38:50,189
+bunlardan birisi repeater
+
+1218
+01:38:50,189 --> 01:38:56,189
+repeater ne demek tegramlayıcı bizim aslında hub dediğimiz şey
+
+1219
+01:38:56,189 --> 01:39:04,189
+temel olarak physical layer'da yani bu osi reference modelinin 7 katmandan oluşan katmanında
+
+1220
+01:39:04,189 --> 01:39:09,189
+physical layer kısmında kullanılıyor bu donunun birimi
+
+1221
+01:39:09,189 --> 01:39:24,189
+ve physical layer arkadaşlar repeater'larla beraber bizim gönderdiğimiz sinyalin daha da uzağa gidebilmesi için
+
+1222
+01:39:24,189 --> 01:39:28,189
+gücünü kaybedebiliyordu etoneasyon oluyordu biliyorsunuz
+
+1223
+01:39:28,189 --> 01:39:36,189
+tekrardan aynı sinyali aynı güçte hatta verebilmeyi sağlayan donanın birimleri hub diyoruz işte biz bunlara
+
+1224
+01:39:37,189 --> 01:39:45,189
+yani ben 100 metre ileriye maksimum gönderebiliyorum tek seferde ama göndermek istediğim yer 600 metre ileride
+
+1225
+01:39:45,189 --> 01:39:58,399
+işte arada kullandığım repeater'larla beraber verimi karşı tarafa daha uzağa gönderebiliyorum
+
+1226
+01:39:58,399 --> 01:40:04,399
+repeater'lar temelde bunun için kullanılıyor başka da herhangi bir amacı aslında temelde yok
+
+1227
+01:40:04,399 --> 01:40:10,399
+bir diğeri işte switch yapısı bridge diyoruz biz bunlara aynı zamanda
+
+1228
+01:40:10,399 --> 01:40:23,399
+şimdi switchler repeater olarak kullanılmakla birlikte data linked layer katmanının içerisinde bulunan
+
+1229
+01:40:23,399 --> 01:40:30,399
+işte mac protokolü LLC protokolleri gibi çeşitli protokollerin gerçekleştirilmesinde de görev alabiliyor
+
+1230
+01:40:30,399 --> 01:40:38,399
+üzerinden geçen çeşitli paketleri seçmeli bir şekilde ilgili yerlere yönlendirebiliyor veya filtreleyebiliyor
+
+1231
+01:40:38,399 --> 01:40:48,399
+bu tarz çeşitli nedenler ona işlevleri var bir yani bir switch'in içerisinde bir yazdım çalışıyor öyle söyleyeyim
+
+1232
+01:40:48,399 --> 01:40:54,399
+repeater öyle değil bakın repeater da ne beri alıyor hatalıysa da hatasızsa da gidipmesi gerekiyor
+
+1233
+01:40:55,399 --> 01:41:03,399
+aynı şekilde repeat ediyor pardon aynı şekilde repeat ediyor ama switch böyle değil
+
+1234
+01:41:03,399 --> 01:41:10,399
+switch içerisinde çeşitli kontrol yazılımları var ve bu kontrol yazılımları sayesinde paketleri
+
+1235
+01:41:10,399 --> 01:41:16,399
+seçmeli bir şekilde nereye gönderecek belki hangi router üzerinden iletiliyor olacak veya
+
+1236
+01:41:16,399 --> 01:41:24,399
+veya bölüşüm nasıl yani o paketin hangi router üzerinden nasıl gideceğini belirliyor
+
+1237
+01:41:24,399 --> 01:41:32,399
+routerlar ve bunlara yardımcı olabilecek çeşitli bilgiler falan routerlara gönderebiliyor
+
+1238
+01:41:32,399 --> 01:41:40,399
+bu tarz biraz daha repeater'a göre daha aktif bir elemandır switchler bir diğeri tabii router
+
+1239
+01:41:40,399 --> 01:41:48,399
+routerlar dediğimiz zaman artık network layer'a doğru geçiyoruz routerların temel yaptığı işlem şu
+
+1240
+01:41:48,399 --> 01:42:03,399
+kendisine bağlı olan diğer routerların diğer routerların içerisinde bulunan adres ve mesafe tablolarını ediniyor
+
+1241
+01:42:03,399 --> 01:42:12,399
+yani ne demek istiyoruz routing'e dair bir lookup table'ı var ve o lookup table sayesinde hangi
+
+1242
+01:42:12,399 --> 01:42:20,399
+rotalardan efektif bir şekilde gidilmesi gerektiğini kendisine bağlı olan diğer routerlarla veya
+
+1243
+01:42:20,399 --> 01:42:27,399
+device'larla paylaşmış oluyor routerların yaptığı temel işlev bu aslında network layer katmanında
+
+1244
+01:42:27,399 --> 01:42:35,399
+çalışıyor biraz daha yukarıya doğru bakın çıktıkça daha işin içerisine yazılım girmiş oldu
+
+1245
+01:42:35,399 --> 01:42:46,399
+bir rota hesaplama mesela gönderilen veri birbiriyle çakışmasın diye çeşitli ekstradan şeyler gerçekleştiriyor
+
+1246
+01:42:46,399 --> 01:42:57,399
+ne denir ona, yöntemler kullanıyor işte minimum spending tree'lerle nasıl en efektif rotayı belirlerim
+
+1247
+01:42:57,399 --> 01:43:05,399
+veya işte diğer routerlardan ya bak şu rota güzeldi çok iyi gönderdim 5 tane pakete ama 6. paket gitti gelmedi
+
+1248
+01:43:05,399 --> 01:43:10,399
+başına bir şey geldi orayı kullanmayalım diye mesela diğer routerları uyandırıyor falan
+
+1249
+01:43:10,399 --> 01:43:21,399
+yani paketlerin network içerisinde rotalarıyla ilgili her şey router device'ları üzerinden gerçekleştiriliyor
+
+1250
+01:43:21,399 --> 01:43:33,399
+bir diğeri de artık yazdığım katmanında olan şeyler bunlar GTW'ler yani çok farklı network mimarilerinden
+
+1251
+01:43:33,399 --> 01:43:41,399
+network protokollerinden birbirlerine veri göndermeyi sağlayan yapılar öyle söyleyelim
+
+1252
+01:43:41,399 --> 01:43:47,399
+yani ben bilmem ne tekniğinde gönderiyorum Macbook kullanıyorum sen Windows bilmem ne kullanıyorsun
+
+1253
+01:43:47,399 --> 01:43:54,399
+öbür adam Ubuntu kullanıyor herkes başka başka tekniklerle veri alıp veriyor işte bunu GTW'ler halletiyor
+
+1254
+01:43:54,399 --> 01:44:02,399
+senin aldığın mesajı gerekirse alıyor çeşitli şeylere dönüştürüyor header'ına kafasına göre değiştiriyor
+
+1255
+01:44:02,399 --> 01:44:08,399
+karşı tarafa o şekilde iletilmesini sağlayan yapılara da biz GTW'ler diyoruz
+
+1256
+01:44:08,399 --> 01:44:15,399
+tabi böyle olunca routerlardan da daha fazla içerisinde yazıdığım sal işlem barındırıyor
+
+1257
+01:44:15,399 --> 01:44:23,399
+evet bu günlük bu kadar arkadaşlar dersimizi noktalandırmış olalım sorusu olan varsa alabiliriz
+
+1258
+01:44:23,399 --> 01:44:29,399
+hem bu derste hem sınavla falan ilgili dersleri bu son dersimizde çünkü
+
+1259
+01:44:29,399 --> 01:44:37,399
+önümüzdeki hafta final haftası hepinize böylece geçmiş olsun dersi bitirdiğimiz için diyorum
+
+1260
+01:44:37,399 --> 01:44:40,399
+hocam son ödevin ne zaman vereceksiniz acaba?
+
+1261
+01:44:40,399 --> 01:44:42,399
+en yakın zamanda
+
+1262
+01:44:42,399 --> 01:44:45,399
+ödevin süresine kadar olur bunu merak ediyorum ben de
+
+1263
+01:44:45,399 --> 01:44:47,399
+final gününe kadar?
+
+1264
+01:44:47,399 --> 01:44:49,399
+tamam hocam sağ olun
+
+1265
+01:44:49,399 --> 01:44:55,130
+teşekkür ederim başka sorusu olan var mı?
+
+1266
+01:44:55,130 --> 01:44:59,130
+bugün anlattığımız şeylerle ilgili de olabilir tabi ki
+
+1267
+01:44:59,130 --> 01:45:01,130
+totalıma kaç soru olur?
+
+1268
+01:45:01,130 --> 01:45:03,130
+dönem boyu olan konular dahil olunca fazla olacak
+
+1269
+01:45:03,130 --> 01:45:05,130
+evet evet
+
+1270
+01:45:05,130 --> 01:45:09,130
+yani öyle 10 soru 15 soru olmaz biraz fazla olur arkadaşlar
+
+1271
+01:45:09,130 --> 01:45:13,130
+bunu söylemiş olalım ona göre yeterli süre veririz
+
+1272
+01:45:13,130 --> 01:45:18,130
+finallerde kamera konusu netleştiğinde netleşmedi arkadaşlar
+
+1273
+01:45:18,130 --> 01:45:22,130
+ama ne olur ne olmaz siz kameralarınız varmış gibi
+
+1274
+01:45:22,130 --> 01:45:25,130
+şey yapın cep telefonlarınızın kamerasını tekrar söylüyorum
+
+1275
+01:45:25,130 --> 01:45:29,130
+kamera olarak kullanabilmek kabiliyeti var bunu lütfen search edin
+
+1276
+01:45:29,130 --> 01:45:31,130
+ve bulun finalde
+
+1277
+01:45:31,130 --> 01:45:35,130
+olay ki böyle bir karar alındı finalden 3 saat önce
+
+1278
+01:45:35,130 --> 01:45:40,130
+buna şimdiden hazırlıklı olmanız sizin adınıza güzel olur
+
+1279
+01:45:40,130 --> 01:45:44,130
+evet başka sorusu olan var mı?
+
+1280
+01:45:44,130 --> 01:45:50,130
+hocam geçen haftaki yapılan sunumlardan sorumlusunuz demiştiniz ya
+
+1281
+01:45:50,130 --> 01:45:54,130
+o izlediğimiz videolar mı yoksa hani tüm oradaki konumlar mı?
+
+1282
+01:45:54,130 --> 01:45:58,130
+yani grupların konusunu mu araştırmamızı öğrenmemiz gerekiyor yoksa videolardan mı?
+
+1283
+01:45:58,130 --> 01:46:04,130
+videolardan sorumlusunuz yani geçen hafta anlatıldı o konular zaten
+
+1284
+01:46:04,130 --> 01:46:08,130
+bizim 8 tane konumuz vardı 8 konumuzun 8 de bir grup tarafından anlatıldı
+
+1285
+01:46:08,130 --> 01:46:13,130
+o konulardan evet sorumluyuz yani o videoları da izlememiz
+
+1286
+01:46:13,130 --> 01:46:15,130
+o da bir hafta öyle söyleyelim
+
+1287
+01:46:15,130 --> 01:46:18,130
+mesela işte x25'ten sorarız frame relay'den sorarız yani
+
+1288
+01:46:18,130 --> 01:46:22,130
+onu demek istiyorum açıkçası oralardan da soru gelir
+
+1289
+01:46:22,130 --> 01:46:26,699
+anladım hocam bir de Türkçe olacak değil mi sınav?
+
+1290
+01:46:26,699 --> 01:46:28,699
+sınav İngilizce olacak
+
+1291
+01:46:28,699 --> 01:46:30,699
+tamam teşekkürler
+
+1292
+01:46:30,699 --> 01:46:32,699
+ben teşekkür ederim başka sorusu olan
+
+1293
+01:46:32,699 --> 01:46:43,899
+evet o zaman arkadaşlar başka sorusu olan yoksa sizlere teşekkür ediyoruz
+
+1294
+01:46:43,899 --> 01:46:48,899
+böylece dönemde noktalandırmış olduk
+
+1295
+01:46:48,899 --> 01:46:55,899
+bir sonraki dönem tabi görünen o ki koronayla beraber hala daha uzaktan eğitime devam edeceğiz
+
+1296
+01:46:55,899 --> 01:46:57,899
+öyle anlaşılıyor
+
+1297
+01:46:57,899 --> 01:47:01,899
+bir sonraki dönem farklı derslerde belki karşılaşırız
+
+1298
+01:47:01,899 --> 01:47:05,899
+hepinize şimdiden final sınavlarınızda başarılar diliyorum
+
+1299
+01:47:05,899 --> 01:47:11,899
+en yakın zamanda 100-100'e her birinizle ayrı ayrı görüşme imkanımız olur inşallah
+
+1300
+01:47:11,899 --> 01:47:13,899
+kendinize iyi bakın sağlıcakla kalın
+
+1301
+01:47:13,899 --> 01:47:14,899
+kıymetli arkadaşlar
+
+1302
+01:47:14,899 --> 01:47:18,899
+hocam ulaşamıyorum ben size bir türlü bir sıkıntı yok değil mi?
+
+1303
+01:47:18,899 --> 01:47:22,899
+yani ulaştın bak çok çabuk çekildi
+
+1304
+01:47:23,899 --> 01:47:25,899
+hayır dersun bitmeli bekledim
+
+1305
+01:47:25,899 --> 01:47:27,899
+ders sırasında ulaşmadın hocam
+
+1306
+01:47:27,899 --> 01:47:29,899
+tamam evet
+
+1307
+01:47:29,899 --> 01:47:34,899
+yani bir sıkıntı yok bu aralar dönemini noktalandıracak çeşitli aktiviteler içerisindeyiz
+
+1308
+01:47:34,899 --> 01:47:37,899
+okey yaramaz bir şey yok herhangi bir şey yok
+
+1309
+01:47:39,899 --> 01:47:42,899
+sağ olasın sorduğun için Allah razı olsun [öğrenci] Bey
+
+1310
+01:47:42,899 --> 01:47:44,899
+gittik mi inşallah seninle
+
+1311
+01:47:44,899 --> 01:47:50,899
+işte onu diyorum ben yazıyorum bir türlü geri dönüş alamıyorum dedim acaba bir sıkıntı mı var?
+
+1312
+01:47:50,899 --> 01:47:54,899
+hocam bir sıkıntı varsa bana söyler dedin de o yüzden
+
+1313
+01:47:54,899 --> 01:47:56,899
+evet yani
+
+1314
+01:47:56,899 --> 01:47:58,899
+yoğun soracağım dedim sen
+
+1315
+01:47:58,899 --> 01:48:00,899
+yazmışsın ama ders sırasında yazmışsın
+
+1316
+01:48:00,899 --> 01:48:02,899
+telefona bakmamıştım ona şey yapayım tamam
+
+1317
+01:48:02,899 --> 01:48:04,899
+hele estağfurullah hocam
+
+1318
+01:48:04,899 --> 01:48:06,899
+kolay gelsin çok teşekkürler
+
+1319
+01:48:06,899 --> 01:48:10,899
+görüşürüz hayırlı günler kendinize iyi bakın
+
+1320
+01:48:10,899 --> 01:48:12,899
+görüşmek üzere hocam iyi günler
+
+1321
+01:48:12,899 --> 01:48:14,899
+görüşürüz arkadaşlar iyi günler
+

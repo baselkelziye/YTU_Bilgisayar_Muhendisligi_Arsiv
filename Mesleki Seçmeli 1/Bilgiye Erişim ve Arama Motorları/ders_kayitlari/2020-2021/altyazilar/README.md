@@ -17,13 +17,12 @@ Dersler 15 Ekim 2020 Perşembe günü başlamıştır. Ders haftada bir gün (Pe
 - `ders_10.srt`: 17 Aralık 2020 Perşembe
 - `ders_11.srt`: 24 Aralık 2020 Perşembe
 - `ders_12.srt`: 31 Aralık 2020 Perşembe
-- `ders_13`: 7 Ocak 2021 Perşembe (dönem projesi sunumları; yalnızca özeti vardır)
+- `ders_13.srt`: 7 Ocak 2021 Perşembe (dönem projesi sunumları; öğrenci adları maskelenmiştir)
 
 ## Eksik Kayıtlar
 
 - 1, 7 ve 8 numaralı ders kayıtları bu şubenin kayıt arşivinde bulunmamaktadır.
 - 29 Ekim 2020 resmî tatil olduğu için ders yapılmamıştır.
 - 17 ile 24 Aralık arasında anlatılan prestij metrikleri konusu kayıtlarda yer almamaktadır.
-- `ders_13` öğrenci proje sunumlarından oluştuğu ve öğrenci adları/numaraları içerdiği için altyazısı eklenmemiştir.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -1,0 +1,1972 @@
+1
+00:00:51,659 --> 00:01:55,319
+Evet arkadaşlar merhaba iyi günler diyelim günün ortasındayız bugün normalde ders yapmayacağım biliyorsunuz son uygulama saatimiz ama eğer hani ödev yani son ödevinizle alakalı soru var mıdır sormak istediğiniz bir şey olur mu diye bir yere de oturum başlatmak istedim şimdi şöyle ekran paylaşalım tamam birkaç dakika bekleyelim
+
+2
+00:01:55,319 --> 00:02:11,319
+Eğer varsa katılım artar mı bilmiyorum dediğim gibi zaten yeni bir konu işlemeyeceğim ya da ders anlatmayacağım ya da bir uygulama yapmayacağız değerlendirmeye katılacak falan herhangi bir şey yapmayacağız ama son ödevinizle alakalı belki sorunuz olur diye yine de buradayım
+
+3
+00:02:11,319 --> 00:02:54,229
+Evet bekliyoruz eğer varsa soru chatten de yazabilirsiniz Evet paylaşacağım çünkü okumadım dördüncü ödevim ikinci ödevim pardon bir tane okumadığım var hala bitiremedim bitsin okurum diyordum neyse o olmadan o zaman ben bugün bir eksel yapayım şimdiye kadar aldığınız notları en azından birleştireyim
+
+4
+00:02:54,229 --> 00:03:26,370
+O kolonuda soru işareti olarak açıklarım şimdi dersten dersin içinde bir 15 dakika falan bekleyelim ondan sonra ben de oturayım o işi yapayım yetiştirebilirsem gerçi araya başka yine şeyler giriyor fakülteden istenen bir sürü resmi iş var bu müdekle alakalı onlar çok el oyalıyor o yüzden kaldı ama şunu da silebiliriz tamam
+
+5
+00:03:26,370 --> 00:03:48,319
+Evet tamam dediğim gibi bugün şey yaparım nereden paylaşacağım ama onu düşünelim dersin duvarına numaralarla birlikte bir şey halinde pdf halinde koyarım her bir kolonda işte şeyler olacak şekilde ödev bir kuis bir falan filan gibi
+
+6
+00:03:48,319 --> 00:04:02,319
+Not aldığınız notları vize notlarını da yine koyarım zaten yüz iste gördüğünüz ama olsun yine de orada yer alsın arasında o şekilde şey yapalım notlarımızı açıklayalım
+
+7
+00:04:02,319 --> 00:04:10,319
+Evet yılbaşına kadar açıklamak istiyorduk yeni yıllık açıklamak istiyorduk bir türlü olmadı fırsat oluşmadı tamam
+
+8
+00:04:10,319 --> 00:05:02,040
+Tamam okey etkinden bir soru geldi f5 ile geri dönmeyi engellemişler kod sorusu ortada gelirse ciddi süre sıkıntısı yaşayacağız geri dönülebilir mi yapacaksınız sınavı dedi
+
+9
+00:05:02,040 --> 00:05:32,759
+Ne diyeyim dönerse senindir dönmezse hiç senin olmamıştır mı diyeyim şöyle aslında bakarsanız geri dönme değil bu problem soruların karışık sırada sorulması problemi anladığım kadarıyla kod sorusunu en sona bırakırsak herhalde bir sıkıntı olmaz diye düşünüyorum olur mu ki zaten şu andaki tasarımımda kod sorusu yine yani kod algoritma sorusu diyelim ona en sonunda yer alıyor
+
+10
+00:05:32,759 --> 00:05:59,279
+Evet karışık olmamasını söyleyeceğim yani ben hani birinci soruya ne koyduysam herkes birinci soruda onu görecek en azından şeyler kolay olur şu öde çözülen siteler var ya formatı geçen sınava benzeyecek yine aynı şekilde
+
+11
+00:05:59,279 --> 00:06:11,279
+Yani kuyuzlardan alıştığınız sınavdan alıştığınız bu şekilde soruları yazacağınız cevaplarını yazacağınız kısa cevaplarını belli formatlarda beklediğimiz şeyler olacak
+
+12
+00:06:11,279 --> 00:06:37,279
+Konu tabi ki yine baştan sona sorumlusunuz biliyorsunuz sonuçta bu final sınava ama tabi şunu göz önünde bulundurmanızı mutlaka tavsiye ederim dönem içinde pek çok değerlendirme yaptık yani aslında pek çok konu başlığını işlediğimiz üzerinde durduğumuz öğrendiğimiz konu başlıkların pek çoğunu bir şekilde değerlendirdik ama farkındaysanız bir yerden sonra değerlendirmedik
+
+13
+00:06:37,279 --> 00:06:57,279
+İşte bu string search'lerden sonra kaldık hani graflarla alakalı evet bir ödevimiz var daha proje gibi bir ödeviniz var fakat böyle onlarla ilgili öğrendiğimiz algoritmaları algoritmalarla ilgili düşüneceğimiz uygulamaları falan henüz daha değerlendirmedik
+
+14
+00:06:57,279 --> 00:07:23,279
+Bu da demek oluyor ki final sınavında büyük bir ihtimalle onlar çıkacaktır sonrasında da yine algoritmik düşünme ve şimdiye kadar gördüğünüz veri yapılarını kullanarak belki bileşkelerini kullanarak çözmeniz gereken bir algoritmik problemle de karşı karşıya kalacaksınız hani belli bir karmaşıklıkta belli bir karmaşıklık limitinde çözmeniz istenen soru olacaktır
+
+15
+00:07:23,279 --> 00:08:17,459
+Bugün slide'leri paylaşmayayım yarın paylaşayım olur mu yarınki dersin slide'leriyle birlikte paylaşalım part 2 olarak onu da not alalım yazdık yarınki dersin slide'leriyle birlikte yarınki güzellere gözden geçiririm o şekilde tamamlayıp yarın paylaşırız onları da ödevi yapmaya başlayan var mı bir bakalım
+
+16
+00:08:19,459 --> 00:08:35,500
+veri yapıları ödevler sınavlar proje ödevi gönderilenler şöyle bir bakayım
+
+17
+00:08:55,500 --> 00:09:33,259
+47 48 48 41 43 44 46 48 50 52 54 56 56 kişi ödevi açıp bakmış henüz yollayan yok onu görebiliyorum güzel şöyle kaydırayım yapılması beklenenleri şu arayı kapatamıyoruz tabi burada şunu ufaltabiliriz
+
+18
+00:09:33,259 --> 00:10:04,740
+Evet var mı başka soru Merhaba hocam Merhaba hocam ben ders hakkında değil de şimdi İstanbul'a geldim okula gelcem acaba Ali Gökhan Hoca falan okulda mı
+
+19
+00:10:04,740 --> 00:10:28,740
+Çoğunlukla değil yani hiçbirimiz çoğunlukla değiliz okulda sadece lojmanda olan hocalarımız doğal olarak hani sonuçta kampüsün içinde oldukları için bölümde daha fazla görülebiliyorlar bunun dışında ancak işimiz varsa ve orada bulunmamız gerekirse bulunuyoruz seyrek çalışma kuralları gereği
+
+20
+00:10:28,740 --> 00:10:34,740
+mail dışında ulaşma imkanımız var mı mail atıyorum çünkü dönüşü yok
+
+21
+00:10:34,740 --> 00:10:36,740
+Nereye atıyorsun maili
+
+22
+00:10:36,740 --> 00:10:49,740
+iki tane mail atıyorum iki tane mail adresi var hocam ikisine da atıyorum hemen şey yapıyorum hocam mail adreslerini biri gökhan et cereproz.io
+
+23
+00:10:49,740 --> 00:10:51,740
+tamam ona bakar
+
+24
+00:10:51,740 --> 00:10:54,740
+biri de gökhan yıldız.edu.tr
+
+25
+00:10:54,740 --> 00:11:00,740
+Yıldız'a biraz problemi var mail account ile alakalı ama cerebroz'a bakar
+
+26
+00:11:00,740 --> 00:11:06,740
+biraz acil diye ben denizli'den kalktım geldim de hocam şimdi okulda da yoksa
+
+27
+00:11:06,740 --> 00:11:08,740
+Ne oldu tez danışmanı mı arıyorsun
+
+28
+00:11:08,740 --> 00:11:10,740
+Yok hocam tez danışma değil okuldan atılıyor
+
+29
+00:11:10,740 --> 00:11:12,740
+Okuldan mı atılıyorsun
+
+30
+00:11:12,740 --> 00:11:20,740
+Ya ben şimdi proje ödevi verecekti proje ödevi vermeyince ben birinci vizede alarmı yanlış saate koydum nöbet çıkışıydım
+
+31
+00:11:20,740 --> 00:11:27,750
+Haa ses gitti bende ama
+
+32
+00:11:27,750 --> 00:11:34,419
+Ses gitti
+
+33
+00:11:34,419 --> 00:11:36,419
+Benim bağlantım koptu hocam sanırım
+
+34
+00:11:36,419 --> 00:11:44,519
+Haa şimdi geldi yine yok
+
+35
+00:11:44,519 --> 00:11:46,519
+Şu an gidiyor olması lazım hocam
+
+36
+00:11:46,519 --> 00:11:50,250
+Şimdi geldi
+
+37
+00:11:50,250 --> 00:11:53,659
+Bağlantım hiç istabiliyor hocam
+
+38
+00:11:53,659 --> 00:11:57,659
+Etkin projeyi açıklamayacağım soru varsa siz soracaksınız
+
+39
+00:11:57,659 --> 00:12:09,990
+[öğrenci]'nin sesini ben alamıyorum ama
+
+40
+00:12:09,990 --> 00:12:20,899
+Özetle [öğrenci] eğer duyuyorsan mail adresini kullanıyor cerebroz'u Gökhan Hoca oradan cevap verir
+
+41
+00:12:20,899 --> 00:12:26,899
+Bu aralar biraz yoğunluğu vardı bize de cevap vermedi bazı konularda merak etmeyin yalnız değilsiniz
+
+42
+00:12:26,899 --> 00:12:35,429
+Etkin bu arada sorunu sorabilirsin
+
+43
+00:12:35,429 --> 00:12:37,429
+Galiba yazıyorsun diye düşünüyorum
+
+44
+00:12:37,429 --> 00:12:46,440
+Hocam benim bağlantım geliyor da ben en son ben demeyiz hadi onu unuttum
+
+45
+00:12:46,440 --> 00:12:52,440
+Yok yani sana şey dedik son olarak Gökhan Hoca'nın bu aralar yoğunluğu vardı
+
+46
+00:12:52,440 --> 00:12:58,440
+O yüzden bize de aynı şekilde cevap dönmedi bazı konularda merak etme
+
+47
+00:12:58,440 --> 00:13:02,440
+Döner ama ne kadar acil döner şu anda bilmiyorum açıkçası
+
+48
+00:13:02,440 --> 00:13:06,440
+Ama cerebroz mailini kullanıyor
+
+49
+00:13:06,440 --> 00:13:17,860
+Yine [öğrenci] konuşuyor ama bana sesi gelmiyor
+
+50
+00:13:17,860 --> 00:13:28,899
+Evet şimdi o zaman dördünün ikisinde ne soruyoruz tam anlamamış Etkin birden başlayalım
+
+51
+00:13:28,899 --> 00:13:32,899
+Şimdi şöyle bir grafımız var daha doğrusu bir veri var
+
+52
+00:13:32,899 --> 00:13:35,899
+Twitter'da kim kimi takip ediyor verisi
+
+53
+00:13:35,899 --> 00:13:41,899
+Yani şu ID'li kişi şu ID'yi takip ediyor bu ID'yi bu ID'yi takip ediyor gördüğünüz gibi bu iki kişi de birbirini takip ediyormuş
+
+54
+00:13:41,899 --> 00:13:45,899
+Yani hem öyle hem böyle grafta bunlara çift yönlü bağlantı var
+
+55
+00:13:46,899 --> 00:13:55,899
+Bunu okumanızı istiyoruz CSV formatında verilen bu veriyi işte dosyadan okuyacak ve bunu bir komşuluk listesi veri yapısına
+
+56
+00:13:55,899 --> 00:13:59,899
+Yükleyerek saklayacak olan bir fonksiyon yazmanızı bekliyoruz
+
+57
+00:13:59,899 --> 00:14:04,899
+İki yani okumanızı ve bunu matriz değil de liste şeklinde yapmanızı istiyoruz
+
+58
+00:14:04,899 --> 00:14:12,899
+2 Temel metrikleri nedir bu işte mesela en çok bağlantısı olan 10 kullanıcı bu konuda mail soru da geldi tekrar açıklayayım
+
+59
+00:14:12,899 --> 00:14:20,899
+Şimdi normalen toplam bir düğüme giren ve çıkan bağlantıların toplamını saymanızı beklerim
+
+60
+00:14:20,899 --> 00:14:26,899
+Nedir hani hem en çok takip eden ve en çok takip edilenin maksimum olanı
+
+61
+00:14:26,899 --> 00:14:34,899
+Özetle giren çıkan toplamı kenar toplamı maksimum olan düğümleri
+
+62
+00:14:34,899 --> 00:14:37,899
+Düğümlerin ilk 10 tanesini bulmanızı bekliyorum
+
+63
+00:14:37,899 --> 00:14:39,899
+Bunları ayrı ayrı da tabii ki verebilirsiniz
+
+64
+00:14:39,899 --> 00:14:45,899
+Hem giren çıkan birlikte maksimum 10 hem en çok takip eden maksimum 10
+
+65
+00:14:45,899 --> 00:14:57,899
+Ne demek bu kendisinden en çok kenar çıkan maksimum 10 kullanıcı ve kendisine en çok kenar bağlanan yani en çok takip edilen en 10 kullanıcıyı da verebilirsiniz
+
+66
+00:14:57,899 --> 00:15:04,899
+Ve yine bütün bağlantıların ortalama değeri ve medyan değerini ortalama ve medyan hesabını biliyorsunuz
+
+67
+00:15:04,899 --> 00:15:07,899
+Bunları yaptığınızı bekliyorum
+
+68
+00:15:07,899 --> 00:15:20,250
+Facebook mantığı takip evet ayrı yönlü bir graf var burada tamam mı zaten burada söylemedim mi
+
+69
+00:15:20,250 --> 00:15:25,250
+Yönlü graf olduğunu söylememiştim ama yani buradan yönlü graf olduğu belli
+
+70
+00:15:25,250 --> 00:15:31,250
+Yani ben takip ederim kimse beni takip etmiyor olabilir ya da herkes beni takip ediyordur
+
+71
+00:15:31,250 --> 00:15:34,250
+Benim ben kimseyi takip etmiyorumdur bu da olabilir
+
+72
+00:15:34,250 --> 00:15:49,250
+Facebook mantığını bilmiyorum ama takip etmek ve takip edilmek evet ayrı bağlantılar olarak ayrı yönlü kenarlar olarak kullanılması gerekir doğal olarak
+
+73
+00:15:49,250 --> 00:15:56,250
+Tamam tüm bağlantı sayılarını bildikten sonra ortalamalarını ve medyanını şey yapabilirsiniz
+
+74
+00:15:56,250 --> 00:16:00,250
+Yine burada giren çıkan bağlantı şeklinde bunları yapabilirsiniz
+
+75
+00:16:00,250 --> 00:16:10,250
+En kısa yollar Dykstra'yı bu hafta yani yarın göreceğiz zaten gördükten sonra bu üçüncü adıma geçebilirsiniz mesela
+
+76
+00:16:10,250 --> 00:16:13,250
+Yani yarın akşamdan itibaren bu adımı da gerçekleştirebilirsiniz
+
+77
+00:16:13,250 --> 00:16:23,250
+Tüm düğüm çiftleri arasındaki en kısa yolları hesaplayan bildiğiniz Dykstra'yı bütün notlar arasındaki shortest petleri bulacak şekilde çalıştırmanızı istiyorum
+
+78
+00:16:24,250 --> 00:16:33,250
+Sonrasında da dördüncü maddeye geliyoruz Burası zaten biraz daha böyle işin bir hesap yapılması gereken kısmı
+
+79
+00:16:33,250 --> 00:16:40,250
+Şimdi biz özellikle sosyal analizi yaparken ne yaparız işte bir kanaat önderi falan belirlemeye çalışırız
+
+80
+00:16:40,250 --> 00:16:46,250
+Yani böyle hani önemli düğümleri önemli kişileri bulmaya ortaya çıkartmaya çalışırız
+
+81
+00:16:46,250 --> 00:16:56,250
+Bunun için kullanılan bazı metrikler var bunlardan en böyle bilineni ya da basit hızlı hesaplanabilecek olanı centrality yani merkeziyet olarak Türkçe'ye çevirdim
+
+82
+00:16:56,250 --> 00:17:05,250
+Bu ölçüttür bu metriktir şimdi bunun için de tabi ki centrality hesaplamak için de farklı yaklaşımlar var
+
+83
+00:17:05,250 --> 00:17:17,250
+Ama bitwinnes centrality measure dediğimiz yani bir arada bulunma pardon arada bulunma ölçütü yani bir kişi kaç kişinin arasında bulunur ölçütünü hesaplayabilirsiniz
+
+84
+00:17:17,250 --> 00:17:27,250
+Yine internette bilgi var zaten bitwinnes centrality aradığınızda bulursunuz basit bir pseudo kod paylaşmasam da olur ama yine de paylaşmak istedim
+
+85
+00:17:27,250 --> 00:17:35,250
+Bütün düğüm çiftleri için aralarındaki en kısa yolları hesaplamalısınız zaten bunu 3. adımda da yapacaksınız
+
+86
+00:17:35,250 --> 00:17:46,250
+Sonrasında tüm D1 D2 düğüm çiftleri için bu arada olması beklenen D düğümünü içeren en kısa yolların oranını hesaplayacaksınız
+
+87
+00:17:46,250 --> 00:18:03,250
+Ne demek bu şudur mesela D1 ile D2 düğüm çiftinde işte arada şu en kısa yollar var ama bu en kısa yolların içinde en kısa yolların içinde aradığım bir düğüm mesela 5 tanesinde var
+
+88
+00:18:03,250 --> 00:18:09,250
+Toplamda 8 yol vardı 5'inde bu D düğümü geçiyor ne oldu 5 bölü 8 oranına sahip oldu
+
+89
+00:18:09,250 --> 00:18:17,250
+D1 D2 düğüm çiftlerinin tümünde bu oranları bulup topladığınızda eminim ki algoritmasını zaten çoğunuz bulmuştur
+
+90
+00:18:17,250 --> 00:18:29,250
+Toplayarak da D düğümü için toplam merkeziyet oranı nedir hani bütün çiftleri düşündüğünüzdeki merkeziyet oranı nedir bunu hesaplamış olabilirsiniz
+
+91
+00:18:30,250 --> 00:18:45,250
+Umarım anlatabildim yani siz kaç tane en kısa yol içinde yer alıyorsunuz Aslında bu yani toplamda grafınızda kaç tane en kısa yol vardı ve siz bir düğüm olarak bu yolların kaçında varsınız
+
+92
+00:18:45,250 --> 00:18:58,250
+İşte bu sizin betweenness centrality measure'ınızı verecektir Kaç düğüm varsa doğal olarak o kadar betweenness hesaplamanız gerekecek neden hepsini şey yapacaksınız
+
+93
+00:18:58,250 --> 00:19:12,250
+Sıralayıp en önemli yani merkeziyeti en yüksek olan 10 kullanıcıyı ve oranlarıyla birlikte işte 0.000 gibi oranlarıyla, önem değerleriyle birlikte listelemenizi istiyoruz
+
+94
+00:19:12,250 --> 00:19:34,250
+Yani shortest path'i yaptıktan sonra bir adım daha gidip acaba bir düğüm kaç tane shortest path'e geçiyor diye de hesaplayıp sonra da bunları oranlayacaksınız toplam shortest path'e göre ve maksimum 10 kullanıcı kimse, en çok arada yer alan 10 kullanıcı kimse bunlar bizim için önemli değerli kullanıcılardır diyerek raporlayacaksınız
+
+95
+00:19:34,250 --> 00:20:07,089
+Bu bir de dördün ikisi nerede onu anlamadım ama şunu mu diyorsun acaba bu şey bu birlikte yani şöyle şu kadar düşünün dediğim gibi bütün en kısa yolları zaten hesapladınız ondan sonra her bir düğüm kaç tane kısa yolda var olay bu her bir düğüm için her bir D düğümü için bu oranları bulup maksimum 10 tanesini hesaplayacaksınız
+
+96
+00:20:07,089 --> 00:20:24,089
+Ayrıca 10 tanesini hesapladığınız gibi düşünebilirsiniz ne vereceksiniz yine klasik kodlarınızı vereceksiniz bir de rapor yazmanız lazım işte bu dört tane adımda neler yaptınız ne sonuçlar ne çıktılar aldınız bunları düzgün bir dille açıklayan bir rapor hazırlayacaksınız
+
+97
+00:20:24,089 --> 00:20:53,089
+O da PDF şeklinde yapabilirsiniz son teslim 14 Ocak öğlene kadar bu 12 çift sıfırı koymuyorum çünkü neden koymadığımı söyleyeyim sistem bize öyle bir saat ayarı ekranı açıyor ki AM ve PM şeklinde yazmanız gerekiyor şimdi 12 AM yazsam 12 AM gece yarısı galiba 12 PM mi yoksa gece yarısı ve o 12 çok şey ya sıkıntılı o yüzden 11.59 AM diye yazdım sıkıntı olmasın
+
+98
+00:20:53,089 --> 00:21:03,089
+Şimdi 12 PM deyince belki günün başında keser bir şey olur neme lazım hani o yüzden şu şekilde garantili 11.59 şeklinde bıraktım
+
+99
+00:21:03,089 --> 00:21:22,089
+Evet bu da toplam 30 puan değerinde bir ödev her bir adımın işte bu 3 puan bu 4 puan bu 3 puan şurası 7 puan şurası da 13 puan olacak şekilde toplam not değerini hesaplayacağız ve 30 puan daha toplamış olacağız şimdiye kadar 70 puan toplamışız
+
+100
+00:21:22,089 --> 00:21:46,089
+30 da buradan gelecek ve 100 puan üzerinden bunun da yüzde 40'ını alacağız biliyorsunuz bütün ödevleri full yaptıysanız 40 puan cepte olacak bütün ödevleri yarısını yani bütün her şeyden 50 puan topladıysanız da artı olarak halinize işte ne yazılacak 20 puan mı yazılıyor evet 20 puan yazılacak
+
+101
+00:21:46,089 --> 00:22:02,089
+Tamam şimdi [öğrenci]'yi okuyalım kimsenin istediği bağlı bir proje ve onu şimdi ben başka dersi başka hocayı burada tartışacak değiliz tabii ki baştan beri proje olacak şekilde konuştu
+
+102
+00:22:02,089 --> 00:22:18,089
+Evet okey yani şey tamam yani mailine [öğrenci]'nin mailine bakın hocam diye şey yapmaya çalışırım ulaşmaya çalışırım kendisine
+
+103
+00:22:18,089 --> 00:22:33,059
+Peki arkadaşlar şey olduk bizde burada merkeziyet şeyi hesaplayacaksınız kaç tane en kısa yolda ben varım diye hesap yapacaksınız grafa beni de ekleyeceksiniz ödeve
+
+104
+00:22:33,059 --> 00:22:53,809
+Peki o zaman bunu stop edelim sorunuz yoksa bugünlük bu kadar yeterli olacaktır
+
+105
+00:22:53,809 --> 00:23:17,099
+Peki o zaman yarın son teorik dersimizle dönemi kapatmak üzere birlikte olacağız ne kalmıştı geçen haftadan yılbaşı diye erken kapattık biliyorsunuz dükkanı prim minimum spanning tree algoritması kalmıştı
+
+106
+00:23:17,099 --> 00:23:33,099
+Kuru skalı tekrar bir hızlıca hatırlarız ondan sonra prim algoritmasının üzerinden geçerek nasıl çalıştığını farklarına bakarak anlamaya öğrenmeyi gayret ederiz son olarak da en kısa yol nedir en kısa yol problemi nedir
+
+107
+00:23:33,099 --> 00:23:55,099
+En kısa yol problemi nasıl çözülür Dykstra'nın yöntemi temel olarak kullandığımız özellikle single source shortest petlerde kullandığımız yöntem nedir nasıl çalışır yine analiziyle birlikte inceleriz ve bu şekilde de bu dönemki konularımızı tamamlamış sonuna gelmiş oluruz
+
+108
+00:23:55,099 --> 00:24:18,609
+Okulda olma ihtimalini göz önüne alarak bence gelme yani bildiğim kadarıyla okulda değil ben mesela dün okuldaydım şu anda Gökhan hocanın bugün en azından okulda olmadığını en şekilde yarın da olmayacağını garanti edebiliriz
+
+109
+00:24:18,609 --> 00:24:36,690
+Ben yine mikrofonumu açıp deneyeyim hocam telefonu zırt zırt kopuyor ama yani şansımı denemek için geldim de benim de yarın tekrar nöbetim var geri dönmek zorundayım Denizli'ye en azından ben şansımı denemiş oldum
+
+110
+00:24:36,690 --> 00:24:38,690
+Bölüme gittin mi bugün sen peki
+
+111
+00:24:38,690 --> 00:24:50,690
+Yok gidemedim hocam daha şu an Marmara'dayım ben buranın mezunuyum Marmara'nın burada işim vardı gelirken onu da aradan çıkarayım dedim önce buraya geldim
+
+112
+00:24:50,690 --> 00:24:52,690
+Anladım
+
+113
+00:24:52,690 --> 00:25:02,690
+Ok yani dediğim gibi okulda birisini bulma ihtimalin çok zor bulmak için de önceden randevulaşman lazım randevu olmadan zor
+
+114
+00:25:02,690 --> 00:25:06,690
+Tamam mail de şey yapmak en iyisi
+
+115
+00:25:06,690 --> 00:25:08,690
+Çok sağ ol hocam
+
+116
+00:25:08,690 --> 00:25:10,690
+Rica ederim
+
+117
+00:25:10,690 --> 00:25:12,690
+Dersi yok mu Gökhan hocanın
+
+118
+00:25:12,690 --> 00:25:15,690
+Yok hocam bitti haftaya final
+
+119
+00:25:15,690 --> 00:25:18,690
+Keşke son derste gireydin de konuşaydın
+
+120
+00:25:18,690 --> 00:25:24,690
+Girdim hocam da sağolsunlar iki kişi oldukları için bir söz biraz biz konuşalım deyip
+
+121
+00:25:24,690 --> 00:25:26,690
+Tamam okey o zaman yapacak bir şey yok
+
+122
+00:25:26,690 --> 00:25:28,690
+Peki
+
+123
+00:25:28,690 --> 00:25:30,690
+Tamam ben derdimi anlatamadım
+
+124
+00:25:30,690 --> 00:25:32,690
+Ben de dert duvarı olarak bana anlattınız
+
+125
+00:25:32,690 --> 00:25:34,690
+Evet hocam kusura bakmayın
+
+126
+00:25:34,690 --> 00:25:36,690
+Tamam rica ederim
+
+127
+00:25:36,690 --> 00:25:38,690
+Hocam ben de Rize'yi sorabilir miyim aklınız varsa
+
+128
+00:25:38,690 --> 00:25:40,690
+Sor bakalım
+
+129
+00:25:40,690 --> 00:25:42,690
+Hocam ben Rize'nin okunuyor
+
+130
+00:25:42,690 --> 00:25:44,690
+Şimdi biraz küçük oldu da ben
+
+131
+00:25:44,690 --> 00:25:46,690
+Yıl sonu
+
+132
+00:25:46,690 --> 00:25:48,690
+Fatihlerinizi
+
+133
+00:25:48,690 --> 00:25:50,690
+Daha sakın ekik mail atmadım ya size şimdi sorayım dedim
+
+134
+00:25:50,690 --> 00:25:52,690
+Acaba mümkünse
+
+135
+00:25:52,690 --> 00:25:54,690
+Hangi sorudan ne kadar puan aldım
+
+136
+00:25:54,690 --> 00:25:56,690
+Öğrenebilir miyim yani o
+
+137
+00:25:56,690 --> 00:25:58,690
+Bir tane klasiği yapmadım onu biliyorum
+
+138
+00:25:58,690 --> 00:26:00,690
+Ortada kalmışsın
+
+139
+00:26:00,690 --> 00:26:02,690
+Ama diğer klasiği arkadaşların birisi sorunca
+
+140
+00:26:02,690 --> 00:26:04,690
+Hani iki tane konucu oluyor ya
+
+141
+00:26:04,690 --> 00:26:06,690
+Bir iki iki ile erliyor bir tek tek
+
+142
+00:26:06,690 --> 00:26:08,690
+Ben de öyle yapmıştım siz de o doğru diyince
+
+143
+00:26:08,690 --> 00:26:10,690
+Ben daha yüksek bekliyordum
+
+144
+00:26:10,690 --> 00:26:12,690
+Bir bulayım seni numara kaçtı
+
+145
+00:26:12,690 --> 00:26:17,089
+Numaranı söyleyebilir misin
+
+146
+00:26:17,089 --> 00:26:25,460
+Söyleyemez misin
+
+147
+00:26:25,460 --> 00:26:27,460
+Neyse buldum tamam isim
+
+148
+00:26:27,460 --> 00:26:29,460
+Isim sırasında değil numara sırasında olduğu için
+
+149
+00:26:29,460 --> 00:26:31,460
+Şimdi
+
+150
+00:26:31,460 --> 00:26:36,910
+Şimdi bu şey
+
+151
+00:26:36,910 --> 00:26:38,910
+Kod soru daha doğrusu
+
+152
+00:26:38,910 --> 00:26:40,910
+Harmaşıklık analizi sorularından
+
+153
+00:26:40,910 --> 00:26:42,910
+Bir tanesini
+
+154
+00:26:42,910 --> 00:26:44,910
+Doğru yapmışsın
+
+155
+00:26:44,910 --> 00:26:46,910
+Efendim
+
+156
+00:26:47,910 --> 00:26:49,910
+Sesinizi de alamıyorum
+
+157
+00:26:50,910 --> 00:26:52,910
+Geliyor mu sesim
+
+158
+00:26:52,910 --> 00:26:58,500
+Gençler
+
+159
+00:26:58,500 --> 00:27:00,500
+Beni duyan var mı
+
+160
+00:27:00,500 --> 00:27:02,500
+Geliyor hocam
+
+161
+00:27:02,500 --> 00:27:04,500
+Tamam
+
+162
+00:27:04,500 --> 00:27:06,500
+Bir sıkıntı yok
+
+163
+00:27:06,500 --> 00:27:08,500
+O zaman
+
+164
+00:27:08,500 --> 00:27:10,500
+Tekrar ediyorum
+
+165
+00:27:10,500 --> 00:27:12,500
+Harmaşıklık analizi sorularından bir tanesi tamam
+
+166
+00:27:12,500 --> 00:27:14,500
+İkincisi yanlış
+
+167
+00:27:14,500 --> 00:27:16,500
+Üçüncüsü doğru
+
+168
+00:27:16,500 --> 00:27:18,500
+Diğeri aşağılarda kalmış
+
+169
+00:27:18,500 --> 00:27:20,500
+O da doğru
+
+170
+00:27:20,500 --> 00:27:22,500
+Buradan
+
+171
+00:27:22,500 --> 00:27:24,500
+Kaç almışsın
+
+172
+00:27:24,500 --> 00:27:26,500
+Zaten sistem topluyor
+
+173
+00:27:26,500 --> 00:27:28,500
+2 0 3 ve
+
+174
+00:27:28,500 --> 00:27:30,500
+2 almışsın
+
+175
+00:27:30,500 --> 00:27:32,500
+Yani 3 puanlık soruyu yapamamışsın
+
+176
+00:27:32,500 --> 00:27:34,500
+Orada işte 10 üzerinden
+
+177
+00:27:34,500 --> 00:27:36,500
+7 almış oluyorsun
+
+178
+00:27:38,500 --> 00:27:40,500
+Stake'deki push pop sıraları
+
+179
+00:27:40,500 --> 00:27:42,500
+Tamam
+
+180
+00:27:42,500 --> 00:27:44,500
+Doğru ikiliği bulmuşsun
+
+181
+00:27:44,500 --> 00:27:46,500
+10 puan üzerinden 10 almışsın
+
+182
+00:27:46,500 --> 00:27:48,500
+35 puanlık soru yok
+
+183
+00:27:50,500 --> 00:27:52,500
+Diğerinde
+
+184
+00:27:52,500 --> 00:27:54,500
+15 puanlık
+
+185
+00:27:54,500 --> 00:27:56,500
+Şu linkli liste sorusundan 5 puan almışsın
+
+186
+00:27:56,500 --> 00:27:58,500
+Sebebine
+
+187
+00:27:58,500 --> 00:28:03,380
+Bakayım
+
+188
+00:28:03,380 --> 00:28:05,380
+Bir dakika bunu büyütmem lazım
+
+189
+00:28:05,380 --> 00:28:07,380
+Masanın üzerinde fotoğraf
+
+190
+00:28:07,380 --> 00:28:09,380
+Bakıyorum
+
+191
+00:28:11,380 --> 00:28:13,380
+Şöyle first
+
+192
+00:28:13,380 --> 00:28:16,849
+Last
+
+193
+00:28:16,849 --> 00:28:18,849
+Birinci tanımladım
+
+194
+00:28:18,849 --> 00:28:22,670
+Biri 2 2 atlıyor biri 3 3
+
+195
+00:28:22,670 --> 00:28:24,670
+Şimdi burada
+
+196
+00:28:24,670 --> 00:28:26,670
+Ne var last
+
+197
+00:28:28,670 --> 00:28:30,670
+Önce bir head truysa demişsin
+
+198
+00:28:30,670 --> 00:28:32,670
+Ondan sonra
+
+199
+00:28:32,670 --> 00:28:34,670
+Bir daha first truysa demişsin
+
+200
+00:28:34,670 --> 00:28:38,559
+Ondan sonra
+
+201
+00:28:38,559 --> 00:28:40,559
+Last'ın next'i
+
+202
+00:28:40,559 --> 00:28:44,930
+Burada bir şey
+
+203
+00:28:44,930 --> 00:28:46,930
+Göremiyor muyum ben
+
+204
+00:28:46,930 --> 00:28:48,930
+Bu buraya bağlanıyor
+
+205
+00:28:48,930 --> 00:28:50,930
+Ha bu
+
+206
+00:28:50,930 --> 00:28:52,930
+Ha bu döngü mü bu
+
+207
+00:28:52,930 --> 00:28:56,210
+Çok
+
+208
+00:28:56,210 --> 00:28:58,210
+Çok şey çizmişsin ya
+
+209
+00:28:58,210 --> 00:29:00,210
+Stresli evet
+
+210
+00:29:00,210 --> 00:29:02,210
+Kötü çizmiş olabilir
+
+211
+00:29:02,210 --> 00:29:04,210
+Döngü gibi değil bu bildiğin
+
+212
+00:29:04,210 --> 00:29:06,210
+Tru çıkmışsın oradan ben onu iki tane
+
+213
+00:29:06,210 --> 00:29:08,210
+If şeklinde sadece döngü dönmüyor
+
+214
+00:29:08,210 --> 00:29:10,210
+Bir kontrol
+
+215
+00:29:10,210 --> 00:29:12,210
+Yapıp bırakıyorsun diye
+
+216
+00:29:12,210 --> 00:29:15,490
+5 puan vermişim
+
+217
+00:29:15,490 --> 00:29:17,490
+İki tane döngü koydum
+
+218
+00:29:17,490 --> 00:29:19,490
+İki döngü nerede
+
+219
+00:29:19,490 --> 00:29:21,490
+Tek döngü nerede burada tek döngü var
+
+220
+00:29:21,490 --> 00:29:23,490
+Yok ya iki tane var
+
+221
+00:29:23,490 --> 00:29:25,490
+Yani iki tane wild koydum aslında
+
+222
+00:29:25,490 --> 00:29:28,960
+Ekran paylaşacağım
+
+223
+00:29:28,960 --> 00:29:37,259
+Evet
+
+224
+00:29:37,259 --> 00:29:39,259
+Bana hangi döngü
+
+225
+00:29:39,259 --> 00:29:41,259
+Nerede tarif eder misin
+
+226
+00:29:41,259 --> 00:29:47,009
+Şu şey aslında first olunca
+
+227
+00:29:47,009 --> 00:29:49,009
+Yani first gitmeyene kadar
+
+228
+00:29:49,009 --> 00:29:51,009
+Devam ediyor
+
+229
+00:29:51,009 --> 00:29:53,009
+Bu döngü mü
+
+230
+00:29:53,009 --> 00:29:55,009
+Yani wild şeklinde çizmişim
+
+231
+00:29:55,009 --> 00:29:57,009
+Bu ne
+
+232
+00:29:57,009 --> 00:29:59,009
+Bu da mı döngü
+
+233
+00:29:59,009 --> 00:30:01,009
+Nal olmayana kadar devam ediyor
+
+234
+00:30:01,009 --> 00:30:03,009
+Ama bu nereye bağlanıyor buraya bağlanıyor
+
+235
+00:30:03,009 --> 00:30:05,009
+Evet
+
+236
+00:30:05,009 --> 00:30:07,009
+Nasıl bir döngü bu
+
+237
+00:30:07,009 --> 00:30:10,859
+Yani bunu
+
+238
+00:30:10,859 --> 00:30:12,859
+Kod diyebilirsen helal olsun
+
+239
+00:30:12,859 --> 00:30:14,859
+Biraz stresli
+
+240
+00:30:14,859 --> 00:30:16,859
+Kötü çizmişim galiba
+
+241
+00:30:16,859 --> 00:30:18,859
+Ama sonu anlatmak istedim yani
+
+242
+00:30:18,859 --> 00:30:20,859
+Nal olmayana kadar
+
+243
+00:30:20,859 --> 00:30:22,859
+Sonra ikinci koyuncamın neksi de nal olmayana kadar
+
+244
+00:30:22,859 --> 00:30:24,859
+Bir iki iki bir iki tek tek atlıyor
+
+245
+00:30:24,859 --> 00:30:26,859
+Anladım
+
+246
+00:30:26,859 --> 00:30:28,859
+Peki güzel fikir ama
+
+247
+00:30:28,859 --> 00:30:30,859
+İşte
+
+248
+00:30:30,859 --> 00:30:32,859
+Sonuçta burada döngülerde bir sıkıntı var
+
+249
+00:30:32,859 --> 00:30:34,859
+Yani bu dönmüyor
+
+250
+00:30:34,859 --> 00:30:36,859
+Çünkü bak hani buna döngü desek bu döngü değil
+
+251
+00:30:36,859 --> 00:30:38,859
+Bu zaten for
+
+252
+00:30:38,859 --> 00:30:40,859
+Bu forun da truesunda böyleysen
+
+253
+00:30:40,859 --> 00:30:42,859
+Burada anladığım kadarıyla break edip çıkıyorsun
+
+254
+00:30:42,859 --> 00:30:44,859
+Gibi anlaşılıyor
+
+255
+00:30:44,859 --> 00:30:46,859
+Yani yok nal olunca
+
+256
+00:30:46,859 --> 00:30:48,859
+Her birisi
+
+257
+00:30:48,859 --> 00:30:50,859
+Ondaki o zaman çıkıyor
+
+258
+00:30:50,859 --> 00:30:52,859
+Aslında ki o
+
+259
+00:30:52,859 --> 00:30:54,859
+Neyse yani sonuçta
+
+260
+00:30:54,859 --> 00:30:56,859
+Nihayetinde bir karmaşa var burada
+
+261
+00:30:56,859 --> 00:30:58,859
+Okey
+
+262
+00:30:58,859 --> 00:31:00,859
+Bunu şey yaptık
+
+263
+00:31:00,859 --> 00:31:02,859
+Ondan sonra
+
+264
+00:31:02,859 --> 00:31:04,859
+Şeyi kaybettim
+
+265
+00:31:04,859 --> 00:31:06,859
+Başka sıralama sorusunun
+
+266
+00:31:06,859 --> 00:31:08,859
+Doğru 10 puan
+
+267
+00:31:08,859 --> 00:31:10,859
+Binary heap de
+
+268
+00:31:10,859 --> 00:31:12,859
+Şeyi yanlış yapmışsın
+
+269
+00:31:12,859 --> 00:31:14,859
+Çok alakasız bir şey yazmışsın
+
+270
+00:31:14,859 --> 00:31:16,859
+Hatta tümleyenini
+
+271
+00:31:16,859 --> 00:31:18,859
+Yazmışsın sen galiba
+
+272
+00:31:18,859 --> 00:31:20,859
+Evet ben her ikisini de kastatmışım
+
+273
+00:31:20,859 --> 00:31:22,859
+O yüzden öyle yazdım
+
+274
+00:31:22,859 --> 00:31:24,859
+Olmamış
+
+275
+00:31:24,859 --> 00:31:26,859
+Tamam ternary heap yapısını
+
+276
+00:31:26,859 --> 00:31:28,859
+Doğru yapmışsın oradan da 10 puan almışsın
+
+277
+00:31:28,859 --> 00:31:30,859
+Toplam not neydi senin
+
+278
+00:31:30,859 --> 00:31:32,859
+Burada şeyi ancak Excel'de
+
+279
+00:31:32,859 --> 00:31:34,859
+Görebiliyorum
+
+280
+00:31:34,859 --> 00:31:36,859
+Ben o şey hani
+
+281
+00:31:36,859 --> 00:31:38,859
+Çizdiğimi doğru düşünüyordum ya
+
+282
+00:31:38,859 --> 00:31:40,859
+Arkadaşlarım beni söyledi 2-2 atıyor 1-1 atıyor diye
+
+283
+00:31:40,859 --> 00:31:42,859
+Ben o kafayla onu da
+
+284
+00:31:42,859 --> 00:31:44,859
+Doğru yapmışım onun
+
+285
+00:31:44,859 --> 00:31:46,859
+Sana niye anladığını düşünüyorum o yüzden
+
+286
+00:31:46,859 --> 00:31:48,859
+Yani sonuçta şey akış diagramı
+
+287
+00:31:48,859 --> 00:31:50,859
+Hatalı ona rağmen hani
+
+288
+00:31:50,859 --> 00:31:52,859
+2-2 gitme var diye en azından
+
+289
+00:31:52,859 --> 00:31:54,859
+Bir düşünce var diye 5 puan almışsın
+
+290
+00:31:54,859 --> 00:31:56,859
+Teşekkür ederim
+
+291
+00:31:56,859 --> 00:32:01,329
+Rica ederim
+
+292
+00:32:01,329 --> 00:32:03,329
+Yok hayır göstermiyorsun
+
+293
+00:32:03,329 --> 00:32:05,329
+Ben göstersem
+
+294
+00:32:05,329 --> 00:32:07,329
+Neler şey olur
+
+295
+00:32:07,329 --> 00:32:09,329
+Çıkar
+
+296
+00:32:09,329 --> 00:32:11,329
+Ne akışlar gördüm öyle söyleyeyim
+
+297
+00:32:11,329 --> 00:32:13,329
+Aslında akmıyorlardı
+
+298
+00:32:13,329 --> 00:32:15,329
+Dördüncü istenen de
+
+299
+00:32:15,329 --> 00:32:17,329
+D1 D2
+
+300
+00:32:17,329 --> 00:32:19,329
+Düğümlerinden bir
+
+301
+00:32:19,329 --> 00:32:21,329
+Ha
+
+302
+00:32:21,329 --> 00:32:23,329
+Şöyle şimdi
+
+303
+00:32:23,329 --> 00:32:25,329
+Şimdi
+
+304
+00:32:25,329 --> 00:32:27,329
+Between us mejir olarak
+
+305
+00:32:27,329 --> 00:32:29,329
+Eğer sen hiç kimseyi takip
+
+306
+00:32:29,329 --> 00:32:31,329
+Etmiyorsan ve hiç kimsede seni
+
+307
+00:32:31,329 --> 00:32:33,329
+Takip etmiyorsa o zaman
+
+308
+00:32:33,329 --> 00:32:35,329
+Sıfır çıkar
+
+309
+00:32:35,329 --> 00:32:37,329
+Ama en azından bir şeyin varsa
+
+310
+00:32:37,329 --> 00:32:39,329
+Bir bağlantın varsa o zaman
+
+311
+00:32:39,329 --> 00:32:41,329
+D1 ya da D2 düğümünden bir tanesinin
+
+312
+00:32:41,329 --> 00:32:43,329
+D düğümü olması
+
+313
+00:32:43,329 --> 00:32:45,329
+Söylenebilir
+
+314
+00:32:45,329 --> 00:32:47,329
+Fakat biz normalde
+
+315
+00:32:47,329 --> 00:32:49,329
+D düğümü için değil de D düğümünün
+
+316
+00:32:49,329 --> 00:32:51,329
+Arada oldukları için söylüyoruz evet
+
+317
+00:32:51,329 --> 00:32:53,329
+Yaparken D1 ya da D2'nin
+
+318
+00:32:53,329 --> 00:32:55,329
+Büyük D düğümü olmamasını tercih
+
+319
+00:32:55,329 --> 00:33:02,609
+Ederdim [öğrenci]
+
+320
+00:33:02,609 --> 00:33:12,000
+Tamam tabi bir
+
+321
+00:33:12,000 --> 00:33:15,599
+Düşünüyorum
+
+322
+00:33:15,599 --> 00:33:17,599
+Evet herhangi bir en
+
+323
+00:33:17,599 --> 00:33:19,599
+Kısa yolda bulunmayan bir düğüm
+
+324
+00:33:19,599 --> 00:33:21,599
+Olabilir mi olabilir doğru olabilir
+
+325
+00:33:21,599 --> 00:33:23,599
+Sıfır çıkabilir yani
+
+326
+00:33:23,599 --> 00:33:27,650
+Evet rica ederim
+
+327
+00:33:27,650 --> 00:33:29,650
+Peki arkadaşlar hadi o zaman ben oturup şu
+
+328
+00:33:29,650 --> 00:33:31,650
+Ekseli yapayım size
+
+329
+00:33:31,650 --> 00:33:33,650
+Hazırlayayım da en azından o işi
+
+330
+00:33:33,650 --> 00:33:35,650
+Bitirmiş olalım ders saatin içinde onu
+
+331
+00:33:35,650 --> 00:33:37,650
+Harcayalım ders saatine
+
+332
+00:33:37,650 --> 00:33:39,650
+Yarın akşam
+
+333
+00:33:39,650 --> 00:33:41,650
+Son dersimizde görüşmek üzere
+
+334
+00:33:41,650 --> 00:33:43,650
+Derken son bir soru daha geldi
+
+335
+00:33:43,650 --> 00:33:45,650
+Geçen yıl CC
+
+336
+00:33:45,650 --> 00:33:47,650
+Kaç puanla denk geliyordu
+
+337
+00:33:47,650 --> 00:33:49,650
+Bilmiyorum
+
+338
+00:33:49,650 --> 00:33:51,650
+Bakayım
+
+339
+00:33:51,650 --> 00:33:53,650
+Biraz bekleyin
+
+340
+00:33:53,650 --> 00:33:55,650
+Yusis'e girip bakayım
+
+341
+00:33:55,650 --> 00:34:00,819
+Hocam bizi hep siz
+
+342
+00:34:00,819 --> 00:34:02,819
+Bozuyorsunuz bu kadar
+
+343
+00:34:02,819 --> 00:34:04,819
+İyi olunca bizde
+
+344
+00:34:04,819 --> 00:34:08,989
+Yok canım neyse ya
+
+345
+00:34:08,989 --> 00:34:10,989
+Hala şan duygulandım yani
+
+346
+00:34:10,989 --> 00:34:12,989
+Şimdi
+
+347
+00:34:12,989 --> 00:34:14,989
+Ders işlemleri
+
+348
+00:34:14,989 --> 00:34:16,989
+Nereden
+
+349
+00:34:16,989 --> 00:34:18,989
+Bakacağız ona ya
+
+350
+00:34:18,989 --> 00:34:20,989
+Ders not aralıklarını görüntüleme
+
+351
+00:34:20,989 --> 00:34:22,989
+2019
+
+352
+00:34:22,989 --> 00:34:24,989
+Bahar
+
+353
+00:34:24,989 --> 00:34:26,989
+Veri yapıları
+
+354
+00:34:26,989 --> 00:34:28,989
+Listele
+
+355
+00:34:28,989 --> 00:34:30,989
+E
+
+356
+00:34:30,989 --> 00:34:32,989
+Bu ne ya
+
+357
+00:34:32,989 --> 00:34:34,989
+Bu değilmiş pardon bu
+
+358
+00:34:34,989 --> 00:34:36,989
+Her aralıkta kaç kişi var onu veriyormuş
+
+359
+00:34:36,989 --> 00:34:38,989
+Ders not listesi diye gireceğiz
+
+360
+00:34:38,989 --> 00:34:44,000
+O zaman
+
+361
+00:34:44,000 --> 00:34:46,000
+Veri yapıları
+
+362
+00:34:46,000 --> 00:34:48,000
+Listele
+
+363
+00:34:48,000 --> 00:34:51,280
+E
+
+364
+00:34:51,280 --> 00:34:56,260
+Bir dakika
+
+365
+00:34:56,260 --> 00:35:00,340
+Burada da yok
+
+366
+00:35:00,340 --> 00:35:04,289
+Bunu nereden bakacağız ya
+
+367
+00:35:04,289 --> 00:35:09,679
+Şundan bakacağız herhalde
+
+368
+00:35:09,679 --> 00:35:11,679
+Bir dakika
+
+369
+00:35:11,679 --> 00:35:13,679
+Sınav ders not listesi
+
+370
+00:35:13,679 --> 00:35:15,679
+Bizimle isimler çok karışık
+
+371
+00:35:15,679 --> 00:35:19,469
+Bir daha deneyin son denemem
+
+372
+00:35:19,469 --> 00:35:25,699
+Yanınıza bastık
+
+373
+00:35:25,699 --> 00:35:37,579
+İçeride kaldı bekleyin
+
+374
+00:35:37,579 --> 00:35:39,579
+Gessiz'e şey yapamıyoruz
+
+375
+00:35:39,579 --> 00:35:41,579
+[öğrenci] onu
+
+376
+00:35:41,579 --> 00:35:43,579
+Dün pardon geçen işte
+
+377
+00:35:43,579 --> 00:35:45,579
+Hangi derste bir derste söyledim
+
+378
+00:35:45,579 --> 00:35:47,579
+Gessiz'deki arkadaşların
+
+379
+00:35:47,579 --> 00:35:49,579
+Notlarını şeyde okudum
+
+380
+00:35:49,579 --> 00:35:51,579
+Dersin içinde okudum
+
+381
+00:35:51,579 --> 00:35:53,579
+Zaten tabloya vizeyi de ekleyeceğim için
+
+382
+00:35:53,579 --> 00:35:55,579
+Orada görürsünüz
+
+383
+00:35:55,579 --> 00:36:01,619
+Dedim ya vizeyi de eklerim diye
+
+384
+00:36:01,619 --> 00:36:03,619
+Bekliyoruz arkadaşlar
+
+385
+00:36:03,619 --> 00:36:20,880
+Daha gelmedi
+
+386
+00:36:20,880 --> 00:36:27,809
+Göstermiyor ya
+
+387
+00:36:27,809 --> 00:36:37,199
+Bilemiyorum yani
+
+388
+00:36:37,199 --> 00:36:46,559
+Bir daha deniyorum
+
+389
+00:36:46,559 --> 00:36:48,559
+Listele dedik
+
+390
+00:36:48,559 --> 00:36:52,670
+Şu anda şöyle göstereyim size
+
+391
+00:36:52,670 --> 00:36:56,239
+Al
+
+392
+00:36:56,239 --> 00:37:01,469
+Yusis bu hale geldi
+
+393
+00:37:01,469 --> 00:37:05,619
+Gördüğünüz gibi yani
+
+394
+00:37:05,619 --> 00:37:07,619
+Ayıptır söylemesi kim yaptı bunu
+
+395
+00:37:07,619 --> 00:37:11,309
+Bilgi işlem
+
+396
+00:37:11,309 --> 00:37:13,309
+İşte
+
+397
+00:37:13,309 --> 00:37:15,309
+Aynen
+
+398
+00:37:15,309 --> 00:37:17,309
+Böyle bekliyorum arkadaşlar şu anda
+
+399
+00:37:17,309 --> 00:37:19,309
+Notlarınızı göremiyoruz
+
+400
+00:37:19,309 --> 00:37:21,309
+Geçen dönemde
+
+401
+00:37:21,309 --> 00:37:23,309
+Evet
+
+402
+00:37:23,309 --> 00:37:28,699
+Kapatıp açsak mı acaba ya
+
+403
+00:37:28,699 --> 00:37:34,860
+Daha hayırlı olur mu dersiniz
+
+404
+00:37:34,860 --> 00:37:39,579
+Ben bunu bir kapatayım
+
+405
+00:37:39,579 --> 00:38:05,619
+[öğrenci] ne soru sordun
+
+406
+00:38:05,619 --> 00:38:10,300
+Arkadaş bir dakika
+
+407
+00:38:10,300 --> 00:38:12,300
+Şu Yusis'i
+
+408
+00:38:12,300 --> 00:38:14,300
+Becerebilirsem
+
+409
+00:38:14,300 --> 00:38:16,300
+Heh şimdi [öğrenci]
+
+410
+00:38:16,300 --> 00:38:18,300
+Diyor ki
+
+411
+00:38:22,159 --> 00:38:24,159
+Birinci bir dedik
+
+412
+00:38:24,159 --> 00:38:26,159
+S kodu yazılması istenen sorunun cevabında
+
+413
+00:38:26,159 --> 00:38:31,139
+Hangi sorun vardı
+
+414
+00:38:31,139 --> 00:38:35,659
+Ne dediğini anlamadım ha
+
+415
+00:38:35,659 --> 00:38:37,659
+Hangi soru mu yüklü diye soruyorsun
+
+416
+00:38:37,659 --> 00:38:48,909
+Bakayım
+
+417
+00:38:48,909 --> 00:38:50,909
+Yüklememişsin ki boş
+
+418
+00:38:50,909 --> 00:38:59,219
+Cevap yok
+
+419
+00:38:59,219 --> 00:39:01,219
+Sayın [öğrenci] kardeşim
+
+420
+00:39:01,219 --> 00:39:07,309
+Duydun mu
+
+421
+00:39:07,309 --> 00:39:31,969
+Cevap yok
+
+422
+00:39:31,969 --> 00:39:33,969
+Yusis'e son kere deniyoruz
+
+423
+00:39:33,969 --> 00:39:35,969
+2019 [öğrenci]
+
+424
+00:39:35,969 --> 00:39:37,969
+Veri yapıları
+
+425
+00:39:37,969 --> 00:39:39,969
+Grup 2
+
+426
+00:39:39,969 --> 00:39:41,969
+Listele diyorum
+
+427
+00:39:41,969 --> 00:39:56,670
+Bende yok
+
+428
+00:39:56,670 --> 00:39:58,670
+Sistemde yok
+
+429
+00:39:58,670 --> 00:40:00,670
+Boş
+
+430
+00:40:00,670 --> 00:40:02,670
+Hiç yüklenen bir şey yok
+
+431
+00:40:02,670 --> 00:40:04,670
+Ekranı gösteririm sana
+
+432
+00:40:04,670 --> 00:40:06,670
+Şimdi dur
+
+433
+00:40:06,670 --> 00:40:08,670
+Zaten Yusis'ten hayır gelmiyor
+
+434
+00:40:08,670 --> 00:40:12,139
+Bak şöyle göstereyim
+
+435
+00:40:12,139 --> 00:40:18,400
+Önce bir paylaşayım ekranı
+
+436
+00:40:18,400 --> 00:40:20,400
+Tamam
+
+437
+00:40:20,400 --> 00:40:22,400
+Geldi değil mi ekran
+
+438
+00:40:22,400 --> 00:40:24,400
+Neredesin
+
+439
+00:40:24,400 --> 00:40:26,400
+[öğrenci]
+
+440
+00:40:26,400 --> 00:40:28,400
+Bak üstüne tıkladım
+
+441
+00:40:28,400 --> 00:40:30,400
+Bunlar senin yazdıkların
+
+442
+00:40:30,400 --> 00:40:32,400
+Şunu şu tarafa alayım
+
+443
+00:40:34,400 --> 00:40:36,400
+Nerede senin o soru
+
+444
+00:40:36,400 --> 00:40:44,000
+Soru nerede ya
+
+445
+00:40:44,000 --> 00:40:46,000
+Ha bu soru bu işte değil mi
+
+446
+00:40:46,000 --> 00:40:48,000
+Tamam şuradaymış
+
+447
+00:40:48,000 --> 00:40:50,000
+Bak boş hiçbir şey yok
+
+448
+00:40:50,000 --> 00:40:52,000
+Soru yok yani ortada
+
+449
+00:40:52,000 --> 00:40:54,000
+Yüklenen herhangi bir şey yok
+
+450
+00:40:54,000 --> 00:40:56,000
+Bak verdiğin cevaplar burada çıkıyor
+
+451
+00:40:56,000 --> 00:40:58,000
+Bak bu boş bu boş
+
+452
+00:40:58,000 --> 00:41:00,000
+Bu boş bu boş
+
+453
+00:41:00,000 --> 00:41:02,000
+Bu boş
+
+454
+00:41:02,000 --> 00:41:04,000
+Bu boş bu da boş
+
+455
+00:41:04,000 --> 00:41:06,000
+Bu da boş
+
+456
+00:41:06,000 --> 00:41:09,280
+Bu da boş
+
+457
+00:41:09,280 --> 00:41:11,280
+Tamam
+
+458
+00:41:11,280 --> 00:41:13,280
+Şuna sadece bu da yanlış ama
+
+459
+00:41:13,280 --> 00:41:15,280
+Bir verdim hani hepsi boş olduğu için
+
+460
+00:41:15,280 --> 00:41:32,289
+Garip bir şey mi vardı
+
+461
+00:41:32,289 --> 00:41:35,920
+Yani bilemiyorum
+
+462
+00:41:35,920 --> 00:41:37,920
+Ne vardı
+
+463
+00:41:37,920 --> 00:41:39,920
+Bu arada Yusis gelmiyor arkadaşlar
+
+464
+00:41:39,920 --> 00:41:41,920
+Sınav not şeyi çalışmıyor yani
+
+465
+00:41:41,920 --> 00:41:50,320
+Bakalım bekliyorum hala
+
+466
+00:41:50,320 --> 00:41:52,320
+Yani etkin
+
+467
+00:41:52,320 --> 00:41:54,320
+Şey diyemeyeceğim
+
+468
+00:41:54,320 --> 00:41:56,320
+Bununla alakalı elimden bir şey gelmiyor
+
+469
+00:41:56,320 --> 00:42:16,340
+Bekliyorum hala bir şey söyleyecek mi diye ama
+
+470
+00:42:16,340 --> 00:42:34,079
+Tamam yani
+
+471
+00:42:34,079 --> 00:42:36,079
+Ama şimdi şöyle bir sıkıntı var
+
+472
+00:42:36,079 --> 00:42:38,079
+Bütün soruları boş bir tane sorusu dolu
+
+473
+00:42:38,079 --> 00:42:40,079
+O nasıl oluyor
+
+474
+00:42:40,079 --> 00:42:54,239
+Okey yani
+
+475
+00:42:56,239 --> 00:42:58,239
+Şey sistem mağduru oldu
+
+476
+00:42:58,239 --> 00:43:14,349
+Arkadaş bu durumda
+
+477
+00:43:14,349 --> 00:43:16,349
+Arkadaşlar bu şey vermiyor
+
+478
+00:43:16,349 --> 00:43:18,349
+Yusis tepki vermiyor
+
+479
+00:43:18,349 --> 00:43:20,349
+Kusura bakmayın
+
+480
+00:43:20,349 --> 00:43:22,349
+O yüzden şey yapamıyorum
+
+481
+00:43:22,349 --> 00:43:24,349
+Açılırsa
+
+482
+00:43:24,349 --> 00:43:26,349
+Ona da bakar
+
+483
+00:43:26,349 --> 00:43:28,349
+Söylerim size geçen sene
+
+484
+00:43:28,349 --> 00:43:30,349
+C C nerdeydi D C nerdeydi
+
+485
+00:43:30,349 --> 00:43:32,349
+Kaçtan kaça ne alındı
+
+486
+00:43:32,349 --> 00:43:34,349
+Onu söylemeye çalışırım
+
+487
+00:43:34,349 --> 00:43:36,349
+Çünkü direkt sistem üzerinde verdiğim için
+
+488
+00:43:36,349 --> 00:43:38,349
+Notları elimde herhangi bir çıktısı yok
+
+489
+00:43:38,349 --> 00:43:40,349
+Ekseli yok
+
+490
+00:43:40,349 --> 00:43:42,349
+Okey o zaman
+
+491
+00:43:42,349 --> 00:43:44,349
+Yarın görüşmek üzere
+
+492
+00:43:44,349 --> 00:43:46,349
+Kendinize iyi bakın
+
+493
+00:43:46,349 --> 00:43:48,349
+Hoşça kalın dersi sonlandırıyorum
+

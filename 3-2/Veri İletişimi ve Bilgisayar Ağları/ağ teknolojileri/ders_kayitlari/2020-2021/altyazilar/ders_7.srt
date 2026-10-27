@@ -1,0 +1,2644 @@
+1
+00:00:02,220 --> 00:08:28,709
+Evet, aynen arkadaşlar, ikimizde de Cihan Hoca'da da bende de katılım dönemin başına göre felaket şekilde düşmüş durumda.
+
+2
+00:08:28,709 --> 00:08:32,710
+Ama tabii ki bunu siz ayarlıyorsunuz. O konuda bizim diyeceğimiz bir şey yok.
+
+3
+00:08:32,710 --> 00:08:38,710
+Yine beraber yapıyoruz dersi, chat kısmında da yazdık.
+
+4
+00:08:38,710 --> 00:08:51,710
+Şimdi öncelikle haftaya sınav haftası, vize haftası ve ilan edilen günde, ilan edilen zaman dilimi içerisinde sınavımızı yapacağız.
+
+5
+00:08:51,710 --> 00:09:43,049
+Sınav her zaman diyelim ki 4 şıklıysa A, B, C, D şeklinde. Bunlardan yanlış herhangi bir durumda.
+
+6
+00:09:43,049 --> 00:10:26,529
+Yine şey de söyleyelim [öğrenci], cevaplanan sorulara geri dönülemiyor.
+
+7
+00:10:26,529 --> 00:10:34,529
+O yüzden ileride hangi sorular var diye merak edip hızlı hızlı gitmeye kalkmayın lütfen.
+
+8
+00:10:34,529 --> 00:10:40,529
+Geri dönemezsiniz. Bu tarz bir sıkıntıyla karşılaşmayın.
+
+9
+00:10:40,529 --> 00:10:52,529
+Ondan sonra sınavın süresi sorulacak olan soruların cevaplanma süresiyle uyumlu. Bunu da bilin.
+
+10
+00:10:52,529 --> 00:11:03,529
+Kaç soru soruyorsak sorular zaten test yapısında olduğu için, o soruların şıkları da karşınızda olduğu için
+
+11
+00:11:03,529 --> 00:11:09,529
+cevaplamak için ihtiyaç duyduğunuz süre böyle çok dakikalar mertebesinde değil.
+
+12
+00:11:09,529 --> 00:11:18,529
+Dersi takip ettiyseniz, bizim söylediklerimizi dinlediyseniz, çalıştıysanız, kitaba ve slide'lara baktıysanız
+
+13
+00:11:18,529 --> 00:11:25,529
+birkaç saniye içerisinde bile cevaplayacağınız sorular olacak emin olun. Çok böyle şey yapmanıza gerek yok.
+
+14
+00:11:25,529 --> 00:11:38,259
+Yani diğer türlü bir zaman hesabı yapıyoruz.
+
+15
+00:11:38,259 --> 00:11:42,259
+Yani her soru işte şu kadar dur falan diyebildiğimiz bir gün yap.
+
+16
+00:11:42,259 --> 00:11:49,600
+Bunun hesabı kitabı yapıyoruz ve de ona göre. Uzun zamandan beklemeyin. Hazırlıklı olun.
+
+17
+00:11:49,600 --> 00:11:55,600
+Diğer bir şey de baştan söyleyelim. Geçen dönemlerde bununla alakalı mail aldık.
+
+18
+00:11:55,600 --> 00:12:03,600
+Niye aldığımızı ben hala daha bilmiyorum ama ben size söyleyeyim tekrar bu konudaki açıklamayı yapayım.
+
+19
+00:12:04,600 --> 00:12:13,600
+Sınav sisteminin özelliğinden ötürü sorular sizlere farklı sıralarda geliyor olabilir arkadaşlar.
+
+20
+00:12:13,600 --> 00:12:19,600
+Az önce Cihan hocanız söyledi ya biriniz böyle bir hesap sorusuyla başlıyor olabilirsiniz.
+
+21
+00:12:19,600 --> 00:12:26,600
+Diğeriniz doğrudan okuyup cevaplama şeklinde bir soruyla başlıyor olabilirsiniz.
+
+22
+00:12:26,600 --> 00:12:30,600
+Ondan sonra lütfen işte bana hesap sorusu önce geldi.
+
+23
+00:12:30,600 --> 00:12:36,600
+Çok vakit kaybettim. Diğer arkadaşlarıma öbür soru gelmiş onlar hızlı ilerlemişler değil.
+
+24
+00:12:36,600 --> 00:12:42,600
+Hesap önce geldiyse size hızlı ilerleyeceğiniz veya daha çabuk olacak sorular ileride.
+
+25
+00:12:42,600 --> 00:12:47,600
+Onlara bunlar önce geldiyse hesap soruları daha sonra çıkacak demektir.
+
+26
+00:12:47,600 --> 00:12:52,600
+Genelde hiçbir şey fark etmiyor yani. Bu da bir şey değil.
+
+27
+00:12:52,600 --> 00:13:00,600
+Yani endişe etmeniz veyahut da ben ne yapacağım diye düşünmeniz gereken bir kriter değil.
+
+28
+00:13:00,600 --> 00:13:08,600
+Evet şimdi geçen hafta kaldığımız yerden devam ediyoruz.
+
+29
+00:13:08,600 --> 00:13:13,600
+En son IP versiyon 6'ı gözlem geçirmiştik.
+
+30
+00:13:13,600 --> 00:13:16,600
+Onun yapısına bakmıştık.
+
+31
+00:13:17,600 --> 00:13:25,600
+Fakat ne demiştik hala da günümüzde yoğun olarak IP versiyon 4'ü kullanıyoruz.
+
+32
+00:13:25,600 --> 00:13:33,600
+Bu şu an için de facto standart yani yaşadığımız durum bu.
+
+33
+00:13:33,600 --> 00:13:38,600
+Ondan ötürü de V4 üzerinden gidiyoruz pek çok noktada.
+
+34
+00:13:38,600 --> 00:13:57,600
+Şimdi IP bir network protokolü ve aslında network player doğrudan alt taraftan kendisine servis sağlanmasını bekliyor.
+
+35
+00:13:57,600 --> 00:14:10,600
+Diğer taraftan da diğer hostlarda kendisiyle aynı seviyede olan network playerlarla A katmanlarıyla haberleşmek ve durumlarını öğrenmek istiyor.
+
+36
+00:14:10,600 --> 00:14:25,600
+Bu açıdan bakıldığında da IP yapısının içerisinde bu tarz kontrol ve yönetmeye yönelik yani control and management açısından
+
+37
+00:14:25,600 --> 00:14:28,600
+ek protokoller olduğunu görüyoruz.
+
+38
+00:14:28,600 --> 00:14:39,600
+Bunlardan üç tane böyle ön plana çıkan sıklıkla karşılaştığımız ve kullandıklarımız ICMP, ARF ve DHCP.
+
+39
+00:14:39,600 --> 00:15:00,600
+Şimdi ICMP internet control messaging protokol doğrudan yatayda bir hosttaki IP katmanının yani network katmanının diğer bir hosttaki IP network katmanı ile
+
+40
+00:15:00,600 --> 00:15:06,600
+kontrol amaçlı mesajlaşmasını sağlıyor.
+
+41
+00:15:06,600 --> 00:15:14,600
+Bu arada yapılan mesajlaşmanın üst katmana veya alt katmana bir etkisi yok.
+
+42
+00:15:14,600 --> 00:15:22,600
+Doğrudan A katmanının yani burada IP katmanının yönetimsel işleriyle alakalı.
+
+43
+00:15:23,600 --> 00:15:32,600
+Yani aslında IP protokolün içerisinde en kapçı döndürülmüş şekilde ICMP mesajlarını gönderip oluyoruz.
+
+44
+00:15:32,600 --> 00:15:40,600
+Evet aynen normal IP protokol mesajlarından farkı yok aslında o şekilde taşınıyor.
+
+45
+00:15:40,600 --> 00:15:48,600
+Ama içeriye açıldığında özel yapısı gereği network katmanı bunun kendisine geldiğini anlıyor.
+
+46
+00:15:48,600 --> 00:16:00,600
+Zaten adresinden ödülü anlayacak ama artı fonksiyonel olarak yerine getirilmesi gereken görevler açısından da kendisine geldiğini anlıyor ve kendisi cevap veriyor.
+
+47
+00:16:00,600 --> 00:16:16,600
+Şimdi hatırlayın routing konusunu gözden geçirirken bir efektif olması ve fair olması alternatif rotaların kullanılması yönünde örneğimiz vardı.
+
+48
+00:16:16,600 --> 00:16:23,600
+Hatta böyle Amerika kıtası ortadan ikiye bölünmüş gibi doğudan batıya geçiş söz konusuydu.
+
+49
+00:16:23,600 --> 00:16:34,600
+Orada işte bir taraf tıkanırsa diğer tarafa gidiliyor, diğer taraf tıkanırsa öbür tarafa gidiliyor tarzı bir de ping pong efekte olabilir diye ayrıntılarını da anlatmıştık.
+
+50
+00:16:34,600 --> 00:16:47,600
+Ama onu anlatırken temel kriterlerimizden bir tanesi hani bu yolun tıkandığını nasıl anlayacağız veyahut da yolun açtığını nasıl anlayacağız dan bahsederken neden yola çıkmıştık?
+
+51
+00:16:47,600 --> 00:16:49,600
+Gecikmelerden yola çıkmıştık.
+
+52
+00:16:49,600 --> 00:16:59,600
+Network katmanında bir paketin diğer karşıdaki network katmanına gitmesi de bununla alakalı geri dönüşün olmasına kadar geçen süre.
+
+53
+00:16:59,600 --> 00:17:02,600
+Buna ne diyoruz aslında? Round trip time diyoruz.
+
+54
+00:17:02,600 --> 00:17:06,599
+Bir noktadan çıktı, gitmesi gereken noktaya vardı.
+
+55
+00:17:06,599 --> 00:17:10,599
+Oradan tekrar ilk başlanmış noktasına geri dönüldü.
+
+56
+00:17:10,599 --> 00:17:13,599
+Round trip bunun bir süresi var.
+
+57
+00:17:13,599 --> 00:17:23,599
+Tabii gidiş yönüyle geliş yönü her zaman eşit olmayabilir ama işi kolaylaştırmak adına yarıya böldüğümüzü kabul ediyoruz diye de konuşmuştuk.
+
+58
+00:17:23,599 --> 00:17:26,599
+Şimdi burada bir zaman ölçümü lazım.
+
+59
+00:17:26,599 --> 00:17:40,599
+Bu zaman ölçümü için yukarıda uygulama yazabiliriz, uygulama katmanında bir şeyler yapabiliriz ama elde ettiğimiz sonuçları öyle veya böyle yine network katmanına aktarmamız lazım.
+
+60
+00:17:40,599 --> 00:17:43,599
+Ondan ötürü ne kararı alınmış?
+
+61
+00:17:43,599 --> 00:17:56,599
+Bunun doğrudan network katmanının kendisinin yönetmesi gereken ve kendi çalışmasıyla alakalı bir durum olduğu karara alınmış ve ICMP mesajlarından bir tanesi...
+
+62
+00:17:56,599 --> 00:18:01,599
+Hocam burada bir sonraki slide'da mı desteksiz? Çünkü ICMP'nin defayını anlatmayalım.
+
+63
+00:18:01,599 --> 00:18:03,599
+Öyle mi? Tamam geçelim hemen.
+
+64
+00:18:03,599 --> 00:18:07,170
+Bir sonraki slide şey...
+
+65
+00:18:07,170 --> 00:18:11,170
+Ben tabi bir slide'dan başladım şey yapıyorum.
+
+66
+00:18:11,170 --> 00:18:13,170
+Time stamp request replay anlatıyorsunuz.
+
+67
+00:18:13,170 --> 00:18:19,170
+Tamam aynen işte şeylerden bir tanesi önemli kullanımlardan bir tanesi.
+
+68
+00:18:19,170 --> 00:18:27,170
+Cihan hocanızın da söylediği gibi bu slide'da görüldüğü üzere time stamp request ve replay.
+
+69
+00:18:27,170 --> 00:18:30,170
+Ama buna her zaman ihtiyaç duymayabiliriz.
+
+70
+00:18:30,170 --> 00:18:37,170
+Sadece karşı tarafın ayakta olup olmadığını çalışır olup olmadığını test etmek isteyebiliriz.
+
+71
+00:18:37,170 --> 00:18:42,170
+O zaman ilk çıkıyor karşımıza echo ve echo replay.
+
+72
+00:18:42,170 --> 00:18:47,170
+Bu echo ve echo replay'i günlük hayatımızda uygulama seviyesinde de kullanıyoruz.
+
+73
+00:18:47,170 --> 00:18:52,170
+Pink işte bir hostum ne kadar sürede erişilebilir olduğunu gösteriyor.
+
+74
+00:18:52,170 --> 00:18:59,170
+Echo'nun geri dönüş süresini ölçüyoruz yani arada kaç tane hop olduğundan bağımsız olarak.
+
+75
+00:18:59,170 --> 00:19:13,170
+Bunun üstünde yer alan beş tanesi ise paketle alakalı veya trafikle alakalı sıkıntıları söylüyor.
+
+76
+00:19:13,170 --> 00:19:15,170
+Yani çok farklı.
+
+77
+00:19:15,170 --> 00:19:17,170
+Yok söyle söyle.
+
+78
+00:19:17,170 --> 00:19:24,480
+Ne yapıyor?
+
+79
+00:19:24,480 --> 00:19:40,880
+Adım adım aslında hedeften yaptığı şey time exceeded'ı kullanmak orada.
+
+80
+00:19:40,880 --> 00:19:48,880
+Önce adımda TTR veriyorsunuz ve paketi tekrar tekrar gönderiyorsunuz.
+
+81
+00:19:48,880 --> 00:19:50,880
+Birinci adımda TTR'i bir yapıyorsunuz.
+
+82
+00:19:50,880 --> 00:19:53,880
+Adam ilk hop'a gidiyor orada sönümleniyor.
+
+83
+00:19:53,880 --> 00:19:56,880
+Böylece geriye bir cevap duymuyor size.
+
+84
+00:19:56,880 --> 00:19:59,880
+Paket burada öldü elimde kaldı diye.
+
+85
+00:19:59,880 --> 00:20:02,880
+Sonra iki yapıyorsunuz ikinci adıma gidiyorsunuz.
+
+86
+00:20:02,880 --> 00:20:14,880
+Önce adım adım aslında hedefinize varana kadar paketin time to leave'ini arttırarak gidiyorsunuz ve bütün arada uğradığınız yerleri bulabiliyorsunuz.
+
+87
+00:20:14,880 --> 00:20:27,880
+Benzer şekilde Destination Unreachable da ya bir hedef router tarafından bulunamadığı yeri tespit edilemediği yer kendisine ulaşılamadığı zaman söyleniyor.
+
+88
+00:20:27,880 --> 00:20:30,880
+Ya da şeyi hatırlıyoruz olmanız lazım.
+
+89
+00:20:30,880 --> 00:20:37,880
+Geçen derslerde konuşmuştuk ya geçen hafta ya ondan önce iki hafta fragmanitasyonu konuşmuştuk.
+
+90
+00:20:37,880 --> 00:20:45,900
+Yönetmenin her izin vermemek.
+
+91
+00:20:45,900 --> 00:20:51,900
+Dolayısıyla Destination Unreachable'ı aslında bunun içinde kullanıyoruz.
+
+92
+00:20:51,900 --> 00:20:59,900
+Mesela bir kaynaktan hedefe doğru Do Not Fragment bitini set edip bir paket gönderebilirsiniz.
+
+93
+00:20:59,900 --> 00:21:08,900
+Eğer Do Not Fragment kurtarmıyorsa size Destination Unreachable kontrol mesajı olarak Gelecek.
+
+94
+00:21:08,900 --> 00:21:12,900
+Bunun dışında yukarıdaki 5 tane demiştiniz.
+
+95
+00:21:12,900 --> 00:21:15,900
+Geri ne kaldı? Parameter problem kaldı değil mi hocam?
+
+96
+00:21:15,900 --> 00:21:17,900
+Evet parameter problem.
+
+97
+00:21:17,900 --> 00:21:41,900
+Şey de var [öğrenci] orada.
+
+98
+00:21:41,900 --> 00:21:47,900
+Header checksum aslında çok da güvenilir garantili bir header checksum değil.
+
+99
+00:21:47,900 --> 00:21:55,900
+Bir bit hatalarını yakalamaya yönelik olarak oluşturulmuş bir checksum.
+
+100
+00:21:55,900 --> 00:22:04,900
+Header checksum ola ki iki bit, üç bit gibi farkına varılmayan yani öyle ters noktalarda oldu ki header checksum doğru diyor.
+
+101
+00:22:04,900 --> 00:22:10,900
+Ancak oradaki değer olmaması gereken bir değer yanlış bir değer.
+
+102
+00:22:10,900 --> 00:22:15,900
+O zaman parameter problem demesi lazım şey yapması lazım.
+
+103
+00:22:16,900 --> 00:22:33,269
+Log kontrolünü konuşacağız bir üst katmamda transportta.
+
+104
+00:22:33,269 --> 00:22:38,269
+Ama hani burada keyifli olmamız lazım.
+
+105
+00:22:38,269 --> 00:22:54,519
+Bir taraf çok fazla paket göre işleyemiyorsa her yerde bir tıkanıklık oluyorsa bunu geriye kaybettir.
+
+106
+00:22:54,519 --> 00:22:58,519
+Bu paketi kullanıyoruz. Aslında bu kontrol mesajını kullanıyoruz.
+
+107
+00:22:58,519 --> 00:23:09,559
+Yalnız şöyle bir sıkıntı var. Bu kullanmak aslında yangına benzin dökmek gibi değil mi hocam?
+
+108
+00:23:09,559 --> 00:23:11,559
+Aynen kesinlikle.
+
+109
+00:23:11,559 --> 00:23:18,380
+Trafik tıkalıyken yani İstanbul'da birinci köprü var, ikinci köprü var.
+
+110
+00:23:18,380 --> 00:23:35,480
+İkisi de şey yönünde tıkanılacağınız paket o tıkanıklığa aynen gibi.
+
+111
+00:23:35,480 --> 00:23:42,339
+Mesela hani belki de kaynağı hiç varamayacak olan bu paket için siz genel taygır set edeceksiniz.
+
+112
+00:23:42,339 --> 00:23:47,339
+Kontrol ve fena feka etmişsiniz. Mesela bu paketin gittiğimizde diye.
+
+113
+00:23:47,339 --> 00:23:56,740
+O yüzden hani yangına benzin dökmek gibi diyoruz. Kaşıklığı daha arttıracak.
+
+114
+00:23:56,740 --> 00:24:13,089
+Log kontrol sınavdan sonraki hafta geriye redirect kaldı galiba.
+
+115
+00:24:13,089 --> 00:24:15,089
+Evet redirect kaldı.
+
+116
+00:24:15,089 --> 00:24:23,089
+Redirect de yani router aslında gidilecek yöne o paketi gönderebilir.
+
+117
+00:24:23,089 --> 00:24:29,089
+Ancak kendi routing tablosuna baktığında o paketin daha optimum,
+
+118
+00:24:29,089 --> 00:24:35,089
+hızlı bir şekilde route edilmesini sağlayacak bir başka router olduğunu biliyor.
+
+119
+00:24:35,089 --> 00:24:38,089
+O yüzden paketi gönderiyor aslında.
+
+120
+00:24:38,089 --> 00:24:45,089
+Orjinal paketi ilk göndermiş olan hosta da bir redirect mesajı göndererek diyor ki,
+
+121
+00:24:45,089 --> 00:24:50,089
+bundan sonra bu yöne göndereceğim paketleri artık bu router üzerinden gönder.
+
+122
+00:24:50,089 --> 00:24:52,089
+Yani bir optimizasyon.
+
+123
+00:24:52,089 --> 00:24:55,089
+Öyle düşünmemiz lazım.
+
+124
+00:24:55,089 --> 00:24:58,089
+En sonuncusu da...
+
+125
+00:24:58,089 --> 00:25:02,400
+En sonuncusu derken zaten konuşmamış mıyım?
+
+126
+00:25:02,400 --> 00:25:08,400
+Advertisement Solicitation Fight a Nearby Router.
+
+127
+00:25:08,400 --> 00:25:11,400
+Şimdi bir host düşünün.
+
+128
+00:25:11,400 --> 00:25:14,400
+Power On oldu.
+
+129
+00:25:14,400 --> 00:25:19,400
+Bir önceki sayfada DHCP falan gördük ama öyle bir şey olmadığını varsayın,
+
+130
+00:25:19,400 --> 00:25:26,400
+daha primitif bir durum olduğunu varsayın kendi IP konfigürasyon bilgilerini biliyor
+
+131
+00:25:26,400 --> 00:25:31,400
+ama bulunduğu lokal networkten nasıl çıkacağını bilmiyor.
+
+132
+00:25:31,400 --> 00:25:34,400
+Network player'ın buna bir çözüm bulması lazım.
+
+133
+00:25:34,400 --> 00:25:37,400
+İşte bu çözüm de bu.
+
+134
+00:25:37,400 --> 00:25:48,400
+Bulunulan, bağlı olunan lokal network'teki router görevini üstlenen network player'ların tespit edilmesi.
+
+135
+00:25:48,400 --> 00:25:52,400
+Bu da tabii ki yine A katmanında gerçekleşecek bir şey.
+
+136
+00:25:52,400 --> 00:26:01,400
+Bu bir kontrollü broadcast hatta bir yerde multi-cast olarak bile düşünülebilecek bir problem.
+
+137
+00:26:01,400 --> 00:26:13,400
+ICMP seviyesinde bu paketi alan ve router olan bir host bu paketi gönderene cevap veriyor.
+
+138
+00:26:13,400 --> 00:26:20,400
+Böylece cevabı alan da artık biliyor ki networkten dışarıya çıkmak için kullanmam gereken router adresi buymuş.
+
+139
+00:26:20,400 --> 00:26:24,710
+Sonraki sayfaya geçebiliriz herhalde, değil mi Cihangir?
+
+140
+00:26:24,710 --> 00:26:40,349
+Evet. ICMP mesajları bulma sınırı değil, daha fazla pay sayfası.
+
+141
+00:26:40,349 --> 00:27:04,589
+IANA'nın transport kartını geçtiğimiz zaman well-defined port vesaire de hepsi iana.bin.
+
+142
+00:27:04,589 --> 00:27:05,589
+ARP'ye geçelim.
+
+143
+00:27:05,589 --> 00:27:08,589
+Tamam. ARP'deyiz şu anda.
+
+144
+00:27:08,589 --> 00:27:13,589
+ARP adres resolution protocol.
+
+145
+00:27:13,589 --> 00:27:28,589
+Şimdi burada katmanlar arası izolasyonun ve hatta bu katmansal yapının biraz ihlal edildiği bir durum söz konusu.
+
+146
+00:27:28,589 --> 00:27:40,589
+Çünkü şöyle, bakın bir hosttan bir başka hosta network seviyesinde network adresi ile erişiyoruz.
+
+147
+00:27:40,589 --> 00:27:54,589
+Ancak o hosta, o network adresi ile erişim gerçekte alt katmandaki fiziksel adreslerle sağlanıyor.
+
+148
+00:27:54,589 --> 00:27:57,589
+İşin şeyi bu, pratiği bu.
+
+149
+00:27:57,589 --> 00:28:18,589
+Yani biz şu örnekte 192.32.63.8 numaralı ethernet üzerinden bağlı olan hosta erişebilmemiz için alt seviyede ki kullanacağımız adresin IP adresi değil,
+
+150
+00:28:18,589 --> 00:28:26,589
+o IP adresine denk düşen ethernet olmasından dolayı MAC adresi olması gerekiyor.
+
+151
+00:28:26,589 --> 00:28:28,589
+Pratikte bu iş böyle.
+
+152
+00:28:28,589 --> 00:28:45,589
+O zaman network layer ister istemez erişmek istediği bulunduğu lokal eriyede, lokal networkte erişmek istediği hostların IP adresini bilerek bunu çözemez.
+
+153
+00:28:45,589 --> 00:28:51,589
+O IP adreslerine denk düşen MAC adreslerini de bilmesi lazım.
+
+154
+00:28:51,589 --> 00:29:00,589
+O açıdan bu bir yardım sağlayan bir helper ARP protokolü.
+
+155
+00:29:00,589 --> 00:29:14,589
+ARP olmazsa kesinlikle ve kesinlikle bir lokal eriyede bulunan iki host arasında IP trafiğini gerçekleştirme şansımız yok.
+
+156
+00:29:14,589 --> 00:29:17,589
+El ile kodlamamız lazım teker teker.
+
+157
+00:29:17,589 --> 00:29:22,589
+Bu IP'nin MAC adresi budur, bu IP'nin MAC adresi budur.
+
+158
+00:29:22,589 --> 00:29:28,589
+Ki ARP protokolü ortaya atılmadan önce bu yöntem uygulanmış arkadaşlar.
+
+159
+00:29:28,589 --> 00:30:08,519
+Bunların otoriteki de aynı şey. Aynısı burada da olacak.
+
+160
+00:30:08,519 --> 00:30:10,519
+Tabii.
+
+161
+00:30:10,519 --> 00:30:22,519
+Bakın normalde burada sol tarafta E1 ve E2 var, sağ tarafta da E5 ve E6 var.
+
+162
+00:30:22,519 --> 00:30:30,519
+E1 ve E2 bilgisayar mühendisliği, computer science demiş o networkta yer alan hostlar.
+
+163
+00:30:30,519 --> 00:30:38,519
+E5 ve E6 ise elektrik mühendisliği, electrical engineering de yer alan hostlar.
+
+164
+00:30:38,519 --> 00:30:55,519
+Şimdi E1, E2 ve dolayısıyla aynı Ethernet Switch'e bağlı olan router'ın E3'ü bir lokal area oluşturuyorlar.
+
+165
+00:30:55,519 --> 00:31:13,519
+Ve broadcast mantığı ile ekstra bir özellik ihtiyacına gerek duymadan MAC adresleri ile IP adresleri arasında dönüşüm yapma yeteneğine sahipler.
+
+166
+00:31:13,519 --> 00:31:18,519
+Nasıl mı oluyor? Şimdi E1, E2'ye erişecek.
+
+167
+00:31:18,519 --> 00:31:23,519
+E2'nin IP adresini biliyor ama MAC adresini bilmiyor.
+
+168
+00:31:23,519 --> 00:31:33,519
+O zaman MAC seviyesinde bir frame'in bütün hostlara gitmesini sağlayacak olan broadcast adresini kullanıyor.
+
+169
+00:31:33,519 --> 00:31:40,519
+Nedir o? Bütün bitlerin birilerden oluştuğu MAC adresleri biliyorsunuz 12 hane.
+
+170
+00:31:40,519 --> 00:31:46,519
+12 tane F10 oluşan çünkü bütün bitler birse o adresi kullanıyor.
+
+171
+00:31:46,519 --> 00:31:55,519
+O zaman bu frame diyim paket artı 6 şah seviyedeki frame bütün hostlara gidiyor.
+
+172
+00:31:55,519 --> 00:32:05,519
+Hostlar bakıyorlar, ARP kredisi aslında bu, sorgusu bu gelmiş ve kontrol ediyorlar.
+
+173
+00:32:05,519 --> 00:32:12,519
+Benim adresim 192.32.65.5 mi? Hayırsa ilgilenmiyor, çöpe atıyor.
+
+174
+00:32:12,519 --> 00:32:18,519
+Normalde zaten bir tane host da bu adresin olması lazım. IP adreslerinin tekil olması gerektiğini konuşmuştuk.
+
+175
+00:32:18,519 --> 00:32:21,519
+Network adreslerinin tekil olması gerektiğini konuşmuştuk.
+
+176
+00:32:21,519 --> 00:32:33,519
+Bu adrese sahip olan host ise evet diyor bu benim adresim ve kendisine bunu gönderen hosta E1'e doğrudan cevap gönderiyor.
+
+177
+00:32:33,519 --> 00:32:37,519
+Şimdi E1'in MAC adresini bulmakla uğraşmasına gerek var mı?
+
+178
+00:32:37,519 --> 00:32:48,519
+E1 yok çünkü neden? E1 bu maltı kesti yaparken kendi MAC adresini bu maltı kest paketinin, frame'inin içerisine yerleştirdi.
+
+179
+00:32:48,519 --> 00:32:52,519
+O yüzden E2 bunu da öğrenmiş oldu.
+
+180
+00:32:52,519 --> 00:33:09,970
+Bu arada çok özür dilerim. Bir adres paketi aslında A'daki sadece adresi bilinmek isteyen kimse o üstüne alıp cevap veriyor.
+
+181
+00:33:09,970 --> 00:33:20,049
+Ama E2 artık E1'e giderken zaten gelen mesajdan E1'in adresini biliyor.
+
+182
+00:33:20,049 --> 00:33:23,049
+Öğrenmiş oldu.
+
+183
+00:33:23,049 --> 00:33:30,380
+Network'daki diğer düğümler de bunu öğreniyor. Sonuçta broadcast'i.
+
+184
+00:33:30,380 --> 00:33:35,380
+Seslenişi kalkmayacaklar ama bunu da alıp kenara koyabilirler. İsteyici olduğunu da kullanmak için.
+
+185
+00:33:35,380 --> 00:33:47,289
+Benzer şekilde E2'nin cevabını da E2'nin MAC adresi konuda alabilirler.
+
+186
+00:33:47,289 --> 00:33:53,289
+Aynen. Böylece hostlar, aynen senin söylediğin gibi [öğrenci],
+
+187
+00:33:53,289 --> 00:34:07,289
+doğrudan kendilerine gelen veya gelmeyen bu tarz Q'eriler ve bu Q'erilerin cevapları ile kendilerinde bir ARP table, ARP tablosu oluşturuyorlar.
+
+188
+00:34:07,289 --> 00:34:15,289
+Fakat şimdi bu tablodaki entrylerin bir yaşam süresi olması lazım.
+
+189
+00:34:15,289 --> 00:34:22,289
+Birkaç sebebi var. Bir, hostlar server mahiyetinde olmayabilir, kapanıp açılabilirler.
+
+190
+00:34:22,289 --> 00:34:29,289
+Yani 7-24 kesintisiz hizmet vermek zorunda değiller. Bir an vardırlar, öbür an yokturlar.
+
+191
+00:34:29,289 --> 00:34:34,289
+Öyleyse bu entrylerin bir yaşam süresi olması lazım.
+
+192
+00:34:34,289 --> 00:34:44,289
+Diğer taraftan hostların üzerindeki network kartı, bu örnekte ethernet kartı bir donanım parçası bozulabilir.
+
+193
+00:34:44,289 --> 00:34:51,289
+Ve neyi biliyoruz? MAC adresleri de dünya çapında unique.
+
+194
+00:34:51,289 --> 00:35:00,289
+Yani her farklı iki ethernet kartının veya network kartının aynı MAC adresine sahip olması mümkün değil.
+
+195
+00:35:00,289 --> 00:35:10,289
+Mümkün değil, uygulanan standartlardan ötürüyor. Teknik olarak, teorik olarak hani şey, yapar mıyız yaparız ama üreticiler bunun böyle olmamasını garanti ediyorlar.
+
+196
+00:35:10,289 --> 00:35:20,289
+O zaman host2'nin ethernet kartının başına bir şey geldi, kart değişti ama ARP tablolarında eski MAC adresi var.
+
+197
+00:35:21,289 --> 00:35:31,289
+Onlar birisi tarafından, bir yönetici tarafından manuel olarak silinmediği sürece host2'ye network'te erişilebilme ihtimali yok.
+
+198
+00:35:31,289 --> 00:35:38,289
+Burada yönetişin içine ne giriyor? O tablodaki yaşam süresi. Biz bu tarz yaşam süresine ne diyorduk? Time to live.
+
+199
+00:35:38,289 --> 00:35:46,289
+Demek ki ARP tablosu içerisindeki entrylerin de bir yaşam süresi var.
+
+200
+00:35:46,289 --> 00:36:01,289
+Router'ın bir özel durumu var. Buraya router özellikle çizilmiş. Router şu anda bakın iki farklı local area'ya bağlı ve bu local area'yı hangi seviyede birleştiriyor?
+
+201
+00:36:01,289 --> 00:36:12,289
+Network seviyesinde birleştiriyor. Az önce bahsettiğimiz broadcast hangi seviyede gerçekleşiyor? Network seviyesinin altında.
+
+202
+00:36:12,289 --> 00:36:25,289
+Yani data link layer'da, ethernet olduğuna göre MAC sub layer'da. Router bu trafiği sağdan sola soldan sağa aktarmıyor.
+
+203
+00:36:25,289 --> 00:36:40,289
+Yani o zaman E1, E2, E3 MAC adresi bilgisi E4, E5 ve E6'ya gitmiyor. Ama router ne yapma şansına sahip arkadaşlar?
+
+204
+00:36:40,289 --> 00:36:52,289
+E4'le bağlı olduğu network'taki, az önce Cihan hocasının söylediği şekilde broadcast'leri dinleyerek oradaki adresleri öğrenebilir.
+
+205
+00:36:52,289 --> 00:37:12,289
+Aynı şekilde E3'e bağlı, E3'e bağlı olduğu network'taki adresleri öğrenebilir. Böylece network seviyesinde bir üst katmanda geçiş yaparken transparent bir şekilde IP adreslerinden MAC adreslerine geçişi sağlayabilir.
+
+206
+00:37:12,289 --> 00:37:26,289
+Diyelim ki o ana kadar öğrenmediği yeni bir IP adresi geldi. O zaman router, E3 tarafıysa E3 tarafında, E4 tarafıysa E4 tarafında az önce konuştuğumuz broadcast yapacak demektir.
+
+207
+00:37:26,289 --> 00:37:44,369
+O broadcast'in sonucu gelene kadar da paket routerda bekleyecek. Var mı atladığımız bir şey [öğrenci]? Bahsedebiliriz.
+
+208
+00:37:44,369 --> 00:38:19,170
+Proxy ARP'yi aslında anlatmamızda fayda var. Şundan ötürü, ileride mobil IP'yi anlatacağız ya, son slide galiba, son slide'da home agent özellikle proxy ARP üzerinden şey yapıyor ya, cevap veriyor ya.
+
+209
+00:38:19,170 --> 00:38:45,170
+Şimdi bazı durumlarda bazı MAC adreslerinin gerçek sahibi olmasa bile bir hostun o MAC adresi için onu sahiplenmiş ve o MAC adresi üzerinden adres denen, gönderilen IP adreslerine de cevap vermesini bekliyoruz.
+
+210
+00:38:45,170 --> 00:39:08,170
+Örneğini işte az önce söyledim, mobil IP'de göreceğiz. Bu durumda aslında bu host, o MAC adresinin sahibi olan host için bir vetil gibi davranıyor, onun yerine davranıyor. Bu durumda da neden bahsediyoruz? Proxy ARP'den bahsediyoruz.
+
+211
+00:39:08,170 --> 00:39:27,000
+Şimdi bunun ayrıntısını birkaç slide sonra daha net konuşacağımız için bu kadarlık açıklama bu noktada yeterli bence.
+
+212
+00:39:27,000 --> 00:39:47,000
+DHCP slide'i yok, DHCP slide'i şey olarak anlatabiliriz. Şimdi normalde bir IP networkine dahil olabilmemiz için IP adresimizin olması lazım.
+
+213
+00:39:47,000 --> 00:40:08,000
+IP adresimizin tek başına olması yeterli değil. Aynı zamanda hatırlayın, network maskı vardı, ister classful olsun, ister classless çalışılsın, hani bir prefix söz konusuydu, o da bir maskeye denk düşüyordu. Bu bilgiye ihtiyaç var.
+
+214
+00:40:08,000 --> 00:40:16,000
+Bunun haricinde bir gateway'e çıkışa ihtiyaç var.
+
+215
+00:40:16,000 --> 00:40:54,929
+Bu durumda DNS sunucuları, TR gibi isimler üzerinden dolanıyoruz. Dolayısıyla bu isimleri bir DNS domain name server'a sorup IP karşılıkları ne olduğunu öğrenip buna göre bu işin parçası olarak DNS sunucu adreslerine de ihtiyacımız var. En az bir tane, tercihen iki tane.
+
+216
+00:40:54,929 --> 00:41:17,929
+Yani demek ki host'un kendi adresi, host'un prefiksi veya netmaskı, gateway adresi, dışarı çıkışa sağlayacak olan router adresi, bir veya tercihen iki tane DNS server adresi. Bu bilgiler olmadan bir host'un IP networkine dahil olması mümkün değil.
+
+217
+00:41:17,929 --> 00:41:38,929
+Şimdi küçük networklerde veya statik networklerde çok değişmeyen yapılarda bunları hardcoded bir şekilde birtakım konfigürasyon dosyalarına kodleyebiliyoruz. Var. Unix'te standart olarak tariflenmiş ETG altında host dosyasında mesela bunlar yer alıyor.
+
+218
+00:41:38,929 --> 00:42:06,929
+Ama network'un büyük olduğu dinamik olarak hostların katılıp ayrılabildiği, kapanıp açılabildiği kampüs seviyesinde hatta metropol seviyesinde networklerde bunu elle yapabilmek mümkün değil. Hem insan gücü açısından mümkün değil hem de oluşacak hataları engellemek açısından mümkün değil.
+
+219
+00:42:06,929 --> 00:42:23,929
+O zaman bu işin otomatikleştirilmesi lazım. Kontrolü bir şekilde kurallarının belirlenip otomatikleştirilmesi lazım. İşte bu amaç için oluşturulmuş protokol DHCP, Dynamic Host Configuration Protokol.
+
+220
+00:42:23,929 --> 00:42:42,929
+Bunun aslında bir adım öncesi var. Boot P diye geçiyor. Boot protokol yani şöyle öngürebilirsiniz. İşletim sistemi açılırken yani boot işlemi sırasında yüklenme işlemi sırasında network parametrelerini edinmesi gerekiyor.
+
+221
+00:42:42,929 --> 00:42:54,929
+Boot P'de bu amaca yönelik olarak tasarlanmış ama birtakım kısıtları var, eksikleri var. Her zaman her senaryoda düzgün bir şekilde çalışmıyor.
+
+222
+00:42:54,929 --> 00:43:05,929
+Onun yerine artık günümüzde endüstri standarda haline gelmiş, oturmuş, yerleşmiş. Hangi protokol kullanılıyor? Dynamic Host Configuration Protokol.
+
+223
+00:43:05,929 --> 00:43:14,929
+Bu arka tarafta bir veri tabanı aslında. File'larla tutulan ve sınırları, kısıtları, kuralları belirlenen bir veri tabanı.
+
+224
+00:43:14,929 --> 00:43:26,929
+Bir host network'e dahil olmak istediğinde yine doğal olarak bilmesi gereken, sahip olması gereken temel hangi adresle?
+
+225
+00:43:26,929 --> 00:43:37,929
+Mak adresiyle, Ethernet network'ından bahsediyorum. Sonuçta data link layer seviyesindeki adresiyle network'te bir özel broadcast yapıyor.
+
+226
+00:43:37,929 --> 00:43:50,929
+Yani DHCP request'inde bulunuyor. Bu DHCP request'e, DHCP server'a gittiği zaman DHCP server kendi tablolarını, veri tabanını kontrol ediyor.
+
+227
+00:43:50,929 --> 00:43:59,929
+Specifik bir adres mi verilecek? Yoksa bir havuz, hani bir pool içerisinden rastgele bir adres mi verilecek?
+
+228
+00:43:59,929 --> 00:44:09,929
+Bunu belirliyor. Bunun yanında maskesi belirleniyor. Prefix diyelim, öyle düşünelim. Gateway adresi belirleniyor.
+
+229
+00:44:09,929 --> 00:44:15,929
+Ve DNS server adres veya adresleri belirleniyor. Bunlar paketlenip...
+
+230
+00:44:15,929 --> 00:44:28,059
+Tabii, tabii. Yok yok, onu söylemedim, haklısın.
+
+231
+00:44:28,059 --> 00:44:50,090
+Tabii, hostlara, bu bilgiyi saklama yeteneği olmayan hostlara veya yönetimsel olarak daha rahat yönetelim diye planladığınız hostlara,
+
+232
+00:44:50,090 --> 00:45:04,090
+o hostun host adresine artı ait olduğu, DNS açısından ait olduğu domain adresini de, domain ismini de aktarabiliyorsunuz.
+
+233
+00:45:04,090 --> 00:45:19,090
+Fully Qualified Domain Name diyoruz. VVV Yıldız Edu Tiyar, Yıldız Edu Tiyar bunun domain name'i, VVV ise host name'i, ikisi bir araya geldiğinde full qualified name oluyor.
+
+234
+00:45:19,090 --> 00:45:24,090
+DHCP de bu amaca yönelik olan bir protokol.
+
+235
+00:45:24,090 --> 00:45:43,769
+Burada discover diye geçiyor. Ciasın normal şartlarda aynı network de olması lazım. Doğrudan erişebilme olması lazım.
+
+236
+00:45:43,769 --> 00:45:50,769
+Ya da eğer arada başka networkler varsa, bu isteğin relay ediliyor olması lazım.
+
+237
+00:45:51,769 --> 00:45:58,769
+Mesela bizim üniversiteye baktığımız zaman, aslında böyle merkezi bir DSCP var. Aslında bir değil, iki DSCP var.
+
+238
+00:45:58,769 --> 00:46:05,769
+DSCP'in sunucuyu da aslında payloader yeteneğiyle beraber konfigur etmeye çalışırız.
+
+239
+00:46:05,769 --> 00:46:09,769
+Ersan'ın için. Çünkü Gökhan Hoca'nın dediği gibi, ne var, arka çilesi var.
+
+240
+00:46:09,769 --> 00:46:23,619
+Çünkü atadığınız adresin şey olmasını bekliyordun da geri alınabilmesini bekliyordun. Bir list süresi bulunuyoruz.
+
+241
+00:46:24,619 --> 00:46:35,599
+O list bitmeden önce, o IP'yi tekrar istekte bulunması lazım. Bulunursa aynı adresi tekrar takip devam ediyoruz.
+
+242
+00:46:35,599 --> 00:46:44,989
+Ama bu bir adımız vesaire bilgisini de bir veri tabanında saklıyorsunuz.
+
+243
+00:46:44,989 --> 00:46:51,989
+DSCP sunucumuzu kapanıp açıldığında ya da başına bir şey geldiğinde ortalık karışımdır.
+
+244
+00:46:51,989 --> 00:47:06,559
+Oysa bunu da genelde biz ne yapıyoruz? Tailover çalışacak şekilde. Bir primary, bir secondary olacak şekilde bir şey kaldı mı?
+
+245
+00:47:06,559 --> 00:47:09,559
+Yok kalmadı. Devam edebiliriz bence [öğrenci].
+
+246
+00:47:09,559 --> 00:47:11,559
+Zaten ben slide'ı geçeyim.
+
+247
+00:47:11,559 --> 00:47:14,559
+Tamam. Label switching'te.
+
+248
+00:47:14,559 --> 00:47:50,840
+Evet. Şimdi, aynen. Şimdi multi-protokol label switching senin söylediğin görevi yerine getiriyor.
+
+249
+00:47:50,840 --> 00:48:04,840
+Aynı zamanda şunu yapıyor. Şimdi IP özelinde routing yapacak olursak routing kararını verebilmem için hedef adrese bakmam lazım.
+
+250
+00:48:04,840 --> 00:48:15,840
+Hatta hani arkadaşlar da inşallah hatırlayacaklar. Bu longest matching prefix'e göre aggregation yapıyorum.
+
+251
+00:48:15,840 --> 00:48:20,840
+Veyahut da gittiği yerde tekrar bunları böyle ayırıyorum. Egregate ettiklerimi ayırıyorum.
+
+252
+00:48:20,840 --> 00:48:28,840
+İşte neydi o Oxford örneği vardı, Cambridge örneği vardı. Bu tarz bir ayılma yapıyorum.
+
+253
+00:48:28,840 --> 00:48:36,840
+Ama şöyle düşünün. Şimdi Amerika'dan çıkan trafik Avrupa'ya gidiyor.
+
+254
+00:48:36,840 --> 00:48:47,840
+Avrupa'ya varana kadar ülke bazında düşünün. İşte İngiltere'ye mi gitmiş, Almanya'ya mı gitmiş, Fransa'ya mı gitmiş, İspanya'ya mı, Portekiz'e mi?
+
+255
+00:48:47,840 --> 00:48:49,840
+Hiçbir farkı yok ki.
+
+256
+00:48:49,840 --> 00:48:55,840
+Bunu ben IP serisinde yapacak olursam, evet Egregate edeceğim.
+
+257
+00:48:55,840 --> 00:49:05,840
+Fakat Egregate ettiklerim hala daha kenarda bağımsız bağımsız Egregate edilmiş gruplar şeklinde olacak.
+
+258
+00:49:05,840 --> 00:49:10,840
+Ancak ben zaten Amerika'dan Avrupa'ya trafiği aktarıyorum.
+
+259
+00:49:10,840 --> 00:49:22,840
+O zaman bunları daha bir üst seviyede bandılayabilmek, bir bütün yapabilmek adına, yani demetlerin demetini yapıyorum.
+
+260
+00:49:22,840 --> 00:49:24,840
+Çiçek sapları, şeyleri üzerinden düşünün.
+
+261
+00:49:24,840 --> 00:49:31,840
+Ve hızlıca en kolay şekilde gönderebilmek adına oluşturulmuş bir yapı.
+
+262
+00:49:32,840 --> 00:49:37,840
+Burada anahtarlama üzerine çalışıyor, switching diyor.
+
+263
+00:49:37,840 --> 00:49:39,840
+Switching'i de neye göre yapıyor?
+
+264
+00:49:39,840 --> 00:49:41,840
+Label'a göre yapıyor.
+
+265
+00:49:41,840 --> 00:49:46,840
+Bakın label'ı açmış. Kaç bitten oluşuyor? 32 bitten oluşuyor label.
+
+266
+00:49:46,840 --> 00:49:56,840
+Bunun içerisinde 20 bitlik kısmı gerçekten label, 3 bitlik kısmı quality of service kısmı, 8 bitlik kısmı TTR kısmı.
+
+267
+00:49:56,840 --> 00:49:59,840
+Bir biti de özel amaç için ayrılmış durumda.
+
+268
+00:49:59,840 --> 00:50:14,840
+Ve böylece bir sürü paket için bağımsız IP tablosuna girdim, lookup yaptım, longest prefix matching yaptım, egrega ettim, şey yaptım.
+
+269
+00:50:14,840 --> 00:50:16,840
+Bunlarla uğraşmaya gerek yok.
+
+270
+00:50:16,840 --> 00:50:19,840
+Yani bir konsantrasyon noktasına geliniyor.
+
+271
+00:50:19,840 --> 00:50:28,840
+Konsantrasyon noktasında bunlar ilgili etiketlerle etiketleniyor ve ondan sonra o etikete göre yol boyunca gidiyor.
+
+272
+00:50:28,840 --> 00:50:39,840
+Şimdi tabii ki arada doğrudan hop by hop tek hopluk bir bağlantı varsa bu kadar şeye ne gerek var?
+
+273
+00:50:39,840 --> 00:50:41,840
+Zaten bir label'ın içerisine soktum.
+
+274
+00:50:41,840 --> 00:50:43,840
+O label ile de öbür taraftan çıkarttım.
+
+275
+00:50:43,840 --> 00:50:45,840
+Tekrar açmak zorunda kaldım.
+
+276
+00:50:45,840 --> 00:50:51,840
+Ama bu topoloji de kendi içerisinde multi hop'tan oluşabilir.
+
+277
+00:50:51,840 --> 00:50:57,840
+O zaman tamamen ne üzerinden aktarıma devam ediliyor?
+
+278
+00:50:57,840 --> 00:51:00,840
+Etiketteki değer üzerinden.
+
+279
+00:51:00,840 --> 00:51:04,840
+Az önce Cihan hocanız söyledi ya bunu neye benzetebiliriz?
+
+280
+00:51:04,840 --> 00:51:14,840
+Hani virtual circuitlarda bir kez virtual circuit'ı oluşturduktan sonra gelen paketi virtual circuit IDsine göre aktarıyoruz ya başka bir şeye bakmıyoruz.
+
+281
+00:51:14,840 --> 00:51:16,840
+Çok hızlı bir şekilde gerçekleşiyor.
+
+282
+00:51:16,840 --> 00:51:18,840
+İşte aynı durum.
+
+283
+00:51:19,840 --> 00:51:38,840
+Datagram networklerinde bu yapıyı oluşturabilmek ve hızlıca en hızlı bir şekilde routing kararını alıp paketleri bir bütün şeklinde bir grup şeklinde hedefe aktarabilmek için oluşturulmuş olan protokol.
+
+284
+00:51:38,840 --> 00:51:56,920
+Zaten point-to-point protokol kısmı var.
+
+285
+00:51:56,920 --> 00:51:58,920
+Sonra ntls header'ı var.
+
+286
+00:51:58,920 --> 00:52:06,090
+Sonra ips ile bir yerlerde bir label'ın eklenmesi lazım.
+
+287
+00:52:06,090 --> 00:52:16,300
+Normal network'tan normal label-edge router teklifi.
+
+288
+00:52:16,300 --> 00:52:23,909
+Yani tek hop için bunu pek yapmayız zaten.
+
+289
+00:52:23,909 --> 00:52:25,909
+Birkaç tane hop olması gerekiyor.
+
+290
+00:52:25,909 --> 00:52:31,909
+Oradaki her bir router'ın bu ntls'i anlayıp çözüp devam edebiliyor olması lazım.
+
+291
+00:52:31,909 --> 00:52:37,909
+Orada label switch router diye böyle gelen etiketleniyor diyeyim.
+
+292
+00:52:37,909 --> 00:52:48,059
+Bir de aslında hani burada ntls kullanırken şey sınırı da yok.
+
+293
+00:52:48,059 --> 00:52:56,940
+Aslında etiket önünde bir etiket daha...
+
+294
+00:52:56,940 --> 00:53:00,280
+Doğru.
+
+295
+00:53:00,280 --> 00:53:07,280
+Bir de etiket alanı 20 bit olduğu için 220 baya bir şey yapabiliyorsun.
+
+296
+00:53:07,280 --> 00:53:11,280
+Artı quality of service sınıfları da belirtilmiş durumda.
+
+297
+00:53:11,280 --> 00:53:15,280
+Orada da 8 tane 0 ile 7 arasındasınız.
+
+298
+00:53:15,280 --> 00:53:17,280
+Durum bu şekilde.
+
+299
+00:53:17,280 --> 00:53:19,280
+Evet, devam edelim [öğrenci].
+
+300
+00:53:19,280 --> 00:53:37,090
+Mantı basit, straightforward yapı var gibi görünüyor.
+
+301
+00:53:37,090 --> 00:53:40,090
+Ama detayları biraz karışık.
+
+302
+00:53:40,090 --> 00:53:46,010
+Bütün detayları için okumanız lazım.
+
+303
+00:53:46,010 --> 00:53:48,449
+Tabii tabii.
+
+304
+00:53:48,449 --> 00:53:50,449
+Yani biz burada size...
+
+305
+00:53:50,449 --> 00:53:59,420
+Ama şey kavramını anlayabilmeniz için arkadaşlar...
+
+306
+00:53:59,420 --> 00:54:10,420
+Yani bakın normal bir datagram network'u üzerinde switching yaparak aslında bir circuit oluşturabiliyoruz.
+
+307
+00:54:10,420 --> 00:54:17,420
+O kavramı da anlayabilmeniz açısından hep her derste söylüyoruz neredeyse.
+
+308
+00:54:17,420 --> 00:54:20,420
+Buradaki slide'lar özet.
+
+309
+00:54:20,420 --> 00:54:21,420
+Ancak dikkat edin.
+
+310
+00:54:21,420 --> 00:54:25,420
+Biz anlatırken de bir slide'da dakikalarımızı harcıyoruz.
+
+311
+00:54:25,420 --> 00:54:27,420
+Bir sürü ayrıntı söylüyoruz.
+
+312
+00:54:27,420 --> 00:54:29,420
+Slide'ın üzerinde çok az şey yazmasına rağmen.
+
+313
+00:54:29,420 --> 00:54:32,420
+Ve yine tekrar ettiğimiz diğer bir şey.
+
+314
+00:54:32,420 --> 00:54:35,420
+Ek ayrıntılarda kitapta yer alıyor.
+
+315
+00:54:35,420 --> 00:54:40,420
+O yüzden lütfen bizim bu anlattıklarımızı temel kabul edin.
+
+316
+00:54:40,420 --> 00:54:49,099
+Ama ayrıntıları için kitaptaki bilgilere de bakmayı unutmayın.
+
+317
+00:54:49,099 --> 00:54:50,099
+İyi misiniz?
+
+318
+00:54:50,099 --> 00:54:52,099
+Yani bence devam edebiliriz.
+
+319
+00:54:53,099 --> 00:54:55,099
+Ya da bir 10 dakika verelim var.
+
+320
+00:54:55,099 --> 00:54:56,099
+İsterseniz şey olmasın.
+
+321
+00:54:56,099 --> 00:54:57,099
+Çünkü saat 4 oluyor.
+
+322
+00:54:57,099 --> 00:54:58,099
+Tamam.
+
+323
+00:54:58,099 --> 00:55:00,099
+Yani 4'ü 10 geçe şey yapalım.
+
+324
+00:55:00,099 --> 00:55:01,099
+Aynen.
+
+325
+00:55:01,099 --> 00:55:02,099
+Devam edelim.
+
+326
+00:55:02,099 --> 00:55:04,099
+Benim öğrenciler...
+
+327
+00:55:04,099 --> 00:55:08,579
+Ben de 49 kişiye çıkmış.
+
+328
+00:55:08,579 --> 00:55:10,579
+Ben de 46'lıyım.
+
+329
+00:55:10,579 --> 00:55:13,579
+O zaman sessize alıyorum.
+
+330
+00:55:13,579 --> 00:55:14,579
+Ben de.
+
+331
+00:55:14,579 --> 00:55:16,579
+10 geçe tekrar başlıyoruz arkadaşlar.
+
+332
+00:55:16,579 --> 00:55:17,579
+Görüşmek üzere.
+
+333
+00:55:17,579 --> 01:09:17,069
+Yok yok.
+
+334
+01:09:17,069 --> 01:09:18,069
+MPLS de tamam.
+
+335
+01:09:18,069 --> 01:09:20,069
+Devam edebiliriz.
+
+336
+01:09:20,069 --> 01:09:22,319
+Evet.
+
+337
+01:09:22,319 --> 01:09:33,319
+Yani aslında o SPF tamamen baktığımızda link state routing vardı ya.
+
+338
+01:09:33,319 --> 01:09:43,319
+Link state routing'in IP, TCP, IP kapsamında uygulanmış olan hali.
+
+339
+01:09:43,319 --> 01:09:46,319
+Burada...
+
+340
+01:09:46,319 --> 01:09:50,319
+Aslında hocam çok özür dilerim.
+
+341
+01:09:50,319 --> 01:10:07,670
+Evet.
+
+342
+01:10:07,670 --> 01:10:19,649
+Sistemler var.
+
+343
+01:10:19,649 --> 01:10:28,050
+Aslında kendi içerisinde istedikleri routing, bu kullandıkları routing de interyör.
+
+344
+01:10:28,050 --> 01:10:34,340
+Yani kendi içlerinde interyör.
+
+345
+01:10:34,340 --> 01:10:36,340
+Bir de islam olması lazım.
+
+346
+01:10:36,340 --> 01:11:02,449
+Şimdi harici olan bir yapıya ihtiyaç var.
+
+347
+01:11:02,449 --> 01:11:06,789
+Buna da exterior gateway, TCP...
+
+348
+01:11:06,789 --> 01:11:07,789
+Kullanıyoruz.
+
+349
+01:11:07,789 --> 01:11:22,939
+Aslında.
+
+350
+01:11:22,939 --> 01:11:23,939
+Tamam.
+
+351
+01:11:23,939 --> 01:11:24,939
+Yok aslında şeyi söyledim.
+
+352
+01:11:24,939 --> 01:11:29,939
+Yani o SPF de sonuçta link state routing.
+
+353
+01:11:29,939 --> 01:11:34,939
+Link state routing o dönemde akademik çalışma olarak ortaya atılmış bir yapı.
+
+354
+01:11:34,939 --> 01:11:44,939
+Ama bunun TCP, IP kapsamında implement edilmiş, hayata geçirilmiş olan haline de ne isim veriyoruz?
+
+355
+01:11:44,939 --> 01:11:47,939
+Open shortest path first.
+
+356
+01:11:47,939 --> 01:11:48,939
+Daha önce de konuştuk.
+
+357
+01:11:48,939 --> 01:11:52,939
+Buradaki open, open source'daki open ile aynı.
+
+358
+01:11:52,939 --> 01:12:02,939
+Yani link state routing distributed bir şekilde en kısa yolu bulmaya çalışıyor.
+
+359
+01:12:02,939 --> 01:12:07,939
+Bunun da işte herkes tarafından uygulanabilecek.
+
+360
+01:12:07,939 --> 01:12:10,939
+Implementasyonu herkese açık.
+
+361
+01:12:10,939 --> 01:12:20,939
+Ve TCP, IP suiti içerisinde de standart interior routing protokor olarak kabul edilmiş olan haline o SPF adını veriyoruz.
+
+362
+01:12:20,939 --> 01:12:27,939
+Şu şeklin bir benzeri aslında link state routing anlatırken de vardı.
+
+363
+01:12:27,939 --> 01:12:31,939
+Yukarıda bir gerçek network var.
+
+364
+01:12:31,939 --> 01:12:35,939
+İşte local area'lardan, routerlardan oluşuyor.
+
+365
+01:12:35,939 --> 01:12:40,939
+Bunu aşağıda bir graf ile ifade ediyoruz.
+
+366
+01:12:40,939 --> 01:12:42,939
+Dikkat edin.
+
+367
+01:12:42,939 --> 01:12:46,939
+Bazı yerlerde hani toplayıcı düğme indirgeniyor.
+
+368
+01:12:46,939 --> 01:12:52,939
+Yani R1, R2, R3, R4 ve R5'in zaten birer düğüm olması anlamlı.
+
+369
+01:12:52,939 --> 01:13:04,939
+Ama local area kendi içerisinde birden fazla host barındırıyor olmasına rağmen o hostların sayısı bizim için önem taşımıyor.
+
+370
+01:13:04,939 --> 01:13:07,939
+Local area'da bir düğüm olarak ifade ediliyor.
+
+371
+01:13:07,939 --> 01:13:12,939
+Çünkü o local area'ya gidildikten sonra az önceki örnekte gördünüz.
+
+372
+01:13:12,939 --> 01:13:15,939
+ARP örneğinde ortada router vardı.
+
+373
+01:13:15,939 --> 01:13:18,939
+Sol tarafında ve sağ tarafında iki tane local area vardı.
+
+374
+01:13:18,939 --> 01:13:23,939
+Oraya gittikten sonra ARP ile local de zaten bunu teslim edersiniz.
+
+375
+01:13:23,939 --> 01:13:35,939
+Yani açıkçası o taz bir local area'ya indirgendiğinde normalde dinamik hiçbir routing'e ihtiyaç duymuyoruz.
+
+376
+01:13:35,939 --> 01:13:41,939
+Ya paket doğrudan MAC adresi üzerinden gönderilebilir halde oluyor.
+
+377
+01:13:41,939 --> 01:13:49,939
+Ya da statik olarak kodlamış olduğumuz gateway router adresi üzerinden dışarıya çıkabiliyor oluyoruz.
+
+378
+01:13:49,939 --> 01:13:53,939
+Onu statik olarak kodlamak istemiyorsak da zaten niye öğrendik?
+
+379
+01:13:53,939 --> 01:13:54,939
+DHCP'yi öğrendik.
+
+380
+01:13:54,939 --> 01:14:05,939
+Halbuki burada gösterilmek istenen, buradaki network'ta anlatılmak istenen az önce Cihan hocanızın da söylediği gibi otonom sistemler var.
+
+381
+01:14:05,939 --> 01:14:10,939
+Bu otonom sistemler arasında routing yapılması lazım.
+
+382
+01:14:10,939 --> 01:14:14,939
+O zaman neden bahsediyoruz?
+
+383
+01:14:14,939 --> 01:14:16,939
+Bu interior'dan bahsediyoruz.
+
+384
+01:14:16,939 --> 01:14:21,939
+Ama bu otonom sistemler böyle bir araya geliyorlar, bir bütünü oluşturuyorlar.
+
+385
+01:14:21,939 --> 01:14:34,939
+Organizasyonel olarak veya kurumsal olarak veya politik olarak veya ticari olarak bunlar arasında veya ülke sınırları, kıta sınırları olarak bir araya gelip bir bütünü oluşturuyorlar.
+
+386
+01:14:34,939 --> 01:14:40,939
+Bunların arasında routing yapmak istediğimiz zaman da exterior routing protokollerden bahsediyoruz.
+
+387
+01:14:40,939 --> 01:14:45,500
+Devam edelim mi [öğrenci] bir sonraki slayda?
+
+388
+01:14:45,500 --> 01:14:46,500
+Olur.
+
+389
+01:14:46,500 --> 01:14:51,779
+İnteli routing planını geçiyorum o zaman.
+
+390
+01:14:51,779 --> 01:14:53,779
+Ben daha şey yapamam mı?
+
+391
+01:14:53,779 --> 01:14:58,779
+İki, yani işte burada o şeyleri gösteriyor.
+
+392
+01:14:58,779 --> 01:15:03,779
+Yani az önce anlattığımız, senin de benim de anlattığım OSPF ne diyor?
+
+393
+01:15:03,779 --> 01:15:07,779
+Büyük bir network'u otonom sistemlere böler diyor.
+
+394
+01:15:07,779 --> 01:15:14,779
+Ve bu otonom sistemlerde bir backbone üzerinden birbirleriyle haberleşirler diyor.
+
+395
+01:15:14,779 --> 01:15:25,779
+Aşağıdaki şeye baktığımızda bir otonom sistem kendi içerisinde alt alanlara ayrılmış.
+
+396
+01:15:25,779 --> 01:15:30,779
+Sıfırıncı alan, birinci alan, ikinci alan şeklinde.
+
+397
+01:15:30,779 --> 01:15:35,779
+Sıfırıncı alanda backbone'u çok net bir şekilde görüyoruz.
+
+398
+01:15:35,779 --> 01:15:40,779
+Çünkü backbone olabilmesi için alternatif yolların olabilmesi lazım.
+
+399
+01:15:40,779 --> 01:15:44,779
+Birden fazla router içermesi lazım.
+
+400
+01:15:44,779 --> 01:15:52,189
+Ama dikkat edin bir alanın içerisinde de router olabilir.
+
+401
+01:15:52,189 --> 01:15:57,189
+Internal router bakın, AR1'da o şekilde gösterilmiş.
+
+402
+01:15:57,189 --> 01:16:04,189
+Halbuki backbone'daki routers bir alanda diğer bir alana trafin aktarılması için.
+
+403
+01:16:04,189 --> 01:16:11,189
+Yani bir nevi otoyollar gibi, alternatif olan otoyollar gibi düşünülmesi lazım.
+
+404
+01:16:11,189 --> 01:16:14,729
+Tamam geçiyorum.
+
+405
+01:16:14,729 --> 01:16:20,149
+Evet geçebiliriz.
+
+406
+01:16:20,149 --> 01:16:25,149
+Yo zaten bunları OSPF is link state routing diyor.
+
+407
+01:16:25,149 --> 01:16:29,149
+Az önce arkadaşlara söylediğimiz LSR.
+
+408
+01:16:29,149 --> 01:16:43,149
+Oradaki genel olarak verilmiş olan isimleri verilmiş olan protokola ait mesajların OSPF'teki karşılıkları burada söylenmiş işte.
+
+409
+01:16:43,149 --> 01:16:50,149
+Hello, link state update, link state acknowledge, database description, link state request.
+
+410
+01:16:50,149 --> 01:16:52,149
+Ve yine neyi biliyoruz?
+
+411
+01:16:52,149 --> 01:17:04,520
+Distributive bir şekilde bütün routerlar Dijkstra'nın algoritmasını kullanarak topoloji üzerinde shortest BTS atlıyorlar.
+
+412
+01:17:04,520 --> 01:17:06,520
+Evet.
+
+413
+01:17:06,520 --> 01:17:11,520
+BGP, border gateway protocol.
+
+414
+01:17:11,520 --> 01:17:16,520
+Yani bunu şey diye düşünebilirsiniz, sınır kapısı gibi düşünebilirsiniz.
+
+415
+01:17:16,520 --> 01:17:25,520
+Bir kurumsal yapıdan bir başka kurumsal yapıya geçiliyor.
+
+416
+01:17:25,520 --> 01:17:30,520
+Bir otonom network'ten bir başka otonom network'e geçiliyor.
+
+417
+01:17:30,520 --> 01:17:46,520
+O ikisinin arasında eğer bunlar farklı otonom network'lar olarak sınıflandırıldıysa o şekilde nitelendirildiyse o zaman bunların arasında bir border gateway protocol olması lazım.
+
+418
+01:17:46,520 --> 01:17:48,520
+Aslında çok pardonum.
+
+419
+01:17:48,520 --> 01:18:21,909
+Yani bu ne yapması lazım?
+
+420
+01:18:21,909 --> 01:18:24,909
+Kriterler çok farklı yerlere gidebilir.
+
+421
+01:18:24,909 --> 01:18:28,909
+Dolayısıyla BGP de bu yüzden bir ihtiyaç.
+
+422
+01:18:28,909 --> 01:18:42,140
+Farklı kriterlerle routing yapabilmek için bir şey gibi düşünün, sınır kapısı gibi düşünün.
+
+423
+01:18:42,140 --> 01:18:52,140
+Hani neyin olabileceğini neyin olamayacağını söylediğiniz, neye nasıl davranacağınızı söylediğiniz bir yapı oluşturmanızı sağlıyor.
+
+424
+01:18:52,140 --> 01:18:57,140
+Evet, yani bakın bu bizim için geçerli olan bir şey.
+
+425
+01:18:57,140 --> 01:18:59,140
+Biz eğitim network'üyüz.
+
+426
+01:18:59,140 --> 01:19:03,140
+Eğitim network'ün üzerinden ticari network akıtamazsın.
+
+427
+01:19:03,140 --> 01:19:04,140
+Bu bir kural.
+
+428
+01:19:19,619 --> 01:19:22,619
+Veya daha bir adım ötesine söyleyelim.
+
+429
+01:19:22,619 --> 01:19:24,619
+ULAKBİM'in Türkiye çıkışı var.
+
+430
+01:19:24,619 --> 01:19:34,619
+Bir şekilde Türk Telekom ya ben şu anda ULAKBİM'in çıkışı daha iyi onun üzerinden trafiğini dışarıya göndereyim diyemez.
+
+431
+01:19:34,619 --> 01:19:35,619
+Çünkü neden?
+
+432
+01:19:35,619 --> 01:19:43,619
+Türk Telekom'un veya Süper Online'ın veya işte diğer neyse Kablonet'in trafinin içerisinde ticari trafik de var.
+
+433
+01:19:43,619 --> 01:19:49,619
+İşte ikincisi tamamen politik şey, çok yaşacı ya.
+
+434
+01:19:49,619 --> 01:19:58,619
+İkincisi tamamen işte politik, birbiriyle sıkıntısı olan iki ülkenin trafinin aynı yol üzerinden gönderilmemesi.
+
+435
+01:19:58,619 --> 01:20:03,619
+Veya dışarıya çıkarken daha ucuz olan network'ün seçilmesi.
+
+436
+01:20:03,619 --> 01:20:07,619
+Daha iyi performans olan network'un seçilmesi.
+
+437
+01:20:07,619 --> 01:20:17,619
+Veya işte Apple'ın iki sitesi arasında Google üzerinden gidilmemesi veya Google'un iki sitesi arasında Apple üzerinden gidilmemesi gibi.
+
+438
+01:20:17,619 --> 01:20:19,619
+Trafinin oralardan aktarılmaması gibi.
+
+439
+01:20:19,619 --> 01:20:24,619
+Yani buradaki şeyler teknik kısıtlar değil dikkat edin arkadaşlar.
+
+440
+01:20:24,619 --> 01:20:27,619
+Bunlar yönetimsel kısıtlar.
+
+441
+01:20:28,619 --> 01:20:46,619
+Kurallar yönetim seviyesinde birtakım işte ticari olsun, politik, siyasi olsun veya bundan para kazanıp kazanılmaması, yardım amaçlı olup olmaması falan gibi şeylere bağlı olarak o kısıtlar üzerinden gerçekleşiyor.
+
+442
+01:20:46,619 --> 01:20:51,619
+BGP bunların kural olarak verilebilmesine imkan sağlıyor.
+
+443
+01:20:51,619 --> 01:21:07,619
+Yoksa normalde biz ne diyorduk işte paket kaybı düşük olan, güvenirliği yüksek olan, bant genişliği yüksek olan, bit per second cinsinden daha yüksek performansı olan, gecikmesi düşük olan.
+
+444
+01:21:07,619 --> 01:21:09,619
+Bakın bunların hepsi teknikte.
+
+445
+01:21:09,619 --> 01:21:16,619
+Ama burada saydıklarımız işin içinde parası var, siyaseti var veya başka rekabeti var.
+
+446
+01:21:16,619 --> 01:21:22,250
+Evet evet.
+
+447
+01:21:22,250 --> 01:21:32,250
+Burada da bakın bir iki üç dört tane otonom sistem tariflenmiş.
+
+448
+01:21:32,250 --> 01:21:35,250
+As1'den as4'e kadar.
+
+449
+01:21:35,250 --> 01:21:41,250
+Aynen şey gibi düşünebilirsiniz buradaki birtakım kavramları.
+
+450
+01:21:41,250 --> 01:21:50,250
+Şimdi mesela buradan Amerika'ya uçacaksınız ama Hollanda havayolları ile uçuyorsunuz.
+
+451
+01:21:50,250 --> 01:21:54,250
+O zaman alışkanlık nedir?
+
+452
+01:21:54,250 --> 01:22:02,250
+İstanbul'dan kalkan uçak Hollanda'da diyelim ki Amsterdam'a iner, oradan da yolcu alır, oradan Amerika'ya devam eder.
+
+453
+01:22:02,250 --> 01:22:04,250
+Siz orada ne yaptınız?
+
+454
+01:22:05,250 --> 01:22:10,250
+Bakın burada bir transit geçiş var yani o tariflenmiş.
+
+455
+01:22:10,250 --> 01:22:18,250
+Hedef doğrudan otonom sistem değil ama o otonom sistem üzerinden o trafiği aktarmak gerekiyor.
+
+456
+01:22:18,250 --> 01:22:26,250
+Veya customer dediği doğrudan hedef o otonom sistem oraya gidecek, oraya şey yapacak.
+
+457
+01:22:26,250 --> 01:22:31,250
+Peer'de birbirleriyle eşdeğerde olanlar.
+
+458
+01:22:31,250 --> 01:22:47,250
+O zaman da BGP'de demişler ki kuralda temel olarak yaklaşım transit trafik mi yoksa doğrudan birbirine muadil olan denk düşen trafik mi?
+
+459
+01:22:47,250 --> 01:22:50,250
+Onun üzerinden şey yapalım.
+
+460
+01:22:50,250 --> 01:22:52,250
+Bu ne anlama geliyor?
+
+461
+01:22:52,250 --> 01:22:59,250
+Ben başkası için trafik taşıyorsam taşıdım trafikten para alırım mesela her zaman için bu böyledir.
+
+462
+01:22:59,250 --> 01:23:04,250
+Yurtdışında roaming üzerinden cep telefonu servisine bağlanırsınız.
+
+463
+01:23:04,250 --> 01:23:08,250
+Türkiye'de işte Turkcell'dir, Vodafone'dur, Türk Telekom'dur veya neyse.
+
+464
+01:23:08,250 --> 01:23:17,250
+Oranın o taraflı olan anlaşmasına göre gittiğiniz yerdeki network'e de bir para ödersiniz aslında yaptığınız konuşmadan dolayı.
+
+465
+01:23:17,250 --> 01:23:34,250
+Ama peer yani birbirine muadil, eşdeğer olan yapılar zaten karşılıklı benzer volümde beklediğimiz, benzer volümde trafik aktardıklarına göre birbirlerine yarar sağlıyorlar, karşılıklı yararları var.
+
+466
+01:23:34,250 --> 01:23:42,250
+O zaman oradaki ödeme olmayabilir, başka şekilde veya daha ucuz olabilir, daha farklı bir şekilde olabilir.
+
+467
+01:23:43,250 --> 01:23:49,250
+Bunların hepsi anlayacağınız üzere yönetimle alakalı kurallar bütünü.
+
+468
+01:23:49,250 --> 01:23:52,250
+Yoksa teknikle alakalı değil.
+
+469
+01:23:52,250 --> 01:24:02,250
+BGP bunun verilebilmesine, bu tarz kuralların konulabilmesine ve trafiğinde o kurallara göre akıtılabilmesine, aktarılabilmesine izin tanıyor.
+
+470
+01:24:02,250 --> 01:24:06,250
+Yoksa BGP protokolün de çok böyle ağım şahım bir şey yok.
+
+471
+01:24:06,250 --> 01:24:21,250
+Network'e yeni bir otonom sistem eklendiğinde, bu otonom sistemin bilgisi eklendiği BGP router'dan itibaren onun bağlandığı bütün diğer BGP routerlara adım adım aktarılıyor.
+
+472
+01:24:21,250 --> 01:24:24,250
+Herkes onun network'a girdiğini biliyor.
+
+473
+01:24:24,250 --> 01:24:37,250
+BGP router'la, hangi BGP router'la bağlı olduğunu bildiği için, daha önceden gördüğümüz Bermanford'daki sıkıntılar olmaksız, tekrar tablolarını güncelliyor, hesaplarını yapıyor.
+
+474
+01:24:37,250 --> 01:24:43,250
+Ama o hesapları yaparken de, bu söylediğimiz özel kurallar bütünü üzerinden gerçekleştiriyor.
+
+475
+01:24:43,250 --> 01:24:47,420
+Devam mı [öğrenci]?
+
+476
+01:24:47,420 --> 01:24:48,420
+Evet evet.
+
+477
+01:24:48,420 --> 01:24:53,659
+Propagation var.
+
+478
+01:24:53,659 --> 01:24:59,659
+Bunu üzerinde çok durmaya gerek var mı? Söyleyeceğin bir şey varsa istiyorsan şey yap da bence.
+
+479
+01:24:59,659 --> 01:25:19,470
+Yani aslında propagation dediğimiz şey burada. Bunun da amacı aslında loop'ları kırmak.
+
+480
+01:25:19,470 --> 01:25:27,810
+Geldiği zaman router'ın da geçiyor mu geçmiyor.
+
+481
+01:25:27,810 --> 01:25:30,810
+Geçiyorsa zaten bunu kırıyor olması lazım.
+
+482
+01:25:30,810 --> 01:25:33,810
+Çünkü kapalı close loop'ların oluşmasını istemiyoruz.
+
+483
+01:25:33,810 --> 01:25:41,500
+Close loop oluşması durumda zaten hiçbir yere gidemeyecek o paketler diyebilirim.
+
+484
+01:25:41,500 --> 01:25:46,500
+Başka bir şey beklemeye gerek mi var?
+
+485
+01:25:46,500 --> 01:25:49,500
+Yani buradaki en önemli şeyi söyledin zaten.
+
+486
+01:25:49,500 --> 01:25:53,500
+Kapalı döngü close loop oluşmaması için,
+
+487
+01:25:53,500 --> 01:25:58,500
+otonom sistem şeyinin orada belirtilmesi lazım.
+
+488
+01:25:58,500 --> 01:26:00,500
+PET'inin belirtilmesi lazım.
+
+489
+01:26:00,500 --> 01:26:10,500
+Onu gördüğü anda yani hangi otonom sistemler üzerinden geçtiğini gördüğü anda daha önceden şey varsa, kendisi yer alıyorsa,
+
+490
+01:26:10,500 --> 01:26:14,500
+zaten dediğin gibi orada döngü vardır, kapalı bir şey vardır.
+
+491
+01:26:14,500 --> 01:26:16,500
+Onu devam ettirmemesi lazım.
+
+492
+01:26:16,500 --> 01:26:20,500
+Evet, bir sonrakine geçelim istersen [öğrenci].
+
+493
+01:26:20,500 --> 01:26:29,739
+Bunu siz IP'de biraz söylemiştiniz mi?
+
+494
+01:26:29,739 --> 01:26:32,739
+İşte yeri geldi, konuşacağımız yer geldi.
+
+495
+01:26:32,739 --> 01:26:36,739
+Evet, D-Class.
+
+496
+01:26:36,739 --> 01:26:40,739
+Ama şimdi burada hani slide'a tersten gitmek lazım.
+
+497
+01:26:40,739 --> 01:26:42,739
+Bakın aşağıda ne yazıyor?
+
+498
+01:26:42,739 --> 01:26:47,739
+IP multi-casting is not widely used except within a single network.
+
+499
+01:26:47,739 --> 01:26:51,739
+For example, data center, cable TV network.
+
+500
+01:26:51,739 --> 01:26:59,739
+Yani multi-casting'in çalışabilmesi için belirli şartların olması lazım.
+
+501
+01:26:59,739 --> 01:27:02,739
+Sınırların konulmuş olması lazım.
+
+502
+01:27:02,739 --> 01:27:10,739
+Dünyanın tamamında internet var, o zaman internetin tamamında multi-casting yaparım mümkünatı yok.
+
+503
+01:27:10,739 --> 01:27:14,739
+Broadcasting zaten imkansız, herkese aynı anda her şeyin gitmesi.
+
+504
+01:27:14,739 --> 01:27:21,739
+O zaman demek ki burada ne olması lazım? Kısıtlar olması lazım.
+
+505
+01:27:21,739 --> 01:27:26,739
+Şimdi akla gelen ben bu kısıtları nasıl oluşturacağım?
+
+506
+01:27:26,739 --> 01:27:29,739
+Bir multi-cast grubumu yapmam lazım.
+
+507
+01:27:29,739 --> 01:27:31,739
+Evet, bir multi-cast grubu yapmamız lazım.
+
+508
+01:27:31,739 --> 01:27:38,739
+Yani bir mesajın kimlere gideceğinin, hangi hostlar tarafından alınacağının belirlenmesi gerekiyor.
+
+509
+01:27:38,739 --> 01:27:43,739
+Doğal olarak başlangıçta bu manuel el ile yapılıyor.
+
+510
+01:27:43,739 --> 01:27:45,739
+Fakat yönetilebilir bir şey değil.
+
+511
+01:27:45,739 --> 01:27:47,739
+Otomatik gerçekleşmesi lazım.
+
+512
+01:27:47,739 --> 01:27:52,739
+O zaman da hangi protokol ortaya atılıyor arkadaşlar?
+
+513
+01:27:52,739 --> 01:27:53,739
+ICMP.
+
+514
+01:27:53,739 --> 01:27:58,739
+Bakın ICMP ile IGMP sürekli birbiriyle karışan iki protokoldur.
+
+515
+01:27:58,739 --> 01:28:00,739
+Çünkü birinde C, birinde G var.
+
+516
+01:28:00,739 --> 01:28:03,739
+Ama birbirlerinden dünya kadar farklı.
+
+517
+01:28:03,739 --> 01:28:06,739
+ICMP Internet Grup Management Protokol.
+
+518
+01:28:06,739 --> 01:28:18,739
+IP ile konuşan hostların bir multi-cast grubu oluşturmak adına dinamik şekilde bir araya getirilmesi.
+
+519
+01:28:18,739 --> 01:28:24,739
+Bu grubun güncellenmesi veya bu grubun ortadan kaldırılması.
+
+520
+01:28:24,739 --> 01:28:26,739
+Amaç bu.
+
+521
+01:28:26,739 --> 01:28:34,739
+Şimdi burada zaten konuyu gözden geçirirken, genel routing'e bakarken iki tane şey vardı.
+
+522
+01:28:34,739 --> 01:28:44,739
+Gruptaki, multi-cast grubundaki hostların sayısı fazla mı, az mı üzerine?
+
+523
+01:28:44,739 --> 01:28:49,739
+Eğer fazlaysa reverse path forwarding yapıyorduk.
+
+524
+01:28:49,739 --> 01:28:52,739
+Reverse path forwarding'i de konuşmuştuk.
+
+525
+01:28:52,739 --> 01:28:57,739
+Önce çıkış noktasından varış noktasına kadar ilerliyoruz.
+
+526
+01:28:57,739 --> 01:29:00,739
+Nerelerden geçildiğinin bilgisini kaydediyoruz.
+
+527
+01:29:00,739 --> 01:29:09,739
+O zaman oradan geri döndüğümüzde, geri dönüşte herkes bir ileriden ne olduğunun farkına vardığı için
+
+528
+01:29:09,739 --> 01:29:13,739
+ve oraya kadar da nasıl gelindiğini bildiği için yolları öğrenmiş oluyor.
+
+529
+01:29:13,739 --> 01:29:20,739
+Tabii ki multi-cast olacağı için bütün hostlar olmayacak.
+
+530
+01:29:20,739 --> 01:29:23,739
+Ama hostların büyük bir kısmı olacak.
+
+531
+01:29:23,739 --> 01:29:24,739
+Öyle kabul ediyoruz.
+
+532
+01:29:24,739 --> 01:29:27,739
+Dense, yoğun olduğundan ötürü.
+
+533
+01:29:27,739 --> 01:29:37,739
+Fakat diğer tarafta eğer sparse ise, seyrek ise, bu sefer de core based bir arch yapıyorduk.
+
+534
+01:29:37,739 --> 01:29:48,739
+Neydi? Mümkün olduğunca bütün bu az da olsa hostların kesişimini sağlayacak şekilde,
+
+535
+01:29:48,739 --> 01:30:00,739
+onların arasından geçecek böyle bir yol oluşturacak, bir iskelet oluşturacak şekilde bir ana core atlama yapısı oluşturuyorduk.
+
+536
+01:30:00,739 --> 01:30:10,739
+Diğer hostlarda en yakın noktada multi-cast edilecek veriyi bu core'a aktarmaya çalışıyordu.
+
+537
+01:30:10,739 --> 01:30:13,739
+İki tane yaklaşım var.
+
+538
+01:30:13,739 --> 01:30:16,739
+Bunun ötesinde bir şey söz konusu değil.
+
+539
+01:30:16,739 --> 01:30:22,739
+Bu arada da internet multi-casting'i kullanırken,
+
+540
+01:30:22,739 --> 01:30:31,739
+Klas D altında hani o classless kullanıyoruz ama orjinal class full'da bir D kılası vardı.
+
+541
+01:30:31,739 --> 01:30:35,739
+O D kılası classless, class full fark etmez.
+
+542
+01:30:35,739 --> 01:30:38,739
+Her zaman için ne amacıyla kullanılıyor?
+
+543
+01:30:38,739 --> 01:30:40,739
+Multi-cast için kullanılıyor.
+
+544
+01:30:40,739 --> 01:30:48,739
+Oradaki adresleri normalde internette route edilebilir, erişilebilir host adres olarak kullanma şansımız yok.
+
+545
+01:30:48,739 --> 01:30:50,739
+Devam edebiliriz [öğrenci].
+
+546
+01:30:54,039 --> 01:30:56,960
+Söyle.
+
+547
+01:31:10,420 --> 01:31:12,420
+Aynen, aynen.
+
+548
+01:31:12,420 --> 01:31:17,420
+Ama yani mesela orada şöyle çok net bir örnek verebilirim.
+
+549
+01:31:17,420 --> 01:31:24,420
+Şimdi Kablonet, Turkcell'le Super Online'e anlaşma yaptı.
+
+550
+01:31:26,420 --> 01:31:31,420
+Hani diyebiliriz ki uç kullanıcı açısından baktığımızda,
+
+551
+01:31:31,420 --> 01:31:35,420
+ister oturduğumuz binada Kablonet olsun, ister Super Online olsun.
+
+552
+01:31:35,420 --> 01:31:39,420
+Ben aynı servis haliçeden servis alıyorum.
+
+553
+01:31:39,420 --> 01:31:53,420
+Ama Turkcell TV'nin kutusunu sadece ve sadece Super Online'ın kendisine ait olan hakların geldiği lokasyonlarda kullanabiliyorsunuz.
+
+554
+01:31:54,420 --> 01:32:05,420
+Kablonet anlaşması üzerinden Super Online hizmeti verilen lokasyonlarda Turkcell TV kutusunu kullanamıyorsunuz.
+
+555
+01:32:05,420 --> 01:32:10,420
+Çünkü aslında baktığınızda ortada iki tane servis salıyıcı var.
+
+556
+01:32:10,420 --> 01:32:13,420
+İki farklı network var.
+
+557
+01:32:13,420 --> 01:32:19,420
+Ve bu networkler arasında bu multi-casting geçişi yok.
+
+558
+01:32:19,420 --> 01:32:22,420
+Çünkü zaten normalde olmaması lazım.
+
+559
+01:32:22,420 --> 01:32:26,420
+Bunlar ticari olarak anlaşmış, ortaklık yapmış iki kurum.
+
+560
+01:32:26,420 --> 01:32:35,420
+Fakat hani şey seviyesinde, fiziksel yapı seviyesinde birbirlerinden bağımsız biri native fiber kullanıyor.
+
+561
+01:32:35,420 --> 01:32:40,420
+Diğeri şey kullanıyor, bir yere kadar fiber gidiyor.
+
+562
+01:32:40,420 --> 01:32:44,420
+Çoğu yerde ise coax kablo kullanıyor.
+
+563
+01:32:44,420 --> 01:32:49,420
+O zamanda bu son cümle daha anlamlı oluyor.
+
+564
+01:32:49,420 --> 01:32:53,420
+Within a single network, bakın tek bir network.
+
+565
+01:32:53,420 --> 01:32:59,420
+Az önce verdiğim örnek tek bir network değil, iki tane network'ın bir şekilde birleştirilmesi.
+
+566
+01:32:59,420 --> 01:33:03,420
+Tek bir network olduğunda bunu rahatlıkla kullanabiliyoruz.
+
+567
+01:33:03,420 --> 01:33:10,420
+Farklı networkler varsa internet multi-casting'i kullanma şansımız yok veya çok zor.
+
+568
+01:33:10,420 --> 01:33:15,619
+Devam mı [öğrenci]?
+
+569
+01:33:15,619 --> 01:33:22,420
+Öyle mi ha? Sonunda end varmış yani.
+
+570
+01:33:23,420 --> 01:33:27,420
+Evet, şimdi bakın bunu şöyle anlatabiliriz arkadaşlar.
+
+571
+01:33:27,420 --> 01:33:30,420
+Yine Amerika kıtası verilmiş.
+
+572
+01:33:30,420 --> 01:33:35,630
+Bu V4'e göre olan mobile IP.
+
+573
+01:33:35,630 --> 01:33:41,630
+V6'da aslında buradaki pek çok şeyin değişmiş olması öngörülüyor.
+
+574
+01:33:41,630 --> 01:33:45,630
+Ama hala V4 kullandığımız için bunun üzerinden gözeceğiz.
+
+575
+01:33:45,630 --> 01:33:51,630
+Şimdi bir host, bir lokasyon da duruyor.
+
+576
+01:33:51,630 --> 01:33:53,630
+Oradaki network'e bağlı.
+
+577
+01:33:53,630 --> 01:33:57,630
+Ve oradaki network'ten servis alıyor.
+
+578
+01:33:57,630 --> 01:34:03,630
+Ancak bu host'un özelliği hareketli olması, mobile bir host olması.
+
+579
+01:34:03,630 --> 01:34:14,630
+Servis aldığı lokasyon da kendisine servis veren bir home agent isimli servis var.
+
+580
+01:34:14,630 --> 01:34:18,630
+Aslında home agent'ın yaptığı yegane şey şu.
+
+581
+01:34:18,630 --> 01:34:22,630
+Ben çok basitleştirerek söylüyorum ama kafanızda canlansın diye.
+
+582
+01:34:22,630 --> 01:34:26,630
+Arka taraftaki implementasyonu tabi ki çok ciddi bir implementasyon.
+
+583
+01:34:26,630 --> 01:34:29,630
+Onun basit olduğunu düşünmemek lazım.
+
+584
+01:34:29,630 --> 01:34:37,630
+Bu mobile host'un IP adresini ve MAC adresini kendisinde tutuyor.
+
+585
+01:34:37,630 --> 01:34:53,300
+Eğer mobile host, home agent'ın olduğu network'teyse ve çalışıyorsa aktifse, network'e bağlıysa, home agent hiçbir şey yapmıyor.
+
+586
+01:34:53,300 --> 01:34:54,300
+Çünkü neden?
+
+587
+01:34:54,300 --> 01:35:01,300
+Gelen giden paketler doğrudan mobile host'a gelecek, mobile host'tan gidecekler.
+
+588
+01:35:01,300 --> 01:35:04,300
+Ama diyelim ki bu mobile host'u aldık biz.
+
+589
+01:35:05,300 --> 01:35:11,300
+İşte bakın bir yakadan öbür yakaya götürdük.
+
+590
+01:35:11,300 --> 01:35:16,979
+Sağdaydı, sola geldi.
+
+591
+01:35:16,979 --> 01:35:30,979
+Şimdi burada bu mobile host'un sağ taraftaki adresin aynısına sahip olması maalesef V4 kapsamında mümkün değil.
+
+592
+01:35:30,979 --> 01:35:33,979
+Farklı bir adrese sahip olması gerekiyor.
+
+593
+01:35:33,979 --> 01:35:39,739
+Buna care of adresi deniyor.
+
+594
+01:35:39,739 --> 01:35:48,739
+Yani o mobile host'u network'te erişilebilir kılmak adına ona geçici bir adres veriyoruz.
+
+595
+01:35:48,739 --> 01:35:53,739
+Peki bu adresi ona aslında ne veriyor?
+
+596
+01:35:53,739 --> 01:35:55,739
+Bir foreign agent veriyor.
+
+597
+01:35:56,739 --> 01:36:14,739
+Home agent tarzı çalışan ama görevi care of adresi vermek olan ve o mobile hostların network'e katılmasını, network'te hareketli olmasını sağlayacak olan bir başka servis.
+
+598
+01:36:14,739 --> 01:36:22,739
+Mobile host diyor ki ben buyum, ben senin yetki bölgende bulunuyorum ve bana bir adres vermeni istiyorum.
+
+599
+01:36:22,739 --> 01:36:27,739
+Aslında benim orijinal home adresim de şu.
+
+600
+01:36:27,739 --> 01:36:29,739
+Bağlı olduğum home agent da bu.
+
+601
+01:36:29,739 --> 01:36:34,739
+Foreign agent bu bilgiyi home agent ile check ediyor.
+
+602
+01:36:34,739 --> 01:36:44,739
+Hakikaten mobile host'un iddia ettiği host olduğunu onayladığında mobile host da yeni bir IP adresi veriyor.
+
+603
+01:36:44,739 --> 01:36:48,739
+Süper şu anda mobile host'un IP adresi var.
+
+604
+01:36:48,739 --> 01:36:52,739
+Ama bakın sol taraf en yukarıda bir tane sender var.
+
+605
+01:36:52,739 --> 01:36:57,739
+Mobile host'un hareketli olduğunun farkında değil, bilmek zorunda da değil.
+
+606
+01:36:57,739 --> 01:37:00,739
+Ve onun hangi adresini biliyor?
+
+607
+01:37:00,739 --> 01:37:07,739
+Gerçekte home agent'ın olduğu network'teki adresini biliyor ve oraya bir paket gönderiyor.
+
+608
+01:37:08,739 --> 01:37:15,739
+Şimdi eğer home agent, hani o proxy ARP'den falan bahsetmiştik ya,
+
+609
+01:37:15,739 --> 01:37:27,739
+bu mobile host'un IP adresini işte neyse MAC adresini kendi üzerine almamış olsaydı bu paket hedefine hiçbir zaman gidemeyecekti.
+
+610
+01:37:27,739 --> 01:37:29,739
+Çünkü niye mobile host orada değil?
+
+611
+01:37:29,739 --> 01:37:35,739
+Ama kendi üzerine aldığı için mobile host adına gelen bu paketi alıyor.
+
+612
+01:37:35,739 --> 01:37:39,739
+Ve bu paketi nereye gönderiyor?
+
+613
+01:37:39,739 --> 01:37:47,739
+Sol tarafta aşağıda foreign agent'ın yetki alanında bulunan mobile host'un yeni adresine.
+
+614
+01:37:47,739 --> 01:37:50,739
+Peki bu yeni adresi nereden öğrendi?
+
+615
+01:37:50,739 --> 01:37:55,739
+Foreign agent bu mobile host'u kaydederken, ona care of adresi verirken,
+
+616
+01:37:55,739 --> 01:37:59,739
+bu bilgiyi aynı zamanda nereye aktardı, kime aktardı?
+
+617
+01:37:59,739 --> 01:38:01,739
+Home agent'a aktardı.
+
+618
+01:38:01,739 --> 01:38:13,310
+Böylece sender farkına varmadan onun gerçek adresine gönderildiğini düşünürken,
+
+619
+01:38:13,310 --> 01:38:21,010
+o sırada hareketli olan bir adresine göndermiş oluyor.
+
+620
+01:38:21,010 --> 01:38:27,010
+Mobile host sender'den kendisine gelen pakete cevap veriyor.
+
+621
+01:38:27,010 --> 01:38:29,010
+O doğrudan gönderebilecek durumda.
+
+622
+01:38:29,010 --> 01:38:30,010
+Çünkü neden?
+
+623
+01:38:30,010 --> 01:38:34,010
+Source adresi, hatırlayın bir source destination adresi vardı.
+
+624
+01:38:34,010 --> 01:38:37,010
+Source adresi doğrudan sender, ona gönderiyor.
+
+625
+01:38:37,010 --> 01:38:51,010
+Ve onun üzerine sender aslında mobile host'a şu an için yeni bir adresten erişmesi gerektiğini,
+
+626
+01:38:51,010 --> 01:38:55,010
+yani home adresi kullanmaması gerektiğini öğreniyor.
+
+627
+01:38:55,010 --> 01:39:06,010
+Böylece home agent, mobile host aktarımı yerine daha sonra doğrudan hangi adrese,
+
+628
+01:39:06,010 --> 01:39:09,010
+care of adresine gönderebilir hale geliyor.
+
+629
+01:39:09,010 --> 01:39:10,010
+Mantık bu.
+
+630
+01:39:10,010 --> 01:39:14,010
+Şimdi cidden karmaşık bir yapı çalışıyor mu?
+
+631
+01:39:14,010 --> 01:39:15,010
+Çalışıyor.
+
+632
+01:39:15,010 --> 01:39:21,010
+Ama IPv6'ya geçmiş olsaydık, tamamen onu kullanıyor olsaydık,
+
+633
+01:39:21,010 --> 01:39:24,010
+bu kadar karmaşık bir yapı olmayacaktı.
+
+634
+01:39:24,010 --> 01:39:32,010
+O zaman bu home adres, care of adres olayları otomatikman çözülmüş olacaktı.
+
+635
+01:39:32,010 --> 01:39:43,010
+Mobile host nerede olursa olsun, hep aynı adresten kendisine değişiklik olmadan erişilebilir bir yapı içerisinde yer alacaktı.
+
+636
+01:39:43,010 --> 01:39:45,010
+Var mı ekleyicenci?
+
+637
+01:39:45,010 --> 01:39:46,010
+Yok hocam.
+
+638
+01:39:46,010 --> 01:39:47,010
+Tamam.
+
+639
+01:39:47,010 --> 01:39:51,010
+O zaman dersi bitirdik.
+
+640
+01:39:51,010 --> 01:39:54,010
+Network layer'ı da bitirdik.
+
+641
+01:39:54,010 --> 01:39:59,739
+Haftaya sınavda görüşmek üzere arkadaşlar.
+
+642
+01:39:59,739 --> 01:40:03,170
+Var mı?
+
+643
+01:40:03,170 --> 01:40:05,170
+Günler hocam dedi arkadaşlar bile.
+
+644
+01:40:05,170 --> 01:40:06,170
+Güzel.
+
+645
+01:40:06,170 --> 01:40:07,170
+Ben de sizden iyi günler dileyim.
+
+646
+01:40:07,170 --> 01:40:08,170
+Bir soru sorabilir miyim?
+
+647
+01:40:08,170 --> 01:40:13,170
+Bir yabancı bir arkadaş şey sormuştu, sınav İngilizce olacak herhalde olacak mı demişti?
+
+648
+01:40:13,170 --> 01:40:15,170
+Evet İngilizce.
+
+649
+01:40:15,170 --> 01:40:16,170
+Teşekkür ederim.
+
+650
+01:40:16,170 --> 01:40:30,460
+Kimlerle anlatıyoruz şeylerle anlatıyoruz.
+
+651
+01:40:30,460 --> 01:40:42,460
+Böyle şeyler sorularda böyle bir gecekondu durumu yaşanmaması altına sorunun da İngilizce olması daha net oluyor ki orada sorulardaki İngilizce böyle alakışı anlayan bir tarafı yok.
+
+652
+01:40:42,460 --> 01:40:45,460
+İngilizce de diyeti yapmıyoruz sonuç olarak.
+
+653
+01:40:45,460 --> 01:40:47,460
+Sıfırta olacağını da sağlıyorum.
+
+654
+01:40:47,460 --> 01:40:48,460
+Aynen.
+
+655
+01:40:48,460 --> 01:40:54,539
+İyiler.
+
+656
+01:40:54,539 --> 01:40:55,539
+Inşallah.
+
+657
+01:40:55,539 --> 01:40:57,539
+Düzgün durumda.
+
+658
+01:40:57,539 --> 01:41:02,539
+O zaman herkese iyi günler, sağlıklı günler diliyorum.
+
+659
+01:41:02,539 --> 01:41:04,539
+Sağlıklı günler diliyoruz arkadaşlar.
+
+660
+01:41:04,539 --> 01:41:12,760
+Teşekkürler, iyi günler.
+
+661
+01:41:12,760 --> 01:41:15,760
+Sağ olun, teşekkürler. İyi günler.
+

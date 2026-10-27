@@ -1,0 +1,3808 @@
+1
+00:00:57,549 --> 00:01:01,270
+Merhaba arkadaşlar. Sesim geliyor mu? Kontrol yapalım.
+
+2
+00:01:03,170 --> 00:01:04,730
+Çete yazar mısınız sesim geliyorsa?
+
+3
+00:01:13,480 --> 00:01:14,099
+Geliyor hocam.
+
+4
+00:01:14,659 --> 00:01:20,799
+Tamam arkadaşlar tamam. 10 geçe başlayacağız. Arkadaşlar toparlansınlar belki diğer dersten çıkıp direkt geliyorlardır.
+
+5
+00:01:21,799 --> 00:09:21,610
+10 geçe gibi başlayacağız. Arkadaşlar yavaş yavaş başlayalım istiyorsanız. 8 geçe.
+
+6
+00:09:23,049 --> 00:09:26,210
+Bugün size SQL injection'ı göstereceğim.
+
+7
+00:09:26,210 --> 00:09:31,769
+Ben geçen hafta buffer overflow'u yapmıştık. Geçen hafta derken, geçen derste.
+
+8
+00:09:33,490 --> 00:09:38,450
+Bu da bir arayüzü üzerinden gerçekleştiren bir saldırı türü.
+
+9
+00:09:39,370 --> 00:09:42,230
+Bugün size bununla anlatacağım. Önce low seviyesini anlatacağım.
+
+10
+00:09:43,009 --> 00:09:46,210
+Çünkü bu çok daha kompleks saldırılar yapılabiliyor bu SQL injection ile.
+
+11
+00:09:46,590 --> 00:09:51,649
+Aşama aşama göstereceğim. Low ile başlayacağım. Önce SQL injection'ı kurduğum ortama anlatacağım size.
+
+12
+00:09:52,009 --> 00:09:55,649
+Sonra SQL injection'ın düşük seviyeler saldırılarına.
+
+13
+00:09:56,210 --> 00:10:00,049
+Göstereceğim. Onlara karşı ne tür önlemler alınabilir onları göstereceğim.
+
+14
+00:10:00,570 --> 00:10:05,429
+Daha sonra önümüzdeki hafta medium ve high ile devam edeceğim yine SQL injection'a.
+
+15
+00:10:06,450 --> 00:10:11,830
+O şekilde devam edeceğiz. Bundan sonra bütün lab'ları arka arka yapmayı düşünüyorum.
+
+16
+00:10:12,090 --> 00:10:14,389
+Bizi haftası hariç bütün haftaları arka arka yapacağım.
+
+17
+00:10:14,649 --> 00:10:18,230
+Ama tabii takvimi size Avesta'da duyuracağım. Güncel olarak göreceksiniz.
+
+18
+00:10:19,250 --> 00:10:22,830
+Siz sürekli Avesta sayfasını takip ediyor olmanız gerekiyor.
+
+19
+00:10:27,799 --> 00:10:29,580
+Sesim geliyor değil mi? Son bir kontrol yapayım.
+
+20
+00:10:30,659 --> 00:10:36,039
+Sınav tarihi belli mi? Arkadaşlar sınav tarihini ben yapmıyorum. Sınavlarınızı ben yapmıyorum.
+
+21
+00:10:36,299 --> 00:10:37,320
+Dersim hocası yapıyor.
+
+22
+00:10:37,820 --> 00:10:39,620
+Ben sadece uygulama derslerine giriyorum.
+
+23
+00:10:41,419 --> 00:10:43,460
+O yüzden hocanıza sormanız gerekiyor.
+
+24
+00:10:43,980 --> 00:10:49,100
+Ama yanlış hatırlamıyorsam 8. hafta bize haftası olarak belirlenmiş.
+
+25
+00:10:49,600 --> 00:10:52,679
+En azından lisans üstünde öyle. Sizin için nasıl bilmiyorum.
+
+26
+00:10:53,179 --> 00:10:55,740
+Bence bir sormanızda fayda var hocanın dersim hocasına.
+
+27
+00:10:56,259 --> 00:10:58,059
+Bu konuda muhatap olacağınız kişi ben değilim.
+
+28
+00:11:00,769 --> 00:11:02,049
+Dersim hocası
+
+29
+00:11:02,610 --> 00:11:03,129
+Evet.
+
+30
+00:11:03,370 --> 00:11:04,909
+Dersim hocası da ben bakmıyorum demiş olabilir.
+
+31
+00:11:05,690 --> 00:11:07,470
+Ben kesin bakmıyorum. O kesin.
+
+32
+00:11:08,490 --> 00:11:12,090
+Ben size bir şey söyleyemem sınavlarla ilgili. Çünkü dersim hocası yapacak sınavınızı. Ben değil.
+
+33
+00:11:13,370 --> 00:11:16,950
+Benim tek sizin için söyleyebileceğim bir şey.
+
+34
+00:11:18,730 --> 00:11:21,049
+Bu uygulamalarla ilgili size belki bir ödev verilebilir.
+
+35
+00:11:22,070 --> 00:11:24,370
+Verilen ödevle ilgili ancak size bir duyur yapabilirim.
+
+36
+00:11:24,889 --> 00:11:26,929
+Onun dışında sınavlarla ilgili size bilgi veremem.
+
+37
+00:11:27,190 --> 00:11:28,970
+Yani ne zaman olur ne zaman olamaz. Çünkü
+
+38
+00:11:29,230 --> 00:11:30,009
+benlik bir şey değil.
+
+39
+00:11:30,509 --> 00:11:31,029
+Tamam mı?
+
+40
+00:11:34,080 --> 00:11:34,600
+Devam edelim.
+
+41
+00:11:35,620 --> 00:11:36,379
+Başlayalım baştan.
+
+42
+00:11:37,159 --> 00:11:38,940
+SQL Injection'ı anlatacağımı söylemiştim.
+
+43
+00:11:39,720 --> 00:11:42,519
+SQL Injection'ı kurduğum bir uygulama var aslında.
+
+44
+00:11:42,779 --> 00:11:44,580
+SQL Injection'ı yapacağımız bir platform var.
+
+45
+00:11:44,840 --> 00:11:45,860
+Bu platformda
+
+46
+00:11:46,360 --> 00:11:48,919
+XSS yani Cross Site Scripting ve
+
+47
+00:11:49,440 --> 00:11:50,980
+Cross Site Request Forgery
+
+48
+00:11:51,240 --> 00:11:55,080
+konularını da bu uygulama üzerinden anlatacağım. O yüzden belki uygulamayı kurmak istersiniz diye
+
+49
+00:11:55,580 --> 00:11:58,399
+ilk sorumun başında uygulamayı nasıl kurduğumu size göstereceğim.
+
+50
+00:11:58,659 --> 00:11:59,419
+Biraz da
+
+51
+00:12:00,960 --> 00:12:03,000
+SQL Injection'ın saldırısını uyguladığımız
+
+52
+00:12:03,259 --> 00:12:04,039
+platformu
+
+53
+00:12:04,840 --> 00:12:07,399
+bilmeniz de önemli tabii ki. Yani nasıl kullanacağınızı.
+
+54
+00:12:07,919 --> 00:12:08,679
+O yüzden ilk
+
+55
+00:12:08,940 --> 00:12:10,740
+sunumun ilk kısmına da bu alana yer verdim.
+
+56
+00:12:11,240 --> 00:12:13,039
+Şimdi kullanacağımız uygulamanın adı
+
+57
+00:12:13,559 --> 00:12:15,860
+Dem Vulnerable Web Application. Bir web application.
+
+58
+00:12:16,360 --> 00:12:17,899
+PHP ve MySQL yazılmış.
+
+59
+00:12:18,419 --> 00:12:20,460
+Web sunucu tarafında PHP skriptleri var.
+
+60
+00:12:20,720 --> 00:12:23,279
+MySQL'de de database tarafında. Böyle bir web uygulaması var.
+
+61
+00:12:23,799 --> 00:12:24,559
+Bu uygulama
+
+62
+00:12:24,820 --> 00:12:26,600
+üzerine bir takım formlar var. Formlar
+
+63
+00:12:27,120 --> 00:12:28,139
+seviye seviye
+
+64
+00:12:29,159 --> 00:12:30,200
+şey olmuş durumda.
+
+65
+00:12:30,960 --> 00:12:34,039
+Seviye seviye seviye. Güvenlik protokolleri uygulanmış.
+
+66
+00:12:34,340 --> 00:12:36,120
+Biz bunu seviye seviye aşamaya çalışacağız.
+
+67
+00:12:36,379 --> 00:12:38,679
+Bugün de Love'dan başlayacağız SQL Injection üzerinden.
+
+68
+00:12:38,940 --> 00:12:42,519
+Tabii ki burada farksallar da yapılabilir. Brute Force saldırıları, Command Injection işte.
+
+69
+00:12:42,779 --> 00:12:44,840
+İstediğim için zaten XSSS herifede yapacağız.
+
+70
+00:12:45,340 --> 00:12:48,159
+Ama biz bugün SQL Injection için kullanacağız bu uygulamayı.
+
+71
+00:12:48,679 --> 00:12:49,960
+Bu uygulama kurulumuna geçelim.
+
+72
+00:12:50,720 --> 00:12:53,279
+Öncelikle ben Ubuntu 18.04 kurduğum
+
+73
+00:12:53,539 --> 00:12:55,320
+bu uygulamayı test edip size göstermek için.
+
+74
+00:12:56,360 --> 00:12:58,139
+Siz de belki farklı
+
+75
+00:12:58,659 --> 00:12:59,159
+bir
+
+76
+00:13:01,220 --> 00:13:02,500
+işlem sistemi kullanabilirsiniz.
+
+77
+00:13:03,000 --> 00:13:03,519
+Size kalmış bir şey.
+
+78
+00:13:03,519 --> 00:13:06,600
+Ama ben Ubuntu 18.04 için yaptığım kurulum için
+
+79
+00:13:07,100 --> 00:13:07,620
+size
+
+80
+00:13:07,879 --> 00:13:08,639
+sunumda yer verdim.
+
+81
+00:13:08,899 --> 00:13:10,440
+Nasıl kurulacak kurulum yapacağınıza ilişkin.
+
+82
+00:13:11,460 --> 00:13:17,600
+Öncelikle sudo ile, sudo apt ile apt paketini güncelliyorsunuz ki son sürüm kutuphaneleri indirebilirsiniz.
+
+83
+00:13:18,620 --> 00:13:20,159
+Daha sonra
+
+84
+00:13:20,419 --> 00:13:25,799
+burada da şu tek satır komutu çalıştırarak aslında Apache 2 web sunucusunu, MySQL
+
+85
+00:13:26,039 --> 00:13:27,080
+veritabanı sunucusunu,
+
+86
+00:13:27,580 --> 00:13:29,120
+PHP modülünü,
+
+87
+00:13:29,379 --> 00:13:31,159
+PHP MySQL Connector'ını
+
+88
+00:13:31,679 --> 00:13:31,940
+ve
+
+89
+00:13:32,200 --> 00:13:32,960
+PHP'nin işte
+
+90
+00:13:32,960 --> 00:13:34,759
+Apache 2 ile ilgili
+
+91
+00:13:35,000 --> 00:13:37,559
+diğer kutuphanelerini indirip en sonunda git'i indiriyoruz.
+
+92
+00:13:37,820 --> 00:13:39,879
+Tek satır kodla bu bütün
+
+93
+00:13:40,379 --> 00:13:42,440
+gerekli olan temel şeyleri indirebiliyorsunuz.
+
+94
+00:13:42,679 --> 00:13:43,720
+Daha sonra şu
+
+95
+00:13:44,220 --> 00:13:45,759
+altışağıdaki linkteki de
+
+96
+00:13:46,279 --> 00:13:46,779
+bizim
+
+97
+00:13:47,039 --> 00:13:50,879
+web uygulamamızın kod temel kodlarının, source kaynak kodlarının bulunduğu GitHub sayfası.
+
+98
+00:13:51,139 --> 00:13:53,960
+Git'i de bir önceki komutta o yüzden kullanmıştık.
+
+99
+00:13:55,240 --> 00:13:56,259
+Üçüncü klonlayacağız.
+
+100
+00:13:58,559 --> 00:14:02,659
+Demo web application'ı arkadaşlar indiriyoruz, klon yapıyoruz önce git git ile.
+
+101
+00:14:02,960 --> 00:14:04,240
+Daha sonra
+
+102
+00:14:04,500 --> 00:14:08,080
+mevcut default gelen index sayfasını silip kendi web uygulamamızı koyuyoruz.
+
+103
+00:14:10,120 --> 00:14:10,899
+Daha sonra
+
+104
+00:14:11,919 --> 00:14:13,960
+şu html sayfasına gidip
+
+105
+00:14:14,220 --> 00:14:14,740
+şu
+
+106
+00:14:15,759 --> 00:14:17,559
+html klasörüne gidip
+
+107
+00:14:18,059 --> 00:14:20,879
+PHP config için yapacağımız ayarlar için son haline gelmiş oluyoruz.
+
+108
+00:14:21,139 --> 00:14:22,919
+Son bulmamız gereken direktöre gelmiş oluyoruz.
+
+109
+00:14:23,179 --> 00:14:23,700
+İkinci adımda
+
+110
+00:14:24,460 --> 00:14:26,259
+şu dosyanın ismini
+
+111
+00:14:27,019 --> 00:14:28,820
+bu şekilde değiştiriyorsunuz tamam mı?
+
+112
+00:14:30,600 --> 00:14:31,639
+Sonra bir tık
+
+113
+00:14:31,879 --> 00:14:32,919
+izinleri vermeniz gerekiyor.
+
+114
+00:14:33,220 --> 00:14:39,360
+Genel kullanım için bazı klasörlerdeki bazı dosyalara izinler vermeniz gerekiyor, vermeniz gereken izinler de burada
+
+115
+00:14:39,620 --> 00:14:40,120
+plot almış.
+
+116
+00:14:40,639 --> 00:14:42,679
+İsterseniz hiç uğraşmayın hepsini yedi yediye de verebilirsiniz.
+
+117
+00:14:42,940 --> 00:14:44,740
+Ben gerekli izinleri verdim sadece.
+
+118
+00:14:47,039 --> 00:14:47,559
+Burada
+
+119
+00:14:48,059 --> 00:14:49,600
+PHP konfigürasyonların
+
+120
+00:14:49,860 --> 00:14:51,399
+off'tan on yapılması gerekiyor.
+
+121
+00:14:52,159 --> 00:14:56,259
+Tamam mı arkadaşlar? Bunlar web uygulamamız. Şu ana kadar yaptığımız şey web uygulamamız. Kurup gerekli ayarlar yapmamız.
+
+122
+00:14:56,519 --> 00:14:59,580
+Daha sonra yaptığımız bütün ayarların aktif olması için
+
+123
+00:14:59,840 --> 00:15:01,879
+Apache servisine tekrar başlıyoruz.
+
+124
+00:15:03,720 --> 00:15:06,039
+Kurduktan sonra böyle bir sayfa gelecek ekranımıza.
+
+125
+00:15:07,559 --> 00:15:08,600
+Burada
+
+126
+00:15:09,879 --> 00:15:13,200
+yapılan konfigürasyon sonucu ayarların son durumunu görebileceğiniz bir panel var.
+
+127
+00:15:14,740 --> 00:15:16,279
+Create
+
+128
+00:15:16,779 --> 00:15:20,879
+Reset database dediğimizde ilk başta MySQL sonuçta konfigürasyon yapılmadığını göreceksiniz.
+
+129
+00:15:21,399 --> 00:15:22,679
+Konfigürasyonları yapmak için de
+
+130
+00:15:23,960 --> 00:15:25,740
+bu site'deki görmüş olduğunuz komut
+
+131
+00:15:26,000 --> 00:15:30,600
+izinleri vermeniz gerekiyor. MySQL kullanısına izinleri vermeniz gerekiyor, yetkileri vermeniz gerekiyor.
+
+132
+00:15:31,639 --> 00:15:32,919
+Yalnız burada şirket mezeye
+
+133
+00:15:33,220 --> 00:15:38,080
+arkadaşlar bunu arka arkaya MySQL'den çıkmadan yapmanız gerekiyor. Çünkü Flash Payroll izledikten sonra
+
+134
+00:15:38,840 --> 00:15:41,659
+MySQL'den çıkarsanız bir daha giremeyebilirsiniz. Bu da
+
+135
+00:15:41,919 --> 00:15:42,940
+ya MySQL'in
+
+136
+00:15:43,200 --> 00:15:46,779
+konfigürasyon dosyalarına girip kurcalamanız gerekecek ya da baştan çıkıp kurmanız gerekecek demek.
+
+137
+00:15:47,299 --> 00:15:50,879
+O yüzden bunları arka arkaya MySQL'den exit yapmadan tek seferde çalıştırmayı deneyin.
+
+138
+00:15:51,899 --> 00:15:53,179
+Bu şekilde tavsiye ediyorum size.
+
+139
+00:15:53,960 --> 00:15:56,519
+Daha sonra Create and Reset Database'e bastığımızda
+
+140
+00:15:57,019 --> 00:16:00,600
+bizim yapacağımız saldırılar için gerekli olan
+
+141
+00:16:00,860 --> 00:16:01,639
+birtakım
+
+142
+00:16:02,139 --> 00:16:02,659
+bilgiler
+
+143
+00:16:02,960 --> 00:16:03,980
+sisteme yüklenmiş oluyor.
+
+144
+00:16:04,500 --> 00:16:06,039
+Şimdi ben bunun yapılmış halini size göstereyim.
+
+145
+00:16:07,559 --> 00:16:08,600
+Yapılmış hali arkadaşlar.
+
+146
+00:16:11,379 --> 00:16:12,139
+Bakın burada
+
+147
+00:16:14,519 --> 00:16:15,019
+görüyorsunuz.
+
+148
+00:16:16,299 --> 00:16:17,340
+Şimdi sayfayı
+
+149
+00:16:17,580 --> 00:16:18,860
+en başta Home'a gelelim tekrar.
+
+150
+00:16:22,460 --> 00:16:24,500
+Gördüğünüz gibi Setup and Reset dediğimde
+
+151
+00:16:26,299 --> 00:16:28,340
+Işıkta olması gerekiyor ayarlarınızın.
+
+152
+00:16:31,450 --> 00:16:33,230
+Create and Reset Database dediğim
+
+153
+00:16:35,029 --> 00:16:39,370
+her şeyi yaptı. Setup suksesful dedi tamam mı? Bakın şu an kullanım hazır. Şu an sizinize her saldırı yapabiliyoruz.
+
+154
+00:16:40,409 --> 00:16:41,169
+Öncelikle
+
+155
+00:16:41,929 --> 00:16:42,970
+SQL injection'a geçiyoruz.
+
+156
+00:16:43,529 --> 00:16:47,610
+Bizim bugün yapacağımız saldırılar burada. Bu arada saldırıları yapmadan önce şuradan Security
+
+157
+00:16:47,870 --> 00:16:48,889
+ekmesine gelip
+
+158
+00:16:49,409 --> 00:16:49,929
+burada
+
+159
+00:16:50,169 --> 00:16:50,690
+bütün
+
+160
+00:16:50,950 --> 00:16:52,230
+saldırı yöntemleri için
+
+161
+00:16:52,730 --> 00:16:54,009
+alınacak yöntemlerin
+
+162
+00:16:54,269 --> 00:16:55,289
+güvenlik seviyeleri var.
+
+163
+00:16:55,809 --> 00:16:56,330
+Tamam mı?
+
+164
+00:16:57,350 --> 00:16:57,850
+Burada
+
+165
+00:16:58,110 --> 00:16:59,129
+güvenlik seviyelerini değiştirebiliyoruz.
+
+166
+00:16:59,909 --> 00:17:00,929
+Low yaptığımız zaman
+
+167
+00:17:01,190 --> 00:17:05,029
+sadece SQL injection'ın low saldırılarını yapabiliyoruz veya ne bileyim XSS'in low
+
+168
+00:17:05,289 --> 00:17:06,309
+seviye saldırılarını yapabiliyoruz.
+
+169
+00:17:06,569 --> 00:17:07,069
+Ya da
+
+170
+00:17:07,329 --> 00:17:10,650
+Brute Force'un low seviye saldırılarını yapabiliyoruz. Medium yaptığımız zaman Medium.
+
+171
+00:17:10,910 --> 00:17:11,930
+High yaptığımızda High.
+
+172
+00:17:11,930 --> 00:17:13,470
+Peki bu low-medium-high ne oluyor?
+
+173
+00:17:14,230 --> 00:17:18,069
+Medium biraz daha kompleks saldırılar. High daha da kompleks saldırılar.
+
+174
+00:17:18,589 --> 00:17:21,410
+Low da ise gayet basit saldırılarla sistemi çökertebiliyoruz. Yani sistemin
+
+175
+00:17:21,650 --> 00:17:24,730
+güvenlik seviyelerinin, güvenlik bariyerlerinin seviyeleri aslında bunlar.
+
+176
+00:17:26,529 --> 00:17:29,849
+Buradan değiştirebiliyoruz. Biz low ile başlayacağımız için low yapıp Submit ediyorum.
+
+177
+00:17:30,109 --> 00:17:31,130
+Şu an sistemin bütün
+
+178
+00:17:31,650 --> 00:17:32,930
+şeyleri değişti.
+
+179
+00:17:33,170 --> 00:17:34,970
+Bütün saldırıları için low'dan devam edeceğiz.
+
+180
+00:17:35,990 --> 00:17:39,829
+SQL injection'ı açıyorum. Bugün size burayı anlatacağım. Burada çok basit bir form görüyorsunuz ekranda.
+
+181
+00:17:40,349 --> 00:17:41,890
+Bununla ilgili yapacağımız işlemler için bir segelik var.
+
+182
+00:17:42,150 --> 00:17:43,930
+Göstereceğim. Normalde bir yazınca
+
+183
+00:17:45,470 --> 00:17:45,990
+Admin
+
+184
+00:17:47,009 --> 00:17:47,769
+iki yazınca da
+
+185
+00:17:48,289 --> 00:17:49,829
+iki no'lu kullanıcıları gösteren
+
+186
+00:17:50,589 --> 00:17:52,890
+bir form ekranı var. Şimdi bunu MySQL'den görelim.
+
+187
+00:17:53,150 --> 00:17:53,670
+Arkadaşlar
+
+188
+00:17:59,359 --> 00:18:00,380
+şöyle yapalım. Show
+
+189
+00:18:00,640 --> 00:18:02,180
+Databases diyelim önce.
+
+190
+00:18:04,440 --> 00:18:05,980
+Gördünüz mü? MySQL'de
+
+191
+00:18:06,240 --> 00:18:08,799
+benim zaten şu Information Scheme'a default gelen bir
+
+192
+00:18:10,599 --> 00:18:11,880
+tabloların
+
+193
+00:18:12,119 --> 00:18:15,200
+bütün database'lerin
+
+194
+00:18:15,720 --> 00:18:17,759
+schema'ları ne olduğu bir bilgi tablosu bu.
+
+195
+00:18:17,759 --> 00:18:19,299
+İkincisi bizim tablomuz.
+
+196
+00:18:19,559 --> 00:18:21,859
+İkincisi MySQL'in kendisine ait bir takım
+
+197
+00:18:22,119 --> 00:18:28,000
+parametre konfigürasyonunu tuttuğu tablo. Diğerleri de aynı şekilde MySQL'e ait default tablolar. Yani bizim database'imiz aslında
+
+198
+00:18:28,519 --> 00:18:29,799
+dbva database'i.
+
+199
+00:18:31,079 --> 00:18:32,359
+O zaman show
+
+200
+00:19:07,369 --> 00:19:08,650
+database'imize yerleştik.
+
+201
+00:19:08,910 --> 00:19:09,410
+Show
+
+202
+00:19:10,950 --> 00:19:13,250
+tables dedikten sonra. Burada da iki tane
+
+203
+00:19:13,509 --> 00:19:14,789
+tablomuzun olduğunu görüyoruz.
+
+204
+00:19:15,049 --> 00:19:15,549
+gsbugs
+
+205
+00:19:15,809 --> 00:19:16,829
+users şeklinde.
+
+206
+00:19:17,349 --> 00:19:20,430
+Hatırlarsanız biz bunları create'den de SAP database kitimizde kurmuşlardı.
+
+207
+00:19:25,660 --> 00:19:28,460
+Database'mizde beş tane kullanıcı varmış. İlk kullanıcı adıymış.
+
+208
+00:19:28,720 --> 00:19:29,740
+Bu şekilde bir tablomuz var.
+
+209
+00:19:30,000 --> 00:19:30,519
+Şimdi
+
+210
+00:19:30,779 --> 00:19:32,059
+sunuma göre dönelim tekrar.
+
+211
+00:19:32,559 --> 00:19:33,579
+Sunumdan devam edelim.
+
+212
+00:19:37,529 --> 00:19:39,049
+SQLogics nasıl bir saldırı?
+
+213
+00:19:40,920 --> 00:19:42,720
+Kullanıcılardan gelen verilerin
+
+214
+00:19:43,220 --> 00:19:46,039
+girilen dataların, mesela buradaki forma girilen datalar oluyor onlar.
+
+215
+00:19:46,559 --> 00:19:47,579
+Kontrol edilmeden
+
+216
+00:19:48,599 --> 00:19:50,900
+komutlarda veya veri tabanı sorgularında
+
+217
+00:19:51,680 --> 00:19:53,720
+saldırı amaçlı kullanılmasıyla meydana gelir.
+
+218
+00:19:53,980 --> 00:19:55,259
+Yani siz aslında komutlara
+
+219
+00:19:55,519 --> 00:19:56,019
+bir verilere
+
+220
+00:19:56,279 --> 00:19:58,079
+komutlar gizliyorsunuz ve bu komutlar
+
+221
+00:19:58,380 --> 00:20:00,680
+ya web sunucu tarafında ya da
+
+222
+00:20:00,940 --> 00:20:03,500
+MySQL tarafında, yani database tarafında
+
+223
+00:20:05,039 --> 00:20:07,079
+tamamen yetkisiz bir şekilde çalıştırıldığında
+
+224
+00:20:07,839 --> 00:20:09,640
+ortaya çıkan sonuçlar aslında.
+
+225
+00:20:09,900 --> 00:20:12,200
+Enjeksiyon saldırıları. O yüzden enjeksiyon saldırıları.
+
+226
+00:20:12,460 --> 00:20:14,500
+Çünkü normal bir kullanım ile
+
+227
+00:20:15,019 --> 00:20:18,079
+şey olmayan, legit olmayan,
+
+228
+00:20:18,339 --> 00:20:19,880
+yani doğru olmayan
+
+229
+00:20:20,400 --> 00:20:21,420
+saldırı amaçlı
+
+230
+00:20:21,920 --> 00:20:23,200
+sorgular veya
+
+231
+00:20:23,460 --> 00:20:27,299
+istekler gerçekleştirebiliyorsunuz. Bu tarz saldırı enjeksiyon saldırıları deniyor.
+
+232
+00:20:27,299 --> 00:20:28,839
+SQL enjeksiyonu da bir
+
+233
+00:20:29,099 --> 00:20:30,380
+enjeksiyon saldırısı o yüzden.
+
+234
+00:20:31,900 --> 00:20:33,700
+SQL enjeksiyon saldırıları
+
+235
+00:20:34,980 --> 00:20:39,839
+Hedep web sitesinin kullanıldığı veri tabanında etki olmaksızın SQL sorguları çalıştırmasını sağlamaktadır.
+
+236
+00:20:40,359 --> 00:20:44,700
+Bunu zaten göreceğiz. Biraz sonra yapacağımız bütün saldırılar tamamen database tarafına yönlendirilen
+
+237
+00:20:44,960 --> 00:20:45,980
+kontrol edilmeyen
+
+238
+00:20:46,759 --> 00:20:47,779
+sorgular olacak.
+
+239
+00:20:48,539 --> 00:20:51,880
+Bir takım farklı triklerle, basit kollama bilgisiyle
+
+240
+00:20:52,380 --> 00:20:55,720
+ve tabii ki SQL bilgisiyle gerçekleştirebileceğiniz saldırılar
+
+241
+00:20:55,980 --> 00:20:56,480
+tabii ki
+
+242
+00:20:56,740 --> 00:20:57,259
+web sunucusu
+
+243
+00:20:57,559 --> 00:20:58,059
+kodlayan
+
+244
+00:20:59,339 --> 00:21:00,119
+geliştiricinin
+
+245
+00:21:00,880 --> 00:21:01,900
+yanlış
+
+246
+00:21:02,160 --> 00:21:04,720
+yaptığı geliştirmeler sonucunda bunları yapabiliyoruz.
+
+247
+00:21:04,980 --> 00:21:07,279
+Düzgün yazmış bir kodla bunları yapmak çok da mümkün değil.
+
+248
+00:21:11,190 --> 00:21:11,950
+Tamam mı arkadaşlar?
+
+249
+00:21:12,470 --> 00:21:12,970
+Şimdi
+
+250
+00:21:13,230 --> 00:21:15,269
+az önce göstermiştim zaten size bunu.
+
+251
+00:21:15,529 --> 00:21:16,309
+Nasıl kullanıldığını.
+
+252
+00:21:16,549 --> 00:21:19,369
+Bu default kullanımı bu şekilde bir yazıyoruz, bir no'lu kullanıcının
+
+253
+00:21:19,890 --> 00:21:20,650
+görselini veriyor.
+
+254
+00:21:21,170 --> 00:21:22,190
+Şimdi başlayalım.
+
+255
+00:21:22,710 --> 00:21:24,750
+Biraz kontrol edelim, kurcalamaya başlayalım.
+
+256
+00:21:26,029 --> 00:21:28,069
+Yapılan web sitesinde neler yapılmış,
+
+257
+00:21:28,329 --> 00:21:29,349
+nelere müsaade ediyor.
+
+258
+00:21:29,349 --> 00:21:31,650
+Şimdi bir dedik kullanıcıyı veriyor.
+
+259
+00:21:32,170 --> 00:21:32,930
+İki dedik
+
+260
+00:21:33,190 --> 00:21:34,210
+iki no'lu kullanıcı.
+
+261
+00:21:34,730 --> 00:21:36,009
+Şimdi biz şunu çok iyi biliyoruz.
+
+262
+00:21:36,269 --> 00:21:37,289
+SQL'de
+
+263
+00:21:37,549 --> 00:21:38,829
+tırnak belirteci
+
+264
+00:21:39,849 --> 00:21:41,130
+arasına yazılmış şey
+
+265
+00:21:42,150 --> 00:21:42,910
+bir
+
+266
+00:21:43,690 --> 00:21:44,710
+şeydir aslında
+
+267
+00:21:44,970 --> 00:21:46,509
+var çarla yazılmış bir
+
+268
+00:21:47,009 --> 00:21:48,809
+kolon için verilen belirtecidir.
+
+269
+00:21:49,309 --> 00:21:50,089
+Yani biz
+
+270
+00:21:50,349 --> 00:21:53,670
+buraya bir, iki, üç yazınca, bir yazdığımız zaman bu birin
+
+271
+00:21:54,430 --> 00:21:54,950
+bir
+
+272
+00:21:57,089 --> 00:22:00,170
+eğer şey alınıyorsa, doğrudan alındık tabelada çalıştırılıyorsa,
+
+273
+00:22:00,170 --> 00:22:03,490
+tırnak içerisinde gönderildiğini biliyoruz. O zaman şöyle bir şey yaparsak,
+
+274
+00:22:05,029 --> 00:22:06,569
+bunun hatasını görebiliyor muyuz?
+
+275
+00:22:06,829 --> 00:22:07,589
+Bakalım.
+
+276
+00:22:08,369 --> 00:22:11,690
+Şu an bir hata aldık. Bakın gördüğünüz gibi, kontrol web sunucunda
+
+277
+00:22:11,950 --> 00:22:14,250
+bizim yazdığımız tırnağın kontrol etmeksizin
+
+278
+00:22:14,509 --> 00:22:18,349
+MySQL'e gittiğini görüyoruz. Bunu nereden anladık? Bakın, bir syntax hatası veriyor.
+
+279
+00:22:18,609 --> 00:22:19,630
+SQL'de veriyor.
+
+280
+00:22:19,890 --> 00:22:22,190
+Bakın web sunucunda değil, SQL'in hatasını veriyor.
+
+281
+00:22:22,450 --> 00:22:22,950
+Ve
+
+282
+00:22:24,230 --> 00:22:26,789
+burada üç tane tırnak görüyorsunuz. Görüyorsunuz değil mi?
+
+283
+00:22:27,309 --> 00:22:29,089
+Demek ki tırnağı kontrol etmeden
+
+284
+00:22:29,089 --> 00:22:32,670
+MySQL sunucunda doğrudan gönderiyor ve MySQL bize bir hata döndürüyor.
+
+285
+00:22:32,930 --> 00:22:35,230
+Bu demektir ki web sunucunda gerekli kontrol yapılmamış.
+
+286
+00:22:35,490 --> 00:22:36,769
+Bu da ne demek bizim için?
+
+287
+00:22:37,029 --> 00:22:38,049
+Çok güzel bir şey. Çünkü
+
+288
+00:22:38,309 --> 00:22:43,430
+sizin client ile yaptığınız, systems tarafından yani browser tarafından şu an bizim yaptığımız her isteğin
+
+289
+00:22:43,930 --> 00:22:48,549
+mutlaka web sunucunda kontrol edilmesi gerekiyor. Hiçbir şeyi doğrudan database'e göndermemeliyiz.
+
+290
+00:22:48,809 --> 00:22:49,569
+Tamam mı? Ders 1.
+
+291
+00:22:50,589 --> 00:22:51,609
+İleride çoğunuz
+
+292
+00:22:52,890 --> 00:22:54,170
+bir şekilde çalışacaksınız.
+
+293
+00:22:54,950 --> 00:22:56,990
+Özel sektörde çalışacaksınızdır diye düşünüyorum.
+
+294
+00:22:57,250 --> 00:22:58,269
+Özel sektörde de
+
+295
+00:22:58,269 --> 00:22:59,809
+biliyorsunuz ki
+
+296
+00:23:00,069 --> 00:23:02,630
+web uygulamaları ve mobil uygulamalar daha çok
+
+297
+00:23:03,390 --> 00:23:05,190
+desktop uygulamalarına göre daha fazla
+
+298
+00:23:05,430 --> 00:23:07,490
+şu anda rağbet görüyor. Bu nedeni de zaten çok belli.
+
+299
+00:23:07,750 --> 00:23:09,269
+Mobil cihazın artması
+
+300
+00:23:09,529 --> 00:23:10,549
+ve web
+
+301
+00:23:10,809 --> 00:23:15,170
+uygulamalarının her platformda çalıştığı, her işlemcilerin çalışabiliyor olmasından kaynaklı yıllardır
+
+302
+00:23:15,930 --> 00:23:19,769
+web uygulamaları kullanan kullanıcı sayısı artıyor ve şirketler de
+
+303
+00:23:20,029 --> 00:23:22,849
+web uygulamaları geliştirmek istiyor, mobil uygulamaları geliştirmek istiyor.
+
+304
+00:23:23,869 --> 00:23:26,170
+Ve sizin şunu çok iyi bilmeniz gerekiyor. Siz çalışacaksınız
+
+305
+00:23:26,950 --> 00:23:28,230
+ve muhtemelen siz sunucu tarafından
+
+306
+00:23:28,529 --> 00:23:29,549
+çalışacaksınız.
+
+307
+00:23:29,809 --> 00:23:34,930
+Frontend de çalışacaksınız, backend yani sunucu tarafından da çalışacaksınız ve kod yazacaksınız. Yazdığınız kodların
+
+308
+00:23:36,970 --> 00:23:38,509
+istenmiş tarafından yazılan bütün kodların
+
+309
+00:23:38,769 --> 00:23:41,329
+web sunucu tarafından kontrol edilmesi gerektiğini işte buradan
+
+310
+00:23:41,589 --> 00:23:44,390
+çok güzel örnekle görüyorsunuz aslında. Bu sizin ileride
+
+311
+00:23:44,910 --> 00:23:49,009
+nasıl doğru kod yazmanız gerektiğini, neden bazı hareketler yapmanız gerektiğini açıklıyor aslında.
+
+312
+00:23:50,289 --> 00:23:52,849
+Belki zaten halihazırda staj yaparken
+
+313
+00:23:53,109 --> 00:23:54,390
+çalışan arkadaşlarınız vardır.
+
+314
+00:23:54,890 --> 00:23:56,690
+Belki fark etmişlerdir bir takım
+
+315
+00:23:56,950 --> 00:23:57,710
+SQL'li
+
+316
+00:23:57,710 --> 00:23:59,509
+kontrollerin yapıldığını ne bileyim.
+
+317
+00:24:00,529 --> 00:24:02,829
+Mesela crossart ve crossforger için antiforgeri
+
+318
+00:24:03,089 --> 00:24:04,369
+tokenlar görmüşsünüzdür belki
+
+319
+00:24:04,630 --> 00:24:06,150
+web sayfalarının başlarında veya
+
+320
+00:24:06,410 --> 00:24:07,430
+SQL.jaxx'in için
+
+321
+00:24:08,710 --> 00:24:10,769
+MySQL.E gibi bir takım
+
+322
+00:24:11,029 --> 00:24:12,549
+ara tool'ların olduğunu göreceksiniz.
+
+323
+00:24:12,809 --> 00:24:16,650
+İşte retopun sunucuna gitmeden önce bütün stack'lerin kontrol edilmesi gibi.
+
+324
+00:24:18,950 --> 00:24:19,470
+O yüzden
+
+325
+00:24:20,490 --> 00:24:22,549
+bunun sizin için güzel olacağını düşünüyorum.
+
+326
+00:24:23,049 --> 00:24:25,869
+Eğitici olacağını düşünüyorum. En azından ileride yapacağınız şeyler için.
+
+327
+00:24:26,630 --> 00:24:27,410
+Şimdi devam edelim.
+
+328
+00:24:27,710 --> 00:24:29,250
+Bu tarz bir hata almanın
+
+329
+00:24:30,009 --> 00:24:32,569
+web sunucusunda yapılan bir eksikliği olduğunu gösterdik aslında.
+
+330
+00:24:33,349 --> 00:24:35,650
+Ve bu saldırı stratejimizi tamamen buradan yürüteceğiz.
+
+331
+00:24:36,150 --> 00:24:37,190
+Şimdi bir de koduna bakalım.
+
+332
+00:24:38,710 --> 00:24:40,250
+dmworld.webapplication'da
+
+333
+00:24:41,269 --> 00:24:42,049
+source kodlara
+
+334
+00:24:42,549 --> 00:24:44,609
+bakabiliyorsunuz arkadaşlar her sayfa için.
+
+335
+00:24:44,869 --> 00:24:45,630
+Şunu geri getirelim.
+
+336
+00:24:46,390 --> 00:24:48,450
+Bakın sayfanın altında bir view source var.
+
+337
+00:24:48,710 --> 00:24:49,730
+Bastığımızda
+
+338
+00:24:50,750 --> 00:24:52,789
+aslında normalde tabii ki bunun kullanıcı görmemeli.
+
+339
+00:24:53,049 --> 00:24:57,670
+Ama siz burada hem kullanıcı hem de geliştirici olduğunuz için bu test ortamı olduğu için bu kodları görebiliyorsunuz.
+
+340
+00:24:57,970 --> 00:24:59,250
+Bakın kod
+
+341
+00:24:59,750 --> 00:25:01,029
+şey ne yapmış? Bakalım
+
+342
+00:25:01,549 --> 00:25:02,569
+saldıran kişi ne yapmış?
+
+343
+00:25:03,089 --> 00:25:06,150
+Önce bir request gelmiş, submit mi diye bakmış. Daha sonra
+
+344
+00:25:06,670 --> 00:25:07,430
+id
+
+345
+00:25:07,690 --> 00:25:08,970
+parametresi üzerinden
+
+346
+00:25:10,769 --> 00:25:11,529
+gelen
+
+347
+00:25:12,809 --> 00:25:13,589
+değeri
+
+348
+00:25:14,869 --> 00:25:16,150
+id'yi değişkene atıp
+
+349
+00:25:16,390 --> 00:25:17,170
+bunu da
+
+350
+00:25:18,710 --> 00:25:20,750
+query'nin içerisindeki şu alana koymuş.
+
+351
+00:25:21,269 --> 00:25:23,569
+Bizim aslında bir tırnak yazdığımız şey buraya geliyor.
+
+352
+00:25:23,829 --> 00:25:26,130
+Ve şu ikinci tırnakta birleştiği zaman hata veriyor.
+
+353
+00:25:26,390 --> 00:25:27,670
+Çünkü bu direkt data base'a gidiyor.
+
+354
+00:25:27,970 --> 00:25:28,470
+Query.
+
+355
+00:25:28,730 --> 00:25:30,009
+Bakın görüyorsunuz MySQL
+
+356
+00:25:30,529 --> 00:25:31,289
+e-query'de
+
+357
+00:25:33,509 --> 00:25:35,029
+burada query'mizi çalıştırıyor.
+
+358
+00:25:35,549 --> 00:25:37,849
+Result dönüyor ve result fetch edilip
+
+359
+00:25:38,109 --> 00:25:39,390
+gerekli alanlara yazdırılıp
+
+360
+00:25:40,410 --> 00:25:41,690
+bunlar da echo ile
+
+361
+00:25:42,970 --> 00:25:45,269
+şuraya altta verilen şu alana yazdırılıyor.
+
+362
+00:25:46,809 --> 00:25:47,329
+Tamam mı?
+
+363
+00:25:49,359 --> 00:25:52,700
+Yani kod bu kadar aslında basit. Baktığınız zaman çok büyük bir
+
+364
+00:25:53,460 --> 00:25:53,980
+sorun yok.
+
+365
+00:25:54,480 --> 00:25:57,559
+Kod çalışır diyorsunuz ama aslında burada çok ciddi bir güvenlik açığı var.
+
+366
+00:25:57,819 --> 00:25:59,859
+Çok çok ciddi çünkü daha low seviyedeyiz düşünün arkadaşlar.
+
+367
+00:26:00,680 --> 00:26:01,960
+O da buradaki id'nin
+
+368
+00:26:02,220 --> 00:26:02,980
+id'den gelen
+
+369
+00:26:03,500 --> 00:26:04,000
+id
+
+370
+00:26:04,259 --> 00:26:05,279
+değişkeninin taşıdığı
+
+371
+00:26:06,059 --> 00:26:09,119
+parametrenin kontrol edilmemesi ve bunun doğrudan
+
+372
+00:26:09,380 --> 00:26:10,400
+MySQL'de çalıştırılması.
+
+373
+00:26:12,460 --> 00:26:14,000
+Bunları da bu şekilde kullanabiliyorsunuz.
+
+374
+00:26:14,240 --> 00:26:16,299
+Bu arada uygulamadan. Kendiniz inceleyebilirsiniz.
+
+375
+00:26:18,339 --> 00:26:19,359
+Şimdi sunumdan devam edelim.
+
+376
+00:26:22,670 --> 00:26:26,509
+Şimdi buraya gelmeden önce buraya kadar olan bir sorunuz var mı? Varsayda chatte görmek istiyorum.
+
+377
+00:26:28,049 --> 00:26:29,589
+Veya söz alabilirsiniz.
+
+378
+00:26:30,349 --> 00:26:31,890
+Chateye yazarsanız tabi ki tercihim.
+
+379
+00:26:34,119 --> 00:26:35,160
+Sorusu olan var mı?
+
+380
+00:26:43,140 --> 00:26:43,660
+Tamam.
+
+381
+00:26:43,960 --> 00:26:44,720
+Sorusu olan yok.
+
+382
+00:26:45,240 --> 00:26:46,000
+O zaman başlayalım.
+
+383
+00:26:47,799 --> 00:26:49,079
+Gerçek hareketlere başlayalım.
+
+384
+00:26:51,900 --> 00:26:54,460
+Tekrar sayfamızı açıyorum. Buradaki saldırı aynısını yapalım.
+
+385
+00:26:56,369 --> 00:27:02,529
+Şimdi ben bunu yaptığım zaman hata verdiğini biliyorum. Çünkü bir tırnak yazdığımda bunun id parametresine gittiğini,
+
+386
+00:27:02,769 --> 00:27:03,549
+şuradan göstereyim.
+
+387
+00:27:04,309 --> 00:27:09,690
+Şuradaki id'ye gittiğini ve şu ikinci tırnağı, burada halihazırda bulunan ikinci tırnağı gördüğünde hata verdiğini biliyoruz.
+
+388
+00:27:10,210 --> 00:27:10,970
+Peki bunu
+
+389
+00:27:11,990 --> 00:27:14,549
+nasıl kullanabiliriz? Bu sürekli hata verecek ben tırnak verdikçe.
+
+390
+00:27:15,369 --> 00:27:16,650
+MySQL'deki
+
+391
+00:27:16,910 --> 00:27:17,930
+komut
+
+392
+00:27:18,950 --> 00:27:20,490
+comment komutunu bilen var mı?
+
+393
+00:27:21,009 --> 00:27:22,289
+Comment yapmayı sağlayan
+
+394
+00:27:22,529 --> 00:27:23,569
+karakter hangisi?
+
+395
+00:27:24,329 --> 00:27:26,369
+MySQL'de comment yapmayı yani
+
+396
+00:27:26,630 --> 00:27:27,410
+satırın
+
+397
+00:27:28,170 --> 00:27:28,930
+başka
+
+398
+00:27:30,470 --> 00:27:31,750
+tire tire değil benim aradığım.
+
+399
+00:27:32,269 --> 00:27:34,569
+Ben satır başı komentini sormadım.
+
+400
+00:27:39,990 --> 00:27:40,490
+Tamam.
+
+401
+00:27:40,750 --> 00:27:41,769
+Diyez arkadaşlar.
+
+402
+00:27:42,549 --> 00:27:43,049
+Diyez.
+
+403
+00:27:44,849 --> 00:27:45,609
+Şunu yapacağız.
+
+404
+00:27:46,130 --> 00:27:46,630
+Bu.
+
+405
+00:27:52,140 --> 00:27:54,700
+Bakın komutumuz çalıştı arkadaşlar. 1 tırnak
+
+406
+00:27:55,259 --> 00:27:56,019
+comment yaptım.
+
+407
+00:27:56,799 --> 00:27:58,079
+Çalışıyor. Çalışması nedeni ne?
+
+408
+00:28:03,289 --> 00:28:03,809
+Çünkü
+
+409
+00:28:04,069 --> 00:28:04,829
+bizim şurada
+
+410
+00:28:06,369 --> 00:28:09,950
+id'den sonra gelen tırnak, ondan sonra gelen noktalı virgül.
+
+411
+00:28:12,230 --> 00:28:12,990
+Evet doğru.
+
+412
+00:28:14,009 --> 00:28:16,569
+Ali [öğrenci] doğru söylüyorsun. id'ler numerikse
+
+413
+00:28:17,089 --> 00:28:18,630
+kodlar çalışır mı demişsin.
+
+414
+00:28:19,390 --> 00:28:20,410
+Numerikse
+
+415
+00:28:21,430 --> 00:28:23,230
+burada numerik olarak gidecektir.
+
+416
+00:28:23,490 --> 00:28:25,269
+Sizin herhangi bir MySQL
+
+417
+00:28:25,789 --> 00:28:28,609
+şeyinden çalıştırabileceğiniz her şey çalışır. Evet doğru.
+
+418
+00:28:28,869 --> 00:28:29,890
+Numerik olsa çalışırdı.
+
+419
+00:28:30,390 --> 00:28:31,170
+Çünkü şurada
+
+420
+00:28:31,470 --> 00:28:33,009
+numarik olması bunu
+
+421
+00:28:34,029 --> 00:28:35,049
+kodları çalıştırır.
+
+422
+00:28:35,829 --> 00:28:38,390
+Tırnak çalıştırmaz yani tırnakla saldırı yapamazsınız ama
+
+423
+00:28:38,630 --> 00:28:41,970
+tırnakla şöyle saldırı yapabilirsiniz. Başına da tırnak eklersiniz mesela.
+
+424
+00:28:42,730 --> 00:28:44,269
+Bunları zaten göreceksiniz. Yani
+
+425
+00:28:44,789 --> 00:28:46,069
+diğer şeylerde göreceksiniz.
+
+426
+00:28:46,829 --> 00:28:47,349
+Devam edelim.
+
+427
+00:28:48,369 --> 00:28:51,190
+$id'den sonra yazılmış tırnakla virgül.
+
+428
+00:28:51,430 --> 00:28:53,490
+Noktalı virgül aslında artık comment oldu.
+
+429
+00:28:53,750 --> 00:28:57,069
+Dolayısıyla benim SQL tarafıma gidecek olan kısım sadece şu kısım olacak. Seçtiğim kısım.
+
+430
+00:28:58,349 --> 00:28:59,890
+Şu diyez ekleyince öyle oluyor.
+
+431
+00:29:00,150 --> 00:29:00,910
+Peki bu bize ne sağlayacak?
+
+432
+00:29:00,910 --> 00:29:02,710
+Yani bu şu an burada herhangi bir
+
+433
+00:29:03,210 --> 00:29:05,509
+exploit yapmadık. Herhangi bir data ortaya çıkaramadık.
+
+434
+00:29:07,049 --> 00:29:07,829
+SQL'de
+
+435
+00:29:08,329 --> 00:29:11,670
+iki sorguyu birleştirmek için veya yeni sorgular yazmak için
+
+436
+00:29:12,170 --> 00:29:13,970
+hangi komut kullanırız bilen var mı?
+
+437
+00:29:14,990 --> 00:29:17,549
+İki tane select komutunu mesela aynı anda çalıştırabilir miyiz?
+
+438
+00:29:17,809 --> 00:29:18,829
+Tek seferde.
+
+439
+00:29:19,089 --> 00:29:21,390
+Tek instruction ile, tek execution ile
+
+440
+00:29:21,910 --> 00:29:22,670
+iki tane
+
+441
+00:29:23,430 --> 00:29:24,210
+or değil
+
+442
+00:29:25,490 --> 00:29:26,509
+union evet.
+
+443
+00:29:26,769 --> 00:29:28,809
+Union arkadaşlar. SQL'de union ile
+
+444
+00:29:29,589 --> 00:29:30,349
+çalıştırabiliriz.
+
+445
+00:29:30,349 --> 00:29:31,630
+Birazdan onunla ilgili sallar yapacağız.
+
+446
+00:29:31,890 --> 00:29:33,170
+Şimdilik tekrar sunuma dönelim.
+
+447
+00:29:36,680 --> 00:29:37,700
+Orla
+
+448
+00:29:38,220 --> 00:29:39,240
+şey yapabiliyoruz arkadaşlar.
+
+449
+00:29:41,039 --> 00:29:41,799
+İkinci bir
+
+450
+00:29:42,059 --> 00:29:42,819
+Condition koyabiliyoruz.
+
+451
+00:29:43,859 --> 00:29:44,359
+Tamam mı?
+
+452
+00:29:44,619 --> 00:29:46,660
+Orla ikinci bir Condition koyalım.
+
+453
+00:29:51,210 --> 00:29:52,230
+Şöyle bir şey yapalım.
+
+454
+00:29:59,980 --> 00:30:01,000
+Bakın ne yaptı?
+
+455
+00:30:01,519 --> 00:30:02,539
+Şu koşulu sağlayan
+
+456
+00:30:03,039 --> 00:30:03,559
+bütün
+
+457
+00:30:05,099 --> 00:30:07,140
+komutları çalışırdı ama hala bu tablodayız.
+
+458
+00:30:07,400 --> 00:30:07,920
+Dışarı çıkamadık.
+
+459
+00:30:08,160 --> 00:30:10,480
+Başka tabloları dışarı çıkmamız lazım.
+
+460
+00:30:10,720 --> 00:30:12,519
+Şu an database'deyiz. Database'de her şeyi yapabiliriz.
+
+461
+00:30:12,779 --> 00:30:13,799
+Bütün instructionları çalıştırabiliriz.
+
+462
+00:30:13,799 --> 00:30:14,319
+Çünkü web sunucu
+
+463
+00:30:14,619 --> 00:30:17,180
+hangi bir kontrolün yapılmadığını biliyoruz ve
+
+464
+00:30:17,940 --> 00:30:20,000
+şu anda aslında gayet güzel exploit edebiliyoruz.
+
+465
+00:30:20,240 --> 00:30:23,059
+Yani şu an sistemsel MySQL sorgusunu çalıştırabiliyoruz.
+
+466
+00:30:23,319 --> 00:30:25,359
+En azından sistemde tanımı olan kullanıcının
+
+467
+00:30:25,619 --> 00:30:26,900
+database etkileri dahilinde.
+
+468
+00:30:27,680 --> 00:30:28,440
+O zaman devam edelim.
+
+469
+00:30:31,160 --> 00:30:31,680
+Mesela
+
+470
+00:30:31,940 --> 00:30:32,440
+union'da
+
+471
+00:30:32,700 --> 00:30:34,500
+yeni bir selek yazabileceğimizi söylemiştik.
+
+472
+00:30:35,519 --> 00:30:36,539
+Bununla
+
+473
+00:30:37,559 --> 00:30:38,339
+yeni bir
+
+474
+00:30:38,599 --> 00:30:39,619
+meclis olduğumuz
+
+475
+00:30:39,880 --> 00:30:41,660
+web sunucusunun ve database'in
+
+476
+00:30:41,920 --> 00:30:43,720
+hangi sistem sisteminde olduğunu,
+
+477
+00:30:43,960 --> 00:30:46,019
+hangi MySQL versiyonunun kullanıldığını,
+
+478
+00:30:46,319 --> 00:30:51,440
+hangi SQL daha doğrusu, hangi database olabilir, şu an bizim case'in MySQL ama başka database'ler de olabilir.
+
+479
+00:30:51,960 --> 00:30:52,980
+Bunların kullanıldığını
+
+480
+00:30:53,480 --> 00:30:54,759
+şöyle kısa kısa
+
+481
+00:30:55,019 --> 00:30:56,819
+birkaç deneme ile her şeyi öğrenebilirsiniz.
+
+482
+00:30:57,079 --> 00:30:57,839
+Tabii ki
+
+483
+00:30:58,099 --> 00:31:00,400
+select database versiyonu MySQL'e özel bir
+
+484
+00:31:00,920 --> 00:31:01,420
+komut.
+
+485
+00:31:01,680 --> 00:31:03,980
+Örneğin Oracle'da daha farklı yazmanız gerekebilir bunları.
+
+486
+00:31:04,759 --> 00:31:09,619
+Hocam bunları nereden bileceğiz dersiniz. Arkadaşlar 5 tane 6 tane database var zaten.
+
+487
+00:31:10,119 --> 00:31:10,640
+Birçok
+
+488
+00:31:11,160 --> 00:31:15,759
+SQL database'i MySQL'den türemiştir zaten. Diğer geri kalanlar da Oracle ve Microsoft'tan türemiştir.
+
+489
+00:31:16,319 --> 00:31:18,880
+3-5 tane komut var zaten.
+
+490
+00:31:19,140 --> 00:31:23,480
+Database'de versiyonları öğrenebileceğiz. Onları sırayla denersiniz. Hangi database'de olduğunuzu hemen öğrenirsiniz.
+
+491
+00:31:25,799 --> 00:31:27,839
+Şu an şu komutu çalıştıralım arkadaşlar.
+
+492
+00:31:28,359 --> 00:31:28,859
+Ve
+
+493
+00:31:29,880 --> 00:31:30,400
+görelim.
+
+494
+00:31:31,940 --> 00:31:32,960
+Sonucunu görelim.
+
+495
+00:31:41,859 --> 00:31:43,380
+Bir tırnak and
+
+496
+00:31:44,920 --> 00:31:46,460
+şu komutumuzu aynen yazacağız.
+
+497
+00:32:01,380 --> 00:32:05,720
+En sonunda bir tane diyez yazacağız. Çünkü gereken komutun comment olmasını istiyoruz.
+
+498
+00:32:05,980 --> 00:32:08,539
+Bakın arkadaşlar, omut18 kullanıyormuşuz.
+
+499
+00:32:09,099 --> 00:32:09,619
+Ve
+
+500
+00:32:10,380 --> 00:32:11,920
+MySQL versiyonu sanırım bu.
+
+501
+00:32:12,680 --> 00:32:13,200
+Tamam mı?
+
+502
+00:32:13,460 --> 00:32:14,220
+Bu şekilde
+
+503
+00:32:14,740 --> 00:32:16,019
+Database versiyonu ve
+
+504
+00:32:16,259 --> 00:32:17,539
+Ubuntu versiyonu ortaya çıkarttık.
+
+505
+00:32:18,819 --> 00:32:20,619
+Ubuntu 18 kurulduğunu görüyorsunuz.
+
+506
+00:32:24,440 --> 00:32:30,579
+Şimdi bu tabii ki bize ne katacak? Yani bulunduğumuz saldırı yapacağımız sisteminde ne kurulduğunu bilmek bir bilgidir değil mi?
+
+507
+00:32:30,839 --> 00:32:33,140
+Ne kadar çok bilgi varsa, saldıracağınız yerle ilgili ne kadar çok bilginiz olursa
+
+508
+00:32:33,400 --> 00:32:35,180
+o kadar etkili saldırılar yaparsınız.
+
+509
+00:32:35,700 --> 00:32:37,240
+O kadar fazla şey eleşirsiniz.
+
+510
+00:32:38,759 --> 00:32:40,559
+Önce Discover, sonra saldırı.
+
+511
+00:32:42,400 --> 00:32:43,420
+Sonra Discover yapıyoruz.
+
+512
+00:32:44,200 --> 00:32:47,000
+Şimdi hangi database olduğunu biliyoruz. MySQL olduğunu öğrendik.
+
+513
+00:32:48,039 --> 00:32:48,799
+İki denemede.
+
+514
+00:32:49,059 --> 00:32:52,380
+Ve şu an MySQL'de hangi tablolar, hangi şeyleri çekeceğimizi de
+
+515
+00:32:53,660 --> 00:32:57,000
+mevcut olan database'leri de, aslında az önce şuradan şey göstermiştim.
+
+516
+00:32:58,279 --> 00:32:59,559
+Show tables dediğimde
+
+517
+00:33:00,319 --> 00:33:01,599
+tabloları gösteriyor.
+
+518
+00:33:02,119 --> 00:33:06,200
+Bunun select komutu ile de bulabiliriz. Çünkü bizim information tablomuz vardı hatırlarsınız değil mi?
+
+519
+00:33:08,480 --> 00:33:10,019
+Şurada yukarıda görüyorsunuz.
+
+520
+00:33:11,799 --> 00:33:13,599
+Information şema var. Burada aslında
+
+521
+00:33:13,900 --> 00:33:14,920
+database'de bulunan
+
+522
+00:33:15,440 --> 00:33:17,740
+diğer database'ler ve tablolarla ilgili bilgiler var.
+
+523
+00:33:18,000 --> 00:33:18,759
+Şimdi bunların
+
+524
+00:33:19,019 --> 00:33:20,819
+tabloyu kullanarak nasıl eleştirebiliriz?
+
+525
+00:33:21,319 --> 00:33:23,619
+Sunumda gördüğünüz şu komutla
+
+526
+00:33:25,680 --> 00:33:26,700
+database'de bulunan
+
+527
+00:33:27,220 --> 00:33:27,720
+bütün
+
+528
+00:33:27,980 --> 00:33:29,519
+tabloları önce görüp
+
+529
+00:33:30,019 --> 00:33:32,079
+sonra da herhangi birini seçebiliriz.
+
+530
+00:33:32,839 --> 00:33:34,380
+Biz burada, bu case'de
+
+531
+00:33:36,680 --> 00:33:37,460
+bu case'de
+
+532
+00:33:39,500 --> 00:33:41,559
+kendi olan mevcut database'i de oradan eleştireceğiz.
+
+533
+00:33:42,319 --> 00:33:44,619
+dm-whole-web-application'ın MySQL tablosuna
+
+534
+00:33:44,619 --> 00:33:47,180
+daha doğrusu database'e erişeceğiz. Hemen onu çalıştıralım.
+
+535
+00:33:55,789 --> 00:33:57,569
+Bir tırnak yazıyoruz. Sonra
+
+536
+00:33:58,349 --> 00:34:00,650
+her zaman tour'u döndürecek komutumuzu yazıyoruz.
+
+537
+00:34:04,740 --> 00:34:06,539
+Sonra union'la komut birleştiriyoruz.
+
+538
+00:34:06,799 --> 00:34:07,299
+Tamam mı?
+
+539
+00:34:07,819 --> 00:34:09,360
+Select null.
+
+540
+00:34:09,860 --> 00:34:12,420
+Null diyoruz çünkü bir parametresini kullanmayacağız. İhtiyacımız yok.
+
+541
+00:34:12,679 --> 00:34:15,500
+İkinci döndürdüğü şeyi yazacağız. O da table-null ismi.
+
+542
+00:34:16,000 --> 00:34:16,519
+From
+
+543
+00:34:17,039 --> 00:34:18,320
+information
+
+544
+00:34:38,949 --> 00:34:40,230
+Gördüğünüz gibi arkadaşlar
+
+545
+00:34:43,019 --> 00:34:44,300
+guest, bug ve users
+
+546
+00:34:45,059 --> 00:34:46,340
+tabloları olduğunu görüyoruz.
+
+547
+00:34:46,599 --> 00:34:48,139
+İki tane tabloda. İlki birinci sorgumuzdu.
+
+548
+00:34:48,440 --> 00:34:50,480
+Bir tanesi bir olan kullanıcı içine yazılan sorgutu.
+
+549
+00:34:50,739 --> 00:34:52,800
+Diğer ikisi de union'dan gelen ikinci yazdığımız
+
+550
+00:34:53,039 --> 00:34:54,079
+sorgunun sonuçları.
+
+551
+00:34:54,320 --> 00:34:55,599
+Guest, bug ve users.
+
+552
+00:34:58,360 --> 00:35:00,920
+Gördüğünüz gibi aynı. Birebir. Şu an hepsine erişebiliyoruz.
+
+553
+00:35:02,460 --> 00:35:03,739
+Şimdi biraz daha ileri gidelim.
+
+554
+00:35:06,769 --> 00:35:09,329
+Şimdi bir tane tabloya girip, ondaki bütün
+
+555
+00:35:10,369 --> 00:35:13,690
+kolon isimlerini yazdıralım. Mesela tablonun hangi kolonları var?
+
+556
+00:35:13,949 --> 00:35:19,070
+Tabloyu biliyoruz ama özelliklerini select ile neleri çekmemiz gerektiğini, belki çok fazla kolonu olan
+
+557
+00:35:19,570 --> 00:35:22,909
+yüzlerce kolon olan bir tablodan bahsediyoruz. Hangi kolonların
+
+558
+00:35:22,909 --> 00:35:24,190
+olduğunu bilmek belki
+
+559
+00:35:24,449 --> 00:35:27,769
+daha sade ve ihtiyacımız olan bilgilere erişilmesi sağlayacak.
+
+560
+00:35:28,030 --> 00:35:29,309
+Bunun için sorguyu çalıştıralım.
+
+561
+00:35:29,570 --> 00:35:51,639
+Önce
+
+562
+00:35:52,420 --> 00:35:53,940
+şunu her zaman turu veren
+
+563
+00:35:54,199 --> 00:35:54,980
+komutumuzu yazıyoruz.
+
+564
+00:36:01,849 --> 00:36:03,889
+Union ile ikinci sorgumuzu yazıyoruz.
+
+565
+00:36:04,409 --> 00:36:05,429
+Şimdi burada select
+
+566
+00:36:06,449 --> 00:36:07,730
+Burada yine null yazıyoruz.
+
+567
+00:36:07,989 --> 00:36:11,070
+İlk dönen şeye ihtiyacı yok. Kolon isimlerini arıyoruz.
+
+568
+00:36:11,570 --> 00:36:13,369
+Nereden bakıyoruz? Yine information'da
+
+569
+00:36:13,630 --> 00:36:14,389
+information
+
+570
+00:36:15,670 --> 00:36:16,690
+schema
+
+571
+00:36:20,639 --> 00:36:22,679
+where table name
+
+572
+00:36:22,940 --> 00:36:23,460
+eşittir.
+
+573
+00:36:24,019 --> 00:36:26,579
+Users ve guest box olduğunu biliyorduk. Users dedik.
+
+574
+00:36:26,820 --> 00:36:29,380
+Sonra da ds koyduk comment olsun diye. Çalıştırdık.
+
+575
+00:36:29,900 --> 00:36:32,980
+Bakın users tablosu için kolonlarımız bunlarmış arkadaşlar.
+
+576
+00:36:33,480 --> 00:36:34,260
+Tamam mı?
+
+577
+00:36:35,780 --> 00:36:37,320
+O zaman artık tabloyu biliyoruz.
+
+578
+00:36:37,579 --> 00:36:38,860
+Tablo iş kolonları da biliyoruz.
+
+579
+00:36:40,900 --> 00:36:41,679
+Ne yapabiliriz?
+
+580
+00:36:43,460 --> 00:36:45,000
+Daha fazla
+
+581
+00:36:45,519 --> 00:36:47,559
+dataları, direkt oradan dataları çekebiliriz artık.
+
+582
+00:36:47,820 --> 00:36:48,840
+Yapabiliriz bunları.
+
+583
+00:36:49,619 --> 00:36:50,380
+Yapalım.
+
+584
+00:36:51,139 --> 00:36:54,739
+Bütün kullanıcıların isimlerini ve passwordlarını çekelim. Başka da
+
+585
+00:36:54,980 --> 00:36:57,599
+kolonlar olduğunu da zaten görmüştünüz ama sadece kullanıcının ismi,
+
+586
+00:36:57,860 --> 00:36:59,139
+idsi ve şifresinin
+
+587
+00:36:59,380 --> 00:37:00,920
+önemli olduğunu varsayıp düşündük.
+
+588
+00:37:01,179 --> 00:37:01,699
+Ve
+
+589
+00:37:01,940 --> 00:37:02,980
+bunları almak istiyoruz.
+
+590
+00:37:03,739 --> 00:37:05,019
+Alalım bunları da.
+
+591
+00:37:06,300 --> 00:37:07,059
+Sözünü görün.
+
+592
+00:37:07,840 --> 00:37:08,860
+Tekrar yazıyoruz.
+
+593
+00:37:15,320 --> 00:37:15,840
+Tekrar
+
+594
+00:37:16,099 --> 00:37:16,860
+her zaman
+
+595
+00:37:17,639 --> 00:37:18,139
+turu dönen
+
+596
+00:37:18,400 --> 00:37:19,420
+ordumuzu yazdık.
+
+597
+00:37:20,699 --> 00:37:21,480
+Select dedik.
+
+598
+00:37:23,840 --> 00:37:27,159
+Nelce artık? Select dedik. User id'yi alacağız. Kolonizmleri öğrenmiştik.
+
+599
+00:37:27,679 --> 00:37:28,699
+Diğer kolon neydi?
+
+600
+00:37:29,219 --> 00:37:30,239
+Password'tu.
+
+601
+00:37:31,000 --> 00:37:31,519
+Değil mi?
+
+602
+00:37:32,579 --> 00:37:34,639
+From users tablosundan.
+
+603
+00:37:36,420 --> 00:37:37,699
+Sonra diyez atıyoruz.
+
+604
+00:37:40,880 --> 00:37:44,199
+Şu an sitemde bütün kullanıcıların, admin de buna dahil.
+
+605
+00:37:45,739 --> 00:37:46,500
+Bütün kullanıcıların
+
+606
+00:37:47,780 --> 00:37:53,679
+id'lerini ve şifrelerini aldık. Bakın şifreler çok uzun ve uzun karakterler. Bundan mutlaka hashlenmiş arkadaşlar.
+
+607
+00:37:55,219 --> 00:37:58,539
+Şu an tabii kullanıcı girerken bu bütün uzun uzun şifre girmiyor.
+
+608
+00:37:59,059 --> 00:38:03,400
+Sizin yazdığınız şifreler, kısa şifreler database'e tükürürken hashlenir ve böyle uzun uzun şifre oluşur.
+
+609
+00:38:04,219 --> 00:38:06,019
+Bu nedeni bir seviye koruma sağlamaktır.
+
+610
+00:38:06,780 --> 00:38:08,820
+Siz normalde 3 harfli bir şifreniz bile
+
+611
+00:38:09,079 --> 00:38:10,619
+database'e tükürürken böyle
+
+612
+00:38:10,880 --> 00:38:12,159
+30-40 karakterli
+
+613
+00:38:12,659 --> 00:38:16,000
+şifreler olabilir. Bu neden hashlenmesidir. Burada hashlenmiş olduğunu görüyoruz.
+
+614
+00:38:16,760 --> 00:38:18,559
+Şu anda herhangi bir hash
+
+615
+00:38:18,820 --> 00:38:20,340
+komutuyla aslında hash
+
+616
+00:38:20,599 --> 00:38:21,880
+hash kodları kıran
+
+617
+00:38:22,400 --> 00:38:23,679
+bir takım tool'lar var.
+
+618
+00:38:24,179 --> 00:38:28,280
+Bu tool'lar Kali'de hazır olarak geliyor ama Ubuntu'da da kurabiliyorsunuz Packet Manager'de.
+
+619
+00:38:29,059 --> 00:38:33,400
+Bu tool'lar ile bunları brute force saldırısı yapıp bunları çözümleyebiliyorsunuz.
+
+620
+00:38:34,219 --> 00:38:36,519
+Tabii ki bu belli bir karakter sayısına kadar
+
+621
+00:38:37,039 --> 00:38:39,079
+mümkün. Belli bir karakterden sonra
+
+622
+00:38:39,860 --> 00:38:41,900
+çok ciddi işlemci gücüne ve
+
+623
+00:38:42,420 --> 00:38:44,980
+zamana ihtiyacınız oluyor bu şifreleri kurabilmek için.
+
+624
+00:38:45,480 --> 00:38:49,320
+Eğer burada kısa şifreler varsa bunları da çözümleyebiliyorsunuz. Bunları da öğrenebiliyorsunuz yani.
+
+625
+00:38:49,579 --> 00:38:51,880
+Database'de böyle saklamalarına rağmen bunlar da kırılabiliyor.
+
+626
+00:38:52,139 --> 00:38:53,159
+Zaman alan işler.
+
+627
+00:38:54,440 --> 00:39:00,579
+Şu anda ne yaptık aslında? SQL injection'e bir database'e girip, onunla ilgili bütün bilgi öğrenip, tabloların isimlerini öğrenip, kolonların ismini öğrenip
+
+628
+00:39:01,619 --> 00:39:03,920
+bu kolonların isimlerine ihtiyacımız olan
+
+629
+00:39:03,920 --> 00:39:05,460
+tablo ve kolonların ismini öğrenip
+
+630
+00:39:05,960 --> 00:39:06,739
+bu sorguyu
+
+631
+00:39:08,019 --> 00:39:10,840
+hiçbir şekilde iznimiz olmasına rağmen, hakkımız olmamasına rağmen
+
+632
+00:39:11,599 --> 00:39:15,960
+tamamen web sunucusunu yazan, web sunucusu tarafını yazan kişinin
+
+633
+00:39:16,199 --> 00:39:20,820
+zafiyetinden faydalanarak, yazdığı eksik ve yanlış koddan faydalanarak
+
+634
+00:39:21,079 --> 00:39:22,360
+güvenlik açısından en azından eksik
+
+635
+00:39:24,400 --> 00:39:25,940
+bu komutları çalıştırabiliyor olduk.
+
+636
+00:39:28,590 --> 00:39:29,369
+Çete bakayım.
+
+637
+00:39:44,170 --> 00:39:44,949
+Sorun var mı?
+
+638
+00:39:45,449 --> 00:39:46,230
+Şu ana kadar.
+
+639
+00:39:46,730 --> 00:39:48,789
+Sorusu olan var mı? Son komuta çalıştıracağım.
+
+640
+00:39:52,039 --> 00:39:52,559
+Yok sanırım.
+
+641
+00:39:52,860 --> 00:39:55,940
+Son komutası çıkan sonra o zaman genel olarak bütün sorularınıza bakarım.
+
+642
+00:39:56,179 --> 00:39:57,460
+Geriye son bir komutumuz kaldı.
+
+643
+00:39:58,239 --> 00:40:01,300
+Şu ana kadar her şeyi yapabildik zaten ama size ekstra bir şey daha göstermek istiyorum.
+
+644
+00:40:07,079 --> 00:40:09,119
+Şey olduğu için birazcık yavaş çalışıyor.
+
+645
+00:40:11,139 --> 00:40:13,179
+VirtualBox olduğu için şu an çalıştığım yer.
+
+646
+00:40:13,940 --> 00:40:16,260
+Burada son bir komutumuz daha var arkadaşlar. Aslında
+
+647
+00:40:17,280 --> 00:40:18,300
+burada yaptığımız şey
+
+648
+00:40:21,380 --> 00:40:22,400
+şimdi biz normalde
+
+649
+00:40:22,900 --> 00:40:25,219
+bizim çalıştığımız şu komut
+
+650
+00:40:28,260 --> 00:40:29,800
+kod üzerinden göstereyim size.
+
+651
+00:40:31,579 --> 00:40:32,360
+Burada
+
+652
+00:40:32,659 --> 00:40:35,480
+bakın WeaveSource yazıyoruz. WeaveSource'a bastık.
+
+653
+00:40:37,260 --> 00:40:38,800
+Burada görüyorsunuz ki aslında
+
+654
+00:40:39,320 --> 00:40:40,860
+bizim query'mizi aslında iki tane
+
+655
+00:40:42,760 --> 00:40:44,300
+iki tane kolon döndürüyor.
+
+656
+00:40:44,559 --> 00:40:49,159
+Union kullandığınız zaman Union'dan sonra yazacağınız komutun da iki tane döndürmesi lazım.
+
+657
+00:40:49,940 --> 00:40:52,239
+Bunlar sonuçta iki tane kolon
+
+658
+00:40:52,739 --> 00:40:56,579
+iki tane stream olarak geliyor ve iki stream ile başlayan bir şey. İki stream ile devam etmeniz gerekiyor.
+
+659
+00:40:56,840 --> 00:40:58,119
+Yoksa fetch edemezsiniz.
+
+660
+00:41:00,179 --> 00:41:01,199
+Dolayısıyla bizim bu
+
+661
+00:41:01,699 --> 00:41:04,019
+SQL injection'da kullandığımız ikinci komutlarda da hep
+
+662
+00:41:04,320 --> 00:41:07,639
+iki tane kolon döndürmemiz gerekiyor. Eğer daha fazla kolon döndürmek istiyorsanız ne yapmanız gerekir?
+
+663
+00:41:08,159 --> 00:41:09,699
+Tabii ki SQL'de bunun içinde bir trick var.
+
+664
+00:41:10,460 --> 00:41:12,500
+Concate ile birden fazla kolonu
+
+665
+00:41:12,760 --> 00:41:13,539
+birleştirip
+
+666
+00:41:15,320 --> 00:41:16,599
+tek kolona koyabiliyorsunuz.
+
+667
+00:41:17,380 --> 00:41:18,139
+Mesela burada
+
+668
+00:41:18,400 --> 00:41:19,420
+User ile
+
+669
+00:41:20,179 --> 00:41:21,719
+User ID birleştirip
+
+670
+00:41:21,980 --> 00:41:25,059
+birlikte döndürdüğümüz bir variasyon var.
+
+671
+00:41:25,559 --> 00:41:29,139
+Burada da aradaki concrete fonksiyonun arasındaki şey de aslında aradaki
+
+672
+00:41:29,659 --> 00:41:30,940
+delimetre ayrı açıları.
+
+673
+00:41:31,960 --> 00:41:33,239
+Ve yanında password var.
+
+674
+00:41:33,239 --> 00:41:36,559
+Concate bir tane kolon oldu artık. Password da iki tane kolon oldu.
+
+675
+00:41:37,340 --> 00:41:39,900
+Union ile birleştirilmesi için önceki komuta da iki tane kolon vardı.
+
+676
+00:41:40,159 --> 00:41:42,199
+Sayılar eşit olduğu için çalıştırabiliyor hale geldik.
+
+677
+00:41:42,460 --> 00:41:45,019
+Ama üç tane komuta herhalde normalde concrete olmadan yazamazdık.
+
+678
+00:41:45,780 --> 00:41:47,320
+Şimdi bunu da bir son kez çalıştıralım.
+
+679
+00:41:48,340 --> 00:41:49,360
+Bunun çalıştığını görün.
+
+680
+00:41:52,989 --> 00:41:53,510
+Önce
+
+681
+00:41:53,750 --> 00:41:54,789
+önceki komutumuzu yazdık.
+
+682
+00:41:56,829 --> 00:41:57,349
+Buraya kadar her şey
+
+683
+00:41:57,590 --> 00:41:58,369
+tamam zaten.
+
+684
+00:41:58,630 --> 00:41:59,130
+Select
+
+685
+00:41:59,650 --> 00:42:01,429
+ikinci komutumuz. Union ile birleştirdik.
+
+686
+00:42:01,949 --> 00:42:02,969
+Concate diyoruz.
+
+687
+00:42:09,730 --> 00:42:10,750
+İki komutu birleştirdik.
+
+688
+00:42:11,010 --> 00:42:12,289
+Bu ilk kolonumuz bu oldu.
+
+689
+00:42:12,590 --> 00:42:14,369
+İkinci kolonumuzda password olsun diyoruz.
+
+690
+00:42:15,650 --> 00:42:17,449
+Users dedik ve bundan sonra gelen
+
+691
+00:42:17,969 --> 00:42:20,269
+koddaki gelen tırnağı da comment ile
+
+692
+00:42:21,030 --> 00:42:21,809
+kaldırdık.
+
+693
+00:42:22,309 --> 00:42:24,110
+Gördüğünüz gibi arkadaşlar iki kolon
+
+694
+00:42:24,869 --> 00:42:25,889
+birden geliyor.
+
+695
+00:42:26,409 --> 00:42:29,989
+En azından concrete edemedi ama şu iki 0x0 ile uğraşırsanız
+
+696
+00:42:30,250 --> 00:42:31,530
+onu da concrete ettiğini göreceksiniz.
+
+697
+00:42:33,070 --> 00:42:33,829
+Tamam mı arkadaşlar?
+
+698
+00:42:36,150 --> 00:42:37,929
+First name Pablo. Gerçi concrete etmiş.
+
+699
+00:42:38,190 --> 00:42:38,710
+Admin
+
+700
+00:42:39,210 --> 00:42:39,989
+Admin 1
+
+701
+00:42:41,769 --> 00:42:42,789
+Surname şeklinde.
+
+702
+00:42:43,869 --> 00:42:46,429
+First name Gordon 1 yazmış. Öbürüne de şifre yazmış.
+
+703
+00:42:48,230 --> 00:42:49,250
+Bu şekilde çalıştığını gördük.
+
+704
+00:42:51,030 --> 00:42:52,070
+Sorusu olan var mı?
+
+705
+00:42:52,309 --> 00:42:53,090
+Sorusu olan varsa
+
+706
+00:42:53,349 --> 00:42:54,869
+soruları alayım. Önümüzdeki hafta
+
+707
+00:42:55,130 --> 00:42:55,650
+devam edeceğim.
+
+708
+00:42:56,150 --> 00:42:56,929
+İkinci kısımda.
+
+709
+00:42:58,210 --> 00:43:00,510
+Buraya kadar sorusu olan varsa sorsun lütfen.
+
+710
+00:43:00,769 --> 00:43:03,590
+Eskorejection ilk kısmını anlamayan varsa. Çünkü önümüzdeki hafta buradan
+
+711
+00:43:03,829 --> 00:43:05,630
+Buraya kadar anladığınızı farz ederek devam edeceğim.
+
+712
+00:43:09,679 --> 00:43:11,219
+Çete yazabilirsiniz sorusu olan varsa.
+
+713
+00:43:19,039 --> 00:43:20,320
+Hocam ben bir şey sorabilir miyim?
+
+714
+00:43:20,820 --> 00:43:21,340
+Buyur.
+
+715
+00:43:22,099 --> 00:43:23,639
+Hocam ben şimdi yapılan işlemleri anladım.
+
+716
+00:43:23,639 --> 00:43:26,199
+Ama aklıma sadece şey sorusu geldi.
+
+717
+00:43:26,460 --> 00:43:26,960
+Bu
+
+718
+00:43:27,219 --> 00:43:28,760
+Database'e erişimdeki
+
+719
+00:43:29,019 --> 00:43:30,039
+kontrolü
+
+720
+00:43:30,300 --> 00:43:32,599
+şeyde yapmak yerine, kodda yapmak yerine mesela
+
+721
+00:43:32,860 --> 00:43:37,719
+ekstradan kullanabileceğimiz farklı bir yöntem var mı? Hani database'e direkt erişmek yerine farklı bir yere erişip,
+
+722
+00:43:37,980 --> 00:43:40,019
+oradan database'e eriştirmek böyle yolu
+
+723
+00:43:40,280 --> 00:43:41,039
+birazcık dolandırıp
+
+724
+00:43:41,300 --> 00:43:43,099
+direkt bir ulaşım sağlayamamak için.
+
+725
+00:43:44,880 --> 00:43:46,159
+Şimdi şöyle sizin neden
+
+726
+00:43:46,420 --> 00:43:50,780
+sizin database'inize doğrudan erişmiyorsunuz. Client'tan web sınıfına uğruyorsunuz.
+
+727
+00:43:51,039 --> 00:43:52,820
+Aslında hikayeye tekrar özet geçmekte fayda var.
+
+728
+00:43:56,300 --> 00:43:58,099
+Sizin ekrana tıkladığınız şey
+
+729
+00:43:58,340 --> 00:43:59,880
+buraya geliyor. Burası web sınıf tarafı.
+
+730
+00:44:00,139 --> 00:44:01,940
+Şu ekranda gördüğünüz kısım burası web sınıf kısmı.
+
+731
+00:44:02,179 --> 00:44:02,699
+Tamam mı?
+
+732
+00:44:03,219 --> 00:44:03,980
+Buraya bir query geliyor.
+
+733
+00:44:04,500 --> 00:44:06,539
+Ve gelen query database'e gönderiliyor değil mi?
+
+734
+00:44:06,800 --> 00:44:09,360
+Şimdi database bunun normal bir query mi yoksa
+
+735
+00:44:09,619 --> 00:44:11,400
+yani kullanıcının hakkı olan bir query mi yoksa
+
+736
+00:44:13,960 --> 00:44:18,059
+yarıştırıcı gerçekten bunu bu amaçla mı yazmış yoksa biri saldırı mı yapıyor? Bunu nasıl ayırt edebilir?
+
+737
+00:44:18,320 --> 00:44:19,860
+Bu noktada mümkün değil böyle bir şey.
+
+738
+00:44:20,360 --> 00:44:23,440
+Burada yapılan savunma şeklinde genelde bu database'e
+
+739
+00:44:23,699 --> 00:44:24,719
+doğrudan müdahale etmek yerine
+
+740
+00:44:25,219 --> 00:44:25,739
+webs
+
+741
+00:44:25,739 --> 00:44:27,019
+sunucu tarafında
+
+742
+00:44:27,539 --> 00:44:28,300
+yapılıyor tamam mı?
+
+743
+00:44:28,559 --> 00:44:30,599
+İlk savunmalardan bir tanesi mesela
+
+744
+00:44:30,860 --> 00:44:32,400
+örneğin ne olabilirdi sizce?
+
+745
+00:44:32,659 --> 00:44:35,980
+Mesela buraya sormuşum aslında. Son sorusu oydu aslında.
+
+746
+00:44:37,260 --> 00:44:38,800
+Mesela şöyle bir şey yapsa nasıl olurduk?
+
+747
+00:44:39,559 --> 00:44:41,860
+Biz buraya kullanıcının sadece ID'lerini giriyoruz değil mi?
+
+748
+00:44:42,900 --> 00:44:43,659
+Bir saniye açamadım.
+
+749
+00:44:43,920 --> 00:44:56,170
+Sanırım bitmiş.
+
+750
+00:44:56,690 --> 00:44:57,449
+Tekrar girelim.
+
+751
+00:44:58,469 --> 00:44:59,510
+Kapatmışım herhalde yanlışlıkla.
+
+752
+00:45:05,420 --> 00:45:10,800
+Mesela biz burada free format giriyoruz. Buraya böyle böyle bir şeyler girebiliyoruz. Sürpriz falan bir sürü şey. Bir tırnak girebiliyoruz en azından.
+
+753
+00:45:11,059 --> 00:45:12,340
+Buraya sadece user ID'lerini girebiliyoruz.
+
+754
+00:45:12,639 --> 00:45:14,420
+Girilmesi gerekir. Şöyle bir şey yapılabilir miydi sizce?
+
+755
+00:45:14,679 --> 00:45:16,739
+Mesela database'de benim 5 tane kullanıcım var zaten.
+
+756
+00:45:17,500 --> 00:45:23,900
+5 tane kullanıcımın olduğu buraya bir açıları kutu yapsak. Yani Dropbox veya Combux deniyor. Açıları pencere yapsak nasıl olurdu?
+
+757
+00:45:24,920 --> 00:45:27,219
+Mesela şuraya şöyle yapalım. Medium yapalım.
+
+758
+00:45:29,019 --> 00:45:30,300
+Medium'da mı geliyordu? Emin değilim.
+
+759
+00:45:30,559 --> 00:45:31,579
+Mesela böyle bir şey olsa.
+
+760
+00:45:32,340 --> 00:45:32,599
+Değil mi?
+
+761
+00:45:32,860 --> 00:45:35,679
+Bu bir seviyeyi koruma sağlar mıydı? Bakın burada hiç tırnak mırnak yazamıyoruz.
+
+762
+00:45:37,909 --> 00:45:41,250
+Bu seviyeyi koruma sağlardı ama bunun yetmediğini göreceksiniz. Yani aslında
+
+763
+00:45:41,750 --> 00:45:43,550
+sizin yapacağınız bütün savunmalar genel olarak
+
+764
+00:45:43,849 --> 00:45:44,869
+burada olmalı.
+
+765
+00:45:45,650 --> 00:45:49,730
+Çünkü database'i buradan gönderdikten sonra sorgunuzu, database bunu nereden bilebilir ki?
+
+766
+00:45:51,010 --> 00:45:52,809
+Kullanıcıdan mı geliyor yoksa
+
+767
+00:45:54,090 --> 00:45:56,389
+bu olması gereken bir şey mi yoksa saldırı mı?
+
+768
+00:45:56,650 --> 00:45:58,190
+Bunu ayırt etmesi mümkün değil pek fazla.
+
+769
+00:45:58,949 --> 00:45:59,469
+Çünkü
+
+770
+00:46:00,750 --> 00:46:01,510
+burası tamamen
+
+771
+00:46:02,289 --> 00:46:06,630
+tasarımcının isteğine kalmıyor. Database'in owner'larına, adminlerine kalmıyor.
+
+772
+00:46:06,889 --> 00:46:09,190
+Burada yapılan yetkilendirme, buradaki en büyük sorun
+
+773
+00:46:09,710 --> 00:46:11,250
+developer'ın yazdığı kodun
+
+774
+00:46:11,489 --> 00:46:13,289
+nelere yol açabileceğini bilmemesi
+
+775
+00:46:13,849 --> 00:46:15,130
+ve yetkilendirme sorunu.
+
+776
+00:46:18,710 --> 00:46:21,530
+Hocam bunu engellemek baya kolay gibi geldi.
+
+777
+00:46:21,789 --> 00:46:24,869
+Sistemi tasarlayan kişinin biraz kötü mü olması gerekiyor?
+
+778
+00:46:25,630 --> 00:46:26,909
+Yani sistemi tasarlayan kişinin
+
+779
+00:46:27,670 --> 00:46:30,750
+kişi çok güzel bir developer olabilir, çok başarılı bir developer olabilir.
+
+780
+00:46:31,769 --> 00:46:34,590
+Ama güvenlik açısından tabii ki iyi olması gerekiyor.
+
+781
+00:46:35,869 --> 00:46:38,690
+Zaten şu an sizin yazacağınız modern
+
+782
+00:46:38,949 --> 00:46:43,809
+programma dilleri, o kullanmanız ne bileyim, PHP'de tamam bu PHP'de çok kolay basit gözüküyor ama
+
+783
+00:46:43,809 --> 00:46:47,130
+ne bileyim siz Java'da yazdınız, .NET'de yazdınız, o derlenerek
+
+784
+00:46:47,389 --> 00:46:50,469
+web sitelerini oluşturan, derlenmeyle değil, derlenerek çalışan, script
+
+785
+00:46:50,730 --> 00:46:53,289
+programı dili değil, derlenerek çalışan programın bir çoğunda
+
+786
+00:46:53,530 --> 00:46:56,349
+zaten sizin yazdığınız bütün web sayfaların önüne ve arkasına
+
+787
+00:46:56,610 --> 00:46:57,130
+bu
+
+788
+00:46:57,369 --> 00:46:59,929
+SQL injection'i engelleyen bir takım
+
+789
+00:47:00,449 --> 00:47:01,989
+kütüphaneler ekleniyor.
+
+790
+00:47:02,250 --> 00:47:02,750
+Bir takım
+
+791
+00:47:03,010 --> 00:47:07,369
+derleme esnasında sizin kodlarınız arasında fişler yerleştiriyor, ekstra kodlar yerleştirip
+
+792
+00:47:07,610 --> 00:47:11,210
+bu tarz saldırılarının önüne geçmeye çalışıyor. Yani siz aslında developer olarak yükümlülüklerinizden kurtulmuş oluyorsunuz.
+
+793
+00:47:12,489 --> 00:47:13,769
+O yüzden
+
+794
+00:47:14,070 --> 00:47:16,630
+günümüzde
+
+795
+00:47:17,389 --> 00:47:18,170
+güncel olarak
+
+796
+00:47:18,929 --> 00:47:22,510
+web application yazan kişilerin çoğu, çalışanların çoğu
+
+797
+00:47:23,530 --> 00:47:24,050
+bu tarz
+
+798
+00:47:24,309 --> 00:47:26,349
+savunmaları kendisi geliştirmek zorunda değil.
+
+799
+00:47:26,610 --> 00:47:27,369
+Sistem zaten
+
+800
+00:47:27,630 --> 00:47:32,250
+kullandıkları platform, yazılım geliştirme platformu doğrudan bunu sağlıyor. Ama bu da bir yere kadar tabii ki.
+
+801
+00:47:32,750 --> 00:47:33,769
+Bir yerden sonra
+
+802
+00:47:34,030 --> 00:47:34,550
+bunun
+
+803
+00:47:34,809 --> 00:47:37,369
+mümkün olmadığını göreceksiniz zaten. Ha, hi'da.
+
+804
+00:47:38,389 --> 00:47:42,489
+O noktada biraz daha kullanıcı, yazılımcı ya da developer'a da yük biniyor.
+
+805
+00:47:42,730 --> 00:47:43,769
+Yaptığı şeylerin bilinçliği altında.
+
+806
+00:47:44,070 --> 00:47:45,349
+Farkına varması gerekiyor.
+
+807
+00:47:46,889 --> 00:47:51,750
+Yoksa burada gördüğünüz gibi bir tane tırnakla bile yapabileceğiniz şeyler neyse sınırsız.
+
+808
+00:47:52,010 --> 00:47:54,050
+Bütün database'deki bütün sorguları çalıştırmış oluyorsunuz.
+
+809
+00:47:54,570 --> 00:47:59,429
+Kullanıcının şifrelerini doğrudan görmeseniz bile hashlenmiş hallerini görüyorsunuz ve bunların da kırılabildiğini bilin.
+
+810
+00:48:02,110 --> 00:48:03,389
+Sorunun cevabını aldığını düşünüyorum.
+
+811
+00:48:04,670 --> 00:48:05,949
+Başka sorusu olan var mı?
+
+812
+00:48:15,300 --> 00:48:17,340
+Zaten bir sonraki hafta arkadaşlar
+
+813
+00:48:18,119 --> 00:48:20,679
+ben size bir seviye sorumluluk sağladım.
+
+814
+00:48:22,880 --> 00:48:23,659
+Burada.
+
+815
+00:48:24,679 --> 00:48:25,699
+Bu bir seviye sorumluluk.
+
+816
+00:48:25,699 --> 00:48:27,739
+Bu skoruma getirdi ama bakın daha medium'dayız.
+
+817
+00:48:28,000 --> 00:48:29,539
+Yani bu bir aşılabiliyor yani.
+
+818
+00:48:29,800 --> 00:48:30,300
+Bu
+
+819
+00:48:30,820 --> 00:48:33,380
+samit ediyorum geliyor ya bu. Bunu bile aşabiliyoruz.
+
+820
+00:48:34,400 --> 00:48:35,679
+Sonuç itibariyle
+
+821
+00:48:36,960 --> 00:48:40,300
+koduna tekrar bakarsak şuranın. Önümüzdeki hafta göreceğiz daha detaylı ama.
+
+822
+00:48:44,219 --> 00:48:47,559
+Bakın burada ne yapmış? Escape yapmış. Tırnaklardan falan kaçınılmış.
+
+823
+00:48:48,059 --> 00:48:49,340
+Ama bu bile aşılabiliyor yani.
+
+824
+00:48:51,139 --> 00:48:52,679
+Bu bir süreç.
+
+825
+00:48:52,920 --> 00:48:55,739
+İlk başlayanlar burada Dropbox olmadan
+
+826
+00:48:56,000 --> 00:48:58,039
+Buna Dropbox deniyor. Dropbox olmadan
+
+827
+00:48:58,559 --> 00:48:59,079
+ekleyebiliyorlar.
+
+828
+00:48:59,380 --> 00:49:01,940
+Sonra Dropbox kodlar bunun da çözüm olmadığını gördüler.
+
+829
+00:49:02,960 --> 00:49:06,800
+Sonra High seviyesi var. High seviyesinde de bir takım savunmalar geliyor.
+
+830
+00:49:07,559 --> 00:49:09,880
+Bakın House Heavs'i basıp tekrar Esc'e geldiğimizde
+
+831
+00:49:11,159 --> 00:49:13,199
+bir seviye koruma geliyor gördüğünüz gibi.
+
+832
+00:49:13,719 --> 00:49:14,739
+Bakın böyle bir
+
+833
+00:49:15,500 --> 00:49:19,079
+Toolbox açıyor. Yani sırf Esc'in olmasın diye bir popup geldi önüme.
+
+834
+00:49:19,599 --> 00:49:21,139
+Ben buraya bir yazıp sabit ediyorum.
+
+835
+00:49:22,420 --> 00:49:25,480
+Bakın ekrana öyle bir şeyler geliyor görüyor musunuz? Ekşidip sabit ediyorum.
+
+836
+00:49:26,260 --> 00:49:28,039
+Yani bunu da bu şekilde çözmeye çalışmışlar.
+
+837
+00:49:29,119 --> 00:49:32,960
+Bursun Impossible var. Bu gerçekten de impossible. Yani bunu yaptıktan sonra son seviye artık.
+
+838
+00:49:33,980 --> 00:49:39,360
+Esc'i tamamen engelleyen bir versiyon. Bakın burada hiçbir şey yok. Öyle tarz hareketler yok. Bunların her birinin her hafta size
+
+839
+00:49:40,380 --> 00:49:41,400
+Sanırım önümüzdeki hafta
+
+840
+00:49:41,920 --> 00:49:44,739
+Hem High hem de Medium'u göstereceğim size.
+
+841
+00:49:45,760 --> 00:49:52,679
+Bunların nasıl karşı koruma alındıklarını anlatacağım ki bu işin birazcık da böyle tarihçesiyle nereden nereye nasıl gelinmiş görün şeklinde.
+
+842
+00:49:53,699 --> 00:49:55,239
+Esc'in için en azından bunu böyle yapacağım.
+
+843
+00:49:56,260 --> 00:49:57,539
+Önümüzdeki hafta bu şekilde devam edeceğiz.
+
+844
+00:49:57,800 --> 00:49:58,300
+Tamam.
+
+845
+00:49:59,119 --> 00:50:01,679
+Saldırı nasıl aşıldığını, nasıl saldırı nasıl engellediğini göreceksiniz.
+
+846
+00:50:03,219 --> 00:50:04,500
+Siz zaten ilk derste
+
+847
+00:50:05,260 --> 00:50:10,119
+Dersin başında bu ortamı nasıl kuracağınızı da gösterdim. Komutları doğrudan çalıştırırsanız
+
+848
+00:50:10,639 --> 00:50:13,719
+%99 hazır olacaksınız. Belki Mozilla'ya
+
+849
+00:50:14,219 --> 00:50:15,760
+Bir iki ayar yapmanız gerekebilir.
+
+850
+00:50:17,300 --> 00:50:20,880
+Sanırım istesese gerekiyordu ama Mozilla'ya bir ayar yapmıştım. Bir de MySQL'de
+
+851
+00:50:21,900 --> 00:50:23,179
+Privileges'lerle ilgili
+
+852
+00:50:23,440 --> 00:50:28,039
+Biraz ufak bir uğraşırsınız. Ama komutların çoğu zaten ilk kurulumda işinizi çözecektir.
+
+853
+00:50:29,119 --> 00:50:32,699
+O Privileges'lerle ilgili de tek bir satır komutu, conf'i yazarak
+
+854
+00:50:32,960 --> 00:50:35,260
+Database'i kurtarabiliyorsunuz.
+
+855
+00:50:35,780 --> 00:50:40,380
+Yani bu sunumun ilk verdiğim kısımlarında, ilk saatte verdiğim şeyleri sırası ile düzgün bir şekilde yaparsanız
+
+856
+00:50:40,639 --> 00:50:42,440
+Ortamı kurup kendiniz de kurucu alabilirsiniz.
+
+857
+00:50:43,199 --> 00:50:45,500
+Önümüzdeki hafta bunun medium ve high'ini anlatacağım.
+
+858
+00:50:46,519 --> 00:50:48,320
+Bu haftalık bu kadardı arkadaşlar.
+
+859
+00:50:50,119 --> 00:50:51,139
+Son kez soruları sorayım.
+
+860
+00:50:51,400 --> 00:50:52,420
+Sorusu olan varsa alayım.
+
+861
+00:50:52,679 --> 00:50:59,289
+Hocam Impostle serisinde nasıl yani ne yapmışlar ki hocam?
+
+862
+00:50:59,809 --> 00:51:00,570
+Anlatacağım.
+
+863
+00:51:00,829 --> 00:51:01,610
+Önümüzdeki hafta anlatacağım.
+
+864
+00:51:02,170 --> 00:51:02,929
+Tamam hocam.
+
+865
+00:51:04,469 --> 00:51:06,769
+Önümüzdeki hafta vakit kalırsa Impossible'a da bakarız.
+
+866
+00:51:07,030 --> 00:51:08,050
+Medium ve high'i anlatacağım.
+
+867
+00:51:08,309 --> 00:51:09,070
+Sonra Impossible'a anlatacağım.
+
+868
+00:51:09,329 --> 00:51:11,130
+Impossible'a bir soru sorayım. Hızlıca bir bakalım ama.
+
+869
+00:51:12,909 --> 00:51:13,429
+Merak ettim.
+
+870
+00:51:13,690 --> 00:51:14,969
+Sen de bakabilirsin aslında ama.
+
+871
+00:51:15,210 --> 00:51:16,489
+Impossible'ı da zaten.
+
+872
+00:51:17,010 --> 00:51:19,309
+WeaveSource'u açarsan yapılan her şeyi görürsün.
+
+873
+00:51:30,099 --> 00:51:31,119
+Açık olduğu için herhalde.
+
+874
+00:51:36,059 --> 00:51:36,559
+Evet.
+
+875
+00:51:38,940 --> 00:51:40,460
+Bakın token koymuş arkadaşlar.
+
+876
+00:51:42,679 --> 00:51:43,960
+Moose.csrf token ama.
+
+877
+00:51:44,219 --> 00:51:45,500
+Sizin SQLization'a bir alakası yok.
+
+878
+00:51:46,059 --> 00:51:53,130
+Bakın bir tane database'in bir objesini oluşturuyor ve sunucu tarafını oluşturuyor bunu.
+
+879
+00:51:54,150 --> 00:51:56,449
+Ve buraya bakın bir sürü yeni kod geliyor.
+
+880
+00:51:56,969 --> 00:51:58,750
+ID'yi buraya veriyor.
+
+881
+00:52:00,550 --> 00:52:04,130
+Limit 1 diyor. En fazla bir tane çalıştırabilecek şekilde.
+
+882
+00:52:04,889 --> 00:52:08,489
+Sonra parametreleri PDO denen bir şey var.
+
+883
+00:52:08,730 --> 00:52:10,789
+SQL injection engelleyen bir tool var.
+
+884
+00:52:11,050 --> 00:52:13,849
+Onunla map ediyor. Ondan sonra execute edip ondan sonra fetch ediyor.
+
+885
+00:52:14,369 --> 00:52:15,130
+Yani
+
+886
+00:52:15,650 --> 00:52:16,929
+bir sürü koruma geliyor buraya.
+
+887
+00:52:16,929 --> 00:52:17,949
+Bu son hali.
+
+888
+00:52:18,210 --> 00:52:18,969
+PDO zaten
+
+889
+00:52:19,489 --> 00:52:22,309
+PHP ile call yazarsanız
+
+890
+00:52:22,570 --> 00:52:23,590
+database'ların
+
+891
+00:52:24,349 --> 00:52:25,889
+PDO üzerine yapıldığını göreceksiniz.
+
+892
+00:52:26,150 --> 00:52:27,690
+PDO üzerine yapacaklar. Bu neden işte
+
+893
+00:52:28,449 --> 00:52:29,469
+SQL injection arkadaşlar.
+
+894
+00:52:29,730 --> 00:52:29,989
+PDO'nun
+
+895
+00:52:30,250 --> 00:52:31,010
+çıkarılma nedeni
+
+896
+00:52:31,269 --> 00:52:33,050
+tamamen SQL injection'ı engellemek için.
+
+897
+00:52:33,829 --> 00:52:34,329
+Bu data
+
+898
+00:52:34,849 --> 00:52:36,889
+objek modelleri aslında. Yani bu
+
+899
+00:52:37,409 --> 00:52:38,949
+MVC'deki model gibi.
+
+900
+00:52:39,449 --> 00:52:42,269
+Sizin yazınız. MVC yazan var mı bilmiyorum veya MVVM.
+
+901
+00:52:42,789 --> 00:52:43,550
+Bu tarz
+
+902
+00:52:43,809 --> 00:52:45,349
+yazılı mimarların
+
+903
+00:52:45,849 --> 00:52:46,369
+aslında
+
+904
+00:52:46,369 --> 00:52:49,949
+çıkış nedenlerinin bir tanesinde güvenlik olduğunu çok rahatlıkla söyleyebilirim.
+
+905
+00:52:50,730 --> 00:52:55,849
+VWP yazan kaç kişi var aranızda? VWP üzerinde uğraşan veya mobil yazan kaç kişi var bilmiyorum ama
+
+906
+00:52:56,090 --> 00:52:56,610
+bu söylediğim
+
+907
+00:52:56,869 --> 00:52:59,929
+teknolojiler onlara aşina geliyordur ve şu an beni anlıyorlardır diye düşünüyorum.
+
+908
+00:53:00,710 --> 00:53:01,989
+Aslında sizin okullandığınız
+
+909
+00:53:02,750 --> 00:53:04,289
+yazılım arkitekçilerinin
+
+910
+00:53:04,550 --> 00:53:06,849
+tek nedeni modüler programlama yazmak değil.
+
+911
+00:53:07,610 --> 00:53:09,670
+Aslında yazılım mühendisliğinde ki o
+
+912
+00:53:09,929 --> 00:53:10,429
+gördüğünüz
+
+913
+00:53:10,949 --> 00:53:11,710
+cohesion'la,
+
+914
+00:53:11,969 --> 00:53:12,989
+decapling'le,
+
+915
+00:53:13,250 --> 00:53:16,329
+loose coupling'le alakalı o prosedürler, o protokoller her bir aslında
+
+916
+00:53:16,630 --> 00:53:18,409
+sadece yazılımın
+
+917
+00:53:18,670 --> 00:53:19,449
+verimli yazılması
+
+918
+00:53:19,690 --> 00:53:21,489
+için değil aynı zamanda güvenli yazılması için.
+
+919
+00:53:22,250 --> 00:53:23,789
+Güvenlik burada bu noktaya geliyor işte.
+
+920
+00:53:24,050 --> 00:53:24,809
+Sizin normalde
+
+921
+00:53:25,329 --> 00:53:27,369
+web uygulama tarafında kontrol edilmesi gereken
+
+922
+00:53:27,889 --> 00:53:29,429
+işlerinizin web tarafında kontrol edilmesi gerekiyor.
+
+923
+00:53:29,690 --> 00:53:32,750
+Web sonuçları tarafında kontrol edilmesi gerekiyor. Bunlar database sıçrarsa
+
+924
+00:53:33,010 --> 00:53:34,030
+şu an bugün gördüğünüz
+
+925
+00:53:34,289 --> 00:53:36,590
+bütün her şeyi yapabilecek saldırılarla karşı karşıya
+
+926
+00:53:36,849 --> 00:53:37,869
+kalmak durumdasınız.
+
+927
+00:53:38,389 --> 00:53:38,889
+O yüzden
+
+928
+00:53:39,150 --> 00:53:40,170
+yazdığınız programların
+
+929
+00:53:40,429 --> 00:53:41,969
+o yazdığınız yazılım mimarilerinin
+
+930
+00:53:42,489 --> 00:53:43,250
+çıkış noktasının
+
+931
+00:53:43,510 --> 00:53:44,789
+bir ayağının güvenlik
+
+932
+00:53:45,289 --> 00:53:46,070
+bilgisayar
+
+933
+00:53:46,369 --> 00:53:47,650
+açım sistemleri güvenliği olduğunu
+
+934
+00:53:47,909 --> 00:53:48,409
+bilin.
+
+935
+00:53:48,929 --> 00:53:49,690
+Bu zaten görüyorsunuz.
+
+936
+00:53:49,949 --> 00:53:52,010
+[öğrenci]'in amacı aslında bu zaten yani bu çıkan şeylerin
+
+937
+00:53:52,510 --> 00:53:54,050
+size yansıması. Onu görün.
+
+938
+00:53:54,309 --> 00:53:54,809
+Amaç o.
+
+939
+00:53:55,849 --> 00:53:56,869
+Başka sorusu olan var mı?
+
+940
+00:53:57,630 --> 00:54:00,449
+Sanırım yeter bu kadar sorular. Yani başka soru soracak yok gibi.
+
+941
+00:54:01,210 --> 00:54:04,030
+131 kişi katılmış. Dinlediğiniz için çok sağ olun arkadaşlar.
+
+942
+00:54:05,309 --> 00:54:08,130
+Önümüzdeki hafta medium ile hala devam edeceğiz.
+
+943
+00:54:08,889 --> 00:54:10,429
+Bu arada bu hafta kaçıncı hafta?
+
+944
+00:54:11,210 --> 00:54:12,230
+Hocam 7.
+
+945
+00:54:12,730 --> 00:54:15,809
+7 mi? Önümüzdeki hafta vize haftası olacaktır diye düşünüyorum.
+
+946
+00:54:16,369 --> 00:54:19,190
+Önümüzdeki hafta vize haftasıysa ben duyuru koyarım ona göre.
+
+947
+00:54:19,449 --> 00:54:22,010
+Ama bir aksilik olmazsa önümüzdeki hafta da devam edeceğiz tamam mı?
+
+948
+00:54:22,510 --> 00:54:24,809
+Ben aksini duyurmadığım sürece önümüzdeki hafta bugün
+
+949
+00:54:25,070 --> 00:54:25,590
+dersimiz olacak.
+
+950
+00:54:28,139 --> 00:54:28,920
+Tamam mı arkadaşlar?
+
+951
+00:54:29,159 --> 00:54:30,440
+Tamam hocam iyi günler hocam.
+
+952
+00:54:30,699 --> 00:54:31,719
+İyi günler hoşça kalın.
+

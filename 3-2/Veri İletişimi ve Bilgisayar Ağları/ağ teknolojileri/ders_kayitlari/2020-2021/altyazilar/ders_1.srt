@@ -1,0 +1,3532 @@
+1
+00:00:01,620 --> 00:00:07,620
+Bağlamış. Şuradan yazayım o zaman chatten.
+
+2
+00:00:07,620 --> 00:00:09,619
+Kameraya açık.
+
+3
+00:00:09,619 --> 00:00:11,619
+Kameraya kapalı.
+
+4
+00:00:11,619 --> 00:00:13,619
+Upload açık zaten chatten yazacağım.
+
+5
+00:00:13,619 --> 00:00:15,619
+Sende beraber biraz da.
+
+6
+00:00:15,619 --> 00:00:19,620
+Evet biraz bekleyelim.
+
+7
+00:00:19,620 --> 00:09:55,149
+Evet ses geliyor mu?
+
+8
+00:09:55,149 --> 00:09:57,149
+İkimizin de sesi iki tarafa da geliyor mu?
+
+9
+00:09:57,149 --> 00:10:00,460
+Geliyor.
+
+10
+00:10:00,460 --> 00:10:02,460
+Tamam.
+
+11
+00:10:02,460 --> 00:10:04,460
+Kocam yazmış şöyle eyvallah sağ ol.
+
+12
+00:10:04,460 --> 00:10:06,460
+Benden kimse bir şey yazmadı ya ses geliyor.
+
+13
+00:10:06,460 --> 00:10:08,460
+Şimdi geliyor tamam.
+
+14
+00:10:08,460 --> 00:10:10,460
+Sizi özlememişler.
+
+15
+00:10:10,460 --> 00:10:12,460
+Harika.
+
+16
+00:10:12,460 --> 00:10:16,460
+Şimdi arkadaşlar bu ders iki grup halinde.
+
+17
+00:10:16,460 --> 00:10:20,460
+Cihan Hocanızla beraber bir grup bende bir grup onda.
+
+18
+00:10:20,460 --> 00:10:24,460
+Geçen dönemde işletim sistemlerinde yaptığımız gibi
+
+19
+00:10:24,460 --> 00:10:28,460
+dersin haftalarını beraber işleyeceğiz.
+
+20
+00:10:28,460 --> 00:10:32,460
+Bir kısmını ben anlatacağım bir kısmını o anlatacak.
+
+21
+00:10:32,460 --> 00:10:34,460
+Zaman zaman aynı dersin içerisinde olabilir.
+
+22
+00:10:34,460 --> 00:10:36,460
+Bu zaman zaman hafta bazında olabilir.
+
+23
+00:10:36,460 --> 00:10:40,460
+Ama sonuçta ortak bir şekilde götüreceğiz.
+
+24
+00:10:40,460 --> 00:10:42,460
+Yürütmeyi deneyeceğiz en azından.
+
+25
+00:10:42,460 --> 00:10:44,460
+Evet.
+
+26
+00:10:44,460 --> 00:10:46,460
+Biz hani bunun böyle daha efektif olduğunu daha şey olduğunu düşünüyoruz.
+
+27
+00:10:46,460 --> 00:10:52,460
+Çünkü sonuçta hepinize anlattığımız şey aynı.
+
+28
+00:10:52,460 --> 00:10:56,460
+Online ortamda ders yapmak belki daha zor gibi görünüyor.
+
+29
+00:10:56,460 --> 00:10:59,460
+Ama diğer bir taraftan da bazı avantajları var.
+
+30
+00:10:59,460 --> 00:11:02,460
+Örneğin burada anlattıklarımız kaydediliyor.
+
+31
+00:11:02,460 --> 00:11:04,460
+Bu da şu anlama geliyor.
+
+32
+00:11:04,460 --> 00:11:09,460
+Anlamadığınız takip edemediğiniz o anda tam kavrayamadığınız şeyler varsa
+
+33
+00:11:09,460 --> 00:11:16,460
+kayıtlardan geriye dönüp üzerinden tekrar tekrar geçme dinleme ve şey yapma şansınız var.
+
+34
+00:11:16,460 --> 00:11:18,460
+Çünkü derste belirli bir süre.
+
+35
+00:11:18,460 --> 00:11:22,460
+Bir de beraber Cihan Hocanızla aynı anda bunu yaptığımız için
+
+36
+00:11:22,460 --> 00:11:30,460
+herkese aynı anda ben de o da aynı bilgi vermiş oluyoruz.
+
+37
+00:11:30,460 --> 00:11:35,460
+Benim yorumumu onun grubu, onun yorumunu da sizler duymuş oluyorsunuz.
+
+38
+00:11:35,460 --> 00:11:37,460
+Benim grubum duymuş oluyor.
+
+39
+00:11:37,460 --> 00:11:39,460
+Durum bu şekilde.
+
+40
+00:11:39,460 --> 00:11:41,460
+Ders kitabımızdan başlayalım.
+
+41
+00:11:41,460 --> 00:11:46,460
+Ders kitabımız Andrew Tannenbaum'un Computer Networks'u.
+
+42
+00:11:46,460 --> 00:11:51,460
+Biz bunun beşinci baskısını kullanıyoruz.
+
+43
+00:11:51,460 --> 00:11:55,460
+Beşinci baskısında işte network layer'den başlayacağız.
+
+44
+00:11:55,460 --> 00:11:59,460
+Transport layer'ı 5, 6, 7'e gideceğiz.
+
+45
+00:11:59,460 --> 00:12:02,460
+Bu arada kitapla ilgili bir de şey söyleyeyim hocam.
+
+46
+00:12:02,460 --> 00:12:10,460
+İyi Google mühendisleri kitabın PDF halini gönül rahatlığıyla internetten bulabilirler.
+
+47
+00:12:10,460 --> 00:12:15,460
+Evet yani hiç satın almanıza gerek olduğunu düşünmüyoruz açıkçası.
+
+48
+00:12:15,460 --> 00:12:17,460
+Yani kitap güzel kitap tabii.
+
+49
+00:12:18,460 --> 00:12:23,460
+Para var 35 mi 38 dolar falan öyle bir şeydi.
+
+50
+00:12:23,460 --> 00:12:25,460
+Harcamak istiyorum diyorsunuz.
+
+51
+00:12:25,460 --> 00:12:27,460
+Harcamak için güzel bir yer tabii ama.
+
+52
+00:12:27,460 --> 00:12:29,460
+Mühendisiniz açılsın.
+
+53
+00:12:29,460 --> 00:12:31,460
+Kütüphanenizde olması gereken bir şey.
+
+54
+00:12:31,460 --> 00:12:35,460
+Yani o da işin diğer tarafı.
+
+55
+00:12:35,460 --> 00:12:41,460
+Şeye gelince değerlendirme noktasına gelince.
+
+56
+00:12:41,460 --> 00:12:43,460
+Böyle slide'leri paylaşacağız zaten.
+
+57
+00:12:43,460 --> 00:12:44,460
+Tabii tabii.
+
+58
+00:12:45,460 --> 00:12:47,460
+Ben orada bir şey daha söylemek istiyorum.
+
+59
+00:12:47,460 --> 00:12:49,460
+Nasıl olsa slide'ler varak güvenmeyin.
+
+60
+00:12:49,460 --> 00:12:53,460
+Çünkü çok güzel bir kitap olsa da slide'leri çok boş.
+
+61
+00:12:53,460 --> 00:13:02,460
+Yani böyle slide başına sayfa sayısı gibi bir tuhaf hesap yapmanız gerekirse böyle 15-20 sayfaya bir slide bir şey yok.
+
+62
+00:13:02,460 --> 00:13:04,460
+Slide'da da hiçbir şey olmuyor.
+
+63
+00:13:04,460 --> 00:13:08,460
+Dolayısıyla tabi yazarım.
+
+64
+00:13:08,460 --> 00:13:11,460
+Pardon bana çete yazar mısınız demişler de.
+
+65
+00:13:12,460 --> 00:13:14,460
+Evet ben de yazıyorum.
+
+66
+00:13:25,460 --> 00:13:27,460
+Ben de yazdım arkadaşlar.
+
+67
+00:13:27,460 --> 00:13:29,460
+Tanrı'nın bağımlılık kitabı.
+
+68
+00:13:29,460 --> 00:13:31,460
+Tanrı'nın bağımlılık kitabı.
+
+69
+00:13:31,460 --> 00:13:33,460
+Bir dakika.
+
+70
+00:13:33,460 --> 00:13:35,460
+Tanrı'nın bağımlılık kitabı.
+
+71
+00:13:35,460 --> 00:13:37,460
+Evet.
+
+72
+00:13:37,460 --> 00:13:39,460
+İnşallah doğru yazdım.
+
+73
+00:13:40,460 --> 00:13:43,460
+Dolayısıyla hani nasıl olsa slide'ler varak güvenmeyin.
+
+74
+00:13:43,460 --> 00:13:48,460
+Slide'lerde bir şey yok yani sınav günü sınavdan bir gün önce iki gün önce slide'lere bakar.
+
+75
+00:13:48,460 --> 00:13:50,460
+Hallederiz derseniz yalan olur o iş.
+
+76
+00:13:50,460 --> 00:14:06,460
+Bir de kitapta slide başına düşen sayfa sayısı fazla olduğu gibi biz de doğal olarak o slide'ları anlatırken kendi yorumumuzla kendi ek bilgimizle size anlatmak paylaşmak istediğimiz bilgilerle anlatıyoruz.
+
+77
+00:14:06,460 --> 00:14:11,460
+Ondan ötürü her zaman offline kayıtlardan dinleme şansınız var.
+
+78
+00:14:11,460 --> 00:14:19,460
+Evet ama derste olmanız, ders sırasında dinlemeniz, yeri geldiğinde de soru sormanız avantajlı olacaktır.
+
+79
+00:14:19,460 --> 00:14:26,460
+Geçen bir dönem içerisinde de en azından tahminimce online ders dinlemeye daha çok alışmışsınızdır.
+
+80
+00:14:26,460 --> 00:14:30,460
+Daha fazla adapte olmuşsunuzdur diye düşünüyorum.
+
+81
+00:14:30,460 --> 00:14:33,460
+Bizim açımızdan biraz böyle radyo tiyatrosu gibi.
+
+82
+00:14:33,460 --> 00:14:45,460
+Çünkü genelde biz konuşuyoruz sizden çok fazla bir yorum veya geri besleme gelmiyor ama yazarak veya yeri geldiğinde sesli sorarak derse katılabilirsiniz.
+
+83
+00:14:45,460 --> 00:14:49,460
+Şimdi dönem yine 14 hafta.
+
+84
+00:14:49,460 --> 00:14:57,460
+Normalde biliyorsunuz bir vize zorunlu ikinci vize opsiyonel ama biz alışkanlık gereği iki vize yapıyoruz.
+
+85
+00:14:57,460 --> 00:15:00,460
+Bunun sizler için daha avantajlı olduğunu düşünüyoruz.
+
+86
+00:15:00,460 --> 00:15:05,460
+İki defa sizin başarınızı ölçmek, size iki defa şans vermek demek.
+
+87
+00:15:05,460 --> 00:15:11,460
+Birinde hastasınızdır, canınız sıkındır, keyfiniz yoktur, bir şeyleri gözden kaçırmışsınızdır.
+
+88
+00:15:11,460 --> 00:15:13,460
+O yüzden iki vize olacak.
+
+89
+00:15:13,460 --> 00:15:19,460
+Değişiklik olmazsa birinci vize yine sekizinci haftada olur.
+
+90
+00:15:19,460 --> 00:15:25,460
+Ama üniversite sanatosu karar alır, başka bir şey olur, dokuz olur, fakülte bir şey yapar.
+
+91
+00:15:26,460 --> 00:15:32,460
+Açıklamadılar, pandemiden dolayı başka bir şey olur ama sekiz diye hazırlıyoruz biz kendimizi.
+
+92
+00:15:32,460 --> 00:15:35,460
+Dönemin başlaması herkes için sürpriz oluyor.
+
+93
+00:15:35,460 --> 00:15:39,460
+Üniversite hanı fakülteli için sürpriz oluyor aynen.
+
+94
+00:15:39,460 --> 00:15:46,460
+Sekizinci hafta olursa ikinci sınavı, dokuz olursa on üçüncü hafta yaparız.
+
+95
+00:15:46,460 --> 00:15:51,460
+Zaten on dördüncü haftada da ders bitiyor arkasından filan.
+
+96
+00:15:51,460 --> 00:15:54,460
+Orada mazeretler oluyor.
+
+97
+00:15:54,460 --> 00:15:58,460
+Sınavlar, bizim derslerimizi alıyorsunuz.
+
+98
+00:15:58,460 --> 00:16:02,460
+Evet, en sevdiğiniz şekilde test usulü.
+
+99
+00:16:02,460 --> 00:16:07,460
+Baştan söyleyelim, kayıtlarda da olsun, siz yine soracaksınız.
+
+100
+00:16:07,460 --> 00:16:10,460
+Her sınav için tekrar tekrar şey yapacaksınız.
+
+101
+00:16:10,460 --> 00:16:19,460
+Sınavlarda yanlış cevaplar test usulü olduğu için doğru cevapları iptal ediyor.
+
+102
+00:16:19,460 --> 00:16:32,460
+Kaç tane yanlışın doğru cevabı iptal edeceği tamamen şık sayısıyla alakalı dört olursa üç tanesi beş olursa dört tanesi iptal ediyor.
+
+103
+00:16:32,460 --> 00:16:34,460
+Kendinizi buna göre ayarlayın.
+
+104
+00:16:34,460 --> 00:16:40,460
+Yani bizim herhangi bir sınava bu özel açıklamayı yazmamıza gerek yok.
+
+105
+00:16:40,460 --> 00:16:44,460
+Bütün sınavlarımız bu, formatta standartımız bu.
+
+106
+00:16:44,460 --> 00:16:47,460
+Ama yine de biz yazıyoruz, yazmaya çalışıyoruz.
+
+107
+00:16:47,460 --> 00:16:51,460
+İnsan hali atlamış olabiliriz ama sınav değerlendirmesi bu şekilde gerçekleşiyor.
+
+108
+00:16:51,460 --> 00:16:53,460
+Diğer bir şey daha var.
+
+109
+00:16:53,460 --> 00:17:06,460
+Sistem, üniversite senatosunun aldığı karar gereği gösterilen soruya geri dönülmesini engelleyecek şekilde güncellendi.
+
+110
+00:17:06,460 --> 00:17:11,460
+Bu bizim sizlere özellikle zorluk çıkartmak adına yaptığımız bir şey değil.
+
+111
+00:17:11,460 --> 00:17:19,460
+Üniversitenin, eğitim, öğretim rektör yardımcılığının ilgili kurullarının almış olduğu ve teknik olarak da gerçekleştirmiş olduğu bir şey.
+
+112
+00:17:19,460 --> 00:17:25,460
+O yüzden lütfen bize, bölüm başkanlarına, fakülteye veya bir başka yere,
+
+113
+00:17:25,460 --> 00:17:34,460
+hocalar sınavda sorulara geri dönülmeyecek şekilde sınavı düzenlediği için ben o sorulara cevaplayamadım, bunu bilmiyordum, farkında değildim.
+
+114
+00:17:34,460 --> 00:17:36,460
+İşte sürem eksik kaldı.
+
+115
+00:17:36,460 --> 00:17:39,460
+Böyle olmasaydı ben bunu cevaplardım demeyin.
+
+116
+00:17:39,460 --> 00:17:41,460
+Çünkü yapılacak bir şey yok.
+
+117
+00:17:41,460 --> 00:17:48,460
+Yani bu üniversitenin belirlediği şu an için geçerli olan sınav formatlarından bir tanesi.
+
+118
+00:17:48,460 --> 00:17:51,460
+Yani sınav başladığında da bunu kontrol edin.
+
+119
+00:17:51,460 --> 00:17:53,460
+Biz bunu da yazmaya çalışıyoruz.
+
+120
+00:17:53,460 --> 00:17:56,460
+Ama bunu şu anda duyurmuş olalım.
+
+121
+00:17:56,460 --> 00:17:57,460
+Durum bu şekilde.
+
+122
+00:17:57,460 --> 00:17:59,460
+Bir şey de söylemek lazım.
+
+123
+00:17:59,460 --> 00:18:03,460
+Sınav sitemiz çoktan çok seçmeli bildiğiniz üzere.
+
+124
+00:18:03,460 --> 00:18:04,460
+Evet.
+
+125
+00:18:04,460 --> 00:18:06,460
+Standart olarak kabul etmiş sistem.
+
+126
+00:18:06,460 --> 00:18:09,460
+Yani bir sorunun birden fazla doğru cevabı olabilir.
+
+127
+00:18:09,460 --> 00:18:13,460
+Doğru cevapların tamamını, burada şöyle bir update var.
+
+128
+00:18:13,460 --> 00:18:19,460
+Eskiden offline olarak 100-100 eğitimdeyken doğru cevapları arasında,
+
+129
+00:18:19,460 --> 00:18:24,460
+mesela üç kişi doğruysa, ikisini işaretlediyseniz onun kadar puan alıyordunuz oranlı olarak.
+
+130
+00:18:24,460 --> 00:18:28,460
+Şu an sistemde bunu maalesef ayırt edebilme şansımız yok.
+
+131
+00:18:28,460 --> 00:18:30,460
+Şu an sistem şey üzerinden yürüyor.
+
+132
+00:18:30,460 --> 00:18:37,460
+Tamamı doğru cevapların tamamı doğru olarak işaretlenmediği sürece soru doğru sayılmıyor.
+
+133
+00:18:37,460 --> 00:18:40,460
+Böyleyse bu noktada dikkatli olmanıza fayda var.
+
+134
+00:18:40,460 --> 00:18:48,460
+Yani A, B ve D şıkları doğruysa siz A ve B'yi veya A ve D'yi veya B ve D'yi işaretlediyseniz
+
+135
+00:18:48,460 --> 00:18:51,460
+ama diğer üçüncü doğru şıkı işaretlemediyseniz
+
+136
+00:18:51,460 --> 00:18:54,460
+ne yazık ki o sorudan puan alamıyorsunuz.
+
+137
+00:18:54,460 --> 00:18:59,460
+Bu yönde bir güncelleme yapılmadı, yapılır mı yapılmaz mı bilmiyoruz.
+
+138
+00:18:59,460 --> 00:19:06,460
+Yapılırsa o zaman o devreye girer ama bilin ki çok seçenekli sorularda tam puan,
+
+139
+00:19:06,460 --> 00:19:14,460
+daha doğrusu puan alabilmeniz için, o sorunun yanlış sayılmaması için bütün doğru şıkları işaretlemeniz gerekiyor.
+
+140
+00:19:14,460 --> 00:19:21,460
+Durum bu şekilde. Yanlışlık işaretlediğinizde zaten adı üzerinde soru otomatikman yanlış oluyor.
+
+141
+00:19:21,460 --> 00:19:26,460
+Yani doğrularla yanlışlar bir arada olmuyorlar maalesef.
+
+142
+00:19:26,460 --> 00:19:28,460
+Buna dikkat etmeniz lazım.
+
+143
+00:19:28,460 --> 00:19:34,460
+Şimdi derste uygulamamız olacak arkadaşlar.
+
+144
+00:19:34,460 --> 00:19:40,460
+Bunun için bu ders sonrasında Cihan hocanızla beraber derste uygulamalarda
+
+145
+00:19:40,460 --> 00:19:45,460
+sizinle beraber bir arada çalışacak asistan arkadaşlarla bir toplantı yapacağız.
+
+146
+00:19:45,460 --> 00:19:48,460
+Onun gününü belirleyeceğiz şeylerine.
+
+147
+00:19:48,460 --> 00:19:51,460
+Yani o asistanların planlama toplantısı daha yeni yok.
+
+148
+00:19:51,460 --> 00:19:54,460
+Uygulamalardan sorumlu asistanlar yeni belli oldu.
+
+149
+00:19:54,460 --> 00:19:58,460
+Şimdi onlarla bir toplantı yapıp istediğimiz şeyleri belirteceğiz.
+
+150
+00:19:58,460 --> 00:20:02,460
+Orada birkaç tane şey var kafamızda.
+
+151
+00:20:02,460 --> 00:20:08,460
+Ama nereden bakarsanız bakın en az dört tane uygulama olacaksınız.
+
+152
+00:20:08,460 --> 00:20:11,460
+Bu uygulamaların bir kısmı şey şeklinde olacaktır.
+
+153
+00:20:11,460 --> 00:20:16,460
+Asistan arkadaşların size bilgi vermesi şeklinde.
+
+154
+00:20:16,460 --> 00:20:20,460
+Ama şeye dönüp de değerlendirmeye dönük kısmı da olabilir.
+
+155
+00:20:20,460 --> 00:20:24,460
+Yani asistan arkadaşlara biz her zaman için şunu söylüyoruz.
+
+156
+00:20:24,460 --> 00:20:29,460
+Uygulamalar da eğitimin bir parçası bir konuyu öğrenmenin bir parçası.
+
+157
+00:20:29,460 --> 00:20:37,460
+O yüzden uygulama sırasında anlattıkları şeylerle alakalı size o anda o uygulama kapsamında şunu da siz yapın.
+
+158
+00:20:37,460 --> 00:20:40,460
+Sonucunu da şu şekilde bize aktarın.
+
+159
+00:20:40,460 --> 00:20:43,460
+Hani sistemden gönderin tarzı bir şey söyleyebilirler.
+
+160
+00:20:43,460 --> 00:20:45,460
+Şaşırmayın.
+
+161
+00:20:45,460 --> 00:20:48,460
+Yani ben uygulama sadece bana anlatılacaktı.
+
+162
+00:20:48,460 --> 00:20:55,460
+Ben dinleyecektim soru sorulup cevap verilecekti kısmını bilmiyordu gibi bir sürpriz durumunuz olmasın.
+
+163
+00:20:55,460 --> 00:20:57,460
+Bu yapılabilir.
+
+164
+00:20:57,460 --> 00:21:01,460
+Bu da uygulamanın formatı içerisinde yer alıyor.
+
+165
+00:21:01,460 --> 00:21:03,460
+Bu da şu anlama geliyor.
+
+166
+00:21:03,460 --> 00:21:05,460
+Uygulamaları da kaçırmayın lütfen.
+
+167
+00:21:05,460 --> 00:21:13,460
+Bizim dersin uygulamaları kazartesi günü 5 ile 7 yanlış bilmiyorsam o saatler arasında olacak.
+
+168
+00:21:13,460 --> 00:21:19,460
+Umarım uygundur size de bir sıkıntı oluşturmuyordur zaten online olduğu için.
+
+169
+00:21:19,460 --> 00:21:22,460
+Uygulamalara hemen başlamayacağız.
+
+170
+00:21:22,460 --> 00:21:24,460
+4 tane uygulama olacak.
+
+171
+00:21:24,460 --> 00:21:27,460
+Bunları planlamamız bu hafta içerisinde olur.
+
+172
+00:21:27,460 --> 00:21:32,460
+Önümüzdeki hafta arkadaşlar da kendi zamanlamalarını hazırlıklarını yaparlar.
+
+173
+00:21:32,460 --> 00:21:35,460
+Muhtemelen üçüncü haftadan itibaren.
+
+174
+00:21:35,460 --> 00:21:38,460
+Aslında onları yapabilmek için biraz yol almamız da gerekiyor.
+
+175
+00:21:38,460 --> 00:21:40,460
+Konuda anlatmamız lazım.
+
+176
+00:21:40,460 --> 00:21:44,460
+Koyutu uygulama olduğu için mesela TCP, IP, Wireshark vs. bir şey anlatılıyoruz.
+
+177
+00:21:44,460 --> 00:21:46,460
+Anfotur, IP de vs.
+
+178
+00:21:46,460 --> 00:21:51,460
+Karşılığının bulunabilmesi için zaten birkaç haftada otomatik olarak beklememiz gerekiyor.
+
+179
+00:21:51,460 --> 00:21:54,460
+Dolayısıyla en az üçüncü haftadan sonra olacak.
+
+180
+00:21:54,460 --> 00:21:57,460
+Üç veya dördüncü haftadan itibaren olur.
+
+181
+00:21:57,460 --> 00:22:03,460
+Şimdi zaten online olduğu için aynı anda hepinize birden bir şekilde erişilebiliyor.
+
+182
+00:22:03,460 --> 00:22:07,460
+Paralel sejin yapılmasına gerek kalmıyor.
+
+183
+00:22:07,460 --> 00:22:09,460
+Onun avantajı var.
+
+184
+00:22:09,460 --> 00:22:15,460
+Bir de arkadaşların tabi kendi uygulamayla alakalı materyallerini,
+
+185
+00:22:15,460 --> 00:22:20,460
+asistan arkadaşların o materyalleri hazırlaması şey yapması gerekiyor.
+
+186
+00:22:20,460 --> 00:22:24,460
+Ders öncesinde Cihan hocanızla konuştuk.
+
+187
+00:22:24,460 --> 00:22:29,460
+Ders kapsamında bir proje verme düşüncemiz var.
+
+188
+00:22:29,460 --> 00:22:33,460
+Fakat sayı olarak fazlasınız.
+
+189
+00:22:33,460 --> 00:22:35,460
+200'e yakınsınız.
+
+190
+00:22:35,460 --> 00:22:37,460
+Onun değerlendirilmesi var.
+
+191
+00:22:37,460 --> 00:22:40,460
+Asistan arkadaşların da sayısı az.
+
+192
+00:22:40,460 --> 00:22:45,460
+Yenileri katılmış olmasına rağmen bir kısım asistan arkadaşlar aramızdan ayrıldı.
+
+193
+00:22:45,460 --> 00:22:49,460
+Öyle olunca onların yük durumlarını bilmiyoruz açıkçası.
+
+194
+00:22:49,460 --> 00:22:57,460
+Bir diğer derslerden, uygulamalardan, onlardan kaynaklanan yüklerini bir görelim.
+
+195
+00:22:57,460 --> 00:23:02,460
+Buna bağlı olarak ders kapsamında bir proje verebiliriz.
+
+196
+00:23:02,460 --> 00:23:08,460
+Ama illa ki işte hocam verebiliriz dediniz, niye vermediniz değil.
+
+197
+00:23:08,460 --> 00:23:13,460
+Şartlı yani şu anda veriyoruz, kesin olacak demiyoruz haberiniz olsun.
+
+198
+00:23:13,460 --> 00:23:14,460
+Verebiliriz.
+
+199
+00:23:15,460 --> 00:23:19,460
+Proje her zaman için sizin lehinize olacak bir şeydir.
+
+200
+00:23:19,460 --> 00:23:26,460
+Projeyi verdiğimiz dönemlerde bunu yaptığımız dönemlerde 20 puan üzerinden veriyoruz.
+
+201
+00:23:26,460 --> 00:23:31,460
+Ve bu 20 puanı da doğrudan sizin sene içi ortalamanızın üzerine,
+
+202
+00:23:31,460 --> 00:23:34,460
+yani vizelerden elde ettiğiniz ortalamanın üzerine koyuyoruz.
+
+203
+00:23:34,460 --> 00:23:37,460
+Yani böyle bir boost etmiş oluyoruz sizi.
+
+204
+00:23:37,460 --> 00:23:38,460
+Bonus.
+
+205
+00:23:38,460 --> 00:23:40,460
+Bonus olarak düşünebilirsiniz.
+
+206
+00:23:40,460 --> 00:23:43,460
+Fakat önce bir şartları görmemiz lazım.
+
+207
+00:23:43,460 --> 00:23:45,460
+Yükleri görmemiz lazım.
+
+208
+00:23:45,460 --> 00:23:47,460
+Şey yapmamız gerekiyor.
+
+209
+00:23:47,460 --> 00:23:50,460
+Bu arada iki şey daha var araya girsem.
+
+210
+00:23:50,460 --> 00:23:51,460
+Tabii tabii anlat.
+
+211
+00:23:51,460 --> 00:23:57,460
+Arkadaşlardan biri önümüzdeki haftalarda uygulama olmayan ders saatlerinde ders işlenecek mi hocam diye sormuş.
+
+212
+00:23:57,460 --> 00:24:01,460
+Herhalde pazartesi sol 5-7 arasındaki saatleri kastediyor.
+
+213
+00:24:01,460 --> 00:24:04,460
+O saatlerde bir şey yapacak mıyız diye. Hayır yapmayacağız.
+
+214
+00:24:04,460 --> 00:24:05,460
+Ondan uygulama saatleri.
+
+215
+00:24:05,460 --> 00:24:09,460
+Teorik derslerimiz hani salı günü 3-5 arasında olan.
+
+216
+00:24:09,460 --> 00:24:13,460
+Biz burada ders anlatmaya, konu anlatmaya devam edeceğiz.
+
+217
+00:24:13,460 --> 00:24:19,460
+Uygulamalar başladığı zaman pazartesi günü olan zamanı kullanacağız.
+
+218
+00:24:19,460 --> 00:24:32,460
+Tabii içerik olarak baktığımızda zaten haftada 2 saatle 14 haftada hani vize haftalarında düşünecek olursak 12 haftada bütün içeriği çok rahat bir şekilde anlatabiliyoruz.
+
+219
+00:24:32,460 --> 00:24:34,460
+Yani bir eksimiz, gediğimiz kalmıyor.
+
+220
+00:24:34,460 --> 00:24:37,460
+Geçen dönem gerçi o geçişten dolayı biraz sallandı olayda.
+
+221
+00:24:37,460 --> 00:24:42,460
+İşte şeydi yani pandemi başladı, online sistem ayaklandırıldı 2-3 hafta ders yapılamadan.
+
+222
+00:24:42,460 --> 00:24:46,460
+Sadece ek yapıldı falan bayağı bir sıkıntıydı o.
+
+223
+00:24:46,460 --> 00:24:50,460
+Yani şeyimiz olmaz konular açısından bir eksimiz olmaz.
+
+224
+00:24:50,460 --> 00:24:55,460
+Cihan hocanızın dediği gibi pazartesi günleri uygulama saati var sadece orada ders yok.
+
+225
+00:24:55,460 --> 00:24:58,460
+Salı günlere de ders saati var.
+
+226
+00:24:58,460 --> 00:25:01,460
+Bu tarafta bugün de sadece ders yapacağız.
+
+227
+00:25:01,460 --> 00:25:03,460
+Uygulama bu saatte olmaz.
+
+228
+00:25:03,460 --> 00:25:06,460
+Durumumuz budur.
+
+229
+00:25:06,460 --> 00:25:10,460
+Bir şey daha vardı aklıma geldi ama şu an.
+
+230
+00:25:10,460 --> 00:25:12,460
+Kaç tane uygulama?
+
+231
+00:25:12,460 --> 00:25:14,460
+Az önce söyledik [öğrenci] 4 tane olacak diye.
+
+232
+00:25:14,460 --> 00:25:18,460
+Yani en az 4 tane olacak diye konularla alakalı değil mi?
+
+233
+00:25:18,460 --> 00:25:20,460
+[öğrenci].
+
+234
+00:25:20,460 --> 00:25:22,460
+Evet.
+
+235
+00:25:22,460 --> 00:25:23,460
+O ne?
+
+236
+00:25:23,460 --> 00:25:24,460
+Çet WhatsApp.
+
+237
+00:25:24,460 --> 00:25:26,460
+Hani siz WhatsApp grubu mu oluşturuyorsunuz?
+
+238
+00:25:26,460 --> 00:25:27,460
+Nedir onun şey mi?
+
+239
+00:25:27,460 --> 00:25:28,460
+Vay arkadaş.
+
+240
+00:25:28,460 --> 00:25:30,460
+Korsan grubu legal yerde oluştu.
+
+241
+00:25:30,460 --> 00:25:32,460
+Oho yakalım mı? Tıpkıralım bizi.
+
+242
+00:25:32,460 --> 00:25:34,460
+Biz de girelim bari WhatsApp grubunuza.
+
+243
+00:25:34,460 --> 00:25:35,460
+Vay arkadaş.
+
+244
+00:25:35,460 --> 00:25:36,460
+Süper.
+
+245
+00:25:36,460 --> 00:25:37,460
+Onur.
+
+246
+00:25:37,460 --> 00:25:38,460
+Harika.
+
+247
+00:25:38,460 --> 00:25:40,460
+Durum bu şekilde.
+
+248
+00:25:40,460 --> 00:25:42,460
+Tuanlama sistemi tam olarak nasıl olacak?
+
+249
+00:25:42,460 --> 00:25:44,460
+Nasıl bir sistem istiyorsun?
+
+250
+00:25:44,460 --> 00:25:47,460
+%60 sene için %40 sene sonu.
+
+251
+00:25:47,460 --> 00:25:49,460
+Ama Senato bunu her an değiştirebiliyor.
+
+252
+00:25:49,460 --> 00:25:54,460
+Çünkü geçen sene bir anda sene için %30 sene sonu %70 olacak dediler.
+
+253
+00:25:54,460 --> 00:25:57,460
+Yani Senato'nun aldığı kararlara.
+
+254
+00:25:57,460 --> 00:25:58,460
+O tarafa da paylaşayım.
+
+255
+00:25:58,460 --> 00:25:59,460
+Vay arkadaş.
+
+256
+00:25:59,460 --> 00:26:01,460
+Tabii her tarafa.
+
+257
+00:26:01,460 --> 00:26:02,460
+Değişen bir şey yok ki.
+
+258
+00:26:02,460 --> 00:26:05,460
+Normalde nasılsa o şekilde.
+
+259
+00:26:05,460 --> 00:26:09,460
+Hani %60'ın üzerine eğer proje verirsek.
+
+260
+00:26:09,460 --> 00:26:12,460
+Ekstradan 20 puan alıyorsunuz.
+
+261
+00:26:12,460 --> 00:26:16,460
+Şimdi WhatsApp grubunu yazdılar ya.
+
+262
+00:26:16,460 --> 00:26:19,460
+Çocuklar da bu tarafa da paylaşabilir miyiz grubu yazmışlar.
+
+263
+00:26:19,460 --> 00:26:20,460
+Paylaşabiliriz.
+
+264
+00:26:20,460 --> 00:26:22,460
+Grubu paylaşmanızda hiçbir sıkıntı yok ama.
+
+265
+00:26:22,460 --> 00:26:25,460
+Dersiçi yaptığınız faaliyetlerde herhangi bir paylaşma anında.
+
+266
+00:26:25,460 --> 00:26:27,460
+Çok canımız sıkılır.
+
+267
+00:26:27,460 --> 00:26:29,460
+Sizin de canınız sıkılır.
+
+268
+00:26:29,460 --> 00:26:30,460
+Ona dikkat edin.
+
+269
+00:26:30,460 --> 00:26:35,460
+Yani sınav sırasında özellik ve bu tarz paylaşımlarınızın olmaması gerekiyor.
+
+270
+00:26:35,460 --> 00:26:41,460
+Yoksa bilgi alışverişi, dersin takibi, işlemi, soru sorulması konularla alakalı.
+
+271
+00:26:41,460 --> 00:26:44,460
+Oralarda her şey tabii ki grub üzerinden şey yapabilirsiniz.
+
+272
+00:26:44,460 --> 00:26:47,460
+Şimdi uygulamalar ne kadar etkileyecek, güzel nasıl etkileyecek.
+
+273
+00:26:47,460 --> 00:26:49,460
+Ondan da demek istedim diye yazmayacağım.
+
+274
+00:26:49,460 --> 00:26:50,460
+Yani tekrar edeyim o zaman.
+
+275
+00:26:50,460 --> 00:26:51,460
+Çünkü söyledik.
+
+276
+00:26:51,460 --> 00:26:54,460
+%40 final, %60 sene için.
+
+277
+00:26:54,460 --> 00:26:57,460
+%60 aslında temel kısmı.
+
+278
+00:26:57,460 --> 00:26:59,460
+Pardon.
+
+279
+00:26:59,460 --> 00:27:03,460
+%60'ın temel kısmı aslında vizelerimiz.
+
+280
+00:27:03,460 --> 00:27:06,460
+Proje verirsek %20 üstüne bonus vereceğiz dedik.
+
+281
+00:27:06,460 --> 00:27:11,460
+Yani hani %31'e %32 vize.
+
+282
+00:27:11,460 --> 00:27:15,460
+Üstüne projeyi 20 puan üzerinden bonus olarak.
+
+283
+00:27:15,460 --> 00:27:18,460
+Böyle lök diye ekstra kaymaklı.
+
+284
+00:27:18,460 --> 00:27:20,460
+Şeklinde olacaksınız diye söyledik.
+
+285
+00:27:21,460 --> 00:27:26,460
+Uygulamalarda da, normal şartlarda uygulamalarda size konu anlatımı bulacak.
+
+286
+00:27:26,460 --> 00:27:32,460
+Fakat hani yerine göre içediğin belli noktalarda açıkta olan kısımları var.
+
+287
+00:27:32,460 --> 00:27:34,460
+Oralara vesaire pahalı var.
+
+288
+00:27:34,460 --> 00:27:44,460
+Eğer oradan sizin katılım sağlayacağınız bu uygulamalara da döner ise onu o zaman düşünürüz.
+
+289
+00:27:44,460 --> 00:27:47,460
+Hani şu an ona söyleyecek bir yüzden yok.
+
+290
+00:27:47,460 --> 00:27:49,460
+Bunların hepsi tentatib.
+
+291
+00:27:49,460 --> 00:27:52,460
+Yani hani nasıl diyeyim.
+
+292
+00:27:52,460 --> 00:27:55,460
+Umarız böyle olur şeklinde dağılımla.
+
+293
+00:27:55,460 --> 00:27:56,460
+Net olan tek şey.
+
+294
+00:27:56,460 --> 00:27:59,460
+Bu da senotokarar ile vesellede değişmezse tekrar.
+
+295
+00:27:59,460 --> 00:28:01,460
+%40, %60 oranı.
+
+296
+00:28:01,460 --> 00:28:05,059
+Bilmiyorum.
+
+297
+00:28:05,059 --> 00:28:06,059
+Kafana yattım [öğrenci].
+
+298
+00:28:06,059 --> 00:28:08,059
+Uygun bu yani.
+
+299
+00:28:08,059 --> 00:28:12,059
+Bunun dışında benim söyleyeceğim şeyi hatırladım.
+
+300
+00:28:12,059 --> 00:28:18,059
+Şimdi bu ders kapsamında bizimle interaksiyonundasınız temel olarak.
+
+301
+00:28:18,059 --> 00:28:29,059
+Fakat uygulamalarda ve ders kapsamındaki sorularınız ya da şeylerinizle ilgili problemlerinizle ilgili asistan arkadaşlarla da iletişimde olacaksınız mutlaka.
+
+302
+00:28:29,059 --> 00:28:30,059
+Aynen.
+
+303
+00:28:30,059 --> 00:28:36,059
+Dolayısıyla bu iletişim sırasında lütfen oldukça dikkatli ve özenli olun.
+
+304
+00:28:36,059 --> 00:28:46,059
+Aynı bizimle iletişim kurduğunuz zaman da olduğunuz gibi saygı sınırlarını aşmayan şekilde iletişiminizi sürdürün.
+
+305
+00:28:46,059 --> 00:28:49,059
+Aksi takdirde sıkıntılar doğabiliyor.
+
+306
+00:28:49,059 --> 00:28:52,059
+Hani geçen dönem bununla ilgili birkaç şey yaşandı.
+
+307
+00:28:52,059 --> 00:28:59,059
+Dolayısıyla ne asistan arkadaşların ne sizlerin bu ve benzeri noktalarda üzülmenizi istemeyiz.
+
+308
+00:28:59,059 --> 00:29:07,059
+Lütfen yazdıklarınızı, çizdiklerinizi, bizimle yazışırken gösterdiğiniz özeni aynen gösterin.
+
+309
+00:29:07,059 --> 00:29:09,059
+Herkes çok yüklü arkadaşlar.
+
+310
+00:29:10,059 --> 00:29:18,059
+Herkes sizlerin yaşadığı şekilde belirli bir bu pandemi döneminden dolayı etkilenmiş durumda.
+
+311
+00:29:18,059 --> 00:29:29,059
+Öyle olunca da yani hem normal iş yükü hem pandeminin getirdiği diğer şey falan hepsi bir araya geldiğinde daha dikkatli olunması gerekiyor.
+
+312
+00:29:29,059 --> 00:29:31,059
+Cihan hocanızın söylediği şey çok doğru.
+
+313
+00:29:31,059 --> 00:29:34,059
+Geçen dönem bazı talihsiz vakalarla karşılaştık.
+
+314
+00:29:34,059 --> 00:29:38,059
+Bu dönem onlar olmasın yaşanmasın.
+
+315
+00:29:38,059 --> 00:29:43,059
+Siz ne kadar özen gösterirseniz biz de o kadar hani karşılığında özen gösteriyoruz, dikkat ediyoruz.
+
+316
+00:29:43,059 --> 00:29:47,059
+Her şey normal akışında ilerleyebilsin diye.
+
+317
+00:29:47,059 --> 00:29:53,059
+Ama bunu etkileyen, engelleyen, elimizde olmayan durumlarda olabiliyor.
+
+318
+00:29:53,059 --> 00:29:57,059
+Şeyler bu şekilde dersin, uygulaması.
+
+319
+00:29:57,059 --> 00:30:02,059
+Devam konusunu zaten hani baştan söyledik bir kez daha offline izleyebilirsiniz.
+
+320
+00:30:02,059 --> 00:30:07,059
+Ama işte slide'larda bir slide'ın 15 sayfa bile olabildiğini, bizim şeyimizin olduğunu.
+
+321
+00:30:07,059 --> 00:30:10,059
+O yüzden biz katılımınızı tercih ederiz, yeğleriz.
+
+322
+00:30:10,059 --> 00:30:13,059
+Aktif katılımınız daha da çok tercih olur.
+
+323
+00:30:13,059 --> 00:30:15,059
+Kafanıza takılan şeyler sorma imkânınız olur.
+
+324
+00:30:15,059 --> 00:30:21,059
+Yani şöyle söyleyeyim, Computer Network 5. Edition 6'sı çıktı mı emin değilim.
+
+325
+00:30:21,059 --> 00:30:23,059
+Çıkmış olabilir.
+
+326
+00:30:23,059 --> 00:30:27,059
+5 hani güncel diye geçen sene ama 6 belki çıkmıştır herhalde ben.
+
+327
+00:30:27,059 --> 00:30:30,059
+Dönüp bakmıyor.
+
+328
+00:30:30,059 --> 00:30:32,059
+Sıra gelmedi yani ona.
+
+329
+00:30:32,059 --> 00:30:37,059
+Ve fakat hani gene de içerisinde her şey yüzde 100 güncel dedi.
+
+330
+00:30:37,059 --> 00:30:40,059
+Yani mesela cellular network anlatırken yani.
+
+331
+00:30:40,059 --> 00:30:42,059
+Çıkmış 6. Edition.
+
+332
+00:30:42,059 --> 00:30:44,059
+Çıkmış mı süper.
+
+333
+00:30:44,059 --> 00:30:49,059
+6. Edition çıkmış, bir arada onu da almak edinmek lazım aslında.
+
+334
+00:30:49,059 --> 00:30:56,059
+Orada mesela 3G'den vs. den bahsediyor ama biz tahminen o konuşulurken 4.
+
+335
+00:30:56,059 --> 00:30:59,059
+Generasyondan da 5. Generasyondan da bahsediyor olacağız.
+
+336
+00:30:59,059 --> 00:31:02,059
+Dolayısıyla hani ek bilgiler, ek faydalar.
+
+337
+00:31:02,059 --> 00:31:06,059
+Kafanıza takılan şeyleri sormak vs. adına daha iyi olabilir.
+
+338
+00:31:06,059 --> 00:31:13,059
+Artık sizin katılımınız zaman zaman konunun daha farklı yerlere dağılanmasına,
+
+339
+00:31:13,059 --> 00:31:16,059
+budaklanmasına, ilginçleşmesine fayda sağlıyor.
+
+340
+00:31:16,059 --> 00:31:18,059
+Dolayısıyla katılın.
+
+341
+00:31:18,059 --> 00:31:20,059
+Bunun dışında da soracağınız bir şey varsa onları alalım.
+
+342
+00:31:20,059 --> 00:31:24,059
+Gerçi arada soracak arkadaşlar bir şeyler sordular ama.
+
+343
+00:31:24,059 --> 00:31:30,059
+Aklınıza takın, kafanıza takılan bir şeyler varsa ekstra onları sorun.
+
+344
+00:31:30,059 --> 00:31:38,269
+Yok mu?
+
+345
+00:31:38,269 --> 00:31:40,269
+Hiç yok demek ki.
+
+346
+00:31:40,269 --> 00:31:42,269
+Tamam süper şuradan şey yapalım bari.
+
+347
+00:31:42,269 --> 00:31:43,269
+Girelim mi diyorsunuz?
+
+348
+00:31:43,269 --> 00:31:45,269
+Basitçe bir neler anlatacağız.
+
+349
+00:31:45,269 --> 00:31:48,269
+Network player tarafı sende açarsan oradan bir şey yapalım.
+
+350
+00:31:48,269 --> 00:31:50,269
+Açmam mı?
+
+351
+00:31:50,269 --> 00:31:52,269
+Tamam.
+
+352
+00:31:52,269 --> 00:31:54,269
+Az önce vardı ya.
+
+353
+00:31:54,269 --> 00:31:56,269
+Vardı da çok sayıda.
+
+354
+00:31:57,269 --> 00:32:00,269
+Diğer şeyleri de açık bıraktığım için.
+
+355
+00:32:00,269 --> 00:32:02,269
+Tamam şuradan şey yapalım.
+
+356
+00:32:02,269 --> 00:32:04,269
+Aa bu da yanlış.
+
+357
+00:32:04,269 --> 00:32:06,269
+Bu girmeyecektir.
+
+358
+00:32:06,269 --> 00:32:08,269
+Şurada bak beşe.
+
+359
+00:32:08,269 --> 00:32:10,269
+Tamam okey.
+
+360
+00:32:10,269 --> 00:32:17,839
+Bugün daha doğrusu bu dönem ben netvokçu geldim.
+
+361
+00:32:17,839 --> 00:32:19,839
+Aynen sen şeyleri anlattın.
+
+362
+00:32:19,839 --> 00:32:21,839
+Beş tane falan bitersin.
+
+363
+00:32:21,839 --> 00:32:23,839
+Dördü netvok galiba.
+
+364
+00:32:23,839 --> 00:32:26,839
+Ekran geldi mi arkadaşlar?
+
+365
+00:32:26,839 --> 00:32:30,539
+Geldi hocam.
+
+366
+00:32:30,539 --> 00:32:32,539
+Süper harika.
+
+367
+00:32:32,539 --> 00:32:37,880
+Şimdi network player tarafıyla başlayacağız.
+
+368
+00:32:37,880 --> 00:32:44,880
+Network player dediğimiz zaman bu kitapta beşinci chapter'a denk düşüyor.
+
+369
+00:32:44,880 --> 00:32:51,880
+Üzerinden geçeceğimiz konular aslında genel olarak şu şekilde.
+
+370
+00:32:51,880 --> 00:32:56,880
+Bir olayın teorik kısmını gözden geçiriyoruz.
+
+371
+00:32:56,880 --> 00:33:01,880
+Arkasından da bu teorik kısmın günümüzdeki pratik uygulamasına bakıyoruz.
+
+372
+00:33:01,880 --> 00:33:08,880
+İşte design issue, routing algoritms, congestion control, quality of service, networking.
+
+373
+00:33:08,880 --> 00:33:10,880
+Sonrasında da bakın ne diyor?
+
+374
+00:33:10,880 --> 00:33:12,880
+Network player of the internet.
+
+375
+00:33:12,880 --> 00:33:18,880
+Çünkü zaman içerisinde tarihsel gelişimde pek çok şey deneniyor.
+
+376
+00:33:18,880 --> 00:33:25,880
+Ve bu denemeler sonrasında şu anda günümüzde bütün dünya çapında global olarak kullandığımız
+
+377
+00:33:25,880 --> 00:33:34,880
+ve TCP IP dediğimiz network protokol yapısının genel geçer standart olmasına karar veriliyor.
+
+378
+00:33:34,880 --> 00:33:44,880
+Ama onun öncesinde envai çeşit farklı üreticilerin, farklı akademik kurumların ortaya attığı protokoller var.
+
+379
+00:33:44,880 --> 00:33:54,880
+Hep bunların birleştirilmesi, bir arada çalıştırılması, internetworkingten aslında anlaşılan o internetworkingin sağlanması falan düşünüyor.
+
+380
+00:33:54,880 --> 00:34:06,880
+Ama bu pratikte de, yani teori de belki olasılığı var ama pratikte gerçekleşme sonuçta da günümüzde internet dediğimiz TCP IP noktasına geliyoruz.
+
+381
+00:34:06,880 --> 00:34:09,880
+Bu noktada sadece bir şey söylemek istiyorum.
+
+382
+00:34:09,880 --> 00:34:14,880
+Şimdi Gökhan hocanın dediği gibi biz, yani sadece biz değil aslında kitap da böyle anlatıyor.
+
+383
+00:34:14,880 --> 00:34:21,880
+Tarihsel gelişime göre bazı yöntemleri sistematiği vesaireyi anlatıyoruz.
+
+384
+00:34:21,880 --> 00:34:25,880
+Şunu düşünüyor olabilirsiniz ama yanlış bir düşünce.
+
+385
+00:34:25,880 --> 00:34:28,880
+Önce ne olduğunu söyleyeyim, sonra niye yanlış olduğunu söyleyeyim.
+
+386
+00:34:28,880 --> 00:34:32,880
+Biz bunu ne yapacağız? Zaten denemiş, bitmiş, kenara kaldırılmış.
+
+387
+00:34:32,880 --> 00:34:40,880
+O kenara kaldırılmış olan şeyler genellikle her yeni teknolojiyi ortaya attığında tekrar denemiyor.
+
+388
+00:34:40,880 --> 00:34:49,880
+En basite RFID çıktığında hani sene 1960'da kullanılmış ve kenara atılmış olan Aloha tekrar popüler oluyor.
+
+389
+00:34:49,880 --> 00:34:53,880
+Popüler oluyor derken ilk onu deniyorlar, hani bununla yapsak.
+
+390
+00:34:53,880 --> 00:34:56,880
+O zaman sonra şununla yapsak, sonra bununla yapsak vesaire diye.
+
+391
+00:34:56,880 --> 00:35:10,880
+Dolayısıyla hani history repeats itself durumu hani bir şekilde kullanılmış, kenara kaldırılmış, yerine yenisi geliştirmiş olan algoritma bir şekilde tekrar gündeme geliyor.
+
+392
+00:35:10,880 --> 00:35:14,880
+En basite routing protokolü üzerinden şey yaparsak Distance Vector Routing var.
+
+393
+00:35:14,880 --> 00:35:26,880
+Evet biz hani normal bilgisayaralarında bu işi kaldırıp kenara koymuşuz ama sensor network ilk ortaya çıktığında bunu deneyebiliriz acaba burada falan olur mu diye tekrar önümüze geliyor.
+
+394
+00:35:26,880 --> 00:35:32,880
+Dolayısıyla bunlar tamamen hani eskimiş, bitmiş, çöp olmuş vesaire bilgiler değil.
+
+395
+00:35:32,880 --> 00:35:39,880
+Tam tersi bir şekilde tekrar tekrar ortaya karşınıza çıkacak olan şeyler.
+
+396
+00:35:39,880 --> 00:35:47,880
+Şu an günümüzde kullandığımız birçok algoritmanın ya da yöntemin ya da teknikinde temelini oluşturan şeyler.
+
+397
+00:35:47,880 --> 00:35:50,880
+Yani onları bilmek diğerlerini anlamayı bir adım kolaylaştırıyor.
+
+398
+00:35:50,880 --> 00:35:52,880
+Olaya böyle bakıyoruz da.
+
+399
+00:35:52,880 --> 00:35:55,880
+Diğer taraftan siz bu işin mühendisliğini okuyorsunuz.
+
+400
+00:35:55,880 --> 00:35:59,880
+Tarihini bilmek zorundasınız, geçmişini de bilmek zorundasınız.
+
+401
+00:35:59,880 --> 00:36:17,880
+Çünkü aynen az önce Cihan hocanızın söylediği gibi o ana kadar karşılaşmadığınız bir problemle karşılaştığınızda ve mevcut durumda bir çözüm olmadığında yapacağınız en temel şey eskiden benzer durumlarda uygulanmış olan çözümler nelerdi.
+
+402
+00:36:17,880 --> 00:36:23,880
+Bunları buraya uygularsam nasıl başarı elde ederim, bunu çözebilir miyim, çözemez miyim bunu gözden geçirmek.
+
+403
+00:36:23,880 --> 00:36:30,880
+O yüzden evet işin tarihçesine de gireceğiz ama esas önemli olan tarafı belki de o.
+
+404
+00:36:30,880 --> 00:36:34,880
+Çünkü diğer günümüzde internet şöyle oluyor TCPIP budur.
+
+405
+00:36:34,880 --> 00:36:41,880
+İşte adres böyledir, routing şöyledir desek iki haftada da üç haftada da çok hızlı bir şekilde crash course şeklinde bitirebiliriz bunu.
+
+406
+00:36:42,880 --> 00:36:57,880
+Şimdi network layer bakın alt tarafta physical ve link layer var bu aslında datakom dersinde anlatılıyor, veri haberleşmesi dersinde anlatılıyor.
+
+407
+00:36:57,880 --> 00:37:04,880
+Onların var olduğunu kabul ediyoruz, oradan bu bilgileri almış olduğunuzu kabul ediyoruz.
+
+408
+00:37:04,880 --> 00:37:13,880
+Yani teknik olarak OSİ referans modelinin ne olduğunu, oradaki yedi katmanın neler olduğunu kafanızda biliyor olmanız lazım.
+
+409
+00:37:13,880 --> 00:37:18,880
+Yani temel bu computer network giriş konusunda bir sıkıntı olmuyor olması lazım.
+
+410
+00:37:18,880 --> 00:37:25,880
+Öbür taraftan TCPIP'nin referans modelindeki o dört katmanı biliyor olmanız lazım.
+
+411
+00:37:26,880 --> 00:37:33,880
+Ve bu kitap kapsamında anlatılırken bazı şeyler omit ediliyor OSİ tarafındaki katmanlar.
+
+412
+00:37:33,880 --> 00:37:36,880
+Dolayısıyla beş katmanlı bir yapı kabul ediliyor, onun üzerinden gidiyor.
+
+413
+00:37:36,880 --> 00:37:51,880
+Yani transport üzerindeki session presentation vesaire ortadan kaldırılmış durumda zaten belli açılardan da politik nedenlerle orada olup içi de çok da dolu olmayan katmanlar.
+
+414
+00:37:51,880 --> 00:37:52,880
+Dolu olmayan katmanlar, aynen.
+
+415
+00:37:52,880 --> 00:37:58,880
+Biz ders kapsamında network, transport ve application'i bu kitap üzerinden konuşuyoruz.
+
+416
+00:37:58,880 --> 00:38:04,880
+O beş katmanın üstteki üç katmanını anlatıyor olacağız.
+
+417
+00:38:04,880 --> 00:38:13,880
+Burada katmanlı yapılan ne olduğunu, servisin, interfeyesinin ne olduğunu zaten Datacom'da öğrenmiş olmanız, biliyor olmanız lazım.
+
+418
+00:38:13,880 --> 00:38:19,880
+Eğer bununla ilgili bir eksiklik hissediyorsanız kitabın birinci bölümü var.
+
+419
+00:38:19,880 --> 00:38:25,880
+Bu computer networks'ın yani bu ders kapsamında kullanacağımız computer networks'ın chapter 1 birinci bölümü var.
+
+420
+00:38:25,880 --> 00:38:28,880
+Onu bence gözden geçirmekte fayda olabilir.
+
+421
+00:38:28,880 --> 00:38:31,880
+Eğer oralarda eksiğiniz olduğunu düşünüyorsanız.
+
+422
+00:38:31,880 --> 00:38:34,880
+Network değerine bakın yan tarafa yazmış.
+
+423
+00:38:34,880 --> 00:38:41,880
+Bu arada İngilizce dökümanlar üzerinden gidiyoruz, İngilizce slide'lar üzerinden gidiyoruz.
+
+424
+00:38:41,880 --> 00:38:47,880
+Terminolojiyi İngilizce olarak kullanıyoruz ama doğal olarak dersi Türkçe olarak anlatıyoruz.
+
+425
+00:38:47,880 --> 00:39:01,880
+Sonuçta siz bunun terminolojisini, şeylerini İngilizce öğrendikten sonra geri kalan öz neymiş, fiilmiş, edatmış, serfmiş, İngilizce'de siz onları kendiniz yeri geldiğinde yerleştirebilirsiniz.
+
+426
+00:39:01,880 --> 00:39:05,880
+İki tarafta da, her iki dilde de bunu öğrenmiş olursunuz.
+
+427
+00:39:05,880 --> 00:39:07,880
+Amacı ne?
+
+428
+00:39:07,880 --> 00:39:19,880
+Birden fazla link üzerinden yani end to end, birden fazla link üzerinden uçtan uca paketlerin aktarılması ve teslim edilmesi.
+
+429
+00:39:19,880 --> 00:39:22,880
+Network layer'ın görevi bu kadar basit.
+
+430
+00:39:22,880 --> 00:39:30,880
+Bir at katmanda baktığımızda aslında iki nokta arasında ve tek atlama şeklinde.
+
+431
+00:39:30,880 --> 00:39:39,880
+Ama network layer açısından baktığımızda uçtan uca ve birden fazla atlama, birden fazla link şeklinde.
+
+432
+00:39:39,880 --> 00:39:41,880
+Olayın özünde bu var.
+
+433
+00:39:41,880 --> 00:39:56,880
+Yani niye network layer var diyorsanız, network layer mevcut linkler ile sağlanmış end to end bağlantıyı genişletiyor, topolojiyi genişletiyor.
+
+434
+00:39:56,880 --> 00:40:17,880
+Daha uzak mesafeler arasında bilginin bir uç noktadan diğer bir uç noktaya store forward mantığı ile, yani sakla gönder mantığıyla, store and forward mantığıyla aktarılmasını sağlıyor.
+
+435
+00:40:17,880 --> 00:40:21,579
+Ben niye mi basamıyorum?
+
+436
+00:40:21,579 --> 00:40:23,579
+Evet, ki bakın.
+
+437
+00:40:24,579 --> 00:40:32,579
+İşte bakın, aynen bir ileri bir geri oldu.
+
+438
+00:40:32,579 --> 00:40:38,579
+Aynen, az önce size söylediğim şekilde store and forward packet switching.
+
+439
+00:40:38,579 --> 00:40:41,579
+Şimdi burada ciddi kavramlar var.
+
+440
+00:40:41,579 --> 00:40:44,579
+Bu kavramları bu şekilde öğrenmeniz gerekiyor.
+
+441
+00:40:44,579 --> 00:40:51,579
+Başlangıçta belki ezberleyeceksiniz ama daha sonra kullanırken sizin doğalınız haline gelecek.
+
+442
+00:40:51,579 --> 00:40:53,579
+Birincisi store and forward.
+
+443
+00:40:53,579 --> 00:40:55,579
+Çok basit bir kavram.
+
+444
+00:40:55,579 --> 00:41:00,579
+Bir veriyi işleyebilmemiz için memory'de olması lazım.
+
+445
+00:41:00,579 --> 00:41:12,579
+Network üzerinden gelen bir verinin de ya o noktada ya da bir sonraki noktada kullanılabilmesi için önce lokalde memory'de saklanması, yani store edilmesi,
+
+446
+00:41:12,579 --> 00:41:21,579
+hedef orası değilse bir başka noktaya aktarılacaksa oraya yine network üzerinden yönlendirilmesi yani forward edilmesi gerekiyor.
+
+447
+00:41:21,579 --> 00:41:24,579
+İşte buna store and forward yapısı deniyor.
+
+448
+00:41:24,579 --> 00:41:34,579
+Arada üzerinde işlem yaptığımız hani bir veri dedim ya bir veri yapısı, network açısından bu veri yapısının adı da packet.
+
+449
+00:41:34,579 --> 00:41:36,579
+Söyle.
+
+450
+00:41:36,579 --> 00:41:41,579
+Aslında orada şey kavramı da datakomda konuşmuş olmaları lazım.
+
+451
+00:41:41,579 --> 00:41:44,579
+Message switching, packet switching.
+
+452
+00:41:44,579 --> 00:41:46,579
+Yani elinizde bir mesaj var.
+
+453
+00:41:46,579 --> 00:42:01,579
+Bir bütün bunu a'dan b'ye, b'den c'ye, c'den de d'ye yani aslında a'dan d'ye aktarmak için başka yerler üzerinde geçerek aktarıyorsanız ve bütün mesajı önce a'dan b'ye,
+
+454
+00:42:01,579 --> 00:42:12,579
+c'den bütün mesajı c'ye, c'den bütün mesajı d'ye şeklinde aktarıyorsanız bütün mesaj adım adım gidiyorsa siz message switching yapıyorsunuz.
+
+455
+00:42:12,579 --> 00:42:21,579
+Ama bunu daha küçük hani network a anlamında daha anlamlı parçalara küçük parçalara bölüp aktarıyorsanız,
+
+456
+00:42:21,579 --> 00:42:22,579
+paketlere bölüp aktarıyorsunuz.
+
+457
+00:42:22,579 --> 00:42:24,579
+Bu packet switching'tir.
+
+458
+00:42:25,579 --> 00:42:35,579
+Gökhan hocanın söylediği şey, ben paketin tamamı benim bufferuma gelip memoriye aktarılıp durmaya başlamadan onu forward etmeye başlayamam.
+
+459
+00:42:35,579 --> 00:42:44,579
+Yani a'nın göndermeye başladığı paketin ilk 10 byte'ı b'ye geldiğinde b bunu c'ye doğru aktarmaya başlamaz.
+
+460
+00:42:44,579 --> 00:42:52,579
+Paketin tamamı işte 100 byte'sa, 1000 byte'sa neyse tamamı b'ye gelir, paket tamamlanır, ondan sonra devam eder.
+
+461
+00:42:53,579 --> 00:42:54,579
+Çünkü diyoruz.
+
+462
+00:42:54,579 --> 00:42:55,579
+Aynen.
+
+463
+00:42:55,579 --> 00:43:04,579
+Diğer bir şey, connectionless veya connection oriented servis, bunun üzerinde çok duracağız.
+
+464
+00:43:04,579 --> 00:43:14,579
+Çünkü bu haberleşmenin analog veya dijital haberleşmenin en başından beri var olan bir durum,
+
+465
+00:43:14,579 --> 00:43:19,579
+connectionless mı verilecek servis yoksa connection oriented mı verilecek.
+
+466
+00:43:19,579 --> 00:43:29,579
+Şu an günümüzde geldiğimiz noktada dijital haberleşmenin artık iyice artmış olduğu noktada neredeyse her şeyi connectionless servis üzerinden veriyoruz.
+
+467
+00:43:29,579 --> 00:43:32,579
+Çünkü neden? TCP IP kullanıyoruz.
+
+468
+00:43:32,579 --> 00:43:42,579
+Ama bu tek yolumuzun connectionless olduğunu, tek doğrunun bu olduğunu mutlaka her senaryoda bunun kullanılacağı anlamına gelmiyor.
+
+469
+00:43:42,579 --> 00:43:54,579
+Aradaki farkı birazdan diğer konumunla alakalı slide'larda daha net göreceğiz ama aklınızda kalsın, gözünüzde canlansın diye söylüyorum.
+
+470
+00:43:54,579 --> 00:44:01,579
+Connectionless mektup, connection oriented ise telefon.
+
+471
+00:44:02,579 --> 00:44:13,579
+Telefonla birini ararsınız, onun zilini çaldırırsınız, telefonunu kaldırır, arada bir bağlantı olur, ondan sonra onun üzerinden konuşursunuz.
+
+472
+00:44:13,579 --> 00:44:17,579
+Karşı taraf sizin aradığınızı bilir, arandığını da bilir.
+
+473
+00:44:17,579 --> 00:44:20,579
+Yani telefonu kaldırması rastgele değildir.
+
+474
+00:44:20,579 --> 00:44:29,579
+Ya şu an bana bir telefon mu geldi acaba, ahizeyi kaldırayım diye paranoyak bir şekilde 10 dakikada bir, 5 dakikada bir telefonu kontrol etmez.
+
+475
+00:44:29,579 --> 00:44:42,579
+Ama mektupta da şey yapmazsınız yani gelirsiniz bir gün, posta kutunuzda bir zarf görürsünüz, açarsınız, arkadaşımdan mektup gelmiş ne güzel diye sevinirsiniz.
+
+476
+00:44:42,579 --> 00:44:45,579
+Veya ailenizden mektup geldi diye sevinirsiniz.
+
+477
+00:44:45,579 --> 00:44:55,579
+Fakat kimse de size daha önceden telefonun, zilinin çalması gibi bak seninle konuşacağım, sana bir haber göndereceğim, benimle konuş diye bir uyarı da bulunmaz.
+
+478
+00:44:55,579 --> 00:44:58,579
+Öncesinde bir interapt yoktur, öncesinde bir uyarı yoktur.
+
+479
+00:44:58,579 --> 00:45:03,579
+Akraba say koysa önce arayıp bak sana mektup yolluyorum da diyebiliriz.
+
+480
+00:45:03,579 --> 00:45:05,579
+Bu da mektup servisi.
+
+481
+00:45:05,579 --> 00:45:18,579
+Aslında orada mektup tabi ama hani şey, telegraf zaten o datagramda, datagramın, telegramdan geleni datagram olması.
+
+482
+00:45:18,579 --> 00:45:26,579
+Bu arada connection oriented ve connectionless baktığınız zaman aslında datakomda da karşınızda çıkar.
+
+483
+00:45:26,579 --> 00:45:32,579
+Çünkü her katmanda verdiğiniz servisin connection oriented veya connectionless olma ihtimali vardır.
+
+484
+00:45:32,579 --> 00:45:44,579
+TCP IP'nin network katmında konuştuğumuz zaman evet connectionless ama bir üst katmanına çıktığınız zaman TCP konuşacaksanız connection oriented haline geliyorsunuz.
+
+485
+00:45:44,579 --> 00:45:54,579
+Alt katmana indiğiniz zaman altta ne kullandığınıza bağlı olarak connection oriented veya connectionless olabilir data linklerde ne kullandığınıza bağlı olarak.
+
+486
+00:45:54,579 --> 00:46:00,579
+Dolayısıyla bunları hani katman katman ayrı ayrı değerlendireceğiz ya da şey yapacağız.
+
+487
+00:46:00,579 --> 00:46:11,579
+Connectionless TCP IP'nin connectionless olmasının temel sebeplerinden bir tanesi hata anında mümkün olduğu kadar şey yapabilme ihtiyacı, kesineyebilme.
+
+488
+00:46:11,579 --> 00:46:27,579
+Aslında internetin, iç çıkışın, arpanetin vesairen arkasındaki psikoloji hani failover'u olsun, Ruslar Amerika'ya saldırırsa telefon halkları çökmesin vesaire gibi bildiğiniz Amerikan fantezileri.
+
+489
+00:46:27,579 --> 00:46:32,579
+Evet şimdi şöyle devam ediyoruz.
+
+490
+00:46:33,579 --> 00:46:42,579
+Aslında bunu bayağı bir anlattık ama yine bir kez daha üzerinden geçelim çünkü başka terminoloji var burada onları da öğrenmemiz gerekiyor.
+
+491
+00:46:42,579 --> 00:46:48,579
+Şimdi ISP zaten biliyorsunuzdur internet service provider değil mi?
+
+492
+00:46:48,579 --> 00:46:58,579
+Bizde internet servis sağlayıcı diye Türkçeye çevriliyor ama ISP yani internasyonal şeyle service provider internet service provider.
+
+493
+00:46:58,579 --> 00:47:18,889
+Bakın topolojide bir paketim hedef noktasına aktarılmasından sorumlu olan ama paketin son noktası olmayan sistemlere aktarım sağlayan sistemlere router diyoruz yönlendirici.
+
+494
+00:47:18,889 --> 00:47:22,889
+Root yol demek kelime anlamı bu.
+
+495
+00:47:22,889 --> 00:47:29,889
+Router yol bulucu Türkçe'de çoğunlukla yönlendirici diye tercüme ediliyor.
+
+496
+00:47:29,889 --> 00:47:39,889
+Ama yani kavramı düşündüğünüz zaman hani yol kelimesi üzerinden gittiğinizde zaten ne işe yaradığını otomatikman söylemiş oluyorsunuz.
+
+497
+00:47:39,889 --> 00:47:54,889
+Bir yoldan gelen bir paketin hangi yoldan devam ettirilmesi gerektiğine karar veren yapı bir algoritma orada da bir program çalışıyor bir process çalışıyor.
+
+498
+00:47:54,889 --> 00:48:04,889
+Fakat bunlar paketlerin son noktaları değil şu gri elipse de topoloji diyoruz.
+
+499
+00:48:04,889 --> 00:48:11,889
+Routerlar hostlar hepsi bir araya geliyorlar bunların arasında bağlantılar oluşuyor.
+
+500
+00:48:11,889 --> 00:48:18,889
+Bu bağlantılar böyle düzleme iki boyutlu indirgenliğinde bir grafa denk düşüyor.
+
+501
+00:48:18,889 --> 00:48:21,889
+O grafta eşittir bir topoloji oluyor.
+
+502
+00:48:21,889 --> 00:48:36,889
+Bu topoloji içerisinde paketlerin son noktası değil ama paketlerin başlangıçtan gitmeleri gereken son noktaya doğru hareket ettirilmelerini sağlayan ara kapmanlar.
+
+503
+00:48:36,889 --> 00:48:57,420
+Şimdi bu mimaride dikkat etmeniz gereken birkaç tane şey var.
+
+504
+00:48:57,420 --> 00:49:06,739
+Ortadaki gri alan burası ISP'ye ait olan yani servis providere ait olan yer.
+
+505
+00:49:06,739 --> 00:49:09,739
+Burada temin bahsettiğimiz yönlendiriciler var.
+
+506
+00:49:09,739 --> 00:49:17,739
+Bu yönlendiriciler ve aralarındaki hatlar aslında bir subnet olarak isimlendiriliyor.
+
+507
+00:49:17,739 --> 00:49:23,739
+Buradaki subnet kavramını ileride konuşacağımız DCP IP'deki subneting ile karıştırmayın.
+
+508
+00:49:23,739 --> 00:49:24,739
+Bu hatlarınızda olsun.
+
+509
+00:49:24,739 --> 00:49:35,739
+Buradaki ilginç şeylerden bir tanesi host1-h1-h2 mim bu ISP'ye bağlanma şekilleri.
+
+510
+00:49:35,739 --> 00:49:48,739
+Dikkat ederseniz h1'in bağlantısı gri alanda kalan a'ya bağlı olduğu gibi h2'nin bağlantısı ise o gri alanın dışındaki f'ye bağlı.
+
+511
+00:49:48,739 --> 00:50:00,739
+Bu şu demek siz bu netvorka bağlanırken bir parçası sizde olan bir a cihazı kullanabileceğiniz gibi h2 örneğinde olduğu üzere ki bu mesela sizin evde kullandığınız EDSM modem olabilir.
+
+512
+00:50:00,739 --> 00:50:06,739
+H1'deki gibi belki de sadece bir metro eternet ucunu da kullanıyor olabilirsiniz.
+
+513
+00:50:06,739 --> 00:50:14,739
+Şimdi store and forward kısmına geçecek olursa dikkat edin a'dan c'ye giden bir paket işaretlenmiş görüyoruz.
+
+514
+00:50:15,739 --> 00:50:22,739
+Bunu aslında demin konuştuğumuz gibi bu paketin a c'ye gönderiyor.
+
+515
+00:50:22,739 --> 00:50:35,739
+C tarafından paketin tamamı alındıktan sonra yönlendirici olan yani router olan c bu paketi alternatif olarak hangi linkten göndermesi gerektiğine karar veriyor.
+
+516
+00:50:35,739 --> 00:50:36,739
+Bu kararı nasıl veriyor?
+
+517
+00:50:36,739 --> 00:50:40,739
+Bu kararı çeşitli metriklere göre verebilir.
+
+518
+00:50:40,739 --> 00:50:46,739
+Hedefi olan yakınlık bunlardan bir tanesidir.
+
+519
+00:50:46,739 --> 00:50:54,739
+Misal bu hatların maliyeti bu metriklerden bir tanesidir.
+
+520
+00:50:54,739 --> 00:51:01,739
+Bu hatların doluluğu ya da bandwidth kapasitesi bu metriklerden bir tanesidir.
+
+521
+00:51:01,739 --> 00:51:08,739
+Bu ISP'nin kendi içerisinde olduğu zaman maliyet çok bu işin içerisinde büyük ihtimalle girmez.
+
+522
+00:51:08,739 --> 00:51:09,739
+Ne zaman girer?
+
+523
+00:51:09,739 --> 00:51:14,739
+Aslında baktığınız zaman internet yapısında ISP'ler var farklı farklı.
+
+524
+00:51:14,739 --> 00:51:17,739
+Mesela bizim ülkeden örnek verecek olursak Türk Telekom var.
+
+525
+00:51:17,739 --> 00:51:18,739
+Kablo TV var.
+
+526
+00:51:18,739 --> 00:51:19,739
+Super Online var.
+
+527
+00:51:19,739 --> 00:51:21,739
+Var da var.
+
+528
+00:51:21,739 --> 00:51:23,739
+Bunların aslında bir noktada ne yapması lazım?
+
+529
+00:51:23,739 --> 00:51:30,739
+Yani internetin birbirine bağlı olabilmesi için işin doğası gereği routerlarında birbirlerine bağlı olması lazım.
+
+530
+00:51:31,739 --> 00:51:40,739
+Bunları da zaten internet exchange pointlarda, IXP diye I-X-P şeklinde yazılan IXP'lerde yapıyorlar.
+
+531
+00:51:40,739 --> 00:51:50,739
+Dolayısıyla o noktada baktığınız zaman routerlar arasında aslında birbirinden farklı firmalara ait olan routerların bağlantıları var.
+
+532
+00:51:50,739 --> 00:51:58,739
+Dolayısıyla A firması, B firması üzerinden giden paket için farklı bir fiyat ödüyor olabilir.
+
+533
+00:51:58,739 --> 00:52:09,739
+Bunun dışında şirket polisisi ya da gizlilik gereği vesaire gereği bir paketin yönlendirilmesi gereken ya da yönlendirilmemesi gereken yerler noktalar olabilir.
+
+534
+00:52:09,739 --> 00:52:13,739
+Kararın tamamı bu ve benzeri kısıtlara göre veriliyor.
+
+535
+00:52:13,739 --> 00:52:15,739
+Bizim evimizde nasıl veriliyor dersiniz.
+
+536
+00:52:15,739 --> 00:52:17,739
+Sizin zaten seçme şansınız yok.
+
+537
+00:52:17,739 --> 00:52:20,739
+ADS routerunuzun veriyi nereye göndereceği belli.
+
+538
+00:52:21,739 --> 00:52:23,739
+Orada bir sıkıntı yok.
+
+539
+00:52:23,739 --> 00:52:25,739
+Oradaki en büyük karmaşa şu olabilir.
+
+540
+00:52:25,739 --> 00:52:30,739
+Port forwarding vesaire falan yapıyorsanız dışarıdan gelen paketin içeride nereye gönderilir.
+
+541
+00:52:30,739 --> 00:52:36,739
+Oradaki sizin yaptığınız routingin tamamı aslında bildiğiniz statik routing.
+
+542
+00:52:36,739 --> 00:52:37,739
+Orada hiçbir şey yok.
+
+543
+00:52:37,739 --> 00:52:38,739
+Teknik olarak hiçbir problem yok.
+
+544
+00:52:38,739 --> 00:52:40,739
+Her şey çok temiz yani.
+
+545
+00:52:40,739 --> 00:52:42,739
+Şey de söyleyeyim bu slide'da.
+
+546
+00:52:42,739 --> 00:52:50,739
+Network katmanının kendisi de network uygulaması da birer proses arkadaşlar.
+
+547
+00:52:50,739 --> 00:52:55,739
+Bizden işletim sistemi dersini aldığınızı varsaymaktayım.
+
+548
+00:52:55,739 --> 00:53:02,739
+Sonuçta bunlar birer uygulama ama tabii ki hani uygulamanın canlı hale dönüşmesi lazım.
+
+549
+00:53:02,739 --> 00:53:06,739
+İşletim sisteminde de bu proses mantığıyla gerçekleşiyor.
+
+550
+00:53:06,739 --> 00:53:19,739
+Yani network katmanı sadece çağrılabilen, çağrıldığı zaman aktifleşip de bir işler yapabilen fonksiyonlardan oluşmuyor.
+
+551
+00:53:19,739 --> 00:53:28,739
+Biz network katmanından o anda servis almasak, servis istemesek bile network'ün ayakta kalabilmesi için
+
+552
+00:53:28,739 --> 00:53:38,739
+network katmanlarının en azından şu routerlar arasında kendi iç düzenleriyle alakalı mesajlaşmaları gerçekleştirmeleri gerekiyor.
+
+553
+00:53:38,739 --> 00:53:39,739
+Bu da eşittir.
+
+554
+00:53:39,739 --> 00:53:41,739
+Orada da prosesler var.
+
+555
+00:53:41,739 --> 00:53:44,739
+Orada o proseslerin içerisinde thread'ler var.
+
+556
+00:53:44,739 --> 00:53:48,739
+Bunlar paket alıyorlar, paket veriyorlar.
+
+557
+00:53:48,739 --> 00:53:51,739
+Özel kontrol bilgisi değiştokuşu yapıyorlar.
+
+558
+00:53:51,739 --> 00:54:00,739
+O yüzden yani her şey işletim sisteminde öğrendiğimiz canlı program parçacıkları, process ve thread'ler üzerine kuruldu.
+
+559
+00:54:00,739 --> 00:54:04,739
+Bizim uygulamalarımız da birer proses, network uygulamalarımız.
+
+560
+00:54:04,739 --> 00:54:14,739
+Yani web server olsun, mail server olsun, web client olsun neyse bunlar veya bir chat client olsun işte az önce yolladınız ya WhatsApp'ın şey falan.
+
+561
+00:54:14,739 --> 00:54:18,739
+Bütün bunların hepsi de birer, process birer network uygulaması.
+
+562
+00:54:18,739 --> 00:54:20,739
+Bunu da unutmamak gerekiyor.
+
+563
+00:54:20,739 --> 00:54:32,739
+Host kelimesi de ev sahipliği yapmasından dolayı yani o işletim sistemi bu tarz network uygulamalarına ev sahipliği yapıyor diye düşünün.
+
+564
+00:54:32,739 --> 00:54:35,739
+Host'u da oradan türetmişler.
+
+565
+00:54:35,739 --> 00:54:38,739
+O anlamda kullanıyoruz.
+
+566
+00:54:38,739 --> 00:54:49,739
+Yani üzerinde işletim sistemi yüklü olan bir bilgisayar sistemi ama özelliğine bir network'un içerisinde yer alıyor.
+
+567
+00:54:49,739 --> 00:55:02,739
+Network'un aktif olarak bir parçası ve kendi üzerinde de bu network üzerinden başka uygulamalarla mesaj alışverişi yapabilecek, paket değiştokuşu yapabilecek yeteneklere sahip.
+
+568
+00:55:02,739 --> 00:55:05,739
+İşte bu tarz yapılara ne isim veriyoruz?
+
+569
+00:55:05,739 --> 00:55:06,739
+Host ismini veriyoruz.
+
+570
+00:55:06,739 --> 00:55:11,190
+Host ismini veriyoruz.
+
+571
+00:55:11,190 --> 00:55:12,190
+Yine gidemedim.
+
+572
+00:55:12,190 --> 00:55:17,329
+Hah, şimdi.
+
+573
+00:55:17,329 --> 00:55:20,329
+Şu connectionless'i connection oriented'ı da anlatırız.
+
+574
+00:55:20,329 --> 00:55:23,329
+Ondan sonra şey yaparız.
+
+575
+00:55:23,329 --> 00:55:27,329
+Connectionless datagram az önce Cihan hocanız söyledi.
+
+576
+00:55:27,329 --> 00:55:32,329
+Aslında datagram kelimesinin başı yani orjini telegram.
+
+577
+00:55:32,329 --> 00:55:35,329
+Telegram da telgraf mantığı.
+
+578
+00:55:35,329 --> 00:55:37,329
+Morse alfabesi.
+
+579
+00:55:37,329 --> 00:55:39,329
+Morse alfabesinde kodlama var.
+
+580
+00:55:39,329 --> 00:55:47,329
+A'dan Z'ye harfler nokta veyahut da çizgilerin farklı kombinasyonlarıyla kodlanmış durumda.
+
+581
+00:55:47,329 --> 00:55:51,329
+Binary kodun farklı bir şekli.
+
+582
+00:55:51,329 --> 00:55:56,329
+Çünkü hani nokta diyelim ki sıfırsa çizgide birse sıfır ve birler arka arkaya geliyorlar.
+
+583
+00:55:56,329 --> 00:55:59,329
+O şekilde ifade edilmiş gibi düşünebilirsiniz.
+
+584
+00:55:59,329 --> 00:56:01,329
+Yani bir nevi Hufman kodu.
+
+585
+00:56:01,329 --> 00:56:02,329
+Evet Hufman kodu.
+
+586
+00:56:02,329 --> 00:56:08,329
+Daha sık kullanılanlar daha kısa, daha az seyrek kullanılanlar daha uzun bir kodla bir nevi değil.
+
+587
+00:56:08,329 --> 00:56:10,329
+Aslında Hufman kodun gibi başlangıç noktalarından biri.
+
+588
+00:56:10,329 --> 00:56:14,329
+Yani bilinsiz olarak gereken ama adı o şekilde konmamış.
+
+589
+00:56:14,329 --> 00:56:16,329
+Belki Hufman oradan esinlenmiştir.
+
+590
+00:56:16,329 --> 00:56:20,329
+Fakat burada önemli olan şey şu.
+
+591
+00:56:20,329 --> 00:56:25,579
+Telgrafta cümle bazında ilerleniyor.
+
+592
+00:56:25,579 --> 00:56:33,579
+Yani bir operatör, bir telgraf operatörü, bir başka telgraf operatörüne mesajın tamamını cümle cümle aktarıyor.
+
+593
+00:56:33,579 --> 00:56:35,579
+Mesajı yazıyor nokta.
+
+594
+00:56:35,579 --> 00:56:37,579
+Stopu o yüzden.
+
+595
+00:56:37,579 --> 00:56:40,579
+Filmler, bilmem ne, stop.
+
+596
+00:56:40,579 --> 00:56:42,579
+Bilmem ne, stop.
+
+597
+00:56:42,579 --> 00:56:46,579
+Çünkü o noktada diğer operatör de onu öbür tarafa aktarıyor.
+
+598
+00:56:46,579 --> 00:56:47,579
+Bakın ne yapıyorlar?
+
+599
+00:56:47,579 --> 00:56:49,579
+Store, forward yapıyorlar.
+
+600
+00:56:49,579 --> 00:56:52,579
+Bunu kelime bazında da yapabilirlerdi.
+
+601
+00:56:52,579 --> 00:57:02,579
+Ama o kelime bir defa mı geçti, iki defa mı geçti, cümlenin sonu mu oldu, başı mı oldu, yani frame yapısı falan onu da oturtmak, oluşturmak lazım.
+
+602
+00:57:02,579 --> 00:57:06,579
+O yüzden cümle bazında bir işlem gerçekleşiyor.
+
+603
+00:57:06,579 --> 00:57:10,579
+Bu cümleler bir araya geliyor, ne oluyor?
+
+604
+00:57:10,579 --> 00:57:12,579
+Mesajı oluşturuyor.
+
+605
+00:57:12,579 --> 00:57:14,579
+Fakat dikkat edin, message switching değil.
+
+606
+00:57:14,579 --> 00:57:15,579
+Çünkü Cihan hocanız ne dedi?
+
+607
+00:57:15,579 --> 00:57:19,579
+Message switching'te mesajın tamamı önce bir tarafa aktarılacak.
+
+608
+00:57:19,579 --> 00:57:21,579
+Sonra oradan tamamı öbür tarafa.
+
+609
+00:57:21,579 --> 00:57:24,579
+Yani bu bir paragrafsa, paragrafın tamamını ben Cihan hocanıza aktardım.
+
+610
+00:57:24,579 --> 00:57:29,579
+Cihan hocanız da diyelim ki orada Ali hocanıza aktardı, Reli hocanıza aktardı.
+
+611
+00:57:29,579 --> 00:57:30,579
+Ama böyle değil.
+
+612
+00:57:30,579 --> 00:57:32,579
+Store and forward.
+
+613
+00:57:32,579 --> 00:57:34,579
+Mantık bu şekilde.
+
+614
+00:57:34,579 --> 00:57:48,579
+Ve topolojiye bakın, topolojide bütün paketler aslında host 1'deki P1 prosesinden host 2'deki P2 prosesine gidiyor.
+
+615
+00:57:48,579 --> 00:57:58,579
+Ancak 1 numaralı, 2 numaralı ve 3 numaralı paketler kuvvetle muhtemel aynı yol üzerinden giderken,
+
+616
+00:57:58,579 --> 00:58:05,579
+yani A, C, E, F yolunu izlerken, 4 numaralı paket farklı bir yoldan gidiyor.
+
+617
+00:58:05,579 --> 00:58:09,579
+A, B, oradan D.
+
+618
+00:58:09,579 --> 00:58:12,579
+Bir sıkıntı olmazsa D'den E, E'den F.
+
+619
+00:58:12,579 --> 00:58:16,579
+Ama tabii ki D'den C'ye, C'den E'ye ve oradan da F'ye gidebilir.
+
+620
+00:58:16,579 --> 00:58:19,579
+Bu da seçenekler arasında yer alıyor.
+
+621
+00:58:19,579 --> 00:58:23,579
+Gürtü çıkar. Bu eviniz ne? E'den D'ye, oradan A'ya geri gider.
+
+622
+00:58:23,579 --> 00:58:26,579
+Aynen. Döngü bile oluşabilir.
+
+623
+00:58:26,579 --> 00:58:30,579
+Burada bakın döngü oluşabilir, espri olsun diye söylediğimiz bir şey değil.
+
+624
+00:58:30,579 --> 00:58:34,579
+Bu tarz yapılarda döngü oluşması ihtimali her zaman için var.
+
+625
+00:58:34,579 --> 00:58:37,579
+O yüzden onun da önüne geçmemiz gerekiyor.
+
+626
+00:58:37,579 --> 00:58:39,579
+Göreceğiz.
+
+627
+00:58:39,579 --> 00:58:41,579
+Fakat önemli olan ne bakın?
+
+628
+00:58:41,579 --> 00:58:45,579
+Different packets may take different pets.
+
+629
+00:58:45,579 --> 00:58:52,579
+Yani her paket hedefe doğru eğer alternatif yollar var ise,
+
+630
+00:58:52,579 --> 00:58:55,579
+bu alternatiflerden biri üzerinden gidebilir.
+
+631
+00:58:55,579 --> 00:59:00,579
+Aynı yolu izleyecek diye bir kural yok.
+
+632
+00:59:00,579 --> 00:59:03,579
+Bu bir taraftan çok büyük bir avantaj.
+
+633
+00:59:03,579 --> 00:59:07,579
+Yani düşünsenize trafiği düşünün.
+
+634
+00:59:07,579 --> 00:59:11,579
+Trafikte iki nokta arasında sadece bir tane yol var.
+
+635
+00:59:11,579 --> 00:59:13,579
+Tıkandığı zaman tıkanmıştır.
+
+636
+00:59:13,579 --> 00:59:16,579
+Herkes o tıkalı yolda beklemek zorunda.
+
+637
+00:59:16,579 --> 00:59:21,579
+Ama aynı iki nokta arasında alternatif, ara sokaklar, yan yollar,
+
+638
+00:59:21,579 --> 00:59:25,579
+bilmem ne kaçınacak yerler varsa o zaman rahatlarsınız.
+
+639
+00:59:25,579 --> 00:59:29,579
+Çünkü niye? Tıkalı olan yerden değil başka yollardan gidersiniz.
+
+640
+00:59:29,579 --> 00:59:33,579
+Ancak güzelliğinin yanında dezavantajları da var.
+
+641
+00:59:33,579 --> 00:59:40,579
+Şimdi paketler farklı yollardan gittiğine göre ve bu paketler aslında bir bütünü oluşturacağına göre,
+
+642
+00:59:40,579 --> 00:59:45,579
+hani az önceki Telegram örneğinde cümleler paragrafı oluşturuyor dedik ya,
+
+643
+00:59:45,579 --> 00:59:48,579
+geliş sıraları önemli.
+
+644
+00:59:48,579 --> 00:59:55,579
+İzlenen yollara, bu yolların açıklığına, kapalılığına, tıkanıklığına bağlı olarak gidiş hızlarına
+
+645
+00:59:55,579 --> 00:59:59,579
+ve diğer parametrelere bağlı olarak önce gelmesi gereken paket,
+
+646
+00:59:59,579 --> 01:00:02,579
+sonra gelmesi gereken paket önce gelebilir.
+
+647
+01:00:02,579 --> 01:00:06,579
+Yani out of order, sırasız bir şekilde gelebilir.
+
+648
+01:00:06,579 --> 01:00:16,579
+Öyleyse bunları alan H2'deki P2'nin bir şekilde sırada sokması, sıralaması gerekecek.
+
+649
+01:00:16,579 --> 01:00:25,579
+Diğer taraftan, connection oriented'ta, hani size en başta telefon demiştim ya,
+
+650
+01:00:25,579 --> 01:00:28,579
+şimdi datakomdan...
+
+651
+01:00:28,579 --> 01:00:31,579
+Ben şeyden örnek vereyim mi orada, telefon deyince,
+
+652
+01:00:31,579 --> 01:00:34,579
+hani eski film, nostalji film seviyorsanız aslında şey görürsünüz,
+
+653
+01:00:34,579 --> 01:00:40,579
+Ankara çıkarıda, Adana çıkarıdan falan filan esprilerin yanında şey görürsünüz,
+
+654
+01:00:40,579 --> 01:00:46,579
+biri telefon edeceği zaman telefonu kaldırır, santralara ulaşır ve şey ister,
+
+655
+01:00:46,579 --> 01:00:48,579
+işte bana Ankara'ya bir hak ver.
+
+656
+01:00:48,579 --> 01:00:52,579
+Çünkü o farzı misal adam hani neredeyse İstanbul'daysa,
+
+657
+01:00:52,579 --> 01:00:57,579
+İstanbul'daki önce lokal telefon ofisine bağlanmış olur.
+
+658
+01:00:57,579 --> 01:01:03,579
+Oradaki operatör onu bir üst seviyedeki telefon ofisine bağlar.
+
+659
+01:01:03,579 --> 01:01:07,579
+Oradaki operatör onu bir üst seviyede bağlar.
+
+660
+01:01:07,579 --> 01:01:10,579
+Oradaki operatör de sonuçta bir yerlerde,
+
+661
+01:01:10,579 --> 01:01:14,579
+telefon servisinde aslında 5 katman var en fazla,
+
+662
+01:01:14,579 --> 01:01:19,579
+bir yerlerde Ankara'daki lokal ofisler oradan da diğer eve bağlanır.
+
+663
+01:01:19,579 --> 01:01:22,579
+O diğer eve de bağlanması, sizi bir arayan var İstanbul'dan,
+
+664
+01:01:22,579 --> 01:01:25,579
+hani konuşmak istiyor musunuz, görüşmek istiyor musunuz, tamam, okey.
+
+665
+01:01:25,579 --> 01:01:27,579
+Görüşüyorsunuz, bağlantı kuruluyor.
+
+666
+01:01:27,579 --> 01:01:30,579
+Yani bir connection setup durumu var.
+
+667
+01:01:32,579 --> 01:01:34,579
+Buradaki yapı da aynı şey.
+
+668
+01:01:34,579 --> 01:01:37,579
+Yani bir öncekinde neydi,
+
+669
+01:01:37,579 --> 01:01:42,579
+P1 processinin gönderdiği paketler network içerisinde
+
+670
+01:01:42,579 --> 01:01:45,579
+farklı sıralarla, farklı yerlerden gelip gidebilirdi.
+
+671
+01:01:45,579 --> 01:01:48,579
+Ama bu yapı içerisinde, olay şuna dönüyor,
+
+672
+01:01:48,579 --> 01:01:52,579
+ben öncesinde biriyle haberleşmek istediğimi söylüyorum
+
+673
+01:01:52,579 --> 01:01:56,579
+ve o kişiye ulaşıp, nereden o kişiye ulaşırken de
+
+674
+01:01:56,579 --> 01:02:00,579
+adım adım nereye izleyeceğimi belirleyip bir yol oluşturuyorum.
+
+675
+01:02:00,579 --> 01:02:02,579
+Ve bundan sonra diyorum ki,
+
+676
+01:02:02,579 --> 01:02:05,579
+benim bütün paketlerim bu yol üzerinden gidecek.
+
+677
+01:02:06,579 --> 01:02:07,579
+Olay bundan ibaret.
+
+678
+01:02:07,579 --> 01:02:10,579
+Bu yolda bir arıza olduğu zaman, bir sıkıntı olduğu zaman,
+
+679
+01:02:10,579 --> 01:02:14,579
+bir problem olduğu zaman, bu yol devre dışı kalacak
+
+680
+01:02:14,579 --> 01:02:17,579
+ve ben bunu yeniden oluşturacağım alternatifine.
+
+681
+01:02:20,579 --> 01:02:22,579
+Şimdi bunun güzelliği ne?
+
+682
+01:02:22,579 --> 01:02:28,579
+Her paket için, acaba bu nereden gidecek sorusu yok.
+
+683
+01:02:28,579 --> 01:02:32,579
+Herhangi bir TE anında, herhangi bir not üzerinden
+
+684
+01:02:32,579 --> 01:02:34,579
+başka bir nota aktarılacak,
+
+685
+01:02:34,579 --> 01:02:38,579
+yani o haberleşme kanalının üzerinden geçecek verim iktidarı hakkında da
+
+686
+01:02:38,579 --> 01:02:41,579
+aşağı yukarı önceden bir fikrimiz var.
+
+687
+01:02:42,579 --> 01:02:45,579
+Her zaman doğru olmak zorunda değil, her zaman net olmak zorunda değil
+
+688
+01:02:45,579 --> 01:02:47,579
+ama connection setup yapıyorsa,
+
+689
+01:02:47,579 --> 01:02:50,579
+şey diyebilirim ben burada ses aktaracağım
+
+690
+01:02:50,579 --> 01:02:53,579
+dolayısıyla benim bandwidth requirement'ın bu diyebilirim, şu diyebilirim
+
+691
+01:02:53,579 --> 01:02:55,579
+vs. bir planlama yapabilirim.
+
+692
+01:02:55,579 --> 01:02:56,579
+Kötü durum ne?
+
+693
+01:02:56,579 --> 01:03:00,579
+Hani Türkiye'deki gibi olursa, her işin her daim acil olması gibi
+
+694
+01:03:00,579 --> 01:03:02,579
+herkes işini submit ederken,
+
+695
+01:03:02,579 --> 01:03:04,579
+bana 10 megabit lazım, bana 100 megabit lazım deyip
+
+696
+01:03:04,579 --> 01:03:09,579
+sonra saatlerde hiçbir şey konuşmayabilir vs. vs.
+
+697
+01:03:09,579 --> 01:03:13,579
+Güzel tarafı önden planlıyorsunuz, hazırlıyorsunuz ama
+
+698
+01:03:13,579 --> 01:03:15,579
+kötü tarafı ne?
+
+699
+01:03:15,579 --> 01:03:18,579
+Bu planlama içerisinde kullanılmayan bir bandwidth durumu,
+
+700
+01:03:18,579 --> 01:03:20,579
+borşa harcanan bir bandwidth durumu olabilir.
+
+701
+01:03:20,579 --> 01:03:21,579
+Bu da ne olacaktır?
+
+702
+01:03:21,579 --> 01:03:24,579
+Yeni connection oluşmasına engelleyecektir.
+
+703
+01:03:24,579 --> 01:03:25,579
+Farzı misal.
+
+704
+01:03:25,579 --> 01:03:30,579
+Şeyde ben onu ekleyeyim o zaman, burada virtual circuit var.
+
+705
+01:03:30,579 --> 01:03:31,579
+Evet.
+
+706
+01:03:31,579 --> 01:03:33,579
+Aslında orijinalde bir circuit.
+
+707
+01:03:33,579 --> 01:03:35,579
+Circuit ne arkadaşlar? Devre.
+
+708
+01:03:35,579 --> 01:03:37,579
+Devre neyle oluşur?
+
+709
+01:03:37,579 --> 01:03:42,579
+İki nokta arasındaki bağlantıyla ve o bağlantı üzerinden elektrik akımının akmasıyla.
+
+710
+01:03:42,579 --> 01:03:47,579
+Şimdi siz yaşınız itibariyle o dönemleri hiç yaşamadınız.
+
+711
+01:03:47,579 --> 01:03:56,579
+Telefon santrallarında circuit, orada da o devreler oluşturuluyordu.
+
+712
+01:03:56,579 --> 01:03:58,579
+Cihan hocanız hani o örneği verdi ya.
+
+713
+01:03:58,579 --> 01:04:04,579
+Ve bu devreler o dönemde roleler ile oluşturuluyor.
+
+714
+01:04:04,579 --> 01:04:10,579
+Ve yani diyelim ki böyle Bakırköy, Etiler, İstanbul'dan örnek veriyorum,
+
+715
+01:04:10,579 --> 01:04:14,579
+Beşiktaş, Kadıköy, Kabataş neyse o tarz büyük yerlerde
+
+716
+01:04:14,579 --> 01:04:16,579
+5.000 kapasiteli, 10.000 kapasiteli,
+
+717
+01:04:16,579 --> 01:04:20,579
+geri geldiğinde 20.000 kapasiteli telefon santralları oluyordu.
+
+718
+01:04:20,579 --> 01:04:24,579
+Bu 20.000 abone yani 10.000 kişi, 10.000 kişiyle aynı anda konuşabiliyor.
+
+719
+01:04:24,579 --> 01:04:30,579
+Ve bu santralların yanında, belirli bir mesafe yakınında olduğunuzda
+
+720
+01:04:30,579 --> 01:04:37,579
+duydunuz tek ses, rolelerin çekme ve bırakma yani o şakırtısı ve şukurtusu.
+
+721
+01:04:37,579 --> 01:04:38,579
+Arabanın sinyali gibi düşünüyordu.
+
+722
+01:04:38,579 --> 01:04:45,579
+Evet, o sinyalden binlercesi aynı anda hatta bazıları böyle çok sıcak yaz günlerinde
+
+723
+01:04:45,579 --> 01:04:51,579
+içeride yeterince havalandırma olmadığı için camlarını, pencerelerini falan açarlardı.
+
+724
+01:04:51,579 --> 01:04:56,579
+O gürültü olduğu gibi böyle dışarıya sokağa falan yansırdı.
+
+725
+01:04:56,579 --> 01:05:03,579
+Sonra o roleler elektronik anahtarlar ile multiplexers,
+
+726
+01:05:03,579 --> 01:05:09,579
+onları da aslında derste gördünüz bakın hiç size uzak olmayan kavramlar, onlarla yer değiştirdi.
+
+727
+01:05:09,579 --> 01:05:12,579
+Peki virtual circuit'te ne yapıyoruz?
+
+728
+01:05:12,579 --> 01:05:15,579
+Virtual circuit'te kod çalıştırarak bunu yapıyoruz.
+
+729
+01:05:15,579 --> 01:05:25,579
+Yani her paketin aslında başında nereye gitmesi gerektiği hangi circuit'a ait olduğuna dair bir identifier var.
+
+730
+01:05:25,579 --> 01:05:31,579
+Ben o değeri kullanarak o paketi hangi çıkış kuyruğuna göndereceğime karar veriyorum.
+
+731
+01:05:31,579 --> 01:05:33,579
+Yine anahtarlama yaptım.
+
+732
+01:05:33,579 --> 01:05:39,579
+Ama anahtarlamayı fiziksel olarak bir kabloyu bir deliye sokarak değil
+
+733
+01:05:39,579 --> 01:05:46,579
+ve hatta bir rolenin uçlarını çekip bıraktırarak değil, tamamen yazılımsal olarak bir bilgi bütününü,
+
+734
+01:05:46,579 --> 01:05:54,579
+paketi identifier'ına bağlı olarak bir giriş kuyruğundan bir çıkış kuyruğuna aktararak yaptım.
+
+735
+01:05:54,579 --> 01:05:58,579
+İşte bundan ötürü de burada hangi kavramdan bahsediyoruz?
+
+736
+01:05:58,579 --> 01:06:03,210
+Virtual circuit kavramından bahsediyoruz.
+
+737
+01:06:03,210 --> 01:06:05,210
+Sonrasında ne var?
+
+738
+01:06:05,210 --> 01:06:07,210
+Artı eksileri var.
+
+739
+01:06:07,210 --> 01:06:09,210
+Şunu da yapalım, bu günü aslında bitirelim.
+
+740
+01:06:09,210 --> 01:06:10,210
+Artı eksileri.
+
+741
+01:06:10,210 --> 01:06:13,210
+Şimdi hangi, aslında hepsini anlattık.
+
+742
+01:06:13,210 --> 01:06:14,210
+Ben de anlattım.
+
+743
+01:06:14,210 --> 01:06:17,210
+Can hocanız da farklı örneklerle, farklı şeylerle anlattık.
+
+744
+01:06:17,210 --> 01:06:22,210
+Ama bu tabloda bunları güzel bir şekilde toparlıyor.
+
+745
+01:06:23,210 --> 01:06:28,210
+Bir devre kurulması gerekiyor mu az önce söylediğim anlattığım şey?
+
+746
+01:06:28,210 --> 01:06:30,210
+Datagramda gerekmiyor.
+
+747
+01:06:30,210 --> 01:06:32,210
+Zaten biz ne yapıyoruz?
+
+748
+01:06:32,210 --> 01:06:36,210
+Paketleri birbirinden bağımsız olarak aktarıyoruz.
+
+749
+01:06:36,210 --> 01:06:42,210
+Böylece her pakette yeniden kararını veriyoruz.
+
+750
+01:06:42,210 --> 01:06:47,210
+Bu paket hangi taraftan, hangi bağlantı üzerinden ilerleyecek?
+
+751
+01:06:47,210 --> 01:06:51,210
+Tabii ki o cihazın birden fazla bağlantısının olduğunu kabul ediyoruz.
+
+752
+01:06:51,210 --> 01:06:55,210
+Bu şekilde, nedir o?
+
+753
+01:06:55,210 --> 01:06:57,210
+Bu kararın veriliyor olması lazım.
+
+754
+01:06:57,210 --> 01:07:06,210
+Bir çözü örgütte ise zaten o setup yapılmalı ki herkes aynı yerden aynı şekilde aktarılabilirsin.
+
+755
+01:07:06,210 --> 01:07:10,210
+Adreslemede datagram olduğu zaman,
+
+756
+01:07:10,210 --> 01:07:12,210
+mektup örneğinden gidecek olursak,
+
+757
+01:07:12,210 --> 01:07:15,210
+her mektubun üzerine ne yazarız arkadaşlar?
+
+758
+01:07:15,210 --> 01:07:16,210
+Gönderici, alıcı.
+
+759
+01:07:16,210 --> 01:07:18,210
+Bu kadar net.
+
+760
+01:07:18,210 --> 01:07:26,210
+O zaman datagram netvörkünde her pakette göndericinin kim olduğu, alıcının kim olduğu bilgisi olmak zorunda.
+
+761
+01:07:26,210 --> 01:07:34,210
+Yani paketleri bağımsız yönlendirdiğiniz için her paket içerisinde o adres ilgisini koyuyor olmanız lazım.
+
+762
+01:07:34,210 --> 01:07:38,210
+Aksi taktirde ne tarafa doğru gidileceği bilinmiyor.
+
+763
+01:07:38,210 --> 01:07:40,210
+Bunun artısı eksik.
+
+764
+01:07:40,210 --> 01:07:45,210
+Bir tanesinde adres bilgisi artık kaç bytes, o kadarlık bilgiye pakete gömmeniz gerekiyor.
+
+765
+01:07:45,210 --> 01:07:49,210
+Diğerinde ise pakete sadece bir etiket basıyorsunuz.
+
+766
+01:07:49,210 --> 01:07:54,210
+O yüzden de hani çok daha küçük bir bilgi vesaire diye bakabilirsiniz.
+
+767
+01:07:54,210 --> 01:08:00,679
+Bunun dışında zaten routing kısmını söylemiş.
+
+768
+01:08:00,679 --> 01:08:06,679
+Bu aslında Sirk setup içerisinde tapalarca konuştuğumuz bir şey.
+
+769
+01:08:06,679 --> 01:08:10,679
+State information üzerinden de geçelim.
+
+770
+01:08:10,679 --> 01:08:21,680
+Şimdi datagramda her paket birbirinden bağımsız yönlendirildiği için router o paketi bir çıkışa gönderdiği anda paketi unutuyor.
+
+771
+01:08:21,680 --> 01:08:25,680
+Başka bir şey ilgilenmiyor, bitti gitti.
+
+772
+01:08:25,680 --> 01:08:30,680
+Ama diğerinde öncesinde bir virtual circuit oluşturuluyor.
+
+773
+01:08:30,680 --> 01:08:36,680
+O virtual circuit'ın ayakta tutunması için her routerda hangi yoldan geliyor, hangi yola gidiyor.
+
+774
+01:08:36,680 --> 01:08:38,680
+Bakın bir bağlantı tablosu var.
+
+775
+01:08:38,680 --> 01:08:40,680
+Aslında bir linkleme yapıyor.
+
+776
+01:08:40,680 --> 01:08:48,680
+Paketleri de identifier'ına göre o tabloya uygun şekilde çıkış yollarına yönlendiriyor.
+
+777
+01:08:48,680 --> 01:09:00,680
+Öyleyse demek ki bütün routerlarda giriş uçlarıyla, yollarıyla çıkış yollarının ilişkilendirildiği bir yapı söz konusu.
+
+778
+01:09:00,680 --> 01:09:03,680
+Yani state bilgisi tutuluyor.
+
+779
+01:09:03,680 --> 01:09:11,680
+Peki bu durumda bir router göçerse, devre dışı kalırsa ne olacak?
+
+780
+01:09:11,680 --> 01:09:27,680
+Yani şu beşinci satır, effect of router failures, datagramda o anda routerda gönderilmeyi, çıkış yollarına gönderilmeyi bekleyen paketler kaybolmuş oluyor.
+
+781
+01:09:27,680 --> 01:09:29,680
+Başka bir şey değil.
+
+782
+01:09:29,680 --> 01:09:38,680
+Ama diğer türlü virtual circuit tarafında o virtual circuit'ın bağlantısını kopartmış oluyorsunuz değil mi?
+
+783
+01:09:38,680 --> 01:09:43,680
+Çünkü arada bir router gitti ve virtual circuit yapısını da konuşmuştuk.
+
+784
+01:09:43,680 --> 01:09:45,680
+Alternatif yol yok.
+
+785
+01:09:45,680 --> 01:09:50,680
+Bütün paketler aynı yol üzerinden gitmek zorundalar.
+
+786
+01:09:50,680 --> 01:09:58,680
+O zaman artık virtual circuit parçalanmış oluyor, sonlandırılmış oluyor otomatik.
+
+787
+01:09:58,680 --> 01:10:05,680
+Quality of service, bunlar biraz daha böyle keyfek eder ama günümüzde inanılmaz önemli.
+
+788
+01:10:05,680 --> 01:10:07,680
+Çünkü neden?
+
+789
+01:10:07,680 --> 01:10:14,680
+Network'ten sadece mail yazışması yapmıyoruz, döküman download'ı yapmıyoruz.
+
+790
+01:10:14,680 --> 01:10:18,680
+Şu anda olduğu gibi sesli ve görüntülü görüşme yapıyoruz.
+
+791
+01:10:18,680 --> 01:10:31,680
+O zaman sesin ve görüntünün kalitesi önemli, eş zamanlı gitmesi önemli, bizi rahatsız etmeyecek gecikmede gitmesi önemli bu tarz şeyler var.
+
+792
+01:10:31,680 --> 01:10:37,680
+Bunların hepsini bir arada şey yaptığımız zaman, değerlendirdiğimiz zaman ne diyoruz?
+
+793
+01:10:37,680 --> 01:10:40,680
+Quality of service yani verilen servisin kalitesi.
+
+794
+01:10:41,680 --> 01:10:56,680
+Datagramda her bir paket ayrı bir yoldan diğerinden bağımsız olarak gidiyorsa bu tarz kuralları işletip de kaliteyi istenen sınırlar içerisinde tutabilmek çok zor.
+
+795
+01:10:56,680 --> 01:11:12,630
+Ama diğer taraftan, az önce Cihan hocanızın söylediği gibi, eğer virtual circuit'ımız var ise, esprisini yaptı ya benim her an ihtiyacım olabilir.
+
+796
+01:11:12,630 --> 01:11:16,630
+10 megabit istiyorum, 100 megabit istiyorum ama ondan sonra hiç kullanmıyorum.
+
+797
+01:11:16,630 --> 01:11:24,630
+Virtual circuit'ta önceden bunu verebiliyoruz diyoruz ki biz bunun üzerinden ses aktaracağız, görüntü aktaracağız.
+
+798
+01:11:24,630 --> 01:11:29,630
+Buradaki maksimum kabul edebileceğimiz gecikme bu.
+
+799
+01:11:29,630 --> 01:11:42,630
+Minimum sahip olmamız gereken band fit bu. Bunların hepsini sıralıyoruz, servis sıralıyı sağlayacağız diyor ki evet ben sana bunu veririm ama bunun karşılığında da şu parayı ödersin.
+
+800
+01:11:42,630 --> 01:11:45,630
+Fakat virtual circuit'ta bunu yönetmesi daha kolay.
+
+801
+01:11:46,630 --> 01:11:49,630
+Congestion control, congestion ile tıkanıklık.
+
+802
+01:11:49,630 --> 01:12:01,630
+Şimdi tıkanıklığın oluşması, oluşmaması, oluştuğunda çözülmesi, çözülmemesi açısından düşünecek olursak,
+
+803
+01:12:01,630 --> 01:12:07,630
+virtual circuit'ta tıkanıklığın oluşma ihtimali çok zor.
+
+804
+01:12:07,630 --> 01:12:08,630
+Çünkü neden?
+
+805
+01:12:08,630 --> 01:12:09,630
+Aslında yok.
+
+806
+01:12:09,630 --> 01:12:12,630
+O yani yanlış bir planlama yapılmadıysa eğer.
+
+807
+01:12:12,630 --> 01:12:16,630
+Yani parametrelerinin verdiğiniz bir trafiğe göre alokasyon yapılıyor.
+
+808
+01:12:16,630 --> 01:12:27,630
+Dolayısıyla o parametrelere uygun davrandığınız sürece ki aslında network servis sağlığı liste onlara uymanızı en forse ediyor böyle zorluyor.
+
+809
+01:12:27,630 --> 01:12:36,630
+Çünkü onlar sonuçta bir arayüz üzerinden bağlılısını, o arayüzü filtreleyerek şey yaparak o parametrelere sizi sıkıştırabilir isterse.
+
+810
+01:12:36,630 --> 01:12:40,630
+Dolayısıyla orada hani zaten bir congestion oluşması.
+
+811
+01:12:40,630 --> 01:12:49,630
+Ne olur congestion hani siz vaat ettiğiniz trafikten daha fazlasını network'e göndermeye kalktığınızda servis sağlığıcıyı,
+
+812
+01:12:49,630 --> 01:12:52,630
+onu filtreleyeceği için congestion sizde oluşur.
+
+813
+01:12:52,630 --> 01:12:55,630
+Yani sizden dışarıya o paket çıkamaz.
+
+814
+01:12:55,630 --> 01:12:57,630
+Network'ın geri kalanında bir şey olmaz.
+
+815
+01:12:57,630 --> 01:13:04,630
+Ya da alternatifte daha çok sevilen tahmine ales bir tarafından fotoğrafiyi çıkartmanıza izin verir, sonra öper.
+
+816
+01:13:04,630 --> 01:13:09,630
+Evet, parasını da bir değil üç alır, bir değil beş alır.
+
+817
+01:13:09,630 --> 01:13:14,630
+Datagramda congestion oluşma ihtimali çok kolay.
+
+818
+01:13:14,630 --> 01:13:15,630
+Çünkü niye?
+
+819
+01:13:15,630 --> 01:13:19,630
+Yani tam kelimenin tam anlamıyla vahşi batı.
+
+820
+01:13:19,630 --> 01:13:21,630
+Her paket her yoldan gidebilir.
+
+821
+01:13:21,630 --> 01:13:24,630
+Herkesin paketi her yerden gidebilir.
+
+822
+01:13:24,630 --> 01:13:28,630
+Paketlerin birbirine göre önceliği varmış, yokmuş.
+
+823
+01:13:28,630 --> 01:13:33,630
+İşte bunun öncesindeki paket, bu sonrasındaki paket sırası böyleydi.
+
+824
+01:13:33,630 --> 01:13:36,630
+Dur şu önce gitsin, bu geride gitsin.
+
+825
+01:13:36,630 --> 01:13:38,630
+Service sağlığıcıların umurunda bile değil.
+
+826
+01:13:38,630 --> 01:13:42,630
+Çünkü paketleri birbirinden bağımsız olarak işliyorlar.
+
+827
+01:13:42,630 --> 01:13:49,630
+Bu durumda da Datagram Network'un da tıkanıklık inanılmaz kolay gerçekleşebilir.
+
+828
+01:13:49,630 --> 01:13:51,630
+Yani bir admission kontrolü yok.
+
+829
+01:13:51,630 --> 01:13:59,630
+Böylece aslında kapatistinin üzerinde paketin ya da trafiğin orada olma ihtimali her zaman için mümkün.
+
+830
+01:13:59,630 --> 01:14:05,630
+Böyle olduğunda da zaten kontrolü zor olduğu için böyle.
+
+831
+01:14:05,630 --> 01:14:07,630
+Allah kolaylık versin.
+
+832
+01:14:07,630 --> 01:14:14,630
+Ancak diğer taraftan baktığımızda, yani KONJES için oluştuğu bir tıkanıklık var, bunu çözmek istiyoruz.
+
+833
+01:14:14,630 --> 01:14:17,630
+Datagram Network'un da bunu çözmek çok kolay.
+
+834
+01:14:17,630 --> 01:14:19,630
+Router'ı restart edersiniz.
+
+835
+01:14:19,630 --> 01:14:22,630
+Paketler otomatikman uçar, kaybolur.
+
+836
+01:14:22,630 --> 01:14:26,630
+Ne girişinde bekleyen paket vardır, ne çıkışında bekleyen paket vardır.
+
+837
+01:14:26,630 --> 01:14:34,630
+KONJES'in aslında işletim sistemlerinde geçen dönem konuştuğu dönem işletim sistemlerinin yeni alanları varsa hatırlayacaktır.
+
+838
+01:14:34,630 --> 01:14:36,630
+Deadlock konuşuyoruz.
+
+839
+01:14:36,630 --> 01:14:37,630
+Evet.
+
+840
+01:14:37,630 --> 01:14:38,630
+İki hafta deadlock konuşuyoruz.
+
+841
+01:14:38,630 --> 01:14:39,630
+Ama niye konuşuyoruz?
+
+842
+01:14:39,630 --> 01:14:41,630
+Deadlock ile ilgili ne yapabilirsiniz?
+
+843
+01:14:41,630 --> 01:14:43,630
+Avoidance yapabilirsiniz.
+
+844
+01:14:43,630 --> 01:14:45,630
+Yani dekdat olmasını kastırabilirsiniz.
+
+845
+01:14:45,630 --> 01:14:47,630
+Deadlock olur çözmeye uğraşabilirsiniz.
+
+846
+01:14:47,630 --> 01:14:50,630
+Ya da bana ne deyip devam edebilirsiniz.
+
+847
+01:14:50,630 --> 01:14:55,630
+Ama onun gibi KONJES için de tam olarak bana ne deyip devam etmiyorsunuz.
+
+848
+01:14:55,630 --> 01:15:03,630
+Ama KONJES'in olmasını engellemek için uğraşmak da KONJES ile neden olacak şeylerden bir tanesi.
+
+849
+01:15:03,630 --> 01:15:05,630
+Çünkü ekstra yük getiriyorsunuz.
+
+850
+01:15:05,630 --> 01:15:07,630
+Kapatistlerinizi azaltıyorsunuz.
+
+851
+01:15:07,630 --> 01:15:10,630
+KONJES'in o yüzden çok sevebilecek bir şey değil.
+
+852
+01:15:10,630 --> 01:15:11,630
+Aynen.
+
+853
+01:15:11,630 --> 01:15:16,630
+Ama virtual circuitta KONJES'in varsa çok ciddi bir sıkıntı var demektir.
+
+854
+01:15:16,630 --> 01:15:17,630
+Az önce konuştuk.
+
+855
+01:15:17,630 --> 01:15:24,630
+Yani servis sağlayıcının bir şeylere vadettiğinin haricinde yanlış yapıyor olmasından olabilir.
+
+856
+01:15:24,630 --> 01:15:30,630
+Veya servisi alanın ben bu Netfork'u böyle de kullansam ne olacak?
+
+857
+01:15:30,630 --> 01:15:33,630
+Olur, servis sağlayıcı düşünsün demesinden olabilir.
+
+858
+01:15:33,630 --> 01:15:41,630
+Ama sonuçta virtual circuitta KONJES için oluştuğu zaman çözmesi datagrama göre çok daha zor.
+
+859
+01:15:41,630 --> 01:15:44,630
+Şimdi bence...
+
+860
+01:15:44,630 --> 01:15:46,630
+Bundan sonra routing algoritmaları var.
+
+861
+01:15:46,630 --> 01:15:47,630
+İşte o yüzden duralım dedim.
+
+862
+01:15:47,630 --> 01:15:50,630
+Hem derse giriş yaptık, hem derse anlattık.
+
+863
+01:15:50,630 --> 01:15:51,630
+Evet.
+
+864
+01:15:51,630 --> 01:15:52,630
+Evet.
+
+865
+01:15:52,630 --> 01:15:59,630
+Routing algoritmaları çünkü baştan aşağı kendi içerisinde bir falan var.
+
+866
+01:15:59,630 --> 01:16:00,630
+Bende hala 60 kişi var.
+
+867
+01:16:00,630 --> 01:16:02,630
+Sizde kaç kişi var bilmiyorum.
+
+868
+01:16:02,630 --> 01:16:03,630
+Görebiliyor muyum?
+
+869
+01:16:03,630 --> 01:16:04,630
+Biliyorum şurada.
+
+870
+01:16:05,630 --> 01:16:06,630
+63 kişi var hocam.
+
+871
+01:16:06,630 --> 01:16:07,630
+Güzel, süper.
+
+872
+01:16:07,630 --> 01:16:08,630
+İyi bir rakam.
+
+873
+01:16:08,630 --> 01:16:10,630
+Sayılarımız normalde 90'lar.
+
+874
+01:16:10,630 --> 01:16:16,630
+Ama yani ilk hafta bir de hep şey oluyor ya bir...
+
+875
+01:16:16,630 --> 01:16:17,630
+Fire.
+
+876
+01:16:17,630 --> 01:16:19,630
+Fire oluyor her zaman için.
+
+877
+01:16:19,630 --> 01:16:20,630
+Evet arkadaşlar.
+
+878
+01:16:20,630 --> 01:16:23,630
+Bu haftaki dersimiz bu kadar.
+
+879
+01:16:23,630 --> 01:16:26,630
+Haftaya görüşmek üzere.
+
+880
+01:16:26,630 --> 01:16:27,630
+Sağlıcakla kalın.
+
+881
+01:16:27,630 --> 01:16:28,630
+Evet.
+
+882
+01:16:28,630 --> 01:16:29,630
+Haftaya görüşürüz gençler.
+
+883
+01:16:29,630 --> 01:16:34,609
+Şunu hemen kapatıyorum.
+
