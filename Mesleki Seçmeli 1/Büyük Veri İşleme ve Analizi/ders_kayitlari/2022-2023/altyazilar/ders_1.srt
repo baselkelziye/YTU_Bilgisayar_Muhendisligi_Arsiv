@@ -1,0 +1,1403 @@
+1
+00:05:11,636 --> 00:05:12,975
+Herkese günaydın arkadaşlar.
+
+2
+00:05:16,819 --> 00:05:17,659
+günaydın hocam
+
+3
+00:05:23,252 --> 00:05:25,811
+biraz daha bekleyelim diğer arkadaşlarımız da gelsin.
+
+4
+00:13:00,596 --> 00:13:02,235
+Evet arkadaşlar, biz başlayalım.
+
+5
+00:13:13,203 --> 00:13:17,043
+ben kameramı da açtım. İki farklı hesaptan bağlanıyorum.
+
+6
+00:13:20,883 --> 00:13:31,023
+Sesim ve görüntüm aynı hesaptan geliyor olması lazım. Diğer bilgisayarımdan da size slide'ları aktarıyorum.
+
+7
+00:13:32,923 --> 00:13:37,063
+Tekrardan bir teyit edin arkadaşlar. Sesim geliyor mu? Duyabiliyor musunuz? Yankı var mı?
+
+8
+00:13:37,063 --> 00:13:38,643
+Geliyor hocam soru yok.
+
+9
+00:13:39,343 --> 00:13:40,044
+Geliyor.
+
+10
+00:13:41,083 --> 00:13:41,683
+Tamamdır.
+
+11
+00:13:43,203 --> 00:13:48,343
+Bu dönem büyük veri işleme ve analizi dersini beraber yapacağız arkadaşlar.
+
+12
+00:13:50,683 --> 00:13:57,683
+Ders requirementlarını ben şu anda ekrana aldım.
+
+13
+00:13:58,863 --> 00:14:00,663
+Ekranda görüyor olmanız lazım.
+
+14
+00:14:03,163 --> 00:14:11,424
+Bu dönem kapsamında öncelikle büyük veri işleme ve analizi tekniklerini öğreneceksiniz.
+
+15
+00:14:11,423 --> 00:14:23,303
+bu teknikler için kullanılan algoritmaları öğreneceksiniz. Bir de bu algoritmaları bir problem üzerinde sizler uygulayacaksınız.
+
+16
+00:14:23,303 --> 00:14:35,243
+Yani dönem projesi olan bir ders. Ders İngilizce işliyorum. Bu introductory dersten sonra dersin geri kalanının tamamı İngilizce olacak.
+
+17
+00:14:35,244 --> 00:14:57,043
+bir tane midterm'ü var bu dersin. Bu da sekizinci haftada ayın on dokuzuna denk geliyor. Bir de term project var. Bu term project bir ya da iki öğrenci grupları şeklinde yapılabilir.
+
+18
+00:14:57,043 --> 00:15:22,123
+Bu hafta birinci haftamız. Dördüncü haftada sizlerden bir tane Term Project Proposal vermenizi isteyeceğim. Özellikle her proje grubunun belirli olmasını istiyorum. Biraz da ondan dönemin ilk ayında bunu yapıyorum.
+
+19
+00:15:22,123 --> 00:15:35,603
+Bu hafta özellikle gelecek hafta dersin içeriğinde öğreneceğiniz konularla ilgili bir fikriniz olacak.
+
+20
+00:15:36,383 --> 00:15:41,383
+Oradan yola çıkarak biraz da siz Google mühendisliği yapacaksınız.
+
+21
+00:15:42,224 --> 00:15:47,603
+Acaba ben öğreneceğimiz bu konularla ilgili nasıl bir proje yapabilirim?
+
+22
+00:15:47,603 --> 00:16:00,103
+yapabilirim, hangi veri setleri üzerinde çalışabilirim konusunda bir araştırma yapacaksınız ve bir term proposal hazırlayacaksınız bir sayfalık.
+
+23
+00:16:00,103 --> 00:16:09,083
+Bunu da dördüncü hafta eğer sarkma olursa en beşinci hafta sizlerden isteyeceğim.
+
+24
+00:16:09,083 --> 00:16:24,283
+Onun dışında bir de final sınavınız var. Final sınavında da %40 oranında dönem harf notunuza etkiyecek.
+
+25
+00:16:28,467 --> 00:16:34,507
+Şimdi bu ders kapsamında peki neler öğreneceğiz? Biraz onlara geçelim.
+
+26
+00:16:54,932 --> 00:17:23,811
+Bu ders kapsamında Mining of Massive Data Sets kitabını kullanacağız. Bunun farklı sürümlerini görüyorsunuz. En son edition'ı, third edition sanırım. Bu kitabın bütün chapter'larını yazarları online olarak koymuşlar. Yani kitabı satın almanıza ya da kütüphaneye gitmenize gerek yok.
+
+27
+00:17:24,932 --> 00:17:35,211
+kitabın aynı zamanda kendi yazarlarının hazırlamış olduğu PowerPoint slide'ları da burada bulabilirsiniz.
+
+28
+00:17:36,472 --> 00:17:47,211
+Bununla birlikte yine kitabın yazarlarının bazı çeptörler için hazırlamış olduğu YouTube videolarını da buradan izleyebilirsiniz.
+
+29
+00:17:47,211 --> 00:17:57,951
+diyebilirsiniz. Yani hem bu ders içeriğini benim derslerimden hem de bu dersin hocalarının YouTube sayfa içeriklerinden ulaşabileceksiniz.
+
+30
+00:18:02,163 --> 00:18:15,883
+bu ders aslında Stanford Üniversitesi'nde verilen aynı isimle uzun süre verilen şu anda Mining Massive Data Sessizliğe geçen bir tane ders.
+
+31
+00:18:16,103 --> 00:18:23,823
+Aynı içeriği ben de sizlere Big Data Processing ve Analysis dersi olarak vermeye çalışıyorum.
+
+32
+00:18:23,823 --> 00:18:33,783
+Şimdi buradaki çeptırlarda gördüğünüz konuları olabildiğince ders içerisinde cover etmeye çalışıyoruz.
+
+33
+00:18:33,783 --> 00:18:50,163
+Buradaki çeptırlardan işleyebileceğimiz maksimum oranında olan konuyu bu dönem kapsamında sizlerle beraber işleyeceğiz arkadaşlar.
+
+34
+00:18:56,596 --> 00:18:58,275
+Bu dersin bir sayfası var.
+
+35
+00:19:03,955 --> 00:19:32,716
+Bu dersin sayfası üzerinden dersle ilgili bütün announcementları bulabiliyorsunuz. Birinci haftamız herhangi bir announcementımız yok ama dersle ilgili herhangi bir reading materyal varsa, turn project ile ilgili bakmanız gereken şeyler varsa ya da dersle ilgili herhangi bir duyuru söz konusuysa buradan bakacaksınız.
+
+36
+00:19:32,716 --> 00:19:51,555
+bu siteyi not edin ve bunu derslerden bir gün önce mutlaka kontrol edin. Dersle ilgili herhangi bir duyuru var mı yok mu bunu takip edebilirsiniz.
+
+37
+00:19:51,555 --> 00:19:57,615
+Ben bunu chatten de yazıyorum arkadaşlar.
+
+38
+00:20:03,284 --> 00:20:04,404
+aynı zamanda
+
+39
+00:20:08,019 --> 00:20:12,019
+Az önce size gösterdiğim dersin sayfasını da yazıyorum.
+
+40
+00:20:13,639 --> 00:20:14,299
+Chatten
+
+41
+00:20:14,299 --> 00:20:18,519
+sizlerle paylaşıyorum.
+
+42
+00:20:26,003 --> 00:20:26,363
+ok.
+
+43
+00:20:32,115 --> 00:20:51,055
+Şimdi dersimize 85 kişi kayıt olmuş. Ders kayıtlarına sonradan ulaşabiliyorsunuz ama ben yine de derslere katılım isteyeceğim arkadaşlar.
+
+44
+00:20:51,055 --> 00:21:04,095
+zaten şu anda online eğitim olarak devam edeceğiz gözüküyor. Hibrite dönmeyle ilgili herhangi bir bilgilendirme yok.
+
+45
+00:21:05,315 --> 00:21:17,715
+Dolayısıyla yolculuk gibi durumlar da olmayacak okula gelme gitme. Derslere katılabilir olacağınızı düşünüyorum.
+
+46
+00:21:17,715 --> 00:21:41,515
+O yüzden bir derslere katılımla ilgili bir kural koyacağım. Normalde üniversitenin bizden istediği, telepettiği %75. Ama ben en azından %60'ın üzerinde bir katılım olsa benim için kafi olacaktır.
+
+47
+00:21:41,516 --> 00:21:51,016
+Buradaki arkadaşlarımın derslere, online derslere katılım sağlamasını istiyorum
+
+48
+00:21:51,016 --> 00:21:55,575
+Burada [öğrenci] burada mı?
+
+49
+00:21:57,996 --> 00:21:59,016
+Buradayım hocam
+
+50
+00:21:59,016 --> 00:22:04,276
+[öğrenci] senin derse kayıt olduğunu gördüm
+
+51
+00:22:04,276 --> 00:22:07,755
+Fen Bilimleri Enstitüsü ile de konuştum
+
+52
+00:22:07,755 --> 00:22:16,476
+sen tessiz yüksek lisans öğrencisi olduğun için lisans programından ders alamıyorsun.
+
+53
+00:22:18,976 --> 00:22:37,175
+OBS sistemi buna engel koymamış derse kayıt olabiliyorsun ama bu dersi aldığın vakit bilgi teknolojileri tessiz yüksek lisans programına bunu saydıramıyorsun.
+
+54
+00:22:37,755 --> 00:22:47,155
+bilgin olsun. Bunu diğer seçimli derslerimizde de karşılaştık. Ben aynı zamanda bölüm başkan yardımcısıyım.
+
+55
+00:22:48,976 --> 00:22:55,916
+Bunu [ad] Bey ile de konuştuk, Fen Bilimleri Enstitüsü sekreteri. O da teyit etti.
+
+56
+00:22:55,916 --> 00:23:05,336
+Testsiz yüksek lisans programı öğrencilerimiz örgün öğretimdeki lisans programındaki dersleri saydıramıyorlar.
+
+57
+00:23:05,336 --> 00:23:10,416
+Biliyorum hocam ben zaten öğrenmek için aldım
+
+58
+00:23:10,416 --> 00:23:19,015
+Okey tamam sanırım hani derse kayıt olmasan bu online linklere ulaşamıyorsun onu düşündün o yüzden kayıt oldun
+
+59
+00:23:19,015 --> 00:23:20,035
+Evet hocam
+
+60
+00:23:20,035 --> 00:23:20,836
+Tamam okey
+
+61
+00:23:28,339 --> 00:23:30,339
+ok
+
+62
+00:24:16,180 --> 00:24:45,459
+okay today uh is the first week um so i'm going to do an introduction to the course uh so that you have an idea what kind of things that we are going to do in this course uh but starting from next week i will um cover the uh chapters uh one uh by one uh as the semester goes along.
+
+63
+00:24:46,180 --> 00:24:50,760
+Okay, so let's get started with the course introduction.
+
+64
+00:24:54,708 --> 00:25:12,708
+ok now the idea here is that the amount of data that we have a grows very fast and this data comes from different sources so we have
+
+65
+00:25:12,708 --> 00:25:31,187
+since the beginning of the streaming applications ever since we started using all these streaming applications the amount of data that we have
+
+66
+00:25:31,187 --> 00:25:55,788
+have increased in a drastic manner. So we have the data that we have related music. So we have data that accumulated via mobile phone usage. We have data due to use of different social network sites.
+
+67
+00:25:55,787 --> 00:26:25,767
+and so we have data related to e-science which is electronic science and so obviously there are digital libraries in which we have enormous amounts of data and what we are trying to do we are trying to find algorithms or techniques that can help us
+
+68
+00:26:25,787 --> 00:26:30,787
+to process and analyze such large scale data.
+
+69
+00:26:36,819 --> 00:26:43,339
+And the idea here is that the data that is accumulated over the years,
+
+70
+00:26:45,099 --> 00:26:49,619
+so obviously we want to extract knowledge out of this data.
+
+71
+00:26:49,619 --> 00:26:57,399
+So once we have tools that can extract knowledge from such enormous amount of data,
+
+72
+00:26:57,759 --> 00:27:01,719
+and that knowledge can be used in different ways.
+
+73
+00:27:01,719 --> 00:27:10,779
+So obviously we can utilize this knowledge in order to make our lives easier.
+
+74
+00:27:11,099 --> 00:27:18,019
+And we can also use this knowledge in order to come up with predictions for the future.
+
+75
+00:27:22,932 --> 00:27:29,511
+So obviously, this data needs to be stored somewhere.
+
+76
+00:27:29,511 --> 00:27:31,291
+It needs to be managed.
+
+77
+00:27:31,812 --> 00:27:33,951
+And also it needs to be analyzed.
+
+78
+00:27:35,671 --> 00:27:46,911
+To do that, since the amount of data that we are talking about is really big.
+
+79
+00:27:46,911 --> 00:27:53,671
+So we cannot store such amount of data in one single computer.
+
+80
+00:27:54,432 --> 00:28:01,932
+So what we are doing is that we are using distributed databases or data centers
+
+81
+00:28:01,932 --> 00:28:07,551
+where we have a high number of community data servers.
+
+82
+00:28:08,112 --> 00:28:12,171
+And we use those places in order to store the data.
+
+83
+00:28:12,171 --> 00:28:14,171
+ve
+
+84
+00:28:14,171 --> 00:28:16,171
+bu
+
+85
+00:28:16,171 --> 00:28:41,171
+bir
+
+86
+00:28:41,171 --> 00:28:49,371
+are being stored in these data centers and in these distributed storage places, they also need to be
+
+87
+00:28:49,371 --> 00:28:59,551
+managed. So what do we mean by saying managing the distributed data storage? Basically, when you
+
+88
+00:28:59,551 --> 00:29:09,971
+store a file into a data center, that file is going to be stored in multiple servers for replication.
+
+89
+00:29:09,972 --> 00:29:16,652
+and your distributed data management system
+
+90
+00:29:16,652 --> 00:29:18,751
+should be able to locate
+
+91
+00:29:18,751 --> 00:29:22,612
+where the copies of that file is located.
+
+92
+00:29:24,652 --> 00:29:28,211
+And sometimes, so what we do,
+
+93
+00:29:28,932 --> 00:29:32,932
+we divide, if the file is too big,
+
+94
+00:29:33,551 --> 00:29:39,232
+in that case, we divide the file into small pieces
+
+95
+00:29:39,232 --> 00:29:45,292
+And then we store these small pieces into multiple servers.
+
+96
+00:29:46,491 --> 00:29:51,092
+And whenever the user requests that particular file,
+
+97
+00:29:51,472 --> 00:29:53,631
+what we do with these systems,
+
+98
+00:29:54,292 --> 00:30:00,292
+we extract all these pieces from the data storage
+
+99
+00:30:00,292 --> 00:30:06,732
+and we put them together and we give that file as whole to the user.
+
+100
+00:30:06,732 --> 00:30:20,612
+So this means that not only you do replication of the same file, but also you can divide that file into small pieces and then store in the data storage.
+
+101
+00:30:20,612 --> 00:30:35,692
+Okay, so which means storage and the management of the data in the large scale distributed storage systems are highly important and it's complex.
+
+102
+00:30:35,691 --> 00:30:55,271
+Ok, and also we need to analyze this data while the pieces of this data is being stored in multiple data servers and copies of these files are being replicated on multiple servers.
+
+103
+00:30:55,271 --> 00:30:59,432
+So we want to find ways to analyze this data.
+
+104
+00:30:59,932 --> 00:31:09,451
+And in this class, we are going to learn the techniques and algorithms that can help us to analyze this data.
+
+105
+00:31:11,372 --> 00:31:11,611
+Okay.
+
+106
+00:31:13,971 --> 00:31:21,491
+Basically, so what you are going to learn in this course is basically data science.
+
+107
+00:31:22,003 --> 00:31:47,003
+ok, you are going to learn the algorithms that would help you to analyze and extract knowledge from the data, but you are going to learn particular algorithms which we call big data algorithms that can help you to run these algorithms on high number of distributed data storages.
+
+108
+00:31:52,084 --> 00:32:15,283
+ok, so this this slide is a little bit old but it should give you an idea I think the demand for the data science and the data scientist is still growing so this basically tells you how much
+
+109
+00:32:18,403 --> 00:32:19,683
+the need in
+
+110
+00:32:22,084 --> 00:32:31,624
+in the market, in the information technology market for the data scientists. So it's growing
+
+111
+00:32:31,624 --> 00:32:40,924
+each year and people who know tools or the techniques or the algorithms that can
+
+112
+00:32:40,924 --> 00:32:51,584
+help analyzing the big data and have information about data science can find really good jobs in
+
+113
+00:32:51,584 --> 00:32:53,824
+in the information technology market.
+
+114
+00:32:59,796 --> 00:33:09,596
+Okay, so in that case, so in this course, we are going to assume that, so we have, we will have lots of data.
+
+115
+00:33:10,075 --> 00:33:17,615
+And this data is going to be stored not only on one server, it's going to be stored on multiple servers, obviously.
+
+116
+00:33:17,615 --> 00:33:29,915
+And in this course, you are going to learn the patterns or the models that can be extracted from this data.
+
+117
+00:33:29,915 --> 00:33:41,635
+And so obviously, we want these patterns and the models to be valid.
+
+118
+00:33:42,375 --> 00:33:53,195
+Okay, so which means that the patterns that we extract or the models that we construct from this data should have some certainty.
+
+119
+00:33:54,075 --> 00:33:54,875
+Okay.
+
+120
+00:33:54,875 --> 00:33:59,475
+And it should be useful, obviously.
+
+121
+00:33:59,475 --> 00:34:05,695
+So we apply all these algorithms in order to extract some useful knowledge.
+
+122
+00:34:06,656 --> 00:34:06,796
+Okay.
+
+123
+00:34:07,135 --> 00:34:11,715
+So people are going to use this knowledge and take some actions.
+
+124
+00:34:13,555 --> 00:34:24,095
+And obviously we use, we are going to learn these techniques to find out unexpected situations.
+
+125
+00:34:24,876 --> 00:34:25,876
+Bu, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir
+
+126
+00:34:54,875 --> 00:35:24,855
+ve bu insanlara da
+
+127
+00:35:24,855 --> 00:35:30,376
+way too complex to comprehend, way too complex to understand,
+
+128
+00:35:30,676 --> 00:35:37,635
+then we need to find other ways to explain how these algorithms or techniques work
+
+129
+00:35:37,635 --> 00:35:41,815
+so that people can trust these techniques or algorithms
+
+130
+00:35:41,815 --> 00:35:47,195
+and take action based on their results.
+
+131
+00:35:52,659 --> 00:36:01,599
+Okay, now the algorithms that we are going to learn can be categorized into two main categories.
+
+132
+00:36:01,599 --> 00:36:07,019
+So one is descriptive techniques, the other one is predictive techniques.
+
+133
+00:36:08,419 --> 00:36:15,920
+Now in the first part, what we are going to learn is, we are going to learn the pattern,
+
+134
+00:36:16,179 --> 00:36:21,759
+how can we extract the patterns that describes the data.
+
+135
+00:36:22,659 --> 00:36:31,579
+Okay, and the patterns that we are going to extract should tell us more about the data.
+
+136
+00:36:32,439 --> 00:36:35,459
+For example, statistics, right?
+
+137
+00:36:35,899 --> 00:36:44,579
+If I give you a string of integers, if I give you an array of integers,
+
+138
+00:36:44,579 --> 00:36:51,199
+and if I ask you to give me some descriptive information
+
+139
+00:36:51,199 --> 00:36:54,439
+about that stream of integers,
+
+140
+00:36:54,899 --> 00:36:56,740
+then you can tell me that,
+
+141
+00:36:56,859 --> 00:37:00,459
+okay, I can give you the average of these integers.
+
+142
+00:37:00,819 --> 00:37:04,179
+I can give you the standard deviation of these integers.
+
+143
+00:37:04,179 --> 00:37:07,419
+I can give you the maximum and minimum values
+
+144
+00:37:07,419 --> 00:37:11,259
+for the integer values, okay?
+
+145
+00:37:11,259 --> 00:37:23,259
+And so basically what you are saying is that maximum, minimum, standard deviation, average, all these are descriptive information.
+
+146
+00:37:24,279 --> 00:37:30,119
+So it basically tells me something about that stream of integers.
+
+147
+00:37:30,979 --> 00:37:31,119
+Okay.
+
+148
+00:37:31,779 --> 00:37:35,520
+And similarly, there are other descriptive methods.
+
+149
+00:37:35,520 --> 00:37:50,740
+And we are going to learn how we can apply these descriptive methods on large scale data that are distributed on multiple data servers.
+
+150
+00:37:51,999 --> 00:37:58,700
+Now, the other category of techniques that we are going to learn is predictive methods.
+
+151
+00:37:58,700 --> 00:38:17,439
+Now here, what we are going to learn, we are going to learn how we can extract some models from the data and then use these models in order to come up with predictions about the future.
+
+152
+00:38:17,439 --> 00:38:37,520
+Okay, so which means that we will have data, past data, okay, and that happened before, and we will have algorithms and methodologies that can analyze such data and create models.
+
+153
+00:38:38,559 --> 00:38:45,839
+Okay, and then we will use these models in order to come up with predictions about the future.
+
+154
+00:38:45,839 --> 00:38:52,619
+And these predictive matters are being used in different ways.
+
+155
+00:38:52,779 --> 00:38:54,959
+We can use them for recommendations.
+
+156
+00:38:54,959 --> 00:38:58,899
+We can use them for predictions.
+
+157
+00:38:59,479 --> 00:39:02,159
+For example, weather forecast predictions.
+
+158
+00:39:02,319 --> 00:39:08,639
+We can use this for financial data predictions.
+
+159
+00:39:09,199 --> 00:39:12,279
+There are many different use cases.
+
+160
+00:39:20,851 --> 00:39:50,351
+ok? Now, obviously, the data that we are working on, if the data comes from the real life, ok? And in that case, that data will have insight of what happened in real life, ok?
+
+161
+00:39:50,851 --> 00:40:07,372
+So which means that if there is something to be learned from the data by using these techniques, either descriptive techniques or the predictive techniques, so we can extract some knowledge that is useful.
+
+162
+00:40:07,372 --> 00:40:18,732
+okay but if the data that we have does not capture so what actually happens in real life okay in a proper
+
+163
+00:40:18,732 --> 00:40:27,091
+way in that case the patterns that we extract or the knowledge that we extract is going to be
+
+164
+00:40:27,091 --> 00:40:35,131
+meaningless okay so therefore before we start doing any data science activity so we need to
+
+165
+00:40:35,131 --> 00:40:48,051
+make sure that the data is coming from a domain that we can say, okay, there must be some inside
+
+166
+00:40:48,051 --> 00:40:55,932
+information within this data because it captures what happened in real life and it should be
+
+167
+00:40:56,652 --> 00:41:04,591
+big enough so that it can capture actually what happened over time.
+
+168
+00:41:04,591 --> 00:41:20,891
+So it should be lengthy data in terms of time and in terms of size. At the same time, it should come from the real life so that we can make sense out of it.
+
+169
+00:41:20,892 --> 00:41:35,031
+If the data is synthetically generated data, then you should suspect that the knowledge that you extract from this data might be meaningless.
+
+170
+00:41:44,596 --> 00:41:52,195
+ok, so let's just skip this example.
+
+171
+00:41:53,684 --> 00:41:54,244
+Okay.
+
+172
+00:41:56,483 --> 00:42:05,203
+When we are dealing with data, so we have different dimensions.
+
+173
+00:42:09,163 --> 00:42:14,343
+So one aspect or one dimension is the challenges.
+
+174
+00:42:14,944 --> 00:42:15,123
+Okay.
+
+175
+00:42:16,043 --> 00:42:21,463
+So with the big data, we have the scalability issue, which means that,
+
+176
+00:42:21,463 --> 00:42:33,544
+So we need to distribute this data to a high number of servers so that when we want to analyze it, we can analyze it in a fast and efficient way.
+
+177
+00:42:34,743 --> 00:42:47,203
+And the big data might be coming in a streaming way, which means that it will come to your system in a continuous way.
+
+178
+00:42:47,204 --> 00:42:57,883
+Okay, so just like you can think like the seismic signal data.
+
+179
+00:42:58,304 --> 00:43:09,584
+So we have sensors that are capturing the seismic data from the earthquake region in a continuous way.
+
+180
+00:43:09,584 --> 00:43:19,924
+So we have to analyze this data in a continuous manner to understand whether there is an aftershock earthquake.
+
+181
+00:43:21,503 --> 00:43:35,704
+And also the context of the data in which this data is generated, the time, the place, all that is important that it needs to be captured.
+
+182
+00:43:35,703 --> 00:43:39,543
+The quality of data is important.
+
+183
+00:43:40,623 --> 00:43:46,243
+So whether the sensors that are generating this data is functioning properly.
+
+184
+00:43:47,143 --> 00:43:53,123
+And obviously, the usage of this data is also important.
+
+185
+00:43:53,123 --> 00:44:04,624
+And mostly, we will be focusing on the algorithms that can analyze and use this data in order to extract knowledge.
+
+186
+00:44:05,704 --> 00:44:09,564
+And data can be in different modalities, in different formats.
+
+187
+00:44:09,743 --> 00:44:12,504
+It could be a structured data.
+
+188
+00:44:13,044 --> 00:44:18,284
+It could be a social network data.
+
+189
+00:44:18,704 --> 00:44:21,424
+It could be in the format of text.
+
+190
+00:44:22,384 --> 00:44:25,224
+You might have a multimedia data.
+
+191
+00:44:25,224 --> 00:44:30,364
+It could have video images, images, audio files, et cetera.
+
+192
+00:44:30,924 --> 00:44:33,064
+You might have signals data.
+
+193
+00:44:33,063 --> 00:44:51,423
+All these are the different data modalities and your system should have, basically your system should be able to process the data that comes in different formats.
+
+194
+00:44:51,423 --> 00:45:13,503
+And usually if you have a comprehensive big data system and that system should have different data operators, it should be able to collect the data, prepare the data for analysis.
+
+195
+00:45:13,503 --> 00:45:15,723
+It should be able to represent the data.
+
+196
+00:45:16,263 --> 00:45:22,023
+It should allow you to extract models and use these models in order to do reasoning.
+
+197
+00:45:22,703 --> 00:45:25,363
+And it should also be able to visualize the data.
+
+198
+00:45:26,023 --> 00:45:39,063
+So when we are dealing with the data and the big data, all these are different subfields that you can work on.
+
+199
+00:45:43,891 --> 00:46:13,732
+okay now um here in uh in in this course uh basically uh the data that we are working on is large-scale data and uh in this type of data uh what uh uh what you can do you can um if you want to access and retrieve the data you should conduct simple queries like um
+
+200
+00:46:13,891 --> 00:46:26,491
+get query and put query. So basically you can give the ID for the data that you are looking for and the system should be able to retrieve that data for you.
+
+201
+00:46:27,412 --> 00:46:37,652
+Since we are not talking about the operational databases, the kind of databases that we are talking about,
+
+202
+00:46:37,651 --> 00:46:52,932
+so do not do SQL operations. We are working mostly with no SQL databases. So basically mostly we are
+
+203
+00:46:52,932 --> 00:47:03,791
+working on storing files into the distributed file system. On the other hand in relational databases
+
+204
+00:47:03,792 --> 00:47:18,912
+So what we have, small scale data, and in that kind of database, so we have relational database, and we use SQL in order to conduct queries, mostly complex queries.
+
+205
+00:47:19,292 --> 00:47:31,091
+Okay, and so we are going to use machine learning techniques, but here we are going to use machine learning for big data.
+
+206
+00:47:31,091 --> 00:47:48,891
+data. And we also are going to use statistics and we are going to use statistics methods and equations that can be applied on large scale data.
+
+207
+00:47:54,420 --> 00:48:22,420
+ok? So basically this course will utilize statistics, machine learning and also database systems but for as for the database systems we are not going to look at the traditional relational database databases we are going to look at distributed NoSQL databases for the data storage.
+
+208
+00:48:26,420 --> 00:48:54,420
+bu dağılık,
+
+209
+00:48:54,420 --> 00:49:10,420
+and we will work on labeled data and basically on the labeled data we are going to run supervised learning algorithms that are designed for big data.
+
+210
+00:49:10,420 --> 00:49:19,859
+And we will also learn different techniques, methodologies for analyzing the big data.
+
+211
+00:49:19,859 --> 00:49:38,259
+we will learn MapReduce, we will learn different algorithms for streaming data, and we will learn algorithms that can process the data not only on single memory, but also data that is stored on multiple machines.
+
+212
+00:49:45,268 --> 00:49:53,067
+And all the problems that we are going to solve by using these techniques are coming from the real world problems.
+
+213
+00:49:53,947 --> 00:49:59,407
+Some of the examples of the problems that we are going to work are listed here.
+
+214
+00:50:00,307 --> 00:50:05,268
+So we have the recommender systems that are being used by the e-commerce websites.
+
+215
+00:50:05,268 --> 00:50:16,527
+We have the market basket analysis problem that are basically be using by the physical grocery stores.
+
+216
+00:50:17,927 --> 00:50:22,187
+And we have the spam detection problem.
+
+217
+00:50:22,668 --> 00:50:27,087
+So we have this problem in many different domains.
+
+218
+00:50:27,547 --> 00:50:31,087
+And we have the duplicate document detection.
+
+219
+00:50:31,367 --> 00:50:33,867
+And we have this problem again in many domains.
+
+220
+00:50:33,867 --> 00:50:39,927
+And these are just some of the real world problems that we are going to work.
+
+221
+00:50:40,027 --> 00:50:41,587
+There are others as well.
+
+222
+00:50:46,516 --> 00:50:56,915
+Okay, and here you see we have high dimensional data, graph data, infinite data.
+
+223
+00:50:57,195 --> 00:51:02,155
+The first three columns indicate different categories of data.
+
+224
+00:51:03,276 --> 00:51:11,475
+And basically on these different data types, we have different problems.
+
+225
+00:51:11,475 --> 00:51:21,475
+So here, for example, on graph data, so we have this spam detection problem, community detection problem, ranking problem.
+
+226
+00:51:21,475 --> 00:51:31,915
+On infinite data, we have the problem of queries on streams, how you can filter the data streams and everything.
+
+227
+00:51:31,915 --> 00:51:34,255
+and on high dimensional data
+
+228
+00:51:34,255 --> 00:51:36,515
+how you can group together the data
+
+229
+00:51:36,515 --> 00:51:38,055
+or how you can
+
+230
+00:51:38,055 --> 00:51:40,915
+reduce the high dimensions
+
+231
+00:51:40,915 --> 00:51:42,935
+to a small number
+
+232
+00:51:42,935 --> 00:51:43,615
+of dimensions
+
+233
+00:51:43,615 --> 00:51:46,915
+and all these are different
+
+234
+00:51:46,915 --> 00:51:50,235
+different
+
+235
+00:51:50,235 --> 00:51:51,935
+types of problems
+
+236
+00:51:51,935 --> 00:51:54,335
+that needs to be solved
+
+237
+00:51:54,335 --> 00:51:56,775
+for different types of
+
+238
+00:51:56,775 --> 00:51:58,175
+big data
+
+239
+00:51:58,175 --> 00:52:00,275
+and we are going to
+
+240
+00:52:00,276 --> 00:52:03,076
+kullanan farklı machine learning techniques.
+
+241
+00:52:03,276 --> 00:52:05,096
+Here you see only some of them,
+
+242
+00:52:05,216 --> 00:52:06,696
+different machine learning techniques
+
+243
+00:52:06,696 --> 00:52:11,396
+that can help us to solve these problems.
+
+244
+00:52:12,096 --> 00:52:13,096
+And as a result,
+
+245
+00:52:13,376 --> 00:52:16,096
+we are going to create some applications.
+
+246
+00:52:16,835 --> 00:52:16,956
+Okay?
+
+247
+00:52:17,475 --> 00:52:20,335
+And so we are going to learn
+
+248
+00:52:20,335 --> 00:52:22,496
+how to create recommender systems
+
+249
+00:52:22,496 --> 00:52:25,316
+that can function on big data.
+
+250
+00:52:25,935 --> 00:52:27,176
+We are going to learn
+
+251
+00:52:27,176 --> 00:52:30,215
+how you can create decision support systems
+
+252
+00:52:30,215 --> 00:52:42,695
+that utilize association rules or decision support systems that utilize duplicate document detection.
+
+253
+00:52:42,695 --> 00:52:43,695
+Okay.
+
+254
+00:52:44,615 --> 00:52:48,855
+And all this will be in this course.
+
+255
+00:52:57,492 --> 00:53:00,492
+ok
+
+256
+00:53:24,596 --> 00:53:43,036
+again, those of you who joined the lecture right now or late, just to reiterate what I just told your friends at the beginning.
+
+257
+00:53:43,036 --> 00:53:51,915
+so I'm going to follow a textbook which is called Mining of Massive Dataset. You can access this
+
+258
+00:53:51,915 --> 00:54:02,116
+book on its website where you can find all the chapters and also the PowerPoint slides along
+
+259
+00:54:02,116 --> 00:54:15,695
+with the video lectures. Okay. And all the teaching materials will be published on the website for this
+
+260
+00:54:15,695 --> 00:54:23,515
+course. I shared the links to both the website of the course and website of the book in the chat.
+
+261
+00:54:23,515 --> 00:54:34,096
+so you can access the links. Here is the syllabus and also I shared the lecture slides that I'm going
+
+262
+00:54:34,096 --> 00:54:44,975
+to be covering in this class in the course website. So if you want to look at the slides
+
+263
+00:54:44,975 --> 00:54:54,776
+before each lecture, all the slides are available, okay, and I will try my best in order to cover as
+
+264
+00:54:54,776 --> 00:55:05,395
+much as these chapters possible during the class so that you can learn more and more materials,
+
+265
+00:55:05,395 --> 00:55:15,695
+Okay. And apart from that, I already told you the requirement of this course for this semester.
+
+266
+00:55:16,195 --> 00:55:27,615
+And starting from next week, I will start with chapter one and chapter two altogether and continue from there.
+
+267
+00:55:27,615 --> 00:55:33,615
+Evet arkadaşlar ben burada duracağım. Sorusu olan var mı?
+
+268
+00:55:33,615 --> 00:55:43,396
+First, are there any students, English speaking students who cannot speak Turkish or have difficulty to understand Turkish?
+
+269
+00:55:55,251 --> 00:56:24,551
+ok, but I will continue the whole lecture in English anyways, but if there are students who, so who is Erasmus student and who, so who is visiting for the semester, our university, you can always let me know that you are here, ok?
+
+270
+00:56:25,251 --> 00:56:34,452
+and apart from that I don't have anything to add for this course. Okay, there is a question that's very nice.
+
+271
+00:56:39,284 --> 00:56:49,204
+ok now there is a question that says why do we need data replication is it for security now
+
+272
+00:56:52,403 --> 00:57:02,723
+the data replication is mostly not the security but is for availability so let's say when you want to
+
+273
+00:57:02,723 --> 00:57:19,943
+So let's say Google Drive, right? When you upload a data, a file into Google Drive, you would like to see that data 10 days from today or one month from today, right?
+
+274
+00:57:19,943 --> 00:57:29,923
+So you would like that data to be available to you when you upload that file into a distributed storage system like Google Drive.
+
+275
+00:57:29,923 --> 00:57:38,603
+Now, the Google Drive and distributed file systems like Google Drive, like Dropbox
+
+276
+00:57:38,603 --> 00:57:50,203
+So, their agreement with you as the user that they will make that data, that file available to you at all times
+
+277
+00:57:50,203 --> 00:57:56,623
+Okay? And in order to make that availability, what they need to do
+
+278
+00:57:56,623 --> 00:58:14,963
+they need to replicate that data which means that they need to make multiple copies of data and put it in different servers different physical servers most likely those servers need to be located in different locations.
+
+279
+00:58:14,964 --> 00:58:24,644
+whenever something happens to one of the servers that holds the one of the copies then Google Drive
+
+280
+00:58:24,644 --> 00:58:34,224
+can always access the other copies and make that available to you so if there was no data replication
+
+281
+00:58:34,224 --> 00:58:44,184
+if the Google Drive holds only one copy of that file so in that case if something happens to that
+
+282
+00:58:44,183 --> 00:58:53,803
+server, then there was no way for you to access that file. So therefore, it is not for security,
+
+283
+00:58:53,803 --> 00:58:56,243
+it is for providing availability.
+
+284
+00:59:00,916 --> 00:59:09,515
+almost all the distributed storage systems has to do that. So they do data replication.
+
+285
+00:59:11,355 --> 00:59:20,775
+Okay, any more questions for today? It could be related with the course, it could be related with the content, it could be related with the regulations.
+
+286
+00:59:20,775 --> 00:59:26,955
+You can ask your questions in Turkish or in English.
+
+287
+00:59:28,695 --> 00:59:32,855
+So if you want to write on chat, you can also do that.
+
+288
+00:59:32,855 --> 00:59:41,515
+Or if you want to turn or microphone, you can always just speak.
+
+289
+00:59:46,739 --> 00:59:54,239
+Hi, so let me ask you a question. I am [öğrenci]. You know me? The older one. Your older student.
+
+290
+00:59:54,779 --> 00:59:56,139
+Okay, okay, [öğrenci].
+
+291
+00:59:56,559 --> 00:59:57,160
+How are you?
+
+292
+00:59:57,739 --> 00:59:58,279
+Thank you.
+
+293
+00:59:58,939 --> 01:00:09,719
+Let me ask you a question. I think this season, but it is not season. I think, what is it?
+
+294
+01:00:09,719 --> 01:00:11,279
+Term, this term.
+
+295
+01:00:11,279 --> 01:00:12,439
+Yes, this term.
+
+296
+01:00:13,019 --> 01:00:15,639
+We have some new lessons
+
+297
+01:00:15,639 --> 01:00:17,479
+from the electrical and
+
+298
+01:00:17,479 --> 01:00:18,260
+electronical
+
+299
+01:00:18,260 --> 01:00:20,739
+departments, I think.
+
+300
+01:00:21,140 --> 01:00:21,420
+Okay.
+
+301
+01:00:22,260 --> 01:00:25,460
+And I took some
+
+302
+01:00:25,460 --> 01:00:27,579
+of them just for
+
+303
+01:00:27,579 --> 01:00:29,659
+learning some different things.
+
+304
+01:00:30,339 --> 01:00:31,420
+But yesterday
+
+305
+01:00:31,420 --> 01:00:32,199
+yesterday
+
+306
+01:00:32,199 --> 01:00:35,559
+with some of my friends
+
+307
+01:00:35,559 --> 01:00:37,399
+we waited for the class.
+
+308
+01:00:38,519 --> 01:00:39,359
+There isn't anyone
+
+309
+01:00:39,359 --> 01:00:47,259
+in this situation
+
+310
+01:00:47,259 --> 01:00:50,639
+as a lecturer
+
+311
+01:00:50,639 --> 01:00:52,379
+and you say that
+
+312
+01:00:52,379 --> 01:00:54,420
+prime
+
+313
+01:00:54,420 --> 01:00:57,280
+of the department you are
+
+314
+01:00:57,280 --> 01:00:57,799
+I think
+
+315
+01:00:57,799 --> 01:01:00,979
+therefore I am asking to you
+
+316
+01:01:00,979 --> 01:01:02,939
+in this situation
+
+317
+01:01:02,939 --> 01:01:04,479
+to whom
+
+318
+01:01:04,479 --> 01:01:06,519
+we will contact
+
+319
+01:01:06,519 --> 01:01:08,539
+with whom we will contact
+
+320
+01:01:08,539 --> 01:01:12,319
+to that department or to our department, computer department?
+
+321
+01:01:13,219 --> 01:01:14,999
+Okay, so that's a good question.
+
+322
+01:01:16,359 --> 01:01:20,199
+Now, the university has this new policy,
+
+323
+01:01:20,599 --> 01:01:24,139
+like since last year,
+
+324
+01:01:24,479 --> 01:01:28,459
+that the students can enroll to elective courses
+
+325
+01:01:28,459 --> 01:01:31,619
+of other departments in the whole university,
+
+326
+01:01:31,619 --> 01:01:33,919
+not only in electric electronics department,
+
+327
+01:01:33,920 --> 01:01:40,379
+So you can enroll any elective courses in other departments as well,
+
+328
+01:01:40,500 --> 01:01:43,739
+like statistics or mathematical engineering as well.
+
+329
+01:01:43,739 --> 01:01:53,920
+So each department now opened their courses to other students.
+
+330
+01:01:54,420 --> 01:01:59,260
+So electronics department has also some elective, interesting elective courses.
+
+331
+01:01:59,439 --> 01:02:01,960
+I'm glad that you enrolled some of them.
+
+332
+01:02:01,960 --> 01:02:22,299
+But if there is something wrong that's going on related with that course, okay, it could be related with the system, it could be related with the lecturer, it could be related with whatever the reason.
+
+333
+01:02:22,299 --> 01:02:43,680
+But if there is something that goes wrong, in that case, whichever the department that course belongs to, as a student, you have the right to send an email to the department head of that lecture.
+
+334
+01:02:43,680 --> 01:02:48,799
+ve ask them that you were there
+
+335
+01:02:48,799 --> 01:02:50,540
+and you wanted to take the course
+
+336
+01:02:50,540 --> 01:02:52,680
+and for that particular day
+
+337
+01:02:52,680 --> 01:02:54,219
+there was no one there
+
+338
+01:02:54,219 --> 01:02:58,299
+and so will there be a makeup exam
+
+339
+01:02:58,299 --> 01:03:02,460
+so you have the right to ask all those questions
+
+340
+01:03:02,460 --> 01:03:06,079
+so we can answer those questions
+
+341
+01:03:06,079 --> 01:03:08,200
+as the department had
+
+342
+01:03:08,200 --> 01:03:11,620
+so for the computer engineering department
+
+343
+01:03:11,619 --> 01:03:16,299
+but not for those courses that are in the different departments.
+
+344
+01:03:17,439 --> 01:03:18,999
+Okay, so 30. Thank you.
+
+345
+01:03:22,547 --> 01:03:43,648
+Thank you. Okay. If there are no further questions, I'm going to stop the lecture today. So right now you have some knowledge about the course, what you are going to learn, what are the requirements of the courses, and so which are the places that you can access the teaching materials.
+
+346
+01:03:43,648 --> 01:03:55,007
+and so if you still want to take this course, it's perfect but if you want to change the course to
+
+347
+01:03:55,007 --> 01:04:01,927
+another elective course, there is still a time so you can write a letter to the department asking
+
+348
+01:04:01,927 --> 01:04:07,728
+that you want to do this change, it's high likely that your request will be accepted.
+
+349
+01:04:07,728 --> 01:04:17,228
+Okay, so I'll see you next week at the same time, 9 o'clock in the morning at online Yıldız Eduteri.
+
+350
+01:04:18,507 --> 01:04:19,748
+Thank you for everything.
+
+351
+01:04:20,327 --> 01:04:20,867
+Thank you.

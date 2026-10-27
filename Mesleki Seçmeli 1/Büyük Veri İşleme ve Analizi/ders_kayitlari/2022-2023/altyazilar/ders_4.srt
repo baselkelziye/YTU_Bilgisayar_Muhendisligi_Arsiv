@@ -1,0 +1,2483 @@
+1
+00:02:23,572 --> 00:02:24,731
+Arkadaşlar, günaydın.
+
+2
+00:02:35,668 --> 00:02:36,807
+sesini geliyor mu?
+
+3
+00:02:37,168 --> 00:02:37,707
+Evet, geliyor.
+
+4
+00:02:38,247 --> 00:02:42,128
+Tamam. On geçe kadar bekleyelim arkadaşlar, ondan sonra başlayalım.
+
+5
+00:10:26,163 --> 00:10:45,103
+Evet, herkese tekrardan günaydın. Başlayabiliriz arkadaşlar. Öncelikle hızlı bir üçüncü çeptirin şu ana kadar geldiğimiz yere kadar bir tekrarını yapmak istiyorum. Ondan sonra da kaldığımız yerden devam edeceğim.
+
+6
+00:10:47,844 --> 00:10:52,363
+I will go back and forth between Turkish and English.
+
+7
+00:10:52,363 --> 00:11:14,303
+Now, the main topic with the finding similar datasets, finding similar sets in large-scale datasets is that, so we want to find similarities between the documents within a large document set, okay?
+
+8
+00:11:14,303 --> 00:11:25,563
+So we have a large document corpus and we would like to find out which documents are similar to each other. So that's the main problem.
+
+9
+00:11:26,983 --> 00:11:41,443
+The reason that this is an important topic in big data is that the number of documents is large and at the same time, the content of each document is large as well.
+
+10
+00:11:41,443 --> 00:11:59,563
+The size of each document is large as well. Now, obviously, we said that this is a big data problem because we are talking about the data size that cannot fit into a single memory or single computer storage space.
+
+11
+00:11:59,564 --> 00:12:15,284
+So we have to distribute this data into a number of distributed computers, and then we need to find a way to analyze this data, okay, find similarities
+
+12
+00:12:15,283 --> 00:12:35,263
+Now, the algorithm that you are going to learn, the algorithms that you are going to learn in this chapter is that it helps us to solve this problem even with the single computer memory.
+
+13
+00:12:35,263 --> 00:12:56,083
+Bunun için farklı örnekler gösterdik. Az önce söylediğim problem için farklı örnekler gösterdik. Bunlardan bir tanesi, en önemlisi birbirine benzerlik gösteren dokümanların tespitiydi.
+
+14
+00:12:56,083 --> 00:13:06,464
+bu kimi zamanda birbirine benzerlik gösteren dokümanları belirli bir kategori altında sınıflandırmak da isteyebilirsiniz.
+
+15
+00:13:07,583 --> 00:13:11,663
+Bu durumda da yine bu konuştuğumuz algoritmayı kullanıyoruz.
+
+16
+00:13:11,663 --> 00:13:26,643
+Yine diğer bir başka bunun kullanıldığı yer elinizde Netflix gibi çok kullanıcısı olan bir tane streaming servisiniz var.
+
+17
+00:13:26,643 --> 00:13:39,643
+Bir filmin izleyicilerini sıralandırıyorsunuz. Bir başka filmin izleyicilerini de sıralandırıyorsunuz.
+
+18
+00:13:39,643 --> 00:14:07,983
+o filmi izlemiş olan bütün kullanıcıları. Ondan sonra diyorsunuz ki yani ben aynı kişiler tarafından izlenilmiş olan filmleri bir sınıflandırayım. Bunlar belli ki aynı film zevkine sahip olan insanlar bu filmleri izlemişlerse bunlar aynı kategoride düşünülebilir ve ben bu kategorideki filmleri başkalarına önerebilirim.
+
+19
+00:14:07,983 --> 00:14:15,983
+birisini öneriyorsam, birisini izlemişse herhangi bir kullanıcı aynı sınıfa düşmüş bir diğer filmi o kişiye önerebilirim.
+
+20
+00:14:16,703 --> 00:14:21,203
+Bunu diğer türlü de düşünebilirsiniz, diğer türlü de yapabilirsiniz.
+
+21
+00:14:24,115 --> 00:14:36,915
+Bunun haricinde diğer farklı uygulamaları işte bir kişinin çok sayıda farklı sosyal medya platformlarında profilleri olabilir.
+
+22
+00:14:37,755 --> 00:14:43,915
+LinkedIn platformunda, Facebook platformunda, Instagram platformunda.
+
+23
+00:14:45,036 --> 00:14:48,456
+Hepsinde de farklı kullanıcı adları kullanabilir.
+
+24
+00:14:48,456 --> 00:15:10,836
+siz bu farklı sosyal medya networklerindeki kişinin herkese açık yapmış olduğu özelliklerinden yola çıkarak birbirine benzerlik gösteren sosyal medya profillerini aynı kategori altında toplamak isteyebilirsiniz.
+
+25
+00:15:10,835 --> 00:15:27,135
+bu durumda farklı kullanıcı isimleri kullanmış olsa bile insanların farklı sosyal network platformlarındaki accountlarını tespit edebilirsiniz.
+
+26
+00:15:27,136 --> 00:15:36,796
+bu Instagram hesabı, bu Facebook hesabı, bu LinkedIn hesabı muhtemeldir ki aynı kişiye aittir.
+
+27
+00:15:36,955 --> 00:15:43,455
+Kullanıcı adları farklı olmasına rağmen bu benzerliği yakalayabilirsiniz.
+
+28
+00:15:45,156 --> 00:15:51,876
+Özellikle bu benzer dokümanların tespiti çok farklı şekillerde kullanılabiliyor.
+
+29
+00:15:51,875 --> 00:16:01,775
+özellikle arama motorları sonuçlarında aynı içeriği gösteren birden fazla linki listelemek istemiyorlar.
+
+30
+00:16:01,775 --> 00:16:09,835
+O yüzden içerik olarak birbirinin benzeri olan web sayfalarını tespit ederlerse bunlardan sadece bir tanesini gösteriyorlar.
+
+31
+00:16:09,836 --> 00:16:30,136
+ya da işte siz bir tane çalışma yapıyorsunuz. Yaptığınız çalışmanın kontrolünü yaparken yani bir yerden alıntı almış mısınız? Gerçekten sizin çalışmanız mı? Şeklinde bunun bir kontrolü yapılırken ne yapılıyor?
+
+32
+00:16:30,135 --> 00:16:39,355
+internetteki mevcuttaki bütün dokümanların içerikleriyle sizin yayınınızın içeriği karşılaştırılıyor.
+
+33
+00:16:40,295 --> 00:16:46,276
+Bu izin almadan yapılan alıntı durumlarına plagiarism ismi veriyor.
+
+34
+00:16:46,276 --> 00:16:54,056
+Bunu yakalamak için de yine bu üçüncü çapkıda öğrendiğimiz algoritmalar kullanılıyor.
+
+35
+00:16:54,056 --> 00:17:10,296
+yine haber arama siteleri var. Bu haber arama siteleri farklı haber kaynaklarından gelen haberleri size sunuyorlar, listeliyorlar.
+
+36
+00:17:10,295 --> 00:17:25,755
+örneğin bunlardan bir tanesi Google News ama aynı haberi birden fazla kaynakta da yayınlanmış aynı haberi kendi arama sonuçlarında birden fazla sunmak istemiyorlar.
+
+37
+00:17:25,755 --> 00:17:39,435
+O yüzden birbirine benzerlik içeren dokümanları tespit etmek istiyorlar. Bunlar dersin başında konuştuğumuz bu Finding Similar Sets in Large Data Sets konusunun motivasyonlarıydı.
+
+38
+00:17:39,435 --> 00:17:47,755
+bu gibi uygulamaları gerçekleştirmek için bugün konuştuğumuz, geçen hafta ve bugün tamamlayacağımız
+
+39
+00:17:48,564 --> 00:18:08,723
+algoritmaları kullanıyoruz. Biz geçen hafta bunu gerçekleştirmek için üç tane farklı aşaması olan bir prosesden bahsettik. Bunların birincisi XingLink'di, ikincisi MinHashink'di. Bugün de Locality Sensitive Hashing konusunu tamamlayacağız.
+
+40
+00:18:08,723 --> 00:18:38,104
+burada hedefimiz şu elimde diyelim ki bir milyon tane döküman var her bir dökümanın büyüklüğü de diyelim ki işte üç gigabyte büyüklüğünde döküman normalde siz bunlar arasında benzerliği bulurken ne yaparsınız işte bir milyonun ikilisi manuel olarak yapacak olsanız ne yaparsınız işte sürekli ikili ikili olası bütün dökümanların
+
+41
+00:18:38,103 --> 00:18:57,703
+benzerlik değerlerini bulursunuz ve bu benzerlik değerleri eğer belirli bir eşik değerinin yukarısındaysa dersiniz ki işte bu dokümanlar bir milyon içerisinde işte seksen tane doküman işte benim belirlemiş olduğum yüzde seksenlik benzerlik oranının üzerinde kaldı.
+
+42
+00:18:57,703 --> 00:19:02,703
+Yani bu seksen tane doküman birbirine benzer dokümanlar diye kenara ayırabilirsiniz.
+
+43
+00:19:02,703 --> 00:19:24,644
+Bu model olarak yaptığınız iş yalnız bu bir milyonun ikilisi kadar olası bütün benzerliklere bakmak bir de dokümanların büyüklükleri gigabyte mertebesinde olursa inanılmaz zaman alan bir proses ve bu kadar dokümanı da bir single memory'e yerleştirmeniz imkansız.
+
+44
+00:19:24,643 --> 00:19:35,123
+Bu yüzden de bu dökümanları yine benzerliği yakalayabilecek bir şekilde temsil eden signature'larını oluşturuyoruz.
+
+45
+00:19:36,263 --> 00:19:40,823
+Öncelikle dökümanları nasıl temsil ettiğimize bir bakalım.
+
+46
+00:19:40,823 --> 00:19:52,223
+Dökümanı olduğu gibi kullanmıyoruz. Dökümanın içerisinden bir takım dökümanı anlatan özellikleri çıkartıyoruz ve bunu bir kümeye dönüştürüyoruz.
+
+47
+00:19:52,223 --> 00:20:08,784
+ilk aşamımız shingding. Bunu geçen hafta konuşmuştuk. Bu shingding prosesinin inputu bir tane döküman. Buna döküman verdiğimiz zaman shingding algoritması bize ne oluşturuyor?
+
+48
+00:20:08,784 --> 00:20:27,323
+işte bizim input parametremiz neyse hangi karakter uzunluğunda biz bu dökümanın içerisinden karakter dizilerini çıkarmak istiyorsak bunları çıkartıp bize bir küme olarak veriyor.
+
+49
+00:20:27,924 --> 00:20:30,403
+Bunun bir basit örneğini vermiştik.
+
+50
+00:20:30,804 --> 00:20:38,524
+İşte diyelim ki bizim dökümanımız şöyle beş tane karakterden oluşan basit bir tane oyuncak örnek olmuş olsun.
+
+51
+00:20:38,784 --> 00:20:45,424
+benim shingling algoritmamın inputunda da bu karakter dizilerinin sayısı 2 olmuş olsun.
+
+52
+00:20:46,004 --> 00:20:52,104
+Bu durumda bana vereceği 2 karakter uzunluğundaki shingle'lar şunlar olacak.
+
+53
+00:20:52,504 --> 00:20:55,963
+Ne olacak? AB, BC, CA.
+
+54
+00:20:57,183 --> 00:21:01,924
+Bu bir küme olduğu için aynı elemandan birden fazla bulunmaz.
+
+55
+00:21:02,024 --> 00:21:04,604
+Dolayısıyla şurada AB olmasına rağmen ne yaptım?
+
+56
+00:21:04,683 --> 00:21:07,183
+Bu kümenin içerisinde tekrardan göstermedim.
+
+57
+00:21:07,183 --> 00:21:15,603
+Bu bizim için basit bir bu Schengling algoritmasının nasıl çalıştığını gösteren bir örnek
+
+58
+00:21:15,603 --> 00:21:21,323
+Bu aynı zamanda Natural Language Processing alanında N-gram olarak da geçiyor
+
+59
+00:21:21,323 --> 00:21:33,183
+Yani verilmiş olan bir dökümanı birinci karakterinden başlayaraktan karakter dizilerine ya da karakter katarlarına geçer dönüştürmek
+
+60
+00:21:33,183 --> 00:21:41,064
+bunu bu şekilde bir kümeye dönüştürdükten sonra artık diyorsunuz ki şu dökümanı bundan sonra artık şu kümeyle ifade ediyorum.
+
+61
+00:21:48,307 --> 00:22:03,728
+ve bir dökümanı shingle kümesi şekline dönüştürdükten sonra eğer iki tane döküman arasında benzerliğe bakıyorsam artık iki tane farklı küme arasındaki benzerliğe veriyorum.
+
+62
+00:22:10,740 --> 00:22:32,240
+Eğer bir dökümanı şöyle bir küme şeklinde belirtmişsem, içerisindeki noktalarda bu shingle'larsa, o dökümanın içerisinden çıkartmış olduğum K uzunluğundaki karakter dizileri ise, elimde iki tane küme var. Bunların benzerliğini de iki küme arasındaki benzerliğe bakarak kullanıyordum.
+
+63
+00:22:32,240 --> 00:22:57,960
+İki küme arasındaki benzerliğe bakarak yapmış olduğum similarity de yaygın olarak kullandığımız hani Jakart similarity'ni konuşmuştuk. Jakart similarity'de diyor ki iki tane elinde küme varsa bunların kesişimini al bunu payya koy. Bunların birleşiminin uzunluğunu ise paydaya koy. Şu oran bana Jakart similarity değerini verecektir diyor.
+
+64
+00:22:57,959 --> 00:23:16,059
+Burada da bir örneğini göstermiştik geçen hafta. Elimde birinci küme var, ikinci küme var. Bunların intersection'ı 3, bunların union'ı ise 8. Demek ki bu ikisi arasındaki benzerlik, jacquard similarity metriğine göre 3 bölü 8 demiştik.
+
+65
+00:23:16,059 --> 00:23:34,320
+Kimi zaman da şunu demiştik hani biz bu shingle'ları memory'de daha az alan kullanarak temsil etmek isteyebiliriz.
+
+66
+00:23:34,320 --> 00:23:41,079
+Yani memory'e diyelim ki dokümandan ben şöyle karakter katarlarını çıkarttım.
+
+67
+00:23:41,079 --> 00:23:50,139
+bu K2 olabilirdi, 3 olabilirdi, 5 olabilirdi ama bunları böyle bir karakter katarı ya da string şeklinde memoriyle tutmak istemiyorum.
+
+68
+00:23:50,679 --> 00:23:55,319
+Daha az yer tutacak integerlara dönüştürmek istiyorum diyebiliriz.
+
+69
+00:23:55,319 --> 00:24:04,319
+Hani o durumda da bir tane hash fonksiyonu yazıp şuradaki stringi bir tane integer'a dönüştürebilirim.
+
+70
+00:24:05,079 --> 00:24:10,839
+Buradaki karakter dizisini bir integer'a dönüştürebilirim.
+
+71
+00:24:10,839 --> 00:24:23,059
+integer dediğimiz şey 4 byte. Dolayısıyla burada eğer bir milyon tane benim şeyim varsa, farklı karakter dizim varsa ne yapacaktır?
+
+72
+00:24:23,199 --> 00:24:32,419
+Bir milyon tane integre dönüştürmüş olacağım. Bir milyon çarpı 4 byte'ım benim memoride yer tutmuş olacak.
+
+73
+00:24:32,419 --> 00:24:42,719
+Bu durumda benim yazacağım hash fonksiyonu da elimdeki bu karakter katarlarını neye mehp ettirecek?
+
+74
+00:24:42,719 --> 00:24:51,719
+Benim bu 4 baylık integerlarımın integer uzayının alabileceği değerleri ne yapacaktır?
+
+75
+00:24:52,039 --> 00:24:52,959
+Mehp ettirecektir.
+
+76
+00:24:52,960 --> 00:25:07,560
+Bu durumda kimi zaman hash fonksiyonunun çözünürlüğünün iyi olmamasından dolayı iki tane farklı karakter dizisi aynı integer'ı işaret edebilir.
+
+77
+00:25:07,560 --> 00:25:09,760
+Ama biz bunu ne yapıyoruz?
+
+78
+00:25:11,100 --> 00:25:22,519
+Böylesi durumların az olduğu zamanlarda buradan kazanacağımız memory kazancının daha önemli olduğunu düşünüyoruz.
+
+79
+00:25:22,519 --> 00:25:41,659
+ve bunu kimi zaman kullanabiliyoruz. Bu bir opsiyonel bir şey. Eğer memorimizin sınırlı olduğu durumlarda bu algoritmayı kullanmak istiyorsak o durumda memori de represent etmek için bunu integer'a çevirmeyi tercih edebiliriz. Dediğim gibi bu compression durumu sadece opsiyonel bir durum.
+
+80
+00:25:43,519 --> 00:25:49,659
+Şimdi similarity'yi konuştuk. Yani iki tane ben dökümanları dönüştürdüm.
+
+81
+00:25:49,659 --> 00:25:50,159
+Alı?
+
+82
+00:25:51,919 --> 00:25:52,699
+Efendim?
+
+83
+00:25:54,919 --> 00:25:55,979
+Soru var mı?
+
+84
+00:26:03,347 --> 00:26:07,107
+Okey soru sanırım bir arkadaşınızın mikrofonu açık kaldı.
+
+85
+00:26:07,867 --> 00:26:08,007
+Tamam.
+
+86
+00:26:10,027 --> 00:26:12,047
+Şu ana kadar sorusu olan var mı arkadaşlar?
+
+87
+00:26:12,268 --> 00:26:15,427
+Şu anda yeni konuyu yani konunun devamına geçmedim.
+
+88
+00:26:15,607 --> 00:26:17,907
+Sadece geçen hafta konuştuğumuz şeyleri tekrarlıyorum.
+
+89
+00:26:20,788 --> 00:26:22,207
+Okey devam edelim.
+
+90
+00:26:22,207 --> 00:26:37,367
+Şimdi biz ne yaptık dedik ki bu dökümanları bir karakter dizilerinden oluşan kümeye dönüştürelim dedik.
+
+91
+00:26:37,367 --> 00:26:46,407
+Ve iki döküman arasındaki benzerliği bulurken de ne yaptık bu Jackart similarity kullanalım diye karar vermiştik.
+
+92
+00:26:46,407 --> 00:27:05,967
+Şimdi de diyoruz ki tamam bu dokümanları bir karakter dizisi olarak belirttik fakat bunu memuride bu dokümanları birbiri altına yazılmış karakter dizileri olarak tanımlamayalım bir vektör olarak tanımlayalım.
+
+93
+00:27:05,967 --> 00:27:30,028
+Peki bu vektörü nasıl tanımlarız? Bu durumda şunu yapabiliriz. Şimdi diyelim ki elimde bir milyon tane döküman var. Bu bir milyonun içerisinde de diyelim ki yedi yüz tane farklı şey var. Kelime var. Yani yedi yüz tane farklı k uzunluğunda shingle var.
+
+94
+00:27:30,028 --> 00:27:55,028
+Şimdi ben bu durumda şunu yapabilirim. Derim ki bu doküman kollektif olarak bu 1 milyon dokümanın içerisine dağılmış 700 tane K uzunluğunda karakter dizim varsa bunları birinci karakter dizisinden 700. karakter dizisine kadar yukarıdan aşağıya yazabilirim.
+
+95
+00:27:55,028 --> 00:28:08,667
+Bir uzay oluştururum. Karakter dizisi uzayı oluştururum. Sonra birinci dökümana derim ki bu birinci karakter dizisi sende varsa sana bir yazacağım o karakter dizisi için yoksa sıfır.
+
+96
+00:28:08,667 --> 00:28:14,728
+Bunu ikinci karakter dizisi için üçüncü, dördüncü, beşinci, yedi yüze kadar yapabilirim.
+
+97
+00:28:14,788 --> 00:28:16,027
+Bunu yaptığım zaman ne olur?
+
+98
+00:28:16,868 --> 00:28:24,547
+Bunu yaptığım zaman bu doküman eğer benim az önce verdiğim örnekteki bir milyon dokümandan bir tanesi bu C1 ise
+
+99
+00:28:24,547 --> 00:28:32,347
+bu birinci karakter olmaması durumunda sıfır, ikinci karakter dizisi olması durumunda bir bu şekilde
+
+100
+00:28:32,347 --> 00:28:33,728
+ben ne yapabilirim?
+
+101
+00:28:34,088 --> 00:28:37,668
+Sıfır ve birlerden oluşan bir binary vektör oluşturabilirim.
+
+102
+00:28:37,667 --> 00:28:46,447
+Bunu her döküman için yaparım. Elimde 1 milyon tane döküman varsa 1 milyon tane bu şekilde 0 ve 1'lerden oluşan vektörler oluşacaktır.
+
+103
+00:28:46,707 --> 00:28:53,107
+Hepsinin de boyutu ne kadar olacaktır? Benim bu k-shingle uzayımın boyutu ne kadarsa.
+
+104
+00:28:53,447 --> 00:28:57,327
+Az önce verdiğim örnekte 700 tane gibi bir rakamdan konuşmuştum.
+
+105
+00:28:57,387 --> 00:29:03,167
+700 tane farklı k-shingle varsa benim farezi örneğimde bunun boyutu da 700 olur.
+
+106
+00:29:03,167 --> 00:29:06,847
+Buradaki örnekte ise neymiş? 2, 4, 6 taneymiş.
+
+107
+00:29:07,667 --> 00:29:18,907
+Şimdi artık ilk yapmış olduğum şey bu dökümanların içerisinden K şingılları çıkartmakta.
+
+108
+00:29:19,467 --> 00:29:27,927
+İkinci yapmış olduğum şey bu dökümanları 0-1'lerden oluşan bir vektör şeklinde göstermekte.
+
+109
+00:29:27,927 --> 00:29:32,247
+Bunu gösterdikten sonra artık elimde şöyle bir şey ortaya çıkmış oluyor.
+
+110
+00:29:32,247 --> 00:29:36,407
+benim kolonlarımda
+
+111
+00:29:36,407 --> 00:29:39,027
+dökümanlar, satırlarımda ise
+
+112
+00:29:39,027 --> 00:29:41,447
+her bir satır bir tane
+
+113
+00:29:41,447 --> 00:29:43,687
+K uzunluğunda şingla
+
+114
+00:29:43,687 --> 00:29:46,687
+denk gelecek şekilde ne yapmış oldum?
+
+115
+00:29:46,847 --> 00:29:49,347
+Satırlarım olmuş oldu. Herhangi bir
+
+116
+00:29:49,347 --> 00:29:52,047
+dökümanın satırına gittiğim zaman
+
+117
+00:29:52,047 --> 00:29:55,267
+burada sıfır varsa bunun karşılığında olan
+
+118
+00:29:55,267 --> 00:29:58,127
+K uzunluğundaki şingla
+
+119
+00:29:58,127 --> 00:29:59,927
+burada yok. Bir varsa bunun
+
+120
+00:30:00,000 --> 00:30:27,459
+karşılığında olan K-Shingle burada var demiş oluyorum. Peki bunu yaptım. Bunu bu şekilde yaptıktan sonra o zaman bunun bana faydası ne oldu? Artık Jakart similarity'yi hesaplarken çok daha rahat bir durum oluştu benim için. İki tane doküman var. Jakart similarity neydi? Birbiriyle kesişme durumlarının sayısını bul, bölü, union durumunu bul.
+
+121
+00:30:27,459 --> 00:30:45,279
+birbiriyle kesişme yani iki tane dökümanın kesişim durumları ikisinde de bir olduğu durumlar. Artık bunu çok hızlı bir şekilde hesaplayabiliyorum. Bir de union durumları ikisinden birisinde bir varsa onların sayısını bu. Burada ikisinden birisinde bir olma durumları beş tane iki bölü beş sıfır nokta dört.
+
+122
+00:30:45,279 --> 00:31:12,099
+Hatta bunu formülleştirebilir miyiz? Çünkü ne yapacağız? Bunun kodunu yazacağız. O yüzden bunu bir daha da formülleştirebilir miyiz? Dedik ki işte eğer elimde iki tane doküman varsa bu iki tane dokümanın arasında similarity'yi bulacaksam bunların benzerliğini ölçerken hani kaç tane durumla karşılaşabilirim?
+
+123
+00:31:12,099 --> 00:31:19,919
+İkisinde de bir vardır. Birinci dokümanda bir ikincisi sıfır. Birinci dokümanda sıfır ikincisi de bir ikisinde de sıfır olabilir.
+
+124
+00:31:20,220 --> 00:31:31,639
+Cacart similarity diyor ki payda her ikisinde de bir olan durumu koy. A bölü ve paydada ise ikisinden birisinde bir olan durum vardır.
+
+125
+00:31:32,199 --> 00:31:41,659
+Bu da A, B, C tipindeki satırlarla karşılaştığımız zaman bu paydada olacak. Pay kısmında ise sadece iki tanesinde de bir olan durum olmuş olacak.
+
+126
+00:31:42,099 --> 00:32:11,239
+Şimdi bu şuraya kadar konuştuğumuz konular neydi? Bu shingling prosesiydi. Ben öncelikle shingling'e koydum. Bana setleri oluşturdu. Arkasından bu setleri ben 0, 1'lerden oluşan bir binary vektörü, kolon vektörü şeklinde tanımladım elimdeki bütün dokümanları ve bir matriz oluşturdum.
+
+127
+00:32:11,239 --> 00:32:14,199
+ve şimdi ne yapmaya çalışıyorum?
+
+128
+00:32:14,359 --> 00:32:20,579
+Bu elimdeki çok sayıda döküman içerisinde birbirine benzer olanları tespit etmek istiyorum.
+
+129
+00:32:20,919 --> 00:32:22,319
+Şimdi devam ediyorum.
+
+130
+00:32:26,420 --> 00:32:30,479
+İkinci kısım, randomiz kısım ise minhashing kısmıydı.
+
+131
+00:32:30,920 --> 00:32:34,939
+Şimdi bizim hedefimiz neydi?
+
+132
+00:32:35,819 --> 00:32:44,100
+Çok sayıda elimizde bulunan dökümanın her bir dökümanın da büyüklüğü çok büyük olacak şekilde düşünüyorduk sürekli olarak.
+
+133
+00:32:44,680 --> 00:32:50,100
+Ve bunun da single memory'e sığmayacak bir durum olduğunu düşünüyorduk.
+
+134
+00:32:50,100 --> 00:32:59,159
+Böylesi bir durumda biz bu benzerlikleri birbirine benzer olan dökümanları nasıl tespit ederdik?
+
+135
+00:33:00,039 --> 00:33:08,879
+Burada da diyoruz ki tamam madem böyle bir sıfır birlerden oluşan kolon vektörlerinden oluşan şeyi oluşturduk, matrisi oluşturduk.
+
+136
+00:33:08,879 --> 00:33:22,579
+Şimdi bu matrisin her bir döküman için her bir dökümanın da temsil edileceği şeklinde bir signature matrisini oluşturalım.
+
+137
+00:33:22,579 --> 00:33:27,579
+Yani temsilci daha küçük bir matrisini oluşturalım.
+
+138
+00:33:27,579 --> 00:33:42,659
+Yani benim elimde diyelim ki şuradaki benim ana matrisim ise dört tane dökümanım varsa bu dökümanlarında ben sıfır birlerden oluşan kolon vektörlerini buraya yazmışım.
+
+139
+00:33:42,659 --> 00:33:54,579
+bunu buradaki dokümanların sayısı çok büyük olduğu için ve her bir dokümandaki satır sayısı da çok büyük olabileceği için
+
+140
+00:33:54,579 --> 00:34:01,479
+böylesi bir input matrisini daha küçük boyutlu bir matrisle memoriyle temsil etmek istiyorum.
+
+141
+00:34:01,479 --> 00:34:12,579
+Ama öyle bir matris oluşturmak istiyorum ki bu matrisin üzerinden de şurada yapmış olduğum gibi iki doküman arasındaki benzerliği tespit edebileyim.
+
+142
+00:34:12,659 --> 00:34:35,580
+Bu yüzden de bunun için kullandığımız algoritma ise minhashing algoritması diyoruz. Bu algoritma da şunu diyor. Diyor ki bu signature matrisi oluştururken bu signature matrisin her bir satırı için bir tane hash fonksiyonu oluşturabilirsin diyor.
+
+143
+00:34:35,580 --> 00:34:46,080
+Bu oluşturmuş olduğun hash fonksiyonu senin bu input matrisindeki her bir döküman için kolon vektörünü alır.
+
+144
+00:34:46,780 --> 00:34:54,440
+İşte şuradaki gördüğünüz kolon vektörünü şuradaki hash fonksiyonu almış olsun.
+
+145
+00:34:54,960 --> 00:35:00,660
+Bunun karşılığında bir tane sayısal değer üretebilir ve ben de bunu buraya yazarım.
+
+146
+00:35:00,659 --> 00:35:04,159
+Sonra ikinci dökümanın kolon vektörünü alırım.
+
+147
+00:35:04,279 --> 00:35:05,599
+Bu hash fonksiyonuna veririm.
+
+148
+00:35:06,039 --> 00:35:08,999
+Bu hash fonksiyonu bir tane sayısal değer üretir buraya yazar.
+
+149
+00:35:09,479 --> 00:35:18,659
+Bu şekilde her bir hash fonksiyonu için elimdeki bütün dökümanlara karşılık gelen bir tane sayısal değer oluşturabilirim.
+
+150
+00:35:20,039 --> 00:35:26,699
+Bunu elimdeki bütün hash fonksiyonları için yaparsam artık elimde buradaki örnekten yola çıkarak
+
+151
+00:35:26,699 --> 00:35:33,140
+1, 2, 3, 4 tane döküman için 3 tane satırı olan ne yapmış olur?
+
+152
+00:35:33,800 --> 00:35:37,140
+Bir signature matriz oluşturmuş olurum.
+
+153
+00:35:38,080 --> 00:35:44,420
+Ve bu yöntem diyor ki eğer böyle yapacak olursan, signature matrizi yapacak olursan
+
+154
+00:35:44,420 --> 00:35:51,699
+burada 2 dökümanı karşılaştırdığın zaman 2 dökümanın benzerliğini ölçerken
+
+155
+00:35:51,699 --> 00:35:55,259
+burada jacquard similarity'yi kullanma onun yerine şunu kullan.
+
+156
+00:35:55,259 --> 00:36:06,379
+iki tane döküman arasındaki benzerliğe bakıyorsan bunların aynı olanlarının sayısı bölü totaldeki satır sayısı.
+
+157
+00:36:06,379 --> 00:36:14,839
+Yani mesela şurada C1 ve C2 dökümanının benzerliğine bakarken aynı olan satır sayısı kaç tane?
+
+158
+00:36:15,420 --> 00:36:15,959
+İki tane.
+
+159
+00:36:18,867 --> 00:36:21,927
+Daha doğrusu şu şeyle yapalım.
+
+160
+00:36:22,527 --> 00:36:24,127
+Şu C1 ve C2 yapmayalım.
+
+161
+00:36:24,248 --> 00:36:25,447
+C1 ve C3 yapalım.
+
+162
+00:36:25,987 --> 00:36:27,927
+Aynı olan satır sayısı kaç tane?
+
+163
+00:36:28,487 --> 00:36:29,567
+2'ye 2, 1.
+
+164
+00:36:29,967 --> 00:36:31,647
+1'e 1, 1, 2.
+
+165
+00:36:32,427 --> 00:36:33,788
+Bu ise farklı.
+
+166
+00:36:33,907 --> 00:36:38,288
+Dolayısıyla C1 ve C3 arasındaki benzerlik ne olacaktır?
+
+167
+00:36:38,347 --> 00:36:39,667
+Hani 2 bölü 3 olacaktır.
+
+168
+00:36:40,507 --> 00:36:42,007
+Mesela şeye bakalım.
+
+169
+00:36:42,548 --> 00:36:46,607
+İkinci dökümanla dördüncü döküman arasındaki benzerliğe bakalım.
+
+170
+00:36:46,607 --> 00:36:49,107
+birinci satır aynı, ikinci satır aynı,
+
+171
+00:36:49,388 --> 00:36:51,147
+üçüncü satır aynı. Dolayısıyla
+
+172
+00:36:51,147 --> 00:36:52,367
+üç bölü üç, bir.
+
+173
+00:36:52,827 --> 00:36:54,248
+Değil mi? Yüzde yüz benzer.
+
+174
+00:36:55,268 --> 00:36:56,908
+Ondan sonra birle ikiye
+
+175
+00:36:56,908 --> 00:36:58,927
+bakalım. Birle ikiye baktığımız zaman bir ve
+
+176
+00:36:58,927 --> 00:37:00,708
+ikinci dokümana birinci
+
+177
+00:37:00,708 --> 00:37:02,847
+satır farklı, ikinci satır farklı,
+
+178
+00:37:02,948 --> 00:37:05,208
+üçüncü satır farklı. Dolayısıyla birbiriyle
+
+179
+00:37:05,208 --> 00:37:07,287
+aynı olan sıfır, sıfır
+
+180
+00:37:07,287 --> 00:37:08,448
+bölü üç. Okey.
+
+181
+00:37:09,247 --> 00:37:10,908
+Bu durumda biz burada
+
+182
+00:37:10,908 --> 00:37:13,067
+yapmış olduğumuz Jekart similarity'ye
+
+183
+00:37:13,067 --> 00:37:15,007
+dayalı benzerliği burada farklı
+
+184
+00:37:15,007 --> 00:37:21,767
+bir şekilde yapıyoruz. Birbirine benzer olan satırların sayısı bölü totaldeki satırın sayısı
+
+185
+00:37:21,767 --> 00:37:31,247
+signature matristeki benzerliği veriyor. Ve dedik ki bu signature matrisin benzerliği
+
+186
+00:37:31,247 --> 00:37:38,067
+öyle bir çıkıyor ki eğer belirli sayının üzerinde hash fonksiyonu kullandığımız zaman
+
+187
+00:37:38,067 --> 00:37:48,507
+Signature matrisin benzerliği Jekker similarity'e dayalı olarak burada yapmış olduğumuz dokümanlar arasındaki benzerliğe çok yakın çıkıyor.
+
+188
+00:37:48,627 --> 00:37:53,207
+Dolayısıyla da biz benzerlik için bu Signature matrisi kullanabiliriz.
+
+189
+00:37:53,207 --> 00:38:06,087
+Mineshing algoritmasının en önemli prensibi signature matristeki iki doküman arasındaki benzerlik aynı iki dokümanın input matrisi arasındaki benzerliğiyle aynı.
+
+190
+00:38:07,107 --> 00:38:08,387
+Birbirine yakınsıyor.
+
+191
+00:38:08,847 --> 00:38:11,067
+Burada neyi kullanıyoruz?
+
+192
+00:38:12,228 --> 00:38:13,087
+Jocker similarity.
+
+193
+00:38:13,607 --> 00:38:17,287
+Burada da az önce bahsetmiş olduğum similarity metriğini kullanıyoruz.
+
+194
+00:38:17,287 --> 00:38:23,287
+Yani birbirine eşit olan satır sayısı bölü totaldeki satır sayısı.
+
+195
+00:38:26,739 --> 00:38:38,279
+okay. Does the expected similarity of the two signatures echoes the Jequard similarity of the columns or sets that the signatures represent?
+
+196
+00:38:39,200 --> 00:38:53,420
+İki tane döküman için signature matristeki benzerlik oranı Jequard similarity ile aynı dökümanın input matristindeki benzerlik oranına yakınsıyor.
+
+197
+00:38:53,420 --> 00:39:06,559
+dolayısıyla da biz ne diyoruz? Böylesi bir input matrisini biz rahatlıkla signature matrisi dönüştürebiliriz ve bundan sonra artık signature matris üzerinde bu benzerliğe bakabiliriz.
+
+198
+00:39:06,559 --> 00:39:27,719
+Peki bunu tekrardan bir adım geriye atacak olursak niye yaptık bunu? Bu input matrisi üzerinde her bir dökümanın içerisindeki karakter dizileri, shingles sayısı eğer çok fazlaysa bu iki tane döküman arasında jacquard similarity değerini bulmak için harcayacağımız zaman çok fazla olacaktır.
+
+199
+00:39:27,719 --> 00:39:54,479
+Biz de bunu daha da optimize edebilmek için o yüzden bu signature matrisi oluşturduk çünkü buradaki satır sayısı daha az ve dedik ki bu signature matris üzerinde iki tane dökümanın benzerlik oranı bu input matrisdeki iki tane dökümanın jacquard similarity ile benzerlik oranına yakınsadığı için ben bunun üzerinde benzerliğe bakabilirim benzer dökümanları tespit edebilirim
+
+200
+00:39:54,479 --> 00:40:18,499
+Peki bu signature matrisi bu hash fonksiyonlarına göre nasıl oluşturuyorduk? Buradaki bir tanesi için örnek vereceğim. Geçen hafta bunu konuşmuştuk. Buradaki birçok farklı hash fonksiyonu kullanabiliriz. Buradaki hash fonksiyonu da şöyle bir şeymiş. Diyor ki burada kaç tane satır var arkadaş? 7 tane.
+
+201
+00:40:27,668 --> 00:40:45,428
+hash fonksiyon algoritmasının içinden bahsediyoruz. Yaptığı işten bahsediyoruz. Bu hash fonksiyonu da böyle bir permitted order çıkartmış ve diyor ki bu permitted order'a dayalı olarak C1 dokümanı için input olarak hash fonksiyonuna da C1 dokümanı verelim.
+
+202
+00:40:45,428 --> 00:41:00,307
+birinci satıra git buna karşılık gelen sıfır mı bir mi? İlk görmüş olduğun bire karşılık gelen satır bu hash fonksiyonun değeri olacaktır.
+
+203
+00:41:00,307 --> 00:41:09,127
+Hani bu kadar basit hani bu hash fonksiyonunda permitut order'u buldum. Birinci satırına gittim sıfır. İkinci satırına gittim bir.
+
+204
+00:41:09,127 --> 00:41:19,028
+ilk görmüş olduğum 1'e karşılık gelen satır değerini aldığım getirdim C1 dökümanının bu hash fonksiyonu için olan hücresine yazdım.
+
+205
+00:41:19,607 --> 00:41:24,907
+Bir de bir tane farklı bir şey yapalım. Mesela 2. hash fonksiyonu 3. döküman için yapalım. 2. hash fonksiyonum bu.
+
+206
+00:41:24,907 --> 00:41:33,647
+2. hash fonksiyonumun da Permuted Order'u bu şekilde çıkmış. Ne yapacağım ben şu anda 3. dökümanı değerlendireyim dedim.
+
+207
+00:41:33,647 --> 00:41:42,007
+benim hash fonksiyonum ne diyor? Birinci satırdan başla. Birinci satırdan başladım ve devam et. İlk karşılaştığım bire kadar.
+
+208
+00:41:42,007 --> 00:41:53,627
+Sıfır, ikiye gittim sıfır, üçe gittim sıfır, dörde gittim bir. İlk defa bir ile karşılaştığım satır ikinci hash şu hash fonksiyonu için dört.
+
+209
+00:41:54,168 --> 00:42:01,547
+Ne yaptım? Geldim buraya dört yazdım. Nereye yazdım? İkinci hash fonksiyonunun üçüncü döküman için olan hücresine yazdım. Bu kadar.
+
+210
+00:42:01,547 --> 00:42:02,747
+ok?
+
+211
+00:42:12,851 --> 00:42:22,431
+Şimdi bu az önce bahsettiğim örnekte ben hash fonksiyonu için permütasyonu kullandım.
+
+212
+00:42:22,431 --> 00:42:34,931
+Ama bu benim özellikle büyük sayılarda yani çok fazla satırı olan dökümanlar için uygun bir yöntem değil.
+
+213
+00:42:34,931 --> 00:42:49,151
+Neden? Eğer ben burada milyon tane satır olmuş olsaydı her bir hash fonksiyonu için memory'de bir milyon tane integer'ın permitted order'unu oluşturmuş olmam gerekirdi.
+
+214
+00:42:49,151 --> 00:43:14,511
+Bu da benim memori'de her bir permitted order içinde bir tane integer kullanacağımı düşünecek olursam milyon çarpı 4 byte sadece benim hash fonksiyonumun bu permutasyonu kullanarak yapmış olduğu işlem için kullanmam gereken memory requirement olurdu.
+
+215
+00:43:14,511 --> 00:43:25,771
+Dolayısıyla bu hash fonksiyonu güzel kullanılabilir bir hash fonksiyonu olmasına rağmen çok fazla memori yer aldığı için kullanmayı tercih etmiyorum.
+
+216
+00:43:26,451 --> 00:43:30,731
+Bunun yerine ben başka hash fonksiyonları da kullanabilirim.
+
+217
+00:43:31,091 --> 00:43:36,951
+Bu hash fonksiyonları kullanırken de benim takip etmem gereken bir algoritma var.
+
+218
+00:43:36,951 --> 00:43:40,432
+Bu algoritmada bu südokodu burada var.
+
+219
+00:43:41,252 --> 00:43:43,892
+Ben bunu size örnek üzerinden şimdi anlatacağım.
+
+220
+00:43:43,892 --> 00:43:46,392
+sonra tekrardan südo koduna döneceğiz.
+
+221
+00:43:46,692 --> 00:43:47,851
+Şimdi örneğimizde şu.
+
+222
+00:43:49,532 --> 00:43:50,372
+İki tane benim
+
+223
+00:43:50,372 --> 00:43:53,932
+dökümanım var. Bu dökümanların
+
+224
+00:43:53,932 --> 00:43:56,171
+signature matrisini oluşturmak istiyorum.
+
+225
+00:43:56,332 --> 00:43:57,811
+Ve iki tane de hash fonksiyonu
+
+226
+00:43:57,811 --> 00:43:59,091
+seçmişim kendime.
+
+227
+00:43:59,972 --> 00:44:01,851
+Birinci hash fonksiyonum x mod 5
+
+228
+00:44:01,851 --> 00:44:03,792
+ikinci hash fonksiyonum 2x
+
+229
+00:44:03,792 --> 00:44:04,811
+artı 1 mod 5.
+
+230
+00:44:05,612 --> 00:44:07,951
+İki tane hash fonksiyonum olduğuna göre
+
+231
+00:44:07,951 --> 00:44:09,831
+benim signature matrisimde
+
+232
+00:44:09,831 --> 00:44:11,892
+ne olacaktır? İki tane satırım olacaktır
+
+233
+00:44:11,892 --> 00:44:13,851
+değil mi? Ve iki tane de
+
+234
+00:44:13,851 --> 00:44:15,911
+kolonum olacaktır. Çünkü burada iki tane
+
+235
+00:44:15,911 --> 00:44:17,752
+döküman var. Yani ikiye
+
+236
+00:44:17,752 --> 00:44:19,932
+iki bir tane matris oluşturacağım nihayet
+
+237
+00:44:19,932 --> 00:44:20,811
+olarak. Tamam.
+
+238
+00:44:21,751 --> 00:44:23,771
+Şimdi benim algoritmamı
+
+239
+00:44:23,771 --> 00:44:25,771
+yani bu signature matris
+
+240
+00:44:25,771 --> 00:44:28,092
+oluşturan min hashing algoritmamı
+
+241
+00:44:28,092 --> 00:44:30,111
+öncelikle örnek üzerinden göstereceğim.
+
+242
+00:44:30,232 --> 00:44:31,491
+Arkasından da
+
+243
+00:44:31,491 --> 00:44:32,691
+südokoda döneceğim.
+
+244
+00:44:33,611 --> 00:44:35,652
+Şimdi algoritmam iterative bir
+
+245
+00:44:35,652 --> 00:44:37,592
+algoritma. Yani birinci
+
+246
+00:44:37,592 --> 00:44:39,391
+satırdan başlıyorum. Beşinci
+
+247
+00:44:39,391 --> 00:44:41,672
+satıra kadar elimdeki bütün
+
+248
+00:44:41,672 --> 00:44:43,691
+satırlar için bu algoritmayı
+
+249
+00:44:43,691 --> 00:44:45,551
+iterate ediyorum. Öncelikle
+
+250
+00:44:45,551 --> 00:44:48,351
+birinci adımında
+
+251
+00:44:48,351 --> 00:44:49,831
+algoritmamın ne yaptığına bakalım.
+
+252
+00:44:51,951 --> 00:44:53,572
+İlk başta benim
+
+253
+00:44:53,572 --> 00:44:54,991
+signature matrisimin
+
+254
+00:44:54,991 --> 00:44:56,111
+bütün
+
+255
+00:44:56,111 --> 00:44:59,171
+değerlerini sonsuz yazıyorum.
+
+256
+00:44:59,572 --> 00:45:01,771
+İlk başta benim signature matrisimin
+
+257
+00:45:01,771 --> 00:45:03,451
+bütün değerlerini sonsuz yazıyorum.
+
+258
+00:45:04,212 --> 00:45:05,771
+Ondan sonra birinci satırdan
+
+259
+00:45:05,771 --> 00:45:07,811
+başlıyorum. Birinci satırın sadece
+
+260
+00:45:07,811 --> 00:45:09,911
+birinci satırı işleyecek
+
+261
+00:45:09,911 --> 00:45:11,911
+şekilde algoritmam çalışmaya başlıyor.
+
+262
+00:45:12,811 --> 00:45:18,732
+Öncelikle buradaki satır sayısını numarasını alıyorum ve benim hash fonksiyonlarıma koyuyorum.
+
+263
+00:45:18,831 --> 00:45:20,851
+Birinci hash fonksiyonum bir değerini verdi.
+
+264
+00:45:21,012 --> 00:45:23,491
+İkinci hash fonksiyonum ise üç değerini verdi.
+
+265
+00:45:23,631 --> 00:45:24,572
+Bir mod beş bir.
+
+266
+00:45:25,351 --> 00:45:26,292
+İki çarpı bir.
+
+267
+00:45:26,391 --> 00:45:27,531
+İki artı bir üç.
+
+268
+00:45:27,671 --> 00:45:28,631
+Üç mod beş üç.
+
+269
+00:45:29,031 --> 00:45:29,232
+Tamam.
+
+270
+00:45:30,212 --> 00:45:31,572
+Şurada ne değerleri vardı?
+
+271
+00:45:31,691 --> 00:45:34,251
+Bunun dördünde de sonsuz değerler vardı değil mi?
+
+272
+00:45:34,432 --> 00:45:34,611
+Tamam.
+
+273
+00:45:34,611 --> 00:45:54,171
+Şimdi ben birinci şey için birinci döküman için birinci dökümanın signature'ını oluşturacağım zaman geliyorum şuradaki birinci dökümanın burada sıfır mı var bir mi var ona bakıyorum.
+
+274
+00:45:54,171 --> 00:45:58,171
+Eğer 1 varsa o zaman şuradaki değerleri güncelleyeceğim.
+
+275
+00:45:58,971 --> 00:46:04,371
+Eğer 1 yoksa 0 olmuş olsaydı şuradaki değerlere dokunmayacaktım.
+
+276
+00:46:04,491 --> 00:46:06,311
+Sonsuzsa sonsuz kalacaktı.
+
+277
+00:46:06,867 --> 00:46:08,627
+Şimdi ben burada biri gördüm.
+
+278
+00:46:09,048 --> 00:46:12,808
+Demek ki algoritmam diyor ki şuradaki değerleri benim güncellemem gerekiyor.
+
+279
+00:46:13,328 --> 00:46:15,427
+Güncellerken de izlediğim kural şu.
+
+280
+00:46:15,427 --> 00:46:20,807
+Benim hash fonksiyonlarımın verdiği değerler şuradaki değerlerden küçükse
+
+281
+00:46:20,807 --> 00:46:25,427
+şuradaki hash fonksiyonların değerlerini şuradaki değerlerle güncelliyorum.
+
+282
+00:46:26,067 --> 00:46:27,747
+Burada neler vardı? Sonsuz vardı.
+
+283
+00:46:27,867 --> 00:46:30,427
+O yüzden biri buraya koydum, üçü buraya koydum.
+
+284
+00:46:31,087 --> 00:46:32,147
+Tamam, bunu tamamladım.
+
+285
+00:46:32,407 --> 00:46:36,487
+Şimdi ikinci dökümanın signature'ına bakacağım.
+
+286
+00:46:36,867 --> 00:46:38,667
+İkinci
+
+287
+00:46:38,667 --> 00:46:40,568
+döküman için burada bir mi var sıfır
+
+288
+00:46:40,568 --> 00:46:42,568
+mı var sıfır var sıfır varsa
+
+289
+00:46:42,568 --> 00:46:44,367
+bu durumda ne yapıyordum
+
+290
+00:46:44,367 --> 00:46:46,388
+herhangi bir güncelleme yapmıyordum
+
+291
+00:46:46,388 --> 00:46:48,068
+burada ne varsa o kalıyordu
+
+292
+00:46:48,068 --> 00:46:50,167
+bu birinci
+
+293
+00:46:50,167 --> 00:46:52,627
+iterasyon ikinci iterasyon artık
+
+294
+00:46:52,627 --> 00:46:54,228
+ikinci satıra geldim
+
+295
+00:46:54,228 --> 00:46:56,467
+ikinci satırda buradaki
+
+296
+00:46:56,467 --> 00:46:58,588
+satır numarasını tekrar
+
+297
+00:46:58,588 --> 00:47:00,487
+benim hash fonksiyonlarıma koydum
+
+298
+00:47:00,487 --> 00:47:01,588
+2 mod 5 2
+
+299
+00:47:01,588 --> 00:47:04,347
+2 çarpı 2 4 artı 1 5
+
+300
+00:47:04,347 --> 00:47:05,847
+mod 5 mod 5 0
+
+301
+00:47:05,847 --> 00:47:07,388
+Bunların değerlerini buldum.
+
+302
+00:47:08,287 --> 00:47:14,408
+Şimdi ikinci satır için birinci dökümanın değeri sıfır mı bir mi?
+
+303
+00:47:14,487 --> 00:47:15,007
+Buna bakıyorum.
+
+304
+00:47:15,147 --> 00:47:16,847
+Eğer sıfırsa hiçbir şey yapmıyordum.
+
+305
+00:47:17,128 --> 00:47:27,168
+Hiçbir şey sıfır olduğu için birinci döküman için buradaki bir önceki iterasyondan kalan değerler neyse onlar kalacak.
+
+306
+00:47:27,927 --> 00:47:29,007
+İkinci dökümana geldim.
+
+307
+00:47:29,107 --> 00:47:31,287
+İkinci dökümanın signature matrisini oluşturacağım.
+
+308
+00:47:31,668 --> 00:47:32,467
+Buradaki değer ne?
+
+309
+00:47:32,607 --> 00:47:32,808
+Bir.
+
+310
+00:47:33,127 --> 00:47:34,948
+Bir olduğunda güncelleme yapacağım.
+
+311
+00:47:34,948 --> 00:47:50,208
+Şimdi güncelleme yaparken de kuralım ne? Şuradaki değerlerle şuradaki değerleri karşılaştırıyorum. Hangisi küçükse burada o kalıyor. 2 sonsuzdan küçük 2, 0 sonsuzdan küçük burada 0 kaldı.
+
+312
+00:47:50,207 --> 00:47:51,627
+3.
+
+313
+00:47:53,947 --> 00:47:55,107
+iterasyona geçiyorum.
+
+314
+00:47:55,947 --> 00:47:58,167
+Satır numarasını
+
+315
+00:47:58,167 --> 00:48:00,087
+getirdim. Neye koydum?
+
+316
+00:48:00,607 --> 00:48:01,987
+Benim hash fonksiyonlarıma
+
+317
+00:48:01,987 --> 00:48:03,447
+koydum. Burada 3
+
+318
+00:48:03,447 --> 00:48:05,547
+3 kere 2 6 artı 1
+
+319
+00:48:05,547 --> 00:48:07,627
+7 7 mod 5 2
+
+320
+00:48:07,627 --> 00:48:09,707
+ok. Ondan sonra
+
+321
+00:48:09,707 --> 00:48:11,547
+3. satırda C1'e geldim.
+
+322
+00:48:11,647 --> 00:48:13,727
+C1'deki değere baktım.
+
+323
+00:48:13,967 --> 00:48:15,887
+1. Dolayısıyla C1'in
+
+324
+00:48:15,887 --> 00:48:17,948
+signature matristeki alanını
+
+325
+00:48:17,948 --> 00:48:18,507
+3.
+
+326
+00:48:18,507 --> 00:48:22,987
+Üçüncü satır için, üçüncü iterasyon için güncellemem lazım.
+
+327
+00:48:24,448 --> 00:48:25,888
+Güncellerken neye bakıyordum?
+
+328
+00:48:26,867 --> 00:48:31,728
+Bu bulmuş olduğum hash fonksiyon değerleriyle bir önceki değerleri karşılaştırıyordum.
+
+329
+00:48:31,867 --> 00:48:33,567
+Hangisi küçükse o kalacaktı.
+
+330
+00:48:34,308 --> 00:48:35,728
+Üç ile biri karşılaştırıyorum.
+
+331
+00:48:35,808 --> 00:48:36,367
+Hangisi küçük?
+
+332
+00:48:36,507 --> 00:48:38,088
+Biri olduğu gibi bırakıyorum.
+
+333
+00:48:38,207 --> 00:48:39,448
+İki ile üçü karşılaştırıyorum.
+
+334
+00:48:39,528 --> 00:48:40,168
+Hangisi küçük?
+
+335
+00:48:40,347 --> 00:48:42,228
+O yüzden ikiyi güncelliyorum.
+
+336
+00:48:43,728 --> 00:48:46,948
+Üçüncü iterasyonda C2'nin değeri birdi.
+
+337
+00:48:46,948 --> 00:48:50,347
+Dolayısıyla burada da bir güncelleme yapıp yapmayacağım.
+
+338
+00:48:51,548 --> 00:48:53,168
+Burada kuralım neydi?
+
+339
+00:48:53,588 --> 00:48:57,688
+Bir önceki aşamadaki değerlerle hash fonksiyonunun değerlerini karşılaştıracağım.
+
+340
+00:48:57,787 --> 00:48:59,367
+Hangisi küçükse onlar kalacak.
+
+341
+00:48:59,987 --> 00:49:03,948
+3'e 2, 2'ye 0 bunlar küçük olduğu için bunlar kaldı güncelleme yapmadım.
+
+342
+00:49:05,028 --> 00:49:05,728
+4'e geçelim.
+
+343
+00:49:06,388 --> 00:49:09,207
+4'ü koyduğum zaman hash fonksiyonuma şu değerler çıkmış.
+
+344
+00:49:10,948 --> 00:49:13,767
+4. satır için c1'in değeri 1.
+
+345
+00:49:13,767 --> 00:49:18,267
+1 olduğu zaman güncelleme yapıp yapmayacağımı karar vereceğim.
+
+346
+00:49:19,127 --> 00:49:20,627
+Bir önceki değerler 1'e 2.
+
+347
+00:49:21,347 --> 00:49:23,987
+Şu hash fonksiyonlarımın bulduğu değerler 4'e 4'e.
+
+348
+00:49:24,067 --> 00:49:27,527
+Hangisi daha küçük? 1'e 2 daha küçük bunlar kalacak.
+
+349
+00:49:28,707 --> 00:49:30,687
+C2 için değirim nedir? 0.
+
+350
+00:49:30,907 --> 00:49:32,627
+Her aynı bir güncelleme yapmayacağım.
+
+351
+00:49:33,107 --> 00:49:33,947
+Bunu bırakıyorum.
+
+352
+00:49:34,787 --> 00:49:35,527
+Geldim 5'e.
+
+353
+00:49:36,247 --> 00:49:39,887
+Beşinci iterasyonda ne yapıyorum?
+
+354
+00:49:39,887 --> 00:49:41,747
+5'i koyunca
+
+355
+00:49:41,747 --> 00:49:43,807
+hash fonksiyonlarımda 0 ve 1 çıkmış.
+
+356
+00:49:44,627 --> 00:49:46,107
+C1 için herhangi bir güncelleme
+
+357
+00:49:46,107 --> 00:49:47,727
+yapacak mıyım? Yapmayacağım. Çünkü
+
+358
+00:49:47,727 --> 00:49:49,607
+buradaki değer 0, 1, 2.
+
+359
+00:49:50,327 --> 00:49:52,087
+C2 için bir güncelleme yapacak mıyım?
+
+360
+00:49:52,227 --> 00:49:53,867
+Evet yapacağım. Peki yapalım.
+
+361
+00:49:54,427 --> 00:49:55,327
+Kuralım neydi?
+
+362
+00:49:55,707 --> 00:49:57,467
+Hangisi daha küçükse bu
+
+363
+00:49:57,467 --> 00:49:59,567
+iterasyondaki hash fonksiyon değerleriyle
+
+364
+00:50:00,000 --> 00:50:02,740
+Matrisin bir önceki değerine karşılaştırıyoruz.
+
+365
+00:50:03,359 --> 00:50:05,960
+0 ile 2 karşılaştığında 0 daha küçük 0.
+
+366
+00:50:06,159 --> 00:50:08,639
+1 ile 0'ı karşılaştığında 0 daha küçük 0.
+
+367
+00:50:09,359 --> 00:50:10,679
+Ne olmuş oldu?
+
+368
+00:50:11,079 --> 00:50:16,840
+5 iterasyon yani satır sayısı kadar ben bu algoritmayı iterate ettiğim zaman
+
+369
+00:50:16,840 --> 00:50:20,799
+en sondaki matrisin değeri benim signature matrisim oldu.
+
+370
+00:50:20,799 --> 00:50:25,979
+Şu hash fonksiyonları için benim matrisimin değerleri ne oldu?
+
+371
+00:50:25,979 --> 00:50:29,520
+C1'in signature'ı 1'e 2 oldu.
+
+372
+00:50:29,639 --> 00:50:31,659
+C2'nin signature'ı 0'a 0 oldu.
+
+373
+00:50:32,659 --> 00:50:44,559
+Şimdi bu yöntemle ben yaptığım zaman az önceki bu permütasyonuna dayalı olan hash fonksiyonlarından avantajım ne olmuş oldu?
+
+374
+00:50:45,059 --> 00:50:53,299
+Permütasyona dayalı şeyi kullandığım zaman hash fonksiyonları bunların hepsini in memory de tutmak zorundaydık.
+
+375
+00:50:53,299 --> 00:50:58,639
+Fiziksel memori de tutmak zorundaydık ama bu yöntemde bunu tutmaya gerek kalmalı.
+
+376
+00:50:59,020 --> 00:51:00,520
+Peki bunun südokoduna bakalım.
+
+377
+00:51:00,680 --> 00:51:07,440
+Südokodu öncelikle şurada bir dış for each loop var.
+
+378
+00:51:07,699 --> 00:51:09,540
+En önemlisi buna bakın.
+
+379
+00:51:09,540 --> 00:51:16,659
+Yani ben bunu elimdeki bütün satırlar için ne yaptım?
+
+380
+00:51:16,959 --> 00:51:23,019
+Şuradaki algoritmanın çalışmasını anlattığım şeyde her bir satır için iterative bir şekilde yaptım.
+
+381
+00:51:23,019 --> 00:51:30,099
+Yani algoritmanın en dışında bütün satırlar için tekrarlanacak bir loop döngüsü var.
+
+382
+00:51:30,179 --> 00:51:30,819
+For each var.
+
+383
+00:51:31,739 --> 00:51:38,119
+Ve her bir satır için öncelikli olarak ilk başta hash fonksiyonlarının değerini hesapladım.
+
+384
+00:51:38,239 --> 00:51:39,439
+Gerçekten de öyle yaptım.
+
+385
+00:51:39,899 --> 00:51:50,299
+Örneğimde her bir satırda ilk başta şuradaki bakın algoritmanın bu satır numaraları için hash fonksiyonlarının değerlerini hesapladım.
+
+386
+00:51:51,419 --> 00:51:52,219
+Okey.
+
+387
+00:51:52,220 --> 00:52:01,419
+Hedge fonksiyonlarının değerlerini hesapladıktan sonra sonra her bir satır için o satırın signature matrisini hesaplamak istedim.
+
+388
+00:52:01,500 --> 00:52:04,340
+Ne yaptım? Bunları bulduktan sonra sonra başladım.
+
+389
+00:52:04,459 --> 00:52:10,040
+Birinci dökümanın signature matrisini hesaplamak için önce burayı buldum.
+
+390
+00:52:10,479 --> 00:52:15,800
+Sonra ikinci dökümanın signature matrisini hesaplamak için sonra buraya baktım.
+
+391
+00:52:15,800 --> 00:52:22,199
+dolayısıyla burada bir tane for döngüsü var
+
+392
+00:52:22,199 --> 00:52:23,500
+hani dökümanlar için var
+
+393
+00:52:23,500 --> 00:52:25,720
+öncelikle birinci dökümandan başlıyorum
+
+394
+00:52:25,720 --> 00:52:30,979
+ve diyorum ki eğer dökümanın input matristeki değeri bir ise
+
+395
+00:52:30,979 --> 00:52:32,820
+o zaman bir şeyler yapacaksın
+
+396
+00:52:32,820 --> 00:52:35,880
+ama değeri bir değilse bir sonraki dökümana geç
+
+397
+00:52:35,880 --> 00:52:38,139
+burada da öyle yaptık
+
+398
+00:52:38,139 --> 00:52:43,860
+eğer dökümanın değeri bir ise güncelleme yaptık
+
+399
+00:52:43,860 --> 00:52:47,380
+Ama sıfırsa hiç dokunmadık bir sonraki iterasyona geçtik.
+
+400
+00:52:51,092 --> 00:53:06,991
+Eğer bir ise orada yapacağımız işlem de şuydu. Her bir hash fonksiyonu için matrisin oradaki değeriyle hash fonksiyonunun değerini karşılaştırıyoruz. Hangisi küçükse onu bırakıyoruz.
+
+401
+00:53:06,991 --> 00:53:29,551
+her bir hash fonksiyonu için ne yaptık? Matrisin bir önceki değeri sonsuzla mevcuttaki hash fonksiyonun değerini karşılaştık. Hangisi küçükse ne yaptık? Matrisin o alanını güncelledik.
+
+402
+00:53:29,551 --> 00:53:48,651
+Aslında size anlattığım örnek şuradaki südo kodun şu hash fonksiyonları için şu input matriz üzerinde nasıl çalıştığını göstermiş oldum. En nihayetinde bu algoritmayı çalıştırdığınız zaman ne elde ediyorum? Şöylesi bir signature matriz elde ediyorum.
+
+403
+00:53:48,651 --> 00:54:14,592
+Bu signature matrisi elde ettikten sonra artık şu iki doküman arasındaki benzerliği daha önce öğrendiğiniz jacquard similarity ile ölçmeme gerek yok. Şu iki doküman arasındaki similarity tamamıyla signature matrise bakaraktan ölçebilirim. Birbirine benzer olan satır sayısı bölü toplamdaki satır sayısı bana iki doküman arasındaki benzerlik oranını verecektir.
+
+404
+00:54:14,592 --> 00:54:31,392
+Şimdi burada duralım arkadaşlar. Bir sonraki aşamada da Locality Sensitive Hashing konusunu şey yapacağız. Saat 9.55 diyelim. 10'u 5 geçe 10 dakika sonra devam ediyorum.
+
+405
+01:06:39,795 --> 01:06:44,055
+Evet, kaldığımız yerden devam edelim arkadaşlar. Bir sesim geliyor mu? Bir teyit eder misiniz lütfen?
+
+406
+01:06:52,148 --> 01:07:03,667
+Şimdi min hashing işlemini biz niye yapmıştık tekrardan hatırlayalım.
+
+407
+01:07:03,667 --> 01:07:13,887
+Bu large document setlerini K uzunluğundaki karakter dizileriyle tanımladıktan sonra
+
+408
+01:07:13,887 --> 01:07:18,727
+bunları bir sıfırlardan oluşan kolon vektörlerine dönüştürüyorduk.
+
+409
+01:07:18,727 --> 01:07:24,548
+ve elimde çok sayıda döküman var.
+
+410
+01:07:24,848 --> 01:07:31,048
+Her birinin çok sayıda satırı olan kolon vektörü var.
+
+411
+01:07:31,988 --> 01:07:36,467
+Böylesi bir input matrisi üzerinde ben ne yapmaya çalışıyordum?
+
+412
+01:07:36,467 --> 01:07:39,607
+İkili dökümanlar arasındaki benzerliğe bakıyordum.
+
+413
+01:07:39,728 --> 01:07:43,427
+Jackart similarity değerini hesaplıyordum sürekli ve diyordum ki
+
+414
+01:07:43,427 --> 01:07:49,667
+Jakart similarity değeri belli bir değerin üzerinde yüksekse bu iki döküman birbiriyle benzerdir.
+
+415
+01:07:50,328 --> 01:07:53,047
+Ama benim buradaki problemim neydi?
+
+416
+01:07:54,407 --> 01:08:01,728
+Böylesi bir input matrisi çok büyük olduğu için, satır sayısı çok fazla olabileceği için
+
+417
+01:08:01,728 --> 01:08:07,267
+bunu bir memoriye sığdırıp da bunun üzerinde benzerliği hesaplamak zordu.
+
+418
+01:08:07,267 --> 01:08:15,187
+O yüzden de bu min hashing algoritmasını kullandım ve bu input matrisi bir signature matrisine dönüştürdüm.
+
+419
+01:08:15,247 --> 01:08:20,607
+Bu signature matrisindeki kolon sayısı input matrisindeki kolon sayısıyla aynı.
+
+420
+01:08:21,567 --> 01:08:29,587
+Sadece bir dökümanı belirtmek için kullanmış olduğum satır sayısını ne yapıyorum?
+
+421
+01:08:29,707 --> 01:08:30,467
+Azaltmış oldum.
+
+422
+01:08:30,647 --> 01:08:32,647
+Satır sayısı kaç tane olacaktır peki?
+
+423
+01:08:33,107 --> 01:08:35,067
+Hash fonksiyonu sayısı kadar olacaktır.
+
+424
+01:08:35,067 --> 01:08:41,868
+Eğer 100 tane hash fonksiyonu kullanmışsam min hashing algoritmamda bu durumda ben ne yapacağım?
+
+425
+01:08:42,307 --> 01:08:45,567
+100 tane satırı olan bir signature matris oluşturmuş olacağım.
+
+426
+01:08:45,847 --> 01:08:46,047
+Tamam.
+
+427
+01:08:47,247 --> 01:08:49,728
+Şimdi artık elimde bir signature matris var.
+
+428
+01:08:50,467 --> 01:08:56,527
+Bu signature matrisdeki kolon sayısı benzerliğini hesaplamam gereken dökümanlardan oluşuyor.
+
+429
+01:08:57,127 --> 01:08:59,287
+Satır sayısı da hash fonksiyon sayısı kadar.
+
+430
+01:09:00,387 --> 01:09:02,508
+Benim bütün buradaki problemim neydi?
+
+431
+01:09:02,508 --> 01:09:05,907
+birbirine benzer olan dökümanları hesaplamakta.
+
+432
+01:09:05,907 --> 01:09:08,127
+Peki yine ne yapacağım?
+
+433
+01:09:08,228 --> 01:09:12,508
+Bu signature matrisi her ne kadar küçültmeyi başarmışsam da
+
+434
+01:09:12,508 --> 01:09:15,427
+elimdeki dökümanları signature matrisiyle tanımlamakla
+
+435
+01:09:15,427 --> 01:09:20,728
+hala ikili dökümanlar arasında benzerliği hesaplamam gerekli.
+
+436
+01:09:21,427 --> 01:09:22,368
+Şimdi bu ne demek?
+
+437
+01:09:22,868 --> 01:09:25,427
+Eğer elimde bir milyon tane döküman varsa
+
+438
+01:09:25,427 --> 01:09:31,188
+bu durumda bu bir milyon tane dökümanın ikili kombinasyonlarını
+
+439
+01:09:31,187 --> 01:09:33,827
+düşündüğünüz vakit
+
+440
+01:09:33,827 --> 01:09:36,167
+hesaplama yapmam
+
+441
+01:09:36,167 --> 01:09:37,907
+gereken yani benzerlik
+
+442
+01:09:37,907 --> 01:09:39,107
+hesaplamamı yapmam
+
+443
+01:09:39,107 --> 01:09:41,367
+gereken ikili
+
+444
+01:09:41,367 --> 01:09:43,567
+döküman sayısı çok fazla
+
+445
+01:09:43,567 --> 01:09:46,007
+olacak. Yani bir milyonun ikili kombinasyonundan
+
+446
+01:09:46,007 --> 01:09:47,967
+bahsediyoruz. Eğer elimdeki
+
+447
+01:09:47,967 --> 01:09:49,868
+döküman sayısı bir milyon değil de
+
+448
+01:09:49,868 --> 01:09:51,667
+on milyon olursa
+
+449
+01:09:51,667 --> 01:09:53,868
+yüz milyon olursa bir milyar olursa
+
+450
+01:09:53,868 --> 01:09:55,807
+o zaman problemin büyüklüğünü
+
+451
+01:09:55,807 --> 01:09:56,747
+görebiliyorsunuz.
+
+452
+01:09:57,887 --> 01:09:59,868
+Bu durumda ben
+
+453
+01:09:59,868 --> 01:10:21,847
+Şunu düşünmem lazım yani bunu daha hızlı ve daha optimize edilmiş bir şekilde yapabilmemin bir yöntemi var mıdır? Yani tamam yine ikili dökümanlar arasındaki benzerliği hesaplayayım ama sadece yüksek olasılıkla birbirine benzer olabilecek dökümanlar arasında hesaplayayım.
+
+454
+01:10:21,847 --> 01:10:39,167
+Yani elimdeki bütün döküman uzayı üzerinde ikili kombinasyonlar arasındaki benzerliği hesaplamak yerine sadece birbirine yakın olma olasılığı yüksek olan ikili dökümanlar arasında hesaplayayım.
+
+455
+01:10:39,247 --> 01:10:43,827
+İşte bunu gerçekleştiren ise Locality Sensitive Hashing algoritması.
+
+456
+01:10:47,220 --> 01:11:01,399
+Şimdi bu locally sensitive fishing algoritması, what it is is that it focuses on similarity mean hash signatures that are high likely to be similar.
+
+457
+01:11:01,399 --> 01:11:22,580
+Buradaki fikir şu, diyor ki elimdeki çok sayıda döküman üzerinde benzerlikleri bakarken sadece ama sadece birbiriyle benzer olma olasılığı yüksek olanlara bakalım.
+
+458
+01:11:22,580 --> 01:11:29,319
+Yani öncelikli olarak bu dökümanlara bakalım. Peki bunun için bu algoritma ne yapıyor?
+
+459
+01:11:30,239 --> 01:11:31,039
+Yaptığı şey şu.
+
+460
+01:11:32,979 --> 01:11:37,720
+Öncelikle diyor ki bir tane similarity threshold seç diyor.
+
+461
+01:11:37,720 --> 01:11:55,759
+Yani diyor ki bir dökümanın iki dökümanın birbiriyle benzer olma olasılığı ile ilgili benzerliği ile ilgili bir threshold seç diyor.
+
+462
+01:11:55,760 --> 01:12:08,200
+Diyor ki mesela eğer iki tane doküman ben işte signature matris için signature matrisle iki tane doküman arasındaki benzerliği bulmak için hangi yöntemi kullandık?
+
+463
+01:12:08,980 --> 01:12:14,859
+Birbirine birbiriyle aynı olan satır sayısı bölü toplamdaki satır sayısı bunu kullandık değil mi?
+
+464
+01:12:14,859 --> 01:12:27,720
+Bu algoritma da diyor ki bu değer eğer %80'in ya da %70'in ya da bir threshold değerinin üzerinde olursa bu iki doküman birbirine benzerdir diyebilirsin.
+
+465
+01:12:27,859 --> 01:12:30,620
+Yani bir tane threshold değeri belirlemeni istiyor algoritma.
+
+466
+01:12:30,619 --> 01:12:55,619
+Ondan sonra diyor ki eğer diyor iki tane doküman bir signature matriz üzerinde olan iki tane doküman bu senin belirlemiş olduğun threshold değerinin üzerinde birbirine benzer ise bu durumda bunlar benzer olma olasılığı için aday ikililerdir.
+
+467
+01:12:55,619 --> 01:13:12,059
+Okey. Öncelikle bu algoritmanın fikrinde neydi? Hani birbiriyle benzer olma olasılığı yüksek olan aday ikilileri tespit edip onlar arasında ne yapmaya çalışıyorduk?
+
+468
+01:13:12,139 --> 01:13:21,799
+Hani similarity'yi bulmaya çalışıyorduk. Öncelikle adayları, benzer olma olasılığı yüksek olan adayları bulmak. Bu algoritmanın yaptığı şey bu.
+
+469
+01:13:21,800 --> 01:13:42,320
+Şimdi bu algoritma şunu yapıyor. Diyor ki bu benim signature matrisim olsun. Signature matrisimde şurada benim kolon vektörlerim var. Şurada kolonlarda dökümanlarım var. Dökümanların signatureları var. Şunlardan hash fonksiyon satırları. Her bir hash fonksiyona karşılık gelen satırlar.
+
+470
+01:13:42,319 --> 01:13:50,339
+Şimdi ben bunu bantlara bölüyorum. Elimdeki signature matrisi bantlara bölüyorum.
+
+471
+01:13:50,339 --> 01:14:03,679
+Diyelim ki mesela elimde 100 tane satırlık bir signature matris varsa ve ben bunu 5'e bölmüşsem birinci bantta 20 satır, ikinci bantta 20 satır, üçüncüde 20 satır bu şekilde olacak.
+
+472
+01:14:03,679 --> 01:14:25,019
+Okey. Elimdeki signature matrisin satırlarını bantlara böldüm. B banda böldüm. Her bir bant içerisinde de R tane row var. Hani bu benim verdiğim örnekte 100 tane satırı olan bir tane signature matris düşünmüştük.
+
+473
+01:14:25,019 --> 01:14:26,759
+B tane banda böldüm.
+
+474
+01:14:26,859 --> 01:14:27,779
+B'yi 5 seçtim.
+
+475
+01:14:27,899 --> 01:14:33,179
+Dolayısıyla da B'yi 5 seçince doğal olarak R benim bu örneğimde ne olmuş oldu?
+
+476
+01:14:34,259 --> 01:14:35,539
+20 olmuş oldu.
+
+477
+01:14:35,899 --> 01:14:35,919
+Okey?
+
+478
+01:14:36,399 --> 01:14:42,579
+Hani her bir satırda 20 tane, her bir band içerisinde 20 tane satır olmuş oldu.
+
+479
+01:14:43,039 --> 01:14:43,239
+Tamam.
+
+480
+01:14:44,307 --> 01:15:11,687
+Şimdi bu algoritma diyor ki, arkadaş diyor, şunu şuradaki örnekte mesela şunu bir tane doküman için düşünelim. Bir tane dokümanın signature olmuş olsun. Hatırlayın hani signature matrisde integer değerler oluyordu. Hani burada 20 tane satır var. Şurada ne olacaktır? Hani integer değerler olacaktır. Şurada da yine 20 tane yukarıdan aşağıya integer değerler olacaktır. Bu şekilde gidecektir.
+
+481
+01:15:11,687 --> 01:15:25,507
+Şimdi diyor ki hani bu integer değerlerden oluşan hani bu 20 tane değeri ben bir tane hash fonksiyonuna sokabilirim.
+
+482
+01:15:25,507 --> 01:15:28,047
+Bir tane hash fonksiyonuna soktuğum zaman
+
+483
+01:15:28,047 --> 01:15:29,047
+...
+
+484
+01:15:32,500 --> 01:15:42,979
+Şu 20 tane değerden oluşan yukarıdan aşağı olan şu bir bentdeki şu küçük çubuğun içerisindeki sayısal değerleri bir tane hash fonksiyonuna sokabilirim.
+
+485
+01:15:42,979 --> 01:15:53,159
+Bu hash fonksiyonu da benim elimde bu hash fonksiyonunun değerini alabileceği bakıtlar olsun.
+
+486
+01:15:53,279 --> 01:15:56,219
+Bunlar da hash fonksiyonunun alabileceği değerler olsun.
+
+487
+01:15:56,219 --> 01:16:04,559
+Hani öyle bir hash fonksiyonu düşünün ki mesela hash fonksiyonunun alabileceği değerler birle bin arasında değişiyor.
+
+488
+01:16:04,699 --> 01:16:07,299
+Yani bin tane farklı değer alabilir hash fonksiyonu.
+
+489
+01:16:08,020 --> 01:16:15,119
+Hash fonksiyonunu input olarak şuradaki yirmi tane satırı olan yirmiyi farizi bir örnek olarak veriyorum.
+
+490
+01:16:15,559 --> 01:16:20,779
+Hani bir integer katarını integer dizisini verdim input olarak.
+
+491
+01:16:21,180 --> 01:16:24,279
+O da bana birden bine kadar bir tane değer üretti.
+
+492
+01:16:24,279 --> 01:16:32,459
+Ve ben şu arkadaşın bulunmuş olduğu bu signature'ı bulunmuş olduğu dokümanın ismini götürdüm bu vakıta yazdım.
+
+493
+01:16:33,159 --> 01:16:37,580
+Bunu diğer dokümanların şeyi içinde yapıyorum.
+
+494
+01:16:37,799 --> 01:16:45,519
+Hani bu bant içerisindeki diğer dokümanların bu bandın içerisine düşen bu 20'lik değerleri içinde yapıyorum.
+
+495
+01:16:46,639 --> 01:16:50,019
+Ve bunu sadece bir tane bant için yapmıyorum.
+
+496
+01:16:50,220 --> 01:16:51,639
+Bütün bantlar için yapıyorum.
+
+497
+01:16:51,639 --> 01:17:13,319
+Bütün bantların her bir bant içerisine bir dökümanın düşmüş olan parçasını hash fonksiyonuna sokuyorum ve hash fonksiyonunu işaret etmiş olduğu değerin bulunduğu hücreye getirip bu dökümanın ismini yazıyorum.
+
+498
+01:17:13,319 --> 01:17:35,599
+Şimdi bu algoritma diyor ki birbiriyle aynı şeyin içerisine düşmüş olan yani şimdi burada şu arkadaşın bir tane bandı var.
+
+499
+01:17:35,599 --> 01:17:36,939
+şu arkadaşın işte
+
+500
+01:17:36,939 --> 01:17:39,939
+bu arkadaşın
+
+501
+01:17:39,939 --> 01:17:41,660
+beş tane farklı bandı var değil mi?
+
+502
+01:17:42,240 --> 01:17:43,619
+Bu arkadaşın beş tane
+
+503
+01:17:43,619 --> 01:17:45,940
+farklı bandıyla bu arkadaşın
+
+504
+01:17:45,940 --> 01:17:47,699
+beş tane farklı bandını
+
+505
+01:17:47,699 --> 01:17:49,619
+ben bu
+
+506
+01:17:49,619 --> 01:17:51,759
+bakıta şey yaptığım zaman
+
+507
+01:17:51,759 --> 01:17:53,779
+hani map ettirdiğim zaman
+
+508
+01:17:53,779 --> 01:17:55,520
+eğer bunlar
+
+509
+01:17:55,520 --> 01:17:57,679
+yüzde seksen
+
+510
+01:17:57,679 --> 01:17:59,639
+oranın üzerinde
+
+511
+01:17:59,639 --> 01:18:01,679
+bunların bakıtları
+
+512
+01:18:01,679 --> 01:18:03,759
+bunların değerleri
+
+513
+01:18:03,759 --> 01:18:05,539
+aynı bakıta düşmüş ise
+
+514
+01:18:05,539 --> 01:18:16,359
+Bu durumda diyorum ki bu arkadaşlar, bu iki arkadaş birbiriyle benzer olmaya aday iki arkadaştır diyorum.
+
+515
+01:18:17,159 --> 01:18:29,000
+Ve benzerliği hesaplarken, gerçek benzerliği hesaplarken o vakitin içerisine düşmüş olan ikililer arasında hesaplıyorum.
+
+516
+01:18:29,000 --> 01:18:32,439
+Yani geriye dönüp şuna bakacak olursak.
+
+517
+01:18:32,440 --> 01:18:45,639
+Normalde şurada diyelim ki bin tane signature matrisimde bin tane benzerlik hesabı yapılması gereken dökümanım vardı.
+
+518
+01:18:46,355 --> 01:18:50,935
+Ben Locality Sensitive Hashing ile ne yaptım?
+
+519
+01:18:50,935 --> 01:19:06,015
+Bu signature matrisleri bu hash fonksiyonları ile bu bucket'a bir tane birden bine kadar hücresi olan bir hash fonksiyon bucket'ına map ettirdim.
+
+520
+01:19:06,015 --> 01:19:30,076
+Ve dedim ki aynı bakıta düşmüş olan, aynı bakıta %80'in üzerinde şeyleri düşmüş olan, bentleri düşmüş olan ikililer için sadece o ikililer için ben signature'ların birbirine similarities'in olup olmadığını test edeyim.
+
+521
+01:19:30,075 --> 01:19:44,435
+Yani bir milyonun ikili kombinasyonları değil de aynı vakıta düşmüş olan ikililer için ben ne yapıyorum benzerliğe bakıyorum arkadaşlar.
+
+522
+01:19:44,435 --> 01:19:48,795
+Bu Locality Sensitive Hashing'in bana sağlamış olduğu şey ne?
+
+523
+01:19:49,575 --> 01:20:00,716
+Birbiriyle benzerlik oranı yüksek olan, birbirine benzer olma olasılığı yüksek olan ikililerin tespit edilmesine olanak veriyor.
+
+524
+01:20:01,155 --> 01:20:03,095
+Tekrardan dönecek olursam.
+
+525
+01:20:04,795 --> 01:20:10,555
+Bu yöntemle birbirine benzer olma olasılığı yüksek olan ne yapıyorum?
+
+526
+01:20:10,555 --> 01:20:20,855
+Dökümanlar aynı vakıt içerisine düşmüş oluyor ve ben bu algoritmayı buradaki bütün bentler için çalıştırdığım zaman en nihayetinde gidip vakıta bakıyorum.
+
+527
+01:20:21,635 --> 01:20:25,075
+Birinci hücresinden yüzüncü hücresine kadar bakıyorum.
+
+528
+01:20:25,895 --> 01:20:39,775
+Bu birinci vakıt üzerinde bentlerinin yüzde sekseninden fazlası aynı yere düşmüş olan iki tane döküman varsa bu durumda diyorum ki bunlar candidate'dir.
+
+529
+01:20:39,775 --> 01:20:52,875
+Eğer yoksa bunların zaten benzer olmadığını düşünüyorum. Benzerlik şeyine bakarken mutlaka ama mutlaka iki tane dökümanın aynı bakıta düşmüş olması benim için işaret.
+
+530
+01:20:52,875 --> 01:21:03,335
+Buradaki diyelim ki bakıtlar içerisinde bir tane bakıt var ki bunun içerisine düşmüş olan dokümanlar işte 80 tane.
+
+531
+01:21:04,115 --> 01:21:11,095
+O zaman ben bu 80 tane doküman içerisinde bunların ikili kombinasyonları için ne yapmaya çalışıyorum?
+
+532
+01:21:12,415 --> 01:21:14,895
+Benzerlik değerini hesaplamaya çalışıyorum.
+
+533
+01:21:14,895 --> 01:21:26,555
+Şimdi buradaki bunu şeyini peki bu ne zamanki bir yerde hash fonksiyonu dahil oldu orada approximation konuşuyoruz.
+
+534
+01:21:26,555 --> 01:21:35,195
+Çünkü elimdeki hash fonksiyonunun çözünürlüğü, başarısı %100 olmayacaktır.
+
+535
+01:21:35,296 --> 01:21:45,195
+Yani normalde birbiriyle benzer olmayan iki dökümanı elimdeki hash fonksiyonu yanlışlıkla aynı bakıta map ettirebilir.
+
+536
+01:21:45,775 --> 01:21:48,755
+Yani işin içerisinde false pozitifler olabilir.
+
+537
+01:21:48,755 --> 01:22:01,755
+Ben aynı vakıta düştükleri için bunlar birbirine benzer olması olasılığı yüksek olan iki doküman olarak değerlendirip hesap yapabilirim.
+
+538
+01:22:02,535 --> 01:22:07,175
+Pozitif değerlendirdiğim için aynı vakıta düştükleri ama bu false pozitif olabilir.
+
+539
+01:22:07,175 --> 01:22:23,275
+False pozitif olmasının sebebi ise bu hash fonksiyonu iki tane birbirinden farklı dökümanı çözünürlüğü çok iyi olmadığı için başarısı çok iyi olmadığı için aynı bucket içerisine düşürebilir.
+
+540
+01:22:23,275 --> 01:22:42,275
+Peki bu durumda hani benim hata payım nedir? Yani ben bu yöntemle eğer dokümanlar içerisindeki benzerlikleri yakı hızlı bir şekilde yakalamak istiyorsam bu lokality sensitive hashing algoritmasını çalıştırdığında ne gibi bir hatam olabilir?
+
+541
+01:22:42,975 --> 01:22:45,915
+Buradan bir örneğe bakalım. Hatay payını şey yapalım.
+
+542
+01:22:46,207 --> 01:23:09,587
+Şimdi burada benim 100.000 tane kolonum var, signature matrisi. Yani bu şu demek, 100.000 tane dökümanım var elimde. Bu 100.000 tane döküman için signature matrisleri oluşturmuşum. 100 tane signature matrisimde satır var. Bu ne demek? 100 tane demek ki benim minhash fonksiyonum varmış.
+
+543
+01:23:09,587 --> 01:23:32,647
+Şimdi benim bu 100 tane satırım demek 100 tane integer demek benim signature matrisimde ve böylesi bir matrisin memoride alacağı yer 40 megabyte 100 çarpı 100 bin çarpı 4 her bir intacirde 4 byte alıyor bunu çevirdiğim zaman 40 megabyte kadar bir yer teşkil ediyor
+
+544
+01:23:32,647 --> 01:23:40,327
+Dikkat edin signature matrisin bana getirdiği en büyük avantaj yer olarak az yer kapsaması
+
+545
+01:23:40,327 --> 01:23:59,167
+Ve ben diyorum ki ben bu locality sensitive caching algoritmasıyla elimdeki dokümanların yüzde seksen bir şekilde similar oldukları zaman ben bunları candidate olarak belirlemek istiyorum
+
+546
+01:23:59,167 --> 01:24:27,388
+ve diyorum ki normalde eğer ben bunu yapmasam yani locality sensitive hashing yapmasam bu yüz binin ikilisi kadar farklı kolon vektörünü karşılaştırmam lazım. Bunların aralarındaki benzerliği bulmam lazım. Bu benzerlik belirli bir similarity'nin üzerinde olursa o zaman şey yapıyorum ama bunu yapmak istemiyorum.
+
+547
+01:24:27,388 --> 01:24:42,388
+yani 5 buradaki büyük rakam kadar 5 milyar kadar farklı ikilinin karşılaştırmasını yapmak istemiyorum. O yüzden de Locality Sensi Fashion algoritmasını kullanmak istiyorum.
+
+548
+01:24:42,388 --> 01:24:54,347
+ve Locality Sensi Fashion algoritmasında da diyorum ki benim band sayım 20 olsun ve bu durumda her bir banda düşecek integer değerleri de 5 tane olacak.
+
+549
+01:24:54,508 --> 01:25:03,827
+Yani elimdeki şu şeyi burada 5'e bölmüşüm onun yerine 20'ye bölüyorum bu durumda her bir banda düşen 5 olacaktır.
+
+550
+01:25:03,827 --> 01:25:09,308
+Çünkü totalde benim az önceki örneğim diyor ki 100 tane satır var 100 tane integer var.
+
+551
+01:25:09,307 --> 01:25:19,787
+Şimdi böylesi bir durumda benim hatam ne olurdu? Hata payım ne olurdu? Şimdi burada hata payını hesaplarken şu şekilde hesaplıyorum.
+
+552
+01:25:19,787 --> 01:25:38,787
+Şimdi az önce demiştik ya ancak ve ancak lokality sensitive hashingde iki tane dokümanın birbiriyle benzer olma olasılığının yüksek olduğunu şu iki tane aynı bende düşen iki tane şeyin aynı vakıtı düşmesi durumunda söylüyoruz.
+
+553
+01:25:39,307 --> 01:25:58,067
+Bu durumda her bir elemanın şu ikisinin yüzde seksen oranında benzerlik olabilmesi olasılığı yani bu ikisinin birbirine benzer olma olasılığı yüzde seksense
+
+554
+01:25:58,068 --> 01:26:07,308
+ancak bunlar %80 olasılıkla birbirine benzerse bunları benzer kabul ediyorsun.
+
+555
+01:26:07,508 --> 01:26:08,808
+Çünkü bunu soruda vermişim.
+
+556
+01:26:09,187 --> 01:26:13,187
+%80 değeri benzerse ben bunu benzer kabul edebiliyormuşum.
+
+557
+01:26:13,588 --> 01:26:18,107
+O yüzden diyorum ki bu ikisinin benzer olabilmesi için kabul ettiğim olasılık ne?
+
+558
+01:26:19,228 --> 01:26:20,568
+0.8.
+
+559
+01:26:21,308 --> 01:26:24,327
+Peki burada kaç tane integer var?
+
+560
+01:26:24,987 --> 01:26:25,967
+5 tane.
+
+561
+01:26:25,967 --> 01:26:30,207
+yani şunun içerisinde kaç tane integer var? 5 tane.
+
+562
+01:26:35,572 --> 01:26:48,011
+Dolayısıyla bir band içerisinde C1 ve C2'nin sadece bir band içerisinde benzer olma olasılığı 0.8'in 5. kuvveti.
+
+563
+01:26:48,011 --> 01:26:57,931
+Yani 0.328 olasılıkla şu iki tane, şuradaki iki tane doküman birbiriyle benzer.
+
+564
+01:26:57,931 --> 01:27:06,151
+Tekrar ediyorum bir tane satırı için ben bunun bu ikisini benzer kabul edebilmek için kendime şey koymuşum.
+
+565
+01:27:06,251 --> 01:27:07,891
+Olasılığım %80.
+
+566
+01:27:08,031 --> 01:27:14,051
+%80'in üzerinde eğer olursa bir tane satır için ben bunu benzer kabul ediyorum diyeceğim.
+
+567
+01:27:14,572 --> 01:27:17,211
+Peki burada bir bandın içerisinde kaç tane satır var?
+
+568
+01:27:17,331 --> 01:27:17,791
+5 tane.
+
+569
+01:27:17,791 --> 01:27:30,871
+Dolayısıyla 0.8 çarpı 0.8 0.8 yani 0.8'in 5. kuvveti bana bir tane bant için C1 ve C2'nin birbirine benzer olma olasılığını verir.
+
+570
+01:27:31,931 --> 01:27:32,731
+Tamam peki.
+
+571
+01:27:33,951 --> 01:27:38,571
+Birbirine benzer olmama olasılığı nedir peki o durumda?
+
+572
+01:27:38,572 --> 01:27:40,531
+eğer benzer olma olasılığı buysa
+
+573
+01:27:40,531 --> 01:27:45,152
+1-0.328'i ben bulduğum zaman
+
+574
+01:27:45,152 --> 01:27:47,851
+bir bant için
+
+575
+01:27:47,851 --> 01:27:51,711
+iki tane dökümanın birbirine benzer olmama olasılığını bulurum.
+
+576
+01:27:51,771 --> 01:27:51,972
+Değil mi?
+
+577
+01:27:52,491 --> 01:27:52,692
+Tamam.
+
+578
+01:27:53,612 --> 01:27:56,451
+Peki elimde kaç tane total yapma bant var?
+
+579
+01:27:56,572 --> 01:27:57,112
+20 tane.
+
+580
+01:27:57,612 --> 01:27:59,131
+20 tane bant için
+
+581
+01:27:59,131 --> 01:28:04,792
+C1 ve C2'nin birbiriyle benzer olmama olasılığı değeri de
+
+582
+01:28:04,792 --> 01:28:05,432
+şu değer.
+
+583
+01:28:06,972 --> 01:28:07,211
+Okey.
+
+584
+01:28:08,572 --> 01:28:11,091
+0.3035.
+
+585
+01:28:11,451 --> 01:28:13,072
+İşte bu değer 1 bölü 3000.
+
+586
+01:28:13,232 --> 01:28:25,932
+Yani 3000'de bir durumda, 3000'de 3000 tane farklı durum içerisinde sadece bir durumda bu iki dökümanın birbirine benzer olmama olasılığı var.
+
+587
+01:28:26,972 --> 01:28:29,631
+İşte bu da benim false negative'im.
+
+588
+01:28:29,631 --> 01:28:58,771
+Yani benim bakıtlarıma şuraya diyelim ki bir tane bakıta 80 tane doküman hani totalde diyelim ki bir milyon 100 bin tane dokümanım vardı 100 bin tane kolon şuradaki bakıta bunların 80 tanesini düşmüş olsun ve ben demişim ki hani bu 80 tanesinin şey olma olasılığı yüksek yani birbiriyle benzer olma olasılığı yüksek çünkü aynı bakıta düşmüş.
+
+589
+01:28:58,771 --> 01:29:10,872
+Ama bunu gerçekleştirirken benim şurada kullanmış olduğum, şurada yapmış olduğum yöntemde şunu söylüyor.
+
+590
+01:29:11,512 --> 01:29:17,971
+Tamam okey bunların 100 bin taneden 80 tanesini aynı vakıta düşürmeyi başardın.
+
+591
+01:29:18,512 --> 01:29:24,452
+Bunlar büyük ihtimalle birbiriyle benzer olan ikililerin olduğu aday ikililer.
+
+592
+01:29:24,451 --> 01:29:36,351
+Ama 3000'de bir olasılık var ki senin bu hash fonksiyonun bu 80 tane içerisine orada olmaması gereken dokümanları da koymuş olabilir.
+
+593
+01:29:36,351 --> 01:29:48,691
+Bu da senin false negatiflerin. Bu durumda sen büyük bir olasılıkla şeyi buluyorsun.
+
+594
+01:29:50,691 --> 01:29:58,351
+Yani bakılması gereken, kontrol edilmesi gereken ikililerin sayısını azaltıyorsun.
+
+595
+01:29:58,351 --> 01:30:10,971
+Ama arada hesaplamaman gereken yani benzerlik oranı %80'in altında olabilecek ikilileri de bu bucketın içerisine koyabilme olasılığın var.
+
+596
+01:30:11,111 --> 01:30:12,711
+Onun olasılığı ise 1 bölü 3000.
+
+597
+01:30:13,331 --> 01:30:17,952
+Demek ki bu yöntemin bana sağlamış olduğu avantaj şu.
+
+598
+01:30:19,152 --> 01:30:20,831
+Çok büyük sayıda.
+
+599
+01:30:20,927 --> 01:30:29,447
+elimde signature matrisi hesaplanmış çok büyük sayıda benim dokümanlarım olabilir.
+
+600
+01:30:30,348 --> 01:30:44,507
+Manuel olarak bunu yapacak olsam buradaki dokümanların bütün ikili kombinasyonları için benzerlik oranlarını bulup benim benzerlik trash olduğumdan yüksek olanları tamam bunlar birbirine benzerdir diyebilirim.
+
+601
+01:30:44,627 --> 01:30:45,787
+Bu manuel yöntem.
+
+602
+01:30:46,807 --> 01:30:49,987
+Diğer yöntem ise Locality Sensitif Hashing yöntemi.
+
+603
+01:30:49,987 --> 01:30:59,027
+burada da ne yapıyorum? Bu signature matris içerisindeki dokümanların bentlerini, parçalarını ne yapıyorum?
+
+604
+01:30:59,148 --> 01:31:05,067
+Bir tane hashing fonksiyona koyuyorum. Bunların bakıtları map ettiriyorum.
+
+605
+01:31:05,608 --> 01:31:12,067
+Aynı bakıta düşmüş olan signature matrisleri ben candidate olarak alıyorum.
+
+606
+01:31:12,067 --> 01:31:21,747
+ve bu candidate'leri bulduktan sonra, candidate pair'leri, candidate ikilileri bulduktan sonra bunlar için similarity kalkulayışını yapıyorum.
+
+607
+01:31:22,127 --> 01:31:33,067
+Burada 100 binde 2 tane yapıyorsam örneğin, burada aynı vakıt içerisine düşmüş 100 tane doküman varsa o 100'ün ikilisi için ne yapıyorum?
+
+608
+01:31:34,747 --> 01:31:37,067
+Similarity değerlerine bakıyorum arkadaşlar.
+
+609
+01:31:37,608 --> 01:31:40,288
+Locality sensitive hashing'in de mantığı bu.
+
+610
+01:31:44,564 --> 01:32:03,084
+bununla ilgili hem Locality Sensitive Hashing ile ilgili bir tane örneğimiz olacak. Ondan sonra bir de Shingling ile ilgili bir tane örneğimiz olacak. Ben bu sample questionları dersin sayfasına koyacağım.
+
+611
+01:32:03,084 --> 01:32:18,363
+daha önce bu mapping MapReduce ile ilgili bir tane daha örneğimiz vardı bunu da yine dersin sayfasına koyacağım oradan bu örnekleri çalışabilirsiniz örneklerin yanıtları da var.
+
+612
+01:32:18,363 --> 01:32:38,163
+Bugün 3. çeptörü tamamlamış olduk. Bugün burada duracağız. Gelecek hafta 4. çeptörden başlayarak 0'dan 4. çeptörü işleyeceğiz. Bir de gelecek hafta size dönem projenizin ne olacağını detaylarıyla anlatacağım.
+
+613
+01:32:38,163 --> 01:32:52,583
+belki gelecek haftaya kadar dönem projenizi tek olarak mı yoksa grup olarak mı iki öğrenciden oluşan grup projesi olarak yapacaksınız yoksa tek öğrenci grubu olarak mı yapacaksınız ona karar verebilirsiniz.
+
+614
+01:32:52,583 --> 01:33:07,223
+Gruplarınızı şimdiden oluşturun. Projeniz MapReduce Programming ile olacak. Yani ilk ikinci çeptörümüzde konuştuğumuz MapReduce Programming'i büyük veri işleme ve analize algoritmaları kullanarak
+
+615
+01:33:07,223 --> 01:33:13,063
+implement edeceğiniz bir proje şeklinde olacak ama detaylarını gelecek hafta anlatacağım.
+
+616
+01:33:13,603 --> 01:33:20,683
+Gelecek hafta anlattıktan sonra size ondan sonra bir de proposal vermeniz için süre tanıyacağım.
+
+617
+01:33:21,603 --> 01:33:27,163
+Projenizde ne yapacaksınız? Hangi konuda yapacaksınız? Nasıl bir dataset bulacaksınız?
+
+618
+01:33:28,243 --> 01:33:36,443
+Kimlik beraber yapıyorsunuz projenizi? Bunların detaylarını içeren bir de sizden proposal talep edeceğim.
+
+619
+01:33:36,443 --> 01:33:45,223
+ama bunu gelecek hafta konuşalım. Bugünlük dersimizin içeriği bu kadar. Sorusu olan varsa sorabilir.
+
+620
+01:33:54,804 --> 01:34:01,304
+soru yok o zaman. İyi dersler dilerim arkadaşlar. Haftaya görüşürüz. Kolay gelsin.
+
+621
+01:34:06,547 --> 01:34:11,107
+İyi akşamlar. Kolay gelsin. İyi günler. İyi dersler.
