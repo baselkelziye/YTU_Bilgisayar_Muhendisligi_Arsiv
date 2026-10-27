@@ -1,0 +1,2215 @@
+1
+00:02:18,900 --> 00:02:20,800
+Arkadaşlar, sizin geliyor mu?
+
+2
+00:02:25,139 --> 00:02:25,819
+Geliyor hocam.
+
+3
+00:02:32,403 --> 00:02:34,183
+Tüklük'ü beş geçe başlayalım.
+
+4
+00:02:36,183 --> 00:02:37,243
+Az sonra görüşmek üzere.
+
+5
+00:06:17,812 --> 00:06:21,951
+Merhaba arkadaşlar. Nasılsınız?
+
+6
+00:06:23,211 --> 00:06:23,951
+Merhaba hocam.
+
+7
+00:06:33,267 --> 00:06:46,267
+İyisinizdir diye tahmin ediyorum, ümit ediyorum. Peki, şimdi bugünkü ders planımızda...
+
+8
+00:06:46,267 --> 00:06:49,548
+Açılmasın.
+
+9
+00:07:04,947 --> 00:07:21,967
+Bugün 16 Mart arama algoritmalarına başlayacağız. Bugün artık teknik manada yapay zeka yöntemlerini görmeye başlayacağız.
+
+10
+00:07:22,887 --> 00:07:24,967
+Geçen iki haftada...
+
+11
+00:07:25,651 --> 00:07:40,692
+İşin farklı boyutlarını biraz ele aldık. Bu hafta itibariyle teknik kısma geçiyoruz. Arama bu hafta başlıyor ve 5 hafta boyunca devam ediyor. Aslında şuraya kadar girilen kısım tamamen arama.
+
+12
+00:07:41,747 --> 00:07:56,747
+Bir açıdan baktığımızda, makine öğrenmesi kısmında yaptığımız işler de temelde arama işleri diye değerlendirebiliriz.
+
+13
+00:07:56,747 --> 00:08:07,747
+Rahatlıkla. Ama diskret bir uzayda, kontinüüs bir uzayda arama gibi olacak belki. Bunları yine konuşacağız.
+
+14
+00:08:08,084 --> 00:08:14,084
+Peki, o zaman başlayalım.
+
+15
+00:08:22,603 --> 00:08:25,963
+Arama slide'ını herkes görüyor mu? Sıkıntı var mı?
+
+16
+00:08:30,708 --> 00:08:31,668
+Görüyoruz hocam.
+
+17
+00:08:33,368 --> 00:08:33,668
+Peki.
+
+18
+00:08:34,588 --> 00:08:35,028
+Şimdi.
+
+19
+00:08:40,532 --> 00:08:54,532
+Yapacağımız, daha doğrusu ilgileneceğimiz ilk problem. İlk önce birkaç tane problemle ilgileneceğiz, öyle söyleyeyim. Daha sonra bu problemlerin ortak yönlerini biraz keşfedeceğiz.
+
+20
+00:08:56,532 --> 00:09:06,316
+Şimdi birinci problemimiz şu olsun, bir masamız var. Masanın üstünde küpler var mesela. Şurada şu sol tarafta. A, B, C diye. Böyle duruyorlar mesela.
+
+21
+00:09:08,244 --> 00:09:31,443
+Mevcut pozisyonun, istenilen pozisyonun ve bizim bir de ihtiyacımız olan, istediğimiz durum var. Bu başlangıç durumumuz mesela. Bu da istediğimiz en son durum. Şimdi burada bizim belli yapabildiğimiz hareketler, mesela bir küpü tutabiliriz ya da bir küpü yere koyabiliriz, küpü başka bir küpün üzerine koyabiliriz gibisinden yapabileceğimiz hareketler olduğunu düşünelim.
+
+22
+00:09:34,803 --> 00:09:45,983
+Başlangıç durumunu, sağ taraftakini dönüştürmek için aslında yapabileceğimiz olası hareketlerden bir dizi oluşturmamız gerekir.
+
+23
+00:09:45,983 --> 00:09:57,403
+Mesela burayı düşünürsek, ilk önce B'yi tut, sonra A'nın üzerine koy, sonra C'yi tut, onu da B'nin üzerine koy gibisinden bir hareket sırasından bahsediyoruz.
+
+24
+00:09:58,604 --> 00:09:59,903
+Buradaki çözüm dediğimiz şey bu.
+
+25
+00:10:00,000 --> 00:10:25,620
+Hareketler sırası olacak. Hareket dediğimiz şey aslında bir durumu başka bir duruma geçiren operatör demek. Şimdi şurada başka bir problem var. Yani başka bir problem değil. Aynı problemin başka bir uzaydaki hali var. Yani üç küplü değil de beş küplü hali var. Böyle söyleyelim. Onu biraz büyütelim. Ne demek istediğiniz biraz daha belki net anlaşılır.
+
+26
+00:10:27,604 --> 00:10:40,584
+Şimdi mesela bu başlangıç durumu. Bizim yukarıda sarkan bir kol var. Bunun yapabildiği işte bir küpü tutabiliyor. Sonra onu başka bir küpün üstüne bırakabiliyor ya da yere bırakabiliyor. Yapabildiği şeyler bu kadar çıkıyor.
+
+27
+00:10:44,340 --> 00:10:49,780
+Bu durumda, bu başlangıç durumumuz olsun, hedef durumumuzun ne olduğu şu anda önemli değil.
+
+28
+00:10:49,780 --> 00:10:55,660
+O belki ne bileyim hepsi beraber üst üste olsunlar falan gibisinden bir şey. Ama şu anda bizi ilgilendirmiyoruz.
+
+29
+00:10:57,140 --> 00:11:01,920
+Şunu düşünmek istiyoruz şu anda, şunu algılmak istiyoruz.
+
+30
+00:11:02,440 --> 00:11:09,400
+Şimdi bu bir başlangıç durumu, bu başlangıç durumunda benim yapabileceğim hareketler neler olabilir?
+
+31
+00:11:10,259 --> 00:11:32,019
+Bu durumda bakarsak yapabileceğim, şu anda küp tutma, yukarıda kol boş, dolayısıyla küp tutabilirim. Yapabileceğim tek şey o. B'yi tutabilirim, C'yi tutabilirim, bir de E'yi tutabilirim. Başka yapabileceğim bir şey yok. Buradaki üç tane çıkış, bu durumdan gidebileceğim üç tane farklı durum var. Bunu aslında ifade ediyorum.
+
+32
+00:11:33,011 --> 00:11:47,751
+Peki, bu üç tane durumun her birinden mesela yine gidilebilecek yeni durumlar oluşacak. Yani mesela şu durumu düşünürsek, bu durumdan gidilebilecek, mesela B şu anda tutuyor. B ne yapabilir? B'yi alıp A'nın üstüne koyabilir.
+
+33
+00:11:47,751 --> 00:11:49,391
+Burada yaptığı şey.
+
+34
+00:11:50,772 --> 00:12:13,692
+O değil. B'ye alıp A'nın üstüne koymamış. Niye koymamış? Çünkü zaten oradan geldi ya. Bir loop oluşmasın diye burada gösterilmemiş o. Ama yapılabilir. Yapılabilir mi? Evet yapılabilir. Bu arada yok ama o. Başka ne var A'nın üstüne koymamış? C'nin üstüne koyabilir. Şunu olarak C'nin üstüne koyabilir. Burada bunu görüyorsunuz. E'nin üstüne koyabilir. Burada işte E'nin üstüne koymuş. Ya da bunu yapabilir. Gerek koyabilir. Tamam.
+
+35
+00:12:14,932 --> 00:12:31,591
+Ve buradaki her bir durumdan da yine yeni durumlar oluşacak. Yeni durumlar oluşacak, yeni durumlar oluşacak. Dolayısıyla böyle bir durumlardan çıkan yeni durumlar, o durumlardan da çıkan yeni durumlar şeklinde böyle düşünürseniz bu bir ağaç haline geliyor değil mi? Bir ağacımız var sanki.
+
+36
+00:12:32,152 --> 00:12:42,412
+Peki, şimdi böyle bir ağacımız var. Bu ağacın da belli bir yerinde bizim istediğimiz hedef durum olsun.
+
+37
+00:12:42,995 --> 00:12:57,875
+Tamam. Mesela işte atıyorum, diyelim ki bizim istediğimiz durum şu durum olsun. Tamam. Yani ağacın çok derinliklerinde değil de burada olsun. Olabilir mi? Olabilir. Ben böyle bir başlangıç durumdan böyle bir hedef durumuna gitmek istiyorum.
+
+38
+00:12:59,700 --> 00:13:20,100
+O hedef durumu bulduğum anda, bu ağacın üzerinde mesela işte arama yapıyorum diyelim şöyle. Birazdan göreceğiz arama nasıl yapılıyor. O hedef durumu bulunduğum anda aslında o hedef durumu köke, ağacın köküne birleştiren, ağacın köküyle birleştiren pet benim aslında neyim olacak arkadaşlar?
+
+39
+00:13:34,772 --> 00:13:35,872
+Sonra anlaşıldı mı?
+
+40
+00:13:44,052 --> 00:13:45,092
+Sesim geliyor mu?
+
+41
+00:13:47,892 --> 00:13:49,512
+Geliyor hocam sesimiz.
+
+42
+00:13:50,632 --> 00:13:52,072
+Soru anlaşıldı mı?
+
+43
+00:13:53,032 --> 00:13:54,912
+Anladım ama benim cevabım yok.
+
+44
+00:14:06,548 --> 00:14:29,887
+[öğrenci] yazmış, çözüm, evet çözüm. Şurada ne dedik? Çözüm dediğimiz şey ne olacak dedik? Bir hareketler sırası olacak dedik. Mesela burası hedefse, bu hedefi köke birleştiren şu pet aslında bizim neyimiz anlamına geliyor? Çözümümüz anlamına geliyor. İlk önce şunu yap, şu hareketi yap, ondan sonra şu hareketi yap.
+
+45
+00:14:34,580 --> 00:14:35,580
+Evet.
+
+46
+00:14:39,124 --> 00:14:58,403
+Başka bir probleme bakalım. O problemimizde bir başlangıç noktası var. Bir labirentteyiz, bir başlangıç noktamız var. Gidemeyeceğimiz yerler var. Kırmızı bir de gidebileceğimiz yerler var. Beyaz. Başlangıç noktasına, hedef noktasına gitmek istediğimiz şey bu. Şu B'den buradan başlayacağız, şu H'ye gideceğiz. Buradan buraya giden yolu bulmak istiyoruz.
+
+47
+00:14:59,059 --> 00:15:09,059
+Tabi burada şunu düşünüyoruz da biz bu işleri kendimiz çözmek için değil, makinaya çözdürmek için neler yapabiliriz ona odaklanıyoruz.
+
+48
+00:15:09,059 --> 00:15:18,059
+Peki, şimdi burada bizim, işte bir tane robotumuz olduğunu düşünüyoruz. Bu robotun burada bulunması...
+
+49
+00:15:18,964 --> 00:15:33,764
+Hedefin burada bulunması. Bu bir durum. Şu anda bir durumun içerisindeyiz. Bu durumu değiştirebilecek hareketler neler aslında? Olası hareketlerimiz. Mesela burada sağa sola yukarı aşağı gidebilme fonksiyonları olsun bizim robotumuzun.
+
+50
+00:15:37,235 --> 00:15:48,256
+Olası hareketlerin maliyetleri birbirinden farklı olabilirler. Yani ne demek istiyorum? Şimdi bu sağa sola yukarı aşağı gitmenin her birinin maliyeti, onun için harcadığımız para, enerji vs. neyse bunlar birbirinden farklı da olabilirler.
+
+51
+00:15:49,011 --> 00:16:07,091
+Mesela sağa sola gitmek birbiriyle aynıdır ama yukarıya doğru gitmek, yer çekimine doğru daha fazla güç uygulamak gerektiğinden dolayı daha fazla enerji ve daha yüksek maliyete sebep olabilir. Ya da aşağı doğru gitmek daha ucuz falan olabilir diğerlerine göre. Dolayısıyla her bir hareketin maliyeti birbiriyle aynı olmak zorunda da değil.
+
+52
+00:16:07,860 --> 00:16:23,559
+Peki, amacımız ne? En az maliyetli hareketler dizisini bulmaya çalışıyoruz burada. Yani bu B ile H'yi birleştiren en az maliyetli yol nedir? Yol dediğimiz şeyde yine bir hareketler dizisi olacak.
+
+53
+00:16:23,559 --> 00:16:33,200
+Şimdi bunu birazcık düşünürsek şu yaptığımız, çizdiğimiz şey, bu bir durum, bir başlangıç durumu bu aslında.
+
+54
+00:16:35,508 --> 00:16:37,508
+Şöyle bir şey.
+
+55
+00:16:53,812 --> 00:17:01,492
+Bu başlangıç durumu. Bana söyleyebilir misiniz bu başlangıç durumundan kaç tane gidebileceğim yer var?
+
+56
+00:17:04,372 --> 00:17:05,492
+İki tane hocam.
+
+57
+00:17:06,851 --> 00:17:09,492
+Bir tane değil mi? Burada rahat gözüküyor bunlar.
+
+58
+00:17:14,492 --> 00:17:17,572
+Mesela işte bu bir tanesi, bu da.
+
+59
+00:17:17,907 --> 00:17:31,907
+Diğeri, nasıl bir şeyler olacak? Onların burada robot mesela burada şeye gitsin, şuraya gitmiş olsun. Tamam mı? Çizdiğim yere gitmiş olsun. Ya da onu şöyle göstereyim bir saniye. Daha farklı birinde bir saniye.
+
+60
+00:17:33,907 --> 00:17:43,907
+Şuraya gitmiş olsun. Burada da bir aşağı gitmiş olsun. Değil mi? Tamam. Sonra bunların her birinden gidebilecek şeyler var mı?
+
+61
+00:17:46,548 --> 00:17:50,548
+Olaç, değil mi? Herbinden de ben neymiştir.
+
+62
+00:17:54,932 --> 00:17:57,811
+Peki bu durumdan giderecek kaç tane durum var?
+
+63
+00:18:03,028 --> 00:18:08,668
+Bu durumdan gelecek kaç durum var? Geri dönmemek şartıyla.
+
+64
+00:18:09,307 --> 00:18:10,048
+Bir hocam.
+
+65
+00:18:10,387 --> 00:18:11,907
+Bir değil mi? Aynen öyle.
+
+66
+00:18:17,940 --> 00:18:36,880
+Bu durumdan gidebilecek, buradan gidebilecek iki tane var herhalde değil mi? Ya aşağıya inabilir ya da yana gidebilir. Onları da çizelim. Buradan gidebilecek bir tane durum var. Buradan gidebilecek iki tane durum var.
+
+67
+00:18:38,228 --> 00:18:52,228
+Buradan gidilecek, mesela şurada ise aşağıya inebilir yapabileceği başka bir şey. Geri dönmeleri yazmıyorum. Bir önceki adıma dönmesin. Bu durumda bu tarafa doğru gidebilir. Ya da bir aşağıya inebilir.
+
+68
+00:18:57,011 --> 00:19:01,132
+Bunu daha devam ettirebilir miyim? Evet, ettirebilirim. Bunda bir sıkıntı yok.
+
+69
+00:19:01,132 --> 00:19:13,771
+En nihayetinde tahminimiz şu ki, bu ağacın epey epey aşağılarında bir yerlerde.
+
+70
+00:19:19,092 --> 00:19:22,012
+Burada böyle bir sürü seviyeler olduğunu düşün.
+
+71
+00:19:24,211 --> 00:19:26,612
+Tamam. Bir sürü durumlar var.
+
+72
+00:19:26,612 --> 00:19:35,052
+Orada bir yerlerde şöyle bir durum var ki, o durumda robot şurada.
+
+73
+00:19:38,012 --> 00:19:39,012
+Tamam.
+
+74
+00:19:41,652 --> 00:19:45,092
+Ve ben o duruma eriştiğim anda...
+
+75
+00:19:45,140 --> 00:20:05,360
+Ve oraya mesela işte bir yerden gelecek değil mi onun? Bir üstünde bir yerden çıkmış. O zaman ben buradan, bu noktadan, benim bu tık tık tık tık tık tık tık tık şeklinde en tepeye kadar, yani köke kadar öyle söyleyeyim, ağacın köküne kadar birleştiren pet benim neyim olacaktır bu durumda?
+
+76
+00:20:10,612 --> 00:20:13,692
+Çözüm. Çözüm olacak değil mi?
+
+77
+00:20:24,723 --> 00:20:26,324
+Peki, devam edelim.
+
+78
+00:20:36,564 --> 00:21:00,864
+Başka bir problemimiz, problemimizde bir cinalimiz var. Sandalla nehrin karşı kıyısına kabak keçi ve kurtunu geçirmek istiyor. Böyle bir şeyimiz var. Problemimiz var. Yani başlangıçta hepsi nehrin güney tarafındalar. Sonucunda nehrin kuzey tarafında olmalarını istiyoruz.
+
+79
+00:21:02,132 --> 00:21:13,932
+Fakat belli kısıtlarımız var. Yani normalde düşünürseniz, sandalın içine hepsini birer atsın, karşıyaya geçsin. Ama belli kısıtlarımız var. Ne onlar? Birincisi şu. Sandal Ali ile birlikte en fazla bir tane nesneyi taşıyabiliyor.
+
+80
+00:21:17,971 --> 00:21:22,172
+Otonom gidemiyor sandal. Tek başına gidemiyor zaten sandal.
+
+81
+00:21:22,172 --> 00:21:28,371
+Ve Ali içine bindikten sonra ki zaten binmek zorunda, yanına en fazla bir şey alıyor.
+
+82
+00:21:28,371 --> 00:21:31,172
+Kabak alabiliyor ya da keçi alabiliyor ya da kurt alabiliyor.
+
+83
+00:21:31,172 --> 00:21:34,371
+Aynı anda bir tane nesneyi taşıyor.
+
+84
+00:21:34,371 --> 00:21:39,172
+Ve bir kısıtımız daha var şu, keçi kabak ve kurt ve keçi ikilleri Ali yanlarında değilken,
+
+85
+00:21:39,172 --> 00:21:42,371
+nefesine aynı tarafında olmamalılar, yapısı yiyorlar vesaire vesaire.
+
+86
+00:21:42,900 --> 00:21:52,640
+Yani mesela bu durumda Ali kurtu alıp karşıya geçse keçi ve kabak bu tarafta yalnız kalacakları için keçi kabağı yiyecek.
+
+87
+00:21:52,760 --> 00:22:00,260
+Ya da kabağı alıp karşıya geçse kurt ve keçi yalnız kalacağı için bu sefer de kurt keçi yiyecek.
+
+88
+00:22:00,260 --> 00:22:01,019
+Tamam mı?
+
+89
+00:22:02,700 --> 00:22:09,260
+Şimdi bu problemi de deminki gibi düşünmeye çalışırsak durumlarımız olmalı.
+
+90
+00:22:10,195 --> 00:22:30,295
+Durumları birbirine geçiren hareketlerimiz olmalı. Ve bir başlangıç ve bitiş durumunu da tanımlamış olmalıyız. Ve aynı şekilde kısıtları da tanımlamış olmalıyız. Şimdi kısıtlar derken, mesela şu problemdeki kısıtlar nelerdir? Bu problemdeki kısıtları ne olarak ifade edebilirsiniz bana?
+
+91
+00:22:37,971 --> 00:22:40,351
+Sağa sola, yukarı aşağı gidebiliyor sadece.
+
+92
+00:22:41,771 --> 00:22:42,531
+Evet, başka?
+
+93
+00:22:43,451 --> 00:22:44,072
+Engeller.
+
+94
+00:22:44,371 --> 00:22:48,672
+Bir de engeller var değil mi? Engeller. Şey kısmı.
+
+95
+00:22:49,107 --> 00:23:08,307
+O kırmızı yerlere gidemiyorsunuz. Yani o sağa sola yukarı aşağıya her an uygulayamıyorsunuz. Belli durumlarda belli kısımlarını uygulayabiliyorsunuz. Bunlar kısıtlarımız bizim. Burada da aynı şekilde belli kısıtlarımız var. İstediğimiz durumdan geçemiyoruz. İstediğimiz duruma gidemiyoruz. Belli durumlardan geçmememiz gerekiyor. Problem öyle.
+
+96
+00:23:09,523 --> 00:23:27,483
+Bunu nasıl gösterebiliriz? Bu problemin durumunu nasıl gösterebiliriz? Şimdi burada Ali ve Sandal aynı olacaktır için, Sandal için ayrı bir şey tutmamıza gerek yok. O zaman çiftçimiz Ali için bir şey tutabiliriz. Kurt, keçi ve kabak için bir yerler tutabiliriz.
+
+97
+00:23:27,483 --> 00:23:36,483
+Bir nesnenin de aslında iki tane farklı pozisyonu var. Ne onlar? Bir tanesi nehrin kuzeyinde ya da güneyinde olmayız. Başka da bir olası durum yok.
+
+98
+00:23:37,011 --> 00:23:48,731
+Dolayısıyla dört tane harften oluşan, ki her bir harf, güney diye gösterecek n ya da s olabilir.
+
+99
+00:23:48,731 --> 00:23:55,011
+Bunları bir yalı iki de diyebilirsiniz de bu tane yön belirtmesi açısından.
+
+100
+00:23:55,011 --> 00:24:00,731
+Bir başlangıç durumumuz var. Bütün nesnelerimizin hepsi güneyde.
+
+101
+00:24:00,980 --> 00:24:17,860
+Hedef durumumuz ise bütün nesnelerimiz kuzeyde. Yani biz buradan başlayacağız. Belli hareketler uygulayarak şuraya erişmeye çalışacağız. Aynen şurada yaptığımız gibi bir yerden başladık. Belli hareketler uygulayarak bir hedef var. O hedefe doğru gitmeye çalışacağız.
+
+102
+00:24:21,920 --> 00:24:33,380
+Belli durumlar var ki bu durumlardan geçmemiz gerekiyor. Ne onlar? Ali orada değilse işte kabak ve keçi aynı yerde olmamalı. Ali kuzeydeyken kabak ve keçi güneyde olmamalı. Ali güneydeyken kabak ve keçi.
+
+103
+00:24:33,844 --> 00:24:35,864
+kuzeyde olmamalı.
+
+104
+00:24:36,244 --> 00:24:38,144
+Şimdi şuradaki alt çizgiler
+
+105
+00:24:38,144 --> 00:24:39,943
+rin anlamı orasının
+
+106
+00:24:39,943 --> 00:24:41,864
+değerinin önemi yok demek. Yani
+
+107
+00:24:41,864 --> 00:24:43,504
+burada kabak keçi ve pardon
+
+108
+00:24:43,504 --> 00:24:45,203
+kurt ve keçi var mesela burada.
+
+109
+00:24:45,203 --> 00:24:46,844
+Kurt ve keçi. Kurt ve keçinin
+
+110
+00:24:46,844 --> 00:24:49,244
+ile alakalı bir situasyonu ama kaban yerinin ne olduğu
+
+111
+00:24:49,244 --> 00:24:51,384
+önemli değil. Yani bu şu yazdığımız şey
+
+112
+00:24:51,384 --> 00:24:53,364
+aslında iki tane durumu ifade ediyor.
+
+113
+00:24:53,695 --> 00:25:08,596
+Bu iki durumdan da geçmemeliyiz. Bu da iki durumu ifade ediyor. Bu da dört etti. Burada sekiz tane durum var. Sekiz tane durumdan geçmemeliyiz. Geçmemiz gereken durum sayısı sekiz. İlk durumumuz bu, son durumumuz bu. Peki kaç tane durum var bu problemde?
+
+114
+00:25:18,932 --> 00:25:19,971
+16'ın hocam.
+
+115
+00:25:21,471 --> 00:25:22,372
+2 üzeri 4'ün.
+
+116
+00:25:23,539 --> 00:25:50,299
+Evet, 16 değil mi? Zaten yani 4 tane olası şey var. Değişkiğimiz var, bir değişiklik. İki tane farklı değeri var. Dolayısıyla durum sayımız 16. 8 tanesi burada, 2 tanesi burada. O zaman geçebileceğimiz de yani aralarda da çok da fazla durum kalmamış aslında. Peki. Şimdi devam edelim. Hareketleri nasıl tanımlıyor? Hareket dediğimiz şey, durumları birbirine dönüştüren. Aksiyon, hareket, operatör bunların hepsi aynı şey anlamına geliyor. Mesela keçiyi kuzeye taşımak diye bir…
+
+117
+00:25:50,675 --> 00:26:09,976
+Operatörümüz olsun. Keçiyi kuzeye taşımak için keçinin nerede olması lazım? Keçinin güneyde olması lazım. Peki Ali nerede olması lazım? Ali'nin de güneyde olması lazım. Keçiyi kuzeye taşımak için yani kabağa sen keçiyi al buraya getir falan gibisinden bir şey diyemiyoruz. Kabak sandığı kullanamıyor. Ali kullanabiliyor.
+
+118
+00:26:10,355 --> 00:26:29,576
+Dolayısıyla Ali'nin güneyde olması lazım. Bitiş durumda hem keçi hem Ali kuzeyde olacaklar. Diğer nesnenin herhangi bir bölüm yok yani keçiyi kuzeye taşıma hareketi için. Bunu mesela burada şu şekilde göstermişiz. Move go north, buradaki move hareket ettir. Yani keçiyi kuzeye taşı.
+
+119
+00:26:30,548 --> 00:26:51,628
+Bakın burada SS var, N var. Wolf ve Kaban durumları neyse artık onlar. Yani kuzeyde ya da güneyde olabilir. Hiç fark etmez. Onların üzerinde bu yaptığımız işlemin hiçbir etkisi yok. Yani burada bu Wolf neyse burada da bu olarak kalıyor. Çünkü biz Kurt'u hareket ettirmiyoruz.
+
+120
+00:26:52,307 --> 00:26:59,628
+Ya da kaba hareket etmiyor. Sadece keçi hareket ediyor. Keçi ve Ali ikisi birden güneydeyken ikisi birden kuzeye gidiyorlar. Tamam mı?
+
+121
+00:27:01,628 --> 00:27:08,548
+Burada bunun bu problemin bir çözümü var. Şurada aslında, şunları biraz daha görünür yaparsam.
+
+122
+00:27:18,259 --> 00:27:28,480
+Bu SS diye yazdıklarım ne? Yani S1, S2, S3 falan diye yazdığım şeyler neyi gösteriyor? Bakın bakalım.
+
+123
+00:27:31,720 --> 00:27:36,339
+S1 dediğim şey ne? S2 ne? S3 ne? Neyi ifade ediyorlar?
+
+124
+00:27:44,211 --> 00:27:46,091
+Durumları mı hocam? O anki durumu.
+
+125
+00:27:46,411 --> 00:27:48,471
+Evet, aynen öyle. O anki durumları gösteriyorlar.
+
+126
+00:27:48,471 --> 00:28:06,571
+Şimdi bizim S1 dediğimiz şey, SSS, yani başlanmış durumu. Yukarısında da onun grafiksel gösteriyor. Şu ortadaki mavi çizgi aslında nehri gösteriyor. Bizim işte Farmer, Wolfgott ve Kabüç bu taraftalar, nehrin güney tarafındalar. Hepsini SSS ile yazılmış.
+
+127
+00:28:09,811 --> 00:28:18,011
+Şu operatörü uygularsam, bu operatör move got north demek. Move got north, işte keçiyi kuzeye taşı.
+
+128
+00:28:18,771 --> 00:28:27,691
+Bunu uygularsam, çiftçi ne yapmış? Keçiyi almış, kuzeye gitmiş. Daha sonra ne olmuş? Move farmer sold demiş.
+
+129
+00:28:28,311 --> 00:28:33,831
+Çiftçi tek başına ne yapmış? Geriye dönmüş. Gördüğünüz gibi çiftçi farmer, keçiyi burada tek başına bırakmış.
+
+130
+00:28:34,051 --> 00:28:35,671
+Keçi tek başına kalanında bir sıkıntı var mı? Yok.
+
+131
+00:28:36,468 --> 00:28:59,028
+Sıkıntı başkaydı. Daha sonra buraya geldi. Ondan sonra buna Wolfnorth'u uygulamış. Yani bu sefer kurtu kuzeye taşı demiş. İkisi beraber kuzeye gitmişler bakın şu anda keçinin yanında. Şu anda bakın Farmer, keçi ve kurt birlikteler. Farmer şu anda tek başına geri dönse sıkıntı olacak değil mi? Ama öyle yapmayacak işte. Ne yapacak?
+
+132
+00:28:59,859 --> 00:29:16,500
+Bu sefer keçiyi tekrardan güneye taşıdı. Keçiyi tekrardan güneye aldı. Buraya geldi. Sonra bu sefer kabağı kuzeye taşıdı. Sonra kendisi tek başına döndü. Kurt ve kabağı tek başına bırakabilir. En sonunda da tekrardan keçiyi aldı kuzeye taşıdı. Keçiyi baya bir taşıyor değil mi? Peki.
+
+133
+00:29:21,140 --> 00:29:39,720
+Bu bir çözüm, şurada gördüğünüz. Ve bu çözüm işte bir hareket, iki hareket, üç hareket, dört hareket, beş hareket, altı hareket, yedi hareket. Yedi hareket yapmışız. Yani yedi derinlikte bir çözüm bu aslında. Hani o deminki ağacı düşünürseniz, hani şey ağacını oluşturur ki.
+
+134
+00:29:43,124 --> 00:29:46,624
+Şurada bir ağaç gibi bir şey oluşturur ki aslında şöyle adım adım adım.
+
+135
+00:29:46,624 --> 00:29:50,624
+Burada mesela bu deminki problemdi. Mesela 7 derinlikteymiş o çözüm.
+
+136
+00:29:50,624 --> 00:29:51,564
+Tamam mı?
+
+137
+00:30:06,836 --> 00:30:08,316
+Şimdi başka bir problem.
+
+138
+00:30:18,067 --> 00:30:20,608
+Problemim ilk defa filmde görmüştüm.
+
+139
+00:30:27,092 --> 00:30:28,092
+Bu da son.
+
+140
+00:31:16,756 --> 00:31:20,395
+Die Hard filmini seyredeniniz var mı?
+
+141
+00:31:20,395 --> 00:31:24,456
+Anlızda hiç. Gerçi bir seridir. Birkaç tanesi. İkiden herhalde.
+
+142
+00:31:24,456 --> 00:31:28,056
+Anlaşılmıyorsam ama. Seyrettiniz mi?
+
+143
+00:31:33,236 --> 00:31:34,156
+Eski filmler.
+
+144
+00:31:37,779 --> 00:31:39,519
+Sevden bir kişim var. Neyse.
+
+145
+00:31:40,759 --> 00:31:43,100
+Şimdi görüyor musunuz ekranı?
+
+146
+00:31:46,740 --> 00:31:48,019
+Gözüküyor hocam evet.
+
+147
+00:31:48,420 --> 00:31:50,839
+Tamam. Bunlar bizim kahramanlarımız.
+
+148
+00:31:52,480 --> 00:31:54,000
+Rus filiste Samuel Jackson.
+
+149
+00:31:55,740 --> 00:32:00,359
+Bir manyak var filmde. Şehrin çeşitleyenlerine bombalar koyuyor.
+
+150
+00:32:00,359 --> 00:32:06,859
+İşte bombaları patlatmaları için de bu ikisinin bir problem çözmesini istiyor burada.
+
+151
+00:32:07,059 --> 00:32:08,259
+Şimdi o sahneyi göreceğiz.
+
+152
+00:32:24,051 --> 00:32:25,531
+Hıçan bize ses gelmiyor.
+
+153
+00:32:53,299 --> 00:33:10,000
+Sesini alabiliyor musunuz? Yok hocam, ses gelmiyor. Tamam ama altyazıları görebiliyorsunuz değil mi? Evet. Tamam, zaten sonra seyredersiniz. Şöyle küçük bir şey var, onu göstereceğim. Ondan sonra devam edeceğiz.
+
+154
+00:33:55,059 --> 00:34:14,359
+Evet. Şimdi problem ne? Burada mesela üçlük ve beşlik iki tane bidon var. Bunları kullanarak tabii ki beşliğin içerisinde dörtlük bir su olmasını istiyor ve onu tartacaklar. Tarttıklarında da.
+
+155
+00:34:14,704 --> 00:34:29,824
+Tam 4 değilse eğer, ondan işte bir ons bile fazla eksik falan olursa, o durumda patlayacak bomba. Böyle bir senaryo filmden. Şimdi buradaki problemi çözmeye çalışacağız aslında biz de.
+
+156
+00:34:37,844 --> 00:34:49,444
+Oradaki küçük bir fark var. Burada üçlük ve dörtlük iki tane galon var ve bizim amacımız da iki galonluk bir şey elde etmeye çalışıyoruz. Tamam mı?
+
+157
+00:34:52,144 --> 00:34:59,644
+Peki, şimdi sınırsız bir su kaynağımız var.
+
+158
+00:34:59,711 --> 00:35:24,051
+Ama burada mesela şey gibisinden bir şey yapamıyoruz. Yani hani şu dördü alayım, o dördün işte göz kararı yarısı iki eder falan gibisinden bir harekette bulunamıyoruz. Niye? Çünkü çok kesin olması isteniyor. Bu tam ağzına kadar doluysa bu dört demek. Bu tam ağzına kadar dolusa üç demek. Ama işte şurası falan bunun yarısı eder falan gibisinden bir hareket etmemizi istenmiyor. Yoksa bomba patlıyor falan.
+
+159
+00:35:25,492 --> 00:35:45,311
+Dolayısıyla aşağı yukarı hareketler yapmamamız gerekiyor. Yani tahmini hareketler yapmamamız gerekiyor, öyle söyleyeyim. Peki, şimdi bunu çözmek için, makineye çözdürmek için yine deminki gibi düşünmeye çalışırsak, bizim ilk önce neyi temsil etmemiz gerekiyor?
+
+160
+00:35:57,427 --> 00:36:00,688
+Problemleri çözememek için ilk önce neyi temsil etmemiz gerekiyoruz?
+
+161
+00:36:12,307 --> 00:36:38,307
+Durumları değil mi arkadaşlar? Durumları temsil etmemiz gerekiyor. Durumlarımızı da iki tane rakamla temsil edebiliriz. İki tane rakamdan ilki dört kalonluk bidonundaki su miktarını, ikincisi ise üç kalonluk bidonundaki su miktarını göstersin. Başlangıç durumumuz sıfıra sıfır, bitiş durumumuz da sıfıra. Ne olduğu önemli değil. Yani buradan başlayacağız, buraya doğru gideceğiz. Hedefimiz bu olacak. Başlangıç durum, bitiş durum.
+
+162
+00:36:38,655 --> 00:36:46,416
+Şimdi bizim bir de neyi tanımlamamız gerekiyor bunun haricinde? Başlangıç ve bitiş durumlarını tanımladıysak eğer neye ihtiyacınız var şimdi peki?
+
+163
+00:36:50,036 --> 00:36:54,796
+Arkadaşlar, konuşabilirseniz çok mutlu olurum eğer ki konuşabiliyorsanız.
+
+164
+00:36:56,275 --> 00:36:59,836
+Hocam, bu iki niye y de olmuyor da sadece x de oluyor?
+
+165
+00:37:01,775 --> 00:37:04,376
+Çünkü dörtlüğün içerisinde iki olmasını istiyor.
+
+166
+00:37:04,855 --> 00:37:05,476
+Öyle dedi.
+
+167
+00:37:05,556 --> 00:37:06,796
+Problem öyle verildiği için.
+
+168
+00:37:07,336 --> 00:37:07,615
+Tamam.
+
+169
+00:37:08,275 --> 00:37:11,876
+Tamam, yoksa özel bir sebebi yok yani. Problem öyle verildiği için.
+
+170
+00:37:13,315 --> 00:37:16,216
+Arkadaş çete yazdı hocam, aksiyonlara ihtiyacımız var yazdı.
+
+171
+00:37:17,427 --> 00:37:18,547
+Evet, sure.
+
+172
+00:37:22,547 --> 00:37:44,347
+Aksiyonlarımız neler olabilirler? Aksiyonlarımızın neler olduğuna geçmeden önce bir ara verelim arkadaşlar. Şu anda 36 geçiyor. 46 geçe şey yaparız. Başlarız yine. Bir kalkın, bir dolaşın, bir kendinize gelin, bir açılın. Biraz daha sesinizi duymak.
+
+173
+00:37:45,780 --> 00:37:50,580
+Biraz da tepki almak istiyorum. Sizlerden öyle söyleyeyim.
+
+174
+00:37:56,260 --> 00:37:57,880
+Hocam sesim geliyor mu acaba?
+
+175
+00:37:58,380 --> 00:37:59,020
+Evet, geliyor.
+
+176
+00:37:59,660 --> 00:38:04,560
+Geçtiğimiz hafta rasyonel ajanları işlememiş olabilir miyiz? Ben ders kaydına baktım da biraz önce.
+
+177
+00:38:04,860 --> 00:38:05,360
+İşlemedik.
+
+178
+00:38:05,380 --> 00:38:08,420
+Yapay zekaya girişi işlemişiz en son. O slide'ı bitirmişiz.
+
+179
+00:38:08,840 --> 00:38:09,180
+Doğru.
+
+180
+00:38:11,100 --> 00:38:11,760
+İşlemedik.
+
+181
+00:38:16,019 --> 00:38:20,659
+Bir şey kaçırmadın yani. Tamamdır hocam. Onu haber vereyim dedim de.
+
+182
+00:38:22,980 --> 00:38:23,940
+Teşekkür ederim.
+
+183
+00:38:39,443 --> 00:38:49,583
+[öğrenci], yurttan bağlanınca demiş. Yurtlar boşalmadı mı? Bilmediğimden soruyorum.
+
+184
+00:38:59,860 --> 00:39:08,760
+Çalışanlara vesaire arkadaşlar. Neyse tamam. Detaylar ederim. Boşaldı da o deprem bölgesinde olduğu için kalabiliyor hocam.
+
+185
+00:39:12,436 --> 00:39:30,856
+Çalışanları açtılar demiş. Neyse, tamam. Peki. Tamam. İstekle kalabiliyorlar. Benim arkadaşım burada çalışıyordu İstanbul'da. İsteyden önceden de. Dilekçeyle istiyor bir oda. İzin veriyorlar kalmalarına bazen.
+
+186
+00:39:31,396 --> 00:39:37,115
+Anladım, anladım. İmkanım varsa izin veriyorlar. Peki. Tamam, 38 geçiyor.
+
+187
+00:39:39,251 --> 00:39:40,652
+O kadar ara diyoruz.
+
+188
+00:39:41,912 --> 00:39:43,711
+Tamam, on dakika sonra görüşmek üzere arkadaşlar.
+
+189
+00:39:44,632 --> 00:39:46,711
+Dedim ki iyi bir kalkın, beyniniz yüzünüz yıkın. Tamam.
+
+190
+00:39:47,511 --> 00:39:48,471
+Az sonra görüşürüz.
+
+191
+00:50:21,076 --> 00:50:23,096
+Tekrardan merhaba arkadaşlar.
+
+192
+00:50:28,692 --> 00:50:29,652
+Merhaba hocam.
+
+193
+00:50:30,471 --> 00:50:38,351
+Şimdi, hareketlerimiz, yani durumların yöne geçen hareketleri düşüneceğiz, neler yapabiliriz diye.
+
+194
+00:50:38,971 --> 00:50:41,992
+Şimdi buraya düşündüğümüzde, hani yapabileceğimiz neler olabilir?
+
+195
+00:50:42,251 --> 00:50:46,572
+İşte pompada sınırsız su var, işte üçlüyü mesela ağzına kadar doldurabiliriz.
+
+196
+00:50:46,751 --> 00:50:48,511
+Ya da dörtlüyü ağzına kadar doldurabiliriz.
+
+197
+00:50:48,592 --> 00:50:49,971
+Gibi gibi böyle hareketler yapabiliriz.
+
+198
+00:50:50,032 --> 00:50:51,532
+Şimdi ondan neler olabileceğini görelim.
+
+199
+00:50:52,755 --> 00:51:15,895
+Şimdi 4 kolonluk bidonu pompayla doldur. Bu bir numaralı aksiyonumuz olsun, operatörümüz olsun. Bunun lafla gösterimi burada, formal gösterimi burada. Yani x-y durumunu 4'e y durumuna dönüştürüyor bu. X'in içinde ne kadar sol olursa olsun onu 4'e dönüştürüyor. Çünkü 4 kolonluk bidonu pompayla doldurmuş. Az ne kadar doldurduydu özellikle.
+
+200
+00:51:16,403 --> 00:51:34,483
+Bu aksiyonun uygulanabilmesi için x'in içerisinde 4'ten az o zaten az ne kadar doluysa yapacağınız bir şey değil bu hareket. İkinci hareket üçlüyü pompayla doldurur. Tamam mı? Aynısı. Dörtlüyü yere boşalt. Yani x, y'yi x ne olursa olsun sıfıra çeviriyor.
+
+201
+00:51:35,219 --> 00:51:53,179
+Bunun için de zaten boş olmaması gerekiyor. Dörtlüğü boşalt. Sonra şuna bakalım. Dört kalonluk bidon dolana kadar üç kalonluk bidonla su doldu. Şimdi X, Y'yi bu neye dönüştüre bakın. Dört kalonluk bidon dolana kadar diyor. Dolacak o illaki dolacak. Dolduğu anda o zaman dört olacak.
+
+202
+00:51:54,099 --> 00:52:15,079
+Yani x, 4 olacak. Peki y'den ne kadar azalacak? 4 eksi x kadar azalacak değil mi? Y'den 4 eksi x kadar azalacak. Bu hareketi yapabilmeniz için ise x ve y'nin toplamının 4'ten büyük olması lazım. Çünkü 4 konluk bidonun dolabilmesi için başlangıçta x artı y'nin 4'ten büyük eşit olması lazım. Ve y'nin de 0'dan büyük olması lazım.
+
+203
+00:52:16,884 --> 00:52:41,804
+Tersi 3 kalanlık bidonu da ona kadar dörtlükten doldur. Burada y bu sefer 3'e dönüşecek. X'ten ne kadar su gidecek? 3 eksi y kadar su gidecek. Bunu yapabilmeniz için de x artı y'nin 3'ten büyük olması ve x'in de 0'tan büyük olması lazım. Başka ne var? 3 kalanlık bidonundaki suyun tamamını 4 kalanlığa boşalt. X virgül y'yi x artı y virgül 0'a dönüştürüyor. Burada da x artı y 4'ten küçükse bunu yapabilirsiniz.
+
+204
+00:52:42,291 --> 00:53:06,452
+4 kalonluk videodaki suyun tamamını 3 kalonla boşalt diyor. Boşalt dediği için yine x tamamen sıfıra dönüşüyor. Y ise x artı y dönüşüyor. Bunu yapabilmeniz için x artı y'nin 3 tane küçük olması lazım. O aksi takdirde bu taşıcağı için taşırmak istemiyoruz biz. Zaten taşırmayana kadar da olur desek o zaten şuradaki şuydu.
+
+205
+00:53:09,460 --> 00:53:30,780
+Şimdi bu operatörü sekiz tane operatör tanımladık. Şimdi bir tane çözüm göstereceğim. Buradaki bu çözüm, şu duruma sıfıra sıfır, bu başlangıç durumu ben buna 2'nin oğlu operatörü uyguluyorum. 2'nin oğlu operatör neydi bakalım burada? 2 numaralı operatör 2 burada. 3 konluk bilonu pompayla doldururuz. 3 konluk bilonu pompayla dolduruz hemen sıfıra sıfırı.
+
+206
+00:53:31,251 --> 00:53:52,132
+0'ı 3'e dönüştürürüm. Tamam. Şimdi 0, 3 durumuna 7 numarayı uyguladıyor. 7 numara neymiş? 3 konluk bir dondurduk üstünün tamamı, 4'e boşalt. 0, 3'i bu neye dönüştürür? 3'e 0'a dönüştürecek. Buna 2 uyguladıyor. 2 zaten yine doldurmaktı. 3'e 0'ı 3'e 3'e dönüştürüyor. 3'e 3 durumuna 5'i uyguladıyor. 5 neydi?
+
+207
+00:53:53,139 --> 00:54:19,759
+Dört konluk bidonu doğana kadar üçlükten dolduruyoruz. O zaman bu üç üçü üçten bir kalonu buraya aldı. Dörde iki oldu. Buna üçü uygula diyor. Üç neydi? Dört konluk bidonu yere boşalttı. Dörde iki neye dönüştü o zaman? Sıfıra ikiye dönüştü. Sıfıra ikiye yedi uygula diyor. Yedi zaten ondan onaydı herhalde. Üç konluk bidonu tamamlandı. Dörde boşalt. Bu da sıfıra ikiye sıfıra getirdi.
+
+208
+00:54:21,204 --> 00:54:29,583
+Dolayısıyla başlangıç durumundan hedef durumuna giden bir hareketler sırası olarak biz çözümü ne yaptık? Yine ifade ettik.
+
+209
+00:54:30,884 --> 00:54:36,264
+Şu ana kadar konuştuğumuz problemlerin üçünü de aynı hale getirdik aslında fark ettiyseniz.
+
+210
+00:54:37,944 --> 00:54:42,264
+Durumlar, başlangıç durumu, hedef durumu, durumlar arası geçişleri sağlamak.
+
+211
+00:54:42,559 --> 00:54:57,179
+Sağlan operatörleri tanımlamak ve bir çözüm bulduğumuzda o çözümden ağacın kökü diyeceğimiz yere olan PET de bir hareket sırası aslında. O hareket sırası da bize çözümü temelde veriyor.
+
+212
+00:54:59,119 --> 00:55:02,319
+Şu ana kadar ki bütün problemlerimizi bu hale getirdik. Güzel.
+
+213
+00:55:03,979 --> 00:55:06,319
+Aynı hale getirmenin avantajı ne olacak?
+
+214
+00:55:07,092 --> 00:55:24,912
+Aynı tür yapılarla çözebileceğiz bunları. Şu anda nasıl çözdüğümüzden hiç bahsetmiyoruz. Birazdan geçeceğiz ona. Ama hepsini aynı yapıya, benzer yapıya taşıdığımızda hepsini aynı tür algoritmaların kullanılır. Her biri için ayrı ayrı çözümler keşfetmemize gerek kalmayacak.
+
+215
+00:55:26,996 --> 00:55:48,895
+Ne kadar farklı görünürlerse görünsünler bu problemler öyle söyleyelim. Bunların ortak bir temsili aslında olacak elimizde. Onu kurmaya çalışıyoruz daha doğrusu. Başka bir problem. Sekizlik puzzle problemi. Sekizlik puzzle problemindeki hikayemiz, şu bir başlangıç durumumuz var. Bu eskiden böyle oyuncaklar vardı, on altılıkları falan vardı bunların da.
+
+216
+00:55:49,280 --> 00:56:01,260
+Bir resim var. 16 parçaya bölünmüş küçük küçük plastiklerden oluşan. Bunlar böyle kaydırılabiliyor. Bir tane boş bir kare var. Başlangıçta karışık olarak size veriyor. Siz o resmi orijinal haline döndürmeye çalışıyorsunuz.
+
+217
+00:56:02,260 --> 00:56:16,660
+Yani şey gibi belki hani Rubik küpün iki boyutlu hali gibi düşünebilirsiniz onu. Neyse. Sonuç olarak bir başlangıç durumu var. Şu başlangıç durumu ve bir de hedef durumu var. Şurada görüyorsunuz. Bu da hedef durumumuz.
+
+218
+00:56:17,427 --> 00:56:38,907
+Başlangıç belirt durumunu belirtilden sonra bizim yapmamız gereken şey neydi problemde? Operatörleri tamlamak değil mi? Şimdi operatörleri düşünelim. Şimdi bu durumda bizim yapabileceğimiz aslında kaç tane hareket var? Üç tane hareket var. Ne onlar? Bir tanesi bir numaralı taşı aşağı kaydır diyebiliriz. Ya da yedi numaralı taşı sağa kaydır ya da beş numaralı taşı sola kaydır diyebiliriz.
+
+219
+00:56:39,476 --> 00:56:47,996
+Dolayısıyla her bir taş için aslında aşağı yukarı sağa sola gibisinden bir şey düşündüğümüzde 8 tane taşımız var. 32 tane farklı operatörümüz oluyor. Doğru mu?
+
+220
+00:56:53,652 --> 00:56:57,052
+Görebildik mi bunu? 32 tane farklı operatöre gereksinimizi.
+
+221
+00:57:00,351 --> 00:57:01,311
+Evet, ona getireceğim.
+
+222
+00:57:02,172 --> 00:57:15,751
+Tamam. Şimdi, 32 operatör çok, yani operatörün sayısı çok fazla olursa arama uzayının karmaşıklığı falan çok büyüyor.
+
+223
+00:57:16,592 --> 00:57:21,032
+Onu azaltmak için aslında şöyle düşünebiliriz.
+
+224
+00:57:21,844 --> 00:57:27,864
+Benim bütün yaptığım hareketlerin hepsinin boş kareyi hareket ettirmek olarak hayal edebilirim.
+
+225
+00:57:27,944 --> 00:57:29,003
+Yani ne demek istiyorum?
+
+226
+00:57:30,043 --> 00:57:36,844
+Bir numaralı taşı aşağı kaydırmakla boş kareyi yukarı diyor kaydırmak aynı şey.
+
+227
+00:57:37,484 --> 00:57:43,403
+Ya da yedi numaralı taşı sağa doğru kaydırmakla boş kareyi sola doğru kaydırmak aynı şey.
+
+228
+00:57:43,764 --> 00:57:44,364
+Anlatabildim mi?
+
+229
+00:57:44,884 --> 00:58:03,543
+Dolayısıyla 8x4 değil de 1x4 yani 4 tane operatörle aslında ben buradaki hareketlerimi tanımlayabilirim. Yani boş karayı sağa sola yukarı aşağı hareket ettir diyerek sadece ben 4 tane operatörle bütün yapabileceğim hareketlerin hepsini tanımlayabilirim.
+
+230
+00:58:03,543 --> 00:58:10,704
+Bu da bayağı şey, iyi operatör sayısı azalttığım zaman dediğimiz gibi oldukça şey oluyor.
+
+231
+00:58:11,764 --> 00:58:20,083
+Zaman'dan ve bellekten kazanıyoruz. Öyle söyleyeyim.
+
+232
+00:58:20,083 --> 00:58:20,824
+Haramsa olarak.
+
+233
+00:58:22,423 --> 00:58:26,224
+Şimdi, burada bir arama ağacımız var.
+
+234
+00:58:26,503 --> 00:58:29,284
+Deminki ağacı bunun için oluştursak.
+
+235
+00:58:29,364 --> 00:58:31,943
+Mesela şu durumda yapabileceğimiz dört tane hareket var görüyorsunuz.
+
+236
+00:58:32,820 --> 00:58:59,400
+Bu boş kareyi sağa sola yukarı aşağıya hareket ettirebilirim. Bu durumda yapabileceğim iki tane hamle kalmış. Bir tane daha hamle vardı. O zaten geri dönme anlamında olduğu için o buraya çizilmemiş. Bu da iki tane hamle var. Buraya bakarsak işte şu durumdan yapabileceğim, bundan yapabileceklerim bunlar var. Bundan, bundan, bundan. Böyle gidiyor bunlar değil mi? En sonunda, en nihayetinde bu ağacın altlarında bir yerlerde, derinlerde bir yerlerde bizim istediğimiz durum var. Tamam mı?
+
+237
+00:58:59,827 --> 00:59:25,027
+Şimdi ben eğer ki bu ağacı böyle sırayla oluşturup adım adım adım adım arama yaparsam. Şimdi bu problem için yani bu sekizlik puzzle'da ortalama zorlukta bir problem aşağıya. İşte 22 adım derinlikte. Yani mesela şurada çözüm 6 adım derinlikteydi. Bakın şurada 6 adım derinlikteydi bu problemde.
+
+238
+00:59:25,523 --> 00:59:34,203
+Sonra burada bir, iki, üç, dört, beş, altı, yedi. Burada yedi derinlik demiş mesela kızım.
+
+239
+00:59:37,780 --> 00:59:43,160
+Burada çözümün epey bir derinde olabileceğini görebiliyor musunuz? Şu problemde.
+
+240
+00:59:46,420 --> 00:59:47,300
+Evet hocam.
+
+241
+00:59:47,680 --> 00:59:57,280
+Değil mi? Her birisinde bir adım bir adım falan gidiyoruz. Tık tık tık tık tık. Böyle böyle en aşağı 30-40 adım falan gibi bir derinlik olacak belki değil mi? Şuraya bakarsak.
+
+242
+00:59:57,280 --> 01:00:00,000
+8-8-8. 30-30.
+
+243
+01:00:00,000 --> 01:00:12,279
+Yakın bir şey olacak herhalde. Neyse, sonuç olarak belli bir derinlikte çözümlerimiz var. Farklı farklı olabiliyorlar. Bu problemde genel olarak dediğim gibi çözümün derinliği ortalama 22'ymiş.
+
+244
+01:00:12,279 --> 01:00:21,119
+Tamam. Ortalama dallanma sayısı 2.67 diyor. Ne demek olabilir bu? Ortalama dallanma sayısı deyince ne aklınıza geliyor?
+
+245
+01:00:23,123 --> 01:00:25,623
+Bir state'den çıkan ortalama dal sayısı.
+
+246
+01:00:26,083 --> 01:00:38,783
+Aynen öyle. Mesela burada işte birinci state'den yani başlangıçlar dört tane çıkmış. Onun altındakilerden ikişer tane çıkmışlar. Onun altındakilerden belki başka bir şeyler çıktı. Bütün ağaç için konuşursak bunu ortalama 2.67'ymiş.
+
+247
+01:00:48,980 --> 01:01:01,099
+7 milyar tane duruma erişiyorsanız, yani ağacın içerisinde 2.7 milyar tane durum oluyor. O kadar tane duruma bakmanız gerekiyor. Tamam mı?
+
+248
+01:01:03,579 --> 01:01:14,420
+Şimdi, peki şöyle bir şey sorayım. Bu 8 puzzle olmasaydı da, 15'lik olsaydı, 15'likten kastım şu.
+
+249
+01:01:15,731 --> 01:01:39,791
+Yani üçe üçlük bir matris de bir tane boş kare yerine dörde dördük bir matris de bir tane boş kare olsaydı o da on beş puzzle olsun. On beşlik puzzle da ne değişirdi sizce? Ortalama dallanma sayısı mı değişirdi, ortalama adım sayısı mı değişirdi çok?
+
+250
+01:01:43,795 --> 01:01:44,936
+Adım sayısı.
+
+251
+01:01:45,436 --> 01:01:54,096
+Adım sayısı çok daha derinlere inerdi değil mi? Çözümümüz muhtemelen çok çok daha derinlendi bir yerlerde olacaktır. Ortalama dallanmaz ise o kadar artmayacaktır.
+
+252
+01:01:55,976 --> 01:02:00,836
+Peki, şimdi birkaç tane tanım verelim. Bunları gördük büyük bir kısmını.
+
+253
+01:02:01,364 --> 01:02:25,143
+Tekrar bir toplu olarak. Durum uzayı, arama uzayı, arama ağacı vs. Bunlar durumları araların geçişleri, geçiş parametreleri, kısmını gösteren graf ya da ağaç. Graf ile ağacın arasındaki farkı biliyorsunuz. Şu uzay diye ifade ettiğimiz şeyler graf olarak ifade ediyor. Ağaç olanlar ise ağaçlar. Şunlar birer ağaçlar gördüğünüz gibi. Bazı durumlarda şey olacak, elimiz dediğim gibi graf da olacak.
+
+254
+01:02:26,228 --> 01:02:48,248
+Konuşacağız. Operatörler durumlar arası geçişleri sağlıyorlar. Başlangıç durumlar, hedef durumlar, maliyetimiz var. Operatör uygulama maliyeti, çözüm yolu, başlangıç durumunu, hedef durumuna götüren yol. Bu bir çözüm. Ama kritik olan şey optimum yol bizim için. En düşük maliyetli çözüm yolu. Yani en azından bir sürü çözüm olabilir. Bu çözümlerin bir maliyette birinden farklı olabilir. Değil mi?
+
+255
+01:02:50,452 --> 01:03:14,152
+Bizim istediğimiz şey, optimum dediğimiz şey, en düşük maliyetli çözüm yolu. Peki, en düşük maliyetli çözüm yolu birden fazla olabilir mi? Evet, o da mümkün. Yani birden fazla optimum yolunuz olabilir. Ama bunların optimum olması için en düşük maliyetli olmaları lazım. Yani birbirlerine maliyetli eşit olmaları zaten bunlar. Ama illa bir tane olmak zorunda değil. Birden fazla pekala olabilir.
+
+256
+01:03:15,315 --> 01:03:41,615
+Peki, arama niye bu kadar zor olabilir? Biraz aslında deminki yaptığımız şeyler birazcık onu gösteriyor. Çözümün derinliğiyle, dallanma sayısıyla artan böyle bir büyüklükten bahsediyoruz. Bir yerde bir arama yapıyoruz aslında. Yani böyle bir ağacın üzerinde bir arama yapıyoruz. Bizi başlangıç durumuna hedef durumunu bulmaya çalışıyoruz. Hedef durumunu bulduğumuz anda da işte hedef durumundan o en tepedeki duruma, başlangıç durumuna birleşen petle çözüm budur diyeceğiz.
+
+257
+01:03:42,228 --> 01:03:57,847
+Ama işte o hedef durumu bulmak için bizim bir arama yapmamız gerekiyor. Bu ağacın üzerinde bu aramayı yaptığımızı hayal edelim. Ağacımızda da şöyle bir şeyler olsun. Mesela dallanma sayısı 10 olsun. Sahnede yaşayan durum sayısı, yani işte durumu kontrol ediyoruz, alıyoruz onu, üretiyoruz falan.
+
+258
+01:03:58,387 --> 01:04:21,268
+Bir durum içinde tutmanız gereken bellek miktarı 100 byte olsun. Böyle bir problem olsun en azından mesela. Çözümün derinliği sıfırsa, yani başlangıç duruma hedef durumsa zaten yapacağınız bir şey yok. İşlenen durum sayısı bir zaman işte sahnenin binde biri bellek 100 byte. Çözümün derinliği 2 olduğunda bir anda işlenen durum sayısı 111 oluyor. Çünkü birden 10'a gidiyor.
+
+259
+01:04:21,748 --> 01:04:44,427
+Birden 10 tane çıkıyor. Her birinden de 10'ar tane çıkıyor. Dolayısıyla 111 tane duruma erişmeniz gerekiyor. Zaman olarak 0.1 saniye çıkıyor. Kilobayt işte 11. 12 derinliğe gittiğinizde şuradaki değerlere bakarsak işlenen durum sayısı 1 trilyona erişiyor. Biraz üstünde. Zaman açısından 35 yıl sürmüş. Bellek açısından 111 terabayt sürmüş.
+
+260
+01:04:44,820 --> 01:05:09,660
+Diyebilirsiniz ki bizim bilgisayarlarımız çok hızlı ilerliyoruz. Saniyede işlem durum sayısında burada bin dedik ama aslında bundan çok çok daha yüksek. Şimdi bunu biz milyon kat arttırsak, yani saniyede işlem durum sayısında bindiği de bir milyar alsak, milyar haline getirsek. Şuradaki çözümün derinliğini.
+
+261
+01:05:10,804 --> 01:05:34,144
+Şu anda bu 35 yıldan belki şeye inecek, ne derler ona, binde birine falan işte ne bileyim, belki 31 saate falan inecek, sallıyorum. Ama şu çözümün derinliğini işte 12, 15, 16 falan yaptığımızda tekrardan biz burada neye erişeceğiz? Yine 35 yıl, 36 yıl vesaire vesaire gibisinden şeylere çok hızlı bir şekilde erişeceğiz.
+
+262
+01:05:34,643 --> 01:05:41,303
+Çünkü burada her bir derinliği bir arttırmak on kat arttırma anlamına geliyor.
+
+263
+01:05:42,623 --> 01:05:54,363
+Bilgisayarların her sene yaklaşık iki kat hızlandığı gibisinden oraya sınıf düşünürsek, bu pek başı çıkılabilecek bir şey değil.
+
+264
+01:05:55,483 --> 01:06:01,463
+Elinizdeki problemlerin çözüm derinliği fazlaysa yapabileceğimiz pek bir şey yok gibi gözüküyor.
+
+265
+01:06:02,099 --> 01:06:13,819
+Peki, dolayısıyla zaman ve bellek diye iki tane problemimiz var. Bunları da konuşacağız.
+
+266
+01:06:15,459 --> 01:06:24,119
+Şimdi şu ana kadar genel kavramları verdik ama biz hani bu çözümü nasıl bulacağız? Bunun için bir şeyden hiç bahsetmedik.
+
+267
+01:06:24,543 --> 01:06:47,903
+Şimdi ona başlayacağız. Bunun için arama algoritmaları var. Arama stratejileri. Şimdi arama algoritmaları aslında şunu yapıyorlar. Temelde yaptıkları şey şu. Elinize gidilebilecek durumlar varken o durumlardan hangisini seçeceğinize karar veriyorlar. Bunun ne demek olduğunu birazdan daha net göreceğiz.
+
+268
+01:06:52,019 --> 01:07:16,320
+Bu araba algoritmalarını birbirleriyle kıyaslarken kullandığımız dört tane kriter var. Bunlarla bir tanesi tamlık kriteri. Bir tanesi zaman, bir tanesi hafıza kavramışlı, bir tanesi de optimum. Şimdi tamlık da diyor ki, bu ağacın üzerinde bir çözüm varsa, derinliği önemli diyor, bir çözüm varsa onu mutlaka bulması.
+
+269
+01:07:16,851 --> 01:07:21,251
+Eğer bir algoritma bunu yapabiliyorsa, o algoritma biz tam bir algoritma diyoruz.
+
+270
+01:07:22,631 --> 01:07:27,411
+Zaman karmışlığı aramanın alacağı süre, hafıza karmışlığı arama için gerektiği hafıza miktarı.
+
+271
+01:07:27,551 --> 01:07:35,091
+Ki arama yaparken bir dizi, bir queue ya da bir stack, genel manada bir dizi diyebiliriz.
+
+272
+01:07:35,131 --> 01:07:42,692
+Buna bir dizi tutmamız gerekecek. O dizinin büyüklüğüne kadar hafıza karmışlığı, algoritmaların hafıza karmışlıkları bilinen farklar.
+
+273
+01:07:43,635 --> 01:07:49,855
+Zaman karmaşıklıkları, eh, daha yakınlar birbirlerine ama hafıza karmaşıklıklarında bayağı fark var.
+
+274
+01:07:50,235 --> 01:07:53,255
+Ve diğer önemli kriterler bir tanesi optimumluk.
+
+275
+01:07:55,096 --> 01:08:01,976
+Zaman karmaşıklığı için söylediğim bir şey, hani birbirlerine yakınlar dediğim, kör arama algoritmalar için bunu söyleyebilirim.
+
+276
+01:08:01,976 --> 01:08:06,895
+Aslında bir şey yapmış olayım. Karışıklığı vermeyeyim.
+
+277
+01:08:07,251 --> 01:08:20,871
+Kör arama algoritmalarında evet birbirlerine yakından ama önümüzdeki hafta geçeceğimiz sezgisel arama algoritmalarının zaman karmaşıklıkları farklı. Onu o zaman konuşuruz yine.
+
+278
+01:08:20,871 --> 01:08:32,371
+Şimdi tekrar optimumlığa dönelim. Algoritmanın bulduğu ilk çözümün, bakın buradaki laf önemli, ilk çözümün en düşük maliyetli çözüm olması.
+
+279
+01:08:33,300 --> 01:08:36,480
+Ya da en düşük maliyetli çözümlerden biri olması.
+
+280
+01:08:36,620 --> 01:08:39,340
+Yani illa bir tane olmak zorunda değil dedim ya en düşük maliyetli çözüm.
+
+281
+01:08:39,400 --> 01:08:40,720
+Optimum PED.
+
+282
+01:08:44,100 --> 01:08:55,720
+Dolayısıyla bunlardan bir tanesini buluyorsak ama ilk bularak, yani ilk bulduğu çözüm bu böyle bir özelliğe sahip ise o zaman algoritmamıza optimum diyeceğiz.
+
+283
+01:08:56,720 --> 01:08:57,079
+Tamam mı?
+
+284
+01:08:58,100 --> 01:09:25,399
+Şimdi, burada zaman ve hafıza kalmışlığının ölçümünü kullanan birkaç tane kalmam. Bir tanesi şunu görmüştük. B, maksimum dallanması. Yani bir düğümden çıkan maksimum düğüm sayısı. Tamam mı? Branching factor diye geçiyor İngilizce kitaplar. D'yi de biz neyi göreceğiz? En az maliyetli çözümün derinliği. Bakın, en az maliyetli çözüm neredeyse o derinliğe biz D diyeceğiz. Tamam mı?
+
+285
+01:09:26,163 --> 01:09:46,983
+Bunlar, karmaşıklıkları ifade edeceğiz bunları kullanarak. Bir de M var, M var. O da arama uzayının maksimum derinliği. Yani bizim o ağacımızın ya da arama uzayımızın artık nasıl temsil ettiyse onun maksimum derinliği. Yani ne kadar derine gider bu. Bu da bazen sonsuz olabiliyor.
+
+286
+01:09:49,268 --> 01:09:59,608
+En az maliyeti çözümün derinliği sonsuz olmuyor. Yani onun anlamı zaten çözüm yok demek ki herhalde. Arama uzayının maksimum derinliği ise M'yi gösterebilir.
+
+287
+01:10:00,208 --> 01:10:13,587
+Şimdi arama algoritmalarından genel olarak ve karşılaştırmalar kullanılan belli kriterler ve belli büyüklüklerden bahsettikten sonra şimdi kör arama algoritmalarına geçiyoruz.
+
+288
+01:10:15,988 --> 01:10:37,108
+Dediğim gibi bu hafta kör arama algoritmalarından bahsedeceğiz. Yetiştirebilsek, yetiştirebilsek, yetiştirebilsek önümüzdeki hafta biraz daha devam ederiz. Önümüzdeki haftada kör olmayan yani sezgisel arama algoritmalarına geçeceğiz. Bunlar iki tane büyük aile gibi düşünebilirsiniz. Arama algoritmaları yukarıda duruyor. Onun altında bir tarafta kör arama var, bir tarafta sezgisel arama algoritmaları var.
+
+289
+01:10:40,851 --> 01:10:49,671
+Burada 6 tane algoritma var. Enlemesini arama, düşük maliyetli arama, derinlemesini arama, sınır delikli arama, artan delikli arama ve çift yönlü arama olmak üzere.
+
+290
+01:10:51,152 --> 01:10:54,671
+Şimdi, enlemesini aramaya bakalım.
+
+291
+01:10:55,951 --> 01:11:03,971
+Şimdi, enlemesini aramada, biz demin şöyle bir şeyden bahsettiğim, bir ağaç var, bu ağacı oluşturuyoruz vs. vs.
+
+292
+01:11:04,659 --> 01:11:28,819
+Ama Arma Algoritmanı da şimdi en baştan ağacı ne yapamazsınız? Oluşturamazsınız. Yani oluşturmak çok anlamlı bir hareket değil. Niye çok anlamlı bir hareket değil? Çünkü ağacı oluşturalım tamam da ağacı belli bir derinliğe kadar oluşturabilirsiniz değil mi? Yani sonsuz büyüklükte bir ağaç oluşturamazsınız. Bir derinliğe kadar gitmeniz lazım. Peki o derinlik nedir biliyor muyuz?
+
+293
+01:11:29,199 --> 01:11:44,399
+Bilmiyoruz. Maksimum bir derinlik ki kabul edip hareket etmeye kalksak belki çok fazla gereksiz yere bir ağaç oluşturmuş olacağız. Dolayısıyla ağacı en başta oluşturup, kocaman bir memori de bunu oluşturup ondan sonra üzerine arama yapmak çok efektif bir şey değil.
+
+294
+01:11:45,171 --> 01:12:07,192
+Daha efektif olan ne? Bu ağacı oluşturmayalım biz. Zaman içerisinde bu kendi kendine adım adım oluşuyormuş gibi olsun. Tamam mı? Oluşuyormuş gibi olsun derken, şunun için söylüyorum bunu aslında bir ağaç yapısı kurmayacağız. Ama sanki bir ağacın üzerine gidiyormuş gibi olacak yaptığımız iş. O yüzden muş gibi dedim.
+
+295
+01:12:10,452 --> 01:12:32,832
+Burada ağaç üzerinde gözüken durumları oluşturacağız. Bir dizide bunları tutacağız ve bunlara sırasıyla erişeceğiz. Bu sırasıyla erişme kısmı enlemesini aramada, şurada gördüğünüz gibi sırayla böyle birinci satır, ikinci satır, üçüncü satır, dördüncü satır şeklinde ilerliyor.
+
+296
+01:12:35,315 --> 01:12:50,975
+Mesela diyelim ki ben böyle ilerliyorum. Birinci satırı hallettim, ikinci satırı hallettim, sonra üçüncü satırı hallettim. Mesela burada diyelim ki beş numaralı durum çözüm olsun. Benim istediğim şey o. Tamam, başlangıç durumum birdi, hedef durumunda beş olsun.
+
+297
+01:12:57,555 --> 01:13:24,015
+İse yani 5 bizim için çözümse, çözümse derken çözüm durumuysa, çözüm dediğimiz şey çünkü ne? O farklı bir şey. Çözüm dediğimiz şey ne olacak bu durumda? 1 ile 2, 2 ile 5'i birleştiren hareketler neyse onların sırası bizim için çözüm olacak değil mi? Yani 1, 2, 5 bu bizim için bir çözüm sırası.
+
+298
+01:13:25,779 --> 01:13:40,939
+Fakat bakın, bu yolu bulurken, yani 1-2-5 yolunu bulurken, ben arama sürecinde, yani çözümü arama sürecinde bu sırayla bir hareket yapmıyorum.
+
+299
+01:13:41,939 --> 01:13:53,539
+Yani ilk önce mesela burasını düşün, ilk önce 1'e bakıyorum, sonra 2'ye bakıyorum, sonra 3'e bakıyorum, sonra 4'e bakıyorum, sonra 5'e bakıyorum, sonra gideceğim belki de burada duruyorum zaten. Dolayısıyla ilk önce buna baktım, sonra buna baktım, sonra buna baktım, sonra buna baktım, sonra buna baktım.
+
+300
+01:13:56,299 --> 01:14:00,399
+Çözümlere erişme sıra, pardon, durumlara erişme sıra başka bir şey.
+
+301
+01:14:01,979 --> 01:14:09,291
+Ama çözümün durum sayısı başka bir şey. Burada çözümün durum sayısı 1, 2, 5 ama...
+
+302
+01:14:10,036 --> 01:14:34,556
+Ama durumlara erişme sıram 1, 2, 3, 4, 5. Her ikisi de durum sırası ya, o yüzden karışabilirler diye bunu söylüyorum. Normalde tahmin edebileceğiniz gibi çözümün durum sırası çok çok daha kısa bir şey olacaktır. Yani burada mesela 10 derinlikli bir ağaç düşün, 10 derinlikli bir ağaçta ben işte 2 üzeri 10, 1000 civarında falan şeye bakacağım.
+
+303
+01:14:35,252 --> 01:14:54,412
+Elemanına bakacağım. Buradaki sırayla. Ama 10. derdinde mesela hedefi buldum. O hedefe başlangıçtan itibaren giden durum sırası, çözüm yolu 10 uzunlukta bir şey olacak değil mi sadece?
+
+304
+01:14:57,472 --> 01:14:59,592
+Anlaşıldı mı şu ikisinin birbirinden farkı?
+
+305
+01:15:04,500 --> 01:15:05,819
+Anlaşıldı hocam.
+
+306
+01:15:06,760 --> 01:15:16,460
+Peki. Şimdi enlemesini aramayı gerçekleştirmek için bir kuyruk olacak. İlk giren, ilk çıkarma ekranizmasını kullanacağız. Burada illa kuyruk ya da stek falan derimiz şart da değil ama diziyle de bunu yapabilirsiniz.
+
+307
+01:15:17,460 --> 01:15:26,559
+Hikayemiz aslında ilk girenin ilk çıkıyor olması. İlk giren ilk çıkarsa biz nasıl acaba böyle enteresan bir şey elde ediyoruz?
+
+308
+01:15:54,036 --> 01:15:58,235
+Şimdi burada hemen şey yapmak istiyorum ben, algoritmasına.
+
+309
+01:16:06,260 --> 01:16:28,079
+Şimdi, enlemesinden arama algoritması bakalım nasıl bir şeymiş? Bir kuyruk var. Kuyruk olduğuna bakmayın buna bir dizide diyebilirsiniz. Öyle söyleyeyim. Bir dizi. Diziye kök durumu atadınız. Sonra bulunduğu false yaptınız. Sonra kuyruğumuz boş ise ve bulunduğu false ise içeride döneceğiz. Neymiş? Kuyrukta ilk durumu çekiyoruz. Yani kuyrukların ilk elemanını çekiyoruz. Pardon, dizinin ilk elemanını çekiyoruz.
+
+310
+01:16:28,819 --> 01:16:37,199
+Eğer en, yani çektiğimiz şey durumsa, hedefse, o zaman bulunduğu true yapıyoruz. Yani orayı bulduk artık.
+
+311
+01:16:39,639 --> 01:16:50,219
+Ve ondan sonra, enden gidilecek durumları kuyruğun sona, yani dizinin sonuna ekliyoruz. Başına değil, sonuna ekliyoruz.
+
+312
+01:17:13,716 --> 01:17:16,416
+Bulacağım şimdi. Evet.
+
+313
+01:17:18,636 --> 01:17:19,516
+Algorithm burada.
+
+314
+01:17:25,908 --> 01:17:33,368
+Hocam bu farklı algı yok sanırım. Enlemesine yukarıdayız.
+
+315
+01:17:34,368 --> 01:17:36,048
+Teşekkür ederim [öğrenci].
+
+316
+01:17:54,515 --> 01:18:18,435
+Şimdi, enlemesini armağan görtmesine bakalım nasıl bir şey yapacağız? Şurada bir tane bir şey alsam etkin yeter herhalde. Şimdi kuyruğumuz var. Kuyruğun dizi diye bir anda K olsun. Mesela bu başlangıçta. Bunun içerisinde kök durumumuzda kim var? Kuyruğun içerisinde kim olacak başlangıçta? Bir olacak değil mi? Yani şurada.
+
+317
+01:18:19,155 --> 01:18:24,095
+Kuyruk, kök durumu 1, 1 ile başlıyoruz. Bundu, false, wild, kuyruk vs.
+
+318
+01:18:24,655 --> 01:18:32,335
+Şimdi kuyrukdan ilk durumu çek diyor. Şimdi burada ben kuyrukdan ilk durumu çektiğim anda, bu 1'i çektiğim anda, kuyruk ne hale gelecek?
+
+319
+01:18:35,335 --> 01:18:45,835
+Boş, değil mi? Peki, eğer 1, bu çektiğim şeye bak diyor, bu 1, hedefse, benim hedefim burada 5 olduğunu düşünüyorum tamamen.
+
+320
+01:18:46,260 --> 01:18:56,380
+Bir hedefse duracağız zaten. Bir algoritma yapaylarının dışına çıkacak. Değilse birden gidebilecek durumları kuyruğun sonuna ekleyeceğiz. Şimdi birden gidebilecek durumlar neler arkadaşlar?
+
+321
+01:18:57,780 --> 01:18:58,480
+2 ve 3.
+
+322
+01:18:59,120 --> 01:19:07,920
+2 ve 3. O zaman ben bu 2 ve 3'ü kuyruğun sonuna ekledim. Yani kuyruğun boş olduğu için zaten bir şey fark etmedi. Peki şimdi ben bu durumda kimi çekeceğim?
+
+323
+01:19:09,500 --> 01:19:09,980
+2.
+
+324
+01:19:10,579 --> 01:19:36,840
+İkiyi çekeceğim. İkiyi çektiğimde kuyruğun içerisinde kimler kalacak? Üç kaldı değil mi? İki hedef mi? Hayır değil. Değil. O zaman ikiden giderebilecek olan kimler var? Dört ve beş. Dört ve beşini nereye ekleyeceğim? Kuyruğun sonuna ekleyeceğim. Dört ve beşi kuyruğun sonuna ekleyeceğim. Şimdi kimi çekeceğim? Üçü. Üçü çektim. Üçü çektim de kuyrukta kimler kaldı?
+
+325
+01:19:37,908 --> 01:19:38,728
+4-5.
+
+326
+01:19:38,927 --> 01:19:41,728
+4-5 kaldı. 3'ten gidilebilecek neler var?
+
+327
+01:19:43,028 --> 01:19:43,807
+Bir durum yok.
+
+328
+01:19:44,307 --> 01:19:51,968
+Var orada da yazmıyor ama 6-7 diyelim mesela onlara. Tamam mı? 6 ve 7 buradalar. Bu durumda kimi çekecek? 4'ü çekecek.
+
+329
+01:19:52,747 --> 01:20:04,948
+4'ten gidilebilecek durumlar olduğunu yine düşünelim. Ama içeride şunlar var. 4'ten gidilebilecek durum 6-7, 8-9 diyelim onlara. 8-9 nereye eklenecek?
+
+330
+01:20:05,716 --> 01:20:11,976
+Buraya eklenecek. Sonra 5'i çekecek. Görüyor musunuz nasıl ilerlediğini?
+
+331
+01:20:15,539 --> 01:20:24,699
+Çektiklerine bakın. 1, 2, 3, 4, 5. Bakın şu sırayla gidiyor. Sonra 6'yı çekecek. Değil mi? Görebiliyorsunuz bunu.
+
+332
+01:20:25,479 --> 01:20:34,239
+Dolayısıyla bu endemesini arama yaptığımızı, yani endemesini arama yapmamızı sağlayan şey aslında, yeni üretilen durumları dizinin neresine eklemek?
+
+333
+01:20:37,779 --> 01:20:58,579
+Sonuna eklemek ve başından çekmek. Tamam mı? Yani başı bu tarafa olduğunu düşünelim dizinin. Tamam mı? Sonuna ekliyoruz ve hep baştan çekiyoruz. Yani ilk çekişi yaparken en baştan çekiyoruz. Peki, şimdi bu burada bir dursun. Ben şöyle bir değişiklik yapsam.
+
+334
+01:21:06,068 --> 01:21:18,068
+K yine başlangıçta 1 olsun. Başını eklesem. Tamam. Bu sonunaydı. Tamam.
+
+335
+01:21:20,068 --> 01:21:28,876
+Şimdi başını ekleyerek hareket etsem acaba neler olur? Tamam. K başlangıçta 1.
+
+336
+01:21:29,524 --> 01:21:56,424
+Aynı işi yapacağım. Sadece başına değil, sonuna gideceğiz. 1, birden zaten 1'i çekeceğim. K'nı olacak, boş olacak. Sonra birden gidebilecek 2 ve 3'ü baş ve son fark etmeyecek zaten. Bunu yapacağız. 2'yi çekeceğiz. Şimdi 2'yi çektim. 2'yi çektiğim anda K'nın içinde kimler kaldı? Zaten bir tek 3 var. 2'den gidebilecek kimler var şimdi?
+
+337
+01:21:59,283 --> 01:22:25,603
+4 ve 5. 4 ve 5'i nereye ekleyeceğim? Kuyruğun başına. Başına ekleyeceğim. 4 ve 5 ekledim. Peki, şimdi kimi çekeceğim? 4. 4'ü çekeceğim. 4'ü çektiğim anda kuyrukta kimler var? 5, 3 kaldı. Peki, 4'ten gidilecek nereler var? 6, 7, 8, 9 bunlar. 8 ve 9.
+
+338
+01:22:27,764 --> 01:22:48,764
+Nereye gelecek bunlar? 8 ve 9? Başa. 8 ve 9 geldi başa. Kimi çekeceğim şimdi? 8'i seçeceğim. Değil mi? 8'i çekeceğim. 8'i çekeceğim daha doğrusu. 8'i çektiğim anda 9, 5, 3 kaldı.
+
+339
+01:22:49,619 --> 01:22:56,619
+8'den gidilebilecek bir şey olmadığını düşünelim. Tamam, olmasın burada. O zaman 9'u çekecek.
+
+340
+01:22:56,619 --> 01:23:05,619
+Sonra 9'u çektiğimiz anda içeride 5 ve 3 kaldı. 9'dan gidilebilecek de bir şey olmasın.
+
+341
+01:23:05,619 --> 01:23:11,619
+O durumda 2'u çekecek, 5'i çekecek. 5'i çektiği anda içeride bir tek 3 kaldı.
+
+342
+01:23:15,123 --> 01:23:24,763
+İçeride bir tek üç kaldığında, pardon beşten gidecek kimler var? Sekiz, dokuz demiş bunlara. On, on. On, on bir var. Onları kuyruğun başına ekleyecek.
+
+343
+01:23:27,484 --> 01:23:33,183
+Kimi çekecek ondan sonra? Onu çekecek. Şimdi buraya bakarsak.
+
+344
+01:23:33,747 --> 01:23:56,847
+Sıraya bakalım. 1, 2, 4, sonra 8, sonra 9, sonra 5, sonra 10, sonra 11. 11'de açtıktan sonra kime geçecek sizce? 3'e geçecek, değil mi? Sonra 6'ya geçecek, sonra 6'dan aşağıya diyen bir şeyler falan varsa onlara bakacağım. Ne oldu şimdi? Değişti mi sıra? Girişim sırası.
+
+345
+01:23:58,484 --> 01:24:23,484
+Bu derinlemesine arama oldu. Sadece yaptığımız tek farklılık ne? Sonunlayı. Başına yaptık o kadar basit bir işlemle arama sürecini bayağı bir değiştirdik. Lafta değiştirmedik. Birazdan şeylere bakınca daha net göreceğiz. Kriterler arasından baktığımızda bayağı bir değişikliğe sebeb oluyor. Bu başa eklemek ve sona eklemek arasındaki fark.
+
+346
+01:24:30,899 --> 01:24:33,399
+Tamam. Şimdi bir ara verelim arkadaşlar.
+
+347
+01:24:47,572 --> 01:24:49,551
+Bu kadar ara diyelim.
+
+348
+01:24:51,271 --> 01:24:52,371
+Sonra devam ediyoruz.
+
+349
+01:24:54,431 --> 01:24:55,791
+Az sonra görüşmek üzere arkadaşlar.
+
+350
+01:36:33,587 --> 01:36:35,587
+Tekrardan merhaba arkadaşlar.
+
+351
+01:36:39,923 --> 01:36:40,923
+Slide geldi mi?
+
+352
+01:36:43,623 --> 01:36:44,923
+Geldim.
+
+353
+01:36:46,623 --> 01:36:55,923
+Şimdi bu enlemesin normal kurutmasını o dört kriter göre biraz inceleyelim.
+
+354
+01:36:56,923 --> 01:36:58,923
+Complete demek ne demekti?
+
+355
+01:37:04,051 --> 01:37:17,992
+Bu ağacın içinde çözüm var ise onu mutlaka bulması. Şimdi endemesini aramayı düşünürsek, endemesini aramağı bulması işte satır satır satır satır ilerliyor. Ağacın içinde bir yerde çözüm varsa onu mutlaka bulur mu?
+
+356
+01:37:21,291 --> 01:37:22,231
+Bulur hocam.
+
+357
+01:37:22,231 --> 01:37:29,391
+Bulur değil mi burada herhangi bir şey? Yok. B dediğimiz şey branch infaktörü.
+
+358
+01:37:29,716 --> 01:37:37,195
+Yani sonsuz tane olasılığa dallanmıyorsa bir durum ki zaten öyle bir durum varsa onu bilgisayarla simüle edemeyiz.
+
+359
+01:37:39,596 --> 01:37:42,816
+Bilgisayarla çalışabilecek problemler için B sonunda olacaktı zaten.
+
+360
+01:37:43,236 --> 01:37:45,216
+B sonu ise evet, komplet mi? Evet.
+
+361
+01:37:45,956 --> 01:37:56,876
+Zaman açısından yani burada kaç tane duruma erişiyoruzu düşünürsek işte 1, 1 artı B artı B kare artı B.
+
+362
+01:37:57,395 --> 01:38:03,835
+Üzeri 3 artı B üstü D olacak değil mi? B üstü D neydi? D neyi ifade ediyordu?
+
+363
+01:38:06,095 --> 01:38:07,876
+Aromozayındaki maksimum derinlik.
+
+364
+01:38:08,315 --> 01:38:08,735
+Değil.
+
+365
+01:38:09,716 --> 01:38:10,496
+Çözümün derinliği.
+
+366
+01:38:11,935 --> 01:38:13,476
+Optimum çözümün derinliği.
+
+367
+01:38:14,456 --> 01:38:18,595
+Optimum çözümün derinliği D ise ona ne yapacak?
+
+368
+01:38:19,155 --> 01:38:24,816
+Bu kadarlık bir sürede bunların hepsinin toplamı kadar bir zaman alacak aramamız.
+
+369
+01:38:25,435 --> 01:38:28,476
+Space açısından düşünseniz. Space dediğimiz şey ne?
+
+370
+01:38:29,115 --> 01:38:35,976
+Bu aramayı yaparken, hani bir tane bir dizi oluştururken, o dizinin büyüklüğü nasıl bir seviyede olacak?
+
+371
+01:38:36,595 --> 01:38:39,355
+Bu B üstü D seviyesinde olacaktır.
+
+372
+01:38:39,355 --> 01:38:42,355
+Şimdi arada aslında şurasını birazcık şey yaptım.
+
+373
+01:38:45,492 --> 01:39:06,692
+Şimdi mesela beşi çekmiştik. Beşten gidilecek işte burada on ve on bir. Onlar da bunun sonuna eklenecekler. Sonra altı çekilecek. Altıdan gidecekler bunun sonuna eklenecekler. Yani burası bakın giderek ne oluyor farkında mısınız? Büyüyecek. Yani şunun sonuna geldiğimizde bakın. Şunu hayal edin. Bunun sonuna geldiğimizde.
+
+374
+01:39:08,340 --> 01:39:30,420
+Bir satırın sonuna geldiğimizde o satırdan gidilebilecek bütün durumların hepsi nerede duruyor olacaklar? Hafızada duruyor olacaklar değil mi? Bakın şurada onun örneği şu mesela. Üçe geldiğimizde bakın. Üçe geldiğimizde bu satırdan sonra gidilebilecek bütün durumlar bakın. Dört, beş, altı, yedi. Dört, beş, altı, yedi nerede duruyor bakın.
+
+375
+01:39:30,832 --> 01:39:55,932
+Burada duruyor. Aynı şekilde bunun sonuna geldiğimizde buradan gidebilecek bütün durumların hepsi burada duracaklar. Dolayısıyla herhangi bir derinlik seviyesine geldiğimizde onun bir altındaki bütün her şey bizim memoride saklanıyor olması gerekecek. Yani memoride erken dizide saklanıyor olması gerekecek. Dolayısıyla hafıza karmaşıklığı yine B üstü D ya da B üstü D artı bir mertebesinde bir şey olacak. Tamam mı?
+
+376
+01:40:02,868 --> 01:40:28,668
+Optimal mi? Şimdi bu arama algoritması optimal olma durumu var. Ne demek bu? Şimdi eğer ki bu arama algoritması olası birden fazla çözüm varsa ve bunlar farklı derinliktelerse ilk önce hangisini bulacaktır?
+
+377
+01:40:31,347 --> 01:40:32,528
+Derinliği, az olanı.
+
+378
+01:40:33,047 --> 01:40:50,047
+Derinliği, yani köke en yakın olanını bulacaktır. Yani en az adımda gidilebileni bulacaktır değil mi? En az adımda. Peki, her adımın maliyeti birbirine eşit ise bu durumda bu arama algoritması optimal çözümü bulur diyebilir miyiz?
+
+379
+01:40:53,524 --> 01:40:53,784
+Evet.
+
+380
+01:40:54,804 --> 01:41:02,524
+Değil mi? Yani mesela bütün adımlar eşitse bulduğu çözüm, bütün adımların, bütün operatörlerin öyle söyleyeyim, maliyetle birbirine eşitse...
+
+381
+01:41:02,804 --> 01:41:30,184
+Bu en az adım sayısına sahip çözümü bulacağından dolayı optimal çözümü bulmuş olacaktır. Ama eğer ki operatörlerimizin maliyetleri biliminden farklı ise, yani şunu demek istiyorum, iki adımda erişilebilecek bir çözüm var, bir de dört adımda erişilen bir çözüm var. Ama o dört adımda erişilen çözümün maliyeti daha düşük olabilir iki adımlıya göre. Yani onda uygulanan operatörlerin maliyetleri daha çok daha küçüktür.
+
+382
+01:41:30,804 --> 01:41:49,824
+Operatörün mali çok daha büyüktür. Dolayısıyla maliyetler farklıysa optimum olmasını garanti edemeyiz. O durumda optimal bir algoritma olmaz. Eğer ki ama her adımın maliyeti eşitse o zaman evet diyebilir. Optimum bir algoritmadır. Örnek vermek gerekirse mesela işte labirentten çıkmaya çalıştığımız problemi düşünelim.
+
+383
+01:41:51,444 --> 01:42:18,844
+Neredeydi? Bizimle öğrentiyorsanız mesela bu. Burada bütün maliyetler birbirine eşitse bu ayrıma algoritması yani enlemesinin ayrıma algoritması ile bulduğumuz çözüm ne olacaktır? En az adıma sahip çözüm olacaktır ve de olsa optimum bir çözüm olacaktır. Bütün maliyetlerin hepsi birbirine eşit ise tamam mı? Ya da burada da aynı şey geçerli. Maliyetlerin hepsi birbirine eşitse enlemesinin ayrıma algoritması optimal bir algoritmadır.
+
+384
+01:42:19,444 --> 01:42:42,463
+Tamam. Şimdi, enlemesini aramadan sonra, araya başka bir lokma gülüyor ama ona geçmeden önce şu derinlemesine bakalım. Derinlemesini aslında yaptık fark ettiğiniz gibi. Onun analizine bakalım. Şimdi, complete mi? Yani bir çözüm varsa kesin bulur mu?
+
+385
+01:42:43,572 --> 01:43:02,731
+Eğer ki arama uzayımızın derinliğime sonsuz ise, ki bu loopların oluştuğu durumlarda gayet mümkün. Yani bir durum var, o durumdan bir durumundan iki durumuna geçiyorsunuz, sonra üç durumuna geçiyorsunuz, sonra üç durumdan tekrardan bir durumuna geçiyorsanız mesela, öyle looplar falan oluşabiliyorsa.
+
+386
+01:43:03,252 --> 01:43:10,052
+O durumda arama algoritması sonsuza doğru ne yapabilir? Gidebilir.
+
+387
+01:43:10,052 --> 01:43:23,852
+Ve belki de mesela şöyle diyelim, mesela şuradası çözüm olsun tamam mı? Ama mesela şu yolun böyle sonsuza kadar gittiğini düşünün aşağı doğru. Tamam mı? O durumda buradaki bir çözüme bile hiçbir zaman olmayacaktır bu algoritma.
+
+388
+01:43:27,539 --> 01:43:45,000
+Ulaşamayacaktır. Ulaşamadığı durumda da çözüm bulamayacak. Dolayısıyla derinlemesini arama, eğer ki sonsuz derinlikli bir ağacımız var ise, ki bu zaten looplarla oluşan bir şey olur genelde, komple bir algoritma değil.
+
+389
+01:43:46,000 --> 01:43:54,059
+Zaman açısından bir şey. B üstü M, yani M burada neydi?
+
+390
+01:43:55,859 --> 01:44:04,219
+Bakın D yazmıyor burada dikkat edin. M yazıyor. Ötekisine D yazıyordu. Burada M yazıyordu.
+
+391
+01:44:07,159 --> 01:44:09,159
+Neydi D ile meyinin farkı neydi?
+
+392
+01:44:10,163 --> 01:44:11,963
+M maksimum derinlikte hocam.
+
+393
+01:44:12,404 --> 01:44:21,263
+Maksimum derinlikte. Eğer ki M, D'den çok çok büyükse, bu kötü bir durum ama çok çok büyük değilse, o kadar da sıkıntı değil.
+
+394
+01:44:23,023 --> 01:44:30,863
+Arama uzayında çözümler yoğunsa enini aramadan hızlı bile çözüm bulabilir. Ne demek istiyorum? Mesela şöyle bir şey düşünün.
+
+395
+01:44:36,564 --> 01:44:37,783
+Yılmazıya vayda.
+
+396
+01:45:23,444 --> 01:45:25,024
+Bir durum düşünüyorum sadece de.
+
+397
+01:46:14,739 --> 01:46:16,260
+Mesela şöyle olsun.
+
+398
+01:46:22,036 --> 01:46:30,935
+Şurası bir çözüm olsun. Şurası da bir çözüm olsun. Tamam. İkisi de iyi çözümler olsunlar. Tamam.
+
+399
+01:46:32,815 --> 01:46:37,576
+Şimdi enlemesini arama. Hangi çözüme erişecektir?
+
+400
+01:46:43,188 --> 01:46:44,028
+Sağdakine.
+
+401
+01:46:45,028 --> 01:46:53,228
+Değil mi? Buna erişecektir. Derinleme sınavına buna erişecektir. Şimdi, enlemesini arama ikiye önce buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak değil mi?
+
+402
+01:46:53,648 --> 01:47:00,448
+Yani bir, iki, üç, dört, beş, altı, yedi adımda anca buna erişecektir. Ama mesela derinleme sınavına buna bakacak, buna bakacak, buna bakacak, buna bakacak.
+
+403
+01:47:02,288 --> 01:47:06,788
+Dolayısıyla hani çözümleriniz çok sayıdaysa bu ağacın üzerinde.
+
+404
+01:47:07,315 --> 01:47:17,835
+Enlemesini aramadan daha hızlı sonuç üretme olasılığı var mı? Evet var. Kesin bir şey mi? Hayır değil tabii ki. Problem tipine göre değişebilecek bir şey bu.
+
+405
+01:47:27,764 --> 01:47:54,443
+Space, B çarpı M. Burası çok enteresan bir kısım. Enteresan derken diğerinden çok önemli bir fark. B çarpı M. Bu yine her bir şey. B üstü değil farkında mısınız? Hafıza gereksinimi üstsel değil. B çarpı M. Bunu aslında demin şeyde biraz görmüştük. Bir saniye şurada.
+
+406
+01:47:55,188 --> 01:48:02,268
+Şimdi bakın, bunun ilerledikçe çok büyük memori gereksinleri olacağı belli.
+
+407
+01:48:02,268 --> 01:48:05,867
+Ama mesela bu başına eklediğiniz durumda sürekli tüketerek ilerliyor aslında.
+
+408
+01:48:06,355 --> 01:48:22,055
+Tamam mı? Dolayısıyla bunun hafıza gereksinimi böyle korkunç boyutlara falan üstsel falan hiçbir zaman olmuyor. Böyle hep diner yapılarda kalıyor. Yani hani işte B çarpı M gibisinden şeylerde, B üstsü M falan gibisinden bir şeylere hiçbir zaman çıkmıyor.
+
+409
+01:48:22,055 --> 01:48:34,355
+Dolayısıyla bunun bir sürü kötü tarafının yanında yani derinlemesini arama algoritmasının bir sürü kötü özelliği var. Komplik değil vesaire vesaire. Ama çok...
+
+410
+01:48:34,355 --> 01:48:54,836
+Güzel bir özelliği hafıza gereksiniminin çok çok çok az olması. Tamam. İşin güzel tarafı burası. Derinlemesini arama algoritmasıyla alakalı. Peki, şimdi optimal mi? Derinlemesini arama algoritması.
+
+411
+01:49:01,747 --> 01:49:04,687
+İyiydi hocam. İyiydi bulduğu ne olabilir?
+
+412
+01:49:05,747 --> 01:49:30,228
+Hiçbir alakası yok değil mi? Mesela şimdi şunun optimal çözüm olduğunu düşünün. Bir de şunun da optimal çözüm olduğunu düşünün. Yani bu bir çözüm olsun, bu da bir çözüm olsun. Bundan daha iyi bir çözüm olsun mesela. İlk önce bu gidecektir, bunu bulacaktır. Deme derinlemesem. Diğer şuradan aşağı doğru gidip direkt bunu bulacaktır. Bunu daha sonra gelecektir. Dolayısıyla ilk bulduğu çözümün en iyi çözüm olması gerekiyor ya. Dolayısıyla öyle bir özelliği maalesef yok.
+
+413
+01:49:30,931 --> 01:49:53,332
+Şimdi tekrardan şey deniyorum. Arada atladığımız algoritmaya. Şimdi bu algoritmamızın farkı, el nebesini arama yapabiliyoruz diyor. Farkı şu. Bu hani dizinin içerisinden biz bir şey çekiyoruz ya. Hani en baştan çekiyoruz hep. Öyle şey yaptık. Başa ekliyoruz ya da sona ekliyoruz ama hep en baştan çekiyoruz.
+
+414
+01:49:53,876 --> 01:50:17,076
+Böyle bir yapı kurduk. Burada düşük maliyetler aracılığı, uniform cost-search'ünün yaptığı şey şu. Bu bizim elimizdeki dizinin içindeki elemanlardan bir şeyi mekanik olarak çekmiyor. Bir analiz yaparak çekiyor. Analiz de şu. Hangisinin köke olan, kökten itibaren maliyeti en düşükse onu çekiyor.
+
+415
+01:50:18,003 --> 01:50:44,764
+Tamam mı? Kökten itibaren toplam maliyeti en az düğümü seçip genişletiyor. Yani biz burada mesela gidiyorduk. Neredeydi o bizim yaptığımız? Şurada. Mesela hep en başlığını çektik değil mi? Görüyor musunuz? Hep en başlığını çektik. Böyle yapmıyor. Bakıyor bunlara mesela. Dört var, beş var, üç var. Dörde bakıyor. Dördün kökten itibaren maliyetine kadar şu kadar. Beşinine kadar bu kadar. Üçünine kadar bu kadar. O zaman bunların en düşük maliyeti hangisi? Ben onu çekeceğim.
+
+416
+01:50:45,300 --> 01:50:54,840
+Tamam. Peki nasıl bir şey oluyor? Mesela şimdi burada bir problem var. O problem üzerinden algılayalım bunu. Burada şehirler var.
+
+417
+01:50:55,283 --> 01:51:21,603
+Bunlar şehirler. A, B, C, D, E, F. Bunlar şehirler. Şehirlerin evine bağlı yollar var. Her şehirden her şehirde yol yok tabii. Nasıl ki buradan ne bileyim Sivas'a direkt bir yol yoksa burada da aynı şekilde A, B, C, D, E, F. Bunlar biraz şehir. Yollarımız var. Nereden nereye yollar olduğunu gösteriyor ve yolların üzerindeki rakamlar da o yolun kilometresini gösteriyor. Sorumuz şu. A'dan F'ye gitmek istiyorum. Ben nasıl gidiyorum? A'dan F'ye gitmek istiyorum.
+
+418
+01:51:22,292 --> 01:51:38,172
+Şimdi bunu algoritmaya çözdürmeye çalışacağız. Şimdi nasıl? Başlangıçta A ile başlıyoruz. Tamam. A'dan gidilebilecek nereler var arkadaşlar? 3 tane var. B var, C var, D var. B var, C var, D var. Şimdi B, C, D'nin bunlar bizim şeye eklendiler. Kuyruğa eklendiler.
+
+419
+01:51:38,608 --> 01:52:05,987
+Şimdi kuyruktan burada şey direkt hani başta olduğu için bir şey çekilme ya da sonunda olduğu için bir şey çekilme ya da başa ekleme, sona ekleme falan gibisinden bir şeyin manası yok burada. İstediğin yere ekle. Zaten o şeyi yapacak. Şimdi bu BCD'den hangisini çekecek? BCD'den BCD'ye bakıyor. A'dan B maliyeti ne kadar? A'dan buraya gelmenin maliyeti 1. Buradan A'dan C'ye gelmenin maliyeti 4. Bundan D'ye gelmenin maliyeti 15. O zaman ben bunların içerisinden bir olay, minimum olanı seçim, minimum olanı 1. O da B. B'yi çekti.
+
+420
+01:52:06,484 --> 01:52:28,503
+Şimdi B'yi çektiği zaman B'den gidebilecek neresi var? F var. Bu F'yi ekledi. Kuyruğun içerisinde şu anda F, C, D var. Şimdi F, C, D'den hangisini çekecek? Bakacak yine. F'nin maliyetine kadar. F dediğimiz şey bakın şöyle bir şey. A'dan B'ye giriş, B'den F'ye giriş değil mi? Bunun maliyeti 10 artı 1, bu 11. Bunun maliyeti 4, bunun maliyeti 15.
+
+421
+01:52:29,268 --> 01:52:56,368
+Şu anda hedef aslında benim kuyruğun içerisinde var. Görüyor musunuz? F'ye duruyor ama onu çekmiyor. Çünkü onun maniyeti fazla. Gitti, burada maniyete en düşük olan 4. Yani C'yi seçti. C'yi seçtiğinde C'den gidilebilecek neresi var? E var. Onu ekledi. Dolayısıyla F, E, D kaldı bizim kuyruğumuzun içerisinde. F, D'ye baktı. F'nin maniyeti 11, E'nin maniyeti 9. 9 nereden çıkıyor? 5 artı 4'ten çıkıyor. D'nin maniyeti 15 zaten.
+
+422
+01:52:56,916 --> 01:53:09,324
+Burada 9 olan E'yi seçti. Şimdi E'den gidebilecek F var, F'yi ekledi. Şimdi burada bakın iki tane F oluştu, görüyor musunuz? Bu iki F aynı F değil. Bu iki F'den, bu F'lerden bir tanesi...
+
+423
+01:53:09,844 --> 01:53:34,423
+Şu A'dan B'ye gidip B'den F'ye gitmenin F'si, bir tanesi A'dan C'ye, C'den E'ye, E'den F'ye gitmenin F'si. İki tane F. Bu iki F'den, işte hangisinin hangisi olur burada belli zaten. Bu iki F'den ve D'den hangisi düşükse onu seçiyor. F'yi seçti. F'yi seçti. F hedef mi? Evet hedef. O zaman durdu. Durduğu anda da zaten şunu seçmiş olacak. Şu ikinci F'yi.
+
+424
+01:53:34,804 --> 01:53:42,064
+Şu gördüğümüz şey, yani maliyet, şu en kısa yolu göstermiş oldu. Anlaşıldı mı algoritması?
+
+425
+01:53:47,220 --> 01:53:59,680
+Anlaşıldı hocam. Çünkü yukarıda yazım hatası var. Hocam 5 ile 4'ün yeri değişecek yolda. Üstte A'dan C'ye giderken. Hepsinde 4, orada 5 ile 4 karışmış.
+
+426
+01:54:00,640 --> 01:54:01,700
+Şöyle diyorsun değil mi?
+
+427
+01:54:01,700 --> 01:54:05,440
+Evet, aşağıda bakarken bir an şey yaptım da kafam karışıldı o yüzden söyleyeyim.
+
+428
+01:54:05,940 --> 01:54:06,780
+Şöyle olacak değil mi?
+
+429
+01:54:07,200 --> 01:54:07,660
+Evet hocam.
+
+430
+01:54:08,340 --> 01:54:09,160
+Teşekkür ederim.
+
+431
+01:54:11,891 --> 01:54:34,112
+Niye öyle olmuş? Her yerde öyle yazmışım. Enteresan olur. Neyse. Tamam, teşekkür ederim. Şimdi inceleyelim bunu. Complete mi? Bu ayı var mı? Çözüm varsa bulacak mı? Evet, bulacak bir şey yok. Ne der ona? Ondan yana bir sıkıntı yok. Time ve Space açısından.
+
+432
+01:54:34,579 --> 01:54:57,260
+Herhangi bir şey de yok. Ne derler ona? Farkı yok. Enlemesini aramadan bir farkı yok. Time and Space açısından. Optimal mi? Optimallik burada çok önemli bir özelliği oluyor. Tüm maliyetler, bakın burada maliyetler eşitse diye bir şey yok, koşul yok. Tamam mı? Burada maliyetler birbirinden farklı olsa da bu algoritma optimal. Tamam mı?
+
+433
+01:54:57,619 --> 01:55:10,539
+Yani şu anda kadar en iyi algoritma, optimallik açısından düşünsak. En iyi algoritma bu optimallik açısından. Ama tabii hafıza yine problem. Enlemesini arama yaptığı için temelde.
+
+434
+01:55:10,539 --> 01:55:24,363
+Zaten bu algoritmayı bütün maliyetlerin eşit olduğu bir problemle çalıştırırsanız enlemesini aramanın aynısını yapacaktır. Hiçbir fark olmayacaktır. Çünkü...
+
+435
+01:55:24,467 --> 01:55:44,667
+Kuyruğun içerisindeki elemanlardan hangisini her zaman seçecek? En az adıma sahip olanı seçecek değil mi? Bütün maliyetler eşitse, maliyetlerine göre sıralama yaptığınızda ne göreceksiniz? Siz en az adıma sahip olan, yani köke en yakın olan, bütün maliyetler eşitse köke en yakın olanı seçecektir.
+
+436
+01:55:45,887 --> 01:55:50,667
+Dolayısıyla enlemesini aramadan hiçbir farkı olmayacaktır. Ama maliyetler farklıysa...
+
+437
+01:55:50,771 --> 01:55:55,692
+Farklı seçimler yapıp bize yine optimum sonucu verebilecek.
+
+438
+01:55:56,931 --> 01:56:01,871
+Güzel. Şu ana kadar üç tane algoritmayı tamamlamış olduk.
+
+439
+01:56:02,091 --> 01:56:05,211
+Şimdi gelelim bir sonraki algoritmamıza.
+
+440
+01:56:05,911 --> 01:56:10,331
+Şimdi derinlemesini, arama algoritmasını incelerken güzel bir taraf bulduk.
+
+441
+01:56:10,791 --> 01:56:11,211
+Neydi o?
+
+442
+01:56:19,380 --> 01:56:21,000
+Bellekte daha az yer kaplıyor.
+
+443
+01:56:21,199 --> 01:56:46,920
+Evet, bellek. Öteki taraflarda fail, çok da bir güzelliği yok yani düşünürsek. Ama bellekte az yer kaplı olsa olukça iyi. Peki, şimdi başka bir algörtmadan bahsedeceğim. Sınırlı derinlikte arama. Sınırlı derinlikte arama algörtmasının derinlemesini aramadan bir tanecik farkı var. Şu, derinliğe bir sınır koyuyor.
+
+444
+01:56:47,667 --> 01:57:03,287
+Yani şunu yapıyor, mesela derinlik 5 olsun. Ben 5'ten daha aşağıdaki yerlere gitmeyeceğim. Tamam mı? Bu. Peki, şimdi hep beraber şunu yapalım. Şunu istiyorum.
+
+445
+01:57:24,148 --> 01:57:42,908
+Sınırlı denilikte arama algoritmasının kriterlerine göre bakalım. Burada işi kolaylaştırmak için şöyle bir şey hayal edebilirsiniz. Koyacağız ya, bu sınır 5 olsun mesela. 5'ten daha aşağıya inemiyor. Tamam mı?
+
+446
+01:57:44,908 --> 01:57:47,648
+Şimdi, bu algoritma komple midir?
+
+447
+01:57:49,076 --> 01:57:54,556
+Hocam, bu bir seferde mi beşten aşağı inemiyor? Yani sonraki adımda, altta geçip devam edecek.
+
+448
+01:57:54,576 --> 01:58:10,796
+Yok yok yok. Bir sefer, yani beşe kadar inebiliyor. Yani beş adım. Yani mesela şurasını aslında, şu görüntüyü aslında iki sınır verilmiş sınır denkle arama gibi düşünebilirsiniz. Yani şuradan bir şeyler çıkıyor olsa bile hani onları burada kabul etmedik ya.
+
+449
+01:58:12,083 --> 01:58:23,363
+Dolayısıyla şurada yaptığımız iki derinlik sınırıyla yapılmış bir şey diye düşünebilirsiniz. Komplit midir bu algoritma?
+
+450
+01:58:24,463 --> 01:58:24,844
+Değil.
+
+451
+01:58:25,344 --> 01:58:25,623
+Niye?
+
+452
+01:58:26,564 --> 01:58:30,024
+L'den daha aşağıda çözüm varsa onu dolaşmayacak.
+
+453
+01:58:30,024 --> 01:58:39,043
+Çok güzel, çok güzel. O zaman şöyle bir şey olacak değil mi? L büyüktür, D ise evet diyebilir miyim?
+
+454
+01:58:39,764 --> 01:58:43,404
+Evet.
+
+455
+01:58:44,404 --> 01:58:52,684
+Bunu diyebilirim değil mi? Yani seçtiğim L eğer iyi bir şeyse, şansım artık kısmet orası.
+
+456
+01:58:55,684 --> 01:59:03,124
+Evet ama işte değilse çok da şey değil. Peki, zaman açısından nasıl bir şey olacak bu?
+
+457
+01:59:12,020 --> 01:59:14,780
+Pesine.
+
+458
+01:59:18,420 --> 01:59:23,920
+Üniversitesi L olacak değil mi? Space aşısından ne olacak?
+
+459
+01:59:27,315 --> 01:59:28,844
+O da aynı galiba.
+
+460
+01:59:34,036 --> 01:59:45,036
+Öyle mi acaba? L değil mi hocam? E çarpı L mi olacak hocam? E çarpı L olacak değil mi? B çarpı L olacak. Peki. Optimal mi?
+
+461
+01:59:49,619 --> 01:59:51,400
+Bulduğunu farz edersek, evet.
+
+462
+01:59:52,400 --> 01:59:53,980
+Hayır, hayır.
+
+463
+01:59:57,060 --> 01:59:58,840
+Kesinlikle. Tamam.
+
+464
+02:00:00,159 --> 02:00:01,300
+Hocam bir şey sorabilir miyim?
+
+465
+02:00:01,720 --> 02:00:01,960
+Evet.
+
+466
+02:00:02,740 --> 02:00:07,820
+Şimdi bu L'ye kadar gidip baktı ya, bulamadı. Sonra L'nin ilerisine de bakmaya devam etmiyor mu bu?
+
+467
+02:00:07,900 --> 02:00:08,640
+Hayır, hayır.
+
+468
+02:00:09,720 --> 02:00:10,320
+Tamamdır.
+
+469
+02:00:14,963 --> 02:00:16,963
+Tamam mıyız arkadaşlar buraya kadar?
+
+470
+02:00:19,363 --> 02:00:20,863
+Varmı vurdusluğunuz.
+
+471
+02:00:27,315 --> 02:00:34,036
+Şimdi sınırlı derinlikte arama algoritmasını kullanan başka bir algoritmadan bahsedeceğiz.
+
+472
+02:00:35,275 --> 02:00:37,996
+Bu algoritmanın ismi artan derinlikte arama.
+
+473
+02:00:38,815 --> 02:00:40,536
+Artan derinlikte arama da şu yapılıyor.
+
+474
+02:00:41,496 --> 02:00:54,916
+Sınırlı derinlikte aramanın sınır parametresi olan D'yi sıfırdan ya da birden başlatıp işte X neyse oraya kadar arttırıyorsunuz.
+
+475
+02:00:56,659 --> 02:01:21,619
+Yani ilk önce mesela bir derinlikte bir sınırda derinlemesini arama yapıyorsunuz. Sonra iki sınırda derinlemesini aratıyorsunuz. Sonra üç sınırıyla yani görselleştirmeye kalkarsan sıfırda zaten hiçbir operatör yok. Bir adım atarak maksimum gidebilirsin dediğimizde ne yapacak? Buna bakacak sonra, sonra buna bakacak, sonra buna bakacak.
+
+476
+02:01:22,015 --> 02:01:23,335
+Bu şekilde bir sırası olacak.
+
+477
+02:01:23,895 --> 02:01:25,935
+Sonra L'sini 2 yapacak.
+
+478
+02:01:26,215 --> 02:01:28,255
+2 yaptığında yine buradan başlangıçta
+
+479
+02:01:28,255 --> 02:01:33,195
+buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak.
+
+480
+02:01:34,415 --> 02:01:36,036
+Sonra L'yi 3 dediğimizde
+
+481
+02:01:36,036 --> 02:01:41,475
+ilk önce 3'üne bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak, sonra buna bakacak.
+
+482
+02:01:42,235 --> 02:01:42,755
+Anladın mı?
+
+483
+02:01:45,235 --> 02:01:46,536
+Hocam bir şey sorabilir miyim?
+
+484
+02:01:46,855 --> 02:01:47,155
+Evet.
+
+485
+02:01:47,875 --> 02:01:54,355
+Burada her ley arttırdığımızda her zaman derin öncelikle aramaya ağacın kökünden mi başlayacak?
+
+486
+02:01:54,355 --> 02:01:57,475
+Evet, her seferinde kökten başlayacak. Aynen öyle.
+
+487
+02:01:58,695 --> 02:02:02,515
+Kökten başlamaması bir şey olamayın.
+
+488
+02:02:06,547 --> 02:02:33,427
+Burada fark ettiyseniz fazladan bir şeyler yaptık. Fazladan bir şeyler ne yaptık? Bakın şu en baştaki state'e şunu kontrolüne bakın. Burada bir kere yaptık. Burada bir kere daha yaptık. Burada bir kere daha yaptık. Burada bir kere daha yaptık. Daha da devam ederse daha da yapacağız değil mi? Ya da ikinci seviyeyi düşünün. Burada tamam bakmadım ama şimdi. Mesela buradakilere burada bir kez baktık. Burada onlara yine bir kez daha burada da yine bakıyoruz. Onlara bir kez daha burada yine bakıyoruz. Görüyor musunuz?
+
+489
+02:02:34,355 --> 02:02:55,975
+Aynı şeyleri tekrarlıyoruz. Bu tabii ekstra bir maliyet oluşturuyor. Nasıl bir maliyet oluşturuyor? Mesela Depth Limited Search'ta, yani benim maksimum derinliğimi ben D olarak kabul edip, burada Depth Limited Search yaparsam, zaman açısından böyle bir zaman harcayacağım. B üstü değilik bir zaman harcayacağım.
+
+490
+02:02:57,555 --> 02:03:18,595
+Ama eğer iteratif deepening search yaparsam, yani her adımda birer birer arttırarak artan derinlikte arama yaparsam, o zaman birinci seviyedekinden D artı bir kez tekrar tekrar geçeceğim. İkinci seviyedekinden D kez geçeceğim. Üçüncü seviyedekinden D eksi bir kez geçeceğim vs. Ama en son seviye hala aynı kalacak. Yani o en son seviyedekinde çok bir değişik olmuyor.
+
+491
+02:03:19,395 --> 02:03:25,555
+Yani dolayısıyla İDS'de her dünden birden fazla kez geçiriyor. Derinliğe bağlı olarak bu rakamlar değişebilirler ama mesela B'nin 10 D...
+
+492
+02:03:25,555 --> 02:03:45,615
+Öncelerinin 5 olduğu durumda Depth Limited Search, yani normal standart, sınırlı denildi arama yaptığınızda, 1 artı, 10 artı, 100 artı, 1000 artı, 10 bin artı, 100 binlik bir şey yaptığınızda işte 111 bin, 111 gibisinden bir şey çıkıyor. Ama iteratif deepening search yaptığınızda birden 6 kez geçiyoruz. Buradan bu kadar kez, buradan bu kadar kez, buradan bu kadar kez, buradan bu kadar kez, buradan bu kadar kez, buradan bu kadar kez, buradan bu kadar kez geçiyoruz.
+
+493
+02:03:46,000 --> 02:04:11,799
+Ama işin güzel tarafı şuralar aynıdır. En büyük problematik olabilecek kısım şurası zaten. Burası da çok daha fazla olsa da çok fazla bir artış olurdu. Buradaki fazladan artırıp %11 olmuş. BVD'nin farklı değerleri için bu değer değişebilir ama maksimum ne kadar olabilir onu araştırmayı size bırakıyorum. Yani ben BVD'yi istediğim gibi değiştirebilsem bu %11 maksimum ne olur? Bunu birazcık incelen isterseniz.
+
+494
+02:04:12,275 --> 02:04:38,895
+Peki, bu fazladan bir iş yaptık. Biz %10'luk bir iş yaptık ya da %50'lik bir iş yaptık. Bunun bize bir faydası olur mu? Şimdi deminki şeyi hatırlayalım. Şimdi komplet mevzusunu tekrardan bu sefer sınır derinlikte değil de artan derinlikli arama diyelim. Model L diye bir şey yok artık.
+
+495
+02:04:39,828 --> 02:04:40,828
+Komplit midir?
+
+496
+02:04:45,492 --> 02:05:09,472
+Evet. Varsa illaki bulacak değil mi? Yani neden derinlikli arama kompleit değildi, derinlemesinin arama? Sonsuz duplara takılıyor. Bu algoritma sonsuz dupla takılır mı? Hayır. Belli bir ötekisindeki, yani sınırlı derinlikli arama da belli bir sınır seçip arama yaptığınız o derinin altında yer alması durumunda bulamayacaktı.
+
+497
+02:05:09,908 --> 02:05:21,048
+O yüzden burada neyimiz var elimizde artık şu anda? Komplit bir algoritmamız var. Niye komplit olduğunu algıldık mı bunu arkadaşlar?
+
+498
+02:05:25,011 --> 02:05:27,391
+Hocam orayı anladım da bir şey daha sorabilir miyim?
+
+499
+02:05:27,631 --> 02:05:27,851
+Tabii.
+
+500
+02:05:28,412 --> 02:05:35,311
+Bu algoritmanın BFS'e göre o zaman avantajı Space Komplekslisi ama dezavantaj olarak Time Komplekslisi mi oluyor?
+
+501
+02:05:35,652 --> 02:05:38,311
+Şimdi biz neyden bahsediyoruz? Sen nereye atladın?
+
+502
+02:05:40,291 --> 02:05:43,692
+Burada BFS'e benziyor ya biraz karşılaştırmaya çalışıyoruz.
+
+503
+02:05:43,692 --> 02:05:48,311
+Tamam zaten şu anda onu yapmaya çalışıyoruz da Kompleks mevzusunu konuşuyoruz.
+
+504
+02:05:48,431 --> 02:05:50,912
+Daha Time'a ve Space'e ve Optimalliğe gelmedik.
+
+505
+02:05:51,572 --> 02:06:13,192
+Tamam hocam. Önden atla bak. Komplitlik mevzusunda söyleyeceğim bir şey var mı? Yok hocam. Tamam. Komplit olduğunu herkes anladı mı? Arkadaşlar. Evet hocam. Evet. Tamam. Komplit olduğunu ikna alıyoruz. Peki. Zaman açısından nasıl bir şey olacak bu?
+
+506
+02:06:24,083 --> 02:06:25,623
+Artık L diye bir şey yok.
+
+507
+02:06:37,395 --> 02:06:39,935
+Orası D olacak ve bir katsayıyla çarpacağız ama.
+
+508
+02:06:42,076 --> 02:07:02,796
+Artı Q gibi bir şey var orada aslında. Tamam mı? Fazlalık bir şey var. Tamam mı? B üstü D artı bir şeyler daha yapıyoruz. Ama bu artı olan şey bunun mertebesinde bir şey değil. Tamam mı? Yani B üstü D'nin daha üst mertebesinde bir şey değil. O yüzden çok çok büyük şey değil.
+
+509
+02:07:03,220 --> 02:07:06,819
+Sıkıntı olamaz. Peki, Space?
+
+510
+02:07:13,908 --> 02:07:15,627
+B çarpı D hocam ne?
+
+511
+02:07:17,547 --> 02:07:19,568
+B çarpı D değil mi hala?
+
+512
+02:07:21,648 --> 02:07:22,707
+Peki optimal mi?
+
+513
+02:07:27,699 --> 02:07:28,899
+Bir soru bu.
+
+514
+02:07:32,372 --> 02:07:57,551
+Diğerinin optimal olmalı değil, kesin değil. Optimal değil yani. Bu optimal. Bu da değil hocam çünkü aynı mantık. İlk sol tarafa bakıyor. Sağdaysa çözüm yine şey yapacağız. Nasıl bir düşün bakalım. Bak şimdi. Yani şöyle. Şimdi bir çözüm burada, bir çözüm burada. Hangisini önce bulur bu algoritma? Bunu mu bulur, bunu mu bulur? Evet. Üsttekini bulur.
+
+515
+02:07:58,484 --> 02:08:11,984
+Her zaman üsttekini bulacak değil mi? Çünkü derinliği nereden başlatıyor? Sıfırdan başlatıyor. Ve her bir derini birer birer arttırarak gidiyor. Dolayısıyla köke daha yakın olan çözümü her zaman daha önce bulacak. Doğru mu?
+
+516
+02:08:13,824 --> 02:08:14,364
+Evet hocam.
+
+517
+02:08:14,704 --> 02:08:23,064
+Anlatabildim mi mevzuyu? Dolayısıyla burası evet ama ne zaman evet? Maliyetler eşitse evet değil mi?
+
+518
+02:08:23,604 --> 02:08:39,344
+Yani aslında enlemesine arama kadar optimal diyebiliriz bunu değil mi? Yani şeyi aynı. Optimallik kısıtı aynı. Maliyetleri çizgi. Yani daha az adımlı olanı ne yapacak? Daha önce bulacak. Orası kesin. Tamam mı?
+
+519
+02:08:40,524 --> 02:08:45,984
+Hocam, time kompleksli B üzeri D artı 1'e yakın bir şeyler.
+
+520
+02:08:47,347 --> 02:08:53,088
+Olmuyor mu? Yani bu Q dediğimiz şey aslında bayağı büyük bir şey olmuyor mu bu durumda?
+
+521
+02:08:53,768 --> 02:08:54,408
+Bakalım.
+
+522
+02:09:01,492 --> 02:09:24,291
+Mesela burada hiç öyle bir şey olmamış. Görüyor musun? Şu en sondaki şey aynı kalıyor ya. Bak. Yani şurada bir B üstü D var, burada da bir B üstü D var. Şunlar çarpılıyor bak. Yani iki tane B üzeri B üstü D eksi bir var mesela. Üç tane B üzeri D eksi iki var. Vesaire vesaire. Ama B üstü D'lik kısımda tekrar yok. Anlatabildim mi?
+
+523
+02:09:25,011 --> 02:09:30,431
+Dolayısıyla hani şunların hepsinden daha büyük bir şey hiçbir zaman olmuyor bu. Anlatabildim mi?
+
+524
+02:09:32,192 --> 02:09:37,532
+Bu gerçi yani B'nin iki olma durumunu düşünmüştüm de ben bir…
+
+525
+02:09:37,532 --> 02:09:47,771
+Tamam işte orada hani maksimum değerlerini bir görün. Yani şuradaki artış, yani fazladan yaptığımız iş maksimum ne olur? Onu bir inceleyin. Tamam mı?
+
+526
+02:09:48,112 --> 02:09:49,511
+Tamamdır hocam. Teşekkürler.
+
+527
+02:09:49,612 --> 02:09:51,452
+Rica ederim. Ben teşekkür ederim.
+
+528
+02:09:55,283 --> 02:10:11,404
+Şimdi o zaman artan derinlikli, işte burada yazdığımız şeyler, bunu kendimiz yaptık. Evet, bunu bulduk. B üstü D'ye bunun aşağı yukarı yine eşit olduğu zaman söyledik. Space B çarpı D'de bu süper. Ve tüm manette eşitse evet.
+
+529
+02:10:12,819 --> 02:10:36,059
+Dolayısıyla oldukça iyi bir algoritma oldu elimize. Hem optimallik açısından hem de space açısından. Yani memoride hala lineer bir gereksinimle arama yapmaya devam edebiliyoruz. Bu çok güzel bir şey. Derinlik çok artsa da bizim şeyimiz üstsel olarak artmayacak.
+
+530
+02:10:36,059 --> 02:10:39,539
+Memori ihtiyacımız üstsel olarak artmayacak.
+
+531
+02:10:40,239 --> 02:10:46,479
+O kuyruğumuz ya da işte siteyimiz çok şişmeyecek.
+
+532
+02:10:47,979 --> 02:10:52,799
+Optimalliği de fena değil. Tüm maliyetler işitse bunun birçok problem türüne uygun aslında.
+
+533
+02:10:53,639 --> 02:11:02,259
+Peki, bir soru. Artan derinlikli aramada derinlemesini arama yapmak yerine enlemesini arama yapsak ne olur?
+
+534
+02:11:04,459 --> 02:11:06,979
+Yani şundan bahsediyorum. Neredeydi oğlum?
+
+535
+02:11:08,083 --> 02:11:19,943
+Şurada sınırlı derinlikte arama var ya, sınırlı derinlikte arama yerine sınırlı derinlikte aramada, orada mesela derinlemesini aramadan mesela sınırlı derinlik sınırlansa ne olur?
+
+536
+02:11:23,003 --> 02:11:26,323
+Hiçbir şey değişmez normal enlemesini aramadan.
+
+537
+02:11:27,863 --> 02:11:29,063
+Yok, bir şey değişir.
+
+538
+02:11:29,183 --> 02:11:33,003
+Hafızayı şeylere atmayacağız hocam. O derinliğin altındaki.
+
+539
+02:11:33,488 --> 02:11:35,368
+Diğerleri atmayacağız sadece.
+
+540
+02:11:35,568 --> 02:11:40,788
+Evet. Ama hafıza gereksiniminde bir değişiklik olacak mı? Enlemesini aramaya göre.
+
+541
+02:11:42,068 --> 02:11:43,708
+Bence birazcık azalacak çünkü.
+
+542
+02:11:44,208 --> 02:11:45,468
+Yok. Niye azalsın ki?
+
+543
+02:11:46,048 --> 02:11:55,448
+Bir sonraki gideceği yerleri kuyruğu almayacak. Mesela üçüncü katmanda dördüncüdekileri almayacak. Yani hiçbir zaman nereye gitmesi gerektiğini.
+
+544
+02:11:56,328 --> 02:12:00,368
+Yok tamam da hani D derinlikteki bir çözümü bulurken diyelim.
+
+545
+02:12:01,108 --> 02:12:26,668
+Yani süreç açısından çok büyük bir şey olmayacak. Büyük bir farklılık olmayacak aslında. Hani D-1, D-1 falan gibisinden bir şeyler düşünebilir ama daha ötesinde bir değişim olmayacak. Anlatabildim mi demek istediğimi? Yani bir altı, bir üstü falan gibisinden bir şey de olabilir ama hani B çarpı D'ye dönüşmeyecek hiçbir zaman. Anlatabildim mi? Hala B üstü D olacak. Anlatabildim mi demek istediğimi?
+
+546
+02:12:27,948 --> 02:12:28,948
+Anladım hocam.
+
+547
+02:12:29,171 --> 02:12:51,591
+Tamam. Yani memori açısından büyük bir fark olmayacak. Zaman açısından daha kötü mü olacak enlemesini aramaya göre bu arama? Evet, bir miktar. Ama çok önemsenmeyecek bir miktar. Belki öyle diyelim. O noktada kötü olacak. O zaman bir işimize de yaramıyor o zaman, değil mi? Yani öyle yapılır olursa.
+
+548
+02:12:52,340 --> 02:13:07,920
+Space açısından da bir işimize yardımcı. Dolayısıyla burada sınırlı derinlikte aramadan aklınıza geri bilen orada derinlemesini aramaya, enlemesini aramaya kullansak ne olur? Sadece bir şeyler kaybedersiniz, hiçbir şey kazanamazsınız. Öyle söyleyeyim. Tamam.
+
+549
+02:13:14,771 --> 02:13:16,532
+Peki, soru soğan var mı arkadaşlar?
+
+550
+02:13:22,899 --> 02:13:44,959
+Şu ana kadar kimlerden? Peki. O zaman arkadaşlar, bugünkü dersimizi burada bırakalım. Önümüzdeki hafta iki yönlü arama kaldı zaten. Biraz da animasyonlara falan bakarız neler var neler yok diye. Ondan sonra da haftaya asıl şeye odaklanacağız. Ne derler ona?
+
+551
+02:13:46,868 --> 02:13:59,688
+Aramanın süresine odaklanan, süresini azaltmaya çalışan yaklaşımlara odaklanacağız. Şu anda biz süreye çok fazla takılmadık fark ettiyseniz. Birbirlerine yakınlar da hep.
+
+552
+02:13:59,967 --> 02:14:24,788
+Space açısından güzellikler vardı. Ama süre açısından pek bir iyileşme sağlayamadık burada. Kör arama algoritmadan çıkıp, sevgisayar algoritmalarını geçtiğimiz zaman süre açısından kazançlar sağlamaya uğraşacağız diye söyleyeyim şimdiden. Spoiler olarak. Peki. Önümüzdeki hafta görüşmek üzere diyorum zaman arkadaşlar. Hepinize teşekkür ederim geldiğiniz için.
+
+553
+02:14:25,248 --> 02:14:27,648
+Görüşmek üzere hocam. İyi haftalar hocam.
+
+554
+02:14:27,828 --> 02:14:28,328
+Tövbe.

@@ -1,0 +1,3884 @@
+1
+00:06:04,750 --> 00:06:07,750
+Gençler, merhaba. Sesimde bir sorun var mı?
+
+2
+00:06:07,750 --> 00:06:17,060
+Sesimi alabiliyor musunuz? Biri cevap verse.
+
+3
+00:06:17,060 --> 00:07:23,410
+Şimdi geliyor mu sesim?
+
+4
+00:07:23,410 --> 00:07:34,209
+Teşekkür ediyorum.
+
+5
+00:07:34,209 --> 00:07:36,209
+Sekiz kişi bana biraz az gibi geldi ama.
+
+6
+00:07:36,209 --> 00:07:39,209
+Bir üç dakika daha bekleyelim. Ondan sonra başlarız.
+
+7
+00:07:39,209 --> 00:09:35,059
+Evet, merhaba arkadaşlar.
+
+8
+00:09:35,059 --> 00:09:37,059
+Bugün uygulamayı ben yapacağım.
+
+9
+00:09:37,059 --> 00:09:40,059
+Orada Ali Gökhan Yavuz yazdığına bakmayın.
+
+10
+00:09:40,059 --> 00:09:44,059
+İsmin bir Türk kol. Hatırlıyorsunuzdur ben herhalde diye düşünüyorum.
+
+11
+00:09:44,059 --> 00:09:49,389
+Görüntüyle ilgili sorun var mı?
+
+12
+00:09:49,389 --> 00:10:03,360
+Ben buradan çeti nereden buluyordum acaba?
+
+13
+00:10:03,360 --> 00:10:10,580
+Bak şuradaymış. Tamam, bir de.
+
+14
+00:10:10,580 --> 00:10:22,820
+Başlayalım yavaş yavaş.
+
+15
+00:10:22,820 --> 00:10:25,820
+Bu Sekçin 1'in bir kısmını yapabileceğim.
+
+16
+00:10:25,820 --> 00:10:31,820
+Bir saatimiz var çünkü çok fazla şey yapamayabilirim.
+
+17
+00:10:31,820 --> 00:10:36,820
+Yapabildiğimiz kadarını üzerinden geçelim.
+
+18
+00:10:36,820 --> 00:10:40,820
+Sonra geri kalanı için paylaşımları yapacağım.
+
+19
+00:10:40,820 --> 00:10:43,820
+Zaten oradan kendinizle bakabilirsiniz.
+
+20
+00:10:43,820 --> 00:10:46,820
+Ödevler bunlarla ilgili veriliyormuş anladığım kadarıyla.
+
+21
+00:10:46,820 --> 00:10:52,620
+Şimdi bugün biraz process management'dan bahsedeceğiz.
+
+22
+00:10:52,620 --> 00:10:59,620
+Process management'da önce bir tanım yapacağız.
+
+23
+00:10:59,620 --> 00:11:04,620
+Ondan sonra Unix'te nasıl management yapılıyor?
+
+24
+00:11:04,620 --> 00:11:08,620
+Yani nasıl process yaratılıyor?
+
+25
+00:11:08,620 --> 00:11:11,620
+Ondan sonra nasıl değiştirilebiliyor?
+
+26
+00:11:11,620 --> 00:11:12,620
+Nasıl durdurulabiliyor?
+
+27
+00:11:12,620 --> 00:11:14,620
+Birbiriyle nasıl iletişim kuruyor?
+
+28
+00:11:14,620 --> 00:11:16,620
+Bunlardan bahsedeceğim biraz.
+
+29
+00:11:16,620 --> 00:11:29,620
+Şimdi bir process dediğimiz şey bir programı memoriye yazılıp yürütülmeye başladıktan sonraki andaki state'ine deniyor.
+
+30
+00:11:29,620 --> 00:11:38,620
+Yani programla processin arasındaki fark bu sadece bir koddan ibaret değil yani.
+
+31
+00:11:38,620 --> 00:11:46,620
+Programı yürütmeye başladığımızda bu artık process haline geliyor.
+
+32
+00:11:46,620 --> 00:11:58,220
+Şimdi bir process nelerden oluşur?
+
+33
+00:11:58,220 --> 00:12:01,220
+Öncelikle kendisine ait kodu var.
+
+34
+00:12:01,220 --> 00:12:07,220
+Bu instructionların alt alta yazılı olduğu şey zaten biliyorsunuz.
+
+35
+00:12:07,220 --> 00:12:11,220
+Ondan sonra kendi verisi veya operating sistemden kullandığı bir veri var.
+
+36
+00:12:11,220 --> 00:12:14,220
+Üzerinde koşturulacak olan.
+
+37
+00:12:14,220 --> 00:12:19,220
+Ondan sonra da çeşitli kaynaklar isteyecek.
+
+38
+00:12:19,220 --> 00:12:22,220
+İşte mesela standard in gibi mesela.
+
+39
+00:12:22,220 --> 00:12:27,220
+Ondan sonra veya bazı istekleri olacak şeyden.
+
+40
+00:12:27,220 --> 00:12:32,220
+Bunlar da yine processin parçaları oluyor.
+
+41
+00:12:32,220 --> 00:12:44,490
+Buraya bakarsak şimdi operating system bütün processleri sürekli takip ediyor.
+
+42
+00:12:44,490 --> 00:12:51,490
+Processlerin bulunduğu bir tane tablo var ya da işte liste.
+
+43
+00:12:51,490 --> 00:12:57,490
+Bu listenin elemanlarına da process descriptors deniyor.
+
+44
+00:12:57,490 --> 00:13:04,490
+Yani bir processin tanımlayıcılarından oluşan ya da kontrol blok diye de tanınıyor bu.
+
+45
+00:13:04,490 --> 00:13:20,470
+Diskriptörler bir tane pointer dizisi gibi düşünün.
+
+46
+00:13:20,470 --> 00:13:24,470
+Bu pointer dizisi bir processi gösteriyor.
+
+47
+00:13:24,470 --> 00:13:27,470
+Processin neyi gösteriyor mesela?
+
+48
+00:13:27,470 --> 00:13:30,470
+İşte state'ini gösteriyor.
+
+49
+00:13:30,470 --> 00:13:38,470
+Mesela yeni başladığı hazır, running, waiting, terminated buna benzer.
+
+50
+00:13:38,470 --> 00:13:41,470
+Bunlara state deniyor.
+
+51
+00:13:41,470 --> 00:13:45,470
+Ondan sonra bir process ID'si olacak, unique.
+
+52
+00:13:45,470 --> 00:13:54,470
+Ondan sonra yine bu da diskriptörün her bir işte elemanının gösterdiği adreste yer alan şeyler.
+
+53
+00:13:54,470 --> 00:14:00,470
+Sonra program counter var.
+
+54
+00:14:00,470 --> 00:14:04,470
+Bir sonraki instruction'ın adresini gösteren bir şey.
+
+55
+00:14:04,470 --> 00:14:09,470
+Ondan sonra register'lar var.
+
+56
+00:14:09,470 --> 00:14:22,470
+Bir de bu processin kullandığı üzerinde değişiklik yapacağı ya da yaptığı file'lar var.
+
+57
+00:14:22,470 --> 00:14:30,259
+Bunu aslında bir program control blok deniyor.
+
+58
+00:14:30,259 --> 00:14:32,259
+PCB diye de bilinir.
+
+59
+00:14:32,259 --> 00:14:40,149
+Bunlar bir processin işte özellikleri.
+
+60
+00:14:40,149 --> 00:14:57,129
+Şimdi burada current directory yani bu process diskriptör dedik ya bu o işte.
+
+61
+00:14:57,129 --> 00:15:01,129
+Şimdi current directory neredeyi, nerede bu?
+
+62
+00:15:01,129 --> 00:15:03,129
+Ondan sonra hangi argümanları alacak?
+
+63
+00:15:03,129 --> 00:15:06,129
+Ondan sonra variable'ları neler olacak?
+
+64
+00:15:06,129 --> 00:15:16,129
+Ondan sonra bir tane signal alacağı, ignore edeceği signal'lar vesairelerin oluşturduğu bir signal table'ı var.
+
+65
+00:15:16,129 --> 00:15:20,129
+Ondan sonra açacağı, açtığı file'lar var.
+
+66
+00:15:20,129 --> 00:15:23,129
+Sonra yürüttüğü kod var.
+
+67
+00:15:23,129 --> 00:15:26,129
+Ondan sonra bir de kullanacağı data var.
+
+68
+00:15:28,690 --> 00:15:33,690
+Şimdi mesela bu bir ls.
+
+69
+00:15:33,690 --> 00:15:42,690
+İşte dash l yazdığım zaman burayı mesela home david'in altına neler var buna bakacak.
+
+70
+00:15:42,690 --> 00:15:45,690
+Bunu yürüttüğüm zaman bir process haline dönüştü.
+
+71
+00:15:45,690 --> 00:15:47,690
+Bir process id verildi buna.
+
+72
+00:15:47,690 --> 00:15:50,690
+Ondan sonra 1, 2, 3, 4 diye misal.
+
+73
+00:15:50,690 --> 00:15:57,690
+Ondan sonra current directory'de bu nerede tutuluyor?
+
+74
+00:15:57,690 --> 00:16:06,289
+David'in altında liptem olması lazım ya da bin deymiş.
+
+75
+00:16:06,289 --> 00:16:15,840
+Bu current directory nereden koşturuldu?
+
+76
+00:16:15,840 --> 00:16:20,840
+Ondan sonra argument listesi, şimdi ls var argumentlardan.
+
+77
+00:16:20,840 --> 00:16:25,840
+Ondan sonra xl, ondan sonra foo var falan.
+
+78
+00:16:25,840 --> 00:16:28,840
+Bunlar argument listesi biliyorsunuz.
+
+79
+00:16:28,840 --> 00:16:30,840
+Ondan sonra bir variable listesi var.
+
+80
+00:16:30,840 --> 00:16:34,840
+User ID'si varmış mesela bir pet varmış.
+
+81
+00:16:34,840 --> 00:16:37,840
+Ondan sonra default signal'ı alabilirmiş.
+
+82
+00:16:37,840 --> 00:16:40,840
+Ondan sonra ignore alabilirmiş.
+
+83
+00:16:40,840 --> 00:16:45,840
+Ondan sonra işte standard in ve out'u kullanacakmış.
+
+84
+00:16:45,840 --> 00:16:49,840
+Ondan sonra standard error'u kullanacakmış.
+
+85
+00:16:49,840 --> 00:16:54,840
+Bin klasörün altındaki ls şeyini kullanacak.
+
+86
+00:16:54,840 --> 00:16:58,840
+Evet bu buradan koşuyor zaten.
+
+87
+00:16:58,840 --> 00:17:02,840
+Ondan sonra ls'in kodu var bir tane şuradan gelen.
+
+88
+00:17:02,840 --> 00:17:08,839
+Ondan sonra bir de data var bu da kullanacağı data.
+
+89
+00:17:08,839 --> 00:17:11,839
+Şimdi bu process güzel.
+
+90
+00:17:11,839 --> 00:17:28,700
+Nasıl yapıyoruz process'leri?
+
+91
+00:17:28,700 --> 00:17:30,700
+Process'leri nasıl yapıyoruz?
+
+92
+00:17:30,700 --> 00:17:40,940
+Şimdi bir process yaratmak istediğimiz zaman user diyor ki
+
+93
+00:17:40,940 --> 00:17:42,940
+user da bir process.
+
+94
+00:17:42,940 --> 00:17:48,940
+Ondan sonra diyoruz ki mesela bu process'in aynısını,
+
+95
+00:17:48,940 --> 00:17:52,940
+kopyasını yarat demek için fort ya da exec kullanıyoruz.
+
+96
+00:17:52,940 --> 00:17:56,940
+Biz bu sistem kollarla bu şeyi yaratıyoruz.
+
+97
+00:17:56,940 --> 00:17:58,940
+Peki operating system ne yapıyor?
+
+98
+00:17:58,940 --> 00:18:01,940
+İlk önce bir tane empty slot buluyor.
+
+99
+00:18:01,940 --> 00:18:04,940
+Process tablosu göstermiştim ya bir tane.
+
+100
+00:18:04,940 --> 00:18:09,940
+Ondan sonra oraya process descriptörü yazıyor.
+
+101
+00:18:09,940 --> 00:18:12,940
+Önce bir process descriptör oluşturuyor.
+
+102
+00:18:12,940 --> 00:18:14,940
+Sonra da onu oraya koyuyor.
+
+103
+00:18:14,940 --> 00:18:17,940
+Ondan sonra da disk'ten kodu okuyor.
+
+104
+00:18:17,940 --> 00:18:23,599
+Sonra program bu şekilde başlıyor.
+
+105
+00:18:23,599 --> 00:18:35,980
+Şimdi ilk önce bizim nasıl bir process oluşturuyoruz ona bakıyoruz.
+
+106
+00:18:35,980 --> 00:18:37,980
+Şimdi fork ve exec var demiştik.
+
+107
+00:18:37,980 --> 00:18:40,980
+Fork'u şimdi çağırdık burada.
+
+108
+00:18:40,980 --> 00:18:42,980
+Mesela kodun bir yerinde fork var.
+
+109
+00:18:42,980 --> 00:18:46,980
+Ondan sonra bu yeni bir process oluşturuyor.
+
+110
+00:18:46,980 --> 00:18:48,980
+Yeni bir process oluşturuyor.
+
+111
+00:18:48,980 --> 00:18:52,980
+Ve onun da kendine ait unik bir process ID'si var.
+
+112
+00:18:52,980 --> 00:18:59,450
+Yalnız burada ne varsa buradakiler de aynı.
+
+113
+00:18:59,450 --> 00:19:04,450
+İşte directory, arguments, variables, signals, files hatta kodu.
+
+114
+00:19:04,450 --> 00:19:06,450
+Yani zaten kodu da aynı.
+
+115
+00:19:06,450 --> 00:19:10,450
+Aynısından bir tane daha oluşturuyor.
+
+116
+00:19:10,450 --> 00:19:12,450
+Biz bunu parent diyoruz.
+
+117
+00:19:12,450 --> 00:19:20,750
+Buna da child diyoruz.
+
+118
+00:19:20,750 --> 00:19:23,750
+Şimdi bu kendi PID'si.
+
+119
+00:19:23,750 --> 00:19:28,750
+Bunun için bunun fork çağrıldığı zaman.
+
+120
+00:19:28,750 --> 00:19:36,349
+Fork çağrıldığı zaman child'ın PID'si sıfır olarak görünüyor burada.
+
+121
+00:19:36,349 --> 00:19:41,349
+Kendisi onun bir fork'un bir çocuğu olmadığı için.
+
+122
+00:19:41,349 --> 00:19:44,349
+Ha pardon bu child'ın PID'si.
+
+123
+00:19:44,349 --> 00:19:47,349
+Pardon bu child'ın PID'sini gösteriyor.
+
+124
+00:19:47,349 --> 00:19:49,349
+Bu da parent'ın PID'sini gösteriyor.
+
+125
+00:19:49,349 --> 00:19:53,349
+Ben buradan kodu da şuradan bakalım birlikte.
+
+126
+00:19:53,349 --> 00:20:01,259
+Ha mesela bu fork'un birincisi de vardı.
+
+127
+00:20:01,259 --> 00:20:09,900
+Mesela şuna bakalım.
+
+128
+00:20:09,900 --> 00:20:11,900
+Şimdi fork'u çağırdık.
+
+129
+00:20:11,900 --> 00:20:16,900
+Ondan sonra yeni bir process oluşturuyor.
+
+130
+00:20:16,900 --> 00:20:21,900
+Buradan itibaren ve bu process de şuradan itibaren koşuyor.
+
+131
+00:20:21,900 --> 00:20:24,900
+Yeni process oluşturuyoruz.
+
+132
+00:20:24,900 --> 00:20:29,900
+Buradan itibaren de koşmaya başlıyor.
+
+133
+00:20:29,900 --> 00:20:31,900
+Aynı şeyi gösterecek.
+
+134
+00:20:31,900 --> 00:20:50,019
+Burada yine buraya da konmuştuk.
+
+135
+00:20:50,019 --> 00:20:56,859
+Şimdi fork'u çağırdığın zaman.
+
+136
+00:20:56,859 --> 00:21:01,859
+Biz önce şurada parent'dayız tamam mı?
+
+137
+00:21:01,859 --> 00:21:03,859
+Şuradayken parent'dayız.
+
+138
+00:21:03,859 --> 00:21:05,859
+Message before fork dedik.
+
+139
+00:21:05,859 --> 00:21:07,859
+Burada herhangi bir sorun yok.
+
+140
+00:21:07,859 --> 00:21:09,859
+Bu printf koştu.
+
+141
+00:21:09,859 --> 00:21:11,859
+Ondan sonra sıra geldi fork'a.
+
+142
+00:21:11,859 --> 00:21:16,859
+Fork dediği zaman bu bir tane child process yarattı.
+
+143
+00:21:16,859 --> 00:21:22,859
+Ondan sonra child process'i yarattıktan sonra gitti şunu yazdırdı.
+
+144
+00:21:22,859 --> 00:21:27,859
+Tıklayınca bu bir sonrakine geçiyor kusura bakmayın.
+
+145
+00:21:27,859 --> 00:21:29,859
+Ben de sürekli tıklıyorum.
+
+146
+00:21:29,859 --> 00:21:35,859
+Sonra bir sonraki mesajı yazdırdı.
+
+147
+00:21:35,859 --> 00:21:38,859
+Sonra child process de bir sonraki mesajı yazdırdı.
+
+148
+00:21:38,859 --> 00:21:46,650
+O yüzden burada iki kez message after fork yazıyor.
+
+149
+00:21:46,650 --> 00:21:48,650
+Dikkatinizi çektiğiniz için.
+
+150
+00:21:48,650 --> 00:21:50,650
+Şimdi şuna gelecek olursak.
+
+151
+00:21:50,650 --> 00:21:55,500
+Ha şimdi demiştim ya.
+
+152
+00:21:55,500 --> 00:21:57,500
+Bu birazcık kafanızı karıştırdım.
+
+153
+00:21:57,500 --> 00:21:59,500
+Orada child process sıfır olacak demiştim.
+
+154
+00:21:59,500 --> 00:22:02,500
+Onu şöyle yanlış söyledim.
+
+155
+00:22:02,500 --> 00:22:08,500
+Şimdi fork result bir tane PID dönüyor tamam mı?
+
+156
+00:22:08,500 --> 00:22:16,500
+Fork dedikten sonra bir child oluşabilirse bu sıfırdan büyük bir değer olacaktır.
+
+157
+00:22:16,500 --> 00:22:23,500
+Eğer bizim elimizdeki processin herhangi bir çocuğu o anda child process yoksa.
+
+158
+00:22:23,500 --> 00:22:30,500
+Fork'tan dönecek bir değer olmayacak sıfır dönecektir yani.
+
+159
+00:22:30,500 --> 00:22:35,500
+Fork result o yüzden child process için sıfırdır.
+
+160
+00:22:35,500 --> 00:22:46,500
+Şimdi şurada ilk process ID getPID dediğimiz zaman parent'ın process ID'sini döndü.
+
+161
+00:22:46,500 --> 00:22:49,500
+Fork result'ı aldık.
+
+162
+00:22:49,500 --> 00:22:55,500
+Result'ımız da child process'in process ID'si.
+
+163
+00:22:55,500 --> 00:23:02,500
+Yalnız child process'i koşturmaya başladığı anda şurada yani.
+
+164
+00:23:02,500 --> 00:23:05,500
+Bu sefer fork result sıfırdır.
+
+165
+00:23:05,500 --> 00:23:08,500
+Çünkü child process'in bir child'ı yok.
+
+166
+00:23:08,500 --> 00:23:12,500
+Şuradan itibaren yürümeye devam ediyor.
+
+167
+00:23:12,500 --> 00:23:19,029
+Şimdi bunlar birbirinin aynısı.
+
+168
+00:23:19,029 --> 00:23:24,029
+Yani tam olarak aynı şeyi yarıdan itibaren yeniden koşturuyor gibiyiz.
+
+169
+00:23:24,029 --> 00:23:31,029
+Peki bunları nasıl birbirinden farklı kodlara dönüştürebiliriz?
+
+170
+00:23:31,029 --> 00:23:35,029
+Onu da şöyle yapabiliriz mesela.
+
+171
+00:23:35,029 --> 00:23:41,890
+Hani biz child process'teyken PID sıfır veriyordu ya.
+
+172
+00:23:41,890 --> 00:23:44,890
+Fork PID sıfır veriyordu ya.
+
+173
+00:23:44,890 --> 00:23:52,890
+O yüzden eğer mesela deriz ki eğer PID sıfırsa biz child process'teyiz demektir.
+
+174
+00:23:52,890 --> 00:23:57,890
+Ve onun başka bir kodu olsun mesela bunu şey yapsın koştursun.
+
+175
+00:23:58,890 --> 00:24:10,420
+Ama eğer sıfır değilse o zaman parent process değilse o zaman da onun kendine ait bir kodu olsun onu koştursun.
+
+176
+00:24:10,420 --> 00:24:12,420
+Buradaki örnekte olduğu gibi.
+
+177
+00:24:12,420 --> 00:24:22,900
+Mesela bu da az önceki şunu yapan iş.
+
+178
+00:24:22,900 --> 00:24:34,220
+Şimdi if fork diyor eğer pozitif bir şey dönerse bu true olacak buraya gelecek.
+
+179
+00:24:34,220 --> 00:24:36,220
+Şimdi parent bir şeyler yapmış.
+
+180
+00:24:36,220 --> 00:24:39,220
+Ondan sonra fork'u çağırmış burada.
+
+181
+00:24:39,220 --> 00:24:43,220
+Ondan sonra şu anda başka bir iş yapıyorum diyor.
+
+182
+00:24:43,220 --> 00:24:50,220
+Ve parent'ın şeyi de yine aynı şekilde 2767.
+
+183
+00:24:50,220 --> 00:25:00,220
+Ama fork pozitif değilse, fork pozitif değilse nedir?
+
+184
+00:25:00,220 --> 00:25:03,220
+Yani sıfır yani child process'deyizdir.
+
+185
+00:25:03,220 --> 00:25:29,140
+Bir şey soru var mı diye bakıyorum.
+
+186
+00:25:29,140 --> 00:25:31,140
+Arkadaşlar anlıyor musunuz?
+
+187
+00:25:31,140 --> 00:25:37,500
+Yani birazcık şey yani sessiz oldum.
+
+188
+00:25:37,500 --> 00:25:48,339
+Hocam şöyle ben hani ben büyük oranda anlıyorum da çünkü ben bunların hepsini önceden gördüm baktım kitabına okudum şeyin.
+
+189
+00:25:48,339 --> 00:25:54,339
+Oradaki örnekleri incelerken aklımda kalıyor ama diğer arkadaşları bilmiyorum.
+
+190
+00:25:54,339 --> 00:25:57,339
+Bakalım chat ne demiş.
+
+191
+00:25:57,339 --> 00:25:59,339
+Hoca anlatmıştı derste güzel.
+
+192
+00:25:59,339 --> 00:26:01,339
+Tamam güzel.
+
+193
+00:26:01,339 --> 00:26:05,339
+O zaman sadece örneklerin üzerinden biraz daha şey yapacağız.
+
+194
+00:26:37,099 --> 00:26:49,099
+Şimdi şu enteresan bir şey burada da benzer bir şekilde yine şey yapıyoruz ama burada birden fazla şey yapıyor.
+
+195
+00:26:49,099 --> 00:26:53,099
+Yani birden fazla çocuk oluşturacak.
+
+196
+00:26:53,099 --> 00:26:59,099
+İlk önce fork'la bir tane parent'ımız vardı elimizde.
+
+197
+00:26:59,099 --> 00:27:01,099
+Fork'la bir tane çocuk oluşturdu bu.
+
+198
+00:27:01,099 --> 00:27:11,099
+Ondan sonra ama kendisi sıfır olmadığı için şunun içine girdi.
+
+199
+00:27:11,099 --> 00:27:13,099
+O yüzden buraya da giremedi.
+
+200
+00:27:13,099 --> 00:27:15,099
+O yüzden şuradan iki yazdırdı.
+
+201
+00:27:15,099 --> 00:27:17,099
+Önce bu var.
+
+202
+00:27:17,099 --> 00:27:18,099
+Burası tamam mı?
+
+203
+00:27:18,099 --> 00:27:20,099
+İlk önce bir tane şey vardı.
+
+204
+00:27:20,099 --> 00:27:22,099
+Parent vardı.
+
+205
+00:27:27,470 --> 00:27:29,470
+İlk önce bir tane parent vardı.
+
+206
+00:27:29,470 --> 00:27:34,470
+Ondan sonra burada fork sıfırdan büyük mü diye sordu.
+
+207
+00:27:34,470 --> 00:27:36,470
+Evet sıfırdan büyük.
+
+208
+00:27:36,470 --> 00:27:42,470
+Çünkü forku çağırdıktan sonra bize bir tane sıfırdan büyük bir değer döndü ya.
+
+209
+00:27:42,470 --> 00:27:44,470
+Ondan sonra buraya içeri girdi.
+
+210
+00:27:44,470 --> 00:27:47,470
+Ondan sonra sıfırdan büyük sıfıra eşit değil.
+
+211
+00:27:47,470 --> 00:27:49,470
+O zaman şuradan iki yazdırdı.
+
+212
+00:27:49,470 --> 00:27:51,470
+Tamam güzel.
+
+213
+00:27:51,470 --> 00:27:55,470
+Ondan sonra çıkıp dört yazdırdı.
+
+214
+00:27:55,470 --> 00:27:57,470
+Şimdi elimizde bir tane çocuk var.
+
+215
+00:27:57,470 --> 00:27:59,470
+Bu çocuk geldi.
+
+216
+00:27:59,470 --> 00:28:01,470
+Burada şimdi o.
+
+217
+00:28:01,470 --> 00:28:05,470
+Şuradaydı o.
+
+218
+00:28:05,470 --> 00:28:07,470
+Ondan sonra buradan baktı.
+
+219
+00:28:07,470 --> 00:28:09,470
+Fork sıfır mı?
+
+220
+00:28:09,470 --> 00:28:11,470
+Evet şu anda sıfır.
+
+221
+00:28:11,470 --> 00:28:13,470
+Henüz onun bir çocuğu yok çünkü.
+
+222
+00:28:13,470 --> 00:28:14,470
+İçeri girdi.
+
+223
+00:28:14,470 --> 00:28:16,470
+Fork'la kendisi bir çocuk oluşturdu.
+
+224
+00:28:16,470 --> 00:28:18,470
+Ondan sonra biri yazdı.
+
+225
+00:28:18,470 --> 00:28:20,470
+Ve çıkıp dördü yazdı.
+
+226
+00:28:20,470 --> 00:28:22,470
+Onun da işi bitti.
+
+227
+00:28:22,470 --> 00:28:24,470
+Sıra geldi ikinci çocuğa.
+
+228
+00:28:24,470 --> 00:28:26,470
+O fork'tan sonrasında kalmıştı.
+
+229
+00:28:26,470 --> 00:28:28,470
+O yüzden o da biri yazdırdı.
+
+230
+00:28:28,470 --> 00:28:30,470
+Dördü yazdırdı.
+
+231
+00:28:30,470 --> 00:28:32,470
+Çıktı.
+
+232
+00:28:32,470 --> 00:28:40,460
+Şimdi bizim kim kaldı?
+
+233
+00:28:40,460 --> 00:28:42,460
+Parent mı kaldı?
+
+234
+00:28:42,460 --> 00:28:44,460
+Yok parent işini halletmişti.
+
+235
+00:28:44,460 --> 00:28:46,460
+Şimdi bizim ilk çocuk kaldı.
+
+236
+00:28:46,460 --> 00:28:50,789
+Onun için fork.
+
+237
+00:28:50,789 --> 00:28:52,789
+Şuradayız.
+
+238
+00:28:52,789 --> 00:29:01,349
+Bir dakika.
+
+239
+00:29:01,349 --> 00:29:03,349
+Onun için fork.
+
+240
+00:29:03,349 --> 00:29:05,349
+Sıfır.
+
+241
+00:29:05,349 --> 00:29:09,349
+Artık diğer çocuklar işlerini bitirip gittiği için.
+
+242
+00:29:09,349 --> 00:29:11,349
+Kendisinin başka çocuğu olmadığı için.
+
+243
+00:29:11,349 --> 00:29:13,349
+Üçü yazdırdı.
+
+244
+00:29:13,349 --> 00:29:15,349
+Sonra dördü yazdırdı.
+
+245
+00:29:15,349 --> 00:29:28,200
+Onun da işi sonra orada bitiyor.
+
+246
+00:29:28,200 --> 00:29:30,200
+Şimdi bu işi yapmak için.
+
+247
+00:29:30,200 --> 00:29:32,200
+Yani bir farklı bir.
+
+248
+00:29:32,200 --> 00:29:34,200
+Hani şurada farklı bir şey yapmak.
+
+249
+00:29:34,200 --> 00:29:36,200
+Bunun için bir de exec diye bir.
+
+250
+00:29:36,200 --> 00:29:38,200
+Fonksiyon var.
+
+251
+00:29:38,200 --> 00:29:40,200
+Burada tamamen kodu da.
+
+252
+00:29:40,200 --> 00:29:42,200
+Farklı bir kod.
+
+253
+00:29:42,200 --> 00:29:44,200
+Onun yerine kopyalıyor.
+
+254
+00:29:44,200 --> 00:29:46,200
+Kodu da orada bırakıyoruz.
+
+255
+00:29:46,200 --> 00:29:48,200
+Aynı anda.
+
+256
+00:29:48,200 --> 00:29:50,200
+Koşturuyorlar ama.
+
+257
+00:29:50,200 --> 00:29:52,200
+Exekten sonra.
+
+258
+00:29:52,200 --> 00:29:54,200
+Bizim eski parent.
+
+259
+00:29:54,200 --> 00:29:56,200
+Prosesimizle.
+
+260
+00:29:56,200 --> 00:29:58,200
+Bunun kodunun birbirinden tamamen.
+
+261
+00:29:58,200 --> 00:30:00,200
+Farklı olduğunu düşünün.
+
+262
+00:30:00,200 --> 00:30:02,200
+Bu.
+
+263
+00:30:02,200 --> 00:30:05,859
+Proses.
+
+264
+00:30:05,859 --> 00:30:09,660
+Kendiniz bakabilirsiniz.
+
+265
+00:30:09,660 --> 00:30:14,920
+Biraz.
+
+266
+00:30:14,920 --> 00:30:16,920
+Vaktimiz kısıtlı.
+
+267
+00:30:16,920 --> 00:30:18,920
+Şeyde biraz fazlaca.
+
+268
+00:30:18,920 --> 00:30:20,920
+Şimdi egzempıla bakalım biz.
+
+269
+00:30:20,920 --> 00:30:26,220
+Şimdi burada.
+
+270
+00:30:26,220 --> 00:30:28,220
+Mesela.
+
+271
+00:30:28,220 --> 00:30:30,220
+Bizim çay.
+
+272
+00:30:30,220 --> 00:30:32,220
+Kendi çay.
+
+273
+00:30:32,220 --> 00:30:34,220
+Kendi çay.
+
+274
+00:30:34,220 --> 00:30:36,220
+Bir tane.
+
+275
+00:30:36,220 --> 00:30:38,220
+Bir başka.
+
+276
+00:30:38,220 --> 00:30:40,220
+Yerine bir başka kod çağırmış.
+
+277
+00:30:40,220 --> 00:30:42,220
+Başka bir.
+
+278
+00:30:42,220 --> 00:30:44,220
+Proces oluşturuyor burada tamamen.
+
+279
+00:30:44,220 --> 00:30:46,220
+Başka bir.
+
+280
+00:30:46,220 --> 00:30:48,220
+Yürütecek burada.
+
+281
+00:30:48,220 --> 00:30:50,220
+Mesela.
+
+282
+00:30:50,220 --> 00:30:52,220
+Aynısını oluşturduk.
+
+283
+00:30:52,220 --> 00:30:54,220
+Proces ise.
+
+284
+00:30:54,220 --> 00:30:56,220
+Kendi çay.
+
+285
+00:30:56,220 --> 00:30:58,220
+O çay.
+
+286
+00:30:58,220 --> 00:31:00,220
+Buradaki.
+
+287
+00:31:00,220 --> 00:31:02,220
+Kısmanı değil de.
+
+288
+00:31:02,220 --> 00:31:04,220
+Şuradaki işte.
+
+289
+00:31:04,220 --> 00:31:06,220
+Bin.
+
+290
+00:31:06,220 --> 00:31:08,220
+[öğrenci].
+
+291
+00:31:08,220 --> 00:31:10,220
+Filer direktörü diye.
+
+292
+00:31:10,220 --> 00:31:12,220
+Ona bir cevap vermiş mesela.
+
+293
+00:31:12,220 --> 00:31:26,089
+Onu oluşturuyor.
+
+294
+00:31:26,089 --> 00:31:28,089
+Peki bunlar nasıl kapatılıyor.
+
+295
+00:31:28,089 --> 00:31:30,089
+Nasıl çıkılacak buradan.
+
+296
+00:31:30,089 --> 00:31:32,089
+Proseslerden.
+
+297
+00:31:32,089 --> 00:31:34,089
+İşte.
+
+298
+00:31:34,089 --> 00:31:36,089
+Exit var.
+
+299
+00:31:36,089 --> 00:31:38,089
+Bu bir sistem koldur.
+
+300
+00:31:38,089 --> 00:31:40,089
+Ondan sonra.
+
+301
+00:31:40,089 --> 00:31:42,089
+Proses işini bitirmiş.
+
+302
+00:31:42,089 --> 00:31:44,089
+Ondan sonra.
+
+303
+00:31:44,089 --> 00:31:46,089
+Operating sisteme de.
+
+304
+00:31:46,089 --> 00:31:48,089
+Benim proses listenden sildiyor.
+
+305
+00:31:48,089 --> 00:31:50,089
+Anormal olanlarında.
+
+306
+00:31:50,089 --> 00:31:52,089
+Farklı şeyleri oluyor.
+
+307
+00:31:52,089 --> 00:31:54,089
+Bir de.
+
+308
+00:31:54,089 --> 00:31:56,089
+Et exit var.
+
+309
+00:31:56,089 --> 00:31:58,089
+Bu da çıkarken.
+
+310
+00:31:58,089 --> 00:32:00,089
+Şuradaki fonksiyon.
+
+311
+00:32:00,089 --> 00:32:02,089
+Pointer'ın.
+
+312
+00:32:02,089 --> 00:32:04,089
+Fonksiyonu.
+
+313
+00:32:04,089 --> 00:32:06,089
+Çıkarken bunu çağırıyor.
+
+314
+00:32:06,089 --> 00:32:10,329
+Bir de wait var.
+
+315
+00:32:10,329 --> 00:32:12,329
+Bunu ileride.
+
+316
+00:32:12,329 --> 00:32:16,119
+Yeniden bakacağız.
+
+317
+00:32:16,119 --> 00:32:18,119
+Exit ile return'ın arasında.
+
+318
+00:32:18,119 --> 00:32:20,119
+Fark var.
+
+319
+00:32:20,119 --> 00:32:24,119
+Programlama dilindeki.
+
+320
+00:32:24,119 --> 00:32:26,119
+Bir şeydir.
+
+321
+00:32:26,119 --> 00:32:28,119
+Ondan sonra.
+
+322
+00:32:28,119 --> 00:32:30,119
+Fonksiyon bitti.
+
+323
+00:32:30,119 --> 00:32:32,119
+Sonucunda bir şey dönüyor demektir.
+
+324
+00:32:32,119 --> 00:32:34,119
+Exit ise bir sistem koldur.
+
+325
+00:32:34,119 --> 00:32:36,119
+Ondan sonra.
+
+326
+00:32:36,119 --> 00:32:38,119
+Şu anda koşturulan.
+
+327
+00:32:38,119 --> 00:32:40,119
+Prosesi bitirmeye yarar.
+
+328
+00:32:40,119 --> 00:32:42,119
+Az önce söylediğim gibi.
+
+329
+00:32:42,119 --> 00:32:44,119
+Şimdi bu.
+
+330
+00:32:44,119 --> 00:32:46,119
+Örnekte de.
+
+331
+00:32:46,119 --> 00:32:48,119
+Şurasını biraz.
+
+332
+00:32:48,119 --> 00:32:50,119
+Şöyle çekerim.
+
+333
+00:32:50,119 --> 00:32:52,119
+Burası sonucu.
+
+334
+00:32:52,119 --> 00:32:54,119
+Şimdi.
+
+335
+00:32:54,119 --> 00:32:57,690
+Ne yapmışız.
+
+336
+00:32:57,690 --> 00:32:59,690
+Parent.
+
+337
+00:32:59,690 --> 00:33:01,690
+Bir tane child oluşturuyor.
+
+338
+00:33:01,690 --> 00:33:03,690
+Ondan sonra da.
+
+339
+00:33:03,690 --> 00:33:05,690
+Et exit diyor.
+
+340
+00:33:05,690 --> 00:33:07,690
+Et exit'i.
+
+341
+00:33:07,690 --> 00:33:11,700
+Parent cleaner diye bir tane.
+
+342
+00:33:11,700 --> 00:33:13,700
+Şey çağırıyor.
+
+343
+00:33:13,700 --> 00:33:15,700
+Yani kendisi çıkacak.
+
+344
+00:33:15,700 --> 00:33:17,700
+Biterken.
+
+345
+00:33:17,700 --> 00:33:19,700
+Şunu çağır demek oluyor bu.
+
+346
+00:33:19,700 --> 00:33:21,700
+Dürütüyor.
+
+347
+00:33:21,700 --> 00:33:23,700
+Ondan sonra bitiyor.
+
+348
+00:33:23,700 --> 00:33:29,769
+Bizim şeyimiz.
+
+349
+00:33:29,769 --> 00:33:33,109
+Prosesimiz.
+
+350
+00:33:33,109 --> 00:33:35,109
+Gelelim zombie prosesi.
+
+351
+00:33:35,109 --> 00:33:37,109
+Zombie proses şimdi.
+
+352
+00:33:37,109 --> 00:33:39,109
+Parent proses.
+
+353
+00:33:39,109 --> 00:33:41,109
+Kendi child'ını.
+
+354
+00:33:41,109 --> 00:33:43,109
+Process table'dan silmekle.
+
+355
+00:33:43,109 --> 00:33:45,109
+Yükümlü yani.
+
+356
+00:33:45,109 --> 00:33:47,109
+Bir tane.
+
+357
+00:33:47,109 --> 00:33:49,109
+Termination status dönüyor.
+
+358
+00:33:49,109 --> 00:33:51,109
+Kendi.
+
+359
+00:33:51,109 --> 00:33:53,109
+Child ile ilgili.
+
+360
+00:33:53,109 --> 00:33:55,109
+Operatin sistemde onu.
+
+361
+00:33:55,109 --> 00:33:57,109
+Process table'ından siliyor.
+
+362
+00:33:57,109 --> 00:33:59,109
+Yalnız bunu yapmazsa.
+
+363
+00:33:59,109 --> 00:34:01,109
+Ama.
+
+364
+00:34:01,109 --> 00:34:03,109
+Child prosesi.
+
+365
+00:34:03,109 --> 00:34:05,109
+Bir yerde bitecek yani.
+
+366
+00:34:05,109 --> 00:34:07,109
+Aslında o bitmiş ama.
+
+367
+00:34:07,109 --> 00:34:09,110
+Hala process table'da.
+
+368
+00:34:09,110 --> 00:34:11,110
+Yeri varsa bunun.
+
+369
+00:34:11,110 --> 00:34:13,110
+Yani process table'daki yeri boşaltılmamışsa.
+
+370
+00:34:13,110 --> 00:34:15,110
+Geri alınmamışsa.
+
+371
+00:34:15,110 --> 00:34:17,110
+Buna zombie proses deniyor.
+
+372
+00:34:17,110 --> 00:34:20,969
+Yani ne yaşıyor ne yaşamıyor.
+
+373
+00:34:20,969 --> 00:34:22,969
+Mesela bunun iki yolu.
+
+374
+00:34:22,969 --> 00:34:24,969
+Ne yapabiliyor.
+
+375
+00:34:24,969 --> 00:34:26,969
+Parent kendisi bitmiyor.
+
+376
+00:34:26,969 --> 00:34:28,969
+Bir türlü.
+
+377
+00:34:28,969 --> 00:34:30,969
+Bu durumda.
+
+378
+00:34:30,969 --> 00:34:34,500
+Zombie prosesi dönüşüyor ya da.
+
+379
+00:34:34,500 --> 00:34:36,500
+Child bitmiyor.
+
+380
+00:34:36,500 --> 00:34:38,500
+Child'dan bir şey alamadığı için.
+
+381
+00:34:38,500 --> 00:34:40,500
+Parent.
+
+382
+00:34:40,500 --> 00:34:42,500
+Termination status alamadığı için.
+
+383
+00:34:42,500 --> 00:34:44,500
+Bu durumda.
+
+384
+00:34:44,500 --> 00:34:46,500
+Yine bir zombie proses.
+
+385
+00:34:46,500 --> 00:34:50,489
+Meydana geliyor.
+
+386
+00:34:50,489 --> 00:34:52,489
+Şimdi o zaman.
+
+387
+00:34:52,489 --> 00:34:54,489
+Ne yapabiliriz.
+
+388
+00:34:54,489 --> 00:34:56,489
+Mesela prosesler.
+
+389
+00:34:56,489 --> 00:34:58,489
+Parent proses.
+
+390
+00:34:58,489 --> 00:35:00,489
+Child'ı bekleyebilir.
+
+391
+00:35:00,489 --> 00:35:02,489
+Bu da.
+
+392
+00:35:02,489 --> 00:35:04,489
+Şunu şekilde oluyor.
+
+393
+00:35:04,489 --> 00:35:11,800
+Wait.
+
+394
+00:35:15,800 --> 00:35:17,800
+Wait.
+
+395
+00:35:17,800 --> 00:35:19,800
+Benim.
+
+396
+00:35:19,800 --> 00:35:21,800
+Child'lardan bir tanesi.
+
+397
+00:35:21,800 --> 00:35:23,800
+Bittiği anda.
+
+398
+00:35:23,800 --> 00:35:25,800
+Bittiği ana kadar.
+
+399
+00:35:25,800 --> 00:35:27,800
+Ben devam ediyorum.
+
+400
+00:35:27,800 --> 00:35:29,800
+Ama Child'lardan bir tanesi.
+
+401
+00:35:29,800 --> 00:35:31,800
+Terminated olduğu zaman.
+
+402
+00:35:31,800 --> 00:35:33,800
+Ben de işimi bitirmiş olacağım.
+
+403
+00:35:33,800 --> 00:35:35,800
+Demek oluyor.
+
+404
+00:35:35,800 --> 00:35:37,800
+Kısacası.
+
+405
+00:35:37,800 --> 00:35:39,800
+Bu wait bize bir tane.
+
+406
+00:35:39,800 --> 00:35:41,800
+Child status dönüyor.
+
+407
+00:35:41,800 --> 00:35:46,940
+Pardon.
+
+408
+00:35:46,940 --> 00:35:50,630
+Biten Child'ın PID'sini dönüyor.
+
+409
+00:35:50,630 --> 00:35:52,630
+Pardon.
+
+410
+00:35:52,630 --> 00:35:54,630
+Ondan sonra.
+
+411
+00:35:54,630 --> 00:35:56,630
+Biten Child'ın PID'sini dönüyor.
+
+412
+00:35:56,630 --> 00:35:58,630
+Ondan sonra.
+
+413
+00:35:58,630 --> 00:36:00,630
+PID'yi.
+
+414
+00:36:00,630 --> 00:36:02,630
+Şeye veriyoruz.
+
+415
+00:36:02,630 --> 00:36:04,630
+Operating sisteme bunu.
+
+416
+00:36:04,630 --> 00:36:06,630
+İşte.
+
+417
+00:36:06,630 --> 00:36:08,630
+Proses table'dan çıkar.
+
+418
+00:36:08,630 --> 00:36:15,460
+Ondan sonra da beni bitir demek oluyor.
+
+419
+00:36:15,460 --> 00:36:17,460
+Şimdi burada bunun da.
+
+420
+00:36:17,460 --> 00:36:19,460
+Bir örneği var.
+
+421
+00:36:19,460 --> 00:36:25,880
+Şurada bir şey var.
+
+422
+00:36:25,880 --> 00:36:27,880
+Şu.
+
+423
+00:36:29,880 --> 00:36:31,880
+W.
+
+424
+00:36:31,880 --> 00:36:33,880
+Ya da.
+
+425
+00:36:33,880 --> 00:36:35,880
+Wi-Fi exited.
+
+426
+00:36:35,880 --> 00:36:37,880
+Dediğimiz.
+
+427
+00:36:37,880 --> 00:36:39,880
+Bu makro.
+
+428
+00:36:39,880 --> 00:36:41,880
+Bize.
+
+429
+00:36:41,880 --> 00:36:45,610
+Eğer.
+
+430
+00:36:45,610 --> 00:36:47,610
+Terminated'sa.
+
+431
+00:36:47,610 --> 00:36:49,610
+Yani.
+
+432
+00:36:49,610 --> 00:36:51,610
+Bitmişse.
+
+433
+00:36:51,610 --> 00:36:53,610
+Bize true.
+
+434
+00:36:53,610 --> 00:36:55,610
+Değeri döner.
+
+435
+00:36:55,610 --> 00:37:01,099
+Şu aşağıdaki ise.
+
+436
+00:37:01,099 --> 00:37:03,099
+Hangi statüsle.
+
+437
+00:37:05,099 --> 00:37:07,099
+Hangi statüsle çıktı.
+
+438
+00:37:07,099 --> 00:37:09,099
+Bitti.
+
+439
+00:37:09,099 --> 00:37:25,400
+Child.
+
+440
+00:37:25,400 --> 00:37:27,400
+Şeyde.
+
+441
+00:37:27,400 --> 00:37:29,400
+Ne yapmış.
+
+442
+00:37:29,400 --> 00:37:31,400
+İşte.
+
+443
+00:37:31,400 --> 00:37:33,400
+PID'leri kaç tane.
+
+444
+00:37:33,400 --> 00:37:35,400
+Child'ın varsa.
+
+445
+00:37:35,400 --> 00:37:37,400
+PID'leri buraya kaydetmiş.
+
+446
+00:37:37,400 --> 00:37:39,400
+Ondan sonra bir tane de.
+
+447
+00:37:39,400 --> 00:37:41,400
+Kimi bekliyordu.
+
+448
+00:37:41,400 --> 00:37:43,400
+Hangisi bitti onu kaydetmiş.
+
+449
+00:37:43,400 --> 00:37:45,400
+Ondan sonra.
+
+450
+00:37:45,400 --> 00:37:47,400
+Wait'in içinde child statüs diye bir şey var ya.
+
+451
+00:37:47,400 --> 00:37:49,400
+O child statüs.
+
+452
+00:37:49,400 --> 00:37:51,400
+Şu biten child'ın.
+
+453
+00:37:51,400 --> 00:37:53,400
+Hani wait şeyi dönüyordu ya.
+
+454
+00:37:53,400 --> 00:37:55,400
+Bir tane child'ın.
+
+455
+00:37:55,400 --> 00:37:57,400
+Statüsünü dönüyordu ya.
+
+456
+00:37:57,400 --> 00:37:59,400
+Child statüs de biz.
+
+457
+00:37:59,400 --> 00:38:01,400
+Statüs'e biz onu kaydediyoruz.
+
+458
+00:38:01,400 --> 00:38:03,400
+Ondan sonra PID'si de.
+
+459
+00:38:03,400 --> 00:38:05,400
+Şu oluyor.
+
+460
+00:38:05,400 --> 00:38:07,400
+Ondan sonra.
+
+461
+00:38:07,400 --> 00:38:09,400
+Child statüs.
+
+462
+00:38:09,400 --> 00:38:11,400
+Eğer.
+
+463
+00:38:11,400 --> 00:38:13,400
+Bitti mi.
+
+464
+00:38:13,400 --> 00:38:15,400
+Bittiyse.
+
+465
+00:38:15,400 --> 00:38:17,400
+Şunu yapabiliyorduk hatırlıyorsanız.
+
+466
+00:38:17,400 --> 00:38:19,400
+Ondan sonra bittiyse.
+
+467
+00:38:19,400 --> 00:38:21,400
+Yok onu söylemedim.
+
+468
+00:38:21,400 --> 00:38:23,400
+Eğer.
+
+469
+00:38:23,400 --> 00:38:25,400
+Şuradaki true dönmüyorsa.
+
+470
+00:38:25,400 --> 00:38:27,400
+Şu kullanı.
+
+471
+00:38:27,400 --> 00:38:29,400
+Şuradaki wife exit statüs.
+
+472
+00:38:29,400 --> 00:38:31,400
+Makrosu kullanılamıyor.
+
+473
+00:38:31,400 --> 00:38:33,400
+Şu wife exit.
+
+474
+00:38:33,400 --> 00:38:35,400
+Child statüs.
+
+475
+00:38:35,400 --> 00:38:37,400
+True dönüyorsa yani.
+
+476
+00:38:37,400 --> 00:38:39,400
+O child process.
+
+477
+00:38:39,400 --> 00:38:41,400
+Gerçekten terminated olduysa.
+
+478
+00:38:41,400 --> 00:38:43,400
+O zaman.
+
+479
+00:38:43,400 --> 00:38:47,639
+Şuradan.
+
+480
+00:38:47,639 --> 00:38:49,639
+Bize o child'ın.
+
+481
+00:38:49,639 --> 00:38:51,639
+Exit statüsü geliyor.
+
+482
+00:38:51,639 --> 00:38:53,639
+Şurada da.
+
+483
+00:38:53,639 --> 00:38:55,639
+Aynı şekilde işte.
+
+484
+00:38:55,639 --> 00:38:57,639
+Process.
+
+485
+00:38:57,639 --> 00:38:59,639
+Id'sini.
+
+486
+00:38:59,639 --> 00:39:01,639
+Ondan sonra hangi exit statüsle.
+
+487
+00:39:01,639 --> 00:39:03,639
+Buraya işte.
+
+488
+00:39:03,639 --> 00:39:05,639
+100 101 102 diye saymış.
+
+489
+00:39:05,639 --> 00:39:07,639
+Ondan sonra hangi exit statüsle.
+
+490
+00:39:07,639 --> 00:39:09,639
+Bundan çıktığını.
+
+491
+00:39:09,639 --> 00:39:15,639
+Gösteriyor.
+
+492
+00:39:15,639 --> 00:39:17,639
+Şimdi.
+
+493
+00:39:17,639 --> 00:39:19,639
+Az bir vaktimiz kaldı.
+
+494
+00:39:19,639 --> 00:39:21,639
+Biraz da.
+
+495
+00:39:21,639 --> 00:39:23,639
+Inter process.
+
+496
+00:39:23,639 --> 00:39:25,639
+Bundan bahsedeceğim burada.
+
+497
+00:39:25,639 --> 00:39:27,639
+Şimdi.
+
+498
+00:39:27,639 --> 00:39:29,639
+Bazı işte.
+
+499
+00:39:29,639 --> 00:39:31,639
+Risosları.
+
+500
+00:39:31,639 --> 00:39:33,639
+Dataları işte birlikte.
+
+501
+00:39:33,639 --> 00:39:35,639
+Kullanmaları gerekecek.
+
+502
+00:39:35,639 --> 00:39:37,639
+Ya da.
+
+503
+00:39:37,639 --> 00:39:39,639
+Bir tanesi.
+
+504
+00:39:39,639 --> 00:39:41,639
+Diğerini durdurmak isteyecek.
+
+505
+00:39:41,639 --> 00:39:43,639
+Mesela.
+
+506
+00:39:43,639 --> 00:39:45,639
+Bu tür şeylerde ya da.
+
+507
+00:39:45,639 --> 00:39:47,639
+Processlere bir şey.
+
+508
+00:39:47,639 --> 00:39:49,639
+Söylemek isteyecek.
+
+509
+00:39:49,639 --> 00:39:51,639
+Bu durumda.
+
+510
+00:39:51,639 --> 00:39:53,639
+Gerek yok.
+
+511
+00:39:53,639 --> 00:39:55,639
+Bunun içinde.
+
+512
+00:39:55,639 --> 00:39:57,639
+Bazı yöntemler var.
+
+513
+00:39:57,639 --> 00:39:59,639
+Mesaj.
+
+514
+00:39:59,639 --> 00:40:01,639
+Sinkronizasyon.
+
+515
+00:40:01,639 --> 00:40:05,179
+Gibi.
+
+516
+00:40:05,179 --> 00:40:07,179
+Ondan sonra.
+
+517
+00:40:07,179 --> 00:40:09,179
+Bu ipc metotlarından.
+
+518
+00:40:09,179 --> 00:40:11,179
+Bazı işte.
+
+519
+00:40:11,179 --> 00:40:13,179
+Standartlar geliştirilmiş.
+
+520
+00:40:13,179 --> 00:40:15,179
+Unix'in kendi standartları var.
+
+521
+00:40:15,179 --> 00:40:17,179
+Ondan sonra.
+
+522
+00:40:17,179 --> 00:40:19,179
+Unix yine standartlarıyla.
+
+523
+00:40:19,179 --> 00:40:21,179
+Benzer şekilde.
+
+524
+00:40:21,179 --> 00:40:23,179
+Ama Windows'un da.
+
+525
+00:40:23,179 --> 00:40:25,179
+Windows 10'un da kullandı.
+
+526
+00:40:25,179 --> 00:40:27,179
+Bazı ipc standartları var.
+
+527
+00:40:31,480 --> 00:40:33,480
+Şimdi.
+
+528
+00:40:33,480 --> 00:40:38,969
+Şimdi biz bu ipc'yi.
+
+529
+00:40:38,969 --> 00:40:40,969
+Yani bu.
+
+530
+00:40:40,969 --> 00:40:42,969
+Kommunikasyon.
+
+531
+00:40:42,969 --> 00:40:44,969
+Nereye kadar sürdüreceğiz.
+
+532
+00:40:44,969 --> 00:40:46,969
+Process persistent olanlarda.
+
+533
+00:40:46,969 --> 00:40:48,969
+Son process bitene kadar.
+
+534
+00:40:48,969 --> 00:40:50,969
+İşte kernels.
+
+535
+00:40:50,969 --> 00:40:52,969
+Persistent olanlarda.
+
+536
+00:40:52,969 --> 00:40:54,969
+Reboota kadar.
+
+537
+00:40:54,969 --> 00:40:56,969
+Ya da ipc objek.
+
+538
+00:40:56,969 --> 00:40:58,969
+Tamamen silinene kadar.
+
+539
+00:40:58,969 --> 00:41:00,969
+File system persistent olanlarda da.
+
+540
+00:41:00,969 --> 00:41:02,969
+Hala.
+
+541
+00:41:02,969 --> 00:41:04,969
+Bizim file'imiz ipc.
+
+542
+00:41:04,969 --> 00:41:06,969
+Objekte olduğu müddetçe ya da.
+
+543
+00:41:06,969 --> 00:41:08,969
+Tamamen silinene kadar.
+
+544
+00:41:08,969 --> 00:41:10,969
+Devam edecektir.
+
+545
+00:41:10,969 --> 00:41:12,969
+Ondan sonra.
+
+546
+00:41:12,969 --> 00:41:14,969
+Bunun bir yoludur.
+
+547
+00:41:14,969 --> 00:41:18,630
+Bu şekilde mesela şeyde de.
+
+548
+00:41:18,630 --> 00:41:20,630
+Biliyorsunuz.
+
+549
+00:41:20,630 --> 00:41:22,630
+Kullanılabiliyor terminal'dan.
+
+550
+00:41:22,630 --> 00:41:24,630
+Ondan sonra.
+
+551
+00:41:24,630 --> 00:41:31,559
+Şimdi.
+
+552
+00:41:31,559 --> 00:41:33,559
+Pipe tek yönlü bir.
+
+553
+00:41:33,559 --> 00:41:35,559
+Data akışı sağlıyor.
+
+554
+00:41:35,559 --> 00:41:37,559
+Bir tarafındaki.
+
+555
+00:41:37,559 --> 00:41:39,559
+Sadece yazabiliyor.
+
+556
+00:41:39,559 --> 00:41:41,559
+Bir tarafındaki de sadece ondan okuyabiliyor.
+
+557
+00:41:41,559 --> 00:41:43,559
+Bunun da iki çeşidi var.
+
+558
+00:41:43,559 --> 00:41:45,559
+Aslında bir tanesi.
+
+559
+00:41:45,559 --> 00:41:47,559
+Pipe dediğimiz şey aslında.
+
+560
+00:41:47,559 --> 00:41:49,559
+Unnamed Pipe oluyor.
+
+561
+00:41:49,559 --> 00:41:51,559
+Genel olarak.
+
+562
+00:41:51,559 --> 00:41:53,559
+Process standartlarına göre.
+
+563
+00:41:53,559 --> 00:41:55,559
+512 byte'e kadar.
+
+564
+00:41:55,559 --> 00:41:57,559
+Yazabiliyormuşuz.
+
+565
+00:41:57,559 --> 00:42:03,880
+Yazabiliyormuşuz.
+
+566
+00:42:03,880 --> 00:42:05,880
+Şimdi normalde single process'de.
+
+567
+00:42:05,880 --> 00:42:07,880
+Single process bir.
+
+568
+00:42:07,880 --> 00:42:09,880
+Pipe'a bağlı olsa.
+
+569
+00:42:09,880 --> 00:42:11,880
+Şu şekilde data akışı.
+
+570
+00:42:11,880 --> 00:42:13,880
+Bu ucundan yazıp.
+
+571
+00:42:13,880 --> 00:42:15,880
+Bu ucundan okuyacak diye düşünün.
+
+572
+00:42:15,880 --> 00:42:17,880
+Ama şimdi iki tane process olduğunu düşünün.
+
+573
+00:42:17,880 --> 00:42:19,880
+Bir tanesi bunun child'ı olsun.
+
+574
+00:42:19,880 --> 00:42:21,880
+İlk önce.
+
+575
+00:42:21,880 --> 00:42:23,880
+İkisi de bu Pipe'a.
+
+576
+00:42:23,880 --> 00:42:25,880
+Hem yazıp hem okuyabiliyor gibi.
+
+577
+00:42:25,880 --> 00:42:27,880
+Ama sonradan.
+
+578
+00:42:27,880 --> 00:42:29,880
+Şu kısımlarını.
+
+579
+00:42:29,880 --> 00:42:31,880
+Şu read kısmını.
+
+580
+00:42:31,880 --> 00:42:33,880
+Bu da write kısmını silecek ve.
+
+581
+00:42:33,880 --> 00:42:35,880
+Bu şekilde bir.
+
+582
+00:42:35,880 --> 00:42:37,880
+İletişim ağı oluşacak aralarında.
+
+583
+00:42:37,880 --> 00:42:39,880
+Yani parent process.
+
+584
+00:42:39,880 --> 00:42:41,880
+Pipe'a yazacak.
+
+585
+00:42:41,880 --> 00:42:43,880
+Child da bunu ondan okuyacak.
+
+586
+00:42:43,880 --> 00:42:45,880
+Şuradaki gibi misal.
+
+587
+00:42:45,880 --> 00:42:49,320
+Şimdi Pipe oluşturmak için.
+
+588
+00:42:49,320 --> 00:42:51,320
+Böyle bir tane fonksiyonumuz var.
+
+589
+00:42:51,320 --> 00:42:53,320
+Ondan sonra.
+
+590
+00:42:53,320 --> 00:42:55,320
+Bu bir tane şey alıyor.
+
+591
+00:42:55,320 --> 00:42:57,320
+Neredeydi bunun şimdi?
+
+592
+00:42:57,320 --> 00:43:01,559
+Yokmuş.
+
+593
+00:43:01,559 --> 00:43:03,559
+Bu bir tane.
+
+594
+00:43:05,559 --> 00:43:07,559
+Integer array'i alacak.
+
+595
+00:43:07,559 --> 00:43:09,559
+Integer array'de de.
+
+596
+00:43:09,559 --> 00:43:11,559
+File descriptörler var.
+
+597
+00:43:11,559 --> 00:43:13,559
+İki tanesi.
+
+598
+00:43:13,559 --> 00:43:15,559
+Bir tanesi.
+
+599
+00:43:15,559 --> 00:43:17,559
+İki tane var bunlarda.
+
+600
+00:43:17,559 --> 00:43:19,559
+Bir tanesi işte.
+
+601
+00:43:19,559 --> 00:43:21,559
+Okunacak olan file descriptör.
+
+602
+00:43:21,559 --> 00:43:23,559
+Bir tanesi yazılacak olanı.
+
+603
+00:43:23,559 --> 00:43:25,559
+Burada gördüğünüz gibi.
+
+604
+00:43:25,559 --> 00:43:27,559
+Child.
+
+605
+00:43:27,559 --> 00:43:29,559
+Eğer işte forksı fırsa diyoruz.
+
+606
+00:43:29,559 --> 00:43:31,559
+Child.
+
+607
+00:43:31,559 --> 00:43:33,559
+Ondan sonra.
+
+608
+00:43:33,559 --> 00:43:35,559
+Okunacak olanı.
+
+609
+00:43:35,559 --> 00:43:37,559
+Bir dakika.
+
+610
+00:43:37,559 --> 00:43:39,559
+Child yazılacak olan kısmını siliyor.
+
+611
+00:43:39,559 --> 00:43:41,559
+Ondan sonra.
+
+612
+00:43:41,559 --> 00:43:43,559
+Şeyde.
+
+613
+00:43:43,559 --> 00:43:45,559
+Parent'a.
+
+614
+00:43:45,559 --> 00:43:47,559
+Okunacak olan kısmını kapatıyor.
+
+615
+00:43:47,559 --> 00:43:49,559
+Ondan sonra bu şekilde bir tane.
+
+616
+00:43:49,559 --> 00:43:51,559
+A oluşturuyor aralarında.
+
+617
+00:43:51,559 --> 00:43:53,559
+Buradan mesela.
+
+618
+00:43:53,559 --> 00:43:55,559
+Çağırıyoruz.
+
+619
+00:43:55,559 --> 00:43:57,559
+Ondan sonra.
+
+620
+00:43:57,559 --> 00:43:59,559
+Bir şey yazıyoruz buna.
+
+621
+00:43:59,559 --> 00:44:01,559
+Ondan sonra.
+
+622
+00:44:01,559 --> 00:44:03,559
+Child da buna ulaşabiliyor.
+
+623
+00:44:03,559 --> 00:44:05,559
+Okuyabiliyor.
+
+624
+00:44:05,559 --> 00:44:07,559
+Bunların bir de named olanları var.
+
+625
+00:44:07,559 --> 00:44:09,559
+Bunlara FIFO deniyor.
+
+626
+00:44:09,559 --> 00:44:11,559
+Aynı şekilde çok benziyor.
+
+627
+00:44:11,559 --> 00:44:20,570
+Ama.
+
+628
+00:44:20,570 --> 00:44:29,190
+Bu şu şekilde oluşturuluyor.
+
+629
+00:44:29,190 --> 00:44:31,190
+Şuradaki pet name.
+
+630
+00:44:33,190 --> 00:44:35,190
+Hangi şeyi.
+
+631
+00:44:35,190 --> 00:44:37,190
+Okuyacağımız şeyi.
+
+632
+00:44:37,190 --> 00:44:39,190
+Fayalı.
+
+633
+00:44:39,190 --> 00:44:41,190
+Şey yapıyor.
+
+634
+00:44:46,940 --> 00:44:48,940
+Hayır.
+
+635
+00:44:48,940 --> 00:44:50,940
+Evet.
+
+636
+00:44:50,940 --> 00:44:52,940
+FIFO'yu oluşturacağımız.
+
+637
+00:44:52,940 --> 00:44:54,940
+Petini veriyor.
+
+638
+00:44:54,940 --> 00:44:56,940
+Şurası da.
+
+639
+00:44:56,940 --> 00:44:58,940
+O da.
+
+640
+00:44:58,940 --> 00:45:00,940
+Pipe'a vereceğimiz.
+
+641
+00:45:00,940 --> 00:45:02,940
+Yani kim nasıl.
+
+642
+00:45:02,940 --> 00:45:04,940
+Hani şu user guess falan.
+
+643
+00:45:04,940 --> 00:45:06,940
+Şeyleri var ya.
+
+644
+00:45:06,940 --> 00:45:11,500
+Bunu belirliyor.
+
+645
+00:45:11,500 --> 00:45:13,500
+Bunun şeyinde de.
+
+646
+00:45:13,500 --> 00:45:15,500
+Şuradan şunu göstersem daha.
+
+647
+00:45:15,500 --> 00:45:19,480
+İyi olacak gibi.
+
+648
+00:45:19,480 --> 00:45:21,480
+Server şuradaydı.
+
+649
+00:45:21,480 --> 00:45:23,480
+Şurada mesela.
+
+650
+00:45:23,480 --> 00:45:25,480
+Modu.
+
+651
+00:45:27,480 --> 00:45:29,480
+Read write.
+
+652
+00:45:29,480 --> 00:45:35,900
+Execute guess.
+
+653
+00:45:35,900 --> 00:45:37,900
+Server kodu da şurada.
+
+654
+00:45:37,900 --> 00:45:39,900
+Bunu şeyden.
+
+655
+00:45:39,900 --> 00:45:41,900
+Ahmet hocanızın hazırladığı şey bu.
+
+656
+00:45:41,900 --> 00:45:53,750
+Ben şuradan gideyim.
+
+657
+00:45:53,750 --> 00:46:01,030
+Neredeydik ya.
+
+658
+00:46:01,030 --> 00:46:03,030
+Burada yok.
+
+659
+00:46:03,030 --> 00:46:05,030
+Jigs for Jigs'den almış bunu.
+
+660
+00:46:05,030 --> 00:46:07,030
+Ondan sonra.
+
+661
+00:46:07,030 --> 00:46:09,030
+Burada işte.
+
+662
+00:46:09,030 --> 00:46:11,030
+Şöyle bir şey yapıyor bu kod.
+
+663
+00:46:11,030 --> 00:46:13,030
+Ben çalıştırdığımda.
+
+664
+00:46:13,030 --> 00:46:15,030
+Baktığımda.
+
+665
+00:46:15,030 --> 00:46:17,030
+Bu bir tane.
+
+666
+00:46:17,030 --> 00:46:19,030
+Fire oluşturuyor.
+
+667
+00:46:19,030 --> 00:46:21,030
+Client dediğimiz.
+
+668
+00:46:21,030 --> 00:46:23,030
+Bir ucu yani.
+
+669
+00:46:23,030 --> 00:46:25,030
+Ondan sonra.
+
+670
+00:46:25,030 --> 00:46:27,030
+Bir şeyler yazıyor.
+
+671
+00:46:27,030 --> 00:46:29,030
+Fire neyimi gönderiyor.
+
+672
+00:46:29,030 --> 00:46:31,030
+Server.
+
+673
+00:46:31,030 --> 00:46:33,030
+Diğer tarafına.
+
+674
+00:46:33,030 --> 00:46:35,030
+Ondan sonra.
+
+675
+00:46:35,030 --> 00:46:37,030
+Buna bir şeyler yazıyor.
+
+676
+00:46:37,030 --> 00:46:39,030
+Ondan sonra.
+
+677
+00:46:39,030 --> 00:46:41,030
+Geri gönderiyor.
+
+678
+00:46:41,030 --> 00:46:43,030
+Client de bunu görebiliyor.
+
+679
+00:46:43,030 --> 00:46:46,539
+Orada.
+
+680
+00:46:46,539 --> 00:46:53,590
+Şuradan da şey yapabiliriz.
+
+681
+00:46:53,590 --> 00:46:55,590
+Server'ı.
+
+682
+00:46:55,590 --> 00:46:59,699
+Çalıştıralım.
+
+683
+00:46:59,699 --> 00:47:01,699
+Şuradan da Client'i.
+
+684
+00:47:01,699 --> 00:47:11,539
+Çalıştıralım.
+
+685
+00:47:11,539 --> 00:47:13,539
+Bir tane şey istedi.
+
+686
+00:47:13,539 --> 00:47:15,539
+File name istedi.
+
+687
+00:47:15,539 --> 00:47:17,539
+Ben de bir tane file name gireyim.
+
+688
+00:47:17,539 --> 00:47:19,539
+Neydi o? Deneme miydi?
+
+689
+00:47:19,539 --> 00:47:21,539
+Deneme.
+
+690
+00:47:21,539 --> 00:47:26,869
+.txt olsun.
+
+691
+00:47:26,869 --> 00:47:28,869
+Heh.
+
+692
+00:47:28,869 --> 00:47:30,869
+Burada.
+
+693
+00:47:30,869 --> 00:47:32,869
+Şimdi burada file name'i aldı bu.
+
+694
+00:47:32,869 --> 00:47:34,869
+Server site.
+
+695
+00:47:34,869 --> 00:47:36,869
+Ondan sonra file name'e dedi ki.
+
+696
+00:47:36,869 --> 00:47:38,869
+.txt. Ondan sonra.
+
+697
+00:47:38,869 --> 00:47:40,869
+İçinde ne varsa bu sefer.
+
+698
+00:47:40,869 --> 00:47:46,650
+O da oraya gönderdi.
+
+699
+00:47:46,650 --> 00:47:50,659
+Pipe'ımız.
+
+700
+00:47:50,659 --> 00:47:52,659
+İki taraflı olmuş oldu böylece.
+
+701
+00:47:52,659 --> 00:48:17,989
+Şimdi.
+
+702
+00:48:17,989 --> 00:48:19,989
+FIFO'lardan sonra.
+
+703
+00:48:19,989 --> 00:48:21,989
+Sinyaller de var.
+
+704
+00:48:21,989 --> 00:48:23,989
+Yine ICP.
+
+705
+00:48:23,989 --> 00:48:25,989
+Şeylerinden bu da.
+
+706
+00:48:25,989 --> 00:48:27,989
+Yöntemlerinden bir tanesi.
+
+707
+00:48:29,989 --> 00:48:31,989
+Şimdi bu bir prosese.
+
+708
+00:48:31,989 --> 00:48:33,989
+Herhangi bir anda gidebilecek.
+
+709
+00:48:33,989 --> 00:48:35,989
+Mesajlar olarak düşünülebilir.
+
+710
+00:48:35,989 --> 00:48:37,989
+Yani çok.
+
+711
+00:48:37,989 --> 00:48:39,989
+Bariz bir tanesi.
+
+712
+00:48:39,989 --> 00:48:41,989
+İnt dediğimiz int harap şeyi.
+
+713
+00:48:41,989 --> 00:48:43,989
+Sinyali.
+
+714
+00:48:43,989 --> 00:48:45,989
+O da kontrolcayla mesela.
+
+715
+00:48:45,989 --> 00:48:47,989
+Sağlanıyor.
+
+716
+00:48:49,989 --> 00:48:55,130
+Vazgeçtim.
+
+717
+00:48:55,130 --> 00:49:01,130
+Yo.
+
+718
+00:49:01,130 --> 00:49:03,130
+Heh.
+
+719
+00:49:03,130 --> 00:49:05,130
+Şunlar asinkronuz.
+
+720
+00:49:05,130 --> 00:49:07,130
+Yani.
+
+721
+00:49:07,130 --> 00:49:09,130
+Biz ikisinin de.
+
+722
+00:49:09,130 --> 00:49:11,130
+Bunu bekliyor olmasını.
+
+723
+00:49:11,130 --> 00:49:13,130
+Olmasına gerek yok.
+
+724
+00:49:13,130 --> 00:49:15,130
+Yani biz ani herhangi bir anında.
+
+725
+00:49:15,130 --> 00:49:17,130
+Bu prosesin.
+
+726
+00:49:17,130 --> 00:49:19,130
+Bunu gönderebiliyoruz.
+
+727
+00:49:19,130 --> 00:49:21,130
+Sinyalleri.
+
+728
+00:49:21,130 --> 00:49:23,130
+Genelde ne için kullanılıyor.
+
+729
+00:49:23,130 --> 00:49:25,130
+İşte ignore sinyali.
+
+730
+00:49:25,130 --> 00:49:27,130
+Ondan sonra.
+
+731
+00:49:27,130 --> 00:49:32,420
+Terminate sinyali.
+
+732
+00:49:32,420 --> 00:49:36,730
+Vesaire.
+
+733
+00:49:36,730 --> 00:49:38,730
+Şimdi nasıl generate edeceğiz.
+
+734
+00:49:38,730 --> 00:49:40,730
+Kill'le generate etmeyece var.
+
+735
+00:49:40,730 --> 00:49:42,730
+Bir de signal diye.
+
+736
+00:49:42,730 --> 00:49:44,730
+Bir tane daha şey var.
+
+737
+00:49:44,730 --> 00:49:46,730
+Yine o da başka bir fonksiyon.
+
+738
+00:49:46,730 --> 00:49:48,730
+Normalde.
+
+739
+00:49:48,730 --> 00:49:50,730
+Kill bir prosesi.
+
+740
+00:49:50,730 --> 00:49:52,730
+Bir prosese.
+
+741
+00:49:56,809 --> 00:49:58,809
+Sinyal yollamak için.
+
+742
+00:49:58,809 --> 00:50:00,809
+Kullanılıyor.
+
+743
+00:50:00,809 --> 00:50:02,809
+Ondan sonra.
+
+744
+00:50:02,809 --> 00:50:07,019
+Şuradaki PID'si.
+
+745
+00:50:07,019 --> 00:50:09,019
+Bakıyoruz.
+
+746
+00:50:09,019 --> 00:50:16,780
+Doğrudan doğruya.
+
+747
+00:50:16,780 --> 00:50:18,780
+Şu sinyali.
+
+748
+00:50:18,780 --> 00:50:20,780
+Bu PID'ye gönderiyor.
+
+749
+00:50:20,780 --> 00:50:24,570
+Şimdi şu PID'nin.
+
+750
+00:50:24,570 --> 00:50:26,570
+Aldığı bazı farklı değerler var.
+
+751
+00:50:26,570 --> 00:50:28,570
+Eğer sıfırdan.
+
+752
+00:50:28,570 --> 00:50:30,570
+Büyükse normal.
+
+753
+00:50:30,570 --> 00:50:32,570
+Bizim bildiğimiz manadaki bir.
+
+754
+00:50:32,570 --> 00:50:34,570
+Prosesin PID'si.
+
+755
+00:50:34,570 --> 00:50:36,570
+Ondan sonra sıfıra eşitse.
+
+756
+00:50:36,570 --> 00:50:38,570
+İşte.
+
+757
+00:50:38,570 --> 00:50:40,570
+O prosesin grubundaki.
+
+758
+00:50:40,570 --> 00:50:42,570
+Bütün prosesleri.
+
+759
+00:50:42,570 --> 00:50:44,570
+Kapsıyor.
+
+760
+00:50:44,570 --> 00:50:46,570
+Ondan sonra eksi birse.
+
+761
+00:50:46,570 --> 00:50:48,570
+PID.
+
+762
+00:50:48,570 --> 00:50:50,570
+Sinyal gönderme yetkisi olan.
+
+763
+00:50:50,570 --> 00:50:52,570
+Bütün prosesleri kapsıyor.
+
+764
+00:50:52,570 --> 00:50:54,570
+Eksi birden.
+
+765
+00:50:54,570 --> 00:50:56,570
+Küçükse de.
+
+766
+00:50:56,570 --> 00:50:58,570
+Grub ID'sinin.
+
+767
+00:50:58,570 --> 00:51:00,570
+Yani.
+
+768
+00:51:00,570 --> 00:51:02,570
+Sinyali kim gönderiyorsa.
+
+769
+00:51:02,570 --> 00:51:04,570
+Onun grub ID'sinin.
+
+770
+00:51:04,570 --> 00:51:06,570
+Absolut valüsünü.
+
+771
+00:51:06,570 --> 00:51:08,570
+Eşit olan bütün.
+
+772
+00:51:08,570 --> 00:51:10,570
+ID'leri.
+
+773
+00:51:10,570 --> 00:51:12,570
+Prosesi gönderiyor.
+
+774
+00:51:12,570 --> 00:51:16,460
+Aslında.
+
+775
+00:51:16,460 --> 00:51:18,460
+Şu sıfırla aynı gibi görünüyor.
+
+776
+00:51:18,460 --> 00:51:20,460
+Burada da bunlar yazıyormuş.
+
+777
+00:51:20,460 --> 00:51:22,460
+Peki biz bu sinyali ne yapacağız.
+
+778
+00:51:22,460 --> 00:51:24,460
+İgnore edebiliriz.
+
+779
+00:51:24,460 --> 00:51:26,460
+Ondan sonra bir tane.
+
+780
+00:51:26,460 --> 00:51:28,460
+Fankşına gönderebiliriz.
+
+781
+00:51:28,460 --> 00:51:30,460
+Veya default olarak.
+
+782
+00:51:30,460 --> 00:51:32,460
+Tanımlanmış olan signal.
+
+783
+00:51:32,460 --> 00:51:34,460
+Handler fankşınlar var.
+
+784
+00:51:34,460 --> 00:51:36,460
+Onlardan bir tanesini.
+
+785
+00:51:36,460 --> 00:51:38,460
+Yürütebiliriz.
+
+786
+00:51:38,460 --> 00:51:40,460
+Buna da.
+
+787
+00:51:40,460 --> 00:51:42,460
+Signal disposition deniyormuş.
+
+788
+00:51:42,460 --> 00:51:54,280
+Posix'de.
+
+789
+00:51:54,280 --> 00:51:56,280
+Standartlarında.
+
+790
+00:51:56,280 --> 00:51:58,280
+Bu sinyallerin.
+
+791
+00:52:00,280 --> 00:52:02,280
+Kaybolmasına engellemek için.
+
+792
+00:52:02,280 --> 00:52:04,280
+Sinyalleri.
+
+793
+00:52:04,280 --> 00:52:07,619
+Tiplerini.
+
+794
+00:52:07,619 --> 00:52:09,619
+Ve işte onların.
+
+795
+00:52:09,619 --> 00:52:11,619
+Onları yürütecek.
+
+796
+00:52:11,619 --> 00:52:13,619
+Handler fonksiyonları tuttuğumuz.
+
+797
+00:52:13,619 --> 00:52:15,619
+Signal set.
+
+798
+00:52:15,619 --> 00:52:17,619
+Diye bir şey var.
+
+799
+00:52:17,619 --> 00:52:19,619
+Bir tane pümeye koyuyor onları.
+
+800
+00:52:19,619 --> 00:52:21,619
+Ondan sonra.
+
+801
+00:52:21,619 --> 00:52:26,920
+Ve işte.
+
+802
+00:52:26,920 --> 00:52:28,920
+Bu sinyal setine.
+
+803
+00:52:28,920 --> 00:52:30,920
+Ulaşmak için bazı şeyleri var.
+
+804
+00:52:32,920 --> 00:52:34,920
+Yeni bir member eklemek.
+
+805
+00:52:34,920 --> 00:52:36,920
+İşte.
+
+806
+00:52:36,920 --> 00:52:38,920
+Yeni bir set oluşturmak gibi.
+
+807
+00:52:38,920 --> 00:52:40,920
+Şuradakinde birazcık daha buna.
+
+808
+00:52:40,920 --> 00:52:42,920
+Şuradan bir örnek gelecek bununla ilgili.
+
+809
+00:52:44,920 --> 00:52:46,920
+Şu maskla ilgili.
+
+810
+00:52:46,920 --> 00:52:48,920
+Birazcık şey yapmış.
+
+811
+00:52:48,920 --> 00:52:50,920
+Üzerinde doğmuş hocanız.
+
+812
+00:52:50,920 --> 00:52:52,920
+Onda da.
+
+813
+00:52:52,920 --> 00:52:54,920
+Hangi sinyalleri.
+
+814
+00:52:54,920 --> 00:52:56,920
+Blocklayacağız.
+
+815
+00:52:56,920 --> 00:52:58,920
+Hangilerini kullanacağız.
+
+816
+00:52:58,920 --> 00:53:00,920
+Onunla ilgili.
+
+817
+00:53:00,920 --> 00:53:02,920
+Bir maske oluşturmak.
+
+818
+00:53:02,920 --> 00:53:04,920
+Aslında bu.
+
+819
+00:53:04,920 --> 00:53:06,920
+Ondan sonra bunu geride alabiliyoruz.
+
+820
+00:53:06,920 --> 00:53:10,389
+Set maskla.
+
+821
+00:53:10,389 --> 00:53:12,389
+Yeni bir tane maske.
+
+822
+00:53:12,389 --> 00:53:14,389
+Yaratıyorsun.
+
+823
+00:53:14,389 --> 00:53:16,389
+Ondan sonra an blok ya da blokla.
+
+824
+00:53:16,389 --> 00:53:18,389
+Şey yapıyorsun.
+
+825
+00:53:18,389 --> 00:53:20,389
+Şimdi misal.
+
+826
+00:53:20,389 --> 00:53:22,389
+Burada bir tane empty.
+
+827
+00:53:22,389 --> 00:53:24,389
+Signal seti oluşturduk.
+
+828
+00:53:24,389 --> 00:53:26,389
+New mask diye bir şeye yazdık bunu.
+
+829
+00:53:26,389 --> 00:53:28,389
+Ondan sonra.
+
+830
+00:53:28,389 --> 00:53:30,389
+Ignore etmeceyi de buna.
+
+831
+00:53:30,389 --> 00:53:32,389
+İşte şey yaptık.
+
+832
+00:53:32,389 --> 00:53:34,389
+Ekledik.
+
+833
+00:53:34,389 --> 00:53:36,389
+Ondan sonra şimdi.
+
+834
+00:53:36,389 --> 00:53:38,389
+Çok kritik bir.
+
+835
+00:53:38,389 --> 00:53:40,389
+Kod bloku geliyor.
+
+836
+00:53:40,389 --> 00:53:42,389
+Burada ignore etmeyi.
+
+837
+00:53:42,389 --> 00:53:44,389
+İnteruptu pardon.
+
+838
+00:53:44,389 --> 00:53:46,389
+İnteruptu burada bloklamak istiyoruz.
+
+839
+00:53:46,389 --> 00:53:48,389
+Nasıl yapacağız?
+
+840
+00:53:48,389 --> 00:53:50,389
+Eski.
+
+841
+00:53:50,389 --> 00:53:52,389
+Old mask diye bir şey.
+
+842
+00:53:54,389 --> 00:53:56,389
+Zaten burada tanımlamışız.
+
+843
+00:53:56,389 --> 00:53:58,389
+New maskımızda ne var?
+
+844
+00:53:58,389 --> 00:54:01,829
+Şu var sadece.
+
+845
+00:54:01,829 --> 00:54:03,829
+Old maskı birazdan kullanacağız.
+
+846
+00:54:03,829 --> 00:54:05,829
+Old mask eskiden kullandığımız şey.
+
+847
+00:54:07,829 --> 00:54:11,429
+Bu eskiden kullandığımız diye düşünün.
+
+848
+00:54:11,429 --> 00:54:13,429
+Ondan sonra burada yeni bir tanesini
+
+849
+00:54:13,429 --> 00:54:15,429
+oluşturuyoruz.
+
+850
+00:54:15,429 --> 00:54:17,429
+Ondan sonra interuptu onun içine atıyoruz.
+
+851
+00:54:17,429 --> 00:54:19,429
+Ondan sonra bunu blokluyoruz.
+
+852
+00:54:19,429 --> 00:54:21,429
+Ondan sonra old maskı.
+
+853
+00:54:21,429 --> 00:54:23,429
+Yeni maskeyle bloklayacak
+
+854
+00:54:23,429 --> 00:54:25,429
+şekilde yeni maskedeki
+
+855
+00:54:25,429 --> 00:54:27,429
+bloklanacak old maskta.
+
+856
+00:54:27,429 --> 00:54:29,429
+Ondan sonra çıktık.
+
+857
+00:54:29,429 --> 00:54:31,429
+Bitti artık.
+
+858
+00:54:31,429 --> 00:54:33,429
+Critical region kodu.
+
+859
+00:54:33,429 --> 00:54:35,429
+Ondan sonra eskisini yeniden
+
+860
+00:54:35,429 --> 00:54:41,110
+set ediyoruz.
+
+861
+00:54:41,110 --> 00:54:43,110
+Bir de signal action var.
+
+862
+00:54:43,110 --> 00:54:45,110
+Signal action'da burada
+
+863
+00:54:45,110 --> 00:54:47,110
+birkaç tane önemli şey var.
+
+864
+00:54:47,110 --> 00:54:49,110
+Şimdi signal action
+
+865
+00:54:49,110 --> 00:54:51,110
+şurada şu şekilde
+
+866
+00:54:51,110 --> 00:54:54,460
+çağırılıyor.
+
+867
+00:54:54,460 --> 00:54:56,460
+Signal type'ımız var.
+
+868
+00:54:56,460 --> 00:54:58,460
+İşte neyse bu.
+
+869
+00:54:58,460 --> 00:55:00,460
+Ondan sonra
+
+870
+00:55:00,460 --> 00:55:03,989
+şimdi
+
+871
+00:55:03,989 --> 00:55:05,989
+uygulayacağımız action'ımız var.
+
+872
+00:55:05,989 --> 00:55:07,989
+Ondan sonra bir de eskiden
+
+873
+00:55:07,989 --> 00:55:09,989
+uyguladığımız var.
+
+874
+00:55:09,989 --> 00:55:11,989
+Şimdi bu action'lar
+
+875
+00:55:11,989 --> 00:55:13,989
+aslında birer
+
+876
+00:55:13,989 --> 00:55:15,989
+struct. Bunun şeyi de şu.
+
+877
+00:55:15,989 --> 00:55:17,989
+İçinde ne olduğuna bakalım.
+
+878
+00:55:17,989 --> 00:55:19,989
+Bu da işte bir tane
+
+879
+00:55:19,989 --> 00:55:21,989
+handler
+
+880
+00:55:21,989 --> 00:55:23,989
+fonksiyon var.
+
+881
+00:55:23,989 --> 00:55:25,989
+Ondan sonra bu handler
+
+882
+00:55:25,989 --> 00:55:27,989
+fonksiyonu istediğimiz şekilde
+
+883
+00:55:27,989 --> 00:55:29,989
+şey yapabiliyoruz biliyorsunuz.
+
+884
+00:55:29,989 --> 00:55:31,989
+Eğer bunu
+
+885
+00:55:33,989 --> 00:55:35,989
+bunun yerine
+
+886
+00:55:35,989 --> 00:55:37,989
+yazarsak
+
+887
+00:55:37,989 --> 00:55:39,989
+ignore veya default
+
+888
+00:55:39,989 --> 00:55:41,989
+yazarsak yine onları
+
+889
+00:55:41,989 --> 00:55:43,989
+kullanabiliriz.
+
+890
+00:55:43,989 --> 00:55:45,989
+Ondan sonra
+
+891
+00:55:45,989 --> 00:55:47,989
+burada yine bir maske oluşturuyoruz.
+
+892
+00:55:47,989 --> 00:55:49,989
+O da bir signal seti yine.
+
+893
+00:55:49,989 --> 00:55:51,989
+Ondan sonra bir de flag'larımız
+
+894
+00:55:51,989 --> 00:55:53,989
+var. Bu da
+
+895
+00:55:53,989 --> 00:55:57,849
+flag'larımızda misal
+
+896
+00:55:57,849 --> 00:55:59,849
+restart gibi
+
+897
+00:56:01,849 --> 00:56:03,849
+bir örnek verebilirim ona.
+
+898
+00:56:03,849 --> 00:56:05,849
+Mesela bir
+
+899
+00:56:05,849 --> 00:56:07,849
+sistem call gelirse
+
+900
+00:56:07,849 --> 00:56:09,849
+onu direkt
+
+901
+00:56:09,849 --> 00:56:11,849
+baştan başlattı gibi şeyler var.
+
+902
+00:56:11,849 --> 00:56:13,849
+Çeşitli bayraklar var.
+
+903
+00:56:13,849 --> 00:56:15,849
+Ondan sonra
+
+904
+00:56:20,440 --> 00:56:36,940
+bu nasıl
+
+905
+00:56:36,940 --> 00:56:38,940
+şey yapıyor? Ne yapıyor yani?
+
+906
+00:56:38,940 --> 00:56:40,940
+Ona bakalım.
+
+907
+00:56:40,940 --> 00:56:47,800
+Şuradaki
+
+908
+00:56:47,800 --> 00:56:49,800
+aslında bir
+
+909
+00:56:49,800 --> 00:56:51,800
+signal geldiği zaman
+
+910
+00:56:51,800 --> 00:56:53,800
+bu maske, bu flag'ları
+
+911
+00:56:53,800 --> 00:56:55,800
+kullanarak şu handler'ı
+
+912
+00:56:55,800 --> 00:56:57,800
+şey yap
+
+913
+00:56:57,800 --> 00:56:59,800
+koştur gibi bir şey.
+
+914
+00:56:59,800 --> 00:57:01,800
+Yani bunu yap
+
+915
+00:57:01,800 --> 00:57:03,800
+diyoruz.
+
+916
+00:57:03,800 --> 00:57:05,800
+Bu şekilde şey yapıyoruz.
+
+917
+00:57:05,800 --> 00:57:09,340
+Bunun bir kere
+
+918
+00:57:09,340 --> 00:57:11,340
+install edildikten sonra
+
+919
+00:57:11,340 --> 00:57:13,340
+yeniden bunu
+
+920
+00:57:13,340 --> 00:57:15,340
+tanımlayana kadar
+
+921
+00:57:15,340 --> 00:57:17,340
+bu struct'ın içindeki şeyler
+
+922
+00:57:17,340 --> 00:57:19,340
+aynı kaldığı için
+
+923
+00:57:19,340 --> 00:57:21,340
+bir reset problemi
+
+924
+00:57:21,340 --> 00:57:23,340
+olmuyor burada.
+
+925
+00:57:23,340 --> 00:57:25,340
+Yani bu bizim seek action'ımız her zaman
+
+926
+00:57:25,340 --> 00:57:27,340
+aynı davranacak. Biz değiştirene kadar.
+
+927
+00:57:27,340 --> 00:57:31,480
+Misal burada
+
+928
+00:57:31,480 --> 00:57:33,480
+interrupt signaline
+
+929
+00:57:33,480 --> 00:57:37,050
+bir tane handler
+
+930
+00:57:37,050 --> 00:57:39,050
+atamışlar. Handler da received
+
+931
+00:57:39,050 --> 00:57:41,050
+interrupt signal diyor sadece. Ama bir
+
+932
+00:57:41,050 --> 00:57:44,619
+şey yapmıyor.
+
+933
+00:57:44,619 --> 00:57:46,619
+Hello world yazarken böyle sonuna kadar
+
+934
+00:57:46,619 --> 00:57:48,619
+işte gördüğünüz
+
+935
+00:57:48,619 --> 00:57:50,619
+gibi ctrl c gelince
+
+936
+00:57:50,619 --> 00:57:52,619
+şuraya düşüyor.
+
+937
+00:57:52,619 --> 00:57:59,989
+Eğer şu
+
+938
+00:57:59,989 --> 00:58:01,989
+handler yerine
+
+939
+00:58:01,989 --> 00:58:03,989
+ignore'u koysak
+
+940
+00:58:03,989 --> 00:58:05,989
+bu sefer hiçbir şey yapmayacak.
+
+941
+00:58:05,989 --> 00:58:07,989
+Yani interrupt
+
+942
+00:58:07,989 --> 00:58:22,730
+edemeyeceksin onu. Yine
+
+943
+00:58:22,730 --> 00:58:24,730
+old action'ı bu şekilde
+
+944
+00:58:24,730 --> 00:58:28,260
+şey yapabiliyoruz.
+
+945
+00:58:28,260 --> 00:58:30,260
+Bu da son sayfamız.
+
+946
+00:58:30,260 --> 00:58:33,579
+Ha birden fazla handler
+
+947
+00:58:33,579 --> 00:58:35,579
+tanımlamış. Ondan sonra burayla
+
+948
+00:58:35,579 --> 00:58:37,579
+biraz oynamış.
+
+949
+00:58:37,579 --> 00:58:41,139
+Tamam.
+
+950
+00:58:41,139 --> 00:58:43,139
+Şimdi
+
+951
+00:58:43,139 --> 00:58:47,219
+çete
+
+952
+00:58:47,219 --> 00:59:17,829
+geri dönebilirsem
+
+953
+00:59:17,829 --> 00:59:19,829
+çete geri dölemedi.
+
+954
+00:59:19,829 --> 00:59:53,449
+Yeni thread yerine yeni process
+
+955
+00:59:53,449 --> 00:59:55,449
+oluşturmanın avantajları var mıdır?
+
+956
+00:59:55,449 --> 00:59:57,449
+Daha kolay implement edilmesi dışında
+
+957
+00:59:59,449 --> 01:00:03,559
+bunu araştırmam
+
+958
+01:00:03,559 --> 01:00:08,570
+gerekecek. Sen araştırabilirsin.
+
+959
+01:00:10,570 --> 01:00:12,570
+Başka soru olan sorusu
+
+960
+01:00:12,570 --> 01:00:14,570
+olan var mı bu konuyla ilgili?
+
+961
+01:00:14,570 --> 01:00:16,570
+Proseslerin
+
+962
+01:00:16,570 --> 01:00:18,570
+oluşturulması, örneklerle
+
+963
+01:00:18,570 --> 01:00:26,969
+ilgili vs.
+
+964
+01:00:26,969 --> 01:00:28,969
+Şimdi diğer grupla da yapacağım.
+
+965
+01:00:28,969 --> 01:00:37,210
+Bunu bitiriyorum o zaman.
+
+966
+01:00:37,210 --> 01:00:52,900
+Çete geri döneceğiz.
+
+967
+01:00:52,900 --> 01:00:58,710
+Tamamdır var mı başka soru?
+
+968
+01:00:58,710 --> 01:01:00,710
+Yok zaten benim de vaktim bitti.
+
+969
+01:01:00,710 --> 01:01:02,710
+Diğer gruba geçiyorum
+
+970
+01:01:02,710 --> 01:01:04,710
+arkadaşlar. Görüşmek üzere.
+
+971
+01:01:04,710 --> 01:01:06,710
+Kendinize dikkat edin.
+

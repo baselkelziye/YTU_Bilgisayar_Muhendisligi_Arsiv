@@ -1,0 +1,1144 @@
+1
+00:02:42,259 --> 00:02:43,979
+Evet arkadaşlar merhaba
+
+2
+00:02:43,979 --> 00:02:45,919
+sanırım
+
+3
+00:02:45,919 --> 00:02:47,780
+daha gelen yok gibi
+
+4
+00:02:47,780 --> 00:02:49,419
+çoğunuz geldiniz
+
+5
+00:02:49,419 --> 00:02:55,849
+şimdi öncelikle ifade edelim
+
+6
+00:02:55,849 --> 00:02:58,110
+şu an 1B grubunun
+
+7
+00:02:58,110 --> 00:03:00,349
+labı burası
+
+8
+00:03:00,349 --> 00:03:03,469
+1B grubunda
+
+9
+00:03:03,469 --> 00:03:04,250
+olmayan varsa
+
+10
+00:03:04,250 --> 00:03:06,689
+bizim listemizde lab
+
+11
+00:03:06,689 --> 00:03:09,270
+gruplarını paylaştığımız
+
+12
+00:03:09,270 --> 00:03:12,409
+Excel'de şimdiden
+
+13
+00:03:12,409 --> 00:03:21,210
+çıkabilir. Sorumuzu ekrana
+
+14
+00:03:21,210 --> 00:03:58,979
+yansıtalım. Herkes görüyor mu
+
+15
+00:03:58,979 --> 00:04:02,659
+arkadaşlar ekranı mı? Gözüküyor mu?
+
+16
+00:04:04,240 --> 00:04:05,060
+Evet gözüküyor.
+
+17
+00:04:06,479 --> 00:04:08,759
+Tamamdır teşekkür ederim cevap için. Şimdi chatten
+
+18
+00:04:08,759 --> 00:04:09,900
+paylaşayım hemen soruyu.
+
+19
+00:04:11,580 --> 00:04:12,020
+Bu değiş.
+
+20
+00:04:12,580 --> 00:04:33,170
+Tamam soruyu paylaşmış olduk.
+
+21
+00:04:34,529 --> 00:04:35,709
+Chatten indirebilirsiniz
+
+22
+00:04:35,709 --> 00:04:36,410
+soruyu arkadaşlar.
+
+23
+00:04:37,990 --> 00:04:39,230
+Sorunun bir üzerinden geçmemiz
+
+24
+00:04:39,230 --> 00:04:39,889
+gerekirse
+
+25
+00:04:39,889 --> 00:04:43,170
+bu çalışmada
+
+26
+00:04:43,170 --> 00:04:44,990
+sizden istediğimiz şey aslında basit.
+
+27
+00:04:46,449 --> 00:04:47,089
+Belki
+
+28
+00:04:47,089 --> 00:04:49,170
+ilk labdan sonra çok daha basit gelecektir.
+
+29
+00:04:49,170 --> 00:04:50,930
+Çünkü programları falan
+
+30
+00:04:50,930 --> 00:04:52,970
+kullanmaya az çok öğrendiniz
+
+31
+00:04:52,970 --> 00:04:54,730
+logic programlarını. Burada
+
+32
+00:04:54,730 --> 00:04:57,269
+gene numaranıza parametrik olarak
+
+33
+00:04:57,269 --> 00:04:58,829
+bir f fonksiyonu
+
+34
+00:04:58,829 --> 00:05:01,550
+oluşturuyoruz. Bu sefer bu fonksiyonun
+
+35
+00:05:01,550 --> 00:05:03,269
+f fonksiyonunun 4 adet
+
+36
+00:05:03,269 --> 00:05:05,269
+parametresi var.
+
+37
+00:05:06,089 --> 00:05:07,170
+x, y, z, w
+
+38
+00:05:07,170 --> 00:05:07,689
+şeklinde.
+
+39
+00:05:09,149 --> 00:05:11,069
+Bu fonksiyonu oluştururken buradaki
+
+40
+00:05:11,069 --> 00:05:12,509
+örnekle açıklandığı gibi
+
+41
+00:05:12,509 --> 00:05:15,310
+işte geçen labdadaki gibi bir hikaye
+
+42
+00:05:15,310 --> 00:05:16,490
+var burada. İşte ilk basaman
+
+43
+00:05:16,490 --> 00:05:18,730
+değeri, işte ikinci basaman değeri.
+
+44
+00:05:19,170 --> 00:05:20,910
+İşte son 3 basaman
+
+45
+00:05:20,910 --> 00:05:21,949
+16'ya göre modu.
+
+46
+00:05:22,910 --> 00:05:25,170
+Geçen lab 8 demiştik. Şimdi 16'ya göre yapacağız.
+
+47
+00:05:26,089 --> 00:05:26,790
+Sonra da işte
+
+48
+00:05:26,790 --> 00:05:27,870
+sonraki 3 basaman
+
+49
+00:05:27,870 --> 00:05:30,569
+16'ya göre modunu alacaksınız.
+
+50
+00:05:32,189 --> 00:05:33,069
+Bu çıkan
+
+51
+00:05:33,069 --> 00:05:33,589
+sayıların
+
+52
+00:05:33,589 --> 00:05:36,029
+bu çıkan sayılar sizin
+
+53
+00:05:36,029 --> 00:05:38,470
+f fonksiyonunuzun
+
+54
+00:05:38,470 --> 00:05:40,449
+max term şeklinde ifadesi olacak.
+
+55
+00:05:41,069 --> 00:05:42,410
+Yani toplamların çarpımı
+
+56
+00:05:42,410 --> 00:05:44,750
+şeklinde yazılan
+
+57
+00:05:44,750 --> 00:05:45,930
+ifadesi olacak. Fakat
+
+58
+00:05:45,930 --> 00:05:48,769
+siz çalışırken bunun min term
+
+59
+00:05:49,170 --> 00:05:50,870
+ile çalışacaksınız. Yani
+
+60
+00:05:50,870 --> 00:05:53,290
+sizin numaranıza göre max term ifadeniz
+
+61
+00:05:53,290 --> 00:05:54,689
+0, 6, 7, 14 ise
+
+62
+00:05:54,689 --> 00:05:56,310
+ne oluyor? Bunların
+
+63
+00:05:56,310 --> 00:05:58,490
+16'ya tümleyenleri diyelim.
+
+64
+00:06:00,769 --> 00:06:01,250
+0'dan
+
+65
+00:06:01,250 --> 00:06:03,149
+15'e kadar olan sayılar ama buradaki 4
+
+66
+00:06:03,149 --> 00:06:03,750
+sayı olmayacak.
+
+67
+00:06:05,170 --> 00:06:06,769
+Ne oluyor? 0'ı kullanmıyorum.
+
+68
+00:06:06,870 --> 00:06:08,850
+1, 2, 3, 4, 5. 6'yı kullanmıyorum.
+
+69
+00:06:08,930 --> 00:06:11,089
+7'yi kullanmıyorum. 8, 9, 10, 11,
+
+70
+00:06:11,189 --> 00:06:12,930
+12, 13, 14'ü kullanmıyorum.
+
+71
+00:06:13,029 --> 00:06:14,850
+15. Sizin çalışacağınız
+
+72
+00:06:14,850 --> 00:06:16,370
+fonksiyon aslında bu
+
+73
+00:06:16,370 --> 00:06:18,709
+12 tane farklı
+
+74
+00:06:19,170 --> 00:06:21,350
+elemanı olan min term
+
+75
+00:06:21,350 --> 00:06:21,990
+ifade olacak.
+
+76
+00:06:24,490 --> 00:06:26,529
+Aslında buradaki temel
+
+77
+00:06:26,529 --> 00:06:28,629
+amacımız min term ifadesini
+
+78
+00:06:28,629 --> 00:06:30,009
+uzun tutmak istiyoruz. Ama
+
+79
+00:06:30,009 --> 00:06:32,709
+bu parametrize yapma işleminde
+
+80
+00:06:32,709 --> 00:06:34,750
+sizleri yormamak için mümkün olunca az
+
+81
+00:06:34,750 --> 00:06:36,769
+şurada adım olsun diye
+
+82
+00:06:36,769 --> 00:06:38,810
+4 adımda bir max term
+
+83
+00:06:38,810 --> 00:06:40,810
+oluşturuyorsunuz. Onu min term'e çeviriyorsunuz. Elimizde
+
+84
+00:06:40,810 --> 00:06:42,790
+büyükçe bir min term ifade oluyor. Yani aslında
+
+85
+00:06:42,790 --> 00:06:45,029
+olayın mevzusu bu. Yoksa 12 tane
+
+86
+00:06:45,029 --> 00:06:46,889
+böyle farklı farklı işte şu basamağın bilmem
+
+87
+00:06:46,889 --> 00:06:49,149
+neye göre modu falan da diyebilirdik.
+
+88
+00:06:49,610 --> 00:06:50,149
+Sonuç olarak
+
+89
+00:06:50,709 --> 00:06:52,810
+12 tane elemanı olan bir min term ifadeniz
+
+90
+00:06:52,810 --> 00:06:54,290
+oluyor. Bunun üzerinde çalışıyorsunuz.
+
+91
+00:06:55,350 --> 00:06:57,410
+Sonra bu min term ifadenin
+
+92
+00:06:57,410 --> 00:06:59,550
+sadeleştirilmiş halini
+
+93
+00:06:59,550 --> 00:07:00,730
+bulacaksınız. Nasıl bulacaksınız?
+
+94
+00:07:00,829 --> 00:07:02,089
+Karnı haritalarını kullanarak.
+
+95
+00:07:02,790 --> 00:07:05,189
+Karnı haritalarını kullanarak bunu sadeleştirilmiş
+
+96
+00:07:05,189 --> 00:07:05,990
+halini bulacaksınız.
+
+97
+00:07:07,029 --> 00:07:08,970
+Aslında labın olayı bu yani.
+
+98
+00:07:09,069 --> 00:07:11,350
+Bunun dışında bu labın çok büyük bir zorluğu
+
+99
+00:07:11,350 --> 00:07:13,610
+yok. Bu min term ifadenin
+
+100
+00:07:13,610 --> 00:07:14,529
+doğruluk tablosu.
+
+101
+00:07:15,129 --> 00:07:17,230
+Numaranıza uygun şekilde
+
+102
+00:07:17,230 --> 00:07:19,529
+bu f fonksiyonunun max term ve min term ifadesi.
+
+103
+00:07:19,730 --> 00:07:20,610
+Min term'i kullanacağız ama
+
+104
+00:07:20,709 --> 00:07:22,769
+max term'i de yazın tabii ki. Şöyle buldum böyle buldum
+
+105
+00:07:22,769 --> 00:07:23,730
+falan. Kısaca bir.
+
+106
+00:07:26,730 --> 00:07:28,769
+Sonra bu karnı haritası
+
+107
+00:07:28,769 --> 00:07:31,329
+üstünde sadeleştirme yapıyorsunuz. Bunları gösteriyorsunuz.
+
+108
+00:07:31,470 --> 00:07:32,089
+Güzel bir şekilde.
+
+109
+00:07:33,009 --> 00:07:35,170
+İşte karnı haritam şöyle çıktı. Şöyle sadeleştirdim
+
+110
+00:07:35,170 --> 00:07:35,709
+falan filan.
+
+111
+00:07:36,810 --> 00:07:38,949
+Karnı haritası ile yaptığınız sadeleştirimler
+
+112
+00:07:38,949 --> 00:07:40,810
+dışında bir sadeleştirme yapmanızı istemiyoruz.
+
+113
+00:07:42,149 --> 00:07:42,870
+Yani işte hocam
+
+114
+00:07:42,870 --> 00:07:44,529
+ben işte cebirsel olarak da şöyle
+
+115
+00:07:44,529 --> 00:07:45,970
+sadeleştirme yaptım olmasın.
+
+116
+00:07:47,910 --> 00:07:48,750
+Bazılarınızın ki evet
+
+117
+00:07:48,750 --> 00:07:50,689
+belki bayağı sadeleşecek ama çok aşırı da
+
+118
+00:07:50,709 --> 00:07:52,269
+sade bir şey istemiyoruz. Neden? Çünkü
+
+119
+00:07:52,269 --> 00:07:54,509
+Logisim veya Digital veya
+
+120
+00:07:54,509 --> 00:07:57,189
+kullandığınız logik programı neyse orada da
+
+121
+00:07:57,189 --> 00:07:58,430
+fonksiyonun sade halinin
+
+122
+00:07:58,430 --> 00:07:59,649
+gerçeklenmesini istiyoruz.
+
+123
+00:08:01,009 --> 00:08:01,970
+O sebeple
+
+124
+00:08:01,970 --> 00:08:04,930
+sadece karnı haritası
+
+125
+00:08:04,930 --> 00:08:06,670
+üstünde yaptığınız sadeleştirmeler
+
+126
+00:08:06,670 --> 00:08:08,709
+sadeleştirmelere
+
+127
+00:08:09,389 --> 00:08:10,810
+sadeleştirmelere izin
+
+128
+00:08:10,810 --> 00:08:12,810
+veriyoruz. Yani labın
+
+129
+00:08:12,810 --> 00:08:14,430
+olayı bu aslında. Geçen haftaki
+
+130
+00:08:14,430 --> 00:08:16,790
+labda dahi karnı haritalarını kullanan
+
+131
+00:08:16,790 --> 00:08:19,069
+arkadaşlar vardı. Bu labı
+
+132
+00:08:19,069 --> 00:08:20,670
+birçoğunuz çok rahat yapacaktır diye düşünüyorum.
+
+133
+00:08:20,709 --> 00:08:22,689
+Benim şimdilik
+
+134
+00:08:22,689 --> 00:08:24,750
+açıklamalarım bu şekilde. Sorusu olan var mı?
+
+135
+00:08:32,600 --> 00:08:33,899
+Tamam çok açıklayıcı olduysa
+
+136
+00:08:33,899 --> 00:08:35,259
+süper. Hocam
+
+137
+00:08:35,259 --> 00:08:37,360
+labın süresi mi?
+
+138
+00:08:38,580 --> 00:08:40,059
+Ya normalde resmi şartlar
+
+139
+00:08:40,059 --> 00:08:42,059
+altında bu labın 7'de bitmesi gerekiyor arkadaşlar.
+
+140
+00:08:43,840 --> 00:08:45,840
+Ne kadar erken bitirirseniz
+
+141
+00:08:45,840 --> 00:08:47,799
+o kadar hızlı çıkarsınız. Ha bir de ben geçen hafta
+
+142
+00:08:47,799 --> 00:08:49,299
+kendi grubumda şöyle bir şey yapmıştım.
+
+143
+00:08:50,159 --> 00:08:50,980
+Onu burada da yapalım.
+
+144
+00:08:53,220 --> 00:08:55,139
+Şimdi bu şey sıkıntısı oluyor.
+
+145
+00:08:55,139 --> 00:08:58,710
+Şimdi labları sunarken
+
+146
+00:08:59,409 --> 00:09:01,389
+geçen haftalarda
+
+147
+00:09:01,389 --> 00:09:02,450
+şöyle bir şey yapmıştık.
+
+148
+00:09:02,909 --> 00:09:04,450
+Farklı odalar oluşturuyoruz.
+
+149
+00:09:05,210 --> 00:09:06,649
+Sunumunu yapacak arkadaşla
+
+150
+00:09:06,649 --> 00:09:08,070
+o odaya gidip
+
+151
+00:09:08,070 --> 00:09:10,250
+orada onun sunumunu
+
+152
+00:09:10,250 --> 00:09:15,419
+dinliyorduk. Hatırlarsanız
+
+153
+00:09:15,419 --> 00:09:17,639
+şu an hepimizin bulunduğu
+
+154
+00:09:17,639 --> 00:09:18,779
+odada değil de
+
+155
+00:09:18,779 --> 00:09:22,620
+ayrı bir odada tek tek
+
+156
+00:09:22,620 --> 00:09:24,679
+herkes sunumunu yapıyordu. O odadayken
+
+157
+00:09:25,279 --> 00:09:28,580
+sizin mesela çete
+
+158
+00:09:28,580 --> 00:09:29,899
+çete
+
+159
+00:09:29,899 --> 00:09:32,679
+öğrenciler bitirdim diye yazıyorlar. Fakat ben o odadayken
+
+160
+00:09:32,840 --> 00:09:34,620
+sizin bu çete yazdıklarınızı göremiyordum.
+
+161
+00:09:34,620 --> 00:09:36,620
+O yüzden sıralarda kaymalar falan oluyor.
+
+162
+00:09:36,620 --> 00:09:38,620
+Bunu engellemek için
+
+163
+00:09:38,620 --> 00:09:40,620
+şöyle bir şey yapacağız. Bir tane excel
+
+164
+00:09:40,620 --> 00:09:42,620
+dökümanı açacağım şimdi hemen.
+
+165
+00:09:42,620 --> 00:09:44,620
+Çok seri. Bu excel dökümanına
+
+166
+00:09:44,620 --> 00:09:46,620
+bitirenler
+
+167
+00:09:46,620 --> 00:09:48,620
+sırasıyla adını yazacak. Geçen hafta ki ben grubumda
+
+168
+00:09:48,620 --> 00:09:50,620
+öyle yaptım. Daha güzel oldu.
+
+169
+00:09:50,620 --> 00:09:52,620
+Hocam işte ben sıradaydım. Şöyleydi
+
+170
+00:09:52,620 --> 00:09:54,620
+böyleydi muhabbetini ortadan
+
+171
+00:09:54,620 --> 00:09:58,500
+kaldırıyoruz.
+
+172
+00:09:58,500 --> 00:10:00,500
+Şimdi birazdan o
+
+173
+00:10:00,500 --> 00:11:49,289
+dökümanı da paylaşacağım.
+
+174
+00:11:49,289 --> 00:11:51,309
+Arkadaşlar şu chatten paylaştığımda
+
+175
+00:11:51,309 --> 00:11:53,309
+linkteki excel'e de
+
+176
+00:11:53,309 --> 00:11:55,309
+bir tane sütun var zaten.
+
+177
+00:11:55,309 --> 00:11:57,309
+O sütuna sırasıyla bitirdiğiniz
+
+178
+00:11:57,309 --> 00:11:59,309
+zaman eğer göstermek istiyorsanız
+
+179
+00:12:01,309 --> 00:12:03,309
+yaptığınız çalışmanızı sunmak istiyorsanız
+
+180
+00:12:03,309 --> 00:12:05,309
+oraya isminizi
+
+181
+00:12:05,309 --> 00:12:07,309
+yazmanızı rica ediyoruz. Başkasının
+
+182
+00:12:07,309 --> 00:12:09,309
+yazdığı satırdaki ismi silmeyin lütfen.
+
+183
+00:12:09,309 --> 00:12:11,309
+Sırasıyla isimlerinizi
+
+184
+00:12:11,309 --> 00:12:13,309
+yazarsanız
+
+185
+00:12:13,309 --> 00:12:15,309
+sırayla ilgili bir
+
+186
+00:12:15,309 --> 00:12:17,309
+sıkıntı
+
+187
+00:12:17,309 --> 00:12:25,870
+yaşamayız. Var mı sorusu
+
+188
+00:12:25,870 --> 00:12:27,870
+olan? Hocam soruya erişemedim.
+
+189
+00:12:27,870 --> 00:12:35,629
+Hocam 0 0
+
+190
+00:12:35,629 --> 00:12:37,629
+9 mod 16 sonucu 9 oluyor.
+
+191
+00:12:37,629 --> 00:12:39,629
+9 artı 1 eşittir
+
+192
+00:12:39,629 --> 00:12:41,629
+10 mu yapayım 0'a mı döneyim?
+
+193
+00:12:41,629 --> 00:12:47,149
+Yani
+
+194
+00:12:47,149 --> 00:12:49,149
+16'ya ile modu neyse onu yapacaksın.
+
+195
+00:12:49,149 --> 00:12:51,149
+Daha önce 9'u bulduysan
+
+196
+00:12:51,149 --> 00:12:53,149
+1 artırıp 10 yapabilirsin.
+
+197
+00:12:53,149 --> 00:12:57,519
+Yani 0'a dönmeni gerektiren bir şey yok.
+
+198
+00:12:57,519 --> 00:12:59,519
+16'ya göre modunu alıyorsun.
+
+199
+00:12:59,519 --> 00:13:22,960
+Bu sizden istediklerimiz arkadaşlar.
+
+200
+00:13:22,960 --> 00:13:24,960
+Doğruluk tablosu, karnı haritası
+
+201
+00:13:24,960 --> 00:13:26,960
+işte sizin numaranıza uygun
+
+202
+00:13:26,960 --> 00:13:28,960
+minitörün ifadesini. Bunları
+
+203
+00:13:28,960 --> 00:13:30,960
+kağıda yapıyorsanız fotoğrafını çekiyorsunuz.
+
+204
+00:13:30,960 --> 00:13:32,960
+Güzel bir şekilde.
+
+205
+00:13:32,960 --> 00:13:34,960
+Sonra ekran paylaşımı
+
+206
+00:13:34,960 --> 00:13:36,960
+yaptığınızda o fotoğrafı gösteriyorsunuz.
+
+207
+00:13:36,960 --> 00:13:38,960
+Fonksiyonun çalışır
+
+208
+00:13:38,960 --> 00:13:40,960
+halini de yine kullandığınız programda
+
+209
+00:13:40,960 --> 00:13:42,960
+çalışır halde görmek
+
+210
+00:13:42,960 --> 00:13:44,960
+istiyoruz. Programın
+
+211
+00:13:44,960 --> 00:13:46,960
+direkt doğruluk tablosu oluşturma özelliği var ise
+
+212
+00:13:46,960 --> 00:13:48,960
+direkt onu
+
+213
+00:13:48,960 --> 00:13:50,960
+gösterebilirsiniz. Direkt doğruluk tablosunu
+
+214
+00:13:50,960 --> 00:13:52,960
+tek tek ya işte
+
+215
+00:13:52,960 --> 00:13:54,960
+bütün kombinasyonları denememize gerek yok.
+
+216
+00:13:54,960 --> 00:13:56,960
+Programların çoğunda
+
+217
+00:13:56,960 --> 00:13:58,960
+doğruluk tablosu oluşturma özelliği var.
+
+218
+00:13:58,960 --> 00:14:00,960
+Onu gösterseniz.
+
+219
+00:14:00,960 --> 00:14:02,960
+Yeterli.
+
+220
+00:14:02,960 --> 00:14:04,960
+Mevzu bu. Yapan hemen
+
+221
+00:14:04,960 --> 00:14:06,960
+çıkabilir yani.
+
+222
+00:14:06,960 --> 00:31:42,299
+Mevzu biter onun için. Arkadaşlar
+
+223
+00:31:42,299 --> 00:31:44,299
+tekrar bir açıklama yapayım. Biraz geç giren
+
+224
+00:31:44,299 --> 00:31:48,190
+arkadaşlar olmuş. Sizden istediğimiz
+
+225
+00:31:48,190 --> 00:31:50,190
+şey. Dokümanı da zaten
+
+226
+00:31:50,190 --> 00:31:52,190
+dikkatle okursanız.
+
+227
+00:31:54,190 --> 00:31:56,190
+Gayet anlaşılır fakat hızlı bir üstünden geçelim.
+
+228
+00:31:56,190 --> 00:31:58,190
+BF fonksiyonu oluşturacaksınız.
+
+229
+00:31:58,190 --> 00:32:00,190
+Numaranızın son hanesi
+
+230
+00:32:00,190 --> 00:32:02,190
+ikinci hanesi ve numaranızın
+
+231
+00:32:02,190 --> 00:32:04,190
+son üç basamağı ve sonraki
+
+232
+00:32:04,190 --> 00:32:06,190
+sondan bir önceki üç basamağını kullanabilirsiniz.
+
+233
+00:32:06,190 --> 00:32:08,190
+Sondan olarak burada anlatıldığı şekilde
+
+234
+00:32:08,190 --> 00:32:10,190
+bir min term ifadesi oluşturacaksınız.
+
+235
+00:32:10,190 --> 00:32:12,190
+Pardon max term
+
+236
+00:32:12,190 --> 00:32:14,190
+ifadesi oluşturacaksınız. Bu max term ifadesine
+
+237
+00:32:14,190 --> 00:32:16,190
+karşılık gelen min term
+
+238
+00:32:16,190 --> 00:32:18,190
+ifadesini buluyorsunuz. Bu min term ifadesini
+
+239
+00:32:18,190 --> 00:32:20,190
+karno haritasına koyarak
+
+240
+00:32:20,190 --> 00:32:22,190
+sadeleştirme
+
+241
+00:32:22,190 --> 00:32:25,440
+yapıyorsunuz.
+
+242
+00:32:25,440 --> 00:32:27,440
+Fonksiyonun doğruluk tablosu
+
+243
+00:32:27,440 --> 00:32:29,440
+işte min term max term hali,
+
+244
+00:32:29,440 --> 00:32:31,440
+karno haritası, karno haritasındaki
+
+245
+00:32:31,440 --> 00:32:33,440
+sadeleştirmeleri nasıl yaptığınız
+
+246
+00:32:33,440 --> 00:32:35,440
+gibi şeyleri defter yazarak veya bilgisayarda
+
+247
+00:32:35,440 --> 00:32:37,440
+yaparak
+
+248
+00:32:37,440 --> 00:32:39,440
+deftere yazıyorsanız fotoğrafını çekip
+
+249
+00:32:39,440 --> 00:32:41,440
+bilgisayarda yapıyorsanız ekran paylaştığınızda
+
+250
+00:32:41,440 --> 00:32:43,440
+göstererek sonuç olarak bilgisayarda
+
+251
+00:32:43,440 --> 00:32:45,440
+gösteriyorsunuz ve bu sade halini
+
+252
+00:32:45,440 --> 00:32:47,440
+bir lojik programında
+
+253
+00:32:47,440 --> 00:32:49,440
+istediğiniz herhangi bir lojik programında
+
+254
+00:32:49,440 --> 00:32:51,440
+gerçekliyorsunuz. Logisim veya digital
+
+255
+00:32:51,440 --> 00:32:53,440
+kullanabilirsiniz. Geçen lapta olduğu gibi.
+
+256
+00:32:55,440 --> 00:32:57,440
+Bu kadar yani istediklerimiz bunlar.
+
+257
+00:32:57,440 --> 00:32:59,440
+Devreye çalışacak orada.
+
+258
+00:32:59,440 --> 00:33:01,440
+İstediğimiz şeyler aslında bu kadar.
+
+259
+00:33:01,440 --> 00:33:03,440
+Yani konuyu az çok bilenler
+
+260
+00:33:03,440 --> 00:33:05,440
+yapacaktır,
+
+261
+00:33:05,440 --> 00:33:09,289
+kaçırmayacaktır diye düşünüyorum.
+
+262
+00:33:09,289 --> 00:33:11,289
+Birazdan ekran paylaşımını kapatacağım.
+
+263
+00:33:11,289 --> 00:33:13,289
+Herkesin soruya erişimi var zaten
+
+264
+00:33:13,289 --> 00:33:31,519
+sanıyorum.
+
+265
+00:33:31,519 --> 00:33:33,519
+[öğrenci] ismini eklemiş.
+
+266
+00:33:33,519 --> 00:33:36,890
+Onu hemen odaya alıyorum.
+
+267
+00:33:36,890 --> 00:33:38,890
+Ben öbür odaya geçtim de zaten ekran paylaşımı
+
+268
+00:33:38,890 --> 00:33:40,890
+kapanacak. Şimdi ben kendimi kapatayım.
+
+269
+00:33:40,890 --> 00:33:42,890
+Ben öbür odada alacağım arkadaşlar listede
+
+270
+00:33:42,890 --> 00:33:44,890
+liste bitmediği sürece.
+
+271
+00:33:44,890 --> 00:33:46,890
+Listede yazılan isimleri
+
+272
+00:33:46,890 --> 00:33:48,890
+bitirdiğimde veya arada sırada bu odaya da
+
+273
+00:33:48,890 --> 00:33:54,119
+döneceğim. Hocam bitirdikten sonra
+
+274
+00:33:54,119 --> 00:33:56,119
+söylüyoruz değil mi? Diğer odaya geçmek için.
+
+275
+00:33:56,119 --> 00:33:58,119
+Evet bu excel listemiz var.
+
+276
+00:33:58,119 --> 00:34:00,119
+O link var mı sende?
+
+277
+00:34:00,119 --> 00:34:02,119
+Hayır hocam ben biraz geç katıldım da.
+
+278
+00:34:02,119 --> 00:34:04,119
+Tamam hemen atalım.
+
+279
+00:34:04,119 --> 00:34:16,010
+Atıyorum.
+
+280
+00:34:16,010 --> 00:34:18,010
+Bu excel ismini eklersen
+
+281
+00:34:18,010 --> 00:34:20,010
+şu an 4 arkadaşımız eklemiş.
+
+282
+00:34:20,010 --> 00:34:23,420
+Tabi bitirdiğinde yani bu listeden
+
+283
+00:34:23,420 --> 00:34:25,420
+ilerleyeceğiz. Ben şimdi
+
+284
+00:34:25,420 --> 00:34:27,420
+öbür odaya geçiyorum. Diğer arkadaşlarla birlikte
+
+285
+00:34:27,420 --> 00:34:29,420
+herkese kolay gelsin. Soru
+
+286
+00:34:29,420 --> 00:34:31,420
+olursa gene döneceğim.
+

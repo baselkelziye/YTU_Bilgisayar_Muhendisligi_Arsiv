@@ -1,0 +1,2267 @@
+1
+00:00:53,204 --> 00:00:54,204
+Teşekkürler.
+
+2
+00:03:10,099 --> 00:03:12,219
+Tekrardan günaydın arkadaşlar.
+
+3
+00:03:18,324 --> 00:03:19,924
+Bir halde aziz.
+
+4
+00:03:30,484 --> 00:03:44,564
+Peki, şimdi üç önce haftalık içeriye bir bakalım. Bugün 18 Mayıs, normal planlı pekiştirmelerimden bakacak bir zaman muhtemelen belki haftaya aktaracağım.
+
+5
+00:03:50,963 --> 00:03:52,963
+Şurada olur.
+
+6
+00:03:54,963 --> 00:04:00,963
+Bugün makinemizin ikisini getirmeyi planlıyorum.
+
+7
+00:04:22,004 --> 00:04:24,384
+Geçen hafta nerede kalmışım? Hatırlatır mısınız?
+
+8
+00:04:45,875 --> 00:04:52,955
+Hocam, PGA'yı bitirmişiz. Sonrasına geçmişiz. 12. sayfa oluyor. 24. sayfa herhalde.
+
+9
+00:04:59,379 --> 00:05:01,639
+Aya yok oraya da geçmişiz. Karar ağaçlarına gelmiş.
+
+10
+00:05:01,639 --> 00:05:04,639
+Geçtik canım. Karar ağaçlarından bahsetmiştik ya.
+
+11
+00:05:04,639 --> 00:05:07,639
+Doğru ben tekrar çalışmış çalışma şey yapmışım, geri gelmişim.
+
+12
+00:05:08,779 --> 00:05:11,639
+Karar ağaçlarının konuştu. Yapay sineraları?
+
+13
+00:05:11,639 --> 00:05:14,779
+K'ya gelmişiz.
+
+14
+00:05:14,779 --> 00:05:16,180
+Jn'e.
+
+15
+00:05:16,180 --> 00:05:17,879
+Onu görmüşüz yani.
+
+16
+00:05:21,492 --> 00:05:23,572
+Evet, bunu görmüştüm. Bunu anlattım skecin.
+
+17
+00:05:23,572 --> 00:05:25,732
+Değil mi? Bu burada kalmıştı. Tamam.
+
+18
+00:05:26,792 --> 00:05:27,672
+Tamam, peki.
+
+19
+00:05:29,792 --> 00:05:33,891
+Şimdi, şu anda ne yapıyoruz?
+
+20
+00:05:34,672 --> 00:05:39,572
+Makine öğrenmesi yöntemlerini görürken...
+
+21
+00:05:41,620 --> 00:05:58,819
+Özellikle, özelliklerle ilgili yapabileceğimiz şeyleri gördük. Onun arkasından sınıflandırmaya geçtik. Sınıflandırmalı birkaç algoritma gördük. Şimdi oraya devam ediyoruz. Yani şu anda hala sınıflandırma algoritmaları üzerindeyiz.
+
+22
+00:05:59,819 --> 00:06:07,819
+Şimdi en yakın Kalkomuş'u algoritması şeydi. Arkadaşımız böyle sakin olduğunu söyledi.
+
+23
+00:06:08,788 --> 00:06:27,768
+Ataşözünün haligocmasıydı aslında. Bunun iyi tarafı diye düşünebileceğimiz birkaç özelliği var. Bir tanesi işte şeydi. Bir yöne nasıl evrensel approximately nasıl çekeceğiz?
+
+24
+00:06:32,980 --> 00:06:38,540
+Yani şöyle, her türlü eğitim kümesine uyum sağlayabilir.
+
+25
+00:06:38,540 --> 00:06:40,540
+Böyle bir algoritmaydı.
+
+26
+00:06:40,540 --> 00:06:51,740
+Yani çok esnek bir algoritma manada düşündüğüm zaman, aynen karar açtı ya da yapay sinir alır gibi.
+
+27
+00:06:51,740 --> 00:06:58,100
+Bu algoritmanın esnekliği bir taraftan düşündüğümüzde,
+
+28
+00:06:58,228 --> 00:07:10,868
+Kötü tarafı eğitimin olmayışı aslında ortaya bir modelin direkt çıkmadığını, yani bu modellerin işi aslında sıkıştırmaktır.
+
+29
+00:07:11,508 --> 00:07:14,708
+Eğitim kümesini bir modelin içerisinde sıkıştırıyorsun aslında.
+
+30
+00:07:16,388 --> 00:07:22,408
+Sınıflandırma kararını yapabilecek şekilde ya da regresyonda da bir sıkıştırma süreci.
+
+31
+00:07:22,408 --> 00:07:24,828
+Burada eğitim olmadan da bir sıkıştırmak.
+
+32
+00:07:25,716 --> 00:07:31,656
+Eğitim kümesinin kendisi bize lazım herhangi bir test örneğinin yerini belirlemek için.
+
+33
+00:07:31,656 --> 00:07:38,255
+Bu tabii az sayıda örneği olan veri kübeler için çok büyük sıkıntı değil.
+
+34
+00:07:38,995 --> 00:07:44,696
+Ama çok fazla sayıda eğitim örneği olan veri kübelerinde bu iş sıkıntılı.
+
+35
+00:07:45,656 --> 00:07:47,896
+En yakın örneği bulmak.
+
+36
+00:07:48,500 --> 00:08:13,420
+İşi sıkıntılı. Tabi burada işi hızlandırmak için KD, Triller falan gibisinden veri yapıları var. Süreci hızlandırmada kullanılan yani bütün örnekleri nefsiyle D boyutta en çarpı D'lik bir karşılaştırma yapıyorsunuz aslında. Onu daha az, karmıştığı daha düşük seviyeleri.
+
+37
+00:08:13,839 --> 00:08:35,600
+Çeken veri yapıları mevcut. Onun haricinde bir de elimizdeki eğitim örneklerinin acaba hepsine ihtiyacımız var mı? Onların bir kısmını kullansak ya da işlenen bir kısmı kullansak ya da işlenen temsilci oluştursak, temsilciler oluştursak.
+
+38
+00:08:36,307 --> 00:09:02,248
+Sorusuna cevaben oluşturulmuş bir algoritma. Bu algoritma Learning Vector Quantization, VQ algoritması. Bu algoritma aslında şöyle bir şey yapıyor. Buradaki yeşil, mavi noktaların hepsini kullanmak yerine, şurada görüyoruz kırmızı noktaları kullanıyor. Bakın kırmızı noktaların bazıları çarpı, bazıları yuvarlaklar. Yani işte 30 tane.
+
+39
+00:09:02,783 --> 00:09:20,683
+Ya da 20 şer tane var mıdır orada? Var. 60 tane yeşil nokta yerine 3 tane yeşil nokta. Yani çarpı sınıfından. 60 tane yuvarlak sınıfından örnek yerine 3 tane yuvarlak sınıfından örnek elde etmek.
+
+40
+00:09:21,743 --> 00:09:26,584
+Buradaki kırmızı noktalar aslında bizim temsilcilerimiz.
+
+41
+00:09:27,087 --> 00:09:35,087
+Learning Vector Partition'la, algoritmasıyla bu temsilci örnekleri bulmaya çalışıyoruz.
+
+42
+00:09:35,207 --> 00:09:41,487
+Yıkılan şey bu, işlem bu. Peki bu noktalar nasıl belirlenebilirler?
+
+43
+00:09:41,487 --> 00:09:48,067
+Yani elimizde bir veri hükümesi var ve biz diyoruz ki ben bu temsilci noktaları bulayım.
+
+44
+00:09:48,727 --> 00:09:51,427
+Peki bu temsilci noktaları buldum. Tamam bulduktan sonra ne yapacağım?
+
+45
+00:09:52,148 --> 00:10:14,048
+Bunlardan sonra yapacağınız şey aslında One Gear is Neighbor. Yine çok kabaca. Ne yapacağız? Yeni bir test örneği geldiğinde bu sefer bu kırmızı olan noktalara bakacağız. Onlarla hangisi en yakınında? Ona göre işlem yapacağız. Dolayısıyla örnek sayısı miktarını, yani temsilci örnekler oluşturduğu için, örnek sayısı miktarını çok çok düşeceği için.
+
+46
+00:10:14,515 --> 00:10:22,816
+Şey bir, ne der ona, oldukça zamandan kazandıran bir algoritma. Yani eğitim kümesinin aslında burada altı tane örneğe inleri gelmiş.
+
+47
+00:10:23,956 --> 00:10:33,716
+Ha bu örnekler, orijinal örneklerin aynları değil gördüğünüz gibi. Burada hani mevcut örneklerden seçilme gibisinden bir işlem yok burada gördüğünüz gibi.
+
+48
+00:10:34,515 --> 00:10:41,615
+Ama örnekler yakın bir şeyler muhtemelen çıkacaklar. Çıkma edebilir, o nasıl bir durumda olur konuşuruz.
+
+49
+00:10:44,851 --> 00:11:03,932
+Peki, şimdi bu kırmızı noktaları nasıl buluruz? Derdimiz bu. Neurlink Vector Countization Algorithması nasıl çalışıyor? Oldukça basit bir algoritması var. Aslında bir, nasıl söyleyeyim, ödüllendirmeme ve cezalandırma sürecine sahip bu algoritma.
+
+50
+00:11:09,427 --> 00:11:30,827
+K-Means ve SOM algoritmalarına benziyor o açıdan. Zaten LVQ'yu öneren kişi Kohanen, SOM'a öneren kişi de aynı. Self-Organizing Mühendisliği öneren kişi de aynı. Hangisi önceydi ama tam orasını hatırlamıyorum. Herhalde SOM daha önce, LVQ daha sonra.
+
+51
+00:11:31,379 --> 00:11:57,019
+Neyse, şimdi nasıl bir algoritma bu? Şimdi bir öğrenme oranı var. Peki, bir maksimum eğitim sayısı var. Yani kaç epok döneceğimiz gibisinden bunu düşünebiliriz. C, betimleyici vektör sayısı. Yani bizim elimizde, ne der ona, biz yeni vektör edeceğiz, kırmızı noktaları ediyoruz. O an kaç tane olacaklar? Ondan bahsediyor.
+
+52
+00:11:57,844 --> 00:12:20,364
+Betimleyici vektörler işte nü'lerle burada ifade edilmiş. Nü 1'i 2'ye kadar. X eğitim datasından bir örnek. Peki. SX, X vektörün ait olduğu ya da betimlediği sınıfı gösteriyor. Yani S onun sınıfını gösteriyor. Peki. Ne yapıyormuş burada bu algoritma?
+
+53
+00:12:21,460 --> 00:12:27,460
+Birinci adım da ilk değerleri, atamaları gerçekleştiriyor.
+
+54
+00:12:27,615 --> 00:12:34,015
+Initialization kısmı bir öğrenme oranı kullanıcı muhtemelen seçecek. Maksimum eğitim sayısında kullanıcı seçecek.
+
+55
+00:12:36,015 --> 00:12:42,755
+Sentroidlerin ilk değerlerini yine bir ilklendirme prosedürü gerçekleştirmeniz gerekiyor.
+
+56
+00:12:42,755 --> 00:12:45,995
+Yani kırmızı noktaları bir yerlerden başlatmanız gerekiyor. Aynen şey benziyor.
+
+57
+00:12:46,096 --> 00:12:50,795
+Yapay sınavlarındaki ilk veyitlerin belirlenmesine denizliyorum.
+
+58
+00:12:51,604 --> 00:13:14,624
+İlk atamaları yaptık. Peki, daha sonra bu işlemleri en defa tekrar edeceğiz. Ne yapacakmışız? X eğitim datasına bir tane eğitim datası aldık. Bir tane örnek aldık. Bu, X'e en yakın betimleyici vektörü buluyor. Şimdi bu X'e en yakın betimleyici vektörü bulmak dediğimiz şey, yani X bir nokta, yani şöyle bir şey düşünün. Mesela ben şurada bir nokta olsam.
+
+59
+00:13:20,820 --> 00:13:37,440
+Mesela şurada bir nokta olsam ben, bu noktaya en yakın kırmızı nokta hangisi? İşte şu olacak, değil mi? Bu nokta olacak. Bu noktayı bulmaktan bahsetmiyorum. Tamam mı?
+
+60
+00:13:42,899 --> 00:13:44,235
+Peki, buldum.
+
+61
+00:13:44,403 --> 00:14:06,583
+Arkmin ne yapıyor? Aslında bu sol, yani min'in içerisindeki, şuradaki kısmın minimum değeri sağlayan j'sini bulmaya çalışıyor. Arkmin'i bu şekilde okuyabilirsiniz. Bir argüman olacak, yani j indisini bulacak. Bu j indisinin özelliği şu, bu içerideki kısmı minimum yapıyor. Onu böyle okuyabilirsiniz.
+
+62
+00:14:12,403 --> 00:14:30,363
+En yakın olanını buldum. K. K indis. Yani nu K dediğimiz şey bizim mevcut elimizdeki örneği en yakın vektör o an için. Peki nu K'nın güncellenini bulduk en yakını. Şimdi bunu güncelleyeceğiz.
+
+63
+00:14:30,363 --> 00:14:39,183
+Şimdi güncelleme için şöyle bir şey yapmamız gerekiyor. Güncelleme şöyle. Eğer ki benim bu X örneğimiyle, X örneğimin sınıfıyla.
+
+64
+00:14:39,860 --> 00:14:51,460
+Benim bu betimleyici vektörümün sınıfı aynı ise, o zaman ben nüyü ödüllendiriyorum. Aferin diyorum. İyi yaptın. Seni bu x'e yaklaştıracağım.
+
+65
+00:14:53,440 --> 00:15:01,500
+Nüyü x'e doğru yaklaştırma. Seçilen nüyü. Eğer yanlışsa, yani o sınıfı temsil etmemesi gerekiyorsa, o durumda yanlış bir şey yaptı.
+
+66
+00:15:01,600 --> 00:15:06,260
+Yani bunu o zaman ne yapmam lazım? Bir sonrakinde gelmesin. Bir sonrakinde bu seçilmesin diye.
+
+67
+00:15:06,740 --> 00:15:23,580
+Yani X bir daha geldiğinde aynı nüykanlığı seçilmesini engellemek istiyorum bu sefer. Engellemek için ne yapmam lazım? Nüykayı bu ise uzaklaştırmam lazım. Şurada yaptığımız işlem aslında bir tamamen bir yaklaştırma ve uzaklaştırma işlemi. Şunu şurada görebilirsiniz.
+
+68
+00:15:25,480 --> 00:15:33,740
+Bakayım. Şurada nasıl gösterebilirim? Ödüllendirme. Mesela işte şununla mevcut durum bu. Mesela diyelim ki bu X'e en yakın bu çıktı.
+
+69
+00:15:34,292 --> 00:15:42,972
+Şu X'e en yakın örnek şu çıktığını düşünelim. Bu örneği yaklaştırıyorum. Bakın bu tarafa göre. Eğer ki...
+
+70
+00:15:42,975 --> 00:15:51,575
+Bu çıkan şeyle, tabii ikisi de bunun sınıfı aynıysa, eğer ikisi de bunun sınıfı farklıysa birbirinden, bu durumda bunu buradan ne yapacağım? Uzaklaşmamak.
+
+71
+00:15:51,675 --> 00:15:58,015
+İkisi mesela gri olsun, gri sınıfı ifade ediyorsun. Kazanan vektör ise siyah sınıfı ifade ediyorsun.
+
+72
+00:15:58,015 --> 00:16:06,075
+O zaman bu siyah sınıfta olduğu için bunu uzaklaştıracağım ki bir daha geldiğinde bu değil de başka bir nü seçilirsin.
+
+73
+00:16:06,315 --> 00:16:09,735
+Tamam mı? Yaptığımız şey aslında bu ödülleri, cezalandırmak.
+
+74
+00:16:09,919 --> 00:16:30,919
+Dolayısıyla algoritmada başlangıçta, burada çok da belli olmuyor aslında ama, şuradaki nülerin her birinin bir de neyini seviyormeniz gerekiyor, hangi sınıfı temsil edeceğini de en baştan söylemeniz gerekiyor. Yani başlangıçta, en başta öyle söyleyelim, belli değerler seçiyorsunuz, bunlar benim nülerin diyorsunuz, daha sonra bu nülerin de sınıflar atıyorsunuz.
+
+75
+00:16:34,131 --> 00:16:53,991
+Şu sınıfı temsil etsin. Şu nüyler, şu sınıfı. Bunlar rastgele atamalar. Ama tabii şöyle bir şey yapmaz, makul. Yani atıyorum sınıf dağılımını biliyorsunuzdur. Data'nın sınıf dağılımını, elinize eğitim kimisi var çünkü. Buna uygun bir oranda dağıtım yapmak makul bir şey olacaktır.
+
+76
+00:17:01,139 --> 00:17:13,139
+O kadar fazla olmalılar. Ya da şöyle durumlar da olabilir. Şey azsa, sınıflar dengesizse...
+
+77
+00:17:13,236 --> 00:17:22,356
+Bu durumda biraz dengeli hale getirmek istiyorsanız, belki az olan sınıfa daha fazla nü atayabilirsiniz.
+
+78
+00:17:22,636 --> 00:17:27,376
+Şey, oranını değiştirebilirsiniz. Veri hükümesindeki örnek sayısı oranını değiştirebilirsiniz o şekilde.
+
+79
+00:17:28,096 --> 00:17:35,756
+Yani ne bileyim, yüze ondu mesela. Yüze ondu. Yani yüz tane bir sınıftan örnek var, on tane de öteki sınıftan örnek var.
+
+80
+00:17:35,756 --> 00:17:40,756
+İkinci sınıftan örnek olsun. İkinci sınıftan mesela beş tane seçip, birinci sınıftan da...
+
+81
+00:17:41,236 --> 00:18:00,236
+Beş tane seçebilirsiniz. Dolayısıyla o zaman şey gibi olmuş olacak. Eğitim üniversitesindeki sınıflar ne eşit oranlıymış gibi olacak. Böyle şeyler yapmak mümkün. Her zaman işe yarar yaramaz. Burası ayrı bir hikaye. Ama sınıf dağılımlarını değiştirmek için bu tarz bir algoritmayı kullanmak...
+
+82
+00:18:01,011 --> 00:18:18,132
+Bu şekilde kullanabilirsiniz. Peki, şimdi dolayısıyla aslında Learning Vector Quantization'ın başlangıçları rastgele bir vektörlerle başlayıp zaman içerisinde bu vektörleri bizim eğitim kümemizin temsilcileri, temsilci vektörleri haline getiriyor.
+
+83
+00:18:18,132 --> 00:18:24,132
+Ve algoritması dediğim gibi oldukça basit, oldukça keyifli dedi. Yani kodlaması falan da çok pozitif, öyle söyleyeyim.
+
+84
+00:18:30,579 --> 00:18:45,839
+Evet, burada tabii ileride karşınıza çıkabilecek şöyle bir şeyden de bahsediyoruz. Kami'lisi de aynı şey, geçerli.
+
+85
+00:18:46,483 --> 00:18:58,403
+Hani başlangıçta rastgele bir atama yapıyorsunuz ya, bu başlangıçta rastgele bir atama yaptığınızda, bu rastgele bir atamadan dolayı bazı betimleyici vektörleriniz ya da onları centroid falan da denebiliyor.
+
+86
+00:18:59,347 --> 00:19:13,927
+Onlar datanın hiç bulunmadığı yerlerden seçilmiş olabilirler, denk gelmiş olabilirler. Bu durumda hiçbir örneğe onlar yakın olamayacakları için ne uzaklaşırlar ne yaklaşırlar.
+
+87
+00:19:13,927 --> 00:19:27,347
+Yani şu güncelleme işine dahil olabilmesi için bakın, bir nü'nün güncelleme işine dahil olabilmesi için seçilmiş olması lazım. Yani bir örnek için diğer bütün örneklere, diğer bütün bitimleyici vektörlere göre o örneğe...
+
+88
+00:19:27,347 --> 00:19:49,748
+Eğer bunu hiç başaramıyorsa, yani herkesten uzak bir şeyse, bu durumda bu ne olmayacak? Hiçbir şekilde güncellenmek. Güncellenmedikçe orada kalacak. Bu durumda da ölü bir betimleci vektör olacak. Yani gereksiz, hiçbir şekilde bir işe yaramayacak. Dolayısıyla bu problemi çözmek için genelde şöyle bir şey yapılır.
+
+89
+00:19:51,028 --> 00:19:59,768
+Betimleyici vektörlerin mevcut ilk değerlerini var olan mevcut örneklerden seçerek atarsınız.
+
+90
+00:20:00,148 --> 00:20:07,768
+Ki en azından ölünün, yani hiç hareket etmeme olasını azaltalım.
+
+91
+00:20:08,079 --> 00:20:31,819
+Tabii aynı sınıftan bir örnekle o noktayı belirlediğinizde o örnek için en yakın örnek kendisi olacak. O durumda aradaki fark sıfır olacağından dolayı hiçbir şekilde şey olmayacak. Güncellenmeyecek o örnek için. Ama başka örnekler için tabii güncelleme geleceğinden dolayı ondan daha sonraki adımlar da ayrılacak vesaire.
+
+92
+00:20:33,907 --> 00:20:36,907
+Şöyle bir şey sorsam size, mesela...
+
+93
+00:20:42,451 --> 00:20:44,572
+Şöyle bir verişmeniz olsa mesela.
+
+94
+00:21:45,875 --> 00:21:49,336
+Mesela böyle bir hüküme olsa benim. İki sınavları bir hükümesin. Tamam mı?
+
+95
+00:21:49,875 --> 00:21:54,516
+Ve ben iki tane sentroid belirlemeye kalksam bu algoritma sentroid derinden yol tuttur.
+
+96
+00:21:54,576 --> 00:22:00,096
+Yani bir tane sentroid şey olacak. Kırmızılar için bir sentroid olacak. Bir tanesi yeşiller için bir sentroid olacak.
+
+97
+00:22:00,819 --> 00:22:22,299
+Kırmızı örneğin o sentrol nereye gider? Nerede oluşur sizce? Oluşur derken rastgele bir yere de atadınız. Yani aslında rastgele atanmasını da şöyle bir şey yapalım. Kafamızı birazcık, nasıl yürüyor, canlandırmak için şey olabilir. Mesela şöyle bir şey düşünün. Bir örneğe olsun, bunu biraz daha farklı bir şeye sokalım. Bunu aslında şey yapalım.
+
+98
+00:22:23,879 --> 00:22:27,240
+Olsun bu, bir dakika. Başka bir şekilde olsun.
+
+99
+00:22:28,180 --> 00:22:43,180
+Yıldız olur. Yıldız falan değil. Tamam. Bir tane de bu yıldızdan bir tane daha yapacağım. Ama bu arkadaş da kırmızı olsun. Tamam.
+
+100
+00:22:43,180 --> 00:22:50,155
+Şimdi ben başlangıçta bunları rastgele bir şekilde atıyorum tamam mı? Mesela bunu buraya atamışım, bunu da...
+
+101
+00:22:50,324 --> 00:23:07,543
+Buraya atamışım. Diyelim ki, tamam rastgele atadım. Şimdi bakın, örnekler teker teker gelecekler. Mesela şimdi bu örnek geldi diyelim ki bu örnek için. Bu örnek için en yakın olan hangisi? Bu değil mi? Şu olan. Peki bunların aynı sınıfını temsil ediyorlar.
+
+102
+00:23:10,324 --> 00:23:33,224
+Hayır, değil mi? Yani bunu sınıflandırmak için iyi bir şey değil. O zaman bunu ne yapacak bundan dolayı? İtecek. Ne yönde? Bakın kendisiyle olan, yani şu yönde itecek. O yaptığımız şeyi düşünürseniz, bakayım. Şöyle ikisini aynı doğrultuya getirmeye çalıştım. Şu yönde itecek şeyi.
+
+103
+00:23:33,632 --> 00:23:51,332
+Çiz yıldızı, bu yönde yetecek. Peki. Bu geldi, bununla yaptık. Peki bir sonraki örnek diyelim ki mesela şu geldi. Bunun için ne oldu? Yine bu en yakın. Dolayısıyla bu sefer bunu şu doğrultuda yetecek bakalım.
+
+104
+00:23:56,180 --> 00:24:07,115
+Şu doğrultuda itecek buna. Tamam. Şöyle itti buna. Sonra diyelim ki mesela bu örnek geldi. Bu örnek için...
+
+105
+00:24:07,539 --> 00:24:29,859
+En yakın ne olacak? Bu. O zaman bunun aynı sınıfı değil. O zaman bu da ne yapacak? Bu sefer şu doğrultuda bunu itecek, şöyle itecek. Kendisini uzaklaştıracak. Sonra diyelim ki bu geldi. Bu da bunu kendi doğrultuda şu şekilde itecek. İtmeye devam ediyorlar. Diyelim ki mesela bu geldi.
+
+106
+00:24:30,387 --> 00:24:52,587
+Buna en yakın şu anda hala bu. O zaman bunu ne yapacak? İtecek yine. Bu sefer şu doğru otur edecek. Şöyle ileriye doğru itti. Sonra bu geldi mesela. Buna en yakın hangisi? Mesela bu hala. O zaman bunu ne yapacak? Yine itecek. Hala itiliyorlar. Tamam mı?
+
+107
+00:24:53,183 --> 00:25:18,423
+Şimdi bunlar giderek buradan göreceğiniz gibi bu tarafa doğru gidiyorlar. Şimdi belli bir noktadan sonra şey olmaya başlayacak artık. Bu tarafın kazananı bu olmaya başlayacak. Belli bir noktadan sonra tahmin edebileceğiniz gibi bu yavaş yavaş yavaş işte bir şekilde bunları algoritmayı çalıştırıp gözlemleyebilirsiniz oldukça keyifli dediğim gibi. Bunun da yavaş bir şekilde şunların ortasına doğru geleceğini göreceksiniz. Tamam mı?
+
+108
+00:25:19,347 --> 00:25:35,707
+Tam aşağı yukarı şöyle bir ortalamasından gelecek. Bu da bunların ortalamasına, kabaca gelecek. İki tane yaparsanız, iki tane yaparsanız, bir tanesi buraya gelecek belki kırmızı, bir tanesi buraya gelecek. İki tane yeşilde belki bir tanesi burada olacak, bir tanesi şurada duracaklar.
+
+109
+00:25:38,355 --> 00:25:55,195
+Bu tabii her zaman mükemmel türetime ulaşacak mı? Yok. Çok şey değil. Yani şöyle bir durumla başlarsa iş, yani veri hükümesine bağlı aslında. Lokal bir yerlere takılabilir mi Walgurt'ın? Evet, global bir çözüm yok çünkü Walgurt'ın. Pardon.
+
+110
+00:26:03,988 --> 00:26:23,888
+Mesela diyelim ki bir tane yeşil burada, bir tane kırmızı burada böyle başladı. Bu muhtemelen işin sonunda bu burada kalacaktır, bu da burada bir yerlerde olacaktır. Çünkü bu tarafa bunun, pardon iki tane de olsa öyle söyleyeyim. İki tane de olsa, yani şu taraftan başlarsa bunlar.
+
+111
+00:26:24,980 --> 00:26:52,779
+Bunlar bunları çekecekler. Bunlar da çekecekler. İkisi de kendilerine doğru çekmeye başlayacaklar bunlar. Ama şurayı aşabilmesi için bunların bakın. Şu noktayı aşabilmesi için. Bu da bir şey var. Onları iten bir kısım var görüyor musunuz? İten bir kuvvet var. Dolayısıyla buradan bir tanesinin burayı aşıp yani hem bunlar kendine doğru çekiyor bakın. Hem bunlar kendine doğru çekiyor hem de bunlar itiyorlar. Bakalım buradaki bir örneği. Hem bunun şuradaki.
+
+112
+00:26:52,980 --> 00:27:02,980
+Bu taraftakiler kendilerine doğru çekiyor. Bu taraftakiler kendilerinden uzaklaştırmaya çalışıyor. Dolayısıyla burada bu iki gücü aşıp da buradan bu tarafa doğru gitmeyesi...
+
+113
+00:27:03,380 --> 00:27:27,920
+Hiç de kolay bir şey olmayacak. Büyük ihtimalle böyle bir initial pozisyondan başlatırsanız, mesela şu andaki meclisli bir initial pozisyondan başlatırsanız, muhtemelen olacak şey bu tamam. Bunda bir sıkıntı olmayacaktır ama bunlar çok çok büyük ihtimalle buraya takılacaklardır. Burada kalacaklardır. Yani bu tarafa doğru gidemeyecektir. Onu demeye çalışıyorum. Tamam. Dolayısıyla böyle durumda olabilir mi? Oluşabilir mi? Evet, oluşabilir.
+
+114
+00:27:29,428 --> 00:27:31,488
+Anlaşıldı mı arkadaşlar bu anlattığım?
+
+115
+00:27:34,408 --> 00:27:35,448
+Anlaşıldı hocam.
+
+116
+00:27:39,539 --> 00:27:42,019
+Peki, devam edelim öyleyse.
+
+117
+00:27:50,996 --> 00:27:54,456
+Bir soru. El ve iki ne zaman lineal doğrusak karar sınır üretir?
+
+118
+00:27:54,696 --> 00:27:56,816
+Hadi bakalım. Size soru.
+
+119
+00:28:04,084 --> 00:28:09,084
+Evet, elbette ne zaman yine her şeyden doğrusu artık arasında ölemiş.
+
+120
+00:28:15,155 --> 00:28:15,475
+Evet.
+
+121
+00:28:21,907 --> 00:28:27,907
+Dürüm bir çirgi olacak kararsın. Nasıl bir durumda oluşur el vekula?
+
+122
+00:28:47,476 --> 00:28:56,296
+Düşünürken vermi soru sormuş. Önce cevap vereyim. Uzaklaştırma miktarı öğrenme kaksiyası. Şurada verdiğimiz aslında algoritmadaki şey.
+
+123
+00:28:56,296 --> 00:28:59,296
+Nerede o? Şuradaki algoritmadaki...
+
+124
+00:29:01,107 --> 00:29:28,287
+Şu ifade. Bu kullanıcı bunu söylüyor. Evet. Ama yön hayır. Yani yön demin anlattığım gibi hani o iki centroid ile örneği birleştiren doğrunun üzerinde yaklaştırma ya da uzaklaştırma oluyor. Yani şuradaki gibi. Tamam mı? Yani centroid ile o X örneğini birleştiren doğrunun üzerinde yaklaştırma ya da uzaklaştırma oluyor bu ikide.
+
+125
+00:29:29,683 --> 00:29:38,244
+Ne kadar uzaklaştırıp yaklaştıracağımız ise dediğim gibi öğrenmek ad sayısı ile alakalı.
+
+126
+00:29:41,748 --> 00:29:44,827
+Peki, evet soruyu tekrarlıyorum. Ne zaman dinler kararsın?
+
+127
+00:29:44,907 --> 00:29:46,048
+Evinciyiden.
+
+128
+00:29:58,612 --> 00:30:07,612
+Şöyle bir şey düşünelim arkadaşlar. Elimde mesela bu olsa, bir de şu olsa. Bu ikisinin olduğunu düşünürsün sanki.
+
+129
+00:30:09,612 --> 00:30:15,596
+İki tane centrate var. Nasıl bir karar sınırı çıkar burada?
+
+130
+00:30:22,771 --> 00:30:27,191
+Yani yeni gelen test örneklerini sınıflandıracaksınız. Bu ikisinin yakınlıklarına göre.
+
+131
+00:30:28,771 --> 00:30:31,771
+Tamam. Nasıl bir karar sınırı çıkar ortaya?
+
+132
+00:30:36,468 --> 00:30:39,548
+Ortalarından bir çizgi olur herhalde.
+
+133
+00:30:40,688 --> 00:30:44,667
+Ortalarından bir çizgi? Ortalarından bir çizgi böyle bir şey mi?
+
+134
+00:30:45,367 --> 00:30:47,567
+Yok dikey. Ona 90 derece.
+
+135
+00:30:47,567 --> 00:30:54,567
+Buna dik değil mi? Tamam. Şuna dik 90 derece büyük bir şey. Şöyle bir şöyle. Aşağıya kadar.
+
+136
+00:30:58,548 --> 00:31:01,867
+Deminki o çizdiğimiz çizgi dik bir...
+
+137
+00:31:04,187 --> 00:31:06,988
+Tam ortasından geçecek. Şöyle bir şey özetledim.
+
+138
+00:31:07,248 --> 00:31:08,528
+Bu çizginin
+
+139
+00:31:09,048 --> 00:31:14,667
+üst kısmındakiler için, noktalar için, yeşil altındakiler için. Kırmızı sınıfı söyleyecek.
+
+140
+00:31:14,927 --> 00:31:18,508
+Çünkü sınıflandırma nasıl yapılıyor? Bir nokta
+
+141
+00:31:20,048 --> 00:31:22,867
+bu iki tane sentralite hangisine yakalasa onu sınıflandırmıyor.
+
+142
+00:31:24,407 --> 00:31:24,844
+Tamam.
+
+143
+00:31:25,523 --> 00:31:32,363
+Dolayısıyla iki tane sentralitiniz varsa, linear bir karar sınırı üretirsiniz. Kesinlikle.
+
+144
+00:31:32,363 --> 00:31:39,563
+Bu böyle olsa mesela bu sefer bu çizgi yine çizgi olacak.
+
+145
+00:31:39,563 --> 00:31:43,003
+Peki...
+
+146
+00:31:46,355 --> 00:31:51,355
+Şöyle olsan alalım. Nasıl bir yapıldığını öngörürsünüz.
+
+147
+00:31:55,667 --> 00:31:57,667
+Nasıl bir karar sınırı oluşuyor burada?
+
+148
+00:32:05,748 --> 00:32:07,108
+İki dakika düşünün bunu bakalım.
+
+149
+00:32:10,567 --> 00:32:11,468
+Bekliyorum.
+
+150
+00:33:26,195 --> 00:33:27,395
+Evet, fikri olan?
+
+151
+00:33:29,395 --> 00:33:46,355
+Hocam, az önceki gibi iki tane karşı karşıyayken 90 derecelik dikey. Ondan sonra ikisinde de olur. Hem kırmızıyla, yukarıdaki kırmızıyla onun arasında hem aşağıdaki kırmızıyla. O şekilde bir sınır oluşur.
+
+152
+00:33:47,556 --> 00:33:48,895
+Evet, şöyle bir şey olacaktır.
+
+153
+00:33:56,147 --> 00:33:56,907
+Tamam, şey komple.
+
+154
+00:34:11,188 --> 00:34:12,887
+Evet, şuna bir azam bir şuruk.
+
+155
+00:34:18,036 --> 00:34:43,076
+Bu ne demek? Şöyle bir şey aslında. Bunların ne o? Veronoin bölgelerini çizerek aslında bu gerçekleştirilebiliyor. Şuradaki noktalar buna daha yakınlar. Buradaki noktalar buna daha yakınlar. Buradaki noktalar buna daha yakınlar. Dolayısıyla herhangi bir nokta, mesela şimdi şu noktayı düşünelim. Bu nokta.
+
+156
+00:34:43,456 --> 00:35:09,416
+Yeşil'e daha yakın, buradaki nokta da yeşil daha yakın. Buradakilerin hepsi yeşil'e daha yakınlar bu ikisine göre ama bu taraftakiler ya buna ya buna daha yakın. Şeklinde sınırlar oluşacak. Aynı şey Karnaris-Neubry için de düşünebilirsiniz. Karnaris-Neubry'de de böyle bir rükmesi olduğunda aynı şey. Karnaris-Neubry'ın ve LVQ'nun test süreçleri aynı aslında. Test süreçleri bakın.
+
+157
+00:35:10,036 --> 00:35:18,056
+Bir tanesi dediğim gibi eğitim örneğinin, eğitim kümesinin tamamını kullanayım. Diğerinde ise eğitim örneğinin tamamını değil, onun bir kısmını kullanayım.
+
+158
+00:35:20,456 --> 00:35:29,336
+Peki. Şu ödüllendirme cezamdır. Mekanizması da fena bir mekanizma değil. Peki.
+
+159
+00:35:30,483 --> 00:35:56,483
+Şimdi elimizde böyle bir verikümesi olsa burada neler yapabiliriz? Burada lineer bir karar sınırı çizmek mümkün gibi gözüküyor. Çok büyük hatalar olmaz. El ve IQ gibisinden bir şey de burada çalışabilir. Yapay sınarda çalışır. Ama hani burası lineer sınıflandırma için çok sıkıntılı bir durum değil mesela bu verikümesi. Ama bu öyle değil. Burada işte bir lineer bir...
+
+160
+00:35:57,492 --> 00:36:13,412
+Sınıflandırma yapmanız mümkün değil. O yüzden daha esnek algoritmalara ihtiyacınız var. Esnek dediğimiz zaman da şurada gördüklerimizin hepsi zaten yeterince esnekler. LVQ şey kadar esnek değil tabii ki. Ne derler ona.
+
+161
+00:36:15,912 --> 00:36:24,372
+Kandemiz ne kadar esnek değil. Çünkü eğitim kümesi üzerinde %100 başarıya sahip değil. LVQ bakın. Çünkü eğitim kümesinin önlerinden hepsini almıyoruz.
+
+162
+00:36:25,235 --> 00:36:32,916
+Orduğunları kullanarak vektimleyici vektörler oluşturuyoruz ve vektimleyici vektörlere göre sınıflandırıyoruz.
+
+163
+00:36:32,916 --> 00:36:39,615
+Dolayısıyla eğitim kimesi üzerindeki performansı %100 değil. Ne zaman şey olur %100'e yaklaşır?
+
+164
+00:36:41,036 --> 00:36:50,315
+Centroid sayısı örnek sayısına doğru yaklaştıkça. Ne kadar çok centroidiniz olursa.
+
+165
+00:36:51,860 --> 00:37:05,500
+Bu kadar uzayı daha iyi şekilde temsil edebilirsiniz. Gereksiz temsiller de onun içerisine girebilirler ama eğitim kümesindeki performansınız giderek artar.
+
+166
+00:37:05,579 --> 00:37:13,119
+Sentrolisyenini arttırdınız müddetçe. Ama tabii bizi ilgilendiren şey eğitim kümesindeki performans değil aslında.
+
+167
+00:37:13,119 --> 00:37:16,960
+Test kümesindeki performans. Burada çeşitli veri kümeler üzerinde neler yapabilirsiniz.
+
+168
+00:37:17,907 --> 00:37:22,907
+Şimdi bu noktada eğitim kümesinin üzerindeki performans bizi...
+
+169
+00:37:26,771 --> 00:37:38,612
+İfade etmiyor ile alakalı bir hikaye. Hikaye değil de yüzünce deneyi.
+
+170
+00:37:38,612 --> 00:37:54,072
+Şimdi şöyle bir şey yapıyorsunuz. 1024 tane kişi seçiyorsunuz. Tamam mı? Bakın. Rakamın önemi var.
+
+171
+00:37:54,547 --> 00:37:56,847
+2 üzeri 10 olması ile alakalı.
+
+172
+00:38:00,851 --> 00:38:02,851
+Şimdi diyelim ki başlangıçta...
+
+173
+00:38:08,403 --> 00:38:17,344
+1024 kişiyi seçtiniz. Tamam mı? Seçtik. Bu kişilerin e-maillerini aldınız. E-mailleri var. Yani 1024 kişinin e-maili var.
+
+174
+00:38:36,275 --> 00:38:37,315
+X eleyecek.
+
+175
+00:38:41,715 --> 00:38:46,315
+Bu 512'sine bunu gönderiyorsunuz.
+
+176
+00:38:53,972 --> 00:38:56,372
+5-12 sene de neyi gönderiyorsunuz sizce?
+
+177
+00:39:04,275 --> 00:39:05,595
+Düşeceği gendemiyorsunuz.
+
+178
+00:39:08,851 --> 00:39:10,507
+Tamam, mis bulutakarız.
+
+179
+00:39:15,507 --> 00:39:17,807
+Bu, birinci günü yaptığımız iş.
+
+180
+00:39:23,891 --> 00:39:25,131
+Sesim geliyor mi arkadaşlar?
+
+181
+00:39:27,251 --> 00:39:28,391
+Geliyor hocam.
+
+182
+00:39:29,652 --> 00:39:29,992
+Peki.
+
+183
+00:39:34,963 --> 00:40:00,423
+Gönderdik. Ertesi gün oldu. Ne oldu? Diyelim ki x hisse senedi düştü. Şu 512 artık gitti bu 512. Çünkü onları yükselecek tabi ki ama düştü. Bu 512 gitti. Geriye kaldı bu 512 kişimiz.
+
+184
+00:40:01,427 --> 00:40:18,307
+Bunlar da durum şu. Biz onlara bir mail attık. Dedik ki yarın X listesine düşecektir ve gerçekten de düştü. Şimdi bu 512'nin ikinci güne geldik. Yani birinci günde elimizde aslında şöyle diyoruz.
+
+185
+00:40:20,688 --> 00:40:28,387
+Kişi var. Birinci günde elimizde bunlar. Şimdi ikinci günde elimizde kaç kişi kaldı? İşimize yarayacak.
+
+186
+00:40:29,588 --> 00:40:40,588
+512'ye, bu 512'ye, şöyle yaparsam ben koruyacağım. Bu 512 kişiliğe şöyle bir güzellik yapacağız.
+
+187
+00:40:42,588 --> 00:40:49,588
+Bunların 256 tanesine, bunu diyeceğiz, bunu diyeceğiz. Tamam.
+
+188
+00:40:56,436 --> 00:41:03,036
+Ve ha, neden de diyelim ki mesela bu sefer de yükseldi. O zaman şu 256'e gitti.
+
+189
+00:41:08,403 --> 00:41:14,403
+Sonra üçüncü gün. Elimizde 256 kişi var. Bu 256 kişinin...
+
+190
+00:41:18,132 --> 00:41:29,132
+128'le. Yarın işte şöyle bir şey olacak diyoruz. Yarın yarısına da şöyle bir şey olacak diyoruz. Diyelim ki o gün de düştü.
+
+191
+00:41:31,132 --> 00:41:36,132
+Şimdi nereye varacağını düşünün. Şöyle diyelim.
+
+192
+00:41:40,148 --> 00:41:49,307
+Onun böyle tık tık şeklinde anlayın. 10. gün diyelim ve bir kişi var elimizde. Bu bir kişinin özelliğine arkadaşlar, bana söyler misiniz?
+
+193
+00:42:16,403 --> 00:42:18,403
+Ona söylediğim sadece gerçekleşti hocam.
+
+194
+00:42:19,304 --> 00:42:21,304
+On gün boyunca hem de.
+
+195
+00:42:23,903 --> 00:42:24,903
+Değil mi?
+
+196
+00:42:25,804 --> 00:42:31,203
+On gün boyunca ona söylediğim, önceden bir şey söyledik, doğru çıktı, doğru çıktı, doğru çıktı.
+
+197
+00:42:31,203 --> 00:42:35,804
+On gün boyunca ona söylediğimiz her şey doğru çıktı. Artık bu kişi size ne yapacaktır?
+
+198
+00:42:39,443 --> 00:42:40,323
+Güvenecektir.
+
+199
+00:42:41,224 --> 00:42:44,543
+Güvenecektir, aynen öyle. Peki güvenmeli misiniz ona?
+
+200
+00:42:49,844 --> 00:42:53,344
+Yani yarın için tahminin tutma olasılığı ne?
+
+201
+00:42:54,224 --> 00:42:55,764
+Yüzde elli.
+
+202
+00:42:55,784 --> 00:43:14,003
+Yüzde elli. Aslında güvenmek için hiçbir sebebiniz yok. Yani dışarıdan bakıyorsanız ama tabii. İçeriden bakıyorsanız çok sebebiniz var. Çünkü on gün boyunca adam size bir şey dedi ve dediği çıktı. Bakın on gün boyunca. Bunu 1024 değil de daha yüksek kişiyle başlatırsanız daha uzun süreçler elde edebilirsiniz aslında değil mi?
+
+203
+00:43:15,443 --> 00:43:30,364
+Dolayısıyla buradaki mevzumuz, arka taraftaki süreç kritik. Bunu şey yapmak gerekiyor, biliyor olmak gerekiyor.
+
+204
+00:43:30,364 --> 00:43:37,903
+Biz bunu bilebilir misiniz? Ayrı bu üçkağıtçılık tekniği, o manada bunu yapın, örnek olsun diyebilirim.
+
+205
+00:43:41,331 --> 00:43:46,971
+Sayılarla dediğim gibi oynamayı bilen kişiler bu tarz şeyleri yapabilirler.
+
+206
+00:43:46,971 --> 00:43:51,771
+Neyse ama hikayemiz aslında burada şu kabaca.
+
+207
+00:43:57,876 --> 00:44:02,876
+Eğitim kümesi üzerinde bu Bikifi için yaptığımız...
+
+208
+00:44:07,219 --> 00:44:24,479
+Testler, eğitim kümesi üzerine yapmış olduğumuz testler, o bir kişi için %100 eğitim kümesi üzerinde. Ama test kümesinde, gerçekten ki sizinle birlikte siz bu adama 11. günün tahminini bana söylediği para vereceksiniz ya mesela.
+
+209
+00:44:25,427 --> 00:44:35,688
+O durum için eğitim kümesinde %100 olan şey, tahminleyicinin performansı o günden sonrası için hiçbir şey ifade etmiyor.
+
+210
+00:44:38,367 --> 00:44:46,528
+Eğitim kümesinde %100 başarı sağlamış olması test kümesi üzerinde bize hiçbir şey söylemiyor.
+
+211
+00:44:48,884 --> 00:44:57,584
+Çünkü tamamen rastgele sallıyor. Şu andaki şeye bakarsak yapıyor ama tutmuş. Tutabilir mi? Evet, tutabilir. Böyle bir olasılık var mı? Var. Tamam mı?
+
+212
+00:44:58,064 --> 00:45:08,304
+Dolayısıyla eğitim kümesindeki performansa bakarak test kümesindeki performansı ne yapmamanız lazım? Ona bağlı bir değer olarak oluşturmamanız gerekir.
+
+213
+00:45:08,851 --> 00:45:33,751
+Eğitim ve test performansları ürünlerle uyumluysa bu iyi bir şey. Bu kötü bir şey değil. Beklenen şey bu. Neden beklenen şey bu? Aslında bütün makine öğrenmesi algoritmalarının temelinde sahip oldukları varsayım şu. Geçmiş gelecekten çok farklı değildir.
+
+214
+00:45:33,751 --> 00:45:36,351
+Ya da gelecek geçmişten çok farklı değildir.
+
+215
+00:45:37,012 --> 00:45:46,491
+Çünkü biz bir eğitim kümesi kullanıyoruz ve bu eğitim kümesine göre bir model oluşturuyoruz ve o modeli teste çalıştıracağız.
+
+216
+00:45:47,711 --> 00:45:56,652
+Dolayısıyla eğitim kümenizindeki örneklerle, test kümenizindeki örneklerlerlerinden çok farklı varsa zaten oluşturduğunuz modelin bir şey yapma şansı yok.
+
+217
+00:45:58,164 --> 00:46:24,704
+Dolayısıyla temel varsayımımız aslında bütün makine öğrenmesi algoritmanında ya da bütün modelleme yaklaşımlarında öyle söyleyebilirim. Daha geniş belki bir ifade olur. Varsayımımız geleceğin geçmiş gibi olacağı. Ona benzer olacağı, böyle gideceği. Ne bileyim kırılmaların falan olmayacağı. Ya da kırılmalar oluyorsa geçmişteki gibi kırılmalar olacağı.
+
+218
+00:46:25,139 --> 00:46:38,159
+Hiç bugüne kadar görülmemiş bir pattern'ı gelecekte oluşmasını tahmin etmek o manada düşündüğünüzde makine öğrenmesi varsayımda mümkün değil. Hiç beklenmedik bir şeyin tahmin edilmesi.
+
+219
+00:46:39,668 --> 00:47:00,588
+O manada mümkün değil. Geçmişte şeyler olabilir. Belli anomaliler olmuş olabilir. O anomallere benzeyen anomalleri gelecekte de yakalama şansı var. Ama hiç görmediği, hiç farklı nedenlerden dolayı oluşan bir şey, önceden öngörmesi pek mümkün değil.
+
+220
+00:47:03,588 --> 00:47:05,927
+Diyelim ve bir ara verelim arkadaşlar.
+
+221
+00:47:17,235 --> 00:47:22,815
+11 dakika. Evet. Az sonra görüşmek üzere arkadaşlar.
+
+222
+00:58:26,483 --> 00:58:28,724
+Evet, merhaba tekrar arkadaşlar.
+
+223
+00:58:36,884 --> 00:58:38,403
+Slide geldi herhalde.
+
+224
+00:58:40,224 --> 00:58:40,564
+Dime.
+
+225
+00:58:42,284 --> 00:58:43,564
+Gözüküyor hocam.
+
+226
+00:58:44,124 --> 00:58:44,364
+Tamam.
+
+227
+00:58:44,364 --> 00:59:02,364
+Şimdi çapraz geçerleme, ödeninize de bundan bahsetmiştik ki bu aslında bir algoritmanın bir veri kümesinin üzerindeki performansını tahmin etmede.
+
+228
+00:59:03,572 --> 00:59:19,951
+Tek bir eğitim ve test cümlesi kullanmaya göre daha güvenli bir yol. Nasıl bir işlem gerçekleştiriyor? Tüm dasit eşit boyutlu en tane gruba bölünüyor. Daha sonra her bir grubu test için, geri kalanlarını eğitim için kullanıyorsunuz.
+
+229
+00:59:23,123 --> 00:59:36,123
+İşte burasını düşünürseniz bu işe 5 kez tekrar etmeniz gerekiyor. Yani %20'si test, %80'i eğitim olan 5 tane verikümesi oluşuyor.
+
+230
+00:59:36,123 --> 00:59:50,443
+Ve bunu gerçekleştirdiğinizde 5 tane sınıflandırma sonucu elde ediyorsunuz. Bunların ortalamasını alırsınız ya da bütün örneklerin her biri test içinde kullanılacağından dolayı, teste de yer alacağından dolayı bir kez.
+
+231
+00:59:51,411 --> 01:00:13,391
+Tam bir kez. O bütün verikümesi üzerindeki performansa direkt bakabilirsiniz. Ve bunun tahmin gücü tek bir kez eğitim test kümesi oluşturmaya göre daha güçlü bir sonuç size, daha güvenilir bir sonuç. Öyle söyleyeyim size, veriyorum.
+
+232
+01:00:15,059 --> 01:00:28,639
+Şimdi sınıflandırma algoritmalarında şey aslında burası değil de şurası belki daha kritik. Şimdi anlattığım birkaç tane algoritma vardı. Anlat önünü daha zilyon tane algoritma var.
+
+233
+01:00:29,023 --> 01:00:45,863
+Burada bir tablo var. Şu tablo da verikimleri var. Şu sütunlarda verikimleri var. Her bir, birer verikimleri var. Farklı karakteristikler ise arkadaşlar. Özellik seyrede, sınıf seyrede, örnek seyrede açısından farklı karakteristikleri var.
+
+234
+01:00:47,315 --> 01:00:59,935
+O manada benzeyenler var, benzemeyenler var vs. Aşağıda da 5 tane algoritma var. Bu 5 tane algoritma da her bir delikmesi üzerindeki performansı burada gözüküyor. 5 volt cross-validation sonuçları bunlar.
+
+235
+01:01:00,628 --> 01:01:07,548
+Ve Bolt olarak ifade edilen kısım ise o sütunda yani o bir hükümesinde en başarılı algoritmayı gösteriyor.
+
+236
+01:01:08,008 --> 01:01:11,508
+Şimdi buraya baktığımızda mesela ameliyahalelerinde en iyisi Navibas'ı'miş.
+
+237
+01:01:12,008 --> 01:01:15,508
+ANN'de en başarısı C45'miş, karar harcı algoritması.
+
+238
+01:01:16,608 --> 01:01:21,428
+1.75'de ise 3'te en başarısı Random Forest'miş, işte Dermada SBM'miş vs.
+
+239
+01:01:21,808 --> 01:01:22,828
+Ne söylüyor bu tavrı bize?
+
+240
+01:01:43,188 --> 01:01:45,188
+Nasıl yorumlarsınız bu tabloyu?
+
+241
+01:01:58,099 --> 01:02:00,539
+Hocam, tamamını genel olarak mı?
+
+242
+01:02:00,539 --> 01:02:01,539
+Evet.
+
+243
+01:02:02,539 --> 01:02:06,419
+Hocam işte, Amitya'yı da Neu Bayes daha başarılıymış.
+
+244
+01:02:07,379 --> 01:02:09,419
+O bir hükümetinde, ANN'de...
+
+245
+01:02:09,419 --> 01:02:11,979
+Onu söyledim zaten.
+
+246
+01:02:11,979 --> 01:02:13,659
+Başka nasıl yani?
+
+247
+01:02:17,364 --> 01:02:29,844
+Hocam işte burada her algoritma, veri kümesine, özellik sayısına, sınır sayısına, örnek sayısına göre farklı başvurumlar gösteriyor. Ondan dolayı daha fazla algoritma var yani. Bir sürü algoritma var.
+
+248
+01:02:31,284 --> 01:02:40,483
+Niye bir sürü algoritmamız var? Diğerlerinin hepsinden, bütün veri kümelerinde daha iyi olan bir algoritmamız yok çünkü.
+
+249
+01:02:42,708 --> 01:02:46,447
+O yüzden bu kadar çok algoritmamız hala varlığını sürdürüyor.
+
+250
+01:02:48,128 --> 01:02:52,487
+Eğer ki ben burada bir tane algoritma olsaydı ve hepsinde diğerlerini geçiyor olsaydı,
+
+251
+01:02:52,967 --> 01:02:55,168
+o durumda o algoritma zaten ne diyebilirim ben?
+
+252
+01:02:55,268 --> 01:02:58,088
+Çok başarılı ve diğerlerini hiç düşünmeyelim diyebilirim.
+
+253
+01:02:58,467 --> 01:03:00,788
+Ama öyle bir algoritman olmadığını da görüyorsunuz.
+
+254
+01:03:01,867 --> 01:03:06,387
+Şimdi bunun böyle olması da gayet doğal bir şey.
+
+255
+01:03:06,387 --> 01:03:07,987
+Şimdi ne dedik biz?
+
+256
+01:03:09,780 --> 01:03:12,539
+Bir algoritma seçmek, bir model seçmek dedik.
+
+257
+01:03:14,519 --> 01:03:18,179
+Eğer ki bir algoritmanın bir veri kümesinde başarılı olması için,
+
+258
+01:03:20,219 --> 01:03:29,980
+veri kümesinin geldiği dağılımla sizin o algoritmanın varsaydığı modelin birbiriyle uyumlu olması lazım.
+
+259
+01:03:31,099 --> 01:03:34,760
+Dolayısıyla veri kümelerinin geldiği modellerin sayısı sonsuz.
+
+260
+01:03:35,603 --> 01:03:57,384
+Sonsuz tane farklı şeye uyum sağlayan, öyle söyleyelim, uyum sağlayan tek bir model ne yapamazsınız, bulamazsınız. Dolayısıyla farklı veri hükümelerinde farklı algoritmalar diğerlerinden daha başarılı olacaklar. Ve bu yüzden bu kadar çok algoritmalar. Ne zaman hangisini seçeceğiz? Bu birazcık şey, deneme yanılma süreci.
+
+261
+01:04:03,188 --> 01:04:25,908
+Bu sebepten dolayı da makine öğrenmesi algoritmaları genelde kütüphaneler halinde kullanıcılara sunulur. Siz de ödeyledi mesela bu tarz bir şeyler yapacaksınız. Böyle bir kütüphane kullanacaksınız. Ki farklı algoritmaları bunların üzerinde deneyebilirsiniz, sonuçlarını karşılaştırabilirsiniz ve o berekümesinde hangi algoritmanın daha başarılı olduğuna dair bir şeyler söyleyebilirsiniz diye.
+
+262
+01:04:29,460 --> 01:04:48,760
+Burada bir şey kısmı var. Model karmaşıklığı ve hatayla alakalı bir grafik var. Bu grafik yakın geçmişe kadar güncelleni korudu.
+
+263
+01:04:56,500 --> 01:05:07,179
+Geçmişte de öyle olduğu biliniyor. Yapay sınavları bu grafiğe uymuyor. Bu 90'lardan beri bilinen bir durum.
+
+264
+01:05:07,179 --> 01:05:19,159
+Yani modelin karmaşıklığı arttıkça test kümesi üzerindeki performansı ne olacaktır? Belli bir zaman sonra yükselmeye başlayacaktır. Yani hatasız yükselmeye başlayacaktır.
+
+265
+01:05:22,719 --> 01:05:43,259
+Algorithmalar için geçerli. Yapay sınavları için niye geçerli olmadığı konusunda çeşitli fikirler var ama hiçbiri daha çok tatmin edici açıklamalar bize getirmiyorlar. Şuradaki şu mavi çizgi zaten bu genel olarak kabul edilen bir şey yapay sınavlar için de geçerli.
+
+266
+01:05:43,259 --> 01:05:45,079
+Yani bütün algoritmalar için de geçerli.
+
+267
+01:05:45,844 --> 01:05:56,284
+Modelin karmaşıklığı arttıkça, modeliniz ne kadar fazla parametre içermeye başladıkça bizim train datanızdaki, elinizdeki eğitim kümenizdeki hatanız sürekli düşer.
+
+268
+01:05:57,044 --> 01:06:06,684
+Ve eğer tamamen esnek, yani her türlü bir hükümetine uyum sağlayabilen bir modeliniz varsa, elinizde bir algoritmanız varsa, train hatası hatta sıfıra düşer.
+
+269
+01:06:07,987 --> 01:06:13,987
+Ama test hatası da öyle değildir. Test hatası bir yere kadar düşer ve bir yerden sonra artmaya başlar.
+
+270
+01:06:13,987 --> 01:06:34,987
+Benim bahsettiğim gibi bu yapı, Van Nires Nehepur'lar ya da Liner Regresyon, Liner Regresyon'un parametrik halleri, K-Nires Nehepur, karar ağaçları gibi algoritmanın hepsinde geçerli. Şurada gördüğünüz genel yapı.
+
+271
+01:06:35,827 --> 01:06:41,647
+Ama dediğim gibi yapay sınavları için şu şey tam olarak geçerli değil.
+
+272
+01:06:44,500 --> 01:07:05,540
+Bazı durumlarda işte şurası şöyle çıkıyor, ondan sonra şöyle yükseliyor, ondan sonra tekrar düşmeye başlıyor. Double descent falan gibisinden yapılar oluşabiliyor yapay sinir ağlarında. O yüzden bu grafiği yapay sinir ağları için doğru kabul etmek şey değil. Çok doğru değil. Ama tabii şunun için, bunu da söyleyeyim, yeterli data varsa evde.
+
+273
+01:07:06,195 --> 01:07:18,016
+Büyük miktarda data varsa, elde az miktarda data varsa yapay sinyalarda bu grafiğe uyuyor. Ama çok sayıda data varsa elinizde bu şey çok şey değil, geçerli değil.
+
+274
+01:07:19,536 --> 01:07:31,356
+Geçerli olması için iki şey birden artıyor. Yani model karmaşıklığının da arttığı ve eldeki data sayısının da arttığı durumda yapay sinyaları bu grafiğe uymuyor. Öyle söyleyebilirim.
+
+275
+01:07:32,532 --> 01:07:54,172
+Peki, şimdi bizim sınıflandırma algoritmalarıyla alakalı bakacağımız şeyler bunlardı. Şimdi kümelama algoritmalara geçeceğiz. Kümelama algoritmalara eğiticizizler, sınıf bilgisi yok zaten. Ve aslında veriyi temsil eden merkezleri bulmaya çalışıyorlar. Aynen dediğim konuştuğumuz LVQ'daki sentroidler gibi.
+
+276
+01:07:54,900 --> 01:08:03,260
+Bu küme merkezleri bulduktan sonra eldeki verileri en yakın küme merkezlerine göre kümelere ayırıyorlar.
+
+277
+01:08:03,260 --> 01:08:13,660
+Ve aslında farklı sayıdaki örnek sayısını azaltıyorlar. Bundan kümelemeyi anlatırken bahsetmiştik.
+
+278
+01:08:13,780 --> 01:08:18,480
+CSM operatörlerinden falan ya da renklerin kümelenmesinden falan bahsederken konuşmuştuk bunları.
+
+279
+01:08:21,216 --> 01:08:36,576
+Örnek sayısını azalttıkları için sıkıştırma algoritmalarının büyük bir çoğunun temelinde, öyle söyleyelim, yer alırlar. Bir quantization işlemi aslında diye düşünebilirsiniz.
+
+280
+01:08:38,016 --> 01:08:48,716
+Şimdi diyelim ki elinizde bir tane, biri özellikle 10 tane örnek içeren bir veri kümesi olsun. Bu veriyi 3 farklı veriyle temsil etmek istersek ki bunun anlamı şu demek, bu veriyi 3 tane kümeye ayır demek.
+
+281
+01:08:49,108 --> 01:09:06,288
+Mesela ben şöyle şeyler bulabilirim. Tüm merkezleri bulabilirim. Diyebilirim ki ben işte bu 12, 15 ve 12'yi temsil eden şey 12 olsun. 87 ve 67'yi temsil eden şey 77 olsun. 1, 2, 4, 5, 9'u temsil eden şey 3 olsun. Mesela böyle bir şey yapabilirim.
+
+282
+01:09:06,827 --> 01:09:13,907
+Kemenin algoritmaları bu 3 farklı verinin değerlerini bulmakta kullanılırlar. Yani şuradaki bu 12, 77 ve 3'ü ben nereden bulacağım?
+
+283
+01:09:15,444 --> 01:09:28,444
+Ve istedikleri şeyleri gerçek değerleri temsil eden değerler arasındaki farkları minimum yapmaya çalışırlar. Yani loss fonksiyonu ne aslında? Kümelenme algoritmanın loss fonksiyonu. Bir örneğin değeriyle o örneğin...
+
+284
+01:09:28,880 --> 01:09:35,920
+Dâhil olduğu küme merkezinin değeri arasındaki fark. Bu farkı ne yapmaya çalışıyorsunuz? Az yapmaya çalışıyorsunuz.
+
+285
+01:09:36,699 --> 01:09:44,840
+Şimdi mesela burası için düşünürsek, şu yukarıdaki veriler için düşünürsek, ben 12, 15 ve 13'ü temsil etmek için neyi kullanmışım? 12'yi kullanmışım. Tamam.
+
+286
+01:09:45,340 --> 01:09:50,619
+67, 87 için 77 kullanmışım. Bunlar için de 3 kullanmışım. Ben burada başka bir şeyler de kullanabilirim.
+
+287
+01:09:52,239 --> 01:09:54,319
+Ama o çok çok iyi olmazdı belki.
+
+288
+01:09:57,268 --> 01:10:22,608
+Peki bu işi nasıl yapacağız? Bunun ne gibi uygulamaları var? Mesela renk kümeleme, daha önce konuşmuştuk. 256 tane farklı renkten. Burada adım adım adımın işte 256, 128, 64, 32, 16, 8, 4 ve en sonunda 2. 2 sınıfa inmiş bakın burada. Görüyor musunuz? 2 tane sınıfa kadar indirilmiş. 250 renk dönüşüm. Temelde yaptığı şey bu. Başka nasıl kümeleme yapılabilir?
+
+289
+01:10:24,372 --> 01:10:50,372
+Şimdi sol taraftaki ve sağ taraftaki resimlerin arasındaki farkı görebiliyorsunuzdur ekranda. Sol taraftaki resim orijinal resim, sağ taraftaki resim kümelenmiş halde. Nasıl kümelenmiş ama burada? Bloklar kümelenmiş. Yani renk pikseller değil burada. Pikseller kümelenmemiş, bloklar kümelenmiş. 10x10 piksellik bloklar oluşturulmuş resmin üzerinde. Atıyorum diyelim ki bu resim...
+
+290
+01:10:51,699 --> 01:11:10,699
+200'e 200'lük bir resim olduğunu düşünelim, tamam mı? 200'e 200'lük bir resim. Bunu 10x10'luk bloklara ayırırsanız, 400 tane ne olacak hemizde? 400 tane 10x10'luk blok olacak değil mi? 400 tane. Bu 400 tane bloğu, diyelim ki 40 tane bloğu indirgediniz.
+
+291
+01:11:11,475 --> 01:11:30,695
+O 400 tane bloğu temsil eden 40 tane blok buldunuz. Ve her bir bloğu, işte onu temsil eden küme merkezi neyse onun değeriyle değiştirdiğinizde, şurada gördüğünüz gibi bir yapıya dönüşmüş olacak. Yani 400 farklı bloktan 40 farklı bloğa indirgemişsiniz burada. Tabi burada geçişlerin çok smooth olmadığını görebiliyorsunuz.
+
+292
+01:11:31,123 --> 01:11:53,823
+Bu tarz görüntüleri muhtemelen bağlantınız düşükken, video seyrederken karşınıza çıkabilir. Bu tarz böyle kareli kareli yapıları belki sizler de fark etmişsinizdir zaman zaman. Eskiden daha çok oluyordu şimdi. Bağlantınızları daha yükseldiği için çok karşılaşmıyor olabilirsiniz ama.
+
+293
+01:11:55,636 --> 01:12:05,476
+Karşılaşmış da olabilirsiniz. Dediğim gibi illa renkleri kümelenemiz gerekmiyor. Buradaki gibi resmin içindeki küçük parçaları kümelenmek de pekala mümkün.
+
+294
+01:12:07,935 --> 01:12:19,796
+Peki bu nasıl kullanılabiliyor bu tarz şeyler? Şimdi mesela bunun en yaygın olarak kullanıldığı yer, demin videolarda anlattım, iletişim aslında.
+
+295
+01:12:20,307 --> 01:12:42,868
+Nasıl iletişimde kullanılıyor? Sizin elinizde bir x vektörü var. Bu vektörünüz işte deminki bahsettiğim gibi on çarpanlık bir blok olabilir. Bu on çarpanlık bloku sizin elinizde bir encoder kısmı var ve bir de karşı tarafta da bir decoder kısmı var. Yani bu taraf server tarafı, bu taraf da client tarafı diye düşünün.
+
+296
+01:12:43,380 --> 01:13:08,979
+Server tarafında bir tablo var. Bu tablonun oluşturulması kümelimi algoritmaları da gerçekleştiriliyor. Oluşturulmuş diyelim ki. X geldiğinde bu X'e en yakın olan küme merkezi bulunuyor. O küme merkezinin kendisi değil de karşı tarafa indisi gönderiliyor sadece. Tek bir indis gönderiliyor. İndis karşıya gidiyor. Daha sonra bu indisin karşılık geldiği şey decoder'da o var. Dolayısıyla burada MI'yi...
+
+297
+01:13:09,456 --> 01:13:33,315
+Kullanıcının ekranına ya da artık ne yapıyorsanız oraya gönderiyorsunuz. Yani X buradan X üstü olarak oluşuyor. Yani aslında buradaki X'e karşılık MI vardı. Bu MI burada gözükmeye başladı. Dolayısıyla burada belki işte şuradaki şu gördüğünüz güzel bloğu şuradaki belki biraz daha katı bir blokla ne yapmış oluyorsunuz? Değiştirmiş oluyorsunuz. Ama işin güzel tarafı şu.
+
+298
+01:13:33,844 --> 01:13:39,604
+Şuradaki Mİ'nin büyüklüğünden bağımsız olarak karşı tarafa sadece neyi göndermeniz yeterli oluyor?
+
+299
+01:13:40,684 --> 01:13:42,884
+İyi göndermeniz yeterli oluyor. Tamam mı?
+
+300
+01:13:43,703 --> 01:13:51,423
+Dolayısıyla bu İ'nin azlığı için ne olması lazım? İ'nin de az bir yer tutabilmesi için ne olması lazım?
+
+301
+01:13:53,684 --> 01:14:19,684
+Küme sayısının az olması lazım. Küme sayısı ne kadar azsa bu i de o kadar az bir yer tutacak ve onu göndermek çok daha kolay olacak. Ama tabii ne kadar az olursa sizin görüntünüz de o kadar fazla ne olacaktır? Bozulur mu, iyileşir mi? Küme merkezi sayısı az olursa.
+
+302
+01:14:20,627 --> 01:14:32,367
+Bozulur Oya. Bozulacaktır değil mi? Çok daha kaba şeyler göreceksiniz. Şurasını düşünürseniz. 256 küme burada, burada 2 küme var. Neydi, ne hale geldi.
+
+303
+01:14:37,652 --> 01:14:42,311
+Şimdi, peki bu kümenleme, kümenleme dedik de bunu nasıl yapacağız?
+
+304
+01:14:43,051 --> 01:14:49,872
+Bunun çeşitli yöntemleri var ama en yaygın olarak kullanılanlardan bahsedeceğim.
+
+305
+01:14:49,952 --> 01:14:51,012
+Birisi hiyerarşik kümenleme.
+
+306
+01:14:51,971 --> 01:14:56,012
+Bunun iki türü var. Bir tanesi işte alttan yukarı, bir tanesi yukarıdan aşağı.
+
+307
+01:14:56,211 --> 01:15:03,412
+Tek kümeden çok kümeye bölmeli ya da çok kümeden tek kümeye eklemeli diye ifade ediyor bunlar hiyerarşik.
+
+308
+01:15:04,404 --> 01:15:06,024
+Kümene ve algoritmaları.
+
+309
+01:15:06,783 --> 01:15:07,484
+Şimdi mesela
+
+310
+01:15:07,484 --> 01:15:11,004
+burada
+
+311
+01:15:17,011 --> 01:15:21,211
+Şuna döneceğim.
+
+312
+01:15:22,811 --> 01:15:24,692
+Burada eklemeliden bahsedeyim ilk önce.
+
+313
+01:15:25,412 --> 01:15:27,092
+Algorithm çok aşırı derecede basit.
+
+314
+01:15:27,551 --> 01:15:29,891
+Birbirine en benzen iki tane kümeyi birleştir diyoruz sadece.
+
+315
+01:15:30,492 --> 01:15:34,032
+Ve en başta, başlangıçta küme sayısı örnek sayısına eşit.
+
+316
+01:15:35,112 --> 01:15:39,771
+Yani en başta her bir örnek bir tane küme merkeziymiş gibi düşünüyorsunuz.
+
+317
+01:15:40,631 --> 01:15:42,211
+Ve onunla başlıyorsunuz.
+
+318
+01:15:42,211 --> 01:15:44,412
+Birbirine en benzen iki tane kümeyi birleştiriyorsunuz.
+
+319
+01:15:45,619 --> 01:15:59,279
+Ve tekrardır. Sürekli bu tekrar diyor. Bu tekrar ettikçe, ettikçe, ettikçe, ettikçe aslında gide gide gide gide en sonunda burada iki tane hüküme oluşmuş ve bundan bir adım daha ilerletmeye kalkarsanız zaten tek bir tane hükümeye dönüşecek hepsi birden bununla bunu birleştirdiğinizde.
+
+320
+01:15:59,988 --> 01:16:22,528
+İyi, peki. Yani böyle basit bir şey, yapı. Yani ilk önce burada mesela D3 ve D7 birbirine çok benziyormuş. Sonra D4 ve D5 birbirine benziyormuş. Onları birleştirmiş. Sonra burada D6 ile D8 birbirine benziyormuş, birleştirmiş. İyi, güzel. Hep noktaları birleştirdi. Peki şimdi bir adım daha sonra mesela burada D3, D7 ve D4'ü birleştirmiş. Görüyor musunuz? Şununla şunu birleştirmiş.
+
+321
+01:16:22,880 --> 01:16:27,819
+O zaman bir soru karşımıza çıkıyor aslında. İki kümenin benzerliğini ben nasıl ölçeceğim?
+
+322
+01:16:28,780 --> 01:16:38,399
+Şimdi mesela burada bunlar noktalar oldukları için, her bir küme merkezi bir tane nokta olduğu için bir noktada bir noktanın benzerliğini öktek dısınıza ölçebilirsiniz.
+
+323
+01:16:38,399 --> 01:16:41,819
+Yani bunun buna benzerliği diyebilirsiniz. Herhangi bir simül eritmetri kullanabilirsiniz.
+
+324
+01:16:42,520 --> 01:16:46,000
+Manhattan Distance'dır, Cosin Distance'dır vesaire vesaire bir sürü bir şeyler kullanılabilir.
+
+325
+01:16:46,515 --> 01:17:06,515
+Ama mesela şimdi bu D2 ile ben şu kümenin benzerliğini nasıl ölçeceğim? D2'nin D3 ve D7 içeren kümeye benzerliğini nasıl ölçeceğim? Bu bir nokta, bu ise iki tane nokta oluşan bir küme. Bunu nasıl yapacağım? Burada çok temel olarak kullanılan üç tane yaklaşım var. Birincisi...
+
+326
+01:17:06,815 --> 01:17:32,655
+İki kümenin benzerliği en benzeren elemanları kadar benzerdir. Yani şöyle bir şey mesela, D2'nin D3'e D7'ye benzerliğini hesaplarken, D3, D7'yi içeren kümeye benzerliğini hesaplarken, D2'nin D3'e benzerliğine bakacağım. D2'nin D7'ye benzerliğine bakacağım. Bunlara hangisi daha küçükse bu kümenin bu kümeye benzerliği odur diyeceğim. Ya da hangisi en büyükse bu kümenin bu kümeye benzerliği odur diyeceğim. Ya da ortalamasını alacağım, odur diyeceğim.
+
+327
+01:17:35,060 --> 01:18:00,440
+Tabi burada her ikisi de birden fazla örnek içeren durumdan olacak. Mesela D1 mesela şurada. D4, D5, D3, D7 var. Bu iki kümenin benzerliğini nasıl bulacağım ben? Mesela en yakınını bulmak istiyorsam buradaki D4'ün D3 ve D7'ye, D5'in D3 ve D7'ye benzerliklerini hesaplayacağım. Onların arasında minimum olan hangisi ise onu seçeceğim ya da maksimumu seçeceğim ya da ortalamalarını seçeceğim.
+
+328
+01:18:00,752 --> 01:18:22,372
+Dolayısıyla single link, komplektlik ve grup average diye ifade ettiğimiz şeyler bunlar. İki kümenin benzerliğini bulurken yapabileceğiniz şeyler. Burada dediğim gibi illa öptikli sınıf falan kullanmanız şart değil. Herhangi bir similir aritmetriğini kullanabilirsiniz. Buradaki hikaye dediğim gibi birden fazla nokta içeren durumda biz nasıl bir strateji izlemeliyiz, izleyebiliriz onu ifade ediyor.
+
+329
+01:18:22,752 --> 01:18:46,932
+Dolayısıyla burada yapılan işlemiş adım adım adım adım ilerlediğinde böyle bir durum çıkıyor. Ve siz bu süreci istediğiniz yerde durdurup diyebilirsiniz ki ben işte beş tane küme istiyorum, üç tane küme istiyorum. Ne zaman diyorsanız o sizin karşısında. Çünkü her bir adımda birer birer birleştirdiği için her bir adımdaki küme sayısı elinizde. İstediğiniz zaman durdurup sizin için yeterli olan küme sayısı neyse onu alıp kullanabilirsiniz.
+
+330
+01:18:50,579 --> 01:19:12,579
+Bölmede de şey var, her şey tek bir kümeymiş gibi başlıyorsunuz. Daha sonra küme içine birbirine en az benzen iki tane elemanı bulmaya çalışıyorsunuz. Daha sonra kümeyi bu iki elemanı yakından görebiliyorsunuz. Oluca her bir küme için bu alt işlemini tekrar ediyorsunuz şeklinde ilerliyor. Ama genelde aşağıdan yukarıya yaklaşıp daha çok kullanılıyor. Burada mesela şey yapılmış. Şu gördüğünüz...
+
+331
+01:19:14,292 --> 01:19:28,172
+Kümelenmesi sonucu şunu gösteriyor. Burada çeşitli algoritmalar var. Bu algoritmaların başarılarına göre kümelenmesi. Ne demek bu? Şimdi diyelim ki sizin elinize şöyle bir tablo olduğunu düşünün. Bakın. Şu tabloyu düşünün.
+
+332
+01:19:28,492 --> 01:19:39,032
+Bu tabloda her bir algoritmayı, bakın burada bu tablodaki her bir algoritmayı aslında altı boyutlu uzayda bir nokta olarak düşünebilir misiniz? Bakın.
+
+333
+01:19:41,140 --> 01:19:47,079
+Her bir algoritma diye altı tane boyutlu, ki buradaki boyutlarda tıstıkları oluyor.
+
+334
+01:19:47,239 --> 01:19:50,020
+Orada giderler de o algoritma tıstık performansını gösteriyor.
+
+335
+01:19:51,700 --> 01:19:54,980
+Benzer altı boyutlu uzaylı bir noktalar düşünebilirsiniz.
+
+336
+01:19:54,980 --> 01:20:00,980
+Ve bunu kullanarak tabii buradaki şey...
+
+337
+01:20:01,456 --> 01:20:12,655
+Herhalde 22 sürü tane algoritma belki 30 tane veriklimesi üzerinde test edilmiş. Onların sonuçları kümelenmiş. Orada bunu görüyorsunuz.
+
+338
+01:20:12,655 --> 01:20:17,235
+Algoritmaların birbirlerine benzerlikleri nasıl bir şey olacak?
+
+339
+01:20:21,652 --> 01:20:27,172
+Aynı sene üzerine benzer sonuçlar verenler birbirine daha yakın olacaklar. O manada düşünebilirsiniz.
+
+340
+01:20:27,872 --> 01:20:40,752
+Ve burada algoritmaların bu şekli birazcık büyütürsek, belki biraz okunur hale getirebilirim diye düşünüyorum ama.
+
+341
+01:20:43,988 --> 01:20:56,387
+Evet, şurada mesela SVM, SMO, Partial List Squares gibisinden linear algoritmalar bir kümedeler şurada. Başka?
+
+342
+01:20:57,555 --> 01:21:05,515
+Şurada Ensemble algoritmaları var. Onlara biz bu ders kapsamında girmedik ama Ensemble algoritmalarını bir yere atmış.
+
+343
+01:21:06,015 --> 01:21:12,076
+Karniyarıs Neyver'ın türevlerini birlikte bir yere atmış gibi aslında biraz şey var.
+
+344
+01:21:12,076 --> 01:21:16,815
+Nasıl söyleyeyim? Algoritmaların mantıksal benzerlikleri.
+
+345
+01:21:17,492 --> 01:21:29,052
+Buradaki şeylere de, modellerinin benzerlikleri, varsayımların benzerlikleri bu gruplamayla, bu kümelemeye de yansıyor. Onu söyleyebilirim.
+
+346
+01:21:40,404 --> 01:21:57,064
+Şimdi başka bir algoritma. Kaç kişi şu anda? 15 kişi. Bu 15 kişi bana şey söyleyebilir miyim? Kamins algoritmasını duydum diyenler artı bir yazsın, duymadım diyenler eksi bir yazsın çete. Kamins algoritmasını duydum diyenler artı bir, duymadım diyenler eksi bir.
+
+347
+01:22:09,108 --> 01:22:31,688
+Bir kişi duymamış. Bir kızın da duymadığını bilmiyor. Neyse. Peki, tamam. Çoğunluğu duymuşsunuz. Güzel. Şimdi aslında bu evvekiye benziyor. Ama aslında Kami'sin online versiyonu daha çok benziyor.
+
+348
+01:22:33,811 --> 01:22:44,971
+Ama ilk önce 5 halinden bahsedelim. Şimdi nasıl çalışıyor? Sayısal verilere çalışıyor. Rastgele kalit tüme merkezi atıyor. Burada tabii LVQ'daki gibi merkezlerin sınıfları yok.
+
+349
+01:22:45,427 --> 01:23:11,148
+Burada merkezlerin hepsi, çünkü kümelerin yapıyoruz da bir şeyimiz yok elimizde. Sınıf bilgisi yok. Dolayısıyla küme merkezlerinde herhangi bir sınıfı yok. Peki ne yapıyoruz? Rastgele kalit kümelerini atadık. Her örneği en yakındaki merkezlerin kümesini atadık. Merkezleri kendi kümelerinin merkezine atar. Tamam. İkinci ve üçüncü adımları küme değiştirmenin kalmayacağı ya da maksimum ekosresine erişileceği tekrar et. Şimdi şurada onun adım adım bir hali var.
+
+350
+01:23:11,956 --> 01:23:26,695
+Şimdi şurada bakın. Üç tane artı görüyor olmalısınız. Şunu şöyle yaparsam belki daha rahat görürsün. Şimdi daha mı iyi gözüküyor? Yoksa aynı mı?
+
+351
+01:23:28,695 --> 01:23:29,416
+Aynı hocam.
+
+352
+01:23:30,476 --> 01:23:33,615
+Peki. O zaman hiç kimse dönebilirim.
+
+353
+01:23:35,412 --> 01:23:55,291
+Bu artılar şu anda başlangıçta buraya atanmışlar bakın. Rastgele salladık. Elimizdeki datalar da bunlar. İlk adımda ne yapılıyor dedim. Elimizdeki verileri yani şuraya bakarsak her örneği en yakındaki merkezinin kümesine atar. Çünkü renklendirmeler bununla alakalı. Yani bu yeşil olan noktalar.
+
+354
+01:23:56,692 --> 01:24:21,992
+Şu çarpı, üstteki çarpılara göre şu çarpıya daha yakınlar. Şu arkadaşlar, şuna daha yakınlar maviye. Mavilerin ortasında olan daha yakın bunlara. Ve buradaki, yukarıdaki kırmızı içinde şu noktalar için bu en yakın tümem merkezi. Bunu yaptık, atamayı yaptık. Ondan sonra ne yapılıyor? Atama yapıldı bakın. Merkezleri, kendi tümeleri merkezine atar. Şimdi ne yapacağız burada?
+
+355
+01:24:22,484 --> 01:24:40,744
+Mavileri temsil eden merkezi yeşillerin merkezine atacağız. Görüyor musunuz? Yeşillerin merkezine atacağız. Daha sonra mavileri temsil eden mavilerin merkezine atacağız. Atadıktan sonra tekrardan aynı işlemi yapacağız. Tekrardan bunların hükümelerini belirlemeye.
+
+356
+01:24:41,971 --> 01:25:01,652
+belirleyeceğiz. Ve ikinci adım, üçüncü adım, dördüncü adım, beşinci adım, altıncı adım şeklinde bakın nasıl bir hale geldi. Yani başlangıçta böyle rastgele bir şekilde atmış olsanız bile bunların bu hale gelebildiğini görebiliyorsunuz. Tamam. Adım adım adım adım işte bu yukarıdaki yavaş yavaş aşağı iniyor. Bunlar da yavaş yavaş aşağı doğru iniyorlar ve bu hale geliyorlar.
+
+357
+01:25:02,163 --> 01:25:17,523
+Bu da yine demin bahsettiğim gibi lokal minimumlara takılabilecek bir süreç. İlla böyle burada güzel bir süreç var. Güzel olmayan başlangıç değerleri durumunda tam da istediğiniz gibi olmayabilir.
+
+358
+01:25:19,412 --> 01:25:30,971
+Buradaki söz, onu söyleyebilirim. İlla böyle iyi gidecek diye her şey şakli. Ama Cummins algoritması iyi bir algoritma. Onu rahatlıkla söyleyebilirim. Mesela buraya bakın.
+
+359
+01:25:31,344 --> 01:25:51,963
+İlk değerlerin önemi demiş. Mesela şimdi ben burada ilk değerleri atamıştım. Mesela birincisi burası, ikincisi burası, üçüncüsü de burası. Şurası, şurası ve şurası. Adım adım adım adım ilerliyor süreç ve olan şey şu. Bakın ne olmuş? Burası burada kalmış, burası burada kalmış, burası da hala burada kalmış. Bunları bu temsil ediyor, bunları bu temsil ediyor, bunları da bu temsil ediyor.
+
+360
+01:25:59,315 --> 01:26:03,235
+Daha iyi ya da daha kötü olduğunu nasıl ifade edeceğiz, nasıl anlarız?
+
+361
+01:26:05,415 --> 01:26:06,595
+Bunu söyleyebilir misiniz?
+
+362
+01:26:07,815 --> 01:26:13,556
+Yani şöyle bir kümelemenin, şöyle bir kümelemeye göre daha iyi ya da daha kötü olduğunu nasıl söyleyeceğiz?
+
+363
+01:26:14,456 --> 01:26:19,935
+Bakın burada şey yok elimizde, sınıflandırma gibisinden bir sayısal bir ölçükümüz direkt yok.
+
+364
+01:26:20,884 --> 01:26:34,324
+Yani şey, olması gereken şey şuydu ama şu olduğunu bilmiyoruz. Olması gereken şeyin ne olduğunu bilmiyoruz. Ama olan iki şeyin arasında acaba bir yeri kötülük hesabı yapabilir miyiz? Hikayemiz bu.
+
+365
+01:26:37,384 --> 01:26:44,963
+Hani demiştim ya, kümelemenin loss fonksiyonu şöyle bir şeydir diye. Neydi o kümelemenin loss fonksiyonu? Ne olmasını istiyorduk kümelemede?
+
+366
+01:26:46,963 --> 01:26:54,823
+Küme merkezinin temsil ettiği noktaların uzaklıklarının küçük olmasını istiyoruz değil mi?
+
+367
+01:26:56,343 --> 01:27:02,103
+Şimdi şuraya baktığınızda şu yukarıdakiler için evet iyi güzel gözüküyor da şu aşağıdaki için çok kötü.
+
+368
+01:27:02,763 --> 01:27:13,083
+Küme merkezi, kümenin içindeki örnekleri hepsine uzak. Ortalamasında evet ama epey bir uzak. Neyse.
+
+369
+01:27:14,547 --> 01:27:36,467
+Hatta fonksiyon işte burada gördüğümüz şey, farklı ihtiyacların sonuçları bu hataya göre karşılaştırabilirler. Tabii burada şunu karşılaştırabilirsiniz. İki tane kümleme algoritması ancak şu durumla karşılaştırabilir. Küme sayıları aynıysa. Küme sayıları birbirinden farklıysa karşılaştırma çok manalı bir şey olmaz.
+
+370
+01:27:41,844 --> 01:27:49,104
+K değeri arttıkça bu loss fonksiyonu ne olacaktır? Düşecektir kesinlikle. Ne kadar çok kümeniz olursa.
+
+371
+01:27:51,703 --> 01:27:58,104
+Değil mi? Kalbize iki tane algoritmayı karşılaştırmak istiyorsanız mutlaka kümeselerin eşit olması gerekecek.
+
+372
+01:27:58,104 --> 01:28:00,104
+Şimdi...
+
+373
+01:28:00,884 --> 01:28:11,043
+Tekli ve toplu kavmiyizden bahsedeyim. Şimdi aslında demin yaptığımız şey, toplu yani batch olarak bu işi yaptık.
+
+374
+01:28:11,043 --> 01:28:20,504
+Yani algoritmaya baktığımızda, her yerine en yakındaki merkezin kümesine atar, sonra merkezine kendi yükmenin merkezine atar.
+
+375
+01:28:20,584 --> 01:28:25,144
+Yani burada bütün örnekler için bu işlem yapılıyor, sonra da merkezler için bu güncelleme yapılıyor.
+
+376
+01:28:25,652 --> 01:28:43,612
+Bütün örnekler için bu işlem yapılıyor ilk önce, ondan sonra güncelleme yapılıyor. Online halinde ise, her bir örnek için minleri güncellersek buna da tekrar online kavmin isteyebiliriz. Nasıl bir şey olacak o zaman?
+
+377
+01:28:52,756 --> 01:29:10,236
+En yakın olduğu küme merkezi bulundu. Peki ondan sonra ne olacak? O küme merkezini aynen LVQ'da olduğu gibi o örneğe doğru yaklaştıracaksınız. Yani Beç'te ne yapılıyor? O kümenin içindeki bütün örneklerin ortalamasına atanıyor.
+
+378
+01:29:10,676 --> 01:29:30,596
+Burada ise tekli bu işi yapmaya kalktığınızda bir tane örnek geldi. O örneğe en yakın küme merkezini buldunuz. Tamam buldunuz. O zaman o küme merkezini direkt o örneğe doğru yaklaştıracaksınız. Belli bir learning rate ile. Aynen LVQ'nun ödüllendir kısmında olduğu gibi. Burada bir cezalandırma. Çünkü cezalandıracağımız bir şey yok. Tamam mı?
+
+379
+01:29:30,963 --> 01:29:42,484
+Dolayısıyla bu şekilde bunu online olarak da bu süreci işletirseniz buradakine çok benzeyen, çok tatmin edici sonuçlar alabileceğinizi göreceksiniz.
+
+380
+01:29:43,043 --> 01:29:52,283
+Bunların dediğim gibi kodlaması çok kolay. Kendiniz oturup kodlayın, görün nasıl vektörler hareket ediyorlar, nasıl kötü durumlar oluşabiliyor vesaire vesaire.
+
+381
+01:29:52,283 --> 01:29:56,304
+Online yaptığımızda nasıl çalışıyor, daha hızlı acaba oluyor mu?
+
+382
+01:29:56,851 --> 01:30:00,811
+Daha az sayıda işlemler acaba kümelameyi gerçekleştirebiliyor mu?
+
+383
+01:30:00,912 --> 01:30:08,612
+Herhangi birisinden sorulara birinci elden deneyimlerinizle kolaylıkla yanıt arayabilirsiniz, bulabilirsiniz.
+
+384
+01:30:10,492 --> 01:30:23,092
+Şimdi, şeyden sonra, K-Mins'ten sonra göreceğimiz kümelame algoritması, Self-Organizing Map, SOM algoritması.
+
+385
+01:30:24,340 --> 01:30:44,500
+Aslında SOM algoritması K-Means'in online haline yeni bir yapı eklenmesiyle oluşturulmuş bir yapı. Öyle söyleyeyim. Yani K-Means'e çok benziyor. Yani bir örnek var. O örneğe en yakın küme merkezini buluyorsunuz ve o küme merkezini o örneğe yaklaştırıyorsunuz.
+
+386
+01:30:44,500 --> 01:30:50,859
+Tamam. Burada farklı olarak şöyle bir yapı var Sark Organizm Map'te.
+
+387
+01:30:52,435 --> 01:31:09,575
+Küme merkezlerini belirlediniz diyelim. Tamam, belirlediniz, rastgele atladınız. Daha sonra bu küme merkezleri arasında bir bağlılık, bir komşuluk matresi ya da vektörü oluşturuyor. Yani tek boyutlu bir komşuluk olabilir, çift boyutlu bir komşuluk olabilir.
+
+388
+01:31:10,575 --> 01:31:19,455
+Yani her küme merkezinin, bunu bir grid olarak görebilir miyiz? Bakayım bir şey var mı? Örneği.
+
+389
+01:31:21,908 --> 01:31:25,568
+Bir saniye bekleceğim sizi.
+
+390
+01:32:23,380 --> 01:32:24,480
+Biraz ağabey geçiyorum.
+
+391
+01:33:13,876 --> 01:33:18,656
+Browser geldi mi? Görüyor musunuz?
+
+392
+01:33:19,836 --> 01:33:20,376
+Evet hocam.
+
+393
+01:33:20,376 --> 01:33:23,976
+Tamam. Mesela burada bir tane örnek.
+
+394
+01:33:27,396 --> 01:33:34,536
+Neyse, coin temizi var. Neyse şimdi şöyle bir şey söyleyeyim. Bakın, elimizdeki datalar şunlar. Tamam mı?
+
+395
+01:33:34,996 --> 01:33:59,855
+Şu içi boş derler, bunlar noktalar. Şimdi burada sentroliklerimiz vardı elimizde. Şu sentrolikler de şu kırmızı noktalar, yani küme merkezlerimiz. Şimdi normalde küme merkezleri bize online karmesinde birbirine bağlı değildi. Burada ise birbirine bağlılar. Tamam mı? Birbirine bağlılar. Yani her bir küme merkezinin önceden tanımlı komşuları var. Tamam mı?
+
+396
+01:34:00,127 --> 01:34:26,007
+Peki önceden tanıdığı komşuları var. Bu nasıl atanıyor? Rastgele atanıyor. Yani sen şununla, sen şununla, sen şununla komşusun şeklinde rastgele indisler atanıyorlar. Bir grid şeklinde de atanabilir. Bir ringin üzerine, yani düz bir doğrunun üzerine de atanabilir. Tamam mı? Peki atanıyor. Sonra ne oluyor? Şimdi eğer ki bir örneğe geldi, bu örnek için en yakın olan örnek bir tane işte sentre seçildi. O sentre'yi yaklaştırıyoruz ya.
+
+397
+01:34:26,739 --> 01:34:46,559
+Aynı zamanda o sentroidle birlikte ona yakın olan sentroidleri de o örneğe doğru yaklaştırıyoruz. Yani her bir örnek geldiğinde bir tane sentroid güncellenmiyor. O sentroid ve ona bağlı olan diğer sentroidler güncelleniyor. Tamam mı? Şimdi bunu birazcık çalıştıralım. Siz müziği duyuyor musunuz bu arada?
+
+398
+01:34:48,899 --> 01:34:50,219
+Hayır. Ses yok hocam.
+
+399
+01:34:54,387 --> 01:35:16,367
+Neyse, bu siyah siyah gözüken şeyler bizim seçtiğimiz rastgele noktalar. Bunu tahmin edebiliyorsunuzdur. Bu giderek giderek giderek giderek işte aşağı yukarı şöyle bir hale geldi bakın artık. Şey olmuyor, güncellenmiyor. Bunu mesela tek boyutlu bir şeye getirsek, yani komşuluğu tek boyuta indirgesek işler çok daha basit olacak tahmin edebileceğiniz gibi.
+
+400
+01:35:25,844 --> 01:35:29,484
+Birazcık ilerlettim. Hızlandırdım. Gördüğünüz gibi bu hale geldi artık.
+
+401
+01:35:40,404 --> 01:35:46,524
+Sorusu olanlar mı arkadaşlar? Sert Organizmik'i de bu haliyle şey yapmış olduk aslında, tamamlamış olduk.
+
+402
+01:35:49,564 --> 01:36:00,404
+Yani online K-minisi bildikten sonra Sert Organizmik'teki tek partil dediğim gibi sadece bir tane sentroiti güncellemek yerine o sentroite bağlı olduğu konflarda da güncelleyerek bu işi gerçekleştiriyorsunuz.
+
+403
+01:36:05,939 --> 01:36:31,499
+Ve somun şöyle bir özelliği daha var. Asıl somun böyle güzel yapan şey belki o. Bu elinizdeki grid yapısında oluşturduğunuz şeyi inceleyerek, bu iki boyutlu ya, iki boyutta ya. Ama dataların kendisi belki de yüz boyutta bakın. Dataların kendisi yüz boyutta ama grid hala iki boyutta.
+
+404
+01:36:32,051 --> 01:36:43,431
+O iki boyutlu gripe bakarak o yüz boyutlu datanın iki boyutta aşağı yukarı nasıl görünebileceğine dair bir öngörü de size sağlıyor.
+
+405
+01:36:43,991 --> 01:36:50,051
+Yani bir yandan yüksek boyutlu uzayların görselleştirilmesinde de kullanılan bir yaklaşım.
+
+406
+01:36:50,871 --> 01:36:58,831
+Self-Organized Map sadece kümeleme için değil ama kümeleme sürecini çalıştıktan sonra aslında o yüz boyutlu uzayın
+
+407
+01:36:59,444 --> 01:37:13,044
+İki boyutta aşağı yukarı nasıl bir şey olduğu, kim kime yakın, kim kime uzak, nasıl bir yapıda olduğunu gözlemleme şansınız birazcık öngörü yakalayabilmenize imkan veriyor.
+
+408
+01:37:19,060 --> 01:37:20,140
+Devam edelim.
+
+409
+01:37:22,560 --> 01:37:26,560
+Şimdi, önemli alakalı son göreceğimiz algoritma doğru şey yapmıyoruz.
+
+410
+01:37:26,680 --> 01:37:28,860
+Evet, Libisken algoritması.
+
+411
+01:37:28,980 --> 01:37:33,060
+Libisken algoritması şu ana kadar gördüğümüz algoritma ama farklı bir algoritma.
+
+412
+01:37:33,820 --> 01:37:36,620
+Libisken algoritmasının farkı şöyle bir şey.
+
+413
+01:37:36,620 --> 01:37:44,840
+Bakın, şimdi bu sol taraftaki algoritma bizim küme merkezi tabanlı algoritmalarımız.
+
+414
+01:37:44,900 --> 01:37:46,280
+Yani K-Mis mesela şurada.
+
+415
+01:37:46,644 --> 01:38:01,304
+Sen bir şey söyleyebilir miyordun? Ekran bende mi gözükmüyor sadece? Onu soruyorum. Hayır, kimse de gözükmüyor. Paylaşmayınca gözükmüyor. Neyse, çok güzel bir şey kaçırmadık herhalde.
+
+416
+01:38:11,028 --> 01:38:21,708
+Sol taraftaki datalarda K-Mühendis'i çalıştırıp bana üç tane küme bul dediğinizde K-Mühendis'in bulacağı kümeler şurada bulduğunuz gibi kümeler olacak değil mi?
+
+417
+01:38:21,768 --> 01:38:28,807
+Üç tane merkez bulacak ve her noktayı da o küme merkezine, hangi küme merkezine yakınsa onunla işaretlecek.
+
+418
+01:38:28,908 --> 01:38:34,828
+Yani mavi dediğimiz şey bir küme, kırmızılar bir küme, yeşillerde başka bir küme olacak.
+
+419
+01:38:35,604 --> 01:38:45,464
+Bilgisayar Mühendisliği, Yapay Zeka'nın algoritmasını çalıştırdığınızda, bana bu data üzerinde üç tane küme verdiğinizde sonucu bu bakın. Görüyor musunuz? Bununla bundan sanki farklı görebiliyorsunuz değil mi?
+
+420
+01:38:49,203 --> 01:38:49,963
+Evet hocam.
+
+421
+01:38:51,943 --> 01:38:54,304
+Kullanım amaçları farklı bunların o yüzden.
+
+422
+01:38:54,304 --> 01:39:02,503
+Yani bu tarz bir kümeleme yapmak istiyorsanız, yoğunluk tabanlı bir kümeleme yapmak istiyorsanız bunu kullanıyorsunuz.
+
+423
+01:39:02,923 --> 01:39:07,923
+Merkezi tabanlı bir kümeleme yapmak istiyorsanız demin bahsettiğimiz kamilist falan gibisinde algoritma yapıyoruz.
+
+424
+01:39:08,623 --> 01:39:11,103
+Peki bu algoritma nasıl çalışıyor?
+
+425
+01:39:11,344 --> 01:39:14,563
+Bu algoritmanın çalışmasında iki tane hiperparametrası var.
+
+426
+01:39:15,028 --> 01:39:35,507
+Bir tanesi EPS, bir tanesi MINP. Şimdi ilk önce şöyle bir şey yapıyor. Tüm noktaları çekirdek, sınır ya da gürültü olarak belirliyor. Şimdi elindeki bütün noktaları bakın, çekirdek sınır ya da gürültü olarak etiketliyor. Peki nasıl yapıyor bunu? Çekirdek dediğimiz şey şu. Bakın çekirdek nokta, kırmızılar.
+
+427
+01:39:36,083 --> 01:39:47,983
+EPS komşuluğunda, yani kırmızı nokta çekirdek nokta. Niye çekirdek nokta onlar? Çünkü onların EPS komşuluğunda en az 1000 P adet nokta bulunuyor.
+
+428
+01:39:47,983 --> 01:39:59,983
+Bakın, yani etrafında EPS yarı çapındaki, mesela EPS burada belli işte şu dairelerin yarı çapını EPS diye düşünün. Bu yarı çapının içerisinde...
+
+429
+01:40:00,000 --> 01:40:20,000
+Bir nokta var bakın. Kırmızıyı düşünün. Bunun geri çapında başka noktalar var. Bu kırmızı, bu kırmızı. Bunların hepsinin geri çapında başka noktalar var. Çekirdek dediğimiz şey en az min P adet. Burada min P herhalde 2 diye tahmin ediyorum. Mesela sarı için düşünün. Sarı nokta için düşünün. Sarı noktada...
+
+430
+01:40:23,283 --> 01:40:40,643
+Min P 2 olduğunu düşünün. Bunun komşuda bir tane nokta var görüyor musunuz? Dolayısıyla o bir sınır noktası. B de aynı şekilde. Ama ne? Bunun hiç EPS'e komşuda Min P'den de az değil. Hiç nokta yok. O yüzden bu mavi. Mavi gürültü demek. Tamam mı?
+
+431
+01:40:41,300 --> 01:41:04,440
+Anlaşıldı mı? Yaptığımız iş her bir noktayı bu üç tane sınıftan bir tanesine. Bu sınıflar ama şey sınıf değil yani. Bizim normal standart sınıflarımız değil. Yoğunluk açısından. Yani çok yoğun bir bölgenin içindeki bir nokta, yoğun bir bölgenin sınırındaki bir nokta. Bu da çok seyreye ek bir bölge. İyi aslında ifade ediyorlar. Tamam mı? Bunları atadık.
+
+432
+01:41:05,108 --> 01:41:28,228
+Noktalar etiketlendikten sonra gürültüler eleniyor. Çekirdeklerden birbirine EPS mesafede olanlar birleştiriliyor. Çekirdeklerden birbirine EPS mesafede olanlar, bunlar şunlar bir hükümet ediliriliyor mesela. EPS mesafe varsa çekirdeklerin arasında bir sürü çekirdek olabilir. EPS mesafe varsa birleştiriliyorlar.
+
+433
+01:41:29,460 --> 01:41:52,179
+X adet küme oluşturuluyor. Hiperparametreye bağlı. Sınır noktalar en yakın çekirdeğin kümesine atanıyor. Dediğim gibi algoritma öyle çok şey değil. Ne derler ona? Kompleks bir algoritma değil. İşte buradaki gördüğünüz şey ne yapabiliyor? Oluşturabiliyor. Şuradaki, şunlar şu bir çekirdekten oluşan bir şey. Şu başka bir çekirdekten oluşan bir şey. Şu da başka bir çekirdekten oluşan bir şey.
+
+434
+01:41:53,203 --> 01:42:06,243
+Tabi burada mesela şu maviden şöyle uzakta bir tane mavi nokta olsa onu buraya ne yapamayacak? Bağlayamayacak. Zaten onları çok uzak doğanları ne yapıyor? Eliyor zaten. Yürültüleri atıyor dışarıya.
+
+435
+01:42:08,212 --> 01:42:33,052
+Dolayısıyla Deviscan algoritmasında bir örnek illa bir kümeye dahil olacak diye bir şey yok. Burada küme merkezleri çekirdekler olarak ifade ediyor ama çekirdek dediğimiz şey tek bir nokta oluşmuyor. Bir sürü nokta oluşan bir şey. Bir küme yine öyle söyleyelim. Küme merkezi tek bir merkez değil, bir sayısal noktalar, bir sürü nokta içeren bir küme öyle söyleyelim.
+
+436
+01:42:34,707 --> 01:42:46,787
+Şimdi, dolayısıyla Dibis, bazı noktalar hiçbir kümeye, yani hiçbir çekirdeğe, daha doğrusu atanmıyorlar. Onu da söyleyebiliriz dışarıda durdukları için.
+
+437
+01:42:47,927 --> 01:43:01,167
+Kümenin algoritmalarında ne zaman dururuz? Biraz şey, ne derler ona, çok kolay cevap verebilecek bir şey değil. İterasyon sayısı falan gibi, maksimum bir şeyler tanımlayabilirsiniz.
+
+438
+01:43:03,667 --> 01:43:22,967
+Mesela şey kullanılabiliyor, karnı istekenden. Küme merkezi değiştiren örnek kalmayana kadar. Yani bir küme merkez bir örnek, bir önceki iterasyonu başka bir kümeye ait, bir sonraki iterasyonu başka bir kümeye aitse o zaman hala olay stabilleşmemiş. O zaman ne yapayım ben? Devam edeyim. Böyle bir şey yapabilirsiniz.
+
+439
+01:43:29,136 --> 01:43:55,515
+Öyle sınır noktasında bazı noktalar oluyor ki iki tane küme merkezinin tam ortasına geliyor. Bir o tarafa bir o tarafa gidip geliyor. Onun bitmesini beklerseniz çok beklersiniz. O yüzden bazen kesinlikle bir maksimum iterasyonu zaten kullanıyorsunuz. Ölü neuron kavramından bahsettik. Başarı ölçütü ne? Başarı ölçütü burada, demin bahsettiğim doğrultus fonksiyonu var. Onun haricinde deviz bağlı indeks var.
+
+440
+01:43:56,020 --> 01:44:20,180
+Siret, Witt gibi kriterler var. Kümeleme algoritmalarının başarının karşılaştırılması için bu tarz çeşitli kriterler literatürde tanımlanmış. Ama dediğim gibi, sınıflandırmalı gibi kesin bir şey yok elimizde. Sonuç yok.
+
+441
+01:44:21,332 --> 01:44:42,372
+Kümeleme sonuçlarını sınıflandırma sonuçlarıyla test edebilir misiniz? Evet, edebilirsiniz ama kümeleme ile sınıflandırma aynı şey değiller. O yüzden bu biraz genetici bir şey olabilir. Elinizde mesela sınıflarını bildiğiniz bir veri var ve onu kümeliyorsunuz, kümelediniz.
+
+442
+01:44:43,028 --> 01:45:08,908
+Ve dediniz ki sınıf sayısı 3'tü. Siz dediniz ki ben 3 tane küme evanımı ayırdım dediniz. 3 tane küme ayırdınız. Sonra işte gerçekten aynı sınıfta olanlar aynı kümeye düşmüşler mi? Gibisinden bir kontrol yapabilir misiniz? Evet yapabilirsiniz. Ama bu çok istediğiniz bir şey olmayabilir. Çünkü sınıflandırma dediğim gibi kümelemenin şeyleri farklı bir günler. Amaçları.
+
+443
+01:45:15,988 --> 01:45:36,528
+Yani çok basit bir örnek işte şurada. Sizin sınıflandırmanız böyleyse, tamam mı? Ve siz K-Me's kullanıyorsanız, hiç de istediğiniz gibi bir şey ne yapacaktır? Çıkmayacaktır. Ama sınıflandırmanız böyle ve siz K-Me's kullandınız, o zaman uyumlu bir şey çıkacaktır. Anlatabildim mi?
+
+444
+01:45:39,444 --> 01:46:02,424
+Çok şey olmayabilir. Peki. Şimdi devam edelim. Regresyon algoritmaları. Şimdi kümlemelerden de bahsettim. Regresyon algoritmaları neydi bir kere? Çok basit hatırlayalım. Çıkışın sayı oldu. Burada neler yapabiliriz? Basit iler regresyon. Basit iler regresyondan kastımız aslında çok kabaca düşünürsek.
+
+445
+01:46:03,572 --> 01:46:15,171
+Şöyle bir model var elimizde. X'imiz var, Y'imiz var. Y dediğimiz şey bu X'lerle W diye bir şeyin çarpımı aslında. Değil mi? Linear regresyon diye ifade ettiğimiz şey bu.
+
+446
+01:46:16,811 --> 01:46:20,811
+Buradaki W diye ifade ettiğimiz şey katseler. Yani amacımız şu W'ları bulmak.
+
+447
+01:46:22,752 --> 01:46:27,811
+Yani biz bir linear bir model bulmaya çalışıyoruz. Mesela...
+
+448
+01:46:30,868 --> 01:46:41,868
+Nerede bizim şey? En başta ki regresyon. Örneğin, Boluk Halineprenk her şeydeydi o. Birinci slide'lardaydı.
+
+449
+01:46:43,868 --> 01:46:55,868
+Ya da onu çizebiliriz herhalde. Çok uzun olmaz. Yani şöyle bir şey var Mühendisliği, bir de şu arkadaş var. Bir de işte...
+
+450
+01:47:01,939 --> 01:47:09,939
+Noktalar var mesela. Onların nokta olduktan düşün. Tamam. Ben şimdi buraya bir tane bir şey oturtmaya çalışıyorum.
+
+451
+01:47:09,939 --> 01:47:13,939
+Pardon. Bir tane böyle bir şey oturtmaya çalışıyorum.
+
+452
+01:47:13,939 --> 01:47:18,939
+Bu oturtacağım şey bir doğru. Bu doğruyu aslında şurada W ile temsil ediyoruz değil mi?
+
+453
+01:47:18,939 --> 01:47:27,939
+Ve bu W'yu bulursam ben istediğim şey bu olacak. Şimdi bunu yapmak için lineer bir modelde yapabileceğim şey şu.
+
+454
+01:47:28,756 --> 01:47:31,756
+Amaç aslında...
+
+455
+01:47:38,163 --> 01:48:04,503
+Her iki tarafı x'e x'e çarpabilirim ben. Yani tek adımda bu işi yapmak için bir yol. Bunun bir alternatif bir şey. Ne derler ona? Perceptron gibi yani başlangıçta bir random bir W'dan başlayıp Gradient Accent'e adım adım adım adım istediğimiz W'ye doğru ilerlemek olabilir. Bu da bir yaklaşım ama iteratif bir süreç o.
+
+456
+01:48:04,912 --> 01:48:13,532
+Burada verdiğim şey ise analitik çözüm. Yani tek adımlı bir çözüm. Sabit sayıda işlem içeren bir çözüm. Öyle söyleyelim ya da.
+
+457
+01:48:16,115 --> 01:48:35,435
+İterasyon yok yani burada. Şimdi benim derdim ne? Şuradaki w'yu bulmak değil mi? Şu w'yu bulmak. Bu w'yu bulmak için o zaman ben şu w'yu eşittir bir şey elde etmem lazım. W'yu eşittir bir şey demem için o zaman şurası neye dönüştürmem lazım? Birime dönüştürmem lazım. Birim matrise. Bunu birim matrise dönüştürebilmek için bir şeyi tersiyle çarptığımızda oluyor değil mi?
+
+458
+01:48:39,060 --> 01:49:03,079
+x üzeri x'i 1 ile çarparsan, x üzeri x'i 1 ile çarparsan, x üzeri x'i 1 çarpı x şey olacağından dolayı, birim kare olacağından dolayı, direkt W eşittir, x üzeri x'i 1 çarpı y diye bulurum. İyi, güzel. Ama bunu yapabilmem için x'in ne olması lazım? Kara maddesi olması lazım. Bir maddesinin tersine alabilmeniz için, bir maddesinin tersine alabilmeniz için, bir maddesinin tersine alabilmeniz için, onunla çarpıldığında birim kareye elde edinmek lazım.
+
+459
+01:49:04,851 --> 01:49:08,271
+Etkisiz eleman, çarpmalı ki etkisiz matris, öyle söyleyelim.
+
+460
+01:49:08,948 --> 01:49:33,348
+Ama bunu yapabilmemiz için X'in kare maddesi olması lazım. X kare maddesi değil ki zaten bizim elimize geldiği X kare maddesi olmuyor değil mi? X dediğimiz şey neyi oluşturuyor? Satırlarında örneklerin, sütunlarında özelliklerin olduğu bizim maddesimiz. Bu maddesi kare olmak zorunda değil. Yani 50 tane satır 250 tane sütun olabilir. 50 tane örnek 250 tane özellik olabilir. O zaman ne yapalım?
+
+461
+01:49:35,636 --> 01:49:59,596
+X transpoz ile çarpalım ilk önce her iki tarafı. X'in transpoz ile çarpılırsa gerdeki tarafı. Yani şurada her iki tarafı. X'in transpoz ile çarptım. X'in transpoz ile çarpılır. X'in çarpılır her zaman karamatriz. Bu güzel. O zaman şu anda elimde şu var. Ve şurası bir karamatriz. O zaman ben buranın tersini alırsam.
+
+462
+01:50:00,115 --> 01:50:04,896
+Ve onu her iki tarafta çarparsam, o zaman w'yu tek başına bırakacağım.
+
+463
+01:50:04,896 --> 01:50:09,496
+Dolayısıyla w dediğimiz şey şu şekilde bulunmuş olacağı.
+
+464
+01:50:09,496 --> 01:50:15,336
+Bu dediğim gibi tamamen matrislerle bu çözümü bulmanın direkt yolu.
+
+465
+01:50:15,336 --> 01:50:20,976
+Ama dediğim gibi işte perceptron gibi algoritmalarını adım adım adım buldurabilirsiniz.
+
+466
+01:50:20,976 --> 01:50:21,976
+Tamam mı?
+
+467
+01:50:24,056 --> 01:50:26,176
+Şimdi gelelim...
+
+468
+01:50:30,195 --> 01:50:35,515
+İkinci Regresyon algoritmamıza, Karnes-Naber. Karnes-Naber algoritması,
+
+469
+01:50:35,663 --> 01:50:58,403
+Sınıflandırma da gördük. Burada da göreceğiz. Çünkü Kandes'in algoritması çok kolay kullanılabilir. Örnek verelim. Şimdi sizin elinizle diyelim ki şu siyah nokta, şuradaki siyah nokta biraz belli olsun diye kenara çekiyorum.
+
+470
+01:51:01,279 --> 01:51:06,279
+Şu dört tane siyah nokta olsun bakın. Şu siyah nokta, şu siyah nokta, şu siyah nokta.
+
+471
+01:51:06,279 --> 01:51:17,279
+Bu dört tane siyah nokta varken, tek boyuttan bahsediyorum. Ben karnın yarısını yamırla regresyon yaparsam ne olur?
+
+472
+01:51:17,279 --> 01:51:20,939
+Şimdi karnın 1 olduğu durumda bakın, karnın 1 olduğu durumda...
+
+473
+01:51:21,203 --> 01:51:31,904
+Yani en yakın noktayla düşündüğünüzde bir örnek geldiğinde, bakın bir örnek geldi. Şimdi bu örneğe en yakın eğitim örneği hangisi bu dördün içerisinden? Bu mu, bu mu, bu mu, bu mu?
+
+474
+01:51:32,372 --> 01:52:00,372
+Burada X uzayından bahsediyoruz tabii. X uzayında en yakın olan ne bu değil mi? Dolayısıyla bunun çıkışı olarak, şuradaki değerlerin çıkışı olarak neyi verecek? Bunun çıkışını verecek. Dolayısıyla burası böyle gidecek buna yakın yakın yakın. Belli bir noktadan sonra artık şu tam 1 ile 2'nin arasındaki orta noktadan sonra artık bu buradaki X'e daha yakın olmaya başlayacak değil mi? Şuradaki X'e daha yakın olmaya başlayacak. Ve bu sefer bunun değerlerini vermeye başlayacak. Bu işte 2 ile 4'ün ortasına...
+
+475
+01:52:00,372 --> 01:52:22,492
+Bu sefer 4'ün olduğu, yani şuradaki x'in değerlerine geçmeye başlayacak. Sonra bu 4'te 6'nın ortasında işte 5 gibi bir yerlerde bu taraftan, bu tarafa doğru geçecek. Ve sonsuza kadar burası bu 6 ile devam edecek. Burası zaten sonsuza kadar, yani şurası geriye doğru hep kırmızı x'lerle devam edecek. Dolayısıyla bu yaptığınızda Karnelis-Naber'la
+
+476
+01:52:23,220 --> 01:52:30,380
+Regresyon yaptığınızda şöyle bir şey elde etmiş olacaksınız. Fonksiyon elde etmiş olacaksınız.
+
+477
+01:52:30,380 --> 01:52:41,020
+Onu yeşille çizeyim. Şöyle geliyor. Sonra şurada çok hızlı bir şekilde tak diye aşağı düşüyor.
+
+478
+01:52:41,020 --> 01:52:45,100
+Sonra şu noktada sürekli bir fonksiyon fark ettiyseniz.
+
+479
+01:52:45,100 --> 01:52:49,020
+Burada şöyle birbirimize aşağı iniyor. Çok hızlı inlemedim aşağı ama.
+
+480
+01:52:49,076 --> 01:52:51,155
+Şöyle bir şey çıkartacak, tamam mı?
+
+481
+01:52:51,435 --> 01:52:53,515
+Dolayısıyla K-Nearest Neighbor'la
+
+482
+01:52:53,515 --> 01:52:55,076
+regresyon yapılabiliyor.
+
+483
+01:52:55,416 --> 01:52:57,836
+K eşit diye bir. K eşit diye bir dört için bunu yaparsanız
+
+484
+01:52:57,836 --> 01:52:59,615
+bu durumda zaten dört tane örnek
+
+485
+01:52:59,615 --> 01:53:01,695
+olacağımız hepsinin ortalamasını
+
+486
+01:53:01,695 --> 01:53:03,475
+bu sefer alacak. Hani normalde
+
+487
+01:53:03,475 --> 01:53:05,596
+K-Nearest Neighbor, mesela K'yı
+
+488
+01:53:05,596 --> 01:53:07,855
+birden farklı yaptığınızda, sınıflandırma yaptığınızda
+
+489
+01:53:07,855 --> 01:53:08,296
+ne oluyordu?
+
+490
+01:53:08,851 --> 01:53:18,992
+O K tane örneğin sınıflarına bakıyorduk. Hangi sınıftan en çok varsa o da oraya diyorduk. Burada ise K tane örneğin ona en yakın K tane şeyin.
+
+491
+01:53:22,036 --> 01:53:37,036
+Eğitim örneğinin çıkışlarının ortalamasını alarak işlemliyoruz. Ki burada da işte buradaki 7, 6, 9 ve 3'ün ortalamasında 5 küsur diye ben yazmışım herhalde. Ve buradaki şu gördüğünüz...
+
+492
+01:53:42,676 --> 01:53:49,876
+Model ise k'nın dört alındığında oluşacak model. Anlaşıldı mı k-NN'e burada regresyon?
+
+493
+01:53:54,003 --> 01:53:54,844
+Anlaşıldı hocam.
+
+494
+01:54:04,851 --> 01:54:24,851
+Şimdi gelelim ağaçlara. Regresyon ağaçlara. Şimdi karar ağaçlarında sınıflandırma yaptık. Burada da regresyon yapabilir miyiz? Evet yapabilir miyiz? Bakın şimdi şuraya bakalım. Şu üstteki şekle.
+
+495
+01:54:25,427 --> 01:54:48,247
+Bu üstteki şekilde bakın diyor ki X 3.6'dan küçük mü büyük mü bunu soruyor. Bu bundan küçük mü büyük mü? Ve işte büyük seride küçükse burada bakın kareler çıkmış görüyor musunuz? Bu kareler neydi? Karar düğümlerinde. Karar düğümlerinde yapraklarla sınıflandırmadığı ne vardı? O bölgeye düşerse bunun sınıfı şudur.
+
+496
+01:54:48,724 --> 01:55:00,144
+Sınıfı söylüyorduk. E burada ne diyeceğiz sadece? O bölgeye düşerse onun çıkışıcudur. Sayı yazıyoruz oraya. A sınıfı, B sınıfı yazmış ya da 1.37 ekli 1.35 gibi gibi değerler yaptık. Görüyor musunuz?
+
+497
+01:55:03,043 --> 01:55:09,584
+Dolayısıyla bir regresyon ağacı oluşturmak mümkün mü? Evet mümkün. Tamam. Peki nasıl oluşturacağız?
+
+498
+01:55:15,764 --> 01:55:39,304
+Bölebileceğimiz yerler vardı. Oralardan bölüyorduk. Ve o bölmeyi oradan yaparsak nasıl bir hata yaparız? Onu hesaplıyorduk değil mi? Şimdi burada da aynı şeyi yapacağız aslında. Böleceğiz. Yani farklı farklı yerlerden bölmenin birbirine göre ilin kötülüğünü bulmamız gerekecek.
+
+499
+01:55:42,644 --> 01:55:56,943
+İlk önce şöyle söyleyeyim. Artık daha bölmeye gerek yok dediğimiz noktada, daha daha bunu bölmeyeceğim dediğim noktada, alt tut olarak o elin oraya düşmüş olan, o bölgeye düşmüş olan örneklerin ortalamasını veriyoruz.
+
+500
+01:55:58,163 --> 01:55:58,644
+Tamam mı?
+
+501
+01:55:59,663 --> 01:56:04,984
+O bölgeye düşen örnekler ne nerse onların ortalamasını çıktı olarak veriyoruz.
+
+502
+01:56:04,984 --> 01:56:06,984
+Peki, şimdi...
+
+503
+01:56:07,796 --> 01:56:19,136
+Sorumuz şu. Ben bu diyelim ki aslında burada çok rahat bir şekilde gösterebiliriz. Bir saniye. Şöyle bir şeyim olsa elimde.
+
+504
+01:56:21,476 --> 01:56:28,936
+Bakın sadece burası var. Tamam mı? Şu kırmızı noktalar var sadece elimde. Ve ben bunu bir yerlerden böleceğim.
+
+505
+01:56:29,395 --> 01:56:44,796
+Ve böldüğüm zaman da diyeceğim ki, şuradan bölersen bu taraftakilerin ortalaması olacak. Bunun da çıktısı bu taraftakilerin ortalaması olacak. Bir sürü farklı farklı yerlerden bölebilirim bunu görebiliyorsunuz. Yani şuradan bölebilirim.
+
+506
+01:56:55,347 --> 01:57:06,587
+Buradan bölebilirim, buradan bölebilirim, buradan bölebilirim gibi bir sürü yerlerden bölebilirim ben bunu. Yani ben burada şuradan bölmemini anlamış, şöyle bir şey olacak. Buradan bölersem bunu, şöyle yapayım.
+
+507
+01:57:07,707 --> 01:57:22,047
+Ben şöyle yapayım, daha özgürsün. Mesela ben bunu, bu datayı şuradan bölersem ne olur? Onu söyleyeyim. Olacak şey şu.
+
+508
+01:57:22,963 --> 01:57:29,024
+Sol tarafta dört nokta var. Bu dört noktanın ortalaması nasıl bir şey? Şöyle bir şey değil mi?
+
+509
+01:57:30,024 --> 01:57:36,524
+Şöyle bir şey. Sağ tarafta ne var? Bir tane nokta. Onun ortalaması tek kendisi olduğu için şöyle bir şey oluyor.
+
+510
+01:57:36,524 --> 01:57:40,123
+Şöyle bir şey oluyor. Direkt tam onun üzerinden geçen.
+
+511
+01:57:40,123 --> 01:57:44,524
+Yani şöyle bir şey elde etmiş olacağım. Anlatabildim mi? Model elde etmiş olacağım.
+
+512
+01:57:46,676 --> 01:58:09,676
+Dördünün ortalamasının aşağı yukarı şurası olduğunu tahmin ettim. Burada bir tane olacağı için şuradan geçen bir şey. Peki, buradan bölmeye göre buradan bölmenin yani işte şu kırmızı şu anda şuradan bölmüş ya bu. Ve buradan böldüğünün şu maviye elde etmiş görüyor musunuz? Şu maviye elde etmiş. Bunun arasındaki farkı nasıl anlayabilirim? Sorun bu.
+
+513
+01:58:16,692 --> 01:58:23,811
+Şu kırmızıdan bölmenin, şuradaki şu, tam şuradan bölmenin hangisinin iyi olduğuna dair nasıl bir şey hesaplayabilirim?
+
+514
+01:58:26,112 --> 01:58:27,471
+Neye bakabilirim?
+
+515
+01:58:29,452 --> 01:58:32,231
+Hata ne olur? Hata neyle ölçebilirim?
+
+516
+01:58:41,460 --> 01:58:46,979
+Outputların neylerini toplarsan bana hatayı verir.
+
+517
+01:58:50,515 --> 01:59:05,916
+Yani mesela şu yeşili düşünün. Bu yeşilin, şu modelin, şu bu bir model. Şu mavi de başka bir model bak. Şu yeşil modeli bir düşünün. Bir de şu mavi modeli düşünün. Mavi model niye yeşil modelden daha iyi ve ben bunu nasıl ölçebilirim? Sorun bu.
+
+518
+01:59:13,395 --> 01:59:14,135
+Bekliyorum.
+
+519
+01:59:35,412 --> 01:59:48,412
+Hocam, şey uzaklıkları ama bence siz mavi model şeyden daha iyi olduğunu için o belirttiğimiz hat neydi? Onu ben bilmiyorum.
+
+520
+01:59:49,051 --> 01:59:59,631
+Bak, şu mavi bir model var, bir de yeşil bir model var. Onu görüyorsun. Yani mavi model şurası, yeşil modelse şurası. Görüyorsun değil mi yeşil modeli?
+
+521
+01:59:59,631 --> 01:59:59,872
+Evet.
+
+522
+02:00:00,000 --> 02:00:03,399
+Mavi model mi daha iyi, yeşil model mi daha iyi?
+
+523
+02:00:04,359 --> 02:00:05,340
+Mavi model.
+
+524
+02:00:05,859 --> 02:00:07,199
+Niye daha iyi?
+
+525
+02:00:07,899 --> 02:00:09,800
+Nasıl ölçeceğiz? Sorun bu.
+
+526
+02:00:09,800 --> 02:00:17,800
+Evet, yani bence o uzaklıklarının karesi kullanabiliriz.
+
+527
+02:00:18,899 --> 02:00:22,760
+Ortalamadan uzaklıklarının karesini kullanabilir miyiz?
+
+528
+02:00:28,819 --> 02:00:37,879
+Ortalamadan uzaklıklarının karelerinden. Yani şuradaki modelden uzaklıklarının karelerinden. Hatta ortalaması falan desem o neye denk geliyor?
+
+529
+02:00:43,604 --> 02:00:46,304
+Değerlerinin ortalamadan uzaklıklarını ne gösterir?
+
+530
+02:00:48,604 --> 02:00:49,904
+Hatayeni.
+
+531
+02:00:50,504 --> 02:00:53,104
+Tahtarın bir ismi var. Ne o?
+
+532
+02:00:54,304 --> 02:00:56,304
+RSI.
+
+533
+02:00:56,504 --> 02:00:59,304
+Squared Root. Squared...
+
+534
+02:01:01,404 --> 02:01:03,904
+Tam İngilizcesini hatırlamıyorum.
+
+535
+02:01:03,904 --> 02:01:06,304
+İngilizce ve Türkçesi aynı.
+
+536
+02:01:08,904 --> 02:01:10,104
+Olan bir şey.
+
+537
+02:01:15,347 --> 02:01:39,347
+Standart Deviation. Standart sapması arkadaşlar. Örneklerin standart sapması. Şimdi ortalamasını veriyoruz ve ortalamasını, hani yeşil için, yani şu yeşil model ne? Burası için uydurduğumuz model değil mi? Bu ortalama. Bunun standart sapması, buradaki bu kırmızıların standart sapması neyi gösterecektir? Bu ortalamadan ne kadar saptıklarını gösterecektir. Dolayısıyla...
+
+538
+02:01:39,828 --> 02:02:00,028
+Böldüm ben, bu bölme işlemi yaptığımda, bu sol taraftaki örneklerin standart satması ile sağ taraftaki örneklerin standart satmasını toplarsam, bana hatayı oldu gibi söyleyecektir. Bu kadar. Çıkışların standart satmalarını toplayacaksınız. Ve buna göre nereden bölmenin iyi olduğunu bulacaksınız. Tamam mı?
+
+539
+02:02:01,779 --> 02:02:20,919
+Ve burada da saflık kriteri aslında kabul edilebilir standart satmayla alakalı bir şey. Kabul edilebilir standart satmayı sıfır yaparsanız, bu durumda bütün örneklerin tam üzerinden geçmesini sağlarsanız ağacınız böyle kocaman bir ağaç olur aşağıdaki gibi. Ki hala burada bile tam geçmemiş.
+
+540
+02:02:21,427 --> 02:02:47,467
+Daha da bunu büyütebilirsiniz. Yani standart satmayı sıfır kabul ederseniz, şu standart satma alfa işte bu toans terimi diye ifade eden, mesela sıfır nokta sıfır beşmiş. Bunu sıfıra çekerseniz tam kırmızı noktanın hepsinin üstünden geçen bir şey elde edersiniz. Ve bu durumda ağaç kocaman bir şey olur. Standart satmasın sıfır olacak çünkü o durumda değil mi? Her model tam kırmızı noktanın üstünden geçerse standart satma sıfır olur. Her yerde.
+
+541
+02:02:48,000 --> 02:02:56,359
+Ama daha töventsiz davranırsanız, daha küçük ağaçlarınız falan olabilir. Dolayısıyla regresyon ağaçlarında hatamız standart satma.
+
+542
+02:02:59,299 --> 02:03:06,679
+Yani oradan böldüğümüzde sol tarafa düşen örneklerin çıkışlarının standart satmasıyla sağ tarafa düşenlerin standart satması.
+
+543
+02:03:08,419 --> 02:03:13,299
+Peki, şimdi o zaman sona geldik zaten.
+
+544
+02:03:13,743 --> 02:03:19,403
+İki üç tane start kaldı. Onları haftaya konuşuruz. Başka bir şeyimiz yok. Peki.
+
+545
+02:03:22,003 --> 02:03:26,803
+Peki arkadaşlar, bugünün anlatacağım dersi bu kadar. Sizin sorunuz var mı?
+
+546
+02:03:29,623 --> 02:03:34,803
+Hocam şey sorayım ben. Ödevin sonuçlarını tahmini olarak ne zaman açıklarsanız onu sorayım.
+
+547
+02:03:34,943 --> 02:03:35,884
+Bir dönem sonra yaklaşıyor da.
+
+548
+02:03:38,023 --> 02:03:40,123
+Ödevin sonuçlarını ne zaman açıklayan hangi ödevin?
+
+549
+02:03:40,884 --> 02:03:42,003
+İlk ödev ödeye.
+
+550
+02:04:02,163 --> 02:04:03,043
+Gözüküyor mu?
+
+551
+02:04:04,563 --> 02:04:05,403
+Evet hocam, gözüküyor.
+
+552
+02:04:06,363 --> 02:04:11,323
+Tamam, şurada görebilirsiniz ödev sonuçlarımızı. Şöyle yavaş yavaş aşağı kaydıreyim.
+
+553
+02:04:38,868 --> 02:04:40,048
+Gördü herkese herhalde.
+
+554
+02:04:40,068 --> 02:04:41,348
+13 sınır değil mi hocam?
+
+555
+02:04:42,008 --> 02:04:48,088
+13 sınırı, o 12 derken benim kendime aldığım notlar. Bunları 10 diye değerlendirebilirsiniz. 10 üzerinde 12 almış.
+
+556
+02:04:48,588 --> 02:04:54,308
+Öyle bir etkisi olamıyor. Ama şey, ne derler ona? İyi yapmışlar.
+
+557
+02:04:55,348 --> 02:04:56,748
+Tamam hocam, çok sağ olun hocam.
+
+558
+02:04:56,748 --> 02:04:57,148
+Gelin.
+
+559
+02:05:02,036 --> 02:05:03,195
+Başka soru?
+
+560
+02:05:15,956 --> 02:05:19,855
+Ödev 25 puan değil miydi hocam? Hayır değildi.
+
+561
+02:05:22,275 --> 02:05:25,216
+Hocam %25 etkisinden bahsediyor herhalde arkadaş.
+
+562
+02:05:26,195 --> 02:05:28,556
+Herhalde, evet. Etkisi %25 ama, evet.
+
+563
+02:05:30,395 --> 02:05:31,256
+Anlaştık mı?
+
+564
+02:05:31,996 --> 02:05:32,336
+Salaha.
+
+565
+02:05:37,140 --> 02:05:37,620
+Peki.
+
+566
+02:05:41,840 --> 02:05:46,680
+Peki o zaman arkadaşlar, görüşmek üzere diliyorum kısmı haftaya. Herkese iyi günler.
+
+567
+02:05:47,320 --> 02:05:47,960
+İyi günler hocam.
