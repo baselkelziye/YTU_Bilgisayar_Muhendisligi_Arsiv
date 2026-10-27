@@ -1,0 +1,5055 @@
+1
+00:11:37,427 --> 00:11:38,648
+arkadaşlar günaydın.
+
+2
+00:11:42,484 --> 00:11:43,604
+sesim geliyor mu?
+
+3
+00:11:45,123 --> 00:11:47,103
+günaydın hocam, evet geliyor sesiniz.
+
+4
+00:11:47,623 --> 00:11:48,343
+tamam, süper.
+
+5
+00:11:54,067 --> 00:11:56,867
+kameramı da açıyorum. isterseniz başlayalım.
+
+6
+00:11:58,747 --> 00:12:04,267
+okay, today we are going to talk about
+
+7
+00:12:04,267 --> 00:12:15,467
+clustering topic, which is chapter 7. up to now we talked about chapter 1, chapter 2, and chapter 3.
+
+8
+00:12:15,467 --> 00:12:21,908
+you can find, as i said early in the beginning of the course, you can find all the materials
+
+9
+00:12:21,908 --> 00:12:34,948
+in the course, the book website, and also all the teaching materials that I talked about
+
+10
+00:12:34,948 --> 00:12:41,667
+are available here in the course websites in the document section.
+
+11
+00:12:41,667 --> 00:12:42,508
+Okay.
+
+12
+00:12:43,887 --> 00:12:51,667
+Today, we are jumping into another topic, which is Chapter 7, clustering on the
+
+13
+00:12:51,667 --> 00:12:58,507
+of large scale data sets.
+
+14
+00:12:58,507 --> 00:13:03,748
+So let's get started.
+
+15
+00:13:14,035 --> 00:13:24,355
+ok, so let's get started and first of all we will talk about the topic of clustering which is also known as unsupervised learning algorithms.
+
+16
+00:13:24,355 --> 00:13:31,796
+let me set my time first so that I know when the first session is over.
+
+17
+00:13:33,235 --> 00:13:42,035
+ok
+
+18
+00:13:43,028 --> 00:13:45,028
+ok.
+
+19
+00:13:45,028 --> 00:13:55,587
+first we are going to talk about the kinds of applications where we apply clustering and then we are going to overview the methodologies, techniques that we use for clustering.
+
+20
+00:13:55,587 --> 00:14:12,868
+basically clustering is a machine learning category which means that machine learning technique and it is also called unsupervised learning methodology.
+
+21
+00:14:21,683 --> 00:14:36,683
+Now, the problem here is that we would like to understand the underlying data structure, underlying data structure of data sets that are available in the databases.
+
+22
+00:14:36,683 --> 00:14:47,683
+Okay, so when we say about the structure, we want to find out how the data accumulated.
+
+23
+00:14:47,683 --> 00:14:57,923
+So what are the segmentations in the data so that we will have an idea of the data that's available in the data sets.
+
+24
+00:14:59,283 --> 00:15:07,303
+Now, so you see that, so in order to make it easier to understand here, you see an illustration in this picture.
+
+25
+00:15:07,303 --> 00:15:17,463
+here. Here I have two-dimensional data and this two-dimensional data as you see there's obvious
+
+26
+00:15:17,463 --> 00:15:23,783
+three different structures. There's one structure here, there's another one here and another one here.
+
+27
+00:15:23,783 --> 00:15:29,743
+As you see the data points that are here are close to each other, the data points that are here close
+
+28
+00:15:29,743 --> 00:15:35,063
+to each other and similarly here as well. And there are two different data points that are far away
+
+29
+00:15:35,063 --> 00:15:36,183
+from the rest of them.
+
+30
+00:15:44,820 --> 00:16:01,199
+So, formally, when we define the clustering, we say that given a set of points with a notion of distance between these points, we want to group these points into some number of clusters.
+
+31
+00:16:01,199 --> 00:16:09,000
+So, basically, clustering is grouping together the data points that are available in the datasets.
+
+32
+00:16:09,000 --> 00:16:16,979
+We want to form clusters by applying these clustering algorithms on the datasets.
+
+33
+00:16:18,639 --> 00:16:27,739
+And we define the cluster in a way that members of a cluster are close to similar to each other,
+
+34
+00:16:27,959 --> 00:16:33,019
+and members of different clusters are dissimilar from each other.
+
+35
+00:16:33,020 --> 00:16:43,299
+So if you can go back, so here, if this is a structure, if we call this as a cluster, members of this cluster are close to each other.
+
+36
+00:16:44,279 --> 00:16:51,440
+And members of the clusters of, members of different clusters are dissimilar from each other.
+
+37
+00:16:51,559 --> 00:16:55,260
+So they, as you see, they are, they have a distance in between.
+
+38
+00:17:01,427 --> 00:17:11,427
+But the problem with the clustering is that usually points are data points are high dimensional space.
+
+39
+00:17:11,427 --> 00:17:20,427
+So in the example that I have shown you, we had two dimensional data points, but usually the data points have high dimensions.
+
+40
+00:17:20,427 --> 00:17:26,427
+So which means that each data point have 100 dimensions, maybe more than that.
+
+41
+00:17:26,427 --> 00:17:35,927
+and the similarity between these data points is defined by, can be defined by using different
+
+42
+00:17:35,927 --> 00:17:42,828
+distance measures so we can use Euclidean distance which you are familiar with, you can use cosine
+
+43
+00:17:42,828 --> 00:17:49,148
+distance, you can use Jaccard distance, edit distance, different distance metrics can be used
+
+44
+00:17:49,147 --> 00:17:52,907
+in order to define the similarity between the data points.
+
+45
+00:17:54,947 --> 00:18:03,307
+And for the purpose of our course is that not only the data, each data point is high dimensional,
+
+46
+00:18:03,307 --> 00:18:09,447
+but also the amount of data is so big so it cannot fit into a single memory.
+
+47
+00:18:09,907 --> 00:18:16,827
+So we have for this particular core, for big data cores, so we need to find algorithms
+
+48
+00:18:16,828 --> 00:18:25,268
+that can process the data and find clusters on a data set that is large scale data.
+
+49
+00:18:25,268 --> 00:18:25,747
+Okay.
+
+50
+00:18:26,108 --> 00:18:31,188
+That data set that cannot fit into a single computer.
+
+51
+00:18:36,692 --> 00:19:00,792
+Now, so going back to the example that I have shown you, so in the two-dimensional data sets that I have, if I apply the clustering algorithms, as you see, there are three obvious clusters, and the algorithm can find these clusters in a perfect way.
+
+52
+00:19:00,792 --> 00:19:07,732
+So that way I can say that in this data set, there are three obvious data segments.
+
+53
+00:19:08,171 --> 00:19:11,471
+And so this is the segment one, segment two, and segment three.
+
+54
+00:19:11,732 --> 00:19:11,872
+Okay.
+
+55
+00:19:12,132 --> 00:19:18,192
+Now this gives me an idea of what kind of data that I have in my data sets.
+
+56
+00:19:26,036 --> 00:19:34,655
+Now, in the previous example, the data structures, the clusters are far away from each other.
+
+57
+00:19:34,655 --> 00:19:40,195
+So, finding the cluster in such a data set is easy.
+
+58
+00:19:41,015 --> 00:19:41,115
+Okay.
+
+59
+00:19:41,395 --> 00:19:49,915
+But usually, within real-life data sets, the data points in a data set, they are close to each other.
+
+60
+00:19:50,036 --> 00:19:54,735
+So, which means that it is difficult to distinguish the clusters from each other.
+
+61
+00:19:54,735 --> 00:20:03,455
+So for example, as you see, I have several clusters, each colored in a different way.
+
+62
+00:20:04,175 --> 00:20:13,435
+And as you see, the data points that belongs to each clusters are close to each other.
+
+63
+00:20:13,435 --> 00:20:30,735
+So basically, I need to have an algorithm that can identify these clusters in a perfect way, even though the data points of each clusters are close to each other.
+
+64
+00:20:30,735 --> 00:20:38,935
+OK, even in this particular picture, as you see, the data points of different clusters are so close to each other.
+
+65
+00:20:38,935 --> 00:20:42,995
+My algorithm should be able to identify these clusters.
+
+66
+00:20:44,036 --> 00:20:48,935
+OK, so therefore, we are saying that clustering is a difficult problem,
+
+67
+00:20:49,075 --> 00:20:56,155
+not only from the perspective that these data points, high dimensional space and data points are so close to each other,
+
+68
+00:20:56,155 --> 00:21:07,655
+But also from the perspective of big data, these data points, the number of data points or the size of the data sets is so big, so it cannot fit into single memory.
+
+69
+00:21:07,815 --> 00:21:19,295
+So our methodologies should be able to process the data that are stored on multiple computers.
+
+70
+00:21:26,259 --> 00:21:27,559
+So why it is hard?
+
+71
+00:21:27,759 --> 00:21:31,319
+So as I said, the clustering in two dimensions is easy.
+
+72
+00:21:31,919 --> 00:21:34,659
+Clustering small amounts of data is easy.
+
+73
+00:21:34,980 --> 00:21:37,399
+But in most cases, this is not the case.
+
+74
+00:21:37,899 --> 00:21:44,459
+So we have many applications that involve high dimensions.
+
+75
+00:21:44,459 --> 00:21:48,600
+For example, there are applications with even 10,000 dimensions
+
+76
+00:21:48,600 --> 00:21:51,520
+where each data point has 10,000 dimensions.
+
+77
+00:21:51,520 --> 00:21:57,520
+So, high-dimensional spaces basically look different.
+
+78
+00:21:57,879 --> 00:22:02,859
+So, we cannot see the clusters in naked eye.
+
+79
+00:22:03,780 --> 00:22:11,919
+And also, since it's high dimensions, the data points,
+
+80
+00:22:14,520 --> 00:22:19,719
+all pairs of data points almost have the same distance,
+
+81
+00:22:19,719 --> 00:22:37,660
+Which means that since it has high dimensions, so if you look at the distance between the data points, they may be far away from the perspective of one dimension, but they may be also close from the perspective of other dimensions.
+
+82
+00:22:38,239 --> 00:22:46,379
+So when you look at it, basically for some dimensions they are close to each other, for some dimensions they are far away.
+
+83
+00:22:46,379 --> 00:22:54,999
+So if you think that way, in a high dimensional space, the data points are basically close to each other.
+
+84
+00:22:55,319 --> 00:22:59,339
+And they may have the same distance to each other as well.
+
+85
+00:22:59,339 --> 00:23:09,819
+So for this reason, it is difficult to distinguish these clusters, each individual clusters, in a perfect way.
+
+86
+00:23:09,959 --> 00:23:11,839
+So that's why it is difficult.
+
+87
+00:23:17,619 --> 00:23:21,499
+So here is an example clustering problem.
+
+88
+00:23:22,219 --> 00:23:28,519
+A catalog of 2 million sky objects represents objects by the radiation in 7 dimensions.
+
+89
+00:23:29,599 --> 00:23:36,019
+So basically, so there is a database that has 2 billion objects in it.
+
+90
+00:23:36,419 --> 00:23:40,439
+And each object has 7 dimensions, okay?
+
+91
+00:23:40,439 --> 00:23:48,939
+There is a vector with seven dimensions, each vector representing one data point,
+
+92
+00:23:49,079 --> 00:23:52,160
+and the total number of data points is 2 billion.
+
+93
+00:23:52,800 --> 00:23:57,279
+And we want to basically cluster the similar objects,
+
+94
+00:23:57,359 --> 00:24:01,599
+and these similar objects could be galaxies, stars, etc.
+
+95
+00:24:02,739 --> 00:24:07,599
+And so in order to do that, basically we apply the clustering algorithms.
+
+96
+00:24:07,599 --> 00:24:09,599
+algoritmas, the clustering algoritmas
+
+97
+00:24:09,599 --> 00:24:11,599
+should be able to
+
+98
+00:24:11,599 --> 00:24:13,759
+identify all the stars,
+
+99
+00:24:13,919 --> 00:24:15,960
+all the galaxies in this
+
+100
+00:24:15,960 --> 00:24:17,160
+dataset.
+
+101
+00:24:17,499 --> 00:24:18,640
+So that is why
+
+102
+00:24:18,640 --> 00:24:21,399
+it is a useful technique
+
+103
+00:24:21,399 --> 00:24:24,060
+in machine learning
+
+104
+00:24:24,060 --> 00:24:26,179
+algorithms that
+
+105
+00:24:26,179 --> 00:24:28,139
+we can use in order to find
+
+106
+00:24:28,139 --> 00:24:30,099
+the data structure in the datasets.
+
+107
+00:24:30,999 --> 00:24:32,700
+So this is an example
+
+108
+00:24:32,700 --> 00:24:34,579
+clustering
+
+109
+00:24:34,579 --> 00:24:35,679
+application.
+
+110
+00:24:37,599 --> 00:24:44,959
+Another application, let's say music divides into categories.
+
+111
+00:24:44,959 --> 00:24:50,839
+So we have different categories and the customers prefer a few categories.
+
+112
+00:24:51,719 --> 00:24:51,759
+Okay.
+
+113
+00:24:52,319 --> 00:25:00,639
+And so let's say, so we represent a CD by a set of customers who bought it, right?
+
+114
+00:25:00,639 --> 00:25:14,519
+So let's say a particular music CD is bought a certain number of customers and we use these customers to represent this CD.
+
+115
+00:25:14,519 --> 00:25:17,719
+ve if you consider
+
+116
+00:25:17,719 --> 00:25:18,839
+from this perspective
+
+117
+00:25:18,839 --> 00:25:20,639
+if you represent
+
+118
+00:25:20,639 --> 00:25:22,099
+each music CD
+
+119
+00:25:22,099 --> 00:25:24,599
+with the set of customers
+
+120
+00:25:24,599 --> 00:25:25,819
+that bought that CD
+
+121
+00:25:25,819 --> 00:25:27,879
+in that case you would have
+
+122
+00:25:27,879 --> 00:25:30,239
+vectors of customers
+
+123
+00:25:30,239 --> 00:25:32,319
+each representing
+
+124
+00:25:32,319 --> 00:25:33,779
+a particular CD
+
+125
+00:25:33,779 --> 00:25:35,519
+each representing
+
+126
+00:25:35,519 --> 00:25:37,359
+that those customers bought
+
+127
+00:25:37,359 --> 00:25:38,559
+that particular CD
+
+128
+00:25:38,559 --> 00:25:41,319
+and if you have a data set
+
+129
+00:25:41,319 --> 00:25:43,319
+like this so you can do clustering
+
+130
+00:25:43,319 --> 00:25:45,619
+on this dataset.
+
+131
+00:25:46,159 --> 00:25:48,139
+And this will give you the clusters
+
+132
+00:25:48,139 --> 00:25:50,459
+of customers that have
+
+133
+00:25:50,459 --> 00:25:51,039
+similar
+
+134
+00:25:51,039 --> 00:25:53,579
+CDs.
+
+135
+00:25:54,399 --> 00:25:56,039
+So the
+
+136
+00:25:56,039 --> 00:25:58,539
+sets of customers that have similar
+
+137
+00:25:58,539 --> 00:25:59,780
+taste in music.
+
+138
+00:26:00,299 --> 00:26:02,299
+So this is another
+
+139
+00:26:02,299 --> 00:26:03,780
+example
+
+140
+00:26:03,780 --> 00:26:06,579
+application for clustering.
+
+141
+00:26:06,939 --> 00:26:08,000
+So let's move forward.
+
+142
+00:26:09,700 --> 00:26:10,399
+And another
+
+143
+00:26:10,399 --> 00:26:11,799
+application is
+
+144
+00:26:11,799 --> 00:26:13,679
+klasik dokumun.
+
+145
+00:26:13,779 --> 00:26:15,579
+We can also use klasik for
+
+146
+00:26:15,579 --> 00:26:17,679
+grouping together the documents
+
+147
+00:26:17,679 --> 00:26:18,799
+on the same topic.
+
+148
+00:26:19,639 --> 00:26:21,599
+Let's say each document
+
+149
+00:26:21,599 --> 00:26:23,299
+is represented
+
+150
+00:26:23,299 --> 00:26:25,279
+with a set of words
+
+151
+00:26:25,279 --> 00:26:27,959
+and we can say that
+
+152
+00:26:27,959 --> 00:26:29,959
+documents in the same
+
+153
+00:26:29,959 --> 00:26:31,659
+topic may have
+
+154
+00:26:31,659 --> 00:26:32,899
+the same
+
+155
+00:26:32,899 --> 00:26:35,319
+set of words in it.
+
+156
+00:26:35,759 --> 00:26:37,279
+In that case,
+
+157
+00:26:37,279 --> 00:26:38,799
+we can represent
+
+158
+00:26:38,799 --> 00:26:40,399
+each document
+
+159
+00:26:40,399 --> 00:26:45,579
+with a group of words that appear in that document.
+
+160
+00:26:46,119 --> 00:26:49,679
+Okay, so in that case, you would have a vector of words
+
+161
+00:26:49,679 --> 00:26:52,920
+where each word in that vector
+
+162
+00:26:52,920 --> 00:26:57,459
+will belong to that document,
+
+163
+00:26:57,640 --> 00:26:59,259
+that vector is going to represent.
+
+164
+00:26:59,859 --> 00:27:01,579
+And if you have a data set like this,
+
+165
+00:27:01,579 --> 00:27:05,480
+so you can group together these word vectors.
+
+166
+00:27:05,971 --> 00:27:10,971
+ve dağıtık veri işlemini.
+
+167
+00:27:10,971 --> 00:27:11,971
+ok?
+
+168
+00:27:11,971 --> 00:27:18,971
+so you can basically apply clustering on a set of documents in order to find the documents that are on the same topic.
+
+169
+00:27:19,971 --> 00:27:24,971
+and you can do the same thing in the other way.
+
+170
+00:27:24,971 --> 00:27:33,971
+so you can basically group together the words that co-occur in many documents.
+
+171
+00:27:33,971 --> 00:27:39,812
+So this time, instead of clustering the documents, instead of grouping together the documents,
+
+172
+00:27:39,812 --> 00:27:45,091
+you will group together the words that appears in the documents.
+
+173
+00:27:45,091 --> 00:27:54,391
+This time, you will find out the words that frequently appear or so the words that appear
+
+174
+00:27:54,391 --> 00:27:55,391
+in the documents.
+
+175
+00:27:55,391 --> 00:28:01,251
+You will group together the words based on their existing in the documents.
+
+176
+00:28:05,428 --> 00:28:09,067
+Now, these are some examples of clustering.
+
+177
+00:28:09,747 --> 00:28:13,827
+So there are many other examples of clustering
+
+178
+00:28:13,827 --> 00:28:19,907
+or grouping together datasets in real life.
+
+179
+00:28:20,727 --> 00:28:20,827
+Okay.
+
+180
+00:28:21,407 --> 00:28:24,667
+Now, when I give you the description of clustering,
+
+181
+00:28:24,667 --> 00:28:29,567
+I told you that the idea is that we want to group together the datasets,
+
+182
+00:28:30,087 --> 00:28:34,387
+okay, and with a notion of distance metric.
+
+183
+00:28:34,387 --> 00:28:39,387
+So I talked about the notion of distance metric.
+
+184
+00:28:39,527 --> 00:28:44,507
+And there are different distance metrics that we can use in order to identify these clusters.
+
+185
+00:28:44,507 --> 00:28:47,627
+So one is Jekart distance.
+
+186
+00:28:47,887 --> 00:28:51,347
+You are familiar with the Jekart distance from the previous chapter.
+
+187
+00:28:52,087 --> 00:28:57,367
+Basically, Jekart distance identifies the similarity between the two documents.
+
+188
+00:28:57,788 --> 00:29:00,887
+And remember how we calculated the Jekart distance.
+
+189
+00:29:00,887 --> 00:29:10,188
+If you consider the two sets, Jekker distance in denominator, it calculates the intersection of the two sets.
+
+190
+00:29:10,387 --> 00:29:15,847
+In the denominator, it basically calculates the union of the two sets.
+
+191
+00:29:16,387 --> 00:29:22,428
+And by dividing these two values, it gives you the Jekker distance between these two sets.
+
+192
+00:29:22,968 --> 00:29:29,827
+Okay, so that is an important metric that can give us the distance between the two sets.
+
+193
+00:29:30,887 --> 00:29:36,307
+And the second metric is the Euclidean distance metric.
+
+194
+00:29:37,008 --> 00:29:44,108
+And with the Euclidean distance metric, so you are familiar with it, so you have seen it in many different courses.
+
+195
+00:29:44,108 --> 00:29:57,587
+It basically gives us the distance between the points where we can illustrate each point with a numerical value.
+
+196
+00:29:57,587 --> 00:30:10,067
+Okay, so here, so in this particular case, if this is a vector that represents the word, so in that case, so we can use 1 or 0.
+
+197
+00:30:10,327 --> 00:30:13,747
+1 indicates that this word appears in the document.
+
+198
+00:30:13,947 --> 00:30:16,928
+0 indicates that this word does not appear in the document.
+
+199
+00:30:16,928 --> 00:30:27,288
+Basically, as you see, if I put the numerical values here, in that case, I can calculate the Euclidean distance between the two documents.
+
+200
+00:30:27,588 --> 00:30:28,347
+Okay.
+
+201
+00:30:29,248 --> 00:30:33,548
+And another distance metric is cosine distance metric.
+
+202
+00:30:33,707 --> 00:30:41,987
+In that case, so we can basically treat each vector,
+
+203
+00:30:42,688 --> 00:30:49,908
+each data representation as a vector,
+
+204
+00:30:50,288 --> 00:30:53,868
+and we can calculate the distance between the vectors
+
+205
+00:30:53,868 --> 00:30:56,408
+by using the cosine value.
+
+206
+00:30:56,407 --> 00:31:06,887
+In the cosine distance, so you are familiar with it, if the cosine between the two vectors is zero, in that case, they have perfect match.
+
+207
+00:31:07,227 --> 00:31:12,667
+So they basically, they are similar, okay?
+
+208
+00:31:12,868 --> 00:31:24,347
+If the distance between the two vectors increases, in that case, so they will become less similar and the dissimilarity will increase, okay?
+
+209
+00:31:24,347 --> 00:31:33,067
+So, this is another metric that we use in order to find the similarity between the two data points.
+
+210
+00:31:37,652 --> 00:31:42,072
+Now, there are different categories of clustering.
+
+211
+00:31:42,391 --> 00:31:45,511
+There are different ways of doing clustering.
+
+212
+00:31:45,511 --> 00:31:51,511
+I will focus on two widely known categories.
+
+213
+00:31:52,471 --> 00:31:55,511
+One is the hierarchical clustering methodology.
+
+214
+00:31:56,631 --> 00:31:59,511
+The other one is the point assignment-based clustering methodology.
+
+215
+00:32:00,711 --> 00:32:07,492
+Now, the hierarchical clustering methodology is creating an additional data structure such as this one.
+
+216
+00:32:07,652 --> 00:32:11,652
+Dendogram.
+
+217
+00:32:11,652 --> 00:32:15,652
+As the algorithm, as these hierarchical algorithm runs,
+
+218
+00:32:15,652 --> 00:32:19,652
+this Dendogram data structure is constructed
+
+219
+00:32:19,652 --> 00:32:23,652
+and this type of algorithms, they are using this data structure
+
+220
+00:32:23,652 --> 00:32:27,652
+in order to identify the clusters.
+
+221
+00:32:27,652 --> 00:32:32,652
+The hierarchical clusters can also be analyzed under two categories.
+
+222
+00:32:32,652 --> 00:32:37,172
+One is aglomerative, which is bottom-up.
+
+223
+00:32:38,131 --> 00:32:46,071
+Aglomerative, basically, it tells you that at the beginning, you treat each point as a cluster.
+
+224
+00:32:46,732 --> 00:32:55,491
+And then as moving forward from the initial point, you repeatedly combine the two nearest clusters into one.
+
+225
+00:32:55,491 --> 00:33:01,831
+And then as you keep doing this in an iterative way, you construct such a dendogram.
+
+226
+00:33:02,371 --> 00:33:05,751
+And then by using the dendogram, you can identify the clusters.
+
+227
+00:33:06,731 --> 00:33:11,891
+The second methodology is top-down divisive methodology.
+
+228
+00:33:12,411 --> 00:33:19,751
+So this time, instead of starting from the bottom-up, so this time you start from top-down.
+
+229
+00:33:19,751 --> 00:33:34,891
+You treat the whole data point as one cluster, and you recursively split the main cluster into subclusters all the way until you end up each point as a cluster.
+
+230
+00:33:35,391 --> 00:33:48,252
+But usually, the commonly used hierarchical clustering methodology is agglomerative clustering, so we will also focus agglomerative clustering in this course.
+
+231
+00:33:48,251 --> 00:33:55,591
+And the second main category of clustering is point assignment based clustering.
+
+232
+00:33:56,231 --> 00:34:04,191
+And so in this way of clustering, so basically what we do is at the beginning, we maintain a set of clusters.
+
+233
+00:34:04,411 --> 00:34:09,851
+We identify the number of clusters at the beginning and then we point.
+
+234
+00:34:11,251 --> 00:34:17,051
+So we basically assign the points that belongs to the nearest cluster at each iteration.
+
+235
+00:34:17,051 --> 00:34:24,731
+So this is also an iterative algorithm and it is basically a point-based algorithm.
+
+236
+00:34:25,731 --> 00:34:25,851
+Okay.
+
+237
+00:34:27,771 --> 00:34:33,171
+Now, so let's start with the first category.
+
+238
+00:34:33,311 --> 00:34:36,251
+Let's start with the hierarchical clustering algorithm.
+
+239
+00:34:39,987 --> 00:34:48,467
+Now, this hierarchical clustering algorithm is also known as in-memory algorithm, in-memory clustering algorithm.
+
+240
+00:34:48,467 --> 00:34:58,547
+So, this is the type of algorithm that we can use where we can keep the whole data in the physical memory, okay?
+
+241
+00:34:58,727 --> 00:35:06,787
+Because the advantage of this algorithm, it can find the data structures that are not so obvious.
+
+242
+00:35:06,787 --> 00:35:14,207
+It can find the data structures that are so close to each other in a good way.
+
+243
+00:35:14,727 --> 00:35:20,107
+But the disadvantage is that the time complexity of these algorithms is high.
+
+244
+00:35:21,047 --> 00:35:21,107
+Okay.
+
+245
+00:35:21,708 --> 00:35:30,227
+So therefore, we can only apply, and this algorithm requires all the data in the physical memory.
+
+246
+00:35:30,227 --> 00:35:40,287
+Okay, so therefore, so we cannot apply these hierarchical clustering algorithms when we have a large scale data.
+
+247
+00:35:40,807 --> 00:35:50,147
+We can only apply these hierarchical clustering algorithm when all the data that we are going to use can fit into an in-memory.
+
+248
+00:35:50,387 --> 00:35:54,247
+That's why these algorithms are also called in-memory algorithms.
+
+249
+00:35:54,248 --> 00:36:06,447
+I already told you that hierarchical clustering algorithms can be divided into two subcategories, agglomerative and divisive.
+
+250
+00:36:08,168 --> 00:36:12,047
+And then, so today we are going to talk about the agglomerative approach.
+
+251
+00:36:17,172 --> 00:36:41,172
+Okay, now I will show you the pseudocode of this algorithm, but the key operation is that, so we start, so from the bottom, we consider each data point as a single cluster, and then we repeatedly combine the two nearest clusters.
+
+252
+00:36:41,172 --> 00:36:43,352
+So this is the key idea.
+
+253
+00:36:43,551 --> 00:36:48,131
+So starting from each data point as being the cluster,
+
+254
+00:36:48,592 --> 00:36:54,931
+we repeatedly combine two nearest clusters until we end up only one big cluster.
+
+255
+00:36:55,212 --> 00:37:01,231
+And our purpose is as we keep repeating this procedure,
+
+256
+00:37:01,871 --> 00:37:04,432
+so we want to create this tendogram.
+
+257
+00:37:04,432 --> 00:37:09,371
+And by using this tendogram, then we create the clusters.
+
+258
+00:37:11,172 --> 00:37:12,172
+Şimdi, bu sorunlarla ilgili sorunlarla ilgili
+
+259
+00:37:41,172 --> 00:37:42,172
+ve bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points'in bir data points
+
+260
+00:38:11,172 --> 00:38:18,932
+clusters and so the third one is when do you stop combining clusters so what so when is the time
+
+261
+00:38:18,932 --> 00:38:27,252
+that we will say okay this this is the uh this is the final uh clustering result
+
+262
+00:38:27,252 --> 00:38:39,172
+so when do you stop combining these clusters
+
+263
+00:38:44,916 --> 00:39:14,515
+Okay, so let's start answering these questions. The first question is, how do you represent the cluster of many points? Okay, now, first of all, so what can we do is that, so we can use the centroid point, which is basically average of the data points that are available in that clusters. Okay, so centroid point is the average of all the data points that are available in that cluster. Okay,
+
+264
+00:39:14,515 --> 00:39:22,455
+So we can identify a centroid which will then can be used as the average data points that will represent that cluster.
+
+265
+00:39:22,455 --> 00:39:23,355
+Okay?
+
+266
+00:39:31,891 --> 00:39:32,891
+ok.
+
+267
+00:39:32,891 --> 00:39:33,891
+um
+
+268
+00:39:33,891 --> 00:39:40,891
+The second question is that how do you determine nearness of clusters.
+
+269
+00:39:40,891 --> 00:39:41,891
+ok.
+
+270
+00:39:41,891 --> 00:39:47,891
+Basically, we measure the cluster distances by distances of centroid.
+
+271
+00:39:47,891 --> 00:39:59,891
+So if you identify a cluster by using a centroid, and in that case, you can also use the centroid as the reference point of that cluster, and you can
+
+272
+00:39:59,891 --> 00:40:08,652
+you can calculate the distance between these two clusters by calculating the distance between the centroid points.
+
+273
+00:40:14,835 --> 00:40:26,615
+Okay, so here is an example. So in this particular example, I have one, two, three, four, five, six different data points at the beginning.
+
+274
+00:40:26,615 --> 00:40:37,335
+And so what I'm going to do, I'm going to show you step by step how this iterative algorithm runs starting from the beginning.
+
+275
+00:40:37,335 --> 00:40:47,455
+Now, at the beginning, each data point is considered as a cluster in this agglomative hierarchical clustering algorithms.
+
+276
+00:40:48,135 --> 00:40:55,356
+And remember, when we run this algorithm, at the same time, we are constructing this dendogram,
+
+277
+00:40:56,035 --> 00:41:01,096
+as you see in the right hand side, as you see here.
+
+278
+00:41:01,416 --> 00:41:06,056
+And each data point is a cluster at the beginning.
+
+279
+00:41:06,055 --> 00:41:17,815
+Now, in the first iteration with this algorithm, what we are doing is that we are calculating the pairwise distances of all the clusters.
+
+280
+00:41:18,335 --> 00:41:21,655
+How many clusters do I have? Six at the beginning, right?
+
+281
+00:41:21,895 --> 00:41:25,815
+Because I started each data point as being cluster.
+
+282
+00:41:25,815 --> 00:41:30,215
+So I calculate the distance between each pair.
+
+283
+00:41:30,715 --> 00:41:36,995
+And it turns out that the closest pair is this one.
+
+284
+00:41:37,295 --> 00:41:40,455
+So 1, 2 and 2, 1.
+
+285
+00:41:40,795 --> 00:41:42,395
+This is the closest pair.
+
+286
+00:41:43,435 --> 00:41:49,295
+And in the first iteration, after I found the closest pair,
+
+287
+00:41:49,675 --> 00:41:52,195
+and then I combined them into one cluster.
+
+288
+00:41:52,196 --> 00:42:01,795
+As you see, the blue circle represents the first cluster that I found in the first iteration.
+
+289
+00:42:02,755 --> 00:42:09,175
+And in the dendogram, as you see, I combine these two just like this.
+
+290
+00:42:09,575 --> 00:42:14,876
+Now, the y-axis indicates the time scale.
+
+291
+00:42:15,535 --> 00:42:18,956
+X-axis indicates the data points.
+
+292
+00:42:18,955 --> 00:42:34,935
+If you go the timescale from 0 to infinity, in that case, so here, the first combining action that I do is these two data points, which I colored in blue.
+
+293
+00:42:36,155 --> 00:42:39,255
+2 and 2, 1, they are the closest.
+
+294
+00:42:39,455 --> 00:42:41,655
+That's why I combined them in the first iteration.
+
+295
+00:42:42,255 --> 00:42:47,435
+Now, these two became a single cluster.
+
+296
+00:42:47,435 --> 00:42:51,555
+Now, how many clusters do I have after the first iteration?
+
+297
+00:42:52,095 --> 00:42:54,635
+These two became one cluster.
+
+298
+00:42:55,275 --> 00:42:57,775
+And this one is a single node cluster.
+
+299
+00:42:57,975 --> 00:42:59,775
+This one is a single node cluster.
+
+300
+00:43:00,135 --> 00:43:03,235
+This one and this one, they are also single node clusters.
+
+301
+00:43:03,435 --> 00:43:09,195
+So, which means that I have now in the second iteration, five different clusters.
+
+302
+00:43:09,555 --> 00:43:11,795
+One of them has two data points in it.
+
+303
+00:43:11,795 --> 00:43:12,215
+Okay.
+
+304
+00:43:12,855 --> 00:43:20,935
+Now, so remember if a cluster has more than one data points, in that case, what I do is that I find it's centroid.
+
+305
+00:43:21,135 --> 00:43:26,055
+Centroid is the average data point between the two data points dimension-wise.
+
+306
+00:43:26,815 --> 00:43:30,995
+So here, so I can represent the centroid like this.
+
+307
+00:43:31,455 --> 00:43:34,235
+The average of x-axis is 1.1.
+
+308
+00:43:34,815 --> 00:43:38,435
+The average of y-axis is 1.1.
+
+309
+00:43:38,435 --> 00:43:46,875
+So for these data points, when I combine them into one cluster, the centroid points is 1.5 and 1.5, okay?
+
+310
+00:43:48,947 --> 00:43:54,428
+Now, in the second iteration, what I need to do, I need to find the pairwise distances again.
+
+311
+00:43:54,428 --> 00:43:58,467
+Okay, I calculate the distance between this one and this one.
+
+312
+00:43:58,708 --> 00:44:04,667
+I calculate distance again, this one and all the other clusters.
+
+313
+00:44:05,427 --> 00:44:16,247
+And basically, I calculate the distances of all possible pairs amongst the five clusters in the second iteration.
+
+314
+00:44:16,247 --> 00:44:26,567
+Now, it turns out that in the second iteration, the closest pair is these two, 4-1 and 5-0.
+
+315
+00:44:26,727 --> 00:44:28,447
+These are the closest pair.
+
+316
+00:44:28,967 --> 00:44:35,567
+So in that case, at the end of the second iteration, I combine these two into a single cluster.
+
+317
+00:44:36,007 --> 00:44:42,607
+And in the dendogram, as you see, I merge these two into one cluster just like that.
+
+318
+00:44:42,607 --> 00:44:49,848
+Okay, and so since in the time scale, this combining happened after this.
+
+319
+00:44:49,848 --> 00:45:01,227
+So therefore, I need to show, I need to merge them somewhere above this point.
+
+320
+00:45:01,587 --> 00:45:10,467
+Okay, so by looking at it, I can tell that these two, first, these two were combined.
+
+321
+00:45:10,467 --> 00:45:13,927
+In the second iteration, these two were combined.
+
+322
+00:45:15,067 --> 00:45:20,867
+Now, after the second iteration ended, how many clusters do I have?
+
+323
+00:45:20,927 --> 00:45:22,147
+I have four clusters.
+
+324
+00:45:22,607 --> 00:45:23,507
+One, this one.
+
+325
+00:45:24,007 --> 00:45:25,547
+The second one, this cluster.
+
+326
+00:45:26,027 --> 00:45:27,187
+Third one, this cluster.
+
+327
+00:45:27,507 --> 00:45:29,047
+And the fourth one, this cluster.
+
+328
+00:45:29,387 --> 00:45:32,047
+Two of them, single node clusters.
+
+329
+00:45:32,527 --> 00:45:36,507
+Two of them, double node clusters.
+
+330
+00:45:36,507 --> 00:45:36,987
+Okay?
+
+331
+00:45:37,507 --> 00:45:39,047
+Clusters with two data points.
+
+332
+00:45:39,047 --> 00:45:48,128
+Now, in the third iteration, what I'm doing is that I'm again finding the pairwise distances of all possible clusters here.
+
+333
+00:45:48,247 --> 00:45:51,767
+I have four clusters, so I calculate the pairwise distances.
+
+334
+00:45:53,447 --> 00:46:07,287
+And after I calculate the pairwise distances, it turns out that these two, this cluster and this cluster, okay, are the closest one.
+
+335
+00:46:07,287 --> 00:46:12,608
+Okay, so therefore I combine these two into one cluster.
+
+336
+00:46:13,367 --> 00:46:17,367
+Okay, and as you see in the time scale from this,
+
+337
+00:46:17,727 --> 00:46:21,668
+so this is zero and all the way to the infinity.
+
+338
+00:46:22,207 --> 00:46:26,287
+So as you see, this one node cluster and this two node cluster,
+
+339
+00:46:26,447 --> 00:46:31,007
+they are combined right here, somewhere above this point.
+
+340
+00:46:31,168 --> 00:46:36,567
+Okay, and now in the fourth iteration, how many clusters do I have?
+
+341
+00:46:36,567 --> 00:46:38,007
+I have now three.
+
+342
+00:46:38,487 --> 00:46:40,367
+So this one is the first one.
+
+343
+00:46:40,747 --> 00:46:42,227
+This one is the second one.
+
+344
+00:46:42,587 --> 00:46:45,028
+And this one right here is the third one.
+
+345
+00:46:45,327 --> 00:46:47,808
+One of them is a single node cluster.
+
+346
+00:46:48,467 --> 00:46:50,888
+The second, another one is the two node cluster.
+
+347
+00:46:51,287 --> 00:46:53,808
+And the third one is the three node cluster.
+
+348
+00:46:54,287 --> 00:46:58,547
+And for the three node cluster, I calculate the centroid point as well.
+
+349
+00:46:58,808 --> 00:46:59,767
+How do I do that?
+
+350
+00:47:00,547 --> 00:47:06,247
+As you see, the centroid point for these old data points turns out to be
+
+351
+00:47:06,248 --> 00:47:20,787
+A one and one okay three data points and if I calculate the pairwise distances so it will be one and one and after that now I have.
+
+352
+00:47:22,168 --> 00:47:36,227
+One cluster here one cluster here when once single node cluster here and I calculate the pairwise distances again and after that I can be combined nearest clusters and it turns out that this single node.
+
+353
+00:47:36,247 --> 00:47:46,027
+can be combined with so this one because they are the closest after I calculate the distances
+
+354
+00:47:47,827 --> 00:47:54,327
+It turns out that I can combine this one and this one, and it turns out to be a single cluster here.
+
+355
+00:47:54,507 --> 00:47:59,628
+And finally, I can combine everything into one cluster.
+
+356
+00:48:00,347 --> 00:48:05,008
+The whole process is to create this dendogram, okay?
+
+357
+00:48:05,787 --> 00:48:08,527
+So now there is a question. Let's see.
+
+358
+00:48:08,727 --> 00:48:16,767
+So what the question is, does it calculate the centroid for all the points on the database and decided the shorter centroid?
+
+359
+00:48:17,827 --> 00:48:23,107
+...is the one that should be combined.
+
+360
+00:48:25,028 --> 00:48:26,368
+It does not.
+
+361
+00:48:26,887 --> 00:48:27,947
+It only...
+
+362
+00:48:27,947 --> 00:48:29,327
+So when you calculate,
+
+363
+00:48:29,747 --> 00:48:31,908
+when it calculates the centroid point,
+
+364
+00:48:31,908 --> 00:48:34,927
+it only calculates for the data points
+
+365
+00:48:34,927 --> 00:48:38,427
+that belongs to that cluster.
+
+366
+00:48:39,287 --> 00:48:42,868
+So since we are beginning from the bottom up,
+
+367
+00:48:43,607 --> 00:48:46,147
+the number, the clusters,
+
+368
+00:49:16,147 --> 00:49:17,048
+So I have two.
+
+369
+00:49:17,588 --> 00:49:21,088
+In total, how many data points do I have in the dataset?
+
+370
+00:49:21,607 --> 00:49:22,048
+Six.
+
+371
+00:49:22,927 --> 00:49:26,988
+So I did not consider the whole data points in the database.
+
+372
+00:49:27,147 --> 00:49:33,368
+I only considered the data points in the same cluster when I calculate the centroid, right?
+
+373
+00:49:34,027 --> 00:49:42,128
+And so if I, in the next iteration, when I found this cluster, I also need to find the centroid point.
+
+374
+00:49:42,127 --> 00:49:48,127
+As you see, I only take into account these data points that belongs to this particular cluster.
+
+375
+00:49:48,267 --> 00:49:52,447
+I did not consider the whole data points in the whole dataset.
+
+376
+00:49:52,987 --> 00:49:53,067
+Okay.
+
+377
+00:49:53,527 --> 00:50:01,027
+Saad-Dorf, therefore, the number of data points gets increased in the cluster as you move up.
+
+378
+00:50:01,507 --> 00:50:01,807
+Okay.
+
+379
+00:50:02,527 --> 00:50:10,227
+So, and so as you move up, all the way up,
+
+380
+00:50:10,227 --> 00:50:15,927
+In that case, for example, if you come to this stage, right?
+
+381
+00:50:16,188 --> 00:50:18,307
+So you have two data clusters.
+
+382
+00:50:18,507 --> 00:50:20,747
+One is here and this one is here.
+
+383
+00:50:21,207 --> 00:50:24,887
+Then in that case, in order to find the distance between these two,
+
+384
+00:50:26,227 --> 00:50:29,187
+you would then need to find the centroid points.
+
+385
+00:50:29,307 --> 00:50:33,927
+But there is no point in that because I have only two clusters left.
+
+386
+00:50:34,767 --> 00:50:35,007
+Okay?
+
+387
+00:50:35,407 --> 00:50:38,687
+Let's say consider this point.
+
+388
+00:50:38,688 --> 00:50:45,288
+Okay, I have one cluster here, one cluster here, and one cluster here.
+
+389
+00:50:45,288 --> 00:50:50,807
+In that case, almost all the data points are within these clusters.
+
+390
+00:50:51,387 --> 00:51:01,288
+In that case, you have a point, which means that the number of total data points within this cluster may get so increased.
+
+391
+00:51:01,967 --> 00:51:06,947
+In that case, finding the centroid point will take time.
+
+392
+00:51:06,947 --> 00:51:18,387
+But later in the lecture, I will also show you a nice way of calculating the centroid, a short way of calculating the centroid.
+
+393
+00:51:18,548 --> 00:51:26,847
+In that case, you don't have to do the centroid average calculation for all the data points again and again.
+
+394
+00:51:27,387 --> 00:51:36,027
+So you will keep a summary information that you can use in order to calculate the centroid point in the next step.
+
+395
+00:51:36,027 --> 00:51:43,427
+Okay, but I will show you how you calculate the average point in an easy way.
+
+396
+00:51:43,923 --> 00:52:11,923
+in so later in the in this lecture. Okay. So there is so to to to make it to make the long story short. So there is a way of calculating the average, even though the total number of data sets data points in the cluster is high.
+
+397
+00:52:10,804 --> 00:52:17,863
+Okay, now another question before I move further is this one.
+
+398
+00:52:19,963 --> 00:52:22,483
+Now, you may ask this question.
+
+399
+00:52:22,604 --> 00:52:28,244
+You can say that, okay, our purpose is to find the obvious clusters.
+
+400
+00:52:28,744 --> 00:52:34,564
+So, why do we have to create this dendogram all the way up?
+
+401
+00:52:35,224 --> 00:52:39,583
+Okay, so how do we know when to stop?
+
+402
+00:53:09,583 --> 00:53:17,244
+diğerlerine baktığınızda
+
+403
+00:53:17,244 --> 00:53:18,043
+birçok
+
+404
+00:53:18,043 --> 00:53:19,164
+şimdi
+
+405
+00:53:19,164 --> 00:53:39,563
+birçok
+
+406
+00:53:39,563 --> 00:53:45,783
+After we merge each cluster, for example, we merge these two clusters here.
+
+407
+00:53:46,343 --> 00:53:50,923
+And then at this point, we calculate the clustering quality at this point.
+
+408
+00:53:51,643 --> 00:53:57,243
+And then we merge another cluster at this point.
+
+409
+00:53:57,303 --> 00:54:01,443
+And then we calculate the clustering quality at this point as well.
+
+410
+00:54:01,443 --> 00:54:11,923
+And then we merge in the following iteration, we again merge another cluster.
+
+411
+00:54:12,503 --> 00:54:15,643
+So then we calculate the clustering quality again.
+
+412
+00:54:16,123 --> 00:54:21,703
+If it turns out that the clustering quality gets decreases, starts at the degrees,
+
+413
+00:54:21,703 --> 00:54:33,823
+Then we can say that, okay, this is the point where we can say, okay, I've reached the perfect clustering by using the hierarchical clustering algorithm.
+
+414
+00:54:33,823 --> 00:54:42,883
+Okay, so which means that as we go up from bottom to up, after each iteration, we also calculate the clustering quality.
+
+415
+00:54:43,483 --> 00:54:50,203
+And so we keep track of these clustering quality values and we stop the algorithm.
+
+416
+00:54:50,203 --> 00:55:00,103
+So, when we find out that the clustering quality started to decrease.
+
+417
+00:55:06,675 --> 00:55:30,675
+ok, um, the only location we can talk about the points themselves so um, uh, so therefore we have, we need to find the centroid points but the centroid points can only be find in Euclidean space, so what does Euclidean space means?
+
+418
+00:55:30,675 --> 00:55:52,196
+the values of each dimension has to be numerical value in Euclidean space. If the values of attributes of the data points are not numerical values, in that case, I cannot find the centroid point. I need to find another data point that could represent that cluster.
+
+419
+00:55:52,196 --> 00:56:18,655
+In that case, so we use a clustroid. And so this is basically, we are picking a data point that are closest to the other points. Okay. And so we can use this particular data point as the representative of the data in that cluster. Okay.
+
+420
+00:56:18,655 --> 00:56:47,475
+Okay? And so how do you determine the nearness of cluster? We treat cluseroid as if it is centroid when computing the intercluster distance. Obviously, we have metrics that we can use in order to identify the distance between the data points where the attributes are non-numerical values.
+
+421
+00:56:47,475 --> 00:56:53,795
+okay so there are distance metrics that we can use in non-Euclidean space as well okay
+
+422
+00:57:00,019 --> 00:57:12,119
+here is an example. So here I have, I am in the non-numerical space. So which means that the values of the attributes are non-numerical.
+
+423
+00:57:13,199 --> 00:57:26,899
+So I have three data points. Okay. Usually if these were numerical, if these were in Euclidean space, which means that their attributes would be numerical value.
+
+424
+00:57:26,899 --> 00:57:35,579
+in that case I could calculate the centroid value okay that so I could calculate the average
+
+425
+00:57:35,579 --> 00:57:44,759
+point and call it centroid but these are these have non-numerical values so therefore I cannot
+
+426
+00:57:44,759 --> 00:57:51,459
+calculate the centroid so therefore I need to pick one of them as the representative of this whole
+
+427
+00:57:51,459 --> 00:57:58,380
+cluster. And I pick the one that are closest to the other ones. So the one in the middle that is the
+
+428
+00:57:58,380 --> 00:58:05,119
+closest to the other ones, that's why I pick this one. And I call it a clusteroid. Okay. And from this
+
+429
+00:58:05,119 --> 00:58:13,679
+point forward, when I want you to calculate the distance from this cluster, I pick the data,
+
+430
+00:58:13,880 --> 00:58:20,659
+clusteroid data point in order to calculate the distance between, for this cluster. Okay.
+
+431
+00:58:28,019 --> 00:58:33,480
+So, we said that a clususrate is the point closest to the other data points.
+
+432
+00:58:34,339 --> 00:58:40,119
+And basically, so how do you pick the closest to the other points?
+
+433
+00:58:40,759 --> 00:58:49,239
+So basically, so you want one thing that you can do, smallest maximum distance to the other data points, that's one way to pick the clususrate.
+
+434
+00:58:49,819 --> 00:58:54,799
+Smallest average distance to the other points, that's another way to pick the clususrate.
+
+435
+00:58:54,799 --> 00:59:02,099
+or smaller sum of squared of distances to the other points. That's another way to pick the clustroid.
+
+436
+00:59:07,891 --> 00:59:21,891
+and the termination condition for this algorithm. So when do you stop combining cluster? I already explained to you by using the dendogram data structure.
+
+437
+00:59:22,772 --> 00:59:35,891
+So one common approach is that after each iteration, after each combining, we calculate the clustering quality.
+
+438
+00:59:35,891 --> 00:59:53,072
+So one of them, for example, is the cohesion. Basically, it tells you how compact these clusters are, how close these data points are each other within a cluster.
+
+439
+00:59:53,292 --> 01:00:02,591
+So you can calculate a clustering quality metric such as cohesion. And after each iteration, you can keep track of these clustering quality values.
+
+440
+01:00:02,591 --> 01:00:11,831
+when it starts getting decreased, okay, in that case, that's an indication that you can stop combining or merging the cluster.
+
+441
+01:00:12,651 --> 01:00:22,331
+Another approach is, so you can say, okay, at the beginning, you may have an idea, okay, there are three different clusters in this data structure,
+
+442
+01:00:22,331 --> 01:00:30,431
+so that therefore, I will stop merging data points after I find K different cluster, okay?
+
+443
+01:00:30,432 --> 01:00:43,491
+So this requires a prior knowledge about the dataset. You need to know that how many clusters are there. The second one does not require the prior knowledge about the dataset.
+
+444
+01:00:52,371 --> 01:01:22,371
+Evet.
+
+445
+01:01:22,371 --> 01:01:30,772
+in the cluster and you can divide it with a diameter of the merged cluster so which is the
+
+446
+01:01:30,772 --> 01:01:37,991
+maximum distance between the data points in the cluster and or you can calculate the radius which
+
+447
+01:01:37,991 --> 01:01:44,971
+is the maximum distance of a data point from each other okay and and then you can divide
+
+448
+01:01:44,971 --> 01:01:47,491
+the total number of
+
+449
+01:01:47,491 --> 01:01:49,871
+data points
+
+450
+01:01:49,871 --> 01:01:51,151
+by radius
+
+451
+01:01:51,151 --> 01:01:53,331
+or you can
+
+452
+01:01:53,331 --> 01:01:55,771
+you can use diameter
+
+453
+01:01:55,771 --> 01:01:57,312
+radius or you can use
+
+454
+01:01:57,312 --> 01:01:59,811
+the density based
+
+455
+01:01:59,811 --> 01:02:01,771
+approach. The density based approach is
+
+456
+01:02:01,771 --> 01:02:03,171
+the one that I just told you.
+
+457
+01:02:03,711 --> 01:02:05,271
+Basically you
+
+458
+01:02:05,271 --> 01:02:07,511
+find the number of
+
+459
+01:02:07,511 --> 01:02:09,791
+data points in that
+
+460
+01:02:09,791 --> 01:02:11,952
+cluster and you divide it by either
+
+461
+01:02:11,952 --> 01:02:13,232
+diameter or radius.
+
+462
+01:02:13,232 --> 01:02:18,172
+Or you can use diameter or radius as the value for cohesion.
+
+463
+01:02:18,552 --> 01:02:24,611
+Now, these are three different approaches that you can utilize in order to calculate the cohesion,
+
+464
+01:02:24,852 --> 01:02:30,992
+which is basically one of the clustering quality metrics.
+
+465
+01:02:31,312 --> 01:02:33,732
+There are different clustering quality metrics.
+
+466
+01:02:33,892 --> 01:02:35,532
+Cohesion is one of them.
+
+467
+01:02:40,403 --> 01:02:59,683
+ok, I have gone through the each step of this iterative algorithm. So when you look at the implementation, basically, since I do at each iteration, I do a pairwise distances of all the pairs in the clusters.
+
+468
+01:02:59,683 --> 01:03:08,483
+okay so uh so when you do the pairwise uh uh comparison in that case uh what the the complexity
+
+469
+01:03:08,483 --> 01:03:17,143
+is n squared since uh for the worst case you have n different um data structure n different data points
+
+470
+01:03:17,143 --> 01:03:26,383
+okay uh for the worst case um you uh you can the height of the tree uh could be the the longest in
+
+471
+01:03:26,383 --> 01:03:37,264
+in that case, n multiply n squared, that would give you the n to the power of 3. This gives
+
+472
+01:03:37,264 --> 01:03:50,944
+you the complexity of the hierarchical agglomerative algorithm. Now, n to the power of 3 is a highly
+
+473
+01:03:50,944 --> 01:03:59,363
+cost algorithm, okay, highly cost algorithm. So in that case, so if you have a large scale data,
+
+474
+01:03:59,704 --> 01:04:08,243
+so the total running time for this algorithm will be so high. So therefore, this algorithm is known
+
+475
+01:04:08,243 --> 01:04:13,924
+as in-memory algorithm, and it only works for data sets that can fit into physical memory,
+
+476
+01:04:13,923 --> 01:04:22,243
+and so it does not scale into large number of data points.
+
+477
+01:04:24,143 --> 01:04:33,383
+And so if you implemented carefully this algorithm, you can also end up n log n multiply n squared
+
+478
+01:04:33,383 --> 01:04:36,143
+time for time complexity.
+
+479
+01:04:36,143 --> 01:04:42,764
+But again, so this is also a high number for complexity, time complexity.
+
+480
+01:04:42,764 --> 01:04:52,644
+it will take too much time in order to process this algorithm for large data sets. That's why it only
+
+481
+01:04:52,644 --> 01:05:02,004
+works for small data sets and it only works for data sets that can fit into physical memory.
+
+482
+01:05:02,944 --> 01:05:09,004
+Now I'm going to give a 10 minute break and then I will talk about the second category of clustering
+
+483
+01:05:09,003 --> 01:05:35,543
+algoritm which is assignment based algoritm. Okay. Now it is let's get together five after ten. Okay. Five after ten and then we can continue. Arkadaşlar çıkmayın ben videoyu durdurmayacağım. Sadece kameramı kapatıyorum, mikrofonumu kapatıyorum. Beş geçe devam edeceğiz.
+
+484
+01:15:26,515 --> 01:15:31,575
+Okey, let's get started. Arkadaşlar, sesim geliyor mu? Bir teyit edebilir misiniz rica etsem?
+
+485
+01:15:38,228 --> 01:15:39,468
+Evet, geliyor hocam.
+
+486
+01:15:40,107 --> 01:15:41,567
+Tamamdır. Teşekkürler.
+
+487
+01:15:43,128 --> 01:15:50,608
+Okay, let's now talk about the second category of clustering algorithm.
+
+488
+01:15:50,747 --> 01:15:56,447
+The second category is assignment-based algorithms, assignment-based clustering algorithms.
+
+489
+01:15:57,207 --> 01:16:02,847
+One of the representative of assignment-based clustering algorithm is the K-means algorithm.
+
+490
+01:16:03,148 --> 01:16:05,387
+So let's take a look at it, how it works.
+
+491
+01:16:05,387 --> 01:16:15,128
+Now, so with the k-means algorithm, so this algorithm specifically assumes Euclidean space.
+
+492
+01:16:15,128 --> 01:16:22,507
+So, which means that I can use this algorithm when all the data points in my datasets are in Euclidean space.
+
+493
+01:16:22,607 --> 01:16:29,687
+In other words, every attribute value of these datasets are in numerical value, okay?
+
+494
+01:16:30,667 --> 01:16:33,768
+And so basically, this algorithm has an assumption.
+
+495
+01:16:33,767 --> 01:16:35,807
+So it works in Euclidean space.
+
+496
+01:16:36,347 --> 01:16:49,367
+So the second thing with this algorithm is that at the beginning, it asks you to decide an initial number of clusters.
+
+497
+01:16:49,647 --> 01:16:57,207
+So you need to decide the initial number of cluster at the beginning of this algorithm before you start it.
+
+498
+01:16:57,207 --> 01:17:05,207
+Therefore, you need to have an idea of how many clusters are there in the datasets beforehand.
+
+499
+01:17:05,907 --> 01:17:10,247
+It requires a prior knowledge about the datasets.
+
+500
+01:17:11,947 --> 01:17:23,607
+And so with this algorithm, so basically it initializes the clusters by picking a data point for each clusters at the beginning.
+
+501
+01:17:23,607 --> 01:17:39,387
+So if you say there will be a K cluster at the beginning to this algorithm, this algorithm in its first step, it picks a representative data point from the data sets for each of these K clusters.
+
+502
+01:17:39,387 --> 01:17:49,007
+And from that point forward, this algorithm assigns the rest of the data points to these clusters.
+
+503
+01:17:50,047 --> 01:17:53,907
+And it keeps doing this in an iterative way.
+
+504
+01:17:53,907 --> 01:17:55,088
+Okay.
+
+505
+01:18:00,020 --> 01:18:14,059
+So how does the algorithm work? So this is basically the steps of the algorithm. So what happens is that at the beginning for each data point, place it under the cluster whose current centroid is the nearest.
+
+506
+01:18:14,059 --> 01:18:19,060
+after you decide about initial data points
+
+507
+01:18:19,060 --> 01:18:20,860
+at the beginning of the algorithm.
+
+508
+01:18:21,459 --> 01:18:23,999
+This algorithm is assignment-based algorithm.
+
+509
+01:18:24,520 --> 01:18:28,419
+Basically, for each representative cluster data points,
+
+510
+01:18:28,520 --> 01:18:31,819
+what it does is it places each data point
+
+511
+01:18:31,819 --> 01:18:33,720
+in the data sets into the cluster
+
+512
+01:18:33,720 --> 01:18:35,619
+whose centroid is the nearest.
+
+513
+01:18:36,579 --> 01:18:36,700
+Okay.
+
+514
+01:18:36,700 --> 01:18:38,880
+In the second step,
+
+515
+01:18:39,060 --> 01:18:41,540
+after it scans through the whole data sets,
+
+516
+01:18:41,540 --> 01:18:44,819
+after it completes the calculation for all data points,
+
+517
+01:18:45,459 --> 01:18:51,839
+it basically updates the location of the centroids of the K-clusters.
+
+518
+01:18:53,220 --> 01:18:53,900
+Okay.
+
+519
+01:18:54,100 --> 01:18:57,360
+And then it goes back to the beginning of the algorithm
+
+520
+01:18:57,360 --> 01:19:00,960
+and the beginning of the for loop
+
+521
+01:19:00,960 --> 01:19:04,560
+and then it reassigns all points to the closest centroid.
+
+522
+01:19:04,560 --> 01:19:05,040
+Okay.
+
+523
+01:19:06,640 --> 01:19:09,979
+And sometimes moves points between the cluster.
+
+524
+01:19:09,979 --> 01:19:19,600
+And it repeats this two and three in a for loop in an iterative way until the algorithm converges.
+
+525
+01:19:20,100 --> 01:19:28,679
+And the converge condition is that points don't move between the clusters and centralize, centrates stabilize.
+
+526
+01:19:29,259 --> 01:19:33,320
+So if these conditions are met, then the algorithm converges.
+
+527
+01:19:33,419 --> 01:19:36,579
+So let's take a look at how it works on an example.
+
+528
+01:19:36,579 --> 01:19:38,139
+let's say
+
+529
+01:19:38,139 --> 01:19:40,459
+these are data points
+
+530
+01:19:40,459 --> 01:19:42,599
+right I have 1, 2, 3, 4,
+
+531
+01:19:42,700 --> 01:19:44,419
+5, 6, 7, 8, 9,
+
+532
+01:19:44,560 --> 01:19:45,999
+10, 11 data points here
+
+533
+01:19:45,999 --> 01:19:48,259
+and I would like to do
+
+534
+01:19:48,259 --> 01:19:52,520
+apply the assignment
+
+535
+01:19:52,520 --> 01:19:53,839
+based clustering algorithm.
+
+536
+01:19:54,339 --> 01:19:56,399
+Now so as I said this
+
+537
+01:19:56,399 --> 01:19:57,799
+algorithm takes the
+
+538
+01:19:57,799 --> 01:20:00,479
+number of clusters at
+
+539
+01:20:00,479 --> 01:20:02,059
+the beginning as its input.
+
+540
+01:20:02,479 --> 01:20:04,619
+So therefore I need
+
+541
+01:20:04,619 --> 01:20:06,520
+to give the value
+
+542
+01:20:06,520 --> 01:20:32,900
+K'ya k-means algorithm at the beginning. Let's say I have a prior knowledge about the statuses and I know that there are two different clusters. So I give the value k, 2. Okay. So in that case, in the initial step, okay, so this algorithm picks two different data points as the initial centroids. Let's say it picked this one and it picked this one as the initial centroid.
+
+543
+01:20:32,899 --> 01:20:36,539
+And then the algorithm goes into for loop.
+
+544
+01:20:37,039 --> 01:20:40,939
+In the for loop, in round one, in the first iteration of for loop,
+
+545
+01:20:40,939 --> 01:20:48,119
+what it does is that it assigns all data points to these two clusters.
+
+546
+01:20:48,459 --> 01:20:53,239
+These are single node clusters, okay, that are nearest to each other.
+
+547
+01:20:53,439 --> 01:20:56,599
+So these data points, they are nearest to this cluster
+
+548
+01:20:56,599 --> 01:21:00,899
+and these data points that are nearest to this cluster, okay.
+
+549
+01:21:00,899 --> 01:21:06,539
+So therefore we assign them into these clusters.
+
+550
+01:21:06,899 --> 01:21:15,319
+So I ended up after round one, I ended up with three data points in this cluster and the rest of them in this cluster.
+
+551
+01:21:15,319 --> 01:21:16,059
+Okay.
+
+552
+01:21:26,068 --> 01:21:34,207
+Then what I do is that I calculate the centroid point for the constructor.
+
+553
+01:21:34,627 --> 01:21:37,187
+So this is the centroid point of the constructor.
+
+554
+01:21:39,347 --> 01:21:47,347
+And so basically for the three data points that I have, I calculate the centroid.
+
+555
+01:21:47,347 --> 01:21:55,027
+And for these data points that I have, I calculate the centroid point.
+
+556
+01:21:55,027 --> 01:22:13,707
+And then I go to the second iteration in round one, and I assign all the data points, again, starting from the first data point all the way to the last data point, to the newly calculated centroid point.
+
+557
+01:22:13,707 --> 01:22:24,527
+Okay, so and this time, it turns out that so this one, this one, and this one is nearest to this centroid, and the rest of them are nearest to this centroid.
+
+558
+01:22:24,527 --> 01:22:32,667
+So therefore, I have again constructed two different clusters, okay?
+
+559
+01:22:33,108 --> 01:22:40,068
+And I know the members of these clusters as well, okay?
+
+560
+01:22:40,667 --> 01:22:47,687
+Now, at the end of round two, now that I know the membership of each of these clusters,
+
+561
+01:22:47,687 --> 01:22:54,327
+I can also calculate again the new centroid points.
+
+562
+01:22:55,847 --> 01:22:59,487
+As you see, I calculated the new centroid points here.
+
+563
+01:22:59,987 --> 01:23:02,787
+And after I calculate the new centroid points,
+
+564
+01:23:03,147 --> 01:23:08,207
+then I start with the third iteration, round three.
+
+565
+01:23:08,707 --> 01:23:12,167
+So in that case, I go starting from the first data point
+
+566
+01:23:12,167 --> 01:23:14,067
+all the way to the last data point.
+
+567
+01:23:14,068 --> 01:23:19,508
+I'll calculate their distance, distances to the centroid points.
+
+568
+01:23:19,968 --> 01:23:24,288
+And it turns out that these data points are closest to this centroid,
+
+569
+01:23:24,428 --> 01:23:29,127
+and these data points are closest to this centroid at the end of the round three.
+
+570
+01:23:29,547 --> 01:23:29,667
+Okay.
+
+571
+01:23:29,887 --> 01:23:34,288
+And then now that I know the newly constructed constructors,
+
+572
+01:23:34,948 --> 01:23:39,027
+and I know their members, I can calculate the centroid points.
+
+573
+01:23:39,788 --> 01:23:40,088
+Okay.
+
+574
+01:23:44,372 --> 01:24:14,292
+okay and after I calculate the centroid points if the centroid points does not change or in the round five in in the round four in the following iteration if the data points do not move between the clusters in that case my algorithm will converge so it will stop so in this particular case it apparently in round four the centroid value did not change
+
+575
+01:24:14,372 --> 01:24:23,971
+or the data members between the final constructed clusters did not move between each other.
+
+576
+01:24:23,971 --> 01:24:26,372
+So therefore the algorithm converged.
+
+577
+01:24:31,604 --> 01:25:01,364
+ok. then the next question you may ask, ok, what if I don't have a prior knowledge about the data set? ok. but if I don't know how many clusters are there in the data sets? in that case, so I need to find a way to select the k. so what we do is that we try different k values starting from k
+
+578
+01:25:01,364 --> 01:25:09,383
+K is equal to two, and then three, and then four, and then we can go up to 10, 11. And as the K increases,
+
+579
+01:25:09,984 --> 01:25:17,104
+we find different clustering results. Okay. For example, this is the result for K equal to three,
+
+580
+01:25:17,104 --> 01:25:26,684
+right? After that, I can calculate the cohesion metric or other clustering quality metrics for
+
+581
+01:25:26,683 --> 01:25:35,423
+for this clustering result when k equal to 2. And I can repeat this when k equal to 3.
+
+582
+01:25:35,423 --> 01:25:42,443
+I can do this for k equal to 4. I can always, I can calculate the clustering quality result.
+
+583
+01:25:42,443 --> 01:25:55,443
+Okay. And, and then I can choose the k value, which can give me the highest clustering quality
+
+584
+01:25:55,443 --> 01:25:56,443
+results.
+
+585
+01:26:01,171 --> 01:26:29,932
+ok? So, for example, in this particular case, as you see, I have obvious, if these are my datasets, if you look at these datasets, I have three different obvious clusters. There's this one, this one, and this one. But since at the beginning, I don't have prior knowledge, I don't have a way to visualize these datasets, ok? So, what I need to do, I need to start with k equal to 2.
+
+586
+01:26:29,932 --> 01:26:47,752
+If I start with k equal to 2, the resulting cluster will look like this. In that case, when I calculate the cohesion metric, the cohesion metric for this clustering results will not be good.
+
+587
+01:26:47,751 --> 01:27:09,131
+As you see, these data points are far away from each other. The diameter for this cluster is way too big. So therefore, the resulting cohesion clustering quality will be small for this k equal to 2 clustering result.
+
+588
+01:27:09,131 --> 01:27:17,591
+Then I will need to try this again for k equal to 3. If I try for k equal to 3, then the k-means
+
+589
+01:27:17,591 --> 01:27:23,671
+algorithm will find the obvious clusters because there are three obvious clusters. And in that case,
+
+590
+01:27:23,671 --> 01:27:29,271
+the cohesion metric value will be much better compared to this one.
+
+591
+01:27:32,724 --> 01:27:52,724
+So as you see, if I increase the k equal to 3, so this time the diameter of these each clusters are small. So therefore, when I take the average of the these three clusters, the cohesion metric will be small compared to the k equal to 2 k's.
+
+592
+01:27:57,652 --> 01:28:22,572
+if I do increase the number of clusters, so from k equal to 3 to k equal to 4, again this time the cohesion metric value will again start decrease as you increase the total number of clusters.
+
+593
+01:28:22,572 --> 01:28:34,451
+clusters. So, therefore, I need to try for K2, K3, K4, K5, and pick the one that gives me the highest possible clustering quality results.
+
+594
+01:28:36,571 --> 01:28:47,791
+Okay, now, so here is, so the one way of doing this calculation, as you see, x-axis indicates the value of K,
+
+595
+01:28:47,791 --> 01:29:15,611
+The y-axis indicates the average distance to centroid. So if you go back, so if I find the centroid point, for example, here, the average distance to the centroid for this cluster, average distance to the centroid for this cluster, this cluster, and this cluster, I can find all of that and I can take the average of all clustering results.
+
+596
+01:29:15,611 --> 01:29:16,372
+OK?
+
+597
+01:29:23,028 --> 01:29:28,807
+And I can depict this in this graph.
+
+598
+01:29:28,807 --> 01:29:29,407
+Okay.
+
+599
+01:29:29,847 --> 01:29:37,067
+And I can do this for average distance to centroid for k equal to 2, 3, 4, 5.
+
+600
+01:29:37,187 --> 01:29:37,467
+Okay.
+
+601
+01:29:37,567 --> 01:29:44,467
+As the k starts from 2 all the way to, let's say, 10, 11, it increases.
+
+602
+01:29:44,847 --> 01:29:48,307
+I can find the average distances to centroid.
+
+603
+01:29:48,307 --> 01:30:07,347
+And at one point, it will give me the value of k, where the amount of decrease between that value to the following value is not going to be that drastic.
+
+604
+01:30:07,347 --> 01:30:19,928
+As you see, the value of k, so as the value of k increased by 1, the average distance to centroid dropped drastically.
+
+605
+01:30:20,248 --> 01:30:25,987
+The value of k increased by 1, the average distance to centroid dropped drastically.
+
+606
+01:30:26,647 --> 01:30:32,608
+Again, incremented by 1, the average centroid dropped drastically.
+
+607
+01:30:32,608 --> 01:30:48,908
+But this time, when the value of k increased by 1, the average to destroyed centroid is dropped, but it dropped with a small decrease.
+
+608
+01:30:49,288 --> 01:30:49,347
+Okay.
+
+609
+01:30:49,608 --> 01:30:58,608
+So, therefore, I can say that, okay, now I can pick this k value as the perfect number of clustering value.
+
+610
+01:30:59,428 --> 01:30:59,688
+Okay.
+
+611
+01:30:59,687 --> 01:31:02,587
+And I can do my clustering based on this value.
+
+612
+01:31:12,692 --> 01:31:23,631
+Now, so remember, after you decide about the value of k, the second thing that also needs to be decided, how do you pick the initial k points?
+
+613
+01:31:23,631 --> 01:31:31,212
+How do you pick the initial data points as the representative of the k cluster?
+
+614
+01:31:31,831 --> 01:31:40,991
+Okay, now picking the initial points is important because it affects the running time of this assignment-based clustering algorithm.
+
+615
+01:31:40,991 --> 01:31:43,091
+Now, there are different methodologies.
+
+616
+01:31:43,271 --> 01:31:44,692
+One way is sampling.
+
+617
+01:31:45,431 --> 01:31:53,891
+So, what you can do, you can cluster a sample, a representative sample of data sets using hierarchical clustering algorithms.
+
+618
+01:31:53,891 --> 01:32:00,611
+So, remember, in hierarchical clustering algorithms, we do not need the value of k.
+
+619
+01:32:01,031 --> 01:32:05,232
+We do not need the number of clusters at the beginning.
+
+620
+01:32:05,231 --> 01:32:10,991
+The algorithm itself gives us the final number of clusters.
+
+621
+01:32:11,571 --> 01:32:16,791
+So we can select sample data points from the whole data sets
+
+622
+01:32:16,791 --> 01:32:20,951
+and we can use one of the hierarchical clustering algorithms
+
+623
+01:32:20,951 --> 01:32:23,912
+and calculate the value of k.
+
+624
+01:32:24,771 --> 01:32:27,991
+And after we know the value of k
+
+625
+01:32:27,991 --> 01:32:34,071
+and then we pick a point for each cluster,
+
+626
+01:32:34,071 --> 01:32:44,531
+We pick a point from each cluster that points closest to the centroid.
+
+627
+01:32:45,331 --> 01:32:55,811
+Since in the sample, by using hierarchical clusters, we will basically find the clusters in the sample.
+
+628
+01:32:55,811 --> 01:33:07,111
+And in the sample, we can also calculate the cluster centroids, okay, after we apply the hierarchical clustering algorithm.
+
+629
+01:33:07,551 --> 01:33:13,411
+And we can pick a point that is closest to the calculated centroid point in the sample.
+
+630
+01:33:13,831 --> 01:33:16,731
+And then we can start with those points, okay?
+
+631
+01:33:17,191 --> 01:33:20,131
+So remember, the sample fits into the main memory.
+
+632
+01:33:20,131 --> 01:33:27,291
+So in the first approach, we can apply the hierarchical clustering algorithm,
+
+633
+01:33:27,531 --> 01:33:29,531
+which will give us the clusters.
+
+634
+01:33:30,211 --> 01:33:35,552
+And from there, we can calculate the centroid points in the sample for each cluster.
+
+635
+01:33:35,971 --> 01:33:41,931
+And then we can pick the data point that is closest to the centroid value of these clusters.
+
+636
+01:33:43,052 --> 01:33:48,671
+That's how we can start picking the initial k points in the k-means algorithm.
+
+637
+01:33:48,671 --> 01:33:54,552
+The second approach is that we can pick the dispersed set of points.
+
+638
+01:33:54,552 --> 01:34:00,552
+So in that case, what we can do, first of all, let's say k is equal to 3.
+
+639
+01:34:00,931 --> 01:34:06,031
+In that case, for the first cluster, we can pick a random point in the data set.
+
+640
+01:34:06,931 --> 01:34:17,851
+And then when we choose the second initial data point for the centroid,
+
+641
+01:34:17,851 --> 01:34:29,371
+In that case, we can calculate the distance between the randomly selected first data point and all the data points that are available in the data sets.
+
+642
+01:34:29,471 --> 01:34:37,831
+In that case, we can pick the data point that are far away from the initially picked random data point.
+
+643
+01:34:37,831 --> 01:34:46,091
+If we have a third one, in that case, we can go through all the data points in the data sets
+
+644
+01:34:46,091 --> 01:34:51,492
+and we can calculate the distance between the first one and the second one
+
+645
+01:34:51,492 --> 01:34:56,292
+and we can pick the data points that are far away from both of them.
+
+646
+01:34:56,651 --> 01:35:00,572
+And we can repeat it until we have k data points.
+
+647
+01:35:00,571 --> 01:35:09,811
+This is the second approach in order to pick the k initial points in the assignment-based algorithms.
+
+648
+01:35:14,260 --> 01:35:19,119
+Now, we talked about the complexity of the hierarchical clustering algorithms.
+
+649
+01:35:19,119 --> 01:35:24,079
+Obviously, we need to also talk about the complexity of the k-means algorithm.
+
+650
+01:35:25,060 --> 01:35:33,860
+So, in this k-means algorithm, in each round, we have to examine each data point exactly once to find the closest centroids.
+
+651
+01:35:33,999 --> 01:35:40,600
+So, therefore, in each iteration, we are going through every data point in the dataset.
+
+652
+01:35:40,600 --> 01:35:51,819
+So therefore, the order of this algorithm, the complexity, the time complexity of this algorithm is in the order of O n.
+
+653
+01:35:52,559 --> 01:35:52,800
+Okay.
+
+654
+01:35:53,359 --> 01:35:56,120
+And what is this value of k here?
+
+655
+01:35:56,539 --> 01:36:02,539
+Remember, we need to repeat this for different k cluster at each iteration.
+
+656
+01:36:02,539 --> 01:36:16,859
+So what we are doing is that we are calculating the, we are comparing each data point with the available k centroids, okay?
+
+657
+01:36:17,039 --> 01:36:25,639
+So therefore k multiply n is the r complexity, okay?
+
+658
+01:36:25,639 --> 01:36:33,519
+But the number of rounds that are required to converge,
+
+659
+01:36:33,519 --> 01:36:40,899
+the number of rounds that are required in order to run this may be quite large.
+
+660
+01:36:41,199 --> 01:36:47,359
+So therefore, this value multiplied by the number of rounds,
+
+661
+01:36:47,359 --> 01:36:54,319
+bu kadar k-meansı ile ilgili bir şekilde
+
+662
+01:36:54,319 --> 01:37:01,559
+the total time that is required for the k-means algorithm.
+
+663
+01:37:01,559 --> 01:37:02,059
+Okay.
+
+664
+01:37:02,919 --> 01:37:08,940
+And the question is, can we cluster in a single pass over the data?
+
+665
+01:37:09,419 --> 01:37:11,939
+And now we are going to talk about that.
+
+666
+01:37:12,199 --> 01:37:16,859
+So how can we apply the k-means clustering algorithm
+
+667
+01:37:16,859 --> 01:37:22,840
+in a way that we can do this in one single pass over the data?
+
+668
+01:37:23,260 --> 01:37:23,480
+Okay.
+
+669
+01:37:27,699 --> 01:37:35,939
+now so far the algorithms that we talked about so you may also learn these algorithms
+
+670
+01:37:38,099 --> 01:37:45,779
+okay so let's reshare my screen
+
+671
+01:37:50,644 --> 01:38:17,644
+ok, so far the algorithms that we talked about, so you may also learn these algorithms in information retrieval course or you may also learn that in machine learning or other courses as well, but now we are going to talk about the big data version of these algorithms, so that you can also see how can we can apply these algorithms on large scale data set.
+
+672
+01:38:17,644 --> 01:38:22,603
+Now, one of the algorithm is Bradley Fayat Reyna BFR algorithm.
+
+673
+01:38:26,868 --> 01:38:35,727
+Now, BFR algorithm is a variant, is a version of K-means algorithm, but it is designed for very large data sets, okay?
+
+674
+01:38:35,847 --> 01:38:40,847
+The data sets that cannot fit into a physical memory, okay?
+
+675
+01:38:41,547 --> 01:38:48,368
+So remember, with the K-means algorithm, the K-means algorithm had an assumption.
+
+676
+01:38:48,628 --> 01:38:49,687
+So what was the assumption?
+
+677
+01:38:49,687 --> 01:39:01,647
+It only worked on Euclidean space, which means that it only worked where the values of the attributes of each data point are in numerical values.
+
+678
+01:39:01,987 --> 01:39:02,107
+Okay.
+
+679
+01:39:02,888 --> 01:39:09,847
+So this algorithm is a version or variant of BFR, K-means algorithm.
+
+680
+01:39:10,347 --> 01:39:13,607
+This algorithm has also an additional assumption.
+
+681
+01:39:13,607 --> 01:39:29,467
+This algorithm says that for each dimension of the data points, the data set is normally distributed around the centroid.
+
+682
+01:39:30,007 --> 01:39:31,767
+Okay, so what does this mean?
+
+683
+01:39:32,007 --> 01:39:34,607
+So let's take a look at this assumption.
+
+684
+01:39:36,728 --> 01:39:40,207
+Okay, so let me show you in this.
+
+685
+01:39:40,207 --> 01:39:45,047
+Evet, bu iki-dimensional space.
+
+686
+01:39:45,047 --> 01:39:48,868
+Bu, bu iki-dimensional space.
+
+687
+01:39:48,868 --> 01:39:53,027
+As you see, in the first dimension is the x-axis.
+
+688
+01:39:53,347 --> 01:39:55,307
+The second one is the y.
+
+689
+01:39:56,187 --> 01:39:59,047
+Okay, now let's consider this cluster.
+
+690
+01:39:59,228 --> 01:40:05,527
+Now, this algorithm assumes that for the x-axis,
+
+691
+01:40:05,527 --> 01:40:13,627
+These data points are distributed with a normal distribution.
+
+692
+01:40:13,627 --> 01:40:30,868
+So, as you see, if you look at each data point X value, okay, and if you consider the X values of these data points, if you put it into normal distribution, it will perfectly fit.
+
+693
+01:40:30,868 --> 01:40:40,007
+As you see, the majority of the data points of x-axis is somewhere here.
+
+694
+01:40:40,647 --> 01:40:40,688
+Okay.
+
+695
+01:40:41,188 --> 01:40:47,688
+And so if you go to the sides, you see the less number of data points.
+
+696
+01:40:48,047 --> 01:40:48,188
+Okay.
+
+697
+01:40:48,728 --> 01:40:54,368
+And in y-axis, you see the similar behavior.
+
+698
+01:40:54,368 --> 01:40:55,368
+y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değerli y'e değer
+
+699
+01:41:24,368 --> 01:41:26,608
+with a normal distribution, okay?
+
+700
+01:41:26,748 --> 01:41:29,328
+And you can see this behavior in this cluster,
+
+701
+01:41:29,487 --> 01:41:31,448
+you can see this behavior in this cluster
+
+702
+01:41:31,448 --> 01:41:32,868
+and in this cluster as well.
+
+703
+01:41:33,308 --> 01:41:39,608
+So therefore, this type of cluster can be a perfect,
+
+704
+01:41:39,608 --> 01:41:42,808
+this type of dataset can be a perfect dataset
+
+705
+01:41:42,808 --> 01:41:45,588
+for BFR algorithm.
+
+706
+01:41:46,127 --> 01:41:48,647
+So the BFR algorithm has an assumption
+
+707
+01:41:48,647 --> 01:41:50,668
+that it will only work,
+
+708
+01:41:50,668 --> 01:42:02,368
+It will only work where each cluster is normally distributed around the centroid in Euclidean space for each dimension.
+
+709
+01:42:02,368 --> 01:42:02,968
+Okay.
+
+710
+01:42:04,532 --> 01:42:11,051
+Now, so let's remind ourselves what normal distribution was.
+
+711
+01:42:11,051 --> 01:42:17,431
+So if I had the data set, okay, where I have, let's say, data points,
+
+712
+01:42:17,631 --> 01:42:23,632
+in that case, for these data points, if I calculate the average value for these data points,
+
+713
+01:42:24,011 --> 01:42:33,231
+so if the average value is x here, and if I calculate the standard deviations, okay,
+
+714
+01:42:33,231 --> 01:42:55,011
+If I calculate the standard deviation for these data points, in that case, if I go one standard deviation in each direction going far away from the average value, in that case here, I would have 68% of the whole data.
+
+715
+01:42:55,011 --> 01:43:06,072
+And if I go further, then I would have 95% of the whole data distributed around the average data point.
+
+716
+01:43:06,072 --> 01:43:12,072
+Okay, so if I go 2 sigma away from the X, in that case, I would have 95%.
+
+717
+01:43:12,612 --> 01:43:17,892
+If I go 3 sigma, in that case, I would have 98%, I believe.
+
+718
+01:43:18,432 --> 01:43:20,692
+The data will be distributed.
+
+719
+01:43:21,032 --> 01:43:23,791
+Okay, so this was the normal distribution rule.
+
+720
+01:43:25,011 --> 01:43:36,551
+And we are saying that if the data points are distributed around the average in each dimension in the dataset for each cluster,
+
+721
+01:43:36,551 --> 01:43:43,431
+then the BFR algorithm can detect the clusters in large-scale datasets.
+
+722
+01:43:44,611 --> 01:43:44,731
+Okay.
+
+723
+01:43:46,532 --> 01:43:52,231
+Now, how does the algorithm work?
+
+724
+01:43:52,231 --> 01:43:59,091
+Now, so this is the large-scale data that cannot fit into the physical memory.
+
+725
+01:43:59,471 --> 01:44:06,511
+Okay, let's say if I have a terabyte of data and I have only 16 gigabyte physical memory
+
+726
+01:44:06,511 --> 01:44:11,851
+and I want to do clustering with this data set.
+
+727
+01:44:11,851 --> 01:44:20,252
+Okay, now normally if the data was small, I could use in-memory algorithm
+
+728
+01:44:20,252 --> 01:44:22,291
+like hierarchical clustering algorithm
+
+729
+01:44:22,291 --> 01:44:25,752
+that can give me the high quality clustering result.
+
+730
+01:44:25,892 --> 01:44:28,171
+But here I have terabytes of data
+
+731
+01:44:28,171 --> 01:44:33,171
+which cannot fit into a small scale physical memory.
+
+732
+01:44:33,752 --> 01:44:36,651
+In that case, one way,
+
+733
+01:44:37,151 --> 01:44:39,371
+so BFR algorithm suggests the following.
+
+734
+01:44:39,591 --> 01:44:41,112
+BFR algorithm says that
+
+735
+01:44:41,112 --> 01:44:44,811
+divide the datasets into segments
+
+736
+01:44:44,811 --> 01:44:49,392
+and divide it in a way that these segments
+
+737
+01:44:49,392 --> 01:44:51,811
+can fit into the physical memory.
+
+738
+01:44:52,791 --> 01:44:54,571
+As you see, the BFR algorithm
+
+739
+01:44:54,571 --> 01:44:56,632
+divides the whole data into these segments.
+
+740
+01:44:57,552 --> 01:45:00,472
+And after that, start from the first segment
+
+741
+01:45:00,472 --> 01:45:03,091
+and bring it into physical memory
+
+742
+01:45:03,091 --> 01:45:07,612
+and apply one of the in-memory algorithm,
+
+743
+01:45:07,772 --> 01:45:10,371
+one of the hierarchical memory algorithms.
+
+744
+01:45:10,371 --> 01:45:14,132
+So remember the hierarchical memory algorithms
+
+745
+01:45:14,132 --> 01:45:18,332
+like agglomative clustering algorithm,
+
+746
+01:45:18,332 --> 01:45:19,332
+İntil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir nesil bir
+
+747
+01:45:42,100 --> 01:46:11,799
+okay? Points are read from disk one to main memory at a time. So we divide the data points into segments and we read each data segment one by one and bring it to the main memory. Okay? And then the second thing that we do, we apply the hierarchical clustering algorithm
+
+748
+01:46:11,799 --> 01:46:19,559
+and then which gives us the clustering results.
+
+749
+01:46:20,159 --> 01:46:31,399
+And from there, we calculate some simple statistics information related to each cluster.
+
+750
+01:46:31,399 --> 01:46:32,359
+Okay.
+
+751
+01:46:33,320 --> 01:46:38,619
+And to begin from the initial load, we select case entries by sensible approach.
+
+752
+01:46:38,620 --> 01:46:57,199
+So basically, you can apply the K-means algorithm in order to find the initial clusters, or you can use the hierarchical clustering algorithm in order to find the initial cluster.
+
+753
+01:46:57,199 --> 01:47:07,979
+So one common way to apply is using the hierarchical clustering algorithm because it does not require the K-centroids.
+
+754
+01:47:12,404 --> 01:47:33,843
+okay now after I compute the initial clusters using the hierarchical clustering algorithm with the first segment okay then I will calculate some statistics information on the clusters okay now after I compute
+
+755
+01:47:33,843 --> 01:47:45,483
+after I compute the clusters, after applying to clustering algorithms, I will find two, three different
+
+756
+01:47:45,483 --> 01:47:56,843
+cluster types. So the first one I will call retain set, the second one I will call compression set,
+
+757
+01:47:56,843 --> 01:48:06,084
+and this third one I will call the discard set. Okay. So let's take a look at so what these are.
+
+758
+01:48:09,427 --> 01:48:12,987
+Okay, now the discard set, okay?
+
+759
+01:48:12,987 --> 01:48:20,188
+Now, after I apply the clustering algorithm, the hierarchical clustering algorithm,
+
+760
+01:48:20,388 --> 01:48:22,527
+it will give me the clusters, right?
+
+761
+01:48:23,047 --> 01:48:26,567
+And it will give me the clusters for the first segment
+
+762
+01:48:26,567 --> 01:48:32,727
+and also the data points that does not fit into any of these clusters, okay?
+
+763
+01:48:32,727 --> 01:48:41,687
+Now, what I will do, I will, for the big clusters, for the big clusters, I will call them as discard set.
+
+764
+01:48:42,247 --> 01:48:46,427
+For these ones, I will calculate some statistics information.
+
+765
+01:48:47,148 --> 01:48:51,788
+For the small ones, I will call them as compression set, okay?
+
+766
+01:48:52,187 --> 01:48:58,108
+And I will keep all data points in these small clusters, okay?
+
+767
+01:48:58,108 --> 01:49:04,168
+I will not do anything for them, but I will keep track of them.
+
+768
+01:49:04,727 --> 01:49:09,948
+And so these are the data points that did not fit into any of these clusters,
+
+769
+01:49:09,948 --> 01:49:13,268
+and I will call them as retained set.
+
+770
+01:49:14,048 --> 01:49:14,188
+Okay.
+
+771
+01:49:14,688 --> 01:49:20,968
+Now for the discard set, for the big size clusters, what do I do with them?
+
+772
+01:49:20,968 --> 01:49:28,868
+I calculate three values for this.
+
+773
+01:49:29,508 --> 01:49:34,648
+First, I calculate the number of data points in each of these clusters.
+
+774
+01:49:35,608 --> 01:49:38,767
+And I calculate the sum vector.
+
+775
+01:49:40,608 --> 01:49:50,228
+It's a vector where in each dimension, it has the summation of all data points dimension-wise.
+
+776
+01:49:50,968 --> 01:50:00,608
+And I will also calculate the sum square, which is another vector, which has the same dimensions, like every data points here.
+
+777
+01:50:00,608 --> 01:50:07,347
+And it will have, for each dimension, it will have some of the square of the coordinates in that dimension.
+
+778
+01:50:07,347 --> 01:50:21,347
+Yani yapmaya çalıştığım arkadaşlar ilk aşamada birinci segment için hesaplamış olduğum bu clustering sonucunu...
+
+779
+01:50:26,868 --> 01:50:35,507
+İlk aşamada bu ilk segment için bu in-memory clustering algoritmalarından bir tanesiyle şu cluster'ları belirliyorum.
+
+780
+01:50:35,967 --> 01:50:40,748
+Bu cluster'ların içine girmeyen bunları discard set diyorum.
+
+781
+01:50:40,907 --> 01:50:46,048
+Yani şu büyük cluster'ların içerisinde kalan bütün data point'ları discard set diyorum.
+
+782
+01:50:46,048 --> 01:50:49,208
+Ve buradaki data point'ları memory'de tutmuyorum.
+
+783
+01:50:49,208 --> 01:50:58,048
+Bunları memoride tutmak yerine bu kümeyi ifade eden 3 tane istatistik şeyi tutuyorum.
+
+784
+01:50:58,147 --> 01:51:03,467
+Bunlardan bir tanesi N değeri yani bu klasterın içerisindeki data point sayısı.
+
+785
+01:51:04,068 --> 01:51:06,427
+İkincisi sum vektörü.
+
+786
+01:51:06,948 --> 01:51:13,067
+Sum vektörü derken buradaki data pointların D tane dimension olduğunu düşünün.
+
+787
+01:51:13,067 --> 01:51:14,768
+D tane dimensionı.
+
+788
+01:51:15,467 --> 01:51:18,827
+Burada da diyelim ki mesela 100 tane data point olduğunu düşünün.
+
+789
+01:51:19,208 --> 01:51:21,347
+sum vektörü ne olacaktır?
+
+790
+01:51:21,448 --> 01:51:23,068
+Onun da ddimensiyonu olacaktır.
+
+791
+01:51:23,428 --> 01:51:30,388
+Her bir dimension için her bir noktanın dimensionlarının toplamını içerecektir o sum vektörü.
+
+792
+01:51:30,388 --> 01:51:32,927
+Bir de sum square vektörünü tutacağım.
+
+793
+01:51:33,368 --> 01:51:36,028
+Bu da aynı şekilde ddimensiyonunda olacaktır.
+
+794
+01:51:36,128 --> 01:51:38,347
+Yani bütün attribütlerin aynı dimensionında.
+
+795
+01:51:39,668 --> 01:51:41,187
+Bunları ne yapıyorum?
+
+796
+01:51:41,908 --> 01:51:43,168
+Square'lerini alıyorum.
+
+797
+01:51:43,167 --> 01:51:51,547
+Okay, so I'm going sometimes back and forth between the Turkish and English.
+
+798
+01:51:51,767 --> 01:51:54,287
+So, of course, I will explain in English as well.
+
+799
+01:51:54,987 --> 01:52:04,087
+So, what I was trying to explain in Turkish is that now for each cluster here, as you see, I have these data points, right?
+
+800
+01:52:04,087 --> 01:52:10,547
+Let's say I have 100 data points in this particular cluster.
+
+801
+01:52:10,548 --> 01:52:32,987
+Now, after I applied the in-memory algorithms, one of those in-memory algorithms, which I told you, let's say, a hierarchical clustering algorithm, on this first segment, which is small enough that I can fit into physical memory, after I applied, this algorithm found these three obvious clusters, right?
+
+802
+01:52:32,987 --> 01:52:39,368
+In addition, it will find also data points that cannot fit into these clusters.
+
+803
+01:52:40,107 --> 01:52:45,847
+Now, what I will say, I will say to these clusters as discard set.
+
+804
+01:52:46,287 --> 01:52:50,947
+All the data points in these clusters are going to be called as discard set.
+
+805
+01:52:51,607 --> 01:52:59,088
+And what I'm going to do, I will not keep the data points in these clusters in the physical memory.
+
+806
+01:52:59,088 --> 01:53:01,987
+So that's why I will call discard set.
+
+807
+01:53:01,987 --> 01:53:11,207
+Instead, for each of these clusters, I will keep three different statistics information corresponding to each cluster.
+
+808
+01:53:11,327 --> 01:53:17,927
+Now, the first information that I will keep is the number of data points in that cluster.
+
+809
+01:53:18,308 --> 01:53:19,527
+It's the n, okay?
+
+810
+01:53:19,747 --> 01:53:23,247
+Let's say if I have 100 data points here, n is 100.
+
+811
+01:53:23,588 --> 01:53:25,927
+If I have 50, n is 50, okay?
+
+812
+01:53:25,927 --> 01:53:38,888
+The second thing that I will keep is a vector corresponding to the sum of the dimension-wise of summations of all data attributes.
+
+813
+01:53:38,888 --> 01:53:44,187
+Let's say I have 100 attributes here and the dimension is 5.
+
+814
+01:53:44,767 --> 01:53:49,868
+In that case, the sum vector will have the dimension 5.
+
+815
+01:53:49,868 --> 01:53:56,868
+ve bu
+
+816
+01:53:56,868 --> 01:53:58,868
+100
+
+817
+01:53:58,868 --> 01:53:59,868
+ve
+
+818
+01:53:59,868 --> 01:54:00,868
+bu
+
+819
+01:54:00,868 --> 01:54:01,868
+ve
+
+820
+01:54:01,868 --> 01:54:02,868
+bu
+
+821
+01:54:02,868 --> 01:54:04,868
+ve
+
+822
+01:54:04,868 --> 01:54:06,868
+bu
+
+823
+01:54:06,868 --> 01:54:08,868
+ve
+
+824
+01:54:08,868 --> 01:54:18,868
+bu
+
+825
+01:54:16,340 --> 01:54:23,340
+ve bu
+
+826
+01:54:23,340 --> 01:54:45,340
+bu
+
+827
+01:54:45,340 --> 01:54:56,999
+And for each dimension, I will sum the square of each of these dimension values coming from each attribute.
+
+828
+01:54:57,380 --> 01:55:09,639
+So therefore, what I'm doing basically, for the discard set, instead of keeping the old data points in that cluster,
+
+829
+01:55:09,639 --> 01:55:11,659
+in the physical memory,
+
+830
+01:55:11,819 --> 01:55:13,299
+I only keep these three
+
+831
+01:55:13,299 --> 01:55:15,759
+different statistics information.
+
+832
+01:55:16,919 --> 01:55:20,560
+Okay.
+
+833
+01:55:20,920 --> 01:55:21,499
+Which is,
+
+834
+01:55:22,219 --> 01:55:24,579
+and I keep this statistics information
+
+835
+01:55:24,579 --> 01:55:26,780
+for only the discard set clusters.
+
+836
+01:55:27,399 --> 01:55:27,640
+Okay.
+
+837
+01:55:28,060 --> 01:55:30,140
+Apart from these discard set clusters,
+
+838
+01:55:30,579 --> 01:55:32,819
+there may be small clusters as well,
+
+839
+01:55:32,819 --> 01:55:34,039
+small data points,
+
+840
+01:55:34,119 --> 01:55:35,719
+okay, that do not fit into
+
+841
+01:55:35,719 --> 01:55:37,119
+these B's clusters.
+
+842
+01:55:37,319 --> 01:55:38,399
+And there may be
+
+843
+01:56:08,399 --> 01:56:11,020
+Statistik information is the sum square vector.
+
+844
+01:56:11,679 --> 01:56:12,619
+And for this vector,
+
+845
+01:56:12,819 --> 01:56:14,380
+each component is calculated
+
+846
+01:56:14,380 --> 01:56:16,520
+as the sum of the squares
+
+847
+01:56:16,520 --> 01:56:19,139
+of coordinates in the each dimension.
+
+848
+01:56:19,359 --> 01:56:20,939
+This is how we calculate
+
+849
+01:56:20,939 --> 01:56:23,419
+these three statistics information.
+
+850
+01:56:24,020 --> 01:56:24,099
+Okay?
+
+851
+01:56:25,879 --> 01:56:26,599
+Now,
+
+852
+01:56:27,399 --> 01:56:29,039
+now,
+
+853
+01:56:29,560 --> 01:56:31,500
+for each cluster
+
+854
+01:56:31,500 --> 01:56:33,039
+in the discard set,
+
+855
+01:56:33,039 --> 01:56:35,599
+how many integer values
+
+856
+01:56:35,599 --> 01:56:36,299
+do I keep?
+
+857
+01:56:37,119 --> 01:56:38,079
+2d plus 1.
+
+858
+01:56:38,079 --> 01:56:39,719
+What does 2D plus 1 mean?
+
+859
+01:56:40,159 --> 01:56:44,339
+Now, so what is the size of the sum vector?
+
+860
+01:56:45,039 --> 01:56:46,219
+It has D dimension.
+
+861
+01:56:46,579 --> 01:56:47,679
+It is D, right?
+
+862
+01:56:48,819 --> 01:56:54,159
+What is the size of the sum square vector?
+
+863
+01:56:54,279 --> 01:56:55,279
+It has D dimension.
+
+864
+01:56:55,659 --> 01:56:57,099
+It is again D, right?
+
+865
+01:56:57,739 --> 01:57:02,419
+And so how many integers do I keep for the value n?
+
+866
+01:57:02,419 --> 01:57:08,039
+Only one, which means that I have in total 2D plus 1 integer
+
+867
+01:57:08,039 --> 01:57:12,840
+that I will need to use to represent the cluster.
+
+868
+01:57:13,420 --> 01:57:17,599
+As you see, my purpose is here,
+
+869
+01:57:17,759 --> 01:57:21,079
+I don't want to keep these data points in this cluster
+
+870
+01:57:21,079 --> 01:57:22,420
+in the physical memory.
+
+871
+01:57:22,759 --> 01:57:27,099
+I only want to keep the representative statistics information
+
+872
+01:57:27,099 --> 01:57:28,239
+in the physical memory.
+
+873
+01:57:28,239 --> 01:57:33,340
+And as you see, the total number of integers that I need,
+
+874
+01:57:33,340 --> 01:57:35,459
+2D plus 1
+
+875
+01:57:35,459 --> 01:57:37,479
+is the
+
+876
+01:57:37,479 --> 01:57:39,580
+amount of
+
+877
+01:57:39,580 --> 01:57:42,179
+data space that I need in the
+
+878
+01:57:42,179 --> 01:57:44,539
+physical memory for representing
+
+879
+01:57:44,539 --> 01:57:45,759
+one single cluster.
+
+880
+01:57:46,300 --> 01:57:46,360
+Okay?
+
+881
+01:57:47,360 --> 01:57:49,259
+Now, I talked about
+
+882
+01:57:50,163 --> 01:57:54,423
+ve sumvektör ve sumvektör ve n ve n.
+
+883
+01:57:54,423 --> 01:57:59,683
+Then you can ask me this question, why do we calculate these values?
+
+884
+01:58:00,323 --> 01:58:05,163
+So how are we going to use these statistics information?
+
+885
+01:58:06,023 --> 01:58:10,623
+Now, the reason that we are calculating these sum and sum squared values is that
+
+886
+01:58:10,623 --> 01:58:17,524
+we want to calculate the average and also the standard deviation values, okay?
+
+887
+01:58:17,524 --> 01:58:23,323
+Now, at each step, by using the sum vector at each iteration,
+
+888
+01:58:23,323 --> 01:58:28,384
+we can calculate the centroid value by using the sum vector.
+
+889
+01:58:28,384 --> 01:58:32,323
+If I, for example, divide the sum vector with n,
+
+890
+01:58:32,663 --> 01:58:36,323
+that would give me the centroid value, right?
+
+891
+01:58:36,583 --> 01:58:42,384
+Remember, the centroid value is d-dimension value.
+
+892
+01:58:43,043 --> 01:58:46,603
+And so when I find the calculate the average value,
+
+893
+01:58:46,723 --> 01:58:49,483
+the average value should also have d-dimension.
+
+894
+01:58:49,483 --> 01:58:55,744
+So that's why I'm dividing every dimension of the sum vector by n.
+
+895
+01:58:56,143 --> 01:58:58,643
+By doing this, it will give me the centroid point.
+
+896
+01:58:59,204 --> 01:58:59,324
+Okay.
+
+897
+01:58:59,583 --> 01:59:03,283
+And I can do this by calculating the standard deviation.
+
+898
+01:59:03,824 --> 01:59:11,844
+Standard deviation is the square root of this expression that you see here.
+
+899
+01:59:11,844 --> 01:59:12,263
+Okay.
+
+900
+01:59:12,263 --> 01:59:24,903
+And basically, all the values that I need in order to calculate the standard deviation is already calculated.
+
+901
+01:59:24,903 --> 01:59:30,863
+Some square, I'm already calculating after each step.
+
+902
+01:59:31,783 --> 01:59:34,963
+Some vector, I'm calculating it.
+
+903
+01:59:35,283 --> 01:59:41,384
+And the value of n, I already know that because that's also another information that I keep.
+
+904
+01:59:41,384 --> 01:59:49,284
+Therefore, I can calculate the standard deviation for each cluster at each step.
+
+905
+01:59:49,803 --> 01:59:54,943
+So after I do the initial hierarchical clustering,
+
+906
+01:59:55,544 --> 02:00:03,443
+and I can calculate the centroid point and also the standard deviation values.
+
+907
+02:00:03,443 --> 02:00:04,063
+Okay?
+
+908
+02:00:13,908 --> 02:00:20,707
+At this step, so as you see, for each of these clusters, I know the average value.
+
+909
+02:00:20,707 --> 02:00:34,668
+I know the centroid points and I know the standard deviation value, which tells me how the data points in this cluster is distributed.
+
+910
+02:00:34,668 --> 02:00:44,067
+And these are the clusters that I calculated by using one of the in-memory clustering algorithms.
+
+911
+02:00:44,288 --> 02:00:50,108
+And apart from that, as you see, there may be some data points that cannot fit into these clusters.
+
+912
+02:00:50,628 --> 02:00:51,848
+I am going to keep them.
+
+913
+02:00:52,108 --> 02:00:58,567
+The only thing that I'm not going to keep them, the data points that are inside these clusters.
+
+914
+02:00:58,567 --> 02:00:59,327
+Okay.
+
+915
+02:01:01,468 --> 02:01:17,367
+Now, after the first step, after I calculate these clusters, now the next step that I'm going to do, I'm going to bring the second segment of the dataset into the physical memory.
+
+916
+02:01:17,367 --> 02:01:33,268
+But this time when I bring the second segment into the physical memory, okay, I will assign the values, data points in the second segment to one of these clusters.
+
+917
+02:01:33,948 --> 02:01:37,247
+How do I do the assignment?
+
+918
+02:01:37,588 --> 02:01:42,927
+I'm going to look at the distance between these data points and the centroid points.
+
+919
+02:01:42,927 --> 02:01:51,408
+If it is less than a certain threshold value, then I will say that these data points are belonging to these clusters, okay?
+
+920
+02:01:51,547 --> 02:01:56,187
+And I will discard them, which means I will not keep those data points in the physical memory.
+
+921
+02:01:56,727 --> 02:02:06,167
+If the data points that are not close, one of these clusters, okay, I will keep them in the physical memory, okay?
+
+922
+02:02:06,387 --> 02:02:11,807
+And I will keep repeating that and I will bring the third one and the fourth one and the fifth one.
+
+923
+02:02:11,807 --> 02:02:18,167
+Every time that I bring it, I will compare the data points against the centroid points
+
+924
+02:02:18,167 --> 02:02:24,567
+and I will look at whether based on the distance metric that I'm using, whether they are less than a threshold.
+
+925
+02:02:24,567 --> 02:02:29,787
+If they are less than the threshold, I will discard, I will put them into these clusters.
+
+926
+02:02:30,408 --> 02:02:38,567
+And every time I put a new data point into this cluster, I am going to update the statistics information.
+
+927
+02:02:38,727 --> 02:02:41,747
+What were the statistics information that we were keeping?
+
+928
+02:02:41,807 --> 02:02:45,807
+Bir tane n'a var, yi de total n'a var.
+
+929
+02:02:45,807 --> 02:03:09,807
+Bir tane n'a var.
+
+930
+02:03:09,807 --> 02:03:16,447
+how I can keep updating the statistics information that belongs to each cluster at each step.
+
+931
+02:03:16,447 --> 02:03:16,908
+Okay.
+
+932
+02:03:31,412 --> 02:03:34,372
+So let's take a look at here.
+
+933
+02:03:36,332 --> 02:03:36,691
+Okay.
+
+934
+02:03:37,392 --> 02:03:40,672
+So let's move forward to this slide.
+
+935
+02:03:41,951 --> 02:03:43,811
+I talked about this.
+
+936
+02:03:47,412 --> 02:03:56,412
+ok now the bfr algorithm again so let me see
+
+937
+02:03:58,612 --> 02:04:16,612
+ok. and I said that every time I bring the new chunk or the new segment into physical memory for data points that are in that segment, I am checking whether they are sufficiently close to one of the cluster centroid.
+
+938
+02:04:16,612 --> 02:04:23,612
+so I am checking with every cluster centroid, ok, and I'm finding whether they are sufficiently close.
+
+939
+02:04:23,612 --> 02:04:30,472
+If they are sufficiently closed, then I'm adding those data points into that cluster, okay?
+
+940
+02:04:30,472 --> 02:04:39,931
+And I'm discarding the point, but when I add that data point into the discard set, I adjust the statistics of that cluster
+
+941
+02:04:39,931 --> 02:04:51,031
+How do I adjust? I increment the value of n, I update the value of some vector, I update the value of some square vector, okay?
+
+942
+02:04:51,031 --> 02:05:06,491
+And basically the discard set, remember the discard set is those data sets that belong to the main clusters, okay, that close enough to centroids so that they can be discarded.
+
+943
+02:05:06,832 --> 02:05:15,891
+And the compression set and the retained set, those are the data points that need to be kept in the physical memory. For those, I don't do anything.
+
+944
+02:05:19,891 --> 02:05:29,331
+ok. So therefore the data points that do not belong to the discard set they are remaining in the physical memory.
+
+945
+02:05:29,331 --> 02:05:33,331
+ok
+
+946
+02:05:37,555 --> 02:05:45,575
+And after we complete the whole data segments,
+
+947
+02:05:45,816 --> 02:05:49,295
+after we bring all data segments into the physical memory,
+
+948
+02:05:49,875 --> 02:05:52,155
+and in that case, what we are going to do,
+
+949
+02:05:52,155 --> 02:05:56,915
+we are going to merge the remaining data points
+
+950
+02:05:56,915 --> 02:05:59,076
+that are not long to the Descart set.
+
+951
+02:05:59,175 --> 02:06:04,855
+We will merge them into the closest clusters.
+
+952
+02:06:05,495 --> 02:06:05,575
+Okay.
+
+953
+02:06:09,876 --> 02:06:22,876
+Now, so one important question is, is that how do we decide a data point is class close enough to cluster so that we can add that point to the to that cluster. Okay.
+
+954
+02:06:22,876 --> 02:06:37,876
+The second important question is how do we decide whether to compress data sets deserve to be combined into one so let's take a look at this one.
+
+955
+02:06:38,707 --> 02:06:48,267
+Now, BFR algorithm uses a distance metric called Mahalan Nobis distance metric.
+
+956
+02:06:48,747 --> 02:06:59,267
+And this distance metric decides whether or not a particular data point belongs to a cluster by using this distance metric.
+
+957
+02:06:59,267 --> 02:07:10,467
+And this distance metric is based on the likelihood of that point belonging to the currently nearest centroid.
+
+958
+02:07:10,587 --> 02:07:11,548
+So what does this mean?
+
+959
+02:07:12,587 --> 02:07:22,867
+Now, so let's see, first of all, how do we calculate the Mahalo-Nobi's distance metric?
+
+960
+02:07:22,867 --> 02:07:32,408
+Now, let's say I calculate my clusters, okay?
+
+961
+02:07:32,667 --> 02:07:37,207
+And for each cluster, I also calculate the centroid points, okay?
+
+962
+02:07:37,347 --> 02:07:39,968
+Now, this is the centroid point for my cluster.
+
+963
+02:07:40,087 --> 02:07:46,227
+And I also calculated the standard deviation values, okay?
+
+964
+02:07:46,227 --> 02:08:03,947
+Now, so remember the average values and the standard deviations can be calculated by using the three statistics information that I kept for each cluster and some vector and some square value.
+
+965
+02:08:03,947 --> 02:08:04,367
+Okay.
+
+966
+02:08:04,568 --> 02:08:11,287
+I can calculate these values for each cluster.
+
+967
+02:08:12,127 --> 02:08:12,247
+Okay.
+
+968
+02:08:12,248 --> 02:08:28,627
+And now what I'm going to do, I'm going to calculate, so this is my data point and my data point has d dimensions, okay?
+
+969
+02:08:28,627 --> 02:08:37,547
+And I'm going to calculate whether the state, so which cluster that this data point belongs to.
+
+970
+02:08:37,547 --> 02:08:37,987
+Okay.
+
+971
+02:08:38,288 --> 02:08:46,027
+So that's the calculation that I need to do by using Mahalo-Novi's distance metric.
+
+972
+02:08:46,568 --> 02:08:46,788
+Okay.
+
+973
+02:08:47,387 --> 02:08:53,808
+Now, first of all, now, so this belongs to one cluster, right?
+
+974
+02:08:54,088 --> 02:08:56,127
+It belongs to cluster C.
+
+975
+02:08:56,127 --> 02:09:05,387
+And this is the centroid average point for one dimension and second dimension and for the deep dimension.
+
+976
+02:09:05,588 --> 02:09:13,987
+And this is the standard deviation for first dimension, second dimension and deep dimension.
+
+977
+02:09:14,368 --> 02:09:14,487
+Okay.
+
+978
+02:09:14,627 --> 02:09:16,847
+And this is for cluster C.
+
+979
+02:09:16,847 --> 02:09:17,447
+Okay.
+
+980
+02:09:17,907 --> 02:09:24,707
+Now, so what I'm going to do, I'm going to calculate the distance between this data point
+
+981
+02:09:24,707 --> 02:09:26,588
+and this centroid point.
+
+982
+02:09:26,868 --> 02:09:28,008
+What I'm doing is that
+
+983
+02:09:28,008 --> 02:09:31,668
+I am, for each dimension,
+
+984
+02:09:32,327 --> 02:09:34,387
+I am calculating
+
+985
+02:09:34,387 --> 02:09:37,347
+the distance difference
+
+986
+02:09:37,347 --> 02:09:39,247
+between the data points
+
+987
+02:09:39,247 --> 02:09:40,687
+dimension value
+
+988
+02:09:40,687 --> 02:09:44,528
+and the centroid
+
+989
+02:09:44,528 --> 02:09:46,728
+related dimension value.
+
+990
+02:09:47,088 --> 02:09:47,228
+Okay.
+
+991
+02:09:47,728 --> 02:09:48,747
+And I'm calculating
+
+992
+02:09:48,747 --> 02:09:52,627
+the difference between them.
+
+993
+02:09:52,627 --> 02:09:55,868
+And I'm dividing into the standard deviation value.
+
+994
+02:09:56,247 --> 02:10:00,307
+Now, this gives me the distance for that dimension.
+
+995
+02:10:00,467 --> 02:10:03,487
+For example, for the first dimension, it will give me the distance.
+
+996
+02:10:03,607 --> 02:10:06,068
+For the second one, it will give me the distance, okay?
+
+997
+02:10:06,527 --> 02:10:17,148
+That way, for dimension-wise, I will calculate the distance between the point P and cluster C, okay?
+
+998
+02:10:17,148 --> 02:10:28,388
+Now, once I have this y vector, okay, which gives me the normalized distance between the data point P and the cluster C,
+
+999
+02:10:28,388 --> 02:10:33,388
+and then I can calculate the Mahalanobis distance, which is...
+
+1000
+02:10:34,163 --> 02:10:41,163
+Summation of the square values of these y values taking the square root.
+
+1001
+02:10:41,163 --> 02:10:41,624
+Okay.
+
+1002
+02:10:42,023 --> 02:10:51,743
+So first I calculate the summation of the square values of each of the attribute or the dimension of the y vector.
+
+1003
+02:10:51,963 --> 02:10:57,463
+And then I'm taking the square root value, which will then give me the Mahalanubis distance value.
+
+1004
+02:10:57,924 --> 02:10:58,123
+Okay.
+
+1005
+02:10:58,123 --> 02:11:09,243
+Now this is, and I'm doing this for every cluster, for the data point P, I'm going to do this for the cluster number one, cluster number two, cluster number three.
+
+1006
+02:11:09,243 --> 02:11:16,663
+And then I will check whether this Maalanobis distance value is less than a certain threshold.
+
+1007
+02:11:17,344 --> 02:11:25,303
+If this is the less than certain threshold for cluster number C, then I will say it will belong to cluster number C, okay?
+
+1008
+02:11:25,303 --> 02:11:32,043
+If it is less than a threshold for cluster number, for example, D,
+
+1009
+02:11:32,243 --> 02:11:35,443
+then I will say it will belong to cluster number D.
+
+1010
+02:11:36,204 --> 02:11:40,744
+Then you may say, okay, now, so we have an understanding
+
+1011
+02:11:40,744 --> 02:11:44,384
+of how the Mahalo-Nubis distance is calculated, okay?
+
+1012
+02:11:44,763 --> 02:11:50,163
+But, so how do we calculate the threshold values?
+
+1013
+02:11:50,344 --> 02:11:52,604
+Let's take a look at the threshold values.
+
+1014
+02:11:57,076 --> 02:12:00,415
+Okay.
+
+1015
+02:12:00,755 --> 02:12:06,235
+Now, suppose that the distance,
+
+1016
+02:12:06,655 --> 02:12:09,675
+every values in y-vector is 1.
+
+1017
+02:12:10,095 --> 02:12:10,355
+Okay.
+
+1018
+02:12:11,055 --> 02:12:12,735
+So, which means that,
+
+1019
+02:12:13,155 --> 02:12:14,355
+so what does this mean?
+
+1020
+02:12:14,355 --> 02:12:18,955
+Which means the difference,
+
+1021
+02:12:19,395 --> 02:12:23,055
+the difference between the data point P
+
+1022
+02:12:23,055 --> 02:12:26,755
+and the cluster centroid C, okay,
+
+1023
+02:12:26,755 --> 02:12:31,695
+is only one standard deviation distance.
+
+1024
+02:12:32,256 --> 02:12:34,595
+In other words, so as you see,
+
+1025
+02:12:34,835 --> 02:12:38,735
+if you consider this centroid point x,
+
+1026
+02:12:39,155 --> 02:12:48,195
+and if the data point is somewhere right here
+
+1027
+02:12:48,195 --> 02:12:49,335
+or somewhere right here,
+
+1028
+02:12:49,395 --> 02:12:52,415
+which means that for all the dimensions,
+
+1029
+02:12:52,416 --> 02:12:58,976
+The difference between the centroid value is only one standard deviation.
+
+1030
+02:12:58,976 --> 02:13:06,116
+In that case, the value for y for every dimension is going to be 1.
+
+1031
+02:13:06,495 --> 02:13:06,775
+Okay.
+
+1032
+02:13:08,495 --> 02:13:09,736
+Going back.
+
+1033
+02:13:10,596 --> 02:13:10,836
+Okay.
+
+1034
+02:13:11,016 --> 02:13:15,535
+Now, if this difference is sigma.
+
+1035
+02:13:16,055 --> 02:13:16,516
+Okay.
+
+1036
+02:13:16,515 --> 02:13:26,895
+In that case, in every dimension, sigma divided by sigma will be 1 for every values of y, okay?
+
+1037
+02:13:27,075 --> 02:13:40,175
+Let's suppose that this particular data point is only 1 sigma away for every dimension from the centroid point, okay?
+
+1038
+02:13:40,215 --> 02:13:42,395
+Let's suppose that that happened.
+
+1039
+02:13:46,547 --> 02:14:03,667
+Now, in that case, if that's the case, since the Mahalo Nobis distance is square root of every values of y,
+
+1040
+02:14:05,427 --> 02:14:08,607
+so then the value will be here is d, okay?
+
+1041
+02:14:08,607 --> 02:14:11,787
+Because the number of dimensions in y is d.
+
+1042
+02:14:11,787 --> 02:14:22,187
+So therefore, the value inside the square root will be d, and taking the square root of that value is the Mahallanovist's distance value.
+
+1043
+02:14:22,507 --> 02:14:30,507
+Now, this is the case where this data point is one standard deviation away from the centroid.
+
+1044
+02:14:30,507 --> 02:14:42,787
+If it was two dimension, two sigma away from the centroid point, then the Mahallanovist distance would be two multiplied square root d.
+
+1045
+02:14:43,167 --> 02:14:54,707
+If it was three sigma away from the centroid point in every dimension, and in that case, Mahallanovist distance value would be three multiplied square root d.
+
+1046
+02:14:54,707 --> 02:15:00,327
+Then we say that, okay, why not we don't take these values as threshold?
+
+1047
+02:15:00,427 --> 02:15:04,267
+Because we already know the value of dimension at the beginning.
+
+1048
+02:15:04,827 --> 02:15:14,387
+Now we say that we can calculate the Mahalanibis distance for every data point, for every incoming data point.
+
+1049
+02:15:14,387 --> 02:15:27,547
+So we can calculate the distance based on this computation between the data point and the centroid of that cluster after we calculate it.
+
+1050
+02:15:28,667 --> 02:15:40,107
+And then we can compare it against square root d, 2 multiply square root d, 3 multiply square root d.
+
+1051
+02:15:40,107 --> 02:15:56,107
+If the calculated Mahalanubis distance value is less than this one, and then so if the threshold value for membership of a cluster is this one, then we can say, okay, it belongs to the cluster.
+
+1052
+02:15:56,628 --> 02:16:07,887
+If the threshold for membership for the cluster is this one, then we can say if the calculated Mahalanubis distance is less than this one, then we can say it belongs to that cluster.
+
+1053
+02:16:07,887 --> 02:16:10,887
+Okay, so we can pick any of these thresholds.
+
+1054
+02:16:10,887 --> 02:16:12,887
+We can pick 3 x d.
+
+1055
+02:16:12,887 --> 02:16:16,887
+We can say, so this is our threshold in that case.
+
+1056
+02:16:16,887 --> 02:16:19,887
+Every time we calculated the model of its distance,
+
+1057
+02:16:19,887 --> 02:16:21,887
+we will compare it with this value,
+
+1058
+02:16:21,887 --> 02:16:28,887
+which then will tell us whether or not we should accept that data point into our cluster.
+
+1059
+02:16:44,211 --> 02:16:49,192
+Evet, yani, bu da
+
+1060
+02:16:49,192 --> 02:16:51,031
+bu da
+
+1061
+02:16:51,031 --> 02:16:51,291
+bu
+
+1062
+02:16:51,291 --> 02:17:14,211
+da
+
+1063
+02:17:14,211 --> 02:17:17,892
+All data points that belong to these big clusters.
+
+1064
+02:17:18,451 --> 02:17:22,511
+And we only kept the data points that do not belong to these clusters.
+
+1065
+02:17:22,831 --> 02:17:27,892
+And we called those data points as compression set and also the retaining set.
+
+1066
+02:17:28,292 --> 02:17:33,031
+And those data points that belong to these clusters, we called them as discard set.
+
+1067
+02:17:33,752 --> 02:17:37,432
+And then we brought the second segment into the physical memory.
+
+1068
+02:17:37,431 --> 02:17:48,211
+And for every data points in this segment, we compare the data points distance to the centroid of these clusters by using the Mahalonobis distance.
+
+1069
+02:17:49,011 --> 02:17:49,151
+Okay.
+
+1070
+02:17:49,371 --> 02:17:56,211
+And if it is less than the threshold, which I told you, then we say, okay, it belongs to this particular cluster.
+
+1071
+02:17:56,211 --> 02:18:01,691
+If not, we are checking with all different centroids.
+
+1072
+02:18:01,691 --> 02:18:09,691
+If none of them, if it turns out that this data point do not belong to any of them, then we will keep it in the memory.
+
+1073
+02:18:09,831 --> 02:18:18,851
+If it belongs to one of these clusters, I will update the statistics information and some square and some vector.
+
+1074
+02:18:19,731 --> 02:18:26,651
+And then I will discard this data point, which means I will not keep it in the physical memory.
+
+1075
+02:18:26,651 --> 02:18:39,531
+The reason that I'm keeping statistical information, not the actual data points, as I said, the total size of the whole data points here in terabytes.
+
+1076
+02:18:39,531 --> 02:18:43,131
+And here the physical memory is in gigabytes.
+
+1077
+02:18:43,691 --> 02:18:47,891
+Therefore, I cannot fit all the data points into the physical memory.
+
+1078
+02:18:48,431 --> 02:18:55,932
+Therefore, at every step, I am updating the statistics information of these clusters.
+
+1079
+02:18:55,932 --> 02:19:06,092
+Therefore, in each step, I have the required information about my calculations related to each cluster.
+
+1080
+02:19:06,592 --> 02:19:10,792
+And I also don't use the memory unnecessarily.
+
+1081
+02:19:10,792 --> 02:19:11,392
+Okay.
+
+1082
+02:19:15,188 --> 02:19:25,227
+And finally, the second question that needs to be answered, whether the two compression set subcluster can be combated.
+
+1083
+02:19:25,227 --> 02:19:35,487
+So remember, apart from the discard set clusters, there were other data points that we kept in the physical memory.
+
+1084
+02:19:35,487 --> 02:19:41,967
+And amongst those data points that are data points that can be grouped together.
+
+1085
+02:19:42,407 --> 02:19:47,667
+And these small clusters are called compression set clusters.
+
+1086
+02:19:47,667 --> 02:19:48,207
+Okay.
+
+1087
+02:19:48,847 --> 02:19:55,887
+Now, at every iteration, every time we bring another segment of data into physical memory,
+
+1088
+02:19:56,327 --> 02:20:04,027
+we also need to compute whether or not these two small clusters can be combined to each other.
+
+1089
+02:20:04,028 --> 02:20:20,887
+So in that case, if we can combine each other, so we use one of the in-memory clustering algorithms, and then we combine by looking at their centroid values.
+
+1090
+02:20:20,887 --> 02:20:41,367
+okay and at the end finally so once the whole data segments are processed those compression sets that do not so those every compression set that we kept in the physical memory we combine them to the nearest clusters okay.
+
+1091
+02:20:41,368 --> 02:21:04,268
+Now, this is the BFR algorithm. As I said, the BFR algorithm has an assumption. It only works in a Euclidean space, and also it requires that in each dimension, the data points should be distributed based on the normal distribution.
+
+1092
+02:21:04,267 --> 02:21:13,267
+okay and this is the how the algorithm works. Now one other big data clustering algorithm is called
+
+1093
+02:21:13,267 --> 02:21:18,287
+cure algorithm. I want to talk about this and then wrap up the lecture.
+
+1094
+02:21:24,115 --> 02:21:33,655
+Now, so the cure algorithm removes the assumption that BFR algorithm says.
+
+1095
+02:21:33,655 --> 02:21:42,275
+So the BFR algorithms had the assumption that clusters should normally be distributed in each dimension.
+
+1096
+02:21:42,495 --> 02:21:49,876
+So with the BFR algorithm, for example, so if this is a two-dimensional space, x-axis and y-axis,
+
+1097
+02:21:49,876 --> 02:21:55,496
+BFR algorithm required that for the X dimension,
+
+1098
+02:21:55,775 --> 02:21:57,836
+the data points should be distributed normally,
+
+1099
+02:21:57,956 --> 02:21:59,895
+as you can see, the normal distribution.
+
+1100
+02:22:00,575 --> 02:22:03,735
+And for Y axis, each cluster should be distributed
+
+1101
+02:22:03,735 --> 02:22:09,535
+for Y values, for Y dimension with normal distribution.
+
+1102
+02:22:10,035 --> 02:22:11,976
+You can also say this for each cluster.
+
+1103
+02:22:11,976 --> 02:22:15,715
+So this kind of dataset can be processed
+
+1104
+02:22:15,715 --> 02:22:17,956
+by using the BFR algorithm, okay?
+
+1105
+02:22:17,956 --> 02:22:23,095
+As you see, this dataset is not the same thing.
+
+1106
+02:22:23,095 --> 02:22:25,275
+So an x-axis and y-axis.
+
+1107
+02:22:25,796 --> 02:22:30,056
+So we can conclude that this data point,
+
+1108
+02:22:30,175 --> 02:22:31,916
+these data points are not distributed
+
+1109
+02:22:31,916 --> 02:22:33,476
+based on the normal distribution.
+
+1110
+02:22:34,056 --> 02:22:38,035
+And again, if you consider this dataset,
+
+1111
+02:22:38,575 --> 02:22:41,615
+you can say that the data points in each cluster,
+
+1112
+02:22:41,776 --> 02:22:45,315
+they are not distributed based on the normal distribution
+
+1113
+02:22:45,315 --> 02:22:47,336
+in each dimension.
+
+1114
+02:22:47,955 --> 02:22:50,595
+So we can also say that, okay?
+
+1115
+02:22:51,455 --> 02:22:57,435
+Now, so what are we going to do with these types of datasets?
+
+1116
+02:22:57,915 --> 02:23:04,875
+Okay, so basically we want to apply these clustering algorithms on large-scale datasets,
+
+1117
+02:23:04,875 --> 02:23:12,715
+but so not all the datasets are like this, normal distribution dimension-wise.
+
+1118
+02:23:12,835 --> 02:23:14,455
+There are datasets like this, okay?
+
+1119
+02:23:14,455 --> 02:23:17,635
+And we can, in that case, we can use the Cure algorithm.
+
+1120
+02:23:18,055 --> 02:23:20,155
+So how does the Cure algorithm works?
+
+1121
+02:23:22,075 --> 02:23:22,315
+Okay.
+
+1122
+02:23:23,195 --> 02:23:26,635
+Cure algorithm also assumes Euclidean distance
+
+1123
+02:23:26,635 --> 02:23:33,795
+because it needs to calculate the average values.
+
+1124
+02:23:34,075 --> 02:23:36,715
+It needs to calculate the centroid values.
+
+1125
+02:23:37,135 --> 02:23:37,355
+Okay.
+
+1126
+02:23:37,535 --> 02:23:41,235
+But it allows clusters to be in any shape.
+
+1127
+02:23:41,235 --> 02:23:46,995
+With the CURE algorithm, different shape clusters can also be computed.
+
+1128
+02:23:47,556 --> 02:23:47,655
+Okay.
+
+1129
+02:23:49,095 --> 02:23:51,235
+So, how does it work?
+
+1130
+02:23:52,715 --> 02:23:56,275
+So, let's say, so we have a data set like this.
+
+1131
+02:23:56,476 --> 02:23:57,535
+Let's keep it simple.
+
+1132
+02:23:57,735 --> 02:24:01,195
+So, we have a two dimension, so in this data set.
+
+1133
+02:24:01,195 --> 02:24:08,875
+And as you see, these are two clusters that collided with each other.
+
+1134
+02:24:08,875 --> 02:24:17,875
+So basically, I have two main clusters, and some part of it collided each other.
+
+1135
+02:24:18,035 --> 02:24:23,935
+So I would like to find out whether Cure algorithm can help me to identify clusters like this.
+
+1136
+02:24:27,956 --> 02:24:36,376
+Now, with the Cure algorithm, first of all, we pick a random sample of data points that can fit into memory, okay?
+
+1137
+02:24:36,796 --> 02:24:47,376
+Again, so consider that we have a large-scale data set, let's say a terabyte-scale data set, and I have gigabyte-scale physical memory.
+
+1138
+02:24:47,376 --> 02:24:58,535
+So in that case, what I'm going to do, I'm going to pick a random sample data points from the large scale data sets that sits in the hard drive.
+
+1139
+02:24:59,015 --> 02:25:05,835
+And I will only bring into memory a sample of it and I will pick the sample randomly.
+
+1140
+02:25:05,835 --> 02:25:19,215
+And then I will cluster sample points by using one of the in-memory algorithms, such as hierarchical clustering algorithms, to find the initial clusters.
+
+1141
+02:25:19,395 --> 02:25:24,435
+I will use the hierarchical cluster algorithms, which will then give me the initial clusters.
+
+1142
+02:25:24,435 --> 02:25:33,155
+ok and after that what i'm going to do i will for each cluster i will pick a k representative
+
+1143
+02:25:33,155 --> 02:25:41,075
+points as this part as possible as far away from possible from each other possible and for example
+
+1144
+02:25:41,075 --> 02:25:50,316
+i could choose k4 i could choose k3 okay i could choose some value for k but it needs to be more
+
+1145
+02:25:50,316 --> 02:25:59,055
+And then I will move each representative point to a fixed fraction toward the centroid of the cluster.
+
+1146
+02:25:59,436 --> 02:26:02,915
+So let's take a look at it here.
+
+1147
+02:26:03,655 --> 02:26:07,775
+Now, so this is, for example, so this is my data set.
+
+1148
+02:26:07,775 --> 02:26:14,735
+I applied the, so one of the in-memory hierarchical clustering algorithms.
+
+1149
+02:26:15,476 --> 02:26:19,116
+So my clustering algorithm found these three clusters.
+
+1150
+02:26:19,555 --> 02:26:19,676
+Okay.
+
+1151
+02:26:19,676 --> 02:26:25,676
+It's not as perfect as this one.
+
+1152
+02:26:25,676 --> 02:26:27,676
+Okay.
+
+1153
+02:26:27,676 --> 02:26:37,676
+But again, it found me a cluster, the hierarchical clustering call, it found me cluster that
+
+1154
+02:26:37,676 --> 02:26:42,676
+you can see that in each cluster, it did a good job.
+
+1155
+02:26:42,676 --> 02:26:51,735
+So it is able to find this cluster where all the members are in the same kind and this cluster, all same kind.
+
+1156
+02:26:51,735 --> 02:27:03,896
+And this cluster, again, the majority of it, so it has the same number of one kind and the same number of the other kind.
+
+1157
+02:27:03,896 --> 02:27:18,095
+Okay, but so it is again, you can consider it as a good clustering result without knowing the actual structure of the data distribution.
+
+1158
+02:27:18,295 --> 02:27:33,636
+Okay, now after I applied the initial in-memory clustering algorithm, in the next step what I do is that for each cluster, I'm going to pick four representative data port.
+
+1159
+02:27:33,635 --> 02:27:40,855
+And as I pick the four representative data points, I am trying to pick as disport as possible.
+
+1160
+02:27:41,055 --> 02:27:49,695
+So as you see that, so after I picked one randomly, the second one that I pick should be far away from this one.
+
+1161
+02:27:49,975 --> 02:27:54,375
+And the third one that I picked should be far away from both of them.
+
+1162
+02:27:54,475 --> 02:27:58,115
+And the fourth one should be far away from all of them.
+
+1163
+02:27:58,115 --> 02:27:58,795
+Okay.
+
+1164
+02:27:58,795 --> 02:28:09,415
+And the next step with this algorithm is that I move each point towards the centroid with a certain percentage.
+
+1165
+02:28:09,415 --> 02:28:12,695
+Let's say I can choose this certain percentage.
+
+1166
+02:28:12,915 --> 02:28:15,956
+20%, I can move in the direction of centroid.
+
+1167
+02:28:16,255 --> 02:28:16,495
+Okay.
+
+1168
+02:28:18,804 --> 02:28:21,544
+And I can do this for every cluster.
+
+1169
+02:28:21,923 --> 02:28:27,983
+I will do it for this cluster, do the same thing for this cluster, do the same thing for this cluster.
+
+1170
+02:28:28,343 --> 02:28:32,623
+Now I have representative data points for each cluster.
+
+1171
+02:28:32,623 --> 02:28:39,283
+If I have four representative for this one, I have four representative for this one and four representative for this one.
+
+1172
+02:28:39,724 --> 02:28:39,804
+Okay.
+
+1173
+02:28:39,804 --> 02:28:43,263
+Then
+
+1174
+02:28:43,263 --> 02:28:45,703
+in the next step
+
+1175
+02:28:45,703 --> 02:28:48,324
+in the initial
+
+1176
+02:28:48,324 --> 02:28:51,123
+phase what I did was that
+
+1177
+02:28:51,123 --> 02:28:52,644
+I picked randomly
+
+1178
+02:28:52,644 --> 02:28:55,024
+certain number of data points and
+
+1179
+02:28:55,024 --> 02:28:57,043
+I moved it into the physical
+
+1180
+02:28:57,043 --> 02:28:59,164
+memory. I applied the
+
+1181
+02:28:59,164 --> 02:29:01,144
+hierarchical clustering algorithm
+
+1182
+02:29:01,144 --> 02:29:02,484
+which gave me the
+
+1183
+02:29:02,484 --> 02:29:05,164
+clustering result
+
+1184
+02:29:05,164 --> 02:29:07,123
+okay and for
+
+1185
+02:29:07,123 --> 02:29:09,043
+those clusters I picked
+
+1186
+02:29:09,043 --> 02:29:11,363
+four representative data points
+
+1187
+02:29:11,363 --> 02:29:13,123
+that are
+
+1188
+02:29:13,123 --> 02:29:15,763
+as disported as possible
+
+1189
+02:29:15,763 --> 02:29:17,603
+and I moved them towards
+
+1190
+02:29:17,603 --> 02:29:19,663
+the direction of centroid for certain
+
+1191
+02:29:19,663 --> 02:29:21,983
+percentage so let's say 20%
+
+1192
+02:29:21,983 --> 02:29:23,503
+and for each
+
+1193
+02:29:23,503 --> 02:29:24,883
+clusters then I had
+
+1194
+02:29:24,883 --> 02:29:27,664
+representative data
+
+1195
+02:29:27,664 --> 02:29:29,263
+points and after that
+
+1196
+02:29:29,263 --> 02:29:31,423
+in the second phase I'm
+
+1197
+02:29:31,423 --> 02:29:33,683
+going to re-scan the whole data
+
+1198
+02:29:33,683 --> 02:29:35,403
+sent and assign
+
+1199
+02:29:35,403 --> 02:29:37,164
+each data point P
+
+1200
+02:29:37,164 --> 02:29:40,683
+to the closest data point.
+
+1201
+02:29:40,903 --> 02:29:41,964
+So what does this mean?
+
+1202
+02:29:44,104 --> 02:29:46,863
+Now, after I calculated
+
+1203
+02:29:46,863 --> 02:29:49,083
+the representative data points
+
+1204
+02:29:49,083 --> 02:29:50,043
+for each cluster,
+
+1205
+02:29:50,363 --> 02:29:51,623
+I'm going to start
+
+1206
+02:29:51,623 --> 02:29:53,164
+from the first data point
+
+1207
+02:29:53,164 --> 02:29:54,524
+in my data sense
+
+1208
+02:29:54,524 --> 02:29:57,863
+and go through the scan,
+
+1209
+02:29:58,083 --> 02:29:59,083
+the rest of them.
+
+1210
+02:29:59,484 --> 02:30:00,884
+And for each data point,
+
+1211
+02:30:00,884 --> 02:30:01,884
+I'm going to see
+
+1212
+02:30:01,884 --> 02:30:05,324
+which one of the representative data points,
+
+1213
+02:30:05,323 --> 02:30:12,943
+So in this particular example, I have three cluster, four data points for each of them, multiply by three.
+
+1214
+02:30:13,103 --> 02:30:15,403
+So that's 12 representative data points.
+
+1215
+02:30:15,403 --> 02:30:23,304
+I will look at the distance between the data point in my data set and these 12 data points.
+
+1216
+02:30:23,304 --> 02:30:36,563
+And then I will move the, I will assign this data point to the cluster where the representative of it is the closest data point.
+
+1217
+02:30:36,723 --> 02:30:43,684
+I will move the data point to a cluster where the closest data point is from that cluster.
+
+1218
+02:30:56,404 --> 02:31:24,723
+okay. So, after I scan the whole data set, I place it in the closest cluster. So again, the definition is that the cluster with the closest to P among all the representative points of the clusters. Okay. And that that's it. So in that base, basically, what I'm doing is that I am assigning all these data points to the to do
+
+1219
+02:31:26,404 --> 02:31:31,323
+available clusters in the physical memory.
+
+1220
+02:31:36,724 --> 02:31:48,383
+Okay, so today we talked about the clustering topic, which is grouping together the set of data points with the notion of distance between the data points.
+
+1221
+02:31:48,383 --> 02:31:55,943
+We talked about different distance metrics. We talked about Euclidean distance metrics. We talked about Mahalanobis distance metric.
+
+1222
+02:31:55,943 --> 02:32:02,943
+ve
+
+1223
+02:32:02,943 --> 02:32:24,944
+bir
+
+1224
+02:32:24,943 --> 02:32:29,023
+which is the initial prior knowledge about the dataset.
+
+1225
+02:32:29,863 --> 02:32:37,303
+And so these two can be used in small dataset sizes that can fit into physical memory.
+
+1226
+02:32:37,303 --> 02:32:41,183
+But for the data sizes that cannot fit into physical memory,
+
+1227
+02:32:41,523 --> 02:32:44,063
+we talked about there are two big data algorithms.
+
+1228
+02:32:44,303 --> 02:32:45,203
+One is BFR.
+
+1229
+02:32:45,663 --> 02:32:48,823
+BFR is an extension version of the K-Means algorithm.
+
+1230
+02:32:48,823 --> 02:32:50,823
+ve CUR'in
+
+1231
+02:32:50,823 --> 02:32:52,823
+CUR'in
+
+1232
+02:32:52,823 --> 02:33:18,823
+kür'in
+
+1233
+02:33:48,823 --> 02:33:50,583
+today here in the
+
+1234
+02:33:50,583 --> 02:33:52,843
+course
+
+1235
+02:33:52,843 --> 02:33:54,843
+website, Clustering
+
+1236
+02:33:54,843 --> 02:33:57,023
+Hierarchical Clustering
+
+1237
+02:33:57,023 --> 02:33:58,583
+K-Means BFR and Cure.
+
+1238
+02:33:59,723 --> 02:33:59,883
+And
+
+1239
+02:33:59,883 --> 02:34:03,143
+so
+
+1240
+02:34:03,143 --> 02:34:04,923
+next week
+
+1241
+02:34:04,923 --> 02:34:06,703
+we don't have any
+
+1242
+02:34:06,703 --> 02:34:08,963
+lecture, so I won't
+
+1243
+02:34:08,963 --> 02:34:10,343
+I will be
+
+1244
+02:34:10,343 --> 02:34:12,943
+attending a conference
+
+1245
+02:34:12,943 --> 02:34:14,923
+so I won't hold any
+
+1246
+02:34:14,923 --> 02:34:16,103
+lectures for next week.
+
+1247
+02:34:16,103 --> 02:34:20,623
+but the week after that we will have a lecture
+
+1248
+02:34:20,623 --> 02:34:24,523
+and that's the lecture that I will discuss the term project
+
+1249
+02:34:24,523 --> 02:34:28,703
+and that's the lecture that I will cover one additional topic
+
+1250
+02:34:28,703 --> 02:34:30,243
+before the midterm exam.
+
+1251
+02:34:31,163 --> 02:34:35,403
+So the midterm exam is three weeks from today
+
+1252
+02:34:35,403 --> 02:34:39,063
+which is the eighth week of the semester.
+
+1253
+02:34:39,063 --> 02:34:44,903
+So you should attend the lecture before the midterm.
+
+1254
+02:34:44,903 --> 02:34:50,543
+So, we don't have any lectures next week
+
+1255
+02:34:50,543 --> 02:34:52,463
+But the following week
+
+1256
+02:34:52,463 --> 02:34:54,103
+We will have a lecture
+
+1257
+02:34:54,103 --> 02:34:55,903
+And it's an important lecture
+
+1258
+02:34:55,903 --> 02:34:58,643
+Not only I will talk about the term project
+
+1259
+02:34:58,643 --> 02:35:00,503
+But also I will also talk about
+
+1260
+02:35:00,503 --> 02:35:04,783
+The midterm as well
+
+1261
+02:35:04,783 --> 02:35:07,143
+So make sure you attend to that lecture
+
+1262
+02:35:07,143 --> 02:35:10,023
+Okay, any questions so far?
+
+1263
+02:35:16,340 --> 02:35:29,699
+okay. I will stop now. So thanks for attending the lecture. So hopefully I'll see you in two weeks time. So if you have any further questions, you can send me an email asking your questions. I'll be happy to answer.
+
+1264
+02:35:32,940 --> 02:35:36,919
+Okay. Teşekkür ederim katıldığınız için arkadaşlar. Görüşmek üzere. İyi dersler.
