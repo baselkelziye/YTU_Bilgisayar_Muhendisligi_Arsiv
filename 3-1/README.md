@@ -52,6 +52,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1USYM6BpcQYzJxxtQtGbPWs4Kw9cwtMsR?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Algoritma Analizi Ders Kayıtları Altyazıları](./Algoritma%20Analizi/ders_kayitlari/) ✨
 - 📄 **Not:** [Elle çıkarılmış daha güzel 2 ders notu](./Algoritma%20Analizi/slaytlar_notlar/2019) ✨
 - 📄 **Not:** [Elle çıkarılmış ders notu](./Algoritma%20Analizi/slaytlar_notlar/2022/not.pdf) ✨
 - 📄 **Not:** [Nasırın el yazısı notu](./Algoritma%20Analizi/slaytlar_notlar/2021/nas%C4%B1r%C4%B1n%20el%20yaz%C4%B1s%C4%B1%20notu.pdf) ✨
@@ -242,6 +243,7 @@
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link) ✨
 - 📄 **Ders Kayıtları:** [Alt Seviye Programlama Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama/ders_kayitlari/) ✨
 - 📄 **Ders Kayıtları:** [Mikroişlemci Sistemleri Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri/ders_kayitlari/2020-2021/altyazilar/) ✨
+- 📄 **Ders Kayıtları:** [Mikroişlemci Sistemleri ve Assembly Dili Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/ders_kayitlari/) ✨
 - 📄 **Not:** [El yazısı not](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri/slaytlar_notlar/2022/notlar) ✨
 - 📄 **Not:** [Nasırın el yazısı alt seviye notu](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama/slaytlar_notlar/2021/nas%C4%B1r%20el%20yaz%C4%B1s%C4%B1.pdf) render edilemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
@@ -282,6 +284,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1qu7cB8noSxQKZTaqhc7y0RbSYREUpBOi?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Seminer ve Meslek Etiği Ders Kayıtları Altyazıları](./Seminer%20ve%20Meslek%20Eti%C4%9Fi/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

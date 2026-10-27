@@ -44,6 +44,7 @@
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link) ✨
 - 📄 **Ders Kayıtları:** [Alt Seviye Programlama Ders Kayıtları Altyazıları](./alt%20seviye%20programlama/ders_kayitlari/) ✨
 - 📄 **Ders Kayıtları:** [Mikroişlemci Sistemleri Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri/ders_kayitlari/2020-2021/altyazilar/) ✨
+- 📄 **Ders Kayıtları:** [Mikroişlemci Sistemleri ve Assembly Dili Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [El yazısı not](./Mikroi%C5%9Flemci%20Sistemleri/slaytlar_notlar/2022/notlar) ✨
 - 📄 **Not:** [Nasırın el yazısı alt seviye notu](./alt%20seviye%20programlama/slaytlar_notlar/2021/nas%C4%B1r%20el%20yaz%C4%B1s%C4%B1.pdf) render edilemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
