@@ -1,0 +1,1891 @@
+1
+00:00:31,603 --> 00:00:34,483
+Evet, merhabalar. Sınavdan sonra ilk dersimiz
+
+2
+00:00:45,619 --> 00:00:55,759
+nasıl geçti sınavlarınız? Henüz genel olarak baktım ama tamamlamadım. Okuma işini.
+
+3
+00:01:02,195 --> 00:01:15,195
+Evet, şurayı biraz daha az verebilirdim ama ilk sınavınız diye. Zaten hep derste gördüğümüz şeylerdi. Slide'ları da koymuştum.
+
+4
+00:01:31,091 --> 00:01:33,091
+Bugün
+
+5
+00:01:36,596 --> 00:01:41,155
+yazılımda, yazılım evlerinde, iyileştirme konusunda
+
+6
+00:01:49,268 --> 00:02:09,707
+Evet, süre konusunda gerçekten bu sınavda biraz tam koşullara uyarak cevapladığınızı düşünürsek, cevap kağıdına yazmanız, onu tarayıp yüklemeniz falan gibi zamanlarla süre iyiydi.
+
+7
+00:02:09,707 --> 00:02:18,787
+Ama sonradan cevap veren arkadaşlarınızla ben bir kısmına yanıtladım, bir kısmına yanıtlamadım.
+
+8
+00:02:19,268 --> 00:02:22,108
+Ama onlarda şöyle bir yol izleyeceğim.
+
+9
+00:02:23,687 --> 00:02:25,268
+Süre bitiminden sonra...
+
+10
+00:02:31,572 --> 00:02:35,531
+süre bitiminden sonra ne kadar süre sonra bana göndermişsiniz?
+
+11
+00:02:36,171 --> 00:02:40,611
+Onu dikkate alarak belirli puan üzerinden notlandıracağım.
+
+12
+00:02:40,611 --> 00:02:58,111
+Yani çok fazla düşürmeyeceğim ama zamanında yükleyen arkadaşlarınızdan daha farklı olacak.
+
+13
+00:02:58,291 --> 00:03:01,051
+Sonradan bana mail ile gönderen arkadaşlarınız var.
+
+14
+00:03:01,572 --> 00:03:14,292
+onları da gönderdikleri saate göre, gönderdikleri zamana göre biraz daha düşük not üzerinden değerlendirerek dikkate alacağım.
+
+15
+00:03:22,132 --> 00:03:37,611
+Evet, bunların hepsini ben dikkate alacağım bütün söylediklerinizi. Evet, şimdi sınavdan sonra sizin sorunuz var mı? Yeni konuya geçmeden önce.
+
+16
+00:03:37,611 --> 00:03:58,312
+bazı düzeltmeler oldu. Bazı arkadaşlarınız evhamlanıp işte ben boş kağıt gördüm. Bazıları hakikaten farklı bir şey göndermiş. Onların hepsini bir şekilde dikkate alacağım.
+
+17
+00:04:03,412 --> 00:04:24,371
+Evet. Sizin sınavla ilişkili, aklınıza takılan, sormak istediğiniz bir şey var mı? Burada dediğim gibi ilk sınav olduğu için şey de yapmadım. Yani çok fazla yorum sorusu da yoktu. Genel olarak derste gördüklerimizi tekrarlayacağımız bir sınavda.
+
+18
+00:04:24,371 --> 00:04:42,272
+finalde biraz daha kıyaslamalı. Biraz daha bildiklerinize göre bir yazılım mühendisi, bir bilgisayar mühendisi olarak yorumunuzu katacak sorular sorabilirim.
+
+19
+00:04:42,272 --> 00:04:50,251
+Bu tamamen gördüklerimizi ne kadar algıladığınızla ilişkili sorulardı.
+
+20
+00:04:50,252 --> 00:05:01,612
+Bu arada gereksinim belgelerinizi çoğunuz gönderdiniz. Halen göndermeyen var mı? Veya bir grubu olmayan?
+
+21
+00:05:08,211 --> 00:05:31,711
+Aslında bu grupları ben bir Word dosyasına işledim. Onları bu dokümanlar sayfasına yükleyip herkes bir yandan da kendisini kontrol etsin. Bulundukları grupla ilişkili.
+
+22
+00:05:42,451 --> 00:05:49,251
+Onları da dersten sonra o Word dosyasını dokümanlara yükleyeyim.
+
+23
+00:05:50,392 --> 00:05:51,631
+Bugünkü dersten sonra.
+
+24
+00:05:55,220 --> 00:05:59,359
+Evet, derste katılandı. Bu arada 36 kişi oldu.
+
+25
+00:06:04,564 --> 00:06:18,923
+Tekrar yeni katılanlara da sorayım. Sınavdan sonra dersle ilgili biraz daha olgunlaşmış olacağı için fikirleriniz, sorunuz var mı?
+
+26
+00:06:37,043 --> 00:06:49,843
+Evet, bir şey gelmedi. O zaman şimdi artık tekrar yapmıyorum. En son sınav oldunuz çünkü.
+
+27
+00:06:55,028 --> 00:07:15,147
+iyileştirme ile ilişkili konuyla devam edeceğim. Daha sonra da biraz belki çevik modellerde bu işler nasıl gerçekleşiyor, çevik modeller üzerinde durabiliriz.
+
+28
+00:07:15,147 --> 00:07:24,487
+Evet, şimdi görüntüyü kapatıp dersin slide'ını yükliyorum.
+
+29
+00:08:22,867 --> 00:08:39,308
+Yazılım Kalite İyileştirme nedir? Burada neyi hedefliyoruz? Slide görüntüsünde bir problem var mı? Slide görünümünde bir problem var mı?
+
+30
+00:08:44,148 --> 00:08:44,787
+Yok hocam.
+
+31
+00:08:45,347 --> 00:08:46,608
+Tamam, teşekkür ederim.
+
+32
+00:08:48,487 --> 00:08:50,407
+Burada hedefimiz ne?
+
+33
+00:08:51,667 --> 00:09:02,307
+Biz yazılım kalitesini sağlamak için gerçekleştirdiğimiz işlemleri sayarken standartları koyacağız ve bu standartlara uyacağız.
+
+34
+00:09:02,447 --> 00:09:06,068
+Standartlara uyarak yazılım geliştirme işini yapacağız demiştik.
+
+35
+00:09:06,068 --> 00:09:17,148
+Peki bu standartları hangi türde göstermiştik?
+
+36
+00:09:18,427 --> 00:09:22,527
+Bir kaynağına göre demiştik.
+
+37
+00:09:22,627 --> 00:09:26,447
+Yazılım standartı hangi kaynağa göre oluşturuldu?
+
+38
+00:09:27,008 --> 00:09:29,527
+Bu kaynağa göre diye şöyle açmıştık.
+
+39
+00:09:29,527 --> 00:09:35,067
+IEEE'nin oluşturduğu, ISO'nun oluşturduğu, DOD'nin oluşturduğu gibi.
+
+40
+00:09:35,067 --> 00:09:52,847
+Yani yazılım standardını, kaynağı nedir, menşeği nedir, kim bunu veya hangi organizasyon bunu oluşturmuştur ve desteklemektedir.
+
+41
+00:09:52,847 --> 00:10:08,087
+Bir de yazılım geliştirme sürecine göre demiştik ki biz IEEE standartlarında her ikisini de görüyoruz.
+
+42
+00:10:08,207 --> 00:10:12,847
+Yani hangi süreç adımını desteklemek üzere bu standartı koyuyoruz.
+
+43
+00:10:12,847 --> 00:10:36,508
+İşte plan için yazılım geliştirme planını destekleyen, yazılım gereksinimini kontrol altında tutan, yazılım tasarım belgelerini düzenleyen gibi yazılım geliştirme süreci ile ilişkilendirmek standartları.
+
+44
+00:10:36,508 --> 00:10:39,508
+Bunlara göre de sınıflandırıyoruz.
+
+45
+00:10:39,508 --> 00:10:51,508
+İşte örneğini zaten siz yakından örneğini IEEE 830'da uyguladınız ve yaşadınız.
+
+46
+00:10:52,728 --> 00:11:00,728
+Gereksinin belgesi hazırlarken IEEE 830 standartını kullandınız.
+
+47
+00:11:01,668 --> 00:11:06,748
+Yani bunu tam birebir aynısı ya da özetleyerek kullanabilirsiniz demiştim.
+
+48
+00:11:06,747 --> 00:11:08,827
+genellikle özetleyerek kullanmanızı
+
+49
+00:11:08,827 --> 00:11:09,527
+istemiştim.
+
+50
+00:11:10,707 --> 00:11:12,767
+Burada baktığımızda kaynağı
+
+51
+00:11:12,767 --> 00:11:14,667
+IEEE bu
+
+52
+00:11:14,667 --> 00:11:15,647
+standartı.
+
+53
+00:11:16,887 --> 00:11:18,727
+Yazılım geliştirme sürecine
+
+54
+00:11:18,727 --> 00:11:21,227
+göre tipi de
+
+55
+00:11:21,227 --> 00:11:22,887
+yazılım gereksinim
+
+56
+00:11:22,887 --> 00:11:24,067
+analizini
+
+57
+00:11:24,067 --> 00:11:26,487
+kontrol altında tutan bir
+
+58
+00:11:26,487 --> 00:11:27,347
+standart.
+
+59
+00:11:29,227 --> 00:11:30,947
+Bu şekilde
+
+60
+00:11:30,947 --> 00:11:32,527
+standartları kullanıyoruz.
+
+61
+00:11:32,727 --> 00:11:33,667
+Bir de
+
+62
+00:11:33,667 --> 00:11:46,987
+Yazılımda kaliteyi iyileştirmek için bir sertifikasyon içinde olabiliriz veya bu sertifikasyonu dikkate alarak kurumumuzu iyileştirmeye çalışırız.
+
+63
+00:11:46,987 --> 00:12:05,467
+Doğrudan biz müracaat etmeyiz böyle bir sertifikasyon kurumuna ama bu listede neler olduğuna bakıp kurumumuzu kendimize göre daha kaliteli çalışan bir yazılım evi haline getirebiliriz.
+
+64
+00:12:05,527 --> 00:12:07,327
+Yazılım ekibi haline getirebiliriz.
+
+65
+00:12:08,547 --> 00:12:14,728
+O zaman yazılımı iyileştirme süreci dediğimizde ne anlıyoruz?
+
+66
+00:12:14,728 --> 00:12:28,608
+Bir de bu yazılım evlerinde nasıl sertifikasyonlar var bunu anlamayı hedefliyoruz biz bu derste.
+
+67
+00:12:29,308 --> 00:12:39,728
+Bir de yazılım geliştirme sürecinde hangi anahtar süreç alanları var bunları nasıl ilişkilendiriyoruz bunu görüyoruz.
+
+68
+00:12:39,728 --> 00:12:41,728
+Ayrıca...
+
+69
+00:12:43,135 --> 00:13:01,675
+Şu anda günümüzde bu sertifikasyonun içine alınan, tüm yazılım ve sertifikasyonun içine alan personel çalışanların yetenek modeli nedir? Bunun üzerinde duracağız. Bugünkü dersin hedefi bu.
+
+70
+00:13:07,316 --> 00:13:34,175
+Tekrar bulunduğumuz noktayı özetlersek, yazılımı daha kaliteli hale getirmenin amacı hangi kriterlere bağlı olarak ilerler? Hangi aktiviteleri gerçekleştirmemiz gerekir? Standartlara uyacağız.
+
+71
+00:13:34,175 --> 00:13:37,755
+bir yazılım geliştirme süreç modeli kullanacağız.
+
+72
+00:13:39,475 --> 00:13:45,515
+Gözden geçirme ve inceleme gerçekleştireceğiz, test yapacağız.
+
+73
+00:13:45,996 --> 00:13:55,496
+Bunlar hepsi yazılım geliştirmeye başlamadan önce standartları ve geliştirme süreç modelini belirlemek.
+
+74
+00:13:55,496 --> 00:14:12,515
+yazılımı geliştirirken review, inceleme ve test yapmak ve yazılımı tamamlarken hem de tamamladıktan sonra konfigürasyon yönetimi yapmak.
+
+75
+00:14:12,515 --> 00:14:26,115
+Ayrıca bütün bu geliştirmeyi tamamladığımızda daha sonraki süreçlerde ölçümler yaparak bir ölçüm arşivi oluşturmak yazılım evinde.
+
+76
+00:14:26,115 --> 00:14:30,135
+Bunlar kaliteyi sağlamak için yapacaklarımızdı.
+
+77
+00:14:30,135 --> 00:14:49,356
+yazılım evinin belirli koşulları sağlaması, kendini ispat etmesi için bir de sertifikasyon alması uygun olacaktır demiştik.
+
+78
+00:14:49,356 --> 00:14:54,036
+İşte bugün bu sertifikasyon işlerini konuşacağız.
+
+79
+00:14:54,515 --> 00:15:00,296
+Yazılım evleri için sertifikasyon sistemi nasıl yürütülür?
+
+80
+00:15:04,052 --> 00:15:20,271
+süreç iyileştirme dediğimizde yazılım geliştirme ortamı sertifika sistemleri nelerdir? Hangi sertifikalar var? İşte CMMI ve CMMI zaten birbirinin ilerlemişi.
+
+81
+00:15:20,271 --> 00:15:38,912
+CMM ve CMMI Amerika menşeili ve bu açılımı şöyle, capability majority model, yetenek olgunluk modeli.
+
+82
+00:15:43,796 --> 00:15:51,875
+deneklerinin olması lazım. Hem de belirli bir olgunluğa erişmiş olması gerekir.
+
+83
+00:15:57,299 --> 00:16:12,299
+yeniden paylaşıyorum slide'ı. Slide'da bir problem oldu. Evet, şu anda görüntüde bir problem var mı?
+
+84
+00:16:13,620 --> 00:16:14,419
+Yok hocam.
+
+85
+00:16:15,559 --> 00:16:36,479
+Bir de Spice'dan söz edebiliriz. Spice'da Avrupa'da bu software, proses, yazılım sürecinin iyileştirilmesi için gerçekleştirilecek kontrol adımları.
+
+86
+00:16:36,479 --> 00:17:05,480
+Yani CMMI ne yapıyorsa SPICE da aslında onu yapıyor ama gerçekleştirme şekilleri ve hitap ettikleri yerler farklı. ISO'da yine bu işin nasıl olması gerektiği ile ilişkili, işte proje yönetim süreci, gerçekleştirme süreci ile ilişkili ISO 9000, ISO 9003 gibi şeylerde, bölümlerinde tanımlamalar yapmıştır.
+
+87
+00:17:13,875 --> 00:17:22,875
+CMMI, yazılım sektöründe ürünün kalitesini ağırlıkla onu üreten sürecin kalitesi belirlemektedir.
+
+88
+00:17:22,875 --> 00:17:28,756
+Bu şeyine göre süreç odaklı bir kalite yaklaşımı.
+
+89
+00:17:30,835 --> 00:17:37,655
+Etkin bir yazılım sürecinin anahtar elemanlarını tanımlayan bir çerçeve modelidir.
+
+90
+00:17:37,655 --> 00:17:58,515
+Ayrı olgunluğunu değerlendirmek için bir ölçüm aracıdır. Bu olgunluktan kasıt yani bugün hizmete başlamış bir yazılım ekibi CMMI sertifikası alamaz.
+
+91
+00:17:58,515 --> 00:18:19,316
+bütün koşulları yeni başladığı süreç içinde gereksinim analizi, proje yönetimi hepsini yapıyoruz dese belli koşullara uyarak yapsa da belli bir takım proje arşivinin olması gerekiyor.
+
+92
+00:18:19,315 --> 00:18:27,595
+Yani hem yetkinlik hem olgunluk olması gerekiyor.
+
+93
+00:18:27,595 --> 00:18:32,595
+Peki süreç iyileştirme nasıl gerçekleşiyor?
+
+94
+00:18:32,775 --> 00:18:43,695
+Süreç iyileştirme döngüsü öncelikle bir yazılım geliştirme sürecinde bir takım ölçümler yapılıyor.
+
+95
+00:18:44,315 --> 00:18:46,335
+Bunların sonucu analiz ediliyor.
+
+96
+00:18:46,335 --> 00:19:04,855
+ve yeni bir değişim gösterdiğinde tekrar bu döngü devam ediyor. Bu şekilde süreç iyileştirme, yazılım geliştirme sürecinin iyileştirme döngüsü devam ediyor.
+
+97
+00:19:04,855 --> 00:19:11,875
+CMMI için şöyle bir tanımlama yapabiliriz.
+
+98
+00:19:11,875 --> 00:19:32,375
+Bir düzeyler silsilesi yani bir sertifika almaya niyetlenmiş olan bir yazılım evi veya bir kurumun yazılım ekibi.
+
+99
+00:19:32,375 --> 00:19:45,176
+Öncelikle bu CMMI'daki koşulları öğrenecek, gerçekleştirmeye çalışacak ve şu basamakları ilerleyerek gidecek.
+
+100
+00:19:45,176 --> 00:19:58,575
+Yani birdenbire dördüncü aşama sayısal yönetilebilirliği alma hedefinde değil, önce bir başlangıç niyet aşaması, sonra yönetilebilir olacak çalışmaları gerçekleştirmek,
+
+101
+00:19:58,575 --> 00:20:11,435
+daha sonra tanımlı, defined, sayısal yönetilebilir, quantitatively managed, en iyileştirebilir, optimizing süreçlere yeterlilik düzeylerine geçebilir.
+
+102
+00:20:11,435 --> 00:20:20,835
+Şimdi CMMI'ın yola çıkış, başlangıç yeri konusunda da biraz bilgi vereyim.
+
+103
+00:20:20,835 --> 00:20:34,475
+CMMI, Carnegie Mellon Üniversitesi'nde Amerika'da bunun kapsamı içinde olan bir Software Engineering Institute
+
+104
+00:20:38,612 --> 00:21:03,032
+merkezli bir yapıda başlatılmış ve buradan yönetiliyor. Bazı ülkelerde temsilcileri olarak buraya başvurular gerçekleştiriliyor ve bu başvurular sonucunda da başvuran kurum denetleniyor.
+
+105
+00:21:03,032 --> 00:21:17,512
+birinci düzeyin koşullarını mı sağlıyor sadece ikinci düzeyde mi üçüncü düzeyde mi dördüncü düzeyde mi buna karar vererek sertifikasyon alma işlemine gidiliyor.
+
+106
+00:21:19,512 --> 00:21:22,771
+Buna niye gerek duyuyor firmalar?
+
+107
+00:21:22,771 --> 00:21:25,811
+Çünkü böyle bir itici güç var.
+
+108
+00:21:25,812 --> 00:21:33,751
+bazı ihalelere girebilmek için bunun işte şu düzeydedir bu firma diye bir sertifikasyona ihtiyaç oluyor.
+
+109
+00:21:33,751 --> 00:21:47,472
+Ya da geliştirdikleri yazılımın güvenirliği için böyle bir sertifikasyona ihtiyaç oluyor.
+
+110
+00:21:47,472 --> 00:21:57,792
+Mesela askeri yazılımlar, askeri ihalelere girebilmek için firmaların CMMI yetkinlik derecesinin olması gerekiyor.
+
+111
+00:21:57,912 --> 00:21:59,351
+Üçüncü düzeyde olması gerekiyor.
+
+112
+00:21:59,472 --> 00:22:09,632
+Bazı ticari şeyler içinde yine belirli bir yetkinlik, yeterlik düzeyi koşulu aranıyor.
+
+113
+00:22:09,632 --> 00:22:15,571
+Aslında ben bunu hep derslerde şuna benzetiyorum.
+
+114
+00:22:17,472 --> 00:22:46,751
+Üniversitelerde de bölümlerin kendilerini ispatlaması için dışarıda bazı mezunlarının kabul alması için bir akreditasyon sürecinden geçmesi gerekiyor.
+
+115
+00:22:46,751 --> 00:23:02,412
+İşte bu Türkiye'de Türkiye içi bir şeyden söz edersek müdek sertifikasyonu birçok üniversitenin sayfasına baktığınızda müdek sertifikasyonunda ne durumdayız?
+
+116
+00:23:02,412 --> 00:23:09,412
+İşte hangi seneden almaya başladık, hangi seneye kadar devam ediyor gibi bir sertifikasyondan söz edebiliyoruz.
+
+117
+00:23:10,412 --> 00:23:14,552
+Ya da uluslararası olduğunda ABET sertifikası var.
+
+118
+00:23:14,552 --> 00:23:31,912
+Mühendislik okullarının akreditasyon sürecinden geçmesi yine Amerika menşeili olan ABET sertifikasını almak üzere başvuru yapıp oradan gelenlerin denetlemesiyle
+
+119
+00:23:31,912 --> 00:24:00,272
+bu sertifikayı alabiliyor. Aynı şekilde burada da ben çok iyi bir yazılım eviyim, geliştirdiğim yazılımlar çok iyidir, işte şu kadar yerde kullanılıyor, paydaşlarımız şunlardır, kullanıcılarımız bunlardır demek de bir yazılım evinin sayfasında
+
+120
+00:24:00,271 --> 00:24:30,251
+şeydir. Ama doğrudan işte bu kurum CMMI şu düzeydedir demek daha farklı. Çünkü burada ölçülebilir. Hani şurada bir şey ölçüm gerçekleştiriliyor. Neyi ne kadar sağlıyor? Bunun analiz edilmesi ve belli bir değişim dönüşüm geçirerek daha iyileştirme yaparak
+
+121
+00:24:30,271 --> 00:24:37,091
+tekrar ölçüm geçirmesi ve bu sefer kaçıncı düzeye çıktınız kaliteyi iyileştirmede?
+
+122
+00:24:37,523 --> 00:24:59,983
+Bu böyle bir döngü, bir süreç şeklinde devam ediyor. Bu şey de olabilir mesela dördüncü düzeydeki bir firma ama işte bir üç sene sonra değişim, dönüşüm geçirdiğinde tekrar ölçülüp yine aynı seviyeyi tutturabiliyor mu, devamlılığı var mı? Bunu sağlamak gerekiyor.
+
+123
+00:24:59,983 --> 00:25:03,663
+Şimdi bakalım CMMI'daki düzeyleri.
+
+124
+00:25:05,383 --> 00:25:10,864
+Initial başlangıç düzeyi.
+
+125
+00:25:12,083 --> 00:25:17,443
+Burada yani başlangıç düzeyi sadece firma bir niyet göstermiş.
+
+126
+00:25:17,583 --> 00:25:20,244
+Yazılım süreci gelişigüzel ve kaotik.
+
+127
+00:25:20,744 --> 00:25:23,303
+Kişisel gayretlere bağlı olarak gidiyor.
+
+128
+00:25:23,443 --> 00:25:26,343
+Kriz durumunda var olan planlar terk ediliyor.
+
+129
+00:25:26,343 --> 00:25:35,943
+yazılım süreç yetenekleri önceden kestirilemiyor. Böyle bir durum başlangıç düzeyini gösteriyor.
+
+130
+00:25:35,943 --> 00:25:47,503
+İkinci düzey Managed Level, yönetilebilir düzey. Burada proje yönetimi kontrolleri kurulmuştur.
+
+131
+00:25:47,503 --> 00:26:16,923
+Yani proje yönetimi ayrıntılı olarak yapılır. Projeler belgelenmiş planlara göre yürütülür. Yani bir proje başlayacağı zaman bir plan oluşturulur. Belgesi de olacak şekilde. Ve bu plana uygun yönetilir. Plan takibi yapılır. Gereksinimler belirlenir. Gereksinimler yönetilir. Gereksinimlerle ilişkili ürünler oluşturulur ve bu denetlenir.
+
+132
+00:26:17,503 --> 00:26:23,003
+Proje yönetim sistemi proje sürecini etkin bir şekilde kontrol eder.
+
+133
+00:26:25,003 --> 00:26:27,023
+Ölçümler yapılır.
+
+134
+00:26:27,643 --> 00:26:34,503
+Ürünler ve hizmetler onlara özel gereksinim, standart ve hedefleri sağlayacak şekilde gerçekleştirilirler.
+
+135
+00:26:35,503 --> 00:26:40,503
+O zaman bu yönetilebilir düzey oluyor ikinci seviyede.
+
+136
+00:26:40,503 --> 00:27:09,763
+seviyede. Mesela bu ikinci seviyede konfigürasyon yönetiminin de mutlaka yapılması gerekir. Konfigürasyon yönetimi ikinci düzeyde yapılmalıdır. Üçüncü düzey burada daha yani hem yönetilebilir tabii ki bunu söylemeye gerek yok. Yani böyle level düzeyler şekilde giden sertifikasyon aşamalarında
+
+137
+00:27:09,763 --> 00:27:22,643
+3. düzeyde ise zaten 2'yi sağlıyor demektir. Defined level'da tabii ki yani proje yönetimi var, gereksinim yönetimi var, konfigürasyon yönetimi var.
+
+138
+00:27:22,643 --> 00:27:38,423
+Burada süreçler daha iyi tanımlanmış, daha iyi anlaşılmış ve kurum bazında tutarlılıkla gerçekleştirilen işlemler halinde yürüyor.
+
+139
+00:27:38,423 --> 00:27:50,463
+Tüm projelerde kurum bazında standart bir yazılım geliştirme süreci uyarlanmış olarak bulunuyor.
+
+140
+00:27:52,043 --> 00:28:01,323
+Ve burada üçüncü düzeyde risk yönetimi de gerçekleştiriyor.
+
+141
+00:28:01,324 --> 00:28:22,424
+Yani bu ne demek? Şu anda problem yok ama daha sonra olabilecek problemlerin kaynakları nelerdir? Bunları da araştırıp bunları da takip edebiliyor mu kurum bütün projelerinde? O zaman defined level'da olabiliyoruz.
+
+142
+00:28:23,223 --> 00:28:28,544
+Bunu slide'da yazmamışım ama bu da önemli defined düzey için.
+
+143
+00:28:28,543 --> 00:28:35,283
+4. düzeye baktığımızda
+
+144
+00:28:35,604 --> 00:28:53,284
+4. düzeyde sayısal olarak yönetilebilirlikten söz ediyoruz. Bu nedir? Sayısal olarak yönetilen düzey, quantitatively managed level, 4. düzey CMMI'de.
+
+145
+00:28:53,284 --> 00:29:12,903
+Burada CMMI'deki dördüncü düzeyde sürecin başarımı için önemli alt süreçler seçilir ve bu alt süreçler istatistiksel ve diğer nicel ölçüm teknikleri kullanılarak kontrol edilir.
+
+146
+00:29:12,903 --> 00:29:24,023
+kalite ve süreç performansının sayısal hedefleri oluşturulur.
+
+147
+00:29:25,023 --> 00:29:30,303
+Bu süreçlerin yönetiminde bir kriter olarak kullanılır.
+
+148
+00:29:30,303 --> 00:29:59,303
+Yani şimdi biz bir önceki konumuzda ölçümler üzerinde durduk. Daha önceki derslerimizde software matrix üzerinde durduk. O zaman demek ki buradaki dördüncü düzey, quantitatively managed level, bizim bu ölçümleri yapmış olmamız, bir arşiv oluşturmuş olmamız ve
+
+149
+00:30:00,303 --> 00:30:12,383
+Bu ölçümleri kullanabilmemiz anlamına geliyor. Yazılım geliştirmede daha sonra kullanabilmemiz anlamına geliyor.
+
+150
+00:30:13,604 --> 00:30:27,604
+Yani sadece yazılım geliştirdik, bu kaç satırlıktır, o yazılım için ölçüm yaptık, bu ölçümü gerçekleştirdik, bu yeterli değil.
+
+151
+00:30:27,604 --> 00:30:41,483
+Bunu başka projelerde kullanabiliyor muyuz? Bir arşivimiz var mı? Bu önemli. Yoksa ikinci, üçüncü düzeylerde de software matrix konusuna bir giriş var.
+
+152
+00:30:41,483 --> 00:31:10,563
+Ama kantitatifli managed dediğimizde yeni bir projeyi yönetirken bu projenin ne büyüklükte olacağını başta tahmin etmek ve geriye dönüp eski projeler arşivinde bu türdeki büyüklükteki projeleri işte ne kadar maliyetle gerçekleştirmişiz.
+
+153
+00:31:10,563 --> 00:31:25,103
+bunun bilgisini de alabilir olmamız gerekiyor. Bu durumda ancak kantitatifli managed düzeyden söz edebiliyoruz. Dördüncü düzey.
+
+154
+00:31:26,103 --> 00:31:40,523
+Şimdi bakalım beşinci düzeye. Beşinci düzey en iyileştirilmiş düzey. Yani optimizing için en iyileştirebilmek için bir çaba var mı şirkette?
+
+155
+00:31:40,563 --> 00:31:44,483
+veya yazılım ekibinde bunu kontrol ediyoruz.
+
+156
+00:31:45,483 --> 00:31:56,823
+Süreçten gelen sayısal geri beslemeler ve teknolojilerden faydalanarak sürekli süreç iyileştirmesi yapılıyor mu?
+
+157
+00:31:56,824 --> 00:32:12,624
+Bir de burada challenge bir şeyler var mı? Yani sürekli iyileştirebilmek için yenilikler var mı? Yenilikçilik şeyi var mı?
+
+158
+00:32:12,623 --> 00:32:35,103
+Bu mesela çalışanlar yeni bir fikir üretiyorsa bu fikir nasıl değerlendiriliyor? Bu fikir dikkate alınıyor mu? Yeni fikir üretebilmek ve sürekli süreç iyileştirmesi yapmak.
+
+159
+00:32:35,571 --> 00:32:45,251
+sürekli değişen süreçler içinde bulunmak beşinci düzeyi gösteriyor.
+
+160
+00:32:45,251 --> 00:32:52,252
+Şimdi biz bunu şöyle biraz daha somutlaştırabiliriz.
+
+161
+00:32:52,252 --> 00:33:07,292
+Bizim acaba Türkiye'deki firmalarda ne kadar CMMI sertifikası önem taşıyor?
+
+162
+00:33:07,291 --> 00:33:25,531
+Bir defa şey söylemiştik hata kritik yazılımlarla uğraşan ekipler özellikle askeri projelerde çalışan kurumlar CMMI 3 sertifikasını almak durumunda.
+
+163
+00:33:25,531 --> 00:33:40,831
+TÜBİTAKMAM böyle askeri yazılım üreten firmalara test yaptığı için TÜBİTAKMAM dördüncü düzey sertifika almıştı.
+
+164
+00:33:40,831 --> 00:33:46,612
+Huawei'de böyle bir sertifikasyon çalışması var.
+
+165
+00:33:47,112 --> 00:33:53,351
+Yani daha hata toleransı az olan kurumlarda.
+
+166
+00:33:53,351 --> 00:34:09,331
+Aselsan'da askeri yazılımlar üreten firmalar olarak bir de bazı bankacılık uygulamaları için mesela Cybersoft'da dördüncü düzeydeydi.
+
+167
+00:34:09,591 --> 00:34:13,331
+Ama tabii bu sürekli de takip etmek gerekiyor.
+
+168
+00:34:14,331 --> 00:34:18,331
+Hani şu şeyi birkaç kez döndük.
+
+169
+00:34:19,391 --> 00:34:22,731
+Sürekli bir değişim içinde ve sürekli ölçüm.
+
+170
+00:34:22,731 --> 00:34:37,171
+Yani 3 sene önce CMMI 4'teydi ama şu anda hangi seviyede? Hala firmada buna dikkat ediliyor mu? Bu önem taşıyor.
+
+171
+00:34:37,171 --> 00:34:53,131
+Bunu halen devam ettiren firmalar için bu sağlanabilir durumda mı? Bunu değerlendirerek konuşmak gerekiyor.
+
+172
+00:34:53,131 --> 00:35:09,551
+5. düzeyde olan firma diye baktığımızda Milsoft geliyor. Milsoft da 5. düzeyde ve senelerdir 5. düzeyde.
+
+173
+00:35:09,551 --> 00:35:39,531
+Tabii ki baktığımızda firmanın projelerinde biraz daha diğer firmalara göre teslim süreleri, proje tamamlama süreleri daha uzun ve projeleri geliştirirken firma kaynaklarını bu beşinci düzeyde olma sürekliliğini sağlamak için
+
+174
+00:35:39,551 --> 00:36:02,631
+tabi ki bu kanıtları üretmek üzere belgeler hazırlaması gerekiyor. Bu sürekli iyileştirme sürekliliğini sağlamak için. Buna rağmen 5. düzeyde olabiliyor mu? Buna göre değerlendirilmesi gerekiyor.
+
+175
+00:36:02,631 --> 00:36:31,372
+Şimdi anahtar CMMI'da anahtar süreç alan nedir? Anahtar süreç alanlar nelerdir? Onlar üzerinde duracağım. Bu noktada bir ara verelim. Saat 2'de başlamak üzere. Saat 2'ye kadar ara veriyorum.
+
+176
+00:55:15,572 --> 00:55:17,411
+Evet, derse devam ediyoruz.
+
+177
+00:55:29,139 --> 00:55:41,139
+Slide'da problem var mı? Yok hocam görüyoruz. Tamamdır. Kaldığımız yere gelelim.
+
+178
+00:56:13,588 --> 00:56:16,367
+Şimdi anahtar süreç alanlar üzerinde duracağız.
+
+179
+00:56:19,795 --> 00:56:43,155
+Anahtar süreç alan nedir? CMMI'da yazılım geliştirme sürecinde her bir seviyeye aktaracağımız, yazılım geliştirme sürecinde yaptığımız işleri anlatıyor anahtar süreç alan. Hangi düzeyde hangi işleri yapmamız gerekiyor?
+
+180
+00:56:43,155 --> 00:56:56,615
+Öncelikle bakalım birinci düzey. Birinci düzey için bir anahtar sürece gerek yok. Zaten her şey bireysel çabalara göre yürütülüyor demiştik.
+
+181
+00:56:56,615 --> 00:57:16,075
+ikinci düzey, yönetilen düzeyde olması için gereksinimlerin yönetimi yapılmalı, gereksinim yönetimi yapılmalı, requirement analiz gerçekleştirilmeli, requirement specification oluşturulmalı.
+
+182
+00:57:16,075 --> 00:57:23,675
+Yani bütünüyle gereksinim yönetiminin sağlanması gerekiyor.
+
+183
+00:57:23,675 --> 00:57:28,115
+Ayrıca proje planlama yapılması gerekiyor.
+
+184
+00:57:28,215 --> 00:57:37,675
+Projenin izlenmesi ve kontrolü, tedarikçilerle sözleşme yönetiminin oluşturulması, ölçümleme ve analiz yapılması.
+
+185
+00:57:37,815 --> 00:57:45,095
+Bu az önce söz ettiğim gibi yani dördüncü düzeyde kantitatifli managed olması gerekiyor.
+
+186
+00:57:45,095 --> 00:57:53,295
+ama ikinci düzeyde managed seviyede de ölçme yapılıyor.
+
+187
+00:57:54,135 --> 00:58:00,515
+Ama bu ölçümleme süreklilik arz etmiyor.
+
+188
+00:58:00,775 --> 00:58:09,035
+Yani bir sonraki projede eski ölçümlere dayanarak tahminler yapılmıyor.
+
+189
+00:58:09,035 --> 00:58:28,376
+süreç ve ürünün kalite güvencesinin çalışması ve konfigürasyon yönetimi zaten az önce ikinci düzeyi anlatırken konfigürasyon yönetimi yapılmalıdır da demiştik.
+
+190
+00:58:30,195 --> 00:58:31,956
+Bunun sağlanması gerekiyor.
+
+191
+00:58:31,956 --> 00:58:40,656
+3. düzey tanımlı düzey, defined düzeyde gereksinimleri geliştiriyoruz.
+
+192
+00:58:40,656 --> 00:58:50,976
+Daha gereksinim analizini daha fazla bütün projeler için sürekli hale getiriyoruz.
+
+193
+00:58:51,536 --> 00:58:52,656
+Teknik çözümleri getiriyoruz.
+
+194
+00:58:52,656 --> 00:59:10,275
+ürün entegrasyonu yani yazılım ekibinde geliştirilen ürünlerin bütünleşik ürünlerle uyumlu birbiriyle bütünleşik olması, birlikte çalışabilir olmasına dikkat edilmesi gerekiyor.
+
+195
+00:59:10,275 --> 00:59:16,035
+Doğrulama, onay, verification, validation
+
+196
+00:59:21,619 --> 00:59:40,460
+gerçekleştiriliyor. Kurumsal süreç tanımlama ve odaklanma. İşte zaten Defiant düzeyi tanımlarken de az önce bütün yazılım geliştirme sürecinin kurumsal yapıda olması gerektiğini söylemiştik.
+
+197
+00:59:40,460 --> 01:00:02,219
+kurumsal eğitim entegre ürün ve süreç geliştirme için bütünleşik proje yönetimi yapılması gerekiyor ve üçüncü düzeyde olduğunu belirtecek şekilde risk yönetiminin de yapılması gerekiyor.
+
+198
+01:00:02,219 --> 01:00:13,039
+Yine ikinci düzeyin özelliğinin konfigürasyon yönetiminin de gerçekleştirilmesi olduğunu,
+
+199
+01:00:13,039 --> 01:00:42,800
+3. düzeyinde hem kurumsal yapıda 2. düzeydeki işlemlerin kurumsal yapıda bütün projelerde aynı şekilde takip eden gereksinim analizi, proje yönetimi, verifikasyon gerektiğini ve bütünleşik ürünler geliştirilmesi gerektiğini söylemiştik.
+
+200
+01:00:42,800 --> 01:00:49,300
+ve en önemli tarafı da risk yönetimi mutlaka bütün projelerde yapılmalıdır.
+
+201
+01:00:49,619 --> 01:00:53,539
+Üçüncü düzeyde olan bir firmada veya yazılım hekiminde.
+
+202
+01:00:55,859 --> 01:01:09,579
+Bütünleşik ve kurumsal bir altyapı, yani bütün ürünleri geliştirdiğimiz bir ortak altyapı olması gerekir demiştik.
+
+203
+01:01:39,891 --> 01:02:09,791
+fazla ilerletmişim. Evet, CMMI'de anahtar süreç alanları diye baktığımızda niceliksel yönetilebilen, quantitatively managed düzeyde kurumsal süreç başarımı ve sayısal proje yönetimi olmalı. Sayısal proje yönetiminden kastımızı da daha önce bu dördüncü düzeyi açıklarken söylemiştim.
+
+204
+01:02:09,791 --> 01:02:24,671
+4. düzeyde ölçüm yapmak ve bu ölçümleri yeni projelerde bir dayanak noktası olarak kullanmak.
+
+205
+01:02:26,031 --> 01:02:35,531
+Bunlara bakarak, eski proje arşivlerine bakarak yeni projelerin maliyeti hakkında, yapısı hakkında karar verebilmek.
+
+206
+01:02:35,531 --> 01:02:45,531
+4. düzeyin anahtar süreç alanlarından en önemlisi sayısal proje yönetimi diyebiliriz.
+
+207
+01:02:47,891 --> 01:02:49,711
+Ve bütünleşik yaklaşım.
+
+208
+01:02:50,951 --> 01:02:54,171
+5. düzey optimizing düzeyde ise
+
+209
+01:02:57,652 --> 01:03:06,591
+testinin yaygınlaştırılması ve vakif analizleri gibi nedensel analizler ve çözümler.
+
+210
+01:03:07,795 --> 01:03:32,955
+en önemli farklılaştıran işlemler, kurumsal yenilenme, hem yeni teknolojilere, hem yeni yöntemlere, yeni süreç modellerine, yeni teknolojilere, yeni çözümlere ne kadar yaklaşılıyor? Bunun sağlanması.
+
+211
+01:03:32,955 --> 01:03:57,575
+CMMI'de süreç alanlarına baktığımızda daha önce CMMI'de ayrı ayrı takip edilen işte process management, proje management ve mühendislik çalışmaları, destek çalışmaları bunların hepsi ayrı ayrı seviyelendiriliyordu.
+
+212
+01:03:57,575 --> 01:04:10,815
+Yani kurumun proje yönetimi açısından düzeyi, kurumun proje yönetimi açısından düzeyi, mühendislik çalışmaları açısından düzeyi şeklinde idi.
+
+213
+01:04:10,816 --> 01:04:37,196
+Şu anda CMMI'da Capability Majority Model Integration kısaltma açılımlarına da uygun şekilde gruplar arasında etkileşim yaparak temel destek süreç alanları, ileri destek süreç alanları şeklinde
+
+214
+01:04:37,196 --> 01:05:04,176
+gruplandırdığımızda temel destek süreç alanları, kalite sağlama ve konfigürasyon yönetimi, ileri destek süreç alanları ise kurumsal bütünleşik neden sonuç analizinin gerçekleştirilmesi, karar analizlerinin yapılması,
+
+215
+01:05:04,175 --> 01:05:11,255
+Bunlar da ileri destek süreç alanları olarak görülebilir.
+
+216
+01:05:14,931 --> 01:05:15,451
+Şimdi
+
+217
+01:05:22,132 --> 01:05:45,071
+PeopleCM kavramı üzerinde duralım. PeopleCM üzerinde daha önce de ilk dersin başında da söylediğim gibi geçen sene CMMI içine PeopleCM de katıldı. Yani nasıl ki süreç yönetimi, proje yönetimi, mühendislik ve destek yönetimi,
+
+218
+01:05:45,071 --> 01:05:52,071
+ve
+
+219
+01:07:12,115 --> 01:07:38,615
+Evet, bir internette bir problem olduğu için ses gitmişti. O yüzden hangi noktadan itibaren böyle oldu bilmiyorum. Biraz geriye dönük tekrar konuşacağım. Şu anda sesimde bir problem var mı?
+
+220
+01:07:43,956 --> 01:07:49,675
+Tamam, teşekkür ederim yine. Ekran paylaşımını tekrar
+
+221
+01:08:55,475 --> 01:09:22,656
+Evet, bu arada ekran ve ses gidip gelince katılımcılara baktım. Dönem başladığından beri herhalde en fazla katılım şu anda oldu. Herhalde sınavdan sonra daha fazla derse katılım yapma niyetinde olan arkadaşlarınız oldu.
+
+222
+01:09:22,656 --> 01:09:27,755
+Şimdi kaldığımız yere dönüyorum.
+
+223
+01:09:29,475 --> 01:09:33,295
+Anahtar süreç alanlarını gördük ve PeopleCMM'e geldik.
+
+224
+01:09:33,935 --> 01:09:45,215
+PeopleCMM'de insanlarla ilişkili konuları tanımlayıp iyileştirme isteyen kurumlar için PeopleCMM geliştirilmiştir.
+
+225
+01:09:45,215 --> 01:09:56,875
+ve daha önce de söylediğim gibi bu kurumdaki çalışanları da takip etmek isteyen kurumlar için geliştirilmiştir.
+
+226
+01:09:57,035 --> 01:10:12,515
+Ama şu anda içinde bulunan çalışanların da kurumda gerçekleştirilen işlerden ayrı görülmemesi nedeniyle PeopleCM de CMMI'ın içine katılmıştır.
+
+227
+01:10:12,516 --> 01:10:26,496
+Bir yazılım ve bilgi sistemleri kurumunun, organizasyonunun insan değerlerinin yönetimini ve geliştirilmesini yönlendirir PeopleCM.
+
+228
+01:10:27,416 --> 01:10:31,935
+Bu arada dediğim gibi CMMI'ın da içine katılmış durumda.
+
+229
+01:10:32,516 --> 01:10:35,556
+Peki PeopleCM hedefi nedir?
+
+230
+01:10:35,555 --> 01:10:51,755
+Yazılım geliştirme yeteneğini tanımlamak ve sağlamak, iş gücünün yeteneklerini arttırarak kurumun yeteneklerinin de artacağını belirlemek ve sürekli bir iyileştirme içine girmek.
+
+231
+01:10:51,755 --> 01:11:03,435
+Her bir çalışanın ve organizasyonun hedeflerini birlikte tutmak gerekmektedir.
+
+232
+01:11:03,435 --> 01:11:10,755
+Dolayısıyla insan değerlerinin elinde tutulması kapsamındadır PeopleCM.
+
+233
+01:11:10,755 --> 01:11:21,115
+Burada baktığımızda PeopleCM'in de düzeylerini şöyle tanımlıyoruz.
+
+234
+01:11:21,115 --> 01:11:36,755
+tabi ki bu CMMI'nin düzeyleri gibi ilk çıkan CMMI'nin düzeyleri gibi şu anda bu People's CMMI düzeyleri de CMMI'nin düzeyleriyle eşleştirilmiş durumda oldu.
+
+235
+01:11:36,755 --> 01:11:55,875
+Başlangıç düzey, Repetable, tekrarlanabilir düzey, Defined düzey, tanımlı düzey, Managed düzey, yönetilen düzey, kurumsal performans ayarlaması ve böylece yönetilebilir.
+
+236
+01:11:55,875 --> 01:12:04,535
+Yani ayrıca buna sayısal yönetilebilir denmemiş yönetilebilir düzey ve en iyileşen düzey şeklinde.
+
+237
+01:12:04,535 --> 01:12:25,175
+Burada şimdi PeopleCMM düzeylerine baktığımızda, PeopleCMM'de birinci düzey başlangıç düzey.
+
+238
+01:12:25,175 --> 01:12:44,175
+Birinci düzeyde bir kaotik ortam var. Hiçbir çalışanın hedefleriyle, organizasyon hedeflileri arasında ve çalışanların sadece ne iş ürettikleriyle ilişkili bakıldığı ama çalışanların...
+
+239
+01:12:45,908 --> 01:12:53,207
+Performans yönetimi, eğitimi gibi konulara bakılmadığı bir ortam, birinci düzey.
+
+240
+01:12:53,207 --> 01:13:10,487
+Tekrarlanabilir düzey, çalışanların performansını tekrarlayabilmeleri için gerekli koşulları sağlayan kurumlar,
+
+241
+01:13:10,487 --> 01:13:35,808
+Tazminat, çalışanların tazminatı, eğitimi, performans yönetimi, işe alım personel sağlamadaki kurallar, çalışanlarla iletişim ve çalışma ortamlarının ergonomik oluşuyla ilgilenen kurumlar için tekrarlanabilir.
+
+242
+01:13:35,807 --> 01:13:49,807
+Bunlar sağlanıyorsa, bunlara bakılıp bunlar sağlanıyorsa o zaman kurum için ikinci düzeydedir diyebiliyoruz.
+
+243
+01:13:49,807 --> 01:14:14,887
+Üçüncü düzeyde olması, tanımlı düzey, katılımcı kültür, yeteneğe bağlı pratikler, kariyer geliştirme, yetenek geliştirme, iş gücü planlama, bilgi ve becerilerin analizi.
+
+244
+01:14:14,887 --> 01:14:26,887
+Şimdi baktığımızda katılımcı kültür dediğimizde şirket kültürü denilen bir yaklaşım var mı kurumda?
+
+245
+01:14:28,427 --> 01:14:33,167
+Çalışanlar için yeteneğe bağlı pratikler oluşturulmuş mu?
+
+246
+01:14:34,487 --> 01:14:40,347
+Yani uygulamada ekip elemanı seçiminde yetenekler göz önünde bulunduruluyor mu?
+
+247
+01:14:40,347 --> 01:14:48,767
+Kariyer geliştirme, çalışanların kariyerleri açısından bir kariyer geliştirme planı var mı?
+
+248
+01:14:48,767 --> 01:15:03,768
+Yeni yetenekler kazandırmak için, yani sadece kurumda şu işler yapılıyor, bununla ilişkili eğitimler alınıyor dendiğinde ikinci düzeydeyiz.
+
+249
+01:15:03,768 --> 01:15:19,827
+Ama tanımlı düzeyde olması için çalışanların kariyer planlamasına dayalı olarak ve belirli yetenekleri kazandırma hedeflerimize göre eğitim planlamaları yapılıyor mu?
+
+250
+01:15:19,988 --> 01:15:21,708
+Bunu belirtiyor.
+
+251
+01:15:22,747 --> 01:15:27,448
+İş gücü planlama, bilgi ve becerilerin analiz edilmesi.
+
+252
+01:15:27,447 --> 01:15:39,887
+Bunların hepsi 3. düzeydeki bir firmada, PeopleCMM açısından 3. düzeydeki bir firmada bulunmalıdır diyoruz.
+
+253
+01:15:39,887 --> 01:16:09,867
+PeopleCMM'de dördüncü düzey yani yönetilen düzey, managed düzeyde olması için kurumsal performans ayarlama, kurumsal yetenek yönetimi, takım temelli pratikler, ekip kurma, danışmanlık gerçekleştirme varsa yönetilen düzey.
+
+254
+01:16:09,887 --> 01:16:21,507
+Yani burada da bizim SMMİ'de da dördüncü düzeyde kurumsal yapıya bakıyorduk.
+
+255
+01:16:21,507 --> 01:16:43,867
+Burada da çalışanlar açısından bakıldığında çalışanların ekip kurma özelliği ve ekip yapısının nasıl kuracaklarına dair uygulamalar gerçekleştiriliyorsa ve bunlar da ispat ediliyorsa yönetilen.
+
+256
+01:16:45,043 --> 01:17:06,483
+düzeydedir diyebiliriz. Burada baktığımızda kariyer geliştirme, yetenek geliştirme var. Ama şurada ise kurumsal olarak bir yetenek yönetimi var mı? Buna bakmak gerekiyor.
+
+257
+01:17:06,483 --> 01:17:17,863
+Beşinci düzeyde de en iyileşen düzeyde yani dördüncü düzeyde bu ekip yapısı önemli.
+
+258
+01:17:17,863 --> 01:17:45,863
+Yine aynı şekilde kurumlar, yazılım kurumları bunu anladıkça ekip yapısının önemi ve ekip çalışmalarına yatkınlıkları kişilerin bizlerden de ekip tarafı ve ortak proje geliştirme tarafı daha gelişmiş olan mezunlar istediklerini görebiliyoruz.
+
+259
+01:17:45,863 --> 01:18:05,883
+BİR'e biliyoruz. Beşinci düzey, en iyileşen düzey sürekli iş gücü inovasyonu, koşluk sistemi ve kişisel yetenek geliştirme. Bunlar da beşinci düzeyde sağlanan işlemler olarak karşımıza çıkıyor.
+
+260
+01:18:05,883 --> 01:18:20,823
+Az önce de 5. düzey tanımlarken de yine bu konu üzerinde durmuştuk. Sürekli iş gücü inovasyonundan kasıt yaratıcılık olması.
+
+261
+01:18:20,823 --> 01:18:36,863
+Bunu da firmalarda şöyle görüyoruz. Firmalarda çalışanlar arasında da yeni fikir ortaya çıkarabilmek için bir takım aktiviteler gerçekleştiriliyor.
+
+262
+01:18:36,863 --> 01:19:06,764
+Bu proje yukarıdan verilen projelerdir genellikle ama aşağıda da kişilere yeni fikirler geliştirebilmek için kişilerin ortaya attığı projelere de imkan verilecek şekilde sürekli iş gücü inovasyonu.
+
+263
+01:19:06,863 --> 01:19:31,683
+olması istermektedir. Ayrıca koçluk sistemiyle belirli görevler için firmada yeni yetenekler kazandırmak üzere koçluk sistemiyle yeni kişilerin yeni yeteneklere uygun olarak yetiştirilmesi.
+
+264
+01:19:31,683 --> 01:19:52,463
+Tabii bu kişisel yetenek geliştirmesiyle yan yana giden bir şey. Koçluk sistemiyle kişisel yetenek geliştirmeyi daha sağlanabilir hale getirildiğini görüyoruz.
+
+265
+01:19:52,463 --> 01:20:06,463
+Evet, şimdi bugün anlattıklarımıza baktığımızda kalite iyileştirme için hangi...
+
+266
+01:20:08,787 --> 01:20:10,907
+şeyleri oluşturuyoruz.
+
+267
+01:20:10,988 --> 01:20:13,867
+Sertifikat sistemleri oluşturulmuş durumda.
+
+268
+01:20:15,967 --> 01:20:25,427
+İşte Amerika'da, Avrupa'da ve Uluslararası Standartlar Organizasyonu'nda geliştirilmiş yazılım sertifikat sistemleri var.
+
+269
+01:20:25,427 --> 01:20:38,708
+Bu sertifikat sistemlerinden Amerika'da geliştirilen ve dünya çapında da en fazla kullanılan CMMI özelinde bu süreç iyileştirilmiş.
+
+270
+01:20:38,787 --> 01:20:58,328
+modellerinden bahsetmiş olduk. Bu bir model ve işte Karneci Melon Üniversitesi'ndeki Software Engineering Enstitü tarafından takip edilen bir model ve burada sürekli süreç iyileştirme döngüsü esas alınıyor.
+
+271
+01:20:58,327 --> 01:21:07,747
+SMI'de başlangıç yönetilebilir, tanımlı ve sayısal yönetilebilir, en iyilenebilir düzeylerden söz ediyoruz.
+
+272
+01:21:07,747 --> 01:21:19,667
+Bu SMI'de her bir düzeyde hedef nedir? Bunları adım adım gördük.
+
+273
+01:21:19,667 --> 01:21:36,327
+başlangıç düzeyi, yönetilebilir düzey, tanımlı düzey, sayısal yönetilebilir düzey ve en iyileştirilmiş optimizing düzey.
+
+274
+01:21:36,327 --> 01:21:47,447
+Optimizing düzey aslında inovasyonla iç içe yeni fikirler ve geri beslemeler olması gerekiyor.
+
+275
+01:21:49,667 --> 01:21:57,747
+anahtar süreç alanları da her bir CMMI'deki her bir düzeyle eşleştirdik.
+
+276
+01:21:57,747 --> 01:22:15,747
+Demek ki KPI key process araya anahtar süreç alanlar dediğimizde, CMMI'de anahtar süreç alan nedir dediğimizde,
+
+277
+01:22:15,747 --> 01:22:36,148
+SMI'daki her bir seviyeyi belirleyebilmek için o seviyede hangi yazılım geliştirme süreç temel işlemlerinin ve destek aktivitelerinin yapıldığını,
+
+278
+01:22:36,148 --> 01:22:46,368
+proje yönetimi açısından ne seviyede olduğumuzu anlatan aktiviteleri söylemiş oluyoruz.
+
+279
+01:22:46,668 --> 01:22:49,687
+Anahtar, süreç, alan dediğimizde.
+
+280
+01:23:03,923 --> 01:23:24,423
+O zaman şimdi bu slide'da sevamayı gördük. Bir sonraki dersimize başlamadan önce sevamayla ilişkili sorularınız var mı?
+
+281
+01:23:24,423 --> 01:23:37,324
+veya genel olarak sonradan katılan arkadaşlarınızın sınavla ya da genel dersle ilişkili soruları var mı?
+
+282
+01:23:38,363 --> 01:23:39,523
+Sorularınız var mı?
+
+283
+01:23:40,363 --> 01:23:43,464
+Bundan sonra çünkü bir ara verip yeni konuya geçeceğim.
+
+284
+01:23:48,659 --> 01:23:49,799
+sorunuz var mı?
+
+285
+01:23:56,020 --> 01:24:03,579
+sorularınız yok herhalde. Evet, birkaç tane soru geldi. Bakalım.
+
+286
+01:24:06,579 --> 01:24:15,120
+Ders başını kaçıranlar için sınavla ilgili şöyle henüz tamamlamadım notlandırma işlemini ama genel olarak baktım.
+
+287
+01:24:15,120 --> 01:24:23,899
+İşte bazılarınızda bir kağıda yazıp yüklemişsiniz, bazılarınız Word'de yazmışsınız.
+
+288
+01:24:23,899 --> 01:24:29,159
+yazdıklarınızı değerlendirerek şey yapacağım.
+
+289
+01:24:29,259 --> 01:24:32,319
+Bir de sonradan gönderenler vardı.
+
+290
+01:24:32,479 --> 01:24:34,939
+Onlarla ilişkili konuştum.
+
+291
+01:24:35,659 --> 01:24:43,579
+Sonradan gönderenlerin gönderdikleri saate ne kadar sonra gönderdiklerine bakarak değerlendirme yapacağım.
+
+292
+01:24:43,679 --> 01:24:47,139
+Biraz daha az barem üzerinden başlayarak.
+
+293
+01:24:48,399 --> 01:24:50,939
+Evet, başka sorunuz var mı?
+
+294
+01:24:54,515 --> 01:25:06,555
+Evet. O zaman şimdi tekrar bir 10 dakika ara veriyorum. Ondan sonra başka bir konu üzerinde devam edeceğiz.
+
+295
+01:39:46,355 --> 01:40:05,575
+Evet, şimdi en son yazılım kalitesinde sertifikasyon kavramı üzerinde durduk. Sürekli iyileştirme için yazılım evlerindeki sertifikasyon işlemi nasıl gerçekleştiriliyor?
+
+296
+01:40:05,575 --> 01:40:21,955
+İşte düzeyleri tanıttık. Çalışanların bu konudaki düzeylere uyum sağlaması için çalışanlarda nelere dikkat edilecek? Onlar üzerinde durduk.
+
+297
+01:40:21,955 --> 01:40:37,295
+ve bu konu hakkında tamamladığımızı belirttim. Sorunuz var mı diye sordum. Herhalde herkes tarafından anlaşıldı.
+
+298
+01:40:37,295 --> 01:40:46,135
+Şimdi ilk derslerde biraz test driving development kavramının adını geçirmiştik.
+
+299
+01:40:46,135 --> 01:41:03,415
+Şimdi ecail süreçlerde bu yazılım kalite yönetimi nasıl gerçekleştiriliyor çok özet olarak bundan bahsetmek istiyorum.
+
+300
+01:41:03,415 --> 01:41:11,235
+Çevik yaklaşımları yazılım geliştirme süreç modelleri içinde yazılım mühendisliğinde görmüştük.
+
+301
+01:41:12,695 --> 01:41:19,415
+Çevik yaklaşımlar dediğimizde, şunu slide moduna getireyim.
+
+302
+01:41:31,539 --> 01:41:51,819
+Çevik yaklaşımlar dediğimizde hangi yazılım geliştirme süreç modeli daha çok aklınıza geliyor? Çevik yaklaşımla yazılım geliştirme süreç modellerinden isim söyler misiniz? [öğrenci], sen söyle.
+
+303
+01:42:07,060 --> 01:42:29,560
+Evet, Scrum, XP ve Kanban üzerinde durduk. [öğrenci]'ı söyledi, [öğrenci]'ı söyledi, [öğrenci] da XP'yi hatırlattı. Şimdi yazılım mühendisliği dersinde bunları gördük. Bunların her birinin birbirinden farklılığını gördük.
+
+304
+01:42:29,560 --> 01:42:33,879
+hedef neydi genel olarak çevik yaklaşımlarda?
+
+305
+01:42:33,879 --> 01:42:46,640
+Artan müşteri taleplerini daha hızlı karşılamak üzere geleneksel sistem geliştirme modellerine alternatif olarak karşımıza çıkmıştı.
+
+306
+01:42:46,639 --> 01:43:16,479
+ve çevik yaklaşımlarda gereksinim değişimlerini daha hızlı adapte olma yısl sağlıyordu çevik yaklaşımlar bize ve çevik yaklaşımların genel olarak en önemli özelliklerinden bir tanesi de müşteriyle ilişkilerde daha hızlı bir geçiş birbirinden,
+
+307
+01:43:16,640 --> 01:43:25,820
+geçişin olması. Yani müşterinin de yazılım ekibinin içinde yer almasıydı. Şimdi baktığımızda
+
+308
+01:43:36,724 --> 01:43:47,903
+XP üzerinden gittiğimizde basitlik, iletişim, geri besleme ve cesaret olmak üzere dört temel değer çerçevesinde oluşturulmuştur.
+
+309
+01:43:47,903 --> 01:44:17,703
+basitlik, basit tasarım, sistem metaforunun olması, iletişimin fazla olması, iletişimin fazla olması, müşteriyle iletişimin daha hızlı olması, çünkü ekibin bir elemanı olması, geri besleme, küçük adımlarla gitmesi, küçük ve kısa aralıklı yayınlar.
+
+310
+01:44:17,904 --> 01:44:34,703
+release'ler olması ve böylece geri beslemenin artması, sistem metaforunun olması ve cesaretli yani yeni yaklaşımları daha hızlı küçük eklemelerle gerçekleştirilebilme,
+
+311
+01:44:34,703 --> 01:44:48,703
+devamlı yeniden tasarım, refactoring de yine hem basitlik hem geri besleme hem cesareti birlikte anlatan bir kavram.
+
+312
+01:44:49,624 --> 01:44:54,904
+Sürekli bütünleştirme, continuous integration gerçekleştiriliyor.
+
+313
+01:44:54,904 --> 01:44:59,743
+XP'de olan bir pair programming kavramı var.
+
+314
+01:44:59,743 --> 01:45:07,023
+Bu genel özelliklerini önce hatırlatıyorum XP'nin.
+
+315
+01:45:07,643 --> 01:45:15,963
+Aynı zamanda birçoğu genel çevik modellerinde özelliği.
+
+316
+01:45:18,084 --> 01:45:20,383
+Devam ettirilebilir bir hız.
+
+317
+01:45:20,383 --> 01:45:49,384
+Yine bu devam ettirilebilir bir hız olması PeopleCMM'in kurallarıyla eşleşiyor aslında. Yani çok fazla mesai kavramı yok. Haftada 40 saat olacak şekilde çalışanların normal bir eforla çalışması ki süreklilik sağlanabilsin.
+
+318
+01:45:50,384 --> 01:46:15,084
+ekip üyesi, müşterinin ekip üyesi olması ve kodlama standartlarının sağlanması. Bunların hepsi XP'deki bu dört temel yaklaşım üzerine oturan özelliklerden bir tanesi diyebiliriz.
+
+319
+01:46:15,084 --> 01:46:22,444
+Evet, teşekkür ederim söylediğiniz için.
+
+320
+01:46:22,444 --> 01:46:24,263
+Şu anda
+
+321
+01:46:31,283 --> 01:46:37,403
+Şevik yaklaşımları paylaşıyor, görünüyorum. Düzelmiş mi?
+
+322
+01:46:41,043 --> 01:46:44,883
+Evet, slide'da bir problem var mı şu anda?
+
+323
+01:46:57,747 --> 01:46:59,988
+Bir dakika tekrar başlatacağım şimdi.
+
+324
+01:47:27,828 --> 01:47:32,927
+düzelmiş olması lazım. Evet, tamam. Teşekkürler.
+
+325
+01:47:38,131 --> 01:47:39,151
+Teşekkür ederim.
+
+326
+01:47:43,507 --> 01:48:10,447
+O zaman tekrar bir üzerinden geçelim. Çevik yaklaşımlarla yazılım geliştirme üzerinde duruyoruz. Slide moduna getirebilirim artık. XP çerçevesinde genel olarak ecel kavramlar üzerinde durursak ilk kullanılan zaten ecel yaklaşımdaki yazılım geliştirme süreç modeli XP.
+
+327
+01:48:10,447 --> 01:48:14,167
+basitlik, iletişim, geri besleme ve cesaret.
+
+328
+01:48:14,287 --> 01:48:15,547
+Dört temel değer var.
+
+329
+01:48:17,087 --> 01:48:31,507
+Bunları, bu dört temel değeri düşündürerek planlama oyunları, küçük kısa aralıklı yayınlar, yani geri beslemenin olması, küçük kısa aralıklı release'ler var.
+
+330
+01:48:32,727 --> 01:48:35,147
+Biten artımlarla devam ediyor.
+
+331
+01:48:35,147 --> 01:48:54,767
+sistem metafor, basit tasarım. Tasarımı basit olarak kurup bunu küçük rilizlerle geliştirmek, test odaklı olması, devamlı yeni tasarım, yeniden tasarım yapılması.
+
+332
+01:48:54,767 --> 01:49:02,767
+Yani refactoring kavramı. Bu da geri beslemeyi gerektiriyor.
+
+333
+01:49:02,767 --> 01:49:20,707
+Eşle programlama, iletişimin fazla olması ve birlikte çalışma, pair programming kavramı, kodun beraber oluşturulması, dolayısıyla ortak kod mülkiyeti bir anlamda müşteri de ekibin içinde.
+
+334
+01:49:21,367 --> 01:49:24,287
+Böylece geri besleme daha hızlı oluyor.
+
+335
+01:49:24,287 --> 01:49:29,287
+Sürekli tümleştirme, continuous integration var.
+
+336
+01:49:29,287 --> 01:49:39,228
+Bir de PeopleCM'deki kurallar çerçevesinde devam ettirilebilir bir hız düşünülüyor.
+
+337
+01:49:39,228 --> 01:50:01,808
+Bundan kasıt da haftada 40 saat gibi bir çalışma süresi içinde çalışanların sürekli çalışmalarını sağlayacak şekilde.
+
+338
+01:50:07,252 --> 01:50:27,811
+Evet, bir kurallar açısından bir sprint, Scrum'da bir sprint kavramı var ve iki hafta diyoruz. Burada yani ufak farklılıklar var. Burada Scrum daha sonra geliştirildi XP'den.
+
+339
+01:50:27,811 --> 01:50:36,971
+Scrum'da işte bunların süresi için işte iki hafta gibi bir süre veriliyor.
+
+340
+01:50:36,971 --> 01:50:51,972
+Ama XP'de daha farklı. XP'de yeni rilizler var. Yani küçük artımlarla ürün daha geliştiriliyor ve iyileştiriliyor.
+
+341
+01:50:51,971 --> 01:51:13,031
+Oysa Scrum'da her bir koşuda tanımlanan işlemler var eklenerek giden. XP'de ise yeni artımlarla işin geliştirilmesi sürekli tümleştirme şeklinde gidiyor.
+
+342
+01:51:13,031 --> 01:51:23,031
+Yani ikisi arasında da inkremental model de geliştiriliyor XP.
+
+343
+01:51:25,031 --> 01:51:29,711
+İki model arasında da farklılık var.
+
+344
+01:51:29,711 --> 01:51:38,432
+Yani XP'de biz bu sprintlerden, koşulardan söz etmiyoruz.
+
+345
+01:51:38,432 --> 01:51:43,411
+İşi geliştirerek gitmek söz konusu.
+
+346
+01:51:43,411 --> 01:51:46,731
+Bir dakika.
+
+347
+01:51:49,791 --> 01:51:50,051
+Evet.
+
+348
+01:51:51,311 --> 01:51:59,711
+Geleneksel yazılım geliştirme modellerine göre kalite bakımından baktığımızda
+
+349
+01:52:04,787 --> 01:52:11,787
+kalite bakımından baktığımızda ne farklılıklar var?
+
+350
+01:52:14,195 --> 01:52:33,616
+Dinamik kalite değerlendirme, statik değerlendirmeden daha fazla uygulanıyor. Yani dinamik kalite değerlendirme, test daha fazla yapıyoruz. Kod incelemeden çok test yapıyoruz.
+
+351
+01:52:33,616 --> 01:52:44,515
+Statik değerlendirme diye baktığınızda eski bilgilerinizi yoklarsanız, Statik Verification nedir?
+
+352
+01:52:47,015 --> 01:52:52,636
+Statik Verification nedir? Biriniz yazın ya da söyleyin.
+
+353
+01:52:57,716 --> 01:52:59,635
+Static verification nedir?
+
+354
+01:53:03,380 --> 01:53:05,820
+Bir dakika, isim okuyarak sorayım o zaman.
+
+355
+01:53:14,676 --> 01:53:17,495
+bir dakika
+
+356
+01:53:19,123 --> 01:53:20,963
+[öğrenci]
+
+357
+01:53:20,963 --> 01:53:25,544
+Statik Verification
+
+358
+01:53:25,544 --> 01:53:28,344
+Nedir?
+
+359
+01:53:30,343 --> 01:53:31,823
+[öğrenci]
+
+360
+01:53:31,823 --> 01:53:34,343
+Evet.
+
+361
+01:53:38,836 --> 01:53:39,836
+Efendim hocam?
+
+362
+01:53:40,235 --> 01:53:42,515
+Static verification nedir?
+
+363
+01:53:46,387 --> 01:53:48,687
+[öğrenci] değil mi? Evet hocam.
+
+364
+01:53:49,907 --> 01:54:00,247
+Static verification deyince ne aklına gideceğim? Hocam sanki doğrulama için falan yapılıyordu da şey böyle tam hatırlayamadım yani.
+
+365
+01:54:01,687 --> 01:54:12,068
+Bizim kalite aktivitelerimizden hangisi static verification'a örnek verilebilir? [öğrenci] sen söyle.
+
+366
+01:54:12,068 --> 01:54:14,068
+Evet.
+
+367
+01:54:16,467 --> 01:54:18,307
+Sesim geliyor mu? Geliyor.
+
+368
+01:54:19,467 --> 01:54:28,428
+Search verification olduğunda programı çalıştırmada kod üzerinden anayet yapmak gibi bir şey.
+
+369
+01:54:29,007 --> 01:54:31,888
+Evet. Örneğiniz ver onun.
+
+370
+01:54:33,607 --> 01:54:34,287
+Kod neydi?
+
+371
+01:54:34,287 --> 01:54:34,707
+Nasıl örnek?
+
+372
+01:54:35,787 --> 01:54:38,687
+Yani hangi işlem, aktivitenin adını söyle.
+
+373
+01:54:40,347 --> 01:54:42,907
+Yani kaynak kod üzerinden yapılmış olan.
+
+374
+01:54:42,907 --> 01:54:44,787
+Tamam. Ne yapıyoruz?
+
+375
+01:54:46,467 --> 01:54:48,828
+Doğrulamıştın
+
+376
+01:54:48,828 --> 01:54:53,707
+Kaynak kodu analiz yapıyoruz hocam
+
+377
+01:54:53,707 --> 01:54:56,387
+Analiz yapıyoruz. Ne diyoruz onun adına?
+
+378
+01:55:01,787 --> 01:55:03,467
+Statik verification değil mi bu?
+
+379
+01:55:04,127 --> 01:55:07,308
+İşte onun bir adı var. Orada yaptığımız aktivite nedir?
+
+380
+01:55:09,688 --> 01:55:10,907
+Debuying mi yok hocam?
+
+381
+01:55:11,947 --> 01:55:14,308
+Yok. [öğrenci] sen söyle
+
+382
+01:55:14,308 --> 01:55:15,967
+Karşıdanım öyleyse
+
+383
+01:55:15,967 --> 01:55:21,107
+Doğru başladın da adını söyleyemedin
+
+384
+01:55:24,948 --> 01:55:45,767
+Inspection, inceleme yapıyoruz. Code Inspection yapıyoruz mesela. Test, test, dinamik. Inspection ise static. Static verification yapıyoruz.
+
+385
+01:55:48,767 --> 01:55:51,767
+Bakayım bir dakika cevaplarınıza.
+
+386
+01:55:51,767 --> 01:55:56,788
+Evet, dinamikte test yapıyoruz.
+
+387
+01:55:57,668 --> 01:56:00,907
+Ama ben statikte ne yaparız demiştim.
+
+388
+01:56:01,028 --> 01:56:04,087
+Statik verification'da inspection, inceleme yapıyoruz.
+
+389
+01:56:09,684 --> 01:56:11,443
+Evet, şimdi devam edelim.
+
+390
+01:56:13,043 --> 01:56:23,524
+Evet, dinamik kalite değerlendirme, statik değerlendirmeden daha fazla uygulanıyor geleneksel yazılım geliştirme süreç modellerine göre, çevik modellerde.
+
+391
+01:56:24,343 --> 01:56:30,123
+Kalite ile ilgili işlemler daha sürecin daha erken adımlarında başlıyor.
+
+392
+01:56:30,123 --> 01:56:49,263
+Yani kalite ile ilgili işlemler özellikle test, klasik yazılım geliştirme modellerinde yazılım geliştirmenin sonuna doğru gerçekleştirilir.
+
+393
+01:56:49,263 --> 01:57:03,043
+Ama çevik modellerde daha ilk baştaki işlemlerde kaliteyi göz önünde bulundurarak kalite aktiviteleri hatta test bile başlıyoruz.
+
+394
+01:57:03,184 --> 01:57:04,843
+Testi planlamaya başlıyoruz.
+
+395
+01:57:05,943 --> 01:57:11,223
+Ve kalite ile ilgili aktiviteler daha az aralıklarla yani daha sık yapılır.
+
+396
+01:57:11,223 --> 01:57:19,223
+Daha fazla her küçük yazılımı geliştirdiğimizde test işlemini daha fazla gerçekleştiririz.
+
+397
+01:57:19,264 --> 01:57:42,484
+kalite ile ilgili gözden geçirmeyi daha fazla yaparız. Zaten müşteri de kendi ekibimizin içindedir. Çevik yaklaşımlarda kullanıcı hikayeleri, birim testler, müşteri geri beslemeleri ile doğruluk ve süreklilik sağlanabilir.
+
+398
+01:57:42,483 --> 01:58:03,983
+Bu şekilde kalite açısından geleneksel yazılım geliştirme süreç modellerine göre çevik modellerde daha fazla işlem gerçekleştirebiliyoruz.
+
+399
+01:58:15,412 --> 01:58:17,412
+Şimdi
+
+400
+01:58:17,412 --> 01:58:19,412
+bir dakika
+
+401
+01:58:22,644 --> 01:58:28,544
+Bir test güdümlü yazılım geliştirme kavramı var.
+
+402
+01:58:29,543 --> 01:58:30,923
+Test Driven Development.
+
+403
+01:58:31,644 --> 01:58:36,144
+Test güdümlü yazılım geliştirme stratejisi nedir?
+
+404
+01:58:37,363 --> 01:58:42,463
+Burada zaten az önce farklılıkları söyledik.
+
+405
+01:58:42,463 --> 01:58:49,703
+Bu farklılıklara göre çalışan test sistemini biz Test Driven Development diyoruz.
+
+406
+01:58:49,763 --> 01:58:52,263
+Bu farklılıkları sağlayacak şekilde çalışan.
+
+407
+01:58:52,644 --> 01:59:08,243
+Yani nedir? Bir kullanıcı senaryosu nesneye yönelik yazılım geliştirmeyi düşünürseniz bir kullanıcı senaryosu oluşturuldu gereksinim analizi sırasında.
+
+408
+01:59:08,243 --> 01:59:22,123
+Hemen bunun arkasından bu use case'in test senaryosu nasıl olmalıdır bunu düşünmek gerekir test güdümlü yazılım geliştirmede.
+
+409
+01:59:22,644 --> 01:59:33,523
+küçük ve hızlı iterasyonlarla yazılım geliştirme araçları ile hazırlanmış testler yazılması.
+
+410
+01:59:33,523 --> 01:59:40,904
+Yani bu testlerin yazılması, test senaryolarının oluşturulmasında tool'lar da kullanılır.
+
+411
+01:59:40,983 --> 01:59:45,923
+Şu use case'e uygun test senaryosu geliştirilmesi şeklinde.
+
+412
+01:59:45,923 --> 01:59:56,963
+Ve bu şekilde her bir use case yazıldığında o use case'in test senaryosunu yazarak ilerleyen bir yazılım geliştirme metodolojisi.
+
+413
+01:59:57,364 --> 01:59:59,563
+Test Driven Development bu.
+
+414
+01:59:59,864 --> 02:00:04,383
+Yani test yönelimli yazılım geliştirme, test güdümlü yazılım geliştirme.
+
+415
+02:00:04,383 --> 02:00:16,883
+Tabii ki bu baştan beri söylediğimiz çevik yaklaşımlarda, çevik uygulamalarda geçerli olan bir yöntem.
+
+416
+02:00:17,443 --> 02:00:23,743
+Test Driven Development'da nasıl davranıyoruz?
+
+417
+02:00:24,443 --> 02:00:27,583
+Öncelikle birim test case'ler yazıyoruz.
+
+418
+02:00:27,583 --> 02:00:33,724
+Yani her bir küçük modül için bizim test senaryomuz nedir?
+
+419
+02:00:33,883 --> 02:00:36,303
+Test case'imiz, test senaryomuz nedir?
+
+420
+02:00:36,903 --> 02:00:40,504
+Bunu test edecek bir senaryo belirliyoruz.
+
+421
+02:00:41,783 --> 02:00:51,584
+Hatta bu yüzden yani daha çok ecail yaklaşımlar kullanıldıkça şirketlerde de görüyoruz.
+
+422
+02:00:51,584 --> 02:01:03,664
+Görüyoruz test grubu ayrı bir grup değil sistem analizi ekibinin içinde yer alıyor.
+
+423
+02:01:03,864 --> 02:01:18,063
+Çünkü test senaryolarını daha sistem analizi yaparken test senaryolarını da geliştirecekleri için bunların ikisini çalışma ortamı açısından da birleştirdiklerini görüyoruz.
+
+424
+02:01:18,063 --> 02:01:21,404
+Şirketlere farklı yansıması olarak bunun.
+
+425
+02:01:21,584 --> 02:01:34,804
+Yazılmış test kezlerin henüz kodu yazılmadığı için bunun başarısız olduğunu görmek üzere çalıştırılması.
+
+426
+02:01:34,923 --> 02:01:45,904
+Kod yazarak test kezlerin geçmesini sağlamak, test kezleri tekrar koşturarak geçtiğini sağlamak.
+
+427
+02:01:45,903 --> 02:01:58,383
+Önce bir test senaryosu oluşturuyoruz. Daha yazılımı geliştirmeden test senaryosunu nasıl çalıştıracağımızı planlıyoruz.
+
+428
+02:01:58,923 --> 02:02:05,203
+Kod yazılır yazılmaz da bu test senaryosunu bu koda uyguluyoruz.
+
+429
+02:02:06,123 --> 02:02:13,463
+Bu defa test case'i tekrar koşturarak yazılımın bundan geçtiğini görüyoruz.
+
+430
+02:02:13,463 --> 02:02:16,443
+Eğer geçememişse kodu yeniden düzenliyoruz.
+
+431
+02:02:16,787 --> 02:02:39,427
+Bu yüzden de gereksinim analizi gerçekleştiren ekiple, sistem analizi ekibiyle test senaryolarını geliştiren, yani kullanıcı testini gerçekleştiren ekip, aynı yerde iç içe çalışan ekip olarak da görevlendiriliyor.
+
+432
+02:02:39,427 --> 02:02:45,427
+Gördüğümüz, şirketlerde gördüğümüz farklılık da bu şekildedir diyebiliriz.
+
+433
+02:02:45,427 --> 02:03:04,807
+Test Driven Development hakkında ilk kimler çalışma yapmış? Daha çok önceki yıllarda yaklaşık 11 sene öncesinden beri bu çalışmalar devam ediyor.
+
+434
+02:03:04,808 --> 02:03:18,587
+Hakan Erdoğmuş, IEEE'nin editörlüğünü de, IEEE Software'in editörlüğünü, IEEE Software Dergisi'nin editörlüğünü yapan kişi.
+
+435
+02:03:24,180 --> 02:03:40,039
+Türkiye'den Boğaziçi'nden mezun ve bizim yazılım mühendisliği konferansında da davetli konuşmacı olarak çağırdığımız bir yazılımcı. Bunun yaptığı bir çalışma var.
+
+436
+02:03:40,039 --> 02:04:06,380
+24 tane lisans öğrencisini kullanarak önce test sonra test yapma yöntemleri hakkında bir araştırma gerçekleştirmiş ve test driving development'ın programcı üretkenliğini arttırdığını ama kalite konusunda daha hızlı çalışıyor.
+
+437
+02:04:06,380 --> 02:04:16,900
+Ama kalite konusunda en azından bir farklılık yok ya da daha iyi kaliteyi sağlayamadığını görmüş.
+
+438
+02:04:16,900 --> 02:04:32,319
+İki geleneksel yaklaşımdaki ve çevik modeller içindeki test yöntemlerini karşılaştırmış.
+
+439
+02:04:32,319 --> 02:04:42,620
+hız açısından üretkenlik çok artıyor ama kalite açısından biraz daha geride kaldığını görmüş.
+
+440
+02:04:42,619 --> 02:05:08,519
+Önce test yaklaşımı yani test driven development yaklaşımı programcıyı kodları ve test sonuçlarını yedekleme konusunda da itici bir güç olduğu belirlenmiştir.
+
+441
+02:05:08,519 --> 02:05:25,379
+Bu ilk başlangıçta verdiğim test driving development konusundaki yenilikleri de burada aktarmış oldum.
+
+442
+02:05:26,759 --> 02:05:30,479
+Bu konuyla ilişkili sorunuz var mı?
+
+443
+02:05:37,171 --> 02:05:52,451
+Hocam, ben bu konu değil de, geçen şeyde aklımdan saklı kaldı. Bu static verification'da kodu analiz yapma ile kodu inspection yapmanın ne farkı var yani? Aynı şey olmaz mı?
+
+444
+02:05:52,451 --> 02:06:14,631
+Şimdi analiz yapmak yani inspection daha ayrıntılı bir değerlendirme yapmak ve bizim kalite aktiviteleri içinde geçen isim yani derste kullandığımız review ile mesela inspection arasındaki farklılıkları söylemiştim.
+
+445
+02:06:14,631 --> 02:06:29,311
+analiz yapmak dediğinde review da anlaşılabilir ama static verification'da verdiğimiz örnek inspection'dı, incelemeydi.
+
+446
+02:06:32,051 --> 02:06:37,591
+Yani derste geçen ismi duymak istedim sizden notlara baktınız mı diye.
+
+447
+02:06:37,591 --> 02:06:45,691
+yoksa analizde aynı anlama gelebilir ama derste gördüğümüz isim code inspection'da.
+
+448
+02:06:47,411 --> 02:06:47,611
+Tamam?
+
+449
+02:06:48,191 --> 02:06:49,532
+Tamam hocam, teşekkür ederim.
+
+450
+02:06:50,431 --> 02:06:51,991
+Başka sorusu olan var mı?
+
+451
+02:06:57,268 --> 02:07:06,627
+bugünkü şeyleri kontrol edeceğim eskileriyle. Daha önce hiç derse katılmayıp bugün katılan var mı içinizde?
+
+452
+02:07:14,963 --> 02:07:18,444
+Bugün ilk defa katılan var mı içinizde?
+
+453
+02:07:21,203 --> 02:07:23,403
+Evet, projeleriniz nasıl gidiyor?
+
+454
+02:07:26,223 --> 02:07:28,443
+Projelerinizle ilişkili sorunuz var mı?
+
+455
+02:07:32,180 --> 02:07:54,739
+14, 13, 12 bu hafta 9. haftayı tamamladık. 2 hafta sonra tamamlamış olmanız gerekiyor. Çalışmalarınızı ona göre planlayın.
+
+456
+02:07:54,739 --> 02:07:58,739
+10-11. hafta
+
+457
+02:07:58,739 --> 02:08:09,680
+Yani derste katılım için derste tanımladıklarım üzerinden çalışmaya başlayın.
+
+458
+02:08:09,680 --> 02:08:15,099
+Ama bir belge olarak da koyabilirim önümüzdeki hafta.
+
+459
+02:08:15,479 --> 02:08:20,599
+Yani formatlarını koymayacağım.
+
+460
+02:08:21,279 --> 02:08:23,419
+Mesela planı derste gördük.
+
+461
+02:08:24,739 --> 02:08:33,639
+aynı şekilde test raporlarının örneğini koymayacağım ama neler istediğimi zaten derste anlattım.
+
+462
+02:08:35,619 --> 02:08:40,439
+Ama bu anlattıklarımı önümüzdeki hafta metin haline getireceğim.
+
+463
+02:08:42,839 --> 02:08:46,719
+Özellikle derste anlattıklarımla devam edin istiyorum.
+
+464
+02:08:49,099 --> 02:08:50,339
+Sorunuz var mı başka?
+
+465
+02:08:54,163 --> 02:09:20,344
+Evet, siz 11. haftaya hazırlamaya çalışın. 12. hafta en son deadline'ımız. 12. hafta deadline'ımız. Evet, belki bir örnek koyabilirim, ona bakacağım. Önümüzdeki hafta proje tanımını göreceksiniz elinizde.
+
+466
+02:09:20,344 --> 02:09:33,623
+Evet. O zaman bugün için dersi tamamlıyorum. Sorusu olan varsa sorabilir.
+
+467
+02:09:39,699 --> 02:09:40,539
+Bir dakika.
+
+468
+02:09:41,259 --> 02:09:44,839
+Proje örneğini paylaştığınız zaman metinde paylaşır mısınız?
+
+469
+02:09:45,739 --> 02:09:46,099
+Tamam.
+
+470
+02:09:47,099 --> 02:09:47,939
+Teşekkürler.
+
+471
+02:09:47,939 --> 02:09:49,859
+Önümüzdeki hafta vereceğim onu.
+
+472
+02:09:50,379 --> 02:09:51,160
+Tamam sağ olun.
+
+473
+02:09:51,759 --> 02:09:52,040
+Tamam.
