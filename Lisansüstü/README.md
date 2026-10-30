@@ -163,6 +163,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları](./Ara%C5%9Ft%C4%B1rma%20Y%C3%B6ntemleri%20ve%20Bilimsel%20Etik/ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Ara%C5%9Ft%C4%B1rma%20Y%C3%B6ntemleri%20ve%20Bilimsel%20Etik/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
