@@ -1,0 +1,2787 @@
+1
+00:01:04,243 --> 00:01:10,323
+Evet, 3-4 dakika bekleyeceğim bağlananlar için.
+
+2
+00:03:03,828 --> 00:03:22,168
+Evet, başlayabiliriz. Merhaba arkadaşlar. Bugün kaldığımız yerden minimum spanning tree ile devam edeceğiz. Kluskal algoritmasının nasıl geliştirildiğini anlatacağım önce size. Daha sonra da en kısa yol bulunmasını graf üzerinde göstereceğim.
+
+3
+00:03:22,168 --> 00:03:34,708
+graf üzerinde nasıl gezinileceğini, breadth-first search, depth-first search algoritmalarını aslında normalde biz ikinci yılda veri yapıları ve algoritmalar dersinde anlatıyoruz.
+
+4
+00:03:34,828 --> 00:03:37,528
+Bu arada sesim iyi geliyor mu size? Nasıl geliyor şu anda?
+
+5
+00:03:38,107 --> 00:03:38,668
+Geliyor hocam.
+
+6
+00:03:39,807 --> 00:03:40,487
+Geliyor mu? Tamam.
+
+7
+00:03:40,487 --> 00:03:58,287
+Fakat bu dönem eğitim uzaktan yapıldığı için pek olması gereken performans da ilerlemediği görüşünde olduğumuzdan önümüzdeki döneme zaten anlatmak üzere plan yapmıştık.
+
+8
+00:03:58,287 --> 00:04:06,067
+O yüzden grafik üzerinde gezme algoritmaları olan Depth First Search, Bread First Search algoritmalarını önümüzdeki döneme anlatacağız.
+
+9
+00:04:06,767 --> 00:04:09,307
+Şimdi ben sizinle ekranımı paylaşayım.
+
+10
+00:04:10,487 --> 00:04:28,087
+sorularınız olursa lütfen sesli olarak sorun. Çünkü chat'i göremiyorum fullscreen olduğu için ekranım. Şu anda herhalde ekranımı görüyorsunuz. Göremezseniz haber verin.
+
+11
+00:04:28,907 --> 00:04:38,087
+Şimdi geçen hafta şeyden bahsetmiştik. Yani Kurskol algoritmasından ve önce Prim ve Kurskol'dan bahsetmiştik. Aslında ikisi de greedy algoritmalar.
+
+12
+00:04:38,087 --> 00:04:51,907
+tıkmalar. Grady algoritmalarda mantık hem prim algoritması hem de kurskal algoritması ikisi de grady.
+
+13
+00:04:51,907 --> 00:04:59,947
+Çünkü ikisinde de mantık aslında lokalde en iyi çözüm, globalde de en iyi sonucu verir mantığından kaynaklanıyor.
+
+14
+00:05:00,047 --> 00:05:04,247
+Primde nasıl da hatırlarsanız herhangi bir düğümden başlıyor.
+
+15
+00:05:04,247 --> 00:05:19,467
+Şimdi bizim amacımız ne? Bütün düğümleri birbirine bağlayan ve en düşük değerlere sahip olan toplamda minimum spanning tree'yi oluşturmak.
+
+16
+00:05:19,467 --> 00:05:28,848
+Yani herhangi bir şekilde şey oluşturmayacak, cycle oluşturmayacak, ağaç yapısında olacak bir alt graf elde etmek.
+
+17
+00:05:28,848 --> 00:05:41,288
+Burada da prim algoritmasının yaptığı herhangi bir düğümden başlayıp en kısa mesafeleri ekleye ekleye sonuca ulaşmak.
+
+18
+00:05:41,408 --> 00:05:49,488
+Yani lokalde en iyi olan çözüm en kısa mesafelerin bulunmasıysa globalde de o zaman biz buradan en iyi çözüme gideriz şeklinde.
+
+19
+00:05:49,488 --> 00:05:59,368
+minimum spelling tree'de de diziyi önce bağlantıları küçükten büyüğe sıralayıp daha sonra yine en küçükleri ala ala ilerlemek.
+
+20
+00:06:00,068 --> 00:06:02,868
+Dolayısıyla ekisi da aslında biridiya algoritmalar.
+
+21
+00:06:03,607 --> 00:06:10,607
+Şimdi biz şeyi Kuruskal algoritmasının çözümünden geçen hafta bahsetmeye başlamıştık.
+
+22
+00:06:10,708 --> 00:06:13,368
+Süremiz yetmediği için orada kestik.
+
+23
+00:06:13,368 --> 00:06:17,928
+Bugün o algoritmanın nasıl tasarlanılacağından bahsedeceğim.
+
+24
+00:06:17,927 --> 00:06:28,367
+Şimdi önce bir tane daha örnek olması açısından bir şey daha, graf daha yapalım.
+
+25
+00:07:32,980 --> 00:07:43,780
+Evet, böyle bir grafımız olsun. Şimdi Kruzkal'da bizim yaptığımız şey önce bağlantıları küçükten büyüye dizmek. Çünkü mantık burada şeye dayanıyor.
+
+26
+00:07:45,400 --> 00:07:50,779
+Bakayım nereye yapayım? Şuraya yaparsam. Belki daha ne olacak? Böyle yapayım.
+
+27
+00:07:50,779 --> 00:08:07,520
+Eğer ben küçükten büyüğe dizilerek, en küçükten başlayarak alırsam şeyleri, bağlantıları, globalde de en küçük bağlantıları, yani minimum spending tree'yi elde etmiş olurum.
+
+28
+00:08:07,520 --> 00:08:37,500
+buna dayanıyor eksik bir şey olursa uyarım ben şöyle ac6 gh7 cd8 eg9 df10 fg11
+
+29
+00:08:37,520 --> 00:08:57,459
+başka? AD16, EF18, ha 14 vardı hayalına. FG11, atlarsam uyarım lütfen sizde görüp de atladığım bir şey olsa.
+
+30
+00:08:57,459 --> 00:09:12,459
+FH14, AD16, EF18, DH21, CE23 ve DE24.
+
+31
+00:09:12,459 --> 00:09:15,679
+Şimdi bir şey yapayım sonra onları geri alırım.
+
+32
+00:09:15,679 --> 00:09:37,539
+AB4, CF5, AC6, GH7, CD8, EG9, DF10, FG11, FH14, AD16.
+
+33
+00:09:41,620 --> 00:09:50,319
+EF18, DH21, C23, DE24. Atladığım bir şey yok görüyorum ki.
+
+34
+00:09:50,319 --> 00:09:54,580
+Soruyorum. Soncusu galiba BE olması lazım.
+
+35
+00:09:54,580 --> 00:10:03,380
+ABE de var, doğru söylüyorsun. DE değil o. Pardon BE24 değil mi? Atlısın değil mi? Öyle.
+
+36
+00:10:03,380 --> 00:10:11,140
+Şöyle CE21, BE24. Oldu mu şimdi?
+
+37
+00:10:12,939 --> 00:10:13,579
+Evet hocam.
+
+38
+00:10:14,419 --> 00:10:16,700
+DE yok doğru söylüyorsun. CE23 tamam.
+
+39
+00:10:16,700 --> 00:10:19,259
+Evet şimdi bunlar küçükten büyüye sıralı.
+
+40
+00:10:19,380 --> 00:10:27,079
+Zaten küçükten büyüye sıraladığımız için E log B bir karmaşıklık oradan geliyor.
+
+41
+00:10:27,719 --> 00:10:29,939
+Şimdi burada şeylerle başlıyoruz.
+
+42
+00:10:29,939 --> 00:10:36,840
+Şimdi nasıl yapacağımızı, artık algoritmik düşünmeye başladığımız için nasıl yapacağımızı birlikte tasarlayalım.
+
+43
+00:10:37,620 --> 00:10:46,439
+Şimdi şöyle düşünelim, her bir düğümün bir dizinin indisine denk geldiğini düşünelim.
+
+44
+00:10:46,439 --> 00:10:53,859
+Yani aslında ne olmuş oluyor? Şurası sıfırıncınız, birinciniz, ikinci, üçüncü, dördüncü, beşinci, altıncı ve yedinci.
+
+45
+00:10:54,200 --> 00:10:59,079
+Şimdi bu bizim bir etiket dizimiz olsun ve başlangıçta şöyle düşüneceğiz.
+
+46
+00:10:59,079 --> 00:11:06,639
+diyeceğiz ki başlangıçta kimse kimseye bağlı değil. Dolayısıyla bunun tamamı sıfır hiçbir bağlantı yok.
+
+47
+00:11:06,639 --> 00:11:17,620
+Ve bağlayarak her ayrı sap grafı ayrı etiketlerle bağlayacağız. Şimdi AB4 dediğimiz zaman şimdi önce bakacağım.
+
+48
+00:11:18,200 --> 00:11:23,420
+A'da sıfır, B'de sıfır. Demek ki ikisi de hiçbir yere bağlı değil. Dolayısıyla birbirlerine bağlanabilirler.
+
+49
+00:11:23,419 --> 00:11:26,879
+A'yı ve B'yi aynı etiketle etiketleyeceğim.
+
+50
+00:11:27,879 --> 00:11:30,199
+İkinci olarak C, F var.
+
+51
+00:11:30,619 --> 00:11:32,059
+C'de 0, F'de 0.
+
+52
+00:11:32,339 --> 00:11:35,959
+O zaman şöyle alayım bir taraftan da.
+
+53
+00:11:36,959 --> 00:11:39,239
+A, B'yi şöyle aldım.
+
+54
+00:11:40,499 --> 00:11:42,219
+İkinci olarak C, F var.
+
+55
+00:11:42,619 --> 00:11:43,859
+Şimdi bakın dikkat edin.
+
+56
+00:11:44,659 --> 00:11:47,039
+C, F başka bir yerde.
+
+57
+00:11:47,039 --> 00:11:49,179
+Çünkü ikisi de 0.
+
+58
+00:11:49,479 --> 00:11:51,379
+Bir yere bağlı değiller, boştalar.
+
+59
+00:11:51,379 --> 00:11:56,359
+O zaman C ile F'yi farklı etiketle etiketiyorum.
+
+60
+00:11:56,459 --> 00:11:59,319
+Çünkü artık başka bir alt graf olduğu için.
+
+61
+00:11:59,879 --> 00:12:00,999
+A, C'ye bakıyorum.
+
+62
+00:12:01,159 --> 00:12:02,059
+Şimdi dikkat edin.
+
+63
+00:12:03,199 --> 00:12:06,879
+Burada bir alt graf var, burada bir alt graf var.
+
+64
+00:12:06,999 --> 00:12:08,060
+Bunu nereden anlıyorum?
+
+65
+00:12:08,219 --> 00:12:11,019
+A'nın değeri 1, C'nin değeri 2.
+
+66
+00:12:11,179 --> 00:12:13,719
+İkisi de bir yerlere bağlı ama farklı yerlere bağlı.
+
+67
+00:12:13,799 --> 00:12:16,079
+O zaman bunları birbirine bağlayabilirim.
+
+68
+00:12:16,079 --> 00:12:26,679
+O zaman diyorum ki şu şekilde AC'yi aldığım zaman ne oldu? CF'de bağlanmış oldu.
+
+69
+00:12:28,479 --> 00:12:35,279
+CF'de şöyle bağlanmış oldu. Bu bağlantıyı nasıl sağlayacağım? Bu bağlantıyı da şöyle sağlayacağım.
+
+70
+00:12:35,919 --> 00:12:41,239
+Bütün ikileri bir yaparak veya bütün birleri ikide yapabilirsiniz. O hiç fark etmez.
+
+71
+00:12:41,239 --> 00:12:43,299
+o şekilde sağlayacağım.
+
+72
+00:12:43,379 --> 00:12:44,719
+Şimdi geldik GH'yi.
+
+73
+00:12:45,239 --> 00:12:46,700
+G'de sıfır, H'de sıfır.
+
+74
+00:12:46,799 --> 00:12:50,340
+O zaman bunu aldım ve bunları yeni bir etiketle etiketledim.
+
+75
+00:12:50,980 --> 00:12:52,139
+3 diyelim mesela.
+
+76
+00:12:52,739 --> 00:12:56,799
+Ve GH'yi şöyle bağladım.
+
+77
+00:12:56,799 --> 00:13:02,519
+Şunu isterseniz şöyle anlaşılmasız açısından şey yapabiliriz.
+
+78
+00:13:03,419 --> 00:13:08,079
+Şu C'miz, şu F'miz, C, F5'ti.
+
+79
+00:13:08,079 --> 00:13:12,879
+Şunu artık aynı yere bağlı oldukları için sarıyla bağlıyorum.
+
+80
+00:13:14,419 --> 00:13:24,759
+CH5, burada GH var. GH'de 3 şu anda. Şimdi CD geldi. Şimdi C1, D0. O zaman ne olacak?
+
+81
+00:13:24,759 --> 00:13:32,619
+Bunu aynı etiketle, bakın aynı alt grafa geldi. D'yi de 1 yaparak almış olacağım.
+
+82
+00:13:32,620 --> 00:13:39,640
+Şimdi EG var 9, E0, G3
+
+83
+00:13:40,063 --> 00:13:50,163
+O zaman bu seferde ne yapacağım? E'yi bunlara bağlayacağım. Yani B'yi 3 yapacağım. E, G'yi de aldım.
+
+84
+00:13:51,223 --> 00:14:04,583
+Şimdi D, F var. Şimdi dikkat edin. Şuraya dikkat ediyoruz. D'de 1, F'de 1. Yani bunlar ikisi aynı graftalar zaten. Yani zaten birbirlerine bağlılar.
+
+85
+00:14:04,583 --> 00:14:33,003
+o zaman ikisi de aynı graphda olduğu için zaten dikkat edin eğer ben burayı bağlarsam şöyle bakın şuraya bakın eğer ben burayı bağlarsam bakın ne oluyor şurada bir tane döngü oluşturmuş oluyorsunuz tamam mı o yüzden bağlamıyorum yani niye bağlamıyorum çünkü ben benim minimum spanning tree'deki hedefim şu istiyorum ki ben burada
+
+86
+00:14:33,003 --> 00:14:40,523
+bütün düğümleri içeren, bütün düğümlerin birbirine bağlı olduğu bir yapı oluşsun.
+
+87
+00:14:40,523 --> 00:14:44,623
+Ama minimum bağlantıyla sağlayın.
+
+88
+00:14:44,863 --> 00:14:59,483
+Şimdi zaten D ve F, C üzerinden birbirlerine bağlıysalar, arada bir de şu bağlantıyı yapmak bana ekstradan bir 10 uzunluklu bağlantı bilgisi ekletecek.
+
+89
+00:14:59,483 --> 00:15:04,924
+Buna gerek var mı? Yok zaten bağlılar aynı grafın içerisinde o yüzden bağlamıyorum ben bunları.
+
+90
+00:15:04,924 --> 00:15:15,924
+Şimdi geldik FG'ye F1, G3. Şimdi bakın zaten görüyoruz şurada bir tane şöyle bir alt graf var bir tane de burada böyle bir alt graf var.
+
+91
+00:15:15,924 --> 00:15:27,163
+O zaman bu ikisinin bu şekilde şöyle şey olması bağlanması FG'nin bağlanması neyi sağlıyor?
+
+92
+00:15:27,163 --> 00:15:33,744
+E'nin ve H'nin de aynı grafa bağlanmasını sağlıyor.
+
+93
+00:15:33,744 --> 00:15:39,824
+O zaman ben FG11'i alarak F1'di, G'de 3.
+
+94
+00:15:40,383 --> 00:15:51,103
+Diyelim ki bütün üçleri bir yaparsam, bütün üçleri bir yaparsam bu iki alt grafı birbirine bağlamış olacağım.
+
+95
+00:15:51,183 --> 00:15:57,644
+EGH alt grafını, A, B, C, D, F alt grafına bağlamış olacağım.
+
+96
+00:15:57,644 --> 00:15:59,843
+Şimdi burada biz neyi gördük bu sefer?
+
+97
+00:15:59,843 --> 00:16:07,944
+FGE'yi de almış olmakla birlikte FGE'yi de alınca birbirine bağlı olmayan bir düğüm kalmadı.
+
+98
+00:16:08,164 --> 00:16:16,043
+Ha kaldı mı? Kalmadı, kalmadı. O zaman ben bu şekilde ne oldu toplamda?
+
+99
+00:16:16,623 --> 00:16:25,063
+5, 9, 15, 22, 30, 39, 60 mi oldu? Niye öyle?
+
+100
+00:16:25,063 --> 00:16:40,183
+39 pardon 50 oldu. O zaman total weight 50 oldu. 4, 9, 15, 22, 30, 39, 11'da total weight 50 oldu.
+
+101
+00:16:42,403 --> 00:16:46,084
+Buraya kadar sormak istediğiniz bir şey var mı? Bunu hatırlatmak için yaptım.
+
+102
+00:16:48,343 --> 00:16:52,763
+Şimdi o zaman bu mantıktan biz geçen hafta şunları konuşmuştuk.
+
+103
+00:16:52,763 --> 00:17:00,763
+Burada yazdın mı ben buraya? Ha yazdım. Bir daha burada tekrar hatırlatayım. Eğer iki düğüm...
+
+104
+00:17:06,195 --> 00:17:16,635
+0, 0 ise bu ne demek? İkisi de hiçbir yere bağlı değil. Aslında şuradan üzerinden geçeyim ben. Yeni etiketle etiketleyeceğim demek.
+
+105
+00:17:16,795 --> 00:17:25,255
+Eğer iki düğümün de değeri 0 ise şu label dizisine baktığımızda iki düğümün de değeri 0 ise yeni etiketleyeceğim demek.
+
+106
+00:17:25,255 --> 00:17:31,495
+Biri 0, biri x ise x'in etiketiyle etiketleyeceğim demek. Çünkü biri bağlı, biri bağlı değil demek.
+
+107
+00:17:31,495 --> 00:17:59,435
+1x, 1y ise bütün y etiketlerini x yapacağım demek. Demek ki buradaki mantık bu. O zaman şuraya algoritmayı yazacağıma göre bir köşeye not alayım. İkisi de 0 ise yine 1'i 0, 1'i x ise x, 1'i x, 1'i y ise işte ne bileyim bütün y'ler mesela hiç fark etmez bütün y'ler x
+
+108
+00:18:01,495 --> 00:18:18,376
+ikisi de x ise o zaman alma. Şunu köşeye bu şekilde not alalım şimdi ve şeye başlayalım birlikte aygürtmenin tasarımına başlayalım. Bir tane structure olacak.
+
+109
+00:18:22,963 --> 00:18:27,203
+edge diyelim buna.
+
+110
+00:18:27,203 --> 00:18:38,163
+u v v v bunların v t olacak.
+
+111
+00:18:41,587 --> 00:18:51,008
+Şimdi nedir bu? Şöyle düşünecek olursak, U düğümü, V düğümü ve bunlar arasındaki ağırlık değeri, weight değeri.
+
+112
+00:18:51,008 --> 00:18:52,587
+Şimdi,
+
+113
+00:18:57,652 --> 00:18:58,371
+Kuşturuz yin.
+
+114
+00:19:03,124 --> 00:19:04,963
+şey olacağına göre
+
+115
+00:19:08,468 --> 00:19:19,047
+Normalde ben öküş çizmeyi daha doğru buluyorum ama şimdi böyle şey ne derler, strakt özelliğinde ne yapsam bilemedim bir dakika. Peki.
+
+116
+00:19:24,756 --> 00:19:25,515
+Bakışızın.
+
+117
+00:19:37,940 --> 00:19:38,859
+Vertex.
+
+118
+00:19:41,199 --> 00:19:42,499
+Bir dakika.
+
+119
+00:19:45,400 --> 00:19:46,599
+Ya da şey mi yapsam?
+
+120
+00:19:49,360 --> 00:19:50,159
+Peki.
+
+121
+00:19:53,459 --> 00:19:56,259
+Grafımız var bizim şey cinsinde.
+
+122
+00:19:59,839 --> 00:20:03,659
+Dizi olarak edge tipinde bir grafımız var.
+
+123
+00:20:03,780 --> 00:20:05,399
+Ya da ben bunu böyle bir şey yapayım.
+
+124
+00:20:05,819 --> 00:20:07,039
+Çünkü şey çok karışacak.
+
+125
+00:20:07,039 --> 00:20:09,039
+bir kısmı
+
+126
+00:20:13,619 --> 00:20:23,479
+structure olduğu için neyin ne olduğunu akıştan koda geçirirken anlamakta zorluk çekebilirsiniz. O yüzden böyle bir şey yazayım, kod şeklinde yazayım.
+
+127
+00:20:25,299 --> 00:20:36,739
+Edge tipinde bir grafınız var. Yani şeyleri gösteren, işte U hangi düğümdür, V hangi düğümdür ve aralarındaki ağırlık nedir bunu gösteren Edge tipinde bir grafınız var.
+
+128
+00:20:36,739 --> 00:20:59,559
+ve sonucu da mst de yine şeyde saklayacağız, edge tipinde bir mst de saklayacağız, durumda öyle yazayım, edge tipinde mst de saklayacağız ve vertex sayımız var bir de.
+
+129
+00:21:04,884 --> 00:21:05,884
+Şimdi şöyle
+
+130
+00:21:12,339 --> 00:21:26,199
+ilk etiketimiz bir no-lo etiket olacak. Başlangıçta kimsede etiket yok. Kaç tane düğüm var? NV tane düğümümüz var.
+
+131
+00:21:26,199 --> 00:21:39,699
+Başlangıçta bu NV tane düğüm kadar etiketimiz olacağı için label dizimizi sıfırladık. Yani şöyle bir label dizim var benim.
+
+132
+00:21:39,699 --> 00:21:41,819
+labeled list'im var.
+
+133
+00:21:42,379 --> 00:21:49,520
+Diyelim ki eğer 3 düğümüm, 4 düğümüm varsa 4 elemanlı bir labeled list'im var ve bunu başlangıçta sıfırladım.
+
+134
+00:21:53,459 --> 00:21:58,259
+Ve EG'yi eşittir, index olarak kullanacağımız EG'yi sıfırladım.
+
+135
+00:21:59,579 --> 00:22:01,579
+Şimdi şey yapacağım.
+
+136
+00:22:02,919 --> 00:22:04,219
+Şimdi ne kadar döneceğim?
+
+137
+00:22:04,219 --> 00:22:12,839
+şey olduğu zaman şimdi iki tane düğümüm varsa bunlar arasında bir bağlantı vardır.
+
+138
+00:22:12,839 --> 00:22:15,899
+Üç tane düğümüm varsa iki bağlantı vardır.
+
+139
+00:22:16,019 --> 00:22:24,119
+Dolayısıyla minimum spanning tree olabilmesi için ne kadar düğümüm varsa o kadar eksi bir bağlantı yapmam gerekiyor demektir.
+
+140
+00:22:24,179 --> 00:22:26,959
+Yani üç düğüm için iki bağlantı yapmam gerekiyor demektir.
+
+141
+00:22:27,319 --> 00:22:30,439
+Şimdi yeni sayfaya geçeceğim ki her şeyi bir arada görün diye.
+
+142
+00:22:30,439 --> 00:22:41,259
+diyeceğim ki o zaman ben i küçüktür, i sıfırdan şurada görün diye bu sayfada da görün diye şuradakini kaldırayım.
+
+143
+00:22:42,060 --> 00:22:44,179
+j eşittir sıfır olsun şurası.
+
+144
+00:22:44,759 --> 00:22:46,060
+Şuradan şey yapalım.
+
+145
+00:22:47,679 --> 00:22:48,880
+Yo niye öyle yaptım?
+
+146
+00:22:49,039 --> 00:22:49,499
+Tamam iyi.
+
+147
+00:22:49,819 --> 00:22:50,520
+Özür dilerim.
+
+148
+00:22:50,659 --> 00:22:53,159
+Tamam i eşittir, j eşittir sıfır kalsın burada.
+
+149
+00:22:53,159 --> 00:22:54,899
+İ küçüktür.
+
+150
+00:22:57,299 --> 00:23:03,319
+NV-1 olduğu sürece diyeceğim ki
+
+151
+00:23:03,319 --> 00:23:05,039
+şimdi
+
+152
+00:23:05,039 --> 00:23:11,640
+grafın j. gözündeki U'yu aldım.
+
+153
+00:23:13,119 --> 00:23:16,520
+Graf dizisinin j. adresindeki V'yi aldım.
+
+154
+00:23:16,619 --> 00:23:17,740
+Bunların durumuna bakacağım.
+
+155
+00:23:18,099 --> 00:23:19,280
+Şimdi durumlar neydi?
+
+156
+00:23:19,280 --> 00:23:20,119
+Bakalım.
+
+157
+00:23:20,119 --> 00:23:30,700
+Şimdi birinci durumumuz mesela grafın birinci düğümünün sıfır olsun ikinci düğümü de beş olsun bu ikisi.
+
+158
+00:23:31,259 --> 00:23:35,539
+Yani UU'muz sıfır VV'mizin de beş olduğu durum.
+
+159
+00:23:36,119 --> 00:23:45,440
+Eğer label UU ile label VV'nin toplamı sıfırsa ikisi de sıfır demektir.
+
+160
+00:23:45,440 --> 00:23:48,720
+Bu sıfırsa bu sıfırsa ikisine toplamı sıfır demektir.
+
+161
+00:23:48,719 --> 00:23:59,719
+O zaman ne yapacağım? Bunları doğrudan minimum spanning tree'ye alacağım. Minimum spanning tree'imin iyinci şeyisi.
+
+162
+00:24:03,763 --> 00:24:10,923
+U olacak. İinci bağlantısı UU'dan
+
+163
+00:24:11,763 --> 00:24:13,363
+VV'yi olacak.
+
+164
+00:24:15,643 --> 00:24:17,583
+Ve bunun değeri de
+
+165
+00:24:21,236 --> 00:24:24,736
+graph G'nin weight'i olacak.
+
+166
+00:24:26,795 --> 00:24:28,995
+Ve label dizisinde de
+
+167
+00:24:36,372 --> 00:24:48,372
+o andaki label no neyse o değeri ile etiketleyeceğiz ve minimum spanning tree'de bir tane düğüm bitmiş olacak.
+
+168
+00:24:48,372 --> 00:24:58,872
+Tamam mı? Yani ne oldu? Mesela şöyle göstereyim hemen şu label diziniz. Diyelim ki işte 0, şurası da 5. düğüm olsun.
+
+169
+00:24:58,872 --> 00:25:15,611
+Label dizinizde 0 ile 5'i 1 yaptım. Ondan sonra minimum spanning tree'de de dedim ki minimum spanning tree'nin 0'ıncısının U değeri 0'dır. 0'ıncısının V değeri 5'tir.
+
+170
+00:25:15,611 --> 00:25:36,831
+işte bunun weighti de diyelim ki işte şu 3'müş 3'tür bunu bu şekilde yaptım oldu mu? Yani bu şekilde minimum spent tree'ye bir düğümü ekledim şey bir edge'i ekledim ve label dizisinde de bunları aynı etiketle burada gördüğünüz gibi bir bir etiketledim.
+
+171
+00:25:36,831 --> 00:25:55,611
+şu anda ilk yaptığım durum bu. Bu ne zaman yaptığım durum? İkisinin toplamı sıfırsa yani ikisi de etiketsizse daha hiç grafa minimum spanning tree alt graflarından birine henüz alınmamışsa. Bu durumda yaptım tamam mı?
+
+172
+00:25:55,611 --> 00:25:58,171
+Şimdi ikinci durum ne?
+
+173
+00:25:59,592 --> 00:26:04,071
+If label, pardon.
+
+174
+00:26:14,355 --> 00:26:39,675
+label UU farklıdır. Label VV ise yani nedir? Mesela şu etikette sıfırın etiketi bir, beşin etiketi diyelim ki iki ise. Şimdi eğer bu ikisinin etiketi birbirinden farklıysa bir kere bunları da minimum spanning tree'ye alacağız demektir.
+
+175
+00:26:39,675 --> 00:26:43,675
+Çünkü ikisinin etiketi farklıysa aynı minimum spanning tree'de duracaklar.
+
+176
+00:26:44,315 --> 00:26:53,355
+O zaman minimum spanning tree'nin U düğümüne UU'yu aldık, V düğümüne VV'yi aldık.
+
+177
+00:26:53,355 --> 00:26:57,616
+Yani işte ne bileyim bu sefer de diyelim ki 0 ile 5 bağlıydı.
+
+178
+00:26:58,655 --> 00:27:00,795
+Şimdi burada işte 0 ile 2.
+
+179
+00:27:02,015 --> 00:27:06,175
+Bunun düğüm değeri 1, bunun düğüm değeri de 3 olsun mesela.
+
+180
+00:27:06,175 --> 00:27:10,315
+bu ikisini birbirine bağlamaya karar veriyorum şu anda.
+
+181
+00:27:10,315 --> 00:27:12,795
+O zaman minimum spinning tree'e neyi alacağım?
+
+182
+00:27:12,935 --> 00:27:14,235
+Sıfır değerini alacağım.
+
+183
+00:27:15,216 --> 00:27:16,675
+Ve diyeceğim ki iki değerini alacağım.
+
+184
+00:27:16,815 --> 00:27:18,595
+Yani bu edge'i de al demek istiyorum.
+
+185
+00:27:19,116 --> 00:27:20,235
+Sıfırla beşi almıştım.
+
+186
+00:27:20,315 --> 00:27:22,195
+Şimdi sıfırla ikiyi de al demek istiyorum.
+
+187
+00:27:23,135 --> 00:27:26,175
+O yüzden minimum spinning tree'nin weight'i de
+
+188
+00:27:26,175 --> 00:27:34,216
+graph'ın j. düğümünün weight'i olacak.
+
+189
+00:27:36,175 --> 00:27:42,675
+ve i'yi bir arttıracağım çünkü minimum spending diye bir düğüm daha aldım.
+
+190
+00:27:42,675 --> 00:27:48,915
+Şimdi gelelim bu sıfırla ikinin etiketlerinin niye farklı olduğuna.
+
+191
+00:27:49,216 --> 00:27:52,216
+Şimdi burayı siliyorum çünkü yere ihtiyacım var artık.
+
+192
+00:27:53,095 --> 00:27:55,335
+Etiketler niye farklı olmuş olabilir?
+
+193
+00:27:55,635 --> 00:27:57,835
+İki tane sebebi var dedik az önce.
+
+194
+00:27:58,175 --> 00:28:02,675
+Dedik ki etiketlerin farklı olmasının bir sebebi...
+
+195
+00:28:02,675 --> 00:28:26,096
+Bir sebebi birisi sıfırdır. Yani diyelim ki x'in etiketi 2 ama y'nin etiketi sıfırdır. Birinci sebep bu. İkinci sebep de örneğin x'in etiketi 2'dir, y'nin etiketi 3'tür. İkisinden biri değil mi?
+
+196
+00:28:26,095 --> 00:28:44,055
+Yani iki etiketin farklı olmasının sebebi şimdi şu label bizizde 0 diyelim ki şu da 5 0'ın etiketi 2 5'in etiketi 0 ya böyle bir durum vardır ya da işte 0'ın etiketi 2 5'in etiketi 4 mesela böyle bir durum vardır.
+
+197
+00:28:44,055 --> 00:28:49,656
+her iki durumda da bu bağlantının da minimum spinning tree'ye eklenmesi gerekiyor.
+
+198
+00:28:49,656 --> 00:28:59,095
+O zaman demek ki şimdi o zaman şurada aynı sayfaya çalışıyorum ki hepsini birlikte görün diye bunu anlamamız lazım.
+
+199
+00:28:59,235 --> 00:29:01,775
+Acaba etiketlerden birisi sıfır mı diye.
+
+200
+00:29:01,915 --> 00:29:03,016
+Şimdi onu kontrol edelim.
+
+201
+00:29:03,175 --> 00:29:08,796
+Eğer label UU örneğin sıfırsa tamam mı?
+
+202
+00:29:08,796 --> 00:29:29,555
+Bu o zaman çok kolay. Label UU sıfırsa yapacağınız tek şey label UU eşittir label VV diyerek öbürünün etiketiyle etiketlemek.
+
+203
+00:29:29,555 --> 00:29:30,876
+İkinci seçenek ne?
+
+204
+00:29:31,656 --> 00:29:44,255
+If label VV0'sa yani not dediğiniz zaman biliyorsunuz şeyden C'den bunu hatırlıyorsunuz aldığınız programlama derslerinde.
+
+205
+00:29:44,255 --> 00:29:47,135
+O zaman label VV eşittir.
+
+206
+00:29:47,835 --> 00:29:49,315
+Label UU diyeceğiz.
+
+207
+00:29:49,455 --> 00:29:51,156
+Öbürünün etiketiyle etiket diyeceğiz.
+
+208
+00:29:51,275 --> 00:29:54,736
+Çünkü birisi sıfırsa demek ki öbürü başka bir şey.
+
+209
+00:29:56,195 --> 00:29:56,535
+Değil mi?
+
+210
+00:29:56,815 --> 00:29:58,555
+O zaman yapmam gereken şey bu.
+
+211
+00:29:58,555 --> 00:30:11,175
+Şimdi üçüncü durumda ikisinin etiketi farklı demektir. O zaman union diyorum. Bunu buraya yazmayacağım. Bir fonksiyon halinde olsun.
+
+212
+00:30:13,779 --> 00:30:18,599
+union'da UU düğümüyle VV düğümünü bağlayacağım.
+
+213
+00:30:20,760 --> 00:30:23,499
+Ve böylece bu bitti.
+
+214
+00:30:24,019 --> 00:30:25,479
+Label şurası bitti.
+
+215
+00:30:25,759 --> 00:30:31,319
+Label UU label VV'den farklıdır kısmı bitti.
+
+216
+00:30:32,319 --> 00:30:34,419
+Üçüncü seçenek de neydi?
+
+217
+00:30:34,700 --> 00:30:37,859
+UU'nun label VV'ye eşit olma durumu.
+
+218
+00:30:37,859 --> 00:30:47,199
+bu. Dolayısıyla biz bununla ilgilenmediğimiz için j artı artı diyerek bir sonraki, grafttaki bir sonraki düğme geçmiş olacağız.
+
+219
+00:30:49,320 --> 00:30:51,659
+Buraya kadar açmak istediğiniz bir şey var mı?
+
+220
+00:30:54,099 --> 00:30:55,439
+Şimdi demek ki ne yaptık?
+
+221
+00:30:56,540 --> 00:31:00,059
+Aldık iki tane düğümü, şöyle iki tane düğümü aldık.
+
+222
+00:31:00,059 --> 00:31:03,099
+Yani şöyle hemen bir daha şöyle yapayım ben size.
+
+223
+00:31:04,540 --> 00:31:06,079
+Güzel de bir renk olsun.
+
+224
+00:31:06,659 --> 00:31:06,979
+Şöyle.
+
+225
+00:31:07,859 --> 00:31:13,179
+Şu sizin U düğümünüz, şu da sizin V düğümünüz, aradaki bağlantı da 5.
+
+226
+00:31:13,759 --> 00:31:16,339
+İki düğümü aldık, bunların etiketlerine baktık.
+
+227
+00:31:16,439 --> 00:31:20,079
+U düğümü diyelim ki ikinci düğüm, V düğümü de üçüncü düğüm olsun.
+
+228
+00:31:20,879 --> 00:31:22,539
+Bu da label dizimiz olsun.
+
+229
+00:31:23,339 --> 00:31:25,599
+İkinci düğüm şurada, üçüncü düğüm de burada.
+
+230
+00:31:26,239 --> 00:31:28,879
+Diyelim ki birinin değeri 0, öbürünün değeri de 0.
+
+231
+00:31:28,879 --> 00:31:30,299
+Şimdi birinci seçenek bu.
+
+232
+00:31:30,779 --> 00:31:34,939
+İkisi de 0 ise demek ki bunlar daha minimum spending liraya bağlanmamış.
+
+233
+00:31:35,059 --> 00:31:36,559
+Hemen bağladım, bu en kolayı.
+
+234
+00:31:36,559 --> 00:31:51,180
+İkisinin de birbirinden farklıysa bunlar da minimum spanning tree'e bağlanmalı. Bunu da bağladım. Ama bir de neyi kontrol etmem lazım? Yani diyelim ki bu bir, bu iki ise bu ikisini birbirine bağladıysa ikileri bir yapmam lazım.
+
+235
+00:31:51,180 --> 00:32:03,619
+O yüzden bunu anlamak için de dedim ki acaba birisi sıfır mı? Label O sıfırsa onu hemen diğerinin etiketiyle etiketledim. Label V ve sıfırsa onu diğerinin etiketiyle ekledim.
+
+236
+00:32:03,619 --> 00:32:10,979
+İkisi de 0 değilse yani diyelim ki birisi işte şöyle baktığınız zaman şöyle bir daha göstereyim.
+
+237
+00:32:11,979 --> 00:32:16,039
+Diyelim ki 2 numaralı düğümle 3 numaralı düğüme bakıyorsunuz.
+
+238
+00:32:16,099 --> 00:32:19,259
+Birinin değeri 2, birinin değeri 5 ise o zaman ne yapmanız lazım?
+
+239
+00:32:19,339 --> 00:32:20,559
+Mesela 4 de 5'miş.
+
+240
+00:32:20,899 --> 00:32:22,940
+Bütün 5'leri 2 yapmanız lazım.
+
+241
+00:32:23,399 --> 00:32:26,759
+Onun için de böyle bir union function'ı yazacağız şimdi birlikte.
+
+242
+00:32:27,759 --> 00:32:31,159
+Ve dedim ki onu yapalım, yapalım ve birleştirelim.
+
+243
+00:32:31,159 --> 00:32:36,799
+Buradaki amacımız iki farklı mesela şöyle az önce gördük bunları.
+
+244
+00:32:36,979 --> 00:32:39,779
+Mesela A, B, C'yi bağlamışız.
+
+245
+00:32:40,339 --> 00:32:42,339
+Burada da G ile H'yi bağlamışız.
+
+246
+00:32:42,899 --> 00:32:44,759
+Bunlar iki ayrı alt graf.
+
+247
+00:32:45,359 --> 00:32:49,059
+C, G bağlantısı gelince bunlar tek olacaklar.
+
+248
+00:32:50,219 --> 00:32:52,059
+Aynı alt grafa bağlanacaklar.
+
+249
+00:32:52,659 --> 00:32:57,939
+Bu birleştirme için mesela o zaman bunun etiketi dizi olarak baktığımızda
+
+250
+00:32:57,940 --> 00:33:04,860
+A'yı, B'yi, C'yi, şurada da G'le H olsun, G'le H'yi görelim.
+
+251
+00:33:05,360 --> 00:33:09,940
+Mesela G'le H, 3'le etiketli, A, B, C'de 1'le etiketli.
+
+252
+00:33:10,419 --> 00:33:13,500
+C ile G'yi bağladığınız anda ne olması lazım?
+
+253
+00:33:14,260 --> 00:33:17,839
+G'nin ve H'nin ikisinin birden 1 olması lazım.
+
+254
+00:33:17,979 --> 00:33:20,440
+Çünkü artık aynı alt grafın içerisindeler.
+
+255
+00:33:20,820 --> 00:33:22,899
+Şimdi o zaman onu nasıl yapacağız? Ona bakalım.
+
+256
+00:33:22,899 --> 00:33:24,580
+Ne yapacağız?
+
+257
+00:33:24,580 --> 00:33:30,279
+label dizimizi değiştireceğiz.
+
+258
+00:33:32,339 --> 00:33:35,199
+Number of vertex düğüm sayısı bu.
+
+259
+00:33:39,199 --> 00:33:41,240
+Kimle kimi bağlayacağız?
+
+260
+00:33:41,380 --> 00:33:45,360
+UU düğümüyle VV düğümünü birbirine bağlayacağız.
+
+261
+00:33:45,479 --> 00:33:46,680
+Şimdi bunu sağlayacağız.
+
+262
+00:33:46,760 --> 00:33:47,160
+Ne yapacağız?
+
+263
+00:33:47,260 --> 00:33:48,919
+Aslında çok basit bir şey yapacağız.
+
+264
+00:33:48,919 --> 00:34:04,419
+label dizisindeki eğer herhangi bir label UU değerine sahipse
+
+265
+00:34:05,172 --> 00:34:34,012
+onun değerine VV yapacağım ya da tam tersi hiç fark etmez. VV değerine sahipse onun değerine UU yapacağım. Böylece ne olmuş oldu? Yani UU 1'di, VV'de 3'tü şu örnek için. Dedik ki eğer değeri yok tam tersi neyse fark etmez. Değeri dedik 1 ise 3 yap dedik. Mesela bunları 3 yapmış olduk şu anda benim yazdığıma göre.
+
+266
+00:34:34,012 --> 00:34:36,131
+bunlar böyle 3 yapmış olduk.
+
+267
+00:34:36,212 --> 00:34:37,651
+Baya tam tersi fark etmez.
+
+268
+00:34:37,771 --> 00:34:44,331
+U, U, 3 ise, V, V'de, 1 ise yaptığımız şey bütün 3'leri 1 yapmak olacak.
+
+269
+00:34:44,512 --> 00:34:44,672
+Niye?
+
+270
+00:34:44,672 --> 00:34:53,331
+Çünkü şu bağlantıyla birlikte artık bu ikisi şöyle iki alt graf iken tek bir alt graf haline gelmiş olacaklar.
+
+271
+00:34:54,591 --> 00:34:56,771
+Buraya kadar sormak istediğiniz var mı?
+
+272
+00:34:59,091 --> 00:35:00,252
+Sormak istediğiniz bir şey var mı?
+
+273
+00:35:06,612 --> 00:35:24,191
+Şimdi kruz kalda sıralama yaptığınız için aslında edge'leri sıralıyorsunuz. Edge'leri sıraladığınız için aslında E tane edge var.
+
+274
+00:35:24,191 --> 00:35:38,231
+sıralama yaptığımız için aslında karmaşıklık E log V oluyor. V tane düğüm var, E tane H var. Sıralama karmaşıklığı da enlogendir ya aslında.
+
+275
+00:35:38,871 --> 00:35:45,631
+E log V oluyor. Şeye göre daha iyi aslında ama orada da şöyle bir şey var.
+
+276
+00:35:45,631 --> 00:35:53,871
+Eğer çok fazla bağlantının olduğu bir grafınız varsa orada prim daha başarılı, daha kısa sürede çalışıyor.
+
+277
+00:35:54,191 --> 00:36:06,931
+ama spars bir grafınız varsa yani çok fazla hani şey olmayan çok düğüm var ama bağlantıların daha az olduğu bir grafınız varsa o zaman da kurskal daha iyi çalışıyor.
+
+278
+00:36:06,931 --> 00:36:15,051
+Prim'in sıkıntısı birazcık şeyden kaynaklanıyor. Durmadan bir düğümü birden fazla defa bakılma ihtiyacı var.
+
+279
+00:36:15,051 --> 00:36:39,691
+kurus kaldıysa yani eğer bir [öğrenci] bir A düğümünü ben buradan şey yaptıysam bir daha bağlantıların A ile B ile işin bittiyse tekrar dönüp de A ile B'ye bakmama gerek yok ama şeyde primde her zaman bağlı düğümlerin içerisinde en kısa bağlantıyı bulması gerektiği için onları bir kontrol etme ihtiyacı duyuyor aslında.
+
+280
+00:36:39,691 --> 00:36:49,011
+baktığınız zaman ikisi arasında yani bir düğümü birden fazla prim algoritmasının gezme ihtiyacı var.
+
+281
+00:36:49,011 --> 00:37:02,171
+Halbuki Kruskal'da öyle bir şey yok. Başka ne söyleyebilirim? Evet işte şeylerde bağlantıların çok olduğu graflarda prim daha iyi çalışıyor.
+
+282
+00:37:02,171 --> 00:37:05,112
+Sparscraft'da Cruzcal'da ait çalışıyor.
+
+283
+00:37:06,531 --> 00:37:14,972
+Ondan sonra başka genelde şeylerde bu ağ bağlantılarında ama Cruzcal kullanıyor.
+
+284
+00:37:17,871 --> 00:37:23,631
+Başka o kadar yani söyleyebileceğim ikisi arasında söyleyebileceğim şeyler bunlar.
+
+285
+00:37:23,772 --> 00:37:25,612
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+286
+00:37:29,907 --> 00:37:37,267
+Peki. O zaman on dakika bir orada mısınız?
+
+287
+00:37:39,647 --> 00:37:40,307
+Evet hocam.
+
+288
+00:37:42,387 --> 00:37:58,387
+Bir an bağlantı gitti gibi oldu. Artık şey on kişi dinlemeye bile on kişi geliyor ki bilmiyorum kaçınız gerçekten dinliyorsunuz şöyle bir bakayım. Sizlere kaçınız dinleyebiliyorsunuz hakikaten gittikçe azaldı.
+
+289
+00:37:58,387 --> 00:37:59,428
+Efendim?
+
+290
+00:38:00,248 --> 00:38:01,487
+Buradayız hocam dinliyoruz.
+
+291
+00:38:02,207 --> 00:38:03,628
+Sağ olun çok teşekkür ederim.
+
+292
+00:38:03,928 --> 00:38:08,128
+Peki niye derslerde bu kadar az katılım oluyor sizce?
+
+293
+00:38:08,588 --> 00:38:10,787
+Kapatmadım onu sorayım şey ara vermeden.
+
+294
+00:38:11,387 --> 00:38:12,467
+Onun sebebi ne sizce?
+
+295
+00:38:15,667 --> 00:38:16,448
+Hocam net anlattınız.
+
+296
+00:38:16,448 --> 00:38:17,467
+Siz giriyorsunuz.
+
+297
+00:38:17,567 --> 00:38:17,867
+Efendim?
+
+298
+00:38:18,427 --> 00:38:20,167
+Net anlattığınız için soru olmadı bu sefer.
+
+299
+00:38:21,867 --> 00:38:23,107
+Yok o ayrı.
+
+300
+00:38:23,247 --> 00:38:25,088
+Teşekkür ederim ama niye?
+
+301
+00:38:25,088 --> 00:38:28,448
+yani diğer hoca arkadaşlarımdan da aynı şeyi duyuyorum.
+
+302
+00:38:28,547 --> 00:38:30,067
+Katılım çok az dersler ediyorlar.
+
+303
+00:38:30,387 --> 00:38:31,648
+Niye bu kadar az katılım oluyor?
+
+304
+00:38:31,988 --> 00:38:34,668
+Siz bir fikir üretebiliyor musunuz sebebiyle ilgili?
+
+305
+00:38:35,007 --> 00:38:36,287
+Nerede bir problem var?
+
+306
+00:38:37,607 --> 00:38:42,768
+Hocam herhalde hem yazın gelişi hem de seçim günleri falan insanların tevesi peki yok.
+
+307
+00:38:46,348 --> 00:38:48,128
+Ama haftalardır böyle.
+
+308
+00:38:51,128 --> 00:38:54,007
+Yani bu bugüne özgü bir şey değil.
+
+309
+00:38:55,088 --> 00:39:07,727
+Bayağıdır böyle yani geçen hafta da işte 15 kişi falan vardı. Halbuki ders 90 küsur kişi alıyor. Yani böyle takip etmesi çok mu zor oluyor?
+
+310
+00:39:10,227 --> 00:39:22,187
+Tekrar izleme özgürlüğü ve bilgisayarın önündeyken yapabileceğimiz şeylerden dolayı bence kimse çok girmeye hevesli olmuyor o yüzden.
+
+311
+00:39:22,187 --> 00:39:25,308
+Yani online eğitimin aslında şey laneti bu.
+
+312
+00:39:26,727 --> 00:39:29,988
+Evet biz hiç istemedik aslında online olmasını.
+
+313
+00:39:31,187 --> 00:39:36,067
+Öğrenciler de hiç istemedi çünkü sizinle de daha önce konuşmuştuk.
+
+314
+00:39:36,207 --> 00:39:46,447
+Şey yaşayan COVID döneminde online eğitimi yaşamış olan öğrenciler özellikle üniversitede olsa da üniversiteden liselerde belki daha farklı yürümüştür.
+
+315
+00:39:46,447 --> 00:39:47,967
+Sizler lisedeydiniz o zaman.
+
+316
+00:39:47,967 --> 00:39:57,867
+ama üniversitede öğrenci olup da şey COVID döneminde online eğitimi yaşayan öğrenciler hiç istemediler online olmasını.
+
+317
+00:39:57,867 --> 00:40:01,268
+Biz de istemedik çünkü öğrencinin başarısını çok düşürüyor.
+
+318
+00:40:01,447 --> 00:40:08,747
+Şey not olarak değil şimdi de kopyeden vesaire ötürü öğrenciler eskiye göre tabii ki yüksek not alıyorlar.
+
+319
+00:40:09,047 --> 00:40:16,047
+Orada diyecek bir şey yok ama bir sene sonra çok zayıf oluyorlar ve kendileri de bunun çok farkında oldukları için
+
+320
+00:40:16,047 --> 00:40:22,988
+çok sıkıntısını yaşadıkları için bir sene sonra aldıkları derslerde aslında öğrenciler de hiç istemediler ama
+
+321
+00:40:22,988 --> 00:40:26,527
+neyse yapacak bir şey yok yani bu dönemi böyle tamamlamamız gerekiyor.
+
+322
+00:40:26,527 --> 00:40:32,768
+Peki o zaman 10 dakika ara veriyorum ben. 10 dakika sonra devam ederiz. Teşekkür ederim.
+
+323
+00:50:44,659 --> 00:50:49,519
+Peki, tekrardan devam ediyoruz o zaman.
+
+324
+00:50:52,939 --> 00:50:55,080
+Ekranımı göremezseniz söyleyin lütfen.
+
+325
+00:50:56,159 --> 00:50:57,259
+Görüyorsunuz değil mi şu anda?
+
+326
+00:51:00,859 --> 00:51:02,239
+Görüyor musunuz ekranı?
+
+327
+00:51:06,068 --> 00:51:08,407
+ekran gözükmüyor.
+
+328
+00:51:08,407 --> 00:51:11,347
+Bir daha yapıyorum.
+
+329
+00:51:17,652 --> 00:51:19,991
+bir saniye niye gözüküyor ya bir saniye arkadaş.
+
+330
+00:51:27,092 --> 00:51:31,751
+Tamam, şimdi görüyor olmanız lazım. Aa, yine gözükmüyor. Değil mi? Görmüyorsunuz.
+
+331
+00:51:33,171 --> 00:51:34,592
+Yok hocam, gözükmüyor.
+
+332
+00:51:35,771 --> 00:51:36,871
+Şimdi oldu mu?
+
+333
+00:51:39,071 --> 00:51:40,491
+Şimdi oldu herhalde.
+
+334
+00:51:42,111 --> 00:51:42,531
+Oldu mu?
+
+335
+00:51:43,291 --> 00:51:44,432
+Oldu, evet hocam.
+
+336
+00:51:45,211 --> 00:51:46,551
+Tamam, teşekkürler.
+
+337
+00:51:47,831 --> 00:51:51,012
+Şimdi şey göstereceğim, en kısa yol bulma.
+
+338
+00:51:51,012 --> 00:52:19,272
+aslında en kısa yol bulmanın birden fazla yolu var. Dijkstra algoritmasını göstereceğim ben size ve şeyle göstereceğim aslında bunun da Bradford Search ile yapılan hali var ama konuştuğumuz gibi onu önümüzdeki dönem yapmanın sizler için daha faydalı olacağını düşündüğümüzde ama bugün prim benzeri bir şekilde, prim algoritması
+
+339
+00:52:19,272 --> 00:52:21,711
+benzeri şeklinde yapacağız.
+
+340
+00:52:21,832 --> 00:52:28,432
+Prim algoritması şey yapıyor, minimum spanning tree'yi elde etmek için kullanıyor.
+
+341
+00:52:28,571 --> 00:52:35,911
+Dijkstra buna çok benzer bir şekilde en kısa yolu elde etmek için kullanılan algoritma.
+
+342
+00:52:35,911 --> 00:52:44,511
+İkisinde de aynı mantıkla işte herhangi bir başlangıç düğümünden en küçük bağlantıları bularak ilerlemek var.
+
+343
+00:52:44,511 --> 00:52:55,672
+şeylerde Dijkstra algoritması hem yönlü hem yönsüz graflarda kullanılabiliyor ama mutlaka şey olması gerekiyor.
+
+344
+00:52:57,791 --> 00:53:05,672
+Edge'lerin pozitif olması gerekiyor ve Dijkstra bu algoritmayla 1972 yılında Turing Award'u kazanmış.
+
+345
+00:53:05,671 --> 00:53:18,611
+çok ünlü ve düşünün 1972'de ortaya konmuş olmasına rağmen hala kullanılan bilinen bir algoritma.
+
+346
+00:53:19,731 --> 00:53:34,071
+Şimdi problem şu verilen bir grafta bir A düğümünden bir B düğümle en kısa yolun bulunmasını için nasıl bir çözüm üretebiliriz?
+
+347
+00:53:35,672 --> 00:53:39,731
+Bunu Dijkstra algoritması ile nasıl yapıldığına bakacağız birlikte.
+
+348
+00:53:48,724 --> 00:53:52,883
+Şimdi şöyle bir önce şey yapacağım, graf çizeceğim size.
+
+349
+00:55:55,699 --> 00:55:58,959
+Evet bayağı karmaşık böyle bir grafımız olduğunu varsayalım.
+
+350
+00:55:58,959 --> 00:56:04,379
+Şimdi yapmak istediğimiz şey şöyle bir tane S düğümümüz var.
+
+351
+00:56:04,939 --> 00:56:07,959
+Source düğümümüz, T de target düğümümüz.
+
+352
+00:56:08,059 --> 00:56:12,199
+S düğümünden T düğümüne gitmeye çalışıyoruz.
+
+353
+00:56:14,899 --> 00:56:19,159
+Şimdi burada yaptığımız şey şu aslında.
+
+354
+00:56:19,159 --> 00:56:28,299
+Önce diyoruz ki herhangi bir düğme başlangıçta gelmek için gerekli olan mesafe sonsuz olsun.
+
+355
+00:56:28,579 --> 00:56:35,079
+Yani bir ikinci düğme çünkü bilmiyoruz yani ikinci düğme nereden gelirsek daha iyi olur bilmiyoruz.
+
+356
+00:56:35,159 --> 00:56:42,159
+O yüzden maksint yani aslında hani sonsuz dediğimiz şey olabilecek büyük bir değer atıyoruz başlangıçta.
+
+357
+00:56:42,159 --> 00:56:45,380
+Şimdi en kısa yolu bulmayı çalışıyoruz ya.
+
+358
+00:56:45,560 --> 00:56:46,339
+Yani şunu demek istiyorum.
+
+359
+00:56:46,479 --> 00:56:51,159
+Diyelim ki üçüncü düğme ben şöyle iki üzerinden de gelebilirim.
+
+360
+00:56:52,259 --> 00:56:54,159
+Şöyle altı üzerinden de gelebilirim.
+
+361
+00:56:55,040 --> 00:57:00,939
+İşe ilk başladığım zaman inişal olarak ikinci düğme nereden gelirsem en kısa olur.
+
+362
+00:57:01,060 --> 00:57:03,259
+Dördüncü düğme nereden gelirsem en kısa olur.
+
+363
+00:57:03,259 --> 00:57:12,019
+Bunu bilmediğim için başlangıçta bütün düğümlere ulaşma mesafesini sonsuz yapıyorum.
+
+364
+00:57:12,159 --> 00:57:29,100
+Bir tek kim sıfır? Source sıfır. Çünkü Source'un kendisine olan mesafesi sıfır aslında. Ama ikiye ulaşma, Source'tan yola çıkıp da ikiye ulaşma mesafesi şey.
+
+365
+00:57:29,100 --> 00:57:33,100
+Şimdi o zaman buna göre başlatıyorum şeyi.
+
+366
+00:57:33,820 --> 00:57:39,180
+Sorstan yola çıkacağımıza göre yani başlangıç düğümümüz şöyle onu da şöyle yapayım.
+
+367
+00:57:39,339 --> 00:57:45,339
+Sorce olduğuna göre prim algoritması mantığıyla düşünüyorum ve şöyle diyorum.
+
+368
+00:57:45,740 --> 00:57:48,220
+Şimdi şuraya bakayım şuraya şöyle bakayım.
+
+369
+00:57:48,899 --> 00:57:54,100
+En kısa mesafe yani sorstan yola çıkılabilecek en kısa mesafe nedir?
+
+370
+00:57:54,880 --> 00:57:56,539
+Onu bulayım diyorum.
+
+371
+00:57:56,539 --> 00:57:57,019
+Nedir?
+
+372
+00:57:57,019 --> 00:57:59,740
+sorstan ikiye olan mesafe dokuz.
+
+373
+00:58:00,179 --> 00:58:01,380
+O zaman diyorum ki
+
+374
+00:58:01,380 --> 00:58:03,759
+yani bunu sorstan yola çıktığımda
+
+375
+00:58:03,759 --> 00:58:06,500
+yapabileceğim daha kısa hiçbir şey olmadığına göre
+
+376
+00:58:06,500 --> 00:58:08,239
+o zaman diyorum ben
+
+377
+00:58:08,239 --> 00:58:11,679
+sorstan önce ikiye gideyim.
+
+378
+00:58:11,839 --> 00:58:13,699
+O zaman ikiye olan mesafe
+
+379
+00:58:13,699 --> 00:58:15,640
+artık sonsuz değil.
+
+380
+00:58:16,000 --> 00:58:17,699
+Dokuz olsun diyorum.
+
+381
+00:58:18,220 --> 00:58:20,780
+Şimdi oradan yola devam edeceğim.
+
+382
+00:58:21,879 --> 00:58:25,319
+Şimdi ikiden gidebileceğim mesafe
+
+383
+00:58:25,319 --> 00:58:26,959
+şuradan baktığınız zaman
+
+384
+00:58:26,959 --> 00:58:28,439
+Şöyle 24.
+
+385
+00:58:29,780 --> 00:58:36,739
+Source'dan hala bir 14 var, bir 15 var gidebileceğim mesafeler.
+
+386
+00:58:37,839 --> 00:58:41,459
+O zaman diyorum ki tamam diyorum.
+
+387
+00:58:42,920 --> 00:58:44,519
+İkinci olarak diyorum.
+
+388
+00:58:45,359 --> 00:58:47,739
+Source'dan 6'ya gitmeyi alayım.
+
+389
+00:58:47,739 --> 00:58:57,199
+ve o zaman buradaki mesafede 14 olsun diyorum.
+
+390
+00:58:57,339 --> 00:59:01,779
+Şimdi burada şöyle 6 girdi işin içine.
+
+391
+00:59:01,779 --> 00:59:06,159
+5 var, 30 var, 18 var.
+
+392
+00:59:06,379 --> 00:59:09,799
+Şimdi baktığımız zaman şöyle hesaplıyoruz bakın şimdi.
+
+393
+00:59:10,239 --> 00:59:17,379
+Diyoruz ki sorusdan şey için nedir?
+
+394
+00:59:17,739 --> 00:59:20,499
+Bir dakika şunu alayım.
+
+395
+00:59:22,339 --> 00:59:28,259
+Sorsadan 7'ye gitmek için bakın 6 üzerinden gidersem şu mesafe 19 olur diyorum.
+
+396
+00:59:28,919 --> 00:59:34,479
+Sorsadan 3'e gitmek için buradan gidersem 32 oluyor pardon.
+
+397
+00:59:35,239 --> 00:59:37,420
+Buradan gidersem 33 oluyor.
+
+398
+00:59:37,979 --> 00:59:38,920
+Şimdilik durum bu.
+
+399
+00:59:39,999 --> 00:59:42,959
+Ondan sonra olabilecek en kısa şu anda durum.
+
+400
+00:59:43,539 --> 00:59:46,659
+Sorsadan 7'ye gitmek için 15.
+
+401
+00:59:46,659 --> 00:59:55,059
+O zaman diyorum ki 15'i de alayım ve burayı 15 yapayım.
+
+402
+00:59:55,476 --> 01:00:01,055
+Şimdi elimde bunlar varken geri kalanlarına bakıyorum.
+
+403
+01:00:02,315 --> 01:00:06,316
+Diyorum ki kimleri alabilirim?
+
+404
+01:00:06,735 --> 01:00:11,715
+2'ye aldım, 6'yı aldım, 7'ye aldım.
+
+405
+01:00:12,835 --> 01:00:19,595
+Diyorum ki 3'e gelişe bakalım.
+
+406
+01:00:19,595 --> 01:00:23,976
+3'e gelişte ağırlıklar şöyle değişti şu anda.
+
+407
+01:00:23,976 --> 01:00:27,416
+sorstan 3'e gidiş
+
+408
+01:00:27,416 --> 01:00:29,295
+şu adayları yazayım
+
+409
+01:00:29,295 --> 01:00:30,255
+şimdi ben size
+
+410
+01:00:30,255 --> 01:00:32,075
+sorstan 3'e gidiş
+
+411
+01:00:32,075 --> 01:00:34,556
+9, 24 daha 33
+
+412
+01:00:34,556 --> 01:00:37,755
+ama şey üzerinden
+
+413
+01:00:37,755 --> 01:00:38,876
+gidersem
+
+414
+01:00:38,876 --> 01:00:40,595
+6 üzerinden gidersem
+
+415
+01:00:40,595 --> 01:00:41,816
+32
+
+416
+01:00:41,816 --> 01:00:44,696
+sorstan
+
+417
+01:00:44,696 --> 01:00:47,095
+5'e gidiş
+
+418
+01:00:47,095 --> 01:00:48,115
+44
+
+419
+01:00:48,115 --> 01:00:50,236
+6 bağlandığında
+
+420
+01:00:50,236 --> 01:00:52,836
+ama 7 üzerinden gidersem
+
+421
+01:00:52,836 --> 01:00:54,115
+35
+
+422
+01:00:54,115 --> 01:00:56,716
+şu an için.
+
+423
+01:00:59,095 --> 01:01:00,675
+Şimdi o zaman hangisini
+
+424
+01:01:00,675 --> 01:01:02,496
+almak doğru olur?
+
+425
+01:01:03,556 --> 01:01:04,115
+Sorsan
+
+426
+01:01:04,115 --> 01:01:06,615
+T'ye gidiş de şu an için 7
+
+427
+01:01:06,615 --> 01:01:08,476
+üzerinden mi mümkün?
+
+428
+01:01:08,935 --> 01:01:10,575
+Ve şu an için 59.
+
+429
+01:01:10,976 --> 01:01:12,516
+Durum bu. Adaylar bunlar.
+
+430
+01:01:12,976 --> 01:01:14,895
+Şimdi bu adayların içerisinden hangisini
+
+431
+01:01:14,895 --> 01:01:16,795
+almak doğru? Baktığınız zaman
+
+432
+01:01:16,795 --> 01:01:18,675
+5'e gidiş 35
+
+433
+01:01:18,675 --> 01:01:20,175
+3'e gidiş 32
+
+434
+01:01:20,175 --> 01:01:21,556
+T'ye gidiş 59
+
+435
+01:01:21,556 --> 01:01:26,636
+O zaman yapmanız gereken şey 32'yi almak.
+
+436
+01:01:26,736 --> 01:01:33,216
+O zaman diyorum ki şimdi 2'yi almıştım şöyle, 6'yı almıştım böyle, 7'yi almıştım böyle.
+
+437
+01:01:33,696 --> 01:01:37,856
+O zaman 3'ü alayım diyorum ve 3'ün şeyi 32 oldu.
+
+438
+01:01:38,395 --> 01:01:45,736
+Source'tan yola çıktığınızda şöyle mesafesi, 3'e geliş mesafesi 32 oldu.
+
+439
+01:01:46,236 --> 01:01:49,556
+Ben şimdi target'a en kısa şekilde ulaşmaya çalışıyorum.
+
+440
+01:01:49,555 --> 01:02:00,655
+Şimdi baktığınız zaman şuradan gelirsem 32 19 daha ne oldu burası şimdi 51 oldu şöyle baktığınız zaman.
+
+441
+01:02:03,395 --> 01:02:09,875
+Şimdi şeye bakıyorum 3'ten gidebileceğim neresi var başka diye 3'ten gidebileceğim.
+
+442
+01:02:10,015 --> 01:02:13,595
+3'e 6 üstünden olunca 32 oluyordu hocam.
+
+443
+01:02:14,675 --> 01:02:15,055
+Efendim?
+
+444
+01:02:15,655 --> 01:02:19,476
+3'e 6 üstünden gidince 32 oluyor.
+
+445
+01:02:19,556 --> 01:02:22,856
+3'e 6 üzerinden gidemiyorsun ki.
+
+446
+01:02:24,595 --> 01:02:27,796
+14 artı 18 32 ediyor.
+
+447
+01:02:29,516 --> 01:02:30,455
+Aa pardon.
+
+448
+01:02:30,636 --> 01:02:31,675
+2 üstünden gittik ya.
+
+449
+01:02:31,696 --> 01:02:33,576
+24 33 oluyor doğru söylüyorsun.
+
+450
+01:02:33,696 --> 01:02:37,895
+Evet evet pardon doğru ben yanıldım şunu kaldırıyorum çok haklısın.
+
+451
+01:02:39,315 --> 01:02:42,156
+Eyvah eyvah orayı inşallah bozmadan yaparım.
+
+452
+01:02:42,556 --> 01:02:44,716
+Şurası haklısın şöyleydi.
+
+453
+01:02:45,356 --> 01:02:48,716
+32 şeyden oluyor 6 üzerinden gidince oluyor çok doğru söylüyorsun.
+
+454
+01:02:48,715 --> 01:03:00,115
+Ben orada hata yaptım. Şöyle 32 şöyle tamam şu anda şöyle 6 üzerinden gidersem 32 etti.
+
+455
+01:03:01,015 --> 01:03:05,035
+Şimdi 3'ü aldığıma göre 3'den nerelere gidebileceğine bakıyorum.
+
+456
+01:03:05,035 --> 01:03:07,035
+Şimdi 3'den 5'e gidebilirim.
+
+457
+01:03:07,655 --> 01:03:19,996
+32, 5'in uzunluğu 2 olduğu için, 5'e gidiş bağlantısı 2 olduğu için bu 34 etti o zaman.
+
+458
+01:03:21,455 --> 01:03:24,215
+Ondan sonra 3'den T'ye gidebilirim.
+
+459
+01:03:24,655 --> 01:03:27,035
+32, 19 daha o da 51 etti.
+
+460
+01:03:27,715 --> 01:03:30,315
+O zaman onlara bakmam lazım.
+
+461
+01:03:30,776 --> 01:03:33,515
+Şimdi 5'e 34 ile gidiyorum.
+
+462
+01:03:33,515 --> 01:03:38,195
+4'e şu an için gidemiyorum hala daha. 4'e doğrudan gelen bir bağlantı yok.
+
+463
+01:03:38,315 --> 01:03:39,775
+T'ye de 51'le gidebiliyorum.
+
+464
+01:03:41,175 --> 01:03:43,415
+5'e 7'den 35'le geliniyordu.
+
+465
+01:03:44,455 --> 01:03:48,115
+4'den 4'de geliniyordu.
+
+466
+01:03:48,655 --> 01:03:50,815
+O zaman demek ki neyi kabul edeceğim ben?
+
+467
+01:03:51,295 --> 01:03:54,235
+5'e 2 üzerinden gelmeyi kabul edeceğim şöyle.
+
+468
+01:03:55,411 --> 01:04:15,512
+iki üzerinden gelmeyi kabul edeceğim ve böylece 34 oldu 5'e gelişecek. Şimdi 5'e geldiğim zaman yeni aday mesafeler şöyle 5'ten doğru da gidebilirim 34, 11 daha 45 eder. Birincisi bu.
+
+469
+01:04:15,512 --> 01:04:20,272
+5'ten target'a gidebilirim.
+
+470
+01:04:20,272 --> 01:04:25,651
+34, 16 daha 50 eder.
+
+471
+01:04:26,231 --> 01:04:27,252
+Değil mi?
+
+472
+01:04:27,691 --> 01:04:29,292
+6, 4 daha 50 eder.
+
+473
+01:04:29,792 --> 01:04:33,672
+O zaman şimdi 5'ten 4'e gideyim.
+
+474
+01:04:34,151 --> 01:04:36,391
+Şeyi o, mantıklısı o.
+
+475
+01:04:37,032 --> 01:04:38,471
+Baktığım zaman.
+
+476
+01:04:41,191 --> 01:04:44,132
+O zaman 5'ten 4'e gidiyorum şimdi.
+
+477
+01:04:45,511 --> 01:05:06,992
+seçelim. 5'ten 4'e gittim. Ve 5'ten 4'e gidince şey bağlantısı pardon onu çizmeme hiç gerek yok. 45 çünkü zaten. 34, 11 daha. 45 etti. Şimdi o zaman şöyle bakacak olursak bağlantılara da bakacak olursak ne oldu?
+
+478
+01:05:06,992 --> 01:05:12,051
+Şimdi şöyle bakalım.
+
+479
+01:05:12,752 --> 01:05:16,871
+Şuradan source'dan 6'ya geldik 14.
+
+480
+01:05:17,471 --> 01:05:21,952
+Buraya geldik 32, 3'e geldik 32, 5'e geldik 34.
+
+481
+01:05:22,691 --> 01:05:24,772
+Ve 4'e gittik 45.
+
+482
+01:05:25,032 --> 01:05:27,691
+Yani 4'e gelme yolumuz aslında şöyle.
+
+483
+01:05:28,252 --> 01:05:31,712
+Source'dan 6'ya geldik 14.
+
+484
+01:05:34,152 --> 01:05:36,411
+6'dan 3'e geldik 18.
+
+485
+01:05:36,991 --> 01:06:06,411
+3'den 5'e geldik 2, 5'den 4'e geldik 11 ve sorsten 4'e geliş yolumuz şey şöyle hepsini sırayla yazacak olursak aslında şu andaki sırayla sorsten 2'ye geldik 9, sorsten 6'ya geldik 14, sorsten 7'ye geldik 15,
+
+486
+01:06:06,992 --> 01:06:24,932
+Şimdi şu anda durum şu 6'dan 3'e geldik. 18 olduğu için 32 etti. 3'den 5'e geldik. 2 olduğu için 34 etti. 5'den 4'e geldik. 11 olduğu için 45 etti.
+
+487
+01:06:24,932 --> 01:06:37,051
+yani 4'e geldiğimizde 45, 5'e geldiğimizde 34, 3'e geldiğimizde 32 bu vaziyetteyiz.
+
+488
+01:06:37,132 --> 01:06:38,331
+Şu andaki durumumuz bu.
+
+489
+01:06:39,331 --> 01:06:53,392
+Şimdi burası 34 olunca pardon T45 olunca 4'den gelmeye kalksak burası 51 ediyor.
+
+490
+01:06:53,391 --> 01:07:07,551
+halbuki burada 5'ten gelen bir şey var. 16 var. 16 5'ten gelirsek 50 ediyor. O zaman benim nasıl gitmem gerekiyor? Şöyle gitmem gerekiyor.
+
+491
+01:07:07,551 --> 01:07:16,852
+baktığımız zaman şöyle 5 pardon 5'ten şöyle 50'ye gitmem gerekiyor.
+
+492
+01:07:16,852 --> 01:07:31,691
+O zaman 5'ten targıta 16 ile gidersem demek ki targıta 50 ile gelmiş oluyorum.
+
+493
+01:07:31,792 --> 01:07:32,891
+Nasıl geldim o zaman?
+
+494
+01:07:33,411 --> 01:07:34,251
+Birlikte bakalım.
+
+495
+01:07:35,251 --> 01:07:36,352
+Sources'tan çıktım.
+
+496
+01:07:36,352 --> 01:07:39,732
+6'ya geldim.
+
+497
+01:07:39,732 --> 01:07:43,111
+Oradan 3'e geldim.
+
+498
+01:07:44,111 --> 01:07:46,611
+3'den 5'e geldim.
+
+499
+01:07:48,531 --> 01:07:49,051
+Tamam mı?
+
+500
+01:07:49,844 --> 01:08:00,844
+5'ten de target'a geldim. O zaman shortest path'i Dijkstra algoritmasıyla bu şekilde çıkarmış oldum.
+
+501
+01:08:00,844 --> 01:08:05,844
+Buraya kadar sormak istediğiniz var mı? Bir şey var mı?
+
+502
+01:08:05,844 --> 01:08:09,844
+Evet.
+
+503
+01:08:19,828 --> 01:08:29,187
+Biz sadece, çeyrek geçeği kadar 5 dakika telefon etmem gerekiyor. 5 dakika mono veriyoruz şu anda.
+
+504
+01:13:33,811 --> 01:13:42,211
+Peki şimdi devam edelim. Şimdi birlikte nasıl çözüldüğüne bakalım. Chatte biri bir şey yazmış. Şu an gözükmüyor. Şu an görüyorsunuz herhalde.
+
+505
+01:13:43,051 --> 01:13:56,611
+Birlikte nasıl çözüldüğüne bakalım. Şimdi bir tane link şey çizeceğim. Şöyle dur bir dakika. Küçük bir graf çizeceğim. Onun üzerinden algoritmasını geliştireceğiz.
+
+506
+01:13:56,611 --> 01:14:04,411
+şurası source diyeyim yanlış oldu.
+
+507
+01:14:10,996 --> 01:14:12,915
+Söz, şurası, Dijk, şurası.
+
+508
+01:14:22,323 --> 01:14:25,683
+C ve şurada da D var. Şöyle bir grafımız olsun.
+
+509
+01:14:33,844 --> 01:15:03,823
+Ağalantılar da şu şekilde. Source ile B arası 7. Source ile A arası 2. A'dan B'ye 3. B'den A'ya 2. B'den C'ye 1. Şurada da var bir tane. A'dan C'ye 8. A'dan D'ye 5. C'den D'ye 4.
+
+510
+01:15:03,844 --> 01:15:12,503
+ve D'den C'ye 5. Böyle bir grafımız olduğunu varsayalım. Şimdi komşuluk listesine birlikte yapalım.
+
+511
+01:15:12,503 --> 01:15:42,403
+Şöyle source var, A var, B var, C var ve D var. Source'dan A'ya 2 var, B'ye 7 var, A'dan B'ye 3 var, C'ye 8 var ve D'ye 5 var, B'den A'ya 2 var,
+
+512
+01:15:42,503 --> 01:15:52,463
+ve C'ye 1 var, C'den D'ye 4 var, D'den de C'ye 5 var.
+
+513
+01:15:52,463 --> 01:15:58,603
+Şimdi önce initialization yapıyoruz.
+
+514
+01:15:58,723 --> 01:16:03,443
+Initialization az önce gördüğümüz şey, bir itlendireceğiz bu şeyi.
+
+515
+01:16:04,523 --> 01:16:06,123
+Şimdi neyimiz var bizim?
+
+516
+01:16:06,123 --> 01:16:15,043
+vertexlerimiz, düğümlerimiz var, S düğümümüz var, A var, B var, C var ve D düğümümüz var.
+
+517
+01:16:15,043 --> 01:16:22,144
+Ve bunların distance'ları var, source'a olan distance'ları var.
+
+518
+01:16:27,283 --> 01:16:57,263
+ve bu distance'ın nereden geldiği var ve kalır. Eğer beyazlarsa seçilmemişler, siyahlarsa seçilmişler anlamında. Şimdi distance'lara baktığımızda, işe ilk başlandığında source'un kendisine olan distance'ı sıfır, diğerlerinin distance'ları sonsuz ve şeyler de nal durumda.
+
+519
+01:16:57,283 --> 01:17:03,903
+kendilerinden önce yani oraya nereden gelindiği bilgisi nal durumunda.
+
+520
+01:17:05,383 --> 01:17:09,184
+Şimdi burada problem aslında bir priority queue ile çözülüyor.
+
+521
+01:17:09,184 --> 01:17:22,124
+Çünkü şeyi tutmamız gerekiyor ya nedir kısa mesafeleri tutmamız gerekiyor ya mantıklı olan bunları bir queue'da tutarak ilerlemek.
+
+522
+01:17:22,124 --> 01:17:33,423
+O yüzden bir priority çünkü sürekli değişecek ki o mesafeler kısılacak. Başlangıçta şöyle olacak şekilde bir de priority q'u yaratıyoruz.
+
+523
+01:17:33,423 --> 01:17:48,343
+Şimdi bizim yapmamız gereken şey şu. Şimdi diyelim ki şöyle bir A düğümümüz var. Şöyle bir ya da şöyle diyeyim A demeyeyim de başlangıçımız source düğümümüz var.
+
+524
+01:17:48,343 --> 01:17:52,443
+burada bir W düğümümüz var burada da bir V düğümümüz var.
+
+525
+01:17:52,443 --> 01:18:07,763
+Şimdi sorstan W'ye olan bağlantı şu anda 47 olsun sorstan V'ye olan bağlantı 11 olsun ve biz şimdi şeye karar vermeye çalışıyoruz.
+
+526
+01:18:07,763 --> 01:18:18,263
+Sorstan W'ye doğrudan source üzerinden mi gitmek iyi yoksa bu V üzerinden mi gitmek iyi?
+
+527
+01:18:18,343 --> 01:18:23,923
+diyelim ki bu aradaki bağlantı 33 olsun.
+
+528
+01:18:24,824 --> 01:18:26,523
+O zaman neyi seçersiniz?
+
+529
+01:18:27,043 --> 01:18:33,443
+Source'a W'ya V üzerinden gitmeyi seçersiniz.
+
+530
+01:18:33,443 --> 01:18:35,303
+Niye? Toplamı 44 ettiği için.
+
+531
+01:18:35,983 --> 01:18:36,383
+Doğru mu?
+
+532
+01:18:37,063 --> 01:18:39,803
+O zaman demek ki bizim neyi kontrol etmemiz lazım?
+
+533
+01:18:39,923 --> 01:18:42,164
+Hangi yolu seçeceğimize karar vermek için?
+
+534
+01:18:42,163 --> 01:19:04,943
+diyeceğiz ki eğer diyeceğiz source'dan W'ye gitmenin büyüklüğü source V artı V'den büyük oluyor ise o zaman W'ye V'den gel.
+
+535
+01:19:09,779 --> 01:19:10,499
+Doğru ne?
+
+536
+01:19:14,836 --> 01:19:25,836
+Bizim yapmamız gereken şey bunu anlamaya çalışmak. Yani hangi taraftan gelmenin daha iyi olacağını anlamaya çalışmak. Yapmamız gereken şey bu. Şimdi başladık.
+
+537
+01:19:29,176 --> 01:19:43,756
+Şimdi source'dan şeye bakacağız şimdi. A'ya mı gitsek, B'ye mi gitsek ona bakacağız. Şimdi source'dan A'ya gittiğiniz zaman, çünkü yola oradan çıktığımız için, source'dan A'ya gittiğiniz zaman
+
+538
+01:19:43,756 --> 01:19:50,635
+bunun mesafesi 2, B'ye gittiğimiz zaman bunun mesafesi 7.
+
+539
+01:19:51,755 --> 01:20:00,475
+Ve bu durumda an'ya S'den gelmiş oluyorum, B'ye de S'den gelmiş oluyorum. Mantık bu.
+
+540
+01:20:01,016 --> 01:20:11,376
+Ve sorsu da yani kendisine zaten buradan yola çıktığım için bunu böyle siyah olarak başlangıcı,
+
+541
+01:20:11,375 --> 01:20:17,435
+bunu aldım çünkü zaten kendisine olan mesafe sıfır oldu. Şimdi bunu aldım. Bunu bu şekilde şey yapmış oldum.
+
+542
+01:20:17,435 --> 01:20:30,875
+O zaman priority queue'da da artık priority queue'da S'yi çıkarttım. Çünkü sorustan kime nasıl gideceğimi belirlediğime göre S'yi çıkarttım.
+
+543
+01:20:30,876 --> 01:20:40,456
+A var, B var, C var, D var, A'nın mesafesi 2, B'nin mesafesi 7, C'nin sonsuz, B'nin sonsuz.
+
+544
+01:20:40,456 --> 01:20:41,836
+Şu anda bu vaziyette.
+
+545
+01:20:42,255 --> 01:20:44,895
+Buraya kadar sormak istediğiniz bir şey olursa sorabilirsiniz.
+
+546
+01:20:45,535 --> 01:20:48,356
+Şimdi Q'nun başında A var.
+
+547
+01:20:48,935 --> 01:20:49,996
+A'yı da çıkarttım.
+
+548
+01:20:50,075 --> 01:20:51,556
+A'nın mesafesi 2'ydi.
+
+549
+01:20:51,876 --> 01:20:53,096
+A'yı da çıkarttım.
+
+550
+01:20:53,876 --> 01:20:56,836
+O zaman A'nın color'ını da black yaptım.
+
+551
+01:20:57,175 --> 01:20:59,295
+A'ya source'tan gelinir demişti 2.
+
+552
+01:20:59,295 --> 01:21:02,056
+Şimdi distance'lara bakacağım.
+
+553
+01:21:04,435 --> 01:21:08,975
+A'ya B'den gidersem, şey B'ye A'dan gidersem distance'ı 5 oluyor.
+
+554
+01:21:08,975 --> 01:21:14,855
+Şimdi distance'ı şuradan şöyle geldik.
+
+555
+01:21:15,236 --> 01:21:18,715
+Şuradaki, şunu biraz büyüterek şöyle yazayım.
+
+556
+01:21:18,916 --> 01:21:20,336
+Daha anlaşılsın.
+
+557
+01:21:21,136 --> 01:21:26,056
+S, A, B, C, D.
+
+558
+01:21:26,056 --> 01:21:31,556
+büyük bir çünkü üzeri çizdikçe siz zorluk çekeceksiniz görmekte.
+
+559
+01:21:38,420 --> 01:21:52,139
+Şimdi şurası şu anda, distance ve şurası da, şurası sıfırdı, burası ikiydi, yedi, sonsuz, sonsuz, şurasını aldı, burası s, s, en son durumu yazıyorum, bunun üzerine çizeceğim şimdi.
+
+560
+01:21:52,920 --> 01:22:02,579
+Black, black, white, white, white. Şimdi ikiyi aldım, şurayı aldım şöyle. Şurayı aldım. Şöyle şu vaziyetteyim şu anda.
+
+561
+01:22:02,579 --> 01:22:07,139
+ve kuyruktan A'yı da çıkarttım.
+
+562
+01:22:07,620 --> 01:22:11,559
+A'nın bütün bağlantısı olanları update edeceğim şimdi.
+
+563
+01:22:11,559 --> 01:22:12,679
+Şuradan edeyim.
+
+564
+01:22:14,039 --> 01:22:16,960
+A'nın B'ye bağlantısı var.
+
+565
+01:22:17,079 --> 01:22:18,879
+B'nin uzunluğu 5 oldu.
+
+566
+01:22:19,519 --> 01:22:22,960
+A'nın C'ye bağlantısı var.
+
+567
+01:22:23,619 --> 01:22:25,859
+C'nin uzunluğu 10 oldu.
+
+568
+01:22:26,039 --> 01:22:30,879
+Çünkü A'dan 2, 8, A'ya da 2 vardı.
+
+569
+01:22:31,000 --> 01:22:32,199
+C 10 oldu şu anda.
+
+570
+01:22:32,579 --> 01:22:41,120
+B5 oldu, 7'ydi 5 oldu, 7'yi çizdik, çizemiyorum, 7'ydik 5 oldu.
+
+571
+01:22:42,280 --> 01:22:46,399
+A'dan bir de D'ye bağlantı var, o da 7 oldu.
+
+572
+01:22:46,500 --> 01:22:49,479
+Niye? Çünkü 2, 5 daha 7, şu anda durulmuş gibi bir şey.
+
+573
+01:22:49,720 --> 01:22:50,180
+Tamam mı?
+
+574
+01:22:51,119 --> 01:22:57,619
+Ve predlerine baktığımız zaman da, şimdi A'nın, B'nin predi sorstu, A oldu.
+
+575
+01:22:57,619 --> 01:22:59,559
+C'nin A, B'nin A.
+
+576
+01:22:59,559 --> 01:23:10,699
+şu anda şu haziyetliyiz ve A kuyruktan çıktı. Şimdi o zaman ne oldu A kuyruktan çıkınca? Priority Q'muzda B, C ve D kaldı.
+
+577
+01:23:11,239 --> 01:23:22,619
+D'nin 5, C'nin 10, D'nin 7. Şimdi en kısa B olduğu için B kuyruğun başında. C ve D'nin durumu değişti onlara hiç bakmıyorum o yüzden.
+
+578
+01:23:22,619 --> 01:23:45,420
+Şimdi B'deyim. B'ye baktığım zaman B'yi aldım. B'yi black yaptım. B'yi aldım şöyle ve B'ye şöyle geldim. A üzerinden geldim şu anda. Çünkü neden? 2 artı 3 küçüktür 7'den o yüzden A üzerinden geldim.
+
+579
+01:23:45,420 --> 01:24:11,780
+Şimdi şey yapıyorum. B'nin komşularına bakıyorum. B'den C'ye gidiş var. 1. Zaten şeydi. Onu da farklı renkli yapayım. Şöyle yapayım. 10'du. 5, 1 daha 6. C'yi 6 yaptım.
+
+580
+01:24:11,780 --> 01:24:13,839
+B'den başka gidiş yok.
+
+581
+01:24:14,080 --> 01:24:16,580
+O zaman şimdi ne oldu?
+
+582
+01:24:17,140 --> 01:24:20,199
+Ve şeyde predi de B oldu.
+
+583
+01:24:20,360 --> 01:24:22,759
+C'nin predi B oldu şu anda.
+
+584
+01:24:23,380 --> 01:24:24,360
+Bu bu şekilde.
+
+585
+01:24:24,979 --> 01:24:28,160
+O zaman şunu 6 yaptım.
+
+586
+01:24:28,660 --> 01:24:30,259
+B çıktı zaten sıradan.
+
+587
+01:24:30,259 --> 01:24:33,839
+Şimdi şu anda prioritiküm şu şekilde.
+
+588
+01:24:34,500 --> 01:24:36,420
+B var, DV var.
+
+589
+01:24:36,839 --> 01:24:38,440
+Şimdi C var prioritikümde.
+
+590
+01:24:38,439 --> 01:25:07,059
+D var. Şurası 6, burası 7 şeklinde. Şimdi C'de sıra. C'ye de nereden gelmiş oldu? Onu da yazalım. Şöyle. B'den gelmiş oldu ve bunu da black yaptım şu anda. Şu anda C'deyim. Şimdi C'den nerelere gidiliyor? Bir ona bakalım. C'den bir tek D'ye gidiliyor. Onları da hep şuradan şeyden bakıyoruz arkadaşlar. Nedir?
+
+591
+01:25:08,439 --> 01:25:12,099
+adjacent list'ten bakıyoruz.
+
+592
+01:25:12,239 --> 01:25:13,419
+C'den D'ye gidiliyor.
+
+593
+01:25:13,939 --> 01:25:15,539
+C'den D'ye 4 gidiliyor.
+
+594
+01:25:15,539 --> 01:25:19,879
+C'nin kendisi 6 olduğuna göre 4 daha 10.
+
+595
+01:25:20,339 --> 01:25:24,599
+O zaman demek ki 10'u ellememek lazım.
+
+596
+01:25:27,199 --> 01:25:29,299
+B'ye A'dan geliniyordu.
+
+597
+01:25:29,379 --> 01:25:30,359
+Orada durduk öyle.
+
+598
+01:25:32,307 --> 01:25:55,687
+şu anda şey konusunda yapacak bir şey yok. Bu durumda C'den D'ye gidişi update etmedik daha büyük bir değer çıktığı için priority queue'umuzda işimize devam ediyoruz. Şimdi priority queue'umuzda ne kaldı? D kaldı bir tek. 7 uzunluklu. A'dan gelinmiş bir. 7 kaldı.
+
+599
+01:25:55,687 --> 01:26:17,387
+o zaman daha küçük bir bağlantı olmadığı için burayı bu şekilde şey yapıyoruz ve D'yi de black yapıyoruz. Böylece D'yi de katmış oluyoruz. O zaman ne oldu? Şimdi baktığımız zaman şöyle bunu temize çekersem eğer çekeyim mi?
+
+600
+01:26:17,387 --> 01:26:33,467
+aslında gözüküyor aslında da şöyle şurada bunu bir yazmaya çalışayım daha temiz bir şekilde son haline S, A, B, C ve D dersek
+
+601
+01:26:33,467 --> 01:26:40,447
+distanslarını yazacağım sadece ve predlerini de yazayım nereden gelebiliğini de yazayım
+
+602
+01:26:40,447 --> 01:26:58,427
+predimde yazayım. Şöyle 0, 2, 5, 6, 7 son distanslar. Source'a olan distansları bunların hepsinin. Ve Source zaten kendisi. Ondan önce kimse yok. Null başındaki.
+
+603
+01:26:58,427 --> 01:27:21,767
+A'ya source'dan gelindi. Bakın şurada görüyoruz şöyle. A'ya source'dan gelindi şöyle. Ondan sonra B'ye A'dan gelindi şöyle. C'ye B'den gelindi şöyle. Ve A'ya da D'den gelindi şöyle.
+
+604
+01:27:21,767 --> 01:27:51,587
+yazalım. B'ye A'dan gelindi, C'ye B'den gelindi ve D'ye de A'dan gelindi. Burada baktığınız zaman eğer herhangi bir düğme en kısa nereden gelindiğini görmek istersek örneğin B'ye gidişe baktığınız zaman A'ya gidiş sorsan direkt B'ye gidiş A üzerinden yani A'ya gelmişim
+
+605
+01:27:51,587 --> 01:28:01,028
+A'dan B'ye 3 toplamda 5 mesafede.
+
+606
+01:28:01,028 --> 01:28:14,927
+C'ye de B'den gelindiği için A'ya 2, B'ye 3 ve C'ye B'den C'ye 1 mesafe olduğu için 6 şeklinde.
+
+607
+01:28:14,927 --> 01:28:24,467
+D7 A'dan gelindiği için 2, A'dan D'ye 5, D'ye bu şekilde ne olmuş oldu o zaman?
+
+608
+01:28:25,248 --> 01:28:40,427
+B'ye 5, C'ye 6, D'ye de 7 mesafede gelinmiş oldu ve bu D'de çıkınca kuyruk şu anda empty, işim bitmiş oldu.
+
+609
+01:28:40,427 --> 01:28:44,967
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+610
+01:28:45,287 --> 01:28:45,967
+Şeyim de burada.
+
+611
+01:28:47,627 --> 01:28:48,947
+Grafım da burada.
+
+612
+01:28:49,087 --> 01:28:50,927
+Bu şekilde gördüğünüz gibi şöyle.
+
+613
+01:28:51,687 --> 01:28:52,047
+Şöyle.
+
+614
+01:28:53,867 --> 01:28:56,147
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+615
+01:28:56,248 --> 01:28:57,867
+Yani şöyle yazabilirim grafımı.
+
+616
+01:28:59,147 --> 01:29:00,867
+Şunu bir dakika.
+
+617
+01:29:01,028 --> 01:29:02,028
+Şunu sileyim.
+
+618
+01:29:02,087 --> 01:29:02,927
+Buna gerek yok.
+
+619
+01:29:10,068 --> 01:29:18,727
+A
+
+620
+01:29:23,699 --> 01:29:53,339
+şurası benim source graphum kendisi, source düğüm kendisi mesafesi sıfır. Şurası A düğümüm, şurası D düğümüm, B düğümüm ve C düğümüm ve şunlar da mesafeleri 5, 2, 7 ve 6.
+
+621
+01:29:53,699 --> 01:29:56,339
+Evet buraya kadar sormak istediğiniz bir şey var mı?
+
+622
+01:30:24,724 --> 01:30:29,023
+Peki o zaman pseudo olarak yazacağım bunu bulunsun sizde diye.
+
+623
+01:30:48,467 --> 01:30:50,467
+Şimdi bir G grafımız var.
+
+624
+01:30:56,467 --> 01:30:58,467
+Bir source düğümümüz var.
+
+625
+01:31:06,515 --> 01:31:33,915
+bir de weight matrisimiz var. Şu graf, şu weight matrisi. Sadece şey yapacağım, dediğim gibi pseudo yapacağım. Şimdi önce bütün düğümler için bu düğümlerin sorsa mesafesini sonsuz yapıyoruz.
+
+626
+01:31:33,915 --> 01:31:43,175
+ve etiketini de işte yani bu sadece şey için hani böyle white'sı almadım, black'sı aldım yani 0-1 yapabilirsiniz.
+
+627
+01:31:43,175 --> 01:31:54,275
+Bunu yaptıktan sonra Source'un kendisine mesafesini 0 yapıyoruz ve Source'un kendisinden önce gelen düğümü de nal yapıyoruz.
+
+628
+01:31:54,515 --> 01:32:00,035
+Yani Source çünkü 0 yani kendisinden önce hiç kimse yok.
+
+629
+01:32:03,444 --> 01:32:08,703
+ve bütün düğümleri kuyruğa yerleştiriyoruz.
+
+630
+01:32:13,076 --> 01:32:18,275
+Şimdi bu priority queue olduğu için her seferinde kuyruktan en küçük mesafeli düğüm çıkacak.
+
+631
+01:32:20,275 --> 01:32:21,576
+Diğerleri duracak.
+
+632
+01:32:24,076 --> 01:32:26,076
+PQ'dayım hatta şöyle.
+
+633
+01:32:36,243 --> 01:32:47,383
+Şimdi priority queue olduğu için o anda en küçük mesafesi olan düğüm kimse o çıkacak.
+
+634
+01:32:47,763 --> 01:32:58,363
+Ama bakın burada gördüğünüz gibi yani mesela bir adım önce şeylerin sorsa mesafesi B'nin 5, C'nin 10, D'nin 7 idi.
+
+635
+01:32:58,363 --> 01:33:05,303
+Ama biz bozmadık sıralama falan yapmaya çalışmadık çünkü bir adım sonra C'nin mesafesi ondan 6'ya düştü.
+
+636
+01:33:05,303 --> 01:33:13,503
+O yüzden buradaki priority queue'dan bizim amacımız kuyruktaki en küçük mesafeli yani en öncelikliyi çıkarmak diğerleriyle oylamıyoruz şu anda.
+
+637
+01:33:19,188 --> 01:33:26,947
+Şimdi U'nun komşusu olan bütün düğümler için mesafe hesabı yapıyorum. Pardon, şurada U yazacak aslında.
+
+638
+01:33:29,587 --> 01:33:35,907
+U'nun komşusu olan bütün düğümler için mesafe hesabı yapıyorum. Diyorum ki, diyorum,
+
+639
+01:33:38,028 --> 01:33:45,547
+U'nun mesafesine U'dan V'ye olan mesafe eklediğimizde
+
+640
+01:33:45,547 --> 01:33:56,487
+V'nin artık başlangıçtaki bir önceki adımdaki mesafesi neyse ondan küçük çıkıyorsa o zaman diyorum
+
+641
+01:33:56,487 --> 01:34:04,287
+DV, DU artı W, U, V olsun diyorum.
+
+642
+01:34:04,287 --> 01:34:09,947
+Yani demek istediğimiz şey şu, şurada bir A düğümümüz var, burada B düğümümüz var, burada da C düğümümüz var.
+
+643
+01:34:09,947 --> 01:34:12,967
+şurada da şöyle bir bağlantı var.
+
+644
+01:34:13,267 --> 01:34:16,587
+Şimdi A'dan B'ye olan bağlantı 30'muş.
+
+645
+01:34:17,347 --> 01:34:24,127
+Ve siz şu anda A var böyle, C var, C'de 15'miş.
+
+646
+01:34:24,127 --> 01:34:25,908
+Şimdi A, C'yi aldınız.
+
+647
+01:34:26,207 --> 01:34:27,408
+C işin içine girdi.
+
+648
+01:34:27,507 --> 01:34:28,827
+Burada da 8 olsun şöyle.
+
+649
+01:34:29,447 --> 01:34:31,427
+Şuna karar vermeye çalışıyorsunuz.
+
+650
+01:34:31,507 --> 01:34:34,927
+B'nin A'ya olan mesafesi zaten 30'muş.
+
+651
+01:34:35,107 --> 01:34:36,628
+30 şöyle, 30'u biliyoruz.
+
+652
+01:34:36,627 --> 01:34:44,147
+Bu kalsın mı yoksa ACB üzerinden ilerleyelim 23 mi olsun buna karar vermeye çalışıyoruz.
+
+653
+01:34:44,227 --> 01:34:56,607
+O yüzden diyoruz ki DU yani şu distance U 15 şu 15 artı 8 küçük müdür buradaki 30'dan bunu anlamaya çalışıyoruz.
+
+654
+01:34:56,607 --> 01:35:02,447
+Evet ise o zaman diyeceğiz ki o zaman bu bağlantı neyse onu al çünkü daha karlı.
+
+655
+01:35:02,447 --> 01:35:09,127
+ve bunu priority queue'da da şey yapacağız.
+
+656
+01:35:11,947 --> 01:35:13,407
+Update edeceğiz.
+
+657
+01:35:14,067 --> 01:35:17,487
+O key'in değerini priority queue'da da update edeceğiz.
+
+658
+01:35:17,487 --> 01:35:19,287
+Kimin değerini update edeceğiz?
+
+659
+01:35:20,187 --> 01:35:23,867
+V'nin, V düğümünün değerini update edeceğiz.
+
+660
+01:35:23,987 --> 01:35:26,707
+Çünkü o 30'du, 23 olacak şimdi.
+
+661
+01:35:26,707 --> 01:35:46,947
+ve distance B aslında 30'du şimdi 23 olacak ve aynı zamanda V'ye de U'dan gelinmiş olacak yani şurası bizim C düğümüyse şimdi burada B'ye A'dan geliniyordu şimdi artık C'den gelinmiş olacak.
+
+662
+01:35:57,011 --> 01:36:04,011
+ve altyazı
+
+663
+01:36:06,260 --> 01:36:11,260
+Bunların hepsi bittiğinde de
+
+664
+01:36:16,435 --> 01:36:22,315
+color, u, black, yani color, u ile işim bitti anlamında bunu böyle yapacağım.
+
+665
+01:36:27,220 --> 01:36:56,599
+Buraya kadar sormak istediğiniz bir şey var mı? Tekrar etmemi istediğiniz bir şey. Bu Dijkstra şeyde çok kullanılan algoritmalardan birisi. Trafik planlamasında, robot navigasyonunda, network routing protokollerinde, scheduling işlemlerinde Dijkstra algoritması hala kullanılan farklı yerlerde.
+
+666
+01:36:56,599 --> 01:37:03,580
+kullanılan bir algoritma. Tekrar etmemi istediğiniz bir şey var mı veya sormak istediğiniz bir şey var mı?
+
+667
+01:37:10,355 --> 01:37:12,355
+Şurada bir parantez daha var.
+
+668
+01:37:13,855 --> 01:37:15,855
+Sormak istediğiniz bir şey var mı?
+
+669
+01:37:16,855 --> 01:37:19,355
+Bak hocam benim bir sorum olacaktı.
+
+670
+01:37:19,355 --> 01:37:24,855
+Tamam. Biraz yüksek sesle sorabilir misiniz? Sizin sesleriniz az geliyor bana.
+
+671
+01:37:24,855 --> 01:37:26,355
+Sesim iyi mi şimdi?
+
+672
+01:37:26,355 --> 01:37:28,355
+Şimdi iyi evet.
+
+673
+01:37:28,355 --> 01:37:35,355
+O düğümleri siyah boyuyoruz ya, o ne için tam olarak?
+
+674
+01:37:35,355 --> 01:37:45,135
+Yani aslında onun anlamı o düğümün alındığını göstermek için yani aslında kuyruktan çıkardığın anda işin bitmiş oluyor.
+
+675
+01:37:46,576 --> 01:38:02,055
+Boyasam da olur, boyamasam da olur yani o şey için hani böyle aldığını göstermek için zaten kuyruktan çıkardığın anda mesela şurada baktığımda işte işi bitti, sorsu çıkardın, işi bitti A'yı çıkardın, işi bitti B'yi çıkardın.
+
+676
+01:38:02,055 --> 01:38:03,915
+Öyle bir şey yapmana gerek yok aslında.
+
+677
+01:38:05,355 --> 01:38:06,716
+Anladım hocam teşekkürler.
+
+678
+01:38:06,775 --> 01:38:14,015
+Yani yapmasan da olur. Zaten queue'dan çıkardım da hani burada şimdi böyle tabloda falan gösteriyoruz ya kimi işledik, kimi şey yaptık gözüksün diye.
+
+679
+01:38:15,256 --> 01:38:20,896
+Görsel amaçlı yani yoksa algoritmik olarak ayrı bir dizi tutmana, ayrı bir iş yapmana gerek yok.
+
+680
+01:38:20,995 --> 01:38:27,896
+Burada baktığımda şurada şeyi kaçırma diye hani kimi işledik, kimi şey yaptık gözüksün de yoksa onu bir yerde bir daha kullanmıyoruz.
+
+681
+01:38:31,036 --> 01:38:32,835
+Bambaşka sormak istediğiniz.
+
+682
+01:38:32,835 --> 01:38:45,355
+Q'dan çıkardım mı zaten bitti onu. Çünkü biz sadece priority Q'ya bakıyoruz ya. Q'dan birisi çıktı mı bir daha onunla uğraşmıyoruz zaten. Var mı başka sorunuz? Güzel bir soruydu.
+
+683
+01:38:49,043 --> 01:38:58,523
+Anladınız mı peki algoritmayı? Tekrar etmemi ister misiniz? Zaten gerçi kayıt var, tekrar etmeye gerek yok ama isterseniz bazı şeyleri anlatabilirim tekrardan.
+
+684
+01:39:04,404 --> 01:39:13,483
+Peki, o zaman bugünkü dersimiz bu kadar. Grafları bitirdik bugün. Önümüzdeki hafta sitking search'lerle devam edeceğiz.
+
+685
+01:39:15,923 --> 01:39:20,243
+Yani başka bir sorunuz yoksa burada tamamlayabiliriz ders.
+
+686
+01:39:23,103 --> 01:39:28,244
+Şimdi şeyden ötürü hızlı gidiyor aslında. Dediğim gibi böyle soru olmuyor.
+
+687
+01:39:28,244 --> 01:39:42,063
+bir tahtada bir şey anlatmak, arada öğrencilere soru sorup onların anlayıp anlamadığını değerlendirmek falan hiçbirisi olmayınca aslında ondan da yediye düşmüş mesela şu anda.
+
+688
+01:39:42,063 --> 01:39:56,603
+Çok hızlı bitiyor anlatılanlar ama biz aslında zamanımız daha çok yetecek olmasına rağmen yeni konular anlatmayı çok da gerekli bulmuyoruz.
+
+689
+01:39:56,603 --> 01:40:17,143
+çünkü çok verimli olmuyor zaten hiçbir şey. Önemli olan anlatılması gereken bu dönem içerisinde daha önceden planladığımız, önceki yıllarda anlattığımız şekilde konuları tamamlamamız ama yeni bir şeyin anlaşılırlığını nasıl olacağını da bilemediğimiz için yeni bir konu eklemek çok gerekli olmuyor.
+
+690
+01:40:17,143 --> 01:40:19,944
+O zaman burada bugün bitiriyorum.
+
+691
+01:40:20,983 --> 01:40:22,663
+Güzel bir hafta diliyorum hepinize.
+
+692
+01:40:22,783 --> 01:40:24,523
+Önümüzdeki hafta görüşmek üzere.
+
+693
+01:40:24,764 --> 01:40:25,243
+İyi günler.
+
+694
+01:40:25,523 --> 01:40:26,984
+Katıldığınız için teşekkür ederim.
+
+695
+01:40:28,523 --> 01:40:29,984
+Bakın bir daha günler varmış.
+
+696
+01:40:33,203 --> 01:40:34,363
+Teşekkürler arkadaşlar.
+
+697
+01:40:34,503 --> 01:40:34,923
+İyi günler.
