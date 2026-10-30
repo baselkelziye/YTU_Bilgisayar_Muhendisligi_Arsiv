@@ -1,0 +1,3343 @@
+1
+00:00:56,020 --> 00:01:17,559
+Evet, merhaba arkadaşlar. Bugün sunumlara kaldığımız yerden devam edeceğiz. Bugünkü sunum listesinde grup numarası en düşük, sayısı en düşük değer olan [öğrenci] ve [öğrenci] var. İki numaralı grup. Burada mısınız arkadaşlar? [öğrenci]'sini görüyorum listede ama.
+
+2
+00:01:19,059 --> 00:01:21,159
+Hocam, [öğrenci] de birazdan gelir sanırım.
+
+3
+00:01:21,159 --> 00:01:27,279
+Tamam, tamam bir iki dakika bekleyelim, hala vaktimiz var çünkü
+
+4
+00:01:52,403 --> 00:02:09,723
+[öğrenci] de bağlandı şimdi. Gördüğüm kadarıyla [öğrenci] de geldi. Yani ben sizlere zaten şey hakkını verdim. Nedir o? Ekran paylaşım hakkını verdim. O yüzden hani [öğrenci] ve [öğrenci] söz sizde diyorum.
+
+5
+00:02:10,123 --> 00:02:11,584
+Hocam sesim geliyor mu acaba?
+
+6
+00:02:12,463 --> 00:02:14,223
+Sesim geliyor, görüntün yok ama.
+
+7
+00:02:14,223 --> 00:02:30,683
+Hocam iş yerinden bağlandığım için iş yerinden bilgisayarındaki kamera açılmıyor. Geçen hafta söylediğinizi duymuştum ama kamera açmanın kriter olduğunu. Fakat dediğim gibi iş yerinden bağlandığım için imkanım yok maalesef.
+
+8
+00:02:31,783 --> 00:02:38,963
+Okey ona göre değerlendireceğiz. Evet siz de buyurun başlayalım sunuma vakit kaybetmeyelim.
+
+9
+00:02:48,788 --> 00:02:58,788
+Merhaba, ben [öğrenci]. Grup arkadaşım [öğrenci] ile birlikte sizlere TÜBİTAK BİNİK Hızlı Destek Solanı kapsamında proje yönelik ürünümü gerçekleştireceğiz.
+
+10
+00:02:58,788 --> 00:03:14,788
+Projemizin adı geliştirmiş algoritma ile turizm rota uygulaması. Çalışmamızın genel amaçlarından ve hedeflerinden bahsedecek olursak, temel amacımız gezgi satıcı probleminin günlük hayata uyarlanabilmesi, gerçek dünya problemlerine uyarlanabilmesi.
+
+11
+00:03:14,788 --> 00:03:27,128
+Genetik algoritmanın gezge kazıcı problemi için çözümü için birçok algoritma mevcut. Biz genetik algoritma el alacağız. Genetik algoritmanın performansının ve hızının arttırmasına başlayacağız.
+
+12
+00:03:27,128 --> 00:03:40,548
+Bu amaçlar doğrultusunda ülkemizde var olan turistik yerlerin gezilmesi için en kısa yol güzergahın bulunmasını bulan bir uygulama geliştirmek.
+
+13
+00:03:40,547 --> 00:03:48,788
+Bununla ilgili birçok çalışmalar mevcut hem ülkemiz içinde hem de yurt dışında. Bunlardan birkaç tanesine değinmek istiyorum.
+
+14
+00:03:48,788 --> 00:04:00,167
+2010 yılında Adana ilinde bir fabrikada dağıtım sırasında izlenecek rotalar üzerinde çalışmalar yapılmış. Bu da genetik algoritma tabanlı bir çalışma olmuş.
+
+15
+00:04:00,167 --> 00:04:11,947
+2018 yılında da İstanbul'da toplu taşıma hizmeti veren denetim ekibi için en övün güzergahı bulan yine genetik algoritma tabanlı bir uygulama geliştirilmiş.
+
+16
+00:04:11,947 --> 00:04:21,407
+Yurt dışında da 2012 yılında Endülüs Özerk bölgesinde turistlerin istek ve ihtiyaçlarını bakılarak tetik bir uygulama gerçekleştirilmiş.
+
+17
+00:04:21,407 --> 00:04:37,007
+Çin'in bir şehrinde 2018 yılında bu şehirde bulunan görülecek doğal alanlar ve kullanıcıların veya turistlerin kalacakları oteller arasında bu doğal alanlar arasında en özgün güzergahın bulunmasına amaçlı bir çalışmalar yapılmış.
+
+18
+00:04:37,007 --> 00:04:44,587
+Daha güncel olan 2020 yılında Çin'in başka bir şehrinde yine turistler için gezilecek yer planlaması çalışmaları yapılmış.
+
+19
+00:04:44,587 --> 00:04:52,987
+Projek kapsamında gezgin satıcı problemi, geliştirim kübörü aralarına bile bir genet kalgorit falan ve turizm rota uygulaması üzerinde duracağız.
+
+20
+00:04:54,467 --> 00:05:02,907
+Gezgin satıcı problemi, optimizasyon alanında en çok çalışma yapılmış ve hala hazırda çalışmalar yapılmakta devam ediliyor bu problem üzerinde.
+
+21
+00:05:03,367 --> 00:05:11,407
+Son olarak ifade edersem herhangi bir noktadan başlayarak her bir noktadan yalnızca bir kez geçme şartıyla başlangıç noktasına ulaşmak.
+
+22
+00:05:11,407 --> 00:05:37,107
+Buradaki asıl amaç bu noktalar arasında oluşturan notanın tamamı için minimum sürede en kısa yolu bulmak. Bizim kendi problemimizi uyarladığımızda ise bir kullanıcısınız veya bir turistiniz, kendi ülkemizde bir şehir içinde veya şehirler arasındaki tüm gezilecek yerler arasındaki en uygun yolu bulmak hedefleniyor. Asıl projemizin amacı bu.
+
+23
+00:05:37,107 --> 00:05:47,147
+Gerçektece problemi çözüm için birçok algoritma sürülüyor öncesine. Biz genetik algoritmayı ele alacağız.
+
+24
+00:05:47,147 --> 00:05:55,127
+Genetik algoritma evren teorisi ilkelerine dayanılarak doğal süreçlerden esinlenerek oluşturulmuş bir arama optimizasyon yöntemi.
+
+25
+00:05:56,027 --> 00:06:03,527
+Kendi içerisinde belli süreçleri olan seçim, çaprazlama ve mutasyon gibi bir algoritma.
+
+26
+00:06:03,527 --> 00:06:12,047
+Bu algoritmanın evet performansı iyi ama bazı problemlerde problem çözüm tünnesi büyüdükçe yeterli olmadığı görülmekte.
+
+27
+00:06:12,147 --> 00:06:19,127
+Bu nedenle genitlik algoritmayı geliştirmek için, performansının arttırılması için birçok literatürde çalışma da mevzul.
+
+28
+00:06:19,127 --> 00:06:34,728
+Biz de genetik algoritmayı geliştirmek için, performansını arttırmak için var olan klasik genetik algoritma süreçleri içerisine canlıların çevresel olumundan esinlenerek yeni bir adaptasyon süreci önermekteyiz.
+
+29
+00:06:35,040 --> 00:06:42,639
+Her sürecin seçim, çaprazlama ve mutasyon süreçlerinin içerisinde farklı operatörler de var literatürde.
+
+30
+00:06:42,639 --> 00:06:46,840
+Ve her operatör algoritmanın performansını da etkiliyor.
+
+31
+00:06:46,840 --> 00:06:54,640
+Biz de önermiş olduğumuz bu adaptasyon süreci içerisinde farklı adaptasyon operatörleri de önermekteyiz.
+
+32
+00:06:54,640 --> 00:07:03,239
+Amacımız bu önermiş olduğumuz süreçle beraber genetik algoritmanın performansını ve hızını arttırmak.
+
+33
+00:07:03,239 --> 00:07:09,599
+performansını arttırdığımız bu genetik algoritmayla birlikte de bir Turism ROT uygulaması bir işlem.
+
+34
+00:07:09,939 --> 00:07:15,080
+Bundan sonraki kısmı arkadaşım [öğrenci] devam edecek. Benim anlatacaklarımıza kadar teşekkür ederiz.
+
+35
+00:07:16,559 --> 00:07:22,159
+Merhabalar. İsmim [öğrenci]. Kontrol ve otomasyon mühendisliğinde yüksek lisans yapıyorum.
+
+36
+00:07:22,439 --> 00:07:31,419
+Ben de bu uygulamayla alakalı uygulamaya erişim Android ve iOS üzerinden olabilecek.
+
+37
+00:07:31,419 --> 00:07:45,439
+Dediğimiz gibi bu uygulamanın nasıl amacı? İstenilen yerlerin seçilmesi, gezecek yerlerin seçilmesinden sonra en kısa ve en verimli yolu bize bildirip bu şekilde bize konfor alanı yaratmak.
+
+38
+00:07:46,639 --> 00:07:54,679
+Projede elde edilmesi gereken ilişkilerle alakalı başlıklar var. Başlıkların her birini açıklayacağım şu an.
+
+39
+00:07:54,679 --> 00:08:08,940
+Yaşam kalitesine katkıyor. Biz bu şekilde gezmek, görmek istediğimiz yerleri uygulama üzerinden seçerek hem bizim için gezilecek, görülecek yerler hakkında fikir sahibi olmamızı sağlıyor.
+
+40
+00:08:08,940 --> 00:08:21,120
+Ayrıca bize en kısa rotayı çizdiği için zamandan tasarruf etmemizi sağlıyor. Bu sayede trafiğin çok fazla olduğu ülkemizde bu konuda bir konfor alanı yaratıyor.
+
+41
+00:08:21,119 --> 00:08:34,799
+Sürdürülebilir çevre enerjisine katkı alanında bizim için ayrıca trafik ilgisini alıp bize bilgi verdiği için bizi en az trafik olan bölgeye yönlendiriyor.
+
+42
+00:08:34,799 --> 00:08:48,219
+Yani en kısa sürede gidebileceğimiz yere. Bu şekilde fazladan trafikte kalıp benzin harcayıp çevreye verebileceğimiz karbondioksit oranı azaltarak çevreye de olumlu bir etkisi oluyor.
+
+43
+00:08:48,219 --> 00:08:58,379
+Dünyada ve ülkemizde bu trafik sorunu her yerde var.
+
+44
+00:08:58,379 --> 00:09:12,879
+Dediğimiz gibi bu sorunu köklü bir şekilde çözebilmek için uygulamayı kullanarak minimum miktarda gürültü ve trafik etkisine maruz kalıyoruz.
+
+45
+00:09:12,879 --> 00:09:22,819
+Bu şekilde hem günlük anlamda kafamız daha rahat oluyor hem de karbondioksit salınımında bir iyileşme oluyor.
+
+46
+00:09:24,039 --> 00:09:35,760
+Akademik alanda etki bu algoritmanın sürekli gelişebilmesi ve uygulamabilirliğinin artması için sürekli gelişime açık olması gerekiyor.
+
+47
+00:09:35,760 --> 00:09:47,299
+Bu alanda da hem akademik hem bireysel olarak bu genetik algoritmanın gelişmesinde çalışılması gerekiyor. Bu alanda da akademik bir etkisi görülüyor.
+
+48
+00:09:50,179 --> 00:10:01,799
+Potansiyel sektör uygulama alanlarında şunu şu şekilde düşünebiliriz. Yurt içinde veya yurt dışında bu turizmle uğraşan iş yerleri, ajantralı olabilir, başka yerler olabilir.
+
+49
+00:10:01,799 --> 00:10:18,139
+Bu uygulama sayesinde gelen müşterilerini hem daha gezilesi göldesi yerleri ulaştırarak hem de zamanla yoldan ve masraftan kurtularak daha kaliteli bir seyahat imkanı sağlayabilirler.
+
+50
+00:10:19,139 --> 00:10:28,459
+Bu şekilde onların ayarlaması gereken programı uygulama sayesinde daha kısa bir sürede uygulanabilir hale getirebilirler.
+
+51
+00:10:29,620 --> 00:10:43,659
+İstihdam imkanı olarak da dediğim gibi bu uygulamanın sürekli güncel kalabilmesi için, hem algoritmanın iyileştirebilmesi için yazılım alanında sürekli bir istihdam açığı olacaktır.
+
+52
+00:10:43,659 --> 00:10:50,979
+Bu şekilde istihdam olarak da ülkemize ve herkese katkıda bulunacaktır.
+
+53
+00:10:50,979 --> 00:11:02,739
+Rekabetçilik anlamında bu uygulamayı kullanıp bu şekilde faydalar sağlandığında mesela bir firma bunu kullanıyor, diğeri kullanmıyor.
+
+54
+00:11:02,739 --> 00:11:15,179
+Bunun avantajını sağlandığı zaman diğer firmanın ya bu uygulamayı kullanması lazım ya da bu şekilde bir yetimleri sağlayan bir uygulamayı kendisinin üretmesi lazım.
+
+55
+00:11:15,179 --> 00:11:25,139
+Bu şekilde de yani sektörde tutabilmesi için bu tarz işleri yapması gerekiyor diğer sektörlerin ve şirketlerin.
+
+56
+00:11:28,159 --> 00:11:42,599
+Ulusal güvenlik anlamındaki etkisi direkt siber ve sınır güvenliği açısından değil ama dediğim gibi trafikten kaçınıldığı için yakıt tüketiminde ciddi miktarda bir katkı sağlanıyor.
+
+57
+00:11:42,599 --> 00:11:46,039
+Zaman kısıtlı olduğu için biraz hızlı geçiyorum.
+
+58
+00:11:47,419 --> 00:11:56,539
+Proje ölçük ve proje katkısı da geliştirilen algoritmanın oluşturulması bu olayın yüzde yirmi beşini etkiliyor.
+
+59
+00:11:57,899 --> 00:12:05,759
+Gezilebilecek, görülebilecek yerinin keşfedilmesi, oraları rotaların oluşturulabilmesi için keşiflerin yapılması yüzde onunu,
+
+60
+00:12:05,759 --> 00:12:12,959
+uygulamada nihayet sonucu ulaştırılması bu projenin gerçekleşmesi için %65 etkili bir rol oynuyor.
+
+61
+00:12:14,579 --> 00:12:23,739
+Kaynaklar bu şekilde. Dinlediğiniz için teşekkür ediyorum. Sorunuz varsa yanıtlayabilirim. Sağ olun.
+
+62
+00:12:30,932 --> 00:12:34,971
+Evet, arkadaşlar, var mı sorusu olan?
+
+63
+00:12:42,868 --> 00:13:00,767
+Yok galiba, teşekkürler, sağ olun arkadaşlar. Diğer gruba geçelim. 12 numaralı grup. İlk [öğrenci] ve [öğrenci].
+
+64
+00:13:01,667 --> 00:13:03,447
+Evet hocam, merhaba, sesim geliyor herhalde.
+
+65
+00:13:03,447 --> 00:13:08,427
+Evet, geliyor. Evet, [öğrenci] sensin.
+
+66
+00:13:08,427 --> 00:13:11,407
+Evet, buyurun
+
+67
+00:13:11,407 --> 00:13:20,408
+Hocam, ilk nur sağlık sorunlarından dolayı sunuma katılamıyor, o yüzden tek başıma ben sunumu gerçekleştireceğim
+
+68
+00:13:20,408 --> 00:13:25,927
+Tamam, geçmiş olsun, daha sonra detaylı bir bilgi verir kendi diye tahmin ediyorum
+
+69
+00:13:25,927 --> 00:13:27,588
+Tamam hocam
+
+70
+00:13:27,588 --> 00:13:31,467
+Değerli arkadaşlar, değerli hocalarım, hoş geldiniz
+
+71
+00:13:31,467 --> 00:13:38,747
+Bu hafta sizlere bugün daha doğrusu TÜBİTAK 1002 projemiz olan derin öğrenme ve görüntü işleme tekniklerini kullanarak
+
+72
+00:13:38,747 --> 00:13:44,927
+raylı sistemlerde yolculara istasyon ve vagon öneri sisteminin geliştirmesi adlı projemi tanıtacağım.
+
+73
+00:13:45,527 --> 00:13:52,787
+Şimdi konunun özgün değeri ve literatürüne baktığımızda İstanbul'da raylı sistemler altındaki çalışmaları bildiğiniz gibi Metro İstanbul AŞ'i yürütüyor.
+
+74
+00:13:52,787 --> 00:14:04,267
+Metro İstanbul Aşe'nin 2020 yılında yaptığı çalışmalara göre COVID-19 sebebiyle yolcu sayılarında önemli derecede bir azalma yaşandığını saptamışlar.
+
+75
+00:14:04,607 --> 00:14:18,327
+Gene İngiltere'de yapılan bir çalışmaya göre COVID-19 dönemi Mayıs-Haziran 2020 yapılan Birleşik Krallık çapında bir ankete göre seyahatlerde önemli bir düşüş, trenle seyahatte güven kaybı yaşandığı da aynı zamanda belirtilmiştir.
+
+76
+00:14:18,327 --> 00:14:33,747
+2020 yılında Wuhan'da raylı sistemler üzerinde yapılan bir çalışmaya göre de bulaşma oranının mesafe arttıkça azaldığı ancak birlikte sayıat süresi arttıkça arttığı yönde veriler sayısal değerlerle açıklanmıştır.
+
+77
+00:14:34,187 --> 00:14:37,747
+Yolculara güvenli bir sosyal mesafe ile kontrol...
+
+78
+00:14:37,747 --> 00:14:39,548
+Pardon
+
+79
+00:14:43,764 --> 00:14:55,184
+Yolculara güvenli bir sosyal mesafe ile kontrol etmek, uygun tren koltuk mesafelerini ayarlamak, istasyonlarda ve trenlerde yaşanacak virüs bulaşma riskinin temel önlemlerinden biri olarak gözükmektedir.
+
+80
+00:14:55,184 --> 00:15:05,483
+Proje sorumuza baktığımızda istasyonda bulunan yolcular için vagon önerimi sisteminin tasarlanması yolcuları daha güvende hissettirir mi ve bulaşma riskini azaltır mı?
+
+81
+00:15:05,483 --> 00:15:17,444
+Ayrıca kullanıcının istasyon dışından kullanabileceği bir mobil uygulama ile raylı sistemlerde insan yoğunluklarını anlık olarak görmesi ve ulaşım tercihini buna göre yapması mümkün müdür?
+
+82
+00:15:18,043 --> 00:15:26,823
+Burada sunduğumuz hipotez ise istasyon ve trenlerdeki yoğunluk oranın önceden belirlenmesi sayesinde kullanıcılar mobil uygulamayla yolculuklarını planlayabilir.
+
+83
+00:15:26,823 --> 00:15:35,823
+Bunun harici de vagon dolluk oranlarının hesaplanması ile kullanıcılara yoğunluğu az olan vagon önerisi yapılacaktır ve kullanıcı bu vagonlara yönlendirilecek.
+
+84
+00:15:36,543 --> 00:15:45,783
+Bu sayede sosyal mesafenin arttırılması ile bulaşma riski azalacak ve yolcuların raylı sistemler kullanması yönünde güvenliği artacaktır olarak görmekteyiz.
+
+85
+00:15:45,784 --> 00:16:00,984
+Spor ojenin hedefine baktığımızda vagon içerisindeki ve istasyondaki yolcu sayısının belirlenmesi, istasyon ve vagonlardan elde eden veriler bir bulut sisteminde depolunarak sekron bir şekilde yolculuk yapmak isteyen kullanıcılara mobil uygulamayla yoğunluğu görmeleri,
+
+86
+00:16:01,543 --> 00:16:10,264
+uluşum yapan yolcular için vagon yoğunluğuna göre yolcuların farklı vagonlara yönlendirmesi işleminin bilgilendirme ekranı ile anlık olarak paylaşılması.
+
+87
+00:16:11,204 --> 00:16:18,984
+Yöntem aşamasına geçtiğimizde araştırmanın geliştirilmesi kısmında çalışmada bu bölümü biz 3 aşamada gerçekleştireceğiz.
+
+88
+00:16:19,403 --> 00:16:27,243
+Görüntü ön işleme, görüntüde bulunan insan tespiti ve yoğunluk analizinin yapılması için insan sayma işlemi gerçekleştirilecektir.
+
+89
+00:16:27,243 --> 00:16:37,463
+Çalışmada görüntüdeki insanların tespiti için konvolüsyonel sinir ağları kullanarak nesne tespiti yapan yolu algoritmasını kullanmayı planlamaktayız.
+
+90
+00:16:37,463 --> 00:16:45,883
+Nesne tespiti işlemi yapılırken tek seferde neural ağdan geçtiği için hızlı olduğundan dolayı bu algoritma tercih edilmiştir.
+
+91
+00:16:46,403 --> 00:16:53,463
+Model Coco Veri Seti ile eğitilecektir. Coco Veri Seti görüntüdeki nesnenin etiketlenmesi, bölümlere ayrılmasını sağlamaktadır.
+
+92
+00:16:54,283 --> 00:16:59,463
+Tabi projemizi Python programlama diliyle geliştirmeyi planlamaktayız.
+
+93
+00:16:59,603 --> 00:17:05,363
+Python programlama dilinin OpenCV ve Numpy kütüphanelerini ağırlıklı olarak burada kullanacağız.
+
+94
+00:17:06,143 --> 00:17:11,003
+Vagonlarda bulunan iki kapıya giriş ve çıkış tespitleri için bir adet kamera yerleştirilecek,
+
+95
+00:17:11,463 --> 00:17:15,043
+görüntü alınabilmesi için yine OpenCV kütüphanesi kullanılacaktır.
+
+96
+00:17:16,263 --> 00:17:20,903
+OpenCV kullanarak kameradan anlık olarak frame çekmek için video capture nesnisi oluşturulup
+
+97
+00:17:20,903 --> 00:17:23,023
+yine burada kullanılması planlanmaktadır.
+
+98
+00:17:23,023 --> 00:17:28,523
+Elde ettiğimiz insan etiketi nesnelerinin vagonun hacmine göre yoğunluğunu hesapladıktan sonra
+
+99
+00:17:28,523 --> 00:17:31,803
+elde edilen bu yoğunluklar kendi içlerinde ağırlandırılacak,
+
+100
+00:17:31,803 --> 00:17:42,223
+bu noktadan sonra belirlenen eşik seviyelerine göre renklendirme yapılacak ve istasyondaki bilgi ekranlarına ve uygulamaya MQTT protokolü ile aktarmayı planlamaktayız.
+
+101
+00:17:42,843 --> 00:17:49,083
+Bunun haricinde diğer bir aşamaya geçtiğimizde mobil uygulama kısmını ise Flutter platformunda geliştirmeyi planlıyoruz.
+
+102
+00:17:49,203 --> 00:17:52,403
+Çünkü Flutter bir çapraz platform olarak karşımıza çıkıyor.
+
+103
+00:17:52,403 --> 00:18:04,144
+Hem iOS hem Android altyapısında çok hızlı bir geliştirme yapmak, platformlar arası çözümlerde hem maliyete hazırlamak hem de tasarruf etmeye gerçekten yardımcı oluyor.
+
+104
+00:18:04,704 --> 00:18:06,443
+Çok yönlü kullanabiliyoruz.
+
+105
+00:18:07,823 --> 00:18:16,723
+Ardından projemizi bu şekilde geliştirdikten sonra projemizin çıktılarını görebilmek için mobil geliştirdiğimiz uygulama için bir değerlendirme hareketini kullanıcılarımızı sunacağız.
+
+106
+00:18:16,723 --> 00:18:25,863
+Bunun haricinde projenin avantaj ve dezavantajlarını belirleyebilmek için uzman desteği alınarak yarı yapılandırılmış gözlem formu oluşturulacak,
+
+107
+00:18:26,363 --> 00:18:30,743
+saha uygulaması gözlemlenerek veri toplama işlemleri gerçekleştirilecektir.
+
+108
+00:18:31,223 --> 00:18:41,663
+Bunun haricinde ilgili paydaşlar ile gerçekleştirilen proje için hazırlandırılan yarı yapılandırılmış görüşme formu ile de yine görüşmeler gerçekleştireceğiz.
+
+109
+00:18:42,259 --> 00:18:53,720
+Proje yönetimine baktığımızda ihtiyaç analizinin belirlenmesi, proje ihtiyaçlarının temin edilmesi, ilgili paydaşlarla iletişimin kurulması görevinde İlk [öğrenci] ve ben burada görev alıyorum.
+
+110
+00:18:54,299 --> 00:19:09,719
+Birinci aşamamız olan sunucu ayarlarının ve bulut ortamının oluşturulması, derin öğrenme, görüntü işleme algoritmalarını tasarlamak, model veri setlerini eğitmek, başarılı kriterlerini değerlendirmek, gerekli durumlarda modeli yeniden eğitmek [öğrenci] hocamın görevi olarak karşımıza çıkıyor.
+
+111
+00:19:09,719 --> 00:19:17,120
+Aşama 2'de gene mobil uygulama, iOS ve Android işletim sistemler için kullanılabilir hale getirmek için ilk dur hocam burada devreye giriyor
+
+112
+00:19:17,120 --> 00:19:26,940
+Uygulama test ve hata gidermelerde ekipmanların vagonları ve istasyonları entegre etmek, uygulamaları çeşitli koşularda test etmek, olası hataları çözüm üretmek benim görevim
+
+113
+00:19:26,940 --> 00:19:34,159
+Aynı zamanda geri bildirimleri değerlendirmek ve bunların oluşmasını sağlamak yine aynı şekilde benim görevim olarak karşıya çıkıyor
+
+114
+00:19:34,159 --> 00:19:40,239
+Risk yönetimi olarak baktığımızda burada derin öğrenme algoritması yetersiz veyahut da yavaş kalabilir.
+
+115
+00:19:40,759 --> 00:19:45,139
+Sunucunun depolama ortalamlarının yetersiz kalma durumu gene söz konusu olabilir.
+
+116
+00:19:46,179 --> 00:19:53,399
+İşlemlerin planlanan takvime uymaması, kullanılan ekipmanların yetersizliği veyahut da bize arıza problem çıkarma ihtimali,
+
+117
+00:19:53,399 --> 00:20:01,439
+aynı zamanda da kullanıcının mobil uygulamaya erişiminin problem yaşanması da karşımıza gelebilecek riskler arasında.
+
+118
+00:20:01,440 --> 00:20:10,759
+Yaygın etkiye baktığımızda bilimsel akademik bir çıktı olarak bir bildiri sunusu ve indeksi bir dergide makale olarak düşünmekteyiz.
+
+119
+00:20:11,380 --> 00:20:19,120
+Ekonomik, ticari, sosyal çıktı olarak yeni ve teknolojik bir endüstriyel süreç geliştirmek için referans olacağını düşünüyoruz.
+
+120
+00:20:19,639 --> 00:20:29,399
+Toplumsal ve kültürel etkimizde yolcuların hem psikolojik hem sosyolojik anlamda rahat bir ulaşım sürmesini sağlayarak yaşam kalitesine katkıda bulmayı planlıyoruz.
+
+121
+00:20:29,399 --> 00:20:36,899
+Raylı sistemlerde bulaş riskini minimum düzeye indirerek sağlık sisteminin sektiğe uğramasında yine önüne geçmeyi planlıyoruz
+
+122
+00:20:36,899 --> 00:20:53,959
+Akademik etki olarak sadece raylı sistemlerde değil tüm ulaşım sistemlerinde kullanabilecek bir sistem geliştirilmesi için herhangi bir çalışmalara öne ayak olmak ve ileride gelebilecek salgın hastalıklara karşı da yine bir destek sağlama planımız var
+
+123
+00:20:53,959 --> 00:21:02,200
+Ekonomik etkiye baktığımızda ülkenin bu tarz krizlerde ekonomik anlamda minimum zararla atlatmasını desteklemek karşımıza çıkıyor.
+
+124
+00:21:02,200 --> 00:21:09,799
+Bulaşma riskini azaltılacağı öngörüldüğü için ekonomik sağlık, eğitim, istihdam sistemi de yine aynı şekilde desteklenecektir.
+
+125
+00:21:10,439 --> 00:21:19,159
+Ulusal güvenlik etkisine baktığımızda yolcuların pandemilerde güvenilir, refah bir şekilde ulaşım yapmasını sağlamak olarak da karşımıza çıkıyor.
+
+126
+00:21:19,159 --> 00:21:24,059
+Olabildiğince hızlı bir şekilde anlattım arkadaşlar. Dinlediğiniz için teşekkür ederim.
+
+127
+00:21:26,219 --> 00:21:29,339
+Herhangi bir sorusu olan varsa alabilirim.
+
+128
+00:21:34,996 --> 00:21:39,575
+Evet, teşekkürler. Galiba sorusu olan yok. O zaman 22.000 gruba... Efendim?
+
+129
+00:21:39,936 --> 00:21:42,355
+Bir soru soracaktım da şey... Tabii ki.
+
+130
+00:21:42,355 --> 00:21:44,855
+İmin neydi? Pardon. Efendim?
+
+131
+00:21:45,475 --> 00:21:49,416
+İsmin neydi? [öğrenci]. [öğrenci]. Efendim? Evet.
+
+132
+00:21:49,416 --> 00:21:59,975
+Rheinli sistemlerde şimdi içerideki yolcu sayısını kullanıcıya bildirmek yerine, bildirmenin yanı sıra belli bir kapasitenin üzerinde kapıların açılmaması gibi bir sistemde düşünüldü mü?
+
+133
+00:21:59,975 --> 00:22:23,735
+O şekilde bir sistem düşünmedik. Daha çok burada bizim yoğunluğu belirleme ve bir yolcu binmeden önce araca uzaktan da erişebilip örnek veriyorum bu seferdeki seferin yoğunluk oranını görüp ona göre bir tercih yapabilmesini örnek veriyorum mesai giriş çıkışları veyahut da bir özel kutlama var futbol maçı var şu var bu var.
+
+134
+00:22:23,735 --> 00:22:29,535
+bu gibi durumlarda seyahat yapmayı planlayan yolcunun ona göre kendi planını yapması.
+
+135
+00:22:30,355 --> 00:22:38,855
+Şimdi dediğin boyutu düşürsek, şeyin açılıp kapanması gibi farklı ters tepepilir, farklı etkiler yaratabilir.
+
+136
+00:22:39,496 --> 00:22:41,615
+O yüzden o açıdan hiç bakmadık.
+
+137
+00:22:42,335 --> 00:22:50,155
+Anladım. Yani kullanıcıdan ziyade biraz belediyeyi devletmeyi düşünmüştüm de bu şekilde de tabii ki de çok güzel toplayıcı olmuş.
+
+138
+00:22:50,155 --> 00:22:55,155
+Bir açmazsak inecek olanlar inemez bu arada bunu da biliyorsunuz.
+
+139
+00:22:56,175 --> 00:22:57,475
+Evet onu da düşünmemiştim hocam.
+
+140
+00:22:58,315 --> 00:23:11,155
+Tamam mı? Yani böyle bir cevap da yeterli güzellik de olurdu. Şimdi 22 numaralı gruba geçelim. [öğrenci] ve [öğrenci].
+
+141
+00:23:11,155 --> 00:23:14,875
+Evet hocam böyle değil
+
+142
+00:23:14,875 --> 00:23:17,475
+Buyurun arkadaşlar
+
+143
+00:23:17,475 --> 00:23:20,475
+Çok pardon bir saniye
+
+144
+00:23:20,475 --> 00:23:23,275
+Ekranlar arasında geçiş yaparken zulmü bulamadım bir türlü
+
+145
+00:23:23,275 --> 00:23:25,135
+Evet buyurun
+
+146
+00:23:25,135 --> 00:23:26,995
+Siz de gençler dinliyoruz
+
+147
+00:23:35,763 --> 00:24:05,763
+Merhaba.
+
+148
+00:24:05,763 --> 00:24:12,144
+ve bu proje, ve bu proje,
+
+149
+00:24:12,144 --> 00:24:31,664
+ve bu proje,
+
+150
+00:24:31,664 --> 00:24:33,463
+ets.
+
+151
+00:24:33,463 --> 00:24:46,823
+So blockchain is our, as it's called a distributed ledger, is a shared ledger that support process while recording a transaction,
+
+152
+00:24:46,823 --> 00:24:54,984
+and tracking during the business network.
+
+153
+00:24:54,984 --> 00:24:55,984
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde,
+
+154
+00:25:24,984 --> 00:25:31,104
+P2P, or P2P energetrading,
+
+155
+00:25:31,104 --> 00:25:36,583
+is the latest trend of energy resources
+
+156
+00:25:36,583 --> 00:25:41,863
+that provide new energy resources
+
+157
+00:25:41,863 --> 00:25:46,584
+and sharing it in a disputed manner.
+
+158
+00:25:46,584 --> 00:25:49,463
+If we look here to this figure,
+
+159
+00:25:49,463 --> 00:25:57,064
+Bu bir teknik kullanımda, birçok kullanımda.
+
+160
+00:25:57,064 --> 00:25:58,064
+Bu, bu,
+
+161
+00:26:29,064 --> 00:26:59,043
+ve sonucu için
+
+162
+00:26:59,064 --> 00:27:14,064
+ve bu tarzı
+
+163
+00:27:14,064 --> 00:27:19,064
+bu tarzı
+
+164
+00:27:19,064 --> 00:27:24,064
+ve bu tarzı
+
+165
+00:27:24,063 --> 00:27:54,043
+Bu da yüksekliğe eğitimde bu konusunda
+
+166
+00:27:28,660 --> 00:27:29,660
+Bu nedenle birçok
+
+167
+00:27:58,660 --> 00:27:59,660
+ve bu enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilecek bir enerji için kullanılabilece bir enerji
+
+168
+00:28:28,660 --> 00:28:32,700
+Bu teknik kullanımda, bu teknik kullanımda,
+
+169
+00:28:32,700 --> 00:28:47,660
+bu teknik kullanımda,
+
+170
+00:28:47,660 --> 00:28:49,660
+ve ekonomik kullanımda,
+
+171
+00:28:49,660 --> 00:28:50,660
+Energi Trading.
+
+172
+00:28:50,660 --> 00:29:00,660
+Also, it's a complete smart contract platform and a real-life cryptographic testing environment.
+
+173
+00:29:00,660 --> 00:29:09,660
+We'll be implementing using some techniques like Ethereum, Virtual Machine, Emek, Metamask,
+
+174
+00:29:09,660 --> 00:29:10,660
+etc.
+
+175
+00:29:10,660 --> 00:29:11,660
+ve bu konusunda bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir bir şekilde bir şekilde bir
+
+176
+00:29:40,660 --> 00:29:41,620
+My friend Charlie.
+
+177
+00:29:43,460 --> 00:29:44,380
+Helmalar.
+
+178
+00:29:45,359 --> 00:29:46,439
+Ben [öğrenci] çalışır.
+
+179
+00:29:46,760 --> 00:29:47,639
+Şimdi ben dervet canım.
+
+180
+00:29:48,120 --> 00:29:50,520
+Kamera açamıyorum hocam kusura bakmayın.
+
+181
+00:29:51,040 --> 00:29:52,059
+İş yerinde olduğum için.
+
+182
+00:29:52,719 --> 00:29:57,719
+Bu projenin yönetiminde öncelikle bir analiz aşaması gerçekleştirildi.
+
+183
+00:29:58,100 --> 00:29:59,680
+Gerçekleştirecek yerin daha doğrusu.
+
+184
+00:30:00,380 --> 00:30:03,760
+Bu yaklaşık üçte beşte biri kadar bir süreci kapsıyor.
+
+185
+00:30:03,760 --> 00:30:06,699
+Daha sonra dizayn yani tasarım aşamasına geçilip
+
+186
+00:30:06,699 --> 00:30:08,579
+üretimi ve testler
+
+187
+00:30:08,579 --> 00:30:10,919
+yapılacak şeklinde bir tasarlanmalı
+
+188
+00:30:10,919 --> 00:30:11,739
+düşünüldü.
+
+189
+00:30:12,839 --> 00:30:14,239
+Bu uygulama içerisinde
+
+190
+00:30:14,239 --> 00:30:16,759
+bazı karşılaştıracak
+
+191
+00:30:16,759 --> 00:30:17,779
+listeler var. Bunlar
+
+192
+00:30:17,779 --> 00:30:20,579
+güçlü power plant sistemlerinin
+
+193
+00:30:20,579 --> 00:30:21,559
+arızaları,
+
+194
+00:30:22,939 --> 00:30:23,919
+tesislerdeki,
+
+195
+00:30:24,779 --> 00:30:26,839
+sanal tesislerdeki sistemsel
+
+196
+00:30:26,839 --> 00:30:28,519
+hatalar olabilir. Onun dışında
+
+197
+00:30:28,519 --> 00:30:30,919
+blok zincirinin adem merkeziyetçiliğine
+
+198
+00:30:30,919 --> 00:30:31,959
+güvenememek, yani
+
+199
+00:30:31,959 --> 00:30:33,739
+merkezi bir
+
+200
+00:30:33,739 --> 00:30:36,639
+sunucunun olmaması
+
+201
+00:30:36,639 --> 00:30:40,579
+ve peer-to-peer uçtan önce bir bağlantı sağlanması durumu.
+
+202
+00:30:41,479 --> 00:30:46,020
+Onun dışında solidity kullanılacağı için solidity'de yaşanabilecek yazılım hataları
+
+203
+00:30:46,020 --> 00:30:48,079
+çok bilinen bir programlama bile değildir.
+
+204
+00:30:48,819 --> 00:30:53,779
+Hastalık ve ölüm gibi nedenler, ekonomik kriz gibi bütçeyi karşılayamama durumları,
+
+205
+00:30:54,320 --> 00:31:00,139
+bu hafif sonucu fiziksel alanların zarar görmesi, bu da bizim için önemli bir risk şeklindedir.
+
+206
+00:31:00,139 --> 00:31:05,699
+Göreği engelleyen, iç savaş gibi olaylar da bu durumda olumsuz etki edecek şekildedir.
+
+207
+00:31:05,699 --> 00:31:11,059
+Bu risklerin etkilerini önlemek veya azaltmak için dikkate alması gereken bazı durumlar da vardır.
+
+208
+00:31:11,959 --> 00:31:16,319
+Bu şekilde proje gerçekleştirmeye çalışılacaktır ne olursa olsun.
+
+209
+00:31:17,019 --> 00:31:19,419
+Bu risk yönetimi tarafımızda planlandı.
+
+210
+00:31:19,519 --> 00:31:26,079
+Onun dışında projenin yükselmesi için şartlar yeniden test edilecek ve projeye kaldığı yerden devam etmek imkanı sağlanacaktır.
+
+211
+00:31:27,700 --> 00:31:47,519
+Bu peer-to-peer virtual power plant enerji trading işleminde bazı sosyal ve kültüre etkiler görülecektir. Burada yaşam kalitesine bir katkı sağlanacaktır. Çevreye temiz bir enerji transferi ve sürdürülebilir bir sistem tasarlanmış olacaktır. Eşler kendi alanında peer-to-peer enerji transferi de yapabileceklerdir.
+
+212
+00:31:47,519 --> 00:31:57,959
+Aynı zamanda merkeziyet olmadığı için üçüncü şahıslarla aracı bir durum oluşmayacağından bayağı bir ekonomik katkı sağlayacaktır.
+
+213
+00:31:58,659 --> 00:32:08,380
+Defahan ve eğitim seviyesinin iyileşmesine katkı sağlayacak, temiz enerjinin yaygın kullanımı olan ülke veya dünya düzeyinde önemli bir sosyal sorunlar çözüm ve çevre mükemmeliyeti sağlayacaktır.
+
+214
+00:32:11,139 --> 00:32:17,319
+Burada akademik etkiye bakacak olursak bu doğrultuda yeni araştırma ve geliştirme kararları sunulacaktır.
+
+215
+00:32:17,319 --> 00:32:29,019
+yeni projeler için bir ön ayak olacaktır. Ulusal arası arki işbirlikleri, diğer projelerde deneyimli araştırmacılar ve enerji ve doğal kaynaklar kurum ve kuruşlarıyla işbirliği yapılacaktır.
+
+216
+00:32:29,019 --> 00:32:39,780
+Büyük enerji transferlerinden bahsediliyor orada. Eğitim ve kamu, sanayi sektörlerinin işbirliği yoluyla araştırmacıların sayısının daya kalitesinde değişiklikler olacak.
+
+217
+00:32:40,539 --> 00:32:43,519
+Üniversitelerin endüstri işbirliklerine katkılar sağlanmış olacak.
+
+218
+00:32:43,519 --> 00:32:57,339
+Ekonomik etkiye bakarsak, burada bahsettiğimiz üçüncü kişi, herhangi bir aracı, ajente gibi bir durum olmasından kaynaklı olarak ekonomik anlamda kişilerin bütçesini yormayacak.
+
+219
+00:32:57,339 --> 00:33:04,159
+Yani peer-to-peer smart kontrakla akıllı sözleşme tabanlı olduğu için enerji transferinde ekstra bir gider olmayacak.
+
+220
+00:33:04,339 --> 00:33:11,360
+Yani biz enerjiyi getirdik, sırf taşıma bedeli şu, şu, KDV bedeli gibi durumlar olmayacak.
+
+221
+00:33:11,359 --> 00:33:38,399
+Blockchain'in asıl amacı da zaten merkeziyeti önlemektir. Potansiyel sektör uygulama alanları olarak kırsal ve bölgeyesel temiz enerji gelişmenin etkisi olacaktır. Küresel pazar tahminlerinde küresel bazda örnek teşkil edecek ve ihraç edilebilecektir. İstihdama katkısı olarak da kullanıcılar istihdam ve ticaret enerjisine katılabileceklerdir. Rekabetçilik durumunda da geneliksel ticari yaklaşımlarla kullanıcı odaklı rekabetinden dolayı tercih sebebi olacaktır.
+
+222
+00:33:38,399 --> 00:34:05,580
+Bu sağ güvenliğe etkisi de bu blockchain algoritmasının uyguladığı güvenlik yöntemleri sayesinde veri güvenliği üst düzeydedir. ŞA256 hashing algoritmasını kullanmaktadır. Burada şifrelemeler sonucunda zincir durumu oluşuyor bulatlar arasında ve bunu kırması imkansız durumdadır. Yani enerji kaybı oluşturacaktır. Veri alışverişi mümkün değil ancak veriler herkes tarafından yöntüleyebilecek durumdadır. Teşekkür ediyoruz bizi dinlediğiniz için. Son ne derselabilir.
+
+223
+00:34:12,083 --> 00:34:20,064
+Evet, yok herhalde. O zaman 25 numaralı grup [öğrenci] ve [öğrenci]. Burada mısınız arkadaşlar?
+
+224
+00:34:23,544 --> 00:34:25,143
+Merhabalar hocam, buradayız.
+
+225
+00:34:25,863 --> 00:34:26,883
+Merhabalar, buyurun.
+
+226
+00:34:30,083 --> 00:34:31,264
+Söz sizin.
+
+227
+00:34:33,903 --> 00:34:35,803
+Merhabalar, ben [öğrenci].
+
+228
+00:34:35,803 --> 00:34:44,823
+Hübitak 1002 hızlı destek programında [öğrenci] ile yaptığımız proje başvurusunun sunumunu gerçekleştireceğiz.
+
+229
+00:34:46,243 --> 00:35:01,003
+Projemizin adı eğitim yönetim sistemi uzaktan ve övgün eğitim süreçlerinde öğretmen, öğrenci, veri ve okul idaresinin karşılaştığı problemleri ihtiyaçları gönderine alarak tasarlanmıştır.
+
+230
+00:35:01,003 --> 00:35:07,923
+Proje genel hatlarıyla öğrencinin eğitim sürecinde aktif katılımla sağlanmasını amaçlıyorum.
+
+231
+00:35:07,923 --> 00:35:08,823
+Yardım sıkıldı ya.
+
+232
+00:35:09,023 --> 00:35:30,403
+Veli'nin öğrenci takibi yapabildiği öğrencilerin eğitim sürecinde ihtiyaç duyacağı zihin haritaları, sınavlar gibi eğitim materyali için içeren bir mobil uygulama tasarlamaya başlıyoruz.
+
+233
+00:35:31,003 --> 00:35:39,203
+Eğitimin tüm paydaşlarının örgün eğitimde ve özellikle uzaktan eğitim sürecinde gereksin duyduğu araçları barındırıyor projemiz.
+
+234
+00:35:40,804 --> 00:36:00,804
+Projenin amacı kısmına gelirsek, doçent doktor, Milli Eğitim Bakanlığı'nın 2020 küresel salgın döneminde uzaktan eğitim izleme ve değerlendirme raporuna göre tüm öğrencilerin derse katılım oranı %23,6'dır.
+
+235
+00:36:01,003 --> 00:36:06,343
+Rapora göre uzaktan eğitim, hiç katılma imkanı olmayan öğrencilerin oranı ise %13'tür.
+
+236
+00:36:07,523 --> 00:36:16,124
+Buna göre derse katılım, yani katılma imkanı olup da derse katılma oranının oldukça düşük olduğu görünmektedir.
+
+237
+00:36:16,124 --> 00:36:24,664
+Bu durumda öğrencilerin derse katılımlarının denetlenmesi, derslerin öğrenci merkezi ve aktif katılımını sağlayacak şekilde işlenmesinin önemini ortaya koyuyor.
+
+238
+00:36:24,664 --> 00:36:38,783
+Doçent Orkları [öğrenci] tarafından yapılan aktif öğrenme yönetiminin kullanıldığı çalışmaların öğrenci başarısı, tutumu ve görüşleri açısından incelenmesi isimli çalışmada
+
+239
+00:36:38,783 --> 00:36:52,944
+bu çalışmada 203 tane makale incelenmiş, yapılan sonuçta da aktif öğrenmenin eğitimi olan etkisi araştırılmış.
+
+240
+00:36:52,944 --> 00:36:58,324
+ve burada da %95 oranında olumlu sonuç verdiği belirlenmiş.
+
+241
+00:37:00,184 --> 00:37:06,164
+Projenin amacı eğitim-öğretim sürecinde karşılaşılan sorunlara çözüm getirmektir.
+
+242
+00:37:06,244 --> 00:37:14,263
+Öğrenci merkezi eğitimi hedefleyen bu proje yoğunlukla öğrencilerin dersi etkin katılımı sağlayan uygulamalar odaklanmıştır.
+
+243
+00:37:14,263 --> 00:37:19,863
+Yani bu tarz kahop gibi uygulamaların bütününü kapsayan bir mogul uygulama aslında.
+
+244
+00:37:19,863 --> 00:37:29,363
+Bunun yanında veli takibi ve veli eğitim öğretim sürecine ortak etmeyi öğretmen ve veli idarecinin işini kolaylaştıracak özellikleri de içermektedir.
+
+245
+00:37:30,123 --> 00:37:45,363
+Ayrıca diğer bir amacımız ise yerli bir uygulamayı ülkeye kazandırarak okulların yurt dışı menşeili uygulamalardan kurtararak hem kişisel belirlerin güvenliği sağlamak hem de yerli imkanların yurt dışına çıkışını engellemektir.
+
+246
+00:37:45,363 --> 00:37:55,063
+Projemizin özelliklerine gelirsek, proje öğrencinin anlık olarak test edilebildiği anlık quiz uygulamasını içeriyor.
+
+247
+00:37:55,843 --> 00:38:06,604
+Öğrencilerin ders konularını tartışabilmeyi bir koruma ortamı, derslerin, derslerde gördüğü konuları özetleyen zihin harikaları, öğrenci ve öğretmenin
+
+248
+00:38:07,539 --> 00:38:30,439
+öğrenmeyi daha kalıcı hale getirmesini sağlayan akıllı tahta yönetim uygulaması, öğrenci öğretmen mesajlaşma uygulaması, eğitim içeriklerini barındıran e-öğrenme özelliği, anket uygulaması, ders dışı etik planlama, duyurup anıfı ve okul lideresinin kullanılabileceği ders yönetim sistemi, ders programı yönetim sistemini içermektedir.
+
+249
+00:38:31,819 --> 00:38:36,300
+Benim anlatacağım yer buraya kadardı. Buradan sonra [öğrenci] değer alacak.
+
+250
+00:38:37,539 --> 00:38:43,600
+Merhabalar, ismim [öğrenci]. Ekran paylaşımını ben yapayım isterseniz hocam.
+
+251
+00:38:48,628 --> 00:38:54,008
+Ben öncelikle proje yapma şemasını da organizasyon şemasını anlatacağım.
+
+252
+00:38:55,088 --> 00:38:58,847
+Toplamda proje 6 kişiden oluşacak, 6 kişiyi gerçekleştirecek.
+
+253
+00:38:59,088 --> 00:39:08,687
+Proje yürütücüsü şu anda Milli Eğitim Bakanlığında idareci olan, aynı zamanda öğretmen olan ekip arkadaşım [öğrenci] tarafından yapılacak.
+
+254
+00:39:08,808 --> 00:39:10,447
+Aynı zamanda kendisi doktor öğrencisi.
+
+255
+00:39:12,447 --> 00:39:16,107
+Bir kişi kıdemli yazılım tasarımı ve geliştirme mühendisi.
+
+256
+00:39:16,107 --> 00:39:20,907
+Ben hala hazırda sektörde dördüncü yılımı dolduruyorum yazılım mühendisliği sektöründe.
+
+257
+00:39:21,767 --> 00:39:24,308
+Daha önce birçok projede başlangıcından itibaren bulundum.
+
+258
+00:39:24,387 --> 00:39:25,827
+TÜBİTAK projesinde de çalıştım.
+
+259
+00:39:26,007 --> 00:39:27,047
+Hala hazırda da çalışıyorum.
+
+260
+00:39:28,427 --> 00:39:32,587
+İkinci bir mühendis yine yazılım tasarımı ve geliştirme mühendisi olacak.
+
+261
+00:39:34,047 --> 00:39:40,087
+Bunun sebebi yazılım tasarımı geriye dönüşlerden çok maliyet yazılım tasarımındaki hatalar
+
+262
+00:39:40,087 --> 00:39:43,047
+geriye dönüşlerden çok maliyeti oluşturan hatalardır.
+
+263
+00:39:43,987 --> 00:39:51,308
+İkinci bir mühendis bir ad soyadı yazdığımız yani yazılım tasarımı ve geliştirme mühendisi olacak.
+
+264
+00:39:51,308 --> 00:39:53,547
+Bir tane yazılım geliştirme mühendisi.
+
+265
+00:39:53,727 --> 00:39:57,147
+Bu mühendis sadece geliştirme sürecinde yer alacak.
+
+266
+00:39:57,327 --> 00:39:59,187
+Yazılım tasarımında yer almayacak.
+
+267
+00:39:59,887 --> 00:40:03,027
+Bir mühendis yazılım geliştirme ve test mühendisi olacak.
+
+268
+00:40:03,187 --> 00:40:05,667
+Hem geliştirme süreçlerinde hem de test süreçlerinde yer alacak.
+
+269
+00:40:06,348 --> 00:40:11,147
+Bir kişi de yazılım test mühendisi olarak sadece test süreçlerinde yer alacak.
+
+270
+00:40:11,147 --> 00:40:13,647
+bir organizasyon şeması belirledik.
+
+271
+00:40:13,747 --> 00:40:14,807
+Toplamda 6 kişi olacak.
+
+272
+00:40:16,187 --> 00:40:17,128
+İş paketlerimiz
+
+273
+00:40:17,128 --> 00:40:19,067
+toplamda 9 tane iş paketi olacak.
+
+274
+00:40:20,687 --> 00:40:21,427
+Öncelikle birinci
+
+275
+00:40:21,427 --> 00:40:23,488
+iş paketi muadil yurt dışı
+
+276
+00:40:23,488 --> 00:40:25,307
+ürünlerin incelenmesi. Burada
+
+277
+00:40:25,307 --> 00:40:27,447
+en önemli kriter muadil yurt dışı
+
+278
+00:40:27,447 --> 00:40:29,147
+ürünlerinde EduPage'dir. EduPage
+
+279
+00:40:29,147 --> 00:40:33,607
+hatırladığım kadarıyla İspanya
+
+280
+00:40:33,607 --> 00:40:35,307
+merkezli bir
+
+281
+00:40:35,307 --> 00:40:37,427
+eğitim yönetim sistemi ürünü olan bir
+
+282
+00:40:37,427 --> 00:40:39,547
+yazılım.
+
+283
+00:40:39,547 --> 00:40:42,887
+Ve şu anda ülkemizde yüzlerce okul tarafından kullanılıyor.
+
+284
+00:40:44,067 --> 00:40:53,747
+Birinci iş paketinde [öğrenci], ben ve mühendis bir bu iş paketinin denetleme mekanizmasını,
+
+285
+00:40:54,287 --> 00:41:03,367
+yani yurt muadil ürünlerin denetleme mekanizmasının nasıl çalıştığını inceleyecek ve bu iş paketinde çıktığı olarak sistem gereksinimleri dökümanı hazırlanacak.
+
+286
+00:41:03,947 --> 00:41:08,547
+Ki daha sonraki iş paketlerinde bu sistem gereksinimlerini kullanalım.
+
+287
+00:41:08,547 --> 00:41:29,607
+İkinci iş paketi sistem mimarisi ve yazılım tasarımı. Burada [öğrenci], ben, [öğrenci] ve mühendis bir çalışacak. Bu iş paketi en kritik iş paketlerinden birisi. Burada bu iş paket nihayetinde başarı ölçültü yani çıktı olarak tasarım ve mimari konulacaktır.
+
+288
+00:41:29,607 --> 00:41:31,488
+UML diagramları hazırlanacak.
+
+289
+00:41:32,047 --> 00:41:33,607
+Tasarım toplantıları yapılacak.
+
+290
+00:41:34,227 --> 00:41:35,687
+Ve özellikle
+
+291
+00:41:35,687 --> 00:41:37,647
+işin parçalara bölünmesi açısından
+
+292
+00:41:37,647 --> 00:41:39,927
+tasarımın mikroservis yöntemlerinden
+
+293
+00:41:41,947 --> 00:41:42,587
+faydalanılacak.
+
+294
+00:41:43,667 --> 00:41:45,107
+Üçüncü iş paketi
+
+295
+00:41:45,107 --> 00:41:47,107
+tasarım ve test dokümanların hazırlanması.
+
+296
+00:41:47,667 --> 00:41:49,647
+Burada ben, [öğrenci]
+
+297
+00:41:49,647 --> 00:41:51,407
+ve mühendis 1 çalışacak.
+
+298
+00:41:52,807 --> 00:41:54,047
+İkinci iş paketinde
+
+299
+00:41:54,047 --> 00:41:55,128
+yapılan tasarımların
+
+300
+00:41:55,128 --> 00:41:57,147
+dokümana hazırlanması.
+
+301
+00:41:58,327 --> 00:41:58,607
+Burada
+
+302
+00:41:58,607 --> 00:42:00,867
+asıl iş paketinin görevi.
+
+303
+00:42:01,307 --> 00:42:03,527
+Çünkü sonraki süreçlerde
+
+304
+00:42:03,527 --> 00:42:05,467
+mühendislere sözlü
+
+305
+00:42:05,467 --> 00:42:07,227
+bir şey anlatmak yerine
+
+306
+00:42:07,227 --> 00:42:09,307
+toplantılar da yapılacak ama
+
+307
+00:42:09,307 --> 00:42:11,187
+önemli olan dokümanın sağlanması
+
+308
+00:42:11,187 --> 00:42:12,387
+çok önemli bir kriter.
+
+309
+00:42:13,547 --> 00:42:15,367
+Tasarım ve test dokümanları
+
+310
+00:42:15,367 --> 00:42:15,947
+hazırlanacak.
+
+311
+00:42:17,147 --> 00:42:19,267
+Şimdiye kadar ki iş paketlerinin hepsi
+
+312
+00:42:19,267 --> 00:42:21,247
+seri bir şekilde olacak. Yani hiçbir
+
+313
+00:42:21,247 --> 00:42:22,107
+paralellik yok.
+
+314
+00:42:24,427 --> 00:42:25,288
+Dördüncü ve beşinci
+
+315
+00:42:25,288 --> 00:42:27,267
+iş paketinde bulut servisi
+
+316
+00:42:27,267 --> 00:42:30,788
+backend ve api geliştirmesi
+
+317
+00:42:30,788 --> 00:42:32,747
+[öğrenci]
+
+318
+00:42:32,747 --> 00:42:34,288
+ve mühendis 2 tarafından yapılacak.
+
+319
+00:42:34,967 --> 00:42:36,587
+Ve bu 45 gün
+
+320
+00:42:36,587 --> 00:42:37,587
+sürecek bir iş paketi.
+
+321
+00:42:38,327 --> 00:42:40,807
+Bu iş paketinin 15. gününden itibaren
+
+322
+00:42:40,807 --> 00:42:42,907
+yönetici
+
+323
+00:42:42,907 --> 00:42:44,687
+ve kullanıcı arayüzü geliştirme iş paketine
+
+324
+00:42:44,687 --> 00:42:46,948
+başlanacak. Mühendis 1 ve mühendis 3 tarafından.
+
+325
+00:42:47,476 --> 00:43:01,555
+Bunun sebebi backend tarafında temel sistemin oturtulması ve frontend tarafındaki geliştirmelerin buna yönelik test edilebilir bir şekilde başlamasını sağlamak.
+
+326
+00:43:03,095 --> 00:43:06,855
+Altıncı iş paketimiz backend ve arayüz sistem entegrasyonu.
+
+327
+00:43:06,855 --> 00:43:16,855
+Burada daha önceki iş paketlerinde dördüncü ve beşinci iş paketinde çalışan herkes çalışacak ve backend ve arayüzün sistem entegrasyonunu gerçekleştirecek.
+
+328
+00:43:17,476 --> 00:43:20,536
+En uzun süren iş paketi bu süreçte olacak.
+
+329
+00:43:21,676 --> 00:43:22,895
+Toplamda 40 gün sürecek.
+
+330
+00:43:23,676 --> 00:43:26,556
+Yedinci iş paketimiz tasarım doğrulama testlerinin yapılması.
+
+331
+00:43:27,615 --> 00:43:32,535
+Bu iş paketinde önceki iş paketlerinde yapılan tasarımların doğruluğunun test edilmesi amacıyla
+
+332
+00:43:32,535 --> 00:43:38,575
+tasarım doğrulama test ortamı hazırlanacak ve tasarım gereksinimlere göz önünde bulundurularak
+
+333
+00:43:38,575 --> 00:43:40,476
+detaylı test dokümanı oluşturulacaktır.
+
+334
+00:43:42,575 --> 00:43:45,196
+Detaylı test dokümanı oluşturulacaktır.
+
+335
+00:43:47,476 --> 00:43:52,815
+8. İş paketi sistem entegrasyon testlerinin yapılması.
+
+336
+00:43:53,656 --> 00:44:00,495
+Testler sırasında sistem birleşenlerinin ayrı ayrı girdileri ve çıktılar takip edilerek tasarlanan şekilde çalışıp çalışmadığı görülecektir.
+
+337
+00:44:00,495 --> 00:44:08,656
+Bu testlerin yapılmasında organizasyon şemasında test görevine ayırdığımız mühendis 3 ve mühendis 4 gerçekleştirecektir.
+
+338
+00:44:09,575 --> 00:44:13,995
+Son iş paketinde son kullanıcı kullanım dokümanların hazırlanması.
+
+339
+00:44:13,995 --> 00:44:25,995
+Bu iş paketinde hala hazırda projede çalışacak tüm herkes çalışacak ve yapılan gerçeklemenin ardından kullanıcı dokümanlar oluşturulacaktır.
+
+340
+00:44:28,035 --> 00:44:30,575
+Beklenen çıktılar risklere geleyim.
+
+341
+00:44:30,935 --> 00:44:39,155
+Risk yönetiminde belirlediğimiz riskler nitelikte eleman istihdamının yapılmaması ya da planlanan zamandan geç yapılması.
+
+342
+00:44:39,156 --> 00:44:50,596
+Burada risk yönetimi için iş bulma sitelerine, sosyal medya platformlarına, üniversitenin ilgili bölümlerine asılacak ilanlar ile bu riski minimum düzeye indireceğiz.
+
+343
+00:44:51,416 --> 00:44:56,496
+İkinci risk mevcut nitelikli iş gücünün projeyi yürütülürken kaybedilmesi.
+
+344
+00:44:56,496 --> 00:45:02,876
+yeni elemanın istihdam sürecinin başlatılması, yeni personelle verilen oryantasyon eğitiminin hızlandırılması
+
+345
+00:45:02,876 --> 00:45:10,156
+ve tecrübeli bir personel ile birebir çalışmasının sağlanmasıyla bu riski minimize edeceğiz.
+
+346
+00:45:10,836 --> 00:45:15,535
+Tasarım doğrulama ve sistem entegrasyon testleri sırasında performans eksikliğinin ortaya çıkması.
+
+347
+00:45:15,535 --> 00:45:23,535
+Bu en önemli risk burada maliyetten ödün vererek daha tecrübeli yazılım mimarı danışman istihdam etmek.
+
+348
+00:45:23,535 --> 00:45:42,995
+Yani böyle bir risk oluşursa, böyle bir riskle karşılaşılırsa, tecrübeli bir yazılım mimarı danışmanı istihdam ederek yeniden yazılım modüllerinin performans anlamında tekrar değerlendirilmesi ve performans düşküne sebep olabilecek noktaların bulunup sorunun ortadan kaldırılması işlemi yapılacak.
+
+349
+00:45:42,995 --> 00:45:50,975
+satış ve pazarlama faaliyetleri için yeterince zaman ve bütçe ayrılamaması.
+
+350
+00:45:51,835 --> 00:45:57,075
+Burada pazarlama faaliyetleri için teknik tecrübesi yüksek firma çalışanların aktif rol oynaması,
+
+351
+00:45:57,575 --> 00:46:01,015
+düzenli bir şekilde pazarlama materyallerinin hazırlanması ve
+
+352
+00:46:01,015 --> 00:46:10,895
+satış ve pazarlama alanında faaliyet gösterecek nitelikli ve teknik bilgisi olan personel istihdamı yapılması ile bu riski minimize edeceğiz.
+
+353
+00:46:11,795 --> 00:46:19,755
+Son risk ülkemizde yabancı menşel ürünlere daha çok rağbet edilmesi ve daha güvenilir olduğuna dair bir algının olması.
+
+354
+00:46:20,535 --> 00:46:25,315
+Bu maalesef bizim de hala hazırda sektörle karşılaştığımız bir problem.
+
+355
+00:46:26,095 --> 00:46:31,276
+Burada riski minimize etmek için büyük firmalarla çalışarak referansların güçlendirilmesi,
+
+356
+00:46:31,535 --> 00:46:37,576
+kalifiye eleman yetiştirmek ve belirli bir vizyona sahip sektörün önünde gelen şirketler ile iş birliği yapmak.
+
+357
+00:46:38,068 --> 00:47:04,248
+yurt dışı pazarları açılmak ve bu sayede güvenilirliği, yerel ürünü güvenilirliğine arttırmak. Beklene çıktılar, bilimsel akademik çıktı. Proje yürütme süreci boyunca geliştirilecek algoritma ve teknik yöntemlerle bir makale yayınlanacaktır ve bunun öngörüsü 12-18 ay bir süreç.
+
+358
+00:47:04,248 --> 00:47:34,227
+ekonomik çıktı. Bu proje sonunda çıkacak olan ürün yabancı birçok ürünü ikame edebilecek. Bu sayede hem yeni gelir imkanı yaratabilecek hem de yerli müşterileri çekebilecek bir çıktı olacak. 12-18 ay belirledik bunu da bu hedefi. Araştırmacı yetiştirilmesine yönelik çıktı. Yine ilk 6 ay içerisinde hala hazırda projede çalışan kişilerin kişilere yönelik bir çıktı olarak planlıyoruz.
+
+359
+00:47:34,248 --> 00:47:57,847
+Yaygın etkiler toplumsal kültürel etki. Öğrencilerin uzaktan mörgün eğitim süreçlerinde kazanım eksiklikleri daha rahat tespit edilmesine, güvenilirliği kanıtlanmış yöntemler sayesinde eğitim kalitesinin artmasına ve uzun süreçte düşünüldüğüne toplumun eğitim düzeyinin artmasına yönelik refahın üst düzeye, üst seviyelere taşınmasına katkı da bulunacaktır uzaktan eğitim süreçlerinde.
+
+360
+00:47:57,847 --> 00:48:04,627
+Akademik etki, ekonomik etkiden bahsedeyim daha doğrusu akademik etki yok.
+
+361
+00:48:04,627 --> 00:48:18,508
+Ekonomik etki, yurt dışında ürünümüzün muadili olarak genellikle yurt dışı menşeili ürünler kullanılmakta olup bu ürünler maliyet, esneklik, entegrasyon ve teknik destek açısından yurt dışı pazarındaki beklentileri karşılamamakta.
+
+362
+00:48:19,248 --> 00:48:23,428
+Aynı zamanda ürünümüzde olan özelliklerin sadece belirli bir kısmını içermektedir.
+
+363
+00:48:23,428 --> 00:48:30,068
+Bu proje sonucunda çıkacak ürün benzer işleri yapan yabancı birçok ürünün yerini alabilecek seviyede olacak.
+
+364
+00:48:31,068 --> 00:48:37,228
+Ulusal güvenlik etkisi de öğrencilere ait kişisel bilgilerin, verilerin yurt dışına çıkmasını engellemektir.
+
+365
+00:48:39,608 --> 00:48:43,407
+Daha sonra en son olarak da size bütçemizden bahsedeyim.
+
+366
+00:48:43,407 --> 00:48:49,068
+Bütçemizde toplamda iki adet bilgisayar talep edilecek.
+
+367
+00:48:49,068 --> 00:48:59,068
+Bilgisayarın teknik özellikleri ve kullanım gerekçesi yazılım geliştirmede, test ve dokumentasyon hazırlamada bu süreçlerde ve teknik özelliklerini belirttik.
+
+368
+00:48:59,707 --> 00:49:05,868
+Mobil bir uygulama olacağı için bir tane Android mobil cihaz, bir tane de iOS mobil cihaz talep edilecek.
+
+369
+00:49:06,868 --> 00:49:17,868
+Toplamda TÜBİTAK'tan talep edilen bütçe 24.091 TL olacak. Bu kadar. Eğer sorunuz varsa alabilirim.
+
+370
+00:49:25,139 --> 00:49:40,979
+Peki, teşekkürler arkadaşlar. Soru yok herhalde. Durumda 27 numaralı grup [öğrenci] ve [öğrenci], pardon [öğrenci]. Burada mısınız arkadaşlar? Evet hocam. Tamam, buyurun sizi dinliyoruz o zaman.
+
+371
+00:49:53,235 --> 00:49:55,875
+Hocam bana yetki verdiniz mi sunumu paylaşabilmem için?
+
+372
+00:49:57,115 --> 00:50:04,135
+Senin diğerlerinden hiçbir farkın yok herkesin paylaşamaması için. Açık zaten. Arada hiçbir şey yapmıyorum bir değişiklik.
+
+373
+00:50:13,811 --> 00:50:17,771
+ilk kez yükleyeceğim için dokümanı şu an yüklemelerini bulamadım. Affedersiniz.
+
+374
+00:50:18,871 --> 00:50:33,912
+Share Screen dersin. Oradan, hani istediğin ekran hangisi ise ki sunumun açık olması lazım onun için. Hatta sunuma başlamış olursan F5'te daha iyi olur. Onu seçersin ve şey olur.
+
+375
+00:50:35,912 --> 00:50:36,591
+Gözükür.
+
+376
+00:50:52,371 --> 00:50:57,091
+Hocam, aklınızı anlamak için bir sonraki aşamada paylaşsam olur mu, diğer bilgisayara geçmek için?
+
+377
+00:51:00,628 --> 00:51:14,347
+Yani, yapmayacak mısın? Anlamadım. Bir sonraki grup sunsa ben bir 10 dakika sonra bilgisayarı değiştirsem olur mu? Tamam, 29 numaralı grup burada mı arkadaşlar?
+
+378
+00:51:18,099 --> 00:51:18,979
+Evet hocam.
+
+379
+00:51:21,159 --> 00:51:23,979
+Buyurun arkadaşlar. Sıra size geldi.
+
+380
+00:51:28,148 --> 00:51:35,767
+[öğrenci] ve [öğrenci].
+
+381
+00:51:36,347 --> 00:51:36,908
+Evet hocam.
+
+382
+00:51:37,547 --> 00:51:43,167
+Tamam paylaşmışsınız ekranı. Ben arada geçiş yapmak durumunda olduğunu görmüştüm. Buyurun arkadaşlar söz sizde.
+
+383
+00:51:43,767 --> 00:51:45,807
+Tamam. Merhaba hocam. Merhaba arkadaşlar.
+
+384
+00:51:45,807 --> 00:51:46,847
+Bu arada.
+
+385
+00:51:50,527 --> 00:51:52,648
+Yani kameralarınızı açmıyor musunuz?
+
+386
+00:51:54,387 --> 00:51:54,727
+Tamam.
+
+387
+00:51:54,727 --> 00:52:03,368
+Tamam, tamam hocam, oflan yapabilir miyim ya da yok hocam?
+
+388
+00:52:04,508 --> 00:52:04,648
+Hı?
+
+389
+00:52:05,447 --> 00:52:08,508
+Kamerayı yani oflan yapabilir miyim ya da yok?
+
+390
+00:52:10,767 --> 00:52:12,467
+Devam et sunumuna, evet.
+
+391
+00:52:14,607 --> 00:52:15,787
+Tamam hocam.
+
+392
+00:52:17,667 --> 00:52:23,667
+Ben [öğrenci], milgisayar muhendisliği, yüksek lisans öğrenciyim.
+
+393
+00:52:30,835 --> 00:52:49,315
+Today, I introduce my project about video in painting proposal using main shift tracker
+
+394
+00:52:49,315 --> 00:52:54,436
+and Harris detector with occlusion consistency.
+
+395
+00:52:54,436 --> 00:52:55,436
+Bu projektimizin arayın bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ürünün bir ü
+
+396
+00:53:11,219 --> 00:53:15,739
+Piyatı, aksesinde de kürtülleri,
+
+397
+00:53:15,739 --> 00:53:19,419
+ve hızla da kürtülleri,
+
+398
+00:53:19,419 --> 00:53:29,099
+ve bu şekilde,
+
+399
+00:53:29,099 --> 00:53:31,659
+bu şekilde,
+
+400
+00:53:31,659 --> 00:53:37,259
+ve bu şekilde,
+
+401
+00:53:37,259 --> 00:53:39,219
+bir şekilde,
+
+402
+00:54:09,219 --> 00:54:36,219
+ve
+
+403
+00:54:36,219 --> 00:54:38,219
+10%
+
+404
+00:54:38,219 --> 00:54:39,880
+of the project.
+
+405
+00:54:40,480 --> 00:54:41,739
+The second is preparing
+
+406
+00:54:41,739 --> 00:54:43,940
+expectation, course
+
+407
+00:54:43,940 --> 00:54:45,719
+and strategic plane
+
+408
+00:54:45,719 --> 00:54:47,959
+documents with about two
+
+409
+00:54:47,959 --> 00:54:49,919
+more with 20%
+
+410
+00:54:49,919 --> 00:54:51,779
+of the project. And the third
+
+411
+00:54:51,779 --> 00:54:54,039
+is detecting objects, background
+
+412
+00:54:54,039 --> 00:54:55,499
+protection, background
+
+413
+00:54:55,499 --> 00:54:57,699
+subtraction, segmentation
+
+414
+00:54:57,699 --> 00:54:59,300
+and labeling of
+
+415
+00:54:59,300 --> 00:55:01,779
+objects with about
+
+416
+00:55:01,779 --> 00:55:03,480
+three more with
+
+417
+00:55:03,480 --> 00:55:05,739
+35% of the project.
+
+418
+00:55:06,219 --> 00:55:18,219
+ve
+
+419
+00:55:18,219 --> 00:55:19,219
+ve 3-5 %
+
+420
+00:55:48,219 --> 00:56:08,719
+İntro video, sibilit video into frame, foreground object detection, object tracking, occlusion analysis, corner point detection, object in painting, assembling output video.
+
+421
+00:56:08,719 --> 00:56:15,719
+Bu videoları çektiği bir şekilde
+
+422
+00:56:15,719 --> 00:56:20,719
+videoları çektiği bir şekilde
+
+423
+00:56:20,719 --> 00:56:24,719
+ve bu videoları çektiği bir şekilde
+
+424
+00:56:24,719 --> 00:56:28,719
+bu videoları çektiği bir şekilde
+
+425
+00:56:28,719 --> 00:56:32,719
+ve bu videoları çektiği bir şekilde
+
+426
+00:56:32,719 --> 00:56:33,719
+Bu bölümde bu bölümde böl
+
+427
+00:57:02,896 --> 00:57:05,255
+Bu, background estimation,
+
+428
+00:57:05,255 --> 00:57:06,896
+bu metodolageya de
+
+429
+00:57:06,896 --> 00:57:08,896
+anacumulation histogram.
+
+430
+00:57:08,896 --> 00:57:10,575
+Bu metodolageya de
+
+431
+00:57:10,575 --> 00:57:13,856
+birçok block
+
+432
+00:57:13,856 --> 00:57:14,736
+on all frame,
+
+433
+00:57:14,736 --> 00:57:18,095
+bu blok,
+
+434
+00:57:18,095 --> 00:57:19,736
+and the most recently
+
+435
+00:57:19,736 --> 00:57:21,416
+blok on all frame
+
+436
+00:57:21,416 --> 00:57:24,015
+is considered as a background block
+
+437
+00:57:24,015 --> 00:57:25,736
+because the object is already
+
+438
+00:57:25,736 --> 00:57:27,015
+moving on the video
+
+439
+00:57:27,015 --> 00:57:29,975
+and the more appearance
+
+440
+00:57:29,975 --> 00:57:31,055
+of this block
+
+441
+00:57:31,055 --> 00:57:32,816
+will belong to the background.
+
+442
+00:57:32,816 --> 00:57:33,816
+Şimdi, bu bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde,
+
+443
+00:58:02,815 --> 00:58:04,815
+or the pixel
+
+444
+00:58:04,815 --> 00:58:07,815
+or the pixel belong to the object or the background.
+
+445
+00:58:07,815 --> 00:58:09,815
+The next stage is
+
+446
+00:58:09,815 --> 00:58:12,815
+performing a tracking mechanism.
+
+447
+00:58:12,815 --> 00:58:14,815
+This tracking
+
+448
+00:58:14,815 --> 00:58:16,815
+will be proposed
+
+449
+00:58:16,815 --> 00:58:18,815
+or prevented the mean-shifted tracker.
+
+450
+00:58:18,815 --> 00:58:20,815
+The mean-shifted tracker depends on
+
+451
+00:58:20,815 --> 00:58:23,815
+make a target module for the object
+
+452
+00:58:23,815 --> 00:58:26,815
+and estimate a candidate module
+
+453
+00:58:26,815 --> 00:58:29,815
+in another window.
+
+454
+00:58:29,815 --> 00:58:32,815
+This window will be bigger than the target module.
+
+455
+00:58:32,815 --> 00:58:39,815
+ve
+
+456
+00:58:39,815 --> 00:58:59,815
+bu
+
+457
+00:58:59,815 --> 00:59:00,815
+Bu, bu,
+
+458
+00:59:29,815 --> 00:59:30,815
+Gale, Gale,
+
+459
+01:00:59,815 --> 01:01:00,836
+Oba ulaft
+
+460
+01:01:01,264 --> 01:01:02,264
+Şimdi bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+461
+01:01:31,264 --> 01:01:32,264
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu, bu şekilde, bu şekilde, bu
+
+462
+01:02:03,264 --> 01:02:05,264
+Teşekkürler.
+
+463
+01:02:05,264 --> 01:02:07,264
+Ve if there is any questions, I'm ready.
+
+464
+01:02:12,659 --> 01:02:27,419
+Evet, peki. Teşekkürler arkadaşlar. Sanırım soru yok her zaman olduğu gibi. Sonraki gruba geçelim. [öğrenci], [öğrenci]. Yanlış okumadıysam.
+
+465
+01:02:28,419 --> 01:02:29,760
+Doğru hocam. Buradayız.
+
+466
+01:02:30,319 --> 01:02:32,119
+Buyurun arkadaşlar söz sizin.
+
+467
+01:02:32,979 --> 01:02:33,399
+Tamam.
+
+468
+01:02:45,427 --> 01:02:59,227
+Hocam merhaba, ölüyorum ama sesim geliyor muydu acaba? Evet. Az önce biz sunum yapamamıştık hocam da, biz her son mu yapacağız acaba? Evet. Her son, tamam hocam, sağ ol.
+
+469
+01:03:02,287 --> 01:03:10,688
+Can I start, Niyom? Yes, of course, it's your turn already. Thank you very much. Hello, Doktor, hello, everybody.
+
+470
+01:03:15,347 --> 01:03:25,547
+I am [öğrenci]-Haner and my colleague Harid Al-Khafaji. Both of us are PhD students in the Department of Computer Engineering at Yaldis Technical University.
+
+471
+01:03:25,547 --> 01:03:33,548
+Welcome today to our presentation that has been prepared for TÜBITAK BIN-IKI Hızlı Desk Programme,
+
+472
+01:03:34,627 --> 01:03:41,347
+which will be about Technique Relationship Protected, in short TRB Mechanism,
+
+473
+01:03:41,607 --> 01:03:48,007
+to Secure E-Learning Information that's Shared with Cloud Storage.
+
+474
+01:03:48,007 --> 01:03:49,007
+Bu, bu,
+
+475
+01:04:48,007 --> 01:04:55,007
+Bu konuda birçok konuda kullanılmasını izledim.
+
+476
+01:04:55,007 --> 01:05:07,087
+According to the previous model's review, most of these models have economic or security issues.
+
+477
+01:05:07,087 --> 01:05:13,647
+So we suggested a new model that handled and managed all of these issues.
+
+478
+01:05:17,844 --> 01:05:25,784
+Bu, nasıl nasıl birleştirilmiştir, e-learning sistem ve cloud-storajı
+
+479
+01:05:25,784 --> 01:05:29,003
+ve selamlarınızı?
+
+480
+01:05:32,148 --> 01:05:33,148
+Pardon.
+
+481
+01:05:33,148 --> 01:05:42,148
+BASICALLY, cloud storage can provide a powerful and on-demand data storage service for users.
+
+482
+01:05:42,148 --> 01:05:56,148
+By using cloud service, the integrity of the cloud data is hard to be guaranteed, according to the inviolable hardware or software failures and human errors in the cloud itself.
+
+483
+01:05:56,148 --> 01:06:14,668
+Moreover, always there are a cyber attack in the network. Therefore, there is a need to use auditors to enable the user to ensure the integrity and authenticity of the data that's being transferred between the cloud and users.
+
+484
+01:06:14,668 --> 01:06:30,607
+So, the Hopetesis, by suggestion and apply, a safe mythology can build relationship of protected technology to ensure the transmission of information and save them in a reliable way.
+
+485
+01:06:36,115 --> 01:06:37,115
+Bu projede aimde, etabili ve bir mekanizmizde ve bir mekanizmizde kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak
+
+486
+01:07:06,115 --> 01:07:36,095
+Genel olarak, bu sistemden bir sistemden birçok
+
+487
+01:07:43,315 --> 01:07:53,635
+Cloud computing is so important because it offers flexibility, data recovery, little
+
+488
+01:07:53,635 --> 01:07:58,395
+or no maintenance, easy access and high level security.
+
+489
+01:07:58,395 --> 01:08:07,535
+So, objective of the project is keeping privacy as we mentioned before that supported auditing
+
+490
+01:08:07,535 --> 01:08:13,275
+on shared data between e-learning and cloud storage.
+
+491
+01:08:13,275 --> 01:08:14,775
+Flexibility, what does mean?
+
+492
+01:08:15,875 --> 01:08:20,336
+Cloud storage and cloud providers offer flexible package
+
+493
+01:08:20,336 --> 01:08:25,775
+where you can easily add it or decrease the amount of storage
+
+494
+01:08:25,775 --> 01:08:29,775
+and bandwidth you are buying or leasing to use.
+
+495
+01:08:31,036 --> 01:08:34,215
+Data recovery, when data is stored on the cloud,
+
+496
+01:08:34,775 --> 01:08:38,135
+it's usually stored by the provider in multiple locations.
+
+497
+01:08:38,695 --> 01:08:43,015
+That means your data is not just saved in one physical location.
+
+498
+01:08:43,015 --> 01:08:57,355
+Even if they have a problem with one of the provider's servers or massive storage location, our data is unsafe as a copy in present at another location.
+
+499
+01:08:57,356 --> 01:09:07,235
+So clearly no maintenance needed. A cloud computing solution eliminates the need for any maintenance.
+
+500
+01:09:07,775 --> 01:09:21,815
+There is no cost for or effort required by users that has been used cloud storage, as everything is handled by the provider itself.
+
+501
+01:09:21,815 --> 01:09:33,815
+ve hala
+
+502
+01:09:33,815 --> 01:09:50,815
+hala
+
+503
+01:09:50,815 --> 01:09:51,815
+Tamam.
+
+504
+01:09:51,815 --> 01:10:19,815
+Nasılsın?
+
+505
+01:10:03,123 --> 01:10:04,823
+Bu, Dr. Havarilu, everybody.
+
+506
+01:10:05,423 --> 01:10:08,643
+I will continue from where my friend Ahmed is finished.
+
+507
+01:10:09,483 --> 01:10:11,323
+Actually, in mythology part,
+
+508
+01:10:12,044 --> 01:10:15,663
+the mechanism of the mythology that we have developed
+
+509
+01:10:15,663 --> 01:10:19,943
+consists of two states, design and applying,
+
+510
+01:10:19,943 --> 01:10:22,283
+by using a model simulation.
+
+511
+01:10:23,083 --> 01:10:29,384
+This study focus of the design and implement a safety mechanism
+
+512
+01:10:29,384 --> 01:10:31,503
+that is used in this research.
+
+513
+01:10:31,503 --> 01:10:33,783
+technical relationship
+
+514
+01:10:33,783 --> 01:10:34,823
+protected.
+
+515
+01:10:35,664 --> 01:10:37,523
+So that we
+
+516
+01:10:37,523 --> 01:10:39,563
+thought that the
+
+517
+01:10:39,563 --> 01:10:41,423
+way and the right direction
+
+518
+01:10:41,423 --> 01:10:43,223
+for advancement
+
+519
+01:10:43,223 --> 01:10:45,443
+of modern technology surface
+
+520
+01:10:45,443 --> 01:10:46,964
+through earning
+
+521
+01:10:46,964 --> 01:10:49,003
+the confidence of the
+
+522
+01:10:49,003 --> 01:10:51,304
+benefit to easy information
+
+523
+01:10:51,304 --> 01:10:53,344
+access and persevere
+
+524
+01:10:53,344 --> 01:10:55,543
+the security and the privacy
+
+525
+01:10:55,543 --> 01:10:57,344
+of shared information
+
+526
+01:10:57,344 --> 01:10:59,783
+between the platform
+
+527
+01:10:59,783 --> 01:11:00,844
+and the participant.
+
+528
+01:11:31,503 --> 01:11:59,503
+ve
+
+529
+01:11:59,503 --> 01:12:00,503
+Bu, bu,
+
+530
+01:12:29,503 --> 01:12:53,283
+Therefore, the auditor work on auditing the mobile data between the e-learning environment and source cloud through detailed information on the data, such as data type, fire name, also a time that's set for the data to be received.
+
+531
+01:12:53,284 --> 01:13:18,424
+In case there is any effect, any defect in the aforementioned information, the auditor will consider that there is an authorized operation and there is another in total like a hacker trying to access the data.
+
+532
+01:13:18,424 --> 01:13:41,284
+So, the auditor will cancel the data transfer here and say this is not trusted and immediately notify the trusted owner of the data that there is a process canceled due to the breach.
+
+533
+01:13:41,284 --> 01:13:48,144
+And the auditor at the same time inform the system to repeat the process again.
+
+534
+01:13:51,539 --> 01:13:53,539
+Work Requirement.
+
+535
+01:13:53,539 --> 01:14:09,539
+Actually, here in this part, to fully achieve the system working environment and perform the work efficiently, we need three basic requirements.
+
+536
+01:14:09,539 --> 01:14:17,539
+Number one, we need to e-learning system environment, and we need to privacy and protection mechanism.
+
+537
+01:14:17,539 --> 01:14:23,019
+Finally, we need a storage to save a data, or store a data.
+
+538
+01:14:23,819 --> 01:14:27,260
+In e-learning system environment, we will make a model.
+
+539
+01:14:27,459 --> 01:14:37,880
+This model contain admin of the system, owner of the data, and user of data, and auditor with his function.
+
+540
+01:14:37,880 --> 01:15:04,580
+In privacy and protection mechanism, we need to share information, secret keys, authentication to access, use AES algorithm, encryption and decryption data to more security and more protection, and finally, hear the work of the editor.
+
+541
+01:15:04,580 --> 01:15:11,739
+The kind of storage that we will use it is a cloud storage platform.
+
+542
+01:15:14,440 --> 01:15:34,539
+Here in each bucket table, in this table, we have sorted the paragraphs according to the work requirements and the time required to complete each part.
+
+543
+01:15:34,580 --> 01:15:53,480
+ve 3 part here, Economic Analysis, Technical and Necessary Care, 3, Preparation of Expectations, Targets, and Strategies Plan Document.
+
+544
+01:15:53,480 --> 01:15:58,940
+And each paragraph have the details about this part.
+
+545
+01:16:03,283 --> 01:16:20,204
+Here, the output table, here the table that output successfully in our work, we have two point as output successfully in our work.
+
+546
+01:16:20,983 --> 01:16:25,704
+Qualified academic publication for the instance articles and conference.
+
+547
+01:16:26,143 --> 01:16:32,923
+Second, project will be used in the different academic science and technology fields.
+
+548
+01:16:33,283 --> 01:16:42,804
+Budget and its justification need to listen in the space in the cloud storage approximately
+
+549
+01:16:42,804 --> 01:16:56,083
+first 50 terabyte month with the price, the global price that we need it.
+
+550
+01:16:56,083 --> 01:17:12,044
+Finally, after we calculate our budget, by taking a surface in cloud storage and some surfaces with it, we need 24,000 TL.
+
+551
+01:17:14,163 --> 01:17:17,043
+This in general budget table.
+
+552
+01:17:17,903 --> 01:17:19,943
+Thank you for your attention.
+
+553
+01:17:22,943 --> 01:17:24,843
+Evet Hüca, sonumuz bu kadar.
+
+554
+01:17:26,083 --> 01:17:29,283
+Teşekkürler arkadaşlar.
+
+555
+01:17:29,483 --> 01:17:30,663
+Sorusu olan varsa alayım.
+
+556
+01:17:34,083 --> 01:17:34,923
+Yoksa
+
+557
+01:17:34,923 --> 01:17:37,123
+33 numaralı grup
+
+558
+01:17:37,123 --> 01:17:39,363
+[öğrenci]
+
+559
+01:17:39,363 --> 01:17:40,823
+ve Motna
+
+560
+01:17:40,823 --> 01:17:42,603
+Avrupa'ya.
+
+561
+01:17:43,163 --> 01:17:43,603
+Burada mısınız?
+
+562
+01:17:43,603 --> 01:17:45,183
+Buradayız hocam.
+
+563
+01:17:46,743 --> 01:17:47,163
+Buyurun.
+
+564
+01:17:48,083 --> 01:17:48,943
+Sizin sunumunuz.
+
+565
+01:17:53,587 --> 01:17:55,587
+şu an görüntü geldi mi hocam?
+
+566
+01:17:55,587 --> 01:17:56,587
+geldi.
+
+567
+01:17:56,587 --> 01:17:58,587
+tamamdır.
+
+568
+01:17:58,587 --> 01:18:00,587
+ama senin görüntün yok bu arada.
+
+569
+01:18:00,587 --> 01:18:02,587
+şimdi açtım galiba.
+
+570
+01:18:05,587 --> 01:18:07,587
+merhaba arkadaşlar ben [öğrenci].
+
+571
+01:18:07,587 --> 01:18:10,587
+arkadaşım not ne ile birlikte sizlere
+
+572
+01:18:10,587 --> 01:18:14,587
+akciğer tarama resimleri kullanarak
+
+573
+01:18:14,587 --> 01:18:20,587
+Covid-19 enfeksiyon tespiti yapan projeyi tanıtacağız.
+
+574
+01:18:23,412 --> 01:18:28,591
+Sonumuzu genel olarak dört bölümde inceleyeceğiz.
+
+575
+01:18:28,591 --> 01:18:35,332
+Giriş bölümünde ben COVID-19 hakkında genel bilgiler ve test yöntemleri hakkında bilgiler vereceğim.
+
+576
+01:18:35,731 --> 01:18:40,871
+Metot kısmında arkadaşımla sizlere projenin nasıl yapıldığı konusunda detaylı bilgiler verecek.
+
+577
+01:18:41,731 --> 01:18:45,512
+Sonuçlar ve tartışma kısmında da geliştirdiğimiz prototip üzerinde yorumlar yapacağız.
+
+578
+01:18:45,512 --> 01:18:59,011
+Bu proje tomografi taramaları kullanarak akdiyerdeki zatürreye bağlı olarak COVID-19 enfeksiyonu çıkarılması ve değerlendirilmesi hedeflenmektedir.
+
+579
+01:18:59,691 --> 01:19:10,711
+Bunun için enfekte olmuş bölümleri görüntü işleme yöntemleriyle tespit edip akdiyerin tamamının piksel oranına bağlı olarak enfeksiyon oranını saplamak istiyoruz.
+
+580
+01:19:10,711 --> 01:19:16,031
+Bu enfeksiyon aranı, bu test resimlerini sınıflandırma da bize yardımcı olacaktır.
+
+581
+01:19:17,511 --> 01:19:19,871
+Peki test yöntemleri nelerdir?
+
+582
+01:19:20,011 --> 01:19:29,151
+Test yöntemleri nükleik asit bazlı testler, serum bazlı testler ve diğer olmak üzere 3 kategoriye ayrılmıştır.
+
+583
+01:19:29,511 --> 01:19:34,092
+Diğer bölümünde XA taramaları, tomografi taramaları bulunmaktadır.
+
+584
+01:19:34,831 --> 01:19:37,291
+Bunlar içinde en yaygın olan PCR testidir.
+
+585
+01:19:37,291 --> 01:19:41,871
+PCR testinin nasıl yapıldığına gelecek olursak
+
+586
+01:19:41,871 --> 01:19:48,831
+PCR testi hasta şüphesi bulunan kişinin burnundan veya boğazından örnekler alınarak
+
+587
+01:19:48,831 --> 01:19:50,632
+RNA çıkartılır.
+
+588
+01:19:51,171 --> 01:19:54,851
+Daha sonra bu RNA'dan DNA transkripti işlemi yapıldır.
+
+589
+01:19:56,371 --> 01:20:01,851
+DNA polimeraz enzimi DNA'nın kopyalanmasına yardımcı olan bir enzim ver.
+
+590
+01:20:01,851 --> 01:20:05,771
+sınır probuna geldiğinde
+
+591
+01:20:05,771 --> 01:20:08,131
+floresan isimli
+
+592
+01:20:08,131 --> 01:20:09,371
+bir madde açığa çıkartıyor.
+
+593
+01:20:11,151 --> 01:20:12,651
+Bunu virüsün
+
+594
+01:20:12,651 --> 01:20:14,391
+kolay yürüyebileceği
+
+595
+01:20:14,391 --> 01:20:15,451
+bir ortama koyarak
+
+596
+01:20:15,451 --> 01:20:18,671
+bu DNA'nın kopyalanmasına
+
+597
+01:20:18,671 --> 01:20:20,291
+bağlı olarak çıkan floresan
+
+598
+01:20:20,291 --> 01:20:22,211
+seviyesi de artıyor. Eğer belli bir değişik
+
+599
+01:20:22,211 --> 01:20:24,071
+değerine geçmezse bu test
+
+600
+01:20:24,071 --> 01:20:25,911
+pozitif olarak sonuçlanıyor.
+
+601
+01:20:28,611 --> 01:20:30,711
+X-ray ve tomografi
+
+602
+01:20:30,711 --> 01:20:32,471
+taramaları da kullanılıyor
+
+603
+01:20:32,471 --> 01:20:34,331
+test için.
+
+604
+01:20:35,711 --> 01:20:36,691
+Bunlar da
+
+605
+01:20:36,691 --> 01:20:39,011
+sadece COVID-19
+
+606
+01:20:39,011 --> 01:20:41,011
+için değil, diğer hastalıklar
+
+607
+01:20:41,011 --> 01:20:43,011
+için de genel olarak kullanılan
+
+608
+01:20:43,011 --> 01:20:44,831
+bir yöntem. Dolayısıyla çok
+
+609
+01:20:44,831 --> 01:20:46,492
+kullanıldığı için ulaşımı da kolay.
+
+610
+01:20:46,931 --> 01:20:48,691
+Biz de projemizi bu
+
+611
+01:20:48,691 --> 01:20:50,811
+tomografi taramaları üzerinden götürmeyi
+
+612
+01:20:50,811 --> 01:20:52,791
+düşünüyoruz. Şimdi arkadaşım
+
+613
+01:20:52,791 --> 01:20:53,632
+Motna sizlere
+
+614
+01:20:53,632 --> 01:20:56,772
+metod hakkında bilgiler verecek
+
+615
+01:20:56,772 --> 01:20:58,132
+kullanılmamız metodlar hakkında.
+
+616
+01:20:58,611 --> 01:20:58,991
+Motna
+
+617
+01:20:58,992 --> 01:21:02,592
+Merhaba hocam, merhaba my friends.
+
+618
+01:21:03,632 --> 01:21:07,592
+We are presenting the method of our work.
+
+619
+01:21:08,412 --> 01:21:10,992
+We start with the CT features.
+
+620
+01:21:11,772 --> 01:21:15,471
+One, the lengths are always dark in color.
+
+621
+01:21:16,191 --> 01:21:22,592
+And two, the surrounding image has many shades of gray, white and sometimes even black.
+
+622
+01:21:22,591 --> 01:21:29,831
+3. Sörting scars are darker than the blood parcels already in the lungs.
+
+623
+01:21:30,451 --> 01:21:38,511
+A healthy CT scan on the left compared to COVID-19 infection CT scan on the right.
+
+624
+01:21:38,511 --> 01:21:39,511
+İlk olarak, bu,
+
+625
+01:22:08,511 --> 01:22:11,511
+İçeride birçok verilmiştir.
+
+626
+01:22:11,511 --> 01:22:15,511
+Ve buçok verilmiştir.
+
+627
+01:22:15,828 --> 01:22:23,967
+İntinses, as well as pixel intensity distribution by dividing fairness distribution in half.
+
+628
+01:22:24,668 --> 01:22:30,507
+Define intensity with which in the image is above white and blue zero.
+
+629
+01:22:33,107 --> 01:22:43,828
+Age detection using MATLAB built in age detection function creates binary image consist of only age using the Swoble filter.
+
+630
+01:22:43,828 --> 01:22:44,828
+Bu hr1 puxel, büyük bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden
+
+631
+01:23:43,828 --> 01:23:44,828
+İlk olarak, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+632
+01:24:13,828 --> 01:24:17,868
+Bu şekilde, bu şekilde,
+
+633
+01:24:17,868 --> 01:24:19,387
+bu şekilde,
+
+634
+01:24:19,387 --> 01:24:42,828
+bir şekilde,
+
+635
+01:24:42,828 --> 01:24:45,828
+İngilizce bir bakım var.
+
+636
+01:24:45,828 --> 01:24:47,828
+Bu, bir bakım var.
+
+637
+01:24:47,828 --> 01:25:10,828
+Bir bakım var.
+
+638
+01:25:10,828 --> 01:25:16,628
+Bu bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin.
+
+639
+01:25:16,628 --> 01:25:21,428
+Bu bir şeyin bir şeyin bir şeyin bir şeyin.
+
+640
+01:25:21,428 --> 01:25:28,428
+Ve bu aynı şeyin bir şeyin bir şeyin bir şeyin.
+
+641
+01:25:28,428 --> 01:25:30,428
+Bu aynı şeyin bir şeyin bir şeyin.
+
+642
+01:25:30,428 --> 01:25:32,628
+Bu aynı şeyin bir şeyin bir şeyin bir şeyin.
+
+643
+01:25:32,628 --> 01:25:35,828
+Bu bir şeyin bir şeyin bir şeyin.
+
+644
+01:25:35,828 --> 01:25:40,828
+4. Asylentine the swelling.
+
+645
+01:25:40,828 --> 01:25:45,828
+Asylentine the polygüreselte
+
+646
+01:25:45,828 --> 01:25:48,828
+dolar neyden last image
+
+647
+01:25:48,828 --> 01:25:52,828
+only black aspect
+
+648
+01:25:52,828 --> 01:25:55,828
+of the desired area.
+
+649
+01:25:55,828 --> 01:25:57,828
+The goal of this remove
+
+650
+01:25:57,828 --> 01:25:59,828
+residual noise in the image.
+
+651
+01:25:59,828 --> 01:26:02,828
+Mask 3 will only produce
+
+652
+01:26:02,828 --> 01:26:04,828
+Noise, Image
+
+653
+01:26:04,307 --> 01:26:06,307
+if lungs are healthy.
+
+654
+01:26:06,307 --> 01:26:09,307
+So mask 4 should be able
+
+655
+01:26:09,307 --> 01:26:13,307
+disconnection between healthy and injury lungs.
+
+656
+01:26:13,307 --> 01:26:16,307
+This is done in the following setup.
+
+657
+01:26:16,307 --> 01:26:19,307
+First, the image aorta
+
+658
+01:26:19,307 --> 01:26:22,307
+effectively moving in the edge of the edge
+
+659
+01:26:22,307 --> 01:26:24,307
+in order by 2 pixels.
+
+660
+01:26:24,307 --> 01:26:27,307
+When the edge were
+
+661
+01:26:27,307 --> 01:26:30,307
+citrated in the extra 1 pixel
+
+662
+01:26:30,307 --> 01:26:32,307
+we included in each time,
+
+663
+01:26:32,307 --> 01:26:33,307
+Bu da iki tane şekerde de bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+664
+01:27:02,307 --> 01:27:05,967
+Binali, halss are felt much like the other mask.
+
+665
+01:27:06,567 --> 01:27:13,968
+This is a possible sum of this pixel that many have been removed from the inside each of the swelling.
+
+666
+01:27:14,528 --> 01:27:19,468
+Eventually, it's great, the final mask to apply the image.
+
+667
+01:27:20,828 --> 01:27:31,327
+This final image is then converted to binary so that number of non-black pixel can easily to be content by symbol swimming in the image.
+
+668
+01:27:31,327 --> 01:27:36,527
+Thank you.
+
+669
+01:27:41,555 --> 01:27:48,915
+Şimdi prototip üzerinde geliştirdiğimiz prototipin ekran görüntülerini paylaşalım bu ekranda.
+
+670
+01:27:50,155 --> 01:27:54,655
+Burada ilk resimde tomografi görüntüsünü prototipe verdik.
+
+671
+01:27:55,016 --> 01:28:05,595
+Tomografi görüntüsünden daha sonra atıyerleri segmente ettik ve daha sonra enfekte olmuş bölümleri daha beyaza boyayarak bir final resmi elde ettik.
+
+672
+01:28:05,595 --> 01:28:07,155
+Nellere bulaştığına dair.
+
+673
+01:28:07,155 --> 01:28:20,315
+Örneğin ilk örnekte %36'lı bir değer çıktı. Atiyerin %36'ına bulaşmış olarak gözüküyor. İkinci örneğimizde bu değer %15 gibi bir hastalık bulaştığını gösteriyor.
+
+674
+01:28:24,212 --> 01:28:37,491
+Genel olarak konuşacak olursak, aktiğer segmentasyonu, gürültünün çok olduğu resimlerde bazen başarısız olabiliyor veya bu başarı oranı düşük olabiliyor.
+
+675
+01:28:38,931 --> 01:28:51,091
+Bunun nedeni ise, gri ton değerleri arasındaki farkın düşük olması ve bunu fonksiyonel, bilgisayarın ayırt edebileceği fonksiyonu oluşturmamızın zorluğundan dolayı oluyor.
+
+676
+01:28:51,091 --> 01:29:03,151
+Bu bizim projemizin en büyük risklerinden biri. Ancak biz bu projeyi kesin bir uzman sistem olarak değil de doktorlara bir asistan program olarak öneriyoruz.
+
+677
+01:29:03,151 --> 01:29:14,911
+Dolayısıyla bizim projemiz onların kararlarına sadece yardımcı olabilecek bir proje olarak sunuyoruz doktorlara.
+
+678
+01:29:14,912 --> 01:29:22,112
+Bizim sonucumuz ne olursa olsun yine de doktorların değerlendirmesini öneriyoruz, tavsiye ediyoruz.
+
+679
+01:29:22,912 --> 01:29:43,911
+Tartışma bölümünde toparlayacak olursak bizim projemizin amacı tomografi resimlerinden COVID-19 enfeksiyonunun tespitinin yapılması ve bu bulaşmanın ne kadar olduğunu değerlendirilmesi üzerinde geliştirdiğimiz prototipte belli metotları uygulayarak
+
+680
+01:29:43,911 --> 01:29:46,911
+güzel sonuçlar elde ettiğimizi düşünüyoruz.
+
+681
+01:29:47,971 --> 01:29:55,091
+TÜBİTAK kursunu da bu projeyi prototipten çıkıp gerçek zamanı çalışabilir hale getirmek için istiyoruz.
+
+682
+01:29:56,212 --> 01:29:58,091
+Dinlediğiniz için teşekkür ederiz.
+
+683
+01:29:58,091 --> 01:30:00,932
+Sorularınız varsa alabiliriz.
+
+684
+01:30:06,676 --> 01:30:18,815
+Peki, tamam genetik soru yok herhalde arkadaşlar. Teşekkürler. Şimdi demin sunumu yapamayalım. Arkadaşlar, [öğrenci] ve Luhaydoğduydu. Değil mi? Yalnız söylemedim.
+
+685
+01:30:19,875 --> 01:30:21,215
+Evet hocam, [öğrenci].
+
+686
+01:30:21,596 --> 01:30:23,215
+Buyurun, tekrar söz sizde.
+
+687
+01:30:25,735 --> 01:30:33,915
+Merhaba arkadaşlar. Merhaba arkadaşlar, ben [öğrenci]. Yıldız Teknik Üniversitesi'nde doktor öğrencisiyim.
+
+688
+01:30:33,915 --> 01:30:39,196
+Aynı zamanda Limonist Medya ve Mühendislik Şirketi'nde proje yöneticisi olarak çalışıyorum.
+
+689
+01:30:46,420 --> 01:31:12,239
+Sesim geldi mi acaba? Geliyor. Tamam hocam. [öğrenci] hocam, siz duyabildiniz mi? Evet, duyuyorum. Sesimi alabiliyor musunuz? Evet, ben kendim tanıtımla başladım, devam edin isterseniz. Tamam. Merhabalar arkadaşlar, ben [öğrenci].
+
+690
+01:31:12,239 --> 01:31:17,999
+Yıl Teknik Üniversitesi Bilgisayar Mühendisi Doktora Programı'na kayıtlayayım.
+
+691
+01:31:18,800 --> 01:31:23,219
+Milli Savunma Üniversitesi Karar Pokulu'nda da araştırma görevlisi olarak görev yapmaktayım.
+
+692
+01:31:23,780 --> 01:31:28,219
+Hocam, iş yerinde olduğum için kamerayı açamıyorum. Özür dilerim.
+
+693
+01:31:30,119 --> 01:31:41,100
+İlk olarak arkadaşlar sunuda da görüldüğü üzere biz durmuş arkadaşımızla birlikte yaşlı bakım evlerinde anomali tespitiyle
+
+694
+01:31:41,100 --> 01:31:48,559
+Kasıtsız Yeralanmaları Acil Müdahale Sistemi üzerine bir proje hazırladık TÜBİTAK 1002 proje kapsamında.
+
+695
+01:31:51,059 --> 01:31:54,720
+Sunum içeriği yer almakta görebiliyoruz.
+
+696
+01:31:54,720 --> 01:31:57,000
+Sunumumuz 7 bölümden oluşmakta.
+
+697
+01:31:57,920 --> 01:32:03,879
+İlk olarak girişle başlayıp konunun önemini, projenin amacından bahsedeceğiz.
+
+698
+01:32:03,879 --> 01:32:13,079
+projenin amacı ve uygulanacak yöntemler elde etmeye beklediğimiz sonuçlar ve kaynaklar bölümüyle sunumumuzu sonlandıracağız.
+
+699
+01:32:14,860 --> 01:32:25,079
+İlk olarak giriş bölümünde yaralanmadan, kasıtsız yaralanma çalıştığımız için projede ilk olarak yaralanmanın tanımıyla başlamak istiyorum.
+
+700
+01:32:25,079 --> 01:32:40,619
+Yaralanma insan bedeninde aniden meydana gelen fizyolojik bir tolerans eşiğinin üzerinde karşılaşılan enerjiye karşı verilen bir fiziksel hasar olarak tanımlanıyor.
+
+701
+01:32:40,619 --> 01:32:52,879
+Dünya Sağlık Örgütü'nün yapmış olduğu açıklamalarda. İkiye ayrılıyor bu yaralanmalar. Kasıtlı ve kasıtsız olmak üzere. Biz proje kapsamında kasıtsız yaralanmalarla ilgileneceğiz.
+
+702
+01:32:52,879 --> 01:33:04,879
+Kasıtsız yaralanmalar, düşme, trafik kazası, boğulma gibi yaralanmalar kasıtsız yaralanma adı altında birleşmiş durumda.
+
+703
+01:33:08,080 --> 01:33:15,339
+Aslında proje fikrimiz ilk olarak yaşlı bakım evlerindeki düşmelere acil müdahale sistemiydi.
+
+704
+01:33:15,819 --> 01:33:22,220
+Ancak biz literatürü biraz taradığımızda düşme olarak değil de kasıtsız yaralanma adı altında nitelendirildiği için
+
+705
+01:33:22,220 --> 01:33:41,240
+biz de başlığımızda ve projemizde bunu kullandık. İlk olarak baktığımızda arkadaşlar, günümüzde özellikle hem küresel hem Türkiye bazında baktığımızda düşmeler ciddi bir halk sorunu haline gelmiş bulunmakta.
+
+706
+01:33:41,240 --> 01:33:51,080
+Yani bunların, düşmelerin sonuçları ciddi yaralanmalara neden olabiliyor. Hatta ölümcül düşmeler de çok sayıda kayda geçmiş durumda.
+
+707
+01:33:52,220 --> 01:34:10,400
+Bu düşmeler özellikle çocuklar ve yaşlı diye nitelendirdiğimiz 65 yaş üzerinde ciddi sonuçlar doğurmakta. Kalıcı sonuçlar doğurmakta diyeyim. Çünkü onların fizyolojik ve anatomik yapıları gereği onları daha çok etkiliyor.
+
+708
+01:34:10,399 --> 01:34:22,319
+Yapılan çalışmaları incelediğimizde ölümcül olmayan yaralanmalar listesinde düşmeler %46'lık bir oranla listenin başında yer almaktan
+
+709
+01:34:26,036 --> 01:34:41,675
+Bu sonuda Türkiye'nin 2020'deki nüfus sayımı baz alınmıştır. 2020'deki nüfus, nüfusun yaşlı nüfusu oranına baktığımızda yaşlı nüfus toplam nüfusun yüzde 8,5'unu oluşturuyor.
+
+710
+01:34:41,675 --> 01:34:55,895
+Bu 8,5'luk kısmın yüzde 13.4'ü de bakıma muhtaç halde olan yaşlılar. Yani bu bakıma muhtaç yaşlıların kimi huzur evi ya da bakım evi diye nitelendirilen yerlerde, kimi de kendi evlerinde bakılmaktan.
+
+711
+01:34:56,036 --> 01:35:06,775
+Sun'da da yer aldığı üzere yaş sayısı arttıkça yani yaş ilerledikçe düşmelere bağlı yaralanmaların ciddiyeti de artmaktadır.
+
+712
+01:35:07,515 --> 01:35:16,315
+Türkiye'den çıkıp dünya bazını incelediğimiz zaman ortalama 684 bin gibi bir ölümcül düşüş meydana gelmektedir.
+
+713
+01:35:16,315 --> 01:35:19,716
+Yani düşmeler ölümcül sonuçlanmaktadır sayıyla.
+
+714
+01:35:19,716 --> 01:35:31,156
+Kasıtsız yaralanmalara bakıldığı zaman da dünya genelinde yine trafik kazaları ilk sırayı almakta, düşmeler ise ikinci sıraya almaktadır.
+
+715
+01:35:34,216 --> 01:35:42,436
+Yaşlı bakım evlerinin sayısına bakacak olursak, yine 2020 yılında yapılan araştırmalar baz alınmıştır.
+
+716
+01:35:42,436 --> 01:35:50,016
+hem özel hem de devlet bünyesinde faaliyet gösteren bakım evleri, huzur evleri bulunmaktadır.
+
+717
+01:35:50,016 --> 01:35:56,016
+Devlet bünyesinde faaliyet gösteren huzur evi sayısı 153 olarak ifade edilmiştir.
+
+718
+01:35:58,516 --> 01:36:09,276
+Yapmış olduğumuz literatür sonuçlarını göz önüne aldığımız zaman yaşlı nüfusun düşmeye bağlı sakat kalma,
+
+719
+01:36:09,275 --> 01:36:18,675
+yatağa mahkum olma ya da bilinç kaybı, tamamen hafıza kaybı gibi sorunları çok sık görmekteyiz düşmeye bağlı.
+
+720
+01:36:19,875 --> 01:36:27,116
+Bunlar manevi boyutunun yanı sıra, kişiye, bireye hastalık olarak dönüşünün yanı sıra bir de ülke anlamında
+
+721
+01:36:27,116 --> 01:36:31,715
+sağlık sistemine ciddi bir maliyet olarak yansımaktadır.
+
+722
+01:36:31,716 --> 01:36:48,916
+Biz proje kapsamında belirleyeceğimiz birkaç derken sayıca çok olan huzur evlerinde, görüşebildiğimiz huzur evlerinde kapalı devre kamera takip sistemleriyle bir inceleme başlatacağız.
+
+723
+01:36:48,916 --> 01:36:57,616
+Her hastanın odasına bir kamera yerleştirerek onlardan günlük faaliyetlerini izleyeceğiz. Bu yaklaşık bir sekiz ayımızı alacak.
+
+724
+01:36:57,616 --> 01:37:07,315
+ilerleyen bölümlerde durmuş arkadaşımız oraları ifade edecek ancak üstüm körü ifade etmem gerekirse benim 8 aylık bir süreçte veri toplama aşaması gerçekleştirilecek.
+
+725
+01:37:07,315 --> 01:37:18,036
+Yani 7-24 o odada bulunan bireyin hareketleri kontrol altına alınacak. Bu tabii ki izin dahilinde gerçekleştirilecek.
+
+726
+01:37:18,036 --> 01:37:34,776
+Alınan bu görüntüler daha sonrasında işlenerek yani 7.24 kayıt yapılan videoyu direkt işlemek mantıksız olacaktır. Bu hem zaman hem de maddi açıdan kayıp anlamına gelmektedir.
+
+727
+01:37:34,775 --> 01:37:40,715
+ilgili olayın olduğu sahneler alınarak onların temizlenme işlemi gerçekleştirecektir.
+
+728
+01:37:40,715 --> 01:37:56,855
+7.24 kayıt yaptığımız bir hasta için sadece düşme anı örnek verecek olursak 50 saniye sürüyorsa 10 dakika öncesi 10 dakika sonrası yani 70 saniyelik bir ham video almak alacağız bizim hedefimiz bu çalışmadan.
+
+729
+01:37:58,075 --> 01:38:01,315
+O aldımış olduğumuz videolardan bir veri set oluşturmak istiyoruz.
+
+730
+01:38:01,315 --> 01:38:08,355
+Çünkü makine öğrenmesi yöntemlerini kullanacağız. Biz hem eğitim hem test verileri oluşturmamız gerekiyor.
+
+731
+01:38:10,575 --> 01:38:14,256
+Almış olduğumuz bu, elde etmiş olduğumuz bu verileri
+
+732
+01:38:15,220 --> 01:38:33,759
+daha temiz bir sonuç alabilmek için, daha yüksek bir doğruluk oranı alabilmek için gürültülü veriler varsa eğer gürültü temizleme işlemi, yakınlaştırma, uzaklaştırma ya da aynalama gibi çeşitli görüntü işleme tekniklerini kullanarak daha kaliteli bir görüntü elde etmeye çalışacağız.
+
+733
+01:38:33,759 --> 01:38:51,419
+Bu elde etmiş olduğumuz veri setlerinde şimdilik üç tane algoritma deneyeceğiz. En yüksek hangisinde oran alırsak bundan sonraki tüm yapacağımız sistemlere o algoritmayı uygulayacağız.
+
+734
+01:38:51,419 --> 01:38:59,559
+İlk olarak rastgele orman, kain yakın komşu ve destek vektör algoritmaları kullanılarak eğitme sürecinden geçecek bu veri setleri.
+
+735
+01:38:59,560 --> 01:39:07,120
+daha sonra eğitilen bu veri setleri üzerinden test işlemi gerçekleştirecek.
+
+736
+01:39:07,120 --> 01:39:16,019
+Yani örnek veriyorum sürekli tekerlekli sandalyede oturan bir hastanın bir anda yere düşmesi bu bir anormal bir davranıştır.
+
+737
+01:39:16,839 --> 01:39:20,839
+Bunu bir sistem anormal olarak personele yansıtacak.
+
+738
+01:39:20,980 --> 01:39:27,440
+Buradaki amaç şu düşmeyi engellemek farklı bir çalışma olabilir tabii ki.
+
+739
+01:39:27,440 --> 01:39:32,440
+düşmeden sonra o hastaya acil müdahale amaç, projedeki amacımız.
+
+740
+01:39:33,100 --> 01:39:45,039
+Yani hani çünkü huzur evlerinde sürekli gözetim altında gibi görünseler de hani belli saatlerde hastalar ziyaret ediliyor diye ifade edelim.
+
+741
+01:39:45,779 --> 01:39:51,880
+Yani hani hasta düştükten sonra belli bir süre geçebilir, bu onun o süreçte oksijensiz kalabilir, kan kaybından ölebilir.
+
+742
+01:39:51,880 --> 01:39:55,260
+Biz bunların önüne geçmeye çalışıyoruz bu projedeki amacımız bu.
+
+743
+01:39:55,260 --> 01:40:02,999
+acil müdahale etmeye çalışıyoruz. Bundan sonrası için [öğrenci] Arkadaşım devam edecek. Teşekkür ederim.
+
+744
+01:40:04,440 --> 01:40:16,980
+Merhaba arkadaşlar. Projemizin tamamlanmasına öngördüğümüz süre yaklaşık 12 ay. Biz bu 12 ayı 3 aşamaya ayırdık.
+
+745
+01:40:16,979 --> 01:40:24,359
+Projenin kodlanması, önce verilerin toplanması, projenin kodlanması ve projenin test edilmesi şeklinde.
+
+746
+01:40:25,019 --> 01:40:32,359
+Verilerin toplanması bizim ilk aşamamız ve en önemli aşamalarımızdan birini oluşturuyor.
+
+747
+01:40:32,979 --> 01:40:35,399
+Buna 1 ila 8 ay arasında bir süre ayırdık.
+
+748
+01:40:35,399 --> 01:40:48,239
+Biz bu süre içerisinde görüştüğümüz huzur evlerinden video kayıtlarını alacağız ve bu video kayıtlarında düşme verilerini toplayacağız.
+
+749
+01:40:50,079 --> 01:41:01,419
+Verileri topladıktan sonra, yeteri kadar veriyi topladıktan sonra biz bu verilerin kodlanması aşamasına geçilmeden önce, kodlanması aşamasında sınıflandırma işlemlerini yapacağız.
+
+750
+01:41:01,419 --> 01:41:10,959
+tüm video kayıtlarında bizim sadece işimize yarayabilecek, bizim düşmede tespit etmemize katkı sağlayacak kısımları alacağız.
+
+751
+01:41:10,959 --> 01:41:23,039
+Ve bu kısımları denetimli öğrenme yöntemlerini kullanarak onlara etiketleyeceğiz ve makine öğrenmesi tekniklerini kullanarak bir model oluşturacağız.
+
+752
+01:41:23,039 --> 01:41:35,219
+Bu oluşturduğumuz modeli hayata geçirdikten sonra gelen bir video akışının akışı içerisinde düşme olup olmadığının tespitini yapar hale getirdikten sonra
+
+753
+01:41:35,219 --> 01:41:47,619
+projenin gerçek ortamda huzur evlerinde sağlıklı bir şekilde çalışıp çalışmadığının test edilebilmesi için yaklaşık iki ay süreceğini öngördüğümüz bir test aşamasına geçeceğiz.
+
+754
+01:41:47,619 --> 01:42:00,059
+Bu test aşamasında da huzur evlerinde gerçekten kamera sistemlerinde tespit edilen bizim eğittiğimiz makine öğrenmesi modelini tespit ettiği olaylar gerçekten bir düşme mi değil mi?
+
+755
+01:42:00,459 --> 01:42:05,199
+Ya da gerçekten bir düşme olduysa bizim geliştirdiğimiz uygulama bunu tespit edebilmiş mi?
+
+756
+01:42:05,839 --> 01:42:08,699
+Bu şekilde geri dönüşleri toplayacağız ve
+
+757
+01:42:09,039 --> 01:42:16,439
+Geri dönüşlere göre de gerekirse modelin üzerinde daha başarılı olması için çalışmaları yapacağız.
+
+758
+01:42:17,340 --> 01:42:22,239
+12 ay sürmesini öngördüğümüz bu projede iki tane riski öngörüyoruz.
+
+759
+01:42:22,639 --> 01:42:33,319
+Bunlardan bir tanesi bir fiilin, eylemin düşme olup olmadığının tespit edilmesi için yeteri kadar veri toplaymamak olarak görüyoruz, öngörüyoruz.
+
+760
+01:42:33,319 --> 01:42:42,239
+Eğer böyle bir durumda yeteri kadar veri toplayamazsak da sentetik veri oluşturarak modelin eğitilmesini kendimiz sağlayacağız.
+
+761
+01:42:43,279 --> 01:42:52,479
+İkinci ön gördüğümüzdeki de projede yer alan kişilerin sağlık sebebi, benzeri nedenlerden dolayı projede çalışamayacak duruma gelmesi.
+
+762
+01:42:52,479 --> 01:43:03,479
+Bu durumda da ayrılan personelin yerine projenin belirlenen süre içerisinde bitmesini engellemeyecek bir kişinin projeye dahil edilmesini öngörüyoruz.
+
+763
+01:43:03,479 --> 01:43:25,739
+Bu projene çıktıklarına bakacak olursak hem bu projede bizim ortaya koyacağımız model ve hem de bu modelin sonucunu da elde ettiğimiz veriler neticesinde hem bir bilimsel makale ve bildiri yayınlamayı düşünüyoruz.
+
+764
+01:43:25,739 --> 01:43:29,499
+6. ve 12. aylar içerisinde.
+
+765
+01:43:30,259 --> 01:43:37,259
+Ekonomik ticari çiftlerine bakacak olursak da bu projenin geliştirilmesi durumunda
+
+766
+01:43:37,259 --> 01:43:44,119
+biz ilk başlangıç olarak yaşlı bakım evleri düşündük ama bu ikinci etapta anaokullar olabilir
+
+767
+01:43:44,119 --> 01:43:53,119
+ya da sosyal alanlarda da düşme okulmadığını tespit ettiği için kullanılabilir.
+
+768
+01:43:53,119 --> 01:43:59,859
+projenin etkilerine bakacak olursak etkileri üç başlık altında topladık
+
+769
+01:43:59,859 --> 01:44:03,579
+toplumsal kültürel etki, akademik etki ve ekonomik etkileri
+
+770
+01:44:03,579 --> 01:44:10,139
+toplumsal kültürel etkisine bakacak olursak bizim geliştirilmiş sistemin bildirimleri sonucunda
+
+771
+01:44:10,139 --> 01:44:16,339
+acil müdahale edilerek insan hayatının kurtulacağı için doğrudan toplum üzerinde bir etkisini öngörüyoruz
+
+772
+01:44:16,339 --> 01:44:23,519
+ve insanların yaşam kalitesini ve ömrünü uzatmada katkı sağlayacağını düşünüyoruz.
+
+773
+01:44:24,359 --> 01:44:38,260
+Akademik etkisine bakacak olursak, akademik etkide de ortaya koyacağımız özgün modelin bizden sonraki çalışmalara da ışık tutacağını öngörüyoruz
+
+774
+01:44:38,260 --> 01:44:45,159
+ve bizim modelin uygulanması sonucu elde edilen verilerin de akademik makalelerde kullanabileceğini düşünüyoruz.
+
+775
+01:44:45,159 --> 01:44:52,859
+Aynı şekilde bu proje özel sektör ve üniversiteleri bir araya getirebileceğini düşünüyoruz.
+
+776
+01:44:53,439 --> 01:44:58,659
+Ekonomik etkisi de bizim bu uyguladığımız projenin hayata geçmesi durumunda.
+
+777
+01:44:59,419 --> 01:45:07,159
+Yani doğrudan bir etkisi yok ama dolaylı olarak acil müdahale sonucu sakat kalmalar ve ölümlerin öne geçtiğimiz zaman
+
+778
+01:45:07,159 --> 01:45:13,159
+o yaralanma sonucu sağlık sistemine gelecek olan ekonomik yükten kurtulmuş oluyoruz.
+
+779
+01:45:13,159 --> 01:45:25,879
+Ayrıca dediğim gibi ilk yaşlı bakım ederinden sonra anaokulları ya da sosyal alanlarda, açık alanlarda da kullanıma geçtikten sonra bunu da yurt dış pazarında satılabilir bir uygulama olabileceğini öngörüyoruz.
+
+780
+01:45:27,359 --> 01:45:39,519
+Sonuç olarak önerdiğimiz projenin teknik analizler yapıldığında yapılabildiği yüksek bir proje ve projenin toplumsal, kültüre ve ekonomik katkısı oldukça yüksek.
+
+781
+01:45:39,519 --> 01:46:00,299
+Ayrıca projenin doğrudan insan sağlığı ve insan yaşamının uzamasına ve daha sağlıklı olmasına katkı sağladığı için ülkemizi bir adımda aileleri götürebileceğini düşündüğümüz bir proje.
+
+782
+01:46:00,299 --> 01:46:07,539
+Bu projeyi oluştururken faydalandığımız kaynaklar ekranda olduğu gibidir.
+
+783
+01:46:08,212 --> 01:46:13,991
+dinlediğiniz için teşekkür ederiz. Soldanız varsa memnuniyetle yanıtlamayı isteriz.
+
+784
+01:46:14,871 --> 01:46:28,831
+Ben bir soru sorabilir miyim? Bu konuda örnek, açık kaynak veri setleri var mı? Yani o ilk 8 ayda onlar üzerinden zaten altyapınızı, kod altyapınızı da oluşturup denemeyi düşünüyorsunuzdur sanırım, değil mi?
+
+785
+01:46:28,831 --> 01:46:45,831
+Ya şöyle biz literatürde şu an açık kaynakta bir düşmeyin hani düşme ait bir veri seti olduğuna rastlamadık ama hani eğer o öyle bir veri seti olursa zaten bizim işimizi bayağı kolaylaştıracaktır. O veri toplama aşamasını azaltacaktır.
+
+786
+01:46:45,831 --> 01:46:47,911
+Tamam.
+
+787
+01:46:47,911 --> 01:46:56,611
+Ben söz hakkı alabilir miyim? Literatüre baktığımız zaman anomali tespitiyle alakalı çok fazla veri seti var.
+
+788
+01:46:56,611 --> 01:47:12,752
+Evet, yani metre istasyonlarındaki anomali hareketlerin tespiti gibi ancak bu huzur evlerinde özellikle yaşların sağlık nedeniyle bu düşmeleri, bakıma muhtaç insanların sağlık problemleri nedeniyle düşmeleriyle alakalı bir veri seti bulunmamakta.
+
+789
+01:47:12,752 --> 01:47:16,372
+farklı anomali tespit veri setleri evet var.
+
+790
+01:47:16,372 --> 01:47:25,072
+Metro istasyonlarında bahsettiğim gibi yere düşen ya da metronun önüne atlayan insanları tespit edip uyarı geliştiren sistemler mevcut.
+
+791
+01:47:26,372 --> 01:47:30,592
+Tamam teşekkürler. Ben pre-trained kullanılabilirse diye demiştim. Tamam teşekkürler.
+
+792
+01:47:30,991 --> 01:47:34,531
+Katkınız için teşekkür ederiz. Biz Onda Gölü'nde bulunduruz. Sağ olun.
+
+793
+01:47:37,092 --> 01:47:39,152
+Evet teşekkürler arkadaşlar.
+
+794
+01:47:40,652 --> 01:47:41,631
+Sağ olun hocam.
+
+795
+01:47:41,631 --> 01:47:57,231
+Şimdi birkaç tane şey var üzerine değinmek istediğim. Sizle alakalı değil genel olarak. Yanlış anlaşılmasın. Son şey siz olduğunuz için size üzerinize yapıyorum diye düşünmeyin. Genele yapıyorum.
+
+796
+01:47:57,231 --> 01:48:07,531
+Bu ikinci haftamız. Bu arada ekran paylaşımını kapatabilirsiniz. Bu şekilde kalmasın. Teşekkürler.
+
+797
+01:48:09,631 --> 01:48:17,451
+Dolayısıyla ilk hafta yapılan sunumları gördünüz, izlediniz. Oradaki artıları, eksileri fark etmiş olmanız lazım.
+
+798
+01:48:17,451 --> 01:48:29,851
+zaten bir hafta bununla ilgili özellikle konuştuk. Artı ilk haftanın sonunda neyin nasıl olmaması gerektiğiyle alakalı, nelerin hatalı olduğu ile alakalı ben de yorumlarımı söyledim ama
+
+799
+01:48:29,851 --> 01:48:34,611
+bunlardan pek ders alınmadığını görüyorum açıkçası.
+
+800
+01:48:34,611 --> 01:48:48,131
+Yani bir sunum yaparken slide'da böyle alabildiğince metin koyup ondan sonra oradan bunları bize okumaya... Ses gelmiyor hocam.
+
+801
+01:48:50,131 --> 01:48:55,911
+Nasıl gelmiyor? Şu an hala mı gelmiyor? Geliyor. Geliyor hocam.
+
+802
+01:48:55,911 --> 01:49:16,171
+Dolayısıyla slide'dan bize bir şeyler okuyor olmanızın hiçbir esprisi yok. Artı şöyle bir avantajınız var ama bu hafta gördüğüm kadarıyla hepiniz için neredeyse dezavantajı haline geldi.
+
+803
+01:49:16,171 --> 01:49:22,371
+sunumunuzu önceden hazırlayıp teslim ettiniz ama sunum üzerine çalışmak için ekstradan bir haftanız vardı.
+
+804
+01:49:22,371 --> 01:49:36,131
+Yani hala sunumunuzu kağıttan okuyarak ya da bir yerlerden okuyarak ya da slide'daki bilgiyi okuyarak yapıyorsanız bu işe yeterli özeni göstermediğinizi bize söylüyor.
+
+805
+01:49:36,371 --> 01:49:39,391
+Dolayısıyla bu size dezavantaj olarak dönüyor.
+
+806
+01:49:39,391 --> 01:49:52,831
+Bunun dışında lisans seviyesini çoktan geçmiş insanlarsınız. Yüksek lisans ve hatta doktora seviyesindeki arkadaşlarımızsınız.
+
+807
+01:49:52,831 --> 01:50:01,011
+Kendinizi ifade, derdinize anlatma, iletişim kurma becerileriniz açısından çok daha iyi durumda olmanız gerekir.
+
+808
+01:50:01,011 --> 01:50:04,011
+Ancak ve Lakin ben...
+
+809
+01:50:04,404 --> 01:50:34,164
+konuşma akışkanlığı anlamında hem İngilizce'de hem Türkçe'de ciddi sıkıntı gördüm. Kendi gözlerimin bu yönde. Bir diğer şey, evet sunumlarınızı önceden hazırladınız. Belki sunumlarınız 20, belki 30 slide'dı. Böyle olmaması gerekmesine rağmen. Ancak ve lakin yine de buna bir alternatif çözüm üretip bazı slide'ları belki atlayarak, bazı slide'ları geçerek, bir şeyler yaparak
+
+810
+01:50:34,164 --> 01:50:46,304
+daha makul ve mantıklı şekilde süre kullanabilirdiniz. Evet ben buradayım. Ben sizi süre imkan verdiği sürece kesmeden sabırları dinleyeceğim şeklinde.
+
+811
+01:50:46,304 --> 01:50:57,904
+Arkadaşlarınız da benzer şekilde dinliyorlar diye düşünüyorum. Fakat kimseye eziyet etmenin bir anlamı yok. Artı kimse sizden daha değersiz değil.
+
+812
+01:50:57,904 --> 01:51:11,764
+Yani herkese 10 dakika süre verilmişken 17 dakika sunum yapmanın hiçbir anlamı yok. Hatta belli açılardan ciddi saygısızlık olarak görülür bu. Ki ben de benzer yere koyuyorum kendi açımdan baktığımda.
+
+813
+01:51:11,764 --> 01:51:22,084
+Bir diğer saygısızlık unsuru da sunum yapılırken dinleyen arkadaşların dinleyip dinlemediği ya da sunuma ne kadar müdahale edip etmediği.
+
+814
+01:51:22,084 --> 01:51:29,383
+Yani başkasının sunumu sırasında mikrofonunuzu açık bırakmak, oradan gürültülerin duyulması vs. hiç hoş hareketler değil.
+
+815
+01:51:32,363 --> 01:51:40,444
+Bu ciddi anlamda sıkıntı olmamasını, bir daha tekrarlanmamasını temenni ediyorum.
+
+816
+01:51:41,764 --> 01:51:46,543
+Onun dışında da hepinize iyi günler diliyorum. Haftaya görüşmek üzere.
+
+817
+01:51:47,283 --> 01:51:47,963
+İyi günler hocam.
+
+818
+01:51:47,963 --> 01:51:59,784
+Hocam ben bir şey sorabilir miyim? Mesela sunum esnasında başka bir döküman üzerinden de bir şeyler gösterme olumsuz karşılığına mısın tarafınıza?
+
+819
+01:52:00,084 --> 01:52:11,124
+Anlamadım. Size sunduğumuz sunumun haricinde mesela başka bir döküman üzerinden ya da siteden ilgili bir şeyler göstermek istesek sunumda yer almamasına rağmen
+
+820
+01:52:11,123 --> 01:52:12,103
+sorun olur mu?
+
+821
+01:52:13,683 --> 01:52:19,463
+Yani bunu nasıl yaptığınızla alakaya sorun olur mu? Hayır olmaz. Sunumunuzu değiştiremezsiniz.
+
+822
+01:52:22,043 --> 01:52:23,904
+Müsaade et de ben cevap vereyim.
+
+823
+01:52:24,723 --> 01:52:25,404
+Tamam, pardon.
+
+824
+01:52:27,303 --> 01:52:30,303
+Sunumunuzu değiştiremezsiniz. Yani başka bir sunum yapamazsınız.
+
+825
+01:52:30,303 --> 01:52:42,523
+ama olduğunuz sunum içerisinde bir ekstra bir bilgiyi göstermek için bir yere referans olarak bize referans oluşması için bir şey izletmek istiyorsanız vs. bunu kullanabilirsiniz tabi.
+
+826
+01:52:42,663 --> 01:52:53,263
+Ancak ve lakin orada da şunu unutmamak lazım. Bu da sürenizden yiyen bir etken. Dolayısıyla onun planını, programını yapıyor olmanız lazım.
+
+827
+01:52:53,264 --> 01:52:58,844
+sunumla ilgili konuştuğumuz şeylerin en başında ne geliyordu?
+
+828
+01:52:58,943 --> 01:52:59,724
+Sunuma hazırlık.
+
+829
+01:53:00,364 --> 01:53:01,764
+Ne kullanacaksınız?
+
+830
+01:53:01,904 --> 01:53:04,204
+Hangi cihazı, hangi ekipmanı kullanacaksınız?
+
+831
+01:53:04,624 --> 01:53:05,924
+Bunları biliyor olmanız lazım.
+
+832
+01:53:05,924 --> 01:53:16,303
+Yani onu yaptınız, yapamadınız, o video burada gözüktü, gözükmedi, o ekran açıldı, açılmadı vs. gibi problemlerin tamamı sizi bağlayan problemler.
+
+833
+01:53:16,743 --> 01:53:21,743
+Dolayısıyla bu tip bir şey yapacaksanız önceden mutlaka testini de yapın diye tavsiye etmek isterim.
+
+834
+01:53:23,264 --> 01:53:24,543
+Tamam, teşekkür ederim
+
+835
+01:53:24,543 --> 01:53:33,163
+Başka sorusu olan yoksa arkadaşlar, hepinize iyi günler, haftaya görüşmek üzere
+
+836
+01:53:33,163 --> 01:53:37,124
+İyi günler hocam
