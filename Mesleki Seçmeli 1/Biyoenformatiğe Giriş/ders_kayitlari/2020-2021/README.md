@@ -8,7 +8,7 @@
 - **Dersi Veren Akademisyen:** Prof. Dr. Nizamettin Aydın
 - **Akademik Yıl:** 2020-2021
 - **Dönem:** Bahar
-- **İlk Ders Tarihi:** 2 Nisan 2021
+- **İlk Ders Tarihi:** 12 Mart 2021
 
 ## Müfredat ve Belge Dizini
 
